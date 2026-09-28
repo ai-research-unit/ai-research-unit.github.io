@@ -167,12 +167,12 @@ $$</p>
 <p>$$
 \frac{f(Z_0 + h) - f(Z_0)}{h} = \frac{(u_x h_1 + u_y h_2) + j (v_x h_1 + v_y h_2)}{h_1 + j h_2} + o(1).
 $$</p>
-<p>For the limit to exist independently of the direction of $h$, the numerator must be a split complex multiple of $h$. This forces the split Cauchy–Riemann equations. $\square$</p>
+<p>For the limit to exist independently of the direction of $h$, the numerator must be a split complex multiple of $h$. This forces the split Cauchy–Riemann equations.</p>
 <p><strong>Corollary.</strong> If $f$ is split complex differentiable, then $u$ and $v$ satisfy the <strong>wave equation</strong>:</p>
 <p>$$
 \frac{\partial^2 u}{\partial x^2} - \frac{\partial^2 u}{\partial y^2} = 0, \qquad \frac{\partial^2 v}{\partial x^2} - \frac{\partial^2 v}{\partial y^2} = 0.
 $$</p>
-<p><strong>Proof.</strong> Differentiate the split Cauchy–Riemann equations and use the equality of mixed partials. $\square$</p>
+<p><strong>Proof.</strong> Differentiate the split Cauchy–Riemann equations and use the equality of mixed partials.</p>
 <p>This is the fundamental difference from complex analysis: the real and imaginary parts of a holomorphic function are harmonic in the complex case, and solutions of the wave equation in the split complex case. The change of sign in the Cauchy–Riemann equations changes the Laplacian into the d'Alembertian.</p>
 <h3 id="the-wirtinger-derivatives">The Wirtinger Derivatives</h3>
 <p>Define the <strong>split Wirtinger derivatives</strong></p>
@@ -209,7 +209,7 @@ $$</p>
 <p>$$
 f \text{ is split complex differentiable} \iff f_+ \text{ is differentiable in } Z_+ \text{ and } f_- \text{ is differentiable in } Z_-.
 $$</p>
-<p><strong>Proof.</strong> In the idempotent basis, the split complex algebra is $\mathbb{R} \oplus \mathbb{R}$, and the multiplication is componentwise. So a function $f$ is differentiable iff each component is differentiable with respect to its own variable. $\square$</p>
+<p><strong>Proof.</strong> In the idempotent basis, the split complex algebra is $\mathbb{R} \oplus \mathbb{R}$, and the multiplication is componentwise. So a function $f$ is differentiable iff each component is differentiable with respect to its own variable.</p>
 <p>This is the <strong>fundamental theorem of split complex analysis</strong>: differentiability in $\mathbb{D}$ is equivalent to differentiability in each of the two real components separately. There is no interaction between the two components, because the idempotents annihilate each other.</p>
 <h3 id="consequences">Consequences</h3>
 <p><strong>No conformality.</strong> Split complex differentiable functions do not preserve angles in general, because the two components can scale differently.</p>
@@ -234,7 +234,7 @@ $$</p>
 <p>$$
 \oint_\gamma f(Z) \, dZ = 0.
 $$</p>
-<p><strong>Proof.</strong> In the idempotent basis, the integral decomposes into two real integrals, one for each component. Each component is a real line integral of a differentiable function of one variable, and each vanishes on a closed contour. $\square$</p>
+<p><strong>Proof.</strong> In the idempotent basis, the integral decomposes into two real integrals, one for each component. Each component is a real line integral of a differentiable function of one variable, and each vanishes on a closed contour.</p>
 <h3 id="the-cauchy-integral-formula">The Cauchy Integral Formula</h3>
 <p>There is <strong>no</strong> general Cauchy integral formula in split complex analysis. The reason is that the kernel $1/(W - Z)$ has a singularity on the null cone, and the integral around a point depends on the path in a way that cannot be removed by a single formula.</p>
 <p>However, if the function is written in the idempotent basis, each component has its own Cauchy integral formula:</p>
@@ -269,7 +269,7 @@ $$</p>
 f(Z) = \sum_{n=0}^\infty \frac{f^{(n)}(Z_0)}{n!} (Z - Z_0)^n
 $$</p>
 <p>valid for $\|Z - Z_0\|_E < r$.</p>
-<p><strong>Proof.</strong> In the idempotent basis, each component has a real Taylor expansion, and the two expansions combine. $\square$</p>
+<p><strong>Proof.</strong> In the idempotent basis, each component has a real Taylor expansion, and the two expansions combine.</p>
 <p><strong>Corollary.</strong> A split complex differentiable function whose components are real-analytic is analytic: it equals its Taylor series in a neighborhood of every point.</p>
 <p><strong>Caution.</strong> The identity theorem fails in general, because a split complex differentiable function can vanish on a set with an accumulation point without being identically zero. The reason is that the two idempotent components are independent, and one can vanish while the other does not.</p>
 <h2 id="singularities">Singularities</h2>
@@ -282,25 +282,6 @@ $$</p>
 <h3 id="residues">Residues</h3>
 <p>There is <strong>no</strong> general residue theory in split complex analysis. The reason is that the integral around a singularity depends on the path, and there is no single number that captures the singularity.</p>
 <p>In the idempotent basis, each component has its own residue, and the two residues are independent. The sum of the two residues is the analogue of the complex residue, but it does not determine the integral in general.</p>
-<h2 id="applications">Applications</h2>
-<h3 id="the-wave-equation">The Wave Equation</h3>
-<p>The split Cauchy–Riemann equations imply that the real and imaginary parts of a split complex differentiable function satisfy the wave equation</p>
-<p>$$
-\frac{\partial^2 u}{\partial x^2} - \frac{\partial^2 u}{\partial y^2} = 0.
-$$</p>
-<p>So split complex analysis is the natural setting for the study of the two-dimensional wave equation. The idempotent decomposition corresponds to the decomposition of a solution into left-moving and right-moving waves:</p>
-<p>$$
-u(x, y) = F(x + y) + G(x - y),
-$$</p>
-<p>where $F$ and $G$ are arbitrary differentiable functions. This is d'Alembert's solution, and it is the general solution of the wave equation in one spatial dimension.</p>
-<h3 id="the-lorentzian-metric">The Lorentzian Metric</h3>
-<p>The split complex numbers are the natural coordinates for a Lorentzian analogue of the hyperbolic plane. The <strong>metric</strong> is</p>
-<p>$$
-ds^2 = \frac{dx^2 - dy^2}{y^2},
-$$</p>
-<p>which has signature $(1,1)$ and is therefore Lorentzian; the Riemannian metric of the hyperbolic plane is $ds^2 = (dx^2 + dy^2)/y^2$ instead. The split complex differentiable functions that preserve this metric are the <strong>isometries</strong>, which are the analogues of the Möbius transformations in complex analysis.</p>
-<h3 id="signal-processing">Signal Processing</h3>
-<p>The split complex Fourier transform, restricted to a bounded interval or with a decaying kernel, is used in the analysis of transient signals. The transform diagonalizes the wave operator, and the idempotent decomposition corresponds to the decomposition into forward and backward propagating waves.</p>
 <h2 id="comparison-with-complex-analysis">Comparison with Complex Analysis</h2>
 <p>The differences between split complex analysis and complex analysis are consequences of the sign in the multiplication rule $j^2 = +1$ versus $i^2 = -1$.</p>
 <div class="table-scroll"><table>
@@ -368,7 +349,7 @@ $$</p>
 <h2 id="summary">Summary</h2>
 <p>Split complex analysis is the study of differentiable functions of a split complex variable $Z = x + jy$ with $j^2 = +1$. The plane carries the Euclidean norm inherited from $\mathbb{R}^2$, and with it the convergent sequences and the continuous functions on which the subject is built.</p>
 <p>The derivative is defined as in the complex case, and its behaviour is governed by the idempotents $\Pi_\pm = (1 \pm j)/2$, which satisfy $\Pi_1^2 = \Pi_1$, $\Pi_2^2 = \Pi_2$ and $\Pi_1\Pi_2 = 0$. In the idempotent basis the algebra is the direct sum $\mathbb{R} \oplus \mathbb{R}$, and the analysis decomposes with it: the power series and the conditions of differentiability separate into one condition for each component, so the theory is real analysis carried out twice rather than a new rigid theory as in the complex case.</p>
-<p>The article develops the subject in that basis: contour integrals along paths, power series, and the classification of the isolated singularities as removable, a pole, or essential. The applications record the wave equation, which the split Cauchy–Riemann equations force on the real and imaginary parts of a differentiable function. The final section compares the subject with complex analysis and traces every difference to the sign in the multiplication rule, $j^2 = +1$ against $i^2 = -1$.</p>
+<p>The article develops the subject in that basis: contour integrals along paths, power series, and the classification of the isolated singularities as removable, a pole, or essential. It closes with the comparison with complex analysis and traces every difference to the sign in the multiplication rule, $j^2 = +1$ against $i^2 = -1$.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>

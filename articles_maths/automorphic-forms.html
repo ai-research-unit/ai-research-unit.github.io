@@ -60,7 +60,7 @@
 <li>The <strong>representation theory of locally compact groups</strong> — admissibility, the unitary dual, induced representations, the tensor product theorems — is Part II's, in <em>Representation Theory of Locally Compact Groups</em> and <em>Induced Representations of Locally Compact Groups</em>; this article uses it.</li>
 <li>The <strong>$L$-functions and zeta functions</strong> in their general form are developed; this article states the automorphic $L$-function in line as standard mathematics and defers the general theory. The <strong>Langlands correspondence</strong> is not covered here. No physics is invoked.</li>
 </ul>
-<p>Throughout, $\mathbb{A} = \mathbb{A}_{\mathbb{Q}}$ is the ring of adeles of $\mathbb{Q}$ and $\mathbb{A}^\times$ the ideles; a <strong>place</strong> $v$ of $\mathbb{Q}$ is either the archimedean place $\infty$ with $\mathbb{Q}_\infty = \mathbb{R}$, or a prime $p$ with $\mathbb{Q}_p$ the $p$-adic field; $G$ is a connected reductive group over $\mathbb{Q}$, and for $G = GL_2$ one writes $G(\mathbb{A})$ for the adelic group. The quotient $G(\mathbb{Q})\backslash G(\mathbb{A})$ is the arithmetic quotient, and $\Gamma = G(\mathbb{Z})$ is the arithmetic lattice. The Haar measure, the modular character, the centre $Z$, and the algebra $\mathfrak{g}$ of the Lie group $G(\mathbb{R})$ are those of Part II; the differential operators are the elements of the centre $\mathfrak{z}$ of the universal enveloping algebra of $\mathfrak{g}$.</p>
+<p>Throughout, $\mathbb{A} = \mathbb{A}_{\mathbb{Q}}$ is the ring of adeles of $\mathbb{Q}$ and $\mathbb{A}^\times$ the ideles; a <strong>place</strong> $v$ of $\mathbb{Q}$ is either the archimedean place $\infty$ with $\mathbb{Q}_\infty = \mathbb{R}$, or a prime $p$ with $\mathbb{Q}_p$ the $p$-adic field; $G$ is a connected reductive group over $\mathbb{Q}$, and for $G = GL_2$ one writes $G(\mathbb{A})$ for the adelic group. The quotient $G(\mathbb{Q})\backslash G(\mathbb{A})$ is the arithmetic quotient, and $\Gamma = G(\mathbb{Z})$ is the arithmetic lattice. The Haar measure, the modular character, the centre $Z$, and the algebra $\mathrm{G}$ of the Lie group $G(\mathbb{R})$ are those of Part II; the differential operators are the elements of the centre $\mathrm{Z}$ of the universal enveloping algebra of $\mathrm{G}$.</p>
 <h2 id="the-classical-picture">The Classical Picture</h2>
 <h3 id="modular-forms">Modular Forms</h3>
 <p><strong>Definition.</strong> A <strong>modular form</strong> of weight $k \in \mathbb{Z}$ and level $1$ is a holomorphic function $f : \mathbb{H} \to \mathbb{C}$ on the upper half-plane satisfying</p>
@@ -89,11 +89,11 @@ $$</p>
 <p><strong>Definition.</strong> Let $G$ be a connected reductive group over $\mathbb{Q}$ and let $K \subseteq G(\mathbb{A})$ be a maximal compact subgroup. An <strong>automorphic form</strong> on $G$ is a function $f : G(\mathbb{Q})\backslash G(\mathbb{A}) \to \mathbb{C}$ satisfying</p>
 <ol>
 <li>$f$ is smooth on the archimedean part and locally constant on the non-archimedean part (so that the right translates $f(\cdot k)$ span a finite-dimensional space for every $k \in K$, i.e. $f$ is $K$-finite);</li>
-<li>$f$ is finite under the centre $\mathfrak{z}$ of the universal enveloping algebra of $\mathfrak{g}$, so that $f$ lies in a finite-dimensional space of eigenvectors of the Casimir-type operators;</li>
+<li>$f$ is finite under the centre $\mathrm{Z}$ of the universal enveloping algebra of $\mathrm{G}$, so that $f$ lies in a finite-dimensional space of eigenvectors of the Casimir-type operators;</li>
 <li>$f$ is of moderate growth: there is a constant $C$ and an exponent $M$ with $|f(g)| \leq C\|g\|^M$ for all $g$;</li>
 <li>when $G$ has a central character, $f$ transforms by a fixed character $\omega$ of $Z(\mathbb{Q})\backslash Z(\mathbb{A})$.</li>
 </ol>
-<p>The group $G(\mathbb{A})$ acts on the space $\mathcal{A}(G)$ of automorphic forms by right translation, $(R(g)f)(x) = f(xg)$, and an <strong>automorphic representation</strong> is an irreducible subquotient of this representation. When $G = GL_2$ and $f$ is $Z(\mathbb{A})$-finite of central character $\omega$ and $K$-finite, the four conditions reduce to the classical ones: the functions on $GL_2(\mathbb{Q})\backslash GL_2(\mathbb{A})$ of fixed central character correspond to functions on $\mathbb{H}$ with a transformation law, and the finiteness under $\mathfrak{z}$ is the weight condition. The correspondence is made explicit by strong approximation, which is the statement of <em>Adeles and Ideles</em>.</p>
+<p>The group $G(\mathbb{A})$ acts on the space $\mathcal{A}(G)$ of automorphic forms by right translation, $(R(g)f)(x) = f(xg)$, and an <strong>automorphic representation</strong> is an irreducible subquotient of this representation. When $G = GL_2$ and $f$ is $Z(\mathbb{A})$-finite of central character $\omega$ and $K$-finite, the four conditions reduce to the classical ones: the functions on $GL_2(\mathbb{Q})\backslash GL_2(\mathbb{A})$ of fixed central character correspond to functions on $\mathbb{H}$ with a transformation law, and the finiteness under $\mathrm{Z}$ is the weight condition. The correspondence is made explicit by strong approximation, which is the statement of <em>Adeles and Ideles</em>.</p>
 <p><strong>Definition.</strong> An automorphic form $f$ is <strong>cuspidal</strong> if for every proper parabolic subgroup $P = MN$ of $G$ the constant term along $N$ vanishes:</p>
 <p>$$
 f_N(g) = \int_{N(\mathbb{Q})\backslash N(\mathbb{A})} f(ng)\, dn = 0.
@@ -210,7 +210,7 @@ $$</p>
 <td>all constant terms $f_N$ vanish</td>
 </tr>
 <tr>
-<td>$\mathfrak{z}$, $\mathfrak{g}$</td>
+<td>$\mathrm{Z}$, $\mathrm{G}$</td>
 <td>Centre of the universal enveloping algebra, Lie algebra of $G(\mathbb{R})$</td>
 </tr>
 <tr>

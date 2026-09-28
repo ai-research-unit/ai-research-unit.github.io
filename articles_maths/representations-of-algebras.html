@@ -74,9 +74,9 @@ $$</p>
 <h3 id="irreducibility">Irreducibility</h3>
 <p>A representation is <strong>irreducible</strong> if $V$ has no invariant subspaces other than $0$ and $V$, that is, if $V$ is a simple module. By the classification of simple modules in <em>Simple and Semisimple Modules</em>, the irreducible representations of $A$ are, up to isomorphism, the quotients</p>
 <p>$$
-V=A/\mathfrak{m}
+V=A/\mathrm{M}
 $$</p>
-<p>by the maximal left ideals $\mathfrak{m}\subseteq A$. When $A$ is commutative the maximal left ideals are the maximal ideals, and the irreducible representations are the quotients by maximal ideals. When $A$ is noncommutative, distinct maximal left ideals may give isomorphic irreducible representations, and the classification up to isomorphism requires the radical: the irreducible representations of $A$ are exactly the irreducible representations of $A/J(A)$, inflated along the quotient $A\to A/J(A)$, by <em>Change of Rings</em>.</p>
+<p>by the maximal left ideals $\mathrm{M}\subseteq A$. When $A$ is commutative the maximal left ideals are the maximal ideals, and the irreducible representations are the quotients by maximal ideals. When $A$ is noncommutative, distinct maximal left ideals may give isomorphic irreducible representations, and the classification up to isomorphism requires the radical: the irreducible representations of $A$ are exactly the irreducible representations of $A/J(A)$, inflated along the quotient $A\to A/J(A)$, by <em>Change of Rings</em>.</p>
 <h3 id="schurs-lemma">Schur's lemma</h3>
 <p><strong>Theorem (Schur).</strong> Let $V$ and $W$ be irreducible representations of $A$. Then every intertwining operator $T: V\to W$ is zero or an isomorphism, and</p>
 <p>$$
@@ -98,7 +98,7 @@ $$</p>
 <p>$$
 A/\operatorname{Ann}_A(V) \cong \operatorname{End}_D(V) \cong M_n(D^{\mathrm{op}}).
 $$</p>
-<p><em>Proof.</em> The density theorem gives that the image of $A$ in $\operatorname{End}_D(V)$ is dense for the finite topology; when $V$ is finite-dimensional over $D$ that topology is discrete, so the image is everything. The kernel of the map is precisely $\operatorname{Ann}_A(V)$, giving the first isomorphism; the second is the choice of a $D$-basis, and $\operatorname{End}_D(V)\cong M_n(D^{\mathrm{op}})$ for $n=\dim_D V$, the $D$-linear endomorphisms of $D^n$ being the right multiplications by matrices over $D$, as in <em>Automorphisms of Modules over an Algebra</em>. $\square$</p>
+<p><em>Proof.</em> The density theorem gives that the image of $A$ in $\operatorname{End}_D(V)$ is dense for the finite topology; when $V$ is finite-dimensional over $D$ that topology is discrete, so the image is everything. The kernel of the map is precisely $\operatorname{Ann}_A(V)$, giving the first isomorphism; the second is the choice of a $D$-basis, and $\operatorname{End}_D(V)\cong M_n(D^{\mathrm{op}})$ for $n=\dim_D V$, the $D$-linear endomorphisms of $D^n$ being the right multiplications by matrices over $D$, as in <em>Automorphisms of Modules over an Algebra</em>.</p>
 <p>The opposite in the last display is the left-module convention rather than an accident: the defining module of $M_n(D_0)$ has endomorphism ring $D_0^{\mathrm{op}}$. For the division algebras occurring here, $F$ when $F$ is algebraically closed, and $\mathbb{C}$ and $\mathbb{H}$ over $\mathbb{R}$, the opposite is isomorphic to the algebra itself, so in every example the two forms agree.</p>
 <p>So an irreducible finite-dimensional representation of $A$ is not merely a quotient of $A$; it exhibits $A/\operatorname{Ann}_A(V)$ as a full matrix algebra over a division algebra. The density theorem is what converts information about the commutant into information about the algebra, and it is the engine of the Wedderburn–Artin theorem in the form used below.</p>
 <h2 id="complete-reducibility-and-structure">Complete Reducibility and Structure</h2>
@@ -112,7 +112,7 @@ $$</p>
 <li>Every left ideal of $A$ is a direct summand.</li>
 <li>$A \cong \prod_{i=1}^{r} M_{n_i}(D_i)$ for division algebras $D_i$.</li>
 </ol>
-<p><em>Proof.</em> The equivalence of 1, 2, 4 and 5 is the Wedderburn–Artin theorem of <em>Simple and Semisimple Modules</em>; the equivalence with 3 is the definition of complete reducibility in module language. $\square$</p>
+<p><em>Proof.</em> The equivalence of 1, 2, 4 and 5 is the Wedderburn–Artin theorem of <em>Simple and Semisimple Modules</em>; the equivalence with 3 is the definition of complete reducibility in module language.</p>
 <h3 id="finite-dimensional-algebras">Finite-dimensional algebras</h3>
 <p>Let $A$ be finite-dimensional over $F$. Then $A/J(A)$ is semisimple and every simple module is a simple $A/J(A)$-module. Writing $S_1,\dots,S_r$ for the simple modules up to isomorphism and $D_i=\operatorname{End}_A(S_i)^{\mathrm{op}}$, one has</p>
 <p>$$
@@ -130,7 +130,7 @@ $$</p>
 M_n(F) \cong S^{\oplus n}
 $$</p>
 <p>as a left module over itself.</p>
-<p><em>Proof.</em> The regular module decomposes into the $n$ column spaces, each isomorphic to $S$, so ${}_{M_n(F)}M_n(F)\cong S^{\oplus n}$ and $S$ is a direct summand of the regular module, hence projective. The algebra $M_n(F)$ is semisimple, so every module is a direct sum of simple modules and every simple module is a quotient of the regular module. Since the regular module is a sum of copies of $S$, its only composition factor is $S$, so $S$ is the only simple module up to isomorphism. Hence every module is a direct sum of copies of $S$, and the regular module is the case $M_n(F)\cong S^{\oplus n}$. $\square$</p>
+<p><em>Proof.</em> The regular module decomposes into the $n$ column spaces, each isomorphic to $S$, so ${}_{M_n(F)}M_n(F)\cong S^{\oplus n}$ and $S$ is a direct summand of the regular module, hence projective. The algebra $M_n(F)$ is semisimple, so every module is a direct sum of simple modules and every simple module is a quotient of the regular module. Since the regular module is a sum of copies of $S$, its only composition factor is $S$, so $S$ is the only simple module up to isomorphism. Hence every module is a direct sum of copies of $S$, and the regular module is the case $M_n(F)\cong S^{\oplus n}$.</p>
 <p><strong>Corollary.</strong> For the endomorphism and automorphism groups,</p>
 <p>$$
 \operatorname{End}_{M_n(F)}(S)\cong F, \qquad \operatorname{Aut}_{M_n(F)}(S)\cong F^{\times}, \qquad \operatorname{Aut}_{M_n(F)}(M_n(F))\cong GL_n(F).
@@ -140,20 +140,24 @@ $$</p>
 <h2 id="the-structure-of-group-algebras">The Structure of Group Algebras</h2>
 <p>Let $G$ be a finite group and $F$ a field, so that $A=F[G]$ is finite-dimensional over $F$. The general theory specialises as follows; the representation-theoretic consequences are developed in <em>Representations of Groups</em>, and only the algebra structure is recorded here.</p>
 <ul>
-<li>
-<p><strong>Semisimple case.</strong> If $\operatorname{char} F \nmid |G|$, Maschke's theorem gives $J(F[G])=0$, so</p>
+<li><strong>Semisimple case.</strong> If $\operatorname{char} F \nmid |G|$, Maschke's theorem gives $J(F[G])=0$, so</li>
+</ul>
 <p>$$
     F[G] \cong \prod_{i=1}^{r} M_{n_i}(D_i)
-    $$</p>
-<p>with $D_i$ finite-dimensional division algebras over $F$ and $|G|=\sum_i n_i^2 \dim_F D_i$. Over an algebraically closed field the $D_i$ are $F$, the number $r$ of irreducible representations equals the number of conjugacy classes of $G$, and $|G|=\sum_i n_i^2$.
-- <strong>Modular case.</strong> If $\operatorname{char} F=p$ divides $|G|$, the radical is nonzero and</p>
+$$</p>
+<pre><code>with $D_i$ finite-dimensional division algebras over $F$ and $|G|=\sum_i n_i^2 \dim_F D_i$. Over an algebraically closed field the $D_i$ are $F$, the number $r$ of irreducible representations equals the number of conjugacy classes of $G$, and $|G|=\sum_i n_i^2$.
+</code></pre>
+<ul>
+<li><strong>Modular case.</strong> If $\operatorname{char} F=p$ divides $|G|$, the radical is nonzero and</li>
+</ul>
 <p>$$
     F[G]=\bigoplus_b B_b
-    $$</p>
-<p>decomposes into indecomposable two-sided summands, the <strong>blocks</strong>. The irreducible representations of $F[G]$ are the irreducible representations of $F[G]/J(F[G])$, and the blocks are compared up to Morita equivalence as in <em>Morita Equivalence</em>.
-- <strong>The regular representation.</strong> The left regular representation of $G$ is the module ${}_{F[G]}F[G]$; in the semisimple case it decomposes as $\bigoplus_i S_i^{\oplus n_i}$, and its endomorphism algebra is $F[G]^{\mathrm{op}}\cong F[G]$.
-- <strong>Abelian groups.</strong> If $G$ is abelian and $F$ is algebraically closed of characteristic not dividing $|G|$, then $F[G]\cong F^{|G|}$ is commutative semisimple, and every irreducible representation is one-dimensional.</p>
-</li>
+$$</p>
+<pre><code>decomposes into indecomposable two-sided summands, the **blocks**. The irreducible representations of $F[G]$ are the irreducible representations of $F[G]/J(F[G])$, and the blocks are compared up to Morita equivalence as in *Morita Equivalence*.
+</code></pre>
+<ul>
+<li><strong>The regular representation.</strong> The left regular representation of $G$ is the module ${}_{F[G]}F[G]$; in the semisimple case it decomposes as $\bigoplus_i S_i^{\oplus n_i}$, and its endomorphism algebra is $F[G]^{\mathrm{op}}\cong F[G]$.</li>
+<li><strong>Abelian groups.</strong> If $G$ is abelian and $F$ is algebraically closed of characteristic not dividing $|G|$, then $F[G]\cong F^{|G|}$ is commutative semisimple, and every irreducible representation is one-dimensional.</li>
 </ul>
 <p>The structure theorem therefore reduces the representation theory of a finite group to the module theory of a product of matrix algebras over division algebras, and the division algebras are the only place where the base field enters beyond its characteristic.</p>
 <h2 id="idempotents-and-projective-representations">Idempotents and Projective Representations</h2>
@@ -190,7 +194,7 @@ $$</p>
 <p><strong>(e) Group algebras.</strong> As in §The Structure of Group Algebras: $\mathbb{C}[S_3]\cong\mathbb{C}\oplus\mathbb{C}\oplus M_2(\mathbb{C})$ has three irreducible representations of dimensions $1,1,2$ with $1+1+4=6$; $\mathbb{C}[Q_8]\cong\mathbb{C}^4\oplus M_2(\mathbb{C})$ has five irreducible representations of dimensions $1,1,1,1,2$ with sum of squares $8$. Over $\mathbb{R}$ the two-dimensional factor for $Q_8$ is replaced by $\mathbb{H}$, so the commutant of the irreducible representation is a noncommutative division algebra and the representation is not absolutely irreducible.</p>
 <p><strong>(f) The biquaternion algebra.</strong> $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}\cong M_2(\mathbb{C})$ has the single irreducible representation $S=\mathbb{C}^2$ with commutant $\mathbb{C}$, and $\mathbb{B}\cong S\oplus S$. Every finite-dimensional representation is isomorphic to $S^{\oplus k}$ for a unique $k \geq 0$, so its complex dimension is $2k$; such a module is free if and only if $k$ is even, equivalently if and only if its complex dimension is divisible by four. This is developed.</p>
 <h2 id="summary">Summary</h2>
-<p>A representation of a unital $F$-algebra $A$ is a unital homomorphism $A\to\operatorname{End}_F(V)$, equivalently a left $A$-module, and the two notions form equivalent categories whose morphisms are the intertwining operators. The irreducible representations are the simple modules, that is the quotients $A/\mathfrak{m}$ by maximal left ideals; Schur's lemma makes the endomorphism algebra of an irreducible representation a division algebra, which is $F$ when $F$ is algebraically closed and the representation is finite-dimensional. The density theorem gives the double centralizer theorem: an irreducible finite-dimensional representation with commutant $D$ and dimension $n$ over $D$ exhibits $A/\operatorname{Ann}_A(V)$ as $M_n(D^{\mathrm{op}})$. An algebra is semisimple exactly when every representation is completely reducible, and then $A\cong\prod_i M_{n_i}(D_i)$ by Wedderburn–Artin; for a finite-dimensional algebra $A/J(A)\cong\prod_i M_{n_i}(D_i)$, with $\sum_i n_i^2\leq\dim_F A$ over an algebraically closed field and equality exactly in the semisimple case. The modules over $M_n(F)$ are the direct sums of copies of the defining representation $F^n$, the unique irreducible one, and $M_n(F)\cong S^{\oplus n}$; endomorphism and automorphism groups are those of the type $\operatorname{End}_{M_n(F)}(S)=F$, $\operatorname{Aut}_{M_n(F)}(M_n(F))=GL_n(F)$.</p>
+<p>A representation of a unital $F$-algebra $A$ is a unital homomorphism $A\to\operatorname{End}_F(V)$, equivalently a left $A$-module, and the two notions form equivalent categories whose morphisms are the intertwining operators. The irreducible representations are the simple modules, that is the quotients $A/\mathrm{M}$ by maximal left ideals; Schur's lemma makes the endomorphism algebra of an irreducible representation a division algebra, which is $F$ when $F$ is algebraically closed and the representation is finite-dimensional. The density theorem gives the double centralizer theorem: an irreducible finite-dimensional representation with commutant $D$ and dimension $n$ over $D$ exhibits $A/\operatorname{Ann}_A(V)$ as $M_n(D^{\mathrm{op}})$. An algebra is semisimple exactly when every representation is completely reducible, and then $A\cong\prod_i M_{n_i}(D_i)$ by Wedderburn–Artin; for a finite-dimensional algebra $A/J(A)\cong\prod_i M_{n_i}(D_i)$, with $\sum_i n_i^2\leq\dim_F A$ over an algebraically closed field and equality exactly in the semisimple case. The modules over $M_n(F)$ are the direct sums of copies of the defining representation $F^n$, the unique irreducible one, and $M_n(F)\cong S^{\oplus n}$; endomorphism and automorphism groups are those of the type $\operatorname{End}_{M_n(F)}(S)=F$, $\operatorname{Aut}_{M_n(F)}(M_n(F))=GL_n(F)$.</p>
 <p>The structure of group algebras is the principal specialisation: over a field whose characteristic does not divide $|G|$ the group algebra is a product of matrix algebras over division algebras, with $|G|=\sum n_i^2\dim_F D_i$; over an algebraically closed field this is $\sum n_i^2=|G|$ and the number of irreducible representations is the number of conjugacy classes; in the modular case the group algebra splits into blocks. Idempotents produce the projective representations, the primitive idempotents produce the irreducible representations in the semisimple case, and the Cartan matrix records the multiplicities in the modular case. The examples — division algebras, matrix algebras, polynomial algebras with their normal forms, local algebras, group algebras, and the biquaternion algebra $\mathbb{B}\cong M_2(\mathbb{C})$ with its unique irreducible representation $S=\mathbb{C}^2$ — exhaust the range of the theory.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -238,7 +242,7 @@ $$</p>
 <td>invertible intertwining operators</td>
 </tr>
 <tr>
-<td>$A/\mathfrak{m}$</td>
+<td>$A/\mathrm{M}$</td>
 <td>irreducible representation from a maximal left ideal</td>
 </tr>
 <tr>

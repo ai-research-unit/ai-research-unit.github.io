@@ -52,13 +52,13 @@
       <div class="article-body">
         <h1 id="worked-examples-in-the-split-biquaternion-algebra"><strong>Worked Examples in the Split-Biquaternion Algebra</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>This article is the computational companion to the article on the split biquaternion algebra. Its purpose is to display, on explicit elements, every construction that the algebraic articles state in general: the basis products, the four involutions and their fixed-point subspaces, the idempotents and the two minimal left ideals, explicit zero-divisor pairs, the norm criterion for a unit, the four conjugations acting on a concrete element, and the realisation of the two quaternion halves.</p>
+<p>This article is the computational companion to the article on the split biquaternion algebra. Its purpose is to display, on explicit elements, every construction that the algebraic articles state in general: the basis products, the four involutions and their fixed-point subspaces, the idempotents and the two minimal left ideals, explicit zero-divisor pairs, the four conjugations acting on a concrete element, and the realisation of the two quaternion halves.</p>
 <p>The treatment is purely mathematical. Every number is recomputed before it is asserted, and the model used for the calculations is stated: a split biquaternion $\tilde{Q} = A + j B$ with $A, B \in \mathbb{H}$ is written as the pair of real quaternions $(A, B)$, with multiplication $(A, B)(C, D) = (AC + BD, AD + BC)$. No physics is invoked. The quaternion algebra $\mathbb{H}$ is assumed from the article on quaternion algebra, and the split complex algebra $\mathbb{D}$ from the article on split complex algebra, with its idempotents $\tilde\Pi_+ = \tfrac{1}{2}(1 + j)$ and $\tilde\Pi_- = \tfrac{1}{2}(1 - j)$.</p>
 <p>Throughout,
 $$
 \tilde{Q} = Q_0 e_0 + Q_1 e_1 + Q_2 e_2 + Q_3 e_3, \qquad Q_\mu = q_\mu + j q'_\mu \in \mathbb{D},
 $$
-with real $q_\mu, q'_\mu$, and the four conjugations are $\bar{\cdot}$ (quaternion), ${}^{*}$ (split complex), ${}^{\dagger} = {}^{*}\circ\bar{\cdot}$ (Hermitian) and ${}^{\flat} = -{}^{\dagger}$ (anti-Hermitian). The norm form is $N(\tilde{Q}) = \tilde{Q} \bar{\tilde{Q}} = \sum_\mu Q_\mu^2$.</p>
+with real $q_\mu, q'_\mu$, and the four conjugations are $\bar{\cdot}$ (quaternion), ${}^{*}$ (split complex), ${}^{\dagger} = {}^{*}\circ\bar{\cdot}$ (Hermitian) and ${}^{\flat} = -{}^{\dagger}$ (anti-Hermitian).</p>
 <h2 id="the-algebra-and-its-basis">The Algebra and Its Basis</h2>
 <p>The algebra $\mathbb{H}_{\mathbb{D}} = \mathbb{D} \otimes_{\mathbb{R}} \mathbb{H}$ is eight-dimensional over $\mathbb{R}$, with the real basis</p>
 <p>$$
@@ -111,6 +111,20 @@ $$</p>
 \tilde{Q} \tilde{R} = \big(Q_0 R_0 - (\mathbf{Q}, \mathbf{R})\big) e_0 + Q_0 \mathbf{R} + R_0 \mathbf{Q} + [\mathbf{Q}, \mathbf{R}],
 $$</p>
 <p>where $(\mathbf{Q}, \mathbf{R}) = \sum_{k=1}^{3} Q_k R_k$ and $[\mathbf{Q}, \mathbf{R}]$ is the split-complex-linear cross product. The algebra is associative but not commutative, because $[\mathbf{Q}, \mathbf{R}]$ need not vanish; it is not a division algebra, because it has zero divisors, as the examples below show.</p>
+<h3 id="worked-multiplication">Worked Multiplication</h3>
+<p>As a final check of the product formula, the square of the concrete element is</p>
+<p>$$
+\tilde{Q}^2 = (-4 + 4 e_1) + j (4 + 4 e_1).
+$$</p>
+<p>This can be verified either from the scalar-vector formula, using $Q_0 = 1 + j$, $\mathbf{Q} = 2 e_1 + (1 - j) e_2$, or from the idempotent components: since $\tilde\Pi_+^2 = \tilde\Pi_+$, $\tilde\Pi_-^2 = \tilde\Pi_-$ and $\tilde\Pi_+ \tilde\Pi_- = 0$,</p>
+<p>$$
+\tilde{Q}^2 = \tilde{Q}_+^2 \tilde\Pi_+ + \tilde{Q}_-^2 \tilde\Pi_-,
+$$</p>
+<p>with $\tilde{Q}_+^2 = (2 + 2 e_1)^2 = 4 + 8 e_1 + 4 e_1^2 = 8 e_1$ and $\tilde{Q}_-^2 = (2 e_1 + 2 e_2)^2 = 4 e_1^2 + 4(e_1 e_2 + e_2 e_1) + 4 e_2^2 = -8$, the cross terms cancelling. Reassembling,</p>
+<p>$$
+(8 e_1) \tilde\Pi_+ + (-8) \tilde\Pi_- = 4 e_1 (1 + j) - 4 (1 - j) = (-4 + 4 e_1) + j (4 + 4 e_1),
+$$</p>
+<p>which agrees with the value above. The agreement of the two routes illustrates the role of the idempotent decomposition as the computational shortcut of the algebra.</p>
 <h2 id="a-concrete-element-and-its-components">A Concrete Element and Its Components</h2>
 <p>Take the concrete element</p>
 <p>$$
@@ -128,7 +142,7 @@ $$</p>
 <p>$$
 \tilde{Q}_+ = 2 + 2 e_1, \qquad \tilde{Q}_- = 2 e_1 + 2 e_2.
 $$</p>
-<p>Both components are nonzero, so $\tilde{Q}$ is a unit, as the norm computation below confirms.</p>
+<p>Both components are nonzero, so $\tilde{Q}$ is a unit.</p>
 <h2 id="the-four-conjugations-on-a-concrete-element">The Four Conjugations on a Concrete Element</h2>
 <p>Applying the four conjugations to $\tilde{Q} = (1 + j) + 2 e_1 + (1 - j) e_2$ gives the following explicit elements:</p>
 <ul>
@@ -139,7 +153,7 @@ $$</p>
 </ul>
 <p>Each is an involution: applying it twice returns $\tilde{Q}$. For instance $\bar{\bar{\tilde{Q}}} = \bar{(1 + j) - 2 e_1 - (1 - j) e_2} = (1 + j) + 2 e_1 + (1 - j) e_2 = \tilde{Q}$, and the same holds for the other three.</p>
 <h2 id="the-four-involution-fixed-point-subspaces">The Four Involution Fixed-Point Subspaces</h2>
-<p>Each conjugation has a fixed-point subspace, and the orthogonal projection onto a fixed-point subspace of an involution $\sigma$ is $\tfrac{1}{2}(\tilde{Q} + \sigma \tilde{Q})$. The four subspaces are listed below, with their defining conditions and real dimensions.</p>
+<p>Each conjugation has a fixed-point subspace, and the projection onto the fixed-point subspace of an involution $\sigma$, along the complementary eigenspace, is $\tfrac{1}{2}(\tilde{Q} + \sigma \tilde{Q})$. The four subspaces are listed below, with their defining conditions and real dimensions.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -218,26 +232,6 @@ $$</p>
 \tilde P \tilde{R} = e_1 (1 + e_2) \tilde\Pi_- \tilde\Pi_+ = 0,
 $$</p>
 <p>while neither $\tilde P$ nor $\tilde{R}$ is zero. The pair therefore exhibits an explicit zero divisor, and it shows the general shape of the zero divisor set: the zero divisors of $\mathbb{H}_{\mathbb{D}}$ are exactly the elements with $\tilde{Q}_+ = 0$ or $\tilde{Q}_- = 0$, that is, the union of the two halves $\mathbb{H} \tilde\Pi_- \cup \mathbb{H} \tilde\Pi_+$. The classification is developed in <em>Split-Biquaternion Zero Divisors</em>.</p>
-<h2 id="the-norm-criterion-for-a-unit-worked">The Norm Criterion for a Unit, Worked</h2>
-<p>The norm form is $N(\tilde{Q}) = \tilde{Q} \bar{\tilde{Q}} = \sum_\mu Q_\mu^2$, a split complex number, and $\tilde{Q}$ is a unit exactly when $N(\tilde{Q})$ is a unit of $\mathbb{D}$.</p>
-<p>For the concrete element, with $Q_0 = 1 + j$, $Q_1 = 2$, $Q_2 = 1 - j$, $Q_3 = 0$,</p>
-<p>$$
-N(\tilde{Q}) = (1 + j)^2 + 2^2 + (1 - j)^2 + 0^2 = (2 + 2j) + 4 + (2 - 2j) = 8.
-$$</p>
-<p>Since $8 \in \mathbb{D}^\times$, the element $\tilde{Q}$ is a unit. Directly,</p>
-<p>$$
-\tilde{Q} \bar{\tilde{Q}} = 8 e_0, \qquad \tilde{Q}^{-1} = \tfrac{1}{8} \bar{\tilde{Q}} = \tfrac{1}{8}\big(1 - 2 e_1 - e_2\big) + \tfrac{j}{8}\big(1 + e_2\big),
-$$</p>
-<p>and multiplying out gives $\tilde{Q} \tilde{Q}^{-1} = e_0$, as required.</p>
-<p>The criterion is not the naive one, $N(\tilde{Q}) \neq 0$. For $\tilde P = \tilde\Pi_+$ one has</p>
-<p>$$
-N(\tilde\Pi_+) = \tilde\Pi_+^2 = \tilde\Pi_+, \qquad \tilde\Pi_+ \neq 0,
-$$</p>
-<p>yet $\tilde\Pi_+$ is a zero divisor, since $\tilde\Pi_+ \tilde\Pi_- = 0$. The explanation is that $\tilde\Pi_+$ is a nonzero non-unit of the split complex algebra $\mathbb{D}$: it is a zero divisor there, so $N(\tilde\Pi_+) = \tilde\Pi_+ \notin \mathbb{D}^\times$ and the criterion correctly refuses to call $\tilde\Pi_+$ a unit. In the idempotent basis the norm is</p>
-<p>$$
-N(\tilde{Q}) = N_{\mathbb{H}}(\tilde{Q}_+) \tilde\Pi_+ + N_{\mathbb{H}}(\tilde{Q}_-) \tilde\Pi_-,
-$$</p>
-<p>with $N_{\mathbb{H}}$ the positive-definite quaternion norm, and here $N_{\mathbb{H}}(\tilde{Q}_+) = 2^2 + 2^2 = 8$ and $N_{\mathbb{H}}(\tilde{Q}_-) = 2^2 + 2^2 = 8$, so $N(\tilde{Q}) = 8 \tilde\Pi_+ + 8 \tilde\Pi_- = 8$, matching the direct computation.</p>
 <h2 id="the-two-quaternion-halves-realised">The Two Quaternion Halves Realised</h2>
 <p>The isomorphism $\varphi : \mathbb{H}_{\mathbb{D}} \to \mathbb{H} \oplus \mathbb{H}$, $\varphi(\tilde{Q}) = (\tilde{Q}_+, \tilde{Q}_-)$, sends the concrete element to</p>
 <p>$$
@@ -247,27 +241,13 @@ $$</p>
 <p>$$
 (2 + 2 e_1)^{-1} = \tfrac{1}{8}(2 - 2 e_1), \qquad (2 e_1 + 2 e_2)^{-1} = \tfrac{1}{8}(-2 e_1 - 2 e_2),
 $$</p>
-<p>and $\varphi(\tilde{Q}^{-1}) = \tfrac{1}{8}(2 - 2 e_1, -2 e_1 - 2 e_2)$, which agrees with $\tilde{Q}^{-1} = \tfrac{1}{8} \bar{\tilde{Q}}$ computed above. The two halves are thus not merely an abstract direct sum: on this element they are the two nonzero quaternions whose product-freeness decides invertibility.</p>
-<h2 id="worked-multiplication">Worked Multiplication</h2>
-<p>As a final check of the product formula, the square of the concrete element is</p>
-<p>$$
-\tilde{Q}^2 = (-4 + 4 e_1) + j (4 + 4 e_1).
-$$</p>
-<p>This can be verified either from the scalar-vector formula, using $Q_0 = 1 + j$, $\mathbf{Q} = 2 e_1 + (1 - j) e_2$, or from the idempotent components: since $\tilde\Pi_+^2 = \tilde\Pi_+$, $\tilde\Pi_-^2 = \tilde\Pi_-$ and $\tilde\Pi_+ \tilde\Pi_- = 0$,</p>
-<p>$$
-\tilde{Q}^2 = \tilde{Q}_+^2 \tilde\Pi_+ + \tilde{Q}_-^2 \tilde\Pi_-,
-$$</p>
-<p>with $\tilde{Q}_+^2 = (2 + 2 e_1)^2 = 4 + 8 e_1 + 4 e_1^2 = 8 e_1$ and $\tilde{Q}_-^2 = (2 e_1 + 2 e_2)^2 = 4 e_1^2 + 4(e_1 e_2 + e_2 e_1) + 4 e_2^2 = -8$, the cross terms cancelling. Reassembling,</p>
-<p>$$
-(8 e_1) \tilde\Pi_+ + (-8) \tilde\Pi_- = 4 e_1 (1 + j) - 4 (1 - j) = (-4 + 4 e_1) + j (4 + 4 e_1),
-$$</p>
-<p>which agrees with the value above. The agreement of the two routes illustrates the role of the idempotent decomposition as the computational shortcut of the algebra.</p>
+<p>and $\varphi(\tilde{Q}^{-1}) = \tfrac{1}{8}(2 - 2 e_1, -2 e_1 - 2 e_2)$, which agrees with the inverse $\tilde{Q}^{-1} = \tfrac{1}{8} \bar{\tilde{Q}}$. The two halves are thus not merely an abstract direct sum: on this element they are the two nonzero quaternions whose product-freeness decides invertibility.</p>
 <h2 id="summary">Summary</h2>
 <p>The split biquaternion algebra $\mathbb{H}_{\mathbb{D}}$ has the real basis $1, e_1, e_2, e_3, j, j e_1, j e_2, j e_3$ and the product formula $\tilde{Q} \tilde{R} = (Q_0 R_0 - (\mathbf{Q}, \mathbf{R})) e_0 + Q_0 \mathbf{R} + R_0 \mathbf{Q} + [\mathbf{Q}, \mathbf{R}]$. On the concrete element</p>
 <p>$$
 \tilde{Q} = (1 + j) + 2 e_1 + (1 - j) e_2
 $$</p>
-<p>the four conjugations act as $\bar{\tilde{Q}} = (1 + j) - 2 e_1 - (1 - j) e_2$, $\tilde{Q}^* = (1 - j) + 2 e_1 + (1 + j) e_2$, $\tilde{Q}^\dagger = \bar{\tilde{Q}}^*$ and $\tilde{Q}^\flat = -\tilde{Q}^\dagger$; the four fixed-point subspaces $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$, $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$, $\mathbb{M}_+$, $\mathbb{M}_-$ have dimensions $2, 4, 4, 4$ and overlap, so their projections do not sum to the element. The idempotents $\tilde\Pi_\pm = \tfrac{1}{2}(1 \pm j)$ are central and primitive and give the two minimal left ideals $\mathbb{H} \tilde\Pi_\pm$; the element decomposes as $\tilde{Q} = (2 + 2 e_1) \tilde\Pi_+ + (2 e_1 + 2 e_2) \tilde\Pi_-$ with both components nonzero. An explicit zero-divisor pair is $\tilde P = e_1 \tilde\Pi_-$ and $\tilde{R} = (1 + e_2) \tilde\Pi_+$, with $\tilde P \tilde{R} = 0$. The norm form is $N(\tilde{Q}) = \sum_\mu Q_\mu^2 = 8 \in \mathbb{D}^\times$, so $\tilde{Q}$ is a unit with $\tilde{Q}^{-1} = \tfrac{1}{8} \bar{\tilde{Q}}$, while $N(\tilde\Pi_+) = \tilde\Pi_+ \neq 0$ does not make $\tilde\Pi_+$ a unit, since $\tilde\Pi_+$ is a zero divisor of $\mathbb{D}$. The isomorphism $\varphi(\tilde{Q}) = (\tilde{Q}_+, \tilde{Q}_-) = (2 + 2 e_1, 2 e_1 + 2 e_2)$ realises the two quaternion halves, and the square $\tilde{Q}^2 = (-4 + 4 e_1) + j(4 + 4 e_1)$ agrees whether computed from the product formula or from the idempotent components.</p>
+<p>the four conjugations act as $\bar{\tilde{Q}} = (1 + j) - 2 e_1 - (1 - j) e_2$, $\tilde{Q}^* = (1 - j) + 2 e_1 + (1 + j) e_2$, $\tilde{Q}^\dagger = \bar{\tilde{Q}}^*$ and $\tilde{Q}^\flat = -\tilde{Q}^\dagger$; the four fixed-point subspaces $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$, $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$, $\mathbb{M}_+$, $\mathbb{M}_-$ have dimensions $2, 4, 4, 4$ and overlap, so their projections do not sum to the element. The idempotents $\tilde\Pi_\pm = \tfrac{1}{2}(1 \pm j)$ are central and primitive and give the two minimal left ideals $\mathbb{H} \tilde\Pi_\pm$; the element decomposes as $\tilde{Q} = (2 + 2 e_1) \tilde\Pi_+ + (2 e_1 + 2 e_2) \tilde\Pi_-$ with both components nonzero. An explicit zero-divisor pair is $\tilde P = e_1 \tilde\Pi_-$ and $\tilde{R} = (1 + e_2) \tilde\Pi_+$, with $\tilde P \tilde{R} = 0$. The isomorphism $\varphi(\tilde{Q}) = (\tilde{Q}_+, \tilde{Q}_-) = (2 + 2 e_1, 2 e_1 + 2 e_2)$ realises the two quaternion halves, and the square $\tilde{Q}^2 = (-4 + 4 e_1) + j(4 + 4 e_1)$ agrees whether computed from the product formula or from the idempotent components.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -308,10 +288,6 @@ $$</p>
 <tr>
 <td>$\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}, \mathbb{H}_{\mathbb{H}_{\mathbb{D}}}, \mathbb{M}_+, \mathbb{M}_-$</td>
 <td>The four involution fixed-point subspaces</td>
-</tr>
-<tr>
-<td>$N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$</td>
-<td>Norm form</td>
 </tr>
 <tr>
 <td>$\mathbb{H} \tilde\Pi_\pm$</td>

@@ -76,9 +76,16 @@ $$</p>
 <p>$$
 \mathrm{Aut}_{\mathbb{C}}(\mathbb{B}) \cong \mathbb{B}^{\times} / \mathbb{C}^{\times} .$$</p>
 <p><strong>Dimension.</strong> Since $\mathbb{B}^{\times}$ has complex dimension $4$ and the central scalars have complex dimension $1$, $\dim_{\mathbb{C}} \mathrm{Aut}_{\mathbb{C}}(\mathbb{B}) = 4 - 1 = 3$. Equivalently, the group has real dimension $6$, and it is connected.</p>
+<p><strong>Corollary (the projective linear group).</strong> Under the matrix model $\mathbb{B}\cong M_2(\mathbb{C})$ the units are $GL(2,\mathbb{C})$ and the nonzero central scalars are the scalar matrices, so
+$$
+\operatorname{Aut}_{\mathbb{C}}(\mathbb{B})\cong\mathbb{B}^{\times}/\mathbb{C}^{\times}\cong PGL(2,\mathbb{C}),
+$$
+the projective general linear group, of complex dimension three. This is the biquaternion form of the classical isomorphism $\operatorname{Aut}(M_n(k))\cong PGL(n,k)$.</p>
+<p><strong>Corollary (the norm).</strong> Every $\mathbb{C}$-linear automorphism preserves the biquaternion norm, and every $\mathbb{R}$-linear automorphism preserves the real norm $r=\sqrt{|N|}$. For an inner automorphism the complex statement is multiplicativity, $N(g\tilde{Q}g^{-1})=N(g)N(\tilde{Q})N(g)^{-1}=N(\tilde{Q})$; complex conjugation reverses the sign of the imaginary part, $N(\tilde{Q}^{*})=N(\tilde{Q})^{*}$, and so preserves $|N|$ without preserving $N$ itself.</p>
+<p><strong>Remark (automorphisms against isometries).</strong> The automorphism group is a proper subgroup of the full isometry group $O(N)$ of the real norm on $\mathbb{B}\cong\mathbb{R}^8$: $PGL(2,\mathbb{C})$ has real dimension $6$, whereas the isometry group of a non-degenerate form of signature $(4,4)$ on $\mathbb{R}^8$ has real dimension $\tfrac{8\cdot7}{2}=28$. The automorphisms are the isometries that also preserve the algebra; the further isometries are not algebra maps.</p>
 <p><strong>Example.</strong> For $g = e_1$, with $e_1^{-1} = -e_1$, conjugation fixes $e_1$, $e_0$, $i$ and reverses the signs of $e_2$ and $e_3$: $\iota_{e_1}(e_1) = e_1$, $\iota_{e_1}(e_2) = -e_2$, $\iota_{e_1}(e_3) = -e_3$. Indeed $e_1 e_2 e_1^{-1} = -(e_1 e_2)e_1 = -e_3 e_1 = -e_2$, using $e_1 e_2 = e_3$ and $e_3 e_1 = e_2$.</p>
 <p><strong>Remark.</strong> Quaternion conjugation satisfies $\overline{xy} = \bar{y}\,\bar{x}$ and is an <strong>anti-automorphism</strong>, not an automorphism, so it is not in $\mathrm{Aut}_{\mathbb{C}}(\mathbb{B})$; complex conjugation is an automorphism but is not $\mathbb{C}$-linear, so it is not in $\mathrm{Aut}_{\mathbb{C}}(\mathbb{B})$ either. It reappears over $\mathbb{R}$ below.</p>
-<h2 id="automorphisms-over-math102">Automorphisms over $\mathbb{R}$</h2>
+<h2 id="automorphisms-over-math120">Automorphisms over $\mathbb{R}$</h2>
 <p>Now the ground field is $\mathbb{R}$: $\mathbb{B}$ is eight-dimensional, and automorphisms need only be $\mathbb{R}$-linear, not $\mathbb{C}$-linear, which makes the group strictly larger.</p>
 <p><strong>Automorphisms preserve the center.</strong> If $\sigma$ is an $\mathbb{R}$-algebra automorphism and $z$ is central, then $\sigma(z)\sigma(x) = \sigma(zx) = \sigma(xz) = \sigma(x)\sigma(z)$ for every $x$, so $\sigma(z)$ is central. Thus $\sigma$ restricts to an $\mathbb{R}$-algebra automorphism of $\mathbb{C}_{\mathbb{B}} \cong \mathbb{C}$; since $\mathbb{C}$ as a real algebra has exactly two automorphisms, the identity and $\kappa(z) = z^{*}$, restriction gives a homomorphism $\rho : \mathrm{Aut}_{\mathbb{R}}(\mathbb{B}) \to \mathrm{Aut}_{\mathbb{R}}(\mathbb{C}_{\mathbb{B}}) = \{\mathrm{id}, \kappa\} \cong \mathbb{Z}/2$.</p>
 <p><strong>The kernel is the $\mathbb{C}$-linear part.</strong> An automorphism lies in $\ker \rho$ exactly when it fixes the center pointwise, and an $\mathbb{R}$-linear map fixing $\mathbb{C}_{\mathbb{B}}$ pointwise is automatically $\mathbb{C}$-linear, since it commutes with multiplication by the central element $i$. Hence $\ker \rho = \mathrm{Aut}_{\mathbb{C}}(\mathbb{B})$, the group computed above; these are precisely the inner automorphisms, by Skolem–Noether.</p>
@@ -89,7 +96,7 @@ $$</p>
 $$</p>
 <p>the generator acting on $\mathrm{Aut}_{\mathbb{C}}(\mathbb{B})$ by $\iota_g \mapsto \iota_{g^{*}}$. Concretely, every real automorphism of $\mathbb{B}$ has exactly one of the two forms $\sigma(x) = g x g^{-1}$ or $\sigma(x) = g\, x^{*}\, g^{-1}$, with $g \in \mathbb{B}^{\times}$ determined up to a nonzero complex scalar. The first family is the identity coset of $\mathbb{C}$-linear inner automorphisms; the second is the coset of $c$, consisting of <strong>conjugate-linear</strong> automorphisms.</p>
 <p><strong>Dimension and scope.</strong> As a real Lie group, $\mathrm{Aut}_{\mathbb{R}}(\mathbb{B})$ has real dimension $6$ and exactly two connected components, each a copy of $\mathrm{Aut}_{\mathbb{C}}(\mathbb{B})$; it is larger and is a real group rather than a complex one. Skolem–Noether describes the identity component $\mathrm{Aut}_{\mathbb{C}}(\mathbb{B})$; the conjugate-linear coset exists because $\mathbb{C}/\mathbb{R}$ has a nontrivial Galois automorphism, and it is not inner.</p>
-<h2 id="derivations-over-math151">Derivations over $\mathbb{C}$</h2>
+<h2 id="derivations-over-math169">Derivations over $\mathbb{C}$</h2>
 <p>Throughout this section the ground field is $\mathbb{C}$.</p>
 <p><strong>Definition.</strong> A <strong>$\mathbb{C}$-linear derivation</strong> of $\mathbb{B}$ is a $\mathbb{C}$-linear map $D : \mathbb{B} \to \mathbb{B}$ with $D(xy) = D(x)\,y + x\,D(y)$ for all $x, y \in \mathbb{B}$. The set of all such maps is a complex vector space, written $\mathrm{Der}_{\mathbb{C}}(\mathbb{B})$, and it is a Lie algebra under the commutator bracket $[D_1, D_2] = D_1 \circ D_2 - D_2 \circ D_1$.</p>
 <p>Every derivation satisfies $D(e_0) = 0$, since $D(e_0) = D(e_0 e_0) = 2D(e_0)$.</p>
@@ -111,7 +118,7 @@ $$</p>
 $$</p>
 <p>so $\{D_1, D_2, D_3\}$ is a complex basis of $\mathrm{Der}_{\mathbb{C}}(\mathbb{B})$. For instance $D_1(e_2) = \tfrac{1}{2}(e_1 e_2 - e_2 e_1) = \tfrac{1}{2}(e_3 + e_3) = e_3$, and $[D_1, D_2] = \tfrac{1}{4}\mathrm{ad}_{[e_1,e_2]} = \tfrac{1}{4}\mathrm{ad}_{2e_3} = D_3$.</p>
 <p><strong>Derivations and automorphisms.</strong> The two structures are linked by the exponential: $\exp(t\,\mathrm{ad}_a)(x) = e^{ta}\, x\, e^{-ta}$ for $a \in \mathbb{B}$, $t \in \mathbb{R}$. The right-hand side is the inner automorphism determined by $e^{ta}$, so the Lie algebra of the automorphism group is the derivation algebra, $\mathrm{Lie}\,\mathrm{Aut}_{\mathbb{C}}(\mathbb{B}) = \mathrm{Der}_{\mathbb{C}}(\mathbb{B})$.</p>
-<h2 id="derivations-over-math212">Derivations over $\mathbb{R}$</h2>
+<h2 id="derivations-over-math230">Derivations over $\mathbb{R}$</h2>
 <p>Now the ground field is $\mathbb{R}$. An $\mathbb{R}$-linear derivation is required to satisfy the Leibniz rule but need not be $\mathbb{C}$-linear. At first sight this seems to allow a larger space, but in fact it does not.</p>
 <p><strong>Every real derivation is automatically $\mathbb{C}$-linear.</strong> Let $D$ be an $\mathbb{R}$-linear derivation. As in the automorphism case, $D$ maps the center into itself: if $z$ is central, then for every $x$,</p>
 <p>$$
@@ -119,7 +126,7 @@ D(z)x = D(zx) - zD(x) = D(xz) - D(x)z = xD(z).
 $$</p>
 <p>So $D$ restricts to a derivation $\mathbb{C}_{\mathbb{B}} \to \mathbb{C}_{\mathbb{B}}$. But $\mathbb{C}$ has no nonzero $\mathbb{R}$-linear derivations: a derivation of $\mathbb{C}$ is determined by $D(i)$, and $0 = D(-1) = D(i^{2}) = i\,D(i) + D(i)\,i = 2i\,D(i)$ forces $D(i) = 0$, hence $D$ vanishes on the center. Since $i$ is central, the Leibniz rule then gives $D(i x) = D(i)\,x + i\,D(x) = i\,D(x)$, so $D$ is $\mathbb{C}$-linear. Therefore $\mathrm{Der}_{\mathbb{R}}(\mathbb{B}) = \mathrm{Der}_{\mathbb{C}}(\mathbb{B})$.</p>
 <p>There is no semilinear analogue for derivations: a derivation cannot conjugate a coefficient.</p>
-<p><strong>Dimension and structure.</strong> Consequently the real derivation space has real dimension $6$, that is, complex dimension $3$, and $\mathrm{Der}_{\mathbb{R}}(\mathbb{B}) = \mathrm{Der}_{\mathbb{C}}(\mathbb{B})$, the realification of the complex derivation algebra. As a real Lie algebra this is the orthogonal Lie algebra $\mathfrak{so}(1,3)$ of the Lorentz group, equivalently the bivector subspace of $\mathrm{Cl}^{+}_{1,3}$ under the commutator. The derivations $D_1, D_2, D_3$ of the previous section span it over $\mathbb{C}$, and together with $iD_1, iD_2, iD_3$ over $\mathbb{R}$.</p>
+<p><strong>Dimension and structure.</strong> Consequently the real derivation space has real dimension $6$, that is, complex dimension $3$, and $\mathrm{Der}_{\mathbb{R}}(\mathbb{B}) = \mathrm{Der}_{\mathbb{C}}(\mathbb{B})$, the realification of the complex derivation algebra. As a real Lie algebra this is the orthogonal Lie algebra $\mathrm{SO}(1,3)$ of the Lorentz group, equivalently the bivector subspace of $\mathrm{Cl}^{+}_{1,3}$ under the commutator. The derivations $D_1, D_2, D_3$ of the previous section span it over $\mathbb{C}$, and together with $iD_1, iD_2, iD_3$ over $\mathbb{R}$.</p>
 <p><strong>Summary of the asymmetry.</strong> For <strong>automorphisms</strong>, the real group is strictly larger than the complex one, because complex conjugation supplies a second coset. For <strong>derivations</strong>, the real and complex spaces coincide, because the center is étale over $\mathbb{R}$ and admits no nonzero derivation. This is a ground-field distinction and not a convention.</p>
 <h2 id="worked-examples">Worked Examples</h2>
 <p><strong>The conjugation involution.</strong> Complex conjugation $c(\tilde{Q}) = \tilde{Q}^{*}$ is an $\mathbb{R}$-algebra automorphism with $c(e_k) = e_k$ ($k = 0,1,2,3$) and $c(i) = -i$; it fixes the quaternion subspace $\mathbb{H}_{\mathbb{B}}$ pointwise, negates the scalar imaginary, satisfies $c^{2} = \mathrm{id}$, preserves the product, and is conjugate-linear over $\mathbb{C}$. It is not inner, because inner automorphisms fix the center pointwise whereas $c(i) = -i$, so it represents the nontrivial coset of $\mathrm{Aut}_{\mathbb{C}}(\mathbb{B})$ in $\mathrm{Aut}_{\mathbb{R}}(\mathbb{B})$.</p>
@@ -168,7 +175,7 @@ $$</p>
 <tr>
 <td>Derivation space (the Lie algebra of the automorphism group)</td>
 <td>$\mathrm{Der}_{\mathbb{C}}(\mathbb{B}) \cong \mathbb{B}/\mathbb{C}_{\mathbb{B}}$, complex dimension $3$ ($6$ over $\mathbb{R}$); traceless part, complex pure-vector part, bivectors</td>
-<td>$\mathrm{Der}_{\mathbb{R}}(\mathbb{B}) = \mathrm{Der}_{\mathbb{C}}(\mathbb{B})$, real dimension $6$, isomorphic to the Lorentz algebra $\mathfrak{so}(1,3)$</td>
+<td>$\mathrm{Der}_{\mathbb{R}}(\mathbb{B}) = \mathrm{Der}_{\mathbb{C}}(\mathbb{B})$, real dimension $6$, isomorphic to the Lorentz algebra $\mathrm{SO}(1,3)$</td>
 </tr>
 </tbody>
 </table></div>
@@ -228,7 +235,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\mathrm{Der}_{\mathbb{R}}(\mathbb{B})$</td>
-<td>Derivations over $\mathbb{R}$, $\cong \mathfrak{so}(1,3)$ as a real Lie algebra</td>
+<td>Derivations over $\mathbb{R}$, $\cong \mathrm{SO}(1,3)$ as a real Lie algebra</td>
 </tr>
 <tr>
 <td>$\mathrm{ad}_a(x) = [a,x]$</td>

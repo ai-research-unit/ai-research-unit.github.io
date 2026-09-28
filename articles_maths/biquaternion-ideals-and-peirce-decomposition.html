@@ -66,7 +66,7 @@
 <p>$$
 Q_0 e_0 + \tfrac12\big(Q_0 e_0 + Q_1 e_1 - Q_2 e_2 - Q_3 e_3\big) + \tfrac12\big(Q_0 e_0 - Q_1 e_1 + Q_2 e_2 - Q_3 e_3\big) + \tfrac12\big(Q_0 e_0 - Q_1 e_1 - Q_2 e_2 + Q_3 e_3\big) = 4 Q_0 e_0,
 $$</p>
-<p>divided by $8$, giving $Q_0 e_0 \in I$. If $Q_0 \neq 0$ then $e_0 = Q_0^{-1}(Q_0 e_0) \in I$ and $I = \mathbb{B}$. If $Q_0 = 0$ then $\tilde{Q}$ is a nonzero element of the vector subspace, and conjugating it by the real unit quaternions rotates it: the conjugates run over a sphere in $\mathrm{Vect}(\mathbb{B})$, whose real span is all of $\mathrm{Vect}(\mathbb{B})$, so $\mathrm{Vect}(\mathbb{B}) \subseteq I$. In particular $e_1 \in I$, hence $e_1^2 = -e_0 \in I$ and again $I = \mathbb{B}$. $\square$</p>
+<p>divided by $8$, giving $Q_0 e_0 \in I$. If $Q_0 \neq 0$ then $e_0 = Q_0^{-1}(Q_0 e_0) \in I$ and $I = \mathbb{B}$. If $Q_0 = 0$ then $\tilde{Q}$ is a nonzero element of the vector subspace, and conjugating it by the real unit quaternions rotates it: the conjugates run over a sphere in $\mathrm{Vect}(\mathbb{B})$, whose real span is all of $\mathrm{Vect}(\mathbb{B})$, so $\mathrm{Vect}(\mathbb{B}) \subseteq I$. In particular $e_1 \in I$, hence $e_1^2 = -e_0 \in I$ and again $I = \mathbb{B}$.</p>
 <p>Consequences over $\mathbb{C}$:</p>
 <ul>
 <li>The only quotient algebras of $\mathbb{B}$ are $\mathbb{B}$ and $0$.</li>
@@ -133,6 +133,12 @@ $$</p>
 \mathbb{B} = \tilde\Pi_1\mathbb{B} \oplus \tilde\Pi_2\mathbb{B} = (\mathbb{C}\tilde\Pi_1 \oplus \mathbb{C}x) \oplus (\mathbb{C}y \oplus \mathbb{C}\tilde\Pi_2).
 $$</p>
 <p>The first exhibits $\mathbb{B}$ as a direct sum of the two minimal left ideals; the second exhibits it as a direct sum of the two minimal right ideals. The two groupings of the same four basis elements differ: the Peirce decomposition groups $\tilde\Pi_1$ with $x$ and $\tilde\Pi_2$ with $y$, whereas the left-ideal decomposition groups $\tilde\Pi_1$ with $y$ and $\tilde\Pi_2$ with $x$. Each left ideal is two-dimensional over $\mathbb{C}$; each right ideal is its dual. Since $\mathbb{B}$ is simple, a one-sided ideal is never two-sided; for instance $\mathbb{B}\tilde\Pi_1$ is not stable under right multiplication by $x$.</p>
+<p><strong>Why the sum is direct, and the dimensions.</strong> Every $\tilde{Q} \in \mathbb{B}$ satisfies $\tilde{Q} = \tilde{Q}(\tilde\Pi_1 + \tilde\Pi_2) = \tilde{Q}\tilde\Pi_1 + \tilde{Q}\tilde\Pi_2$, so the two left ideals span. Their intersection is zero: if $\tilde{Q}\tilde\Pi_1 = \tilde{P}\tilde\Pi_2$, then multiplying on the right by $\tilde\Pi_1$ and using $\tilde\Pi_1^2 = \tilde\Pi_1$ and $\tilde\Pi_2\tilde\Pi_1 = 0$ gives $\tilde{Q}\tilde\Pi_1 = 0$. The basis above reads $\mathbb{B}\tilde\Pi_1 = \mathbb{C}\tilde\Pi_1 \oplus \mathbb{C}y$, of dimension $2$ over $\mathbb{C}$ and $4$ over $\mathbb{R}$, with $\mathbb{B}\tilde\Pi_2 = \mathbb{C}x \oplus \mathbb{C}\tilde\Pi_2$ for the second; together they account for $4 + 4 = 8 = \dim_{\mathbb{R}} \mathbb{B}$. Each is a minimal left ideal, by the primitivity of $\tilde\Pi_1$ and $\tilde\Pi_2$ (§<em>Idempotents and Orthogonal Idempotents</em>, §<em>Minimal Left and Right Ideals</em>).</p>
+<p><strong>The module structure.</strong> With the basis $\{\tilde\Pi_1, y\}$ the left $\mathbb{B}$-module $\mathbb{B}\tilde\Pi_1$ is $\mathbb{C}^2$, and the central element $i$ acts on it as the scalar $i$:
+$$
+i\,(\alpha \tilde\Pi_1 + \beta y) = (i\alpha)\tilde\Pi_1 + (i\beta)y .
+$$
+So the simple module underlying each minimal left ideal is the standard two-dimensional one, with $i$ acting by the identity matrix.</p>
 <h2 id="minimal-left-and-right-ideals">Minimal Left and Right Ideals</h2>
 <p>A <strong>minimal left ideal</strong> is a nonzero left ideal containing no nonzero proper left ideal; equivalently, a simple submodule of the left regular module. A <strong>minimal right ideal</strong> is defined the same way on the right.</p>
 <p>Over $\mathbb{C}$, since $\mathbb{B}$ is semisimple, every left ideal of $\mathbb{B}$ is a direct sum of minimal left ideals, and every minimal left ideal is of the form $\mathbb{B}e$ for a primitive idempotent $e$. The examples are the left ideals $\mathbb{B}\tilde\Pi_1$ and $\mathbb{B}\tilde\Pi_2$ of §<em>The Decomposition into Minimal Left and Right Ideals</em>, and all minimal left ideals are isomorphic as left $\mathbb{B}$-modules: a general one is obtained from $\mathbb{B}\tilde\Pi_1$ by an algebra automorphism, so it has the same shape in a suitable basis. Dually, every minimal right ideal is isomorphic to $\tilde\Pi_1\mathbb{B}$. Thus there is one isomorphism class of simple left modules and one of simple right modules. Being nonzero proper one-sided ideals, none of them is two-sided — which is exactly why their abundance is compatible with §<em>The Two-Sided Ideals: Simplicity of $\mathbb{B}$</em>.</p>
@@ -260,6 +266,10 @@ $$</p>
 <tr>
 <td>$x, y$</td>
 <td>Nilpotent off-diagonal elements, $x = \tfrac{i e_1 - e_2}{2}$, $y = \tfrac{i e_1 + e_2}{2}$, $x^2 = y^2 = 0$</td>
+</tr>
+<tr>
+<td>$\mathbb{B}\tilde\Pi_1 \cong \mathbb{C}^2$</td>
+<td>The minimal left ideal, a simple left $\mathbb{B}$-module, $i$ acting as the scalar $i$</td>
 </tr>
 <tr>
 <td>$\mathbb{P}^1(\mathbb{C})$</td>

@@ -57,8 +57,8 @@
 \mathbb{H}_{\mathrm{s}} = S \oplus V,
 $$</p>
 <p>which is the coarsest decomposition of the algebra and the source of nearly every other structure in the category.</p>
-<p>The article establishes the definitions and a basis for each subspace; shows that the two descriptions of $S$ and $V$ — as eigenspaces of the conjugation and as the scalar line and the span of the vector units — coincide; examines the algebra and module structure, in particular the failure of $V$ to be a subalgebra and its structure as a Lie algebra under the commutator; restricts the norm form to each subspace and identifies the Minkowski form of signature $(2,1)$ on $V$; gives the matrix images of both; follows the three involutions through them; and records their relations with the remaining distinguished subspaces. It closes with worked examples.</p>
-<p><strong>Conventions.</strong> The algebra is $\mathbb{H}_{\mathrm{s}}$, with basis $1, e_1, e_2, e_3$, the relations $e_1^2 = -1$, $e_2^2 = +1$, $e_3 = e_1 e_2$ and $e_1 e_2 = -e_2 e_1$, and a general element $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$. The conjugation is $\bar{\tilde q} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$, the norm form is $N(\tilde q) = \tilde q\bar{\tilde q} = q_0^2 + q_1^2 - q_2^2 - q_3^2$ with polarisation $B$, and the principal involution $\alpha$ and the reversal $\rho$ are as in <em>Split-Quaternion Algebra</em>. The split-complex subalgebras are $\mathbb{D}_2 = \operatorname{span}\{1,e_2\}$ and $\mathbb{D}_3 = \operatorname{span}\{1,e_3\}$.</p>
+<p>The article establishes the definitions and a basis for each subspace; shows that the two descriptions of $S$ and $V$ — as eigenspaces of the conjugation and as the scalar line and the span of the vector units — coincide; examines the algebra and module structure, in particular the failure of $V$ to be a subalgebra and its structure as a Lie algebra under the commutator; restricts the split-quaternion norm to each subspace and identifies the Minkowski form of signature $(2,1)$ on $V$; gives the matrix images of both; follows the three involutions through them; and records their relations with the remaining distinguished subspaces. It closes with worked examples.</p>
+<p><strong>Conventions.</strong> The algebra is $\mathbb{H}_{\mathrm{s}}$, with basis $1, e_1, e_2, e_3$, the relations $e_1^2 = -1$, $e_2^2 = +1$, $e_3 = e_1 e_2$ and $e_1 e_2 = -e_2 e_1$, and a general element $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$. The conjugation is $\bar{\tilde q} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$, the split-quaternion norm is $N(\tilde q) = \tilde q\bar{\tilde q} = q_0^2 + q_1^2 - q_2^2 - q_3^2$ with polarisation $B$, and the principal involution $\alpha$ and the reversal $\rho$ are as in <em>Split-Quaternion Algebra</em>. The split-complex subalgebras are $\mathbb{D}_2 = \operatorname{span}\{1,e_2\}$ and $\mathbb{D}_3 = \operatorname{span}\{1,e_3\}$.</p>
 <h2 id="definition-and-basis">Definition and Basis</h2>
 <p><strong>Definition.</strong> The <strong>scalar subspace</strong> and the <strong>vector subspace</strong> of $\mathbb{H}_{\mathrm{s}}$ are</p>
 <p>$$
@@ -66,14 +66,14 @@ S = \mathbb{R}\cdot 1, \qquad V = \operatorname{span}\{e_1, e_2, e_3\}.
 $$</p>
 <p>Every element has a unique expansion $\tilde q = q_0 + \mathbf{v}$ with $q_0 \in S$ and $\mathbf{v} \in V$; the projection onto the first summand is the scalar part, $\operatorname{Sc}(\tilde q) = q_0$, and the projection onto the second is the vector part, $\operatorname{Vec}(\tilde q) = \mathbf{v} = q_1 e_1 + q_2 e_2 + q_3 e_3$.</p>
 <p><strong>Proposition.</strong> $S$ has real dimension $1$, with basis $\{1\}$; $V$ has real dimension $3$, with basis $\{e_1, e_2, e_3\}$; and $S \cap V = \{0\}$, so that $\mathbb{H}_{\mathrm{s}} = S \oplus V$ with $\dim_{\mathbb{R}}\mathbb{H}_{\mathrm{s}} = 1 + 3 = 4$.</p>
-<p><strong>Proof.</strong> The four basis elements $1, e_1, e_2, e_3$ are linearly independent over $\mathbb{R}$ by the definition of the algebra, so $\{1\}$ is a basis of $S$ and $\{e_1,e_2,e_3\}$ is a basis of $V$; an element of $S \cap V$ is a multiple of $1$ with zero vector part, hence zero. $\square$</p>
+<p><strong>Proof.</strong> The four basis elements $1, e_1, e_2, e_3$ are linearly independent over $\mathbb{R}$ by the definition of the algebra, so $\{1\}$ is a basis of $S$ and $\{e_1,e_2,e_3\}$ is a basis of $V$; an element of $S \cap V$ is a multiple of $1$ with zero vector part, hence zero.</p>
 <h2 id="the-two-descriptions-coincide">The Two Descriptions Coincide</h2>
 <p>The scalar and vector subspaces are exactly the eigenspaces of the conjugation.</p>
 <p><strong>Proposition.</strong> For every $\tilde q \in \mathbb{H}_{\mathrm{s}}$, the conjugation satisfies $\bar{\tilde q} = \tilde q$ if and only if $\tilde q \in S$, and $\bar{\tilde q} = -\tilde q$ if and only if $\tilde q \in V$. Hence the scalar–vector decomposition is the eigenspace decomposition</p>
 <p>$$
 \mathbb{H}_{\mathrm{s}} = S \oplus V, \qquad S = \{\tilde q : \bar{\tilde q} = \tilde q\}, \qquad V = \{\tilde q : \bar{\tilde q} = -\tilde q\}.
 $$</p>
-<p><strong>Proof.</strong> Since $\bar{1} = 1$ and $\overline{e_k} = -e_k$, the conjugation acts as $+1$ on $S$ and as $-1$ on $V$; conversely, writing $\tilde q = q_0 + \mathbf{v}$, the condition $\bar{\tilde q} = \tilde q$ reads $-2\mathbf{v} = 0$, i.e. $\mathbf{v} = 0$, and the condition $\bar{\tilde q} = -\tilde q$ reads $2q_0 = 0$, i.e. $q_0 = 0$. $\square$</p>
+<p><strong>Proof.</strong> Since $\bar{1} = 1$ and $\overline{e_k} = -e_k$, the conjugation acts as $+1$ on $S$ and as $-1$ on $V$; conversely, writing $\tilde q = q_0 + \mathbf{v}$, the condition $\bar{\tilde q} = \tilde q$ reads $-2\mathbf{v} = 0$, i.e. $\mathbf{v} = 0$, and the condition $\bar{\tilde q} = -\tilde q$ reads $2q_0 = 0$, i.e. $q_0 = 0$.</p>
 <p>The scalar subspace is also the <strong>centre</strong> of the algebra. An element $\tilde q$ commutes with every element if and only if $\mathbf{v} = 0$: commuting with $e_1$ and $e_2$ gives $\mathbf{v}e_1 = e_1\mathbf{v}$ and $\mathbf{v}e_2 = e_2\mathbf{v}$, which force $q_2 = q_3 = 0$ and $q_1 = 0$ respectively, so $\tilde q = q_0$ is scalar. Hence</p>
 <p>$$
 Z(\mathbb{H}_{\mathrm{s}}) = S = \mathbb{R}\cdot 1 .
@@ -90,14 +90,14 @@ $$</p>
 <p>$$
 [e_1, e_2] = 2e_3, \qquad [e_2, e_3] = -2e_1, \qquad [e_3, e_1] = 2e_2 .
 $$</p>
-<p>The bracket is bilinear, alternating and satisfies the Jacobi identity because the product is associative; so $V$ is a three-dimensional real Lie algebra. With the generators $h = e_3$, $e = e_1 + e_2$, $f = e_1 - e_2$ one has $[h,e] = 2e$, $[h,f] = -2f$ and $[e,f] = -4h$, so a rescaling of $f$ makes $\{h, e, f\}$ a standard $\mathfrak{sl}_2(\mathbb{R})$-triple, and the bracket algebra is</p>
+<p>The bracket is bilinear, alternating and satisfies the Jacobi identity because the product is associative; so $V$ is a three-dimensional real Lie algebra. With the generators $h = e_3$, $e = e_1 + e_2$, $f = e_1 - e_2$ one has $[h,e] = 2e$, $[h,f] = -2f$ and $[e,f] = -4h$, so a rescaling of $f$ makes $\{h, e, f\}$ a standard $\mathrm{SL}_2(\mathbb{R})$-triple, and the bracket algebra is</p>
 <p>$$
-V \cong \mathfrak{sl}_2(\mathbb{R}).
+V \cong \mathrm{SL}_2(\mathbb{R}).
 $$</p>
-<p>The scalar line is central and contributes nothing to the bracket, so the full Lie algebra is the direct sum $\mathfrak{sl}_2(\mathbb{R}) \oplus \mathbb{R}$ of the bracket algebra on $V$ and the abelian scalar line.</p>
+<p>The scalar line is central and contributes nothing to the bracket, so the full Lie algebra is the direct sum $\mathrm{SL}_2(\mathbb{R}) \oplus \mathbb{R}$ of the bracket algebra on $V$ and the abelian scalar line.</p>
 <p><strong>Module structure.</strong> Both $S$ and $V$ are $\mathbb{R}$-vector spaces and are preserved by left and right multiplication by scalars; over the centre they are free modules of ranks $1$ and $3$. Multiplication by an element of the full algebra moves $V$ into $S \oplus V = \mathbb{H}_{\mathrm{s}}$, with the scalar part given by the bilinear form.</p>
-<h2 id="the-norm-form">The Norm Form</h2>
-<p><strong>On the scalar subspace.</strong> For $\tilde q = q_0 \in S$ the norm form is</p>
+<h2 id="the-split-quaternion-norm">The Split-Quaternion Norm</h2>
+<p><strong>On the scalar subspace.</strong> For $\tilde q = q_0 \in S$ the split-quaternion norm is</p>
 <p>$$
 N(q_0) = q_0^2 \geq 0,
 $$</p>
@@ -142,13 +142,13 @@ $$</p>
 <p><strong>The full form.</strong> The subspaces $S$ and $V$ are $B$-orthogonal, since $B(q_0, \mathbf{v}) = 0$ for $q_0 \in S$ and $\mathbf{v} \in V$, and the form on $\mathbb{H}_{\mathrm{s}}$ is the orthogonal direct sum of the two restrictions; in the basis $1, e_1, e_2, e_3$ it has signs $(+,+,-,-)$, so the full form has signature $(2,2)$. The scalar direction contributes $+1$, and among the vector directions $e_1$ contributes $+1$ while $e_2$ and $e_3$ contribute $-1$.</p>
 <p>The restriction to $V$, of signature $(2,1)$, and not a definite form, is the root of the geometry of the category: the unit group of the algebra acts on $V$ as the Lorentz group of this form, and the hyperbolic geometry the system carries is the hyperbolic plane. This is developed in <em>Split-Quaternion Rotations and the Lorentz Group</em> and <em>Split-Quaternion Geometry</em>.</p>
 <h2 id="the-lie-algebra-of-the-vector-subspace">The Lie Algebra of the Vector Subspace</h2>
-<p>The vector subspace $V$ is closed under the commutator $[\mathbf u, \mathbf v] = \mathbf u \mathbf v - \mathbf v \mathbf u$: the scalar part of a product of two vectors is $-B(\mathbf u, \mathbf v)$, so the commutator has zero scalar part and lies in $V$. The commutator is bilinear, alternating and satisfies the Jacobi identity, which is inherited from the associativity of the algebra; hence $V$ is a Lie algebra, and it is the three-dimensional simple real Lie algebra $\mathfrak{sl}_2(\mathbb{R})$. The scalar line $S$ is the centre and multiplies into $V$ without a bracket contribution.</p>
+<p>The vector subspace $V$ is closed under the commutator $[\mathbf u, \mathbf v] = \mathbf u \mathbf v - \mathbf v \mathbf u$: the scalar part of a product of two vectors is $-B(\mathbf u, \mathbf v)$, so the commutator has zero scalar part and lies in $V$. The commutator is bilinear, alternating and satisfies the Jacobi identity, which is inherited from the associativity of the algebra; hence $V$ is a Lie algebra, and it is the three-dimensional simple real Lie algebra $\mathrm{SL}_2(\mathbb{R})$. The scalar line $S$ is the centre and multiplies into $V$ without a bracket contribution.</p>
 <p><strong>Proposition.</strong> With the generators $e_1, e_2, e_3$ the bracket reads</p>
 <p>$$
 [e_1, e_2] = 2e_3, \qquad [e_2, e_3] = -2e_1, \qquad [e_3, e_1] = 2e_2,
 $$</p>
-<p>so $V \cong \mathfrak{sl}_2(\mathbb{R})$, and the norm form $N$ on $V$, of signature $(2,1)$, is invariant under the adjoint action: $\operatorname{ad}_x$ is $N$-skew for every $x \in V$.</p>
-<p><strong>Proof.</strong> The bracket relations follow from the products $e_1e_2 = e_3$, $e_2e_3 = -e_1$, $e_3e_1 = e_2$ together with $e_2e_1 = -e_3$, $e_3e_2 = e_1$, $e_1e_3 = -e_2$. The Jacobi identity is $[[x,y],z] + [[y,z],x] + [[z,x],y] = 0$, an identity in every associative algebra, and the structure constants are those of $\mathfrak{sl}_2(\mathbb{R})$. The invariance of $N$ is the identity $B([x,y],z) + B(y,[x,z]) = 0$, which follows from the associativity of the algebra and the multiplicativity $N(ab) = N(a)N(b)$ of the norm form. $\square$</p>
+<p>so $V \cong \mathrm{SL}_2(\mathbb{R})$, and the split-quaternion norm $N$ on $V$, of signature $(2,1)$, is invariant under the adjoint action: $\operatorname{ad}_x$ is $N$-skew for every $x \in V$.</p>
+<p><strong>Proof.</strong> The bracket relations follow from the products $e_1e_2 = e_3$, $e_2e_3 = -e_1$, $e_3e_1 = e_2$ together with $e_2e_1 = -e_3$, $e_3e_2 = e_1$, $e_1e_3 = -e_2$. The Jacobi identity is $[[x,y],z] + [[y,z],x] + [[z,x],y] = 0$, an identity in every associative algebra, and the structure constants are those of $\mathrm{SL}_2(\mathbb{R})$. The invariance of $N$ is the identity $B([x,y],z) + B(y,[x,z]) = 0$, which follows from the associativity of the algebra and the multiplicativity $N(ab) = N(a)N(b)$ of the split-quaternion norm.</p>
 <h2 id="the-involutions-on-them">The Involutions on Them</h2>
 <p>The three involutions of the algebra act on $S$ and $V$ by the following sign patterns.</p>
 <div class="table-scroll"><table>
@@ -193,16 +193,16 @@ $$</p>
 $$</p>
 <p>and similarly for the other three ideals. The full intersections are in <em>Split-Quaternion Relations Between Subspaces</em>.</p>
 <h3 id="the-decomposition">The Decomposition</h3>
-<p>The scalar–vector decomposition is the coarsest of the decompositions of the algebra: it is the eigenspace decomposition of the conjugation, and the orthogonal splitting for the norm form. Every finer decomposition — the split-complex decomposition, the idempotent decomposition, the common eigenspaces of the involutions — refines it.</p>
+<p>The scalar–vector decomposition is the coarsest of the decompositions of the algebra: it is the eigenspace decomposition of the conjugation, and the orthogonal splitting for the split-quaternion norm. Every finer decomposition — the split-complex decomposition, the idempotent decomposition, the common eigenspaces of the involutions — refines it.</p>
 <h2 id="examples">Examples</h2>
-<p><strong>Example (a scalar element).</strong> For $\tilde q = 5$ the scalar part is $5$ and the vector part is $0$; the norm is $N(5) = 25$, and the element is a unit with inverse $1/5$.</p>
-<p><strong>Example (a timelike vector).</strong> For $\mathbf{u} = 2e_1$, the norm is $N = 4 > 0$, and the element is a unit with $\mathbf{u}^2 = -4$.</p>
-<p><strong>Example (a lightlike vector).</strong> For $\mathbf{u} = e_1 + e_3$, the norm is $N = 1 - 1 = 0$ and $\mathbf{u}^2 = 0$: the vector is a nilpotent. It is a zero divisor and not a unit.</p>
-<p><strong>Example (a spacelike vector).</strong> For $\mathbf{u} = e_2 + e_3$, the norm is $N = -1 - 1 = -2 < 0$ and $\mathbf{u}^2 = -N(\mathbf{u}) = 2$. The element is a unit of negative norm.</p>
+<p><strong>Example (a scalar element).</strong> For $\tilde q = 5$ the scalar part is $5$ and the vector part is $0$; the split-quaternion norm is $N(5) = 25$, and the element is a unit with inverse $1/5$.</p>
+<p><strong>Example (a timelike vector).</strong> For $\mathbf{u} = 2e_1$, the split-quaternion norm is $N = 4 > 0$, and the element is a unit with $\mathbf{u}^2 = -4$.</p>
+<p><strong>Example (a lightlike vector).</strong> For $\mathbf{u} = e_1 + e_3$, the split-quaternion norm is $N = 1 - 1 = 0$ and $\mathbf{u}^2 = 0$: the vector is a nilpotent. It is a zero divisor and not a unit.</p>
+<p><strong>Example (a spacelike vector).</strong> For $\mathbf{u} = e_2 + e_3$, the split-quaternion norm is $N = -1 - 1 = -2 < 0$ and $\mathbf{u}^2 = -N(\mathbf{u}) = 2$. The element is a unit of negative norm.</p>
 <p><strong>Example (a generic element).</strong> For $\tilde q = 3 - e_1 + 2e_2$, the scalar part is $3 \in S$ and the vector part is $-e_1 + 2e_2 \in V$, with $N(\tilde q) = 9 + 1 - 4 = 6$ and $\tilde q$ a unit.</p>
 <h2 id="summary">Summary</h2>
-<p>The scalar subspace $S = \mathbb{R}\cdot 1$ and the vector subspace $V = \operatorname{span}\{e_1,e_2,e_3\}$ are the $+1$ and $-1$ eigenspaces of the conjugation, of real dimensions $1$ and $3$, and they give the decomposition $\mathbb{H}_{\mathrm{s}} = S \oplus V$. The scalar subspace is the centre, a subalgebra isomorphic to $\mathbb{R}$; the vector subspace is not a subalgebra, since squares of vectors leave it, but it is closed under the commutator bracket and is a three-dimensional Lie algebra isomorphic to $\mathfrak{sl}_2(\mathbb{R})$.</p>
-<p>The norm form restricts to $N(q_0) = q_0^2$ on $S$, positive definite, and to the Minkowski form $N(\mathbf{u}) = q_1^2 - q_2^2 - q_3^2$ of signature $(2,1)$ on $V$; the nonzero vectors of $V$ split into the timelike, lightlike and spacelike classes according to the sign. The scalar line is the centre and the vector subspace is the Lie algebra $\mathfrak{sl}_2(\mathbb{R})$ under the commutator. The three involutions preserve both subspaces; the conjugation acts as a scalar on each, and the principal involution and reversal split $V$ into the common plane $\operatorname{span}\{e_1,e_2\}$ and the line $\mathbb{R}e_3$. The unit group acts on $V$ preserving the restricted form, which is the Lorentz action of <em>Split-Quaternion Rotations and the Lorentz Group</em>.</p>
+<p>The scalar subspace $S = \mathbb{R}\cdot 1$ and the vector subspace $V = \operatorname{span}\{e_1,e_2,e_3\}$ are the $+1$ and $-1$ eigenspaces of the conjugation, of real dimensions $1$ and $3$, and they give the decomposition $\mathbb{H}_{\mathrm{s}} = S \oplus V$. The scalar subspace is the centre, a subalgebra isomorphic to $\mathbb{R}$; the vector subspace is not a subalgebra, since squares of vectors leave it, but it is closed under the commutator bracket and is a three-dimensional Lie algebra isomorphic to $\mathrm{SL}_2(\mathbb{R})$.</p>
+<p>The split-quaternion norm restricts to $N(q_0) = q_0^2$ on $S$, positive definite, and to the Minkowski form $N(\mathbf{u}) = q_1^2 - q_2^2 - q_3^2$ of signature $(2,1)$ on $V$; the nonzero vectors of $V$ split into the timelike, lightlike and spacelike classes according to the sign. The scalar line is the centre and the vector subspace is the Lie algebra $\mathrm{SL}_2(\mathbb{R})$ under the commutator. The three involutions preserve both subspaces; the conjugation acts as a scalar on each, and the principal involution and reversal split $V$ into the common plane $\operatorname{span}\{e_1,e_2\}$ and the line $\mathbb{R}e_3$. The unit group acts on $V$ preserving the restricted form, which is the Lorentz action of <em>Split-Quaternion Rotations and the Lorentz Group</em>.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -254,7 +254,7 @@ $$</p>
 <td>this article</td>
 </tr>
 <tr>
-<td>$V \cong \mathfrak{sl}_2(\mathbb{R})$</td>
+<td>$V \cong \mathrm{SL}_2(\mathbb{R})$</td>
 <td>the Lie algebra of traceless matrices</td>
 <td>this article</td>
 </tr>
@@ -272,7 +272,7 @@ $$</p>
 </table></div>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
-<li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em>, 2nd ed. (Cambridge University Press, 2001), for the vector subspace of a Clifford algebra and its identification with $\mathfrak{sl}_2(\mathbb{R})$.</li>
+<li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em>, 2nd ed. (Cambridge University Press, 2001), for the vector subspace of a Clifford algebra and its identification with $\mathrm{SL}_2(\mathbb{R})$.</li>
 <li>Ian R. Porteous, <em>Clifford Algebras and the Classical Groups</em> (Cambridge University Press, 1995), for the Lie algebra of traceless matrices and its action on the Minkowski form.</li>
 <li>T. Y. Lam, <em>Introduction to Quadratic Forms over Fields</em> (American Mathematical Society, 2005), for isotropic forms, the inertia law and the Minkowski trichotomy.</li>
 <li>John H. Conway and Derek A. Smith, <em>On Quaternions and Octonions</em> (A K Peters, 2003), for the split forms and their vector parts.</li>

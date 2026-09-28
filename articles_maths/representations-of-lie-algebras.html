@@ -52,86 +52,86 @@
       <div class="article-body">
         <h1 id="representations-of-lie-algebras"><strong>Representations of Lie Algebras</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>A representation of a Lie algebra $\mathfrak{g}$ is a linear action of $\mathfrak{g}$ on a vector space in which the bracket acts as the commutator. For a semisimple Lie algebra over an algebraically closed field of characteristic zero the theory of finite-dimensional representations is completely solved: the representations are parametrised by their <strong>highest weights</strong>, the dominant integral weights of the root system of the companion article <em>Root Systems and Classification</em>, and the characters and dimensions of the representations are given by the formulas of Weyl and Kostant. This article develops that theory: the universal enveloping algebra and the theorem of Poincaré, Birkhoff and Witt, the weight decomposition, the theorem of the highest weight and the Verma modules, the model example of $\mathfrak{sl}(2)$ with the Clebsch–Gordan decomposition, the character and multiplicity formulas, and the Casimir element.</p>
+<p>A representation of a Lie algebra $\mathrm{G}$ is a linear action of $\mathrm{G}$ on a vector space in which the bracket acts as the commutator. For a semisimple Lie algebra over an algebraically closed field of characteristic zero the theory of finite-dimensional representations is completely solved: the representations are parametrised by their <strong>highest weights</strong>, the dominant integral weights of the root system of the companion article <em>Root Systems and Classification</em>, and the characters and dimensions of the representations are given by the formulas of Weyl and Kostant. This article develops that theory: the universal enveloping algebra and the theorem of Poincaré, Birkhoff and Witt, the weight decomposition, the theorem of the highest weight and the Verma modules, the model example of $\mathrm{SL}(2)$ with the Clebsch–Gordan decomposition, the character and multiplicity formulas, and the Casimir element.</p>
 <p>The universal enveloping algebra is the device that converts Lie algebra representations into associative algebra modules, and it makes available the algebra of the previous category. The Casimir element is the central element of that algebra that computes the best available invariant of a representation, its eigenvalue depends only on the highest weight, and it supplies the proof of Weyl's complete reducibility cited in the companion article <em>Structure of Lie Algebras</em>.</p>
-<p>Throughout, $K$ is an algebraically closed field of characteristic zero and $\mathfrak{g}$ is a finite-dimensional semisimple Lie algebra over $K$; the case of the complex numbers is the guiding one, and no statement below depends on more than that. Fix a Cartan subalgebra $\mathfrak{h}$, a root system $\Phi \subseteq \mathfrak{h}^*$, a positive system $\Phi^+$ and the simple roots $\Pi = \{\alpha_1, \ldots, \alpha_r\}$, with the notation of <em>Root Systems and Classification</em>. Lie algebras are written in lowercase fraktur; the Killing form is $\kappa$ and the induced form on $\mathfrak{h}^*$ is $(\cdot, \cdot)$. No physics is invoked.</p>
+<p>Throughout, $K$ is an algebraically closed field of characteristic zero and $\mathrm{G}$ is a finite-dimensional semisimple Lie algebra over $K$; the case of the complex numbers is the guiding one, and no statement below depends on more than that. Fix a Cartan subalgebra $\mathrm{H}$, a root system $\Phi \subseteq \mathrm{H}^*$, a positive system $\Phi^+$ and the simple roots $\Pi = \{\alpha_1, \ldots, \alpha_r\}$, with the notation of <em>Root Systems and Classification</em>. Lie algebras are written in lowercase fraktur; the Killing form is $\kappa$ and the induced form on $\mathrm{H}^*$ is $(\cdot, \cdot)$. No physics is invoked.</p>
 <h2 id="modules-weights-and-the-enveloping-algebra">Modules, Weights and the Enveloping Algebra</h2>
 <h3 id="representations-and-modules">Representations and Modules</h3>
-<p><strong>Definition.</strong> A <strong>representation</strong> of $\mathfrak{g}$ on a $K$-vector space $V$ is a Lie algebra homomorphism $\pi : \mathfrak{g} \to \mathfrak{gl}(V)$, equivalently a bilinear map $\mathfrak{g} \times V \to V$, $(x, v) \mapsto x \cdot v$, with</p>
+<p><strong>Definition.</strong> A <strong>representation</strong> of $\mathrm{G}$ on a $K$-vector space $V$ is a Lie algebra homomorphism $\pi : \mathrm{G} \to \mathrm{GL}(V)$, equivalently a bilinear map $\mathrm{G} \times V \to V$, $(x, v) \mapsto x \cdot v$, with</p>
 <p>$$
 [x, y] \cdot v = x \cdot (y \cdot v) - y \cdot (x \cdot v).
 $$</p>
-<p>A <strong>$\mathfrak{g}$-module</strong> is a vector space equipped with such an action. A subspace $W \subseteq V$ is a <strong>submodule</strong> if $\mathfrak{g} \cdot W \subseteq W$; the module $V$ is <strong>irreducible</strong> if it is nonzero and has no proper nonzero submodule, and <strong>completely reducible</strong> if it is a direct sum of irreducible submodules. The <strong>trivial module</strong> is $K$ with $x \cdot v = 0$.</p>
+<p>A <strong>$\mathrm{G}$-module</strong> is a vector space equipped with such an action. A subspace $W \subseteq V$ is a <strong>submodule</strong> if $\mathrm{G} \cdot W \subseteq W$; the module $V$ is <strong>irreducible</strong> if it is nonzero and has no proper nonzero submodule, and <strong>completely reducible</strong> if it is a direct sum of irreducible submodules. The <strong>trivial module</strong> is $K$ with $x \cdot v = 0$.</p>
 <p><strong>Theorem (Weyl).</strong> Every finite-dimensional representation of a semisimple Lie algebra over a field of characteristic zero is completely reducible.</p>
 <p>This is Weyl's complete reducibility theorem, established in <em>Structure of Lie Algebras</em>; it is the reason the classification below need only describe the irreducible modules.</p>
 <h3 id="the-universal-enveloping-algebra">The Universal Enveloping Algebra</h3>
-<p><strong>Definition.</strong> The <strong>universal enveloping algebra</strong> of $\mathfrak{g}$ is the associative algebra</p>
+<p><strong>Definition.</strong> The <strong>universal enveloping algebra</strong> of $\mathrm{G}$ is the associative algebra</p>
 <p>$$
-U(\mathfrak{g}) = T(\mathfrak{g}) / I, \qquad I = \langle x \otimes y - y \otimes x - [x, y] : x, y \in \mathfrak{g}\rangle,
+U(\mathrm{G}) = T(\mathrm{G}) / I, \qquad I = \langle x \otimes y - y \otimes x - [x, y] : x, y \in \mathrm{G}\rangle,
 $$</p>
-<p>the quotient of the tensor algebra on the vector space $\mathfrak{g}$ by the two-sided ideal generated by the relations $xy - yx = [x, y]$.</p>
-<p><strong>Theorem (Poincaré–Birkhoff–Witt).</strong> Let $(x_1, \ldots, x_m)$ be a basis of $\mathfrak{g}$. Then the monomials</p>
+<p>the quotient of the tensor algebra on the vector space $\mathrm{G}$ by the two-sided ideal generated by the relations $xy - yx = [x, y]$.</p>
+<p><strong>Theorem (Poincaré–Birkhoff–Witt).</strong> Let $(x_1, \ldots, x_m)$ be a basis of $\mathrm{G}$. Then the monomials</p>
 <p>$$
 x_1^{a_1} x_2^{a_2} \cdots x_m^{a_m}, \qquad a_i \in \mathbb{Z}_{\geq 0},
 $$</p>
-<p>form a basis of $U(\mathfrak{g})$ over $K$. In particular the natural map $\mathfrak{g} \to U(\mathfrak{g})$ is injective, and $\dim U(\mathfrak{g}) = \infty$ for $\mathfrak{g} \neq 0$.</p>
-<p><strong>Definition.</strong> The <strong>filtration</strong> of $U(\mathfrak{g})$ by degree assigns to $U_n(\mathfrak{g})$ the span of products of at most $n$ elements of $\mathfrak{g}$. The Poincaré–Birkhoff–Witt theorem is equivalent to the statement that the associated graded algebra is the symmetric algebra,</p>
+<p>form a basis of $U(\mathrm{G})$ over $K$. In particular the natural map $\mathrm{G} \to U(\mathrm{G})$ is injective, and $\dim U(\mathrm{G}) = \infty$ for $\mathrm{G} \neq 0$.</p>
+<p><strong>Definition.</strong> The <strong>filtration</strong> of $U(\mathrm{G})$ by degree assigns to $U_n(\mathrm{G})$ the span of products of at most $n$ elements of $\mathrm{G}$. The Poincaré–Birkhoff–Witt theorem is equivalent to the statement that the associated graded algebra is the symmetric algebra,</p>
 <p>$$
-\operatorname{gr} U(\mathfrak{g}) \cong \operatorname{Sym}(\mathfrak{g}),
+\operatorname{gr} U(\mathrm{G}) \cong \operatorname{Sym}(\mathrm{G}),
 $$</p>
-<p>the symmetric algebra of the vector space $\mathfrak{g}$, which belongs to the category on symmetric algebras.</p>
-<p><strong>Proposition.</strong> Every $\mathfrak{g}$-module is a module over $U(\mathfrak{g})$, and conversely every $U(\mathfrak{g})$-module restricts to a $\mathfrak{g}$-module. This gives an equivalence of categories between $\mathfrak{g}$-modules and $U(\mathfrak{g})$-modules.</p>
-<p><strong>Proof.</strong> The relations defining $U(\mathfrak{g})$ are exactly the relations $xy - yx = [x, y]$ required of the operators representing $\mathfrak{g}$, so a linear action of $\mathfrak{g}$ extends uniquely to an algebra action of $U(\mathfrak{g})$, and restriction reverses the construction. $\square$</p>
+<p>the symmetric algebra of the vector space $\mathrm{G}$, which belongs to the category on symmetric algebras.</p>
+<p><strong>Proposition.</strong> Every $\mathrm{G}$-module is a module over $U(\mathrm{G})$, and conversely every $U(\mathrm{G})$-module restricts to a $\mathrm{G}$-module. This gives an equivalence of categories between $\mathrm{G}$-modules and $U(\mathrm{G})$-modules.</p>
+<p><strong>Proof.</strong> The relations defining $U(\mathrm{G})$ are exactly the relations $xy - yx = [x, y]$ required of the operators representing $\mathrm{G}$, so a linear action of $\mathrm{G}$ extends uniquely to an algebra action of $U(\mathrm{G})$, and restriction reverses the construction.</p>
 <h3 id="weights-and-the-weight-decomposition">Weights and the Weight Decomposition</h3>
-<p><strong>Definition.</strong> Let $V$ be a $\mathfrak{g}$-module and $\lambda \in \mathfrak{h}^*$. The <strong>weight space</strong> of weight $\lambda$ is</p>
+<p><strong>Definition.</strong> Let $V$ be a $\mathrm{G}$-module and $\lambda \in \mathrm{H}^*$. The <strong>weight space</strong> of weight $\lambda$ is</p>
 <p>$$
-V_\lambda = \{v \in V : h \cdot v = \lambda(h) v \text{ for all } h \in \mathfrak{h}\}.
+V_\lambda = \{v \in V : h \cdot v = \lambda(h) v \text{ for all } h \in \mathrm{H}\}.
 $$</p>
 <p>A <strong>weight</strong> of $V$ is a $\lambda$ with $V_\lambda \neq 0$; the module is a <strong>weight module</strong> if $V = \bigoplus_\lambda V_\lambda$, and the multiplicities are $m_V(\lambda) = \dim_K V_\lambda$.</p>
-<p><strong>Theorem.</strong> Every finite-dimensional $\mathfrak{g}$-module is a weight module, all its weight spaces are finite-dimensional, and the set of weights is stable under the Weyl group. Moreover, if $\lambda$ is a weight, then</p>
+<p><strong>Theorem.</strong> Every finite-dimensional $\mathrm{G}$-module is a weight module, all its weight spaces are finite-dimensional, and the set of weights is stable under the Weyl group. Moreover, if $\lambda$ is a weight, then</p>
 <p>$$
-\mathfrak{g}_\alpha \cdot V_\lambda \subseteq V_{\lambda + \alpha}
+\mathrm{G}_\alpha \cdot V_\lambda \subseteq V_{\lambda + \alpha}
 $$</p>
 <p>for every root $\alpha$, with the convention $V_\mu = 0$ if $\mu$ is not a weight.</p>
-<p><strong>Proof.</strong> Since $\mathfrak{h}$ is abelian and consists of commuting endomorphisms, $V$ decomposes into simultaneous generalised eigenspaces, and for a finite-dimensional module of a semisimple algebra the generalised eigenspaces coincide with the eigenspaces. The inclusion $\mathfrak{g}_\alpha V_\lambda \subseteq V_{\lambda+\alpha}$ is the computation $h \cdot (x \cdot v) = [h, x] \cdot v + x \cdot (h \cdot v) = \alpha(h) x \cdot v + \lambda(h) x \cdot v$ for $x \in \mathfrak{g}_\alpha$, $v \in V_\lambda$. Stability under the Weyl group follows from the $\mathfrak{sl}(2)$-structure attached to each root. $\square$</p>
-<p><strong>Definition.</strong> The <strong>weight lattice</strong> is $P = \{\lambda \in \mathfrak{h}^* : \langle\lambda, \alpha^\vee\rangle \in \mathbb{Z} \text{ for all } \alpha \in \Phi\}$, and the <strong>root lattice</strong> is $Q = \mathbb{Z}\Phi \subseteq P$. The <strong>fundamental weights</strong> $\omega_1, \ldots, \omega_r$ are defined by $\langle\omega_i, \alpha_j^\vee\rangle = \delta_{ij}$, and they form a basis of $P$.</p>
+<p><strong>Proof.</strong> Since $\mathrm{H}$ is abelian and consists of commuting endomorphisms, $V$ decomposes into simultaneous generalised eigenspaces, and for a finite-dimensional module of a semisimple algebra the generalised eigenspaces coincide with the eigenspaces. The inclusion $\mathrm{G}_\alpha V_\lambda \subseteq V_{\lambda+\alpha}$ is the computation $h \cdot (x \cdot v) = [h, x] \cdot v + x \cdot (h \cdot v) = \alpha(h) x \cdot v + \lambda(h) x \cdot v$ for $x \in \mathrm{G}_\alpha$, $v \in V_\lambda$. Stability under the Weyl group follows from the $\mathrm{SL}(2)$-structure attached to each root.</p>
+<p><strong>Definition.</strong> The <strong>weight lattice</strong> is $P = \{\lambda \in \mathrm{H}^* : \langle\lambda, \alpha^\vee\rangle \in \mathbb{Z} \text{ for all } \alpha \in \Phi\}$, and the <strong>root lattice</strong> is $Q = \mathbb{Z}\Phi \subseteq P$. The <strong>fundamental weights</strong> $\omega_1, \ldots, \omega_r$ are defined by $\langle\omega_i, \alpha_j^\vee\rangle = \delta_{ij}$, and they form a basis of $P$.</p>
 <p><strong>Definition.</strong> A weight $\lambda$ is <strong>dominant integral</strong> if $\langle\lambda, \alpha_i^\vee\rangle \in \mathbb{Z}_{\geq 0}$ for every simple root $\alpha_i$. The set of dominant integral weights is</p>
 <p>$$
 P^+ = \Bigl\{ \sum_{i=1}^{r} n_i \omega_i : n_i \in \mathbb{Z}_{\geq 0} \Bigr\}.
 $$</p>
-<p><strong>Example.</strong> For $\mathfrak{sl}(2)$ with simple root $\alpha$ and $\omega = \alpha/2$, the weight lattice is $\mathbb{Z}\omega$, the root lattice is $\mathbb{Z}\alpha = 2\mathbb{Z}\omega$, and $P^+ = \{n\omega : n \geq 0\}$. The index of $Q$ in $P$ is $2$, in agreement with the determinant of the $1 \times 1$ Cartan matrix $(2)$.</p>
+<p><strong>Example.</strong> For $\mathrm{SL}(2)$ with simple root $\alpha$ and $\omega = \alpha/2$, the weight lattice is $\mathbb{Z}\omega$, the root lattice is $\mathbb{Z}\alpha = 2\mathbb{Z}\omega$, and $P^+ = \{n\omega : n \geq 0\}$. The index of $Q$ in $P$ is $2$, in agreement with the determinant of the $1 \times 1$ Cartan matrix $(2)$.</p>
 <h2 id="the-theorem-of-the-highest-weight">The Theorem of the Highest Weight</h2>
 <h3 id="highest-weight-vectors">Highest Weight Vectors</h3>
 <p>Fix the triangular decomposition</p>
 <p>$$
-\mathfrak{g} = \mathfrak{n}_- \oplus \mathfrak{h} \oplus \mathfrak{n}_+, \qquad \mathfrak{n}_\pm = \bigoplus_{\alpha \in \Phi^\pm} \mathfrak{g}_\alpha,
+\mathrm{G} = \mathrm{N}_- \oplus \mathrm{H} \oplus \mathrm{N}_+, \qquad \mathrm{N}_\pm = \bigoplus_{\alpha \in \Phi^\pm} \mathrm{G}_\alpha,
 $$</p>
 <p>where $\Phi^+$ is the positive system and $\Phi^- = -\Phi^+$.</p>
-<p><strong>Definition.</strong> A nonzero vector $v$ in a $\mathfrak{g}$-module $V$ is a <strong>highest weight vector</strong> of weight $\lambda$ if</p>
+<p><strong>Definition.</strong> A nonzero vector $v$ in a $\mathrm{G}$-module $V$ is a <strong>highest weight vector</strong> of weight $\lambda$ if</p>
 <p>$$
-\mathfrak{n}_+ \cdot v = 0, \qquad h \cdot v = \lambda(h) v \ \text{for all } h \in \mathfrak{h}.
+\mathrm{N}_+ \cdot v = 0, \qquad h \cdot v = \lambda(h) v \ \text{for all } h \in \mathrm{H}.
 $$</p>
 <p>A <strong>highest weight module</strong> is a module generated by a highest weight vector; its <strong>highest weight</strong> is the weight of that vector. The module is <strong>cyclic</strong> if generated by one vector.</p>
 <p><strong>Proposition.</strong> If $V$ is irreducible and finite-dimensional, it contains a highest weight vector, and the highest weight is unique; every weight $\mu$ of $V$ has the form $\mu = \lambda - \sum_i c_i \alpha_i$ with $c_i \in \mathbb{Z}_{\geq 0}$.</p>
-<p><strong>Proof.</strong> Finite-dimensionality and the inclusion $\mathfrak{g}_\alpha V_\mu \subseteq V_{\mu+\alpha}$ give a weight $\lambda$ that is maximal for the partial order $\mu \preceq \nu \iff \nu - \mu \in \mathbb{Z}_{\geq 0}\Pi$; any nonzero vector in $V_\lambda$ is a highest weight vector, since $\mathfrak{n}_+$ raises weights. If there were two distinct maximal weights, one would have to occur in the other's generated submodule, contradicting irreducibility. The last statement follows by following a chain of weight-raising operations down from $\lambda$. $\square$</p>
+<p><strong>Proof.</strong> Finite-dimensionality and the inclusion $\mathrm{G}_\alpha V_\mu \subseteq V_{\mu+\alpha}$ give a weight $\lambda$ that is maximal for the partial order $\mu \preceq \nu \iff \nu - \mu \in \mathbb{Z}_{\geq 0}\Pi$; any nonzero vector in $V_\lambda$ is a highest weight vector, since $\mathrm{N}_+$ raises weights. If there were two distinct maximal weights, one would have to occur in the other's generated submodule, contradicting irreducibility. The last statement follows by following a chain of weight-raising operations down from $\lambda$.</p>
 <h3 id="verma-modules">Verma Modules</h3>
-<p><strong>Definition.</strong> Let $\mathfrak{b} = \mathfrak{h} \oplus \mathfrak{n}_+$ be the <strong>Borel subalgebra</strong> and let $K_\lambda$ be the one-dimensional $\mathfrak{b}$-module on which $\mathfrak{h}$ acts by $\lambda$ and $\mathfrak{n}_+$ acts by zero. The <strong>Verma module</strong> of highest weight $\lambda$ is</p>
+<p><strong>Definition.</strong> Let $\mathrm{B} = \mathrm{H} \oplus \mathrm{N}_+$ be the <strong>Borel subalgebra</strong> and let $K_\lambda$ be the one-dimensional $\mathrm{B}$-module on which $\mathrm{H}$ acts by $\lambda$ and $\mathrm{N}_+$ acts by zero. The <strong>Verma module</strong> of highest weight $\lambda$ is</p>
 <p>$$
-M(\lambda) = U(\mathfrak{g}) \otimes_{U(\mathfrak{b})} K_\lambda.
+M(\lambda) = U(\mathrm{G}) \otimes_{U(\mathrm{B})} K_\lambda.
 $$</p>
 <p><strong>Theorem.</strong> $M(\lambda)$ is a highest weight module of highest weight $\lambda$ with a unique maximal proper submodule $N(\lambda)$, and</p>
 <p>$$
 V(\lambda) = M(\lambda)/N(\lambda)
 $$</p>
 <p>is irreducible. Every irreducible highest weight module of highest weight $\lambda$ is isomorphic to $V(\lambda)$, and $\dim_K V(\lambda) < \infty$ if and only if $\lambda \in P^+$.</p>
-<p><strong>Proof sketch.</strong> The Poincaré–Birkhoff–Witt theorem gives $M(\lambda) \cong U(\mathfrak{n}_-) \otimes_K K_\lambda$ as a vector space, so $M(\lambda)$ is a weight module with finite-dimensional weight spaces; the sum of all proper submodules is proper, whence the unique maximal submodule. If $\lambda \in P^+$, the $\mathfrak{sl}(2)$-subalgebras attached to the simple roots act on $V(\lambda)$ in a way that makes it finite-dimensional, by integrating the action of the root $\mathfrak{sl}(2)$'s; if $\lambda \notin P^+$, some $\langle\lambda,\alpha_i^\vee\rangle$ is negative or not integral and $U(\mathfrak{n}_-)$ produces infinitely many weights. $\square$</p>
+<p><strong>Proof sketch.</strong> The Poincaré–Birkhoff–Witt theorem gives $M(\lambda) \cong U(\mathrm{N}_-) \otimes_K K_\lambda$ as a vector space, so $M(\lambda)$ is a weight module with finite-dimensional weight spaces; the sum of all proper submodules is proper, whence the unique maximal submodule. If $\lambda \in P^+$, the $\mathrm{SL}(2)$-subalgebras attached to the simple roots act on $V(\lambda)$ in a way that makes it finite-dimensional, by integrating the action of the root $\mathrm{SL}(2)$'s; if $\lambda \notin P^+$, some $\langle\lambda,\alpha_i^\vee\rangle$ is negative or not integral and $U(\mathrm{N}_-)$ produces infinitely many weights.</p>
 <h3 id="classification-of-irreducible-modules">Classification of Irreducible Modules</h3>
-<p><strong>Theorem (theorem of the highest weight).</strong> Let $\mathfrak{g}$ be a finite-dimensional semisimple Lie algebra over an algebraically closed field of characteristic zero. For each dominant integral weight $\lambda \in P^+$ there is an irreducible finite-dimensional $\mathfrak{g}$-module $V(\lambda)$, unique up to isomorphism, with highest weight $\lambda$; every finite-dimensional irreducible $\mathfrak{g}$-module is of this form. The module $V(\lambda)$ is generated by a highest weight vector $v_\lambda$, and its set of weights is contained in $\lambda - Q^+$ and stable under the Weyl group.</p>
-<p><strong>Proof.</strong> Existence and uniqueness are the theorem on Verma modules, together with the finite-dimensionality criterion. The containment of the weights is the proposition on highest weight vectors, and the stability under the Weyl group is theorem (c) of this section applied to each $\mathfrak{sl}(2)$-subalgebra. $\square$</p>
+<p><strong>Theorem (theorem of the highest weight).</strong> Let $\mathrm{G}$ be a finite-dimensional semisimple Lie algebra over an algebraically closed field of characteristic zero. For each dominant integral weight $\lambda \in P^+$ there is an irreducible finite-dimensional $\mathrm{G}$-module $V(\lambda)$, unique up to isomorphism, with highest weight $\lambda$; every finite-dimensional irreducible $\mathrm{G}$-module is of this form. The module $V(\lambda)$ is generated by a highest weight vector $v_\lambda$, and its set of weights is contained in $\lambda - Q^+$ and stable under the Weyl group.</p>
+<p><strong>Proof.</strong> Existence and uniqueness are the theorem on Verma modules, together with the finite-dimensionality criterion. The containment of the weights is the proposition on highest weight vectors, and the stability under the Weyl group is theorem (c) of this section applied to each $\mathrm{SL}(2)$-subalgebra.</p>
 <p><strong>Corollary.</strong> Two finite-dimensional irreducible modules are isomorphic if and only if they have the same highest weight, and the trivial module is $V(0)$.</p>
-<h2 id="the-example-of-math158">The Example of $\mathfrak{sl}(2)$</h2>
+<h2 id="the-example-of-math153">The Example of $\mathrm{SL}(2)$</h2>
 <h3 id="the-structure-of-the-modules">The Structure of the Modules</h3>
-<p>Let $\mathfrak{g} = \mathfrak{sl}(2, K)$ with basis</p>
+<p>Let $\mathrm{G} = \mathrm{SL}(2, K)$ with basis</p>
 <p>$$
 h = \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix}, \qquad e = \begin{pmatrix} 0 & 1 \\ 0 & 0 \end{pmatrix}, \qquad f = \begin{pmatrix} 0 & 0 \\ 1 & 0 \end{pmatrix},
 $$</p>
@@ -139,27 +139,27 @@ $$</p>
 <p>$$
 [h, e] = 2e, \qquad [h, f] = -2f, \qquad [e, f] = h.
 $$</p>
-<p>The Cartan subalgebra is $\mathfrak{h} = \langle h\rangle$, the simple root $\alpha$ is given by $\alpha(h) = 2$, and the positive root is $\alpha$.</p>
-<p><strong>Theorem.</strong> For each integer $n \geq 0$ there is, up to isomorphism, exactly one irreducible $\mathfrak{sl}(2)$-module of dimension $n+1$, written $V_n$, and these exhaust the irreducible finite-dimensional modules. In $V_n$ there is a basis $v_0, v_1, \ldots, v_n$ with</p>
+<p>The Cartan subalgebra is $\mathrm{H} = \langle h\rangle$, the simple root $\alpha$ is given by $\alpha(h) = 2$, and the positive root is $\alpha$.</p>
+<p><strong>Theorem.</strong> For each integer $n \geq 0$ there is, up to isomorphism, exactly one irreducible $\mathrm{SL}(2)$-module of dimension $n+1$, written $V_n$, and these exhaust the irreducible finite-dimensional modules. In $V_n$ there is a basis $v_0, v_1, \ldots, v_n$ with</p>
 <p>$$
 h \cdot v_i = (2i - n) v_i, \qquad f \cdot v_i = i\, v_{i-1}, \qquad e \cdot v_i = (n - i)\, v_{i+1},
 $$</p>
 <p>with the conventions $f \cdot v_0 = 0$ and $e \cdot v_n = 0$. The vector $v_n$ is a highest weight vector, of highest weight $n\omega = n\alpha/2$.</p>
-<p><strong>Proof.</strong> One verifies directly that the displayed operators satisfy the bracket relations, so they define a module; it is irreducible because any nonzero submodule contains some $v_i$ and then, by applying $e$ and $f$ repeatedly, contains all of $v_0, \ldots, v_n$. Uniqueness follows from the theorem of the highest weight, and the case $n = 0$ is the trivial module. $\square$</p>
-<p><strong>Example.</strong> For $n = 1$ the module $V_1$ is the standard two-dimensional module $K^2$, with $h$ diagonal and $e, f$ the raising and lowering matrices. For $n = 2$ the module $V_2$ is the adjoint module $\mathfrak{sl}(2)$ itself, of dimension $3$, with highest weight $\alpha$: the weights are $\alpha, 0, -\alpha$.</p>
+<p><strong>Proof.</strong> One verifies directly that the displayed operators satisfy the bracket relations, so they define a module; it is irreducible because any nonzero submodule contains some $v_i$ and then, by applying $e$ and $f$ repeatedly, contains all of $v_0, \ldots, v_n$. Uniqueness follows from the theorem of the highest weight, and the case $n = 0$ is the trivial module.</p>
+<p><strong>Example.</strong> For $n = 1$ the module $V_1$ is the standard two-dimensional module $K^2$, with $h$ diagonal and $e, f$ the raising and lowering matrices. For $n = 2$ the module $V_2$ is the adjoint module $\mathrm{SL}(2)$ itself, of dimension $3$, with highest weight $\alpha$: the weights are $\alpha, 0, -\alpha$.</p>
 <h3 id="the-clebschgordan-decomposition">The Clebsch–Gordan Decomposition</h3>
 <p><strong>Theorem.</strong> For nonnegative integers $m, n$,</p>
 <p>$$
 V_m \otimes V_n \cong \bigoplus_{\substack{j = |m - n| \\ j \equiv m + n \bmod 2}}^{m+n} V_j,
 $$</p>
 <p>the sum over $j$ of the same parity as $m+n$ between $|m-n|$ and $m+n$.</p>
-<p><strong>Proof.</strong> The tensor product is a finite-dimensional $\mathfrak{sl}(2)$-module, hence completely reducible, and it is irreducible if and only if its highest weight space is one-dimensional. The highest weights occurring are the sums $\mu + \nu$ of a weight of $V_m$ and a weight of $V_n$, and the weight $\lambda = m\omega + n\omega = (m+n)\omega$ occurs with multiplicity one; removing the summand $V_{m+n}$ and repeating the computation gives the displayed decomposition. Dimension count: both sides have dimension $(m+1)(n+1)$. $\square$</p>
+<p><strong>Proof.</strong> The tensor product is a finite-dimensional $\mathrm{SL}(2)$-module, hence completely reducible, and it is irreducible if and only if its highest weight space is one-dimensional. The highest weights occurring are the sums $\mu + \nu$ of a weight of $V_m$ and a weight of $V_n$, and the weight $\lambda = m\omega + n\omega = (m+n)\omega$ occurs with multiplicity one; removing the summand $V_{m+n}$ and repeating the computation gives the displayed decomposition. Dimension count: both sides have dimension $(m+1)(n+1)$.</p>
 <p><strong>Example.</strong> $V_1 \otimes V_1 \cong V_0 \oplus V_2$, of dimensions $1 + 3 = 4 = 2 \cdot 2$. This is the decomposition of the tensor square of the standard representation into the trivial module and the adjoint module. $V_1 \otimes V_2 \cong V_1 \oplus V_3$, of dimensions $2 + 4 = 6 = 2 \cdot 3$.</p>
 <h2 id="the-weyl-character-and-multiplicity-formulas">The Weyl Character and Multiplicity Formulas</h2>
 <h3 id="characters">Characters</h3>
-<p><strong>Definition.</strong> Let $\mathbb{Z}[P]$ be the integral group ring of the weight lattice, with basis elements $e^\lambda$ multiplying by $e^\lambda e^\mu = e^{\lambda+\mu}$. The <strong>formal character</strong> of a finite-dimensional $\mathfrak{g}$-module $V$ is</p>
+<p><strong>Definition.</strong> Let $\mathbb{Z}[P]$ be the integral group ring of the weight lattice, with basis elements $e^\lambda$ multiplying by $e^\lambda e^\mu = e^{\lambda+\mu}$. The <strong>formal character</strong> of a finite-dimensional $\mathrm{G}$-module $V$ is</p>
 <p>$$
-\operatorname{ch} V = \sum_{\lambda \in \mathfrak{h}^*} m_V(\lambda)\, e^\lambda \in \mathbb{Z}[P],
+\operatorname{ch} V = \sum_{\lambda \in \mathrm{H}^*} m_V(\lambda)\, e^\lambda \in \mathbb{Z}[P],
 $$</p>
 <p>a finite sum. The character is additive on direct sums and multiplicative on tensor products: $\operatorname{ch}(V \oplus W) = \operatorname{ch}V + \operatorname{ch}W$ and $\operatorname{ch}(V \otimes W) = \operatorname{ch}V \cdot \operatorname{ch}W$.</p>
 <p><strong>Definition.</strong> The <strong>Weyl vector</strong> is</p>
@@ -176,48 +176,48 @@ $$</p>
 <p>$$
 \sum_{w \in W} (-1)^{\ell(w)} e^{w(\rho)} = e^{\rho} \prod_{\alpha \in \Phi^+} (1 - e^{-\alpha}) = \prod_{\alpha \in \Phi^+} (e^{\alpha/2} - e^{-\alpha/2}).
 $$</p>
-<p><strong>Proof sketch.</strong> The character of $V(\lambda)$ is the alternating sum over the Weyl group of the characters of the Verma modules, because the weight multiplicities are determined by the $\mathfrak{sl}(2)$-strings of the representation: each Weyl-group translate of a weight contributes with the sign of the group element, and the resulting alternating sum telescopes. This is the standard proof; the algebra of $\mathbb{Z}[P]$ with its Weyl-group action is the setting. $\square$</p>
+<p><strong>Proof sketch.</strong> The character of $V(\lambda)$ is the alternating sum over the Weyl group of the characters of the Verma modules, because the weight multiplicities are determined by the $\mathrm{SL}(2)$-strings of the representation: each Weyl-group translate of a weight contributes with the sign of the group element, and the resulting alternating sum telescopes. This is the standard proof; the algebra of $\mathbb{Z}[P]$ with its Weyl-group action is the setting.</p>
 <p><strong>Theorem (Weyl dimension formula).</strong> For $\lambda \in P^+$,</p>
 <p>$$
 \dim_K V(\lambda) = \prod_{\alpha \in \Phi^+} \frac{(\lambda + \rho, \alpha)}{(\rho, \alpha)}.
 $$</p>
-<p><strong>Proof.</strong> Evaluate the character formula at the identity by applying the ring homomorphism $e^\lambda \mapsto 1$ together with the derivatives in the direction of $\rho$; the limit is finite and yields the product formula. $\square$</p>
-<p><strong>Example.</strong> For $\mathfrak{sl}(2)$ with $\lambda = n\omega$ and positive root $\alpha$, the formula gives</p>
+<p><strong>Proof.</strong> Evaluate the character formula at the identity by applying the ring homomorphism $e^\lambda \mapsto 1$ together with the derivatives in the direction of $\rho$; the limit is finite and yields the product formula.</p>
+<p><strong>Example.</strong> For $\mathrm{SL}(2)$ with $\lambda = n\omega$ and positive root $\alpha$, the formula gives</p>
 <p>$$
 \dim V_n = \frac{(n\omega + \omega, \alpha)}{(\omega, \alpha)} = \frac{(n+1)(\omega,\alpha)}{(\omega,\alpha)} = n + 1,
 $$</p>
-<p>as it must. For $\mathfrak{sl}(3)$ with $\lambda = a\omega_1 + b\omega_2$, the positive roots are $\alpha_1, \alpha_2, \alpha_1+\alpha_2$ and the formula gives $\dim V(\lambda) = \tfrac{1}{2}(a+1)(b+1)(a+b+2)$.</p>
+<p>as it must. For $\mathrm{SL}(3)$ with $\lambda = a\omega_1 + b\omega_2$, the positive roots are $\alpha_1, \alpha_2, \alpha_1+\alpha_2$ and the formula gives $\dim V(\lambda) = \tfrac{1}{2}(a+1)(b+1)(a+b+2)$.</p>
 <h3 id="the-kostant-multiplicity-formula">The Kostant Multiplicity Formula</h3>
-<p><strong>Definition.</strong> The <strong>Kostant partition function</strong> $\mathcal{P} : \mathfrak{h}^* \to \mathbb{Z}_{\geq 0}$ assigns to $\mu$ the number of ways of writing $\mu$ as a sum of positive roots with nonnegative integer coefficients, and $\mathcal{P}(\mu) = 0$ when $\mu$ is not in the nonnegative root cone.</p>
+<p><strong>Definition.</strong> The <strong>Kostant partition function</strong> $\mathcal{P} : \mathrm{H}^* \to \mathbb{Z}_{\geq 0}$ assigns to $\mu$ the number of ways of writing $\mu$ as a sum of positive roots with nonnegative integer coefficients, and $\mathcal{P}(\mu) = 0$ when $\mu$ is not in the nonnegative root cone.</p>
 <p><strong>Theorem (Kostant).</strong> The multiplicity of the weight $\mu$ in $V(\lambda)$ is</p>
 <p>$$
 m_{V(\lambda)}(\mu) = \sum_{w \in W} (-1)^{\ell(w)}\, \mathcal{P}\bigl(w(\lambda + \rho) - (\mu + \rho)\bigr).
 $$</p>
-<p><strong>Proof sketch.</strong> The character formula is rewritten using $\prod_{\alpha>0}(1 - e^{-\alpha})^{-1} = \sum_{\nu} \mathcal{P}(\nu) e^{\nu}$, the generating function of the partition function; comparing coefficients of $e^\mu$ on both sides gives the formula. $\square$</p>
+<p><strong>Proof sketch.</strong> The character formula is rewritten using $\prod_{\alpha>0}(1 - e^{-\alpha})^{-1} = \sum_{\nu} \mathcal{P}(\nu) e^{\nu}$, the generating function of the partition function; comparing coefficients of $e^\mu$ on both sides gives the formula.</p>
 <p><strong>Corollary.</strong> The weight multiplicities are invariant under the Weyl group: $m_{V(\lambda)}(w\mu) = m_{V(\lambda)}(\mu)$ for all $w \in W$, and a weight $\mu$ of $V(\lambda)$ satisfies $\mu \preceq \lambda$.</p>
 <h2 id="tensor-products-and-the-casimir-element">Tensor Products and the Casimir Element</h2>
 <h3 id="the-decomposition-of-tensor-products">The Decomposition of Tensor Products</h3>
-<p>For a general semisimple $\mathfrak{g}$ the tensor product of two irreducible modules decomposes as</p>
+<p>For a general semisimple $\mathrm{G}$ the tensor product of two irreducible modules decomposes as</p>
 <p>$$
 V(\lambda) \otimes V(\mu) \cong \bigoplus_{\nu} V(\nu)^{\oplus c_{\lambda\mu}^{\nu}},
 $$</p>
-<p>with multiplicities $c_{\lambda\mu}^{\nu}$ that are computable from the character formula: one divides the product of the two characters by the Weyl denominator and expands. For $\mathfrak{g} = \mathfrak{sl}(n)$ the multiplicities are the <strong>Littlewood–Richardson coefficients</strong>, the same integers that multiply Schur functions in the symmetric algebra, so the representation theory of $\mathfrak{sl}(n)$ and the combinatorics of symmetric functions are two descriptions of one structure.</p>
-<p><strong>Example.</strong> For $\mathfrak{sl}(2)$ the multiplicities $c_{mn}^{j}$ are all $0$ or $1$, and they are $1$ exactly on the range of the Clebsch–Gordan theorem above. This is the simplest instance of the general phenomenon that the tensor-product multiplicities are bounded above by the multiplicities in the corresponding algebra of symmetric functions, with equality for $\mathfrak{sl}(n)$.</p>
+<p>with multiplicities $c_{\lambda\mu}^{\nu}$ that are computable from the character formula: one divides the product of the two characters by the Weyl denominator and expands. For $\mathrm{G} = \mathrm{SL}(n)$ the multiplicities are the <strong>Littlewood–Richardson coefficients</strong>, the same integers that multiply Schur functions in the symmetric algebra, so the representation theory of $\mathrm{SL}(n)$ and the combinatorics of symmetric functions are two descriptions of one structure.</p>
+<p><strong>Example.</strong> For $\mathrm{SL}(2)$ the multiplicities $c_{mn}^{j}$ are all $0$ or $1$, and they are $1$ exactly on the range of the Clebsch–Gordan theorem above. This is the simplest instance of the general phenomenon that the tensor-product multiplicities are bounded above by the multiplicities in the corresponding algebra of symmetric functions, with equality for $\mathrm{SL}(n)$.</p>
 <h3 id="the-casimir-element">The Casimir Element</h3>
-<p><strong>Definition.</strong> Let $(x_1, \ldots, x_m)$ be a basis of $\mathfrak{g}$ and let $(x^1, \ldots, x^m)$ be the dual basis with respect to the Killing form, $\kappa(x_i, x^j) = \delta_i^j$. The <strong>Casimir element</strong> is</p>
+<p><strong>Definition.</strong> Let $(x_1, \ldots, x_m)$ be a basis of $\mathrm{G}$ and let $(x^1, \ldots, x^m)$ be the dual basis with respect to the Killing form, $\kappa(x_i, x^j) = \delta_i^j$. The <strong>Casimir element</strong> is</p>
 <p>$$
-C = \sum_{i=1}^{m} x_i x^j \in U(\mathfrak{g}).
+C = \sum_{i=1}^{m} x_i x^j \in U(\mathrm{G}).
 $$</p>
-<p><strong>Proposition.</strong> The Casimir element is independent of the choice of basis, and it lies in the centre of $U(\mathfrak{g})$: it commutes with every element of $U(\mathfrak{g})$. On the irreducible module $V(\lambda)$ it acts by the scalar</p>
+<p><strong>Proposition.</strong> The Casimir element is independent of the choice of basis, and it lies in the centre of $U(\mathrm{G})$: it commutes with every element of $U(\mathrm{G})$. On the irreducible module $V(\lambda)$ it acts by the scalar</p>
 <p>$$
 (\lambda, \lambda + 2\rho) = (\lambda + \rho, \lambda + \rho) - (\rho, \rho).
 $$</p>
-<p><strong>Proof.</strong> Changing the basis replaces $\sum_i x_i \otimes x^i$ by $\sum_{ab} B_{ab}\, y_a \otimes y_b$ where $(B_{ab})$ is the inverse of the matrix of the form in the new basis, so the element is basis-independent. Invariance of the form gives, for $y \in \mathfrak{g}$,</p>
+<p><strong>Proof.</strong> Changing the basis replaces $\sum_i x_i \otimes x^i$ by $\sum_{ab} B_{ab}\, y_a \otimes y_b$ where $(B_{ab})$ is the inverse of the matrix of the form in the new basis, so the element is basis-independent. Invariance of the form gives, for $y \in \mathrm{G}$,</p>
 <p>$$
 \Bigl[ y, \sum_i x_i x^i \Bigr] = \sum_i \Bigl( [y, x_i] x^i + x_i [y, x^i] \Bigr) = 0,
 $$</p>
-<p>because the two sums are the two sides of the invariance identity and cancel in the basis expansion. The eigenvalue is computed by applying $C$ to a highest weight vector $v_\lambda$: the component of $C$ lying in $\mathfrak{n}_- U(\mathfrak{g})$ annihilates the highest weight vector, and what remains is the scalar $(\lambda, \lambda + 2\rho)$. $\square$</p>
-<p><strong>Example.</strong> For $\mathfrak{sl}(2)$ with the Killing form, the dual basis of $(e, f, h)$ is $(f/4, e/4, h/8)$, so</p>
+<p>because the two sums are the two sides of the invariance identity and cancel in the basis expansion. The eigenvalue is computed by applying $C$ to a highest weight vector $v_\lambda$: the component of $C$ lying in $\mathrm{N}_- U(\mathrm{G})$ annihilates the highest weight vector, and what remains is the scalar $(\lambda, \lambda + 2\rho)$.</p>
+<p><strong>Example.</strong> For $\mathrm{SL}(2)$ with the Killing form, the dual basis of $(e, f, h)$ is $(f/4, e/4, h/8)$, so</p>
 <p>$$
 C = \tfrac{1}{4}(ef + fe) + \tfrac{1}{8} h^2.
 $$</p>
@@ -225,11 +225,11 @@ $$</p>
 <p>$$
 \tfrac{1}{4} n + \tfrac{1}{8} n^2 = \tfrac{1}{8} n(n+2) = (\lambda, \lambda + 2\rho)
 $$</p>
-<p>with $\lambda = n\omega$ and $(\omega, \omega) = 1/8$ for the Killing form of $\mathfrak{sl}(2)$. The Casimir eigenvalue distinguishes the irreducible modules: it is a strictly increasing function of $n$.</p>
+<p>with $\lambda = n\omega$ and $(\omega, \omega) = 1/8$ for the Killing form of $\mathrm{SL}(2)$. The Casimir eigenvalue distinguishes the irreducible modules: it is a strictly increasing function of $n$.</p>
 <p><strong>Remark.</strong> The Casimir element is the algebraic prototype of the Laplace operator, and its eigenvalue $(\lambda, \lambda + 2\rho)$ is the invariant of an irreducible representation that is visible without a choice of basis. In the proof of Weyl's complete reducibility it is the Casimir element that produces the equivariant projection onto a submodule: it acts invertibly on the relevant space precisely when the highest weight is not zero, and a rescaling of the projection supplies the invariant complement.</p>
 <h2 id="summary">Summary</h2>
-<p>For a finite-dimensional semisimple Lie algebra over an algebraically closed field of characteristic zero, the finite-dimensional representations are completely reducible, so they are direct sums of irreducibles. Representations are modules over the universal enveloping algebra $U(\mathfrak{g}) = T(\mathfrak{g})/(xy - yx - [x,y])$, whose monomials in a basis form a basis by the Poincaré–Birkhoff–Witt theorem and whose associated graded algebra is the symmetric algebra $\operatorname{Sym}(\mathfrak{g})$. Every finite-dimensional module is a weight module with finite-dimensional weight spaces, the weights lie in the weight lattice $P$ and are stable under the Weyl group.</p>
-<p>The irreducible finite-dimensional modules are exactly the modules $V(\lambda)$ with $\lambda$ a dominant integral weight, $V(\lambda)$ being the unique irreducible quotient of the Verma module $M(\lambda) = U(\mathfrak{g})\otimes_{U(\mathfrak{b})}K_\lambda$. For $\mathfrak{sl}(2)$ the irreducibles are $V_n$ of dimension $n+1$, with the explicit action of $e, f, h$, and the tensor products decompose by the Clebsch–Gordan rule. In general the characters are given by the Weyl character formula, the dimensions by the Weyl dimension formula, and the weight multiplicities by the Kostant multiplicity formula; the Casimir element is a central element of $U(\mathfrak{g})$ acting on $V(\lambda)$ by the scalar $(\lambda, \lambda + 2\rho)$, and by the theorem of Harish-Chandra the centre of $U(\mathfrak{g})$ is a polynomial algebra on $r = \operatorname{rank}\mathfrak{g}$ generators, of which the Casimir element is the degree-two member.</p>
+<p>For a finite-dimensional semisimple Lie algebra over an algebraically closed field of characteristic zero, the finite-dimensional representations are completely reducible, so they are direct sums of irreducibles. Representations are modules over the universal enveloping algebra $U(\mathrm{G}) = T(\mathrm{G})/(xy - yx - [x,y])$, whose monomials in a basis form a basis by the Poincaré–Birkhoff–Witt theorem and whose associated graded algebra is the symmetric algebra $\operatorname{Sym}(\mathrm{G})$. Every finite-dimensional module is a weight module with finite-dimensional weight spaces, the weights lie in the weight lattice $P$ and are stable under the Weyl group.</p>
+<p>The irreducible finite-dimensional modules are exactly the modules $V(\lambda)$ with $\lambda$ a dominant integral weight, $V(\lambda)$ being the unique irreducible quotient of the Verma module $M(\lambda) = U(\mathrm{G})\otimes_{U(\mathrm{B})}K_\lambda$. For $\mathrm{SL}(2)$ the irreducibles are $V_n$ of dimension $n+1$, with the explicit action of $e, f, h$, and the tensor products decompose by the Clebsch–Gordan rule. In general the characters are given by the Weyl character formula, the dimensions by the Weyl dimension formula, and the weight multiplicities by the Kostant multiplicity formula; the Casimir element is a central element of $U(\mathrm{G})$ acting on $V(\lambda)$ by the scalar $(\lambda, \lambda + 2\rho)$, and by the theorem of Harish-Chandra the centre of $U(\mathrm{G})$ is a polynomial algebra on $r = \operatorname{rank}\mathrm{G}$ generators, of which the Casimir element is the degree-two member.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -244,11 +244,11 @@ $$</p>
 <td>Algebraically closed field of characteristic zero</td>
 </tr>
 <tr>
-<td>$\mathfrak{g}$</td>
+<td>$\mathrm{G}$</td>
 <td>Finite-dimensional semisimple Lie algebra over $K$</td>
 </tr>
 <tr>
-<td>$\mathfrak{h}, \mathfrak{n}_\pm, \mathfrak{b} = \mathfrak{h}\oplus\mathfrak{n}_+$</td>
+<td>$\mathrm{H}, \mathrm{N}_\pm, \mathrm{B} = \mathrm{H}\oplus\mathrm{N}_+$</td>
 <td>Cartan, nilpotent, and Borel subalgebras</td>
 </tr>
 <tr>
@@ -256,11 +256,11 @@ $$</p>
 <td>Root system, positive roots, simple roots, Weyl group</td>
 </tr>
 <tr>
-<td>$U(\mathfrak{g})$</td>
-<td>Universal enveloping algebra, $T(\mathfrak{g})/(xy - yx - [x,y])$</td>
+<td>$U(\mathrm{G})$</td>
+<td>Universal enveloping algebra, $T(\mathrm{G})/(xy - yx - [x,y])$</td>
 </tr>
 <tr>
-<td>$\operatorname{gr} U(\mathfrak{g}) \cong \operatorname{Sym}(\mathfrak{g})$</td>
+<td>$\operatorname{gr} U(\mathrm{G}) \cong \operatorname{Sym}(\mathrm{G})$</td>
 <td>Associated graded algebra; Poincaré–Birkhoff–Witt</td>
 </tr>
 <tr>
@@ -284,12 +284,12 @@ $$</p>
 <td>Irreducible module of highest weight $\lambda$, $\lambda \in P^+$</td>
 </tr>
 <tr>
-<td>$M(\lambda) = U(\mathfrak{g})\otimes_{U(\mathfrak{b})}K_\lambda$</td>
+<td>$M(\lambda) = U(\mathrm{G})\otimes_{U(\mathrm{B})}K_\lambda$</td>
 <td>Verma module; $V(\lambda)$ is its irreducible quotient</td>
 </tr>
 <tr>
 <td>$V_m \otimes V_n \cong \bigoplus_j V_j$</td>
-<td>Clebsch–Gordan rule for $\mathfrak{sl}(2)$</td>
+<td>Clebsch–Gordan rule for $\mathrm{SL}(2)$</td>
 </tr>
 <tr>
 <td>$\operatorname{ch} V = \sum_\lambda m_V(\lambda)e^\lambda$</td>
@@ -313,7 +313,7 @@ $$</p>
 </tr>
 <tr>
 <td>$C = \sum_i x_i x^i$</td>
-<td>Casimir element; central in $U(\mathfrak{g})$</td>
+<td>Casimir element; central in $U(\mathrm{G})$</td>
 </tr>
 <tr>
 <td>$(\lambda, \lambda+2\rho)$</td>
@@ -325,7 +325,7 @@ $$</p>
 <ul>
 <li>James E. Humphreys, <em>Introduction to Lie Algebras and Representation Theory</em> (Springer, 1972), for the theorem of the highest weight, Verma modules, and the Weyl formulas.</li>
 <li>Jean-Pierre Serre, <em>Complex Semisimple Lie Algebras</em> (Springer, 1987), for weights, characters, and the classification of irreducible modules.</li>
-<li>William Fulton and Joe Harris, <em>Representation Theory: A First Course</em> (Springer, 1991), for the case of $\mathfrak{sl}(n)$, the Clebsch–Gordan rule, and Littlewood–Richardson coefficients.</li>
+<li>William Fulton and Joe Harris, <em>Representation Theory: A First Course</em> (Springer, 1991), for the case of $\mathrm{SL}(n)$, the Clebsch–Gordan rule, and Littlewood–Richardson coefficients.</li>
 <li>Nathan Jacobson, <em>Lie Algebras</em> (Dover, 1979), for the universal enveloping algebra and the Poincaré–Birkhoff–Witt theorem.</li>
 <li>V. S. Varadarajan, <em>Lie Groups, Lie Algebras, and Their Representations</em> (Springer, 1984), for the analytic and algebraic sides of the representation theory.</li>
 <li>Bertram Kostant, "A Formula for the Multiplicity of a Weight", <em>Transactions of the American Mathematical Society</em> 93 (1959), for the multiplicity formula.</li>

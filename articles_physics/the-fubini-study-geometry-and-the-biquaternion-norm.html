@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Fubini–Study Geometry and the Biquaternion Norm Form — Biquaternion Universe</title>
+  <title>The Fubini–Study Geometry and the Biquaternion Norm — Biquaternion Universe</title>
   <link rel="stylesheet" href="../assets/css/base.css">
   <link rel="stylesheet" href="../assets/css/layout.css">
   <link rel="stylesheet" href="../assets/css/article.css">
@@ -50,13 +50,13 @@
   <div class="page-wrap">
     <main class="article">
       <div class="article-body">
-        <h1 id="the-fubinistudy-geometry-and-the-biquaternion-norm-form"><strong>The Fubini–Study Geometry and the Biquaternion Norm Form</strong></h1>
+        <h1 id="the-fubinistudy-geometry-and-the-biquaternion-norm"><strong>The Fubini–Study Geometry and the Biquaternion Norm</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>The state space of the qubit is a ball, and the geometry of its boundary is the Fubini–Study geometry of the projective line $\mathbb{P}^1(\mathbb{C})$. The companion articles established the ball as the trace-one slice of the future light cone of the norm form of the biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with the pure states on the boundary and the mixed states in the interior. The present article establishes the <strong>metric geometry</strong> of that slice: the Fubini–Study metric on the pure states and its standard Bures extension to the mixed states are read off from the two forms the algebra already supplies, the norm form and the trace pairing.</p>
+<p>The state space of the qubit is a ball, and the geometry of its boundary is the Fubini–Study geometry of the projective line $\mathbb{P}^1(\mathbb{C})$. The companion articles established the ball as the trace-one slice of the future light cone of the biquaternion norm of the biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with the pure states on the boundary and the mixed states in the interior. The present article establishes the <strong>metric geometry</strong> of that slice: the Fubini–Study metric on the pure states and its standard Bures extension to the mixed states are read off from the two forms the algebra already supplies, the biquaternion norm and the trace pairing.</p>
 <p>The result is a division of labour between the two forms, and it is worth stating before any algebra is written.</p>
 <ul>
 <li>The <strong>trace pairing</strong> fixes the <em>transition probability</em>. On pure states it gives $\mathrm{Tr}(\tilde{P}(\hat{\mu})\tilde{P}(\hat{\nu})) = \tfrac12(1+\hat{\mu}\cdot\hat{\nu}) = \cos^2(\theta/2)$, the squared overlap of the corresponding rays.</li>
-<li>The <strong>norm form</strong> fixes the <em>metric</em>. It vanishes identically on the pure states, so it cannot itself be a metric there; what it gives is the line element at second order, and the result is</li>
+<li>The <strong>biquaternion norm</strong> fixes the <em>metric</em>. It vanishes identically on the pure states, so it cannot itself be a metric there; what it gives is the line element at second order, and the result is</li>
 </ul>
 <p>$$
 ds^2_{\mathrm{FS}} \;=\; -\,N\!\left(\delta\tilde{P}\right)\Big|_{\text{tangential}} \;=\; \tfrac14\,\bigl|d\hat{\mu}\bigr|^2 \;=\; \tfrac14\left(d\theta^2+\sin^2\theta\,d\varphi^2\right),
@@ -66,15 +66,15 @@ $$</p>
 $$
 \omega \;=\; -\tfrac12\, i\,\mathrm{Tr}\!\left(\tilde{P}\,[\delta_1\tilde{P},\delta_2\tilde{P}]\right) \;=\; \tfrac14\,\hat{\mu}\cdot(\delta_1\hat{\mu}\times\delta_2\hat{\mu}).
 $$
-The <strong>geodesic distance</strong> is $d_{\mathrm{FS}}(\tilde{P},\tilde{Q}) = \arccos\lvert\langle\psi|\phi\rangle\rvert = \theta/2$, so that the trace distance of the companion article <em>Exercise: The Bloch Ball and the Geometry of Mixed States</em> is the sine of the Fubini–Study distance, $D = \sin d_{\mathrm{FS}}$. And on the interior the metric is the <strong>Bures metric</strong>, whose boundary restriction is the Fubini–Study metric; the flat quadratic form $-\tfrac14|d\mathbf{r}|^2$ that the norm form also supplies is <em>not</em> that interior metric, so the norm form gives the boundary exactly and the flat geometry everywhere, but not the metrically distinguished interior.</p>
-<p>The article proceeds as follows. The state space and its two forms are recalled; the pure states are identified with the rays of the state module and with the points of $\mathbb{P}^1(\mathbb{C})$; the transition probability is computed from the trace pairing; the Fubini–Study line element is computed from the norm form in two independent ways, from the projector displacement and from the spinor, and the two agree; the complex structure and the Kähler form are exhibited; geodesics and distances are collected; and the Bures extension and the limits of the algebra's own contribution are stated. What the article does not do is the informational reading of the same geometry, which belongs to the informational articles, and the spin-specific readings, which belong to the spin articles.</p>
+The <strong>geodesic distance</strong> is $d_{\mathrm{FS}}(\tilde{P},\tilde{Q}) = \arccos\lvert\langle\psi|\phi\rangle\rvert = \theta/2$, so that the trace distance of the companion article <em>Exercise: The Bloch Ball and the Geometry of Mixed States</em> is the sine of the Fubini–Study distance, $D = \sin d_{\mathrm{FS}}$. And on the interior the metric is the <strong>Bures metric</strong>, whose boundary restriction is the Fubini–Study metric; the flat quadratic form $-\tfrac14|d\mathbf{r}|^2$ that the biquaternion norm also supplies is <em>not</em> that interior metric, so the biquaternion norm gives the boundary exactly and the flat geometry everywhere, but not the metrically distinguished interior.</p>
+<p>The article proceeds as follows. The state space and its two forms are recalled; the pure states are identified with the rays of the state module and with the points of $\mathbb{P}^1(\mathbb{C})$; the transition probability is computed from the trace pairing; the Fubini–Study line element is computed from the biquaternion norm in two independent ways, from the projector displacement and from the spinor, and the two agree; the complex structure and the Kähler form are exhibited; geodesics and distances are collected; and the Bures extension and the limits of the algebra's own contribution are stated. What the article does not do is the informational reading of the same geometry, which belongs to the informational articles, and the spin-specific readings, which belong to the spin articles.</p>
 <p><strong>Conventions.</strong> The notation is inherited unchanged from the read list. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with quaternion basis $e_0=1,e_1,e_2,e_3$ satisfying $e_k^2=-e_0$ and $e_je_k=\epsilon_{jkl}e_l$ for $j\neq k$, and central scalar imaginary $i$ with $i^2=-1$. The Hermitian and anti-Hermitian subspaces are
 $$
 \mathbb{M}_+=\{\tilde{Q}:\tilde{Q}^\dagger=\tilde{Q}\}=\mathrm{span}_\mathbb{R}\{e_0,ie_1,ie_2,ie_3\},
 \qquad
 \mathbb{M}_-=\{\tilde{Q}:\tilde{Q}^\dagger=-\tilde{Q}\}=\mathrm{span}_\mathbb{R}\{ie_0,e_1,e_2,e_3\},
 $$
-with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$. The trace is twice the scalar part, $\mathrm{Tr}(\tilde{Q})=2\,\mathrm{Sc}(\tilde{Q})$, with $\mathrm{Tr}(e_0)=2$, and the trace formula is $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$. The norm form is $N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}$, so that on $\mathbb{M}_+$, with $\tilde{H}=h_0e_0+i\mathbf{h}$,
+with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$. The trace is twice the scalar part, $\mathrm{Tr}(\tilde{Q})=2\,\mathrm{Sc}(\tilde{Q})$, with $\mathrm{Tr}(e_0)=2$, and the trace formula is $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$. The biquaternion norm is $N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}$, so that on $\mathbb{M}_+$, with $\tilde{H}=h_0e_0+i\mathbf{h}$,
 $$
 N(\tilde{H})=\bigl(h_0^2-|\mathbf{h}|^2\bigr)e_0 .
 $$
@@ -92,17 +92,17 @@ $$
 \mathrm{Tr}(\tilde{H}\tilde{K})=2\bigl(h_0k_0+\mathbf{h}\cdot\mathbf{k}\bigr)
 $$
 is positive definite, of signature $(4,0)$; it is the Euclidean pairing on $\mathbb{R}^4$ up to the normalization $\mathrm{Tr}(e_0)=2$, and it is the Hilbert–Schmidt pairing of the matrix model.</p>
-<p><strong>The norm form and its polarization.</strong>
+<p><strong>The biquaternion norm and its polarization.</strong>
 $$
 N(\tilde{H})=\tilde{H}\bar{\tilde{H}}=\bigl(h_0^2-|\mathbf{h}|^2\bigr)e_0,
 \qquad
 B(\tilde{H},\tilde{K})=\tfrac12\bigl(\tilde{H}\bar{\tilde{K}}+\tilde{K}\bar{\tilde{H}}\bigr)=\bigl(h_0k_0-\mathbf{h}\cdot\mathbf{k}\bigr)e_0,
 $$
 is indefinite, of signature $(1,3)$; its future cone is the positivity cone of the states, and its boundary is the pure states.</p>
-<p>The two forms are the two ingredients of the geometry. The trace pairing is positive definite and therefore measures <em>overlap</em>; the norm form is indefinite, vanishes on the pure states, and therefore cannot measure <em>length</em> on them directly. The point of the article is that the norm form nevertheless determines the length, through its second variation on the null boundary. That is a standard feature of a quadratic form at a null direction — the first variation vanishes, and the second variation carries the geometry — and here it is the whole content of the Fubini–Study metric.</p>
-<p>The reader should also keep in mind what these forms are <em>not</em>. Neither is the algebra's product; the norm form is the determinant of the matrix model, $N(\tilde{Q})\,e_0=\det M(\tilde{Q})\,e_0$, and the trace pairing is the matrix trace, $\mathrm{Tr}(\tilde{H}\tilde{K})=\mathrm{Tr}(M(\tilde{H})M(\tilde{K}))$. The geometry below is therefore a statement about the matrix model of the algebra, read through the two canonical matrix functionals.</p>
+<p>The two forms are the two ingredients of the geometry. The trace pairing is positive definite and therefore measures <em>overlap</em>; the biquaternion norm is indefinite, vanishes on the pure states, and therefore cannot measure <em>length</em> on them directly. The point of the article is that the biquaternion norm nevertheless determines the length, through its second variation on the null boundary. That is a standard feature of a quadratic form at a null direction — the first variation vanishes, and the second variation carries the geometry — and here it is the whole content of the Fubini–Study metric.</p>
+<p>The reader should also keep in mind what these forms are <em>not</em>. Neither is the algebra's product; the biquaternion norm is the determinant of the matrix model, $N(\tilde{Q})\,e_0=\det M(\tilde{Q})\,e_0$, and the trace pairing is the matrix trace, $\mathrm{Tr}(\tilde{H}\tilde{K})=\mathrm{Tr}(M(\tilde{H})M(\tilde{K}))$. The geometry below is therefore a statement about the matrix model of the algebra, read through the two canonical matrix functionals.</p>
 <h2 id="pure-states-and-the-projective-line">Pure States and the Projective Line</h2>
-<p>The boundary of the ball is the sphere $|\mathbf{r}|=1$. On it the norm form vanishes and the deviation from idempotency vanishes,
+<p>The boundary of the ball is the sphere $|\mathbf{r}|=1$. On it the biquaternion norm vanishes and the deviation from idempotency vanishes,
 $$
 N(\tilde{\rho})=0,\qquad \tilde{\rho}^2-\tilde{\rho}=\tfrac14\bigl(|\mathbf{r}|^2-1\bigr)e_0=0 ,
 $$
@@ -157,14 +157,14 @@ so that the trace distance and the transition probability carry the same informa
 $$
 d_{\mathrm{FS}}=\frac{\theta}{2}=\arcsin D=\arccos\sqrt{\mathrm{Tr}\bigl(\tilde{P}\tilde{Q}\bigr)} .
 $$</p>
-<h2 id="the-fubinistudy-line-element-from-the-norm-form">The Fubini–Study Line Element from the Norm Form</h2>
-<p>The norm form vanishes on the pure states, so it assigns them a <em>length</em> zero. What a quadratic form does at a null direction is supply the metric as its second variation, and this section computes that second variation in two independent ways. The first uses the projector displacement, the second the spinor, and their agreement is the derivation of the line element.</p>
+<h2 id="the-fubinistudy-line-element-from-the-biquaternion-norm">The Fubini–Study Line Element from the Biquaternion Norm</h2>
+<p>The biquaternion norm vanishes on the pure states, so it assigns them a <em>length</em> zero. What a quadratic form does at a null direction is supply the metric as its second variation, and this section computes that second variation in two independent ways. The first uses the projector displacement, the second the spinor, and their agreement is the derivation of the line element.</p>
 <h3 id="the-projector-variation">The projector variation</h3>
 <p>Differentiate the idempotent along the boundary. Since $\tilde{P}(\hat{\mu})=\tfrac12(e_0+i\hat{\mu})$,
 $$
 \delta\tilde{P}=\tfrac12\,i\,\delta\hat{\mu},\qquad \hat{\mu}\cdot\delta\hat{\mu}=0 ,
 $$
-the tangency condition being the differentiation of $|\hat{\mu}|^2=1$. The displacement is Hermitian, $\delta\tilde{P}\in\mathbb{M}_+$, with vanishing scalar part. Compute the norm form of the displacement, using that $\overline{\delta\hat{\mu}}=-\delta\hat{\mu}$ for a pure real quaternion and that $(\delta\hat{\mu})^2=-|\delta\hat{\mu}|^2e_0$:
+the tangency condition being the differentiation of $|\hat{\mu}|^2=1$. The displacement is Hermitian, $\delta\tilde{P}\in\mathbb{M}_+$, with vanishing scalar part. Compute the biquaternion norm of the displacement, using that $\overline{\delta\hat{\mu}}=-\delta\hat{\mu}$ for a pure real quaternion and that $(\delta\hat{\mu})^2=-|\delta\hat{\mu}|^2e_0$:
 $$
 N(\delta\tilde{P})
 =\Bigl(\tfrac12 i\,\delta\hat{\mu}\Bigr)\overline{\Bigl(\tfrac12 i\,\delta\hat{\mu}\Bigr)}
@@ -174,7 +174,7 @@ N(\delta\tilde{P})
 =\tfrac14\,(\delta\hat{\mu})^2
 =-\tfrac14\,|\delta\hat{\mu}|^2\,e_0 .
 $$</p>
-<p>The scalar coefficient is <strong>negative</strong>, so the norm form is negative on tangential displacements; the metric is the negative of the form on those directions, and the Fubini–Study line element is
+<p>The scalar coefficient is <strong>negative</strong>, so the biquaternion norm is negative on tangential displacements; the metric is the negative of the form on those directions, and the Fubini–Study line element is
 $$
 ds^2_{\mathrm{FS}}=-\,N(\delta\tilde{P})\Big|_{\hat{\mu}\cdot\delta\hat{\mu}=0}
 =\tfrac14\,|d\hat{\mu}|^2 .
@@ -184,7 +184,7 @@ $$
 \boxed{\ ds^2_{\mathrm{FS}}=\tfrac14\left(d\theta^2+\sin^2\theta\,d\varphi^2\right).\ }
 $$
 The round metric of the unit Bloch sphere is $d\Omega^2=d\theta^2+\sin^2\theta\,d\varphi^2$, so the Fubini–Study metric of the pure states is one quarter of the round metric of the sphere on which the states are drawn. Equivalently, the pure-state manifold is a round sphere of radius $\tfrac12$ with the Fubini–Study normalization, and its total area is $\pi$.</p>
-<p>The sign convention in $-N$ deserves a word, because the norm form itself is indefinite and no sign choice can be avoided. On the tangential directions of the boundary the quadratic form is negative, $N(\delta\tilde{P})=-\tfrac14|\delta\hat{\mu}|^2e_0$, as the computation shows; the same displacement written in the $(1,3)$ coordinates of $\mathbb{M}_+$ has negative spatial norm, and the two statements agree. The minus sign in $ds^2_{\mathrm{FS}}=-N(\delta\tilde{P})$ converts the algebra's $(1,3)$ normalization to the positive normalization of a length. This is the precise sense in which the norm form, though indefinite, <em>does</em> contain the Fubini–Study metric: the metric is the negative of the form evaluated on the null boundary's tangential directions.</p>
+<p>The sign convention in $-N$ deserves a word, because the biquaternion norm itself is indefinite and no sign choice can be avoided. On the tangential directions of the boundary the quadratic form is negative, $N(\delta\tilde{P})=-\tfrac14|\delta\hat{\mu}|^2e_0$, as the computation shows; the same displacement written in the $(1,3)$ coordinates of $\mathbb{M}_+$ has negative spatial norm, and the two statements agree. The minus sign in $ds^2_{\mathrm{FS}}=-N(\delta\tilde{P})$ converts the algebra's $(1,3)$ normalization to the positive normalization of a length. This is the precise sense in which the biquaternion norm, though indefinite, <em>does</em> contain the Fubini–Study metric: the metric is the negative of the form evaluated on the null boundary's tangential directions.</p>
 <h3 id="the-spinor-computation">The spinor computation</h3>
 <p>The second derivation uses the spinor directly and confirms the first. Let
 $$
@@ -294,32 +294,32 @@ $$
 The first is the trace pairing, the second the trace distance of the companion article <em>Exercise: The Bloch Ball and the Geometry of Mixed States</em>, and the third the Fubini–Study distance. They are not three independent geometries but one: the trace pairing gives the squared cosine, the trace distance gives the sine, and the Fubini–Study distance is the angle. The complementarity identity $D^2+\mathrm{Tr}(\tilde{P}\tilde{Q})=1$ of the exercise article is the Pythagorean identity of the same triangle.</p>
 <p><strong>Uniqueness and invariance.</strong> The unitary group $U(2)$ acts transitively on the rays, and its image $SO(3)$ acts transitively on the boundary sphere. Any metric on the boundary that is invariant under this action is a multiple of the round metric, so the algebra's own symmetry group fixes the Fubini–Study metric <strong>up to scale</strong>. The scale is then fixed by the trace pairing, through the identification of the transition probability with $\cos^2 d_{\mathrm{FS}}$; equivalently, by the requirement that the line element be $-N(\delta\tilde{P})$, whose normalization is the trace normalization. This is a two-step determination worth naming: the symmetry fixes the metric up to a constant, and the trace fixes the constant. Neither step imports a geometric posit beyond the algebra's two forms.</p>
 <p><strong>Units.</strong> The line element has been written so that $\hat{\mu}$ is a unit vector, i.e. the Bloch vector is measured in units in which the ball has radius one. If the physical Bloch vector is measured with a radius $r_0$ — for instance $r_0=\hbar/2$ for a spin — then the metric is multiplied by $r_0^2$ and the distance by $r_0$; the dimensionless statements above are the ones fixed by the algebra, and the physical conversion is a separate posit, like the identification of $\hat{\mu}$ with a direction in space.</p>
-<h2 id="the-ball-the-bures-metric-and-what-the-norm-form-does-not-give">The Ball: the Bures Metric and What the Norm Form Does Not Give</h2>
+<h2 id="the-ball-the-bures-metric-and-what-the-biquaternion-norm-does-not-give">The Ball: the Bures Metric and What the Biquaternion Norm Does Not Give</h2>
 <p>The pure states are the boundary; the mixed states are the interior. The metric of the interior is not determined by the boundary metric alone, and the algebra's own favourite quadratic form does not supply it. This section states what the algebra supplies, what is standard, and where the two part company.</p>
-<p><strong>What the norm form supplies in the interior.</strong> For a state $\tilde{\rho}=\tfrac12(e_0+i\mathbf{r})$ and a displacement $\delta\tilde{\rho}=\tfrac12 i\,\delta\mathbf{r}$, the computation of the projector variation goes through unchanged,
+<p><strong>What the biquaternion norm supplies in the interior.</strong> For a state $\tilde{\rho}=\tfrac12(e_0+i\mathbf{r})$ and a displacement $\delta\tilde{\rho}=\tfrac12 i\,\delta\mathbf{r}$, the computation of the projector variation goes through unchanged,
 $$
 N(\delta\tilde{\rho})=-\tfrac14\,|\delta\mathbf{r}|^2\,e_0,
 \qquad
 -N(\delta\tilde{\rho})=\tfrac14\,|d\mathbf{r}|^2 ,
 $$
-but now for <strong>all</strong> displacements, radial as well as tangential. So the norm form supplies the flat Euclidean metric $\tfrac14|d\mathbf{r}|^2$ on the whole ball. On the boundary, where the radial component of a tangential displacement vanishes, this flat form restricted to the boundary is the Fubini–Study metric; in the interior it is the flat metric, not the Bures metric.</p>
+but now for <strong>all</strong> displacements, radial as well as tangential. So the biquaternion norm supplies the flat Euclidean metric $\tfrac14|d\mathbf{r}|^2$ on the whole ball. On the boundary, where the radial component of a tangential displacement vanishes, this flat form restricted to the boundary is the Fubini–Study metric; in the interior it is the flat metric, not the Bures metric.</p>
 <p><strong>What standard physics supplies.</strong> The metrically and statistically distinguished metric of the mixed-state space is the <strong>Bures metric</strong>, equivalently the quantum Fisher information. In the convention in which the Bures distance of two pure states equals their Fubini–Study distance — so that the Uhlmann transition probability of two pure states is $\lvert\langle\psi|\phi\rangle\rvert^2$, as in the companion article <em>The Bloch Ball as the Trace-One Slice of the Future Light Cone</em> — the qubit Bures line element is
 $$
 ds^2_{\mathrm{Bures}}=\frac14\left(\frac{dr^2}{1-r^2}+r^2\,d\Omega^2\right)
 =\frac14\left(|d\mathbf{r}|^2+\frac{(\mathbf{r}\cdot d\mathbf{r})^2}{1-r^2}\right),
 \qquad r=|\mathbf{r}| .
 $$
-This is a standard result, not an algebraic one: it is the infinitesimal form of the Uhlmann transition probability, and it is the unique metric on the ball that is monotone under stochastic maps and reduces to the Fubini–Study metric on the boundary. Two checks fix it. On the boundary $r\to1$, the radial term diverges while the angular term tends to $\tfrac14 d\Omega^2$, which is exactly the Fubini–Study metric, so the Bures metric restricts to the Fubini–Study metric on the pure states. At the center $r=0$, the angular term vanishes and the line element is $\tfrac14|d\mathbf{r}|^2$, which agrees with the norm form's flat contribution there.</p>
-<p><strong>Where the two part company.</strong> The Bures metric and the norm form's flat metric agree at the center and agree (on tangential directions) on the boundary, but nowhere else in the interior. The difference is the radial term: Bures has $\tfrac14\,dr^2/(1-r^2)$, which blows up as the state approaches purity, while the norm form gives $\tfrac14\,dr^2$ there. The interpretation is the familiar one: the Bures/Fisher metric measures <em>distinguishability</em>, and two nearly pure states that differ slightly in purity can be distinguished with high confidence from many copies, so the radial cost diverges at the boundary; the flat metric measures only the Euclidean separation of Bloch vectors and is blind to this. The algebra's norm form therefore gives the correct geometry on the pure states and the correct geometry at the maximally mixed state, but it does not give the interpolating metric, and it cannot, because the interpolation is fixed by a statistical criterion (monotonicity under noisy maps) that is not an algebraic relation of $\mathbb{B}$.</p>
-<p>It is worth recording the boundary of the claim. What the article derives from the algebra is: the transition probability from the trace pairing; the Fubini–Study metric from the norm form; their compatibility in the Kähler structure; and the uniqueness of the boundary metric up to a scale fixed by the trace. What it imports from standard quantum information is the Bures/Fisher metric of the interior, and it does so because the algebra supplies no interior metric other than the flat one, and the flat one is not the statistically distinguished one. This division is exactly the one the framework's own discipline requires: the algebra is credited with what it determines, and the standard theory with what it does not.</p>
+This is a standard result, not an algebraic one: it is the infinitesimal form of the Uhlmann transition probability, and it is the unique metric on the ball that is monotone under stochastic maps and reduces to the Fubini–Study metric on the boundary. Two checks fix it. On the boundary $r\to1$, the radial term diverges while the angular term tends to $\tfrac14 d\Omega^2$, which is exactly the Fubini–Study metric, so the Bures metric restricts to the Fubini–Study metric on the pure states. At the center $r=0$, the angular term vanishes and the line element is $\tfrac14|d\mathbf{r}|^2$, which agrees with the biquaternion norm's flat contribution there.</p>
+<p><strong>Where the two part company.</strong> The Bures metric and the biquaternion norm's flat metric agree at the center and agree (on tangential directions) on the boundary, but nowhere else in the interior. The difference is the radial term: Bures has $\tfrac14\,dr^2/(1-r^2)$, which blows up as the state approaches purity, while the biquaternion norm gives $\tfrac14\,dr^2$ there. The interpretation is the familiar one: the Bures/Fisher metric measures <em>distinguishability</em>, and two nearly pure states that differ slightly in purity can be distinguished with high confidence from many copies, so the radial cost diverges at the boundary; the flat metric measures only the Euclidean separation of Bloch vectors and is blind to this. The algebra's biquaternion norm therefore gives the correct geometry on the pure states and the correct geometry at the maximally mixed state, but it does not give the interpolating metric, and it cannot, because the interpolation is fixed by a statistical criterion (monotonicity under noisy maps) that is not an algebraic relation of $\mathbb{B}$.</p>
+<p>It is worth recording the boundary of the claim. What the article derives from the algebra is: the transition probability from the trace pairing; the Fubini–Study metric from the biquaternion norm; their compatibility in the Kähler structure; and the uniqueness of the boundary metric up to a scale fixed by the trace. What it imports from standard quantum information is the Bures/Fisher metric of the interior, and it does so because the algebra supplies no interior metric other than the flat one, and the flat one is not the statistically distinguished one. This division is exactly the one the framework's own discipline requires: the algebra is credited with what it determines, and the standard theory with what it does not.</p>
 <h2 id="what-the-geometry-is-and-what-it-is-not">What the Geometry Is and What It Is Not</h2>
 <p>Five statements summarize the result, and two of them are limitations that a reader should not blur.</p>
 <ol>
 <li>
-<p><strong>The Fubini–Study metric is the second variation of the norm form on the null boundary.</strong> This is the central identity: the norm form vanishes on the pure states, and its negative on tangential displacements is the line element, $ds^2_{\mathrm{FS}}=-N(\delta\tilde{P})$. The norm form is therefore not idle on the state space even though it vanishes on the pure states; it is the metric generator.</p>
+<p><strong>The Fubini–Study metric is the second variation of the biquaternion norm on the null boundary.</strong> This is the central identity: the biquaternion norm vanishes on the pure states, and its negative on tangential displacements is the line element, $ds^2_{\mathrm{FS}}=-N(\delta\tilde{P})$. The biquaternion norm is therefore not idle on the state space even though it vanishes on the pure states; it is the metric generator.</p>
 </li>
 <li>
-<p><strong>The trace pairing supplies the probability, not the distance.</strong> The transition probability $\mathrm{Tr}(\tilde{P}\tilde{Q})$ is the trace pairing's two-point function, and the Fubini–Study distance is its arccosine-square-root. The two forms divide the geometry between them: the trace pairing gives the overlap, the norm form gives the length, and the Kähler structure relates them.</p>
+<p><strong>The trace pairing supplies the probability, not the distance.</strong> The transition probability $\mathrm{Tr}(\tilde{P}\tilde{Q})$ is the trace pairing's two-point function, and the Fubini–Study distance is its arccosine-square-root. The two forms divide the geometry between them: the trace pairing gives the overlap, the biquaternion norm gives the length, and the Kähler structure relates them.</p>
 </li>
 <li>
 <p><strong>The geometry is that of the state <em>module</em>, descended to the state space.</strong> The complex structure, the Hopf fibration and the projective line belong to the module $\mathbb{B}p\cong\mathbb{C}^2$; the metric descends to the boundary of $\mathbb{M}_+$ through the bilinear map $\psi\mapsto\psi\psi^\dagger$. The complex structure does <strong>not</strong> live on $\mathbb{M}_+$, where multiplication by $i$ exchanges the two sectors; treating $\mathbb{M}_+$ itself as a complex vector space is the characteristic error that this separation avoids.</p>
@@ -332,12 +332,12 @@ This is a standard result, not an algebraic one: it is the infinitesimal form of
 </li>
 </ol>
 <h2 id="summary">Summary</h2>
-<p>The state space of the biquaternion framework is the trace-one slice of the future cone of the norm form, and its geometry is determined by the framework's two forms. The trace pairing fixes the transition probability of two pure states, $\mathrm{Tr}(\tilde{P}(\hat{\mu})\tilde{P}(\hat{\nu}))=\cos^2(\theta/2)$. The norm form, though it vanishes on the pure states, fixes the metric through its second variation there, and the resulting line element is the Fubini–Study metric,</p>
+<p>The state space of the biquaternion framework is the trace-one slice of the future cone of the biquaternion norm, and its geometry is determined by the framework's two forms. The trace pairing fixes the transition probability of two pure states, $\mathrm{Tr}(\tilde{P}(\hat{\mu})\tilde{P}(\hat{\nu}))=\cos^2(\theta/2)$. The biquaternion norm, though it vanishes on the pure states, fixes the metric through its second variation there, and the resulting line element is the Fubini–Study metric,</p>
 <p>$$
 ds^2_{\mathrm{FS}}=-N(\delta\tilde{P})\Big|_{\text{tangential}}=\tfrac14\left(d\theta^2+\sin^2\theta\,d\varphi^2\right),
 $$</p>
 <p>one quarter of the round metric of the Bloch sphere. The factor $\tfrac14$ is the square of the double-cover ratio $SU(2)\to SO(3)$. The metric is Kähler, with complex structure $J(v)=\hat{\mu}\times v$ supplied by the algebra commutator and symplectic form $\omega=-\tfrac12 i\,\mathrm{Tr}(\tilde{P}[\delta_1\tilde{P},\delta_2\tilde{P}])=\tfrac14\mu\cdot(\delta_1\mu\times\delta_2\mu)$; the Kähler potential is $\log(1+|w|^2)$ in the stereographic coordinate. The geodesic distance is $d_{\mathrm{FS}}=\theta/2=\arccos\lvert\langle\psi|\phi\rangle\rvert$, so that the transition probability is $\cos^2 d_{\mathrm{FS}}$ and the trace distance of the companion article <em>Exercise: The Bloch Ball and the Geometry of Mixed States</em> is $\sin d_{\mathrm{FS}}$.</p>
-<p>The interior of the ball carries the standard Bures metric, whose boundary restriction is the Fubini–Study metric and whose value at the maximally mixed state agrees with the flat metric $-N(\delta\tilde{\rho})=\tfrac14|d\mathbf{r}|^2$ that the norm form supplies everywhere. The norm form therefore gives the pure-state geometry exactly, and the flat geometry everywhere, but not the interpolating mixed-state metric; that interpolation is a standard statistical import, and the article says so rather than claiming it. What the algebra determines — the probability, the metric on the boundary, the Kähler structure, and the boundary metric's uniqueness up to a trace-fixed scale — it determines completely; what it does not determine it leaves named.</p>
+<p>The interior of the ball carries the standard Bures metric, whose boundary restriction is the Fubini–Study metric and whose value at the maximally mixed state agrees with the flat metric $-N(\delta\tilde{\rho})=\tfrac14|d\mathbf{r}|^2$ that the biquaternion norm supplies everywhere. The biquaternion norm therefore gives the pure-state geometry exactly, and the flat geometry everywhere, but not the interpolating mixed-state metric; that interpolation is a standard statistical import, and the article says so rather than claiming it. What the algebra determines — the probability, the metric on the boundary, the Kähler structure, and the boundary metric's uniqueness up to a trace-fixed scale — it determines completely; what it does not determine it leaves named.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -377,7 +377,7 @@ $$</p>
 </tr>
 <tr>
 <td>$N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}$</td>
-<td>Norm form</td>
+<td>Biquaternion norm</td>
 </tr>
 <tr>
 <td>$\tilde{\rho}=\tfrac12(e_0+i\mathbf{r})$</td>

@@ -55,9 +55,9 @@
 <p>The equations of relativistic mechanics — the four-position, the invariant interval, the four-velocity, the four-momentum, the mass-shell relation, the four-force, the action, the conserved current, and the relativistic wave equations — are usually written in the language of four-vectors and Minkowski tensors. This article expresses them in the biquaternion algebra $\mathbb{B} = \mathbb{C} \otimes_\mathbb{R} \mathbb{H}$, using the $ict$ convention in which the complex time coordinate absorbs the minus sign of the Minkowski metric.</p>
 <p>The purpose is not to derive new physics. The purpose is to rewrite the established equations of relativistic mechanics in the biquaternion language, so that the algebraic structure of the theory is manifest. The biquaternion formulation makes the following structural facts explicit:</p>
 <ul>
-<li>The invariant interval is the <strong>norm form of the displacement biquaternion</strong>.</li>
+<li>The invariant interval is the <strong>biquaternion norm of the displacement biquaternion</strong>.</li>
 <li>The four-velocity and four-momentum are <strong>biquaternions of the anti-Hermitian subspace</strong> $\mathbb{M}_-$.</li>
-<li>The mass-shell relation is the statement that the <strong>norm form</strong> of the four-momentum is a fixed negative constant.</li>
+<li>The mass-shell relation is the statement that the <strong>biquaternion norm</strong> of the four-momentum is a fixed negative constant.</li>
 <li>The conserved current is characterized by the <strong>scalar part of the quaternion-conjugate gradient</strong> vanishing.</li>
 </ul>
 <p>These identities are algebraic, not physical. They are the reason the biquaternion algebra is the natural home of relativistic mechanics.</p>
@@ -73,12 +73,12 @@ $$</p>
 $$</p>
 <p>The four-position biquaternion lives in the <strong>anti-Hermitian subspace</strong> $\mathbb{M}_-$ (imaginary scalar part, real vector part), matching the structure of the four-vector $x^\mu = (ict, \mathbf{x})$ in the $ict$ convention.</p>
 <h2 id="the-invariant-interval">The Invariant Interval</h2>
-<p>The <strong>invariant interval</strong> between two nearby events in spacetime is the <strong>norm form</strong> of the displacement biquaternion $d\tilde{Q} \in \mathbb{M}_-$:</p>
+<p>The <strong>invariant interval</strong> between two nearby events in spacetime is the <strong>biquaternion norm</strong> of the displacement biquaternion $d\tilde{Q} \in \mathbb{M}_-$:</p>
 <p>$$
 ds^2 = d\tilde{Q}\,\overline{d\tilde{Q}} = (ic\,dt)^2 + dx^2 + dy^2 + dz^2 = -c^2\,dt^2 + d\mathbf{x}^2.
 $$</p>
 <p>Here $\overline{d\tilde{Q}} = ic\,dt\,e_0 - d\mathbf{x}$ is the quaternion conjugate of the displacement. This is the biquaternion form of the Minkowski interval. The minus sign in the time–time component arises algebraically from $i^2 = -1$, not from an independently postulated metric signature.</p>
-<p><strong>The norm form on $\mathbb{M}_-$.</strong> For a general element of the anti-Hermitian subspace, $\tilde{Q} = Q_0 e_0 + \mathbf{Q}$ with $Q_0 = i q'_0$ imaginary and $\mathbf{Q} = q_1 e_1 + q_2 e_2 + q_3 e_3$ real, the norm form is</p>
+<p><strong>The biquaternion norm on $\mathbb{M}_-$.</strong> For a general element of the anti-Hermitian subspace, $\tilde{Q} = Q_0 e_0 + \mathbf{Q}$ with $Q_0 = i q'_0$ imaginary and $\mathbf{Q} = q_1 e_1 + q_2 e_2 + q_3 e_3$ real, the biquaternion norm is</p>
 <p>$$
 \tilde{Q}\bar{\tilde{Q}} = Q_0^2 + |\mathbf{Q}|^2 = -(q'_0)^2 + q_1^2 + q_2^2 + q_3^2,
 $$</p>
@@ -121,7 +121,7 @@ $$</p>
 <p>$$
 E^2 = \mathbf{p}^2 c^2 + m^2 c^4.
 $$</p>
-<p>The mass-shell relation is the <strong>constraint that defines the physical four-momenta</strong>. In the biquaternion language, it is the statement that the <strong>norm form of the four-momentum is a fixed negative constant</strong>, determined by the rest mass and the speed of light. Particles of different masses lie on different shells (different values of $\tilde{P}\bar{\tilde{P}}$); massless particles lie on the <strong>null shell</strong> $\tilde{P}\bar{\tilde{P}} = 0$, corresponding to the light cone.</p>
+<p>The mass-shell relation is the <strong>constraint that defines the physical four-momenta</strong>. In the biquaternion language, it is the statement that the <strong>biquaternion norm of the four-momentum is a fixed negative constant</strong>, determined by the rest mass and the speed of light. Particles of different masses lie on different shells (different values of $\tilde{P}\bar{\tilde{P}}$); massless particles lie on the <strong>null shell</strong> $\tilde{P}\bar{\tilde{P}} = 0$, corresponding to the light cone.</p>
 <h2 id="the-four-force">The Four-Force</h2>
 <p>The <strong>four-force biquaternion</strong> is the proper-time derivative of the four-momentum:</p>
 <p>$$
@@ -148,7 +148,7 @@ $$</p>
 <p>$$
 S = -mc^2\int\frac{dt}{\gamma} = -mc^2\int\sqrt{1 - \mathbf{v}^2/c^2}\,dt,
 $$</p>
-<p>which is the standard relativistic action. The biquaternion form makes the <strong>invariant character</strong> of the action manifest: the integrand is built from the norm form of the displacement biquaternion, which is a Lorentz scalar.</p>
+<p>which is the standard relativistic action. The biquaternion form makes the <strong>invariant character</strong> of the action manifest: the integrand is built from the biquaternion norm of the displacement biquaternion, which is a Lorentz scalar.</p>
 <h2 id="the-conserved-current">The Conserved Current</h2>
 <p>The <strong>four-current biquaternion</strong> is</p>
 <p>$$
@@ -251,7 +251,7 @@ $$</p>
 </table></div>
 <h2 id="structural-observations">Structural Observations</h2>
 <p><strong>The four-vectors live in $\mathbb{M}_-$.</strong> The four-position, four-velocity, four-momentum, four-force, four-potential, and four-current all lie in the anti-Hermitian subspace $\mathbb{M}_-$ (imaginary scalar part, real vector part). This subspace is the biquaternion image of the Minkowski four-vector space, and it is closed under the natural Lorentz-covariant operations (addition, scalar multiplication by real numbers, and rotor conjugation).</p>
-<p><strong>The mass-shell relation is a norm condition.</strong> The statement $\tilde{P}\bar{\tilde{P}} = -m^2 c^2$ is the statement that the <strong>norm form</strong> of the four-momentum is a fixed negative constant. Massless particles satisfy $\tilde{P}\bar{\tilde{P}} = 0$, which is the condition that the four-momentum lies on the <strong>zero divisor cone</strong> of the algebra (see the companion article on biquaternion zero divisors). So the light cone of Minkowski space is, in the biquaternion language, the <strong>zero divisor set</strong> of the algebra.</p>
+<p><strong>The mass-shell relation is a norm condition.</strong> The statement $\tilde{P}\bar{\tilde{P}} = -m^2 c^2$ is the statement that the <strong>biquaternion norm</strong> of the four-momentum is a fixed negative constant. Massless particles satisfy $\tilde{P}\bar{\tilde{P}} = 0$, which is the condition that the four-momentum lies on the <strong>zero divisor cone</strong> of the algebra (see the companion article on biquaternion zero divisors). So the light cone of Minkowski space is, in the biquaternion language, the <strong>zero divisor set</strong> of the algebra.</p>
 <p><strong>The conserved current is a scalar projection of the biquaternion conservation law.</strong> The continuity equation is the scalar part of $\bar{\tilde{\nabla}}\tilde{J} = 0$. The full biquaternion equation is stronger, and the vector part of $\bar{\tilde{\nabla}}\tilde{J}$ does not have an independent physical interpretation as a conservation law.</p>
 <p><strong>The wave equations are factorization.</strong> The Klein–Gordon and Dirac equations are related by the factorization $\tilde{\nabla}\bar{\tilde{\nabla}} = \Box$. The Dirac equation is the <strong>first-order factor</strong> of the Klein–Gordon equation, and the mass term is the term that distinguishes the massive case from the massless one. This factorization is the biquaternion form of the standard Dirac factorization of the Klein–Gordon operator.</p>
 <h2 id="open-questions">Open Questions</h2>
@@ -279,9 +279,9 @@ $$</p>
 <h2 id="summary">Summary</h2>
 <p>The ten basic formulas of relativistic mechanics — four-position, invariant interval, four-velocity, four-momentum, mass-shell relation, four-force, action, current, Klein–Gordon, and Dirac — can all be expressed in the biquaternion algebra $\mathbb{B}$ using the $ict$ convention. The biquaternion formulation makes the following structural facts explicit:</p>
 <ul>
-<li>The invariant interval is the norm form of the four-position displacement biquaternion.</li>
+<li>The invariant interval is the biquaternion norm of the four-position displacement biquaternion.</li>
 <li>The four-velocity, four-momentum, four-force, four-potential, and four-current lie in the anti-Hermitian subspace $\mathbb{M}_-$.</li>
-<li>The mass-shell relation is the norm-form condition $\tilde{P}\bar{\tilde{P}} = -m^2 c^2$.</li>
+<li>The mass-shell relation is the biquaternion-norm condition $\tilde{P}\bar{\tilde{P}} = -m^2 c^2$.</li>
 <li>The light cone is the zero divisor set of the algebra.</li>
 <li>The conserved current is characterized by the scalar part of the quaternion-conjugate gradient vanishing.</li>
 <li>The wave equations are the factorization of the d'Alembertian.</li>
@@ -342,7 +342,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\tilde{Q}\bar{\tilde{Q}}$</td>
-<td>Norm form (scalar quadratic form)</td>
+<td>Biquaternion norm (scalar quadratic form)</td>
 </tr>
 <tr>
 <td>$\tilde{\nabla} = e_0\partial_{ict} + \sum_k e_k\partial_k$</td>

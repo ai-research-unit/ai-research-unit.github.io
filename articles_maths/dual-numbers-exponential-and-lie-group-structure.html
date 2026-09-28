@@ -52,12 +52,12 @@
       <div class="article-body">
         <h1 id="dual-numbers-exponential-and-lie-group-structure"><strong>Dual-Numbers Exponential and Lie Group Structure</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>This article develops the Lie theory of the dual-number algebra: the Lie algebra structure on $\mathbb{D}'$ itself, the exponential map, the group of units as a Lie group, the parabolic one-parameter subgroup, and the quotient of the unit group by the scalars. It follows <em>Dual-Numbers Algebra</em> for the algebra and its abelian Lie bracket, <em>Dual-Numbers Norm and Invertibility</em> for the unit group, <em>Dual-Numbers Automorphisms and Derivations</em> for the derivation algebra, and <em>Shears and Parabolic Rotations</em> for the shear. The structural model is <em>Biquaternion Lie Algebra and Lie Group Structure</em>, where the unit group is $GL_2(\mathbb{C})$; here it is the much smaller group $\mathbb{R}^\times \times \mathbb{R}$.</p>
+<p>This article develops the Lie theory of the dual-number algebra: the Lie algebra structure on $\mathbb{D}'$ itself, the exponential map, the group of units as a Lie group, the parabolic one-parameter subgroup, and the quotient of the unit group by the scalars. It follows <em>Dual-Numbers Algebra</em> for the algebra and its abelian Lie bracket, <em>Dual-Numbers Norm and Invertibility</em> for the unit group, <em>Dual-Numbers Automorphisms and Derivations</em> for the derivation algebra, and <em>Shears and Parabolic Rotations</em> for the shear. The structural model is <em>Biquaternion Lie Group and Exponential Structure</em>, where the unit group is $GL_2(\mathbb{C})$; here it is the much smaller group $\mathbb{R}^\times \times \mathbb{R}$.</p>
 <p>The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. Throughout, $R$ is a commutative ring with identity in which $2$ is invertible; the exponential is a formal series when $R$ is a commutative $\mathbb{Q}$-algebra and an analytic series over the geometric specialisation $R = \mathbb{R}$, and then the algebra is written $\mathbb{D}'$. A general dual number is</p>
 <p>$$
 Z = a + \varepsilon b, \qquad a, b \in R,
 $$</p>
-<p>with $a = \operatorname{Re} Z$, $b = \operatorname{Inf} Z$, norm form $N(Z) = a^2$, maximal ideal $\mathfrak{m} = (\varepsilon) = \varepsilon R_{\mathbb{D}'}$, and unit group $(\mathbb{D}')^\times = \{a \neq 0\}$.</p>
+<p>with $a = \operatorname{Re} Z$, $b = \operatorname{Inf} Z$, norm $N(Z) = a^2$, maximal ideal $\mathrm{M} = (\varepsilon) = \varepsilon R_{\mathbb{D}'}$, and unit group $(\mathbb{D}')^\times = \{a \neq 0\}$.</p>
 <h2 id="the-lie-algebra-structure">The Lie Algebra Structure</h2>
 <h3 id="the-lie-bracket">The Lie Bracket</h3>
 <p><strong>Definition.</strong> The <strong>Lie bracket</strong> on $\mathbb{D}'_R$ is the commutator</p>
@@ -68,12 +68,12 @@ $$</p>
 <p>$$
 [Z, W] = 0 \qquad \text{for all } Z, W \in \mathbb{D}'_R.
 $$</p>
-<p>Hence the Lie algebra $\mathfrak{g} = \mathbb{D}'_R$ is <strong>abelian</strong>.</p>
-<p><strong>Proof.</strong> $ZW = WZ$ for all $Z, W$ because multiplication of dual numbers is commutative. $\square$</p>
+<p>Hence the Lie algebra $\mathrm{G} = \mathbb{D}'_R$ is <strong>abelian</strong>.</p>
+<p><strong>Proof.</strong> $ZW = WZ$ for all $Z, W$ because multiplication of dual numbers is commutative.</p>
 <h3 id="nilpotence">Nilpotence</h3>
-<p><strong>Definition.</strong> A Lie algebra $\mathfrak{g}$ is <strong>nilpotent of class $c$</strong> if the descending central series $\mathfrak{g}^1 = \mathfrak{g}$, $\mathfrak{g}^{k+1} = [\mathfrak{g}, \mathfrak{g}^k]$ reaches $0$ at step $c + 1$, and $\mathfrak{g}$ is <strong>abelian</strong> when $[\mathfrak{g}, \mathfrak{g}] = 0$.</p>
-<p><strong>Proposition.</strong> $\mathfrak{g} = \mathbb{D}'_R$ is a nilpotent Lie algebra of class $1$; equivalently, its derived subalgebra is zero, $[\mathfrak{g}, \mathfrak{g}] = 0$.</p>
-<p><strong>Proof.</strong> The derived subalgebra is spanned by brackets $[Z,W]$, all of which vanish; the series is $\mathfrak{g} \supset 0$. $\square$</p>
+<p><strong>Definition.</strong> A Lie algebra $\mathrm{G}$ is <strong>nilpotent of class $c$</strong> if the descending central series $\mathrm{G}^1 = \mathrm{G}$, $\mathrm{G}^{k+1} = [\mathrm{G}, \mathrm{G}^k]$ reaches $0$ at step $c + 1$, and $\mathrm{G}$ is <strong>abelian</strong> when $[\mathrm{G}, \mathrm{G}] = 0$.</p>
+<p><strong>Proposition.</strong> $\mathrm{G} = \mathbb{D}'_R$ is a nilpotent Lie algebra of class $1$; equivalently, its derived subalgebra is zero, $[\mathrm{G}, \mathrm{G}] = 0$.</p>
+<p><strong>Proof.</strong> The derived subalgebra is spanned by brackets $[Z,W]$, all of which vanish; the series is $\mathrm{G} \supset 0$.</p>
 <p>So the dual-number Lie algebra is the abelian two-dimensional real Lie algebra, the simplest nilpotent example. Its enveloping algebra is the polynomial algebra on two commuting generators, and its only Lie structure is the underlying vector space.</p>
 <h3 id="the-lie-algebra-of-a-commutative-associative-algebra">The Lie Algebra of a Commutative Associative Algebra</h3>
 <p><strong>Remark.</strong> For any associative algebra $A$ the commutator makes $A$ a Lie algebra, and the Jacobi identity is a consequence of associativity. When $A$ is commutative the bracket vanishes, so the Lie algebra records no more than the $R$-module structure. The interesting Lie theory of $\mathbb{D}'$ therefore lives not in $\mathbb{D}'$ itself but in its derivation algebra $\operatorname{Der}(\mathbb{D}') = \mathbb{R}\partial_\varepsilon$ and in the Lie group structure of the unit group, which are treated below.</p>
@@ -93,14 +93,17 @@ $$</p>
 <p>$$
 \exp(a + \varepsilon b) = \sum_{k \geq 0}\frac{a^k}{k!} + \varepsilon \sum_{k \geq 1}\frac{k a^{k-1}b}{k!} = e^{a} + \varepsilon\, b \sum_{k \geq 1}\frac{a^{k-1}}{(k-1)!} = e^{a} + e^{a}\varepsilon b,
 $$</p>
-<p>the two series being the exponential of $a$. $\square$</p>
+<p>the two series being the exponential of $a$.</p>
 <p><strong>Corollary.</strong> $\exp(\varepsilon) = 1 + \varepsilon$ and $\exp(s\varepsilon) = 1 + s\varepsilon$ for every $s$; the exponential of a purely infinitesimal element is a shear.</p>
+<h3 id="worked-values">Worked Values</h3>
+<p><strong>Example.</strong> $\exp(2 + 3\varepsilon) = e^{2}(1 + 3\varepsilon)$; numerically $e^{2} = 7.389056\ldots$, so the real part is $7.389056\ldots$ and the infinitesimal part is $3e^{2} = 22.167168\ldots$.</p>
+<p><strong>Example.</strong> The dual logarithm inverts the exponential on the shear group $1 + \mathrm{M}$, where it is $\log(1 + s\varepsilon) = s\varepsilon$; thus $\log(1 + 5\varepsilon) = 5\varepsilon$ and $\log(1 - \varepsilon) = -\varepsilon$.</p>
 <h3 id="the-group-homomorphism-property">The Group Homomorphism Property</h3>
 <p><strong>Theorem.</strong> The exponential is a homomorphism from the additive group $(\mathbb{D}'_R, +)$ to the multiplicative group $(\mathbb{D}'_R)^\times$:</p>
 <p>$$
 \exp(Z + W) = \exp(Z)\exp(W).
 $$</p>
-<p><strong>Proof.</strong> The exponential is the usual exponential of the commutative associative algebra $\mathbb{D}'_R$, and for commuting $Z, W$ the identity $\exp(Z+W) = \exp(Z)\exp(W)$ follows by the binomial theorem. Alternatively, $\exp(a + \varepsilon b)\exp(c + \varepsilon d) = e^a(1 + \varepsilon b)e^c(1 + \varepsilon d) = e^{a+c}(1 + (b+d)\varepsilon) = \exp((a+c) + (b+d)\varepsilon)$, matching $Z + W$. $\square$</p>
+<p><strong>Proof.</strong> The exponential is the usual exponential of the commutative associative algebra $\mathbb{D}'_R$, and for commuting $Z, W$ the identity $\exp(Z+W) = \exp(Z)\exp(W)$ follows by the binomial theorem. Alternatively, $\exp(a + \varepsilon b)\exp(c + \varepsilon d) = e^a(1 + \varepsilon b)e^c(1 + \varepsilon d) = e^{a+c}(1 + (b+d)\varepsilon) = \exp((a+c) + (b+d)\varepsilon)$, matching $Z + W$.</p>
 <p>So $\exp$ is a homomorphism of groups, and the image is a subgroup of the unit group.</p>
 <h2 id="the-group-of-units">The Group of Units</h2>
 <h3 id="the-lie-group">The Lie Group</h3>
@@ -113,45 +116,45 @@ $$</p>
 (\mathbb{D}')^\times \cong \mathbb{R}^\times \times (\mathbb{R}, +),
 $$</p>
 <p>the isomorphism being $a + \varepsilon b \leftrightarrow (a,\, b/a)$.</p>
-<p><strong>Proof.</strong> The group axioms and the inverse formula are from <em>Dual-Numbers Norm and Invertibility</em>; the isomorphism is the direct-product decomposition of <em>Shears and Parabolic Rotations</em>, where the second factor is the shear group $1 + \mathfrak{m}$. $\square$</p>
+<p><strong>Proof.</strong> The group axioms and the inverse formula are from <em>Dual-Numbers Norm and Invertibility</em>; the isomorphism is the direct-product decomposition of <em>Shears and Parabolic Rotations</em>, where the second factor is the shear group $1 + \mathrm{M}$.</p>
 <h3 id="connected-components">Connected Components</h3>
 <p><strong>Proposition.</strong> Over $R = \mathbb{R}$ the unit group has exactly two connected components, $\{a > 0\}$ and $\{a < 0\}$, each contractible; the identity component is</p>
 <p>$$
 (\mathbb{D}')^\times_0 = \{a > 0\} \cong \mathbb{R}_{>0} \times \mathbb{R}.
 $$</p>
-<p><strong>Proof.</strong> The sign of $a$ is a continuous surjective homomorphism $(\mathbb{D}')^\times \to \{\pm 1\}$; the two fibres are half-planes, hence connected and contractible. $\square$</p>
+<p><strong>Proof.</strong> The sign of $a$ is a continuous surjective homomorphism $(\mathbb{D}')^\times \to \{\pm 1\}$; the two fibres are half-planes, hence connected and contractible.</p>
 <h3 id="surjectivity-of-the-exponential-onto-the-identity-component">Surjectivity of the Exponential onto the Identity Component</h3>
 <p><strong>Theorem.</strong> Over $R = \mathbb{R}$ the exponential</p>
 <p>$$
-\exp : \mathfrak{g} = \mathbb{D}' \longrightarrow (\mathbb{D}')^\times
+\exp : \mathrm{G} = \mathbb{D}' \longrightarrow (\mathbb{D}')^\times
 $$</p>
 <p>is injective, with image exactly the identity component $(\mathbb{D}')^\times_0 = \{a > 0\}$. It is therefore a bijection, and in fact a diffeomorphism, onto the identity component.</p>
-<p><strong>Proof.</strong> $\exp(a + \varepsilon b) = e^{a}(1 + \varepsilon b)$ has real part $e^{a} > 0$, so the image is contained in $\{a > 0\}$. Conversely, for $c + \varepsilon d$ with $c > 0$ set $a = \log c$ and $b = d/c$; then $\exp(a + \varepsilon b) = c(1 + \varepsilon d/c) = c + \varepsilon d$, so the image is $\{a > 0\}$. For injectivity, $\exp(a + \varepsilon b) = 1$ forces $e^{a} = 1$, hence $a = 0$, and then $e^{a}b = b = 0$. The map is smooth with the explicit smooth inverse $c + \varepsilon d \mapsto \log c + (d/c)\varepsilon$ on $\{c > 0\}$, so it is a diffeomorphism. $\square$</p>
+<p><strong>Proof.</strong> $\exp(a + \varepsilon b) = e^{a}(1 + \varepsilon b)$ has real part $e^{a} > 0$, so the image is contained in $\{a > 0\}$. Conversely, for $c + \varepsilon d$ with $c > 0$ set $a = \log c$ and $b = d/c$; then $\exp(a + \varepsilon b) = c(1 + \varepsilon d/c) = c + \varepsilon d$, so the image is $\{a > 0\}$. For injectivity, $\exp(a + \varepsilon b) = 1$ forces $e^{a} = 1$, hence $a = 0$, and then $e^{a}b = b = 0$. The map is smooth with the explicit smooth inverse $c + \varepsilon d \mapsto \log c + (d/c)\varepsilon$ on $\{c > 0\}$, so it is a diffeomorphism.</p>
 <p><strong>Remark.</strong> The kernel of the exponential is trivial. This is the sharpest contrast with the complex and matrix cases, where the exponential has a nontrivial kernel: on $\mathbb{C}$ the kernel is $2\pi i\mathbb{Z}$, and on $GL_2(\mathbb{C})$ the exponential is surjective but not injective, with kernel the matrices having eigenvalues in $2\pi i\mathbb{Z}$. Here the exponential is a global diffeomorphism from the abelian Lie algebra onto the identity component, the maximal simply connected abelian case.</p>
 <h2 id="the-parabolic-one-parameter-subgroup">The Parabolic One-Parameter Subgroup</h2>
 <h3 id="definition">Definition</h3>
 <p><strong>Definition.</strong> The <strong>parabolic one-parameter subgroup</strong> of $(\mathbb{D}')^\times$ is</p>
 <p>$$
-G = \{1 + s\varepsilon : s \in \mathbb{R}\} = 1 + \mathfrak{m}.
+G = \{1 + s\varepsilon : s \in \mathbb{R}\} = 1 + \mathrm{M}.
 $$</p>
 <h3 id="identification-with-the-additive-line">Identification with the Additive Line</h3>
 <p><strong>Theorem.</strong> The maps</p>
 <p>$$
-(\mathbb{R}, +) \longrightarrow G, \qquad s \longmapsto 1 + s\varepsilon, \qquad G \longrightarrow \mathfrak{m}, \qquad 1 + s\varepsilon \longmapsto s\varepsilon
+(\mathbb{R}, +) \longrightarrow G, \qquad s \longmapsto 1 + s\varepsilon, \qquad G \longrightarrow \mathrm{M}, \qquad 1 + s\varepsilon \longmapsto s\varepsilon
 $$</p>
-<p>are inverse isomorphisms of groups, where $\mathfrak{m}$ carries the additive group structure. In particular $G \cong (\mathbb{R},+)$ is a connected, simply connected, one-dimensional abelian Lie group, and it is exactly the image of the exponential of the maximal ideal, $G = \exp(\mathfrak{m})$.</p>
-<p><strong>Proof.</strong> $(1 + s\varepsilon)(1 + t\varepsilon) = 1 + (s+t)\varepsilon$ because $\varepsilon^2 = 0$, so the first map is a homomorphism; it is bijective with the displayed inverse; and $\exp(s\varepsilon) = 1 + s\varepsilon$, so $G = \exp(\mathfrak{m})$. $\square$</p>
+<p>are inverse isomorphisms of groups, where $\mathrm{M}$ carries the additive group structure. In particular $G \cong (\mathbb{R},+)$ is a connected, simply connected, one-dimensional abelian Lie group, and it is exactly the image of the exponential of the maximal ideal, $G = \exp(\mathrm{M})$.</p>
+<p><strong>Proof.</strong> $(1 + s\varepsilon)(1 + t\varepsilon) = 1 + (s+t)\varepsilon$ because $\varepsilon^2 = 0$, so the first map is a homomorphism; it is bijective with the displayed inverse; and $\exp(s\varepsilon) = 1 + s\varepsilon$, so $G = \exp(\mathrm{M})$.</p>
 <h3 id="the-unipotent-character">The Unipotent Character</h3>
 <p><strong>Proposition.</strong> Every element of $G$ is <strong>unipotent</strong>: it differs from the identity by a nilpotent, $(1 + s\varepsilon) - 1 = s\varepsilon$ with $(s\varepsilon)^2 = 0$. The subgroup $G$ is the unique one-parameter subgroup of $(\mathbb{D}')^\times$ generated by a nilpotent element of the algebra, and it is the image of the algebra's own nilpotent direction.</p>
-<p><strong>Proof.</strong> $(1 + s\varepsilon) - 1 = s\varepsilon$ and $(s\varepsilon)^2 = s^2\varepsilon^2 = 0$, so the displacement from the identity is nilpotent of index two, which is the algebraic form of unipotence; in particular $1 + s\varepsilon$ has no eigenvalue different from $1$ as a linear map of the algebra. The generator is the nilpotent $\varepsilon$, whose exponential is polynomial. $\square$</p>
+<p><strong>Proof.</strong> $(1 + s\varepsilon) - 1 = s\varepsilon$ and $(s\varepsilon)^2 = s^2\varepsilon^2 = 0$, so the displacement from the identity is nilpotent of index two, which is the algebraic form of unipotence; in particular $1 + s\varepsilon$ has no eigenvalue different from $1$ as a linear map of the algebra. The generator is the nilpotent $\varepsilon$, whose exponential is polynomial.</p>
 <h2 id="the-group-of-units-modulo-scaling">The Group of Units Modulo Scaling</h2>
 <h3 id="the-quotient">The Quotient</h3>
 <p><strong>Theorem.</strong> The central scalars embed as $\mathbb{R}^\times \hookrightarrow (\mathbb{D}')^\times$, $a \mapsto a$, and</p>
 <p>$$
-(\mathbb{D}')^\times / \mathbb{R}^\times \;\cong\; 1 + \mathfrak{m} \;\cong\; (\mathbb{R}, +),
+(\mathbb{D}')^\times / \mathbb{R}^\times \;\cong\; 1 + \mathrm{M} \;\cong\; (\mathbb{R}, +),
 $$</p>
 <p>the isomorphism being the class of $a + \varepsilon b$ mapped to $1 + (b/a)\varepsilon$, equivalently to the parabolic angle $s = b/a$.</p>
-<p><strong>Proof.</strong> Every unit is $a(1 + \varepsilon b/a)$, and multiplying by the scalar $a$ is exactly the quotient by the subgroup $\mathbb{R}^\times$; two units have the same class exactly when their shear parameters agree. $\square$</p>
+<p><strong>Proof.</strong> Every unit is $a(1 + \varepsilon b/a)$, and multiplying by the scalar $a$ is exactly the quotient by the subgroup $\mathbb{R}^\times$; two units have the same class exactly when their shear parameters agree.</p>
 <p><strong>Corollary.</strong> The quotient is connected, contractible and one-dimensional; it is the space of shears, and it is the same object as the parabolic one-parameter subgroup $G$.</p>
 <h2 id="comparison-with-the-split-complex-and-biquaternion-cases">Comparison with the Split Complex and Biquaternion Cases</h2>
 <h3 id="the-split-complex-case">The Split Complex Case</h3>
@@ -159,9 +162,9 @@ $$</p>
 <p>$$
 \mathbb{D}^\times/\mathbb{R}^\times \cong \mathbb{R}^\times,
 $$</p>
-<p>obtained by the ratio of the two idempotent components, and it has two components—unlike the connected quotient $(\mathbb{D}')^\times/\mathbb{R}^\times \cong \mathbb{R}$. The difference is the degeneracy of the norm form: the split complex form has two independent directions, so the quotient retains a hyperbola-like two-component structure, while the dual form has one, so the quotient collapses to a line.</p>
+<p>obtained by the ratio of the two idempotent components, and it has two components—unlike the connected quotient $(\mathbb{D}')^\times/\mathbb{R}^\times \cong \mathbb{R}$. The difference is the degeneracy of the norm: the split complex form has two independent directions, so the quotient retains a hyperbola-like two-component structure, while the dual form has one, so the quotient collapses to a line.</p>
 <h3 id="the-biquaternion-case">The Biquaternion Case</h3>
-<p>For the biquaternion algebra $\mathbb{B} \cong M_2(\mathbb{C})$ the unit group is $GL_2(\mathbb{C})$, of real dimension eight, connected. The exponential of $\mathfrak{gl}(2,\mathbb{C})$ is surjective onto $GL_2(\mathbb{C})$ but not injective, with kernel the matrices whose eigenvalue differences lie in $2\pi i\mathbb{Z}$; the exponential is not a diffeomorphism, and there is no global logarithm. The quotient by the scalars is</p>
+<p>For the biquaternion algebra $\mathbb{B} \cong M_2(\mathbb{C})$ the unit group is $GL_2(\mathbb{C})$, of real dimension eight, connected. The exponential of $\mathrm{GL}(2,\mathbb{C})$ is surjective onto $GL_2(\mathbb{C})$ but not injective, with kernel the matrices whose eigenvalue differences lie in $2\pi i\mathbb{Z}$; the exponential is not a diffeomorphism, and there is no global logarithm. The quotient by the scalars is</p>
 <p>$$
 GL_2(\mathbb{C})/\mathbb{C}^\times = PGL(2,\mathbb{C}) = PSL(2,\mathbb{C}),
 $$</p>
@@ -181,7 +184,7 @@ $$</p>
 <td>Lie algebra</td>
 <td>$\mathbb{R}^2$, abelian</td>
 <td>$\mathbb{R}^2$, abelian</td>
-<td>$\mathfrak{gl}(2,\mathbb{C})$</td>
+<td>$\mathrm{GL}(2,\mathbb{C})$</td>
 </tr>
 <tr>
 <td>Unit group</td>
@@ -211,7 +214,7 @@ $$</p>
 </table></div>
 <p>The dual row is the two-dimensional row with the collapse of the quotient: the parabolic case replaces the hyperbolic two-component quotient of the split complex numbers by a single contractible line, while sharing with it the property that the exponential is a global diffeomorphism.</p>
 <h2 id="summary">Summary</h2>
-<p>The dual-number algebra $\mathbb{D}'$ is an abelian two-dimensional real Lie algebra, nilpotent of class one, with vanishing bracket. The exponential has the closed form $\exp(a + \varepsilon b) = e^{a}(1 + \varepsilon b)$ and is a group homomorphism from $(\mathbb{D}',+)$ to the unit group. The unit group is $(\mathbb{D}')^\times \cong \mathbb{R}^\times \times \mathbb{R}$: a two-dimensional abelian Lie group with two contractible components, and the exponential is a diffeomorphism from the Lie algebra onto the identity component $\{a > 0\}$, with trivial kernel. The parabolic one-parameter subgroup $G = 1 + \mathfrak{m} = \{1 + s\varepsilon\}$ is isomorphic to the additive line $(\mathbb{R},+)$, is the image of the exponential of the maximal ideal, and consists of unipotent elements; the quotient of the unit group by the central scalars is $(\mathbb{D}')^\times/\mathbb{R}^\times \cong 1 + \mathfrak{m} \cong \mathbb{R}$. The comparison with the split complex case shows the same exponential behaviour but a two-component quotient $\mathbb{R}^\times$; the comparison with the biquaternion case shows a connected unit group $GL_2(\mathbb{C})$ on which the exponential is surjective but not injective.</p>
+<p>The dual-number algebra $\mathbb{D}'$ is an abelian two-dimensional real Lie algebra, nilpotent of class one, with vanishing bracket. The exponential has the closed form $\exp(a + \varepsilon b) = e^{a}(1 + \varepsilon b)$ and is a group homomorphism from $(\mathbb{D}',+)$ to the unit group. The unit group is $(\mathbb{D}')^\times \cong \mathbb{R}^\times \times \mathbb{R}$: a two-dimensional abelian Lie group with two contractible components, and the exponential is a diffeomorphism from the Lie algebra onto the identity component $\{a > 0\}$, with trivial kernel. The parabolic one-parameter subgroup $G = 1 + \mathrm{M} = \{1 + s\varepsilon\}$ is isomorphic to the additive line $(\mathbb{R},+)$, is the image of the exponential of the maximal ideal, and consists of unipotent elements; the quotient of the unit group by the central scalars is $(\mathbb{D}')^\times/\mathbb{R}^\times \cong 1 + \mathrm{M} \cong \mathbb{R}$. The comparison with the split complex case shows the same exponential behaviour but a two-component quotient $\mathbb{R}^\times$; the comparison with the biquaternion case shows a connected unit group $GL_2(\mathbb{C})$ on which the exponential is surjective but not injective.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -246,11 +249,11 @@ $$</p>
 <td>Lie bracket, identically zero</td>
 </tr>
 <tr>
-<td>$\mathfrak{g} = \mathbb{D}'$</td>
+<td>$\mathrm{G} = \mathbb{D}'$</td>
 <td>Abelian Lie algebra of the dual numbers</td>
 </tr>
 <tr>
-<td>$\mathfrak{m} = (\varepsilon)$</td>
+<td>$\mathrm{M} = (\varepsilon)$</td>
 <td>Maximal ideal, the nilpotent direction</td>
 </tr>
 <tr>
@@ -262,7 +265,7 @@ $$</p>
 <td>Group of units</td>
 </tr>
 <tr>
-<td>$G = 1 + \mathfrak{m}$</td>
+<td>$G = 1 + \mathrm{M}$</td>
 <td>Parabolic one-parameter subgroup $\cong (\mathbb{R},+)$</td>
 </tr>
 <tr>

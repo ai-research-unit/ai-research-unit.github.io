@@ -89,7 +89,7 @@ U_\mu(n)\in SU(2)=\{Q\in\mathbb{H}_{\mathbb{B}}:Q\bar Q=e_0\},
 \qquad
 \mathbb{H}_{\mathbb{B}}=\mathrm{span}_\mathbb{R}\{e_0,e_1,e_2,e_3\},
 $$
-the set of unit real quaternions — the coefficients of $e_0,e_1,e_2,e_3$ are real, so that $\bar Q=Q^\dagger=Q^{-1}$ and the quaternion conjugate, the Hermitian conjugate and the inverse coincide; it is a three-sphere embedded in the algebra, and it is the group that exponentiates the compact factor $\mathfrak{su}(2)$ in the Hermitian-generator realization fixed above. The link is the lattice approximation to the parallel transporter,
+the set of unit real quaternions — the coefficients of $e_0,e_1,e_2,e_3$ are real, so that $\bar Q=Q^\dagger=Q^{-1}$ and the quaternion conjugate, the Hermitian conjugate and the inverse coincide; it is a three-sphere embedded in the algebra, and it is the group that exponentiates the compact factor $\mathrm{SU}(2)$ in the Hermitian-generator realization fixed above. The link is the lattice approximation to the parallel transporter,
 $$
 U_\mu(n)=\exp\!\big(ia\kappa\mathcal{A}_\mu(n)\big)
 =\sum_{m=0}^{\infty}\frac{1}{m!}\big(ia\kappa\mathcal{A}_\mu(n)\big)^m ,
@@ -206,7 +206,7 @@ $$
 $$
 where $N=2$ for the framework's group and the $O(1)$ denotes the perimeter and tiling corrections. The special case $N=2$, in which the fundamental representation is real, replaces $2N^2$ by $N^2$ at leading order: the one-plaquette average is
 $$
-\frac{1}{2}\big\langle \mathrm{Tr}\,U_\square\big\rangle
+\frac{1}{2}\big\langle \mathrm{Tr}\,U_\big\rangle
 =\frac{I_2(\beta)}{I_1(\beta)}
 =\frac{\beta}{4}+O(\beta^3),
 $$
@@ -215,7 +215,7 @@ an identity that was checked numerically from the series of the modified Bessel 
 <h3 id="the-reading-of-confinement">The Reading of Confinement</h3>
 <p>The area law is an operator statement about a Wilson loop, and its interpretation — confinement as the loss of partonic information, the string tension as an information-theoretic quantity, the deconfinement transition as a change in the accessible information — belongs to the informational subcategory. The lattice article's result is the analytic input: the loop obeys an area law at strong coupling, on the unit-quaternion lattice, for the same action whose continuum limit is the Yang–Mills density.</p>
 <h3 id="the-two-regimes">The Two Regimes</h3>
-<p>The area law is established at strong coupling, and what happens at weak coupling is a separate question whose answer depends on the matter content. For the pure gauge theory — no dynamical fermions — the area law persists from strong coupling to the continuum limit: confinement is a property of the pure non-abelian gauge theory, and the string tension scales according to the renormalization group, $\sigma\propto\Lambda^2$, so that the ratio $\sigma a^2$ decreases as $\beta$ grows according to the same beta function that governs the coupling. For the theory coupled to dynamical fundamental matter, the area law is replaced at large loops by a <strong>perimeter law</strong>, $W(C)\sim e^{-\mu P}$, because the matter field screens the static charges: a virtual pair is created, the string breaks, and the potential flattens to a constant rather than growing linearly. In the framework's lattice, which as constructed has no matter, the first case is the relevant one: the pure $\mathfrak{su}(2)$ theory confines, and the area law is its confinement statement. The transition between the two behaviours, and the deconfinement transition at finite temperature, are the standard lattice results cited below.</p>
+<p>The area law is established at strong coupling, and what happens at weak coupling is a separate question whose answer depends on the matter content. For the pure gauge theory — no dynamical fermions — the area law persists from strong coupling to the continuum limit: confinement is a property of the pure non-abelian gauge theory, and the string tension scales according to the renormalization group, $\sigma\propto\Lambda^2$, so that the ratio $\sigma a^2$ decreases as $\beta$ grows according to the same beta function that governs the coupling. For the theory coupled to dynamical fundamental matter, the area law is replaced at large loops by a <strong>perimeter law</strong>, $W(C)\sim e^{-\mu P}$, because the matter field screens the static charges: a virtual pair is created, the string breaks, and the potential flattens to a constant rather than growing linearly. In the framework's lattice, which as constructed has no matter, the first case is the relevant one: the pure $\mathrm{SU}(2)$ theory confines, and the area law is its confinement statement. The transition between the two behaviours, and the deconfinement transition at finite temperature, are the standard lattice results cited below.</p>
 <h2 id="the-continuum-limit-and-the-running-coupling">The Continuum Limit and the Running Coupling</h2>
 <p>The continuum limit is $a\to0$ with the physical scale fixed. Because the lattice coupling is $\beta=2N/\kappa^2$ and $\beta\to\infty$, the limit is the weak-coupling limit of the lattice theory, and its existence requires that the lattice correlation length grow without bound in lattice units. The renormalization group supplies the relation: the dependence of the physical scale on $a$ is governed by the beta function,
 $$
@@ -223,7 +223,7 @@ $$
 \qquad
 b_0=\frac{11}{3}C_2(G)=\frac{11}{3}\cdot 2=\frac{22}{3}
 $$
-for the pure $\mathfrak{su}(2)$ theory, with the sign convention of the companion article <em>The Renormalization Group in Biquaternionic Form</em>. The coefficient is positive, so the coupling decreases as the scale increases (asymptotic freedom); conversely, at fixed lattice spacing the coupling grows at long distances, which is the regime in which the strong-coupling expansion applies. The two statements are the same running coupling read from opposite ends. In the continuum limit the lattice action reduces to the Yang–Mills action, the lattice path integral reduces to the gauge-field path integral, and the lattice provides the regulator whose removal is the renormalization.</p>
+for the pure $\mathrm{SU}(2)$ theory, with the sign convention of the companion article <em>The Renormalization Group in Biquaternionic Form</em>. The coefficient is positive, so the coupling decreases as the scale increases (asymptotic freedom); conversely, at fixed lattice spacing the coupling grows at long distances, which is the regime in which the strong-coupling expansion applies. The two statements are the same running coupling read from opposite ends. In the continuum limit the lattice action reduces to the Yang–Mills action, the lattice path integral reduces to the gauge-field path integral, and the lattice provides the regulator whose removal is the renormalization.</p>
 <p>Three remarks place the construction.</p>
 <ul>
 <li><strong>The lattice is a regulator, not a theory.</strong> Its correlation functions have a limit governed by the renormalization group, and in that limit the lattice spacing disappears; the physical predictions are those of the continuum theory.</li>
@@ -355,7 +355,7 @@ with the $N=2$ one-plaquette average beginning at $\beta/4$; this is confinement
 <td>Leading strong-coupling string tension</td>
 </tr>
 <tr>
-<td>$\tfrac12\langle\mathrm{Tr}U_\square\rangle=I_2(\beta)/I_1(\beta)=\beta/4+O(\beta^3)$</td>
+<td>$\tfrac12\langle\mathrm{Tr}U_\rangle=I_2(\beta)/I_1(\beta)=\beta/4+O(\beta^3)$</td>
 <td>$SU(2)$ one-plaquette average</td>
 </tr>
 <tr>

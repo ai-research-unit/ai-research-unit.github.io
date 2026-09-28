@@ -64,8 +64,8 @@ $$</p>
 \bar{\tilde{\rho}} = \sum_x p_x\,\tilde{\rho}_x ,
 $$</p>
 <p>and the Holevo bound is $I_{\mathrm{acc}}\leq\chi$.</p>
-<p>The biquaternion reading locates the ingredients algebraically. The average state is an element of $\mathbb{M}_+$; for a qubit its entropy is a function of its norm form, $S(\bar{\tilde{\rho}}) = H(N(\bar{\tilde{\rho}}))$, so the Holevo quantity of a pure-state ensemble is a single norm-form function. The measurement is a completely positive trace-preserving map carrying the state to a commutative subalgebra; the accessible information is what survives that map. The content of the Holevo bound is then the data-processing inequality: a measurement cannot increase the classical information available about the source. The framework reproduces the bound and exposes which algebraic invariant it is about; it does not change the number it gives.</p>
-<p>The article proceeds as follows. Ensembles and POVMs are set up on $\mathbb{M}_+$, and the accessible information is defined. The Holevo quantity is introduced and its basic properties are derived, including the qubit form in terms of the norm form. The Holevo bound is stated and its proof is sketched through the data-processing inequality, with the biquaternion reading of each step. Worked examples follow: orthogonal states, where the bound is saturated, and two non-orthogonal pure states, where it is not. A closing section separates what is algebraic from what is standard information theory.</p>
+<p>The biquaternion reading locates the ingredients algebraically. The average state is an element of $\mathbb{M}_+$; for a qubit its entropy is a function of its biquaternion norm, $S(\bar{\tilde{\rho}}) = H(N(\bar{\tilde{\rho}}))$, so the Holevo quantity of a pure-state ensemble is a single norm function. The measurement is a completely positive trace-preserving map carrying the state to a commutative subalgebra; the accessible information is what survives that map. The content of the Holevo bound is then the data-processing inequality: a measurement cannot increase the classical information available about the source. The framework reproduces the bound and exposes which algebraic invariant it is about; it does not change the number it gives.</p>
+<p>The article proceeds as follows. Ensembles and POVMs are set up on $\mathbb{M}_+$, and the accessible information is defined. The Holevo quantity is introduced and its basic properties are derived, including the qubit form in terms of the biquaternion norm. The Holevo bound is stated and its proof is sketched through the data-processing inequality, with the biquaternion reading of each step. Worked examples follow: orthogonal states, where the bound is saturated, and two non-orthogonal pure states, where it is not. A closing section separates what is algebraic from what is standard information theory.</p>
 <h2 id="ensembles-and-measurements-in-math9">Ensembles and Measurements in $\mathbb{M}_+$</h2>
 <h3 id="ensembles">Ensembles</h3>
 <p>An <strong>ensemble</strong> is a finite family of states with weights:</p>
@@ -79,12 +79,12 @@ $$</p>
 \bar{\tilde{\rho}} = \sum_x p_x\,\tilde{\rho}_x = \tfrac{1}{2}\bigl(e_0 + i\bar{\mathbf{r}}\bigr),
 \qquad \bar{\mathbf{r}} = \sum_x p_x\,\mathbf{r}_x ,
 $$</p>
-<p>which is again a state, since convexity preserves positivity and trace. The norm form of the average state is $\tfrac14(1-|\bar{\mathbf{r}}|^2)e_0$, a function of the mean Bloch vector. Its entropy is, for a qubit,</p>
+<p>which is again a state, since convexity preserves positivity and trace. The biquaternion norm of the average state is $\tfrac14(1-|\bar{\mathbf{r}}|^2)e_0$, a function of the mean Bloch vector. Its entropy is, for a qubit,</p>
 <p>$$
 S(\bar{\tilde{\rho}}) = h\!\left(\frac{1+|\bar{\mathbf{r}}|}{2}\right),
 \qquad h(p) = -p\log p-(1-p)\log(1-p),
 $$</p>
-<p>as follows from the spectrum $\tfrac12(1\pm|\bar{\mathbf{r}}|)$; the entropy is read from the norm form of the average state and from the norm forms of the individual states, $S(\tilde{\rho}_x) = h\!\left(\tfrac{1+|\mathbf{r}_x|}{2}\right)$.</p>
+<p>as follows from the spectrum $\tfrac12(1\pm|\bar{\mathbf{r}}|)$; the entropy is read from the biquaternion norm of the average state and from the biquaternion norms of the individual states, $S(\tilde{\rho}_x) = h\!\left(\tfrac{1+|\mathbf{r}_x|}{2}\right)$.</p>
 <h3 id="measurements-as-povms">Measurements as POVMs</h3>
 <p>A <strong>measurement</strong> with outcome label $y$ is a <strong>positive operator-valued measure</strong>: a family of Hermitian elements</p>
 <p>$$
@@ -115,7 +115,7 @@ $$</p>
 \chi = S(\bar{\tilde{\rho}}) = h\!\left(\frac{1+|\bar{\mathbf{r}}|}{2}\right)
 = H\bigl(N(\bar{\tilde{\rho}})\bigr),
 $$</p>
-<p>a function of the norm form of the average state alone. This is the case of greatest interest, because a source of pure states is what a preparation device most naturally produces and because the maximal accessible information is achieved with pure states.</p>
+<p>a function of the biquaternion norm of the average state alone. This is the case of greatest interest, because a source of pure states is what a preparation device most naturally produces and because the maximal accessible information is achieved with pure states.</p>
 <h3 id="the-entropy-of-the-classical-quantum-state">The entropy of the classical-quantum state</h3>
 <p>The Holevo quantity is the quantum mutual information of a state that records the source index classically. Introduce an orthonormal register $\{|x\rangle\}$ and form</p>
 <p>$$
@@ -167,7 +167,7 @@ $$</p>
 <p>Collecting the ingredients, the Holevo bound in the framework says:</p>
 <ul>
 <li>the <strong>ensemble</strong> is a convex decomposition of the average state in $\mathbb{M}_+$;</li>
-<li>the <strong>Holevo quantity</strong> is the concave functional $\chi = S(\bar{\tilde{\rho}}) - \sum_x p_x S(\tilde{\rho}_x)$ on that decomposition, which for pure-state ensembles is the norm-form function $H(N(\bar{\tilde{\rho}}))$;</li>
+<li>the <strong>Holevo quantity</strong> is the concave functional $\chi = S(\bar{\tilde{\rho}}) - \sum_x p_x S(\tilde{\rho}_x)$ on that decomposition, which for pure-state ensembles is the biquaternion-norm function $H(N(\bar{\tilde{\rho}}))$;</li>
 <li>the <strong>measurement</strong> is a channel from $\mathbb{M}_+$ onto a commutative subalgebra generated by idempotents;</li>
 <li>the <strong>bound</strong> is the monotonicity of the quantum mutual information under that channel.</li>
 </ul>
@@ -179,7 +179,7 @@ $$</p>
 p_0 = p_1 = \tfrac12, \qquad
 \tilde{\rho}_0 = \tilde{P}_+(\hat{e}_3), \qquad \tilde{\rho}_1 = \tilde{P}_-(\hat{e}_3) .
 $$</p>
-<p>The average state is $\bar{\tilde{\rho}} = \tfrac12 e_0$, with Bloch vector $\bar{\mathbf{r}} = 0$ and norm form $\tfrac14 e_0$, so</p>
+<p>The average state is $\bar{\tilde{\rho}} = \tfrac12 e_0$, with Bloch vector $\bar{\mathbf{r}} = 0$ and biquaternion norm $\tfrac14 e_0$, so</p>
 <p>$$
 \chi = S(\tfrac12 e_0) = \log 2 .
 $$</p>
@@ -189,7 +189,7 @@ $$</p>
 <p>$$
 c = \bigl|\langle \psi_0|\psi_1\rangle\bigr| \in [0,1] .
 $$</p>
-<p>The average state has Bloch vector of length $c$, so its norm form is $\tfrac14(1-c^2)e_0$ and</p>
+<p>The average state has Bloch vector of length $c$, so its biquaternion norm is $\tfrac14(1-c^2)e_0$ and</p>
 <p>$$
 \chi = S(\bar{\tilde{\rho}}) = h\!\left(\frac{1+c}{2}\right).
 $$</p>
@@ -239,12 +239,12 @@ $$</p>
 <p>$$
 \chi = \log 2 - h\!\left(\frac{1+r}{2}\right),
 $$</p>
-<p>which is smaller than $\log2$ for $r<1$, rises to the saturated value $\log2$ at $r=1$, where the members are pure and orthogonal, and vanishes at $r=0$, where both members are maximally mixed and the ensemble carries no information about the index at all. This shows the two contributions to $\chi$ explicitly: the norm form of the average state supplies the first term, and the norm forms of the members supply the subtracted second term.</p>
+<p>which is smaller than $\log2$ for $r<1$, rises to the saturated value $\log2$ at $r=1$, where the members are pure and orthogonal, and vanishes at $r=0$, where both members are maximally mixed and the ensemble carries no information about the index at all. This shows the two contributions to $\chi$ explicitly: the biquaternion norm of the average state supplies the first term, and the biquaternion norms of the members supply the subtracted second term.</p>
 <h2 id="what-is-algebraic-and-what-is-standard">What Is Algebraic and What Is Standard</h2>
 <p><strong>Algebraic, or made precise here.</strong></p>
 <ul>
 <li>The ensemble and the measurement are both families of positive elements of $\mathbb{M}_+$, paired by the trace formula; the outcome probabilities are the Born rule.</li>
-<li>The average state is an element of $\mathbb{M}_+$, and for a qubit its entropy is a function of its norm form, so the Holevo quantity of a pure-state ensemble is a norm-form function.</li>
+<li>The average state is an element of $\mathbb{M}_+$, and for a qubit its entropy is a function of its biquaternion norm, so the Holevo quantity of a pure-state ensemble is a biquaternion-norm function.</li>
 <li>The Holevo quantity is the quantum mutual information of the classical-quantum state, $I(X:Q)=\chi$; the measurement is a channel onto a commutative subalgebra, and the bound is data processing.</li>
 <li>The maximal Holevo quantity of a qubit is $\log2$, attained by an orthogonal pure-state ensemble of maximal entropy average.</li>
 </ul>
@@ -256,8 +256,8 @@ $$</p>
 <li>Nothing here depends on the interpretive hypothesis that $\mathbb{M}_+$ is a physical sector; the transcription is exact for the operator algebra of a qubit.</li>
 </ul>
 <h2 id="open-questions">Open Questions</h2>
-<p><strong>1. A norm-form inequality.</strong> The Holevo quantity of a pure-state ensemble is $H(N(\bar{\tilde{\rho}}))$, and the bound is $I_{\mathrm{acc}}\leq H(N(\bar{\tilde{\rho}}))$. Is there a direct algebraic proof of the bound for a qubit that uses only the norm form and the trace pairing, without passing through the general data-processing inequality?</p>
-<p><strong>2. Many-qubit ensembles.</strong> For $n$ qubits the average state lives in $\mathbb{M}_+^{\otimes n}$ and its entropy is no longer a function of a single norm form. What replaces the norm-form reading of $\chi$, and is there a tensor-product norm form that controls it?</p>
+<p><strong>1. A biquaternion-norm inequality.</strong> The Holevo quantity of a pure-state ensemble is $H(N(\bar{\tilde{\rho}}))$, and the bound is $I_{\mathrm{acc}}\leq H(N(\bar{\tilde{\rho}}))$. Is there a direct algebraic proof of the bound for a qubit that uses only the biquaternion norm and the trace pairing, without passing through the general data-processing inequality?</p>
+<p><strong>2. Many-qubit ensembles.</strong> For $n$ qubits the average state lives in $\mathbb{M}_+^{\otimes n}$ and its entropy is no longer a function of a single norm. What replaces the biquaternion-norm reading of $\chi$, and is there a tensor-product biquaternion norm that controls it?</p>
 <p><strong>3. The role of entanglement.</strong> The Holevo bound applies to an ensemble of <em>separable</em> states with no shared entanglement. With a shared entangled resource the accessible information can exceed the bound — this is the content of superdense coding — and the framework's algebraic account of that resource is a separate question.</p>
 <p><strong>4. Continuity and the infinite ensemble.</strong> The bounds and the saturation arguments assume a finite ensemble. The extension to continuous ensembles, and the algebraic meaning of the measure on $\mathbb{M}_+$, is open.</p>
 <p><strong>5. Empirical content.</strong> The Holevo form in the framework is the standard bound transcribed; it predicts nothing new.</p>
@@ -266,7 +266,7 @@ $$</p>
 <p>$$
 \chi(\mathcal{E}) = S(\bar{\tilde{\rho}}) - \sum_x p_x S(\tilde{\rho}_x),
 $$</p>
-<p>non-negative by concavity, equal to the quantum mutual information $I(X:Q)$ of the classical-quantum state, and equal for a pure-state ensemble to the entropy of the average state, which for a qubit is the norm-form function $H(N(\bar{\tilde{\rho}}))$. The <strong>Holevo bound</strong> is</p>
+<p>non-negative by concavity, equal to the quantum mutual information $I(X:Q)$ of the classical-quantum state, and equal for a pure-state ensemble to the entropy of the average state, which for a qubit is the biquaternion-norm function $H(N(\bar{\tilde{\rho}}))$. The <strong>Holevo bound</strong> is</p>
 <p>$$
 I_{\mathrm{acc}}(\mathcal{E}) \;\leq\; \chi(\mathcal{E}) \;\leq\; \log 2 ,
 $$</p>
@@ -322,11 +322,11 @@ $$</p>
 </tr>
 <tr>
 <td>$N(\bar{\tilde{\rho}}) = \tfrac14(1-|\bar{\mathbf{r}}|^2)e_0$</td>
-<td>Norm form of the average state</td>
+<td>Biquaternion norm of the average state</td>
 </tr>
 <tr>
 <td>$\chi = H(N(\bar{\tilde{\rho}}))$ (pure ensemble)</td>
-<td>Holevo quantity as a norm-form function</td>
+<td>Holevo quantity as a biquaternion-norm function</td>
 </tr>
 <tr>
 <td>$\rho_{XQ} = \sum_x p_x|x\rangle\langle x|\otimes\tilde{\rho}_x$</td>

@@ -60,7 +60,7 @@ $$</p>
 <p>and the dictionary is the explicit isomorphism. Because a Clifford algebra is non-commutative in exactly the way the quaternions are — the product of two generators is antisymmetric — the correspondence is not a loose analogy but a change of notation, and the whole difficulty of the dictionary lies in its <strong>signs</strong>. This article fixes one convention, states it once, and holds it; and every entry in its tables is verified by explicit multiplication in a concrete $4\times 4$ representation.</p>
 <p>The relation between the two algebras is not an equality of the full algebras. The Clifford algebra $\mathrm{Cl}_{1,3}$ has real dimension $16$, while the biquaternion algebra has real dimension $8$; $\mathbb{B}$ is the even part of $\mathrm{Cl}_{1,3}$, spanned by the identity, the six bivectors $\gamma^\mu\gamma^\nu$, and the pseudoscalar. The odd part — the vectors $\gamma^\mu$ and the trivectors — is not contained in $\mathbb{B}$. It is reached from the even part by multiplication by a fixed odd element, and the article gives that correspondence too, in the form of the odd generators written as $2\times 2$ matrices over $\mathbb{B}$.</p>
 <p>The notation is inherited unchanged from the read list: the biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$ and $e_1e_2 = e_3$, the scalar imaginary $i$, the complex subspace $\mathbb{C}_{\mathbb{B}}$, the real-quaternion subspace $\mathbb{H}_{\mathbb{B}}$, the two four-dimensional real subspaces $\mathbb{M}_+$ and $\mathbb{M}_-$, the biquaternionic gradient $\tilde{\nabla}$, and the trace formula $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$. Nothing here renames or rederives them.</p>
-<p>The article is organized as follows. The conventions — signature, metric, and the explicit representation of the gamma matrices — are fixed first, together with the distinction between the two real Clifford algebras of opposite metric sign. The isomorphism is then stated and verified. The dictionary of basis elements, of products, and of the four real subspaces follows. Separate sections treat the odd part, the chirality operator and its projectors, the norm form and conjugation, and the operator correspondence. Every table is accompanied by the check that establishes it.</p>
+<p>The article is organized as follows. The conventions — signature, metric, and the explicit representation of the gamma matrices — are fixed first, together with the distinction between the two real Clifford algebras of opposite metric sign. The isomorphism is then stated and verified. The dictionary of basis elements, of products, and of the four real subspaces follows. Separate sections treat the odd part, the chirality operator and its projectors, the biquaternion norm and conjugation, and the operator correspondence. Every table is accompanied by the check that establishes it.</p>
 <h2 id="conventions-signature-metric-and-the-two-real-clifford-algebras">Conventions: Signature, Metric, and the Two Real Clifford Algebras</h2>
 <h3 id="the-biquaternion-side">The biquaternion side</h3>
 <p>The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$. Its $\mathbb{C}$-basis is $e_0 = 1, e_1, e_2, e_3$, with</p>
@@ -377,7 +377,7 @@ $$</p>
 <p>$$
 (x_0\gamma^0 + \cdots + x_3\gamma^3)^2 = \bigl(+x_0^2 - x_1^2 - x_2^2 - x_3^2\bigr)I_4,
 $$</p>
-<p>verified symbolically in the representation. This is the Clifford form of the metric $g(x,x)$. The biquaternion $w$ in the frame identity has norm form $N(w) = x_0^2 - x_1^2 - x_2^2 - x_3^2$, the signature of $\mathbb{M}_+$; it <strong>agrees</strong> with the Clifford form term by term, so there is no relative sign between the square of an odd vector and the norm of the biquaternion that represents it. That agreement is what the mostly-minus convention buys: with the opposite sign of the generators the two forms differ by an overall minus, and the odd part of the dictionary has to record that sign separately.</p>
+<p>verified symbolically in the representation. This is the Clifford form of the metric $g(x,x)$. The biquaternion $w$ in the frame identity has biquaternion norm $N(w) = x_0^2 - x_1^2 - x_2^2 - x_3^2$, the signature of $\mathbb{M}_+$; it <strong>agrees</strong> with the Clifford form term by term, so there is no relative sign between the square of an odd vector and the norm of the biquaternion that represents it. That agreement is what the mostly-minus convention buys: with the opposite sign of the generators the two forms differ by an overall minus, and the odd part of the dictionary has to record that sign separately.</p>
 <h2 id="the-four-real-subspaces">The Four Real Subspaces</h2>
 <p>The four natural real subspaces of $\mathbb{B}$ are the fixed-point sets of the conjugations, and each has a simple image under the dictionary. The identifications below were checked by confirming that each generating basis vector of the subspace lies in the stated Clifford span, and conversely.</p>
 <div class="table-scroll"><table>
@@ -417,7 +417,7 @@ $$</p>
 </tbody>
 </table></div>
 <p>The pattern is clean: the real-quaternion subspace is the identity together with the <strong>spacelike</strong> bivectors, its multiple by $i$ is minus the pseudoscalar together with the <strong>timelike</strong> bivectors, and the two Hermitian sectors are obtained by taking the scalar part from one of these and the vector part from the other. The informational subspace $\mathbb{M}_+$ is the identity plus the timelike bivectors; the material subspace $\mathbb{M}_-$ is the pseudoscalar plus the spacelike bivectors. The single minus in the table is the sign of $\Phi(i)$, and it appears exactly wherever $i$ itself appears; it is not a separate sign pattern. Multiplication by the pseudoscalar — that is, by $i$ — exchanges the two sectors, which is the Clifford form of the identity $i\mathbb{M}_+ = \mathbb{M}_-$.</p>
-<p>Two consequences follow immediately and are worth recording. First, the timelike bivectors, which are the Lorentz boosts, carry the purely imaginary vector part of $\mathbb{M}_+$: the boost generators live in the informational sector, as stated in <em>The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector</em>. Second, the two sectors carry the mirror norm forms: on the basis $\{ie_0, e_1, e_2, e_3\}$ of $\mathbb{M}_-$ the form $N$ is negative in the first direction and positive in the other three, while on the basis $\{e_0, ie_1, ie_2, ie_3\}$ of $\mathbb{M}_+$ it is positive in the first direction and negative in the other three. Since quaternion conjugation fixes $i$, one has $N(i\tilde{Q}) = -N(\tilde{Q})$, so the interchange $i\mathbb{M}_+ = \mathbb{M}_-$ reverses the sign of the norm form. The two sectors are thus mirror images, and the Clifford images reflect this: the identity becomes the pseudoscalar, which has the opposite square.</p>
+<p>Two consequences follow immediately and are worth recording. First, the timelike bivectors, which are the Lorentz boosts, carry the purely imaginary vector part of $\mathbb{M}_+$: the boost generators live in the informational sector, as stated in <em>The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector</em>. Second, the two sectors carry the mirror biquaternion norms: on the basis $\{ie_0, e_1, e_2, e_3\}$ of $\mathbb{M}_-$ the form $N$ is negative in the first direction and positive in the other three, while on the basis $\{e_0, ie_1, ie_2, ie_3\}$ of $\mathbb{M}_+$ it is positive in the first direction and negative in the other three. Since quaternion conjugation fixes $i$, one has $N(i\tilde{Q}) = -N(\tilde{Q})$, so the interchange $i\mathbb{M}_+ = \mathbb{M}_-$ reverses the sign of the biquaternion norm. The two sectors are thus mirror images, and the Clifford images reflect this: the identity becomes the pseudoscalar, which has the opposite square.</p>
 <h2 id="gamma-five-and-the-chirality-projectors">Gamma-Five and the Chirality Projectors</h2>
 <h3 id="the-chirality-operator">The chirality operator</h3>
 <p>The chirality operator of the Dirac algebra is</p>
@@ -459,7 +459,7 @@ $$</p>
 <li>the <strong>state projectors</strong> $\tfrac{1}{2}(1 + b\omega) \leftrightarrow \tfrac{1}{2}(e_0 + \mu i)$, non-central, parametrized by a unit vector and the Bloch sphere.</li>
 </ul>
 <p>Both are idempotent; only the first is central. The distinction is the same as the distinction between splitting the algebra into chiral halves and selecting a state within it.</p>
-<h2 id="conjugation-the-norm-form-and-the-matrix-representation">Conjugation, the Norm Form, and the Matrix Representation</h2>
+<h2 id="conjugation-the-biquaternion-norm-and-the-matrix-representation">Conjugation, the Biquaternion Norm, and the Matrix Representation</h2>
 <h3 id="quaternion-conjugation-is-clifford-reversal">Quaternion conjugation is Clifford reversal</h3>
 <p>The Clifford algebra carries the <strong>reversal</strong> anti-automorphism $\mathrm{rev}$, defined on a product by reversing the order of the factors, $\mathrm{rev}(\gamma^{\mu_1}\cdots\gamma^{\mu_k}) = \gamma^{\mu_k}\cdots\gamma^{\mu_1}$. On the even basis it acts as</p>
 <p>$$
@@ -470,12 +470,12 @@ $$</p>
 \Phi(\bar{\tilde{Q}}) = \mathrm{rev}\bigl(\Phi(\tilde{Q})\bigr),
 $$</p>
 <p>checked on the eight real basis elements, whose images under $\bar{\cdot}$ carry precisely the signs $+$ on $e_0, i$ and $-$ on $e_k, ie_k$ that reversal carries on $I_4, \omega$ and the bivectors.</p>
-<h3 id="the-norm-form">The norm form</h3>
-<p>The biquaternion norm form is $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$. Its Clifford image is the product with the reversal,</p>
+<h3 id="the-biquaternion-norm">The biquaternion norm</h3>
+<p>The biquaternion norm is $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$. Its Clifford image is the product with the reversal,</p>
 <p>$$
 \Phi(\tilde{Q})\,\mathrm{rev}\bigl(\Phi(\tilde{Q})\bigr) = \Phi\bigl(\tilde{Q}\bar{\tilde{Q}}\bigr),
 $$</p>
-<p>which is central. When the norm form is <strong>real</strong> — in particular on both $\mathbb{M}_-$ and $\mathbb{M}_+$ — this is a scalar matrix,</p>
+<p>which is central. When the biquaternion norm is <strong>real</strong> — in particular on both $\mathbb{M}_-$ and $\mathbb{M}_+$ — this is a scalar matrix,</p>
 <p>$$
 \Phi(\tilde{Q})\,\mathrm{rev}\bigl(\Phi(\tilde{Q})\bigr) = N(\tilde{Q})\,I_4, \qquad \tilde{Q} \in \mathbb{M}_- \text{ or } \mathbb{M}_+,
 $$</p>
@@ -483,7 +483,7 @@ $$</p>
 <p>$$
 N(\tilde{V}) = \tilde{V}\bar{\tilde{V}} = -v_0^2 + v_1^2 + v_2^2 + v_3^2 = -c^2t^2 + \mathbf{x}^2,
 $$</p>
-<p>which is the invariant interval of the companion articles. So the interval is the Clifford norm form constructed with the reversal, and the minus sign in the time direction is the $ict$ metric sign $\eta^{00} = -1$ — the sign of $-g$, not of the generators' metric.</p>
+<p>which is the invariant interval of the companion articles. So the interval is the Clifford biquaternion norm constructed with the reversal, and the minus sign in the time direction is the $ict$ metric sign $\eta^{00} = -1$ — the sign of $-g$, not of the generators' metric.</p>
 <h3 id="the-matrix-representation-and-the-trace">The matrix representation and the trace</h3>
 <p>The biquaternion algebra is $M_2(\mathbb{C})$ as a real algebra, and the dictionary is consistent with that matrix representation: the even Clifford algebra is the same copy of $M_2(\mathbb{C})$, and each biquaternion has both a $2\times 2$ matrix and an even Clifford representative. The corpus's trace formula is stated in the $2\times 2$ representation and is inherited unchanged:</p>
 <p>$$
@@ -581,7 +581,7 @@ $$</p>
 <p>$$
 \Phi(\tilde{\nabla})\,\mathrm{rev}\bigl(\Phi(\tilde{\nabla})\bigr) = \Box\,I_4,
 $$</p>
-<p>which is the image of $\tilde{\nabla}\bar{\tilde{\nabla}} = \Box$, since reversal corresponds to quaternion conjugation. Its symbol squares to the norm form: $\Phi(\tilde{k})\,\mathrm{rev}(\Phi(\tilde{k})) = (k_0^2 + k_1^2 + k_2^2 + k_3^2)I_4$.</p>
+<p>which is the image of $\tilde{\nabla}\bar{\tilde{\nabla}} = \Box$, since reversal corresponds to quaternion conjugation. Its symbol squares to the biquaternion norm: $\Phi(\tilde{k})\,\mathrm{rev}(\Phi(\tilde{k})) = (k_0^2 + k_1^2 + k_2^2 + k_3^2)I_4$.</p>
 <p>The gamma-matrix Dirac operator is the <strong>odd</strong> element</p>
 <p>$$
 \not\partial = \gamma^\mu\partial_\mu, \qquad \not\partial^2 = \bigl(-(1/c^2)\partial_t^2 + \Delta\bigr)I_4 = \Box\,I_4,
@@ -597,7 +597,7 @@ $$</p>
 <p><strong>The odd part is reached by a frame.</strong> The generators and trivectors are not biquaternions; every vector is $\gamma^0\Phi(w)$ with $w \in \mathbb{M}_+$ and every trivector is $\gamma^0\Phi(w)$ with $w \in \mathbb{M}_-$.</p>
 <p><strong>The four real subspaces have simple images.</strong> $\mathbb{H}_{\mathbb{B}}$ and $i\mathbb{H}_{\mathbb{B}}$ are the spacelike and timelike bivector groups with and without the identity and pseudoscalar; $\mathbb{M}_+$ is the identity plus the timelike bivectors; and $\mathbb{M}_-$ is the pseudoscalar plus the spacelike bivectors.</p>
 <p><strong>Chirality is the product of two complex structures.</strong> $\gamma_5 = i_{\mathrm{Cl}}\omega = -\Phi_{\mathbb{C}}(i_{\mathrm{Cl}} i)$, the sign being that of $\Phi(i)$; its projectors are the central idempotents $\tfrac{1}{2}(e_0 \mp i_{\mathrm{Cl}} i)$, distinct from the non-central state idempotents $\tfrac{1}{2}(e_0 + \mu i)$.</p>
-<p><strong>Conjugation is reversal, and the norm form is the Clifford norm with reversal</strong>, giving the Minkowski interval on $\mathbb{M}_-$ and its mirror on $\mathbb{M}_+$.</p>
+<p><strong>Conjugation is reversal, and the biquaternion norm is the Clifford norm with reversal</strong>, giving the Minkowski interval on $\mathbb{M}_-$ and its mirror on $\mathbb{M}_+$.</p>
 <p><strong>The dictionary does not identify the Dirac operator with the gradient.</strong> Both square to $\Box$, but one is odd and one is even; the frame relates them.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -662,7 +662,7 @@ $$</p>
 </tr>
 <tr>
 <td>$N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$</td>
-<td>Norm form</td>
+<td>Biquaternion norm</td>
 </tr>
 <tr>
 <td>$\mathbb{M}_-$, $\mathbb{M}_+$</td>

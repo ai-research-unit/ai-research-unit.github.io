@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modules over the Biquaternion Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="modules-over-the-biquaternion-algebra"><strong>Modules over the Biquaternion Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ is isomorphic to the full matrix algebra $M_2(\mathbb{C})$, and this one fact settles its module theory. A module over a general ring is an intractable object; a module over $\mathbb{B}$ is a direct sum of copies of a single two-dimensional module $S=\mathbb{C}^2$, and the category of modules is the linear algebra of $\mathbb{C}$ with every dimension doubled. This article develops that category in the concrete case of $\mathbb{B}$: the defining module, the classification of modules, the parity that decides freeness, the endomorphism algebras, the Morita equivalence with $\mathbb{C}$, the degeneration of torsion, and the descent to the real form.</p>
+<p>The general theory is used, not repeated. The definitions and the isomorphism theorems are those of <em>Modules over an Algebra</em>, the simple and semisimple theory is <em>Simple and Semisimple Modules</em>, the Morita theorem is <em>Morita Equivalence</em>, the balanced product is <em>The Balanced Product over an Algebra</em>, and base change is <em>Change of Rings</em>. The quaternionic side of the comparison is <em>Quaternion Ideals and Simplicity</em>, which owns the module theory over the division ring. What is added here is the module theory of the system $\mathbb{B}$ itself. The algebra conventions are those of <em>Biquaternion Algebra</em>: the basis $e_0,e_1,e_2,e_3$ with $e_0=1$, $e_k^2=-e_0$ and $e_1e_2=e_3$; the central imaginary $i$ with $i^2=-1$; the idempotents $\tilde\Pi_1=\tfrac12(e_0+ie_3)$, $\tilde\Pi_2=\tfrac12(e_0-ie_3)$ and the matrix units $x=\tfrac12(ie_1-e_2)$, $y=\tfrac12(ie_1+e_2)$, with the Peirce decomposition, as in <em>Biquaternion Idempotents and Projections</em> and <em>Biquaternion Ideals and Peirce Decomposition</em>.</p>
+<p>Two ownership notes fix the boundaries of the article. The norm $N(\tilde Q)=\tilde Q\bar{\tilde Q}$, its vanishing, the invertibility criterion $N(\tilde Q)\neq0$, the group of units $\mathbb{B}^\times$ and the zero divisors are the metric and topological content of <em>Biquaternion Norm and Invertibility</em>, in the Topology slot, and are cited here rather than restated; they are used only in the one place where they bear on the module category, the degeneration of torsion. The group-theoretic side — Schur's lemma for group representations, the defining representation and the half-spin representations, the Clebsch–Gordan rule — is <em>Biquaternion Representation Theory</em>, in the Representations slot; this article is about the modules, and it does not carry the group theory.</p>
+<h2 id="the-defining-module">The Defining Module</h2>
+<p>Two orthogonal idempotents generate the two columns of the algebra. With $\tilde\Pi_2=e_0-\tilde\Pi_1$ one has</p>
+<p>$$
+\tilde\Pi_1^2=\tilde\Pi_1,\qquad \tilde\Pi_2^2=\tilde\Pi_2,\qquad \tilde\Pi_1\tilde\Pi_2=\tilde\Pi_2\tilde\Pi_1=0,\qquad \tilde\Pi_1+\tilde\Pi_2=e_0,
+$$</p>
+<p>and the four Peirce corners of $\mathbb{B}$ with respect to the pair are</p>
+<p>$$
+\mathbb{B}\tilde\Pi_1=\mathbb{C}\tilde\Pi_1,\qquad \tilde\Pi_1\mathbb{B}\tilde\Pi_2=\mathbb{C}x,\qquad \tilde\Pi_2\mathbb{B}\tilde\Pi_1=\mathbb{C}y,\qquad \tilde\Pi_2\mathbb{B}\tilde\Pi_2=\mathbb{C}\tilde\Pi_2,
+$$</p>
+<p>each of complex dimension one. The minimal left ideal generated by $\tilde\Pi_1$ is therefore</p>
+<p>$$
+S:=\mathbb{B}\tilde\Pi_1=\mathbb{C}\{\tilde\Pi_1,\,y\},
+$$</p>
+<p>of complex dimension two, the <strong>defining module</strong> of $\mathbb{B}$. The second column $\mathbb{B}\tilde\Pi_2=\mathbb{C}\{\tilde\Pi_2,\,x\}$ is a second minimal left ideal, isomorphic to the first.</p>
+<p>The left action of $\mathbb{B}$ on $S$ is computed on the basis $(\tilde\Pi_1,y)$. Multiplication by the idempotent fixes $\tilde\Pi_1$ and kills $y$, while multiplication by the matrix units exchanges the columns: $x\tilde\Pi_1=0$, $y\tilde\Pi_1=y$, $x y=\tilde\Pi_1$ and $y^2=0$. On the algebra basis the action is</p>
+<p>$$
+\Phi(e_0)=I,\qquad \Phi(e_1)=\begin{pmatrix}0&-i\\-i&0\end{pmatrix},\qquad \Phi(e_2)=\begin{pmatrix}0&-1\\1&0\end{pmatrix},\qquad \Phi(e_3)=\begin{pmatrix}-i&0\\0&i\end{pmatrix},\qquad \Phi(i)=iI,
+$$</p>
+<p>the matrices being those of <em>Biquaternion 2×2 Matrix Representation</em>; in particular $\Phi(e_k)=-i\sigma_k$ for the Pauli matrices $\sigma_1,\sigma_2,\sigma_3$. The assignment $\Phi$ is an algebra isomorphism $\mathbb{B}\to M_2(\mathbb{C})$, so the module $S$ is the defining representation of $M_2(\mathbb{C})$ on $\mathbb{C}^2$, written in the idempotent basis. Nothing in this paragraph depends on the choice of idempotent: all minimal left ideals of $\mathbb{B}$ are isomorphic, and they are indexed by the projective line $\mathbb{P}^1(\mathbb{C})$, as in <em>Biquaternion Ideals and Peirce Decomposition</em>.</p>
+<p><strong>Theorem.</strong> $S$ is a simple left $\mathbb{B}$-module, and up to isomorphism it is the only one.</p>
+<p><em>Proof.</em> In the matrix model $S=\mathbb{C}^2$ with $\mathbb{B}\cong M_2(\mathbb{C})$ acting on column vectors: if $s\neq0$ then the matrix units send $s$ to a basis of $\mathbb{C}^2$, so $\mathbb{B}s=\mathbb{C}^2$ and $S$ has no nonzero proper submodule. For uniqueness, $\mathbb{B}$ is a simple artinian ring with a single isotypic component, and a full matrix algebra has exactly one simple module, its column space; see <em>Simple and Semisimple Modules</em> and <em>Representations of Algebras</em>.</p>
+<h2 id="the-category-of-left-modules">The Category of Left Modules</h2>
+<p>The classification of modules over $\mathbb{B}$ is complete and has no exceptional cases.</p>
+<p><strong>Theorem.</strong> Let $M$ be a left $\mathbb{B}$-module. Then $M$ is a direct sum of copies of $S$,</p>
+<p>$$
+M\cong S^{\oplus k},
+$$</p>
+<p>with $k$ an integer when $M$ is finitely generated. Every $\mathbb{B}$-module is projective. The left regular module is free of rank one over $\mathbb{B}$ and decomposes as</p>
+<p>$$
+{}_\mathbb{B}\mathbb{B}\cong S\oplus S,
+$$</p>
+<p>the two summands being the two columns $\mathbb{B}\tilde\Pi_1$ and $\mathbb{B}\tilde\Pi_2$.</p>
+<p><em>Proof.</em> The algebra $\mathbb{B}\cong M_2(\mathbb{C})$ is simple and artinian, hence semisimple; over a semisimple ring every module is a direct sum of simple modules, every module is projective, and the simple modules are the columns of the matrix algebra, of which there is one isomorphism class. The decomposition of the regular module is the Peirce decomposition read column by column, and freeness of rank one is the basis $e_0$.</p>
+<p>For a finite-dimensional $\mathbb{B}$-module the invariant $k$ is recovered from the dimension: since $\dim_\mathbb{C}S=2$,</p>
+<p>$$
+\dim_\mathbb{C}S^{\oplus k}=2k,
+$$</p>
+<p>so a finite-dimensional module is $\mathbb{C}^{2k}$ on which $\mathbb{B}\cong M_2(\mathbb{C})$ acts block-diagonally, as $k$ copies of the defining two-dimensional action. The module category of $\mathbb{B}$ is thus the category of complex vector spaces with a fixed identification $\mathbb{B}\cong M_2(\mathbb{C})$; what the biquaternion structure adds over the bare complex field is exactly that identification, and nothing else.</p>
+<h2 id="projectivity-and-the-parity-of-freeness">Projectivity and the Parity of Freeness</h2>
+<p>Over a field projectivity and freeness coincide, and the same holds over the quaternion division algebra. Over the matrix algebra they part, and the divergence is the whole of the departure of $\mathbb{B}$ from a field.</p>
+<p><strong>Proposition.</strong> The module $S^{\oplus k}$ is free if and only if $k$ is even, equivalently if and only if its complex dimension $2k$ is divisible by $4$:</p>
+<p>$$
+S^{\oplus k}\text{ is free}\iff 2\mid k\iff 4\mid\dim_\mathbb{C}S^{\oplus k}.
+$$</p>
+<p><em>Proof.</em> Since $\mathbb{B}\cong S\oplus S$ as left modules, $\mathbb{B}^{\oplus m}\cong S^{\oplus 2m}$; the free modules are therefore exactly the modules $S^{\oplus k}$ with $k$ even. The dimension statement is $\dim_\mathbb{C}S^{\oplus k}=2k$.</p>
+<p>In particular $S$ itself is projective — every module is — but not free, and it is the minimal example: a two-dimensional complex module with no basis over $\mathbb{B}$. The obstruction to freeness is a parity, and the obstruction reappears unchanged as the obstruction to a real structure (§<em>Real Structures</em>). This is the sharpest contrast with the module theory over the division ring $\mathbb{H}$, where every module is free; the quaternionic side of the comparison is treated in <em>Quaternion Ideals and Simplicity</em>.</p>
+<h2 id="endomorphisms-and-the-standard-bimodule">Endomorphisms and the Standard Bimodule</h2>
+<p>The morphisms are as simple as the objects. Because $S$ is simple, Schur's lemma gives</p>
+<p>$$
+\operatorname{End}_\mathbb{B}(S)=\mathbb{C},
+$$</p>
+<p>the scalars acting by the complex structure. A $\mathbb{B}$-linear map $S^{\oplus m}\to S^{\oplus n}$ is determined by the images of the $m$ summands, each of which is an $n$-tuple of endomorphisms of $S$, so</p>
+<p>$$
+\operatorname{Hom}_\mathbb{B}\bigl(S^{\oplus m},S^{\oplus n}\bigr)\cong M_{n\times m}(\mathbb{C}),\qquad \operatorname{End}_\mathbb{B}\bigl(S^{\oplus k}\bigr)\cong M_k(\mathbb{C}),
+$$</p>
+<p>with composition the matrix product; the automorphisms of $S^{\oplus k}$ are therefore the group $\mathrm{GL}_k(\mathbb{C})$. The double centralizer statement is the mirror of these computations: the scalars commute with $\mathbb{B}$ and nothing else does,</p>
+<p>$$
+\operatorname{End}_\mathbb{C}(S)=\mathbb{B},\qquad \{b\in\mathbb{B}: bs=sb\text{ for all }s\in S\}=\mathbb{C}.
+$$</p>
+<p>The module $S$ is consequently a bimodule over the pair $(\mathbb{B},\mathbb{C})$. The left action is the algebra action, the right action is multiplication by the central scalars, and the two commute because $\mathbb{C}$ is the centre of $\mathbb{B}$; this is the structure denoted ${}_\mathbb{B}S_\mathbb{C}$. The left and right actions are genuinely different data — the left action is the isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$, while the right action is scalar multiplication and has kernel only at $0$ — and it is their compatibility, not either alone, that makes $S$ the standard bimodule of the Morita theory.</p>
+<p>The dual is not a new module. Let $S^*=\operatorname{Hom}_\mathbb{C}(S,\mathbb{C})$ carry the contragredient action, a right $\mathbb{B}$-module and hence a left $\mathbb{B}^{\mathrm{op}}$-module; the anti-automorphism $\bar{\cdot}$ of quaternion conjugation identifies $\mathbb{B}^{\mathrm{op}}$ with $\mathbb{B}$, and under it $S^*$ is simple of complex dimension two and therefore isomorphic to $S$. In the matrix model the identification is the adjugate. With $\varepsilon=i\sigma_2=\begin{pmatrix}0&1\\-1&0\end{pmatrix}$ one has, for every $\tilde Q\in\mathbb{B}$,</p>
+<p>$$
+\Phi\bigl(\bar{\tilde Q}\bigr)=\varepsilon\,\Phi(\tilde Q)^{\mathrm T}\,\varepsilon^{-1},
+$$</p>
+<p>so quaternion conjugation on $\mathbb{B}$ is transposition in the basis selected by $\varepsilon$: the adjugate of a matrix is its transpose conjugated by $\varepsilon$, and the row space of the matrix model is the dual of its column space, again the module $S$.</p>
+<h2 id="morita-equivalence-with-the-complex-field">Morita Equivalence with the Complex Field</h2>
+<p>The pair $(\mathbb{B},\mathbb{C})$ is a Morita pair, and the equivalence is implemented by $S$.</p>
+<p><strong>Theorem.</strong> The functor</p>
+<p>$$
+\operatorname{Hom}_\mathbb{B}(S,-):\operatorname{Mod}(\mathbb{B})\longrightarrow\operatorname{Mod}(\mathbb{C})
+$$</p>
+<p>is an equivalence of categories, with inverse $W\mapsto S\otimes_\mathbb{C}W\cong S^{\oplus\dim_\mathbb{C}W}$. On the module $S^{\oplus k}$ it returns $\mathbb{C}^k$:</p>
+<p>$$
+\operatorname{Hom}_\mathbb{B}\bigl(S,S^{\oplus k}\bigr)\cong\mathbb{C}^k.
+$$</p>
+<p><em>Proof.</em> This is the Morita equivalence of <em>Morita Equivalence</em> with $A=\mathbb{B}$, $B=\mathbb{C}$ and the equivalence bimodule ${}_\mathbb{B}S_\mathbb{C}$ of the previous section. The module $S$ is a projective generator, $\operatorname{End}_\mathbb{B}(S)=\mathbb{C}$ and $\operatorname{End}_\mathbb{C}(S)=\mathbb{B}$, and the balanced product of the two sections recovers the algebra, $S\otimes_\mathbb{C}S^*\cong\mathbb{B}$ as a $(\mathbb{B},\mathbb{B})$-bimodule.</p>
+<p>The consequence is stated once and used throughout: the module theory of the biquaternion algebra is the linear algebra of the complex field, and the passage to $\mathbb{B}$ doubles every dimension,</p>
+<p>$$
+\dim_{\mathbb{C}}\bigl(S\otimes_\mathbb{C}W\bigr)=2\dim_\mathbb{C}W.
+$$</p>
+<p>Every statement that can be made about $\mathbb{B}$-modules is a statement about complex vector spaces read through $S$; the algebra $\mathbb{B}$ itself is recovered as $\operatorname{End}_\mathbb{C}(S)$, so the module determines the algebra, and the two are two faces of one equivalence.</p>
+<h2 id="torsion">Torsion</h2>
+<p>The naive notion of torsion does not survive the passage from a commutative domain to $\mathbb{B}$, and it is worth recording why, since the failure is a feature of the module category rather than a defect.</p>
+<p>Recall that over a commutative domain a nonzero module element $m$ is torsion when $\operatorname{Ann}(m)\neq0$, an invariant that classifies finitely generated modules over a principal ideal domain (<em>Modules over a PID</em>). Over $\mathbb{B}$ the definition collapses. The algebra has zero divisors — this is the vanishing of the norm, treated in <em>Biquaternion Zero Divisors</em> and <em>Biquaternion Norm and Invertibility</em> — and for every nonzero $s\in S$ the annihilator</p>
+<p>$$
+\operatorname{Ann}_\mathbb{B}(s)=\{b\in\mathbb{B}:bs=0\}
+$$</p>
+<p>is a nonzero proper left ideal, since $s$ spans a submodule isomorphic to $S$ and the kernel of $b\mapsto bs$ is a maximal left ideal of $\mathbb{B}$. Under the naive definition every nonzero element of $S$ would be torsion, and in $S^{\oplus k}$ the torsion elements would be those with proportional nonzero components; the annihilator of two linearly independent vectors of $\mathbb{C}^2$ in $M_2(\mathbb{C})$ is zero, so those elements are not closed under addition and form no submodule.</p>
+<p>The remedy is to test against non-zero-divisors. An element $a$ of a ring $A$ is <strong>regular</strong> if $ab=0$ implies $b=0$ and $ba=0$ implies $b=0$, and a module element $m$ is <strong>torsion</strong> if $\operatorname{Ann}(m)$ contains a regular element; over a commutative domain this reduces to the classical definition.</p>
+<p><strong>Proposition.</strong> Every module over a semisimple ring is torsion-free. In particular $\operatorname{Mod}(\mathbb{B})$ contains no torsion.</p>
+<p><em>Proof.</em> In a semisimple ring every regular element is a unit: if $a$ is regular then $Aa$ is a nonzero left ideal and has a complement $I$ with $A=Aa\oplus I$, and regularity forces $I=0$, since $0\neq z\in I$ would give $az\in Aa\cap I=0$ with $z\neq0$; so $Aa=A$ and $a$ has a right inverse, and symmetrically a left inverse. If $a$ is regular and $am=0$ then $m=a^{-1}am=0$, so no annihilator contains a regular element.</p>
+<p>Torsion therefore classifies nothing over $\mathbb{B}$: the structure theory is the direct-sum decomposition of §<em>The Category of Left Modules</em> and the parity of §<em>Projectivity and the Parity of Freeness</em>, not a torsion submodule. The same vanishing holds over the division algebra $\mathbb{H}$, so the invariant that governs modules over a principal ideal domain has no analogue in either system.</p>
+<h2 id="real-structures">Real Structures</h2>
+<p>The module category of $\mathbb{B}$ is the complex linear algebra of $S$, but $\mathbb{B}$ is a complexification, and the modules that come from the real algebra $\mathbb{H}$ form a distinguished subclass.</p>
+<p>A <strong>real structure</strong> on a $\mathbb{B}$-module $W$ is an $\mathbb{H}$-module $V$ together with an isomorphism $W\cong\mathbb{C}\otimes_{\mathbb{R}}V$, that is, $W$ is obtained from a quaternionic module by extension of scalars. Since every $\mathbb{H}$-module is free, every complexification is a free $\mathbb{B}$-module, and conversely every free $\mathbb{B}$-module is a complexification; hence</p>
+<p>$$
+W\text{ admits a real structure}\iff W\text{ is a free }\mathbb{B}\text{-module},
+$$</p>
+<p>which for $W=S^{\oplus k}$ holds exactly when $k$ is even. The obstruction to descending to $\mathbb{H}$ is therefore the same parity that obstructs freeness, and $S$ is the minimal counterexample: it is defined over $\mathbb{C}$ and over $\mathbb{R}$, but not over $\mathbb{H}$. The two functors are complexification and restriction, $\mathbb{C}\otimes_{\mathbb{R}}-$ and $\operatorname{Res}^{\mathbb{B}}_{\mathbb{H}}$, carrying $\mathbb{H}^n$ to $\mathbb{B}^n\cong S^{\oplus 2n}$ and $S^{\oplus k}$ to $\mathbb{H}^k$, and they form an adjoint pair in the sense of <em>Change of Rings</em>, with composite that doubles the number of copies of $S$. The detail of the quaternionic side is in <em>Quaternion Ideals and Simplicity</em>.</p>
+<h2 id="summary">Summary</h2>
+<p>The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}\cong M_2(\mathbb{C})$ has a single simple left module up to isomorphism, the defining module $S=\mathbb{B}\tilde\Pi_1=\mathbb{C}\{\tilde\Pi_1,y\}$ of complex dimension two, and every left module is a direct sum $S^{\oplus k}$. The left regular module is free of rank one and decomposes as $\mathbb{B}\cong S\oplus S$. Every module is projective because $\mathbb{B}$ is semisimple, but $S^{\oplus k}$ is free if and only if $k$ is even, equivalently if and only if its complex dimension $2k$ is divisible by $4$; the module $S$ is projective and not free, and this parity is the entire distinction between the module theory of $\mathbb{B}$ and that of a field.</p>
+<p>The morphisms are the complex matrices: $\operatorname{End}_\mathbb{B}(S)=\mathbb{C}$, $\operatorname{Hom}_\mathbb{B}(S^{\oplus m},S^{\oplus n})\cong M_{n\times m}(\mathbb{C})$ and $\operatorname{End}_\mathbb{B}(S^{\oplus k})\cong M_k(\mathbb{C})$, with automorphism group $\mathrm{GL}_k(\mathbb{C})$, while the double centralizer gives $\operatorname{End}_\mathbb{C}(S)=\mathbb{B}$. The module $S$ is the standard $(\mathbb{B},\mathbb{C})$-bimodule, the two actions commuting because $\mathbb{C}$ is the centre, and it implements the Morita equivalence of $\operatorname{Mod}(\mathbb{B})$ with $\operatorname{Mod}(\mathbb{C})$: $\operatorname{Hom}_\mathbb{B}(S,-)$ has inverse $S\otimes_\mathbb{C}-$, and every complex dimension is doubled. Torsion in the naive sense degenerates over $\mathbb{B}$ because the algebra has zero divisors and the annihilator of a nonzero element of $S$ is a maximal left ideal; tested against regular elements it vanishes, since in a semisimple ring every regular element is a unit, and the module category is torsion-free. Finally, the $\mathbb{B}$-modules that come from $\mathbb{H}$ by extension of scalars are exactly the free ones, so the parity obstruction to freeness is also the obstruction to a real structure, with $S$ the minimal example.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$</td>
+<td>biquaternion algebra, $\cong M_2(\mathbb{C})$</td>
+</tr>
+<tr>
+<td>$e_0,e_1,e_2,e_3$</td>
+<td>quaternion basis, $e_0=1$, $e_k^2=-e_0$</td>
+</tr>
+<tr>
+<td>$i$</td>
+<td>central scalar imaginary, $i^2=-1$</td>
+</tr>
+<tr>
+<td>$\tilde\Pi_1,\tilde\Pi_2$</td>
+<td>orthogonal minimal idempotents $\tfrac12(e_0\pm ie_3)$, $\tilde\Pi_1+\tilde\Pi_2=e_0$</td>
+</tr>
+<tr>
+<td>$x,y$</td>
+<td>matrix units $\tfrac12(ie_1-e_2)$, $\tfrac12(ie_1+e_2)$</td>
+</tr>
+<tr>
+<td>$S=\mathbb{B}\tilde\Pi_1=\mathbb{C}\{\tilde\Pi_1,y\}$</td>
+<td>defining module, the unique simple left $\mathbb{B}$-module, $\dim_\mathbb{C}=2$</td>
+</tr>
+<tr>
+<td>$S^{\oplus k}$</td>
+<td>general finitely generated left module, $\dim_\mathbb{C}=2k$</td>
+</tr>
+<tr>
+<td>${}_\mathbb{B}\mathbb{B}\cong S\oplus S$</td>
+<td>left regular module, free of rank one over $\mathbb{B}$</td>
+</tr>
+<tr>
+<td>$\Phi$</td>
+<td>isomorphism $\mathbb{B}\to M_2(\mathbb{C})$, $\Phi(e_k)=-i\sigma_k$, $\Phi(i)=iI$</td>
+</tr>
+<tr>
+<td>$\operatorname{End}_\mathbb{B}(S)=\mathbb{C}$</td>
+<td>commutant of the simple module</td>
+</tr>
+<tr>
+<td>$\operatorname{End}_\mathbb{C}(S)=\mathbb{B}$</td>
+<td>double centralizer</td>
+</tr>
+<tr>
+<td>${}_\mathbb{B}S_\mathbb{C}$</td>
+<td>standard Morita bimodule</td>
+</tr>
+<tr>
+<td>$\operatorname{Hom}_\mathbb{B}(S,-)$, $S\otimes_\mathbb{C}-$</td>
+<td>the Morita equivalence $\operatorname{Mod}(\mathbb{B})\cong\operatorname{Mod}(\mathbb{C})$</td>
+</tr>
+<tr>
+<td>$\operatorname{Ann}_\mathbb{B}(s)$</td>
+<td>annihilator, a maximal left ideal for $s\neq0$</td>
+</tr>
+<tr>
+<td>regular element</td>
+<td>a non-zero-divisor</td>
+</tr>
+<tr>
+<td>$\operatorname{Res}^{\mathbb{B}}_{\mathbb{H}}$</td>
+<td>restriction of a $\mathbb{B}$-module to $\mathbb{H}$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>T. Y. Lam, <em>A First Course in Noncommutative Rings</em> (Springer, 2nd ed. 2001), for semisimple rings, matrix algebras, Schur's lemma and Morita equivalence.</li>
+<li>T. Y. Lam, <em>Lectures on Modules and Rings</em> (Springer, 1999), for torsion, regular elements and the structure of modules over noncommutative rings.</li>
+<li>Richard S. Pierce, <em>Associative Algebras</em> (Springer, 1982), for modules over finite-dimensional algebras, projective modules and the Peirce decomposition.</li>
+<li>Paul M. Cohn, <em>Skew Fields: Theory of General Division Rings</em> (Cambridge, 1995), for rank and linear algebra over division rings, in the comparison with the quaternions.</li>
+<li>Nicolas Bourbaki, <em>Algebra I</em> (Springer, 1989), for modules over rings, the Morita theory of matrix algebras and change of rings.</li>
+<li>John Voight, <em>Quaternion Algebras</em> (Springer, 2021), for the quaternion and biquaternion algebras, the matrix isomorphism $\mathbb{H}\otimes_{\mathbb{R}}\mathbb{C}\cong M_2(\mathbb{C})$ and the descent between them.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

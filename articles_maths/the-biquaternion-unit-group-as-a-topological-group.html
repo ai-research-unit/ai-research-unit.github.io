@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Biquaternion Unit Group as a Topological Group — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-biquaternion-unit-group-as-a-topological-group"><strong>The Biquaternion Unit Group as a Topological Group</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The group of units $\mathbb{B}^\times$ of the biquaternion algebra is an open subset of the algebra, hence a manifold, and it carries both a group structure and the topology of that manifold. This article reads the two together: the units as the complement of the null cone, the polar decomposition, the retraction of the group onto its maximal compact subgroup, and the homotopy groups, generators and universal cover that follow.</p>
+<p>The article is one of the three the boundary draws out of the former joint treatment of the Lie theory: the Lie algebra is <em>Biquaternion Lie Algebra</em> in Algebra, the Lie-group theory and the exponential are <em>Biquaternion Lie Group and Exponential Structure</em> in Analysis, and the topology of the group is here. The ambient topology and the null cone are in <em>Biquaternion Topology</em>, and the norm and invertibility criterion are in <em>Biquaternion Norm and Invertibility</em>.</p>
+<p><strong>Conventions.</strong> The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_0=1,e_1,e_2,e_3$ and central scalar imaginary $i$; a general element is $\tilde{Q}=\sum_{\mu=0}^{3} Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$. The biquaternion norm is $N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}=\sum_\mu Q_\mu^2$, and $\tilde{Q}$ is a unit exactly when $N(\tilde{Q})\neq0$ (<em>Biquaternion Norm and Invertibility</em>). Throughout, a biquaternion is written $\tilde{Q}=Q_0e_0+\mathbf{Q}$ with $\mathbf{Q}=\sum_{k=1}^3 Q_k e_k$.</p>
+<hr />
+<h2 id="the-group-of-units">The Group of Units</h2>
+<p>The <strong>group of units</strong> of $\mathbb{B}$ is the set of invertible elements,</p>
+<p>$$
+\mathbb{B}^\times = \{\tilde{Q} \in \mathbb{B} : N(\tilde{Q}) \neq 0\},
+$$</p>
+<p>a group under multiplication with identity $e_0$.</p>
+<p><strong>Dimension.</strong> $\mathbb{B}^\times$ has complex dimension $4$ and real dimension $8$; the units are exactly the elements of nonzero norm.</p>
+<p>The group $\mathbb{B}^\times$ is open (it is $N^{-1}(\mathbb{C}\setminus\{0\})$) and dense, its complement being the null cone, of real dimension $6$ (<em>Biquaternion Topology</em>); it is connected but not compact, and its center is $Z(\mathbb{B}^\times) = \mathbb{C}^\times e_0 \cong \mathbb{C}^\times$, a closed subgroup of real dimension $2$. Its Lie theory — the Lie algebra $\mathbb{B}$ with the commutator bracket, and the map induced on the algebra by the inverse — is <em>Biquaternion Lie Algebra</em> and <em>Biquaternion Lie Group and Exponential Structure</em>, and is not developed here.</p>
+<p><strong>The norm-one group.</strong> Because $N$ is multiplicative and $N(e_0)=1$, the level set</p>
+<p>$$
+\mathbb{B}^\times_1=\{\tilde{Q}\in\mathbb{B}:N(\tilde{Q})=1\}
+$$</p>
+<p>is a closed subgroup of $\mathbb{B}^\times$ of real dimension $6$, the <strong>norm-one group</strong>. It is noncompact, and it deformation retracts onto the unit quaternions $S^3$ (§<em>The Retraction of the Norm-One Group onto Its Maximal Compact Subgroup</em>); hence it is simply connected, of the homotopy type of $S^3$, with $\pi_3\cong\mathbb{Z}$. Its own subgroups — the rotation subgroup $S^3$, the center $\{\pm e_0\}$, and the Lorentz group $\mathbb{B}^\times_1/\{\pm e_0\}$ — are the subject of <em>Biquaternion Lie Group and Exponential Structure</em>, §<em>The Subgroups and the Real Forms</em>.</p>
+<p><strong>Two unit spheres.</strong> There are two candidate "unit spheres" in $\mathbb{B}$, and only one of them is a group. The Euclidean sphere $\|\tilde{Q}\|_E=1$ is a genuine sphere $S^7$ but is not a group, since $\|\cdot\|_E$ is not multiplicative and it contains zero divisors (<em>Biquaternion Topology</em>, §<em>The Euclidean unit sphere</em>). The level set $N(\tilde{Q})=1$ is a group but is neither Euclidean nor compact. The condition that makes a level set of a form on $\mathbb{B}$ a subgroup is $N=1$, not $\|\tilde{Q}\|_E=1$.</p>
+<p>The group of units is an open subset of $\mathbb{B}$, hence a manifold of real dimension $8$, but its topology is far from that of a general open set in $\mathbb{R}^8$: it has the homotopy type of a compact group. The polar decomposition exhibits the maximal compact subgroup as a strong deformation retract, and with it determines the homotopy groups and the universal cover. Everything in this part is a statement about $\mathbb{B}^\times$ as a topological group; the topology of the ambient space and of the null cone is in <em>Biquaternion Topology</em>.</p>
+<h2 id="the-retraction-of-math46-onto-its-maximal-compact-subgroup">The Retraction of $\mathbb{B}^\times$ onto Its Maximal Compact Subgroup</h2>
+<p>Every $\tilde{A} \in \mathbb{B}^\times$ has a unique polar decomposition $\tilde{A} = \tilde{U}\tilde{P}$, where $\tilde{U}$ is unitary ($\tilde{U}^\dagger\tilde{U} = e_0$) and $\tilde{P} = (\tilde{A}^\dagger\tilde{A})^{1/2}$ is Hermitian positive definite. For $t\in[0,1]$ put $\tilde{P}_t=(1-t)\tilde{P}+t e_0$ and</p>
+<p>$$
+\tilde{H}(t,\tilde{A})=\tilde{U}\tilde{P}_t.
+$$</p>
+<p>The eigenvalues of $\tilde{P}_t$ are $(1-t)\lambda+t$ with $\lambda>0$, hence positive, so $\tilde{P}_t$ is positive definite and $\tilde{H}(t,\tilde{A})\in \mathbb{B}^\times$; the map $\tilde{H}$ is continuous because the positive-definite square root depends continuously on $\tilde{A}$. Moreover</p>
+<p>$$
+\tilde{H}(0,\tilde{A})=\tilde{A},\qquad \tilde{H}(1,\tilde{A})=\tilde{U},\qquad \tilde{H}(t,\tilde{U})=\tilde{U}\ \text{ for unitary } \tilde{U}.
+$$</p>
+<p>So the unitary biquaternions form a strong deformation retract of $\mathbb{B}^\times$, and the two are homotopy equivalent, whence $\pi_n(\mathbb{B}^\times)\cong\pi_n(\mathrm{U}(\mathbb{B}))$ for all $n$, writing $\mathrm{U}(\mathbb{B})$ for the group of unitary biquaternions. Every $\tilde{A}$ is joined to a unitary element, and $\mathrm{U}(\mathbb{B})$ is connected (§<em>The Structure of the Maximal Compact Subgroup</em>), so $\mathbb{B}^\times$ is connected, in agreement with <em>Biquaternion Norm and Invertibility</em>. (The statement that there are two components distinguished by the sign of the determinant concerns the real algebra, not the complex one.) The retraction takes $\mathbb{B}^\times$ onto its maximal compact subgroup, the <strong>unitary biquaternions</strong></p>
+<p>$$
+\mathrm{U}(\mathbb{B}) = \{\tilde{Q}\in\mathbb{B}:\tilde{Q}^\dagger\tilde{Q}=e_0\}.
+$$</p>
+<h2 id="the-retraction-of-the-norm-one-group-onto-its-maximal-compact-subgroup">The Retraction of the Norm-One Group onto Its Maximal Compact Subgroup</h2>
+<p>Let $\tilde{A}\in \mathbb{B}^\times_1$ have polar decomposition $\tilde{A}=\tilde{U}\tilde{P}$. Then $1=N(\tilde{A})=N(\tilde{U})N(\tilde{P})$, with $N(\tilde{U})$ of modulus $1$ and $N(\tilde{P})$ a positive real, so $N(\tilde{U})=N(\tilde{P})=1$, that is $\tilde{U}$ lies in $S^3$. For $t\in[0,1]$ define</p>
+<p>$$
+\tilde{P}_t=\frac{(1-t)\tilde{P}+t e_0}{N\big((1-t)\tilde{P}+t e_0\big)^{1/2}}.
+$$</p>
+<p>The denominator is a positive real number, so $\tilde{P}_t$ is Hermitian positive definite of norm $1$. The map $\tilde{H}(t,\tilde{A})=\tilde{U}\tilde{P}_t$ is continuous, lies in $\mathbb{B}^\times_1$ since $N(\tilde{U}\tilde{P}_t)=1$, and satisfies $\tilde{H}(0,\tilde{A})=\tilde{A}$, $\tilde{H}(1,\tilde{A})=\tilde{U}\in S^3$, and $\tilde{H}(t,\tilde{U})=\tilde{U}$ for unitary $\tilde{U}$. Hence $S^3$ is a strong deformation retract of $\mathbb{B}^\times_1$.</p>
+<p>Thus $\mathbb{B}^\times_1\simeq S^3$: it is connected and simply connected with $\pi_3\cong\mathbb{Z}$ and the homotopy type of $S^3$, but is not homeomorphic to $S^3$, being a noncompact real $6$-manifold. The norm-one group $\mathbb{B}^\times_1$ of §<em>The Group of Units</em> is therefore simply connected, of homotopy type $S^3$.</p>
+<h2 id="the-structure-of-the-maximal-compact-subgroup">The Structure of the Maximal Compact Subgroup</h2>
+<p>The unit quaternions form $S^3$; $S^3$ is compact, connected and simply connected, the double cover of the rotation group $SO(3)$.</p>
+<p>Every unitary biquaternion $\tilde{U}$ is a scalar multiple of a unit quaternion: if $N(\tilde{U})=z\in S^1$ and $\zeta^2=z$, then $\tilde{A}=\zeta^{-1}\tilde{U}$ has $N(\tilde{A})=1$ and $\tilde{U}=\zeta\tilde{A}$. Hence</p>
+<p>$$
+\mathrm{U}(\mathbb{B})=S^1\cdot S^3,\qquad S^1\cap S^3=\{\pm e_0\},
+$$</p>
+<p>and the multiplication map $S^1\times S^3\to \mathrm{U}(\mathbb{B})$ is a surjective homomorphism with kernel $\{(e_0,e_0),(-e_0,-e_0)\}\cong\mathbb{Z}/2$, so by the first isomorphism theorem for Lie groups</p>
+<p>$$
+\mathrm{U}(\mathbb{B})\cong(S^1\times S^3)/\{\pm e_0\},
+$$</p>
+<p>with $\{\pm e_0\}$ acting diagonally. The biquaternion norm $N:\mathrm{U}(\mathbb{B})\to S^1$ is a principal $S^3$-bundle, each fibre being a coset of $S^3$, and it admits a section, so</p>
+<p>$$
+\mathrm{U}(\mathbb{B})\cong S^1\times S^3
+$$</p>
+<p>as spaces. This is a homeomorphism, not an isomorphism of Lie groups: the map above is two-to-one, while the centre of $\mathrm{U}(\mathbb{B})$ is connected but that of $S^1\times S^3$ is not.</p>
+<p>The central scalars form a maximal torus $T^2\cong S^1\times S^1\subset \mathrm{U}(\mathbb{B})$. It is <strong>not</strong> true that $\mathrm{U}(\mathbb{B})$ deformation retracts onto $T^2$: that would give $\pi_1(\mathrm{U}(\mathbb{B}))\cong\pi_1(T^2)$, but these are $\mathbb{Z}$ and $\mathbb{Z}^2$. Every element of $\mathrm{U}(\mathbb{B})$ does lie in some maximal torus, and the quotient is the complete flag variety</p>
+<p>$$
+\mathrm{U}(\mathbb{B})/T^2\cong P^1\cong S^2,
+$$</p>
+<p>so $\mathrm{U}(\mathbb{B})$ is a fibre bundle over $S^2$ with fibre $T^2$; and $\mathrm{U}(\mathbb{B})$ is not homotopy equivalent to $T^2$, being homeomorphic to $S^1\times S^3$.</p>
+<h2 id="homotopy-groups-and-generators">Homotopy Groups and Generators</h2>
+<p>The retractions give $S^3$ for the unit quaternions, $\mathrm{U}(\mathbb{B})\cong S^1\times S^3$, $\mathbb{B}^\times_1\simeq S^3$, and $\mathbb{B}^\times\simeq \mathrm{U}(\mathbb{B})\simeq S^1\times S^3$. Hence</p>
+<p>$$
+\pi_1(S^3)=\pi_2(S^3)=0,\qquad\pi_3(S^3)\cong\mathbb{Z},
+$$</p>
+<p>$$
+\pi_1(\mathrm{U}(\mathbb{B}))\cong\mathbb{Z},\qquad\pi_2(\mathrm{U}(\mathbb{B}))=0,\qquad\pi_3(\mathrm{U}(\mathbb{B}))\cong\mathbb{Z},
+$$</p>
+<p>and likewise $\pi_1(\mathbb{B}^\times_1)=0$, $\pi_1(\mathbb{B}^\times)\cong\mathbb{Z}$, with $\pi_2=0$ and $\pi_3\cong\mathbb{Z}$ for both.</p>
+<p><strong>Generators.</strong> The group $\pi_3(S^3)\cong\mathbb{Z}$ is generated by the class $[\operatorname{id}_{S^3}]$ of the identity map under $S^3=\{\text{unit quaternions}\}$, and $\pi_3(\mathrm{U}(\mathbb{B}))\cong\mathbb{Z}$ by the image of that class under the inclusion $S^3\hookrightarrow \mathrm{U}(\mathbb{B})$, which induces an isomorphism on $\pi_3$. The group $\pi_1(\mathrm{U}(\mathbb{B}))\cong\mathbb{Z}$ is generated by the central loop $\gamma(t)=e^{2\pi i t}e_0$, $t\in[0,1]$, and $N_*:\pi_1(\mathrm{U}(\mathbb{B}))\to\pi_1(S^1)\cong\mathbb{Z}$ is an isomorphism, so a generator is a loop whose biquaternion norm winds once. The universal covers are</p>
+<p>$$
+\widetilde{\mathrm{U}(\mathbb{B})}\cong\widetilde{\mathbb{B}^\times}\cong\mathbb{R}\times S^3,
+$$</p>
+<p>while $S^3$ and $\mathbb{B}^\times_1$ are their own universal covers. By Hurewicz, $H_1(\mathrm{U}(\mathbb{B}))\cong H_1(\mathbb{B}^\times)\cong\mathbb{Z}$ and $H_1(S^3)=H_1(\mathbb{B}^\times_1)=0$; and $\pi_n(\mathrm{U}(\mathbb{B}))\cong\pi_n(S^3)$ for $n\geq2$.</p>
+<h2 id="summary">Summary</h2>
+<p>The group of units $\mathbb{B}^\times=\{N\neq0\}$ is open and dense in $\mathbb{B}$, its complement the null cone; it is connected and non-compact, of real dimension $8$, with centre $\mathbb{C}^\times e_0$.</p>
+<p>Its topology is that of a compact group. The polar decomposition $\tilde{A}=\tilde{U}\tilde{P}$ gives a strong deformation retraction of $\mathbb{B}^\times$ onto the unitary biquaternions $\mathrm{U}(\mathbb{B})=\{\tilde{Q}^\dagger\tilde{Q}=e_0\}$, and a second retraction takes the norm-one group $\mathbb{B}^\times_1$ onto $S^3$. Hence $\mathbb{B}^\times\simeq\mathrm{U}(\mathbb{B})\simeq S^1\times S^3$ and $\mathbb{B}^\times_1\simeq S^3$, with
+$$
+\pi_1(\mathbb{B}^\times)\cong\mathbb{Z},\quad \pi_2(\mathbb{B}^\times)=0,\quad \pi_3(\mathbb{B}^\times)\cong\mathbb{Z},
+$$
+and $\mathbb{B}^\times_1$, $S^3$ simply connected with $\pi_3\cong\mathbb{Z}$. The universal cover is $\widetilde{\mathbb{B}^\times}\cong\mathbb{R}\times S^3$, generated by the identity class of $S^3$ and the central loop $e^{2\pi it}e_0$; $S^3$ and $\mathbb{B}^\times_1$ are their own universal covers. This is the content of the three retraction sections, and it is the topological face of the same group whose Lie algebra and exponential belong to Algebra and Analysis.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B}^\times=\{N\neq0\}$</td>
+<td>Group of units; open and dense, complement of the null cone; real dimension $8$</td>
+</tr>
+<tr>
+<td>$\mathbb{B}^\times_1=\{N=1\}$</td>
+<td>Norm-one group; closed subgroup of real dimension $6$</td>
+</tr>
+<tr>
+<td>$\mathbb{C}^\times e_0$</td>
+<td>Centre of $\mathbb{B}^\times$; nonzero complex scalars</td>
+</tr>
+<tr>
+<td>$\mathrm{U}(\mathbb{B})=\{\tilde{Q}^\dagger\tilde{Q}=e_0\}$</td>
+<td>Unitary biquaternions; maximal compact subgroup of $\mathbb{B}^\times$</td>
+</tr>
+<tr>
+<td>$\tilde{A}=\tilde{U}\tilde{P}$</td>
+<td>Polar decomposition; retraction onto $\mathrm{U}(\mathbb{B})$</td>
+</tr>
+<tr>
+<td>$S^3$</td>
+<td>Unit quaternions; maximal compact subgroup of $\mathbb{B}^\times_1$</td>
+</tr>
+<tr>
+<td>$\mathrm{U}(\mathbb{B})\cong S^1\times S^3$</td>
+<td>Homeomorphism; the maximal compact subgroup</td>
+</tr>
+<tr>
+<td>$\mathbb{B}^\times\simeq\mathrm{U}(\mathbb{B})\simeq S^1\times S^3$</td>
+<td>Homotopy type of the group of units</td>
+</tr>
+<tr>
+<td>$\mathbb{B}^\times_1\simeq S^3$</td>
+<td>Homotopy type of the norm-one group</td>
+</tr>
+<tr>
+<td>$\widetilde{\mathbb{B}^\times}\cong\mathbb{R}\times S^3$</td>
+<td>Universal cover of the group of units</td>
+</tr>
+<tr>
+<td>$\pi_1\cong\mathbb{Z},\ \pi_2=0,\ \pi_3\cong\mathbb{Z}$</td>
+<td>Homotopy of $\mathbb{B}^\times$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Brian C. Hall, <em>Lie Groups, Lie Algebras, and Representations: An Elementary Introduction</em> (Springer, 2nd ed. 2015).</li>
+<li>John Stillwell, <em>Naive Lie Theory</em> (Springer, 2008).</li>
+<li>J. P. Ward, <em>Quaternions and Cayley Numbers: Algebra and Applications</em> (Kluwer, Dordrecht, 1997).</li>
+<li>S. J. Sangwine, T. A. Ell, and N. Le Bihan, "Fundamental representations and algebraic properties of biquaternions or complexified quaternions", <em>Advances in Applied Clifford Algebras</em> <strong>21</strong> (2011) 607–636.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

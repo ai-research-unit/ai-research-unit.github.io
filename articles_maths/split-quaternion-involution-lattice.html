@@ -94,7 +94,7 @@ $$</p>
 <p>$$
 \alpha(\tilde q y) = \alpha(\tilde q)\alpha(y), \qquad \rho(\tilde q y) = \rho(y)\rho(\tilde q), \qquad \overline{\tilde q y} = \bar{y}\,\bar{\tilde q}.
 $$</p>
-<p><strong>Proof.</strong> It suffices to check the generators, using $e_3 = e_1 e_2$. For $\alpha$: $\alpha(e_1)\alpha(e_2) = (-e_1)(-e_2) = e_1 e_2 = e_3 = \alpha(e_3)$, and the squares are preserved. For $\rho$: $\rho(e_2)\rho(e_1) = e_2 e_1 = -e_3 = \rho(e_3)$. For the conjugation: $\bar{e_2}\bar{e_1} = (-e_2)(-e_1) = e_2 e_1 = -e_3 = \bar{e_3}$. $\square$</p>
+<p><strong>Proof.</strong> It suffices to check the generators, using $e_3 = e_1 e_2$. For $\alpha$: $\alpha(e_1)\alpha(e_2) = (-e_1)(-e_2) = e_1 e_2 = e_3 = \alpha(e_3)$, and the squares are preserved. For $\rho$: $\rho(e_2)\rho(e_1) = e_2 e_1 = -e_3 = \rho(e_3)$. For the conjugation: $\bar{e_2}\bar{e_1} = (-e_2)(-e_1) = e_2 e_1 = -e_3 = \bar{e_3}$.</p>
 <h2 id="the-group-they-generate">The Group They Generate</h2>
 <h3 id="two-composition-rules">Two Composition Rules</h3>
 <p>The three involutions satisfy</p>
@@ -103,7 +103,7 @@ $$</p>
 $$</p>
 <p>so that any two of them determine the third. Equivalent forms are $\bar{\cdot}\,\alpha = \alpha\,\bar{\cdot} = \rho$ and $\bar{\cdot}\,\rho = \rho\,\bar{\cdot} = \alpha$. In particular $\alpha$ and $\rho$ commute, every product of two distinct involutions is the third, and every square is the identity.</p>
 <p><strong>Theorem.</strong> The set $G = \{\operatorname{id}, \alpha, \rho, \bar{\cdot}\}$ is closed under composition and is a group, isomorphic to the <strong>Klein four-group</strong> $\mathbb{Z}/2 \times \mathbb{Z}/2$. Every non-identity element is an involution.</p>
-<p><strong>Proof.</strong> Closure follows from the rules above: the product of two distinct involutions is the third, and the square of each is the identity; the identity is included. Associativity is inherited from the composition of functions. Hence $G$ is a group of order $4$ in which every element has order $2$, which is $\mathbb{Z}/2 \times \mathbb{Z}/2$. $\square$</p>
+<p><strong>Proof.</strong> Closure follows from the rules above: the product of two distinct involutions is the third, and the square of each is the identity; the identity is included. Associativity is inherited from the composition of functions. Hence $G$ is a group of order $4$ in which every element has order $2$, which is $\mathbb{Z}/2 \times \mathbb{Z}/2$.</p>
 <h3 id="composition-table">Composition Table</h3>
 <p>The composition $g \circ h$ of the rows on the columns is</p>
 <div class="table-scroll"><table>
@@ -304,7 +304,7 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p><strong>Proof.</strong> For generic $\tilde q$ with $q_1,q_2,q_3 \neq 0$, the four images are distinct, so $|\operatorname{Orb}(\tilde q)| = 4$ and the stabiliser is trivial. If $q_3 = 0$ but $(q_1,q_2) \neq (0,0)$, the images of $\tilde q$ and $\rho(\tilde q)$ coincide, since $\rho$ fixes $e_1$ and $e_2$, and $\bar{\tilde q}, \alpha(\tilde q)$ coincide for the same reason; the orbit has size $2$ and the stabiliser is $\{\operatorname{id},\rho\}$. If $q_1 = q_2 = 0$ and $q_3 \neq 0$, then $\alpha$ fixes $\tilde q$ while $\bar{\cdot}$ and $\rho$ coincide, giving size $2$ and stabiliser $\{\operatorname{id},\alpha\}$. If $\tilde q \in S$ then every element of $G$ fixes $\tilde q$, giving the singleton orbit and stabiliser $G$. $\square$</p>
+<p><strong>Proof.</strong> For generic $\tilde q$ with $q_1,q_2,q_3 \neq 0$, the four images are distinct, so $|\operatorname{Orb}(\tilde q)| = 4$ and the stabiliser is trivial. If $q_3 = 0$ but $(q_1,q_2) \neq (0,0)$, the images of $\tilde q$ and $\rho(\tilde q)$ coincide, since $\rho$ fixes $e_1$ and $e_2$, and $\bar{\tilde q}, \alpha(\tilde q)$ coincide for the same reason; the orbit has size $2$ and the stabiliser is $\{\operatorname{id},\rho\}$. If $q_1 = q_2 = 0$ and $q_3 \neq 0$, then $\alpha$ fixes $\tilde q$ while $\bar{\cdot}$ and $\rho$ coincide, giving size $2$ and stabiliser $\{\operatorname{id},\alpha\}$. If $\tilde q \in S$ then every element of $G$ fixes $\tilde q$, giving the singleton orbit and stabiliser $G$.</p>
 <p>The count is exact because $G$ acts in the $(q_1,q_2,q_3)$-coordinates through the subgroup</p>
 <p>$$
 H = \{\, (0,0,0),\, (1,1,1),\, (1,1,0),\, (0,0,1) \,\} \subset (\mathbb{Z}/2)^3,
@@ -379,7 +379,7 @@ $$</p>
 </tbody>
 </table></div>
 <p>The two lines $\langle e_1\rangle$ and $\langle e_2\rangle$ carry the same triple pattern and are therefore not separated by $G$; this is the lattice-theoretic reason for the unsplittable plane of <em>Split-Quaternion Subspaces and the Involutions</em>. Only the line $\langle e_3\rangle$ carries a distinct pattern, $(-,+,-)$.</p>
-<h2 id="the-relation-to-the-involution-lattice-of-math299">The Relation to the Involution Lattice of $\mathbb{B}$</h2>
+<h2 id="the-relation-to-the-involution-lattice-of-math296">The Relation to the Involution Lattice of $\mathbb{B}$</h2>
 <p>The biquaternion article <em>Biquaternion Involution Lattice</em> treats four involutions — the conjugation $\bar{\cdot}$, the complex conjugation ${}^{*}$, the Hermitian conjugation ${}^{\dagger} = {}^{*}\bar{\cdot}$ and the anti-Hermitian one $\flat = -\dagger$ — which generate a larger group and produce a richer lattice, because $\mathbb{B}$ has eight real coordinates and four involutions. The split-quaternion lattice differs in two structural ways. First, three involutions generate the Klein four-group, so the composition table is the simplest of all nontrivial groups and the whole group is determined by any two of the involutions. Second, the eigenspace lattice has a <strong>maximum chain</strong> of length four, $\{0\} \subset S \subset \operatorname{span}\{e_1,e_2\} \subset \operatorname{span}\{1,e_1,e_2\} \subset \mathbb{H}_{\mathrm{s}}$, and the vector subspace $V$ lies outside it; the lattice has two incomparable three-dimensional elements $V$ and $\operatorname{span}\{1,e_1,e_2\}$ rather than a single maximal proper subspace as a chain would give. Nothing biquaternion-specific — the two commuting complex structures, the Hermitian pairing — is invoked here.</p>
 <h2 id="examples">Examples</h2>
 <p><strong>Example (an element of each orbit size).</strong> The element $\tilde q = 5 + 2e_1 + 3e_2 + 4e_3$ has orbit size $4$ with trivial stabiliser; the element $\tilde q = 5 + 2e_1 + 3e_2$ has orbit $\{\tilde q, \bar{\tilde q}\}$ of size $2$ with stabiliser $\{\operatorname{id},\rho\}$; the element $\tilde q = 5 + 4e_3$ has orbit size $2$ with stabiliser $\{\operatorname{id},\alpha\}$; and the scalar $\tilde q = 5$ has orbit size $1$ with stabiliser $G$.</p>

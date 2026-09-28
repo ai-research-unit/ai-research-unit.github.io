@@ -60,7 +60,7 @@ $$
 \boxed{\;T^\mu{}_\nu = \frac{1}{2}\,\mathrm{Sc}\!\left(\tilde F\,\mathcal{E}_\mu\,\tilde F^\dagger\,\mathcal{E}_\nu\right)\;}
 $$
 whose mixed components are $T^0{}_0 = -W$, $T^0{}_j = \frac{1}{c}S_j$, $T^j{}_0 = -\frac{1}{c}S_j$, $T^j{}_k = -\sigma_{jk}$, with $\sigma_{jk}$ the Maxwell stress. Raising the second index gives a symmetric tensor; it is traceless, and it is conserved with the four-force density as source.</p>
-<p>An exercise built on parents tests them. The four-component energy–momentum is the case in point, and Problem 1 states it plainly: the real form $\tilde W = W + \frac{1}{c}\mathbf{S}$ and its claimed conservation law $\tilde\nabla\tilde W = -\tilde P$ do not reproduce the Poynting theorem, while the Hermitian form $\frac{1}{2}\tilde F\tilde F^\dagger$ that the parents state does. The failing form is displayed, the failure is demonstrated by computation on a free plane wave, and the construction is then redone in the form that works. The evidence is recorded in the companion file.</p>
+<p>An exercise built on parents tests them. The four-component energy–momentum is the case in point, and Problem 1 states it plainly: the real form $\tilde W = W + \frac{1}{c}\mathbf{S}$ and its claimed conservation law $\tilde\nabla\tilde W = -\tilde P$ do not reproduce the Poynting theorem, while the Hermitian form $\frac{1}{2}\tilde F\tilde F^\dagger$ that the parents state does. The failing form is displayed, the failure is demonstrated by computation on a free plane wave, and the construction is then redone in the form that works.</p>
 <h2 id="the-problem">The Problem</h2>
 <p>A symmetric rank-two tensor in four dimensions has ten independent components: the trace and nine traceless parts. A biquaternion has four complex coefficients, that is eight real dimensions. So <strong>no single biquaternion can be $T^{\mu\nu}$</strong>; a biquaternion-valued object can carry at most four of the six independent spatial-stress components. The parents supply exactly such an object — the four-component biquaternionic energy–momentum $\tilde W = \frac{1}{2}\tilde F\tilde F^\dagger$ — and the exercise tests both it and the real form $\tilde W = W + \frac{1}{c}\mathbf{S}$ with which it is easily confused. The problem is therefore not to write $T^{\mu\nu}$ as one biquaternion, which is impossible, but to write it as a <strong>biquaternion bilinear</strong>: a quadratic expression in $\tilde F$ that carries two vector directions, one for each index.</p>
 <p>The natural pair of directions is supplied by the basis $\mathcal{E}_\mu$ of $\mathbb{M}_-$. Inserting $\mathcal{E}_\mu$ and $\mathcal{E}_\nu$ into the Hermitian form $\tilde F(\,\cdot\,)\tilde F^\dagger$ and taking the scalar part produces exactly one component for each ordered pair $(\mu,\nu)$, and it produces them all from a single expression. The problems below verify that this construction is the standard energy–momentum tensor, component by component.</p>
@@ -90,7 +90,7 @@ with
 $$
 W = \frac{1}{2}\left(\epsilon\,\mathbf{E}^2 + \mu\,\mathbf{H}^2\right), \qquad \mathbf{S} = \mathbf{E}\times\mathbf{H}.
 $$
-This is an element of $\mathbb{M}_+$: its scalar part $2W$ is real and its vector part $\frac{2i}{c}\mathbf{S}$ is purely imaginary. Its scalar part is twice the energy density, and its vector part carries the Poynting vector. This agrees with the parent article <em>The Field-Strength Biquaternion and Its Invariants</em>, whose contrast between the norm form and the Hermitian form gives $\tilde F\tilde F^\dagger = 2We_0 + \frac{2i}{c}\mathbf{S}$ and $\tilde F^\dagger\tilde F = 2We_0 - \frac{2i}{c}\mathbf{S}$.</p>
+This is an element of $\mathbb{M}_+$: its scalar part $2W$ is real and its vector part $\frac{2i}{c}\mathbf{S}$ is purely imaginary. Its scalar part is twice the energy density, and its vector part carries the Poynting vector. This agrees with the parent article <em>The Field-Strength Biquaternion and Its Invariants</em>, whose contrast between the biquaternion norm and the Hermitian form gives $\tilde F\tilde F^\dagger = 2We_0 + \frac{2i}{c}\mathbf{S}$ and $\tilde F^\dagger\tilde F = 2We_0 - \frac{2i}{c}\mathbf{S}$.</p>
 <p><strong>Solution (b).</strong> The parents state the biquaternionic energy–momentum in the Hermitian form of part (a). The form it is easily miswritten in is the real form
 $$
 \tilde W = W + \frac{1}{c}\,\mathbf{S}, \qquad W = \frac{1}{2}\left(\epsilon\mathbf{E}^2 + \mu\mathbf{H}^2\right), \quad \mathbf{S} = \mathbf{E}\times\mathbf{H},
@@ -243,7 +243,7 @@ $$
 T^{\mu\nu} = W\begin{pmatrix} 1 & 0 & 0 & 1 \\ 0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0 \\ 1 & 0 & 0 & 1 \end{pmatrix} = \frac{W}{(\omega/c)^2}\,k^\mu k^\nu .
 $$
 The tensor is manifestly rank one: it has one nonzero eigenvalue $2W$, along the null direction $k$, and it annihilates every vector orthogonal to $k$. The trace vanishes, $\eta_{\mu\nu}T^{\mu\nu} = -T^{00} + T^{33} = -W + W = 0$, consistent with Problem 3. The divergence vanishes because the wave vector is null and $W$ depends on the phase alone: $\partial_\mu T^{\mu\nu} \propto (\partial_\mu W)k^\mu k^\nu$ with $\partial_\mu W\,k^\mu = k\left(\frac{1}{c}\partial_tW + \partial_zW\right) = 0$, using $\partial_zW = -\frac{1}{c}\partial_tW$. The direct computation confirms $\partial_\mu T^{\mu\nu} = 0$ and $T^\mu{}_\mu = 0$ identically in $z$ and $t$.</p>
-<p>The rank-one character is the energy–momentum expression of the vanishing norm form. A null field, $N(\tilde F) = 0$, is a zero divisor of $\mathbb{B}$, and its energy–momentum tensor is built from a single null direction. The plane wave is the model case; the general null field behaves the same way pointwise, which is the content of the first further problem below.</p>
+<p>The rank-one character is the energy–momentum expression of the vanishing biquaternion norm. A null field, $N(\tilde F) = 0$, is a zero divisor of $\mathbb{B}$, and its energy–momentum tensor is built from a single null direction. The plane wave is the model case; the general null field behaves the same way pointwise, which is the content of the first further problem below.</p>
 <p><strong>Remark on why this case matters.</strong> The plane wave is exactly the case on which the real form's conservation law fails (Problem 1) and on which the parents' Hermitian form and the constructed tensor both work. A claim checked only on the case that suggested it is not checked; the real form's $\tilde\nabla\tilde W = -\tilde P$ is refuted here on the simplest free field, the case where the Poynting theorem is most transparent.</p>
 <h2 id="further-problems">Further Problems</h2>
 <p>The following problems are left to the reader. They extend the construction, and some of them are open.</p>
@@ -352,7 +352,7 @@ with $W = \frac{1}{2}(\epsilon\mathbf{E}^2 + \mu\mathbf{H}^2)$ the energy densit
 </tr>
 <tr>
 <td>$N(\tilde F) = \tilde F\bar{\tilde F}$</td>
-<td>Norm form (vanishes for a null field)</td>
+<td>Biquaternion norm (vanishes for a null field)</td>
 </tr>
 <tr>
 <td>$\mathrm{Tr}(\tilde P\tilde H) = 2\,\mathrm{Sc}(\tilde P\tilde H)$</td>

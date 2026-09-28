@@ -63,9 +63,9 @@ F_0\subseteq F_1\subseteq F_2\subseteq\cdots, \qquad \bigcup_{k\ge0}F_k=\mathrm{
 $$</p>
 <p>is the <strong>length filtration</strong>. It is <strong>increasing</strong> because the generating products of $F_k$ are among those of $F_{k+1}$, and it is <strong>exhaustive</strong> by the universal property; the scalars lie in every $F_k$, so $\bigcap_kF_k=F_0=F\cdot1$ for every $q$, degenerate ones included.</p>
 <p><strong>Proposition.</strong> $F_0=F\cdot1$ and $F_1=F\oplus V$.</p>
-<p><strong>Proof.</strong> The products of no vectors are the scalars of the algebra, and those of at most one vector span the scalars together with $V$. $\square$</p>
+<p><strong>Proof.</strong> The products of no vectors are the scalars of the algebra, and those of at most one vector span the scalars together with $V$.</p>
 <p><strong>Theorem.</strong> The filtration is compatible with the product: $F_jF_l\subseteq F_{j+l}$ for all $j,l$.</p>
-<p><strong>Proof.</strong> It suffices to multiply a product of $j$ vectors by a product of $l$ vectors, which is a product of $j+l$ vectors. $\square$</p>
+<p><strong>Proof.</strong> It suffices to multiply a product of $j$ vectors by a product of $l$ vectors, which is a product of $j+l$ vectors.</p>
 <p>A filtered algebra is one carrying such a chain, and the theorem is the only compatibility the definition requires.</p>
 <h3 id="why-the-filtration-is-not-a-grading">Why the Filtration Is Not a Grading</h3>
 <p>The product of an element of $F_j$ with one of $F_l$ lies in $F_{j+l}$, but its component of exact length $j+l$ need not exhaust it: the relation $uv+vu=2B(u,v)$ converts a product of two vectors into a scalar plus a bivector, hence a product of two vectors into a sum of an element of $F_0$ and an element of $F_2$. So the spaces spanned by the products of a fixed length do not form a grading of the algebra, and the filtration is strictly finer information than any single grade. The algebra is a <strong>deformation</strong> of the exterior algebra in the sense made precise below.</p>
@@ -80,7 +80,7 @@ $$</p>
 <p>$$
 \bar x\,\bar y=(-1)^{jl}\,\bar y\,\bar x \qquad (\bar x\in\operatorname{gr}_j,\ \bar y\in\operatorname{gr}_l).
 $$</p>
-<p><strong>Proof.</strong> Associativity is inherited from the associativity of the product of $\mathrm{Cl}(V,q)$. For the sign, $xy$ and $yx$ differ by $(xy-yx)$, which for $x$ a product of $j$ vectors and $y$ a product of $l$ vectors lies in $F_{j+l-2}$ by repeated application of $uv=-vu+2B(u,v)$; hence $xy-yx$ is of filtration at most $j+l-2$, and only its class in $\operatorname{gr}$ matters, so $\bar x\bar y=(-1)^{jl}\bar y\bar x$. $\square$</p>
+<p><strong>Proof.</strong> Associativity is inherited from the associativity of the product of $\mathrm{Cl}(V,q)$. For the sign, $xy$ and $yx$ differ by $(xy-yx)$, which for $x$ a product of $j$ vectors and $y$ a product of $l$ vectors lies in $F_{j+l-2}$ by repeated application of $uv=-vu+2B(u,v)$; hence $xy-yx$ is of filtration at most $j+l-2$, and only its class in $\operatorname{gr}$ matters, so $\bar x\bar y=(-1)^{jl}\bar y\bar x$.</p>
 <h3 id="the-theorem-of-poincarebirkhoffwitt">The Theorem of Poincaré–Birkhoff–Witt</h3>
 <p><strong>Theorem.</strong> For every quadratic form $q$ the linear map</p>
 <p>$$
@@ -92,7 +92,7 @@ $$</p>
 <p>$$
 \dim F_k=\sum_{j=0}^{k}\binom nj, \qquad \dim\operatorname{gr}_k\mathrm{Cl}(V,q)=\binom nk=\dim\Lambda^kV .
 $$</p>
-<p>A surjective linear map between spaces of equal finite dimension is an isomorphism, so the map is bijective for every $k$. For the multiplication, the top filtration term of a product of a $j$-vector and an $l$-vector is their wedge by the grade theorem of <em>The Geometric Product and the Grade Decomposition</em>, so the induced product on $\operatorname{gr}$ is the wedge. $\square$</p>
+<p>A surjective linear map between spaces of equal finite dimension is an isomorphism, so the map is bijective for every $k$. For the multiplication, the top filtration term of a product of a $j$-vector and an $l$-vector is their wedge by the grade theorem of <em>The Geometric Product and the Grade Decomposition</em>, so the induced product on $\operatorname{gr}$ is the wedge.</p>
 <p><strong>Remark (degenerate forms).</strong> Injectivity above uses the basis theorem, which needs the form to be non-degenerate; for a degenerate form the reduction of <em>Degenerate Clifford Algebras and the Radical</em> writes $V=\operatorname{Rad}(V,q)\oplus W$ with $q|_W$ non-degenerate and $\mathrm{Cl}(V,q)$ as the Clifford algebra of $W$ contracted with the exterior algebra of the radical, and the same count gives $\dim F_k=\sum_{j\le k}\binom nj$ again. The theorem therefore holds for every quadratic form, which is the reason the filtration, unlike the grade decomposition, is the natural tool in the degenerate case.</p>
 <h2 id="the-relation-to-the-grade-decomposition">The Relation to the Grade Decomposition</h2>
 <h3 id="the-cumulative-filtration">The Cumulative Filtration</h3>
@@ -102,17 +102,17 @@ $$</p>
 F_k=\mathrm{Cl}_0(V,q)\oplus\mathrm{Cl}_1(V,q)\oplus\cdots\oplus\mathrm{Cl}_k(V,q),
 $$</p>
 <p>the sum of the graded pieces of grade at most $k$. Hence $\operatorname{gr}_k\mathrm{Cl}(V,q)\cong\mathrm{Cl}_k(V,q)$ canonically, and the filtration is the <strong>cumulative</strong> filtration of the grading.</p>
-<p><strong>Proof.</strong> Every monomial $e_{i_1}\cdots e_{i_j}$ with $j\le k$ lies in $\mathrm{Cl}_j$, and every $j$-vector with $j\le k$ is a combination of such monomials, so the two sides have the same spanning set; conversely an element of $\mathrm{Cl}_j$ with $j>k$ is not a combination of monomials of length at most $k$, by the independence of the monomials. $\square$</p>
+<p><strong>Proof.</strong> Every monomial $e_{i_1}\cdots e_{i_j}$ with $j\le k$ lies in $\mathrm{Cl}_j$, and every $j$-vector with $j\le k$ is a combination of such monomials, so the two sides have the same spanning set; conversely an element of $\mathrm{Cl}_j$ with $j>k$ is not a combination of monomials of length at most $k$, by the independence of the monomials.</p>
 <p>So for a non-degenerate form the filtration adds nothing to the grading: the graded pieces are the grades, and the associated graded algebra is the exterior algebra read through the antisymmetrisation map.</p>
 <h3 id="the-symbol-map-revisited">The Symbol Map Revisited</h3>
 <p><strong>Theorem.</strong> Let $\sigma:\Lambda(V)\to\mathrm{Cl}(V,q)$ be the linear isomorphism of <em>The Geometric Product and the Grade Decomposition</em> sending a wedge of vectors to their antisymmetrised product. Then the composition of $\sigma$ with the quotient map $F_k\to\operatorname{gr}_k$ is the Poincaré–Birkhoff–Witt isomorphism, and the two isomorphisms $\Lambda(V)\to\operatorname{gr}\mathrm{Cl}(V,q)$ agree.</p>
-<p><strong>Proof.</strong> For a wedge of vectors $v_1\wedge\cdots\wedge v_k$ the antisymmetrisation $\sigma$ is $\frac1{k!}\sum_{\pi}\operatorname{sgn}(\pi)v_{\pi(1)}\cdots v_{\pi(k)}$, each term of which is $v_1\cdots v_k$ plus an element of $F_{k-1}$; so $\sigma$ and the monomial map have the same class in $\operatorname{gr}_k$. $\square$</p>
+<p><strong>Proof.</strong> For a wedge of vectors $v_1\wedge\cdots\wedge v_k$ the antisymmetrisation $\sigma$ is $\frac1{k!}\sum_{\pi}\operatorname{sgn}(\pi)v_{\pi(1)}\cdots v_{\pi(k)}$, each term of which is $v_1\cdots v_k$ plus an element of $F_{k-1}$; so $\sigma$ and the monomial map have the same class in $\operatorname{gr}_k$.</p>
 <p><strong>Corollary.</strong> The Clifford algebra and the exterior algebra of the same space have the same dimension, $\sum_{k}\binom nk=2^n$, and the symbol map is a linear isomorphism realising the equality.</p>
-<p><strong>Proof.</strong> The associated graded algebra of a filtered vector space has the same dimension as the space, and it is $\Lambda(V)$ by the theorem. $\square$</p>
+<p><strong>Proof.</strong> The associated graded algebra of a filtered vector space has the same dimension as the space, and it is $\Lambda(V)$ by the theorem.</p>
 <h2 id="the-parallel-with-the-universal-enveloping-algebra">The Parallel with the Universal Enveloping Algebra</h2>
 <p>The construction is the quadratic analogue of a classical one for Lie algebras.</p>
-<p><strong>Theorem.</strong> Let $\mathfrak g$ be a Lie algebra and $U(\mathfrak g)$ its universal enveloping algebra, filtered by the length of the products of elements of $\mathfrak g$. Then the associated graded algebra is the symmetric algebra, $\operatorname{gr}U(\mathfrak g)\cong S(\mathfrak g)$.</p>
-<p><strong>Proof.</strong> This is the Poincaré–Birkhoff–Witt theorem for Lie algebras, as recorded in <em>Representations of Lie Algebras</em>. $\square$</p>
+<p><strong>Theorem.</strong> Let $\mathrm{G}$ be a Lie algebra and $U(\mathrm{G})$ its universal enveloping algebra, filtered by the length of the products of elements of $\mathrm{G}$. Then the associated graded algebra is the symmetric algebra, $\operatorname{gr}U(\mathrm{G})\cong S(\mathrm{G})$.</p>
+<p><strong>Proof.</strong> This is the Poincaré–Birkhoff–Witt theorem for Lie algebras, as recorded in <em>Representations of Lie Algebras</em>.</p>
 <p>The two theorems are read side by side as a dictionary:</p>
 <div class="table-scroll"><table>
 <thead>
@@ -123,7 +123,7 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>Generators $x\in\mathfrak g$</td>
+<td>Generators $x\in\mathrm{G}$</td>
 <td>Generators $v\in V$</td>
 </tr>
 <tr>
@@ -135,7 +135,7 @@ $$</p>
 <td>Alternating normal form</td>
 </tr>
 <tr>
-<td>$\operatorname{gr}U(\mathfrak g)\cong S(\mathfrak g)$</td>
+<td>$\operatorname{gr}U(\mathrm{G})\cong S(\mathrm{G})$</td>
 <td>$\operatorname{gr}\mathrm{Cl}(V,q)\cong\Lambda(V)$</td>
 </tr>
 <tr>
@@ -148,14 +148,14 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>The last row is the substantive difference. The commutator of two generators has length one, so the filtration of $U(\mathfrak g)$ is not separated by parity; the anticommutator of two generators is a scalar, of length zero and even, so every filtration step of $\mathrm{Cl}(V,q)$ splits into an even and an odd part, and the parity grading survives the passage to the associated graded algebra. The exterior algebra, not the symmetric one, appears because the Clifford relation is symmetric in the generators and the deformation it performs is a deformation by a quadratic form rather than by a Lie bracket.</p>
+<p>The last row is the substantive difference. The commutator of two generators has length one, so the filtration of $U(\mathrm{G})$ is not separated by parity; the anticommutator of two generators is a scalar, of length zero and even, so every filtration step of $\mathrm{Cl}(V,q)$ splits into an even and an odd part, and the parity grading survives the passage to the associated graded algebra. The exterior algebra, not the symmetric one, appears because the Clifford relation is symmetric in the generators and the deformation it performs is a deformation by a quadratic form rather than by a Lie bracket.</p>
 <h2 id="worked-cases">Worked Cases</h2>
 <h3 id="one-and-two-dimensions">One and Two Dimensions</h3>
 <p>Let $q$ be non-degenerate on $V$ of dimension $1$, with $q(e_1)=a\neq0$. Then $F_0=F$, $F_1=\mathrm{Cl}(V,q)$ and $F_k=\mathrm{Cl}(V,q)$ for $k\ge1$, with $\operatorname{gr}_0\cong F$ and $\operatorname{gr}_1\cong V$, of dimensions $1$ and $1$; the associated graded algebra is $\Lambda(V)=\Lambda^0\oplus\Lambda^1$.</p>
 <p>For $\dim V=2$ with orthogonal $e_1,e_2$, the filtration steps are $F_0=F$, $F_1=F\oplus V$ of dimension $3$, and $F_2=\mathrm{Cl}(V,q)$ of dimension $4$; the quotients have dimensions $1,2,1$, the dimensions of $\Lambda^0,\Lambda^1,\Lambda^2$, and the product of the classes of $e_1$ and $e_2$ in $\operatorname{gr}_1$ is the class of $e_1e_2$ in $\operatorname{gr}_2$, which is the exterior product $e_1\wedge e_2$ because $e_1e_2$ and $-e_2e_1$ differ by $2B(e_1,e_2)=0$.</p>
 <h3 id="the-situation-when-the-form-is-trivial">The Situation When the Form Is Trivial</h3>
 <p><strong>Theorem.</strong> If $q=0$ then the filtration is the grading of the exterior algebra in disguise: the canonical map $\Lambda(V)\to\mathrm{Cl}(V,q)$ of <em>The Clifford Algebra</em> is an isomorphism of graded algebras, and the filtration steps are $F_k=\bigoplus_{j\le k}\Lambda^jV$.</p>
-<p><strong>Proof.</strong> With $q=0$ the relation becomes $uv=-vu$, so $\mathrm{Cl}(V,0)=\Lambda(V)$ by the cited universal property, and a product of $k$ vectors is a $k$-vector. $\square$</p>
+<p><strong>Proof.</strong> With $q=0$ the relation becomes $uv=-vu$, so $\mathrm{Cl}(V,0)=\Lambda(V)$ by the cited universal property, and a product of $k$ vectors is a $k$-vector.</p>
 <p>So the theorem of Poincaré–Birkhoff–Witt degenerates to a tautology when the form vanishes, which is the sense in which the exterior algebra is the free or undeformed case of the Clifford algebra.</p>
 <h2 id="summary">Summary</h2>
 <p>The <strong>length filtration</strong> $F_k$ of $\mathrm{Cl}(V,q)$ is spanned by the products of at most $k$ vectors; it is increasing, exhaustive and compatible with the product, $F_jF_l\subseteq F_{j+l}$, and $F_0=F\cdot1$, $F_1=F\oplus V$. It is a filtration and not a grading, because the defining relation lowers the length of a product: $uv+vu=2B(u,v)$ turns a product of two vectors into a scalar plus a bivector.</p>
@@ -199,7 +199,7 @@ $$</p>
 <td>Symbol map, the antisymmetrisation</td>
 </tr>
 <tr>
-<td>$U(\mathfrak g)$, $S(\mathfrak g)$</td>
+<td>$U(\mathrm{G})$, $S(\mathrm{G})$</td>
 <td>Enveloping algebra and symmetric algebra, the parallel case</td>
 </tr>
 </tbody>

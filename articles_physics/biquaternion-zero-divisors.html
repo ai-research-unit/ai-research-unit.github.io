@@ -53,14 +53,14 @@
         <h1 id="biquaternion-zero-divisors"><strong>Biquaternion Zero Divisors</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>This article studies the zero divisors of the biquaternion algebra $\mathbb{B}$: it characterises them, splits them into two families and describes their structure. It follows <em>Biquaternion Norm and Invertibility</em>, which established the invertibility criterion and the three-way classification of the elements of $\mathbb{B}$.</p>
-<p>Physically, the zero divisors are the <strong>null elements</strong>, and the subject of this article is therefore the light-cone structure of the framework. A biquaternion is a zero divisor exactly when its norm form vanishes, and in the physical reading the norm form is the invariant that decides whether an element can be inverted: the units are the frames and the transformations, the null elements are the light rays. That the algebra is not a division algebra is not a defect of the framework but a precondition of it: a division algebra has no null elements, hence no light.</p>
+<p>Physically, the zero divisors are the <strong>null elements</strong>, and the subject of this article is therefore the light-cone structure of the framework. A biquaternion is a zero divisor exactly when its biquaternion norm vanishes, and in the physical reading the biquaternion norm is the invariant that decides whether an element can be inverted: the units are the frames and the transformations, the null elements are the light rays. That the algebra is not a division algebra is not a defect of the framework but a precondition of it: a division algebra has no null elements, hence no light.</p>
 <p>The zero divisors split into two families, and the split is the same one that organises the kinematics:</p>
 <ul>
 <li>the <strong>pure</strong> zero divisors, with vanishing scalar part, which square to zero: the <strong>nilpotent</strong> or <strong>parabolic</strong> elements, the null generators of the algebra's flow;</li>
 <li>the <strong>non-pure</strong> zero divisors, with nonzero scalar part, which are complex multiples of idempotents: a null element of this family is a <strong>scaled projector</strong>, and the normalised element is a pure state.</li>
 </ul>
 <p>The article closes with the distribution of the zero divisors over the six distinguished subspaces — this is where the causal structure appears explicitly, as the double cones inside the two Hermitian sectors — and with the zero divisor set itself.</p>
-<p><strong>Conventions.</strong> The quaternion basis is $e_0 = 1,e_1,e_2,e_3$ and the scalar imaginary is $i$; a general element is $\tilde{Q} = \sum_\mu Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$. The conjugations are $\bar{\tilde{Q}}$, $\tilde{Q}^*$ and $\tilde{Q}^\dagger = \bar{\tilde{Q}}^*$, the anti-Hermitian conjugate is $\tilde{Q}^\flat = -\tilde{Q}^\dagger$, and the norm form is $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$. The material coordinate is $ict\,e_0+\mathbf{x}$ and the informational coordinate is $ct'\,e_0+i\mathbf{x}'$.</p>
+<p><strong>Conventions.</strong> The quaternion basis is $e_0 = 1,e_1,e_2,e_3$ and the scalar imaginary is $i$; a general element is $\tilde{Q} = \sum_\mu Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$. The conjugations are $\bar{\tilde{Q}}$, $\tilde{Q}^*$ and $\tilde{Q}^\dagger = \bar{\tilde{Q}}^*$, the anti-Hermitian conjugate is $\tilde{Q}^\flat = -\tilde{Q}^\dagger$, and the biquaternion norm is $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$. The material coordinate is $ict\,e_0+\mathbf{x}$ and the informational coordinate is $ct'\,e_0+i\mathbf{x}'$.</p>
 <h2 id="definition-and-criterion">Definition and Criterion</h2>
 <h3 id="definition">Definition</h3>
 <p>A biquaternion $\tilde{Q}$ is a <strong>zero divisor</strong> if it is <strong>nonzero</strong> and there exists a <strong>nonzero</strong> $\tilde{R}$ with</p>
@@ -71,7 +71,7 @@ $$</p>
 <h3 id="criterion">Criterion</h3>
 <p><strong>Theorem.</strong> A nonzero biquaternion $\tilde{Q}$ is a zero divisor if and only if $N(\tilde{Q}) = 0$.</p>
 <p><strong>Proof.</strong> If $\tilde{Q}\neq0$ and $N(\tilde{Q}) = 0$, then $\tilde{Q}\bar{\tilde{Q}} = 0$ and $\bar{\tilde{Q}}\neq0$, so $\tilde{R} = \bar{\tilde{Q}}$ witnesses the definition.</p>
-<p>Conversely, if $\tilde{Q}\circ\tilde{R} = 0$ with $\tilde{R}\neq0$ and $N(\tilde{Q})\neq0$, then $\tilde{Q}$ is invertible and left multiplication by $\tilde{Q}^{-1}$ gives $\tilde{R} = 0$, a contradiction. $\square$</p>
+<p>Conversely, if $\tilde{Q}\circ\tilde{R} = 0$ with $\tilde{R}\neq0$ and $N(\tilde{Q})\neq0$, then $\tilde{Q}$ is invertible and left multiplication by $\tilde{Q}^{-1}$ gives $\tilde{R} = 0$, a contradiction.</p>
 <h3 id="the-three-way-classification">The Three-Way Classification</h3>
 <p>Combining the invertibility criterion with the criterion above, the elements of $\mathbb{B}$ are partitioned into three classes:</p>
 <div class="table-scroll"><table>
@@ -100,7 +100,7 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>So the zero divisors are exactly the nonzero elements on which the norm form vanishes, and the units are exactly the elements on which it does not.</p>
+<p>So the zero divisors are exactly the nonzero elements on which the biquaternion norm vanishes, and the units are exactly the elements on which it does not.</p>
 <p><strong>Physical reading.</strong> This is the framework's causal trichotomy stated algebraically. An element with $N\neq0$ can be inverted, rescaled and boosted: it is a frame. An element with $N = 0$ cannot: it is a light-like direction, and no rescaling of it is a frame. The unit group $\mathbb{B}^\times$ is where the framework's transformations live; the null cone is its boundary.</p>
 <h3 id="the-algebra-is-not-a-division-algebra">The Algebra Is Not a Division Algebra</h3>
 <p>A <strong>division algebra</strong> is an algebra in which every nonzero element is invertible; for a finite-dimensional algebra this is equivalent to containing no zero divisors. Since $\mathbb{B}$ contains zero divisors, it is <strong>not</strong> a division algebra, in contrast with the Frobenius theorem, which states that the only finite-dimensional associative real division algebras are $\mathbb{R}$, $\mathbb{C}$ and $\mathbb{H}$.</p>
@@ -113,11 +113,11 @@ $$</p>
 <p>A biquaternion is <strong>non-pure</strong> if $\tilde{Q} = Q_0e_0+\mathbf{Q}$ with $Q_0\in\mathbb{C}$, $Q_0\neq0$. The non-pure zero divisors are treated below.</p>
 <h3 id="why-the-scalar-part-is-the-right-invariant">Why the Scalar Part Is the Right Invariant</h3>
 <p>The scalar part is the natural invariant because $i$ is central in $\mathbb{B}$: the scalar part is the component in the central direction, the vector part the component perpendicular to it. The two cases are distinguished by whether this central component vanishes.</p>
-<p>In the <strong>pure</strong> case the norm form reduces to the complex scalar</p>
+<p>In the <strong>pure</strong> case the biquaternion norm reduces to the complex scalar</p>
 <p>$$
 N(\tilde{Q}) = (\mathbf{Q},\mathbf{Q}) = Q_1^2+Q_2^2+Q_3^2 ,
 $$</p>
-<p>whose vanishing is the nilpotent condition. In the <strong>non-pure</strong> case the norm form carries the scalar contribution in addition,</p>
+<p>whose vanishing is the nilpotent condition. In the <strong>non-pure</strong> case the biquaternion norm carries the scalar contribution in addition,</p>
 <p>$$
 N(\tilde{Q}) = Q_0^2+(\mathbf{Q},\mathbf{Q}) ,
 $$</p>
@@ -137,7 +137,7 @@ $$</p>
 <li>$N(\tilde{Q}) = 0$, i.e. $Q_1^2+Q_2^2+Q_3^2 = 0$;</li>
 <li>$\tilde{Q}^2 = 0$.</li>
 </ol>
-<p><strong>Proof.</strong> (1) $\iff$ (2) is the general criterion, and (2) $\iff$ (3) is the computation of the square. $\square$</p>
+<p><strong>Proof.</strong> (1) $\iff$ (2) is the general criterion, and (2) $\iff$ (3) is the computation of the square.</p>
 <p>A biquaternion with $\tilde{Q}^2 = 0$ is a <strong>nilpotent</strong>, so in the pure case the zero divisors are exactly the nonzero nilpotents.</p>
 <h3 id="properties">Properties</h3>
 <p>A pure zero divisor $\tilde{Q}$ satisfies:</p>
@@ -153,7 +153,7 @@ $$</p>
 <p>$$
 \tilde{Q}^2 = \big(Q_0^2-(\mathbf{Q},\mathbf{Q})\big)e_0+2Q_0\mathbf{Q} .
 $$</p>
-<h3 id="the-relation-to-the-norm-form">The Relation to the Norm Form</h3>
+<h3 id="the-relation-to-the-biquaternion-norm">The Relation to the Biquaternion Norm</h3>
 <p>Since $N(\tilde{Q}) = Q_0^2+(\mathbf{Q},\mathbf{Q})$, the condition $N(\tilde{Q}) = 0$ is $(\mathbf{Q},\mathbf{Q}) = -Q_0^2$; substituting,</p>
 <p>$$
 \tilde{Q}^2 = 2Q_0^2e_0+2Q_0\mathbf{Q} = 2Q_0\tilde{Q} .
@@ -177,7 +177,7 @@ $$</p>
 \tilde{Q}\circ(\tilde{Q}-2Q_0e_0) = \tilde{Q}^2-2Q_0\tilde{Q} = 0 ,
 $$</p>
 <p>and likewise on the left.</p>
-<p><strong>Physical reading: the photon.</strong> A massless particle's momentum is the case in point. In the material coordinate the momentum of a photon is $\tilde{P} = i(E/c)e_0+\mathbf{p}$ with $|\mathbf{p}| = E/c$, an anti-Hermitian element; its norm form is $-(E/c)^2+|\mathbf{p}|^2 = 0$, so it is a non-pure zero divisor with $Q_0 = iE/c\neq0$, and therefore</p>
+<p><strong>Physical reading: the photon.</strong> A massless particle's momentum is the case in point. In the material coordinate the momentum of a photon is $\tilde{P} = i(E/c)e_0+\mathbf{p}$ with $|\mathbf{p}| = E/c$, an anti-Hermitian element; its biquaternion norm is $-(E/c)^2+|\mathbf{p}|^2 = 0$, so it is a non-pure zero divisor with $Q_0 = iE/c\neq0$, and therefore</p>
 <p>$$
 \tilde{P}^2 = 2Q_0\tilde{P} = 2i\frac{E}{c}\,\tilde{P}, \qquad \frac{\tilde{P}}{2Q_0} = \frac{\tilde{P}}{2iE/c}\ \text{is idempotent} .
 $$</p>
@@ -186,19 +186,19 @@ $$</p>
 <p>The non-pure zero divisors are complex multiples of idempotents, and the idempotents are classified by the roots of $-1$; those roots are classified in <em>Biquaternion Roots of Minus One</em>, and the resulting classification of the idempotents is in <em>Biquaternion Idempotents and Projections</em>. In the physical reading of those articles the roots are the algebra's imaginary units and generators, and the idempotents are the pure states; a non-pure zero divisor is therefore a scaled state direction.</p>
 <h2 id="distribution-of-the-zero-divisors">Distribution of the Zero Divisors</h2>
 <p>We now examine how the zero divisors are distributed among the six distinguished subspaces of $\mathbb{B}$. The distribution is where the causal structure becomes visible subspace by subspace.</p>
-<h3 id="the-complex-subspace-math117">The Complex Subspace $\mathbb{C}_{\mathbb{B}}$</h3>
+<h3 id="the-complex-subspace-math115">The Complex Subspace $\mathbb{C}_{\mathbb{B}}$</h3>
 <p>An element has the form $\tilde{Q} = Q_0e_0$, and $N(\tilde{Q}) = Q_0^2$ vanishes only at $\tilde{Q} = 0$: $\mathbb{C}_{\mathbb{B}}$ contains <strong>no</strong> zero divisors, which reflects that it is a copy of the field $\mathbb{C}$.</p>
 <p><strong>Physical reading.</strong> The phase sector is never null: a pure phase $e^{i\theta}$ is always a unit, and the central $U(1)$ of the framework has no light-cone part.</p>
-<h3 id="the-vector-subspace-math125">The Vector Subspace $\mathrm{Vect}(\mathbb{B})$</h3>
-<p>For pure $\tilde{Q} = Q_1e_1+Q_2e_2+Q_3e_3$ the norm form $Q_1^2+Q_2^2+Q_3^2$ is complex-valued and vanishes on a <strong>complex cone of complex dimension 2</strong> in $\mathrm{Vect}(\mathbb{B})\cong\mathbb{C}^3$ — a real cone of real dimension 4 in a real space of dimension 6. Its nonzero elements are exactly the <strong>pure zero divisors</strong>: vanishing scalar part, square zero, i.e. the nilpotents. The cone has real codimension 2, not the codimension 1 of a double cone as in $\mathbb{M}_\pm$. The complement of the cone is connected.</p>
+<h3 id="the-vector-subspace-math123">The Vector Subspace $\mathrm{Vect}(\mathbb{B})$</h3>
+<p>For pure $\tilde{Q} = Q_1e_1+Q_2e_2+Q_3e_3$ the biquaternion norm $Q_1^2+Q_2^2+Q_3^2$ is complex-valued and vanishes on a <strong>complex cone of complex dimension 2</strong> in $\mathrm{Vect}(\mathbb{B})\cong\mathbb{C}^3$ — a real cone of real dimension 4 in a real space of dimension 6. Its nonzero elements are exactly the <strong>pure zero divisors</strong>: vanishing scalar part, square zero, i.e. the nilpotents. The cone has real codimension 2, not the codimension 1 of a double cone as in $\mathbb{M}_\pm$. The complement of the cone is connected.</p>
 <p><strong>Physical reading.</strong> This is the cone of parabolic generators: purely vectorial null elements. Its codimension 2 (rather than 1) is the reason the pure null elements do not split the vector subspace into two causal parts the way the light cone splits the Hermitian sectors.</p>
-<h3 id="the-quaternion-subspace-math130">The Quaternion Subspace $\mathbb{H}_{\mathbb{B}}$</h3>
-<p>An element has real coefficients and its norm form is a sum of squares of real numbers, vanishing only at $\tilde{Q} = 0$: $\mathbb{H}_{\mathbb{B}}$ contains <strong>no</strong> zero divisors, reflecting the Frobenius theorem — it is a copy of the division algebra $\mathbb{H}$.</p>
+<h3 id="the-quaternion-subspace-math128">The Quaternion Subspace $\mathbb{H}_{\mathbb{B}}$</h3>
+<p>An element has real coefficients and its biquaternion norm is a sum of squares of real numbers, vanishing only at $\tilde{Q} = 0$: $\mathbb{H}_{\mathbb{B}}$ contains <strong>no</strong> zero divisors, reflecting the Frobenius theorem — it is a copy of the division algebra $\mathbb{H}$.</p>
 <p><strong>Physical reading.</strong> Rotations are never null: a real quaternion is an elliptic generator or a unit, and the rotation group sits entirely inside the unit group.</p>
-<h3 id="the-anti-quaternion-subspace-math134">The Anti-Quaternion Subspace $i\mathbb{H}_{\mathbb{B}}$</h3>
+<h3 id="the-anti-quaternion-subspace-math132">The Anti-Quaternion Subspace $i\mathbb{H}_{\mathbb{B}}$</h3>
 <p>For $i\tilde{P}$ with $\tilde{P}\in\mathbb{H}_{\mathbb{B}}$, $N(i\tilde{P}) = -(p_0^2+p_1^2+p_2^2+p_3^2)$, which is negative-definite and vanishes only at the origin: $i\mathbb{H}_{\mathbb{B}}$ contains <strong>no</strong> zero divisors, even though it is not a subalgebra.</p>
-<p><strong>Physical reading.</strong> Pure boosts are never null either: $i\mathbb{H}_{\mathbb{B}}$ is the hyperbolic-generator subspace of <em>Biquaternion Roots of Minus One</em>, and its norm form is negative-definite, so every nonzero boost is a unit.</p>
-<h3 id="the-hermitian-subspace-math140">The Hermitian Subspace $\mathbb{M}_+$</h3>
+<p><strong>Physical reading.</strong> Pure boosts are never null either: $i\mathbb{H}_{\mathbb{B}}$ is the hyperbolic-generator subspace of <em>Biquaternion Roots of Minus One</em>, and its biquaternion norm is negative-definite, so every nonzero boost is a unit.</p>
+<h3 id="the-hermitian-subspace-math138">The Hermitian Subspace $\mathbb{M}_+$</h3>
 <p>An element has the form $\tilde{Q} = q_0e_0+iq'_1e_1+iq'_2e_2+iq'_3e_3$ with real coefficients, and</p>
 <p>$$
 N(\tilde{Q}) = q_0^2-(q'_1)^2-(q'_2)^2-(q'_3)^2 .
@@ -209,7 +209,7 @@ $$</p>
 <li>the <strong>past timelike region</strong> ($q_0<0$, same inequality, with $N>0$);</li>
 <li>the <strong>spacelike region</strong> ($q_0^2<(q'_1)^2+(q'_2)^2+(q'_3)^2$, with $N<0$).</li>
 </ul>
-<h3 id="the-anti-hermitian-subspace-math153">The Anti-Hermitian Subspace $\mathbb{M}_-$</h3>
+<h3 id="the-anti-hermitian-subspace-math151">The Anti-Hermitian Subspace $\mathbb{M}_-$</h3>
 <p>An element has the form $\tilde{Q} = iq'_0e_0+q_1e_1+q_2e_2+q_3e_3$ with real coefficients, and</p>
 <p>$$
 N(\tilde{Q}) = -(q'_0)^2+q_1^2+q_2^2+q_3^2 .
@@ -220,11 +220,11 @@ $$</p>
 <li>the <strong>future timelike region</strong> ($q'_0>0$, $(q'_0)^2>q_1^2+q_2^2+q_3^2$, with $N<0$);</li>
 <li>the <strong>past timelike region</strong> ($q'_0<0$, same inequality, with $N<0$).</li>
 </ul>
-<p><strong>Physical reading.</strong> The double cones in $\mathbb{M}_\pm$ are the framework's light cones, and the connected components of the complement are the causal regions. The two sectors carry the two coordinate conventions, and the sign of the norm form records which: the <strong>informational</strong> coordinate $ct'\,e_0+i\mathbf{x}'$ is Hermitian, so it lies in $\mathbb{M}_+$ and a timelike event has $N = c^2t'^2-|\mathbf{x}'|^2>0$, while the <strong>material</strong> coordinate $ict\,e_0+\mathbf{x}$ is anti-Hermitian, lies in $\mathbb{M}_-$, and a timelike event has $N = -c^2t^2+|\mathbf{x}|^2<0$. In both sectors the two timelike components are the two sheets of the causal region, separated by the cone, and the spacelike complement is the third. That the causal structure is the <em>component structure of a group complement</em> is the reason the framework can speak of the future and past sheets as group-theoretic objects rather than as conventions.</p>
+<p><strong>Physical reading.</strong> The double cones in $\mathbb{M}_\pm$ are the framework's light cones, and the connected components of the complement are the causal regions. The two sectors carry the two coordinate conventions, and the sign of the biquaternion norm records which: the <strong>informational</strong> coordinate $ct'\,e_0+i\mathbf{x}'$ is Hermitian, so it lies in $\mathbb{M}_+$ and a timelike event has $N = c^2t'^2-|\mathbf{x}'|^2>0$, while the <strong>material</strong> coordinate $ict\,e_0+\mathbf{x}$ is anti-Hermitian, lies in $\mathbb{M}_-$, and a timelike event has $N = -c^2t^2+|\mathbf{x}|^2<0$. In both sectors the two timelike components are the two sheets of the causal region, separated by the cone, and the spacelike complement is the third. That the causal structure is the <em>component structure of a group complement</em> is the reason the framework can speak of the future and past sheets as group-theoretic objects rather than as conventions.</p>
 <h3 id="summary-of-the-distribution">Summary of the Distribution</h3>
 <p>Of the six distinguished subspaces:</p>
 <ul>
-<li>$\mathbb{C}_{\mathbb{B}}$, $\mathbb{H}_{\mathbb{B}}$ and $i\mathbb{H}_{\mathbb{B}}$ contain no zero divisors: the first two are the subalgebras among the six that are division algebras, and $i\mathbb{H}_{\mathbb{B}}$ is a module over $\mathbb{H}_{\mathbb{B}}$ with negative-definite norm form.</li>
+<li>$\mathbb{C}_{\mathbb{B}}$, $\mathbb{H}_{\mathbb{B}}$ and $i\mathbb{H}_{\mathbb{B}}$ contain no zero divisors: the first two are the subalgebras among the six that are division algebras, and $i\mathbb{H}_{\mathbb{B}}$ is a module over $\mathbb{H}_{\mathbb{B}}$ with negative-definite biquaternion norm.</li>
 <li>$\mathbb{M}_+$ and $\mathbb{M}_-$ contain a three-dimensional double cone of zero divisors, all of them non-pure; outside it the elements are invertible.</li>
 <li>$\mathrm{Vect}(\mathbb{B})$ contains the pure zero divisors, the nilpotent cone, of real dimension 4.</li>
 </ul>
@@ -295,9 +295,9 @@ $$</p>
 <li>The closed cone $\{N = 0\}$ is the zero-set of the polynomial map $N:\mathbb{B}\to\mathbb{C}$, hence closed; $\mathcal{Z}$ is that cone with the origin removed, and so is <strong>not</strong> closed — a closed cone minus its apex.</li>
 <li>$\mathcal{Z}$ is a cone away from the origin: if $\tilde{Q}\in\mathcal{Z}$ and $\alpha\in\mathbb{C}\setminus\{0\}$, then $\alpha\tilde{Q}\in\mathcal{Z}$, since $N(\alpha\tilde{Q}) = \alpha^2N(\tilde{Q}) = 0$.</li>
 </ul>
-<p><strong>Dimension.</strong> $\mathcal{Z}$ has <strong>real dimension 6</strong> (complex dimension 3). The norm form is one complex equation in the four complex coefficients — two real equations in eight real coordinates — so its solution set is a complex hypersurface in $\mathbb{C}^4$ of complex dimension 3. The two real equations are independent at every nonzero point of the zero set, so the zero set is a smooth real 6-manifold away from the origin.</p>
+<p><strong>Dimension.</strong> $\mathcal{Z}$ has <strong>real dimension 6</strong> (complex dimension 3). The biquaternion norm is one complex equation in the four complex coefficients — two real equations in eight real coordinates — so its solution set is a complex hypersurface in $\mathbb{C}^4$ of complex dimension 3. The two real equations are independent at every nonzero point of the zero set, so the zero set is a smooth real 6-manifold away from the origin.</p>
 <h2 id="summary">Summary</h2>
-<p>The zero divisors of the biquaternion algebra are the nonzero elements on which the norm form vanishes. They split into two families:</p>
+<p>The zero divisors of the biquaternion algebra are the nonzero elements on which the biquaternion norm vanishes. They split into two families:</p>
 <ul>
 <li>the <strong>pure zero divisors</strong>, with vanishing scalar part and $Q_1^2+Q_2^2+Q_3^2 = 0$: exactly the nonzero nilpotents, with square zero and annihilator containing themselves; a complex cone of real dimension 4; physically the parabolic generators, the purely vectorial null directions;</li>
 <li>the <strong>non-pure zero divisors</strong>, with nonzero scalar part and $Q_0^2+Q_1^2+Q_2^2+Q_3^2 = 0$: exactly the nonzero complex multiples of the nontrivial idempotents, with square $2Q_0\tilde{Q}$ and annihilator containing $\tilde{Q}-2Q_0e_0$; an open dense subset of the full cone; physically the light-cone elements of the two sectors, whose normalised form is a pure state direction — the photon's momentum being the instance in point.</li>
@@ -328,7 +328,7 @@ $$</p>
 </tr>
 <tr>
 <td>$N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$</td>
-<td>Norm form; vanishes exactly on the zero divisors</td>
+<td>Biquaternion norm; vanishes exactly on the zero divisors</td>
 </tr>
 <tr>
 <td>$\mathcal{Z}$</td>

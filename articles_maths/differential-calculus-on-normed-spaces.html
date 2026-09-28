@@ -72,7 +72,7 @@ $$</p>
 \mathcal L(X_1,\dots,X_k;Y) \longrightarrow \mathcal L\bigl(X_1,\mathcal L(X_2,\dots,X_k;Y)\bigr)
 $$</p>
 <p>identifies a $k$-linear map with the linear map obtained by fixing the first argument.</p>
-<p><em>Proof.</em> Boundedness gives, by the telescoping lemma below, $\|A(x_1,\dots,x_k)-A(x_1',\dots,x_k')\|\le\|A\|\sum_j\|x_j-x_j'\|\prod_{i\neq j}\max(\|x_i\|,\|x_i'\|)$, so $A$ is continuous; conversely continuity at $0$ gives a ball on which $A$ is bounded by $1$, and homogeneity of each argument extends the bound to all of the product. The norm axioms and the identification are immediate from the definitions, and completeness is the completeness of $B(X_1,\cdot)$ iterated, by <em>Normed and Banach Spaces</em>. $\square$</p>
+<p><em>Proof.</em> Boundedness gives, by the telescoping lemma below, $\|A(x_1,\dots,x_k)-A(x_1',\dots,x_k')\|\le\|A\|\sum_j\|x_j-x_j'\|\prod_{i\neq j}\max(\|x_i\|,\|x_i'\|)$, so $A$ is continuous; conversely continuity at $0$ gives a ball on which $A$ is bounded by $1$, and homogeneity of each argument extends the bound to all of the product. The norm axioms and the identification are immediate from the definitions, and completeness is the completeness of $B(X_1,\cdot)$ iterated, by <em>Normed and Banach Spaces</em>.</p>
 <p><strong>Definition.</strong> When $X_1=\cdots=X_k=X$, the <strong>symmetrisation</strong> of $A \in \mathcal L^k(X;Y)$ is</p>
 <p>$$
 \operatorname{Sym}(A)(x_1,\dots,x_k)=\frac1{k!}\sum_{\sigma \in S_k}A(x_{\sigma(1)},\dots,x_{\sigma(k)}),
@@ -89,7 +89,7 @@ $$</p>
 <p>$$
 \|A(x_1,\dots,x_k)-A(y_1,\dots,y_k)\| \le \|A\|\sum_{j=1}^{k}\|x_j-y_j\|\prod_{i \neq j}\max(\|x_i\|,\|y_i\|).
 $$</p>
-<p><em>Proof.</em> Add and subtract the intermediate tuples $A(y_1,\dots,y_{j-1},x_j,\dots,x_k)$; each successive difference changes exactly one argument, and the terms cancel in pairs except the first and the last. $\square$</p>
+<p><em>Proof.</em> Add and subtract the intermediate tuples $A(y_1,\dots,y_{j-1},x_j,\dots,x_k)$; each successive difference changes exactly one argument, and the terms cancel in pairs except the first and the last.</p>
 <h2 id="the-frechet-derivative">The Fréchet Derivative</h2>
 <h3 id="definition-and-uniqueness">Definition and Uniqueness</h3>
 <p><strong>Definition.</strong> Let $f:U \to Y$. The function $f$ is <strong>differentiable at $x \in U$</strong> if there is a bounded linear map $Df(x) \in B(X,Y)$ with</p>
@@ -98,9 +98,9 @@ f(x+h)=f(x)+Df(x)h+o(\|h\|), \qquad \text{that is} \qquad \lim_{h \to 0}\frac{\|
 $$</p>
 <p>The map $Df(x)$ is the <strong>Fréchet derivative</strong> of $f$ at $x$. The limit is taken over $h \neq 0$ with $x+h \in U$, and it is a limit in the norm of $Y$. If $f$ is differentiable at every point of $U$ and $x \mapsto Df(x)$ is continuous as a map $U \to B(X,Y)$, then $f$ is of class $C^1$, written $f \in C^1(U,Y)$.</p>
 <p><strong>Proposition (uniqueness).</strong> If $f$ is differentiable at $x$, the derivative is unique.</p>
-<p><em>Proof.</em> If $L,M$ both satisfy the definition, then $\|(L-M)h\|=o(\|h\|)$, and for fixed $h \neq 0$ homogeneity gives $\|(L-M)h\|=\frac1t\|(L-M)(th)\| \to 0$ as $t \to 0$, so $(L-M)h=0$ for every $h$. $\square$</p>
+<p><em>Proof.</em> If $L,M$ both satisfy the definition, then $\|(L-M)h\|=o(\|h\|)$, and for fixed $h \neq 0$ homogeneity gives $\|(L-M)h\|=\frac1t\|(L-M)(th)\| \to 0$ as $t \to 0$, so $(L-M)h=0$ for every $h$.</p>
 <p><strong>Proposition (differentiable implies continuous).</strong> If $f$ is differentiable at $x$ then $f$ is continuous at $x$.</p>
-<p><em>Proof.</em> $\|f(x+h)-f(x)\|\le\|Df(x)\|\|h\|+o(\|h\|) \to 0$. $\square$</p>
+<p><em>Proof.</em> $\|f(x+h)-f(x)\|\le\|Df(x)\|\|h\|+o(\|h\|) \to 0$.</p>
 <p><strong>Example.</strong> (i) A constant function has derivative $0$; a bounded linear map $T$ has $DT(x)=T$ everywhere, since $T(x+h)-T(x)-Th=0$. A bounded $k$-linear map $A$ is differentiable with derivative computed below.</p>
 <p>(ii) The norm on a real Hilbert space $H$ is differentiable away from $0$ with $D\|x\|h=\langle h,x\rangle/\|x\|$, and it is not differentiable at $0$; over $\mathbb{C}$ the same formula is the derivative of $\|x\|$ as a real-linear map, $D\|x\|h=\operatorname{Re}\langle h,x\rangle/\|x\|$, the norm being real-valued and not complex differentiable. The square of the norm is differentiable everywhere with $D(\|x\|^2)h=2\operatorname{Re}\langle h,x\rangle$.</p>
 <p>(iii) The Euclidean norm $f:\mathbb{R}^n \to \mathbb{R}$, $f(x)=\|x\|_2$, has derivative $Df(x)h=\langle h,x\rangle/\|x\|$ away from the origin, and over $\mathbb{C}^n$ the same expression with the real part is the derivative as a real-linear map; the norm is not differentiable at the origin, where the directional derivatives $\pm1$ differ.</p>
@@ -109,18 +109,18 @@ $$</p>
 <p>(i) $D(f+g)(x)=Df(x)+Dg(x)$ and $D(\lambda f)(x)=\lambda\,Df(x)$;</p>
 <p>(ii) $D(T \circ f)(x)=T \circ Df(x)$;</p>
 <p>(iii) if $\varphi:U \to \mathbb{K}$ is differentiable at $x$ then so is $\varphi f$, with $D(\varphi f)(x)h=\varphi(x)Df(x)h+(D\varphi(x)h)f(x)$.</p>
-<p><em>Proof.</em> The difference quotients of (i) and (ii) are the corresponding combinations of the difference quotients of $f$ and $g$, each of which is $o(\|h\|)$; for (iii), $(\varphi f)(x+h)-(\varphi f)(x)=\varphi(x)Df(x)h+\varphi(x)o(\|h\|)+(D\varphi(x)h)f(x)+(D\varphi(x)h)Df(x)h+o(\|h\|)$ and the last two terms are $O(\|h\|^2)$, hence $o(\|h\|)$. $\square$</p>
+<p><em>Proof.</em> The difference quotients of (i) and (ii) are the corresponding combinations of the difference quotients of $f$ and $g$, each of which is $o(\|h\|)$; for (iii), $(\varphi f)(x+h)-(\varphi f)(x)=\varphi(x)Df(x)h+\varphi(x)o(\|h\|)+(D\varphi(x)h)f(x)+(D\varphi(x)h)Df(x)h+o(\|h\|)$ and the last two terms are $O(\|h\|^2)$, hence $o(\|h\|)$.</p>
 <p><strong>Theorem (chain rule).</strong> Let $f:U \to V$ and $g:V \to Z$ with $V \subseteq Y$ open. If $f$ is differentiable at $x$ and $g$ is differentiable at $f(x)$, then $g \circ f$ is differentiable at $x$ with</p>
 <p>$$
 D(g \circ f)(x)=Dg(f(x)) \circ Df(x).
 $$</p>
-<p><em>Proof.</em> Write $g(f(x+h))-g(f(x))=Dg(f(x))\bigl(f(x+h)-f(x)\bigr)+r\bigl(f(x+h)-f(x)\bigr)$ with $r(q)=o(\|q\|)$; substitute $f(x+h)-f(x)=Df(x)h+o(\|h\|)$ and use the boundedness of $Dg(f(x))$ and the estimate $\|r(q)\|\le\varepsilon\|q\|$ for small $\|q\|$. $\square$</p>
+<p><em>Proof.</em> Write $g(f(x+h))-g(f(x))=Dg(f(x))\bigl(f(x+h)-f(x)\bigr)+r\bigl(f(x+h)-f(x)\bigr)$ with $r(q)=o(\|q\|)$; substitute $f(x+h)-f(x)=Df(x)h+o(\|h\|)$ and use the boundedness of $Dg(f(x))$ and the estimate $\|r(q)\|\le\varepsilon\|q\|$ for small $\|q\|$.</p>
 <p><strong>Corollary (differentiation of $k$-linear maps and of polynomials).</strong> A bounded $k$-linear map $A$ is differentiable at every point, and</p>
 <p>$$
 DA(x_1,\dots,x_{k-1})h=\sum_{j=1}^{k}A(x_1,\dots,x_{j-1},h,x_{j+1},\dots,x_{k}).
 $$</p>
 <p>For $k=2$ this is the product rule $DA(x_1,x_2)(h_1,h_2)=A(h_1,x_2)+A(x_1,h_2)$; a polynomial map built from bounded multilinear maps by composition, addition and scalar multiplication is differentiable, and its derivative is computed by the chain rule.</p>
-<p><em>Proof.</em> The telescoping lemma gives $A(x+h)-A(x)-\sum_jA(\dots,h,\dots)=$ a sum of terms with at least two factors $h$, bounded by $\|A\|\,k(k-1)\|h\|^2\max(\|x\|,\|x+h\|,1)^{k-2}=o(\|h\|)$. $\square$</p>
+<p><em>Proof.</em> The telescoping lemma gives $A(x+h)-A(x)-\sum_jA(\dots,h,\dots)=$ a sum of terms with at least two factors $h$, bounded by $\|A\|\,k(k-1)\|h\|^2\max(\|x\|,\|x+h\|,1)^{k-2}=o(\|h\|)$.</p>
 <h3 id="partial-derivatives-and-the-total-derivative">Partial Derivatives and the Total Derivative</h3>
 <p><strong>Definition.</strong> Let $X=X_1 \times \cdots \times X_n$ be a product of normed spaces with any of the equivalent product norms, and let $x=(x_1,\dots,x_n)$. The <strong>partial derivative</strong> of $f:U \to Y$ with respect to the $i$-th variable at $x$ is the derivative at $x_i$ of the map $u \mapsto f(x_1,\dots,x_{i-1},u,x_{i+1},\dots,x_n)$, written $D_if(x) \in B(X_i,Y)$; it is computed on the line through $x$ in the direction of $X_i$.</p>
 <p><strong>Theorem.</strong> If $f$ is differentiable at $x$ with $X=X_1\times\cdots\times X_n$, then all partial derivatives exist and</p>
@@ -128,7 +128,7 @@ $$</p>
 Df(x)(h_1,\dots,h_n)=\sum_{i=1}^{n}D_if(x)h_i .
 $$</p>
 <p>Conversely, if the partial derivatives exist and are continuous on a neighbourhood of $x$, then $f$ is differentiable at $x$ and the formula holds.</p>
-<p><em>Proof.</em> The first statement is the chain rule applied to the coordinate injections $u \mapsto (0,\dots,u,\dots,0)$. For the converse, write $f(x+h)-f(x)=\sum_i\bigl[f(x_1,\dots,x_i+h_i,x_{i+1},\dots,x_{n})-f(x_1,\dots,x_{i-1},x_i,x_{i+1}+h_{i+1},\dots,x_n+h_n)\bigr]$ and apply the mean value inequality in the $i$-th variable, whose derivative is $D_if$ at the intermediate point; continuity of $D_if$ at $x$ makes the sum $\sum_iD_if(x)h_i+o(\|h\|)$. $\square$</p>
+<p><em>Proof.</em> The first statement is the chain rule applied to the coordinate injections $u \mapsto (0,\dots,u,\dots,0)$. For the converse, write $f(x+h)-f(x)=\sum_i\bigl[f(x_1,\dots,x_i+h_i,x_{i+1},\dots,x_{n})-f(x_1,\dots,x_{i-1},x_i,x_{i+1}+h_{i+1},\dots,x_n+h_n)\bigr]$ and apply the mean value inequality in the $i$-th variable, whose derivative is $D_if$ at the intermediate point; continuity of $D_if$ at $x$ makes the sum $\sum_iD_if(x)h_i+o(\|h\|)$.</p>
 <p><strong>Remark.</strong> Continuity of the partial derivatives is essential: the function $f:\mathbb{R}^2 \to \mathbb{R}$ with $f(x,y)=xy(x^2+y^2)^{-1}$ for $(x,y)\neq0$ and $f(0,0)=0$ has both partial derivatives at $0$ but is not even continuous there, because along the curve $y=x$ the value is $\tfrac12$. In the converse direction it is the <em>continuity</em> of the partials, not their existence, that yields differentiability.</p>
 <h3 id="the-mean-value-inequality">The Mean Value Inequality</h3>
 <p>The mean value theorem of the real calculus has no direct vector-valued analogue: the function $f(t)=e^{it}$ on $[0,2\pi]$ satisfies $f(2\pi)-f(0)=0$ while $f'$ never vanishes. What survives is an inequality.</p>
@@ -140,7 +140,7 @@ $$</p>
 <p>$$
 \|\varphi(t+h)-\varphi(0)\| \le (M+\varepsilon)t\|y-x\|+(M+\varepsilon)h\|y-x\|=(M+\varepsilon)(t+h)\|y-x\|,
 $$</p>
-<p>so $t+h \in \Phi$. Hence $\Phi$ is open in $[0,1]$ as well as closed and nonempty, so $\Phi=[0,1]$; taking $t=1$ and letting $\varepsilon \to 0$ gives the inequality. $\square$</p>
+<p>so $t+h \in \Phi$. Hence $\Phi$ is open in $[0,1]$ as well as closed and nonempty, so $\Phi=[0,1]$; taking $t=1$ and letting $\varepsilon \to 0$ gives the inequality.</p>
 <p><strong>Corollary.</strong> If $f$ is differentiable on a convex $U$ with $Df=0$ there, then $f$ is constant. If $f$ and $g$ have the same derivative on a convex $U$, they differ by a constant.</p>
 <h2 id="higher-derivatives-and-taylors-theorem">Higher Derivatives and Taylor's Theorem</h2>
 <h3 id="the-second-derivative-and-symmetry">The Second Derivative and Symmetry</h3>
@@ -157,7 +157,7 @@ $$</p>
 <p>$$
 D^2f(x)(h,k)=D^2f(x)(k,h) \qquad \text{for all } h,k \in X .
 $$</p>
-<p><em>Proof.</em> For small $s,t$ form the second difference $\Delta=f(x+sh+tk)-f(x+sh)-f(x+tk)+f(x)$, which is symmetric in $h,k$. Applying the mean value inequality twice, first to $u \mapsto f(x+u+tk)-f(x+u)$ whose derivative at $x+u$ is $Df(x+u+tk)-Df(x+u)$, and then to the map $u \mapsto Df(x+u+tk)-Df(x+u)$, gives $\Delta=D^2f(x)(sh,tk)+o(st)$ and likewise with $h,k$ exchanged; comparing and letting $s,t \to 0$ gives the result. $\square$</p>
+<p><em>Proof.</em> For small $s,t$ form the second difference $\Delta=f(x+sh+tk)-f(x+sh)-f(x+tk)+f(x)$, which is symmetric in $h,k$. Applying the mean value inequality twice, first to $u \mapsto f(x+u+tk)-f(x+u)$ whose derivative at $x+u$ is $Df(x+u+tk)-Df(x+u)$, and then to the map $u \mapsto Df(x+u+tk)-Df(x+u)$, gives $\Delta=D^2f(x)(sh,tk)+o(st)$ and likewise with $h,k$ exchanged; comparing and letting $s,t \to 0$ gives the result.</p>
 <p><strong>Corollary.</strong> $D^kf(x)(h_1,\dots,h_k)$ is unchanged under permutations of $h_1,\dots,h_k$, so $D^kf(x)$ is symmetric; equivalently $D^kf(x)$ takes its values in $\mathcal L^k_{\mathrm{sym}}(X;Y)$. In coordinates on $\mathbb{R}^n$ the second derivative is the Hessian matrix $\bigl(\partial_i\partial_jf(x)\bigr)$ and its symmetry is the equality of mixed partial derivatives.</p>
 <h3 id="taylors-theorem">Taylor's Theorem</h3>
 <p><strong>Theorem (Taylor with integral remainder).</strong> Let $f:U \to Y$ be of class $C^{k+1}$ and let $x \in U$, with the segment from $x$ to $x+h$ contained in $U$. Then</p>
@@ -168,7 +168,7 @@ $$</p>
 <p>$$
 \Bigl\|f(x+h)-\sum_{j=0}^{k}\frac{1}{j!}D^jf(x)h^j\Bigr\| \le \frac{\|h\|^{k+1}}{(k+1)!}\sup_{0\le t\le1}\|D^{k+1}f(x+th)\| .
 $$</p>
-<p><em>Proof.</em> Put $\varphi(t)=f(x+th)$ for $t \in [0,1]$, so that $D\varphi(t)=Df(x+th)h$ by the chain rule and, by induction, $D^j\varphi(t)=D^jf(x+th)h^j$. The scalar-parameter formula $\varphi(1)=\sum_{j\le k}\varphi^{(j)}(0)/j!+\int_0^1(1-t)^k\varphi^{(k+1)}(t)/k!\,dt$ follows from repeated integration by parts, and substituting the expressions for $\varphi^{(j)}$ gives the claim; the estimate uses $\int_0^1(1-t)^kdt=1/(k+1)$ and the boundedness of $D^{k+1}$. $\square$</p>
+<p><em>Proof.</em> Put $\varphi(t)=f(x+th)$ for $t \in [0,1]$, so that $D\varphi(t)=Df(x+th)h$ by the chain rule and, by induction, $D^j\varphi(t)=D^jf(x+th)h^j$. The scalar-parameter formula $\varphi(1)=\sum_{j\le k}\varphi^{(j)}(0)/j!+\int_0^1(1-t)^k\varphi^{(k+1)}(t)/k!\,dt$ follows from repeated integration by parts, and substituting the expressions for $\varphi^{(j)}$ gives the claim; the estimate uses $\int_0^1(1-t)^kdt=1/(k+1)$ and the boundedness of $D^{k+1}$.</p>
 <p><strong>Theorem (Taylor with Peano remainder).</strong> If $f$ is of class $C^k$ on a neighbourhood of $x$, then</p>
 <p>$$
 f(x+h)=\sum_{j=0}^{k}\frac{1}{j!}D^jf(x)h^j+o(\|h\|^k) \qquad (h \to 0).
@@ -182,7 +182,7 @@ $$</p>
 <p>$$
 d(x_n,x^*) \le \frac{c^n}{1-c}d(x_1,x_0), \qquad d(x_n,x^*) \le \frac{1}{1-c}d(x_{n+1},x_n).
 $$</p>
-<p><em>Proof.</em> The estimate $d(x_{n+1},x_n)\le c^nd(x_1,x_0)$ makes the sequence Cauchy, by comparison with a geometric series; completeness gives a limit $x^*$, and continuity of $F$ gives $F(x^*)=x^*$. If $x^*,y^*$ are fixed points then $d(x^*,y^*)=d(Fx^*,Fy^*)\le cd(x^*,y^*)$, forcing $x^*=y^*$. The first error estimate is the sum of the tail of the geometric series, and the second follows from $d(x_n,x^*)\le d(x_n,x_{n+1})+cd(x_n,x^*)$. $\square$</p>
+<p><em>Proof.</em> The estimate $d(x_{n+1},x_n)\le c^nd(x_1,x_0)$ makes the sequence Cauchy, by comparison with a geometric series; completeness gives a limit $x^*$, and continuity of $F$ gives $F(x^*)=x^*$. If $x^*,y^*$ are fixed points then $d(x^*,y^*)=d(Fx^*,Fy^*)\le cd(x^*,y^*)$, forcing $x^*=y^*$. The first error estimate is the sum of the tail of the geometric series, and the second follows from $d(x_n,x^*)\le d(x_n,x_{n+1})+cd(x_n,x^*)$.</p>
 <p><strong>Corollary (powers).</strong> If $F$ is continuous and some iterate $F^n$ is a contraction, then $F$ has a unique fixed point, the fixed point of $F^n$, and it is fixed by $F$ because $F(x^*)=F(F^n(x^*))=F^n(F(x^*))$.</p>
 <p><strong>Example.</strong> On $[0,1]$ the map $F(x)=\cos x$ satisfies $|F'|\le\sin1<1$, so it is a contraction and the iterates of any starting point converge to the unique solution of $x=\cos x$, approximately $0.739085$. On $\mathbb{R}$ the same map is not a contraction, and the contraction hypothesis is not superfluous.</p>
 <h2 id="the-inverse-function-theorem">The Inverse Function Theorem</h2>
@@ -195,7 +195,7 @@ $$</p>
 <p>$$
 g(y+k)-g(y)=\bigl(Df(g(y))\bigr)^{-1}\bigl(k-\bigl(f(g(y)+q)-f(g(y))-Df(g(y))q\bigr)\bigr)
 $$</p>
-<p>with $q=g(y+k)-g(y)$ shows that $g$ is differentiable with the stated derivative. Continuity of $Dg$ follows from that of $Df$, $g$ and inversion, and the $C^k$ statement is induction on $k$. $\square$</p>
+<p>with $q=g(y+k)-g(y)$ shows that $g$ is differentiable with the stated derivative. Continuity of $Dg$ follows from that of $Df$, $g$ and inversion, and the $C^k$ statement is induction on $k$.</p>
 <p><strong>Corollary (local structure).</strong> With the hypotheses of the theorem, $f$ is a local homeomorphism at $x_0$: it maps some neighbourhood of $x_0$ homeomorphically onto a neighbourhood of $f(x_0)$, and it is an open map near $x_0$. In particular the image of an open set under such an $f$ is open.</p>
 <p><strong>Example (local does not imply global).</strong> The map $f:\mathbb{R}^2 \to \mathbb{R}^2$, $f(x,y)=(e^x\cos y,e^x\sin y)$, has Jacobian</p>
 <p>$$
@@ -212,7 +212,7 @@ $$</p>
 D\varphi(x)=-\bigl(D_2F(x,\varphi(x))\bigr)^{-1}\circ D_1F(x,\varphi(x)).
 $$</p>
 <p>If $F$ is of class $C^k$ then so is $\varphi$.</p>
-<p><em>Proof.</em> Define $\Phi:W \to X \times Z$ by $\Phi(x,y)=(x,F(x,y))$; then $D\Phi(x_0,y_0)$ is invertible, with inverse $(u,v)\mapsto(u,(D_2F)^{-1}(v-D_1F\,u))$. The inverse function theorem applied to $\Phi$ gives a local inverse of the form $(x,z) \mapsto (x,\psi(x,z))$, and $\varphi(x)=\psi(x,0)$ satisfies $F(x,\varphi(x))=0$; uniqueness follows from the injectivity of $\Phi$ on the neighbourhood. Differentiating the identity $F(x,\varphi(x))=0$ by the chain rule gives $D_1F+D_2F\circ D\varphi=0$, whence the formula. $\square$</p>
+<p><em>Proof.</em> Define $\Phi:W \to X \times Z$ by $\Phi(x,y)=(x,F(x,y))$; then $D\Phi(x_0,y_0)$ is invertible, with inverse $(u,v)\mapsto(u,(D_2F)^{-1}(v-D_1F\,u))$. The inverse function theorem applied to $\Phi$ gives a local inverse of the form $(x,z) \mapsto (x,\psi(x,z))$, and $\varphi(x)=\psi(x,0)$ satisfies $F(x,\varphi(x))=0$; uniqueness follows from the injectivity of $\Phi$ on the neighbourhood. Differentiating the identity $F(x,\varphi(x))=0$ by the chain rule gives $D_1F+D_2F\circ D\varphi=0$, whence the formula.</p>
 <p><strong>Corollary (submersions and the rank theorem).</strong> Let $F:W \to Z$ be $C^1$ and suppose $DF$ is surjective at $(x_0,y_0)$ with the kernel splitting; then there are local coordinates in which $F$ is the projection onto the first factor, so the level set $F^{-1}(F(x_0,y_0))$ is locally the graph of $\varphi$ and is a $C^1$ submanifold modelled on $\ker DF$. This is the local form of the rank theorem; the global theory of such local models on manifolds is that of Part II and of <em>Smooth Manifolds and Differential Geometry</em>.</p>
 <p><strong>Corollary (existence of solutions).</strong> If $F(x_0,y_0)=0$ and $D_2F(x_0,y_0)$ is invertible, then for every $x$ near $x_0$ the equation $F(x,y)=0$ has exactly one solution in a fixed neighbourhood of $y_0$. This is the sense in which the theorem solves equations: it converts the invertibility of one bounded linear map into a local existence and uniqueness statement for a nonlinear equation, and its quantitative form is the contraction estimate of the proof.</p>
 <h2 id="the-finite-dimensional-case">The Finite-Dimensional Case</h2>

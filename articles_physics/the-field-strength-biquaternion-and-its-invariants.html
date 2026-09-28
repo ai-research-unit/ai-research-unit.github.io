@@ -57,7 +57,7 @@
 \tilde{F} = \mathbf{F} = i\sqrt{\epsilon}\,\mathbf{E} - \sqrt{\mu}\,\mathbf{H}
 $$</p>
 <p>as the single biquaternionic object that carries the electromagnetic field, and showed that, in a medium with permittivity $\epsilon$ and permeability $\mu$, the four Maxwell equations collapse into the one equation $\tilde{\nabla}\tilde{F} = -\tilde{R}$. In that article $\tilde{F}$ appears as a means to an end: the compact rewriting of the field equations. This article studies $\tilde{F}$ for its own sake.</p>
-<p>Two features make the field strength worth treating separately. First, $\tilde{F}$ is <em>not</em> a four-vector. Unlike the four-potential $\tilde{A}$, whose scalar part is imaginary and whose vector part is real, the field-strength biquaternion has <strong>vanishing scalar part</strong> and a <strong>mixed real/imaginary vector part</strong>: its imaginary half carries the electric field and its real half the magnetic field. The field strength is therefore a different kind of object from the kinematic four-vectors that live in the material subspace $\mathbb{M}_-$, and its Lorentz transformation law is correspondingly different. Second, the <strong>norm form</strong> evaluated on $\tilde{F}$ is a complex scalar whose real and imaginary parts are the two classical Lorentz invariants, $E^2 - c^2B^2$ and $\mathbf{E}\cdot\mathbf{B}$, up to the medium factors $-\epsilon$ and $-2\epsilon c$. The algebraic apparatus built to describe the Minkowski metric thus delivers the electromagnetic invariants as well.</p>
+<p>Two features make the field strength worth treating separately. First, $\tilde{F}$ is <em>not</em> a four-vector. Unlike the four-potential $\tilde{A}$, whose scalar part is imaginary and whose vector part is real, the field-strength biquaternion has <strong>vanishing scalar part</strong> and a <strong>mixed real/imaginary vector part</strong>: its imaginary half carries the electric field and its real half the magnetic field. The field strength is therefore a different kind of object from the kinematic four-vectors that live in the material subspace $\mathbb{M}_-$, and its Lorentz transformation law is correspondingly different. Second, the <strong>biquaternion norm</strong> evaluated on $\tilde{F}$ is a complex scalar whose real and imaginary parts are the two classical Lorentz invariants, $E^2 - c^2B^2$ and $\mathbf{E}\cdot\mathbf{B}$, up to the medium factors $-\epsilon$ and $-2\epsilon c$. The algebraic apparatus built to describe the Minkowski metric thus delivers the electromagnetic invariants as well.</p>
 <p>This article is the declared foundation for three later articles on electromagnetism in media, on the Lorentz force, and on radiation from accelerated charges. It therefore fixes the field-strength notation once and for all. The <strong>canonical objects</strong> are: the field-strength biquaternion $\tilde{F} = i\sqrt{\epsilon}\,\mathbf{E} - \sqrt{\mu}\,\mathbf{H}$; the electric and magnetic fields $\mathbf{E}$ and $\mathbf{H}$, together with the magnetic induction $\mathbf{B} = \mu\mathbf{H}$; the medium speed of light $c = 1/\sqrt{\epsilon\mu}$; the Riemann–Silberstein vector $\mathbf{V} = \mathbf{E} + ic\mathbf{B}$; the two invariants $I_1 = \mathbf{E}^2 - c^2\mathbf{B}^2$ and $I_2 = \mathbf{E}\cdot\mathbf{B}$; and the energy density $W$ and Poynting vector $\mathbf{S}$. Nothing in this list is new notation; the first three come unchanged from the Maxwell article, and the rest are assembled from them.</p>
 <p>The conventions are those of the read-list articles throughout. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_0 = 1, e_1, e_2, e_3$ satisfying $e_k^2 = -e_0$, and scalar imaginary $i$ commuting with the quaternion units. The three-dimensional complex <strong>vector part</strong> of $\mathbb{B}$ is denoted by its components $\mathbf{F} = \sum_k F_k e_k$, with the usual quaternion product $\mathbf{F}\mathbf{G} = -\mathbf{F}\cdot\mathbf{G} + \mathbf{F}\times\mathbf{G}$ for pure vectors. The conjugations are the quaternion conjugate $\bar{\cdot}$, the complex conjugate ${}^*$, and the Hermitian conjugate ${}^\dagger = \bar{\cdot}^{\,*} = {}^{*}\bar{\cdot}$, with the four real fixed-point subspaces $\mathbb{C}_{\mathbb{B}}$ (scalars), $\mathbb{H}_{\mathbb{B}}$ (real quaternions), $\mathbb{M}_+$ (Hermitian: real scalar, imaginary vector) and $\mathbb{M}_-$ (anti-Hermitian: imaginary scalar, real vector). The symbol $c$ always denotes the <strong>speed of light in the medium</strong>, $c = 1/\sqrt{\epsilon\mu}$; in vacuum it reduces to $c_0 = 1/\sqrt{\epsilon_0\mu_0}$.</p>
 <h2 id="the-field-strength-biquaternion">The Field-Strength Biquaternion</h2>
@@ -73,7 +73,7 @@ $$</p>
 \mathrm{Sc}(\tilde{F}) = 0,
 $$</p>
 <p>so $\tilde{F}$ is a <strong>pure-vector</strong> biquaternion. Its three complex components $F_k$ each combine an electric and a magnetic piece: the electric contribution $i\sqrt{\epsilon}\,E_k$ is <strong>purely imaginary</strong> and the magnetic contribution $-\sqrt{\mu}\,H_k$ is <strong>real</strong>. The factor of $i$ on the electric part is the same factor that appears in the complex time coordinate $ict$. In the $ict$ convention the time direction is the imaginary direction, and the electric field carries the time index of the field tensor, so it is the electric part that acquires the factor $i$ while the magnetic part remains real. This is the algebraic reason for the asymmetric appearance of $\tilde{F}$.</p>
-<p>The normalization factors $\sqrt{\epsilon}$ and $\sqrt{\mu}$ are the natural ones for a medium. Each term has the dimension of the square root of an energy density, since $\epsilon E^2$ and $\mu H^2$ are both energy densities; consequently $\tilde{F}$ has dimension $\sqrt{\text{energy density}}$, and the norm form calculated below has dimension of an energy density. With the constitutive relation $\mathbf{B} = \mu\mathbf{H}$ the magnetic term may also be written $\sqrt{\mu}\,\mathbf{H} = \mathbf{B}/\sqrt{\mu}$, so the field strength can equally be regarded as the pair $(\sqrt{\epsilon}\,\mathbf{E}, \mathbf{B}/\sqrt{\mu})$.</p>
+<p>The normalization factors $\sqrt{\epsilon}$ and $\sqrt{\mu}$ are the natural ones for a medium. Each term has the dimension of the square root of an energy density, since $\epsilon E^2$ and $\mu H^2$ are both energy densities; consequently $\tilde{F}$ has dimension $\sqrt{\text{energy density}}$, and the biquaternion norm calculated below has dimension of an energy density. With the constitutive relation $\mathbf{B} = \mu\mathbf{H}$ the magnetic term may also be written $\sqrt{\mu}\,\mathbf{H} = \mathbf{B}/\sqrt{\mu}$, so the field strength can equally be regarded as the pair $(\sqrt{\epsilon}\,\mathbf{E}, \mathbf{B}/\sqrt{\mu})$.</p>
 <p>The field strength is not an independent object: it is obtained from the potential biquaternion $\tilde{A} = i\phi/c + \mathbf{A}$ by differentiation. In the biquaternion algebra the construction is</p>
 <p>$$
 \tilde{F} = \bar{\tilde{\nabla}}\tilde{A} - \mathrm{Sc}\!\left(\bar{\tilde{\nabla}}\tilde{A}\right),
@@ -124,8 +124,8 @@ $$</p>
 \tilde{F} = \underbrace{\left(-\sqrt{\mu}\,\mathbf{H}\right)}_{\in\,\mathbb{H}_{\mathbb{B}}} \;+\; \underbrace{i\sqrt{\epsilon}\,\mathbf{E}}_{\in\,i\mathbb{H}_{\mathbb{B}}},
 $$</p>
 <p>The scalar subspace $\mathbb{C}_{\mathbb{B}}$ receives no contribution, which is again $\mathrm{Sc}(\tilde{F}) = 0$; the decomposition used is $\mathbb{B} = \mathbb{H}_{\mathbb{B}} \oplus i\mathbb{H}_{\mathbb{B}}$. Thus the field strength uses the vector parts of $\mathbb{H}_{\mathbb{B}}$ and $i\mathbb{H}_{\mathbb{B}}$ and the electric and magnetic halves of $\mathbb{M}_+$ and $\mathbb{M}_-$ respectively, and it touches $\mathbb{C}_{\mathbb{B}}$ not at all.</p>
-<h2 id="the-norm-form-and-the-two-invariants">The Norm Form and the Two Invariants</h2>
-<p>The norm form on $\mathbb{B}$ is</p>
+<h2 id="the-biquaternion-norm-and-the-two-invariants">The Biquaternion Norm and the Two Invariants</h2>
+<p>The biquaternion norm on $\mathbb{B}$ is</p>
 <p>$$
 N(\tilde{Q}) = \tilde{Q}\,\bar{\tilde{Q}} = \sum_{\mu=0}^{3} Q_\mu^2 .
 $$</p>
@@ -133,7 +133,7 @@ $$</p>
 <p>$$
 \tilde{F}\,\bar{\tilde{F}} = \mathbf{F}(-\mathbf{F}) = \mathbf{F}\cdot\mathbf{F} = \sum_{k=1}^{3} F_k^2,
 $$</p>
-<p>because $\mathbf{F}\times\mathbf{F} = 0$. The cross term drops out for the norm form of a vector, and one is left with the <strong>complex bilinear form</strong></p>
+<p>because $\mathbf{F}\times\mathbf{F} = 0$. The cross term drops out for the biquaternion norm of a vector, and one is left with the <strong>complex bilinear form</strong></p>
 <p>$$
 N(\tilde{F}) = \sum_{k=1}^{3} F_k^2,
 $$</p>
@@ -162,17 +162,17 @@ I_1 = -\frac{1}{\epsilon}\,\mathrm{Re}\,N(\tilde{F}),
 \qquad
 I_2 = -\frac{1}{2\epsilon c}\,\mathrm{Im}\,N(\tilde{F}).
 $$</p>
-<p>The norm form is a single complex number, and it carries exactly two real invariants. It is the <em>fully contracted</em> object built from the field strength with no derivatives and no extra vectors, so these are the only two independent invariants of the field; any other algebraic invariant is a function of $I_1$ and $I_2$.</p>
-<p><strong>The conjugate norm form.</strong> The quaternion norm form is not the only natural quadratic object here. Because quaternion conjugation fixes the scalar part, conjugation acts on the vector components by $\bar{\tilde{F}} = -\mathbf{F}$; complex conjugation, by contrast, acts on the coefficients, $\tilde{F}^* = \mathbf{F}^*$. For the norm form of the complex-conjugate field,</p>
+<p>The biquaternion norm is a single complex number, and it carries exactly two real invariants. It is the <em>fully contracted</em> object built from the field strength with no derivatives and no extra vectors, so these are the only two independent invariants of the field; any other algebraic invariant is a function of $I_1$ and $I_2$.</p>
+<p><strong>The conjugate biquaternion norm.</strong> The quaternion norm is not the only natural quadratic object here. Because quaternion conjugation fixes the scalar part, conjugation acts on the vector components by $\bar{\tilde{F}} = -\mathbf{F}$; complex conjugation, by contrast, acts on the coefficients, $\tilde{F}^* = \mathbf{F}^*$. For the biquaternion norm of the complex-conjugate field,</p>
 <p>$$
 N(\tilde{F}^*) = N(\tilde{F})^*,
 $$</p>
-<p>so the norm form and its conjugate carry the same two real invariants. Equivalently, the reverse product is $\bar{\tilde{F}}\tilde{F} = \tilde{F}\bar{\tilde{F}} = N(\tilde{F})$ for a pure vector. The two invariants are therefore the two real components of the complex norm form.</p>
-<p><strong>Vanishing of the norm form.</strong> Because $\tilde{F}$ is a pure vector,</p>
+<p>so the biquaternion norm and its conjugate carry the same two real invariants. Equivalently, the reverse product is $\bar{\tilde{F}}\tilde{F} = \tilde{F}\bar{\tilde{F}} = N(\tilde{F})$ for a pure vector. The two invariants are therefore the two real components of the complex biquaternion norm.</p>
+<p><strong>Vanishing of the biquaternion norm.</strong> Because $\tilde{F}$ is a pure vector,</p>
 <p>$$
 \tilde{F}^2 = -\mathbf{F}\cdot\mathbf{F} = -N(\tilde{F}),
 $$</p>
-<p>so the norm form vanishes if and only if $\tilde{F}$ squares to zero. A nonzero element of $\mathbb{B}$ whose norm form vanishes is a <strong>zero divisor</strong>, and $\tilde{F}$ is nilpotent in that case. Thus</p>
+<p>so the biquaternion norm vanishes if and only if $\tilde{F}$ squares to zero. A nonzero element of $\mathbb{B}$ whose biquaternion norm vanishes is a <strong>zero divisor</strong>, and $\tilde{F}$ is nilpotent in that case. Thus</p>
 <p>$$
 N(\tilde{F}) = 0
 \quad\Longleftrightarrow\quad
@@ -180,7 +180,7 @@ I_1 = 0 \ \text{ and }\ I_2 = 0
 \quad\Longleftrightarrow\quad
 \tilde{F} \text{ is a zero divisor}.
 $$</p>
-<p>The vanishing of the norm form is therefore the algebraic statement that the field is a <strong>null (radiative) field</strong>: $\mathbf{E}\perp\mathbf{B}$ and $|\mathbf{E}| = c|\mathbf{B}|$ pointwise. This is the same zero-divisor cone that underlies the light cone of $\mathbb{M}_-$, now realized inside the field-strength space. It is the algebraic seed of the radiation theory and will reappear in the later article on radiation from accelerated charges.</p>
+<p>The vanishing of the biquaternion norm is therefore the algebraic statement that the field is a <strong>null (radiative) field</strong>: $\mathbf{E}\perp\mathbf{B}$ and $|\mathbf{E}| = c|\mathbf{B}|$ pointwise. This is the same zero-divisor cone that underlies the light cone of $\mathbb{M}_-$, now realized inside the field-strength space. It is the algebraic seed of the radiation theory and will reappear in the later article on radiation from accelerated charges.</p>
 <h2 id="lorentz-invariance-of-the-invariants">Lorentz Invariance of the Invariants</h2>
 <p>The claim that $I_1$ and $I_2$ are Lorentz invariants is standard and can be checked directly. Under a boost with velocity $\mathbf{v}$ and Lorentz factor</p>
 <p>$$
@@ -224,7 +224,7 @@ $$</p>
 \tilde{F} = i\sqrt{\epsilon}\,\mathbf{V}.
 $$</p>
 <p>This is the sense in which the Riemann–Silberstein vector and the field-strength biquaternion are <strong>the same object</strong>: they differ only by the constant $i\sqrt{\epsilon}$, so they carry identical information and have proportional invariants. The complex vector was introduced by Ludwik Silberstein in 1907, and the biquaternion formulation is its natural algebraic home: the complex vector is the vector part of a biquaternion with vanishing scalar part.</p>
-<p>The norm form is now immediate. Since $\mathbf{V}$ is a complex three-vector,</p>
+<p>The biquaternion norm is now immediate. Since $\mathbf{V}$ is a complex three-vector,</p>
 <p>$$
 \mathbf{V}\cdot\mathbf{V} = \left(\mathbf{E} + ic\mathbf{B}\right)\cdot\left(\mathbf{E} + ic\mathbf{B}\right)
 = \mathbf{E}^2 - c^2\mathbf{B}^2 + 2ic\,\mathbf{E}\cdot\mathbf{B}
@@ -301,10 +301,10 @@ $$</p>
 <p>$$
 N(\tilde{F}) \mapsto e^{-2i\theta}\,N(\tilde{F}),
 $$</p>
-<p>since the scalar $e^{-i\theta}$ commutes with quaternion conjugation, which fixes scalars. Duality is not a Lorentz transformation: it is an independent $U(1)$ symmetry of the source-free equations that rotates the complex norm form.</p>
+<p>since the scalar $e^{-i\theta}$ commutes with quaternion conjugation, which fixes scalars. Duality is not a Lorentz transformation: it is an independent $U(1)$ symmetry of the source-free equations that rotates the complex biquaternion norm.</p>
 <h2 id="how-the-invariants-constrain-the-field">How the Invariants Constrain the Field</h2>
 <p>The two invariants are the complete set of local, derivative-free invariants of the electromagnetic field, and they classify the field into a small number of types. The classification is Lorentz invariant, because $I_1$ and $I_2$ are.</p>
-<p><strong>Null fields.</strong> If $I_1 = 0$ and $I_2 = 0$, then $\mathbf{E}\perp\mathbf{B}$ and $|\mathbf{E}| = c|\mathbf{B}|$ at every event. Both invariants vanish, the norm form vanishes, and the field-strength biquaternion is a zero divisor. No Lorentz transformation can remove either field, because killing one would force the other to vanish as well by the invariant relation; the field is a pure radiation field in every frame. This is the case of greatest interest for the later article on radiation.</p>
+<p><strong>Null fields.</strong> If $I_1 = 0$ and $I_2 = 0$, then $\mathbf{E}\perp\mathbf{B}$ and $|\mathbf{E}| = c|\mathbf{B}|$ at every event. Both invariants vanish, the biquaternion norm vanishes, and the field-strength biquaternion is a zero divisor. No Lorentz transformation can remove either field, because killing one would force the other to vanish as well by the invariant relation; the field is a pure radiation field in every frame. This is the case of greatest interest for the later article on radiation.</p>
 <p><strong>Electric and magnetic types.</strong> Suppose $I_2 = 0$ but $I_1 \neq 0$. Then $\mathbf{E}$ and $\mathbf{B}$ are perpendicular. If $I_1 > 0$, the electric magnitude dominates, and there is a Lorentz frame in which $\mathbf{B} = 0$: the field is purely electric, with $\mathbf{E}^2 = I_1$ in that frame. If instead $I_1 < 0$, there is a frame in which $\mathbf{E} = 0$: the field is purely magnetic, with $c^2\mathbf{B}^2 = -I_1$. In either case the invariant fixes the magnitude of the surviving field in its rest frame.</p>
 <p><strong>Generic fields.</strong> If $I_2 \neq 0$, no frame can make either field vanish, because $I_2$ would then vanish too. Instead there is a frame in which $\mathbf{E}$ and $\mathbf{B}$ are <strong>parallel</strong>. In that frame $I_2 = E_0 B_0$ (with signs) and $I_1 = E_0^2 - c^2B_0^2$, and eliminating $B_0$ gives a quadratic equation for $E_0^2$,</p>
 <p>$$
@@ -318,7 +318,7 @@ B_0 = \frac{I_2}{E_0}.
 $$</p>
 <p>The magnitudes are therefore completely determined by the two invariants. This is the precise sense in which the invariants constrain the field: they do not determine the field, but they determine the <em>type</em> of its Lorentz orbit and the field magnitudes in the frame in which that type is displayed.</p>
 <p><strong>What the invariants do not constrain.</strong> The invariants are two functions of the six real field components, so many distinct fields share the same pair $(I_1, I_2)$: they determine the local Lorentz type but not the field. They are pointwise kinematical quantities, not dynamical ones, and they are not in general conserved by the free-field evolution — a field that is null at one instant need not be null at the next.</p>
-<p><strong>Contrast with the energy density.</strong> The norm form is indefinite and complex: it can vanish, and it gives the Lorentz invariants. The <strong>Hermitian form</strong> is a different quadratic object, and it gives the positive energy. For the pure vector $\tilde{F}$,</p>
+<p><strong>Contrast with the energy density.</strong> The biquaternion norm is indefinite and complex: it can vanish, and it gives the Lorentz invariants. The <strong>Hermitian form</strong> is a different quadratic object, and it gives the positive energy. For the pure vector $\tilde{F}$,</p>
 <p>$$
 \tilde{F}\tilde{F}^\dagger = 2W\,e_0 + \frac{2i}{c}\,\mathbf{S},
 \qquad
@@ -330,10 +330,10 @@ W = \frac{1}{2}\left(\epsilon\,\mathbf{E}^2 + \mu\,\mathbf{H}^2\right) = \frac{1
 \qquad
 \mathbf{S} = \mathbf{E}\times\mathbf{H}.
 $$</p>
-<p>The scalar part of $\tilde{F}\tilde{F}^\dagger$ is $2W$, twice the (non-negative) energy density, and its vector part is $\frac{2i}{c}\mathbf{S}$, $\frac{2}{c}$ times the imaginary unit times the Poynting vector; the result is an element of $\mathbb{M}_+$, as every Hermitian form must be. The contrast is instructive: the norm form is a Lorentz-invariant complex scalar that can vanish, while the Hermitian form is an $\mathbb{M}_+$-valued object whose scalar part is strictly positive and whose transformation law is not that of a scalar. The first classifies the field; the second measures it. This is the biquaternion expression of the familiar fact that the electromagnetic energy density is positive-definite, whereas the invariant $I_1$ is indefinite.</p>
+<p>The scalar part of $\tilde{F}\tilde{F}^\dagger$ is $2W$, twice the (non-negative) energy density, and its vector part is $\frac{2i}{c}\mathbf{S}$, $\frac{2}{c}$ times the imaginary unit times the Poynting vector; the result is an element of $\mathbb{M}_+$, as every Hermitian form must be. The contrast is instructive: the biquaternion norm is a Lorentz-invariant complex scalar that can vanish, while the Hermitian form is an $\mathbb{M}_+$-valued object whose scalar part is strictly positive and whose transformation law is not that of a scalar. The first classifies the field; the second measures it. This is the biquaternion expression of the familiar fact that the electromagnetic energy density is positive-definite, whereas the invariant $I_1$ is indefinite.</p>
 <h2 id="summary">Summary</h2>
 <p>The field-strength biquaternion $\tilde{F} = i\sqrt{\epsilon}\,\mathbf{E} - \sqrt{\mu}\,\mathbf{H}$ is a pure-vector biquaternion with vanishing scalar part. It lies in the six-dimensional real vector part of $\mathbb{B}$, decomposed into an imaginary electric piece in the Hermitian subspace $\mathbb{M}_+$ and a real magnetic piece in the anti-Hermitian subspace $\mathbb{M}_-$. This is why the field strength is neither a four-vector nor an element of $\mathbb{M}_-$: it is an antisymmetric rank-two tensor, whose two halves occupy the two complementary sectors of the algebra.</p>
-<p>The norm form of the field strength is the complex scalar</p>
+<p>The biquaternion norm of the field strength is the complex scalar</p>
 <p>$$
 N(\tilde{F}) = \tilde{F}\bar{\tilde{F}} = \sum_{k=1}^{3} F_k^2
 = -\epsilon\left(I_1 + 2ic\,I_2\right),
@@ -342,7 +342,7 @@ I_1 = \mathbf{E}^2 - c^2\mathbf{B}^2,
 \qquad
 I_2 = \mathbf{E}\cdot\mathbf{B}.
 $$</p>
-<p>Its real and imaginary parts are the two Lorentz invariants of the field; the norm form and its complex conjugate carry the same pair. Both are invariant under the proper orthochronous Lorentz group, $I_1$ is parity-even and $I_2$ is a pseudoscalar. The norm form vanishes exactly when the field is null, in which case the field-strength biquaternion is a zero divisor.</p>
+<p>Its real and imaginary parts are the two Lorentz invariants of the field; the biquaternion norm and its complex conjugate carry the same pair. Both are invariant under the proper orthochronous Lorentz group, $I_1$ is parity-even and $I_2$ is a pseudoscalar. The biquaternion norm vanishes exactly when the field is null, in which case the field-strength biquaternion is a zero divisor.</p>
 <p>The same object is, up to the constant $i\sqrt{\epsilon}$, the Riemann–Silberstein vector $\mathbf{V} = \mathbf{E} + ic\mathbf{B}$, whose self-product $\mathbf{V}\cdot\mathbf{V} = I_1 + 2icI_2$ is the complex number whose real and imaginary parts are the invariants, and which obeys the source-free equation $i\partial_t\mathbf{V} = c\,\mathrm{rot}\,\mathbf{V}$ with $\mathrm{div}\,\mathbf{V} = 0$.</p>
 <p>Duality is the rotation $\mathbf{V}\mapsto e^{-i\theta}\mathbf{V}$; at $\theta = \pi/2$ it is the classical electric–magnetic duality. It is a symmetry of the source-free Maxwell equations, and it rotates the pair $(I_1, 2cI_2)$ by the angle $2\theta$, leaving $I_1^2 + 4c^2I_2^2$ invariant. Finally, the invariants classify the field into null, electric, magnetic, and generic types, and fix the field magnitudes in the frame that displays each type; they are the complete set of local, derivative-free invariants, but they are not a complete description of the field.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
@@ -408,7 +408,7 @@ $$</p>
 </tr>
 <tr>
 <td>$N(\tilde{F}) = \tilde{F}\bar{\tilde{F}}$</td>
-<td>Norm form (complex scalar)</td>
+<td>Biquaternion norm (complex scalar)</td>
 </tr>
 <tr>
 <td>$I_1 = \mathbf{E}^2 - c^2\mathbf{B}^2$</td>

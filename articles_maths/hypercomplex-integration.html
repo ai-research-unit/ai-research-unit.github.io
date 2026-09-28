@@ -74,7 +74,7 @@ $$</p>
 \Bigl\|\int_\gamma f\, d\xi\Bigr\| \leq \sup_{t} \|f(\gamma(t))\|\,\int_a^b \|\gamma'(t)\|\, dt = \sup_\gamma \|f\|\cdot \ell(\gamma),
 $$</p>
 <p>where $\ell(\gamma)$ is the Euclidean length of $\gamma$.</p>
-<p><em>Proof.</em> The integral is a limit of Riemann sums $\sum_i f(\gamma(t_i))(\gamma(t_{i+1}) - \gamma(t_i))$; submultiplicativity gives the estimate for each sum, and the norm is continuous, so the inequality passes to the limit. $\square$</p>
+<p><em>Proof.</em> The integral is a limit of Riemann sums $\sum_i f(\gamma(t_i))(\gamma(t_{i+1}) - \gamma(t_i))$; submultiplicativity gives the estimate for each sum, and the norm is continuous, so the inequality passes to the limit.</p>
 <p><strong>Definition.</strong> A <strong>hypercomplex differential $1$-form</strong> is an expression $\omega = f\,d\xi$ with $f$ an $A$-valued function; its integral along $\gamma$ is $\int_\gamma f\,d\xi$ as above. A form is <strong>closed</strong> if $\int_\gamma \omega = 0$ for every closed piecewise $C^1$ path $\gamma$ in the domain, and <strong>exact</strong> if $\omega = dG$ for some $A$-valued function $G$, where $(dG)(\xi) = $ the $A$-linear part of the differential of $G$.</p>
 <h2 id="the-cauchygoursat-theorem">The Cauchy–Goursat Theorem</h2>
 <p>The fundamental integral theorem of the theory is the hypersurface version; it follows from the divergence form of $D$ established in <em>Regularity and the Cauchy–Riemann Operator</em>.</p>
@@ -97,7 +97,7 @@ $$</p>
 <p>$$
 \partial_0 f + i\,\partial_1 f = \partial_0 f + i\,(i\,\partial_0 f) = \partial_0 f - \partial_0 f = 0,
 $$</p>
-<p>so $Df = 0$, and conversely $Df = 0$ gives $i\,\partial_1 f = -\partial_0 f$, or $\partial_1 f = i\,\partial_0 f$. The general system imposes one $A$-valued condition per pair $(\alpha,\beta)$, that is, $m\binom{m}{2}$ real equations against the $m^2$ real equations of $Df = 0$; for $m \geq 4$ these are more, and the extra conditions need not follow — as the next proposition shows for $A = \mathbb{H}$. $\square$</p>
+<p>so $Df = 0$, and conversely $Df = 0$ gives $i\,\partial_1 f = -\partial_0 f$, or $\partial_1 f = i\,\partial_0 f$. The general system imposes one $A$-valued condition per pair $(\alpha,\beta)$, that is, $m\binom{m}{2}$ real equations against the $m^2$ real equations of $Df = 0$; for $m \geq 4$ these are more, and the extra conditions need not follow — as the next proposition shows for $A = \mathbb{H}$.</p>
 <p><strong>Theorem (the classical Cauchy theorem).</strong> For the complex system $A = \mathbb{C}$, $D = \partial_0 + i\partial_1$, a $C^1$ function is left regular if and only if the form $f\,d\xi$ is closed; hence on a simply connected domain</p>
 <p>$$
 \int_\gamma f\,d\xi = 0
@@ -116,7 +116,7 @@ $$</p>
 <p>$$
 \int_\gamma f\, d\xi = \int_0^{2\pi} r\cos t\,\bigl(-r\sin t\, e_1 + r\cos t\, e_2\bigr)\, dt = -r^2 e_1 \int_0^{2\pi}\sin t\cos t\, dt + r^2 e_2\int_0^{2\pi}\cos^2 t\, dt = \pi r^2 e_2 \neq 0 .
 $$</p>
-<p>So a regular function over a non-commutative algebra need not have closed curve integrals. $\square$</p>
+<p>So a regular function over a non-commutative algebra need not have closed curve integrals.</p>
 <p><strong>Remark.</strong> The failure is structural, not accidental: the curve theorem is a statement about the closedness of the $1$-form $f\,d\xi$, and in a non-commutative algebra the order in which the coefficients $B_\alpha$ and the partial derivatives appear prevents the $m$ equations of regularity from implying the $\binom{m}{2}$ equations of closedness. The general integral theorem of the theory is therefore the hypersurface theorem, not the curve theorem.</p>
 <h2 id="idempotent-and-characteristic-coordinates">Idempotent and Characteristic Coordinates</h2>
 <p>The line integral is an ordinary integral together with the multiplication of $A$, so when the algebra decomposes the integral decomposes with it, and the whole integral theory of a decomposable system is the sum of ordinary one-dimensional theories.</p>
@@ -125,7 +125,7 @@ $$</p>
 \int_\gamma f\,d\xi = \sum_{i=1}^{r} \int_\gamma f_i\,d\xi_i, \qquad f_i = e_if\,e_i, \quad \xi_i = e_i\xi\,e_i,
 $$</p>
 <p>each term being an integral in the subalgebra $A_i$ with unit $e_i$. If every $A_i$ is one-dimensional, the hypercomplex integral is the sum of $r$ ordinary real integrals.</p>
-<p><em>Proof.</em> Insert the decompositions into the Riemann sums $\sum_j f(\gamma(t_j))\,(\gamma(t_{j+1}) - \gamma(t_j)) = \sum_j f(\gamma(t_j))\,\gamma'(t_j)\,\Delta t_j + o(1)$; the orthogonality relations give $f_i\gamma_i'$ in the $i$-th component and kill every cross term, and the product of the sums is the sum of the products because the idempotents are central and orthogonal. $\square$</p>
+<p><em>Proof.</em> Insert the decompositions into the Riemann sums $\sum_j f(\gamma(t_j))\,(\gamma(t_{j+1}) - \gamma(t_j)) = \sum_j f(\gamma(t_j))\,\gamma'(t_j)\,\Delta t_j + o(1)$; the orthogonality relations give $f_i\gamma_i'$ in the $i$-th component and kill every cross term, and the product of the sums is the sum of the products because the idempotents are central and orthogonal.</p>
 <p><strong>Theorem (the hypersurface theorem, split).</strong> Let $e_1, \dots, e_r$ be a complete set of orthogonal central idempotents, let $f$ be left regular, and let $\Omega$ be a bounded domain with smooth boundary. Then</p>
 <p>$$
 \int_{\partial\Omega}\nu_B(y)f(y)\,dS(y) = \sum_{i=1}^r \int_{\partial\Omega}\nu_B^{(i)}(y)f_i(y)\,dS(y) = 0,
@@ -149,10 +149,10 @@ $$</p>
 G(x) = \int_{x_0}^{x} f(\xi)\,d\xi
 $$</p>
 <p>along any path from a fixed base point is well defined and is a primitive of $f$.</p>
-<p><em>Proof.</em> A primitive $G$ satisfies $f\,d\xi = dG$ by definition. Conversely, closedness makes the integral path-independent on a simply connected domain (the Poincaré lemma for $A$-valued forms), and differentiating along a straight segment from $x$ to $x+h$ gives $G(x+h) - G(x) = f(x)h + o(\|h\|)$. $\square$</p>
+<p><em>Proof.</em> A primitive $G$ satisfies $f\,d\xi = dG$ by definition. Conversely, closedness makes the integral path-independent on a simply connected domain (the Poincaré lemma for $A$-valued forms), and differentiating along a straight segment from $x$ to $x+h$ gives $G(x+h) - G(x) = f(x)h + o(\|h\|)$.</p>
 <p><strong>Corollary (the complex case).</strong> For the complex system, every left regular function on a simply connected domain has a primitive, by Cauchy's theorem. For the quaternionic system, by contrast, a primitive can exist only for constant functions, because the only left $\mathbb{H}$-differentiable functions are affine; this is the primitive-level form of the failure of the curve theorem.</p>
 <p><strong>Theorem (Morera, general form).</strong> Let $f$ be continuous on a simply connected domain $\Omega$ and suppose $\int_{\partial R} f\,d\xi = 0$ for every axis-parallel rectangle $R \subseteq \Omega$. Then $f\,d\xi$ is closed and $f$ has a primitive on $\Omega$.</p>
-<p><em>Proof.</em> Integrate $f$ along axis-parallel paths to build $G$; the rectangle hypothesis makes the result path-independent. Then $G$ is differentiable with $f\,d\xi = dG$, so the form is exact and hence closed. $\square$</p>
+<p><em>Proof.</em> Integrate $f$ along axis-parallel paths to build $G$; the rectangle hypothesis makes the result path-independent. Then $G$ is differentiable with $f\,d\xi = dG$, so the form is exact and hence closed.</p>
 <p><strong>Theorem (Cauchy integral formula, general form).</strong> Let $\Omega$ be a bounded domain with smooth boundary, $E$ a Cauchy kernel for $D$, and $f$ left regular on a neighbourhood of $\bar\Omega$. Then for every $x \in \Omega$,</p>
 <p>$$
 f(x) = \int_{\partial\Omega} E(x-y)\,\nu_B(y)\,f(y)\,dS(y).
@@ -163,19 +163,19 @@ $$</p>
 \|f(x_0)\| \leq \frac{1}{C r^{m-1}} \int_{\partial B(x_0,r)} \|E(x_0-y)\|\,\|\nu_B(y)\|\,\|f(y)\|\,dS(y),
 $$</p>
 <p>for a normalising constant $C$ depending on the kernel; in particular $\|f(x_0)\| \leq M(r)\sup_{\partial B}\|f\|$ for a constant $M(r)$ depending only on $r$ and the system.</p>
-<p><em>Proof.</em> Insert the Cauchy formula and apply the integral estimate of the first section. $\square$</p>
+<p><em>Proof.</em> Insert the Cauchy formula and apply the integral estimate of the first section.</p>
 <h2 id="singularities-residues-and-expansions">Singularities, Residues and Expansions</h2>
 <p><strong>Definition.</strong> Let $x_0 \in A$ and let $f$ be left regular on a punctured neighbourhood $\dot U = U \setminus \{x_0\}$ but not on $U$. The <strong>residue</strong> of $f$ at $x_0$ is the element</p>
 <p>$$
 \operatorname{Res}_{x_0} f = \int_{\partial B(x_0,\epsilon)} \nu_B(y)\, f(y)\, dS(y) \in A,
 $$</p>
 <p>for $0 < \epsilon$ small enough that $B(x_0,\epsilon) \setminus \{x_0\} \subseteq \dot U$ and independent of $\epsilon$.</p>
-<p><em>Proof of independence of $\epsilon$.</em> The difference of the integrals over two spheres is the boundary integral of a regular function over the region between them, which vanishes by Cauchy–Goursat. $\square$</p>
+<p><em>Proof of independence of $\epsilon$.</em> The difference of the integrals over two spheres is the boundary integral of a regular function over the region between them, which vanishes by Cauchy–Goursat.</p>
 <p><strong>Theorem (residue theorem, general form).</strong> Let $\Omega$ be a bounded domain with smooth boundary and let $f$ be left regular on $\bar\Omega$ except at finitely many points $x_1, \dots, x_k$ in the interior, with a removable-type behaviour at the boundary. Then</p>
 <p>$$
 \int_{\partial\Omega} \nu_B(y)\,f(y)\,dS(y) = \sum_{i=1}^{k} \operatorname{Res}_{x_i} f.
 $$</p>
-<p><em>Proof.</em> Excise a small ball around each $x_i$ and apply Cauchy–Goursat to the punctured domain. $\square$</p>
+<p><em>Proof.</em> Excise a small ball around each $x_i$ and apply Cauchy–Goursat to the punctured domain.</p>
 <p><strong>Expansions.</strong> A regular function is real-analytic (<em>Regularity and the Cauchy–Riemann Operator</em>), so on a ball it has a convergent power series</p>
 <p>$$
 f(x) = \sum_{\nu} c_\nu\, x^\nu, \qquad c_\nu \in A,
@@ -183,20 +183,20 @@ $$</p>
 <p>in the coordinates of $A$, but the coefficients are not free: the equation $Df = 0$ imposes linear relations among them of a definite shape. The <strong>Taylor-type expansion</strong> of the theory is the expression of $f$ in a basis of the kernel of $D$ inside the space of homogeneous polynomials of each degree, the <em>inner spherical monogenics</em> of the system. The dimension and the explicit basis of these spaces depend on the system, and they are computed in the particular theories of categories 26 to 29. What is general is the existence of the expansion and the finiteness of the dimension of each homogeneous piece.</p>
 <p><strong>Definition.</strong> The <strong>solid spherical monogenics</strong> of degree $\nu$ for $(A,D)$ are the left regular homogeneous polynomials of degree $\nu$ on $A$. Their space is written $\mathcal{M}_\nu(A,D)$ and is finite-dimensional, with $\mathcal{M}_0$ spanned by the constants.</p>
 <p><strong>Proposition.</strong> The restriction map to the unit sphere, $P \mapsto P|_{\partial B(0,1)}$, is injective on $\mathcal{M}_\nu(A,D)$ for every $\nu$.</p>
-<p><em>Proof.</em> A homogeneous polynomial vanishing on the unit sphere vanishes identically by homogeneity. $\square$</p>
+<p><em>Proof.</em> A homogeneous polynomial vanishing on the unit sphere vanishes identically by homogeneity.</p>
 <h2 id="the-cauchy-transform-and-jump-formulas">The Cauchy Transform and Jump Formulas</h2>
 <p><strong>Definition.</strong> Let $\Omega$ be a bounded domain with smooth boundary and let $h$ be a continuous $A$-valued function on $\partial\Omega$. The <strong>Cauchy transform</strong> of $h$ is</p>
 <p>$$
 (\mathcal{C}h)(x) = \int_{\partial\Omega} E(x-y)\,\nu_B(y)\,h(y)\,dS(y), \qquad x \in \Omega.
 $$</p>
 <p><strong>Theorem (regularity of the transform).</strong> For $x \in \Omega$, the Cauchy transform $\mathcal{C}h$ is left regular in $x$.</p>
-<p><em>Proof.</em> For $x$ in the interior and away from $\partial\Omega$, the dependence on $x$ enters only through $E(x-y)$, so differentiating under the integral sign and using that $D_x E(x-y) = 0$ for $x \neq y$ (because $D_yE = 0$ away from the origin and the kernel depends on the difference) gives $D(\mathcal{C}h)(x) = 0$. $\square$</p>
+<p><em>Proof.</em> For $x$ in the interior and away from $\partial\Omega$, the dependence on $x$ enters only through $E(x-y)$, so differentiating under the integral sign and using that $D_x E(x-y) = 0$ for $x \neq y$ (because $D_yE = 0$ away from the origin and the kernel depends on the difference) gives $D(\mathcal{C}h)(x) = 0$.</p>
 <p><strong>Theorem (jump formula).</strong> Let $h$ be continuous on $\partial\Omega$ and let $\mathcal{C}^\pm$ denote the Cauchy transform evaluated as $x$ approaches $\partial\Omega$ from inside and from outside. Then</p>
 <p>$$
 \mathcal{C}^+ h - \mathcal{C}^- h = h
 $$</p>
 <p>pointwise on $\partial\Omega$, up to the normalisation of the kernel.</p>
-<p><em>Proof (sketch).</em> The difference of the two transforms is the principal value of the boundary integral, and the singular part of the kernel contributes the value of the density; this is the Plemelj–Sokhotski computation, valid for the kernels of elliptic first-order operators. The precise constant is fixed by the normalisation of $E$. $\square$</p>
+<p><em>Proof (sketch).</em> The difference of the two transforms is the principal value of the boundary integral, and the singular part of the kernel contributes the value of the density; this is the Plemelj–Sokhotski computation, valid for the kernels of elliptic first-order operators. The precise constant is fixed by the normalisation of $E$.</p>
 <p><strong>Corollary (the Cauchy transform as a projection).</strong> On the space of boundary values of regular functions, the inside transform $\mathcal{C}^+$ acts as the identity and the outside transform $\mathcal{C}^-$ acts as zero.</p>
 <p>The Cauchy transform and the jump formula are the abstract content of the integral representation theory; the explicit Hardy-space and singular-integral theory of a particular system is developed from these formulas with its own kernel.</p>
 <h2 id="summary">Summary</h2>

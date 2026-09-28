@@ -54,15 +54,15 @@
 <h2 id="introduction">Introduction</h2>
 <p>The relativistic particle is the simplest physical object the biquaternion framework has to describe: a single point mass with no structure, moving on a worldline. Everything about it is kinematic. It has a position, a four-velocity, a four-momentum and a mass-shell relation; it has no spin, no internal coordinates, and no field of its own. This makes it the natural first object of the non-quantum theory, and it is the object against which every later construction is calibrated.</p>
 <p>Two facts from the algebra organize the whole account, and they are worth stating at the outset.</p>
-<p><strong>The interval is the norm form.</strong> The material coordinate is the anti-Hermitian biquaternion $\tilde{Q} = ict\,e_0 + \mathbf{x} \in \mathbb{M}_-$, with $\mathbf{x} = x e_1 + y e_2 + z e_3$, and the Minkowski interval of a displacement is the norm form</p>
+<p><strong>The interval is the biquaternion norm.</strong> The material coordinate is the anti-Hermitian biquaternion $\tilde{Q} = ict\,e_0 + \mathbf{x} \in \mathbb{M}_-$, with $\mathbf{x} = x e_1 + y e_2 + z e_3$, and the Minkowski interval of a displacement is the biquaternion norm</p>
 <p>$$
 N(d\tilde{Q}) = d\tilde{Q}\,d\overline{\tilde{Q}} = (ic\,dt)^2 + d\mathbf{x}^2 = -c^2dt^2 + d\mathbf{x}^2 .
 $$</p>
-<p>The algebra therefore does not carry a metric that has to be attached to spacetime from outside; its own norm form, restricted to the real four-dimensional subspace $\mathbb{M}_-$, <em>is</em> the Minkowski form. This is the level-1 identity form $\mathrm{diag}(+1,+1,+1,+1)$ on $\mathbb{B}$, whose restriction to the real material slice is the level-2 form $\eta = \mathrm{diag}(-1,+1,+1,+1)$; both levels are fixed by the companion article <em>Conventions in the Biquaternion Universe</em>, and no metric is introduced here beyond them.</p>
-<p><strong>The three causal types are the three signs of the norm form.</strong> A displacement is timelike, null or spacelike according to whether $N$ is negative, zero or positive. The particle of this article is the timelike case: its tangent stays strictly inside the null cone, and the norm form of its tangent is a fixed negative constant. The null case, and the cone that separates the two, is the subject of the companion article <em>The Light Cone as the Biquaternion Zero-Divisor Cone</em>.</p>
-<p>The article is organized as follows. The next section fixes the worldline and the proper time from the norm form. The third introduces the four-velocity and the rapidity. The fourth gives the four-momentum and the mass shell. The fifth treats composition of velocities. The sixth derives the free action and its equation of motion. The seventh takes the non-relativistic limit. The closing sections separate what the algebra supplies from what is transcribed, collect the open questions, and record the summary, the notation and the external literature.</p>
-<p><strong>Conventions.</strong> We use those of the read list unchanged. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$ and $e_je_k = -\delta_{jk}e_0 + \varepsilon_{jkl}e_l$, and $i$ is the scalar imaginary, $i^2 = -1$, commuting with every $e_k$. The fixed-point subspaces are $\mathbb{M}_-$ (anti-Hermitian: imaginary scalar and real vector — the material sector), $\mathbb{M}_+$ (Hermitian: real scalar and imaginary vector — the informational sector), $\mathbb{H}_{\mathbb{B}}$ (the real-quaternion subspace) and $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_0, ie_0\}$ (the complex scalar line, the center). The conjugations are $\bar{\cdot}$ (quaternion), ${}^*$ (complex), ${}^\dagger = \bar{\cdot}^{\,*}$ (Hermitian) and ${}^\flat = -\dagger$ (anti-Hermitian). The biquaternionic gradient is $\tilde{\nabla} = e_0\partial_{ict} + e_1\partial_x + e_2\partial_y + e_3\partial_z$, its quaternion conjugate is $\bar{\tilde{\nabla}} = e_0\partial_{ict} - e_1\partial_x - e_2\partial_y - e_3\partial_z$, and $\Box = \tilde{\nabla}\bar{\tilde{\nabla}} = \bar{\tilde{\nabla}}\tilde{\nabla} = \partial_{ict}^2 + \Delta$. The norm form is $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the <strong>speed of light in the medium</strong> and $c_0$ its vacuum value; the symbol $\mathbf{v}$ is reserved for particle and frame velocities, as in the neighbouring articles. The trace formula is $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$.</p>
-<h2 id="the-worldline-and-the-norm-form">The Worldline and the Norm Form</h2>
+<p>The algebra therefore does not carry a metric that has to be attached to spacetime from outside; its own biquaternion norm, restricted to the real four-dimensional subspace $\mathbb{M}_-$, <em>is</em> the Minkowski form. This is the level-1 identity form $\mathrm{diag}(+1,+1,+1,+1)$ on $\mathbb{B}$, whose restriction to the real material slice is the level-2 form $\eta = \mathrm{diag}(-1,+1,+1,+1)$; both levels are fixed by the companion article <em>Conventions in the Biquaternion Universe</em>, and no metric is introduced here beyond them.</p>
+<p><strong>The three causal types are the three signs of the biquaternion norm.</strong> A displacement is timelike, null or spacelike according to whether $N$ is negative, zero or positive. The particle of this article is the timelike case: its tangent stays strictly inside the null cone, and the biquaternion norm of its tangent is a fixed negative constant. The null case, and the cone that separates the two, is the subject of the companion article <em>The Light Cone as the Biquaternion Zero-Divisor Cone</em>.</p>
+<p>The article is organized as follows. The next section fixes the worldline and the proper time from the biquaternion norm. The third introduces the four-velocity and the rapidity. The fourth gives the four-momentum and the mass shell. The fifth treats composition of velocities. The sixth derives the free action and its equation of motion. The seventh takes the non-relativistic limit. The closing sections separate what the algebra supplies from what is transcribed, collect the open questions, and record the summary, the notation and the external literature.</p>
+<p><strong>Conventions.</strong> We use those of the read list unchanged. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$ and $e_je_k = -\delta_{jk}e_0 + \varepsilon_{jkl}e_l$, and $i$ is the scalar imaginary, $i^2 = -1$, commuting with every $e_k$. The fixed-point subspaces are $\mathbb{M}_-$ (anti-Hermitian: imaginary scalar and real vector — the material sector), $\mathbb{M}_+$ (Hermitian: real scalar and imaginary vector — the informational sector), $\mathbb{H}_{\mathbb{B}}$ (the real-quaternion subspace) and $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_0, ie_0\}$ (the complex scalar line, the center). The conjugations are $\bar{\cdot}$ (quaternion), ${}^*$ (complex), ${}^\dagger = \bar{\cdot}^{\,*}$ (Hermitian) and ${}^\flat = -\dagger$ (anti-Hermitian). The biquaternionic gradient is $\tilde{\nabla} = e_0\partial_{ict} + e_1\partial_x + e_2\partial_y + e_3\partial_z$, its quaternion conjugate is $\bar{\tilde{\nabla}} = e_0\partial_{ict} - e_1\partial_x - e_2\partial_y - e_3\partial_z$, and $\Box = \tilde{\nabla}\bar{\tilde{\nabla}} = \bar{\tilde{\nabla}}\tilde{\nabla} = \partial_{ict}^2 + \Delta$. The biquaternion norm is $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the <strong>speed of light in the medium</strong> and $c_0$ its vacuum value; the symbol $\mathbf{v}$ is reserved for particle and frame velocities, as in the neighbouring articles. The trace formula is $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$.</p>
+<h2 id="the-worldline-and-the-biquaternion-norm">The Worldline and the Biquaternion Norm</h2>
 <p>A relativistic particle is described by a curve in the material sector,</p>
 <p>$$
 \tilde{Q}(\lambda) : \lambda \longmapsto \tilde{Q}(\lambda) = ic\,t(\lambda)\,e_0 + \mathbf{x}(\lambda) \in \mathbb{M}_- ,
@@ -71,11 +71,11 @@ $$</p>
 <p>$$
 d\tilde{Q} = ic\,dt\,e_0 + d\mathbf{x},
 $$</p>
-<p>whose norm form is</p>
+<p>whose biquaternion norm is</p>
 <p>$$
 N(d\tilde{Q}) = d\tilde{Q}\,d\overline{\tilde{Q}} = -c^2dt^2 + d\mathbf{x}^2 .
 $$</p>
-<!-- CONVENTION — norm form on the material sector: N(dX) = dX dXbar = -c^2 dt^2 + dx^2. The minus sign comes from the ict coordinate, (ic dt)^2 = -c^2 dt^2, not from a choice of metric. The level-1 identity form diag(+1,+1,+1,+1) on B restricts to the level-2 Minkowski form eta = diag(-1,+1,+1,+1) on the real material slice. Do not "correct" the sign by importing a direct Euclidean metric on (t,x). -->
+<!-- CONVENTION — biquaternion norm on the material sector: N(dX) = dX dXbar = -c^2 dt^2 + dx^2. The minus sign comes from the ict coordinate, (ic dt)^2 = -c^2 dt^2, not from a choice of metric. The level-1 identity form diag(+1,+1,+1,+1) on B restricts to the level-2 Minkowski form eta = diag(-1,+1,+1,+1) on the real material slice. Do not "correct" the sign by importing a direct Euclidean metric on (t,x). -->
 
 <p>Off the null set, $N(d\tilde{Q})$ has the sign of $-d\tau^2$ for a real number $d\tau$, and the <strong>proper time</strong> is defined by</p>
 <p>$$
@@ -84,7 +84,7 @@ $$</p>
 d\tau = dt\sqrt{1 - \frac{\mathbf{v}^2}{c^2}},
 \qquad \mathbf{v} = \frac{d\mathbf{x}}{dt} .
 $$</p>
-<p>The definition is real precisely when the worldline is timelike, $N(d\tilde{Q}) < 0$, and it is the condition that fixes which curves describe a particle of nonzero rest mass. The three cases are the three signs of the norm form:</p>
+<p>The definition is real precisely when the worldline is timelike, $N(d\tilde{Q}) < 0$, and it is the condition that fixes which curves describe a particle of nonzero rest mass. The three cases are the three signs of the biquaternion norm:</p>
 <p>$$
 \text{timelike: } N<0,
 \qquad
@@ -103,7 +103,7 @@ $$</p>
 \qquad
 \gamma = \frac{dt}{d\tau} = \frac{1}{\sqrt{1-\mathbf{v}^2/c^2}} .
 $$</p>
-<p>It lies in $\mathbb{M}_-$ because both terms do: $ic\,e_0$ is the imaginary scalar direction of the material sector and $\mathbf{v}$ is a real vector. Its norm form is the defining normalization of the parameter:</p>
+<p>It lies in $\mathbb{M}_-$ because both terms do: $ic\,e_0$ is the imaginary scalar direction of the material sector and $\mathbf{v}$ is a real vector. Its biquaternion norm is the defining normalization of the parameter:</p>
 <p>$$
 N(\tilde{U}) = \tilde{U}\,\overline{\tilde{U}}
 = \gamma^2\left[(ic)^2 + \mathbf{v}^2\right]
@@ -145,13 +145,13 @@ E = \gamma mc^2,
 \qquad
 \mathbf{p} = \gamma m\mathbf{v},
 $$</p>
-<p>so that the energy is the imaginary scalar part multiplied by $-ic$ — equivalently, the physical energy is $E = -ic\,\mathrm{Sc}(\tilde{P})$ — and the momentum is the real vector part. The four-momentum lies in $\mathbb{M}_-$. Its norm form is the <strong>mass-shell relation</strong>:</p>
+<p>so that the energy is the imaginary scalar part multiplied by $-ic$ — equivalently, the physical energy is $E = -ic\,\mathrm{Sc}(\tilde{P})$ — and the momentum is the real vector part. The four-momentum lies in $\mathbb{M}_-$. Its biquaternion norm is the <strong>mass-shell relation</strong>:</p>
 <p>$$
 \boxed{\; N(\tilde{P}) = \tilde{P}\,\overline{\tilde{P}} = -\frac{E^2}{c^2} + \mathbf{p}^2 = -m^2c^2 \;}
 \qquad\Longleftrightarrow\qquad
 E^2 = \mathbf{p}^2c^2 + m^2c^4 .
 $$</p>
-<p>This is one of the few places in the framework where an equation of physics is <em>identical</em> to an algebraic statement about the norm form: the mass shell is the level set $N(\tilde{P}) = -m^2c^2$, and the dispersion relation is its coordinate form. The rest mass is, up to the factor $-c^2$, the norm form of the four-momentum; the massless case is where the norm form vanishes, which is the zero-divisor cone.</p>
+<p>This is one of the few places in the framework where an equation of physics is <em>identical</em> to an algebraic statement about the biquaternion norm: the mass shell is the level set $N(\tilde{P}) = -m^2c^2$, and the dispersion relation is its coordinate form. The rest mass is, up to the factor $-c^2$, the biquaternion norm of the four-momentum; the massless case is where the biquaternion norm vanishes, which is the zero-divisor cone.</p>
 <p>The geometric content is worth drawing out. In the four real coordinates $(E/c, p_x, p_y, p_z)$ the relation $E^2 = \mathbf{p}^2c^2 + m^2c^4$ is a two-sheeted hyperboloid, and only the future sheet $E \geq mc^2$ is the particle's. The four-momentum is future-directed and timelike:</p>
 <p>$$
 N(\tilde{P}) = -m^2c^2 < 0
@@ -218,7 +218,7 @@ $$</p>
 <p>$$
 \frac{d\tilde{P}}{d\tau} = m\frac{d^2\tilde{Q}}{d\tau^2} = 0 ,
 $$</p>
-<p>the geodesic of flat $\mathbb{M}_-$. In the algebra the action is exactly the length functional of the norm form, and the four-momentum is exactly its Noether charge under translations; the companion article <em>Noether's Theorem in Biquaternionic Form</em> derives the charge from the translation invariance of this action.</p>
+<p>the geodesic of flat $\mathbb{M}_-$. In the algebra the action is exactly the length functional of the biquaternion norm, and the four-momentum is exactly its Noether charge under translations; the companion article <em>Noether's Theorem in Biquaternionic Form</em> derives the charge from the translation invariance of this action.</p>
 <p>The action has the two properties that make it the starting point of the theory. It is a Lorentz scalar, because $N(d\tilde{Q})$ is preserved by rotor conjugation and $d\tau$ is the invariant parameter; and it is reparametrization invariant, so it depends on the worldline and not on the choice of $\lambda$. A particle with charge, or in an external field, adds the minimal-coupling term to this action, which is the content of <em>The Relativistic Particle in an External Field, in Biquaternionic Form</em>.</p>
 <h2 id="the-non-relativistic-limit">The Non-Relativistic Limit</h2>
 <p>Expanding the four-velocity and the energy in powers of $\mathbf{v}^2/c^2$ recovers the non-relativistic description as the leading term of the algebra. The spatial part of the four-velocity is</p>
@@ -237,7 +237,7 @@ E = mc^2 + \frac{\mathbf{p}^2}{2m} + O(p^4/m^3c^2),
 \qquad
 \mathbf{p} = m\mathbf{v} + O(v^3/c^2).
 $$</p>
-<p>The rest energy $mc^2$ is the constant imaginary scalar part; it is a constant of the motion in the non-relativistic limit and is dropped, leaving the kinetic energy $p^2/2m$. The norm form of the four-momentum is exactly $-m^2c^2$ in the relativistic theory, and the non-relativistic expansion preserves it through a cancellation between the two terms. Expanding each separately,</p>
+<p>The rest energy $mc^2$ is the constant imaginary scalar part; it is a constant of the motion in the non-relativistic limit and is dropped, leaving the kinetic energy $p^2/2m$. The biquaternion norm of the four-momentum is exactly $-m^2c^2$ in the relativistic theory, and the non-relativistic expansion preserves it through a cancellation between the two terms. Expanding each separately,</p>
 <p>$$
 -\frac{E^2}{c^2} = -m^2c^2 - m^2\mathbf{v}^2 + O(v^4/c^2),
 \qquad
@@ -247,24 +247,24 @@ $$</p>
 <p>$$
 N(\tilde{P}) = -\frac{E^2}{c^2} + \mathbf{p}^2 = -m^2c^2 + O(v^4/c^2).
 $$</p>
-<p>The leading corrections cancel because the mass shell is an exact relation: the kinetic energy $\tfrac12 m\mathbf{v}^2$ in $E$ and the momentum $\mathbf{p} = m\mathbf{v}$ are the two halves of the same invariant. The norm form does not vanish in the non-relativistic limit — the particle stays well inside the cone, at an invariant distance $m^2c^2$ from the apex — and the non-relativistic theory is in this sense the interior approximation of the relativistic one. It is the same comparison the companion article <em>The Light Cone as the Biquaternion Zero-Divisor Cone</em> draws from the momentum-space side.</p>
+<p>The leading corrections cancel because the mass shell is an exact relation: the kinetic energy $\tfrac12 m\mathbf{v}^2$ in $E$ and the momentum $\mathbf{p} = m\mathbf{v}$ are the two halves of the same invariant. The biquaternion norm does not vanish in the non-relativistic limit — the particle stays well inside the cone, at an invariant distance $m^2c^2$ from the apex — and the non-relativistic theory is in this sense the interior approximation of the relativistic one. It is the same comparison the companion article <em>The Light Cone as the Biquaternion Zero-Divisor Cone</em> draws from the momentum-space side.</p>
 <h2 id="what-the-algebra-supplies-and-what-it-transcribes">What the Algebra Supplies and What It Transcribes</h2>
-<p><strong>Supplied by the algebra.</strong> The identification of the interval with the norm form, and therefore the identity of the causal trichotomy with the sign of $N$; the placement of the worldline, the four-velocity and the four-momentum in the material sector $\mathbb{M}_-$; the normalization $N(\tilde{U}) = -c^2$ as an algebraic unit condition rather than a separate postulate; and the packaging of the velocity and the frame transformation in a single rotor. The mass shell $N(\tilde{P}) = -m^2c^2$ is a level set of the algebra's own form.</p>
+<p><strong>Supplied by the algebra.</strong> The identification of the interval with the biquaternion norm, and therefore the identity of the causal trichotomy with the sign of $N$; the placement of the worldline, the four-velocity and the four-momentum in the material sector $\mathbb{M}_-$; the normalization $N(\tilde{U}) = -c^2$ as an algebraic unit condition rather than a separate postulate; and the packaging of the velocity and the frame transformation in a single rotor. The mass shell $N(\tilde{P}) = -m^2c^2$ is a level set of the algebra's own form.</p>
 <p><strong>Transcribed from standard physics.</strong> The proper-time definition, the Lorentz factor, the velocity-addition law, the Lagrangian $L = -mc^2/\gamma$, the canonical momentum, the dispersion relation and the non-relativistic expansion are standard relativistic mechanics, and the biquaternion formulation reproduces them rather than replacing them. The parameter $c$ and the mass $m$ are inputs; the algebra supplies the home of each object but not its value.</p>
 <p><strong>Interpretation.</strong> The reading of $\mathbb{M}_-$ as the material sector, and of a timelike worldline in it as a physical particle, is the framework's structural hypothesis, stated in the foundational articles <em>Introduction to the Biquaternion Universe</em> and <em>The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector</em>. The kinematic statements above are exact and standard; the hypothesis is what gives them their sector reading.</p>
 <h2 id="open-questions">Open Questions</h2>
 <ol>
 <li>
-<p><strong>The action's normalization in a medium.</strong> The medium speed $c = 1/\sqrt{\epsilon\mu}$ enters the proper time and the action as the local scale. Is the free-particle action in a medium strictly the length functional of the local norm form, or does a dispersive medium require the particle's mass to be renormalized to the local $c$? The framework treats $c$ as local but does not fix the dynamical origin of the medium.</p>
+<p><strong>The action's normalization in a medium.</strong> The medium speed $c = 1/\sqrt{\epsilon\mu}$ enters the proper time and the action as the local scale. Is the free-particle action in a medium strictly the length functional of the local biquaternion norm, or does a dispersive medium require the particle's mass to be renormalized to the local $c$? The framework treats $c$ as local but does not fix the dynamical origin of the medium.</p>
 </li>
 <li>
-<p><strong>Accelerated worldlines and the cone.</strong> A uniformly accelerated worldline has a horizon — the Rindler horizon — which is a null surface. Does the zero-divisor cone of the next article acquire a distinguished role for accelerated observers, and can the horizon be written as a level set of a Killing norm form in $\mathbb{M}_-$?</p>
+<p><strong>Accelerated worldlines and the cone.</strong> A uniformly accelerated worldline has a horizon — the Rindler horizon — which is a null surface. Does the zero-divisor cone of the next article acquire a distinguished role for accelerated observers, and can the horizon be written as a level set of a Killing biquaternion norm in $\mathbb{M}_-$?</p>
 </li>
 <li>
 <p><strong>The many-particle problem.</strong> The four-velocity and four-momentum here are those of a single particle. The proper-time normalization does not sum across particles with different Lorentz factors; the multi-particle conservation statement requires the coordinate-time form of the companion article <em>Exercise: Four-Momentum Conservation in a Collision</em>, and a clean biquaternion many-body kinematics is not developed here.</p>
 </li>
 <li>
-<p><strong>Rest mass as a norm.</strong> The identity $N(\tilde{P}) = -m^2c^2$ makes the rest mass the norm form of the momentum. Does the framework constrain the possible mass spectrum in any way, or is $m$ an arbitrary parameter of the same kind as in the standard theory?</p>
+<p><strong>Rest mass as a norm.</strong> The identity $N(\tilde{P}) = -m^2c^2$ makes the rest mass the biquaternion norm of the momentum. Does the framework constrain the possible mass spectrum in any way, or is $m$ an arbitrary parameter of the same kind as in the standard theory?</p>
 </li>
 <li>
 <p><strong>Coupling to the informational sector.</strong> The particle is described entirely in $\mathbb{M}_-$. Whether there is a kinematical coupling between a worldline and the informational sector $\mathbb{M}_+$ — beyond the Lorentz action of the rotor — is not addressed here; it is the central open question of the foundational article <em>The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector</em>, and it is outside the scope of a classical kinematic account.</p>
@@ -272,7 +272,7 @@ $$</p>
 </ol>
 <p>The conventions of the construction are those of the following companion articles:</p>
 <ul>
-<li>Companion article <em>Introduction to the Biquaternion Universe</em>, for the notation, the norm form and the sector structure.</li>
+<li>Companion article <em>Introduction to the Biquaternion Universe</em>, for the notation, the biquaternion norm and the sector structure.</li>
 <li>Companion article <em>Conventions in the Biquaternion Universe</em>, for the algebra and basis, the four conjugations, the real subspaces and the metric at its three levels.</li>
 <li>Companion article <em>The Lorentz Transformation as a Biquaternionic Rotation</em>, for the boost rotor and the transformation of the four-vector.</li>
 <li>Companion article <em>The Lorentz Force in Biquaternion Form</em>, for the equation of motion in an external field.</li>
@@ -309,7 +309,7 @@ S[\tilde{Q}] = -mc\int\sqrt{-\,d\tilde{Q}\,d\overline{\tilde{Q}}}
 L(\mathbf{v}) = -\frac{mc^2}{\gamma},
 $$</p>
 <p>whose canonical momentum is $\mathbf{p} = \gamma m\mathbf{v}$ and whose equation of motion is $\tilde{P} = \mathrm{const}$. The non-relativistic limit gives $\tilde{U} = ic\,e_0 + \mathbf{v}$, $E = mc^2 + \mathbf{p}^2/2m$ and $N(\tilde{P}) = -m^2c^2 + O(v^4/c^2)$.</p>
-<p>The interval is the norm form, the mass shell is its level set, the causal trichotomy is its sign, and the frame transformation is a rotor conjugation; the rest is standard relativistic mechanics transcribed into the algebra.</p>
+<p>The interval is the biquaternion norm, the mass shell is its level set, the causal trichotomy is its sign, and the frame transformation is a rotor conjugation; the rest is standard relativistic mechanics transcribed into the algebra.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -341,7 +341,7 @@ $$</p>
 </tr>
 <tr>
 <td>$N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$</td>
-<td>Norm form (level 1: identity on $\mathbb{C}$)</td>
+<td>Biquaternion norm (level 1: identity on $\mathbb{C}$)</td>
 </tr>
 <tr>
 <td>$\tilde{Q} = ict\,e_0 + \mathbf{x}$</td>

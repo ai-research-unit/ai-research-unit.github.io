@@ -55,7 +55,7 @@
 <p>This article introduces harmonic analysis on the quaternion space as the study of the Fourier transform, convolution, and the function spaces on which they act, with the non-commutative structure playing an essential role. The goal is to define the core objects precisely, establish their basic properties, and describe the theorems that give the subject its shape.</p>
 <p>The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. No examples are given. The quaternion algebra is assumed from the article on quaternion algebra, and the scalar-vector decomposition is used throughout. The article is stated for the quaternion algebra over the real numbers, and the complexification is mentioned only where it clarifies the structure.</p>
 <p>Throughout this article, the quaternion algebra is denoted $\mathbb{H}$, and its basis is $e_0 = 1, e_1, e_2, e_3$. The scalar imaginary of the complex numbers is denoted $i$, so that it does not collide with the quaternion units.</p>
-<p><strong>Remark.</strong> In the biquaternion case the Fourier kernel is obstructed on the null cone, where the norm form vanishes and the symbol of the transform is not invertible. Here the norm form is positive definite, every non-zero $\xi$ is invertible, and the kernel is everywhere defined; there is no vanishing-norm restriction to record.</p>
+<p><strong>Remark.</strong> In the biquaternion case the Fourier kernel is obstructed on the null cone, where the norm vanishes and the symbol of the transform is not invertible. Here the quaternion norm is positive definite, every non-zero $\xi$ is invertible, and the kernel is everywhere defined; there is no vanishing-norm restriction to record.</p>
 <h2 id="the-additive-group-and-its-characters">The Additive Group and Its Characters</h2>
 <h3 id="additive-structure">Additive Structure</h3>
 <p>The quaternion space $\mathbb{H}$ is a locally compact abelian group under addition, isomorphic to $\mathbb{R}^4$. Its <strong>characters</strong> are the continuous homomorphisms into the circle group. Since the additive group of $\mathbb{H}$ is just $\mathbb{R}^4$, the characters are the ordinary four-dimensional Fourier characters:</p>
@@ -112,7 +112,7 @@ $$</p>
 <p>$$
 \widehat{f_\lambda}(\xi) = \frac{1}{|\lambda|^4} \hat{f}(\bar{\lambda}^{-1}\xi).
 $$</p>
-<p><strong>Rotation.</strong> If $f_u(\tilde q) = f(u \tilde q u^{-1})$ for a unit quaternion $u$, then $\hat{f}_u(\xi) = \hat{f}(u \xi u^{-1})$. The transform commutes with rotations.</p>
+<p><strong>Conjugation equivariance.</strong> If $f_u(\tilde q) = f(u \tilde q u^{-1})$ for a unit quaternion $u$, then $\hat{f}_u(\xi) = \hat{f}(u \xi u^{-1})$. The transform commutes with the conjugation action of the unit group.</p>
 <p><strong>Conjugation.</strong> $\widehat{\bar{f}}(\xi) = \overline{\hat{f}(-\xi)}$.</p>
 <h3 id="the-plancherel-theorem">The Plancherel Theorem</h3>
 <p><strong>Theorem.</strong> The quaternion Fourier transform extends uniquely to a unitary operator</p>
@@ -151,7 +151,7 @@ $$</p>
 \widehat{f * g}(\xi) = \hat{f}(\xi) \hat{g}(\xi),
 $$</p>
 <p>with the same ordering on both sides for the left-sided transform. For the two-sided transform, the statement is more complicated, because the two kernels do not commute.</p>
-<p><strong>Proof.</strong> Write the definition, apply Fubini, and change variables. $\square$</p>
+<p><strong>Proof.</strong> Write the definition, apply Fubini, and change variables.</p>
 <h3 id="the-structure-of-the-convolution-theorem">The Structure of the Convolution Theorem</h3>
 <p>The convolution theorem for the quaternion Fourier transform is the same as for the complex Fourier transform on $\mathbb{R}^4$, except that the multiplication on the right is quaternion multiplication, which is non-commutative. So the convolution theorem says that the transform turns convolution into quaternion multiplication, and the non-commutativity of the convolution is a reflection of the non-commutativity of $\mathbb{H}$.</p>
 <h3 id="approximate-identities">Approximate Identities</h3>
@@ -234,7 +234,7 @@ $$</p>
 <p>$$
 \|Mf\|_p \leq C_p \|f\|_p.
 $$</p>
-<p><strong>Proof.</strong> The case $p = \infty$ is trivial. The case $1 < p < \infty$ follows from the weak $(1,1)$ estimate and the trivial $L^\infty$ estimate by interpolation. $\square$</p>
+<p><strong>Proof.</strong> The case $p = \infty$ is trivial. The case $1 < p < \infty$ follows from the weak $(1,1)$ estimate and the trivial $L^\infty$ estimate by interpolation.</p>
 <h3 id="the-structure-of-the-maximal-function">The Structure of the Maximal Function</h3>
 <p>Because the additive group of $\mathbb{H}$ is just $\mathbb{R}^4$, the maximal function theory is identical to the real theory on $\mathbb{R}^4$. The non-commutativity of $\mathbb{H}$ does not affect the maximal function, because the maximal function is defined in terms of the Euclidean norm, which does not see the algebra structure.</p>
 <h2 id="the-calderonzygmund-theory">The Calderón–Zygmund Theory</h2>
@@ -290,7 +290,7 @@ $$</p>
 <p>$$
 \widehat{Rf(\theta, \cdot)}(\sigma) = \hat{f}(\sigma \theta).
 $$</p>
-<p><strong>Proof.</strong> Write the definition of the Radon transform, take the quaternion Fourier transform in $t$, and change variables. $\square$</p>
+<p><strong>Proof.</strong> Write the definition of the Radon transform, take the quaternion Fourier transform in $t$, and change variables.</p>
 <p>The Fourier slice theorem is the mathematical basis of quaternion tomography, the analogue of computed tomography for the quaternion space.</p>
 <h3 id="the-inversion-formula">The Inversion Formula</h3>
 <p><strong>Theorem.</strong> For suitable $f$,</p>
@@ -408,7 +408,7 @@ $$</p>
 <li>F. Brackx, R. Delanghe, and F. Sommen, <em>Clifford Analysis</em> (Pitman, 1982), for the general Clifford theory.</li>
 <li>John Ryan, <em>Clifford Algebras in Analysis and Related Topics</em> (CRC Press, 1996), for the analytic theory.</li>
 <li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em> (Cambridge, 2001), for the connection to Clifford algebras.</li>
-<li>H. Blaine Lawson and Marie-Louise Michelsohn, <em>Spin Geometry</em> (Princeton, 1989), for the role of the Dirac operator in geometry.</li>
+<li>H. Blaine Lawson and Marie-Louise Michelsohn, <em>Spin Geometry</em> (Princeton, 1989), for the role of the spinor-valued first-order operator in geometry.</li>
 <li>Elias M. Stein and Guido Weiss, <em>Introduction to Fourier Analysis on Euclidean Spaces</em> (Princeton, 1971), for the classical treatment of the Fourier transform on $\mathbb{R}^n$.</li>
 <li>Todd A. Ell and Stephen J. Sangwine, <em>Quaternion Fourier Transforms for Signal and Image Processing</em> (Wiley, 2014), for the engineering applications.</li>
 </ul>

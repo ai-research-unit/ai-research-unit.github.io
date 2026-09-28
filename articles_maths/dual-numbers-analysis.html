@@ -62,7 +62,7 @@
 Z = x + y \varepsilon, \qquad x, y \in R,
 $$</p>
 <p>where $\varepsilon^2 = 0$. The element $x$ is the <strong>real part</strong>, and $y$ is the <strong>infinitesimal part</strong>. We write $x = \operatorname{Re} Z$ and $y = \operatorname{Inf} Z$.</p>
-<p>There is no Euclidean modulus intrinsic to the algebra, because the norm form $N(Z) = x^2$ is degenerate and vanishes on the maximal ideal. The closest analogue is the <strong>Euclidean modulus</strong></p>
+<p>There is no Euclidean modulus intrinsic to the algebra, because the norm $N(Z) = x^2$ is degenerate and vanishes on the maximal ideal. The closest analogue is the <strong>Euclidean modulus</strong></p>
 <p>$$
 \|Z\|_E = \sqrt{x^2 + y^2},
 $$</p>
@@ -164,7 +164,7 @@ $$</p>
 <p>$$
 \frac{f(Z_0 + h) - f(Z_0)}{h} = \frac{(u_x h_1 + u_y h_2) + (v_x h_1 + v_y h_2) \varepsilon}{h_1 + h_2 \varepsilon} + o(1).
 $$</p>
-<p>For the limit to exist independently of the direction of $h$, the numerator must be a dual multiple of $h$. This forces $u_y = 0$ and $u_x = v_y$; the remaining partial $v_x$ is free and becomes the infinitesimal part of the derivative. $\square$</p>
+<p>For the limit to exist independently of the direction of $h$, the numerator must be a dual multiple of $h$. This forces $u_y = 0$ and $u_x = v_y$; the remaining partial $v_x$ is free and becomes the infinitesimal part of the derivative.</p>
 <p><strong>Corollary.</strong> If $f$ is dual differentiable on a domain, then $u$ depends only on $x$, and $v$ is affine in $y$ with slope $u'(x)$:</p>
 <p>$$
 f(x + y\varepsilon) = u(x) + \left( y u'(x) + c(x) \right) \varepsilon,
@@ -193,11 +193,11 @@ $$</p>
 <h3 id="the-maximal-ideal">The Maximal Ideal</h3>
 <p>The <strong>maximal ideal</strong> of $\mathbb{D}'$ is</p>
 <p>$$
-\mathfrak{m} = (\varepsilon) = \{y \varepsilon : y \in R\}.
+\mathrm{M} = (\varepsilon) = \{y \varepsilon : y \in R\}.
 $$</p>
 <p>It is the set of elements with vanishing real part, and it is nilpotent of index two:</p>
 <p>$$
-\mathfrak{m}^2 = 0.
+\mathrm{M}^2 = 0.
 $$</p>
 <p>The maximal ideal is the infinitesimal direction, and it is the obstruction to the algebra being a field.</p>
 <h3 id="the-infinitesimal-part">The Infinitesimal Part</h3>
@@ -207,7 +207,7 @@ $$</p>
 $$</p>
 <p>is the <strong>augmentation map</strong>, and its kernel is the maximal ideal. The augmentation is a ring homomorphism, and it is the unique one from $\mathbb{D}'$ to $R$.</p>
 <h3 id="the-infinitesimal-translation">The Infinitesimal Translation</h3>
-<p>For $h \in \mathfrak{m}$, the map</p>
+<p>For $h \in \mathrm{M}$, the map</p>
 <p>$$
 T_h : \mathbb{D}' \to \mathbb{D}', \qquad T_h(Z) = Z + h,
 $$</p>
@@ -231,7 +231,7 @@ $$</p>
 \oint_\gamma f(Z) \, dZ = 0
 $$</p>
 <p>provided the contour does not cross the maximal ideal in a way that makes the integral diverge.</p>
-<p><strong>Proof.</strong> Since $f$ is dual differentiable, it is of the form $f(x + y\varepsilon) = u(x) + (y u'(x) + c(x))\varepsilon$. Let $U$ be an antiderivative of $u$ and let $C$ be an antiderivative of $c$, and set $F(x + y\varepsilon) = U(x) + (y u(x) + C(x))\varepsilon$. Then $F$ is dual differentiable with $F' = f$: its real part is $U$ with $U' = u$, and the $x$-derivative of its infinitesimal part $y u(x) + C(x)$ is $y u'(x) + c(x)$. So $f$ has a primitive, and the integral of $f$ over a closed contour vanishes. $\square$</p>
+<p><strong>Proof.</strong> Since $f$ is dual differentiable, it is of the form $f(x + y\varepsilon) = u(x) + (y u'(x) + c(x))\varepsilon$. Let $U$ be an antiderivative of $u$ and let $C$ be an antiderivative of $c$, and set $F(x + y\varepsilon) = U(x) + (y u(x) + C(x))\varepsilon$. Then $F$ is dual differentiable with $F' = f$: its real part is $U$ with $U' = u$, and the $x$-derivative of its infinitesimal part $y u(x) + C(x)$ is $y u'(x) + c(x)$. So $f$ has a primitive, and the integral of $f$ over a closed contour vanishes.</p>
 <p><strong>Caution.</strong> The theorem fails if the contour crosses the maximal ideal in a way that makes the integral diverge. The maximal ideal is the analogue of the branch cut in complex analysis, and it must be avoided.</p>
 <h3 id="the-cauchy-integral-formula">The Cauchy Integral Formula</h3>
 <p>There is <strong>no</strong> general Cauchy integral formula in dual numbers analysis. The reason is that the kernel $1/(W - Z)$ has a singularity on the maximal ideal, and the integral around a point depends on the path in a way that cannot be removed by a single formula.</p>
@@ -259,7 +259,7 @@ $$</p>
 f(Z) = \sum_{n=0}^\infty \frac{f^{(n)}(Z_0)}{n!} (Z - Z_0)^n
 $$</p>
 <p>valid for $\|Z - Z_0\|_E < r$.</p>
-<p><strong>Proof.</strong> Since $f$ is dual differentiable, it is of the form $f(x + y\varepsilon) = u(x) + (y u'(x) + c(x))\varepsilon$. The real part $u$ has an ordinary real Taylor expansion, and the infinitesimal part $y u'(x) + c(x)$ is expanded by differentiating term by term. So the expansion is the real Taylor expansion of $u$ plus $\varepsilon$ times the real Taylor expansion of $y u'(x) + c(x)$. $\square$</p>
+<p><strong>Proof.</strong> Since $f$ is dual differentiable, it is of the form $f(x + y\varepsilon) = u(x) + (y u'(x) + c(x))\varepsilon$. The real part $u$ has an ordinary real Taylor expansion, and the infinitesimal part $y u'(x) + c(x)$ is expanded by differentiating term by term. So the expansion is the real Taylor expansion of $u$ plus $\varepsilon$ times the real Taylor expansion of $y u'(x) + c(x)$.</p>
 <p><strong>Corollary.</strong> A dual differentiable function is analytic: it equals its Taylor series in a neighborhood of every point.</p>
 <p><strong>Caution.</strong> The identity theorem fails in general, because a dual differentiable function can vanish on a set with an accumulation point without being identically zero. The reason is that the real part and the infinitesimal part are independent, and one can vanish while the other does not.</p>
 <h2 id="singularities">Singularities</h2>
@@ -271,17 +271,6 @@ $$</p>
 <p><strong>Caution.</strong> The classification is more complicated than in the complex case, because the function can behave differently on the real and infinitesimal components. A point can be removable for one component and a pole for the other, in which case it is neither removable nor a pole for the dual function.</p>
 <h3 id="residues">Residues</h3>
 <p>There is <strong>no</strong> general residue theory in dual numbers analysis. The reason is that the integral around a singularity depends on the path, and there is no single number that captures the singularity. The dual differentiable functions are of the form $u(x) + (y u'(x) + c(x))\varepsilon$, and the singularity structure is that of the real functions $u$ and $c$.</p>
-<h2 id="applications">Applications</h2>
-<h3 id="automatic-differentiation">Automatic Differentiation</h3>
-<p>The dual numbers are the coefficient algebra for forward-mode automatic differentiation. A function $f : \mathbb{R} \to \mathbb{R}$ extends to a function on $\mathbb{D}'$ by the formula</p>
-<p>$$
-f(x + \varepsilon) = f(x) + f'(x) \varepsilon,
-$$</p>
-<p>which is exact because $\varepsilon^2 = 0$. This is the algebraic content of the derivative, and it is the basis of the computational technique.</p>
-<h3 id="infinitesimal-deformations">Infinitesimal Deformations</h3>
-<p>The dual numbers are the coefficients of first-order deformations. A deformation of a mathematical object over the dual numbers is a family parametrized by $\varepsilon$, with $\varepsilon^2 = 0$, and the first-order information is the derivative with respect to $\varepsilon$.</p>
-<h3 id="the-tangent-space">The Tangent Space</h3>
-<p>In algebraic geometry, the tangent space at a point $x$ of a scheme $X$ is the set of morphisms $\operatorname{Spec} \mathbb{D}' \to X$ sending the closed point to $x$. The dual numbers are the algebraic model of the infinitesimal neighborhood of a point.</p>
 <h2 id="comparison-with-complex-analysis">Comparison with Complex Analysis</h2>
 <p>The differences between dual numbers analysis and complex analysis are consequences of the sign in the multiplication rule $\varepsilon^2 = 0$ versus $i^2 = -1$.</p>
 <div class="table-scroll"><table>
@@ -348,7 +337,7 @@ $$</p>
 <p>The complex case is rigid: differentiability is a strong condition, and it forces the function to be determined by its boundary values. The dual case is also rigid: differentiability forces the real part to be independent of the infinitesimal direction, and leaves two ordinary differentiable functions of one variable (the real part and the value of the infinitesimal part along $y = 0$).</p>
 <h2 id="summary">Summary</h2>
 <p>Dual numbers analysis is the study of differentiable functions of a dual variable $Z = x + y\varepsilon$ with $\varepsilon^2 = 0$. The plane carries the Euclidean norm inherited from $R^2$, and with it the convergent sequences and the continuous functions on which the subject is built.</p>
-<p>The derivative is defined as in the complex case, but its behaviour differs because $\varepsilon$ is nilpotent. The structure theorem for dual differentiability records the consequence: the infinitesimal part of a dual differentiable function is determined by the derivative of its real part, so a dual function carries its own derivative inside itself. The maximal ideal $\mathfrak{m} = (\varepsilon)$, nilpotent of index two, is the infinitesimal direction, and it is the source of that rigidity.</p>
+<p>The derivative is defined as in the complex case, but its behaviour differs because $\varepsilon$ is nilpotent. The structure theorem for dual differentiability records the consequence: the infinitesimal part of a dual differentiable function is determined by the derivative of its real part, so a dual function carries its own derivative inside itself. The maximal ideal $\mathrm{M} = (\varepsilon)$, nilpotent of index two, is the infinitesimal direction, and it is the source of that rigidity.</p>
 <p>The article develops what the nilpotent structure supports: contour integrals along paths, power series with their radius of convergence, and the classification of the isolated singularities as removable, a pole, or essential. The final sections record the relation of the dual calculus to ordinary differentiation and compare the subject with complex analysis, where the square of the imaginary unit vanishes rather than equalling $-1$.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -396,7 +385,7 @@ $$</p>
 <td>Dual Wirtinger derivatives</td>
 </tr>
 <tr>
-<td>$\mathfrak{m} = (\varepsilon)$</td>
+<td>$\mathrm{M} = (\varepsilon)$</td>
 <td>Maximal ideal</td>
 </tr>
 <tr>

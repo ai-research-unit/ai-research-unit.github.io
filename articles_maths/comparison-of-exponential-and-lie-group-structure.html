@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comparison of the Exponential and Lie Group Structure — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="comparison-of-the-exponential-and-lie-group-structure"><strong>Comparison of the Exponential and Lie Group Structure</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article compares the exponential map of the eight algebras $\mathbb{R}, \mathbb{C}, \mathbb{D}, \mathbb{D}', \mathbb{H}, \mathbb{H}_{\mathrm{s}}, \mathbb{B}, \mathbb{H}_{\mathbb{D}}$ and the Lie group structure of their groups of units. It states the closed form of the exponential, its kernel, its image, its surjectivity and its injectivity and whether it is a group homomorphism, the group of units as a Lie group with its dimension, its components and its identity component, and the one-parameter subgroups and the compact, hyperbolic and parabolic subgroups they generate, in tables with the eight algebras as columns in the fixed order of <em>The Eight Algebras Compared</em>. Every entry restates a result of the exponential and Lie group articles cited in the explanations. The article states the exponential and the Lie group structure; the automorphism groups and derivation spaces that generate them are the subject of <em>Comparison of Automorphisms and Derivations</em>, the topology of the group of units is the subject of <em>Comparison of Norms and Invertibility</em>, and the polar factorisation of an element is the subject of <em>Comparison of the Polar Representation</em>.</p>
+<p>The organising thread is the <strong>Baker–Campbell–Hausdorff law</strong>. For the four commutative algebras the commutator vanishes, the series terminates at its leading term and the exponential is a homomorphism onto one component of the units; for the four non-commutative systems the law fails, the exponential stops being a homomorphism, and its image and kernel carry the information of the logarithm. The split quaternions are the one column in which the exponential does not even reach the identity component of the units, and the two biquaternion systems are the columns in which the exponential is surjective onto a connected unit group but not injective.</p>
+<h2 id="the-exponential-map">The Exponential Map</h2>
+<p>The following table compares the exponential of the eight algebras: its closed form, whether it is surjective onto the group of units, whether it is injective, its kernel, its image and whether it is a group homomorphism. The eight algebras are the columns, in the fixed order.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>datum</th>
+<th>$\mathbb{R}$</th>
+<th>$\mathbb{C}$</th>
+<th>$\mathbb{D}$</th>
+<th>$\mathbb{D}'$</th>
+<th>$\mathbb{H}$</th>
+<th>$\mathbb{H}_{\mathrm{s}}$</th>
+<th>$\mathbb{B}$</th>
+<th>$\mathbb{H}_{\mathbb{D}}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>closed form</td>
+<td>$e^{x}$</td>
+<td>$e^{a}(\cos b+i\sin b)$</td>
+<td>$e^{a}(\cosh b+j\sinh b)$</td>
+<td>$e^{a}(1+\varepsilon b)$</td>
+<td>$e^{q_0}(\cos\lvert\mathbf{q}\rvert+\hat{\mathbf{q}}\sin\lvert\mathbf{q}\rvert)$</td>
+<td>three-branch form</td>
+<td>two regimes in $\mathbb{C}[\tilde Q]$</td>
+<td>componentwise quaternion</td>
+</tr>
+<tr>
+<td>surjective onto the units</td>
+<td>no</td>
+<td>yes</td>
+<td>no</td>
+<td>no</td>
+<td>yes</td>
+<td>no</td>
+<td>yes</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>injective</td>
+<td>yes</td>
+<td>no</td>
+<td>yes</td>
+<td>yes</td>
+<td>no</td>
+<td>no</td>
+<td>no</td>
+<td>no</td>
+</tr>
+<tr>
+<td>kernel</td>
+<td>$\{0\}$</td>
+<td>$2\pi i\mathbb{Z}$</td>
+<td>$\{0\}$</td>
+<td>$\{0\}$</td>
+<td>$2\pi k\mu$</td>
+<td>$\{0\}\cup\{2\pi k\mathbf{u}\}$</td>
+<td>eigenvalues in $2\pi i\mathbb{Z}$</td>
+<td>pairs $2\pi k\hat{\mathbf{u}}$</td>
+</tr>
+<tr>
+<td>image</td>
+<td>$\mathbb{R}_{>0}$</td>
+<td>$\mathbb{C}^{\times}$</td>
+<td>identity component</td>
+<td>identity component</td>
+<td>$\mathbb{H}^{\times}$</td>
+<td>no negative real eigenvalue of odd multiplicity</td>
+<td>$\mathbb{B}^{\times}$</td>
+<td>$\mathbb{H}_{\mathbb{D}}^{\times}$</td>
+</tr>
+<tr>
+<td>group homomorphism</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>no</td>
+<td>no</td>
+<td>no</td>
+<td>no</td>
+</tr>
+</tbody>
+</table></div>
+<p>The table has a clean dividing line at the fourth rung. The exponential is a group homomorphism of the additive group onto its image for exactly the four <strong>abelian</strong> algebras $\mathbb{R}$, $\mathbb{C}$, $\mathbb{D}$, $\mathbb{D}'$, because the Baker–Campbell–Hausdorff series terminates at the leading term there; its image is a single connected component of the units, the positive reals, the punctured plane, the identity component $\{a>\lvert b\rvert\}$ of $\mathbb{D}$ and the identity component $\{a>0\}$ of $\mathbb{D}'$, and it fails to be surjective exactly where the group of units has more than one component (<em>Real Exponential and Lie Group Structure</em>; <em>Complex Exponential and Lie Group Structure</em>; <em>Split-Complex Exponential and Lie Group Structure</em>; <em>Dual-Numbers Exponential and Lie Group Structure</em>). From $\mathbb{H}$ onward the algebra is non-commutative, the law fails and the exponential is not a homomorphism, while its image becomes a whole connected group: it is surjective onto $\mathbb{H}^{\times}$ (<em>Quaternion Exponential and Lie Group Structure</em>), surjective onto $\mathbb{B}^{\times}\cong GL(2,\mathbb{C})$ (<em>Biquaternion Lie Group and Exponential Structure</em>) and surjective onto $\mathbb{H}_{\mathbb{D}}^{\times}$ (<em>Split-Biquaternion Exponential and Lie Group Structure</em>). The split quaternions are the one non-commutative column with a genuinely multibranched closed form — the sign of $N(\mathbf{v})$ selecting a trigonometric, a hyperbolic or a terminating branch — and the one non-abelian column in which the exponential is not surjective onto the units, its image being the invertible matrices with no negative real eigenvalue of odd multiplicity; its kernel is the union of the origin with the $2\pi$-multiples of the roots of $-1$ (<em>Split-Quaternion Exponential and Lie Group Structure</em>). The kernel row measures the ambiguity of the logarithm: it is a single point in $\mathbb{R}$, $\mathbb{D}$ and $\mathbb{D}'$, an infinite cyclic lattice in $\mathbb{C}$, the spheres of pure quaternions of radius $2\pi k$ in $\mathbb{H}$, and the corresponding families in the last three columns.</p>
+<h2 id="the-lie-group-of-units">The Lie Group of Units</h2>
+<p>The following table compares the group of units of the eight algebras as a Lie group: its shape, its real dimension, its number of connected components, its identity component, whether the exponential reaches that component, and the one-parameter subgroups and the compact, hyperbolic and parabolic subgroups they generate. The eight algebras are the columns, in the fixed order.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>datum</th>
+<th>$\mathbb{R}$</th>
+<th>$\mathbb{C}$</th>
+<th>$\mathbb{D}$</th>
+<th>$\mathbb{D}'$</th>
+<th>$\mathbb{H}$</th>
+<th>$\mathbb{H}_{\mathrm{s}}$</th>
+<th>$\mathbb{B}$</th>
+<th>$\mathbb{H}_{\mathbb{D}}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>group of units</td>
+<td>$\mathbb{R}^{\times}$</td>
+<td>$\mathbb{C}^{\times}$</td>
+<td>$(\mathbb{R}^{\times})^2$</td>
+<td>$\mathbb{R}^{\times}\times\mathbb{R}$</td>
+<td>$\mathbb{H}^{\times}$</td>
+<td>$GL_2(\mathbb{R})$</td>
+<td>$GL(2,\mathbb{C})$</td>
+<td>$(\mathbb{H}^{\times})^2$</td>
+</tr>
+<tr>
+<td>dimension over $\mathbb{R}$</td>
+<td>$1$</td>
+<td>$2$</td>
+<td>$2$</td>
+<td>$2$</td>
+<td>$4$</td>
+<td>$4$</td>
+<td>$8$</td>
+<td>$8$</td>
+</tr>
+<tr>
+<td>components</td>
+<td>$2$</td>
+<td>$1$</td>
+<td>$4$</td>
+<td>$2$</td>
+<td>$1$</td>
+<td>$2$</td>
+<td>$1$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>identity component</td>
+<td>$\mathbb{R}_{>0}$</td>
+<td>$\mathbb{C}^{\times}$</td>
+<td>$\{a>\lvert b\rvert\}$</td>
+<td>$\{a>0\}$</td>
+<td>$\mathbb{H}^{\times}$</td>
+<td>$\{N>0\}$</td>
+<td>$GL(2,\mathbb{C})$</td>
+<td>$(\mathbb{H}^{\times})^2$</td>
+</tr>
+<tr>
+<td>exponential reaches it</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>no</td>
+<td>yes</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>one-parameter subgroups</td>
+<td>$e^{tx}$ in $\mathbb{R}_{>0}$</td>
+<td>$e^{tz}$, the circle $U(1)$ and the ray</td>
+<td>$e^{t(a+jb)}$, one hyperbola branch</td>
+<td>the parabolic $1+\mathrm{M}$</td>
+<td>$e^{tq}$, the sphere $Sp(1)$ and the ray</td>
+<td>elliptic $S^1$ and hyperbolic subgroups</td>
+<td>$e^{tQ}$ in $GL(2,\mathbb{C})$</td>
+<td>componentwise $e^{tQ}$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The unit group is a Lie group of the same real dimension as the algebra, its components are the sign classes of the norm, and the exponential reaches the identity component in every column but $\mathbb{H}_{\mathrm{s}}$. For the four abelian algebras the exponential is a homomorphism, its image is exactly the identity component, and the remaining components form the sign group that no one-parameter subgroup meets: $\{\pm1\}$ in $\mathbb{R}$, the four sign choices $\{\pm1\}^2$ in $\mathbb{D}$, and the two half-lines in $\mathbb{D}'$ (<em>Real Exponential and Lie Group Structure</em>; <em>Split-Complex Exponential and Lie Group Structure</em>; <em>Dual-Numbers Exponential and Lie Group Structure</em>). From $\mathbb{H}$ onward the exponential is surjective onto a connected unit group and is not injective; the unit group splits as $\mathbb{H}^{\times}\cong\mathbb{R}_{>0}\times Sp(1)$, $GL(2,\mathbb{C})$ and $(\mathbb{H}^{\times})^2$, and the one-parameter subgroups are the exponentials of the algebra, the pure quaternions giving the great circles of the compact sphere $Sp(1)=S^3$ (<em>Quaternion Exponential and Lie Group Structure</em>; <em>Biquaternion Lie Group and Exponential Structure</em>; <em>Split-Biquaternion Exponential and Lie Group Structure</em>). The split quaternions are the exception: $GL_2(\mathbb{R})$ has identity component $\{N>0\}$, the exponential misses elements of it, and its one-parameter subgroups are the elliptic subgroup $S^1$ generated by the direction $e_1$ of negative square and the hyperbolic subgroups generated by the directions of positive square (<em>Split-Quaternion Exponential and Lie Group Structure</em>). The dual numbers carry the parabolic subgroup $1+\mathrm{M}=\{1+s\varepsilon\}$, the image of the exponential of the maximal ideal, isomorphic to the additive line. In every column the one-parameter subgroups are the curves $t\mapsto\exp(tx)$, and they lie in the identity component.</p>
+<h2 id="summary">Summary</h2>
+<p>The exponential is a group homomorphism onto a single component of the units for the four commutative algebras $\mathbb{R}$, $\mathbb{C}$, $\mathbb{D}$ and $\mathbb{D}'$, because the Baker–Campbell–Hausdorff series terminates; it is surjective, non-injective and no homomorphism from $\mathbb{H}$ onward, where it maps onto the connected groups $\mathbb{H}^{\times}$, $GL(2,\mathbb{C})$ and $(\mathbb{H}^{\times})^2$. The split quaternions are the one non-commutative column in which the exponential is neither surjective nor injective, its image being the matrices with no negative real eigenvalue of odd multiplicity and its kernel the origin together with the $2\pi$-multiples of the roots of $-1$. The group of units is a Lie group of dimension $1,2,2,2,4,4,8,8$, connected for $\mathbb{C}$, $\mathbb{H}$, $\mathbb{B}$ and $\mathbb{H}_{\mathbb{D}}$ and of two, four, two and two components for $\mathbb{R}$, $\mathbb{D}$, $\mathbb{D}'$ and $\mathbb{H}_{\mathrm{s}}$; the exponential reaches the identity component in every column except $\mathbb{H}_{\mathrm{s}}$. The one-parameter subgroups are the exponentials of the algebra, the compact ones generated by the directions of negative square — the circle $U(1)$ in $\mathbb{C}$, the sphere $Sp(1)$ in $\mathbb{H}$, the elliptic subgroup in $\mathbb{H}_{\mathrm{s}}$ — and the non-compact ones generated by the directions of positive or nilpotent square, the hyperbolic branches in $\mathbb{D}$ and $\mathbb{H}_{\mathrm{s}}$ and the parabolic subgroup $1+\mathrm{M}$ in $\mathbb{D}'$.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\exp$</td>
+<td>the exponential map $\sum x^n/n!$ of the algebra</td>
+</tr>
+<tr>
+<td>$e^{q_0},\hat{\mathbf{q}},\lvert\mathbf{q}\rvert$</td>
+<td>the scalar part, the unit vector and the modulus of a quaternion in the closed form</td>
+</tr>
+<tr>
+<td>$2\pi i\mathbb{Z}$</td>
+<td>the kernel of the complex exponential</td>
+</tr>
+<tr>
+<td>$2\pi k\mu$</td>
+<td>the kernel of the quaternion exponential, $\mu$ a pure unit quaternion</td>
+</tr>
+<tr>
+<td>$\mathbb{C}[\tilde Q]$</td>
+<td>the commutative subalgebra generated by a biquaternion</td>
+</tr>
+<tr>
+<td>$1+\mathrm{M}$</td>
+<td>the parabolic subgroup of $\mathbb{D}'$, $\mathrm{M}=(\varepsilon)$</td>
+</tr>
+<tr>
+<td>$U(1),Sp(1)=S^3$</td>
+<td>the compact one-parameter subgroups of $\mathbb{C}$ and $\mathbb{H}$</td>
+</tr>
+<tr>
+<td>$GL_2(\mathbb{R}),GL(2,\mathbb{C})$</td>
+<td>the unit groups of $\mathbb{H}_{\mathrm{s}}$ and $\mathbb{B}$</td>
+</tr>
+<tr>
+<td>$\{N>0\}$</td>
+<td>the identity component of the units of $\mathbb{H}_{\mathrm{s}}$ and of $\mathbb{D}$</td>
+</tr>
+<tr>
+<td>$t\mapsto\exp(tx)$</td>
+<td>the general one-parameter subgroup</td>
+</tr>
+<tr>
+<td><code>—</code></td>
+<td>an empty cell, stated and never filled</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>John Stillwell, <em>Naive Lie Theory</em> (Springer, 2008), for the exponential map, the matrix groups and their one-parameter subgroups.</li>
+<li>Brian C. Hall, <em>Lie Groups, Lie Algebras, and Representations</em>, 2nd ed. (Springer, 2015), for the exponential map, its image and the exponentiality of a Lie group.</li>
+<li>John Voight, <em>Quaternion Algebras</em>, Graduate Texts in Mathematics 288 (Springer, 2021), for the unit group, the norm and the polar form of a quaternion algebra.</li>
+<li>V. S. Varadarajan, <em>Lie Groups, Lie Algebras, and Their Representations</em> (Springer, 1984), for the closed form of the exponential on the low-dimensional real algebras.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

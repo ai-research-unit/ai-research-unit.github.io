@@ -52,8 +52,8 @@
       <div class="article-body">
         <h1 id="worked-examples-in-the-split-complex-algebra"><strong>Worked Examples in the Split-Complex Algebra</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>This article works the structural facts of the split-complex algebra in explicit numbers. It is the computational companion of <em>Split-Complex Algebra</em> and its counterpart is <em>Biquaternion Algebra</em>: the general theory is established in the earlier articles, and here it is exercised on named elements, so that a reader can see the involutions, the idempotents, the minimal ideals, the zero divisors, the norm criterion, the polar decomposition and the hyperbolic and parabolic elements in full.</p>
-<p>Every computation below uses the conventions of the category: $\mathbb{D} = \mathbb{R}[x]/(x^2-1)$, basis $1$, $j$, $j^2 = +1$; general element $Z = a+j b$ with $a = \operatorname{Re}Z$, $b = \operatorname{Im}Z$; conjugate $\bar Z = a-j b$; idempotents $\Pi_\pm = \tfrac12(1\pm j)$; idempotent coordinates $Z_\pm = a\pm b$; norm form $N(Z) = Z\bar Z = a^2-b^2$. Every number below was recomputed in double precision, and the general identities behind the examples are in the earlier articles.</p>
+<p>This article works the structural facts of the split-complex algebra in explicit numbers. It is the computational companion of <em>Split-Complex Algebra</em> and its counterpart is <em>Biquaternion Algebra</em>: the general theory is established in the earlier articles, and here it is exercised on named elements, so that a reader can see the involutions, the idempotents, the minimal ideals, the zero divisors and the hyperbolic and parabolic elements in full. The norm, the unit criterion and the polar decomposition are a form and a distance and belong to <em>Split-Complex Norm and Invertibility</em> and to <em>Split-Complex Polar Representation</em>; the examples below use only the algebra.</p>
+<p>Every computation below uses the conventions of the category: $\mathbb{D} = \mathbb{R}[x]/(x^2-1)$, basis $1$, $j$, $j^2 = +1$; general element $Z = a+j b$ with $a = \operatorname{Re}Z$, $b = \operatorname{Im}Z$; conjugate $\bar Z = a-j b$; idempotents $\Pi_\pm = \tfrac12(1\pm j)$; idempotent coordinates $Z_\pm = a\pm b$. Every number below was recomputed in double precision, and the general identities behind the examples are in the earlier articles.</p>
 <h2 id="the-two-involutions-and-their-fixed-spaces">The Two Involutions and Their Fixed Spaces</h2>
 <p>The algebra carries two natural involutions: the split-complex conjugation $\bar{Z}$, and the idempotent conjugation (the swap) $\tilde{Z} = (a-b)\Pi_1 + (a+b)\Pi_2$. The first computation is that on $\mathbb{D}$ they coincide.</p>
 <p><strong>Example.</strong> Take $Z = 3+2j$. Then</p>
@@ -103,69 +103,36 @@ $$</p>
 <p>$$
 a b = (1+j)(2-2j) = 2(1+j)(1-j) = 2(1-j^2) = 0,
 $$</p>
-<p>with $a \neq 0$ and $b \neq 0$. So $a$ and $b$ are zero divisors, $N(a) = 1-1 = 0$, $N(b) = 4-4=0$.</p>
+<p>with $a \neq 0$ and $b \neq 0$. So $a$ and $b$ are zero divisors; each is a non-zero multiple of an idempotent.</p>
 <p>In the idempotent basis the mechanism is transparent: $a = 1+j = 2\Pi_1$, $b = 2-2j = 4\Pi_2$, and $\Pi_1\Pi_2 = 0$.</p>
 <p><strong>Example (a general pair).</strong> For any $\lambda, \mu \neq 0$,</p>
 <p>$$
 (\lambda \Pi_1)(\mu \Pi_2) = \lambda\mu\, \Pi_1\Pi_2 = 0,
 $$</p>
-<p>so the whole family of examples is $\{\lambda \Pi_1\}\times\{\mu \Pi_2\}$; and the annihilator of $\lambda \Pi_1$ is the line $\mathbb{R}\Pi_2$, as established in <em>Split-Complex Zero Divisors</em>. There is no pair of zero divisors with $a b = 0$ in which one factor is a unit; the criterion is exactly $N(a)N(b)=N(a b)=0$.</p>
-<h2 id="the-norm-criterion-for-a-unit-worked">The Norm Criterion for a Unit, Worked</h2>
-<p>The criterion is: $Z$ is a unit iff $N(Z) \neq 0$, and then $Z^{-1} = \bar Z/N(Z)$.</p>
-<p><strong>Example (a unit).</strong> Take $Z = 2+j$. Then $N(Z) = 4-1 = 3 \neq 0$, so $Z$ is a unit. Since $\bar Z = 2-j$ and $Z\bar Z = (2+j)(2-j) = 4 - j^2 = 3$, the inverse is</p>
-<p>$$
-Z^{-1} = \frac{\bar Z}{N(Z)} = \frac{2-j}{3},
-\qquad\text{and}\qquad
-Z Z^{-1} = \frac{(2+j)(2-j)}{3} = \frac{3}{3} = 1. \checkmark
-$$</p>
-<p><strong>Example (another unit, timelike).</strong> Take $Z = 2+3j$. Then $N(Z) = 4-9 = -5 \neq 0$, so $Z$ is a timelike unit, with</p>
-<p>$$
-Z^{-1} = \frac{2-3j}{-5} = -\tfrac25 + \tfrac35 j,
-\qquad
-Z Z^{-1} = \frac{N(Z)}{N(Z)} = 1. \checkmark
-$$</p>
-<p><strong>Example (a non-unit).</strong> Take $Z = 1+j$. Then $N(Z) = 1-1 = 0$, so $Z$ is not a unit, and indeed $Z(1-j) = 0$. Its image under $\varphi$ is $(2,0)$, i.e. $Z = 2\Pi_1$, a zero divisor.</p>
-<p><strong>Example (norm form as a product of coordinates).</strong> For $Z = a+j b$ the relation $N(Z) = Z_+Z_-$ is visible numerically: for $Z = 3+2j$, $Z_+ = 5$, $Z_- = 1$, and $5\cdot 1 = 5 = N(3+2j) = 9-4$. So the unit criterion is the statement that both idempotent coordinates are nonzero.</p>
-<h2 id="the-polar-decomposition-in-its-two-regimes">The Polar Decomposition in Its Two Regimes</h2>
-<p>The polar decomposition has two regimes, according to the sign of the norm form.</p>
-<p><strong>Spacelike regime.</strong> Take $Z = 5+3j$. Then $N(Z) = 25-9 = 16 > 0$ and</p>
-<p>$$
-\rho = \sqrt{N(Z)} = 4, \qquad \frac{Z}{\rho} = \tfrac54 + \tfrac34 j.
-$$</p>
-<p>Since $\bigl(\tfrac54\bigr)^2 - \bigl(\tfrac34\bigr)^2 = 1$, this unit is $\cosh t + j\sinh t$ with $\cosh t = 5/4$ and $\sinh t = 3/4$, hence $e^t = 2$ and $t = \ln 2$. So</p>
-<p>$$
-5 + 3j = 4\,e^{j\ln 2}, \qquad e^{j\ln 2} = \cosh(\ln 2) + j\sinh(\ln 2) = \tfrac54 + \tfrac34 j.
-$$</p>
-<p><strong>Timelike regime.</strong> Take $Z = 3+5j$. Then $N(Z) = 9-25 = -16 < 0$ and</p>
-<p>$$
-\rho = \sqrt{-N(Z)} = 4, \qquad \frac{Z}{\rho} = \tfrac34 + \tfrac54 j = \sinh(\ln 2) + j\cosh(\ln 2) = j\,e^{j\ln 2}.
-$$</p>
-<p>So $3+5j = 4j\,e^{j\ln 2}$; the timelike unit is the spacelike unit preceded by $j$.</p>
-<p>The two regimes are exchanged by multiplication by $j$, which is the reflection $a+j b \mapsto b+j a$ of the plane; this reflection fixes the null line $\mathbb{R}\Pi_1$ pointwise and negates the other null line $\mathbb{R}\Pi_2$, and on both null lines $\rho = 0$, so the polar decomposition degenerates.</p>
+<p>so the whole family of examples is $\{\lambda \Pi_1\}\times\{\mu \Pi_2\}$; and the annihilator of $\lambda \Pi_1$ is the line $\mathbb{R}\Pi_2$, as established in <em>Split-Complex Zero Divisors</em>. There is no pair of zero divisors with $a b = 0$ in which one factor is a unit; the criterion is that each factor lies on one of the two null lines.</p>
 <h2 id="worked-hyperbolic-and-parabolic-elements">Worked Hyperbolic and Parabolic Elements</h2>
-<p>An element is classified by the sign of its norm form: <strong>hyperbolic</strong> if $N(Z) > 0$, <strong>elliptic</strong> (timelike) if $N(Z) < 0$, and <strong>parabolic</strong> (null) if $N(Z) = 0$.</p>
-<p><strong>Hyperbolic example.</strong> Let $Z = e^{j\ln 2} = \tfrac54 + \tfrac34 j$, with $N(Z) = 1$. Its hyperbolic logarithm is</p>
+<p>An element of $\mathbb{D}$ is classified by the signs of its two idempotent coordinates: a <strong>hyperbolic</strong> element is a unit with $Z_+Z_- > 0$, the coordinates having the same sign; an <strong>elliptic</strong> element is a unit with $Z_+Z_- < 0$, the coordinates having opposite signs; a <strong>parabolic</strong> element is a non-zero element with $Z_+Z_- = 0$, that is, a zero divisor. The product $Z_+Z_-$ is the algebraic reading of the quadratic form of <em>Split-Complex Norm and Invertibility</em>, and its sign is preserved under multiplication; the names are the hyperbolic, elliptic and parabolic classes of the unit group.</p>
+<p><strong>Hyperbolic example.</strong> Let $Z = \tfrac54 + \tfrac34 j$. Its coordinates are</p>
 <p>$$
-\log Z = \ln 2\; j, \qquad e^{\ln 2\,j} = \cosh(\ln 2) + j\sinh(\ln 2) = Z. \checkmark
+Z_+ = a+b = 2, \qquad Z_- = a-b = \tfrac12, \qquad Z_+Z_- = 1 > 0,
 $$</p>
-<p>Its powers are $Z^n = e^{jn\ln 2} = \cosh(n\ln 2) + j\sinh(n\ln 2)$; for $n=2$,</p>
+<p>so $Z$ is a hyperbolic unit, and indeed $Z = 2\Pi_1 + \tfrac12\Pi_2$. Its powers are computed in the idempotent basis, where multiplication is componentwise:</p>
 <p>$$
-Z^2 = \bigl(\tfrac54\bigr)^2 + \bigl(\tfrac34\bigr)^2 + 2\cdot\tfrac54\cdot\tfrac34\, j = \tfrac{34}{16} + \tfrac{30}{16}j = \tfrac{17}{8} + \tfrac{15}{8}j,
+Z^n = 2^n\Pi_1 + 2^{-n}\Pi_2 = \frac{2^n+2^{-n}}{2} + \frac{2^n-2^{-n}}{2}\,j,
 $$</p>
-<p>and indeed $\cosh(2\ln 2) = \tfrac{2^2+2^{-2}}{2} = \tfrac{17}{8}$ and $\sinh(2\ln 2) = \tfrac{2^2-2^{-2}}{2} = \tfrac{15}{8}$. $\checkmark$</p>
-<p>The <strong>hyperbolic rotation</strong> by $t$ is the map $R_j(t) : Z \mapsto e^{jt}Z$. For $t = \ln 2$ and the null vector $1+j = 2\Pi_1$,</p>
+<p>so the powers stay in the hyperbolic class and satisfy $Z^m Z^n = Z^{m+n}$. For $n=2$,</p>
 <p>$$
-e^{j\ln 2}(1+j) = \bigl(\tfrac54 + \tfrac34 j\bigr)(1+j) = \bigl(\tfrac54+\tfrac34\bigr) + \bigl(\tfrac54+\tfrac34\bigr)j = 2 + 2j = 2(1+j),
+Z^2 = \tfrac{17}{8} + \tfrac{15}{8}j,
 $$</p>
-<p>so the null line $\mathbb{R}(1+j)$ is preserved and scaled by the hyperbolic rotation; the same is true of the other null line, with the reciprocal scale.</p>
-<p><strong>Parabolic example.</strong> Let $Z = 1+j = 2\Pi_1$, with $N(Z) = 0$. Then $Z$ is a zero divisor and</p>
+<p>and indeed $Z Z = (\tfrac54)(\tfrac54) + (\tfrac34)(\tfrac34) + 2\cdot\tfrac54\cdot\tfrac34\,j = \tfrac{34}{16} + \tfrac{30}{16}j$, an ordinary multiplication in the basis $1, j$. $\checkmark$</p>
+<p><strong>Parabolic example.</strong> Let $Z = 1+j = 2\Pi_1$, with coordinates $Z_+ = 2$, $Z_- = 0$, so $Z$ is parabolic (a zero divisor). Then</p>
 <p>$$
-Z^2 = (1+j)^2 = 1 + 2j + j^2 = 2 + 2j = 2Z, \qquad Z^n = 2^{n-1}Z \quad (n \geq 1).
+Z^2 = (1+j)^2 = 1 + 2j + j^2 = 2 + 2j = 2Z, \qquad Z^n = 2^{n-1}Z \quad (n \geq 1),
 $$</p>
-<p>So the powers of a parabolic element stay on its null line; the element has no logarithm in $\mathbb{D}$, because a logarithm would require $N(Z) \neq 0$, and the exponential of every split-complex number has nonzero norm (it equals $e^{W_+}\Pi_1 + e^{W_-}\Pi_2$ with $N = e^{W_++W_-} \neq 0$). This is the exact analogue of the parabolic elements of the hyperbolic group, which lie on the null cone.</p>
+<p>which is the same computation in the idempotent basis, $Z^n = 2^n\Pi_1 = 2^{n-1}Z$. So the powers of a parabolic element stay on its null line. The element has no inverse, because $Z_- = 0$; the algebraic unit criterion of <em>Split-Complex Algebra</em> fails at it. This is the exact algebraic analogue of the parabolic elements of the hyperbolic group, which lie on the null cone.</p>
 <h2 id="summary">Summary</h2>
 <p>This article worked the algebra in explicit numbers. The two natural involutions of $\mathbb{D}$, the split-complex conjugation and the idempotent swap, were shown to coincide on $Z = 3+2j$ and hence throughout, with fixed space the real line $\mathbb{R}_{\mathbb{D}}$ and anti-fixed space the split imaginary line $j\mathbb{R}_{\mathbb{D}}$. The idempotents $\Pi_\pm$ were exhibited, the decomposition $3+2j = 5\Pi_1 + 1\Pi_2$ computed, and the minimal ideals $\mathbb{R}\Pi_\pm$ identified.</p>
-<p>Explicit zero-divisor pairs were given, $a = 1+j = 2\Pi_1$ and $b = 2-2j = 4\Pi_2$ with $a b = 0$, and the general pair $(\lambda \Pi_1)(\mu \Pi_2) = 0$. The unit criterion was worked: $2+3j$ is a timelike unit with inverse $(2-3j)/(-5)$, while $1+j$ is a non-unit. The polar decomposition was computed in both regimes, $5+3j = 4e^{j\ln 2}$ and $3+5j = 4j\,e^{j\ln 2}$. Finally, hyperbolic elements such as $e^{j\ln 2}$, with powers on the unit hyperbola and a genuine logarithm $\ln 2\,j$, were compared with parabolic elements such as $1+j$, with $Z^n = 2^{n-1}Z$ and no logarithm.</p>
+<p>Explicit zero-divisor pairs were given, $a = 1+j = 2\Pi_1$ and $b = 2-2j = 4\Pi_2$ with $a b = 0$, and the general pair $(\lambda \Pi_1)(\mu \Pi_2) = 0$. Finally, the hyperbolic element $Z = \tfrac54 + \tfrac34 j$, of coordinates $(2, \tfrac12)$ and powers $Z^n = 2^n\Pi_1 + 2^{-n}\Pi_2$, was compared with the parabolic element $1+j$, of coordinates $(2,0)$, with $Z^n = 2^{n-1}Z$ and no inverse.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -208,24 +175,16 @@ $$</p>
 <td>Minimal ideals / null lines</td>
 </tr>
 <tr>
-<td>$N(Z) = a^2 - b^2$</td>
-<td>Norm form</td>
+<td>$Z_+Z_-$</td>
+<td>Product of the idempotent coordinates; its sign classes the unit</td>
 </tr>
 <tr>
-<td>$Z^{-1} = \bar Z/N(Z)$</td>
-<td>Inverse of a unit</td>
+<td>$\mathbb{D}^\times$</td>
+<td>Group of units, the elements with both coordinates nonzero</td>
 </tr>
 <tr>
-<td>$\rho = \sqrt{\lvert N(Z)\rvert}$</td>
-<td>Modulus</td>
-</tr>
-<tr>
-<td>$e^{jt} = \cosh t + j\sinh t$</td>
-<td>Hyperbolic unit / one-parameter group</td>
-</tr>
-<tr>
-<td>$R_j(t) : Z \mapsto e^{jt}Z$</td>
-<td>Hyperbolic rotation</td>
+<td>hyperbolic, elliptic, parabolic</td>
+<td>Unit with $Z_+Z_- > 0$, unit with $Z_+Z_- < 0$, zero divisor with $Z_+Z_- = 0$</td>
 </tr>
 </tbody>
 </table></div>

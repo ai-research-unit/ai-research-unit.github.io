@@ -55,7 +55,7 @@
 <p>This article introduces quaternion analysis as the study of differentiable functions of a quaternion variable. The goal is to define the core objects precisely, establish their basic properties, and describe the theorems that give the subject its shape.</p>
 <p>The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. No examples are given. The quaternion algebra is assumed from the article on quaternion algebra, and the scalar-vector decomposition is used throughout. The article is stated for the quaternion algebra over the real numbers, and the complexification is mentioned only where it clarifies the structure.</p>
 <p>Throughout this article, the quaternion algebra is denoted $\mathbb{H}$, and its basis is $e_0 = 1, e_1, e_2, e_3$. The scalar imaginary of the complex numbers is denoted $i$, so that it does not collide with the quaternion units.</p>
-<h2 id="the-metric-structure-of-math3">The Metric Structure of $\mathbb{H}$</h2>
+<h2 id="the-quaternion-space">The Quaternion Space</h2>
 <h3 id="points-and-distance">Points and Distance</h3>
 <p>A quaternion is written</p>
 <p>$$
@@ -171,10 +171,10 @@ $$</p>
 <p>$$
 \frac{f(q_0 + h) - f(q_0)}{h} = \frac{\sum_\mu h_\mu \partial_\mu f}{h} + o(1).
 $$</p>
-<p>For the limit to exist independently of the direction of $h$, the numerator must be a left multiple of $h$, and the multiplication must be consistent with the quaternion relations. This forces the equations. $\square$</p>
+<p>For the limit to exist independently of the direction of $h$, the numerator must be a left multiple of $h$, and the multiplication must be consistent with the quaternion relations. This forces the equations.</p>
 <h3 id="the-liouville-theorem">The Liouville Theorem</h3>
 <p><strong>Theorem (Liouville).</strong> Every bounded quaternion differentiable function on all of $\mathbb{H}$ is constant.</p>
-<p><strong>Proof.</strong> The quaternion Cauchy–Riemann equations force the components to be harmonic and to satisfy strong constraints. The only bounded solutions on all of $\mathbb{H}$ are constants. $\square$</p>
+<p><strong>Proof.</strong> The quaternion Cauchy–Riemann equations force the components to be harmonic and to satisfy strong constraints. The only bounded solutions on all of $\mathbb{H}$ are constants.</p>
 <p>This is the quaternion analogue of the Liouville theorem in complex analysis, and it shows that the class of quaternion differentiable functions is very rigid.</p>
 <h3 id="the-class-of-quaternion-differentiable-functions">The Class of Quaternion Differentiable Functions</h3>
 <p>The quaternion Cauchy–Riemann equations are so restrictive that the quaternion differentiable functions are exactly the functions of the form</p>
@@ -182,9 +182,9 @@ $$</p>
 f(\tilde q) = a \tilde q + b, \qquad a, b \in \mathbb{H}.
 $$</p>
 <p>That is, the only quaternion differentiable functions are the affine functions. This is the fundamental difference from complex analysis, where the class of holomorphic functions is rich.</p>
-<p><strong>Proof.</strong> The Cauchy–Riemann equations force all second derivatives to vanish, so the function is affine. The details are a computation using the quaternion relations. $\square$</p>
+<p><strong>Proof.</strong> The Cauchy–Riemann equations force all second derivatives to vanish, so the function is affine. The details are a computation using the quaternion relations.</p>
 <p>So the naive notion of quaternion differentiability is too restrictive to be useful. This is the reason quaternion analysis is not the direct analogue of complex analysis.</p>
-<h2 id="regular-functions-on-math124">Regular Functions on $\mathbb{H}$</h2>
+<h2 id="regular-functions-on-math120">Regular Functions on $\mathbb{H}$</h2>
 <h3 id="definition">Definition</h3>
 <p>A function $f : U \to \mathbb{H}$ is <strong>monogenic</strong> (or <strong>regular</strong>) if it satisfies the <strong>Cauchy–Riemann–Fueter equation</strong></p>
 <p>$$
@@ -219,30 +219,6 @@ $$</p>
 <p>and the monogenic functions are the kernel of $D$. This is the starting point of <strong>Clifford analysis</strong>, which generalizes the theory to $\mathbb{R}^n$ with Clifford algebra coefficients.</p>
 <h3 id="the-cauchyriemannfueter-equation">The Cauchy–Riemann–Fueter Equation</h3>
 <p>The Cauchy–Riemann–Fueter equation $D f = 0$ is a first-order system of four real equations for the four components of $f$. It is elliptic, and its solutions are harmonic. The equation is the quaternion analogue of the Cauchy–Riemann equations, and it is the correct notion of differentiability in quaternion analysis.</p>
-<h2 id="the-differential-operators">The Differential Operators</h2>
-<h3 id="definition_1">Definition</h3>
-<p>The <strong>Cauchy–Riemann operator</strong> is</p>
-<p>$$
-D = \partial_{x_0} + e_1 \partial_{x_1} + e_2 \partial_{x_2} + e_3 \partial_{x_3}.
-$$</p>
-<p>It acts on functions $f : \mathbb{H} \to \mathbb{H}$ by</p>
-<p>$$
-D f = \partial_{x_0} f + e_1 \partial_{x_1} f + e_2 \partial_{x_2} f + e_3 \partial_{x_3} f.
-$$</p>
-<h3 id="properties_1">Properties</h3>
-<p><strong>Factorization of the Laplacian.</strong> $\bar{D} D = \Delta$.</p>
-<p><strong>Ellipticity.</strong> The symbol of $D$ is $\sigma_D(\xi) = \xi_0 + e_1 \xi_1 + e_2 \xi_2 + e_3 \xi_3$, which is invertible for every non-zero $\xi \in \mathbb{R}^4$. So $D$ is elliptic.</p>
-<p><strong>Fundamental solution.</strong> The fundamental solution of $D$ is</p>
-<p>$$
-E(\tilde q) = \frac{\tilde q^{-1}}{|\tilde q|^2} = \frac{\bar{\tilde q}}{|\tilde q|^4},
-$$</p>
-<p>which satisfies $D E = 2\pi^2 \delta_0$ in the sense of distributions.</p>
-<h3 id="the-relation-to-the-cauchyriemann-operator_1">The Relation to the Cauchy–Riemann Operator</h3>
-<p>In complex analysis, the Cauchy–Riemann operator is</p>
-<p>$$
-\bar{\partial} = \frac{1}{2}(\partial_x + i \partial_y),
-$$</p>
-<p>and the holomorphic functions are the kernel of $\bar{\partial}$. In quaternion analysis, the Cauchy–Riemann operator is the analogue of $\bar{\partial}$, and the monogenic functions are the kernel of $D$. The Cauchy–Riemann operator is the correct generalization of the Cauchy–Riemann operator of one complex variable to higher dimensions.</p>
 <h2 id="integration">Integration</h2>
 <h3 id="contour-integrals">Contour Integrals</h3>
 <p>Let $\gamma : [a, b] \to \mathbb{H}$ be a piecewise continuously differentiable path, and let $f$ be continuous on the image of $\gamma$. The <strong>contour integral</strong> of $f$ along $\gamma$ is</p>
@@ -261,7 +237,7 @@ $$</p>
 <p>$$
 \oint_\gamma f(\tilde q) \, dq = 0.
 $$</p>
-<p><strong>Proof.</strong> The integral of a monogenic function over a closed surface in $\mathbb{R}^4$ vanishes by the divergence theorem, because the Cauchy–Riemann operator annihilates $f$. The contour case follows by approximation. $\square$</p>
+<p><strong>Proof.</strong> The integral of a monogenic function over a closed surface in $\mathbb{R}^4$ vanishes by the divergence theorem, because the Cauchy–Riemann operator annihilates $f$. The contour case follows by approximation.</p>
 <p><strong>Corollary.</strong> On a simply connected domain, the integral of a monogenic function is path-independent. The function</p>
 <p>$$
 F(\tilde q) = \int_{q_0}^q f(w) \, dw
@@ -276,12 +252,12 @@ $$</p>
 <p><strong>Corollary (derivatives).</strong> Under the same hypotheses, $f$ is infinitely differentiable, and the derivatives are given by differentiating the kernel.</p>
 <h3 id="liouvilles-theorem">Liouville's Theorem</h3>
 <p><strong>Theorem (Liouville).</strong> Every bounded monogenic function on all of $\mathbb{H}$ is constant.</p>
-<p><strong>Proof.</strong> Apply the Cauchy estimates to the derivatives of $f$ on a ball of radius $r$ around $q_0$. Since $f$ is bounded by $M$, the derivatives are bounded by $M/r^n$. Let $r \to \infty$ to get that all derivatives vanish. So $f$ is constant. $\square$</p>
+<p><strong>Proof.</strong> Apply the Cauchy estimates to the derivatives of $f$ on a ball of radius $r$ around $q_0$. Since $f$ is bounded by $M$, the derivatives are bounded by $M/r^n$. Let $r \to \infty$ to get that all derivatives vanish. So $f$ is constant.</p>
 <h3 id="moreras-theorem">Morera's Theorem</h3>
 <p><strong>Theorem (Morera).</strong> If $f$ is continuous on a domain $U$ and $\oint_\gamma f = 0$ for every closed contour $\gamma$ in $U$, then $f$ is monogenic on $U$.</p>
-<p><strong>Proof.</strong> Define $F(\tilde q) = \int_{q_0}^q f(w) \, dw$. The hypothesis makes $F$ well-defined, and $D F = f$. Since $F$ is monogenic, $F$ is infinitely differentiable, so $f$ is monogenic. $\square$</p>
+<p><strong>Proof.</strong> Define $F(\tilde q) = \int_{q_0}^q f(w) \, dw$. The hypothesis makes $F$ well-defined, and $D F = f$. Since $F$ is monogenic, $F$ is infinitely differentiable, so $f$ is monogenic.</p>
 <h2 id="power-series">Power Series</h2>
-<h3 id="definition_2">Definition</h3>
+<h3 id="definition_1">Definition</h3>
 <p>A <strong>power series</strong> centered at $q_0$ is</p>
 <p>$$
 \sum_{n=0}^\infty c_n (\tilde q - q_0)^n, \qquad c_n \in \mathbb{H}.
@@ -332,6 +308,30 @@ $$</p>
 \oint_\gamma f(\tilde q) \, dq = 2\pi^2 \sum_{k=1}^n \operatorname{Res}(f, q_k).
 $$</p>
 <p>The factor $2\pi^2$ is the surface area of the unit sphere in $\mathbb{R}^4$, and it is the quaternion analogue of the factor $2\pi i$ in complex analysis.</p>
+<h2 id="the-differential-operators">The Differential Operators</h2>
+<h3 id="definition_2">Definition</h3>
+<p>The <strong>Cauchy–Riemann operator</strong> is</p>
+<p>$$
+D = \partial_{x_0} + e_1 \partial_{x_1} + e_2 \partial_{x_2} + e_3 \partial_{x_3}.
+$$</p>
+<p>It acts on functions $f : \mathbb{H} \to \mathbb{H}$ by</p>
+<p>$$
+D f = \partial_{x_0} f + e_1 \partial_{x_1} f + e_2 \partial_{x_2} f + e_3 \partial_{x_3} f.
+$$</p>
+<h3 id="properties_1">Properties</h3>
+<p><strong>Factorization of the Laplacian.</strong> $\bar{D} D = \Delta$.</p>
+<p><strong>Ellipticity.</strong> The symbol of $D$ is $\sigma_D(\xi) = \xi_0 + e_1 \xi_1 + e_2 \xi_2 + e_3 \xi_3$, which is invertible for every non-zero $\xi \in \mathbb{R}^4$. So $D$ is elliptic.</p>
+<p><strong>Fundamental solution.</strong> The fundamental solution of $D$ is</p>
+<p>$$
+E(\tilde q) = \frac{\tilde q^{-1}}{|\tilde q|^2} = \frac{\bar{\tilde q}}{|\tilde q|^4},
+$$</p>
+<p>which satisfies $D E = 2\pi^2 \delta_0$ in the sense of distributions.</p>
+<h3 id="the-relation-to-the-cauchyriemann-operator_1">The Relation to the Cauchy–Riemann Operator</h3>
+<p>In complex analysis, the Cauchy–Riemann operator is</p>
+<p>$$
+\bar{\partial} = \frac{1}{2}(\partial_x + i \partial_y),
+$$</p>
+<p>and the holomorphic functions are the kernel of $\bar{\partial}$. In quaternion analysis, the Cauchy–Riemann operator is the analogue of $\bar{\partial}$, and the monogenic functions are the kernel of $D$. The Cauchy–Riemann operator is the correct generalization of the Cauchy–Riemann operator of one complex variable to higher dimensions.</p>
 <h2 id="applications">Applications</h2>
 <h3 id="harmonic-analysis">Harmonic Analysis</h3>
 <p>Monogenic functions are harmonic, so quaternion analysis is closely related to harmonic analysis on $\mathbb{R}^4$. The Cauchy integral formula gives a representation of monogenic functions in terms of their boundary values, and the boundary values form a Hardy space.</p>
@@ -419,7 +419,7 @@ $$</p>
 </table></div>
 <p>The complex case is the case $n = 2$ of the general theory, and the quaternion case is the case $n = 4$. The general theory is Clifford analysis, and the pattern is the same: the biquaternionic Cauchy–Riemann operator replaces the classical Cauchy–Riemann operator, the monogenic functions replace the holomorphic functions, and the Cauchy integral formula holds with the appropriate kernel.</p>
 <h2 id="summary">Summary</h2>
-<p>Quaternion analysis is the study of differentiable functions of a quaternion variable $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$. The space carries its norm, and with it the convergent sequences and the continuous functions on which the subject is built.</p>
+<p>Quaternion analysis is the study of differentiable functions of a quaternion variable $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$. The space carries its quaternion norm, and with it the convergent sequences and the continuous functions on which the subject is built.</p>
 <p>The naive derivative $f'(q_0) = \lim_{h \to 0} (f(q_0 + h) - f(q_0))/h$ exists only for very special functions, because $\mathbb{H}$ is non-commutative and the limit must be independent of the direction of $h$. The correct notion replaces it: a function is monogenic, or regular, when it satisfies the Cauchy–Riemann–Fueter equation, and monogenic functions are the analogues of the holomorphic functions of one complex variable.</p>
 <p>The article develops what that notion supports: contour integrals along paths, power series and their radius of convergence, and the classification of the isolated singularities as removable, a pole, or essential. The Cauchy–Riemann operator is studied in its own right, and the applications record the harmonicity of monogenic functions and the representation given by the Cauchy integral formula. The final section compares the subject with complex analysis and traces each difference to the non-commutativity of $\mathbb{H}$ and to the higher dimension of the space.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>

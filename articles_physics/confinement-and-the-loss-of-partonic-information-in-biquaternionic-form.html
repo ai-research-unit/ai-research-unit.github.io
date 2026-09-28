@@ -57,11 +57,11 @@
 <p>Three qualifications discipline the article, and they are stated at the outset because the framework's relation to confinement is easy to overstate.</p>
 <ul>
 <li><strong>The order parameter is available to the framework.</strong> The Wilson loop is a holonomy of a connection in the material sector, traced in the informational realization of the gauge group, and this is a construction the biquaternion algebra supplies exactly. The loop's asymptotic behaviour, and the information-theoretic reading of that behaviour, can therefore be written in the framework's own objects. This part is genuinely housed.</li>
-<li><strong>The confinement mechanism is not available.</strong> The series has no colour group, no $\mathfrak{su}(3)$, no three-dimensional colour module, no non-perturbative biquaternionic action, measure or regulator, and hence no derivation of the area law, no string tension, and no mass gap. This is the finding of <em>Quantum Chromodynamics under the Biquaternion Framework — A Research Agenda</em>, and it is inherited here without softening.</li>
+<li><strong>The confinement mechanism is not available.</strong> The series has no colour group, no $\mathrm{SU}(3)$, no three-dimensional colour module, no non-perturbative biquaternionic action, measure or regulator, and hence no derivation of the area law, no string tension, and no mass gap. This is the finding of <em>Quantum Chromodynamics under the Biquaternion Framework — A Research Agenda</em>, and it is inherited here without softening.</li>
 <li><strong>The loss of partonic information is a statement in standard quantum field theory.</strong> Colour, confinement, and the colour-singlet structure of the asymptotic algebra are imported. What the framework contributes is the carrier on which the order parameter is built and the informational language in which the loss is described; the physics of the loss is cited as standard.</li>
 </ul>
 <p>The article proceeds as follows. The order parameter is reviewed and the two laws are given their information-theoretic reading, with the scaling of the loop's "information cost" recomputed. The loss of the partonic labels is then formulated as a superselection statement and made precise with the relative entropy of the accessible restrictions, recomputed on generic states. The scale-dependence of the parton picture is stated as an ultraviolet-to-infrared coarse-graining, and confinement is modelled as an effectively idempotent channel onto the colour-neutral algebra, with the decoherence article as the closest written model. The framework's own objects are then separated from the imports in a ledger, and the ceiling that makes the colour group a no-route obstacle is recorded.</p>
-<p><strong>Conventions.</strong> We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with quaternion basis $e_0 = 1, e_1, e_2, e_3$, $e_k^2 = -e_0$, $e_1e_2 = e_3$, and central scalar imaginary $i$, $i^2 = -1$; the material sector is $\mathbb{M}_-$ and the informational sector $\mathbb{M}_+$, with $\mathbb{B} = \mathbb{M}_-\oplus\mathbb{M}_+$. The connection is $\tilde{A} = \sum_{\mu=0}^{3}A_\mu e_\mu \in \mathbb{M}_-$; the gauge group is realized in the informational sector, the canonical example being $\mathfrak{su}(2) = \mathrm{span}_\mathbb{R}\{ie_1,ie_2,ie_3\}$ with generators $T^a = ie_a$ and $[ie_i,ie_j] = 2i\varepsilon_{ijk}ie_k$. The holonomy and Wilson loop are</p>
+<p><strong>Conventions.</strong> We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with quaternion basis $e_0 = 1, e_1, e_2, e_3$, $e_k^2 = -e_0$, $e_1e_2 = e_3$, and central scalar imaginary $i$, $i^2 = -1$; the material sector is $\mathbb{M}_-$ and the informational sector $\mathbb{M}_+$, with $\mathbb{B} = \mathbb{M}_-\oplus\mathbb{M}_+$. The connection is $\tilde{A} = \sum_{\mu=0}^{3}A_\mu e_\mu \in \mathbb{M}_-$; the gauge group is realized in the informational sector, the canonical example being $\mathrm{SU}(2) = \mathrm{span}_\mathbb{R}\{ie_1,ie_2,ie_3\}$ with generators $T^a = ie_a$ and $[ie_i,ie_j] = 2i\varepsilon_{ijk}ie_k$. The holonomy and Wilson loop are</p>
 <p>$$
 U(C) = \mathcal{P}\exp\!\left(i\oint_C A_\mu\,dx^\mu\right),
 \qquad
@@ -95,7 +95,7 @@ is the behaviour of a confining theory: a flux tube forms, the cost is proportio
 </ul>
 <p>The rectangular loop of spatial width $L$ and temporal extent $T$ connects the law to the static potential. For large $T$ the loop exponentiates the energy of the pair of sources it creates,</p>
 <p>$$
-\langle W(\square_{L\times T})\rangle \sim e^{-iT\,V(L)},
+\langle W(_{L\times T})\rangle \sim e^{-iT\,V(L)},
 $$</p>
 <p>so that an area law corresponds to $V(L) = \sigma L$, a linearly rising potential, and a perimeter law to a potential that flattens at large $L$. These statements are standard, proved on the lattice by the strong-coupling expansion, and cited rather than reproduced; the framework's relation to them is the subject of the ledger below.</p>
 <h3 id="the-information-cost-of-the-loop">The Information Cost of the Loop</h3>
@@ -112,7 +112,7 @@ I(C) \simeq \sigma\,\mathrm{area}(C),
 $$</p>
 <p>and the two are distinguished not by the size of $I$ but by its <strong>scaling</strong>: the first grows with the length of the loop, the second with the region it encloses. For the rectangular loop,</p>
 <p>$$
-I(\square_{L\times T}) \simeq
+I(_{L\times T}) \simeq
 \begin{cases}
 2\mu_{\mathrm{per}}(L+T), & \text{perimeter},\\[2pt]
 \sigma\,LT, & \text{area},
@@ -120,7 +120,7 @@ I(\square_{L\times T}) \simeq
 $$</p>
 <p>so that the quantity $I/T$ at large $T$ is a constant for the perimeter law and grows linearly in $L$ for the area law:</p>
 <p>$$
-\lim_{T\to\infty}\frac{I(\square_{L\times T})}{T}
+\lim_{T\to\infty}\frac{I(_{L\times T})}{T}
 =
 \begin{cases}
 2\mu_{\mathrm{per}}, & \text{perimeter},\\[2pt]
@@ -140,7 +140,7 @@ $$</p>
 <p>The distinction between the two is the distinction between a constraint and a channel, and the information-theoretic content is in the second.</p>
 <p>One qualification keeps the model honest. The colour symmetry of QCD is local, so a rigid colour rotation is a gauge transformation of the full theory, and the superselection statement above is a statement about the algebra of colour-invariant operators rather than about a group of physical rotations. What makes the restriction a loss and not a redundancy is that the partonic configurations a hadron's infrared description cannot separate are not gauge copies of one another: they differ in the momenta and the number of their constituents, which no change of description removes. The model of the next subsection uses the framework's own internal charge, realized in the informational sector, for which the rotation is non-trivial — the framework's gauge group is the abelian central phase, which acts trivially on $\mathbb{M}_+$, so the two are distinct transformations of the algebra.</p>
 <h3 id="the-restricted-state-and-the-vanishing-relative-entropy">The Restricted State and the Vanishing Relative Entropy</h3>
-<p>The superselection statement can be made exact without a colour group, on the framework's own state space, by using the commutant structure that any charge superselection rule produces. Let a charge generator be represented on the informational sector by an element of $\mathfrak{su}(2)\subset\mathbb{M}_+$, so that the rotation $\tilde{\rho}\mapsto U\tilde{\rho}\,U^\dagger$ with $U = \exp(i\theta\, n_a ie_a/2)$ is the charge rotation about the axis $\mathbf{n}$. The <strong>accessible</strong> state is the restriction of $\tilde{\rho}$ to the algebra of observables commuting with the charge; in the quaternion realization this restriction is the dephasing of the Bloch vector along the charge axis,</p>
+<p>The superselection statement can be made exact without a colour group, on the framework's own state space, by using the commutant structure that any charge superselection rule produces. Let a charge generator be represented on the informational sector by an element of $\mathrm{SU}(2)\subset\mathbb{M}_+$, so that the rotation $\tilde{\rho}\mapsto U\tilde{\rho}\,U^\dagger$ with $U = \exp(i\theta\, n_a ie_a/2)$ is the charge rotation about the axis $\mathbf{n}$. The <strong>accessible</strong> state is the restriction of $\tilde{\rho}$ to the algebra of observables commuting with the charge; in the quaternion realization this restriction is the dephasing of the Bloch vector along the charge axis,</p>
 <p>$$
 \mathbf{r} \;\longmapsto\; (\mathbf{r}\cdot\hat{\mathbf{n}})\,\hat{\mathbf{n}},
 $$</p>
@@ -163,7 +163,7 @@ $$</p>
 \qquad
 b_0 = \frac{11}{3}C_2(G) - \frac{2}{3}\sum_{\text{Weyl}}T(r),
 $$</p>
-<p>with $C_2(G) = N$ and the QCD coefficient $b_0 = 11 - \tfrac{2}{3}N_f$ for $SU(3)$. But the article states plainly that the gauge group, the matter content, the action, the measure, and the regulator are <strong>inputs</strong>, and that the beta functions are transcriptions. The flow acts on central scalars, and the algebraically natural sharp cutoff is imposed on the central norm form $\tilde{k}\bar{\tilde{k}}$. So the framework houses the form of the flow, and the flow is the coarse-graining that degrades the partonic information, but the group and the matter that give the flow its meaning are the missing objects.</p>
+<p>with $C_2(G) = N$ and the QCD coefficient $b_0 = 11 - \tfrac{2}{3}N_f$ for $SU(3)$. But the article states plainly that the gauge group, the matter content, the action, the measure, and the regulator are <strong>inputs</strong>, and that the beta functions are transcriptions. The flow acts on central scalars, and the algebraically natural sharp cutoff is imposed on the central biquaternion norm $\tilde{k}\bar{\tilde{k}}$. So the framework houses the form of the flow, and the flow is the coarse-graining that degrades the partonic information, but the group and the matter that give the flow its meaning are the missing objects.</p>
 <h3 id="coarse-graining-as-a-channel">Coarse-Graining as a Channel</h3>
 <p>On general grounds the flow from an ultraviolet description to an infrared description is a <strong>completely positive trace-preserving map</strong> between state spaces, and relative entropy is monotone under it:</p>
 <p>$$
@@ -212,15 +212,15 @@ $$</p>
 <h3 id="the-loop-in-the-two-sectors">The Loop in the Two Sectors</h3>
 <p>The order parameter is the framework's own construction. The connection integrated along the curve is a material one-form, $\tilde{A}\in\mathbb{M}_-$; the group element it exponentiates into is an element of the informational realization of the gauge group; and the trace is twice the scalar part. The loop is therefore an $\mathbb{M}_+$ trace of an object whose logarithm lies in $\mathbb{M}_-$, and its gauge invariance is the invariance of the scalar part under the adjoint action. The small-loop expansion, $W = 1 + ia^2F_{\mu\nu} + O(a^4)$, and the centrality of $\tilde{F}^2$, whose two scalar parts are the two Lorentz invariants of the field strength, are established in the Wilson-loop companion and are not repeated. What this gives the present article is a place to put the order parameter and, consequently, a place to put the information-theoretic reading of its two laws.</p>
 <h3 id="the-ceiling-no-colour">The Ceiling: No Colour</h3>
-<p>What the framework cannot supply is the colour theory whose order parameter the loop is supposed to be. The compact algebra available inside $\mathbb{B}$ is the maximal compact subalgebra of $\mathfrak{gl}(2,\mathbb{C})$, namely</p>
+<p>What the framework cannot supply is the colour theory whose order parameter the loop is supposed to be. The compact algebra available inside $\mathbb{B}$ is the maximal compact subalgebra of $\mathrm{GL}(2,\mathbb{C})$, namely</p>
 <p>$$
-\mathfrak{u}(2) = \mathfrak{u}(1)\oplus\mathfrak{su}(2),
+\mathrm{U}(2) = \mathrm{U}(1)\oplus\mathrm{SU}(2),
 \qquad \dim_\mathbb{R} = 4 ,
 $$</p>
-<p>and the matter side has the matching ceiling: $\mathbb{B}\cong M_2(\mathbb{C})$ is simple with unique simple module $\mathbb{C}^2$, so every $\mathbb{B}$-module has complex dimension $2k$ and a three-dimensional colour module does not exist. No $\mathfrak{su}(3)$ subalgebra and no colour triplet are available on the present construction. The consequence for this article is direct: the partonic information whose loss confinement describes is not present in the framework at all, so the framework's own loss statement is at best the corresponding statement for a $\mathfrak{u}(2)$ theory, which is not QCD. The area law, the string tension, the flux tube, the mass gap, and the colour-singlet structure are imports.</p>
+<p>and the matter side has the matching ceiling: $\mathbb{B}\cong M_2(\mathbb{C})$ is simple with unique simple module $\mathbb{C}^2$, so every $\mathbb{B}$-module has complex dimension $2k$ and a three-dimensional colour module does not exist. No $\mathrm{SU}(3)$ subalgebra and no colour triplet are available on the present construction. The consequence for this article is direct: the partonic information whose loss confinement describes is not present in the framework at all, so the framework's own loss statement is at best the corresponding statement for a $\mathrm{U}(2)$ theory, which is not QCD. The area law, the string tension, the flux tube, the mass gap, and the colour-singlet structure are imports.</p>
 <p>This is exactly the position the QCD agenda records, and the information-theoretic reading does not change it. It sharpens it: the loss of partonic information is a statement about which labels the asymptotic algebra contains, and the framework's asymptotic algebra — whatever it is — is built on a carrier that has no colour labels to lose.</p>
 <h2 id="what-the-algebra-supplies-transcribes-and-does-not-supply">What the Algebra Supplies, Transcribes, and Does Not Supply</h2>
-<p><strong>Supplied by the algebra, and recomputed here.</strong> The Wilson loop as a two-sector bilinear: a material-sector connection integrated along a curve, exponentiated into the informational realization of the group, traced to a gauge-invariant number. The information-theoretic reading of the two laws, with the scaling of $I(C) = -\log|\langle W(C)\rangle|$ recomputed: $I/T\to$ constant for the perimeter law and $I/T\to\sigma L$ for the area law, in both cases to the stated accuracy. The superselection structure of a charge rotation on the informational sector, with the accessible state as the dephasing along the charge axis and the accessible relative entropy vanishing while the full relative entropy is positive — recomputed on explicit states. The conditional expectation onto the charge-neutral subalgebra as an idempotent channel — realized on the framework's own compact algebra $\mathfrak{su}(2)\subset\mathbb{M}_+$, the group whose singlets the framework's own superselection analysis selects, and only transcribed for a colour group — and the monotonicity of relative entropy under it, cited from the companion articles.</p>
+<p><strong>Supplied by the algebra, and recomputed here.</strong> The Wilson loop as a two-sector bilinear: a material-sector connection integrated along a curve, exponentiated into the informational realization of the group, traced to a gauge-invariant number. The information-theoretic reading of the two laws, with the scaling of $I(C) = -\log|\langle W(C)\rangle|$ recomputed: $I/T\to$ constant for the perimeter law and $I/T\to\sigma L$ for the area law, in both cases to the stated accuracy. The superselection structure of a charge rotation on the informational sector, with the accessible state as the dephasing along the charge axis and the accessible relative entropy vanishing while the full relative entropy is positive — recomputed on explicit states. The conditional expectation onto the charge-neutral subalgebra as an idempotent channel — realized on the framework's own compact algebra $\mathrm{SU}(2)\subset\mathbb{M}_+$, the group whose singlets the framework's own superselection analysis selects, and only transcribed for a colour group — and the monotonicity of relative entropy under it, cited from the companion articles.</p>
 <p><strong>Transcribed from standard physics.</strong> Confinement itself: the area law as the criterion, the flux tube, the linearly rising potential, the string tension, the lattice strong-coupling argument that establishes the area law, the mass gap, the colour group and its representations, the partonic description and its scale dependence, and the running of the colour coupling. The colour-singlet structure of the asymptotic algebra and the superselection of colour are standard. All of these are imports and are flagged as such throughout.</p>
 <p><strong>Not supplied.</strong> The colour group, the confinement mechanism, the area law, the string tension, the mass gap, the non-perturbative biquaternionic action, measure and gauge-invariant regulator, and any empirical consequence. The framework states the order parameter and the informational language; it does not derive the physics that gives them their QCD meaning. The honest summary is the QCD agenda's: confinement is an obstacle with no route yet.</p>
 <p><strong>Companion articles.</strong> The construction rests on the following written articles of the series.</p>
@@ -260,7 +260,7 @@ $$</p>
 <p>Confinement is the absence of the coloured degrees of freedom from the asymptotic spectrum, diagnosed by the Wilson loop: a perimeter law for a screened phase and an area law for a confining one, with the rectangular loop giving the static potential. In the biquaternion framework the loop is a two-sector bilinear — a material-sector connection integrated around a curve, exponentiated into the informational realization of the gauge group, and traced to a gauge-invariant number — so the order parameter is housed exactly.</p>
 <p>The information-theoretic reading is that confinement is a <strong>loss</strong> of partonic information, in contrast with the redundancy of the gauge orbit. The loop's information cost $I(C) = -\log|\langle W(C)\rangle|$ scales with the perimeter in a screened phase and with the area in a confining one; for the rectangular loop, $I/T$ tends to a constant for the perimeter law and to $\sigma L$ for the area law, and both were recomputed to the stated accuracy. The string tension is the information cost per unit separation per unit time, and the area scaling is the signature that the coloured flux cannot spread into the vacuum.</p>
 <p>The loss of the partonic labels is a superselection statement. A charge rotation is not a gauge transformation: it changes the state, and the full relative entropy detects the change. But the accessible algebra is the commutant of the charge, and the charge-rotated states restrict to the same accessible state, whose relative entropy vanishes. This was checked on explicit states, where the full relative entropy was $0.231562$ and the accessible relative entropy was zero to machine precision. The map from states to accessible states is many-to-one on a non-trivial fibre, which makes it a lossy channel; the conditional expectation onto the colour-neutral subalgebra is an idempotent model of it, and the decoherence article is the closest written model while differing in that decoherence delocalizes information into an environment and confinement has no such environment.</p>
-<p>What the framework cannot supply is the colour theory itself. The compact algebra inside $\mathbb{B}$ is at most $\mathfrak{u}(2)$ of dimension $4$, every $\mathbb{B}$-module has even complex dimension, and a colour triplet and a gluon octet do not exist on the present construction. The area law, string tension, flux tube, mass gap, and colour-singlet structure are therefore imports, and the framework's contribution is the carrier of the order parameter and the informational language of the loss, not the physics of confinement.</p>
+<p>What the framework cannot supply is the colour theory itself. The compact algebra inside $\mathbb{B}$ is at most $\mathrm{U}(2)$ of dimension $4$, every $\mathbb{B}$-module has even complex dimension, and a colour triplet and a gluon octet do not exist on the present construction. The area law, string tension, flux tube, mass gap, and colour-singlet structure are therefore imports, and the framework's contribution is the carrier of the order parameter and the informational language of the loss, not the physics of confinement.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -283,8 +283,8 @@ $$</p>
 <td>Scalar imaginary, $i^2 = -1$, central</td>
 </tr>
 <tr>
-<td>$\mathbb{M}_-, \mathbb{M}_+$</td>
-<td>Material and informational sectors</td>
+<td>$\mathbb{M}_+, \mathbb{M}_-$</td>
+<td>Informational and material sectors</td>
 </tr>
 <tr>
 <td>$\tilde{A} = \sum_\mu A_\mu e_\mu\in\mathbb{M}_-$</td>
@@ -319,7 +319,7 @@ $$</p>
 <td>String tension</td>
 </tr>
 <tr>
-<td>$\square_{L\times T}$, $V(L)$</td>
+<td>$_{L\times T}$, $V(L)$</td>
 <td>Rectangular loop; static potential; $\langle W\rangle\sim e^{-iTV(L)}$</td>
 </tr>
 <tr>
@@ -355,7 +355,7 @@ $$</p>
 <td>Trace pairing; $\mathrm{Tr}(e_0) = 2$</td>
 </tr>
 <tr>
-<td>$\mathfrak{u}(2) = \mathfrak{u}(1)\oplus\mathfrak{su}(2)$, $\dim_\mathbb{R} = 4$</td>
+<td>$\mathrm{U}(2) = \mathrm{U}(1)\oplus\mathrm{SU}(2)$, $\dim_\mathbb{R} = 4$</td>
 <td>Ceiling on the framework's compact gauge algebra</td>
 </tr>
 <tr>

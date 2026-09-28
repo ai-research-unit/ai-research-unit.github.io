@@ -111,15 +111,15 @@ $$</p>
 f(x) = \int_{\mathbb{R}} \hat{f}(\xi) e^{2\pi i \xi x} \, d\xi
 $$</p>
 <p>for almost every $x$, and for every $x$ if $f$ is continuous.</p>
-<p><strong>Proof.</strong> For $\epsilon > 0$ define $f_\epsilon(x) = \int \hat{f}(\xi) e^{-\pi \epsilon^2 \xi^2} e^{2\pi i \xi x} d\xi$. Since $\hat{f} \in L^1$, convolution with the Gaussian $G_\epsilon(x) = \epsilon^{-1} e^{-\pi x^2/\epsilon^2}$ gives $f_\epsilon = f * G_\epsilon$. As $(G_\epsilon)$ is an approximate identity, $f_\epsilon \to f$ in $L^1$ and at Lebesgue points, while dominated convergence gives $f_\epsilon(x) \to \int \hat{f}(\xi) e^{2\pi i \xi x} d\xi$ at every $x$. $\square$</p>
+<p><strong>Proof.</strong> For $\epsilon > 0$ define $f_\epsilon(x) = \int \hat{f}(\xi) e^{-\pi \epsilon^2 \xi^2} e^{2\pi i \xi x} d\xi$. Since $\hat{f} \in L^1$, convolution with the Gaussian $G_\epsilon(x) = \epsilon^{-1} e^{-\pi x^2/\epsilon^2}$ gives $f_\epsilon = f * G_\epsilon$. As $(G_\epsilon)$ is an approximate identity, $f_\epsilon \to f$ in $L^1$ and at Lebesgue points, while dominated convergence gives $f_\epsilon(x) \to \int \hat{f}(\xi) e^{2\pi i \xi x} d\xi$ at every $x$.</p>
 <h3 id="the-plancherel-theorem">The Plancherel Theorem</h3>
 <p><strong>Theorem (Plancherel).</strong> The Fourier transform on $L^1(\mathbb{R}) \cap L^2(\mathbb{R})$ satisfies $\|\hat{f}\|_2 = \|f\|_2$ and $\langle \hat{f}, \hat{g} \rangle = \langle f, g \rangle$, and extends uniquely to a unitary operator</p>
 <p>$$
 \mathcal{F} : L^2(\mathbb{R}) \to L^2(\mathbb{R}).
 $$</p>
-<p><strong>Proof.</strong> For $f \in L^1 \cap L^2$, put $\tilde{f}(x) = \overline{f(-x)}$. Then $\widehat{f * \tilde{f}} = |\hat{f}|^2$, so inversion at $0$ gives $\int |\hat{f}|^2 = (f * \tilde{f})(0) = \int |f|^2$; polarization gives the inner-product identity. Since $L^1 \cap L^2$ is dense and $\mathcal{F}$ is an isometry there, it extends uniquely to an isometry of $L^2$ whose range is closed and dense. $\square$</p>
+<p><strong>Proof.</strong> For $f \in L^1 \cap L^2$, put $\tilde{f}(x) = \overline{f(-x)}$. Then $\widehat{f * \tilde{f}} = |\hat{f}|^2$, so inversion at $0$ gives $\int |\hat{f}|^2 = (f * \tilde{f})(0) = \int |f|^2$; polarization gives the inner-product identity. Since $L^1 \cap L^2$ is dense and $\mathcal{F}$ is an isometry there, it extends uniquely to an isometry of $L^2$ whose range is closed and dense.</p>
 <p>For $f \in L^2(\mathbb{R})$ the transform is the $L^2$ limit of the truncated integrals, and $\mathcal{F}^2 f(x) = f(-x)$, $\mathcal{F}^{-1} = \mathcal{F}^3$, $\mathcal{F}^4 = \mathrm{Id}$.</p>
-<h2 id="the-fourier-transform-on-math97">The Fourier Transform on $\mathbb{R}^n$</h2>
+<h2 id="the-fourier-transform-on-math95">The Fourier Transform on $\mathbb{R}^n$</h2>
 <h3 id="definition_2">Definition</h3>
 <p>For $f \in L^1(\mathbb{R}^n)$ the <strong>Fourier transform</strong> is</p>
 <p>$$
@@ -134,7 +134,7 @@ $$</p>
 <p>$$
 \widehat{\Delta f}(\xi) = -4\pi^2 |\xi|^2 \hat{f}(\xi).
 $$</p>
-<h3 id="inversion-and-plancherel-on-math115">Inversion and Plancherel on $\mathbb{R}^n$</h3>
+<h3 id="inversion-and-plancherel-on-math113">Inversion and Plancherel on $\mathbb{R}^n$</h3>
 <p><strong>Theorem (Inversion).</strong> If $f \in L^1(\mathbb{R}^n)$ and $\hat{f} \in L^1(\mathbb{R}^n)$, then $f(x) = \int_{\mathbb{R}^n} \hat{f}(\xi) e^{2\pi i \xi \cdot x} d\xi$ for almost every $x$, and everywhere if $f$ is continuous.</p>
 <p><strong>Theorem (Plancherel).</strong> The Fourier transform extends uniquely to a unitary operator $\mathcal{F} : L^2(\mathbb{R}^n) \to L^2(\mathbb{R}^n)$, and for all $f, g \in L^2(\mathbb{R}^n)$,</p>
 <p>$$
@@ -159,7 +159,7 @@ $$</p>
 <p>$$
 \widehat{f * g}(\xi) = \hat{f}(\xi) \hat{g}(\xi).
 $$</p>
-<p><strong>Proof.</strong> By Fubini, $\widehat{f * g}(\xi) = \int g(y) e^{-2\pi i \xi \cdot y} \big( \int f(x - y) e^{-2\pi i \xi \cdot (x - y)} dx \big) dy$, and the inner integral is $\hat{f}(\xi)$. $\square$</p>
+<p><strong>Proof.</strong> By Fubini, $\widehat{f * g}(\xi) = \int g(y) e^{-2\pi i \xi \cdot y} \big( \int f(x - y) e^{-2\pi i \xi \cdot (x - y)} dx \big) dy$, and the inner integral is $\hat{f}(\xi)$.</p>
 <p>The theorem extends to $L^2$ and to tempered distributions in the sense described below.</p>
 <h2 id="approximate-identities">Approximate Identities</h2>
 <h3 id="definition_3">Definition</h3>
@@ -192,7 +192,7 @@ $$</p>
 <p>$$
 |\{x : Mf(x) > \lambda\}| \le \frac{C_n}{\lambda} \|f\|_1.
 $$</p>
-<p><strong>Proof.</strong> For each $x$ with $Mf(x) > \lambda$ choose a ball $B(x, r_x)$ with average exceeding $\lambda$. These balls cover the level set; a Vitali covering argument extracts a disjoint subcollection $B_j$ whose $3$-fold dilates cover it. Hence $|\{Mf > \lambda\}| \le 3^n \sum_j |B_j| \le 3^n \lambda^{-1} \|f\|_1$. $\square$</p>
+<p><strong>Proof.</strong> For each $x$ with $Mf(x) > \lambda$ choose a ball $B(x, r_x)$ with average exceeding $\lambda$. These balls cover the level set; a Vitali covering argument extracts a disjoint subcollection $B_j$ whose $3$-fold dilates cover it. Hence $|\{Mf > \lambda\}| \le 3^n \sum_j |B_j| \le 3^n \lambda^{-1} \|f\|_1$.</p>
 <p><strong>Theorem.</strong> For $1 < p \le \infty$ there is $C_{n,p}$ with $\|Mf\|_p \le C_{n,p} \|f\|_p$.</p>
 <p>The case $p = \infty$ is immediate; the case $1 < p < \infty$ follows from the weak $(1,1)$ estimate and the $L^\infty$ estimate by interpolation. The operator $M$ is not bounded on $L^1$: for $f = \mathbf{1}_{[0,1]}$ on $\mathbb{R}$ one has $Mf(x) \gtrsim 1/x$ for large $x$, and $1/x \notin L^1$.</p>
 <h3 id="the-lebesgue-differentiation-theorem">The Lebesgue Differentiation Theorem</h3>
@@ -201,7 +201,7 @@ $$</p>
 \lim_{r \to 0} \frac{1}{|B(x, r)|} \int_{B(x, r)} f(y) \, dy = f(x)
 $$</p>
 <p>for almost every $x$.</p>
-<p><strong>Proof.</strong> It suffices to prove the statement for $f \in L^1$. For $\epsilon > 0$ write $f = g + h$ with $g$ continuous and $\|h\|_1 < \epsilon$. For $g$ the statement holds at every point, while the maximal inequality bounds the measure of the set where the oscillation of the averages of $h$ exceeds $\lambda$ by $C_n \|h\|_1/\lambda$. Letting $\epsilon \to 0$ gives the result. $\square$</p>
+<p><strong>Proof.</strong> It suffices to prove the statement for $f \in L^1$. For $\epsilon > 0$ write $f = g + h$ with $g$ continuous and $\|h\|_1 < \epsilon$. For $g$ the statement holds at every point, while the maximal inequality bounds the measure of the set where the oscillation of the averages of $h$ exceeds $\lambda$ by $C_n \|h\|_1/\lambda$. Letting $\epsilon \to 0$ gives the result.</p>
 <p>A point where the conclusion holds is a <strong>Lebesgue point</strong> of $f$. The maximal function gives the quantitative form of the theorem.</p>
 <h2 id="the-hilbert-transform">The Hilbert Transform</h2>
 <h3 id="definition_4">Definition</h3>
@@ -220,7 +220,7 @@ $$</p>
 <p>$$
 \hat{K}_\epsilon(\xi) = -i \, \mathrm{sgn}(\xi) \left( 1 - \frac{2}{\pi} \mathrm{Si}(2\pi |\xi| \epsilon) \right),
 $$</p>
-<p>where $\mathrm{Si}(t) = \int_0^t \frac{\sin s}{s} ds$ is the sine integral. These multipliers are bounded uniformly in $\epsilon$ and converge pointwise to $-i \, \mathrm{sgn}(\xi)$; Plancherel gives $\|H_\epsilon f\|_2 \le C \|f\|_2$, and the convolution theorem with dominated convergence identifies the limit on a dense subset of $L^2$. $\square$</p>
+<p>where $\mathrm{Si}(t) = \int_0^t \frac{\sin s}{s} ds$ is the sine integral. These multipliers are bounded uniformly in $\epsilon$ and converge pointwise to $-i \, \mathrm{sgn}(\xi)$; Plancherel gives $\|H_\epsilon f\|_2 \le C \|f\|_2$, and the convolution theorem with dominated convergence identifies the limit on a dense subset of $L^2$.</p>
 <h3 id="basic-properties_2">Basic Properties</h3>
 <p><strong>Isometry on $L^2$.</strong> Since $|-i \, \mathrm{sgn}(\xi)| = 1$ for $\xi \neq 0$, Plancherel gives</p>
 <p>$$
@@ -229,7 +229,7 @@ $$</p>
 <p>so $H$ is a skew-adjoint isometry of $L^2(\mathbb{R})$, the operator corresponding to the conjugate-function operator of Fourier series.</p>
 <p><strong>Boundedness on $L^p$.</strong> The Hilbert transform is bounded on $L^p(\mathbb{R})$ for every $1 < p < \infty$: there is $C_p$ with $\|Hf\|_p \le C_p \|f\|_p$ (the Riesz theorem for the conjugate function). It is not bounded on $L^1$ and not bounded on $L^\infty$.</p>
 <p><strong>Weak $(1,1)$.</strong> For $f \in L^1(\mathbb{R})$ there is $C$ with $|\{x : |Hf(x)| > \lambda\}| \le C \lambda^{-1} \|f\|_1$ (Kolmogorov). Together with the $L^2$ isometry this yields the $L^p$ bounds by interpolation. The truncated maximal Hilbert transform $H^* f = \sup_{\epsilon > 0} |H_\epsilon f|$ obeys the same weak $(1,1)$ and strong $L^p$ bounds.</p>
-<h2 id="interpolation-and-math281-theory">Interpolation and $L^p$ Theory</h2>
+<h2 id="interpolation-and-math275-theory">Interpolation and $L^p$ Theory</h2>
 <h3 id="the-rieszthorin-theorem">The Riesz–Thorin Theorem</h3>
 <p><strong>Theorem (Riesz–Thorin).</strong> Let $1 \le p_0, p_1, q_0, q_1 \le \infty$ and let $T$ be a linear operator bounded from $L^{p_0}$ to $L^{q_0}$ with norm $M_0$ and from $L^{p_1}$ to $L^{q_1}$ with norm $M_1$. For $0 < \theta < 1$ define</p>
 <p>$$
@@ -242,7 +242,7 @@ $$</p>
 <p>$$
 \|\hat{f}\|_q \le \|f\|_p.
 $$</p>
-<p><strong>Proof.</strong> The transform is bounded $L^1 \to L^\infty$ with norm $1$ and $L^2 \to L^2$ with norm $1$ by Plancherel. Riesz–Thorin interpolation between $(p_0, q_0) = (1, \infty)$ and $(p_1, q_1) = (2, 2)$ gives the result. $\square$</p>
+<p><strong>Proof.</strong> The transform is bounded $L^1 \to L^\infty$ with norm $1$ and $L^2 \to L^2$ with norm $1$ by Plancherel. Riesz–Thorin interpolation between $(p_0, q_0) = (1, \infty)$ and $(p_1, q_1) = (2, 2)$ gives the result.</p>
 <p>The endpoints are sharp: at $p = 1$ the transform is bounded but need not be integrable, and at $p = 2$ it is an isometry. For $p > 2$ the inequality fails, because the Fourier transform of an $L^p$ function need not lie in $L^q$; the defining integral need not converge absolutely, so the transform is taken in the distributional sense.</p>
 <h3 id="the-marcinkiewicz-interpolation-theorem">The Marcinkiewicz Interpolation Theorem</h3>
 <p><strong>Theorem (Marcinkiewicz).</strong> Let $T$ be a sublinear operator of weak type $(p_0, p_0)$ and weak type $(p_1, p_1)$, where $1 \le p_0 < p_1 \le \infty$. Then $T$ is of strong type $(p, p)$ for every $p_0 < p < p_1$. This is the distribution-function form of interpolation; it produces the $L^p$ bounds for the Hilbert transform and the maximal function from their weak endpoint estimates.</p>
@@ -283,7 +283,7 @@ $$</p>
 <h3 id="sobolev-embedding">Sobolev Embedding</h3>
 <p><strong>Theorem (Sobolev embedding).</strong> Let $k \ge 1$ and $1 \le p < \infty$. If $k < n/p$, then $W^{k,p}(\mathbb{R}^n) \subset L^q(\mathbb{R}^n)$ continuously for $\frac{1}{q} = \frac{1}{p} - \frac{k}{n}$. If $k = n/p$, then $W^{k,p}(\mathbb{R}^n) \subset L^q(\mathbb{R}^n)$ for every $p \le q < \infty$. If $k > n/p$, then $W^{k,p}(\mathbb{R}^n) \subset C^m(\mathbb{R}^n)$ for $m < k - n/p$, after modification on a null set.</p>
 <p><strong>Theorem.</strong> If $s > n/2$, then every class in $H^s(\mathbb{R}^n)$ has a representative in $C_0(\mathbb{R}^n)$, and $\|f\|_\infty \le C_{n,s} \|f\|_{H^s}$.</p>
-<p><strong>Proof.</strong> By Cauchy–Schwarz, $\int |\hat{f}| = \int (1 + |\xi|^2)^{-s/2} (1 + |\xi|^2)^{s/2} |\hat{f}| \le \big( \int (1 + |\xi|^2)^{-s} d\xi \big)^{1/2} \|f\|_{H^s}$, and the first factor is finite exactly when $2s > n$. $\square$</p>
+<p><strong>Proof.</strong> By Cauchy–Schwarz, $\int |\hat{f}| = \int (1 + |\xi|^2)^{-s/2} (1 + |\xi|^2)^{s/2} |\hat{f}| \le \big( \int (1 + |\xi|^2)^{-s} d\xi \big)^{1/2} \|f\|_{H^s}$, and the first factor is finite exactly when $2s > n$.</p>
 <h3 id="the-riesz-potential">The Riesz Potential</h3>
 <p>For $0 < \alpha < n$ the <strong>Riesz potential</strong> of order $\alpha$ is the operator $\widehat{I_\alpha f}(\xi) = |\xi|^{-\alpha} \hat{f}(\xi)$, the fractional integral $(-\Delta)^{-\alpha/2}$ up to a constant.</p>
 <p><strong>Theorem (Hardy–Littlewood–Sobolev).</strong> If $0 < \alpha < n$, $1 < p < q < \infty$, and $\frac{1}{q} = \frac{1}{p} - \frac{\alpha}{n}$, then $\|I_\alpha f\|_q \le C_{n, \alpha, p} \|f\|_p$.</p>
@@ -302,11 +302,11 @@ $$</p>
 1 = \int_{\mathbb{R}} |f|^2 = -\int_{\mathbb{R}} x \, \frac{d}{dx} |f|^2 \, dx \le 2 \int_{\mathbb{R}} |x| \, |f| \, |f'| \, dx
 \le 2 \left( \int_{\mathbb{R}} x^2 |f|^2 \right)^{\!1/2} \left( \int_{\mathbb{R}} |f'|^2 \right)^{\!1/2},
 $$</p>
-<p>and $\|f'\|_2 = 2\pi \|\xi \hat{f}\|_2$ by Plancherel and the differentiation rule. $\square$</p>
+<p>and $\|f'\|_2 = 2\pi \|\xi \hat{f}\|_2$ by Plancherel and the differentiation rule.</p>
 <p>Equality holds if and only if $f(x) = c \, e^{-a x^2}$ for some $a > 0$ and $c \in \mathbb{C}$, so the Gaussian is the unique minimizer of the uncertainty product.</p>
 <h3 id="qualitative-forms">Qualitative Forms</h3>
 <p><strong>Theorem.</strong> There is no nonzero $f \in L^2(\mathbb{R})$ such that both $f$ and $\hat{f}$ are compactly supported.</p>
-<p><strong>Proof.</strong> If $f$ is compactly supported, then $\hat{f}(\xi) = \int f(x) e^{-2\pi i \xi x} dx$ extends to an entire function of the complex variable $\xi$; if $\hat{f}$ were also compactly supported, the identity theorem for holomorphic functions would force $\hat{f} \equiv 0$. $\square$</p>
+<p><strong>Proof.</strong> If $f$ is compactly supported, then $\hat{f}(\xi) = \int f(x) e^{-2\pi i \xi x} dx$ extends to an entire function of the complex variable $\xi$; if $\hat{f}$ were also compactly supported, the identity theorem for holomorphic functions would force $\hat{f} \equiv 0$.</p>
 <p><strong>Theorem (Amrein–Berthier–Benedicks).</strong> If $f \in L^2(\mathbb{R})$ and both $f$ and $\hat{f}$ are supported on sets of finite Lebesgue measure, then $f = 0$.</p>
 <p>These statements are the qualitative counterparts of the Heisenberg inequality: a function and its transform cannot both be concentrated, in the strong sense of compact or finite-measure support.</p>
 <h2 id="summary">Summary</h2>

@@ -199,58 +199,6 @@ $$</p>
 \mathbb{R} = \mathbb{M}_+ \oplus \mathbb{M}_-
 $$</p>
 <p>does not exist, because $\mathbb{M}_+$ and $\mathbb{M}_-$ are not defined. There is only one subspace, and it is the whole algebra.</p>
-<h2 id="quadratic-forms-and-inner-product">Quadratic Forms and Inner Product</h2>
-<h3 id="the-norm-form">The Norm Form</h3>
-<p>The <strong>norm form</strong> of a real number $a$ is</p>
-<p>$$
-N(a) = a \cdot a = a^2,
-$$</p>
-<p>where the product is the field multiplication. It is a real number in general. It is positive-definite, since $a^2 \geq 0$ for every $a$, and it vanishes only at $a = 0$, because $\mathbb{R}$ is a field.</p>
-<p>The norm form is <strong>multiplicative</strong>:</p>
-<p>$$
-N(a \cdot b) = N(a) \, N(b).
-$$</p>
-<p>This is the statement that $a^2 b^2 = (ab)^2$, which is true in any commutative ring.</p>
-<h3 id="the-hermitian-form">The Hermitian Form</h3>
-<p>The <strong>Hermitian form</strong> of a real number $a$ is</p>
-<p>$$
-a \cdot a = a^2,
-$$</p>
-<p>where the product is the field multiplication. It is a <strong>non-negative real number</strong>, and it vanishes if and only if $a = 0$. It is a genuine positive-definite quadratic form, and it is the natural "length squared" of $a$ in the underlying real vector space of dimension $1$.</p>
-<p>The corresponding <strong>Euclidean norm</strong> is</p>
-<p>$$
-\|a\|_E = \sqrt{a \cdot a} = |a|.
-$$</p>
-<p>It is a genuine norm on the real vector space $\mathbb{R} \cong \mathbb{R}^1$: positive-definite, subadditive, and homogeneous of degree one. It <strong>is</strong> multiplicative with respect to the real product, because $|ab| = |a||b|$.</p>
-<h3 id="the-inner-product">The Inner Product</h3>
-<p>The <strong>inner product</strong> of two real numbers $a$ and $b$ is</p>
-<p>$$
-\langle a, b \rangle = a \cdot b = ab.
-$$</p>
-<p>In general this is a <strong>real number</strong>, not a complex one. This is a genuinely real feature: the inner product of two real numbers is real, and its imaginary part is zero.</p>
-<p>The inner product is linear in both arguments:</p>
-<p>$$
-\langle \lambda a, b \rangle = \lambda \langle a, b \rangle, \qquad \langle a, \lambda b \rangle = \lambda \langle a, b \rangle, \qquad \lambda \in \mathbb{R}.
-$$</p>
-<p>It is <strong>symmetric</strong> in the sense that</p>
-<p>$$
-\langle a, b \rangle = \langle b, a \rangle,
-$$</p>
-<p>which follows from the commutativity of multiplication.</p>
-<p>The inner product of a real number with itself is</p>
-<p>$$
-\langle a, a \rangle = a \cdot a = a^2,
-$$</p>
-<p>which is the Hermitian form. So the Hermitian form is the restriction of the inner product to the diagonal.</p>
-<h3 id="relation-between-the-three-forms">Relation Between the Three Forms</h3>
-<p>The three quadratic objects are related as follows:</p>
-<ul>
-<li><strong>Norm form:</strong> $N(a) = a^2$. Real-valued, vanishes only at $a = 0$, multiplicative.</li>
-<li><strong>Hermitian form:</strong> $a^2$. Non-negative real, vanishes only at $a = 0$, multiplicative.</li>
-<li><strong>Inner product:</strong> $\langle a, b \rangle = ab$. Real-valued, symmetric, bilinear.</li>
-</ul>
-<p>The norm form and the Hermitian form are the same function here, and the inner product is the bilinear form from which they are recovered by polarization. The norm form controls the multiplicative structure (invertibility, zero divisors). The Hermitian form controls the topological structure (continuity, completeness). The inner product combines both, and is the natural pairing on the algebra as a real vector space.</p>
-<p>In the real case, the norm form and the Hermitian form coincide, because the conjugation is trivial and there is no imaginary part. This is a degeneracy of the one-dimensional case, and it is the reason the real numbers are often treated as a trivial example rather than as a case study.</p>
 <h2 id="order-theoretic-structure">Order-Theoretic Structure</h2>
 <p>The order on $\mathbb{R}$ is not merely a binary relation. It interacts with the field operations and with completeness in ways that have no analogue in an unordered field.</p>
 <h3 id="intervals">Intervals</h3>
@@ -272,12 +220,17 @@ $$</p>
 <p><strong>Existence of $n$-th roots.</strong> For any $a \geq 0$ and any $n \geq 1$, there exists a unique $b \geq 0$ with $b^n = a$. Proof: let $S = \{x \geq 0 : x^n \leq a\}$; $S$ is non-empty and bounded above, so $b = \sup S$ exists; one shows $b^n = a$ by excluding $b^n < a$ and $b^n > a$.</p>
 <p><strong>Nested interval property.</strong> If $(I_n)$ is a decreasing sequence of non-empty closed intervals, then $\bigcap_n I_n \neq \emptyset$. Proof: the left endpoints form a set bounded above, whose supremum lies in every $I_n$.</p>
 <h3 id="the-nested-interval-property-and-uniqueness">The Nested Interval Property and Uniqueness</h3>
-<p>The completeness axiom, which is the least upper bound property stated as an axiom above, is equivalent to the nested interval property and to the convergence of Cauchy sequences. These equivalences are not trivial; they are the content of the standard constructions of $\mathbb{R}$ from $\mathbb{Q}$.</p>
+<p>The completeness axiom, which is the least upper bound property stated as an axiom above, is equivalent to the nested interval property and, in the metric reading, to the convergence of Cauchy sequences. These equivalences are not trivial; they are the content of the standard constructions of $\mathbb{R}$ from $\mathbb{Q}$. Only the order-theoretic form of them is used here: the metric reading is the topological development of <em>Real Topology</em>.</p>
 <p>The <strong>uniqueness</strong> of $\mathbb{R}$ as a complete ordered field is a theorem: if $F$ is any complete ordered field, there is a unique order-isomorphism $F \to \mathbb{R}$. This is why we speak of <em>the</em> real numbers.</p>
+<h3 id="real-closedness">Real Closedness</h3>
+<p><strong>Definition.</strong> An ordered field $F$ is <strong>real closed</strong> if every positive element of $F$ is a square in $F$ and every polynomial of odd degree over $F$ has a root in $F$.</p>
+<p><strong>Theorem.</strong> $\mathbb{R}$ is real closed. It is the unique ordered field that is complete, and its order is the only order compatible with its field structure.</p>
+<p>An ordered field that is real closed has a unique ordering, since the positive elements are exactly the nonzero squares; and it has no proper ordered algebraic extension, so it coincides with its own real closure. Every ordered subfield $F \subsetneq \mathbb{R}$ is Archimedean, because $\mathbb{R}$ is, and has a <strong>real closure</strong> inside $\mathbb{R}$, namely the field of its elements algebraic over $F$ in the sense of field theory; this is the smallest real-closed subfield of $\mathbb{R}$ containing $F$. In particular $\overline{\mathbb{Q}} \cap \mathbb{R}$, the field of real algebraic numbers, is the real closure of $\mathbb{Q}$ inside $\mathbb{R}$.</p>
+<p><strong>Remark.</strong> Real closedness is a field-theoretic property, and its proof from completeness is carried out in <em>Real-Closed and Complete Ordered Fields</em>. It is recorded here because the ordered-field structure of the real algebra is not complete without it: the order and the field structure of $\mathbb{R}$ determine one another.</p>
 <h2 id="summary">Summary</h2>
 <p>The real algebra is the field $\mathbb{R}$ of real numbers considered as a one-dimensional real vector space equipped with its field multiplication. It is the base case of the ladder: commutative, associative and unital, and a field, so that every nonzero element is invertible. It is the only system of the family that also carries a total order compatible with its operations.</p>
 <p>The only conjugation is the identity. Its fixed-point set is all of $\mathbb{R}$, so the single fixed-point subspace is $\mathbb{R}$ itself. There is no nontrivial conjugate decomposition, because the eigenspace for the eigenvalue $-1$ is zero, and there is no Hermitian or anti-Hermitian subspace, because there is no Hermitian conjugation: the decomposition of the general case collapses to a single summand.</p>
-<p>The quadratic objects collapse with it. The norm form is $N(a) = a \cdot a = a^2$, positive definite and multiplicative, and in this one-dimensional case the Hermitian form and the inner product coincide with it. The article closes with the order-theoretic structure, recording how the order interacts with the field operations and with completeness in ways that have no analogue in an unordered field.</p>
+<p>The order is total, Archimedean and complete, and it interacts with the field operations in ways that have no analogue in an unordered field: the positive cone determines the order, and completeness supplies the least upper bound, the Archimedean property, the density of $\mathbb{Q}$, the existence of $n$-th roots and the nested interval property. The field is real closed — every positive element is a square, every odd-degree polynomial has a root, and the order is the only one compatible with the field structure. The norm, the Hermitian form and the inner product are a form and a distance rather than algebraic data, and they are carried by <em>Real Norm and Invertibility</em>, the topology entry of this category.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -310,22 +263,6 @@ $$</p>
 <tr>
 <td>$\operatorname{id}(a) = a$</td>
 <td>Identity conjugation</td>
-</tr>
-<tr>
-<td>$N(a) = a \cdot a$</td>
-<td>Norm form</td>
-</tr>
-<tr>
-<td>$a \cdot a$</td>
-<td>Hermitian form</td>
-</tr>
-<tr>
-<td>$\langle a, b \rangle = a \cdot b$</td>
-<td>Inner product</td>
-</tr>
-<tr>
-<td>$\|a\|_E = \sqrt{a \cdot a}$</td>
-<td>Euclidean norm</td>
 </tr>
 <tr>
 <td>$\mathbb{R}_{\mathbb{R}}$</td>

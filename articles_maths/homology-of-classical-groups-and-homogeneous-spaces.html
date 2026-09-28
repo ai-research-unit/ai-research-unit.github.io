@@ -76,17 +76,17 @@ $$</p>
 <li>If $k$ has characteristic zero, then $A$ is a tensor product of exterior algebras on generators of odd degree and polynomial algebras on generators of even degree.</li>
 <li>If $k = \mathbb{F}_2$, then $A$ is a tensor product of polynomial algebras $\mathbb{F}_2[x]$ and exterior algebras $\mathbb{F}_2[x]/(x^2)$.</li>
 </ol>
-<p><em>Proof sketch.</em> Choose a basis of the primitive subspace compatible with the augmentation filtration; the composite of the product with the reduced coproduct converts the algebra into a divided-power algebra on the primitives, and the two cases of the theorem follow from whether the divided powers are infinitely divisible in the given degree and characteristic. $\square$</p>
+<p><em>Proof sketch.</em> Choose a basis of the primitive subspace compatible with the augmentation filtration; the composite of the product with the reduced coproduct converts the algebra into a divided-power algebra on the primitives, and the two cases of the theorem follow from whether the divided powers are infinitely divisible in the given degree and characteristic.</p>
 <p><strong>Corollary (Borel).</strong> Let $G$ be a compact connected Lie group of rank $r$ and let $k$ be a field of characteristic zero. Then</p>
 <p>$$
 H^*(G;k) \cong \Lambda(x_1,\ldots,x_r), \qquad H_*(G;k) \cong \Lambda(y_1,\ldots,y_r),
 $$</p>
-<p>with $\deg x_i = \deg y_i = 2d_1 - 1, \ldots, 2d_r - 1$ odd, where $d_1,\ldots,d_r$ are the degrees of the fundamental invariants of the Weyl group of $G$ on the Cartan subalgebra $\mathfrak{t}$; equivalently, the Poincaré polynomial of $G$ is</p>
+<p>with $\deg x_i = \deg y_i = 2d_1 - 1, \ldots, 2d_r - 1$ odd, where $d_1,\ldots,d_r$ are the degrees of the fundamental invariants of the Weyl group of $G$ on the Cartan subalgebra $\mathrm{T}$; equivalently, the Poincaré polynomial of $G$ is</p>
 <p>$$
 P_G(t) = \prod_{i=1}^{r}\bigl(1 + t^{2d_i-1}\bigr),
 $$</p>
 <p>and the order of the Weyl group is $|W| = \prod_i d_i$ (Chevalley).</p>
-<p><em>Proof sketch.</em> The corollary is the first part of the structure theorem applied to the finite-dimensional Hopf algebra $H^*(G;k)$: every polynomial generator would force infinite dimension, so all generators are exterior, and there are exactly $\operatorname{rk}H^*(G;k)$ of them; the rank is $r$ by the theory of maximal tori, and the degrees follow from the transgression theorem below, which identifies the primitive generators of $H^*(G;k)$ with the transgressions of the fundamental invariants. $\square$</p>
+<p><em>Proof sketch.</em> The corollary is the first part of the structure theorem applied to the finite-dimensional Hopf algebra $H^*(G;k)$: every polynomial generator would force infinite dimension, so all generators are exterior, and there are exactly $\operatorname{rk}H^*(G;k)$ of them; the rank is $r$ by the theory of maximal tori, and the degrees follow from the transgression theorem below, which identifies the primitive generators of $H^*(G;k)$ with the transgressions of the fundamental invariants.</p>
 <p><strong>Example (Chevalley's formula).</strong> For $G = SU(n)$ the invariant degrees are $2,3,\ldots,n$, so $|W| = n!/1 = n!$, the order of the symmetric group $S_n$; for $G = Sp(n)$ they are $2,4,\ldots,2n$, so $|W| = 2^n n!$, the order of the hyperoctahedral group; for $G = SO(2k+1)$ they are $2,4,\ldots,2k$, so $|W| = 2^k k!$, the order of the group of signed permutations in $k$ letters. Each is the classical order of the Weyl group of the corresponding root system.</p>
 <h2 id="homology-of-the-classical-groups">Homology of the Classical Groups</h2>
 <h3 id="the-unitary-groups">The Unitary Groups</h3>
@@ -99,7 +99,7 @@ $$</p>
 <p>$$
 U(n-1) \to U(n) \to S^{2n-1}, \qquad SU(n-1) \to SU(n) \to S^{2n-1},
 $$</p>
-<p>where the second is the action of $U(n)$ on the unit sphere of $\mathbb{C}^n$ with stabiliser $U(n-1)$. In the Serre spectral sequence of <em>The Leray–Serre Spectral Sequence</em> the base $S^{2n-1}$ has cohomology in two degrees, so the spectral sequence has two columns and the only possible differential is the transgression $d_{2n} : E_{2n}^{0,2n-1}\to E_{2n}^{2n,0}$; it carries the fundamental class of the fibre to the fundamental class of the base, and by induction with the Künneth theorem the answer is the exterior algebra on the classes of the successive spheres. $\square$</p>
+<p>where the second is the action of $U(n)$ on the unit sphere of $\mathbb{C}^n$ with stabiliser $U(n-1)$. In the Serre spectral sequence of <em>The Leray–Serre Spectral Sequence</em> the base $S^{2n-1}$ has cohomology in two degrees, so the spectral sequence has two columns and the only possible differential is the transgression $d_{2n} : E_{2n}^{0,2n-1}\to E_{2n}^{2n,0}$; it carries the fundamental class of the fibre to the fundamental class of the base, and by induction with the Künneth theorem the answer is the exterior algebra on the classes of the successive spheres.</p>
 <p><strong>Example.</strong> $H_*(U(1);\mathbb{Z}) = \Lambda(x_1)$; $H_*(U(2);\mathbb{Z}) = \Lambda(x_1,x_3)$, with total rank $4$ and Poincaré polynomial $(1+t)(1+t^3)$; $H_*(\mathbb{C}P^\infty;\mathbb{Z}) = \mathbb{Z}[u]$ with $|u| = 2$, the polynomial algebra that appears as $H^*(BU(1);\mathbb{Z})$ below.</p>
 <p><strong>Remark.</strong> The generators $x_{2i-1}$ are primitive and their transgressions in the path–loop fibration $U(n) \to PU(n) \to BU(n)$ are the universal Chern classes $c_i$ of degree $2i$, so that $H^*(BU(n);\mathbb{Z}) \cong \mathbb{Z}[c_1,\ldots,c_n]$ with $|c_i| = 2i$; the identification of the transgression with the Chern class is the content of the splitting principle, and it is the reason the exterior algebra $H^*(U(n))$ and the polynomial algebra $H^*(BU(n))$ carry the same information.</p>
 <h3 id="the-orthogonal-and-symplectic-groups">The Orthogonal and Symplectic Groups</h3>
@@ -108,13 +108,13 @@ $$</p>
 H_*(Sp(n);\mathbb{Z}) \cong \Lambda_{\mathbb{Z}}(x_3,x_7,\ldots,x_{4n-1}), \qquad H^*(O(n);\mathbb{F}_2) \cong \mathbb{F}_2[w_1,\ldots,w_n],
 $$</p>
 <p>with $|w_i| = i$; here $H^*(O(n);\mathbb{F}_2)$ is a polynomial algebra, in accordance with the second case of the structure theorem since the characteristic is $2$.</p>
-<p><em>Proof.</em> For $Sp(n)$ the same induction applies with the fibration $Sp(n-1)\to Sp(n)\to S^{4n-1}$, and the transgression has the indicated degree. For $O(n)$ the fibration $O(n-1)\to O(n)\to S^{n-1}$ gives an induction with $\mathbb{F}_2$ coefficients; the classes $w_i$ are the <strong>Stiefel–Whitney classes</strong>, and their polynomial generation is the standard computation of the cohomology of the orthogonal group, which we quote. $\square$</p>
+<p><em>Proof.</em> For $Sp(n)$ the same induction applies with the fibration $Sp(n-1)\to Sp(n)\to S^{4n-1}$, and the transgression has the indicated degree. For $O(n)$ the fibration $O(n-1)\to O(n)\to S^{n-1}$ gives an induction with $\mathbb{F}_2$ coefficients; the classes $w_i$ are the <strong>Stiefel–Whitney classes</strong>, and their polynomial generation is the standard computation of the cohomology of the orthogonal group, which we quote.</p>
 <p><strong>Theorem (Borel; torsion).</strong> For $n \geq 1$ the integral homology $H_*(SO(n);\mathbb{Z})$ and $H_*(O(n);\mathbb{Z})$ contain only $2$-torsion, while $H_*(U(n);\mathbb{Z})$, $H_*(SU(n);\mathbb{Z})$ and $H_*(Sp(n);\mathbb{Z})$ are torsion-free. In the stable range</p>
 <p>$$
 H_*(SO;\mathbb{F}_2) \cong \mathbb{F}_2[x_1,x_2,\ldots], \qquad |x_i| = i,
 $$</p>
 <p>with $SO = \operatorname{colim}_n SO(n)$, so the Poincaré series of $H_*(SO;\mathbb{F}_2)$ is $\prod_{i\geq1}(1-t^i)^{-1}$, the generating function for partitions; dually $H^*(BSO;\mathbb{F}_2) \cong \mathbb{F}_2[w_2,w_3,\ldots]$ with $|w_i| = i$.</p>
-<p><em>Proof.</em> The absence of odd torsion is the theorem of Borel on the homology of compact connected Lie groups; the stable statement is the $\mathbb{F}_2$ version of the structure theorem applied to the Hopf algebra $H_*(SO;\mathbb{F}_2)$, whose primitive generators $x_i$ correspond to the Stiefel–Whitney classes $w_{i+1}$. $\square$</p>
+<p><em>Proof.</em> The absence of odd torsion is the theorem of Borel on the homology of compact connected Lie groups; the stable statement is the $\mathbb{F}_2$ version of the structure theorem applied to the Hopf algebra $H_*(SO;\mathbb{F}_2)$, whose primitive generators $x_i$ correspond to the Stiefel–Whitney classes $w_{i+1}$.</p>
 <p><strong>Example (low degrees).</strong> $SO(3) \cong \mathbb{RP}^3$ has $H_0 = \mathbb{Z}$, $H_1 = \mathbb{Z}/2$, $H_2 = 0$, $H_3 = \mathbb{Z}$; $SO(4) \cong (S^3\times S^3)/(\mathbb{Z}/2)$ has $2$-torsion in degrees $1$ and $2$. The groups $O(n)$ and $SO(n)$ have the same homotopy and homology in positive degrees for $n \geq 3$ because the determinant splits $O(n) \cong SO(n)\times \mathbb{Z}/2$ up to homotopy.</p>
 <h3 id="homotopy-of-the-classical-groups">Homotopy of the Classical Groups</h3>
 <p><strong>Theorem (Bott periodicity).</strong> The homotopy groups of the stable classical groups are periodic, with</p>
@@ -122,7 +122,7 @@ $$</p>
 \pi_i(SO) = \begin{cases} \mathbb{Z}/2, & i \equiv 0, 1 \bmod 8, \\ 0, & i \equiv 2, 4, 5, 6 \bmod 8, \\ \mathbb{Z}, & i \equiv 3, 7 \bmod 8, \end{cases} \qquad (i \geq 1),
 $$</p>
 <p>so that $\pi_1(SO) \cong \mathbb{Z}/2$ and $\pi_3(SO) \cong \mathbb{Z}$; $\pi_i(U) \cong \mathbb{Z}$ for $i$ odd and $0$ for $i$ even; and $\pi_i(Sp) \cong \pi_{i+4}(SO)$, that is, $\mathbb{Z}$ for $i \equiv 3, 7 \bmod 8$ and $\mathbb{Z}/2$ for $i \equiv 4, 5 \bmod 8$, and $0$ otherwise. The unstable groups agree with the stable ones in a range linear in $n$.</p>
-<p><em>Proof sketch.</em> The fibrations of the previous theorem give the exact sequences relating the consecutive groups and hence the inductive stabilisation; the periodicity is the Bott periodicity theorem, quoted. $\square$</p>
+<p><em>Proof sketch.</em> The fibrations of the previous theorem give the exact sequences relating the consecutive groups and hence the inductive stabilisation; the periodicity is the Bott periodicity theorem, quoted.</p>
 <p><strong>Corollary (the $J$-homomorphism).</strong> The groups $\pi_i(SO)$ are the source of the $J$-homomorphism of <em>Stable Homotopy Theory</em>; the elements of $\pi_3(SO)\cong\mathbb{Z}$ and $\pi_7(SO)\cong\mathbb{Z}$ generate the image of $J$ in $\pi_3^s \cong \mathbb{Z}/24$ and $\pi_7^s\cong\mathbb{Z}/240$.</p>
 <p><strong>Remark.</strong> In the stable range the homology and homotopy of the classical groups are related by the Hurewicz theorem of <em>Homotopy Groups and Fibrations</em>. For $SO$ the torsion in the integral homology is all of order $2$, so it disappears rationally; the free part is visible in $\pi_*(SO)\otimes\mathbb{Q}$, which is one-dimensional in each degree $\equiv 3 \bmod 4$, and hence, by the structure theorem for the rational homology of a group,</p>
 <p>$$
@@ -141,7 +141,7 @@ $$</p>
 \dim_{\mathbb{C}}G_k(\mathbb{C}^n) = k(n-k), \qquad \sum_{\lambda\subseteq (n-k)^k} t^{|\lambda|} = \binom{n}{k}_t,
 $$</p>
 <p>the <strong>Gaussian binomial coefficient</strong>, so $H^*(G_k(\mathbb{C}^n);\mathbb{Z})$ is free of rank $\binom{n}{k}$.</p>
-<p><em>Proof sketch.</em> Choose coordinates respecting the flag; a $k$-plane has a unique row-echelon matrix, and the position of the pivots determines the cell and the remaining entries the coordinates. $\square$</p>
+<p><em>Proof sketch.</em> Choose coordinates respecting the flag; a $k$-plane has a unique row-echelon matrix, and the position of the pivots determines the cell and the remaining entries the coordinates.</p>
 <p><strong>Example.</strong> For $k = 1$ the Grassmannian is $\mathbb{C}P^{n-1}$, the partitions in the box $1\times(n-1)$ are $(0),(1),\ldots,(n-1)$, and $\sigma_i$ is the class of a linear subspace of codimension $i$, with $H^*(\mathbb{C}P^{n-1};\mathbb{Z}) = \mathbb{Z}[\sigma_1]/(\sigma_1^n)$; the Gaussian binomial is $\binom{n}{1}_t = 1 + t + \cdots + t^{n-1}$. For $n = 4$, $k = 2$ the boxes give six classes $\sigma_0, \sigma_1, \sigma_2, \sigma_{1,1}, \sigma_{2,1}, \sigma_{2,2}$ and $\binom{4}{2}_t = 1 + t + 2t^2 + t^3 + t^4$.</p>
 <h3 id="the-cohomology-ring-and-the-chern-classes">The Cohomology Ring and the Chern Classes</h3>
 <p><strong>Theorem (presentation).</strong> Let $c_1,\ldots,c_k$ be the Chern classes of the dual of the tautological subbundle on $G_k(\mathbb{C}^n)$, of degree $2i$. Then</p>
@@ -152,7 +152,7 @@ $$</p>
 <p>$$
 H^*\bigl(G_k(\mathbb{C}^\infty);\mathbb{Z}\bigr) \cong \mathbb{Z}[c_1,\ldots,c_k].
 $$</p>
-<p><em>Proof sketch.</em> The tautological sequence $0 \to S \to \underline{\mathbb{C}}^n \to Q \to 0$ on the Grassmannian has $S\oplus Q$ trivial, so $c(S)c(Q) = 1$; writing the Chern classes of $S$ in terms of the Chern roots gives the displayed relations, and the Schubert basis shows that they are the only ones. $\square$</p>
+<p><em>Proof sketch.</em> The tautological sequence $0 \to S \to \underline{\mathbb{C}}^n \to Q \to 0$ on the Grassmannian has $S\oplus Q$ trivial, so $c(S)c(Q) = 1$; writing the Chern classes of $S$ in terms of the Chern roots gives the displayed relations, and the Schubert basis shows that they are the only ones.</p>
 <p><strong>Corollary (splitting principle).</strong> The map that associates to a class of $H^*(G_k(\mathbb{C}^n))$ an element of the symmetric functions in the Chern roots is injective, and the Schubert classes are the Schur polynomials in those roots: $\sigma_\lambda = s_\lambda(c_1,\ldots,c_k)$ up to the normalization of the tautological bundle. Consequently the structure constants of $H^*(G_k(\mathbb{C}^n))$ are the <strong>Littlewood–Richardson coefficients</strong>, and</p>
 <p>$$
 \sigma_\lambda\sigma_\mu = \sum_{\nu\subseteq(n-k)^k} c^\nu_{\lambda\mu}\,\sigma_\nu .
@@ -177,17 +177,16 @@ $$</p>
 <li>$V_1(\mathbb{R}^n) = S^{n-1}$ and $V_1(\mathbb{C}^n) = S^{2n-1}$, so the first case is the sphere.</li>
 <li>$V_n(\mathbb{R}^n) = O(n)$ and $V_{n-1}(\mathbb{R}^n) = SO(n)$, so the last cases are the groups themselves.</li>
 <li>$H_*(V_k(\mathbb{R}^n);\mathbb{Z})$ has torsion only of order $2$, and $H_*(V_k(\mathbb{C}^n);\mathbb{Z})$ is torsion-free.</li>
-<li>
-<p>The <strong>Gysin sequence</strong> of the oriented sphere bundle $S^{m}\to V_k(\mathbb{R}^n)\to V_{k-1}(\mathbb{R}^n)$ with $m = n-k$ determines the cohomology from the Euler class $e$ of degree $m+1$:</p>
+<li>The <strong>Gysin sequence</strong> of the oriented sphere bundle $S^{m}\to V_k(\mathbb{R}^n)\to V_{k-1}(\mathbb{R}^n)$ with $m = n-k$ determines the cohomology from the Euler class $e$ of degree $m+1$:</li>
+</ol>
 <p>$$
     \cdots \to H^{i-m-1}(V_{k-1}) \xrightarrow{\ \cup e\ } H^i(V_{k-1}) \to H^i(V_k) \to H^{i-m}(V_{k-1}) \xrightarrow{\ \cup e\ } H^{i+1}(V_{k-1}) \to \cdots ,
-    $$</p>
-<p>and the complex analogue has fibre $S^{2(n-k)+1}$ with Euler class of degree $2(n-k)+2$.</p>
-</li>
-</ol>
+$$</p>
+<pre><code>and the complex analogue has fibre $S^{2(n-k)+1}$ with Euler class of degree $2(n-k)+2$.
+</code></pre>
 <h2 id="flag-manifolds-and-schubert-calculus">Flag Manifolds and Schubert Calculus</h2>
 <h3 id="the-cell-decomposition">The Cell Decomposition</h3>
-<p><strong>Definition.</strong> Let $G$ be a compact connected Lie group with maximal torus $T$ and complexification $G_{\mathbb{C}}$, and let $B \leq G_{\mathbb{C}}$ be a Borel subgroup, that is, a maximal connected solvable subgroup. The <strong>flag manifold</strong> is the homogeneous space $G_{\mathbb{C}}/B$, which is homotopy equivalent to the compact quotient $G/T$; its complex cells are indexed by the Weyl group $W = N(T)/T$, and its complex dimension is the number of positive roots of $\mathfrak{g}$.</p>
+<p><strong>Definition.</strong> Let $G$ be a compact connected Lie group with maximal torus $T$ and complexification $G_{\mathbb{C}}$, and let $B \leq G_{\mathbb{C}}$ be a Borel subgroup, that is, a maximal connected solvable subgroup. The <strong>flag manifold</strong> is the homogeneous space $G_{\mathbb{C}}/B$, which is homotopy equivalent to the compact quotient $G/T$; its complex cells are indexed by the Weyl group $W = N(T)/T$, and its complex dimension is the number of positive roots of $\mathrm{G}$.</p>
 <p><strong>Theorem (Bruhat decomposition).</strong> The flag manifold has a cell decomposition</p>
 <p>$$
 G/B = \bigsqcup_{w\in W} BwB/B, \qquad \bar\Omega_w = \bigsqcup_{v \leq w} BvB/B,
@@ -198,25 +197,26 @@ $$</p>
 <p><strong>Theorem (Pieri and Giambelli).</strong> In $H^*(G_k(\mathbb{C}^n);\mathbb{Z})$ with the Schubert basis:</p>
 <ol>
 <li><strong>Pieri.</strong> $\sigma_i\,\sigma_\lambda = \sum_\mu \sigma_\mu$, the sum over partitions $\mu \supseteq \lambda$ with $|\mu| = |\lambda| + i$ and $\mu/\lambda$ a horizontal strip, that is, with $\lambda_1 \geq \mu_2 \geq \lambda_2 \geq \mu_3 \geq \cdots$.</li>
-<li>
-<p><strong>Giambelli.</strong> The determinant formula</p>
+<li><strong>Giambelli.</strong> The determinant formula</li>
+</ol>
 <p>$$
     \sigma_{(\lambda_1,\ldots,\lambda_k)} = \det\bigl(\sigma_{\lambda_i + j - i}\bigr)_{1\leq i,j\leq k},
-    $$</p>
-<p>with the convention $\sigma_0 = 1$ and $\sigma_m = 0$ for $m < 0$.
-3. The cohomology class of a <strong>Schubert variety</strong> in the sense of the flag manifold satisfies the <strong>Chevalley–Monk formula</strong>, and on the Grassmannian the Pieri rule is the special case of the Littlewood–Richardson rule with one partition a single row.</p>
-</li>
+$$</p>
+<pre><code>with the convention $\sigma_0 = 1$ and $\sigma_m = 0$ for $m < 0$.
+</code></pre>
+<ol>
+<li>The cohomology class of a <strong>Schubert variety</strong> in the sense of the flag manifold satisfies the <strong>Chevalley–Monk formula</strong>, and on the Grassmannian the Pieri rule is the special case of the Littlewood–Richardson rule with one partition a single row.</li>
 </ol>
-<p><strong>Theorem (Borel's presentation).</strong> Let $G$ be a compact connected Lie group with maximal torus $T$ and Weyl group $W$ acting on $\mathfrak{t}^*$, and let $S = \mathbb{Z}[\mathfrak{t}^*]$ be the polynomial ring. For $G$ simply connected there is a ring isomorphism</p>
+<p><strong>Theorem (Borel's presentation).</strong> Let $G$ be a compact connected Lie group with maximal torus $T$ and Weyl group $W$ acting on $\mathrm{T}^*$, and let $S = \mathbb{Z}[\mathrm{T}^*]$ be the polynomial ring. For $G$ simply connected there is a ring isomorphism</p>
 <p>$$
 H^*(G/T;\mathbb{Z}) \cong S\big/\bigl(S^W_+\bigr),
 $$</p>
 <p>where $S^W_+$ is the ideal generated by the positive-degree $W$-invariants; on the rational cohomology the same presentation holds for every $G$:</p>
 <p>$$
-H^*(G/T;\mathbb{Q}) \cong \mathbb{Q}[\mathfrak{t}^*]\big/\bigl(\mathbb{Q}[\mathfrak{t}^*]^W_+\bigr),
+H^*(G/T;\mathbb{Q}) \cong \mathbb{Q}[\mathrm{T}^*]\big/\bigl(\mathbb{Q}[\mathrm{T}^*]^W_+\bigr),
 $$</p>
 <p>the <strong>coinvariant algebra</strong> of $W$: a finite-dimensional algebra of dimension $|W|$ on which $W$ acts as the regular representation, with the Schubert classes as an integral basis and $\dim\sigma_w = 2\ell(w)$.</p>
-<p><em>Proof sketch.</em> Apply the Serre spectral sequence to $T \to G \to G/T$; the base $G/T$ has cohomology in even degrees only, so all differentials out of the base vanish, and the edge homomorphism identifies $H^*(G/T)$ with the quotient of $H^*(BT) = S$ by the ideal generated by the transgressions of the primitive generators of $H^*(G)$; by the corollary above these transgressions are the fundamental invariants, of degrees $d_1,\ldots,d_r$. $\square$</p>
+<p><em>Proof sketch.</em> Apply the Serre spectral sequence to $T \to G \to G/T$; the base $G/T$ has cohomology in even degrees only, so all differentials out of the base vanish, and the edge homomorphism identifies $H^*(G/T)$ with the quotient of $H^*(BT) = S$ by the ideal generated by the transgressions of the primitive generators of $H^*(G)$; by the corollary above these transgressions are the fundamental invariants, of degrees $d_1,\ldots,d_r$.</p>
 <p><strong>Example (the coinvariant algebra and Chevalley).</strong> For $G = SU(2)$, $W = S_2$ acts on $\mathbb{Q}[x]$ by $x \mapsto -x$, so the invariants of positive degree are generated by $x^2$, and $H^*(G/T;\mathbb{Q}) \cong \mathbb{Q}[x]/(x^2)$, of dimension $2 = |W|$, with the Schubert basis $1, \sigma_1$: the flag manifold $SU(2)/T$ is the sphere $S^2$ and $\sigma_1$ is the class of a point. For $G = SU(3)$ the coinvariant algebra has dimension $6 = |W|$ and Poincaré polynomial $1 + 2t^2 + 2t^4 + t^6$, in agreement with the Schubert count above and with the cohomology of the flag manifold, which has complex dimension $3$.</p>
 <p><strong>Remark.</strong> The cohomology of the flag manifold is the universal home of the characteristic classes of a principal bundle with structure group $G$ and a reduction to $T$, and the Borel presentation is the precise form of the splitting principle: a class in $H^*(BG)$ restricts to a $W$-invariant class in $H^*(BT) = S$, and the map $H^*(BG)\to S$ becomes an isomorphism onto the invariants after tensoring with $\mathbb{Q}$ for $G$ compact connected of rank $r$: $H^*(BG;\mathbb{Q}) \cong S^W$. This is the algebraic content of the theory of <em>Characteristic Classes</em>, earlier in this Part, and the <em>Characteristic Classes</em> section of <em>Fibre Bundles, Connections and Curvature</em> constructs the same classes by the Chern–Weil method from a connection.</p>
 <h2 id="classifying-spaces-and-universal-bundles">Classifying Spaces and Universal Bundles</h2>
@@ -227,7 +227,7 @@ H^*(BU;\mathbb{Z}) \cong \mathbb{Z}[c_1,c_2,\ldots],
 $$</p>
 <p>a polynomial algebra on generators of even degree; the classes $c_i$ are the universal Chern classes, and the restriction $H^*(BU(n))\to H^*(BT)$ induced by a maximal torus is the map to the symmetric polynomials in the variables $x_i$ of $S = \mathbb{Z}[x_1,\ldots,x_n]$.</p>
 <p><strong>Theorem (Stiefel–Whitney classes).</strong> $H^*(BO(n);\mathbb{F}_2) \cong \mathbb{F}_2[w_1,\ldots,w_n]$ with $|w_i| = i$, and stably $H^*(BO;\mathbb{F}_2) \cong \mathbb{F}_2[w_1,w_2,\ldots]$; integrally $H^*(BSO(2m+1);\mathbb{Z}[1/2]) \cong \mathbb{Z}[1/2][p_1,\ldots,p_m]$ on the Pontryagin classes, and $H^*(BSp(n);\mathbb{Z}) \cong \mathbb{Z}[q_1,\ldots,q_n]$ with $|q_i| = 4i$.</p>
-<p><em>Proof sketch.</em> The path–loop fibration $G\to EG\to BG$ and the transgression theorem give $H^*(BG)$ from the primitive generators of $H^*(G)$: the primitive exterior generators $x_i$ of $H^*(G)$ transgress to polynomial generators of $H^*(BG)$, so $H^*(BG;k)$ is polynomial on the transgressions. Applying this to $G = U(n)$ with the generators in degrees $2i-1$ gives generators in degrees $2i$, the Chern classes; for $SO(n)$ and $\mathbb{F}_2$ coefficients the same argument gives the Stiefel–Whitney classes, and for $Sp(n)$ the symplectic classes. $\square$</p>
+<p><em>Proof sketch.</em> The path–loop fibration $G\to EG\to BG$ and the transgression theorem give $H^*(BG)$ from the primitive generators of $H^*(G)$: the primitive exterior generators $x_i$ of $H^*(G)$ transgress to polynomial generators of $H^*(BG)$, so $H^*(BG;k)$ is polynomial on the transgressions. Applying this to $G = U(n)$ with the generators in degrees $2i-1$ gives generators in degrees $2i$, the Chern classes; for $SO(n)$ and $\mathbb{F}_2$ coefficients the same argument gives the Stiefel–Whitney classes, and for $Sp(n)$ the symplectic classes.</p>
 <p><strong>Example.</strong> $BU(1) = \mathbb{C}P^\infty$ and $H^*(\mathbb{C}P^\infty;\mathbb{Z}) = \mathbb{Z}[c_1]$, matching the earlier example; $BO(1) = \mathbb{R}P^\infty$ and $H^*(\mathbb{R}P^\infty;\mathbb{F}_2) = \mathbb{F}_2[w_1]$; $BSO(2) = BU(1) = \mathbb{C}P^\infty$, with Euler class $c_1$; and the classifying space of the circle is $\mathbb{C}P^\infty = K(\mathbb{Z},2)$.</p>
 <p><strong>Remark.</strong> The cohomology of the classifying spaces is where the characteristic classes of <em>Fibre Bundles, Connections and Curvature</em> and of <em>Characteristic Classes</em>, both earlier in this Part, live; the relation $H^*(BG)\otimes\mathbb{Q} \cong (S^W)$ gives the invariant-theoretic description of the classes, the Schubert basis gives their integral refinement, and the Grothendieck group of complex vector bundles on a space is $\tilde K^0(X) = [X, BU\times\mathbb{Z}]$, so that $BU$ is the representing space of the complex topological $K$-theory mentioned in <em>Stable Homotopy Theory</em> and treated in another article of this Part.</p>
 <h2 id="summary">Summary</h2>
@@ -268,7 +268,7 @@ $$</p>
 <td>Primitive subspace of a Hopf algebra</td>
 </tr>
 <tr>
-<td>$W$, $\mathfrak{t}$, $d_1,\ldots,d_r$</td>
+<td>$W$, $\mathrm{T}$, $d_1,\ldots,d_r$</td>
 <td>Weyl group, Cartan subalgebra, invariant degrees; $|W| = \prod d_i$</td>
 </tr>
 <tr>
@@ -292,7 +292,7 @@ $$</p>
 <td>Schur polynomial, Littlewood–Richardson coefficient</td>
 </tr>
 <tr>
-<td>$S = \mathbb{Z}[\mathfrak{t}^*]$, $S^W$</td>
+<td>$S = \mathbb{Z}[\mathrm{T}^*]$, $S^W$</td>
 <td>Polynomial ring, invariants; $H^*(BG;\mathbb{Q}) \cong S^W\otimes\mathbb{Q}$</td>
 </tr>
 <tr>

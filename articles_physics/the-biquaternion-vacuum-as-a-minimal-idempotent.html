@@ -61,7 +61,7 @@ $$
 \;=\; |0\rangle\langle 0| .
 $$
 It is an element of the informational sector $\mathbb{M}_+$, it is <strong>minimal</strong> in the sense of the algebra, its trace is $\mathrm{Tr}(\tilde\Pi_1) = 1$, and it is the projector onto a <strong>minimal left ideal</strong> of $\mathbb{B}$, the two-complex-dimensional one-particle module. The complementary idempotent $\tilde N_{\mathrm{tr}} = \tfrac12(e_0 - ie_3)$ is the occupied-state projector, and the two form a resolution of the identity, $\tilde\Pi_1 + \tilde\Pi_2 = e_0$, $\tilde\Pi_1\tilde\Pi_2 = 0$. The one-mode vacuum is thus, literally, a minimal idempotent.</li>
-<li><strong>Established, and worth separating from the above.</strong> The vacuum idempotent is a <strong>zero divisor</strong>: its norm form vanishes, $N(\tilde\Pi_1) = \tilde\Pi_1\overline{\tilde\Pi_1} = 0$, and its matrix representative has vanishing determinant, $\det\Phi(\tilde\Pi_1) = 0$. The vacuum state lies on the zero-divisor cone — the framework's light cone. This is not a defect of the state; it is the algebra's statement that a rank-one projector is not invertible, and it ties the choice of vacuum to the choice of a null direction.</li>
+<li><strong>Established, and worth separating from the above.</strong> The vacuum idempotent is a <strong>zero divisor</strong>: its biquaternion norm vanishes, $N(\tilde\Pi_1) = \tilde\Pi_1\overline{\tilde\Pi_1} = 0$, and its matrix representative has vanishing determinant, $\det\Phi(\tilde\Pi_1) = 0$. The vacuum state lies on the zero-divisor cone — the framework's light cone. This is not a defect of the state; it is the algebra's statement that a rank-one projector is not invertible, and it ties the choice of vacuum to the choice of a null direction.</li>
 <li><strong>The vacuum manifold.</strong> The construction depends on a unit vector $\hat{\boldsymbol\mu}\in S^2$ through $\tilde\Pi(\hat{\boldsymbol\mu}) = \tfrac12(e_0 + i\hat{\boldsymbol\mu})$. Every such idempotent is a legitimate one-mode vacuum, and the family is the two-sphere — the Bloch sphere of the state space. The framework does not single one out; a global $SU(2)$ rotation moves one into another, and the orbit is the vacuum manifold.</li>
 <li><strong>Gap, left visible.</strong> For a <strong>field</strong> the vacuum is not an element of $\mathbb{B}$. The Fock space of a field is a module over the algebra, not a subalgebra of it, and the algebra contains no bosonic ladder at all: no pair $\tilde a,\tilde a^\dagger\in\mathbb{B}$ can satisfy $[\tilde a,\tilde a^\dagger]=e_0$ because a commutator has vanishing trace while $\mathrm{Tr}(e_0)=2$. So "the biquaternion vacuum" is not, in general, a biquaternion. It is an idempotent for one fermionic mode and a state in a module for a field.</li>
 </ul>
@@ -72,7 +72,7 @@ $$
 \qquad
 \mathbb{M}_+ = \{\tilde Q : \tilde Q^\dagger = \tilde Q\} = \mathrm{span}_{\mathbb{R}}\{e_0, ie_1, ie_2, ie_3\},
 $$
-with $\mathbb{B} = \mathbb{M}_-\oplus\mathbb{M}_+$; $\mathbb{H}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_0,e_1,e_2,e_3\}$ is the real-quaternion subspace and $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_0, ie_0\}$ is the center. The isomorphism is $\Phi(e_k) = -i\sigma_k$, $\Phi(i) = iI_2$, the <strong>norm form</strong> is $N(\tilde Q) = \tilde Q\bar{\tilde Q} = \sum_\mu Q_\mu^2$, and the trace pairing is $\mathrm{Tr}(\tilde P\tilde H) = 2\,\mathrm{Sc}(\tilde P\tilde H)$, so that $\mathrm{Tr}(e_0)=2$. The single-mode ladder is $\tilde a_{\mathrm{tr}} = \tfrac12(ie_1-e_2)$, $\tilde a_{\mathrm{tr}}^\dagger = \tfrac12(ie_1+e_2)$, as established by <em>Fock Space and Creation/Annihilation Operators in Biquaternionic Form</em>.</p>
+with $\mathbb{B} = \mathbb{M}_-\oplus\mathbb{M}_+$; $\mathbb{H}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_0,e_1,e_2,e_3\}$ is the real-quaternion subspace and $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_0, ie_0\}$ is the center. The isomorphism is $\Phi(e_k) = -i\sigma_k$, $\Phi(i) = iI_2$, the <strong>biquaternion norm</strong> is $N(\tilde Q) = \tilde Q\bar{\tilde Q} = \sum_\mu Q_\mu^2$, and the trace pairing is $\mathrm{Tr}(\tilde P\tilde H) = 2\,\mathrm{Sc}(\tilde P\tilde H)$, so that $\mathrm{Tr}(e_0)=2$. The single-mode ladder is $\tilde a_{\mathrm{tr}} = \tfrac12(ie_1-e_2)$, $\tilde a_{\mathrm{tr}}^\dagger = \tfrac12(ie_1+e_2)$, as established by <em>Fock Space and Creation/Annihilation Operators in Biquaternionic Form</em>.</p>
 <h2 id="the-vacuum-as-a-state">The Vacuum as a State</h2>
 <p>In the standard formulation the vacuum is characterized in two equivalent ways, and it is worth keeping both in view because the biquaternion reading uses one and not the other.</p>
 <p><strong>As a vector.</strong> The one-particle space $\mathcal{H}_1$ generates the Fock space
@@ -186,7 +186,7 @@ $$
 $$
 which are the statements that the vacuum is empty and the mode anticommutator is normalized.</p>
 <h2 id="the-vacuum-is-a-zero-divisor">The Vacuum Is a Zero Divisor</h2>
-<p>The single most consequential algebraic property of the vacuum idempotent is that it is <strong>not invertible</strong>, and the framework makes this property visible through the norm form.</p>
+<p>The single most consequential algebraic property of the vacuum idempotent is that it is <strong>not invertible</strong>, and the framework makes this property visible through the biquaternion norm.</p>
 <p>Compute $N(\tilde\Pi_1) = \tilde\Pi_1\overline{\tilde\Pi_1}$, using $\bar e_3 = -e_3$ and $\bar i = i$:
 $$
 \tilde\Pi_1\overline{\tilde\Pi_1} = \tfrac14\big(e_0+ie_3\big)\big(e_0-ie_3\big) = \tfrac14\Big(e_0 - ie_3 + ie_3 - i^2 e_3^2\Big) = \tfrac14\big(e_0 - e_0\big) = 0 .
@@ -195,10 +195,10 @@ So
 $$
 \boxed{\,N(\tilde\Pi(\hat{\boldsymbol\mu})) = 0 \quad\text{for every unit vector } \hat{\boldsymbol\mu}\,}
 $$
-and the same computation with $\tilde\Pi_2$ gives $N(\tilde\Pi_2)=0$. In the language of the norm form, every minimal projector of $\mathbb{B}$ is a <strong>null element</strong>: it lies on the cone $N(\tilde Q)=0$, which is the zero-divisor cone and the framework's light cone. Equivalently, $\det\Phi(\tilde\Pi(\hat{\boldsymbol\mu}))=0$, since $N=\det\Phi$.</p>
-<p>This is not an accident of the vacuum state; it is the algebra's statement about rank. A rank-one projector is a matrix of rank one, a rank-one matrix is singular, a singular matrix is a zero divisor, and the determinant-norm form detects exactly that. The vacuum is the simplest element of the algebra that has this property.</p>
+and the same computation with $\tilde\Pi_2$ gives $N(\tilde\Pi_2)=0$. In the language of the biquaternion norm, every minimal projector of $\mathbb{B}$ is a <strong>null element</strong>: it lies on the cone $N(\tilde Q)=0$, which is the zero-divisor cone and the framework's light cone. Equivalently, $\det\Phi(\tilde\Pi(\hat{\boldsymbol\mu}))=0$, since $N=\det\Phi$.</p>
+<p>This is not an accident of the vacuum state; it is the algebra's statement about rank. A rank-one projector is a matrix of rank one, a rank-one matrix is singular, a singular matrix is a zero divisor, and the determinant-biquaternion norm detects exactly that. The vacuum is the simplest element of the algebra that has this property.</p>
 <p>Two readings of the same fact are worth recording.</p>
-<p><strong>The vacuum and the pair of complementary projectors are the two null directions.</strong> Because $\tilde\Pi_1 + \tilde\Pi_2 = e_0$ with both null, the identity is written as the sum of two elements each of vanishing norm form. In signature language, $e_0$ is a positive-norm element decomposed along two null directions whose sum is timelike — the algebraic shape of a light-cone frame. The pair $\{\tilde\Pi_1, \tilde\Pi_2\}$ plays for the state space the role that the pair of null vectors plays for a Lorentz frame.</p>
+<p><strong>The vacuum and the pair of complementary projectors are the two null directions.</strong> Because $\tilde\Pi_1 + \tilde\Pi_2 = e_0$ with both null, the identity is written as the sum of two elements each of vanishing biquaternion norm. In signature language, $e_0$ is a positive-norm element decomposed along two null directions whose sum is timelike — the algebraic shape of a light-cone frame. The pair $\{\tilde\Pi_1, \tilde\Pi_2\}$ plays for the state space the role that the pair of null vectors plays for a Lorentz frame.</p>
 <p><strong>The vacuum carries a definite phase direction.</strong> The projector $\tilde\Pi(\hat{\boldsymbol\mu})$ is determined by the <em>unit</em> vector $\hat{\boldsymbol\mu}$, and the null cone condition $N=0$ is satisfied for every $\hat{\boldsymbol\mu}$; the cone is the union of the one-dimensional rays that the projectors single out. Choosing a vacuum is choosing a null direction, and different vacua are related by the rotations that move one null direction into another. This is made precise in the next two sections.</p>
 <h2 id="the-minimal-left-ideal-and-the-one-particle-module">The Minimal Left Ideal and the One-Particle Module</h2>
 <p>A left ideal of $\mathbb{B}$ is a linear subspace $\mathcal{I}$ with $\mathbb{B}\mathcal{I}\subseteq\mathcal{I}$. For an idempotent $\tilde P$ the set $\mathbb{B}\tilde P$ is always a left ideal, and the classification above implies:</p>
@@ -302,7 +302,7 @@ with $\tilde\Pi_1+\tilde\Pi_2 = e_0$, $\tilde\Pi_1\tilde\Pi_2=0$, and $(-1)^F = 
 </tr>
 <tr>
 <td>$N(\tilde Q)=\tilde Q\bar{\tilde Q}=\sum_\mu Q_\mu^2=\det\Phi(\tilde Q)$</td>
-<td>Norm form</td>
+<td>Biquaternion norm</td>
 </tr>
 <tr>
 <td>$\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$, $\mathrm{Tr}(e_0)=2$</td>

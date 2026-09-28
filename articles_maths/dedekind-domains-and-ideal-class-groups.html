@@ -72,15 +72,15 @@ $$</p>
 <p>and $2, 3, 1+\sqrt{-5}, 1-\sqrt{-5}$ are all irreducible and pairwise non-associate. The ideal theory of this ring is worked out below.</p>
 <p><strong>Example.</strong> Not every Noetherian domain of dimension one is Dedekind: the ring $R = k[t^2, t^3]$ has dimension one, since it is integral over the polynomial ring $k[t^2]$ and dimension is preserved by integral extensions, but it is not integrally closed. The element $t$ lies in $\operatorname{Frac}(R) = k(t)$ and is integral over $R$, being a root of $x^2 - t^2$ with $t^2 \in R$, yet $t \notin R$. The failure is precisely the failure of (D2), and it is what makes the ideal theory of $k[t^2,t^3]$ more complicated than that of $k[t]$.</p>
 <p><strong>Proposition.</strong> In a Dedekind domain the prime ideals are the zero ideal and the nonzero maximal ideals; there are no other primes, and no nonzero prime is contained in another.</p>
-<p><strong>Proof.</strong> Dimension one says exactly that a nonzero prime is maximal, and a maximal ideal has height one in a domain of dimension one. $\square$</p>
+<p><strong>Proof.</strong> Dimension one says exactly that a nonzero prime is maximal, and a maximal ideal has height one in a domain of dimension one.</p>
 <h3 id="local-structure">Local Structure</h3>
 <p>The local study of a Dedekind domain is completely explicit, and it avoids the theory of valuations, which is developed separately.</p>
 <p><strong>Definition.</strong> A <strong>discrete valuation ring</strong> is a local principal ideal domain that is not a field. Its unique maximal ideal is principal, say $(\pi)$, and every nonzero ideal is a power $(\pi^n)$ of it; the element $\pi$ is a <strong>uniformiser</strong>.</p>
 <p>The name is justified, where it is shown that a discrete valuation ring is exactly the valuation ring of a discrete valuation of its fraction field; that article is the natural place for the valuation-theoretic description, and here only the ideal structure is used.</p>
-<p><strong>Theorem (local structure).</strong> Let $R$ be a Dedekind domain and let $\mathfrak{m}$ be a nonzero prime ideal. Then the localisation $R_\mathfrak{m}$ is a discrete valuation ring, with maximal ideal $\mathfrak{m} R_\mathfrak{m}$. Conversely, a Noetherian domain of dimension one whose localisations at maximal ideals are all discrete valuation rings is a Dedekind domain.</p>
-<p><strong>Proof sketch.</strong> The localisation $R_\mathfrak{m}$ is a Noetherian local domain of dimension one, integrally closed (integral closedness is preserved by localisation), with maximal ideal $\mathfrak{m}R_\mathfrak{m}$. It remains to see that this maximal ideal is principal. Choose $0 \neq a \in \mathfrak{m}$; since $\mathfrak{m}$ is the only nonzero prime, the radical of $(a)$ is $\mathfrak{m}$, so $(a)$ is $\mathfrak{m}$-primary and $\mathfrak{m}^n \subseteq (a)$ for some $n$. Take $n$ minimal and $b \in \mathfrak{m}^{n-1} \setminus (a)$. Then $b/a \notin R$, while $(b/a)\mathfrak{m} \subseteq (1/a)\mathfrak{m}^n \subseteq R$, so $(b/a) \in (R : \mathfrak{m})$ and $(R:\mathfrak{m}) \supsetneq R$. The product $\mathfrak{m}(R:\mathfrak{m})$ is an ideal with $\mathfrak{m} \subseteq \mathfrak{m}(R:\mathfrak{m}) \subseteq R$, and since $\mathfrak{m}$ is maximal, either $\mathfrak{m}(R:\mathfrak{m}) = \mathfrak{m}$ or it equals $R$. The first alternative would put $(R:\mathfrak{m})$ inside $\{x \in K : x\mathfrak{m} \subseteq \mathfrak{m}\}$, whose elements are integral over $R$ by the determinant argument applied to the finitely generated $R$-submodule $\mathfrak{m}$, hence lie in $R$ by integral closedness; then $(R:\mathfrak{m}) = R$, a contradiction. So $\mathfrak{m}(R:\mathfrak{m}) = R$, the ideal $\mathfrak{m}$ is invertible, and an invertible ideal of a local ring is principal. Thus $\mathfrak{m}R_\mathfrak{m} = (\pi)$ and every ideal, being an $\mathfrak{m}$-primary power, is a power of $(\pi)$. The converse assembles the local conditions into (D1)–(D3). $\square$</p>
-<p><strong>Corollary.</strong> In a Dedekind domain, for each nonzero prime $\mathfrak{m}$ and each nonzero element $x \in K$ there is a unique integer $v_\mathfrak{m}(x) \in \mathbb{Z}$ with $x R_\mathfrak{m} = (\pi_\mathfrak{m})^{v_\mathfrak{m}(x)}$, where $\pi_\mathfrak{m}$ is a uniformiser, and $v_\mathfrak{m}$ is additive. The integer $v_\mathfrak{m}(x)$ is the <strong>order of vanishing</strong> of $x$ at $\mathfrak{m}$.</p>
-<p>The functions $v_\mathfrak{m}$ are valuations, and their systematic theory — independent valuations, extensions, the approximation theorem in valuation language — is not covered here. The present article uses only that each $v_\mathfrak{m}$ is an additive integer-valued function with $v_\mathfrak{m}(x) \geq 0$ exactly when $x \in R_\mathfrak{m}$.</p>
+<p><strong>Theorem (local structure).</strong> Let $R$ be a Dedekind domain and let $\mathrm{M}$ be a nonzero prime ideal. Then the localisation $R_\mathrm{M}$ is a discrete valuation ring, with maximal ideal $\mathrm{M} R_\mathrm{M}$. Conversely, a Noetherian domain of dimension one whose localisations at maximal ideals are all discrete valuation rings is a Dedekind domain.</p>
+<p><strong>Proof sketch.</strong> The localisation $R_\mathrm{M}$ is a Noetherian local domain of dimension one, integrally closed (integral closedness is preserved by localisation), with maximal ideal $\mathrm{M}R_\mathrm{M}$. It remains to see that this maximal ideal is principal. Choose $0 \neq a \in \mathrm{M}$; since $\mathrm{M}$ is the only nonzero prime, the radical of $(a)$ is $\mathrm{M}$, so $(a)$ is $\mathrm{M}$-primary and $\mathrm{M}^n \subseteq (a)$ for some $n$. Take $n$ minimal and $b \in \mathrm{M}^{n-1} \setminus (a)$. Then $b/a \notin R$, while $(b/a)\mathrm{M} \subseteq (1/a)\mathrm{M}^n \subseteq R$, so $(b/a) \in (R : \mathrm{M})$ and $(R:\mathrm{M}) \supsetneq R$. The product $\mathrm{M}(R:\mathrm{M})$ is an ideal with $\mathrm{M} \subseteq \mathrm{M}(R:\mathrm{M}) \subseteq R$, and since $\mathrm{M}$ is maximal, either $\mathrm{M}(R:\mathrm{M}) = \mathrm{M}$ or it equals $R$. The first alternative would put $(R:\mathrm{M})$ inside $\{x \in K : x\mathrm{M} \subseteq \mathrm{M}\}$, whose elements are integral over $R$ by the determinant argument applied to the finitely generated $R$-submodule $\mathrm{M}$, hence lie in $R$ by integral closedness; then $(R:\mathrm{M}) = R$, a contradiction. So $\mathrm{M}(R:\mathrm{M}) = R$, the ideal $\mathrm{M}$ is invertible, and an invertible ideal of a local ring is principal. Thus $\mathrm{M}R_\mathrm{M} = (\pi)$ and every ideal, being an $\mathrm{M}$-primary power, is a power of $(\pi)$. The converse assembles the local conditions into (D1)–(D3).</p>
+<p><strong>Corollary.</strong> In a Dedekind domain, for each nonzero prime $\mathrm{M}$ and each nonzero element $x \in K$ there is a unique integer $v_\mathrm{M}(x) \in \mathbb{Z}$ with $x R_\mathrm{M} = (\pi_\mathrm{M})^{v_\mathrm{M}(x)}$, where $\pi_\mathrm{M}$ is a uniformiser, and $v_\mathrm{M}$ is additive. The integer $v_\mathrm{M}(x)$ is the <strong>order of vanishing</strong> of $x$ at $\mathrm{M}$.</p>
+<p>The functions $v_\mathrm{M}$ are valuations, and their systematic theory — independent valuations, extensions, the approximation theorem in valuation language — is not covered here. The present article uses only that each $v_\mathrm{M}$ is an additive integer-valued function with $v_\mathrm{M}(x) \geq 0$ exactly when $x \in R_\mathrm{M}$.</p>
 <hr />
 <h2 id="unique-factorisation-of-ideals">Unique Factorisation of Ideals</h2>
 <h3 id="fractional-ideals">Fractional Ideals</h3>
@@ -96,43 +96,43 @@ $$</p>
 <p>$$
 I^{-1} = (R : I) = \{x \in K : x I \subseteq R\}.
 $$</p>
-<p><strong>Proposition.</strong> In an integral domain $R$, the invertible fractional ideals form an abelian group under multiplication, with identity $R$; an invertible integral ideal is principal, and the principal fractional ideals are invertible. A fractional ideal $I$ is invertible if and only if $I R_\mathfrak{m} = x_\mathfrak{m} R_\mathfrak{m}$ for some $x_\mathfrak{m} \in K^\times$ at every maximal ideal $\mathfrak{m}$.</p>
-<p><strong>Proof.</strong> The group law is inherited from multiplication of $K$-subsets, with inverse $(R:I)$; associativity and commutativity are immediate, and $IR = I$. An integral ideal $I$ that is invertible satisfies $I (R:I) = R$, so there are $a_i \in I$ and $x_i \in (R:I)$ with $\sum a_i x_i = 1$. For $b \in I$, one has $x_i b \in R$, so $b = \sum a_i (x_i b)$ lies in the ideal $(a_1, \ldots, a_n)$, and since each $a_i \in I$ this ideal is $I$; hence $I = (a_1, \ldots, a_n)$ is principal. Conversely a principal fractional ideal $xR$ has inverse $x^{-1}R$. The local criterion is the standard statement that an invertible ideal is locally principal; conversely, a locally principal ideal is invertible, $\sum_i y_i b_i = 1$ with $y_i$ local inverses providing the global inverse after a partition of unity of finitely many localisations. $\square$</p>
+<p><strong>Proposition.</strong> In an integral domain $R$, the invertible fractional ideals form an abelian group under multiplication, with identity $R$; an invertible integral ideal is principal, and the principal fractional ideals are invertible. A fractional ideal $I$ is invertible if and only if $I R_\mathrm{M} = x_\mathrm{M} R_\mathrm{M}$ for some $x_\mathrm{M} \in K^\times$ at every maximal ideal $\mathrm{M}$.</p>
+<p><strong>Proof.</strong> The group law is inherited from multiplication of $K$-subsets, with inverse $(R:I)$; associativity and commutativity are immediate, and $IR = I$. An integral ideal $I$ that is invertible satisfies $I (R:I) = R$, so there are $a_i \in I$ and $x_i \in (R:I)$ with $\sum a_i x_i = 1$. For $b \in I$, one has $x_i b \in R$, so $b = \sum a_i (x_i b)$ lies in the ideal $(a_1, \ldots, a_n)$, and since each $a_i \in I$ this ideal is $I$; hence $I = (a_1, \ldots, a_n)$ is principal. Conversely a principal fractional ideal $xR$ has inverse $x^{-1}R$. The local criterion is the standard statement that an invertible ideal is locally principal; conversely, a locally principal ideal is invertible, $\sum_i y_i b_i = 1$ with $y_i$ local inverses providing the global inverse after a partition of unity of finitely many localisations.</p>
 <h3 id="the-factorisation-theorem">The Factorisation Theorem</h3>
 <p><strong>Theorem (unique factorisation of ideals).</strong> Let $R$ be a Dedekind domain and let $0 \neq I \subsetneq R$ be a proper nonzero ideal. Then</p>
 <p>$$
-I = \mathfrak{p}_1^{e_1} \mathfrak{p}_2^{e_2} \cdots \mathfrak{p}_r^{e_r}
+I = \mathrm{P}_1^{e_1} \mathrm{P}_2^{e_2} \cdots \mathrm{P}_r^{e_r}
 $$</p>
-<p>with $\mathfrak{p}_i$ distinct nonzero prime ideals and $e_i \geq 1$, and the representation is unique up to the order of the factors. Equivalently, every nonzero fractional ideal is a product $\prod_{\mathfrak{m}} \mathfrak{m}^{v_\mathfrak{m}}$ with $v_\mathfrak{m} \in \mathbb{Z}$ and $v_\mathfrak{m} = 0$ for all but finitely many $\mathfrak{m}$.</p>
-<p><strong>Proof.</strong> Existence: since $R$ is Noetherian of dimension one, the primary decomposition of $I$ is an intersection of $\mathfrak{m}$-primary ideals for the finitely many maximal ideals $\mathfrak{m}$ containing $I$. In a Dedekind domain an $\mathfrak{m}$-primary ideal is a power of $\mathfrak{m}$: by the local structure theorem the ideal becomes $(\pi^{n})$ in $R_\mathfrak{m}$, and contracting gives $\mathfrak{m}^n$. Taking the product of the primary components, which are pairwise comaximal, gives $I$ as a product of prime powers, since the primary components lie in distinct maximal ideals.</p>
-<p>Uniqueness: if $I = \prod \mathfrak{p}_i^{e_i} = \prod \mathfrak{p}_i^{f_i}$, localise at $\mathfrak{p}_j$. Localisation commutes with products of ideals, so $(I)_{\mathfrak{p}_j} = \mathfrak{p}_j^{e_j} R_{\mathfrak{p}_j} = \mathfrak{p}_j^{f_j} R_{\mathfrak{p}_j}$; since $\mathfrak{p}_j R_{\mathfrak{p}_j} = (\pi_j)$ with $\pi_j$ a non-unit and non-zero-divisor, comparing powers in the discrete valuation ring gives $e_j = f_j$. $\square$</p>
+<p>with $\mathrm{P}_i$ distinct nonzero prime ideals and $e_i \geq 1$, and the representation is unique up to the order of the factors. Equivalently, every nonzero fractional ideal is a product $\prod_{\mathrm{M}} \mathrm{M}^{v_\mathrm{M}}$ with $v_\mathrm{M} \in \mathbb{Z}$ and $v_\mathrm{M} = 0$ for all but finitely many $\mathrm{M}$.</p>
+<p><strong>Proof.</strong> Existence: since $R$ is Noetherian of dimension one, the primary decomposition of $I$ is an intersection of $\mathrm{M}$-primary ideals for the finitely many maximal ideals $\mathrm{M}$ containing $I$. In a Dedekind domain an $\mathrm{M}$-primary ideal is a power of $\mathrm{M}$: by the local structure theorem the ideal becomes $(\pi^{n})$ in $R_\mathrm{M}$, and contracting gives $\mathrm{M}^n$. Taking the product of the primary components, which are pairwise comaximal, gives $I$ as a product of prime powers, since the primary components lie in distinct maximal ideals.</p>
+<p>Uniqueness: if $I = \prod \mathrm{P}_i^{e_i} = \prod \mathrm{P}_i^{f_i}$, localise at $\mathrm{P}_j$. Localisation commutes with products of ideals, so $(I)_{\mathrm{P}_j} = \mathrm{P}_j^{e_j} R_{\mathrm{P}_j} = \mathrm{P}_j^{f_j} R_{\mathrm{P}_j}$; since $\mathrm{P}_j R_{\mathrm{P}_j} = (\pi_j)$ with $\pi_j$ a non-unit and non-zero-divisor, comparing powers in the discrete valuation ring gives $e_j = f_j$.</p>
 <p><strong>Corollary.</strong> The nonzero fractional ideals of a Dedekind domain form a free abelian group on the set of nonzero prime ideals: every fractional ideal is uniquely</p>
 <p>$$
-I = \prod_{\mathfrak{m}} \mathfrak{m}^{v_\mathfrak{m}(I)}, \qquad v_\mathfrak{m}(I) \in \mathbb{Z},
+I = \prod_{\mathrm{M}} \mathrm{M}^{v_\mathrm{M}(I)}, \qquad v_\mathrm{M}(I) \in \mathbb{Z},
 $$</p>
 <p>the product being finite. In particular every nonzero fractional ideal is invertible, and</p>
 <p>$$
-I \subseteq J \iff v_\mathfrak{m}(I) \geq v_\mathfrak{m}(J) \ \text{ for every nonzero prime } \mathfrak{m}.
+I \subseteq J \iff v_\mathrm{M}(I) \geq v_\mathrm{M}(J) \ \text{ for every nonzero prime } \mathrm{M}.
 $$</p>
-<p><strong>Proof.</strong> Write a fractional ideal as $x^{-1} I_0$ with $x \in R$ and $I_0 = I \cap R$ an integral ideal, and apply the theorem to $I_0$ and to $(x)$. Invertibility follows from the description, the inverse of $\mathfrak{m}$ being the fractional ideal with $v_{\mathfrak{m}'} = -\delta_{\mathfrak{m},\mathfrak{m}'}$. The containment criterion follows by localising. $\square$</p>
+<p><strong>Proof.</strong> Write a fractional ideal as $x^{-1} I_0$ with $x \in R$ and $I_0 = I \cap R$ an integral ideal, and apply the theorem to $I_0$ and to $(x)$. Invertibility follows from the description, the inverse of $\mathrm{M}$ being the fractional ideal with $v_{\mathrm{M}'} = -\delta_{\mathrm{M},\mathrm{M}'}$. The containment criterion follows by localising.</p>
 <p><strong>Corollary (arithmetic of ideals).</strong> For nonzero ideals $I, J$ of a Dedekind domain,</p>
 <p>$$
-I J = \prod_{\mathfrak{m}} \mathfrak{m}^{v_\mathfrak{m}(I)+v_\mathfrak{m}(J)}, \qquad
-I \cap J = \prod_{\mathfrak{m}} \mathfrak{m}^{\max(v_\mathfrak{m}(I), v_\mathfrak{m}(J))}, \qquad
-I + J = \prod_{\mathfrak{m}} \mathfrak{m}^{\min(v_\mathfrak{m}(I), v_\mathfrak{m}(J))}.
+I J = \prod_{\mathrm{M}} \mathrm{M}^{v_\mathrm{M}(I)+v_\mathrm{M}(J)}, \qquad
+I \cap J = \prod_{\mathrm{M}} \mathrm{M}^{\max(v_\mathrm{M}(I), v_\mathrm{M}(J))}, \qquad
+I + J = \prod_{\mathrm{M}} \mathrm{M}^{\min(v_\mathrm{M}(I), v_\mathrm{M}(J))}.
 $$</p>
 <p>Thus the ideal lattice of a Dedekind domain is the lattice of divisors of an integer, with intersection, sum and product playing the roles of least common multiple, greatest common divisor and product; and $I \subseteq J$ if and only if $J$ divides $I$.</p>
-<p><strong>Proof.</strong> For the sum and intersection, localise at each maximal ideal, where the identity is the corresponding identity for powers of a principal generator in a discrete valuation ring. $\square$</p>
+<p><strong>Proof.</strong> For the sum and intersection, localise at each maximal ideal, where the identity is the corresponding identity for powers of a principal generator in a discrete valuation ring.</p>
 <h3 id="the-chinese-remainder-theorem">The Chinese Remainder Theorem</h3>
-<p><strong>Theorem (Chinese remainder).</strong> Let $R$ be a Dedekind domain and let $\mathfrak{a}_1, \ldots, \mathfrak{a}_r$ be nonzero ideals that are pairwise comaximal, meaning $\mathfrak{a}_i + \mathfrak{a}_j = R$ for $i \neq j$. Then the natural map</p>
+<p><strong>Theorem (Chinese remainder).</strong> Let $R$ be a Dedekind domain and let $\mathrm{A}_1, \ldots, \mathrm{A}_r$ be nonzero ideals that are pairwise comaximal, meaning $\mathrm{A}_i + \mathrm{A}_j = R$ for $i \neq j$. Then the natural map</p>
 <p>$$
-R \longrightarrow R/\mathfrak{a}_1 \times \cdots \times R/\mathfrak{a}_r
+R \longrightarrow R/\mathrm{A}_1 \times \cdots \times R/\mathrm{A}_r
 $$</p>
-<p>is surjective with kernel $\mathfrak{a}_1 \cap \cdots \cap \mathfrak{a}_r = \mathfrak{a}_1 \cdots \mathfrak{a}_r$, hence induces an isomorphism</p>
+<p>is surjective with kernel $\mathrm{A}_1 \cap \cdots \cap \mathrm{A}_r = \mathrm{A}_1 \cdots \mathrm{A}_r$, hence induces an isomorphism</p>
 <p>$$
-R/(\mathfrak{a}_1 \cdots \mathfrak{a}_r) \;\cong\; R/\mathfrak{a}_1 \times \cdots \times R/\mathfrak{a}_r .
+R/(\mathrm{A}_1 \cdots \mathrm{A}_r) \;\cong\; R/\mathrm{A}_1 \times \cdots \times R/\mathrm{A}_r .
 $$</p>
-<p><strong>Proof.</strong> The kernel is the intersection, which equals the product for pairwise comaximal ideals. Surjectivity is the standard Chinese remainder argument: for $r = 2$, comaximality gives $a_1 + a_2 = 1$ with $a_i \in \mathfrak{a}_i$, and the element $x = b_1 a_2 + b_2 a_1$ maps to $(b_1, b_2)$ modulo $(\mathfrak{a}_1,\mathfrak{a}_2)$ since $a_2 \equiv 1$ mod $\mathfrak{a}_1$ and $a_1 \equiv 1$ mod $\mathfrak{a}_2$; induction gives the general case. $\square$</p>
+<p><strong>Proof.</strong> The kernel is the intersection, which equals the product for pairwise comaximal ideals. Surjectivity is the standard Chinese remainder argument: for $r = 2$, comaximality gives $a_1 + a_2 = 1$ with $a_i \in \mathrm{A}_i$, and the element $x = b_1 a_2 + b_2 a_1$ maps to $(b_1, b_2)$ modulo $(\mathrm{A}_1,\mathrm{A}_2)$ since $a_2 \equiv 1$ mod $\mathrm{A}_1$ and $a_1 \equiv 1$ mod $\mathrm{A}_2$; induction gives the general case.</p>
 <p>The Chinese remainder theorem is what allows a congruence modulo an ideal to be solved prime by prime, and it is the arithmetic engine of class field theory.</p>
 <hr />
 <h2 id="the-ideal-class-group">The Ideal Class Group</h2>
@@ -147,14 +147,14 @@ $$</p>
 \operatorname{Cl}(R) = 0 \iff R \text{ is a principal ideal domain} \iff R \text{ is a unique factorisation domain}.
 $$</p>
 <p><strong>Proof.</strong> The group law is induced by multiplication of fractional ideals, which is associative and commutative with identity $R$ and inverses from the corollary above; the quotient by principal ideals is therefore a group, and $[I]=[J]$ exactly when $IJ^{-1}$ is principal, i.e. $I = xJ$.</p>
-<p>For the equivalences: $\operatorname{Cl}(R)=0$ says every fractional ideal, in particular every integral ideal, is principal, which is the definition of a principal ideal domain. Over an integral domain, a principal ideal domain is a unique factorisation domain; conversely a Dedekind domain that is a unique factorisation domain is a principal ideal domain, because every nonzero ideal factors into primes and every prime ideal contains an irreducible element, which generates a prime ideal by unique factorisation, so each prime is principal and hence so is every ideal. $\square$</p>
+<p>For the equivalences: $\operatorname{Cl}(R)=0$ says every fractional ideal, in particular every integral ideal, is principal, which is the definition of a principal ideal domain. Over an integral domain, a principal ideal domain is a unique factorisation domain; conversely a Dedekind domain that is a unique factorisation domain is a principal ideal domain, because every nonzero ideal factors into primes and every prime ideal contains an irreducible element, which generates a prime ideal by unique factorisation, so each prime is principal and hence so is every ideal.</p>
 <p>Thus the class group is exactly the obstruction to unique factorisation. When it is trivial one recovers unique factorisation of elements; when it is nontrivial, the ideal factorisation of the elements gives the correction.</p>
 <p><strong>Theorem (Dedekind's theorem on the class group of a number field).</strong> Let $K$ be a number field of degree $n = [K:\mathbb{Q}]$ and let $\mathcal{O}_K$ be its ring of integers, which is a Dedekind domain. Then $\operatorname{Cl}(\mathcal{O}_K)$ is finite.</p>
 <p><strong>Proof sketch.</strong> The ring $\mathcal{O}_K$ embeds into $\mathbb{R}^{r_1} \times \mathbb{C}^{r_2}$ through its real and complex embeddings, and the image is a lattice; Minkowski's convex body theorem then produces, in every ideal class, an integral ideal of norm at most</p>
 <p>$$
 M_K = \left(\frac{4}{\pi}\right)^{r_2} \frac{n!}{n^n} \sqrt{\lvert d_K \rvert},
 $$</p>
-<p>the <strong>Minkowski bound</strong>, where $d_K$ is the discriminant. There are only finitely many ideals of norm at most $M_K$, since an ideal of norm $m$ contains $m$ and there are finitely many ideals containing a fixed nonzero element; representatives of the finitely many classes are therefore drawn from a finite set, and the class group is finite. The two ingredients used here are the lattice embedding and the volume estimate of Minkowski; both are statements about distance and measure, which the present Part does not yet have. The proof is therefore completed in Part II, where the Euclidean structure of $\mathbb{R}^{r_1} \times \mathbb{C}^{r_2}$ is available, and the algebraic construction of $\mathcal{O}_K$ itself is carried out; the statement above is recorded here as the arithmetic consequence of the factorisation theorem. $\square$</p>
+<p>the <strong>Minkowski bound</strong>, where $d_K$ is the discriminant. There are only finitely many ideals of norm at most $M_K$, since an ideal of norm $m$ contains $m$ and there are finitely many ideals containing a fixed nonzero element; representatives of the finitely many classes are therefore drawn from a finite set, and the class group is finite. The two ingredients used here are the lattice embedding and the volume estimate of Minkowski; both are statements about distance and measure, which the present Part does not yet have. The proof is therefore completed in Part II, where the Euclidean structure of $\mathbb{R}^{r_1} \times \mathbb{C}^{r_2}$ is available, and the algebraic construction of $\mathcal{O}_K$ itself is carried out; the statement above is recorded here as the arithmetic consequence of the factorisation theorem.</p>
 <p><strong>Remark (function fields).</strong> The same ideal theory governs the affine rings of algebraic curves: for a smooth affine algebraic curve over a field $k$, the ring of regular functions is a Dedekind doma, and its class group measures the obstruction to unique factorisation of functions. The projective completion of the curve, its divisor group and the degree-zero part of that group are developed in both, where the class group acquires a geometric meaning; nothing in the present article depends on that development.</p>
 <hr />
 <h2 id="computations">Computations</h2>
@@ -162,7 +162,7 @@ $$</p>
 <p><strong>Example.</strong> $\operatorname{Cl}(\mathbb{Z}) = 0$: every nonzero ideal is $(n)$.</p>
 <p><strong>Example.</strong> $\operatorname{Cl}(k[x]) = 0$: the polynomial ring over a field is a principal ideal domain.</p>
 <p><strong>Example.</strong> $\operatorname{Cl}(\mathbb{Z}[i]) = 0$. The Gaussian integers are Euclidean, hence a principal ideal domain. As a by-product, every prime $p \equiv 1 \pmod 4$ is a sum of two squares, and this is visible in the factorisation of the ideal $(p)$: since $-1$ is a square modulo $p$ in that case, the polynomial $x^2+1$ splits modulo $p$, the ideal $(p)$ splits as a product of two distinct primes, and each of these is principal, generated by an element $a+bi$ with $a^2+b^2 = p$.</p>
-<h3 id="the-class-group-of-math239">The Class Group of $\mathbb{Z}[\sqrt{-5}]$</h3>
+<h3 id="the-class-group-of-math230">The Class Group of $\mathbb{Z}[\sqrt{-5}]$</h3>
 <p>Let $R = \mathbb{Z}[\sqrt{-5}]$, $K = \mathbb{Q}(\sqrt{-5})$, and let</p>
 <p>$$
 P = (2, 1 + \sqrt{-5})
@@ -174,13 +174,13 @@ $$</p>
 <p>$$
 P^2 = (4,\ 2(1+\sqrt{-5}),\ (1+\sqrt{-5})^2) = (4,\ 2+2\sqrt{-5},\ -4+2\sqrt{-5}),
 $$</p>
-<p>using $(1+\sqrt{-5})^2 = 1 + 2\sqrt{-5} - 5 = -4 + 2\sqrt{-5}$. Every generator is divisible by $2$, so $P^2 \subseteq (2)$. Conversely $2 \in P^2$: the ideal contains $4$ and $-4+2\sqrt{-5} = 2(-2+\sqrt{-5})$, and also $2(1+\sqrt{-5})$; since $(1+\sqrt{-5}) - (-2+\sqrt{-5}) = 3$ and $2 \in P^2$, the ideal $P^2$ contains $2$ and $3$ up to the factor $2$: explicitly $(1+\sqrt{-5}) + 2 = 3+\sqrt{-5}$ and $(-4+2\sqrt{-5}) + 2(1+\sqrt{-5}) = 2 - 2\sqrt{-5} + \ldots$, the computation reduces to $2 = 2(1+\sqrt{-5}) - (-4+2\sqrt{-5}) - 4 + 2\cdot 2$, all terms in $P^2$. Hence $P^2 = (2)$. $\square$</p>
+<p>using $(1+\sqrt{-5})^2 = 1 + 2\sqrt{-5} - 5 = -4 + 2\sqrt{-5}$. Every generator is divisible by $2$, so $P^2 \subseteq (2)$. Conversely $2 \in P^2$: the ideal contains $4$ and $-4+2\sqrt{-5} = 2(-2+\sqrt{-5})$, and also $2(1+\sqrt{-5})$; since $(1+\sqrt{-5}) - (-2+\sqrt{-5}) = 3$ and $2 \in P^2$, the ideal $P^2$ contains $2$ and $3$ up to the factor $2$: explicitly $(1+\sqrt{-5}) + 2 = 3+\sqrt{-5}$ and $(-4+2\sqrt{-5}) + 2(1+\sqrt{-5}) = 2 - 2\sqrt{-5} + \ldots$, the computation reduces to $2 = 2(1+\sqrt{-5}) - (-4+2\sqrt{-5}) - 4 + 2\cdot 2$, all terms in $P^2$. Hence $P^2 = (2)$.</p>
 <p><strong>Theorem.</strong> $\operatorname{Cl}(\mathbb{Z}[\sqrt{-5}]) \cong \mathbb{Z}/2\mathbb{Z}$, so the class number is $2$.</p>
 <p><strong>Proof.</strong> The ideal $(3)$ splits: with $R = (3, 1+\sqrt{-5})$ and its conjugate $R' = (3, 1-\sqrt{-5})$, one computes $R R' = (3)$ and $R \neq R'$, so $(3)$ is not prime. Similarly $(1+\sqrt{-5}) = P R$ and $(1-\sqrt{-5}) = P R'$, so the two factorisations of $6$ become the single ideal factorisation</p>
 <p>$$
 (6) = (2)(3) = P^2 R R' = (P R)(P R') = (1+\sqrt{-5})(1-\sqrt{-5}).
 $$</p>
-<p>The class $[P]$ has order $2$ since $P^2 = (2)$ is principal and $P$ is not principal. To see that there are no other classes, one uses the Minkowski bound: here $n = 2$, $r_1 = 0$, $r_2 = 1$, $d_K = -20$, so $M_K = (4/\pi)\cdot (2!/4)\sqrt{20} = (4/\pi)\cdot \tfrac12 \cdot 2\sqrt5 = 4\sqrt5/\pi \approx 2.85$. Every ideal class contains an integral ideal of norm at most $2.85$, hence of norm $1$ or $2$; the only ideals of norm $2$ are $P$ and $R$ itself, and the ideals of norm $1$ are $R$ and principal. Hence every class is $[R]$ or $[P]$, and $\operatorname{Cl} \cong \mathbb{Z}/2\mathbb{Z}$. $\square$</p>
+<p>The class $[P]$ has order $2$ since $P^2 = (2)$ is principal and $P$ is not principal. To see that there are no other classes, one uses the Minkowski bound: here $n = 2$, $r_1 = 0$, $r_2 = 1$, $d_K = -20$, so $M_K = (4/\pi)\cdot (2!/4)\sqrt{20} = (4/\pi)\cdot \tfrac12 \cdot 2\sqrt5 = 4\sqrt5/\pi \approx 2.85$. Every ideal class contains an integral ideal of norm at most $2.85$, hence of norm $1$ or $2$; the only ideals of norm $2$ are $P$ and $R$ itself, and the ideals of norm $1$ are $R$ and principal. Hence every class is $[R]$ or $[P]$, and $\operatorname{Cl} \cong \mathbb{Z}/2\mathbb{Z}$.</p>
 <p>The same computation classifies the behaviour of the primes: $2$ ramifies, $3$ splits, and an odd prime $p$ splits exactly when $-5$ is a quadratic residue modulo $p$; this is the first instance of the reciprocity laws developed.</p>
 <h3 id="class-numbers-of-small-quadratic-fields">Class Numbers of Small Quadratic Fields</h3>
 <p>For the imaginary quadratic field $\mathbb{Q}(\sqrt{-d})$ with $d > 0$ squarefree, the class number is computed from the arithmetic of the ideals of the ring of integers, and the classical tables record the outcome. The first values are as follows.</p>
@@ -259,23 +259,23 @@ $$</p>
 <td>Dedekind domain; $K = \operatorname{Frac}(R)$ its fraction field</td>
 </tr>
 <tr>
-<td>$\mathfrak{p}, \mathfrak{m}$</td>
+<td>$\mathrm{P}, \mathrm{M}$</td>
 <td>Nonzero prime (maximal) ideals</td>
 </tr>
 <tr>
-<td>$R_\mathfrak{m}$</td>
-<td>Localisation at $\mathfrak{m}$, a discrete valuation ring</td>
+<td>$R_\mathrm{M}$</td>
+<td>Localisation at $\mathrm{M}$, a discrete valuation ring</td>
 </tr>
 <tr>
-<td>$\pi_\mathfrak{m}$</td>
-<td>Uniformiser of $R_\mathfrak{m}$</td>
+<td>$\pi_\mathrm{M}$</td>
+<td>Uniformiser of $R_\mathrm{M}$</td>
 </tr>
 <tr>
-<td>$v_\mathfrak{m}(x)$</td>
-<td>Order of $x \in K^\times$ at $\mathfrak{m}$</td>
+<td>$v_\mathrm{M}(x)$</td>
+<td>Order of $x \in K^\times$ at $\mathrm{M}$</td>
 </tr>
 <tr>
-<td>$\mathfrak{p}^{e}$</td>
+<td>$\mathrm{P}^{e}$</td>
 <td>Prime power; a primary ideal of a Dedekind domain</td>
 </tr>
 <tr>

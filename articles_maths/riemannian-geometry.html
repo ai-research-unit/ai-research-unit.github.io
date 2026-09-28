@@ -63,7 +63,7 @@ g'_{kl} = \sum_{ij} g_{ij}\,\frac{\partial x^i}{\partial y^k}\frac{\partial x^j}
 $$</p>
 <p>under a change of coordinates.</p>
 <p><strong>Theorem.</strong> Every smooth manifold carries a Riemannian metric, and the metrics on a fixed manifold form a convex set: if $g_1$ and $g_2$ are metrics and $t \in [0, 1]$ then $(1-t)g_1 + tg_2$ is a metric.</p>
-<p><strong>Proof.</strong> Existence is the partition-of-unity construction of <em>Smooth Manifolds and Differential Geometry</em>; convexity is immediate from the positivity and symmetry of the linear combination. $\square$</p>
+<p><strong>Proof.</strong> Existence is the partition-of-unity construction of <em>Smooth Manifolds and Differential Geometry</em>; convexity is immediate from the positivity and symmetry of the linear combination.</p>
 <p><strong>Definition.</strong> Let $(M, g)$ and $(N, h)$ be Riemannian manifolds. A smooth map $F : M \to N$ is a <strong>local isometry</strong> if $F^*h = g$, that is if</p>
 <p>$$
 h_{F(p)}\bigl(dF_p(v), dF_p(w)\bigr) = g_p(v, w)
@@ -71,7 +71,7 @@ $$</p>
 <p>for all $p$ and all $v, w \in T_pM$; it is an <strong>isometry</strong> if in addition it is a diffeomorphism. The isometries of $(M, g)$ form a group $\operatorname{Isom}(M, g)$ under composition, and a local isometry is an isometry onto its image.</p>
 <p><strong>Definition.</strong> $(M, g)$ and $(N, h)$ are <strong>isometric</strong> if there is an isometry between them, and <strong>locally isometric</strong> if every point of $M$ has a neighbourhood isometric to an open set of $N$. A <strong>flat</strong> manifold is one locally isometric to Euclidean space.</p>
 <p><strong>Theorem.</strong> A local isometry preserves the Levi-Civita connection, the curvature tensor, the geodesics and the length of every curve; an isometry preserves the distance, $d_h(F(p), F(q)) = d_g(p, q)$.</p>
-<p><strong>Proof.</strong> The pullback of the Levi-Civita connection of $h$ along a local isometry is a metric and torsion-free connection on $M$, hence equals the Levi-Civita connection of $g$ by uniqueness; the curvature is natural for the connection, and the geodesic equation is therefore preserved; length is preserved by the definition of the pullback metric. $\square$</p>
+<p><strong>Proof.</strong> The pullback of the Levi-Civita connection of $h$ along a local isometry is a metric and torsion-free connection on $M$, hence equals the Levi-Civita connection of $g$ by uniqueness; the curvature is natural for the connection, and the geodesic equation is therefore preserved; length is preserved by the definition of the pullback metric.</p>
 <h3 id="the-riemannian-distance">The Riemannian Distance</h3>
 <p><strong>Definition.</strong> The <strong>length</strong> of a piecewise smooth curve $\gamma : [a, b] \to M$ is</p>
 <p>$$
@@ -82,7 +82,7 @@ $$</p>
 d_g(p, q) = \inf\{ L_g(\gamma) : \gamma \text{ piecewise smooth from } p \text{ to } q \}.
 $$</p>
 <p><strong>Theorem.</strong> The distance $d_g$ is a metric, its metric topology is the topology of $M$, and a distance-preserving bijection $M \to M$ is automatically smooth and hence an isometry.</p>
-<p><strong>Proof sketch.</strong> The metric axioms and the topology statement are as in <em>Smooth Manifolds and Differential Geometry</em>. For the second statement, a distance-preserving map preserves the length of every curve, so it preserves the geodesics and the exponential map; since $\exp_p$ is a local diffeomorphism, the map is smooth in normal coordinates. $\square$</p>
+<p><strong>Proof sketch.</strong> The metric axioms and the topology statement are as in <em>Smooth Manifolds and Differential Geometry</em>. For the second statement, a distance-preserving map preserves the length of every curve, so it preserves the geodesics and the exponential map; since $\exp_p$ is a local diffeomorphism, the map is smooth in normal coordinates.</p>
 <p><strong>Definition.</strong> The <strong>diameter</strong> of a Riemannian manifold is $\operatorname{diam}(M, g) = \sup_{p,q} d_g(p, q) \in [0, \infty]$, and the <strong>volume</strong> is the integral $\int_M \mathrm{vol}_g$ of the volume form when $M$ is oriented and the integral converges.</p>
 <h2 id="connections-and-curvature">Connections and Curvature</h2>
 <h3 id="the-levi-civita-connection">The Levi-Civita Connection</h3>
@@ -91,7 +91,7 @@ $$</p>
 <p>$$
 2\,g(\nabla_XY, Z) = X\,g(Y, Z) + Y\,g(Z, X) - Z\,g(X, Y) - g(X, [Y, Z]) + g(Y, [Z, X]) + g(Z, [X, Y]).
 $$</p>
-<p><strong>Proof.</strong> The right-hand side is $C^\infty(M)$-linear in $X, Y, Z$, hence a tensor, and nondegeneracy of $g$ determines $\nabla_XY$; the two properties follow by substitution, the metricity from the first three terms and the torsion-freeness from the last three. $\square$</p>
+<p><strong>Proof.</strong> The right-hand side is $C^\infty(M)$-linear in $X, Y, Z$, hence a tensor, and nondegeneracy of $g$ determines $\nabla_XY$; the two properties follow by substitution, the metricity from the first three terms and the torsion-freeness from the last three.</p>
 <p><strong>Definition.</strong> In a coordinate frame the connection is described by the <strong>Christoffel symbols</strong></p>
 <p>$$
 \Gamma^k_{ij} = \frac{1}{2}\sum_l g^{kl}\bigl(\partial_{x^i}g_{jl} + \partial_{x^j}g_{il} - \partial_{x^l}g_{ij}\bigr),
@@ -109,7 +109,7 @@ $$</p>
 <p><strong>(b)</strong> $R(X, Y, Z, W) = R(Z, W, X, Y)$.</p>
 <p><strong>(c)</strong> $R(X, Y, Z, W) + R(Y, Z, X, W) + R(Z, X, Y, W) = 0$ (first Bianchi identity).</p>
 <p><strong>(d)</strong> $(\nabla_XR)(Y, Z) + (\nabla_YR)(Z, X) + (\nabla_ZR)(X, Y) = 0$ as operators, the second Bianchi identity.</p>
-<p><strong>Proof.</strong> Antisymmetry is the definition and the metricity; the symmetry in the pairs follows by writing the first Bianchi identity in the $(0,4)$ form and combining the permutations; the first Bianchi identity is the cyclic sum of $\nabla_X\nabla_YZ$ in which the bracket terms cancel by the Jacobi identity of the Lie bracket; the second is $d^\nabla\mathcal{R} = 0$, the Bianchi identity stated as standard. $\square$</p>
+<p><strong>Proof.</strong> Antisymmetry is the definition and the metricity; the symmetry in the pairs follows by writing the first Bianchi identity in the $(0,4)$ form and combining the permutations; the first Bianchi identity is the cyclic sum of $\nabla_X\nabla_YZ$ in which the bracket terms cancel by the Jacobi identity of the Lie bracket; the second is $d^\nabla\mathcal{R} = 0$, the Bianchi identity stated as standard.</p>
 <p><strong>Definition.</strong> The <strong>curvature operator</strong> is $R(X, Y)$ as an endomorphism of $TM$; the tensor has $\frac{1}{12}n^2(n^2-1)$ independent components, the number left by the symmetries.</p>
 <h3 id="the-three-curvatures">The Three Curvatures</h3>
 <p><strong>Definition.</strong> For a two-plane $\sigma \subseteq T_pM$ with basis $v, w$, the <strong>sectional curvature</strong> is</p>
@@ -122,9 +122,9 @@ $$</p>
 <p>$$
 dS = 2\sum_i (\nabla_{e_i}\operatorname{Ric})(e_i, \cdot\,).
 $$</p>
-<p>If the curvature is isotropic with value $K$ at each point then $\operatorname{Ric} = (n-1)Kg$ and $S = n(n-1)K$, so the two sides are $n(n-1)\,dK$ and $2(n-1)\,dK$; comparing them gives $(n-1)(n-2)\,dK = 0$, so a connected manifold of dimension $n \geq 3$ has constant $K$. $\square$</p>
+<p>If the curvature is isotropic with value $K$ at each point then $\operatorname{Ric} = (n-1)Kg$ and $S = n(n-1)K$, so the two sides are $n(n-1)\,dK$ and $2(n-1)\,dK$; comparing them gives $(n-1)(n-2)\,dK = 0$, so a connected manifold of dimension $n \geq 3$ has constant $K$.</p>
 <p><strong>Proposition.</strong> In dimension two the sectional curvature is a function $K : M \to \mathbb{R}$, the Gaussian curvature, and the curvature tensor is determined by it; in dimension three the curvature is determined by the Ricci tensor.</p>
-<p><strong>Proof.</strong> The symmetries of $R$ leave one independent component in dimension two and the Ricci tensor in dimension three; in dimension two the single value is $K$ itself, and in dimension three the map from curvature to Ricci is injective, since the Weyl tensor vanishes. $\square$</p>
+<p><strong>Proof.</strong> The symmetries of $R$ leave one independent component in dimension two and the Ricci tensor in dimension three; in dimension two the single value is $K$ itself, and in dimension three the map from curvature to Ricci is injective, since the Weyl tensor vanishes.</p>
 <h2 id="geodesics-the-exponential-map-and-completeness">Geodesics, the Exponential Map and Completeness</h2>
 <h3 id="geodesics-and-the-exponential-map">Geodesics and the Exponential Map</h3>
 <p><strong>Definition.</strong> A <strong>geodesic</strong> is a curve with $\nabla_{\gamma'}\gamma' = 0$; in a chart it satisfies $\ddot x^k + \sum_{ij}\Gamma^k_{ij}\dot x^i\dot x^j = 0$. A geodesic is <strong>complete</strong> if it is defined for all real $t$. The <strong>exponential map</strong> at $p$ is $\exp_p(v) = \gamma_v(1)$ for the maximal geodesic with $\gamma_v(0) = p$, $\gamma_v'(0) = v$, and the manifold is <strong>geodesically complete</strong> if $\exp_p$ is defined on all of $T_pM$ for one, hence every, $p$.</p>
@@ -133,7 +133,7 @@ $$</p>
 <p>$$
 \frac{d}{dt}g(\gamma', \gamma') = 2g(\nabla_{\gamma'}\gamma', \gamma') = 0 .
 $$</p>
-<p>The local minimising property is the Gauss lemma and the first-variation computation of <em>Curvature and Geodesics</em>. $\square$</p>
+<p>The local minimising property is the Gauss lemma and the first-variation computation of <em>Curvature and Geodesics</em>.</p>
 <p><strong>Definition.</strong> The <strong>normal coordinates</strong> at $p$ are the coordinates $x^i$ defined by $x = \exp_p(v)$, $x^i = v^i$ for an orthonormal basis $e_i$ of $T_pM$. In them $g_{ij}(p) = \delta_{ij}$, $\partial_k g_{ij}(p) = 0$, and</p>
 <p>$$
 g_{ij}(x) = \delta_{ij} - \frac{1}{3}\sum_{k,l} R_{ikjl}(p)\,x^kx^l + O(|x|^3),
@@ -146,10 +146,10 @@ $$</p>
 <p><strong>(b)</strong> $M$ is geodesically complete;</p>
 <p><strong>(c)</strong> every closed bounded subset of $M$ is compact;</p>
 <p>and any of them implies that every pair of points is joined by a minimising geodesic.</p>
-<p><strong>Proof sketch.</strong> Completeness implies geodesic completeness because a geodesic that existed only up to a finite time $\tau$ would make the points $\gamma(t_n)$ a Cauchy sequence with no limit in $M$; geodesic completeness gives finite compactness because a bounded set is contained in a geodesic ball $\exp_p(\overline{B}(0, r))$, whose image is compact; finite compactness gives completeness because a Cauchy sequence is bounded and has a convergent subsequence; and if the distance from $p$ to $q$ is $d$, a minimising sequence of curves gives directions whose exponential images converge, and the limit is a minimising geodesic. The argument uses the local compactness of the exponential map and the limit of a sequence, which belongs to Part III. $\square$</p>
+<p><strong>Proof sketch.</strong> Completeness implies geodesic completeness because a geodesic that existed only up to a finite time $\tau$ would make the points $\gamma(t_n)$ a Cauchy sequence with no limit in $M$; geodesic completeness gives finite compactness because a bounded set is contained in a geodesic ball $\exp_p(\overline{B}(0, r))$, whose image is compact; finite compactness gives completeness because a Cauchy sequence is bounded and has a convergent subsequence; and if the distance from $p$ to $q$ is $d$, a minimising sequence of curves gives directions whose exponential images converge, and the limit is a minimising geodesic. The argument uses the local compactness of the exponential map and the limit of a sequence, which belongs to Part III.</p>
 <p><strong>Definition.</strong> The <strong>cut locus</strong> of $p$ is the set of points $\exp_p(v)$ such that the geodesic $t \mapsto \exp_p(tv)$ is minimising on $[0, 1]$ but not on $[0, 1 + \epsilon]$. The <strong>injectivity radius</strong> at $p$ is the largest $r$ with $\exp_p$ injective on the ball of radius $r$ in $T_pM$; the <strong>injectivity radius</strong> of $M$ is the infimum over $p$.</p>
 <p><strong>Theorem.</strong> The exponential map at $p$ is a diffeomorphism from the open ball of radius $\operatorname{inj}(p)$ onto its image; on that ball the distance from $p$ is realised by the radial geodesics and the metric is the pullback of the Euclidean metric along the exponential, up to the curvature correction displayed above.</p>
-<p><strong>Proof sketch.</strong> Beyond the injectivity radius two geodesics meet, and the minimising property fails at the first conjugate point or the first self-intersection; within it, the Gauss lemma shows the exponential is a radial isometry and a local diffeomorphism, and injectivity makes it a diffeomorphism. $\square$</p>
+<p><strong>Proof sketch.</strong> Beyond the injectivity radius two geodesics meet, and the minimising property fails at the first conjugate point or the first self-intersection; within it, the Gauss lemma shows the exponential is a radial isometry and a local diffeomorphism, and injectivity makes it a diffeomorphism.</p>
 <h2 id="jacobi-fields-and-comparison-theorems">Jacobi Fields and Comparison Theorems</h2>
 <h3 id="jacobi-fields">Jacobi Fields</h3>
 <p><strong>Definition.</strong> A <strong>Jacobi field</strong> along a geodesic $\gamma$ is a vector field $J$ along $\gamma$ satisfying the <strong>Jacobi equation</strong></p>
@@ -158,53 +158,53 @@ $$</p>
 $$</p>
 <p>where $D/dt$ is the covariant derivative along $\gamma$. The Jacobi equation is the linearisation of the geodesic equation: $J$ is the variation field of a family of geodesics, $\partial_s\gamma_s$ at $s = 0$.</p>
 <p><strong>Proposition.</strong> The Jacobi fields along a geodesic form a real vector space of dimension $2n$, and the map from a Jacobi field to its initial data $(J(0), \tfrac{DJ}{dt}(0))$ is a linear isomorphism onto $T_{\gamma(0)}M \oplus T_{\gamma(0)}M$.</p>
-<p><strong>Proof.</strong> The Jacobi equation is a second-order linear ordinary differential equation, and the existence and uniqueness theory of Part III identifies its solution space with the space of initial data; the equation is that of the linearisation of the geodesic flow. $\square$</p>
+<p><strong>Proof.</strong> The Jacobi equation is a second-order linear ordinary differential equation, and the existence and uniqueness theory of Part III identifies its solution space with the space of initial data; the equation is that of the linearisation of the geodesic flow.</p>
 <p><strong>Definition.</strong> Points $p = \gamma(0)$ and $q = \gamma(t_0)$ are <strong>conjugate along $\gamma$</strong> if there is a nonzero Jacobi field along $\gamma$ vanishing at $t = 0$ and $t = t_0$. The <strong>multiplicity</strong> is the dimension of the space of such fields.</p>
 <p><strong>Theorem.</strong> A geodesic is minimising up to but not beyond its first conjugate point: if $q$ is the first conjugate point of $p$ along $\gamma$, then $\gamma$ is the unique minimiser from $p$ to $q$, and no geodesic from $p$ to a point beyond $q$ on $\gamma$ is minimising.</p>
-<p><strong>Proof sketch.</strong> The second variation of length along a geodesic with a Jacobi field vanishing at the endpoints is negative when a conjugate point lies between, which is the classical index-form argument of the calculus of variations; it belongs to Part III. $\square$</p>
+<p><strong>Proof sketch.</strong> The second variation of length along a geodesic with a Jacobi field vanishing at the endpoints is negative when a conjugate point lies between, which is the classical index-form argument of the calculus of variations; it belongs to Part III.</p>
 <h3 id="the-comparison-theorems">The Comparison Theorems</h3>
 <p><strong>Theorem (Rauch).</strong> Let $\gamma$ be a geodesic in $(M, g)$ and let $\tilde\gamma$ be a geodesic in a manifold $(\tilde M, \tilde g)$ of constant curvature $\tilde K$, with $|\gamma'(0)| = |\tilde\gamma'(0)|$ and $\tilde K \geq K$ along the corresponding planes. Then the norm of a Jacobi field $J$ along $\gamma$ with $J(0) = 0$ and $|DJ/dt(0)| = 1$ is bounded below by the corresponding norm in the comparison manifold for as long as the comparison field exists, and dually if $\tilde K \leq K$.</p>
 <p>In the constant-curvature model the comparison fields are explicit: with $s(t)$ for the solution of the model Jacobi equation,</p>
 <p>$$
 s_{\tilde K}(t) = \begin{cases} \sin(t\sqrt{\tilde K})/\sqrt{\tilde K}, & \tilde K > 0, \\ t, & \tilde K = 0, \\ \sinh(t\sqrt{-\tilde K})/\sqrt{-\tilde K}, & \tilde K < 0. \end{cases}
 $$</p>
-<p><strong>Proof sketch.</strong> One compares the two scalar functions $|J|^2$ and the model $s^2$ by means of the Riccati equation satisfied by the logarithmic derivative of $|J|$ and the Sturm comparison theorem for ordinary differential equations; the argument belongs to Part III. $\square$</p>
+<p><strong>Proof sketch.</strong> One compares the two scalar functions $|J|^2$ and the model $s^2$ by means of the Riccati equation satisfied by the logarithmic derivative of $|J|$ and the Sturm comparison theorem for ordinary differential equations; the argument belongs to Part III.</p>
 <p><strong>Theorem (Bonnet–Myers).</strong> If $(M, g)$ is complete and connected of dimension $n$ and there is a constant $k > 0$ with $\operatorname{Ric}(v, v) \geq (n-1)k$ for every unit $v$ and every point, then $M$ is compact, its diameter is at most $\pi/\sqrt{k}$, its fundamental group is finite, and its universal cover is compact.</p>
-<p><strong>Proof sketch.</strong> The Rauch comparison applied to the average of the sectional curvatures along a geodesic shows that a geodesic of length $\pi/\sqrt{k}$ has a conjugate point; by the minimising theorem it is not minimising, so the diameter is bounded; Hopf–Rinow then makes the manifold compact. Finiteness of the fundamental group follows from the compactness of the universal cover and the fact that the covering group acts properly discontinuously. $\square$</p>
+<p><strong>Proof sketch.</strong> The Rauch comparison applied to the average of the sectional curvatures along a geodesic shows that a geodesic of length $\pi/\sqrt{k}$ has a conjugate point; by the minimising theorem it is not minimising, so the diameter is bounded; Hopf–Rinow then makes the manifold compact. Finiteness of the fundamental group follows from the compactness of the universal cover and the fact that the covering group acts properly discontinuously.</p>
 <p><strong>Theorem (Cartan–Hadamard).</strong> If $(M, g)$ is complete, connected and simply connected with $K \leq 0$ everywhere, then $\exp_p : T_pM \to M$ is a diffeomorphism for every $p$, and $M$ is diffeomorphic to $\mathbb{R}^n$.</p>
-<p><strong>Proof sketch.</strong> Nonpositive curvature makes the comparison field $s(t) = t$ grow at least linearly, so no Jacobi field vanishes twice and there are no conjugate points; the exponential is then a local diffeomorphism with no critical points, and a covering map, which is injective when the manifold is simply connected. The result is the Hadamard theorem, and the version for $K < 0$ is Cartan's. $\square$</p>
+<p><strong>Proof sketch.</strong> Nonpositive curvature makes the comparison field $s(t) = t$ grow at least linearly, so no Jacobi field vanishes twice and there are no conjugate points; the exponential is then a local diffeomorphism with no critical points, and a covering map, which is injective when the manifold is simply connected. The result is the Hadamard theorem, and the version for $K < 0$ is Cartan's.</p>
 <p><strong>Theorem (Cartan, on curvature determination).</strong> Let $M$ and $\tilde M$ be complete connected Riemannian manifolds of the same dimension and let $F : T_pM \to T_{\tilde p}\tilde M$ be a linear isometry such that the curvature tensors correspond, $F^*\tilde R = R$ in the sense of parallel transport along geodesics from $p$ and $\tilde p$. Then there is a local, and by completeness global, isometry $\varphi : M \to \tilde M$ with $d\varphi_p = F$. In particular a complete simply connected manifold of constant sectional curvature $k$ is isometric to the model space of curvature $k$, and this determines it up to isometry.</p>
-<p><strong>Proof sketch.</strong> Define $\varphi = \exp_{\tilde p} \circ F \circ \exp_p^{-1}$ and show by the Jacobi equation that $\varphi$ is a local isometry; the comparison of the curvature tensors is what makes the Jacobi fields correspond. $\square$</p>
+<p><strong>Proof sketch.</strong> Define $\varphi = \exp_{\tilde p} \circ F \circ \exp_p^{-1}$ and show by the Jacobi equation that $\varphi$ is a local isometry; the comparison of the curvature tensors is what makes the Jacobi fields correspond.</p>
 <p><strong>Corollary.</strong> The complete simply connected manifolds of constant sectional curvature $k$ are exactly the round sphere of radius $1/\sqrt k$ for $k > 0$, Euclidean space for $k = 0$, and hyperbolic space of curvature $k$ for $k < 0$; up to isometry and scaling there are therefore exactly three.</p>
 <h2 id="isometries-and-the-myerssteenrod-theorem">Isometries and the Myers–Steenrod Theorem</h2>
 <p><strong>Definition.</strong> A <strong>Killing field</strong> on $(M, g)$ is a vector field $X$ whose local flow consists of local isometries, equivalently</p>
 <p>$$
 g(\nabla_YX, Z) + g(Y, \nabla_ZX) = 0
 $$</p>
-<p>for all $Y, Z$; the Killing fields form a Lie algebra $\mathfrak{isom}(M, g)$ under the bracket.</p>
+<p>for all $Y, Z$; the Killing fields form a Lie algebra $\mathrm{ISOM}(M, g)$ under the bracket.</p>
 <p><strong>Definition.</strong> The isometry group $\operatorname{Isom}(M, g)$ is given the compact-open topology, equivalently the topology of uniform convergence on compact sets; the group is closed in the group of homeomorphisms of $M$ and acts on $M$ continuously.</p>
 <p><strong>Theorem (Myers–Steenrod).</strong> The isometry group of a connected Riemannian manifold is a Lie group, its action on $M$ is smooth, and its Lie algebra is the Lie algebra of Killing fields.</p>
-<p><strong>Proof sketch.</strong> Fix $p$ and choose an orthonormal frame at $p$; an isometry is determined by its value at $p$ and its differential there, so the group embeds in the bundle of orthonormal frames, which is a smooth manifold; the image is the set of frames of the form $(F(p), dF_p(e_i))$ for $F \in \operatorname{Isom}$, and this set is closed and defined by smooth equations, so it is a submanifold. The smooth action and the Lie algebra statement follow from the exponential map. $\square$</p>
+<p><strong>Proof sketch.</strong> Fix $p$ and choose an orthonormal frame at $p$; an isometry is determined by its value at $p$ and its differential there, so the group embeds in the bundle of orthonormal frames, which is a smooth manifold; the image is the set of frames of the form $(F(p), dF_p(e_i))$ for $F \in \operatorname{Isom}$, and this set is closed and defined by smooth equations, so it is a submanifold. The smooth action and the Lie algebra statement follow from the exponential map.</p>
 <p><strong>Corollary.</strong> The isometry group is a closed subgroup of the bundle of orthonormal frames, hence is a Lie group; for a compact manifold the group is compact. The isometries of the model spaces are the orthogonal, Euclidean and pseudo-orthogonal groups $O(n+1)$, $\mathbb{R}^n\rtimes O(n)$ and $O(n,1)$.</p>
 <h2 id="submanifolds-and-the-second-fundamental-form">Submanifolds and the Second Fundamental Form</h2>
 <h3 id="the-gauss-formula-and-the-second-fundamental-form">The Gauss Formula and the Second Fundamental Form</h3>
 <p>Let $S \subseteq M$ be a regular submanifold of a Riemannian manifold $(M, g)$, with the induced metric, and let $\nabla$ and $\nabla^S$ be the Levi-Civita connections of $M$ and of $S$.</p>
 <p><strong>Definition.</strong> The <strong>second fundamental form</strong> is the symmetric $(0,2)$-tensor on $S$ with values in the normal bundle,</p>
 <p>$$
-\mathrm{II}(X, Y) = \bigl(\nabla_XY\bigr)^{\perp}, \qquad X, Y \in \mathfrak{X}(S),
+\mathrm{II}(X, Y) = \bigl(\nabla_XY\bigr)^{\perp}, \qquad X, Y \in \mathrm{X}(S),
 $$</p>
 <p>the normal component of the covariant derivative in $M$; the <strong>Gauss formula</strong> is</p>
 <p>$$
 \nabla_XY = \nabla^S_XY + \mathrm{II}(X, Y).
 $$</p>
 <p>For a hypersurface with a chosen unit normal $N$, the scalar form is $\mathrm{II}(X, Y) = h(X, Y)N$ and $h(X, Y) = g(\nabla_XY, N)$.</p>
-<p><strong>Theorem (Gauss equation).</strong> For all $X, Y, Z, W \in \mathfrak{X}(S)$,</p>
+<p><strong>Theorem (Gauss equation).</strong> For all $X, Y, Z, W \in \mathrm{X}(S)$,</p>
 <p>$$
 g^S\bigl(R^S(X, Y)Z, W\bigr) = g\bigl(R(X, Y)Z, W\bigr) + g\bigl(\mathrm{II}(X, Z), \mathrm{II}(Y, W)\bigr) - g\bigl(\mathrm{II}(X, W), \mathrm{II}(Y, Z)\bigr).
 $$</p>
-<p><strong>Proof.</strong> Substitute the Gauss formula into the definition of $R^S$ and take the tangential part. $\square$</p>
+<p><strong>Proof.</strong> Substitute the Gauss formula into the definition of $R^S$ and take the tangential part.</p>
 <p><strong>Corollary (theorema egregium).</strong> The Gaussian curvature of a surface in $\mathbb{R}^3$ is an intrinsic invariant: in the notation of the Gauss equation, $K^S = \det(\mathrm{II})$ for a surface with the principal curvatures as eigenvalues of the shape operator, and $K^S$ is determined by the metric alone.</p>
-<p><strong>Proof.</strong> In $\mathbb{R}^3$ the curvature $R$ of the ambient space vanishes, so the Gauss equation gives $K^S = g(\mathrm{II}(X, X), \mathrm{II}(Y, Y)) - |\mathrm{II}(X, Y)|^2$ for an orthonormal basis $X, Y$ of the tangent plane, which depends only on the induced metric. $\square$</p>
+<p><strong>Proof.</strong> In $\mathbb{R}^3$ the curvature $R$ of the ambient space vanishes, so the Gauss equation gives $K^S = g(\mathrm{II}(X, X), \mathrm{II}(Y, Y)) - |\mathrm{II}(X, Y)|^2$ for an orthonormal basis $X, Y$ of the tangent plane, which depends only on the induced metric.</p>
 <p><strong>Definition.</strong> The <strong>mean curvature</strong> of a hypersurface is the trace $H = \sum_i h(e_i, e_i)$ in an orthonormal tangent frame; the hypersurface is <strong>minimal</strong> if $H = 0$, and a submanifold is <strong>totally geodesic</strong> if $\mathrm{II} = 0$, equivalently if its geodesics are geodesics of the ambient manifold.</p>
 <p><strong>Example (the sphere as a hypersurface).</strong> For $S^{n} \subseteq \mathbb{R}^{n+1}$ with the unit outward normal $N(x) = x$, the second fundamental form is $\mathrm{II}(X, Y) = -g(X, Y)N$ and the mean curvature is $-n$; the Gauss equation recovers $K = 1$ on every plane. The sphere is not minimal but is totally umbilic, and it is an Einstein manifold.</p>
 <h2 id="gaussbonnet-and-characteristic-classes">Gauss–Bonnet and Characteristic Classes</h2>

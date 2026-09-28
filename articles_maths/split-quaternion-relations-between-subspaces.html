@@ -54,7 +54,7 @@
 <h2 id="introduction">Introduction</h2>
 <p>The four distinguished subspaces of $\mathbb{H}_{\mathrm{s}}$ — the scalar line $S$, the vector subspace $V$ and the two split-complex planes $\mathbb{D}_2, \mathbb{D}_3$ — are defined by different conditions, but they are not independent: they contain one another, they intersect, they sum to subspaces of $\mathbb{H}_{\mathrm{s}}$, and they are cut out of the four real coordinates by the involutions. This article collects those relations in one place, after the individual articles <em>Split-Quaternion Scalar and Vector Subspaces</em> and <em>Split-Quaternion Split-Complex Subspaces</em>, and before the structural article <em>Split-Quaternion Involution Lattice</em>, which treats the involutions themselves.</p>
 <p>Every number below — dimensions of intersections, of sums, and the entries of the tables — is derived from the definitions by comparison of coefficients, so the article doubles as an index of the four subspaces and of the coordinate blocks.</p>
-<p><strong>Conventions.</strong> The algebra is $\mathbb{H}_{\mathrm{s}}$, with basis $1, e_1, e_2, e_3$, the relations $e_1^2 = -1$, $e_2^2 = e_3^2 = +1$, $e_3 = e_1 e_2$, $e_1 e_2 = -e_2 e_1$, and a general element $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$. The conjugation $\bar{\cdot}$, the principal involution $\alpha$ and the reversal $\rho$ are as in <em>Split-Quaternion Subspaces and the Involutions</em>, and $N$, $B$ are the norm form and its polarisation.</p>
+<p><strong>Conventions.</strong> The algebra is $\mathbb{H}_{\mathrm{s}}$, with basis $1, e_1, e_2, e_3$, the relations $e_1^2 = -1$, $e_2^2 = e_3^2 = +1$, $e_3 = e_1 e_2$, $e_1 e_2 = -e_2 e_1$, and a general element $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$. The conjugation $\bar{\cdot}$, the principal involution $\alpha$ and the reversal $\rho$ are as in <em>Split-Quaternion Subspaces and the Involutions</em>, and $N$, $B$ are the split-quaternion norm and its polarisation.</p>
 <h2 id="the-three-decompositions">The Three Decompositions</h2>
 <p>Two of the three involutions split $\mathbb{H}_{\mathrm{s}}$ into distinguished subspaces, and the third splits it into two further subspaces:</p>
 <div class="table-scroll"><table>
@@ -97,7 +97,7 @@
 <th>real basis</th>
 <th>$\dim_{\mathbb{R}}$</th>
 <th>subalgebra</th>
-<th>norm form</th>
+<th>norm</th>
 </tr>
 </thead>
 <tbody>
@@ -135,7 +135,7 @@
 </tr>
 </tbody>
 </table></div>
-<p>Only three of the four are closed under multiplication: the scalar line and the two split-complex planes. The vector subspace is not a subalgebra but is closed under the commutator, and it is the only one of the four that carries a nonzero bracket — the other three are commutative. The norm forms are the restrictions of $N$; all four are non-degenerate, the first definite and the other three indefinite.</p>
+<p>Only three of the four are closed under multiplication: the scalar line and the two split-complex planes. The vector subspace is not a subalgebra but is closed under the commutator, and it is the only one of the four that carries a nonzero bracket — the other three are commutative. The norms are the restrictions of $N$; all four are non-degenerate, the first definite and the other three indefinite.</p>
 <h2 id="the-four-coordinate-blocks">The Four Coordinate Blocks</h2>
 <p>The four real coordinates of a split-quaternion are $(q_0,q_1,q_2,q_3)$ in the basis $1, e_1, e_2, e_3$. They group into four one-dimensional <strong>coordinate blocks</strong>,</p>
 <p>$$
@@ -298,7 +298,7 @@ $$</p>
 <p>$$
 [e_1,e_2] = 2 e_3, \qquad [e_2,e_3] = -2 e_1, \qquad [e_3,e_1] = 2 e_2,
 $$</p>
-<p>so $[V,V] \subseteq V$ and $V \cong \mathfrak{sl}_2(\mathbb{R})$. The bracket is alternating and satisfies the Jacobi identity. It is the antisymmetrisation of the product on the vector subspace.</p>
+<p>so $[V,V] \subseteq V$ and $V \cong \mathrm{SL}_2(\mathbb{R})$. The bracket is alternating and satisfies the Jacobi identity. It is the antisymmetrisation of the product on the vector subspace.</p>
 <h3 id="the-split-complex-planes">The Split-Complex Planes</h3>
 <p>Each split-complex plane is a commutative subalgebra, so $\mathbb{D}_k \cdot \mathbb{D}_k \subseteq \mathbb{D}_k$ and $[\mathbb{D}_k, \mathbb{D}_k] = 0$. Across the planes the product leaves both: since $e_2 e_3 = -e_1$ and $e_3 e_2 = e_1$, one has $\mathbb{D}_2 \cdot \mathbb{D}_3 = \mathbb{H}_{\mathrm{s}}$ and $\mathbb{D}_2 \cdot \mathbb{D}_3 \not\subseteq \mathbb{D}_2 \cup \mathbb{D}_3$. The product of a scalar with a plane stays in the plane, and the two planes share only the scalar line.</p>
 <h3 id="the-operation-table">The Operation Table</h3>
@@ -353,7 +353,7 @@ $$</p>
 <p>The biquaternion article <em>Biquaternion Relations Between Subspaces</em> performs the same task for the six distinguished subspaces of $\mathbb{B}$, cut out by the four $\mathbb{C}$-linear and conjugate-linear involutions. The bookkeeping is analogous — decompositions, a glance table, coordinate blocks, tables of intersections, sums, sign patterns and operations — but the geometry of the tables differs, because $\mathbb{B}$ has eight real coordinates and six subspaces, whereas $\mathbb{H}_{\mathrm{s}}$ has four coordinates and four subspaces; in $\mathbb{B}$ the blocks have dimensions $1$ and $3$, while here all four blocks have dimension $1$, which is why the intersections here take only the values $0, 1, 2, 3$. The Biquaternions category is the structural model; nothing biquaternion-specific — the central unit $i$, the quaternionic half-algebra, the Hermitian and anti-Hermitian pairing — is imported here.</p>
 <h2 id="summary">Summary</h2>
 <p>The four distinguished subspaces of $\mathbb{H}_{\mathrm{s}}$ are the scalar line $S = \langle 1\rangle$, the vector subspace $V = \langle e_1,e_2,e_3\rangle$, and the two split-complex planes $\mathbb{D}_2 = \langle 1,e_2\rangle$ and $\mathbb{D}_3 = \langle 1,e_3\rangle$. They are the eigenspaces of the involutions, with $\bar{\cdot}$ giving $S \oplus V$, $\alpha$ giving $\mathbb{D}_3 \oplus \operatorname{span}\{e_1,e_2\}$, and $\rho$ giving $\operatorname{span}\{1,e_1,e_2\} \oplus \mathbb{R} e_3$; the finest common decomposition is the coordinate-block decomposition $\mathbb{H}_{\mathrm{s}} = \langle 1\rangle \oplus \langle e_1\rangle \oplus \langle e_2\rangle \oplus \langle e_3\rangle$.</p>
-<p>The intersections are $S \cap V = 0$, $V \cap \mathbb{D}_k = \mathbb{R} e_k$, and $\mathbb{D}_2 \cap \mathbb{D}_3 = S$, with $S$ inside both planes. The sums show that $V$ together with either split-complex plane spans the algebra, while the two planes together span only $\operatorname{span}\{1,e_2,e_3\}$. The involutions act on each subspace by the sign patterns tabulated above, and the composition rule $\bar{\cdot} = \alpha\rho$ composes the multiplicities by symmetric difference. The product is closed on $S, \mathbb{D}_2, \mathbb{D}_3$, sends $V \cdot V$ into $S \oplus V$, and sends the products across the split-complex planes into the whole algebra; the commutator vanishes on the commutative pieces and makes $V$ the Lie algebra $\mathfrak{sl}_2(\mathbb{R})$.</p>
+<p>The intersections are $S \cap V = 0$, $V \cap \mathbb{D}_k = \mathbb{R} e_k$, and $\mathbb{D}_2 \cap \mathbb{D}_3 = S$, with $S$ inside both planes. The sums show that $V$ together with either split-complex plane spans the algebra, while the two planes together span only $\operatorname{span}\{1,e_2,e_3\}$. The involutions act on each subspace by the sign patterns tabulated above, and the composition rule $\bar{\cdot} = \alpha\rho$ composes the multiplicities by symmetric difference. The product is closed on $S, \mathbb{D}_2, \mathbb{D}_3$, sends $V \cdot V$ into $S \oplus V$, and sends the products across the split-complex planes into the whole algebra; the commutator vanishes on the commutative pieces and makes $V$ the Lie algebra $\mathrm{SL}_2(\mathbb{R})$.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -396,7 +396,7 @@ $$</p>
 </tr>
 <tr>
 <td>$B$, $N$</td>
-<td>the polarised form and the norm form</td>
+<td>the polarised form and the split-quaternion norm</td>
 <td><em>Split-Quaternion Norm and Invertibility</em></td>
 </tr>
 <tr>

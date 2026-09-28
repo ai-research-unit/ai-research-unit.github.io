@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biquaternion Geometry — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="biquaternion-geometry"><strong>Biquaternion Geometry</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This is the slot overview of the geometry the biquaternion algebra carries. It states what decides that geometry, recalls the Cayley–Klein picture in which a geometry is its group of motions, and maps the five articles that read the geometry of $\mathbb{B}$ and the general articles of Part IV that stand behind them.</p>
+<p><strong>Conventions.</strong> The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_0=1,e_1,e_2,e_3$ and central scalar imaginary $i$; a general element is $\tilde{Q}=\sum_{\mu=0}^{3} Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$.</p>
+<hr />
+<h2 id="the-sign-of-the-biquaternion-norm-as-the-organising-data">The Sign of the Biquaternion Norm as the Organising Data</h2>
+<p>What geometry the algebra carries is decided by its form. The biquaternion norm $N(\tilde{Q})=\sum_\mu Q_\mu^2$ is complex-valued, so it has no signature by itself; the signature appears on a real form. The realification has the split signature $(4,4)$, and the six distinguished real subspaces carry the signatures $(1,1)$, $(3,3)$, $(4,0)$, $(0,4)$, $(1,3)$ and $(3,1)$ (<em>Biquaternion Norm and Invertibility</em>). The sign of the restricted form is therefore the organising datum:</p>
+<ul>
+<li>a <strong>definite</strong> form, on $\mathbb{H}_{\mathbb{B}}$ of signature $(4,0)$ or on $i\mathbb{H}_{\mathbb{B}}$ of signature $(0,4)$, gives a Euclidean geometry, whose motions are the rotations;</li>
+<li>an <strong>indefinite</strong> form, on $\mathbb{M}_+$ of signature $(1,3)$ or on $\mathbb{M}_-$ of signature $(3,1)$, gives the Lorentzian geometry, whose motions are the Lorentz transformations;</li>
+<li>a <strong>neutral</strong> form, on the realification of signature $(4,4)$, gives a split geometry, whose real quadric is ruled by real lines;</li>
+<li>the degenerate case, the <strong>null</strong> form, is the null cone and the projective quadric, the figure rather than the space.</li>
+</ul>
+<p>The same algebra therefore carries several geometries at once, and the passage from one to another is a change of real form, not a change of algebra.</p>
+<h2 id="the-cayleyklein-picture">The Cayley–Klein Picture</h2>
+<p>In the Cayley–Klein picture a geometry is its group of motions, and the geometry of $\mathbb{B}$ is read from the group the form defines. The unit-norm group is $\mathbb{B}^\times_1\cong Spin(1,3)$ when the form is Lorentzian, its quotient $\mathbb{B}^\times_1/\{\pm e_0\}\cong SO^+(1,3)$ is the proper orthochronous Lorentz group, $S^3=Sp(1)$ is the group of the definite form, and $(S^3\times S^3)/\{\pm e_0\}\cong SO(4)$ is the group of the two-sided action on the Euclidean form. The group is the invariant of the geometry: two forms with the same group carry the same geometry, and the isometries are the motions the group supplies. The full symmetry group of the algebra, which is wider than the isometries because the automorphisms need not preserve a form, is a separate object (<em>Biquaternion Automorphisms and Derivations</em>).</p>
+<h2 id="the-five-articles">The Five Articles</h2>
+<p>The geometry of the algebra is read in five articles, one per face of it, and each cites the general article of Part IV it depends on.</p>
+<ul>
+<li><strong>The figure.</strong> <em>Biquaternion Null Quadric and Projective Geometry</em> reads the null cone as the equation of a quadric, its rulings, its Segre and Plücker descriptions, and its polarity — the geometry of the form's degenerate locus.</li>
+<li><strong>The motions.</strong> <em>Biquaternion Rotations and Lorentz Transformations</em> reads the isometries: the rotors and the sandwich action, the double covers $SU(2)\to SO(3)$ and $Spin(1,3)\to SO^+(1,3)$, the rotations of the definite form and the boosts of the indefinite one, and the two-sided action giving $SO(4)$.</li>
+<li><strong>The full transformation group.</strong> <em>Biquaternion Automorphisms and Derivations</em> reads the symmetries of the algebra itself, wider than the isometries: the inner and the outer automorphisms, the Möbius action on the projective line and the null quadric, and the derivations as the infinitesimal symmetries.</li>
+<li><strong>The geometries.</strong> <em>Biquaternion Lorentzian and Conformal Geometry</em> reads the two real slices: Minkowski space with its light cone, the Lorentz group as the conformal group of the celestial sphere, the conformal group $SU(2,2)\cong Spin(4,2)$, the conformal model of Euclidean space, and the split slice.</li>
+<li><strong>The spin geometry.</strong> <em>Biquaternion Spin Geometry</em> reads the geometry the Clifford structure defines: the spinor module and its two chiral halves, the spinors as the minimal left ideals, the spin representation, and the Dirac operator.</li>
+</ul>
+<p>Behind them stand the general articles of Part IV — <em>Pseudo-Riemannian and Lorentzian Geometry</em>, <em>The Conformal Model of Euclidean Space</em>, <em>Spin Geometry</em> and <em>The Dirac Operator</em> — and the construction of the rotation and reflection groups in <em>Biquaternion Rotations and Lorentz Transformations</em> and <em>Versors, Rotors and the Sandwich Action</em> of Part II. Those are cited, not restated.</p>
+<h2 id="summary">Summary</h2>
+<p>The geometry of the biquaternion algebra is decided by its form. The biquaternion norm is complex-valued, and its real forms carry the signatures $(4,0)$, $(0,4)$, $(1,3)$, $(3,1)$, $(1,1)$ and $(3,3)$, with the split realification $(4,4)$; the sign therefore selects a Euclidean, a Lorentzian or a neutral geometry, and the null case gives the quadric as the figure rather than a space. The same algebra carries all of them at once, and the passage between them is a change of real form.</p>
+<p>In the Cayley–Klein picture the geometry is its group of motions, and the group is read from the form: $Sp(1)$ for the definite form, $\mathbb{B}^\times_1\cong Spin(1,3)$ and $SO^+(1,3)$ for the Lorentzian one, and $(S^3\times S^3)/\{\pm e_0\}\cong SO(4)$ for the two-sided action. The five articles of the category read the figure, the motions, the full transformation group, the two real geometries and the spin geometry, each citing the general article of Part IV it depends on and the construction of the rotation groups in Part II.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$N(\tilde{Q})=\sum_\mu Q_\mu^2$</td>
+<td>Biquaternion norm; complex-valued, so the signature lives on a real form</td>
+</tr>
+<tr>
+<td>$(4,0)$, $(0,4)$</td>
+<td>Signatures of the definite forms on $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$</td>
+</tr>
+<tr>
+<td>$(1,3)$, $(3,1)$</td>
+<td>Signatures of the Lorentzian forms on $\mathbb{M}_+$, $\mathbb{M}_-$</td>
+</tr>
+<tr>
+<td>$(4,4)$</td>
+<td>Split signature of the realification</td>
+</tr>
+<tr>
+<td>$Sp(1)=S^3$</td>
+<td>Group of the definite form</td>
+</tr>
+<tr>
+<td>$\mathbb{B}^\times_1\cong Spin(1,3)$</td>
+<td>Group of the Lorentzian form, double cover of $SO^+(1,3)$</td>
+</tr>
+<tr>
+<td>$(S^3\times S^3)/\{\pm e_0\}\cong SO(4)$</td>
+<td>Group of the two-sided action on the Euclidean form</td>
+</tr>
+<tr>
+<td>Null cone, $Q^2$</td>
+<td>The degenerate locus and its projective quadric; the figure</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em> (Cambridge University Press, 2nd ed., 2001).</li>
+<li>P. Anglès, <em>Conformal Groups in Geometry and Spin Structures</em> (Birkhäuser, 2008).</li>
+<li>J. P. Ward, <em>Quaternions and Cayley Numbers: Algebra and Applications</em> (Kluwer, 1997).</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -72,7 +72,7 @@ $$</p>
 <p>The inclusion can be strict: $B$-linear maps are $A$-linear, since $f(\varphi(a)n)=\varphi(a)f(n)$, but not conversely.</p>
 <h3 id="exactness-and-preservation">Exactness and preservation</h3>
 <p><strong>Proposition.</strong> Restriction of scalars is exact: every short exact sequence in $\operatorname{Mod}(B)$ remains short exact in $\operatorname{Mod}(A)$.</p>
-<p><em>Proof.</em> The underlying groups and maps are unchanged, and exactness is a property of the underlying groups and maps alone. $\square$</p>
+<p><em>Proof.</em> The underlying groups and maps are unchanged, and exactness is a property of the underlying groups and maps alone.</p>
 <p>Restriction also preserves direct sums, products and limits, since these are computed on the underlying modules. It does not in general preserve free modules or projective modules: the $A$-module $\operatorname{Res}_\varphi B$ is $B$ with the $A$-action through $\varphi$, and this is projective over $A$ only when $B$ happens to be projective as a left $A$-module. For the quotient homomorphism $A \to A/I$ it is $A/I$, which is projective over $A$ only when $I$ is a direct summand. Restriction preserves injective modules exactly when extension of scalars is exact, that is, when $B$ is flat as a right $A$-module: for an injective $B$-module $I$ the functor $\operatorname{Hom}_B(-,I)$ is exact, and $\operatorname{Hom}_A(-,\operatorname{Res}_\varphi I)\cong\operatorname{Hom}_B(B\otimes_A-,I)$, so it is exact whenever $B\otimes_A-$ is; dually, restriction preserves projectives exactly when $B$ is projective as a left $A$-module, the condition that the right adjoint $\operatorname{Hom}_A(B,-)$ be exact. If $A$ is semisimple then every $A$-module is projective and flat, so both conditions hold automatically.</p>
 <h2 id="extension-of-scalars">Extension of Scalars</h2>
 <h3 id="definition_1">Definition</h3>
@@ -95,7 +95,7 @@ $$</p>
 B\otimes_A A \cong B, \qquad B\otimes_A A^n \cong B^n, \qquad B\otimes_A \Bigl(\bigoplus_i M_i\Bigr)\cong\bigoplus_i (B\otimes_A M_i).
 $$</p>
 <p>It preserves projective modules, and it carries the regular module ${}_A A$ to the regular module ${}_B B$.</p>
-<p><em>Proof.</em> Right exactness and preservation of direct sums are the corresponding properties of the balanced product from <em>The Balanced Product over an Algebra</em>. For free modules, $B\otimes_A A^n\cong (B\otimes_A A)^n\cong B^n$ by the unit isomorphism $B\otimes_A A\cong B$. A projective $A$-module is a direct summand of a free $A$-module $A^n$; applying the right exact functor $B\otimes_A-$ to the split sequence gives a split sequence exhibiting $B\otimes_A P$ as a direct summand of $B^n$, hence projective. $\square$</p>
+<p><em>Proof.</em> Right exactness and preservation of direct sums are the corresponding properties of the balanced product from <em>The Balanced Product over an Algebra</em>. For free modules, $B\otimes_A A^n\cong (B\otimes_A A)^n\cong B^n$ by the unit isomorphism $B\otimes_A A\cong B$. A projective $A$-module is a direct summand of a free $A$-module $A^n$; applying the right exact functor $B\otimes_A-$ to the split sequence gives a split sequence exhibiting $B\otimes_A P$ as a direct summand of $B^n$, hence projective.</p>
 <p>In general $B\otimes_A-$ is not left exact, and it is exact precisely when $B$ is flat as a right $A$-module, which is the subject of §Flatness and Change of Rings.</p>
 <h2 id="coextension-of-scalars">Coextension of Scalars</h2>
 <h3 id="definition_2">Definition</h3>
@@ -131,7 +131,7 @@ $$</p>
 <p>$$
 \varphi_! \dashv \operatorname{Res}_\varphi \dashv \varphi_*.
 $$</p>
-<p><em>Proof.</em> The first isomorphism is the tensor–hom adjunction applied to the $(B,A)$-bimodule $B$, with $\operatorname{Hom}_B(B,N)\cong \operatorname{Res}_\varphi N$. The second is the same adjunction applied to the $(A,B)$-bimodule $B$, giving $\operatorname{Hom}_B(N',\operatorname{Hom}_A(B,N))\cong\operatorname{Hom}_A(B\otimes_B N',N)\cong\operatorname{Hom}_A(\operatorname{Res}_\varphi N',N)$. Both are natural in all variables. $\square$</p>
+<p><em>Proof.</em> The first isomorphism is the tensor–hom adjunction applied to the $(B,A)$-bimodule $B$, with $\operatorname{Hom}_B(B,N)\cong \operatorname{Res}_\varphi N$. The second is the same adjunction applied to the $(A,B)$-bimodule $B$, giving $\operatorname{Hom}_B(N',\operatorname{Hom}_A(B,N))\cong\operatorname{Hom}_A(B\otimes_B N',N)\cong\operatorname{Hom}_A(\operatorname{Res}_\varphi N',N)$. Both are natural in all variables.</p>
 <p><strong>Corollary (Frobenius reciprocity).</strong> With $M \in \operatorname{Mod}(A)$ and $N \in \operatorname{Mod}(B)$,</p>
 <p>$$
 \operatorname{Hom}_B(\varphi_! M, N) \cong \operatorname{Hom}_A(M, \operatorname{Res}_\varphi N).
@@ -169,7 +169,7 @@ M\otimes_A - : \operatorname{Mod}(A) \longrightarrow \operatorname{Ab}
 $$</p>
 <p>is exact. Equivalently, $\operatorname{Tor}_1^A(M,N)=0$ for every left $A$-module $N$. A left $A$-module $N$ is flat if $-\otimes_A N$ is exact on right $A$-modules. The two notions are the two halves of the tensor product, and for a bimodule they may differ.</p>
 <p><strong>Theorem.</strong> Every projective module is flat. Consequently every free module is flat.</p>
-<p><em>Proof.</em> Free modules are flat because $A\otimes_A-\cong\mathrm{id}$ is exact, and a direct sum of flat modules is flat because $-\otimes_A-$ commutes with direct sums. A projective module is a direct summand of a free module, and a direct summand of a flat module is flat: if $M=P\oplus Q$ is flat and $L\to L'$ is injective, then $L\otimes_A P\to L'\otimes_A P$ is a direct summand of the injective map $L\otimes_A M\to L'\otimes_A M$, and a direct summand of an injective map is injective. $\square$</p>
+<p><em>Proof.</em> Free modules are flat because $A\otimes_A-\cong\mathrm{id}$ is exact, and a direct sum of flat modules is flat because $-\otimes_A-$ commutes with direct sums. A projective module is a direct summand of a free module, and a direct summand of a flat module is flat: if $M=P\oplus Q$ is flat and $L\to L'$ is injective, then $L\otimes_A P\to L'\otimes_A P$ is a direct summand of the injective map $L\otimes_A M\to L'\otimes_A M$, and a direct summand of an injective map is injective.</p>
 <p>The converse is false in general: over a commutative ring the flat module $\mathbb{Q}$ over $\mathbb{Z}$ is not projective, and over a noncommutative ring flatness is again weaker than projectivity. Over a left perfect ring, and in particular over a finite-dimensional algebra, flat left modules are projective; this is a standard theorem of Bass and is cited rather than proved here.</p>
 <h3 id="one-sidedness">One-sidedness</h3>
 <p>Flatness over a noncommutative ring is a genuinely one-sided condition. To define the flatness of a bimodule ${}_B M_A$ one may ask whether $M\otimes_A-$ is exact, or whether $-\otimes_B M$ is exact, and the two questions are independent. Free modules and projective modules are flat on the side on which they act, but there exist bimodules flat as left modules and not as right modules; the standard examples and the fully faithful treatment are in the sources cited below. For a commutative ring the distinction disappears, and the flatness of <em>Modules</em> §13 is recovered.</p>
@@ -182,13 +182,13 @@ $$</p>
 <li>Extension of scalars $B\otimes_A-$ is exact.</li>
 <li>$B$ is flat as a right $A$-module.</li>
 </ol>
-<p><em>Proof.</em> Extension is the functor $B\otimes_A-$ applied to left $A$-modules, which is exact precisely when the right $A$-module $B$ is flat, by the definition of flatness. $\square$</p>
+<p><em>Proof.</em> Extension is the functor $B\otimes_A-$ applied to left $A$-modules, which is exact precisely when the right $A$-module $B$ is flat, by the definition of flatness.</p>
 <p><strong>Theorem.</strong> Let $\varphi: A\to B$ be a unital algebra homomorphism such that $B$ is flat as a right $A$-module, and let $N$ be a flat left $B$-module. Then $\operatorname{Res}_\varphi N$ is a flat left $A$-module.</p>
 <p><em>Proof.</em> Let $X$ be a right $A$-module. By associativity of the balanced product of <em>The Balanced Product over an Algebra</em>, applied to the right $A$-module $X$, the $(A,B)$-bimodule $B$ (through $\varphi$; its left $A$-action is $a\cdot b=\varphi(a)b$, and its right $B$-action is multiplication in $B$, the right $A$-module structure entering only through the flatness hypothesis) and the left $B$-module $N$,</p>
 <p>$$
 X\otimes_A \operatorname{Res}_\varphi N \cong (X\otimes_A B)\otimes_B N.
 $$</p>
-<p>The functor $X\mapsto X\otimes_A B$ is exact on right $A$-modules because $B$ is flat as a right $A$-module, and $-\otimes_B N$ is exact because $N$ is a flat left $B$-module; the composite is exact, so $\operatorname{Res}_\varphi N$ is flat. $\square$</p>
+<p>The functor $X\mapsto X\otimes_A B$ is exact on right $A$-modules because $B$ is flat as a right $A$-module, and $-\otimes_B N$ is exact because $N$ is a flat left $B$-module; the composite is exact, so $\operatorname{Res}_\varphi N$ is flat.</p>
 <p>Two further compatibility facts are immediate from the adjoint triple.</p>
 <ul>
 <li>Extension of scalars preserves projectives, by the proposition of §Extension of Scalars; it preserves flatness too, since for a right $B$-module $N'$ one has $N'\otimes_B(B\otimes_A M)\cong\operatorname{Res}_\varphi N'\otimes_A M$, so the functor $N'\mapsto N'\otimes_B(B\otimes_A M)$ is the composite of restriction, which is the identity on underlying groups and homomorphisms, with $-\otimes_A M$, and is therefore exact whenever $M$ is flat as a left $A$-module.</li>

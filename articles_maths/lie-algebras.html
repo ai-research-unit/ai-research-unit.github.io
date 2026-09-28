@@ -113,8 +113,8 @@ $$</p>
 <p>for all $u, v, w \in M$.</p>
 <p>The Jacobi identity is the replacement for associativity. It says that the failure of the bracket to be associative is controlled: the three nested brackets sum to zero.</p>
 <h3 id="the-definition">The Definition</h3>
-<p>A <strong>Lie algebra</strong> over a commutative ring $R$ is an $R$-module $\mathfrak{g}$ equipped with a bilinear, antisymmetric product $[\cdot, \cdot]$ satisfying the Jacobi identity.</p>
-<p>The product $[\cdot, \cdot]$ is called the <strong>Lie bracket</strong>. The elements of $\mathfrak{g}$ are called <strong>Lie algebra elements</strong>, or simply <strong>elements</strong> when the context is clear.</p>
+<p>A <strong>Lie algebra</strong> over a commutative ring $R$ is an $R$-module $\mathrm{G}$ equipped with a bilinear, antisymmetric product $[\cdot, \cdot]$ satisfying the Jacobi identity.</p>
+<p>The product $[\cdot, \cdot]$ is called the <strong>Lie bracket</strong>. The elements of $\mathrm{G}$ are called <strong>Lie algebra elements</strong>, or simply <strong>elements</strong> when the context is clear.</p>
 <p><strong>Key difference from the field case.</strong> Over a field, every Lie algebra is a vector space, so it has a well-defined dimension. Over a general commutative ring, a Lie algebra is a module, which need not be free. When the module is free of rank $n$, we say that the Lie algebra has <strong>rank</strong> $n$. The classical structure theory assumes the module is free and finitely generated.</p>
 <h3 id="why-the-jacobi-identity">Why the Jacobi Identity?</h3>
 <p>The Jacobi identity is not arbitrary. It has several equivalent formulations, each of which reveals a different aspect of its meaning.</p>
@@ -122,7 +122,7 @@ $$</p>
 <p>$$
 [u, [v, w]] + [v, [w, u]] + [w, [u, v]] = 0.
 $$</p>
-<p><strong>Formulation 2: The adjoint action is a derivation.</strong> For each $u \in \mathfrak{g}$, define the <strong>adjoint action</strong> $\mathrm{ad}_u : \mathfrak{g} \to \mathfrak{g}$ by</p>
+<p><strong>Formulation 2: The adjoint action is a derivation.</strong> For each $u \in \mathrm{G}$, define the <strong>adjoint action</strong> $\mathrm{ad}_u : \mathrm{G} \to \mathrm{G}$ by</p>
 <p>$$
 \mathrm{ad}_u(v) = [u, v].
 $$</p>
@@ -131,11 +131,11 @@ $$</p>
 \mathrm{ad}_u([v, w]) = [\mathrm{ad}_u(v), w] + [v, \mathrm{ad}_u(w)].
 $$</p>
 <p>In words: the adjoint action $\mathrm{ad}_u$ is a <strong>derivation</strong> of the bracket. This is the precise sense in which the Jacobi identity replaces associativity: it says that the bracket behaves like a derivative with respect to itself.</p>
-<p><strong>Formulation 3: The bracket is a representation.</strong> The map $u \mapsto \mathrm{ad}_u$ is a <strong>representation</strong> of $\mathfrak{g}$ on itself: it is linear, and it satisfies</p>
+<p><strong>Formulation 3: The bracket is a representation.</strong> The map $u \mapsto \mathrm{ad}_u$ is a <strong>representation</strong> of $\mathrm{G}$ on itself: it is linear, and it satisfies</p>
 <p>$$
 \mathrm{ad}_{[u, v]} = [\mathrm{ad}_u, \mathrm{ad}_v],
 $$</p>
-<p>where the bracket on the right is the commutator of linear maps. This is the <strong>adjoint representation</strong> of $\mathfrak{g}$.</p>
+<p>where the bracket on the right is the commutator of linear maps. This is the <strong>adjoint representation</strong> of $\mathrm{G}$.</p>
 <p>The Jacobi identity is what makes the adjoint action a derivation, and it is what makes the adjoint representation a representation. Without it, the bracket would not have these properties, and the theory would be much poorer.</p>
 <hr />
 <h2 id="part-iii-the-relationship-with-associative-algebras">Part III: The Relationship with Associative Algebras</h2>
@@ -149,71 +149,71 @@ $$</p>
 <p>This construction applies in particular to the Clifford algebras studied in the other articles. Every Clifford algebra is an associative algebra, hence a Lie algebra with the commutator bracket. This is the reason the theory of Lie algebras and the theory of Clifford algebras are connected.</p>
 <p>The converse is not true: not every Lie algebra arises from an associative algebra in this way. The cross product on $\mathbb{R}^3$ is an example of a Lie algebra that does not arise from an associative algebra. So the class of Lie algebras is strictly larger than the class of Lie algebras that come from associative algebras.</p>
 <h3 id="the-subspace-of-bivectors">The Subspace of Bivectors</h3>
-<p>Inside a Clifford algebra, the subspace of bivectors forms a Lie subalgebra under the commutator bracket. This Lie subalgebra is isomorphic to the orthogonal Lie algebra $\mathfrak{so}(V, Q)$.</p>
+<p>Inside a Clifford algebra, the subspace of bivectors forms a Lie subalgebra under the commutator bracket. This Lie subalgebra is isomorphic to the orthogonal Lie algebra $\mathrm{SO}(V, Q)$.</p>
 <p>This is the algebraic origin of the relationship between Clifford algebras and orthogonal groups. The bivectors generate the rotations, and the commutator bracket on the bivectors is the Lie bracket of the orthogonal Lie algebra.</p>
 <hr />
 <h2 id="part-iv-basic-properties">Part IV: Basic Properties</h2>
 <h3 id="subalgebras-and-ideals">Subalgebras and Ideals</h3>
-<p>A <strong>Lie subalgebra</strong> of a Lie algebra $\mathfrak{g}$ is a submodule $\mathfrak{h} \subseteq \mathfrak{g}$ such that</p>
+<p>A <strong>Lie subalgebra</strong> of a Lie algebra $\mathrm{G}$ is a submodule $\mathrm{H} \subseteq \mathrm{G}$ such that</p>
 <p>$$
-[u, v] \in \mathfrak{h}
+[u, v] \in \mathrm{H}
 $$</p>
-<p>for all $u, v \in \mathfrak{h}$. In other words, $\mathfrak{h}$ is closed under the bracket.</p>
-<p>A <strong>Lie ideal</strong> of $\mathfrak{g}$ is a submodule $\mathfrak{i} \subseteq \mathfrak{g}$ such that</p>
+<p>for all $u, v \in \mathrm{H}$. In other words, $\mathrm{H}$ is closed under the bracket.</p>
+<p>A <strong>Lie ideal</strong> of $\mathrm{G}$ is a submodule $\mathrm{I} \subseteq \mathrm{G}$ such that</p>
 <p>$$
-[u, v] \in \mathfrak{i}
+[u, v] \in \mathrm{I}
 $$</p>
-<p>for all $u \in \mathfrak{g}$ and $v \in \mathfrak{i}$. In other words, $\mathfrak{i}$ is closed under bracketing with any element of $\mathfrak{g}$.</p>
+<p>for all $u \in \mathrm{G}$ and $v \in \mathrm{I}$. In other words, $\mathrm{I}$ is closed under bracketing with any element of $\mathrm{G}$.</p>
 <p>Every ideal is a subalgebra, but not every subalgebra is an ideal. The distinction is the same as in ring theory.</p>
 <h3 id="homomorphisms">Homomorphisms</h3>
-<p>A <strong>Lie algebra homomorphism</strong> from a Lie algebra $\mathfrak{g}$ to a Lie algebra $\mathfrak{h}$ is an $R$-linear map $\varphi : \mathfrak{g} \to \mathfrak{h}$ that preserves the bracket:</p>
+<p>A <strong>Lie algebra homomorphism</strong> from a Lie algebra $\mathrm{G}$ to a Lie algebra $\mathrm{H}$ is an $R$-linear map $\varphi : \mathrm{G} \to \mathrm{H}$ that preserves the bracket:</p>
 <p>$$
 \varphi([u, v]) = [\varphi(u), \varphi(v)]
 $$</p>
-<p>for all $u, v \in \mathfrak{g}$.</p>
-<p>An <strong>isomorphism</strong> is a bijective homomorphism. If there is an isomorphism from $\mathfrak{g}$ to $\mathfrak{h}$, we say that $\mathfrak{g}$ and $\mathfrak{h}$ are <strong>isomorphic</strong>, written $\mathfrak{g} \cong \mathfrak{h}$.</p>
+<p>for all $u, v \in \mathrm{G}$.</p>
+<p>An <strong>isomorphism</strong> is a bijective homomorphism. If there is an isomorphism from $\mathrm{G}$ to $\mathrm{H}$, we say that $\mathrm{G}$ and $\mathrm{H}$ are <strong>isomorphic</strong>, written $\mathrm{G} \cong \mathrm{H}$.</p>
 <p>The kernel of a homomorphism is an ideal, and every ideal is the kernel of some homomorphism (the quotient map). This is the content of the first isomorphism theorem for Lie algebras.</p>
 <h3 id="quotients">Quotients</h3>
-<p>Let $\mathfrak{g}$ be a Lie algebra and let $\mathfrak{i}$ be an ideal of $\mathfrak{g}$. The <strong>quotient Lie algebra</strong> $\mathfrak{g}/\mathfrak{i}$ is the set of cosets $\{u + \mathfrak{i} : u \in \mathfrak{g}\}$ with addition, scalar multiplication, and bracket defined by</p>
+<p>Let $\mathrm{G}$ be a Lie algebra and let $\mathrm{I}$ be an ideal of $\mathrm{G}$. The <strong>quotient Lie algebra</strong> $\mathrm{G}/\mathrm{I}$ is the set of cosets $\{u + \mathrm{I} : u \in \mathrm{G}\}$ with addition, scalar multiplication, and bracket defined by</p>
 <p>$$
-(u + \mathfrak{i}) + (v + \mathfrak{i}) = (u + v) + \mathfrak{i},
+(u + \mathrm{I}) + (v + \mathrm{I}) = (u + v) + \mathrm{I},
 $$</p>
 <p>$$
-r(u + \mathfrak{i}) = (r u) + \mathfrak{i},
+r(u + \mathrm{I}) = (r u) + \mathrm{I},
 $$</p>
 <p>$$
-[u + \mathfrak{i}, v + \mathfrak{i}] = [u, v] + \mathfrak{i}.
+[u + \mathrm{I}, v + \mathrm{I}] = [u, v] + \mathrm{I}.
 $$</p>
-<p>These operations are well-defined precisely because $\mathfrak{i}$ is an ideal.</p>
+<p>These operations are well-defined precisely because $\mathrm{I}$ is an ideal.</p>
 <hr />
 <h2 id="part-v-the-structure-of-lie-algebras">Part V: The Structure of Lie Algebras</h2>
 <h3 id="the-center">The Center</h3>
-<p>The <strong>center</strong> of a Lie algebra $\mathfrak{g}$ is the set of elements that bracket to zero with every element of $\mathfrak{g}$:</p>
+<p>The <strong>center</strong> of a Lie algebra $\mathrm{G}$ is the set of elements that bracket to zero with every element of $\mathrm{G}$:</p>
 <p>$$
-Z(\mathfrak{g}) = \{z \in \mathfrak{g} : [z, v] = 0 \text{ for all } v \in \mathfrak{g}\}.
+Z(\mathrm{G}) = \{z \in \mathrm{G} : [z, v] = 0 \text{ for all } v \in \mathrm{G}\}.
 $$</p>
-<p>The center is always an abelian ideal of $\mathfrak{g}$.</p>
+<p>The center is always an abelian ideal of $\mathrm{G}$.</p>
 <h3 id="the-derived-subalgebra">The Derived Subalgebra</h3>
-<p>The <strong>derived subalgebra</strong> of a Lie algebra $\mathfrak{g}$ is the submodule spanned by all brackets:</p>
+<p>The <strong>derived subalgebra</strong> of a Lie algebra $\mathrm{G}$ is the submodule spanned by all brackets:</p>
 <p>$$
-[\mathfrak{g}, \mathfrak{g}] = \mathrm{span}\{[u, v] : u, v \in \mathfrak{g}\}.
+[\mathrm{G}, \mathrm{G}] = \mathrm{span}\{[u, v] : u, v \in \mathrm{G}\}.
 $$</p>
-<p>The derived subalgebra is always an ideal of $\mathfrak{g}$. It measures how far $\mathfrak{g}$ is from being abelian: $\mathfrak{g}$ is abelian if and only if $[\mathfrak{g}, \mathfrak{g}] = 0$.</p>
+<p>The derived subalgebra is always an ideal of $\mathrm{G}$. It measures how far $\mathrm{G}$ is from being abelian: $\mathrm{G}$ is abelian if and only if $[\mathrm{G}, \mathrm{G}] = 0$.</p>
 <h3 id="solvable-and-nilpotent-lie-algebras">Solvable and Nilpotent Lie Algebras</h3>
-<p>A Lie algebra $\mathfrak{g}$ is <strong>solvable</strong> if the sequence</p>
+<p>A Lie algebra $\mathrm{G}$ is <strong>solvable</strong> if the sequence</p>
 <p>$$
-\mathfrak{g}^{(0)} = \mathfrak{g}, \qquad \mathfrak{g}^{(k+1)} = [\mathfrak{g}^{(k)}, \mathfrak{g}^{(k)}],
+\mathrm{G}^{(0)} = \mathrm{G}, \qquad \mathrm{G}^{(k+1)} = [\mathrm{G}^{(k)}, \mathrm{G}^{(k)}],
 $$</p>
 <p>eventually reaches zero.</p>
-<p>A Lie algebra $\mathfrak{g}$ is <strong>nilpotent</strong> if the sequence</p>
+<p>A Lie algebra $\mathrm{G}$ is <strong>nilpotent</strong> if the sequence</p>
 <p>$$
-\mathfrak{g}_0 = \mathfrak{g}, \qquad \mathfrak{g}_{k+1} = [\mathfrak{g}, \mathfrak{g}_k],
+\mathrm{G}_0 = \mathrm{G}, \qquad \mathrm{G}_{k+1} = [\mathrm{G}, \mathrm{G}_k],
 $$</p>
 <p>eventually reaches zero.</p>
 <p>Every nilpotent Lie algebra is solvable, but not every solvable Lie algebra is nilpotent.</p>
 <p><strong>Key difference from the field case.</strong> The notions of solvable and nilpotent Lie algebras are defined over any commutative ring, but the classical structure theory (Levi decomposition, classification of semisimple Lie algebras) requires the base ring to be a field of characteristic zero. Over a general commutative ring, the theory is more subtle.</p>
 <h3 id="simple-lie-algebras">Simple Lie Algebras</h3>
-<p>A Lie algebra $\mathfrak{g}$ is <strong>simple</strong> if it is non-abelian and has no nontrivial ideals.</p>
+<p>A Lie algebra $\mathrm{G}$ is <strong>simple</strong> if it is non-abelian and has no nontrivial ideals.</p>
 <p>Simple Lie algebras are the building blocks of the theory. Every finite-dimensional Lie algebra over a field of characteristic zero is a semidirect product of a solvable Lie algebra and a semisimple Lie algebra, and every semisimple Lie algebra is a direct sum of simple Lie algebras. This is the <strong>Levi decomposition</strong>.</p>
 <h3 id="the-classification-of-simple-lie-algebras">The Classification of Simple Lie Algebras</h3>
 <p>Over the complex numbers, the simple Lie algebras are classified by their <strong>root systems</strong>, which are encoded in combinatorial objects called <strong>Dynkin diagrams</strong>. The classification was achieved by Killing and Cartan in the late nineteenth century. The simple Lie algebras fall into four infinite families</p>
@@ -229,20 +229,20 @@ $$</p>
 <hr />
 <h2 id="part-vi-representations">Part VI: Representations</h2>
 <h3 id="the-definition_1">The Definition</h3>
-<p>A <strong>representation</strong> of a Lie algebra $\mathfrak{g}$ on an $R$-module $V$ is a Lie algebra homomorphism</p>
+<p>A <strong>representation</strong> of a Lie algebra $\mathrm{G}$ on an $R$-module $V$ is a Lie algebra homomorphism</p>
 <p>$$
-\rho : \mathfrak{g} \to \mathfrak{gl}(V),
+\rho : \mathrm{G} \to \mathrm{GL}(V),
 $$</p>
-<p>where $\mathfrak{gl}(V)$ is the Lie algebra of $R$-linear endomorphisms of $V$ with the commutator bracket.</p>
+<p>where $\mathrm{GL}(V)$ is the Lie algebra of $R$-linear endomorphisms of $V$ with the commutator bracket.</p>
 <p>In other words, it is an $R$-linear map that preserves the bracket:</p>
 <p>$$
 \rho([u, v]) = [\rho(u), \rho(v)] = \rho(u)\rho(v) - \rho(v)\rho(u).
 $$</p>
 <p>The module $V$ is called the <strong>representation space</strong>. The representation is <strong>faithful</strong> if $\rho$ is injective.</p>
 <h3 id="examples">Examples</h3>
-<p><strong>The trivial representation.</strong> The map $\rho(u) = 0$ for all $u \in \mathfrak{g}$.</p>
-<p><strong>The adjoint representation.</strong> The map $\mathrm{ad} : \mathfrak{g} \to \mathfrak{gl}(\mathfrak{g})$ defined by $\mathrm{ad}_u(v) = [u, v]$.</p>
-<p><strong>The standard representation of $\mathfrak{sl}(n, R)$.</strong> The natural action of $\mathfrak{sl}(n, R)$ on $R^n$ by matrix multiplication.</p>
+<p><strong>The trivial representation.</strong> The map $\rho(u) = 0$ for all $u \in \mathrm{G}$.</p>
+<p><strong>The adjoint representation.</strong> The map $\mathrm{ad} : \mathrm{G} \to \mathrm{GL}(\mathrm{G})$ defined by $\mathrm{ad}_u(v) = [u, v]$.</p>
+<p><strong>The standard representation of $\mathrm{SL}(n, R)$.</strong> The natural action of $\mathrm{SL}(n, R)$ on $R^n$ by matrix multiplication.</p>
 <h3 id="why-representations-matter">Why Representations Matter</h3>
 <p>Representations are the way Lie algebras act on other mathematical objects.</p>
 <p>The classification of representations of a given Lie algebra is one of the central problems of representation theory. For simple Lie algebras over a field of characteristic zero, the finite-dimensional representations are classified by their <strong>highest weights</strong>.</p>
@@ -250,7 +250,7 @@ $$</p>
 <h2 id="part-vii-lie-algebras-and-lie-groups">Part VII: Lie Algebras and Lie Groups</h2>
 <h3 id="the-relationship">The Relationship</h3>
 <p>Lie algebras are the infinitesimal versions of <strong>Lie groups</strong>. A Lie group is a group that is also a smooth manifold, with the group operations being smooth maps.</p>
-<p>Every Lie group $G$ has an associated Lie algebra $\mathfrak{g}$, which is the tangent space to $G$ at the identity element. The bracket on $\mathfrak{g}$ is derived from the group commutator. The Lie algebra captures the local structure of the group.</p>
+<p>Every Lie group $G$ has an associated Lie algebra $\mathrm{G}$, which is the tangent space to $G$ at the identity element. The bracket on $\mathrm{G}$ is derived from the group commutator. The Lie algebra captures the local structure of the group.</p>
 <h3 id="why-this-matters">Why This Matters</h3>
 <p>The Lie algebra is often easier to study than the Lie group. It is a linear object (a module with a bracket), while the group is a nonlinear object (a manifold with a group structure). Many questions about Lie groups can be reduced to questions about their Lie algebras.</p>
 <p>This is the reason Lie algebras were introduced in the first place. Sophus Lie, in the late nineteenth century, found that the local structure of continuous groups of symmetries could be captured by a linear object: the Lie algebra.</p>
@@ -260,7 +260,7 @@ $$</p>
 <p><strong>The Jacobi identity</strong> is the replacement for associativity. It says that the adjoint action is a derivation, and it makes the adjoint representation a representation.</p>
 <p><strong>Every associative algebra is a Lie algebra</strong> when equipped with the commutator bracket. This applies in particular to the Clifford algebras.</p>
 <p><strong>The structure theory</strong> of Lie algebras includes subalgebras, ideals, the center, the derived subalgebra, solvable and nilpotent Lie algebras, and simple Lie algebras.</p>
-<p><strong>Representations</strong> of Lie algebras are homomorphisms into $\mathfrak{gl}(V)$. They are the way Lie algebras act on other mathematical objects.</p>
+<p><strong>Representations</strong> of Lie algebras are homomorphisms into $\mathrm{GL}(V)$. They are the way Lie algebras act on other mathematical objects.</p>
 <p><strong>Lie algebras</strong> are the infinitesimal versions of Lie groups.</p>
 <p><strong>Key differences from the field case.</strong></p>
 <ul>

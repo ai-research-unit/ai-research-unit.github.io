@@ -88,7 +88,7 @@ $$</p>
 <p>$$
 [ma,n]-[m,an] \qquad (a \in A).
 $$</p>
-<p>Put $M\otimes_A N=G/K$ and $m\otimes n=[m,n]+K$. The quotient is designed so that $\iota$ is additive in each variable and balanced, and any $A$-balanced $f$ extends uniquely to a homomorphism $G\to P$ that vanishes on $K$, hence descends uniquely to $M\otimes_A N$. Uniqueness of the pair $(M\otimes_A N,\iota)$ up to unique isomorphism follows from the universal property by the usual argument. $\square$</p>
+<p>Put $M\otimes_A N=G/K$ and $m\otimes n=[m,n]+K$. The quotient is designed so that $\iota$ is additive in each variable and balanced, and any $A$-balanced $f$ extends uniquely to a homomorphism $G\to P$ that vanishes on $K$, hence descends uniquely to $M\otimes_A N$. Uniqueness of the pair $(M\otimes_A N,\iota)$ up to unique isomorphism follows from the universal property by the usual argument.</p>
 <p>The theorem is <em>the</em> definition of the balanced product in the sense that any construction with the same universal property is canonically isomorphic to this one. The relations above are exactly the relations of <em>Modules</em> §13 in the commutative case, with the scalar-movement relation weakened to the balanced relation.</p>
 <h3 id="generators-and-relations">Generators and relations</h3>
 <p>Every element of $M\otimes_A N$ is a finite sum $\sum_i m_i\otimes n_i$, because the $[m,n]$ generate $G$. The defining relations can be read as the computational rules</p>
@@ -110,7 +110,7 @@ $$</p>
 <p>$$
 (b(ma))\otimes(nc)=(bm)a\otimes(nc)=(bm)\otimes a(nc)=(bm)\otimes((an)c),
 $$</p>
-<p>using that $b$ is left $A$-linear, that $c$ is right $A$-linear, and the balanced relation. Hence it descends to a group homomorphism of $M\otimes_A N$. The assignments $b\mapsto (x\mapsto bx)$ and $c\mapsto(x\mapsto xc)$ are then a left $B$-action and a right $C$-action, and they commute because the actions of $B$ and $C$ on the factors do. $\square$</p>
+<p>using that $b$ is left $A$-linear, that $c$ is right $A$-linear, and the balanced relation. Hence it descends to a group homomorphism of $M\otimes_A N$. The assignments $b\mapsto (x\mapsto bx)$ and $c\mapsto(x\mapsto xc)$ are then a left $B$-action and a right $C$-action, and they commute because the actions of $B$ and $C$ on the factors do.</p>
 <p>Three special cases are used constantly.</p>
 <ul>
 <li>Taking $B=A$, $M$ an $(A,A)$-bimodule, and $C=A$, $N$ an $(A,A)$-bimodule, gives $M\otimes_A N$ the structure of an $(A,A)$-bimodule.</li>
@@ -123,7 +123,7 @@ $$</p>
 A \otimes_A N \cong N, \qquad M \otimes_A A \cong M,
 $$</p>
 <p>the first induced by $a\otimes n \mapsto an$ and the second by $m\otimes a \mapsto ma$. If $N$ is an $(A,C)$-bimodule the first is an isomorphism of $(A,C)$-bimodules, and if $M$ is a $(B,A)$-bimodule the second is an isomorphism of $(B,A)$-bimodules.</p>
-<p><em>Proof.</em> The map $A\times N\to N$, $(a,n)\mapsto an$, is $A$-balanced, so it induces $a\otimes n\mapsto an$; the map $N\to A\otimes_A N$, $n\mapsto 1_A\otimes n$, is a group homomorphism, and the two are inverse because $a\otimes n=(a1_A)\otimes n=a(1_A\otimes n)$ by the inverse relation $a\otimes n=1_A\otimes an$ read backwards. The bimodule statements are checked directly from the actions. $\square$</p>
+<p><em>Proof.</em> The map $A\times N\to N$, $(a,n)\mapsto an$, is $A$-balanced, so it induces $a\otimes n\mapsto an$; the map $N\to A\otimes_A N$, $n\mapsto 1_A\otimes n$, is a group homomorphism, and the two are inverse because $a\otimes n=(a1_A)\otimes n=a(1_A\otimes n)$ by the inverse relation $a\otimes n=1_A\otimes an$ read backwards. The bimodule statements are checked directly from the actions.</p>
 <p>Thus ${}_A A_A$ is a unit for the balanced product, exactly as $R$ is a unit for the tensor product over a commutative ring.</p>
 <h3 id="associativity">Associativity</h3>
 <p><strong>Theorem.</strong> Let ${}_A M_B$, ${}_B N_C$ and ${}_C P$ be bimodules of the indicated types. Then there is a natural isomorphism</p>
@@ -131,7 +131,7 @@ $$</p>
 (M\otimes_B N)\otimes_C P \cong M\otimes_B (N\otimes_C P),
 $$</p>
 <p>sending $(m\otimes n)\otimes p$ to $m\otimes(n\otimes p)$.</p>
-<p><em>Proof.</em> Both sides are universal for maps $M\times N\times P\to Q$ that are additive in each variable and balanced in both middle variables: $f(ma,n,p)=f(m,an,p)$ and $f(m,nc,p)=f(m,n,cp)$. The two iterated balanced products represent the same functor, so they are canonically isomorphic. $\square$</p>
+<p><em>Proof.</em> Both sides are universal for maps $M\times N\times P\to Q$ that are additive in each variable and balanced in both middle variables: $f(ma,n,p)=f(m,an,p)$ and $f(m,nc,p)=f(m,n,cp)$. The two iterated balanced products represent the same functor, so they are canonically isomorphic.</p>
 <p>Associativity is the statement that the balanced product is the composition of the functors $-\otimes_B-$ and $-\otimes_C-$; it is what makes the tensor product of a chain of bimodules well defined.</p>
 <h3 id="right-exactness">Right exactness</h3>
 <p><strong>Theorem.</strong> For a fixed left $A$-module $N$, the functor $-\otimes_A N$ is right exact: from an exact sequence of right $A$-modules</p>
@@ -142,29 +142,29 @@ $$</p>
 <p>$$
 M'\otimes_A N \xrightarrow{\ f\otimes 1\ } M\otimes_A N \xrightarrow{\ g\otimes 1\ } M''\otimes_A N \longrightarrow 0.
 $$</p>
-<p><em>Proof.</em> Surjectivity of $g\otimes 1$ follows from surjectivity of $g$ on generators $m''\otimes n=g(m)\otimes n$. The image of $f\otimes1$ is contained in the kernel of $g\otimes1$ because $gf=0$. For the reverse inclusion, the quotient $(M\otimes_A N)/\operatorname{im}(f\otimes1)$ is generated by the images of $m\otimes n$, and the assignment $m''\otimes n\mapsto m\otimes n$ is well defined on it because two preimages of the same $m''$ differ by an element of $\operatorname{im}f$; the universal property then shows this quotient computes $M''\otimes_A N$. $\square$</p>
+<p><em>Proof.</em> Surjectivity of $g\otimes 1$ follows from surjectivity of $g$ on generators $m''\otimes n=g(m)\otimes n$. The image of $f\otimes1$ is contained in the kernel of $g\otimes1$ because $gf=0$. For the reverse inclusion, the quotient $(M\otimes_A N)/\operatorname{im}(f\otimes1)$ is generated by the images of $m\otimes n$, and the assignment $m''\otimes n\mapsto m\otimes n$ is well defined on it because two preimages of the same $m''$ differ by an element of $\operatorname{im}f$; the universal property then shows this quotient computes $M''\otimes_A N$.</p>
 <p>Left exactness fails in general, and the failure is measured by the groups $\operatorname{Tor}_i^A(M,N)$, which vanish for all right $A$-modules $M$ and all $i>0$ exactly when $N$ is flat; flatness over a noncommutative algebra is treated . The failure of left exactness is the obstruction to tensoring an exact sequence, and it is the reason the balanced product behaves differently from the ordinary tensor product of vector spaces, where every module is flat.</p>
 <h2 id="forced-centrality">Forced Centrality</h2>
 <p>The balanced relation moves an element $a$ of $A$ from the right of the first factor to the left of the second. It does not permit an element to be moved from the left of the first factor to the left of the second, and the attempt to do so is exactly where centrality is forced. The following proposition isolates the phenomenon; it is the algebra-level statement that the balanced product is a central construction.</p>
 <p><strong>Proposition.</strong> Let $M$ be an $(A,A)$-bimodule and $N$ an $(A,A)$-bimodule.</p>
 <ol>
-<li>
-<p>For every $a \in A$ the formula</p>
+<li>For every $a \in A$ the formula</li>
+</ol>
 <p>$$
     \lambda_1(a)(m\otimes n)=am\otimes n
-    $$</p>
-<p>defines a group endomorphism of $M\otimes_A N$, and $\lambda_1$ makes $M\otimes_A N$ a left $A$-module.</p>
-</li>
-<li>
-<p>The formula</p>
+$$</p>
+<pre><code>defines a group endomorphism of $M\otimes_A N$, and $\lambda_1$ makes $M\otimes_A N$ a left $A$-module.
+</code></pre>
+<ol>
+<li>The formula</li>
+</ol>
 <p>$$
     \lambda_2(a)(m\otimes n)=m\otimes an
-    $$</p>
-<p>defines a group endomorphism of $M\otimes_A N$ if and only if $a \in Z(A)$; restricted to the center it makes $M\otimes_A N$ a $Z(A)$-module.</p>
-</li>
-<li>
-<p>Let $a \in Z(A)$. The actions $\lambda_1(a)$ and $\lambda_2(a)$ agree whenever $am=ma$ for all $m \in M$ and $an=na$ for all $n \in N$, that is whenever $a$ acts on $M$ and on $N$ from the left and from the right in the same way; both hold when $M$ and $N$ are the regular bimodules ${}_A A_A$, so the two actions then agree on the whole of $Z(A)$, while for a general bimodule the agreement may fail. The elements through which the second factor may act form exactly the center $Z(A)$, and no larger subalgebra of $A$ acts through that factor.</p>
-</li>
+$$</p>
+<pre><code>defines a group endomorphism of $M\otimes_A N$ if and only if $a \in Z(A)$; restricted to the center it makes $M\otimes_A N$ a $Z(A)$-module.
+</code></pre>
+<ol>
+<li>Let $a \in Z(A)$. The actions $\lambda_1(a)$ and $\lambda_2(a)$ agree whenever $am=ma$ for all $m \in M$ and $an=na$ for all $n \in N$, that is whenever $a$ acts on $M$ and on $N$ from the left and from the right in the same way; both hold when $M$ and $N$ are the regular bimodules ${}_A A_A$, so the two actions then agree on the whole of $Z(A)$, while for a general bimodule the agreement may fail. The elements through which the second factor may act form exactly the center $Z(A)$, and no larger subalgebra of $A$ acts through that factor.</li>
 </ol>
 <p><em>Proof.</em> (1) The map $M\times N\to M\otimes_A N$, $(m,n)\mapsto am\otimes n$, is additive and balanced, since</p>
 <p>$$
@@ -176,7 +176,7 @@ $$</p>
 (ma')\otimes an=m\otimes a(a'n)
 $$</p>
 <p>agrees with the balanced reduction of the left-hand side, which is $m\otimes a'(an)=m\otimes(a'a)n$. Agreement for all $m,n,a'$ requires $aa'=a'a$ for all $a'$, i.e. $a \in Z(A)$; taking $M=N=A$ shows the condition is necessary. For central $a$ the two reductions $m\otimes(aa')n$ and $m\otimes(a'a)n$ coincide, so $\lambda_2(a)$ is defined; and $\lambda_2(ab)=\lambda_2(a)\lambda_2(b)$ for central $a,b$, so the center acts on $M\otimes_A N$.</p>
-<p>(3) For central $a$ the difference of the two endomorphisms sends $m\otimes n$ to $am\otimes n-m\otimes an$, and this vanishes as soon as $am=ma$ and $an=na$: then $am\otimes n=ma\otimes n=m\otimes an$ by the balanced relation. For the regular bimodules $M=N=A$ one has $am=ma$ and $an=na$ for every central $a$ — that is what centrality says in the regular bimodule — so the two actions agree on the whole of $Z(A)$; and for $N=A$ the identification $M\otimes_A A\cong M$ carries the value of the difference on $m\otimes 1$ to $am-ma$, so agreement there forces $am=ma$ for every $m$. No larger subalgebra of $A$ acts through the second factor, by the necessity in (2). $\square$</p>
+<p>(3) For central $a$ the difference of the two endomorphisms sends $m\otimes n$ to $am\otimes n-m\otimes an$, and this vanishes as soon as $am=ma$ and $an=na$: then $am\otimes n=ma\otimes n=m\otimes an$ by the balanced relation. For the regular bimodules $M=N=A$ one has $am=ma$ and $an=na$ for every central $a$ — that is what centrality says in the regular bimodule — so the two actions agree on the whole of $Z(A)$; and for $N=A$ the identification $M\otimes_A A\cong M$ carries the value of the difference on $m\otimes 1$ to $am-ma$, so agreement there forces $am=ma$ for every $m$. No larger subalgebra of $A$ acts through the second factor, by the necessity in (2).</p>
 <p><strong>Remark.</strong> The symmetry hypothesis of (3) is a genuine restriction, because the left and right actions of $Z(A)$ on a bimodule need not agree. Let $R=\mathbb{C}\times\mathbb{C}$, let $\sigma$ be the automorphism interchanging the two factors, and let $M=R$ carry the left action $a\cdot m=am$ and the right action $m\cdot a=\sigma(a)m$; then $M$ is an $(R,R)$-bimodule, since $(a\cdot m)\cdot b=\sigma(b)am$ and $a\cdot(m\cdot b)=a\sigma(b)m$ agree by the commutativity of $R$, and for $a=(1,0)$ and $m=(1,1)$ one has $a\cdot m=(1,0)\neq(0,1)=m\cdot a$. Hence in $M\otimes_R R\cong M$ the endomorphisms $\lambda_1(a)$ and $\lambda_2(a)$ differ although $a$ is central, and the agreement of the two central actions is a condition on the bimodule rather than a consequence of centrality in the algebra.</p>
 <p>Two positive consequences should be recorded, since they are the cases in which an $A$-module or $R$-module structure genuinely exists. First, if $M$ is a $(B,A)$-bimodule then $M\otimes_A N$ is a left $B$-module by the theorem of §Bimodules and the Tensor Product, and this does not require $A$ to be commutative: the action comes from the outer algebra $B$, not from the middle ring. Second, the base ring always acts, as follows.</p>
 <p><strong>Corollary.</strong> Let $M$ be a right $A$-module and $N$ a left $A$-module. Then $M\otimes_A N$ is an $R$-module, with</p>
@@ -184,7 +184,7 @@ $$</p>
 r(m\otimes n)=(mr)\otimes n=m\otimes(rn),
 $$</p>
 <p>the two expressions being equal.</p>
-<p><em>Proof.</em> Since $R$ is central in $A$, the elements $r1_A$ are central, and the equality is the balanced relation $m(r1_A)\otimes n=m\otimes(r1_A)n$ together with $r\cdot m=m(r1_A)$, $r\cdot n=(r1_A)n$. The action is well defined by the proposition with $a=r1_A$, and $R$ being a ring it is an $R$-module structure. $\square$</p>
+<p><em>Proof.</em> Since $R$ is central in $A$, the elements $r1_A$ are central, and the equality is the balanced relation $m(r1_A)\otimes n=m\otimes(r1_A)n$ together with $r\cdot m=m(r1_A)$, $r\cdot n=(r1_A)n$. The action is well defined by the proposition with $a=r1_A$, and $R$ being a ring it is an $R$-module structure.</p>
 <p>So the balanced product of any two modules over an $R$-algebra is at least an $R$-module, and the two ways of writing $r(m\otimes n)$ agree because $R$ is central. This is the precise sense in which centrality is both forced and available: forced, because letting the second factor act on the balanced product by its own left action is possible only for scalars that commute with everything; available, because the base ring of an algebra is automatically central.</p>
 <h2 id="the-tensorhom-adjunction">The Tensor–Hom Adjunction</h2>
 <p>The balanced product is the left adjoint of a hom functor, and this adjunction is the technical engine of change of rings and of Morita theory.</p>
@@ -193,7 +193,7 @@ $$</p>
 \operatorname{Hom}_B(M\otimes_A N, P) \cong \operatorname{Hom}_A\bigl(N, \operatorname{Hom}_B(M,P)\bigr),
 $$</p>
 <p>where the left $B$-module $\operatorname{Hom}_B(M,P)$ is a left $A$-module by $(af)(m)=f(ma)$.</p>
-<p><em>Proof.</em> Given a left $B$-linear map $\varphi: M\otimes_A N\to P$, define for each $n \in N$ the map $\varphi_n(m)=\varphi(m\otimes n)$; it is left $B$-linear, and $n\mapsto\varphi_n$ is left $A$-linear because $\varphi_{an}(m)=\varphi(m\otimes an)=\varphi(ma\otimes n)=\varphi_n(ma)=(a\varphi_n)(m)$. Conversely, a left $A$-linear map $\psi: N\to\operatorname{Hom}_B(M,P)$ gives an $A$-balanced map $M\times N\to P$, $(m,n)\mapsto\psi(n)(m)$ — indeed $\psi(an)(m)=(a\psi(n))(m)=\psi(n)(ma)$ — which descends to $M\otimes_A N$; the two constructions are inverse. $\square$</p>
+<p><em>Proof.</em> Given a left $B$-linear map $\varphi: M\otimes_A N\to P$, define for each $n \in N$ the map $\varphi_n(m)=\varphi(m\otimes n)$; it is left $B$-linear, and $n\mapsto\varphi_n$ is left $A$-linear because $\varphi_{an}(m)=\varphi(m\otimes an)=\varphi(ma\otimes n)=\varphi_n(ma)=(a\varphi_n)(m)$. Conversely, a left $A$-linear map $\psi: N\to\operatorname{Hom}_B(M,P)$ gives an $A$-balanced map $M\times N\to P$, $(m,n)\mapsto\psi(n)(m)$ — indeed $\psi(an)(m)=(a\psi(n))(m)=\psi(n)(ma)$ — which descends to $M\otimes_A N$; the two constructions are inverse.</p>
 <p>Dually, for a right $A$-module $M$, a left $A$-module $N$ and an abelian group $P$, the universal property of §Balanced Maps is the statement $\operatorname{Hom}_{\mathbb{Z}}(M\otimes_A N,P)\cong\operatorname{Bal}_A(M,N;P)$, and when $M$ is a $(B,A)$-bimodule this is the case $B=\mathbb{Z}$ of the theorem up to the identification of the $B$-linear structure.</p>
 <p><strong>The Eilenberg–Watts theorem.</strong> Every right exact functor $\operatorname{Mod}(A)\to\operatorname{Mod}(B)$ that preserves direct sums is naturally isomorphic to $-\otimes_A M$ for a $(B,A)$-bimodule $M$. This is the converse to the right exactness of §Right exactness and it identifies the balanced product as the universal right exact functor; the theorem is standard and is used in the theory of Morita equivalence to the extent that the equivalences of <em>Morita Equivalence</em> are exactly the balanced products by invertible bimodules.</p>
 <h2 id="examples">Examples</h2>

@@ -54,11 +54,11 @@
 <h2 id="introduction">Introduction</h2>
 <p>The equation $\xi^2 = -1$ has, in the quaternion algebra, not two solutions but a whole two-dimensional family: the pure unit quaternions. This article determines that family, describes it as a single conjugacy class and as a homogeneous space of the unit group, relates it to the complex structures that the algebra places on its underlying real vector space, solves the companion equation $\xi^2 = +1$, and compares the answer with the biquaternion and split-quaternion cases. It is the article of the quaternion family that owns the square roots of $-1$; the unit group itself is from <em>Quaternion Norm and Invertibility</em>, and the adjoint action that realises the conjugacy class is from <em>Quaternion Rotations and Reflections</em>.</p>
 <p>The single fact on which everything rests is the absence of zero divisors: since a product in $\mathbb{H}$ vanishes only when a factor vanishes, the equation $(\tilde q-1)(\tilde q+1) = 0$ forces $\tilde q = \pm 1$, and a companion argument forces the roots of $-1$ to be pure. Both the smallness of the root set of $+1$ and the roundness of the root set of $-1$ are consequences of the same property, and both fail as soon as the coefficient field is enlarged.</p>
-<p>The corpus's default base is a commutative ring with identity, and the algebra is defined there by its presentation. The results below are stated over $\mathbb{R}$, where the norm form is positive definite and the algebra is a division algebra; the reduction of the equation and the classification of the roots hold over any field of characteristic not $2$ in which the norm form is anisotropic, and the topological descriptions of the root sets are the statements over $\mathbb{R}$.</p>
-<p>Throughout, $\mathbb{H}$ is the quaternion algebra with basis $e_0 = 1, e_1, e_2, e_3$ and $e_k^2 = -e_0$, a quaternion is $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ with scalar part $q_0$ and vector part $\mathbf{q}\in\operatorname{Im}\mathbb{H}$, the conjugate is $\bar{\tilde q} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$, the norm form is $N(\tilde q) = \tilde q\bar{\tilde q}$, the unit group is $\mathbb{H}^{\times} = \mathbb{H}\setminus\{0\}$, and the unit sphere is $Sp(1) = \{\tilde q : N(\tilde q) = 1\} = S^3$.</p>
+<p>The corpus's default base is a commutative ring with identity, and the algebra is defined there by its presentation. The results below are stated over $\mathbb{R}$, where the algebra is a division algebra; the reduction of the equation and the classification of the roots hold over any field of characteristic not $2$ in which the algebra is a division algebra, and the identification of the root sets with level sets of the central product is the statement over $\mathbb{R}$.</p>
+<p>Throughout, $\mathbb{H}$ is the quaternion algebra with basis $e_0 = 1, e_1, e_2, e_3$ and $e_k^2 = -e_0$, a quaternion is $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ with scalar part $q_0$ and vector part $\mathbf{q}\in\operatorname{Im}\mathbb{H}$, the conjugate is $\bar{\tilde q} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$, and the quaternion norm $N$, the unit group $\mathbb{H}^{\times} = \mathbb{H}\setminus\{0\}$ and the unit sphere $Sp(1) = S^3$ are those of <em>Quaternion Norm and Invertibility</em>, named here and not defined again.</p>
 <h2 id="the-problem-and-its-reduction">The Problem and Its Reduction</h2>
 <h3 id="statement">Statement</h3>
-<p><strong>Theorem.</strong> A quaternion $\tilde q\in\mathbb{H}$ satisfies $\tilde q^2 = -1$ if and only if $\tilde q$ is a pure imaginary quaternion of norm one,</p>
+<p><strong>Theorem.</strong> A quaternion $\tilde q\in\mathbb{H}$ satisfies $\tilde q^2 = -1$ if and only if $\tilde q$ is a pure imaginary quaternion with $N = 1$,</p>
 <p>$$
 \tilde q\in\operatorname{Im}\mathbb{H}\cap Sp(1) = \{x\in\operatorname{Im}\mathbb{H} : N(x) = 1\}.
 $$</p>
@@ -66,59 +66,59 @@ $$</p>
 <p>$$
 \tilde q^2 = q_0^2 - N(\mathbf{q}) + 2q_0\mathbf{q},
 $$</p>
-<p>because the product of two pure imaginaries is $\mathbf{p}\mathbf{q} = -\langle\mathbf{p},\mathbf{q}\rangle + \mathbf{p}\times\mathbf{q}$, so that $\mathbf{q}^2 = -N(\mathbf{q})$. Hence $\tilde q^2 = -1$ is the pair of equations</p>
+<p>because the square of a pure imaginary is the real number $\mathbf{q}^2 = -N(\mathbf{q})$, as in <em>Quaternion Norm and Invertibility</em>. Hence $\tilde q^2 = -1$ is the pair of equations</p>
 <p>$$
 2q_0\mathbf{q} = 0, \qquad q_0^2 - N(\mathbf{q}) = -1 .
 $$</p>
-<p>If $q_0\neq 0$ the first equation gives $\mathbf{q} = 0$, and the second gives $q_0^2 = -1$, which has no real solution. Therefore $q_0 = 0$, and the second equation becomes $N(\mathbf{q}) = 1$. Conversely a pure imaginary of norm one plainly has square $-N(\mathbf{q}) = -1$. $\square$</p>
+<p>If $q_0\neq 0$ the first equation gives $\mathbf{q} = 0$, and the second gives $q_0^2 = -1$, which has no real solution. Therefore $q_0 = 0$, and the second equation becomes $N(\mathbf{q}) = 1$. Conversely a pure imaginary element with $N = 1$ plainly has square $-N(\mathbf{q}) = -1$.</p>
 <h3 id="vector-part-decomposition">Vector-Part Decomposition</h3>
-<p>The reduction shows that the square of a quaternion separates into a scalar equation and a vector equation, with the vector equation linear in $\mathbf{q}$ and the scalar equation quadratic. The scalar equation is an equation for the scalar part and the modulus of the vector part together; the vector equation constrains the direction of $\mathbf{q}$ relative to $q_0$.</p>
+<p>The reduction shows that the square of a quaternion separates into a scalar equation and a vector equation, with the vector equation linear in $\mathbf{q}$ and the scalar equation quadratic. The scalar equation is an equation for the scalar part and the central product $N(\mathbf{q})$ of the vector part together; the vector equation constrains the direction of $\mathbf{q}$ relative to $q_0$.</p>
 <h3 id="the-pure-roots">The Pure Roots</h3>
 <p><strong>Corollary.</strong> The solutions of $\xi^2 = -1$ in $\mathbb{H}$ are exactly the unit vectors of the imaginary subspace.</p>
-<p><em>Proof.</em> By the theorem the solutions are precisely the elements of $\operatorname{Im}\mathbb{H}$ of norm one. $\square$</p>
-<p><strong>Proposition.</strong> The solution set $\Sigma = \{\xi\in\mathbb{H} : \xi^2 = -1\}$ is the unit sphere $\operatorname{Im}\mathbb{H}\cap Sp(1)$, a two-dimensional sphere $S^2$ embedded in $\mathbb{H}\cong\mathbb{R}^4$ and contained in the unit sphere $S^3$.</p>
-<p><em>Proof.</em> The imaginary subspace is a three-dimensional real vector subspace of $\mathbb{H}$, and the solutions are its unit vectors; the unit sphere of a three-dimensional Euclidean space is $S^2$. $\square$</p>
-<p>Thus the quaternion algebra has a two-sphere of square roots of $-1$, where the complex numbers have two, $\pm i$. The excess is not an accident of notation: it is the same excess that makes the quaternion algebra non-commutative, and it is the reason the exponential and the polar form are many-to-one on the real points of $Sp(1)$.</p>
+<p><em>Proof.</em> By the theorem the solutions are precisely the elements of $\operatorname{Im}\mathbb{H}$ with $N = 1$.</p>
+<p><strong>Proposition.</strong> The solution set $\Sigma = \{\xi\in\mathbb{H} : \xi^2 = -1\}$ is the set $\operatorname{Im}\mathbb{H}\cap Sp(1)$ of elements of the imaginary subspace with $N = 1$; it has real dimension two in $\mathbb{H}\cong\mathbb{R}^4$, is contained in the level set $\{N = 1\}$, and its topological properties are those of <em>Quaternion Topology</em>.</p>
+<p><em>Proof.</em> The imaginary subspace is a three-dimensional real vector subspace of $\mathbb{H}$ and the solutions are its elements with $N = 1$, so $\Sigma$ has real dimension two; that the level set $\{N = 1\}$ of a three-dimensional real space has dimension two is the standard identification quoted from <em>Quaternion Norm and Invertibility</em>.</p>
+<p>Thus the quaternion algebra has a two-dimensional family of square roots of $-1$, where the complex numbers have two, $\pm i$. The excess is not an accident of notation: it is the same excess that makes the quaternion algebra non-commutative, and it is the reason the exponential and the polar form are many-to-one on the real points of $Sp(1)$.</p>
 <h2 id="the-classification">The Classification</h2>
 <h3 id="statement-of-the-theorem">Statement of the Theorem</h3>
 <p><strong>Theorem.</strong> The root set $\Sigma = \{\xi : \xi^2 = -1\}$ is a single conjugacy class of the unit group $\mathbb{H}^{\times}$ under the adjoint action, and the map $\tilde q\mapsto \tilde q e_1\tilde q^{-1}$ is a surjection $Sp(1)\to\Sigma$ with fibres the cosets of the stabiliser $U(1)$ of $e_1$.</p>
-<p><em>Proof.</em> The adjoint action $\operatorname{Ad}_q(x) = qxq^{-1}$ of a unit quaternion on the imaginary subspace is an orthogonal isometry of $\operatorname{Im}\mathbb{H}$ by <em>Quaternion Rotations and Reflections</em>; it preserves the norm form and hence carries $\Sigma$ to itself, and since it acts on $\operatorname{Im}\mathbb{H}\cong\mathbb{R}^3$ as the full rotation group $SO(3)$ it acts transitively on the unit sphere $\Sigma$. Hence $\Sigma$ is one orbit, that is, one conjugacy class. The stabiliser of $e_1$ is the set of units with $qe_1\tilde q^{-1} = e_1$, namely the units commuting with $e_1$; the commutant of $e_1$ in $\mathbb{H}$ is the two-dimensional plane $\mathbb{R}\oplus\mathbb{R}e_1$, whose unit circle is $U(1) = \{e^{e_1\theta}\}$. The orbit is therefore $Sp(1)/U(1)$ as a set with a transitive action, and the fibres of the orbit map are the cosets of $U(1)$. $\square$</p>
+<p><em>Proof.</em> The adjoint action $\operatorname{Ad}_q(x) = qxq^{-1}$ of a unit quaternion preserves the imaginary subspace and the quaternion norm, hence carries $\Sigma$ to itself, and it is transitive on $\Sigma$: the transitivity of the adjoint action on the imaginary subspace is in <em>Quaternion Rotations and Reflections</em>. Hence $\Sigma$ is one orbit, that is, one conjugacy class. The stabiliser of $e_1$ is the set of units with $qe_1\tilde q^{-1} = e_1$, namely the units commuting with $e_1$; the commutant of $e_1$ in $\mathbb{H}$ is the two-dimensional plane $\mathbb{R}\oplus\mathbb{R}e_1$, whose unit circle is $U(1) = \{e^{e_1\theta}\}$. The orbit is therefore $Sp(1)/U(1)$ as a set with a transitive action, and the fibres of the orbit map are the cosets of $U(1)$.</p>
 <h3 id="the-homogeneous-space">The Homogeneous Space</h3>
 <p><strong>Theorem.</strong> There is a canonical bijection of homogeneous spaces</p>
 <p>$$
 \Sigma \cong Sp(1)/U(1) \cong SO(3)/SO(2),
 $$</p>
-<p>and $\Sigma$ is diffeomorphic to the two-sphere $S^2$.</p>
-<p><em>Proof.</em> The orbit–stabiliser theorem gives $\Sigma\cong Sp(1)/U(1)$ as a homogeneous space of $Sp(1)$, and the identification $Sp(1)/\{\pm1\}\cong SO(3)$ of <em>Quaternion Rotations and Reflections</em> identifies it with $SO(3)/SO(2)$ because $U(1)$ contains $\{\pm1\}$. The quotient of the compact group $SO(3)$ by the one-parameter subgroup $SO(2)$ is the two-sphere, the classical transitive action of $SO(3)$ on $S^2$. $\square$</p>
+<p>and under these identifications $\Sigma$ has real dimension two.</p>
+<p><em>Proof.</em> The orbit–stabiliser theorem gives $\Sigma\cong Sp(1)/U(1)$ as a homogeneous space of $Sp(1)$, and the identification $Sp(1)/\{\pm1\}\cong SO(3)$ of <em>Quaternion Rotations and Reflections</em> identifies it with $SO(3)/SO(2)$ because $U(1)$ contains $\{\pm1\}$. That $SO(3)/SO(2)$ has real dimension two, and with it the identification of $\Sigma$ with $SO(3)/SO(2)$, is the classical statement quoted from <em>Quaternion Topology</em>.</p>
 <h3 id="verification">Verification</h3>
-<p>The statement can be checked in coordinates. The unit vectors of the imaginary subspace are the triples $u = (u_1,u_2,u_3)$ with $u_1^2+u_2^2+u_3^2 = 1$, and the rotation group acts on triples faithfully; conjugating $e_1$ by a unit quaternion produces the vector $R_q e_1$, where $R_q$ is the matrix of the adjoint action, and as $\tilde q$ ranges over $Sp(1)$ the vector $R_qe_1$ ranges over the whole unit sphere because $SO(3)$ acts transitively on it. So the two descriptions of $\Sigma$ agree.</p>
+<p>The statement can be checked in coordinates. A root is $\xi = u_1e_1+u_2e_2+u_3e_3$ with $u_1^2+u_2^2+u_3^2 = 1$, and conjugating $e_1$ by the unit quaternion $\tilde q = q_0+q_1e_1+q_2e_2+q_3e_3$ produces the root $\tilde q e_1\tilde q^{-1}$, whose coordinates are the entries of the matrix of the adjoint action applied to $e_1$; as $\tilde q$ ranges over $Sp(1)$ these conjugate roots fill the whole of $\Sigma$, by the transitivity quoted above. So the two descriptions of $\Sigma$ agree.</p>
 <h3 id="status-of-the-roots">Status of the Roots</h3>
 <p>Each root $\xi\in\Sigma$ is a unit quaternion, hence invertible, with $\xi^{-1} = \bar\xi = -\xi$. It generates a subalgebra $\mathbb{R}\oplus\mathbb{R}\xi\cong\mathbb{C}$ inside $\mathbb{H}$, and the square of $\xi$ is the scalar $-1$; this is the sense in which each root gives a copy of the complex numbers inside the quaternions. Distinct roots $\xi\neq\eta$ generate distinct, but conjugate, copies: there is a unit quaternion carrying one onto the other, although no quaternion commutes with two distinct roots except a real number.</p>
-<h2 id="the-relation-to-the-complex-structures-on-math113">The Relation to the Complex Structures on $\mathbb{R}^4$</h2>
+<h2 id="the-relation-to-the-complex-structures-on-math108">The Relation to the Complex Structures on $\mathbb{R}^4$</h2>
 <p><strong>Definition.</strong> A <strong>complex structure</strong> on the real vector space $\mathbb{H}$ is a real-linear map $J : \mathbb{H}\to\mathbb{H}$ with $J^2 = -\mathrm{id}$. A complex structure $J$ is <strong>compatible with the quaternion structure</strong> if it is left multiplication by a root, $J = L_\xi$ with $\xi^2 = -1$, where $L_\xi(x) = \xi x$.</p>
 <p><strong>Theorem.</strong> For every $\xi\in\Sigma$ the operator $L_\xi$ of left multiplication by $\xi$ is a complex structure on $\mathbb{H}$, and the assignment $\xi\mapsto L_\xi$ is a bijection from $\Sigma$ onto the set of complex structures on $\mathbb{H}$ compatible with the quaternion structure.</p>
-<p><em>Proof.</em> Left multiplication is real-linear, and $L_\xi^2 = L_{\xi^2} = L_{-1} = -\mathrm{id}$ because $\xi^2 = -1$. Conversely, if $L_\xi = L_\eta$ then $\xi = L_\xi(1) = L_\eta(1) = \eta$, so the map is injective. $\square$</p>
+<p><em>Proof.</em> Left multiplication is real-linear, and $L_\xi^2 = L_{\xi^2} = L_{-1} = -\mathrm{id}$ because $\xi^2 = -1$. Conversely, if $L_\xi = L_\eta$ then $\xi = L_\xi(1) = L_\eta(1) = \eta$, so the map is injective.</p>
 <p><strong>Proposition.</strong> The three elements $e_1,e_2,e_3$ give three complex structures $I_1,I_2,I_3$ satisfying the quaternion relations</p>
 <p>$$
 I_1^2 = I_2^2 = I_3^2 = -1, \qquad I_1I_2 = I_3, \quad I_2I_3 = I_1, \quad I_3I_1 = I_2 ,
 $$</p>
-<p>and the whole two-sphere $\Sigma$ of roots is the family of complex structures spanned by them.</p>
-<p><em>Proof.</em> The relations are the images of the algebra relations $e_k^2 = -e_0$ and $e_1e_2 = e_3$ under the injective algebra map $L$. A general root is $\xi = u_1e_1+u_2e_2+u_3e_3$ with $u_1^2+u_2^2+u_3^2 = 1$, and $L_\xi = u_1I_1+u_2I_2+u_3I_3$. $\square$</p>
-<p>The family $\{I_1,I_2,I_3\}$ is a <strong>quaternionic structure</strong> on $\mathbb{H}$: a triple of anticommuting complex structures, whose span is the two-sphere $\Sigma$, and whose existence is the same statement as the non-commutativity of the algebra. The complex line spanned by $1$ and $\xi$ is a complex structure in the algebraic sense — a subalgebra isomorphic to $\mathbb{C}$ — while $L_\xi$ is a complex structure in the linear sense.</p>
+<p>and the whole two-dimensional set $\Sigma$ of roots is the family of complex structures spanned by them.</p>
+<p><em>Proof.</em> The relations are the images of the algebra relations $e_k^2 = -e_0$ and $e_1e_2 = e_3$ under the injective algebra map $L$. A general root is $\xi = u_1e_1+u_2e_2+u_3e_3$ with $u_1^2+u_2^2+u_3^2 = 1$, and $L_\xi = u_1I_1+u_2I_2+u_3I_3$.</p>
+<p>The family $\{I_1,I_2,I_3\}$ is a <strong>quaternionic structure</strong> on $\mathbb{H}$: a triple of anticommuting complex structures, whose span is the two-dimensional set $\Sigma$, and whose existence is the same statement as the non-commutativity of the algebra. The complex line spanned by $1$ and $\xi$ is a complex structure in the algebraic sense — a subalgebra isomorphic to $\mathbb{C}$ — while $L_\xi$ is a complex structure in the linear sense.</p>
 <h2 id="the-roots-of-plus-one">The Roots of Plus One</h2>
 <p><strong>Theorem.</strong> The solutions of $\eta^2 = 1$ in $\mathbb{H}$ are exactly $\eta = \pm 1$.</p>
-<p><em>Proof.</em> The identity $\eta^2-1 = (\eta-1)(\eta+1)$ holds by distributivity, and $\mathbb{H}$ has no zero divisors, so $\eta^2 = 1$ implies $\eta-1 = 0$ or $\eta+1 = 0$. The two values both satisfy the equation. $\square$</p>
-<p><strong>Corollary.</strong> The set of roots of $+1$ has two elements, and it is the centre of the unit sphere: $\{\pm1\} = Z(Sp(1))$.</p>
-<p><em>Proof.</em> The centre of $Sp(1)$ consists of the units commuting with every quaternion, which are the norm-one elements of the centre $\mathbb{R}$, namely $\pm1$. $\square$</p>
-<p><strong>Remark.</strong> The contrast between the two equations is complete. The root set of $+1$ is discrete and realizes the centre; the root set of $-1$ is a two-sphere and realizes a single conjugacy class, the class of $e_1$, and it is as far from central as a conjugacy class can be: only the trivial class is smaller in the quotient. The equation $\eta^2 = 1$ has as many solutions as an algebra with no zero divisors permits — exactly the two central ones — and it has no solution outside $\mathbb{R}$.</p>
+<p><em>Proof.</em> The identity $\eta^2-1 = (\eta-1)(\eta+1)$ holds by distributivity, and $\mathbb{H}$ has no zero divisors, so $\eta^2 = 1$ implies $\eta-1 = 0$ or $\eta+1 = 0$. The two values both satisfy the equation.</p>
+<p><strong>Corollary.</strong> The set of roots of $+1$ has two elements, and it is the centre of the group $\{N = 1\}$: $\{\pm1\} = Z(Sp(1))$.</p>
+<p><em>Proof.</em> The centre of $Sp(1)$ consists of the units commuting with every quaternion, which are the elements of the centre $\mathbb{R}$ with $N = 1$, namely $\pm1$.</p>
+<p><strong>Remark.</strong> The contrast between the two equations is complete. The root set of $+1$ is discrete and realizes the centre; the root set of $-1$ has real dimension two and realizes a single conjugacy class, the class of $e_1$, and it is as far from central as a conjugacy class can be: only the trivial class is smaller in the quotient. The equation $\eta^2 = 1$ has as many solutions as an algebra with no zero divisors permits — exactly the two central ones — and it has no solution outside $\mathbb{R}$.</p>
 <h2 id="comparison-with-the-biquaternion-and-split-quaternion-cases">Comparison with the Biquaternion and Split-Quaternion Cases</h2>
 <p>The root set of $-1$ grows as soon as the coefficient field is enlarged, and the enlargement is the measure of how far the algebra has moved from the division case.</p>
-<p><strong>Proposition.</strong> In the split quaternion algebra $\mathbb{H}_{\mathrm{s}}$, with basis $1,e_1,e_2,e_3$, $e_1^2 = -1$, $e_2^2 = +1$, $e_3 = e_1e_2$, the solutions of $\xi^2 = -1$ are the points of the two-sheeted hyperboloid</p>
+<p><strong>Proposition.</strong> In the split quaternion algebra $\mathbb{H}_{\mathrm{s}}$, with basis $1,e_1,e_2,e_3$, $e_1^2 = -1$, $e_2^2 = +1$, $e_3 = e_1e_2$, the solutions of $\xi^2 = -1$ are the points of the level set $N = 1$</p>
 <p>$$
 x_1^2 - x_2^2 - x_3^2 = 1, \qquad \xi = x_1e_1+x_2e_2+x_3e_3 ,
 $$</p>
-<p>a two-dimensional surface rather than a sphere.</p>
-<p><em>Proof.</em> Writing $\xi = x_0 + x_1e_1+x_2e_2+x_3e_3$ and using $e_1^2 = -1$, $e_2^2 = e_3^2 = +1$ and the vanishing of the anticommutators, one has $v^2 = -x_1^2+x_2^2+x_3^2$ for the vector part $v = x_1e_1+x_2e_2+x_3e_3$, so $\xi^2 = x_0^2 - x_1^2+x_2^2+x_3^2 + 2x_0v$. Setting $\xi^2 = -1$ gives $x_0v = 0$ and $x_0^2-x_1^2+x_2^2+x_3^2 = -1$; if $x_0\neq0$ then $v = 0$ and $x_0^2 = -1$, impossible, so $x_0 = 0$ and $x_1^2-x_2^2-x_3^2 = 1$. $\square$</p>
+<p>a set of dimension two rather than a surface of higher dimension.</p>
+<p>The derivation is in <em>Split-Quaternion Roots of Minus One</em>, where the split quaternion algebra is treated; only the comparison is recorded here.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -130,26 +130,26 @@ $$</p>
 <tbody>
 <tr>
 <td>$\mathbb{H}$</td>
-<td>the sphere $S^2$ of pure units</td>
+<td>the pure elements with $N = 1$</td>
 <td>$\{\pm1\}$</td>
 </tr>
 <tr>
 <td>$\mathbb{H}_{\mathrm{s}}$</td>
-<td>the two-sheeted hyperboloid $x_1^2-x_2^2-x_3^2 = 1$ (in $x_0 = 0$)</td>
-<td>the one-sheeted hyperboloid $x_2^2+x_3^2-x_1^2 = 1$ (in $x_0 = 0$), together with $\pm1$</td>
+<td>the level set $x_1^2-x_2^2-x_3^2 = 1$ (in $x_0 = 0$)</td>
+<td>the level set $x_2^2+x_3^2-x_1^2 = 1$ (in $x_0 = 0$), together with $\pm1$</td>
 </tr>
 <tr>
 <td>$\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$</td>
-<td>a two-sphere together with further complex sheets</td>
+<td>a two-dimensional family together with further complex sheets</td>
 <td>the roots $\xi i$ obtained from those of $-1$, including $\pm\mu i$ for a pure unit $\mu$</td>
 </tr>
 </tbody>
 </table></div>
-<p>The biquaternion root set is computed in <em>Biquaternion Roots of Minus One</em>; it contains the pure sphere but also roots with complex coordinates, from which the non-trivial idempotents $\tfrac{1}{2}(1+\xi i)$ are built. The presence of those extra roots is the failure of division: in a division algebra the factorisation argument of the roots-of-$+1$ theorem is available and the root set is small, while in $\mathbb{H}_{\mathrm{s}}$ and in $\mathbb{B}$ the same factorisation fails.</p>
+<p>The biquaternion root set is computed in <em>Biquaternion Roots of Minus One</em>; it contains the pure roots but also roots with complex coordinates, from which the non-trivial idempotents $\tfrac{1}{2}(1+\xi i)$ are built. The presence of those extra roots is the failure of division: in a division algebra the factorisation argument of the roots-of-$+1$ theorem is available and the root set is small, while in $\mathbb{H}_{\mathrm{s}}$ and in $\mathbb{B}$ the same factorisation fails.</p>
 <h2 id="summary">Summary</h2>
-<p>A quaternion satisfies $\xi^2 = -1$ exactly when it is a pure imaginary quaternion of norm one, so the root set is the unit sphere $\Sigma = \operatorname{Im}\mathbb{H}\cap Sp(1)\cong S^2$, a two-dimensional family in place of the two roots $\pm i$ of the complex case. The square of a general quaternion splits into the scalar equation $q_0^2-N(\mathbf{q}) = -1$ and the vector equation $2q_0\mathbf{q} = 0$, and the pair forces $q_0 = 0$ and $N(\mathbf{q}) = 1$.</p>
-<p>The root set is a single conjugacy class of the unit group under the adjoint action, and the orbit–stabiliser theorem identifies it with the homogeneous space $Sp(1)/U(1)\cong SO(3)/SO(2)\cong S^2$, the stabiliser of $e_1$ being the circle of units commuting with $e_1$. Each root gives a complex structure $L_\xi$ on the underlying real space $\mathbb{H}\cong\mathbb{R}^4$, and the three roots $e_1,e_2,e_3$ give the anticommuting triple $I_1,I_2,I_3$ of a quaternionic structure whose span is the whole two-sphere of roots.</p>
-<p>The companion equation $\eta^2 = 1$ has only the two solutions $\pm1$, because the factorisation $(\eta-1)(\eta+1) = 0$ together with the absence of zero divisors forces $\eta$ to be central; the root set of $+1$ is the centre of the unit sphere $Sp(1)$. In the split quaternion algebra the roots of $-1$ fill a two-sheeted hyperboloid rather than a sphere, and in the biquaternion algebra they include further complex sheets, from which the non-trivial idempotents are built; in both cases the extra roots are bought with the loss of the division property.</p>
+<p>A quaternion satisfies $\xi^2 = -1$ exactly when it is a pure imaginary quaternion with $N = 1$, so the root set is $\Sigma = \operatorname{Im}\mathbb{H}\cap Sp(1)$, the level set $\{N = 1\}$, a two-dimensional family in place of the two roots $\pm i$ of the complex case. The square of a general quaternion splits into the scalar equation $q_0^2-N(\mathbf{q}) = -1$ and the vector equation $2q_0\mathbf{q} = 0$, and the pair forces $q_0 = 0$ and $N(\mathbf{q}) = 1$.</p>
+<p>The root set is a single conjugacy class of the unit group under the adjoint action, and the orbit–stabiliser theorem identifies it with the homogeneous space $Sp(1)/U(1)\cong SO(3)/SO(2)$, the stabiliser of $e_1$ being the circle of units commuting with $e_1$. Each root gives a complex structure $L_\xi$ on the underlying real space $\mathbb{H}\cong\mathbb{R}^4$, and the three roots $e_1,e_2,e_3$ give the anticommuting triple $I_1,I_2,I_3$ of a quaternionic structure whose span is the whole two-dimensional set of roots.</p>
+<p>The companion equation $\eta^2 = 1$ has only the two solutions $\pm1$, because the factorisation $(\eta-1)(\eta+1) = 0$ together with the absence of zero divisors forces $\eta$ to be central; the root set of $+1$ is the centre of $Sp(1)$. In the split quaternion algebra the roots of $-1$ fill a set with two components rather than one, and in the biquaternion algebra they include further complex sheets, from which the non-trivial idempotents are built; in both cases the extra roots are bought with the loss of the division property.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -176,8 +176,8 @@ $$</p>
 <td>Quaternion conjugate</td>
 </tr>
 <tr>
-<td>$N(\tilde q) = \tilde q\bar{\tilde q}$</td>
-<td>Norm form</td>
+<td>$N$</td>
+<td>Quaternion norm, from <em>Quaternion Norm and Invertibility</em></td>
 </tr>
 <tr>
 <td>$\operatorname{Im}\mathbb{H}$</td>
@@ -185,11 +185,11 @@ $$</p>
 </tr>
 <tr>
 <td>$\Sigma = \{\xi : \xi^2 = -1\} = \operatorname{Im}\mathbb{H}\cap Sp(1)$</td>
-<td>Root sphere, $\cong S^2$</td>
+<td>Root set, the level set $\{N = 1\}$ in $\operatorname{Im}\mathbb{H}$</td>
 </tr>
 <tr>
-<td>$Sp(1) = \{\tilde q : N(\tilde q) = 1\} = S^3$</td>
-<td>Unit quaternions</td>
+<td>$Sp(1) = \{N = 1\}$</td>
+<td>The group $\{N = 1\}$ of units, from <em>Quaternion Norm and Invertibility</em></td>
 </tr>
 <tr>
 <td>$U(1) = \{e^{e_1\theta}\}$</td>

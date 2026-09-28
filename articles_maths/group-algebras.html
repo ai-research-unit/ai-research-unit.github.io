@@ -65,7 +65,7 @@ $$</p>
 $$</p>
 <p>The elements of $G$ form a $k$-basis, so $\dim_k k[G] = |G|$ when $G$ is finite, and $k[G]$ is commutative if and only if $G$ is abelian.</p>
 <p><strong>Proposition (elementary structure).</strong> $k[G]$ is an associative $k$-algebra with unit $1_G$; the map $g \mapsto g$ embeds $G$ as a subgroup of the unit group $k[G]^\times$; and $k^\times \subseteq k[G]^\times$ sits in the centre as the scalar multiples of $1_G$.</p>
-<p><em>Proof.</em> Associativity of the product follows from associativity in $G$ and bilinearity, and the identity element is $1_G$ since $1_Gg = g1_G = g$. Each $g$ has inverse $g^{-1}$, so $G$ lies in the unit group, and the scalars $\lambda 1_G$ commute with every basis element and are invertible when $\lambda \neq 0$. $\square$</p>
+<p><em>Proof.</em> Associativity of the product follows from associativity in $G$ and bilinearity, and the identity element is $1_G$ since $1_Gg = g1_G = g$. Each $g$ has inverse $g^{-1}$, so $G$ lies in the unit group, and the scalars $\lambda 1_G$ commute with every basis element and are invertible when $\lambda \neq 0$.</p>
 <p><strong>Remark (the identification with convolution).</strong> Writing an element as a function $a : G \to k$ of finite support, the product becomes the <strong>convolution</strong></p>
 <p>$$
 (ab)(g) = \sum_{h \in G} a(h)\, b(h^{-1}g),
@@ -77,14 +77,14 @@ $$</p>
 \lambda : k[G] \longrightarrow \operatorname{End}_k(k[G]), \qquad \lambda(x)(y) = xy .
 $$</p>
 <p><strong>Proposition.</strong> $\lambda$ is an injective algebra homomorphism, so $k[G]$ is isomorphic to the subalgebra $\lambda(k[G])$ of $\operatorname{End}_k(k[G])$; for finite $G$ it is an isomorphism onto the algebra of all $k$-linear endomorphisms that commute with right multiplication by every element of $G$.</p>
-<p><em>Proof.</em> Injectivity: $k[G]$ is a free module with basis the group elements, and $\lambda(x) = 0$ implies $xg = 0$ for all $g$, hence $x = 0$. The commutant statement is standard: an endomorphism commuting with all right multiplications is determined by the image of $1_G$, which can be any element. $\square$</p>
+<p><em>Proof.</em> Injectivity: $k[G]$ is a free module with basis the group elements, and $\lambda(x) = 0$ implies $xg = 0$ for all $g$, hence $x = 0$. The commutant statement is standard: an endomorphism commuting with all right multiplications is determined by the image of $1_G$, which can be any element.</p>
 <p>Every $k[G]$-module is thus a representation of $G$ by $k$-linear maps, and conversely; the group algebra is precisely the algebra whose module category is the representation category of $G$. This is the sense in which $k[G]$ linearises the group, and it is the reason the structure theory of representations is the structure theory of modules over $k[G]$.</p>
 <p><strong>Theorem (the regular module).</strong> For finite $G$ and $k = \mathbb{C}$, the left regular module $k[G]$ decomposes as</p>
 <p>$$
 \mathbb{C}[G] \cong \bigoplus_{\rho} V_\rho^{\oplus n_\rho},
 $$</p>
 <p>where $\rho$ runs over the irreducible complex representations, $V_\rho$ has dimension $n_\rho$, and each occurs with multiplicity equal to its dimension; comparing dimensions gives $\sum_\rho n_\rho^2 = |G|$.</p>
-<p><em>Proof.</em> This is the decomposition of the regular representation of a finite group; the multiplicity of an irreducible representation in the regular representation equals its dimension by the orthogonality relations. $\square$</p>
+<p><em>Proof.</em> This is the decomposition of the regular representation of a finite group; the multiplicity of an irreducible representation in the regular representation equals its dimension by the orthogonality relations.</p>
 <h2 id="the-augmentation-ideal">The Augmentation Ideal</h2>
 <p><strong>Definition.</strong> The <strong>augmentation map</strong> is the algebra homomorphism</p>
 <p>$$
@@ -100,24 +100,24 @@ $$</p>
 <p>$$
 \sum_g a_g g = \sum_g a_g (g - 1_G) + \Bigl(\sum_g a_g\Bigr)1_G = \sum_g a_g(g-1_G),
 $$</p>
-<p>so the $g - 1_G$ generate $I(G)$; the quotient statement is the first isomorphism theorem. The second identification is the standard computation of $I/I^2$ in terms of the abelianisation. $\square$</p>
+<p>so the $g - 1_G$ generate $I(G)$; the quotient statement is the first isomorphism theorem. The second identification is the standard computation of $I/I^2$ in terms of the abelianisation.</p>
 <p><strong>Corollary.</strong> If $G$ is a nontrivial finite group and $k$ has characteristic zero, then $I(G) \neq 0$ is a nontrivial ideal, so $k[G]$ is not simple; if in addition the characteristic does not divide $|G|$, then $k[G]$ is semisimple and $I(G)$ is a direct sum of matrix algebras.</p>
 <h2 id="units-and-zero-divisors">Units and Zero Divisors</h2>
 <p><strong>Proposition (units).</strong> For any group $G$, the group $G$ and the scalars $k^\times$ lie in $k[G]^\times$, so $k^\times G \subseteq k[G]^\times$. The inclusion can be strict: for $k = \mathbb{R}$ and $G = \mathbb{Z}/2$ one has $\mathbb{R}[\mathbb{Z}/2] \cong \mathbb{R}\times\mathbb{R}$, whose units are the pairs with both entries nonzero, and $(1,2)$ is a unit of $\mathbb{R}\times\mathbb{R}$ lying outside $\mathbb{R}^\times G$, which consists of the pairs $(\lambda,\lambda)$ and $(\lambda,-\lambda)$.</p>
-<p><em>Proof.</em> The first statement is the proposition on elementary structure. For the second, the isomorphism $\mathbb{R}[\mathbb{Z}/2] \cong \mathbb{R}\times\mathbb{R}$ sends $1_G$ to $(1,1)$ and $g$ to $(1,-1)$, so the units are the pairs $(\lambda,\mu)$ with $\lambda\mu \neq 0$, while $\mathbb{R}^\times G$ consists of $\lambda(1,1)$ and $\lambda(1,-1)$; the pair $(1,2)$ is a unit outside that set. $\square$</p>
+<p><em>Proof.</em> The first statement is the proposition on elementary structure. For the second, the isomorphism $\mathbb{R}[\mathbb{Z}/2] \cong \mathbb{R}\times\mathbb{R}$ sends $1_G$ to $(1,1)$ and $g$ to $(1,-1)$, so the units are the pairs $(\lambda,\mu)$ with $\lambda\mu \neq 0$, while $\mathbb{R}^\times G$ consists of $\lambda(1,1)$ and $\lambda(1,-1)$; the pair $(1,2)$ is a unit outside that set.</p>
 <p><strong>Proposition (zero divisors).</strong> Let $g \in G$ have finite order $m \geq 2$. Then</p>
 <p>$$
 (1_G - g)\bigl(1_G + g + g^2 + \dots + g^{m-1}\bigr) = 1_G - g^m = 0,
 $$</p>
 <p>with both factors nonzero, so $1_G - g$ is a zero divisor and $k[G]$ is not a domain.</p>
-<p><em>Proof.</em> The product telescopes, and $g^m = e$; both factors are nonzero because $g \neq e$ and the group elements are linearly independent. $\square$</p>
+<p><em>Proof.</em> The product telescopes, and $g^m = e$; both factors are nonzero because $g \neq e$ and the group elements are linearly independent.</p>
 <p>Thus the group algebra of a nontrivial finite group always has zero divisors, and it is a division algebra only in the trivial case $G = \{e\}$, where $k[G] \cong k$. This is the first place where the torsion of the group is visible in the algebra.</p>
 <p><strong>Theorem (Maschke, standard).</strong> If $G$ is finite and $\operatorname{char} k$ does not divide $|G|$, then $k[G]$ is semisimple. If $\operatorname{char} k$ divides $|G|$, then $k[G]$ is not semisimple and its radical contains the element $\sum_{g\in G} g$, which satisfies $g\bigl(\sum_h h\bigr) = \sum_h h$ for all $g$ and squares to $|G|\sum_h h = 0$.</p>
 <p><em>Proof (first part, standard).</em> Given a submodule $W \subseteq V$ of a $k[G]$-module, choose any $k$-linear projection $p : V \to W$ and average it over $G$:</p>
 <p>$$
 \tilde p(v) = \frac{1}{|G|}\sum_{g\in G} g\,p(g^{-1}v),
 $$</p>
-<p>which is $k[G]$-linear because the averaging is invariant under $G$, and which is still a projection onto $W$; hence every submodule is a direct summand. $\square$</p>
+<p>which is $k[G]$-linear because the averaging is invariant under $G$, and which is still a projection onto $W$; hence every submodule is a direct summand.</p>
 <p><strong>Example (characteristic two).</strong> Let $k = \mathbb{F}_2$ and $G = \mathbb{Z}/2 = \{1_G, g\}$. Then $\operatorname{char} k = 2$ divides $|G| = 2$, and</p>
 <p>$$
 k[G] \cong \frac{\mathbb{F}_2[x]}{(x^2-1)} = \frac{\mathbb{F}_2[x]}{(x-1)^2} \cong \frac{\mathbb{F}_2[\varepsilon]}{(\varepsilon^2)},
@@ -136,13 +136,13 @@ $$</p>
 <p>$$
 k[G] \cong \prod_{\rho} M_{n_\rho}(k), \qquad |G| = \sum_\rho n_\rho^2 .
 $$</p>
-<p><em>Proof.</em> By Maschke the algebra is semisimple, so the Wedderburn–Artin theorem applies and gives the product of matrix algebras over division algebras; over an algebraically closed field every finite-dimensional division algebra over $k$ is $k$, and the number of factors and their sizes come from the decomposition of the regular module. $\square$</p>
+<p><em>Proof.</em> By Maschke the algebra is semisimple, so the Wedderburn–Artin theorem applies and gives the product of matrix algebras over division algebras; over an algebraically closed field every finite-dimensional division algebra over $k$ is $k$, and the number of factors and their sizes come from the decomposition of the regular module.</p>
 <p><strong>Corollary (the centre).</strong> $\dim_k Z(k[G])$ equals the number of conjugacy classes of $G$; over an algebraically closed field, $\dim_k Z(k[G])$ equals the number of irreducible representations, and a basis is given by the <strong>class sums</strong></p>
 <p>$$
 C_\chi = \sum_{g \in \chi} g,
 $$</p>
 <p>one for each conjugacy class $\chi$.</p>
-<p><em>Proof.</em> An element $\sum a_g g$ is central exactly when its coefficients are constant on conjugacy classes, as in <em>Centre, Units, Zero Divisors and Division Algebras</em>. $\square$</p>
+<p><em>Proof.</em> An element $\sum a_g g$ is central exactly when its coefficients are constant on conjugacy classes, as in <em>Centre, Units, Zero Divisors and Division Algebras</em>.</p>
 <p><strong>Example (cyclic groups).</strong> For $G = \mathbb{Z}/n$ generated by $g$, the group algebra is</p>
 <p>$$
 k[\mathbb{Z}/n] \cong \frac{k[x]}{(x^n-1)},

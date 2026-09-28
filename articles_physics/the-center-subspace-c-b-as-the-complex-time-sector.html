@@ -134,12 +134,12 @@ $$</p>
 <p><strong>Conversely</strong>, every element of this form is fixed: quaternion conjugation leaves the unit and the coefficient alone, so $\overline{z\,e_0} = z\,e_0$ for every complex $z$. The two directions together say that the displayed set is <em>exactly</em> the fixed space. The coordinates that survive are $q_0$ and $q'_0$ alone, which is the parametrisation recorded above: the conditions $q_k = q'_k = 0$ kill the six coordinates of the vector part, and the fixed space is the two-dimensional real subspace spanned by $e_0$ and $ie_0$ — the center of the algebra.</p>
 <h3 id="properties">Properties</h3>
 <p><strong>Subalgebra and field.</strong> The subspace is closed under multiplication, because $z e_0 \cdot w e_0 = zw\,e_0$ and $\mathbb{C}$ is closed under multiplication; it contains $e_0$; and it is commutative. In fact it is a <strong>field</strong>: every nonzero element $z e_0$ has the inverse $z^{-1}e_0$, with $z^{-1} = \bar{z}/|z|^2$ the reciprocal in $\mathbb{C}$. The subspace is therefore a field.</p>
-<p><strong>No zero divisors.</strong> A product of two central elements vanishes only if a factor does, since $z e_0 \cdot w e_0 = 0$ forces $zw = 0$ in the field $\mathbb{C}$. Within the subspace the norm form vanishes only at the origin.</p>
-<p><strong>Norm form.</strong> The biquaternion norm form on a central element is the <strong>square</strong> of the complex parameter,</p>
+<p><strong>No zero divisors.</strong> A product of two central elements vanishes only if a factor does, since $z e_0 \cdot w e_0 = 0$ forces $zw = 0$ in the field $\mathbb{C}$. Within the subspace the biquaternion norm vanishes only at the origin.</p>
+<p><strong>Biquaternion norm.</strong> The biquaternion norm on a central element is the <strong>square</strong> of the complex parameter,</p>
 <p>$$
 N(z\,e_0) = (z\,e_0)\overline{(z\,e_0)} = z^2\,e_0,
 $$</p>
-<p>since quaternion conjugation fixes the scalar part and leaves $z e_0$ unchanged. So the norm form on $\mathbb{C}_{\mathbb{B}}$ is the complex quadratic form $z \mapsto z^2$, which is real-valued only for real and purely imaginary $z$. It vanishes if and only if $z = 0$, which is again the statement that there are no zero divisors. The form is not positive definite, and it is not the modulus: the modulus $|z|^2$ is a Hermitian form, whereas the algebra's norm form is quadratic.</p>
+<p>since quaternion conjugation fixes the scalar part and leaves $z e_0$ unchanged. So the biquaternion norm on $\mathbb{C}_{\mathbb{B}}$ is the complex quadratic form $z \mapsto z^2$, which is real-valued only for real and purely imaginary $z$. It vanishes if and only if $z = 0$, which is again the statement that there are no zero divisors. The form is not positive definite, and it is not the modulus: the modulus $|z|^2$ is a Hermitian form, whereas the algebra's biquaternion norm is quadratic.</p>
 <p><strong>Hermitian and anti-Hermitian parts.</strong> Of the two basis elements, $e_0$ is Hermitian and $ie_0$ is anti-Hermitian,</p>
 <p>$$
 e_0^\dagger = e_0, \qquad (i\,e_0)^\dagger = -i\,e_0 .
@@ -165,7 +165,7 @@ $$</p>
 <p>The two readings fit together: the center is the sector of complex scalars, and a complex scalar is exactly what a frame-independent time coordinate and a global phase both are. Because its elements commute with everything, it is also the sector that can be treated as ordinary numbers; the framework's center of gravity for classical quantities, the c-numbers of the algebra, lies here.</p>
 <h2 id="summary">Summary</h2>
 <p>The center subspace $\mathbb{C}_{\mathbb{B}}$ is the two-dimensional real subspace of $\mathbb{B}$ spanned by $e_0$ and $ie_0$; it is the set of elements that commute with every element of the algebra, and as an algebra it is a copy of the complex numbers.</p>
-<p>Its elements are the complex scalars $z e_0$. It is a subalgebra and closed under multiplication by $i$, hence a complex subspace; it has no zero divisors, its only idempotents are $0$ and $e_0$ — which is the statement that the algebra is simple and has no non-trivial central splitting — and its norm form is the squared complex parameter, $N(ze_0) = z^2e_0$, which is not the modulus. Under Hermitian conjugation the real direction $e_0$ is Hermitian and the imaginary direction $ie_0$ is anti-Hermitian.</p>
+<p>Its elements are the complex scalars $z e_0$. It is a subalgebra and closed under multiplication by $i$, hence a complex subspace; it has no zero divisors, its only idempotents are $0$ and $e_0$ — which is the statement that the algebra is simple and has no non-trivial central splitting — and its biquaternion norm is the squared complex parameter, $N(ze_0) = z^2e_0$, which is not the modulus. Under Hermitian conjugation the real direction $e_0$ is Hermitian and the imaginary direction $ie_0$ is anti-Hermitian.</p>
 <p>Physically it carries the complex time coordinate $ict\,e_0$, the Hermitian energy scalar $h_0e_0$ that generates the global phase, and the c-number or classical sector of the framework.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -202,7 +202,7 @@ $$</p>
 </tr>
 <tr>
 <td>$N(ze_0) = z^2 e_0$</td>
-<td>Norm form: the squared complex parameter, not the modulus</td>
+<td>Biquaternion norm: the squared complex parameter, not the modulus</td>
 </tr>
 <tr>
 <td>$(ze_0)^{-1} = z^{-1}e_0$</td>

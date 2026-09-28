@@ -59,18 +59,18 @@
 $$</p>
 <p>and $M_2(\mathbb{R})$ is <strong>simple</strong>: its only two-sided ideals are $0$ and the whole algebra. The algebra $\mathbb{H}_{\mathrm{s}}$ is therefore simple, and yet it is <strong>not</strong> a division algebra — it carries nonzero zero divisors, as <em>Split-Quaternion Zero Divisors</em> records. This combination is what makes its ideal theory interesting: the two-sided ideal lattice is trivial, while the one-sided ideal lattice is rich and governed by the matrix structure.</p>
 <p>The article treats, in order, the definitions of ideals; the two-sided ideals and simplicity; the artinian and semisimple structure and the length of the algebra as a module over itself; the two idempotents and their orthogonal complementarity; the explicit matrix units; the Peirce decomposition into four one-dimensional corners; the grouping of the matrix units into minimal left and minimal right ideals; and the lattice of left ideals, which is a real projective line. It closes with the contrast with the quaternions $\mathbb{H}$, where there are no proper ideals at all, and with the biquaternions $\mathbb{B}$, whose ideal theory has the same shape over $\mathbb{C}$.</p>
-<p><strong>Conventions.</strong> The basis is $1, e_1, e_2, e_3$, with $e_1^2 = -1$, $e_2^2 = +1$, $e_3 = e_1 e_2$ and $e_1 e_2 = -e_2 e_1$; a general element is $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$. The conjugation, the norm form $N$ and the idempotents $\tilde\pi_\pm = \tfrac{1}{2}(1 \pm e_2)$ are assumed from <em>Split-Quaternion Algebra</em> and <em>Split-Quaternion Idempotents and Projections</em>. The definitions of rings and modules apply to the noncommutative algebra $\mathbb{H}_{\mathrm{s}}$, where "left" and "right" must be distinguished.</p>
+<p><strong>Conventions.</strong> The basis is $1, e_1, e_2, e_3$, with $e_1^2 = -1$, $e_2^2 = +1$, $e_3 = e_1 e_2$ and $e_1 e_2 = -e_2 e_1$; a general element is $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$. The conjugation and the central product $N(\tilde q) = \tilde q\bar{\tilde q}$ are assumed from <em>Split-Quaternion Algebra</em>, the idempotents $\tilde\pi_\pm = \tfrac{1}{2}(1 \pm e_2)$ from <em>Split-Quaternion Idempotents and Projections</em>, and the metrical reading of $N$ from <em>Split-Quaternion Norm and Invertibility</em>. The definitions of rings and modules apply to the noncommutative algebra $\mathbb{H}_{\mathrm{s}}$, where "left" and "right" must be distinguished.</p>
 <h2 id="ideals-in-an-algebra">Ideals in an Algebra</h2>
 <p>Let $A$ be an associative unital algebra over a field $k$. An additive subgroup $I \subseteq A$ is a <strong>left ideal</strong> if $A I \subseteq I$, a <strong>right ideal</strong> if $I A \subseteq I$, and a <strong>two-sided ideal</strong> if it is both. The distinction matters only when $A$ is noncommutative; for $\mathbb{H}_{\mathrm{s}}$ the three notions genuinely differ. The ideals $0$ and $A$ are called trivial.</p>
 <p>A base-field remark will be used repeatedly. If $A I \subseteq I$, then $I$ is automatically a $k$-subspace, since $\lambda \tilde q = (\lambda 1)\tilde q \in I$ for $\lambda \in k$ and $\tilde q \in I$, as $\lambda 1 \in A$. So the left ideals do not depend on which field of scalars inside the centre is used to view the algebra.</p>
 <p>For a two-sided ideal $I$, the <strong>quotient algebra</strong> $A/I$ is defined, and kernels of algebra homomorphisms are two-sided ideals; the first isomorphism theorem gives $A/\ker\varphi \cong \operatorname{im}\varphi$. For a left ideal only, $A/I$ is still a left $A$-module but not in general an algebra. Thus the left ideals govern module theory and the two-sided ideals govern quotient algebras.</p>
-<h2 id="the-two-sided-ideals-simplicity-of-math41">The Two-Sided Ideals: Simplicity of $\mathbb{H}_{\mathrm{s}}$</h2>
+<h2 id="the-two-sided-ideals-simplicity-of-math42">The Two-Sided Ideals: Simplicity of $\mathbb{H}_{\mathrm{s}}$</h2>
 <p><strong>Theorem.</strong> The only two-sided ideals of $\mathbb{H}_{\mathrm{s}}$ are $0$ and $\mathbb{H}_{\mathrm{s}}$. Equivalently, $\mathbb{H}_{\mathrm{s}}$ is a <strong>simple</strong> $\mathbb{R}$-algebra.</p>
 <p><strong>Proof.</strong> Work in the matrix algebra $M_2(\mathbb{R})$ under the identification $\mathbb{H}_{\mathrm{s}} \cong M_2(\mathbb{R})$ (<em>Matrix Algebras</em>). Let the matrix units satisfy $E_{ij} E_{kl} = \delta_{jk} E_{il}$, from which $E_{ik} M E_{lj} = M_{kl} E_{ij}$ for any matrix $M = (M_{kl})$. If $I \neq 0$ is a two-sided ideal and $M \in I$ has $M_{kl} \neq 0$, then</p>
 <p>$$
 E_{ij} = M_{kl}^{-1} E_{ik} M E_{lj} \in I .
 $$</p>
-<p>Hence $I$ contains every matrix unit, so $I = M_2(\mathbb{R})$. Transporting back gives the claim. $\square$</p>
+<p>Hence $I$ contains every matrix unit, so $I = M_2(\mathbb{R})$. Transporting back gives the claim.</p>
 <p>Consequences:</p>
 <ul>
 <li>The only quotient algebras of $\mathbb{H}_{\mathrm{s}}$ are $\mathbb{H}_{\mathrm{s}}$ and $0$.</li>
@@ -240,8 +240,8 @@ $$</p>
 </tr>
 <tr>
 <td>$N(\tilde q) = \tilde q\bar{\tilde q}$</td>
-<td>the norm form, signature $(2,2)$</td>
-<td><em>Split-Quaternion Norm and Invertibility</em></td>
+<td>the central product, formed and evaluated algebraically</td>
+<td>this article</td>
 </tr>
 </tbody>
 </table></div>

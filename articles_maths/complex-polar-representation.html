@@ -54,7 +54,7 @@
 <h2 id="introduction">Introduction</h2>
 <p>This article is about the <strong>polar representation</strong> of a complex number: the statement that every nonzero complex number is the product of a positive real scale and a unit complex number, and the description of the unit factor as an exponential.</p>
 <p>The subject is elementary, and its place in this blog is that of the base case. The polar representation is developed here for the two-dimensional definite algebra $\mathbb{C}$, in the companion article <em>Split-Complex Polar Representation</em> for the two-dimensional indefinite algebra $\mathbb{D}$, and in the four companion articles on the polar representations of the quaternion, split-quaternion, biquaternion and split-biquaternion algebras. The family decomposes every element of every one of these algebras into the same four <strong>slots</strong> — a scale, a central phase, a boost and a rotor — and which slots are occupied is a property of the algebra. In $\mathbb{C}$ exactly two slots are occupied, and one of them does double duty, so the algebra is the smallest case in which the pattern is already visible without any of the difficulties that come later: no branch choice, no boost, no zero divisors, no boundary.</p>
-<p>The plan is as follows. The modulus and the unit factor are defined, and existence and uniqueness are proved. The unit factor is then described as an exponential, and the exponential is organised by the trichotomy $\nu^2 = -1$, $0$, $+1$ that governs every algebra of the family: the sign of the square of the exponent determines whether the exponential is trigonometric, parabolic or hyperbolic, and it is the same rule in $\mathbb{C}$, in $\mathbb{D}$ and in the biquaternion algebra. The two factors are then identified with the two halves of that trichotomy, the absent slots are accounted for, and the group of units, the matrix picture and worked examples close the article. The conventions are those of <em>Complex Algebra</em>: the basis is $1$, $i$, the multiplication is $i^2 = -1$, the conjugate is $\bar{Z} = a - i b$, and the norm form is $N(Z) = Z\bar{Z} = a^2 + b^2$. Every numerical value displayed below was recomputed in double precision.</p>
+<p>The plan is as follows. The modulus and the unit factor are defined, and existence and uniqueness are proved. The unit factor is then described as an exponential, and the exponential is organised by the trichotomy $\nu^2 = -1$, $0$, $+1$ that governs every algebra of the family: the sign of the square of the exponent determines whether the exponential is trigonometric, parabolic or hyperbolic, and it is the same rule in $\mathbb{C}$, in $\mathbb{D}$ and in the biquaternion algebra. The two factors are then identified with the two halves of that trichotomy, the absent slots are accounted for, and the group of units, the matrix picture and worked examples close the article. The conventions are those of <em>Complex Algebra</em>: the basis is $1$, $i$, the multiplication is $i^2 = -1$, the conjugate is $\bar{Z} = a - i b$, and the norm is $N(Z) = Z\bar{Z} = a^2 + b^2$. Every numerical value displayed below was recomputed in double precision.</p>
 <h2 id="the-modulus-and-the-unit-factor">The Modulus and the Unit Factor</h2>
 <h3 id="the-two-factors">The Two Factors</h3>
 <p><strong>Definition.</strong> Let $Z \in \mathbb{C}$, $Z \neq 0$. The <strong>polar representation</strong> of $Z$ is the writing</p>
@@ -63,8 +63,8 @@ Z = r\,u, \qquad r \in \mathbb{R}, \quad r > 0, \qquad u \in \mathbb{C}, \quad N
 $$</p>
 <p>in which $r$ is the <strong>modulus</strong> of $Z$ and $u$ is its <strong>unit factor</strong>.</p>
 <p>The definition names the two factors before anything is proved about them, so that the propositions below have definite objects to be about. The modulus carries one real parameter. The unit factor is constrained by one real equation, $N(u) = 1$, which is the circle, so it carries one parameter out of the two of a general complex number. The counts add to the real dimension of the algebra, and this additivity is the pattern the whole family follows.</p>
-<h3 id="the-modulus-from-the-norm-form">The Modulus from the Norm Form</h3>
-<p>The norm form of a complex number is</p>
+<h3 id="the-modulus-from-the-norm">The Modulus from the Norm</h3>
+<p>The norm of a complex number is</p>
 <p>$$
 N(Z) = Z\bar{Z} = a^2 + b^2.
 $$</p>
@@ -72,8 +72,8 @@ $$</p>
 <p>$$
 r = \sqrt{N(Z)} = |Z|.
 $$</p>
-<p>Because the norm form is strictly positive off the origin, the square root is a strictly positive real number with no sign choice and no branch choice. The requirement $r > 0$ is therefore met automatically and the modulus is forced. In the companion articles the corresponding object is a square root of an indefinite real form or of a complex number, and there the sign and the branch both demand attention; in $\mathbb{C}$ neither does.</p>
-<p>The modulus is multiplicative, because the norm form is: $r(ZW) = r(Z)r(W)$, and also $r(\lambda Z) = |\lambda| r(Z)$ for real $\lambda$.</p>
+<p>Because the norm is strictly positive off the origin, the square root is a strictly positive real number with no sign choice and no branch choice. The requirement $r > 0$ is therefore met automatically and the modulus is forced. In the companion articles the corresponding object is a square root of an indefinite real form or of a complex number, and there the sign and the branch both demand attention; in $\mathbb{C}$ neither does.</p>
+<p>The modulus is multiplicative, because the norm is: $r(ZW) = r(Z)r(W)$, and also $r(\lambda Z) = |\lambda| r(Z)$ for real $\lambda$.</p>
 <h3 id="the-unit-factor-and-the-circle">The Unit Factor and the Circle</h3>
 <p>The unit factor is</p>
 <p>$$
@@ -87,7 +87,7 @@ $$</p>
 <h3 id="existence-and-uniqueness">Existence and Uniqueness</h3>
 <p><strong>Theorem.</strong> Every nonzero complex number $Z$ has exactly one polar representation.</p>
 <p><strong>Existence.</strong> Put $r = \sqrt{N(Z)}$ and $u = Z/r$. Since $N(Z) > 0$, the number $r$ is a positive real, and $N(u) = N(Z)/r^2 = 1$ because $N(\lambda Z) = \lambda^2N(Z)$ for real $\lambda$. Hence $Z = ru$ with $r > 0$ and $N(u) = 1$.</p>
-<p><strong>Uniqueness.</strong> Suppose $Z = ru = r'u'$ with $r, r' > 0$ and $N(u) = N(u') = 1$. Taking norm forms gives $r^2 = N(Z) = r'^2$, so $r = r'$ because both are positive, and then $u = Z/r = u'$. $\square$</p>
+<p><strong>Uniqueness.</strong> Suppose $Z = ru = r'u'$ with $r, r' > 0$ and $N(u) = N(u') = 1$. Taking norms gives $r^2 = N(Z) = r'^2$, so $r = r'$ because both are positive, and then $u = Z/r = u'$.</p>
 <p>The pair of factors is therefore unique, with no sign ambiguity and no branch ambiguity. What is <em>not</em> unique is the coordinate that will be used for the unit factor: the angle of $u$ is determined only modulo $2\pi$, so the representation $Z = r e^{i\theta}$ determines the number $\theta$ only as a class in $\mathbb{R}/2\pi\mathbb{Z}$. This is the first of the two differences from the quaternion case, where the axis-angle coordinate of the rotor is unique, and it is a property of the exponential and not of the factorisation: two different coordinates give the same unit factor.</p>
 <h2 id="the-exponential-form">The Exponential Form</h2>
 <h3 id="the-trichotomy-of-the-exponential">The Trichotomy of the Exponential</h3>
@@ -127,9 +127,9 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p><strong>Proof.</strong> The exponential is the series $\exp(\nu\theta) = \sum_{n\ge0}\nu^n\theta^n/n!$, and the hypothesis on $\nu^2$ makes the powers periodic, truncated or monotone. For $\nu^2 = -1$ the even powers alternate as $(-1)^k$ and the odd powers as $(-1)^k\nu$, and the two partial series are the cosine and the sine. For $\nu^2 = 0$ every power from the second onward vanishes and the series is its first two terms. For $\nu^2 = +1$ the even powers are $1$ and the odd powers are $\nu$ without alternation, and the two series are the hyperbolic cosine and the hyperbolic sine. $\square$</p>
+<p><strong>Proof.</strong> The exponential is the series $\exp(\nu\theta) = \sum_{n\ge0}\nu^n\theta^n/n!$, and the hypothesis on $\nu^2$ makes the powers periodic, truncated or monotone. For $\nu^2 = -1$ the even powers alternate as $(-1)^k$ and the odd powers as $(-1)^k\nu$, and the two partial series are the cosine and the sine. For $\nu^2 = 0$ every power from the second onward vanishes and the series is its first two terms. For $\nu^2 = +1$ the even powers are $1$ and the odd powers are $\nu$ without alternation, and the two series are the hyperbolic cosine and the hyperbolic sine.</p>
 <p>The trichotomy is a statement about the <em>sign of the square of the exponent</em>, not about the algebra. Which of the three rows are non-empty is a statement about the algebra, and the answer is what distinguishes the members of the family from one another.</p>
-<h3 id="the-roots-of-math88-in-math89">The Roots of $\pm 1$ in $\mathbb{C}$</h3>
+<h3 id="the-roots-of-math86-in-math87">The Roots of $\pm 1$ in $\mathbb{C}$</h3>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -214,7 +214,7 @@ $$</p>
 <p><strong>No boost.</strong> A boost would be a unit factor of hyperbolic signature, $\exp(\nu\phi)$ with $\nu^2 = +1$ off the centre, and in $\mathbb{C}$ the only elements with $\nu^2 = +1$ are $\nu = \pm 1$, which are central: their exponentials are the real numbers $e^{\pm\phi}$, already counted as the scale. There is no non-central hyperbolic direction, so no boost, and the group of units contains no non-compact one-parameter subgroup other than the scale.</p>
 <p><strong>The central phase is the rotation.</strong> In the biquaternion algebra the central phase $e^{i\alpha}$ and the rotor are different factors, the phase being central and the rotor not. In $\mathbb{C}$ the algebra is commutative, so <em>every</em> element is central, and the two slots collapse into one: the circle is at the same time the rotation factor and the central phase. This is why the two-dimensional definite case cannot display the phase and the rotor separately, and it is a consequence of commutativity alone.</p>
 <h3 id="no-boundary">No Boundary</h3>
-<p>The polar representation of $\mathbb{C}$ has no boundary: it holds on $\mathbb{C}\setminus\{0\}$ and the only excluded element is the origin. The reason is the definiteness of the norm form. If $Z \neq 0$ then $N(Z) > 0$, so $r > 0$ and $u = Z/r$ is defined; there is no element with $N(Z) = 0$ other than zero, and so there is no set on which the modulus vanishes while the element does not. The companion article on the split-complex algebra is the first in the family where this fails, the first where a nonzero element can have a vanishing modulus, and the first where the polar representation must be restricted to a cone complement.</p>
+<p>The polar representation of $\mathbb{C}$ has no boundary: it holds on $\mathbb{C}\setminus\{0\}$ and the only excluded element is the origin. The reason is the definiteness of the norm. If $Z \neq 0$ then $N(Z) > 0$, so $r > 0$ and $u = Z/r$ is defined; there is no element with $N(Z) = 0$ other than zero, and so there is no set on which the modulus vanishes while the element does not. The companion article on the split-complex algebra is the first in the family where this fails, the first where a nonzero element can have a vanishing modulus, and the first where the polar representation must be restricted to a cone complement.</p>
 <h2 id="the-group-of-units-and-the-circle">The Group of Units and the Circle</h2>
 <p>The group of units of $\mathbb{C}$ is $\mathbb{C}^\times = \mathbb{C}\setminus\{0\}$, and it is the direct product of the two factors,</p>
 <p>$$
@@ -230,7 +230,7 @@ $$</p>
 \mathbb{C}^\times = \exp(\mathbb{R})\cdot\exp(i\mathbb{R}).
 $$</p>
 <h2 id="the-matrix-picture">The Matrix Picture</h2>
-<h3 id="multiplication-by-math161-as-a-complex-structure">Multiplication by $i$ as a Complex Structure</h3>
+<h3 id="multiplication-by-math159-as-a-complex-structure">Multiplication by $i$ as a Complex Structure</h3>
 <p>In the real basis $\{1,i\}$ a complex number is the pair $(a,b)$, and multiplication by $Z = a+i b$ is the linear map</p>
 <p>$$
 M_Z = \begin{pmatrix} a & -b \\ b & a \end{pmatrix} = a\,I + b\,J, \qquad J = \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}, \qquad J^2 = -I .
@@ -239,7 +239,7 @@ $$</p>
 <p>$$
 \det M_Z = a^2 + b^2 = N(Z), \qquad \operatorname{tr}M_Z = 2a,
 $$</p>
-<p>so the norm form is the determinant and the modulus is the square root of the determinant, $r = \sqrt{\det M_Z}$. The polar representation $Z = ru$ becomes in the matrix picture the factorisation</p>
+<p>so the norm is the determinant and the modulus is the square root of the determinant, $r = \sqrt{\det M_Z}$. The polar representation $Z = ru$ becomes in the matrix picture the factorisation</p>
 <p>$$
 M_Z = r\,M_u, \qquad M_u = \begin{pmatrix} \cos\theta & -\sin\theta \\ \sin\theta & \cos\theta \end{pmatrix} \in SO(2),
 $$</p>
@@ -337,7 +337,7 @@ $$</p>
 <thead>
 <tr>
 <th>algebra</th>
-<th>norm form</th>
+<th>norm</th>
 <th>modulus</th>
 <th>unit factor</th>
 <th>occupied slots</th>
@@ -389,7 +389,7 @@ $$</p>
 </table></div>
 <p>The progression is the progression of the trichotomy. In $\mathbb{C}$ only the trigonometric row is occupied by the unit factor, and it is compact. In $\mathbb{D}$ the hyperbolic row is occupied instead, and the unit group is no longer compact. From $\mathbb{H}$ onward the roots of $-1$ form a positive-dimensional set and the unit factor acquires an axis; from $\mathbb{B}$ onward both a trigonometric and a hyperbolic factor occur at once, and the word in which they are written becomes part of the statement. The two-dimensional algebra $\mathbb{C}$ is the case in which none of that can happen, which is why it is treated first.</p>
 <h2 id="summary">Summary</h2>
-<p>Every nonzero complex number has exactly one polar representation $Z = ru$, with modulus $r = \sqrt{N(Z)} > 0$ and unit factor $u = Z/r$ on the circle. The modulus is central and Hermitian of signature $+1$ and carries one parameter; the unit factor is central and anti-Hermitian of signature $-1$ and carries one parameter; the counts add to the real dimension two. The unit factor is the exponential $u = \exp(i\theta)$ of an anti-Hermitian element of signature $-1$, which is the trigonometric row of the trichotomy $\nu^2 = -1, 0, +1$, and its coordinate $\theta$ is a class modulo $2\pi$, the kernel of the exponential. Of the four slots of the family — scale, central phase, boost, rotor — exactly two are occupied, and because $\mathbb{C}$ is commutative the circle serves as both the rotation factor and the central phase. The hyperbolic row of the trichotomy contains only the central elements $\pm1$ and so produces the scale rather than a boost, and the parabolic row contains only $\nu = 0$ and so produces nothing. The norm form is definite, so there are no zero divisors and the polar representation has no boundary: the origin is the only excluded element. In the matrix picture the statement is the polar decomposition of a conformal matrix into a scalar and a rotation.</p>
+<p>Every nonzero complex number has exactly one polar representation $Z = ru$, with modulus $r = \sqrt{N(Z)} > 0$ and unit factor $u = Z/r$ on the circle. The modulus is central and Hermitian of signature $+1$ and carries one parameter; the unit factor is central and anti-Hermitian of signature $-1$ and carries one parameter; the counts add to the real dimension two. The unit factor is the exponential $u = \exp(i\theta)$ of an anti-Hermitian element of signature $-1$, which is the trigonometric row of the trichotomy $\nu^2 = -1, 0, +1$, and its coordinate $\theta$ is a class modulo $2\pi$, the kernel of the exponential. Of the four slots of the family — scale, central phase, boost, rotor — exactly two are occupied, and because $\mathbb{C}$ is commutative the circle serves as both the rotation factor and the central phase. The hyperbolic row of the trichotomy contains only the central elements $\pm1$ and so produces the scale rather than a boost, and the parabolic row contains only $\nu = 0$ and so produces nothing. The norm is definite, so there are no zero divisors and the polar representation has no boundary: the origin is the only excluded element. In the matrix picture the statement is the polar decomposition of a conformal matrix into a scalar and a rotation.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -413,7 +413,7 @@ $$</p>
 </tr>
 <tr>
 <td>$N(Z) = Z\bar{Z} = a^2+b^2$</td>
-<td>the norm form, positive definite</td>
+<td>the norm, positive definite</td>
 </tr>
 <tr>
 <td>$r = \sqrt{N(Z)} = |Z|$</td>

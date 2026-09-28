@@ -52,24 +52,24 @@
       <div class="article-body">
         <h1 id="complex-norm-and-invertibility"><strong>Complex Norm and Invertibility</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>This article studies the norm form of the complex algebra and the invertibility of its elements. It follows the basic algebra article, which defined the algebra, its unique nontrivial involution and its two distinguished subspaces. The goal here is to define the norm form and the Hermitian form, to establish the criterion for invertibility, and to describe the group of units and its polar split. The complex algebra is the definite two-dimensional member of the tensor family and the base case of the polar series, and the article collects the facts that the other members of the family generalise.</p>
-<p>The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked, and concrete instances appear only where a statement would otherwise be misread. Throughout, the basis is $1$, $i$ with $i^2 = -1$, a general element is $Z = a + i b$ with $a, b \in \mathbb{R}$, and the involution is complex conjugation $\bar{Z} = a - i b$. The norm form of a biquaternion $\tilde{Q}$ is written $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$ in that article; here the same symbol is used for the complex norm form $N(Z) = Z\bar{Z}$, and the differences between the two are stated wherever they matter.</p>
-<h2 id="the-norm-form">The Norm Form</h2>
+<p>This article studies the norm of the complex algebra and the invertibility of its elements. It follows the basic algebra article, which defined the algebra, its unique nontrivial involution and its two distinguished subspaces. The goal here is to define the norm and the Hermitian form, to establish the criterion for invertibility, and to describe the group of units and its polar split. The complex algebra is the definite two-dimensional member of the tensor family and the base case of the polar series, and the article collects the facts that the other members of the family generalise.</p>
+<p>The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked, and concrete instances appear only where a statement would otherwise be misread. Throughout, the basis is $1$, $i$ with $i^2 = -1$, a general element is $Z = a + i b$ with $a, b \in \mathbb{R}$, and the involution is complex conjugation $\bar{Z} = a - i b$. The norm of a biquaternion $\tilde{Q}$ is written $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$ in that article; here the same symbol is used for the complex norm $N(Z) = Z\bar{Z}$, and the differences between the two are stated wherever they matter.</p>
+<h2 id="the-norm">The Norm</h2>
 <h3 id="definition">Definition</h3>
-<p>The <strong>norm form</strong> of a complex number $Z$ is</p>
+<p>The <strong>norm</strong> of a complex number $Z$ is</p>
 <p>$$
 N(Z) = Z\bar{Z} = (a+i b)(a-i b) = a^2 + b^2 \in \mathbb{R}.
 $$</p>
 <p><strong>Basic properties.</strong></p>
 <ul>
-<li>$N(Z)$ is a <strong>real</strong> number, and $N(Z) \geq 0$ with equality if and only if $Z = 0$. The norm form is positive definite.</li>
+<li>$N(Z)$ is a <strong>real</strong> number, and $N(Z) \geq 0$ with equality if and only if $Z = 0$. The norm is positive definite.</li>
 <li>$N(Z)$ is invariant under conjugation: $N(\bar{Z}) = Z\bar{Z} = N(Z)$.</li>
 <li>$N(Z)$ is invariant under multiplication by the imaginary unit: $N(iZ) = (iZ)(\overline{iZ}) = (iZ)(-i\bar{Z}) = Z\bar{Z} = N(Z)$. There is no sign reversal, because the imaginary unit of $\mathbb{C}$ is not a coefficient scalar separate from the algebra.</li>
-<li>$N(Z) = 0$ if and only if $Z = 0$. There are no nonzero complex numbers of vanishing norm form; equivalently, the algebra has no zero divisors.</li>
+<li>$N(Z) = 0$ if and only if $Z = 0$. There are no nonzero complex numbers of vanishing norm; equivalently, the algebra has no zero divisors.</li>
 </ul>
-<p>The last point is the sharp difference from the biquaternion algebra, where the norm form $N(\tilde{Q}) = \sum_\mu Q_\mu^2$ is complex-valued and can vanish on a nonzero element. The complex norm form is a genuine positive-definite quadratic form.</p>
+<p>The last point is the sharp difference from the biquaternion algebra, where the norm $N(\tilde{Q}) = \sum_\mu Q_\mu^2$ is complex-valued and can vanish on a nonzero element. The complex norm is a genuine positive-definite quadratic form.</p>
 <h3 id="multiplicativity">Multiplicativity</h3>
-<p><strong>Theorem.</strong> The norm form is multiplicative:</p>
+<p><strong>Theorem.</strong> The norm is multiplicative:</p>
 <p>$$
 N(Z W) = N(Z) \, N(W).
 $$</p>
@@ -77,11 +77,11 @@ $$</p>
 <p>$$
 N(ZW) = (ZW)\overline{(ZW)} = Z W \bar{W} \bar{Z} = Z\, N(W)\, \bar{Z}.
 $$</p>
-<p>Since $N(W)$ is a real number and the algebra is commutative, it commutes with $Z$ and with $\bar{Z}$, so $Z N(W) \bar{Z} = N(W) Z\bar{Z} = N(W) N(Z)$. $\square$</p>
+<p>Since $N(W)$ is a real number and the algebra is commutative, it commutes with $Z$ and with $\bar{Z}$, so $Z N(W) \bar{Z} = N(W) Z\bar{Z} = N(W) N(Z)$.</p>
 <p><strong>Corollary.</strong> If $N(Z) \neq 0$ and $N(W) \neq 0$, then $N(ZW) \neq 0$. Equivalently, the product of two units is a unit.</p>
-<p>The multiplicativity is used below to prove the invertibility criterion in one line, exactly as in the biquaternion case, and it is the source of the polar decomposition: the norm form is the squared scale.</p>
-<h3 id="the-norm-form-is-a-genuine-norm">The Norm Form Is a Genuine Norm</h3>
-<p>The name "norm form" is not a misnomer here, in contrast with the biquaternion case. Define the <strong>modulus</strong></p>
+<p>The multiplicativity is used below to prove the invertibility criterion in one line, exactly as in the biquaternion case, and it is the source of the polar decomposition: the norm is the squared scale.</p>
+<h3 id="the-norm-is-a-genuine-norm">The Norm Is a Genuine Norm</h3>
+<p>The name "norm" is not a misnomer here, in contrast with the biquaternion case. Define the <strong>modulus</strong></p>
 <p>$$
 |Z| = \sqrt{N(Z)} = \sqrt{a^2 + b^2} \geq 0.
 $$</p>
@@ -90,40 +90,40 @@ $$</p>
 <li><strong>Positive definiteness:</strong> $|Z| \geq 0$, and $|Z| = 0$ if and only if $Z = 0$.</li>
 <li><strong>Homogeneity:</strong> $|\lambda Z| = |\lambda|\,|Z|$ for every $\lambda \in \mathbb{R}$; more generally $|\lambda Z| = |\lambda|\,|Z|$ for every $\lambda \in \mathbb{C}$, by multiplicativity.</li>
 <li><strong>Triangle inequality:</strong> $|Z + W| \leq |Z| + |W|$, which is the Cauchy–Schwarz inequality for the Euclidean inner product $(Z,W) \mapsto \operatorname{Re}(\bar{Z}W)$.</li>
-<li><strong>Multiplicativity:</strong> $|ZW| = |Z|\,|W|$, from the multiplicativity of the norm form.</li>
+<li><strong>Multiplicativity:</strong> $|ZW| = |Z|\,|W|$, from the multiplicativity of the norm.</li>
 </ul>
-<p>The audit of the biquaternion semi-norm has no content here: the value is real, the vanishing locus is the origin alone, and the scaling axiom holds with a complex scalar. The complex norm form is the base case against which the complex-valued and indefinite norm forms of the other members of the family are measured.</p>
-<h3 id="the-norm-form-from-the-real-coordinates">The Norm Form from the Real Coordinates</h3>
-<p>Writing $Z = a + i b$ with $a, b \in \mathbb{R}$, the norm form is the sum of two squares,</p>
+<p>The audit of the biquaternion semi-norm has no content here: the value is real, the vanishing locus is the origin alone, and the scaling axiom holds with a complex scalar. The complex norm is the base case against which the complex-valued and indefinite norms of the other members of the family are measured.</p>
+<h3 id="the-norm-from-the-real-coordinates">The Norm from the Real Coordinates</h3>
+<p>Writing $Z = a + i b$ with $a, b \in \mathbb{R}$, the norm is the sum of two squares,</p>
 <p>$$
 N(Z) = a^2 + b^2,
 $$</p>
-<p>a positive-definite quadratic form on the coordinate space $\mathbb{R}^2$ of signature $(2,0)$. The two coordinates contribute with the same sign. In the biquaternion algebra the corresponding expression on the coefficient space is the complex quadratic form $\sum_\mu Q_\mu^2$, whose restriction to the real quaternion subspace $\mathbb{H}_{\mathbb{B}}$ (the real-coefficient subalgebra of $\mathbb{B}$) is a sum of four squares and whose restrictions to the two sectors have opposite signatures. The complex algebra has no sector on which the sign reverses, because it has no independent coefficient field over which to reverse it: the norm form is real throughout.</p>
+<p>a positive-definite quadratic form on the coordinate space $\mathbb{R}^2$ of signature $(2,0)$. The two coordinates contribute with the same sign. In the biquaternion algebra the corresponding expression on the coefficient space is the complex quadratic form $\sum_\mu Q_\mu^2$, whose restriction to the real quaternion subspace $\mathbb{H}_{\mathbb{B}}$ (the real-coefficient subalgebra of $\mathbb{B}$) is a sum of four squares and whose restrictions to the two sectors have opposite signatures. The complex algebra has no sector on which the sign reverses, because it has no independent coefficient field over which to reverse it: the norm is real throughout.</p>
 <h2 id="the-hermitian-form">The Hermitian Form</h2>
 <h3 id="definition_1">Definition</h3>
 <p>The <strong>Hermitian form</strong> of a complex number $Z$ is</p>
 <p>$$
 Z \bar{Z} = a^2 + b^2 .
 $$</p>
-<p>It is a real number, non-negative, and vanishes if and only if $Z = 0$. Because $\mathbb{C}$ is commutative and $\bar{\cdot}$ is its only nontrivial involution, the Hermitian form coincides with the norm form. There are not two distinct objects here, as there are in the biquaternion algebra, where the Hermitian form $\tilde{Q}\tilde{Q}^{\dagger}$ is a biquaternion whose vector part need not vanish.</p>
+<p>It is a real number, non-negative, and vanishes if and only if $Z = 0$. Because $\mathbb{C}$ is commutative and $\bar{\cdot}$ is its only nontrivial involution, the Hermitian form coincides with the norm. There are not two distinct objects here, as there are in the biquaternion algebra, where the Hermitian form $\tilde{Q}\tilde{Q}^{\dagger}$ is a biquaternion whose vector part need not vanish.</p>
 <h3 id="the-euclidean-norm">The Euclidean Norm</h3>
 <p>The <strong>Euclidean norm</strong> of a complex number is the square root of the Hermitian form,</p>
 <p>$$
 \|Z\|_E = \sqrt{Z\bar{Z}} = \sqrt{a^2 + b^2} = |Z| .
 $$</p>
 <p>It is a genuine norm on the real vector space $\mathbb{C} \cong \mathbb{R}^2$: positive-definite, subadditive, and homogeneous of degree one. It <strong>is</strong> multiplicative with respect to the complex product, because $|ZW| = |Z||W|$. This too is a difference from the biquaternion case, where the Euclidean norm $\|\tilde{Q}\|_E$ is a genuine norm on the underlying real space but is not multiplicative.</p>
-<h3 id="relation-between-the-norm-form-and-the-hermitian-form">Relation Between the Norm Form and the Hermitian Form</h3>
+<h3 id="relation-between-the-norm-and-the-hermitian-form">Relation Between the Norm and the Hermitian Form</h3>
 <p>The two forms are related as follows.</p>
 <ul>
-<li>The <strong>norm form</strong> $N(Z) = Z\bar{Z} = a^2+b^2$ is real, positive-definite and multiplicative, and it vanishes only at the origin. It controls the multiplicative structure: invertibility, the group of units, and the polar scale.</li>
+<li>The <strong>norm</strong> $N(Z) = Z\bar{Z} = a^2+b^2$ is real, positive-definite and multiplicative, and it vanishes only at the origin. It controls the multiplicative structure: invertibility, the group of units, and the polar scale.</li>
 <li>The <strong>Hermitian form</strong> $Z\bar{Z} = a^2+b^2$ is the same expression. It controls the topological structure: the Euclidean norm, the topology of $\mathbb{C}$ as $\mathbb{R}^2$, and completeness.</li>
 </ul>
-<p>That the two coincide is a degeneracy of the commutative two-dimensional case. In the biquaternion algebra the norm form is complex and indefinite while the Hermitian form has a non-negative scalar part, and the two carry genuinely different information; here the information collapses into one real positive-definite form. This is the same degeneracy that makes $\mathbb{C}$ the trivial example in the theory of composition algebras, and it is recorded here because the rest of the family separates the two.</p>
+<p>That the two coincide is a degeneracy of the commutative two-dimensional case. In the biquaternion algebra the norm is complex and indefinite while the Hermitian form has a non-negative scalar part, and the two carry genuinely different information; here the information collapses into one real positive-definite form. This is the same degeneracy that makes $\mathbb{C}$ the trivial example in the theory of composition algebras, and it is recorded here because the rest of the family separates the two.</p>
 <p>The <strong>inner product</strong> on $\mathbb{C}$ as a complex vector space is</p>
 <p>$$
 \langle Z, W \rangle = \bar{Z} W = (a c+b d) + (a d-b c)i, \qquad Z = a+i b, \; W = c+i d,
 $$</p>
-<p>linear in the second argument and anti-linear in the first, with $\langle Z, Z \rangle = a^2+b^2 = N(Z)$. It is complex-valued in general, and its imaginary part $a d - b c$ is the oriented area of the parallelogram on $Z$ and $W$; the companion article <em>Complex Algebra</em> develops it, and it is recorded here only to fix the relation $\langle Z,Z\rangle = N(Z)$.</p>
+<p>linear in the second argument and anti-linear in the first, with $\langle Z, Z \rangle = a^2+b^2 = N(Z)$. It is complex-valued in general, and its imaginary part $a d - b c$ is the oriented area of the parallelogram on $Z$ and $W$. It is Hermitian, $\langle Z, W\rangle^{*} = \langle W, Z\rangle$, and its diagonal is the norm, $\langle Z,Z\rangle = N(Z)$: the inner product is the two-variable object of which the norm and the Hermitian form are the diagonal, and it is developed here.</p>
 <h2 id="invertibility">Invertibility</h2>
 <h3 id="definition_2">Definition</h3>
 <p>A complex number $Z$ is <strong>invertible</strong> if there exists a complex number $W$ such that</p>
@@ -143,15 +143,25 @@ $$</p>
 <p>$$
 Z W = \frac{Z\bar{Z}}{N(Z)} = \frac{N(Z)}{N(Z)} = 1,
 $$</p>
-<p>so $Z$ has an inverse. Conversely, if $Z$ is invertible then applying the norm form to $ZW = 1$ and using multiplicativity gives $N(Z)N(W) = N(1) = 1$, so $N(Z) \neq 0$ and hence $Z \neq 0$. $\square$</p>
-<p>The criterion $N(Z) \neq 0$ is the general form; in $\mathbb{C}$ it is equivalent to the elementary statement $Z \neq 0$ because the norm form is definite. In the biquaternion algebra the two conditions differ, and $N(\tilde{Q}) = 0$ with $\tilde{Q} \neq 0$ is exactly the definition of a zero divisor.</p>
+<p>so $Z$ has an inverse. Conversely, if $Z$ is invertible then applying the norm to $ZW = 1$ and using multiplicativity gives $N(Z)N(W) = N(1) = 1$, so $N(Z) \neq 0$ and hence $Z \neq 0$.</p>
+<p>The criterion $N(Z) \neq 0$ is the general form; in $\mathbb{C}$ it is equivalent to the elementary statement $Z \neq 0$ because the norm is definite. In the biquaternion algebra the two conditions differ, and $N(\tilde{Q}) = 0$ with $\tilde{Q} \neq 0$ is exactly the definition of a zero divisor.</p>
 <h3 id="the-inverse-formula">The Inverse Formula</h3>
 <p>For $Z \neq 0$ the inverse is</p>
 <p>$$
 Z^{-1} = \frac{\bar{Z}}{N(Z)} = \frac{a - i b}{a^2+b^2} = \frac{a}{a^2+b^2} - \frac{b}{a^2+b^2} i .
 $$</p>
-<p><strong>Proof.</strong> The verification is the computation in the first part of the proof of the criterion. $\square$</p>
+<p><strong>Proof.</strong> The verification is the computation in the first part of the proof of the criterion.</p>
 <p><strong>Corollary.</strong> If $Z$ is invertible then so is $\bar{Z}$, and $(\bar{Z})^{-1} = \overline{Z^{-1}}$. If $Z$ is invertible then so is $Z^{-1}$, and $(Z^{-1})^{-1} = Z$.</p>
+<h3 id="worked-example">Worked Example</h3>
+<p>For the worked pair of the category, $Z = 3+4i$ and $W = 1-2i$, the criterion and the inverse formula are exact. Here $N(Z) = 3^2+4^2 = 25 \neq 0$ and $N(W) = 1^2+(-2)^2 = 5 \neq 0$, so both are units, with</p>
+<p>$$
+Z^{-1} = \frac{\bar{Z}}{N(Z)} = \frac{3-4i}{25} = 0.12 - 0.16 i, \qquad W^{-1} = \frac{\bar{W}}{N(W)} = \frac{1+2i}{5} = 0.2 + 0.4 i,
+$$</p>
+<p>and $Z Z^{-1} = 25/25 = 1$, $W W^{-1} = 5/5 = 1$. The product $ZW = 11-2i$ has $N(ZW) = 121+4 = 125 = 25 \cdot 5$, so it is a unit, and its inverse is computed in the two ways with the same result:</p>
+<p>$$
+(ZW)^{-1} = W^{-1}Z^{-1} = (0.2+0.4i)(0.12-0.16i) = 0.088 + 0.016 i, \qquad (ZW)^{-1} = \frac{\overline{ZW}}{N(ZW)} = \frac{11+2i}{125} = 0.088 + 0.016 i .
+$$</p>
+<p>The only element of vanishing norm is $0$, since $a^2+b^2 = 0$ forces $a = b = 0$, so there is no nonzero non-unit and no zero divisor.</p>
 <h2 id="the-group-of-units">The Group of Units</h2>
 <h3 id="definition_3">Definition</h3>
 <p>The <strong>group of units</strong> of $\mathbb{C}$ is the set of invertible elements:</p>
@@ -165,7 +175,7 @@ $$</p>
 <li><strong>Open and dense.</strong> $\mathbb{C}^\times$ is the complement of the single point $0$, hence open and dense in $\mathbb{C}$; its complement is the point $\{0\}$, of real dimension $0$.</li>
 <li><strong>Connected and non-compact.</strong> $\mathbb{C}^\times$ is path-connected, and it is not compact since it is unbounded; it has one component, where $\mathbb{D}^\times$ has four.</li>
 <li><strong>Infinite.</strong> $\mathbb{C}^\times$ is uncountable and contains the infinite cyclic group of powers of any non-root-of-unity element.</li>
-<li><strong>Dimension.</strong> As a real Lie group, $\mathbb{C}^\times$ has dimension $2$; its Lie algebra is $\mathbb{C}$ itself with the zero bracket.</li>
+<li><strong>Dimension.</strong> $\mathbb{C}^\times$ is a topological group whose underlying space is a manifold of real dimension $2$; its Lie group and Lie algebra structure are the subject of the companion article <em>Complex Exponential and Lie Group Structure</em>.</li>
 </ul>
 <p>The unit group is the base case of the family: below it lies only the non-unit $0$, and every nonzero element is a unit because the algebra is a field.</p>
 <h3 id="the-polar-split-of-the-group-of-units">The Polar Split of the Group of Units</h3>
@@ -173,17 +183,17 @@ $$</p>
 <p>$$
 \mathbb{C}^\times \longrightarrow \mathbb{R}_{>0} \times U(1), \qquad Z \longmapsto \bigl( |Z|, \; Z/|Z| \bigr),
 $$</p>
-<p>where $U(1) = \{ u \in \mathbb{C} : |u| = 1 \}$ is the unit circle, is an isomorphism of groups and a diffeomorphism of real manifolds.</p>
-<p><strong>Proof.</strong> The map is well defined because $|Z| > 0$ for $Z \neq 0$, and its image lies in $\mathbb{R}_{>0} \times U(1)$ because $|Z/|Z|| = 1$. It is a group homomorphism: $|ZW| = |Z||W|$ and $ZW/|ZW| = (Z/|Z|)(W/|W|)$. Its inverse is $(r,u) \mapsto ru$, which is smooth, and both components are smooth, so it is a diffeomorphism. $\square$</p>
-<p>The two factors are the <strong>scale</strong> $r = |Z| \in \mathbb{R}_{>0}$, a positive real, and the <strong>phase</strong> $u = Z/|Z| \in U(1)$. The product form is $Z = ru$; here it is recorded as the splitting of the unit group, which is what the norm form supplies.</p>
+<p>where $U(1) = \{ u \in \mathbb{C} : |u| = 1 \}$ is the unit circle, is an isomorphism of topological groups.</p>
+<p><strong>Proof.</strong> The map is well defined because $|Z| > 0$ for $Z \neq 0$, and its image lies in $\mathbb{R}_{>0} \times U(1)$ because $|Z/|Z|| = 1$. It is a group homomorphism: $|ZW| = |Z||W|$ and $ZW/|ZW| = (Z/|Z|)(W/|W|)$. Its inverse is $(r,u) \mapsto ru$, which is continuous, so it is a homeomorphism.</p>
+<p>The two factors are the <strong>scale</strong> $r = |Z| \in \mathbb{R}_{>0}$, a positive real, and the <strong>phase</strong> $u = Z/|Z| \in U(1)$. The product form is $Z = ru$; here it is recorded as the splitting of the unit group, which is what the norm supplies.</p>
 <h3 id="the-inverse-map">The Inverse Map</h3>
-<p>The inversion map $\iota : \mathbb{C}^\times \to \mathbb{C}^\times$, $\iota(Z) = Z^{-1}$, is a smooth group automorphism of order two, and in the polar coordinates it reads</p>
+<p>The inversion map $\iota : \mathbb{C}^\times \to \mathbb{C}^\times$, $\iota(Z) = Z^{-1}$, is a continuous group automorphism of order two, and in the polar coordinates it reads</p>
 <p>$$
 \iota(ru) = r^{-1} u^{-1} = r^{-1} \bar{u},
 $$</p>
-<p>because for a unit $u$ one has $u^{-1} = \bar{u}$. Inversion therefore inverts the scale and conjugates the phase, and its differential at the identity is $-\operatorname{id}$, the infinitesimal reason the Lie bracket of a commutative Lie algebra is antisymmetric.</p>
+<p>because for a unit $u$ one has $u^{-1} = \bar{u}$. Inversion therefore inverts the scale and conjugates the phase.</p>
 <h2 id="the-three-way-classification">The Three-Way Classification</h2>
-<p>An element of a finite-dimensional real algebra of the tensor family is of one of three kinds: a unit, a zero divisor, or zero. The classes are read off from the norm form.</p>
+<p>An element of a finite-dimensional real algebra of the tensor family is of one of three kinds: a unit, a zero divisor, or zero. The classes are read off from the norm.</p>
 <p><strong>Definition.</strong> Let $Z \in \mathbb{C}$. Then exactly one of the following holds:</p>
 <ul>
 <li>$N(Z) > 0$: $Z$ is a <strong>unit</strong>, i.e. an invertible element;</li>
@@ -191,7 +201,7 @@ $$</p>
 <li>$Z = 0$: $Z$ is <strong>zero</strong>.</li>
 </ul>
 <p><strong>Theorem (the classification of $\mathbb{C}$).</strong> The zero-divisor class is empty, so every nonzero complex number is a unit and the classification has only two non-empty classes.</p>
-<p><strong>Proof.</strong> $N(Z) = a^2+b^2 = 0$ forces $a = b = 0$ because squares of reals are non-negative, so the only element of vanishing norm form is $0$. $\square$</p>
+<p><strong>Proof.</strong> $N(Z) = a^2+b^2 = 0$ forces $a = b = 0$ because squares of reals are non-negative, so the only element of vanishing norm is $0$.</p>
 <h3 id="the-algebra-is-a-division-algebra">The Algebra Is a Division Algebra</h3>
 <p>The emptiness of the zero-divisor class is the statement that $\mathbb{C}$ is a <strong>division algebra</strong>: every nonzero element is invertible, and there are no $Z, W \neq 0$ with $ZW = 0$. By the Frobenius theorem, $\mathbb{C}$ is one of exactly three finite-dimensional associative real division algebras, the others being $\mathbb{R}$ and the quaternions $\mathbb{H}$, and it is the only one that is commutative but not ordered. The three-way classification of the family is thus present here with its middle class empty; the biquaternion algebra has all three classes non-empty, its zero divisors being the nonzero points of the null cone $N(\tilde{Q}) = 0$.</p>
 <h2 id="distribution-of-the-invertible-elements">Distribution of the Invertible Elements</h2>
@@ -231,22 +241,22 @@ $$</p>
 </table></div>
 <p>Equivalently, $\mathbb{C}^\times = (\mathbb{R}_{\mathbb{C}} \setminus \{0\}) \cup (i\mathbb{R}_{\mathbb{C}} \setminus \{0\}) \cup (\text{the mixed elements})$, and the union is all nonzero complex numbers. There is no sector of the algebra carrying a zero divisor, and the distribution is uniform.</p>
 <h2 id="the-relation-to-the-hermitian-decomposition">The Relation to the Hermitian Decomposition</h2>
-<p>The algebra splits as $\mathbb{C} = \mathbb{R}_{\mathbb{C}} \oplus i\mathbb{R}_{\mathbb{C}}$ into the fixed and anti-fixed subspaces of conjugation, and on each piece the norm form is definite:</p>
+<p>The algebra splits as $\mathbb{C} = \mathbb{R}_{\mathbb{C}} \oplus i\mathbb{R}_{\mathbb{C}}$ into the fixed and anti-fixed subspaces of conjugation, and on each piece the norm is definite:</p>
 <p>$$
 N(a) = a^2 \geq 0 \;\; (a \in \mathbb{R}_{\mathbb{C}}), \qquad N(i b) = b^2 \geq 0 \;\; (b \in \mathbb{R}_{\mathbb{C}}),
 $$</p>
-<p>each vanishing only at the origin. The two pieces therefore carry the <strong>same</strong> sign of the norm form, $(+,+)$ on the two-dimensional real coordinate space, and multiplying by the imaginary unit preserves it:</p>
+<p>each vanishing only at the origin. The two pieces therefore carry the <strong>same</strong> sign of the norm, $(+,+)$ on the two-dimensional real coordinate space, and multiplying by the imaginary unit preserves it:</p>
 <p>$$
 N(i Z) = N(Z).
 $$</p>
-<p>This is the degeneracy of the Hermitian decomposition of the definite field. In the biquaternion algebra the two sectors carry opposite signatures, $(1,3)$ and $(3,1)$, because the central scalar imaginary there satisfies $N(i\tilde{Q}) = -N(\tilde{Q})$ and exchanges the sectors; here there is no central scalar imaginary separate from the algebra, so no sign reversal and no indefinite form occur. The distinction between the norm form and the Hermitian form collapses together with the distinction between the two sectors: both are the single expression $Z\bar{Z}$.</p>
+<p>This is the degeneracy of the Hermitian decomposition of the definite field. In the biquaternion algebra the two sectors carry opposite signatures, $(1,3)$ and $(3,1)$, because the central scalar imaginary there satisfies $N(i\tilde{Q}) = -N(\tilde{Q})$ and exchanges the sectors; here there is no central scalar imaginary separate from the algebra, so no sign reversal and no indefinite form occur. The distinction between the norm and the Hermitian form collapses together with the distinction between the two sectors: both are the single expression $Z\bar{Z}$.</p>
 <h2 id="the-base-case-of-the-norm-series">The Base Case of the Norm Series</h2>
-<p>The norm series of the corpus records, for each algebra of the family, whether its norm form is real, complex or split-complex valued, whether it is definite or indefinite, and what its vanishing locus is. In $\mathbb{C}$ the norm form is the real positive-definite quadratic form $N(Z) = a^2+b^2$, the sum of two squares, and its vanishing locus is the single point $\{0\}$:</p>
+<p>The norm series of the corpus records, for each algebra of the family, whether its norm is real, complex or split-complex valued, whether it is definite or indefinite, and what its vanishing locus is. In $\mathbb{C}$ the norm is the real positive-definite quadratic form $N(Z) = a^2+b^2$, the sum of two squares, and its vanishing locus is the single point $\{0\}$:</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
 <th>algebra</th>
-<th>norm form</th>
+<th>norm</th>
 <th>value field</th>
 <th>definite?</th>
 <th>vanishing locus</th>
@@ -286,18 +296,18 @@ $$</p>
 <td>$\sum_\mu Q_\mu^2$</td>
 <td>$\mathbb{D}$</td>
 <td>no</td>
-<td>the elements whose norm form is a zero divisor of $\mathbb{D}$</td>
+<td>the elements whose norm is a zero divisor of $\mathbb{D}$</td>
 </tr>
 </tbody>
 </table></div>
-<p>The complex case is the second rung of the definite column: it adds the second square to the square of $\mathbb{R}$, the quaternion case adds the third and fourth, and the biquaternion case replaces the definite real form by an indefinite complex one. In every member the norm form is multiplicative; the complex case is the instance $N(ZW) = N(Z)N(W)$ of that multiplicativity, and because the form is definite the vanishing locus stays a single point.</p>
+<p>The complex case is the second rung of the definite column: it adds the second square to the square of $\mathbb{R}$, the quaternion case adds the third and fourth, and the biquaternion case replaces the definite real form by an indefinite complex one. In every member the norm is multiplicative; the complex case is the instance $N(ZW) = N(Z)N(W)$ of that multiplicativity, and because the form is definite the vanishing locus stays a single point.</p>
 <h2 id="comparison-with-the-quaternion-and-biquaternion-cases">Comparison with the Quaternion and Biquaternion Cases</h2>
 <p>The definite and indefinite cases of the family are:</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
 <th>algebra</th>
-<th>norm form</th>
+<th>norm</th>
 <th>definite?</th>
 <th>zero divisors</th>
 <th>group of units</th>
@@ -334,11 +344,11 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>The norm form is real and definite in $\mathbb{C}$ and $\mathbb{H}$, and both are division algebras; the norm form is complex-valued and indefinite in $\mathbb{B}$ and split-complex-valued and indefinite in $\mathbb{H}_{\mathbb{D}}$, and both have zero divisors; the zero divisors of $\mathbb{B}$ are the nonzero points of the null cone $N(\tilde{Q}) = 0$, while in $\mathbb{H}_{\mathbb{D}}$ the norm form is anisotropic and the zero divisors are the elements whose norm form is a nonzero zero divisor of $\mathbb{D}$. The unit group is compact modulo the non-compact scale in $\mathbb{C}$ and $\mathbb{H}$, and genuinely non-compact in the split cases. The complex algebra sits at the bottom of the definite column: the quaternion case adds the three-dimensional unit sphere $S^3$ in place of the circle $U(1)$, the biquaternion case replaces the definite norm form by a complex one and the group of units by $GL(2,\mathbb{C})$, and the biquaternion norm form restricts on the centre to the square $Z^2$ rather than to $|Z|^2$, which is the reason the complex norm form corresponds to the Hermitian form of the larger algebra and not to its norm form.</p>
+<p>The norm is real and definite in $\mathbb{C}$ and $\mathbb{H}$, and both are division algebras; the norm is complex-valued and indefinite in $\mathbb{B}$ and split-complex-valued and indefinite in $\mathbb{H}_{\mathbb{D}}$, and both have zero divisors; the zero divisors of $\mathbb{B}$ are the nonzero points of the null cone $N(\tilde{Q}) = 0$, while in $\mathbb{H}_{\mathbb{D}}$ the norm is anisotropic and the zero divisors are the elements whose norm is a nonzero zero divisor of $\mathbb{D}$. The unit group is compact modulo the non-compact scale in $\mathbb{C}$ and $\mathbb{H}$, and genuinely non-compact in the split cases. The complex algebra sits at the bottom of the definite column: the quaternion case adds the three-dimensional unit sphere $S^3$ in place of the circle $U(1)$, the biquaternion case replaces the definite norm by a complex one and the group of units by $GL(2,\mathbb{C})$, and the biquaternion norm restricts on the centre to the square $Z^2$ rather than to $|Z|^2$, which is the reason the complex norm corresponds to the Hermitian form of the larger algebra and not to its norm.</p>
 <h2 id="summary">Summary</h2>
-<p>The norm form of a complex number is $N(Z) = Z\bar{Z} = a^2+b^2$, real, positive-definite and multiplicative, $N(ZW) = N(Z)N(W)$; it vanishes only at the origin. The Hermitian form is the same expression, so the norm form and the Hermitian form coincide, and the Euclidean norm $\|Z\|_E = \sqrt{N(Z)}$ is a genuine norm that is multiplicative. This is the degeneracy of the commutative two-dimensional case.</p>
-<p>A complex number is invertible if and only if it is nonzero, equivalently if and only if its norm form is nonzero, and the inverse is $Z^{-1} = \bar{Z}/N(Z)$. The zero-divisor class is empty, so $\mathbb{C}$ is a division algebra by the Frobenius theorem, and every nonzero element of each of the two distinguished subspaces is invertible.</p>
-<p>The group of units is $\mathbb{C}^\times = \mathbb{C}\setminus\{0\}$, abelian, open, dense, connected and non-compact, and it splits as $\mathbb{C}^\times \cong \mathbb{R}_{>0} \times U(1)$ into a positive scale and a phase, the product form of that splitting being $Z = ru$. The norm form is definite on both the real and the imaginary subspace with the same sign, so the opposite signatures of the biquaternion sectors do not occur; the only element of vanishing norm form is the origin, which is why the complex norm form is the definite base case of the norm series and the complex algebra the definite base case of the family.</p>
+<p>The norm of a complex number is $N(Z) = Z\bar{Z} = a^2+b^2$, real, positive-definite and multiplicative, $N(ZW) = N(Z)N(W)$; it vanishes only at the origin. The Hermitian form is the same expression, so the norm and the Hermitian form coincide, and the Euclidean norm $\|Z\|_E = \sqrt{N(Z)}$ is a genuine norm that is multiplicative. This is the degeneracy of the commutative two-dimensional case.</p>
+<p>A complex number is invertible if and only if it is nonzero, equivalently if and only if its norm is nonzero, and the inverse is $Z^{-1} = \bar{Z}/N(Z)$. On the worked pair $Z = 3+4i$, $W = 1-2i$ the criterion gives $N(Z) = 25$, $N(W) = 5$ and $N(ZW) = 125$, with inverses $Z^{-1} = (3-4i)/25$ and $W^{-1} = (1+2i)/5$. The zero-divisor class is empty, so $\mathbb{C}$ is a division algebra by the Frobenius theorem, and every nonzero element of each of the two distinguished subspaces is invertible.</p>
+<p>The group of units is $\mathbb{C}^\times = \mathbb{C}\setminus\{0\}$, abelian, open, dense, connected and non-compact, and it splits as $\mathbb{C}^\times \cong \mathbb{R}_{>0} \times U(1)$ into a positive scale and a phase, the product form of that splitting being $Z = ru$. The norm is definite on both the real and the imaginary subspace with the same sign, so the opposite signatures of the biquaternion sectors do not occur; the only element of vanishing norm is the origin, which is why the complex norm is the definite base case of the norm series and the complex algebra the definite base case of the family.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -362,7 +372,7 @@ $$</p>
 </tr>
 <tr>
 <td>$N(Z) = Z\bar{Z} = a^2+b^2$</td>
-<td>the norm form, real, positive definite, multiplicative</td>
+<td>the norm, real, positive definite, multiplicative</td>
 </tr>
 <tr>
 <td>$\|Z\|_E = \sqrt{N(Z)} = |Z|$</td>
@@ -371,6 +381,10 @@ $$</p>
 <tr>
 <td>$\langle Z, W \rangle = \bar{Z}W$</td>
 <td>the complex inner product, $\langle Z,Z\rangle = N(Z)$</td>
+</tr>
+<tr>
+<td>$Z = 3+4i$, $W = 1-2i$</td>
+<td>the worked pair of the category</td>
 </tr>
 <tr>
 <td>$\mathbb{C}^\times = \mathbb{C}\setminus\{0\}$</td>
@@ -397,9 +411,9 @@ $$</p>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
 <li>Carl Friedrich Gauss, <em>Theoria residuorum biquadraticorum, Commentatio secunda</em> (Göttingen, 1831), for the norm and the modulus of a complex number.</li>
-<li>William Kingdon Clifford, "Preliminary Sketch of Biquaternions", <em>Proceedings of the London Mathematical Society</em> <strong>4</strong> (1873) 381–395, for the norm form of the complexified quaternions and the contrast with the definite case.</li>
+<li>William Kingdon Clifford, "Preliminary Sketch of Biquaternions", <em>Proceedings of the London Mathematical Society</em> <strong>4</strong> (1873) 381–395, for the norm of the complexified quaternions and the contrast with the definite case.</li>
 <li>Israel Nathan Herstein, <em>Topics in Algebra</em>, 2nd edition (Wiley, 1975), for division algebras, inverses and the Frobenius theorem.</li>
-<li>Richard S. Pierce, <em>Associative Algebras</em>, Graduate Texts in Mathematics 88 (Springer, 1982), for norm forms, invertibility in finite-dimensional algebras and the group of units.</li>
+<li>Richard S. Pierce, <em>Associative Algebras</em>, Graduate Texts in Mathematics 88 (Springer, 1982), for norms, invertibility in finite-dimensional algebras and the group of units.</li>
 <li>John H. Conway and Derek A. Smith, <em>On Quaternions and Octonions</em> (A K Peters, 2003), for the classification of the real division algebras and the place of $\mathbb{C}$ among them.</li>
 <li>Walter Rudin, <em>Real and Complex Analysis</em>, 3rd edition (McGraw-Hill, 1987), for the modulus, the Euclidean norm and the polar decomposition of a complex number.</li>
 </ul>

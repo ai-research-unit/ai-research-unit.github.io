@@ -69,7 +69,7 @@ $$</p>
 <p>The statement is recorded here because it is the bridge between the metric and the curvature. The Laplace–Beltrami operator, of which $\Delta$ is the case, is the Laplace–de Rham operator acting on functions, and the comparison theorems for it are proved in Part III with the differential equations.</p>
 <h2 id="the-levi-civita-connection">The Levi-Civita Connection</h2>
 <h3 id="the-koszul-formula">The Koszul Formula</h3>
-<p><strong>Definition.</strong> A <strong>connection</strong> on the tangent bundle $TM$ is an $\mathbb{R}$-bilinear map $\nabla : \mathfrak{X}(M) \times \mathfrak{X}(M) \to \mathfrak{X}(M)$ such that $\nabla_{fX}Y = f\nabla_XY$ and $\nabla_X(fY) = X(f)Y + f\nabla_XY$ for $f \in C^\infty(M)$; it is the covariant derivative specialised to the tangent bundle. It is <strong>metric</strong> if</p>
+<p><strong>Definition.</strong> A <strong>connection</strong> on the tangent bundle $TM$ is an $\mathbb{R}$-bilinear map $\nabla : \mathrm{X}(M) \times \mathrm{X}(M) \to \mathrm{X}(M)$ such that $\nabla_{fX}Y = f\nabla_XY$ and $\nabla_X(fY) = X(f)Y + f\nabla_XY$ for $f \in C^\infty(M)$; it is the covariant derivative specialised to the tangent bundle. It is <strong>metric</strong> if</p>
 <p>$$
 X\,g(Y, Z) = g(\nabla_XY, Z) + g(Y, \nabla_XZ),
 $$</p>
@@ -81,7 +81,7 @@ $$</p>
 <p>$$
 2\,g(\nabla_XY, Z) = X\,g(Y, Z) + Y\,g(Z, X) - Z\,g(X, Y) - g(X, [Y, Z]) + g(Y, [Z, X]) + g(Z, [X, Y]).
 $$</p>
-<p><strong>Proof.</strong> The right-hand side is manifestly $\mathbb{R}$-linear in $X$ and, by the Leibniz rule for $X, Y, Z$ acting on functions, it is $C^\infty(M)$-linear in each of $X, Y, Z$. It therefore defines a tensor, and since $g$ is nondegenerate it determines the vector field $\nabla_XY$ uniquely. The two required properties follow by substituting into the formula and cancelling terms: metricity uses the first three terms and the skew symmetry of the bracket, torsion-freeness uses the last three and the identity $[X, Y] = -[Y, X]$. $\square$</p>
+<p><strong>Proof.</strong> The right-hand side is manifestly $\mathbb{R}$-linear in $X$ and, by the Leibniz rule for $X, Y, Z$ acting on functions, it is $C^\infty(M)$-linear in each of $X, Y, Z$. It therefore defines a tensor, and since $g$ is nondegenerate it determines the vector field $\nabla_XY$ uniquely. The two required properties follow by substituting into the formula and cancelling terms: metricity uses the first three terms and the skew symmetry of the bracket, torsion-freeness uses the last three and the identity $[X, Y] = -[Y, X]$.</p>
 <p><strong>Definition.</strong> In a chart the Christoffel symbols are</p>
 <p>$$
 \nabla_{\partial_{x^i}}\partial_{x^j} = \sum_k \Gamma^k_{ij}\,\partial_{x^k},
@@ -99,7 +99,7 @@ $$</p>
 g_{\gamma(b)}\bigl(P_\gamma(v), P_\gamma(w)\bigr) = g_{\gamma(a)}(v, w).
 $$</p>
 <p><strong>Proposition.</strong> Parallel transport is invariant under reparametrisation and is compatible with concatenation and reversal of curves. Its dependence on the path is measured by the curvature.</p>
-<p><strong>Proof.</strong> The parallel field along a reparametrised curve is the reparametrised field; concatenation composes the transports and reversal inverts them, since the equation $\nabla_{\gamma'}V = 0$ is preserved by reversing the curve. $\square$</p>
+<p><strong>Proof.</strong> The parallel field along a reparametrised curve is the reparametrised field; concatenation composes the transports and reversal inverts them, since the equation $\nabla_{\gamma'}V = 0$ is preserved by reversing the curve.</p>
 <p><strong>Definition.</strong> The <strong>holonomy group</strong> of $\nabla$ at $p$ is the group of isometries of $T_pM$ obtained as parallel transport around piecewise smooth loops based at $p$. It is a subgroup of the orthogonal group of the metric at $p$, and the <strong>restricted holonomy group</strong> is the subgroup obtained from loops homotopic to the constant loop. The Lie algebra of the holonomy group is spanned by the curvature endomorphisms, which is the Ambrose–Singer theorem.</p>
 <h2 id="geodesics-and-the-metric-exponential">Geodesics and the Metric Exponential</h2>
 <h3 id="the-geodesic-equation">The Geodesic Equation</h3>
@@ -122,7 +122,7 @@ $$</p>
 g_{\exp_p(v)}\bigl(d(\exp_p)_v(v),\, d(\exp_p)_v(w)\bigr) = g_p(v, w).
 $$</p>
 <p>In words, the radial geodesics leave $p$ orthogonally to the spheres of constant radius, and the exponential map is a radial isometry.</p>
-<p><strong>Proof sketch.</strong> The identity is the first-variation computation for the length applied to a geodesic and a variation by a family of geodesics; the derivative of $t \mapsto g(\gamma_v'(t), \partial_s\gamma_s(t))$ at $s = 0$ vanishes because $\gamma_v$ is a geodesic. $\square$</p>
+<p><strong>Proof sketch.</strong> The identity is the first-variation computation for the length applied to a geodesic and a variation by a family of geodesics; the derivative of $t \mapsto g(\gamma_v'(t), \partial_s\gamma_s(t))$ at $s = 0$ vanishes because $\gamma_v$ is a geodesic.</p>
 <p><strong>Definition.</strong> The <strong>normal coordinates</strong> at $p$ are obtained by choosing an orthonormal basis $u_1, \ldots, u_n$ of $T_pM$ and, for a point $x$ near $p$, taking the unique $v \in T_pM$ with $\exp_p(v) = x$ and setting $x^i = v^i$, where $v = \sum_i v^i u_i$. Equivalently, the coordinates are the coefficients of $v$ in the orthonormal basis, so that the geodesic through $p$ in the direction $u_i$ is the $i$-th coordinate axis. In normal coordinates $g_{ij}(p) = \delta_{ij}$ and the first derivatives of $g_{ij}$ vanish at $p$, so the Christoffel symbols vanish at $p$ and the metric is Euclidean to second order there; the second derivatives of the metric at $p$ are exactly the curvature.</p>
 <h3 id="geodesics-minimise-locally">Geodesics Minimise Locally</h3>
 <p><strong>Definition.</strong> A curve joining $p$ to $q$ is <strong>locally minimising</strong> if every sufficiently short subarc of it has length not exceeding the length of any nearby curve with the same endpoints.</p>
@@ -131,10 +131,10 @@ $$</p>
 <p>$$
 L_g(\sigma) - L_g(\gamma) = \tfrac{1}{2}\int_a^b g\!\left(\frac{D}{dt}\,\frac{\partial \sigma}{\partial s}, \frac{\partial\sigma}{\partial s}\right) dt
 $$</p>
-<p>expresses the length difference, to second order, as the integral of the squared normal component of the variation, which is nonnegative; the converse is the first-variation formula, whose vanishing for all variations supported in the interior is exactly the geodesic equation. Both computations use the calculus of variations of Part III, where the analytic details are supplied; the results are standard. $\square$</p>
+<p>expresses the length difference, to second order, as the integral of the squared normal component of the variation, which is nonnegative; the converse is the first-variation formula, whose vanishing for all variations supported in the interior is exactly the geodesic equation. Both computations use the calculus of variations of Part III, where the analytic details are supplied; the results are standard.</p>
 <p><strong>Example (Euclidean and spherical geodesics).</strong> In $\mathbb{R}^n$ with the standard metric the Christoffel symbols vanish, so the geodesics are the straight lines. On the round sphere $S^{n-1}$ the geodesics are the great circles: the intersection of the sphere with a plane through the origin. In the hyperbolic metric $g = (dx_1^2 + \cdots + dx_n^2)/y^2$ on the upper half-space, the geodesics are the vertical lines and the semicircles orthogonal to the boundary.</p>
 <h3 id="the-metric-exponential-and-the-lie-algebra-exponential">The Metric Exponential and the Lie-Algebra Exponential</h3>
-<p>The exponential map defined here must not be confused with the exponential map of a Lie group. For a Lie group $G$ with Lie algebra $\mathfrak{g}$ and a left-invariant metric, a one-parameter subgroup $t \mapsto \exp(tX)$ of <em>Lie Groups</em> is a geodesic of the metric if and only if the metric is <strong>bi-invariant</strong>, and in that case the two exponentials agree: $\exp_e(v) = \exp(v)$ for the identification $T_eG \cong \mathfrak{g}$. For a general left-invariant metric the group exponential and the metric exponential differ, and the geodesics are the solutions of the <strong>Euler–Arnold equation</strong>, whose study belongs to the geometry of Lie groups. The distinction is the reason the two constructions carry the same name: each is the solution of the flow of a natural vector field — the right-invariant field for the group exponential, the geodesic spray for the metric exponential — and they coincide only when the metric is compatible with the group structure in the strongest sense.</p>
+<p>The exponential map defined here must not be confused with the exponential map of a Lie group. For a Lie group $G$ with Lie algebra $\mathrm{G}$ and a left-invariant metric, a one-parameter subgroup $t \mapsto \exp(tX)$ of <em>Lie Groups</em> is a geodesic of the metric if and only if the metric is <strong>bi-invariant</strong>, and in that case the two exponentials agree: $\exp_e(v) = \exp(v)$ for the identification $T_eG \cong \mathrm{G}$. For a general left-invariant metric the group exponential and the metric exponential differ, and the geodesics are the solutions of the <strong>Euler–Arnold equation</strong>, whose study belongs to the geometry of Lie groups. The distinction is the reason the two constructions carry the same name: each is the solution of the flow of a natural vector field — the right-invariant field for the group exponential, the geodesic spray for the metric exponential — and they coincide only when the metric is compatible with the group structure in the strongest sense.</p>
 <h2 id="curvature">Curvature</h2>
 <h3 id="the-curvature-tensor">The Curvature Tensor</h3>
 <p><strong>Definition.</strong> The <strong>curvature tensor</strong> of the Levi-Civita connection is</p>
@@ -155,7 +155,7 @@ $$</p>
 <p>$$
 (\nabla_X R)(Y, Z)W + (\nabla_Y R)(Z, X)W + (\nabla_Z R)(X, Y)W = 0.
 $$</p>
-<p><strong>Proof sketch.</strong> The first symmetry is the definition; the second and third follow from metricity and from the vanishing of the torsion; the first Bianchi identity is the cyclic sum of the three curvature terms, in which the bracket terms cancel by the Jacobi identity; the second Bianchi identity is the exterior covariant derivative identity $d^\nabla \mathcal{R} = 0$, read on the tangent bundle. $\square$</p>
+<p><strong>Proof sketch.</strong> The first symmetry is the definition; the second and third follow from metricity and from the vanishing of the torsion; the first Bianchi identity is the cyclic sum of the three curvature terms, in which the bracket terms cancel by the Jacobi identity; the second Bianchi identity is the exterior covariant derivative identity $d^\nabla \mathcal{R} = 0$, read on the tangent bundle.</p>
 <h3 id="sectional-curvature">Sectional Curvature</h3>
 <p><strong>Definition.</strong> Let $\sigma \subseteq T_pM$ be a two-dimensional subspace with an orthonormal basis $v, w$. The <strong>sectional curvature</strong> of $\sigma$ is</p>
 <p>$$
@@ -166,7 +166,7 @@ $$</p>
 K(\sigma) = \frac{R(v, w, w, v)}{g(v, v)g(w, w) - g(v, w)^2}.
 $$</p>
 <p><strong>Theorem.</strong> The sectional curvature determines the curvature tensor completely: if two $(0,4)$-tensors with the symmetries above have the same sectional curvatures on every two-plane, they are equal. Consequently the curvature of a Riemannian manifold is exactly the assignment to each point and each two-plane of the number $K(\sigma)$.</p>
-<p><strong>Proof sketch.</strong> The symmetries express a $(0,4)$-tensor as a linear combination of the quadrilateral expressions $R(v, w, w, v)$; polarisation in each argument recovers the full tensor from the values of $K$ on the planes. $\square$</p>
+<p><strong>Proof sketch.</strong> The symmetries express a $(0,4)$-tensor as a linear combination of the quadrilateral expressions $R(v, w, w, v)$; polarisation in each argument recovers the full tensor from the values of $K$ on the planes.</p>
 <p><strong>Remark (what $K$ measures).</strong> The sectional curvature is the curvature of the surface swept out by the geodesics in the plane $\sigma$: it is the Gaussian curvature of the two-dimensional submanifold $\exp_p(\sigma \cap U_p)$. Positive $K$ means that nearby geodesics in that plane converge, as they do on the sphere; negative $K$ means that they diverge, as they do in the hyperbolic plane; $K = 0$ means that they neither converge nor diverge, as they do in the Euclidean plane. This is the statement that curvature measures the spreading of geodesics, and it is the model for the Jacobi-field comparison theory.</p>
 <p><strong>Example.</strong> The round sphere $S^n$ of radius $r$ has $K = 1/r^2$ on every plane; Euclidean space has $K = 0$; the hyperbolic space of curvature $-1/r^2$ has $K = -1/r^2$. These are the three simply connected complete manifolds of constant curvature, and by the classification their universal covers exhaust the possibilities.</p>
 <h3 id="ricci-and-scalar-curvature">Ricci and Scalar Curvature</h3>
@@ -179,7 +179,7 @@ $$</p>
 S = \sum_{i=1}^{n} \operatorname{Ric}(e_i, e_i).
 $$</p>
 <p><strong>Proposition.</strong> In an orthonormal frame, $\operatorname{Ric}(v, v)$ is the sum of the sectional curvatures of the planes spanned by $v$ and the frame vectors orthogonal to $v$. The scalar curvature is the total of the sectional curvatures over an orthonormal basis of two-planes, up to the normalisation of the double count.</p>
-<p><strong>Proof.</strong> Substitute the definition of sectional curvature into the trace: $\operatorname{Ric}(v, v) = \sum_i R(e_i, v, v, e_i) = \sum_i K(e_i \wedge v)$ when the frame is orthonormal and $v$ is one of its members. $\square$</p>
+<p><strong>Proof.</strong> Substitute the definition of sectional curvature into the trace: $\operatorname{Ric}(v, v) = \sum_i R(e_i, v, v, e_i) = \sum_i K(e_i \wedge v)$ when the frame is orthonormal and $v$ is one of its members.</p>
 <p><strong>Remark (what each measures).</strong> The Ricci curvature is the average of the sectional curvatures in the directions orthogonal to $v$, so $\operatorname{Ric}(v, v) > 0$ means that, on average, the geodesics starting in the direction $v$ spread more slowly than in Euclidean space; it is the curvature that controls the growth of the volume element along a geodesic and, through it, the behaviour of the distance function. The scalar curvature is a single number at each point, the weakest of the three invariants, and it is the one that appears in the variational problems of the theory. The chain</p>
 <p>$$
 R \;\longrightarrow\; K \;\longrightarrow\; \operatorname{Ric} \;\longrightarrow\; S
@@ -191,7 +191,7 @@ $$</p>
 <p>$$
 \operatorname{div} G = 0, \qquad \text{equivalently} \qquad \sum_i (\nabla_{e_i}\operatorname{Ric})(e_i, X) = \tfrac{1}{2}\,dS(X).
 $$</p>
-<p><strong>Proof.</strong> Contract the second Bianchi identity in two pairs of indices. $\square$</p>
+<p><strong>Proof.</strong> Contract the second Bianchi identity in two pairs of indices.</p>
 <p>The contracted identity is the reason the Einstein tensor is the natural divergence-free object built by tracing the curvature, and it is the curvature equation that the analysis of the metric, in Part III, takes up.</p>
 <h2 id="the-three-constant-curvature-models">The Three Constant-Curvature Models</h2>
 <p>By the classification of the simply connected complete Riemannian manifolds of constant sectional curvature, there are exactly three families, one for each sign of $K$. Each has the geometry of one of the three two-dimensional algebras of <em>The Three Two-Dimensional Algebras and the Three Kinds of Rotation</em>, and each is the symmetric space of a classical group.</p>
@@ -258,7 +258,7 @@ $$</p>
 <p>$$
 \int_M K\, \mathrm{vol}_g = 2\pi\,\chi(M).
 $$</p>
-<p><strong>Proof sketch.</strong> For a geodesic triangle with interior angles $\alpha, \beta, \gamma$ the Gauss–Bonnet formula with boundary is $\int_T K\,\mathrm{vol}_g = \alpha + \beta + \gamma - \pi$; triangulating the surface and summing, the boundary terms cancel in pairs and the angle sums contribute $2\pi$ times the alternating count of the vertices, faces and edges, which is $2\pi\chi(M)$. $\square$</p>
+<p><strong>Proof sketch.</strong> For a geodesic triangle with interior angles $\alpha, \beta, \gamma$ the Gauss–Bonnet formula with boundary is $\int_T K\,\mathrm{vol}_g = \alpha + \beta + \gamma - \pi$; triangulating the surface and summing, the boundary terms cancel in pairs and the angle sums contribute $2\pi$ times the alternating count of the vertices, faces and edges, which is $2\pi\chi(M)$.</p>
 <p><strong>Corollary (angle sums).</strong> A geodesic triangle in the sphere of radius $1$ has angle sum $\pi + \mathrm{area}$; a Euclidean triangle has angle sum $\pi$; a hyperbolic triangle has angle sum $\pi - \mathrm{area}$. This is the quantitative form of the comparison table above: the sign of $K$ is the sign of the deviation of the angle sum from $\pi$.</p>
 <p><strong>Corollary (topological obstruction).</strong> A compact surface admits a metric of constant curvature $+1$ only if $\chi(M) > 0$, a metric of curvature $0$ only if $\chi(M) = 0$, and a metric of constant curvature $-1$ only if $\chi(M) < 0$. The Euler characteristic therefore obstructs the existence of the three geometries, and the classification of the compact surfaces with these geometries is the uniformisation stated.</p>
 <h3 id="the-higher-dimensional-case">The Higher-Dimensional Case</h3>

@@ -75,7 +75,7 @@ $$
 \qquad
 \mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_- .
 $$
-The trace is $\mathrm{Tr}(\tilde{Q})=2\,\mathrm{Sc}(\tilde{Q})$ with $\mathrm{Tr}(e_0)=2$; the norm form is $N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}$, central-valued; the Hermitian form is $\langle\tilde{Q},\tilde{Y}\rangle_\dagger=\mathrm{Tr}(\tilde{Q}^\dagger\tilde{Y})$. The matrix model is the $\mathbb{C}$-linear representation $\Phi(e_0)=I_2$, $\Phi(e_k)=-i\sigma_k$, under which $\Phi(\mathbb{B})=M_2(\mathbb{C})$ and $\det M(\tilde{Q})=N(\tilde{Q})$. A state is $\tilde{\rho}=\tfrac12(e_0+i\mathbf{r})$, $|\mathbf{r}|\leq1$, and a pure state is $\tilde{P}(\hat{\mu})=\tfrac12(e_0+i\hat{\mu})$.</p>
+The trace is $\mathrm{Tr}(\tilde{Q})=2\,\mathrm{Sc}(\tilde{Q})$ with $\mathrm{Tr}(e_0)=2$; the biquaternion norm is $N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}$, central-valued; the Hermitian form is $\langle\tilde{Q},\tilde{Y}\rangle_\dagger=\mathrm{Tr}(\tilde{Q}^\dagger\tilde{Y})$. The matrix model is the $\mathbb{C}$-linear representation $\Phi(e_0)=I_2$, $\Phi(e_k)=-i\sigma_k$, under which $\Phi(\mathbb{B})=M_2(\mathbb{C})$ and $\det M(\tilde{Q})=N(\tilde{Q})$. A state is $\tilde{\rho}=\tfrac12(e_0+i\mathbf{r})$, $|\mathbf{r}|\leq1$, and a pure state is $\tilde{P}(\hat{\mu})=\tfrac12(e_0+i\hat{\mu})$.</p>
 <h2 id="the-center-definition-and-computation">The Center: Definition and Computation</h2>
 <p><strong>Definition.</strong> The centre of $\mathbb{B}$ is the set of elements that commute with every element,
 $$
@@ -111,11 +111,11 @@ The identification $Z(M_2(\mathbb{C}))=\mathbb{C}I_2$ is the standard statement 
 $$
 \langle\lambda e_0,\mu e_0\rangle_\dagger=\mathrm{Tr}\bigl((\lambda e_0)^\dagger(\mu e_0)\bigr)=2\,\lambda^{*}\mu ,
 $$
-positive definite on $\mathbb{C}$; it is the standard Hermitian form of the scalars, up to the trace normalization $\mathrm{Tr}(e_0)=2$. The norm form restricts to the <strong>complex square</strong>,
+positive definite on $\mathbb{C}$; it is the standard Hermitian form of the scalars, up to the trace normalization $\mathrm{Tr}(e_0)=2$. The biquaternion norm restricts to the <strong>complex square</strong>,
 $$
 N(\lambda e_0)=\lambda^2e_0 ,
 $$
-which is holomorphic rather than Hermitian: it is positive definite on the Hermitian part of the centre, $N(ae_0)=a^2e_0\geq0$ for $a\in\mathbb{R}$, negative definite on its anti-Hermitian part, $N(ibe_0)=-b^2e_0\leq0$ for $b\in\mathbb{R}$, and complex-valued on the rest of the complex centre, where the form is non-degenerate and vanishes only at $\lambda=0$. The two forms therefore behave on the centre exactly as they behave on the whole algebra — one Hermitian, one holomorphic/quadratic — and the centre is the smallest subspace on which both are visible, with the Hermitian form positive definite and the norm form indefinite (on the complexified directions). The verification of $N(\lambda e_0)=\lambda^2e_0$ for representative $\lambda$ is elementary and was checked numerically.</p>
+which is holomorphic rather than Hermitian: it is positive definite on the Hermitian part of the centre, $N(ae_0)=a^2e_0\geq0$ for $a\in\mathbb{R}$, negative definite on its anti-Hermitian part, $N(ibe_0)=-b^2e_0\leq0$ for $b\in\mathbb{R}$, and complex-valued on the rest of the complex centre, where the form is non-degenerate and vanishes only at $\lambda=0$. The two forms therefore behave on the centre exactly as they behave on the whole algebra — one Hermitian, one holomorphic/quadratic — and the centre is the smallest subspace on which both are visible, with the Hermitian form positive definite and the biquaternion norm indefinite (on the complexified directions). The verification of $N(\lambda e_0)=\lambda^2e_0$ for representative $\lambda$ is elementary and was checked numerically.</p>
 <p><strong>Commutativity and associativity.</strong> The centre is commutative, $\tilde{Q}\tilde{Y}=\tilde{Y}\tilde{Q}$, and associative, being a subalgebra; its multiplication is complex multiplication,
 $$
 (\lambda e_0)(\mu e_0)=(\lambda\mu)e_0 ,
@@ -133,7 +133,7 @@ This is the operational characterization of the classical sector: it is the set 
 $$
 Z(\mathbb{B})=\bigcap_{\tilde{Q}\in\mathbb{B}}\ker\bigl(\mathrm{ad}_{\tilde{Q}}\bigr),
 $$
-and since the derivations are the infinitesimal symmetries, this is the infinitesimal form of characterization 2. The Lie algebra of the unitary group here is $\mathfrak{u}(2)=\mathbb{M}_-$ (the anti-Hermitian subspace), and the centre is the one-dimensional subspace of $\mathfrak{u}(2)$ on which the adjoint representation is trivial, $\mathfrak{z}(\mathfrak{u}(2))=\mathbb{R}\,ie_0$.</p>
+and since the derivations are the infinitesimal symmetries, this is the infinitesimal form of characterization 2. The Lie algebra of the unitary group here is $\mathrm{U}(2)=\mathbb{M}_-$ (the anti-Hermitian subspace), and the centre is the one-dimensional subspace of $\mathrm{U}(2)$ on which the adjoint representation is trivial, $\mathrm{Z}(\mathrm{U}(2))=\mathbb{R}\,ie_0$.</p>
 <p><strong>4. Factorization of the trace pairing.</strong> An element $\tilde{Q}$ is central if and only if its Hilbert–Schmidt correlations factorize,
 $$
 \tilde{Q}\in Z(\mathbb{B})
@@ -243,7 +243,7 @@ Z(\mathbb{H})=\mathbb{R},
 Z(\mathbb{C}\otimes_\mathbb{R}\mathbb{H})=\mathbb{C}\otimes_\mathbb{R}\mathbb{R}=\mathbb{C}.
 $$
 The tensor product multiplies the centres, and this is the algebraic origin of the framework's scalar field: the quaternionic centre is real, and complexifying the quaternions complexifies the centre. The central imaginary $i$ is not an element of $\mathbb{H}$; it is the complexification of the unit, and it is central by construction. The companion articles on the material and informational spaces use this fact when they separate the two sectors: $i$ commutes with everything, which is why it can serve as a global complex structure on the modules while the non-central roots of $-e_0$ cannot.</p>
-<p><strong>5. Casimir elements.</strong> In the enveloping algebra of $\mathfrak{u}(2)=\mathbb{M}_-$ the central elements are the Casimirs, and on each irreducible module they act as scalars. The quadratic Casimir and the identity furnish the labels by which a representation is characterized, and those labels — a mass, a spin quantum number — are classical data attached to the representation rather than to the algebra. They are central in the enveloping algebra, not in $\mathbb{B}$ itself, and the distinction is the representation-theoretic counterpart of the statement that the framework's classical sector is minimal: the labels live in the centre of the symmetry algebra, and the symmetry algebra is larger than $\mathbb{B}$'s centre.</p>
+<p><strong>5. Casimir elements.</strong> In the enveloping algebra of $\mathrm{U}(2)=\mathbb{M}_-$ the central elements are the Casimirs, and on each irreducible module they act as scalars. The quadratic Casimir and the identity furnish the labels by which a representation is characterized, and those labels — a mass, a spin quantum number — are classical data attached to the representation rather than to the algebra. They are central in the enveloping algebra, not in $\mathbb{B}$ itself, and the distinction is the representation-theoretic counterpart of the statement that the framework's classical sector is minimal: the labels live in the centre of the symmetry algebra, and the symmetry algebra is larger than $\mathbb{B}$'s centre.</p>
 <h2 id="summary">Summary</h2>
 <p>The centre of the biquaternion algebra is
 $$
@@ -295,7 +295,7 @@ the two-real-dimensional subalgebra of complex multiples of the unit; its Hermit
 </tr>
 <tr>
 <td>$N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}$</td>
-<td>Norm form, $N(\lambda e_0)=\lambda^2e_0$</td>
+<td>Biquaternion norm, $N(\lambda e_0)=\lambda^2e_0$</td>
 </tr>
 <tr>
 <td>$\mathrm{Ad}_{\tilde{U}}(\tilde{Q})=\tilde{U}\tilde{Q}\tilde{U}^{-1}$</td>
@@ -318,7 +318,7 @@ the two-real-dimensional subalgebra of complex multiples of the unit; its Hermit
 <td>Matrix model; $\Phi(e_0)=I_2$, $\Phi(e_k)=-i\sigma_k$</td>
 </tr>
 <tr>
-<td>$\mathfrak{u}(2)=\mathbb{M}_-$</td>
+<td>$\mathrm{U}(2)=\mathbb{M}_-$</td>
 <td>Lie algebra of the unitary group</td>
 </tr>
 <tr>

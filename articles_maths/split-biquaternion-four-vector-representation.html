@@ -52,8 +52,8 @@
       <div class="article-body">
         <h1 id="split-biquaternion-four-vector-representation"><strong>Split-Biquaternion Four-Vector Representation</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>A split biquaternion is an element $\tilde{Q} = Q_0 e_0 + Q_1 e_1 + Q_2 e_2 + Q_3 e_3$ with four <strong>split complex</strong> coefficients $Q_\mu \in \mathbb{D}$, and this article reads the algebra through those four coefficients: the coefficient space, the column and dual row presentations, the multiplication in components, the four conjugations as coordinate operations, the four distinguished subspaces as coefficient conditions, and the norm form with its two real restrictions. The construction is the split complex analogue of the four-vector representation of the biquaternions; the coefficient arithmetic is that of <em>Split-Complex Numbers</em>, and the algebra structure is that of <em>Split-Biquaternion Algebra</em>.</p>
-<p>The treatment is purely mathematical. No physics is invoked, and no Minkowski structure is imposed; the four coefficients are an algebraic device and the form they carry is the split complex norm form, not a spacetime metric.</p>
+<p>A split biquaternion is an element $\tilde{Q} = Q_0 e_0 + Q_1 e_1 + Q_2 e_2 + Q_3 e_3$ with four <strong>split complex</strong> coefficients $Q_\mu \in \mathbb{D}$, and this article reads the algebra through those four coefficients: the coefficient space, the column and dual row presentations, the multiplication in components, the four conjugations as coordinate operations, the four distinguished subspaces as coefficient conditions, and the split-biquaternion norm with its two real restrictions. The construction is the split complex analogue of the four-vector representation of the biquaternions; the coefficient arithmetic is that of <em>Split-Complex Algebra</em>, and the algebra structure is that of <em>Split-Biquaternion Algebra</em>.</p>
+<p>The treatment is purely mathematical. No physics is invoked, and no metric is imposed on the coefficient space; the four coefficients are an algebraic device, and the form they carry is the split complex norm.</p>
 <h2 id="the-coefficient-space">The Coefficient Space</h2>
 <p><strong>Definition.</strong> The <strong>coefficient space</strong> of $\mathbb{H}_{\mathbb{D}}$ is the free module $\mathbb{D}^4$ of quadruples $(Q_0, Q_1, Q_2, Q_3)$ of split complex numbers, with the corresponding isomorphism</p>
 <p>$$
@@ -81,7 +81,7 @@ $$</p>
 P_2 = Q_0R_2 - Q_1R_3 + Q_2R_0 + Q_3R_1 , \qquad P_3 = Q_0R_3 + Q_1R_2 - Q_2R_1 + Q_3R_0 ,
 $$</p>
 <p>the structure constants being those of the quaternion basis and the coefficients multiplying in the commutative algebra $\mathbb{D}$.</p>
-<p><strong>Proof.</strong> These are the standard quaternion multiplication formulas with the coefficients taken in $\mathbb{D}$; the multiplication is well defined because $\mathbb{D}$ is commutative and central. $\square$</p>
+<p><strong>Proof.</strong> These are the standard quaternion multiplication formulas with the coefficients taken in $\mathbb{D}$; the multiplication is well defined because $\mathbb{D}$ is commutative and central.</p>
 <h3 id="the-multiplication-table-of-the-basis">The Multiplication Table of the Basis</h3>
 <p>The basis elements multiply as in the quaternion case,</p>
 <div class="table-scroll"><table>
@@ -204,16 +204,16 @@ $$</p>
 </tbody>
 </table></div>
 <p>The centre is the set of elements whose vector components vanish; the quaternion subspace is the real part of the coefficient space; the Hermitian subspace has real scalar component and split-imaginary vector components; the anti-Hermitian subspace has split-imaginary scalar component and real vector components. The four coordinate blocks of <em>Split-Biquaternion Relations Between Subspaces</em> are the coordinate sets selected by these conditions.</p>
-<h2 id="the-norm-form">The Norm Form</h2>
-<p><strong>Proposition.</strong> In the four-vector description the norm form is</p>
+<h2 id="the-split-biquaternion-norm">The Split-Biquaternion Norm</h2>
+<p><strong>Proposition.</strong> In the four-vector description the split-biquaternion norm is</p>
 <p>$$
 N(\tilde{Q}) = Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2 = \left(\sum_{\mu} (q_\mu^2 + q'^2_\mu)\right) + 2j\left(\sum_\mu q_\mu q'_\mu\right) ,
 $$</p>
 <p>with real part the square of the Euclidean norm and split-imaginary part twice the inner product of the real and split-imaginary coordinate vectors.</p>
-<p><strong>Proof.</strong> Expand each $Q_\mu^2 = (q_\mu + j q'_\mu)^2 = q_\mu^2 + q'^2_\mu + 2j q_\mu q'_\mu$ and sum over $\mu$. $\square$</p>
-<p>The real part of the norm form is <strong>positive definite</strong>: it vanishes only when all eight coordinates vanish, that is only for $\tilde{Q} = 0$. The norm form is therefore <strong>anisotropic</strong> as a quadratic map to $\mathbb{D}$ — there is no nonzero element of norm form zero — even though the algebra has many zero divisors, whose norm forms are nonzero zero divisors of $\mathbb{D}$.</p>
+<p><strong>Proof.</strong> Expand each $Q_\mu^2 = (q_\mu + j q'_\mu)^2 = q_\mu^2 + q'^2_\mu + 2j q_\mu q'_\mu$ and sum over $\mu$.</p>
+<p>The real part of the split-biquaternion norm is <strong>positive definite</strong>: it vanishes only when all eight coordinates vanish, that is only for $\tilde{Q} = 0$. The split-biquaternion norm is therefore <strong>anisotropic</strong> as a quadratic map to $\mathbb{D}$ — there is no nonzero element of norm zero — even though the algebra has many zero divisors, whose split-biquaternion norms are nonzero zero divisors of $\mathbb{D}$.</p>
 <h3 id="the-two-real-restrictions">The Two Real Restrictions</h3>
-<p>On the two real parts of the coefficient space the norm form is a genuine positive definite quadratic form:</p>
+<p>On the two real parts of the coefficient space the split-biquaternion norm is a genuine positive definite quadratic form:</p>
 <ul>
 <li>on the <strong>real part</strong> $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$, where $q'_\mu = 0$, it is $N = \sum_\mu q_\mu^2$;</li>
 <li>on the <strong>split-imaginary part</strong> $j\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$, where $q_\mu = 0$, it is $N = \sum_\mu q'^2_\mu$.</li>
@@ -224,10 +224,10 @@ $$</p>
 <p>$$
 \sum_\mu (q_\mu + q'_\mu)^2 \neq 0 \quad \text{and} \quad \sum_\mu (q_\mu - q'_\mu)^2 \neq 0 .
 $$</p>
-<p><strong>Proof.</strong> Under the Peirce decomposition $N(\tilde{Q}) = N_+ \tilde\Pi_+ + N_- \tilde\Pi_-$ with $N_\pm = \sum_\mu (q_\mu \pm q'_\mu)^2$, the number $N(\tilde{Q})$ is a unit of $\mathbb{D} \cong \mathbb{R} \oplus \mathbb{R}$ exactly when both components are nonzero; since each is a sum of squares of reals, this means each is strictly positive. $\square$</p>
-<p>The criterion shows directly that the <strong>zero divisors</strong> are the elements whose norm form vanishes in exactly one of the two idempotent components, that is the elements with $\sum_\mu (q_\mu+q'_\mu)^2 = 0$ or $\sum_\mu (q_\mu-q'_\mu)^2 = 0$, which are the two four-dimensional subspaces $Z_\pm$ of <em>Split-Biquaternion Zero Divisors</em>. In the four-vector picture the zero divisors are thus the coefficient quadruples lying in one of the two real four-dimensional subspaces defined by $\sum_\mu(q_\mu\pm q'_\mu)^2 = 0$.</p>
+<p><strong>Proof.</strong> Under the Peirce decomposition $N(\tilde{Q}) = N_+ \tilde\Pi_+ + N_- \tilde\Pi_-$ with $N_\pm = \sum_\mu (q_\mu \pm q'_\mu)^2$, the number $N(\tilde{Q})$ is a unit of $\mathbb{D} \cong \mathbb{R} \oplus \mathbb{R}$ exactly when both components are nonzero; since each is a sum of squares of reals, this means each is strictly positive.</p>
+<p>The criterion shows directly that the <strong>zero divisors</strong> are the elements whose split-biquaternion norm vanishes in exactly one of the two idempotent components, that is the elements with $\sum_\mu (q_\mu+q'_\mu)^2 = 0$ or $\sum_\mu (q_\mu-q'_\mu)^2 = 0$, which are the two four-dimensional subspaces $Z_\pm$ of <em>Split-Biquaternion Zero Divisors</em>. In the four-vector picture the zero divisors are thus the coefficient quadruples lying in one of the two real four-dimensional subspaces defined by $\sum_\mu(q_\mu\pm q'_\mu)^2 = 0$.</p>
 <h2 id="summary">Summary</h2>
-<p>The four-vector representation reads a split biquaternion as a column $(Q_0,Q_1,Q_2,Q_3)$ of four split complex coefficients, with the dual row given by quaternion conjugation and the eight real coordinates $(q_\mu,q'_\mu)$ splitting into a real and a split-imaginary part. The product is the quaternion product in components, with the coefficients multiplying in the commutative algebra $\mathbb{D}$, and the basis table is the quaternion table. The four conjugations act by the sign patterns $Q_0 \mapsto \pm Q_0^{*\text{ or not}}$, negating the vector components for quaternion conjugation, conjugating all coefficients for split complex conjugation, and combining the two for Hermitian and anti-Hermitian conjugation. The four distinguished subspaces are given by coefficient conditions: vanishing vector coefficients for the centre, real coefficients for the quaternion subspace, real scalar and split-imaginary vector components for $\mathbb{M}_+$, and the reverse for $\mathbb{M}_-$. The norm form is $N = \sum_\mu Q_\mu^2$, with positive definite real part $\sum_\mu(q_\mu^2+q'^2_\mu)$ and split-imaginary part $2\sum_\mu q_\mu q'_\mu$, and it is anisotropic: it vanishes only at the origin, so the zero divisors are exactly the elements whose norm form is a nonzero zero divisor of $\mathbb{D}$, described in coordinates by $\sum_\mu(q_\mu \pm q'_\mu)^2 = 0$ in one idempotent component. The construction is the split complex analogue of the biquaternion four-vector representation, with $\mathbb{D}$ in place of $\mathbb{C}$ and the complexified Minkowski form replaced by the split complex norm form.</p>
+<p>The four-vector representation reads a split biquaternion as a column $(Q_0,Q_1,Q_2,Q_3)$ of four split complex coefficients, with the dual row given by quaternion conjugation and the eight real coordinates $(q_\mu,q'_\mu)$ splitting into a real and a split-imaginary part. The product is the quaternion product in components, with the coefficients multiplying in the commutative algebra $\mathbb{D}$, and the basis table is the quaternion table. The four conjugations act by the sign patterns $Q_0 \mapsto \pm Q_0^{*\text{ or not}}$, negating the vector components for quaternion conjugation, conjugating all coefficients for split complex conjugation, and combining the two for Hermitian and anti-Hermitian conjugation. The four distinguished subspaces are given by coefficient conditions: vanishing vector coefficients for the centre, real coefficients for the quaternion subspace, real scalar and split-imaginary vector components for $\mathbb{M}_+$, and the reverse for $\mathbb{M}_-$. The split-biquaternion norm is $N = \sum_\mu Q_\mu^2$, with positive definite real part $\sum_\mu(q_\mu^2+q'^2_\mu)$ and split-imaginary part $2\sum_\mu q_\mu q'_\mu$, and it is anisotropic: it vanishes only at the origin, so the zero divisors are exactly the elements whose split-biquaternion norm is a nonzero zero divisor of $\mathbb{D}$, described in coordinates by $\sum_\mu(q_\mu \pm q'_\mu)^2 = 0$ in one idempotent component. The construction is the split complex analogue of the biquaternion four-vector representation, with $\mathbb{D}$ in place of $\mathbb{C}$ and the complexified quadratic form replaced by the split complex norm.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -271,7 +271,7 @@ $$</p>
 </tr>
 <tr>
 <td>$N(\tilde{Q}) = \sum_\mu Q_\mu^2$</td>
-<td>Norm form, anisotropic</td>
+<td>Split-Biquaternion norm, anisotropic</td>
 </tr>
 <tr>
 <td>$\sum_\mu(q_\mu^2 - q'^2_\mu)$</td>
@@ -285,9 +285,9 @@ $$</p>
 </table></div>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
-<li>I. L. Kantor and A. S. Solodovnikov, <em>Hypercomplex Numbers: An Elementary Introduction to Algebras</em> (Springer, 1989), for the coefficient description of a hypercomplex algebra and its norm form.</li>
+<li>I. L. Kantor and A. S. Solodovnikov, <em>Hypercomplex Numbers: An Elementary Introduction to Algebras</em> (Springer, 1989), for the coefficient description of a hypercomplex algebra and its norm.</li>
 <li>J. P. Ward, <em>Quaternions and Cayley Numbers: Algebra and Applications</em> (Kluwer, 1997), for the four-component representation of the split biquaternion algebra.</li>
-<li>F. Reese Harvey, <em>Spinors and Calibrations</em> (Academic Press, 1990), for norm forms of composition algebras and the coordinate description of their zero divisors.</li>
+<li>F. Reese Harvey, <em>Spinors and Calibrations</em> (Academic Press, 1990), for norms of composition algebras and the coordinate description of their zero divisors.</li>
 <li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em> (Cambridge, 2001), for the componentwise reading of the quaternion product and its conjugations.</li>
 </ul>
       </div>

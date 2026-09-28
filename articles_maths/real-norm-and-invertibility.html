@@ -52,36 +52,36 @@
       <div class="article-body">
         <h1 id="real-norm-and-invertibility"><strong>Real Norm and Invertibility</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>This article studies the norm form of the real algebra and the invertibility of its elements. It follows the basic algebra article <em>Real Algebra</em>, which defined $\mathbb{R}$ as the complete ordered field and as the one-dimensional real algebra carrying its single trivial involution. The goal here is to define the norm form and the Hermitian form, to establish the criterion for invertibility, to describe the group of units and its split into a positive scale and a two-element sign group, and to record the sign trichotomy $x > 0$, $x = 0$, $x < 0$. The real algebra is the one-dimensional member of the tensor family and the base case of the norm series; it collects the facts that the other members generalise, almost all of them by losing the definiteness that holds here.</p>
-<p>The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked, and concrete instances appear only where a statement would otherwise be misread. Throughout, the basis is $e_0 = 1$, a general element is $x = x e_0$ with $x \in \mathbb{R}$, the sole involution is the identity $\operatorname{id}$, and the norm form is</p>
+<p>This article studies the norm of the real algebra and the invertibility of its elements. It follows the basic algebra article <em>Real Algebra</em>, which defined $\mathbb{R}$ as the complete ordered field and as the one-dimensional real algebra carrying its single trivial involution. The goal here is to define the norm and the Hermitian form, to establish the criterion for invertibility, to describe the group of units and its split into a positive scale and a two-element sign group, and to record the sign trichotomy $x > 0$, $x = 0$, $x < 0$. The real algebra is the one-dimensional member of the tensor family and the base case of the norm series; it collects the facts that the other members generalise, almost all of them by losing the definiteness that holds here.</p>
+<p>The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked, and concrete instances appear only where a statement would otherwise be misread. Throughout, the basis is $e_0 = 1$, a general element is $x = x e_0$ with $x \in \mathbb{R}$, the sole involution is the identity $\operatorname{id}$, and the norm is</p>
 <p>$$
 N(x) = x\,x = x^2 .
 $$</p>
-<p>The norm form of a biquaternion is written $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$, a complex-valued form, in <em>Biquaternion Norm and Invertibility</em>; here the same symbol is used for the real norm form $N(x) = x^2$, and the differences between the two are stated wherever they matter.</p>
-<h2 id="the-norm-form">The Norm Form</h2>
+<p>The norm of a biquaternion is written $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$, a complex-valued form, in <em>Biquaternion Norm and Invertibility</em>; here the same symbol is used for the real norm $N(x) = x^2$, and the differences between the two are stated wherever they matter.</p>
+<h2 id="the-norm">The Norm</h2>
 <h3 id="definition">Definition</h3>
-<p>The <strong>norm form</strong> of a real number $x$ is</p>
+<p>The <strong>norm</strong> of a real number $x$ is</p>
 <p>$$
 N(x) = x\,x = x^2 \in \mathbb{R}.
 $$</p>
 <p><strong>Basic properties.</strong></p>
 <ul>
-<li>$N(x)$ is a real number, and $N(x) \geq 0$ with equality if and only if $x = 0$. The norm form is <strong>positive definite</strong>.</li>
+<li>$N(x)$ is a real number, and $N(x) \geq 0$ with equality if and only if $x = 0$. The norm is <strong>positive definite</strong>.</li>
 <li>$N(x)$ is invariant under the involution: the involution is the identity, so $N(\operatorname{id} x) = N(x)$ holds trivially. There is no analogue here of the sign reversal $N(i\tilde{Q}) = -N(\tilde{Q})$ of the biquaternion algebra, because there is no central scalar imaginary separate from the algebra.</li>
 <li>$N$ is an even function, $N(-x) = (-x)^2 = x^2 = N(x)$.</li>
-<li>$N(x) = 0$ if and only if $x = 0$. There are no nonzero real numbers of vanishing norm form; equivalently, the algebra has no zero divisors.</li>
+<li>$N(x) = 0$ if and only if $x = 0$. There are no nonzero real numbers of vanishing norm; equivalently, the algebra has no zero divisors.</li>
 </ul>
-<p>The last point is the sharp difference from the biquaternion algebra, where the norm form is complex-valued and vanishes on a cone of nonzero elements. The difference from the complex algebra is only in the number of squares: $N(z) = a^2+b^2$ is a sum of two squares, and $N(x) = x^2$ is the single-square base case of that sum.</p>
+<p>The last point is the sharp difference from the biquaternion algebra, where the norm is complex-valued and vanishes on a cone of nonzero elements. The difference from the complex algebra is only in the number of squares: $N(z) = a^2+b^2$ is a sum of two squares, and $N(x) = x^2$ is the single-square base case of that sum.</p>
 <h3 id="multiplicativity">Multiplicativity</h3>
-<p><strong>Theorem.</strong> The norm form is multiplicative:</p>
+<p><strong>Theorem.</strong> The norm is multiplicative:</p>
 <p>$$
 N(xy) = N(x)\,N(y).
 $$</p>
-<p><strong>Proof.</strong> By definition $N(xy) = (xy)^2$, and commutativity and associativity of the real product give $(xy)^2 = xyxy = x^2y^2 = N(x)N(y)$. $\square$</p>
+<p><strong>Proof.</strong> By definition $N(xy) = (xy)^2$, and commutativity and associativity of the real product give $(xy)^2 = xyxy = x^2y^2 = N(x)N(y)$.</p>
 <p><strong>Corollary.</strong> If $N(x) \neq 0$ and $N(y) \neq 0$ then $N(xy) \neq 0$. Equivalently, the product of two units is a unit.</p>
-<p>The multiplicativity is the formal identity $x^2y^2 = (xy)^2$ of any commutative ring, and it is used below to prove the invertibility criterion in one line, exactly as in the complex and biquaternion cases. It is also the source of the scale-and-sign decomposition: the norm form is the squared scale.</p>
+<p>The multiplicativity is the formal identity $x^2y^2 = (xy)^2$ of any commutative ring, and it is used below to prove the invertibility criterion in one line, exactly as in the complex and biquaternion cases. It is also the source of the scale-and-sign decomposition: the norm is the squared scale.</p>
 <h3 id="the-modulus">The Modulus</h3>
-<p>The name "norm form" is not a misnomer here, in contrast with the biquaternion case. Define the <strong>modulus</strong>, or absolute value,</p>
+<p>The name "norm" is not a misnomer here, in contrast with the biquaternion case. Define the <strong>modulus</strong>, or absolute value,</p>
 <p>$$
 |x| = \sqrt{N(x)} = \sqrt{x^2} \ \geq 0 .
 $$</p>
@@ -90,39 +90,39 @@ $$</p>
 <li><strong>Positive definiteness:</strong> $|x| \geq 0$, and $|x| = 0$ if and only if $x = 0$.</li>
 <li><strong>Homogeneity:</strong> $|\lambda x| = |\lambda|\,|x|$ for every $\lambda \in \mathbb{R}$.</li>
 <li><strong>Triangle inequality:</strong> $|x + y| \leq |x| + |y|$.</li>
-<li><strong>Multiplicativity:</strong> $|xy| = |x|\,|y|$, from the multiplicativity of the norm form.</li>
+<li><strong>Multiplicativity:</strong> $|xy| = |x|\,|y|$, from the multiplicativity of the norm.</li>
 </ul>
 <p>The square root is a strictly non-negative real number with no sign choice and no branch choice, because $N(x) \geq 0$. The modulus is the <strong>Euclidean norm</strong> of the underlying one-dimensional real space, and the audit of the biquaternion semi-norm has no content here: the value is real, the vanishing locus is the origin alone, and the scaling axiom holds with a real scalar.</p>
-<h3 id="the-norm-form-from-the-real-coordinate">The Norm Form from the Real Coordinate</h3>
-<p>Writing an element as $x = x e_0$ with coordinate $x \in \mathbb{R}$, the norm form is the single square</p>
+<h3 id="the-norm-from-the-real-coordinate">The Norm from the Real Coordinate</h3>
+<p>Writing an element as $x = x e_0$ with coordinate $x \in \mathbb{R}$, the norm is the single square</p>
 <p>$$
 N(x) = x^2 ,
 $$</p>
-<p>a positive-definite quadratic form on the coordinate space $\mathbb{R}^1$ of signature $(1,0)$. The one coordinate contributes with a positive sign. In the complex algebra the corresponding expression is the sum of two squares $a^2+b^2$, also of signature $(2,0)$, and in the biquaternion algebra it is the complex quadratic form $\sum_\mu Q_\mu^2$, whose restrictions to the two sectors carry opposite signatures. The real algebra has no second coordinate and no sector on which the sign reverses; the norm form is real and definite throughout.</p>
+<p>a positive-definite quadratic form on the coordinate space $\mathbb{R}^1$ of signature $(1,0)$. The one coordinate contributes with a positive sign. In the complex algebra the corresponding expression is the sum of two squares $a^2+b^2$, also of signature $(2,0)$, and in the biquaternion algebra it is the complex quadratic form $\sum_\mu Q_\mu^2$, whose restrictions to the two sectors carry opposite signatures. The real algebra has no second coordinate and no sector on which the sign reverses; the norm is real and definite throughout.</p>
 <h2 id="the-hermitian-form">The Hermitian Form</h2>
 <h3 id="definition_1">Definition</h3>
-<p>Because the sole involution of $\mathbb{R}$ is the identity, the <strong>Hermitian form</strong> of a real number $x$ is the same expression as the norm form,</p>
+<p>Because the sole involution of $\mathbb{R}$ is the identity, the <strong>Hermitian form</strong> of a real number $x$ is the same expression as the norm,</p>
 <p>$$
 x\,x = x^2 .
 $$</p>
-<p>It is a real number, non-negative, and vanishes if and only if $x = 0$. The Hermitian form coincides with the norm form for the same reason it does in the complex algebra — the algebra is commutative and its involution is trivial — and the coincidence is even more complete here, since there is no second coefficient field over which the two could differ. In the biquaternion algebra the two objects separate: the Hermitian form $\tilde{Q}\tilde{Q}^\dagger$ is a biquaternion whose vector part need not vanish, and it carries information the norm form does not.</p>
+<p>It is a real number, non-negative, and vanishes if and only if $x = 0$. The Hermitian form coincides with the norm for the same reason it does in the complex algebra — the algebra is commutative and its involution is trivial — and the coincidence is even more complete here, since there is no second coefficient field over which the two could differ. In the biquaternion algebra the two objects separate: the Hermitian form $\tilde{Q}\tilde{Q}^\dagger$ is a biquaternion whose vector part need not vanish, and it carries information the norm does not.</p>
 <h3 id="the-euclidean-norm">The Euclidean Norm</h3>
 <p>The <strong>Euclidean norm</strong> of a real number is the square root of the Hermitian form,</p>
 <p>$$
 \|x\|_E = \sqrt{x\,x} = \sqrt{x^2} = |x| .
 $$</p>
 <p>It is a genuine norm on the real vector space $\mathbb{R} \cong \mathbb{R}^1$: positive-definite, subadditive, and homogeneous of degree one. It <strong>is</strong> multiplicative with respect to the real product, because $|xy| = |x||y|$. Here there is no distinction to draw between the Euclidean norm and the modulus, and the underlying real space $\mathbb{R}^1$ is the algebra itself.</p>
-<h3 id="relation-between-the-norm-form-and-the-hermitian-form">Relation Between the Norm Form and the Hermitian Form</h3>
+<h3 id="relation-between-the-norm-and-the-hermitian-form">Relation Between the Norm and the Hermitian Form</h3>
 <p>The two forms are related as follows.</p>
 <ul>
-<li>The <strong>norm form</strong> $N(x) = x^2$ is real, positive-definite and multiplicative, and it vanishes only at the origin. It controls the multiplicative structure: invertibility, the group of units, and the scale (the modulus).</li>
+<li>The <strong>norm</strong> $N(x) = x^2$ is real, positive-definite and multiplicative, and it vanishes only at the origin. It controls the multiplicative structure: invertibility, the group of units, and the scale (the modulus).</li>
 <li>The <strong>Hermitian form</strong> $x^2$ is the same expression. It controls the topological structure: the Euclidean norm, the metric topology of $\mathbb{R}$, and completeness.</li>
 </ul>
 <p>The <strong>inner product</strong> on $\mathbb{R}$ as a real vector space is</p>
 <p>$$
 \langle x, y \rangle = x\,y = xy,
 $$</p>
-<p>symmetric and bilinear, with $\langle x, x \rangle = x^2 = N(x)$. It is real-valued, and its "imaginary part" is identically zero; the complex inner product $\langle z, w \rangle = \bar{z}w$ is complex-valued in general, and the biquaternion Hermitian form is not even scalar-valued. The real algebra is the case in which the inner product, the Hermitian form and the norm form are one and the same real-valued object, and this collapse is the degeneracy of the one-dimensional case.</p>
+<p>symmetric and bilinear, with $\langle x, x \rangle = x^2 = N(x)$. It is real-valued, and its "imaginary part" is identically zero; the complex inner product $\langle z, w \rangle = \bar{z}w$ is complex-valued in general, and the biquaternion Hermitian form is not even scalar-valued. The real algebra is the case in which the inner product, the Hermitian form and the norm are one and the same real-valued object, and this collapse is the degeneracy of the one-dimensional case.</p>
 <h2 id="invertibility">Invertibility</h2>
 <h3 id="definition_2">Definition</h3>
 <p>A real number $x$ is <strong>invertible</strong> if there exists a real number $y$ such that</p>
@@ -138,15 +138,52 @@ $$</p>
 <p>$$
 y = \frac{x}{N(x)} = \frac{1}{x}
 $$</p>
-<p>satisfies $xy = x\cdot\frac{1}{x} = 1$, so $x$ has an inverse. Conversely, if $x$ is invertible then applying the norm form to $xy = 1$ and using multiplicativity gives $N(x)N(y) = N(1) = 1$, so $N(x) \neq 0$ and hence $x \neq 0$. $\square$</p>
-<p>The criterion $N(x) \neq 0$ is the general form of the invertibility test of the family; in $\mathbb{R}$ it is equivalent to the elementary statement $x \neq 0$ because the norm form is definite. In the biquaternion algebra the two conditions differ, and $N(\tilde{Q}) = 0$ with $\tilde{Q} \neq 0$ is exactly the definition of a zero divisor.</p>
+<p>satisfies $xy = x\cdot\frac{1}{x} = 1$, so $x$ has an inverse. Conversely, if $x$ is invertible then applying the norm to $xy = 1$ and using multiplicativity gives $N(x)N(y) = N(1) = 1$, so $N(x) \neq 0$ and hence $x \neq 0$.</p>
+<p>The criterion $N(x) \neq 0$ is the general form of the invertibility test of the family; in $\mathbb{R}$ it is equivalent to the elementary statement $x \neq 0$ because the norm is definite. In the biquaternion algebra the two conditions differ, and $N(\tilde{Q}) = 0$ with $\tilde{Q} \neq 0$ is exactly the definition of a zero divisor.</p>
 <h3 id="the-inverse-formula">The Inverse Formula</h3>
 <p>For $x \neq 0$ the inverse is</p>
 <p>$$
 x^{-1} = \frac{1}{N(x)}\,x = \frac{1}{x}.
 $$</p>
-<p><strong>Proof.</strong> The verification is the computation in the first part of the proof of the criterion. $\square$</p>
+<p><strong>Proof.</strong> The verification is the computation in the first part of the proof of the criterion.</p>
 <p><strong>Corollary.</strong> If $x$ is invertible then so is $-x$, and $(-x)^{-1} = -x^{-1}$. If $x$ is invertible then so is $x^{-1}$, and $(x^{-1})^{-1} = x$. Inversion reverses the order of a product, which in a commutative algebra is invisible: $(xy)^{-1} = y^{-1}x^{-1} = x^{-1}y^{-1}$.</p>
+<h3 id="worked-examples">Worked Examples</h3>
+<p>On the elements $x = -\tfrac{3}{4}$ and $y = \tfrac{7}{2}$, both nonzero and therefore units,</p>
+<p>$$
+x^{-1} = \frac{x}{x^2} = \frac{-\tfrac{3}{4}}{\tfrac{9}{16}} = -\tfrac{4}{3}, \qquad
+y^{-1} = \frac{y}{y^2} = \frac{\tfrac{7}{2}}{\tfrac{49}{4}} = \tfrac{2}{7},
+$$</p>
+<p>with the exact verifications $x\,x^{-1} = 1$ and $y\,y^{-1} = 1$; the element $0$ has $N(0) = 0$ and is the only non-unit.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>element</th>
+<th>$N$</th>
+<th>unit?</th>
+<th>inverse</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$x = -\tfrac{3}{4}$</td>
+<td>$\tfrac{9}{16}$</td>
+<td>yes</td>
+<td>$-\tfrac{4}{3}$</td>
+</tr>
+<tr>
+<td>$y = \tfrac{7}{2}$</td>
+<td>$\tfrac{49}{4}$</td>
+<td>yes</td>
+<td>$\tfrac{2}{7}$</td>
+</tr>
+<tr>
+<td>$0$</td>
+<td>$0$</td>
+<td>no</td>
+<td>—</td>
+</tr>
+</tbody>
+</table></div>
 <h2 id="the-group-of-units">The Group of Units</h2>
 <h3 id="definition_3">Definition</h3>
 <p>The <strong>group of units</strong> of $\mathbb{R}$ is the set of invertible elements:</p>
@@ -161,7 +198,7 @@ $$</p>
 <li><strong>Disconnected, two components.</strong> $\mathbb{R}^\times = \mathbb{R}_{>0} \cup \mathbb{R}_{<0}$ is the disjoint union of the positive and negative rays, so it has <strong>two</strong> connected components. This is the first structural difference from the complex case, where $\mathbb{C}^\times$ is connected; the two components of $\mathbb{R}^\times$ are the two elements of the sign group, dilated by the positive scale.</li>
 <li><strong>Non-compact.</strong> $\mathbb{R}^\times$ is unbounded, hence not compact.</li>
 <li><strong>Infinite.</strong> $\mathbb{R}^\times$ is uncountable and contains the infinite cyclic group of powers of any element other than $\pm1$.</li>
-<li><strong>Dimension.</strong> As a real Lie group, $\mathbb{R}^\times$ has dimension $1$, its Lie algebra being $\mathbb{R}$ itself with the zero bracket; the sign group contributes dimension $0$.</li>
+<li><strong>Dimension.</strong> As a topological group the units are one-dimensional, the positive ray contributing the one dimension and the sign group the zero-dimensional factor; the Lie structure of the group is the analytic content of <em>Real Exponential and Lie Group Structure</em>.</li>
 </ul>
 <p>The unit group is the base case of the family: below it lies only the non-unit $0$, and every nonzero element is a unit because the algebra is a field.</p>
 <h3 id="the-split-into-positive-scale-and-the-sign-group">The Split into Positive Scale and the Sign Group</h3>
@@ -170,16 +207,16 @@ $$</p>
 \mathbb{R}^\times \longrightarrow \mathbb{R}_{>0} \times \{\pm1\}, \qquad x \longmapsto \bigl( |x|, \operatorname{sgn} x \bigr),
 $$</p>
 <p>where $\operatorname{sgn} x = x/|x| \in \{\pm1\}$ for $x \neq 0$, is an isomorphism of groups and a homeomorphism of topological spaces onto the product of the positive ray and the two-element group.</p>
-<p><strong>Proof.</strong> The map is well defined because $|x| > 0$ for $x \neq 0$, and its image lies in $\mathbb{R}_{>0} \times \{\pm1\}$. It is a group homomorphism: $|xy| = |x||y|$ and $\operatorname{sgn}(xy) = \operatorname{sgn}x\,\operatorname{sgn}y$, since each is positive exactly when the two factors have the same sign. Its inverse is $(r, \sigma) \mapsto r\sigma$, continuous in the product topology, so the map is a homeomorphism. $\square$</p>
-<p>The two factors are the <strong>scale</strong> $r = |x| \in \mathbb{R}_{>0}$, a positive real, and the <strong>sign</strong> $\sigma = \operatorname{sgn}x \in \{\pm1\}$. The group $\{\pm1\}$ is the two-element cyclic group, denoted $O(1)$ below when it is regarded as the orthogonal group of the line. The product form of this isomorphism is $x = |x|\operatorname{sgn}x$, the splitting of the unit group that the norm form supplies. In the complex case the second factor is the circle $U(1)$, a one-dimensional compact group, and it is connected; here it is a two-point discrete group, and the unit group is disconnected.</p>
+<p><strong>Proof.</strong> The map is well defined because $|x| > 0$ for $x \neq 0$, and its image lies in $\mathbb{R}_{>0} \times \{\pm1\}$. It is a group homomorphism: $|xy| = |x||y|$ and $\operatorname{sgn}(xy) = \operatorname{sgn}x\,\operatorname{sgn}y$, since each is positive exactly when the two factors have the same sign. Its inverse is $(r, \sigma) \mapsto r\sigma$, continuous in the product topology, so the map is a homeomorphism.</p>
+<p>The two factors are the <strong>scale</strong> $r = |x| \in \mathbb{R}_{>0}$, a positive real, and the <strong>sign</strong> $\sigma = \operatorname{sgn}x \in \{\pm1\}$. The group $\{\pm1\}$ is the two-element cyclic group, denoted $O(1)$ below when it is regarded as the orthogonal group of the line. The product form of this isomorphism is $x = |x|\operatorname{sgn}x$, the splitting of the unit group that the norm supplies. In the complex case the second factor is the circle $U(1)$, a one-dimensional compact group, and it is connected; here it is a two-point discrete group, and the unit group is disconnected.</p>
 <h3 id="the-inverse-map">The Inverse Map</h3>
-<p>The inversion map $\iota : \mathbb{R}^\times \to \mathbb{R}^\times$, $\iota(x) = x^{-1}$, is a smooth group automorphism of order two, and writing $x = r\sigma$ with $r = |x| > 0$ and $\sigma = \operatorname{sgn}x$ it reads</p>
+<p>The inversion map $\iota : \mathbb{R}^\times \to \mathbb{R}^\times$, $\iota(x) = x^{-1}$, is a group automorphism of order two, and writing $x = r\sigma$ with $r = |x| > 0$ and $\sigma = \operatorname{sgn}x$ it reads</p>
 <p>$$
 \iota(r\sigma) = r^{-1}\sigma^{-1} = r^{-1}\sigma ,
 $$</p>
-<p>because $\sigma^{-1} = \sigma$ for $\sigma = \pm1$. Inversion therefore inverts the scale and fixes the sign, and its differential at the identity is $-\operatorname{id}$, the infinitesimal reason the Lie bracket of a commutative Lie algebra is antisymmetric. In the complex case inversion inverts the scale and conjugates the phase; here the sign is discrete and inversion fixes it.</p>
+<p>because $\sigma^{-1} = \sigma$ for $\sigma = \pm1$. Inversion therefore inverts the scale and fixes the sign. The smoothness of the operation and its differential at the identity are Lie-group data, and they are analytic: they belong to <em>Real Exponential and Lie Group Structure</em>, the analytic article of this category, and are named here only. In the complex case inversion inverts the scale and conjugates the phase; here the sign is discrete and inversion fixes it.</p>
 <h2 id="the-three-way-classification">The Three-Way Classification</h2>
-<p>An element of a finite-dimensional real algebra of the tensor family is of one of three kinds: a unit, a zero divisor, or zero. The classes are read off from the norm form.</p>
+<p>An element of a finite-dimensional real algebra of the tensor family is of one of three kinds: a unit, a zero divisor, or zero. The classes are read off from the norm.</p>
 <p><strong>Definition.</strong> Let $x \in \mathbb{R}$. Then exactly one of the following holds:</p>
 <ul>
 <li>$N(x) > 0$: $x$ is a <strong>unit</strong>, i.e. an invertible element;</li>
@@ -187,15 +224,15 @@ $$</p>
 <li>$x = 0$: $x$ is <strong>zero</strong>.</li>
 </ul>
 <p><strong>Theorem (the classification of $\mathbb{R}$).</strong> The zero-divisor class is empty, so every nonzero real number is a unit and the classification has only two non-empty classes.</p>
-<p><strong>Proof.</strong> $N(x) = x^2 = 0$ forces $x = 0$ because the square of a real number is non-negative, so the only element of vanishing norm form is $0$. $\square$</p>
+<p><strong>Proof.</strong> $N(x) = x^2 = 0$ forces $x = 0$ because the square of a real number is non-negative, so the only element of vanishing norm is $0$.</p>
 <h3 id="the-sign-trichotomy">The Sign Trichotomy</h3>
-<p>The three-way classification refines, in the ordered case, to the <strong>sign trichotomy</strong>: every real number is positive, zero or negative, and the two nonzero cases are distinguished by the sign. This is the real analogue of the sign of the norm form in the higher members, but it is finer, because the order of $\mathbb{R}$ is total and gives a third class.</p>
+<p>The three-way classification refines, in the ordered case, to the <strong>sign trichotomy</strong>: every real number is positive, zero or negative, and the two nonzero cases are distinguished by the sign. This is the real analogue of the sign of the norm in the higher members, but it is finer, because the order of $\mathbb{R}$ is total and gives a third class.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
 <th>class</th>
 <th>sign</th>
-<th>norm form</th>
+<th>norm</th>
 <th>unit?</th>
 <th>sign factor</th>
 </tr>
@@ -256,18 +293,18 @@ $$</p>
 <p>$$
 \mathbb{R} = \mathbb{R}_{\mathbb{R}} ,
 $$</p>
-<p>with no anti-fixed summand. On the single piece the norm form is definite, $N(x) = x^2 \geq 0$, and multiplying by an element preserves it:</p>
+<p>with no anti-fixed summand. On the single piece the norm is definite, $N(x) = x^2 \geq 0$, and multiplying by an element preserves it:</p>
 <p>$$
 N(xy) = N(x)N(y).
 $$</p>
-<p>This is the degeneracy of the involution decomposition of the real field. In the complex algebra the involution splits $\mathbb{C} = \mathbb{R}_{\mathbb{C}} \oplus i\mathbb{R}_{\mathbb{C}}$ into two definite pieces of the same signature, and in the biquaternion algebra the Hermitian conjugation splits $\mathbb{B}$ into an eight-dimensional sum of a Hermitian and an anti-Hermitian subspace whose sectors carry opposite signatures, $(1,3)$ and $(3,1)$, with a sign reversal $N(i\tilde{Q}) = -N(\tilde{Q})$ for the central scalar imaginary. Here there is no second subspace, no central scalar imaginary and no sign reversal; the fixed-point decomposition collapses to its single summand, and the norm form and the Hermitian form collapse with it.</p>
+<p>This is the degeneracy of the involution decomposition of the real field. In the complex algebra the involution splits $\mathbb{C} = \mathbb{R}_{\mathbb{C}} \oplus i\mathbb{R}_{\mathbb{C}}$ into two definite pieces of the same signature, and in the biquaternion algebra the Hermitian conjugation splits $\mathbb{B}$ into an eight-dimensional sum of a Hermitian and an anti-Hermitian subspace whose sectors carry opposite signatures, $(1,3)$ and $(3,1)$, with a sign reversal $N(i\tilde{Q}) = -N(\tilde{Q})$ for the central scalar imaginary. Here there is no second subspace, no central scalar imaginary and no sign reversal; the fixed-point decomposition collapses to its single summand, and the norm and the Hermitian form collapse with it.</p>
 <h2 id="the-base-case-of-the-norm-series">The Base Case of the Norm Series</h2>
-<p>The norm series of the corpus records, for each algebra of the family, whether its norm form is real or complex, definite or indefinite, and what its vanishing locus is. In $\mathbb{R}$ the norm form is the single square $N(x) = x^2$, a real positive-definite quadratic form, and its vanishing locus is the single point $\{0\}$:</p>
+<p>The norm series of the corpus records, for each algebra of the family, whether its norm is real or complex, definite or indefinite, and what its vanishing locus is. In $\mathbb{R}$ the norm is the single square $N(x) = x^2$, a real positive-definite quadratic form, and its vanishing locus is the single point $\{0\}$:</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
 <th>algebra</th>
-<th>norm form</th>
+<th>norm</th>
 <th>value field</th>
 <th>definite?</th>
 <th>vanishing locus</th>
@@ -304,14 +341,14 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>The real case is the bottom of the definite column, the complex case adds the second square, the quaternion case adds the third and fourth, and the biquaternion case replaces the definite real form by an indefinite complex one. In every member the norm form is multiplicative; the real case is the least instance of that multiplicativity, $x^2y^2 = (xy)^2$.</p>
+<p>The real case is the bottom of the definite column, the complex case adds the second square, the quaternion case adds the third and fourth, and the biquaternion case replaces the definite real form by an indefinite complex one. In every member the norm is multiplicative; the real case is the least instance of that multiplicativity, $x^2y^2 = (xy)^2$.</p>
 <h2 id="comparison-with-the-complex-and-quaternion-cases">Comparison with the Complex and Quaternion Cases</h2>
 <p>The definite cases of the family, and the real case for contrast, are:</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
 <th>algebra</th>
-<th>norm form</th>
+<th>norm</th>
 <th>definite?</th>
 <th>zero divisors</th>
 <th>group of units</th>
@@ -348,11 +385,11 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>The norm form is real and definite in $\mathbb{R}$, $\mathbb{C}$ and $\mathbb{H}$, and all three are division algebras; the norm form is complex and indefinite in $\mathbb{B}$, which has zero divisors. The unit group is compact modulo the non-compact scale in $\mathbb{R}$, $\mathbb{C}$ and $\mathbb{H}$, and genuinely non-compact in the biquaternion case. The real algebra sits at the bottom of the definite column: the complex case replaces the sign group $O(1)$ by the circle $U(1)$ and thereby connects the two components of the unit group into one, the quaternion case replaces the circle by the three-sphere $S^3$, and the biquaternion case replaces the definite norm form by a complex one and the group of units by $GL_2(\mathbb{C})$.</p>
+<p>The norm is real and definite in $\mathbb{R}$, $\mathbb{C}$ and $\mathbb{H}$, and all three are division algebras; the norm is complex and indefinite in $\mathbb{B}$, which has zero divisors. The unit group is compact modulo the non-compact scale in $\mathbb{R}$, $\mathbb{C}$ and $\mathbb{H}$, and genuinely non-compact in the biquaternion case. The real algebra sits at the bottom of the definite column: the complex case replaces the sign group $O(1)$ by the circle $U(1)$ and thereby connects the two components of the unit group into one, the quaternion case replaces the circle by the three-sphere $S^3$, and the biquaternion case replaces the definite norm by a complex one and the group of units by $GL_2(\mathbb{C})$.</p>
 <h2 id="summary">Summary</h2>
-<p>The norm form of a real number is $N(x) = x^2$, real, positive-definite and multiplicative, $N(xy) = N(x)N(y)$; it vanishes only at the origin. The Hermitian form is the same expression, so the norm form and the Hermitian form coincide, and the Euclidean norm $|x| = \sqrt{N(x)}$ is a genuine norm that is multiplicative. This is the degeneracy of the one-dimensional case.</p>
-<p>A real number is invertible if and only if it is nonzero, equivalently if and only if its norm form is nonzero, and the inverse is $x^{-1} = x/N(x) = 1/x$. The zero-divisor class is empty, so $\mathbb{R}$ is a division algebra by the Frobenius theorem, and the single distinguished subspace, the whole field, consists entirely of units together with zero.</p>
-<p>The group of units is $\mathbb{R}^\times = \mathbb{R}\setminus\{0\}$, abelian, open, dense, disconnected and non-compact, and it splits as $\mathbb{R}^\times \cong \mathbb{R}_{>0} \times \{\pm1\}$ into a positive scale and a sign, $x = |x|\operatorname{sgn}x$. The norm form is definite on the whole algebra, and the sign trichotomy $x > 0$, $x = 0$, $x < 0$ refines the three-way classification; the only element of vanishing norm form is the origin, which is why the real algebra is the definite base case of the family.</p>
+<p>The norm of a real number is $N(x) = x^2$, real, positive-definite and multiplicative, $N(xy) = N(x)N(y)$; it vanishes only at the origin. The Hermitian form is the same expression, so the norm and the Hermitian form coincide, and the Euclidean norm $|x| = \sqrt{N(x)}$ is a genuine norm that is multiplicative. This is the degeneracy of the one-dimensional case.</p>
+<p>A real number is invertible if and only if it is nonzero, equivalently if and only if its norm is nonzero, and the inverse is $x^{-1} = x/N(x) = 1/x$. The zero-divisor class is empty, so $\mathbb{R}$ is a division algebra by the Frobenius theorem, and the single distinguished subspace, the whole field, consists entirely of units together with zero.</p>
+<p>The group of units is $\mathbb{R}^\times = \mathbb{R}\setminus\{0\}$, abelian, open, dense, disconnected and non-compact, and it splits as $\mathbb{R}^\times \cong \mathbb{R}_{>0} \times \{\pm1\}$ into a positive scale and a sign, $x = |x|\operatorname{sgn}x$. The norm is definite on the whole algebra, and the sign trichotomy $x > 0$, $x = 0$, $x < 0$ refines the three-way classification; the only element of vanishing norm is the origin, which is why the real algebra is the definite base case of the family.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -376,7 +413,7 @@ $$</p>
 </tr>
 <tr>
 <td>$N(x) = x\,x = x^2$</td>
-<td>the norm form, real, positive definite, multiplicative</td>
+<td>the norm, real, positive definite, multiplicative</td>
 </tr>
 <tr>
 <td>$\lvert x\rvert = \sqrt{N(x)} = \sqrt{x^2}$</td>
@@ -420,7 +457,7 @@ $$</p>
 <ul>
 <li>Edmund Landau, <em>Grundlagen der Analysis</em> (Akademische Verlagsgesellschaft, 1930), for the ordered-field axioms and the uniqueness of $\mathbb{R}$.</li>
 <li>Israel Nathan Herstein, <em>Topics in Algebra</em>, 2nd edition (Wiley, 1975), for inverses, the group of units and the Frobenius theorem.</li>
-<li>Richard S. Pierce, <em>Associative Algebras</em>, Graduate Texts in Mathematics 88 (Springer, 1982), for norm forms and invertibility in finite-dimensional algebras.</li>
+<li>Richard S. Pierce, <em>Associative Algebras</em>, Graduate Texts in Mathematics 88 (Springer, 1982), for norms and invertibility in finite-dimensional algebras.</li>
 <li>John H. Conway and Derek A. Smith, <em>On Quaternions and Octonions</em> (A K Peters, 2003), for the classification of the real division algebras and the place of $\mathbb{R}$ among them.</li>
 <li>Walter Rudin, <em>Principles of Mathematical Analysis</em>, 3rd edition (McGraw-Hill, 1976), for the absolute value, the modulus and the metric structure of the line.</li>
 <li>Serge Lang, <em>Algebra</em>, 3rd edition (Addison–Wesley, 1993), for ordered fields, the sign of an element and the positive cone.</li>

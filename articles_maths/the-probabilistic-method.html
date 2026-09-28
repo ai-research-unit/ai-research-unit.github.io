@@ -69,7 +69,7 @@
 \mathbb{P}\!\left(\bigcup_i A_i\right) \leq \sum_i\mathbb{P}(A_i).
 $$</p>
 <p><strong>Proposition (first moment method).</strong> Let $X \geq 0$ be a random variable taking values in a countable set. If $\mathbb{E}[X] < 1$ then $\mathbb{P}(X = 0) > 0$; more generally, if $\mathbb{E}[X] \leq k$ then $\mathbb{P}(X \leq k) > 0$. When $X$ counts the defects of a random object, the object is defect-free with positive probability.</p>
-<p><em>Proof.</em> Markov's inequality gives $\mathbb{P}(X \geq 1) \leq \mathbb{E}[X] < 1$, so $\mathbb{P}(X = 0) > 0$. For the second statement, $\mathbb{P}(X \geq k+1)\leq \mathbb{E}[X]/(k+1) < 1$. $\square$</p>
+<p><em>Proof.</em> Markov's inequality gives $\mathbb{P}(X \geq 1) \leq \mathbb{E}[X] < 1$, so $\mathbb{P}(X = 0) > 0$. For the second statement, $\mathbb{P}(X \geq k+1)\leq \mathbb{E}[X]/(k+1) < 1$.</p>
 <p>The two propositions are the workhorses of the method, and they are the measure-theoretic statements behind the whole technique: the union bound controls the event that some bad configuration occurs, and the first moment bound controls the expected number of bad configurations. The usual pattern is: define a random object, count the expected number of defects, and if the expectation is below one, conclude that a defect-free object exists.</p>
 <h3 id="ramsey-numbers">Ramsey Numbers</h3>
 <p><strong>Definition.</strong> The <strong>Ramsey number</strong> $R(k,\ell)$ is the least $n$ such that every red-blue colouring of the edges of $K_n$ contains a red $K_k$ or a blue $K_\ell$. The diagonal case is $R(k,k)$.</p>
@@ -78,12 +78,12 @@ $$</p>
 <p>$$
 \mathbb{E}[X] = \binom{n}{k}2^{1-\binom{k}{2}} < \frac{n^k}{k!}\,2^{1-k(k-1)/2}.
 $$</p>
-<p>Taking $n = \lfloor 2^{k/2}\rfloor$ gives $\mathbb{E}[X] < 2^{k/2+1}/k!$, and $k! \geq 2^{k/2+1}$ for $k \geq 3$; hence $\mathbb{E}[X] < 1$, so $\mathbb{P}(X = 0) > 0$: there is a colouring with no monochromatic $K_k$, and $R(k,k) > n$. $\square$</p>
+<p>Taking $n = \lfloor 2^{k/2}\rfloor$ gives $\mathbb{E}[X] < 2^{k/2+1}/k!$, and $k! \geq 2^{k/2+1}$ for $k \geq 3$; hence $\mathbb{E}[X] < 1$, so $\mathbb{P}(X = 0) > 0$: there is a colouring with no monochromatic $K_k$, and $R(k,k) > n$.</p>
 <p>The proof is the original application of the method and it remains its model: a probabilistic construction proves a lower bound that no explicit construction matches, and the gap between the bound $2^{k/2}$ and the upper bound $R(k,k) \leq 4^k$ remains one of the classical open problems.</p>
 <p><strong>Example (the tournament and the digraph).</strong> The same argument proves the existence of a tournament on $n$ vertices with no transitive subtournament of size $k$ for $k = 2\log_2n - 2\log_2\log_2n + O(1)$; the count of transitive subtournaments is $\binom{n}{k}k!\,2^{-\binom{k}{2}}$, and the first moment bound makes it below one.</p>
 <h3 id="set-systems-and-hypergraph-colouring">Set Systems and Hypergraph Colouring</h3>
 <p><strong>Theorem (property B).</strong> Every $k$-uniform hypergraph with fewer than $2^{k-1}$ edges is 2-colourable in the sense that no edge is monochromatic.</p>
-<p><em>Proof.</em> Colour the vertices independently red or blue with probability $1/2$. For a fixed edge $E$ of size $k$ the probability that $E$ is monochromatic is $2^{1-k}$, so the expected number of monochromatic edges is $m2^{1-k} < 1$ when $m < 2^{k-1}$; the first moment method gives a colouring with no monochromatic edge. $\square$</p>
+<p><em>Proof.</em> Colour the vertices independently red or blue with probability $1/2$. For a fixed edge $E$ of size $k$ the probability that $E$ is monochromatic is $2^{1-k}$, so the expected number of monochromatic edges is $m2^{1-k} < 1$ when $m < 2^{k-1}$; the first moment method gives a colouring with no monochromatic edge.</p>
 <p>The bound is the first and simplest of the colouring results, and it is the entry point of the local lemma, which replaces the counting of all edges by the counting of the edges through each vertex.</p>
 <h2 id="the-second-moment-method">The Second Moment Method</h2>
 <h3 id="the-variance-criterion">The Variance Criterion</h3>
@@ -91,7 +91,7 @@ $$</p>
 <p>$$
 \mathbb{P}(X = 0) \leq \frac{\operatorname{Var}(X)}{\mathbb{E}[X]^2}, \qquad \text{and hence} \qquad \mathbb{P}(X > 0) \geq 1 - \frac{\operatorname{Var}(X)}{\mathbb{E}[X]^2}.
 $$</p>
-<p><em>Proof.</em> By the Cauchy–Schwarz inequality, $\mathbb{E}[X]^2 = \mathbb{E}[X\mathbf{1}_{\{X>0\}}]^2 \leq \mathbb{E}[X^2]\,\mathbb{P}(X > 0)$, whence $\mathbb{P}(X>0) \geq \mathbb{E}[X]^2/\mathbb{E}[X^2]$; subtracting from $1$ and using $\mathbb{E}[X^2] = \operatorname{Var}(X) + \mathbb{E}[X]^2$ gives the stated form. $\square$</p>
+<p><em>Proof.</em> By the Cauchy–Schwarz inequality, $\mathbb{E}[X]^2 = \mathbb{E}[X\mathbf{1}_{\{X>0\}}]^2 \leq \mathbb{E}[X^2]\,\mathbb{P}(X > 0)$, whence $\mathbb{P}(X>0) \geq \mathbb{E}[X]^2/\mathbb{E}[X^2]$; subtracting from $1$ and using $\mathbb{E}[X^2] = \operatorname{Var}(X) + \mathbb{E}[X]^2$ gives the stated form.</p>
 <p>The second moment criterion converts a variance computation into a lower bound on the probability that a random object has at least one of the desired configurations, and it is the standard tool of the threshold phenomena: when $\operatorname{Var}(X) = o(\mathbb{E}[X]^2)$ the count $X$ is concentrated near its mean, so almost surely $X>0$ whenever $\mathbb{E}[X]\to\infty$.</p>
 <p><strong>Example (the number of triangles in a random graph).</strong> Let $G(n,p)$ be the random graph with each edge present independently with probability $p$ and let $X$ be its number of triangles. Then $\mathbb{E}[X] = \binom{n}{3}p^3$ and a computation of the second moment shows $\operatorname{Var}(X) \leq Cn^4p^5 + Cn^3p^3$; hence for $p = \omega(n)/n$ the graph contains a triangle with probability tending to $1$, which is the lower half of the classical threshold at $p = 1/n$.</p>
 <h3 id="the-paley-graph-and-the-quadratic-residues">The Paley Graph and the Quadratic Residues</h3>
@@ -112,7 +112,7 @@ $$</p>
 <p>$$
 \mathbb{P}\!\left(\bigcap_iA_i^c\right) = \prod_i\left(1 - \mathbb{P}\!\left(A_i\bigm\mid \bigcap_{j<i}A_j^c\right)\right) > 0,
 $$</p>
-<p>since every factor is at least $1-x_i > 0$; in the symmetric form one takes $x_i = 1/(d+1)$, for which $\prod_{j\in N(i)}(1-x_j) \geq (1-\frac1{d+1})^d$, and $ep(d+1)\leq1$ makes the product inequality hold. $\square$</p>
+<p>since every factor is at least $1-x_i > 0$; in the symmetric form one takes $x_i = 1/(d+1)$, for which $\prod_{j\in N(i)}(1-x_j) \geq (1-\frac1{d+1})^d$, and $ep(d+1)\leq1$ makes the product inequality hold.</p>
 <p><strong>Theorem (general form).</strong> If there exist $x_i \in [0,1)$ with</p>
 <p>$$
 \mathbb{P}(A_i) \leq x_i\prod_{j \in N(i)}(1 - x_j) \qquad \text{for every } i,
@@ -121,14 +121,14 @@ $$</p>
 <p>The local lemma is the union bound with the intersections controlled: the union bound requires the sum of the probabilities to be below one, whereas the local lemma requires only that each event be unlikely relative to the number of events on which it depends. This relaxation is what makes the lemma powerful, and its proof is the standard induction on the number of conditioned events.</p>
 <h3 id="applications">Applications</h3>
 <p><strong>Theorem (LLL for hypergraph colouring).</strong> Every $k$-uniform hypergraph in which every edge intersects at most $d$ other edges is 2-colourable with no monochromatic edge, provided $e\,2^{1-k}(d+1) \leq 1$.</p>
-<p><em>Proof.</em> Colour independently; let $A_E$ be the event that the edge $E$ is monochromatic, so $\mathbb{P}(A_E) = 2^{1-k}$, and the dependency graph joins two edges that intersect. The degree is at most $d$ by hypothesis and the symmetric local lemma applies. $\square$</p>
+<p><em>Proof.</em> Colour independently; let $A_E$ be the event that the edge $E$ is monochromatic, so $\mathbb{P}(A_E) = 2^{1-k}$, and the dependency graph joins two edges that intersect. The degree is at most $d$ by hypothesis and the symmetric local lemma applies.</p>
 <p>The result is strictly stronger than the first moment bound on the number of edges, since the count of edges through a vertex can be large. The other standard applications are the satisfiability of a $k$-CNF formula in which each clause shares a variable with at most $2^{k-1}/e - 1$ other clauses, and the existence of Ramsey lower bounds with the alteration step, where the local lemma sharpens the constant.</p>
 <h2 id="the-alteration-method">The Alteration Method</h2>
 <h3 id="graphs-of-large-girth-and-large-chromatic-number">Graphs of Large Girth and Large Chromatic Number</h3>
 <p><strong>Theorem (Erdős).</strong> For every $g \geq 3$ and every $\chi \geq 3$ there is a graph of girth greater than $g$ and chromatic number greater than $\chi$.</p>
 <p><em>Proof (sketch).</em> Let $G = G(n,p)$ with $p = n^{\theta-1}$ for a fixed $\theta \in (0,1)$. The expected number of cycles of length at most $g$ is $O(n^{\theta g})$ and the expected number of independent sets of size $s = \lceil 3\ln n/p\rceil$ is $o(1)$; more precisely, a first moment estimate bounds the probability that some $s$-set is independent by
 $\binom{n}{s}(1-p)^{\binom{s}{2}} \leq (ne^{-p(s-1)/2})^s = o(1)$.
-Alter the graph by deleting one vertex from each short cycle: the graph that remains has girth exceeding $g$ and its chromatic number is at least $n/(2s)$ — because every colour class is an independent set of size at most $s$, and at most $n/(2s)$ vertices were deleted when $n$ is large — which exceeds $\chi$ for $n$ large. $\square$</p>
+Alter the graph by deleting one vertex from each short cycle: the graph that remains has girth exceeding $g$ and its chromatic number is at least $n/(2s)$ — because every colour class is an independent set of size at most $s$, and at most $n/(2s)$ vertices were deleted when $n$ is large — which exceeds $\chi$ for $n$ large.</p>
 <p>The alteration method is the second of the classical techniques: one first produces a random object with few defects, then repairs the defects by discarding them, and shows that the repair costs little relative to the size of the object. It is the technique behind the construction of graphs of large girth and large chromatic number, the Ramsey lower bound $\frac{k}{e\sqrt2}2^{k/2}$ of Spencer, and many of the constructions of extremal combinatorics.</p>
 <h2 id="the-entropy-and-container-methods">The Entropy and Container Methods</h2>
 <h3 id="the-entropy-method">The Entropy Method</h3>

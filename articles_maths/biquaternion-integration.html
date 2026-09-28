@@ -53,7 +53,7 @@
         <h1 id="biquaternion-integration"><strong>Biquaternion Integration</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>This article introduces the integration theory of biquaternion-valued functions. It follows the article on biquaternion analysis, which defined limits, continuity, and the differential operators on a four-dimensional real subspace of $\mathbb{B}$. The goal here is to define the integral of a biquaternion-valued function, establish the standard properties, and derive the integral formulas that are the counterparts of the Cauchy integral formula and its consequences in complex analysis.</p>
-<p>Throughout the main body of this article, we work on the <strong>quaternion subspace</strong> $\mathbb{H}_{\mathbb{B}}$, whose four coordinates $q_0, q_1, q_2, q_3$ are all real. On this subspace, the framework's partial derivatives coincide with the ordinary real partial derivatives, and the framework's gradient $\tilde{\nabla}$ coincides with the Cauchy–Riemann operator on $\mathbb{R}^4$. The integration theory on $\mathbb{H}_{\mathbb{B}}$ is therefore the standard Clifford analysis of $\mathbb{R}^4$, with the biquaternion algebra $\mathbb{B}$ (isomorphic to $\mathrm{Cl}_{1,3}^+$) playing the role of the Clifford algebra. The extension to the indefinite subspaces $\mathbb{M}_-$ and $\mathbb{M}_+$, where the partial derivatives carry factors of $-i$, is not developed here; it is discussed in the open questions. The anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$ is the one further case of the same kind as $\mathbb{H}_{\mathbb{B}}$: every coefficient is purely imaginary, so the theory there is the theory below carried through the central rotation $\tilde{Q} \mapsto i\tilde{Q}$, with the Cauchy kernel scaled by $i$ and the sign of the d'Alembertian reversed. That case therefore needs no separate treatment, and the questions left open below concern the indefinite subspaces, where the kernel does change.</p>
+<p>Throughout the main body of this article, we work on the <strong>quaternion subspace</strong> $\mathbb{H}_{\mathbb{B}}$, whose four coordinates $q_0, q_1, q_2, q_3$ are all real. On this subspace, the framework's partial derivatives coincide with the ordinary real partial derivatives, and the framework's gradient $\tilde{\nabla}$ coincides with the Cauchy–Riemann operator on $\mathbb{R}^4$. The integration theory on $\mathbb{H}_{\mathbb{B}}$ is therefore the standard Clifford analysis of $\mathbb{R}^4$, with the biquaternion algebra $\mathbb{B}$ (isomorphic to $\mathrm{Cl}_{1,3}^+$) playing the role of the Clifford algebra. The extension to the indefinite subspaces $\mathbb{M}_+$ and $\mathbb{M}_-$, where the partial derivatives carry factors of $-i$, is not developed here; it is discussed in the open questions. The anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$ is the one further case of the same kind as $\mathbb{H}_{\mathbb{B}}$: every coefficient is purely imaginary, so the theory there is the theory below carried through the central rotation $\tilde{Q} \mapsto i\tilde{Q}$, with the Cauchy kernel scaled by $i$ and the sign of the d'Alembertian reversed. That case therefore needs no separate treatment, and the questions left open below concern the indefinite subspaces, where the kernel does change.</p>
 <p>The treatment is purely mathematical. The independent variables are four real parameters — the coordinates of $\mathbb{H}_{\mathbb{B}}$. They are independent of any physical interpretation. The complex structure of the coefficients and the non-commutative structure of the quaternion units are the only algebraic ingredients.</p>
 <p>Every claim is either proved or stated as a definition. Where a computation is long, all steps are shown.</p>
 <p>The biquaternion algebra $\mathbb{B}$, its conjugations, its six distinguished subspaces, the Euclidean norm, the biquaternionic gradient $\tilde{\nabla}$, the quaternion conjugate $\bar{\tilde{\nabla}}$, the d'Alembertian $\Box$, and the convective derivative $\tilde{D}$ are assumed from the preceding articles.</p>
@@ -74,13 +74,13 @@ $$</p>
 <p>$$
 \int_\Omega (\alpha \tilde{F} + \beta \tilde{G}) \, dV = \alpha \int_\Omega \tilde{F} \, dV + \beta \int_\Omega \tilde{G} \, dV.
 $$</p>
-<p><strong>Proof.</strong> This follows from the component-wise definition and the linearity of the Lebesgue integral. $\square$</p>
+<p><strong>Proof.</strong> This follows from the component-wise definition and the linearity of the Lebesgue integral.</p>
 <h3 id="additivity">Additivity</h3>
 <p><strong>Theorem (additivity).</strong> If $\Omega = \Omega_1 \cup \Omega_2$ with $\Omega_1 \cap \Omega_2$ of measure zero, then</p>
 <p>$$
 \int_\Omega \tilde{F} \, dV = \int_{\Omega_1} \tilde{F} \, dV + \int_{\Omega_2} \tilde{F} \, dV.
 $$</p>
-<p><strong>Proof.</strong> This follows from the additivity of the Lebesgue integral. $\square$</p>
+<p><strong>Proof.</strong> This follows from the additivity of the Lebesgue integral.</p>
 <h3 id="the-fundamental-estimate">The Fundamental Estimate</h3>
 <p><strong>Theorem (fundamental estimate).</strong> If $\|\tilde{F}\|_E \leq M$ on $\Omega$ and $\mathrm{vol}(\Omega)$ is the volume of $\Omega$, then</p>
 <p>$$
@@ -90,12 +90,12 @@ $$</p>
 <p>$$
 \left| \int_\Omega F_\mu \, dV \right| \leq \int_\Omega |F_\mu| \, dV \leq \int_\Omega \|\tilde{F}\|_E \, dV \leq M \cdot \mathrm{vol}(\Omega).
 $$</p>
-<p>So each component is bounded by $M \cdot \mathrm{vol}(\Omega)$, and the Euclidean norm, which is equivalent to the maximum of the moduli of the components, is bounded by the same constant. $\square$</p>
+<p>So each component is bounded by $M \cdot \mathrm{vol}(\Omega)$, and the Euclidean norm, which is equivalent to the maximum of the moduli of the components, is bounded by the same constant.</p>
 <h3 id="integrability">Integrability</h3>
 <p><strong>Theorem (integrability).</strong> If $\tilde{F}$ is continuous on a compact domain $\Omega$, then $\tilde{F}$ is integrable over $\Omega$.</p>
-<p><strong>Proof.</strong> A continuous complex-valued function on a compact subset of $\mathbb{R}^4$ is bounded and Lebesgue-integrable. Applying this to each component and using the component-wise definition gives the result. $\square$</p>
+<p><strong>Proof.</strong> A continuous complex-valued function on a compact subset of $\mathbb{R}^4$ is bounded and Lebesgue-integrable. Applying this to each component and using the component-wise definition gives the result.</p>
 <p><strong>Theorem (absolute integrability).</strong> If $\|\tilde{F}\|_E$ is integrable over $\Omega$, then $\tilde{F}$ is integrable over $\Omega$.</p>
-<p><strong>Proof.</strong> Since $|F_\mu| \leq \|\tilde{F}\|_E$ for each $\mu$, the integrability of $\|\tilde{F}\|_E$ implies the integrability of each $|F_\mu|$, hence the integrability of each $F_\mu$. $\square$</p>
+<p><strong>Proof.</strong> Since $|F_\mu| \leq \|\tilde{F}\|_E$ for each $\mu$, the integrability of $\|\tilde{F}\|_E$ implies the integrability of each $|F_\mu|$, hence the integrability of each $F_\mu$.</p>
 <h2 id="integration-by-parts">Integration by Parts</h2>
 <h3 id="the-scalar-case">The Scalar Case</h3>
 <p><strong>Theorem (integration by parts).</strong> Let $\phi$ be a scalar function and $\tilde{F}$ a biquaternion-valued function, both continuously differentiable on a domain $\Omega$ with piecewise smooth boundary $\partial \Omega$. Then for each $\mu$,</p>
@@ -103,14 +103,14 @@ $$</p>
 \int_\Omega \left(\frac{\partial \phi}{\partial q_\mu}\right) \tilde{F} \, dV = \int_{\partial \Omega} \phi \tilde{F} \, n_\mu \, dS - \int_\Omega \phi \left(\frac{\partial \tilde{F}}{\partial q_\mu}\right) dV,
 $$</p>
 <p>where $n_\mu$ is the $\mu$-th component of the outward unit normal on $\partial \Omega$ and $dS$ is the surface measure.</p>
-<p><strong>Proof.</strong> This is the standard integration by parts formula in $\mathbb{R}^4$, applied to the scalar function $\phi$ and the scalar function $F_\nu$ for each component. Summing over $\nu$ gives the result. $\square$</p>
+<p><strong>Proof.</strong> This is the standard integration by parts formula in $\mathbb{R}^4$, applied to the scalar function $\phi$ and the scalar function $F_\nu$ for each component. Summing over $\nu$ gives the result.</p>
 <h3 id="the-vector-case">The Vector Case</h3>
 <p><strong>Theorem (integration by parts for the gradient).</strong> Let $\tilde{F}$ and $\tilde{G}$ be continuously differentiable biquaternion-valued functions on $\Omega$ with piecewise smooth boundary $\partial \Omega$. Then</p>
 <p>$$
 \int_\Omega (\tilde{\nabla}\tilde{F}) \tilde{G} \, dV = \int_{\partial \Omega} \tilde{n} \tilde{F} \tilde{G} \, dS - \int_\Omega \tilde{F} (\tilde{\nabla}\tilde{G}) \, dV,
 $$</p>
 <p>where $\tilde{n} = \sum_\mu n_\mu e_\mu$ is the biquaternion-valued outward unit normal.</p>
-<p><strong>Proof.</strong> This follows from the scalar integration by parts applied to each component of $\tilde{\nabla}\tilde{F}$ and the product rule for the gradient. $\square$</p>
+<p><strong>Proof.</strong> This follows from the scalar integration by parts applied to each component of $\tilde{\nabla}\tilde{F}$ and the product rule for the gradient.</p>
 <h2 id="the-divergence-theorem">The Divergence Theorem</h2>
 <p><strong>Theorem (divergence theorem).</strong> Let $\tilde{F}$ be a continuously differentiable biquaternion-valued function on a domain $\Omega$ with piecewise smooth boundary $\partial \Omega$. Then</p>
 <p>$$
@@ -125,33 +125,33 @@ $$</p>
 <p>$$
 \int_\Omega \frac{\partial F_\nu}{\partial q_\mu} \, dV = \int_{\partial \Omega} F_\nu n_\mu \, dS.
 $$</p>
-<p>Multiplying by $e_\mu e_\nu$ and summing gives the result. $\square$</p>
+<p>Multiplying by $e_\mu e_\nu$ and summing gives the result.</p>
 <p><strong>Theorem (divergence theorem for the quaternion conjugate).</strong> Under the same hypotheses,</p>
 <p>$$
 \int_\Omega \bar{\tilde{\nabla}} \tilde{F} \, dV = \int_{\partial \Omega} \bar{\tilde{n}} \tilde{F} \, dS,
 $$</p>
 <p>where $\bar{\tilde{n}} = n_0 e_0 - \sum_{k=1}^{3} n_k e_k$ is the quaternion conjugate of the outward unit normal.</p>
-<p><strong>Proof.</strong> This is the same computation as above, with the signs of the vector components reversed. $\square$</p>
+<p><strong>Proof.</strong> This is the same computation as above, with the signs of the vector components reversed.</p>
 <h2 id="greens-formulas">Green's Formulas</h2>
 <h3 id="first-greens-formula">First Green's Formula</h3>
 <p><strong>Theorem (first Green's formula).</strong> Let $\tilde{F}$ and $\tilde{G}$ be twice continuously differentiable biquaternion-valued functions on $\Omega$ with piecewise smooth boundary $\partial \Omega$. Then</p>
 <p>$$
 \int_\Omega \left[ (\tilde{\nabla}\tilde{F}) \bar{\tilde{G}} + \tilde{F} (\bar{\tilde{\nabla}}\bar{\tilde{G}}) \right] dV = \int_{\partial \Omega} \tilde{F} \tilde{n} \bar{\tilde{G}} \, dS.
 $$</p>
-<p><strong>Proof.</strong> Apply the divergence theorem to the product $\tilde{F} \bar{\tilde{G}}$ and use the product rule for the gradient. $\square$</p>
+<p><strong>Proof.</strong> Apply the divergence theorem to the product $\tilde{F} \bar{\tilde{G}}$ and use the product rule for the gradient.</p>
 <h3 id="second-greens-formula">Second Green's Formula</h3>
 <p><strong>Theorem (second Green's formula).</strong> Under the same hypotheses,</p>
 <p>$$
 \int_\Omega \left[ (\tilde{\nabla}\tilde{F}) \bar{\tilde{G}} - \tilde{F} (\bar{\tilde{\nabla}}\bar{\tilde{G}}) \right] dV = \int_{\partial \Omega} \left[ \tilde{F} \tilde{n} \bar{\tilde{G}} - \tilde{G} \tilde{n} \bar{\tilde{F}} \right] dS.
 $$</p>
-<p><strong>Proof.</strong> This follows from the first Green's formula by exchanging $\tilde{F}$ and $\tilde{G}$ and subtracting. $\square$</p>
+<p><strong>Proof.</strong> This follows from the first Green's formula by exchanging $\tilde{F}$ and $\tilde{G}$ and subtracting.</p>
 <h3 id="greens-formula-for-the-dalembertian">Green's Formula for the d'Alembertian</h3>
 <p><strong>Theorem (Green's formula for $\Box$).</strong> Let $\tilde{F}$ and $\tilde{G}$ be twice continuously differentiable biquaternion-valued functions on $\Omega$ with piecewise smooth boundary $\partial \Omega$. Then</p>
 <p>$$
 \int_\Omega \left[ (\Box \tilde{F}) \tilde{G} - \tilde{F} (\Box \tilde{G}) \right] dV = \int_{\partial \Omega} \left[ (\tilde{n} \tilde{F}) \tilde{G} - \tilde{F} (\tilde{n} \tilde{G}) \right] dS,
 $$</p>
 <p>where $\Box = \partial^2/\partial q_0^2 + \Delta_q$ is the four-dimensional Laplacian in the coordinates $q_0, q_1, q_2, q_3$.</p>
-<p><strong>Proof.</strong> Apply the second Green's formula with $\tilde{F}$ replaced by $\tilde{\nabla}\tilde{F}$, and use the definition of $\Box$. $\square$</p>
+<p><strong>Proof.</strong> Apply the second Green's formula with $\tilde{F}$ replaced by $\tilde{\nabla}\tilde{F}$, and use the definition of $\Box$.</p>
 <h2 id="the-fundamental-solution">The Fundamental Solution</h2>
 <h3 id="definition_1">Definition</h3>
 <p>The <strong>fundamental solution</strong> of the gradient operator $\tilde{\nabla}$ on $\mathbb{H}_{\mathbb{B}}$ is the biquaternion-valued function</p>
@@ -192,7 +192,6 @@ $$</p>
 <p>$$
 \tilde\nabla\tilde G = \frac{4e_0}{\|\tilde Q\|_E^4} - \frac{4e_0}{\|\tilde Q\|_E^4} = 0.
 $$</p>
-<p>$\square$</p>
 <h3 id="the-distributional-gradient">The Distributional Gradient</h3>
 <p><strong>Theorem.</strong> In the sense of distributions on $\mathbb{H}_{\mathbb{B}}$,</p>
 <p>$$
@@ -223,7 +222,6 @@ $$</p>
 <p>$$
 \tilde{\nabla} \tilde{G} = -2\pi^2 \delta_0 e_0.
 $$</p>
-<p>$\square$</p>
 <h2 id="the-cauchy-integral-formula">The Cauchy Integral Formula</h2>
 <h3 id="statement">Statement</h3>
 <p><strong>Theorem (Cauchy integral formula).</strong> Let $\tilde{F}$ be a continuously differentiable biquaternion-valued function on a domain $\Omega \subset \mathbb{H}_{\mathbb{B}}$ with piecewise smooth boundary $\partial \Omega$, and let $\tilde{Q}_0$ be an interior point of $\Omega$. Then</p>
@@ -255,7 +253,7 @@ $$</p>
 <p>$$
 \int_\Omega \tilde{G}(\tilde{Q} - \tilde{Q}_0) (\tilde{\nabla}\tilde{F})(\tilde{Q}) \, dV = \int_{\partial \Omega} \tilde{G}(\tilde{Q} - \tilde{Q}_0) \tilde{n} \tilde{F}(\tilde{Q}) \, dS - 2\pi^2 \tilde{F}(\tilde{Q}_0).
 $$</p>
-<p>Rearranging gives the stated formula. $\square$</p>
+<p>Rearranging gives the stated formula.</p>
 <h2 id="consequences-of-the-cauchy-integral-formula">Consequences of the Cauchy Integral Formula</h2>
 <h3 id="the-mean-value-property">The Mean Value Property</h3>
 <p><strong>Theorem (mean value property).</strong> If $\tilde{F}$ satisfies $\tilde{\nabla}\tilde{F} = 0$ on a ball $B(\tilde{Q}_0, r)$, then</p>
@@ -263,23 +261,23 @@ $$</p>
 \tilde{F}(\tilde{Q}_0) = \frac{1}{2\pi^2 r^3} \int_{\partial B(\tilde{Q}_0, r)} \tilde{F}(\tilde{Q}) \, dS(\tilde{Q}),
 $$</p>
 <p>where $2\pi^2 r^3$ is the surface area of the three-sphere of radius $r$ in $\mathbb{R}^4$.</p>
-<p><strong>Proof.</strong> Apply the Cauchy integral formula to the ball $B(\tilde{Q}_0, r)$ and use the explicit form of the fundamental solution. The kernel becomes constant on the sphere, and the integral reduces to the average of $\tilde{F}$ over the sphere. $\square$</p>
+<p><strong>Proof.</strong> Apply the Cauchy integral formula to the ball $B(\tilde{Q}_0, r)$ and use the explicit form of the fundamental solution. The kernel becomes constant on the sphere, and the integral reduces to the average of $\tilde{F}$ over the sphere.</p>
 <h3 id="the-maximum-principle">The Maximum Principle</h3>
 <p><strong>Theorem (maximum principle).</strong> If $\tilde{F}$ satisfies $\tilde{\nabla}\tilde{F} = 0$ on a domain $\Omega$ and $\|\tilde{F}\|_E$ attains its maximum at an interior point of $\Omega$, then $\tilde{F}$ is constant on $\Omega$.</p>
-<p><strong>Proof.</strong> Use the mean value property: if $\|\tilde{F}\|_E$ attains its maximum at $\tilde{Q}_0$, then the mean value over a small sphere around $\tilde{Q}_0$ equals $\tilde{F}(\tilde{Q}_0)$, which is only possible if $\tilde{F}$ is constant on the sphere. Iterating over a connected chain of spheres, $\tilde{F}$ is constant on $\Omega$. $\square$</p>
+<p><strong>Proof.</strong> Use the mean value property: if $\|\tilde{F}\|_E$ attains its maximum at $\tilde{Q}_0$, then the mean value over a small sphere around $\tilde{Q}_0$ equals $\tilde{F}(\tilde{Q}_0)$, which is only possible if $\tilde{F}$ is constant on the sphere. Iterating over a connected chain of spheres, $\tilde{F}$ is constant on $\Omega$.</p>
 <h3 id="liouvilles-theorem">Liouville's Theorem</h3>
 <p><strong>Theorem (Liouville).</strong> If $\tilde{F}$ satisfies $\tilde{\nabla}\tilde{F} = 0$ on all of $\mathbb{H}_{\mathbb{B}}$ and $\|\tilde{F}\|_E$ is bounded, then $\tilde{F}$ is constant.</p>
-<p><strong>Proof.</strong> Apply the Cauchy integral formula to a large ball of radius $R$ centered at $\tilde{Q}_0$, and estimate the boundary integral using the boundedness of $\tilde{F}$. The kernel $\tilde{G}(\tilde{Q} - \tilde{Q}_0)$ is of order $R^{-3}$ on the sphere of radius $R$, and the surface area is of order $R^3$, so the boundary integral is of order $R^0$, i.e., bounded. As $R \to \infty$, the boundary integral tends to zero, so $\tilde{F}(\tilde{Q}_0)$ is independent of $\tilde{Q}_0$. $\square$</p>
+<p><strong>Proof.</strong> Apply the Cauchy integral formula to a large ball of radius $R$ centered at $\tilde{Q}_0$, and estimate the boundary integral using the boundedness of $\tilde{F}$. The kernel $\tilde{G}(\tilde{Q} - \tilde{Q}_0)$ is of order $R^{-3}$ on the sphere of radius $R$, and the surface area is of order $R^3$, so the boundary integral is of order $R^0$, i.e., bounded. As $R \to \infty$, the boundary integral tends to zero, so $\tilde{F}(\tilde{Q}_0)$ is independent of $\tilde{Q}_0$.</p>
 <h3 id="the-identity-theorem">The Identity Theorem</h3>
 <p><strong>Theorem (identity theorem).</strong> If two functions $\tilde{F}$ and $\tilde{G}$ satisfying $\tilde{\nabla}\tilde{F} = \tilde{\nabla}\tilde{G} = 0$ on a connected domain $\Omega$ agree on an open subset of $\Omega$, then they agree on all of $\Omega$.</p>
-<p><strong>Proof.</strong> The difference $\tilde{H} = \tilde{F} - \tilde{G}$ satisfies $\tilde{\nabla}\tilde{H} = 0$ and vanishes on an open subset. By the maximum principle applied to $\tilde{H}$ and to $-\tilde{H}$, the modulus of $\tilde{H}$ cannot attain a maximum at an interior point unless $\tilde{H}$ is constant, and since $\tilde{H}$ vanishes on an open subset, the constant is zero. $\square$</p>
+<p><strong>Proof.</strong> The difference $\tilde{H} = \tilde{F} - \tilde{G}$ satisfies $\tilde{\nabla}\tilde{H} = 0$ and vanishes on an open subset. By the maximum principle applied to $\tilde{H}$ and to $-\tilde{H}$, the modulus of $\tilde{H}$ cannot attain a maximum at an interior point unless $\tilde{H}$ is constant, and since $\tilde{H}$ vanishes on an open subset, the constant is zero.</p>
 <h3 id="the-cauchy-estimates">The Cauchy Estimates</h3>
 <p><strong>Theorem (Cauchy estimates).</strong> If $\tilde{F}$ satisfies $\tilde{\nabla}\tilde{F} = 0$ on a ball $B(\tilde{Q}_0, R)$ and $\|\tilde{F}\|_E \leq M$ on the boundary, then for every multi-index $\alpha$,</p>
 <p>$$
 \left\|\frac{\partial^{|\alpha|} \tilde{F}}{\partial q^\alpha}(\tilde{Q}_0)\right\|_E \leq \frac{C_\alpha M}{R^{|\alpha|}},
 $$</p>
 <p>where $C_\alpha$ is a constant depending on $\alpha$ and $|\alpha|$ is the total order of the multi-index.</p>
-<p><strong>Proof.</strong> Differentiate the Cauchy integral formula with respect to $\tilde{Q}_0$ and estimate the resulting integral using the bound on $\tilde{F}$. $\square$</p>
+<p><strong>Proof.</strong> Differentiate the Cauchy integral formula with respect to $\tilde{Q}_0$ and estimate the resulting integral using the bound on $\tilde{F}$.</p>
 <h2 id="the-residue-theory">The Residue Theory</h2>
 <h3 id="the-residue">The Residue</h3>
 <p>The Cauchy integral formula for a function that is regular except at isolated singularities leads to a residue theory. However, the non-commutativity of $\mathbb{B}$ makes the definition of the residue more delicate than in the complex case.</p>
@@ -295,7 +293,7 @@ $$</p>
 \frac{1}{2\pi^2} \int_{\partial \Omega} \tilde{G}(\tilde{Q} - \tilde{Q}_0) \tilde{n} \tilde{F}(\tilde{Q}) \, dS(\tilde{Q}) = \sum_{k=1}^{n} \mathrm{Res}(\tilde{F}, \tilde{Q}_k)
 $$</p>
 <p>for any $\tilde{Q}_0$ outside the singularities.</p>
-<p><strong>Proof.</strong> Apply the Cauchy integral formula to the domain with small spheres removed around each singularity, and use the definition of the residue. $\square$</p>
+<p><strong>Proof.</strong> Apply the Cauchy integral formula to the domain with small spheres removed around each singularity, and use the definition of the residue.</p>
 <h2 id="the-relation-to-complex-and-quaternionic-analysis">The Relation to Complex and Quaternionic Analysis</h2>
 <p>The integration theory developed in this article is the biquaternion analogue of the Cauchy integral theory in complex analysis and of the Fueter theory in quaternionic analysis.</p>
 <p><strong>Complex analysis.</strong> In complex analysis, the Cauchy integral formula expresses the value of a holomorphic function at an interior point in terms of its boundary values, with the kernel $1/(z - z_0)$. The biquaternion analogue uses the kernel $\tilde{G}(\tilde{Q} - \tilde{Q}_0) = (\bar{\tilde{Q}} - \bar{\tilde{Q}}_0)/\|\tilde{Q} - \tilde{Q}_0\|_E^4$, which is the fundamental solution of the gradient operator in four dimensions.</p>
@@ -305,7 +303,7 @@ $$</p>
 <p>The following questions are not answered in this article and are left for later work:</p>
 <ol>
 <li>
-<p><strong>The extension to $\mathbb{M}_-$ and $\mathbb{M}_+$.</strong> The integration theory presented here is for functions on the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, where the four coordinates are real. Extending the theory to the indefinite subspaces $\mathbb{M}_-$ and $\mathbb{M}_+$ requires modifying the fundamental solution, because the kernel $\bar{\tilde Q}/\|\tilde Q\|_E^4$ is not annihilated by the framework's gradient on these subspaces. Indeed, on $\mathbb{M}_-$ and $\mathbb{M}_+$, the coefficients $Q_\mu$ include imaginary entries, and the identity $\bar{\tilde Q}\tilde Q = \|\tilde Q\|_E^2 e_0$ fails, so the proof of $\tilde\nabla\tilde G = 0$ does not carry over. Whether a modified kernel exists, and how it relates to the standard Clifford analysis of $\mathbb{R}^{3,1}$ or $\mathbb{R}^{1,3}$, is open.</p>
+<p><strong>The extension to $\mathbb{M}_+$ and $\mathbb{M}_-$.</strong> The integration theory presented here is for functions on the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, where the four coordinates are real. Extending the theory to the indefinite subspaces $\mathbb{M}_+$ and $\mathbb{M}_-$ requires modifying the fundamental solution, because the kernel $\bar{\tilde Q}/\|\tilde Q\|_E^4$ is not annihilated by the framework's gradient on these subspaces. Indeed, on $\mathbb{M}_+$ and $\mathbb{M}_-$, the coefficients $Q_\mu$ include imaginary entries, and the identity $\bar{\tilde Q}\tilde Q = \|\tilde Q\|_E^2 e_0$ fails, so the proof of $\tilde\nabla\tilde G = 0$ does not carry over. Whether a modified kernel exists, and how it relates to the standard Clifford analysis of $\mathbb{R}^{3,1}$ or $\mathbb{R}^{1,3}$, is open.</p>
 </li>
 <li>
 <p><strong>The residue theory in the non-commutative case.</strong> The definition of the residue given above is one of several possible definitions. What is the correct definition that makes the residue theorem hold in the strongest form?</p>

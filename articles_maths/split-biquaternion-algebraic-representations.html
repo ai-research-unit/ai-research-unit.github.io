@@ -119,8 +119,8 @@ $$</p>
 <li><strong>Hermitian subspace $\mathbb{M}_+$:</strong> four-vectors of the form $Q^\mu = (q_0, j q'_1, j q'_2, j q'_3)$ with $q_0, q'_1, q'_2, q'_3 \in \mathbb{R}$. Real time component, purely split-imaginary spatial components.</li>
 <li><strong>Anti-Hermitian subspace $\mathbb{M}_-$:</strong> four-vectors of the form $Q^\mu = (j q'_0, q_1, q_2, q_3)$ with $q'_0, q_1, q_2, q_3 \in \mathbb{R}$. Purely split-imaginary time component, real spatial components.</li>
 </ul>
-<h3 id="the-norm-form-in-four-vector-form">The Norm Form in Four-Vector Form</h3>
-<p>The norm form $N(\tilde{Q}) = \tilde{Q} \bar{\tilde{Q}}$ is</p>
+<h3 id="the-split-biquaternion-norm-in-four-vector-form">The Split-Biquaternion Norm in Four-Vector Form</h3>
+<p>The split-biquaternion norm $N(\tilde{Q}) = \tilde{Q} \bar{\tilde{Q}}$ is</p>
 <p>$$
 N(\tilde{Q}) = (Q^0)^2 + (Q^1)^2 + (Q^2)^2 + (Q^3)^2,
 $$</p>
@@ -128,7 +128,7 @@ $$</p>
 <p>$$
 N(\tilde{Q}) = \sum_{\mu=0}^{3} ((q^\mu)^2 + (q'^\mu)^2) + 2j \sum_{\mu=0}^{3} q^\mu q'^\mu.
 $$</p>
-<p>On the anti-Hermitian subspace $\mathbb{M}_-$, the norm form restricts to the real quadratic form</p>
+<p>On the anti-Hermitian subspace $\mathbb{M}_-$, the split-biquaternion norm restricts to the real quadratic form</p>
 <p>$$
 N(\tilde{Q}) = (q'_0)^2 + q_1^2 + q_2^2 + q_3^2,
 $$</p>
@@ -194,7 +194,7 @@ $$</p>
 <li><strong>Anti-Hermitian conjugation</strong> $\tilde{Q}^\flat$: $(\tilde{Q}_+, \tilde{Q}_-)^\flat = (-\bar{\tilde{Q}}_-, -\bar{\tilde{Q}}_+)$.</li>
 </ul>
 <p>The split complex conjugation is the map that swaps the two components. This is the algebraic content of the idempotent decomposition.</p>
-<p><strong>Norm form.</strong> The norm form is</p>
+<p><strong>Split-Biquaternion norm.</strong> The split-biquaternion norm is</p>
 <p>$$
 N(\tilde{Q}) = N_{\mathbb{H}}(\tilde{Q}_+) \tilde\Pi_+ + N_{\mathbb{H}}(\tilde{Q}_-) \tilde\Pi_-,
 $$</p>
@@ -214,7 +214,7 @@ $$</p>
 <h3 id="why-the-idempotent-representation-is-the-primary-one">Why the Idempotent Representation Is the Primary One</h3>
 <p>The idempotent representation plays the role in the split biquaternion algebra that the matrix representation plays in the biquaternion algebra. It has the following advantages.</p>
 <p><strong>It reveals the structure.</strong> The isomorphism $\mathbb{H}_{\mathbb{D}} \cong \mathbb{H} \oplus \mathbb{H}$ is the most important structural fact about the algebra: it shows that the algebra is semisimple, that it is the direct sum of two simple algebras, and that its representation theory is the representation theory of $\mathbb{H}$ taken twice.</p>
-<p><strong>It simplifies the norm form.</strong> In the idempotent representation, the norm form is the pair of ordinary quaternion norms of the two components, which are non-negative real numbers. This is much simpler than the split complex expression in the standard basis.</p>
+<p><strong>It simplifies the split-biquaternion norm.</strong> In the idempotent representation, the split-biquaternion norm is the pair of ordinary quaternion norms of the two components, which are non-negative real numbers. This is much simpler than the split complex expression in the standard basis.</p>
 <p><strong>It simplifies the invertibility criterion.</strong> The invertibility criterion becomes the linear condition that both components are nonzero, in contrast to the quadratic condition in the biquaternion case.</p>
 <p><strong>It simplifies the zero divisor analysis.</strong> The zero divisor set is the union of the two subspaces $Z_+ = \{\tilde{Q}_+ = 0\}$ and $Z_- = \{\tilde{Q}_- = 0\}$, which are four-dimensional linear subspaces.</p>
 <p><strong>It connects to the split complex algebra.</strong> The idempotent decomposition of $\mathbb{H}_{\mathbb{D}}$ is the extension of the idempotent decomposition of $\mathbb{D}$. The two idempotents $\tilde\Pi_+$ and $\tilde\Pi_-$ are the same in both algebras, and they are the source of the semisimple structure.</p>
@@ -255,7 +255,7 @@ $$</p>
 <p>because the generators satisfy $\gamma_k^2 = -1$ exactly as the quaternion units do, while the volume element of an odd Clifford algebra is central and satisfies $\omega^2 = +1$, exactly as $j$ does. The even subalgebra is $\mathrm{Cl}_{0,3}^+ \cong \mathbb{H}$, the quaternion subspace $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$.</p>
 <h3 id="properties_2">Properties</h3>
 <p><strong>Multiplication.</strong> Under the isomorphism the Clifford product corresponds to the split biquaternion product, the generators multiplying as the quaternion units and the volume element commuting with them.</p>
-<p><strong>Norm.</strong> The Euclidean norm of the Clifford algebra, the sum of squares of the eight real blade coordinates, is the real part $R(\tilde{Q}) = \sum_\mu(q_\mu^2 + q'^2_\mu)$ of the split biquaternion norm form. The full norm form $N(\tilde{Q}) = R + jI$ is $\mathbb{D}$-valued and is not the Clifford norm, which is real; it corresponds under the isomorphism to the Clifford product $\tilde{Q}\bar{\tilde{Q}}$.</p>
+<p><strong>Split-Biquaternion norm.</strong> The Euclidean norm of the Clifford algebra, the sum of squares of the eight real blade coordinates, is the real part $R(\tilde{Q}) = \sum_\mu(q_\mu^2 + q'^2_\mu)$ of the split biquaternion norm. The full norm $N(\tilde{Q}) = R + jI$ is $\mathbb{D}$-valued and is not the Clifford norm, which is real; it corresponds under the isomorphism to the Clifford product $\tilde{Q}\bar{\tilde{Q}}$.</p>
 <h3 id="why-the-clifford-algebra-representation-is-useful">Why the Clifford Algebra Representation Is Useful</h3>
 <p>The Clifford algebra representation is useful because:</p>
 <ol>
@@ -322,7 +322,7 @@ $$</p>
 <p>This is a linear isomorphism $\mathbb{R}^8 \to \mathbb{H} \oplus \mathbb{H}$.</p>
 <p><strong>Idempotent and module.</strong> The idempotent representation and the module representation are the same representation viewed from two different angles: the idempotent representation is the pair of components, and the module representation is the action of the algebra on each component.</p>
 <p><strong>Idempotent and Clifford algebra.</strong> The idempotent representation and the Clifford algebra representation are related by the isomorphism $\mathbb{H}_{\mathbb{D}} \cong \mathrm{Cl}_{0,3}$. The idempotents $\tilde\Pi_\pm$ correspond to the projectors onto the two summands of the Clifford algebra.</p>
-<p><strong>All four.</strong> The four representations are different ways of presenting the same algebra. The idempotent representation is the primary one, because it reveals the semisimple structure and simplifies the norm form, the invertibility criterion, and the zero divisor analysis. The four-vector representation is the most familiar from the tensor formalism. The module and Clifford algebra representations place the algebra in the larger contexts of module theory and Clifford algebra theory.</p>
+<p><strong>All four.</strong> The four representations are different ways of presenting the same algebra. The idempotent representation is the primary one, because it reveals the semisimple structure and simplifies the split-biquaternion norm, the invertibility criterion, and the zero divisor analysis. The four-vector representation is the most familiar from the tensor formalism. The module and Clifford algebra representations place the algebra in the larger contexts of module theory and Clifford algebra theory.</p>
 <h2 id="the-role-of-choices">The Role of Choices</h2>
 <p>Each representation involves a choice, and different choices give equivalent but not identical representations.</p>
 <ul>
@@ -350,7 +350,7 @@ $$</p>
 <tr>
 <td>Idempotent</td>
 <td>$(\tilde{Q}_+, \tilde{Q}_-) \in \mathbb{H} \oplus \mathbb{H}$</td>
-<td>Structure, norm form, invertibility, zero divisors</td>
+<td>Structure, norm, invertibility, zero divisors</td>
 </tr>
 <tr>
 <td>Module</td>
@@ -437,7 +437,7 @@ $$</p>
 </tr>
 <tr>
 <td>$N(\tilde{Q}) = \tilde{Q} \bar{\tilde{Q}}$</td>
-<td>Norm form</td>
+<td>Split-Biquaternion norm</td>
 </tr>
 <tr>
 <td>$\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}, \mathbb{H}_{\mathbb{H}_{\mathbb{D}}}, \mathbb{M}_+, \mathbb{M}_-$</td>

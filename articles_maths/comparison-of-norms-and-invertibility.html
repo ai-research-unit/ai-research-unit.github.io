@@ -52,14 +52,14 @@
       <div class="article-body">
         <h1 id="comparison-of-norms-and-invertibility"><strong>Comparison of Norms and Invertibility</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>This article compares the norm form and the invertibility theory of the eight algebras $\mathbb{R}, \mathbb{C}, \mathbb{D}, \mathbb{D}', \mathbb{H}, \mathbb{H}_{\mathrm{s}}, \mathbb{B}, \mathbb{H}_{\mathbb{D}}$. It states the norm form of each, its signature and its definiteness, the form it polarises to, the multiplicativity that makes it a size function, the invertibility criterion it supplies, the group of units it cuts out, the classification of the elements by its sign, and the place of each algebra in the two polar series, in tables with the eight algebras as columns in the fixed order of <em>The Eight Algebras Compared</em>. Every entry restates a result of the eight norm articles and of the polar representation articles, cited to their sections.</p>
-<p>The organising thread is the <strong>signature of the norm form</strong>. Where the form is definite, the algebra is a division algebra, its unit group has a compact factor, and the polar decomposition has no boundary; where the form is indefinite, degenerate or ring-valued, the algebra has zero divisors, its unit group is non-compact, and the polar decomposition has a boundary that is the zero-divisor set. The ladder crosses the boundary once, between the distinct columns $\mathbb{C}$ and $\mathbb{D}$, where one sign in the norm form changes and the whole analysis changes with it.</p>
-<h2 id="the-norm-forms">The Norm Forms</h2>
-<p>The following table compares the norm form of the eight algebras: its formula, its signature, its definiteness, its isotropy, the Euclidean norm it polarises to, and the zero divisors it detects. The eight algebras are the columns, in the fixed order.</p>
+<p>This article compares the norm and the invertibility theory of the eight algebras $\mathbb{R}, \mathbb{C}, \mathbb{D}, \mathbb{D}', \mathbb{H}, \mathbb{H}_{\mathrm{s}}, \mathbb{B}, \mathbb{H}_{\mathbb{D}}$. It states the norm of each, its signature and its definiteness, the form it polarises to, the multiplicativity that makes it a size function, the invertibility criterion it supplies, the group of units it cuts out, the topology of that group of units with its homotopy type, its components and its fundamental group, the classification of the elements by its sign, and the place of each algebra in the two polar series, in tables with the eight algebras as columns in the fixed order of <em>The Eight Algebras Compared</em>. Every entry restates a result of the eight norm articles and of the polar representation articles, cited to their sections. The factors into which the unit factor splits are the subject of <em>Comparison of the Polar Representation</em>, and the exponential of the unit factor is the subject of <em>Comparison of the Exponential and Lie Group Structure</em>.</p>
+<p>The organising thread is the <strong>signature of the norm</strong>. Where the form is definite, the algebra is a division algebra, its unit group has a compact factor, and the polar decomposition has no boundary; where the form is indefinite, degenerate or ring-valued, the algebra has zero divisors, its unit group is non-compact, and the polar decomposition has a boundary that is the zero-divisor set. The ladder crosses the boundary once, between the distinct columns $\mathbb{C}$ and $\mathbb{D}$, where one sign in the norm changes and the whole analysis changes with it.</p>
+<h2 id="the-norms">The Norms</h2>
+<p>The following table compares the norm of the eight algebras: its formula, its signature, its definiteness, its isotropy, the Euclidean norm it polarises to, and the zero divisors it detects. The eight algebras are the columns, in the fixed order.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
-<th>norm form</th>
+<th>norm</th>
 <th>$\mathbb{R}$</th>
 <th>$\mathbb{C}$</th>
 <th>$\mathbb{D}$</th>
@@ -138,7 +138,7 @@
 <td>$\sqrt{\sum_\mu(q_\mu^2+q'_\mu{}^2)}$</td>
 </tr>
 <tr>
-<td>norm form multiplicative</td>
+<td>norm multiplicative</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -172,10 +172,10 @@
 </tr>
 </tbody>
 </table></div>
-<p>The table divides at the column $\mathbb{D}$. The norm form is multiplicative in every one of the eight columns, while the Euclidean norm that carries the topology is multiplicative only in the definite columns $\mathbb{R}$, $\mathbb{C}$ and $\mathbb{H}$ and fails in the degenerate and the split columns. Left of $\mathbb{D}$ the norm form takes real values; at $\mathbb{D}$ it takes the value $a^2-b^2$ and becomes <strong>isotropic</strong>, that is, it vanishes on the two null lines $\mathbb{R}(1\pm j)$ (<em>Split-Complex Norm and Invertibility</em>, §<em>The Norm Form</em>). The dual numbers carry the degeneracy to its limit: $N(Z)=a^2$ has rank one, it depends only on the real part, its radical is the maximal ideal $\mathfrak{m}=(\varepsilon)$, and the Euclidean norm $\sqrt{a^2+b^2}$ that carries the topology is positive definite but <strong>not</strong> multiplicative (<em>Dual-Numbers Norm and Invertibility</em>, §<em>The Norm Form</em>; §<em>The Euclidean Form</em>). At the quaternion rung the sign returns: $N(\tilde q)=\sum q_k^2$ is positive definite of signature $(4,0)$ (<em>Quaternion Norm and Invertibility</em>, §<em>The Norm Form</em>), and it is at the next column that the sign is exchanged again, $q_0^2+q_1^2$ becoming $q_0^2+q_1^2-q_2^2-q_3^2$ of signature $(2,2)$, the isotropic vectors satisfying $q_0^2+q_1^2=q_2^2+q_3^2$ (<em>Split-Quaternion Norm and Invertibility</em>, §<em>The Norm Form and the Determinant Form</em>).</p>
-<p>The last two columns are of a different kind, and the table records the difference rather than hiding it. In $\mathbb{B}$ the norm form is complex-valued, the <em>semi-norm</em> of the literature; it is not positive definite, it vanishes on the zero-divisor cone, and of the usual norm axioms only the sign axiom survives, the triangle inequality being inapplicable to a complex value and the scaling axiom failing for complex scalars (<em>Biquaternion Norm and Invertibility</em>, §<em>The Norm Form</em>). In $\mathbb{H}_{\mathbb{D}}$ the norm form is split complex-valued and <strong>anisotropic</strong>: it vanishes only at the origin, because in the idempotent basis it is the pair of quaternion norms $N(\tilde Q)=(N(\tilde Q_+),N(\tilde Q_-))$ of the two components, and $\mathbb{H}$ is a division algebra. The consequence is stated in the last row: the norm form of $\mathbb{H}_{\mathbb{D}}$ does <strong>not</strong> detect the zero divisors, and the criterion must be stated in terms of the ring $\mathbb{D}$ rather than of the value zero (<em>Split-Biquaternion Norm and Invertibility</em>, §<em>The Norm Form</em>).</p>
+<p>The table divides at the column $\mathbb{D}$. The norm is multiplicative in every one of the eight columns, while the Euclidean norm that carries the topology is multiplicative only in the definite columns $\mathbb{R}$, $\mathbb{C}$ and $\mathbb{H}$ and fails in the degenerate and the split columns. Left of $\mathbb{D}$ the norm takes real values; at $\mathbb{D}$ it takes the value $a^2-b^2$ and becomes <strong>isotropic</strong>, that is, it vanishes on the two null lines $\mathbb{R}(1\pm j)$ (<em>Split-Complex Norm and Invertibility</em>, §<em>The Norm</em>). The dual numbers carry the degeneracy to its limit: $N(Z)=a^2$ has rank one, it depends only on the real part, its radical is the maximal ideal $\mathrm{M}=(\varepsilon)$, and the Euclidean norm $\sqrt{a^2+b^2}$ that carries the topology is positive definite but <strong>not</strong> multiplicative (<em>Dual-Numbers Norm and Invertibility</em>, §<em>The Norm</em>; §<em>The Euclidean Form</em>). At the quaternion rung the sign returns: $N(\tilde q)=\sum q_k^2$ is positive definite of signature $(4,0)$ (<em>Quaternion Norm and Invertibility</em>, §<em>The Quaternion Norm</em>), and it is at the next column that the sign is exchanged again, $q_0^2+q_1^2$ becoming $q_0^2+q_1^2-q_2^2-q_3^2$ of signature $(2,2)$, the isotropic vectors satisfying $q_0^2+q_1^2=q_2^2+q_3^2$ (<em>Split-Quaternion Norm and Invertibility</em>, §<em>Isotropy</em>).</p>
+<p>The last two columns are of a different kind, and the table records the difference rather than hiding it. In $\mathbb{B}$ the norm is complex-valued, the <em>semi-norm</em> of the literature; it is not positive definite, it vanishes on the zero-divisor cone, and of the usual norm axioms only the sign axiom survives, the triangle inequality being inapplicable to a complex value and the scaling axiom failing for complex scalars (<em>Biquaternion Norm and Invertibility</em>, §<em>The Biquaternion Norm as a Semi-Norm</em>). In $\mathbb{H}_{\mathbb{D}}$ the norm is split complex-valued and <strong>anisotropic</strong>: it vanishes only at the origin, because in the idempotent basis it is the pair of quaternion norms $N(\tilde Q)=(N(\tilde Q_+),N(\tilde Q_-))$ of the two components, and $\mathbb{H}$ is a division algebra. The consequence is stated in the last row: the norm of $\mathbb{H}_{\mathbb{D}}$ does <strong>not</strong> detect the zero divisors, and the criterion must be stated in terms of the ring $\mathbb{D}$ rather than of the value zero (<em>Split-Biquaternion Norm and Invertibility</em>, §<em>The Split-Biquaternion Norm</em>).</p>
 <h2 id="the-quadratic-and-hermitian-forms">The Quadratic and Hermitian Forms</h2>
-<p>Each norm form is the diagonal of a bilinear or Hermitian form on the underlying real space, and the following table compares those forms and the Euclidean norm they supply. The eight algebras are the columns, in the fixed order.</p>
+<p>Each norm is the diagonal of a bilinear or Hermitian form on the underlying real space, and the following table compares those forms and the Euclidean norm they supply. The eight algebras are the columns, in the fixed order.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -237,14 +237,14 @@
 </tr>
 </tbody>
 </table></div>
-<p>The table separates the two roles the norm form plays. As a <strong>quadratic form</strong> it is the algebraic modulus of the element, the multiplicative size function of the algebra; as the diagonal of a <strong>Hermitian form</strong> it supplies the Euclidean topology. In the first six columns the two roles coincide or nearly so: for $\mathbb{R}$, $\mathbb{C}$, $\mathbb{D}$, $\mathbb{D}'$ and $\mathbb{H}$ the Hermitian form is real-valued and the norm form is its own diagonal, and only in $\mathbb{H}_{\mathrm{s}}$ does the Hermitian form differ from the norm form by the choice of the signature $(2,2)$ of the vector part (<em>Split-Quaternion Norm and Invertibility</em>, §<em>The Norm Form and the Determinant Form</em>). The last two columns are where the two roles separate. In $\mathbb{B}$ the Hermitian form $\tilde Q\tilde Q^\dagger$ is not scalar-valued in general; its scalar part is the non-negative quantity $\sum_\mu\lvert Q_\mu\rvert^2$, of signature $(8,0)$, and the Euclidean norm is the square root of that scalar part, while the norm form $\sum_\mu Q_\mu^2$ is a different, complex-valued object (<em>Biquaternion Norm and Invertibility</em>, §<em>The Hermitian Form</em>). In $\mathbb{H}_{\mathbb{D}}$ the Hermitian form $\tilde Q\tilde Q^\dagger$ has scalar part of signature $(4,4)$, indefinite, so it does not define a Euclidean norm either, and the Euclidean norm is defined separately and is not multiplicative (<em>Split-Biquaternion Norm and Invertibility</em>, §<em>The Hermitian Form</em>).</p>
+<p>The table separates the two roles the norm plays. As a <strong>quadratic form</strong> it is the algebraic modulus of the element, the multiplicative size function of the algebra; as the diagonal of a <strong>Hermitian form</strong> it supplies the Euclidean topology. In the first six columns the two roles coincide or nearly so: for $\mathbb{R}$, $\mathbb{C}$, $\mathbb{D}$, $\mathbb{D}'$ and $\mathbb{H}$ the Hermitian form is real-valued and the norm is its own diagonal, and only in $\mathbb{H}_{\mathrm{s}}$ does the Hermitian form differ from the norm by the choice of the signature $(2,2)$ of the vector part (<em>Split-Quaternion Norm and Invertibility</em>, §<em>The Split-Quaternion Norm</em>). The last two columns are where the two roles separate. In $\mathbb{B}$ the Hermitian form $\tilde Q\tilde Q^\dagger$ is not scalar-valued in general; its scalar part is the non-negative quantity $\sum_\mu\lvert Q_\mu\rvert^2$, of signature $(8,0)$, and the Euclidean norm is the square root of that scalar part, while the norm $\sum_\mu Q_\mu^2$ is a different, complex-valued object (<em>Biquaternion Norm and Invertibility</em>, §<em>Relation Between the Biquaternion Norm and the Hermitian Form</em>). In $\mathbb{H}_{\mathbb{D}}$ the Hermitian form $\tilde Q\tilde Q^\dagger$ has scalar part of signature $(4,4)$, indefinite, so it does not define a Euclidean norm either, and the Euclidean norm is defined separately and is not multiplicative (<em>Split-Biquaternion Norm and Invertibility</em>, §<em>The Hermitian Form</em>).</p>
 <h2 id="multiplicativity-and-the-composition-law">Multiplicativity and the Composition Law</h2>
-<p>The norm form of every one of the eight algebras is multiplicative:</p>
+<p>The norm of every one of the eight algebras is multiplicative:</p>
 <p>$$
 N(xy)=N(x)\,N(y),
 $$</p>
-<p>as in <em>Real Norm and Invertibility</em>, §<em>Multiplicativity</em>, and its counterparts. For the six algebras whose norm form is scalar-valued this is a genuine composition law: the form of the product is the product of the forms, so the vanishing set is closed under multiplication and the units are closed under multiplication and inversion. For $\mathbb{R}$, $\mathbb{C}$ and $\mathbb{H}$ the composition law is the classical one of the real, complex and quaternion norms and the square root $\sqrt{N}$ is a multiplicative Euclidean norm; for $\mathbb{D}$ and $\mathbb{H}_{\mathrm{s}}$ the square root is taken of an absolute value and the composition law survives in the form of the multiplicative modulus $\rho=\sqrt{\lvert N\rvert}$; for $\mathbb{D}'$ the composition law is the collapse $a^2c^2=(ac)^2$ of a form that remembers only the real part (<em>Split-Complex Norm and Invertibility</em>, §<em>Multiplicativity</em>; <em>Dual-Numbers Norm and Invertibility</em>, §<em>Multiplicativity</em>).</p>
-<p>The two biquaternion columns need the law stated separately, because the value of the form lies in a ring. The biquaternion norm is complex-valued and multiplicative, and $\sqrt{\lvert N\rvert}$ is the <strong>unique</strong> multiplicative real norm on the group of units normalised to agree with the absolute value on the real scalars (<em>Biquaternion Norm and Invertibility</em>, §<em>The Norm Form</em>). The split biquaternion norm is split complex-valued and multiplicative, and in the idempotent basis the law is componentwise, $N(xy)_\pm=N(x)_\pm N(y)_\pm$, which is the multiplicativity of the ordinary quaternion norm on each half. The single sharpening the last column needs is that a product of two nonzero values of $\mathbb{D}$ can be zero, so multiplicativity does not by itself give the vanishing set as a multiplicative closed class; that role is played by the ideal $\mathfrak{m}=(\varepsilon)$.</p>
+<p>as in <em>Real Norm and Invertibility</em>, §<em>Multiplicativity</em>, and its counterparts. For the six algebras whose norm is scalar-valued this is a genuine composition law: the form of the product is the product of the forms, so the vanishing set is closed under multiplication and the units are closed under multiplication and inversion. For $\mathbb{R}$, $\mathbb{C}$ and $\mathbb{H}$ the composition law is the classical one of the real, complex and quaternion norms and the square root $\sqrt{N}$ is a multiplicative Euclidean norm; for $\mathbb{D}$ and $\mathbb{H}_{\mathrm{s}}$ the square root is taken of an absolute value and the composition law survives in the form of the multiplicative modulus $\rho=\sqrt{\lvert N\rvert}$; for $\mathbb{D}'$ the composition law is the collapse $a^2c^2=(ac)^2$ of a form that remembers only the real part (<em>Split-Complex Norm and Invertibility</em>, §<em>Multiplicativity</em>; <em>Dual-Numbers Norm and Invertibility</em>, §<em>Multiplicativity</em>).</p>
+<p>The two biquaternion columns need the law stated separately, because the value of the form lies in a ring. The biquaternion norm is complex-valued and multiplicative, and $\sqrt{\lvert N\rvert}$ is the <strong>unique</strong> multiplicative real norm on the group of units normalised to agree with the absolute value on the real scalars (<em>Biquaternion Norm and Invertibility</em>, §<em>The Unique Real Norm, and the Polar Scale</em>). The split biquaternion norm is split complex-valued and multiplicative, and in the idempotent basis the law is componentwise, $N(xy)_\pm=N(x)_\pm N(y)_\pm$, which is the multiplicativity of the ordinary quaternion norm on each half. The single sharpening the last column needs is that a product of two nonzero values of $\mathbb{D}$ can be zero, so multiplicativity does not by itself give the vanishing set as a multiplicative closed class; that role is played by the ideal $\mathrm{M}=(\varepsilon)$.</p>
 <h2 id="the-invertibility-criterion">The Invertibility Criterion</h2>
 <p>The following table compares the criterion of invertibility and the inverse formula for the eight algebras. The eight algebras are the columns, in the fixed order.</p>
 <div class="table-scroll"><table>
@@ -297,8 +297,8 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>The criterion is the same statement in seven of the eight columns and a genuinely different one in the eighth. For $\mathbb{R}$, $\mathbb{C}$, $\mathbb{D}$, $\mathbb{H}$, $\mathbb{H}_{\mathrm{s}}$ and $\mathbb{B}$ the element is invertible exactly when its norm form is nonzero, and the inverse is the conjugate divided by the norm form: $x^{-1}=x/N(x)$ (<em>Real Norm and Invertibility</em>, §<em>Invertibility</em>), $Z^{-1}=\bar Z/N(Z)$ (<em>Complex Norm and Invertibility</em>, §<em>Invertibility</em>; <em>Split-Complex Norm and Invertibility</em>, §<em>Invertibility</em>), $\tilde q^{-1}=\bar{\tilde q}/N(\tilde q)$ (<em>Quaternion Norm and Invertibility</em>, §<em>Invertibility</em>; <em>Split-Quaternion Norm and Invertibility</em>, §<em>The Invertibility Criterion</em>), $\tilde Q^{-1}=\bar{\tilde Q}/N(\tilde Q)$ (<em>Biquaternion Norm and Invertibility</em>, §<em>Invertibility</em>). The dual numbers have the same inverse formula but the criterion is stated on the real part, because the norm form is degenerate: $Z=a+\varepsilon b$ is invertible exactly when $a$ is a unit of the base ring, over a field exactly when $a\neq 0$, and the inverse is $a^{-1}-a^{-2}\varepsilon b$ (<em>Dual-Numbers Norm and Invertibility</em>, §<em>Invertibility</em>).</p>
-<p>The split biquaternion column is the exception, and it is the one place where the norm form is not the criterion. The norm form is split complex-valued and anisotropic, so $N(\tilde Q)\neq 0$ holds for every nonzero $\tilde Q$ and says nothing. What decides invertibility is whether $N(\tilde Q)$ is a <strong>unit of $\mathbb{D}$</strong>, equivalently whether both idempotent components $\tilde Q_\pm$ are nonzero, equivalently whether $N(\tilde Q)$ is not a nonzero zero divisor of $\mathbb{D}$ (<em>Split-Biquaternion Norm and Invertibility</em>, §<em>Invertibility</em>). This is a linear condition in the idempotent basis, in contrast with the quadratic conditions of the other seven columns.</p>
+<p>The criterion is the same statement in seven of the eight columns and a genuinely different one in the eighth. For $\mathbb{R}$, $\mathbb{C}$, $\mathbb{D}$, $\mathbb{H}$, $\mathbb{H}_{\mathrm{s}}$ and $\mathbb{B}$ the element is invertible exactly when its norm is nonzero, and the inverse is the conjugate divided by the norm: $x^{-1}=x/N(x)$ (<em>Real Norm and Invertibility</em>, §<em>Invertibility</em>), $Z^{-1}=\bar Z/N(Z)$ (<em>Complex Norm and Invertibility</em>, §<em>Invertibility</em>; <em>Split-Complex Norm and Invertibility</em>, §<em>Invertibility</em>), $\tilde q^{-1}=\bar{\tilde q}/N(\tilde q)$ (<em>Quaternion Norm and Invertibility</em>, §<em>Invertibility</em>; <em>Split-Quaternion Norm and Invertibility</em>, §<em>The Invertibility Criterion</em>), $\tilde Q^{-1}=\bar{\tilde Q}/N(\tilde Q)$ (<em>Biquaternion Norm and Invertibility</em>, §<em>Invertibility</em>). The dual numbers have the same inverse formula but the criterion is stated on the real part, because the norm is degenerate: $Z=a+\varepsilon b$ is invertible exactly when $a$ is a unit of the base ring, over a field exactly when $a\neq 0$, and the inverse is $a^{-1}-a^{-2}\varepsilon b$ (<em>Dual-Numbers Norm and Invertibility</em>, §<em>Invertibility</em>).</p>
+<p>The split biquaternion column is the exception, and it is the one place where the norm is not the criterion. The norm is split complex-valued and anisotropic, so $N(\tilde Q)\neq 0$ holds for every nonzero $\tilde Q$ and says nothing. What decides invertibility is whether $N(\tilde Q)$ is a <strong>unit of $\mathbb{D}$</strong>, equivalently whether both idempotent components $\tilde Q_\pm$ are nonzero, equivalently whether $N(\tilde Q)$ is not a nonzero zero divisor of $\mathbb{D}$ (<em>Split-Biquaternion Norm and Invertibility</em>, §<em>Invertibility</em>). This is a linear condition in the idempotent basis, in contrast with the quadratic conditions of the other seven columns.</p>
 <h2 id="the-group-of-units">The Group of Units</h2>
 <p>The following table compares the group of units of the eight algebras: its description, its number of connected components, and its compactness. The eight algebras are the columns, in the fixed order.</p>
 <div class="table-scroll"><table>
@@ -384,9 +384,95 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>The table is the unit-group side of the classification of the norm form. The definite columns $\mathbb{R}$, $\mathbb{C}$ and $\mathbb{H}$ have unit groups whose compact factor grows with the dimension — the sign group $\{\pm1\}$, the circle $U(1)$, the sphere $Sp(1)=S^3$ — and it is the definiteness of the norm form that makes this factor compact (<em>Real Norm and Invertibility</em>, §<em>The Group of Units</em>; <em>Complex Norm and Invertibility</em>, §<em>The Group of Units</em>; <em>Quaternion Norm and Invertibility</em>, §<em>The Group of Units</em>). At $\mathbb{D}$ the compact factors remain discrete and the group acquires four components, one for each choice of signs of the two idempotent coordinates; the dual numbers have two components, the two half-lines $a>0$ and $a<0$, with the shear group $1+\mathfrak{m}$ as second factor (<em>Split-Complex Norm and Invertibility</em>, §<em>The Four Components</em>; <em>Dual-Numbers Norm and Invertibility</em>, §<em>The Group of Units</em>). The split quaternions are $GL_2(\mathbb{R})$, of two components $P=\{N>0\}$ and $Q=\{N<0\}$ (<em>Split-Quaternion Norm and Invertibility</em>, §<em>The Group of Units</em>). The two biquaternion systems return to a connected unit group, but no longer compact: $\mathbb{B}^\times\cong GL(2,\mathbb{C})$, with maximal compact subgroup $U(2)$, and $\mathbb{H}_{\mathbb{D}}^\times\cong\mathbb{H}^\times\times\mathbb{H}^\times$, with maximal compact subgroup $S^3\times S^3$ (<em>Biquaternion Norm and Invertibility</em>, §<em>The Group of Units</em>; <em>Split-Biquaternion Norm and Invertibility</em>, §<em>The Group of Units</em>). No unit group of the table is compact, since each contains the positive scalars $\mathbb{R}_{>0}$; the row of compact factors records the largest compact subgroup inside each.</p>
+<p>The table is the unit-group side of the classification of the norm. The definite columns $\mathbb{R}$, $\mathbb{C}$ and $\mathbb{H}$ have unit groups whose compact factor grows with the dimension — the sign group $\{\pm1\}$, the circle $U(1)$, the sphere $Sp(1)=S^3$ — and it is the definiteness of the norm that makes this factor compact (<em>Real Norm and Invertibility</em>, §<em>The Group of Units</em>; <em>Complex Norm and Invertibility</em>, §<em>The Group of Units</em>; <em>Quaternion Norm and Invertibility</em>, §<em>The Group of Units</em>). At $\mathbb{D}$ the compact factors remain discrete and the group acquires four components, one for each choice of signs of the two idempotent coordinates; the dual numbers have two components, the two half-lines $a>0$ and $a<0$, with the shear group $1+\mathrm{M}$ as second factor (<em>Split-Complex Norm and Invertibility</em>, §<em>The Four Components</em>; <em>Dual-Numbers Norm and Invertibility</em>, §<em>The Group of Units</em>). The split quaternions are $GL_2(\mathbb{R})$, of two components $P=\{N>0\}$ and $Q=\{N<0\}$ (<em>Split-Quaternion Norm and Invertibility</em>, §<em>The Group of Units</em>). The two biquaternion systems return to a connected unit group, but no longer compact: $\mathbb{B}^\times\cong GL(2,\mathbb{C})$, with maximal compact subgroup $U(2)$, and $\mathbb{H}_{\mathbb{D}}^\times\cong\mathbb{H}^\times\times\mathbb{H}^\times$, with maximal compact subgroup $S^3\times S^3$ (<em>Biquaternion Norm and Invertibility</em>, §<em>The Group of Units</em>; <em>Split-Biquaternion Norm and Invertibility</em>, §<em>The Group of Units</em>). No unit group of the table is compact, since each contains the positive scalars $\mathbb{R}_{>0}$; the row of compact factors records the largest compact subgroup inside each.</p>
+<h2 id="the-topology-of-the-group-of-units">The Topology of the Group of Units</h2>
+<p>The following table compares the topology of the eight algebras and of their groups of units: the ambient space, the homotopy type of the units, the components and the fundamental group, and the boundary of the polar form. The eight algebras are the columns, in the fixed order.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>topology</th>
+<th>$\mathbb{R}$</th>
+<th>$\mathbb{C}$</th>
+<th>$\mathbb{D}$</th>
+<th>$\mathbb{D}'$</th>
+<th>$\mathbb{H}$</th>
+<th>$\mathbb{H}_{\mathrm{s}}$</th>
+<th>$\mathbb{B}$</th>
+<th>$\mathbb{H}_{\mathbb{D}}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the algebra</td>
+<td>$\mathbb{R}$</td>
+<td>$\mathbb{R}^2$</td>
+<td>$\mathbb{R}^2$</td>
+<td>$\mathbb{R}^2$</td>
+<td>$\mathbb{R}^4$</td>
+<td>$\mathbb{R}^4$</td>
+<td>$\mathbb{R}^8$</td>
+<td>$\mathbb{R}^8$</td>
+</tr>
+<tr>
+<td>units contractible</td>
+<td>no</td>
+<td>no</td>
+<td>no</td>
+<td>no</td>
+<td>no</td>
+<td>no</td>
+<td>no</td>
+<td>no</td>
+</tr>
+<tr>
+<td>homotopy type of the units</td>
+<td>$S^0$</td>
+<td>$S^1$</td>
+<td>four points</td>
+<td>$S^0$</td>
+<td>$S^3$</td>
+<td>$S^1$ on each component</td>
+<td>$S^1\times S^3$</td>
+<td>$S^3\times S^3$</td>
+</tr>
+<tr>
+<td>$\pi_0$ of the units</td>
+<td>$\mathbb{Z}/2$</td>
+<td>$1$</td>
+<td>$(\mathbb{Z}/2)^2$</td>
+<td>$\mathbb{Z}/2$</td>
+<td>$1$</td>
+<td>$\mathbb{Z}/2$</td>
+<td>$1$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>$\pi_1$ of the units</td>
+<td>$0$</td>
+<td>$\mathbb{Z}$</td>
+<td>$0$</td>
+<td>$0$</td>
+<td>$0$</td>
+<td>$\mathbb{Z}$</td>
+<td>$\mathbb{Z}$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>boundary of the polar form</td>
+<td>—</td>
+<td>$\{0\}$</td>
+<td>two null lines</td>
+<td>maximal ideal $\mathrm{M}$</td>
+<td>$\{0\}$</td>
+<td>null cone, link $T^2$</td>
+<td>null cone, dimension $6$</td>
+<td>zero-divisor set $Z_\pm$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The table is the topology of the ladder. The algebra is contractible in every column, since each is a Euclidean space with a continuous product; it is the groups of units that carry the topology, and their homotopy type is the unit sphere of the normed case: $S^0$ for $\mathbb{R}$, $S^1$ for $\mathbb{C}$, $S^3$ for $\mathbb{H}$, and the products $S^1\times S^3$ for $\mathbb{B}$ and $S^3\times S^3$ for $\mathbb{H}_{\mathbb{D}}$ (<em>Real Topology</em>; <em>Complex Topology</em>; <em>Quaternion Topology</em>; <em>Biquaternion Topology</em>; <em>Split-Biquaternion Topology</em>). The two split cases $\mathbb{D}$ and $\mathbb{H}_{\mathrm{s}}$ distort this: the four components of $\mathbb{D}^{\times}$ are contractible so that $\pi_1=0$ and only $\pi_0=(\mathbb{Z}/2)^2$ remains, and the two components of $GL_2(\mathbb{R})$ each deform to a circle so that $\pi_1\cong\mathbb{Z}$ while the norm-one group $SL_2(\mathbb{R})$ is homotopy equivalent to $S^1$ (<em>Split-Complex Topology</em>; <em>Split-Quaternion Topology</em>). The $\pi_1$ row separates the columns that wind from those that do not: it is $\mathbb{Z}$ exactly for $\mathbb{C}$, $\mathbb{H}_{\mathrm{s}}$ and $\mathbb{B}$. The last row is the boundary of the polar domain, which coincides with the zero-divisor set whenever it is non-empty: the origin in the definite two- and four-dimensional cases, the two null lines in $\mathbb{D}$, the maximal ideal in $\mathbb{D}'$, the null cone in $\mathbb{H}_{\mathrm{s}}$, whose link is the torus $T^2$, the null cone of $\mathbb{B}$, of dimension six and singular at the apex, and the zero-divisor set $Z_+\cup Z_-$ of $\mathbb{H}_{\mathbb{D}}$, two four-dimensional pieces each homotopy equivalent to $S^3$ (<em>Real Polar Representation</em>; <em>Split-Complex Topology</em>; <em>Dual-Numbers Topology</em>; <em>Split-Quaternion Topology</em>; <em>Biquaternion Topology</em>; <em>Split-Biquaternion Topology</em>). The $\mathbb{R}$ cell of that row carries the marker because the real line has no boundary beyond the origin, which is the only excluded element.</p>
 <h2 id="the-classification-by-the-sign-of-the-norm">The Classification by the Sign of the Norm</h2>
-<p>The following table compares the classification of the elements of the eight algebras by the sign of the norm form. The eight algebras are the columns, in the fixed order.</p>
+<p>The following table compares the classification of the elements of the eight algebras by the sign of the norm. The eight algebras are the columns, in the fixed order.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -418,7 +504,7 @@ $$</p>
 <td>—</td>
 <td>—</td>
 <td>null $N=0$</td>
-<td>$\mathfrak{m}\setminus\{0\}$</td>
+<td>$\mathrm{M}\setminus\{0\}$</td>
 <td>—</td>
 <td>lightlike $N=0$</td>
 <td>$N=0$</td>
@@ -448,9 +534,9 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>The table records the number of classes the sign of the norm form produces: three for $\mathbb{R}$ (positive, zero, negative), but no nonzero null class, because the form is definite; two for the division algebras $\mathbb{C}$ and $\mathbb{H}$ (invertible, zero); three for $\mathbb{D}$ and $\mathbb{H}_{\mathrm{s}}$ (spacelike, null, timelike), the null class being the zero-divisor set; three for $\mathbb{D}'$ (invertible, zero divisor, zero); and three for the biquaternion systems (invertible, zero divisor, zero). The empty cells of $\mathbb{R}$, $\mathbb{C}$, $\mathbb{D}'$ and $\mathbb{H}$ in the third and fourth rows are genuine: $\mathbb{C}$ and $\mathbb{H}$ have no element of vanishing norm form other than the origin, so their null class is empty and their classification is a dichotomy; $\mathbb{D}'$ has no negative value because its form is semidefinite; and $\mathbb{R}$ has no null class because the only real number of vanishing square is zero. For $\mathbb{D}$ and $\mathbb{H}_{\mathrm{s}}$ the classification is multiplicative — the product of two spacelike elements is spacelike, and so on — so it is a grading of the algebra compatible with its multiplication (<em>Split-Complex Norm and Invertibility</em>, §<em>Distribution of the Invertible Elements</em>; <em>Split-Quaternion Norm and Invertibility</em>, §<em>Distribution of the Invertible Elements</em>). For $\mathbb{H}_{\mathbb{D}}$ the midpoint of the table is the one case not read off from the sign of a scalar: the zero divisors are the elements with exactly one idempotent component zero, and the sign of the norm form gives no such information, its value being a nonzero zero divisor of $\mathbb{D}$.</p>
+<p>The table records the number of classes the sign of the norm produces: three for $\mathbb{R}$ (positive, zero, negative), but no nonzero null class, because the form is definite; two for the division algebras $\mathbb{C}$ and $\mathbb{H}$ (invertible, zero); three for $\mathbb{D}$ and $\mathbb{H}_{\mathrm{s}}$ (spacelike, null, timelike), the null class being the zero-divisor set; three for $\mathbb{D}'$ (invertible, zero divisor, zero); and three for the biquaternion systems (invertible, zero divisor, zero). The empty cells of $\mathbb{R}$, $\mathbb{C}$, $\mathbb{D}'$ and $\mathbb{H}$ in the third and fourth rows are genuine: $\mathbb{C}$ and $\mathbb{H}$ have no element of vanishing norm other than the origin, so their null class is empty and their classification is a dichotomy; $\mathbb{D}'$ has no negative value because its form is semidefinite; and $\mathbb{R}$ has no null class because the only real number of vanishing square is zero. For $\mathbb{D}$ and $\mathbb{H}_{\mathrm{s}}$ the classification is multiplicative — the product of two spacelike elements is spacelike, and so on — so it is a grading of the algebra compatible with its multiplication (<em>Split-Complex Norm and Invertibility</em>, §<em>Distribution of the Invertible Elements</em>; <em>Split-Quaternion Norm and Invertibility</em>, §<em>Distribution of the Invertible Elements</em>). For $\mathbb{H}_{\mathbb{D}}$ the midpoint of the table is the one case not read off from the sign of a scalar: the zero divisors are the elements with exactly one idempotent component zero, and the sign of the norm gives no such information, its value being a nonzero zero divisor of $\mathbb{D}$.</p>
 <h2 id="the-two-polar-series">The Two Polar Series</h2>
-<p>Each algebra of the table has a polar decomposition $a=\rho u$ of every element with non-vanishing norm form into a modulus $\rho$ and a unit factor $u$, and the decompositions fall into two series according to the character of the norm form and of the unit factor: the <strong>definite polar series</strong> $\mathbb{R}, \mathbb{C}, \mathbb{H}, \mathbb{B}$, whose Hermitian scalar part is positive definite and whose unit factor is compact apart from one boost, and the <strong>indefinite polar series</strong> $\mathbb{D}, \mathbb{D}', \mathbb{H}_{\mathrm{s}}, \mathbb{H}_{\mathbb{D}}$, whose norm form is indefinite, degenerate or split-valued and whose unit factor carries a non-compact hyperbolic or parabolic factor. The following table compares the polar decomposition of the eight: the four factors — the positive <strong>scale</strong>, the <strong>phase</strong> factor, the <strong>boost</strong> and the <strong>rotor</strong> — and the place of each algebra in the two series. The eight algebras are the columns, in the fixed order.</p>
+<p>Each algebra of the table has a polar decomposition $x=\rho u$ of every element with non-vanishing norm into a modulus $\rho$ and a unit factor $u$, and the decompositions fall into two series according to the character of the norm and of the unit factor: the <strong>definite polar series</strong> $\mathbb{R}, \mathbb{C}, \mathbb{H}, \mathbb{B}$, whose Hermitian scalar part is positive definite and whose unit factor carries a compact factor, and the <strong>indefinite polar series</strong> $\mathbb{D}, \mathbb{D}', \mathbb{H}_{\mathrm{s}}, \mathbb{H}_{\mathbb{D}}$, whose norm is indefinite, degenerate or split-valued and whose unit factor carries a non-compact hyperbolic or parabolic factor. The following table compares the two series and the place of each algebra in them: the modulus, the character of the unit factor, the boundary of the decomposition and the series. The eight algebras are the columns, in the fixed order. The factors into which the unit factor splits are the subject of <em>Comparison of the Polar Representation</em> and are not repeated here.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -478,55 +564,22 @@ $$</p>
 <td>$\rho_\pm=\lvert A\pm A'\rvert$</td>
 </tr>
 <tr>
-<td>scale</td>
-<td>yes</td>
-<td>yes</td>
-<td>yes</td>
-<td>yes</td>
-<td>yes</td>
-<td>yes</td>
-<td>yes</td>
-<td>$\lambda=\sqrt{\rho_+\rho_-}$</td>
-</tr>
-<tr>
-<td>phase</td>
-<td>—</td>
-<td>elliptic, $U(1)$</td>
-<td>hyperbolic $e^{\phi j}$</td>
-<td>parabolic $e^{s\varepsilon}$</td>
-<td>—</td>
-<td>—</td>
-<td>elliptic $e^{i\alpha}$</td>
-<td>hyperbolic $e^{j\tau}$</td>
-</tr>
-<tr>
-<td>boost</td>
-<td>—</td>
-<td>—</td>
-<td>yes</td>
-<td>—</td>
-<td>—</td>
-<td>yes</td>
-<td>yes</td>
-<td>—</td>
-</tr>
-<tr>
-<td>rotor</td>
+<td>unit factor</td>
 <td>discrete, $\{\pm1\}$</td>
-<td>—</td>
-<td>—</td>
-<td>—</td>
-<td>$Sp(1)$</td>
-<td>$S^1$</td>
-<td>$Sp(1)$</td>
-<td>$S^3\times S^3$</td>
+<td>compact, $U(1)$</td>
+<td>hyperbolic, $e^{\phi j}$</td>
+<td>parabolic, $1+\mathrm{M}$</td>
+<td>compact, $Sp(1)$</td>
+<td>compact and hyperbolic</td>
+<td>compact and hyperbolic</td>
+<td>hyperbolic central, compact rotor</td>
 </tr>
 <tr>
 <td>boundary</td>
 <td>$\{0\}$</td>
 <td>$\{0\}$</td>
 <td>null cone</td>
-<td>$\mathfrak{m}$</td>
+<td>$\mathrm{M}$</td>
 <td>$\{0\}$</td>
 <td>null cone</td>
 <td>null cone</td>
@@ -545,10 +598,10 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>The table shows how the four slots of the family are occupied, and the two series separate by the character of the unit factor. In the definite series the rotor or phase is compact: $\mathbb{R}$ has only the discrete sign $\{\pm1\}$, $\mathbb{C}$ has the circle $U(1)$, $\mathbb{H}$ has the sphere $Sp(1)=S^3$, and $\mathbb{B}$ has, in addition to its compact rotor $Sp(1)$ and its compact central phase $e^{i\alpha}$, a non-compact <strong>boost</strong> in the Hermitian subspace $\mathbb{M}_+$ of real dimension three, so that the four factors of $\mathbb{B}$ have dimensions $1+1+3+3=8$ (<em>Real Polar Representation</em>, §<em>What the Two Factors Are</em>; <em>Complex Polar Representation</em>, §<em>What the Two Factors Are</em>; <em>Quaternion Polar Representation</em>, §<em>The Modulus and the Unit Factor</em>; <em>Biquaternion Polar Representation</em>, §<em>The Four Factors and Their Meanings</em>). The boost in the definite series appears only in the last column; it is the one crossing of the two series, and it is present because the complex norm form of $\mathbb{B}$ is indefinite even though its Hermitian scalar part is positive definite.</p>
-<p>In the indefinite series the unit factor is genuinely non-compact. The split complex algebra has a hyperbolic unit factor $e^{\phi j}$ and no trigonometric one, because it has no root of $-1$; the dual numbers have the parabolic factor $e^{s\varepsilon}=1+s\varepsilon$, a shear with a globally defined angle; the split quaternions have a boost in $\operatorname{span}\{1,e_2,e_3\}$ and a one-parameter rotor $S^1$ from the elliptic direction $e_1$; and the split biquaternions have a rotor $S^3\times S^3$ of dimension six and a hyperbolic phase $e^{j\tau}$ in place of a boost, the scale and the phase being the two components of the split complex modulus (<em>Split-Complex Polar Representation</em>, §<em>Position and Signature</em>; <em>Dual-Numbers Polar Representation</em>, §<em>The Factors and Their Meanings</em>; <em>Split-Quaternion Polar Representation</em>, §<em>The Polar Decomposition</em>; <em>Split-Biquaternion Polar Representation</em>, §<em>The Factors and Their Meanings</em>). The boundary row is the domain of the decomposition: it is the origin in the definite two- and four-dimensional cases, the null cone in $\mathbb{D}$, $\mathbb{H}_{\mathrm{s}}$ and $\mathbb{B}$, the maximal ideal in $\mathbb{D}'$, and <strong>empty</strong> in $\mathbb{H}_{\mathbb{D}}$, whose modulus needs no branch and whose decomposition exists for every element of the algebra, the rotor alone degenerating on the zero divisors. The split biquaternion column is the only one whose polar data has no boost and whose domain is the whole algebra, and it is the last column of both the table and the ladder (<em>Split-Biquaternion Polar Representation</em>, §<em>Comparison with the Other Algebras of the Series</em>).</p>
+<p>The table separates the two series by the character of the unit factor and by the boundary of the decomposition. In the definite series the norm is definite and the boundary is the origin alone, and the unit factor is compact in $\mathbb{C}$ and $\mathbb{H}$ — $U(1)$ and $Sp(1)=S^3$ — and discrete in $\mathbb{R}$, where it is the two-point set $\{\pm1\}$; $\mathbb{B}$ is the one column of the series that is not wholly compact, because its complex-valued form has a null cone and its unit factor acquires the hyperbolic rotation of the Hermitian subspace $\mathbb{M}_+$ (<em>Biquaternion Norm and Invertibility</em>, §<em>The Unique Real Norm, and the Polar Scale</em>; <em>Biquaternion Polar Representation</em>, §<em>The Four Factors and Their Meanings</em>). In the indefinite series the boundary is non-empty in every column but the last: the null cone in $\mathbb{D}$, $\mathbb{H}_{\mathrm{s}}$ and $\mathbb{B}$, and the maximal ideal $\mathrm{M}$ in $\mathbb{D}'$, whose unit factor is the parabolic shear $1+\mathrm{M}$ rather than a hyperbola (<em>Dual-Numbers Polar Representation</em>, §<em>The Factors and Their Meanings</em>; <em>Split-Quaternion Polar Representation</em>, §<em>The Polar Decomposition</em>).</p>
+<p>$\mathbb{H}_{\mathbb{D}}$ is the only column whose decomposition exists on the whole algebra. Its modulus is the pair $\rho_\pm=\lvert A\pm A'\rvert$ of the two idempotent components, a branch-free modulus of split complex type, and its unit factor combines the hyperbolic central phase $e^{j\tau}$ with the compact rotor $S^3\times S^3$, so that the column is the split counterpart of $\mathbb{B}$: the hyperbolic part is central rather than confined to a Hermitian subspace, and no boundary of the decomposition remains (<em>Split-Biquaternion Polar Representation</em>, §<em>The Theorem</em>; §<em>Comparison with the Other Algebras of the Series</em>). The two series thus differ in the form of the unit factor — compact rotor and elliptic phase in the first, hyperbolic phase and parabolic shear in the second — while the modulus in every column is read from the norm alone.</p>
 <h2 id="summary">Summary</h2>
-<p>The norm form of each of the eight algebras is multiplicative, and the eight divide by its signature. $\mathbb{R}$, $\mathbb{C}$ and $\mathbb{H}$ have definite norm forms of signatures $(1,0)$, $(2,0)$ and $(4,0)$, and are division algebras; $\mathbb{D}$ and $\mathbb{H}_{\mathrm{s}}$ have indefinite forms of signatures $(1,1)$ and $(2,2)$ and have null cones of zero divisors; $\mathbb{D}'$ has a degenerate form $a^2$ of rank one with the maximal ideal as its vanishing set; $\mathbb{B}$ has a complex-valued form vanishing on a zero-divisor cone and $\mathbb{H}_{\mathbb{D}}$ a split complex-valued form that is anisotropic and does not detect the zero divisors at all. The Hermitian form separates from the norm form exactly in the two biquaternion columns, where its scalar part has signature $(8,0)$ and $(4,4)$ respectively. The invertibility criterion is $N\neq 0$ in seven columns, with the inverse the conjugate over the norm form, and in $\mathbb{H}_{\mathbb{D}}$ it becomes the requirement that $N$ be a unit of $\mathbb{D}$, equivalently that both idempotent components be nonzero. The group of units is connected exactly for $\mathbb{C}$, $\mathbb{H}$, $\mathbb{B}$ and $\mathbb{H}_{\mathbb{D}}$, and never compact; its maximal compact subgroup grows from $\{\pm1\}$ through $U(1)$ and $Sp(1)$ to $U(2)$ and $S^3\times S^3$. The classification by the sign of the norm form has three classes for $\mathbb{R}$, $\mathbb{D}$, $\mathbb{D}'$, $\mathbb{H}_{\mathrm{s}}$, $\mathbb{B}$ and $\mathbb{H}_{\mathbb{D}}$, with different meanings, and two for $\mathbb{C}$ and $\mathbb{H}$. Finally, the polar decompositions fall into a definite series $\mathbb{R}, \mathbb{C}, \mathbb{H}, \mathbb{B}$ and an indefinite series $\mathbb{D}, \mathbb{D}', \mathbb{H}_{\mathrm{s}}, \mathbb{H}_{\mathbb{D}}$, differing in the character of the unit factor — compact rotor and elliptic phase in the first, hyperbolic boost and parabolic shear in the second — with the boundary of the decomposition coinciding with the zero-divisor set in every case where it is non-empty.</p>
+<p>The norm of each of the eight algebras is multiplicative, and the eight divide by its signature. $\mathbb{R}$, $\mathbb{C}$ and $\mathbb{H}$ have definite norms of signatures $(1,0)$, $(2,0)$ and $(4,0)$, and are division algebras; $\mathbb{D}$ and $\mathbb{H}_{\mathrm{s}}$ have indefinite forms of signatures $(1,1)$ and $(2,2)$ and have null cones of zero divisors; $\mathbb{D}'$ has a degenerate form $a^2$ of rank one with the maximal ideal as its vanishing set; $\mathbb{B}$ has a complex-valued form vanishing on a zero-divisor cone and $\mathbb{H}_{\mathbb{D}}$ a split complex-valued form that is anisotropic and does not detect the zero divisors at all. The Hermitian form separates from the norm exactly in the two biquaternion columns, where its scalar part has signature $(8,0)$ and $(4,4)$ respectively. The invertibility criterion is $N\neq 0$ in seven columns, with the inverse the conjugate over the norm, and in $\mathbb{H}_{\mathbb{D}}$ it becomes the requirement that $N$ be a unit of $\mathbb{D}$, equivalently that both idempotent components be nonzero. The group of units is connected exactly for $\mathbb{C}$, $\mathbb{H}$, $\mathbb{B}$ and $\mathbb{H}_{\mathbb{D}}$, and never compact; its maximal compact subgroup grows from $\{\pm1\}$ through $U(1)$ and $Sp(1)$ to $U(2)$ and $S^3\times S^3$, and the homotopy type of the units is the unit sphere of the normed case — $S^0$, $S^1$, $S^3$ — extended to the products $S^1\times S^3$ for $\mathbb{B}$ and $S^3\times S^3$ for $\mathbb{H}_{\mathbb{D}}$, with $\pi_1\cong\mathbb{Z}$ exactly for $\mathbb{C}$, $\mathbb{H}_{\mathrm{s}}$ and $\mathbb{B}$. The classification by the sign of the norm has three classes for $\mathbb{R}$, $\mathbb{D}$, $\mathbb{D}'$, $\mathbb{H}_{\mathrm{s}}$, $\mathbb{B}$ and $\mathbb{H}_{\mathbb{D}}$, with different meanings, and two for $\mathbb{C}$ and $\mathbb{H}$. Finally, the polar decompositions fall into a definite series $\mathbb{R}, \mathbb{C}, \mathbb{H}, \mathbb{B}$ and an indefinite series $\mathbb{D}, \mathbb{D}', \mathbb{H}_{\mathrm{s}}, \mathbb{H}_{\mathbb{D}}$, differing in the character of the unit factor — compact rotor and elliptic phase in the first, hyperbolic rotation and parabolic shear in the second — with the boundary of the decomposition coinciding with the zero-divisor set in every case where it is non-empty.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -560,35 +613,35 @@ $$</p>
 <tbody>
 <tr>
 <td>$N$</td>
-<td>the norm form of the algebra under discussion</td>
+<td>the norm of the algebra under discussion</td>
 </tr>
 <tr>
 <td>$N(x)=x^2$</td>
-<td>the norm form of $\mathbb{R}$</td>
+<td>the norm of $\mathbb{R}$</td>
 </tr>
 <tr>
 <td>$N(Z)=a^2+b^2$</td>
-<td>the norm form of $\mathbb{C}$</td>
+<td>the norm of $\mathbb{C}$</td>
 </tr>
 <tr>
 <td>$N(Z)=a^2-b^2$</td>
-<td>the norm form of $\mathbb{D}$, signature $(1,1)$</td>
+<td>the norm of $\mathbb{D}$, signature $(1,1)$</td>
 </tr>
 <tr>
 <td>$N(Z)=a^2$</td>
-<td>the norm form of $\mathbb{D}'$, degenerate</td>
+<td>the norm of $\mathbb{D}'$, degenerate</td>
 </tr>
 <tr>
 <td>$N(\tilde q)=\sum_k q_k^2$</td>
-<td>the norm form of $\mathbb{H}$</td>
+<td>the norm of $\mathbb{H}$</td>
 </tr>
 <tr>
 <td>$N(\tilde q)=q_0^2+q_1^2-q_2^2-q_3^2$</td>
-<td>the norm form of $\mathbb{H}_{\mathrm{s}}$, signature $(2,2)$</td>
+<td>the norm of $\mathbb{H}_{\mathrm{s}}$, signature $(2,2)$</td>
 </tr>
 <tr>
 <td>$N(\tilde Q)=\sum_\mu Q_\mu^2$</td>
-<td>the biquaternion and split biquaternion norm form</td>
+<td>the biquaternion and split biquaternion norm</td>
 </tr>
 <tr>
 <td>$Q_\mu$</td>
@@ -603,7 +656,7 @@ $$</p>
 <td>the two quaternion components of $\tilde Q$ in $\mathbb{H}_{\mathbb{D}}$</td>
 </tr>
 <tr>
-<td>$\mathfrak{m}=(\varepsilon)$</td>
+<td>$\mathrm{M}=(\varepsilon)$</td>
 <td>the maximal ideal of $\mathbb{D}'$</td>
 </tr>
 <tr>
@@ -620,15 +673,39 @@ $$</p>
 </tr>
 <tr>
 <td>$\mathbb{R}_{>0}$</td>
-<td>the positive real scale factor</td>
+<td>the positive scalars, the identity component of $\mathbb{R}^\times$</td>
 </tr>
 <tr>
-<td>$\rho,\lambda,e^{i\alpha},e^{\phi j},e^{s\varepsilon},e^{j\tau}$</td>
-<td>modulus, scale, elliptic, hyperbolic and parabolic phases</td>
+<td>$x=\rho u$</td>
+<td>the polar decomposition of an element: modulus and unit factor</td>
+</tr>
+<tr>
+<td>$e^{\phi j},e^{j\tau}$</td>
+<td>the hyperbolic unit factors of $\mathbb{D}$ and $\mathbb{H}_{\mathbb{D}}$</td>
+</tr>
+<tr>
+<td>$1+\mathrm{M}$</td>
+<td>the parabolic unit factor of $\mathbb{D}'$</td>
 </tr>
 <tr>
 <td>$GL_2(\mathbb{R}), GL(2,\mathbb{C})$</td>
 <td>unit groups of $\mathbb{H}_{\mathrm{s}}$ and $\mathbb{B}$</td>
+</tr>
+<tr>
+<td>$\pi_0,\pi_1$</td>
+<td>the components and the fundamental group of the group of units</td>
+</tr>
+<tr>
+<td>$S^0,S^1,S^3$</td>
+<td>the homotopy types of the units of $\mathbb{R}$, $\mathbb{C}$ and $\mathbb{H}$</td>
+</tr>
+<tr>
+<td>$T^2=S^1\times S^1$</td>
+<td>the link of the split-quaternion null cone</td>
+</tr>
+<tr>
+<td>$Z_\pm$</td>
+<td>the two zero-divisor pieces of $\mathbb{H}_{\mathbb{D}}$</td>
 </tr>
 <tr>
 <td><code>—</code></td>
@@ -639,10 +716,11 @@ $$</p>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
 <li>T. Y. Lam, <em>Introduction to Quadratic Forms over Fields</em> (American Mathematical Society, 2005), for signatures, isotropy and the Witt classification of quadratic forms.</li>
-<li>John Voight, <em>Quaternion Algebras</em>, Graduate Texts in Mathematics 288 (Springer, 2021), for the norm form, the group of units and the splitting of a quaternion algebra.</li>
-<li>Richard S. Pierce, <em>Associative Algebras</em>, Graduate Texts in Mathematics 88 (Springer, 1982), for the norm form of a finite-dimensional algebra and the determinant of the multiplication map.</li>
+<li>John Voight, <em>Quaternion Algebras</em>, Graduate Texts in Mathematics 288 (Springer, 2021), for the norm, the group of units and the splitting of a quaternion algebra.</li>
+<li>Richard S. Pierce, <em>Associative Algebras</em>, Graduate Texts in Mathematics 88 (Springer, 1982), for the norm of a finite-dimensional algebra and the determinant of the multiplication map.</li>
 <li>Roger A. Horn and Charles R. Johnson, <em>Matrix Analysis</em>, 2nd ed. (Cambridge University Press, 2013), for the polar decomposition of a matrix and the role of the singular values.</li>
-<li>Ian R. Porteous, <em>Clifford Algebras and the Classical Groups</em> (Cambridge University Press, 1995), for the norm forms of the low-dimensional algebras and their indefinite refinements.</li>
+<li>Ian R. Porteous, <em>Clifford Algebras and the Classical Groups</em> (Cambridge University Press, 1995), for the norms of the low-dimensional algebras and their indefinite refinements.</li>
+<li>Allen Hatcher, <em>Algebraic Topology</em> (Cambridge University Press, 2002), for the homotopy groups of the classical groups and the topology of their homogeneous spaces.</li>
 </ul>
       </div>
     </main>

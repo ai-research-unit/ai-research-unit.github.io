@@ -111,7 +111,7 @@ $$</p>
 <h3 id="monotone-convergence">Monotone Convergence</h3>
 <p>A sequence $(a_n)$ is <strong>monotone increasing</strong> if $a_{n+1} \geq a_n$ for all $n$.</p>
 <p><strong>Theorem (Monotone Convergence).</strong> Every bounded monotone sequence converges.</p>
-<p><strong>Proof.</strong> Suppose $(a_n)$ is monotone increasing and bounded above. Let $L = \sup \{a_n\}$. For $\epsilon > 0$, $L - \epsilon$ is not an upper bound, so there exists $N$ with $a_N > L - \epsilon$. By monotonicity, $n \geq N$ implies $L - \epsilon < a_n \leq L$. Hence $a_n \to L$. $\square$</p>
+<p><strong>Proof.</strong> Suppose $(a_n)$ is monotone increasing and bounded above. Let $L = \sup \{a_n\}$. For $\epsilon > 0$, $L - \epsilon$ is not an upper bound, so there exists $N$ with $a_N > L - \epsilon$. By monotonicity, $n \geq N$ implies $L - \epsilon < a_n \leq L$. Hence $a_n \to L$.</p>
 <h3 id="subsequences-and-limit-points">Subsequences and Limit Points</h3>
 <p>A real number $L$ is a <strong>limit point</strong> of a sequence $(a_n)$ if some subsequence converges to $L$.</p>
 <p><strong>Theorem.</strong> $L$ is a limit point of $(a_n)$ iff for every $\epsilon > 0$ and every $N \in \mathbb{N}$ there exists $n \geq N$ with $|a_n - L| < \epsilon$.</p>
@@ -169,11 +169,11 @@ $$</p>
 <p>$$
 S = \{x \in [a, b] : f(x) \leq y\}.
 $$</p>
-<p>$S$ is non-empty ($a \in S$) and bounded above (by $b$), so $c = \sup S$ exists. By continuity, $f(c) \leq y$. If $f(c) < y$, then for $x$ slightly greater than $c$, $f(x) < y$, contradicting the definition of $c$. Hence $f(c) = y$. $\square$</p>
+<p>$S$ is non-empty ($a \in S$) and bounded above (by $b$), so $c = \sup S$ exists. By continuity, $f(c) \leq y$. If $f(c) < y$, then for $x$ slightly greater than $c$, $f(x) < y$, contradicting the definition of $c$. Hence $f(c) = y$.</p>
 <p><strong>Corollary.</strong> If $f$ is continuous on $[a, b]$ and $f(a) f(b) < 0$, then $f$ has a root in $(a, b)$.</p>
 <h3 id="the-extreme-value-theorem">The Extreme Value Theorem</h3>
 <p><strong>Theorem (EVT).</strong> If $f : [a, b] \to \mathbb{R}$ is continuous, then $f$ is bounded and attains its maximum and minimum.</p>
-<p><strong>Proof.</strong> $[a, b]$ is compact. Continuous images of compact sets are compact. A compact subset of $\mathbb{R}$ is closed and bounded, hence contains its supremum and infimum. $\square$</p>
+<p><strong>Proof.</strong> $[a, b]$ is compact. Continuous images of compact sets are compact. A compact subset of $\mathbb{R}$ is closed and bounded, hence contains its supremum and infimum.</p>
 <h3 id="uniform-continuity">Uniform Continuity</h3>
 <p>A function $f : D \to \mathbb{R}$ is <strong>uniformly continuous</strong> if for every $\epsilon > 0$ there exists $\delta > 0$ such that</p>
 <p>$$
@@ -201,12 +201,12 @@ $$</p>
 $$</p>
 <h3 id="the-mean-value-theorem">The Mean Value Theorem</h3>
 <p><strong>Theorem (Rolle).</strong> If $f$ is continuous on $[a, b]$, differentiable on $(a, b)$, and $f(a) = f(b)$, then there exists $c \in (a, b)$ with $f'(c) = 0$.</p>
-<p><strong>Proof.</strong> If $f$ is constant, any $c$ works. Otherwise, $f$ attains a maximum or minimum in $(a, b)$ by the EVT, and at an interior extremum the derivative vanishes. $\square$</p>
+<p><strong>Proof.</strong> If $f$ is constant, any $c$ works. Otherwise, $f$ attains a maximum or minimum in $(a, b)$ by the EVT, and at an interior extremum the derivative vanishes.</p>
 <p><strong>Theorem (Mean Value Theorem).</strong> If $f$ is continuous on $[a, b]$ and differentiable on $(a, b)$, then there exists $c \in (a, b)$ with</p>
 <p>$$
 f'(c) = \frac{f(b) - f(a)}{b - a}.
 $$</p>
-<p><strong>Proof.</strong> Apply Rolle to $g(x) = f(x) - \frac{f(b) - f(a)}{b - a}(x - a)$. $\square$</p>
+<p><strong>Proof.</strong> Apply Rolle to $g(x) = f(x) - \frac{f(b) - f(a)}{b - a}(x - a)$.</p>
 <p><strong>Corollary.</strong> If $f' = 0$ on an interval, $f$ is constant there.</p>
 <p><strong>Corollary.</strong> If $f' > 0$ on an interval, $f$ is strictly increasing there.</p>
 <h3 id="taylors-theorem">Taylor's Theorem</h3>

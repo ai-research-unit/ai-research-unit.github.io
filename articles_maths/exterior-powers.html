@@ -85,7 +85,7 @@ $$</p>
 <p>$$
 0 = g(u + v, u + v) = g(u, u) + g(u, v) + g(v, u) + g(v, v) = g(u, v) + g(v, u),
 $$</p>
-<p>giving $g(u, v) = -g(v, u)$. Hence $f$ changes sign when two adjacent arguments are exchanged, and the general statement follows. $\square$</p>
+<p>giving $g(u, v) = -g(v, u)$. Hence $f$ changes sign when two adjacent arguments are exchanged, and the general statement follows.</p>
 <p><strong>Corollary.</strong> An alternating map satisfies $f(x_1, \ldots, x_n) = 0$ whenever two of the arguments are equal.</p>
 <p><strong>Remark (the sign convention).</strong> The sign of a permutation is the unique homomorphism $\operatorname{sgn} : S_n \to \{\pm 1\}$ sending each transposition to $-1$. It can be computed as $\operatorname{sgn}(\sigma) = (-1)^{N(\sigma)}$, where $N(\sigma)$ is the number of inversions, the number of pairs $i < j$ with $\sigma(i) > \sigma(j)$.</p>
 <h3 id="alternating-and-skew-symmetric-maps">Alternating and Skew-Symmetric Maps</h3>
@@ -96,7 +96,7 @@ f(\ldots, x_i, \ldots, x_j, \ldots) = -f(\ldots, x_j, \ldots, x_i, \ldots).
 $$</p>
 <p>The two notions are not the same over an arbitrary commutative ring.</p>
 <p><strong>Proposition.</strong> Every alternating map is skew-symmetric. Conversely, every skew-symmetric map is alternating when $2$ is not a zero divisor in $R$.</p>
-<p><strong>Proof.</strong> The first claim is the sign lemma applied to a transposition. For the second, take a skew-symmetric $f$ and set two arguments equal, say $x_i = x_j$; the skew-symmetry gives $f = -f$, that is $2 f = 0$. If $2$ is not a zero divisor, then $f = 0$, so $f$ is alternating. $\square$</p>
+<p><strong>Proof.</strong> The first claim is the sign lemma applied to a transposition. For the second, take a skew-symmetric $f$ and set two arguments equal, say $x_i = x_j$; the skew-symmetry gives $f = -f$, that is $2 f = 0$. If $2$ is not a zero divisor, then $f = 0$, so $f$ is alternating.</p>
 <p><strong>Example.</strong> Over $R = \mathbb{F}_2$ the element $-1$ equals $1$, so the skew-symmetry condition is $f = f$ and is satisfied automatically by every multilinear map, while the alternating condition $f(x, x) = 0$ is a genuine restriction. For instance the bilinear form $f(x, y) = x_1 y_1$ on $\mathbb{F}_2^2$ is skew-symmetric but not alternating, since $f(e_1, e_1) = 1 \neq 0$. This is why the exterior power is built from alternation, not from skew-symmetry: alternation is the condition available over every commutative ring, and it specialises to skew-symmetry once $2$ is invertible.</p>
 <h2 id="the-exterior-power">The Exterior Power</h2>
 <h3 id="construction-as-a-quotient">Construction as a Quotient</h3>
@@ -124,7 +124,7 @@ $$</p>
 \operatorname{Hom}_R(\Lambda^n M, N) \cong \operatorname{Alt}_n(M; N),
 $$</p>
 <p>where $\operatorname{Alt}_n(M; N)$ denotes the submodule of $\operatorname{Mult}_n(M; N)$ consisting of the alternating maps. The pair $(\Lambda^n M, \wedge)$ is determined up to unique isomorphism by this property.</p>
-<p><strong>Proof.</strong> Since $f$ is $n$-multilinear, it factors uniquely through the tensor power as $f = g \circ \otimes$ with $g : M^{\otimes n} \to N$ linear. Because $f$ is alternating, $g$ kills every elementary tensor with two adjacent entries equal, hence kills the submodule $D_n$ they generate. Therefore $g$ descends to a unique linear map $\bar{f}$ on the quotient $\Lambda^n M$, and $f = \bar{f} \circ \wedge$ by construction. Uniqueness is immediate on the elementary wedges, which generate $\Lambda^n M$. $\square$</p>
+<p><strong>Proof.</strong> Since $f$ is $n$-multilinear, it factors uniquely through the tensor power as $f = g \circ \otimes$ with $g : M^{\otimes n} \to N$ linear. Because $f$ is alternating, $g$ kills every elementary tensor with two adjacent entries equal, hence kills the submodule $D_n$ they generate. Therefore $g$ descends to a unique linear map $\bar{f}$ on the quotient $\Lambda^n M$, and $f = \bar{f} \circ \wedge$ by construction. Uniqueness is immediate on the elementary wedges, which generate $\Lambda^n M$.</p>
 <p><strong>Remark.</strong> The theorem is the exact sense in which $\Lambda^n M$ is the universal module through which alternating maps factor. Setting $N = \Lambda^n M$ recovers the identity of $\Lambda^n M$ from the alternating map $\wedge$, and setting $N = R$ identifies the alternating forms of degree $n$ on $M$ with the linear functionals on $\Lambda^n M$; this is taken up in the final section.</p>
 <h3 id="elementary-properties">Elementary Properties</h3>
 <p><strong>Proposition.</strong> Let $M$ be an $R$-module and let $n \geq 1$. </p>
@@ -137,7 +137,7 @@ $$</p>
 <p>(b) The element $x \wedge x$ is the image of $x \otimes x \in D_2$, hence is zero; the general statement follows by bringing the equal entries into adjacent positions, using the sign relation of (c).</p>
 <p>(c) The tensor $(x + y) \otimes (x + y)$ lies in $D_2$, so its image in $\Lambda^2 M$ is zero. Expanding, $x \wedge x + x \wedge y + y \wedge x + y \wedge y = 0$, and the first and last terms vanish by (b), leaving $x \wedge y + y \wedge x = 0$.</p>
 <p>(d) The tensor power $M^{\otimes n}$ is generated by elementary tensors, and $\Lambda^n M$ is their image under the quotient map.</p>
-<p>(e) If $M$ is generated by $x_1, \ldots, x_m$, then every elementary wedge $y_1 \wedge \cdots \wedge y_n$ with $n > m$ involves $n$ elements of a generating set of size $m$, so by multilinearity it is a sum of wedges in which some generator is repeated; such a wedge is zero by (b). $\square$</p>
+<p>(e) If $M$ is generated by $x_1, \ldots, x_m$, then every elementary wedge $y_1 \wedge \cdots \wedge y_n$ with $n > m$ involves $n$ elements of a generating set of size $m$, so by multilinearity it is a sum of wedges in which some generator is repeated; such a wedge is zero by (b).</p>
 <h2 id="basis-rank-and-functoriality">Basis, Rank and Functoriality</h2>
 <h3 id="free-modules-and-the-binomial-basis">Free Modules and the Binomial Basis</h3>
 <p>The exterior powers of a free module are again free, with an explicit basis indexed by subsets.</p>
@@ -154,7 +154,7 @@ $$</p>
 <p>$$
 \det(a_{pq}) = \sum_{\sigma \in S_n} \operatorname{sgn}(\sigma) \prod_{p=1}^{n} a_{p,\sigma(p)}.
 $$</p>
-<p>This is a polynomial in the coefficients, hence defined over any commutative ring, and it is alternating because the determinant changes sign under a column exchange and vanishes when two columns agree. By the universal property it gives a linear functional $\bar{f}_J$ on $\Lambda^n M$ with $\bar{f}_J(e_{i_1} \wedge \cdots \wedge e_{i_n}) = 1$ when $(i_1, \ldots, i_n) = J$ and $= 0$ when the tuple is increasing and different from $J$. A linear relation $\sum_J c_J e_J = 0$ among the basis candidates therefore gives $c_J = \bar{f}_J(\sum_J c_J e_J) = 0$ for every $J$. Hence the displayed wedges are independent. $\square$</p>
+<p>This is a polynomial in the coefficients, hence defined over any commutative ring, and it is alternating because the determinant changes sign under a column exchange and vanishes when two columns agree. By the universal property it gives a linear functional $\bar{f}_J$ on $\Lambda^n M$ with $\bar{f}_J(e_{i_1} \wedge \cdots \wedge e_{i_n}) = 1$ when $(i_1, \ldots, i_n) = J$ and $= 0$ when the tuple is increasing and different from $J$. A linear relation $\sum_J c_J e_J = 0$ among the basis candidates therefore gives $c_J = \bar{f}_J(\sum_J c_J e_J) = 0$ for every $J$. Hence the displayed wedges are independent.</p>
 <p>The determinant used in the proof is developed for its own sake ; here it is only the explicit alternating form that separates the basis elements.</p>
 <p><strong>Corollary.</strong> Let $V$ be a vector space over a field of dimension $m$. Then $\dim \Lambda^n V = \binom{m}{n}$ for $0 \leq n \leq m$, and $\Lambda^n V = 0$ for $n > m$. In particular $\dim \Lambda^n V = \dim \Lambda^{m-n} V$.</p>
 <p><strong>Example.</strong> For $M = R^3$ with basis $e_1, e_2, e_3$, the exterior powers are</p>
@@ -173,22 +173,22 @@ $$</p>
 \Lambda^n(g \circ f) = \Lambda^n g \circ \Lambda^n f
 $$</p>
 <p>for composable linear maps $f : M \to N$ and $g : N \to P$. Hence $M \mapsto \Lambda^n M$, $f \mapsto \Lambda^n f$ is a functor from $R$-modules to $R$-modules. On the top power of a free module of rank $n$, the map $\Lambda^n f$ is multiplication by the determinant of $f$.</p>
-<p><strong>Proof.</strong> Both statements are checked on elementary wedges, which generate; associativity of composition of maps then gives the second. The assertion about the top power is the definition of the determinant given in the companion article. $\square$</p>
+<p><strong>Proof.</strong> Both statements are checked on elementary wedges, which generate; associativity of composition of maps then gives the second. The assertion about the top power is the definition of the determinant given in the companion article.</p>
 <h3 id="direct-sums-and-base-change">Direct Sums and Base Change</h3>
 <p><strong>Theorem.</strong> For all $R$-modules $M, N$ and all $n \geq 0$ there is a natural isomorphism</p>
 <p>$$
 \Lambda^n(M \oplus N) \cong \bigoplus_{p + q = n} \Lambda^p M \otimes_R \Lambda^q N,
 $$</p>
 <p>the map from the right to the left being $(u, v) \mapsto u \wedge v$ on each summand.</p>
-<p><strong>Proof.</strong> The map sending $(m, n) \in M \oplus N$ to $m \otimes 1 + 1 \otimes n$ in the graded tensor product $\Lambda(M) \hat{\otimes} \Lambda(N)$ is a linear map out of $M \oplus N$ whose image anticommutes, so it extends to a homomorphism of graded algebras $\Lambda(M \oplus N) \to \Lambda(M) \hat{\otimes} \Lambda(N)$. In degree $n$ this is the displayed map. Both sides are generated in each degree by elementary terms, and the relation $(m_1 + n_1) \wedge \cdots (m_n + n_n)$, expanded by multilinearity, expresses every wedge in $M \oplus N$ through wedges in $M$ and $N$; counting ranks over a free module, where both sides are free of rank $\binom{m + r}{n} = \sum_{p+q=n} \binom{m}{p}\binom{r}{q}$ by Vandermonde's identity, shows that the map is an isomorphism there. For general modules the natural transformation obtained is an isomorphism because both sides are right exact functors of $M$ and of $N$ — the power $\Lambda^n$ by the right-exactness proposition above, and the sum of tensor products because tensor product and direct sum are right exact — and a natural transformation between right exact functors that is an isomorphism on free modules is an isomorphism. $\square$</p>
+<p><strong>Proof.</strong> The map sending $(m, n) \in M \oplus N$ to $m \otimes 1 + 1 \otimes n$ in the graded tensor product $\Lambda(M) \hat{\otimes} \Lambda(N)$ is a linear map out of $M \oplus N$ whose image anticommutes, so it extends to a homomorphism of graded algebras $\Lambda(M \oplus N) \to \Lambda(M) \hat{\otimes} \Lambda(N)$. In degree $n$ this is the displayed map. Both sides are generated in each degree by elementary terms, and the relation $(m_1 + n_1) \wedge \cdots (m_n + n_n)$, expanded by multilinearity, expresses every wedge in $M \oplus N$ through wedges in $M$ and $N$; counting ranks over a free module, where both sides are free of rank $\binom{m + r}{n} = \sum_{p+q=n} \binom{m}{p}\binom{r}{q}$ by Vandermonde's identity, shows that the map is an isomorphism there. For general modules the natural transformation obtained is an isomorphism because both sides are right exact functors of $M$ and of $N$ — the power $\Lambda^n$ by the right-exactness proposition above, and the sum of tensor products because tensor product and direct sum are right exact — and a natural transformation between right exact functors that is an isomorphism on free modules is an isomorphism.</p>
 <p><strong>Proposition (base change).</strong> Let $R \to S$ be a ring homomorphism and let $M$ be an $R$-module. Then there is a natural isomorphism of $S$-modules</p>
 <p>$$
 \Lambda^n(M \otimes_R S) \cong \Lambda^n M \otimes_R S.
 $$</p>
-<p><strong>Proof.</strong> Both sides represent the same functor: an $S$-linear map $\Lambda^n M \otimes_R S \to P$ corresponds, by the tensor–hom adjunction, to an $R$-linear map $\Lambda^n M \to P$, equivalently to an alternating $R$-multilinear map $M^n \to P$, equivalently to an alternating $S$-multilinear map $(M \otimes_R S)^n \to P$. $\square$</p>
+<p><strong>Proof.</strong> Both sides represent the same functor: an $S$-linear map $\Lambda^n M \otimes_R S \to P$ corresponds, by the tensor–hom adjunction, to an $R$-linear map $\Lambda^n M \to P$, equivalently to an alternating $R$-multilinear map $M^n \to P$, equivalently to an alternating $S$-multilinear map $(M \otimes_R S)^n \to P$.</p>
 <h3 id="right-exactness">Right Exactness</h3>
 <p><strong>Proposition.</strong> The functor $\Lambda^n$ preserves surjections: if $f : M \to N$ is surjective, so is $\Lambda^n f$. More generally $\Lambda^n$ is right exact.</p>
-<p><strong>Proof.</strong> Write $\Lambda^n M$ as the quotient of $M^{\otimes n}$ by $D_n$ and observe that the tensor power functor is right exact. A surjection $f$ induces a surjection $M^{\otimes n} \to N^{\otimes n}$, and the image of $D_n(M)$ under $f^{\otimes n}$ lies in $D_n(N)$; hence the induced map of quotients $\Lambda^n M \to \Lambda^n N$ is surjective. The stronger statement that $\Lambda^n$ preserves arbitrary cokernels is the standard right exactness of exterior powers, proved by the same reduction to the tensor power together with the identification of $D_n(N)$ with the image of $D_n(M)$. $\square$</p>
+<p><strong>Proof.</strong> Write $\Lambda^n M$ as the quotient of $M^{\otimes n}$ by $D_n$ and observe that the tensor power functor is right exact. A surjection $f$ induces a surjection $M^{\otimes n} \to N^{\otimes n}$, and the image of $D_n(M)$ under $f^{\otimes n}$ lies in $D_n(N)$; hence the induced map of quotients $\Lambda^n M \to \Lambda^n N$ is surjective. The stronger statement that $\Lambda^n$ preserves arbitrary cokernels is the standard right exactness of exterior powers, proved by the same reduction to the tensor power together with the identification of $D_n(N)$ with the image of $D_n(M)$.</p>
 <h2 id="the-top-power-and-alternating-forms">The Top Power and Alternating Forms</h2>
 <p><strong>Definition.</strong> An <strong>alternating form of degree $n$</strong> on $M$ with values in $R$ is an element of</p>
 <p>$$

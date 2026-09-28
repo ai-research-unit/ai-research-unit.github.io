@@ -81,7 +81,7 @@ $$</p>
 <p><strong>(c)</strong> bi-Lipschitz invariance: if $f$ is bi-Lipschitz then $\dim_B f(E) = \dim_B E$;</p>
 <p><strong>(d)</strong> for bounded $E_1, E_2$, $\overline{\dim}_B(E_1 \times E_2) \leq \overline{\dim}_B E_1 + \overline{\dim}_B E_2$;</p>
 <p><strong>(e)</strong> countable sets can have positive box dimension, and the box dimensions are not countably stable.</p>
-<p><strong>Proof sketch.</strong> (a) and (b) are the corresponding properties of the covering number, a cover of the union being the union of the covers; (c) follows because a bi-Lipschitz map changes the covering number by at most a power factor; (d) is the product of covers; (e) is the example below. $\square$</p>
+<p><strong>Proof sketch.</strong> (a) and (b) are the corresponding properties of the covering number, a cover of the union being the union of the covers; (c) follows because a bi-Lipschitz map changes the covering number by at most a power factor; (d) is the product of covers; (e) is the example below.</p>
 <p><strong>Example (a countable set of box dimension $\tfrac{1}{2}$).</strong> Let $E = \{0\}\cup\{1/n : n \geq 1\} \subseteq \mathbb{R}$. The set is countable, hence of Hausdorff dimension zero. To compute its covering number, fix $\delta$; the points $1/n$ with $1/n \geq \sqrt{\delta}$ number about $\delta^{-1/2}$ and are pairwise farther apart than $\delta$, so each needs its own set, while the remaining points, which lie in $[0,\sqrt{\delta}]$, are covered by about $\sqrt{\delta}/\delta = \delta^{-1/2}$ sets of diameter $\delta$. Hence $N(E, \delta) \asymp \delta^{-1/2}$ and</p>
 <p>$$
 \dim_B E = \lim_{\delta \to 0}\frac{\log\bigl(c\,\delta^{-1/2}\bigr)}{\log(1/\delta)} = \frac{1}{2} .
@@ -104,13 +104,13 @@ $$</p>
 <p><strong>(b)</strong> countable stability: $\dim_H\bigl(\bigcup_{i=1}^\infty E_i\bigr) = \sup_i \dim_H E_i$;</p>
 <p><strong>(c)</strong> $\dim_H E = 0$ for every countable $E$;</p>
 <p><strong>(d)</strong> Hölder invariance: if $f$ is Hölder of exponent $\alpha$ then $\dim_H f(E) \leq \dim_H E/\alpha$; in particular a Lipschitz map does not increase the Hausdorff dimension, and a bi-Lipschitz map preserves it.</p>
-<p><strong>Proof sketch.</strong> (a) is immediate from the covers. (b) is the countable subadditivity of $\mathcal{H}^s$, with the reverse inequality from (a). (c) follows because a point has dimension zero and a countable union is countably stable. (d) follows because the image of a $\delta$-cover under a Hölder map is a $c\delta^\alpha$-cover whose contribution to the $s$-content picks up the factor $\delta^{s\alpha}$, and the two exponents must balance. $\square$</p>
+<p><strong>Proof sketch.</strong> (a) is immediate from the covers. (b) is the countable subadditivity of $\mathcal{H}^s$, with the reverse inequality from (a). (c) follows because a point has dimension zero and a countable union is countably stable. (d) follows because the image of a $\delta$-cover under a Hölder map is a $c\delta^\alpha$-cover whose contribution to the $s$-content picks up the factor $\delta^{s\alpha}$, and the two exponents must balance.</p>
 <p><strong>Theorem (comparison).</strong> For every bounded set $E$,</p>
 <p>$$
 \dim_H E \leq \underline{\dim}_B E \leq \overline{\dim}_B E ,
 $$</p>
 <p>and the inequalities can be strict on both sides. The Hausdorff dimension is countably stable and the box dimension is not; equality holds for the self-similar sets satisfying the open set condition, below.</p>
-<p><strong>Proof sketch.</strong> Covering $E$ by $N(E,\delta)$ sets of diameter $\delta$ gives $\mathcal{H}^s_\delta(E) \leq N(E,\delta)\delta^s$, which tends to $0$ for $s > \underline{\dim}_B E$; hence $\dim_H E \leq \underline{\dim}_B E$. $\square$</p>
+<p><strong>Proof sketch.</strong> Covering $E$ by $N(E,\delta)$ sets of diameter $\delta$ gives $\mathcal{H}^s_\delta(E) \leq N(E,\delta)\delta^s$, which tends to $0$ for $s > \underline{\dim}_B E$; hence $\dim_H E \leq \underline{\dim}_B E$.</p>
 <p><strong>Example (the strictness of the first inequality).</strong> The set $E = \{0\} \cup \{1/n\}$ of the previous section has $\dim_H E = 0 < \tfrac12 = \dim_B E$; the set of irrationals in a bounded interval has $\dim_H = 1 = \dim_B$; the set of rationals in a bounded interval has $\dim_H = 0$ and $\dim_B = 1$, so the second inequality is strict as well.</p>
 <h2 id="self-similar-sets">Self-Similar Sets</h2>
 <h3 id="iterated-function-systems">Iterated Function Systems</h3>
@@ -128,14 +128,14 @@ $$</p>
 \Lambda = \bigcap_{k=1}^\infty \bigcup_{|i| = k} f_{i_1}\circ\cdots\circ f_{i_k}(X) ,
 $$</p>
 <p>where the union is over the words of length $k$.</p>
-<p><strong>Proof sketch.</strong> On the set $\mathcal{K}(X)$ of nonempty compact subsets of $X$ with the Hausdorff distance, the map $F(S) = \bigcup_i f_i(S)$ is a contraction with ratio $\max_i r_i < 1$, and $\mathcal{K}(X)$ is complete, so the contraction mapping theorem of <em>Metric, Uniform and Complete Spaces</em> gives a unique fixed point; the explicit intersection is the image of the fixed point under the iteration. $\square$</p>
+<p><strong>Proof sketch.</strong> On the set $\mathcal{K}(X)$ of nonempty compact subsets of $X$ with the Hausdorff distance, the map $F(S) = \bigcup_i f_i(S)$ is a contraction with ratio $\max_i r_i < 1$, and $\mathcal{K}(X)$ is complete, so the contraction mapping theorem of <em>Metric, Uniform and Complete Spaces</em> gives a unique fixed point; the explicit intersection is the image of the fixed point under the iteration.</p>
 <p><strong>Definition (the open set condition).</strong> The system satisfies the <strong>open set condition</strong> if there is a nonempty bounded open set $V$ with $\bigcup_{i=1}^m f_i(V) \subseteq V$ and the images $f_i(V)$ pairwise disjoint.</p>
 <p><strong>Theorem (Moran, Hutchinson).</strong> Let $f_1,\ldots,f_m$ be a self-similar IFS on $\mathbb{R}^n$ satisfying the open set condition. Then</p>
 <p>$$
 \dim_H \Lambda = \dim_B \Lambda = s, \qquad \sum_{i=1}^m r_i^{\,s} = 1 ,
 $$</p>
 <p>and $0 < \mathcal{H}^s(\Lambda) < \infty$.</p>
-<p><strong>Proof sketch.</strong> The open set condition arranges that the $k$-th level pieces $f_{i_1}\circ\cdots\circ f_{i_k}(V)$ are disjoint and each is a scaled copy of $V$, so the cover of $\Lambda$ by the level-$k$ pieces is close to optimal; the upper bound on the dimension is the count $\sum_{|i|=k}(\operatorname{diam} f_{i_1}\cdots f_{i_k}(V))^s \leq (\operatorname{diam}V)^s(\sum_i r_i^s)^k$, which stays bounded exactly at the root $s$, and the lower bound uses the disjointness and the mass distribution principle, which is the measure-theoretic input of Part III quoted here only in its covering form. $\square$</p>
+<p><strong>Proof sketch.</strong> The open set condition arranges that the $k$-th level pieces $f_{i_1}\circ\cdots\circ f_{i_k}(V)$ are disjoint and each is a scaled copy of $V$, so the cover of $\Lambda$ by the level-$k$ pieces is close to optimal; the upper bound on the dimension is the count $\sum_{|i|=k}(\operatorname{diam} f_{i_1}\cdots f_{i_k}(V))^s \leq (\operatorname{diam}V)^s(\sum_i r_i^s)^k$, which stays bounded exactly at the root $s$, and the lower bound uses the disjointness and the mass distribution principle, which is the measure-theoretic input of Part III quoted here only in its covering form.</p>
 <h3 id="the-standard-examples">The Standard Examples</h3>
 <p><strong>Example (the middle-thirds Cantor set).</strong> Let $f_1, f_2 : \mathbb{R}\to\mathbb{R}$ be $f_1(x) = x/3$ and $f_2(x) = x/3 + 2/3$; the attractor is the middle-thirds Cantor set $\Lambda$. The ratios are $r_1 = r_2 = 1/3$, so the similarity dimension solves $2\cdot 3^{-s} = 1$, giving</p>
 <p>$$
@@ -168,7 +168,7 @@ $$</p>
 \dim_H(E_1\times E_2) \geq \dim_H E_1 + \dim_H E_2 , \qquad \dim_H(E_1\times E_2) \leq \dim_H E_1 + \overline{\dim}_B E_2 ,
 $$</p>
 <p>and the first inequality can be strict; the box dimension satisfies $\overline{\dim}_B(E_1\times E_2) \leq \overline{\dim}_B E_1 + \overline{\dim}_B E_2$.</p>
-<p><strong>Proof sketch.</strong> The upper bound is the product of covers; the lower bound is the Marstrand product theorem, whose proof uses a Fubini-type argument with the Hausdorff measure and therefore belongs to Part III, quoted here as standard. $\square$</p>
+<p><strong>Proof sketch.</strong> The upper bound is the product of covers; the lower bound is the Marstrand product theorem, whose proof uses a Fubini-type argument with the Hausdorff measure and therefore belongs to Part III, quoted here as standard.</p>
 <p><strong>Remark (the local structure, deferred).</strong> For a self-similar attractor $\Lambda$ with the open set condition, the local dimension at a point — the exponent of the growth of the Hausdorff content of $\Lambda \cap B(x, r)$ as $r \to 0$ — equals the global dimension $s$ at almost every point, the exception set being of vanishing content; the precise statement, its almost-everywhere qualifier and its proof require the Hausdorff measure as a measure and the mass distribution principle in full, and they are therefore given in Part III, where the measure and the limit are available. The attractor is the repeller of a map on the ambient space, the coding by the shift makes it a subshift of finite type, and the local dimension is computed from the entropy of the shift and the Lyapunov exponent of the map, which are the invariants of the dynamical systems of Part III.</p>
 <p><strong>Remark (the topological dimension and the fractal dimension).</strong> The <strong>topological (covering) dimension</strong> $\dim_{top}$ of <em>Dimension Theory</em>, written in parallel, is the largest integer $n$ such that every finite open cover has a refinement of order $n+1$, and it is a topological invariant. The <strong>fractal dimensions</strong> satisfy</p>
 <p>$$

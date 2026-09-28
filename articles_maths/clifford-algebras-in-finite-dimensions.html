@@ -125,7 +125,7 @@ $$</p>
 <li>For $v \in W$, $r \in \mathrm{rad}(Q)$: $v r + r v = 2 B(v, r) \cdot 1 = 0$.</li>
 <li>For $r, s \in \mathrm{rad}(Q)$: $r s + s r = 2 B(r, s) \cdot 1 = 0$.</li>
 </ul>
-<p>The first family generates $Cl(W, Q|_W) \cong Cl(M/\mathrm{rad}(Q), \bar{Q})$. The third family generates $\Lambda(\mathrm{rad}(Q))$, since $r^2 = 0$ and $r s = -s r$. The second family says that the generators of $W$ and the generators of $\mathrm{rad}(Q)$ anticommute, which is the graded tensor product relation. So the algebra is the graded tensor product of the two. $\square$</p>
+<p>The first family generates $Cl(W, Q|_W) \cong Cl(M/\mathrm{rad}(Q), \bar{Q})$. The third family generates $\Lambda(\mathrm{rad}(Q))$, since $r^2 = 0$ and $r s = -s r$. The second family says that the generators of $W$ and the generators of $\mathrm{rad}(Q)$ anticommute, which is the graded tensor product relation. So the algebra is the graded tensor product of the two.</p>
 <p>The isomorphism is not canonical: it depends on the choice of complement $W$.</p>
 <p><strong>Key difference from the field case.</strong> Over a field, every module is free, so the complement always exists. Over a general commutative ring, the module need not be free, and the complement need not exist. The decomposition holds under the additional hypothesis that the radical is a direct summand.</p>
 <h2 id="7-the-non-degenerate-factor">7. The Non-Degenerate Factor</h2>
@@ -143,7 +143,7 @@ r_i^2 = 0, \qquad r_i r_j = -r_j r_i, \qquad i \neq j.
 $$</p>
 <p>So $\Lambda(\mathrm{rad}(Q))$ is a graded-commutative algebra, and every element of positive degree is nilpotent.</p>
 <p><strong>Theorem.</strong> For a field $R$, the algebra $\Lambda(\mathrm{rad}(Q))$ is semisimple iff $\mathrm{rad}(Q) = 0$.</p>
-<p><strong>Proof.</strong> If $\mathrm{rad}(Q) \neq 0$, the ideal $\Lambda^{\geq 1}(\mathrm{rad}(Q))$ is a non-zero nilpotent ideal (the rank is finite here), so the algebra is not semisimple. If $\mathrm{rad}(Q) = 0$, the algebra is $R$, which is semisimple when $R$ is a field. $\square$</p>
+<p><strong>Proof.</strong> If $\mathrm{rad}(Q) \neq 0$, the ideal $\Lambda^{\geq 1}(\mathrm{rad}(Q))$ is a non-zero nilpotent ideal (the rank is finite here), so the algebra is not semisimple. If $\mathrm{rad}(Q) = 0$, the algebra is $R$, which is semisimple when $R$ is a field.</p>
 <p>So the degenerate Clifford algebra is semisimple iff the quadratic form is non-degenerate, under the usual hypotheses on the base ring.</p>
 <p><strong>The structure of $\Lambda(\mathrm{rad}(Q))$.</strong> Since $M$ has finite rank, $\mathrm{rad}(Q)$ is free of finite rank $r$, and $\Lambda(\mathrm{rad}(Q))$ is free of rank $2^r$. It is local when the base ring is a field, with unique maximal ideal $\Lambda^{\geq 1}(\mathrm{rad}(Q))$; over a non-local ring it need not be local, since the base ring then contributes further maximal ideals.</p>
 <h2 id="9-the-rank-of-a-degenerate-clifford-algebra">9. The Rank of a Degenerate Clifford Algebra</h2>
@@ -181,11 +181,11 @@ $$</p>
 <p>$$
 [M_2, M_2] \subseteq M_2.
 $$</p>
-<p>So $M_2$, equipped with the commutator bracket, is a Lie subalgebra of $Cl(M, Q)$. In the non-degenerate case, $M_2$ is isomorphic to the orthogonal Lie algebra $\mathfrak{so}(M, Q)$:</p>
+<p>So $M_2$, equipped with the commutator bracket, is a Lie subalgebra of $Cl(M, Q)$. In the non-degenerate case, $M_2$ is isomorphic to the orthogonal Lie algebra $\mathrm{SO}(M, Q)$:</p>
 <p>$$
-M_2 \cong \mathfrak{so}(M, Q).
+M_2 \cong \mathrm{SO}(M, Q).
 $$</p>
-<p><strong>The degenerate case.</strong> If $Q$ is degenerate, the bivectors involving radical elements are nilpotent, and the Lie algebra $\mathfrak{so}(M, Q)$ is replaced by a more complicated object. The spin group does not exist in the usual sense, because the radical elements do not have inverses. The bivectors involving radical elements generate a nilpotent ideal in $M_2$, and the quotient of $M_2$ by this ideal is the Lie algebra of the non-degenerate part.</p>
+<p><strong>The degenerate case.</strong> If $Q$ is degenerate, the bivectors involving radical elements are nilpotent, and the Lie algebra $\mathrm{SO}(M, Q)$ is replaced by a more complicated object. The spin group does not exist in the usual sense, because the radical elements do not have inverses. The bivectors involving radical elements generate a nilpotent ideal in $M_2$, and the quotient of $M_2$ by this ideal is the Lie algebra of the non-degenerate part.</p>
 <hr />
 <h1 id="part-iii-basis-and-rank-in-the-non-degenerate-case">Part III: Basis and Rank in the Non-Degenerate Case</h1>
 <h2 id="12-basis">12. Basis</h2>
@@ -206,7 +206,7 @@ $$</p>
 <p>since there is one basis element of degree 0 (the unit), $n$ of degree 1 (the generators), $\binom{n}{2}$ of degree 2, and so on, up to one basis element of degree $n$ (the product of all generators).</p>
 <p>This is true over any commutative ring. The rank does not depend on the ring, only on $n = \operatorname{rank} M$.</p>
 <p><strong>Key difference from the field case.</strong> Over a field, the rank is the dimension, and it is well-defined. Over a general commutative ring, the Clifford algebra is free of rank $2^n$ only if the module $M$ is free of rank $n$. If $M$ is not free, the Clifford algebra need not be free, and its rank may not be well-defined.</p>
-<h2 id="14-math185-vectors-and-multivectors">14. $k$-Vectors and Multivectors</h2>
+<h2 id="14-math183-vectors-and-multivectors">14. $k$-Vectors and Multivectors</h2>
 <p>The elements of degree $k$ are called <strong>$k$-vectors</strong>. The elements of degree 0 are scalars, the elements of degree 1 are vectors, the elements of degree 2 are <strong>bivectors</strong>, the elements of degree 3 are <strong>trivectors</strong>, and so on. Elements that are sums of $k$-vectors of different degrees are called <strong>multivectors</strong>.</p>
 <h2 id="15-the-volume-element">15. The Volume Element</h2>
 <p>Let $e_1, \ldots, e_n$ be an <strong>orthogonal</strong> basis, one with $B(e_i, e_j) = 0$ for $i \neq j$, so that the generators anticommute; such a basis exists whenever the form is diagonalizable (§26), in particular over a field, but not over a general commutative ring. The product of all basis generators</p>

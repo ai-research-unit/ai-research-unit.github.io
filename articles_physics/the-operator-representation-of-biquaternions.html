@@ -52,14 +52,14 @@
       <div class="article-body">
         <h1 id="the-operator-representation-of-biquaternions"><strong>The Operator Representation of Biquaternions</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>The polar articles take a single biquaternion and factor it: they write $\tilde{Q} = re^{i\alpha}B\hat{q}$ and read the four factors as a scale, a central phase, a boost and a rotation. This article takes a single biquaternion and lets it <strong>act</strong>. The carrier is the algebra itself, regarded as an eight-dimensional real vector space, and an element of unit norm form acts on it by the sandwich</p>
+<p>The polar articles take a single biquaternion and factor it: they write $\tilde{Q} = re^{i\alpha}B\hat{q}$ and read the four factors as a scale, a central phase, a boost and a rotation. This article takes a single biquaternion and lets it <strong>act</strong>. The carrier is the algebra itself, regarded as an eight-dimensional real vector space, and an element of unit norm acts on it by the sandwich</p>
 <p>$$
 x \longmapsto \tilde{\Lambda}\,x\,\tilde{\Lambda}^\dagger ,
 $$</p>
 <p>the map the series calls <strong>rotor conjugation</strong> for a rotor, extended here from the unit-norm rotors to the arbitrary units of the algebra. The dagger is not a convenience of notation: a two-sided sandwich $x \mapsto AxB$ carries the Hermitian sector into itself exactly when $B$ is a real multiple of $A^\dagger$, so a Lorentz transformation, which must respect the sectors, can only take the dagger form; the sandwich is the single subject of the article.</p>
 <p>Rotor conjugation is not new to the series. It is the four-vector action of the Lorentz group articles, identified there as a covering homomorphism; what the operator reading adds is that the same map is a representation on the whole algebra rather than on the material sector alone, that it has a kernel visible only on the whole algebra, and that its action on the six subspaces of the framework follows from the dagger that defines it.</p>
-<p>Four results organise the article, and each is verified numerically. The sandwich preserves the two sectors and <strong>no other</strong> of the six subspaces, and it scales the norm form by $|N(\tilde{Q})|^2$, so that on the unit-norm slice it is the Lorentz action, with kernel $\{\pm e_0\}$ on the material sector and the central circle on the whole algebra. It carries a four-position to its rest frame; its rotation form doubles the half-angle of the rotors and its boost form does not. It preserves the product of two elements of the algebra exactly when the acting element is unitary, that is exactly when it fixes the time axis; a boost therefore preserves the interval and not the product, and that single fact is the algebra's form of the relativity of simultaneity. And the operators compose as the elements do, so the Wigner rotation of two successive boosts is the rotor factor of the product, which the article computes in closed form.</p>
-<p>The conventions are those of <em>Conventions in the Biquaternion Universe</em>. The algebra is $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0, e_1, e_2, e_3$ and complex coefficients; the norm form is $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$; a <strong>rotor</strong> is an element of unit norm form, so that $\tilde{\Lambda}\bar{\tilde{\Lambda}} = e_0$ and $\tilde{\Lambda}^\dagger = \bar{\tilde{\Lambda}}^{*}$; a <strong>real unit quaternion</strong> is a rotor with real coefficients, lying in $\mathbb{H}_{\mathbb{B}}$, and it is the element of the rotation group. The six subspaces are $\mathbb{C}_{\mathbb{B}}$, $\mathrm{Vect}(\mathbb{B})$, $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$ and $\mathbb{M}_-$, with definitions and intersections in <em>Relations Between Subspaces</em>. Every identity quoted below was recomputed in double precision on random elements, and the residuals are below $10^{-11}$.</p>
+<p>Four results organise the article, and each is verified numerically. The sandwich preserves the two sectors and <strong>no other</strong> of the six subspaces, and it scales the biquaternion norm by $|N(\tilde{Q})|^2$, so that on the unit-norm slice it is the Lorentz action, with kernel $\{\pm e_0\}$ on the material sector and the central circle on the whole algebra. It carries a four-position to its rest frame; its rotation form doubles the half-angle of the rotors and its boost form does not. It preserves the product of two elements of the algebra exactly when the acting element is unitary, that is exactly when it fixes the time axis; a boost therefore preserves the interval and not the product, and that single fact is the algebra's form of the relativity of simultaneity. And the operators compose as the elements do, so the Wigner rotation of two successive boosts is the rotor factor of the product, which the article computes in closed form.</p>
+<p>The conventions are those of <em>Conventions in the Biquaternion Universe</em>. The algebra is $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0, e_1, e_2, e_3$ and complex coefficients; the biquaternion norm is $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$; a <strong>rotor</strong> is an element of unit norm, so that $\tilde{\Lambda}\bar{\tilde{\Lambda}} = e_0$ and $\tilde{\Lambda}^\dagger = \bar{\tilde{\Lambda}}^{*}$; a <strong>real unit quaternion</strong> is a rotor with real coefficients, lying in $\mathbb{H}_{\mathbb{B}}$, and it is the element of the rotation group. The six subspaces are $\mathbb{C}_{\mathbb{B}}$, $\mathrm{Vect}(\mathbb{B})$, $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$ and $\mathbb{M}_-$, with definitions and intersections in <em>Relations Between Subspaces</em>. Every identity quoted below was recomputed in double precision on random elements, and the residuals are below $10^{-11}$.</p>
 <h2 id="the-sandwich">The Sandwich</h2>
 <h3 id="left-multiplication-as-the-reference">Left Multiplication as the Reference</h3>
 <p>The simplest way to make an element act is to multiply by it, $x \mapsto \tilde{Q}x$. That map is the regular representation, it is faithful, and its matrix is the $4 \times 4$ regular matrix of the companion article. It is recorded here only as the reference column of the comparison table below, since it is an algebra endomorphism rather than an automorphism and it does not preserve the sector structure either.</p>
@@ -72,7 +72,7 @@ $$</p>
 <p>$$
 \operatorname{H}_{\tilde{\Lambda}}(x) = \tilde{\Lambda}\,x\,\tilde{\Lambda}^\dagger .
 $$</p>
-<p>Since $\tilde{\Lambda}^\dagger = \bar{\tilde{\Lambda}}^{*}$, and the two involutions commute with the norm form in the way the following sections record, rotor conjugation is the map those articles write as the action of a rotor on a four-vector, now regarded as a map on the whole algebra. Off the rotor slice the sandwich multiplies the interval by the positive factor $|N(\tilde{Q})|^2$ and is a similarity rather than an isometry; on the rotor slice it is the Lorentz action itself.</p>
+<p>Since $\tilde{\Lambda}^\dagger = \bar{\tilde{\Lambda}}^{*}$, and the two involutions commute with the biquaternion norm in the way the following sections record, rotor conjugation is the map those articles write as the action of a rotor on a four-vector, now regarded as a map on the whole algebra. Off the rotor slice the sandwich multiplies the interval by the positive factor $|N(\tilde{Q})|^2$ and is a similarity rather than an isometry; on the rotor slice it is the Lorentz action itself.</p>
 <h3 id="the-comparison-table">The Comparison Table</h3>
 <div class="table-scroll"><table>
 <thead>
@@ -94,7 +94,7 @@ $$</p>
 <td>$\tilde{Q}\tilde{Q}^\dagger$, in $\mathbb{M}_+$</td>
 </tr>
 <tr>
-<td>preserves the norm form</td>
+<td>preserves the biquaternion norm</td>
 <td>scales by $N(\tilde{Q})$</td>
 <td>scales by $|N(\tilde{Q})|^2$</td>
 </tr>
@@ -128,16 +128,16 @@ $$</p>
 <p>Left multiplication is recorded for comparison only, as the regular representation of the companion article. The last two lines are the content of the article: the sandwich is the Lorentz action, and it conserves the interval in place of the product.</p>
 <h2 id="the-sandwich-is-the-lorentz-action">The Sandwich Is the Lorentz Action</h2>
 <h3 id="on-the-material-sector">On the Material Sector</h3>
-<p>Rotor conjugation is the four-vector action of the series, and the identification is established in <em>The Lorentz Group as Biquaternion Norm-Form Automorphisms</em> and <em>The Lorentz Group in Biquaternionic Form</em>; what is needed here are the three properties, each of which transfers a fact about the norm form to the operator language.</p>
+<p>Rotor conjugation is the four-vector action of the series, and the identification is established in <em>The Lorentz Group as Biquaternion Norm Automorphisms</em> and <em>The Lorentz Group in Biquaternionic Form</em>; what is needed here are the three properties, each of which transfers a fact about the biquaternion norm to the operator language.</p>
 <p><strong>Proposition.</strong> For every rotor $\tilde{\Lambda}$, $\operatorname{H}_{\tilde{\Lambda}}$ maps $\mathbb{M}_-$ to itself, maps $\mathbb{M}_+$ to itself, and satisfies $N\big(\operatorname{H}_{\tilde{\Lambda}}(x)\big) = |N(\tilde{\Lambda})|^2N(x) = N(x)$.</p>
-<p><strong>Proof.</strong> For $x^\dagger = \pm x$, the image satisfies $\left(\tilde{\Lambda}x\tilde{\Lambda}^\dagger\right)^\dagger = \tilde{\Lambda}x^\dagger\tilde{\Lambda}^\dagger = \pm\tilde{\Lambda}x\tilde{\Lambda}^\dagger$, which gives both sector statements. For the norm form, multiplicativity gives $N(\operatorname{H}_{\tilde{\Lambda}}x) = N(\tilde{\Lambda})N(x)N(\tilde{\Lambda}^\dagger)$, and $N(\tilde{\Lambda}^\dagger) = \overline{N(\tilde{\Lambda})}$ because $\dagger$ is the composite of $\bar{\phantom{Q}}$, which fixes $N$, with ${}^{*}$, which conjugates it; with $N(\tilde{\Lambda}) = 1$ the factor is one. $\square$</p>
+<p><strong>Proof.</strong> For $x^\dagger = \pm x$, the image satisfies $\left(\tilde{\Lambda}x\tilde{\Lambda}^\dagger\right)^\dagger = \tilde{\Lambda}x^\dagger\tilde{\Lambda}^\dagger = \pm\tilde{\Lambda}x\tilde{\Lambda}^\dagger$, which gives both sector statements. For the biquaternion norm, multiplicativity gives $N(\operatorname{H}_{\tilde{\Lambda}}x) = N(\tilde{\Lambda})N(x)N(\tilde{\Lambda}^\dagger)$, and $N(\tilde{\Lambda}^\dagger) = \overline{N(\tilde{\Lambda})}$ because $\dagger$ is the composite of $\bar{\phantom{Q}}$, which fixes $N$, with ${}^{*}$, which conjugates it; with $N(\tilde{\Lambda}) = 1$ the factor is one.</p>
 <p>The proposition is the mathematical content of the statement that a rotor is a Lorentz transformation of the material sector, and of the Hermitian sector as well: the informational sector is carried to itself by the same action, which is the operator form of the statement that a Lorentz transformation acts on Hermitian forms exactly as it acts on four-vectors.</p>
-<h3 id="the-norm-form-as-a-scaled-invariant">The Norm Form as a Scaled Invariant</h3>
-<p>Off the unit-norm slice the action is not an isometry but a similarity: $N$ is multiplied by the positive real $|N(\tilde{Q})|^2$. A general unit of $\mathbb{B}$ therefore acts on the two sectors by a transformation that preserves the causal type of every element and rescales the norm form by one fixed positive factor, and the dilations are the real line that the unit-norm condition removes. This is the reason the physics articles restrict to $N(\tilde{\Lambda}) = 1$ without loss: on that slice the dilation is the identity, and nothing else is lost except the central circle, which acts as the identity anyway.</p>
+<h3 id="the-biquaternion-norm-as-a-scaled-invariant">The Biquaternion Norm as a Scaled Invariant</h3>
+<p>Off the unit-norm slice the action is not an isometry but a similarity: $N$ is multiplied by the positive real $|N(\tilde{Q})|^2$. A general unit of $\mathbb{B}$ therefore acts on the two sectors by a transformation that preserves the causal type of every element and rescales the biquaternion norm by one fixed positive factor, and the dilations are the real line that the unit-norm condition removes. This is the reason the physics articles restrict to $N(\tilde{\Lambda}) = 1$ without loss: on that slice the dilation is the identity, and nothing else is lost except the central circle, which acts as the identity anyway.</p>
 <h3 id="the-kernel-on-the-whole-algebra">The Kernel on the Whole Algebra</h3>
 <p>On the four-dimensional material sector the kernel of the sandwich is $\{\pm e_0\}$, and that is the statement of the double cover. On the whole eight-dimensional algebra the kernel is larger, and the difference is a good illustration of what a representation can see that a single submodule cannot.</p>
 <p><strong>Theorem.</strong> $\operatorname{H}_{\tilde{Q}} = \mathrm{id}$ on $\mathbb{B}$ if and only if $\tilde{Q} = e^{i\theta}e_0$.</p>
-<p><strong>Proof.</strong> $\operatorname{H}_{\tilde{Q}}(x) = x$ for all $x$ forces $\tilde{Q}\tilde{Q}^\dagger = e_0$ on taking $x = e_0$, so $\tilde{Q}$ is unitary, and forces $\tilde{Q}x = x\tilde{Q}$ for all $x$, so $\tilde{Q}$ is central; a central unitary is a complex number of modulus one. The converse is immediate. $\square$</p>
+<p><strong>Proof.</strong> $\operatorname{H}_{\tilde{Q}}(x) = x$ for all $x$ forces $\tilde{Q}\tilde{Q}^\dagger = e_0$ on taking $x = e_0$, so $\tilde{Q}$ is unitary, and forces $\tilde{Q}x = x\tilde{Q}$ for all $x$, so $\tilde{Q}$ is central; a central unitary is a complex number of modulus one. The converse is immediate.</p>
 <p>The kernel of the action on the algebra is thus the central circle, of one real dimension, while the action on the material sector has the two-element kernel. Restricting a representation to a submodule can only shrink the kernel, and the two-element kernel of the Lorentz action is what remains of the circle after the sector is taken.</p>
 <h2 id="what-the-sandwich-does-to-the-six-subspaces">What the Sandwich Does to the Six Subspaces</h2>
 <h3 id="the-table">The Table</h3>
@@ -193,7 +193,7 @@ $$</p>
 $$</p>
 <p>acting on the three-dimensional rotation space. For a unitary element the sandwich is multiplicative, hence an automorphism of the algebra, and it preserves all six subspaces, as the table's second column records. <strong>A boost does not preserve the two halves</strong>, and that is the sharpest single way in which the two geometric generators differ.</p>
 <h3 id="a-boost-carries-the-centre-into-the-sectors">A Boost Carries the Centre into the Sectors</h3>
-<p>The failure is worth exhibiting, since the centre is where the algebra's own time axis lives. For the boost rotor of the next section, $\operatorname{H}_{\tilde{\Lambda}}(e_0) = \tilde{\Lambda}^2 = \cosh\psi\,e_0 + i\sinh\psi\,\hat{\mathbf{u}}$, which is Hermitian of norm form one: the unit has been carried from the centre into the informational sector. It is the same computation as the statement that the sandwich moves the time axis, which the section on the product takes up.</p>
+<p>The failure is worth exhibiting, since the centre is where the algebra's own time axis lives. For the boost rotor of the next section, $\operatorname{H}_{\tilde{\Lambda}}(e_0) = \tilde{\Lambda}^2 = \cosh\psi\,e_0 + i\sinh\psi\,\hat{\mathbf{u}}$, which is Hermitian of biquaternion norm one: the unit has been carried from the centre into the informational sector. It is the same computation as the statement that the sandwich moves the time axis, which the section on the product takes up.</p>
 <h2 id="the-operator-of-a-boost">The Operator of a Boost</h2>
 <h3 id="the-boost-rotor">The Boost Rotor</h3>
 <p>The corpus's pure boost along the unit real direction $\hat{\mathbf{u}}$, of rapidity $\psi$, is the rotor</p>
@@ -201,7 +201,7 @@ $$</p>
 \tilde{\Lambda} = \exp\!\left(\frac{\psi}{2}i\hat{\mathbf{u}}\right) = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\,\hat{\mathbf{u}} ,
 \qquad \tanh\psi = \frac{u}{c} ,
 $$</p>
-<p>which is Hermitian, of unit norm form, and lies in the informational sector $\mathbb{M}_+$. The factor of $i$ in its vector part is what distinguishes it from a rotation rotor, for which the vector part is real.</p>
+<p>which is Hermitian, of unit norm, and lies in the informational sector $\mathbb{M}_+$. The factor of $i$ in its vector part is what distinguishes it from a rotation rotor, for which the vector part is real.</p>
 <h3 id="the-four-position-goes-to-the-rest-frame">The Four-Position Goes to the Rest Frame</h3>
 <p>The action of the boost rotor on a four-position is the boost relation of the series. With $\tilde{Q} = ict\,e_0 + \mathbf{x}$ the four-position of a world line of velocity $\mathbf{v}$, and $\tilde{\Lambda}$ the boost rotor along $\hat{\mathbf{v}}$ of rapidity $\psi$ with $\tanh\psi = |\mathbf{v}|/c$,</p>
 <p>$$
@@ -236,7 +236,7 @@ $$</p>
 \operatorname{H}_{\tilde{Q}}(xy) = \operatorname{H}_{\tilde{Q}}(x)\,\operatorname{H}_{\tilde{Q}}(y) \qquad \text{for all } x, y ,
 $$</p>
 <p>if and only if $\tilde{Q}$ is unitary, $\tilde{Q}^\dagger\tilde{Q} = e_0$; and that is the case exactly when the sandwich fixes the time axis, $\operatorname{H}_{\tilde{Q}}(ie_0) = ie_0$.</p>
-<p><strong>Proof.</strong> The two sides differ only in the middle factor, since $\operatorname{H}_{\tilde{Q}}(x)\operatorname{H}_{\tilde{Q}}(y) = \tilde{Q}x(\tilde{Q}^\dagger\tilde{Q})y\tilde{Q}^\dagger$ while $\operatorname{H}_{\tilde{Q}}(xy) = \tilde{Q}xy\tilde{Q}^\dagger$, so equality for all $x,y$ is equivalent to $\tilde{Q}^\dagger\tilde{Q} = e_0$. In that case $\operatorname{H}_{\tilde{Q}}(ie_0) = i\tilde{Q}\tilde{Q}^\dagger = ie_0$, and conversely $\operatorname{H}_{\tilde{Q}}(ie_0) = i\tilde{Q}\tilde{Q}^\dagger$ equals $ie_0$ only for $\tilde{Q}\tilde{Q}^\dagger = e_0$, which is the same condition. $\square$</p>
+<p><strong>Proof.</strong> The two sides differ only in the middle factor, since $\operatorname{H}_{\tilde{Q}}(x)\operatorname{H}_{\tilde{Q}}(y) = \tilde{Q}x(\tilde{Q}^\dagger\tilde{Q})y\tilde{Q}^\dagger$ while $\operatorname{H}_{\tilde{Q}}(xy) = \tilde{Q}xy\tilde{Q}^\dagger$, so equality for all $x,y$ is equivalent to $\tilde{Q}^\dagger\tilde{Q} = e_0$. In that case $\operatorname{H}_{\tilde{Q}}(ie_0) = i\tilde{Q}\tilde{Q}^\dagger = ie_0$, and conversely $\operatorname{H}_{\tilde{Q}}(ie_0) = i\tilde{Q}\tilde{Q}^\dagger$ equals $ie_0$ only for $\tilde{Q}\tilde{Q}^\dagger = e_0$, which is the same condition.</p>
 <p>The unitary elements are exactly the central multiples of the real unit quaternions, $\tilde{Q} = e^{i\alpha}\hat{q}$, and for those the sandwich is the rotation of the previous section. <strong>A rotation therefore preserves the product and the interval; a boost preserves the interval and no longer the product.</strong></p>
 <h3 id="the-numbers">The Numbers</h3>
 <p>For the boost rotor $\tilde{\Lambda} = \cosh\frac{\psi}{2}e_0 + i\sinh\frac{\psi}{2}\hat{\mathbf{u}}$ the failure is measurable and computable. Along $\hat{\mathbf{u}} = \hat{\mathbf{u}}_3$,</p>
@@ -257,12 +257,12 @@ $$</p>
 <p>Read on the algebra, the statement is that the unit $e_0$ and its scalar imaginary $ie_0$ are not frame-independent objects: they carry the rest frame with them. A rotation leaves both alone, and with them the product of the algebra; a boost carries $ie_0$ to the four-velocity of the moving frame, and no map that does that can respect the multiplication. The interval $N$ is the objective object, and it is exactly what survives.</p>
 <h2 id="orbits-and-the-mass-shell">Orbits and the Mass Shell</h2>
 <h3 id="the-two-invariants">The Two Invariants</h3>
-<p>The sandwich preserves the rank of the matrix image always, and it preserves the norm form itself on the rotor slice; on the material sector it preserves the sign and the vanishing of the norm form of a four-vector, which is what the causal classification needs. These two invariants cut the elements into the classes the physics articles use.</p>
+<p>The sandwich preserves the rank of the matrix image always, and it preserves the biquaternion norm itself on the rotor slice; on the material sector it preserves the sign and the vanishing of the biquaternion norm of a four-vector, which is what the causal classification needs. These two invariants cut the elements into the classes the physics articles use.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
 <th>class</th>
-<th>norm form $N(\tilde{Q})$</th>
+<th>biquaternion norm $N(\tilde{Q})$</th>
 <th>physical reading</th>
 </tr>
 </thead>
@@ -290,17 +290,17 @@ $$</p>
 </tbody>
 </table></div>
 <h3 id="the-mass-shell-and-the-light-cone-as-single-orbits">The Mass Shell and the Light Cone as Single Orbits</h3>
-<p>Two of the classes are single orbits of the Lorentz action, and the statement is the operator form of a familiar one. The non-zero null elements of $\mathbb{M}_-$ are all conjugate under rotor conjugation, which is the statement that the light cone is one geometric object and not a union of cones attached to individual points; and the timelike elements of a fixed norm form are all conjugate, which is the mass shell statement that every four-velocity of a given mass is carried to every other by a Lorentz transformation. A general rotor of $SL(2,\mathbb{C})$ acting on the rest four-velocity $i\,mc\,e_0$ gives</p>
+<p>Two of the classes are single orbits of the Lorentz action, and the statement is the operator form of a familiar one. The non-zero null elements of $\mathbb{M}_-$ are all conjugate under rotor conjugation, which is the statement that the light cone is one geometric object and not a union of cones attached to individual points; and the timelike elements of a fixed biquaternion norm are all conjugate, which is the mass shell statement that every four-velocity of a given mass is carried to every other by a Lorentz transformation. A general rotor of $SL(2,\mathbb{C})$ acting on the rest four-velocity $i\,mc\,e_0$ gives</p>
 <p>$$
 \tilde{\Lambda}\,(imc\,e_0)\,\tilde{\Lambda}^\dagger ,
 $$</p>
-<p>of norm form $N = -m^2c^2$, which is the four-velocity of a massive particle of mass $m$: the orbit of the rest four-velocity is the mass shell. The invariance of $N$ under the action is exactly the on-shell condition, and the reason the mass shell is a single orbit rather than a family of orbits parametrised by direction is that the rotors act transitively on the timelike elements of a fixed norm form.</p>
+<p>of biquaternion norm $N = -m^2c^2$, which is the four-velocity of a massive particle of mass $m$: the orbit of the rest four-velocity is the mass shell. The invariance of $N$ under the action is exactly the on-shell condition, and the reason the mass shell is a single orbit rather than a family of orbits parametrised by direction is that the rotors act transitively on the timelike elements of a fixed biquaternion norm.</p>
 <h3 id="the-rank-and-the-zero-divisors">The Rank and the Zero Divisors</h3>
 <p>The rank-one stratum of the algebra is the set of non-zero elements with $N = 0$, and the corpus calls it the biquaternion null cone; the material-sector part of it is the light cone. Both actions preserve the rank, so no operator can move an element off the cone into an element that is not a zero divisor, and the whole cone is a single orbit of the Lorentz action. The identification of the light cone with the zero-divisor cone, and the use of that identification in the causal structure of the framework, are the subject of <em>The Light Cone as the Biquaternion Zero-Divisor Cone</em>.</p>
 <h2 id="ordering-and-the-wigner-rotor">Ordering and the Wigner Rotor</h2>
 <h3 id="composition-of-operators">Composition of Operators</h3>
 <p><strong>Proposition.</strong> $\operatorname{H}_{\tilde{Q}}\circ\operatorname{H}_{\tilde{R}} = \operatorname{H}_{\tilde{Q}\tilde{R}}$.</p>
-<p><strong>Proof.</strong> $\tilde{Q}(\tilde{R}x\tilde{R}^\dagger)\tilde{Q}^\dagger = (\tilde{Q}\tilde{R})x(\tilde{Q}\tilde{R})^\dagger$. $\square$</p>
+<p><strong>Proof.</strong> $\tilde{Q}(\tilde{R}x\tilde{R}^\dagger)\tilde{Q}^\dagger = (\tilde{Q}\tilde{R})x(\tilde{Q}\tilde{R})^\dagger$.</p>
 <p>The physical consequence is that the operators compose as the elements do, so an operator can be decomposed by decomposing its element. In particular the product of two boosts is a rotor, and the polar representation of that product has a rotor factor: <strong>the Wigner rotation</strong>.</p>
 <h3 id="two-orthogonal-boosts">Two Orthogonal Boosts</h3>
 <p>Take the two pure boosts</p>
@@ -359,15 +359,15 @@ $$</p>
 <p>$$
 \tilde{R}\,\tilde{Q}\,\tilde{R}^\dagger = 2ie_0 + 0.5e_1 + 0.866025404e_2 + 0.5e_3 ,
 $$</p>
-<p>so the temporal and $e_3$ components are untouched and the spatial part is rotated through $\pi/3$ in the $(e_1,e_2)$ plane: the values are $\cos\frac{\pi}{3} = 0.5$ and $\sin\frac{\pi}{3} = 0.866025404$. The norm form is unchanged, $N = -4 + 1 + 0.25 = -2.75$ before and after.</p>
+<p>so the temporal and $e_3$ components are untouched and the spatial part is rotated through $\pi/3$ in the $(e_1,e_2)$ plane: the values are $\cos\frac{\pi}{3} = 0.5$ and $\sin\frac{\pi}{3} = 0.866025404$. The biquaternion norm is unchanged, $N = -4 + 1 + 0.25 = -2.75$ before and after.</p>
 <h3 id="a-boost-rotor-acting-on-a-null-four-vector">A Boost Rotor Acting on a Null Four-Vector</h3>
-<p>With $\tilde{\Lambda} = \frac53e_0 + \frac43ie_3$, of norm form $N = \frac{25}{9} - \frac{16}{9} = 1$ and hence of rapidity $\psi = 2\ln 3$, for which $\beta = \tanh\psi = \frac{40}{41}$, and with the null four-vector $\tilde{Q} = ie_0 + e_1$, the sandwich gives</p>
+<p>With $\tilde{\Lambda} = \frac53e_0 + \frac43ie_3$, of biquaternion norm $N = \frac{25}{9} - \frac{16}{9} = 1$ and hence of rapidity $\psi = 2\ln 3$, for which $\beta = \tanh\psi = \frac{40}{41}$, and with the null four-vector $\tilde{Q} = ie_0 + e_1$, the sandwich gives</p>
 <p>$$
 \operatorname{H}_{\tilde{\Lambda}}(\tilde{Q}) = \frac{41}{9}ie_0 + e_1 - \frac{40}{9}e_3 ,
 \qquad
 \frac{41}{9} = \cosh\psi , \quad \frac{40}{9} = \sinh\psi .
 $$</p>
-<p>The image is anti-Hermitian, so it is again a four-vector, as the sector proposition requires; its norm form is $-\frac{1681}{81} + 1 + \frac{1600}{81} = 0$, so the null vector is still null, as the invariance of the cone requires; and the spatial direction $e_1$, transverse to the boost, is untouched. The numerical values are $\frac{41}{9} = 4.5555\ldots$ and $\frac{40}{9} = 4.4444\ldots$. The example is the boost of the corpus's normalisation with $\beta = \frac{40}{41}$, applied to a lightlike four-vector.</p>
+<p>The image is anti-Hermitian, so it is again a four-vector, as the sector proposition requires; its biquaternion norm is $-\frac{1681}{81} + 1 + \frac{1600}{81} = 0$, so the null vector is still null, as the invariance of the cone requires; and the spatial direction $e_1$, transverse to the boost, is untouched. The numerical values are $\frac{41}{9} = 4.5555\ldots$ and $\frac{40}{9} = 4.4444\ldots$. The example is the boost of the corpus's normalisation with $\beta = \frac{40}{41}$, applied to a lightlike four-vector.</p>
 <h3 id="the-wigner-angle">The Wigner Angle</h3>
 <p>For the two boosts of rapidities $0.7$ and $0.9$ about orthogonal axes, the polar decomposition of the product gives a rotor of angle $0.281950221701$ rad, and</p>
 <p>$$
@@ -382,7 +382,7 @@ $$</p>
 \operatorname{H}_{\tilde{Q}}(x) = \tilde{Q}\,x\,\tilde{Q}^\dagger ,
 $$</p>
 <p>and the sandwich is the Lorentz action of the series written on the whole algebra. Among the two-sided sandwiches it is the only form that preserves the two sectors, and that is why no other form is used.</p>
-<p>It <strong>preserves the two sectors and no other of the six subspaces</strong>, it scales the norm form by $|N(\tilde{Q})|^2$, and on the unit-norm slice it is the action of $SL(2,\mathbb{C})$, with kernel $\{\pm e_0\}$ on the material sector and the central circle on the whole algebra, so that it is blind to the central phase and to nothing else. It carries a four-position to its rest frame, and the mass shell and the light cone are single orbits of it.</p>
+<p>It <strong>preserves the two sectors and no other of the six subspaces</strong>, it scales the biquaternion norm by $|N(\tilde{Q})|^2$, and on the unit-norm slice it is the action of $SL(2,\mathbb{C})$, with kernel $\{\pm e_0\}$ on the material sector and the central circle on the whole algebra, so that it is blind to the central phase and to nothing else. It carries a four-position to its rest frame, and the mass shell and the light cone are single orbits of it.</p>
 <p>The <strong>rotation</strong> form of the sandwich doubles the half-angle of its rotor, preserves all six subspaces, and preserves the product of two elements of the algebra; the <strong>boost</strong> form does not double, and it preserves the interval in place of the product. The two cases are one criterion: the sandwich preserves the product exactly when the acting element is unitary, which is exactly when it fixes the time axis. A boost carries the time axis to the four-velocity of the moving frame, and it is that motion, and not any failure of the formalism, that the relativity of simultaneity expresses.</p>
 <p>The operators compose as their elements do, $\operatorname{H}_{\tilde{Q}}\circ\operatorname{H}_{\tilde{R}} = \operatorname{H}_{\tilde{Q}\tilde{R}}$, so the composite of two boost operators is a boost followed by a rotation — the Wigner rotation — and the closed form of the Wigner angle is the rotor factor of a product of two rotors.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
@@ -400,7 +400,7 @@ $$</p>
 </tr>
 <tr>
 <td>$N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$</td>
-<td>the norm form, the determinant of the matrix image</td>
+<td>the biquaternion norm, the determinant of the matrix image</td>
 </tr>
 <tr>
 <td>$\tilde{\Lambda}$, $N(\tilde{\Lambda}) = 1$</td>
@@ -412,7 +412,7 @@ $$</p>
 </tr>
 <tr>
 <td>$B = \sqrt{\tilde{Q}\tilde{Q}^\dagger}$</td>
-<td>the boost factor, Hermitian positive of unit norm form</td>
+<td>the boost factor, Hermitian positive of unit norm</td>
 </tr>
 <tr>
 <td>$\operatorname{H}_{\tilde{Q}}(x) = \tilde{Q}x\tilde{Q}^\dagger$</td>
@@ -449,7 +449,7 @@ $$</p>
 <li><em>The Polar Representation of Biquaternions</em> (<code>articles_physics/the-polar-representation-of-biquaternions.md</code>), for the four factors of one element</li>
 <li><em>The Polar Representation in Subspaces</em> (<code>articles_physics/the-polar-representation-in-subspaces.md</code>), immediately before the present article in the menu, for the four factors read in the six subspaces</li>
 <li><em>Relations Between Subspaces</em> (<code>articles_physics/relations-between-subspaces.md</code>), for the six subspaces, their intersections and the invariant subspace structure the operators act on</li>
-<li><em>The Lorentz Group as Biquaternion Norm-Form Automorphisms</em> (<code>articles_physics/the-lorentz-group-as-biquaternion-norm-form-automorphisms.md</code>), for rotor conjugation as a homomorphism with kernel $\{\pm e_0\}$ on the material sector</li>
+<li><em>The Lorentz Group as Biquaternion Norm Automorphisms</em> (<code>articles_physics/the-lorentz-group-as-biquaternion-norm-automorphisms.md</code>), for rotor conjugation as a homomorphism with kernel $\{\pm e_0\}$ on the material sector</li>
 <li><em>The Lorentz Group in Biquaternionic Form — Structure and Representations</em> (<code>articles_physics/the-lorentz-group-in-biquaternionic-form-structure-and-representations.md</code>), for the boosts, the rotations and the group structure of the rotors</li>
 <li><em>The Lorentz Transformation as a Biquaternionic Rotation</em> (<code>articles_physics/the-lorentz-transformation-as-a-biquaternionic-rotation.md</code>), for the component formulas of a boost and the relation between a rotor and a four-velocity</li>
 <li><em>The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector</em> (<code>articles_physics/the-hermitian-subspace-m-plus-as-the-informational-sector.md</code>), for the sector that the sandwich preserves</li>

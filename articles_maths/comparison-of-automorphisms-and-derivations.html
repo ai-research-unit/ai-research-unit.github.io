@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comparison of Automorphisms and Derivations — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="comparison-of-automorphisms-and-derivations"><strong>Comparison of Automorphisms and Derivations</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article compares the automorphism group and the derivation space of the eight algebras $\mathbb{R}, \mathbb{C}, \mathbb{D}, \mathbb{D}', \mathbb{H}, \mathbb{H}_{\mathrm{s}}, \mathbb{B}, \mathbb{H}_{\mathbb{D}}$. It states the group, its real dimension and its number of components, its inner and outer parts, the derivation space and its dimension, and whether every derivation is inner, and it reads the inner automorphism groups of the four higher systems as the rotation and Lorentz groups of the invariant form of each algebra, in a table with the eight algebras as columns in the fixed order of <em>The Eight Algebras Compared</em>. Every entry restates a result of the automorphism articles cited in the explanation. The article covers the algebraic transformation data of the eight algebras. The exponential of a one-parameter subgroup and the Lie group structure of the group of units are the subject of <em>Comparison of the Exponential and Lie Group Structure</em>; the factorisation of an element of the unit group is the subject of <em>Comparison of the Polar Representation</em>; and the topology of the group of units is the subject of <em>Comparison of Norms and Invertibility</em>.</p>
+<p>The organising thread is the passage from <strong>finite to continuous transformation groups</strong>. In the two smallest algebras the automorphism group is finite — trivial in $\mathbb{R}$ and the two-element Galois group in $\mathbb{C}$ — and the derivation space vanishes; from $\mathbb{D}'$ onward the invariants become continuous. At the quaternion rung $\operatorname{Aut}$ and $\operatorname{Der}$ are the compact group $SO(3)$ and its Lie algebra, and the last two rungs carry the two six-dimensional real cases that close the ladder: the projective Lorentz group $\operatorname{PGL}(2,\mathbb{C})\rtimes\mathbb{Z}/2$ of $\mathbb{B}$ and the compact product $SO(3)\times SO(3)$ of $\mathbb{H}_{\mathbb{D}}$. The derivation space of a commutative algebra is trivial, so the two invariants measure the non-commutativity of the ladder as a transformation group.</p>
+<h2 id="automorphisms-and-derivations">Automorphisms and Derivations</h2>
+<p>The following table compares the groups of automorphisms and the spaces of derivations of the eight algebras over $\mathbb{R}$: the group, its real dimension and number of components, its outer part, the derivation space and its dimension, and whether every derivation is inner. The eight algebras are the columns, in the fixed order.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>datum</th>
+<th>$\mathbb{R}$</th>
+<th>$\mathbb{C}$</th>
+<th>$\mathbb{D}$</th>
+<th>$\mathbb{D}'$</th>
+<th>$\mathbb{H}$</th>
+<th>$\mathbb{H}_{\mathrm{s}}$</th>
+<th>$\mathbb{B}$</th>
+<th>$\mathbb{H}_{\mathbb{D}}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\operatorname{Aut}$</td>
+<td>trivial</td>
+<td>$\mathbb{Z}/2$</td>
+<td>$\mathbb{Z}/2$</td>
+<td>$\mathbb{R}^{\times}$</td>
+<td>$Sp(1)/\{\pm1\}$</td>
+<td>$\mathrm{PGL}_2(\mathbb{R})$</td>
+<td>$\mathrm{PGL}(2,\mathbb{C})\rtimes\mathbb{Z}/2$</td>
+<td>$(SO(3)\times SO(3))\rtimes\mathbb{Z}/2$</td>
+</tr>
+<tr>
+<td>dimension over $\mathbb{R}$</td>
+<td>$0$</td>
+<td>$0$</td>
+<td>$0$</td>
+<td>$1$</td>
+<td>$3$</td>
+<td>$3$</td>
+<td>$6$</td>
+<td>$6$</td>
+</tr>
+<tr>
+<td>components</td>
+<td>$1$</td>
+<td>$2$</td>
+<td>$2$</td>
+<td>$2$</td>
+<td>$1$</td>
+<td>$2$</td>
+<td>$2$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>outer part</td>
+<td>none</td>
+<td>Galois</td>
+<td>idempotent swap</td>
+<td>scaling</td>
+<td>none</td>
+<td>none</td>
+<td>factor swap</td>
+<td>factor swap</td>
+</tr>
+<tr>
+<td>$\operatorname{Der}$</td>
+<td>$0$</td>
+<td>$0$</td>
+<td>$0$</td>
+<td>$\mathbb{R}$</td>
+<td>$\operatorname{Im}\mathbb{H}$</td>
+<td>$\mathrm{SL}_2(\mathbb{R})$</td>
+<td>$\mathrm{SL}(2,\mathbb{C})_{\mathbb{R}}$</td>
+<td>$\mathrm{SO}(3)\oplus\mathrm{SO}(3)$</td>
+</tr>
+<tr>
+<td>dimension over $\mathbb{R}$</td>
+<td>$0$</td>
+<td>$0$</td>
+<td>$0$</td>
+<td>$1$</td>
+<td>$3$</td>
+<td>$3$</td>
+<td>$6$</td>
+<td>$6$</td>
+</tr>
+<tr>
+<td>all derivations inner</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>no</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+</tr>
+</tbody>
+</table></div>
+<p>The table records the first and the sharpest change of the ladder. In $\mathbb{R}$ the automorphism group is trivial as an algebra, a field and an ordered field, and the derivation space vanishes because the single basis element is fixed and the algebra is commutative; in $\mathbb{C}$ the automorphism group is the Galois group $\operatorname{Gal}(\mathbb{C}/\mathbb{R})$ generated by conjugation and the derivation space still vanishes because $D(i)$ is forced to zero by $i^2=-1$ (<em>Real Automorphisms and Derivations</em>; <em>Complex Automorphisms and Derivations</em>). In $\mathbb{D}$ the automorphism group is again $\mathbb{Z}/2$, the conjugation swapping the two idempotents, and the derivation space vanishes; the genuinely algebraic object of dimension two is the Lie algebra of the unit group and not the derivation space (<em>Split-Complex Automorphisms and Derivations</em>). The dual numbers are the first rung with a continuous automorphism group and a non-zero derivation space: $\operatorname{Aut}(\mathbb{D}')\cong\mathbb{R}^{\times}$ acts by scaling the infinitesimal direction, and $\operatorname{Der}(\mathbb{D}')\cong\mathbb{R}\partial_\varepsilon$ is a single outer derivation, the only column of the table in which a derivation is not inner (<em>Dual-Numbers Automorphisms and Derivations</em>). At the quaternion rung every automorphism is inner by Skolem–Noether and the group is the compact $Sp(1)/\{\pm1\}\cong SO(3)\cong\mathbb{RP}^3$, with every derivation inner and $\operatorname{Der}(\mathbb{H})\cong\operatorname{Im}\mathbb{H}\cong\mathrm{SO}(3)$ (<em>Quaternion Automorphisms and Derivations</em>). The last two rungs are the two contrasting six-dimensional cases: in $\mathbb{H}_{\mathrm{s}}$ every automorphism is inner, $\operatorname{Aut}(\mathbb{H}_{\mathrm{s}})\cong \mathrm{PGL}_2(\mathbb{R})\cong SO(2,1)$, and $\operatorname{Der}(\mathbb{H}_{\mathrm{s}})\cong\mathrm{SL}_2(\mathbb{R})\cong\mathrm{SO}(2,1)$; in $\mathbb{B}$ the complex automorphism group is the connected $\operatorname{PGL}(2,\mathbb{C})$, still inner, but over $\mathbb{R}$ there is a conjugate-linear coset and $\operatorname{Aut}_{\mathbb{R}}(\mathbb{B})\cong\operatorname{PGL}(2,\mathbb{C})\rtimes\mathbb{Z}/2$ with $\operatorname{Der}(\mathbb{B})\cong\mathrm{SL}(2,\mathbb{C})_{\mathbb{R}}\cong\mathrm{SO}(1,3)$ (<em>Split-Quaternion Automorphisms and Derivations</em>; <em>Biquaternion Automorphisms and Derivations</em>). In $\mathbb{H}_{\mathbb{D}}$ the product structure does the same: $\operatorname{Aut}_{\mathbb{D}}(\mathbb{H}_{\mathbb{D}})\cong SO(3)\times SO(3)$ is connected and inner, the split complex conjugation swaps the two factors as an outer automorphism, so $\operatorname{Aut}_{\mathbb{R}}(\mathbb{H}_{\mathbb{D}})\cong(SO(3)\times SO(3))\rtimes\mathbb{Z}/2$, and $\operatorname{Der}(\mathbb{H}_{\mathbb{D}})\cong\mathrm{SO}(3)\oplus\mathrm{SO}(3)\cong\mathrm{SO}(4)$ (<em>Split-Biquaternion Automorphisms and Derivations</em>). The contrast between the last two columns is exact: the simple algebra gives the projective Lorentz group and $\mathrm{SO}(1,3)$, the product of two division algebras gives the compact $SO(3)\times SO(3)$ and $\mathrm{SO}(4)$.</p>
+<h2 id="the-inner-group-and-the-invariant-form">The Inner Group and the Invariant Form</h2>
+<p>The two invariants are trivial exactly on the commutative columns, and continuous from $\mathbb{D}'$ onward because $\mathbb{D}'$ has an infinitesimal direction to scale. Where the algebra is non-commutative the automorphism group is the group of inner transformations $x\mapsto \tilde u x\tilde u^{-1}$ of the unit group, and it is the transformation group of the invariant form of the algebra.</p>
+<p>In $\mathbb{H}$ the group $Sp(1)/\{\pm1\}$ is the rotation group $SO(3)$ of the positive definite form $N(\tilde q)=\sum_k q_k^2$ on $\operatorname{Im}\mathbb{H}$, the adjoint action of the unit sphere rotating the imaginary subspace and fixing the real line (<em>Quaternion Automorphisms and Derivations</em>). In $\mathbb{H}_{\mathrm{s}}$ the inner group is $\mathrm{PGL}_2(\mathbb{R})\cong SO(2,1)$, the Lorentz group of a form of signature $(2,1)$, with identity component the orientation-preserving $SO^{+}(2,1)$ and Lie algebra $\mathrm{SO}(2,1)$ (<em>Split-Quaternion Automorphisms and Derivations</em>). In $\mathbb{B}$ the complex automorphism group $\operatorname{PGL}(2,\mathbb{C})$ is that same identity component of the Lorentz group $O(1,3)$ of a real form of signature $(1,3)$, with Lie algebra $\mathrm{SO}(1,3)$, and the outer $\mathbb{Z}/2$ of the real automorphism group is the swap of the two factors of the complexification; in $\mathbb{H}_{\mathbb{D}}$ the inner group is instead the compact product $SO(3)\times SO(3)$ acting on the two quaternion halves, with Lie algebra $\mathrm{SO}(3)\oplus\mathrm{SO}(3)\cong\mathrm{SO}(4)$, and the same outer $\mathbb{Z}/2$ swaps the halves (<em>Biquaternion Automorphisms and Derivations</em>; <em>Split-Biquaternion Automorphisms and Derivations</em>). The two split columns thus carry a Lorentz group as a mathematical group — the projective Lorentz group in $\mathbb{H}_{\mathrm{s}}$, the identity component of $O(1,3)$ in $\mathbb{B}$ — while the compact rungs $\mathbb{H}$ and $\mathbb{H}_{\mathbb{D}}$ carry orthogonal groups.</p>
+<h2 id="summary">Summary</h2>
+<p>The automorphism group and the derivation space are both trivial for $\mathbb{R}$, $\mathbb{C}$ and $\mathbb{D}$, become continuous for $\mathbb{D}'$ as $\mathbb{R}^{\times}$ and a one-dimensional outer derivation, and from $\mathbb{H}$ onward are the Lie group and Lie algebra of the inner transformations: $SO(3)$ and $\mathrm{SO}(3)$ for $\mathbb{H}$, $\mathrm{PGL}_2(\mathbb{R})\cong SO(2,1)$ and $\mathrm{SO}(2,1)$ for $\mathbb{H}_{\mathrm{s}}$, $\operatorname{PGL}(2,\mathbb{C})\rtimes\mathbb{Z}/2$ and $\mathrm{SO}(1,3)$ for $\mathbb{B}$, and $(SO(3)\times SO(3))\rtimes\mathbb{Z}/2$ and $\mathrm{SO}(4)$ for $\mathbb{H}_{\mathbb{D}}$. The derivation space is zero on the four commutative columns and non-zero exactly on the four non-commutative ones, where it is the Lie algebra of the inner automorphism group; the only outer derivation of the table is $\partial_\varepsilon$ of $\mathbb{D}'$. The inner automorphism group is the rotation group of the definite form in $\mathbb{H}$, the Lorentz group of signature $(2,1)$ in $\mathbb{H}_{\mathrm{s}}$, the identity component of the Lorentz group of signature $(1,3)$ in $\mathbb{B}$, and the compact product $SO(3)\times SO(3)$ in $\mathbb{H}_{\mathbb{D}}$.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\operatorname{Aut},\operatorname{Der}$</td>
+<td>automorphism group and derivation space over $\mathbb{R}$</td>
+</tr>
+<tr>
+<td>$\operatorname{Inn},\operatorname{Out}$</td>
+<td>inner and outer automorphism groups</td>
+</tr>
+<tr>
+<td>$\operatorname{ad}_a(x)=[a,x]$</td>
+<td>inner derivation of an associative algebra</td>
+</tr>
+<tr>
+<td>$\partial_\varepsilon(a+\varepsilon b)=\varepsilon b$</td>
+<td>the outer derivation of $\mathbb{D}'$</td>
+</tr>
+<tr>
+<td>$Sp(1)/\{\pm1\}$</td>
+<td>the group of inner automorphisms of $\mathbb{H}$, $\cong SO(3)$</td>
+</tr>
+<tr>
+<td>$\mathrm{PGL}_2(\mathbb{R}),\mathrm{PGL}(2,\mathbb{C})$</td>
+<td>the inner automorphism groups of $\mathbb{H}_{\mathrm{s}}$ and $\mathbb{B}$</td>
+</tr>
+<tr>
+<td>$\mathrm{SL}_2(\mathbb{R}),\mathrm{SL}(2,\mathbb{C})_{\mathbb{R}},\mathrm{SO}(1,3),\mathrm{SO}(2,1),\mathrm{SO}(4)$</td>
+<td>the derivation spaces of the four higher columns</td>
+</tr>
+<tr>
+<td>$SO(3)\times SO(3)$</td>
+<td>the inner automorphism group of $\mathbb{H}_{\mathbb{D}}$</td>
+</tr>
+<tr>
+<td>$SO^{+}(2,1),O(2,1),O(1,3)$</td>
+<td>the identity component and the full Lorentz groups of signatures $(2,1)$ and $(1,3)$</td>
+</tr>
+<tr>
+<td><code>—</code></td>
+<td>an empty cell, stated and never filled</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Nathan Jacobson, <em>Lie Algebras</em> (Dover, 1979), for the derivation algebra of an associative algebra and the inner derivations.</li>
+<li>Nathan Jacobson, <em>Basic Algebra II</em>, 2nd ed. (W. H. Freeman, 1989), for the Skolem–Noether theorem and the inner automorphisms of a central simple algebra.</li>
+<li>John Voight, <em>Quaternion Algebras</em>, Graduate Texts in Mathematics 288 (Springer, 2021), for the automorphism group and the unit group of a quaternion algebra.</li>
+<li>Ian R. Porteous, <em>Clifford Algebras and the Classical Groups</em> (Cambridge University Press, 1995), for the rotation and Lorentz groups of the low-dimensional forms.</li>
+<li>Sigurdur Helgason, <em>Differential Geometry, Lie Groups, and Symmetric Spaces</em> (American Mathematical Society, 2001), for the Lorentz groups as matrix groups and their Lie algebras.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -111,7 +111,7 @@ S(\tilde{\rho}_{AB}) = -\sum_\epsilon \tfrac14\bigl(1-{\textstyle\sum_j}c_j\epsi
 \qquad
 I(A:B) = 2 - S(\tilde{\rho}_{AB}) .
 $$</p>
-<p>For Bell-diagonal states the quantum mutual information is thus a function of the three trace pairings $c_j$ alone — the two-qubit analogue of the statement, for a single qubit, that the entropy is a function of the norm form.</p>
+<p>For Bell-diagonal states the quantum mutual information is thus a function of the three trace pairings $c_j$ alone — the two-qubit analogue of the statement, for a single qubit, that the entropy is a function of the biquaternion norm.</p>
 <h2 id="classical-mutual-information-and-discord">Classical Mutual Information and Discord</h2>
 <h3 id="measurement-on-one-subsystem">Measurement on one subsystem</h3>
 <p>To extract classical information from a bipartite quantum state one must measure. A projective measurement on $B$ along a direction $\hat{n}$ has idempotents</p>
@@ -234,7 +234,7 @@ $$</p>
 <ul>
 <li>It expresses the bipartite mutual information and the discord entirely in terms of the partial trace, the trace pairing, and the entropies of elements of $\mathbb{M}_+^{\otimes2}$.</li>
 <li>It identifies the Bell-diagonal family with the convex hull of the Bell idempotents and parametrizes it by the three trace pairings $c_j = \mathrm{Tr}(\tilde{\rho}_{AB}\tilde{Q}_j)$ with $\tilde{Q}_j = -e_j\otimes e_j$.</li>
-<li>It gives the entropy and the mutual information of the family as functions of the triple $(c_1,c_2,c_3)$, the two-qubit analogue of the single-qubit norm-form statement.</li>
+<li>It gives the entropy and the mutual information of the family as functions of the triple $(c_1,c_2,c_3)$, the two-qubit analogue of the single-qubit biquaternion-norm statement.</li>
 <li>It exhibits a separable state with positive discord and verifies the separability criterion and the discord numerically.</li>
 </ul>
 <p><strong>What it does not.</strong></p>
@@ -242,11 +242,11 @@ $$</p>
 <li>It does not compute the discord for general two-qubit states. The Bell-diagonal restriction is what makes the computation tractable and the trace-pairing parametrization exact.</li>
 <li>It does not prove the Luo result that the optimal measurement for Bell-diagonal states is along a coordinate axis; that is cited as standard, and the computed values use it.</li>
 <li>It does not resolve the interpretation of discord, nor does it claim that discord is a resource in every operational sense; the operational interpretations are cited, not derived.</li>
-<li>It does not extend the norm-form reading to the two-qubit case generally: the norm form of a two-qubit state is not a single number, and only the Bell-diagonal family is controlled by three trace pairings.</li>
+<li>It does not extend the biquaternion-norm reading to the two-qubit case generally: the biquaternion norm of a two-qubit state is not a single number, and only the Bell-diagonal family is controlled by three trace pairings.</li>
 <li>It does not predict anything beyond standard quantum information theory; the discord values are the standard ones.</li>
 </ul>
 <h2 id="open-questions">Open Questions</h2>
-<p><strong>1. Discord and the two-qubit norm form.</strong> For a single qubit the entropy is a function of the norm form. For a two-qubit Bell-diagonal state the entropy is a function of the three trace pairings $c_j$. Is there an algebraic object — a generalized norm form on $\mathbb{M}_+^{\otimes2}$ — whose invariant theory reproduces the triple $(c_1,c_2,c_3)$ and hence the discord?</p>
+<p><strong>1. Discord and the two-qubit biquaternion norm.</strong> For a single qubit the entropy is a function of the biquaternion norm. For a two-qubit Bell-diagonal state the entropy is a function of the three trace pairings $c_j$. Is there an algebraic object — a generalized biquaternion norm on $\mathbb{M}_+^{\otimes2}$ — whose invariant theory reproduces the triple $(c_1,c_2,c_3)$ and hence the discord?</p>
 <p><strong>2. The geometry of the Bell-diagonal tetrahedron.</strong> The Bell-diagonal states form a tetrahedron inscribed in the two-qubit state space, and the separable subset is the octahedron $\sum_j|c_j|\leq1$. What is the corresponding geometry in the cone of $\mathbb{M}_+^{\otimes2}$, and where does the discord vanish on it?</p>
 <p><strong>3. Discord and the local unitary orbit.</strong> The Bell states form one local-unitary orbit; the discord is invariant under local unitaries. Is the discord constant on the orbits of the local unitary group, and does the algebra's structure — the tensor product of two $\mathbb{B}$'s and its inner automorphisms — organize those orbits?</p>
 <p><strong>4. Many parties.</strong> For three and more subsystems there are several inequivalent discord-like measures. What is their form in $\mathbb{B}^{\otimes n}$, and does the partial trace suffice to define them?</p>
