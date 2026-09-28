@@ -254,6 +254,85 @@ The elliptic type is realised in the algebra by the exponentials of the quaterni
 
 This is the precise content of the split in the classification: the elliptic and the hyperbolic one-parameter subgroups are separated because the form is indefinite, and only these two are contributed by the coefficient algebra. The dual number construction, which realises the parabolic rotation of the plane by the exponential of a square-zero element, has no counterpart in $\mathbb{H}_{\mathbb{D}}$, as recorded in *The Three Two-Dimensional Algebras and the Three Kinds of Rotation*.
 
+## The Dagger Sandwich of a General Unit
+
+The unitary action $\tilde Q\mapsto\tilde S\tilde Q\tilde S^{\dagger}$ of the preceding section is defined for every unit, unitary or not; taken in that generality it is the **dagger sandwich**, a linear representation of the unit group that is an automorphism only on the unitary subgroup.
+
+**Definition.** The **dagger sandwich** of a unit $\tilde R$ is the real-linear map
+
+$$
+\operatorname{H}_{\tilde R} : \mathbb{H}_{\mathbb{D}}\longrightarrow\mathbb{H}_{\mathbb{D}}, \qquad \operatorname{H}_{\tilde R}(x) = \tilde R\,x\,\tilde R^{\dagger}.
+$$
+
+It is well defined for every unit and depends only on $\tilde R$; the two-sided placement of the Hermitian conjugate is what distinguishes it from left and right multiplication. It is invertible, with inverse $\operatorname{H}_{\tilde R^{-1}}$, since $(\tilde R^{\dagger})^{-1} = (\tilde R^{-1})^{\dagger}$.
+
+**Theorem (multiplicative exactly on the unitary subgroup).** Let $\tilde R$ be a unit. Then $\operatorname{H}_{\tilde R}(xy) = \operatorname{H}_{\tilde R}(x)\operatorname{H}_{\tilde R}(y)$ for all $x,y$ if and only if $\tilde R^{\dagger}\tilde R = e_0$, that is, if and only if $\tilde R$ is unitary.
+
+**Proof.** The two sides are $\tilde Rxy\tilde R^{\dagger}$ and $\tilde Rx\tilde R^{\dagger}\tilde Ry\tilde R^{\dagger}$; they agree for all $x,y$ exactly when the factor $\tilde R^{\dagger}\tilde R$ inserted between $x$ and $y$ is $e_0$, that is when $\tilde R^{\dagger} = \tilde R^{-1}$ and $\tilde R$ is unitary. In that case the sandwich is the inner automorphism $x\mapsto\tilde Rx\tilde R^{-1}$.
+
+**Theorem.** For every unit $\tilde R$ the sandwich maps $\mathbb{M}_+$ to $\mathbb{M}_+$ and $\mathbb{M}_-$ to $\mathbb{M}_-$.
+
+**Proof.** If $x^{\dagger} = x$ then $(\tilde Rx\tilde R^{\dagger})^{\dagger} = \tilde R^{\dagger\dagger}x^{\dagger}\tilde R^{\dagger} = \tilde Rx\tilde R^{\dagger}$, so the image is Hermitian; if $x^{\dagger} = -x$ the image is anti-Hermitian.
+
+**Theorem (the defect under the indefinite form).** With $N_{\pm}(\tilde R) = \lvert\tilde R_{\pm}\rvert^{2}$ the two real components of the split-biquaternion norm,
+
+$$
+N\!\left(\operatorname{H}_{\tilde R}(x)\right) = N_+(\tilde R)\,N_-(\tilde R)\,N(x), \qquad g\!\left(\operatorname{H}_{\tilde R}(x)\right) = g(x) \ \text{ for unitary } \tilde R .
+$$
+
+**Proof.** The split-biquaternion norm is multiplicative, so $N(\operatorname{H}_{\tilde R}(x)) = N(\tilde R)N(x)N(\tilde R^{\dagger})$, and the Hermitian conjugation interchanges the two idempotent components, so $N(\tilde R^{\dagger}) = \lvert\tilde R_-\rvert^{2}\tilde\Pi_+ + \lvert\tilde R_+\rvert^{2}\tilde\Pi_-$ while $N(\tilde R) = \lvert\tilde R_+\rvert^{2}\tilde\Pi_+ + \lvert\tilde R_-\rvert^{2}\tilde\Pi_-$; their product is the central real number $\lvert\tilde R_+\rvert^{2}\lvert\tilde R_-\rvert^{2}e_0 = N_+(\tilde R)N_-(\tilde R)e_0$. For the Hermitian form, a unitary $\tilde R$ satisfies $\tilde R^{\dagger} = \tilde R^{-1}$, and $\operatorname{H}_{\tilde R}$ is then the inner automorphism; since conjugation preserves the scalar part and $\operatorname{H}_{\tilde R}(x)^{\dagger} = \operatorname{H}_{\tilde R}(x^{\dagger})$, one has $g(\operatorname{H}_{\tilde R}(x)) = \mathrm{Sc}\bigl(\operatorname{H}_{\tilde R}(x)\operatorname{H}_{\tilde R}(x)^{\dagger}\bigr) = \mathrm{Sc}\bigl(\tilde R\,xx^{\dagger}\tilde R^{-1}\bigr) = \mathrm{Sc}(xx^{\dagger}) = g(x)$.
+
+The factor $N_+(\tilde R)N_-(\tilde R)$ is therefore the **defect** of the sandwich under the indefinite form. It vanishes exactly when one of the two components is zero, that is exactly on the zero divisors; on the unit group it is a nonzero real number of either sign, and the Hermitian form $g$ is preserved by every unitary element. The biquaternion sandwich has the analogous factor $\lvert N(\tilde R)\rvert^{2}$; the difference is that there the factor is a sum of squares and here a difference.
+
+**Theorem (kernel).** $\operatorname{H}_{\tilde R} = \mathrm{id}$ if and only if $\tilde R$ is central and unitary, that is $\tilde R = Q_0e_0$ with $Q_0 = q_0 + jq'_0$ and $q_0^{2} - q'^{2}_{0} = 1$. On the unit-norm slice $N(\tilde R) = e_0$ the kernel reduces to $\{\pm e_0\}$.
+
+**Proof.** If $\operatorname{H}_{\tilde R}(x) = x$ for all $x$, then $x = e_0$ gives $\tilde R\tilde R^{\dagger} = e_0$, so $\tilde R$ is unitary, and then $\tilde Rx = x\tilde R$ for all $x$, so $\tilde R$ is central. A central element is $Q_0e_0$ with $Q_0\in\mathbb{D}$, and it is unitary exactly when $Q_0Q_0^{*} = q_0^{2} - q'^{2}_{0} = 1$, the two branches of a hyperbola in the centre. Restricting to $N(\tilde R) = Q_0^{2} = e_0$ gives $Q_0 = \pm1$.
+
+The kernel of the full sandwich is thus the group of central unitary elements, the split complex units of modulus one, an $\mathbb{R}\times\mathbb{Z}/2$ inside the centre — the analogue of the circle $U(1)$ of the biquaternion case. On the unit-norm slice it is the two central signs, and that kernel of order two is the double cover.
+
+### The Comparison with Left Multiplication, and the Table of Subspaces
+
+| | left multiplication $\tilde Rx$ | the sandwich $\operatorname{H}_{\tilde R}(x)$ |
+|---|---|---|
+| type of map | algebra endomorphism | neither multiplicative nor unital; a representation of the units |
+| image of $e_0$ | $\tilde R$ | $\tilde R\tilde R^{\dagger}$, Hermitian but not central in general |
+| kernel on the unit sphere | $\{e_0\}$ | $\{\pm e_0\}$ |
+| effect on the norm | $N(\tilde Rx) = N(\tilde R)N(x)$ | $N(\operatorname{H}_{\tilde R}x) = N_+(\tilde R)N_-(\tilde R)N(x)$ |
+
+The sandwich acts on the four distinguished subspaces as follows.
+
+| subspace | preserved by $\operatorname{H}_{\tilde R}$? | image |
+|---|---|---|
+| $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$, the centre | no | $\tilde RQ_0\tilde R^{\dagger}$, not central in general |
+| $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$, the quaternion subspace | no | not closed in general |
+| $\mathbb{M}_+$ | yes | $\mathbb{M}_+$ |
+| $\mathbb{M}_-$ | yes | $\mathbb{M}_-$ |
+
+The centre is not preserved: on $e_0$ the sandwich gives $\tilde R\tilde R^{\dagger}$, which is Hermitian but not central for a general unit, although on the unitary subgroup, where the sandwich is an automorphism, it preserves the centre because an automorphism carries the centre to itself. The two sectors are the only subspaces of the four that survive, and they survive as a pair: the sandwich preserves each separately and cannot move one into the other, because Hermitian character is exactly what the map preserves. This is the operator-theoretic reason that the Hermitian decomposition $\mathbb{H}_{\mathbb{D}} = \mathbb{M}_+\oplus\mathbb{M}_-$ is the natural one for the action.
+
+### The Polar Dictionary
+
+**Proposition.** In the idempotent description the sandwich acts componentwise,
+
+$$
+\operatorname{H}_{\tilde R}(x)_+ = \tilde R_+\,x_+\,\bar{\tilde R}_- , \qquad \operatorname{H}_{\tilde R}(x)_- = \tilde R_-\,x_-\,\bar{\tilde R}_+ ,
+$$
+
+so that the polar data of the element appear as follows.
+
+| polar datum of $\tilde R$ | what the sandwich sees |
+|---|---|
+| the two components $\tilde R_+,\tilde R_-$ | the one-sided multiplications $\tilde R_+(\cdot)\bar{\tilde R}_-$ and $\tilde R_-(\cdot)\bar{\tilde R}_+$ on the two halves |
+| the scale $N_+N_-$ | the dilation $N_+N_-$ of the split-biquaternion norm |
+| the central unitary factor | nothing: it is the kernel, and the sandwich is blind to it |
+| the two unit-sphere parts | the rotation parts of the action |
+
+**Proof.** Multiplication is componentwise in the idempotent description, and the Hermitian conjugation interchanges the components with a quaternion conjugation, $(\tilde R^{\dagger})_+ = \bar{\tilde R}_-$ and $(\tilde R^{\dagger})_- = \bar{\tilde R}_+$; the display follows. The invisibility of the central unitary factor is the kernel theorem and the scaling is the defect theorem.
+
+### The Relation to the Biquaternion Dagger Sandwich
+
+In the biquaternion case the dagger sandwich of a unit-norm element is the action of $SL(2,\mathbb{C})$ on the Hermitian matrices, with image the proper orthochronous Lorentz group $SO^{+}(1,3)$, and on the unit-norm slice its kernel is $\{\pm e_0\}$; the unit-norm slice there is $SL(2,\mathbb{C})$, three complex dimensions. Here the unit-norm slice is the six-dimensional $S^3\times S^3$ and the sandwich on it is **not** generally an automorphism, since $\tilde R^{\dagger}\neq\tilde R^{-1}$ unless $\tilde R$ is unitary; the Lorentzian form $g$ is preserved on the unitary group $\{\tilde R : \tilde R\tilde R^{\dagger} = e_0\}\cong Sp(1)\times\mathbb{R}$, where the sandwich is the inner automorphism and its image is the compact rotation group $SO(3)$ of the spacelike three-plane, fixing the timelike $je_0$ (*The Unitary Group and the Elliptic Rotations*). The doubling of the angle and the two-to-one cover are the same in both cases; the difference is which slice of the algebra carries the Lorentz action.
+
 ## The Hyperboloid, the Null Cone and the Rulings
 
 The subsets of $\mathbb{M}_-$ on which $g$ takes constant values carry the geometry of the Lorentzian form.
@@ -292,6 +371,8 @@ The split biquaternion algebra $\mathbb{H}_{\mathbb{D}}$ carries the Hermitian s
 
 The unit sphere $\{\tilde S : N(\tilde S) = e_0\}\cong S^3\times S^3$ is compact and six-dimensional, the product of the two idempotent components. The unitary group $\{\tilde S : \tilde S\tilde S^{\dagger} = e_0\}\cong Sp(1)\times\mathbb{R}$ acts on $\mathbb{M}_-$ by isometries, fixes the timelike vector $je_0$, and realises exactly the compact group $SO(3)$ of spacelike rotations; the split complex units $e^{\theta j}$ preserve the neutral four-planes and realise there the diagonal $SO(1,1)$ inside $SO(1,1)\times SO(1,1)$, and the two families commute. The parabolic one-parameter subgroups are not realised in the algebra, because $\mathbb{H}_{\mathbb{D}}\cong\mathbb{H}\oplus\mathbb{H}$ is semisimple and has no non-zero nilpotent element.
 
+The dagger sandwich $\operatorname{H}_{\tilde R}(x) = \tilde Rx\tilde R^{\dagger}$ of a general unit is a linear representation of the unit group, multiplicative exactly on the unitary subgroup, where it is the inner automorphism $x\mapsto\tilde Rx\tilde R^{-1}$. It preserves the two sectors $\mathbb{M}_{\pm}$ and no other of the four distinguished subspaces, and it scales the split-biquaternion norm by the real defect factor $N_+(\tilde R)N_-(\tilde R)$, which vanishes exactly on the zero divisors and is a nonzero real number of either sign on the units; the Hermitian form $g$ is preserved by every unitary element. Its kernel is the group of central unitary elements, the split complex units of modulus one, an $\mathbb{R}\times\mathbb{Z}/2$ in the centre, which on the unit-norm slice reduces to $\{\pm e_0\}$. In the idempotent description the sandwich acts componentwise as $x_+\mapsto\tilde R_+x_+\bar{\tilde R}_-$ and $x_-\mapsto\tilde R_-x_-\bar{\tilde R}_+$, so it sees every polar factor of the element except the central unitary one.
+
 In $(\mathbb{M}_-,g)$ the level set $g = -1$ is a hyperboloid of two sheets, each an $\mathbb{R}^3$, and $g = +1$ is a hyperboloid of one sheet, an $S^2\times\mathbb{R}$; the null cone is the cone over $S^2$. Every zero divisor of the algebra is isotropic for the ambient form $g$, so the union of the two ideals lies inside the ambient null cone and meets $\mathbb{M}_-$ only at the origin; the Lorentzian null cone is strictly larger than the zero divisor set, since $e_1 + je_0$ is null and not a zero divisor. The compact unit sphere and the non-compact Lorentzian hyperboloids are different objects, bridged by the idempotent decomposition.
 
 ## Summary of Notation
@@ -311,6 +392,9 @@ In $(\mathbb{M}_-,g)$ the level set $g = -1$ is a hyperboloid of two sheets, eac
 | $O(p,q)$, $SO(p,q)$, $SO^{+}(p,q)$ | Orthogonal group of a form, its determinant-one part, its identity component |
 | $\mathrm{SO}(p,q)$ | Lie algebra of $g$-skew endomorphisms, dimension $\tfrac{1}{2}n(n-1)$ |
 | $U(\mathbb{H}_{\mathbb{D}}) = \{\tilde S : \tilde S\tilde S^{\dagger} = e_0\}\cong Sp(1)\times\mathbb{R}$ | Unitary group |
+| $\operatorname{H}_{\tilde R}(x) = \tilde Rx\tilde R^{\dagger}$ | The dagger sandwich of a general unit; the inner automorphism on the unitary subgroup |
+| $N_+(\tilde R)N_-(\tilde R)$ | The defect of the sandwich, the real scaling of the split-biquaternion norm |
+| kernel of $\operatorname{H}$ | The central unitary group, the split complex units of modulus one |
 | $e^{\psi j} = \cosh\psi + j\sinh\psi$ | Split complex unit, hyperbolic one-parameter group |
 | $S(\mathbb{H}_{\mathbb{D}})\cong S^3\times S^3$ | Norm-one unit sphere |
 | $C_0$, $C_{\pm1}$ | Null cone and hyperboloids in $\mathbb{M}_-$ |
@@ -328,3 +412,6 @@ In $(\mathbb{M}_-,g)$ the level set $g = -1$ is a hyperboloid of two sheets, eac
 - Dirk J. Struik, *Lectures on Classical Differential Geometry* (Dover, 1988), for the doubly ruled quadrics and their two families of lines.
 - Rafael López, "Differential geometry of curves and surfaces in Lorentz–Minkowski space" (arXiv:0810.3351), for the hyperboloids and the null cone of a Lorentzian four-space.
 - Walter Benz, *Classical Geometries in Modern Contexts* (Birkhäuser, 2005), for the neutral signature geometry and the Kleinian quadric.
+- I. L. Kantor and A. S. Solodovnikov, *Hypercomplex Numbers: An Elementary Introduction to Algebras* (Springer, 1989), for inner automorphisms and the unitary group of an algebra with conjugation.
+- J. P. Ward, *Quaternions and Cayley Numbers: Algebra and Applications* (Kluwer, 1997), for the two-sided action of the quaternion sphere and the double cover $Sp(1)\to SO(3)$.
+- Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the sandwich action of versors on a Clifford algebra and the doubling of the angle.

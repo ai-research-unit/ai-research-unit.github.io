@@ -15,14 +15,14 @@ The remaining realizations are the subjects of their own articles:
 |---|---|
 | four-vector | *Split-Quaternion Four-Vector Representation* |
 | $2 \times 2$ matrix | *Split-Quaternion Matrix Representations* |
-| operator on the algebra | *Split-Quaternion Operator Representation* |
+| operator on the algebra | *Split-Quaternion Rotations and the Lorentz Group* |
 | polar | *Split-Quaternion Polar Representation* |
 
 and the technical representation theory is the subject of *Split-Quaternion Representations*. Each of those articles owns its realization; this article records only the relations that involve the three studied here.
 
 The word **representation** is used in the sense of a concrete realization of the algebra as computable objects, not in the technical sense of a vector space carrying an algebra homomorphism into its endomorphisms. The word **algebraic** contrasts with **polar**: the realizations here use only the algebra operations and the underlying real vector space, not the exponential or the roots of $-1$.
 
-**Objects and operators.** A realization writes the element as an array and decides nothing about how the array is used. The same $2 \times 2$ matrix $\Phi(\tilde q)$ is the split-quaternion written as an **object** — an array whose entries are its coordinates — and, once a column is placed beside it, the **operator** acting on that column. An operator appears exactly where an action on a carrier is specified; the carrier may be $\mathbb{R}^2$, a plane, or the algebra itself. This article supplies realizations and the module structures they define; the operator reading on the algebra is the subject of *Split-Quaternion Operator Representation*.
+**Objects and operators.** A realization writes the element as an array and decides nothing about how the array is used. The same $2 \times 2$ matrix $\Phi(\tilde q)$ is the split-quaternion written as an **object** — an array whose entries are its coordinates — and, once a column is placed beside it, the **operator** acting on that column. An operator appears exactly where an action on a carrier is specified; the carrier may be $\mathbb{R}^2$, a plane, or the algebra itself. This article supplies realizations and the module structures they define; the operator reading on the algebra — the adjoint action and the left and right multiplication operators — is the subject of *Split-Quaternion Rotations and the Lorentz Group*.
 
 **Notation.** A general split-quaternion is
 
@@ -98,7 +98,7 @@ The first two rows are the Clifford and matrix models of *Split-Quaternion Matri
 
 ## Relation to the Representations of $\mathbb{B}$
 
-The biquaternion article *Biquaternion Other Algebraic Representations* treats the spinor, Clifford ($\mathrm{Cl}_{1,3}^+$) and conjugation-action realizations of $\mathbb{B}$. The split-quaternion list is shorter and differs in kind. First, the Clifford model here is $\mathrm{Cl}_{1,1}$, of split signature, in place of the definite $\mathrm{Cl}_{1,3}^+$; the involutions of the algebra become the standard Clifford involutions without any complex structure. Second, the simple module is real two-dimensional, in place of the complex two-dimensional spinor module of $\mathbb{B}$, and the natural module structure is the direct sum of two minimal left ideals from the idempotents $\tilde\pi_\pm$, which are non-central here whereas in $\mathbb{B}$ the corresponding idempotents are central. Third, the conjugation-action realization of $\mathbb{B}$ is, for $\mathbb{H}_{\mathrm{s}}$, the operator article *Split-Quaternion Operator Representation*, and is not repeated here. None of the biquaternion-specific structures — the central unit $i$, the Hermitian pairing, the chiral spinor halves — appears in the split-quaternion realization.
+The biquaternion article *Biquaternion Other Algebraic Representations* treats the spinor, Clifford ($\mathrm{Cl}_{1,3}^+$) and conjugation-action realizations of $\mathbb{B}$. The split-quaternion list is shorter and differs in kind. First, the Clifford model here is $\mathrm{Cl}_{1,1}$, of split signature, in place of the definite $\mathrm{Cl}_{1,3}^+$; the involutions of the algebra become the standard Clifford involutions without any complex structure. Second, the simple module is real two-dimensional, in place of the complex two-dimensional spinor module of $\mathbb{B}$, and the natural module structure is the direct sum of two minimal left ideals from the idempotents $\tilde\pi_\pm$, which are non-central here whereas in $\mathbb{B}$ the corresponding idempotents are central. Third, the conjugation-action realization of $\mathbb{B}$ is, for $\mathbb{H}_{\mathrm{s}}$, the adjoint and multiplication-operator material of *Split-Quaternion Rotations and the Lorentz Group*, and is not repeated here. None of the biquaternion-specific structures — the central unit $i$, the Hermitian pairing, the chiral spinor halves — appears in the split-quaternion realization.
 
 ## The Role of Choices
 

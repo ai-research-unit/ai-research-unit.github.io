@@ -237,7 +237,7 @@ $$
 
 a convergent series of iterated brackets. Thus $\exp(a)\exp(b)$ differs from $\exp(a+b)$ by the term $\tfrac{1}{2}[a,b]$ and higher brackets; the difference vanishes whenever $[a,b] = 0$, though the converse can fail, since a non-commuting pair may still satisfy $\exp(a)\exp(b) = \exp(a+b)$ when the BCH remainder exponentiates to $e_0$. For instance, with $a = e_1$ and $b = e_2$ the product $\exp(e_1)\exp(e_2)$ carries a term $\sin^2 1\, e_3$ that is absent from $\exp(e_1+e_2)$.
 
-**Physical reading.** The commutator term is the composition defect of two motions, and its physical name is the Wigner rotation: the composition of two non-collinear boosts is a boost followed by a rotation, not a boost. The framework's Lie-theoretic statement of this is *Biquaternion Rotations and Lorentz Transformations* and *The Operator Representation of Biquaternions*; the representation-theoretic reading of the same bracket is *Biquaternion Representation Theory*.
+**Physical reading.** The commutator term is the composition defect of two motions, and its physical name is the Wigner rotation: the composition of two non-collinear boosts is a boost followed by a rotation, not a boost. The framework's Lie-theoretic statement of this is *Biquaternion Rotations and Lorentz Transformations*; the representation-theoretic reading of the same bracket is *Biquaternion Representation Theory*.
 
 ### The Kernel of the Exponential
 
@@ -499,7 +499,7 @@ These are unequal: $\tfrac{1}{2}\sinh(2) \approx 1.813$, whereas $\sinh\sqrt{2}/
 
 **Relation to the exponential.** The relations $\sin(\tilde{Q}) = (\exp(i\tilde{Q}) - \exp(-i\tilde{Q}))/(2i)$ and so on hold in general, because the scalar imaginary $i$ commutes with everything.
 
-**Physical reading: the superposition defect.** The failure of the addition formula for non-commuting arguments is the algebraic statement that two fields do not superpose by adding their phases: the interference of two amplitudes is not the sum of the two arguments' functions. The framework's resolution is to keep the fields as elements of modules over the algebra rather than as arguments of scalar functions, which is the content of *Modules over the Biquaternion Algebra* and *The Operator Representation of Biquaternions*, and the field-theoretic consequence is the non-linear-looking composition of two boost fields in *Biquaternion Relativity*.
+**Physical reading: the superposition defect.** The failure of the addition formula for non-commuting arguments is the algebraic statement that two fields do not superpose by adding their phases: the interference of two amplitudes is not the sum of the two arguments' functions. The framework's resolution is to keep the fields as elements of modules over the algebra rather than as arguments of scalar functions, which is the content of *Modules over the Biquaternion Algebra* and of the sandwich action of *Biquaternion Rotations and Lorentz Transformations*, and the field-theoretic consequence is the non-linear-looking composition of two boost fields in *Biquaternion Relativity*.
 
 ## The Logarithm
 

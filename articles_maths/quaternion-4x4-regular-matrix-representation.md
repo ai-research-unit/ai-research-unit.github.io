@@ -109,7 +109,7 @@ whence $(\det L_q)^2 = \det(N(\tilde q)I) = N(\tilde q)^4$, and $\det L_q = N(\t
 
 *Proof.* $\det L_q = N(\tilde q)^2\neq0$ for $\tilde q\neq0$ by the unit criterion, and the square of a non-zero real number is positive.
 
-**Remark.** The identity $L_q^{T}L_q = N(\tilde q)I$ says that $L_q$ is $\sqrt{N(\tilde q)}$ times an orthogonal matrix; on the unit sphere the map $\tilde q\mapsto L_q$ is then a homomorphism $Sp(1)\to SO(4)$, the left-translation factor of the two-sided covering $Sp(1)\times Sp(1)\to SO(4)$ of *Quaternion Operator Representation* in matrix form, whose other factor is the right regular representation.
+**Remark.** The identity $L_q^{T}L_q = N(\tilde q)I$ says that $L_q$ is $\sqrt{N(\tilde q)}$ times an orthogonal matrix; on the unit sphere the map $\tilde q\mapsto L_q$ is then a homomorphism $Sp(1)\to SO(4)$, the left-translation factor of the two-sided covering $Sp(1)\times Sp(1)\to SO(4)$, whose matrix form is recorded in *Quaternion Rotations and Reflections*, §*The Two-Sided Action and $SO(4)$*, and whose other factor is the right regular representation.
 
 ## Transposition and the Conjugations
 

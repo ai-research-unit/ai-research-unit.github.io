@@ -468,6 +468,10 @@ with $\sigma = i\frac{\psi}{2}\hat{\mathbf{n}}$ in the notation above, a tracele
 
 The rotor is a unit real quaternion: compact, three-dimensional, an element of the same group that the quaternion polar representation of the companion article produces as its unit factor. It is the factor that carries the spatial rotation, and it is the only factor that lies in the quaternion subspace $\mathbb{H}_{\mathbb{B}}$ on the unit sphere. Being non-central, it does not commute with the boost, and that non-commutativity is the algebraic root of the Thomas-Wigner rotation of the physics articles: the product of two boosts is not a boost, and the discrepancy is a rotor.
 
+### What the Sandwich Sees
+
+The four factors are what an operator on the algebra detects, and the dagger sandwich $\mathrm{H}_{\tilde{Q}}(x)=\tilde{Q}x\tilde{Q}^{\dagger}$ reads them as follows. The scale enters through the single dilation $\lvert N(\tilde{Q})\rvert^{2}=r^{4}$ of the interval; the central phase enters through nothing at all, since the relation $\mathrm{H}_{z\tilde{Q}}=\lvert z\rvert^{2}\mathrm{H}_{\tilde{Q}}$ makes two elements differing by a unit-modulus central phase have the same operator; and the remaining two factors are the boost part and the rotation part of the action, in the order of composition $B\hat{q}$. The kernel of the operator is the phase circle, so the phase is exactly the factor the action discards, while the scale survives only through its fourth power. The operator itself is in *Biquaternion Rotations and Lorentz Transformations*.
+
 ## Degenerate Cases
 
 ### The Unit-Norm Elements

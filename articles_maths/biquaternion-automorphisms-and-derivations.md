@@ -12,6 +12,12 @@ It carries two structures, distinguished by the ground field. Over $\mathbb{C}$ 
 
 We use the conventions of the article on the biquaternion algebra throughout: the basis $\{e_0, e_1, e_2, e_3\}$ with $e_k^2 = -e_0$; the central scalar imaginary $i$ with $i^2 = -1$; the conjugations $\bar{\cdot}$, ${}^{*}$, ${}^{\dagger} = \bar{\cdot} \circ {}^{*}$, ${}^{\flat} = -{}^{\dagger}$; and the six distinguished subspaces $\mathbb{C}_{\mathbb{B}}$, $\mathrm{Vect}(\mathbb{B})$, $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$, $\mathbb{M}_-$. A general element is $\tilde{Q} = Q_0 e_0 + Q_1 e_1 + Q_2 e_2 + Q_3 e_3$ with $Q_\mu \in \mathbb{C}$.
 
+**The inverse action and the dagger action.** The automorphisms of this article are the maps $x\mapsto\tilde{Q}x\tilde{Q}^{-1}$ built from the inverse. They use the product and the biquaternion norm alone, and for a unit $\tilde{Q}$ they are the inner automorphisms below. A second two-sided action of a unit replaces the inverse by the Hermitian conjugate,
+$$
+\mathrm{H}_{\tilde{Q}}(x)=\tilde{Q}x\tilde{Q}^{\dagger},
+$$
+and it is not an automorphism of the algebra: it is multiplicative exactly on the unitary elements, and it preserves the two Hermitian sectors rather than the product. That action is the isometry of the algebra treated in *Biquaternion Rotations and Lorentz Transformations*, and the two maps coincide exactly on the unitary slice.
+
 No physics is invoked and no new results are claimed. Everything below is standard structure theory of the algebra over each of the two ground fields.
 
 ## Standing Facts: Simplicity and the Centre

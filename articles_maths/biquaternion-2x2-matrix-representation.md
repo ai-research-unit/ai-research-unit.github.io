@@ -269,6 +269,12 @@ $$
 
 where the inner transposition passes through the two factors because $\epsilon^{-1} = \epsilon^{\mathsf{T}}$ and hence $(\epsilon M \epsilon^{-1})^{\mathsf{T}} = \epsilon M^{\mathsf{T}} \epsilon^{-1}$ for every $M$. Since $\epsilon^{2} = -I$ and $(-I)^{-1} = -I$, the two outer factors multiply to $I$, so $\Phi(\tilde{Q}^\dagger) = \overline{\Phi(\tilde{Q})}^{\mathsf{T}} = \Phi(\tilde{Q})^\dagger$. The statement for $\flat$ is the definition $\flat = -\dagger$.
 
+**Proposition (the congruence of a unit).** For every unit $\tilde{Q}$ and every $x$,
+$$
+\Phi\bigl(\tilde{Q}x\tilde{Q}^{\dagger}\bigr)=\Phi(\tilde{Q})\,\Phi(x)\,\Phi(\tilde{Q})^{\dagger},
+$$
+read off from the multiplicativity of $\Phi$ and from $\Phi(\tilde{Q}^{\dagger})=\Phi(\tilde{Q})^{\dagger}$. On the unit-norm slice $\Phi(\tilde{Q})$ lies in $SL(2,\mathbb{C})$, and the identity is the action of that group on the matrix algebra by $*$-congruence: it preserves the Hermitian matrices as a set, it multiplies the determinant by $\lvert N(\tilde{Q})\rvert^{2}$, and it moves the null cone transitively. The rank of $\Phi(x)$, the modulus of the determinant $\lvert N(x)\rvert$ and the Hermitian signature of the image are its invariants. A congruence preserves the Hermitian matrices exactly when its matrix is unitary up to a scalar, so those congruences form the projective unitary group $PU(2)=PSU(2)\cong SO(3)$.
+
 ## The Six Subspaces in Matrix Form
 
 The six distinguished subspaces of *Biquaternion Four-Vector Representation* have the following matrix characterizations, each developed in its own article in the **Focus on Subspaces** group of the series. Each is defined before it is used, and the table records the image under $\Phi$ of the subspace, not a new object.

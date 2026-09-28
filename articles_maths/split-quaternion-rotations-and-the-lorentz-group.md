@@ -75,6 +75,24 @@ and the image of the norm-one group is $\Theta(U) = SO^{+}(2,1)$, the identity c
 
 **Proof.** The image of $\mathbb{H}_{\mathrm{s}}^{\times}$ is a subgroup of $SO(2,1)$ containing the image of the connected group $U$, which is connected and contains the identity, so the image contains the identity component; the domain has exactly two components and the image lies in $SO(2,1)$, which has two components, so the image is all of $SO(2,1)$. The second statement is proved below, where $\Theta(U)$ is identified with $\mathrm{SO}^{+}(2,1)$ through the double cover.
 
+## The Multiplication Operators
+
+The adjoint action is not the only way an element acts on the algebra: left and right multiplication also realise it as operators on itself.
+
+**Definition.** For $\tilde q \in \mathbb{H}_{\mathrm{s}}$ the **left multiplication operator** and the **right multiplication operator** are
+
+$$
+L_{\tilde q} : y \mapsto \tilde q y, \qquad R_{\tilde q} : y \mapsto y\tilde q .
+$$
+
+Both are $\mathbb{R}$-linear endomorphisms of the four-dimensional space, and the assignments $\tilde q \mapsto L_{\tilde q}$, $\tilde q \mapsto R_{\tilde q}$ are $\mathbb{R}$-algebra (anti-)homomorphisms into $\operatorname{End}_{\mathbb{R}}(\mathbb{H}_{\mathrm{s}})$; the first is the **left regular representation**. Multiplication differs from the adjoint action in kind: it is not an algebra automorphism, since it does not carry $1$ to $1$, whereas the adjoint action fixes the scalar line pointwise.
+
+**Proposition.** Both $L_{\tilde q}$ and $R_{\tilde q}$ have trace $4\operatorname{Sc}(\tilde q) = 4q_0$ and determinant $N(\tilde q)^2$, and $L_{\tilde q}$ is invertible if and only if $\tilde q$ is a unit.
+
+**Proof.** Under the identification of the algebra with $M_2(\mathbb{R})$ — a statement about the algebra, not about a representation — left multiplication by $\tilde q$ on the four-dimensional space becomes left multiplication by the matrix $\tilde q$ on $M_2(\mathbb{R})\cong\mathbb{R}^4$, whose eigenvalues are the two eigenvalues of $\tilde q$, each with multiplicity two. Those two eigenvalues are the roots of the characteristic polynomial $\lambda^2-2\operatorname{Sc}(\tilde q)\lambda+N(\tilde q)$ (*Split-Quaternion Spectral Theory*), whose sum is $2q_0$ and whose product is $N(\tilde q)$. Hence $\operatorname{tr}L_{\tilde q} = 2\cdot 2q_0 = 4q_0$ and $\det L_{\tilde q} = N(\tilde q)^2$. Right multiplication $R_{\tilde q}$ is the transpose of $L_{\tilde q}$ with respect to the non-degenerate trace form $(x,y)\mapsto\operatorname{tr}(xy)$ on $M_2(\mathbb{R})$, hence has the same eigenvalues, trace and determinant. For invertibility, $L_{\tilde q}(1) = \tilde q$ shows that $L_{\tilde q} = 0$ only for $\tilde q = 0$; if $N(\tilde q)\neq0$ then $\tilde q$ is a unit and $L_{\tilde q}$ has inverse $L_{\tilde q^{-1}}$, while if $N(\tilde q) = 0$ and $\tilde q\neq0$ then $\tilde q$ is a zero divisor and there is $y\neq0$ with $\tilde qy = 0$ (*Split-Quaternion Zero Divisors*), so $L_{\tilde q}$ is not invertible.
+
+**Remark.** The doubled eigenvalues and the square $N(\tilde q)^2$ are the operator form of the double cover: $\tilde q$ and $-\tilde q$ induce the same adjoint action on $V$ and their multiplication operators have the same determinant.
+
 ## The Double Cover of $\mathrm{SO}^{+}(2,1)$
 
 **Theorem (The Double Cover).** The adjoint action restricted to the norm-one group is a surjective group homomorphism
@@ -178,6 +196,27 @@ Each nontrivial orbit is a level set of $N$ scaled to $\pm 1$ or $0$, and the st
 
 **Proof.** The fixed vectors of $g$ are the eigenvectors of $g$ in $V$, and the stated eigenvectors are those computed in the three cases of the one-parameter subgroups.
 
+## Invariants and the Action on the Distinguished Subspaces
+
+Conjugation by a unit is an automorphism of the whole algebra, not only a linear map of $V$ (*Split-Quaternion Automorphisms and Derivations*), so it preserves the two summands of $\mathbb{H}_{\mathrm{s}} = S\oplus V$ separately and never mixes them: it acts trivially on the scalar line $S$, which it fixes pointwise, and by the Lorentz action on $V$. On the whole algebra the invariants of the adjoint action are therefore the scalar part $q_0$ and the split-quaternion norm $N(\tilde q)$, the first because $S$ is fixed and the second because the action is an automorphism; this is why the whole group-theoretic content of the operator sits on the vector subspace.
+
+The adjoint action on the distinguished subspaces is as follows.
+
+| subspace | image under $\Theta(g)$ | preserved? | remark |
+|---|---|---|---|
+| $S = \mathbb{R}\cdot 1$ | $S$ | yes, pointwise | the centre is fixed |
+| $V = \operatorname{span}\{e_1,e_2,e_3\}$ | $V$ | yes | the Lorentz action of signature $(2,1)$ |
+| a line $\mathbb{R} v \subset V$ | a line $\mathbb{R}\,\Theta(g)v$ | yes as a class | the sign of $N(v)$ is preserved |
+| $\mathbb{D}_2 = \operatorname{span}\{1,e_2\}$ | a conjugate split-complex plane | only if $g$ normalises it | automorphisms permute the split-complex planes |
+| $\mathbb{D}_3 = \operatorname{span}\{1,e_3\}$ | a conjugate split-complex plane | only if $g$ normalises it | as above |
+| $\mathbb{H}_{\mathrm{s}} \tilde\pi_\pm$ | a minimal left ideal | only if $g$ normalises it | idempotents map to idempotents |
+
+The first three rows are the content of the preceding sections. The remaining rows record that an automorphism sends a subalgebra to a subalgebra of the same isomorphism type: the split-complex planes are permuted among their conjugates, since the split Cartan subalgebras of $M_2(\mathbb{R})$ are conjugate, and a unit normalises a given plane exactly when it preserves the pair of isotropic lines of that plane. The idempotents form a single orbit-like set under the automorphism group and the minimal left ideals are permuted accordingly; this is developed alongside the idempotent theory in *Split-Quaternion Ideals and Peirce Decomposition*.
+
+## The Relation to the Polar Representation
+
+Every nonzero split-quaternion has a polar representation $\tilde q = \rho u$ with $\rho = \sqrt{|N(\tilde q)|} > 0$ and $u$ a unit of norm $\pm1$ (*Split-Quaternion Polar Representation*). In it the operator content of $\tilde q$ splits: the positive scale contributes the scalar operator $L_\rho = \rho\,\mathrm{id}$, and the unit contributes the adjoint automorphism $\Theta(u)$ on $V$, which is the Lorentz transformation the element carries. Left multiplication by $\tilde q$ is therefore the composite of a scaling and an operator whose restriction to $V$ is that Lorentz transformation: $L_{\tilde q} = \rho\,L_u$, and the adjoint action sees only $u$. The explicit polar factor in each of the three sign cases $N>0$, $N<0$, $N=0$ is the subject of *Split-Quaternion Polar Representation*.
+
 ## Comparison with the Quaternion and Split-Biquaternion Cases
 
 ### The Quaternion Case
@@ -203,6 +242,8 @@ The norm-one group of the split-quaternion algebra is $U \cong \mathrm{SL}_2(\ma
 
 Conjugation by a unit preserves the vector subspace and the form, giving a homomorphism from the group of units onto $\mathrm{SO}(2,1) \cong \mathrm{PGL}_2(\mathbb{R})$ with kernel $\mathbb{R}^{\times}$ — onto the full group, not only its identity component, because a negative-norm unit such as $e_2$ acts on $V$ as $\operatorname{diag}(-1,1,-1)$, which reverses the sheets — and a homomorphism $\mathrm{SL}_2(\mathbb{R}) \to \mathrm{SO}^{+}(2,1)$ with kernel $\{\pm 1\}$, hence a double cover and an isomorphism $\mathrm{PSL}_2(\mathbb{R}) \cong \mathrm{SO}^{+}(2,1)$. The double cover is not the universal cover, because $\mathrm{SL}_2(\mathbb{R})$ has infinite cyclic fundamental group. The Lorentz group of the system is the three-dimensional $\mathrm{SO}(2,1)$ of the signature-$(2,1)$ form, with identity component $\mathrm{SO}^{+}(2,1)$, and not $\mathrm{SO}(3,1)$.
 
+Besides conjugation, an element acts by left multiplication $L_{\tilde q}(y) = \tilde qy$ and right multiplication $R_{\tilde q}(y) = y\tilde q$, operators of trace $4q_0$ and determinant $N(\tilde q)^2$, with $L_{\tilde q}$ invertible exactly for a unit. On the whole algebra the adjoint action preserves the scalar part and the norm and never mixes $S$ with $V$, so its invariants are $q_0$ and $N(\tilde q)$; it fixes $S$ pointwise, preserves $V$, and permutes the split-complex planes and the minimal left ideals among their conjugates. In the polar form $\tilde q = \rho u$ the scale contributes the scalar operator $\rho\,\mathrm{id}$ and the unit the Lorentz transformation $\Theta(u)$, so that $L_{\tilde q} = \rho\,L_u$ and conjugation sees only $u$.
+
 The roots of $\xi^2 = -1$ generate the compact (elliptic) one-parameter subgroups, isomorphic to $SO(2)$ and fixing a timelike direction and rotating its orthogonal plane; the roots of $\eta^2 = +1$ generate the non-compact (hyperbolic) subgroups, fixing a spacelike direction and acting as hyperbolic rotations on its orthogonal plane of signature $(1,1)$; the nilpotents generate the parabolic subgroups. Under the norm-one group $U \cong \mathrm{SL}_2(\mathbb{R})$, the nonzero vectors of the vector subspace fall into two timelike orbits (the sheets of the hyperboloid $N=1$, each a hyperbolic plane), two lightlike orbits (the nappes of the cone) and one spacelike orbit; the four sheets and nappes merge in pairs under the negative-norm units, so that the full group of units has one orbit of each sign type. The trichotomy is nonempty because the form is isotropic. The quaternion case has a compact simply connected unit sphere, a universal double cover of $SO(3)$, a definite vector form and a single class of vectors; the eight-dimensional relative is a later system of Part V, named here only.
 
 ## Summary of Notation
@@ -213,6 +254,7 @@ The roots of $\xi^2 = -1$ generate the compact (elliptic) one-parameter subgroup
 | $U^{\pm} = \{N = \pm 1\}$ | $\mathrm{SL}_2^{\pm}(\mathbb{R})$, two components | this article |
 | $\mathbb{H}_{\mathrm{s}}^{\times} = \{N \neq 0\}$ | the group of units | *Split-Quaternion Norm and Invertibility* |
 | $\Theta(u)v = uvu^{-1}$ | the adjoint action on $V$ | this article |
+| $L_{\tilde q}(y) = \tilde qy$, $R_{\tilde q}(y) = y\tilde q$ | left and right multiplication operators; trace $4q_0$, determinant $N(\tilde q)^2$ | this article |
 | $(V,N) \cong \mathbb{R}^{2,1}$ | the vector subspace with its signature-$(2,1)$ form | *Split-Quaternion Algebra* |
 | $O(2,1)$, $SO(2,1)$, $\mathrm{SO}^{+}(2,1)$ | the Lorentz group, its determinant-one part, its identity component | this article |
 | $\mathrm{SL}_2(\mathbb{R}) \to \mathrm{SO}^{+}(2,1)$ | the double cover | this article |
@@ -228,3 +270,5 @@ The roots of $\xi^2 = -1$ generate the compact (elliptic) one-parameter subgroup
 - Pertti Lounesto, *Clifford Algebras and Spinors*, 2nd ed. (Cambridge University Press, 2001), for the split quaternions as the even Clifford algebra $\mathrm{Cl}_{1,1}^{0}$ and their rotation and boost interpretation.
 - John Stillwell, *Naive Lie Theory* (Springer, 2008), for the one-parameter subgroups, the exponential map and the relation between $\mathrm{SL}_2(\mathbb{R})$ and $\mathrm{SO}^{+}(2,1)$.
 - Serge Lang, *$\mathrm{SL}_2(\mathbb{R})$* (Addison-Wesley, 1975), for the covering groups of $\mathrm{SL}_2(\mathbb{R})$ and the elliptic, hyperbolic and parabolic classifications.
+- Robert Gilmore, *Lie Groups, Lie Algebras, and Some of Their Applications* (Wiley, 1974), for $\mathrm{PSL}_2(\mathbb{R}) \cong \mathrm{SO}^{+}(2,1)$ and the orbit classification of the Minkowski form.
+- John H. Conway and Derek A. Smith, *On Quaternions and Octonions* (A K Peters, 2003), for the action of the coquaternion units on the split vector space.

@@ -82,7 +82,7 @@ $$
 \tilde{P} = i\frac{E}{c}e_0 + \mathbf{p}, \qquad N(\tilde{P}) = -\frac{E^2}{c^2} + \mathbf{p}^2 = -m^2c^2 \ \text{ on shell},
 $$
 
-so the constancy of the biquaternion norm of the four-velocity along a worldline is the statement that the proper time is the same for every observer, and the **mass shell** $E^2 = c^2\mathbf{p}^2 + m^2c^4$ is the statement that the four-momentum lies on the level set $N = -m^2c^2$. The photon is the case $N = 0$, on the light cone. The four-vector calculus itself belongs to *The Four-Vector Representation of Biquaternions*; the rotor action belongs to *The Operator Representation of Biquaternions*.
+so the constancy of the biquaternion norm of the four-velocity along a worldline is the statement that the proper time is the same for every observer, and the **mass shell** $E^2 = c^2\mathbf{p}^2 + m^2c^4$ is the statement that the four-momentum lies on the level set $N = -m^2c^2$. The photon is the case $N = 0$, on the light cone. The four-vector calculus itself belongs to *The Four-Vector Representation of Biquaternions*; the rotor action belongs to *Biquaternion Rotations and Lorentz Transformations*.
 
 ### The Biquaternion Norm as a Semi-Norm
 
@@ -167,7 +167,7 @@ $$
 
 the Frobenius norm squared of the representing matrix under $\mathbb{B}\cong M_2(\mathbb{C})$.
 
-**Physical reading.** This is the norm that makes the algebra a Hilbert space, and it is the norm with which the operator side of the series is built: the sandwich operators of *The Operator Representation of Biquaternions* are bounded with respect to it, and the probabilistic reading of the informational sector uses it. It is **not** the norm that carries the metric: the metric is the biquaternion norm, indefinite. The two must be kept apart, and the series does keep them apart.
+**Physical reading.** This is the norm that makes the algebra a Hilbert space, and it is the norm with which the operator side of the series is built: the sandwich operators of *Biquaternion Rotations and Lorentz Transformations* are bounded with respect to it, and the probabilistic reading of the informational sector uses it. It is **not** the norm that carries the metric: the metric is the biquaternion norm, indefinite. The two must be kept apart, and the series does keep them apart.
 
 ### Relation Between the Biquaternion Norm and the Hermitian Form
 
