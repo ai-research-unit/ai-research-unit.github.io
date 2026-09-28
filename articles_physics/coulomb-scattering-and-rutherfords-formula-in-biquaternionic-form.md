@@ -14,7 +14,7 @@ This article treats the continuum of the same central potential whose bound stat
 
 The article is organised as follows. The next section states the Coulomb problem in the biquaternion framework and fixes the Coulomb parameter. The third section carries out the partial-wave decomposition, writes the radial equation, and exhibits the regular Coulomb function and the Coulomb phase. The fourth obtains the scattering amplitude and Rutherford's formula. The fifth gives the Born approximation, evaluates the first Born amplitude, and explains why its modulus is already exact. The sixth treats the long-range tail and the energy dependence of the Coulomb phase. The seventh states what the biquaternion form adds and what remains open, and the closing sections are the summary, the notation table, and the external literature.
 
-The conventions are those of the companion articles: $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with $e_0=1,e_1,e_2,e_3$, $e_j^2=-e_0$, central $i$; $\mathbb{M}_\pm$ are the Hermitian and anti-Hermitian sectors; $\mathbb{C}_{\mathbb{B}}$ is the center; the state module is $\mathbb{B}\tilde P\cong\mathbb{C}^2$; the Hamiltonian is $\tilde H=[-\frac{\hbar^2}{2m}\nabla^2+V(r)]e_0$, central; and $\mathrm{Tr}(\tilde H)=2\,\mathrm{Sc}(\tilde H)$. The coordinate $r$ is the argument of the field.
+The conventions are those of the companion articles: $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with $e_0=1,e_1,e_2,e_3$, $e_j^2=-e_0$, central $i$; $\mathbb{M}_\pm$ are the Hermitian and anti-Hermitian sectors; $\mathbb{C}_{\mathbb{B}}$ is the center; the state module is $\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$; the Hamiltonian is $\tilde H=[-\frac{\hbar^2}{2m}\nabla^2+V(r)]e_0$, central; and $\mathrm{Tr}(\tilde H)=2\,\mathrm{Sc}(\tilde H)$. The coordinate $r$ is the argument of the field.
 
 ## The Coulomb Problem in Biquaternion Form
 
@@ -310,7 +310,7 @@ The biquaternion content is centrality: the potential couples only to the scalar
 | $i$ | Central scalar imaginary |
 | $\mathbb{C}_{\mathbb{B}}$ | Center; home of the amplitude and the phases |
 | $\mathbb{M}_+$, $\mathbb{M}_-$ | Hermitian and anti-Hermitian sectors |
-| $\mathbb{B}\tilde P\cong\mathbb{C}^2$ | State module |
+| $\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$ | State module |
 | $V(r)=\alpha/r$, $\alpha=Z_1Z_2e^2$ | Coulomb potential, central |
 | $\eta=m\alpha/\hbar^2k=\alpha/\hbar v$ | Coulomb parameter |
 | $u_l=rR_l$ | Reduced radial function |

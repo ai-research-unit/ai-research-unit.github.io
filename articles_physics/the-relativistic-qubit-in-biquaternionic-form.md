@@ -29,7 +29,7 @@ It is the unique simple left $\mathbb{B}$-module up to isomorphism; it is comple
 
 Two objects must be kept apart throughout. A **state vector** is an element $|u\rangle\in S$; a **state** in the statistical sense is a positive trace-one element $\tilde{\rho}\in\mathbb{M}_+$, i.e. an operator on $S$. The correspondence between them is the rank-one map
 $$
-|u\rangle \ \longleftrightarrow\ \tilde{P}(u) = \frac{|u\rangle\langle u|}{\langle u|u\rangle} = \Phi^{-1}\!\left(\frac{|u\rangle\langle u|}{\langle u|u\rangle}\right)\in\mathbb{M}_+ ,
+|u\rangle \ \longleftrightarrow\ \tilde\Pi(u) = \frac{|u\rangle\langle u|}{\langle u|u\rangle} = \Phi^{-1}\!\left(\frac{|u\rangle\langle u|}{\langle u|u\rangle}\right)\in\mathbb{M}_+ ,
 $$
 and it is the ordinary relation between a ket and a density operator. A general state is
 $$
@@ -37,7 +37,7 @@ $$
 $$
 so the state space is the Bloch ball $|\mathbf{r}|\leq1$, and the pure states are its boundary. The pure-state idempotents are
 $$
-\tilde{P}_\pm(\hat{\mu}) = \tfrac12\bigl(e_0 \pm i\hat{\mu}\bigr), \qquad |\hat{\mu}| = 1,
+\tilde\Pi_\pm(\hat{\mu}) = \tfrac12\bigl(e_0 \pm i\hat{\mu}\bigr), \qquad |\hat{\mu}| = 1,
 $$
 and the Born pairing is $\mathrm{Tr}(\tilde{\rho}\tilde{H}) = h_0 + \mathbf{r}\cdot\mathbf{h}$. None of this uses relativity; it is the content of the quantum-mechanical companion, recalled here because the relativistic qubit is a structure imposed on this state space.
 
@@ -129,22 +129,22 @@ The pure-state space of the relativistic qubit is therefore the Riemann sphere, 
 
 Let $|u\rangle$ be normalized and let
 $$
-\tilde{P}(u) = \Phi^{-1}\!\bigl(|u\rangle\langle u|\bigr)\in\mathbb{M}_+
+\tilde\Pi(u) = \Phi^{-1}\!\bigl(|u\rangle\langle u|\bigr)\in\mathbb{M}_+
 $$
 be the corresponding pure state. Define
 $$
-\tilde{V}(u) = i\,\tilde{P}(u)\in\mathbb{M}_- .
+\tilde{V}(u) = i\,\tilde\Pi(u)\in\mathbb{M}_- .
 $$
 Two elementary facts identify $\tilde{V}$ as a future null four-vector.
 
 **It is null.** The determinant of a rank-one matrix vanishes, and under the matrix model the determinant is the biquaternion norm, so
 $$
-N\bigl(\tilde{P}(u)\bigr) = \det\Phi\bigl(\tilde{P}(u)\bigr) = \det\bigl(|u\rangle\langle u|\bigr) = 0 ,
+N\bigl(\tilde\Pi(u)\bigr) = \det\Phi\bigl(\tilde\Pi(u)\bigr) = \det\bigl(|u\rangle\langle u|\bigr) = 0 ,
 \qquad
-N\bigl(\tilde{V}(u)\bigr) = i^2 N\bigl(\tilde{P}(u)\bigr) = 0 .
+N\bigl(\tilde{V}(u)\bigr) = i^2 N\bigl(\tilde\Pi(u)\bigr) = 0 .
 $$
 
-**It is future-directed and of definite normalization.** Writing $\tilde{P}(u) = \tfrac12(e_0 + i\mathbf{r})$ with $|\mathbf{r}| = 1$, the element $\tilde{V}(u) = i\tilde{P}(u)$ has the form
+**It is future-directed and of definite normalization.** Writing $\tilde\Pi(u) = \tfrac12(e_0 + i\mathbf{r})$ with $|\mathbf{r}| = 1$, the element $\tilde{V}(u) = i\tilde\Pi(u)$ has the form
 $$
 \tilde{V}(u) = \tfrac{i}{2}\,e_0 - \tfrac12\,\mathbf{r} ,
 $$
@@ -296,7 +296,7 @@ which fixes the rest four-velocity, is a unit real quaternion, and acts on the B
 | $S = \mathbb{C}^2$ | Defining (spinor) module, the qubit carrier |
 | $|u\rangle\in S$ | State vector (spinor) |
 | $\tilde{\rho} = \tfrac12(e_0 + i\mathbf{r})$ | State, Bloch vector $\mathbf{r}$, $|\mathbf{r}|\leq1$ |
-| $\tilde{P}_\pm(\hat{\mu}) = \tfrac12(e_0\pm i\hat{\mu})$ | Pure-state idempotent |
+| $\tilde\Pi_\pm(\hat{\mu}) = \tfrac12(e_0\pm i\hat{\mu})$ | Pure-state idempotent |
 | $\tilde{\Lambda}$, $N(\tilde{\Lambda}) = 1$ | Unit-norm biquaternion, element of $SL(2,\mathbb{C})$ |
 | $SU(2)$ | Unit real quaternions, unitary subgroup |
 | $z = u_1/u_0$ | Möbius coordinate on the pure-state sphere $\mathbb{CP}^1$ |

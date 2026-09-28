@@ -43,7 +43,7 @@ Each quaternion unit satisfies $e_j^2 = -e_0$, but the $e_j$ do not commute: $e_
 The two appear side by side in the idempotent
 
 $$
-\tilde{P}_\pm(\hat{\mu}) = \tfrac{1}{2}\left(e_0 \pm i\,\hat{\mu}\right),
+\tilde\Pi_\pm(\hat{\mu}) = \tfrac{1}{2}\left(e_0 \pm i\,\hat{\mu}\right),
 $$
 
 and this expression is precisely where the conflation happens. The $i$ is the central scalar imaginary; the $\hat{\mu}$ is the axis of the state. One is the complex structure, the other a direction of the state, and they must be read separately.
@@ -115,7 +115,7 @@ $$
 
 so the equation holds. The Hermitian-valued unknown is not inconsistent.
 
-What disqualifies this $\psi$ is not the equation but the requirement that a wave function be a state: $N(\psi) = \psi\bar{\psi} = -e_0$, so $\psi$ is invertible and in particular not a zero divisor. A wave function in the state module satisfies $\psi\tilde{P} = \psi$, hence $\psi(e_0 - \tilde{P}) = 0$ with $e_0 - \tilde{P} \neq 0$: every nonzero element of $\mathbb{B}\tilde{P}$ is a zero divisor. (The idempotent $\tilde{P}_+ = \tfrac{1}{2}(e_0 + ie_3)$ — which is $\tilde{P}$ itself — is an element of $\mathbb{M}_+$ that does lie in the state module; a generic Hermitian element does not. Membership in $\mathbb{B}\tilde{P}$ does not follow from being a zero divisor: $\tilde{P}_- = \tfrac{1}{2}(e_0 - ie_3)$ is a zero divisor too, and $\tilde{Q}\tilde{P} = \tilde{P}_-$ would give $\tilde{P}_- = \tilde{P}_-\tilde{P} = 0$, impossible.) The correct exclusion is therefore structural — $\mathbb{M}_+$ is not a left ideal, and its elements need not be zero divisors — not the absence of solutions.
+What disqualifies this $\psi$ is not the equation but the requirement that a wave function be a state: $N(\psi) = \psi\bar{\psi} = -e_0$, so $\psi$ is invertible and in particular not a zero divisor. A wave function in the state module satisfies $\psi\tilde{P} = \psi$, hence $\psi(e_0 - \tilde{P}) = 0$ with $e_0 - \tilde{P} \neq 0$: every nonzero element of $\mathbb{B}\tilde{P}$ is a zero divisor. (The idempotent $\tilde\Pi_+ = \tfrac{1}{2}(e_0 + ie_3)$ — which is $\tilde{P}$ itself — is an element of $\mathbb{M}_+$ that does lie in the state module; a generic Hermitian element does not. Membership in $\mathbb{B}\tilde{P}$ does not follow from being a zero divisor: $\tilde\Pi_- = \tfrac{1}{2}(e_0 - ie_3)$ is a zero divisor too, and $\tilde{Q}\tilde{P} = \tilde\Pi_-$ would give $\tilde\Pi_- = \tilde\Pi_-\tilde{P} = 0$, impossible.) The correct exclusion is therefore structural — $\mathbb{M}_+$ is not a left ideal, and its elements need not be zero divisors — not the absence of solutions.
 
 The correct relation between the two kinds of state is bilinear. From $\psi \in \mathbb{B}\tilde{P}$ one forms
 
@@ -169,10 +169,10 @@ $$
 i\hbar\,\partial_t\tilde{\rho} = [\tilde{H},\tilde{\rho}],
 $$
 
-which is the von Neumann equation of the parent article. The Born rule follows as there: with $\tilde{\rho} = \tfrac12(e_0 + i\mathbf{r})$ and $\tilde{P}_+(\hat{\mu}) = \tfrac12(e_0 + i\hat{\mu})$,
+which is the von Neumann equation of the parent article. The Born rule follows as there: with $\tilde{\rho} = \tfrac12(e_0 + i\mathbf{r})$ and $\tilde\Pi_+(\hat{\mu}) = \tfrac12(e_0 + i\hat{\mu})$,
 
 $$
-p_+ = \mathrm{Tr}\!\left(\tilde{P}_+(\hat{\mu})\,\tilde{\rho}\right) = \tfrac12\left(1 + \hat{\mu}\cdot\mathbf{r}\right).
+p_+ = \mathrm{Tr}\!\left(\tilde\Pi_+(\hat{\mu})\,\tilde{\rho}\right) = \tfrac12\left(1 + \hat{\mu}\cdot\mathbf{r}\right).
 $$
 
 For the up-state spinor $\psi = \begin{pmatrix} 1 \\ 0\end{pmatrix}$ one has $\mathbf{r} = e_3$, and $p_+ = \tfrac12(1 + \hat{\mu}\cdot e_3)$, the standard result.
@@ -296,11 +296,11 @@ Read in the two sectors, the equation says that the Hermitian observable $\tilde
 | $\mathbb{M}_-$ | Anti-Hermitian subspace (generators): $\tilde{G} = -i\tilde{H}/\hbar \in \mathbb{M}_-$ |
 | $\mathbb{H}_{\mathbb{B}}$ | Real quaternion subspace; home of the unit pure quaternions $\hat{\mu}$ |
 | $\tilde{H} = h_0e_0 + i\mathbf{h}$ | Hermitian element (Hamiltonian) |
-| $\tilde{P}_\pm(\hat{\mu}) = \tfrac12(e_0 \pm i\hat{\mu})$ | Idempotent (pure state); $\hat{\mu}$ the state axis |
+| $\tilde\Pi_\pm(\hat{\mu}) = \tfrac12(e_0 \pm i\hat{\mu})$ | Idempotent (pure state); $\hat{\mu}$ the state axis |
 | $\mathbb{B}\tilde{P} \cong \mathbb{C}^2$ | Minimal left ideal: the state module of spinors $\psi$ |
 | $\tilde{\rho} = \psi\psi^\dagger/\mathrm{Tr}(\psi^\dagger\psi)$ | Density matrix associated to a spinor |
 | $\tilde{U}(t) = \exp(-i\tilde{H}t/\hbar)$ | Unitary evolution, $\psi(t) = \tilde{U}(t)\psi(0)$ |
-| $\mathrm{Tr}(\tilde{P}_+(\hat{\mu})\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}_+(\hat{\mu})\tilde{H}) = h_0 + \hat{\mu}\cdot\mathbf{h}$ | Trace formula / Born rule |
+| $\mathrm{Tr}(\tilde\Pi_+(\hat{\mu})\tilde{H}) = 2\,\mathrm{Sc}(\tilde\Pi_+(\hat{\mu})\tilde{H}) = h_0 + \hat{\mu}\cdot\mathbf{h}$ | Trace formula / Born rule |
 | $e_j e_k = \varepsilon_{jkl}e_l$, $j \neq k$ | Quaternion multiplication |
 
 ## Further Reading

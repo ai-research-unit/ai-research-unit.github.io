@@ -473,9 +473,7 @@ Restricted to the six distinguished subspaces, the polar representation $\tilde{
 
 ## Further Reading
 
-- *The Polar Representation of Biquaternions* (`articles_physics/the-polar-representation-of-biquaternions.md`), for the four factors read on the Lorentz group and on the four-vector, and for the determinant, the interval and the light cone.
-- *Biquaternion Polar Representation* (`articles_maths/biquaternion-polar-representation.md`), for the theorem, the algorithm and the uniqueness of the four factors.
-- *Biquaternion Partial Polar Representations* (`articles_maths/biquaternion-partial-polar-representations.md`), for the three pairings of the four factors, which is the complementary way of losing factors.
+- *The Polar Representation of Biquaternions* (`articles_physics/the-polar-representation-of-biquaternions.md`), for the theorem, the four factors, the algorithm and the uniqueness, the determinant, the interval and the light cone.
 - *Relations Between Subspaces* (`articles_physics/relations-between-subspaces.md`), for the six subspaces, the involutions, the four blocks, the intersections and the biquaternion norm of each subspace.
 - *The Center Subspace C_B as the Complex Time Sector* (`articles_physics/the-center-subspace-c-b-as-the-complex-time-sector.md`), for the center on its own terms.
 - *The Vector Subspace Vect(B) as the Complex Space Sector* (`articles_physics/the-vector-subspace-vect-b-as-the-complex-space-sector.md`), for the complex null cone and the derived subspace.

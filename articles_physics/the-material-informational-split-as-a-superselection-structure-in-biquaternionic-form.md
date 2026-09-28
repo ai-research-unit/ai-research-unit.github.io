@@ -95,13 +95,13 @@ A superselection structure in its algebraic form requires the sectors to be the 
 $$
 \tilde{H}, \tilde{K}\in\mathbb{M}_+ \ \Longrightarrow\ (\tilde{H}\tilde{K})^\dagger = \tilde{K}\tilde{H} = \tilde{H}\tilde{K} \iff [\tilde{H},\tilde{K}] = 0 ,
 $$
-and the idempotents provide an elementary counterexample. For the two pure-state idempotents $\tilde{P}_+(\hat{\mu}) = \tfrac12(e_0+i\hat{\mu})$ and $\tilde{P}_+(\hat{\nu}) = \tfrac12(e_0+i\hat{\nu})$ with $\hat{\mu}\cdot\hat{\nu} = 0$,
+and the idempotents provide an elementary counterexample. For the two pure-state idempotents $\tilde\Pi_+(\hat{\mu}) = \tfrac12(e_0+i\hat{\mu})$ and $\tilde\Pi_+(\hat{\nu}) = \tfrac12(e_0+i\hat{\nu})$ with $\hat{\mu}\cdot\hat{\nu} = 0$,
 $$
-4\,\tilde{P}_+(\hat{\mu})\tilde{P}_+(\hat{\nu}) = e_0 + i(\hat{\mu}+\hat{\nu}) - (i\hat{\mu})(i\hat{\nu}),
+4\,\tilde\Pi_+(\hat{\mu})\tilde\Pi_+(\hat{\nu}) = e_0 + i(\hat{\mu}+\hat{\nu}) - (i\hat{\mu})(i\hat{\nu}),
 $$
 whose Hermitian conjugate differs: the commutator is
 $$
-[\tilde{P}_+(\hat{\mu}),\,\tilde{P}_+(\hat{\nu})] = -\tfrac12\,\hat{\mu}\times\hat{\nu},
+[\tilde\Pi_+(\hat{\mu}),\,\tilde\Pi_+(\hat{\nu})] = -\tfrac12\,\hat{\mu}\times\hat{\nu},
 $$
 a non-zero element of the anti-Hermitian sector. The product of two informational elements is therefore not informational; it has a material component. Equivalently,
 $$

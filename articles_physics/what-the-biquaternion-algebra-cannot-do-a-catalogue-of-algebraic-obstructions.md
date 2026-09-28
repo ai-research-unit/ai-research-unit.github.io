@@ -22,7 +22,7 @@ The catalogue is not a list of defects of the framework. It is the map of the bo
 
 Each item below is given in the form **statement — proof — consequence — remedy**, and each is verified either by explicit computation or by a standard theorem cited as standard.
 
-**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, $e_je_k=\epsilon_{jkl}e_l$ for $j\neq k$, and central $i$, $i^2=-1$. Conjugations are $\bar{\cdot}$ (quaternion), ${}^{*}$ (complex), $\dagger=\bar{\cdot}\circ{}^{*}$ (Hermitian), with $\flat=-\dagger$. The subspaces are $\mathbb{M}_+=\mathrm{span}_\mathbb{R}\{e_0,ie_1,ie_2,ie_3\}$ and $\mathbb{M}_-=\mathrm{span}_\mathbb{R}\{ie_0,e_1,e_2,e_3\}$, with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$. The trace is $\mathrm{Tr}(\tilde{Q})=2\,\mathrm{Sc}(\tilde{Q})$, $\mathrm{Tr}(e_0)=2$; the biquaternion norm is $N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}$; the Hermitian form is $\langle\tilde{Q},\tilde{Y}\rangle_\dagger=\mathrm{Tr}(\tilde{Q}^\dagger\tilde{Y})$. The matrix model is the $\mathbb{C}$-linear representation $\Phi(e_0)=I_2$, $\Phi(e_k)=-i\sigma_k$, with $\Phi(\mathbb{B})=M_2(\mathbb{C})$ and $\det M(\tilde{Q})=N(\tilde{Q})$. States are $\tilde{\rho}=\tfrac12(e_0+i\mathbf{r})$ with $|\mathbf{r}|\leq1$; pure states are $\tilde{P}(\hat{\mu})=\tfrac12(e_0+i\hat{\mu})$; the state module is the minimal left ideal $\mathbb{B}p$ with $p=\tfrac12(e_0+ie_3)$.
+**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, $e_je_k=\epsilon_{jkl}e_l$ for $j\neq k$, and central $i$, $i^2=-1$. Conjugations are $\bar{\cdot}$ (quaternion), ${}^{*}$ (complex), $\dagger=\bar{\cdot}\circ{}^{*}$ (Hermitian), with $\flat=-\dagger$. The subspaces are $\mathbb{M}_+=\mathrm{span}_\mathbb{R}\{e_0,ie_1,ie_2,ie_3\}$ and $\mathbb{M}_-=\mathrm{span}_\mathbb{R}\{ie_0,e_1,e_2,e_3\}$, with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$. The trace is $\mathrm{Tr}(\tilde{Q})=2\,\mathrm{Sc}(\tilde{Q})$, $\mathrm{Tr}(e_0)=2$; the biquaternion norm is $N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}$; the Hermitian form is $\langle\tilde{Q},\tilde{Y}\rangle_\dagger=\mathrm{Tr}(\tilde{Q}^\dagger\tilde{Y})$. The matrix model is the $\mathbb{C}$-linear representation $\Phi(e_0)=I_2$, $\Phi(e_k)=-i\sigma_k$, with $\Phi(\mathbb{B})=M_2(\mathbb{C})$ and $\det M(\tilde{Q})=N(\tilde{Q})$. States are $\tilde{\rho}=\tfrac12(e_0+i\mathbf{r})$ with $|\mathbf{r}|\leq1$; pure states are $\tilde\Pi(\hat{\mu})=\tfrac12(e_0+i\hat{\mu})$; the state module is the minimal left ideal $\mathbb{B}p$ with $p=\tfrac12(e_0+ie_3)$.
 
 ## How an Obstruction Is Certified
 
@@ -42,7 +42,7 @@ The catalogue is deliberately non-relativistic and structural. Obstructions that
 
 **Statement.** There is no maximal commutative subalgebra $\mathbb{A}\subset\mathbb{B}$ that is invariant under the full symmetry group of the algebra. Equivalently, no classical bit is singled out by the algebra's own structure.
 
-**Proof.** The maximal commutative subalgebras are the $\mathbb{A}_{\hat{n}}=\mathrm{span}_\mathbb{C}\{\tilde{P}(\hat{n}),e_0-\tilde{P}(\hat{n})\}$ for unit $\hat{n}\in\mathbb{R}^3$; the family is parametrized by $\mathbb{RP}^2$ and is permuted transitively by the adjoint action of $U(2)$. A subalgebra invariant under all of $U(2)$ would have to be fixed by a transitive group action on a space with more than one point, which is impossible. The only commutative subalgebra invariant under the whole adjoint action is the centre, which is not maximal.
+**Proof.** The maximal commutative subalgebras are the $\mathbb{A}_{\hat{n}}=\mathrm{span}_\mathbb{C}\{\tilde\Pi(\hat{n}),e_0-\tilde\Pi(\hat{n})\}$ for unit $\hat{n}\in\mathbb{R}^3$; the family is parametrized by $\mathbb{RP}^2$ and is permuted transitively by the adjoint action of $U(2)$. A subalgebra invariant under all of $U(2)$ would have to be fixed by a transitive group action on a space with more than one point, which is impossible. The only commutative subalgebra invariant under the whole adjoint action is the centre, which is not maximal.
 
 **Consequence.** The framework has no preferred pointer basis and no canonical classical bit. Every classical reading of the algebra requires a choice of axis, and the choice is not derivable from the algebra.
 
@@ -98,11 +98,11 @@ so the solutions are exactly $0$ and $e_0$. The corresponding two-sided ideals $
 
 **Statement.** The radical of the biquaternion norm is non-trivial: there are non-zero $\tilde{Q}$ with $N(\tilde{Q})=0$, and every null element is orthogonal to itself in the associated bilinear form. In particular the whole pure-state boundary is null.
 
-**Proof.** For the pure-state projector, $\bar{\tilde{P}}(\hat{\mu})=e_0-\tilde{P}(\hat{\mu})$ and hence
+**Proof.** For the pure-state projector, $\bar{\tilde{P}}(\hat{\mu})=e_0-\tilde\Pi(\hat{\mu})$ and hence
 $$
-N\bigl(\tilde{P}(\hat{\mu})\bigr)=\tilde{P}(\hat{\mu})\,\bar{\tilde{P}}(\hat{\mu})=\tilde{P}(\hat{\mu})\bigl(e_0-\tilde{P}(\hat{\mu})\bigr)=0
+N\bigl(\tilde\Pi(\hat{\mu})\bigr)=\tilde\Pi(\hat{\mu})\,\bar{\tilde{P}}(\hat{\mu})=\tilde\Pi(\hat{\mu})\bigl(e_0-\tilde\Pi(\hat{\mu})\bigr)=0
 $$
-for every $\hat{\mu}$ while $\tilde{P}(\hat{\mu})\neq0$; indeed the defining property $\tilde{P}^2=\tilde{P}$ together with $\tilde{P}\bar{\tilde{P}}=0$ characterises the boundary of the state space. Likewise $e_0\pm ie_k$ are null non-zero vectors, since $N(e_0\pm ie_k)=(1-1)e_0=0$.
+for every $\hat{\mu}$ while $\tilde\Pi(\hat{\mu})\neq0$; indeed the defining property $\tilde{P}^2=\tilde{P}$ together with $\tilde{P}\bar{\tilde{P}}=0$ characterises the boundary of the state space. Likewise $e_0\pm ie_k$ are null non-zero vectors, since $N(e_0\pm ie_k)=(1-1)e_0=0$.
 
 **Consequence.** The state space is the boundary of the cone of a degenerate quadratic form. One cannot speak of the "length" of a state; the metric must be obtained as the second variation on the null boundary, and not from the form's value at a point.
 
@@ -156,7 +156,7 @@ for every $\hat{\mu}$ while $\tilde{P}(\hat{\mu})\neq0$; indeed the defining pro
 
 **Proof.** The complementary pure-state projectors satisfy
 $$
-\tilde{P}(\hat{\mu})\,\bigl(e_0-\tilde{P}(\hat{\mu})\bigr)=0
+\tilde\Pi(\hat{\mu})\,\bigl(e_0-\tilde\Pi(\hat{\mu})\bigr)=0
 $$
 for every unit $\hat{\mu}$, with both factors non-zero. In the matrix model this is the statement that rank-one matrices of orthogonal ranges multiply to zero; an element is invertible exactly when $\det M(\tilde{Q})=N(\tilde{Q})\neq0$, and the zero divisors are the elements of vanishing norm.
 
@@ -365,7 +365,7 @@ Each obstruction is proved from the defining relations and is stated with its co
 | $\mathrm{Tr}(\tilde{Q})=2\,\mathrm{Sc}(\tilde{Q})$ | Trace, $\mathrm{Tr}(e_0)=2$ |
 | $N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}$ | Biquaternion norm, $\mathbb{B}^{\times}=\{N\neq0\}$ |
 | $\langle\tilde{Q},\tilde{Y}\rangle_\dagger=\mathrm{Tr}(\tilde{Q}^\dagger\tilde{Y})$ | Hermitian form |
-| $\tilde{P}(\hat{\mu})=\tfrac12(e_0+i\hat{\mu})$ | Pure state, null under $N$ |
+| $\tilde\Pi(\hat{\mu})=\tfrac12(e_0+i\hat{\mu})$ | Pure state, null under $N$ |
 | $\mathbb{A}_{\hat{n}}$ | Maximal commutative subalgebra |
 | $\mathbb{B}p$, $p=\tfrac12(e_0+ie_3)$, also written $S$ | State (spinor) module, $\cong\mathbb{C}^2$; $\mathbb{B}=\mathrm{End}(S)$ |
 | $M_2(\mathbb{C})$ | Matrix model; $\Phi(e_0)=I_2$, $\Phi(e_k)=-i\sigma_k$ |

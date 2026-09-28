@@ -290,6 +290,22 @@ $$
 
 That the set is smooth away from the origin, and its differential structure, are analytic and topological statements and are in *Biquaternion Topology* and *Biquaternion Analysis*. Only the dimension count, which is algebraic, is used here.
 
+## The Factorisation of the Null Elements
+
+In the matrix realization $\mathbb{B}\cong M_2(\mathbb{C})$ the nonzero null elements are exactly the factorisable ones, each an outer product
+$$
+A=uv^{T},\qquad u=\binom{\alpha}{\beta}\neq0,\quad v=\binom{\gamma}{\delta}\neq0,
+$$
+determined by $(u,v)$ up to $(u,v)\mapsto(\lambda u,\lambda^{-1}v)$. Projectivising gives the **Segre embedding**
+$$
+s:\mathbb{P}^1\times\mathbb{P}^1\longrightarrow\mathbb{P}^3,\qquad ([u],[v])\mapsto[uv^{T}]=[\alpha\gamma:\alpha\delta:\beta\gamma:\beta\delta].
+$$
+The factorisation condition, read in the coordinates $Q_0,\dots,Q_3$ through $A_{11}=Q_0-iQ_3$, $A_{22}=Q_0+iQ_3$, $A_{12}=-iQ_1-Q_2$, $A_{21}=-iQ_1+Q_2$, is
+$$
+(Q_0-iQ_3)(Q_0+iQ_3)=(-iQ_1-Q_2)(-iQ_1+Q_2)\iff Q_0^2+Q_3^2=-Q_1^2-Q_2^2,
+$$
+exactly $N(\tilde{Q})=0$. Hence the projectivised null cone $\mathbb{P}(\mathcal{N})=\{[\tilde{Q}]\in\mathbb{P}^3:N(\tilde{Q})=0\}$ is the image of the Segre embedding, the affine null cone is the cone over the Segre variety $\mathbb{P}^1\times\mathbb{P}^1$, and the zero-divisor set is that cone with its apex removed. In particular a null biquaternion is parametrised by a pair of two-component spinors; the two rulings this parametrisation produces, and their reading as the two chiral spinor families, are in *Biquaternion Representation Theory* and *Biquaternion Null Quadric and Projective Geometry*.
+
 ## Summary
 
 The zero divisors of the biquaternion algebra are the nonzero elements on which $\tilde{Q}\bar{\tilde{Q}}$ vanishes. They split into two families:

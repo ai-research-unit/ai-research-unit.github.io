@@ -14,7 +14,7 @@ so the field strength is a central element of the algebra even though the field 
 
 The article is organised as follows. The next section sets up the minimal coupling in the biquaternion framework and derives the central commutator for the field strength. The third section solves the problem in the Landau gauge, reducing it to a shifted harmonic oscillator. The fourth treats the symmetric gauge, the guiding centre, and the angular momentum. The fifth counts the degeneracy and identifies the flux quantum. The sixth states precisely what is absent because the particle has spin 0. The seventh states what the biquaternion form adds and what remains open, and the closing sections are the summary, the notation table, and the external literature.
 
-The conventions are those of the companion articles: $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with $e_0=1,e_1,e_2,e_3$, $e_j^2=-e_0$, central $i$; $\mathbb{M}_\pm$ are the Hermitian and anti-Hermitian sectors; $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace; $\mathbb{C}_{\mathbb{B}}$ is the center; the state module is $\mathbb{B}\tilde P\cong\mathbb{C}^2$; and $\mathrm{Tr}(\tilde H)=2\,\mathrm{Sc}(\tilde H)$. Gaussian units are used, with the electric charge denoted $q$ and the mechanical momentum distinguished from the canonical momentum.
+The conventions are those of the companion articles: $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with $e_0=1,e_1,e_2,e_3$, $e_j^2=-e_0$, central $i$; $\mathbb{M}_\pm$ are the Hermitian and anti-Hermitian sectors; $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace; $\mathbb{C}_{\mathbb{B}}$ is the center; the state module is $\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$; and $\mathrm{Tr}(\tilde H)=2\,\mathrm{Sc}(\tilde H)$. Gaussian units are used, with the electric charge denoted $q$ and the mechanical momentum distinguished from the canonical momentum.
 
 ## The Charged Particle in the Biquaternion Framework
 
@@ -286,7 +286,7 @@ Each level is degenerate with multiplicity $N_\phi=AB/\Phi_0$, the number of flu
 | $\mathbb{C}_{\mathbb{B}}$ | Center; home of the field strength and the spectrum |
 | $\mathbb{H}_{\mathbb{B}}$ | Real-quaternion subspace; home of $\mathbf B$ and $\mathbf A$ |
 | $\mathbb{M}_+$, $\mathbb{M}_-$ | Hermitian and anti-Hermitian sectors |
-| $\mathbb{B}\tilde P\cong\mathbb{C}^2$ | State module |
+| $\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$ | State module |
 | $\tilde\pi_k=\hat p_k-\frac{q}{c}A_k$ | Mechanical momentum; central Hermitian |
 | $[\tilde\pi_k,\tilde\pi_l]=\frac{i\hbar q}{c}\varepsilon_{klm}B_me_0$ | Central field-strength commutator |
 | $\omega_c=\lvert q\rvert B/mc$ | Cyclotron frequency |

@@ -14,7 +14,7 @@ a multiple of the identity, because a scalar potential couples to the scalar slo
 
 The article is organised as follows. The next section writes the equation, reduces it to a scalar problem, and derives the flux from the trace pairing. The third section sets up the scattering problem, defines the amplitudes and the $S$-matrix, and proves flux conservation. The fourth solves the four standard potentials exactly. The fifth introduces the transfer matrix and its composition law. The sixth gives the biquaternion reading of the $S$-matrix, of the absent spin-flip channel, and of the bound states. The seventh states what the algebra adds and what remains open, and the closing sections are the summary, the notation table, and the external literature.
 
-The conventions are those of the companion articles. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with units $e_0=1,e_1,e_2,e_3$, $e_j^2=-e_0$, and central scalar imaginary $i$; $\mathbb{M}_+$ is the Hermitian and $\mathbb{M}_-$ the anti-Hermitian subspace; $\mathbb{C}_{\mathbb{B}}$ is the center; the state module is $\mathbb{B}\tilde P \cong \mathbb{C}^2$ with the isomorphism $\Phi$ sending $e_0\mapsto I_2$ and $e_k\mapsto -i\sigma_k$; and $\mathrm{Tr}(\tilde H)=2\,\mathrm{Sc}(\tilde H)$. The coordinate $x$ is the argument of the field, not an algebraic observable.
+The conventions are those of the companion articles. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with units $e_0=1,e_1,e_2,e_3$, $e_j^2=-e_0$, and central scalar imaginary $i$; $\mathbb{M}_+$ is the Hermitian and $\mathbb{M}_-$ the anti-Hermitian subspace; $\mathbb{C}_{\mathbb{B}}$ is the center; the state module is $\mathbb{B}\tilde\Pi\cong \mathbb{C}^2$ with the isomorphism $\Phi$ sending $e_0\mapsto I_2$ and $e_k\mapsto -i\sigma_k$; and $\mathrm{Tr}(\tilde H)=2\,\mathrm{Sc}(\tilde H)$. The coordinate $x$ is the argument of the field, not an algebraic observable.
 
 ## The One-Dimensional Biquaternion Schrödinger Equation
 
@@ -28,7 +28,7 @@ $$
 \tilde H = \left[-\frac{\hbar^2}{2m}\frac{d^2}{dx^2} + V(x)\right]e_0 = h_0(x)\,e_0,
 $$
 
-with $\psi$ a field taking values in the state module $\mathbb{B}\tilde P$. Since $\tilde H$ is central, the equation is componentwise the scalar equation
+with $\psi$ a field taking values in the state module $\mathbb{B}\tilde\Pi$. Since $\tilde H$ is central, the equation is componentwise the scalar equation
 
 $$
 -\frac{\hbar^2}{2m}\phi''(x) + V(x)\phi(x) = E\,\phi(x)
@@ -438,7 +438,7 @@ The biquaternion content is that the potential couples only to the scalar slot, 
 | $i$ | Central scalar imaginary |
 | $\mathbb{C}_{\mathbb{B}}$ | Center; the Hamiltonian multiplies $e_0$ |
 | $\mathbb{M}_+$, $\mathbb{M}_-$ | Hermitian and anti-Hermitian sectors |
-| $\mathbb{B}\tilde P \cong \mathbb{C}^2$ | State module |
+| $\mathbb{B}\tilde\Pi\cong \mathbb{C}^2$ | State module |
 | $\tilde H = [-\frac{\hbar^2}{2m}\partial_x^2 + V(x)]e_0$ | Central Hamiltonian |
 | $\psi = \phi\,\chi$ | Factorised stationary state |
 | $k_j = \sqrt{2m(E-V_j)}/\hbar$ | Wave vector in region $j$; imaginary when $E<V_j$ |

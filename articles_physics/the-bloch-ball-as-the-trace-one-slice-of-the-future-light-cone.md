@@ -192,13 +192,13 @@ $$
 and $\tilde{\rho}$ is idempotent if and only if $|\mathbf{r}| = 1$. The idempotents of trace one have the form
 
 $$
-\tilde{P}_\pm(\hat{\boldsymbol{\mu}}) = \tfrac{1}{2}\bigl(e_0 \pm i\hat{\boldsymbol{\mu}}\bigr), \qquad |\hat{\boldsymbol{\mu}}| = 1 ,
+\tilde\Pi_\pm(\hat{\boldsymbol{\mu}}) = \tfrac{1}{2}\bigl(e_0 \pm i\hat{\boldsymbol{\mu}}\bigr), \qquad |\hat{\boldsymbol{\mu}}| = 1 ,
 $$
 
 and are the rank-one projections of $\mathbb{M}_+$; under the isomorphism they are the standard spin-up and spin-down projectors along $\hat{\boldsymbol{\mu}}$. The boundary is thus parametrized by the unit sphere $S^2 \subset \mathbb{R}^3$, with $\hat{\boldsymbol{\mu}}$ and $-\hat{\boldsymbol{\mu}}$ giving the complementary idempotents:
 
 $$
-\tilde{P}_+(\hat{\boldsymbol{\mu}}) + \tilde{P}_-(\hat{\boldsymbol{\mu}}) = e_0, \qquad \tilde{P}_+(\hat{\boldsymbol{\mu}})\tilde{P}_-(\hat{\boldsymbol{\mu}}) = 0 .
+\tilde\Pi_+(\hat{\boldsymbol{\mu}}) + \tilde\Pi_-(\hat{\boldsymbol{\mu}}) = e_0, \qquad \tilde\Pi_+(\hat{\boldsymbol{\mu}})\tilde\Pi_-(\hat{\boldsymbol{\mu}}) = 0 .
 $$
 
 **Zero divisors.** On the boundary $N(\tilde{\rho}) = 0$ with $\tilde{\rho} \neq 0$, so $\tilde{\rho}$ is a zero divisor of $\mathbb{B}$. Conversely, a positive trace-one element of $\mathbb{M}_+$ that is a zero divisor has vanishing biquaternion norm, hence $|\mathbf{r}| = 1$, hence is pure. Within the trace-one hyperplane of $\mathbb{M}_+$, therefore,
@@ -214,7 +214,7 @@ This is the sense in which "the pure states are the zero divisors at trace one":
 The transition probability between two pure states is the trace pairing,
 
 $$
-\mathrm{Tr}\bigl(\tilde{P}(\hat{\boldsymbol{\mu}})\tilde{P}(\hat{\boldsymbol{\nu}})\bigr) = \tfrac{1}{2}\bigl(1 + \hat{\boldsymbol{\mu}}\cdot\hat{\boldsymbol{\nu}}\bigr) = \cos^2\frac{\theta}{2},
+\mathrm{Tr}\bigl(\tilde\Pi(\hat{\boldsymbol{\mu}})\tilde\Pi(\hat{\boldsymbol{\nu}})\bigr) = \tfrac{1}{2}\bigl(1 + \hat{\boldsymbol{\mu}}\cdot\hat{\boldsymbol{\nu}}\bigr) = \cos^2\frac{\theta}{2},
 $$
 
 where $\theta$ is the angle between the two Bloch directions. It equals $1$ for $\hat{\boldsymbol{\mu}} = \hat{\boldsymbol{\nu}}$ and $0$ for $\hat{\boldsymbol{\mu}} = -\hat{\boldsymbol{\nu}}$, the two antipodal points corresponding to the complementary orthogonal idempotents. Since the trace pairing is the Euclidean pairing, this is the usual cosine-squared law on the Bloch sphere.
@@ -230,7 +230,7 @@ $$
 both strictly positive and summing to one. The spectral decomposition is
 
 $$
-\tilde{\rho} = \lambda_+ \tilde{P}_+(\hat{\mathbf{r}}) + \lambda_- \tilde{P}_-(\hat{\mathbf{r}}), \qquad \hat{\mathbf{r}} = \frac{\mathbf{r}}{|\mathbf{r}|},
+\tilde{\rho} = \lambda_+ \tilde\Pi_+(\hat{\mathbf{r}}) + \lambda_- \tilde\Pi_-(\hat{\mathbf{r}}), \qquad \hat{\mathbf{r}} = \frac{\mathbf{r}}{|\mathbf{r}|},
 $$
 
 a convex combination of the two complementary pure states along the Bloch direction $\hat{\mathbf{r}}$. This is the algebraic statement that every mixed state is a statistical mixture of two orthogonal pure states, with weights determined by the radius.
@@ -319,14 +319,14 @@ $$
 
 so entropy decreases monotonically from the center to the boundary, in step with the increase of purity. Entropy and purity therefore carry the same information on a qubit — both are functions of $|\mathbf{r}|$, and each determines the other — the entropy being the steeper, logarithmically scaled version.
 
-Because the logarithm is the spectral logarithm on the positive cone, the trace form of the entropy is unambiguous for interior states: writing $\log\tilde{\rho} = \log\lambda_+\, \tilde{P}_+(\hat{\mathbf{r}}) + \log\lambda_-\, \tilde{P}_-(\hat{\mathbf{r}})$, one has $-2\,\mathrm{Sc}(\tilde{\rho}\log\tilde{\rho}) = S(\tilde{\rho})$, consistent with $\mathrm{Tr} = 2\,\mathrm{Sc}$.
+Because the logarithm is the spectral logarithm on the positive cone, the trace form of the entropy is unambiguous for interior states: writing $\log\tilde{\rho} = \log\lambda_+\, \tilde\Pi_+(\hat{\mathbf{r}}) + \log\lambda_-\, \tilde\Pi_-(\hat{\mathbf{r}})$, one has $-2\,\mathrm{Sc}(\tilde{\rho}\log\tilde{\rho}) = S(\tilde{\rho})$, consistent with $\mathrm{Tr} = 2\,\mathrm{Sc}$.
 
 ## Fidelity and Transition Probability
 
 For two pure states, the **transition probability** is the trace pairing computed above,
 
 $$
-\mathrm{Tr}\bigl(\tilde{P}(\hat{\boldsymbol{\mu}})\tilde{P}(\hat{\boldsymbol{\nu}})\bigr) = \tfrac{1}{2}\bigl(1 + \hat{\boldsymbol{\mu}}\cdot\hat{\boldsymbol{\nu}}\bigr) = \cos^2\frac{\theta}{2},
+\mathrm{Tr}\bigl(\tilde\Pi(\hat{\boldsymbol{\mu}})\tilde\Pi(\hat{\boldsymbol{\nu}})\bigr) = \tfrac{1}{2}\bigl(1 + \hat{\boldsymbol{\mu}}\cdot\hat{\boldsymbol{\nu}}\bigr) = \cos^2\frac{\theta}{2},
 $$
 
 a function of the angle between the Bloch directions alone. In terms of the boundary of the ball, it is a function of the chordal separation of two points of the sphere.
@@ -337,7 +337,7 @@ $$
 T(\tilde{\rho},\tilde{\sigma}) = \Bigl(\mathrm{Tr}\sqrt{\sqrt{\tilde{\rho}}\;\tilde{\sigma}\sqrt{\tilde{\rho}}}\,\Bigr)^{2}.
 $$
 
-All square roots here are the positive square roots within $\mathbb{M}_+$: since $\tilde{\rho}$ is a convex combination of complementary idempotents, $\sqrt{\tilde{\rho}} = \sqrt{\lambda_+}\,\tilde{P}_+(\hat{\mathbf{r}}) + \sqrt{\lambda_-}\,\tilde{P}_-(\hat{\mathbf{r}})$ lies in $\mathbb{M}_+$, and the same holds for the inner square root. In Bloch coordinates the expression evaluates to the closed form
+All square roots here are the positive square roots within $\mathbb{M}_+$: since $\tilde{\rho}$ is a convex combination of complementary idempotents, $\sqrt{\tilde{\rho}} = \sqrt{\lambda_+}\,\tilde\Pi_+(\hat{\mathbf{r}}) + \sqrt{\lambda_-}\,\tilde\Pi_-(\hat{\mathbf{r}})$ lies in $\mathbb{M}_+$, and the same holds for the inner square root. In Bloch coordinates the expression evaluates to the closed form
 
 $$
 T(\tilde{\rho},\tilde{\sigma}) = \tfrac{1}{2}\Bigl(1 + \mathbf{r}\cdot\mathbf{s} + \sqrt{\bigl(1 - |\mathbf{r}|^2\bigr)\bigl(1 - |\mathbf{s}|^2\bigr)}\Bigr).
@@ -373,7 +373,7 @@ $$
 
 the intersection is the closed unit ball $|\mathbf{r}| \leq 1$, the **Bloch ball**, whose boundary is the intersection with the null cone.
 
-The pure states are the boundary of the ball. Equivalently, they are the idempotents $\tilde{P}_\pm(\hat{\boldsymbol{\mu}}) = \tfrac{1}{2}(e_0 \pm i\hat{\boldsymbol{\mu}})$, the rank-one projections, the extreme rays of the positive cone, and the zero divisors of $\mathbb{B}$ at trace one; the boundary is parametrized by the Bloch sphere $S^2$. The mixed states are the interior, with eigenvalues $\tfrac{1}{2}(1 \pm |\mathbf{r}|)$; the maximally mixed state is the center $\mathbf{r} = 0$.
+The pure states are the boundary of the ball. Equivalently, they are the idempotents $\tilde\Pi_\pm(\hat{\boldsymbol{\mu}}) = \tfrac{1}{2}(e_0 \pm i\hat{\boldsymbol{\mu}})$, the rank-one projections, the extreme rays of the positive cone, and the zero divisors of $\mathbb{B}$ at trace one; the boundary is parametrized by the Bloch sphere $S^2$. The mixed states are the interior, with eigenvalues $\tfrac{1}{2}(1 \pm |\mathbf{r}|)$; the maximally mixed state is the center $\mathbf{r} = 0$.
 
 Purity is $\mathrm{Tr}(\tilde{\rho}^2) = \tfrac{1}{2}(1 + |\mathbf{r}|^2)$, so the Bloch radius is a measure of purity, and the linear entropy is $1 - \mathrm{Tr}(\tilde{\rho}^2) = 2N(\tilde{\rho})$, twice the biquaternion norm. The von Neumann entropy depends only on $|\mathbf{r}|$, vanishing on the boundary and maximal, equal to $\log 2$, at the center. The Uhlmann transition probability has the closed form $\tfrac{1}{2}\bigl(1 + \mathbf{r}\cdot\mathbf{s} + \sqrt{(1-|\mathbf{r}|^2)(1-|\mathbf{s}|^2)}\bigr)$, reducing on the boundary to $\cos^2(\theta/2)$. In every case the state space, its purity stratification, its entropy, and its fidelity are read off from the biquaternion norm and the trace on $\mathbb{M}_+$, without additional postulates.
 
@@ -394,7 +394,7 @@ Purity is $\mathrm{Tr}(\tilde{\rho}^2) = \tfrac{1}{2}(1 + |\mathbf{r}|^2)$, so t
 | $\mathrm{Tr}(\tilde{H}\tilde{K}) = 2(h_0 k_0 + \mathbf{h}\cdot\mathbf{k})$ | Trace pairing, signature $(4,0)$ |
 | $\mathcal{S} = \{\mathrm{Sc} = \tfrac{1}{2}\}$ | Trace-one hyperplane |
 | $\tilde{\rho} = \tfrac{1}{2}(e_0 + i\mathbf{r})$ | State, Bloch vector $\mathbf{r}$ |
-| $\tilde{P}_\pm(\hat{\boldsymbol{\mu}}) = \tfrac{1}{2}(e_0 \pm i\hat{\boldsymbol{\mu}})$ | Idempotent (pure state), $|\hat{\boldsymbol{\mu}}| = 1$ |
+| $\tilde\Pi_\pm(\hat{\boldsymbol{\mu}}) = \tfrac{1}{2}(e_0 \pm i\hat{\boldsymbol{\mu}})$ | Idempotent (pure state), $|\hat{\boldsymbol{\mu}}| = 1$ |
 | $\mathrm{Tr}(\tilde{\rho}^2) = \tfrac{1}{2}(1 + |\mathbf{r}|^2)$ | Purity |
 | $S(\tilde{\rho}) = -\mathrm{Tr}(\tilde{\rho}\log\tilde{\rho})$ | Von Neumann entropy |
 | $T(\tilde{\rho},\tilde{\sigma}) = (\mathrm{Tr}\sqrt{\sqrt{\tilde{\rho}}\,\tilde{\sigma}\sqrt{\tilde{\rho}}})^2$ | Uhlmann transition probability |

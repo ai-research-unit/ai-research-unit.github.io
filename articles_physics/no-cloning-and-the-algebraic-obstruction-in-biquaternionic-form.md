@@ -7,13 +7,13 @@ The no-cloning theorem states that an unknown quantum state cannot be copied: th
 The theorem is usually proved by an inner-product argument: a cloning transformation that worked for all states would have to be unitary, unitarity preserves inner products, but the inner product of two cloned outputs is the square of the input inner product, and a number equals its own square only when it is zero or one. This article presents the theorem in the biquaternion framework and isolates the operational meaning of "inner product" there. In the algebra the inner product of two rays is carried by the **trace pairing of their idempotents**,
 
 $$
-\bigl|\langle\psi|\phi\rangle\bigr|^2 = \mathrm{Tr}\bigl(\tilde{P}(\psi)\tilde{P}(\phi)\bigr) = 2\,\mathrm{Sc}\bigl(\tilde{P}(\psi)\tilde{P}(\phi)\bigr) \in [0,1],
+\bigl|\langle\psi|\phi\rangle\bigr|^2 = \mathrm{Tr}\bigl(\tilde\Pi(\psi)\tilde\Pi(\phi)\bigr) = 2\,\mathrm{Sc}\bigl(\tilde\Pi(\psi)\tilde\Pi(\phi)\bigr) \in [0,1],
 $$
 
 whose endpoints are the orthogonal and coincident cases. A cloning transformation must preserve this pairing, because it is an overlap and overlaps are preserved by the unitary evolution of the algebra; and it must simultaneously replace the pairing by its square, because two independent copies have an overlap that is the product of the two single-copy overlaps. The obstruction is therefore
 
 $$
-\mathrm{Tr}\bigl(\tilde{P}(\psi)\tilde{P}(\phi)\bigr) = \Bigl(\mathrm{Tr}\bigl(\tilde{P}(\psi)\tilde{P}(\phi)\bigr)\Bigr)^{2},
+\mathrm{Tr}\bigl(\tilde\Pi(\psi)\tilde\Pi(\phi)\bigr) = \Bigl(\mathrm{Tr}\bigl(\tilde\Pi(\psi)\tilde\Pi(\phi)\bigr)\Bigr)^{2},
 $$
 
 which forces the pairing to be $0$ or $1$: **cloning is possible exactly for sets of mutually orthogonal states, and for no others.** The two states are then perfectly distinguishable, and copying them is a classical operation.
@@ -84,10 +84,10 @@ $$
 Equating the two evaluations gives $\langle\psi|\phi\rangle = \langle\psi|\phi\rangle^2$, so $\langle\psi|\phi\rangle\in\{0,1\}$. In terms of the **trace pairing of the idempotents**, which is the modulus squared of the inner product,
 
 $$
-\mathrm{Tr}\bigl(\tilde{P}(\psi)\tilde{P}(\phi)\bigr)
-= \Bigl(\mathrm{Tr}\bigl(\tilde{P}(\psi)\tilde{P}(\phi)\bigr)\Bigr)^{2}
+\mathrm{Tr}\bigl(\tilde\Pi(\psi)\tilde\Pi(\phi)\bigr)
+= \Bigl(\mathrm{Tr}\bigl(\tilde\Pi(\psi)\tilde\Pi(\phi)\bigr)\Bigr)^{2}
 \qquad\Longrightarrow\qquad
-\mathrm{Tr}\bigl(\tilde{P}(\psi)\tilde{P}(\phi)\bigr)\in\{0,1\}.
+\mathrm{Tr}\bigl(\tilde\Pi(\psi)\tilde\Pi(\phi)\bigr)\in\{0,1\}.
 $$
 
 The pairing is $1$ only for $\psi=\phi$ up to phase, and $0$ only for orthogonal states.
@@ -111,11 +111,11 @@ $$
 \bigl|\langle\psi|\phi\rangle\bigr|^2 = \tfrac12 .
 $$
 
-The trace pairing is $\mathrm{Tr}(\tilde{P}(\psi)\tilde{P}(\phi)) = \tfrac12$, strictly inside $(0,1)$. A cloning unitary would have to send both $|\psi\rangle|0\rangle\mapsto|\psi\rangle|\psi\rangle$ and $|\phi\rangle|0\rangle\mapsto|\phi\rangle|\phi\rangle$, preserving the overlap $\tfrac{1}{\sqrt2}$ while the two-copy overlap would be $\tfrac12$; the unitarity would demand $\tfrac{1}{\sqrt2} = \tfrac12$, which is false. In the idempotent form, it would demand $\tfrac12 = \tfrac14$. Hence no unitary clones even this elementary pair. This computation was verified directly: the two-copy overlap was computed as $1/2$ against the one-copy overlap $1/\sqrt2\approx 0.7071$, and they differ.
+The trace pairing is $\mathrm{Tr}(\tilde\Pi(\psi)\tilde\Pi(\phi)) = \tfrac12$, strictly inside $(0,1)$. A cloning unitary would have to send both $|\psi\rangle|0\rangle\mapsto|\psi\rangle|\psi\rangle$ and $|\phi\rangle|0\rangle\mapsto|\phi\rangle|\phi\rangle$, preserving the overlap $\tfrac{1}{\sqrt2}$ while the two-copy overlap would be $\tfrac12$; the unitarity would demand $\tfrac{1}{\sqrt2} = \tfrac12$, which is false. In the idempotent form, it would demand $\tfrac12 = \tfrac14$. Hence no unitary clones even this elementary pair. This computation was verified directly: the two-copy overlap was computed as $1/2$ against the one-copy overlap $1/\sqrt2\approx 0.7071$, and they differ.
 
 ### Cloning versus copying
 
-For an orthogonal family — for instance the two states of any idempotent basis $\{\tilde{P}_+(\hat{\mu}),\tilde{P}_-(\hat{\mu})\}$ — cloning is possible: the unitary that copies in that basis, $\tilde{U}(|0\rangle\otimes|0\rangle)=|0\rangle\otimes|0\rangle$, $\tilde{U}(|1\rangle\otimes|0\rangle)=|1\rangle\otimes|1\rangle$, does the job. This is not quantum cloning but classical copying in a known basis, and it uses no information about the state beyond the bit that distinguishes the two orthogonal alternatives. The theorem's content is that the ability to copy in one basis confers no ability to copy in any other.
+For an orthogonal family — for instance the two states of any idempotent basis $\{\tilde\Pi_+(\hat{\mu}),\tilde\Pi_-(\hat{\mu})\}$ — cloning is possible: the unitary that copies in that basis, $\tilde{U}(|0\rangle\otimes|0\rangle)=|0\rangle\otimes|0\rangle$, $\tilde{U}(|1\rangle\otimes|0\rangle)=|1\rangle\otimes|1\rangle$, does the job. This is not quantum cloning but classical copying in a known basis, and it uses no information about the state beyond the bit that distinguishes the two orthogonal alternatives. The theorem's content is that the ability to copy in one basis confers no ability to copy in any other.
 
 ## The Obstruction is Linearity
 
@@ -178,10 +178,10 @@ A classical strategy is to measure the input and prepare two copies of the best 
 
 ### The fidelity as a trace pairing
 
-The fidelity is a trace pairing: for a pure target state $\tilde{P}(\psi)$ and an output state $\tilde{\rho}_{\text{out}}$,
+The fidelity is a trace pairing: for a pure target state $\tilde\Pi(\psi)$ and an output state $\tilde{\rho}_{\text{out}}$,
 
 $$
-F = \langle\psi|\tilde{\rho}_{\text{out}}|\psi\rangle = \mathrm{Tr}\bigl(\tilde{P}(\psi)\,\tilde{\rho}_{\text{out}}\bigr) = 2\,\mathrm{Sc}\bigl(\tilde{P}(\psi)\tilde{\rho}_{\text{out}}\bigr),
+F = \langle\psi|\tilde{\rho}_{\text{out}}|\psi\rangle = \mathrm{Tr}\bigl(\tilde\Pi(\psi)\,\tilde{\rho}_{\text{out}}\bigr) = 2\,\mathrm{Sc}\bigl(\tilde\Pi(\psi)\tilde{\rho}_{\text{out}}\bigr),
 $$
 
 the same pairing that gives the Born rule. The no-cloning obstruction and its approximate version are therefore both statements about this pairing: perfect cloning would require the pairing of input and clone to attain its maximum $1$ for every input, while the optimal cloner attains $5/6$ uniformly.
@@ -207,7 +207,7 @@ In the framework's terms, all three are the statement that the trace pairing can
 **What it does.**
 
 - It expresses the distinguishability of two rays as the trace pairing of their idempotents and shows that it lies in $[0,1]$, with the endpoints corresponding to orthogonal and coincident states.
-- It gives the algebraic obstruction as the requirement $\mathrm{Tr}(\tilde{P}_\psi\tilde{P}_\phi) = (\mathrm{Tr}(\tilde{P}_\psi\tilde{P}_\phi))^2$, whose only solutions on the pairing's range are $0$ and $1$; that is, universal cloning is possible exactly for orthogonal families.
+- It gives the algebraic obstruction as the requirement $\mathrm{Tr}(\tilde\Pi_\psi\tilde\Pi_\phi) = (\mathrm{Tr}(\tilde\Pi_\psi\tilde\Pi_\phi))^2$, whose only solutions on the pairing's range are $0$ and $1$; that is, universal cloning is possible exactly for orthogonal families.
 - It identifies the deeper obstruction as linearity: physical evolution is affine on the cone slice of $\mathbb{M}_+$, while the cloning target is quadratic.
 - It expresses the fidelity of approximate cloning as a trace pairing and transcribes the optimal cloner into the tensor-product algebra, verifying the value $5/6$.
 
@@ -235,20 +235,20 @@ In the framework's terms, all three are the statement that the trace pairing can
 The no-cloning theorem states that no physical process copies an unknown quantum state. In the biquaternion framework the distinguishability of two rays is the trace pairing of their idempotents,
 
 $$
-\bigl|\langle\psi|\phi\rangle\bigr|^2 = \mathrm{Tr}\bigl(\tilde{P}(\psi)\tilde{P}(\phi)\bigr) \in [0,1],
+\bigl|\langle\psi|\phi\rangle\bigr|^2 = \mathrm{Tr}\bigl(\tilde\Pi(\psi)\tilde\Pi(\phi)\bigr) \in [0,1],
 $$
 
 and a cloning unitary would have to preserve this pairing, because it is an overlap, while the pairing of two independent copies is its square. Equating the two requires
 
 $$
-\mathrm{Tr}\bigl(\tilde{P}(\psi)\tilde{P}(\phi)\bigr) = \Bigl(\mathrm{Tr}\bigl(\tilde{P}(\psi)\tilde{P}(\phi)\bigr)\Bigr)^{2},
+\mathrm{Tr}\bigl(\tilde\Pi(\psi)\tilde\Pi(\phi)\bigr) = \Bigl(\mathrm{Tr}\bigl(\tilde\Pi(\psi)\tilde\Pi(\phi)\bigr)\Bigr)^{2},
 \qquad\text{hence}\qquad
-\mathrm{Tr}\bigl(\tilde{P}(\psi)\tilde{P}(\phi)\bigr)\in\{0,1\}.
+\mathrm{Tr}\bigl(\tilde\Pi(\psi)\tilde\Pi(\phi)\bigr)\in\{0,1\}.
 $$
 
 Perfect universal cloning is therefore possible exactly for pairwise orthogonal families, where the states are classical alternatives; for any two non-orthogonal rays of the defining module it is impossible. Equivalently, the cloning target $\tilde{\rho}\mapsto\tilde{\rho}\otimes\tilde{\rho}$ is quadratic while every physical evolution is affine on the cone slice of $\mathbb{M}_+$, and the mismatch is the obstruction.
 
-Approximate cloning quantifies the failure. The optimal universal qubit cloner — the Bužek–Hillery machine, transcribed into the tensor-product algebra and verified here — clones every state with fidelity $5/6$, above the best measurement-and-preparation fidelity $2/3$; the fidelity is the trace pairing $\mathrm{Tr}(\tilde{P}(\psi)\tilde{\rho}_{\text{out}})$ of input and output. The companion no-go theorems (no-deleting, no-broadcasting) are the same obstruction in the mirror or in the mixed-state setting.
+Approximate cloning quantifies the failure. The optimal universal qubit cloner — the Bužek–Hillery machine, transcribed into the tensor-product algebra and verified here — clones every state with fidelity $5/6$, above the best measurement-and-preparation fidelity $2/3$; the fidelity is the trace pairing $\mathrm{Tr}(\tilde\Pi(\psi)\tilde{\rho}_{\text{out}})$ of input and output. The companion no-go theorems (no-deleting, no-broadcasting) are the same obstruction in the mirror or in the mixed-state setting.
 
 ## Summary of Notation
 
@@ -257,13 +257,13 @@ Approximate cloning quantifies the failure. The optimal universal qubit cloner �
 | $\mathbb{B}\otimes\mathbb{B}\cong M_4(\mathbb{C})$ | Two-qubit algebra (input and blank) |
 | $\mathbb{M}_+$ | Hermitian subspace (states) |
 | $e_0=1,e_1,e_2,e_3$; $i$ | Quaternion units; central imaginary |
-| $\tilde{P}(\psi)$ | Rank-one idempotent of a pure state |
-| $\mathrm{Tr}(\tilde{P}(\psi)\tilde{P}(\phi)) = |\langle\psi|\phi\rangle|^2$ | Trace pairing (distinguishability) |
+| $\tilde\Pi(\psi)$ | Rank-one idempotent of a pure state |
+| $\mathrm{Tr}(\tilde\Pi(\psi)\tilde\Pi(\phi)) = |\langle\psi|\phi\rangle|^2$ | Trace pairing (distinguishability) |
 | $\tilde{U}$ | Cloning unitary, $\tilde{U}\tilde{U}^\dagger = e_0\otimes e_0$ |
 | $\Phi$ | Cloning channel, completely positive trace preserving |
 | $\Phi(\tilde{\rho}\otimes\tilde{\rho}_0) = \tilde{\rho}\otimes\tilde{\rho}$ | Cloning requirement |
 | $\mathrm{Tr}(P_\psi P_\phi) = (\mathrm{Tr}(P_\psi P_\phi))^2$ | Algebraic obstruction |
-| $F = \mathrm{Tr}(\tilde{P}(\psi)\tilde{\rho}_{\text{out}})$ | Cloning fidelity |
+| $F = \mathrm{Tr}(\tilde\Pi(\psi)\tilde{\rho}_{\text{out}})$ | Cloning fidelity |
 | $F = 5/6$ | Bužek–Hillery optimal universal fidelity |
 | $F = 2/3$ | Measurement-and-preparation fidelity |
 | $|\psi(\theta,\varphi)\rangle$ | Test superposition family |

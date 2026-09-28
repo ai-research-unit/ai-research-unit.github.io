@@ -37,6 +37,17 @@ The folders containing the articles are articles_maths for maths articles and ar
 ### B) RULES DURING THE CHATTING PHASE
 ################################
 
+
+Use plain words.
+Use plain words.
+Use plain words.
+Use plain words.
+Use plain words.
+Use plain words.
+Use plain words.
+Use plain words.
+Use plain words.
+
 When a simple question is asked, make a simple response using a clear language, if possible under 200 words.
 
 When there is an issue, explain it clearly.

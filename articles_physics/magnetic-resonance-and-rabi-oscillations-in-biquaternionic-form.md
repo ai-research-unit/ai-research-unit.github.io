@@ -14,9 +14,9 @@ This article presents the driven spin-1/2 in the biquaternion algebra $\mathbb{B
    $$
    and the generalized Rabi frequency is its spectral gap, $\tilde\Omega = \sqrt{(\omega_0-\omega)^2+\omega_1^2}$.
 4. **Resonance is the vanishing of the longitudinal component.** At $\omega = \omega_0$ the effective field is purely transverse, the effective Hamiltonian is $\propto ie_1$, and the spin precesses about the transverse axis, so the two eigenstates exchange with unit amplitude after a $\pi$-pulse.
-5. **The transition probability is a trace pairing**, $P_\downarrow(t) = \mathrm{Tr}(\tilde{P}_-(\hat{z})\tilde{\rho}(t))$, and it equals the standard Rabi expression. The whole Rabi problem is thus a single rotor acting on an idempotent, read by the trace formula.
+5. **The transition probability is a trace pairing**, $P_\downarrow(t) = \mathrm{Tr}(\tilde\Pi_-(\hat{z})\tilde{\rho}(t))$, and it equals the standard Rabi expression. The whole Rabi problem is thus a single rotor acting on an idempotent, read by the trace formula.
 
-The notation is that of the read-list articles: $\tilde{S}_k = \tfrac{\hbar}{2}ie_k$, $\tilde{P}_\pm(\hat{\mu}) = \tfrac12(e_0\pm i\hat{\mu})$, $\tilde{\rho} = \tfrac12(e_0+i\mathbf{r})$, $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$, and the isomorphism $\Phi$ sends $e_0\mapsto I_2$, $ie_k\mapsto\sigma_k$.
+The notation is that of the read-list articles: $\tilde{S}_k = \tfrac{\hbar}{2}ie_k$, $\tilde\Pi_\pm(\hat{\mu}) = \tfrac12(e_0\pm i\hat{\mu})$, $\tilde{\rho} = \tfrac12(e_0+i\mathbf{r})$, $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$, and the isomorphism $\Phi$ sends $e_0\mapsto I_2$, $ie_k\mapsto\sigma_k$.
 
 The companion articles supply the pieces:
 - Companion article *Spin-1/2 Quantum Mechanics in Biquaternionic Form*, for the spin operators and the two-level Hamiltonian.
@@ -135,7 +135,7 @@ a purely transverse effective Hamiltonian: the longitudinal component of the eff
 
 ### The Transition Probability
 
-Prepare the spin in the upper eigenstate of the static field, $\tilde{\rho}(0) = \tilde{P}_+(\hat{z})$, and ask for the probability of finding it in the lower eigenstate $\tilde{P}_-(\hat{z})$ at time $t$. In the rotating frame the state evolves by the static Hamiltonian, so
+Prepare the spin in the upper eigenstate of the static field, $\tilde{\rho}(0) = \tilde\Pi_+(\hat{z})$, and ask for the probability of finding it in the lower eigenstate $\tilde\Pi_-(\hat{z})$ at time $t$. In the rotating frame the state evolves by the static Hamiltonian, so
 
 $$
 \tilde{\rho}_R(t) = \tilde{R}(t)\,\tilde{\rho}(0)\,\tilde{R}(t)^\dagger,
@@ -150,10 +150,10 @@ $$
 = \cos\frac{\tilde\Omega t}{2}\,e_0 - \sin\frac{\tilde\Omega t}{2}\;\frac{\omega_1 e_1 + \Delta e_3}{\tilde\Omega} .
 $$
 
-The exponent is a real quaternion, so $\tilde{R}\in\mathbb{H}_{\mathbb{B}}$ is a rotor and the rotation it generates is a spatial rotation of the Bloch vector about $\hat{n}_R$ at the rate $\tilde\Omega$. The state in the laboratory frame is $\tilde{\rho}(t) = \tilde{U}_R(t)\tilde{\rho}_R(t)\tilde{U}_R(t)^\dagger$, and the transition probability is the trace pairing with the fixed idempotent $\tilde{P}_-(\hat{z})$. Restoring the frame rotor and evaluating the trace gives the standard result
+The exponent is a real quaternion, so $\tilde{R}\in\mathbb{H}_{\mathbb{B}}$ is a rotor and the rotation it generates is a spatial rotation of the Bloch vector about $\hat{n}_R$ at the rate $\tilde\Omega$. The state in the laboratory frame is $\tilde{\rho}(t) = \tilde{U}_R(t)\tilde{\rho}_R(t)\tilde{U}_R(t)^\dagger$, and the transition probability is the trace pairing with the fixed idempotent $\tilde\Pi_-(\hat{z})$. Restoring the frame rotor and evaluating the trace gives the standard result
 
 $$
-P_{\downarrow}(t) = \mathrm{Tr}\!\left(\tilde{P}_-(\hat{z})\,\tilde{\rho}(t)\right)
+P_{\downarrow}(t) = \mathrm{Tr}\!\left(\tilde\Pi_-(\hat{z})\,\tilde{\rho}(t)\right)
 = \frac{\omega_1^2}{\omega_1^2+\Delta^2}\,\sin^2\!\left(\frac{\sqrt{\omega_1^2+\Delta^2}}{2}\,t\right).
 $$
 
@@ -187,7 +187,7 @@ t = \frac{\pi}{\omega_1}:\quad P_\downarrow = \sin^2\frac{\pi}{2} = 1,
 t = \frac{\pi}{2\omega_1}:\quad P_\downarrow = \sin^2\frac{\pi}{4} = \frac12 .
 $$
 
-The first is a $\pi$-pulse: it inverts the spin, carrying $\tilde{P}_+(\hat{z})$ to $\tilde{P}_-(\hat{z})$ with unit probability. The second is a $\pi/2$-pulse: it prepares the equal coherent superposition. In the algebra these are the statements that the rotor $\tilde{R}(\pi/\omega_1) = -e_1$, a $\pi$-rotation about the effective axis $e_1$, exchanges the two idempotents, and that $\tilde{R}(\pi/2\omega_1)$ carries the pole of the Bloch sphere to its equator. A $\pi/2$-pulse followed by a free Larmor evolution and a second $\pi/2$-pulse is the standard Ramsey interferometer; its fringes are governed by the phase accumulated in the interval, in which a dynamical part and a geometric part can be separated.
+The first is a $\pi$-pulse: it inverts the spin, carrying $\tilde\Pi_+(\hat{z})$ to $\tilde\Pi_-(\hat{z})$ with unit probability. The second is a $\pi/2$-pulse: it prepares the equal coherent superposition. In the algebra these are the statements that the rotor $\tilde{R}(\pi/\omega_1) = -e_1$, a $\pi$-rotation about the effective axis $e_1$, exchanges the two idempotents, and that $\tilde{R}(\pi/2\omega_1)$ carries the pole of the Bloch sphere to its equator. A $\pi/2$-pulse followed by a free Larmor evolution and a second $\pi/2$-pulse is the standard Ramsey interferometer; its fringes are governed by the phase accumulated in the interval, in which a dynamical part and a geometric part can be separated.
 
 ## The Bloch Picture
 
@@ -249,7 +249,7 @@ $$
 
 The effective Hamiltonian is a spin observable along the unit vector $\hat{n}_R = (\omega_1 e_1 + \Delta e_3)/\tilde\Omega$, with $\Delta = \omega_0-\omega$ the detuning and $\tilde\Omega = \sqrt{\omega_1^2+\Delta^2}$ the generalized Rabi frequency equal to its spectral gap. Resonance $\omega = \omega_0$ makes $\tilde{H}_R = -\tfrac{\hbar\omega_1}{2}ie_1$ purely transverse, and then the spin precesses about the equator.
 
-The transition probability is the trace pairing $P_\downarrow(t) = \mathrm{Tr}(\tilde{P}_-(\hat{z})\tilde{\rho}(t))$, and it equals the Rabi formula
+The transition probability is the trace pairing $P_\downarrow(t) = \mathrm{Tr}(\tilde\Pi_-(\hat{z})\tilde{\rho}(t))$, and it equals the Rabi formula
 
 $$
 P_\downarrow(t) = \frac{\omega_1^2}{\omega_1^2+\Delta^2}\,\sin^2\!\left(\frac{\tilde\Omega t}{2}\right),

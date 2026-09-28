@@ -8,7 +8,7 @@ $$
 \tilde{Q} = r\,e^{i\alpha}\,B\,\hat{q} , \qquad r\in\mathbb{R}_{>0}, \quad \alpha\in\left(-\tfrac{\pi}{2},\tfrac{\pi}{2}\right], \quad B\in\mathbb{M}_+, \quad \hat{q}\in\mathrm{Sp}(1) ,
 $$
 
-from the physics side. The algebra, the existence, the uniqueness and the domain of the representation are proved in the companion article *Biquaternion Polar Representation* of the maths menu; nothing algebraic is reproved here. What this article does is identify each of the four factors with an object that the physics articles of the corpus already use, and show that the Cartan decomposition of the Lorentz group, the determinant of the $2\times2$ and $4\times4$ matrix representations, and the interval of a four-vector are the four factors seen one at a time.
+from the physics side. The algebra, the existence, the uniqueness and the domain of the representation are established here. What the article does with them is identify each of the four factors with an object that the physics articles of the corpus already use, and show that the Cartan decomposition of the Lorentz group, the determinant of the $2\times2$ and $4\times4$ matrix representations, and the interval of a four-vector are the four factors seen one at a time.
 
 The dictionary is as follows, and each line is established in a section below.
 
@@ -274,8 +274,7 @@ The polar representation of a biquaternion is $r e^{i\alpha}B\hat{q}$, and in th
 
 ## Further Reading
 
-- *Biquaternion Polar Representation* (`articles_maths/biquaternion-polar-representation.md`), for the theorem, the four factors, the algorithm and the uniqueness.
-- *Biquaternion Partial Polar Representations* (`articles_maths/biquaternion-partial-polar-representations.md`), for the Hamilton, complex and Cartan representations as the three pairings of the four factors.
+- *The Polar Representation in Subspaces* (`articles_physics/the-polar-representation-in-subspaces.md`), for the Hamilton, complex and Cartan representations as the three pairings of the four factors.
 - *The 2×2 Matrix Representation of Biquaternions* (`articles_physics/the-2x2-matrix-representation-of-biquaternions.md`), for $\det\Phi(\tilde{Q}) = N(\tilde{Q})$ and the matrix polar decomposition.
 - *The 4×4 Regular Matrix Representation of Biquaternions* (`articles_physics/the-4x4-regular-matrix-representation-of-biquaternions.md`), for the squared determinant, the trace $4Q_0$ and the two chiralities.
 - *The Four-Vector Representation of Biquaternions* (`articles_physics/the-four-vector-representation-of-biquaternions.md`), for the informational and material sectors, the interval and the real restrictions of the biquaternion norm.

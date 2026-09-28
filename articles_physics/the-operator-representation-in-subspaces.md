@@ -382,4 +382,3 @@ The type of the operator is therefore decided by the class of the acting element
 - *The 2×2 Matrix Representation of Biquaternions* (`articles_physics/the-2x2-matrix-representation-of-biquaternions.md`), for the matrix image of the sandwich as a similarity
 - *Conventions in the Biquaternion Universe* (`articles_physics/conventions-in-the-biquaternion-universe.md`), for the conventions used throughout
 - *Introduction to the Biquaternion Universe* (`articles_physics/introduction-to-the-biquaternion-universe.md`), for the map of the series
-- *Biquaternion Operator Representation* (`articles_maths/biquaternion-operator-representation.md`), the maths companion, for the same sandwich treated algebraically

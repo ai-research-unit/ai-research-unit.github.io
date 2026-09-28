@@ -16,7 +16,7 @@ $$
 e_0 \mapsto I_2, \quad e_1 \mapsto -i\sigma_1, \quad e_2 \mapsto -i\sigma_2, \quad e_3 \mapsto -i\sigma_3,
 $$
 
-where $\sigma_1, \sigma_2, \sigma_3$ are the Pauli matrices and $i$ is the standard imaginary unit of $\mathbb{C} \subset M_2(\mathbb{C})$ (the image of the scalar imaginary of $\mathbb{B}$ under the isomorphism). Under this convention, a Hermitian element $\tilde{H} = h_0 e_0 + i\mathbf{h}$ maps to $h_0 I + \mathbf{h}\cdot\boldsymbol{\sigma}$, and the idempotent $\tilde{P}_+(\hat{\mu})$ maps to the standard spin-up projector along $\hat{\mu}$.
+where $\sigma_1, \sigma_2, \sigma_3$ are the Pauli matrices and $i$ is the standard imaginary unit of $\mathbb{C} \subset M_2(\mathbb{C})$ (the image of the scalar imaginary of $\mathbb{B}$ under the isomorphism). Under this convention, a Hermitian element $\tilde{H} = h_0 e_0 + i\mathbf{h}$ maps to $h_0 I + \mathbf{h}\cdot\boldsymbol{\sigma}$, and the idempotent $\tilde\Pi_+(\hat{\mu})$ maps to the standard spin-up projector along $\hat{\mu}$.
 
 ## The Hermitian Subspace
 
@@ -117,22 +117,22 @@ The trace pairing is the natural inner product on the space of operators; the bi
 A **pure state** of a qubit is a rank-one projection operator. In the biquaternion framework, the rank-one projections in $\mathbb{M}_+$ are the **idempotents**:
 
 $$
-\tilde{P}_\pm(\hat{\mu}) = \tfrac{1}{2}\left(e_0 \pm i\,\hat{\mu}\right),
+\tilde\Pi_\pm(\hat{\mu}) = \tfrac{1}{2}\left(e_0 \pm i\,\hat{\mu}\right),
 $$
 
 where $\hat{\mu} = \mu_1 e_1 + \mu_2 e_2 + \mu_3 e_3$ is a unit pure real quaternion, $|\hat{\mu}| = 1$.
 
 **Properties of the idempotents:**
 
-1. **Hermitian:** $\tilde{P}_\pm^\dagger = \tilde{P}_\pm$.
-2. **Idempotent:** $\tilde{P}_\pm^2 = \tilde{P}_\pm$.
-3. **Trace one:** $\mathrm{Tr}(\tilde{P}_\pm) = 1$.
-4. **Complementary:** $\tilde{P}_+ + \tilde{P}_- = e_0$, and $\tilde{P}_+ \tilde{P}_- = 0 = \tilde{P}_- \tilde{P}_+$.
-5. **Zero divisors:** $N(\tilde{P}_\pm) = 0$.
+1. **Hermitian:** $\tilde\Pi_\pm^\dagger = \tilde\Pi_\pm$.
+2. **Idempotent:** $\tilde\Pi_\pm^2 = \tilde\Pi_\pm$.
+3. **Trace one:** $\mathrm{Tr}(\tilde\Pi_\pm) = 1$.
+4. **Complementary:** $\tilde\Pi_+ + \tilde\Pi_- = e_0$, and $\tilde\Pi_+ \tilde\Pi_- = 0 = \tilde\Pi_- \tilde\Pi_+$.
+5. **Zero divisors:** $N(\tilde\Pi_\pm) = 0$.
 
-The **parametrization** is by the unit sphere $S^2 \subset \mathbb{R}^3$: the direction $\hat{\mu}$ determines the idempotent $\tilde{P}_+(\hat{\mu})$ uniquely, and the complementary idempotent $\tilde{P}_-(\hat{\mu}) = \tilde{P}_+(-\hat{\mu})$ corresponds to the opposite direction.
+The **parametrization** is by the unit sphere $S^2 \subset \mathbb{R}^3$: the direction $\hat{\mu}$ determines the idempotent $\tilde\Pi_+(\hat{\mu})$ uniquely, and the complementary idempotent $\tilde\Pi_-(\hat{\mu}) = \tilde\Pi_+(-\hat{\mu})$ corresponds to the opposite direction.
 
-**Identification with standard states.** Under the isomorphism of this article, the idempotent $\tilde{P}_+(\hat{\mu})$ maps to the standard pure state
+**Identification with standard states.** Under the isomorphism of this article, the idempotent $\tilde\Pi_+(\hat{\mu})$ maps to the standard pure state
 
 $$
 |\hat{\mu}+\rangle\langle\hat{\mu}+|,
@@ -193,7 +193,7 @@ The **scalar part** $h_0 e_0$ is the trace part: $\mathrm{Tr}(\tilde{H}) = 2 h_0
 The **spectral decomposition** of $\tilde{H}$ is
 
 $$
-\tilde{H} = \lambda_+ \tilde{P}_+(\hat{\mathbf{h}}) + \lambda_- \tilde{P}_-(\hat{\mathbf{h}}),
+\tilde{H} = \lambda_+ \tilde\Pi_+(\hat{\mathbf{h}}) + \lambda_- \tilde\Pi_-(\hat{\mathbf{h}}),
 $$
 
 with
@@ -202,9 +202,9 @@ $$
 \hat{\mathbf{h}} = \frac{\mathbf{h}}{|\mathbf{h}|}, \qquad \lambda_\pm = h_0 \pm |\mathbf{h}|.
 $$
 
-The eigenvalues are $\lambda_\pm$, and the eigenvectors are the idempotents $\tilde{P}_\pm(\hat{\mathbf{h}})$. So every Hermitian element of $\mathbb{M}_+$ has a spectral decomposition in terms of idempotents.
+The eigenvalues are $\lambda_\pm$, and the eigenvectors are the idempotents $\tilde\Pi_\pm(\hat{\mathbf{h}})$. So every Hermitian element of $\mathbb{M}_+$ has a spectral decomposition in terms of idempotents.
 
-**Traceless observables.** The traceless Hermitian elements $i\mathbf{h}$ (with $h_0 = 0$) are the analogs of the traceless observables of the qubit (the Pauli matrices). They have eigenvalues $\pm|\mathbf{h}|$ and eigenvectors $\tilde{P}_\pm(\hat{\mathbf{h}})$.
+**Traceless observables.** The traceless Hermitian elements $i\mathbf{h}$ (with $h_0 = 0$) are the analogs of the traceless observables of the qubit (the Pauli matrices). They have eigenvalues $\pm|\mathbf{h}|$ and eigenvectors $\tilde\Pi_\pm(\hat{\mathbf{h}})$.
 
 ### Compatibility
 
@@ -274,26 +274,26 @@ $$
 
 where $\hat{\mathbf{h}} = \mathbf{h}/|\mathbf{h}|$. The probabilities depend only on the angle between the measurement direction $\hat{\mathbf{h}}$ and the Bloch vector $\mathbf{r}$.
 
-The derivation is direct: $p_+ = \mathrm{Tr}(\tilde{P}_+(\hat{\mathbf{h}})\tilde{\rho}) = \tfrac{1}{2}(1 + \hat{\mathbf{h}}\cdot\mathbf{r})$, using the trace formula.
+The derivation is direct: $p_+ = \mathrm{Tr}(\tilde\Pi_+(\hat{\mathbf{h}})\tilde{\rho}) = \tfrac{1}{2}(1 + \hat{\mathbf{h}}\cdot\mathbf{r})$, using the trace formula.
 
 ### Measurement Update
 
 After a measurement of $\tilde{H}$ with outcome $+$, the state is updated by the von Neumann–Lüders rule:
 
 $$
-\tilde{\rho}' = \frac{\tilde{P}_+(\hat{\mathbf{h}})\,\tilde{\rho}\,\tilde{P}_+(\hat{\mathbf{h}})}{\mathrm{Tr}(\tilde{P}_+(\hat{\mathbf{h}})\tilde{\rho})}.
+\tilde{\rho}' = \frac{\tilde\Pi_+(\hat{\mathbf{h}})\,\tilde{\rho}\,\tilde\Pi_+(\hat{\mathbf{h}})}{\mathrm{Tr}(\tilde\Pi_+(\hat{\mathbf{h}})\tilde{\rho})}.
 $$
 
-Since $\tilde{P}_+$ is idempotent, and since $\tilde{P}_+\tilde{\rho}\tilde{P}_+$ has rank at most one (as a product of projectors of rank one), the sandwich is proportional to $\tilde{P}_+$:
+Since $\tilde\Pi_+$ is idempotent, and since $\tilde\Pi_+\tilde{\rho}\tilde\Pi_+$ has rank at most one (as a product of projectors of rank one), the sandwich is proportional to $\tilde\Pi_+$:
 
 $$
-\tilde{P}_+\tilde{\rho}\tilde{P}_+ = p_+ \tilde{P}_+,
+\tilde\Pi_+\tilde{\rho}\tilde\Pi_+ = p_+ \tilde\Pi_+,
 $$
 
-where $p_+ = \mathrm{Tr}(\tilde{P}_+\tilde{\rho})$. Hence the post-measurement state is simply
+where $p_+ = \mathrm{Tr}(\tilde\Pi_+\tilde{\rho})$. Hence the post-measurement state is simply
 
 $$
-\tilde{\rho}' = \tilde{P}_+(\hat{\mathbf{h}}).
+\tilde{\rho}' = \tilde\Pi_+(\hat{\mathbf{h}}).
 $$
 
 So the state collapses to the idempotent associated with the outcome. This is the standard collapse, expressed as a composition of algebraic operations.
@@ -305,7 +305,7 @@ So the state collapses to the idempotent associated with the outcome. This is th
 **Time evolution of a pure state.** A pure state is an idempotent $\tilde{P} = \tfrac{1}{2}(e_0 + i\hat{\mu})$. It evolves in time by conjugation with a one-parameter group of unitary elements:
 
 $$
-\tilde{P}(t) = \tilde{U}(t)\,\tilde{P}(0)\,\tilde{U}(t)^\dagger,
+\tilde\Pi(t) = \tilde{U}(t)\,\tilde\Pi(0)\,\tilde{U}(t)^\dagger,
 $$
 
 where $\tilde{U}(t)$ is a **unitary biquaternion**, $\tilde{U}\tilde{U}^\dagger = e_0$, satisfying the **Schrödinger equation**
@@ -390,10 +390,10 @@ Reversibility is one of the structural features of the biquaternion formulation.
 
 In the standard framework, the measurement postulate is stated separately from the unitary evolution. In the biquaternion framework, both are consequences of the same algebraic structure.
 
-**Projective measurement.** A projective measurement of $\tilde{H} = h_0 e_0 + i\mathbf{h}$ is specified by the spectral decomposition $\tilde{H} = \lambda_+ \tilde{P}_+ + \lambda_- \tilde{P}_-$, with $\tilde{P}_\pm = \tfrac{1}{2}(e_0 \pm i\hat{\mathbf{h}})$. The outcome $+$ has:
+**Projective measurement.** A projective measurement of $\tilde{H} = h_0 e_0 + i\mathbf{h}$ is specified by the spectral decomposition $\tilde{H} = \lambda_+ \tilde\Pi_+ + \lambda_- \tilde\Pi_-$, with $\tilde\Pi_\pm = \tfrac{1}{2}(e_0 \pm i\hat{\mathbf{h}})$. The outcome $+$ has:
 
-- **Probability** $p_+ = \mathrm{Tr}(\tilde{P}_+\tilde{\rho})$, from the trace formula.
-- **Post-measurement state** $\tilde{\rho}' = \tilde{P}_+$, from the sandwich operation.
+- **Probability** $p_+ = \mathrm{Tr}(\tilde\Pi_+\tilde{\rho})$, from the trace formula.
+- **Post-measurement state** $\tilde{\rho}' = \tilde\Pi_+$, from the sandwich operation.
 
 **Generalized measurement.** A general measurement is described by a set of **Kraus operators** $\{\tilde{K}_i\} \subset \mathbb{B}$ satisfying $\sum_i \tilde{K}_i^\dagger\tilde{K}_i = e_0$. The action on a state is
 
@@ -432,7 +432,7 @@ So the mixedness of a state is captured by the scalar part of $\tilde{\rho}^2 - 
 The **spectral decomposition** of $\tilde{\rho}$ is
 
 $$
-\tilde{\rho} = \lambda_+ \tilde{P}_+(\hat{\mathbf{r}}) + \lambda_- \tilde{P}_-(\hat{\mathbf{r}}),
+\tilde{\rho} = \lambda_+ \tilde\Pi_+(\hat{\mathbf{r}}) + \lambda_- \tilde\Pi_-(\hat{\mathbf{r}}),
 $$
 
 with $\hat{\mathbf{r}} = \mathbf{r}/|\mathbf{r}|$ and $\lambda_\pm = (1 \pm |\mathbf{r}|)/2$. The **von Neumann entropy** is
@@ -644,7 +644,7 @@ The extension to many qubits, the second-quantized version, the connection to qu
 | $\mathbb{H}_{\mathbb{B}}$ | Real quaternion subspace, $\operatorname{span}_{\mathbb{R}}\{e_0, e_1, e_2, e_3\}$ (unit elements: $SU(2)$) |
 | $\tilde{H} = h_0 e_0 + i\mathbf{h}$ | Hermitian element (observable) |
 | $\tilde{\rho} = \tfrac{1}{2}(e_0 + i\mathbf{r})$ | State |
-| $\tilde{P}_\pm(\hat{\mu}) = \tfrac{1}{2}(e_0 \pm i\hat{\mu})$ | Idempotent (pure state) |
+| $\tilde\Pi_\pm(\hat{\mu}) = \tfrac{1}{2}(e_0 \pm i\hat{\mu})$ | Idempotent (pure state) |
 | $\mathrm{Tr}(\tilde{H}) = 2 h_0$ | Trace |
 | $\mathrm{Tr}(\tilde{\rho}\tilde{H}) = h_0 + \mathbf{r}\cdot\mathbf{h}$ | Born rule |
 | $N(\tilde{H}) = \tilde{H}\bar{\tilde{H}} = h_0^2 - |\mathbf{h}|^2$ | Biquaternion norm, signature $(1,3)$ |

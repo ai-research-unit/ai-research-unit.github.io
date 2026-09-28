@@ -388,4 +388,3 @@ The operators compose as their elements do, $\operatorname{H}_{\tilde{Q}}\circ\o
 - *The 2×2 Matrix Representation of Biquaternions* (`articles_physics/the-2x2-matrix-representation-of-biquaternions.md`), for the matrix image of the sandwich as a similarity
 - *Conventions in the Biquaternion Universe* (`articles_physics/conventions-in-the-biquaternion-universe.md`), for the conventions used throughout
 - *Introduction to the Biquaternion Universe* (`articles_physics/introduction-to-the-biquaternion-universe.md`), for the map of the series
-- *Biquaternion Operator Representation* (`articles_maths/biquaternion-operator-representation.md`), the companion article, for the same sandwich treated algebraically

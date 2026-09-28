@@ -65,7 +65,7 @@ The self-duality is what makes the trace pairing the natural pairing of measurem
 
 ### Extremal rays and the pure states
 
-The extreme rays of $C_+$ are the rays through the rank-one projectors $\tilde{P}_+(\hat{\mu}) = \tfrac12(e_0+i\hat{\mu})$ and their positive multiples; every positive element is a non-negative combination of these. On the trace-one slice — the intersection of $C_+$ with the affine hyperplane $\mathrm{Tr}(\tilde{\rho}) = 1$ — the extreme points are exactly the pure states. This is the cone-theoretic statement of the fact, developed in the companion articles, that the Bloch ball is the trace-one slice of the cone and its boundary is the set of idempotents. The normalized states are a section of the cone, and the pure states are its extreme rays.
+The extreme rays of $C_+$ are the rays through the rank-one projectors $\tilde\Pi_+(\hat{\mu}) = \tfrac12(e_0+i\hat{\mu})$ and their positive multiples; every positive element is a non-negative combination of these. On the trace-one slice — the intersection of $C_+$ with the affine hyperplane $\mathrm{Tr}(\tilde{\rho}) = 1$ — the extreme points are exactly the pure states. This is the cone-theoretic statement of the fact, developed in the companion articles, that the Bloch ball is the trace-one slice of the cone and its boundary is the set of idempotents. The normalized states are a section of the cone, and the pure states are its extreme rays.
 
 ## Effects
 
@@ -99,7 +99,7 @@ $$
 \tilde{E}^2 = \tilde{E} \quad\Longleftrightarrow\quad \tilde{E}\in\mathrm{ext}[0,e_0],
 $$
 
-i.e. the elements $a_0 = 1$ with $|\mathbf{a}|=0$ (the identity) and $a_0 = \tfrac12$ with $|\mathbf{a}| = \tfrac12$ (the rank-one projectors). A **projective measurement** uses only these extreme effects; a general measurement uses interior effects, which are convex combinations $\tilde{E} = t\tilde{P}_+ + (1-t)\tilde{P}_-$ of orthogonal idempotents. An interior effect is a "soft" outcome: it responds partially to both alternatives, which is exactly what allows a measurement to have more outcomes than the dimension.
+i.e. the elements $a_0 = 1$ with $|\mathbf{a}|=0$ (the identity) and $a_0 = \tfrac12$ with $|\mathbf{a}| = \tfrac12$ (the rank-one projectors). A **projective measurement** uses only these extreme effects; a general measurement uses interior effects, which are convex combinations $\tilde{E} = t\tilde\Pi_+ + (1-t)\tilde\Pi_-$ of orthogonal idempotents. An interior effect is a "soft" outcome: it responds partially to both alternatives, which is exactly what allows a measurement to have more outcomes than the dimension.
 
 ### The Born rule for effects
 
@@ -109,7 +109,7 @@ $$
 p = \mathrm{Tr}(\tilde{\rho}\tilde{E}) = 2\,\mathrm{Sc}(\tilde{\rho}\tilde{E}) \in [0,1],
 $$
 
-because $\tilde{\rho}\geq0$, $\tilde{E}\geq0$ make the trace non-negative, and $\tilde{E}\leq e_0$ gives $p\leq\mathrm{Tr}(\tilde{\rho}) = 1$. This is the Born rule in its general form; the projective case is $\tilde{E} = \tilde{P}$, and then $p = \mathrm{Tr}(\tilde{\rho}\tilde{P})$ is the usual probability of an eigenspace. No additional postulate is required for the general measurement: functions of effects are obtained by the same trace pairing that gives the projective Born rule.
+because $\tilde{\rho}\geq0$, $\tilde{E}\geq0$ make the trace non-negative, and $\tilde{E}\leq e_0$ gives $p\leq\mathrm{Tr}(\tilde{\rho}) = 1$. This is the Born rule in its general form; the projective case is $\tilde{E} = \tilde\Pi$, and then $p = \mathrm{Tr}(\tilde{\rho}\tilde\Pi)$ is the usual probability of an eigenspace. No additional postulate is required for the general measurement: functions of effects are obtained by the same trace pairing that gives the projective Born rule.
 
 ## POVMs
 
@@ -159,19 +159,19 @@ This is **Naimark's dilation theorem**, the measurement analogue of Stinespring'
 
 ### The trine POVM
 
-Let $\hat{n}_k$, $k=1,2,3$, be three unit vectors in the equatorial plane at $120^\circ$ from one another, so that $\sum_k\hat{n}_k = 0$ and $\sum_k\tilde{P}_+(\hat{n}_k) = \tfrac32 e_0$. Define
+Let $\hat{n}_k$, $k=1,2,3$, be three unit vectors in the equatorial plane at $120^\circ$ from one another, so that $\sum_k\hat{n}_k = 0$ and $\sum_k\tilde\Pi_+(\hat{n}_k) = \tfrac32 e_0$. Define
 
 $$
-\tilde{E}_k = \tfrac{2}{3}\,\tilde{P}_+(\hat{n}_k), \qquad k=1,2,3 .
+\tilde{E}_k = \tfrac{2}{3}\,\tilde\Pi_+(\hat{n}_k), \qquad k=1,2,3 .
 $$
 
 Each $\tilde{E}_k$ is an effect — its coefficients are $a_0 = \tfrac13$ and $|\mathbf{a}| = \tfrac13$, on the boundary of the interval — and they resolve the identity:
 
 $$
-\sum_{k=1}^{3}\tilde{E}_k = \tfrac{2}{3}\sum_{k=1}^{3}\tilde{P}_+(\hat{n}_k) = \tfrac{2}{3}\cdot\tfrac{3}{2}e_0 = e_0 .
+\sum_{k=1}^{3}\tilde{E}_k = \tfrac{2}{3}\sum_{k=1}^{3}\tilde\Pi_+(\hat{n}_k) = \tfrac{2}{3}\cdot\tfrac{3}{2}e_0 = e_0 .
 $$
 
-The trine POVM has three outcomes, which no projective measurement of a qubit can have. For the three equally likely states $\tilde{\rho}_k = \tilde{P}_+(\hat{n}_k)$, the probability of correctly identifying the state is
+The trine POVM has three outcomes, which no projective measurement of a qubit can have. For the three equally likely states $\tilde{\rho}_k = \tilde\Pi_+(\hat{n}_k)$, the probability of correctly identifying the state is
 
 $$
 P_{\mathrm{succ}} = \frac{1}{3}\sum_{k=1}^{3}\mathrm{Tr}(\tilde{\rho}_k\tilde{E}_k)
@@ -186,19 +186,19 @@ since $\tilde{\rho}_k^2 = \tilde{\rho}_k$ and $\mathrm{Tr}(\tilde{\rho}_k) = 1$.
 Let two non-orthogonal pure states have overlap $c = |\langle\psi_0|\psi_1\rangle|\in(0,1)$. A **projective** measurement of a qubit has two outcomes, each of which responds to both states, so neither outcome can certify which state was prepared. A POVM with three effects can:
 
 $$
-\tilde{E}_0 = \frac{1}{1+c}\,\tilde{P}\bigl(\psi_1^\perp\bigr), \qquad
-\tilde{E}_1 = \frac{1}{1+c}\,\tilde{P}\bigl(\psi_0^\perp\bigr), \qquad
+\tilde{E}_0 = \frac{1}{1+c}\,\tilde\Pi\bigl(\psi_1^\perp\bigr), \qquad
+\tilde{E}_1 = \frac{1}{1+c}\,\tilde\Pi\bigl(\psi_0^\perp\bigr), \qquad
 \tilde{E}_? = e_0-\tilde{E}_0-\tilde{E}_1 ,
 $$
 
-where $\tilde{P}(\psi^\perp)$ is the idempotent orthogonal to $|\psi\rangle$. The effect $\tilde{E}_0$ annihilates $|\psi_1\rangle$, so the outcome $0$ certifies $|\psi_0\rangle$; symmetrically for outcome $1$; and outcome $?$ is inconclusive. The resolution holds because the largest eigenvalue of $\tilde{E}_0+\tilde{E}_1$ is $1$ at this normalization, and the success probability for equal priors is
+where $\tilde\Pi(\psi^\perp)$ is the idempotent orthogonal to $|\psi\rangle$. The effect $\tilde{E}_0$ annihilates $|\psi_1\rangle$, so the outcome $0$ certifies $|\psi_0\rangle$; symmetrically for outcome $1$; and outcome $?$ is inconclusive. The resolution holds because the largest eigenvalue of $\tilde{E}_0+\tilde{E}_1$ is $1$ at this normalization, and the success probability for equal priors is
 
 $$
 P_{\mathrm{succ}} = \tfrac12\mathrm{Tr}(\tilde{\rho}_0\tilde{E}_0) + \tfrac12\mathrm{Tr}(\tilde{\rho}_1\tilde{E}_1)
 = \tfrac12(1-c)+\tfrac12(1-c) = 1-c ,
 $$
 
-which is the standard Ivanovic–Dieks–Peres value. Unambiguous discrimination is thus possible exactly with a non-projective measurement, and its failure probability is the overlap. In the algebra the construction uses three effects, each of them a scaled idempotent of rank one and therefore on the boundary of the cone: the two conclusive outcomes are the idempotents orthogonal to the state they exclude, and the inconclusive outcome — the scaled idempotent $\tilde{E}_? = \frac{2c}{1+c}\tilde{P}(\hat{m})$ for a suitable direction $\hat{m}$ — is the effect that makes the resolution complete.
+which is the standard Ivanovic–Dieks–Peres value. Unambiguous discrimination is thus possible exactly with a non-projective measurement, and its failure probability is the overlap. In the algebra the construction uses three effects, each of them a scaled idempotent of rank one and therefore on the boundary of the cone: the two conclusive outcomes are the idempotents orthogonal to the state they exclude, and the inconclusive outcome — the scaled idempotent $\tilde{E}_? = \frac{2c}{1+c}\tilde\Pi(\hat{m})$ for a suitable direction $\hat{m}$ — is the effect that makes the resolution complete.
 
 ## The Positive Cone and the Meaning of a Measurement
 
@@ -270,7 +270,7 @@ and the cone is self-dual with respect to the trace pairing, $\mathrm{Tr}(\tilde
 | $\tilde{E}_y = \tilde{M}_y^\dagger\tilde{M}_y$ | Kraus form of an effect |
 | $\tilde{\rho}_y = \tilde{M}_y\tilde{\rho}\tilde{M}_y^\dagger/p_y$ | Post-measurement state |
 | $\tilde{E}_y = V^\dagger\tilde{F}_yV$ | Naimark dilation |
-| $\tilde{E}_k = \tfrac23\tilde{P}_+(\hat{n}_k)$ | Trine POVM |
+| $\tilde{E}_k = \tfrac23\tilde\Pi_+(\hat{n}_k)$ | Trine POVM |
 
 ## Further Reading
 

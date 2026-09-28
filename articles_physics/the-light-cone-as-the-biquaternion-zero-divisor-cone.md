@@ -93,7 +93,7 @@ $$
 The nonzero complex multiples of idempotents are therefore exactly the non-pure zero divisors. The standard idempotent is
 
 $$
-\tilde{P}(\hat{\boldsymbol{\mu}}) = \tfrac12\left(e_0 + i\hat{\boldsymbol{\mu}}\right),
+\tilde\Pi(\hat{\boldsymbol{\mu}}) = \tfrac12\left(e_0 + i\hat{\boldsymbol{\mu}}\right),
 \qquad
 \hat{\boldsymbol{\mu}} = \mu_1e_1 + \mu_2e_2 + \mu_3e_3,\quad \hat{\boldsymbol{\mu}}\cdot\hat{\boldsymbol{\mu}} = 1 ,
 $$
@@ -124,9 +124,9 @@ $$
 Identifying $x_0 = ct$, the vanishing locus is the light cone of Minkowski space. For a nonzero null element with $x_0\neq 0$, writing $\mathbf{x} = x_0\hat{\mathbf{x}}$ with $\hat{\mathbf{x}}$ a real unit vector gives
 
 $$
-\tilde{Q} = i x_0\left(e_0 - i\hat{\mathbf{x}}\right) = 2i x_0\,\tilde{P}(-\hat{\mathbf{x}}),
+\tilde{Q} = i x_0\left(e_0 - i\hat{\mathbf{x}}\right) = 2i x_0\,\tilde\Pi(-\hat{\mathbf{x}}),
 \qquad
-\tilde{P}(-\hat{\mathbf{x}}) = \tfrac12\left(e_0 - i\hat{\mathbf{x}}\right),
+\tilde\Pi(-\hat{\mathbf{x}}) = \tfrac12\left(e_0 - i\hat{\mathbf{x}}\right),
 $$
 
 so every future (or past) null point of the real material slice is a real multiple of an idempotent: the material cone is the non-pure family, realized over the reals. The apex $\tilde{Q} = 0$ is excluded from $\mathcal{Z}$ by the definition, since it is not a zero divisor. The real pure case would require $N(\mathbf{x}) = \mathbf{x}^2 = 0$ with $\mathbf{x}\neq 0$ and real, which is impossible; the nilpotent family on the material cone therefore needs complex spatial components, and the real cone is entirely of the idempotent type.
@@ -178,7 +178,7 @@ $$
 N(\tilde{K}) = 0 .
 $$
 
-A four-wavevector supports a dispersionless wave precisely when it is null, and the null condition is the zero-divisor condition: $\tilde{K}\in\mathcal{Z}$. The wave travels at the speed $c$ because $N(\tilde{K}) = 0$ reads $\omega = c|\mathbf{k}|$, and it is the biquaternion norm of the wavevector, not a separate postulate, that fixes $c$ as the propagation speed. Equivalently, the lightlike $\tilde{K} = i(\omega/c)e_0 + \mathbf{k}$ with $\omega = c|\mathbf{k}|$ has the form $i(\omega/c)(e_0 - i\hat{\mathbf{k}}) = 2i(\omega/c)\tilde{P}(-\hat{\mathbf{k}})$, an idempotent multiple, so the null wavevectors are exactly the non-pure zero divisors of the material sector, in parallel with the null positions of the previous section.
+A four-wavevector supports a dispersionless wave precisely when it is null, and the null condition is the zero-divisor condition: $\tilde{K}\in\mathcal{Z}$. The wave travels at the speed $c$ because $N(\tilde{K}) = 0$ reads $\omega = c|\mathbf{k}|$, and it is the biquaternion norm of the wavevector, not a separate postulate, that fixes $c$ as the propagation speed. Equivalently, the lightlike $\tilde{K} = i(\omega/c)e_0 + \mathbf{k}$ with $\omega = c|\mathbf{k}|$ has the form $i(\omega/c)(e_0 - i\hat{\mathbf{k}}) = 2i(\omega/c)\tilde\Pi(-\hat{\mathbf{k}})$, an idempotent multiple, so the null wavevectors are exactly the non-pure zero divisors of the material sector, in parallel with the null positions of the previous section.
 
 **Verification on a superposition.** A single plane wave cannot test the identity, because for it each term of $\Box$ vanishes mode by mode. The identity was therefore checked on a superposition of three null modes,
 
@@ -238,7 +238,7 @@ and the corresponding right inverse is the same expression. Off the cone the biq
 
 The physical reading of this algebraic boundary is the content of the preceding sections. A massive particle has $N(\tilde{P}) = -m^2c^2 \neq 0$, so its momentum is invertible and its worldline lies in the interior of the cone; a massless particle has $N(\tilde{P}) = 0$, so its momentum is a zero divisor and lies on the boundary. A timelike worldline can be continuously deformed into a lightlike one only at the cost of sending $m\to 0$, where the invertibility of the momentum is lost. The cone is therefore not merely the set of paths that light follows; it is the locus where the algebra's multiplication loses invertibility, and the two statements are the same statement in this framework.
 
-**Verification.** For a random sample of biquaternions off the cone the identity $\tilde{Q}(\bar{\tilde{Q}}/N(\tilde{Q})) = e_0$ was checked in explicit complex-quaternion arithmetic to machine precision, and for the idempotent $\tilde{P}(e_1) = \tfrac12(e_0+ie_1)$ the products $\tilde{P}\bar{\tilde{P}}$ and $\bar{\tilde{P}}\tilde{P}$ were both found to vanish identically, confirming that no inverse exists on the cone.
+**Verification.** For a random sample of biquaternions off the cone the identity $\tilde{Q}(\bar{\tilde{Q}}/N(\tilde{Q})) = e_0$ was checked in explicit complex-quaternion arithmetic to machine precision, and for the idempotent $\tilde\Pi(e_1) = \tfrac12(e_0+ie_1)$ the products $\tilde{P}\bar{\tilde{P}}$ and $\bar{\tilde{P}}\tilde{P}$ were both found to vanish identically, confirming that no inverse exists on the cone.
 
 ## What the Algebra Supplies and What It Is Standard
 
@@ -277,7 +277,7 @@ $$
 N(\tilde{Q}) = -c^2t^2 + \mathbf{x}^2 ,
 $$
 
-so $\mathcal{Z}$ meets the material sector exactly in the light cone $|\mathbf{x}| = c|t|$, and every nonzero real null point is a real multiple of an idempotent $\tilde{P}(-\hat{\mathbf{x}}) = \tfrac12(e_0 - i\hat{\mathbf{x}})$. The division subalgebras $\mathbb{C}_{\mathbb{B}}$ and $\mathbb{H}_{\mathbb{B}}$ contain no zero divisors; the cones in the two Hermitian-type sectors $\mathbb{M}_-$ and $\mathbb{M}_+$ are the two real faces of $\mathcal{Z}$, of which the material one is the physical light cone.
+so $\mathcal{Z}$ meets the material sector exactly in the light cone $|\mathbf{x}| = c|t|$, and every nonzero real null point is a real multiple of an idempotent $\tilde\Pi(-\hat{\mathbf{x}}) = \tfrac12(e_0 - i\hat{\mathbf{x}})$. The division subalgebras $\mathbb{C}_{\mathbb{B}}$ and $\mathbb{H}_{\mathbb{B}}$ contain no zero divisors; the cones in the two Hermitian-type sectors $\mathbb{M}_-$ and $\mathbb{M}_+$ are the two real faces of $\mathcal{Z}$, of which the material one is the physical light cone.
 
 The cone is also the locus of propagation. Because $\Box = \tilde{\nabla}\bar{\tilde{\nabla}}$ is the biquaternion norm of the gradient, a four-wavevector $\tilde{K}$ satisfies $\Box f(\mathrm{Sc}(\tilde{K}\bar{\tilde{Q}})) = N(\tilde{K})f''$ for every smooth $f$; the wave equation holds for every such phase precisely when $N(\tilde{K}) = 0$, which is $\omega = c|\mathbf{k}|$ and the zero-divisor condition on $\tilde{K}$. The cone is invariant under rotor conjugation because the biquaternion norm is multiplicative, and its three physical guises — the massless shell in momentum space, the null field in field space, and the dispersionless wavevector in wave space — are one algebraic locus.
 
@@ -295,7 +295,7 @@ The light cone is the set on which the biquaternion algebra ceases to be inverti
 | $\mathbb{C}_{\mathbb{B}}, \mathbb{H}_{\mathbb{B}}$ | Division subalgebras: complex scalar line (center); real quaternions |
 | $\tilde{Q} = ict\,e_0 + \mathbf{x}$ | Material coordinate, $\mathbb{M}_-$ |
 | $N(\tilde{Q}) = -c^2t^2 + \mathbf{x}^2$ | Interval; zero set is the light cone |
-| $\tilde{P}(\hat{\boldsymbol{\mu}}) = \tfrac12(e_0 + i\hat{\boldsymbol{\mu}})$ | Idempotent; $N=0$, $\tilde{P}^2=\tilde{P}$ |
+| $\tilde\Pi(\hat{\boldsymbol{\mu}}) = \tfrac12(e_0 + i\hat{\boldsymbol{\mu}})$ | Idempotent; $N=0$, $\tilde{P}^2=\tilde{P}$ |
 | $\tilde{Q}^2 = 2Q_0\tilde{Q}$ | Non-pure zero-divisor identity |
 | $\tilde{\nabla}, \bar{\tilde{\nabla}}$, $\Box = \tilde{\nabla}\bar{\tilde{\nabla}} = \partial_{ict}^2+\Delta$ | Gradient, conjugate gradient, d'Alembertian |
 | $\tilde{K} = i\frac{\omega}{c}e_0 + \mathbf{k}$ | Four-wavevector, $\mathbb{M}_-$ |

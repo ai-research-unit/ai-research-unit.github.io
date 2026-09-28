@@ -42,7 +42,7 @@ The electron field carries the electron's data in the following objects.
 | Free equation | $\tilde{\nabla}\tilde{\Psi}_R = m_e\tilde{\Psi}_L$, $\bar{\tilde{\nabla}}\tilde{\Psi}_L = m_e\tilde{\Psi}_R$ |
 | Mass | the coefficient $m_e$ of the linear, chirality-off-diagonal mass pair |
 | Charge | the coupling $q=-e$ inserted in the gradient (see below) |
-| Spin state | an idempotent $\tilde{P}_+(\hat{\mathbf{n}}) = \tfrac{1}{2}(e_0 + i\hat{\mathbf{n}})\in\mathbb{M}_+$ |
+| Spin state | an idempotent $\tilde\Pi_+(\hat{\mathbf{n}}) = \tfrac{1}{2}(e_0 + i\hat{\mathbf{n}})\in\mathbb{M}_+$ |
 | Spin observables | Hermitian elements $\tilde{H} = i\mathbf{h}\cdot\mathbf{e}\in\mathbb{M}_+$ |
 | Conserved current | $\tilde{J} = ic\,j^0 e_0 + \mathbf{j}\in\mathbb{M}_-$ |
 | Chiral halves | the left- and right-handed Weyl spinors of the spinor module |
@@ -111,7 +111,7 @@ The electron's spin is where the framework is strongest and where the distinctio
 
 **Derived: the representation.** The algebra $\mathbb{B}\cong M_2(\mathbb{C})$ has a unique irreducible module, of complex dimension two, and group of unit-norm biquaternions $SL(2,\mathbb{C})$, the double cover of the proper orthochronous Lorentz group. A field placed in that module transforms in the spinor representation $(\tfrac12,0)$: its spin is $\tfrac{1}{2}$, and a rotation by $2\pi$ acts as $-e_0$ on the spinor module while acting as $+e_0$ on the four-vectors of $\mathbb{M}_-$. The twofold, double-valued character of electron spin is therefore a representation-theoretic consequence of where the field lives, not an independent postulate. The spin rotations are the unit-norm biquaternions with real vector part, forming $SU(2)$.
 
-**Derived: the state and observable structure.** On the dictionary used in the companion articles, the electron's spin state along a unit direction $\hat{\mathbf{n}}$ is represented by the idempotent $\tilde{P}_+(\hat{\mathbf{n}}) = \tfrac{1}{2}(e_0 + i\hat{\mathbf{n}})\in\mathbb{M}_+$, and its spin observables are the Hermitian elements $i\mathbf{h}\cdot\mathbf{e}\in\mathbb{M}_+$. (The companion articles leave the spinor-to-biquaternion dictionary as a convention; the state and observable structure below is what is checked, and it does not depend on which of the equivalent dictionaries is fixed.) The trace formula reproduces the spin-$\tfrac{1}{2}$ expectation values. For $\tilde{H} = i h_k e_k$ and $\tilde{P} = \tfrac{1}{2}(e_0 + i n_j e_j)$ one has $2\,\mathrm{Sc}(\tilde{P}\tilde{H}) = n_jh_j$; in particular $2\,\mathrm{Sc}\big(\tilde{P}_+(e_3)(ie_3)\big) = 1$ and $2\,\mathrm{Sc}\big(\tilde{P}_+(e_3)(ie_1)\big) = 0$, the correct values for the spin along $z$ and $x$. Recomputed directly.
+**Derived: the state and observable structure.** On the dictionary used in the companion articles, the electron's spin state along a unit direction $\hat{\mathbf{n}}$ is represented by the idempotent $\tilde\Pi_+(\hat{\mathbf{n}}) = \tfrac{1}{2}(e_0 + i\hat{\mathbf{n}})\in\mathbb{M}_+$, and its spin observables are the Hermitian elements $i\mathbf{h}\cdot\mathbf{e}\in\mathbb{M}_+$. (The companion articles leave the spinor-to-biquaternion dictionary as a convention; the state and observable structure below is what is checked, and it does not depend on which of the equivalent dictionaries is fixed.) The trace formula reproduces the spin-$\tfrac{1}{2}$ expectation values. For $\tilde{H} = i h_k e_k$ and $\tilde{P} = \tfrac{1}{2}(e_0 + i n_j e_j)$ one has $2\,\mathrm{Sc}(\tilde{P}\tilde{H}) = n_jh_j$; in particular $2\,\mathrm{Sc}\big(\tilde\Pi_+(e_3)(ie_3)\big) = 1$ and $2\,\mathrm{Sc}\big(\tilde\Pi_+(e_3)(ie_1)\big) = 0$, the correct values for the spin along $z$ and $x$. Recomputed directly.
 
 **Inserted: the magnitude.** The spin operator is $\hat{S}_k = \tfrac{\hbar}{2}\sigma_k$, corresponding to $\tfrac{\hbar}{2}ie_k$. The factor $\hbar/2$ is a normalisation, not a prediction: the algebra fixes that spin is two-valued and that its observables close under $SU(2)$, but it does not fix the unit in which spin is measured. The number $\tfrac{1}{2}$ in "spin-$\tfrac{1}{2}$" is algebra; the number $\hbar$ is physics inserted from outside.
 
@@ -239,7 +239,7 @@ The electron is not an element of either sector: state-like and field-strength-l
 | $\mathbb{H}_{\mathbb{B}}$ | Real quaternion subspace |
 | $\tilde{\nabla} = e_0\partial_{ict} + e_k\partial_k$ | Biquaternionic gradient (Dirac operator) |
 | $\tilde{\Psi}$, $\tilde{\Psi}^\flat = -\tilde{\Psi}^\dagger$ | Biquaternion Dirac field and anti-Hermitian conjugate (the algebra's real structure; not the mass term) |
-| $\tilde{P}_+(\hat{\mathbf{n}}) = \tfrac{1}{2}(e_0 + i\hat{\mathbf{n}})$ | Spin-state idempotent in $\mathbb{M}_+$ |
+| $\tilde\Pi_+(\hat{\mathbf{n}}) = \tfrac{1}{2}(e_0 + i\hat{\mathbf{n}})$ | Spin-state idempotent in $\mathbb{M}_+$ |
 | $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ | Trace formula (Born rule) |
 | $\tilde{J} = ic\,j^0 e_0 + \mathbf{j}$ | Conserved four-current, in $\mathbb{M}_-$ |
 | $\tilde{F} = iq\hat{\mathbf{x}}/(4\pi\sqrt{\epsilon}\|\mathbf{x}\|^2)$ | Coulomb field of a point charge, in $\mathbb{M}_+$ |

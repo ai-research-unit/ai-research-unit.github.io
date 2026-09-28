@@ -31,7 +31,7 @@ $$
 \qquad
 \mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_- .
 $$
-The trace is $\mathrm{Tr}(\tilde{Q})=2\,\mathrm{Sc}(\tilde{Q})$ with $\mathrm{Tr}(e_0)=2$; the biquaternion norm is $N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}$, central-valued; the Hermitian form is $\langle\tilde{Q},\tilde{Y}\rangle_\dagger=\mathrm{Tr}(\tilde{Q}^\dagger\tilde{Y})$. The matrix model is the $\mathbb{C}$-linear representation $\Phi(e_0)=I_2$, $\Phi(e_k)=-i\sigma_k$, under which $\Phi(\mathbb{B})=M_2(\mathbb{C})$ and $\det M(\tilde{Q})=N(\tilde{Q})$. A state is $\tilde{\rho}=\tfrac12(e_0+i\mathbf{r})$, $|\mathbf{r}|\leq1$, and a pure state is $\tilde{P}(\hat{\mu})=\tfrac12(e_0+i\hat{\mu})$.
+The trace is $\mathrm{Tr}(\tilde{Q})=2\,\mathrm{Sc}(\tilde{Q})$ with $\mathrm{Tr}(e_0)=2$; the biquaternion norm is $N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}$, central-valued; the Hermitian form is $\langle\tilde{Q},\tilde{Y}\rangle_\dagger=\mathrm{Tr}(\tilde{Q}^\dagger\tilde{Y})$. The matrix model is the $\mathbb{C}$-linear representation $\Phi(e_0)=I_2$, $\Phi(e_k)=-i\sigma_k$, under which $\Phi(\mathbb{B})=M_2(\mathbb{C})$ and $\det M(\tilde{Q})=N(\tilde{Q})$. A state is $\tilde{\rho}=\tfrac12(e_0+i\mathbf{r})$, $|\mathbf{r}|\leq1$, and a pure state is $\tilde\Pi(\hat{\mu})=\tfrac12(e_0+i\hat{\mu})$.
 
 ## The Center: Definition and Computation
 
@@ -181,15 +181,15 @@ If the centre is too small to carry the classical limit, the framework's classic
 
 **Maximal commutative subalgebras.** A subalgebra $\mathbb{A}\subset\mathbb{B}$ is maximal commutative if it is commutative and is not properly contained in a larger commutative subalgebra. Because $\mathbb{B}\cong M_2(\mathbb{C})$ is a factor, every maximal commutative subalgebra is a MASA of a full matrix algebra, and each is isomorphic to $\mathbb{C}^2$ as a complex algebra — concretely, the diagonal matrices with respect to some orthonormal basis,
 $$
-\mathbb{A}_{\hat{n}}=\mathrm{span}_\mathbb{C}\{\tilde{P}(\hat{n}),\ e_0-\tilde{P}(\hat{n})\},
+\mathbb{A}_{\hat{n}}=\mathrm{span}_\mathbb{C}\{\tilde\Pi(\hat{n}),\ e_0-\tilde\Pi(\hat{n})\},
 \qquad \hat{n}\ \text{a unit vector},
 $$
-with $\tilde{P}(\hat{n})$ and $e_0-\tilde{P}(\hat{n})$ the two orthogonal projections along the axis $\hat{n}$. The projections are idempotent and mutually orthogonal, and their algebra is exactly the algebra of a classical two-valued observable — a classical **bit**. Two different axes give different MASAs, conjugate under $U(2)$ but distinct as subalgebras.
+with $\tilde\Pi(\hat{n})$ and $e_0-\tilde\Pi(\hat{n})$ the two orthogonal projections along the axis $\hat{n}$. The projections are idempotent and mutually orthogonal, and their algebra is exactly the algebra of a classical two-valued observable — a classical **bit**. Two different axes give different MASAs, conjugate under $U(2)$ but distinct as subalgebras.
 
-The two projections are the density matrices of the two possible outcomes along the axis, with $\mathrm{Tr}(\tilde{P}(\hat{n}))=\mathrm{Tr}(e_0-\tilde{P}(\hat{n}))=1$ and $\tilde{P}(\hat{n})\,(e_0-\tilde{P}(\hat{n}))=0$; their sum is the unit, $\tilde{P}(\hat{n})+(e_0-\tilde{P}(\hat{n}))=e_0$, whose trace is $\mathrm{Tr}(e_0)=2$. The family of MASAs is parametrized by the axis modulo its sign, because
+The two projections are the density matrices of the two possible outcomes along the axis, with $\mathrm{Tr}(\tilde\Pi(\hat{n}))=\mathrm{Tr}(e_0-\tilde\Pi(\hat{n}))=1$ and $\tilde\Pi(\hat{n})\,(e_0-\tilde\Pi(\hat{n}))=0$; their sum is the unit, $\tilde\Pi(\hat{n})+(e_0-\tilde\Pi(\hat{n}))=e_0$, whose trace is $\mathrm{Tr}(e_0)=2$. The family of MASAs is parametrized by the axis modulo its sign, because
 $$
-\mathbb{A}_{-\hat{n}}=\mathrm{span}_\mathbb{C}\bigl\{\tilde{P}(-\hat{n}),e_0-\tilde{P}(-\hat{n})\bigr\}
-=\mathrm{span}_\mathbb{C}\bigl\{e_0-\tilde{P}(\hat{n}),\tilde{P}(\hat{n})\bigr\}=\mathbb{A}_{\hat{n}} .
+\mathbb{A}_{-\hat{n}}=\mathrm{span}_\mathbb{C}\bigl\{\tilde\Pi(-\hat{n}),e_0-\tilde\Pi(-\hat{n})\bigr\}
+=\mathrm{span}_\mathbb{C}\bigl\{e_0-\tilde\Pi(\hat{n}),\tilde\Pi(\hat{n})\bigr\}=\mathbb{A}_{\hat{n}} .
 $$
 The space of contexts is therefore the sphere modulo antipodes, the real projective plane $\mathbb{RP}^2$: every classical bit requires a point of $\mathbb{RP}^2$ to be specified, and no point is preferred. The verification of idempotency, orthogonality, and the intersection property was carried out numerically on the matrix model for two distinct axes.
 
@@ -197,7 +197,7 @@ The space of contexts is therefore the sphere modulo antipodes, the real project
 $$
 \bigcap_{\hat{n}}\mathbb{A}_{\hat{n}}=Z(\mathbb{B}),
 $$
-because an element commuting with every projector $\tilde{P}(\hat{n})$ for every axis $\hat{n}$ commutes with everything. The centre is therefore the canonical commutative subalgebra common to every MASA, and the only commutative subalgebra that requires no choice to specify; it is not itself maximal, and every MASA beyond it requires the selection of an axis, i.e. of a preferred observable or pointer basis. This is complementarity in algebraic form: the algebra contains many classical bits, but no canonical classical bit.
+because an element commuting with every projector $\tilde\Pi(\hat{n})$ for every axis $\hat{n}$ commutes with everything. The centre is therefore the canonical commutative subalgebra common to every MASA, and the only commutative subalgebra that requires no choice to specify; it is not itself maximal, and every MASA beyond it requires the selection of an axis, i.e. of a preferred observable or pointer basis. This is complementarity in algebraic form: the algebra contains many classical bits, but no canonical classical bit.
 
 **The classical sector of a context is a MASA.** Relative to a chosen Hermitian observable $\tilde{H}$ with distinct spectral projections, the set of observables compatible with it is its centralizer, which is the MASA generated by its projections. In that context — and only in that context — the theory looks classical: the MASA is commutative, its elements can be simultaneously diagonalized, and it contains idempotents that behave as classical propositions. The classical sector is thus **context-relative**: it is the centralizer $\{\tilde{Q}:[\tilde{Q},\tilde{H}]=0\}$, a subalgebra that depends on which observable defines the context.
 
@@ -278,8 +278,8 @@ The centre's limitations are as exact as its properties. Because $\mathbb{B}$ is
 | $N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}$ | Biquaternion norm, $N(\lambda e_0)=\lambda^2e_0$ |
 | $\mathrm{Ad}_{\tilde{U}}(\tilde{Q})=\tilde{U}\tilde{Q}\tilde{U}^{-1}$ | Adjoint (inner) action |
 | $\mathrm{ad}_{\tilde{Q}}(\tilde{Y})=[\tilde{Q},\tilde{Y}]$ | Inner derivation |
-| $\mathbb{A}_{\hat{n}}=\mathrm{span}_\mathbb{C}\{\tilde{P}(\hat{n}),e_0-\tilde{P}(\hat{n})\}$ | Maximal commutative subalgebra (MASA) |
-| $\tilde{P}(\hat{n})=\tfrac12(e_0+i\hat{n})$ | Pure-state projection, $|\hat{n}|=1$ |
+| $\mathbb{A}_{\hat{n}}=\mathrm{span}_\mathbb{C}\{\tilde\Pi(\hat{n}),e_0-\tilde\Pi(\hat{n})\}$ | Maximal commutative subalgebra (MASA) |
+| $\tilde\Pi(\hat{n})=\tfrac12(e_0+i\hat{n})$ | Pure-state projection, $|\hat{n}|=1$ |
 | $M_2(\mathbb{C})$ | Matrix model; $\Phi(e_0)=I_2$, $\Phi(e_k)=-i\sigma_k$ |
 | $\mathrm{U}(2)=\mathbb{M}_-$ | Lie algebra of the unitary group |
 | $C(\{\ast\})$ | Gelfand character algebra of the centre |

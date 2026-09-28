@@ -14,7 +14,7 @@ which is the same biquaternion norm whose vanishing defines the zero divisor con
 
 The article is organised as follows. The next section sets up the amplitude–phase decomposition and derives the two real equations into which the Schrödinger equation separates. The third section treats the Hamilton–Jacobi equation, its biquaternion-norm reading, and the trajectories and rays it defines. The fourth treats the transport equation, the WKB amplitude, and the van Vleck determinant. The fifth obtains the quantisation condition, the Maslov phase, and the tunnelling law. The sixth gives the exact rewriting with the quantum potential. The seventh states what the biquaternion form adds and what remains open, and the closing sections are the summary, the notation table, and the external literature.
 
-The conventions are those of the companion articles. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with $e_0=1,e_1,e_2,e_3$, $e_j^2=-e_0$, central scalar imaginary $i$; $\mathbb{C}_{\mathbb{B}}$ is the center; $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace; $\mathbb{M}_+$ and $\mathbb{M}_-$ are the Hermitian and anti-Hermitian sectors; the state module is $\mathbb{B}\tilde P\cong\mathbb{C}^2$; and $\mathrm{Tr}(\tilde H)=2\,\mathrm{Sc}(\tilde H)$. The Hamiltonian for a scalar potential is $\tilde H = [-\frac{\hbar^2}{2m}\nabla^2 + V(\mathbf x)]e_0$, central. The d'Alembertian is not used here; the only sign conventions engaged are those of the biquaternion norm and the Laplacian, both of which follow from $e_j^2=-e_0$.
+The conventions are those of the companion articles. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with $e_0=1,e_1,e_2,e_3$, $e_j^2=-e_0$, central scalar imaginary $i$; $\mathbb{C}_{\mathbb{B}}$ is the center; $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace; $\mathbb{M}_+$ and $\mathbb{M}_-$ are the Hermitian and anti-Hermitian sectors; the state module is $\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$; and $\mathrm{Tr}(\tilde H)=2\,\mathrm{Sc}(\tilde H)$. The Hamiltonian for a scalar potential is $\tilde H = [-\frac{\hbar^2}{2m}\nabla^2 + V(\mathbf x)]e_0$, central. The d'Alembertian is not used here; the only sign conventions engaged are those of the biquaternion norm and the Laplacian, both of which follow from $e_j^2=-e_0$.
 
 ## The WKB Ansatz in Biquaternionic Form
 
@@ -25,7 +25,7 @@ Write the stationary state as
 $$
 \psi(\mathbf x) = A(\mathbf x)\;e^{\,iS(\mathbf x)/\hbar}\;\chi,
 \qquad
-A(\mathbf x) > 0, \quad S(\mathbf x) \in \mathbb{R}, \quad \chi \in \mathbb{B}\tilde P ,
+A(\mathbf x) > 0, \quad S(\mathbf x) \in \mathbb{R}, \quad \chi \in \mathbb{B}\tilde\Pi,
 $$
 
 with a real positive amplitude $A$ and a real phase $S$. The exponential is central, so it commutes with the module element $\chi$ and with everything else; the amplitude is real and therefore also central. Under the isomorphism $\Phi$, the state is $A e^{iS/\hbar}\chi$ with a scalar phase multiplying both components equally. This is the WKB form that the framework's conventions make natural: the phase is central, and the module factor is a constant spectator, exactly as in the free and scattering problems.
@@ -319,7 +319,7 @@ The whole semiclassical expansion lives in the **center** of the algebra: the ph
 | $\mathbb{C}_{\mathbb{B}}$ | Center; home of the phase and the amplitude |
 | $\mathbb{H}_{\mathbb{B}}$ | Real-quaternion subspace; home of the phase gradient |
 | $\mathbb{M}_+$, $\mathbb{M}_-$ | Hermitian and anti-Hermitian sectors |
-| $\mathbb{B}\tilde P\cong\mathbb{C}^2$ | State module |
+| $\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$ | State module |
 | $\psi=Ae^{iS/\hbar}\chi$ | WKB state; central phase, real central amplitude, constant $\chi$ |
 | $\tilde p=-i\hbar\nabla$ | Momentum operator, Hermitian |
 | $\tilde p\psi=[\nabla S-i\hbar\nabla\ln A]\psi$ | Action of the momentum on the WKB state |

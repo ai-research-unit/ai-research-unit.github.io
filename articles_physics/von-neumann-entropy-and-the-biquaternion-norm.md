@@ -108,14 +108,14 @@ The biquaternion norm therefore measures the failure of a state to be a zero div
 The state has a spectral decomposition into the two complementary idempotents along its Bloch direction. Writing $\hat{\mathbf{r}} = \mathbf{r}/|\mathbf{r}|$ for $\mathbf{r}\neq0$,
 
 $$
-\tilde{\rho} = \lambda_+\,\tilde{P}_+(\hat{\mathbf{r}}) + \lambda_-\,\tilde{P}_-(\hat{\mathbf{r}}),
+\tilde{\rho} = \lambda_+\,\tilde\Pi_+(\hat{\mathbf{r}}) + \lambda_-\,\tilde\Pi_-(\hat{\mathbf{r}}),
 \qquad
-\tilde{P}_\pm(\hat{\mathbf{r}}) = \tfrac{1}{2}\bigl(e_0 \pm i\hat{\mathbf{r}}\bigr),
+\tilde\Pi_\pm(\hat{\mathbf{r}}) = \tfrac{1}{2}\bigl(e_0 \pm i\hat{\mathbf{r}}\bigr),
 \qquad
 \lambda_\pm = \tfrac{1}{2}\bigl(1 \pm |\mathbf{r}|\bigr).
 $$
 
-The two projectors are idempotent, Hermitian, orthogonal, and sum to the identity: $\tilde{P}_\pm^2 = \tilde{P}_\pm$, $\tilde{P}_+\tilde{P}_- = 0$, $\tilde{P}_+ + \tilde{P}_- = e_0$. Their traces are one, and the trace pairing gives $\mathrm{Tr}(\tilde{P}_\pm\tilde{\rho}) = \lambda_\pm$. This is the module-level spectral decomposition recalled in the article on the native qubit; the eigenvalues are read from the Bloch radius by $\lambda_+ - \lambda_- = |\mathbf{r}|$ and $\lambda_+ + \lambda_- = 1$.
+The two projectors are idempotent, Hermitian, orthogonal, and sum to the identity: $\tilde\Pi_\pm^2 = \tilde\Pi_\pm$, $\tilde\Pi_+\tilde\Pi_- = 0$, $\tilde\Pi_+ + \tilde\Pi_- = e_0$. Their traces are one, and the trace pairing gives $\mathrm{Tr}(\tilde\Pi_\pm\tilde{\rho}) = \lambda_\pm$. This is the module-level spectral decomposition recalled in the article on the native qubit; the eigenvalues are read from the Bloch radius by $\lambda_+ - \lambda_- = |\mathbf{r}|$ and $\lambda_+ + \lambda_- = 1$.
 
 ### Entropy as a function of the biquaternion norm
 
@@ -147,7 +147,7 @@ As $N\to0$ this derivative diverges to $+\infty$: the entropy leaves the pure st
 The standard formula can also be written algebraically. On the interior of the Bloch ball the state has full rank, so its real logarithm exists and lies in $\mathbb{M}_+$:
 
 $$
-\log \tilde{\rho} = \log\lambda_+\, \tilde{P}_+(\hat{\mathbf{r}}) + \log\lambda_-\, \tilde{P}_-(\hat{\mathbf{r}}) .
+\log \tilde{\rho} = \log\lambda_+\, \tilde\Pi_+(\hat{\mathbf{r}}) + \log\lambda_-\, \tilde\Pi_-(\hat{\mathbf{r}}) .
 $$
 
 Multiplying by $\tilde{\rho}$ and taking the scalar part,
@@ -277,7 +277,7 @@ The description is the standard qubit entropy, and it predicts nothing new. What
 | $e_0 = 1, e_1, e_2, e_3$ | Quaternion units, $e_k^2 = -e_0$ |
 | $i$ | Central scalar imaginary, $i^2 = -1$ |
 | $\tilde{\rho} = \tfrac12(e_0 + i\mathbf{r})$ | State with Bloch vector $\mathbf{r}$, $|\mathbf{r}|\le1$ |
-| $\tilde{P}_\pm(\hat{\mathbf{r}}) = \tfrac12(e_0\pm i\hat{\mathbf{r}})$ | Spectral idempotents of the state |
+| $\tilde\Pi_\pm(\hat{\mathbf{r}}) = \tfrac12(e_0\pm i\hat{\mathbf{r}})$ | Spectral idempotents of the state |
 | $\lambda_\pm = \tfrac12(1\pm|\mathbf{r}|)$ | Eigenvalues |
 | $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$ | Trace |
 | $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$ | Biquaternion norm |

@@ -77,7 +77,7 @@ that is, if and only if the radical $\mathcal{N}_{\tilde\rho}$ is trivial. But $
 
 > **Proposition.** For a state $\tilde\rho$ of $\mathbb{B}$, the GNS vector $\Omega_{\tilde\rho}$ is separating for $\pi_{\tilde\rho}(\mathbb{B})$ if and only if $\tilde\rho$ is faithful, that is, if and only if $\tilde\rho$ has full rank.
 
-The proof is the dimension count of the GNS companion article. Writing $\tilde\rho=\sum_i\lambda_i\tilde P_i$ in its spectral projectors, the radical is
+The proof is the dimension count of the GNS companion article. Writing $\tilde\rho=\sum_i\lambda_i\tilde\Pi_i$ in its spectral projectors, the radical is
 $$
 \mathcal{N}_{\tilde\rho}=\big\{\tilde A:\tilde A\,\tilde\rho=0\big\}
 =\big\{\tilde A:\tilde A\,\mathrm{range}(\tilde\rho)=0\big\},

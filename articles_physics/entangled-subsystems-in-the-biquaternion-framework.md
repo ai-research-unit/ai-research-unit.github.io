@@ -111,7 +111,7 @@ The measurement problem is the fact that standard quantum mechanics has two kind
 The biquaternion framework has something structural to offer here. In standard quantum mechanics, unitary evolution and projective collapse are different postulates, governing different types of process. In the biquaternion framework, both are properties of *acting elements* of the algebra:
 
 - **Unitary elements** $\tilde{U}$ satisfy $\tilde{U}\tilde{U}^\dagger = e_0$ and generate reversible evolution by rotor conjugation.
-- **Idempotent elements** $\tilde{P}$ satisfy $\tilde{P}^2 = \tilde{P}$ and generate irreversible projection by the sandwich operation.
+- **Idempotent elements** $\tilde\Pi$ satisfy $\tilde\Pi^2 = \tilde\Pi$ and generate irreversible projection by the sandwich operation.
 
 The reversible/irreversible dichotomy is not an additional postulate; it is the algebraic dichotomy between two classes of elements of one algebra. This is a genuine reframing: the measurement problem is no longer "two incompatible dynamics glued together" but "one algebra with two classes of elements."
 
@@ -141,7 +141,7 @@ The framework has something to say here, and the development is extensive enough
 In the framework's language, this is the algebraic dichotomy between
 
 $$
-\tilde{P}_A \otimes \tilde{P}_B \quad (\text{quantum}) \qquad \text{and} \qquad \tilde{U}_A \otimes \tilde{P}_B \quad (\text{classical}),
+\tilde\Pi_A \otimes \tilde\Pi_B \quad (\text{quantum}) \qquad \text{and} \qquad \tilde{U}_A \otimes \tilde\Pi_B \quad (\text{classical}),
 $$
 
 which is the same reversible/irreversible dichotomy that the framework already uses to distinguish evolution from measurement (see Section 3 of this list).
@@ -241,7 +241,7 @@ The honest position is this. The framework makes certain structural features of 
 | $\rho_1 = \mathrm{Tr}_2(P_{\mathrm{singlet}}) = \tfrac{1}{2}e_0$ | Reduced state of particle 1 |
 | $E(\hat{a}, \hat{b}) = \mathrm{Tr}(P_{\mathrm{singlet}}\circ((i\hat{a})\otimes(i\hat{b})))$ | Correlation function |
 | $\tilde{U}\tilde{U}^\dagger = e_0$ | Unitary element (reversible evolution) |
-| $\tilde{P}^2 = \tilde{P}$ | Idempotent element (irreversible projection) |
+| $\tilde\Pi^2 = \tilde\Pi$ | Idempotent element (irreversible projection) |
 | $\mathrm{Tr}(x\otimes y) = \mathrm{Tr}_\mathbb{B}(x)\cdot\mathrm{Tr}_\mathbb{B}(y)$ | Tensor-product trace |
 | $2\sqrt{2}$ | Tsirelson bound for the CHSH combination |
 

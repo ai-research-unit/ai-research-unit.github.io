@@ -283,7 +283,7 @@ $$
 \rho \;\longmapsto\; \tfrac{1}{2}\left(e_0 + i\,\hat{\mathbf{n}}\right), \qquad \hat{\mathbf{n}} = n_1 e_1 + n_2 e_2 + n_3 e_3,
 $$
 
-which is exactly the idempotent $\tilde{P}_+(\hat{\mathbf{n}})$ of the informational sector $\mathbb{M}_+$ in the companion quantum article. The unit vector $\mathbf{n}$ is the Bloch vector, and its normalization is a consequence of the algebra rather than an added condition. So a normalized two-component spinor is, in the biquaternion framework, precisely a pure state of $\mathbb{M}_+$, and the spinor bilinear $\psi\psi^\dagger$ is its representative idempotent. This is the sharpest sense in which the Dirac spinor structure and the informational sector are the same algebraic object, and it is the bridge between the present article and the qubit formalism.
+which is exactly the idempotent $\tilde\Pi_+(\hat{\mathbf{n}})$ of the informational sector $\mathbb{M}_+$ in the companion quantum article. The unit vector $\mathbf{n}$ is the Bloch vector, and its normalization is a consequence of the algebra rather than an added condition. So a normalized two-component spinor is, in the biquaternion framework, precisely a pure state of $\mathbb{M}_+$, and the spinor bilinear $\psi\psi^\dagger$ is its representative idempotent. This is the sharpest sense in which the Dirac spinor structure and the informational sector are the same algebraic object, and it is the bridge between the present article and the qubit formalism.
 
 ### The Gordon decomposition
 

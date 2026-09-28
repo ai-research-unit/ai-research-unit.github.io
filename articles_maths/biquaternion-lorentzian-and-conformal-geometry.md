@@ -2,33 +2,13 @@
 
 ## Introduction
 
-The biquaternion algebra carries two real slices whose geometries differ, and this article reads both. The Lorentzian slice is Minkowski space with its light cone and its null lines; the split slice carries a neutral signature and a real quadric ruled by real lines. The two are the real loci of the complex null quadric, and on the celestial sphere of the Lorentzian slice the Lorentz group acts as the conformal group. The conformal model of Euclidean space, in which spheres and planes become vectors and the transformations become versors, is the further picture the algebra supports.
+The biquaternion algebra carries two real slices whose geometries differ, and this article reads both. The Lorentzian slice is Minkowski space, whose light cone and link are fixed in *Biquaternion Norm and Invertibility*; the split slice carries a neutral signature and a real quadric ruled by real lines. The two are the real loci of the complex null quadric, and on the celestial sphere of the Lorentzian slice the Lorentz group acts as the conformal group. The conformal model of Euclidean space, in which spheres and planes become vectors and the transformations become versors, is the further picture the algebra supports.
 
 The article presupposes the biquaternion norm and its real forms (*Biquaternion Norm and Invertibility*), which fixed the signatures $(4,4)$, $(1,1)$, $(3,3)$, $(4,0)$, $(0,4)$, $(1,3)$ and $(3,1)$, and the projective picture of the null quadric (*Biquaternion Null Quadric and Projective Geometry*), whose rulings and real forms are used here. The pseudo-Riemannian, Lorentzian and conformal articles of Part IV are cited and not restated.
 
 **Conventions.** The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_0=1,e_1,e_2,e_3$ and central scalar imaginary $i$; a general element is $\tilde{Q}=\sum_{\mu=0}^{3} Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$. The criterion of *Biquaternion Norm and Invertibility* is used without proof: $N(\tilde{Q})\neq0$ if and only if $\tilde{Q}$ is invertible, and $N(\tilde{Q})=0$ with $\tilde{Q}\neq0$ if and only if $\tilde{Q}$ is a zero divisor.
 
 ---
-
-## The Lorentzian Slice and Its Light Cone
-
-By the table of *Biquaternion Norm and Invertibility*, §*The Real Forms and Their Signatures*, the restriction of $N$ to $\mathbb{M}_-$ is real of signature $(3,1)$, and on $\mathbb{M}_+$ it is $(1,3)$; in real coordinates $\tilde{Q}=iq'_0e_0+q_1e_1+q_2e_2+q_3e_3\in\mathbb{M}_-$ this reads $N(\tilde{Q})=-(q'_0)^2+q_1^2+q_2^2+q_3^2$. Either subspace is thereby identified with Minkowski space $\mathbb{R}^{1,3}$, and its null set,
-
-$$
-N(\tilde{Q})=0\iff(q'_0)^2=q_1^2+q_2^2+q_3^2,
-$$
-
-is the **light cone**, a double cone with apex at the origin. With this identification, the **null biquaternions of the Minkowski subspace** are exactly the elements of the light cone.
-
-Intersecting with the unit sphere of $\mathbb{M}_-\cong\mathbb{R}^4$ gives $q'_0=\pm1/\sqrt2$ and $q_1^2+q_2^2+q_3^2=1/2$, so the link of the light cone is the disjoint union
-
-$$
-S^2\sqcup S^2,
-$$
-
-one sphere per nappe. Each nappe is the cone on its sphere, and the complement of the light cone in $\mathbb{M}_-$ has exactly three connected components, the future timelike, past timelike and spacelike regions, as in *Biquaternion Norm and Invertibility*.
-
-Two warnings are in order: the light cone is a real cone of real dimension $3$ in $\mathbb{M}_-\cong\mathbb{R}^4$, not the full null cone $\mathcal{N}$ of *Biquaternion Null Quadric and Projective Geometry*, §*The null cone*, which has real dimension $6$; and $\mathcal{N}$ is the complex cone over the Segre quadric, whose intersection with $\mathbb{M}_-$ recovers the light cone, so the Minkowski null biquaternions form a three-dimensional real cone while the null elements of the full algebra form a six-dimensional one.
 
 ## The Lorentzian Reading of the Quadric
 
@@ -69,7 +49,7 @@ and the rulings are real, so the quadric is doubly ruled by real lines; the corr
 
 ## Summary
 
-The algebra carries two real slices with distinct geometries. The Lorentzian slice $\mathbb{M}_\pm$ is Minkowski space: its null set is the light cone, a real double cone of real dimension $3$ whose link is $S^2\sqcup S^2$ and whose complement has three connected components, and it is the real slice of the complex null cone, of dimension $6$. On its celestial sphere $S^2$ the proper orthochronous Lorentz group acts by Möbius transformations, so that the Lorentz group is the conformal group of the projective null cone — not the automorphism group of the complex quadric, which is the larger $PO_4(\mathbb{C})$.
+The algebra carries two real slices with distinct geometries. The Lorentzian slice $\mathbb{M}_\pm$ is Minkowski space, with the light cone, its link $S^2\sqcup S^2$ and the three components of its complement fixed in *Biquaternion Norm and Invertibility*, and it is the real slice of the complex null cone, of real dimension $6$. On its celestial sphere $S^2$ the proper orthochronous Lorentz group acts by Möbius transformations, so that the Lorentz group is the conformal group of the projective null cone — not the automorphism group of the complex quadric, which is the larger $PO_4(\mathbb{C})$.
 
 The conformal group of Minkowski space itself is the larger $O(2,4)$, with identity component $SO(4,2)$ and double cover $SU(2,2)\cong Spin(4,2)$. In the conformal model of Euclidean space the flat space is recovered from a null cone, the distinguished null vectors $n$ and $n_\infty$ mark the origin and the point at infinity, the spheres and planes are vectors, and the transformations are versors of a Clifford algebra, acting as the Möbius transformations do on the projective line.
 
@@ -80,7 +60,6 @@ The split slice is the neutral case. Its real quadric is $S^1\times S^1$, ruled 
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{M}_+\cong\mathbb{R}^{1,3}$, $\mathbb{M}_-\cong\mathbb{R}^{3,1}$ | The Lorentzian real slices of $\mathbb{B}$ |
-| Light cone in $\mathbb{M}_\pm$ | Null set of the restricted form; real double cone of dimension $3$, link $S^2\sqcup S^2$ |
 | $\mathbb{P}(\mathcal{N}\cap\mathbb{M}_+)\cong S^2$ | Celestial sphere of null directions |
 | $SO^+(1,3)$ | Proper orthochronous Lorentz group; acts on $S^2=\mathbb{CP}^1$ by Möbius transformations |
 | $PO_4(\mathbb{C})$ | Automorphism group of the complex quadric; larger than the Lorentz group |

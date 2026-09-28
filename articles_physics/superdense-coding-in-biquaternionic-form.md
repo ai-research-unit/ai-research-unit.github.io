@@ -41,7 +41,7 @@ The state $P_{\Phi^+}$ has the following properties, all used in the protocol:
 
 - it is **pure**, $P_{\Phi^+}^2 = P_{\Phi^+}$, and positive, with trace one;
 - it is **maximally entangled**: its partial traces are both maximally mixed, $\mathrm{Tr}_B P_{\Phi^+} = \mathrm{Tr}_A P_{\Phi^+} = \tfrac12 e_0$;
-- it is a **maximal-uncertainty** state with respect to every local basis: the reduced state of either qubit alone carries no information, $\mathrm{Tr}(\tilde{P}(\hat{n})\,\mathrm{Tr}_B P_{\Phi^+}) = \tfrac12$ for every direction $\hat{n}$.
+- it is a **maximal-uncertainty** state with respect to every local basis: the reduced state of either qubit alone carries no information, $\mathrm{Tr}(\tilde\Pi(\hat{n})\,\mathrm{Tr}_B P_{\Phi^+}) = \tfrac12$ for every direction $\hat{n}$.
 
 The last property is what makes the protocol worth performing: **Alice's half, on its own, contains no information about anything**, so all the transmitted information must be created by her local operation and revealed only by Bob's joint measurement. This is the operational meaning of maximal entanglement in the algebra.
 
@@ -93,9 +93,9 @@ and likewise among all pairs, with the diagonal equal to one. Orthogonal states 
 **Why conjugation preserves the idempotent structure.** The operation $e_k\otimes e_0$ is unitary and, on each factor, multiplicative; conjugating an idempotent by a unitary returns an idempotent of the same rank, because
 
 $$
-\bigl(U\tilde{P}U^\dagger\bigr)^2 = U\tilde{P}U^\dagger U\tilde{P}U^\dagger = U\tilde{P}^2U^\dagger = U\tilde{P}U^\dagger,
+\bigl(U\tilde\PiU^\dagger\bigr)^2 = U\tilde\PiU^\dagger U\tilde\PiU^\dagger = U\tilde\Pi^2U^\dagger = U\tilde\PiU^\dagger,
 \qquad
-\mathrm{Tr}\bigl(U\tilde{P}U^\dagger\bigr) = \mathrm{Tr}(\tilde{P}) = 1 .
+\mathrm{Tr}\bigl(U\tilde\PiU^\dagger\bigr) = \mathrm{Tr}(\tilde\Pi) = 1 .
 $$
 
 Hence the image of $P_{\Phi^+}$ is again a rank-one idempotent, i.e. again a pure state, and since the local unitary preserves the algebra it maps the Bell basis into itself. The four images $e_k\otimes e_0$ acting on the resource exhaust the Bell idempotents because the conjugation action of the group $Q_8/\{\pm e_0\}\cong\mathbb{Z}_2\times\mathbb{Z}_2$ on the four-element Bell basis is transitive: the stabilizer of any Bell idempotent in this action is trivial, so the orbit has four elements, one for each coset. This is the algebraic reason no fifth codeword is available and no fourth bit can be sent: the orbit of the resource under the local group has exactly four elements.
