@@ -21,35 +21,45 @@ $$
 \{\text{zero divisors}\}=\mathcal{N}\setminus\{0\}=\{\tilde{Q}\neq0:N(\tilde{Q})=0\}.
 $$
 
-## Factorisation and the Segre embedding
+## The Segre embedding
 
-The nonzero null elements are exactly the factorisable ones, each an outer product
+Choose on $\mathbb{B}$ the linear coordinates
 $$
-A=uv^{T},\qquad u=\binom{\alpha}{\beta}\neq0,\quad v=\binom{\gamma}{\delta}\neq0,
+X_0=Q_0-iQ_3,\qquad X_1=-iQ_1-Q_2,\qquad X_2=-iQ_1+Q_2,\qquad X_3=Q_0+iQ_3,
 $$
-determined by $(u,v)$ up to $(u,v)\mapsto(\lambda u,\lambda^{-1}v)$. Projectivising gives the **Segre embedding**
+an invertible $\mathbb{C}$-linear change of the coordinates $Q_0,\dots,Q_3$. In them the norm is a split form,
 $$
-s:\mathbb{P}^1\times\mathbb{P}^1\longrightarrow\mathbb{P}^3,\qquad ([u],[v])\mapsto[uv^{T}]=[\alpha\gamma:\alpha\delta:\beta\gamma:\beta\delta].
+N(\tilde{Q})=\sum_{\mu=0}^{3}Q_\mu^2=X_0X_3-X_1X_2,
 $$
-The factorisation condition, read in the coordinates $Q_0,\dots,Q_3$ through $A_{11}=Q_0-iQ_3$, $A_{22}=Q_0+iQ_3$, $A_{12}=-iQ_1-Q_2$, $A_{21}=-iQ_1+Q_2$, is
+since $X_0X_3=(Q_0-iQ_3)(Q_0+iQ_3)=Q_0^2+Q_3^2$ and $X_1X_2=(-iQ_1-Q_2)(-iQ_1+Q_2)=-Q_1^2-Q_2^2$. The null cone is therefore the affine hypersurface $X_0X_3=X_1X_2$, and each of its nonzero points is a pair of one-dimensional subspaces of $\mathbb{C}^2$. Indeed, for nonzero $u=(\alpha,\beta)$ and $v=(\gamma,\delta)$ the point
 $$
-(Q_0-iQ_3)(Q_0+iQ_3)=(-iQ_1-Q_2)(-iQ_1+Q_2)\iff Q_0^2+Q_3^2=-Q_1^2-Q_2^2,
+(X_0,X_1,X_2,X_3)=(\alpha\gamma,\alpha\delta,\beta\gamma,\beta\delta)
 $$
-exactly $N(\tilde{Q})=0$. Hence
+lies on the null cone, since $\alpha\gamma\cdot\beta\delta=\alpha\delta\cdot\beta\gamma$, and conversely every null point is of this form: if $X_0\neq0$ the pair $u=(1,X_2/X_0)$, $v=(X_0,X_1)$ reproduces it, and the other cases are the same argument applied to a coordinate that is nonzero. The pair is determined only up to $(u,v)\mapsto(\lambda u,\lambda^{-1}v)$. Projectivising gives the **Segre embedding**
 $$
-\mathbb{P}(\mathcal{N})=\{[\tilde{Q}]\in\mathbb{P}^3:N(\tilde{Q})=0\}
+s:\mathbb{P}^1\times\mathbb{P}^1\longrightarrow\mathbb{P}^3,\qquad ([u],[v])\mapsto[\alpha\gamma:\alpha\delta:\beta\gamma:\beta\delta],
 $$
-is the image of the Segre embedding. The affine null cone is the cone over the Segre variety $\mathbb{P}^1\times\mathbb{P}^1$, and the zero-divisor set is that cone with its apex removed. In particular a null biquaternion is parametrised by a pair of two-component vectors $u,v$, each determined up to a nonzero scalar.
+whose image is exactly the projective null quadric
+$$
+\mathbb{P}(\mathcal{N})=\{[\tilde{Q}]\in\mathbb{P}^3:N(\tilde{Q})=0\}.
+$$
+The affine null cone is the cone over the Segre variety $\mathbb{P}^1\times\mathbb{P}^1$, and the zero-divisor set is that cone with its apex removed.
 
 ## The two rulings of null planes
 
-For fixed $[u]$ the set $\ell_{[u]}=\{[uv^{T}]:v\in\mathbb{C}^2\}$ is a line in $\mathbb{P}^3$, and for fixed $[v]$ the set $m_{[v]}=\{[uv^{T}]:u\in\mathbb{C}^2\}$ is another. These are the **two rulings**, with the classical incidence properties: each is a $\mathbb{P}^1$ of lines; every quadric point lies on exactly one line of each family; lines of the same family are disjoint, while lines of different families meet in exactly one point.
-
-In algebra language, $\ell_{[u]}=\mathbb{P}(W_u)$ with $W_u=\{uv^{T}:v\in\mathbb{C}^2\}$, and $W_u$ is totally isotropic:
+In the coordinates above the polar form of $N$ is
 $$
-B(uv_1^{T},uv_2^{T})=0\qquad\text{for all }v_1,v_2\in\mathbb{C}^2,
+B(X,Y)=\tfrac12\bigl(X_0Y_3+X_3Y_0-X_1Y_2-X_2Y_1\bigr),
 $$
-by the trace formula of *Biquaternion Norm and Invertibility*, §*The Polarisation and the Complex Quadratic Space*, and $\operatorname{tr}(uv^{T})=v^{T}u$. Since $\dim W_u=2$ is the maximal isotropic dimension for a non-degenerate form in dimension $4$, these are the **null planes**; the two rulings are the two families $\{W_u\}$ and $\{W^v\}$.
+the polarisation of $X_0X_3-X_1X_2$, with $B(X,X)=N(X)$. For each $[u]=[\alpha:\beta]\in\mathbb{P}^1$ the two-dimensional subspace
+$$
+W_{[u]}=\operatorname{span}\{(\alpha,0,\beta,0),\,(0,\alpha,0,\beta)\}=\{(\alpha\sigma,\alpha\tau,\beta\sigma,\beta\tau):\sigma,\tau\in\mathbb{C}\}
+$$
+is totally isotropic: for $X$ built from $\sigma,\tau$ and $Y$ from $\sigma',\tau'$ the form above gives $B(X,Y)=\tfrac12\alpha\beta(\sigma\tau'+\tau\sigma'-\tau\sigma'-\sigma\tau')=0$. Since $\dim W_{[u]}=2$ is the maximal isotropic dimension for a non-degenerate form in dimension $4$, $W_{[u]}$ is a **null plane**, and the same holds for
+$$
+W^{[v]}=\operatorname{span}\{(\gamma,\delta,0,0),\,(0,0,\gamma,\delta)\},\qquad [v]=[\gamma:\delta].
+$$
+Their projectivisations $\ell_{[u]}=\mathbb{P}(W_{[u]})$ and $m_{[v]}=\mathbb{P}(W^{[v]})$ are the **two rulings**: each family is a $\mathbb{P}^1$ of lines; every quadric point lies on exactly one line of each family; lines of the same family are disjoint, while lines of different families meet in exactly one point, the point $[(\alpha\gamma,\alpha\delta,\beta\gamma,\beta\delta)]$ that the pair $([u],[v])$ determines.
 
 ---
 
@@ -87,11 +97,11 @@ The form $B$ defines a **polarity**, the correlation
 $$
 [\tilde{P}]\longmapsto[\tilde{P}]^{\perp}=\{[\tilde{Q}]:B(\tilde{P},\tilde{Q})=0\},
 $$
-well defined by bilinearity and bijective by non-degeneracy. The quadric is the locus of self-polar points, $[\tilde{P}]\in Q^2\iff B(\tilde{P},\tilde{P})=0$. For $[\tilde{P}]\in Q^2$, since the differential of $N$ at $\tilde{P}$ is $2B(\tilde{P},\cdot\,)$, the polar hyperplane is the **tangent hyperplane**, and its intersection with the quadric is the pair of ruling lines through $[\tilde{P}]$:
+well defined by bilinearity and bijective by non-degeneracy. The quadric is the locus of self-polar points, $[\tilde{P}]\in Q^2\iff B(\tilde{P},\tilde{P})=0$. For $[\tilde{P}]\in Q^2$, since the differential of $N$ at $\tilde{P}$ is $2B(\tilde{P},\cdot\,)$, the polar hyperplane is the **tangent hyperplane**, and its intersection with the quadric is the pair of ruling lines through $[\tilde{P}]$,
 $$
-Q^2\cap[\tilde{P}]^{\perp}=\ell_{[u]}\cup m_{[v]},\qquad \tilde{P}=uv^{T}.
+Q^2\cap[\tilde{P}]^{\perp}=\ell_{[u]}\cup m_{[v]},
 $$
-For two distinct null points $[\tilde{P}],[\tilde{Q}]$, the biquaternion norm on the line $\tilde{P}+t\tilde{Q}$ is $2t\,B(\tilde{P},\tilde{Q})$, so
+one line from each family. For two distinct null points $[\tilde{P}],[\tilde{Q}]$, the biquaternion norm on the line $\tilde{P}+t\tilde{Q}$ is $2t\,B(\tilde{P},\tilde{Q})$, so
 $$
 [\tilde{P}][\tilde{Q}]\subset Q^2\iff B(\tilde{P},\tilde{Q})=0,
 $$
@@ -110,7 +120,7 @@ acting on $\mathbb{P}^1\times\mathbb{P}^1$ by $([u],[v])\mapsto([Au],[Bv])$, wit
 ## Summary
 
 - $N$ is a non-degenerate quadratic form on $\mathbb{B}\cong\mathbb{C}^4$, with polar form the complex dot product $B=\sum_\mu P_\mu Q_\mu$ and orthonormal basis $e_0,\dots,e_3$; the polarisation and the real forms are in *Biquaternion Norm and Invertibility*.
-- The null cone is a complex cone of dimension $3$ (real dimension $6$), smooth away from the origin and, punctured, exactly the zero-divisor set; its nonzero points are exactly the factorisable elements.
+- The null cone is a complex cone of dimension $3$ (real dimension $6$), smooth away from the origin and, punctured, exactly the zero-divisor set; in the coordinates of §*The Segre embedding* its nonzero points are the points with $X_0X_3 = X_1X_2$.
 - The projectivised null cone is the smooth quadric $Q^2\cong\mathbb{P}^1\times\mathbb{P}^1$, and the null cone is the affine cone over it. The two rulings are the two families of maximal isotropic null planes, each a $\mathbb{P}^1$.
 - The quadric sits in the Plücker–Klein geometry of lines in $\mathbb{P}^3$; its rulings are two conics on the Klein quadric, and tangency and polarity come from the form $B$.
 - $\operatorname{Aut}(Q^2)\cong PO_4(\mathbb{C})$, while the proper orthochronous Lorentz group $SO^+(1,3)$ is the conformal group of the projective null cone $S^2$, not the automorphism group of the complex quadric; the geometry of the real slices is in *Biquaternion Lorentzian and Conformal Geometry*.
@@ -121,10 +131,11 @@ acting on $\mathbb{P}^1\times\mathbb{P}^1$ by $([u],[v])\mapsto([Au],[Bv])$, wit
 |---|---|
 | $N(\tilde{Q}) = \sum_{\mu=0}^{3} Q_\mu^2$ | Biquaternion norm on $\mathbb{B} \cong \mathbb{C}^4$ |
 | $B(\tilde{P},\tilde{Q}) = \sum_\mu P_\mu Q_\mu$ | Polar form of $N$, the complex bilinear dot product; $B(e_\mu,e_\nu) = \delta_{\mu\nu}$ |
+| $X_0,\dots,X_3$ | Linear coordinates on $\mathbb{B}$ in which $N = X_0X_3 - X_1X_2$; see §*The Segre embedding* |
 | $\mathcal{N} = \{\tilde{Q} : N(\tilde{Q}) = 0\}$ | Affine null cone; punctured, it is exactly the zero-divisor set |
 | $Q^2 = \mathbb{P}(\mathcal{N})$ | Projective null quadric in $\mathbb{P}^3$ |
-| $s : \mathbb{P}^1 \times \mathbb{P}^1 \to \mathbb{P}^3$ | Segre embedding, $([u],[v]) \mapsto [uv^{T}]$; its image is $Q^2$ |
-| $u = (\alpha,\beta)^{T}$, $v = (\gamma,\delta)^{T}$ | Two-component vectors parametrising a null biquaternion $A = uv^{T}$ |
+| $s : \mathbb{P}^1 \times \mathbb{P}^1 \to \mathbb{P}^3$ | Segre embedding, $([u],[v]) \mapsto [\alpha\gamma:\alpha\delta:\beta\gamma:\beta\delta]$; its image is $Q^2$ |
+| $[u] = [\alpha:\beta]$, $[v] = [\gamma:\delta]$ | The two factors of a null point, determined up to $(u,v)\mapsto(\lambda u,\lambda^{-1}v)$ |
 | $\ell_{[u]}, m_{[v]}$ | The two rulings of $Q^2$; the lines through $[\tilde{P}] \in Q^2$ |
 | $p_{ij} = x_i y_j - x_j y_i$ | Plücker coordinates; the Klein quadric in $\mathbb{P}^5$ is their Plücker locus |
 | $\operatorname{Aut}(Q^2) \cong PO_4(\mathbb{C})$ | Projective automorphisms of the quadric |

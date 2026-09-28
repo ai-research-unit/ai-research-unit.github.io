@@ -37,7 +37,7 @@
 
 
 
-## Mathematical physics
+## Biquaternion Mathematical Physics
 
 ### - Algebra
 

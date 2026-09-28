@@ -86,7 +86,7 @@ $$
 L\cong(S^3\times S^3)/U(1),
 $$
 
-where $U(1)=S^1$ acts by $(u,v)\mapsto(\lambda u,\lambda^{-1}v)$, the relation under which $uv^{T}$ is unchanged. Here $Q=\mathbb{P}(\mathcal{N})\cong\mathbb{P}^1\times\mathbb{P}^1$ is the projectivised null cone, the Segre quadric of *Biquaternion Null Quadric and Projective Geometry*, §*Factorisation and the Segre embedding* and §*The two rulings of null planes*. The Hopf maps combine to a bundle projection
+where $U(1)=S^1$ acts by $(u,v)\mapsto(\lambda u,\lambda^{-1}v)$, the relation under which $uv^{T}$ is unchanged. Here $Q=\mathbb{P}(\mathcal{N})\cong\mathbb{P}^1\times\mathbb{P}^1$ is the projectivised null cone, the Segre quadric of *Biquaternion Null Quadric and Projective Geometry*, §*The Segre embedding* and §*The two rulings of null planes*. The Hopf maps combine to a bundle projection
 
 $$
 q:L\to Q\cong S^2\times S^2,\qquad[(u,v)]\mapsto([u],[v]),

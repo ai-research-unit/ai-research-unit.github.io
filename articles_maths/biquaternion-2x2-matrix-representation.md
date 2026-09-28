@@ -95,7 +95,7 @@ since $(-i Q_1)^2 = -Q_1^2$ and the cross terms of each product cancel within th
 
 **Proof.** A square matrix over a field is invertible if and only if its determinant is nonzero, and $\Phi$ is an isomorphism, so invertibility transports. The matrix is singular precisely when $\det\Phi(\tilde{Q}) = N(\tilde{Q}) = 0$.
 
-The criterion and the group of units are the subject of *Biquaternion Norm and Invertibility*, and the classification of the zero divisors is the subject of *Biquaternion Zero Divisors*; what the matrix realization adds is the reading of both in terms of the determinant and the rank.
+The criterion and the group of units are the subject of *Biquaternion Norm and Invertibility*, and the classification of the zero divisors is the subject of *Biquaternion Zero Divisors*; what the matrix realization adds is the reading of both in terms of the determinant and the rank, developed in §*The Rank-One Elements and the Outer Product*.
 
 **Remark (the determinant is multiplicative, the trace is not).** The determinant is multiplicative, $\det\Phi(\tilde{P}\tilde{Q}) = \det\Phi(\tilde{P})\det\Phi(\tilde{Q})$, so the biquaternion norm is multiplicative, $N(\tilde{P}\tilde{Q}) = N(\tilde{P})N(\tilde{Q})$; this is the reason for the name. The trace is additive but not multiplicative, and its value $2Q_0$ depends only on the scalar part.
 
@@ -108,6 +108,24 @@ $$
 $$
 
 whose trace is $4+2i = 2Q_0$ and whose determinant is $(3+i)(1+i) - (-4-i)(2-i) = 11+2i = N(\tilde{Q})$, so the element is a unit with inverse $\bar{\tilde{Q}}/N$.
+
+## The Rank-One Elements and the Outer Product
+
+The corollary above says that the zero divisors are the nonzero singular matrices; the matrix form also says what such a matrix is.
+
+**Proposition.** For $\tilde{Q}\neq0$ the following are equivalent: $N(\tilde{Q})=0$; $\Phi(\tilde{Q})$ is singular; $\Phi(\tilde{Q})$ is an outer product
+$$
+\Phi(\tilde{Q})=uv^{T},\qquad u=\binom{\alpha}{\beta}\neq0,\quad v=\binom{\gamma}{\delta}\neq0,
+$$
+the pair $(u,v)$ being determined up to $(u,v)\mapsto(\lambda u,\lambda^{-1}v)$.
+
+**Proof.** The first two are equivalent by $\det\Phi(\tilde{Q})=N(\tilde{Q})$, and $\tilde{Q}\neq0$ makes the matrix nonzero; a nonzero singular two-by-two matrix has rank one. Let $M=\Phi(\tilde{Q})$ have rank one and let $M_{pq}\neq0$ be an entry. Every two-by-two minor of $M$ vanishes, so $M_{iq}M_{pj}=M_{ij}M_{pq}$ for all $i,j$; hence, with $u$ the $q$-th column and $v^{T}$ the $p$-th row divided by $M_{pq}$,
+$$
+u=\binom{M_{1q}}{M_{2q}},\qquad v^{T}=\frac{1}{M_{pq}}\begin{pmatrix}M_{p1}&M_{p2}\end{pmatrix},
+$$
+one has $(uv^{T})_{ij}=M_{iq}M_{pj}/M_{pq}=M_{ij}$, so $M=uv^{T}$, and $u\neq0$ because its $p$-th entry is $M_{pq}\neq0$. A different pivot gives a pair differing by precisely the rescaling: the $j$-th columns of $uv^{T}=u'v'^{T}$ give $u'=\lambda u$ for $\lambda=v_{j}/v'_{j}\neq0$, and the remaining entries give $v'=\lambda^{-1}v$. $\square$
+
+**Worked example.** For $\tilde{Q}=e_2+ie_3$ the image is $\Phi(\tilde{Q})=\begin{pmatrix}1&-1\\1&-1\end{pmatrix}$, of rank one; the pivot $M_{11}=1$ gives $u=(1,1)^{T}$, $v=(1,-1)^{T}$, and the pivot $M_{12}=-1$ gives $u=(-1,-1)^{T}$, $v=(-1,1)^{T}$, the same pair rescaled by $\lambda=-1$.
 
 ## The Real Norm from the Determinant
 
@@ -423,7 +441,7 @@ Taken together, the three statements say that $\mathbb{B}$ is the full endomorph
 
 ## Summary
 
-The biquaternion algebra is isomorphic to $M_2(\mathbb{C})$ through the map $\Phi$ fixed by $e_0 \mapsto I$ and $e_k \mapsto -i\sigma_k$, whose explicit form is $\Phi(\tilde{Q}) = \begin{pmatrix} Q_0 - iQ_3 & -iQ_1 - Q_2 \\ -iQ_1 + Q_2 & Q_0 + iQ_3 \end{pmatrix}$. The choice is stated once: the Pauli matrices are a shorthand for the images and not the organising device, and every statement is about $\mathbb{B}$ and $M_2(\mathbb{C})$. The trace is $2Q_0$ and the determinant is the biquaternion norm $N(\tilde{Q}) = Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2$, so invertibility is non-vanishing norm and the zero divisors are the singular matrices. The characteristic polynomial is $\lambda^2 - 2Q_0\lambda + N(\tilde{Q})$ and the Cayley–Hamilton identity is $\tilde{Q}^2 - 2Q_0\tilde{Q} + N(\tilde{Q})e_0 = 0$, so every power reduces to a combination of $e_0$ and $\tilde{Q}$. The real norm of the algebra is the absolute determinant, $r(\tilde{Q}) = \sqrt{|\det\Phi(\tilde{Q})|}$, the real scale the polar representations use. The biquaternion exponential corresponds to the matrix exponential, $\Phi(\exp\tilde{Q}) = \exp\Phi(\tilde{Q})$, whence $N(\exp\tilde{Q}) = e^{2Q_0}$; and $\Phi$ carries the Hermitian subspace onto the Hermitian matrices, intertwining the symmetrized product with $\tfrac12(AB + BA)$ as Jordan algebras.
+The biquaternion algebra is isomorphic to $M_2(\mathbb{C})$ through the map $\Phi$ fixed by $e_0 \mapsto I$ and $e_k \mapsto -i\sigma_k$, whose explicit form is $\Phi(\tilde{Q}) = \begin{pmatrix} Q_0 - iQ_3 & -iQ_1 - Q_2 \\ -iQ_1 + Q_2 & Q_0 + iQ_3 \end{pmatrix}$. The choice is stated once: the Pauli matrices are a shorthand for the images and not the organising device, and every statement is about $\mathbb{B}$ and $M_2(\mathbb{C})$. The trace is $2Q_0$ and the determinant is the biquaternion norm $N(\tilde{Q}) = Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2$, so invertibility is non-vanishing norm and the zero divisors are the singular matrices, a nonzero zero divisor being a rank-one matrix $\Phi(\tilde{Q}) = uv^{T}$. The characteristic polynomial is $\lambda^2 - 2Q_0\lambda + N(\tilde{Q})$ and the Cayley–Hamilton identity is $\tilde{Q}^2 - 2Q_0\tilde{Q} + N(\tilde{Q})e_0 = 0$, so every power reduces to a combination of $e_0$ and $\tilde{Q}$. The real norm of the algebra is the absolute determinant, $r(\tilde{Q}) = \sqrt{|\det\Phi(\tilde{Q})|}$, the real scale the polar representations use. The biquaternion exponential corresponds to the matrix exponential, $\Phi(\exp\tilde{Q}) = \exp\Phi(\tilde{Q})$, whence $N(\exp\tilde{Q}) = e^{2Q_0}$; and $\Phi$ carries the Hermitian subspace onto the Hermitian matrices, intertwining the symmetrized product with $\tfrac12(AB + BA)$ as Jordan algebras.
 
 Quaternion conjugation is the adjugate, Hermitian conjugation is the conjugate transpose, and complex conjugation is **not** entrywise: it is dressed with the antisymmetric form $\epsilon = i\sigma_2 = \Phi(-e_2)$, as $\Phi(\tilde{Q}^*) = \epsilon\overline{\Phi(\tilde{Q})}\epsilon^{-1}$. The Hermitian form $\tilde{Q}\tilde{Q}^\dagger$ has trace twice the squared Euclidean length of the four-vector, and the Euclidean norm is its square root. The six distinguished subspaces are the scalar, traceless, quaternionic, anti-quaternionic, Hermitian and anti-Hermitian matrices. The algebra is simple with centre the scalar matrices and is the full endomorphism algebra of the simple module $V = \mathbb{C}^2$ of complex dimension $2$, on which it acts by matrix multiplication; the minimal left ideals are the column spaces, and $V$ is the only simple module. The two dimensions $2$ of the module and $2$ of the matrix are the same two, because the algebra is the endomorphism algebra of the module.
 
@@ -439,6 +457,7 @@ Quaternion conjugation is the adjugate, Hermitian conjugation is the conjugate t
 | $\Phi : \mathbb{B} \to M_2(\mathbb{C})$ | Matrix realization, $\Phi(e_0) = I$, $\Phi(e_k) = -i\sigma_k$ |
 | $\sigma_1, \sigma_2, \sigma_3$ | Pauli matrices, a shorthand for the images of $e_1, e_2, e_3$ |
 | $N(\tilde{Q}) = \det\Phi(\tilde{Q}) = \sum_\mu Q_\mu^2$ | Biquaternion norm |
+| $\Phi(\tilde{Q}) = uv^{T}$ | Rank-one form of a nonzero null element, $N(\tilde{Q}) = 0$; the columns $u = (\alpha,\beta)^{T}$ and $v = (\gamma,\delta)^{T}$ are nonzero and determined up to $(\lambda u,\lambda^{-1}v)$ |
 | $\epsilon = i\sigma_2 = \Phi(-e_2)$ | Antisymmetric form, $\Phi(\tilde{Q}^*) = \epsilon\overline{\Phi(\tilde{Q})}\epsilon^{-1}$ |
 | $\operatorname{Tr}\Phi(\tilde{Q}) = 2Q_0$ | Trace of the matrix realization |
 | $\mathrm{Sc}(\tilde{Q}\tilde{Q}^\dagger) = \sum_\mu Q_\mu^* Q_\mu$ | Scalar part of the Hermitian form |
