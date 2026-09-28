@@ -82,6 +82,16 @@ $$</p>
 N\!\left(ct'\,e_0 + i\mathbf{x}'\right) = c^2t'^2 - \mathbf{x}'^2 .
 $$</p>
 <p>The remaining sections of this article are, in physical terms, the study of this one object: its multiplicativity is the invariance of the interval under the transformations of the theory, its vanishing is the light cone, and its real absolute value is the scale of the polar representation.</p>
+<h3 id="the-polarisation-and-the-complex-quadratic-space">The Polarisation and the Complex Quadratic Space</h3>
+<p>$N(\tilde{Q})=\sum_{\mu=0}^{3} Q_\mu^2$ is homogeneous of degree two, hence is a quadratic form on $\mathbb{B}\cong\mathbb{C}^4$. Its polar form is</p>
+<p>$$
+B(\tilde{P},\tilde{Q})=\tfrac{1}{2}\bigl(N(\tilde{P}+\tilde{Q})-N(\tilde{P})-N(\tilde{Q})\bigr)=\sum_{\mu=0}^{3} P_\mu Q_\mu,
+$$</p>
+<p>the complex bilinear dot product. It is symmetric and non-degenerate, and the quaternion units are orthonormal,</p>
+<p>$$
+B(e_\mu,e_\nu)=\delta_{\mu\nu}.
+$$</p>
+<p>So $(\mathbb{B},N)$ is the standard non-degenerate quadratic space of dimension $4$ over $\mathbb{C}$. The form $B$ is complex-bilinear: it is <strong>not</strong> the Hermitian form $\tilde{P}\tilde{Q}^\dagger$ of the next section, and the two must not be conflated. Geometrically $B$ is the form whose vanishing locus is the null cone, the object the quadric of <em>Biquaternion Null Quadric and Projective Geometry</em> is built from.</p>
 <h3 id="multiplicativity">Multiplicativity</h3>
 <p><strong>Theorem.</strong> The biquaternion norm is multiplicative:</p>
 <p>$$
@@ -248,9 +258,9 @@ $$</p>
 <p>A <strong>division algebra</strong> is one in which every nonzero element is invertible, equivalently one with no zero divisors. The biquaternion algebra has zero divisors and is therefore <strong>not</strong> a division algebra, in contrast with the Frobenius theorem, which says that the only finite-dimensional associative real division algebras are $\mathbb{R}$, $\mathbb{C}$ and $\mathbb{H}$. <strong>This is not a defect in the physics but the physics itself</strong>: the light cone exists because the algebra is not a division algebra, and a division algebra over the reals would give no null directions and hence no propagation velocity.</p>
 <h2 id="distribution-of-the-invertible-elements">Distribution of the Invertible Elements</h2>
 <p>The criterion is the same in all six subspaces: invertible if and only if the biquaternion norm is nonzero. The distribution is read off physically subspace by subspace.</p>
-<h3 id="the-complex-time-sector-math184">The Complex Time Sector $\mathbb{C}_{\mathbb{B}}$</h3>
+<h3 id="the-complex-time-sector-math194">The Complex Time Sector $\mathbb{C}_{\mathbb{B}}$</h3>
 <p>$\tilde{Q} = Q_0 e_0$ with $Q_0 \in \mathbb{C}$ gives $N(\tilde{Q}) = Q_0^2$, which vanishes only for $\tilde{Q} = 0$. Every nonzero element is invertible: the sector is a copy of the field $\mathbb{C}$, and its parameter pair $(ct', ict)$ is never null.</p>
-<h3 id="the-complex-space-sector-math191">The Complex Space Sector $\mathrm{Vect}(\mathbb{B})$</h3>
+<h3 id="the-complex-space-sector-math201">The Complex Space Sector $\mathrm{Vect}(\mathbb{B})$</h3>
 <p>With $\tilde{Q} = Q_1e_1+Q_2e_2+Q_3e_3$,</p>
 <p>$$
 N(\tilde{Q}) = Q_1^2+Q_2^2+Q_3^2 = \left(q_1^2+q_2^2+q_3^2-(q'_1)^2-(q'_2)^2-(q'_3)^2\right) + 2i\left(q_1q'_1+q_2q'_2+q_3q'_3\right).
@@ -261,15 +271,15 @@ Q_1^2+Q_2^2+Q_3^2 = 0 ,
 $$</p>
 <p>the <strong>nilpotent cone</strong>, whose nonzero elements are the pure zero divisors. As a complex cone in $\mathbb{C}^3$ it has real dimension 4, hence real codimension 2 in the six-dimensional sector, and its complement — the invertible elements — is therefore <strong>connected</strong>. The physical reading is that this sector carries the two spatial triples $(x,y,z)$ and $(ix',iy',iz')$ at once, and a complex spatial vector can be null only through a conspiracy of both: the condition is two real equations, not one, so it does not divide the sector into regions the way a light cone does.</p>
 <p>The intersection $\mathrm{Vect}(\mathbb{B})\cap\mathbb{H}_{\mathbb{B}} = \operatorname{span}_{\mathbb{R}}\{e_1,e_2,e_3\}$ consists of invertible elements away from the origin, since $N$ restricts to $q_1^2+q_2^2+q_3^2$ there: <strong>the real spatial vectors are never null</strong>.</p>
-<h3 id="the-real-sector-math202">The Real Sector $\mathbb{H}_{\mathbb{B}}$</h3>
+<h3 id="the-real-sector-math212">The Real Sector $\mathbb{H}_{\mathbb{B}}$</h3>
 <p>$N(\tilde{Q}) = q_0^2+q_1^2+q_2^2+q_3^2$, a sum of squares, vanishing only at the origin. Every nonzero element is invertible, and there is no light cone: the real sector carries the coordinates $ct', x, y, z$ and no null direction at all. It is a copy of the division algebra $\mathbb{H}$ and the home of the rotation rotors.</p>
-<h3 id="the-imaginary-sector-math206">The Imaginary Sector $i\mathbb{H}_{\mathbb{B}}$</h3>
+<h3 id="the-imaginary-sector-math216">The Imaginary Sector $i\mathbb{H}_{\mathbb{B}}$</h3>
 <p>For $\tilde{Q} = i\tilde{P}$ with $\tilde{P}\in\mathbb{H}_{\mathbb{B}}$ real,</p>
 <p>$$
 N(i\tilde{P}) = -\sum_{\mu=0}^{3}p_\mu^2 ,
 $$</p>
 <p><strong>negative-definite</strong>, vanishing only at the origin, so there are no zero divisors either. Its signature $(0,4)$ is the exact negative of the $(4,0)$ of the real sector, as $N(i\tilde{Q}) = -N(\tilde{Q})$ requires. This sector carries $ict, ix', iy', iz'$.</p>
-<h3 id="the-informational-sector-math214">The Informational Sector $\mathbb{M}_+$</h3>
+<h3 id="the-informational-sector-math224">The Informational Sector $\mathbb{M}_+$</h3>
 <p>For $\tilde{Q} = q_0e_0 + iq'_1e_1+iq'_2e_2+iq'_3e_3$,</p>
 <p>$$
 N(\tilde{Q}) = q_0^2-(q'_1)^2-(q'_2)^2-(q'_3)^2 ,
@@ -279,7 +289,7 @@ $$</p>
 q_0^2 = (q'_1)^2+(q'_2)^2+(q'_3)^2 .
 $$</p>
 <p>In the informational coordinate $ct'\,e_0+i\mathbf{x}'$ this is $c^2t'^2 = \mathbf{x}'^2$: the informational cone. The invertible elements are the complement, with three connected components — the <strong>future</strong> $q_0>0$, $q_0^2>\mathbf{q}'^2$ with $N>0$; the <strong>past</strong> $q_0<0$, $q_0^2>\mathbf{q}'^2$ with $N>0$; and the <strong>inside</strong> $q_0^2<\mathbf{q}'^2$ with $N<0$.</p>
-<h3 id="the-material-sector-math229">The Material Sector $\mathbb{M}_-$</h3>
+<h3 id="the-material-sector-math239">The Material Sector $\mathbb{M}_-$</h3>
 <p>For $\tilde{Q} = iq'_0e_0 + q_1e_1+q_2e_2+q_3e_3$,</p>
 <p>$$
 N(\tilde{Q}) = -(q'_0)^2+q_1^2+q_2^2+q_3^2 ,
@@ -302,6 +312,59 @@ $$</p>
 <li>$\mathrm{Vect}(\mathbb{B})$ contains the nilpotent cone, of real codimension 2, whose complement is connected.</li>
 </ul>
 <p>The two cones in the sectors have the same structure, each being the vanishing set of an indefinite form of signature $(1,3)$ or $(3,1)$, of codimension 1 in a four-dimensional space. The cone in the complex space sector is different: the biquaternion norm is complex there, its vanishing imposes two real conditions, and the complement is connected and not divided into regions.</p>
+<h2 id="the-real-forms-and-their-signatures">The Real Forms and Their Signatures</h2>
+<p>Over $\mathbb{C}$ a non-degenerate quadratic form has no signature; signature appears only after a real form is chosen. With $Q_\mu=q_\mu+iq'_\mu$, $q_\mu,q'_\mu\in\mathbb{R}$,
+$$
+\operatorname{Re}N=\sum_{\mu=0}^{3}\bigl(q_\mu^2-q'_\mu{}^2\bigr),\qquad \operatorname{Im}N=2\sum_{\mu=0}^{3} q_\mu q'_\mu .
+$$
+Hence the realification $\operatorname{Re}N$ on $\mathbb{R}^8$ is non-degenerate of signature $(4,4)$, a <strong>split</strong> (neutral) signature; in the real basis $e_\mu,ie_\mu$ its matrix is $\operatorname{diag}(1,1,1,1,-1,-1,-1,-1)$. The six distinguished real subspaces give six real forms, whose signatures are the ones read off sector by sector in <em>Distribution of the Invertible Elements</em>:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Real subspace</th>
+<th>$N$ restricted</th>
+<th>Signature</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{C}_{\mathbb{B}}$</td>
+<td>$q_0^2-(q'_0)^2$</td>
+<td>$(1,1)$</td>
+</tr>
+<tr>
+<td>$\mathrm{Vect}(\mathbb{B})$</td>
+<td>$q_1^2+q_2^2+q_3^2-(q'_1)^2-(q'_2)^2-(q'_3)^2$</td>
+<td>$(3,3)$</td>
+</tr>
+<tr>
+<td>$\mathbb{H}_{\mathbb{B}}$</td>
+<td>$\sum q_\mu^2$</td>
+<td>$(4,0)$</td>
+</tr>
+<tr>
+<td>$i\mathbb{H}_{\mathbb{B}}$</td>
+<td>$-\sum (q'_\mu)^2$</td>
+<td>$(0,4)$</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_+$</td>
+<td>$q_0^2-(q'_1)^2-(q'_2)^2-(q'_3)^2$</td>
+<td>$(1,3)$</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_-$</td>
+<td>$-(q'_0)^2+q_1^2+q_2^2+q_3^2$</td>
+<td>$(3,1)$</td>
+</tr>
+</tbody>
+</table></div>
+<p>Each is a real slice whose complexification is $(\mathbb{B},N)$; the definite forms are $(4,0)$ and $(0,4)$, the indefinite ones $(1,3)$ and $(3,1)$, the neutral ones $(1,1)$ and $(3,3)$. The sign is the choice of geometry, the datum the geometry of <em>Biquaternion Geometry</em> is organised by.</p>
+<p>Beyond the six distinguished subspaces, a mixed real subspace carries a signature of its own. The one the geometry uses is the <strong>split form of signature $(2,2)$</strong>,
+$$
+W=\operatorname{span}_{\mathbb{R}}\{e_0,e_1,ie_2,ie_3\},\qquad N|_W=a^2+b^2-c^2-d^2 \quad \text{for } a e_0+b e_1+ci e_2+di e_3,
+$$
+of real dimension $4$ and matrix $\operatorname{diag}(1,1,-1,-1)$; its complexification is $(\mathbb{B},N)$, and its projective quadric is the doubly ruled real surface $S^1\times S^1$ (<em>Biquaternion Null Quadric and Projective Geometry</em>, <em>Biquaternion Lorentzian and Conformal Geometry</em>).</p>
 <h2 id="the-relation-to-the-hermitian-decomposition">The Relation to the Hermitian Decomposition</h2>
 <p>The invertibility criterion is stated with the biquaternion norm; the Hermitian decomposition $\mathbb{B} = \mathbb{M}_+\oplus\mathbb{M}_-$ relates it to the Hermitian form:</p>
 <ul>
