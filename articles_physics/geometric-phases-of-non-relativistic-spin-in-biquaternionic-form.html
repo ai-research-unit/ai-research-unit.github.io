@@ -56,14 +56,14 @@
 <p>The adiabatic form of the statement — a Hamiltonian transported slowly around a loop, with the spin following the instantaneous eigenstate — is the <strong>Berry phase</strong>, and it is the subject of the companion article <em>The Berry Phase and Geometric Phases in Biquaternionic Form</em>, which computes the Berry connection and curvature and verifies the two-route agreement on a slowly rotating field. The present article treats the <strong>non-adiabatic</strong> form, the <strong>Aharonov–Anandan (AA) phase</strong>, and the spin-specific structures that accompany it: the exact phase of a precessing spin, the $4\pi$ periodicity of the spinor, and the holonomy as a rotor in the real-quaternion subspace. It does not repeat the connection-and-curvature computation of the Berry article; it cites it.</p>
 <p>The findings are stated in advance.</p>
 <ol>
-<li><strong>The geometric phase is a holonomy of the spinor, not a property of the idempotent.</strong> The instantaneous state $\tilde{P}_\pm(\hat n)$ contains no phase information; the phase is carried by the spinor and is removed by the idempotent. This is the structural fact the Berry article records for the adiabatic connection, and it holds unchanged for the AA phase.</li>
+<li><strong>The geometric phase is a holonomy of the spinor, not a property of the idempotent.</strong> The instantaneous state $\tilde\Pi_\pm(\hat n)$ contains no phase information; the phase is carried by the spinor and is removed by the idempotent. This is the structural fact the Berry article records for the adiabatic connection, and it holds unchanged for the AA phase.</li>
 <li><strong>For spin-1/2 the geometric phase is one half the oriented solid angle, with a sign:</strong> $\gamma_{\mathrm{geo}} = -\tfrac12\Omega_{\mathrm{sgn}}$, where $\Omega_{\mathrm{sgn}}$ is the solid angle subtended by the closed curve, counted positive for the orientation given by the right-hand rule about the curve.</li>
 <li><strong>The AA phase is exact for a precessing spin.</strong> A spin prepared along $\hat{m}$ and left in a fixed field along $\hat{n}$ has a Bloch vector that precesses on a cone of half-angle $\theta_0$; over one period the AA phase is $\tfrac12$ of the unsigned solid angle of the cap, with the sign fixed by the sense of precession. This is computed exactly below, with no adiabatic approximation.</li>
 <li><strong>The spinor is double-valued.</strong> A full $2\pi$ rotation of the spin returns the idempotent but sends the spinor to its negative; only after $4\pi$ does the spinor return. The geometric phase of the equator loop is the cleanest instance: the phase is $\pi$ after one period, a sign change, and $2\pi$ (i.e. the identity) after two.</li>
 <li><strong>The holonomy is a rotor.</strong> The accumulated spin evolution is the product of a central phase and conjugation by a unit real quaternion $\tilde{R} = e^{-\frac{1}{2}\Phi\,\hat{n}}$, where $\Phi$ is the angle through which the Bloch vector is turned; the central phase and the rotation are the two faces of the same element of $\mathbb{B}$.</li>
 <li><strong>The adiabatic Berry phase is the slow limit of the same holonomy.</strong> Using the rotating-frame effective field of a circularly polarised drive, the AA phase reduces to the solid-angle formula when the drive is slow, with the sign set by the sense of the loop, and it departs from it as the drive speeds up.</li>
 </ol>
-<p>The notation is that of the read-list articles: $\tilde{S}_k = \tfrac{\hbar}{2}ie_k$, $\tilde{P}_\pm(\hat\mu) = \tfrac12(e_0\pm i\hat\mu)$, $\tilde{\rho} = \tfrac12(e_0+i\mathbf{r})$, the trace formula $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$, and the isomorphism $\Phi$ with $ie_k\mapsto\sigma_k$.</p>
+<p>The notation is that of the read-list articles: $\tilde{S}_k = \tfrac{\hbar}{2}ie_k$, $\tilde\Pi_\pm(\hat\mu) = \tfrac12(e_0\pm i\hat\mu)$, $\tilde{\rho} = \tfrac12(e_0+i\mathbf{r})$, the trace formula $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$, and the isomorphism $\Phi$ with $ie_k\mapsto\sigma_k$.</p>
 <p>The companion articles supply the pieces:
 - Companion article <em>The Berry Phase and Geometric Phases in Biquaternionic Form</em>, for the adiabatic connection, the curvature and the two-route check.
 - Companion article <em>Spin-1/2 Quantum Mechanics in Biquaternionic Form</em>, for the spin operators and the pure-state idempotents.
@@ -143,7 +143,7 @@ $$</p>
 <h3 id="the-math78-periodicity">The $4\pi$ Periodicity</h3>
 <p>The sign change $\psi(T) = -\psi(0)$ at the equator is not special to the equator: for every $\theta_0$ the spinor after one period differs from the initial spinor by a phase, and at $\theta_0 = \pi/2$ that phase is exactly $\pi$. The general statement is the double-valuedness of the spinor representation of the rotation group: a rotation of the spin by $2\pi$ is the identity on the idempotent,</p>
 <p>$$
-\tilde{R}(2\pi)\,\tilde{P}_\pm(\hat{n})\,\tilde{R}(2\pi)^\dagger = \tilde{P}_\pm(\hat{n}),
+\tilde{R}(2\pi)\,\tilde\Pi_\pm(\hat{n})\,\tilde{R}(2\pi)^\dagger = \tilde\Pi_\pm(\hat{n}),
 \qquad
 \tilde{R}(2\pi) = e^{-2\pi e_3/2} = -e_0,
 $$</p>
@@ -151,7 +151,7 @@ $$</p>
 <p>The physical consequences are standard: the spinor must be rotated by $4\pi$ to return, and the interference of spinor amplitudes can reveal the sign. The neutron interferometry of Rauch and collaborators and of Werner and collaborators are the standard demonstrations, and the $4\pi$ periodicity has since been confirmed with neutron resonance interferometry.</p>
 <h2 id="the-holonomy-as-a-rotor">The Holonomy as a Rotor</h2>
 <h3 id="the-spinor-carries-the-phase">The Spinor Carries the Phase</h3>
-<p>The geometric phase is invisible in the density matrix. Write a pure state as $\tilde{\rho} = \tilde{P}_\pm(\hat n) = \tfrac12(e_0\pm i\hat n)$; the idempotent is quadratic in the spinor,</p>
+<p>The geometric phase is invisible in the density matrix. Write a pure state as $\tilde{\rho} = \tilde\Pi_\pm(\hat n) = \tfrac12(e_0\pm i\hat n)$; the idempotent is quadratic in the spinor,</p>
 <p>$$
 \tilde{P} = \frac{\psi\psi^\dagger}{\mathrm{Tr}(\psi^\dagger\psi)},
 $$</p>
@@ -283,7 +283,7 @@ $$</p>
 <td>Larmor frequency</td>
 </tr>
 <tr>
-<td>$\tilde{P}_\pm(\hat\mu) = \tfrac12(e_0\pm i\hat\mu)$</td>
+<td>$\tilde\Pi_\pm(\hat\mu) = \tfrac12(e_0\pm i\hat\mu)$</td>
 <td>Pure-state idempotent; carries no phase</td>
 </tr>
 <tr>

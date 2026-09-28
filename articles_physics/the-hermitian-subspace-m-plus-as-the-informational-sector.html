@@ -235,7 +235,7 @@ $$</p>
 <h3 id="reversible-versus-irreversible-actions">Reversible Versus Irreversible Actions</h3>
 <p>The elements of $\mathbb{M}_+$ include two important classes.</p>
 <p><strong>Unit-norm elements</strong> ($\tilde{Q}\bar{\tilde{Q}} = e_0$, i.e. $\tilde{Q} \in SL(2,\mathbb{C})$). These preserve the biquaternion norm and act by <strong>reversible</strong> transformations. Examples: the boost biquaternions $\tilde{\Lambda}$ and the spatial rotation rotors. These correspond to Lorentz transformations. The stronger condition $\tilde{Q}\tilde{Q}^\dagger = e_0$ is satisfied by the rotation rotors, which are real quaternions, but not by the boosts.</p>
-<p><strong>Idempotent elements</strong> ($\tilde{Q}^2 = \tilde{Q}$). These do not preserve the biquaternion norm (unless $\tilde{Q} = e_0$). They act by <strong>irreversible</strong> projections: $\tilde{Q}_- \mapsto \tilde{P}\tilde{Q}_-\tilde{P}$. Examples: the pure-state projectors $\tilde{P}_\pm(\hat{\boldsymbol\mu}) = \tfrac{1}{2}(e_0 \pm i\hat{\boldsymbol\mu})$. These correspond to quantum-mechanical measurements.</p>
+<p><strong>Idempotent elements</strong> ($\tilde{Q}^2 = \tilde{Q}$). These do not preserve the biquaternion norm (unless $\tilde{Q} = e_0$). They act by <strong>irreversible</strong> projections: $\tilde{Q}_- \mapsto \tilde{P}\tilde{Q}_-\tilde{P}$. Examples: the pure-state projectors $\tilde\Pi_\pm(\hat{\boldsymbol\mu}) = \tfrac{1}{2}(e_0 \pm i\hat{\boldsymbol\mu})$. These correspond to quantum-mechanical measurements.</p>
 <p>The <strong>dichotomy between reversible and irreversible actions</strong> is intrinsic to the structure of $\mathbb{M}_+$: it is the biquaternion version of the fundamental dichotomy of quantum information theory between unitary evolution and measurement.</p>
 <h3 id="the-trace-formula">The Trace Formula</h3>
 <p>For $\tilde{P} \in \mathbb{M}_+$ idempotent (a state) and $\tilde{Q} \in \mathbb{M}_+$ Hermitian (an observable), the quantity</p>
@@ -321,13 +321,13 @@ $$</p>
 <h3 id="the-idempotents">The Idempotents</h3>
 <p>The <strong>idempotents</strong> of $\mathbb{B}$ of the form</p>
 <p>$$
-\tilde{P}_\pm(\hat{\boldsymbol\mu}) = \tfrac{1}{2}\left(e_0 \pm i\hat{\boldsymbol\mu}\right), \qquad \hat{\boldsymbol\mu}^2 = -e_0, \; \hat{\boldsymbol\mu} \text{ a real unit pure quaternion},
+\tilde\Pi_\pm(\hat{\boldsymbol\mu}) = \tfrac{1}{2}\left(e_0 \pm i\hat{\boldsymbol\mu}\right), \qquad \hat{\boldsymbol\mu}^2 = -e_0, \; \hat{\boldsymbol\mu} \text{ a real unit pure quaternion},
 $$</p>
 <p>lie in $\mathbb{M}_+$: their scalar part $\tfrac{1}{2}$ is real, and their vector part $\pm \tfrac{1}{2} i \hat{\boldsymbol\mu}$ is purely imaginary. They satisfy:</p>
 <ul>
-<li><strong>Hermitian:</strong> $\tilde{P}_\pm^\dagger = \tilde{P}_\pm$, since $\tilde{P}_\pm(\hat{\boldsymbol\mu}) \in \mathbb{M}_+$.</li>
-<li><strong>Idempotent:</strong> $\tilde{P}_\pm^2 = \tilde{P}_\pm$.</li>
-<li><strong>Unit trace:</strong> $\mathrm{Tr}(\tilde{P}_\pm) = 2\,\mathrm{Sc}(\tilde{P}_\pm) = 1$.</li>
+<li><strong>Hermitian:</strong> $\tilde\Pi_\pm^\dagger = \tilde\Pi_\pm$, since $\tilde\Pi_\pm(\hat{\boldsymbol\mu}) \in \mathbb{M}_+$.</li>
+<li><strong>Idempotent:</strong> $\tilde\Pi_\pm^2 = \tilde\Pi_\pm$.</li>
+<li><strong>Unit trace:</strong> $\mathrm{Tr}(\tilde\Pi_\pm) = 2\,\mathrm{Sc}(\tilde\Pi_\pm) = 1$.</li>
 </ul>
 <p>These are the biquaternion analogues of <strong>pure-state density matrices</strong> of quantum mechanics. They are the natural "states" of the informational sector.</p>
 <h3 id="the-hermitian-forms">The Hermitian Forms</h3>
@@ -360,7 +360,7 @@ The Hermitian form is the natural "weight" or "energy" of the state $\tilde{Q}$,
 <td>Lorentz boost rotor</td>
 </tr>
 <tr>
-<td>Idempotent $\tilde{P}_\pm(\hat{\boldsymbol\mu})$</td>
+<td>Idempotent $\tilde\Pi_\pm(\hat{\boldsymbol\mu})$</td>
 <td>Hermitian, idempotent, trace 1</td>
 <td>Pure state / projector</td>
 </tr>
@@ -373,7 +373,7 @@ The Hermitian form is the natural "weight" or "energy" of the state $\tilde{Q}$,
 </table></div>
 <p>The common feature of these objects is that they are <strong>Hermitian</strong> (fixed under $\dagger$). This is what defines membership in $\mathbb{M}_+$.</p>
 <h2 id="summary">Summary</h2>
-<p>The Hermitian subspace $\mathbb{M}_+$ is a four-dimensional real subspace of the biquaternion algebra, consisting of elements with real scalar part and imaginary vector part. Its biquaternion norm has signature $(1,3)$, the temporal direction being the single positive one. It contains the identity, the boost biquaternions, the idempotents $\tilde{P}_\pm(\hat{\boldsymbol\mu}) = \tfrac{1}{2}(e_0 \pm i\hat{\boldsymbol\mu})$, and the Hermitian forms $\tilde{Q}\tilde{Q}^\dagger$.</p>
+<p>The Hermitian subspace $\mathbb{M}_+$ is a four-dimensional real subspace of the biquaternion algebra, consisting of elements with real scalar part and imaginary vector part. Its biquaternion norm has signature $(1,3)$, the temporal direction being the single positive one. It contains the identity, the boost biquaternions, the idempotents $\tilde\Pi_\pm(\hat{\boldsymbol\mu}) = \tfrac{1}{2}(e_0 \pm i\hat{\boldsymbol\mu})$, and the Hermitian forms $\tilde{Q}\tilde{Q}^\dagger$.</p>
 <p>The elements of $\mathbb{M}_+$ act on the material space $\mathbb{M}_-$ by conjugation: $\tilde{Q}_- \mapsto \tilde{Q}_+\tilde{Q}_-\,\tilde{Q}_+^\dagger$. The action is linear, preserves $\mathbb{M}_-$, and preserves the biquaternion norm when $\tilde{Q}_+$ has unit norm. The natural dichotomy between unit-norm and idempotent elements corresponds to the dichotomy between reversible evolution and irreversible measurement.</p>
 <p>The mathematics of $\mathbb{M}_+$ is structurally identical to the mathematics of quantum information theory for a two-state system. The idempotents are pure-state density matrices, the Hermitian elements are observables, the unitary elements are gates, and the trace formula $\mathrm{Tr}(\tilde{P}\tilde{Q}) = 2\mathrm{Sc}(\tilde{P}\tilde{Q})$ is the Born rule. The structural correspondence is not an analogy: it is the same mathematics, expressed in the biquaternion algebra.</p>
 <p>The <strong>physical hypothesis</strong> is that this mathematics reflects physics: that $\mathbb{M}_+$ is not only a mathematical structure but an <strong>informational sector</strong> of the world, physically realised in the same sense as the material sector. The hypothesis is offered as a research program. The mathematical structure is established; the empirical content is not yet specified. The article closes with the open questions that constitute the agenda for developing the hypothesis into a physical theory.</p>
@@ -415,7 +415,7 @@ The Hermitian form is the natural "weight" or "energy" of the state $\tilde{Q}$,
 <td>Lorentz rotor (unit-norm biquaternion)</td>
 </tr>
 <tr>
-<td>$\tilde{P}_\pm(\hat{\boldsymbol\mu}) = \tfrac{1}{2}(e_0 \pm i\hat{\boldsymbol\mu})$</td>
+<td>$\tilde\Pi_\pm(\hat{\boldsymbol\mu}) = \tfrac{1}{2}(e_0 \pm i\hat{\boldsymbol\mu})$</td>
 <td>Idempotent (pure-state projector) of unit trace</td>
 </tr>
 <tr>

@@ -55,7 +55,7 @@
 <p>The state space of the qubit is a ball, and the geometry of its boundary is the Fubini–Study geometry of the projective line $\mathbb{P}^1(\mathbb{C})$. The companion articles established the ball as the trace-one slice of the future light cone of the biquaternion norm of the biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with the pure states on the boundary and the mixed states in the interior. The present article establishes the <strong>metric geometry</strong> of that slice: the Fubini–Study metric on the pure states and its standard Bures extension to the mixed states are read off from the two forms the algebra already supplies, the biquaternion norm and the trace pairing.</p>
 <p>The result is a division of labour between the two forms, and it is worth stating before any algebra is written.</p>
 <ul>
-<li>The <strong>trace pairing</strong> fixes the <em>transition probability</em>. On pure states it gives $\mathrm{Tr}(\tilde{P}(\hat{\mu})\tilde{P}(\hat{\nu})) = \tfrac12(1+\hat{\mu}\cdot\hat{\nu}) = \cos^2(\theta/2)$, the squared overlap of the corresponding rays.</li>
+<li>The <strong>trace pairing</strong> fixes the <em>transition probability</em>. On pure states it gives $\mathrm{Tr}(\tilde\Pi(\hat{\mu})\tilde\Pi(\hat{\nu})) = \tfrac12(1+\hat{\mu}\cdot\hat{\nu}) = \cos^2(\theta/2)$, the squared overlap of the corresponding rays.</li>
 <li>The <strong>biquaternion norm</strong> fixes the <em>metric</em>. It vanishes identically on the pure states, so it cannot itself be a metric there; what it gives is the line element at second order, and the result is</li>
 </ul>
 <p>$$
@@ -78,7 +78,7 @@ with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$. The trace is twice the scalar 
 $$
 N(\tilde{H})=\bigl(h_0^2-|\mathbf{h}|^2\bigr)e_0 .
 $$
-A state is $\tilde{\rho}=\tfrac12(e_0+i\mathbf{r})$ with $|\mathbf{r}|\leq1$; a pure state is the idempotent $\tilde{P}_\pm(\hat{\mu})=\tfrac12(e_0\pm i\hat{\mu})$ with $\hat{\mu}$ a unit pure real quaternion. The state module is the minimal left ideal $\mathbb{B}p$ with $p=\tfrac12(e_0+ie_3)$, with matrix units $x=\tfrac12(ie_1-e_2)$, $y=\tfrac12(ie_1+e_2)$ and basis $\{p,y\}$. The unit quaternions act on the Bloch sphere by rotations.</p>
+A state is $\tilde{\rho}=\tfrac12(e_0+i\mathbf{r})$ with $|\mathbf{r}|\leq1$; a pure state is the idempotent $\tilde\Pi_\pm(\hat{\mu})=\tfrac12(e_0\pm i\hat{\mu})$ with $\hat{\mu}$ a unit pure real quaternion. The state module is the minimal left ideal $\mathbb{B}p$ with $p=\tfrac12(e_0+ie_3)$, with matrix units $x=\tfrac12(ie_1-e_2)$, $y=\tfrac12(ie_1+e_2)$ and basis $\{p,y\}$. The unit quaternions act on the Bloch sphere by rotations.</p>
 <h2 id="the-state-space-and-its-two-forms">The State Space and Its Two Forms</h2>
 <p>An element of the Hermitian subspace is $\tilde{H}=h_0e_0+i\mathbf{h}$ with $h_0\in\mathbb{R}$ and $\mathbf{h}\in\mathbb{R}^3$, and the state space is the trace-one slice of the future cone,
 $$
@@ -108,9 +108,9 @@ N(\tilde{\rho})=0,\qquad \tilde{\rho}^2-\tilde{\rho}=\tfrac14\bigl(|\mathbf{r}|^
 $$
 so a boundary state is an idempotent of trace one and, in the matrix model, a rank-one projection. Writing it as
 $$
-\tilde{P}(\hat{\mu})=\tfrac12\bigl(e_0+i\hat{\mu}\bigr),\qquad |\hat{\mu}|=1 ,
+\tilde\Pi(\hat{\mu})=\tfrac12\bigl(e_0+i\hat{\mu}\bigr),\qquad |\hat{\mu}|=1 ,
 $$
-the map $\hat{\mu}\mapsto\tilde{P}(\hat{\mu})$ is a bijection from the unit sphere $S^2=\{\hat{\mu}\in\mathbb{R}^3\}$ to the pure states, and $\tilde{P}(\hat{\mu})$ and $\tilde{P}(-\hat{\mu})=e_0-\tilde{P}(\hat{\mu})$ are complementary orthogonal projections.</p>
+the map $\hat{\mu}\mapsto\tilde\Pi(\hat{\mu})$ is a bijection from the unit sphere $S^2=\{\hat{\mu}\in\mathbb{R}^3\}$ to the pure states, and $\tilde\Pi(\hat{\mu})$ and $\tilde\Pi(-\hat{\mu})=e_0-\tilde\Pi(\hat{\mu})$ are complementary orthogonal projections.</p>
 <p>The pure states have a second, independent parametrization, and the agreement of the two is what makes the projective geometry available. The <strong>state module</strong> is the minimal left ideal
 $$
 \mathbb{B}p=\{\psi_1\,p+\psi_2\,y:\ \psi_1,\psi_2\in\mathbb{C}\}\cong\mathbb{C}^2,
@@ -119,9 +119,9 @@ p=\tfrac12(e_0+ie_3),
 $$
 and its rays $[\psi]=\mathbb{C}\psi$ constitute the projective line $\mathbb{P}^1(\mathbb{C})$. To a nonzero spinor $\psi$ attach the rank-one element
 $$
-\tilde{P}_\psi=\frac{\psi\,\psi^\dagger}{\mathrm{Tr}(\psi^\dagger\psi)} .
+\tilde\Pi_\psi=\frac{\psi\,\psi^\dagger}{\mathrm{Tr}(\psi^\dagger\psi)} .
 $$
-Since $\tilde{P}_\psi\psi=\psi$ and $\tilde{P}_\psi^\dagger=\tilde{P}_\psi$, this is a Hermitian idempotent of trace one; it depends only on the ray, and the map $[\psi]\mapsto\tilde{P}_\psi$ is a bijection from $\mathbb{P}^1(\mathbb{C})$ onto the pure states. Composing the two bijections,
+Since $\tilde\Pi_\psi\psi=\psi$ and $\tilde\Pi_\psi^\dagger=\tilde\Pi_\psi$, this is a Hermitian idempotent of trace one; it depends only on the ray, and the map $[\psi]\mapsto\tilde\Pi_\psi$ is a bijection from $\mathbb{P}^1(\mathbb{C})$ onto the pure states. Composing the two bijections,
 $$
 \mathbb{P}^1(\mathbb{C})\ \cong\ S^2\ \cong\ \{\text{pure states}\},
 $$
@@ -134,22 +134,22 @@ and the physical equivalence of $\psi$ and $e^{i\alpha}\psi$ is the statement th
 <h2 id="the-transition-probability-from-the-trace-pairing">The Transition Probability from the Trace Pairing</h2>
 <p>The trace pairing gives the overlap of two pure states. From the idempotent form and the quaternion product of pure real quaternions, which reads $\hat{\mu}\hat{\nu}=-\hat{\mu}\cdot\hat{\nu}+\hat{\mu}\times\hat{\nu}$,
 $$
-\tilde{P}(\hat{\mu})\tilde{P}(\hat{\nu})
+\tilde\Pi(\hat{\mu})\tilde\Pi(\hat{\nu})
 =\tfrac14\bigl(e_0+i\hat{\mu}\bigr)\bigl(e_0+i\hat{\nu}\bigr)
 =\tfrac14\Bigl(\bigl(1+\hat{\mu}\cdot\hat{\nu}\bigr)e_0+i(\hat{\mu}+\hat{\nu})-\hat{\mu}\times\hat{\nu}\Bigr).
 $$
 The trace keeps only the scalar part,
 $$
-\boxed{\ \mathrm{Tr}\bigl(\tilde{P}(\hat{\mu})\tilde{P}(\hat{\nu})\bigr)=\tfrac12\bigl(1+\hat{\mu}\cdot\hat{\nu}\bigr)=\cos^2\frac{\theta}{2},\ }
+\boxed{\ \mathrm{Tr}\bigl(\tilde\Pi(\hat{\mu})\tilde\Pi(\hat{\nu})\bigr)=\tfrac12\bigl(1+\hat{\mu}\cdot\hat{\nu}\bigr)=\cos^2\frac{\theta}{2},\ }
 $$
 where $\theta$ is the angle between the two Bloch vectors. This is the transition probability of the two pure states, the squared overlap $\lvert\langle\psi|\phi\rangle\rvert^2$, read as a trace of the algebra. On the matrix side it is $\lvert\langle\psi|\phi\rangle\rvert^2$ with the normalized spinors of the preceding section, and the identification is exact:
 $$
-\lvert\langle\psi(\hat{\mu})|\psi(\hat{\nu})\rangle\rvert^2=\mathrm{Tr}\bigl(\tilde{P}(\hat{\mu})\tilde{P}(\hat{\nu})\bigr).
+\lvert\langle\psi(\hat{\mu})|\psi(\hat{\nu})\rangle\rvert^2=\mathrm{Tr}\bigl(\tilde\Pi(\hat{\mu})\tilde\Pi(\hat{\nu})\bigr).
 $$</p>
 <p>Two checks fix the normalization. For $\hat{\nu}=\hat{\mu}$ the trace is $1$, as it must be for a probability; for $\hat{\nu}=-\hat{\mu}$ it is $0$, the orthogonal case; for $\hat{\nu}\perp\hat{\mu}$ it is $\tfrac12$, the unbiased case. The quantity is invariant under the whole unitary group, because conjugation by a unitary preserves the trace, and it is the only non-constant unitary-invariant two-point function of the boundary that is bilinear in the two projectors. It is therefore the trace pairing's contribution to the geometry, and it is a <em>probability</em>, not a distance: the distance is the angle whose cosine-square it is.</p>
 <p>The companion article <em>Exercise: The Bloch Ball and the Geometry of Mixed States</em> records the complementary boundary identity for the trace distance,
 $$
-D\bigl(\tilde{P}(\hat{\mu}),\tilde{P}(\hat{\nu})\bigr)=\tfrac12\bigl|\hat{\mu}-\hat{\nu}\bigr|=\sin\frac{\theta}{2},
+D\bigl(\tilde\Pi(\hat{\mu}),\tilde\Pi(\hat{\nu})\bigr)=\tfrac12\bigl|\hat{\mu}-\hat{\nu}\bigr|=\sin\frac{\theta}{2},
 \qquad
 D^2+\mathrm{Tr}\bigl(\tilde{P}\tilde{Q}\bigr)=1 ,
 $$
@@ -160,7 +160,7 @@ $$</p>
 <h2 id="the-fubinistudy-line-element-from-the-biquaternion-norm">The Fubini–Study Line Element from the Biquaternion Norm</h2>
 <p>The biquaternion norm vanishes on the pure states, so it assigns them a <em>length</em> zero. What a quadratic form does at a null direction is supply the metric as its second variation, and this section computes that second variation in two independent ways. The first uses the projector displacement, the second the spinor, and their agreement is the derivation of the line element.</p>
 <h3 id="the-projector-variation">The projector variation</h3>
-<p>Differentiate the idempotent along the boundary. Since $\tilde{P}(\hat{\mu})=\tfrac12(e_0+i\hat{\mu})$,
+<p>Differentiate the idempotent along the boundary. Since $\tilde\Pi(\hat{\mu})=\tfrac12(e_0+i\hat{\mu})$,
 $$
 \delta\tilde{P}=\tfrac12\,i\,\delta\hat{\mu},\qquad \hat{\mu}\cdot\delta\hat{\mu}=0 ,
 $$
@@ -190,7 +190,7 @@ The round metric of the unit Bloch sphere is $d\Omega^2=d\theta^2+\sin^2\theta\,
 $$
 \psi(\theta,\varphi)=\cos\tfrac{\theta}{2}\,p+\sin\tfrac{\theta}{2}\,e^{i\varphi}\,y
 $$
-be a normalized spinor, $\mathrm{Tr}(\psi^\dagger\psi)=1$, with $\tilde{P}_\psi=\psi\psi^\dagger$. The Fubini–Study line element of the ray space is
+be a normalized spinor, $\mathrm{Tr}(\psi^\dagger\psi)=1$, with $\tilde\Pi_\psi=\psi\psi^\dagger$. The Fubini–Study line element of the ray space is
 $$
 ds^2_{\mathrm{FS}}=\mathrm{Tr}\!\left(d\psi^\dagger\,d\psi\right)-\Bigl|\mathrm{Tr}\!\left(\psi^\dagger d\psi\right)\Bigr|^2 ,
 $$
@@ -280,14 +280,14 @@ so the Kähler potential is the logarithm of the spinor norm, and the metric is 
 <p>The metric determines distances, and the distances carry the same information as the transition probability and the trace distance already computed.</p>
 <p><strong>The geodesic distance.</strong> The geodesics of the round sphere of radius $\tfrac12$ are its great circles, so the Fubini–Study geodesic distance between two pure states is the arc length along the shorter great circle,
 $$
-d_{\mathrm{FS}}\bigl(\tilde{P}(\hat{\mu}),\tilde{P}(\hat{\nu})\bigr)=\tfrac12\,\theta=\arccos\lvert\langle\psi|\phi\rangle\rvert ,
+d_{\mathrm{FS}}\bigl(\tilde\Pi(\hat{\mu}),\tilde\Pi(\hat{\nu})\bigr)=\tfrac12\,\theta=\arccos\lvert\langle\psi|\phi\rangle\rvert ,
 $$
 where $\theta$ is the angle between $\hat{\mu}$ and $\hat{\nu}$ and $\lvert\langle\psi|\phi\rangle\rvert=\cos(\theta/2)$ is the overlap of the normalized spinors of the two rays. Three checks: for coincident rays, $\theta=0$ and $d_{\mathrm{FS}}=0$; for orthogonal rays, $\theta=\pi$ and $d_{\mathrm{FS}}=\pi/2$, the <strong>maximal</strong> distance; and the diameter of the pure-state manifold is $\pi/2$, not $\pi$, because the antipodal point of $\hat{\mu}$ corresponds to the orthogonal complement of the ray, not to the same ray with reversed phase.</p>
 <p><strong>The equivalent data on the boundary.</strong> The three boundary quantities are monotone functions of one another, and the identities relating them are the content of the geometry:
 $$
-\mathrm{Tr}\bigl(\tilde{P}(\hat{\mu})\tilde{P}(\hat{\nu})\bigr)=\cos^2 d_{\mathrm{FS}},
+\mathrm{Tr}\bigl(\tilde\Pi(\hat{\mu})\tilde\Pi(\hat{\nu})\bigr)=\cos^2 d_{\mathrm{FS}},
 \qquad
-D\bigl(\tilde{P}(\hat{\mu}),\tilde{P}(\hat{\nu})\bigr)=\sin d_{\mathrm{FS}},
+D\bigl(\tilde\Pi(\hat{\mu}),\tilde\Pi(\hat{\nu})\bigr)=\sin d_{\mathrm{FS}},
 \qquad
 d_{\mathrm{FS}}=\arccos\sqrt{\mathrm{Tr}\bigl(\tilde{P}\tilde{Q}\bigr)}=\arcsin D .
 $$
@@ -332,7 +332,7 @@ This is a standard result, not an algebraic one: it is the infinitesimal form of
 </li>
 </ol>
 <h2 id="summary">Summary</h2>
-<p>The state space of the biquaternion framework is the trace-one slice of the future cone of the biquaternion norm, and its geometry is determined by the framework's two forms. The trace pairing fixes the transition probability of two pure states, $\mathrm{Tr}(\tilde{P}(\hat{\mu})\tilde{P}(\hat{\nu}))=\cos^2(\theta/2)$. The biquaternion norm, though it vanishes on the pure states, fixes the metric through its second variation there, and the resulting line element is the Fubini–Study metric,</p>
+<p>The state space of the biquaternion framework is the trace-one slice of the future cone of the biquaternion norm, and its geometry is determined by the framework's two forms. The trace pairing fixes the transition probability of two pure states, $\mathrm{Tr}(\tilde\Pi(\hat{\mu})\tilde\Pi(\hat{\nu}))=\cos^2(\theta/2)$. The biquaternion norm, though it vanishes on the pure states, fixes the metric through its second variation there, and the resulting line element is the Fubini–Study metric,</p>
 <p>$$
 ds^2_{\mathrm{FS}}=-N(\delta\tilde{P})\Big|_{\text{tangential}}=\tfrac14\left(d\theta^2+\sin^2\theta\,d\varphi^2\right),
 $$</p>
@@ -384,7 +384,7 @@ $$</p>
 <td>State, $|\mathbf{r}|\leq1$</td>
 </tr>
 <tr>
-<td>$\tilde{P}(\hat{\mu})=\tfrac12(e_0+i\hat{\mu})$</td>
+<td>$\tilde\Pi(\hat{\mu})=\tfrac12(e_0+i\hat{\mu})$</td>
 <td>Pure state (idempotent), $|\hat{\mu}|=1$</td>
 </tr>
 <tr>

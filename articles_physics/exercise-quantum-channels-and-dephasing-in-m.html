@@ -66,31 +66,31 @@
 $$
 \Phi^{\mathrm{deph}}_p(\tilde{\rho})
 := (1-p)\,\tilde{\rho}
-+ p\left(\tilde{P}_+\,\tilde{\rho}\,\tilde{P}_+ + \tilde{P}_-\,\tilde{\rho}\,\tilde{P}_-\right),
++ p\left(\tilde\Pi_+\,\tilde{\rho}\,\tilde\Pi_+ + \tilde\Pi_-\,\tilde{\rho}\,\tilde\Pi_-\right),
 \qquad
-\tilde{P}_\pm(\hat{\mathbf{n}}) = \tfrac{1}{2}\left(e_0 \pm i\hat{\mathbf{n}}\right).
+\tilde\Pi_\pm(\hat{\mathbf{n}}) = \tfrac{1}{2}\left(e_0 \pm i\hat{\mathbf{n}}\right).
 $$
 Throughout, $\log$ denotes the natural logarithm.</p>
 <h2 id="problem-1-dephasing-as-a-kraus-sum">Problem 1: Dephasing as a Kraus Sum</h2>
 <p><strong>Problem.</strong> Verify that the dephasing channel $\Phi^{\mathrm{deph}}_p$ is trace preserving with the three Kraus operators
 $$
-\tilde{K}_0 = \sqrt{1-p}\,e_0, \qquad \tilde{K}_1 = \sqrt{p}\,\tilde{P}_+(\hat{\mathbf{n}}), \qquad \tilde{K}_2 = \sqrt{p}\,\tilde{P}_-(\hat{\mathbf{n}}),
+\tilde{K}_0 = \sqrt{1-p}\,e_0, \qquad \tilde{K}_1 = \sqrt{p}\,\tilde\Pi_+(\hat{\mathbf{n}}), \qquad \tilde{K}_2 = \sqrt{p}\,\tilde\Pi_-(\hat{\mathbf{n}}),
 $$
 and compute $\Phi^{\mathrm{deph}}_p(\tilde{\rho})$ for the general state $\tilde{\rho} = \tfrac{1}{2}(e_0 + i\mathbf{r})$.</p>
-<p><strong>Solution.</strong> Put $\alpha = i\hat{\mathbf{n}}$, so that $\tilde{P}_\pm = \tfrac{1}{2}(e_0 \pm \alpha)$. Since $\hat{\mathbf{n}}^2 = -e_0$,
+<p><strong>Solution.</strong> Put $\alpha = i\hat{\mathbf{n}}$, so that $\tilde\Pi_\pm = \tfrac{1}{2}(e_0 \pm \alpha)$. Since $\hat{\mathbf{n}}^2 = -e_0$,
 $$
 \alpha^2 = (i\hat{\mathbf{n}})^2 = i^2\hat{\mathbf{n}}^2 = (-1)(-e_0) = e_0,
 \qquad
 \alpha^\dagger = (i\hat{\mathbf{n}})^\dagger = -i\,\hat{\mathbf{n}}^\dagger = -i(-\hat{\mathbf{n}}) = \alpha,
 $$
-so $\alpha^2 = e_0$ and $\alpha$ is Hermitian, as the idempotent structure requires. Trace preservation is immediate: because $\tilde{P}_\pm$ are Hermitian idempotents, $\tilde{K}_1^\dagger\tilde{K}_1 = p\,\tilde{P}_+$ and $\tilde{K}_2^\dagger\tilde{K}_2 = p\,\tilde{P}_-$, whence
+so $\alpha^2 = e_0$ and $\alpha$ is Hermitian, as the idempotent structure requires. Trace preservation is immediate: because $\tilde\Pi_\pm$ are Hermitian idempotents, $\tilde{K}_1^\dagger\tilde{K}_1 = p\,\tilde\Pi_+$ and $\tilde{K}_2^\dagger\tilde{K}_2 = p\,\tilde\Pi_-$, whence
 $$
 \tilde{K}_0^\dagger\tilde{K}_0 + \tilde{K}_1^\dagger\tilde{K}_1 + \tilde{K}_2^\dagger\tilde{K}_2
-= (1-p)\,e_0 + p\,(\tilde{P}_+ + \tilde{P}_-) = e_0 .
+= (1-p)\,e_0 + p\,(\tilde\Pi_+ + \tilde\Pi_-) = e_0 .
 $$</p>
 <p>For the action on the state, use the elementary identity
 $$
-\tilde{P}_+\,\tilde{Q}\,\tilde{P}_+ + \tilde{P}_-\,\tilde{Q}\,\tilde{P}_-
+\tilde\Pi_+\,\tilde{Q}\,\tilde\Pi_+ + \tilde\Pi_-\,\tilde{Q}\,\tilde\Pi_-
 = \tfrac{1}{2}\left(\tilde{Q} + \alpha\,\tilde{Q}\,\alpha\right),
 $$
 valid for every $\tilde{Q} \in \mathbb{B}$: the cross terms come with opposite signs,
@@ -115,7 +115,7 @@ $$
 $$
 and hence
 $$
-\tilde{P}_+\tilde{\rho}\tilde{P}_+ + \tilde{P}_-\tilde{\rho}\tilde{P}_-
+\tilde\Pi_+\tilde{\rho}\tilde\Pi_+ + \tilde\Pi_-\tilde{\rho}\tilde\Pi_-
 = \tfrac{1}{2}\left(\tilde{\rho} + \alpha\tilde{\rho}\alpha\right)
 = \tfrac{1}{2}\left(e_0 + i(\hat{\mathbf{n}}\cdot\mathbf{r})\,\hat{\mathbf{n}}\right).
 $$
@@ -136,11 +136,11 @@ E_{11} = \tfrac{1}{2}(e_0 - ie_3), \quad
 E_{01} = \tfrac{1}{2}(ie_1 - e_2), \quad
 E_{10} = \tfrac{1}{2}(ie_1 + e_2).
 $$
-These are the elements the parent denotes $\tilde{E}_{jk}$; they satisfy $\mathrm{Tr}(E_{jk}E_{lm}) = \delta_{kl}\delta_{jm}$. The idempotents $\tilde{P}_\pm = \tfrac{1}{2}(e_0 \pm ie_3)$ are exactly $E_{00}$ and $E_{11}$. Since dephasing fixes the populations and scales the coherences by $1-p$,
+These are the elements the parent denotes $\tilde{E}_{jk}$; they satisfy $\mathrm{Tr}(E_{jk}E_{lm}) = \delta_{kl}\delta_{jm}$. The idempotents $\tilde\Pi_\pm = \tfrac{1}{2}(e_0 \pm ie_3)$ are exactly $E_{00}$ and $E_{11}$. Since dephasing fixes the populations and scales the coherences by $1-p$,
 $$
 \Phi(E_{00}) = E_{00}, \qquad \Phi(E_{11}) = E_{11}, \qquad \Phi(E_{01}) = (1-p)\,E_{01}, \qquad \Phi(E_{10}) = (1-p)\,E_{10},
 $$
-the off-diagonal statement following because $\tilde{P}_\pm E_{01}\tilde{P}_\pm = 0$. With the parent's convention $J(\Phi) = \sum_{jk}E_{jk}\otimes\Phi(E_{jk})$ and the product basis $(|00\rangle,|01\rangle,|10\rangle,|11\rangle)$,
+the off-diagonal statement following because $\tilde\Pi_\pm E_{01}\tilde\Pi_\pm = 0$. With the parent's convention $J(\Phi) = \sum_{jk}E_{jk}\otimes\Phi(E_{jk})$ and the product basis $(|00\rangle,|01\rangle,|10\rangle,|11\rangle)$,
 $$
 E_{01}\otimes E_{01} = |00\rangle\langle 11|, \qquad E_{10}\otimes E_{10} = |11\rangle\langle 00|,
 $$
@@ -171,7 +171,7 @@ $$
 \Phi(\tilde{\rho}) = \left(1-\tfrac{p}{2}\right)\tilde{\rho} + \tfrac{p}{2}\,(i\hat{\mathbf{n}})\,\tilde{\rho}\,(i\hat{\mathbf{n}}).
 $$
 Since $(i\hat{\mathbf{n}})\tilde{\rho}(i\hat{\mathbf{n}}) = -\hat{\mathbf{n}}\tilde{\rho}\hat{\mathbf{n}} = \tfrac{1}{2}\left(e_0 - i\mathbf{r} + 2i(\hat{\mathbf{n}}\cdot\mathbf{r})\hat{\mathbf{n}}\right)$, this reproduces $\mathbf{r}' = (1-p)\mathbf{r} + p(\hat{\mathbf{n}}\cdot\mathbf{r})\hat{\mathbf{n}}$, as required.</p>
-<p><strong>Conclusion.</strong> The three-operator representation of Problem 1 is valid but <strong>not minimal</strong>: for $0<p<1$ the span of $\{\tilde{K}_0,\tilde{K}_1,\tilde{K}_2\}$ is two-dimensional, since $\tilde{K}_0 = \sqrt{1-p}\,(\tilde{P}_+ + \tilde{P}_-)$. The minimal representation given above has two operators. Consistently with the parent's dichotomy, dephasing has Kraus rank one at $p=0$ (the identity) and Kraus rank two for $0<p\le1$, and is therefore irreversible throughout the physical range except at its identity endpoint. The formal continuation to $p\in(1,2]$ is completely positive but leaves that range, and at $p=2$ it degenerates: $\tilde{K}_0=0$ and the channel reduces to the unitary conjugation $\tilde{\rho}\mapsto(i\hat{\mathbf{n}})\tilde{\rho}(i\hat{\mathbf{n}})^\dagger$, of Kraus rank one and reversible.</p>
+<p><strong>Conclusion.</strong> The three-operator representation of Problem 1 is valid but <strong>not minimal</strong>: for $0<p<1$ the span of $\{\tilde{K}_0,\tilde{K}_1,\tilde{K}_2\}$ is two-dimensional, since $\tilde{K}_0 = \sqrt{1-p}\,(\tilde\Pi_+ + \tilde\Pi_-)$. The minimal representation given above has two operators. Consistently with the parent's dichotomy, dephasing has Kraus rank one at $p=0$ (the identity) and Kraus rank two for $0<p\le1$, and is therefore irreversible throughout the physical range except at its identity endpoint. The formal continuation to $p\in(1,2]$ is completely positive but leaves that range, and at $p=2$ it degenerates: $\tilde{K}_0=0$ and the channel reduces to the unitary conjugation $\tilde{\rho}\mapsto(i\hat{\mathbf{n}})\tilde{\rho}(i\hat{\mathbf{n}})^\dagger$, of Kraus rank one and reversible.</p>
 <h2 id="problem-3-a-positive-map-that-is-not-completely-positive">Problem 3: A Positive Map That Is Not Completely Positive</h2>
 <p><strong>Problem.</strong> In the matrix representative of $\mathbb{B}$, let $\Phi_T$ be the transpose, $\Phi_T(\tilde{Q}) = \tilde{Q}^{\mathsf{T}}$. Show that $\Phi_T$ is positive and trace preserving, but not completely positive.</p>
 <p><strong>Solution.</strong> On the matrix units $\Phi_T$ acts by $E_{jk} \mapsto E_{kj}$; equivalently, on a state,
@@ -226,7 +226,7 @@ $$
 whose sum is $e_0$, since $1 + s^2 + \gamma = 2$ and $1 - s^2 - \gamma = 0$. A direct quaternion expansion of $\tilde{K}_0\tilde{\rho}\tilde{K}_0^\dagger + \tilde{K}_1\tilde{\rho}\tilde{K}_1^\dagger$ for $\tilde{\rho} = \tfrac{1}{2}(e_0 + i\mathbf{r})$ gives $\tfrac{1}{2}(e_0 + i\mathbf{r}')$ with exactly the Bloch map stated above; the $\tilde{K}_1$ term contributes the population $\tfrac{\gamma}{4}(1-r_3)(e_0 + ie_3)$ that is transferred to the ground state.</p>
 <p><strong>Fixed states.</strong> Set $r_1 = r_2 = 0$ and $z = \gamma + (1-\gamma)z$, giving $z = 1$. For every $\gamma>0$ the channel has the <strong>unique</strong> fixed state
 $$
-\tilde{\rho}_* = \tfrac{1}{2}\left(e_0 + ie_3\right) = \tilde{P}_+(\hat{\mathbf{z}}),
+\tilde{\rho}_* = \tfrac{1}{2}\left(e_0 + ie_3\right) = \tilde\Pi_+(\hat{\mathbf{z}}),
 $$
 the pure ground state. For $\gamma = 0$ the channel is the identity and every state is fixed.</p>
 <p><strong>Non-unitality.</strong> The channel does not fix the maximally mixed state:
@@ -306,7 +306,7 @@ $$
 S(\tilde{\rho}') \geq S(\tilde{\rho}),
 $$
 with equality if and only if $p=0$ or the state is on the dephasing axis. Dephasing strictly increases the entropy of every off-axis state, for every $0 < p \leq 1$. This is consistent with the channel being unital: $\Phi(\tfrac{1}{2}e_0) = \tfrac{1}{2}e_0$, and unital channels are mixedness-increasing.</p>
-<p><strong>Concrete case.</strong> Take the pure state $\tilde{\rho} = \tilde{P}_+(e_1) = \tfrac{1}{2}(e_0 + ie_1)$, with $\mathbf{r} = (1,0,0)$, purity $1$, and entropy $0$. Dephase along $e_3$ with $p = \tfrac{1}{2}$. Then $\mathbf{r}' = (\tfrac{1}{2},0,0)$, so $|\mathbf{r}'| = \tfrac{1}{2}$, the eigenvalues are $\lambda_\pm = \tfrac{3}{4}, \tfrac{1}{4}$, and
+<p><strong>Concrete case.</strong> Take the pure state $\tilde{\rho} = \tilde\Pi_+(e_1) = \tfrac{1}{2}(e_0 + ie_1)$, with $\mathbf{r} = (1,0,0)$, purity $1$, and entropy $0$. Dephase along $e_3$ with $p = \tfrac{1}{2}$. Then $\mathbf{r}' = (\tfrac{1}{2},0,0)$, so $|\mathbf{r}'| = \tfrac{1}{2}$, the eigenvalues are $\lambda_\pm = \tfrac{3}{4}, \tfrac{1}{4}$, and
 $$
 S = -\tfrac{3}{4}\log\tfrac{3}{4} - \tfrac{1}{4}\log\tfrac{1}{4}
 = \tfrac{3}{4}\log\tfrac{4}{3} + \tfrac{1}{4}\log 4 \approx 0.562335 \ \text{nats},
@@ -315,12 +315,12 @@ while the purity falls to $\tfrac{1}{2}(1 + \tfrac{1}{4}) = \tfrac{5}{8} = 0.625
 <h2 id="summary">Summary</h2>
 <p>We have worked six problems that exercise the channel formalism of the parent article in $\mathbb{M}_+$.</p>
 <ol>
-<li><strong>Dephasing as a Kraus sum.</strong> The channel $\Phi^{\mathrm{deph}}_p$ has Kraus operators $\sqrt{1-p}\,e_0$, $\sqrt{p}\,\tilde{P}_+$, $\sqrt{p}\,\tilde{P}_-$ and acts on the Bloch vector as $\mathbf{r}' = (1-p)\mathbf{r} + p(\hat{\mathbf{n}}\cdot\mathbf{r})\hat{\mathbf{n}}$, scaling the transverse coherence by $1-p$ and leaving the populations fixed.</li>
+<li><strong>Dephasing as a Kraus sum.</strong> The channel $\Phi^{\mathrm{deph}}_p$ has Kraus operators $\sqrt{1-p}\,e_0$, $\sqrt{p}\,\tilde\Pi_+$, $\sqrt{p}\,\tilde\Pi_-$ and acts on the Bloch vector as $\mathbf{r}' = (1-p)\mathbf{r} + p(\hat{\mathbf{n}}\cdot\mathbf{r})\hat{\mathbf{n}}$, scaling the transverse coherence by $1-p$ and leaving the populations fixed.</li>
 <li><strong>Kraus rank.</strong> The Choi matrix of dephasing has spectrum $\{2-p,\,p,\,0,\,0\}$; its rank is two for $0<p<2$, dropping to one at the endpoints $p=0$ and $p=2$. On the parent's physical range $0\le p\le1$ it is therefore two for every $p>0$. The minimal Kraus rank is two, not three: the three-operator representation of the parent is valid but non-minimal, and $\sqrt{1-\tfrac{p}{2}}\,e_0$, $\sqrt{\tfrac{p}{2}}\,i\hat{\mathbf{n}}$ is a minimal set.</li>
 <li><strong>Positive but not completely positive.</strong> The transpose map acts on the Bloch ball as $(r_1,r_2,r_3)\mapsto(r_1,-r_2,r_3)$, is positive and trace preserving, and has Choi matrix equal to the swap operator, with spectrum $\{1,1,1,-1\}$. It is not a channel.</li>
-<li><strong>Amplitude damping.</strong> With $s=\sqrt{1-\gamma}$, the Kraus operators are $\tilde{K}_0 = \tfrac{1+s}{2}e_0 + i\tfrac{1-s}{2}e_3$ and $\tilde{K}_1 = \tfrac{\sqrt{\gamma}}{2}(ie_1 - e_2)$; the channel is non-unital, has the unique fixed state $\tilde{P}_+(\hat{\mathbf{z}})$, sends the excited state to $(0,0,2\gamma-1)$, and raises the purity of the maximally mixed state to $\tfrac{1}{2}(1+\gamma^2)$.</li>
+<li><strong>Amplitude damping.</strong> With $s=\sqrt{1-\gamma}$, the Kraus operators are $\tilde{K}_0 = \tfrac{1+s}{2}e_0 + i\tfrac{1-s}{2}e_3$ and $\tilde{K}_1 = \tfrac{\sqrt{\gamma}}{2}(ie_1 - e_2)$; the channel is non-unital, has the unique fixed state $\tilde\Pi_+(\hat{\mathbf{z}})$, sends the excited state to $(0,0,2\gamma-1)$, and raises the purity of the maximally mixed state to $\tfrac{1}{2}(1+\gamma^2)$.</li>
 <li><strong>Composition and rank.</strong> Composing channels multiplies Kraus operators, $B_lA_m$, and the Kraus rank of a composition is at most the product of the ranks. Two dephasings compose to a dephasing along the common axis with $p' = p+q-pq$ when the axes are parallel, but to the rank-four completely depolarizing channel when they are orthogonal and full.</li>
-<li><strong>Contraction and entropy.</strong> Dephasing contracts the Bloch ball, $|\mathbf{r}'|^2 = (1-p)^2 r_\perp^2 + r_\parallel^2 \leq |\mathbf{r}|^2$, lowers the purity, and raises the entropy, since $dS/d|\mathbf{r}| = \tfrac{1}{2}\log\frac{1-|\mathbf{r}|}{1+|\mathbf{r}|} \leq 0$. For $\tilde{P}_+(e_1)$ dephased along $e_3$ with $p=\tfrac{1}{2}$, the entropy rises from $0$ to $\approx 0.562335$ nats and the purity falls to $0.625$.</li>
+<li><strong>Contraction and entropy.</strong> Dephasing contracts the Bloch ball, $|\mathbf{r}'|^2 = (1-p)^2 r_\perp^2 + r_\parallel^2 \leq |\mathbf{r}|^2$, lowers the purity, and raises the entropy, since $dS/d|\mathbf{r}| = \tfrac{1}{2}\log\frac{1-|\mathbf{r}|}{1+|\mathbf{r}|} \leq 0$. For $\tilde\Pi_+(e_1)$ dephased along $e_3$ with $p=\tfrac{1}{2}$, the entropy rises from $0$ to $\approx 0.562335$ nats and the purity falls to $0.625$.</li>
 </ol>
 <p>The two canonical channels illustrate the two faces of irreversibility. Dephasing is unital and destroys coherence without changing populations; amplitude damping is non-unital and drives the state toward a pure ground state. Both have Kraus rank two on their physical ranges ($0<p\le1$ for dephasing, $0<\gamma\le1$ for damping), both are irreversible there, and both are instances of the parent's dichotomy: reversible if and only if Kraus rank one.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
@@ -357,7 +357,7 @@ while the purity falls to $\tfrac{1}{2}(1 + \tfrac{1}{4}) = \tfrac{5}{8} = 0.625
 <td>Trace</td>
 </tr>
 <tr>
-<td>$\tilde{P}_\pm(\hat{\mathbf{n}}) = \tfrac{1}{2}(e_0 \pm i\hat{\mathbf{n}})$</td>
+<td>$\tilde\Pi_\pm(\hat{\mathbf{n}}) = \tfrac{1}{2}(e_0 \pm i\hat{\mathbf{n}})$</td>
 <td>Idempotents along $\hat{\mathbf{n}}$</td>
 </tr>
 <tr>

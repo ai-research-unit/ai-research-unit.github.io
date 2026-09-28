@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biquaternion Topology — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="biquaternion-topology"><strong>Biquaternion Topology</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article describes the biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ as a topological space, together with the two subsets of it that the framework singles out: the Euclidean unit sphere and the null cone. It uses the algebra and the six distinguished subspaces of <em>Biquaternion Algebra</em>, the coordinates, the $ict$ assignment and the sector split of <em>Conventions in the Biquaternion Universe</em>, and the biquaternion norm $N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}$ and the invertibility criterion of <em>Biquaternion Norm and Invertibility</em>. The form itself is not re-derived here.</p>
+<p><strong>Scope.</strong> The topology of the <strong>group of units</strong> $\mathbb{B}^\times$ — the polar decomposition, the retractions onto the compact subgroups, the homotopy groups, the universal cover and the connected components — belongs to the Lie theory of the algebra and is treated in <em>The Biquaternion Unit Group as a Topological Group</em>. The differentiability statement that the null cone is smooth away from the apex belongs to <em>Biquaternion Analysis</em>, where the derivative is available. This article owns the ambient space and its distinguished subsets.</p>
+<p><strong>Conventions.</strong> The units are $e_0=1,e_1,e_2,e_3$ with $e_k^2=-e_0$, the central scalar imaginary is $i$, and $\tilde{Q}=\sum_{\mu=0}^{3}Q_\mu e_\mu$ with $Q_\mu=q_\mu+iq'_\mu\in\mathbb{C}$. The biquaternion norm is $N(\tilde{Q})=\sum_\mu Q_\mu^2$, and the Euclidean norm is $\|\tilde{Q}\|_E=(\sum_\mu|Q_\mu|^2)^{1/2}$, which is the square root of the scalar part of the Hermitian form $\tilde{Q}\tilde{Q}^\dagger$.</p>
+<h2 id="the-underlying-space-and-its-contractibility">The Underlying Space and its Contractibility</h2>
+<p>As a real vector space, $\mathbb{B}\cong\mathbb{C}^4\cong\mathbb{R}^8$. The linear isometry that exhibits it is the coefficient map</p>
+<p>$$
+\tilde{Q}=\sum_\mu Q_\mu e_\mu \;\longmapsto\; (\operatorname{Re}Q_0,\operatorname{Im}Q_0,\operatorname{Re}Q_1,\operatorname{Im}Q_1,\operatorname{Re}Q_2,\operatorname{Im}Q_2,\operatorname{Re}Q_3,\operatorname{Im}Q_3)\in\mathbb{R}^8 ,
+$$</p>
+<p>and the Euclidean norm $\|\cdot\|_E$ is the pull-back of the standard norm of $\mathbb{R}^8$ along it. Because $\mathbb{B}$ is a real vector space, it is contractible: the straight-line homotopy $\tilde{Q}\mapsto t\tilde{Q}$ contracts it to the origin, and consequently</p>
+<p>$$
+\pi_n(\mathbb{B})=0 \quad\text{for every } n\ge 1 .
+$$</p>
+<p><strong>Physical reading.</strong> The ambient algebra carries no topology of its own. There is no non-contractible loop inside $\mathbb{B}$, and therefore no topological invariant that can be lodged in the algebra itself. Every topological charge the framework produces — the winding of a Skyrme field, the instanton number of a gauge configuration, the linking of a field configuration — must come from a <em>map</em> into $\mathbb{B}$ or into one of its groups, never from the carrier. This is also why the complex structure of the framework cannot be a topological property of the space it is written on: $\mathbb{B}$ is as flat as $\mathbb{R}^8$.</p>
+<h2 id="the-euclidean-unit-sphere">The Euclidean Unit Sphere</h2>
+<p>The <strong>Euclidean unit sphere</strong> is the set</p>
+<p>$$
+S^7_E=\{\tilde{Q}\in\mathbb{B} : \|\tilde{Q}\|_E=1\} ,
+$$</p>
+<p>which the isometry above carries to the standard unit sphere of $\mathbb{R}^8$. It is a compact, connected, simply connected seven-dimensional manifold, with</p>
+<p>$$
+\pi_0(S^7_E)=0,\qquad \pi_1(S^7_E)=\dots=\pi_6(S^7_E)=0,\qquad \pi_7(S^7_E)=\mathbb{Z}.
+$$</p>
+<p>Two subsets of it are used later. The <strong>unit quaternions</strong> $S^3=\{\tilde{q}\in\mathbb{H} : N(\tilde{q})=1\}$ sit inside it as the real quaternion slice, and the <strong>unit-norm slice</strong> $\{\tilde{Q} : N(\tilde{Q})=1\}$ meets it in the elements that are simultaneously of unit biquaternion norm and unit Euclidean norm, a set that carries the rotor group and is treated in <em>Biquaternion Rotations and Lorentz Transformations</em>.</p>
+<p><strong>Physical reading.</strong> The Euclidean sphere is the sphere the Hermitian form defines, not the one the biquaternion norm defines, and the distinction matters physically: a normalised quantum state lies on the Hermitian sphere, an interval lies on the biquaternion norm. The two agree only on the subset where the element is unitary, which is the rotor group.</p>
+<h2 id="the-null-cone">The Null Cone</h2>
+<p>The <strong>null cone</strong> is the zero locus of the biquaternion norm,</p>
+<p>$$
+\mathcal{N}=\{\tilde{Q}\in\mathbb{B} : N(\tilde{Q})=0\} .
+$$</p>
+<p>It is a real algebraic variety of real dimension $6$, since it is the common zero set of the real and the imaginary parts of the single complex equation $\sum_\mu Q_\mu^2=0$, two independent real equations in eight real unknowns. It is a cone: $\tilde{Q}\in\mathcal{N}$ implies $z\tilde{Q}\in\mathcal{N}$ for every $z\in\mathbb{C}$.</p>
+<p>The cone is smooth away from the apex. The complex gradient of the norm at $\tilde{Q}$ is $2\sum_\mu Q_\mu e_\mu$, and it is never zero except at $\tilde{Q}=0$, since the coefficient vector $Q\in\mathbb{C}^4$ is nonzero away from the apex. Its real and imaginary parts are the two real gradients of the two real equations, and they fail to be independent exactly when the coefficient vector $Q$ lies on a real complex line, $Q=\lambda u$ with $\lambda\in\mathbb{C}$ and $u\in\mathbb{R}^4$ real. Such a $Q$ satisfies $N(Q)=\lambda^2\sum_\mu u_\mu^2=0$ only when $\lambda=0$ or $\sum_\mu u_\mu^2=0$; the second is impossible for real nonzero $u$, because the level-1 form is positive definite on the real vectors. Hence, <strong>away from the apex the two real gradients are independent at every point of $\mathcal{N}$</strong>, and the cone is a real $6$-dimensional manifold there.</p>
+<p><strong>The link.</strong> The intersection</p>
+<p>$$
+L=\mathcal{N}\cap S^7_E
+$$</p>
+<p>is a compact five-dimensional manifold, the <strong>link</strong> of the cone, and the cone is the cone over it: $\mathcal{N}\setminus\{0\}\cong L\times\mathbb{R}_{>0}$ under $\tilde{Q}\mapsto(\tilde{Q}/\|\tilde{Q}\|_E,\|\tilde{Q}\|_E)$. Multiplication by a unit complex number preserves both $N=0$ and $\|\cdot\|_E=1$, so the circle $U(1)$ acts on $L$ freely, and the quotient is</p>
+<p>$$
+L/U(1)\cong S^2\times S^2 ,
+$$</p>
+<p>so that $L$ is an $S^1$-bundle over $S^2\times S^2$. The four-dimensional quotient is the projectivised null quadric, and its two sphere factors are its two rulings, treated as geometry in <em>Biquaternion Null Quadric and Projective Geometry</em>.</p>
+<p><strong>Physical reading.</strong> On the material sector, where the four-position is $\tilde{Q}=ict\,e_0+\mathbf{x}$, the norm is $N(\tilde{Q})=-c^2t^2+\mathbf{x}^2$, so the null cone is exactly the <strong>light cone</strong> of Minkowski space in the $ict$ coordinate. On the informational sector, where the coordinate is $ct'\,e_0+i\mathbf{x}'$, the norm is $N=c^2t'^2-\mathbf{x}'^2$, and the same cone appears as the null cone of the informational coordinates. The two readings are mirror images through the sector exchange $i\mathbb{M}_+=\mathbb{M}_-$.</p>
+<p>The physics of the link is the physics of the massless particle. A null momentum $\tilde{P}$ has a direction on the light cone, and the directions of null momenta form the <strong>celestial sphere</strong> $S^2$. The framework's link carries a further circle, the phase of the null spinor, and the second $S^2$ factor is the celestial sphere read on the other chirality. The pair of rulings is the pair of Weyl spinor lines, so the $S^1$-bundle over $S^2\times S^2$ is the statement that a null momentum is carried by a pair of spinors up to a phase, which is the spinor-helicity description of a massless particle.</p>
+<h2 id="pure-biquaternions-and-the-roots-of-minus-one">Pure Biquaternions and the Roots of Minus One</h2>
+<p>A <strong>pure</strong> biquaternion has vanishing scalar part, $\tilde{Q}=\sum_{k=1}^{3}Q_k e_k$. Its square is central,</p>
+<p>$$
+\tilde{Q}^2=-\Big(\sum_{k=1}^{3}Q_k^2\Big)e_0=-N(\tilde{Q})e_0 ,
+$$</p>
+<p>so a pure element is null exactly when it squares to zero. The <strong>real</strong> roots of $-1$, the elements $\xi$ with $\xi^2=-1$ that lie in the real quaternion slice, are the unit pure quaternions</p>
+<p>$$
+\xi=xe_1+ye_2+ze_3,\qquad x^2+y^2+z^2=1 ,
+$$</p>
+<p>which is the sphere $S^2$ of imaginary units of $\mathbb{H}$. The full set of roots of $-1$ in $\mathbb{B}$ is a complex cone over it and is classified in <em>Biquaternion Roots of Minus One</em>.</p>
+<p><strong>Physical reading.</strong> The sphere $S^2$ of real roots of $-1$ is the sphere of the spatial rotation axes, and a general root of $-1$ generates a one-parameter subgroup that is a rotation when the generator is real and a mixture of rotation and boost when it is not. The null pure elements are the parabolic directions, the nilpotents, whose one-parameter group is a translation rather than a rotation.</p>
+<h2 id="the-null-cone-as-the-boundary-of-the-group-of-units">The Null Cone as the Boundary of the Group of Units</h2>
+<p>The group of units is the complement of the null cone,</p>
+<p>$$
+\mathbb{B}^\times=\{\tilde{Q} : N(\tilde{Q})\ne 0\}=\mathbb{B}\setminus\mathcal{N},
+$$</p>
+<p>because the inverse formula $\tilde{Q}^{-1}=\bar{\tilde{Q}}/N(\tilde{Q})$ requires exactly $N(\tilde{Q})\ne0$. Since $N$ is a continuous complex-valued function, $\mathbb{B}^\times$ is open, and $\mathcal{N}$ is closed. The null cone has empty interior, because it is a proper real algebraic subvariety of an eight-dimensional space, so the group of units is dense in $\mathbb{B}$. Therefore</p>
+<p>$$
+\partial\,\mathbb{B}^\times=\overline{\mathbb{B}^\times}\cap\overline{\mathcal{N}}=\mathbb{B}\cap\mathcal{N}=\mathcal{N},
+$$</p>
+<p>and the <strong>null cone is the topological boundary of the group of units</strong>.</p>
+<p><strong>Physical reading.</strong> The invertible elements are the generic elements, and the non-invertible ones are confined to the light cone. The dense openness is what makes the group of units a good arena for the Lorentz action: a small perturbation of an invertible element stays invertible, and the only way to leave the group is to land exactly on the cone. It is also why the group of units of the <em>real</em> sectors is disconnected into three pieces separated by the cone, whereas the full group is connected — the statement belongs to <em>The Biquaternion Unit Group as a Topological Group</em>.</p>
+<h2 id="summary">Summary</h2>
+<p>As a real vector space $\mathbb{B}$ is $\mathbb{R}^8$ and is therefore contractible, with $\pi_n(\mathbb{B})=0$ for every $n\ge1$; the algebra carries no topological invariant of its own. The Euclidean unit sphere is $S^7$, with $\pi_7=\mathbb{Z}$ and all lower homotopy groups trivial. The null cone $\{N(\tilde{Q})=0\}$ is a real $6$-dimensional cone with two independent real gradients away from the apex, hence a manifold there, and its link is an $S^1$-bundle over $S^2\times S^2$. On the material sector the null cone is the light cone of the $ict$ coordinate and on the informational sector the null cone of the informational coordinate, and the two are exchanged by multiplication by $i$. The null cone is the topological boundary of the group of units, which is open and dense.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde{Q}=\sum_\mu Q_\mu e_\mu$, $Q_\mu\in\mathbb{C}$</td>
+<td>Biquaternion and its four complex coefficients</td>
+</tr>
+<tr>
+<td>$\|\tilde{Q}\|_E=(\sum_\mu|Q_\mu|^2)^{1/2}$</td>
+<td>Euclidean norm, the level of the Hermitian form</td>
+</tr>
+<tr>
+<td>$S^7_E=\{\tilde{Q} : \|\tilde{Q}\|_E=1\}$</td>
+<td>Euclidean unit sphere</td>
+</tr>
+<tr>
+<td>$\mathcal{N}=\{\tilde{Q} : N(\tilde{Q})=0\}$</td>
+<td>Null cone; the light cone of the material sector</td>
+</tr>
+<tr>
+<td>$L=\mathcal{N}\cap S^7_E$</td>
+<td>Link of the null cone</td>
+</tr>
+<tr>
+<td>$L/U(1)\cong S^2\times S^2$</td>
+<td>Projectivised null quadric, the two rulings</td>
+</tr>
+<tr>
+<td>$\mathbb{B}^\times=\mathbb{B}\setminus\mathcal{N}$</td>
+<td>Group of units, open and dense</td>
+</tr>
+<tr>
+<td>$\partial\mathbb{B}^\times=\mathcal{N}$</td>
+<td>The null cone as the boundary of the units</td>
+</tr>
+<tr>
+<td>$ict\,e_0+\mathbf{x}$, $ct'\,e_0+i\mathbf{x}'$</td>
+<td>Material and informational coordinates</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>J. P. Ward, <em>Quaternions and Cayley Numbers: Algebra and Applications</em> (Kluwer, Dordrecht, 1997), for the null cone, the zero divisors and the geometry of the complexified quaternions.</li>
+<li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em> (Cambridge, 2001), for the isotropic cones of a complex quadratic space and their rulings.</li>
+<li>Roger Penrose and Wolfgang Rindler, <em>Spinors and Space-Time</em>, vol. 1 (Cambridge, 1984), for the celestial sphere, the null directions and the spinor-helicity description of a massless particle.</li>
+<li>S. J. Sangwine, T. A. Ell and N. Le Bihan, "Fundamental representations and algebraic properties of biquaternions or complexified quaternions", <em>Advances in Applied Clifford Algebras</em> <strong>21</strong> (2011) 607–636, for the semi-norm, its vanishing locus and the invertibility criterion.</li>
+<li>Charles W. Misner, Kip S. Thorne and John A. Wheeler, <em>Gravitation</em> (Freeman, 1973), for the light cone, its generators and the causal structure it carries.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

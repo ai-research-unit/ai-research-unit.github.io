@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biquaternion Spectral Theory — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="biquaternion-spectral-theory"><strong>Biquaternion Spectral Theory</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The biquaternion algebra $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ is unital and associative but neither commutative nor a division algebra, and both failures complicate the notion of a spectrum. Several inequivalent definitions of "spectrum" are in use, and the main source of error in the subject is the silent switching between them. We state, for every definition, exactly which set it defines; and "spectrum" without qualification always means the spectrum of the biquaternion defined by invertibility, that is, its set of eigenvalues in $\mathbb{C}$.</p>
+<p>Physically this is the algebra of measurement. The Hermitian elements are the observables, their spectra are the values a measurement can return, the spectral theorem is the statement that an observable has an orthonormal eigenbasis, and the functional calculus is how one forms a function of an observable. The article is therefore the algebraic backbone of the quantum-mechanical articles, and it is written so that the reader can always tell which spectrum — complex, left, right, or S — a statement uses.</p>
+<p><strong>Conventions.</strong> The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_0=1,e_1,e_2,e_3$, central scalar imaginary $i$, and general element $\tilde{Q}=\sum_\mu Q_\mu e_\mu$, written $\tilde{Q}=Q_0e_0+\mathbf{Q}$. The two polar forms, the four conjugations and the six subspaces are those of <em>Biquaternion Algebra</em>; the norm and the invertibility criterion are <em>Biquaternion Norm and Invertibility</em>; the zero divisors are <em>Biquaternion Zero Divisors</em>; the exponential and the logarithm are <em>Biquaternion Elementary Functions</em>. The Hermitian idempotents used in the spectral theorem are classified in <em>Biquaternion Idempotents and Projections</em>.</p>
+<h2 id="the-spectrum-of-an-element-of-an-algebra">The Spectrum of an Element of an Algebra</h2>
+<p>Let $A$ be a unital associative algebra over a field $F$, with unit $1_A$.</p>
+<p><strong>Definition 1.1.</strong> The <strong>spectrum</strong> of $a \in A$ is $\sigma_A(a) = \{\lambda \in F : a - \lambda 1_A \text{ is not invertible in } A\}$. It is also called the <strong>point spectrum</strong> when $A$ is a finite-dimensional algebra of operators. The definition is intrinsic: it uses only invertibility.</p>
+<p><strong>Proposition 1.2.</strong> If $A$ is a finite-dimensional unital algebra over $\mathbb{C}$ with $A \neq 0$, and $L_a(x) = ax$ is left multiplication, then $\sigma_A(a)$ is exactly the set of eigenvalues of $L_a$, and is nonempty.</p>
+<p><strong>Proof.</strong> $b$ is invertible iff $L_b$ is bijective. The characteristic polynomial of $L_a$ has a root $\mu \in \mathbb{C}$, and $L_a - \mu\,\mathrm{id} = L_{a-\mu 1_A}$ is singular, so $\mu \in \sigma_A(a)$; conversely $\lambda \in \sigma_A(a)$ makes $L_{a-\lambda 1_A}$ non-bijective, hence $\lambda$ an eigenvalue.</p>
+<p><strong>Corollary 1.3.</strong> For $A = M_n(\mathbb{C})$, $\sigma(M) = \{\lambda \in \mathbb{C} : \det(\lambda I - M) = 0\}$.</p>
+<p>In finite dimension left and right invertibility coincide, since $ab = 1_A$ makes $L_a$ bijective; in infinite dimension they need not. This is the origin of the left/right distinction below, which cannot occur here.</p>
+<h2 id="left-and-right-eigenvalues">Left and Right Eigenvalues</h2>
+<p>Let $D$ be a division ring and $M \in M_n(D)$, acting on column vectors $D^n$. For $\lambda \in D$ and $v \in D^n$ the products $\lambda v$ and $v\lambda$ differ in general.</p>
+<p><strong>Definition 2.1.</strong> A scalar $\lambda \in D$ is a <strong>right eigenvalue</strong> of $M$ if $Mv = v\lambda$ for some nonzero $v \in D^n$, and a <strong>left eigenvalue</strong> if $Mv = \lambda v$ for some nonzero $v$. The sets of such $\lambda$ are the <strong>right spectrum</strong> $\sigma_R(M)$ and the <strong>left spectrum</strong> $\sigma_L(M)$.</p>
+<p><strong>Proposition 2.2.</strong> $\lambda \in \sigma_L(M)$ iff $M - \lambda I$ is singular.</p>
+<p><strong>Proof.</strong> $Mv = \lambda v \iff (M-\lambda I)v = 0$, and a square matrix over a division ring is singular iff it has a nonzero kernel vector.</p>
+<p>Thus $\sigma_L(M)$ is exactly the spectrum of Definition 1.1 with scalars in $D$. The right problem does not reduce this way, since $v\lambda \neq \lambda v$ in general; note that $\sigma_R(M)$ is a union of conjugacy classes, because $Mv = v\lambda$ gives $M(vw) = (vw)(w^{-1}\lambda w)$ for every nonzero $w$.</p>
+<p><strong>Example 2.3.</strong> For $D = \mathbb{H}$, $n = 1$, $M = [q]$, the equation $qv = \lambda v$ forces $\lambda = q$, so $\sigma_L([q]) = \{q\}$, while $\sigma_R([q]) = \{v^{-1}qv : v \in \mathbb{H}^\times\}$ is a point for real $q$ and a $2$-sphere otherwise. Thus $\sigma_L([q]) \neq \sigma_R([q])$ for non-real $q$.</p>
+<p><strong>Proposition 2.4.</strong> If $D$ is a field, then $\sigma_L(M) = \sigma_R(M) = \{\lambda : \det(\lambda I - M) = 0\}$.</p>
+<p><strong>Consequence for the biquaternions.</strong> Since the centre of $\mathbb{B}$ is $\mathbb{C}$, complex scalars commute with everything; if eigenvalues are required to lie in $\mathbb{C}$, the left and right problems for a biquaternion coincide and agree with the matrix spectrum below. If eigenvalues may be arbitrary elements of $\mathbb{B}$, the two spectra can differ, but that problem is not studied here.</p>
+<h2 id="the-biquaternion-spectrum">The Biquaternion Spectrum</h2>
+<p>A biquaternion is written $\tilde{Q} = \sum_{\mu=0}^3 Q_\mu e_\mu$. Its <strong>trace</strong> and <strong>biquaternion norm</strong> functionals are</p>
+<p>$$
+T(\tilde{Q}) = 2Q_0, \qquad D(\tilde{Q}) = N(\tilde{Q}) = Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2 .
+$$</p>
+<p>Write $\mathbf{Q} = Q_1 e_1 + Q_2 e_2 + Q_3 e_3$ and let $B = \sqrt{Q_1^2 + Q_2^2 + Q_3^2}$ be a fixed square root, the <strong>complex norm of the vector part</strong>; replacing $B$ by $-B$ changes nothing.</p>
+<p><strong>Definition 3.1.</strong> The <strong>spectrum</strong> of $\tilde{Q}$ is $\sigma(\tilde{Q}) = \{\lambda \in \mathbb{C} : \tilde{Q} - \lambda e_0 \text{ is not invertible in } \mathbb{B}\}$, the spectrum of Definition 1.1. Its characteristic polynomial is</p>
+<p>$$
+p_{\tilde{Q}}(\lambda) = \lambda^2 - 2Q_0\lambda + N(\tilde{Q}) = \lambda^2 - 2Q_0\lambda + Q_0^2 + B^2 = (\lambda - Q_0 - iB)(\lambda - Q_0 + iB),
+$$</p>
+<p>so</p>
+<p>$$
+\sigma(\tilde{Q}) = \{Q_0 + iB, \, Q_0 - iB\},
+$$</p>
+<p>the two roots coinciding exactly when $B = 0$.</p>
+<p><strong>Consistency with invertibility.</strong> Since $N(\tilde{Q} - \lambda e_0) = (Q_0-\lambda)^2 + Q_1^2 + Q_2^2 + Q_3^2 = p_{\tilde{Q}}(\lambda)$, the spectrum contains $0$ exactly when $N(\tilde{Q}) = 0$, i.e. when $\tilde{Q}$ is zero or a zero divisor. The spectrum of left multiplication on $\mathbb{B} \cong \mathbb{C}^4$ is the same set, with doubled multiplicity (§<em>Eigenspaces and Their Dimensions</em>).</p>
+<p><strong>Physical reading: the measured values.</strong> The spectrum is the set of two complex numbers a measurement of the element can return. Its characteristic polynomial is the one-qubit structure: the two eigenvalues $Q_0 \pm iB$ are the two outcomes, their sum $2Q_0$ is twice the mean and their product $N(\tilde{Q})$ the determinant. That the spectrum empties of nothing and is finite is the algebraic statement that a finite-dimensional algebra has a bounded set of measurement outcomes. The zero-divisor criterion — zero is in the spectrum exactly for a zero divisor — is the statement that the "measurement values" of a null element include $0$, which is the algebraic shadow of the null cone of <em>Biquaternion Norm and Invertibility</em>.</p>
+<h2 id="cayleyhamilton-and-the-trace-and-determinant-functionals">Cayley–Hamilton and the Trace and Determinant Functionals</h2>
+<p><strong>Theorem 4.1 (Cayley–Hamilton).</strong> Every $\tilde{Q} \in \mathbb{B}$ satisfies $\tilde{Q}^2 - 2Q_0\tilde{Q} + N(\tilde{Q})e_0 = 0$, i.e. $\tilde{Q}^2 - T(\tilde{Q})\tilde{Q} + D(\tilde{Q})e_0 = 0$.</p>
+<p><strong>Proof.</strong> With $\tilde{Q} = Q_0e_0 + \mathbf{Q}$ and $\mathbf{Q}^2 = -B^2 e_0$,</p>
+<p>$$
+\tilde{Q}^2 = Q_0^2 e_0 + 2Q_0\mathbf{Q} - B^2 e_0 = 2Q_0\tilde{Q} - (Q_0^2 + B^2)e_0 = 2Q_0\tilde{Q} - N(\tilde{Q})e_0.
+$$</p>
+<p><strong>Corollary 4.2.</strong> If $N(\tilde{Q}) \neq 0$, then $\tilde{Q}^{-1} = (2Q_0e_0 - \tilde{Q})/N(\tilde{Q}) = \bar{\tilde{Q}}/N(\tilde{Q})$.</p>
+<p><strong>Proposition 4.3.</strong> The functionals $T, D$ satisfy</p>
+<p>$$
+T(\tilde{P}+\tilde{Q}) = T(\tilde{P})+T(\tilde{Q}), \quad T(\lambda\tilde{Q}) = \lambda T(\tilde{Q}), \quad T(\tilde{P}\tilde{Q}) = T(\tilde{Q}\tilde{P}), \quad T(e_0) = 2,
+$$</p>
+<p>$$
+D(\tilde{P}\tilde{Q}) = D(\tilde{P})D(\tilde{Q}), \quad D(\lambda\tilde{Q}) = \lambda^2 D(\tilde{Q}), \quad D(e_0) = 1,
+$$</p>
+<p>and both are invariant under similarity. The determinant $D = N$ is multiplicative, the trace is linear and cyclic but not multiplicative, and $D(\exp\tilde{Q}) = e^{T(\tilde{Q})}$.</p>
+<p><strong>Proof.</strong> Direct computation from the definitions, with $T(\tilde{Q}) = 2Q_0$ and $D(\tilde{Q}) = N(\tilde{Q})$.</p>
+<p><strong>Physical reading.</strong> The trace and the determinant are the two invariants a physical transformation may not change: the cyclic trace is what makes a rotation preserve the norm of a vector, and the multiplicative determinant is what makes the group of unit-norm elements closed under multiplication. That the determinant of the exponential is the exponential of the trace is the algebraic reason the group of unit-norm elements is the Lie group whose algebra is the trace-free part, developed in <em>Biquaternion Lie Algebra</em> and <em>Biquaternion Lie Group and Exponential Structure</em>.</p>
+<h2 id="the-commutative-subalgebra-generated-by-a-single-biquaternion">The Commutative Subalgebra Generated by a Single Biquaternion</h2>
+<p>The functionals of the previous section are the coefficients of the vanishing polynomial, and this makes the algebra generated by a single element transparent. For $\tilde{Q} \in \mathbb{B}$, the <strong>commutative subalgebra generated by $\tilde{Q}$</strong> is the $\mathbb{C}$-linear span of $\{e_0, \tilde{Q}, \tilde{Q}^2, \dots\}$, denoted $\mathbb{C}[\tilde{Q}]$; it is the smallest subalgebra of $\mathbb{B}$ containing $e_0$ and $\tilde{Q}$, and it is the image of the algebra homomorphism</p>
+<p>$$
+\mathbb{C}[x] \longrightarrow \mathbb{B}, \qquad x \longmapsto \tilde{Q}.
+$$</p>
+<p><strong>The minimal polynomial.</strong> The kernel of this homomorphism is the principal ideal $(m_{\tilde{Q}})$ generated by the <strong>minimal polynomial</strong> $m_{\tilde{Q}}$, the monic polynomial of least degree with $m_{\tilde{Q}}(\tilde{Q}) = 0$. By Cayley–Hamilton $m_{\tilde{Q}}$ divides the characteristic polynomial $x^2 - 2Q_0x + N(\tilde{Q})$, so $\deg m_{\tilde{Q}} \in \{1, 2\}$, and</p>
+<p>$$
+\mathbb{C}[\tilde{Q}] \cong \mathbb{C}[x]/(m_{\tilde{Q}}), \qquad \mathbb{C}[\tilde{Q}] = \operatorname{span}_{\mathbb{C}}\{e_0, \tilde{Q}\}.
+$$</p>
+<p><strong>The two cases.</strong> Let $\Delta = -4B^2$ be the discriminant of the characteristic polynomial.</p>
+<ul>
+<li><strong>$\Delta \neq 0$ ($B \neq 0$).</strong> $m_{\tilde{Q}} = x^2 - 2Q_0x + N(\tilde{Q})$ splits, with roots $Q_0 \pm iB$, and the Chinese remainder theorem gives $\mathbb{C}[\tilde{Q}] \cong \mathbb{C} \times \mathbb{C}$, evaluation at the two roots. This is the semisimple case; $\tilde{Q}$ is diagonalisable with eigenvalues $Q_0 \pm iB$.</li>
+<li><strong>$\Delta = 0$ and $\mathbf{Q} \neq 0$ ($B = 0$).</strong> $m_{\tilde{Q}} = (x - Q_0)^2$, and $\mathbb{C}[\tilde{Q}] \cong \mathbb{C}[\epsilon]/(\epsilon^2)$ with $\epsilon = \tilde{Q} - Q_0e_0$ nilpotent of order two. This is the local, non-semisimple case.</li>
+<li><strong>$\mathbf{Q} = 0$.</strong> $m_{\tilde{Q}} = x - Q_0$ and $\mathbb{C}[\tilde{Q}] = \mathbb{C}e_0$, of dimension one.</li>
+</ul>
+<p>So $\dim_{\mathbb{C}} \mathbb{C}[\tilde{Q}]$ is $2$ in the first two cases and $1$ in the scalar case, and the isomorphism type is the same dichotomy as the conjugacy classification of §<em>Similarity Classes and the Eigenvalue Dichotomy</em>.</p>
+<p><strong>The functional calculus.</strong> Since $\mathbb{C}[\tilde{Q}] \cong \mathbb{C}[x]/(m_{\tilde{Q}})$, every power series $F(z) = \sum_n a_n z^n$ with complex coefficients has $F(\tilde{Q}) = \alpha e_0 + \beta \tilde{Q}$ for scalars $\alpha, \beta$ determined by the data of $F$ on the roots: the two values $F(Q_0 \pm iB)$ in the semisimple case, and $F(Q_0)$ together with $F'(Q_0)$ in the local case. Consequently $F(\tilde{Q})$ converges if and only if $F$ converges at the root or roots (in the local case, $F$ and its derivative). Every elementary function of a single biquaternion is an instance, and the standard identities of complex analysis hold in $\mathbb{C}[\tilde{Q}]$ because it is commutative; this is the structural fact behind <em>Biquaternion Elementary Functions</em>.</p>
+<p><strong>Physical reading: one element at a time.</strong> The subalgebra $\mathbb{C}[\tilde{Q}]$ is the commutative world a single observable carries with it: within it, all the algebra one needs for that observable — its powers, its exponential, its functions — behaves like complex numbers. That the subalgebra is two-dimensional in the interesting case and the functional calculus is determined by the values at the two eigenvalues is why a function of a single qubit observable is fixed by two numbers. The one-qubit calculus the quantum-mechanical articles use — exponentiating a Hamiltonian, forming a unitary from an observable — is exactly this calculus, restricted to the two-dimensional subalgebra generated by the observable.</p>
+<h2 id="similarity-classes-and-the-eigenvalue-dichotomy">Similarity Classes and the Eigenvalue Dichotomy</h2>
+<p><strong>Definition 5.1.</strong> Two biquaternions are <strong>conjugate</strong> (or <strong>similar</strong>) if $\tilde{Q}' = S\tilde{Q}S^{-1}$ for some invertible $S \in \mathbb{B}$. The functionals $T, D$ are the coefficients of the characteristic polynomial.</p>
+<p><strong>Theorem 5.2 (classification).</strong> Let $T = T(\tilde{Q})$, $D = D(\tilde{Q})$, and let $\Delta = T^2 - 4D = 4(Q_0^2 - N(\tilde{Q})) = -4B^2$ be the discriminant.</p>
+<p>(1) <strong>Distinct eigenvalues ($\Delta \neq 0$, i.e. $B \neq 0$).</strong> $\tilde{Q}$ has the two distinct eigenvalues $Q_0 \pm iB$, and its conjugacy class is determined by the unordered pair of eigenvalues, equivalently by $(T,D)$.</p>
+<p>(2) <strong>Repeated eigenvalue ($\Delta = 0$, i.e. $B = 0$).</strong> The only eigenvalue is $Q_0$, and there are exactly two conjugacy classes with $(T,D) = (2Q_0, Q_0^2)$: the <strong>central class</strong> $\mathbf{Q} = 0$ ($\tilde{Q} = Q_0e_0$) and the <strong>non-semi-simple class</strong> $\mathbf{Q} \neq 0$, $\mathbf{Q}^2 = 0$ (conjugate to the Jordan block with diagonal $Q_0$).</p>
+<p>Thus $(T,D)$ determines the conjugacy class except on the repeated locus, where the separating invariant is whether $\mathbf{Q} = 0$.</p>
+<p><strong>Proof.</strong> (1) $p_{\tilde{Q}}$ has two distinct roots, so $\tilde{Q}$ is diagonalizable with them, and any two such elements are similar. (2) $B=0$ gives $\mathbf{Q}^2 = 0$; if $\mathbf{Q}\neq 0$ then $\tilde{Q} - Q_0e_0$ is nonzero with square $0$, so $\tilde{Q}$ is non-semi-simple and hence similar to the Jordan block with diagonal $Q_0$.</p>
+<p>In case 2, $N(\tilde{Q}) = Q_0^2$, so the non-semi-simple element is a zero divisor exactly when $Q_0 = 0$.</p>
+<p><strong>Physical reading.</strong> Two elements are physically the same observable exactly when a change of internal frame — a similarity by an invertible element, the sandwich action — carries one to the other. The classification says the unordered pair of eigenvalues fixes the observable, except in the degenerate case where the extra invariant is whether the element is a scalar or has a nilpotent vector part. This is the algebraic statement that a two-level observable is fixed by its two measured values, with one exception at degeneracy: the nilpotent case, which is the algebra's form of two coincident levels that cannot be separated by any measurement. The sandwich action that implements the frame change is developed in <em>Biquaternion Rotations and Lorentz Transformations</em>.</p>
+<h2 id="eigenspaces-and-their-dimensions">Eigenspaces and Their Dimensions</h2>
+<p><strong>Definition 6.1.</strong> For $\lambda \in \sigma(\tilde{Q})$ the <strong>eigenspace</strong> is $E_\lambda = \{x \in \mathbb{B} : \tilde{Q}x = \lambda x\}$, the eigenspace of left multiplication by $\tilde{Q}$ on $\mathbb{B}$, and $\dim_\mathbb{C} E_\lambda$ is the <strong>geometric multiplicity</strong>.</p>
+<p><strong>Proposition 6.2.</strong> For $\lambda \in \sigma(\tilde{Q})$: (1) if $B \neq 0$ then $\dim_\mathbb{C} E_\lambda = 2$; (2) if $B = 0$ and $\mathbf{Q} = 0$ then $E_{Q_0} = \mathbb{B}$; (3) if $B = 0$ and $\mathbf{Q} \neq 0$ then $\dim_\mathbb{C} E_{Q_0} = 2$.</p>
+<p><strong>Proof.</strong> (1) Left multiplication by $\tilde{Q}$ is diagonalizable with the two distinct eigenvalues $Q_0 \pm iB$, each of algebraic multiplicity $2$, hence each eigenspace has dimension $2$. (2) $\tilde{Q} = Q_0e_0$ is central, so $\tilde{Q}x = Q_0x$ for every $x$. (3) Left multiplication by the nilpotent $\tilde{Q} - Q_0e_0$ has square $0$ and rank $2$, hence nullity $2$.</p>
+<p><strong>Corollary 6.3.</strong> In the regular module $\mathbb{B}$ the geometric multiplicity of an eigenvalue is $2$, except for a central element, where it is $4$; only for a nilpotent element does it fall below the algebraic multiplicity $4$.</p>
+<p><strong>Real and complex eigenvalues.</strong> A real eigenvalue does not force real eigenvectors: $E_\lambda \subseteq \mathbb{B}$ is still a complex subspace, of real dimension twice its complex dimension. In the Hermitian case both eigenvalues are real.</p>
+<p><strong>Physical reading: degeneracy of a qubit.</strong> Each eigenvalue of a generic element has a two-complex-dimensional eigenspace in the regular module: the two eigenvectors of a qubit observable form a pair, one per chirality or one per column, as <em>Biquaternion Ideals and Peirce Decomposition</em> explains. Only a central element — a pure phase — has the whole algebra as eigenspace, and only a nilpotent element has an eigenspace smaller than the algebraic multiplicity. The nilpotent case is the algebraic form of a degenerate two-level system whose two states cannot be resolved: this is the same degeneracy that makes a null element a zero divisor, and it is why degeneracy and the null cone are the same phenomenon in this framework.</p>
+<h2 id="the-resolvent">The Resolvent</h2>
+<p><strong>Definition 7.1.</strong> The <strong>resolvent</strong> of $\tilde{Q}$ is $R(\lambda) = (\tilde{Q} - \lambda e_0)^{-1}$, defined for $\lambda \notin \sigma(\tilde{Q})$.</p>
+<p><strong>Proposition 7.2.</strong> For $\lambda \notin \sigma(\tilde{Q})$,</p>
+<p>$$
+R(\lambda) = \frac{(Q_0-\lambda)e_0 - \mathbf{Q}}{(Q_0-\lambda)^2 + B^2} = \frac{\overline{\tilde{Q} - \lambda e_0}}{p_{\tilde{Q}}(\lambda)}.
+$$</p>
+<p><strong>Proof.</strong> $\tilde{Q} - \lambda e_0$ has conjugate $(Q_0-\lambda)e_0 - \mathbf{Q}$ and norm $(Q_0-\lambda)^2 + B^2 = p_{\tilde{Q}}(\lambda)$; apply Corollary 4.2.</p>
+<p><strong>Corollary 7.3 (analyticity).</strong> $R$ is rational in $\lambda$ with denominator $p_{\tilde{Q}}(\lambda)$, hence holomorphic on $\mathbb{C}\setminus\sigma(\tilde{Q})$, with poles exactly at the two eigenvalues. The pole is simple when $\tilde{Q}$ is diagonalisable, and double when $B = 0$ with $\mathbf{Q} \neq 0$, where $p_{\tilde{Q}} = (\lambda-Q_0)^2$ but the numerator at $\lambda = Q_0$ is $-\mathbf{Q} \neq 0$.</p>
+<p>Finally, the resolvent satisfies $R(\lambda) - R(\mu) = (\lambda-\mu)R(\lambda)R(\mu)$, since with $A = \tilde{Q}-\lambda e_0$ and $B = \tilde{Q}-\mu e_0$ one has $A^{-1}-B^{-1} = A^{-1}(B-A)B^{-1}$; consequently $R'(\lambda) = R(\lambda)^2$.</p>
+<p><strong>Physical reading.</strong> The resolvent is the Green's function of the eigenvalue problem: it is the object whose poles are the measured values, and the double pole at a degenerate nilpotent element is the algebraic statement that such a system has a Jordan structure rather than a clean pair of levels. In the field-theoretic language the same object appears as the propagator, and the position of its poles is the spectrum of masses the theory can produce.</p>
+<h2 id="the-spectral-radius">The Spectral Radius</h2>
+<p><strong>Definition 8.1.</strong> The <strong>spectral radius</strong> is $\rho(\tilde{Q}) = \max\{|\lambda| : \lambda \in \sigma(\tilde{Q})\} = \max\{|Q_0+iB|, |Q_0-iB|\}$.</p>
+<p><strong>Proposition 8.2.</strong> $\rho(\tilde{Q}) = 0$ iff $\tilde{Q}$ is nilpotent, equivalently $\tilde{Q}^2 = 0$, equivalently $Q_0 = 0$ and $B = 0$.</p>
+<p><strong>Proof.</strong> $\rho = 0$ iff $Q_0 = B = 0$, and then $p_{\tilde{Q}}(\lambda) = \lambda^2$, so $\tilde{Q}^2 = 0$ by Cayley–Hamilton; conversely $\tilde{Q}^2 = 0$ makes $0$ the only eigenvalue. The nonzero pure nilpotents $\mathbf{Q}$ with $\mathbf{Q}^2 = 0$, which are zero divisors, are a special case.</p>
+<p><strong>Theorem 8.3 (Gelfand).</strong> For any norm on the finite-dimensional algebra $\mathbb{B}$, $\rho(\tilde{Q}) = \lim_{k\to\infty}\|\tilde{Q}^k\|^{1/k}$, independently of the biquaternion norm; with the Euclidean norm this reads $\lim_k\|\tilde{Q}^k\|_E^{1/k}$.</p>
+<p><strong>Physical reading.</strong> The spectral radius is the largest measurement outcome, in modulus. The Gelfand formula makes it a growth rate: the asymptotic size of the powers of an element is governed by the largest eigenvalue. In the physical reading, this is the rate at which repeated application of a transformation amplifies — the algebraic statement behind stability and decay rates in the quantum-mechanical articles.</p>
+<h2 id="the-exponential-and-the-logarithm">The Exponential and the Logarithm</h2>
+<p>The exponential $\exp(\tilde{Q}) = \sum_n \tilde{Q}^n/n!$ is entire and is the value of $e^z$ at the spectrum, in the holomorphic functional calculus on $\mathbb{C}[\tilde{Q}] = \mathrm{span}_\mathbb{C}\{e_0,\tilde{Q}\}$. <em>Biquaternion Elementary Functions</em> gives $\exp(\tilde{Q}) = e^{Q_0}(\cos B\,e_0 + \sin B\,\hat{n})$ for $B \neq 0$ with $\hat{n} = \mathbf{Q}/B$, and $\exp(\tilde{Q}) = e^{Q_0}(e_0 + \mathbf{Q})$ for $B = 0$; the eigenvalues are $e^{Q_0 \pm iB}$ in the first case and the repeated $e^{Q_0}$ in the second.</p>
+<p><strong>Non-injectivity.</strong> Since $2\pi i n e_0$ is central, $\exp(\tilde{Q} + 2\pi i n e_0) = \exp(\tilde{Q})$ for every integer $n$; in particular $\exp(0) = \exp(2\pi i e_0) = e_0$, although $2\pi i e_0 \neq 0$.</p>
+<p><strong>The logarithm.</strong> A <strong>logarithm</strong> of $\tilde{Q}$ is any $\tilde{L}$ with $\exp(\tilde{L}) = \tilde{Q}$. <em>Biquaternion Elementary Functions</em> proves that every invertible biquaternion has one, so $\exp : \mathbb{B} \to \mathbb{B}^\times$ is surjective; not being injective, it has a multivalued inverse, and a branch must be chosen. Non-uniqueness comes from adding a commuting element of the kernel, in particular $2\pi i n e_0$, and from choosing a complex logarithm of each eigenvalue. No continuous, and hence no holomorphic, logarithm can exist on the whole group of units: one applied to $\lambda e_0$ and composed with the determinant would give a continuous logarithm of $\lambda^2$ on $\mathbb{C}^\times$, impossible because $\lambda^2$ winds twice around the origin.</p>
+<p><strong>Physical reading: exponentiating a generator.</strong> The exponential is how an infinitesimal transformation becomes a finite one: the spectrum of $\exp(\tilde{Q})$ is the exponential of the spectrum of $\tilde{Q}$, so an eigenvalue of the generator becomes a phase or a stretch of the transformation. The non-injectivity by $2\pi i n e_0$ is the statement that a global phase of $2\pi n$ is unobservable, and the two-to-one covering this creates is the double cover of the rotation group — the spinorial fact the framework reads in <em>Biquaternion Rotations and Lorentz Transformations</em> and in <em>The Spinor Module in Biquaternionic Form and Its Lorentz Action</em>. The group structure of the exponential and its domain are <em>Biquaternion Lie Group and Exponential Structure</em>.</p>
+<h2 id="hermitian-and-normal-elements">Hermitian and Normal Elements</h2>
+<p><strong>Definition 10.1.</strong> $\tilde{Q}$ is <strong>Hermitian</strong> if $\tilde{Q}^\dagger = \tilde{Q}$, <strong>unitary</strong> if $\tilde{Q}^\dagger\tilde{Q} = \tilde{Q}\tilde{Q}^\dagger = e_0$, and <strong>normal</strong> if $\tilde{Q}\tilde{Q}^\dagger = \tilde{Q}^\dagger\tilde{Q}$. Hermitian and unitary elements are normal.</p>
+<p>The Hermitian condition is a subspace condition: writing $\tilde{Q} = \sum_\mu Q_\mu e_\mu$, it says exactly that $Q_0 \in \mathbb{R}$ and $Q_k = iq'_k$ with $q'_k \in \mathbb{R}$. So the Hermitian elements of $\mathbb{B}$ are precisely the elements of the Hermitian subspace $\mathbb{M}_+$, and the anti-Hermitian elements are precisely those of $\mathbb{M}_-$; the Hermitian idempotents $\tilde\Pi_1, \tilde\Pi_2$ of Theorem 11.2 lie in $\mathbb{M}_+$.</p>
+<p><strong>Proposition 10.3.</strong> If $\tilde{Q}$ is Hermitian then $T(\tilde{Q})$, $D(\tilde{Q})$, and both eigenvalues are real.</p>
+<p><strong>Proof.</strong> Hermitian elements have $Q_0 \in \mathbb{R}$ and $Q_k = iq'_k$ with $q'_k \in \mathbb{R}$, so $B^2 = -\sum_k(q'_k)^2$ is real and non-positive, $iB$ is real, and $Q_0 \pm iB \in \mathbb{R}$.</p>
+<p><strong>Proposition 10.4.</strong> $\tilde{Q}$ is normal iff left multiplication by $\tilde{Q}$ is unitarily diagonalizable, i.e. iff $\mathbb{B}$ has an orthonormal basis of eigenvectors with respect to the Hermitian form. In particular a normal element with $B = 0$ must be central, and $\tilde{Q}$ is Hermitian iff it is normal with real spectrum. A unitary element is normal and has all eigenvalues of modulus $1$.</p>
+<p><strong>Physical reading: observables, unitaries and normality.</strong> Hermitian elements are the observables; their real spectrum, Proposition 10.3, is why a measurement returns a real number. Unitary elements are the symmetries — the evolutions and the frame changes — and their spectrum on the unit circle is why a symmetry preserves the norm. Normality is the exact condition for an element to be an observable or a symmetry in a common frame: the normal elements are the ones with an orthonormal eigenbasis, and it is this that makes them the physically admissible elements. That the Hermitian elements are exactly the Hermitian subspace $\mathbb{M}_+$, and the anti-Hermitian ones exactly $\mathbb{M}_-$, ties the spectral theory to the sector structure: the observables live in the informational sector, the generators of the symmetries in the material one, up to the factor of $i$ that the exponential supplies. The sector articles are <em>The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector</em> and <em>The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector</em>.</p>
+<h2 id="the-spectral-theorem">The Spectral Theorem</h2>
+<p><strong>Theorem 11.1.</strong> $M \in M_2(\mathbb{C})$ is normal iff $M = U\,\mathrm{diag}(\lambda_1,\lambda_2)\,U^\dagger$ with $U$ unitary and $\lambda_1,\lambda_2 \in \mathbb{C}$ its spectrum; if $M$ is Hermitian the $\lambda_i$ are real, and if $M$ is unitary they have modulus $1$.</p>
+<p><strong>Theorem 11.2 (biquaternion form).</strong> $\tilde{Q}$ is normal iff there are a unitary $\tilde{U} \in \mathbb{B}$ and $\lambda_1,\lambda_2 \in \mathbb{C}$ with</p>
+<p>$$
+\tilde{U}\tilde{Q}\tilde{U}^\dagger = \frac{\lambda_1+\lambda_2}{2}e_0 + \frac{i(\lambda_1-\lambda_2)}{2}e_3.
+$$</p>
+<p>Equivalently $\tilde{Q} = \lambda_1\tilde\Pi_1 + \lambda_2\tilde\Pi_2$ with Hermitian idempotents $\tilde\Pi_1,\tilde\Pi_2$ satisfying $\tilde\Pi_1+\tilde\Pi_2 = e_0$, $\tilde\Pi_1\tilde\Pi_2 = 0$, $\tilde\Pi_i^\dagger = \tilde\Pi_i$, $\tilde\Pi_i^2 = \tilde\Pi_i$; for $\lambda_1 \neq \lambda_2$,</p>
+<p>$$
+\tilde\Pi_1 = \frac{\tilde{Q}-\lambda_2e_0}{\lambda_1-\lambda_2}, \qquad \tilde\Pi_2 = \frac{\tilde{Q}-\lambda_1e_0}{\lambda_2-\lambda_1}.
+$$</p>
+<p><strong>Proof.</strong> This is Theorem 11.1 transported to $\mathbb{B}$, identifying a normal element with its diagonal form $\frac{\lambda_1+\lambda_2}{2}e_0 + \frac{i(\lambda_1-\lambda_2)}{2}e_3$ and using that Hermitian conjugation is a $*$-involution on $\mathbb{B}$.</p>
+<p><strong>Physical reading: the resolution of the identity.</strong> The biquaternion spectral theorem is the resolution of the identity of a two-level system: an observable is a real combination of two orthogonal Hermitian idempotents — the two projectors of the measurement — and the projectors are recovered from the observable by the displayed formulas. This is the algebraic form of the Born rule's bookkeeping, and it is the reason the framework's observables are read as elements of $\mathbb{M}_+$ rather than as operators on an external Hilbert space. The idempotents themselves, their parametrisation by the Bloch sphere, and their classification are <em>Biquaternion Idempotents and Projections</em>; the two-projector decomposition of the algebra is <em>Biquaternion Ideals and Peirce Decomposition</em>.</p>
+<h2 id="the-s-spectrum-and-the-quaternionic-spectral-theorem">The S-Spectrum and the Quaternionic Spectral Theorem</h2>
+<p>§<em>The Spectral Theorem</em> works for biquaternions because $\mathbb{C}$ is central. When the scalars do not commute, as over $\mathbb{H}$, the left/right ambiguity returns and a different spectrum is needed: the <strong>S-spectrum</strong>.</p>
+<p><strong>Definition 12.1.</strong> For $T \in M_n(\mathbb{H})$, the <strong>S-spectrum</strong> is $\sigma_S(T) = \{s \in \mathbb{H} : T^2 - 2\mathrm{Re}(s)T + |s|^2I \text{ is not invertible}\}$. It rests on the identity $s^2 - 2\mathrm{Re}(s)s + |s|^2 = 0$, which holds because $s - \mathrm{Re}(s)$ is pure imaginary.</p>
+<p><strong>Theorem 12.2.</strong> For $T \in M_n(\mathbb{H})$, $\sigma_S(T) = \sigma_R(T)$.</p>
+<p><strong>Proof (one direction).</strong> If $Tv = vs$ then $(T^2 - 2\mathrm{Re}(s)T + |s|^2I)v = v(s^2 - 2\mathrm{Re}(s)s + |s|^2) = 0$, so the operator is singular; the converse is proved in the references.</p>
+<p>For $T = [q]$ this gives the $2$-sphere $\sigma_S([q]) = \{v^{-1}qv : v \in \mathbb{H}^\times\}$ for non-real $q$; compare Example 2.3.</p>
+<p><strong>Theorem 12.3.</strong> If $T \in M_n(\mathbb{H})$ is normal, then $T = U\,\mathrm{diag}(\lambda_1,\dots,\lambda_n)\,U^*$ for a unitary $U$ and complex $\lambda_i$ in a fixed slice, and $\sigma_S(T) = \bigcup_{i=1}^n [\lambda_i]$, where $[\lambda]$ is the conjugacy class $\{v^{-1}\lambda v : v \in \mathbb{H}^\times\}$. For Hermitian $T$ the $\lambda_i$ are real; for unitary $T$ they have modulus $1$.</p>
+<p><strong>Relation to the biquaternions.</strong> For a real quaternion $q$ viewed as a biquaternion, the complex spectrum $\{q_0 \pm i|\mathbf{q}|\}$ is the slice $\sigma(q) = [q] \cap \mathbb{C}_i$ of the S-sphere $[q]$. Thus the S-spectrum plays for quaternionic matrices the role the complex spectrum plays for biquaternion matrices.</p>
+<p><strong>Physical reading: the quaternionic form of the quantum spectrum.</strong> Because the framework's scalars are biquaternions with a central $i$, the ordinary complex spectrum suffices and the S-spectrum is not needed: this is the spectral-theoretic content of the algebra being $M_2(\mathbb{C})$ over $\mathbb{C}$. The S-spectrum is what one must use if one tries to do the same physics with quaternionic scalars, and its coincidence with the right spectrum is the precise sense in which the quaternionic formulation is a re-parametrisation: an S-eigenvalue is a sphere of complex eigenvalues, exactly as a quaternionic eigenvalue is a conjugacy class. The framework's choice of a central $i$ is therefore a choice that the spectrum be a finite set of complex numbers rather than a union of spheres.</p>
+<h2 id="summary">Summary</h2>
+<p>The word "spectrum" is used in several inequivalent senses for $\mathbb{B}$, and the main source of error in the subject is the silent switching between them. Unqualified, the spectrum of a biquaternion means its spectrum under Definition 1.1: the two-element set</p>
+<p>$$
+\sigma(\tilde{Q}) = \{Q_0 + iB, \, Q_0 - iB\}, \qquad B = \sqrt{Q_1^2 + Q_2^2 + Q_3^2},
+$$</p>
+<p>the roots of the characteristic polynomial $\lambda^2 - 2Q_0\lambda + D(\tilde{Q})$, where $T(\tilde{Q}) = 2Q_0$ is the trace functional and $D(\tilde{Q}) = N(\tilde{Q})$ is the biquaternion norm. The two roots coincide exactly when $B = 0$; the set $\sigma(\tilde{Q})$ contains $0$ exactly when $\tilde{Q}$ is a zero divisor, by the invertibility criterion. Because $\mathbb{B}$ is noncommutative, the left and right spectra must be distinguished from it; they agree with $\sigma(\tilde{Q})$ as a set, with the multiplicities of the left spectrum (in the regular module) doubled.</p>
+<p>The rest of the theory is intrinsic to $\mathbb{B}$: the commutative subalgebra generated by a single element and its functional calculus, Cayley–Hamilton, the similarity classification and the eigenvalue dichotomy, the eigenspace dimensions in the regular module, the resolvent and its expansion, the spectral radius, and the exponential and the logarithm. The spectral theorem takes the biquaternion form $\tilde{Q} = \lambda_1 \tilde\Pi_1 + \lambda_2 \tilde\Pi_2$ with Hermitian idempotents $\tilde\Pi_1, \tilde\Pi_2$ summing to $e_0$ and orthogonal; a Hermitian element has real spectrum, a unitary element spectrum on the unit circle. Physically the Hermitian elements are the observables and their spectra are the values a measurement returns; the normal elements are those diagonalisable in an orthonormal frame; and because the central $i$ makes the scalars commute, the ordinary complex spectrum suffices.</p>
+<p>When the scalars do not commute, as over $\mathbb{H}$, the left/right ambiguity requires a different notion, the S-spectrum $\sigma_S(T) = \{s \in \mathbb{H} : T^2 - 2\operatorname{Re}(s)T + |s|^2 I$ is not invertible$\}$, which coincides with the right spectrum and, for a real quaternion viewed as a biquaternion, restricts to the complex spectrum as $\sigma(q) = [q] \cap \mathbb{C}_i$. The S-spectrum thus plays for quaternionic matrices the role the complex spectrum plays for biquaternion matrices.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B}$</td>
+<td>Biquaternion algebra, $\mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$</td>
+</tr>
+<tr>
+<td>$\tilde{Q} = \sum_{\mu=0}^{3} Q_\mu e_\mu$</td>
+<td>General biquaternion</td>
+</tr>
+<tr>
+<td>$B = \sqrt{Q_1^2+Q_2^2+Q_3^2}$</td>
+<td>Complex norm of the vector part</td>
+</tr>
+<tr>
+<td>$T(\tilde{Q}) = 2Q_0$</td>
+<td>Trace functional</td>
+</tr>
+<tr>
+<td>$D(\tilde{Q}) = N(\tilde{Q})$</td>
+<td>Determinant functional (norm)</td>
+</tr>
+<tr>
+<td>$\sigma(\tilde{Q}) = \{Q_0 \pm iB\}$</td>
+<td>Spectrum (complex spectrum); the measured values</td>
+</tr>
+<tr>
+<td>$\sigma_L, \sigma_R$</td>
+<td>Left and right spectra</td>
+</tr>
+<tr>
+<td>$E_\lambda$</td>
+<td>Eigenspace in the regular module $\mathbb{B}$</td>
+</tr>
+<tr>
+<td>$R(\lambda)$</td>
+<td>Resolvent; poles at the spectrum</td>
+</tr>
+<tr>
+<td>$\rho(\tilde{Q})$</td>
+<td>Spectral radius; the largest measurement outcome in modulus</td>
+</tr>
+<tr>
+<td>$\sigma_S(T)$</td>
+<td>S-spectrum, for quaternionic scalars</td>
+</tr>
+<tr>
+<td>$\tilde\Pi_1, \tilde\Pi_2$</td>
+<td>Hermitian idempotents in the biquaternion spectral theorem, $\tilde\Pi_1+\tilde\Pi_2 = e_0$, $\tilde\Pi_1\tilde\Pi_2 = 0$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>F. R. Gantmacher, <em>The Theory of Matrices</em> (Chelsea, 1959), for the Jordan form and the similarity classification.</li>
+<li>Roger A. Horn and Charles R. Johnson, <em>Matrix Analysis</em> (Cambridge University Press, 1985), for eigenvalues, normal matrices and the spectral theorem.</li>
+<li>Nicholas J. Higham, <em>Functions of Matrices: Theory and Computation</em> (SIAM, 2008), for the matrix exponential, logarithm and functional calculus.</li>
+<li>Fuzhen Zhang, "Quaternions and matrices of quaternions", <em>Linear Algebra and its Applications</em> <strong>251</strong> (1997) 21–57, for left and right quaternionic eigenvalues.</li>
+<li>Fabrizio Colombo, Irene Sabadini and Daniele C. Struppa, <em>Noncommutative Functional Calculus</em> (Birkhäuser, 2011), for the S-spectrum.</li>
+<li>Vladimir V. Rodman, <em>Topics in Quaternion Linear Algebra</em> (Princeton University Press, 2014), for the spectral theory of quaternionic matrices.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

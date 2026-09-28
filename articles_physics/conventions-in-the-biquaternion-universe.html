@@ -120,6 +120,34 @@ $$</p>
 </table></div>
 <p>The notation of this article already reads through the convention, and it is worth saying so explicitly: the coefficients $q_\mu$ are real, the coefficients $Q_\mu = q_\mu + iq'_\mu$ are complex, and a general element of $\mathbb{B}$ is written $\tilde Q$. The case names the scalar sector, the tilde the presence of the quaternion factor.</p>
 <p>This is a <strong>preferred convention</strong> — a preference, not a strict rule, not to be enforced by rewriting other articles: the basis $e_0, \dots, e_3$, the central unit $i$, the Euclidean vector $\mathbf{x}$, the coefficients $q_\mu, q'_\mu$, indices such as $\mu, \nu, k$, and the ladder operators $\tilde a, \tilde a^{\dagger}$ keep their established symbols, and a split construction is qualified by a subscript where it must be separated from the non-split one.</p>
+<h3 id="the-idempotent-convention">The Idempotent Convention</h3>
+<p>The convention of the section above fixes the case and the tilde of a generic element. The idempotents carry a symbol of their own, and the series uses it throughout.</p>
+<p>An <strong>idempotent</strong> of the algebra is an element $\tilde{\Pi}$ with $\tilde{\Pi}^2 = \tilde{\Pi}$; a <strong>projector</strong> is a Hermitian idempotent, $\tilde{\Pi}^\dagger = \tilde{\Pi}$, and the rank-one projectors of $\mathbb{M}_+$ are the <strong>pure states</strong> of the informational sector,</p>
+<p>$$
+\tilde{\Pi}_\pm(\hat{\mu}) = \tfrac{1}{2}\bigl(e_0 \pm i\,\hat{\mu}\bigr), \qquad \hat{\mu}\in\mathbb{R}^3,\ |\hat{\mu}| = 1 .
+$$</p>
+<p>A non-zero idempotent $\tilde{\Pi}$ generates the <strong>minimal left ideal</strong> $\mathbb{B}\tilde{\Pi}$, which is the state module of the companion articles; the classification of the idempotents, the polarisation identity, the Peirce decomposition and the projective geometry of the pure states are those of <em>Biquaternion Idempotents and Projections</em> and its companions in the mathematical corpus.</p>
+<p>The upper-case tilde is therefore <strong>split between two roles</strong>, and the split is the reason the convention is stated:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Role</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde{\Pi}$</td>
+<td>an idempotent, a projector or a pure state, and the minimal left ideal $\mathbb{B}\tilde{\Pi}$ it generates</td>
+</tr>
+<tr>
+<td>$\tilde{P}$</td>
+<td>a four-momentum or four-vector, $\tilde{P} = m\tilde{U}$, and a <em>generic</em> element wherever a statement holds for every element</td>
+</tr>
+</tbody>
+</table></div>
+<p>The generic element keeps its $\tilde{P}$ in the statements that hold for all elements: the trace pairing $\mathrm{Tr}(\tilde{P}\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{Q})$, the commutator bracket $[\tilde{P},\tilde{Q}] = \tilde{P}\tilde{Q} - \tilde{Q}\tilde{P}$, the bilinear form $B(\tilde{P},\tilde{Q})$ and the multiplicativity $N(\tilde{P}\tilde{Q}) = N(\tilde{P})N(\tilde{Q})$. The same letter is the four-momentum. Both roles are inherited from the mathematical corpus, where <em>Biquaternion Idempotents and Projections</em> writes the idempotent $\tilde{\Pi}$ and the generic element $\tilde{P}$ side by side.</p>
+<p>The convention is one of <strong>notation, not of substance</strong>: an element written $\tilde{\Pi}$ is not a different kind of object from one written $\tilde{Q}$, only an element known to be idempotent, and the glyph records that knowledge at the point of use. Where a passage needs a generic idempotent variable it may write $\tilde{\Pi}$, and where it needs a generic element it writes $\tilde{P}$ or $\tilde{Q}$.</p>
 <h3 id="the-conjugations-and-the-fixed-spaces">The Conjugations and the Fixed Spaces</h3>
 <p>The algebra carries four natural involutions, all of them used in the series:</p>
 <div class="table-scroll"><table>
@@ -593,8 +621,8 @@ $$</p>
 <li><strong>The axial current is what the mass breaks</strong>, with $\partial_\mu j_5^\mu = 2im\bar{\Psi}\gamma_5\Psi$, and it is checked on a superposition.</li>
 <li><strong>The mass is the off-diagonal coupling between the two central ideals</strong> of $\mathbb{B} \cong M_2(\mathbb{C})$ — the two chiralities, that is, the algebra's central splitting. It breaks exactly the symmetry that rotates those two ideals, and <em>not</em> the central $U(1)$ the algebra canonically carries.</li>
 </ol>
-<h2 id="the-real-structure-math458">The Real Structure $\flat$</h2>
-<h3 id="what-math459-is">What $\flat$ Is</h3>
+<h2 id="the-real-structure-math481">The Real Structure $\flat$</h2>
+<h3 id="what-math482-is">What $\flat$ Is</h3>
 <p>The map</p>
 <p>$$
 \tilde{\Psi}^\flat = -\tilde{\Psi}^\dagger = -\bar{\tilde{\Psi}}^{\,*}
@@ -611,7 +639,7 @@ $$</li>
 <li>consequently its <strong>fixed space is the anti-Hermitian sector $\mathbb{M}_-$</strong>.</li>
 </ul>
 <p>The map $\flat$ is the algebra's <strong>real structure</strong>, and its shape is that of a charge-conjugation (Majorana) pairing: it relates a field to its own conjugate. The sign convention on the two sectors is what makes $\mathbb{M}_-$ the fixed space, and hence what makes $\mathbb{M}_-$ the material sector — the two conventions are the same convention seen twice.</p>
-<h3 id="what-math470-is-for">What $\flat$ Is For</h3>
+<h3 id="what-math493-is-for">What $\flat$ Is For</h3>
 <p>$\flat$ is retained in the framework for what it is genuinely for:</p>
 <ul>
 <li>conjugation, and the definition of the $\mathbb{M}_\pm$ split itself;</li>
@@ -619,7 +647,7 @@ $$</li>
 <li>the real-form question of Dirac versus Majorana fermions, which the companion articles on chirality, the neutrino and the CPT theorem develop.</li>
 </ul>
 <p>In every case the coupling built on $\flat$ pairs $\tilde{\Psi}$ with $\tilde{\Psi}^\flat$. Because $\flat$ is antilinear, such a coupling is <strong>not invariant under the continuous central phase</strong> — which is precisely the difference between a Majorana-type pairing and an ordinary Dirac mass, and precisely why $\flat$ cannot serve as the mass term of the Dirac equation.</p>
-<h3 id="what-math478-is-not">What $\flat$ Is Not</h3>
+<h3 id="what-math501-is-not">What $\flat$ Is Not</h3>
 <p>$\flat$ is <strong>not</strong> the mass. The two roles were conflated in the retired form $\tilde{\nabla}\tilde{\Psi} = m\tilde{\Psi}^\flat$, and separating them is the content of the mass-term convention above. A reader who finds $\flat$ in an article should expect conjugation, a Majorana pairing, a bilinear, or the sector split — never a Dirac mass.</p>
 <h2 id="summary">Summary</h2>
 <p>The conventions of the series fall into two groups.</p>
@@ -650,6 +678,10 @@ $$</li>
 <tr>
 <td>$\tilde{Q}$</td>
 <td>An element of the algebra. The same symbol serves for the general element and for an element of any of the subspaces, whichever the passage at hand is about; the complex coefficients are $Q_\mu$, the real parameters of a four-dimensional subspace are $q_\mu$ and $q'_\mu$, the prime marking the slot that carries the $i$.</td>
+</tr>
+<tr>
+<td>$\tilde{\Pi}$</td>
+<td>An idempotent, projector or pure state, $\tilde{\Pi}^2 = \tilde{\Pi}$, and the minimal left ideal $\mathbb{B}\tilde{\Pi}$ it generates; a four-momentum and a generic element keep $\tilde{P}$ (see <em>The Idempotent Convention</em>)</td>
 </tr>
 <tr>
 <td>$\bar{\tilde{Q}}, \tilde{Q}^*, \tilde{Q}^\dagger, \tilde{Q}^\flat$</td>

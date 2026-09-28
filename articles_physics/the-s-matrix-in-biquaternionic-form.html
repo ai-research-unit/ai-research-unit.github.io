@@ -60,7 +60,7 @@ $$</p>
 <p>The companion articles have assembled every ingredient this article needs. <em>Canonical Quantization of the Biquaternion Dirac Field</em> promotes the biquaternion Dirac field to an operator-valued field, builds the mode algebra, and produces a Fock space, recording that the construction transcribes standard canonical quantization rather than deriving it from the algebra $\mathbb{B}$. <em>Fock Space and Creation/Annihilation Operators in Biquaternionic Form</em> sharpens that result: the Fock space is a <strong>module</strong> over $\mathbb{B}$, not an object of it, and the algebra hosts exactly one fermionic mode. <em>The Feynman Propagator in Biquaternionic Form</em> supplies the two-point function and the finding that the algebra provides the complex plane and the axis of the $i\epsilon$ but not the orientation that selects the Feynman contour.</p>
 <p>This article asks what "the S-matrix in biquaternionic form" names. The finding is stated at the outset.</p>
 <ul>
-<li><strong>Established, and recomputed below.</strong> Conditional on the one-mode identification of the Fock article, the S-matrix of a single fermionic mode is a <strong>matrix-unitary</strong> element of $\mathbb{B}$. Matrix unitarity, $\tilde{S}\tilde{S}^\dagger = e_0$, is <em>not</em> the biquaternion-norm condition $\tilde{S}\bar{\tilde{S}} = e_0$ that the framework uses to define its Lorentz rotors. The two conditions define different groups, $U(2)$ and $SL(2,\mathbb{C})$, and they intersect in the spin rotations $SU(2)$; the S-matrix belongs to the first, not the second. Every matrix-unitary biquaternion factors as $\tilde{S} = e^{i\theta}\tilde{R}$ with $\tilde{R}$ a unit real quaternion, and a parity-conserving one-mode S-matrix is $\tilde{S} = e^{i\theta_0}\tilde\Pi_1 + e^{i\theta_1}\tilde\Pi_2$, whose biquaternion norm is the phase $e^{i(\theta_0+\theta_1)}$, generally not $e_0$. Its transition probabilities are given by the trace formula $2\,\mathrm{Sc}(\tilde{P}_f\,\tilde{S}\tilde{\rho}_i\,\tilde{S}^\dagger)$.</li>
+<li><strong>Established, and recomputed below.</strong> Conditional on the one-mode identification of the Fock article, the S-matrix of a single fermionic mode is a <strong>matrix-unitary</strong> element of $\mathbb{B}$. Matrix unitarity, $\tilde{S}\tilde{S}^\dagger = e_0$, is <em>not</em> the biquaternion-norm condition $\tilde{S}\bar{\tilde{S}} = e_0$ that the framework uses to define its Lorentz rotors. The two conditions define different groups, $U(2)$ and $SL(2,\mathbb{C})$, and they intersect in the spin rotations $SU(2)$; the S-matrix belongs to the first, not the second. Every matrix-unitary biquaternion factors as $\tilde{S} = e^{i\theta}\tilde{R}$ with $\tilde{R}$ a unit real quaternion, and a parity-conserving one-mode S-matrix is $\tilde{S} = e^{i\theta_0}\tilde\Pi_1 + e^{i\theta_1}\tilde\Pi_2$, whose biquaternion norm is the phase $e^{i(\theta_0+\theta_1)}$, generally not $e_0$. Its transition probabilities are given by the trace formula $2\,\mathrm{Sc}(\tilde\Pi_f\,\tilde{S}\tilde{\rho}_i\,\tilde{S}^\dagger)$.</li>
 <li><strong>Standard, and transcribed.</strong> The interaction picture, the Dyson series, the unitarity relation $S = 1+iT$, the finite-dimensional identity $2\,\mathrm{Im}\,T = T^\dagger T$, the optical theorem, and the contraction of the Dyson series into Feynman propagators by Wick's theorem. None of this depends on the biquaternion structure beyond the kinematical conventions already fixed by the read-list articles.</li>
 <li><strong>Gap, left visible.</strong> The S-matrix of the <em>field</em> is an operator on an infinite-dimensional Fock space and is <strong>not</strong> an element of $\mathbb{B}$; the algebra hosts at most the one-mode truncation. And the algebra does not select the boundary condition — the $i\epsilon$ orientation, equivalently the in/out splitting — that makes the time-ordered exponential a well-defined distributional object. That gap is inherited from the propagator article and is not closed here.</li>
 </ul>
@@ -192,10 +192,10 @@ $$</p>
 <p>So the biquaternion norm of the one-mode S-matrix is the exponential of the trace of its generator, and it equals $e_0$ whenever the generator is traceless, $\mathrm{Sc}(\tilde H) = 0$. For a generic duration $\tau$ that is the only way it returns to $e_0$; at the special durations with $2\tau\,\mathrm{Sc}(\tilde H)\in 2\pi\mathbb{Z}$ it returns to $e_0$ with a nonzero trace as well — $\tilde H=\pi e_0$ at $\tau=1$ gives $\tilde S=-e_0$, which is matrix-unitary with $N(\tilde S)=1$ — so the "precisely" is meant generically in $\tau$. This was verified numerically for a Hermitian generator with and without a scalar part: for $\mathrm{Sc}(\tilde H)=0$ the biquaternion norm was $1$ to $10^{-10}$; for $\mathrm{Sc}(\tilde H)=0.8$ it matched $e^{-2i\tau\,\mathrm{Sc}(\tilde H)}$ at both $\tau = 0.6$ and $\tau = 1.7$; and matrix unitarity held in every case. The biquaternion norm is thus not a unitarity condition at all: it measures the <em>trace</em> of the generator, and unitarity is blind to it.</p>
 <p><strong>Then the algebra stops.</strong> A second mode already needs the two-mode operator algebra $M_4(\mathbb{C})$, of complex dimension sixteen, which does not embed in the four-dimensional $\mathbb{B}$; this is the Fock article's capacity count, and the S-matrix inherits it. Consequently the S-matrix of a spin-flip between two modes, or of any genuinely multi-mode process, is not an element of $\mathbb{B}$ on any reading. The finite-dimensional S-matrix is not a truncation of the field S-matrix to a subalgebra; it is the field S-matrix's action on the single module the algebra happens to carry.</p>
 <h2 id="the-s-matrix-element-and-the-born-rule">The S-Matrix Element and the Born Rule</h2>
-<p>The S-matrix element is read off the algebra of the informational sector. For an initial state described by a positive, trace-one element $\tilde\rho_i \in \mathbb{M}_+$ and a final measurement represented by a projector $\tilde P_f \in \mathbb{M}_+$, the transition probability is</p>
+<p>The S-matrix element is read off the algebra of the informational sector. For an initial state described by a positive, trace-one element $\tilde\rho_i \in \mathbb{M}_+$ and a final measurement represented by a projector $\tilde\Pi_f \in \mathbb{M}_+$, the transition probability is</p>
 <p>$$
-P_{i\to f} \;=\; \mathrm{Tr}\!\left(\tilde P_f\,\tilde S\,\tilde\rho_i\,\tilde S^\dagger\right)
-\;=\; 2\,\mathrm{Sc}\!\left(\tilde P_f\,\tilde S\,\tilde\rho_i\,\tilde S^\dagger\right),
+P_{i\to f} \;=\; \mathrm{Tr}\!\left(\tilde\Pi_f\,\tilde S\,\tilde\rho_i\,\tilde S^\dagger\right)
+\;=\; 2\,\mathrm{Sc}\!\left(\tilde\Pi_f\,\tilde S\,\tilde\rho_i\,\tilde S^\dagger\right),
 $$</p>
 <p>which is the Born rule of the informational-space article applied to the scattering channel $\tilde\rho_i \mapsto \tilde S\tilde\rho_i\tilde S^\dagger$. The S-matrix acts as a <strong>reversible</strong> channel: it is matrix-unitary, in contrast with the idempotent projections that implement measurement. The reversible/irreversible dichotomy of $\mathbb{M}_+$ is thus visible in the scattering formalism, with the S-matrix on the reversible side.</p>
 <p>The formula was checked against the elementary Born rule on cases chosen for the purpose rather than for convenience. Take the two occupation states $|0\rangle,|1\rangle$ with projectors $\tilde\Pi_1 = \tfrac12(e_0+ie_3)$ and $\tilde\Pi_2 = \tfrac12(e_0-ie_3)$, and take for $\tilde S$ a spin rotation about $e_2$,</p>
@@ -204,11 +204,11 @@ $$</p>
 $$</p>
 <p>whose matrix is $\Phi(\tilde S) = \begin{pmatrix}\cos\frac{\theta}{2} & -\sin\frac{\theta}{2}\\ \sin\frac{\theta}{2} & \cos\frac{\theta}{2}\end{pmatrix}$. For $\theta = 0.77$ the two routes give</p>
 <p>$$
-\mathrm{Tr}\!\left(\tilde P_0\,\tilde S\,\tilde P_1\,\tilde S^\dagger\right)
-= 2\,\mathrm{Sc}\!\left(\tilde P_0\,\tilde S\,\tilde P_1\,\tilde S^\dagger\right)
+\mathrm{Tr}\!\left(\tilde\Pi_0\,\tilde S\,\tilde\Pi_1\,\tilde S^\dagger\right)
+= 2\,\mathrm{Sc}\!\left(\tilde\Pi_0\,\tilde S\,\tilde\Pi_1\,\tilde S^\dagger\right)
 = |\langle 0|\tilde S|1\rangle|^2 = \sin^2\!\frac{\theta}{2} = 0.141044665\ldots,
 $$</p>
-<p>agreeing to machine precision. A mixed initial state $\tilde\rho_i = \tfrac12(e_0 + 0.4\,ie_3)$, which is positive and of trace one, gave $\mathrm{Tr}(\tilde P_0\tilde S\tilde\rho_i\tilde S^\dagger) = 2\,\mathrm{Sc}(\tilde P_0\tilde S\tilde\rho_i\tilde S^\dagger) = 0.643582134\ldots$ by both routes. The trace formula is the operational content of the one-mode S-matrix: it turns the biquaternion $\tilde S$ into numbers.</p>
+<p>agreeing to machine precision. A mixed initial state $\tilde\rho_i = \tfrac12(e_0 + 0.4\,ie_3)$, which is positive and of trace one, gave $\mathrm{Tr}(\tilde\Pi_0\tilde S\tilde\rho_i\tilde S^\dagger) = 2\,\mathrm{Sc}(\tilde\Pi_0\tilde S\tilde\rho_i\tilde S^\dagger) = 0.643582134\ldots$ by both routes. The trace formula is the operational content of the one-mode S-matrix: it turns the biquaternion $\tilde S$ into numbers.</p>
 <p>Nothing in this section is specific to a scattering process. The trace formula is the Born rule and would apply to any unitary biquaternion acting on the one-mode state space; the S-matrix is one such element. That generality is the honest reading: the algebra supplies the state space, the operator, and the pairing, and the <em>interpretation</em> of the pairing as a scattering cross-section requires the field-theoretic measure that the algebra does not contain.</p>
 <h2 id="unitarity-the-optical-theorem-and-the-algebra">Unitarity, the Optical Theorem, and the Algebra</h2>
 <p>The unitarity relation of the interaction picture is an algebraic identity in the one-mode truncation, and it is worth deriving it there because it is where the S-matrix's unitarity is actually used.</p>
@@ -236,7 +236,7 @@ $$</p>
 <ul>
 <li><em>A finite-dimensional S-matrix.</em> Conditional on the Fock article's one-mode identification, the S-matrix of the single mode is a matrix-unitary biquaternion, and matrix unitarity is an exact condition inside $\mathbb{B}$.</li>
 <li><em>The right unitarity group.</em> The algebra distinguishes $U(2)$, the physical one, from $SL(2,\mathbb{C})$, the biquaternion-norm group of the Lorentz rotors; the intersection is the spin rotations $SU(2)$. The S-matrix's overall phase is the central $U(1)$ and its spin part is a real unit quaternion.</li>
-<li><em>The Born rule for the process.</em> The transition probability is the trace pairing $2\,\mathrm{Sc}(\tilde P_f\tilde S\tilde\rho_i\tilde S^\dagger)$, an element-level formula using only the informational sector.</li>
+<li><em>The Born rule for the process.</em> The transition probability is the trace pairing $2\,\mathrm{Sc}(\tilde\Pi_f\tilde S\tilde\rho_i\tilde S^\dagger)$, an element-level formula using only the informational sector.</li>
 <li><em>The generator's meaning.</em> When the one-mode S-matrix is generated by a Hermitian $\tilde H \in \mathbb{M}_+$, its biquaternion norm is $\exp(-2i\tau\,\mathrm{Sc}(\tilde H))$: the biquaternion norm measures the trace of the generator, and unitarity is independent of it.</li>
 </ul>
 <p><strong>What it only transcribes.</strong></p>
@@ -292,7 +292,7 @@ N(\tilde S) = \exp\!\left(-2i\tau\,\mathrm{Sc}(\tilde H)\right),
 $$</p>
 <p>so the biquaternion norm measures the trace of the generator while unitarity is independent of it. The transition probability is the Born rule applied to the unitary channel,</p>
 <p>$$
-P_{i\to f} = \mathrm{Tr}\!\left(\tilde P_f\tilde S\tilde\rho_i\tilde S^\dagger\right) = 2\,\mathrm{Sc}\!\left(\tilde P_f\tilde S\tilde\rho_i\tilde S^\dagger\right),
+P_{i\to f} = \mathrm{Tr}\!\left(\tilde\Pi_f\tilde S\tilde\rho_i\tilde S^\dagger\right) = 2\,\mathrm{Sc}\!\left(\tilde\Pi_f\tilde S\tilde\rho_i\tilde S^\dagger\right),
 $$</p>
 <p>checked against $|\langle f|\tilde S|i\rangle|^2$ on a spin rotation and on a mixed initial state.</p>
 <p>The transcribed body is the interaction-picture Dyson series, its unitarity $S = 1+iT$ with $2\,\mathrm{Im}\,T = T^\dagger T$, the optical theorem, and the contraction of time-ordered products into Feynman propagators. The fermionic time-ordering sign and the $i\epsilon$ are inherited from the canonical quantization and propagator articles.</p>
@@ -411,7 +411,7 @@ $$</p>
 <td>Occupation projectors (vacuum, occupied)</td>
 </tr>
 <tr>
-<td>$\tilde\rho_i$, $\tilde P_f$</td>
+<td>$\tilde\rho_i$, $\tilde\Pi_f$</td>
 <td>Initial state and final projector in $\mathbb{M}_+$</td>
 </tr>
 <tr>

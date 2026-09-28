@@ -62,7 +62,7 @@
 </ul>
 <p>One further finding is reported as a <strong>limit on what the double slit demonstrates</strong>. For a beam whose two routes carry the same spin state, the <em>spin-summed</em> two-path intensity is unchanged when the central root $i$ of the phase is replaced by a fixed non-central root $\hat{\mu}$; the difference between the two choices appears only under spin analysis, or when the two routes carry different spin states. The spin-summed double-slit pattern therefore does not by itself witness the centrality of the phase; the framework's grounds for the central root lie in the state-vector equation and in the complex structure of the state module, not in this pattern. The computation is in the section on the phase root below, and it is stated against the pull to claim more for the experiment than it shows.</p>
 <p>The article is organized as follows. The next section writes the two-route amplitude and its interference. The section after that treats the fringe pattern and its standard geometry. The following section identifies the which-path qubit and its Bloch ball. The next proves the visibility–predictability bound and reads it as the cone condition. A section treats which-path detection and dephasing. A section examines the choice of phase root. A section treats spinor-valued routes and spin-dependent fringes. The article closes with what the algebra supplies, what it does not, and the open questions.</p>
-<p><strong>Conventions.</strong> We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$, and $i$ is the scalar imaginary, $i^2 = -1$, commuting with every $e_k$. The fixed-point subspaces are $\mathbb{M}_-$ (anti-Hermitian, the material sector) and $\mathbb{M}_+$ (Hermitian, the informational sector); $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace and $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_0, ie_0\}$ is the complex scalar subspace, the center of the algebra. The biquaternionic gradient is $\tilde{\nabla} = e_0\partial_{ict} + e_1\partial_x + e_2\partial_y + e_3\partial_z$ and its quaternion conjugate is $\bar{\tilde{\nabla}} = e_0\partial_{ict} - e_1\partial_x - e_2\partial_y - e_3\partial_z$. A Hermitian element is written $\tilde{H} = h_0 e_0 + i\mathbf{h}$, an idempotent is $\tilde{P}_\pm(\hat{\mu}) = \tfrac12(e_0 \pm i\hat{\mu})$ with $\hat{\mu}$ a unit pure real quaternion, and a state is $\tilde{\rho} = \tfrac12(e_0 + i\mathbf{r})$ with $|\mathbf{r}|\le 1$. The biquaternion norm is $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$. The trace formula $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ is inherited unchanged, as is the statement that multiplication by $i$ exchanges the sectors, $i\,\mathbb{M}_\pm = \mathbb{M}_\mp$.</p>
+<p><strong>Conventions.</strong> We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$, and $i$ is the scalar imaginary, $i^2 = -1$, commuting with every $e_k$. The fixed-point subspaces are $\mathbb{M}_-$ (anti-Hermitian, the material sector) and $\mathbb{M}_+$ (Hermitian, the informational sector); $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace and $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_0, ie_0\}$ is the complex scalar subspace, the center of the algebra. The biquaternionic gradient is $\tilde{\nabla} = e_0\partial_{ict} + e_1\partial_x + e_2\partial_y + e_3\partial_z$ and its quaternion conjugate is $\bar{\tilde{\nabla}} = e_0\partial_{ict} - e_1\partial_x - e_2\partial_y - e_3\partial_z$. A Hermitian element is written $\tilde{H} = h_0 e_0 + i\mathbf{h}$, an idempotent is $\tilde\Pi_\pm(\hat{\mu}) = \tfrac12(e_0 \pm i\hat{\mu})$ with $\hat{\mu}$ a unit pure real quaternion, and a state is $\tilde{\rho} = \tfrac12(e_0 + i\mathbf{r})$ with $|\mathbf{r}|\le 1$. The biquaternion norm is $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$. The trace formula $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ is inherited unchanged, as is the statement that multiplication by $i$ exchanges the sectors, $i\,\mathbb{M}_\pm = \mathbb{M}_\mp$.</p>
 <h2 id="the-two-path-amplitude">The Two-Path Amplitude</h2>
 <p>Let $\tilde{K}_j(P)$ be the amplitude for the particle to arrive at the screen point $P$ through slit $j$, $j = 1, 2$. Each is a sum over paths through that slit, and by the path-integral article the single-path phase is a <strong>central</strong> unitary element of $\mathbb{C}_{\mathbb{B}}$ whose exponent lies in $\mathbb{M}_-$:</p>
 <p>$$
@@ -104,9 +104,9 @@ $$</p>
 <h2 id="the-which-path-qubit-and-the-bloch-ball">The Which-Path Qubit and the Bloch Ball</h2>
 <p>The two slits define a <strong>which-path</strong> degree of freedom with exactly two alternatives. In the framework it is a qubit, and its state is an element of $\mathbb{M}_+$. Choose a unit pure real quaternion $\hat{\mu}$ to name the path axis; the two alternatives are the idempotents</p>
 <p>$$
-\tilde{P}_\pm(\hat{\mu}) = \tfrac12\bigl(e_0 \pm i\hat{\mu}\bigr),
+\tilde\Pi_\pm(\hat{\mu}) = \tfrac12\bigl(e_0 \pm i\hat{\mu}\bigr),
 $$</p>
-<p>with $\tilde{P}_+ + \tilde{P}_- = e_0$ and $\tilde{P}_+ \tilde{P}_- = 0$. The which-path state is</p>
+<p>with $\tilde\Pi_+ + \tilde\Pi_- = e_0$ and $\tilde\Pi_+ \tilde\Pi_- = 0$. The which-path state is</p>
 <p>$$
 \tilde{\rho} = \tfrac12\bigl(e_0 + i\mathbf{r}\bigr), \qquad |\mathbf{r}| \le 1,
 $$</p>
@@ -161,10 +161,10 @@ $$</p>
 <p>Half-filled fringes and a mixed which-path state are the same fact, and it is a fact about the biquaternion norm. This is the framework's translation of the standard two-path duality $V^2 + P^2 \le 1$; the algebra does not change the number, it identifies the bound with the cone condition that the framework already uses for purity.</p>
 <h2 id="which-path-detection-and-the-loss-of-interference">Which-Path Detection and the Loss of Interference</h2>
 <p>The framework describes the destruction of the fringes by the same algebraic operations it uses for any measurement.</p>
-<p><strong>Selective detection.</strong> A projective measurement of the path observable — the Hermitian element whose idempotents are $\tilde{P}_\pm(\hat{\mu})$ — has the Born probabilities $p_\pm = \mathrm{Tr}(\tilde{P}_\pm \tilde{\rho}) = \tfrac12(1 \pm r_\parallel)$ and post-measurement states $\tilde{\rho}' = \tilde{P}_\pm(\hat{\mu})$. The equatorial component is annihilated: $\mathbf{r}' = \pm\hat{\mu}$, so $V = 0$. Whether the particle was recorded at slit one or slit two, the interference is gone.</p>
+<p><strong>Selective detection.</strong> A projective measurement of the path observable — the Hermitian element whose idempotents are $\tilde\Pi_\pm(\hat{\mu})$ — has the Born probabilities $p_\pm = \mathrm{Tr}(\tilde\Pi_\pm \tilde{\rho}) = \tfrac12(1 \pm r_\parallel)$ and post-measurement states $\tilde{\rho}' = \tilde\Pi_\pm(\hat{\mu})$. The equatorial component is annihilated: $\mathbf{r}' = \pm\hat{\mu}$, so $V = 0$. Whether the particle was recorded at slit one or slit two, the interference is gone.</p>
 <p><strong>Non-selective detection.</strong> If the which-path record is not read, the operation is the dephasing channel along $\hat{\mu}$ of <em>Decoherence as Idempotent Projection</em>. At full strength ($p = 1$),</p>
 <p>$$
-\tilde{\rho} \;\longmapsto\; p_+\,\tilde{P}_+(\hat{\mu}) + p_-\,\tilde{P}_-(\hat{\mu}),
+\tilde{\rho} \;\longmapsto\; p_+\,\tilde\Pi_+(\hat{\mu}) + p_-\,\tilde\Pi_-(\hat{\mu}),
 $$</p>
 <p>which preserves the populations and destroys the coherence; again $\mathbf{r}_\perp = 0$ and $V = 0$. At partial strength $p \in (0,1)$ the equatorial component is scaled by $1-p$, so</p>
 <p>$$
@@ -174,7 +174,7 @@ $$</p>
 <p>Two structural points, both inherited and neither resolved here.</p>
 <ul>
 <li><strong>Which direction is measured is an input.</strong> The path axis $\hat{\mu}$ is the pointer direction; the decoherence article records that the framework represents the <em>consequence</em> of a system–environment coupling — the channel and its fixed subalgebra — but contains no coupling dynamics from which $\hat{\mu}$ could be derived. The double slit does not change this: the algebra will kill the coherence along any axis one names, and it does not name the axis.</li>
-<li><strong>Which outcome is realised is not supplied.</strong> Full dephasing yields the mixture $p_+\tilde{P}_+ + p_-\tilde{P}_-$; the <em>measurement-problem article</em> shows that the mixture and the single outcome are different objects, and that no change of notation makes the outcome a function of the state. The double slit exhibits both facts at once: the fringes disappear when the paths are distinguished, and the formalism says which record was <em>made</em> only probabilistically.</li>
+<li><strong>Which outcome is realised is not supplied.</strong> Full dephasing yields the mixture $p_+\tilde\Pi_+ + p_-\tilde\Pi_-$; the <em>measurement-problem article</em> shows that the mixture and the single outcome are different objects, and that no change of notation makes the outcome a function of the state. The double slit exhibits both facts at once: the fringes disappear when the paths are distinguished, and the formalism says which record was <em>made</em> only probabilistically.</li>
 </ul>
 <h2 id="the-phase-root-central-or-not">The Phase Root: Central, or Not</h2>
 <p>It is natural to ask whether the double slit requires the phase's root to be the central imaginary $i$. The path-integral and Schrödinger articles argue for the central root on grounds of the complex structure of the state module and of norm preservation. The narrower question here is what the two-slit <em>intensity</em> can show, and the honest answer is: less than one might expect.</p>
@@ -333,7 +333,7 @@ $$</p>
 <td>Unit pure real quaternion; path (pointer) axis</td>
 </tr>
 <tr>
-<td>$\tilde{P}_\pm(\hat{\mu}) = \tfrac12(e_0 \pm i\hat{\mu})$</td>
+<td>$\tilde\Pi_\pm(\hat{\mu}) = \tfrac12(e_0 \pm i\hat{\mu})$</td>
 <td>Which-path idempotents</td>
 </tr>
 <tr>
