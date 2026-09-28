@@ -166,6 +166,12 @@ Hence the realification $\operatorname{Re}N$ on $\mathbb{R}^8$ is non-degenerate
 
 Each is a real slice whose complexification is $(\mathbb{B},N)$. The full realification is split; the Lorentzian slice is $\mathbb{M}_+$, and up to sign $\mathbb{M}_-$.
 
+Beyond the six distinguished subspaces, a mixed real subspace carries a signature of its own. The one the geometry uses is the **split form of signature $(2,2)$**,
+$$
+W=\operatorname{span}_{\mathbb{R}}\{e_0,e_1,ie_2,ie_3\},\qquad N|_W=a^2+b^2-c^2-d^2 \quad \text{for } a e_0+b e_1+ci e_2+di e_3,
+$$
+of real dimension $4$ and matrix $\operatorname{diag}(1,1,-1,-1)$; its complexification is $(\mathbb{B},N)$, and its projective quadric is the doubly ruled real surface $S^1\times S^1$ (*Biquaternion Null Quadric and Projective Geometry*, *Biquaternion Lorentzian and Conformal Geometry*).
+
 ## The Associated Clifford Algebra
 
 With the series convention $v^2=N(v)\cdot1$,

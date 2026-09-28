@@ -32,7 +32,7 @@ The minimal left ideals of $\mathbb{B}\cong M_2(\mathbb{C})$ are the two lines $
 $$
 \mathbb{B}=\mathbb{B}p\oplus\mathbb{B}q,
 $$
-so that the module of the spin representation is realised inside the algebra as a minimal left ideal. The two ideals themselves are not the chiral halves: each of them complexifies to the sum $S_+\oplus S_-$ of the two chiral spaces. The chirality belongs to the algebra, $\mathbb{B}\cong\Delta^+\otimes\Delta^-$, and the two families of null planes of the quadric are the projectivisations of the two chiral spaces $\Delta^\pm$. The construction of the module is *The 2×2 Matrix Representation of Biquaternions*, §*The Simple Module*, and *Biquaternion Ideals and Peirce Decomposition*; only the identification with the ideals is used here.
+so that the module of the spin representation is realised inside the algebra as a minimal left ideal. The two ideals themselves are not the chiral halves: each of them complexifies to the sum $S_+\oplus S_-$ of the two chiral spaces. The chirality belongs to the algebra, $\mathbb{B}\cong\Delta^+\otimes\Delta^-$, and the two families of null planes of the quadric are the projectivisations of the two chiral spaces $\Delta^\pm$. The construction of the module is *The 2×2 Matrix Representation of Biquaternions*, §*The Ideals as Columns and the Spinor Module*, and *Biquaternion Ideals and Peirce Decomposition*; only the identification with the ideals is used here.
 
 ## The Spin Representation and Its Dimension
 

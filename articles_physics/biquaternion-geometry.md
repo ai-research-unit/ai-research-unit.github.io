@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This is the slot overview of the geometry the biquaternion algebra carries. It states what decides that geometry, recalls the Cayley–Klein picture in which a geometry is its group of motions, and maps the five articles that read the geometry of $\mathbb{B}$ and the general articles of Part IV that stand behind them.
+This is the slot overview of the geometry the biquaternion algebra carries. It states what decides that geometry, recalls the Cayley–Klein picture in which a geometry is its group of motions, and maps the six articles that read the geometry of $\mathbb{B}$ and the general articles of Part IV that stand behind them.
 
 Physically the signature is the organising datum: the choice of sector selects the geometry, the material sector $\mathbb{M}_-$ giving the Minkowski geometry and the informational sector $\mathbb{M}_+$ the Euclidean one, so the physics of the framework is read as the geometry of the selected real form. The Cayley–Klein picture is the Erlangen reading — a geometry is its group of motions, and the physics is that group acting on that figure. Each article of the category states one figure and its group.
 
@@ -25,13 +25,14 @@ The same algebra therefore carries several geometries at once, and the passage f
 
 In the Cayley–Klein picture a geometry is its group of motions, and the geometry of $\mathbb{B}$ is read from the group the form defines. The unit-norm group is $\mathbb{B}^\times_1\cong Spin(1,3)$ when the form is Lorentzian, its quotient $\mathbb{B}^\times_1/\{\pm e_0\}\cong SO^+(1,3)$ is the proper orthochronous Lorentz group, $S^3=Sp(1)$ is the group of the definite form, and $(S^3\times S^3)/\{\pm e_0\}\cong SO(4)$ is the group of the two-sided action on the Euclidean form. The group is the invariant of the geometry: two forms with the same group carry the same geometry, and the isometries are the motions the group supplies. The full symmetry group of the algebra, which is wider than the isometries because the automorphisms need not preserve a form, is a separate object (*Biquaternion Automorphisms and Derivations*).
 
-## The Five Articles
+## The Six Articles
 
-The geometry of the algebra is read in five articles, one per face of it, and each cites the general article of Part IV it depends on.
+The geometry of the algebra is read in six articles, one per face of it, and each cites the general article of Part IV it depends on.
 
 - **The figure.** *Biquaternion Null Quadric and Projective Geometry* reads the null cone as the equation of a quadric, its rulings, its Segre and Plücker descriptions, and its polarity — the geometry of the form's degenerate locus.
-- **The motions.** *Biquaternion Rotations and Lorentz Transformations* reads the isometries: the rotors and the sandwich action, the double covers $SU(2)\to SO(3)$ and $Spin(1,3)\to SO^+(1,3)$, the rotations of the definite form and the boosts of the indefinite one, and the two-sided action giving $SO(4)$.
-- **The full transformation group.** *Biquaternion Automorphisms and Derivations* reads the symmetries of the algebra itself, wider than the isometries: the inner and the outer automorphisms, the Möbius action on the projective line and the null quadric, and the derivations as the infinitesimal symmetries.
+- **The motions.** *Biquaternion Rotations and Lorentz Transformations* reads the isometries: the rotors and the sandwich action, the double covers $SU(2)\to SO(3)$ and $Spin(1,3)\to SO^+(1,3)$, the rotations of the definite form and the boosts of the indefinite one, the two-sided action giving $SO(4)$, and the reflection $\rho_v$.
+- **The discrete figures.** *Biquaternion Finite Groups and Figures* reads the finite subgroups of the unit sphere — the twofold preimages of the finite rotation groups — and the figures they determine: the regular $24$-cell with the Hurwitz units as vertices, its symmetry groups $B_4$ and $F_4$, and the McKay correspondence.
+- **The full transformation group.** *Biquaternion Automorphisms and Derivations* reads the symmetries of the algebra itself, wider than the isometries: the inner and the outer automorphisms, the projective linear group, and the derivations as the infinitesimal symmetries.
 - **The geometries.** *Biquaternion Lorentzian and Conformal Geometry* reads the two real slices: Minkowski space with its light cone, the Lorentz group as the conformal group of the celestial sphere, the conformal group $SU(2,2)\cong Spin(4,2)$, the conformal model of Euclidean space, and the split slice.
 - **The spin geometry.** *Biquaternion Spin Geometry* reads the geometry the Clifford structure defines: the spinor module and its two chiral halves, the spinors as the minimal left ideals, the spin representation, and the Dirac operator.
 
@@ -42,7 +43,7 @@ Behind them stand the general articles of Part IV — *Pseudo-Riemannian and Lor
 
 The geometry of the biquaternion algebra is decided by its form. The biquaternion norm is complex-valued, and its real forms carry the signatures $(4,0)$, $(0,4)$, $(1,3)$, $(3,1)$, $(1,1)$ and $(3,3)$, with the split realification $(4,4)$; the sign therefore selects a Euclidean, a Lorentzian or a neutral geometry, and the null case gives the quadric as the figure rather than a space. The same algebra carries all of them at once, and the passage between them is a change of real form.
 
-In the Cayley–Klein picture the geometry is its group of motions, and the group is read from the form: $Sp(1)$ for the definite form, $\mathbb{B}^\times_1\cong Spin(1,3)$ and $SO^+(1,3)$ for the Lorentzian one, and $(S^3\times S^3)/\{\pm e_0\}\cong SO(4)$ for the two-sided action. The five articles of the category read the figure, the motions, the full transformation group, the two real geometries and the spin geometry, each citing the general article of Part IV it depends on and the construction of the rotation groups in Part II. Physically the signature is the organising data, the choice of sector selects the Minkowski or the Euclidean geometry, and the Cayley–Klein picture is the Erlangen reading in which the physics is its group of motions.
+In the Cayley–Klein picture the geometry is its group of motions, and the group is read from the form: $Sp(1)$ for the definite form, $\mathbb{B}^\times_1\cong Spin(1,3)$ and $SO^+(1,3)$ for the Lorentzian one, and $(S^3\times S^3)/\{\pm e_0\}\cong SO(4)$ for the two-sided action. The six articles of the category read the figure, the motions, the discrete figures, the full transformation group, the two real geometries and the spin geometry, each citing the general article of Part IV it depends on and the construction of the rotation groups in Part II. Physically the signature is the organising data, the choice of sector selects the Minkowski or the Euclidean geometry, and the Cayley–Klein picture is the Erlangen reading in which the physics is its group of motions.
 
 ## Summary of Notation
 

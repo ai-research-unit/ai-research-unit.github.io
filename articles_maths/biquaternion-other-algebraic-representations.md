@@ -238,8 +238,8 @@ on which $\tilde{Q}$ acts on each copy as $\Phi(\tilde{Q})$. The two copies are 
 
 - the four-vector realization and the $2\times2$ matrix realization are related by the explicit isomorphism that reads the components $Q_\mu$ off the matrix entries;
 - the $2\times2$ matrix realization is related to the Clifford realization by $\mathrm{Cl}_{1,3}^+ \cong M_2(\mathbb{C})$, the same isomorphism that carries the bivectors to the matrices;
-- the conjugation action is the automorphism group of the algebra acting on itself, and it is the reference against which the operator realization is read;
-- the $4\times4$ regular realization is the algebra acting on itself, and the operator realization is the element as a linear operator on the algebra, both of them read against the matrix realization;
+- the conjugation action is the automorphism group of the algebra acting on itself, and it is the reference against which the dagger sandwich is read;
+- the $4\times4$ regular realization is the algebra acting on itself, and the dagger sandwich is the element as a linear operator on the algebra, both of them read against the matrix realization;
 - the polar realizations are the algebraic realizations restricted to the unit-norm slice and factorised by the exponential.
 
 All of them present the same algebra. The choice of realization is a choice of how to write it, and different choices are useful for different purposes.

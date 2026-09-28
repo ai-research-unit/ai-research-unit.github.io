@@ -34,7 +34,7 @@ $$
 \mathbb{C}_{\mathbb{B}}\cong\mathbb{R}^2,\qquad \mathbb{H}_{\mathbb{B}}\cong\mathbb{R}^4,\qquad \mathbb{M}_+\cong\mathbb{R}^4,\qquad \mathbb{M}_-\cong\mathbb{R}^4.
 $$
 
-So $\mathbb{M}_\pm$ carry no topology beyond that of $\mathbb{R}^4$; their Minkowski content comes from the restricted quadratic form (*Biquaternion Null Quadric and Projective Geometry*, §*Real forms and split signature* and §*The light cone in the Minkowski slices*), not from the topology.
+So $\mathbb{M}_\pm$ carry no topology beyond that of $\mathbb{R}^4$; their Minkowski content comes from the restricted quadratic form (*Biquaternion Norm and Invertibility*, §*The Real Forms and Their Signatures*; *Biquaternion Lorentzian and Conformal Geometry*, §*The Lorentzian Slice and Its Light Cone*), not from the topology.
 
 ## The Euclidean unit sphere
 
@@ -86,7 +86,7 @@ $$
 L\cong(S^3\times S^3)/U(1),
 $$
 
-where $U(1)=S^1$ acts by $(u,v)\mapsto(\lambda u,\lambda^{-1}v)$, the relation under which $uv^{T}$ is unchanged. Here $Q=\mathbb{P}(\mathcal{N})\cong\mathbb{P}^1\times\mathbb{P}^1$ is the projectivised null cone, the Segre quadric of *Biquaternion Null Quadric and Projective Geometry*, §*Rank-one description and the Segre embedding* and §*The two rulings of null planes*. The Hopf maps combine to a bundle projection
+where $U(1)=S^1$ acts by $(u,v)\mapsto(\lambda u,\lambda^{-1}v)$, the relation under which $uv^{T}$ is unchanged. Here $Q=\mathbb{P}(\mathcal{N})\cong\mathbb{P}^1\times\mathbb{P}^1$ is the projectivised null cone, the Segre quadric of *Biquaternion Null Quadric and Projective Geometry*, §*Factorisation and the Segre embedding* and §*The two rulings of null planes*. The Hopf maps combine to a bundle projection
 
 $$
 q:L\to Q\cong S^2\times S^2,\qquad[(u,v)]\mapsto([u],[v]),
@@ -132,7 +132,7 @@ $$
 
 compact, connected and simply connected, with $\pi_2(S^2)\cong\mathbb{Z}$, and not a group, since only $S^0,S^1,S^3$ are groups. It is a homogeneous space of the unit quaternions and the base of the Hopf fibration $S^3\to S^2$; the sphere of roots of $+1$ is its image under multiplication by $i$, homeomorphic to it.
 
-Finally, on either pure reality slice the restricted norm is definite, being $q_1^2+q_2^2+q_3^2$ on $P\cap\mathbb{H}_{\mathbb{B}}$ and $-(q'^2_1+q'^2_2+q'^2_3)$ on $P\cap i\mathbb{H}_{\mathbb{B}}$. Hence $N(\tilde{Q})=0$ forces $\tilde{Q}=0$: the only null element of either pure reality slice is the origin, so the light cone meets these three-dimensional spaces only at its apex, unlike the Minkowski slices $\mathbb{M}_\pm$, whose null set is the three-dimensional light cone (*Biquaternion Null Quadric and Projective Geometry*, §*The light cone in the Minkowski slices*).
+Finally, on either pure reality slice the restricted norm is definite, being $q_1^2+q_2^2+q_3^2$ on $P\cap\mathbb{H}_{\mathbb{B}}$ and $-(q'^2_1+q'^2_2+q'^2_3)$ on $P\cap i\mathbb{H}_{\mathbb{B}}$. Hence $N(\tilde{Q})=0$ forces $\tilde{Q}=0$: the only null element of either pure reality slice is the origin, so the light cone meets these three-dimensional spaces only at its apex, unlike the Minkowski slices $\mathbb{M}_\pm$, whose null set is the three-dimensional light cone (*Biquaternion Lorentzian and Conformal Geometry*, §*The Lorentzian Slice and Its Light Cone*).
 
 ## Summary
 

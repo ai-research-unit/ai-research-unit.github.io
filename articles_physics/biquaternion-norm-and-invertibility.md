@@ -48,6 +48,22 @@ $$
 
 The remaining sections of this article are, in physical terms, the study of this one object: its multiplicativity is the invariance of the interval under the transformations of the theory, its vanishing is the light cone, and its real absolute value is the scale of the polar representation.
 
+### The Polarisation and the Complex Quadratic Space
+
+$N(\tilde{Q})=\sum_{\mu=0}^{3} Q_\mu^2$ is homogeneous of degree two, hence is a quadratic form on $\mathbb{B}\cong\mathbb{C}^4$. Its polar form is
+
+$$
+B(\tilde{P},\tilde{Q})=\tfrac{1}{2}\bigl(N(\tilde{P}+\tilde{Q})-N(\tilde{P})-N(\tilde{Q})\bigr)=\sum_{\mu=0}^{3} P_\mu Q_\mu,
+$$
+
+the complex bilinear dot product. It is symmetric and non-degenerate, and the quaternion units are orthonormal,
+
+$$
+B(e_\mu,e_\nu)=\delta_{\mu\nu}.
+$$
+
+So $(\mathbb{B},N)$ is the standard non-degenerate quadratic space of dimension $4$ over $\mathbb{C}$. The form $B$ is complex-bilinear: it is **not** the Hermitian form $\tilde{P}\tilde{Q}^\dagger$ of the next section, and the two must not be conflated. Geometrically $B$ is the form whose vanishing locus is the null cone, the object the quadric of *Biquaternion Null Quadric and Projective Geometry* is built from.
+
 ### Multiplicativity
 
 **Theorem.** The biquaternion norm is multiplicative:
@@ -356,6 +372,31 @@ The light cone itself is the zero-divisor set, and its elements are the null fou
 - $\mathrm{Vect}(\mathbb{B})$ contains the nilpotent cone, of real codimension 2, whose complement is connected.
 
 The two cones in the sectors have the same structure, each being the vanishing set of an indefinite form of signature $(1,3)$ or $(3,1)$, of codimension 1 in a four-dimensional space. The cone in the complex space sector is different: the biquaternion norm is complex there, its vanishing imposes two real conditions, and the complement is connected and not divided into regions.
+
+## The Real Forms and Their Signatures
+
+Over $\mathbb{C}$ a non-degenerate quadratic form has no signature; signature appears only after a real form is chosen. With $Q_\mu=q_\mu+iq'_\mu$, $q_\mu,q'_\mu\in\mathbb{R}$,
+$$
+\operatorname{Re}N=\sum_{\mu=0}^{3}\bigl(q_\mu^2-q'_\mu{}^2\bigr),\qquad \operatorname{Im}N=2\sum_{\mu=0}^{3} q_\mu q'_\mu .
+$$
+Hence the realification $\operatorname{Re}N$ on $\mathbb{R}^8$ is non-degenerate of signature $(4,4)$, a **split** (neutral) signature; in the real basis $e_\mu,ie_\mu$ its matrix is $\operatorname{diag}(1,1,1,1,-1,-1,-1,-1)$. The six distinguished real subspaces give six real forms, whose signatures are the ones read off sector by sector in *Distribution of the Invertible Elements*:
+
+| Real subspace | $N$ restricted | Signature |
+|---|---|---|
+| $\mathbb{C}_{\mathbb{B}}$ | $q_0^2-(q'_0)^2$ | $(1,1)$ |
+| $\mathrm{Vect}(\mathbb{B})$ | $q_1^2+q_2^2+q_3^2-(q'_1)^2-(q'_2)^2-(q'_3)^2$ | $(3,3)$ |
+| $\mathbb{H}_{\mathbb{B}}$ | $\sum q_\mu^2$ | $(4,0)$ |
+| $i\mathbb{H}_{\mathbb{B}}$ | $-\sum (q'_\mu)^2$ | $(0,4)$ |
+| $\mathbb{M}_+$ | $q_0^2-(q'_1)^2-(q'_2)^2-(q'_3)^2$ | $(1,3)$ |
+| $\mathbb{M}_-$ | $-(q'_0)^2+q_1^2+q_2^2+q_3^2$ | $(3,1)$ |
+
+Each is a real slice whose complexification is $(\mathbb{B},N)$; the definite forms are $(4,0)$ and $(0,4)$, the indefinite ones $(1,3)$ and $(3,1)$, the neutral ones $(1,1)$ and $(3,3)$. The sign is the choice of geometry, the datum the geometry of *Biquaternion Geometry* is organised by.
+
+Beyond the six distinguished subspaces, a mixed real subspace carries a signature of its own. The one the geometry uses is the **split form of signature $(2,2)$**,
+$$
+W=\operatorname{span}_{\mathbb{R}}\{e_0,e_1,ie_2,ie_3\},\qquad N|_W=a^2+b^2-c^2-d^2 \quad \text{for } a e_0+b e_1+ci e_2+di e_3,
+$$
+of real dimension $4$ and matrix $\operatorname{diag}(1,1,-1,-1)$; its complexification is $(\mathbb{B},N)$, and its projective quadric is the doubly ruled real surface $S^1\times S^1$ (*Biquaternion Null Quadric and Projective Geometry*, *Biquaternion Lorentzian and Conformal Geometry*).
 
 ## The Relation to the Hermitian Decomposition
 

@@ -3,9 +3,9 @@
 
 ## Introduction
 
-The real slice of the biquaternion algebra carries the discrete face of the theory: the finite groups of unit quaternions, and the figures they determine in $\mathbb{H}_{\mathbb{B}}\cong\mathbb{R}^4$. This article reads those groups and those figures — the regular $24$-cell, the symmetry groups $F_4$ and $B_4$ of its lattice, the twofold cover $Sp(1)\to SO(3)$ that produces the finite rotation groups, and the realisation of the units as rotations of the algebra.
+The real slice of the biquaternion algebra carries the discrete face of the theory: the finite groups of unit quaternions, and the figures they determine in $\mathbb{H}_{\mathbb{B}}\cong\mathbb{R}^4$. This article reads those groups and those figures — the finite subgroups of the unit sphere, the regular $24$-cell with the Hurwitz units as its vertices, the symmetry groups $B_4$ and $F_4$ of its lattice, and the McKay correspondence.
 
-The abstract unit groups — the quaternion group $Q_8$ and the binary tetrahedral group $2T$ inside the Lipschitz and Hurwitz orders, and the finite subgroups of the unit sphere — are *Biquaternion Orders and Finite Groups of Units*, which supplies the groups; the present article supplies the figures and the discrete motions. The lattice theory and the behaviour of the product and the bracket on the subspaces are *Relations Between Subspaces*; the Clifford reading of the algebra is *The Clifford Structure of the Biquaternion Algebra*; the continuous motions are *Biquaternion Rotations and Lorentz Transformations*. Those results are cited, not re-derived.
+The abstract unit groups — the quaternion group $Q_8$ and the binary tetrahedral group $2T$ inside the Lipschitz and Hurwitz orders, and the finite subgroups of the unit sphere — are *Biquaternion Orders and Finite Groups of Units*, which supplies the groups; the present article supplies the figures and the discrete groups that act on them. The lattice theory and the behaviour of the product and the bracket on the subspaces are *Relations Between Subspaces*; the Clifford reading of the algebra is *The Clifford Structure of the Biquaternion Algebra*; the twofold cover $Sp(1)\to SO(3)$ with its rotation quotient, the rotation $\rho_v$ of a unit and the continuous motions are *Biquaternion Rotations and Lorentz Transformations*. Those results are cited, not re-derived.
 
 Physically these are the crystallographic figures of the material sector. The finite unit groups are the point groups the discrete configurations admit; the $24$-cell is the figure the Hurwitz units draw in the real slice; and the doubling of the preimage is the spin double cover, so a finite unit group is a group of spins and not only of positions. Because the finite groups are the *real* ones, a finite symmetry of a physical configuration is a symmetry of the material sector and not of the informational one.
 
@@ -15,19 +15,7 @@ Physically these are the crystallographic figures of the material sector. The fi
 
 ## The Unit Sphere and the Rotation Quotient
 
-The unit quaternions form the unit sphere
-$$
-Sp(1)=S^3=\{q\in\mathbb{H}_{\mathbb{B}}:N(q)=1\},
-$$
-a compact, connected and simply connected group of real dimension three, and the group of units of the real slice. Its centre is $\{\pm e_0\}$.
-
-**The rotation quotient.** The element $q=\cos\theta\,e_0+\sin\theta\,\hat{n}$, with $\hat{n}$ a real unit vector part, acts on the real vector part by conjugation, and it acts as the rotation about the axis $\hat{n}$ through the angle $2\theta$. The elements $q$ and $-q$ define the same map, so the quotient by the centre is the rotation group,
-$$
-Sp(1)/\{\pm e_0\}\cong SO(3),
-$$
-and $Sp(1)$ is a twofold cover of $SO(3)$. The kernel of the quotient is the centre: the unit quaternion returns to $e_0$ after $2\pi$, while the rotation it performs returns to the identity after $\pi$, which is the doubling of the angle.
-
-Two consequences organise the rest of the article. A finite rotation group is the one that preserves a figure, so the figures of the three-dimensional space classify them; and the cover is twofold, so the finite subgroups of $Sp(1)$ are exactly the twofold preimages of the finite rotation groups.
+The unit sphere $Sp(1)=S^3$, its centre $\{\pm e_0\}$, the quotient $Sp(1)/\{\pm e_0\}\cong SO(3)$ and the doubling of the angle — the rotor $q=\cos(\theta/2)+\sin(\theta/2)\,\hat n$ performing the rotation of angle $\theta$ — are *Biquaternion Rotations and Lorentz Transformations*. The consequence for the discrete figures is the one used below: a finite rotation group is the one that preserves a figure, so the figures of the three-dimensional space classify the finite rotation groups, and the cover being twofold, the finite subgroups of $Sp(1)$ are exactly the twofold preimages of the finite rotation groups.
 
 **Physical reading.** The unit sphere is the group of the spatial rotations of the material sector, and the twofold cover is the same doubling that the rotor of *Biquaternion Rotations and Lorentz Transformations* carries: a full turn of the figure is a half-turn of the quaternion. This is why the discrete symmetries of a material configuration are read on $Sp(1)$ and not on $SO(3)$: the extra sign is what a spinor carries and a position does not.
 
@@ -59,22 +47,15 @@ The twenty-four Hurwitz units of *Biquaternion Orders and Finite Groups of Units
 
 **Proof.** A symmetry of the $24$-cell permutes the vertices, so the symmetry group acts on the twenty-four units; the group generated by sign changes and coordinate permutations is the hyperoctahedral group $B_4$ of order $2^4\cdot 4!=384$, and it preserves the vertex set, and the $24$-cell is the $F_4$ root polytope, whose full symmetry group is the Weyl group $F_4$ of order $1152$. Both contain the unit group $2T$, and both are strictly larger. $\square$
 
-**Physical reading.** The two Weyl groups are the symmetry groups of the Hurwitz lattice and of the root system $F_4$, and they are symmetries of the *lattice*, not of the unit group. The correction is the one the framework needs: the twenty-four units do not act as the $1152$ symmetries of $F_4$, because a unit acts by conjugation and conjugation gives only twelve distinct maps, all of them proper rotations. The figure is larger than the group that acts on it, and the two must not be conflated. The unit group reaches the algebra through the maps $\rho_v$ below, not through these symmetries.
+**Physical reading.** The two Weyl groups are the symmetry groups of the Hurwitz lattice and of the root system $F_4$, and they are symmetries of the *lattice*, not of the unit group. The correction is the one the framework needs: the twenty-four units do not act as the $1152$ symmetries of $F_4$, because a unit acts by conjugation and conjugation gives only twelve distinct maps, all of them proper rotations. The figure is larger than the group that acts on it, and the two must not be conflated. The unit group reaches the algebra through the rotations $\rho_v$ of *Biquaternion Rotations and Lorentz Transformations*, §*Reflections*, not through these symmetries.
 
-## The Units as Rotations of the Algebra
+## The Units as Rotations of the Real Slice
 
-The units of the real slice act on the algebra by conjugation. For a unit $v$ define
-$$
-\rho_v(x) = -v\,x\,v^{-1}.
-$$
-
-**Theorem.** On the real slice, where the norm is definite, $\rho_v$ is an isometry of determinant $+1$; it depends only on the class of $v$ up to sign; and the twenty-four Hurwitz units give twelve distinct maps, which together generate a group of order $24$, namely the conjugation action of $2T$ on the real slice.
-
-**Proof.** The map $\rho_v$ is the composition of the conjugation $x\mapsto vxv^{-1}$, an algebra automorphism, with the negation $x\mapsto-x$, which is central; conjugation by a unit of the real slice preserves the norm, and on the four-dimensional real slice its determinant is $+1$, as is that of the negation in even dimension, so $\rho_v$ is a rotation. Substituting $-v$ for $v$ leaves $\rho_v$ unchanged, since the two central signs cancel, so the twenty-four units give at most twelve maps; and two units give the same map exactly when they differ by a central element of $Sp(1)$, that central element being $\pm e_0$, so the twelve pairs $\{\pm v\}$ give twelve distinct maps. The conjugation action of $2T$ on the real slice has kernel $\{\pm e_0\}$, so it is $2T/\{\pm e_0\}\cong A_4$ of order twelve, and adjoining the central negation, which is $\rho_{e_0}$, gives a group of order $24$. $\square$
+The rotations $\rho_v$ of a unit — their definition, their determinant $+1$ and their dependence on $v$ only up to sign — are *Biquaternion Rotations and Lorentz Transformations*, §*Reflections*. What is specific to the finite groups is the count. The twenty-four Hurwitz units give twelve distinct rotations, since two units give the same map exactly when they differ by $\pm e_0$, and these generate the group of order $24$, the conjugation action of $2T$ on the real slice with kernel $\{\pm e_0\}$, so that $2T/\{\pm e_0\}\cong A_4$ of order twelve, the central negation $\rho_{e_0}$ adjoining.
 
 **Physical reading.** The twelve proper rotations of the figure are the twelve distinct maps the twenty-four units give, so the discrete motions of the real slice are rotations and not reflections. This is the discrete counterpart of the continuous statement of *Biquaternion Rotations and Lorentz Transformations*, that a norm-one element acts on the Clifford vector subspace by a reflection only where orthogonality and anticommutation coincide, and elsewhere by a rotation.
 
-**Remark (one generator).** At one generator the mechanism is visible. On the line $\mathbb{R}e_1$ the map $\rho_{e_1}$ acts as $-1$, and on the orthogonal complement as the identity, so it is the reflection in the hyperplane orthogonal to $e_1$. The reflection it supplies generates the Weyl group $W(A_1)=\mathbb{Z}/2$ on a one-dimensional Clifford subspace.
+**Remark (one generator).** At one generator the mechanism is visible. On the Clifford vector subspace $\mathrm{Vect}(\mathbb{B})=\mathbb{R}\{e_1,e_2,e_3\}$ the map $\rho_{e_1}$ acts as $-1$ on the line $\mathbb{R}e_1$ and as the identity on the orthogonal complement, so it is the reflection in the hyperplane orthogonal to $e_1$, and it generates the Weyl group $W(A_1)=\mathbb{Z}/2$ on that three-dimensional space.
 
 ## The McKay Correspondence
 
@@ -86,9 +67,9 @@ This is the **McKay correspondence**, and its figure-theoretic content is that t
 
 ## Summary
 
-The unit quaternions form the sphere $Sp(1)=S^3$, whose centre is $\{\pm e_0\}$ and whose quotient $Sp(1)/\{\pm e_0\}\cong SO(3)$ is the rotation group of the Euclidean three-space; the cover is twofold, and the angle of the rotation is twice the angle of the quaternion. The finite subgroups of $Sp(1)$ are the twofold preimages of the finite rotation groups of the plane and the three Platonic figures: the cyclic groups, the binary dihedral groups, and the binary polyhedral groups $2T$, $2O$, $2I$ of orders $24$, $48$ and $120$.
+The unit quaternions form the sphere $Sp(1)=S^3$ with centre $\{\pm e_0\}$, and the quotient $Sp(1)/\{\pm e_0\}\cong SO(3)$ is the rotation group of Euclidean three-space; by the twofold cover of *Biquaternion Rotations and Lorentz Transformations*, a rotor $q=\cos\tfrac{\theta}{2}+\sin\tfrac{\theta}{2}\,\hat{n}$ acts as the rotation of angle $\theta$ about $\hat{n}$. The finite subgroups of $Sp(1)$ are the twofold preimages of the finite rotation groups of the plane and the three Platonic figures: the cyclic groups, the binary dihedral groups, and the binary polyhedral groups $2T$, $2O$, $2I$ of orders $24$, $48$ and $120$.
 
-The twenty-four Hurwitz units are the vertices of the regular $24$-cell in $\mathbb{H}_{\mathbb{B}}\cong\mathbb{R}^4$; its symmetry group is $F_4$ of order $1152$, containing the hyperoctahedral $B_4$ of order $384$, and both are strictly larger than the unit group $2T$. The units act on the algebra by the maps $\rho_v(x)=-vxv^{-1}$, of determinant $+1$, and the twenty-four units give twelve maps generating a group of order $24$. The five families of finite subgroups are the five families of simply laced Dynkin diagrams, the McKay correspondence.
+The twenty-four Hurwitz units are the vertices of the regular $24$-cell in $\mathbb{H}_{\mathbb{B}}\cong\mathbb{R}^4$; its symmetry group is $F_4$ of order $1152$, containing the hyperoctahedral $B_4$ of order $384$, and both are strictly larger than the unit group $2T$. The units act on the real slice by the rotations $\rho_v(x)=-vxv^{-1}$ of *Biquaternion Rotations and Lorentz Transformations*, of determinant $+1$, and the twenty-four units give twelve distinct maps generating a group of order $24$. The five families of finite subgroups are the five families of simply laced Dynkin diagrams, the McKay correspondence.
 
 Physically these are the discrete figures of the material sector: the spin point groups, the $24$-cell and its lattice symmetries, and the discrete rotations of the real slice.
 
@@ -96,7 +77,7 @@ Physically these are the discrete figures of the material sector: the spin point
 
 | Symbol | Meaning |
 |---|---|
-| $Sp(1)=S^3=\{N=1\}$ | Unit quaternions; compact, connected, simply connected; the unit sphere of the real slice |
+| $Sp(1)=S^3=\{N=1\}$ | Unit quaternions; the unit sphere of the real slice |
 | $\{\pm e_0\}$ | Centre of $Sp(1)$; kernel of the rotation quotient |
 | $Sp(1)/\{\pm e_0\}\cong SO(3)$ | Rotation quotient; the rotation group of the Euclidean three-space |
 | $T,O,I$ | Rotation groups of the tetrahedron, octahedron, icosahedron; orders $12,24,60$ |
