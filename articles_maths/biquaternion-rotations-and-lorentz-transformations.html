@@ -63,7 +63,7 @@
 $$</p>
 <p>the proper orthochronous Lorentz group, of real dimension $6$. Hence $\mathbb{B}^\times_1$ is a two-sheeted cover of $SO^+(1,3)$ and, being simply connected, is its universal cover: it is the spin group of Lorentzian signature,</p>
 <p>$$
-\mathbb{B}^\times_1 \cong \mathrm{Spin}(1,3), \qquad \mathrm{B}_0 \cong \mathrm{SO}(1,3).
+\mathbb{B}^\times_1 \cong \mathrm{Spin}(1,3), \qquad \mathrm{B}_0 \cong \mathrm{so}(1,3).
 $$</p>
 <p>The Lorentz action is rotor conjugation, $\tilde{Q} \mapsto \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^\dagger$ for $\tilde{\Lambda} \in \mathbb{B}^\times_1$, which preserves $\mathbb{M}_-$ and $N(\tilde{Q})$; its compact part is the rotation family and its non-compact part the hyperbolic rotations, with closed forms in <em>Biquaternion Elementary Functions</em>, §<em>The Exponential in the Two Real Directions</em>.</p>
 <h2 id="the-rotor-and-the-sandwich-action">The Rotor and the Sandwich Action</h2>
@@ -78,7 +78,7 @@ and on the imaginary part this is the rotation of $\mathbb{R}^3$ through the ang
 \mathrm{H}_{\tilde{Q}}:\ \mathbb{B}\longrightarrow\mathbb{B},\qquad \mathrm{H}_{\tilde{Q}}(x)=\tilde{Q}\,x\,\tilde{Q}^{\dagger},
 $$</p>
 <p>the <strong>dagger sandwich</strong>. Its carrier is the algebra as a real vector space of dimension eight, with basis $e_0,e_1,e_2,e_3,ie_0,ie_1,ie_2,ie_3$; its group is the group of units; and it satisfies $\mathrm{H}_{\tilde{Q}\tilde{R}}=\mathrm{H}_{\tilde{Q}}\circ\mathrm{H}_{\tilde{R}}$ and $\mathrm{H}_{z\tilde{Q}}=\lvert z\rvert^{2}\mathrm{H}_{\tilde{Q}}$ for a central $z$, so that a central phase does not change the operator.</p>
-<p><strong>Why the dagger.</strong> The involution $\dagger$ splits the algebra into the Hermitian sector $\mathbb{M}_+$ and the anti-Hermitian sector $\mathbb{M}_-$. Among the two-sided maps $x\mapsto AxB$ with $A,B$ invertible, those that carry the fixed space of $\dagger$ into itself are exactly those with $B=\lambda A^{\dagger}$ for a real $\lambda$, and the dagger sandwich is the normalised case $\lambda=1$. A sandwich built from the inverse instead carries $\mathbb{M}_+$ into the fixed space of the conjugated involution $\tilde{Q}\,\dagger\,\tilde{Q}^{-1}$, which is a different involution unless $\tilde{Q}$ is unitary. Since the halves and the sectors are the fixed spaces of the involutions, the subspaces a sandwich preserves are the ones its own involution defines.</p>
+<p><strong>Why the dagger.</strong> The involution $\dagger$ splits the algebra into the Hermitian sector $\mathbb{M}_+$ and the anti-Hermitian sector $\mathbb{M}_-$. Among the two-sided maps $x\mapsto AxB$ with $A,B$ invertible, those that carry the fixed space of $\dagger$ into itself are exactly those with $B=\lambda A^{\dagger}$ for a real $\lambda$, and the dagger sandwich is the normalised case $\lambda=1$. A sandwich built from the inverse instead carries $\mathbb{M}_+$ into a different fixed space: the automorphism $x\mapsto\tilde{Q}x\tilde{Q}^{-1}$ preserves the fixed spaces of the involution $\dagger$ conjugated by the image of the identity, $z\mapsto\tilde{Q}\tilde{Q}^{\dagger}z^{\dagger}(\tilde{Q}\tilde{Q}^{\dagger})^{-1}$, which is a different involution as soon as $\tilde{Q}$ is not unitary. Since the halves and the sectors are the fixed spaces of the involutions, the subspaces a sandwich preserves are the ones its own involution defines.</p>
 <p><strong>Theorem (the two sectors are preserved).</strong> For every unit $\tilde{Q}$, the sandwich maps $\mathbb{M}_+$ to $\mathbb{M}_+$ and $\mathbb{M}_-$ to $\mathbb{M}_-$.</p>
 <p><strong>Proof.</strong> Let $x\in\mathbb{M}_+$, so that $x^{\dagger}=x$. Then</p>
 <p>$$
@@ -183,7 +183,7 @@ $$</p>
 $$</p>
 <p>of real dimension three; with the dilations admitted they form $\mathbb{R}_{>0}\times SO(3)$, of real dimension four. The rotation group sits inside the six-dimensional operator group as the rotations sit inside the Lorentz group, and the remaining three dimensions are the boosts, which move the centre, the vector subspace and the two halves.</p>
 <h2 id="orbits-the-invariants-and-the-infinitesimal-operator">Orbits, the Invariants and the Infinitesimal Operator</h2>
-<p>The sandwich preserves the rank of the matrix image $\Phi(x)$ (<em>Biquaternion 2×2 Matrix Representation</em>) and scales the biquaternion norm by $\lvert N(\tilde{Q})\rvert^{2}$, the scaling being one on the unit-norm slice. The rank is unchanged because a congruence by an invertible matrix does not change it, and the biquaternion norm is the determinant. The two invariants cut the algebra as follows.</p>
+<p>The sandwich preserves the rank of the matrix image $\Phi(x)$ (<em>Biquaternion 2×2 Matrix Element Representation</em>) and scales the biquaternion norm by $\lvert N(\tilde{Q})\rvert^{2}$, the scaling being one on the unit-norm slice. The rank is unchanged because a congruence by an invertible matrix does not change it, and the biquaternion norm is the determinant. The two invariants cut the algebra as follows.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -338,6 +338,8 @@ on the algebra. The one-sided action is its diagonal restriction, and the Lorent
 <li>J. P. Ward, <em>Quaternions and Cayley Numbers: Algebra and Applications</em> (Kluwer, Dordrecht, 1997).</li>
 <li>S. J. Sangwine, T. A. Ell, and N. Le Bihan, "Fundamental representations and algebraic properties of biquaternions or complexified quaternions", <em>Advances in Applied Clifford Algebras</em> <strong>21</strong> (2011) 607–636.</li>
 </ul>
+<h2 id="correction-2026-09-27-the-conjugated-involution">CORRECTION (2026-09-27): the conjugated involution</h2>
+<p>The article said the inverse sandwich carries $\mathbb{M}_+$ into the fixed space of "$\tilde{Q}\,\dagger\,\tilde{Q}^{-1}$", which is not a well-defined involution. The conjugation element is the image of the identity: $x\mapsto\tilde{Q}x\tilde{Q}^{-1}$ preserves the fixed spaces of $z\mapsto\tilde{Q}\tilde{Q}^{\dagger}z^{\dagger}(\tilde{Q}\tilde{Q}^{\dagger})^{-1}$. Verified numerically on random Hermitian $x$ with $\tilde{Q}$ a random unit. Found while writing the four physics operator twins; the same slip occurred in <em>Biquaternion Operator Representation Theory</em> and in the $4\times4$ operator twin, and is corrected in both.</p>
       </div>
     </main>
   </div>

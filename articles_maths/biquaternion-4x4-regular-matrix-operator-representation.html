@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biquaternion 4×4 Regular Matrix Operator Representation — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="biquaternion-44-regular-matrix-operator-representation"><strong>Biquaternion 4×4 Regular Matrix Operator Representation</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The biquaternion algebra $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ is the four-dimensional complex algebra with basis $e_0 = 1, e_1, e_2, e_3$, where $e_k^2 = -e_0$ and $e_j e_k = -e_k e_j$ for $j \neq k$, with central scalar imaginary $i$, and with general element $\tilde{Q} = \sum_{\mu=0}^{3} Q_\mu e_\mu$. The left and right regular representations $\rho_L, \rho_R$ of $\mathbb{B}$ on itself, in the coefficient basis $e_0, e_1, e_2, e_3$, are those of <em>Biquaternion 4×4 Regular Matrix Element Representation</em>.</p>
+<p>That article writes an element as an operator by <em>one</em> of its two multiplications, and finds the matrix of left multiplication, $\rho_L(\tilde{Q})(\tilde{R}) = \tilde{Q}\tilde{R}$, with $\det\rho_L(\tilde{Q}) = N(\tilde{Q})^{2}$ and $\operatorname{Tr}\rho_L(\tilde{Q}) = 4Q_0$. This article writes the Hermitian sandwich of <em>Biquaternion Operator Representation Theory</em> in the same basis,</p>
+<p>$$
+\mathrm{H}_{\tilde{Q}}(x) = \tilde{Q}\,x\,\tilde{Q}^{\dagger},
+$$</p>
+<p>and the first result is that the sandwich needs <strong>both</strong> multiplications at once: it is the left multiplication by $\tilde{Q}$ composed with the right multiplication by $\tilde{Q}^{\dagger}$. The operator is therefore a product of two matrices already in the corpus, and everything about it — the closed form, the determinant, the trace, the spectrum, the rank — is read from that product.</p>
+<p>The article owns the composition identity, the closed form of the operator matrix in the coefficient basis, the spectrum $\lambda_i\bar{\lambda}_j$ with the determinant $\lvert N(\tilde{Q})\rvert^{4}$ and the trace $4\lvert Q_0\rvert^{2}$ read off it, the real $8 \times 8$ form, and the separation of the two regimes at matrix level. The component computation of the same operator is <em>Biquaternion Four-Vector Operator Representation</em>; the congruence picture in the matrix algebra and the module side belong to other coordinate systems and are not repeated here. The spectral theory of the <em>element</em> matrix $\rho_L(\tilde{Q})$ — eigenvalues, Cayley–Hamilton, eigenspaces — is <em>Biquaternion Spectral Theory</em> and is not repeated here, although the operator's spectrum is stated below because it is a different matrix.</p>
+<p><strong>Conventions.</strong> The regular matrices in the basis $e_0, e_1, e_2, e_3$ are</p>
+<p>$$
+\rho_L(\tilde{Q}) = \begin{pmatrix}
+Q_0 & -Q_1 & -Q_2 & -Q_3 \\
+Q_1 & Q_0 & -Q_3 & Q_2 \\
+Q_2 & Q_3 & Q_0 & -Q_1 \\
+Q_3 & -Q_2 & Q_1 & Q_0
+\end{pmatrix}, \qquad
+\rho_R(\tilde{Q})(\tilde{R}) = \tilde{R}\tilde{Q},
+$$</p>
+<p>with $\rho_R(\tilde{Q}) = D\rho_L(\tilde{Q})^{\mathsf T}D$ and $D = \operatorname{diag}(-1,1,1,1)$. Indices are lowered here, as in the element article, and only the coefficient basis is used.</p>
+<h2 id="the-operator-is-a-product-of-the-two-regular-matrices">The Operator Is a Product of the Two Regular Matrices</h2>
+<p><strong>Theorem (composition identity).</strong> For every $\tilde{Q}$,</p>
+<p>$$
+\mathrm{H}_{\tilde{Q}} = \rho_L(\tilde{Q}) \circ \rho_R(\tilde{Q}^{\dagger}) = \rho_L(\tilde{Q})\,\rho_R(\tilde{Q}^{\dagger}) ,
+$$</p>
+<p>the product of the left regular matrix of the operand and the right regular matrix of its Hermitian conjugate.</p>
+<p><strong>Proof.</strong> For every $x$, $\bigl(\rho_L(\tilde{Q}) \circ \rho_R(\tilde{Q}^{\dagger})\bigr)(x) = \rho_L(\tilde{Q})\bigl(x\tilde{Q}^{\dagger}\bigr) = \tilde{Q}\bigl(x\tilde{Q}^{\dagger}\bigr) = \tilde{Q}x\tilde{Q}^{\dagger} = \mathrm{H}_{\tilde{Q}}(x)$, the middle step being the definition of the two regular maps and the last the associativity of multiplication. $\square$</p>
+<p>Two readings of the identity follow, and they explain the whole structure of the operator.</p>
+<p><strong>The operator is a congruence, not a similarity.</strong> If the two factors were $\tilde{Q}$ and $\tilde{Q}^{-1}$ the product would be the conjugation of the regular representation, of determinant $1$ and spectrum invariant under conjugation. With $\tilde{Q}^{\dagger}$ in place of the inverse the product is a congruence: it preserves rank and it scales the determinant, and it preserves the spectrum only on the unitary slice. This is the matrix-level reason for the failure of multiplicativity recorded in <em>Biquaternion Operator Representation Theory</em>.</p>
+<p><strong>The two multiplications commute, and the dagger is not the inverse.</strong> Left and right multiplications by fixed elements commute, so the order of the two factors is immaterial and the operator is also the product $\rho_R(\tilde{Q}^{\dagger})\rho_L(\tilde{Q})$. What matters is the pairing. The one-sided products $\rho_L(\tilde{Q})\rho_L(\tilde{Q}^{\dagger})$, the operator $x \mapsto \tilde{Q}\tilde{Q}^{\dagger}x$, and $\rho_R(\tilde{Q})\rho_R(\tilde{Q}^{\dagger})$, the operator $x \mapsto x\tilde{Q}\tilde{Q}^{\dagger}$, are different from the sandwich unless $\tilde{Q}\tilde{Q}^{\dagger}$ is central, that is, unless the operand is a central multiple of a real quaternion. And with $\tilde{Q}^{-1}$ in place of $\tilde{Q}^{\dagger}$ the product is the inner automorphism $x \mapsto \tilde{Q}x\tilde{Q}^{-1}$, of determinant one. The sandwich is the congruence-shaped pairing of a left multiplication with the right multiplication by the dagger, and that is what makes its invariants real.</p>
+<p><strong>Lemma (the regular matrix respects the dagger).</strong> For every $\tilde{Q}$,</p>
+<p>$$
+\rho_L(\tilde{Q}^{\dagger}) = \rho_L(\tilde{Q})^{\dagger},
+$$</p>
+<p>the conjugate transpose of the regular matrix.</p>
+<p><strong>Proof.</strong> Both sides are conjugate-linear in $\tilde{Q}$, so it suffices to check the eight real basis elements. On $e_0$ both sides are $I$; on $ie_0$ both are $-iI$; on $e_k$ the left side is $-\rho_L(e_k)$, whose columns are the products $-e_ke_j$, and the right side is $\rho_L(e_k)^{\dagger} = \rho_L(e_k)^{\mathsf T} = -\rho_L(e_k)$, since left multiplication by a vector unit is skew-symmetric, as the products $e_ke_j$ read off the columns show; on $ie_k$ both sides are $i\rho_L(e_k)$, the transpose identity being applied once more. $\square$</p>
+<p><strong>Corollary (closed form on the coefficient space).</strong> Using $\rho_R(\tilde{Q}^{\dagger}) = D\rho_L(\tilde{Q}^{\dagger})^{\mathsf T}D$ and the lemma,</p>
+<p>$$
+\mathrm{H}_{\tilde{Q}} = \rho_L(\tilde{Q})\,D\,\rho_L(\tilde{Q})^{*}\,D ,
+$$</p>
+<p>the transpose of the lemma turning the dagger into the entrywise complex conjugate. Every entry of the matrix $\mathrm{H}_{\tilde{Q}}$ is a sesquilinear expression in the four coefficients of $\tilde{Q}$: linear in $Q_\mu$ and linear in $\overline{Q_\nu}$. The operator is therefore <strong>quadratic in the operand</strong> and <strong>linear in the argument</strong>, as the component computation of <em>Biquaternion Four-Vector Operator Representation</em> shows in the four-vector realization.</p>
+<h2 id="the-determinant-and-the-trace">The Determinant and the Trace</h2>
+<p><strong>Theorem (the spectrum of the operator).</strong> Suppose $\Phi(\tilde{Q})$ is diagonalisable, with eigenvalues $\lambda_1, \lambda_2$. Then $\mathrm{H}_{\tilde{Q}}$ is diagonalisable and its four eigenvalues are</p>
+<p>$$
+\lambda_1\bar{\lambda}_1,\quad \lambda_1\bar{\lambda}_2,\quad \lambda_2\bar{\lambda}_1,\quad \lambda_2\bar{\lambda}_2 .
+$$</p>
+<p>Consequently</p>
+<p>$$
+\operatorname{Tr}\mathrm{H}_{\tilde{Q}} = 4\lvert Q_0\rvert^{2}, \qquad
+\det\mathrm{H}_{\tilde{Q}} = \lvert N(\tilde{Q})\rvert^{4} .
+$$</p>
+<p><strong>Proof.</strong> Let $\Phi(\tilde{Q}) = P\,\mathrm{diag}(\lambda_1,\lambda_2)\,P^{-1}$. On the matrix side the operator is $X \mapsto \Phi(\tilde{Q})X\Phi(\tilde{Q})^{\dagger}$, and in the transformed variable $Y = P^{-1}X(P^{-1})^{\dagger}$ it acts as $Y \mapsto \mathrm{diag}(\lambda_1,\lambda_2)\,Y\,\mathrm{diag}(\bar{\lambda}_1,\bar{\lambda}_2)$, which multiplies the matrix unit $E_{ij}$ by $\lambda_i\bar{\lambda}_j$. The four matrix units are therefore eigenvectors. For the trace, $\sum_{ij}\lambda_i\bar{\lambda}_j = \bigl(\textstyle\sum_i\lambda_i\bigr)\bigl(\textstyle\sum_j\bar{\lambda}_j\bigr) = \lvert\lambda_1+\lambda_2\rvert^{2} = \lvert\operatorname{Tr}\Phi(\tilde{Q})\rvert^{2} = \lvert 2Q_0\rvert^{2}$, and $\operatorname{Tr}\Phi(\tilde{Q}) = 2Q_0$ is the trace statement of <em>Biquaternion 2×2 Matrix Element Representation</em>. For the determinant, the four eigenvalues multiply to $\lvert\lambda_1\rvert^{2}\lvert\lambda_2\rvert^{2}\lvert\lambda_1\bar{\lambda}_2\rvert^{2}$, which simplifies to $\lvert\lambda_1\lambda_2\rvert^{4} = \lvert N(\tilde{Q})\rvert^{4}$; the identification $\lambda_1\lambda_2 = \det\Phi(\tilde{Q}) = N(\tilde{Q})$ is the determinant statement of the same article. $\square$</p>
+<p>The two invariants are <strong>real and non-negative for every operand</strong>, and they are not the invariants of the element matrix: the element $\rho_L(\tilde{Q})$ has determinant $N(\tilde{Q})^{2}$, which is complex, and trace $4Q_0$, which is complex. The operator has thrown away the phase, exactly as the kernel of <em>Biquaternion Operator Representation Theory</em> requires, and what remains is a modulus.</p>
+<p><strong>Corollary (the operator is invertible exactly off the cone).</strong> $\mathrm{H}_{\tilde{Q}}$ is invertible if and only if $N(\tilde{Q}) \neq 0$, and $\lvert\det\mathrm{H}_{\tilde{Q}}\rvert^{1/4} = \lvert N(\tilde{Q})\rvert$.</p>
+<h2 id="the-case-math87">The Case $N(\tilde{Q}) \neq 0$</h2>
+<p>Off the null cone the two theorems above give a complete picture.</p>
+<p><strong>Theorem (the invertible case).</strong> Let $N(\tilde{Q}) \neq 0$. Then $\operatorname{rank}\mathrm{H}_{\tilde{Q}} = 4$, the operator lies in $GL(4,\mathbb{C})$, it preserves the rank of every argument, and in the coefficient basis it is a congruence by the invertible matrix $\rho_L(\tilde{Q})$. In the notation of the two regular maps,</p>
+<p>$$
+\mathrm{H}_{\tilde{Q}} \in \rho_L(\mathbb{B})\cdot\rho_R(\mathbb{B}) ,
+$$</p>
+<p>a product of one left and one right multiplication, both invertible.</p>
+<p><strong>Proof.</strong> The rank statement is <em>Biquaternion Operator Representation Theory</em>; the invertibility is $\det\mathrm{H}_{\tilde{Q}} = \lvert N(\tilde{Q})\rvert^{4} \neq 0$; the preservation of rank is the elementary fact that a congruence by an invertible matrix has the same rank as its argument, and the invertibility of each factor follows from $\det\rho_L(\tilde{Q}) = N(\tilde{Q})^{2} \neq 0$ and $\det\rho_R(\tilde{Q}^{\dagger}) = N(\tilde{Q}^{\dagger})^{2} = \overline{N(\tilde{Q})}^{2} \neq 0$. $\square$</p>
+<p><strong>Example.</strong> For $\tilde{Q} = e_0 + e_1$ one has $N = 2$ and</p>
+<p>$$
+\mathrm{H}_{\tilde{Q}} = \begin{pmatrix}
+2 & 0 & 0 & 0 \\
+0 & 2 & 0 & 0 \\
+0 & 0 & 0 & -2 \\
+0 & 0 & 2 & 0
+\end{pmatrix},
+\qquad \operatorname{Tr} = 4 = 4\lvert 1\rvert^{2}, \qquad \det = 16 = \lvert 2\rvert^{4} = N^{4}.
+$$</p>
+<p>The trace and the determinant are real, in agreement with the theorem; the matrix itself is not Hermitian, and its eigenvalues are $\{2, 2, 2i, -2i\}$, which are the four products $\lambda_i\bar{\lambda}_j$ of the eigenvalues $\lambda = 1 \pm i$ of $\Phi(e_0+e_1)$: $(1+i)(1-i) = 2$ twice, and $(1\pm i)^2 = \pm 2i$.</p>
+<p><strong>The operator group.</strong> Restricted to the unit-norm slice, the set of operators is the image of $SL(2,\mathbb{C})$ and is the Lorentz group with kernel $\{\pm e_0\}$; over all units it is the set of dilated Lorentz transformations $\mathbb{R}_{>0} \times SO^{+}(1,3)$, and it has lost the phase circle. The geometric statement, the action on the six subspaces and the orbits are <em>Biquaternion Rotations and Lorentz Transformations</em>.</p>
+<h2 id="the-case-math109">The Case $N(\tilde{Q}) = 0$</h2>
+<p>On the cone the two factors of the product are singular, and the operator collapses.</p>
+<p><strong>Theorem (the singular case).</strong> Let $N(\tilde{Q}) = 0$ and $\tilde{Q} \neq 0$. Then $\operatorname{rank}\mathrm{H}_{\tilde{Q}} = 1$, and</p>
+<p>$$
+\mathrm{H}_{\tilde{Q}} \circ \mathrm{H}_{\tilde{Q}} = 4\lvert Q_0\rvert^{2}\,\mathrm{H}_{\tilde{Q}} .
+$$</p>
+<p>The image is the single complex line spanned by the Hermitian element $\tilde{Q}\tilde{Q}^{\dagger}$, and its generator, normalised, is a minimal idempotent of $\mathbb{B}$. If $Q_0 = 0$ the operator is nilpotent, $\mathrm{H}_{\tilde{Q}}\circ\mathrm{H}_{\tilde{Q}} = 0$, so all four eigenvalues vanish; if $Q_0 \neq 0$ the operator has the single nonzero eigenvalue $4\lvert Q_0\rvert^{2}$ and is a scaled projection.</p>
+<p><strong>Proof.</strong> The rank and the square are <em>Biquaternion Operator Representation Theory</em>. For the eigenvalues: with $\operatorname{rank}\mathrm{H}_{\tilde{Q}} = 1$ the operator is, after a change of basis, a single nonzero entry, hence its eigenvalues are $4\lvert Q_0\rvert^{2}$ once and $0$ three times, the trace being additive. When $Q_0 = 0$ the trace vanishes and one eigenvalue of a rank-one operator is zero, so the operator is nilpotent. $\square$</p>
+<p><strong>Example (nilpotent).</strong> For $\tilde{Q} = e_1 + ie_2$, a null operand with $Q_0 = 0$,</p>
+<p>$$
+\mathrm{H}_{\tilde{Q}} = \begin{pmatrix}
+2 & 0 & 0 & 2i \\
+0 & 0 & 0 & 0 \\
+0 & 0 & 0 & 0 \\
+2i & 0 & 0 & -2
+\end{pmatrix}, \qquad \operatorname{rank} = 1, \qquad \operatorname{Tr} = 0, \qquad \det = 0 .
+$$</p>
+<p>The two middle columns vanish and the first and fourth are $\pm 2(e_0 + ie_3)$: the image is the line $\mathbb{C}\tilde\Pi_1$ with $\tilde\Pi_1 = \tfrac12(e_0+ie_3)$, and the matrix squares to zero. The four eigenvalues are all zero although the rank is one, which is the sharp statement that a null operator is not diagonalisable: the collapse is not a change of eigenvalue but a loss of rank.</p>
+<p><strong>Example (projection).</strong> For $\tilde{Q} = \tfrac12(e_0 - ie_3) = \tilde\Pi_2$, a null operand with $Q_0 = \tfrac12$,</p>
+<p>$$
+\mathrm{H}_{\tilde{Q}} = \begin{pmatrix}
+\tfrac12 & 0 & 0 & \tfrac{i}{2} \\
+0 & 0 & 0 & 0 \\
+0 & 0 & 0 & 0 \\
+-\tfrac{i}{2} & 0 & 0 & \tfrac12
+\end{pmatrix}, \qquad \operatorname{rank} = 1, \qquad \operatorname{Tr} = 1, \qquad \det = 0 .
+$$</p>
+<p>The first column is $\tilde\Pi_2$ and the fourth is $i\tilde\Pi_2$; the single nonzero eigenvalue of the operator is $1 = 4\lvert\tfrac12\rvert^{2}$, so the operator is exactly the projection onto its own image line.</p>
+<p>The contrast between the two examples is the whole content of the two regimes at matrix level: both operators have rank one and determinant zero, both send the whole coefficient space onto one line, and they are separated by the single real number $\operatorname{Tr}\mathrm{H}_{\tilde{Q}} = 4\lvert Q_0\rvert^{2}$, which vanishes exactly when the collapse is nilpotent. In the invertible case the determinant is $\lvert N(\tilde{Q})\rvert^{4} \neq 0$ and no collapse occurs at all.</p>
+<h2 id="the-real-math139-form">The Real $8 \times 8$ Form</h2>
+<p>Regarded over $\mathbb{R}$ in the basis $e_0, e_1, e_2, e_3, ie_0, ie_1, ie_2, ie_3$, the operator is real-linear and is an $8 \times 8$ real matrix; the element article performs the same realification for $\rho_L$.</p>
+<p><strong>Proposition (the realified operator).</strong> The realification of $\mathrm{H}_{\tilde{Q}}$ satisfies</p>
+<p>$$
+\det_{\mathbb{R}}\bigl(\mathrm{H}_{\tilde{Q}}\bigr) = \lvert N(\tilde{Q})\rvert^{8}, \qquad
+\operatorname{Tr}_{\mathbb{R}}\bigl(\mathrm{H}_{\tilde{Q}}\bigr) = 8\lvert Q_0\rvert^{2} .
+$$</p>
+<p><strong>Proof.</strong> Realification replaces each complex eigenvalue $\lambda$ of a complex-linear endomorphism by the pair $\lambda, \bar{\lambda}$; the four eigenvalues $\lambda_i\bar{\lambda}_j$ have modulus $\lvert\lambda_i\rvert\lvert\lambda_j\rvert$, each of which is already real, so the eigenvalues occur in conjugate pairs of equal modulus and the real determinant is the square of the complex one, $\lvert N(\tilde{Q})\rvert^{8}$. The real trace is twice the real part of the complex trace, and $\operatorname{Tr}\mathrm{H}_{\tilde{Q}} = 4\lvert Q_0\rvert^{2}$ is real, hence $8\lvert Q_0\rvert^{2}$. $\square$</p>
+<p>The dimension doubles for the same reason as in the element article: $\mathbb{B}$ is a complex space regarded as a real one by restriction of scalars, and each complex coordinate becomes two real ones. The doubling changes the exponents — $4 \to 8$ on the determinant, the factor $2$ on the trace — and nothing else.</p>
+<h2 id="summary">Summary</h2>
+<p>The sandwich of an element is a product of the two regular maps: $\mathrm{H}_{\tilde{Q}} = \rho_L(\tilde{Q}) \circ \rho_R(\tilde{Q}^{\dagger})$, the left multiplication by the operand composed with the right multiplication by its Hermitian conjugate, which in the coefficient basis is the matrix $\rho_L(\tilde{Q})\,D\,\rho_L(\tilde{Q})^{*}\,D$ with $D = \operatorname{diag}(-1,1,1,1)$, the transpose of the dagger-respecting lemma turning the dagger into the entrywise complex conjugate. Every entry is sesquilinear in the coefficients, so the operator is quadratic in the operand and linear in the argument. It is a congruence and not a similarity, which is the matrix-level reason it is not multiplicative.</p>
+<p>Its invariants are real and non-negative in every case. When $\Phi(\tilde{Q})$ is diagonalisable with eigenvalues $\lambda_1, \lambda_2$, the operator is diagonalisable with eigenvalues the four products $\lambda_i\bar{\lambda}_j$; hence $\operatorname{Tr}\mathrm{H}_{\tilde{Q}} = \lvert\lambda_1+\lambda_2\rvert^{2} = 4\lvert Q_0\rvert^{2}$ and $\det\mathrm{H}_{\tilde{Q}} = \lvert\lambda_1\lambda_2\rvert^{4} = \lvert N(\tilde{Q})\rvert^{4}$. Over $\mathbb{R}$ the operator is $8 \times 8$ with determinant $\lvert N(\tilde{Q})\rvert^{8}$ and trace $8\lvert Q_0\rvert^{2}$.</p>
+<p>The two regimes are separated by the vanishing of those invariants. Off the cone the determinant is nonzero, the operator lies in $GL(4,\mathbb{C})$, it is the product of two invertible regular matrices, and it preserves rank; on the unit-norm slice it is the Lorentz group. On the cone the operator has rank one, its image is the line of the Hermitian element $\tilde{Q}\tilde{Q}^{\dagger}$, whose normalisation is a minimal idempotent, and it satisfies $\mathrm{H}_{\tilde{Q}}\circ\mathrm{H}_{\tilde{Q}} = 4\lvert Q_0\rvert^{2}\mathrm{H}_{\tilde{Q}}$. The single number $\operatorname{Tr}\mathrm{H}_{\tilde{Q}} = 4\lvert Q_0\rvert^{2}$ then separates the two faces of the collapse: it vanishes for $\tilde{Q} = e_1+ie_2$, where all four eigenvalues are zero and the operator is nilpotent, and equals $1$ for $\tilde{Q} = \tfrac12(e_0-ie_3)$, where the operator is the projection onto the idempotent that generates its image.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\rho_L(\tilde{Q}), \rho_R(\tilde{Q})$</td>
+<td>left and right regular matrices in the basis $e_0,e_1,e_2,e_3$</td>
+</tr>
+<tr>
+<td>$D = \operatorname{diag}(-1,1,1,1)$</td>
+<td>fixed sign matrix, $\rho_R(\tilde{Q}) = D\rho_L(\tilde{Q})^{\mathsf T}D$</td>
+</tr>
+<tr>
+<td>$\rho_L(\tilde{Q}^{\dagger}) = \rho_L(\tilde{Q})^{\dagger}$</td>
+<td>the regular matrix respects the dagger</td>
+</tr>
+<tr>
+<td>$\mathrm{H}_{\tilde{Q}}(x) = \tilde{Q}x\tilde{Q}^{\dagger}$</td>
+<td>the Hermitian sandwich, the operator of the operand</td>
+</tr>
+<tr>
+<td>$\mathrm{H}_{\tilde{Q}} = \rho_L(\tilde{Q})\rho_R(\tilde{Q}^{\dagger})$</td>
+<td>the operator as a product of the two regular maps</td>
+</tr>
+<tr>
+<td>$\mathrm{H}_{\tilde{Q}} = \rho_L(\tilde{Q})D\rho_L(\tilde{Q})^{*}D$</td>
+<td>closed form in the coefficient basis</td>
+</tr>
+<tr>
+<td>$\lambda_1,\lambda_2$</td>
+<td>eigenvalues of $\Phi(\tilde{Q})$</td>
+</tr>
+<tr>
+<td>$\lambda_i\bar{\lambda}_j$</td>
+<td>eigenvalues of $\mathrm{H}_{\tilde{Q}}$ when $\Phi(\tilde{Q})$ is diagonalisable</td>
+</tr>
+<tr>
+<td>$\operatorname{Tr}\mathrm{H}_{\tilde{Q}} = 4\lvert Q_0\rvert^{2} = \lvert\operatorname{Tr}\Phi(\tilde{Q})\rvert^{2}$</td>
+<td>trace of the operator, always real</td>
+</tr>
+<tr>
+<td>$\det\mathrm{H}_{\tilde{Q}} = \lvert N(\tilde{Q})\rvert^{4}$</td>
+<td>determinant of the operator; nonzero exactly off the cone</td>
+</tr>
+<tr>
+<td>$\operatorname{rank}\mathrm{H}_{\tilde{Q}} = 4$ or $1$</td>
+<td>off the cone, and on it</td>
+</tr>
+<tr>
+<td>$\mathrm{H}_{\tilde{Q}}\circ\mathrm{H}_{\tilde{Q}} = 4\lvert Q_0\rvert^{2}\mathrm{H}_{\tilde{Q}}$, $N = 0$</td>
+<td>nilpotent if $Q_0 = 0$, projection up to scale otherwise</td>
+</tr>
+<tr>
+<td>$\det_{\mathbb{R}} = \lvert N\rvert^{8}$, $\operatorname{Tr}_{\mathbb{R}} = 8\lvert Q_0\rvert^{2}$</td>
+<td>the real $8\times8$ form</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Charles W. Curtis and Irving Reiner, <em>Representation Theory of Finite Groups and Associative Algebras</em> (Interscience, 1962), for the left and right regular representations and their relation.</li>
+<li>I. Martin Isaacs, <em>Algebra: A Graduate Course</em> (Brooks/Cole, 1994), for the regular module, the opposite algebra, and congruences in matrix algebras.</li>
+<li>Roger A. Horn and Charles R. Johnson, <em>Matrix Analysis</em> (Cambridge, 2nd ed. 2013), for congruence, rank preservation, realification, and the eigenvalue products of $X \mapsto MXM^{\dagger}$.</li>
+<li>Chris Doran and Anthony Lasenby, <em>Geometric Algebra for Physicists</em> (Cambridge, 2003), for the sandwich written with the two-sided multiplication of a rotor.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
