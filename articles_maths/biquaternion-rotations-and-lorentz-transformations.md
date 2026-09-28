@@ -21,7 +21,7 @@ $$
 the proper orthochronous Lorentz group, of real dimension $6$. Hence $\mathbb{B}^\times_1$ is a two-sheeted cover of $SO^+(1,3)$ and, being simply connected, is its universal cover: it is the spin group of Lorentzian signature,
 
 $$
-\mathbb{B}^\times_1 \cong \mathrm{Spin}(1,3), \qquad \mathrm{B}_0 \cong \mathrm{SO}(1,3).
+\mathbb{B}^\times_1 \cong \mathrm{Spin}(1,3), \qquad \mathrm{B}_0 \cong \mathrm{so}(1,3).
 $$
 
 The Lorentz action is rotor conjugation, $\tilde{Q} \mapsto \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^\dagger$ for $\tilde{\Lambda} \in \mathbb{B}^\times_1$, which preserves $\mathbb{M}_-$ and $N(\tilde{Q})$; its compact part is the rotation family and its non-compact part the hyperbolic rotations, with closed forms in *Biquaternion Elementary Functions*, §*The Exponential in the Two Real Directions*.
@@ -44,7 +44,7 @@ $$
 
 the **dagger sandwich**. Its carrier is the algebra as a real vector space of dimension eight, with basis $e_0,e_1,e_2,e_3,ie_0,ie_1,ie_2,ie_3$; its group is the group of units; and it satisfies $\mathrm{H}_{\tilde{Q}\tilde{R}}=\mathrm{H}_{\tilde{Q}}\circ\mathrm{H}_{\tilde{R}}$ and $\mathrm{H}_{z\tilde{Q}}=\lvert z\rvert^{2}\mathrm{H}_{\tilde{Q}}$ for a central $z$, so that a central phase does not change the operator.
 
-**Why the dagger.** The involution $\dagger$ splits the algebra into the Hermitian sector $\mathbb{M}_+$ and the anti-Hermitian sector $\mathbb{M}_-$. Among the two-sided maps $x\mapsto AxB$ with $A,B$ invertible, those that carry the fixed space of $\dagger$ into itself are exactly those with $B=\lambda A^{\dagger}$ for a real $\lambda$, and the dagger sandwich is the normalised case $\lambda=1$. A sandwich built from the inverse instead carries $\mathbb{M}_+$ into the fixed space of the conjugated involution $\tilde{Q}\,\dagger\,\tilde{Q}^{-1}$, which is a different involution unless $\tilde{Q}$ is unitary. Since the halves and the sectors are the fixed spaces of the involutions, the subspaces a sandwich preserves are the ones its own involution defines.
+**Why the dagger.** The involution $\dagger$ splits the algebra into the Hermitian sector $\mathbb{M}_+$ and the anti-Hermitian sector $\mathbb{M}_-$. Among the two-sided maps $x\mapsto AxB$ with $A,B$ invertible, those that carry the fixed space of $\dagger$ into itself are exactly those with $B=\lambda A^{\dagger}$ for a real $\lambda$, and the dagger sandwich is the normalised case $\lambda=1$. A sandwich built from the inverse instead carries $\mathbb{M}_+$ into a different fixed space: the automorphism $x\mapsto\tilde{Q}x\tilde{Q}^{-1}$ preserves the fixed spaces of the involution $\dagger$ conjugated by the image of the identity, $z\mapsto\tilde{Q}\tilde{Q}^{\dagger}z^{\dagger}(\tilde{Q}\tilde{Q}^{\dagger})^{-1}$, which is a different involution as soon as $\tilde{Q}$ is not unitary. Since the halves and the sectors are the fixed spaces of the involutions, the subspaces a sandwich preserves are the ones its own involution defines.
 
 **Theorem (the two sectors are preserved).** For every unit $\tilde{Q}$, the sandwich maps $\mathbb{M}_+$ to $\mathbb{M}_+$ and $\mathbb{M}_-$ to $\mathbb{M}_-$.
 
@@ -123,7 +123,7 @@ of real dimension three; with the dilations admitted they form $\mathbb{R}_{>0}\
 
 ## Orbits, the Invariants and the Infinitesimal Operator
 
-The sandwich preserves the rank of the matrix image $\Phi(x)$ (*Biquaternion 2×2 Matrix Representation*) and scales the biquaternion norm by $\lvert N(\tilde{Q})\rvert^{2}$, the scaling being one on the unit-norm slice. The rank is unchanged because a congruence by an invertible matrix does not change it, and the biquaternion norm is the determinant. The two invariants cut the algebra as follows.
+The sandwich preserves the rank of the matrix image $\Phi(x)$ (*Biquaternion 2×2 Matrix Element Representation*) and scales the biquaternion norm by $\lvert N(\tilde{Q})\rvert^{2}$, the scaling being one on the unit-norm slice. The rank is unchanged because a congruence by an invertible matrix does not change it, and the biquaternion norm is the determinant. The two invariants cut the algebra as follows.
 
 | invariant | value | meaning |
 |---|---|---|
@@ -215,3 +215,7 @@ The two-sided action $\tilde{Q}\mapsto u\tilde{Q}v$ with independent unit quater
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001).
 - J. P. Ward, *Quaternions and Cayley Numbers: Algebra and Applications* (Kluwer, Dordrecht, 1997).
 - S. J. Sangwine, T. A. Ell, and N. Le Bihan, "Fundamental representations and algebraic properties of biquaternions or complexified quaternions", *Advances in Applied Clifford Algebras* **21** (2011) 607–636.
+
+## CORRECTION (2026-09-27): the conjugated involution
+
+The article said the inverse sandwich carries $\mathbb{M}_+$ into the fixed space of "$\tilde{Q}\,\dagger\,\tilde{Q}^{-1}$", which is not a well-defined involution. The conjugation element is the image of the identity: $x\mapsto\tilde{Q}x\tilde{Q}^{-1}$ preserves the fixed spaces of $z\mapsto\tilde{Q}\tilde{Q}^{\dagger}z^{\dagger}(\tilde{Q}\tilde{Q}^{\dagger})^{-1}$. Verified numerically on random Hermitian $x$ with $\tilde{Q}$ a random unit. Found while writing the four physics operator twins; the same slip occurred in *Biquaternion Operator Representation Theory* and in the $4\times4$ operator twin, and is corrected in both.

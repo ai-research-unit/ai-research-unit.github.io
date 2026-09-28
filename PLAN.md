@@ -108,7 +108,7 @@ Then the agent writes the article .md file. Here are editorial preferences :
 
 He appends his ideas, suggestions, interesting observations, decisions and reasons, speculations, verified facts, ownership/boundary rules, standing weaknesses to the companion file .context, created next to the article .md file.
 
-During this phase, the agent does not modify any other file than the article and its companion file .context.
+During this phase, the agent does not modify any other file than the article, its companion file .context, and the menu if necessary.
 
 This requires judgment and organization.
 

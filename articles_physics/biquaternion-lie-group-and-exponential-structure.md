@@ -44,7 +44,7 @@ $S^3$ is the maximal compact subgroup of $\mathbb{B}^\times_1$, with Lie algebra
 
 ## The Unitary Subgroup and the Defining Module
 
-The algebra acts on the defining module $\mathbb{C}^2$ by the defining representation, in which a biquaternion acts as its $2\times2$ matrix $\Phi(\tilde{Q})$ (*The 2×2 Matrix Representation of Biquaternions*). The elements that preserve the standard Hermitian form of $\mathbb{C}^2$ are exactly those with $\tilde{Q}^{\dagger}\tilde{Q}=e_0$, and they form a compact subgroup of the group of units,
+The algebra acts on the defining module $\mathbb{C}^2$ by the defining representation, in which a biquaternion acts as its $2\times2$ matrix $\Phi(\tilde{Q})$ (*The 2×2 Matrix Element Representation of Biquaternions*). The elements that preserve the standard Hermitian form of $\mathbb{C}^2$ are exactly those with $\tilde{Q}^{\dagger}\tilde{Q}=e_0$, and they form a compact subgroup of the group of units,
 
 $$
 U(2)=\{\tilde{Q}\in\mathbb{B}^{\times}:\tilde{Q}^{\dagger}\tilde{Q}=e_0\},

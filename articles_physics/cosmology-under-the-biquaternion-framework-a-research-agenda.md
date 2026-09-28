@@ -272,7 +272,7 @@ The speculations are labelled as such. One sector sourcing the other at cosmolog
 - *The Local Complex Structure and the Speed of Light* and *Electromagnetism in Media — The Local Complex Structure at Work* — the local $c$ whose cosmological readings are examined here.
 - *Exercise: The Electromagnetic Energy–Momentum Tensor* and *The Field-Strength Biquaternion and Its Invariants* — the framework's rank-two constructions, relevant to the source-carrier item.
 - *Noether's Theorem in Biquaternionic Form* — the conservation-law machinery any cosmological source would need.
-- *Biquaternion Representation Theory* and *The Lorentz Group in Biquaternionic Form — Structure and Representations* — the $(1,1)\oplus(0,0)$ and $(\tfrac12,\tfrac12)$ bookkeeping behind the rank-two limitation.
+- *Biquaternion Element Representation Theory* and *The Lorentz Group in Biquaternionic Form — Structure and Representations* — the $(1,1)\oplus(0,0)$ and $(\tfrac12,\tfrac12)$ bookkeeping behind the rank-two limitation.
 - *The Conformal Group in Biquaternionic Form* — the conformal structures relevant to a radiation-dominated universe.
 - *The Empirical Status of the Biquaternion Framework* — the standing empirical-equivalence result, under which any biquaternionic cosmology would labour.
 - *Quantum Chromodynamics under the Biquaternion Framework — A Research Agenda* — the companion agenda whose three-way classification and fabricated-premise discipline this article follows.

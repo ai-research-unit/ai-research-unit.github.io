@@ -227,7 +227,7 @@ and it maps the scalar subspace to itself and the vector subspace to itself.
 
 **Proposition.** For $\tilde q\neq0$ each of the operators $L_q(x) = qx$, $\rho_q(x) = xq$, $\operatorname{Ad}_q$ and $S_q$ is invertible, with kernel $0$ and image $\mathbb{H}$; for $\tilde q = 0$ all four are the zero operator.
 
-**Proof.** The operators $L_q$ and $\rho_q$ of the regular representation are invertible exactly for a unit, as shown in *Quaternion 4x4 Regular Matrix Representation*; the adjoint action has inverse $\operatorname{Ad}_{\tilde q^{-1}}$, and the sandwich has inverse $N(\tilde q)^{-1}\operatorname{Ad}_{\tilde q^{-1}}$. At $\tilde q = 0$ every product with $\tilde q$ vanishes.
+**Proof.** The operators $L_q$ and $\rho_q$ of the regular representation are invertible exactly for a unit, as shown in *Quaternion 4x4 Regular Matrix Element Representation*; the adjoint action has inverse $\operatorname{Ad}_{\tilde q^{-1}}$, and the sandwich has inverse $N(\tilde q)^{-1}\operatorname{Ad}_{\tilde q^{-1}}$. At $\tilde q = 0$ every product with $\tilde q$ vanishes.
 
 **Proposition.** The fixed subspace of the adjoint action of a unit $\tilde q$ is its centraliser in $\mathbb{H}$: all of $\mathbb{H}$ when $\tilde q$ is real, and the two-dimensional subalgebra $F[\tilde q] = \{a+b\tilde q\}$ otherwise. On the vector subspace the fixed directions are the axis line $\mathbb{R}\mathbf{q}$.
 
@@ -235,7 +235,7 @@ and it maps the scalar subspace to itself and the vector subspace to itself.
 
 ### The Action on the Subspaces
 
-Left and right multiplication are the operators of the regular representation, treated in *Quaternion 4x4 Regular Matrix Representation*; the adjoint action and the sandwich are those of the preceding sections. Throughout, $L_q(x) = qx$ is the left multiplication operator and $\rho_q(x) = xq$ the right one — the operator the regular-representation article writes $R_q$, renamed here because that symbol is the matrix of the adjoint action on $\operatorname{Im}\mathbb{H}$.
+Left and right multiplication are the operators of the regular representation, treated in *Quaternion 4x4 Regular Matrix Element Representation*; the adjoint action and the sandwich are those of the preceding sections. Throughout, $L_q(x) = qx$ is the left multiplication operator and $\rho_q(x) = xq$ the right one — the operator the regular-representation article writes $R_q$, renamed here because that symbol is the matrix of the adjoint action on $\operatorname{Im}\mathbb{H}$.
 
 **Definition.** The **action table** of the operator representation records, for each operator, its effect on the scalar subspace $\mathbb{R}_{\mathbb{H}}$ and on the vector subspace $\operatorname{Im}\mathbb{H}$.
 
@@ -258,7 +258,7 @@ Left and right multiplication are the operators of the regular representation, t
 
 **Theorem.** Every non-zero quaternion has the polar form $\tilde q = |\tilde q|u$ with $u\in Sp(1)$, and the adjoint action depends only on the unit factor, $\operatorname{Ad}_q = \operatorname{Ad}_u$, while the sandwich carries the scale, $S_q = |\tilde q|^2\operatorname{Ad}_u$. The axis and angle of the rotation $\operatorname{Ad}_u$ are those of the polar form, $\mu = \mathbf{q}/|\mathbf{q}|$ and $\cos\frac{\theta}{2} = q_0/|\tilde q|$.
 
-**Proof.** The scale cancels in the adjoint action because $\tilde q$ and $\tilde q^{-1}$ contribute $|\tilde q|$ and $|\tilde q|^{-1}$, while the sandwich carries $N(\tilde q) = |\tilde q|^2$; the axis-angle identification is the polar form of *Quaternion Polar Representation*, where the half-angle is the angle of the unit factor.
+**Proof.** The scale cancels in the adjoint action because $\tilde q$ and $\tilde q^{-1}$ contribute $|\tilde q|$ and $|\tilde q|^{-1}$, while the sandwich carries $N(\tilde q) = |\tilde q|^2$; the axis-angle identification is the polar form of *Quaternion Polar Element Representation*, where the half-angle is the angle of the unit factor.
 
 The biquaternion reading is in *Biquaternion Rotations and Lorentz Transformations*: there the sandwich is taken with the Hermitian dagger, $x\mapsto \tilde Qx\tilde Q^\dagger$, and realises Lorentz transformations rather than rotations, an indefinite possibility closed here by the definiteness of the quaternion norm.
 

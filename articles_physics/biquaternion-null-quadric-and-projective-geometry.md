@@ -79,7 +79,7 @@ Its real points depend on the real form of *Biquaternion Norm and Invertibility*
 
 A line in $\mathbb{P}^3$ is $\mathbb{P}(U)$ for a two-dimensional subspace $U\subset\mathbb{C}^4$. With a basis $x,y$ of $U$, the **Plücker coordinates** are the six minors
 $$
-p_{ij}=x_iy_j-x_jy_i,\qquad 0\le i<j\le3,
+p_{ij}=x_iy_j-x_jy_i,\qquad 0\le i < j\le3,
 $$
 the coordinates of the decomposable bivector $x\wedge y\in\Lambda^2\mathbb{C}^4$, defined up to an overall scalar. This gives the **Plücker embedding**
 $$

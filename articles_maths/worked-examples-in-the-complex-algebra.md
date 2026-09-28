@@ -3,7 +3,7 @@
 
 ## Introduction
 
-This article is the computed companion to the structural articles of the complex algebra. Where *Complex Algebra* states the definitions and proves the general properties, and *Complex Subspaces*, *Complex Norm and Invertibility*, *Complex Polar Representation*, *Complex Regular Representation* and *Complex Automorphisms and Derivations* develop them, the present article exhibits every one of those structures on explicit elements, so that the general statements can be read against a concrete computation.
+This article is the computed companion to the structural articles of the complex algebra. Where *Complex Algebra* states the definitions and proves the general properties, and *Complex Subspaces*, *Complex Norm and Invertibility*, *Complex Polar Element Representation*, *Complex Regular Element Representation* and *Complex Automorphisms and Derivations* develop them, the present article exhibits every one of those structures on explicit elements, so that the general statements can be read against a concrete computation.
 
 The elements used throughout are
 
@@ -131,7 +131,7 @@ the Pythagorean instance of the definite decomposition; for $W$, $N(W_+) + N(W_-
 
 ## The Matrix Model, Worked
 
-Multiplication by an element is an $\mathbb{R}$-linear endomorphism of $\mathbb{C}$, and in the basis $1$, $i$ it is the Cayley matrix of *Complex Regular Representation*. The matrices of the two worked elements are
+Multiplication by an element is an $\mathbb{R}$-linear endomorphism of $\mathbb{C}$, and in the basis $1$, $i$ it is the Cayley matrix of *Complex Regular Element Representation*. The matrices of the two worked elements are
 
 $$
 \rho_L(Z) = \begin{pmatrix} 3 & -4 \\ 4 & 3 \end{pmatrix}, \qquad \rho_L(W) = \begin{pmatrix} 1 & 2 \\ -2 & 1 \end{pmatrix}.

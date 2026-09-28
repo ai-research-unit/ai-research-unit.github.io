@@ -11,7 +11,7 @@ $$
 \tilde q = 1 + 2e_1 - e_2 + 3e_3,
 $$
 
-with scalar part $q_0 = 1$ and vector part $\mathbf{q} = 2e_1 - e_2 + 3e_3$, chosen so that no coordinate vanishes and no two coordinates coincide. The general theory is from *Quaternion Algebra* (the basis, the multiplication and the three involutions), *Quaternion Norm and Invertibility* (the quaternion norm and the unit criterion), *Quaternion Rotations and Reflections* (the conjugation action and the covering of $SO(3)$), *Quaternion 2x2 Matrix Representation* and *Quaternion 4x4 Regular Matrix Representation* (the matrix images). A few examples with other elements are given where a single example would be misleading.
+with scalar part $q_0 = 1$ and vector part $\mathbf{q} = 2e_1 - e_2 + 3e_3$, chosen so that no coordinate vanishes and no two coordinates coincide. The general theory is from *Quaternion Algebra* (the basis, the multiplication and the three involutions), *Quaternion Norm and Invertibility* (the quaternion norm and the unit criterion), *Quaternion Rotations and Reflections* (the conjugation action and the covering of $SO(3)$), *Quaternion 2x2 Matrix Element Representation* and *Quaternion 4x4 Regular Matrix Element Representation* (the matrix images). A few examples with other elements are given where a single example would be misleading.
 
 Throughout, the basis is $e_0 = 1, e_1, e_2, e_3$ with
 
@@ -111,7 +111,7 @@ and it agrees with the general formula $R_q = \bigl(1-2(q_2^2+q_3^2),\,2(q_1q_2-
 
 ## The Matrix Images
 
-**The $2\times2$ complex image.** Under the isomorphism $\Phi$ of *Quaternion 2x2 Matrix Representation*, fixed by
+**The $2\times2$ complex image.** Under the isomorphism $\Phi$ of *Quaternion 2x2 Matrix Element Representation*, fixed by
 
 $$
 e_0\mapsto I, \qquad e_1\mapsto \begin{pmatrix} 0 & -i \\ -i & 0 \end{pmatrix}, \qquad e_2\mapsto \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}, \qquad e_3\mapsto \begin{pmatrix} -i & 0 \\ 0 & i \end{pmatrix},
@@ -125,7 +125,7 @@ $$
 
 Its trace is $2q_0 = 2$ and its determinant is $N(\tilde q) = 15$, in agreement with the general identities $\operatorname{tr}\Phi(\tilde Q) = 2Q_0$ and $\det\Phi(\tilde Q) = N(\tilde Q)$.
 
-**The $4\times4$ real image.** Under the left regular representation of *Quaternion 4x4 Regular Matrix Representation*, whose Cayley matrix has the four products $\tilde q e_k$ for columns, the worked element has image
+**The $4\times4$ real image.** Under the left regular representation of *Quaternion 4x4 Regular Matrix Element Representation*, whose Cayley matrix has the four products $\tilde q e_k$ for columns, the worked element has image
 
 $$
 L_q = \begin{pmatrix}

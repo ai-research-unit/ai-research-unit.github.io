@@ -157,7 +157,7 @@ which is continuous on $[0,1]\times\mathbb{D}^\times$, fixes $\mathbb{D}^{(\pm1)
 
 The null cone is the frontier of each of the four sign classes of $\mathbb{D}^\times$: every neighbourhood of a point of $\mathcal{N}$ meets exactly two of the four components, and $\mathcal{N}$ contains no point of any component, so the cone is a closed set of empty interior that separates them. In the idempotent coordinates a point approaches the cone exactly when one of its two coordinates tends to zero, and the two coordinates are the two independent real parameters of *Split-Complex Algebra*.
 
-The polar parametrisation of a unit, $Z=\rho u$ with modulus $\rho=\lvert N(Z)\rvert^{1/2}>0$ and direction $u=Z/\rho$ of unit modulus, is defined on $\mathbb{D}^\times$ and degenerates on $\mathcal{N}$: the modulus vanishes there and the direction is undefined. That parametrisation, its two regimes and the behaviour of its angle as the cone is approached are the subject of *Split-Complex Polar Representation*; the cone read geometrically, as a pair of asymptotic directions, is in *Hyperbolic Rotations*.
+The polar parametrisation of a unit, $Z=\rho u$ with modulus $\rho=\lvert N(Z)\rvert^{1/2}>0$ and direction $u=Z/\rho$ of unit modulus, is defined on $\mathbb{D}^\times$ and degenerates on $\mathcal{N}$: the modulus vanishes there and the direction is undefined. That parametrisation, its two regimes and the behaviour of its angle as the cone is approached are the subject of *Split-Complex Polar Element Representation*; the cone read geometrically, as a pair of asymptotic directions, is in *Hyperbolic Rotations*.
 
 ## Comparison with the Topology of the Biquaternion Algebra
 

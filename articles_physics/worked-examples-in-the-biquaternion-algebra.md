@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This article works the computations of the biquaternion algebra out on explicit elements. The aim is a reference of concrete facts: the multiplication table of the basis, the six distinguished subspaces exhibited on one element, the four conjugations applied to that element, and explicit zero-divisor pairs. The idempotents and the minimal left ideals are the general subject of *Biquaternion Idempotents and Projections*; here they are only exhibited. The physical reading is attached to each computation, so that the dictionary of *The Four-Vector Representation of Biquaternions* and of *Conventions in the Biquaternion Universe* can be checked arithmetically.
+This article works the computations of the biquaternion algebra out on explicit elements. The aim is a reference of concrete facts: the multiplication table of the basis, the six distinguished subspaces exhibited on one element, the four conjugations applied to that element, and explicit zero-divisor pairs. The idempotents and the minimal left ideals are the general subject of *Biquaternion Idempotents and Projections*; here they are only exhibited. The physical reading is attached to each computation, so that the dictionary of *The Four-Vector Element Representation of Biquaternions* and of *Conventions in the Biquaternion Universe* can be checked arithmetically.
 
 **Notation.** A biquaternion is written in developed form
 $$

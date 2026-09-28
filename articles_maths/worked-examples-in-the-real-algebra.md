@@ -15,7 +15,7 @@ chosen because their arithmetic is exact, because their squares are the small sq
 
 Every numerical value below is exact and rational; no decimal is used.
 
-Everything computed below is algebraic. The metrical reading of the algebra — the norm and the modulus of *Real Norm and Invertibility*, the sign decomposition of *Real Polar Representation*, and the Cayley matrix of *Real Regular Representation* — belongs to the later slots of the system and is not used here.
+Everything computed below is algebraic. The metrical reading of the algebra — the norm and the modulus of *Real Norm and Invertibility*, the sign decomposition of *Real Polar Element Representation*, and the Cayley matrix of *Real Regular Element Representation* — belongs to the later slots of the system and is not used here.
 
 ## The Algebra on Concrete Elements
 

@@ -4,7 +4,7 @@
 
 The biquaternion algebra is a Clifford algebra in two separate senses, and the spin geometry of the algebra is the geometry the second of them carries. The algebra is the even Clifford algebra $\mathbb{B}\cong\mathrm{Cl}^+_{1,3}$ of Minkowski space (*The Clifford Structure of the Biquaternion Algebra*), and it also carries its own biquaternion norm, whose Clifford algebra $\mathrm{Cl}(\mathbb{B},N)$ has a spinor module and a chirality grading (*Biquaternion Norm and Invertibility*). This article reads the spinor module of the algebra, its two chiral halves, the Clifford multiplication that defines it, and the operator that the Clifford structure puts on it.
 
-The article is a slot article: it states the geometry the Clifford structure defines and cites the articles that construct it. The module itself is realised in the matrix model in *Biquaternion 2×2 Matrix Representation*, the Clifford multiplication being stated here; the analytic theory of the operator is *Fueter Theory for Biquaternions* and *Biquaternion Regular Functions* in Analysis; the rulings that the spinor lines trace are in *Biquaternion Null Quadric and Projective Geometry*.
+The article is a slot article: it states the geometry the Clifford structure defines and cites the articles that construct it. The module itself is realised in the matrix model in *Biquaternion 2×2 Matrix Element Representation*, the Clifford multiplication being stated here; the analytic theory of the operator is *Fueter Theory for Biquaternions* and *Biquaternion Regular Functions* in Analysis; the rulings that the spinor lines trace are in *Biquaternion Null Quadric and Projective Geometry*.
 
 **Conventions.** The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_0=1,e_1,e_2,e_3$ and central scalar imaginary $i$; a general element is $\tilde{Q}=\sum_{\mu=0}^{3} Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$. The criterion of *Biquaternion Norm and Invertibility* is used without proof: $N(\tilde{Q})\neq0$ if and only if $\tilde{Q}$ is invertible, and $N(\tilde{Q})=0$ with $\tilde{Q}\neq0$ if and only if $\tilde{Q}$ is a zero divisor.
 
@@ -20,7 +20,7 @@ A biquaternion is therefore a **mixed spinor** with one unprimed and one primed 
 $$
 A_\alpha{}^{\dot\beta}=\phi_\alpha\,\pi^{\dot\beta},\qquad \phi\in\Delta^+,\ \pi\in\Delta^- .
 $$
-Matching the matrix form $\Phi(\tilde{Q})=uv^{T}$ of *Biquaternion 2×2 Matrix Representation*, the column $u$ is the unprimed spinor $\phi$ and the row $v^{T}$ the primed spinor $\pi$. Hence fixing $\phi$ and varying $\pi$ traces $\ell_{[\phi]}\cong\mathbb{P}(\Delta^-)=\mathbb{P}^1$, while fixing $\pi$ and varying $\phi$ traces $m_{[\pi]}\cong\mathbb{P}(\Delta^+)=\mathbb{P}^1$. The two rulings are the **primed and unprimed spinor lines**, and they correspond to the two chiralities, since the complexified algebra splits into two simple summands, the two chirality eigenspaces. Which half-spin module is named $\Delta^+$ is a convention.
+Matching the matrix form $\Phi(\tilde{Q})=uv^{T}$ of *Biquaternion 2×2 Matrix Element Representation*, the column $u$ is the unprimed spinor $\phi$ and the row $v^{T}$ the primed spinor $\pi$. Hence fixing $\phi$ and varying $\pi$ traces $\ell_{[\phi]}\cong\mathbb{P}(\Delta^-)=\mathbb{P}^1$, while fixing $\pi$ and varying $\phi$ traces $m_{[\pi]}\cong\mathbb{P}(\Delta^+)=\mathbb{P}^1$. The two rulings are the **primed and unprimed spinor lines**, and they correspond to the two chiralities, since the complexified algebra splits into two simple summands, the two chirality eigenspaces. Which half-spin module is named $\Delta^+$ is a convention.
 
 ---
 
@@ -30,7 +30,7 @@ The minimal left ideals of $\mathbb{B}\cong M_2(\mathbb{C})$ are the two lines $
 $$
 \mathbb{B}=\mathbb{B}p\oplus\mathbb{B}q,
 $$
-so that the module of the spin representation is realised inside the algebra as a minimal left ideal. The two ideals themselves are not the chiral halves: each of them complexifies to the sum $S_+\oplus S_-$ of the two chiral spaces. The chirality belongs to the algebra, $\mathbb{B}\cong\Delta^+\otimes\Delta^-$, and the two families of null planes of the quadric are the projectivisations of the two chiral spaces $\Delta^\pm$. The construction of the module is *Biquaternion 2×2 Matrix Representation*, §*The Simple Module*, and *Biquaternion Ideals and Peirce Decomposition*; only the identification with the ideals is used here.
+so that the module of the spin representation is realised inside the algebra as a minimal left ideal. The two ideals themselves are not the chiral halves: each of them complexifies to the sum $S_+\oplus S_-$ of the two chiral spaces. The chirality belongs to the algebra, $\mathbb{B}\cong\Delta^+\otimes\Delta^-$, and the two families of null planes of the quadric are the projectivisations of the two chiral spaces $\Delta^\pm$. The construction of the module is *Biquaternion 2×2 Matrix Element Representation*, §*The Simple Module*, and *Biquaternion Ideals and Peirce Decomposition*; only the identification with the ideals is used here.
 
 ## The Spin Representation and Its Dimension
 
@@ -58,7 +58,7 @@ the two Weyl spinor spaces: as representations of $SL(2,\mathbb{C})$ they are co
 
 **Remark (the two faces of chirality).** The same two Weyl spaces appear twice, and the two appearances must not be confused. As the tensor factors of the even Clifford algebra, $\mathbb{B}\cong\Delta^+\otimes\Delta^-$, they describe a biquaternion as a mixed spinor (§*The Spinor Module and Its Two Chiral Halves*); as the summands of the complexified module, $S\otimes_{\mathbb{R}}\mathbb{C}=\Delta^+\oplus\Delta^-$, they describe the Dirac spinor of complex dimension four. The tensor splitting is a statement about the algebra, the direct splitting a statement about its module, and both express the same chirality.
 
-**Remark (the spin group acts, the Lorentz group does not).** The module carries the defining action of $SL(2,\mathbb{C})=\mathbb{B}^\times_1$ by Clifford multiplication, which is the spin representation of *Biquaternion Representation Theory*, §*The Group of Units and $SL(2,\mathbb{C})$*. The Lorentz group $SO^+(1,3)$ is the quotient by $\{\pm e_0\}$ and acts on the module only up to sign: it acts on the algebra by automorphisms, but it does not act on the module by algebra automorphisms, which is the standard statement that the Lorentz group itself has no two-dimensional spin representation.
+**Remark (the spin group acts, the Lorentz group does not).** The module carries the defining action of $SL(2,\mathbb{C})=\mathbb{B}^\times_1$ by Clifford multiplication, which is the spin representation of *Biquaternion Element Representation Theory*, §*The Group of Units and $SL(2,\mathbb{C})$*. The Lorentz group $SO^+(1,3)$ is the quotient by $\{\pm e_0\}$ and acts on the module only up to sign: it acts on the algebra by automorphisms, but it does not act on the module by algebra automorphisms, which is the standard statement that the Lorentz group itself has no two-dimensional spin representation.
 
 ## The Dirac Operator
 

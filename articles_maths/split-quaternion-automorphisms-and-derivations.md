@@ -103,7 +103,7 @@ The exceptional phenomena that produce outer automorphisms elsewhere — the out
 
 ### Anti-Automorphisms
 
-The conjugations $\bar{\cdot}$ and $\rho$ are **anti**-automorphisms, satisfying $\overline{\tilde q y} = \bar{y}\,\bar{\tilde q}$, and are not automorphisms, so they do not appear in $\mathrm{Aut}(\mathbb{H}_{\mathrm{s}})$. Together with the automorphism $\alpha$ they make up the involution group of the algebra, treated in *Split-Quaternion Involution Lattice*. In the Clifford description of *Split-Quaternion Other Algebraic Representations*, the two are the reversal and the Clifford conjugation; the existence of anti-automorphisms outside $\mathrm{Aut}$ is the standard asymmetry between an algebra and its opposite, and it is not an outer automorphism phenomenon.
+The conjugations $\bar{\cdot}$ and $\rho$ are **anti**-automorphisms, satisfying $\overline{\tilde q y} = \bar{y}\,\bar{\tilde q}$, and are not automorphisms, so they do not appear in $\mathrm{Aut}(\mathbb{H}_{\mathrm{s}})$. Together with the automorphism $\alpha$ they make up the involution group of the algebra, treated in *Split-Quaternion Involution Lattice*. In the Clifford description of *Split-Quaternion Other Algebraic Element Representations*, the two are the reversal and the Clifford conjugation; the existence of anti-automorphisms outside $\mathrm{Aut}$ is the standard asymmetry between an algebra and its opposite, and it is not an outer automorphism phenomenon.
 
 ## The Lie Algebra Statement
 

@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This article classifies the modules over the biquaternion algebra and describes the one module that the framework uses, the defining module on which the algebra acts as $M_2(\mathbb{C})$. It uses the idempotents and the Peirce decomposition of *Biquaternion Ideals and Peirce Decomposition*, the matrix model of *The 2×2 Matrix Representation of Biquaternions*, and the invertibility criterion of *Biquaternion Norm and Invertibility*. The group-theoretic representations of the algebra and of its group of units are *Biquaternion Representation Theory*, and the spinor reading of the module is *Biquaternion Spin Geometry*.
+This article classifies the modules over the biquaternion algebra and describes the one module that the framework uses, the defining module on which the algebra acts as $M_2(\mathbb{C})$. It uses the idempotents and the Peirce decomposition of *Biquaternion Ideals and Peirce Decomposition*, the matrix model of *The 2×2 Matrix Element Representation of Biquaternions*, and the invertibility criterion of *Biquaternion Norm and Invertibility*. The group-theoretic representations of the algebra and of its group of units are *Biquaternion Element Representation Theory*, and the spinor reading of the module is *Biquaternion Spin Geometry*.
 
 **Scope.** This is the module-theoretic article of the Algebra slot. It classifies modules and computes their endomorphisms; it does not treat the representations of the unit group, the norm, or the Clifford structure. The physical reading is attached at the point of each algebraic statement, and it is a reading.
 

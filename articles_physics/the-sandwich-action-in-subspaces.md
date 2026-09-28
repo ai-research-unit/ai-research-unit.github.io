@@ -8,7 +8,7 @@ $$
 x \longmapsto \tilde{Q}\,x\,\tilde{Q}^\dagger ,
 $$
 
-reads it as the action of the group of units, and computes its kernel, its invariants and its action on the six distinguished subspaces. This article restricts the **acting element** to one of the six subspaces and records what the restriction does to the operator. It is the counterpart of *The Polar Representation in Subspaces*, which restricts the same six subspaces in the other direction: there the question is which of the four polar factors a subspace can carry, here it is which operator an element of a subspace produces.
+reads it as the action of the group of units, and computes its kernel, its invariants and its action on the six distinguished subspaces. This article restricts the **acting element** to one of the six subspaces and records what the restriction does to the operator. It is the counterpart of *The Polar Element Representation in Subspaces*, which restricts the same six subspaces in the other direction: there the question is which of the four polar factors a subspace can carry, here it is which operator an element of a subspace produces.
 
 The question is a physical one, and it has a physical answer. The Lorentz transformation of the corpus is written with a rotor, and for a pure boost that rotor lies in the Hermitian subspace $\mathbb{M}_+$, as *The Lorentz Transformation as a Biquaternionic Rotation* records: the boost biquaternion has a real scalar part and a purely imaginary vector part, so it is Hermitian and its sandwich collapses to $\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}$. The rotation lies in $\mathbb{H}_{\mathbb{B}}$, the home of the unit real quaternions; the phase lies in the centre; the four-vectors lie in $\mathbb{M}_-$. Each subspace therefore asks a separate question — what kind of transformation does an element of *this* subspace produce? — and the six questions are answered below and turn out to be four.
 
@@ -368,7 +368,7 @@ The type of the operator is therefore decided by the class of the acting element
 ## Further Reading
 
 - *Biquaternion Rotations and Lorentz Transformations* (`articles_physics/biquaternion-rotations-and-lorentz-transformations.md`), immediately before the present article in the menu, for the sandwich unrestricted, its kernel, its action on the six subspaces and its composition law
-- *The Polar Representation in Subspaces* (`articles_physics/the-polar-representation-in-subspaces.md`), for the same six subspaces restricted in the other direction, to the four factors of one element
+- *The Polar Element Representation in Subspaces* (`articles_physics/the-polar-element-representation-in-subspaces.md`), for the same six subspaces restricted in the other direction, to the four factors of one element
 - *Relations Between Subspaces* (`articles_physics/relations-between-subspaces.md`), for the six subspaces, their definitions, their intersections and the four coordinate blocks
 - *The Lorentz Transformation as a Biquaternionic Rotation* (`articles_physics/the-lorentz-transformation-as-a-biquaternionic-rotation.md`), for the boost biquaternion in the informational sector and the sandwich with the element on both sides
 - *The Lorentz Group as Biquaternion Norm Automorphisms* (`articles_physics/the-lorentz-group-as-biquaternion-norm-automorphisms.md`), for the unit-norm rotors, the homomorphism onto the Lorentz group and its kernel
@@ -379,6 +379,6 @@ The type of the operator is therefore decided by the class of the acting element
 - *The Anti-Quaternion Subspace iH_B as the Imaginary Sector* (`articles_physics/the-anti-quaternion-subspace-ihb-as-the-imaginary-sector.md`), for the antiquaternions and the frozen phase
 - *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector* (`articles_physics/the-hermitian-subspace-m-plus-as-the-informational-sector.md`), for the sector that carries the boosts and the Hermitian forms
 - *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector* (`articles_physics/the-anti-hermitian-subspace-m-as-the-material-sector.md`), for the sector that carries the four-vectors
-- *The 2×2 Matrix Representation of Biquaternions* (`articles_physics/the-2x2-matrix-representation-of-biquaternions.md`), for the matrix image of the sandwich as a similarity
+- *The 2×2 Matrix Element Representation of Biquaternions* (`articles_physics/the-2x2-matrix-element-representation-of-biquaternions.md`), for the matrix image of the sandwich as a similarity
 - *Conventions in the Biquaternion Universe* (`articles_physics/conventions-in-the-biquaternion-universe.md`), for the conventions used throughout
 - *Introduction to the Biquaternion Universe* (`articles_physics/introduction-to-the-biquaternion-universe.md`), for the map of the series

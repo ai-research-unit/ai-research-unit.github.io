@@ -195,7 +195,7 @@ $$
 
 ### The Matrix of a Worked Product
 
-By *Dual-Numbers Matrix Representation* the algebra embeds faithfully in $M_2(\mathbb{R})$ through
+By *Dual-Numbers Matrix Element Representation* the algebra embeds faithfully in $M_2(\mathbb{R})$ through
 
 $$
 \Phi(a + \varepsilon b) = \begin{pmatrix} a & b \\ 0 & a \end{pmatrix}.

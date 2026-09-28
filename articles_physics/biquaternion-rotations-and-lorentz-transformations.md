@@ -6,7 +6,7 @@ The biquaternion norm fixes what a motion is: the isometries of the form are the
 
 The article is the Geometry slot of the Lie-theoretic block: the algebra is *Biquaternion Lie Algebra*, the group and its exponential are *Biquaternion Lie Group and Exponential Structure*, and the topology of the group is *The Biquaternion Unit Group as a Topological Group*. The reflections and the Cartan–Dieudonné theorem are stated generally in *Versors, Rotors and the Sandwich Action* and *The Clifford, Pin and Spin Groups* of Part II, and their biquaternion case is worked here; the Clifford reading of the algebra is *The Clifford Structure of the Biquaternion Algebra*; the transformation group in full is in *Biquaternion Automorphisms and Derivations*; and the finite groups of units, together with the figures they determine, are *Biquaternion Finite Groups and Figures*.
 
-The article also owns the **dagger sandwich** $\operatorname{H}_{\tilde{Q}}(x)=\tilde{Q}x\tilde{Q}^{\dagger}$, the action of an arbitrary unit of the algebra on the algebra regarded as an eight-dimensional real vector space. Its carrier, its kernel, its invariants, its action on the six distinguished subspaces and the operators of a boost and of a rotation are read below. The inner automorphism $x\mapsto\tilde{Q}x\tilde{Q}^{-1}$ and its contrast with the sandwich are in *Biquaternion Automorphisms and Derivations*, the matrix congruence in *The 2×2 Matrix Representation of Biquaternions*, and the four factors of a single element in *The Polar Representation of Biquaternions*.
+The article also owns the **dagger sandwich** $\operatorname{H}_{\tilde{Q}}(x)=\tilde{Q}x\tilde{Q}^{\dagger}$, the action of an arbitrary unit of the algebra on the algebra regarded as an eight-dimensional real vector space. Its carrier, its kernel, its invariants, its action on the six distinguished subspaces and the operators of a boost and of a rotation are read below. The inner automorphism $x\mapsto\tilde{Q}x\tilde{Q}^{-1}$ and its contrast with the sandwich are in *Biquaternion Automorphisms and Derivations*, the matrix congruence in *The 2×2 Matrix Element Representation of Biquaternions*, and the four factors of a single element in *The Polar Element Representation of Biquaternions*.
 
 Physically the sandwich $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{\dagger}$ is the Lorentz transformation of the material sector: the boost is the change of inertial frame and the rotor is the spatial rotation, so that a four-vector of *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector* is carried from one frame to another by a biquaternion multiplication. The doubling of the half-angle is the geometric origin of the spinor double cover: the same motion is realised twice in $\mathbb{B}^{\times}_1$, once as $\tilde{\Lambda}$ and once as $-\tilde{\Lambda}$, which is why the carrier of the state of *Biquaternion Quantum Fields* is a spinor and not a vector.
 
@@ -27,7 +27,7 @@ $$
 the proper orthochronous Lorentz group, of real dimension $6$. Hence $\mathbb{B}^\times_1$ is a two-sheeted cover of $SO^+(1,3)$ and, being simply connected, is its universal cover: it is the spin group of Lorentzian signature,
 
 $$
-\mathbb{B}^\times_1 \cong \mathrm{Spin}(1,3), \qquad \mathrm{B}_0 \cong \mathrm{SO}(1,3).
+\mathbb{B}^\times_1 \cong \mathrm{Spin}(1,3), \qquad \mathrm{B}_0 \cong \mathrm{so}(1,3).
 $$
 
 The Lorentz action is rotor conjugation, $\tilde{Q} \mapsto \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^\dagger$ for $\tilde{\Lambda} \in \mathbb{B}^\times_1$, which preserves $\mathbb{M}_-$ and $N(\tilde{Q})$; its compact part is the rotation family and its non-compact part the hyperbolic rotations, with closed forms in *Biquaternion Elementary Functions*, §*The Exponential in the Two Real Directions*.
@@ -44,7 +44,7 @@ and on the imaginary part this is the rotation of $\mathbb{R}^3$ through the ang
 
 ### Left Multiplication as the Reference
 
-The simplest way to make an element act is to multiply by it, $x \mapsto \tilde{Q}x$. That map is the regular representation, it is faithful, and its matrix is the $4 \times 4$ regular matrix of *The 4×4 Regular Matrix Representation of Biquaternions*. It is recorded here only as the reference column of the comparison table below, since it is an algebra endomorphism rather than an automorphism and it does not preserve the sector structure either.
+The simplest way to make an element act is to multiply by it, $x \mapsto \tilde{Q}x$. That map is the regular representation, it is faithful, and its matrix is the $4 \times 4$ regular matrix of *The 4×4 Regular Matrix Element Representation of Biquaternions*. It is recorded here only as the reference column of the comparison table below, since it is an algebra endomorphism rather than an automorphism and it does not preserve the sector structure either.
 
 ### The Map on the Whole Algebra
 
@@ -75,7 +75,7 @@ Since $\tilde{\Lambda}^\dagger = \bar{\tilde{\Lambda}}^{*}$, and the two involut
 | preserves the two sectors | no | yes |
 | preserves the product $xy$ | yes | only for unitary $\tilde{Q}$ |
 
-Left multiplication is recorded for comparison only, as the regular representation of *The 4×4 Regular Matrix Representation of Biquaternions*. The last two lines are the content of this section: the sandwich is the Lorentz action, and it conserves the interval in place of the product.
+Left multiplication is recorded for comparison only, as the regular representation of *The 4×4 Regular Matrix Element Representation of Biquaternions*. The last two lines are the content of this section: the sandwich is the Lorentz action, and it conserves the interval in place of the product.
 
 ## The Sandwich Is the Lorentz Action
 

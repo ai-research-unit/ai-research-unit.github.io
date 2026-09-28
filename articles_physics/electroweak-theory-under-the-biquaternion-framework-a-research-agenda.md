@@ -263,7 +263,7 @@ The two upstream items are a chiral matter representation with a declared carrie
 - *The Neutrino and Majorana Fermions in Biquaternionic Form* — the real-structure question and the unrepresented dimension-five operator; the article in which the mass reading is pursued.
 - *The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism* and *The Spinor Module in Biquaternionic Form and Its Lorentz Action* — the left/right matter-representation issue and the module structure on which the chiral analysis rests.
 - *The Electron in Biquaternionic Form* — the physical reading of chirality and its separation from the sector split.
-- *Biquaternion Representation Theory* and *Lie Algebras: A General Introduction* — the module structure of $M_2(\mathbb{C})$, the pseudoreality of $\mathrm{SU}(2)$, and the compact-subalgebra facts behind the available gauge algebra.
+- *Biquaternion Element Representation Theory* and *Lie Algebras: A General Introduction* — the module structure of $M_2(\mathbb{C})$, the pseudoreality of $\mathrm{SU}(2)$, and the compact-subalgebra facts behind the available gauge algebra.
 - *The Lorentz Group in Biquaternionic Form — Structure and Representations* — the representation theory on which the doublet and singlet bookkeeping would rest.
 - *Canonical Quantization of the Biquaternion Maxwell Field* — the framework's inability to fix the gauge, on which the physical-content obstacle turns. (*Canonical Quantization of the Biquaternion Dirac Field*, which does not treat the gauge, records the separate second-class constraint $\pi - i\psi^{\dagger}\approx 0$.)
 - *The Field-Strength Biquaternion and Its Invariants* — the abelian invariants and the biquaternion norm, whose non-abelian extension is open.

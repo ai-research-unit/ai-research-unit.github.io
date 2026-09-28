@@ -128,7 +128,7 @@ are the **complex bilinear dot product** and the **complex bilinear cross produc
 
 The formula has the same shape as the quaternion product: scalar part, vector part, dot product, cross product. The only change is that the coefficients are complex.
 
-**Physical face of the non-commutativity.** The cross-product term is where the non-commutativity lives, and it is the term the physics cannot do without: for two four-vectors in the material sector it is the term that produces, on composition of two boosts, the rotation the series calls the Wigner rotation and, followed along a worldline, the Thomas precession. The commutation of two generators, and with it the failure of two boosts to commute, is worked out in *Biquaternion Rotations and Lorentz Transformations*; the polar counterpart is in *The Polar Representation of Biquaternions*. In algebraic terms the point is only this: the product is not commutative, and the defect is a cross product in the vector part.
+**Physical face of the non-commutativity.** The cross-product term is where the non-commutativity lives, and it is the term the physics cannot do without: for two four-vectors in the material sector it is the term that produces, on composition of two boosts, the rotation the series calls the Wigner rotation and, followed along a worldline, the Thomas precession. The commutation of two generators, and with it the failure of two boosts to commute, is worked out in *Biquaternion Rotations and Lorentz Transformations*; the polar counterpart is in *The Polar Element Representation of Biquaternions*. In algebraic terms the point is only this: the product is not commutative, and the defect is a cross product in the vector part.
 
 ### Conjugations
 

@@ -195,7 +195,7 @@ The exponential has the closed form displayed above, with the sign of $N(\mathbf
 | $N(e^{\tilde q}) = e^{2q_0}$ | the split-quaternion norm of the exponential | this article |
 | $\exp(\theta u) = \cos\theta + \sin\theta\,u$ | the elliptic subgroup ($u^2 = -1$) | this article |
 | $\exp(\theta u) = \cosh\theta + \sinh\theta\,u$ | the hyperbolic subgroup ($u^2 = +1$ in $V$) | this article |
-| $\rho u$ | the polar form of a nonzero element | *Split-Quaternion Polar Representation* |
+| $\rho u$ | the polar form of a nonzero element | *Split-Quaternion Polar Element Representation* |
 | $\mathrm{SO}^{+}(2,1)$ | the identity component of the Lorentz group | *Split-Quaternion Rotations and the Lorentz Group* |
 
 ## Further Reading
