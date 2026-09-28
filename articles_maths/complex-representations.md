@@ -61,19 +61,19 @@ $$
 V \cong \mathbb{C}^{\oplus n}, \qquad \rho(z)(v_1, \dots, v_n) = (z v_1, \dots, z v_n).
 $$
 
-**Proof.** The map $z \mapsto z \cdot v$ is $\mathbb{C}$-linear in $z$ for each fixed $v$, because $\rho$ is a $\mathbb{C}$-algebra homomorphism; hence $z \cdot v = z\,(1 \cdot v) = z v$ for every $v$. In particular $z \cdot v_i = z v_i$ on a basis, so the action is the scalar multiplication $z \cdot v = zv$ and $V \cong \mathbb{C}^{\oplus n}$ as a representation. $\square$
+**Proof.** The map $z \mapsto z \cdot v$ is $\mathbb{C}$-linear in $z$ for each fixed $v$, because $\rho$ is a $\mathbb{C}$-algebra homomorphism; hence $z \cdot v = z\,(1 \cdot v) = z v$ for every $v$. In particular $z \cdot v_i = z v_i$ on a basis, so the action is the scalar multiplication $z \cdot v = zv$ and $V \cong \mathbb{C}^{\oplus n}$ as a representation.
 
 ### Irreducible Representations
 
 **Theorem.** The regular representation is the unique irreducible complex representation of $\mathbb{C}$, up to isomorphism.
 
-**Proof.** Any irreducible representation is a quotient of the regular representation, hence isomorphic to it, since $\mathbb{C}$ is a field and every non-zero $\mathbb{C}$-linear map $\mathbb{C} \to V$ is injective. $\square$
+**Proof.** Any irreducible representation is a quotient of the regular representation, hence isomorphic to it, since $\mathbb{C}$ is a field and every non-zero $\mathbb{C}$-linear map $\mathbb{C} \to V$ is injective.
 
 ### Schur's Lemma
 
 **Theorem (Schur).** Every $\mathbb{C}$-linear endomorphism of an irreducible complex representation of $\mathbb{C}$ is a scalar multiple of the identity.
 
-**Proof.** Let $V$ be irreducible and let $T : V \to V$ be $\mathbb{C}$-linear and commuting with the action. Then $\ker T$ and $\operatorname{im} T$ are subrepresentations. Since $V$ is irreducible, either $\ker T = 0$ and $\operatorname{im} T = V$ (so $T$ is an isomorphism), or $\ker T = V$ (so $T = 0$). In the first case, $T$ is an isomorphism, and since $V$ is one-dimensional over $\mathbb{C}$ (by the classification theorem), $T$ is multiplication by a non-zero scalar. $\square$
+**Proof.** Let $V$ be irreducible and let $T : V \to V$ be $\mathbb{C}$-linear and commuting with the action. Then $\ker T$ and $\operatorname{im} T$ are subrepresentations. Since $V$ is irreducible, either $\ker T = 0$ and $\operatorname{im} T = V$ (so $T$ is an isomorphism), or $\ker T = V$ (so $T = 0$). In the first case, $T$ is an isomorphism, and since $V$ is one-dimensional over $\mathbb{C}$ (by the classification theorem), $T$ is multiplication by a non-zero scalar.
 
 **Corollary.** The endomorphism ring of the regular representation is $\mathbb{C}$ itself.
 
@@ -205,7 +205,7 @@ $$
 \dim_{\mathbb{C}} \operatorname{Hom}_{\mathbb{C}}(V, W) = pq.
 $$
 
-**Proof.** A homomorphism is a complex-linear map between finite-dimensional complex vector spaces, so it is determined by a $q \times p$ complex matrix, of complex dimension $pq$. $\square$
+**Proof.** A homomorphism is a complex-linear map between finite-dimensional complex vector spaces, so it is determined by a $q \times p$ complex matrix, of complex dimension $pq$.
 
 ### The Endomorphism Ring
 

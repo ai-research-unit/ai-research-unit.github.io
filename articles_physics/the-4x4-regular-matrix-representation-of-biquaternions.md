@@ -2,11 +2,11 @@
 
 ## Introduction
 
-The **regular representation** of the biquaternion algebra is the algebra acting on itself on the left. Multiplication on the left by a fixed element is a linear map of the four-dimensional space $\mathbb{B}$ to itself, so in the basis $e_0, e_1, e_2, e_3$ it is a $4 \times 4$ complex matrix. This article constructs that matrix and its companion for multiplication on the right, proves that the two constructions are multiplicative, and reads off the consequences: the determinant is the **square** of the norm form and the trace is four times the scalar part; the regular module is the direct sum of two copies of the simple module, which in this corpus are the two **chiralities**; the centralizer of the left copy is the right copy; and the two copies together give the two-sided action by which a Lorentz transformation of a four-vector is written.
+The **regular representation** of the biquaternion algebra is the algebra acting on itself on the left. Multiplication on the left by a fixed element is a linear map of the four-dimensional space $\mathbb{B}$ to itself, so in the basis $e_0, e_1, e_2, e_3$ it is a $4 \times 4$ complex matrix. This article constructs that matrix and its companion for multiplication on the right, proves that the two constructions are multiplicative, and reads off the consequences: the determinant is the **square** of the biquaternion norm and the trace is four times the scalar part; the regular module is the direct sum of two copies of the simple module, which in this corpus are the two **chiralities**; the centralizer of the left copy is the right copy; and the two copies together give the two-sided action by which a Lorentz transformation of a four-vector is written.
 
 The last point is the physical one. The rotor group $\{\tilde{\Lambda} : N(\tilde{\Lambda}) = e_0\}$ acts on the material sector $\mathbb{M}_-$ by the rotor conjugation $\tilde{Q} \mapsto \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{\dagger}$, and that map is literally the product of the left copy of $\tilde{\Lambda}$ with the right copy of $\tilde{\Lambda}^{\dagger}$ acting on the four-vector. In the regular representation the Lorentz transformation is a product of two multiplications in the algebra.
 
-The conventions are those of *Conventions in the Biquaternion Universe* and of the two companion articles, and none is redefined. The basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$ and $e_1e_2 = e_3$; the scalar imaginary $i$ commutes with every unit; the conjugations are $\bar{\cdot}$, ${}^{*}$, ${}^{\dagger} = \bar{\cdot}\circ{}^{*}$ and ${}^{\flat} = -\dagger$; the norm form is $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$; the subspaces are $\mathbb{C}_{\mathbb{B}}$ (centre), $\mathrm{Vect}(\mathbb{B})$, $\mathbb{H}_{\mathbb{B}}$ (real), $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$ (informational) and $\mathbb{M}_-$ (material); the physical coordinates are $\tilde{Q} = ict\,e_0 + \mathbf{x}$ in $\mathbb{M}_-$ and $ct'\,e_0 + i\mathbf{x}'$ in $\mathbb{M}_+$, with $\mathbf{x} = xe_1+ye_2+ze_3$ and $\mathbf{x}' = x'e_1+y'e_2+z'e_3$; the $ict$ metric is $\eta = \mathrm{diag}(-1,+1,+1,+1)$ and the d'Alembertian is $\Box = \tilde{\nabla}\bar{\tilde{\nabla}} = \partial_{ict}^2 + \Delta$.
+The conventions are those of *Conventions in the Biquaternion Universe* and of the two companion articles, and none is redefined. The basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$ and $e_1e_2 = e_3$; the scalar imaginary $i$ commutes with every unit; the conjugations are $\bar{\cdot}$, ${}^{*}$, ${}^{\dagger} = \bar{\cdot}\circ{}^{*}$ and ${}^{\flat} = -\dagger$; the biquaternion norm is $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$; the subspaces are $\mathbb{C}_{\mathbb{B}}$ (centre), $\mathrm{Vect}(\mathbb{B})$, $\mathbb{H}_{\mathbb{B}}$ (real), $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$ (informational) and $\mathbb{M}_-$ (material); the physical coordinates are $\tilde{Q} = ict\,e_0 + \mathbf{x}$ in $\mathbb{M}_-$ and $ct'\,e_0 + i\mathbf{x}'$ in $\mathbb{M}_+$, with $\mathbf{x} = xe_1+ye_2+ze_3$ and $\mathbf{x}' = x'e_1+y'e_2+z'e_3$; the $ict$ metric is $\eta = \mathrm{diag}(-1,+1,+1,+1)$ and the d'Alembertian is $\Box = \tilde{\nabla}\bar{\tilde{\nabla}} = \partial_{ict}^2 + \Delta$.
 
 ## The Left Regular Representation
 
@@ -335,7 +335,7 @@ $$
 \det \rho_L(\tilde{Q}) = N(\tilde{Q})^2, \qquad \operatorname{Tr}\rho_L(\tilde{Q}) = 4Q_0 .
 $$
 
-The determinant of the regular matrix is the **square** of the norm form, and it is not the norm form.
+The determinant of the regular matrix is the **square** of the biquaternion norm, and it is not the biquaternion norm.
 
 **Proof.** In the block basis the matrix is block diagonal with blocks $A_+$ and $A_-$, so its determinant is $\det A_+\det A_- = N(\tilde{Q})^2$ and its trace is $\operatorname{Tr}A_+ + \operatorname{Tr}A_- = 2Q_0 + 2Q_0 = 4Q_0$. Both are invariant under the change of basis.
 
@@ -347,17 +347,17 @@ $$
 
 in agreement with the two blocks $A_+(\tilde{Q}) = \begin{pmatrix} 3+i & -1+4i \\ 1+2i & 1+i \end{pmatrix}$ and $A_-(\tilde{Q}) = \begin{pmatrix} 1+i & -1-2i \\ 1-4i & 3+i \end{pmatrix}$ on this element, each of trace $4+2i$ and determinant $11+2i$.
 
-**For a material four-vector.** With $\tilde{Q} = iq'_0e_0 + \mathbf{q} \in \mathbb{M}_-$ the norm form is real, $N(\tilde{Q}) = -q'^2_0 + \mathbf{q}^2$, so
+**For a material four-vector.** With $\tilde{Q} = iq'_0e_0 + \mathbf{q} \in \mathbb{M}_-$ the biquaternion norm is real, $N(\tilde{Q}) = -q'^2_0 + \mathbf{q}^2$, so
 
 $$
 \det\rho_L(\tilde{Q}) = \bigl( -q'^2_0 + \mathbf{q}^2 \bigr)^2, \qquad \operatorname{Tr}\rho_L(\tilde{Q}) = 4iq'_0 .
 $$
 
-For the four-position, with $q'_0 = ct$ and $\mathbf{q} = \mathbf{x}$, the determinant of the regular matrix is the **square of the interval**: for $ct = 2$ and $\mathbf{x} = (1, \tfrac12, \tfrac12)$ the interval is the rational number $-4 + 1 + \tfrac14 + \tfrac14 = -\tfrac52$, and the regular matrix has determinant $\tfrac{25}{4}$, real and positive. For the four-momentum the on-shell norm form is $-m^2c^2$, so the regular matrix has determinant $m^4c^4$.
+For the four-position, with $q'_0 = ct$ and $\mathbf{q} = \mathbf{x}$, the determinant of the regular matrix is the **square of the interval**: for $ct = 2$ and $\mathbf{x} = (1, \tfrac12, \tfrac12)$ the interval is the rational number $-4 + 1 + \tfrac14 + \tfrac14 = -\tfrac52$, and the regular matrix has determinant $\tfrac{25}{4}$, real and positive. For the four-momentum the on-shell biquaternion norm is $-m^2c^2$, so the regular matrix has determinant $m^4c^4$.
 
-**The regular matrix is singular exactly on the light cone.** Since $\det\rho_L(\tilde{Q}) = N(\tilde{Q})^2$, the regular matrix of an element fails to be invertible exactly when $N(\tilde{Q}) = 0$, that is, exactly on the zero-divisor cone. For a material four-vector that is the light cone $-c^2t^2 + \mathbf{x}^2 = 0$; for the four-momentum it is the massless case $m = 0$. The physical statement and the algebraic one are the same: a four-vector is a zero divisor of the algebra exactly when it is null, and the determinant of the regular representation is the test. Moreover the determinant is a **square**, and the square has a physical reading: the four-vector is the direct sum of two chiral copies, and each copy carries one factor of the norm form.
+**The regular matrix is singular exactly on the light cone.** Since $\det\rho_L(\tilde{Q}) = N(\tilde{Q})^2$, the regular matrix of an element fails to be invertible exactly when $N(\tilde{Q}) = 0$, that is, exactly on the zero-divisor cone. For a material four-vector that is the light cone $-c^2t^2 + \mathbf{x}^2 = 0$; for the four-momentum it is the massless case $m = 0$. The physical statement and the algebraic one are the same: a four-vector is a zero divisor of the algebra exactly when it is null, and the determinant of the regular representation is the test. Moreover the determinant is a **square**, and the square has a physical reading: the four-vector is the direct sum of two chiral copies, and each copy carries one factor of the biquaternion norm.
 
-**Remark (the determinant is not the norm form).** The simple module carries the norm form as its determinant, $\det\Phi(\tilde{Q}) = N(\tilde{Q})$, and the regular module is the direct sum of two copies of it, so its determinant is the product of two norm forms. The square appears because the regular representation acts on a space of twice the dimension, and the factor $2$ is the number of chiralities. Squaring does not change the zero set, which is why the light-cone statement survives the doubling, but it does change the degree: an identity that holds for $N$ to the first power in the 2×2 article holds only for $N^2$ here.
+**Remark (the determinant is not the biquaternion norm).** The simple module carries the biquaternion norm as its determinant, $\det\Phi(\tilde{Q}) = N(\tilde{Q})$, and the regular module is the direct sum of two copies of it, so its determinant is the product of two biquaternion norms. The square appears because the regular representation acts on a space of twice the dimension, and the factor $2$ is the number of chiralities. Squaring does not change the zero set, which is why the light-cone statement survives the doubling, but it does change the degree: an identity that holds for $N$ to the first power in the 2×2 article holds only for $N^2$ here.
 
 ## The Regular Matrix of a Four-Vector
 
@@ -380,7 +380,7 @@ $$
 | four-momentum, on shell | $(E/c, \mathbf{p})$ | $m^4c^4$ | $4iE/c$ |
 | four-momentum, massless | $(E/c, \mathbf{p})$ | $0$ | $4iE/c$ |
 
-The determinant of the four-velocity's regular matrix is the constant $c^4$, which is the matrix form of the statement that the four-velocity has constant norm form $-c^2$; the determinant is its square, and it is constant because the interval of a timelike world line is. The massless four-momentum has a singular regular matrix, and the massive one does not: the regular matrix detects the mass shell as the complement of the singular locus.
+The determinant of the four-velocity's regular matrix is the constant $c^4$, which is the matrix form of the statement that the four-velocity has constant biquaternion norm $-c^2$; the determinant is its square, and it is constant because the interval of a timelike world line is. The massless four-momentum has a singular regular matrix, and the massive one does not: the regular matrix detects the mass shell as the complement of the singular locus.
 
 **The two-sided action on this matrix.** The rotor conjugation of the two-sided action below acts on the four-vector, and in the regular representation it is the product of a left matrix and a right matrix with the four-vector in between; the four-vector's own regular matrix is not the object that is conjugated. The distinction matters in the operator articles, where the field is a biquaternion and the derivative is a four-vector, and the two are multiplied on the two sides.
 
@@ -539,7 +539,7 @@ $$
 \operatorname{Tr}\rho_L^{\mathbb{R}}(\tilde{Q}) = 0, \qquad \det\rho_L^{\mathbb{R}}(\tilde{Q}) = \bigl( -q'^2_0 + \mathbf{q}^2 \bigr)^4 ,
 $$
 
-the norm form being real on the material sector. The real regular matrix of a material four-vector is therefore **traceless**, and this is the sense in which the trace of a four-vector is zero: not over $\mathbb{C}$, where it is $4iq'_0$, but over the real eight-dimensional space, where the trace is twice the real part of the complex trace. The tracelessness is a property of the material sector alone, whose scalar part is purely imaginary; on the informational sector the scalar part is real and the real trace is $8q_0 = 8ct'$, generally nonzero. On the quaternion subalgebra $\mathbb{H}_{\mathbb{B}}$ and read on $\mathbb{H}_{\mathbb{B}}$ itself the construction is the $4 \times 4$ real regular representation of the quaternions.
+the biquaternion norm being real on the material sector. The real regular matrix of a material four-vector is therefore **traceless**, and this is the sense in which the trace of a four-vector is zero: not over $\mathbb{C}$, where it is $4iq'_0$, but over the real eight-dimensional space, where the trace is twice the real part of the complex trace. The tracelessness is a property of the material sector alone, whose scalar part is purely imaginary; on the informational sector the scalar part is real and the real trace is $8q_0 = 8ct'$, generally nonzero. On the quaternion subalgebra $\mathbb{H}_{\mathbb{B}}$ and read on $\mathbb{H}_{\mathbb{B}}$ itself the construction is the $4 \times 4$ real regular representation of the quaternions.
 
 ## The Two-Sided Action
 
@@ -559,13 +559,13 @@ $$
 \tilde{Q} \longmapsto \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{\dagger}
 $$
 
-is a group action of the rotor group on the material sector $\mathbb{M}_-$ and on the informational sector $\mathbb{M}_+$, and it preserves the norm form on each:
+is a group action of the rotor group on the material sector $\mathbb{M}_-$ and on the informational sector $\mathbb{M}_+$, and it preserves the biquaternion norm on each:
 
 $$
 N(\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{\dagger}) = N(\tilde{Q}) .
 $$
 
-**Proof.** If $\tilde{Q}$ is anti-Hermitian then $(\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{\dagger})^{\dagger} = \tilde{\Lambda}\tilde{Q}^{\dagger}\tilde{\Lambda}^{\dagger} = -\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{\dagger}$, so $\mathbb{M}_-$ is preserved; if $\tilde{Q}$ is Hermitian then $\tilde{Q}^{\dagger} = \tilde{Q}$ and $\mathbb{M}_+$ is preserved. The norm form is multiplicative, so $N(\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{\dagger}) = N(\tilde{\Lambda})N(\tilde{Q})N(\tilde{\Lambda}^{\dagger})$, and $N(\tilde{\Lambda}) = e_0$ while $N(\tilde{\Lambda}^{\dagger}) = N(\tilde{\Lambda})^{*} = e_0$. Composition holds because $\tilde{\Lambda}_1(\tilde{\Lambda}_2\tilde{Q}\tilde{\Lambda}_2^{\dagger})\tilde{\Lambda}_1^{\dagger} = (\tilde{\Lambda}_1\tilde{\Lambda}_2)\tilde{Q}(\tilde{\Lambda}_1\tilde{\Lambda}_2)^{\dagger}$.
+**Proof.** If $\tilde{Q}$ is anti-Hermitian then $(\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{\dagger})^{\dagger} = \tilde{\Lambda}\tilde{Q}^{\dagger}\tilde{\Lambda}^{\dagger} = -\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{\dagger}$, so $\mathbb{M}_-$ is preserved; if $\tilde{Q}$ is Hermitian then $\tilde{Q}^{\dagger} = \tilde{Q}$ and $\mathbb{M}_+$ is preserved. The biquaternion norm is multiplicative, so $N(\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{\dagger}) = N(\tilde{\Lambda})N(\tilde{Q})N(\tilde{\Lambda}^{\dagger})$, and $N(\tilde{\Lambda}) = e_0$ while $N(\tilde{\Lambda}^{\dagger}) = N(\tilde{\Lambda})^{*} = e_0$. Composition holds because $\tilde{\Lambda}_1(\tilde{\Lambda}_2\tilde{Q}\tilde{\Lambda}_2^{\dagger})\tilde{\Lambda}_1^{\dagger} = (\tilde{\Lambda}_1\tilde{\Lambda}_2)\tilde{Q}(\tilde{\Lambda}_1\tilde{\Lambda}_2)^{\dagger}$.
 
 ### The Lorentz Transformation as Left Times Right
 
@@ -633,7 +633,7 @@ onto the identity component $SO^+(1,3)$ of the orthogonal group of the interval,
 
 ## Summary
 
-The left regular representation $\rho_L(\tilde{Q})(\tilde{R}) = \tilde{Q}\tilde{R}$ is the algebra acting on itself on the left, and in the basis $e_0, e_1, e_2, e_3$ its matrix is the Cayley matrix of quaternion multiplication, each entry of which is a single coefficient of $\tilde{Q}$ carrying a sign and none of which is a sum of coefficients. It is a homomorphism, its transpose is the left matrix of the quaternion conjugate, $\rho_L(\tilde{Q})^{\mathsf{T}} = \rho_L(\bar{\tilde{Q}})$, its determinant is the square of the norm form, $\det\rho_L(\tilde{Q}) = N(\tilde{Q})^2$, and its trace is $4Q_0$. The right regular representation $\rho_R(\tilde{Q})(\tilde{R}) = \tilde{R}\tilde{Q}$ is an anti-homomorphism and the regular representation of the opposite algebra; the naive identity $\rho_R(\tilde{Q}) = \rho_L(\tilde{Q})^{\mathsf{T}}$ is false — and the variant with $\bar{\tilde{Q}}$ is the same statement, since $\rho_L(\bar{\tilde{Q}})^{\mathsf{T}} = \rho_L(\tilde{Q})$ — while what holds is $\rho_R(\tilde{Q}) = D\rho_L(\tilde{Q})^{\mathsf{T}}D = D\rho_L(\bar{\tilde{Q}})D$ with $D = \operatorname{diag}(-1,1,1,1) = \eta$, the $ict$ metric.
+The left regular representation $\rho_L(\tilde{Q})(\tilde{R}) = \tilde{Q}\tilde{R}$ is the algebra acting on itself on the left, and in the basis $e_0, e_1, e_2, e_3$ its matrix is the Cayley matrix of quaternion multiplication, each entry of which is a single coefficient of $\tilde{Q}$ carrying a sign and none of which is a sum of coefficients. It is a homomorphism, its transpose is the left matrix of the quaternion conjugate, $\rho_L(\tilde{Q})^{\mathsf{T}} = \rho_L(\bar{\tilde{Q}})$, its determinant is the square of the biquaternion norm, $\det\rho_L(\tilde{Q}) = N(\tilde{Q})^2$, and its trace is $4Q_0$. The right regular representation $\rho_R(\tilde{Q})(\tilde{R}) = \tilde{R}\tilde{Q}$ is an anti-homomorphism and the regular representation of the opposite algebra; the naive identity $\rho_R(\tilde{Q}) = \rho_L(\tilde{Q})^{\mathsf{T}}$ is false — and the variant with $\bar{\tilde{Q}}$ is the same statement, since $\rho_L(\bar{\tilde{Q}})^{\mathsf{T}} = \rho_L(\tilde{Q})$ — while what holds is $\rho_R(\tilde{Q}) = D\rho_L(\tilde{Q})^{\mathsf{T}}D = D\rho_L(\bar{\tilde{Q}})D$ with $D = \operatorname{diag}(-1,1,1,1) = \eta$, the $ict$ metric.
 
 The regular module is $\mathbb{B} = \mathbb{B}\tilde\Pi_1 \oplus \mathbb{B}\tilde\Pi_2$ with $\tilde\Pi_{1,2} = \tfrac12(e_0 \pm ie_3)$, the two chiralities; in the adapted basis $\tilde\Pi_1, e_1\tilde\Pi_1, \tilde\Pi_2, e_1\tilde\Pi_2$ the regular matrix is block diagonal with blocks $A_+$, $A_-$, each similar to $\Phi(\tilde{Q})$ and each a copy of the simple module $S$. So $\rho_L \cong S \oplus S$, the characteristic polynomial is $(\lambda^2 - 2Q_0\lambda + N)^2$, and left multiplication cannot couple the two chiralities — which is why the mass term is a right multiplication by $\tilde{a}_{\mathrm{tr}} = \tfrac12(ie_1 - e_2)$. The centralizer of $\rho_L(\mathbb{B})$ is $\rho_R(\mathbb{B})$, of complex dimension four; over $\mathbb{R}$ the regular matrix is $8 \times 8$ with determinant $|N|^4$ and trace $8\operatorname{Re}(Q_0)$, hence traceless on a material four-vector.
 
@@ -652,7 +652,7 @@ Read on the material sector, the regular matrix of a four-vector is the matrix d
 | $\rho_R(\tilde{Q})$ | Matrix of right multiplication; an anti-homomorphism, the regular representation of $\mathbb{B}^{\mathrm{op}}$ |
 | $D = \operatorname{diag}(-1,1,1,1) = \eta$ | Fixed sign matrix; $\rho_R(\tilde{Q}) = D\rho_L(\tilde{Q})^{\mathsf{T}}D$; equals the $ict$ metric |
 | $\epsilon^{ijk}$ | Levi-Civita symbol on the indices $1, 2, 3$ |
-| $N(\tilde{Q}) = \sum_\mu Q_\mu^2$ | Norm form; $\det\rho_L = N^2$, $\det\Phi = N$ |
+| $N(\tilde{Q}) = \sum_\mu Q_\mu^2$ | Biquaternion norm; $\det\rho_L = N^2$, $\det\Phi = N$ |
 | $\bar{\cdot}, {}^{*}, {}^{\dagger} = \bar{\cdot}\circ{}^{*}, {}^{\flat} = -\dagger$ | Quaternion, complex, Hermitian, anti-Hermitian conjugation |
 | $\mathbb{C}_{\mathbb{B}}$ | Centre, the scalar subspace $\mathbb{C} e_0$; locus where $\rho_L = \rho_R$ |
 | $\mathbb{H}_{\mathbb{B}}, i\mathbb{H}_{\mathbb{B}}, \mathbb{M}_+, \mathbb{M}_-$ | Real sector, imaginary sector, informational sector, material sector |

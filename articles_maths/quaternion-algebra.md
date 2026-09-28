@@ -5,7 +5,9 @@
 
 This article introduces the quaternion algebra as an algebraic structure. The goal is to define the algebra precisely, establish its basic properties, and describe the distinguished real vector subspaces that arise from the natural conjugations.
 
-The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. No examples are given. The quaternion algebra is defined algebraically, and its identification with rotations is not covered here.
+The quadratic form the algebra carries — its polarisation, the Hermitian form and the inner product — is a form and a distance, and a norm is a distance: these belong to the topology group, in *Quaternion Norm and Invertibility*, and the present article only names them. The geometric reading of the algebra is likewise deferred to the geometry group, in *Quaternion Rotations and Reflections*.
+
+The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. No examples are given.
 
 ## Quaternions
 
@@ -69,25 +71,15 @@ The notation $e_0, e_1, e_2, e_3$ avoids all three collisions. It also has the a
 
 **Associative.** Quaternion multiplication is associative: $(pq)r = p(qr)$.
 
-**Division algebra.** Every nonzero quaternion has a multiplicative inverse. The inverse is
+**Conjugation.** The **quaternion conjugate** of $\tilde q$ is
 
 $$
-\tilde q^{-1} = \frac{\bar{\tilde q}}{|\tilde q|^2},
+\bar{\tilde q} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3,
 $$
 
-where
+an involution of the algebra that reverses the order of a product, $\overline{pq} = \bar{\tilde q}\,\bar p$.
 
-$$
-\bar{\tilde q} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3
-$$
-
-is the **quaternion conjugate**, and
-
-$$
-|\tilde q|^2 = \tilde q \bar{\tilde q} = \sum_{\mu=0}^{3} q_\mu^2
-$$
-
-is the **norm squared**. The norm is multiplicative: $|pq| = |p||\tilde q|$.
+**Division algebra.** Every non-zero quaternion has a two-sided multiplicative inverse, so $\mathbb{H}$ is a division algebra; it is the largest-dimensional associative real division algebra. The inverse is expressed through the quaternion norm, and the quaternion norm, its multiplicativity and the invertibility criterion it supplies are a form and a distance, developed in *Quaternion Norm and Invertibility* and not here.
 
 **Frobenius theorem.** The quaternion algebra is one of only three finite-dimensional associative real division algebras, the others being $\mathbb{R}$ and $\mathbb{C}$.
 
@@ -266,95 +258,7 @@ $$
 
 This is the same decomposition as above, written in terms of the eigenspaces of the conjugation.
 
-**Remark.** The biquaternion algebra carries three decompositions — the quaternion, the Hermitian and the centre–vector decomposition — because it has a central imaginary unit and a complex conjugation beside the quaternion conjugation. Here the centre of $\mathbb{H}$ is the real line and the only involution is quaternion conjugation, so the conjugate decomposition above is the only one, and the scalar–vector decomposition within it is the single decomposition from which the norm form below is read.
-
-## Quadratic Forms and Inner Product
-
-### The Norm Form
-
-The **norm form** of a quaternion $\tilde q$ is
-
-$$
-N(\tilde q) = \tilde q \bar{\tilde q} = q_0^2 + q_1^2 + q_2^2 + q_3^2,
-$$
-
-where $\bar{\tilde q}$ is the quaternion conjugate. It is a non-negative real number, and it vanishes if and only if $\tilde q = 0$. It is a genuine positive-definite quadratic form.
-
-The norm form is **multiplicative**:
-
-$$
-N(pq) = N(p) N(\tilde q).
-$$
-
-This is the statement that $|pq|^2 = |p|^2 |\tilde q|^2$, which follows from the multiplicativity of the quaternion norm.
-
-### The Hermitian Form
-
-The **Hermitian form** of a quaternion $\tilde q$ is
-
-$$
-\tilde q \bar{\tilde q} = q_0^2 + q_1^2 + q_2^2 + q_3^2.
-$$
-
-In the quaternion case it coincides with the norm form: the coefficients are real, so Hermitian conjugation reduces to quaternion conjugation, $\tilde q^{\dagger} = \bar{\tilde q}$, and the two expressions are the same. It is a non-negative real number, and it vanishes if and only if $\tilde q = 0$.
-
-The corresponding **Euclidean norm** is
-
-$$
-\lvert \tilde q\rvert = \sqrt{\tilde q \bar{\tilde q}} = \sqrt{q_0^2 + q_1^2 + q_2^2 + q_3^2}.
-$$
-
-It is a genuine norm on the real vector space $\mathbb{H} \cong \mathbb{R}^4$: positive-definite, subadditive, and homogeneous of degree one. It **is** multiplicative with respect to the quaternion product, because $|pq| = |p| |\tilde q|$.
-
-### The Inner Product
-
-The **inner product** of two quaternions $p$ and $\tilde q$ is the real number
-
-$$
-\langle p, \tilde q \rangle = \operatorname{Sc}(p \bar{\tilde q}) = \operatorname{Sc}(\bar{p} \tilde q) = p_0 q_0 + \mathbf{p} \cdot \mathbf{q},
-$$
-
-the scalar part of the quaternion product $\bar{p} \tilde q$. It is symmetric and bilinear, and it is the polarisation of the norm form.
-
-The full product $\bar{p} \tilde q$, of which the inner product is the scalar part, is the quaternion
-
-$$
-\bar{p} \tilde q = (p_0 q_0 + \mathbf{p} \cdot \mathbf{q}) + (p_0 \mathbf{q} - q_0 \mathbf{p} - \mathbf{p} \times \mathbf{q}).
-$$
-
-Its scalar part is the inner product, measuring the overlap of the two elements, and its vector part measures their oriented area and relative orientation.
-
-The inner product is linear in each argument separately,
-
-$$
-\langle p \lambda, \tilde q \rangle = \lambda \langle p, \tilde q \rangle, \qquad \langle p, \tilde q \lambda \rangle = \langle p, \tilde q \rangle \lambda, \qquad \lambda \in \mathbb{R},
-$$
-
-and it is symmetric,
-
-$$
-\langle p, \tilde q \rangle = \langle \tilde q, p \rangle .
-$$
-
-The inner product of a quaternion with itself is
-
-$$
-\langle \tilde q, \tilde q \rangle = \bar{\tilde q} \tilde q = q_0^2 + q_1^2 + q_2^2 + q_3^2,
-$$
-
-which is the Hermitian form. So the Hermitian form is the diagonal value of the inner product, and it coincides with the norm form.
-
-### Relation Between the Three Forms
-
-The three quadratic objects are related as follows:
-
-- **Norm form:** $N(\tilde q) = \tilde q \bar{\tilde q} = q_0^2 + q_1^2 + q_2^2 + q_3^2$. Non-negative real, vanishes only at $\tilde q = 0$, multiplicative.
-- **Hermitian form:** $\tilde q \bar{\tilde q} = q_0^2 + q_1^2 + q_2^2 + q_3^2$. Same as the norm form, because the coefficients are real and Hermitian conjugation then reduces to quaternion conjugation.
-- **Inner product:** $\langle p, \tilde q \rangle = \operatorname{Sc}(p \bar{\tilde q}) = \sum_\mu p_\mu q_\mu = \operatorname{Sc}(\bar{p} \tilde q)$. Real-valued, symmetric and bilinear, the polarisation of the norm form, whose diagonal value is the Hermitian form.
-
-The three are distinct, and each is useful in a different context. The norm form controls the multiplicative structure (invertibility, zero divisors). The Hermitian form controls the topological structure (continuity, completeness). The inner product combines both, and is the natural pairing on the algebra as a real vector space.
-
-In the quaternion case the norm form and the Hermitian form coincide, while the inner product is their common polarisation, because the coefficients are real and Hermitian conjugation reduces to quaternion conjugation. This is a degeneracy of the four-dimensional case — in the biquaternion algebra the three objects separate, since the norm form is complex-valued there — and it is the reason the quaternion algebra is often treated as a special case rather than as a general example.
+**Remark.** The biquaternion algebra carries three decompositions — the quaternion, the Hermitian and the centre–vector decomposition — because it has a central imaginary unit and a complex conjugation beside the quaternion conjugation. Here the centre of $\mathbb{H}$ is the real line and the only involution is quaternion conjugation, so the conjugate decomposition above is the only one, and the scalar–vector decomposition within it is the single decomposition from which the quaternion norm is read. The quaternion norm, its polarisation, the Hermitian form and the inner product are a form and a distance: they are developed in *Quaternion Norm and Invertibility*, in the topology group, and are only named here.
 
 ## The Lie Algebra Structure
 
@@ -370,13 +274,13 @@ $$
 [\mathbf{p}, \mathbf{q}] = 2 \mathbf{p} \times \mathbf{q}.
 $$
 
-So the vector subspace $\operatorname{Im}\mathbb{H}$, equipped with the commutator bracket, is a Lie subalgebra of $\mathbb{H}$ isomorphic to the Lie algebra $\mathfrak{so}(3)$ of infinitesimal rotations:
+So the vector subspace $\operatorname{Im}\mathbb{H}$, equipped with the commutator bracket, is a Lie subalgebra of $\mathbb{H}$ isomorphic to the Lie algebra $\mathrm{SO}(3)$ of skew-symmetric $3\times 3$ real matrices:
 
 $$
-\operatorname{Im}\mathbb{H} \cong \mathfrak{so}(3).
+\operatorname{Im}\mathbb{H} \cong \mathrm{SO}(3).
 $$
 
-This is the algebraic origin of the relationship between quaternions and rotations. The pure quaternions generate the rotations, and the commutator bracket on the pure quaternions is the Lie bracket of the rotation algebra.
+This is the algebraic origin of the Lie algebra structure that the pure quaternions carry, and of the relation of the algebra to the orthogonal Lie algebra. Its geometric reading — the motions the bracket generates on the vector subspace — belongs to the geometry group and is developed in *Quaternion Rotations and Reflections* and *Quaternion Automorphisms and Derivations*.
 
 ## The Tensor Product Decomposition
 
@@ -392,11 +296,11 @@ The tensor product decomposition is the algebraic content of the classification 
 
 ## Summary
 
-The quaternion algebra $\mathbb{H}$ is the four-dimensional real algebra with basis $e_0 = 1, e_1, e_2, e_3$, in which $e_0$ is the unit, the three imaginary units square to $-e_0$, and distinct imaginary units anticommute. It is associative with unit, non-commutative, and a division algebra: every nonzero element is invertible, with $\tilde q^{-1} = \bar{\tilde q}/N(\tilde q)$. A general element is written in developed form as $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$.
+The quaternion algebra $\mathbb{H}$ is the four-dimensional real algebra with basis $e_0 = 1, e_1, e_2, e_3$, in which $e_0$ is the unit, the three imaginary units square to $-e_0$, and distinct imaginary units anticommute. It is associative with unit, non-commutative, and a division algebra: every non-zero element is invertible, the inverse being expressed through the quaternion norm of *Quaternion Norm and Invertibility*. A general element is written in developed form as $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$.
 
 The algebra carries three conjugations, and each has its fixed-point subspace; the fundamental one is quaternion conjugation, whose fixed points form the real subspace $\mathbb{R}_{\mathbb{H}}$ and whose anti-fixed points form the vector subspace $\operatorname{Im}\mathbb{H}$. These are the eigenspaces for the eigenvalues $+1$ and $-1$, and every quaternion decomposes uniquely both as a scalar part plus a vector part and as the sum of the two eigencomponents.
 
-Further structures are attached to the algebra. The norm form $N(\tilde q) = \tilde q\bar{\tilde q} = q_0^2 + q_1^2 + q_2^2 + q_3^2$ is positive definite and multiplicative, and it is the form that controls invertibility; with it come the Hermitian form and the inner product on $\mathbb{H}$ as a real vector space. The commutator $[p,\tilde q] = pq - qp$ gives $\mathbb{H}$ a Lie algebra structure, in which the commutator of two pure quaternions is expressed by the vector product on $\mathbb{R}^3$. The article closes with the tensor product decomposition, in which the Clifford algebra of a direct sum is the graded tensor product of the Clifford algebras of the summands, giving $\mathbb{H}\otimes_{\mathbb{R}}\mathbb{H}\cong M_4(\mathbb{R})$.
+The commutator $[p,\tilde q] = pq - qp$ gives $\mathbb{H}$ a Lie algebra structure, in which the commutator of two pure quaternions is expressed by the vector product on $\mathbb{R}^3$; the vector subspace is thereby the orthogonal Lie algebra $\mathrm{SO}(3)$. The article closes with the tensor product decomposition, in which the Clifford algebra of a direct sum is the graded tensor product of the Clifford algebras of the summands, giving $\mathbb{H}\otimes_{\mathbb{R}}\mathbb{H}\cong M_4(\mathbb{R})$. The quaternion norm, its polarisation, the Hermitian form and the inner product are a form and a distance and belong to the topology group, in *Quaternion Norm and Invertibility*.
 
 ## Summary of Notation
 
@@ -411,13 +315,9 @@ Further structures are attached to the algebra. The norm form $N(\tilde q) = \ti
 | $\bar{\tilde q} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$ | Quaternion conjugate |
 | $-\bar{\tilde q} = -q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ | Vector conjugate |
 | $-\tilde q = -q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$ | Total conjugate |
-| $N(\tilde q) = \tilde q \bar{\tilde q}$ | Norm form |
-| $\tilde q \bar{\tilde q} = q_0^2 + q_1^2 + q_2^2 + q_3^2$ | Hermitian form, coinciding with the norm form |
-| $\langle p, \tilde q \rangle = \operatorname{Sc}(p\bar{\tilde q})$ | Inner product, the polarisation of $N$ |
-| $\lvert \tilde q\rvert = \sqrt{\tilde q \bar{\tilde q}}$ | Modulus, the Euclidean norm |
 | $\mathbb{R}_{\mathbb{H}}$ | Real subspace, fixed-point set of $\bar{\cdot}$ |
 | $\operatorname{Im}\mathbb{H}$ | Vector subspace, fixed-point set of $\tilde{\cdot}$ |
-| $\mathfrak{so}(3)$ | Lie algebra of rotations |
+| $\mathrm{SO}(3)$ | Lie algebra of rotations |
 
 
 

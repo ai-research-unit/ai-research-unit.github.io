@@ -201,7 +201,7 @@ $$
 \frac{f(z_0 + h) - f(z_0)}{h} = \frac{(u_x h_1 + u_y h_2) + i (v_x h_1 + v_y h_2)}{h_1 + i h_2} + o(1).
 $$
 
-For the limit to exist independently of the direction of $h$, the numerator must be a complex multiple of $h$. This forces the Cauchy–Riemann equations. $\square$
+For the limit to exist independently of the direction of $h$, the numerator must be a complex multiple of $h$. This forces the Cauchy–Riemann equations.
 
 **Corollary.** If $f$ is holomorphic, then $u$ and $v$ are harmonic:
 
@@ -209,7 +209,7 @@ $$
 \Delta u = 0, \qquad \Delta v = 0.
 $$
 
-**Proof.** Differentiate the Cauchy–Riemann equations and use the equality of mixed partials. $\square$
+**Proof.** Differentiate the Cauchy–Riemann equations and use the equality of mixed partials.
 
 ### The Wirtinger Derivatives
 
@@ -251,7 +251,7 @@ A map $f : U \to \mathbb{C}$ is **conformal** at $z_0$ if it preserves angles be
 
 **Theorem.** If $f$ is holomorphic at $z_0$ with $f'(z_0) \neq 0$, then $f$ is conformal at $z_0$, and the local behavior of $f$ near $z_0$ is multiplication by $f'(z_0)$, i.e., a rotation by $\arg f'(z_0)$ and a scaling by $|f'(z_0)|$.
 
-**Proof.** Write $f(z) - f(z_0) = f'(z_0)(z - z_0) + o(|z - z_0|)$. The linear term is multiplication by $f'(z_0)$, which is a rotation and a scaling. $\square$
+**Proof.** Write $f(z) - f(z_0) = f'(z_0)(z - z_0) + o(|z - z_0|)$. The linear term is multiplication by $f'(z_0)$, which is a rotation and a scaling.
 
 ### Möbius Transformations
 
@@ -299,7 +299,7 @@ $$
 \oint_\gamma f(z) \, dz = 0.
 $$
 
-**Proof.** For a triangle, subdivide repeatedly and use the fact that the integral over the small triangles is bounded by the area times the supremum of $|f'|$. For a general contour, approximate by polygons. $\square$
+**Proof.** For a triangle, subdivide repeatedly and use the fact that the integral over the small triangles is bounded by the area times the supremum of $|f'|$. For a general contour, approximate by polygons.
 
 **Corollary.** On a simply connected domain, the integral of a holomorphic function is path-independent. The function
 
@@ -317,7 +317,7 @@ $$
 f(z) = \frac{1}{2\pi i} \oint_{|w - z_0| = r} \frac{f(w)}{w - z} \, dw.
 $$
 
-**Proof.** Apply the Cauchy–Goursat theorem to the function $g(w) = (f(w) - f(z))/(w - z)$ on the punctured disk, then let the radius of the small circle around $z$ tend to zero. $\square$
+**Proof.** Apply the Cauchy–Goursat theorem to the function $g(w) = (f(w) - f(z))/(w - z)$ on the punctured disk, then let the radius of the small circle around $z$ tend to zero.
 
 **Corollary (derivatives).** Under the same hypotheses, $f$ is infinitely differentiable, and
 
@@ -335,17 +335,17 @@ $$
 
 **Theorem (Liouville).** Every bounded entire function is constant.
 
-**Proof.** Apply the Cauchy estimates to $f'$ on a circle of radius $r$ around $z_0$. Since $f$ is bounded by $M$, we have $|f'(z_0)| \leq M/r$ for every $r > 0$. Let $r \to \infty$ to get $f'(z_0) = 0$. Since $z_0$ is arbitrary, $f' = 0$ everywhere, so $f$ is constant. $\square$
+**Proof.** Apply the Cauchy estimates to $f'$ on a circle of radius $r$ around $z_0$. Since $f$ is bounded by $M$, we have $|f'(z_0)| \leq M/r$ for every $r > 0$. Let $r \to \infty$ to get $f'(z_0) = 0$. Since $z_0$ is arbitrary, $f' = 0$ everywhere, so $f$ is constant.
 
 **Corollary (Fundamental Theorem of Algebra).** Every non-constant polynomial with complex coefficients has a root in $\mathbb{C}$.
 
-**Proof.** If $p$ has no root, then $1/p$ is entire and bounded (since $|p(z)| \to \infty$ as $|z| \to \infty$), hence constant by Liouville. Contradiction. $\square$
+**Proof.** If $p$ has no root, then $1/p$ is entire and bounded (since $|p(z)| \to \infty$ as $|z| \to \infty$), hence constant by Liouville. Contradiction.
 
 ### Morera's Theorem
 
 **Theorem (Morera).** If $f$ is continuous on a domain $U$ and $\oint_\gamma f = 0$ for every closed contour $\gamma$ in $U$, then $f$ is holomorphic on $U$.
 
-**Proof.** Define $F(z) = \int_{z_0}^z f(w) \, dw$. The hypothesis makes $F$ well-defined, and $F' = f$. Since $F$ is holomorphic, $F$ is infinitely differentiable, so $f$ is holomorphic. $\square$
+**Proof.** Define $F(z) = \int_{z_0}^z f(w) \, dw$. The hypothesis makes $F$ well-defined, and $F' = f$. Since $F$ is holomorphic, $F$ is infinitely differentiable, so $f$ is holomorphic.
 
 ## Series Representations
 
@@ -385,7 +385,7 @@ $$
 
 valid for $|z - z_0| < r$.
 
-**Proof.** Use the Cauchy integral formula and expand $1/(w - z)$ as a geometric series in $(z - z_0)/(w - z_0)$. $\square$
+**Proof.** Use the Cauchy integral formula and expand $1/(w - z)$ as a geometric series in $(z - z_0)/(w - z_0)$.
 
 **Corollary.** A holomorphic function is analytic: it equals its Taylor series in a neighborhood of every point.
 
@@ -405,7 +405,7 @@ $$
 c_n = \frac{1}{2\pi i} \oint_{|w - z_0| = \rho} \frac{f(w)}{(w - z_0)^{n+1}} \, dw, \qquad r < \rho < R.
 $$
 
-**Proof.** Apply the Cauchy integral formula on the annulus and expand the kernel in two geometric series, one for the inner boundary and one for the outer boundary. $\square$
+**Proof.** Apply the Cauchy integral formula on the annulus and expand the kernel in two geometric series, one for the inner boundary and one for the outer boundary.
 
 ## Singularities
 
@@ -439,7 +439,7 @@ $$
 \oint_\gamma f(z) \, dz = 2\pi i \sum_{k=1}^n \operatorname{Res}(f, z_k).
 $$
 
-**Proof.** Apply the Cauchy–Goursat theorem to the domain with small disks removed around each singularity, then use the definition of the residue. $\square$
+**Proof.** Apply the Cauchy–Goursat theorem to the domain with small disks removed around each singularity, then use the definition of the residue.
 
 ### Computation of Residues
 
@@ -499,11 +499,11 @@ where $\operatorname{ord}(f, z_k)$ is the order of the zero and $\operatorname{o
 
 **Theorem (Rouché).** Let $f$ and $g$ be holomorphic on a simply connected domain, and let $\gamma$ be a closed contour such that $|g(z)| < |f(z)|$ on $\gamma$. Then $f$ and $f + g$ have the same number of zeros inside $\gamma$, counted with multiplicity.
 
-**Proof.** Apply the argument principle to $f + tg$ for $t \in [0, 1]$ and note that the number of zeros is a continuous integer-valued function of $t$. $\square$
+**Proof.** Apply the argument principle to $f + tg$ for $t \in [0, 1]$ and note that the number of zeros is a continuous integer-valued function of $t$.
 
 **Corollary (Fundamental Theorem of Algebra, again).** Every polynomial of degree $n \geq 1$ has exactly $n$ roots in $\mathbb{C}$, counted with multiplicity.
 
-**Proof.** Write $p(z) = a_n z^n + \dots + a_0$. On a large circle, $|a_n z^n| > |a_{n-1} z^{n-1} + \dots + a_0|$, so by Rouché, $p$ has the same number of zeros as $a_n z^n$, which is $n$. $\square$
+**Proof.** Write $p(z) = a_n z^n + \dots + a_0$. On a large circle, $|a_n z^n| > |a_{n-1} z^{n-1} + \dots + a_0|$, so by Rouché, $p$ has the same number of zeros as $a_n z^n$, which is $n$.
 
 ## Summary
 

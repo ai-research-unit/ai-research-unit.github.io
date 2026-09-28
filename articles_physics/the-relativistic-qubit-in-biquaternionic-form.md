@@ -4,17 +4,17 @@
 
 The elementary carrier of information in this framework is the qubit, and the qubit is not postulated: it is the defining module of the algebra. An algebra isomorphic to $M_2(\mathbb{C})$ has exactly one simple left module, the column space $S = \mathbb{C}^2$, and the rank-one projectors on $S$ are exactly the trace-one idempotents of the Hermitian sector $\mathbb{M}_+$. The state vectors are elements of $S$, the states in the statistical sense are positive trace-one elements of $\mathbb{M}_+$, and the two are related by the rank-one correspondence. What turns this qubit into a **relativistic** qubit is not a new carrier; it is the action on the carrier. The algebra's unit-norm elements form $SL(2,\mathbb{C})$, the double cover of the proper orthochronous Lorentz group, and they act on $S$ by left multiplication. The qubit's symmetry group is therefore the Lorentz group, not the unitary group, and the consequences of that fact are the subject of this article.
 
-Three features distinguish the relativistic qubit from the non-relativistic one, and the article is organised around them. First, the left action of $SL(2,\mathbb{C})$ on $S$ is **not unitary**: it preserves the algebra's norm form but not the Hilbert-space norm of a spinor, so the state space of the qubit is invariant only under the compact subgroup $SU(2)$. Second, the pure states — the rays of $S$ — are the **celestial sphere**: the ratio of the two spinor components is a complex coordinate on $\mathbb{CP}^1$, the Lorentz group acts on it by Möbius transformations, and each ray determines a **future null four-vector** in the material sector $\mathbb{M}_-$, so that the pure informational states have a light-like geometric image. Third, the physically meaningful spin transformation at definite momentum is not the module action at all but the **little-group Wigner rotation**, a unitary element of $SU(2)$ that acts on the rest-frame qubit by a Bloch-sphere rotation; the non-unitary module action and the unitary physical rotation are two different objects, and keeping them apart is the main technical point of the article.
+Three features distinguish the relativistic qubit from the non-relativistic one, and the article is organised around them. First, the left action of $SL(2,\mathbb{C})$ on $S$ is **not unitary**: it preserves the algebra's biquaternion norm but not the Hilbert-space norm of a spinor, so the state space of the qubit is invariant only under the compact subgroup $SU(2)$. Second, the pure states — the rays of $S$ — are the **celestial sphere**: the ratio of the two spinor components is a complex coordinate on $\mathbb{CP}^1$, the Lorentz group acts on it by Möbius transformations, and each ray determines a **future null four-vector** in the material sector $\mathbb{M}_-$, so that the pure informational states have a light-like geometric image. Third, the physically meaningful spin transformation at definite momentum is not the module action at all but the **little-group Wigner rotation**, a unitary element of $SU(2)$ that acts on the rest-frame qubit by a Bloch-sphere rotation; the non-unitary module action and the unitary physical rotation are two different objects, and keeping them apart is the main technical point of the article.
 
 The article proceeds as follows. The carrier and its states are recalled. The Lorentz action on the carrier is set out, and its non-unitarity is derived. The pure states are identified with the celestial sphere, and the null-vector map is constructed and shown to intertwine the spinor action with the four-vector action. The mixed states and the little group are treated next, with the little group derived as the stabilizer of the four-velocity and the Wigner rotation defined algebraically. The two sectors are then read on the qubit's observables and generators, and the article closes with a summary.
 
-The notation is that of the foundational articles: $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, quaternion units $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$ and $e_1e_2 = e_3$, central scalar $i$ with $i^2 = -1$, trace $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$, Hermitian conjugation $\dagger$, and norm form $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$. The matrix model is $\Phi:\mathbb{B}\to M_2(\mathbb{C})$ with $e_0\mapsto I_2$, $e_k\mapsto -i\sigma_k$, $i\mapsto iI_2$. The spinor module is $S = \mathbb{C}^2$ with the left action $\rho_S(\tilde{Q})|u\rangle = \Phi(\tilde{Q})|u\rangle$. The Hermitian sector is $\mathbb{M}_+$ and the anti-Hermitian sector $\mathbb{M}_-$.
+The notation is that of the foundational articles: $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, quaternion units $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$ and $e_1e_2 = e_3$, central scalar $i$ with $i^2 = -1$, trace $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$, Hermitian conjugation $\dagger$, and biquaternion norm $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$. The matrix model is $\Phi:\mathbb{B}\to M_2(\mathbb{C})$ with $e_0\mapsto I_2$, $e_k\mapsto -i\sigma_k$, $i\mapsto iI_2$. The spinor module is $S = \mathbb{C}^2$ with the left action $\rho_S(\tilde{Q})|u\rangle = \Phi(\tilde{Q})|u\rangle$. The Hermitian sector is $\mathbb{M}_+$ and the anti-Hermitian sector $\mathbb{M}_-$.
 
 The companion articles supply the pieces:
 - Companion article *The Spinor Module in Biquaternionic Form and Its Lorentz Action*, for the defining module, its irreducibility, and the state correspondence.
 - Companion article *Quantum Mechanics in Biquaternionic Form*, for the Hermitian sector, the idempotents, the Bloch ball, and the conjugation action.
 - Companion article *The Bloch Ball as the Trace-One Slice of the Future Light Cone*, for the geometry of the state space.
-- Companion article *The Anti-Hermitian Subspace M- as the Material Sector*, for four-vectors, the norm form, and the interval.
+- Companion article *The Anti-Hermitian Subspace M- as the Material Sector*, for four-vectors, the biquaternion norm, and the interval.
 - Companion article *The Lorentz Group in Biquaternionic Form — Structure and Representations*, for $SL(2,\mathbb{C})$, its subgroups, and the Wigner rotation.
 
 ## The Qubit as the Defining Module
@@ -49,7 +49,7 @@ The word *native* is exact and is worth one paragraph, because it is what makes 
 
 ### The two actions of the unit-norm group
 
-A biquaternion of unit norm form,
+A biquaternion of unit norm,
 $$
 \tilde{\Lambda} = \cosh\frac{\psi}{2}\,e_0 + i\sinh\frac{\psi}{2}\,\hat{\mathbf{u}} \quad(\text{boost}), \qquad
 \tilde{R} = \cos\frac{\theta}{2}\,e_0 + \sin\frac{\theta}{2}\,\hat{\mathbf{n}} \quad(\text{rotation}),
@@ -66,7 +66,7 @@ this is the **spinor representation**, complex two-dimensional and faithful, and
 $$
 \tilde{Q} \ \longmapsto\ \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^\dagger , \qquad \tilde{Q}\in\mathbb{M}_- ;
 $$
-this is the **four-vector representation**. It preserves $\mathbb{M}_-$ by the sector identity of the companion structural article, and it preserves the norm form,
+this is the **four-vector representation**. It preserves $\mathbb{M}_-$ by the sector identity of the companion structural article, and it preserves the biquaternion norm,
 $$
 N\bigl(\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^\dagger\bigr) = N(\tilde{\Lambda})\,N(\tilde{Q})\,N(\tilde{\Lambda}^\dagger) = N(\tilde{Q}),
 $$
@@ -102,7 +102,7 @@ The intersection of the two normalization conditions is worth recording, since i
 $$
 SU(2) = \bigl\{\tilde{\Lambda} : N(\tilde{\Lambda}) = 1\bigr\}\cap\bigl\{\tilde{U} : \tilde{U}\tilde{U}^\dagger = e_0\bigr\}.
 $$
-Inside $SU(2)$ the left action is unitary and the conjugation action is an automorphism, and a central phase acts trivially on rays. The two conditions are independent outside it: a boost has unit norm form but is not unitary, and a general unitary element of $U(2)$ need not have unit norm form. The relativistic qubit therefore has a symmetry group $SL(2,\mathbb{C})$ and a *unitary* symmetry group $SU(2)$, and the quotient structure between them — the space of boosts modulo rotations — is the hyperbolic part of the group in which the frame dependence resides.
+Inside $SU(2)$ the left action is unitary and the conjugation action is an automorphism, and a central phase acts trivially on rays. The two conditions are independent outside it: a boost has unit norm but is not unitary, and a general unitary element of $U(2)$ need not have unit norm. The relativistic qubit therefore has a symmetry group $SL(2,\mathbb{C})$ and a *unitary* symmetry group $SU(2)$, and the quotient structure between them — the space of boosts modulo rotations — is the hyperbolic part of the group in which the frame dependence resides.
 
 ## Pure States: The Celestial Sphere
 
@@ -137,7 +137,7 @@ $$
 $$
 Two elementary facts identify $\tilde{V}$ as a future null four-vector.
 
-**It is null.** The determinant of a rank-one matrix vanishes, and under the matrix model the determinant is the norm form, so
+**It is null.** The determinant of a rank-one matrix vanishes, and under the matrix model the determinant is the biquaternion norm, so
 $$
 N\bigl(\tilde{P}(u)\bigr) = \det\Phi\bigl(\tilde{P}(u)\bigr) = \det\bigl(|u\rangle\langle u|\bigr) = 0 ,
 \qquad
@@ -209,9 +209,9 @@ Let the particle have four-velocity $\tilde{U}$, a future-directed timelike elem
 $$
 \mathrm{Little}(\tilde{U}) = \bigl\{\tilde{\Lambda} : \tilde{\Lambda}\tilde{U}\tilde{\Lambda}^\dagger = \tilde{U}\bigr\}.
 $$
-Because the congruence preserves the norm form, the stabilizer of the timelike direction $\tilde{U}$ is conjugate to the stabilizer of the rest four-velocity $ic\,e_0$; and the stabilizer of $ic\,e_0$ consists of the elements with $\tilde{\Lambda}\tilde{\Lambda}^\dagger = e_0$ (the central factor cancels), which is $U(2)$, whose unit-determinant part is $SU(2)$. Hence
+Because the congruence preserves the biquaternion norm, the stabilizer of the timelike direction $\tilde{U}$ is conjugate to the stabilizer of the rest four-velocity $ic\,e_0$; and the stabilizer of $ic\,e_0$ consists of the elements with $\tilde{\Lambda}\tilde{\Lambda}^\dagger = e_0$ (the central factor cancels), which is $U(2)$, whose unit-determinant part is $SU(2)$. Hence
 $$
-\mathrm{Little}(\tilde{U}) \cong U(2), \qquad \text{its unit-norm-form part} = SU(2),
+\mathrm{Little}(\tilde{U}) \cong U(2), \qquad \text{its unit-norm part} = SU(2),
 $$
 and this is the little group of a **massive** particle. Its representations are the spin representations: the spin-$\tfrac12$ representation is the defining two-dimensional one, and the qubit at rest is the carrier of that representation.
 

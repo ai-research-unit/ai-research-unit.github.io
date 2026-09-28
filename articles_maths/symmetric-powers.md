@@ -110,7 +110,7 @@ Equivalently, $J_n$ is spanned by the images of the operators $\sigma - 1$, $\si
 
 *Proof.* Write $Q = M^{\otimes n}/J_n$ and let $q : M^{\otimes n} \to Q$ be the quotient map. The composite $\pi = q \circ \otimes^n$ is symmetric multilinear: it is multilinear because $\otimes^n$ is and $q$ is linear, and it is symmetric because $q$ kills every $J_n$, so $q(x_1 \otimes \cdots \otimes x_n) = q(x_{\sigma(1)} \otimes \cdots \otimes x_{\sigma(n)})$.
 
-Now let $f : M^n \to P$ be symmetric multilinear. By the universal property of the tensor power there is a unique $R$-linear $\bar f : M^{\otimes n} \to P$ with $\bar f(x_1 \otimes \cdots \otimes x_n) = f(x_1, \ldots, x_n)$. Symmetry of $f$ gives $\bar f(x_1 \otimes \cdots \otimes x_n) = \bar f(x_{\sigma(1)} \otimes \cdots \otimes x_{\sigma(n)})$, so $\bar f$ vanishes on the generators of $J_n$; hence $\bar f$ factors uniquely through a map $\tilde f : Q \to P$. This is the required factorisation, and uniqueness holds because the elementary tensors generate $M^{\otimes n}$, hence their images generate $Q$. $\square$
+Now let $f : M^n \to P$ be symmetric multilinear. By the universal property of the tensor power there is a unique $R$-linear $\bar f : M^{\otimes n} \to P$ with $\bar f(x_1 \otimes \cdots \otimes x_n) = f(x_1, \ldots, x_n)$. Symmetry of $f$ gives $\bar f(x_1 \otimes \cdots \otimes x_n) = \bar f(x_{\sigma(1)} \otimes \cdots \otimes x_{\sigma(n)})$, so $\bar f$ vanishes on the generators of $J_n$; hence $\bar f$ factors uniquely through a map $\tilde f : Q \to P$. This is the required factorisation, and uniqueness holds because the elementary tensors generate $M^{\otimes n}$, hence their images generate $Q$.
 
 Thus the symmetric power is exactly the **module of coinvariants** of the permutation action,
 
@@ -174,7 +174,7 @@ $$
 M^n \longrightarrow P_n, \qquad (u_1, \ldots, u_n) \longmapsto \prod_{j=1}^{n} \Bigl(\sum_{i=1}^{d} u_{j,i}  x_i\Bigr),
 $$
 
-where $u_j = \sum_i u_{j,i} e_i$, is symmetric multilinear, so by the universal property it induces an $R$-linear map $\Phi : \operatorname{Sym}^n M \to P_n$ with $\Phi(e^a) = x^a$. In the other direction let $\psi : P_n \to \operatorname{Sym}^n M$ be the unique $R$-linear map on the basis with $\psi(x^a) = e^a$. Then $\Phi\psi = \operatorname{id}_{P_n}$ because it fixes the basis, and $\psi\Phi(e^a) = \psi(x^a) = e^a$ for every $a$, so $\psi\Phi = \operatorname{id}_{\operatorname{Sym}^n M}$ because the $e^a$ span. Hence $\Phi$ is an isomorphism and the $e^a$ are a basis. $\square$
+where $u_j = \sum_i u_{j,i} e_i$, is symmetric multilinear, so by the universal property it induces an $R$-linear map $\Phi : \operatorname{Sym}^n M \to P_n$ with $\Phi(e^a) = x^a$. In the other direction let $\psi : P_n \to \operatorname{Sym}^n M$ be the unique $R$-linear map on the basis with $\psi(x^a) = e^a$. Then $\Phi\psi = \operatorname{id}_{P_n}$ because it fixes the basis, and $\psi\Phi(e^a) = \psi(x^a) = e^a$ for every $a$, so $\psi\Phi = \operatorname{id}_{\operatorname{Sym}^n M}$ because the $e^a$ span. Hence $\Phi$ is an isomorphism and the $e^a$ are a basis.
 
 Equivalently, the map $R[x_1, \ldots, x_d] \to \operatorname{Sym}(R^d)$ sending $x_i \mapsto e_i$ is an isomorphism of graded algebras; this identification is developed.
 
@@ -243,7 +243,7 @@ $$
 \operatorname{SymMult}_R\bigl((M \oplus N)^n; P\bigr) \cong \prod_{k=0}^{n} \operatorname{Hom}_R\bigl(\operatorname{Sym}^k M \otimes_R \operatorname{Sym}^{n-k} N,\, P\bigr),
 $$
 
-where the right-hand side uses the tensor–hom adjunction of *Modules* §13. Both sides are natural in $P$, so by the Yoneda lemma the representing objects are isomorphic, which is the displayed isomorphism. $\square$
+where the right-hand side uses the tensor–hom adjunction of *Modules* §13. Both sides are natural in $P$, so by the Yoneda lemma the representing objects are isomorphic, which is the displayed isomorphism.
 
 **Consistency check.** Over a field, taking $M = K^d$, $N = K^e$ and $P = K$ reduces the isomorphism to the dimension identity
 

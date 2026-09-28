@@ -17,11 +17,11 @@ $$
 (a,b)(c,d) = (ac - \bar db,\ da + b\bar c),
 $$
 
-and equipped with the norm form $N(x) = x\bar x = \bar x x \in \mathbb{R}$, which is positive definite and multiplicative: $N(xy) = N(x)N(y)$. Every nonzero octonion is invertible, with $x^{-1} = \bar x/N(x)$, and $\mathbb{O}$ is the last of the four normed division algebras; the automorphism group of $\mathbb{O}$ is the exceptional group $G_2$, a compact simple Lie group of dimension $14$.
+and equipped with the norm $N(x) = x\bar x = \bar x x \in \mathbb{R}$, which is positive definite and multiplicative: $N(xy) = N(x)N(y)$. Every nonzero octonion is invertible, with $x^{-1} = \bar x/N(x)$, and $\mathbb{O}$ is the last of the four normed division algebras; the automorphism group of $\mathbb{O}$ is the exceptional group $G_2$, a compact simple Lie group of dimension $14$.
 
 **Remark.** The construction and the uniqueness of the octonions among normed division algebras are the Hurwitz theorem, and their proper development — the multiplication table, the non-associativity of the associator, the relation to the exceptional Jordan algebra — belongs, which lies's order than this article and is not available here, and to *Normed Division Algebras and the Hurwitz Theorem*, which belongs to Part I and is, where the Cayley–Dickson construction and the Hurwitz theorem are stated. What is used here is only the norm, the conjugation, the multiplication and the fact that the automorphism group is $G_2$.
 
-**Definition.** Let $V = \mathbb{R}^7$ be the imaginary octonions, that is, the orthogonal complement of $1$ in $\mathbb{O}$ under the norm form. The **associative 3-form** is
+**Definition.** Let $V = \mathbb{R}^7$ be the imaginary octonions, that is, the orthogonal complement of $1$ in $\mathbb{O}$ under the norm. The **associative 3-form** is
 
 $$
 \varphi_0(u,v,w) = \langle u, vw\rangle, \qquad u, v, w \in \mathbb{R}^7,
@@ -43,7 +43,7 @@ $$
 
 and $\psi_0 = *_\varphi\varphi_0\in\Lambda^4(\mathbb{R}^7)^*$ is the **coassociative 4-form**, which is also $G_2$-invariant.
 
-**Proof.** The orbit dimension is the dimension of $GL(7)$ minus the dimension of the stabiliser, and the stabiliser is $G_2$ of dimension $14$; $49-14=35=\dim\Lambda^3(\mathbb{R}^7)^*$, so the orbit is open. The formula for the metric is the standard identity expressing $g$ in terms of $\varphi$; the invariance of $\psi_0$ follows from the $G_2$-invariance of $\varphi_0$ and of the Hodge star defined by the metric and the orientation that $\varphi_0$ induces. $\square$
+**Proof.** The orbit dimension is the dimension of $GL(7)$ minus the dimension of the stabiliser, and the stabiliser is $G_2$ of dimension $14$; $49-14=35=\dim\Lambda^3(\mathbb{R}^7)^*$, so the orbit is open. The formula for the metric is the standard identity expressing $g$ in terms of $\varphi$; the invariance of $\psi_0$ follows from the $G_2$-invariance of $\varphi_0$ and of the Hodge star defined by the metric and the orientation that $\varphi_0$ induces.
 
 **Definition.** The **Cayley 4-form** on $\mathbb{R}^8 = \mathbb{R}^7\oplus\mathbb{R}$ is the $4$-form
 
@@ -61,7 +61,7 @@ $$
 
 with $\dim SU(3) = 8$, $\dim G_2 = 14$, $\dim \mathrm{Spin}(7)=21$ and $\dim SO(8) = 28$; moreover $\mathrm{Spin}(7)/G_2 = S^7$ and $G_2/SU(3) = S^6$, so that $G_2$ acts transitively on the six-sphere and $\mathrm{Spin}(7)$ on the seven-sphere.
 
-**Proof.** The dimensional statements are the dimensions of the standard groups. The homogeneous space statements follow from the description of the stabilisers: $G_2$ acts transitively on the imaginary unit octonions, which are the unit sphere $S^6\subseteq\mathbb{R}^7$, with stabiliser the subgroup preserving a preferred imaginary unit, which is $SU(3)$; likewise $\mathrm{Spin}(7)$ acts transitively on the unit sphere of the spinor representation $\mathbb{R}^8$ with stabiliser $G_2$. $\square$
+**Proof.** The dimensional statements are the dimensions of the standard groups. The homogeneous space statements follow from the description of the stabilisers: $G_2$ acts transitively on the imaginary unit octonions, which are the unit sphere $S^6\subseteq\mathbb{R}^7$, with stabiliser the subgroup preserving a preferred imaginary unit, which is $SU(3)$; likewise $\mathrm{Spin}(7)$ acts transitively on the unit sphere of the spinor representation $\mathbb{R}^8$ with stabiliser $G_2$.
 
 ## $G_2$ Structures on a Seven-Manifold
 
@@ -85,7 +85,7 @@ which are described by the exterior derivatives: $d\varphi\in W_1\oplus W_3\oplu
 
 **Theorem (Fernández–Gray; the torsion-free case).** A $G_2$-structure $\varphi$ on a seven-manifold is torsion-free, that is $\nabla\varphi = 0$, if and only if $d\varphi = 0$ and $d\psi = 0$. In that case the holonomy group of $g_\varphi$ is contained in $G_2$, the metric is Ricci-flat, and the structure is called a **$G_2$-holonomy manifold** or a **$G_2$-manifold** when the holonomy equals $G_2$.
 
-**Proof sketch.** The equivalence of $\nabla\varphi=0$ with the pair of closedness conditions is the general principle of the Gray–Hervella type classifications: the covariant derivative of the defining form lies in a finite sum of irreducible modules, and each module is detected by one of the exterior derivatives of $\varphi$ and $\psi$; the two conditions together force $\nabla\varphi=0$. The holonomy statement follows because $\varphi$ is parallel, so the holonomy group preserves it and lies in its stabiliser $G_2$. Ricci-flatness is the theorem of Bonan: the holonomy representation is irreducible, so the curvature tensor lies in the finite-dimensional space of $G_2$-invariant algebraic curvature tensors, and every such tensor has vanishing Ricci contraction, whence the metric is Ricci-flat. $\square$
+**Proof sketch.** The equivalence of $\nabla\varphi=0$ with the pair of closedness conditions is the general principle of the Gray–Hervella type classifications: the covariant derivative of the defining form lies in a finite sum of irreducible modules, and each module is detected by one of the exterior derivatives of $\varphi$ and $\psi$; the two conditions together force $\nabla\varphi=0$. The holonomy statement follows because $\varphi$ is parallel, so the holonomy group preserves it and lies in its stabiliser $G_2$. Ricci-flatness is the theorem of Bonan: the holonomy representation is irreducible, so the curvature tensor lies in the finite-dimensional space of $G_2$-invariant algebraic curvature tensors, and every such tensor has vanishing Ricci contraction, whence the metric is Ricci-flat.
 
 **Proposition (Betti number constraints).** Let $M$ be a compact $G_2$-manifold with holonomy exactly $G_2$. Then $b_1(M) = b_6(M) = 0$, $b_2(M)=b_5(M)$, $b_3(M)=b_4(M)$, and the Euler characteristic vanishes: $\chi(M) = 0$.
 
@@ -95,13 +95,13 @@ $$
 \chi = 1 - 0 + b_2 - b_3 + b_4 - b_5 + b_6 - 1 = b_2 - b_3 + b_3 - b_2 = 0,
 $$
 
-because $b_6=b_1=0$. $\square$
+because $b_6=b_1=0$.
 
 **Definition.** Let $(M,\varphi)$ be a $G_2$-holonomy manifold. A $3$-dimensional submanifold $L\subseteq M$ is **associative** if $\varphi|_L = \mathrm{vol}_L$, and a $4$-dimensional submanifold $N\subseteq M$ is **coassociative** if $\psi|_N = \mathrm{vol}_N$.
 
 **Proposition.** Associative submanifolds are calibrated by $\varphi$ and coassociative submanifolds by $\psi = *\varphi$; hence both are volume-minimising in their homology classes. A coassociative submanifold carries a natural deformation theory in which the moduli space is the space of closed self-dual $2$-forms on $N$, of dimension $b^2_+(N)$.
 
-**Proof.** The calibration inequality is the pointwise statement $\varphi|_V \leq \mathrm{vol}_V$ for every oriented $3$-plane $V$, with equality exactly for the associative ones, and likewise for $\psi$ and the coassociative ones; the deformation statement is the classical McLean theorem for coassociative $4$-folds. $\square$
+**Proof.** The calibration inequality is the pointwise statement $\varphi|_V \leq \mathrm{vol}_V$ for every oriented $3$-plane $V$, with equality exactly for the associative ones, and likewise for $\psi$ and the coassociative ones; the deformation statement is the classical McLean theorem for coassociative $4$-folds.
 
 **Remark.** The associative and coassociative submanifolds are the analogues for $G_2$ geometry of the complex curves and the special Lagrangian submanifolds of a Calabi–Yau threefold, and the coassociative fibrations of a compact $G_2$-manifold — a fibration whose total space is $G_2$ and whose fibres are coassociative — are the tool by which the twisted connected sum construction of compact examples is carried out. The detailed theory of the calibrated submanifolds and of their moduli is the subject of the calibrated geometry literature cited below.
 
@@ -119,7 +119,7 @@ with $d\Phi\in W_1$ and $d\Psi\in W_2$. A $\mathrm{Spin}(7)$-structure is **tors
 
 **Theorem ($\mathrm{Spin}(7)$ holonomy).** For a $\mathrm{Spin}(7)$-structure $\Phi$ on an eight-manifold the following are equivalent: $d\Phi = 0$; $\nabla\Phi = 0$; the holonomy group of $g_\Phi$ is contained in $\mathrm{Spin}(7)$. In this case the metric $g_\Phi$ is Ricci-flat, and the structure is a **$\mathrm{Spin}(7)$-manifold** when the holonomy equals $\mathrm{Spin}(7)$.
 
-**Proof sketch.** As in the $G_2$ case, the components of $\nabla\Phi$ are detected by $d\Phi$ and $d\Psi$, and the vanishing of $d\Phi$ already forces the vanishing of $d\Psi$ for an eight-manifold with a $\mathrm{Spin}(7)$-structure by a dimensional and representation-theoretic accident; the holonomy then lies in the stabiliser $\mathrm{Spin}(7)$. Ricci-flatness is again the theorem of Bonan, by the same invariant-curvature-tensor argument as in the $G_2$ case. $\square$
+**Proof sketch.** As in the $G_2$ case, the components of $\nabla\Phi$ are detected by $d\Phi$ and $d\Psi$, and the vanishing of $d\Phi$ already forces the vanishing of $d\Psi$ for an eight-manifold with a $\mathrm{Spin}(7)$-structure by a dimensional and representation-theoretic accident; the holonomy then lies in the stabiliser $\mathrm{Spin}(7)$. Ricci-flatness is again the theorem of Bonan, by the same invariant-curvature-tensor argument as in the $G_2$ case.
 
 **Proposition (Betti number constraints).** Let $M$ be a compact $\mathrm{Spin}(7)$-manifold with holonomy exactly $\mathrm{Spin}(7)$. Then $b_1(M)=b_7(M)=0$, $b_2(M)=b_6(M)$, $b_3(M)=b_5(M)$, and
 
@@ -127,13 +127,13 @@ $$
 \chi(M) = 2 + 2b_2(M) - 2b_3(M) + b_4(M).
 $$
 
-**Proof.** The vanishing of $b_1$ is as in the $G_2$ case: a parallel $1$-form would be fixed by the holonomy group, and $\mathrm{Spin}(7)$ fixes no vector. The remaining identities are Poincaré duality, and the Euler characteristic is the alternating sum with $b_0=b_8=1$ and $b_1=b_7=0$. $\square$
+**Proof.** The vanishing of $b_1$ is as in the $G_2$ case: a parallel $1$-form would be fixed by the holonomy group, and $\mathrm{Spin}(7)$ fixes no vector. The remaining identities are Poincaré duality, and the Euler characteristic is the alternating sum with $b_0=b_8=1$ and $b_1=b_7=0$.
 
 **Definition.** A $4$-dimensional submanifold $N\subseteq M$ of a $\mathrm{Spin}(7)$-manifold is a **Cayley submanifold** if $\Phi|_N = \mathrm{vol}_N$.
 
 **Proposition.** Cayley submanifolds are calibrated by $\Phi$ and are volume-minimising in their homology classes; their deformation theory is elliptic and the moduli space is a smooth manifold of finite dimension for a generic Cayley submanifold.
 
-**Proof.** The calibration inequality is pointwise as in the $G_2$ case, with equality exactly on the Cayley planes; the deformation theory is that of the Cayley calibration and is the analogue of the associative case. $\square$
+**Proof.** The calibration inequality is pointwise as in the $G_2$ case, with equality exactly on the Cayley planes; the deformation theory is that of the Cayley calibration and is the analogue of the associative case.
 
 **Remark.** Cayley submanifolds are the eight-dimensional analogue of the complex surfaces in a Calabi–Yau fourfold and of the associative $3$-folds in a $G_2$-manifold. The four-cycle condition $\Phi|_N=\mathrm{vol}_N$ places them in the middle dimension, and the counting of Cayley submanifolds is governed by the same kind of enumerative invariants — the Donaldson–Thomas and Gromov–Witten theories for the even-dimensional holonomy geometries — as the curve counting in Calabi–Yau threefolds.
 
@@ -163,7 +163,7 @@ $$
 
 acting on $\mathbb{R}^n$ in the standard way.
 
-**Proof sketch.** The listed groups are exactly the closed connected subgroups of $SO(n)$ acting irreducibly on $\mathbb{R}^n$ that act transitively on the unit sphere and are not the isotropy representations of locally symmetric spaces; the classification is the theorem of Berger, with the locally symmetric cases handled by the theorem of Simons. $\square$
+**Proof sketch.** The listed groups are exactly the closed connected subgroups of $SO(n)$ acting irreducibly on $\mathbb{R}^n$ that act transitively on the unit sphere and are not the isotropy representations of locally symmetric spaces; the classification is the theorem of Berger, with the locally symmetric cases handled by the theorem of Simons.
 
 **Remark.** The two exceptional entries are $G_2$ in dimension seven and $\mathrm{Spin}(7)$ in dimension eight, and both are characterised by the existence of a parallel form of odd or even degree: the $3$-form $\varphi$ and the $4$-form $\Phi$. The parallel form is the geometric datum, the holonomy group is its stabiliser, and the torsion-free condition is the closedness of the form; in every entry of the list the Kähler-type geometries of even complex dimension are those with a parallel form of degree two, and the exceptional entries are those in which the parallel form has degree three or four. In this sense a $G_2$-manifold is the seven-dimensional analogue of a Calabi–Yau threefold, and a $\mathrm{Spin}(7)$-manifold the eight-dimensional analogue of a Calabi–Yau fourfold; the relation is made precise by the presence of the subgroups $SU(3)\subset G_2$ and $SU(4)\subset\mathrm{Spin}(7)$, which turn every Calabi–Yau threefold with a circle into a $G_2$-manifold and every Calabi–Yau fourfold into a $\mathrm{Spin}(7)$-manifold.
 

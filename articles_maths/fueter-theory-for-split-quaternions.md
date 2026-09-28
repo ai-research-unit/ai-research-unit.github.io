@@ -33,7 +33,7 @@ $$
 
 is the **ultrahyperbolic operator** of signature $(2,2)$.
 
-**Proof.** Expand $\nabla\bar{\nabla} = \sum_{\mu,\nu}e_\mu\bar e_\nu\partial_\mu\partial_\nu$. The diagonal coefficients are $e_0\bar e_0 = e_0$, $e_1\bar e_1 = -e_1^2 = e_0$, $e_2\bar e_2 = -e_2^2 = -e_0$, $e_3\bar e_3 = -e_0$; the off-diagonal coefficients vanish by the Clifford relations $e_\mu\bar e_\nu + e_\nu\bar e_\mu = 0$ for $\mu\neq\nu$. $\square$
+**Proof.** Expand $\nabla\bar{\nabla} = \sum_{\mu,\nu}e_\mu\bar e_\nu\partial_\mu\partial_\nu$. The diagonal coefficients are $e_0\bar e_0 = e_0$, $e_1\bar e_1 = -e_1^2 = e_0$, $e_2\bar e_2 = -e_2^2 = -e_0$, $e_3\bar e_3 = -e_0$; the off-diagonal coefficients vanish by the Clifford relations $e_\mu\bar e_\nu + e_\nu\bar e_\mu = 0$ for $\mu\neq\nu$.
 
 Thus the Fueter operator is a square root not of the Laplacian but of a wave operator: it is the Cauchy–Riemann operator of the Clifford algebra $\mathrm{Cl}_{2,2}$, of signature $(2,2)$. This is the single structural sign that separates the theory from the quaternion ($\mathrm{Cl}_{0,3}$) and biquaternion ($\mathrm{Cl}_{1,3}$) cases.
 
@@ -59,7 +59,7 @@ with the divergence, gradient and curl taken for the indefinite form $N|_V$. Lef
 
 **Proposition (harmonicity).** Every Fueter-regular function is $\Box$-harmonic: $\nabla F = 0$ implies $\Box F = \bar\nabla\nabla F = 0$. The converse is false.
 
-**Proof.** Immediate from the factorization; the function $F_0 = q_0$ is $\Box$-harmonic but $\nabla q_0 = e_0 \neq 0$. $\square$
+**Proof.** Immediate from the factorization; the function $F_0 = q_0$ is $\Box$-harmonic but $\nabla q_0 = e_0 \neq 0$.
 
 ## The Axial and Slice Approach
 
@@ -75,7 +75,7 @@ $$
 
 a **two-sheeted hyperboloid** of dimension $2$ in $V$, with the two sheets distinguished by the sign of the coefficient $q_1$. Each imaginary unit spans a slice $\mathbb{C}_I \cong \mathbb{C}$, and two slices $\mathbb{C}_I$, $\mathbb{C}_J$ coincide when $I = \pm J$ and otherwise meet only in $\mathbb{R}$.
 
-**Proof.** $I \in V$ satisfies $I^2 = -N(I)$ (the vector part squares to minus its norm), so $I^2 = -1$ iff $N(I) = 1$, which is the displayed hyperboloid, two-sheeted because $q_1^2 = 1+q_2^2+q_3^2\geq1$; the slice intersection statement is linear algebra. $\square$
+**Proof.** $I \in V$ satisfies $I^2 = -N(I)$ (the vector part squares to minus its split-quaternion norm), so $I^2 = -1$ iff $N(I) = 1$, which is the displayed hyperboloid, two-sheeted because $q_1^2 = 1+q_2^2+q_3^2\geq1$; the slice intersection statement is linear algebra.
 
 This is the first departure from the quaternion theory, where the imaginary units form the two-sphere $S^2$. Here there is no compact imaginary sphere: the imaginary units are unbounded and split into two sheets, so an "imaginary direction" must be selected one root at a time, as in the biquaternion case but for a different reason.
 
@@ -89,7 +89,7 @@ $$
 
 so $F$ is regular if and only if $F$ is holomorphic in $z$ in the classical sense. Hence every classical holomorphic function of $z = q_0+I\rho$, extended by constancy in the orthogonal directions, is Fueter-regular.
 
-**Proof.** Restricted to functions of $q_0,\rho$, the operator is $\nabla = e_0\partial_{q_0} + I\partial_\rho$, and $I^2 = -1$ makes $\mathbb{R}[I]$ a copy of $\mathbb{C}$ with $\bar z = q_0 - I\rho$; the classical Cauchy–Riemann operator of that copy is $\partial_{\bar z} = \tfrac12(\partial_{q_0} + I\partial_\rho)$. $\square$
+**Proof.** Restricted to functions of $q_0,\rho$, the operator is $\nabla = e_0\partial_{q_0} + I\partial_\rho$, and $I^2 = -1$ makes $\mathbb{R}[I]$ a copy of $\mathbb{C}$ with $\bar z = q_0 - I\rho$; the classical Cauchy–Riemann operator of that copy is $\partial_{\bar z} = \tfrac12(\partial_{q_0} + I\partial_\rho)$.
 
 This slice statement is exact and requires no modification for the split signature, because on a slice the form is definite (the slice is a copy of $\mathbb{C}$). It is the part of the theory that survives intact.
 
@@ -111,7 +111,7 @@ with **axial coefficients** $A, B$ that depend on the direction only through $\h
 
 **Theorem (the obstruction).** The axial representation is defined only on the timelike region $N(\mathbf v) > 0$. On the null cone $N(\mathbf v) = 0$ the axial direction is a zero divisor and no imaginary unit is defined; on the spacelike region $N(\mathbf v) < 0$ the normalised direction satisfies $\hat{\mathbf v}^2 = +1$, a root of $+1$, so the axial coefficient system is hyperbolic rather than complex. The region is the disjoint union of the timelike region $N(\mathbf v)>0$, on which the axial complex structure exists, the null cone $\mathcal{N}$, on which it degenerates, and the spacelike region $N(\mathbf v)<0$, on which it is replaced by a split-complex structure.
 
-**Proof.** $\hat{\mathbf v}^2 = -N(\mathbf v)/\rho^2 = -\operatorname{sgn}N(\mathbf v)$, so $\hat{\mathbf v}^2 = -1$ on the timelike region, $\hat{\mathbf v}^2 = +1$ on the spacelike region, and $\hat{\mathbf v}$ is undefined on the null cone. $\square$
+**Proof.** $\hat{\mathbf v}^2 = -N(\mathbf v)/\rho^2 = -\operatorname{sgn}N(\mathbf v)$, so $\hat{\mathbf v}^2 = -1$ on the timelike region, $\hat{\mathbf v}^2 = +1$ on the spacelike region, and $\hat{\mathbf v}$ is undefined on the null cone.
 
 Thus the axial and slice approach is available on the whole timelike region and on a slice-by-slice basis, but it cannot be extended across the null cone, exactly as in the indefinite biquaternion case; and here, unlike the biquaternion case, there is no definite half to fall back on.
 
@@ -131,7 +131,7 @@ and the second sum is not a scalar multiple of $\hat{\mathbf v}$ but has the non
 
 **Theorem (right-coefficient series).** A series $F(\tilde q) = \sum_{n\geq0} \tilde q^n a_n$ with coefficients $a_n \in \mathbb{H}_{\mathrm{s}}$ on the right converges absolutely and normally on $\|\tilde q\|_E < R$, where $R^{-1} = \limsup_n\|a_n\|_E^{1/n}$, and its sum is **slice-regular** (Cullen-regular): holomorphic on each slice.
 
-**Proof.** The Euclidean operator norm is submultiplicative, so $\|\tilde q^n\|_E \le \|\tilde q\|_E^n$ and the series is dominated by the scalar series $\sum\|a_n\|_E\|\tilde q\|_E^n$; on a slice, $\tilde q = z$ and the sum is a power series in the slice variable. $\square$
+**Proof.** The Euclidean operator norm is submultiplicative, so $\|\tilde q^n\|_E \le \|\tilde q\|_E^n$ and the series is dominated by the scalar series $\sum\|a_n\|_E\|\tilde q\|_E^n$; on a slice, $\tilde q = z$ and the sum is a power series in the slice variable.
 
 **Proposition.** The coordinate function $\tilde q$ is slice-regular but not Fueter-regular: $\nabla \tilde q = \sum_\mu e_\mu e_\mu = e_0^2+e_1^2+e_2^2+e_3^2 = 1-1+1+1 = 2e_0 \neq 0$. In general the slice-regular class is strictly larger than the Fueter-regular class, and the Fueter construction is the operation that converts the first into the second.
 
@@ -143,7 +143,7 @@ $$
 
 so every Fueter-regular function on a ball has a normally convergent expansion in monogenic homogeneous polynomials, the analogue of the Taylor series of complex analysis.
 
-**Proof.** This is the standard Fischer decomposition for a real Clifford algebra with a non-degenerate quadratic form; it depends only on the non-degeneracy of $N$ and the factorization $\Box = \nabla\bar\nabla$, both of which hold with the split signature. $\square$
+**Proof.** This is the standard Fischer decomposition for a real Clifford algebra with a non-degenerate quadratic form; it depends only on the non-degeneracy of $N$ and the factorization $\Box = \nabla\bar\nabla$, both of which hold with the split signature.
 
 ## Relation to the Quaternion and Biquaternion Fueter Theories
 
@@ -169,7 +169,7 @@ The Fueter operator $\nabla = \sum_\mu e_\mu\partial_\mu$ and its conjugate sati
 | $\rho = \sqrt{N(\mathbf v)}$, $\hat{\mathbf v} = \mathbf v/\rho$ | axial radius and direction, on the timelike region $N(\mathbf v)>0$ | this article |
 | $A, B$ | axial coefficients, $F = A(q_0,\rho) + \hat{\mathbf v}B(q_0,\rho)$ | this article |
 | $\mathcal{P}_k, \mathcal{M}_k$ | homogeneous and monogenic homogeneous polynomials | this article |
-| $N(\tilde q)=q_0^2+q_1^2-q_2^2-q_3^2$ | the norm form, signature $(2,2)$ | *Split-Quaternion Norm and Invertibility* |
+| $N(\tilde q)=q_0^2+q_1^2-q_2^2-q_3^2$ | the split-quaternion norm, signature $(2,2)$ | *Split-Quaternion Norm and Invertibility* |
 | $\mathcal{N} = \{N=0\}$ | the null cone / zero-divisor set | *Split-Quaternion Zero Divisors* |
 
 ## Further Reading

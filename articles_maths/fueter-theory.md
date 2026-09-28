@@ -31,7 +31,7 @@ They act on a $C^1$ function $f:\Omega\to\mathbb{H}$ on the left, $\bar\partial 
 
 **Proposition (factorisation and ellipticity).** $\bar\partial\partial=\partial\bar\partial=\Delta$ and the symbol $\sigma(\xi)=\xi_0+\sum_ie_i\xi_i$ is invertible for every $\xi\neq0$, with $\sigma(\xi)^{-1}=\bar\sigma(\xi)/|\xi|^2$ and $\bar\sigma(\xi)=\xi_0-\sum_ie_i\xi_i$.
 
-*Proof.* The computation is the one of *Regularity and the Cauchy–Riemann Operator* with $B_i=e_i$; the diagonal terms of $\bar\partial\partial$ give $\partial_0^2+\sum_i\partial_i^2$ and the off-diagonal terms cancel by $e_ie_j=-e_je_i$. For the symbol, $\sigma(\xi)\bar\sigma(\xi)=\xi_0^2+\sum_i\xi_i^2=|\xi|^2$, a positive real number and hence a unit, and the two factors commute with the product because $\xi_0$ is real and central. $\square$
+*Proof.* The computation is the one of *Regularity and the Cauchy–Riemann Operator* with $B_i=e_i$; the diagonal terms of $\bar\partial\partial$ give $\partial_0^2+\sum_i\partial_i^2$ and the off-diagonal terms cancel by $e_ie_j=-e_je_i$. For the symbol, $\sigma(\xi)\bar\sigma(\xi)=\xi_0^2+\sum_i\xi_i^2=|\xi|^2$, a positive real number and hence a unit, and the two factors commute with the product because $\xi_0$ is real and central.
 
 **Remark (the place of the Fueter operator).** The pair $(\mathbb{H},\bar\partial)$ is the hypercomplex system of *Hypercomplex Analysis* whose value algebra is $\mathbb{H}$ and whose frame is $(1,e_1,e_2,e_3)$; the operator is the Cauchy–Riemann operator with coefficients the imaginary units. In the notation of *Clifford Analysis* this is the case $m=3$ with $\mathcal{S}=\mathbb{H}$; the classical quaternionic analysis differs from that article only in the sign convention for the operator, the two operators $\bar\partial$ and $\partial$ exchanging roles. The general results on ellipticity, real-analyticity, the Cauchy transform and residues apply without change.
 
@@ -39,7 +39,7 @@ They act on a $C^1$ function $f:\Omega\to\mathbb{H}$ on the left, $\bar\partial 
 
 **Proposition (structure of the regular functions).** The left regular functions on a domain $\Omega$ form a real vector space and a right $\mathbb{H}$-module: if $f$ is left regular and $a\in\mathbb{H}$ then $af$ need not be regular, while $fa$ and $f+a$ are. The right regular functions form a left $\mathbb{H}$-module. Conjugation exchanges the two classes: $f$ is left regular if and only if $\bar f$ is right regular for $\bar\partial$.
 
-*Proof.* The vector-space and module statements follow from the linearity of $\bar\partial$ over the constants on the right and from $\bar\partial(fa)=(\bar\partial f)a$, which holds because $a$ is constant. For the exchange of sides, apply the involution: $\overline{\bar\partial f}=\sum_i\partial_i\bar f\,\bar e_i$ for $i=0,1,2,3$ with $e_0=1$, and $\bar e_0=1$, $\bar e_i=-e_i$; this is the right-action statement of *Regularity and the Cauchy–Riemann Operator*. $\square$
+*Proof.* The vector-space and module statements follow from the linearity of $\bar\partial$ over the constants on the right and from $\bar\partial(fa)=(\bar\partial f)a$, which holds because $a$ is constant. For the exchange of sides, apply the involution: $\overline{\bar\partial f}=\sum_i\partial_i\bar f\,\bar e_i$ for $i=0,1,2,3$ with $e_0=1$, and $\bar e_0=1$, $\bar e_i=-e_i$; this is the right-action statement of *Regularity and the Cauchy–Riemann Operator*.
 
 **Example (constants and the Fueter variables).** Constants are regular, and the functions
 
@@ -67,7 +67,7 @@ $$
 
 the maximum principle on a connected domain, Liouville's theorem on $\mathbb{R}^4$, and the identity theorem.
 
-*Proof.* If $\bar\partial f=0$ then $\Delta f=\partial\bar\partial f=0$, so each component is harmonic; harmonic functions are real-analytic, satisfy the spherical mean value property and the maximum principle, and a bounded harmonic function on $\mathbb{R}^4$ is constant. $\square$
+*Proof.* If $\bar\partial f=0$ then $\Delta f=\partial\bar\partial f=0$, so each component is harmonic; harmonic functions are real-analytic, satisfy the spherical mean value property and the maximum principle, and a bounded harmonic function on $\mathbb{R}^4$ is constant.
 
 **Remark (the Cauchy–Riemann–Fueter system).** Written in components, the single equation $\bar\partial f=0$ is the system of four real first-order equations
 
@@ -87,7 +87,7 @@ $$
 
 is a fundamental solution of the Fueter operator, $\bar\partial E=\delta_0$, and it is the Cauchy kernel of the theory.
 
-*Proof.* The kernel is the case $m=3$ of the general kernel of *Clifford Analysis*: with $\Phi$ a fundamental solution of the Laplacian one has $\bar\partial(\partial\Phi)=\Delta\Phi=\delta_0$, so $\partial\Phi$ is a fundamental solution of $\bar\partial$, and the constant is fixed by $\omega_3=|S^3|=2\pi^2$ and by the homogeneity $-4$ of the kernel. Equivalently, one verifies directly that $\bar\partial E=0$ away from the origin and that the flux of $E$ through a small sphere about the origin is $1$. $\square$
+*Proof.* The kernel is the case $m=3$ of the general kernel of *Clifford Analysis*: with $\Phi$ a fundamental solution of the Laplacian one has $\bar\partial(\partial\Phi)=\Delta\Phi=\delta_0$, so $\partial\Phi$ is a fundamental solution of $\bar\partial$, and the constant is fixed by $\omega_3=|S^3|=2\pi^2$ and by the homogeneity $-4$ of the kernel. Equivalently, one verifies directly that $\bar\partial E=0$ away from the origin and that the flux of $E$ through a small sphere about the origin is $1$.
 
 **Theorem (Cauchy–Fueter integral formula).** Let $\Omega\subseteq\mathbb{H}$ be a bounded domain with smooth boundary, let $\nu_B=\sum_{\alpha=0}^{3}\nu_\alpha e_\alpha$ where $(\nu_0,\dots,\nu_3)$ is the outward unit normal, and let $f$ be left regular on a neighbourhood of $\bar\Omega$. Then for $q\in\Omega$,
 
@@ -103,7 +103,7 @@ $$
 
 holds, and it reduces to the preceding statement when $f$ is regular.
 
-*Proof.* The formula is the quaternionic case of the general Cauchy–Pompeiu formula of *Hypercomplex Analysis*, with the kernel of the preceding theorem. It is proved by excising a small ball about $q$, applying the quaternionic form of the divergence theorem to the punctured domain, and letting the radius tend to zero, the boundary term over the small sphere contributing $f(q)$ by the mean value property of the harmonic components. $\square$
+*Proof.* The formula is the quaternionic case of the general Cauchy–Pompeiu formula of *Hypercomplex Analysis*, with the kernel of the preceding theorem. It is proved by excising a small ball about $q$, applying the quaternionic form of the divergence theorem to the punctured domain, and letting the radius tend to zero, the boundary term over the small sphere contributing $f(q)$ by the mean value property of the harmonic components.
 
 **Corollary (Cauchy estimates).** For $B(q,r)\subseteq\Omega$ and $f$ left regular,
 
@@ -139,7 +139,7 @@ $$
 
 is left and right regular at every point where $\tilde f$ is defined and $r\neq0$. For $f(z)=z^n$ the resulting function is regular and homogeneous of degree $n-2$; in particular $f(z)=1$ and $f(z)=z$ give $F=0$, and the construction is an isomorphism from the holomorphic functions onto the axial regular functions modulo the two lowest degrees.
 
-*Proof.* Quoted as standard (Fueter 1935; see also the treatments of Sudbery and of Colombo–Sabadini–Struppa). The verification is a computation in the axial coordinates of the next section: writing a regular function in the form $A(q_0,r)+\vec qB(q_0,r)$ leads to the pair of equations $A_0=3B+rB_r$, $B_0=-A_r/r$, and the Cauchy–Riemann equations for $f=u+iv$ together with the radial form of the Laplacian show that $A,B$ built from $u,v$ by $\Delta$ satisfy this pair. $\square$
+*Proof.* Quoted as standard (Fueter 1935; see also the treatments of Sudbery and of Colombo–Sabadini–Struppa). The verification is a computation in the axial coordinates of the next section: writing a regular function in the form $A(q_0,r)+\vec qB(q_0,r)$ leads to the pair of equations $A_0=3B+rB_r$, $B_0=-A_r/r$, and the Cauchy–Riemann equations for $f=u+iv$ together with the radial form of the Laplacian show that $A,B$ built from $u,v$ by $\Delta$ satisfy this pair.
 
 **Example (the verification in low degree).** For $f(z)=z^2$ one has $u=q_0^2-r^2$, $v=2q_0r$, so $\tilde f=q_0^2-r^2+2q_0\vec q$ and, using $\Delta(q_0^2-r^2)=2-6=-4$ in $\mathbb{R}^4$ and $\Delta(2q_0q_i)=0$ for each $i$, the function $F=-4$ is a nonzero constant, hence regular. For $f(z)=z^3$ one has $u=q_0^3-3q_0r^2$, $v=3q_0^2r-r^3$, hence $\tilde f=q_0^3-3q_0r^2+\vec q(3q_0^2-r^2)$; now $\Delta(q_0^3-3q_0r^2)=6q_0-18q_0=-12q_0$ and, componentwise, $\Delta(q_i(3q_0^2-r^2))=-4q_i$, so
 
@@ -185,7 +185,7 @@ $$
 \bar\partial f = \bigl(A_0-3B-rB_r\bigr)+\Bigl(B_0+\frac{A_r}{r}\Bigr)\vec q ,
 $$
 
-and this vanishes exactly when both brackets do. $\square$
+and this vanishes exactly when both brackets do.
 
 **Corollary (the reduced Cauchy–Riemann system).** Writing $A=\phi$ and $B=\psi/r$ for real-valued $\phi,\psi$ of $(q_0,r)$ turns the pair into
 
@@ -195,7 +195,7 @@ $$
 
 the reduced Cauchy–Riemann system of the axial theory. The solutions are exactly the axial regular functions, and Fueter's theorem says that every holomorphic function of the reduced variable $\zeta=q_0+ir$ produces one through $F=\Delta\tilde f$; this is the precise sense in which complex analysis sits inside the quaternionic theory as its rotation-invariant part.
 
-*Proof.* Substituting $A=\phi$, $B=\psi/r$ into $A_0=3B+rB_r$ gives $\phi_0=3\psi/r+r(\psi_r/r-\psi/r^2)=\psi_r+2\psi/r$, and substituting into $B_0=-A_r/r$ gives $\psi_0/r-\psi/r^2\cdot0=-\phi_r/r$, that is $\psi_0=-\phi_r$. For the worked example $F=-12q_0-4\vec q$ one has $\phi=-12q_0$, $\psi=-4r$, and the pair reads $-12=-4-8$ and $0=0$. $\square$
+*Proof.* Substituting $A=\phi$, $B=\psi/r$ into $A_0=3B+rB_r$ gives $\phi_0=3\psi/r+r(\psi_r/r-\psi/r^2)=\psi_r+2\psi/r$, and substituting into $B_0=-A_r/r$ gives $\psi_0/r-\psi/r^2\cdot0=-\phi_r/r$, that is $\psi_0=-\phi_r$. For the worked example $F=-12q_0-4\vec q$ one has $\phi=-12q_0$, $\psi=-4r$, and the pair reads $-12=-4-8$ and $0=0$.
 
 **Example (the radial regular functions).** Taking $A=0$, the pair requires $3B+rB_r=0$, so $B=cr^{-3}$; the function $f(q)=\vec q\,r^{-3}$ is regular away from the axis and is, up to the constant, the vector part of the Cauchy–Fueter kernel. Taking $B=0$ requires $A_r=0$, so $A=A(q_0)$, an arbitrary function of the real variable; the function $f=A(q_0)$ is regular, the "plane" regular functions of the real axis. These two families are the extreme axial cases and the building blocks of the general axial solution.
 
@@ -215,7 +215,7 @@ $$
 
 of the Fueter variables $z_0=q_0$, $z_i=q_0e_i-q_i$ $(i=1,2,3)$, taken over the proper multi-indices of the theory; these polynomials form a basis of the space of homogeneous regular polynomials of degree $k$.
 
-*Pro.* Quoted as standard (Fueter; Sudbery). The expansion is the quaternionic instance of the general power-series expansion of the hypercomplex theory, whose integration theory is not treated here, and the explicit basis is the classical Fueter basis; the homogeneity and the regularity of the symmetrised products follow from the Leibniz rule for $\bar\partial$ and the regularity of the $z_i$. $\square$
+*Pro.* Quoted as standard (Fueter; Sudbery). The expansion is the quaternionic instance of the general power-series expansion of the hypercomplex theory, whose integration theory is not treated here, and the explicit basis is the classical Fueter basis; the homogeneity and the regularity of the symmetrised products follow from the Leibniz rule for $\bar\partial$ and the regularity of the $z_i$.
 
 **Remark (what the expansion does and does not give).** The expansion makes the regular functions a class as rigid as the holomorphic ones — a regular function on a ball is determined by its coefficients, and the Cauchy–Fueter formula computes them by small-sphere integrals — but the class is not closed under multiplication, since the product of two of the linear regular functions $z_i$ need not be regular; this is the failure recorded in *Hypercomplex Analysis* and *Clifford Analysis*, and it is the reason the theory has a basis but no algebra of regular functions. The dimension of the homogeneous piece is read from the Fischer decomposition of *Clifford Analysis*; for the quaternionic case it is $\dim\mathcal{M}_k=4[\binom{3+k}{k}-\binom{2+k}{k-1}]$, and the Fueter polynomials enumerate it.
 
@@ -237,7 +237,7 @@ The Fueter operator $\bar\partial=\partial_0+e_1\partial_1+e_2\partial_2+e_3\par
 |---|---|
 | $\mathbb{H}$ | Real quaternions, basis $1,e_1,e_2,e_3$ |
 | $q=q_0+\vec q$ | Quaternionic variable; $\vec q=q_1e_1+q_2e_2+q_3e_3$ |
-| $\bar q$, $N(q)=|q|^2$ | Quaternionic conjugation and norm form |
+| $\bar q$, $N(q)=|q|^2$ | Quaternionic conjugation and norm |
 | $\bar\partial=\partial_0+\sum_{i=1}^3e_i\partial_i$ | Fueter operator |
 | $\partial=\partial_0-\sum_{i=1}^3e_i\partial_i$ | Conjugate; $\bar\partial\partial=\partial\bar\partial=\Delta$ |
 | $\sigma(\xi)$, $\bar\sigma(\xi)$ | Symbol and conjugate symbol of $\bar\partial$ |

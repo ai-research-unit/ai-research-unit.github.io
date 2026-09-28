@@ -16,7 +16,7 @@ The findings are worth separating at the outset, because one of them is negative
 
 ## The Trace-Reversed Perturbation and the Wave Equation
 
-This section fixes the target. It is standard linearized gravity, written in the coordinate convention just fixed, and every formula displayed here is recomputed in the companion file.
+This section fixes the target. It is standard linearized gravity, written in the coordinate convention just fixed, and every formula displayed here was checked by direct computation.
 
 The metric is $g_{\mu\nu} = \eta_{\mu\nu} + h_{\mu\nu}$ with $|h_{\mu\nu}| \ll 1$, and the **trace-reversed** perturbation is
 
@@ -76,7 +76,7 @@ $$
 \bar{h}_{\mu\nu} \;\longmapsto\; \bar{h}_{\mu\nu} - \partial_\mu\xi_\nu - \partial_\nu\xi_\mu + \eta_{\mu\nu}\,\partial^\rho\xi_\rho .
 $$
 
-A direct computation, carried out in the companion on a general smooth $\xi^\mu$ and not merely on a plane wave, gives
+A direct computation, carried out on a general smooth $\xi^\mu$ and not merely on a plane wave, gives
 
 $$
 \partial^\lambda\Big(\bar{h}_{\lambda\nu} - \partial_\lambda\xi_\nu - \partial_\nu\xi_\lambda + \eta_{\lambda\nu}\partial^\rho\xi_\rho\Big)
@@ -141,7 +141,7 @@ $$
 \text{cross:}\quad A_{12} = A_{21} \ne 0,
 $$
 
-with all other components zero, the companion verifies $k^\mu k_\mu = 0$, $k^\mu A_{\mu\nu} = 0$, and $\eta^{\mu\nu}A_{\mu\nu} = 0$, for each amplitude and for the general transverse-traceless solution. Solving the conditions $A_{0\mu} = 0$, $k^\mu A_{\mu\nu} = 0$, $\eta^{\mu\nu}A_{\mu\nu} = 0$ on a general symmetric $A_{\mu\nu}$ leaves
+with all other components zero, a direct check verifies $k^\mu k_\mu = 0$, $k^\mu A_{\mu\nu} = 0$, and $\eta^{\mu\nu}A_{\mu\nu} = 0$, for each amplitude and for the general transverse-traceless solution. Solving the conditions $A_{0\mu} = 0$, $k^\mu A_{\mu\nu} = 0$, $\eta^{\mu\nu}A_{\mu\nu} = 0$ on a general symmetric $A_{\mu\nu}$ leaves
 
 $$
 A_{11} = -A_{22}, \qquad A_{12} = A_{21}, \qquad \text{all other components zero},
@@ -230,7 +230,7 @@ P = \frac{32}{5}\frac{G^4}{c^5}\frac{(m_1m_2)^2(m_1+m_2)}{d^5}
 = \frac{64}{5}\frac{G^4}{c^5}\frac{m^5}{d^5} \quad (m_1 = m_2 = m),
 $$
 
-and the two agree. The companion checks both the traceless and the unreduced forms of the power, obtains the same result from each, and also verifies the angular projection identity by which the flux integral over the sphere reduces to the traceless form, so the factor $\tfrac15$ is confirmed twice over rather than read off from one case.
+and the two agree. A direct check of both the traceless and the unreduced forms of the power obtains the same result from each, and also verifies the angular projection identity by which the flux integral over the sphere reduces to the traceless form, so the factor $\tfrac15$ is confirmed twice over rather than read off from one case.
 
 **What the formula is and is not.** It is a weak-field, slow-motion, far-zone result; it is the leading term of a multipole expansion, not an exact statement. Its prefactor is fixed by the coupling constant $8\pi G/c^4$ in the field equation and by the angular structure of the transverse-traceless projection. Nothing in this article derives either from the biquaternion algebra.
 
@@ -265,7 +265,7 @@ $$
 \tilde{R}_{\mu\nu} = \tfrac{1}{2}\sum_{\rho,\sigma} R_{\mu\nu\rho\sigma}\,\bar{\varepsilon}^\rho\varepsilon^\sigma .
 $$
 
-Because the antisymmetric part of $\bar{\varepsilon}^\rho\varepsilon^\sigma$ has no scalar component, each $\tilde{R}_{\mu\nu}$ is a **complex pure vector** — an element of the six-dimensional subspace $\mathrm{span}_{\mathbb{R}}\{e_k, ie_k\}$ that the parent identifies with the Lorentz Lie algebra $\mathfrak{sl}(2,\mathbb{C})_{\mathbb{R}}$ — and so lies in neither $\mathbb{M}_-$ nor $\mathbb{M}_+$. This invites an analogy with the electromagnetic field strength $\tilde{F} = i\sqrt{\epsilon}\,\mathbf{E} - \sqrt{\mu}\,\mathbf{H}$, which is also a complex pure vector with vanishing scalar part and is likewise not in $\mathbb{M}_-$. The analogy is real but narrow, and it must not be pushed past the field strength. What the two cases share is that a **field strength** built from derivatives of a potential can leave the material sector; the electromagnetic potential $\tilde{A}$ itself is a single material four-vector, whereas the gravitational potential is an $\mathbb{M}_-$-valued one-form $\delta\tilde{E}_\mu$, one material four-vector per coordinate direction. And the graviton is not the field strength: it is the symmetric rank-two perturbation $h_{\mu\nu}$, or its frame carrier, or the two traceless amplitudes — an object of dimension ten that is not a bivector, not a four-vector, and not a single element of $\mathbb{B}$. Placing the graviton "in a sector" because $\tilde{F}$ is not in $\mathbb{M}_-$ would be an inference the notation does not license; the honest statement is that the *field strength* sits in the bivector subspace, the *potential* sits in $\mathbb{M}_-$, and the *graviton itself* sits in no sector of the algebra at all.
+Because the antisymmetric part of $\bar{\varepsilon}^\rho\varepsilon^\sigma$ has no scalar component, each $\tilde{R}_{\mu\nu}$ is a **complex pure vector** — an element of the six-dimensional subspace $\mathrm{span}_{\mathbb{R}}\{e_k, ie_k\}$ that the parent identifies with the Lorentz Lie algebra $\mathrm{SL}(2,\mathbb{C})_{\mathbb{R}}$ — and so lies in neither $\mathbb{M}_-$ nor $\mathbb{M}_+$. This invites an analogy with the electromagnetic field strength $\tilde{F} = i\sqrt{\epsilon}\,\mathbf{E} - \sqrt{\mu}\,\mathbf{H}$, which is also a complex pure vector with vanishing scalar part and is likewise not in $\mathbb{M}_-$. The analogy is real but narrow, and it must not be pushed past the field strength. What the two cases share is that a **field strength** built from derivatives of a potential can leave the material sector; the electromagnetic potential $\tilde{A}$ itself is a single material four-vector, whereas the gravitational potential is an $\mathbb{M}_-$-valued one-form $\delta\tilde{E}_\mu$, one material four-vector per coordinate direction. And the graviton is not the field strength: it is the symmetric rank-two perturbation $h_{\mu\nu}$, or its frame carrier, or the two traceless amplitudes — an object of dimension ten that is not a bivector, not a four-vector, and not a single element of $\mathbb{B}$. Placing the graviton "in a sector" because $\tilde{F}$ is not in $\mathbb{M}_-$ would be an inference the notation does not license; the honest statement is that the *field strength* sits in the bivector subspace, the *potential* sits in $\mathbb{M}_-$, and the *graviton itself* sits in no sector of the algebra at all.
 
 **The source and the quadrupole moment.** The radiating source is the symmetric energy–momentum tensor $T_{\mu\nu}$, and the radiating moment is the symmetric traceless $Q_{ij}$. Both are symmetric rank-two objects, the class the material-space article records as not lying in $\mathbb{M}_-$ and that the energy–momentum exercise shows no single biquaternion can faithfully carry. For the quadrupole moment the collapse is exact and total: $\sum_{ij}Q_{ij}\varepsilon_i\bar{\varepsilon}_j = (\eta^{ij}Q_{ij})e_0 = 0$ for traceless $Q$. The algebra therefore cannot hold the quantity that the quadrupole formula differentiates; the formula is transcribed into the framework's notation, not derived from it. In particular the coupling constant $8\pi G/c^4$, and with it the prefactor $G/5c^5$, is not fixed by the algebra.
 

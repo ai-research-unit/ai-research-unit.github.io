@@ -39,7 +39,7 @@ $$
 
 where $\ell(\gamma)$ is the Euclidean length of $\gamma$.
 
-*Proof.* The integral is a limit of Riemann sums $\sum_i f(\gamma(t_i))(\gamma(t_{i+1}) - \gamma(t_i))$; submultiplicativity gives the estimate for each sum, and the norm is continuous, so the inequality passes to the limit. $\square$
+*Proof.* The integral is a limit of Riemann sums $\sum_i f(\gamma(t_i))(\gamma(t_{i+1}) - \gamma(t_i))$; submultiplicativity gives the estimate for each sum, and the norm is continuous, so the inequality passes to the limit.
 
 **Definition.** A **hypercomplex differential $1$-form** is an expression $\omega = f\,d\xi$ with $f$ an $A$-valued function; its integral along $\gamma$ is $\int_\gamma f\,d\xi$ as above. A form is **closed** if $\int_\gamma \omega = 0$ for every closed piecewise $C^1$ path $\gamma$ in the domain, and **exact** if $\omega = dG$ for some $A$-valued function $G$, where $(dG)(\xi) = $ the $A$-linear part of the differential of $G$.
 
@@ -77,7 +77,7 @@ $$
 \partial_0 f + i\,\partial_1 f = \partial_0 f + i\,(i\,\partial_0 f) = \partial_0 f - \partial_0 f = 0,
 $$
 
-so $Df = 0$, and conversely $Df = 0$ gives $i\,\partial_1 f = -\partial_0 f$, or $\partial_1 f = i\,\partial_0 f$. The general system imposes one $A$-valued condition per pair $(\alpha,\beta)$, that is, $m\binom{m}{2}$ real equations against the $m^2$ real equations of $Df = 0$; for $m \geq 4$ these are more, and the extra conditions need not follow — as the next proposition shows for $A = \mathbb{H}$. $\square$
+so $Df = 0$, and conversely $Df = 0$ gives $i\,\partial_1 f = -\partial_0 f$, or $\partial_1 f = i\,\partial_0 f$. The general system imposes one $A$-valued condition per pair $(\alpha,\beta)$, that is, $m\binom{m}{2}$ real equations against the $m^2$ real equations of $Df = 0$; for $m \geq 4$ these are more, and the extra conditions need not follow — as the next proposition shows for $A = \mathbb{H}$.
 
 **Theorem (the classical Cauchy theorem).** For the complex system $A = \mathbb{C}$, $D = \partial_0 + i\partial_1$, a $C^1$ function is left regular if and only if the form $f\,d\xi$ is closed; hence on a simply connected domain
 
@@ -107,7 +107,7 @@ $$
 \int_\gamma f\, d\xi = \int_0^{2\pi} r\cos t\,\bigl(-r\sin t\, e_1 + r\cos t\, e_2\bigr)\, dt = -r^2 e_1 \int_0^{2\pi}\sin t\cos t\, dt + r^2 e_2\int_0^{2\pi}\cos^2 t\, dt = \pi r^2 e_2 \neq 0 .
 $$
 
-So a regular function over a non-commutative algebra need not have closed curve integrals. $\square$
+So a regular function over a non-commutative algebra need not have closed curve integrals.
 
 **Remark.** The failure is structural, not accidental: the curve theorem is a statement about the closedness of the $1$-form $f\,d\xi$, and in a non-commutative algebra the order in which the coefficients $B_\alpha$ and the partial derivatives appear prevents the $m$ equations of regularity from implying the $\binom{m}{2}$ equations of closedness. The general integral theorem of the theory is therefore the hypersurface theorem, not the curve theorem.
 
@@ -123,7 +123,7 @@ $$
 
 each term being an integral in the subalgebra $A_i$ with unit $e_i$. If every $A_i$ is one-dimensional, the hypercomplex integral is the sum of $r$ ordinary real integrals.
 
-*Proof.* Insert the decompositions into the Riemann sums $\sum_j f(\gamma(t_j))\,(\gamma(t_{j+1}) - \gamma(t_j)) = \sum_j f(\gamma(t_j))\,\gamma'(t_j)\,\Delta t_j + o(1)$; the orthogonality relations give $f_i\gamma_i'$ in the $i$-th component and kill every cross term, and the product of the sums is the sum of the products because the idempotents are central and orthogonal. $\square$
+*Proof.* Insert the decompositions into the Riemann sums $\sum_j f(\gamma(t_j))\,(\gamma(t_{j+1}) - \gamma(t_j)) = \sum_j f(\gamma(t_j))\,\gamma'(t_j)\,\Delta t_j + o(1)$; the orthogonality relations give $f_i\gamma_i'$ in the $i$-th component and kill every cross term, and the product of the sums is the sum of the products because the idempotents are central and orthogonal.
 
 **Theorem (the hypersurface theorem, split).** Let $e_1, \dots, e_r$ be a complete set of orthogonal central idempotents, let $f$ be left regular, and let $\Omega$ be a bounded domain with smooth boundary. Then
 
@@ -163,13 +163,13 @@ $$
 
 along any path from a fixed base point is well defined and is a primitive of $f$.
 
-*Proof.* A primitive $G$ satisfies $f\,d\xi = dG$ by definition. Conversely, closedness makes the integral path-independent on a simply connected domain (the Poincaré lemma for $A$-valued forms), and differentiating along a straight segment from $x$ to $x+h$ gives $G(x+h) - G(x) = f(x)h + o(\|h\|)$. $\square$
+*Proof.* A primitive $G$ satisfies $f\,d\xi = dG$ by definition. Conversely, closedness makes the integral path-independent on a simply connected domain (the Poincaré lemma for $A$-valued forms), and differentiating along a straight segment from $x$ to $x+h$ gives $G(x+h) - G(x) = f(x)h + o(\|h\|)$.
 
 **Corollary (the complex case).** For the complex system, every left regular function on a simply connected domain has a primitive, by Cauchy's theorem. For the quaternionic system, by contrast, a primitive can exist only for constant functions, because the only left $\mathbb{H}$-differentiable functions are affine; this is the primitive-level form of the failure of the curve theorem.
 
 **Theorem (Morera, general form).** Let $f$ be continuous on a simply connected domain $\Omega$ and suppose $\int_{\partial R} f\,d\xi = 0$ for every axis-parallel rectangle $R \subseteq \Omega$. Then $f\,d\xi$ is closed and $f$ has a primitive on $\Omega$.
 
-*Proof.* Integrate $f$ along axis-parallel paths to build $G$; the rectangle hypothesis makes the result path-independent. Then $G$ is differentiable with $f\,d\xi = dG$, so the form is exact and hence closed. $\square$
+*Proof.* Integrate $f$ along axis-parallel paths to build $G$; the rectangle hypothesis makes the result path-independent. Then $G$ is differentiable with $f\,d\xi = dG$, so the form is exact and hence closed.
 
 **Theorem (Cauchy integral formula, general form).** Let $\Omega$ be a bounded domain with smooth boundary, $E$ a Cauchy kernel for $D$, and $f$ left regular on a neighbourhood of $\bar\Omega$. Then for every $x \in \Omega$,
 
@@ -187,7 +187,7 @@ $$
 
 for a normalising constant $C$ depending on the kernel; in particular $\|f(x_0)\| \leq M(r)\sup_{\partial B}\|f\|$ for a constant $M(r)$ depending only on $r$ and the system.
 
-*Proof.* Insert the Cauchy formula and apply the integral estimate of the first section. $\square$
+*Proof.* Insert the Cauchy formula and apply the integral estimate of the first section.
 
 ## Singularities, Residues and Expansions
 
@@ -199,7 +199,7 @@ $$
 
 for $0 < \epsilon$ small enough that $B(x_0,\epsilon) \setminus \{x_0\} \subseteq \dot U$ and independent of $\epsilon$.
 
-*Proof of independence of $\epsilon$.* The difference of the integrals over two spheres is the boundary integral of a regular function over the region between them, which vanishes by Cauchy–Goursat. $\square$
+*Proof of independence of $\epsilon$.* The difference of the integrals over two spheres is the boundary integral of a regular function over the region between them, which vanishes by Cauchy–Goursat.
 
 **Theorem (residue theorem, general form).** Let $\Omega$ be a bounded domain with smooth boundary and let $f$ be left regular on $\bar\Omega$ except at finitely many points $x_1, \dots, x_k$ in the interior, with a removable-type behaviour at the boundary. Then
 
@@ -207,7 +207,7 @@ $$
 \int_{\partial\Omega} \nu_B(y)\,f(y)\,dS(y) = \sum_{i=1}^{k} \operatorname{Res}_{x_i} f.
 $$
 
-*Proof.* Excise a small ball around each $x_i$ and apply Cauchy–Goursat to the punctured domain. $\square$
+*Proof.* Excise a small ball around each $x_i$ and apply Cauchy–Goursat to the punctured domain.
 
 **Expansions.** A regular function is real-analytic (*Regularity and the Cauchy–Riemann Operator*), so on a ball it has a convergent power series
 
@@ -221,7 +221,7 @@ in the coordinates of $A$, but the coefficients are not free: the equation $Df =
 
 **Proposition.** The restriction map to the unit sphere, $P \mapsto P|_{\partial B(0,1)}$, is injective on $\mathcal{M}_\nu(A,D)$ for every $\nu$.
 
-*Proof.* A homogeneous polynomial vanishing on the unit sphere vanishes identically by homogeneity. $\square$
+*Proof.* A homogeneous polynomial vanishing on the unit sphere vanishes identically by homogeneity.
 
 ## The Cauchy Transform and Jump Formulas
 
@@ -233,7 +233,7 @@ $$
 
 **Theorem (regularity of the transform).** For $x \in \Omega$, the Cauchy transform $\mathcal{C}h$ is left regular in $x$.
 
-*Proof.* For $x$ in the interior and away from $\partial\Omega$, the dependence on $x$ enters only through $E(x-y)$, so differentiating under the integral sign and using that $D_x E(x-y) = 0$ for $x \neq y$ (because $D_yE = 0$ away from the origin and the kernel depends on the difference) gives $D(\mathcal{C}h)(x) = 0$. $\square$
+*Proof.* For $x$ in the interior and away from $\partial\Omega$, the dependence on $x$ enters only through $E(x-y)$, so differentiating under the integral sign and using that $D_x E(x-y) = 0$ for $x \neq y$ (because $D_yE = 0$ away from the origin and the kernel depends on the difference) gives $D(\mathcal{C}h)(x) = 0$.
 
 **Theorem (jump formula).** Let $h$ be continuous on $\partial\Omega$ and let $\mathcal{C}^\pm$ denote the Cauchy transform evaluated as $x$ approaches $\partial\Omega$ from inside and from outside. Then
 
@@ -243,7 +243,7 @@ $$
 
 pointwise on $\partial\Omega$, up to the normalisation of the kernel.
 
-*Proof (sketch).* The difference of the two transforms is the principal value of the boundary integral, and the singular part of the kernel contributes the value of the density; this is the Plemelj–Sokhotski computation, valid for the kernels of elliptic first-order operators. The precise constant is fixed by the normalisation of $E$. $\square$
+*Proof (sketch).* The difference of the two transforms is the principal value of the boundary integral, and the singular part of the kernel contributes the value of the density; this is the Plemelj–Sokhotski computation, valid for the kernels of elliptic first-order operators. The precise constant is fixed by the normalisation of $E$.
 
 **Corollary (the Cauchy transform as a projection).** On the space of boundary values of regular functions, the inside transform $\mathcal{C}^+$ acts as the identity and the outside transform $\mathcal{C}^-$ acts as zero.
 

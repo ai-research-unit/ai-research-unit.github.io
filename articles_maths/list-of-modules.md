@@ -18,7 +18,7 @@ A **vector space** over a field $F$ is a module over $F$; because $F$ is a field
 | Direct sum $\bigoplus_i V_i$ | dimension the sum of the dimensions; free | *Vector Spaces* |
 | Dual space $V^* = \operatorname{Hom}_F(V,F)$ | dimension $\dim_F V$ in finite dimension; free | *Multilinear Spaces* |
 | Space of linear maps $\operatorname{Hom}_F(V,W)$ | dimension $\dim_F V \cdot \dim_F W$; free | *Vector Spaces* |
-| The vector space $\mathbb{H}^n$ over the division ring $\mathbb{H}$ | a free module of rank $n$, of real dimension $4n$; every $\mathbb{H}$-module is free | *Quaternionic and Biquaternionic Modules* |
+| The vector space $\mathbb{H}^n$ over the division ring $\mathbb{H}$ | a free module of rank $n$, of real dimension $4n$; every $\mathbb{H}$-module is free | *Quaternion Ideals and Simplicity* |
 | Non-example: a torsion element in a vector space | does not occur: a nonzero scalar multiple of a nonzero vector is nonzero, so $T(V) = 0$ | *Vector Spaces* |
 | Non-example: a module over a field that is not free | does not occur: over a field every module is free, by the existence of bases | *Vector Spaces* |
 
@@ -75,13 +75,13 @@ Over a division ring every module is free, and the rank theory is that of vector
 
 | Module | Rank, basis, torsion, freeness | Introduced in |
 |---|---|---|
-| $\mathbb{H}^n$ | free of rank $n$ over the division ring $\mathbb{H}$; basis $e_1,\dots,e_n$; real dimension $4n$ | *Quaternionic and Biquaternionic Modules* |
-| Finitely generated $\mathbb{B}$-module | isomorphic to $S^{\oplus k}$ for the unique simple $S = \mathbb{C}^2$; complex dimension $2k$ | *Quaternionic and Biquaternionic Modules* |
-| The defining module $S$ of $\mathbb{B}$ | the unique simple $\mathbb{B}$-module; not free over $\mathbb{B}$ in the vector-space sense | *The Defining Module of the Biquaternion Algebra* |
-| $\mathbb{H}$-module structure | complex structure $I$ and quaternionic structure $\mathcal{J}$; $J(\mathbb{H}) = 0$ | *Quaternionic and Biquaternionic Modules* |
+| $\mathbb{H}^n$ | free of rank $n$ over the division ring $\mathbb{H}$; basis $e_1,\dots,e_n$; real dimension $4n$ | *Quaternion Ideals and Simplicity* |
+| Finitely generated $\mathbb{B}$-module | isomorphic to $S^{\oplus k}$ for the unique simple $S = \mathbb{C}^2$; complex dimension $2k$ | *Modules over the Biquaternion Algebra* |
+| The defining module $S$ of $\mathbb{B}$ | the unique simple $\mathbb{B}$-module; not free over $\mathbb{B}$ in the vector-space sense | *Modules over the Biquaternion Algebra* |
+| $\mathbb{H}$-module structure | complex structure $I$ and quaternionic structure $\mathcal{J}$; $J(\mathbb{H}) = 0$ | *Quaternion Ideals and Simplicity* |
 | Lipschitz order $\mathbb{Z}\{e_0,e_1,e_2,e_3\}$ | a torsion-free $\mathbb{Z}$-module of rank $4$, not free over a non-commutative order | *Lattices and the Quaternion Lattice* |
 | Non-example: a $\mathbb{B}$-module treated as a vector space | fails to have a basis over $\mathbb{B}$: the ring has zero divisors | *Biquaternion Algebra* |
-| Non-example: a torsion element of an $\mathbb{H}$-module | does not occur: $\mathbb{H}$ is a division ring, so every nonzero module is torsion-free | *Quaternionic and Biquaternionic Modules* |
+| Non-example: a torsion element of an $\mathbb{H}$-module | does not occur: $\mathbb{H}$ is a division ring, so every nonzero module is torsion-free | *Quaternion Ideals and Simplicity* |
 
 ## Homomorphisms, Duals and Tensor Products
 

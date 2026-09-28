@@ -4,7 +4,7 @@
 
 This is one of the exercises in the relativity series. It is a set of worked problems in the relativistic kinematics of a two-body decay, using the framework and the notation of the companion article *The Relativistic Two-Body Problem in Biquaternionic Form*. That article is the parent of this exercise: it sets up the kinematics, and what follows applies it. Nothing new is introduced, and every result below is obtained from the tools already defined there.
 
-**What is assumed.** The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_0 = 1, e_1, e_2, e_3$ satisfying $e_k^2 = -e_0$, and the scalar imaginary $i$ with $i^2 = -1$. The anti-Hermitian subspace $\mathbb{M}_-$ (imaginary scalar part, real vector part) and the Hermitian subspace $\mathbb{M}_+$. The norm form $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$ and the invariant pairing $\langle \tilde{A}, \tilde{B}\rangle = \mathrm{Sc}(\tilde{A}\bar{\tilde{B}})$ on $\mathbb{M}_-$. The four-momentum $\tilde{P} = m\tilde{U} = iE/c\,e_0 + \mathbf{p}$ with $N(\tilde{P}) = -m^2c^2$, the unit four-velocity $\tilde{u} = \tilde{U}/c$ with $N(\tilde{u}) = -1$, the rotor conjugation $\tilde{Q} \mapsto \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^\dagger$ with $\tilde{\Lambda}\bar{\tilde{\Lambda}} = e_0$, the boost biquaternion $\tilde{\Lambda} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\hat{\mathbf{u}}$ with $\tanh\psi = u/c$, and the relative rapidity $\psi_{\rm rel}$ with $\cosh\psi_{\rm rel} = -\langle \tilde{u}_1, \tilde{u}_2\rangle$. Throughout, $c$ is the speed of light in the medium, $c = 1/\sqrt{\epsilon\mu}$, and $c_0$ is the vacuum value.
+**What is assumed.** The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_0 = 1, e_1, e_2, e_3$ satisfying $e_k^2 = -e_0$, and the scalar imaginary $i$ with $i^2 = -1$. The anti-Hermitian subspace $\mathbb{M}_-$ (imaginary scalar part, real vector part) and the Hermitian subspace $\mathbb{M}_+$. The biquaternion norm $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$ and the invariant pairing $\langle \tilde{A}, \tilde{B}\rangle = \mathrm{Sc}(\tilde{A}\bar{\tilde{B}})$ on $\mathbb{M}_-$. The four-momentum $\tilde{P} = m\tilde{U} = iE/c\,e_0 + \mathbf{p}$ with $N(\tilde{P}) = -m^2c^2$, the unit four-velocity $\tilde{u} = \tilde{U}/c$ with $N(\tilde{u}) = -1$, the rotor conjugation $\tilde{Q} \mapsto \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^\dagger$ with $\tilde{\Lambda}\bar{\tilde{\Lambda}} = e_0$, the boost biquaternion $\tilde{\Lambda} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\hat{\mathbf{u}}$ with $\tanh\psi = u/c$, and the relative rapidity $\psi_{\rm rel}$ with $\cosh\psi_{\rm rel} = -\langle \tilde{u}_1, \tilde{u}_2\rangle$. Throughout, $c$ is the speed of light in the medium, $c = 1/\sqrt{\epsilon\mu}$, and $c_0$ is the vacuum value.
 
 **What is to be shown.** The problems are: (1) the daughter energies and momentum in the centre-of-momentum frame of a parent at rest; (2) the general case of a moving parent, through the boost biquaternion the parent constructs; (3) the invariant mass of each pair in a three-body decay; (4) the threshold and the opening-angle conditions; (5) a numerical instance, checked to several digits; (6) the non-relativistic limit. Each problem is stated and then solved in full; the value of an exercise article is in the solutions.
 
@@ -94,7 +94,7 @@ $$
 = \frac{E}{Mc^2}e_0 + i\frac{\mathbf{P}}{Mc}
 = \cosh\Psi\,e_0 + i\sinh\Psi\,\hat{\mathbf{V}},
 $$
-with $\cosh\Psi = E/(Mc^2) = \Gamma$, $\sinh\Psi = |\mathbf{P}|/(Mc) = \Gamma V/c$, hence $\tanh\Psi = V/c$. This is an element of $\mathbb{M}_+$ of unit norm form, since $\cosh^2\Psi - \sinh^2\Psi = 1$. Its principal square root, with $\mathrm{Sc} > 0$, is the boost biquaternion
+with $\cosh\Psi = E/(Mc^2) = \Gamma$, $\sinh\Psi = |\mathbf{P}|/(Mc) = \Gamma V/c$, hence $\tanh\Psi = V/c$. This is an element of $\mathbb{M}_+$ of unit norm, since $\cosh^2\Psi - \sinh^2\Psi = 1$. Its principal square root, with $\mathrm{Sc} > 0$, is the boost biquaternion
 $$
 \tilde{\Lambda}_{\rm CM} = \sqrt{-\frac{i}{Mc}\bar{\tilde{P}}_A}
 = \cosh\frac{\Psi}{2} + i\sinh\frac{\Psi}{2}\,\hat{\mathbf{V}},
@@ -412,7 +412,7 @@ We have worked the relativistic kinematics of a two-body decay as an application
 | $e_0 = 1, e_1, e_2, e_3$ | Quaternion basis, $e_k^2 = -e_0$ |
 | $i$ | Scalar imaginary, $i^2 = -1$ |
 | $c$, $c_0$ | Speed of light in the medium, and in vacuum |
-| $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$ | Norm form |
+| $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$ | Biquaternion norm |
 | $\langle\tilde{A},\tilde{B}\rangle = \mathrm{Sc}(\tilde{A}\bar{\tilde{B}})$ | Invariant pairing on $\mathbb{M}_-$ |
 | $\tilde{P} = m\tilde{U} = iE/c\,e_0 + \mathbf{p}$ | Four-momentum, $N(\tilde{P}) = -m^2c^2$ |
 | $\tilde{u} = \tilde{U}/c$ | Unit four-velocity, $N(\tilde{u}) = -1$ |

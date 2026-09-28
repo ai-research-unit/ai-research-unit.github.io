@@ -1,3 +1,4 @@
+
 # __Split-Biquaternion Higher Special Functions__
 
 ## Introduction
@@ -18,7 +19,7 @@ $$
 \tilde{Q} = Q_0 e_0 + Q_1 e_1 + Q_2 e_2 + Q_3 e_3, \qquad Q_\mu = q_\mu + j q'_\mu, \quad q_\mu, q'_\mu \in \mathbb{R}.
 $$
 
-The split complex unit is $j$, with $j^2 = +1$, and it commutes with the quaternion units. The quaternion conjugate is $\bar{\tilde{Q}} = Q_0 e_0 - \mathbf{Q}$. The norm form is $N(\tilde{Q}) = \tilde{Q} \bar{\tilde{Q}}$.
+The split complex unit is $j$, with $j^2 = +1$, and it commutes with the quaternion units. The quaternion conjugate is $\bar{\tilde{Q}} = Q_0 e_0 - \mathbf{Q}$. The split-biquaternion norm is $N(\tilde{Q}) = \tilde{Q} \bar{\tilde{Q}}$.
 
 The **idempotent components** of $\tilde{Q}$ are the real quaternions
 

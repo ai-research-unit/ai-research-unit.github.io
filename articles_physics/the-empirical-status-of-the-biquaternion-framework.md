@@ -14,7 +14,7 @@ The temptation this article exists to resist is the opposite of that conclusion:
 
 A candidate that traces to an undetermined parameter or an unverified claim is **not a signature**, and is labelled as such below; so is a candidate whose "prediction" is the standard result rewritten. The next section fixes what a signature would have to be and identifies the structural reason none is yet available; the sections after record the standing agreement, explain why it is not evidence for the framework's distinctive content, and examine the candidates individually.
 
-Throughout, the notation is inherited from the read-list articles: the biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, and scalar imaginary $i$; the material sector is the anti-Hermitian subspace $\mathbb{M}_-$ and the informational sector the Hermitian subspace $\mathbb{M}_+$, with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$; the norm form is $N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}$; the trace formula is $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$.
+Throughout, the notation is inherited from the read-list articles: the biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, and scalar imaginary $i$; the material sector is the anti-Hermitian subspace $\mathbb{M}_-$ and the informational sector the Hermitian subspace $\mathbb{M}_+$, with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$; the biquaternion norm is $N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}$; the trace formula is $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$.
 
 ## What Would Count as a Signature
 
@@ -77,7 +77,7 @@ Each candidate below is examined under the three questions of the Introduction a
 
 **The candidate.** High-energy quantum-gravity models typically propose a modification of the dispersion relation — an energy-dependent speed of light, or a minimum length — appearing at a fundamental scale, often the Planck scale.
 
-**The framework-specific quantity.** There is none. The algebra $\mathbb{B}$ and its coefficient field are dimensionless; the norm form, the product, and the conjugations carry no scale. Every dimensional quantity in the series is imported: the corpus records that the electron mass, charge, and $\hbar$ are inserted, and that the framework supplies neither the value of the fine-structure constant nor the magnitude of the Coulomb coupling. No article derives a fundamental length or energy. The companion article on the renormalization group puts the point sharply: the scale, the field content, the gauge group, and the values of the couplings are all inputs, and the algebra fixes none of them.
+**The framework-specific quantity.** There is none. The algebra $\mathbb{B}$ and its coefficient field are dimensionless; the biquaternion norm, the product, and the conjugations carry no scale. Every dimensional quantity in the series is imported: the corpus records that the electron mass, charge, and $\hbar$ are inserted, and that the framework supplies neither the value of the fine-structure constant nor the magnitude of the Coulomb coupling. No article derives a fundamental length or energy. The companion article on the renormalization group puts the point sharply: the scale, the field content, the gauge group, and the values of the couplings are all inputs, and the algebra fixes none of them.
 
 **Derived or posited.** Neither. This is stronger than "unverified": the candidate has no home in the framework as developed. There is no parameter whose absence could be repaired by more work on the same algebra — a scale must be inserted, and any inserted scale is an addition to the framework rather than a consequence of it.
 
@@ -101,7 +101,7 @@ Each candidate below is examined under the three questions of the Introduction a
 
 **The candidate.** The framework has two sectors, and the two sectors carry quadratic forms of opposite signature. Perhaps there are two null structures, hence a polarization-dependent propagation speed — birefringence — or a second, "informational" light cone.
 
-**The framework-specific quantity.** The norm form $N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}$. It is a **single** quadratic form on $\mathbb{B}$, and its zero set is a single cone. Its restrictions to $\mathbb{M}_-$ and $\mathbb{M}_+$ are the mirror quadratic forms $-q_0^2+\mathbf{q}^2$ and $q_0^2-\mathbf{q}^2$; these are restrictions of the same form to complementary subspaces, not two independent propagation structures. A field propagating in the framework obeys one d'Alembertian $\Box=\partial_{ict}^2+\Delta$, built from one $c$. There is no second cone and no splitting of polarizations.
+**The framework-specific quantity.** The biquaternion norm $N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}$. It is a **single** quadratic form on $\mathbb{B}$, and its zero set is a single cone. Its restrictions to $\mathbb{M}_-$ and $\mathbb{M}_+$ are the mirror quadratic forms $-q_0^2+\mathbf{q}^2$ and $q_0^2-\mathbf{q}^2$; these are restrictions of the same form to complementary subspaces, not two independent propagation structures. A field propagating in the framework obeys one d'Alembertian $\Box=\partial_{ict}^2+\Delta$, built from one $c$. There is no second cone and no splitting of polarizations.
 
 **Derived or posited.** The single cone is **derived**: it is the zero-divisor set of the algebra, a theorem of the corpus. The absence of birefringence is therefore a consequence of the algebra, not an unverified claim.
 
@@ -201,7 +201,7 @@ In each route the decisive question is whether the new input is **forced** by th
 
 The biquaternion framework is a reformulation of standard physics, and on every domain the companion articles have developed it is currently empirically equivalent to what it reformulates: the single-qubit formalism, relativistic kinematics, Maxwell and Dirac theory, the hydrogen spectrum, the Casimir force, and the Unruh effect are all reproduced, not modified. This equivalence is structural. The framework's established content — the algebra $\mathbb{B}\cong M_2(\mathbb{C})$, the material sector $\mathbb{M}_-\cong\mathbb{R}^{3,1}$, the Hermitian sector $\mathbb{M}_+$ — is shared with the standard formalism, while its distinctive additions are interpretive labels that enter no formula producing a number. Any quantity fixed by the algebra alone is fixed identically by the standard theory, so a signature requires a non-algebraic input: a scale, a coupling, or a selection principle.
 
-The candidates examined here supply none. Modified dispersion has no scale in the framework to act on, and the bounds that would test it (a linear Lorentz-violation scale above the Planck scale; $v_\mathrm{GW}-v_\mathrm{EM}$ within a few parts in $10^{15}$ of $c$) constrain only proposals that supply a scale. The local complex structure is a re-reading of the standard medium speed $c=1/\sqrt{\epsilon\mu}$. Birefringence and a second light cone are foreclosed by the single norm form. A material–informational coupling is unspecified — no field, no action, no constant — and is the framework's largest gap. Quaternionic quantum-statistical deviations are unavailable, because the algebra is complex and associative. Derived dimensionless relations, the one class that needs no new scale, are absent. And the celebrated reproductions — $g=2$, the hydrogen spectrum, the Casimir force, the Unruh temperature — are reproductions of standard results.
+The candidates examined here supply none. Modified dispersion has no scale in the framework to act on, and the bounds that would test it (a linear Lorentz-violation scale above the Planck scale; $v_\mathrm{GW}-v_\mathrm{EM}$ within a few parts in $10^{15}$ of $c$) constrain only proposals that supply a scale. The local complex structure is a re-reading of the standard medium speed $c=1/\sqrt{\epsilon\mu}$. Birefringence and a second light cone are foreclosed by the single norm. A material–informational coupling is unspecified — no field, no action, no constant — and is the framework's largest gap. Quaternionic quantum-statistical deviations are unavailable, because the algebra is complex and associative. Derived dimensionless relations, the one class that needs no new scale, are absent. And the celebrated reproductions — $g=2$, the hydrogen spectrum, the Casimir force, the Unruh temperature — are reproductions of standard results.
 
 The main result is therefore negative, and meant to be: the framework currently makes no distinguishing prediction. The agenda is to specify and quantize the sector coupling and compute its leading observable, to search for a dimensionless relation the algebra forces, and to test whether the local complex structure can differ from the standard dielectric response in a regime the standard theory does not cover. In each case the decisive question is whether the input is forced by the algebra or inserted; only the first yields a signature of the framework, and only such a signature could settle the hypothesis.
 
@@ -214,7 +214,7 @@ The main result is therefore negative, and meant to be: the framework currently 
 | $i$ | Scalar imaginary, $i^2=-1$ |
 | $\mathbb{M}_-$ | Anti-Hermitian subspace (material sector) |
 | $\mathbb{M}_+$ | Hermitian subspace (informational sector) |
-| $N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}$ | Norm form (single quadratic form on $\mathbb{B}$) |
+| $N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}$ | Biquaternion norm (single quadratic form on $\mathbb{B}$) |
 | $c=1/\sqrt{\epsilon\mu}$ | Local speed of light in the medium |
 | $c_0=1/\sqrt{\epsilon_0\mu_0}$ | Vacuum speed of light |
 | $\tilde{\nabla}$, $\Box=\tilde{\nabla}\bar{\tilde{\nabla}}$ | Biquaternionic gradient, d'Alembertian |
@@ -222,7 +222,7 @@ The main result is therefore negative, and meant to be: the framework currently 
 | $\tilde{H}=h_0e_0+i\mathbf{h}$ | Hermitian element (observable) |
 | $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ | Trace formula (Born rule) |
 | $\mathbb{B}\cong M_2(\mathbb{C})$ | The algebra is the standard complex $2\times2$ algebra |
-| $SL(2,\mathbb{C})$ | Unit-norm-form biquaternions (Lorentz double cover) |
+| $SL(2,\mathbb{C})$ | Unit-norm biquaternions (Lorentz double cover) |
 
 ## Further Reading
 

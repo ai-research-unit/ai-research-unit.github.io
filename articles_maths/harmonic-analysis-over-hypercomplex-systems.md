@@ -49,7 +49,7 @@ $$
 \widehat{(f * g)}(\xi) = \hat f(\xi)\,\hat g(\xi).
 $$
 
-*Proof.* These are the standard properties of the Euclidean Fourier transform, applied componentwise; for the last, substitute $x = u + y$ and use $\langle \xi, u+y\rangle = \langle\xi,u\rangle + \langle\xi,y\rangle$. $\square$
+*Proof.* These are the standard properties of the Euclidean Fourier transform, applied componentwise; for the last, substitute $x = u + y$ and use $\langle \xi, u+y\rangle = \langle\xi,u\rangle + \langle\xi,y\rangle$.
 
 The multiplication in the convolution theorem is the multiplication of $A$, so the convolution algebra $\bigl(L^1(A), *\bigr)$ is commutative exactly when $A$ is, and it is the algebra of translation-invariant operators.
 
@@ -99,7 +99,7 @@ $$
 *Proof.* By linearity and the differentiation rule of the previous theorem,
 
 $$
-\widehat{Df} = \sum_\alpha B_\alpha\,\widehat{\partial_\alpha f} = i\sum_\alpha B_\alpha\xi_\alpha \hat f = i\,\sigma(\xi)\hat f. \qquad \square
+\widehat{Df} = \sum_\alpha B_\alpha\,\widehat{\partial_\alpha f} = i\sum_\alpha B_\alpha\xi_\alpha \hat f = i\,\sigma(\xi)\hat f.
 $$
 
 **Definition.** The **characteristic variety** of $D$ is
@@ -118,17 +118,17 @@ $$
 
 the complex isotropic cone. In particular $\operatorname{Char}(D)$ meets the real subspace only at the origin, which is the ellipticity of $D$.
 
-*Proof.* By the symbol computation, $\sigma(\zeta)\,\tilde\sigma(\zeta) = \sum_\alpha\zeta_\alpha^2$ with $\tilde\sigma(\zeta) = \zeta_0 - \sum_kB_k\zeta_k$. If $\sum_\alpha\zeta_\alpha^2 \neq 0$ then $\sigma(\zeta)$ is invertible, with inverse $\tilde\sigma(\zeta)/\sum_\alpha\zeta_\alpha^2$. Conversely, if $\sum_\alpha\zeta_\alpha^2 = 0$ and $\zeta \neq 0$, then $\sigma(\zeta)\tilde\sigma(\zeta) = 0$ with $\tilde\sigma(\zeta) \neq 0$ (if both vanished, then $\zeta_0 = 0$ and $\sum_kB_k\zeta_k = 0$, which forces all $\zeta_\alpha = 0$ by linear independence of the $B_k$, including $B_0 = 1$), so $\sigma(\zeta)$ is a zero divisor and not invertible; at $\zeta = 0$ one has $\sigma(0) = 0$, also not invertible. Hence $\operatorname{Char}(D)$ is exactly the isotropic cone. For real $\zeta$ the equation $\sum_\alpha\zeta_\alpha^2 = 0$ has only the solution $\zeta = 0$, so the characteristic variety meets the real subspace only at the origin. $\square$
+*Proof.* By the symbol computation, $\sigma(\zeta)\,\tilde\sigma(\zeta) = \sum_\alpha\zeta_\alpha^2$ with $\tilde\sigma(\zeta) = \zeta_0 - \sum_kB_k\zeta_k$. If $\sum_\alpha\zeta_\alpha^2 \neq 0$ then $\sigma(\zeta)$ is invertible, with inverse $\tilde\sigma(\zeta)/\sum_\alpha\zeta_\alpha^2$. Conversely, if $\sum_\alpha\zeta_\alpha^2 = 0$ and $\zeta \neq 0$, then $\sigma(\zeta)\tilde\sigma(\zeta) = 0$ with $\tilde\sigma(\zeta) \neq 0$ (if both vanished, then $\zeta_0 = 0$ and $\sum_kB_k\zeta_k = 0$, which forces all $\zeta_\alpha = 0$ by linear independence of the $B_k$, including $B_0 = 1$), so $\sigma(\zeta)$ is a zero divisor and not invertible; at $\zeta = 0$ one has $\sigma(0) = 0$, also not invertible. Hence $\operatorname{Char}(D)$ is exactly the isotropic cone. For real $\zeta$ the equation $\sum_\alpha\zeta_\alpha^2 = 0$ has only the solution $\zeta = 0$, so the characteristic variety meets the real subspace only at the origin.
 
 The characteristic variety is the same for every Clifford-type system of a given dimension: it depends only on $m$, not on the finer multiplication. This is the Fourier-side explanation of the plane waves constructed in *Regularity and the Cauchy–Riemann Operator*, whose complex frequencies are precisely the points of $\operatorname{Char}(D)$.
 
 **Theorem (exponential representation).** Every distribution solution of $Du = 0$ on a convex domain is the limit, in the distributional sense, of exponential-polynomial solutions $x \mapsto p(x)\,e^{\langle\zeta, x\rangle}$ with $\zeta \in \operatorname{Char}(D)$ and $p$ a polynomial.
 
-*Proof.* This is the Ehrenpreis–Palamodov theorem for constant-coefficient systems: solutions are represented as integrals of exponential solutions over the characteristic variety, and on a convex domain the integral can be approximated by finite combinations. $\square$
+*Proof.* This is the Ehrenpreis–Palamodov theorem for constant-coefficient systems: solutions are represented as integrals of exponential solutions over the characteristic variety, and on a convex domain the integral can be approximated by finite combinations.
 
 **Corollary (no compactly supported regular functions).** If $f$ is left regular on all of $A$ and has compact support, then $f = 0$.
 
-*Proof.* By the Paley–Wiener theorem, the Fourier transform of a compactly supported distribution is an entire function of the complex variable $\zeta \in \mathbb{C}^m$ of exponential type. The equation $\sigma(\zeta)\hat f(\zeta) = 0$, valid for real $\zeta$ and hence, by analyticity, for $\zeta$ in an open set where $\sigma$ is invertible, forces $\hat f$ to vanish on the complement of $\operatorname{Char}(D)$. Since the complement is open and nonempty, $\hat f = 0$ by analytic continuation, and so $f = 0$. $\square$
+*Proof.* By the Paley–Wiener theorem, the Fourier transform of a compactly supported distribution is an entire function of the complex variable $\zeta \in \mathbb{C}^m$ of exponential type. The equation $\sigma(\zeta)\hat f(\zeta) = 0$, valid for real $\zeta$ and hence, by analyticity, for $\zeta$ in an open set where $\sigma$ is invertible, forces $\hat f$ to vanish on the complement of $\operatorname{Char}(D)$. Since the complement is open and nonempty, $\hat f = 0$ by analytic continuation, and so $f = 0$.
 
 So the solution space of the Cauchy–Riemann operator consists of functions of slow decay: the exponential representation makes precise the intuitive picture of the previous articles that regular functions are the hypercomplex analogue of entire functions, and it is genuinely a harmonic-analytic statement, depending on the Fourier transform of the operator rather than on its kernel.
 
@@ -148,7 +148,7 @@ $$
 
 a distribution whose singular support is contained in $\operatorname{Char}(D)$.
 
-*Proof.* Fourier transforming $DE = \delta_0$ and using the multiplier rule of the previous section gives $i\sigma(\xi)\hat E(\xi) = \hat\delta_0 = 1$, the identity being the constant function $1$. Multiplying by $\tilde\sigma(\xi)$ and using $\sigma\tilde\sigma = \sum_\alpha\xi_\alpha^2$ gives the displayed expression where $\sum_\alpha\xi_\alpha^2 \neq 0$. $\square$
+*Proof.* Fourier transforming $DE = \delta_0$ and using the multiplier rule of the previous section gives $i\sigma(\xi)\hat E(\xi) = \hat\delta_0 = 1$, the identity being the constant function $1$. Multiplying by $\tilde\sigma(\xi)$ and using $\sigma\tilde\sigma = \sum_\alpha\xi_\alpha^2$ gives the displayed expression where $\sum_\alpha\xi_\alpha^2 \neq 0$.
 
 **Theorem (explicit Cauchy kernel).** Let
 
@@ -170,7 +170,7 @@ $$
 \bar D \Phi = \frac{1}{\omega_{m-1}}\sum_{\alpha}\bar B_\alpha\, x_\alpha\,|x|^{-m} = \frac{\bar x}{\omega_{m-1}|x|^m},
 $$
 
-where $\bar B_0 = 1$ and $\bar B_k = -B_k$. $\square$
+where $\bar B_0 = 1$ and $\bar B_k = -B_k$.
 
 For the complex system ($m = 2$, $\omega_1 = 2\pi$, $\bar x = \bar z$) this is $E(z) = \bar z/(2\pi|z|^2) = 1/(2\pi z)$, the classical Cauchy kernel; for a four-dimensional Clifford system it is $\bar x/(2\pi^2|x|^4)$. The explicit kernels of the individual theories are therefore all one formula, specialised by the conjugation and the dimension, and this is the concrete sense in which the general theory contains the particular ones.
 
@@ -192,7 +192,7 @@ $$
 
 for $\nu \geq 2$, with $\dim\mathcal{H}_0 = 1$ and $\dim\mathcal{H}_1 = m$.
 
-*Proof.* The Laplacian maps $\mathcal{P}_\nu$ onto $\mathcal{P}_{\nu-2}$ for $\nu \geq 2$; surjectivity is checked on monomials, and the kernel is $\mathcal{H}_\nu$, giving the splitting $\mathcal{P}_\nu = \mathcal{H}_\nu \oplus |x|^2\mathcal{P}_{\nu-2}$. Iterating gives the direct sum, and the dimension formula follows by induction using $\dim\mathcal{P}_\nu = \binom{\nu+m-1}{m-1}$. $\square$
+*Proof.* The Laplacian maps $\mathcal{P}_\nu$ onto $\mathcal{P}_{\nu-2}$ for $\nu \geq 2$; surjectivity is checked on monomials, and the kernel is $\mathcal{H}_\nu$, giving the splitting $\mathcal{P}_\nu = \mathcal{H}_\nu \oplus |x|^2\mathcal{P}_{\nu-2}$. Iterating gives the direct sum, and the dimension formula follows by induction using $\dim\mathcal{P}_\nu = \binom{\nu+m-1}{m-1}$.
 
 **Definition.** The **solid spherical monogenics** of degree $\nu$ for $(A,D)$ are the left regular homogeneous polynomials of degree $\nu$,
 
@@ -202,7 +202,7 @@ $$
 
 **Proposition.** Every solid spherical monogenic is harmonic: $\mathcal{M}_\nu \subseteq \mathcal{H}_\nu$. The multiplication map $A \otimes_\mathbb{R} A \to A$ being surjective, one has $\dim \mathcal{M}_1 = m^2 - m$.
 
-*Proof.* Regularity gives $\Delta P = \bar D D P = 0$ for $\Delta$-homogeneous $P$. For the dimension, the linear maps $f : A \to A$ form an $m^2$-dimensional space and $Df = 0$ is the condition that the linear map $\ell(f)$ vanish, where $\ell$ is the composite of the identification of linear maps with $A \otimes A$ and the multiplication $A\otimes A \to A$. This composite is surjective, so its kernel has dimension $m^2 - m$. $\square$
+*Proof.* Regularity gives $\Delta P = \bar D D P = 0$ for $\Delta$-homogeneous $P$. For the dimension, the linear maps $f : A \to A$ form an $m^2$-dimensional space and $Df = 0$ is the condition that the linear map $\ell(f)$ vanish, where $\ell$ is the composite of the identification of linear maps with $A \otimes A$ and the multiplication $A\otimes A \to A$. This composite is surjective, so its kernel has dimension $m^2 - m$.
 
 For the complex system this gives $\dim_\mathbb{R}\mathcal{M}_\nu = 2$ for every $\nu$, the space consisting of the maps $x \mapsto a\,x^\nu$ with $a \in \mathbb{C}$, as it must; for a four-dimensional Clifford-type system it gives $\dim\mathcal{M}_1 = 12$, and in general the spaces $\mathcal{M}_\nu$ are the irreducible pieces of the monogenic decomposition, whose explicit bases are computed in the particular theories.
 
@@ -214,11 +214,11 @@ $$
 
 convergent uniformly on compact subsets of $B(0,R)$.
 
-*Proof.* A regular function is real-analytic, so it has a convergent power series at the origin whose homogeneous parts $P_\nu$ are unique. Since $f$ is regular, $Df = \sum_\nu D P_\nu = 0$, and since $DP_\nu$ is homogeneous of degree $\nu - 1$, the homogeneous parts of distinct degrees are linearly independent; hence $DP_\nu = 0$ for every $\nu$. $\square$
+*Proof.* A regular function is real-analytic, so it has a convergent power series at the origin whose homogeneous parts $P_\nu$ are unique. Since $f$ is regular, $Df = \sum_\nu D P_\nu = 0$, and since $DP_\nu$ is homogeneous of degree $\nu - 1$, the homogeneous parts of distinct degrees are linearly independent; hence $DP_\nu = 0$ for every $\nu$.
 
 **Theorem (orthogonality on the sphere).** For a Clifford-type system, the spaces of traces $\{P|_{\partial B(0,1)} : P \in \mathcal{M}_\nu\}$ for distinct degrees $\nu$ are mutually orthogonal in $L^2(\partial B(0,1))$ with respect to the surface measure, and their orthogonal sum is dense in the space of square-integrable boundary values of regular functions on the ball.
 
-*Proof.* This is the Fischer decomposition of Clifford analysis: the solid spherical monogenics of different degrees are eigenfunctions of the spherical Cauchy–Riemann operator belonging to different eigenvalues, and eigenfunctions of a self-adjoint operator for distinct eigenvalues are orthogonal. Density follows from the Taylor expansion together with the convergence of the series on the closed ball for functions regular on a neighbourhood of it. $\square$
+*Proof.* This is the Fischer decomposition of Clifford analysis: the solid spherical monogenics of different degrees are eigenfunctions of the spherical Cauchy–Riemann operator belonging to different eigenvalues, and eigenfunctions of a self-adjoint operator for distinct eigenvalues are orthogonal. Density follows from the Taylor expansion together with the convergence of the series on the closed ball for functions regular on a neighbourhood of it.
 
 The theorem is the hypercomplex analogue of the Fourier series: a regular function is built from the monogenic harmonics exactly as a holomorphic function is built from the powers $z^\nu$, and the orthogonality on the sphere is the orthogonality of the trigonometric system.
 
@@ -242,7 +242,7 @@ This is the Cauchy integral formula of *Hypercomplex Integration*, reinterpreted
 
 **Theorem (the transform is a projection onto regular functions).** The Cauchy transform maps $L^2(\partial\Omega)$ onto the space of regular functions on $\Omega$, and it is the identity on the boundary values of those functions.
 
-*Proof.* Regularity of $\mathcal{C}h$ inside $\Omega$ was proved in *Hypercomplex Integration*, as was the reproducing property. The two statements together say that $\mathcal{C}$ is a projection with image contained in the regular functions and containing them; hence its image is exactly the space of regular functions on $\Omega$. $\square$
+*Proof.* Regularity of $\mathcal{C}h$ inside $\Omega$ was proved in *Hypercomplex Integration*, as was the reproducing property. The two statements together say that $\mathcal{C}$ is a projection with image contained in the regular functions and containing them; hence its image is exactly the space of regular functions on $\Omega$.
 
 **Remark.** The jump formula $\mathcal{C}^+h - \mathcal{C}^-h = h$ of *Hypercomplex Integration* is the statement that the two projections associated with the two sides of the boundary differ by the identity, exactly as the Szegő and Hardy-space projections do for the unit circle in the complex case. The harmonic analysis of a hypercomplex system is thus organised around two decompositions of the same function space: the Fourier decomposition of the translation-invariant side, indexed by the characteristic variety, and the monogenic decomposition of the Cauchy side, indexed by degree and by the symmetry of the system.
 
@@ -260,7 +260,7 @@ holomorphic in the tube of convergence and reducing to the Fourier transform on 
 
 **Proposition.** If $f$ is a compactly supported left regular $A$-valued distribution, then $\mathcal{L}f = 0$ identically. Hence the Laplace theory of regular functions is a theory of functions on cones or of exponential growth.
 
-*Proof.* The Fourier transform $\hat f$ is the restriction to $\mathbb{R}^m$ of an entire function of exponential type; the equation $\sigma(\zeta)\hat f(\zeta) = 0$ holds on the open set where $\sigma$ is invertible, hence by analytic continuation on all of $\mathbb{C}^m$ off the complex characteristic variety, so $\hat f$ vanishes on a dense open set and is identically zero. Then $(\mathcal{L}f)(i\xi) = \hat f(\xi) = 0$ for all real $\xi$, and by analyticity $\mathcal{L}f = 0$. $\square$
+*Proof.* The Fourier transform $\hat f$ is the restriction to $\mathbb{R}^m$ of an entire function of exponential type; the equation $\sigma(\zeta)\hat f(\zeta) = 0$ holds on the open set where $\sigma$ is invertible, hence by analytic continuation on all of $\mathbb{C}^m$ off the complex characteristic variety, so $\hat f$ vanishes on a dense open set and is identically zero. Then $(\mathcal{L}f)(i\xi) = \hat f(\xi) = 0$ for all real $\xi$, and by analyticity $\mathcal{L}f = 0$.
 
 So the Laplace theory of regular functions is a theory of functions on cones or of exponential growth, and its inversion is the classical contour inversion along a translate of the imaginary axis.
 
@@ -320,7 +320,7 @@ and the regularity condition $\sigma(\gamma^*)c_{\gamma^*} = 0$ forces every coe
 
 **Proposition.** A left regular function on the torus $A/\Gamma$ has Fourier coefficients supported on $\Gamma^* \cap \operatorname{Char}(D)$, and if the dual lattice meets the complex isotropic cone only at the origin then every left regular function on $A/\Gamma$ is constant.
 
-*Proof.* Apply $\widehat{Df}(\gamma^*) = i\sigma(\gamma^*)c_{\gamma^*} = 0$; where $\sigma(\gamma^*)$ is invertible this gives $c_{\gamma^*} = 0$, and invertibility fails only on $\operatorname{Char}(D)$. $\square$
+*Proof.* Apply $\widehat{Df}(\gamma^*) = i\sigma(\gamma^*)c_{\gamma^*} = 0$; where $\sigma(\gamma^*)$ is invertible this gives $c_{\gamma^*} = 0$, and invertibility fails only on $\operatorname{Char}(D)$.
 
 This is the discrete case of the Fourier transform, and it shows that the characteristic variety controls periodic regular functions exactly as it controls compactly supported ones. The Poisson summation formula
 

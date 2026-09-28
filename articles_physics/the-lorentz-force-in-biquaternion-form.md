@@ -103,7 +103,7 @@ $$
 
 The whole content of the four-force is in its anti-Hermitian half. The same is true of $\tilde{U}$ and $\tilde{P}$, and this is why $\mathbb{M}_-$ is called the material sector: it is the subspace of four-vectors.
 
-**2. Orthogonality to the four-momentum.** The four-momentum has fixed norm form, $\tilde{P}\bar{\tilde{P}} = -m^2c^2$, along the worldline. Differentiating and using $\tilde{K} = d\tilde{P}/d\tau$ gives
+**2. Orthogonality to the four-momentum.** The four-momentum has fixed biquaternion norm, $\tilde{P}\bar{\tilde{P}} = -m^2c^2$, along the worldline. Differentiating and using $\tilde{K} = d\tilde{P}/d\tau$ gives
 
 $$
 \tilde{K}\bar{\tilde{P}} + \tilde{P}\bar{\tilde{K}} = 0,
@@ -363,7 +363,7 @@ $$
 
 since $\mathbf{f}\cdot\mathbf{v} = q(\mathbf{E} + \mathbf{v}\times\mathbf{B})\cdot\mathbf{v} = q\,\mathbf{E}\cdot\mathbf{v} = P_{\text{mech}}$. The cancellation is exact.
 
-**Conservation of rest mass.** Since $\tilde{P}\bar{\tilde{P}} = -m^2c^2$ is constant along the worldline, the rest mass is unchanged by the Lorentz force. The force can rotate the four-momentum in $\mathbb{M}_-$ but cannot change its norm form.
+**Conservation of rest mass.** Since $\tilde{P}\bar{\tilde{P}} = -m^2c^2$ is constant along the worldline, the rest mass is unchanged by the Lorentz force. The force can rotate the four-momentum in $\mathbb{M}_-$ but cannot change its biquaternion norm.
 
 **The non-relativistic limit.** For $|\mathbf{v}| \ll c$ the scalar part of $\tilde{K}$ is negligible relative to the vector part, and the four-force reduces to the Newtonian Lorentz force $q(\mathbf{E} + \mathbf{v}\times\mathbf{B})$.
 
@@ -377,7 +377,7 @@ I_1 = \mathbf{E}^2 - c^2\mathbf{B}^2,
 I_2 = \mathbf{E}\cdot\mathbf{B}.
 $$
 
-They are the real and imaginary parts of the norm form of the field,
+They are the real and imaginary parts of the biquaternion norm of the field,
 
 $$
 N(\tilde{F}) = \tilde{F}\bar{\tilde{F}} = -\epsilon\left(I_1 + 2ic\,I_2\right),
@@ -393,11 +393,11 @@ $$
 \tilde{P}\bar{\tilde{P}} = -m^2c^2,
 $$
 
-which, as shown above, is preserved by the Lorentz force because the force is orthogonal to the four-momentum. This invariant is independent of the field: every charged particle retains its rest mass, whatever the field. In the biquaternion framework this is the statement that the four-force lies in $\mathbb{M}_-$ and is orthogonal to $\tilde{P}$ in the norm form.
+which, as shown above, is preserved by the Lorentz force because the force is orthogonal to the four-momentum. This invariant is independent of the field: every charged particle retains its rest mass, whatever the field. In the biquaternion framework this is the statement that the four-force lies in $\mathbb{M}_-$ and is orthogonal to $\tilde{P}$ in the biquaternion norm.
 
 ### The force's Lorentz scalar
 
-The norm form of the four-force itself,
+The biquaternion norm of the four-force itself,
 
 $$
 N(\tilde{K}) = \tilde{K}\bar{\tilde{K}} = -\left(K^0\right)^2 + \left|\mathbf{K}\right|^2,
@@ -421,7 +421,7 @@ in every frame. The scalar measures the electric field in the particle's rest fr
 
 The invariants $I_1, I_2$ determine the Lorentz type of the field, and therefore the possible shapes of the force. The classification, established in the field-strength article, is the following.
 
-- **Null field** ($I_1 = I_2 = 0$). Then $\mathbf{E}\perp\mathbf{B}$ and $|\mathbf{E}| = c|\mathbf{B}|$ pointwise, and no Lorentz transformation can remove either field. The field is radiative. The norm form of the field vanishes, and $\tilde{F}$ is a zero divisor of $\mathbb{B}$.
+- **Null field** ($I_1 = I_2 = 0$). Then $\mathbf{E}\perp\mathbf{B}$ and $|\mathbf{E}| = c|\mathbf{B}|$ pointwise, and no Lorentz transformation can remove either field. The field is radiative. The biquaternion norm of the field vanishes, and $\tilde{F}$ is a zero divisor of $\mathbb{B}$.
 - **Electric type** ($I_2 = 0$, $I_1 > 0$). Then there is a frame in which $\mathbf{B} = 0$, with $\mathbf{E}^2 = I_1$. In that frame the four-force is $\tilde{K} = i\gamma q(\mathbf{E}\cdot\mathbf{v})/c\,e_0 + \gamma q\,\mathbf{E}$: purely electric.
 - **Magnetic type** ($I_2 = 0$, $I_1 < 0$). Then there is a frame in which $\mathbf{E} = 0$, with $c^2\mathbf{B}^2 = -I_1$. In that frame the four-force is $\tilde{K} = \gamma q(\mathbf{v}\times\mathbf{B})$: purely magnetic, and no work is done.
 - **Generic field** ($I_2 \neq 0$). Then no frame removes either field, but there is a frame in which $\mathbf{E}$ and $\mathbf{B}$ are parallel, with magnitudes determined by the two invariants through
@@ -546,7 +546,7 @@ $$
 
 Equivalently, $\tilde{K} = -\frac{q}{2c\sqrt{\epsilon}}(\tilde{U}\tilde{F} + \tilde{F}^\dagger\tilde{U})$, since $\sqrt{\mu} = 1/(c\sqrt{\epsilon})$; and since $\tilde{F}^\dagger = -\tilde{F}^*$, the formula may be written $-\frac{q\sqrt{\mu}}{2}(\tilde{U}\tilde{F} - \tilde{F}^*\tilde{U})$. The conjugate field is essential: it carries the anti-self-dual half of the field tensor, and the electric and magnetic contributions can be separated only by combining the two halves. This resolves the open question recorded in the relativistic-mechanics article, and fixes the force notation: the four-force is written $\tilde{K}$, while $\tilde{F}$ is reserved for the field strength.
 
-The structural consequences are these. The four-force is orthogonal to the four-momentum, $\tilde{K}\bar{\tilde{P}} + \tilde{P}\bar{\tilde{K}} = 0$, so the mass shell $\tilde{P}\bar{\tilde{P}} = -m^2c^2$ is preserved and the rest mass is unchanged by the Lorentz force. The force's norm form $N(\tilde{K})$ is a Lorentz scalar equal to $q^2\mathbf{E}_{\text{rest}}^2$, the squared electric field in the particle's rest frame. The field invariants $I_1 = \mathbf{E}^2 - c^2\mathbf{B}^2$ and $I_2 = \mathbf{E}\cdot\mathbf{B}$ classify the field as null, electric, magnetic, or generic, and thereby fix the simplest possible shape of the force and, for a uniform field, the characteristic rates of the motion: the eigenvalues of the field matrix solve $\lambda^4 - (I_1/c^2)\lambda^2 - I_2^2/c^2 = 0$. In the null case a null eigenvector $k$ of the field matrix gives one further invariant of the motion, $k\cdot P$. Finally, under boosts the four-force transforms in the vector representation, $\tilde{K}' = \tilde{\Lambda}\tilde{K}\tilde{\Lambda}^\dagger$, while the field transforms in the bivector representation, $\tilde{F}' = \bar{\tilde{\Lambda}}\tilde{F}\tilde{\Lambda}$, and the product formula is covariant under the pair.
+The structural consequences are these. The four-force is orthogonal to the four-momentum, $\tilde{K}\bar{\tilde{P}} + \tilde{P}\bar{\tilde{K}} = 0$, so the mass shell $\tilde{P}\bar{\tilde{P}} = -m^2c^2$ is preserved and the rest mass is unchanged by the Lorentz force. The force's biquaternion norm $N(\tilde{K})$ is a Lorentz scalar equal to $q^2\mathbf{E}_{\text{rest}}^2$, the squared electric field in the particle's rest frame. The field invariants $I_1 = \mathbf{E}^2 - c^2\mathbf{B}^2$ and $I_2 = \mathbf{E}\cdot\mathbf{B}$ classify the field as null, electric, magnetic, or generic, and thereby fix the simplest possible shape of the force and, for a uniform field, the characteristic rates of the motion: the eigenvalues of the field matrix solve $\lambda^4 - (I_1/c^2)\lambda^2 - I_2^2/c^2 = 0$. In the null case a null eigenvector $k$ of the field matrix gives one further invariant of the motion, $k\cdot P$. Finally, under boosts the four-force transforms in the vector representation, $\tilde{K}' = \tilde{\Lambda}\tilde{K}\tilde{\Lambda}^\dagger$, while the field transforms in the bivector representation, $\tilde{F}' = \bar{\tilde{\Lambda}}\tilde{F}\tilde{\Lambda}$, and the product formula is covariant under the pair.
 
 ## Summary of Notation
 

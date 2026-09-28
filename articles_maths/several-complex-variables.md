@@ -41,21 +41,21 @@ $$
 f(z) = \frac{1}{(2\pi i)^n}\int_{\lvert \zeta_j - a_j\rvert = r_j} \frac{f(\zeta)}{(\zeta_1 - z_1)\cdots(\zeta_n - z_n)}\,d\zeta_1\cdots d\zeta_n ,
 $$
 
-and expanding each factor $(\zeta_j - z_j)^{-1}$ as a geometric series gives the power series with the stated coefficients and the stated convergence. Conversely a convergent power series is continuous and holomorphic in each variable, so it is holomorphic. $\square$
+and expanding each factor $(\zeta_j - z_j)^{-1}$ as a geometric series gives the power series with the stated coefficients and the stated convergence. Conversely a convergent power series is continuous and holomorphic in each variable, so it is holomorphic.
 
 **Theorem (Cauchy estimates and the identity theorem).** If $f$ is holomorphic on $\Delta(a,r)$ with $\lvert f\rvert \leq M$ then $\lvert c_\alpha\rvert \leq M r^{-\alpha}$. If $f$ vanishes on a nonempty open subset of a domain $D$, then $f \equiv 0$ on $D$.
 
-**Proof.** The estimates follow from the integral formula by bounding the integrand. The identity theorem follows by applying the one-variable identity theorem successively in each variable along polydiscs, using that a domain in $\mathbb{C}^n$ is connected and the vanishing set is open and closed in it. $\square$
+**Proof.** The estimates follow from the integral formula by bounding the integrand. The identity theorem follows by applying the one-variable identity theorem successively in each variable along polydiscs, using that a domain in $\mathbb{C}^n$ is connected and the vanishing set is open and closed in it.
 
 **Theorem (Weierstrass convergence theorem; Montel).** A sequence of holomorphic functions on a domain $D$ that converges uniformly on every compact subset of $D$ has a holomorphic limit, and the same is true of every derivative of the sequence. A locally bounded family of holomorphic functions on $D$ is normal: every sequence in it has a subsequence converging uniformly on compact subsets.
 
-**Proof.** The first statement is a diagonal application of the one-variable Weierstrass theorem, or an application of Morera's theorem in each variable using the continuity of the limit; the second is Montel's theorem, obtained from the Cauchy estimates and the Arzelà–Ascoli theorem. $\square$
+**Proof.** The first statement is a diagonal application of the one-variable Weierstrass theorem, or an application of Morera's theorem in each variable using the continuity of the limit; the second is Montel's theorem, obtained from the Cauchy estimates and the Arzelà–Ascoli theorem.
 
 ### Separate and Joint Holomorphy: Hartogs' Theorem
 
 **Theorem (Hartogs).** Let $D \subseteq \mathbb{C}^n$ be a domain and let $f : D \to \mathbb{C}$ be holomorphic in each variable separately. Then $f$ is holomorphic.
 
-**Proof.** The proof has two steps. First, Osgood's lemma: a separately holomorphic function is continuous, because the Cauchy integral formula in each variable expresses $f$ near a point as an integral of $f$ over a polydisc boundary, and the integrand is continuous in the parameter. Second, continuity together with separate holomorphy allows the iterated Cauchy integral over a polydisc, which produces the power series expansion, so $f$ is jointly holomorphic. Both steps use the one-variable Cauchy theory of *Complex Analysis*. $\square$
+**Proof.** The proof has two steps. First, Osgood's lemma: a separately holomorphic function is continuous, because the Cauchy integral formula in each variable expresses $f$ near a point as an integral of $f$ over a polydisc boundary, and the integrand is continuous in the parameter. Second, continuity together with separate holomorphy allows the iterated Cauchy integral over a polydisc, which produces the power series expansion, so $f$ is jointly holomorphic. Both steps use the one-variable Cauchy theory of *Complex Analysis*.
 
 **Remark.** In one variable there is nothing to prove, since separate and joint holomorphy coincide by definition; in two and more variables the theorem is a genuine regularity statement. The power series expansion obtained in the proof shows that continuity is a consequence of separate holomorphy, and it is the first indication of the rigidity that governs the whole theory.
 
@@ -63,11 +63,11 @@ and expanding each factor $(\zeta_j - z_j)^{-1}$ as a geometric series gives the
 
 **Theorem (Hartogs extension).** Let $D \subseteq \mathbb{C}^n$ with $n \geq 2$ be a domain and let $K \subset D$ be compact with $D \setminus K$ connected. Then every holomorphic function on $D \setminus K$ extends holomorphically to $D$.
 
-**Proof.** The classical proof uses a Hartogs figure: a suitable domain $H \subset D$, the union of a polydisc and a "chimney", such that every function holomorphic on $H$ extends to the ordinary polydisc containing it, by iterating the one-variable Cauchy formula along the chimney. Covering $D \setminus K$ by finitely many such figures and using the connectedness of $D \setminus K$ to propagate the extensions gives the theorem. The argument is Hartogs' and is in the references. $\square$
+**Proof.** The classical proof uses a Hartogs figure: a suitable domain $H \subset D$, the union of a polydisc and a "chimney", such that every function holomorphic on $H$ extends to the ordinary polydisc containing it, by iterating the one-variable Cauchy formula along the chimney. Covering $D \setminus K$ by finitely many such figures and using the connectedness of $D \setminus K$ to propagate the extensions gives the theorem. The argument is Hartogs' and is in the references.
 
 **Corollary.** In $n \geq 2$ variables there are no isolated singularities of holomorphic functions: a function holomorphic on a punctured polydisc $\Delta(a,r) \setminus \{a\}$ extends holomorphically over $a$.
 
-**Proof.** Take $K = \{a\}$, a compact subset whose complement in the polydisc is connected. $\square$
+**Proof.** Take $K = \{a\}$, a compact subset whose complement in the polydisc is connected.
 
 **Remark.** The corollary is the sharpest contrast with the one-variable theory, in which a function holomorphic on a punctured disc may have an essential singularity and no extension. The phenomenon is caused by the abundance of directions: the singularity is surrounded, and the one-variable Cauchy formula applied in a ring, together with the connectedness of the complement, forces the Laurent expansion to have no negative part.
 
@@ -79,7 +79,7 @@ and expanding each factor $(\zeta_j - z_j)^{-1}$ as a geometric series gives the
 
 **Theorem (existence of the envelope).** Every domain $D \subseteq \mathbb{C}^n$ has an envelope of holomorphy, and it is a domain of holomorphy.
 
-**Proof.** The envelope is constructed as the space of germs of holomorphic functions on $D$ that are continuable along paths, with the natural projection to $\mathbb{C}^n$; the connectedness and the existence of a maximal spread domain are due to Cartan–Thullen and Oka. The construction is in the references. $\square$
+**Proof.** The envelope is constructed as the space of germs of holomorphic functions on $D$ that are continuable along paths, with the natural projection to $\mathbb{C}^n$; the connectedness and the existence of a maximal spread domain are due to Cartan–Thullen and Oka. The construction is in the references.
 
 **Example.** The domain $D = \Delta(0,1)^2 \setminus \overline{\Delta(0, 1/2)^2}$ in $\mathbb{C}^2$ has envelope the full bidisc $\Delta(0,1)^2$, by the Hartogs extension theorem; it is therefore not a domain of holomorphy, and it shows that the envelope may be strictly larger than the domain.
 
@@ -95,11 +95,11 @@ The domain $D$ is **holomorphically convex** if $\hat K_D$ is compact in $D$ for
 
 **Theorem (Cartan–Thullen).** A domain $D \subseteq \mathbb{C}^n$ is a domain of holomorphy if and only if it is holomorphically convex.
 
-**Proof.** A point outside the hull of a compact set can be separated from it by a holomorphic function, and a sequence of such separations produces a holomorphic function on $D$ blowing up on any sequence approaching the boundary, which prevents extension; the converse uses the existence of the envelope and the compactness of the hulls. The theorem is Cartan and Thullen's; the details are in the references. $\square$
+**Proof.** A point outside the hull of a compact set can be separated from it by a holomorphic function, and a sequence of such separations produces a holomorphic function on $D$ blowing up on any sequence approaching the boundary, which prevents extension; the converse uses the existence of the envelope and the compactness of the hulls. The theorem is Cartan and Thullen's; the details are in the references.
 
 **Theorem (the hulls determine the envelope).** If $D$ is not holomorphically convex, then the envelope of holomorphy of $D$ contains $\hat K_D$ for a compact $K$ with noncompact hull, and every holomorphic function on $D$ extends across the added part.
 
-**Proof.** The functions of $D$ are bounded on $\hat K_D$ by their supremum on $K$, so their power series at points of $K$ converge on an open set containing $\hat K_D$; the continuation gives the extension. $\square$
+**Proof.** The functions of $D$ are bounded on $\hat K_D$ by their supremum on $K$, so their power series at points of $K$ converge on an open set containing $\hat K_D$; the continuation gives the extension.
 
 ## Pseudoconvexity and the Levi Problem
 
@@ -115,7 +115,7 @@ is positive semidefinite for every $z$ and every $w$.
 
 **Theorem.** A function $\varphi$ is plurisubharmonic if and only if it is locally the upper semicontinuous regularisation of the supremum of a family of functions of the form $c\log\lvert f\rvert$ with $f$ holomorphic and $c > 0$. In particular $\log\lvert f\rvert$ is plurisubharmonic for every holomorphic $f$, and plurisubharmonicity is invariant under biholomorphic maps.
 
-**Proof.** The characterisation of plurisubharmonicity by holomorphic discs gives one direction: composing with a holomorphic map preserves plurisubharmonicity, and $\log\lvert\zeta\rvert$ is subharmonic in one variable. The converse is the standard approximation by $\log\lvert f\rvert$ in the definition of the pluricomplex Green function; the details are in the references. $\square$
+**Proof.** The characterisation of plurisubharmonicity by holomorphic discs gives one direction: composing with a holomorphic map preserves plurisubharmonicity, and $\log\lvert\zeta\rvert$ is subharmonic in one variable. The converse is the standard approximation by $\log\lvert f\rvert$ in the definition of the pluricomplex Green function; the details are in the references.
 
 **Definition.** A domain $D \subseteq \mathbb{C}^n$ is **pseudoconvex** if it has a continuous plurisubharmonic exhaustion function $\varphi : D \to \mathbb{R}$, that is, a plurisubharmonic $\varphi$ such that $\{z \in D : \varphi(z) < c\}$ is relatively compact in $D$ for every $c$. A domain with $\mathcal{C}^2$ boundary is pseudoconvex if and only if the Levi form of a defining function is positive semidefinite on the complex tangent space at every boundary point.
 
@@ -125,11 +125,11 @@ is positive semidefinite for every $z$ and every $w$.
 
 **Theorem (Levi problem; Oka, Bremermann, Norguet).** A domain $D \subseteq \mathbb{C}^n$ is pseudoconvex if and only if it is a domain of holomorphy; equivalently, every pseudoconvex domain carries a holomorphic function that does not extend across any boundary point.
 
-**Proof.** The implication from a domain of holomorphy to pseudoconvexity is a consequence of the Cartan–Thullen theorem together with the construction of a plurisubharmonic exhaustion from the holomorphically convex hulls. The converse, which is the substance of the theorem, is the solution of the Levi problem by Oka and independently by Bremermann and Norguet in the years 1942–1954: one solves the inhomogeneous Cauchy–Riemann equation with a plurisubharmonic barrier to construct the extending function. The proof is in the references. $\square$
+**Proof.** The implication from a domain of holomorphy to pseudoconvexity is a consequence of the Cartan–Thullen theorem together with the construction of a plurisubharmonic exhaustion from the holomorphically convex hulls. The converse, which is the substance of the theorem, is the solution of the Levi problem by Oka and independently by Bremermann and Norguet in the years 1942–1954: one solves the inhomogeneous Cauchy–Riemann equation with a plurisubharmonic barrier to construct the extending function. The proof is in the references.
 
 **Corollary.** For domains in $\mathbb{C}^n$ the three conditions — domain of holomorphy, holomorphic convexity, pseudoconvexity — are equivalent.
 
-**Proof.** The Cartan–Thullen theorem gives the first equivalence and the Levi problem the second. $\square$
+**Proof.** The Cartan–Thullen theorem gives the first equivalence and the Levi problem the second.
 
 ## The $\bar\partial$-Equation and the Cohomological Method
 
@@ -151,7 +151,7 @@ $$
 
 where the left-hand side is the cohomology of the Dolbeault complex of $(p,q)$-forms and the right-hand side is the sheaf cohomology of the holomorphic $p$-forms.
 
-**Proof.** The Dolbeault complex is a fine resolution of the sheaf $\Omega^p$, and the comparison theorem for resolutions by fine sheaves identifies its cohomology with the sheaf cohomology; the construction is in *Sheaf Cohomology*. $\square$
+**Proof.** The Dolbeault complex is a fine resolution of the sheaf $\Omega^p$, and the comparison theorem for resolutions by fine sheaves identifies its cohomology with the sheaf cohomology; the construction is in *Sheaf Cohomology*.
 
 **Theorem (solvability of the $\bar\partial$-equation; Hörmander).** Let $D \subseteq \mathbb{C}^n$ be a pseudoconvex domain and let $f$ be a $\bar\partial$-closed $(0,q)$-form with $q \geq 1$ and square-integrable coefficients. Then there is a $(0,q-1)$-form $u$ with $L^2$ coefficients solving $\bar\partial u = f$, and the solution can be chosen with the estimate
 
@@ -161,11 +161,11 @@ $$
 
 for a suitable plurisubharmonic weight $\varphi$. For $q = 1$ the equation $\bar\partial u = f$ is solvable for every $\bar\partial$-closed $(0,1)$-form, and this is the technical heart of the theory of domains of holomorphy.
 
-**Proof.** The theorem is Hörmander's, obtained by the $L^2$ estimates for the $\bar\partial$-Neumann problem and the weighted Hilbert space method; the pseudoconvexity supplies the plurisubharmonic weight. The proof is in the references. $\square$
+**Proof.** The theorem is Hörmander's, obtained by the $L^2$ estimates for the $\bar\partial$-Neumann problem and the weighted Hilbert space method; the pseudoconvexity supplies the plurisubharmonic weight. The proof is in the references.
 
 **Corollary.** On a pseudoconvex domain $D$, $H^q(D, \mathcal{O}) = 0$ for every $q \geq 1$. In particular, for $n \geq 2$, if $K \subset D$ is compact and $D \setminus K$ is connected, then every holomorphic function on $D \setminus K$ extends holomorphically to $D$.
 
-**Proof.** The vanishing is the Dolbeault isomorphism with the solvability of $\bar\partial$ in degree $(0,q)$ for $q \geq 1$, using $p = 0$; the extension statement is the combination with the Hartogs phenomenon and the Levi problem. $\square$
+**Proof.** The vanishing is the Dolbeault isomorphism with the solvability of $\bar\partial$ in degree $(0,q)$ for $q \geq 1$, using $p = 0$; the extension statement is the combination with the Hartogs phenomenon and the Levi problem.
 
 ### The Cousin Problems
 
@@ -179,7 +179,7 @@ $$
 
 of the exponential sheaf sequence $0 \to \mathbb{Z} \to \mathcal{O} \xrightarrow{\exp} \mathcal{O}^* \to 0$.
 
-**Proof.** The first problem is solved by the vanishing $H^1(D,\mathcal{O}) = 0$ of Cartan's theorem B below, which trivialises the cocycle. For the second, the long exact cohomology sequence of the exponential sequence gives $H^1(D, \mathcal{O}^*)/\operatorname{im} H^1(D,\mathcal{O}) \cong \ker(H^2(D,\mathbb{Z}) \to H^2(D,\mathcal{O}))$; since $H^1(D, \mathcal{O}) = 0$ and $H^2(D, \mathcal{O}) = 0$ on a domain of holomorphy by Cartan's theorem B, the Cousin class vanishes exactly when its image in $H^2(D,\mathbb{Z})$ does. The argument is in *Sheaf Cohomology*. $\square$
+**Proof.** The first problem is solved by the vanishing $H^1(D,\mathcal{O}) = 0$ of Cartan's theorem B below, which trivialises the cocycle. For the second, the long exact cohomology sequence of the exponential sequence gives $H^1(D, \mathcal{O}^*)/\operatorname{im} H^1(D,\mathcal{O}) \cong \ker(H^2(D,\mathbb{Z}) \to H^2(D,\mathcal{O}))$; since $H^1(D, \mathcal{O}) = 0$ and $H^2(D, \mathcal{O}) = 0$ on a domain of holomorphy by Cartan's theorem B, the Cousin class vanishes exactly when its image in $H^2(D,\mathbb{Z})$ does. The argument is in *Sheaf Cohomology*.
 
 ### Cartan's Theorems
 
@@ -191,11 +191,11 @@ $$
 H^q(X, \mathcal{F}) = 0 \qquad \text{for all } q \geq 1 .
 $$
 
-**Proof.** The theorems are Cartan's, proved from Oka's coherence theorem and the solution of the $\bar\partial$-equation; the sheaf-theoretic proof is in *Sheaf Cohomology*. $\square$
+**Proof.** The theorems are Cartan's, proved from Oka's coherence theorem and the solution of the $\bar\partial$-equation; the sheaf-theoretic proof is in *Sheaf Cohomology*.
 
 **Corollary.** On a Stein manifold, $H^1(X, \mathcal{O}) = 0$, the first Cousin problem is always solvable, and $H^1(X, \mathcal{O}^*) \cong H^2(X, \mathbb{Z})$, so the second Cousin problem is obstructed exactly by an integral cohomology class.
 
-**Proof.** The first two statements are Theorem B for $\mathcal{F} = \mathcal{O}$; the last is the exponential sequence together with $H^1(X,\mathcal{O}) = H^2(X,\mathcal{O}) = 0$. $\square$
+**Proof.** The first two statements are Theorem B for $\mathcal{F} = \mathcal{O}$; the last is the exponential sequence together with $H^1(X,\mathcal{O}) = H^2(X,\mathcal{O}) = 0$.
 
 ## Stein Manifolds
 
@@ -205,17 +205,17 @@ $$
 
 **Theorem.** A connected complex manifold $X$ is Stein if and only if it is holomorphically convex and the holomorphic functions separate points and give local coordinates; equivalently, if and only if $X$ admits a strictly plurisubharmonic exhaustion function. Every closed complex submanifold of $\mathbb{C}^n$ is Stein, and every closed complex submanifold of a Stein manifold is Stein.
 
-**Proof.** The equivalence of the two characterisations is the Levi problem on manifolds, solved by the same $\bar\partial$ methods; the heredity of the Stein property to closed submanifolds follows because the restrictions of the ambient holomorphic functions separate points and give coordinates, and the exhaustion restricts. $\square$
+**Proof.** The equivalence of the two characterisations is the Levi problem on manifolds, solved by the same $\bar\partial$ methods; the heredity of the Stein property to closed submanifolds follows because the restrictions of the ambient holomorphic functions separate points and give coordinates, and the exhaustion restricts.
 
 ### Embedding and the Oka Principle
 
 **Theorem (Remmert, Bishop, Narasimhan).** Every Stein manifold of dimension $n$ admits a proper holomorphic embedding into $\mathbb{C}^N$ for some $N$; in fact $N = 2n+1$ suffices.
 
-**Proof.** The theorem is the embedding theorem for Stein manifolds, obtained from Cartan's Theorem A and the approximation results of Oka; the details are in the references. $\square$
+**Proof.** The theorem is the embedding theorem for Stein manifolds, obtained from Cartan's Theorem A and the approximation results of Oka; the details are in the references.
 
 **Theorem (Oka principle; Oka–Grauert).** Let $X$ be a Stein manifold and let $Y$ be a complex manifold that is the total space of a holomorphic fibre bundle with a complex Lie group as structure group. Then every continuous map $X \to Y$ is homotopic to a holomorphic map, and every continuous section of the bundle over $X$ is homotopic to a holomorphic section; more generally, for such bundles the holomorphic classification and the topological classification agree.
 
-**Proof.** The principle is Oka's for the case of a complex Lie group and Grauert's for the general fibre bundle; the proof reduces the existence of holomorphic sections to the vanishing of the relevant cohomology by Cartan's theorems and a homotopy-theoretic induction. It is quoted from the literature. $\square$
+**Proof.** The principle is Oka's for the case of a complex Lie group and Grauert's for the general fibre bundle; the proof reduces the existence of holomorphic sections to the vanishing of the relevant cohomology by Cartan's theorems and a homotopy-theoretic induction. It is quoted from the literature.
 
 **Remark.** The Oka principle is the global form of the rigidity of the theory: on Stein manifolds there is no obstruction to solving a holomorphic problem that cannot already be detected topologically, and the cohomological vanishing of Cartan's Theorem B is the algebraic content of that statement.
 
@@ -225,13 +225,13 @@ $$
 
 **Theorem (Poincaré).** The unit ball $B^n$ and the unit polydisc $\Delta^n$ are not biholomorphic for $n \geq 2$, although both are simply connected domains in $\mathbb{C}^n$.
 
-**Proof.** The automorphism group of the ball is the projective unitary group $\operatorname{PU}(n,1)$, of real dimension $n^2 + 2n$: the stabiliser of the origin is the unitary group $U(n)$ and the group acts transitively on $B^n$. The automorphism group of the polydisc is $(\operatorname{Aut}\Delta)^n \rtimes S_n$, of real dimension $3n$, since each factor is the Möbius group $\operatorname{PU}(1,1) \cong \operatorname{PSL}(2,\mathbb{R})$, of dimension $3$. The two dimensions $n^2+2n$ and $3n$ agree only for $n = 1$, so the groups are not isomorphic as Lie groups and the domains are not biholomorphic. The computation of the automorphism groups is Poincaré's. $\square$
+**Proof.** The automorphism group of the ball is the projective unitary group $\operatorname{PU}(n,1)$, of real dimension $n^2 + 2n$: the stabiliser of the origin is the unitary group $U(n)$ and the group acts transitively on $B^n$. The automorphism group of the polydisc is $(\operatorname{Aut}\Delta)^n \rtimes S_n$, of real dimension $3n$, since each factor is the Möbius group $\operatorname{PU}(1,1) \cong \operatorname{PSL}(2,\mathbb{R})$, of dimension $3$. The two dimensions $n^2+2n$ and $3n$ agree only for $n = 1$, so the groups are not isomorphic as Lie groups and the domains are not biholomorphic. The computation of the automorphism groups is Poincaré's.
 
 **Corollary.** In $n \geq 2$ variables there is no biholomorphic classification of simply connected domains: the Riemann mapping theorem of *Complex Analysis* is a strictly one-dimensional phenomenon, and the biholomorphic equivalence problem in $\mathbb{C}^n$ is a moduli problem without a discrete answer.
 
 **Theorem (Fefferman).** A biholomorphism between smoothly bounded strictly pseudoconvex domains in $\mathbb{C}^n$ extends to a smooth diffeomorphism of the closures.
 
-**Proof.** The theorem is Fefferman's; the extension is obtained from the boundary behaviour of the Bergman kernel and the asymptotic expansion of the Bergman metric near the boundary. It is quoted from the literature. $\square$
+**Proof.** The theorem is Fefferman's; the extension is obtained from the boundary behaviour of the Bergman kernel and the asymptotic expansion of the Bergman metric near the boundary. It is quoted from the literature.
 
 **Remark.** In one variable the boundary of a smoothly bounded domain is a curve and a conformal map need not extend smoothly, while in several variables the strong pseudoconvexity forces the boundary to be rigid enough that biholomorphisms extend. The rigidity is the geometric counterpart of the Hartogs phenomenon: the functions and the maps of the several-variable theory cannot behave locally as freely as in one variable.
 
@@ -249,25 +249,25 @@ $$
 
 where $u$ is a unit in the local ring and $w$ is a Weierstrass polynomial of degree $k$ in $z_n$. Moreover, for every $g \in \mathcal{O}_{\mathbb{C}^n,0}$ there are unique $q$ and $r$ with $g = qf + r$, where $r$ is a polynomial in $z_n$ of degree less than $k$ over $\mathcal{O}_{\mathbb{C}^{n-1},0}$.
 
-**Proof.** The division theorem is proved by the one-variable Weierstrass division applied to the holomorphic functions of $z_n$ with parameters $z'$, using the regularity to divide the polynomial part; the preparation theorem is the special case $g = z_n^k$. The details are in the references. $\square$
+**Proof.** The division theorem is proved by the one-variable Weierstrass division applied to the holomorphic functions of $z_n$ with parameters $z'$, using the regularity to divide the polynomial part; the preparation theorem is the special case $g = z_n^k$. The details are in the references.
 
 **Corollary.** The local ring $\mathcal{O}_{\mathbb{C}^n,0}$ is a unique factorization domain and a regular local ring of dimension $n$; hence the germ of a hypersurface is the zero set of a Weierstrass polynomial and has a local branched covering structure over $\mathbb{C}^{n-1}$.
 
-**Proof.** Unique factorization follows from the preparation theorem by induction on $n$, beginning with the one-variable case, and the regular local ring statement is the computation of the maximal ideal of $\mathcal{O}_{\mathbb{C}^n,0}$, which is generated by $z_1, \dots, z_n$, together with the dimension. $\square$
+**Proof.** Unique factorization follows from the preparation theorem by induction on $n$, beginning with the one-variable case, and the regular local ring statement is the computation of the maximal ideal of $\mathcal{O}_{\mathbb{C}^n,0}$, which is generated by $z_1, \dots, z_n$, together with the dimension.
 
 ### Coherence and the Nullstellensatz
 
 **Theorem (Oka's coherence theorem).** The sheaf $\mathcal{O}$ of holomorphic functions on $\mathbb{C}^n$ is coherent, and the sheaf of ideals generated by finitely many holomorphic functions is coherent. Consequently every analytic set is locally the common zero set of finitely many holomorphic functions with coherent ideal sheaf.
 
-**Proof.** The theorem is Oka's; the proof uses the Weierstrass preparation theorem to reduce the coherence of the ideal sheaf to the coherence of the structure sheaf, and it is the foundation of Cartan's theorems. It is quoted from the literature. $\square$
+**Proof.** The theorem is Oka's; the proof uses the Weierstrass preparation theorem to reduce the coherence of the ideal sheaf to the coherence of the structure sheaf, and it is the foundation of Cartan's theorems. It is quoted from the literature.
 
 **Theorem (analytic Nullstellensatz).** Let $X$ be the germ of an analytic set at the origin of $\mathbb{C}^n$ and let $\mathcal{I}(X)$ be the ideal of germs vanishing on $X$. Then $\mathcal{I}(X)$ is the radical of the ideal generated by any set of local defining functions of $X$, and the local ring $\mathcal{O}_{X,0}$ is a reduced analytic algebra of finite dimension.
 
-**Proof.** The statement is Rückert's and Oka's; the radical property is proved from the Weierstrass preparation theorem and the local parametrisation of $X$ as a branched covering of a polydisc in $\mathbb{C}^k$. $\square$
+**Proof.** The statement is Rückert's and Oka's; the radical property is proved from the Weierstrass preparation theorem and the local parametrisation of $X$ as a branched covering of a polydisc in $\mathbb{C}^k$.
 
 **Theorem (singular locus).** The set of singular points of an analytic set $X$ of pure dimension $k$ is a proper analytic subset of $X$; consequently the regular points form a dense open subset which is a complex manifold of dimension $k$.
 
-**Proof.** The singular locus is locally the common zero set of the $(k \times k)$ minors of the Jacobian matrix of a set of defining functions, hence is analytic; it is proper because the regular points are dense in the local branched covering. This is the theorem of Oka and Remmert. $\square$
+**Proof.** The singular locus is locally the common zero set of the $(k \times k)$ minors of the Jacobian matrix of a set of defining functions, hence is analytic; it is proper because the regular points are dense in the local branched covering. This is the theorem of Oka and Remmert.
 
 ## Summary
 

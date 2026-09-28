@@ -31,7 +31,7 @@ $$
 2B(Tu, Tv) = q(Tu + Tv) - q(Tu) - q(Tv) = q\bigl(T(u + v)\bigr) - q(Tu) - q(Tv) = q(u + v) - q(u) - q(v) = 2B(u, v),
 $$
 
-and invertibility of $2$ gives $B(Tu, Tv) = B(u, v)$. The converse is the special case of the identity $q(v) = B(v, v)$. $\square$
+and invertibility of $2$ gives $B(Tu, Tv) = B(u, v)$. The converse is the special case of the identity $q(v) = B(v, v)$.
 
 ### The Orthogonal Group
 
@@ -45,7 +45,7 @@ It is a subgroup of the general linear group $GL(V)$: the identity preserves $q$
 
 **Proposition.** The orthogonal group depends only on the isometry class of $q$. If $T : (V, q) \to (V', q')$ is an isometry, then conjugation by $T$ is an isomorphism $\operatorname{O}(V, q) \to \operatorname{O}(V', q')$.
 
-**Proof.** For $S \in \operatorname{O}(V, q)$ the conjugate $TST^{-1}$ preserves $q'$, since $q'(TST^{-1}v') = q(ST^{-1}v') = q(T^{-1}v') = q'(v')$, using $q' \circ T = q$; the assignment is a group homomorphism with inverse given by conjugation by $T^{-1}$. $\square$
+**Proof.** For $S \in \operatorname{O}(V, q)$ the conjugate $TST^{-1}$ preserves $q'$, since $q'(TST^{-1}v') = q(ST^{-1}v') = q(T^{-1}v') = q'(v')$, using $q' \circ T = q$; the assignment is a group homomorphism with inverse given by conjugation by $T^{-1}$.
 
 **Remark (the ring case).** Over a commutative ring the same definitions make sense, and $\operatorname{O}(V, B)$ is the subgroup of $GL(V)$ preserving $B$, where $GL(V)$ consists of the endomorphisms whose determinant is a unit. If the module is not free, the isometry group is not a matrix group. The proofs above use only bijectivity, not invertibility of a determinant, so they carry over unchanged.
 
@@ -81,7 +81,7 @@ $$
 
 If $n$ is odd, $c$ is a square in $F$. If $n$ is even the second condition is automatic.
 
-**Proof.** The determinant identity was computed above. For the divisibility of the discriminant, $T$ is an isometry from $(V, q)$ to $(V, cq)$, so $cq \cong q$; the discriminant is multiplicative in the scaling, $\Delta(cq) = c^{\,n}\Delta(q)$, and is an isometry invariant, so $c^{\,n}\Delta(q) = \Delta(q)$ and hence $c^{\,n}$ is a square because $\Delta(q) \neq 0$ for a non-degenerate form. The group $F^\times/(F^\times)^2$ has exponent two, so its element $[c]$ satisfies $[c]^{n} = [c]$ for odd $n$; from $[c^{n}] = 1$ we get $[c] = 1$, that is $c$ is a square. For even $n$ the element $c^{n} = (c^{n/2})^2$ is a square without further hypothesis. $\square$
+**Proof.** The determinant identity was computed above. For the divisibility of the discriminant, $T$ is an isometry from $(V, q)$ to $(V, cq)$, so $cq \cong q$; the discriminant is multiplicative in the scaling, $\Delta(cq) = c^{\,n}\Delta(q)$, and is an isometry invariant, so $c^{\,n}\Delta(q) = \Delta(q)$ and hence $c^{\,n}$ is a square because $\Delta(q) \neq 0$ for a non-degenerate form. The group $F^\times/(F^\times)^2$ has exponent two, so its element $[c]$ satisfies $[c]^{n} = [c]$ for odd $n$; from $[c^{n}] = 1$ we get $[c] = 1$, that is $c$ is a square. For even $n$ the element $c^{n} = (c^{n/2})^2$ is a square without further hypothesis.
 
 So the multipliers form a subgroup $\mu \subseteq F^\times$ containing the squares, and there is an exact sequence
 
@@ -110,7 +110,7 @@ The vector $v$ is **non-isotropic**, and the reflection is well defined because 
 **Proof.** The vector $v$ has $B(v, v) = q(v)$, so $\tau_v(v) = v - \frac{2q(v)}{q(v)}v = -v$. If $B(x, v) = 0$ then $\tau_v(x) = x$, so $\tau_v$ fixes $v^\perp$ pointwise and acts as $-1$ on the complementary line $Fv$; hence $\tau_v^2 = \mathrm{id}$ and $\tau_v$ has the eigenvalue $-1$ once and $+1$ on $v^\perp$, so $\det \tau_v = -1$. For the isometry property, expand using the polar form:
 
 $$
-q(\tau_v x) = q\Bigl(x - \frac{2B(x, v)}{q(v)}v\Bigr) = q(x) - \frac{4B(x, v)}{q(v)}\,B(x, v) + \frac{4B(x, v)^2}{q(v)^2}\,q(v) = q(x). \ \square
+q(\tau_v x) = q\Bigl(x - \frac{2B(x, v)}{q(v)}v\Bigr) = q(x) - \frac{4B(x, v)}{q(v)}\,B(x, v) + \frac{4B(x, v)^2}{q(v)^2}\,q(v) = q(x).
 $$
 
 **Definition.** A **hyperplane reflection** is a reflection $\tau_v$; its fixed hyperplane is $v^\perp$ and it negates the line $Fv$.
@@ -131,7 +131,7 @@ $$
 \tau_{x-y}(x) = x - \frac{2B(x, x - y)}{q(x - y)}(x - y),
 $$
 
-and $2B(x, x - y) = 2q(x) - 2B(x, y) = q(x - y)$ because $q(x) = q(y)$, so the coefficient is $1$ and $\tau_{x-y}(x) = x - (x - y) = y$. If $q(x - y) = 0$, then $q(x + y) = 2q(x) + 2q(y) - q(x - y) = 4q(x) \neq 0$, and the same computation with $x + y$ gives $\tau_{x+y}(x) = -y$; since $\tau_y(y) = -y$, the composition $\tau_y \circ \tau_{x+y}$ carries $x$ to $y$. In both cases at most two reflections suffice. $\square$
+and $2B(x, x - y) = 2q(x) - 2B(x, y) = q(x - y)$ because $q(x) = q(y)$, so the coefficient is $1$ and $\tau_{x-y}(x) = x - (x - y) = y$. If $q(x - y) = 0$, then $q(x + y) = 2q(x) + 2q(y) - q(x - y) = 4q(x) \neq 0$, and the same computation with $x + y$ gives $\tau_{x+y}(x) = -y$; since $\tau_y(y) = -y$, the composition $\tau_y \circ \tau_{x+y}$ carries $x$ to $y$. In both cases at most two reflections suffice.
 
 ## The Cartan–Dieudonné Theorem
 
@@ -153,7 +153,7 @@ $$
 B(N^2u, v) = B\bigl(N(Nu), v\bigr) = -B(Nu, Nv) = 0 \qquad (u, v \in V),
 $$
 
-whence $N^2 = 0$ because the form is non-degenerate. If $N \neq 0$ then $U = \operatorname{Im}N$ is a nonzero totally isotropic subspace, because $q(Ny) = 0$ for every $y$, and skewness of $N$ gives $(\operatorname{Im}N)^\perp = \ker N$. A product $\tau_a\tau_b$ of two reflections fixes $(Fa + Fb)^\perp$ pointwise and preserves the plane $Fa + Fb$; in the subcase at hand the product is unipotent, and the restriction of a unipotent endomorphism to an invariant subspace is unipotent, so the restriction to that plane is unipotent; a unipotent endomorphism of a two-dimensional space has minimal polynomial dividing $(x - 1)^2$, so $(T - \mathrm{id})^2 = 0$ on that plane and the rank there is at most one, so $\operatorname{rank}(T - \mathrm{id}) \leq 1$ for such a product. Hence a unipotent $T$ with $\operatorname{rank}(T - \mathrm{id}) \geq 2$ is not a product of two reflections, and since $\det T = 1$ and $T \neq \mathrm{id}$ it is not a product of fewer than four. If the form is anisotropic then $q$ vanishes only at $0$, so $N = 0$ and $T = \mathrm{id}$, which the hypothesis $T \neq \mathrm{id}$ excludes. The counting of reflections for the unipotent isometries of this subcase, including those with $\operatorname{rank}(T - \mathrm{id}) = 1$, is the delicate step of the theorem and is carried out in the standard sources, where it is shown to stay within the bound $n$. The intermediate case, in which $q(Ty - y) = 0$ for every non-isotropic $y$ but $q(Tx - x) \neq 0$ for some isotropic $x$, is reduced in the standard sources to the subcase just analysed by extending the isotropic $x$ to a hyperbolic pair and replacing $x$ by a non-isotropic vector of the hyperbolic plane it spans. The reader is referred to those sources for the detailed case analysis; the statement and the bound $n$ are exactly as cited there. $\square$
+whence $N^2 = 0$ because the form is non-degenerate. If $N \neq 0$ then $U = \operatorname{Im}N$ is a nonzero totally isotropic subspace, because $q(Ny) = 0$ for every $y$, and skewness of $N$ gives $(\operatorname{Im}N)^\perp = \ker N$. A product $\tau_a\tau_b$ of two reflections fixes $(Fa + Fb)^\perp$ pointwise and preserves the plane $Fa + Fb$; in the subcase at hand the product is unipotent, and the restriction of a unipotent endomorphism to an invariant subspace is unipotent, so the restriction to that plane is unipotent; a unipotent endomorphism of a two-dimensional space has minimal polynomial dividing $(x - 1)^2$, so $(T - \mathrm{id})^2 = 0$ on that plane and the rank there is at most one, so $\operatorname{rank}(T - \mathrm{id}) \leq 1$ for such a product. Hence a unipotent $T$ with $\operatorname{rank}(T - \mathrm{id}) \geq 2$ is not a product of two reflections, and since $\det T = 1$ and $T \neq \mathrm{id}$ it is not a product of fewer than four. If the form is anisotropic then $q$ vanishes only at $0$, so $N = 0$ and $T = \mathrm{id}$, which the hypothesis $T \neq \mathrm{id}$ excludes. The counting of reflections for the unipotent isometries of this subcase, including those with $\operatorname{rank}(T - \mathrm{id}) = 1$, is the delicate step of the theorem and is carried out in the standard sources, where it is shown to stay within the bound $n$. The intermediate case, in which $q(Ty - y) = 0$ for every non-isotropic $y$ but $q(Tx - x) \neq 0$ for some isotropic $x$, is reduced in the standard sources to the subcase just analysed by extending the isotropic $x$ to a hyperbolic pair and replacing $x$ by a non-isotropic vector of the hyperbolic plane it spans. The reader is referred to those sources for the detailed case analysis; the statement and the bound $n$ are exactly as cited there.
 
 **Remark.** The theorem is a statement about generation by reflections; it does not claim that the number of reflections is an invariant of the isometry, only that it can be chosen at most $n$. The parity of the number is an invariant, and it is the subject of the next section.
 
@@ -169,7 +169,7 @@ $$
 q(Tr) + 2B(Tx, Tr) = 0.
 $$
 
-Taking $x = 0$ gives $q(Tr) = 0$, and then $2B(Tx, Tr) = 0$ for every $x$, so $Tr \in \operatorname{rad}(q)$ because $T$ is surjective and $2$ is invertible. Hence $T$ preserves the radical and descends to the quotient. A vector $\bar v$ with $\bar{q}(\bar v) \neq 0$ has a lift $v$ with $q(v) = \bar{q}(\bar v)$, because $q$ is constant on the cosets of the radical, and the reflection $\tau_v$ then induces the reflection $\tau_{\bar v}$ of the quotient, since $\bar{B}(\bar x, \bar v) = B(x, v)$ and $\bar{q}(\bar v) = q(v)$. The reduced form is non-degenerate, so Cartan–Dieudonné applies to $\bar{T}$, and lifting its factors writes $T$ as a product of reflections times an isometry inducing the identity on the quotient. $\square$
+Taking $x = 0$ gives $q(Tr) = 0$, and then $2B(Tx, Tr) = 0$ for every $x$, so $Tr \in \operatorname{rad}(q)$ because $T$ is surjective and $2$ is invertible. Hence $T$ preserves the radical and descends to the quotient. A vector $\bar v$ with $\bar{q}(\bar v) \neq 0$ has a lift $v$ with $q(v) = \bar{q}(\bar v)$, because $q$ is constant on the cosets of the radical, and the reflection $\tau_v$ then induces the reflection $\tau_{\bar v}$ of the quotient, since $\bar{B}(\bar x, \bar v) = B(x, v)$ and $\bar{q}(\bar v) = q(v)$. The reduced form is non-degenerate, so Cartan–Dieudonné applies to $\bar{T}$, and lifting its factors writes $T$ as a product of reflections times an isometry inducing the identity on the quotient.
 
 We state the non-degenerate case of Cartan–Dieudonné only; the refined structure of the isometries that induce the identity on $V/\operatorname{rad}(q)$ is part of Dieudonné's theory of the isometry group of a possibly degenerate space, and the Hermitian analogue is recorded.
 
@@ -193,13 +193,13 @@ $$
 
 provided the determinant assumes the value $-1$ on $\operatorname{O}(V, q)$; this holds whenever there is a hyperplane reflection, in particular for $n \geq 1$. The determinant map is not surjective onto $\{+1,-1\}$ over a general commutative ring, where $(\det T)^2 = 1$ may have more than two solutions.
 
-**Proof.** Two isometries have the same determinant if and only if one is the other composed with an element of $\operatorname{SO}(V, q)$, so the quotient embeds in the group of units of $F$ cut out by $d^2 = 1$; over a field of characteristic not $2$ this group is $\{+1, -1\}$. The reflection $\tau_v$ has determinant $-1$, so the image is all of $\{+1,-1\}$. $\square$
+**Proof.** Two isometries have the same determinant if and only if one is the other composed with an element of $\operatorname{SO}(V, q)$, so the quotient embeds in the group of units of $F$ cut out by $d^2 = 1$; over a field of characteristic not $2$ this group is $\{+1, -1\}$. The reflection $\tau_v$ has determinant $-1$, so the image is all of $\{+1,-1\}$.
 
 ### The Parity of the Number of Reflections
 
 **Corollary.** Let $T$ be an isometry of a non-degenerate quadratic space over a field of characteristic not $2$, written as a product of reflections. Then the parity of the number of reflections is $\det T$, so it is well defined: it is $+1$ for an even product and $-1$ for an odd one. In particular the isometries that are products of an even number of reflections are exactly the rotations $\operatorname{SO}(V, q)$.
 
-**Proof.** Each reflection has determinant $-1$ and the determinant is multiplicative, so a product of $k$ reflections has determinant $(-1)^k$. $\square$
+**Proof.** Each reflection has determinant $-1$ and the determinant is multiplicative, so a product of $k$ reflections has determinant $(-1)^k$.
 
 The corollary is the algebraic meaning of the distinction between a **rotation** (even reflection length, determinant $+1$) and a **reflection-type** isometry (odd reflection length, determinant $-1$). The geometric reading of this parity, and its dependence on the orientation of the space, is developed.
 
@@ -262,7 +262,7 @@ $$
 (\lambda + \lambda^{-1})(\mu - \mu^{-1}) = (\lambda - \lambda^{-1})(\mu + \mu^{-1}),
 $$
 
-that is $2\lambda^{-1}\mu = 2\lambda\mu^{-1}$, hence $\mu^2 = \lambda^2$ and $\mu = \eta\lambda$ with $\eta = \pm 1$. Therefore $q' = \eta r$ and $t = \eta p$, which is the displayed form, and $\det T = pt - q'r = \eta(p^2 - r^2) = \eta$. Conversely, substituting the displayed form in the three conditions gives $p^2 - r^2 = 1$, $(\eta p)^2 - (\eta r)^2 = p^2 - r^2 = 1$ and $p\eta r = r\eta p$. $\square$
+that is $2\lambda^{-1}\mu = 2\lambda\mu^{-1}$, hence $\mu^2 = \lambda^2$ and $\mu = \eta\lambda$ with $\eta = \pm 1$. Therefore $q' = \eta r$ and $t = \eta p$, which is the displayed form, and $\det T = pt - q'r = \eta(p^2 - r^2) = \eta$. Conversely, substituting the displayed form in the three conditions gives $p^2 - r^2 = 1$, $(\eta p)^2 - (\eta r)^2 = p^2 - r^2 = 1$ and $p\eta r = r\eta p$.
 
 Over $\mathbb{R}$ the equation $p^2 - r^2 = 1$ is a hyperbola with two branches, $p \geq 1$ and $p \leq -1$, so $\operatorname{O}(1, 1)$ has four components, each homeomorphic to a line; the group is not connected and neither is $\operatorname{SO}(1, 1)$, which is the union of the two components with $\eta = 1$. This is the structural difference from the definite plane: for a definite form, and only then, the determinant detects the components.
 
@@ -280,7 +280,7 @@ $$
 
 which fix no nonzero vector when $u \neq 0$ and preserve the two isotropic lines spanned by $(1, 1)$ and $(1, -1)$; they form a subgroup isomorphic to $\mathbb{R}$, and $\operatorname{SO}(1, 1) \cong \mathbb{Z}/2\mathbb{Z} \times \mathbb{R}$ with the second factor the hyperbolic rotations and the first generated by $-\mathrm{id}$.
 
-**Proof of the group law.** Multiplying the two matrices and using $\cosh(u + v) = \cosh u\cosh v + \sinh u\sinh v$ and $\sinh(u+v) = \sinh u\cosh v + \cosh u\sinh v$ gives $H(u+v)$; the inverse of $H(u)$ is $H(-u)$, so the map $u \mapsto H(u)$ is a homomorphism from $\mathbb{R}$ with kernel $\{0\}$. $\square$
+**Proof of the group law.** Multiplying the two matrices and using $\cosh(u + v) = \cosh u\cosh v + \sinh u\sinh v$ and $\sinh(u+v) = \sinh u\cosh v + \cosh u\sinh v$ gives $H(u+v)$; the inverse of $H(u)$ is $H(-u)$, so the map $u \mapsto H(u)$ is a homomorphism from $\mathbb{R}$ with kernel $\{0\}$.
 
 ## Summary
 

@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This article determines the roots of $-1$ in the biquaternion algebra $\mathbb{B}$, that is, the elements $\xi\in\mathbb{B}$ satisfying $\xi^2 = -1$; it also records the roots of $+1$ and the relation between the two. It follows *Biquaternion Idempotents and Projections*, where the idempotents are classified by the roots, and *Biquaternion Norm and Invertibility*, where the norm form and the invertibility criterion are established.
+This article determines the roots of $-1$ in the biquaternion algebra $\mathbb{B}$, that is, the elements $\xi\in\mathbb{B}$ satisfying $\xi^2 = -1$; it also records the roots of $+1$ and the relation between the two. It follows *Biquaternion Idempotents and Projections*, where the idempotents are classified by the roots, and *Biquaternion Norm and Invertibility*, where the biquaternion norm and the invertibility criterion are established.
 
 Physically, a root of $-1$ is an **imaginary unit** of the algebra, and the imaginary units are what the framework's transformations are generated from. Each root generates a one-parameter circle subgroup, $\exp(\theta\xi) = \cos\theta\,e_0+\sin\theta\,\xi$, and the three families of roots are three physically distinct kinds of generator:
 
@@ -198,7 +198,7 @@ Every non-trivial idempotent is a zero divisor, $\tilde{P}(e_0-\tilde{P}) = 0$ w
 
 ### The Roots as Invertible Elements
 
-A root of $-1$ is **not** a zero divisor. Its norm form is
+A root of $-1$ is **not** a zero divisor. Its biquaternion norm is
 
 $$
 N(\xi) = \xi\bar{\xi} = \begin{cases}-1 & \text{for the trivial roots } \xi = \pm i,\\ +1 & \text{for a pure root},\end{cases}
@@ -228,7 +228,7 @@ which squares to $1$ since $\xi^2i^2 = (-1)(-1) = 1$. The map $\xi\mapsto\xi i$ 
 
 A root of $+1$ is an **involution**, and every involution splits the algebra: if $\eta^2 = 1$ then $\eta\neq1$ gives the idempotents $\tfrac12(e_0\pm\eta)$ with $\tfrac12(e_0+\eta)+\tfrac12(e_0-\eta) = e_0$ and $\tfrac12(e_0+\eta)\cdot\tfrac12(e_0-\eta) = 0$, which is the bijection above read in the other direction.
 
-**Physical reading: the reflections and the parities.** The roots of $+1$ are the algebra's reflections. The real roots $\pm\mu i$ are the Hermitian ones — $(\mu i)^\dagger = \mu i$ — so they are exactly the involutions that split the algebra into **orthogonal** projectors, and they are the parity-type operators of the framework. The fermion parity of the field-theory articles is an instance: $(-1)^F = ie_3$ is a real root of $+1$ (with $\mu = e_3$), Hermitian, and its associated projectors are $\tfrac12(e_0\pm ie_3)$, the vacuum projector $\tilde\Pi_1$ and its complement. The trivial roots $\pm1$ are the two central involutions (the identity and the total sign), and the non-trivial roots are the non-Hermitian involutions, which split the algebra into complementary projectors that are not orthogonal. See *The Biquaternion Vacuum as a Minimal Idempotent* and *Bogoliubov Transformations in Biquaternionic Form* for the parity and vacuum instances. Beyond the framework, the roots of $+1$ generate the hyperbolic subgroups, which is where the boosts of *The Lorentz Group as Biquaternion Norm-Form Automorphisms* come from.
+**Physical reading: the reflections and the parities.** The roots of $+1$ are the algebra's reflections. The real roots $\pm\mu i$ are the Hermitian ones — $(\mu i)^\dagger = \mu i$ — so they are exactly the involutions that split the algebra into **orthogonal** projectors, and they are the parity-type operators of the framework. The fermion parity of the field-theory articles is an instance: $(-1)^F = ie_3$ is a real root of $+1$ (with $\mu = e_3$), Hermitian, and its associated projectors are $\tfrac12(e_0\pm ie_3)$, the vacuum projector $\tilde\Pi_1$ and its complement. The trivial roots $\pm1$ are the two central involutions (the identity and the total sign), and the non-trivial roots are the non-Hermitian involutions, which split the algebra into complementary projectors that are not orthogonal. See *The Biquaternion Vacuum as a Minimal Idempotent* and *Bogoliubov Transformations in Biquaternionic Form* for the parity and vacuum instances. Beyond the framework, the roots of $+1$ generate the hyperbolic subgroups, which is where the boosts of *The Lorentz Group as Biquaternion Norm Automorphisms* come from.
 
 ## Summary
 
@@ -240,7 +240,7 @@ The roots of $-1$ in the biquaternion algebra are exactly:
 
 The proof writes $\xi = Q_0+\mathbf{Q}$, squares using the biquaternion product formula and equates to $-1$: the vector part $2Q_0\mathbf{Q}$ forces $Q_0 = 0$ or $\mathbf{Q} = 0$; the scalar part $Q_0^2-(\mathbf{Q},\mathbf{Q})$ then gives the trivial root in the scalar case and, in the pure case, reduces to $(\mathbf{Q},\mathbf{Q}) = 1$, which splits into the real and non-trivial families according to whether the imaginary part of the pure element vanishes.
 
-The non-trivial roots form a four-real-dimensional family with the real roots (a sphere $S^2$) as boundary, and the trivial roots are two isolated points. All roots except the trivial ones are pure, and they lie in the group of units: a pure root has norm form $+1$ and inverse $-\xi$, the trivial roots have norm form $-1$. Physically, the roots are the imaginary units of the algebra and generate its circle subgroups: $\pm i$ the central phase, the sphere of real roots the rotations about the spatial axes, the non-trivial roots the mixed rotation–boost generators with rapidity $t$ in $b = \cosh t$, $d = \sinh t$. The three families of roots classify the idempotents through $\xi\mapsto\tfrac12(e_0+\xi i)$; the associated projectors are the pure states for the real roots and non-orthogonal projectors for the non-trivial ones. The parabolic generators, whose square is $0$ rather than $\pm1$, are the null elements and belong to the zero-divisor theory.
+The non-trivial roots form a four-real-dimensional family with the real roots (a sphere $S^2$) as boundary, and the trivial roots are two isolated points. All roots except the trivial ones are pure, and they lie in the group of units: a pure root has biquaternion norm $+1$ and inverse $-\xi$, the trivial roots have biquaternion norm $-1$. Physically, the roots are the imaginary units of the algebra and generate its circle subgroups: $\pm i$ the central phase, the sphere of real roots the rotations about the spatial axes, the non-trivial roots the mixed rotation–boost generators with rapidity $t$ in $b = \cosh t$, $d = \sinh t$. The three families of roots classify the idempotents through $\xi\mapsto\tfrac12(e_0+\xi i)$; the associated projectors are the pure states for the real roots and non-orthogonal projectors for the non-trivial ones. The parabolic generators, whose square is $0$ rather than $\pm1$, are the null elements and belong to the zero-divisor theory.
 
 The roots of $+1$ are the involutions, obtained from the roots of $-1$ by multiplication by $i$; the real ones are the Hermitian reflections, of which the fermion parity $ie_3$ is an instance, and each splits the algebra into a complementary pair of projectors.
 

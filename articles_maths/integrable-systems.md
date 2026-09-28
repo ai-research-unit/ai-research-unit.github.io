@@ -29,7 +29,7 @@ where $L_t$ is the operator obtained by differentiating the coefficients of $L$ 
 
 **Theorem (isospectrality).** Suppose $L(t) = -\partial_x^2 + u(\cdot,t)$ on $\mathbb{R}$ with $u$ decaying at infinity, suppose $A$ is skew-adjoint, and suppose $L_t = [A,L]$. Then the spectrum of $L(t)$ is independent of $t$. Moreover, if $\psi$ solves the eigenvalue equation $L\psi = \lambda\psi$ and evolves by $\psi_t = A\psi$, then $L\psi = \lambda\psi$ holds for all $t$ with $\lambda$ constant.
 
-*Proof.* Differentiate the eigenvalue equation: $L_t\psi + L\psi_t = \lambda_t\psi + \lambda\psi_t$. Substituting $\psi_t=A\psi$ and $L_t = AL-LA$ gives $(AL-LA)\psi + LA\psi = \lambda_t\psi + \lambda A\psi$, and the left-hand side is $A(L\psi) = \lambda A\psi$ by the eigenvalue equation, so $\lambda_t\psi = 0$ and $\lambda$ is constant whenever $\psi\neq0$. The spectrum, being the set of such $\lambda$, is time-independent. $\square$
+*Proof.* Differentiate the eigenvalue equation: $L_t\psi + L\psi_t = \lambda_t\psi + \lambda\psi_t$. Substituting $\psi_t=A\psi$ and $L_t = AL-LA$ gives $(AL-LA)\psi + LA\psi = \lambda_t\psi + \lambda A\psi$, and the left-hand side is $A(L\psi) = \lambda A\psi$ by the eigenvalue equation, so $\lambda_t\psi = 0$ and $\lambda$ is constant whenever $\psi\neq0$. The spectrum, being the set of such $\lambda$, is time-independent.
 
 The theorem explains the name: the evolution moves $u$ along a trajectory in the space of potentials on which the spectrum is constant, and the eigenvalues are the integrals of motion. That the eigenvalues are infinitely many is what makes the equation solvable.
 
@@ -51,7 +51,7 @@ $$
 [A,L]\psi = \bigl(6uu_x - u_{xxx}\bigr)\psi .
 $$
 
-Indeed, the third-order part contributes $-4[D^3,L]\psi = -4u_{xxx}\psi + \dots$ and the remaining terms contribute $6uu_x\psi$; all terms involving derivatives of $\psi$ cancel identically, so the commutator is multiplication by $6uu_x-u_{xxx}$. Since $L_t$ is multiplication by $u_t$, the Lax equation is exactly KdV in the stated convention. $\square$
+Indeed, the third-order part contributes $-4[D^3,L]\psi = -4u_{xxx}\psi + \dots$ and the remaining terms contribute $6uu_x\psi$; all terms involving derivatives of $\psi$ cancel identically, so the commutator is multiplication by $6uu_x-u_{xxx}$. Since $L_t$ is multiplication by $u_t$, the Lax equation is exactly KdV in the stated convention.
 
 The computation is the model of every Lax-pair verification, and the operator $A$ is skew-adjoint, as required by the general theorem. The notation $u_t - 6uu_x + u_{xxx}=0$ is fixed once and for all in this article; the equation written with the other sign of the nonlinearity is the same equation after the substitution $u\mapsto-u$.
 
@@ -67,7 +67,7 @@ is equivalent to the equation; the equation is the compatibility condition for t
 
 **Theorem (equivalence with a Lax pair).** A zero-curvature representation with $U$ depending on the field and $\lambda$ is equivalent, on the level of the linear problem, to a Lax pair; the operator $L$ is the spatial part of the system and $A$ is the time part, and the isospectrality of the Lax pair becomes the statement that the monodromy of $\psi_x = U\psi$ is conserved.
 
-*Proof.* If the linear system is compatible, its solutions satisfy $\psi_{xt}=\psi_{tx}$, which is the zero-curvature equation, and the spectral parameter is a constant of the motion for the same reason that the eigenvalue is in the Lax formulation; conversely, a Lax pair can be rewritten as a zero-curvature pair by choosing a matrix realisation of the operator $L$ and taking $U$ and $V$ to be the matrices of the spatial and temporal parts. $\square$
+*Proof.* If the linear system is compatible, its solutions satisfy $\psi_{xt}=\psi_{tx}$, which is the zero-curvature equation, and the spectral parameter is a constant of the motion for the same reason that the eigenvalue is in the Lax formulation; conversely, a Lax pair can be rewritten as a zero-curvature pair by choosing a matrix realisation of the operator $L$ and taking $U$ and $V$ to be the matrices of the spatial and temporal parts.
 
 **Example (the AKNS system).** With the matrices
 
@@ -98,7 +98,7 @@ $$
 
 and correspondingly for the third; the constants $I_k = \int\rho_k\,dx$ are independent.
 
-*Proof.* For the first, $\rho_{1,t} = u_t = 6uu_x-u_{xxx} = (3u^2-u_{xx})_x$, so $J_1 = 3u^2-u_{xx}$. For the second, $\rho_{2,t} = 2uu_t = 12u^2u_x-2uu_{xxx}$, while $J_{2,x} = 12u^2u_x-2u_xu_{xx}-2uu_{xxx}+2u_xu_{xx} = 12u^2u_x-2uu_{xxx}$ for the displayed $J_2$, so $\rho_{2,t}=J_{2,x}$. For the third, the functional $H = \int(u^3+\tfrac12u_x^2)dx$ is the Hamiltonian of the equation: its variational derivative is $\frac{\delta H}{\delta u} = 3u^2 - u_{xx}$, and KdV reads $u_t = \partial_x\frac{\delta H}{\delta u}$. Hence $\frac{dH}{dt} = \int\frac{\delta H}{\delta u}u_t\,dx = \int\frac{\delta H}{\delta u}\,\partial_x\frac{\delta H}{\delta u}\,dx = \frac12\int\partial_x\Bigl(\frac{\delta H}{\delta u}\Bigr)^2dx = 0$ on a solution decaying at infinity, and the identity $\rho_{3,t}=J_{3,x}$ holds with $J_3$ computed from the variational derivative. $\square$
+*Proof.* For the first, $\rho_{1,t} = u_t = 6uu_x-u_{xxx} = (3u^2-u_{xx})_x$, so $J_1 = 3u^2-u_{xx}$. For the second, $\rho_{2,t} = 2uu_t = 12u^2u_x-2uu_{xxx}$, while $J_{2,x} = 12u^2u_x-2u_xu_{xx}-2uu_{xxx}+2u_xu_{xx} = 12u^2u_x-2uu_{xxx}$ for the displayed $J_2$, so $\rho_{2,t}=J_{2,x}$. For the third, the functional $H = \int(u^3+\tfrac12u_x^2)dx$ is the Hamiltonian of the equation: its variational derivative is $\frac{\delta H}{\delta u} = 3u^2 - u_{xx}$, and KdV reads $u_t = \partial_x\frac{\delta H}{\delta u}$. Hence $\frac{dH}{dt} = \int\frac{\delta H}{\delta u}u_t\,dx = \int\frac{\delta H}{\delta u}\,\partial_x\frac{\delta H}{\delta u}\,dx = \frac12\int\partial_x\Bigl(\frac{\delta H}{\delta u}\Bigr)^2dx = 0$ on a solution decaying at infinity, and the identity $\rho_{3,t}=J_{3,x}$ holds with $J_3$ computed from the variational derivative.
 
 **Theorem (the Lenard recursion and the infinite hierarchy).** Normalise the conserved functionals so that $I_1 = \tfrac12\int u^2$ and $I_2 = \int(u^3+\tfrac12u_x^2)$; then the sequence $I_1,I_2,\dots$ is generated by the **recursion operator**
 
@@ -114,7 +114,7 @@ $$
 
 the densities $\rho_1,\rho_2,\rho_3$ of the preceding theorem are those of the sequence up to the constant normalisation, the invariant $\int u$ being the additional member outside the recursion; consequently KdV has infinitely many independent conserved quantities in involution.
 
-*Proof.* Quoted as standard (the Lenard–Kruskal recursion). Each density is obtained from the previous one by solving the condition that a certain combination be a total derivative, and the recursion operator performs that solution at the level of the differential algebra generated by $u$ and its derivatives; in the normalisation fixed in the statement the recursion starts from the density $\frac12u^2$ and reproduces $u^3+\frac12u_x^2$ and its successors as the next members. $\square$
+*Proof.* Quoted as standard (the Lenard–Kruskal recursion). Each density is obtained from the previous one by solving the condition that a certain combination be a total derivative, and the recursion operator performs that solution at the level of the differential algebra generated by $u$ and its derivatives; in the normalisation fixed in the statement the recursion starts from the density $\frac12u^2$ and reproduces $u^3+\frac12u_x^2$ and its successors as the next members.
 
 **Theorem (bi-Hamiltonian structure).** KdV is Hamiltonian with respect to two compatible Poisson structures,
 
@@ -124,7 +124,7 @@ $$
 
 in the sense that $u_t = \mathcal{P}_1\frac{\delta H_2}{\delta u} = \mathcal{P}_2\frac{\delta H_1}{\delta u}$ for suitable functionals $H_1,H_2$, and the recursion operator is $R = \mathcal{P}_2\mathcal{P}_1^{-1}$. A vector field that is Hamiltonian for two compatible structures is **bi-Hamiltonian**, and the Magri theorem then produces an infinite sequence of conserved quantities in involution.
 
-*Proof.* Quoted as standard (the Magri–Gel'fand–Dorfman theory). For KdV one checks that $\mathcal{P}_1\delta H_2/\delta u$ and $\mathcal{P}_2\delta H_1/\delta u$ both equal $6uu_x-u_{xxx}$, with $H_2 = \int(\frac12u_x^2+u^3)$ and $H_1 = \frac12\int u^2$; the compatibility of the two structures gives the recursion and the involution. $\square$
+*Proof.* Quoted as standard (the Magri–Gel'fand–Dorfman theory). For KdV one checks that $\mathcal{P}_1\delta H_2/\delta u$ and $\mathcal{P}_2\delta H_1/\delta u$ both equal $6uu_x-u_{xxx}$, with $H_2 = \int(\frac12u_x^2+u^3)$ and $H_1 = \frac12\int u^2$; the compatibility of the two structures gives the recursion and the involution.
 
 The bi-Hamiltonian structure is the reason the recursion works, and it is the infinite-dimensional counterpart of the finite-dimensional integrability that is treated with the dynamical systems of this Part: there the integrals in involution are produced by a symplectic structure plus a flow, here by a pair of compatible Poisson structures. The finite-dimensional theory — the Liouville–Arnold theorem, action-angle variables and the invariant tori — is the subject of the articles of this Part on smooth dynamical systems and on the geodesic flow, written in parallel, and is not repeated here.
 
@@ -142,7 +142,7 @@ and the **scattering data** are the reflection coefficient $r(k) = b(k)/a(k)$, t
 
 **Theorem (properties of the scattering data).** For real $u \in L^1(\mathbb{R},(1+|x|)dx)$, the scattering data have the following properties: $a$ extends analytically to the upper half-plane with simple zeros at the bound states $i\kappa_n$; $|a(k)|^2 - |b(k)|^2 = 1$ for real $k$, so $|r|\le1$; $r(k) = \overline{r(-k)}$; and the bound-state data are real and positive.
 
-*Proof.* Quoted as standard (the direct scattering theory). The analyticity comes from the Volterra integral equations for the Jost solutions and the exponential decay of the kernel; the identity $|a|^2-|b|^2=1$ is the Wronskian relation of the two Jost solutions, computed at $x=\pm\infty$; the symmetry is the reality of $u$. $\square$
+*Proof.* Quoted as standard (the direct scattering theory). The analyticity comes from the Volterra integral equations for the Jost solutions and the exponential decay of the kernel; the identity $|a|^2-|b|^2=1$ is the Wronskian relation of the two Jost solutions, computed at $x=\pm\infty$; the symmetry is the reality of $u$.
 
 ### The Evolution of the Data and the Inverse Problem
 
@@ -154,7 +154,7 @@ $$
 
 the evolution of the scattering data is linear and decoupled, which is the sense in which the transform linearises the equation.
 
-*Proof.* Quoted as standard. The time evolution of the Jost solution is governed by the operator $A$ of the Lax pair, $\psi_t = A\psi$, and evaluating the asymptotics of $A\psi = -4\psi_{xxx}+6u\psi_x+3u_x\psi$ as $x\to\pm\infty$, where $u\to0$, gives $\psi_t \sim -4\psi_{xxx}$, that is, in terms of the asymptotic exponentials $\psi_\pm\sim e^{\mp ikx}$, the factor $\mp4(-ik)^3 = \pm4ik^3$; comparing the two asymptotic representations of the solution then gives the stated factors, since $a$ multiplies the outgoing term and $b$ the incoming one. $\square$
+*Proof.* Quoted as standard. The time evolution of the Jost solution is governed by the operator $A$ of the Lax pair, $\psi_t = A\psi$, and evaluating the asymptotics of $A\psi = -4\psi_{xxx}+6u\psi_x+3u_x\psi$ as $x\to\pm\infty$, where $u\to0$, gives $\psi_t \sim -4\psi_{xxx}$, that is, in terms of the asymptotic exponentials $\psi_\pm\sim e^{\mp ikx}$, the factor $\mp4(-ik)^3 = \pm4ik^3$; comparing the two asymptotic representations of the solution then gives the stated factors, since $a$ multiplies the outgoing term and $b$ the incoming one.
 
 **Theorem (the inverse problem).** The potential $u$ is recovered from the scattering data by the **Gelfand–Levitan–Marchenko** integral equation
 
@@ -170,7 +170,7 @@ $$
 
 The map $u \mapsto (\text{scattering data}) \mapsto u$ is a bijection between the class of decaying real potentials and the class of admissible data, and it intertwines the KdV flow with the linear evolution of the theorem above.
 
-*Proof.* Quoted as standard (the inverse scattering transform). The kernel $K$ is the transformation kernel relating the Jost solutions of $L=-\partial_x^2+u$ to those of the free operator $-\partial_x^2$; the equation for $K$ is obtained by requiring the transformed solutions to have the correct asymptotics, and the formula for $u$ is the statement that the transformation of $-\partial_x^2$ differs from $-\partial_x^2$ by multiplication by $-2K(x,x)'$. $\square$
+*Proof.* Quoted as standard (the inverse scattering transform). The kernel $K$ is the transformation kernel relating the Jost solutions of $L=-\partial_x^2+u$ to those of the free operator $-\partial_x^2$; the equation for $K$ is obtained by requiring the transformed solutions to have the correct asymptotics, and the formula for $u$ is the statement that the transformation of $-\partial_x^2$ differs from $-\partial_x^2$ by multiplication by $-2K(x,x)'$.
 
 **Corollary (solution of the Cauchy problem).** For $u_0$ real and rapidly decaying, the solution of KdV with $u(\cdot,0)=u_0$ is obtained by computing the scattering data of $u_0$, evolving them by the exponential factors above, solving the Gelfand–Levitan–Marchenko equation for the evolved data, and reading off $u(x,t) = -2\partial_xK(x,x;t)$.
 
@@ -188,7 +188,7 @@ $$
 
 a negative localised travelling wave moving to the right with speed $4\kappa^2$; it is the unique reflectionless solution with one bound state.
 
-*Proof.* With $N=1$, the kernel is $B(\xi) = c_1^2e^{-\kappa\xi}$ with $c_1^2 = 2\kappa e^{2\kappa x_0}$ at $t=0$, and the Marchenko equation is solved by an exponential; the formula for $u$ is then a direct differentiation. The time dependence comes from the factor $c_1(t)^2e^{-\kappa\xi}$, and the resulting wave depends on $x,t$ only through the combination $x-4\kappa^2t$, which is the travelling-wave ansatz. $\square$
+*Proof.* With $N=1$, the kernel is $B(\xi) = c_1^2e^{-\kappa\xi}$ with $c_1^2 = 2\kappa e^{2\kappa x_0}$ at $t=0$, and the Marchenko equation is solved by an exponential; the formula for $u$ is then a direct differentiation. The time dependence comes from the factor $c_1(t)^2e^{-\kappa\xi}$, and the resulting wave depends on $x,t$ only through the combination $x-4\kappa^2t$, which is the travelling-wave ansatz.
 
 **Theorem (N-soliton solutions and elastic collision).** For reflectionless data with $N$ bound states the solution is an $N$-soliton
 
@@ -198,7 +198,7 @@ $$
 
 where $C$ is the $N\times N$ matrix with entries $C_{mn} = \frac{c_m(t)^2}{\kappa_m+\kappa_n}e^{-(\kappa_m+\kappa_n)x}$; as $t\to\pm\infty$ it is asymptotic to $N$ well-separated one-solitons with the same speeds and amplitudes, the only effect of the collision being a phase shift in each. The collision is therefore **elastic**, and this is what distinguishes the solitons of an integrable equation from the dissipative pulses of a general one.
 
-*Proof.* Quoted as standard. The $N$-soliton formula is the determinant solution of the Marchenko equation with a degenerate kernel, obtained by Cramer's rule; the asymptotic analysis of the determinant as $t\to\pm\infty$ shows that the off-diagonal factors become negligible in the two limits and identifies the phase shifts from the diagonal entries. $\square$
+*Proof.* Quoted as standard. The $N$-soliton formula is the determinant solution of the Marchenko equation with a degenerate kernel, obtained by Cramer's rule; the asymptotic analysis of the determinant as $t\to\pm\infty$ shows that the off-diagonal factors become negligible in the two limits and identifies the phase shifts from the diagonal entries.
 
 **Example (the two-soliton).** For $N=2$ with $\kappa_1>\kappa_2>0$ the taller and faster soliton overtakes the shorter and slower one; after the passage the two waves are unchanged in shape and speed, and each has acquired a positive phase shift proportional to $\log\frac{(\kappa_1+\kappa_2)^2}{(\kappa_1-\kappa_2)^2}$, which diverges as $\kappa_1\to\kappa_2$ and is finite otherwise. The example is the cleanest illustration of the elastic collision and of the nonlinear superposition that replaces linear addition.
 
@@ -214,7 +214,7 @@ $$
 
 where $\Theta$ is the Riemann theta function of the hyperelliptic curve $\mu^2 = \prod_{j=1}^{2g+1}(\lambda-\lambda_j)$, the vectors $\mathbf{U},\mathbf{V}$ are the periods of two Abelian differentials and $\mathbf{d}$ is a constant; the solution is quasi-periodic in $x$ and $t$ with $g$ independent frequencies.
 
-*Proof.* Quoted as standard. The Baker–Akhiezer function on the curve satisfies a linear problem whose compatibility is the KdV equation, exactly as in the zero-curvature formulation, and Riemann's theta-function solution of the inversion problem expresses the divisor of the Baker–Akhiezer function in terms of theta functions; the formula for $u$ follows from the pole behaviour of the Baker–Akhiezer function at infinity. $\square$
+*Proof.* Quoted as standard. The Baker–Akhiezer function on the curve satisfies a linear problem whose compatibility is the KdV equation, exactly as in the zero-curvature formulation, and Riemann's theta-function solution of the inversion problem expresses the divisor of the Baker–Akhiezer function in terms of theta functions; the formula for $u$ follows from the pole behaviour of the Baker–Akhiezer function at infinity.
 
 **Remark (the role of the Riemann surface).** The finite-gap construction turns the integrable equation into a problem in the geometry of a compact Riemann surface: the flow of KdV is the straight-line motion of the divisor of the Baker–Akhiezer function on the Jacobian of the curve, and the quasi-periodicity is the projection of a linear flow on a torus. The soliton is the degenerate case $g=1$ in which the curve is singular and the theta function degenerates to a hyperbolic function; the reflectionless $N$-soliton is the limit in which all the bands but finitely many collapse to points.
 
@@ -222,7 +222,7 @@ where $\Theta$ is the Riemann theta function of the hyperelliptic curve $\mu^2 =
 
 **Theorem (Weiss–Tabor–Carnevale).** The KdV equation passes the Painlevé test; the expansion of a solution about a movable singular manifold $\phi(x,t)=x-x_0(t)$ takes the form $u = -2\partial_x^2\log\phi + u_0 + u_1\phi + \dots$, with the recursion for the coefficients obstructed only at the resonances, and the obstruction conditions are satisfied identically.
 
-*Proof.* Quoted as standard. The leading behaviour is computed from the dominant balance $u_t\sim uu_x\sim u_{xxx}$, which gives $u\sim -2/\phi_x^2\cdot\phi_{xx}$ up to the transformation to a singular manifold; the resonances of the recursion are at $-1, 4, 6$ for KdV, and the two nontrivial resonance conditions are verified by using the KdV equation itself. $\square$
+*Proof.* Quoted as standard. The leading behaviour is computed from the dominant balance $u_t\sim uu_x\sim u_{xxx}$, which gives $u\sim -2/\phi_x^2\cdot\phi_{xx}$ up to the transformation to a singular manifold; the resonances of the recursion are at $-1, 4, 6$ for KdV, and the two nontrivial resonance conditions are verified by using the KdV equation itself.
 
 **Remark (the Hirota form).** The substitution $u = -2\partial_x^2\log\tau$ with $\tau$ a **tau function** converts KdV into the bilinear equation $D_x(D_t + D_x^3)\tau\cdot\tau = 0$, where $D$ denotes the Hirota bilinear derivative
 

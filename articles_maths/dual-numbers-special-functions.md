@@ -60,7 +60,7 @@ $$
 \exp(x + y\varepsilon) \exp(a + \varepsilon b) = e^x (1 + y\varepsilon) \cdot e^a (1 + \varepsilon b) = e^{x+a} (1 + (y + b)\varepsilon) = \exp((x + a) + (y + b)\varepsilon).
 $$
 
-The second is immediate. The third follows from term-by-term differentiation of the series, or from the structure theorem applied to the real part. $\square$
+The second is immediate. The third follows from term-by-term differentiation of the series, or from the structure theorem applied to the real part.
 
 ### The Dual Euler Formula
 
@@ -102,7 +102,7 @@ $$
 \log((x + y\varepsilon)(a + \varepsilon b)) = \log(xa + (xb + ya)\varepsilon) = \log(xa) + \frac{xb + ya}{xa} \varepsilon = \log(x) + \log(a) + \left(\frac{b}{a} + \frac{y}{x}\right) \varepsilon.
 $$
 
-The second is immediate. The third follows from the structure theorem applied to the real part, or from the inverse function rule for the exponential. $\square$
+The second is immediate. The third follows from the structure theorem applied to the real part, or from the inverse function rule for the exponential.
 
 ### The Domain of Definition
 
@@ -496,7 +496,7 @@ $$
 \tilde{F}(Z) = F(x) + y F'(x) \varepsilon.
 $$
 
-**Proof.** The extension $\tilde{F}$ is dual differentiable, and by the structure theorem it is of the form $u(x) + (y u'(x) + c(x))\varepsilon$. Evaluating at $y = 0$ gives $u(x) = F(x)$, hence $u'(x) = F'(x)$. The coefficient of $y$ in the infinitesimal part is therefore $F'(x)$, and the term $c(x)$ is the value of the infinitesimal part at $y = 0$, which is zero because the extension reduces to the real function $F$ when $y = 0$. $\square$
+**Proof.** The extension $\tilde{F}$ is dual differentiable, and by the structure theorem it is of the form $u(x) + (y u'(x) + c(x))\varepsilon$. Evaluating at $y = 0$ gives $u(x) = F(x)$, hence $u'(x) = F'(x)$. The coefficient of $y$ in the infinitesimal part is therefore $F'(x)$, and the term $c(x)$ is the value of the infinitesimal part at $y = 0$, which is zero because the extension reduces to the real function $F$ when $y = 0$.
 
 This theorem is the reason dual special functions are simpler than complex or split complex special functions. In the complex case, the special functions are genuinely new objects, because the complex algebra is a field and the exponential is periodic. In the split complex case, the special functions are pairs of real special functions, one for each idempotent. In the dual case, the special functions are the real special functions plus their derivatives, because the dual algebra is local and the infinitesimal direction is nilpotent.
 
@@ -528,7 +528,7 @@ The section on the structure principle states what organises all of the definiti
 | $J_\nu(Z), I_\nu(Z)$ | Dual Bessel functions |
 | ${}_pF_q$ | Dual generalized hypergeometric function |
 | $W(Z)$ | Dual Lambert W function |
-| $\mathfrak{m} = (\varepsilon)$ | Maximal ideal |
+| $\mathrm{M} = (\varepsilon)$ | Maximal ideal |
 
 ## Further Reading
 

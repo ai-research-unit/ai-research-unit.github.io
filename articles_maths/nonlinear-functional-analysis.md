@@ -21,7 +21,7 @@ For linear maps the notions of continuity and local boundedness coincide, and a 
 
 **Proposition.** (i) A continuous map on an open set is locally bounded if $Y=\mathbb{K}$ and $f$ is convex. (ii) A compact map is bounded on bounded sets and is completely continuous. (iii) On an infinite-dimensional reflexive Banach space a bounded continuous map need not be weakly continuous, and a compact map need not be continuous from the weak topology to the norm topology either: the norm of a Hilbert space is weakly lower semicontinuous but not weakly continuous, and as a map into $\mathbb{R}$ it is compact on bounded sets; for a compact *linear* operator weak convergence of $x_n$ does imply norm convergence of $Tx_n$.
 
-*Proof.* (i) is the standard local boundedness of a convex function, proved by choosing a simplex around the point and bounding on it. (ii) is immediate from the definitions. (iii) is the standard statement that a compact map sends weakly convergent sequences to norm-convergent ones; the proof uses the uniform boundedness of the weakly convergent sequence and the compactness. $\square$
+*Proof.* (i) is the standard local boundedness of a convex function, proved by choosing a simplex around the point and bounding on it. (ii) is immediate from the definitions. (iii) is the standard statement that a compact map sends weakly convergent sequences to norm-convergent ones; the proof uses the uniform boundedness of the weakly convergent sequence and the compactness.
 
 **Definition.** A **functional** is a map $F:D\to\mathbb{R}$; it is **coercive** if $F(x)\to+\infty$ as $\|x\|\to\infty$, **lower semicontinuous** if $x_n\to x$ implies $F(x)\le\liminf F(x_n)$, and **weakly lower semicontinuous** if the same holds for weakly convergent sequences.
 
@@ -57,7 +57,7 @@ the integral being the Bochner integral of a continuous $Y$-valued function; the
 
 **Theorem (inverse function theorem).** Let $X,Y$ be Banach spaces, $D \subseteq X$ open, $f:D\to Y$ of class $C^k$ for some $k \ge1$, and let $x_0 \in D$ be such that $f'(x_0)$ is invertible in $B(X,Y)$. Then there are open neighbourhoods $U$ of $x_0$ and $V$ of $f(x_0)$ such that $f:U\to V$ is a bijection with a $C^k$ inverse; moreover $g=f^{-1}$ satisfies $g'(y)=f'(g(y))^{-1}$, and if $f$ is real analytic the same is true of $g$.
 
-*Proof (sketch).* Compose with the inverse of $f'(x_0)$ to assume $f'(x_0)=I$, and consider the map $T(x)=x-f(x)+y$ for a fixed $y$ near $f(x_0)$; a solution of $f(x)=y$ is a fixed point of $T$. Near $x_0$ the derivative $T'(x)=I-f'(x)$ has norm at most $\frac12$, so $T$ is a contraction on a suitable closed ball, and the contraction mapping principle below gives a unique fixed point. The bounds are uniform for $y$ in a neighbourhood of $f(x_0)$, which gives the bijection $U\to V$. For the differentiability of the inverse, write $g=f^{-1}$ and $x=g(y)$; applying $f'(x)^{-1}$ to the expansion $k=f(x+h)-f(x)=f'(x)h+o(\|h\|)$ with $h=g(y+k)-g(y)$ gives $g(y+k)-g(y)=f'(g(y))^{-1}k+o(\|k\|)$, whence $g'(y)=f'(g(y))^{-1}$; its continuity, together with the higher derivatives and the analytic statement, follows by induction. $\square$
+*Proof (sketch).* Compose with the inverse of $f'(x_0)$ to assume $f'(x_0)=I$, and consider the map $T(x)=x-f(x)+y$ for a fixed $y$ near $f(x_0)$; a solution of $f(x)=y$ is a fixed point of $T$. Near $x_0$ the derivative $T'(x)=I-f'(x)$ has norm at most $\frac12$, so $T$ is a contraction on a suitable closed ball, and the contraction mapping principle below gives a unique fixed point. The bounds are uniform for $y$ in a neighbourhood of $f(x_0)$, which gives the bijection $U\to V$. For the differentiability of the inverse, write $g=f^{-1}$ and $x=g(y)$; applying $f'(x)^{-1}$ to the expansion $k=f(x+h)-f(x)=f'(x)h+o(\|h\|)$ with $h=g(y+k)-g(y)$ gives $g(y+k)-g(y)=f'(g(y))^{-1}k+o(\|k\|)$, whence $g'(y)=f'(g(y))^{-1}$; its continuity, together with the higher derivatives and the analytic statement, follows by induction.
 
 **Lemma (contraction mapping principle).** Let $(M,d)$ be a complete metric space and $T:M\to M$ a contraction, $d(Tx,Ty)\le\kappa\,d(x,y)$ with $\kappa<1$. Then $T$ has a unique fixed point $x^*$, and for every $x$ the iterates $T^nx$ converge to $x^*$ with $d(T^nx,x^*)\le\frac{\kappa^n}{1-\kappa}d(x,Tx)$.
 
@@ -65,7 +65,7 @@ The principle is the fixed-point theorem of the metric setting and is proved by 
 
 **Theorem (Newton's method; Kantorovich).** Let $f:D\to Y$ be $C^1$ with $f'$ Lipschitz of constant $L$ on a ball, let $f'(x_0)^{-1}$ exist with $\|f'(x_0)^{-1}\|\le\beta$, and let $\eta=\|f'(x_0)^{-1}f(x_0)\|$. If $\beta L\eta\le\frac12$ and the ball $B(x_0,r)$ with $r=\frac{1-\sqrt{1-2\beta L\eta}}{\beta L}$ lies in $D$, then $f$ has a zero in $B(x_0,r)$, the Newton iterates $x_{n+1}=x_n-f'(x_n)^{-1}f(x_n)$ are defined and converge to it, and the convergence is quadratic.
 
-*Proof (sketch).* One shows by induction that the Newton iterates are defined, that the quadratic estimates $\|x_{n+1}-x_n\|\le\frac{\beta L}{2}\|x_n-x_{n-1}\|^2$ hold, and that the majorising scalar sequence converges; the details are the standard Kantorovich argument, cited below. $\square$
+*Proof (sketch).* One shows by induction that the Newton iterates are defined, that the quadratic estimates $\|x_{n+1}-x_n\|\le\frac{\beta L}{2}\|x_n-x_{n-1}\|^2$ hold, and that the majorising scalar sequence converges; the details are the standard Kantorovich argument, cited below.
 
 ### Implicit Functions and Level Sets
 
@@ -75,7 +75,7 @@ $$
 F(x,y)=0 \text{ in } U\times W \iff y=\varphi(x); \qquad \varphi'(x)=-\bigl(\partial_yF(x,\varphi(x))\bigr)^{-1}\partial_xF(x,\varphi(x)).
 $$
 
-*Proof.* Apply the inverse function theorem to $(x,y)\mapsto(x,F(x,y))$, whose derivative at $(x_0,y_0)$ is the invertible operator with matrix $\begin{pmatrix}I&0\\\partial_xF&\partial_yF\end{pmatrix}$. $\square$
+*Proof.* Apply the inverse function theorem to $(x,y)\mapsto(x,F(x,y))$, whose derivative at $(x_0,y_0)$ is the invertible operator with matrix $\begin{pmatrix}I&0\\\partial_xF&\partial_yF\end{pmatrix}$.
 
 **Theorem (constant rank and local surjectivity).** Let $f:D\to Y$ be $C^1$, $x_0 \in D$, and suppose $f'(x_0)$ is surjective with a complemented kernel (always the case when $X,Y$ are Hilbert spaces, or when $f'(x_0)$ is Fredholm). Then there are neighbourhoods of $x_0$ and of $f(x_0)$ and a diffeomorphism under which $f$ becomes a linear projection; in particular $f$ is locally surjective at $x_0$ and there is a constant $C$ with, for $y$ near $f(x_0)$, a solution $x$ of $f(x)=y$ satisfying
 
@@ -83,7 +83,7 @@ $$
 \|x-x_0\| \le C\|y-f(x_0)\| .
 $$
 
-*Proof (sketch).* Decompose $X=\ker f'(x_0)\oplus X_1$ and $Y=f'(x_0)(X)\oplus Y_1$; the map $x_1\mapsto f(x_0+x_1)$ is a local diffeomorphism from $X_1$ onto a neighbourhood of $f(x_0)$ by the inverse function theorem, and the variations in the kernel direction are absorbed by the diffeomorphism; the estimate is the quantitative form of the local surjectivity. This is Lyusternik's theorem, and it is the form in which the inverse function theorem is applied when the derivative is onto but not injective. $\square$
+*Proof (sketch).* Decompose $X=\ker f'(x_0)\oplus X_1$ and $Y=f'(x_0)(X)\oplus Y_1$; the map $x_1\mapsto f(x_0+x_1)$ is a local diffeomorphism from $X_1$ onto a neighbourhood of $f(x_0)$ by the inverse function theorem, and the variations in the kernel direction are absorbed by the diffeomorphism; the estimate is the quantitative form of the local surjectivity. This is Lyusternik's theorem, and it is the form in which the inverse function theorem is applied when the derivative is onto but not injective.
 
 **Corollary (local structure of a level set).** If $F:\Omega\to Z$ is $C^k$ and $F'(x_0)$ is surjective, then the level set $F^{-1}(F(x_0))$ is near $x_0$ a $C^k$ submanifold of $X$ of dimension $\dim\ker F'(x_0)$; in particular a regular value of a $C^k$ map between finite-dimensional manifolds has a $C^k$ preimage. This is the local form of the theorem on regular values, whose global consequences for the topology of manifolds belong to *Differential Topology*.
 
@@ -95,7 +95,7 @@ $$
 
 **Proposition.** (i) A proper convex function that is bounded above on a neighbourhood of a point is continuous at that point and locally Lipschitz there. (ii) A lower semicontinuous convex function is weakly lower semicontinuous. (iii) A convex function that is coercive and lower semicontinuous attains its minimum.
 
-*Proof.* (i) is the standard argument that bounds the function above on a ball and uses the convexity to bound the oscillation on a smaller ball; (ii) uses that a convex l.s.c. function is the supremum of its affine minorants; (iii) uses the coercivity to restrict to a bounded set, the weak lower semicontinuity and the reflexivity to extract a weakly convergent minimising sequence with a limit in the set and the l.s.c. to pass to the limit. $\square$
+*Proof.* (i) is the standard argument that bounds the function above on a ball and uses the convexity to bound the oscillation on a smaller ball; (ii) uses that a convex l.s.c. function is the supremum of its affine minorants; (iii) uses the coercivity to restrict to a bounded set, the weak lower semicontinuity and the reflexivity to extract a weakly convergent minimising sequence with a limit in the set and the l.s.c. to pass to the limit.
 
 **Definition.** The **subdifferential** of $f$ at $x$ with $f(x)<+\infty$ is
 
@@ -111,7 +111,7 @@ $$
 x \text{ minimises } f \iff 0 \in\partial f(x).
 $$
 
-*Proof (sketch).* The convexity of $\partial f(x)$ and its weak-$*$ closedness are immediate from the definition; the nonemptiness at interior points is the Hahn–Banach separation of the epigraph from $(x,f(x)-1)$; the maximal monotonicity is Rockafellar's theorem and is standard; and the minimisation criterion is the definition of the subgradient when $x$ is a minimiser, and follows by taking $y=x+th$ and letting $t\downarrow0$ in the other direction. $\square$
+*Proof (sketch).* The convexity of $\partial f(x)$ and its weak-$*$ closedness are immediate from the definition; the nonemptiness at interior points is the Hahn–Banach separation of the epigraph from $(x,f(x)-1)$; the maximal monotonicity is Rockafellar's theorem and is standard; and the minimisation criterion is the definition of the subgradient when $x$ is a minimiser, and follows by taking $y=x+th$ and letting $t\downarrow0$ in the other direction.
 
 ### The Legendre–Fenchel Conjugate
 
@@ -153,7 +153,7 @@ $$
 \sum_{n}d(x_n,x_{n+1})\le\frac{f(x_0)-\inf f}{\epsilon}<\infty ,
 $$
 
-and the sequence is Cauchy; let $x_\epsilon$ be its limit. The order is closed under limits (by lower semicontinuity of $f$ and continuity of $d$), so $x_\epsilon\preceq x_n$ for every $n$. If some $x \neq x_\epsilon$ had $f(x)<f(x_\epsilon)-\epsilon\,d(x,x_\epsilon)$, then $x\preceq x_\epsilon\preceq x_n$ for all $n$, whence $f(x)\ge\inf_{S_n}f\ge f(x_{n+1})-2^{-(n+1)}\epsilon\to f(x_\epsilon)$, a contradiction; hence $f(x_\epsilon)\le f(x)+\epsilon\,d(x,x_\epsilon)$ for all $x$, and $f(x_\epsilon)\le f(x_0)\le\inf f+\epsilon$. $\square$
+and the sequence is Cauchy; let $x_\epsilon$ be its limit. The order is closed under limits (by lower semicontinuity of $f$ and continuity of $d$), so $x_\epsilon\preceq x_n$ for every $n$. If some $x \neq x_\epsilon$ had $f(x)<f(x_\epsilon)-\epsilon\,d(x,x_\epsilon)$, then $x\preceq x_\epsilon\preceq x_n$ for all $n$, whence $f(x)\ge\inf_{S_n}f\ge f(x_{n+1})-2^{-(n+1)}\epsilon\to f(x_\epsilon)$, a contradiction; hence $f(x_\epsilon)\le f(x)+\epsilon\,d(x,x_\epsilon)$ for all $x$, and $f(x_\epsilon)\le f(x_0)\le\inf f+\epsilon$.
 
 **Corollary.** If $f$ is bounded below, l.s.c. and not identically $+\infty$, then for every $\epsilon>0$ there is $x_\epsilon$ with $f(x_\epsilon)\le\inf f+\epsilon$ and $\operatorname{dist}(0,\partial f(x_\epsilon))\le\epsilon$ when $f$ is convex and $X$ is a Banach space; hence approximate minimisers of a convex functional are approximate critical points, and an exact minimiser satisfies $0 \in\partial f(x)$.
 
@@ -177,7 +177,7 @@ which is single-valued when $X$ is strictly convex, and $J$ is maximal monotone 
 
 **Theorem (Minty–Browder).** A monotone operator $A:X\rightrightarrows X^*$ is maximal if and only if $R(A+J)=X^*$, that is, if and only if the equation $x^* \in Ax+Jx$ is solvable for every $x^* \in X^*$. A maximal monotone and coercive operator is surjective, $R(A)=X^*$.
 
-*Proof (sketch).* The necessity is the surjectivity of a maximal monotone perturbation of $J$, proved by a Galerkin approximation in finite-dimensional subspaces and a monotonicity argument passing to the limit; the sufficiency follows because a monotone operator whose sum with $J$ is surjective cannot have a proper monotone extension. The coercivity gives the boundedness of the solutions of $x^*\in Ax+Jx$ and the surjectivity of $A$ itself. The argument is the standard one of Minty and Browder, cited below. $\square$
+*Proof (sketch).* The necessity is the surjectivity of a maximal monotone perturbation of $J$, proved by a Galerkin approximation in finite-dimensional subspaces and a monotonicity argument passing to the limit; the sufficiency follows because a monotone operator whose sum with $J$ is surjective cannot have a proper monotone extension. The coercivity gives the boundedness of the solutions of $x^*\in Ax+Jx$ and the surjectivity of $A$ itself. The argument is the standard one of Minty and Browder, cited below.
 
 **Theorem (Rockafellar).** The subdifferential $\partial f$ of a proper convex lower semicontinuous function is maximal monotone; conversely a maximal monotone operator is the subdifferential of a proper convex lower semicontinuous function exactly when it is cyclically monotone, that is, when
 
@@ -195,7 +195,7 @@ for every finite cycle, and then the function is recovered from $A$ by the formu
 
 **Theorem (direct method).** Let $X$ be a reflexive Banach space and $F:X\to\mathbb{R}\cup\{+\infty\}$ proper, coercive and weakly lower semicontinuous. Then $F$ attains its minimum on $X$, and the set of minimisers is weakly closed and convex when $F$ is convex.
 
-*Proof.* Choose a minimising sequence $(x_n)$ with $F(x_n)\to\inf F$; coercivity bounds it, reflexivity gives a weakly convergent subsequence $x_{n_k}\rightharpoonup x$, weak lower semicontinuity gives $F(x)\le\liminf F(x_{n_k})=\inf F$, and hence $F(x)=\inf F$. $\square$
+*Proof.* Choose a minimising sequence $(x_n)$ with $F(x_n)\to\inf F$; coercivity bounds it, reflexivity gives a weakly convergent subsequence $x_{n_k}\rightharpoonup x$, weak lower semicontinuity gives $F(x)\le\liminf F(x_{n_k})=\inf F$, and hence $F(x)=\inf F$.
 
 This is the fundamental existence theorem of the calculus of variations; the technical work in its applications is the verification of the weak lower semicontinuity and the coercivity in the function space of the problem, which is the content of this article.
 
@@ -209,7 +209,7 @@ $$
 \eta\bigl(\{F\le c+\epsilon\}\bigr)\subseteq\{F\le c-\epsilon\}, \qquad \eta(u)=u \text{ whenever } |F(u)-c|>\delta .
 $$
 
-*Proof (sketch).* One constructs a pseudogradient vector field $v(u)$ with $\langle F'(u),v(u)\rangle\ge\frac12\|F'(u)\|^2$ and $\|v(u)\|\le\|F'(u)\|$, and lets $\eta$ be the time-one map of the flow $-\dot u=v(u)$ on the region where $F'\neq0$; the Palais–Smale condition ensures that the flow exists for the required time and that the region $\{c-\epsilon\le F\le c+\epsilon,\ F'=0\}$ is empty for small $\epsilon$. $\square$
+*Proof (sketch).* One constructs a pseudogradient vector field $v(u)$ with $\langle F'(u),v(u)\rangle\ge\frac12\|F'(u)\|^2$ and $\|v(u)\|\le\|F'(u)\|$, and lets $\eta$ be the time-one map of the flow $-\dot u=v(u)$ on the region where $F'\neq0$; the Palais–Smale condition ensures that the flow exists for the required time and that the region $\{c-\epsilon\le F\le c+\epsilon,\ F'=0\}$ is empty for small $\epsilon$.
 
 ### The Minimax Principle and the Mountain Pass
 
@@ -221,7 +221,7 @@ $$
 
 If $c$ is finite and $F$ satisfies $(PS)_c$, then $c$ is a critical value of $F$.
 
-*Proof (sketch).* If $c$ were not critical, the deformation lemma applied with $\eta$ would carry every $S$ with $\sup_SF\le c+\epsilon$ into $\{F\le c-\epsilon\}$, contradicting the definition of $c$ as the infimum of the maxima. $\square$
+*Proof (sketch).* If $c$ were not critical, the deformation lemma applied with $\eta$ would carry every $S$ with $\sup_SF\le c+\epsilon$ into $\{F\le c-\epsilon\}$, contradicting the definition of $c$ as the infimum of the maxima.
 
 **Theorem (mountain pass).** Let $X$ be a Banach space, $F \in C^1(X,\mathbb{R})$ with $F(0)=0$, and suppose there are $r>0$ and $\rho>0$ with
 
@@ -237,7 +237,7 @@ $$
 
 If $F$ satisfies $(PS)_c$, then $c$ is a critical value of $F$, and the corresponding critical point is not the origin.
 
-*Proof (sketch).* The family $\Gamma$ is invariant under the homeomorphisms of $X$ isotopic to the identity fixing $0$ and $v$, so the minimax principle applies. $\square$
+*Proof (sketch).* The family $\Gamma$ is invariant under the homeomorphisms of $X$ isotopic to the identity fixing $0$ and $v$, so the minimax principle applies.
 
 **Example (a semilinear problem).** On $H_0^1(\Omega)$ let $F(u)=\frac12\int_\Omega|\nabla u|^2dx-\int_\Omega G(u)\,dx$ with $G'=g$ of subcritical growth and $g(u)=o(u)$ at $0$; the origin is a local minimum, the energy is unbounded below along rays when $G$ is superquadratic, and the mountain pass geometry holds; the Palais–Smale condition follows from the compactness of the embedding $H_0^1\hookrightarrow L^2$ and the growth hypothesis, so the theorem produces a nontrivial solution of $-\Delta u=g(u)$ with $u=0$ on the boundary. The functional-analytic scheme is the content of the present section; the elliptic existence theory, the regularity of the solution and the maximum principle belong to *Partial Differential Equations*.
 

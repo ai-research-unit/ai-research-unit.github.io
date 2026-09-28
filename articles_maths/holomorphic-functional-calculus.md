@@ -39,7 +39,7 @@ $$
 
 In particular $\|R(\lambda)\|\to0$ as $|\lambda|\to\infty$, so $R$ is bounded on every contour lying outside a disc containing the spectrum.
 
-*Proof.* The resolvent identity follows by multiplying the identity $(\lambda-a)-(\mu-a)=(\lambda-\mu)$ on both sides by $R(\lambda)$ and $R(\mu)$; it exhibits the resolvent as continuous, and dividing by $\lambda-\mu$ gives its analyticity. The estimate follows from the Neumann series $R(\lambda)=-\lambda^{-1}\sum_{n\ge0}(a/\lambda)^n$. $\square$
+*Proof.* The resolvent identity follows by multiplying the identity $(\lambda-a)-(\mu-a)=(\lambda-\mu)$ on both sides by $R(\lambda)$ and $R(\mu)$; it exhibits the resolvent as continuous, and dividing by $\lambda-\mu$ gives its analyticity. The estimate follows from the Neumann series $R(\lambda)=-\lambda^{-1}\sum_{n\ge0}(a/\lambda)^n$.
 
 ### The Definition
 
@@ -55,11 +55,11 @@ the integral of a continuous $A$-valued function on a compact contour.
 
 **Proposition (well-definedness).** The integral does not depend on the contour $\Gamma$: for two admissible contours the difference of the integrals is the integral of the analytic $A$-valued function $f(\lambda)R(\lambda)$ over the boundary of a region on which it is analytic, and it vanishes by Cauchy's theorem.
 
-*Proof.* On the region between the two contours the integrand is analytic, since $f$ is holomorphic on $U$ and $R$ on $\rho(a)$; Cauchy's theorem for vector-valued analytic functions (the scalar theorem applied to each continuous linear functional) gives the vanishing. $\square$
+*Proof.* On the region between the two contours the integrand is analytic, since $f$ is holomorphic on $U$ and $R$ on $\rho(a)$; Cauchy's theorem for vector-valued analytic functions (the scalar theorem applied to each continuous linear functional) gives the vanishing.
 
 **Theorem (the calculus is a continuous homomorphism).** The map $f\mapsto f(a)$ from the algebra of germs of functions holomorphic on neighbourhoods of $\sigma(a)$ to $A$ is a unital algebra homomorphism: $(f+g)(a)=f(a)+g(a)$, $(fg)(a)=f(a)g(a)$, $1(a)=1$, $\lambda(a)=a$; it is continuous with respect to uniform convergence on neighbourhoods of $\sigma(a)$.
 
-*Proof.* Linearity is immediate from the linearity of the integral. For the product, use the resolvent identity and the identity $R(\lambda)R(\mu)=(\lambda-\mu)^{-1}(R(\mu)-R(\lambda))$ for $\lambda\neq\mu$ to reduce the double contour integral of $f(\lambda)g(\mu)R(\lambda)R(\mu)$ to the sum of the two integrals representing $f(a)g(a)$ and $g(a)f(a)$; the function $(\lambda-\mu)^{-1}$ has poles only on the diagonals $\lambda=\mu$, which the contours avoid. The constants are immediate: $1(a)=\frac{1}{2\pi i}\oint\Gamma R(\lambda)d\lambda=1$, and $\lambda(a)=\frac{1}{2\pi i}\oint\Gamma\lambda R(\lambda)d\lambda=a$. Continuity follows from the estimate $\|f(a)\|\le\frac{1}{2\pi}\ell(\Gamma)\max_\Gamma|f|\|R\|$. $\square$
+*Proof.* Linearity is immediate from the linearity of the integral. For the product, use the resolvent identity and the identity $R(\lambda)R(\mu)=(\lambda-\mu)^{-1}(R(\mu)-R(\lambda))$ for $\lambda\neq\mu$ to reduce the double contour integral of $f(\lambda)g(\mu)R(\lambda)R(\mu)$ to the sum of the two integrals representing $f(a)g(a)$ and $g(a)f(a)$; the function $(\lambda-\mu)^{-1}$ has poles only on the diagonals $\lambda=\mu$, which the contours avoid. The constants are immediate: $1(a)=\frac{1}{2\pi i}\oint\Gamma R(\lambda)d\lambda=1$, and $\lambda(a)=\frac{1}{2\pi i}\oint\Gamma\lambda R(\lambda)d\lambda=a$. Continuity follows from the estimate $\|f(a)\|\le\frac{1}{2\pi}\ell(\Gamma)\max_\Gamma|f|\|R\|$.
 
 **Theorem (spectral mapping).** For every $f$ holomorphic on a neighbourhood of $\sigma(a)$,
 
@@ -67,7 +67,7 @@ $$
 \sigma\bigl(f(a)\bigr) = f\bigl(\sigma(a)\bigr) .
 $$
 
-*Proof.* Quoted as standard. One direction is elementary: if $\mu=f(\lambda_0)$ for some $\lambda_0\in\sigma(a)$, write $f(\lambda)-f(\lambda_0)=(\lambda-\lambda_0)g(\lambda)$ with $g$ holomorphic, so $f(a)-f(\lambda_0)1=(a-\lambda_01)g(a)$, and since $a-\lambda_01$ is not invertible neither is $f(a)-\mu1$. The other direction uses the calculus applied to the function $1/(f(\lambda)-\mu)$ when $\mu\notin f(\sigma(a))$. $\square$
+*Proof.* Quoted as standard. One direction is elementary: if $\mu=f(\lambda_0)$ for some $\lambda_0\in\sigma(a)$, write $f(\lambda)-f(\lambda_0)=(\lambda-\lambda_0)g(\lambda)$ with $g$ holomorphic, so $f(a)-f(\lambda_0)1=(a-\lambda_01)g(a)$, and since $a-\lambda_01$ is not invertible neither is $f(a)-\mu1$. The other direction uses the calculus applied to the function $1/(f(\lambda)-\mu)$ when $\mu\notin f(\sigma(a))$.
 
 **Corollary (invertibility criterion).** If $f$ has no zero on $\sigma(a)$ then $f(a)$ is invertible, with $f(a)^{-1}=(1/f)(a)$; conversely an invertible $f(a)$ forces $f$ to be zero-free on $\sigma(a)$.
 
@@ -81,7 +81,7 @@ the Gelfand formula; the limit exists and equals the maximum by the spectral map
 
 **Theorem (composition and locality).** If $g$ is holomorphic on a neighbourhood of $\sigma(a)$ and $f$ holomorphic on a neighbourhood of $g(\sigma(a))$, then $(f\circ g)(a)=f(g(a))$. If $f=g$ on a neighbourhood of $\sigma(a)$, then $f(a)=g(a)$. The calculus is **natural**: for every continuous unital algebra homomorphism $\pi:A\to B$ one has $\pi(f(a))=f(\pi(a))$, the spectrum of $\pi(a)$ being contained in that of $a$.
 
-*Proof.* Locality is immediate from the definition, since the integral sees $f$ only on $\Gamma$. Naturality follows because $\pi$ intertwines the resolvents, $\pi(R_a(\lambda))=R_{\pi(a)}(\lambda)$, and commutes with the Bochner integral. The composition rule is the Runge approximation argument: $(f\circ g)(a)$ and $f(g(a))$ are both continuous in the data and agree when $f$ is a polynomial, and polynomials are dense in the holomorphic functions on a neighbourhood of $g(\sigma(a))$ by Runge's theorem. $\square$
+*Proof.* Locality is immediate from the definition, since the integral sees $f$ only on $\Gamma$. Naturality follows because $\pi$ intertwines the resolvents, $\pi(R_a(\lambda))=R_{\pi(a)}(\lambda)$, and commutes with the Bochner integral. The composition rule is the Runge approximation argument: $(f\circ g)(a)$ and $f(g(a))$ are both continuous in the data and agree when $f$ is a polynomial, and polynomials are dense in the holomorphic functions on a neighbourhood of $g(\sigma(a))$ by Runge's theorem.
 
 **Remark (the non-unital case).** In a non-unital Banach algebra, or for a function that does not vanish at infinity, one adjoins an identity and applies the calculus to the unitisation; the resulting calculus assigns to $f$ an element of the unitisation, and the holomorphic functions that vanish at infinity act on the original algebra. The distinction is the one between the algebra and its unitisation, and it is the only modification the non-unital case requires.
 
@@ -99,7 +99,7 @@ $$
 \sigma(a|_{P_1A})=\sigma_1 , \qquad \sigma(a|_{(1-P_1)A})=\sigma(a)\setminus\sigma_1 .
 $$
 
-*Proof.* Idempotency follows from the calculus applied to the indicator-type function: $P_1=f(a)$ for $f$ the function described, and $f^2=f$ on a neighbourhood of the spectrum, so $P_1^2=f(a)^2=(f^2)(a)=f(a)=P_1$ by the homomorphism property and locality. Commutation with $a$ follows from the resolvent identity. The image and kernel are closed because $P_1$ is a bounded projection, invariant because $a$ commutes with $P_1$, and the spectra are computed by the spectral mapping theorem applied to the restriction. $\square$
+*Proof.* Idempotency follows from the calculus applied to the indicator-type function: $P_1=f(a)$ for $f$ the function described, and $f^2=f$ on a neighbourhood of the spectrum, so $P_1^2=f(a)^2=(f^2)(a)=f(a)=P_1$ by the homomorphism property and locality. Commutation with $a$ follows from the resolvent identity. The image and kernel are closed because $P_1$ is a bounded projection, invariant because $a$ commutes with $P_1$, and the spectra are computed by the spectral mapping theorem applied to the restriction.
 
 **Corollary (the operator case).** Let $T$ be a bounded operator on a complex Banach space $X$ and let $\sigma(T)=\sigma_1\sqcup\sigma_2$ with $\sigma_1$ compact and separated. Then
 
@@ -109,7 +109,7 @@ $$
 
 each summand is $T$-invariant, $T$ restricted to $X_i$ has spectrum $\sigma_i$, and $T$ is block diagonal with respect to this decomposition. Iterating the construction over the connected components of the spectrum gives the **Dunford decomposition** of $T$ into the parts of the spectrum, and if the spectrum is finite the decomposition is into finitely many invariant pieces.
 
-*Proof.* Apply the theorem to the algebra $B(X)$ of bounded operators; the image and kernel of an idempotent operator are closed complementary subspaces, and the spectrum statements are those of the theorem. $\square$
+*Proof.* Apply the theorem to the algebra $B(X)$ of bounded operators; the image and kernel of an idempotent operator are closed complementary subspaces, and the spectrum statements are those of the theorem.
 
 **Remark (the calculus and the spectral theorem).** For $T$ normal on a Hilbert space, the holomorphic calculus is a homomorphism from the analytic functions on a neighbourhood of $\sigma(T)$ into the algebra generated by $T$, and the continuous functional calculus of *Operator Algebras* extends it to all continuous functions on the spectrum through the spectral measure; the two agree on the holomorphic functions, since both are continuous homomorphisms sending $\lambda$ to $T$ and determined by that property on polynomials, and polynomials are dense. The Borel calculus of *Unbounded Operators and Spectral Measures* is the further extension to bounded Borel functions, and the holomorphic calculus is then the smallest of the three: analytic, continuous, Borel.
 
@@ -119,15 +119,15 @@ each summand is $T$-invariant, $T$ restricted to $X_i$ has spectrum $\sigma_i$, 
 
 **Proposition (entire functions).** If $f(\lambda)=\sum_{n\ge0}c_n\lambda^n$ is entire, then the series $\sum_nc_na^n$ converges in $A$ and its sum is $f(a)$; hence the calculus for entire functions is the substitution of $a$ into the power series.
 
-*Proof.* The series converges absolutely because $f$ has infinite radius of convergence and $\|a^n\|\le\|a\|^n$; the integral defining $f(a)$ can be expanded as the uniformly convergent sum of the integrals of $c_n\lambda^nR(\lambda)$, and each of those is $c_na^n$ by the resolvent expansion. $\square$
+*Proof.* The series converges absolutely because $f$ has infinite radius of convergence and $\|a^n\|\le\|a\|^n$; the integral defining $f(a)$ can be expanded as the uniformly convergent sum of the integrals of $c_n\lambda^nR(\lambda)$, and each of those is $c_na^n$ by the resolvent expansion.
 
 **Proposition (the logarithm).** Let $a\in A$ and suppose $\sigma(a)$ is contained in a simply connected open set $U\subseteq\mathbb{C}\setminus\{0\}$. Then there exists $b\in A$ with $e^b=a$; if $\sigma(a)\subset\{|\lambda-1|<1\}$ then $b=\log a$ is given by the series $\sum_{n\ge1}(-1)^{n+1}(a-1)^n/n$.
 
-*Proof.* Let $g$ be a holomorphic branch of the logarithm on $U$; set $b=g(a)$. Then $\exp(g(\lambda))=\lambda$ on a neighbourhood of $\sigma(a)$, so by the composition rule $e^b=(e^{\,\cdot}\circ g)(a)=\lambda(a)=a$. The series statement is the principal branch and the power-series case of the preceding proposition. $\square$
+*Proof.* Let $g$ be a holomorphic branch of the logarithm on $U$; set $b=g(a)$. Then $\exp(g(\lambda))=\lambda$ on a neighbourhood of $\sigma(a)$, so by the composition rule $e^b=(e^{\,\cdot}\circ g)(a)=\lambda(a)=a$. The series statement is the principal branch and the power-series case of the preceding proposition.
 
 **Proposition (the square root).** If $0\notin\sigma(a)$ and the spectrum lies in a simply connected set avoiding $0$, then $a$ has a square root in the closed subalgebra generated by $1$ and $a$, namely $f(a)$ for a holomorphic branch $f(\lambda)=\lambda^{1/2}$. If in addition $\sigma(a)\subset(0,\infty)$ then the square root is the limit of the Newton iteration and is a function of $a$ in the strong sense.
 
-*Proof.* The branch $f$ is holomorphic on the domain and $f^2=\lambda$, so $f(a)^2=(f^2)(a)=\lambda(a)=a$ by the homomorphism property. $\square$
+*Proof.* The branch $f$ is holomorphic on the domain and $f^2=\lambda$, so $f(a)^2=(f^2)(a)=\lambda(a)=a$ by the homomorphism property.
 
 ### The Matrix Case
 

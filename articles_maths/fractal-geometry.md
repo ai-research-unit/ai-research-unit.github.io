@@ -55,7 +55,7 @@ and the **box-counting dimension** is $\dim_B E = \underline{\dim}_B E = \overli
 
 **(e)** countable sets can have positive box dimension, and the box dimensions are not countably stable.
 
-**Proof sketch.** (a) and (b) are the corresponding properties of the covering number, a cover of the union being the union of the covers; (c) follows because a bi-Lipschitz map changes the covering number by at most a power factor; (d) is the product of covers; (e) is the example below. $\square$
+**Proof sketch.** (a) and (b) are the corresponding properties of the covering number, a cover of the union being the union of the covers; (c) follows because a bi-Lipschitz map changes the covering number by at most a power factor; (d) is the product of covers; (e) is the example below.
 
 **Example (a countable set of box dimension $\tfrac{1}{2}$).** Let $E = \{0\}\cup\{1/n : n \geq 1\} \subseteq \mathbb{R}$. The set is countable, hence of Hausdorff dimension zero. To compute its covering number, fix $\delta$; the points $1/n$ with $1/n \geq \sqrt{\delta}$ number about $\delta^{-1/2}$ and are pairwise farther apart than $\delta$, so each needs its own set, while the remaining points, which lie in $[0,\sqrt{\delta}]$, are covered by about $\sqrt{\delta}/\delta = \delta^{-1/2}$ sets of diameter $\delta$. Hence $N(E, \delta) \asymp \delta^{-1/2}$ and
 
@@ -95,7 +95,7 @@ the infimum and the supremum being taken in $[0,\infty]$, with the convention th
 
 **(d)** Hölder invariance: if $f$ is Hölder of exponent $\alpha$ then $\dim_H f(E) \leq \dim_H E/\alpha$; in particular a Lipschitz map does not increase the Hausdorff dimension, and a bi-Lipschitz map preserves it.
 
-**Proof sketch.** (a) is immediate from the covers. (b) is the countable subadditivity of $\mathcal{H}^s$, with the reverse inequality from (a). (c) follows because a point has dimension zero and a countable union is countably stable. (d) follows because the image of a $\delta$-cover under a Hölder map is a $c\delta^\alpha$-cover whose contribution to the $s$-content picks up the factor $\delta^{s\alpha}$, and the two exponents must balance. $\square$
+**Proof sketch.** (a) is immediate from the covers. (b) is the countable subadditivity of $\mathcal{H}^s$, with the reverse inequality from (a). (c) follows because a point has dimension zero and a countable union is countably stable. (d) follows because the image of a $\delta$-cover under a Hölder map is a $c\delta^\alpha$-cover whose contribution to the $s$-content picks up the factor $\delta^{s\alpha}$, and the two exponents must balance.
 
 **Theorem (comparison).** For every bounded set $E$,
 
@@ -105,7 +105,7 @@ $$
 
 and the inequalities can be strict on both sides. The Hausdorff dimension is countably stable and the box dimension is not; equality holds for the self-similar sets satisfying the open set condition, below.
 
-**Proof sketch.** Covering $E$ by $N(E,\delta)$ sets of diameter $\delta$ gives $\mathcal{H}^s_\delta(E) \leq N(E,\delta)\delta^s$, which tends to $0$ for $s > \underline{\dim}_B E$; hence $\dim_H E \leq \underline{\dim}_B E$. $\square$
+**Proof sketch.** Covering $E$ by $N(E,\delta)$ sets of diameter $\delta$ gives $\mathcal{H}^s_\delta(E) \leq N(E,\delta)\delta^s$, which tends to $0$ for $s > \underline{\dim}_B E$; hence $\dim_H E \leq \underline{\dim}_B E$.
 
 **Example (the strictness of the first inequality).** The set $E = \{0\} \cup \{1/n\}$ of the previous section has $\dim_H E = 0 < \tfrac12 = \dim_B E$; the set of irrationals in a bounded interval has $\dim_H = 1 = \dim_B$; the set of rationals in a bounded interval has $\dim_H = 0$ and $\dim_B = 1$, so the second inequality is strict as well.
 
@@ -135,7 +135,7 @@ $$
 
 where the union is over the words of length $k$.
 
-**Proof sketch.** On the set $\mathcal{K}(X)$ of nonempty compact subsets of $X$ with the Hausdorff distance, the map $F(S) = \bigcup_i f_i(S)$ is a contraction with ratio $\max_i r_i < 1$, and $\mathcal{K}(X)$ is complete, so the contraction mapping theorem of *Metric, Uniform and Complete Spaces* gives a unique fixed point; the explicit intersection is the image of the fixed point under the iteration. $\square$
+**Proof sketch.** On the set $\mathcal{K}(X)$ of nonempty compact subsets of $X$ with the Hausdorff distance, the map $F(S) = \bigcup_i f_i(S)$ is a contraction with ratio $\max_i r_i < 1$, and $\mathcal{K}(X)$ is complete, so the contraction mapping theorem of *Metric, Uniform and Complete Spaces* gives a unique fixed point; the explicit intersection is the image of the fixed point under the iteration.
 
 **Definition (the open set condition).** The system satisfies the **open set condition** if there is a nonempty bounded open set $V$ with $\bigcup_{i=1}^m f_i(V) \subseteq V$ and the images $f_i(V)$ pairwise disjoint.
 
@@ -147,7 +147,7 @@ $$
 
 and $0 < \mathcal{H}^s(\Lambda) < \infty$.
 
-**Proof sketch.** The open set condition arranges that the $k$-th level pieces $f_{i_1}\circ\cdots\circ f_{i_k}(V)$ are disjoint and each is a scaled copy of $V$, so the cover of $\Lambda$ by the level-$k$ pieces is close to optimal; the upper bound on the dimension is the count $\sum_{|i|=k}(\operatorname{diam} f_{i_1}\cdots f_{i_k}(V))^s \leq (\operatorname{diam}V)^s(\sum_i r_i^s)^k$, which stays bounded exactly at the root $s$, and the lower bound uses the disjointness and the mass distribution principle, which is the measure-theoretic input of Part III quoted here only in its covering form. $\square$
+**Proof sketch.** The open set condition arranges that the $k$-th level pieces $f_{i_1}\circ\cdots\circ f_{i_k}(V)$ are disjoint and each is a scaled copy of $V$, so the cover of $\Lambda$ by the level-$k$ pieces is close to optimal; the upper bound on the dimension is the count $\sum_{|i|=k}(\operatorname{diam} f_{i_1}\cdots f_{i_k}(V))^s \leq (\operatorname{diam}V)^s(\sum_i r_i^s)^k$, which stays bounded exactly at the root $s$, and the lower bound uses the disjointness and the mass distribution principle, which is the measure-theoretic input of Part III quoted here only in its covering form.
 
 ### The Standard Examples
 
@@ -201,7 +201,7 @@ $$
 
 and the first inequality can be strict; the box dimension satisfies $\overline{\dim}_B(E_1\times E_2) \leq \overline{\dim}_B E_1 + \overline{\dim}_B E_2$.
 
-**Proof sketch.** The upper bound is the product of covers; the lower bound is the Marstrand product theorem, whose proof uses a Fubini-type argument with the Hausdorff measure and therefore belongs to Part III, quoted here as standard. $\square$
+**Proof sketch.** The upper bound is the product of covers; the lower bound is the Marstrand product theorem, whose proof uses a Fubini-type argument with the Hausdorff measure and therefore belongs to Part III, quoted here as standard.
 
 **Remark (the local structure, deferred).** For a self-similar attractor $\Lambda$ with the open set condition, the local dimension at a point — the exponent of the growth of the Hausdorff content of $\Lambda \cap B(x, r)$ as $r \to 0$ — equals the global dimension $s$ at almost every point, the exception set being of vanishing content; the precise statement, its almost-everywhere qualifier and its proof require the Hausdorff measure as a measure and the mass distribution principle in full, and they are therefore given in Part III, where the measure and the limit are available. The attractor is the repeller of a map on the ambient space, the coding by the shift makes it a subshift of finite type, and the local dimension is computed from the entropy of the shift and the Lyapunov exponent of the map, which are the invariants of the dynamical systems of Part III.
 

@@ -66,7 +66,7 @@ $$
 \tilde S_\pm=\tilde S_1\pm i\tilde S_2=\tfrac{\hbar}{2}\left(ie_1\mp e_2\right),
 $$
 
-and they are **nilpotent and null in the norm form**,
+and they are **nilpotent and null in the biquaternion norm**,
 
 $$
 \tilde S_\pm^2=0,\qquad N(\tilde S_\pm)=\tilde S_\pm\bar{\tilde S}_\pm=0 ,
@@ -463,5 +463,5 @@ The article established the following.
 - E. P. Wigner, *Group Theory and Its Application to the Quantum Mechanics of Atomic Spectra* (Academic Press, 1959), for the closed expression for the Clebsch–Gordan coefficients and the representation-theoretic setting.
 - J. J. Sakurai and Jim Napolitano, *Modern Quantum Mechanics* (Pearson, 2017), for the addition of two spin-$\tfrac12$ systems and the standard derivation of the triplet and singlet states.
 - Albert Messiah, *Quantum Mechanics* (North-Holland, 1961), for the addition of angular momenta and the transformation between the product and coupled bases.
-- William Fulton and Joe Harris, *Representation Theory: A First Course* (Springer, 1991), for the Clebsch–Gordan decomposition of $\mathfrak{sl}(2,\mathbb{C})$ representations and the symmetric powers of the defining representation.
+- William Fulton and Joe Harris, *Representation Theory: A First Course* (Springer, 1991), for the Clebsch–Gordan decomposition of $\mathrm{SL}(2,\mathbb{C})$ representations and the symmetric powers of the defining representation.
 - L. C. Biedenharn and J. D. Louck, *Angular Momentum in Quantum Physics* (Addison-Wesley, 1981), for the recoupling theory, the phase conventions, and the general theory of tensor operators.

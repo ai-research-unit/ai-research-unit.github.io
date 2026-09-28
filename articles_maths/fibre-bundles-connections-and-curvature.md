@@ -7,7 +7,7 @@ A fibre bundle is a manifold that is locally a product, and a connection is a ru
 
 This article develops the theory from the definitions. It defines fibre bundles, vector bundles and principal bundles, with the transition functions and their cocycle condition; the vector bundles are developed in their own right — the tangent bundle of a manifold, the operations on bundles (direct sums, tensor products, exterior powers, the dual and the pullback), the metrics, the frame bundles, and the module of sections with the local frames that trivialise a bundle over a chart; it defines the covariant derivative on a vector bundle and the connection form on a principal bundle, with the gauge transformation rule and an existence proof by partition of unity; it defines the curvature by the structure equation, proves the Bianchi identity, and characterises flatness; and it states the Chern–Weil construction of characteristic classes, with the first Chern class, the Pontryagin classes and the Euler class as examples. The treatment is differential-topological throughout.
 
-Manifolds are smooth and second countable; bundles are smooth; the structure group is a Lie group $G$ in the sense of *Lie Groups*, with Lie algebra $\mathfrak{g}$, and the associated bundle construction uses the left action of $G$ on a fibre. Exterior forms and the de Rham cohomology are those of *Differential Forms and Stokes' Theorem*, so $d$ is the exterior derivative, $\Omega^k(M)$ is the space of $k$-forms, and $H^k_{dR}(M)$ is the de Rham cohomology. Lie algebras are written in lowercase fraktur, and the adjoint representation of a Lie group on its Lie algebra is $\operatorname{Ad}$, with the conventions of *The Lie Correspondence and the Adjoint Representation*. No physics is invoked.
+Manifolds are smooth and second countable; bundles are smooth; the structure group is a Lie group $G$ in the sense of *Lie Groups*, with Lie algebra $\mathrm{G}$, and the associated bundle construction uses the left action of $G$ on a fibre. Exterior forms and the de Rham cohomology are those of *Differential Forms and Stokes' Theorem*, so $d$ is the exterior derivative, $\Omega^k(M)$ is the space of $k$-forms, and $H^k_{dR}(M)$ is the de Rham cohomology. Lie algebras are written in lowercase fraktur, and the adjoint representation of a Lie group on its Lie algebra is $\operatorname{Ad}$, with the conventions of *The Lie Correspondence and the Adjoint Representation*. No physics is invoked.
 
 ## Fibre Bundles
 
@@ -31,7 +31,7 @@ $$
 
 on the triple intersections; conversely, given an open cover and functions satisfying these identities, there is a bundle with those transition functions, unique up to isomorphism.
 
-**Proof.** Comparing the three trivialisations over a triple intersection gives the relation; conversely, the disjoint union $\bigsqcup_\alpha U_\alpha \times F$ modulo the equivalence $(x, v)_\beta \sim (x, g_{\alpha\beta}(x)v)_\alpha$ on overlaps is a manifold and a bundle with the required transition functions. $\square$
+**Proof.** Comparing the three trivialisations over a triple intersection gives the relation; conversely, the disjoint union $\bigsqcup_\alpha U_\alpha \times F$ modulo the equivalence $(x, v)_\beta \sim (x, g_{\alpha\beta}(x)v)_\alpha$ on overlaps is a manifold and a bundle with the required transition functions.
 
 ### Vector Bundles and Principal Bundles
 
@@ -77,11 +77,11 @@ $$
 \nabla(f s) = df \otimes s + f\, \nabla s
 $$
 
-for all $f \in C^\infty(M)$ and $s \in \Gamma(E)$. The operator $\nabla_X s = \langle\nabla s, X\rangle$ for $X \in \mathfrak{X}(M)$ is the **covariant derivative** along $X$, and it is $C^\infty(M)$-linear in $X$ and a derivation in $s$.
+for all $f \in C^\infty(M)$ and $s \in \Gamma(E)$. The operator $\nabla_X s = \langle\nabla s, X\rangle$ for $X \in \mathrm{X}(M)$ is the **covariant derivative** along $X$, and it is $C^\infty(M)$-linear in $X$ and a derivation in $s$.
 
 **Proposition.** A connection exists on every vector bundle, and the set of connections on $E$ is an affine space modelled on $\Omega^1(M; \operatorname{End}(E)) = \Gamma(T^*M\otimes\operatorname{End}E)$: if $\nabla$ and $\nabla'$ are connections then $\nabla' - \nabla$ is a $1$-form with values in the endomorphisms of $E$.
 
-**Proof.** On a trivial bundle $U \times \mathbb{R}^k$ the exterior derivative $d$ on the components is a connection; on a general bundle choose a locally finite cover by trivialising charts, a partition of unity, and convex-combine the local connections with the partition of unity to obtain a global connection. The difference of two connections is $C^\infty(M)$-linear in $s$ by the Leibniz rule, hence a tensor, which is a section of $T^*M\otimes\operatorname{End}E$. $\square$
+**Proof.** On a trivial bundle $U \times \mathbb{R}^k$ the exterior derivative $d$ on the components is a connection; on a general bundle choose a locally finite cover by trivialising charts, a partition of unity, and convex-combine the local connections with the partition of unity to obtain a global connection. The difference of two connections is $C^\infty(M)$-linear in $s$ by the Leibniz rule, hence a tensor, which is a section of $T^*M\otimes\operatorname{End}E$.
 
 **Definition.** Let $e = (e_1, \ldots, e_k)$ be a **local frame** of $E$ over an open set $U$, so that every section over $U$ is $s = \sum_i s^i e_i$ with $s^i \in C^\infty(U)$. The **connection form** of $\nabla$ in this frame is the matrix of $1$-forms $\omega = (\omega^i_{\ j})$ defined by
 
@@ -97,25 +97,25 @@ $$
 \omega' = g^{-1}\omega\, g + g^{-1} dg.
 $$
 
-**Proof.** Write $e'_j = \sum_a e_a g^a_{\ j}$ and compute $\nabla e'_j$ in both frames; the Leibniz rule produces the term $dg$ alongside the transformation of $\omega$ by $g$. $\square$
+**Proof.** Write $e'_j = \sum_a e_a g^a_{\ j}$ and compute $\nabla e'_j$ in both frames; the Leibniz rule produces the term $dg$ alongside the transformation of $\omega$ by $g$.
 
 **Theorem.** The connection forms $\omega_\alpha$ of a connection on the trivialisations $U_\alpha$ satisfy $\omega_\beta = g_{\alpha\beta}^{-1}\omega_\alpha g_{\alpha\beta} + g_{\alpha\beta}^{-1}dg_{\alpha\beta}$ on overlaps; conversely, such a family defines a connection.
 
 ### Connections on Principal Bundles
 
-**Definition.** Let $\pi : P \to M$ be a principal $G$-bundle with Lie algebra $\mathfrak{g}$. For $A \in \mathfrak{g}$ let $A^{\#}$ be the **fundamental vector field** on $P$ generated by the right action of $G$. A **connection form** on $P$ is a $\mathfrak{g}$-valued $1$-form $\omega \in \Omega^1(P; \mathfrak{g})$ such that
+**Definition.** Let $\pi : P \to M$ be a principal $G$-bundle with Lie algebra $\mathrm{G}$. For $A \in \mathrm{G}$ let $A^{\#}$ be the **fundamental vector field** on $P$ generated by the right action of $G$. A **connection form** on $P$ is a $\mathrm{G}$-valued $1$-form $\omega \in \Omega^1(P; \mathrm{G})$ such that
 
 $$
-\omega(A^{\#}) = A \ \text{ for all } A \in \mathfrak{g}, \qquad R_g^*\omega = \operatorname{Ad}(g^{-1})\,\omega \ \text{ for all } g \in G.
+\omega(A^{\#}) = A \ \text{ for all } A \in \mathrm{G}, \qquad R_g^*\omega = \operatorname{Ad}(g^{-1})\,\omega \ \text{ for all } g \in G.
 $$
 
 The **horizontal subspace** at $p \in P$ is $H_pP = \ker\omega_p \subseteq T_pP$, and it is complementary to the vertical subspace $T_p(P_{\pi(p)})$.
 
 **Proposition.** A connection form exists on every principal bundle, and the horizontal distribution $H = \ker\omega$ is a $G$-invariant distribution complementary to the vertical distribution; a distribution with these properties determines a unique connection form.
 
-**Proof.** Existence: on a local trivialisation $U \times G$ define $\omega = \mathrm{pr}_2^*\theta$, where $\theta$ is the Maurer–Cartan form of $G$; patch the local forms with a partition of unity and correct by the $\operatorname{Ad}$-equivariance to obtain a global form satisfying both conditions. The equivalence with a $G$-invariant complement is the definition of the kernel and the existence of the fundamental vector fields. $\square$
+**Proof.** Existence: on a local trivialisation $U \times G$ define $\omega = \mathrm{pr}_2^*\theta$, where $\theta$ is the Maurer–Cartan form of $G$; patch the local forms with a partition of unity and correct by the $\operatorname{Ad}$-equivariance to obtain a global form satisfying both conditions. The equivalence with a $G$-invariant complement is the definition of the kernel and the existence of the fundamental vector fields.
 
-**Definition.** Let $s : U \to P$ be a local section, so that $U \times G \to \pi^{-1}(U)$, $(x, g) \mapsto s(x)\cdot g$, is a trivialisation. The **local connection form** is $\omega_s = s^*\omega \in \Omega^1(U; \mathfrak{g})$, and for $s' = s \cdot h$ with $h : U \to G$,
+**Definition.** Let $s : U \to P$ be a local section, so that $U \times G \to \pi^{-1}(U)$, $(x, g) \mapsto s(x)\cdot g$, is a trivialisation. The **local connection form** is $\omega_s = s^*\omega \in \Omega^1(U; \mathrm{G})$, and for $s' = s \cdot h$ with $h : U \to G$,
 
 $$
 \omega_{s'} = h^{-1}\omega_s h + h^{-1}dh.
@@ -130,10 +130,10 @@ $$
 **Definition.** Let $\omega$ be a connection form on a principal $G$-bundle $P \to M$. The **curvature** is
 
 $$
-\Omega = d\omega + \tfrac{1}{2}[\omega, \omega] \in \Omega^2(P; \mathfrak{g}),
+\Omega = d\omega + \tfrac{1}{2}[\omega, \omega] \in \Omega^2(P; \mathrm{G}),
 $$
 
-where $[\omega,\omega]$ combines the wedge product of forms with the bracket in $\mathfrak{g}$; since $\omega$ has degree one, $\tfrac12[\omega,\omega] = \omega\wedge\omega$. The curvature is **horizontal** ($\iota_{A^{\#}}\Omega = 0$ for all $A$) and **equivariant**, $R_g^*\Omega = \operatorname{Ad}(g^{-1})\Omega$, so it descends to a $2$-form on the base with values in the associated bundle $P\times_G\mathfrak{g}$.
+where $[\omega,\omega]$ combines the wedge product of forms with the bracket in $\mathrm{G}$; since $\omega$ has degree one, $\tfrac12[\omega,\omega] = \omega\wedge\omega$. The curvature is **horizontal** ($\iota_{A^{\#}}\Omega = 0$ for all $A$) and **equivariant**, $R_g^*\Omega = \operatorname{Ad}(g^{-1})\Omega$, so it descends to a $2$-form on the base with values in the associated bundle $P\times_G\mathrm{G}$.
 
 **Definition.** For a vector bundle $E$ with connection $\nabla = d+\omega$ in a frame, the **curvature** is the $2$-form
 
@@ -151,7 +151,7 @@ $$
 
 so the curvature is a well-defined section of $\Lambda^2 T^*M \otimes \operatorname{End}E$.
 
-**Proof.** The formula $\nabla^2 s = R\wedge s$ follows from $R = d\omega+\omega\wedge\omega$ and the identity $d^2 = 0$; the transformation rule follows by substituting $\omega' = g^{-1}\omega g + g^{-1}dg$ into the expression for $R'$ and cancelling the terms involving $dg$, using $d(g^{-1}) = -g^{-1}dg\,g^{-1}$. $\square$
+**Proof.** The formula $\nabla^2 s = R\wedge s$ follows from $R = d\omega+\omega\wedge\omega$ and the identity $d^2 = 0$; the transformation rule follows by substituting $\omega' = g^{-1}\omega g + g^{-1}dg$ into the expression for $R'$ and cancelling the terms involving $dg$, using $d(g^{-1}) = -g^{-1}dg\,g^{-1}$.
 
 ### The Bianchi Identity
 
@@ -171,7 +171,7 @@ $$
 dR = d(\omega\wedge\omega) = d\omega\wedge\omega - \omega\wedge d\omega.
 $$
 
-On the other hand $[\omega, R] = \omega\wedge R - R\wedge\omega$ (the sign $(-1)^{1\cdot2} = +1$ for a $1$-form and a $2$-form), and substituting $R = d\omega+\omega\wedge\omega$ gives $[\omega,R] = \omega\wedge d\omega - d\omega\wedge\omega + [\omega, \omega\wedge\omega]$. The last term vanishes by the graded Jacobi identity, so $[\omega,R] = \omega\wedge d\omega - d\omega\wedge\omega$, which is $-dR$. $\square$
+On the other hand $[\omega, R] = \omega\wedge R - R\wedge\omega$ (the sign $(-1)^{1\cdot2} = +1$ for a $1$-form and a $2$-form), and substituting $R = d\omega+\omega\wedge\omega$ gives $[\omega,R] = \omega\wedge d\omega - d\omega\wedge\omega + [\omega, \omega\wedge\omega]$. The last term vanishes by the graded Jacobi identity, so $[\omega,R] = \omega\wedge d\omega - d\omega\wedge\omega$, which is $-dR$.
 
 **Corollary.** The curvature is a closed form when the connection is abelian, and in general the Bianchi identity says that $R$ is closed for the exterior covariant derivative $d^\nabla$.
 
@@ -181,7 +181,7 @@ On the other hand $[\omega, R] = \omega\wedge R - R\wedge\omega$ (the sign $(-1)
 
 **Theorem.** A connection on a vector bundle is flat if and only if it is locally trivial: about every point there is a frame in which $\omega = 0$, equivalently a family of local sections with $\nabla s = 0$ spanning the bundle. For a principal bundle the corresponding statement is that $\omega = g^{-1}dg$ locally.
 
-**Proof.** If $\omega = 0$ in a frame then $R = d\omega+\omega\wedge\omega = 0$. Conversely, if $R = 0$ then the equation $\nabla s = 0$ is a system of linear first-order partial differential equations with zero curvature, so it is locally solvable by the Frobenius theorem, and the solution space has dimension equal to the rank; this produces the flat frame. $\square$
+**Proof.** If $\omega = 0$ in a frame then $R = d\omega+\omega\wedge\omega = 0$. Conversely, if $R = 0$ then the equation $\nabla s = 0$ is a system of linear first-order partial differential equations with zero curvature, so it is locally solvable by the Frobenius theorem, and the solution space has dimension equal to the rank; this produces the flat frame.
 
 **Remark.** The distribution $H = \ker\omega$ on a principal bundle is integrable exactly when $\Omega = 0$, by the Frobenius theorem applied to the horizontal distribution, and the leaves are then the local trivialisations. In this sense the curvature is the obstruction to the connection being given by a foliation, and the integral of the curvature over a small loop is the infinitesimal holonomy of the connection.
 
@@ -189,7 +189,7 @@ On the other hand $[\omega, R] = \omega\wedge R - R\wedge\omega$ (the sign $(-1)
 
 ### The Chern–Weil Homomorphism
 
-**Definition.** Let $G$ be a Lie group with Lie algebra $\mathfrak{g}$, and let $S^\bullet(\mathfrak{g}^*)^G$ be the algebra of $G$-invariant symmetric multilinear forms on $\mathfrak{g}$, the **invariant polynomials**. For $f \in S^k(\mathfrak{g}^*)^G$ and a connection on a principal $G$-bundle $P \to M$ with curvature $\Omega$, the **Chern–Weil form** is
+**Definition.** Let $G$ be a Lie group with Lie algebra $\mathrm{G}$, and let $S^\bullet(\mathrm{G}^*)^G$ be the algebra of $G$-invariant symmetric multilinear forms on $\mathrm{G}$, the **invariant polynomials**. For $f \in S^k(\mathrm{G}^*)^G$ and a connection on a principal $G$-bundle $P \to M$ with curvature $\Omega$, the **Chern–Weil form** is
 
 $$
 f(\Omega) = f(\Omega, \ldots, \Omega) \in \Omega^{2k}(P),
@@ -197,27 +197,27 @@ $$
 
 the $k$-fold substitution of the curvature.
 
-**Theorem (Chern–Weil).** For every invariant polynomial $f \in S^k(\mathfrak{g}^*)^G$, the form $f(\Omega)$ is closed and basic for the $G$-action (horizontal and invariant), hence descends to a closed $2k$-form $f(\Omega)$ on $M$; its de Rham class $[f(\Omega)] \in H^{2k}_{dR}(M)$ is independent of the choice of connection on $P$.
+**Theorem (Chern–Weil).** For every invariant polynomial $f \in S^k(\mathrm{G}^*)^G$, the form $f(\Omega)$ is closed and basic for the $G$-action (horizontal and invariant), hence descends to a closed $2k$-form $f(\Omega)$ on $M$; its de Rham class $[f(\Omega)] \in H^{2k}_{dR}(M)$ is independent of the choice of connection on $P$.
 
-**Proof sketch.** Closedness is a consequence of the Bianchi identity: $d f(\Omega) = k\,f(d^\nabla\Omega, \Omega, \ldots, \Omega) = 0$. Basicness follows from the horizontality and equivariance of $\Omega$. Independence of the connection is proved by the transgression formula: if $\Omega_0, \Omega_1$ are the curvatures of two connections, then $f(\Omega_1) - f(\Omega_0) = d\,\tau$ for an explicit $(2k-1)$-form $\tau$ built from a linear path of connections and the identity $f$ is invariant. $\square$
+**Proof sketch.** Closedness is a consequence of the Bianchi identity: $d f(\Omega) = k\,f(d^\nabla\Omega, \Omega, \ldots, \Omega) = 0$. Basicness follows from the horizontality and equivariance of $\Omega$. Independence of the connection is proved by the transgression formula: if $\Omega_0, \Omega_1$ are the curvatures of two connections, then $f(\Omega_1) - f(\Omega_0) = d\,\tau$ for an explicit $(2k-1)$-form $\tau$ built from a linear path of connections and the identity $f$ is invariant.
 
 **Definition.** The **Chern–Weil homomorphism** is the algebra map
 
 $$
-S^\bullet(\mathfrak{g}^*)^G \longrightarrow H^{\mathrm{ev}}_{dR}(M), \qquad f \longmapsto [f(\Omega)],
+S^\bullet(\mathrm{G}^*)^G \longrightarrow H^{\mathrm{ev}}_{dR}(M), \qquad f \longmapsto [f(\Omega)],
 $$
 
 taking values in the even cohomology and independent of the connection. Its image consists of **characteristic classes** of the bundle.
 
 ### Chern, Pontryagin and Euler Classes
 
-**Example (first Chern class).** Let $L \to M$ be a complex line bundle with a connection of curvature $\mathcal{F} \in \Omega^2(M; \mathbb{C})$, a $2$-form because $\operatorname{End}(L) \cong \mathbb{C}$. The invariant polynomial $f(\xi) = \frac{i}{2\pi}\xi$ on $\mathfrak{gl}(1, \mathbb{C}) = \mathbb{C}$ gives the closed $2$-form
+**Example (first Chern class).** Let $L \to M$ be a complex line bundle with a connection of curvature $\mathcal{F} \in \Omega^2(M; \mathbb{C})$, a $2$-form because $\operatorname{End}(L) \cong \mathbb{C}$. The invariant polynomial $f(\xi) = \frac{i}{2\pi}\xi$ on $\mathrm{GL}(1, \mathbb{C}) = \mathbb{C}$ gives the closed $2$-form
 
 $$
 c_1(L) = \left[\frac{i}{2\pi} \mathcal{F}\right] \in H^2_{dR}(M; \mathbb{C}),
 $$
 
-the **first Chern class** of $L$, independent of the connection. For a connection compatible with a Hermitian structure on $L$ the curvature is $\mathfrak{u}(1)$-valued and the form is real, and the class is then the image in real cohomology of an integral class in $H^2(M; \mathbb{Z})$.
+the **first Chern class** of $L$, independent of the connection. For a connection compatible with a Hermitian structure on $L$ the curvature is $\mathrm{U}(1)$-valued and the form is real, and the class is then the image in real cohomology of an integral class in $H^2(M; \mathbb{Z})$.
 
 **Example (Pontryagin classes).** Let $E \to M$ be a real vector bundle of rank $k$ with a connection of curvature $R$, an $\operatorname{End}E$-valued $2$-form. The invariant polynomials
 
@@ -247,7 +247,7 @@ $$
 R(X, Y)Z = \nabla_X\nabla_YZ - \nabla_Y\nabla_XZ - \nabla_{[X,Y]}Z.
 $$
 
-**Proof sketch.** The Koszul formula determines $\nabla_XY$ uniquely from $g$ and the bracket; the right-hand side is $C^\infty(M)$-linear in each slot, so it defines a connection, and the two required properties are consequences of the formula. $\square$
+**Proof sketch.** The Koszul formula determines $\nabla_XY$ uniquely from $g$ and the bracket; the right-hand side is $C^\infty(M)$-linear in each slot, so it defines a connection, and the two required properties are consequences of the formula.
 
 **Remark.** In a local frame the connection form of the Levi-Civita connection is the matrix of Christoffel symbols, $\omega^i_{\ j} = \sum_k \Gamma^i_{jk}dx^k$, and the Bianchi identity for its curvature is the differential identity satisfied by the Riemann tensor. The Chern–Weil forms of the Levi-Civita connection give the Pontryagin classes of $TM$ and, in the oriented even-dimensional case, the Euler class of the Gauss–Bonnet theorem.
 
@@ -261,7 +261,7 @@ $$
 
 A fibre bundle is a manifold locally isomorphic to a product $U \times F$, with transition functions satisfying the cocycle condition; a vector bundle is a bundle with linear fibres and structure group $GL_k$, a principal $G$-bundle is a bundle with a free transitive $G$-action on the fibres, and the associated bundle construction produces vector bundles from principal ones and their representations. Sections of a vector bundle form a module over the smooth functions, and a bundle is described by a local frame together with the transition data.
 
-A connection on a vector bundle is a covariant derivative $\nabla$ satisfying the Leibniz rule; locally it is a matrix of $1$-forms $\omega$, transforming as $\omega' = g^{-1}\omega g + g^{-1}dg$ under a change of frame, and connections exist by a partition-of-unity argument. On a principal bundle a connection is a $\mathfrak{g}$-valued $1$-form with $\omega(A^\#) = A$ and $R_g^*\omega = \operatorname{Ad}(g^{-1})\omega$, equivalently a $G$-invariant horizontal distribution. The curvature is $R = d\omega + \omega\wedge\omega$, a tensorial $2$-form transforming as $R' = g^{-1}Rg$, and it satisfies the Bianchi identity $d^\nabla R = 0$; the connection is flat exactly when the horizontal distribution is integrable, equivalently when the curvature vanishes.
+A connection on a vector bundle is a covariant derivative $\nabla$ satisfying the Leibniz rule; locally it is a matrix of $1$-forms $\omega$, transforming as $\omega' = g^{-1}\omega g + g^{-1}dg$ under a change of frame, and connections exist by a partition-of-unity argument. On a principal bundle a connection is a $\mathrm{G}$-valued $1$-form with $\omega(A^\#) = A$ and $R_g^*\omega = \operatorname{Ad}(g^{-1})\omega$, equivalently a $G$-invariant horizontal distribution. The curvature is $R = d\omega + \omega\wedge\omega$, a tensorial $2$-form transforming as $R' = g^{-1}Rg$, and it satisfies the Bianchi identity $d^\nabla R = 0$; the connection is flat exactly when the horizontal distribution is integrable, equivalently when the curvature vanishes.
 
 Invariant polynomials in the curvature are closed basic forms whose de Rham classes are independent of the connection, giving the Chern–Weil homomorphism and the characteristic classes: the first Chern class of a complex line bundle, the Pontryagin classes of a real bundle, and the Euler class, whose integral over a compact oriented even-dimensional manifold is the Euler characteristic by Gauss–Bonnet. On a Riemannian manifold the unique metric and torsion-free connection is the Levi-Civita connection, and its curvature is the Riemann tensor; the holonomy group of a connection is generated by its curvature, so flatness is exactly the discreteness of the holonomy.
 
@@ -278,7 +278,7 @@ Invariant polynomials in the curvature are closed basic forms whose de Rham clas
 | $\nabla : \Gamma(E) \to \Gamma(T^*M\otimes E)$ | Connection; $\nabla(fs) = df\otimes s + f\nabla s$ |
 | $\omega = (\omega^i_{\ j})$, $\nabla = d+\omega$ | Connection form in a frame |
 | $\omega' = g^{-1}\omega g + g^{-1}dg$ | Change of frame; gauge transformation rule |
-| $\omega \in \Omega^1(P;\mathfrak{g})$, $\omega(A^\#) = A$, $R_g^*\omega = \operatorname{Ad}(g^{-1})\omega$ | Connection form on a principal bundle |
+| $\omega \in \Omega^1(P;\mathrm{G})$, $\omega(A^\#) = A$, $R_g^*\omega = \operatorname{Ad}(g^{-1})\omega$ | Connection form on a principal bundle |
 | $H_pP = \ker\omega_p$ | Horizontal subspace; $G$-invariant complement to the vertical |
 | $R = d\omega + \omega\wedge\omega$ | Curvature of a vector bundle connection |
 | $\Omega = d\omega + \frac12[\omega,\omega]$ | Curvature of a principal connection |
@@ -287,7 +287,7 @@ Invariant polynomials in the curvature are closed basic forms whose de Rham clas
 | $R' = g^{-1}Rg$ | Tensorial transformation of the curvature |
 | $d^\nabla R = 0$, $dR + [\omega,R] = 0$ | Bianchi identity |
 | Flat | $R = 0$; locally $\omega = 0$ (vector bundle) or $\omega = g^{-1}dg$ (principal bundle) |
-| $f(\Omega)$, $S^\bullet(\mathfrak{g}^*)^G \to H^{\mathrm{ev}}_{dR}(M)$ | Chern–Weil form and homomorphism |
+| $f(\Omega)$, $S^\bullet(\mathrm{G}^*)^G \to H^{\mathrm{ev}}_{dR}(M)$ | Chern–Weil form and homomorphism |
 | $c_1(L) = [\frac{i}{2\pi}\mathcal{F}]$, $p_j(E)$, $e(E)$ | First Chern, Pontryagin, and Euler classes |
 | $\operatorname{Pf}(R/2\pi)$ | Pfaffian form of a real oriented bundle of rank $2j$; its class is the Euler class |
 | $\int_M e(TM) = \chi(M)$ | Gauss–Bonnet |

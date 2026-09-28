@@ -27,7 +27,7 @@ $$
 $$
 All four statements are equivalent.
 
-**Proof of the equivalence.** This is the theorem on the equivalent forms in *Analytic Number Theory*: $\psi-\theta = \sum_{k\geq2}\theta(x^{1/k})=O(x^{1/2}\log x)=o(x)$, so $\psi\sim x$ and $\theta\sim x$ are the same statement; Abel summation converts $\theta(x)\sim x$ into $\pi(x)\sim x/\log x$ and back, by the two identities displayed there; and $p_n\sim n\log n$ is the same statement evaluated at $x = p_n$. $\square$
+**Proof of the equivalence.** This is the theorem on the equivalent forms in *Analytic Number Theory*: $\psi-\theta = \sum_{k\geq2}\theta(x^{1/k})=O(x^{1/2}\log x)=o(x)$, so $\psi\sim x$ and $\theta\sim x$ are the same statement; Abel summation converts $\theta(x)\sim x$ into $\pi(x)\sim x/\log x$ and back, by the two identities displayed there; and $p_n\sim n\log n$ is the same statement evaluated at $x = p_n$.
 
 **Remark (what the theorem does not say).** The statement is a one-term asymptotic. It does not say that $\pi(x)-\mathrm{Li}(x)$ is small, that the primes are equidistributed in short intervals without a lower bound on the length, or that the gaps between consecutive primes are small; each of these is a separate problem, and the last is discussed below. The sharper asymptotic $\pi(x) = \mathrm{Li}(x) + O(xe^{-c\sqrt{\log x}})$ proved below is stronger than the theorem and is the form in which the result is used.
 
@@ -37,7 +37,7 @@ All four statements are equivalent.
 
 **Lemma.** For every real $\theta$, $3 + 4\cos\theta + \cos2\theta = 2(1+\cos\theta)^2 \geq 0$.
 
-**Proof.** $\cos2\theta = 2\cos^2\theta-1$, so the left side is $2\cos^2\theta + 4\cos\theta + 2 = 2(\cos\theta+1)^2$. $\square$
+**Proof.** $\cos2\theta = 2\cos^2\theta-1$, so the left side is $2\cos^2\theta + 4\cos\theta + 2 = 2(\cos\theta+1)^2$.
 
 **Theorem.** $\zeta(\sigma+it)\neq0$ for every $\sigma\geq1$ and every real $t$.
 
@@ -50,11 +50,11 @@ $$
 3\log\lvert\zeta(\sigma)\rvert + 4\log\lvert\zeta(\sigma+it)\rvert + \log\lvert\zeta(\sigma+2it)\rvert
 = \sum_n\frac{c_n}{n^\sigma}\bigl(3+4\cos(t\log n)+\cos(2t\log n)\bigr) \geq 0
 $$
-by the lemma, for every $\sigma>1$. Suppose $\zeta(1+it_0)=0$ for some $t_0\neq0$. Since $\zeta$ has a simple pole at $s=1$, $\log\lvert\zeta(\sigma)\rvert = -\log(\sigma-1)+O(1)$ as $\sigma\downarrow1$, so the first term is $-3\log(\sigma-1)+O(1)$; the zero at $1+it_0$ makes the second term $4\log(\sigma-1)+O(1)$; and the third is bounded above, since $\zeta$ is holomorphic near $1+2it_0$. The sum is therefore $+\log(\sigma-1)+O(1)$, which tends to $-\infty$, contradicting its nonnegativity. Hence no such $t_0$ exists, and the same argument excludes a zero at $s=1$ itself, where the pole already excludes it. $\square$
+by the lemma, for every $\sigma>1$. Suppose $\zeta(1+it_0)=0$ for some $t_0\neq0$. Since $\zeta$ has a simple pole at $s=1$, $\log\lvert\zeta(\sigma)\rvert = -\log(\sigma-1)+O(1)$ as $\sigma\downarrow1$, so the first term is $-3\log(\sigma-1)+O(1)$; the zero at $1+it_0$ makes the second term $4\log(\sigma-1)+O(1)$; and the third is bounded above, since $\zeta$ is holomorphic near $1+2it_0$. The sum is therefore $+\log(\sigma-1)+O(1)$, which tends to $-\infty$, contradicting its nonnegativity. Hence no such $t_0$ exists, and the same argument excludes a zero at $s=1$ itself, where the pole already excludes it.
 
 **Corollary.** $1/\zeta(s)$ extends analytically to the half-plane $\Re s\geq1$ away from the pole at $s=1$, and $-\zeta'/\zeta(s) - \frac{1}{s-1}$ extends continuously to $\Re s \geq 1$.
 
-**Proof.** The zeros of $\zeta$ are isolated and lie off the closed half-plane $\Re s\geq1$ by the theorem; the pole at $s=1$ is simple, so $\zeta(s)(s-1)$ is holomorphic and nonvanishing on a neighbourhood of that closed half-plane, and its reciprocal is holomorphic there. The logarithmic derivative is $-\frac{1}{s-1}$ plus the logarithmic derivative of the holomorphic nonvanishing factor. $\square$
+**Proof.** The zeros of $\zeta$ are isolated and lie off the closed half-plane $\Re s\geq1$ by the theorem; the pole at $s=1$ is simple, so $\zeta(s)(s-1)$ is holomorphic and nonvanishing on a neighbourhood of that closed half-plane, and its reciprocal is holomorphic there. The logarithmic derivative is $-\frac{1}{s-1}$ plus the logarithmic derivative of the holomorphic nonvanishing factor.
 
 **Remark (the strength of the method).** The proof uses only the inequality of the lemma and the pole at $s=1$; it shows in particular that $\zeta$ has no zero on the line, and identifies the pole as the obstruction. It is the only place in the proof of the prime number theorem where the arithmetic of $\zeta$ — the Euler product — is used in an essential way; the rest is analysis. The same argument, with the same inequality, proves that a Dirichlet $L$-function has no zero at $s=1$ when it has no pole there, and hence Dirichlet's theorem; the case of a real character, where the harmonic series $\sum\chi(p)/p$ must be shown to diverge, needs in addition the nonnegativity argument of *L-Functions*.
 
@@ -70,7 +70,7 @@ g(s) = \int_1^\infty \psi(x)\,x^{-s-1}\,dx = -\frac{\zeta'(s)}{s\,\zeta(s)} = \f
 $$
 where $h$ extends continuously to the closed half-plane $\Re s \geq 1$.
 
-**Proof.** Partial summation in the form $\sum_{n\leq x}a_n = x^{-s}\int\dots$, or the Stieltjes integral: $g(s) = \int_{1^-}^\infty x^{-s-1}d\psi(x) = \frac{1}{s}\sum_{n\ge1}\Lambda(n)n^{-s} = -\frac{\zeta'(s)}{s\zeta(s)}$, the integration by parts producing the factor $1/s$ and the last identity being the logarithmic-derivative formula of *Analytic Number Theory*. The principal part at $s=1$ is $1/(s-1)$, from the simple pole of $\zeta$ with residue $1$; the remainder $h$ is continuous on $\Re s\geq1$ by the corollary above. $\square$
+**Proof.** Partial summation in the form $\sum_{n\leq x}a_n = x^{-s}\int\dots$, or the Stieltjes integral: $g(s) = \int_{1^-}^\infty x^{-s-1}d\psi(x) = \frac{1}{s}\sum_{n\ge1}\Lambda(n)n^{-s} = -\frac{\zeta'(s)}{s\zeta(s)}$, the integration by parts producing the factor $1/s$ and the last identity being the logarithmic-derivative formula of *Analytic Number Theory*. The principal part at $s=1$ is $1/(s-1)$, from the simple pole of $\zeta$ with residue $1$; the remainder $h$ is continuous on $\Re s\geq1$ by the corollary above.
 
 ### The Wiener–Ikehara and Newman Theorems
 
@@ -86,15 +86,15 @@ for $\Re s>1$, where $c\geq0$ is constant and $H$ extends continuously to the cl
 $$
 g(0)-g_T(0) = \frac{1}{2\pi i}\oint\bigl(g(s)-g_T(s)\bigr)e^{sT}\Bigl(1+\frac{s^2}{R^2}\Bigr)\frac{ds}{s} ,
 $$
-a form chosen so that the factor $e^{sT}(1+s^2/R^2)$ is bounded by $e^{T\sigma}$ on the circle and the integrand is entire; splitting the contour at $\Re s = -1/T$, on the left of which the tail is exponentially small while $g$ is bounded by the hypothesis, and estimating on the right where the difference is controlled, gives $\lvert g(0)-g_T(0)\rvert \to 0$ as $T\to\infty$ after taking $R\to\infty$. Hence $\int_0^Tf\to g(0)$. $\square$
+a form chosen so that the factor $e^{sT}(1+s^2/R^2)$ is bounded by $e^{T\sigma}$ on the circle and the integrand is entire; splitting the contour at $\Re s = -1/T$, on the left of which the tail is exponentially small while $g$ is bounded by the hypothesis, and estimating on the right where the difference is controlled, gives $\lvert g(0)-g_T(0)\rvert \to 0$ as $T\to\infty$ after taking $R\to\infty$. Hence $\int_0^Tf\to g(0)$.
 
-**Proof sketch (the two forms are the same).** Substituting $x = e^t$ and $A(e^t) = e^t f(t)$ converts the Mellin transform of $A$ into the Laplace transform of $f$ up to the shift $s\mapsto s-1$; the monotonicity of $A$ supplies the boundedness of $f$ needed in Newman's theorem, and the pole $c/(s-1)$ of $g$ becomes a finite limit of $g$ at $s=0$ after subtracting the principal part, which is the continuity hypothesis. $\square$
+**Proof sketch (the two forms are the same).** Substituting $x = e^t$ and $A(e^t) = e^t f(t)$ converts the Mellin transform of $A$ into the Laplace transform of $f$ up to the shift $s\mapsto s-1$; the monotonicity of $A$ supplies the boundedness of $f$ needed in Newman's theorem, and the pole $c/(s-1)$ of $g$ becomes a finite limit of $g$ at $s=0$ after subtracting the principal part, which is the continuity hypothesis.
 
 ### The Proof of the Theorem
 
 **Theorem (prime number theorem, analytic proof).** $\psi(x)\sim x$.
 
-**Proof.** By the corollary of the nonvanishing theorem, $-\zeta'(s)/(s\zeta(s)) = \frac{1}{s-1}+h(s)$ with $h$ continuous on $\Re s\geq1$; by the lemma this is the Mellin transform of the nondecreasing function $\psi$. The Wiener–Ikehara theorem with $c=1$ gives $\psi(x)\sim x$, and the theorem follows by the equivalence of its forms. $\square$
+**Proof.** By the corollary of the nonvanishing theorem, $-\zeta'(s)/(s\zeta(s)) = \frac{1}{s-1}+h(s)$ with $h$ continuous on $\Re s\geq1$; by the lemma this is the Mellin transform of the nondecreasing function $\psi$. The Wiener–Ikehara theorem with $c=1$ gives $\psi(x)\sim x$, and the theorem follows by the equivalence of its forms.
 
 **Corollary (the logarithmic integral form).** There is a constant $c>0$ with
 $$
@@ -102,7 +102,7 @@ $$
 $$
 and the error $O(xe^{-c\sqrt{\log x}})$ is smaller than $x/\log^A x$ for every $A$; consequently $\pi(x) = \mathrm{Li}(x)(1+o(1))$ and in particular $\pi(x)\sim x/\log x$.
 
-**Proof sketch.** Inserting the zero-free region of the next section into the explicit formula of von Mangoldt and estimating the sum over the zeros, and then converting $\psi$ to $\pi$ by the Abel-summation identities. $\square$
+**Proof sketch.** Inserting the zero-free region of the next section into the explicit formula of von Mangoldt and estimating the sum over the zeros, and then converting $\psi$ to $\pi$ by the Abel-summation identities.
 
 ## The Error Term
 
@@ -112,7 +112,7 @@ and the error $O(xe^{-c\sqrt{\log x}})$ is smaller than $x/\log^A x$ for every $
 $$
 \sigma > 1 - \frac{c}{\log(\lvert t\rvert+2)} .
 $$
-**Proof sketch.** The lemma of the first section is applied at the three points $\sigma$, $\sigma+it$, $\sigma+2it$ with the further information that $\sum_p p^{-2\sigma}$ and similar sums are bounded below; subtracting the pole behaviour of $\log\zeta$ at $s=1$ and using $\lvert\zeta(1+i t)\rvert$ bounded below by a negative power of $\log\lvert t\rvert$ — the standard estimate from the functional equation and the convexity bounds of *Zeta Functions* — gives the region. The constant depends only on the constants in those estimates. $\square$
+**Proof sketch.** The lemma of the first section is applied at the three points $\sigma$, $\sigma+it$, $\sigma+2it$ with the further information that $\sum_p p^{-2\sigma}$ and similar sums are bounded below; subtracting the pole behaviour of $\log\zeta$ at $s=1$ and using $\lvert\zeta(1+i t)\rvert$ bounded below by a negative power of $\log\lvert t\rvert$ — the standard estimate from the functional equation and the convexity bounds of *Zeta Functions* — gives the region. The constant depends only on the constants in those estimates.
 
 **Corollary (error terms).** With the region above,
 $$
@@ -128,7 +128,7 @@ and consequently
 $$
 \psi(x) = x + O\Bigl(x\exp\Bigl(-\frac{c'(\log x)^{3/5}}{(\log\log x)^{1/5}}\Bigr)\Bigr).
 $$
-**Proof sketch.** Vinogradov's method estimates the exponential sums $\sum_{n\leq N}n^{it}$ in mean square with a saving over the trivial estimate; the saving is fed into the classical zero-free-region argument, replacing the estimate $\lvert\zeta(1+it)\rvert^{-1}\ll\log^{A}\lvert t\rvert$ by the sharper one obtained from the sum estimates. $\square$
+**Proof sketch.** Vinogradov's method estimates the exponential sums $\sum_{n\leq N}n^{it}$ in mean square with a saving over the trivial estimate; the saving is fed into the classical zero-free-region argument, replacing the estimate $\lvert\zeta(1+it)\rvert^{-1}\ll\log^{A}\lvert t\rvert$ by the sharper one obtained from the sum estimates.
 
 **Remark (the conditional error term).** If all the nontrivial zeros of $\zeta$ lie on the line $\Re s = \tfrac12$, then the explicit formula gives $\psi(x) = x + O(\sqrt x\log^2x)$ and $\pi(x) = \mathrm{Li}(x)+O(\sqrt x\log x)$, and this is optimal for the method: the oscillation of $\psi(x)-x$ is of order at least $\sqrt x$, so no smaller power of $x$ can occur. This is the content of the Riemann hypothesis as it concerns the primes; the hypothesis itself, its consequences and the generalised form belong to *The Riemann Hypothesis*. What is unconditional is that the error is $o(x)$ and that it is bounded by $x\exp(-c'\sqrt{\log x})$; the gap between that and $\sqrt x$ is the gap between the known zero-free region and the line.
 
@@ -146,7 +146,7 @@ $$
 
 **(d)** $\sum_{n\leq x}\frac{\mu(n)}{n} = o(1)$.
 
-**Proof sketch.** The implication (a)$\Rightarrow$(c) is the argument of the first section run in reverse: the nonnegativity relation $3\log\lvert\zeta(\sigma)\rvert+4\log\lvert\zeta(\sigma+it)\rvert+\log\lvert\zeta(\sigma+2it)\rvert\geq0$, evaluated with the asymptotic $\sum\Lambda(n)n^{-\sigma}\sim1/(\sigma-1)$, forces $\zeta(1+it)\neq0$. The implication (c)$\Rightarrow$(a) is the analytic proof above, with the tauberian theorem applied to the Dirichlet series $1/\zeta$ and to $-\zeta'/\zeta$. The equivalence of (b) and (c) is the same argument applied to the series $\sum\mu(n)n^{-s}=1/\zeta(s)$, whose Mellin transform has abscissa $1$ exactly when $1/\zeta$ is holomorphic on $\Re s\geq1$, that is exactly when $\zeta$ has no zero there; and (d) is the Abel-summed form of (b), since $M(x) = x\sum_{n\le x}\mu(n)/n-\int_1^x\sum_{n\le t}\mu(n)/n\,dt$. The implication (b)$\Rightarrow$(a) can also be run directly, by partial summation and Möbius inversion, and it is in that form that the equivalence is used in the elementary proof. $\square$
+**Proof sketch.** The implication (a)$\Rightarrow$(c) is the argument of the first section run in reverse: the nonnegativity relation $3\log\lvert\zeta(\sigma)\rvert+4\log\lvert\zeta(\sigma+it)\rvert+\log\lvert\zeta(\sigma+2it)\rvert\geq0$, evaluated with the asymptotic $\sum\Lambda(n)n^{-\sigma}\sim1/(\sigma-1)$, forces $\zeta(1+it)\neq0$. The implication (c)$\Rightarrow$(a) is the analytic proof above, with the tauberian theorem applied to the Dirichlet series $1/\zeta$ and to $-\zeta'/\zeta$. The equivalence of (b) and (c) is the same argument applied to the series $\sum\mu(n)n^{-s}=1/\zeta(s)$, whose Mellin transform has abscissa $1$ exactly when $1/\zeta$ is holomorphic on $\Re s\geq1$, that is exactly when $\zeta$ has no zero there; and (d) is the Abel-summed form of (b), since $M(x) = x\sum_{n\le x}\mu(n)/n-\int_1^x\sum_{n\le t}\mu(n)/n\,dt$. The implication (b)$\Rightarrow$(a) can also be run directly, by partial summation and Möbius inversion, and it is in that form that the equivalence is used in the elementary proof.
 
 ### The Elementary Proof
 
@@ -164,7 +164,7 @@ and it implies $\psi(x)\sim x$ by the elementary argument of Selberg and Erdős,
 $$
 R(x)\log x + \sum_{n\leq x}\Lambda(n)R\!\left(\frac xn\right) = x\log x - x\sum_{n\leq x}\frac{\Lambda(n)}{n} + K(x)+O(x),
 $$
-and the right side is $O(x)$, because Mertens' first estimate $\sum_{n\le x}\Lambda(n)/n = \log x+O(1)$ is elementary and $K(x) = O(x)$ by the Chebyshev bounds. The elementary lemma of Selberg and Erdős then deduces $R(x) = o(x)$ from this relation, using only $R(x)\ll x$: the relation expresses $R(x)$ in terms of its own averages over the scaled arguments $x/n$, and averaging over the range forces the oscillation to vanish. $\square$
+and the right side is $O(x)$, because Mertens' first estimate $\sum_{n\le x}\Lambda(n)/n = \log x+O(1)$ is elementary and $K(x) = O(x)$ by the Chebyshev bounds. The elementary lemma of Selberg and Erdős then deduces $R(x) = o(x)$ from this relation, using only $R(x)\ll x$: the relation expresses $R(x)$ in terms of its own averages over the scaled arguments $x/n$, and averaging over the range forces the oscillation to vanish.
 
 **Remark (the elementary proof gives no error term).** The elementary method produces $\psi(x) = x+o(x)$ but no rate; the proof of the rate requires the analytic information on the zeros, and the strongest known unconditional error term is the Vinogradov–Korobov one above. The elementary proof is therefore not a substitute for the analytic theory but a different route to the main term, and the analytic route is the one that organises the information about the zeros. The relation between the error term and the zeros is the explicit formula of *Analytic Number Theory*, in which each zero $\rho$ contributes a term $-x^\rho/\rho$ to $\psi(x)-x$.
 
@@ -176,11 +176,11 @@ $$
 $$
 and more precisely $\pi(x;q,a) = \mathrm{Li}(x)/\varphi(q) + O(xe^{-c\sqrt{\log x}})$ for a constant $c>0$ depending on $q$.
 
-**Proof sketch.** The proof is the proof of the prime number theorem with $-\zeta'/\zeta$ replaced by the average $\frac1{\varphi(q)}\sum_\chi\bar\chi(a)\bigl(-\frac{L'}{L}(s,\chi)\bigr)$ over the characters modulo $q$; the nonvanishing on the line holds for every $L(s,\chi)$ by the same inequality, and the only genuine difference is that no $L(s,\chi)$ has a pole at $s=1$ except the principal one, which supplies the factor $1/\varphi(q)$. The uniformity in $q$ is the subject of the Siegel–Walfisz and Bombieri–Vinogradov theorems of *Analytic Number Theory*. $\square$
+**Proof sketch.** The proof is the proof of the prime number theorem with $-\zeta'/\zeta$ replaced by the average $\frac1{\varphi(q)}\sum_\chi\bar\chi(a)\bigl(-\frac{L'}{L}(s,\chi)\bigr)$ over the characters modulo $q$; the nonvanishing on the line holds for every $L(s,\chi)$ by the same inequality, and the only genuine difference is that no $L(s,\chi)$ has a pole at $s=1$ except the principal one, which supplies the factor $1/\varphi(q)$. The uniformity in $q$ is the subject of the Siegel–Walfisz and Bombieri–Vinogradov theorems of *Analytic Number Theory*.
 
-**Theorem (prime ideal theorem).** Let $K$ be a number field and $\psi_K(x) = \sum_{N(\mathfrak{p})^k\leq x}\log N(\mathfrak{p})$. Then $\psi_K(x)\sim x$, and $\pi_K(x)\sim x/\log x$.
+**Theorem (prime ideal theorem).** Let $K$ be a number field and $\psi_K(x) = \sum_{N(\mathrm{P})^k\leq x}\log N(\mathrm{P})$. Then $\psi_K(x)\sim x$, and $\pi_K(x)\sim x/\log x$.
 
-**Proof sketch.** The same proof with $\zeta_K$ in place of $\zeta$: the Dedekind zeta function has a simple pole at $s=1$ with residue the class number formula, it has no zeros on the line $\Re s=1$, by the same inequality applied to its Euler product over the prime ideals, and the Tauberian theorem applied to $-\zeta_K'/\zeta_K$ gives $\psi_K(x)\sim x$. $\square$
+**Proof sketch.** The same proof with $\zeta_K$ in place of $\zeta$: the Dedekind zeta function has a simple pole at $s=1$ with residue the class number formula, it has no zeros on the line $\Re s=1$, by the same inequality applied to its Euler product over the prime ideals, and the Tauberian theorem applied to $-\zeta_K'/\zeta_K$ gives $\psi_K(x)\sim x$.
 
 **Theorem (primes in short intervals; Baker–Harman–Pintz).** For every $\theta>0.525$ and all sufficiently large $x$,
 $$
@@ -190,7 +190,7 @@ so the interval $[x,x+x^{\theta}]$ contains about its expected number of primes;
 
 **Theorem (the number of primes and the nth prime).** The theorem gives $\pi(x)\sim x/\log x$ and $p_n\sim n\log n$; the sharper forms are $\pi(x) = \mathrm{Li}(x)+O(xe^{-c\sqrt{\log x}})$ and, with the sharp zero-free region, $p_n = n(\log n + \log\log n - 1 + o(1))$.
 
-**Proof sketch.** The second display is the inversion of the asymptotic for $\pi$ by the standard expansion of the logarithmic integral and one iteration of the relation $p_n\log p_n\sim n\log n$. $\square$
+**Proof sketch.** The second display is the inversion of the asymptotic for $\pi$ by the standard expansion of the logarithmic integral and one iteration of the relation $p_n\log p_n\sim n\log n$.
 
 **Remark (the place of the theorem).** The prime number theorem is the first quantitative statement about the primes and the simplest consequence of the nonvanishing of $\zeta$ on the line $\Re s = 1$; the whole of the further information about the primes is carried by the zeros in the strip, and it is read off from them through the explicit formula. The hypothesis that all of them lie on the critical line, and the consequences of that hypothesis for the error term, for the distribution of the gaps between consecutive primes and for the generalised statement over number fields, are the subject, which begins from the equivalences established here.
 
@@ -215,7 +215,7 @@ The rate is governed by the zeros. The zero-free region of de la Vallée Poussin
 | $g(s) = \int_1^\infty A(x)x^{-s-1}dx$ | Mellin transform of $A$ |
 | $H(s) + c/(s-1)$ | Principal part of the Mellin transform at $s=1$ |
 | $\zeta_K$, $\psi_K$, $\pi_K$ | Dedekind zeta function and the Chebyshev and prime counts of a number field |
-| $N(\mathfrak{p})$ | Absolute norm of a prime ideal |
+| $N(\mathrm{P})$ | Absolute norm of a prime ideal |
 | $\varphi(q)$ | Euler function; order of $(\mathbb{Z}/q\mathbb{Z})^\times$ |
 | $c$, $c'$ | Positive constants, not necessarily the same at each occurrence |
 

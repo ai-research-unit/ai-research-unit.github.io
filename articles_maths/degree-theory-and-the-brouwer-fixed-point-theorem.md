@@ -25,7 +25,7 @@ where $[S^n]$ is the fundamental class of $S^n$ with either orientation, fixed o
 
 **Proposition (well-definedness).** The degree is well defined, and for $n \geq 1$ it is an integer; the assignment $f \mapsto \deg f$ is constant on homotopy classes and complete, in the sense that two self-maps of $S^n$ are homotopic if and only if they have the same degree (Hopf).
 
-*Proof.* $H_n(S^n;\mathbb{Z}) \cong \mathbb{Z}$ by *Simplicial and Singular Homology*, so a homomorphism of $\mathbb{Z}$ to itself is multiplication by an integer, determined by its effect on a generator; the fundamental class generates, and the choice of orientation changes both $[S^n]$ and $\deg f$ by a common sign, so the integer is independent of the choice. Homotopy invariance is the homotopy invariance of the induced map on homology. The converse, Hopf's theorem, is standard and is quoted. $\square$
+*Proof.* $H_n(S^n;\mathbb{Z}) \cong \mathbb{Z}$ by *Simplicial and Singular Homology*, so a homomorphism of $\mathbb{Z}$ to itself is multiplication by an integer, determined by its effect on a generator; the fundamental class generates, and the choice of orientation changes both $[S^n]$ and $\deg f$ by a common sign, so the integer is independent of the choice. Homotopy invariance is the homotopy invariance of the induced map on homology. The converse, Hopf's theorem, is standard and is quoted.
 
 **Theorem (elementary properties).** For continuous self-maps of $S^n$:
 
@@ -35,7 +35,7 @@ where $[S^n]$ is the fundamental class of $S^n$ with either orientation, fixed o
 4. $\deg f = 0$ if and only if $f$ is null-homotopic.
 5. The **suspension** satisfies $\deg(\Sigma f) = \deg f$, where $\Sigma f$ is the suspension of $f$, and more generally the degree is stable under the suspension isomorphism of *Homotopy Groups and Fibrations*.
 
-*Proof.* (1) and (2) are functoriality. (3) is the homotopy invariance of $f_*$. (4) A null-homotopic $f$ factors through a point and hence induces the zero map on $H_n$ for $n \geq 1$; conversely if $\deg f = 0$ then $f_* = 0$ on $H_n(S^n)$, and since $S^n$ is a Moore space in the top degree, the homotopy class of $f$ is detected by its effect on $H_n$; the vanishing therefore implies null-homotopy by Hopf's theorem. (5) The suspension isomorphism $H_n(S^n)\cong H_{n+1}(S^{n+1})$ is natural, so $\Sigma f$ has the same degree. $\square$
+*Proof.* (1) and (2) are functoriality. (3) is the homotopy invariance of $f_*$. (4) A null-homotopic $f$ factors through a point and hence induces the zero map on $H_n$ for $n \geq 1$; conversely if $\deg f = 0$ then $f_* = 0$ on $H_n(S^n)$, and since $S^n$ is a Moore space in the top degree, the homotopy class of $f$ is detected by its effect on $H_n$; the vanishing therefore implies null-homotopy by Hopf's theorem. (5) The suspension isomorphism $H_n(S^n)\cong H_{n+1}(S^{n+1})$ is natural, so $\Sigma f$ has the same degree.
 
 **Example (reflections and the antipodal map).** The reflection $r_i$ changing the sign of one coordinate of $\mathbb{R}^{n+1}$ restricts to a self-map of $S^n$ of degree $-1$, since it reverses the orientation of the sphere; the **antipodal map** $A(x) = -x$ is the composition of the $n+1$ reflections $r_0,\ldots,r_n$, so
 
@@ -65,7 +65,7 @@ $$
 \deg f = \sum_{i=1}^{m} \deg_{x_i}f .
 $$
 
-*Proof.* Consider the commutative diagram in which the top row is the Mayer–Vietoris sequence of the decomposition $S^n = \bigsqcup_i D_i \cup (S^n \setminus \bigcup_i \operatorname{int}D_i)$, using that $H_n(\partial D_i) = 0$ for $n \geq 2$ and the pair sequence for $n = 1$; the induced map sends the fundamental class to the sum of the local fundamental classes, and evaluating against $[S^n]$ gives the formula. $\square$
+*Proof.* Consider the commutative diagram in which the top row is the Mayer–Vietoris sequence of the decomposition $S^n = \bigsqcup_i D_i \cup (S^n \setminus \bigcup_i \operatorname{int}D_i)$, using that $H_n(\partial D_i) = 0$ for $n \geq 2$ and the pair sequence for $n = 1$; the induced map sends the fundamental class to the sum of the local fundamental classes, and evaluating against $[S^n]$ gives the formula.
 
 **Theorem (the regular value formula).** Let $f : S^n \to S^n$ be smooth and let $y \in S^n$ be a **regular value** of $f$, that is, a point such that the differential $df_x$ is invertible for every $x \in f^{-1}(y)$. Then $f^{-1}(y)$ is finite, and
 
@@ -75,7 +75,7 @@ $$
 
 the signs being computed with respect to orientations of the tangent spaces induced by those of the spheres.
 
-*Proof sketch.* By the inverse function theorem each $x \in f^{-1}(y)$ has a neighbourhood mapped diffeomorphically to a neighbourhood of $y$; the local degree is $\pm 1$ according to whether that local diffeomorphism preserves or reverses the orientation, i.e. according to the sign of the Jacobian determinant; the sum formula gives the result, and the sum formula itself shows that only finitely many terms are nonzero. $\square$
+*Proof sketch.* By the inverse function theorem each $x \in f^{-1}(y)$ has a neighbourhood mapped diffeomorphically to a neighbourhood of $y$; the local degree is $\pm 1$ according to whether that local diffeomorphism preserves or reverses the orientation, i.e. according to the sign of the Jacobian determinant; the sum formula gives the result, and the sum formula itself shows that only finitely many terms are nonzero.
 
 **Example (the regular value formula on the circle).** For $f(z) = z^k$ on $S^1$ and $y = 1$, the preimage is the set of $k$-th roots of unity, each of local degree $+1$, and the sum formula gives $\deg f = k$, in agreement with the winding number computation.
 
@@ -107,11 +107,11 @@ $$
 
 the sum being finite for every $y$, since the local degrees vanish at all but finitely many points.
 
-*Proof.* The proofs are those of the sphere case, with $H_n(S^n)$ replaced by $H_n(N)$ and the local homology $H_n(N, N\setminus\{y\}) \cong \mathbb{Z}$ of *Poincaré Duality* replacing the corresponding group for the sphere. $\square$
+*Proof.* The proofs are those of the sphere case, with $H_n(S^n)$ replaced by $H_n(N)$ and the local homology $H_n(N, N\setminus\{y\}) \cong \mathbb{Z}$ of *Poincaré Duality* replacing the corresponding group for the sphere.
 
 **Theorem (nonorientable manifolds; degree modulo 2).** Let $M$, $N$ be closed connected $n$-manifolds with $n \geq 1$. With $\mathbb{F}_2$ coefficients, $H_n(M;\mathbb{F}_2) \cong \mathbb{F}_2$ and $H_n(N;\mathbb{F}_2) \cong \mathbb{F}_2$, by the local homology computation with $\mathbb{F}_2$ coefficients of *Poincaré Duality* applied to the mod $2$ fundamental classes; hence there is a well-defined **degree modulo 2** $\deg_2 f \in \mathbb{F}_2$ with $f_*[M]_2 = (\deg_2 f)[N]_2$, and $\deg_2 f \equiv \deg f \bmod 2$ whenever the integral degree is defined.
 
-*Proof.* The class $[M]_2$ generates $H_n(M;\mathbb{F}_2)$ over $\mathbb{F}_2$, so the homomorphism $f_*$ is multiplication by an element of $\mathbb{F}_2$, determined by the image of the generator. The congruence with the integral degree follows by reducing $f_*[M] = (\deg f)[N]$ modulo $2$. $\square$
+*Proof.* The class $[M]_2$ generates $H_n(M;\mathbb{F}_2)$ over $\mathbb{F}_2$, so the homomorphism $f_*$ is multiplication by an element of $\mathbb{F}_2$, determined by the image of the generator. The congruence with the integral degree follows by reducing $f_*[M] = (\deg f)[N]$ modulo $2$.
 
 **Remark.** The degree of a map of spheres is thus the special case $M = N = S^n$; for maps $S^n\to S^n$ the local degree at a point is $\pm 1$ or $0$, while for general manifolds it can be any integer, and it is the obstruction to $f$ being a covering map: a map of degree $d$ between closed connected oriented $n$-manifolds with $|d| = \#$fibre and the local degrees all $+1$ is a covering.
 
@@ -121,15 +121,15 @@ the sum being finite for every $y$, since the local degrees vanish at all but fi
 
 **Theorem (boundary dependence).** If $f, g : M \to N$ are continuous and agree on $\partial M$, then $\deg f = \deg g$; in particular the degree of $f$ is determined by the restriction $f|_{\partial M}$ up to addition of the degrees of maps of $M$ that vanish on the boundary.
 
-*Proof.* The difference $f_* - g_*$ on $H_n(M,\partial M)$ factors through the quotient $M/\partial M$ by the hypothesis that $f$ and $g$ agree on the boundary; the resulting map $H_n(M/\partial M) \to H_n(N)$ is independent of the choice of the extension, and the two degrees agree. $\square$
+*Proof.* The difference $f_* - g_*$ on $H_n(M,\partial M)$ factors through the quotient $M/\partial M$ by the hypothesis that $f$ and $g$ agree on the boundary; the resulting map $H_n(M/\partial M) \to H_n(N)$ is independent of the choice of the extension, and the two degrees agree.
 
 **Corollary (maps of nonzero degree are surjective).** Let $f : M \to N$ be a map between closed connected oriented $n$-manifolds with $\deg f \neq 0$. Then $f$ is surjective.
 
-*Proof.* If $y \notin f(M)$, then $f^{-1}(y) = \emptyset$, and the sum formula applied at the point $y$ gives $\deg f = \sum_{x \in f^{-1}(y)}\deg_x f = 0$, an empty sum; hence $\deg f = 0$, a contradiction. $\square$
+*Proof.* If $y \notin f(M)$, then $f^{-1}(y) = \emptyset$, and the sum formula applied at the point $y$ gives $\deg f = \sum_{x \in f^{-1}(y)}\deg_x f = 0$, an empty sum; hence $\deg f = 0$, a contradiction.
 
 **Corollary (no retraction of the disc onto the sphere).** For $n \geq 1$ there is no continuous map $r : D^{n+1} \to S^n$ with $r|_{S^n} = \mathrm{id}$.
 
-*Proof.* If such an $r$ existed, the composite $r_* \circ i_*$ on $H_n(S^n)$ would be the identity of $\mathbb{Z}$, where $i : S^n \to D^{n+1}$ is the inclusion; but $i_*$ factors through $H_n(D^{n+1}) = 0$ since $D^{n+1}$ is contractible, so $r_* i_* = 0$, a contradiction. $\square$
+*Proof.* If such an $r$ existed, the composite $r_* \circ i_*$ on $H_n(S^n)$ would be the identity of $\mathbb{Z}$, where $i : S^n \to D^{n+1}$ is the inclusion; but $i_*$ factors through $H_n(D^{n+1}) = 0$ since $D^{n+1}$ is contractible, so $r_* i_* = 0$, a contradiction.
 
 ## The Brouwer Fixed Point Theorem
 
@@ -143,7 +143,7 @@ $$
 r(x) = x + t(x)u(x), \qquad t(x) = \frac{-x\cdot u(x) + \sqrt{\bigl(x\cdot u(x)\bigr)^2 + \bigl(1 - |x|^2\bigr)|u(x)|^2}}{|u(x)|^2},
 $$
 
-the point where the ray from $f(x)$ through $x$ meets $S^n$. The radicand is nonnegative because $|x| \leq 1$ on the disc, the denominator is nonzero by hypothesis, and $t$ is continuous in $x$; hence $r$ is continuous, $|r(x)| = 1$ by construction, and for $|x| = 1$ one has $t(x) = 0$ and $r(x) = x$. Thus $r$ would be a retraction of $D^{n+1}$ onto $S^n$, contradicting the preceding corollary. $\square$
+the point where the ray from $f(x)$ through $x$ meets $S^n$. The radicand is nonnegative because $|x| \leq 1$ on the disc, the denominator is nonzero by hypothesis, and $t$ is continuous in $x$; hence $r$ is continuous, $|r(x)| = 1$ by construction, and for $|x| = 1$ one has $t(x) = 0$ and $r(x) = x$. Thus $r$ would be a retraction of $D^{n+1}$ onto $S^n$, contradicting the preceding corollary.
 
 **Remark.** The proof shows the logical equivalence of three statements: Brouwer's fixed point theorem; the nonexistence of a retraction of $D^{n+1}$ onto $S^n$; and the nontriviality of $H_n(S^n;\mathbb{Z})$. The form of the argument — a fixed point free map would produce a retraction, and a retraction is excluded by a homology computation — is the prototype of the degree-theoretic proofs in the rest of the article, and it is precisely the argument that fails in infinite dimensions, where the unit ball of a Banach space is not compact and the corresponding convex-set fixed point theorems require compactness or completeness assumptions and are theorems of Part III.
 
@@ -155,11 +155,11 @@ the point where the ray from $f(x)$ through $x$ meets $S^n$. The radicand is non
 2. Every continuous map $f : D^n \to \mathbb{R}^n$ with $f(S^{n-1}) \subseteq D^n$ has a fixed point.
 3. If $C \subseteq \mathbb{R}^n$ is compact and convex and nonempty, then every continuous $f : C \to C$ has a fixed point.
 
-*Proof.* (1) A compact convex subset of a finite-dimensional normed space is a retract of a closed disc containing it, and the retraction can be chosen to be the radial projection from an interior point; composing $f$ with the retraction reduces to the disc case. (2) is (1) after observing that the hypothesis on the boundary guarantees that $f(D^n) \subseteq D^n$ up to the reduction of composing with the radial projection, so the disc case applies. (3) is (1) with the norm of the ambient finite-dimensional space. $\square$
+*Proof.* (1) A compact convex subset of a finite-dimensional normed space is a retract of a closed disc containing it, and the retraction can be chosen to be the radial projection from an interior point; composing $f$ with the retraction reduces to the disc case. (2) is (1) after observing that the hypothesis on the boundary guarantees that $f(D^n) \subseteq D^n$ up to the reduction of composing with the radial projection, so the disc case applies. (3) is (1) with the norm of the ambient finite-dimensional space.
 
 **Corollary (the sphere theorem).** A continuous map $f : S^n \to S^n$ of degree $\neq 0$ is surjective, and the identity map of $S^n$ is not null-homotopic; the sphere $S^n$ is not contractible.
 
-*Proof.* The first is the corollary of the previous section; the second is the case $f = \mathrm{id}$ of degree $1$; the third is the definition of contractible applied to the identity. $\square$
+*Proof.* The first is the corollary of the previous section; the second is the case $f = \mathrm{id}$ of degree $1$; the third is the definition of contractible applied to the identity.
 
 **Example (the fundamental theorem of algebra, as a degree statement).** Let $p(z) = a_dz^d + \cdots + a_0$ with $d \geq 1$ and $a_d \neq 0$. The rational map $z \mapsto p(z)$ extends continuously to the one-point compactification $S^2 = \mathbb{C}\cup\{\infty\}$ by sending $\infty$ to $\infty$, and the extension has degree $d$: near infinity, $p(z)/z^d$ tends to $a_d$, so the local degree at the pole is the same as that of $z\mapsto a_dz^d$, namely $d$. A map of degree $d \neq 0$ of $S^2$ is surjective, by the corollary above, so the value $0$ is attained on $S^2$; since $p(\infty) = \infty \neq 0$, it is attained at a point of $\mathbb{C}$, which is the root. No analysis beyond the degree and the compactification is used.
 
@@ -177,15 +177,15 @@ the sum being finite because $X$ is a finite complex. The Lefschetz number is a 
 
 **Theorem (Lefschetz fixed point theorem).** If $L(f) \neq 0$ then $f$ has a fixed point.
 
-*Proof sketch.* Suppose first that $X = M$ is a closed smooth manifold. The fixed points of $f$ are the points of the intersection of the **graph** $\Gamma_f = \{(x,f(x))\} \subseteq M \times M$ with the **diagonal** $\Delta \subseteq M\times M$. By Poincaré duality the algebraic intersection number $\Gamma_f \cdot \Delta$ of the two $n$-dimensional cycles in the $2n$-manifold $M\times M$ is well defined, and it is computed by the **Lefschetz trace formula**: the cup product structure of $H^*(M\times M)$ given by the Künneth theorem of *Cup and Cap Products* identifies $\Gamma_f\cdot\Delta$ with $\sum_i(-1)^i\operatorname{tr}(f_*|H_i(M;\mathbb{Q})) = L(f)$. If $f$ has no fixed point the cycles are disjoint, so the intersection number is zero, and $L(f) = 0$. The general finite CW complex case is reduced to the manifold case by embedding $X$ in a Euclidean space and thickening to a regular neighbourhood, using the homotopy invariance of $L$. $\square$
+*Proof sketch.* Suppose first that $X = M$ is a closed smooth manifold. The fixed points of $f$ are the points of the intersection of the **graph** $\Gamma_f = \{(x,f(x))\} \subseteq M \times M$ with the **diagonal** $\Delta \subseteq M\times M$. By Poincaré duality the algebraic intersection number $\Gamma_f \cdot \Delta$ of the two $n$-dimensional cycles in the $2n$-manifold $M\times M$ is well defined, and it is computed by the **Lefschetz trace formula**: the cup product structure of $H^*(M\times M)$ given by the Künneth theorem of *Cup and Cap Products* identifies $\Gamma_f\cdot\Delta$ with $\sum_i(-1)^i\operatorname{tr}(f_*|H_i(M;\mathbb{Q})) = L(f)$. If $f$ has no fixed point the cycles are disjoint, so the intersection number is zero, and $L(f) = 0$. The general finite CW complex case is reduced to the manifold case by embedding $X$ in a Euclidean space and thickening to a regular neighbourhood, using the homotopy invariance of $L$.
 
 **Corollary (Brouwer, via Lefschetz).** Every continuous self-map of a contractible finite CW complex, and in particular of $D^{n+1}$, has a fixed point.
 
-*Proof.* For a contractible space $H_i = 0$ for $i > 0$ and $H_0 \cong \mathbb{Q}$, so $L(f) = \operatorname{tr}(f_*|H_0) = 1 \neq 0$, and the theorem applies. $\square$
+*Proof.* For a contractible space $H_i = 0$ for $i > 0$ and $H_0 \cong \mathbb{Q}$, so $L(f) = \operatorname{tr}(f_*|H_0) = 1 \neq 0$, and the theorem applies.
 
 **Corollary (the Euler characteristic).** For a finite CW complex $X$, $L(\mathrm{id}) = \chi(X)$; in particular a finite CW complex with $\chi(X) \neq 0$ has the property that every map homotopic to the identity has a fixed point.
 
-*Proof.* $L(\mathrm{id}) = \sum_i(-1)^i\operatorname{tr}(\mathrm{id}|H_i) = \sum_i(-1)^i\dim_{\mathbb{Q}}H_i(X;\mathbb{Q}) = \chi(X)$, by the identification of the Euler characteristic with the alternating sum of the Betti numbers of *Simplicial and Singular Homology*. $\square$
+*Proof.* $L(\mathrm{id}) = \sum_i(-1)^i\operatorname{tr}(\mathrm{id}|H_i) = \sum_i(-1)^i\dim_{\mathbb{Q}}H_i(X;\mathbb{Q}) = \chi(X)$, by the identification of the Euler characteristic with the alternating sum of the Betti numbers of *Simplicial and Singular Homology*.
 
 ### Computation on Spheres and Tori
 
@@ -200,7 +200,7 @@ Consequently:
 1. For $n$ even, every self-map of $S^n$ with $\deg f \neq -1$ has a fixed point, and the degree $(-1)^{n+1} = -1$ is the only degree compatible with a fixed-point-free map.
 2. For $n$ odd, every self-map of $S^n$ with $\deg f \neq 1$ has a fixed point, and the antipodal map, of degree $(-1)^{n+1} = 1$, is fixed-point-free.
 
-*Proof.* $L(f) = 1 + (-1)^n\deg f$ by the computation of the homology of the sphere and of $f_*$; the theorem gives a fixed point whenever the number is nonzero, and the antipodal map shows the remaining case is realised. $\square$
+*Proof.* $L(f) = 1 + (-1)^n\deg f$ by the computation of the homology of the sphere and of $f_*$; the theorem gives a fixed point whenever the number is nonzero, and the antipodal map shows the remaining case is realised.
 
 **Example.** On $S^1$ a rotation by angle $\theta \neq 0$ has degree $1$ and no fixed points, and $L = 1 - 1 = 0$. The identity, the rotation by $0$, also has $L = 1 - 1 = 0$ although every point is fixed: the Lefschetz number vanishes for every self-map of the circle of degree $1$, so the converse of the theorem fails. On $S^2$ the antipodal map has degree $-1$ and no fixed points, and $L = 1 + (-1) = 0$; every other degree gives a fixed point, including degree $0$: a constant map has its image point fixed.
 
@@ -212,7 +212,7 @@ $$
 
 In particular, if $\det(I - A) \neq 0$ then every continuous self-map of $T^n$ inducing $A$ on $H_1$ has a fixed point.
 
-*Proof.* The Künneth theorem identifies $H_*(T^n)$ with the exterior algebra on $H_1$, and the induced map is the exterior power; the alternating sum of the traces of the exterior powers is the determinant $\det(I-A)$ by the standard identity for the characteristic polynomial, $\sum_i(-1)^i\operatorname{tr}(\Lambda^iA) = \det(I-A)$. The last statement is the Lefschetz theorem. $\square$
+*Proof.* The Künneth theorem identifies $H_*(T^n)$ with the exterior algebra on $H_1$, and the induced map is the exterior power; the alternating sum of the traces of the exterior powers is the determinant $\det(I-A)$ by the standard identity for the characteristic polynomial, $\sum_i(-1)^i\operatorname{tr}(\Lambda^iA) = \det(I-A)$. The last statement is the Lefschetz theorem.
 
 **Example.** For $n = 1$ the map $z \mapsto z^k$ has $A = (k)$ and $L = 1 - k$; for $k \neq 1$ there is a fixed point. For $k = 1$ the map is the identity, with $L = 0$ and every point fixed, while a nontrivial rotation $z \mapsto az$ with $a \neq 1$, which also has degree $1$, has no fixed point; the vanishing of $L$ therefore does not by itself decide the question. For $n = 2$ and $A = \left(\begin{smallmatrix} 0 & -1 \\ 1 & 0 \end{smallmatrix}\right)$, $\det(I - A) = 2 \neq 0$, so the induced map — the "rotation" of the torus — has a fixed point, as it must, the fixed point being the origin.
 
@@ -226,7 +226,7 @@ In particular, if $\det(I - A) \neq 0$ then every continuous self-map of $T^n$ i
 
 **Theorem (Poincaré–Hopf).** Let $M$ be a closed connected smooth manifold and $X$ a vector field on $M$ with isolated zeros. Then the sum of the **indices** of the zeros of $X$ — the local degrees of the vector field around each zero — equals the Euler characteristic $\chi(M)$; consequently, if $\chi(M) \neq 0$ then every continuous vector field on $M$ has a zero.
 
-*Proof sketch.* Choose a metric and replace $X$ by a small perturbation with only nondegenerate zeros, which does not change the index sum. At a nondegenerate zero $x$ the index is $\pm 1$, computed as the local degree at $x$ of the map $x' \mapsto X(x')/|X(x')|$ from a small sphere around $x$ to the unit sphere; the sum of the indices is therefore the degree of that map on the boundary of a disc bundle neighbourhood, which is the evaluation $\langle e(TM),[M]\rangle$ of the Euler class of the tangent bundle on the fundamental class. The Poincaré–Hopf theorem is the identification of this Euler number with $\chi(M)$, which is the statement $L(\mathrm{id}) = \chi(M)$ of the Lefschetz fixed point theorem read through the tangent bundle. $\square$
+*Proof sketch.* Choose a metric and replace $X$ by a small perturbation with only nondegenerate zeros, which does not change the index sum. At a nondegenerate zero $x$ the index is $\pm 1$, computed as the local degree at $x$ of the map $x' \mapsto X(x')/|X(x')|$ from a small sphere around $x$ to the unit sphere; the sum of the indices is therefore the degree of that map on the boundary of a disc bundle neighbourhood, which is the evaluation $\langle e(TM),[M]\rangle$ of the Euler class of the tangent bundle on the fundamental class. The Poincaré–Hopf theorem is the identification of this Euler number with $\chi(M)$, which is the statement $L(\mathrm{id}) = \chi(M)$ of the Lefschetz fixed point theorem read through the tangent bundle.
 
 **Corollary (the hairy ball theorem).** Since $\chi(S^n) = 1 + (-1)^n$ by *Poincaré Duality*, the sphere $S^n$ admits a nonvanishing continuous tangent vector field if and only if $n$ is odd.
 
@@ -236,13 +236,13 @@ $$
 X(x_0,x_1,\ldots,x_{n-1},x_n) = (-x_1, x_0, -x_3, x_2, \ldots, -x_n, x_{n-1})
 $$
 
-is tangent, $x\cdot X(x) = 0$, and nonvanishing, $|X(x)| = |x| = 1$; the pairing of consecutive coordinates is possible because $n+1$ is even. $\square$
+is tangent, $x\cdot X(x) = 0$, and nonvanishing, $|X(x)| = |x| = 1$; the pairing of consecutive coordinates is possible because $n+1$ is even.
 
 ### Antipodal Points and Borsuk–Ulam
 
 **Theorem (Borsuk's theorem on odd maps).** A continuous map $g : S^n \to S^n$ with $g(-x) = -g(x)$ for every $x$ — an **odd** map — has odd degree.
 
-*Proof sketch.* An odd map commutes with the antipodal map $A$, of degree $(-1)^{n+1}$, and descends to a self-map of the quotient $\mathbb{RP}^n$; the transfer relating the cohomology of $S^n$ to that of $\mathbb{RP}^n$ shows that the degree of an odd map is congruent to $1$ modulo $2$. $\square$
+*Proof sketch.* An odd map commutes with the antipodal map $A$, of degree $(-1)^{n+1}$, and descends to a self-map of the quotient $\mathbb{RP}^n$; the transfer relating the cohomology of $S^n$ to that of $\mathbb{RP}^n$ shows that the degree of an odd map is congruent to $1$ modulo $2$.
 
 **Theorem (Borsuk–Ulam).** For every continuous $f : S^n \to \mathbb{R}^n$ there is a point $x \in S^n$ with $f(x) = f(-x)$.
 
@@ -252,13 +252,13 @@ $$
 g(x) = \frac{f(x) - f(-x)}{|f(x) - f(-x)|} \in S^{n-1} \subseteq \mathbb{R}^n .
 $$
 
-Then $g$ is continuous and odd, $g(-x) = -g(x)$, so the restriction of $g$ to the equator $S^{n-1} = \{x \in S^n : x_{n+1} = 0\}$ is an odd map $S^{n-1}\to S^{n-1}$, of odd degree by Borsuk's theorem, hence of degree $\neq 0$. But $g$ is defined on the whole of $S^n$ and hence on the upper hemisphere $D^n_+$, whose boundary is the equator; therefore $g|_{S^{n-1}}$ extends to a map of the disc and is null-homotopic, of degree $0$, a contradiction. $\square$
+Then $g$ is continuous and odd, $g(-x) = -g(x)$, so the restriction of $g$ to the equator $S^{n-1} = \{x \in S^n : x_{n+1} = 0\}$ is an odd map $S^{n-1}\to S^{n-1}$, of odd degree by Borsuk's theorem, hence of degree $\neq 0$. But $g$ is defined on the whole of $S^n$ and hence on the upper hemisphere $D^n_+$, whose boundary is the equator; therefore $g|_{S^{n-1}}$ extends to a map of the disc and is null-homotopic, of degree $0$, a contradiction.
 
 **Corollary (the ham sandwich theorem, in dimension two).** For any two bounded measurable regions $A, B$ of the plane there is a line bisecting both areas. The notion of area required by the statement is supplied by the measure theory of Part III; what is proved here is the topological input, the Borsuk–Ulam theorem, and the reduction of the bisection problem to it is a standard argument of Part III.
 
 **Corollary (odd maps into spheres do not exist).** There is no continuous odd map $g : S^n \to S^{n-1}$ for $n \geq 1$.
 
-*Proof.* Such a $g$ would make the composite $h = i \circ g : S^n \to S^n$ odd, where $i : S^{n-1}\hookrightarrow S^n$ is the equatorial inclusion; by Borsuk's theorem $\deg h$ would be odd, hence nonzero. But $h$ factors through $S^{n-1}$, and $H_n(S^{n-1};\mathbb{Z}) = 0$ for $n \geq 2$, so $h_* = 0$ on $H_n(S^n)$ and $\deg h = 0$; for $n = 1$ the same conclusion follows because $S^0$ is disconnected and $H_1(S^0) = 0$. The contradiction proves the claim. $\square$
+*Proof.* Such a $g$ would make the composite $h = i \circ g : S^n \to S^n$ odd, where $i : S^{n-1}\hookrightarrow S^n$ is the equatorial inclusion; by Borsuk's theorem $\deg h$ would be odd, hence nonzero. But $h$ factors through $S^{n-1}$, and $H_n(S^{n-1};\mathbb{Z}) = 0$ for $n \geq 2$, so $h_* = 0$ on $H_n(S^n)$ and $\deg h = 0$; for $n = 1$ the same conclusion follows because $S^0$ is disconnected and $H_1(S^0) = 0$. The contradiction proves the claim.
 
 ### Separation and Invariance of Domain
 
@@ -270,15 +270,15 @@ $$
 \tilde H_0(S^n\setminus\Sigma) \cong \tilde H^{n-1}(S^{n-1}) \cong \mathbb{Z}, \qquad \tilde H_i(S^n\setminus\Sigma) \cong \tilde H^{n-i-1}(S^{n-1}) = 0 \quad (i \neq 0),
 $$
 
-where the last vanishing uses $n-i-1 \neq n-1$, i.e. $i \neq 0$. A space with $\tilde H_0$ free of rank one and all reduced homology in positive degrees zero has exactly two path components, and the complement of each component is exactly $\Sigma$, so each component has $\Sigma$ as boundary. $\square$
+where the last vanishing uses $n-i-1 \neq n-1$, i.e. $i \neq 0$. A space with $\tilde H_0$ free of rank one and all reduced homology in positive degrees zero has exactly two path components, and the complement of each component is exactly $\Sigma$, so each component has $\Sigma$ as boundary.
 
 **Theorem (invariance of domain; Brouwer).** If $U \subseteq \mathbb{R}^n$ is open and $f : U \to \mathbb{R}^n$ is injective and continuous, then $f(U)$ is open and $f$ is a homeomorphism onto its image.
 
-*Proof sketch.* It suffices to show that $f(U)$ contains a neighbourhood of $f(x)$ for every $x \in U$; choose a closed disc $D \subseteq U$ around $x$ and apply the Jordan–Brouwer theorem to the image of $\partial D$, which is a sphere in $\mathbb{R}^n$ contained in $f(U)$; the complement of that sphere has two components, and $f(x)$ lies in the bounded one, which is contained in $f(D) \subseteq f(U)$. The argument uses only the separation theorem, hence no analysis beyond the topology of $\mathbb{R}^n$ as a normed space. $\square$
+*Proof sketch.* It suffices to show that $f(U)$ contains a neighbourhood of $f(x)$ for every $x \in U$; choose a closed disc $D \subseteq U$ around $x$ and apply the Jordan–Brouwer theorem to the image of $\partial D$, which is a sphere in $\mathbb{R}^n$ contained in $f(U)$; the complement of that sphere has two components, and $f(x)$ lies in the bounded one, which is contained in $f(D) \subseteq f(U)$. The argument uses only the separation theorem, hence no analysis beyond the topology of $\mathbb{R}^n$ as a normed space.
 
 **Corollary (dimension is a topological invariant).** If $\mathbb{R}^n$ and $\mathbb{R}^m$ are homeomorphic, then $n = m$.
 
-*Proof.* Suppose $n < m$ and let $h : \mathbb{R}^n \to \mathbb{R}^m$ be a homeomorphism. Identify $\mathbb{R}^n$ with the coordinate subspace $\mathbb{R}^n\times\{0\} \subseteq \mathbb{R}^m$ and let $g = \iota \circ h^{-1} : \mathbb{R}^m \to \mathbb{R}^m$, where $\iota$ is that inclusion; then $g$ is continuous and injective, with image exactly $\mathbb{R}^n \times \{0\}$. By the invariance of domain, the image of an injective continuous map $\mathbb{R}^m \to \mathbb{R}^m$ is open; but $\mathbb{R}^n\times\{0\}$ has empty interior in $\mathbb{R}^m$ when $n < m$, since every open ball in $\mathbb{R}^m$ contains a point with a nonzero last coordinate. The contradiction gives $n = m$. $\square$
+*Proof.* Suppose $n < m$ and let $h : \mathbb{R}^n \to \mathbb{R}^m$ be a homeomorphism. Identify $\mathbb{R}^n$ with the coordinate subspace $\mathbb{R}^n\times\{0\} \subseteq \mathbb{R}^m$ and let $g = \iota \circ h^{-1} : \mathbb{R}^m \to \mathbb{R}^m$, where $\iota$ is that inclusion; then $g$ is continuous and injective, with image exactly $\mathbb{R}^n \times \{0\}$. By the invariance of domain, the image of an injective continuous map $\mathbb{R}^m \to \mathbb{R}^m$ is open; but $\mathbb{R}^n\times\{0\}$ has empty interior in $\mathbb{R}^m$ when $n < m$, since every open ball in $\mathbb{R}^m$ contains a point with a nonzero last coordinate. The contradiction gives $n = m$.
 
 ## Summary
 

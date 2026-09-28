@@ -19,7 +19,7 @@ For finite sets this is the ordinary number of elements; for infinite sets it is
 
 **Proposition.** Equipotence is an equivalence relation on sets.
 
-**Proof.** The identity map is a bijection, so $X \cong X$. If $f : X \to Y$ is a bijection then $f^{-1} : Y \to X$ is a bijection by the results of *Sets, Functions and Relations*, so the relation is symmetric. If $f : X \to Y$ and $g : Y \to Z$ are bijections then $g \circ f : X \to Z$ is a bijection, so the relation is transitive. $\square$
+**Proof.** The identity map is a bijection, so $X \cong X$. If $f : X \to Y$ is a bijection then $f^{-1} : Y \to X$ is a bijection by the results of *Sets, Functions and Relations*, so the relation is symmetric. If $f : X \to Y$ and $g : Y \to Z$ are bijections then $g \circ f : X \to Z$ is a bijection, so the relation is transitive.
 
 The **cardinals** themselves — canonical sets of each cardinality — are the initial ordinals, and they are constructed. The present article uses the notations $|X|$, $|X| = |Y|$ and $|X| \leq |Y|$ as abbreviations, which is sufficient for every statement made here and avoids presupposing the ordinal machinery.
 
@@ -31,7 +31,7 @@ The **cardinals** themselves — canonical sets of each cardinality — are the 
 
 **Theorem (pigeonhole principle).** If $n \neq m$ then there is no bijection $\{1,\ldots,n\} \to \{1,\ldots,m\}$.
 
-**Proof.** It suffices to show that there is no injection $\{1,\ldots,m\} \to \{1,\ldots,n\}$ when $m > n$. Induct on $n$. For $n = 0$ the target is empty and no injection exists from a nonempty set. Suppose the statement true for $n$ and let $f : \{1,\ldots,m\} \to \{1,\ldots,n+1\}$ with $m > n+1$. If $n+1$ is not in the image, then $f$ is an injection into $\{1,\ldots,n\}$ with $m > n+1 > n$, contradicting the induction hypothesis. If $n+1 = f(k)$, define $g$ on $\{1,\ldots,m\} \setminus \{k\}$, relabelled as $\{1,\ldots,m-1\}$, by $g(i) = f(i)$ for $i \neq k$ and $g(k) = f(m)$ when $k \neq m$ and $g(i)=f(i)$ otherwise; then $g$ is an injection into $\{1,\ldots,n\}$ with $m - 1 > n$, again contradicting the induction hypothesis. $\square$
+**Proof.** It suffices to show that there is no injection $\{1,\ldots,m\} \to \{1,\ldots,n\}$ when $m > n$. Induct on $n$. For $n = 0$ the target is empty and no injection exists from a nonempty set. Suppose the statement true for $n$ and let $f : \{1,\ldots,m\} \to \{1,\ldots,n+1\}$ with $m > n+1$. If $n+1$ is not in the image, then $f$ is an injection into $\{1,\ldots,n\}$ with $m > n+1 > n$, contradicting the induction hypothesis. If $n+1 = f(k)$, define $g$ on $\{1,\ldots,m\} \setminus \{k\}$, relabelled as $\{1,\ldots,m-1\}$, by $g(i) = f(i)$ for $i \neq k$ and $g(k) = f(m)$ when $k \neq m$ and $g(i)=f(i)$ otherwise; then $g$ is an injection into $\{1,\ldots,n\}$ with $m - 1 > n$, again contradicting the induction hypothesis.
 
 The pigeonhole principle shows that the number of elements of a finite set is well defined: the $n$ in the definition is unique. It also makes the finite cardinals the ordinary natural numbers, and it is the reason that a proper subset of a finite set is strictly smaller.
 
@@ -39,7 +39,7 @@ The pigeonhole principle shows that the number of elements of a finite set is we
 
 **Proposition.** Every Dedekind-infinite set is infinite.
 
-**Proof.** Contrapositively, a finite set is not Dedekind-infinite: if $X$ is equipotent to $\{1,\ldots,n\}$ and $A \subsetneq X$, then $A$ is equipotent to $\{1,\ldots,m\}$ with $m < n$ by the pigeonhole principle, so $A$ cannot be equipotent to $X$. $\square$
+**Proof.** Contrapositively, a finite set is not Dedekind-infinite: if $X$ is equipotent to $\{1,\ldots,n\}$ and $A \subsetneq X$, then $A$ is equipotent to $\{1,\ldots,m\}$ with $m < n$ by the pigeonhole principle, so $A$ cannot be equipotent to $X$.
 
 The converse — that every infinite set is Dedekind-infinite — is not a theorem of the other axioms: it is equivalent to the axiom of countable choice, a weak form of the axiom of choice, and it is proved in the companion article. The distinction is the classical illustration that the theory of infinite sets is not a matter of definitions alone.
 
@@ -65,7 +65,7 @@ $$
 h(x) = \begin{cases} f(x), & x \in C, \\ g^{-1}(x), & x \in X \setminus C. \end{cases}
 $$
 
-The second case is well defined because $X \setminus C = g(Y \setminus f(C))$ is contained in the image of $g$, which is injective. The image of the first case is $f(C)$, and the image of the second is $g^{-1}(X \setminus C) = Y \setminus f(C)$, the equality following from $X \setminus C = g(Y \setminus f(C))$ and the injectivity of $g$; since these two sets are complementary and $f, g^{-1}$ are injective, $h$ is injective. For surjectivity, let $y \in Y$: if $y \in f(C)$ then $y = f(x)$ for some $x \in C$; otherwise $y \notin f(C)$, so $g(y) \in g(Y \setminus f(C)) = X \setminus C$, and $h(g(y)) = g^{-1}(g(y)) = y$. Hence $h$ is bijective. $\square$
+The second case is well defined because $X \setminus C = g(Y \setminus f(C))$ is contained in the image of $g$, which is injective. The image of the first case is $f(C)$, and the image of the second is $g^{-1}(X \setminus C) = Y \setminus f(C)$, the equality following from $X \setminus C = g(Y \setminus f(C))$ and the injectivity of $g$; since these two sets are complementary and $f, g^{-1}$ are injective, $h$ is injective. For surjectivity, let $y \in Y$: if $y \in f(C)$ then $y = f(x)$ for some $x \in C$; otherwise $y \notin f(C)$, so $g(y) \in g(Y \setminus f(C)) = X \setminus C$, and $h(g(y)) = g^{-1}(g(y)) = y$. Hence $h$ is bijective.
 
 The theorem is often stated with the roles of the two injections exchanged, as **Cantor–Bernstein–Schröder**; the form above is the one used in the corpus. Its content is that the relation $|X| \leq |Y|$ between cardinals is antisymmetric, so that cardinals are partially ordered by $\leq$.
 
@@ -85,21 +85,21 @@ $$
 (0,0),\ (1,0), (0,1),\ (2,0), (1,1), (0,2),\ \ldots,
 $$
 
-lists every pair exactly once. Either argument exhibits a bijection. $\square$
+lists every pair exactly once. Either argument exhibits a bijection.
 
 **Corollary.** If $A$ and $B$ are countable then $A \times B$ is countable.
 
-**Proof.** If one of the sets is finite then the product is finite, by induction on the number of elements. If both are countably infinite, transport the bijection $\mathbb{N} \times \mathbb{N} \to \mathbb{N}$ of the theorem along bijections $A \to \mathbb{N}$ and $B \to \mathbb{N}$. $\square$
+**Proof.** If one of the sets is finite then the product is finite, by induction on the number of elements. If both are countably infinite, transport the bijection $\mathbb{N} \times \mathbb{N} \to \mathbb{N}$ of the theorem along bijections $A \to \mathbb{N}$ and $B \to \mathbb{N}$.
 
 **Theorem.** $\mathbb{Z}$ is countably infinite, and so is $\mathbb{N}^k$ for every $k \geq 1$.
 
-**Proof.** The map $\mathbb{Z} \to \mathbb{N}$ sending $n \geq 0$ to $2n$ and $n < 0$ to $-2n - 1$ is a bijection, so $\mathbb{Z}$ is countably infinite. For $\mathbb{N}^k$ we argue by induction on $k$: the case $k = 1$ is the definition, and $\mathbb{N}^{k+1} = \mathbb{N}^k \times \mathbb{N}$ is countable by the corollary on products. $\square$
+**Proof.** The map $\mathbb{Z} \to \mathbb{N}$ sending $n \geq 0$ to $2n$ and $n < 0$ to $-2n - 1$ is a bijection, so $\mathbb{Z}$ is countably infinite. For $\mathbb{N}^k$ we argue by induction on $k$: the case $k = 1$ is the definition, and $\mathbb{N}^{k+1} = \mathbb{N}^k \times \mathbb{N}$ is countable by the corollary on products.
 
 **Remark.** The same argument applies to a quotient of $\mathbb{Z} \times \mathbb{Z}$, so the field of rationals of the later categories is countably infinite; that statement is a statement about the fraction field of $\mathbb{Z}$ and is proved in *Localization and the Fraction Field*.
 
 **Theorem.** A countable union of countable sets is countable, and more generally, if $I$ is countable and each $A_i$ is countable then $\bigcup_{i \in I} A_i$ is countable.
 
-**Proof.** If some $A_i$ are empty they may be omitted. Otherwise, for each $i$ fix an enumeration $A_i = \{a_{i,0}, a_{i,1}, \ldots\}$, which exists by the definition of countability, and enumerate the union along the diagonals of $I \times \mathbb{N}$ using the preceding theorem. $\square$
+**Proof.** If some $A_i$ are empty they may be omitted. Otherwise, for each $i$ fix an enumeration $A_i = \{a_{i,0}, a_{i,1}, \ldots\}$, which exists by the definition of countability, and enumerate the union along the diagonals of $I \times \mathbb{N}$ using the preceding theorem.
 
 **Remark.** The proof chooses an enumeration for each $i$ simultaneously, which is an appeal to the **axiom of countable choice**, the restriction of the axiom of choice to countable families; without it the theorem is not provable from the other axioms. The choice is invisible in the finite case, and the comment marks the first point at which the axiom is required in the corpus.
 
@@ -113,24 +113,24 @@ $$
 D = \{x \in X : x \notin h(x)\} \subseteq X.
 $$
 
-If $D = h(d)$ for some $d \in X$, then $d \in D$ if and only if $d \notin h(d) = D$, a contradiction. Hence $D$ is not in the image of $h$, so $h$ is not surjective. The injection $X \to \mathcal{P}(X)$, $x \mapsto \{x\}$, gives $|X| \leq |\mathcal{P}(X)|$, and the two facts together give $|X| < |\mathcal{P}(X)|$. $\square$
+If $D = h(d)$ for some $d \in X$, then $d \in D$ if and only if $d \notin h(d) = D$, a contradiction. Hence $D$ is not in the image of $h$, so $h$ is not surjective. The injection $X \to \mathcal{P}(X)$, $x \mapsto \{x\}$, gives $|X| \leq |\mathcal{P}(X)|$, and the two facts together give $|X| < |\mathcal{P}(X)|$.
 
 Cantor's theorem is the diagonal argument in its purest form; the set $D$ is constructed so as to differ from $h(x)$ at the point $x$, for every $x$, which is exactly the diagonal of the array.
 
 **Corollary.** $\mathcal{P}(\mathbb{N})$ is uncountable, and there is no largest cardinal.
 
-**Proof.** $\mathcal{P}(\mathbb{N})$ is not finite, and by the theorem it is not equipotent to $\mathbb{N}$. For the second statement, if $\kappa$ is a cardinal then $\kappa < 2^{\kappa}$ by the theorem, so no cardinal is largest. $\square$
+**Proof.** $\mathcal{P}(\mathbb{N})$ is not finite, and by the theorem it is not equipotent to $\mathbb{N}$. For the second statement, if $\kappa$ is a cardinal then $\kappa < 2^{\kappa}$ by the theorem, so no cardinal is largest.
 
 **Corollary.** $|\mathcal{P}(\mathbb{N})| = 2^{\aleph_0}$, and $|\mathcal{P}(\mathbb{N})^n| = 2^{\aleph_0}$ for every $n \geq 1$.
 
-**Proof.** The first statement is the definition $|\mathcal{P}(X)| = 2^{|X|}$ at $X = \mathbb{N}$. For the second, $|\mathcal{P}(\mathbb{N})^n| = |\mathcal{P}(\mathbb{N})|^n = \kappa^n = \kappa$ for the infinite cardinal $\kappa = 2^{\aleph_0}$, by the cardinal arithmetic proved below. $\square$
+**Proof.** The first statement is the definition $|\mathcal{P}(X)| = 2^{|X|}$ at $X = \mathbb{N}$. For the second, $|\mathcal{P}(\mathbb{N})^n| = |\mathcal{P}(\mathbb{N})|^n = \kappa^n = \kappa$ for the infinite cardinal $\kappa = 2^{\aleph_0}$, by the cardinal arithmetic proved below.
 
 **Remark.** The set of reals of the later categories is equipotent to $\mathcal{P}(\mathbb{N})$, and so are its interval and its finite powers; these are statements about the order-complete field $\mathbb{R}$ and are proved in *Real-Closed and Complete Ordered Fields*. Nothing here needs them: the power set of $\mathbb{N}$ already realises the cardinality.
 
-**Definition.** The cardinality of $\mathcal{P}(\mathbb{N})$ is written $\mathfrak{c}$ and is called the **cardinality of the continuum**; the cardinality of $\mathbb{N}$ is written $\aleph_0$. Thus
+**Definition.** The cardinality of $\mathcal{P}(\mathbb{N})$ is written $\mathrm{C}$ and is called the **cardinality of the continuum**; the cardinality of $\mathbb{N}$ is written $\aleph_0$. Thus
 
 $$
-\mathfrak{c} = 2^{\aleph_0}.
+\mathrm{C} = 2^{\aleph_0}.
 $$
 
 ## Cardinal Arithmetic
@@ -153,9 +153,9 @@ Each operation is well defined: a bijection $X \to X'$ and a bijection $Y \to Y'
 2. $(\kappa + \lambda) + \mu = \kappa + (\lambda + \mu)$ and $(\kappa \cdot \lambda) \cdot \mu = \kappa \cdot (\lambda \cdot \mu)$;
 3. $\kappa \cdot (\lambda + \mu) = \kappa \cdot \lambda + \kappa \cdot \mu$;
 4. $(\kappa \cdot \lambda)^{\mu} = \kappa^{\mu} \cdot \lambda^{\mu}$ and $\kappa^{\lambda + \mu} = \kappa^{\lambda} \cdot \kappa^{\mu}$ and $(\kappa^{\lambda})^{\mu} = \kappa^{\lambda \cdot \mu}$;
-5. $2^{\kappa} = |\mathcal{P}(X)|$ and $2^{\aleph_0} = \mathfrak{c}$.
+5. $2^{\kappa} = |\mathcal{P}(X)|$ and $2^{\aleph_0} = \mathrm{C}$.
 
-**Proof.** Each identity is a bijection between the two sets, obtained by the evident rearrangements of coordinates: for instance, a function $Y \sqcup Z \to X$ is the same as a pair of functions $Y \to X$ and $Z \to X$, which gives the first law of (4); a function $Y \times Z \to X$ is the same as a function $Y \to X^{Z}$, which gives the third. For (5), a subset of $X$ is determined by its characteristic function, which is a map $X \to \{0,1\}$. $\square$
+**Proof.** Each identity is a bijection between the two sets, obtained by the evident rearrangements of coordinates: for instance, a function $Y \sqcup Z \to X$ is the same as a pair of functions $Y \to X$ and $Z \to X$, which gives the first law of (4); a function $Y \times Z \to X$ is the same as a function $Y \to X^{Z}$, which gives the third. For (5), a subset of $X$ is determined by its characteristic function, which is a map $X \to \{0,1\}$.
 
 ### Cantor's Theorem in Cardinal Form
 
@@ -173,9 +173,9 @@ $$
 \kappa + \lambda = \kappa \cdot \lambda = \max(\kappa, \lambda), \qquad \kappa^n = \kappa \ \text{for every finite } n \geq 1.
 $$
 
-In particular $\aleph_0 + \aleph_0 = \aleph_0 \cdot \aleph_0 = \aleph_0$, and $\aleph_0 + \mathfrak{c} = \aleph_0 \cdot \mathfrak{c} = \mathfrak{c}$.
+In particular $\aleph_0 + \aleph_0 = \aleph_0 \cdot \aleph_0 = \aleph_0$, and $\aleph_0 + \mathrm{C} = \aleph_0 \cdot \mathrm{C} = \mathrm{C}$.
 
-**Proof sketch.** The argument is the countability of $\mathbb{N} \times \mathbb{N}$ transposed to an arbitrary infinite $\kappa$. Well-order a set $X$ of cardinality $\kappa$ by the well-ordering theorem and define a bijection $X \times X \to X$ by recursion on that well-order: at the stage of the pair $(x,y)$, the pairs already assigned lie in the initial segments determined by $x$ and by $y$, whose union has cardinality $< \kappa$ by the induction hypothesis, so the values already used form a subset of $X$ of cardinality $< \kappa$; assign to $(x,y)$ the least element of $X$ not already used. Then $|X \times X| = |X|$, and the assertions for $\kappa \cdot \lambda$ follow by padding the smaller cardinal with a set of the larger one's cardinality. The equality $\kappa + \lambda = \max(\kappa,\lambda)$ follows by padding a disjoint union in the same way, and $\kappa^n = \kappa$ by induction on $n$. $\square$
+**Proof sketch.** The argument is the countability of $\mathbb{N} \times \mathbb{N}$ transposed to an arbitrary infinite $\kappa$. Well-order a set $X$ of cardinality $\kappa$ by the well-ordering theorem and define a bijection $X \times X \to X$ by recursion on that well-order: at the stage of the pair $(x,y)$, the pairs already assigned lie in the initial segments determined by $x$ and by $y$, whose union has cardinality $< \kappa$ by the induction hypothesis, so the values already used form a subset of $X$ of cardinality $< \kappa$; assign to $(x,y)$ the least element of $X$ not already used. Then $|X \times X| = |X|$, and the assertions for $\kappa \cdot \lambda$ follow by padding the smaller cardinal with a set of the larger one's cardinality. The equality $\kappa + \lambda = \max(\kappa,\lambda)$ follows by padding a disjoint union in the same way, and $\kappa^n = \kappa$ by induction on $n$.
 
 The theorem uses the axiom of choice twice — through the well-ordering and through the identification of cardinals with well-ordered sets — and it fails for cardinals that are not well-orderable. It is the reason that infinite cardinal arithmetic is so much simpler than finite arithmetic, and it is a standard result in the literature. The arithmetic of the cardinals that are not well-orderable, and the finite case, are entirely different; the theorem above concerns only infinite cardinals and is stated under the axiom of choice, which is fixed in the next section.
 
@@ -187,7 +187,7 @@ $$
 2^{\aleph_0} = \aleph_1,
 $$
 
-where $\aleph_1$ is the least uncountable cardinal; equivalently, that every subset of a set of cardinality $\mathfrak{c}$ is either countable or of cardinality $\mathfrak{c}$.
+where $\aleph_1$ is the least uncountable cardinal; equivalently, that every subset of a set of cardinality $\mathrm{C}$ is either countable or of cardinality $\mathrm{C}$.
 
 The formulation uses $\aleph_1$, whose construction as the least uncountable cardinal requires the ordinals and is given. The **generalised continuum hypothesis** (GCH) asserts $2^{\aleph_\alpha} = \aleph_{\alpha+1}$ for every ordinal $\alpha$.
 
@@ -211,7 +211,7 @@ are strict, and the weaker principles suffice for most of analysis. The corpus u
 
 **Proposition.** The axiom of choice is equivalent to the assertion that every surjective function has a right inverse.
 
-**Proof.** If every surjection has a right inverse, let $(A_i)_{i \in I}$ be a family of nonempty sets, put $U = \{(i,a) : a \in A_i\}$, and let $p : U \to I$ be $p(i,a) = i$; then $p$ is surjective, and a right inverse $s$ selects an element $s(i) = (i, a_i)$ with $a_i \in A_i$, so that $i \mapsto a_i$ is a choice function. Conversely, if $p : X \to I$ is surjective, the fibres $A_i = p^{-1}(i)$ are nonempty and a choice function on the family provides a right inverse. $\square$
+**Proof.** If every surjection has a right inverse, let $(A_i)_{i \in I}$ be a family of nonempty sets, put $U = \{(i,a) : a \in A_i\}$, and let $p : U \to I$ be $p(i,a) = i$; then $p$ is surjective, and a right inverse $s$ selects an element $s(i) = (i, a_i)$ with $a_i \in A_i$, so that $i \mapsto a_i$ is a choice function. Conversely, if $p : X \to I$ is surjective, the fibres $A_i = p^{-1}(i)$ are nonempty and a choice function on the family provides a right inverse.
 
 ### Zorn's Lemma
 
@@ -237,7 +237,7 @@ The well-ordering is not produced by an explicit rule; it is a choice of a least
 
 **(Axiom of choice $\Rightarrow$ Zorn's lemma).** Assume AC and let $(P,\leq)$ be a nonempty poset in which every chain has an upper bound. Suppose that $P$ has no maximal element, so that for every $x \in P$ the set $U(x) = \{y \in P: x < y\}$ is nonempty. By AC there is a function $s$ with $s(x) \in U(x)$ for every $x$. Define by transfinite recursion a function $F$ on the ordinals into $P$ by $F(0) = $ any element of $P$, $F(\alpha+1) = s(F(\alpha))$, , for a limit ordinal $\lambda$, $F(\lambda) = s(u_\lambda)$ where $u_\lambda$ is an upper bound of the chain $\{F(\beta): \beta < \lambda\}$, which exists by hypothesis and is selected by a fixed choice function on the nonempty subsets of $P$. The construction makes $F$ strictly increasing, so $F$ is an injection from the proper class of ordinals into the set $P$, which is impossible. Hence $P$ has a maximal element. The transfinite recursion and the fact that the ordinals form a proper class are results; the two implications proved above need only the language of well-orders.
 
-This completes the cycle $AC \Rightarrow \text{Zorn} \Rightarrow \text{well-ordering} \Rightarrow AC$, so the three statements are equivalent. $\square$
+This completes the cycle $AC \Rightarrow \text{Zorn} \Rightarrow \text{well-ordering} \Rightarrow AC$, so the three statements are equivalent.
 
 ### Uses in the Corpus
 
@@ -250,7 +250,7 @@ The axiom of choice enters algebra through Zorn's lemma, and the corpus records 
 
 **Proposition.** Every filter on a set $X$ is contained in an ultrafilter on $X$.
 
-**Proof.** A **filter** on $X$ is a family $\mathcal{F} \subseteq \mathcal{P}(X)$ that is upward closed ($A \in \mathcal{F}$ and $A \subseteq B$ imply $B \in \mathcal{F}$), closed under finite intersections, and does not contain $\emptyset$; it is an **ultrafilter** if in addition, for every $A \subseteq X$, exactly one of $A$ and $X \setminus A$ lies in $\mathcal{F}$. Let $\mathcal{F}$ be a filter and let $P$ be the set of filters on $X$ containing $\mathcal{F}$, ordered by inclusion. $P$ is nonempty, and the union of a chain of filters is a filter: upward closure and finite intersections are inherited from the members of the chain, and $\emptyset$ is in no member. By Zorn's lemma, choose a maximal element $\mathcal{U} \in P$. If $A \subseteq X$ with neither $A$ nor $X \setminus A$ in $\mathcal{U}$, then $\mathcal{U} \cup \{A \cap B : B \in \mathcal{U}\}$ generates a strictly larger filter, since $A \cap B \neq \emptyset$ for every $B \in \mathcal{U}$ (else $X \setminus A \in \mathcal{U}$ by upward closure of $\mathcal{U}$), contradicting maximality; the case with $X \setminus A$ is symmetric. Hence $\mathcal{U}$ is an ultrafilter. $\square$
+**Proof.** A **filter** on $X$ is a family $\mathcal{F} \subseteq \mathcal{P}(X)$ that is upward closed ($A \in \mathcal{F}$ and $A \subseteq B$ imply $B \in \mathcal{F}$), closed under finite intersections, and does not contain $\emptyset$; it is an **ultrafilter** if in addition, for every $A \subseteq X$, exactly one of $A$ and $X \setminus A$ lies in $\mathcal{F}$. Let $\mathcal{F}$ be a filter and let $P$ be the set of filters on $X$ containing $\mathcal{F}$, ordered by inclusion. $P$ is nonempty, and the union of a chain of filters is a filter: upward closure and finite intersections are inherited from the members of the chain, and $\emptyset$ is in no member. By Zorn's lemma, choose a maximal element $\mathcal{U} \in P$. If $A \subseteq X$ with neither $A$ nor $X \setminus A$ in $\mathcal{U}$, then $\mathcal{U} \cup \{A \cap B : B \in \mathcal{U}\}$ generates a strictly larger filter, since $A \cap B \neq \emptyset$ for every $B \in \mathcal{U}$ (else $X \setminus A \in \mathcal{U}$ by upward closure of $\mathcal{U}$), contradicting maximality; the case with $X \setminus A$ is symmetric. Hence $\mathcal{U}$ is an ultrafilter.
 
 The proposition is the set-theoretic form of the **ultrafilter principle**, itself equivalent to a weak form of the axiom of choice; the corpus uses it in the construction of ultraproducts and in the Stone representation of Boolean algebras in Part V.
 
@@ -272,7 +272,7 @@ The axiom of choice asserts the existence of choice functions on arbitrary famil
 | $\mathbb{N}$, $\mathbb{Z}$ | Natural numbers and integers; the further number systems belong to *Rings and Fields* |
 | $\aleph_0 = |\mathbb{N}|$ | First infinite cardinal, the countable one |
 | $\aleph_1$ | Least uncountable cardinal |
-| $\mathfrak{c} = 2^{\aleph_0}$ | Cardinality of the continuum, $|\mathcal{P}(\mathbb{N})|$ |
+| $\mathrm{C} = 2^{\aleph_0}$ | Cardinality of the continuum, $|\mathcal{P}(\mathbb{N})|$ |
 | $\mathcal{P}(X)$ | Power set; $|\mathcal{P}(X)| = 2^{|X|}$ |
 | $\sqcup$, $\kappa + \lambda$ | Disjoint union; sum of cardinals |
 | $X \times Y$, $\kappa \cdot \lambda$ | Product; product of cardinals |

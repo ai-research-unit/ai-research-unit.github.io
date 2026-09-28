@@ -152,7 +152,7 @@ $$
 |r|^2 + |t|^2 = R + T = 1 .
 $$
 
-Unitarity of $S$ is thus the algebraic form of flux conservation. In the framework's vocabulary the $S$-matrix is a **unitary element**, not a unit-norm-form rotor: it satisfies $S^\dagger S = I_2$, hence $\tilde S\tilde S^\dagger = e_0$ for the element $\tilde S$ whose module image it is, whereas the rotor condition $\tilde\Lambda\bar{\tilde\Lambda}=e_0$ is different and is not imposed here. The distinction between the two notions of "unit" is the same one that the path-integral phase and the free evolution operator illustrate.
+Unitarity of $S$ is thus the algebraic form of flux conservation. In the framework's vocabulary the $S$-matrix is a **unitary element**, not a unit-norm rotor: it satisfies $S^\dagger S = I_2$, hence $\tilde S\tilde S^\dagger = e_0$ for the element $\tilde S$ whose module image it is, whereas the rotor condition $\tilde\Lambda\bar{\tilde\Lambda}=e_0$ is different and is not imposed here. The distinction between the two notions of "unit" is the same one that the path-integral phase and the free evolution operator illustrate.
 
 ## Exactly Solvable Potentials
 
@@ -399,7 +399,7 @@ so the phase runs from $\pi/2$ at threshold to zero at infinite energy, a change
 
 - **Centrality of the potential coupling, made manifest.** The potential multiplies $e_0$, so the Hamiltonian is central and the $S$-matrix factorises as $S\otimes I_2$. The absence of spin-flip and spin-dependent amplitudes is read off the algebra rather than assumed from rotational invariance.
 - **A flux from the trace pairing.** The one-dimensional current is $\frac{\hbar}{2mi}\mathrm{Tr}(\psi^\dagger\psi' - (\psi')^\dagger\psi)$, the reduction of the general current, and flux conservation is the unitarity $S^\dagger S = I_2$. Density and current carry the two sectors of the algebra, as everywhere in the subcategory.
-- **One notion of unit resolved.** The $S$-matrix is unitary, $\tilde S\tilde S^\dagger = e_0$, and is not a unit-norm-form rotor $\tilde\Lambda\bar{\tilde\Lambda}=e_0$. The same distinction appears for the free evolution operator and the path-integral phase; scattering is the third place where it must be kept apart.
+- **One notion of unit resolved.** The $S$-matrix is unitary, $\tilde S\tilde S^\dagger = e_0$, and is not a unit-norm rotor $\tilde\Lambda\bar{\tilde\Lambda}=e_0$. The same distinction appears for the free evolution operator and the path-integral phase; scattering is the third place where it must be kept apart.
 - **A clean statement of what a scalar potential can do.** The potential can shape the envelope without touching the module; the framework exhibits the module as a spectator of every problem with a central Hamiltonian.
 
 **What remains open.**
@@ -415,7 +415,7 @@ so the phase runs from $\pi/2$ at threshold to zero at infinite energy, a change
 
 **2. What is the biquaternion image of the Jost function?** The Jost solutions, their analytic properties, and the decomposition of the $S$-matrix into a ratio of Jost functions are standard; whether the algebra singles out a representative of the Jost function is not known.
 
-**3. Does the zero divisor cone constrain bound states?** Bound-state energies are negative and the corresponding wave vector is imaginary; whether the material-sector four-vector of a bound state has a distinguished norm-form sign in the 1D reduction is not explored here.
+**3. Does the zero divisor cone constrain bound states?** Bound-state energies are negative and the corresponding wave vector is imaginary; whether the material-sector four-vector of a bound state has a distinguished biquaternion-norm sign in the 1D reduction is not explored here.
 
 **4. Empirical content.** Nothing in the one-dimensional reformulation distinguishes it from scalar Schrödinger scattering.
 
@@ -427,7 +427,7 @@ The current is $J = \frac{\hbar}{2mi}\mathrm{Tr}(\psi^\dagger\psi' - (\psi')^\da
 
 The step gives $T = 4k_1k_2/(k_1+k_2)^2$ with the flux factor $k_2/k_1$; the rectangular barrier gives $T = [1+V_0^2\sinh^2(\kappa a)/4E(V_0-E)]^{-1}$ below the barrier, with the thick-barrier limit $\frac{16E(V_0-E)}{V_0^2}e^{-2\kappa a}$, and the oscillatory Ramsauer–Townsend form above it; the delta potential gives $t = (1+i\beta)^{-1}$, $T = (1+\beta^2)^{-1}$ with $\beta = m\lambda/\hbar^2k$, and a single bound state at $E_b = -m\lambda^2/2\hbar^2$ for the attractive case; the square well gives resonant transparency at $k_2a = n\pi$. The exact barrier and step formulas were checked against independent transfer-matrix matching to a relative error below $2\times10^{-14}$, with $R+T=1$ to $10^{-12}$, the thick-barrier ratio $0.999989$, and the $E\to V_0$ limit reproduced, all on a stationary superposition of an incoming and a reflected wave and in explicit complex arithmetic.
 
-The biquaternion content is that the potential couples only to the scalar slot, so the $S$-matrix is central in the module, $S\otimes I_2$. It is a unitary element $\tilde S\tilde S^\dagger = e_0$ and not a unit-norm-form rotor. There is no spin-flip or spin-dependent amplitude, because the operator that would produce one is not in the central Hamiltonian. The framework thus supplies the flux, the sector pairing, the unitarity, and the absence of module dynamics; it does not supply the matching conditions or the tunnelling law, which are scalar analysis, and it adds no prediction distinguishing the reformulation from scalar Schrödinger scattering.
+The biquaternion content is that the potential couples only to the scalar slot, so the $S$-matrix is central in the module, $S\otimes I_2$. It is a unitary element $\tilde S\tilde S^\dagger = e_0$ and not a unit-norm rotor. There is no spin-flip or spin-dependent amplitude, because the operator that would produce one is not in the central Hamiltonian. The framework thus supplies the flux, the sector pairing, the unitarity, and the absence of module dynamics; it does not supply the matching conditions or the tunnelling law, which are scalar analysis, and it adds no prediction distinguishing the reformulation from scalar Schrödinger scattering.
 
 ## Summary of Notation
 

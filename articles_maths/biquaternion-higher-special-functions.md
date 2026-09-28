@@ -6,7 +6,7 @@ This article introduces the higher special functions of a biquaternion variable.
 
 The goal is to define the Bessel functions, the orthogonal polynomials, the hypergeometric function, the gamma function, and the zeta function, and to establish their basic properties. The article is honest about what is fully understood and what is still open.
 
-The treatment is purely mathematical. No physics is invoked. No examples are given. The biquaternion algebra $\mathbb{B}$ is assumed from the basic algebra article, together with its scalar-vector decomposition, its norm form, and its four conjugations. The elementary functions are assumed from the preceding article, together with the two regimes and the Hamilton polar form.
+The treatment is purely mathematical. No physics is invoked. No examples are given. The biquaternion algebra $\mathbb{B}$ is assumed from the basic algebra article, together with its scalar-vector decomposition, its biquaternion norm, and its four conjugations. The elementary functions are assumed from the preceding article, together with the two regimes and the Hamilton polar form.
 
 Throughout, a biquaternion is written
 
@@ -429,7 +429,7 @@ The biquaternion special functions are therefore a partially developed subject: 
 | $P_n, H_n, L_n$ | Legendre, Hermite and Laguerre polynomials (Chebyshev also treated) |
 | ${}_2F_1$ | Hypergeometric function |
 | $\Gamma, \zeta$ | Gamma and zeta functions |
-| $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$ | Norm form |
+| $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$ | Biquaternion norm |
 
 ## Further Reading
 

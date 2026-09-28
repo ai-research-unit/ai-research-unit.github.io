@@ -74,7 +74,7 @@ These theories attach a graded module to an algebraic object, and the coefficien
 | group cohomology through a classifying space | a $G$-module, through $H^*(G;M) \cong H^*(BG;M)$ | *Classifying Spaces and Cohomology Operations* |
 | Galois cohomology $H^n(K,A)$ | a Galois module $A$: $\mu_n$, $\overline K^\times$, $\mathbb{Z}/n$, with the action of $G_K$ | *Galois Cohomology* |
 | the Brauer group as a second cohomology | $H^2(K,\overline K^\times)$; the $n$-torsion ${}_n\operatorname{Br}(K)$ | *Galois Cohomology*; *Central Simple Algebras and the Brauer Group* |
-| Lie algebra cohomology $H^\bullet(\mathfrak{g};M)$ | a $\mathfrak{g}$-module $M$, equivalently a module over $U(\mathfrak{g})$; the Chevalley–Eilenberg complex | *Lie Algebra Cohomology* |
+| Lie algebra cohomology $H^\bullet(\mathrm{G};M)$ | a $\mathrm{G}$-module $M$, equivalently a module over $U(\mathrm{G})$; the Chevalley–Eilenberg complex | *Lie Algebra Cohomology* |
 | Hochschild homology and cohomology $HH_\bullet(A,M)$ | an $A$-bimodule $M$, equivalently a module over $A^{\mathrm{e}} = A\otimes_kA^{\mathrm{op}}$ | *Hochschild Homology* |
 | Hochschild–Kostant–Rosenberg | the identification of $HH_\bullet(A)$ with the Kähler differential forms for a smooth commutative algebra | *Hochschild Homology* |
 | cyclic homology $HC_\bullet(A)$ | an algebra $A$ over a commutative ring, with a cyclic structure on the Hochschild complex | *Cyclic Homology* |
@@ -118,7 +118,7 @@ The coefficient system is the part of the theory that the article introducing th
 | a coherent $\mathcal{O}_X$-module | coherent sheaf cohomology and Serre duality | *Coherent Sheaves* |
 | a $G$-module, or a $\mathbb{Z}[G]$-module | group cohomology and homology | *Group Cohomology* |
 | a Galois module, such as $\mu_n$ or $\overline K^\times$ | Galois cohomology and the Brauer group | *Galois Cohomology* |
-| a $\mathfrak{g}$-module | Lie algebra cohomology, through the universal enveloping algebra | *Lie Algebra Cohomology* |
+| a $\mathrm{G}$-module | Lie algebra cohomology, through the universal enveloping algebra | *Lie Algebra Cohomology* |
 | an $A$-bimodule | Hochschild homology and cohomology | *Hochschild Homology* |
 | a vector bundle | topological $K$-theory | *Topological K-Theory* |
 
@@ -171,8 +171,8 @@ A catalogue denotes its objects by name rather than by symbol. The symbols that 
 | $R$, $G$, $M$, $A$ | a commutative coefficient ring with $1 \neq 0$; an $R$-module; a module of coefficients; a coefficient group or algebra |
 | $\mathbb{Z}[G]$ | the group ring of $G$ |
 | $A^{\mathrm{e}} = A\otimes_kA^{\mathrm{op}}$ | the enveloping algebra of an algebra $A$ |
-| $U(\mathfrak{g})$ | the universal enveloping algebra of a Lie algebra |
-| $H^n(G,M)$, $H^n(K,A)$, $H^\bullet(\mathfrak{g};M)$, $HH_\bullet(A,M)$ | group, Galois, Lie algebra and Hochschild theories |
+| $U(\mathrm{G})$ | the universal enveloping algebra of a Lie algebra |
+| $H^n(G,M)$, $H^n(K,A)$, $H^\bullet(\mathrm{G};M)$, $HH_\bullet(A,M)$ | group, Galois, Lie algebra and Hochschild theories |
 | $HC_\bullet(A)$, $HC^\bullet(A)$ | cyclic homology and cyclic cohomology |
 | $K^*(X)$, $K_*(A)$ | topological $K$-theory; the $K$-theory of an operator algebra or a ring |
 | $\beta_m$ | the Bockstein homomorphism of the coefficient sequence $0 \to \mathbb{Z} \to \mathbb{Z} \to \mathbb{Z}/m \to 0$ |

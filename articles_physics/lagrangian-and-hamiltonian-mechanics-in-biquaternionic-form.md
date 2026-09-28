@@ -8,14 +8,14 @@ Both formulations are usually written in coordinates. This article writes them i
 
 Three structural statements organise the article, and they are worth stating at the outset.
 
-1. **The kinetic energy is the norm form.** For a configuration whose generalized coordinates are assembled into a real quaternion $\tilde q$, the kinetic energy of a free particle is $\tfrac{m}{2}N(\dot{\tilde q})=\tfrac{m}{2}\dot{\tilde q}\,\bar{\dot{\tilde q}}$, the norm form of the velocity. The norm form is the algebra's own quadratic form, and the free Lagrangian is a scalar multiple of it.
+1. **The kinetic energy is the biquaternion norm.** For a configuration whose generalized coordinates are assembled into a real quaternion $\tilde q$, the kinetic energy of a free particle is $\tfrac{m}{2}N(\dot{\tilde q})=\tfrac{m}{2}\dot{\tilde q}\,\bar{\dot{\tilde q}}$, the biquaternion norm of the velocity. The biquaternion norm is the algebra's own quadratic form, and the free Lagrangian is a scalar multiple of it.
 2. **The phase-space coordinate is one biquaternion.** The position and the momentum assemble into $\tilde Z=\tilde q+i\tilde p$, whose anti-Hermitian part is the position and whose Hermitian part is $i$ times the momentum. The algebra's two sectors thus separate a kinematic configuration from its conjugate momentum, and the algebra's complex structure is the phase-space complex structure.
 3. **The boundary is finite-dimensional.** The algebra $\mathbb{B}\cong M_2(\mathbb{C})$ is eight-dimensional over $\mathbb{R}$. It carries the configuration of a system with at most four real degrees of freedom, and it carries the *rotational* bracket exactly; it does not carry the canonical Heisenberg structure, as the companion article *Similitudes Between the Poisson Bracket and the Quantum Commutator* establishes and as the companion article *The Harmonic Oscillator in Biquaternionic Form* confirms. This article is classical throughout: no commutator is introduced, and no canonical relation of the form $[\tilde q,\tilde p]=i\hbar$ is used or needed.
 
 The conventions are those of the read list. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; the quaternion basis is $e_0=1,e_1,e_2,e_3$ with $e_k^2=-e_0$ and $e_je_k=-\delta_{jk}e_0+\varepsilon_{jkl}e_l$; the scalar imaginary $i$ is central with $i^2=-1$. The anti-Hermitian subspace $\mathbb{M}_-$ (imaginary scalar, real vector) is the material sector, and the Hermitian subspace $\mathbb{M}_+$ (real scalar, imaginary vector) is the informational sector, with $\mathbb{B}=\mathbb{M}_-\oplus\mathbb{M}_+$. The real-quaternion subspace is $\mathbb{H}_{\mathbb{B}}$, and the trace is normalized by $\mathrm{Tr}(e_0)=2$. The symbol $c=1/\sqrt{\epsilon\mu}$ is the speed of light in the medium, and $c_0$ its vacuum value. Throughout, $\tilde q$ denotes a configuration quaternion, $\tilde p$ its conjugate momentum, and the scalar pairing of two real quaternions $\tilde a,\tilde b$ is $\mathrm{Sc}(\bar{\tilde a}\,\tilde b)=\sum_\mu a_\mu b_\mu$.
 
 The companion articles supply the pieces:
-- Companion article *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*, for the material sector, the norm form, and the four-vectors.
+- Companion article *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*, for the material sector, the biquaternion norm, and the four-vectors.
 - Companion article *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*, for the Hermitian sector, the trace formula, and the conjugation action.
 - Companion article *Similitudes Between the Poisson Bracket and the Quantum Commutator*, for the classical bracket conventions and the boundary between the classical and quantum brackets.
 - Companion article *Similitudes Between Biquaternion Rotors and Hamiltonian Flow*, for the rotor and the Hamiltonian flow on the coadjoint orbit.
@@ -108,7 +108,7 @@ $$
 
 which uses $\mathrm{Sc}(\bar e_\mu e_\nu)=\delta_{\mu\nu}$. This is the statement, in the algebra, that the natural scalar product on the real-quaternion subspace is the scalar part of a quaternion product.
 
-### The Kinetic Energy Is the Norm Form
+### The Kinetic Energy Is the Biquaternion Norm
 
 Let $\tilde q(t)$ be a trajectory and $\dot{\tilde q}$ its velocity. The **kinetic energy** of a particle of mass $m$ is
 
@@ -116,7 +116,7 @@ $$
 T=\tfrac{1}{2}m\,N(\dot{\tilde q})=\tfrac{1}{2}m\,\dot{\tilde q}\,\bar{\dot{\tilde q}}=\tfrac{1}{2}m\sum_{\mu=0}^{3}\dot q_\mu^2 .
 $$
 
-For a pure-vector configuration the central term is absent and $T=\tfrac{1}{2}m|\dot{\mathbf q}|^2$, the familiar kinetic energy. The kinetic energy is therefore the **norm form** of the velocity, and this is the first structural fact of the biquaternion formulation of mechanics: the algebra's own quadratic form is the free kinetic energy. The norm form on $\mathbb{H}_{\mathbb{B}}$ is positive definite, so $T\ge0$ with equality only for $\dot{\tilde q}=0$; no sign choice has to be made.
+For a pure-vector configuration the central term is absent and $T=\tfrac{1}{2}m|\dot{\mathbf q}|^2$, the familiar kinetic energy. The kinetic energy is therefore the **biquaternion norm** of the velocity, and this is the first structural fact of the biquaternion formulation of mechanics: the algebra's own quadratic form is the free kinetic energy. The biquaternion norm on $\mathbb{H}_{\mathbb{B}}$ is positive definite, so $T\ge0$ with equality only for $\dot{\tilde q}=0$; no sign choice has to be made.
 
 The free Lagrangian is
 
@@ -191,7 +191,7 @@ $$
 H_0=\frac{N(\tilde p)}{2m}=\frac{\tilde p\,\bar{\tilde p}}{2m}=\frac{1}{2m}\sum_{\mu=0}^{3}p_\mu^2 ,
 $$
 
-the free Hamiltonian, which reduces to the familiar $\mathbf p^2/2m$ for a pure-vector momentum, $p_0=0$. The structural statement is the mirror of the one for $L_0$: **the free Hamiltonian is the norm form of the momentum, divided by $2m$.** The norm form thus appears at both ends of the Legendre transform, once on velocity and once on momentum, because the Legendre transform of a quadratic form is its own inverse up to the mass factor.
+the free Hamiltonian, which reduces to the familiar $\mathbf p^2/2m$ for a pure-vector momentum, $p_0=0$. The structural statement is the mirror of the one for $L_0$: **the free Hamiltonian is the biquaternion norm of the momentum, divided by $2m$.** The biquaternion norm thus appears at both ends of the Legendre transform, once on velocity and once on momentum, because the Legendre transform of a quadratic form is its own inverse up to the mass factor.
 
 **Harmonic oscillator.** For $L=\tfrac{1}{2}mN(\dot{\tilde q})-\tfrac{1}{2}m\omega^2N(\tilde q)$ the momentum is again $\tilde p=m\dot{\tilde q}$ and
 
@@ -199,7 +199,7 @@ $$
 H=\frac{N(\tilde p)}{2m}+\frac{m\omega^2}{2}N(\tilde q).
 $$
 
-The Hamiltonian is a sum of two norm forms with positive coefficients, one in the momentum and one in the coordinate. Its level sets $H=E$ are ellipsoids in the eight-dimensional real phase space.
+The Hamiltonian is a sum of two biquaternion norms with positive coefficients, one in the momentum and one in the coordinate. Its level sets $H=E$ are ellipsoids in the eight-dimensional real phase space.
 
 **When is the Hamiltonian the energy?** The identification of $H$ with $T+V$ is not automatic, and the condition is one this transcription satisfies by construction. If the kinetic energy is a **homogeneous function of degree two** in the generalized velocities, $T(\lambda\dot q)=\lambda^2T(\dot q)$, then Euler's theorem on homogeneous functions gives $\dot q_\mu\partial T/\partial\dot q_\mu=2T$. When the potential depends on the coordinates alone, $p_\mu=\partial T/\partial\dot q_\mu$, and therefore
 
@@ -352,7 +352,7 @@ $$
 \{L_i,L_j\}=\varepsilon_{ijk}L_k,\qquad \{L_i,q_j\}=\varepsilon_{ijk}q_k,\qquad \{L_i,p_j\}=\varepsilon_{ijk}p_k .
 $$
 
-The first of these is the statement that the components of angular momentum close into $\mathfrak{su}(2)$ under the Poisson bracket; it is the bracket that the biquaternion algebra realizes **exactly**, because the quaternion product already carries the cross product, with no deformation parameter. The companion article *Similitudes Between Biquaternion Rotors and Hamiltonian Flow* identifies the corresponding one-parameter group: on the coadjoint orbit, the flow generated by $H=2G\cdot\mathbf S$ is the rotor conjugation by $\exp(tG)$, and the generators agree term for term.
+The first of these is the statement that the components of angular momentum close into $\mathrm{SU}(2)$ under the Poisson bracket; it is the bracket that the biquaternion algebra realizes **exactly**, because the quaternion product already carries the cross product, with no deformation parameter. The companion article *Similitudes Between Biquaternion Rotors and Hamiltonian Flow* identifies the corresponding one-parameter group: on the coadjoint orbit, the flow generated by $H=2G\cdot\mathbf S$ is the rotor conjugation by $\exp(tG)$, and the generators agree term for term.
 
 ### What the Bracket Is Not
 
@@ -378,15 +378,15 @@ $$
 \tilde q\longmapsto \tilde R\,\tilde q\,\tilde R^\dagger,\qquad \tilde R\in\mathbb{H}_{\mathbb{B}},\quad \tilde R\bar{\tilde R}=e_0 .
 $$
 
-The norm form is invariant, $N(\tilde R\tilde q\tilde R^\dagger)=N(\tilde q)$, because the rotor has unit norm form. If the potential is rotationally invariant, so is the Lagrangian, and the conserved Noether charge is the angular momentum $\tilde L=\tilde q\tilde p$ of the previous section, that is its vector part $\mathbf q\times\mathbf p$. This is the classical mechanics reading of the rotor: the rotation group is the group of unit real quaternions $SU(2)$, acting on the configuration by conjugation. The companion article *Similitudes Between Biquaternion Rotors and Hamiltonian Flow* develops the rotor-flow correspondence, and the companion article *Noether's Theorem in Biquaternionic Form* develops the general current construction.
+The biquaternion norm is invariant, $N(\tilde R\tilde q\tilde R^\dagger)=N(\tilde q)$, because the rotor has unit norm. If the potential is rotationally invariant, so is the Lagrangian, and the conserved Noether charge is the angular momentum $\tilde L=\tilde q\tilde p$ of the previous section, that is its vector part $\mathbf q\times\mathbf p$. This is the classical mechanics reading of the rotor: the rotation group is the group of unit real quaternions $SU(2)$, acting on the configuration by conjugation. The companion article *Similitudes Between Biquaternion Rotors and Hamiltonian Flow* develops the rotor-flow correspondence, and the companion article *Noether's Theorem in Biquaternionic Form* develops the general current construction.
 
-**The central phase.** Because $i$ is central, a central phase acts on the biquaternion-valued configuration by $\tilde q\mapsto e^{i\alpha}\tilde q$. For a real-quaternion configuration it does not preserve the real subspace — $e^{i\alpha}\tilde q$ is a complex biquaternion unless $\tilde q=0$ — so it is a symmetry of the complexified formulation rather than of the real configuration space; it becomes a genuine internal symmetry only for a complex biquaternion-valued field, where it is the $U(1)$ of the companion article *The Gauge Principle in Biquaternionic Form*. It also acts on the free Lagrangian, $L=\tfrac12mN(\dot{\tilde q})\mapsto e^{2i\alpha}L$, so a real Lagrangian is invariant only for $e^{2i\alpha}=1$: the transformation is a symmetry of the complexified formulation and not of the real one. In the present classical setting it acts on the phase-space biquaternion $\tilde Z$ and is the algebra's complex structure; its consequences for the action and for the symplectic structure are developed in the companion articles *The Action Principle and the Classical Limit as Stationary Phase in Biquaternionic Form* and *The Symplectic Form and the Biquaternion Norm-Form Cone*.
+**The central phase.** Because $i$ is central, a central phase acts on the biquaternion-valued configuration by $\tilde q\mapsto e^{i\alpha}\tilde q$. For a real-quaternion configuration it does not preserve the real subspace — $e^{i\alpha}\tilde q$ is a complex biquaternion unless $\tilde q=0$ — so it is a symmetry of the complexified formulation rather than of the real configuration space; it becomes a genuine internal symmetry only for a complex biquaternion-valued field, where it is the $U(1)$ of the companion article *The Gauge Principle in Biquaternionic Form*. It also acts on the free Lagrangian, $L=\tfrac12mN(\dot{\tilde q})\mapsto e^{2i\alpha}L$, so a real Lagrangian is invariant only for $e^{2i\alpha}=1$: the transformation is a symmetry of the complexified formulation and not of the real one. In the present classical setting it acts on the phase-space biquaternion $\tilde Z$ and is the algebra's complex structure; its consequences for the action and for the symplectic structure are developed in the companion articles *The Action Principle and the Classical Limit as Stationary Phase in Biquaternionic Form* and *The Symplectic Form and the Biquaternion Norm Cone*.
 
 ## What the Formulation Does and Does Not Give
 
 The transcription is exact within its domain, and the domain is worth stating plainly.
 
-**What it gives.** For a system whose configuration is a real quaternion — a particle in three dimensions with an optional scalar degree of freedom — the Lagrangian and Hamiltonian formalism is written without index clutter: the kinetic energy is the norm form, the momentum is its Legendre conjugate, the Hamiltonian of a free particle is the norm form of the momentum, the Euler–Lagrange and Hamilton equations are single quaternion equations, and the Poisson bracket is the scalar pairing of two quaternion gradients. The phase-space coordinate is one biquaternion whose sectors are the configuration and the momentum. The rotational bracket is exact, with the quaternion product's cross product supplying the structure constants.
+**What it gives.** For a system whose configuration is a real quaternion — a particle in three dimensions with an optional scalar degree of freedom — the Lagrangian and Hamiltonian formalism is written without index clutter: the kinetic energy is the biquaternion norm, the momentum is its Legendre conjugate, the Hamiltonian of a free particle is the biquaternion norm of the momentum, the Euler–Lagrange and Hamilton equations are single quaternion equations, and the Poisson bracket is the scalar pairing of two quaternion gradients. The phase-space coordinate is one biquaternion whose sectors are the configuration and the momentum. The rotational bracket is exact, with the quaternion product's cross product supplying the structure constants.
 
 **What it does not give.** The algebra is finite dimensional; it cannot carry the configuration space of a system with more than a few degrees of freedom, nor an infinite-dimensional field configuration except through its coefficients. The Poisson bracket is a scalar projection of a quaternion product, and the vector part it discards is not a second bracket. And the canonical Heisenberg sector is absent: there is no pair $\tilde q,\tilde p$ inside $\mathbb{B}$ whose bracket is a central constant, as the companion articles *Similitudes Between the Poisson Bracket and the Quantum Commutator* and *The Harmonic Oscillator in Biquaternionic Form* prove. None of these limitations is a defect of the transcription; they are properties of the algebra, and they mark where the biquaternion language is a convenience and where it is a constraint.
 
@@ -394,9 +394,9 @@ The transcription is exact within its domain, and the domain is worth stating pl
 
 The Lagrangian and Hamiltonian formulations of classical mechanics take the following form in the biquaternion algebra.
 
-- The configuration is a real quaternion $\tilde q\in\mathbb{H}_{\mathbb{B}}$, with the physical three-space as its pure-vector part; the kinetic energy is the norm form, $T=\tfrac{1}{2}mN(\dot{\tilde q})$.
+- The configuration is a real quaternion $\tilde q\in\mathbb{H}_{\mathbb{B}}$, with the physical three-space as its pure-vector part; the kinetic energy is the biquaternion norm, $T=\tfrac{1}{2}mN(\dot{\tilde q})$.
 - The action $S[\tilde q]=\int L\,dt$ is stationary at the physical path, and stationarity gives the single quaternion Euler–Lagrange equation $\frac{d}{dt}\partial_{\dot{\tilde q}}L-\partial_{\tilde q}L=0$, equivalent to the four real equations.
-- The conjugate momentum is $\tilde p=\partial L/\partial\dot{\tilde q}$, and the Hamiltonian is the Legendre transform $H=\mathrm{Sc}(\bar{\tilde p}\dot{\tilde q})-L$. For a free particle $H=N(\tilde p)/2m$: the free Hamiltonian is the norm form of the momentum.
+- The conjugate momentum is $\tilde p=\partial L/\partial\dot{\tilde q}$, and the Hamiltonian is the Legendre transform $H=\mathrm{Sc}(\bar{\tilde p}\dot{\tilde q})-L$. For a free particle $H=N(\tilde p)/2m$: the free Hamiltonian is the biquaternion norm of the momentum.
 - Hamilton's equations are $\dot{\tilde q}=\partial_{\tilde p}H$, $\dot{\tilde p}=-\partial_{\tilde q}H$.
 - Position and momentum combine into the phase-space biquaternion $\tilde Z=\tilde q+i\tilde p$, whose anti-Hermitian part is the configuration and whose Hermitian part is $i$ times the momentum. The algebra's complex structure $i$ exchanges the two parts.
 - The Poisson bracket is $\{f,g\}=\mathrm{Sc}(\overline{\nabla_{\tilde q}f}\nabla_{\tilde p}g)-\mathrm{Sc}(\overline{\nabla_{\tilde p}f}\nabla_{\tilde q}g)$, the scalar part of a quaternion expression; the discarded vector part is the cross product that makes the angular-momentum bracket $\{L_i,L_j\}=\varepsilon_{ijk}L_k$ exact.
@@ -420,7 +420,7 @@ The formulation is a transcription, exact for configurations that fit in a real 
 | $\mathbb{H}_{\mathbb{B}}$ | Real-quaternion subspace |
 | $\tilde q=q_0e_0+\mathbf q$ | Configuration quaternion (real) |
 | $\dot{\tilde q}$ | Configuration velocity |
-| $N(\tilde q)=\tilde q\bar{\tilde q}$ | Norm form |
+| $N(\tilde q)=\tilde q\bar{\tilde q}$ | Biquaternion norm |
 | $L(\tilde q,\dot{\tilde q},t)$ | Lagrangian |
 | $F(\tilde q,t)$, $L'=L+dF/dt$ | Arbitrary function and the total-derivative ambiguity of the Lagrangian |
 | $S[\tilde q]=\int L\,dt$ | Action; ambiguous by the endpoint term $F(t_2)-F(t_1)$ |

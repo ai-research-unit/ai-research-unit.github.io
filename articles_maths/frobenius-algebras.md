@@ -44,11 +44,11 @@ $$
 \ell_\lambda(ax)(b) = \lambda(axb) = \ell_\lambda(x)(ba) = (a \cdot \ell_\lambda(x))(b),
 $$
 
-where the left $A$-module structure on $A^*$ is $(a\cdot f)(b) = f(ba)$; so a Frobenius functional gives an isomorphism ${}_A A \to {}_A A^*$, and conversely any isomorphism is $\ell_\lambda$ for $\lambda = \varphi(1)$. The right-hand statement is identical with the opposite module structure, so 3 is equivalent to 1 and 2. Statement 4 is the non-degeneracy condition rewritten, since $\ell_\lambda$ is injective exactly when the left annihilator of $\lambda$ is zero. $\square$
+where the left $A$-module structure on $A^*$ is $(a\cdot f)(b) = f(ba)$; so a Frobenius functional gives an isomorphism ${}_A A \to {}_A A^*$, and conversely any isomorphism is $\ell_\lambda$ for $\lambda = \varphi(1)$. The right-hand statement is identical with the opposite module structure, so 3 is equivalent to 1 and 2. Statement 4 is the non-degeneracy condition rewritten, since $\ell_\lambda$ is injective exactly when the left annihilator of $\lambda$ is zero.
 
 **Corollary (self-injectivity).** A Frobenius algebra $A$ is **quasi-Frobenius**: every projective left $A$-module is injective, and every injective left $A$-module is projective, so a left $A$-module is projective if and only if it is injective.
 
-*Proof.* The dual $A^*$ of the regular module is injective as a left $A$-module, since $A^* = \operatorname{Hom}_k(A,k)$ is the injective cogenerator of the category of $k$-vector spaces, and $A \cong A^*$ by the theorem; hence ${}_AA$ is injective. A direct summand of an injective module is injective and a direct sum of injectives is injective, so every projective module is injective. Applying the same argument to $A^{\mathrm{op}}$ and dualising gives the converse. $\square$
+*Proof.* The dual $A^*$ of the regular module is injective as a left $A$-module, since $A^* = \operatorname{Hom}_k(A,k)$ is the injective cogenerator of the category of $k$-vector spaces, and $A \cong A^*$ by the theorem; hence ${}_AA$ is injective. A direct summand of an injective module is injective and a direct sum of injectives is injective, so every projective module is injective. Applying the same argument to $A^{\mathrm{op}}$ and dualising gives the converse.
 
 The converse of the corollary fails in general: a self-injective algebra need not satisfy $A \cong A^*$ as modules on either side, and such algebras are precisely the quasi-Frobenius non-Frobenius algebras. The extra condition that upgrades quasi-Frobenius to Frobenius is that the left socle and the right socle of the regular module coincide, a condition of Nakayama's.
 
@@ -70,7 +70,7 @@ $$
 \lambda\bigl(b\,\nu(ac)\bigr) = \lambda(acb) = \lambda\bigl((cb)\nu(a)\bigr) = \lambda\bigl(b\,\nu(a)\nu(c)\bigr)
 $$
 
-using the defining property twice, so $\nu(ac) = \nu(a)\nu(c)$ by non-degeneracy. For the unit, $\lambda(b) = \lambda(b\,\nu(1))$ gives $\nu(1)=1$. Injectivity follows because $\lambda(b\nu(a))=0$ for all $b$ forces $\nu(a)=0$. The dependence on $\lambda$ is a direct calculation: $\lambda'(ab) = \lambda(uabu^{-1}) = \lambda(bu^{-1}\nu(a)u) = \lambda'(b\,u^{-1}\nu(a)u)$. $\square$
+using the defining property twice, so $\nu(ac) = \nu(a)\nu(c)$ by non-degeneracy. For the unit, $\lambda(b) = \lambda(b\,\nu(1))$ gives $\nu(1)=1$. Injectivity follows because $\lambda(b\nu(a))=0$ for all $b$ forces $\nu(a)=0$. The dependence on $\lambda$ is a direct calculation: $\lambda'(ab) = \lambda(uabu^{-1}) = \lambda(bu^{-1}\nu(a)u) = \lambda'(b\,u^{-1}\nu(a)u)$.
 
 An algebra is called **symmetric** if it admits a Frobenius functional with $\nu = \mathrm{id}$, that is, one satisfying $\lambda(ab) = \lambda(ba)$ for all $a,b$. Every commutative Frobenius algebra is symmetric, and so is every matrix algebra and every group algebra; the exterior algebra, when its dimension is even, is Frobenius but not symmetric, and its Nakayama automorphism is the parity automorphism.
 
@@ -78,11 +78,11 @@ An algebra is called **symmetric** if it admits a Frobenius functional with $\nu
 
 **Corollary.** A Frobenius algebra $A$ is self-injective: every projective left $A$-module is injective, and every injective left $A$-module is projective. Consequently a left $A$-module is projective if and only if it is injective, and the projective indecomposable modules are the injective indecomposable modules.
 
-*Proof.* The regular module is injective by the theorem, and a direct summand of an injective module is injective, so every projective module, being a summand of a free module, is injective. The converse is the dual statement, obtained by applying the same argument to the opposite algebra and using that a module is injective over $A$ exactly when its dual is projective over $A^{\mathrm{op}}$. $\square$
+*Proof.* The regular module is injective by the theorem, and a direct summand of an injective module is injective, so every projective module, being a summand of a free module, is injective. The converse is the dual statement, obtained by applying the same argument to the opposite algebra and using that a module is injective over $A$ exactly when its dual is projective over $A^{\mathrm{op}}$.
 
 **Corollary.** For a Frobenius algebra $A$ the socle of the left regular module is isomorphic to the dual of the top, $\operatorname{soc}({}_AA) \cong (A/J(A))^*$, and in particular $\operatorname{soc}({}_AA)$ is simple exactly when $A$ is a local algebra, that is, exactly when $A$ has a unique simple module up to isomorphism. Every finite-dimensional semisimple $k$-algebra is Frobenius, and a local Frobenius algebra is the basic example with a simple socle.
 
-*Proof.* The dual of the top is $\operatorname{Hom}_k(A/J(A),k) \cong \operatorname{ann}_A(J(A))$, the annihilator of the radical; and $A/J(A)$ is generated by the simple modules, so its dual is the largest semisimple submodule of $A^*$. Under $A \cong A^*$ this is $\operatorname{soc}(A)$. The socle is simple exactly when there is one summand in its decomposition, which happens exactly for a local algebra. $\square$
+*Proof.* The dual of the top is $\operatorname{Hom}_k(A/J(A),k) \cong \operatorname{ann}_A(J(A))$, the annihilator of the radical; and $A/J(A)$ is generated by the simple modules, so its dual is the largest semisimple submodule of $A^*$. Under $A \cong A^*$ this is $\operatorname{soc}(A)$. The socle is simple exactly when there is one summand in its decomposition, which happens exactly for a local algebra.
 
 The mutual injectivity and projectivity of the modules over a Frobenius algebra is what makes the algebra its own dual in the strongest sense, and it is the algebraic shadow of Poincaré duality, whose geometric statement requires the topological notions of a later Part and is therefore deferred there.
 
@@ -118,7 +118,7 @@ $$
 \lambda\bigl(a\,a_i\,a^i\bigr) = \sum_j c_{ij}\lambda\bigl(a_j a^i\bigr) = c_{ii},
 $$
 
-and summing over $i$ gives $\lambda\bigl(\sum_i a\,a_i\,a^i\bigr) = \sum_i c_{ii} = \operatorname{Tr}(L_a)$. For 3, the flip sends $C$ to $\sum_i a^i\otimes a_i$; when $\lambda(ab) = \lambda(ba)$ the pairing is invariant under the flip and the metric-dual bases may be interchanged, so the two sums agree, while for a general $\nu$ they differ, the defect being the twist $\nu$ of the pairing. $\square$
+and summing over $i$ gives $\lambda\bigl(\sum_i a\,a_i\,a^i\bigr) = \sum_i c_{ii} = \operatorname{Tr}(L_a)$. For 3, the flip sends $C$ to $\sum_i a^i\otimes a_i$; when $\lambda(ab) = \lambda(ba)$ the pairing is invariant under the flip and the metric-dual bases may be interchanged, so the two sums agree, while for a general $\nu$ they differ, the defect being the twist $\nu$ of the pairing.
 
 ### Examples
 
@@ -181,7 +181,7 @@ and the twist by $\nu$ is what makes the two sides agree. The Frobenius algebra 
 
 If $A$ and $B$ are symmetric then so are $A\times B$ and $A\otimes_k B$. The Nakayama automorphisms multiply in the second case: $\nu_{A\otimes B} = \nu_A \otimes \nu_B$.
 
-*Proof.* For the product, the pairing $(a,b)\cdot(a',b') \mapsto \lambda_A(aa') + \lambda_B(bb')$ is non-degenerate because a component with $\lambda_A(aa')=0$ for all $a'$ has $a=0$, and similarly for $B$; this is the direct sum of the two pairings, hence non-degenerate. For the tensor product, use bases $\{a_i\},\{b_j\}$ and their dual bases; the non-degeneracy of a tensor product of two non-degenerate pairings follows from the identity $\lambda\bigl((a\otimes b)(a'\otimes b')\bigr) = \lambda_A(aa')\lambda_B(bb')$ and the fact that a tensor product of non-degenerate pairings is non-degenerate when the factors have bases. The trace identities pass through the tensor product because $\lambda_A(aa')= \lambda_A(a'a)$ and $\lambda_B(bb')=\lambda_B(b'b)$. $\square$
+*Proof.* For the product, the pairing $(a,b)\cdot(a',b') \mapsto \lambda_A(aa') + \lambda_B(bb')$ is non-degenerate because a component with $\lambda_A(aa')=0$ for all $a'$ has $a=0$, and similarly for $B$; this is the direct sum of the two pairings, hence non-degenerate. For the tensor product, use bases $\{a_i\},\{b_j\}$ and their dual bases; the non-degeneracy of a tensor product of two non-degenerate pairings follows from the identity $\lambda\bigl((a\otimes b)(a'\otimes b')\bigr) = \lambda_A(aa')\lambda_B(bb')$ and the fact that a tensor product of non-degenerate pairings is non-degenerate when the factors have bases. The trace identities pass through the tensor product because $\lambda_A(aa')= \lambda_A(a'a)$ and $\lambda_B(bb')=\lambda_B(b'b)$.
 
 **Theorem (finite-dimensional Hopf algebras are Frobenius, standard).** Every finite-dimensional Hopf algebra over a field is a Frobenius algebra; more precisely, it possesses a nonzero left integral and a nonzero right integral, and the space of left integrals is one-dimensional.
 
@@ -193,7 +193,7 @@ The Frobenius condition is a finiteness condition, and it is not satisfied by th
 
 **Theorem (complete intersections, standard).** Let $f_1,\dots,f_n \in k[x_1,\dots,x_n]$ be a regular sequence and let $A = k[x_1,\dots,x_n]/(f_1,\dots,f_n)$. Then $A$ is a Frobenius algebra, and it is a symmetric Frobenius algebra when the sequence is a regular sequence of homogeneous polynomials. In the hypersurface case $n = 1$ and $A = k[x]/(f)$ with $\deg f = m$, the Frobenius functional is the coefficient of $x^{m-1}$, and $A$ is symmetric.
 
-*Proof (sketch).* A regular sequence is a sequence whose successive quotients have the expected dimension, and the resulting algebra is a finite-dimensional **complete intersection**; the dualising module of a complete intersection is free of rank one, which is the Frobenius property. In the hypersurface case the computation is explicit: the pairing $\lambda(pq)$ with $\lambda$ the coefficient of $x^{m-1}$ is non-degenerate because for every nonzero $p$ of degree $<m$ the product $p x^{m-1-\deg p}$ has nonzero top coefficient in the monomial basis. $\square$
+*Proof (sketch).* A regular sequence is a sequence whose successive quotients have the expected dimension, and the resulting algebra is a finite-dimensional **complete intersection**; the dualising module of a complete intersection is free of rank one, which is the Frobenius property. In the hypersurface case the computation is explicit: the pairing $\lambda(pq)$ with $\lambda$ the coefficient of $x^{m-1}$ is non-degenerate because for every nonzero $p$ of degree $<m$ the product $p x^{m-1-\deg p}$ has nonzero top coefficient in the monomial basis.
 
 The connection with the symmetric algebra is that $k[x_1,\dots,x_n]/(f_1,\dots,f_n)$ is a quotient of $\operatorname{Sym}(V)$ for $V$ of dimension $n$, so the Frobenius algebras of this kind are the finite-dimensional quotients of the symmetric algebra by a regular sequence. The corresponding statement for the exterior algebra is that $\Lambda(V)$ is Frobenius with the top-degree functional, which is the anti-symmetric analogue; the two families are the commutative and the alternating edge of the same construction, and the Frobenius property is what they have in common.
 

@@ -17,17 +17,17 @@ The article assumes the manifold theory, the tangent space and the differential,
 
 **Theorem (regular value theorem).** If $c \in N$ is a regular value of $F$, then $F^{-1}(c)$ is a regular submanifold of $M$ of dimension $m - n$, with $T_pF^{-1}(c) = \ker dF_p$ at each $p \in F^{-1}(c)$. If $c$ is a critical value the preimage may fail to be a manifold.
 
-**Proof.** This is the implicit function theorem of *Smooth Manifolds and Differential Geometry*, applied at each point of the preimage. $\square$
+**Proof.** This is the implicit function theorem of *Smooth Manifolds and Differential Geometry*, applied at each point of the preimage.
 
 **Theorem (Sard).** The set of critical values of a smooth map $F : M \to N$ has empty interior in $N$, equivalently the regular values are dense in $N$. The sharper statement, that the critical values form a null set, is proved in Part III, where the measure is available.
 
-**Proof sketch.** The statement is local, and one reduces to a map between open sets of Euclidean spaces. For a map of class $C^k$ with $k$ large enough one writes the domain as a countable union of cubes on which the map is nearly affine and estimates the image of the critical set by a sum over the cubes; the total size of the images, measured as in Part III, is then seen to be arbitrarily small. The estimate uses the measure and the integration of Part III, where they are developed, and the theorem is quoted here as the standard analytic input of the subject. $\square$
+**Proof sketch.** The statement is local, and one reduces to a map between open sets of Euclidean spaces. For a map of class $C^k$ with $k$ large enough one writes the domain as a countable union of cubes on which the map is nearly affine and estimates the image of the critical set by a sum over the cubes; the total size of the images, measured as in Part III, is then seen to be arbitrarily small. The estimate uses the measure and the integration of Part III, where they are developed, and the theorem is quoted here as the standard analytic input of the subject.
 
 **Corollary.** Regular values are dense in $N$: the set of critical values has empty interior in $N$, by Sard. In particular, if $\dim N \geq 1$ then $F$ has a regular value, and if $\dim M < \dim N$ then every value is critical, consistently with the fact that a smaller manifold cannot fill a larger one.
 
 **Corollary.** If $F : M \to N$ is a smooth map and $\dim M = \dim N$, then the regular values are dense; at a regular value $c$, the preimage $F^{-1}(c)$ is finite when $M$ is compact.
 
-**Proof.** At a regular value with $m = n$, the differential is an isomorphism at every preimage point, so $F$ is a local diffeomorphism there by the inverse function theorem; the preimage is discrete, and it is finite when $M$ is compact. Density is the corollary above. $\square$
+**Proof.** At a regular value with $m = n$, the differential is an isomorphism at every preimage point, so $F$ is a local diffeomorphism there by the inverse function theorem; the preimage is discrete, and it is finite when $M$ is compact. Density is the corollary above.
 
 ## Transversality
 
@@ -61,11 +61,11 @@ $$
 T_p F^{-1}(Z) = (dF_p)^{-1}\bigl(T_{F(p)}Z\bigr).
 $$
 
-**Proof.** The statement is local, so one may suppose $N = \mathbb{R}^n$ and $Z = \mathbb{R}^k \times \{0\}$, the local model of a submanifold. Write $F = (F_1, F_2)$ with $F_1 : M \to \mathbb{R}^k$ and $F_2 : M \to \mathbb{R}^{n-k}$. Transversality to $Z$ means that $d(F_2)_p$ is surjective whenever $F_2(p) = 0$. Hence $0$ is a regular value of $F_2$, and $F^{-1}(Z) = F_2^{-1}(0)$ is a submanifold of dimension $\dim M - (n - k)$ whose tangent space is $\ker d(F_2)_p = (dF_p)^{-1}(\mathbb{R}^k \times \{0\})$. $\square$
+**Proof.** The statement is local, so one may suppose $N = \mathbb{R}^n$ and $Z = \mathbb{R}^k \times \{0\}$, the local model of a submanifold. Write $F = (F_1, F_2)$ with $F_1 : M \to \mathbb{R}^k$ and $F_2 : M \to \mathbb{R}^{n-k}$. Transversality to $Z$ means that $d(F_2)_p$ is surjective whenever $F_2(p) = 0$. Hence $0$ is a regular value of $F_2$, and $F^{-1}(Z) = F_2^{-1}(0)$ is a submanifold of dimension $\dim M - (n - k)$ whose tangent space is $\ker d(F_2)_p = (dF_p)^{-1}(\mathbb{R}^k \times \{0\})$.
 
 **Corollary (transverse intersection).** If $X$ and $Z$ are transverse regular submanifolds of $N$, then $X \cap Z$ is a regular submanifold of dimension $\dim X + \dim Z - \dim N$.
 
-**Proof.** Apply the preimage theorem to the inclusion $X \hookrightarrow N$, which is transverse to $Z$. $\square$
+**Proof.** Apply the preimage theorem to the inclusion $X \hookrightarrow N$, which is transverse to $Z$.
 
 **Example.** Two curves in a surface intersect transversely when their tangent lines are distinct at each intersection point, and the intersection is a finite set; this is the dimension count $1 + 1 - 2 = 0$. A curve and a surface in three-space intersect transversely when the curve crosses the surface and is not tangent to it, giving points; a curve tangent to the surface at a point may still be transverse there if it crosses, but a curve lying in the surface is not transverse.
 
@@ -75,7 +75,7 @@ $$
 
 **Theorem (transversality theorem, Thom).** Let $F : M \to N$ be a smooth map of manifolds and $Z \subseteq N$ a regular submanifold. Then there are arbitrarily small smooth perturbations $G$ of $F$ with $G \pitchfork Z$. If in addition $F$ is transverse to $Z$ on a closed subset $A \subseteq M$ on which the transversality condition already holds, the perturbation may be taken to agree with $F$ on a neighbourhood of $A$.
 
-**Proof sketch.** The space of smooth maps $M \to N$ is parametrised locally by finite-dimensional families, and the evaluation map for such a family is transverse to $Z$ by Sard's theorem; a regular parameter value then gives a map transverse to $Z$. Agreement on a closed set is achieved by choosing the perturbations supported away from it. The finite-dimensional approximation uses the approximation theorem below. $\square$
+**Proof sketch.** The space of smooth maps $M \to N$ is parametrised locally by finite-dimensional families, and the evaluation map for such a family is transverse to $Z$ by Sard's theorem; a regular parameter value then gives a map transverse to $Z$. Agreement on a closed set is achieved by choosing the perturbations supported away from it. The finite-dimensional approximation uses the approximation theorem below.
 
 **Corollary.** If $\dim M + \dim Z < \dim N$, then a map $F : M \to N$ can be perturbed to one with $F(M) \cap Z = \emptyset$, and if $\dim M + \dim Z = \dim N$ it can be perturbed to one meeting $Z$ in a finite set of transverse points. Consequently two submanifolds of complementary dimension can always be made to meet transversely in finitely many points.
 
@@ -101,7 +101,7 @@ $$
 
 **Proposition.** The integer $I(F, Z)$ depends only on the homotopy class of $F$, not on the perturbation making it transverse.
 
-**Proof sketch.** A homotopy between two transverse maps can itself be made transverse to $Z$ by the transversality theorem, and the preimage of $Z$ under the homotopy is then a compact oriented one-manifold with boundary the union of the two finite preimage sets, counted with signs; a compact oriented one-manifold has boundary of total signed count zero, which gives the invariance. $\square$
+**Proof sketch.** A homotopy between two transverse maps can itself be made transverse to $Z$ by the transversality theorem, and the preimage of $Z$ under the homotopy is then a compact oriented one-manifold with boundary the union of the two finite preimage sets, counted with signs; a compact oriented one-manifold has boundary of total signed count zero, which gives the invariance.
 
 ### The Degree of a Map
 
@@ -129,7 +129,7 @@ for any regular value $c$ of $F$; the right-hand side is independent of the regu
 
 **(f)** If $M$ and $N$ are compact with boundary and $F$ maps $\partial M$ to $\partial N$, then $\deg(F|_{\partial M}) = \deg(F)$.
 
-**Proof sketch.** Part (a) is the finiteness of the preimage and the definition; (b) is the homotopy invariance of the intersection number; (c) follows by taking a regular value and using the inverse function theorem; (d) follows from the chain rule and the multiplicativity of orientation signs; (e) is the Hurewicz and cellular approximation argument, standard from algebraic topology; (f) follows by applying the one-manifold boundary argument to a regular value of $F$. $\square$
+**Proof sketch.** Part (a) is the finiteness of the preimage and the definition; (b) is the homotopy invariance of the intersection number; (c) follows by taking a regular value and using the inverse function theorem; (d) follows from the chain rule and the multiplicativity of orientation signs; (e) is the Hurewicz and cellular approximation argument, standard from algebraic topology; (f) follows by applying the one-manifold boundary argument to a regular value of $F$.
 
 **Definition.** The **degree mod $2$**, written $\deg_2(F)$, is the parity of $\# F^{-1}(c)$ for a regular value $c$; it is defined without any orientation and depends only on the homotopy class. It is the reduction of $\deg(F)$ modulo $2$ when an orientation is present.
 
@@ -149,7 +149,7 @@ $$
 \deg(r \circ \iota) = \deg(\mathrm{id}_{S^{n-1}}) = 1 .
 $$
 
-But the ball is contractible, so the inclusion $\iota$ is nullhomotopic; hence $r \circ \iota$ is nullhomotopic, and by the homotopy invariance of the degree, part (b), it has degree $0$. The two values of the degree of the same map contradict each other. Hence $f$ has a fixed point. $\square$
+But the ball is contractible, so the inclusion $\iota$ is nullhomotopic; hence $r \circ \iota$ is nullhomotopic, and by the homotopy invariance of the degree, part (b), it has degree $0$. The two values of the degree of the same map contradict each other. Hence $f$ has a fixed point.
 
 **Remark.** The same argument with degree mod $2$ gives the theorem for a continuous map, since a continuous map can be uniformly approximated by a smooth one by the approximation theorem below, and a fixed point of the approximation need not be a fixed point of the original; the standard deduction uses a limiting argument, which is a statement about the limit and belongs to Part III. The smooth case is what differential topology supplies directly.
 
@@ -161,7 +161,7 @@ But the ball is contractible, so the inclusion $\iota$ is nullhomotopic; hence $
 
 **Theorem (Whitney embedding).** Every smooth manifold of dimension $n$ admits a proper embedding into $\mathbb{R}^{2n}$, and a (not necessarily proper) embedding into $\mathbb{R}^{2n-1}$ for $n \geq 2$. In particular every smooth manifold is diffeomorphic to a regular submanifold of a Euclidean space.
 
-**Proof sketch.** One first embeds $M$ into some $\mathbb{R}^N$ by a proper map built from a partition of unity, then uses Sard's theorem to project the image to lower dimensions without creating self-intersections or destroying injectivity of the differential: at each projection step the set of directions that create a self-intersection or a tangency is the set of critical values of an associated map of a manifold of controlled dimension into the space of directions, and Sard's theorem guarantees that a direction outside it exists. The two steps reduce the ambient dimension to $2n$, and a refinement gives $2n - 1$ when $n \geq 2$. $\square$
+**Proof sketch.** One first embeds $M$ into some $\mathbb{R}^N$ by a proper map built from a partition of unity, then uses Sard's theorem to project the image to lower dimensions without creating self-intersections or destroying injectivity of the differential: at each projection step the set of directions that create a self-intersection or a tangency is the set of critical values of an associated map of a manifold of controlled dimension into the space of directions, and Sard's theorem guarantees that a direction outside it exists. The two steps reduce the ambient dimension to $2n$, and a refinement gives $2n - 1$ when $n \geq 2$.
 
 **Theorem (Whitney approximation).** Every continuous map between smooth manifolds is homotopic to a smooth map, and if it is already smooth on a closed subset it may be approximated there by smooth maps agreeing with it on a neighbourhood of that subset.
 
@@ -171,7 +171,7 @@ But the ball is contractible, so the inclusion $\iota$ is nullhomotopic; hence $
 
 **Theorem (tubular neighbourhood).** Every regular submanifold $S$ of a smooth manifold $M$ has an open neighbourhood $U$, the **tubular neighbourhood**, that is the total space of a vector bundle over $S$ — the normal bundle when a metric is chosen — and the inclusion $S \hookrightarrow U$ is a homotopy equivalence.
 
-**Proof sketch.** Choose a Riemannian metric, form the normal bundle, and apply the inverse function theorem to the restriction of the metric exponential map to a small disc bundle; the resulting diffeomorphism exhibits $U$ as a disc bundle over $S$, and a disc bundle deformation retracts onto its zero section. $\square$
+**Proof sketch.** Choose a Riemannian metric, form the normal bundle, and apply the inverse function theorem to the restriction of the metric exponential map to a small disc bundle; the resulting diffeomorphism exhibits $U$ as a disc bundle over $S$, and a disc bundle deformation retracts onto its zero section.
 
 ## Morse Theory
 
@@ -193,13 +193,13 @@ $$
 f = f(p) - (x^1)^2 - \cdots - (x^\lambda)^2 + (x^{\lambda+1})^2 + \cdots + (x^n)^2 .
 $$
 
-**Proof sketch.** The statement is local and reduces to a quadratic form, which the classification of quadratic forms of *Quadratic Forms and Polarisation* puts into the displayed diagonal shape; the change of coordinates is produced by the inverse function theorem. Nondegeneracy is exactly the invertibility needed. $\square$
+**Proof sketch.** The statement is local and reduces to a quadratic form, which the classification of quadratic forms of *Quadratic Forms and Polarisation* puts into the displayed diagonal shape; the change of coordinates is produced by the inverse function theorem. Nondegeneracy is exactly the invertibility needed.
 
 **Corollary.** A nondegenerate critical point is isolated; hence a Morse function on a closed manifold has finitely many critical points, and the critical values are isolated.
 
 **Theorem (existence of Morse functions).** Morse functions exist on every smooth manifold; in fact the Morse functions form a dense open subset of $C^\infty(M)$ in the fine topology.
 
-**Proof sketch.** By Sard's theorem applied to the map $p \mapsto \operatorname{Hess}_p f$ in local coordinates, a generic perturbation of $f$ avoids the critical values of the Hessian determinant; the openness is the openness of nondegeneracy. $\square$
+**Proof sketch.** By Sard's theorem applied to the map $p \mapsto \operatorname{Hess}_p f$ in local coordinates, a generic perturbation of $f$ avoids the critical values of the Hessian determinant; the openness is the openness of nondegeneracy.
 
 ### The Morse Inequalities
 
@@ -219,7 +219,7 @@ $$
 c_k - c_{k-1} + c_{k-2} - \cdots \pm c_0 \geq b_k - b_{k-1} + b_{k-2} - \cdots \pm b_0 .
 $$
 
-**Proof sketch.** As the level passes a critical value of index $\lambda$, the sublevel set changes by the attachment of a $\lambda$-handle $D^\lambda \times D^{n-\lambda}$ along $S^{\lambda-1} \times D^{n-\lambda}$; the handle attachment is the topological content of the Morse lemma, and it produces a chain complex whose $k$-th chain group has rank $c_k$ and whose homology is $H^k_{dR}(M)$. The rank inequalities for a chain complex then give the stated bounds. The handle attachment in the smooth category requires the gradient flow of $f$, whose existence and regularity are the differential-equation theory of Part III; the topological chain-level statement is what is used here, and it is standard. $\square$
+**Proof sketch.** As the level passes a critical value of index $\lambda$, the sublevel set changes by the attachment of a $\lambda$-handle $D^\lambda \times D^{n-\lambda}$ along $S^{\lambda-1} \times D^{n-\lambda}$; the handle attachment is the topological content of the Morse lemma, and it produces a chain complex whose $k$-th chain group has rank $c_k$ and whose homology is $H^k_{dR}(M)$. The rank inequalities for a chain complex then give the stated bounds. The handle attachment in the smooth category requires the gradient flow of $f$, whose existence and regularity are the differential-equation theory of Part III; the topological chain-level statement is what is used here, and it is standard.
 
 **Example.** A Morse function on the torus $T^2$ has at least one critical point of each index $0, 1, 2, 1$, namely $c_0 \geq 1$, $c_1 \geq 2$, $c_2 \geq 1$, with total signed count $1 - 2 + 1 = 0 = \chi(T^2)$, which matches the Betti numbers $1, 2, 1$ of the torus.
 
@@ -239,9 +239,9 @@ the boundary components carrying the orientations induced by that of $W$, the ma
 
 **Proposition.** Cobordism is an equivalence relation on the closed oriented $n$-manifolds: reflexivity is given by the cylinder $M_0 \times [0, 1]$, symmetry by reversing the cobordism, and transitivity by gluing two cobordisms along the common boundary component.
 
-**Proof.** The cylinder has boundary $M_0 \sqcup \overline{M_0}$, giving reflexivity up to the orientation convention; reversing the interval exchanges the two boundary components; and gluing along a common boundary component uses a collar neighbourhood, whose existence is the tubular neighbourhood theorem, and smooths the corner. $\square$
+**Proof.** The cylinder has boundary $M_0 \sqcup \overline{M_0}$, giving reflexivity up to the orientation convention; reversing the interval exchanges the two boundary components; and gluing along a common boundary component uses a collar neighbourhood, whose existence is the tubular neighbourhood theorem, and smooths the corner.
 
-**Definition.** The set of cobordism classes of closed oriented $n$-manifolds forms an abelian group $\Omega_n^{SO}$ under disjoint union, with zero the class of the empty manifold and inverses given by orientation reversal. Similarly the unoriented closed $n$-manifolds form a group $\mathfrak{N}_n$ under disjoint union and cobordism, with inverses not needed because every element is its own inverse, so that $\mathfrak{N}_n$ is a vector space over $\mathbb{F}_2$.
+**Definition.** The set of cobordism classes of closed oriented $n$-manifolds forms an abelian group $\Omega_n^{SO}$ under disjoint union, with zero the class of the empty manifold and inverses given by orientation reversal. Similarly the unoriented closed $n$-manifolds form a group $\mathrm{N}_n$ under disjoint union and cobordism, with inverses not needed because every element is its own inverse, so that $\mathrm{N}_n$ is a vector space over $\mathbb{F}_2$.
 
 **Example.** $\Omega_0^{SO} \cong \mathbb{Z}$, the class of a point, and a closed oriented zero-manifold is a finite signed set; every closed oriented one-manifold bounds, so $\Omega_1^{SO} = 0$; a closed oriented surface bounds a three-manifold, so $\Omega_2^{SO} = 0$; and $\Omega_3^{SO} = 0$, while $\Omega_4^{SO} \cong \mathbb{Z}$ generated by the complex projective plane with its complex orientation.
 
@@ -276,7 +276,7 @@ Every smooth manifold embeds in a Euclidean space, by Whitney's embedding theore
 | $c_k$, $b_k$ | Number of critical points of index $k$; $k$-th Betti number $\dim H^k_{dR}(M)$ |
 | Morse inequalities | $c_k \geq b_k$ and the alternating stronger forms; $\sum(-1)^k c_k = \chi(M)$ |
 | $\partial W = M_0 \sqcup M_1$ | Cobordism $W$ from $M_0$ to $M_1$ |
-| $\Omega_n^{SO}$, $\mathfrak{N}_n$ | Oriented and unoriented cobordism groups of closed $n$-manifolds |
+| $\Omega_n^{SO}$, $\mathrm{N}_n$ | Oriented and unoriented cobordism groups of closed $n$-manifolds |
 
 
 

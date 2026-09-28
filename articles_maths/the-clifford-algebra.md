@@ -43,11 +43,11 @@ $$
 
 Then there is a unique homomorphism of $R$-algebras $\tilde{f} : \mathrm{Cl}(V, q) \to A$ with $\tilde{f}(v) = f(v)$ for all $v \in V$.
 
-**Proof.** The universal property of the tensor algebra gives a unique algebra homomorphism $T(V) \to A$ extending $f$. For $v \in V$ its value on $v \otimes v - q(v)\cdot 1$ is $f(v)^2 - q(v)\cdot 1_A = 0$, so the homomorphism kills the ideal $I$ and descends to $\mathrm{Cl}(V, q)$; uniqueness is inherited from $T(V)$. $\square$
+**Proof.** The universal property of the tensor algebra gives a unique algebra homomorphism $T(V) \to A$ extending $f$. For $v \in V$ its value on $v \otimes v - q(v)\cdot 1$ is $f(v)^2 - q(v)\cdot 1_A = 0$, so the homomorphism kills the ideal $I$ and descends to $\mathrm{Cl}(V, q)$; uniqueness is inherited from $T(V)$.
 
 **Corollary (uniqueness).** The pair $(\mathrm{Cl}(V, q), \iota)$, where $\iota : V \to \mathrm{Cl}(V, q)$ is the structure map, is unique up to a unique isomorphism: if $(\mathrm{Cl}', \iota')$ has the same universal property, then there are mutually inverse algebra homomorphisms between $\mathrm{Cl}(V, q)$ and $\mathrm{Cl}'$ carrying $\iota$ to $\iota'$.
 
-**Proof.** Apply the universal property of each to the structure map of the other. $\square$
+**Proof.** Apply the universal property of each to the structure map of the other.
 
 So the Clifford algebra is characterised by the universal property and not by the quotient presentation, which is only one way to realise it.
 
@@ -73,11 +73,11 @@ $$
 q(u) + 2B(u, v) + q(v) = q(u) + uv + vu + q(v),
 $$
 
-so $uv + vu = 2B(u, v)\cdot 1$. $\square$
+so $uv + vu = 2B(u, v)\cdot 1$.
 
 **Corollary.** If $u$ and $v$ are orthogonal, $B(u, v) = 0$, then $uv = -vu$.
 
-**Proof.** Put $B(u, v) = 0$ in the fundamental relation. $\square$
+**Proof.** Put $B(u, v) = 0$ in the fundamental relation.
 
 The relation $uv + vu = 2B(u, v)$ is called the **fundamental relation** of the Clifford algebra. It is the polarised form of the defining relation and is the working form of the anticommutation law: in an orthogonal basis of a non-degenerate form the generators satisfy $e_i e_j = -e_j e_i$ for $i \neq j$ and $e_i^2 = q(e_i)$.
 
@@ -103,11 +103,11 @@ $$
 
 In particular $\mathrm{Cl}^0(V, q)$ is a subalgebra with the same identity, and $\mathrm{Cl}^1(V, q)$ is a module over it; the product of two odd elements is even.
 
-**Proof.** The parity of a product of tensor monomials is the sum of their parities, so a product of an element of parity $i$ and an element of parity $j$ is a sum of monomials of parity $i + j$; this is the inclusion. The closure of $\mathrm{Cl}^0$ under multiplication is the case $i = j = 0$. $\square$
+**Proof.** The parity of a product of tensor monomials is the sum of their parities, so a product of an element of parity $i$ and an element of parity $j$ is a sum of monomials of parity $i + j$; this is the inclusion. The closure of $\mathrm{Cl}^0$ under multiplication is the case $i = j = 0$.
 
 **Proposition.** Let $e_1, \ldots, e_n$ be an orthogonal basis of $V$, so that $B(e_i, e_j) = 0$ for $i \neq j$. Then $e_ie_j = -e_je_i$ for $i \neq j$, and a product $e_{i_1}\cdots e_{i_k}$ with distinct indices changes by the sign $(-1)^{|\sigma|}$ when the factors are reordered by a permutation $\sigma$. Consequently the associated graded algebra of the degree filtration is the exterior algebra $\Lambda(V)$.
 
-**Pro.** The anticommutation is the fundamental relation with $B(e_i, e_j) = 0$. Reordering the factors multiplies by the sign of the transpositions performed, and the square of a generator is a scalar, so the products of distinct generators give a well-defined associated graded algebra; it has the defining relations $e_i^2 = 0$ and $e_ie_j = -e_je_i$ of the exterior algebra, and by the dimension count it is exactly $\Lambda(V)$. $\square$
+**Pro.** The anticommutation is the fundamental relation with $B(e_i, e_j) = 0$. Reordering the factors multiplies by the sign of the transpositions performed, and the square of a generator is a scalar, so the products of distinct generators give a well-defined associated graded algebra; it has the defining relations $e_i^2 = 0$ and $e_ie_j = -e_je_i$ of the exterior algebra, and by the dimension count it is exactly $\Lambda(V)$.
 
 The grading is a parity and not a degree: unlike the exterior algebra, the Clifford algebra has no $\mathbb{Z}$-grading, because $e_i^2 = q(e_i)$ is a scalar and not zero.
 
@@ -121,7 +121,7 @@ $$
 \mathrm{Cl}^0(V, q) = \{x : \alpha(x) = x\}, \qquad \mathrm{Cl}^1(V, q) = \{x : \alpha(x) = -x\}.
 $$
 
-**Proof.** The map $v \mapsto -v$ squares to the same map as $v \mapsto v$ on the generators, since $(-v)^2 = v^2 = q(v)$; by the universal property it extends to an algebra endomorphism, and applying it twice is the identity on generators, hence everywhere. The eigenspace description is the definition. $\square$
+**Proof.** The map $v \mapsto -v$ squares to the same map as $v \mapsto v$ on the generators, since $(-v)^2 = v^2 = q(v)$; by the universal property it extends to an algebra endomorphism, and applying it twice is the identity on generators, hence everywhere. The eigenspace description is the definition.
 
 **Remark.** The grade involution is one of the three standard involutions of the Clifford algebra. The other two, **reversion** and **Clifford conjugation**, together with the volume element and the centre, are properties of the finite-dimensional theory and are treated in *Clifford Algebras in Finite Dimensions*.
 
@@ -137,7 +137,7 @@ $$
 
 where $\iota_V : V \to \mathrm{Cl}(V, q)$ and $\iota_W : W \to \mathrm{Cl}(W, q')$ are the structure maps.
 
-**Proof.** The composite $V \to W \to \mathrm{Cl}(W, q')$ is linear and satisfies $v \mapsto f(v)$ with $f(v)^2 = q'(f(v)) = q(v)$, so the universal property produces an algebra homomorphism $\mathrm{Cl}(V, q) \to \mathrm{Cl}(W, q')$. The same construction applied to $f^{-1}$ gives an inverse. $\square$
+**Proof.** The composite $V \to W \to \mathrm{Cl}(W, q')$ is linear and satisfies $v \mapsto f(v)$ with $f(v)^2 = q'(f(v)) = q(v)$, so the universal property produces an algebra homomorphism $\mathrm{Cl}(V, q) \to \mathrm{Cl}(W, q')$. The same construction applied to $f^{-1}$ gives an inverse.
 
 **Corollary.** The assignment $(V, q) \mapsto \mathrm{Cl}(V, q)$ is a functor from the category of quadratic spaces with isometries to the category of algebras with algebra homomorphisms, and it respects identities and composition.
 
@@ -157,7 +157,7 @@ $$
 \mathrm{Cl}(V, q) \otimes_R S \cong \mathrm{Cl}(V \otimes_R S,\ q \otimes_R S).
 $$
 
-**Proof.** Both sides satisfy the same universal property over $S$: the right side universally adjoins to $V \otimes_R S$ a square root of $q \otimes_R S$, and the left side is the scalar extension of the universal algebra over $R$. $\square$
+**Proof.** Both sides satisfy the same universal property over $S$: the right side universally adjoins to $V \otimes_R S$ a square root of $q \otimes_R S$, and the left side is the scalar extension of the universal algebra over $R$.
 
 The behaviour under orthogonal direct sums is the subject of the graded tensor product.
 
@@ -183,7 +183,7 @@ where $|b|$ and $|a'|$ are the parities of the homogeneous elements $b$ and $a'$
 
 **Proposition.** The graded tensor product is associative and commutative up to the natural isomorphisms of graded algebras, and it is the coproduct in the category of $\mathbb{Z}/2$-graded algebras.
 
-**Proof.** The sign $(-1)^{|b||a'|}$ is the Koszul sign, and the associativity and commutativity follow from the cocycle property of the sign; the coproduct property is the universal property of the tensor product combined with the grading. $\square$
+**Proof.** The sign $(-1)^{|b||a'|}$ is the Koszul sign, and the associativity and commutativity follow from the cocycle property of the sign; the coproduct property is the universal property of the tensor product combined with the grading.
 
 ### The Splitting Theorem
 
@@ -205,7 +205,7 @@ $$
 g(v_1, v_2)^2 = v_1^2 \otimes 1 + 1 \otimes v_2^2 + (v_1 \otimes 1)(1 \otimes v_2) + (1 \otimes v_2)(v_1 \otimes 1),
 $$
 
-and the two cross terms cancel because $(v_1 \otimes 1)(1 \otimes v_2) = v_1 \otimes v_2$ and $(1 \otimes v_2)(v_1 \otimes 1) = -v_1 \otimes v_2$ by the sign rule. Hence $g(v_1, v_2)^2 = (q_1(v_1) + q_2(v_2))\cdot 1$, and the universal property gives an algebra homomorphism from the left side to the right. It is an isomorphism: the restriction to each summand gives homomorphisms $\mathrm{Cl}(V_i, q_i) \to \mathrm{Cl}(V_1 \oplus V_2, q_1 \perp q_2)$ by the universal property, and these combine into a two-sided inverse because the products $v_1^a v_2^b$ with the parity rule generate the target. $\square$
+and the two cross terms cancel because $(v_1 \otimes 1)(1 \otimes v_2) = v_1 \otimes v_2$ and $(1 \otimes v_2)(v_1 \otimes 1) = -v_1 \otimes v_2$ by the sign rule. Hence $g(v_1, v_2)^2 = (q_1(v_1) + q_2(v_2))\cdot 1$, and the universal property gives an algebra homomorphism from the left side to the right. It is an isomorphism: the restriction to each summand gives homomorphisms $\mathrm{Cl}(V_i, q_i) \to \mathrm{Cl}(V_1 \oplus V_2, q_1 \perp q_2)$ by the universal property, and these combine into a two-sided inverse because the products $v_1^a v_2^b$ with the parity rule generate the target.
 
 **Corollary.** The parities multiply as
 
@@ -227,7 +227,7 @@ $$
 \mathrm{Cl}(V, q) \text{ is generated by } V \text{ with } v^2 = q(v)\cdot 1, \qquad uv + vu = 2B(u, v)\cdot 1.
 $$
 
-The associated form is $B$ with $q(v) = B(v, v)$, never $2B$; a generator of square $-1$ therefore corresponds to $q(v) = -1$, and the Clifford form of a number system is the negative of its norm form on the generators, as recorded in the companion entry with this article. The relation $v^2 = q(v)\cdot 1$ holds for every vector and not only for the elements of an orthogonal basis; in a hyperbolic plane, for instance, an isotropic basis $e, f$ with $q(e) = q(f) = 0$ and $B(e, f) = 1$ gives generators with $e^2 = f^2 = 0$ and $ef + fe = 2$.
+The associated form is $B$ with $q(v) = B(v, v)$, never $2B$; a generator of square $-1$ therefore corresponds to $q(v) = -1$, and the Clifford form of a number system is the negative of its norm on the generators, as recorded in the companion entry with this article. The relation $v^2 = q(v)\cdot 1$ holds for every vector and not only for the elements of an orthogonal basis; in a hyperbolic plane, for instance, an isotropic basis $e, f$ with $q(e) = q(f) = 0$ and $B(e, f) = 1$ gives generators with $e^2 = f^2 = 0$ and $ef + fe = 2$.
 
 ### The Parity Grading
 

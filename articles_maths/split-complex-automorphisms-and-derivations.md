@@ -5,9 +5,9 @@
 
 The split-complex algebra $\mathbb{D} = \mathbb{R}[x]/(x^2-1)$ is the two-dimensional real algebra with basis $1$, $j$, $j^2 = +1$. This article describes its two standard invariants: the group of $\mathbb{R}$-algebra **automorphisms** and the Lie algebra of $\mathbb{R}$-linear **derivations**. It is the two-dimensional counterpart of *Biquaternion Automorphisms and Derivations*, and the degeneration is sharp. The automorphism group collapses to the two-element group of the identity and the conjugation, and the derivation space collapses to zero: the split-complex algebra, like the complex field, is separable (étale) over $\mathbb{R}$, and a separable algebra of finite rank has no derivations at all. So the count that is two-dimensional here is the **Lie algebra of the unit group**, not the derivation space, and the article states that distinction explicitly rather than blurring it.
 
-The article owns the automorphism group $\operatorname{Aut}_{\mathbb{R}}(\mathbb{D})$, the derivation space $\operatorname{Der}_{\mathbb{R}}(\mathbb{D})$, the reason the derivation space vanishes, the two-dimensional space of **twisted** (conjugation-)derivations that replaces it, and the comparison with $\mathbb{C}$ and with $\mathbb{B}$. It assumes the algebra, the idempotents and the norm form of *Split-Complex Algebra*, *Split-Complex Idempotents and Projections* and *Split-Complex Norm and Invertibility*, and it cites the general theory of automorphisms and derivations of an algebra as the companion article *Automorphisms and Derivations of Algebras*. No physics is invoked and no new results are claimed beyond the explicit computations for $\mathbb{D}$.
+The article owns the automorphism group $\operatorname{Aut}_{\mathbb{R}}(\mathbb{D})$, the derivation space $\operatorname{Der}_{\mathbb{R}}(\mathbb{D})$, the reason the derivation space vanishes, the two-dimensional space of **twisted** (conjugation-)derivations that replaces it, and the comparison with $\mathbb{C}$ and with $\mathbb{B}$. It assumes the algebra, the idempotents and the norm of *Split-Complex Algebra*, *Split-Complex Idempotents and Projections* and *Split-Complex Norm and Invertibility*, and it cites the general theory of automorphisms and derivations of an algebra as the companion article *Automorphisms and Derivations of Algebras*. No physics is invoked and no new results are claimed beyond the explicit computations for $\mathbb{D}$.
 
-**Conventions.** The algebra is $\mathbb{D} = \mathbb{R}[x]/(x^2-1)$, commutative, of real dimension $2$; basis $1$, $j$, $j^2 = +1$; general element $Z = a+j b$; conjugate $\bar Z = a-j b$; idempotents $\Pi_\pm = \tfrac12(1\pm j)$; idempotent coordinates $Z_\pm = a\pm b$; norm form $N(Z) = a^2-b^2$. The **centre** is written $Z(\mathbb{D})$.
+**Conventions.** The algebra is $\mathbb{D} = \mathbb{R}[x]/(x^2-1)$, commutative, of real dimension $2$; basis $1$, $j$, $j^2 = +1$; general element $Z = a+j b$; conjugate $\bar Z = a-j b$; idempotents $\Pi_\pm = \tfrac12(1\pm j)$; idempotent coordinates $Z_\pm = a\pm b$; norm $N(Z) = a^2-b^2$. The **centre** is written $Z(\mathbb{D})$.
 
 ## Standing Facts: Commutativity, the Centre and Separability
 
@@ -47,7 +47,7 @@ $$
 \sigma(j)^2 = \sigma(j^2) = \sigma(1) = 1,
 $$
 
-so $u = \sigma(j)$ satisfies $u^2 = 1$ in $\mathbb{D}$. Writing $u = a+j b$, the equation $u^2 = (a^2+b^2) + 2a j b = 1$ forces $a b = 0$ and $a^2+b^2 = 1$, whose solutions are $u \in \{1, -1, j, -j\}$. The cases $u = \pm 1$ are excluded because $\sigma$ is injective: $u = 1$ would give $\sigma(j-1) = 0$, and $u = -1$ would give $\sigma(j+1) = 0$, with $j \mp 1 \neq 0$. Hence $u = \pm j$, and $\sigma(a+j b) = a \pm j b$. Both signs occur, as the identity and the conjugation, and each is bijective and multiplicative. $\square$
+so $u = \sigma(j)$ satisfies $u^2 = 1$ in $\mathbb{D}$. Writing $u = a+j b$, the equation $u^2 = (a^2+b^2) + 2a j b = 1$ forces $a b = 0$ and $a^2+b^2 = 1$, whose solutions are $u \in \{1, -1, j, -j\}$. The cases $u = \pm 1$ are excluded because $\sigma$ is injective: $u = 1$ would give $\sigma(j-1) = 0$, and $u = -1$ would give $\sigma(j+1) = 0$, with $j \mp 1 \neq 0$. Hence $u = \pm j$, and $\sigma(a+j b) = a \pm j b$. Both signs occur, as the identity and the conjugation, and each is bijective and multiplicative.
 
 In the idempotent basis the statement is a permutation of the two components: an automorphism fixes $1 = \Pi_1 + \Pi_2$ and $\Pi_1\Pi_2 = 0$, so it either fixes both idempotents or swaps them, and the swap is exactly the conjugation,
 
@@ -81,7 +81,7 @@ $$
 0 = D(j^2 - 1) = D(j)j + jD(j) = 2j\,D(j),
 $$
 
-using commutativity. Since $2j$ is a unit of $\mathbb{D}$ (its inverse is $\tfrac12 j$, because $N(2j) = -4 \neq 0$), it follows that $D(j) = 0$. Hence $D$ vanishes on the basis $\{1, j\}$, so $D = 0$. $\square$
+using commutativity. Since $2j$ is a unit of $\mathbb{D}$ (its inverse is $\tfrac12 j$, because $N(2j) = -4 \neq 0$), it follows that $D(j) = 0$. Hence $D$ vanishes on the basis $\{1, j\}$, so $D = 0$.
 
 **Proof (separability).** The algebra is the quotient $\mathbb{D} = \mathbb{R}[x]/(x^2-1)$ by a squarefree polynomial. The module of Kähler differentials is
 
@@ -89,7 +89,7 @@ $$
 \Omega_{\mathbb{D}/\mathbb{R}} = \mathbb{D}\,dx \big/ (2x\,dx) = \mathbb{D}/(2x)\,\mathbb{D}\, dx = 0,
 $$
 
-because $2x = 2j$ generates the unit ideal of $\mathbb{D}$. The universal derivation $\mathbb{D}\to\Omega_{\mathbb{D}/\mathbb{R}}$ is therefore zero, and derivations correspond to $\mathbb{D}$-linear maps $\Omega_{\mathbb{D}/\mathbb{R}} \to \mathbb{D}$, so $\operatorname{Der}_{\mathbb{R}}(\mathbb{D}) = \operatorname{Hom}_{\mathbb{D}}(\Omega_{\mathbb{D}/\mathbb{R}}, \mathbb{D}) = 0$. $\square$
+because $2x = 2j$ generates the unit ideal of $\mathbb{D}$. The universal derivation $\mathbb{D}\to\Omega_{\mathbb{D}/\mathbb{R}}$ is therefore zero, and derivations correspond to $\mathbb{D}$-linear maps $\Omega_{\mathbb{D}/\mathbb{R}} \to \mathbb{D}$, so $\operatorname{Der}_{\mathbb{R}}(\mathbb{D}) = \operatorname{Hom}_{\mathbb{D}}(\Omega_{\mathbb{D}/\mathbb{R}}, \mathbb{D}) = 0$.
 
 **Proof (idempotent basis).** Under the isomorphism $\mathbb{D}\cong\mathbb{R}\times\mathbb{R}$ a derivation corresponds to a pair of derivations of $\mathbb{R}$, since
 
@@ -97,11 +97,11 @@ $$
 D(Z_+, Z_-) = \bigl(D_1(Z_+), D_2(Z_-)\bigr)
 $$
 
-for the two components, and $\operatorname{Der}_{\mathbb{R}}(\mathbb{R}) = 0$ because a derivation of $\mathbb{R}$ vanishes on $\mathbb{Q}$ and hence, being $\mathbb{R}$-linear, on $\mathbb{R}$. So each $D_i = 0$ and $D = 0$. $\square$
+for the two components, and $\operatorname{Der}_{\mathbb{R}}(\mathbb{R}) = 0$ because a derivation of $\mathbb{R}$ vanishes on $\mathbb{Q}$ and hence, being $\mathbb{R}$-linear, on $\mathbb{R}$. So each $D_i = 0$ and $D = 0$.
 
 **Corollary.** Every $\mathbb{R}$-linear derivation of $\mathbb{D}$ is the zero map, so $\operatorname{Der}_{\mathbb{R}}(\mathbb{D}) = 0$; equivalently, the algebra is **rigid**, and the exponential of any derivation is the identity automorphism.
 
-**Remark (inner derivations).** Because $\mathbb{D}$ is commutative, $\operatorname{ad}_x = 0$ for every $x$, so the inner derivations are only the zero derivation, $\operatorname{Inn}(\mathbb{D}) = 0$; and since $\operatorname{Der}_{\mathbb{R}}(\mathbb{D}) = 0$, there are no outer derivations either. The whole derivation Lie algebra is the zero Lie algebra of dimension $0$, in contrast with the biquaternion case, where $\operatorname{Der}_{\mathbb{R}}(\mathbb{B}) \cong \mathfrak{so}(1,3)$ has real dimension $6$.
+**Remark (inner derivations).** Because $\mathbb{D}$ is commutative, $\operatorname{ad}_x = 0$ for every $x$, so the inner derivations are only the zero derivation, $\operatorname{Inn}(\mathbb{D}) = 0$; and since $\operatorname{Der}_{\mathbb{R}}(\mathbb{D}) = 0$, there are no outer derivations either. The whole derivation Lie algebra is the zero Lie algebra of dimension $0$, in contrast with the biquaternion case, where $\operatorname{Der}_{\mathbb{R}}(\mathbb{B}) \cong \mathrm{SO}(1,3)$ has real dimension $6$.
 
 ## The Two-Dimensional Twisted Derivation Space
 
@@ -139,7 +139,7 @@ $$
 D_u(a+j b) = b\,u
 $$
 
-is well defined, $\mathbb{R}$-linear, satisfies $D_u(1) = 0$, and satisfies the twisted rule because the only relation of $\mathbb{D}$ is $j^2 = 1$, on which the twisted rule gives $D_u(j^2) = u\,j - j\,u = 0 = D_u(1)$. Hence $D\mapsto D(j)$ is a linear isomorphism from $\operatorname{Der}_{\mathbb{R}}(\mathbb{D},\sigma)$ onto $\mathbb{D}$. $\square$
+is well defined, $\mathbb{R}$-linear, satisfies $D_u(1) = 0$, and satisfies the twisted rule because the only relation of $\mathbb{D}$ is $j^2 = 1$, on which the twisted rule gives $D_u(j^2) = u\,j - j\,u = 0 = D_u(1)$. Hence $D\mapsto D(j)$ is a linear isomorphism from $\operatorname{Der}_{\mathbb{R}}(\mathbb{D},\sigma)$ onto $\mathbb{D}$.
 
 So the **two-dimensional** object attached to the derivation picture of $\mathbb{D}$ is the twisted derivation space, identified with the algebra itself by evaluation at $j$. The identification is natural: the basis $\{1, j\}$ of $\mathbb{D}$ corresponds under $D\mapsto D(j)$ to the two twisted derivations
 
@@ -153,7 +153,7 @@ with $D_1(j) = 1$ and $D_2(j) = j$. Neither is an ordinary derivation, precisely
 
 ## Comparison with the Biquaternion Case
 
-The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ is simple, central simple over $\mathbb{C}$, of centre $\mathbb{C}_{\mathbb{B}}\cong\mathbb{C}$; its automorphism group over $\mathbb{R}$ is $\mathrm{PGL}(2,\mathbb{C})\rtimes\mathbb{Z}/2$ and its derivation space over $\mathbb{R}$ is $\mathfrak{so}(1,3)$ of real dimension $6$, spanned by the inner derivations $\operatorname{ad}_a = [a,\cdot]$ and identified with the bivector subspace. The split-complex algebra is the commutative, separable degeneration, and the whole passage is summarised as follows.
+The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ is simple, central simple over $\mathbb{C}$, of centre $\mathbb{C}_{\mathbb{B}}\cong\mathbb{C}$; its automorphism group over $\mathbb{R}$ is $\mathrm{PGL}(2,\mathbb{C})\rtimes\mathbb{Z}/2$ and its derivation space over $\mathbb{R}$ is $\mathrm{SO}(1,3)$ of real dimension $6$, spanned by the inner derivations $\operatorname{ad}_a = [a,\cdot]$ and identified with the bivector subspace. The split-complex algebra is the commutative, separable degeneration, and the whole passage is summarised as follows.
 
 | feature | $\mathbb{B}$ | $\mathbb{D}$ |
 |---|---|---|
@@ -162,7 +162,7 @@ The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$
 | simple? | yes (simple; central over $\mathbb{C}$) | no ($\mathbb{R}\Pi_\pm$ are ideals) |
 | $\operatorname{Aut}$ over $\mathbb{R}$ | $\mathrm{PGL}(2,\mathbb{C})\rtimes\mathbb{Z}/2$, real dim $6$, two components | $\mathbb{Z}/2$, dim $0$, discrete |
 | generators of $\operatorname{Aut}$ | inner automorphisms, plus the conjugate-linear coset | the identity and the swap of $\Pi_1,\Pi_2$ |
-| $\operatorname{Der}$ over $\mathbb{R}$ | $\mathfrak{so}(1,3)$, real dim $6$, all inner | $0$ |
+| $\operatorname{Der}$ over $\mathbb{R}$ | $\mathrm{SO}(1,3)$, real dim $6$, all inner | $0$ |
 | reason for the derivation space | noncommutativity $\Rightarrow$ nonzero $\operatorname{ad}_x$; not separable | commutativity and separability $\Rightarrow$ rigidity |
 | twisted derivations | $\sigma$-derivations for the conjugations | $\operatorname{Der}_{\mathbb{R}}(\mathbb{D},\bar{\cdot}) \cong \mathbb{D}$, dim $2$ |
 
@@ -182,7 +182,7 @@ The pattern is that over $\mathbb{R}$ the biquaternion algebra is noncommutative
 
 The split-complex algebra has exactly two $\mathbb{R}$-algebra automorphisms, the identity and the conjugation $\bar Z = a-j b$, which is the swap of the two idempotents $\Pi_1\leftrightarrow \Pi_2$; the group is $\mathbb{Z}/2$, discrete, with zero-dimensional Lie algebra. The derivation space vanishes, $\operatorname{Der}_{\mathbb{R}}(\mathbb{D}) = 0$, and the result has three proofs: the direct one, in which $D(j^2-1) = 2jD(j) = 0$ and $2j$ is a unit force $D(j)=0$; the separable one, in which the algebra is étale over $\mathbb{R}$ and its Kähler differentials vanish; and the idempotent one, in which $\mathbb{D}\cong\mathbb{R}\times\mathbb{R}$ has a derivation space that is a product of the (zero) derivation spaces of the two copies of $\mathbb{R}$. There are no inner derivations other than zero, and no outer ones.
 
-The two-dimensional space attached to the derivation picture is therefore not the ordinary derivation space but the space of twisted derivations with respect to the conjugation, $\operatorname{Der}_{\mathbb{R}}(\mathbb{D},\bar{\cdot}) \cong \mathbb{D}$, identified with the algebra by evaluation at $j$ and spanned by $D_1 : Z \mapsto b$ and $D_2 : Z \mapsto j b$. At the derivation level $\mathbb{D}$ behaves exactly like the complex field, which also has vanishing ordinary derivations and a two-dimensional twisted derivation space with respect to its conjugation; the two differ as algebras, a product of fields against a field. The contrast of the theory is with the noncommutative biquaternion algebra, whose automorphism group is $\mathrm{PGL}(2,\mathbb{C})\rtimes\mathbb{Z}/2$ and whose derivation space is the six-dimensional $\mathfrak{so}(1,3)$. The two-dimensional quantity that is genuinely attached to the algebra is the Lie algebra of its unit group, $\mathrm{Lie}(\mathbb{D}^\times) = \mathbb{D}$ as an abelian Lie algebra, treated in *Split-Complex Exponential and Lie Group Structure*, not the derivation space.
+The two-dimensional space attached to the derivation picture is therefore not the ordinary derivation space but the space of twisted derivations with respect to the conjugation, $\operatorname{Der}_{\mathbb{R}}(\mathbb{D},\bar{\cdot}) \cong \mathbb{D}$, identified with the algebra by evaluation at $j$ and spanned by $D_1 : Z \mapsto b$ and $D_2 : Z \mapsto j b$. At the derivation level $\mathbb{D}$ behaves exactly like the complex field, which also has vanishing ordinary derivations and a two-dimensional twisted derivation space with respect to its conjugation; the two differ as algebras, a product of fields against a field. The contrast of the theory is with the noncommutative biquaternion algebra, whose automorphism group is $\mathrm{PGL}(2,\mathbb{C})\rtimes\mathbb{Z}/2$ and whose derivation space is the six-dimensional $\mathrm{SO}(1,3)$. The two-dimensional quantity that is genuinely attached to the algebra is the Lie algebra of its unit group, $\mathrm{Lie}(\mathbb{D}^\times) = \mathbb{D}$ as an abelian Lie algebra, treated in *Split-Complex Exponential and Lie Group Structure*, not the derivation space.
 
 ## Summary of Notation
 
@@ -199,7 +199,7 @@ The two-dimensional space attached to the derivation picture is therefore not th
 | $\operatorname{Der}_{\mathbb{R}}(\mathbb{D},\sigma)$ | Twisted ($\sigma$-)derivations; $\cong\mathbb{D}$ |
 | $D_u(a+j b) = bu$ | The twisted derivation with $D_u(j) = u$ |
 | $\Omega_{\mathbb{D}/\mathbb{R}}$ | Module of Kähler differentials; $= 0$ |
-| $\mathfrak{so}(1,3)$ | Derivation space of $\mathbb{B}$ over $\mathbb{R}$, for comparison |
+| $\mathrm{SO}(1,3)$ | Derivation space of $\mathbb{B}$ over $\mathbb{R}$, for comparison |
 
 ## Further Reading
 

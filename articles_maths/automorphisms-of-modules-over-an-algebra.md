@@ -83,7 +83,7 @@ $$
 \operatorname{Aut}_A({}_A A) \cong (A^{\mathrm{op}})^{\times} \cong A^{\times}.
 $$
 
-*Proof.* The isomorphism is proved in *Modules over an Algebra*, §The Regular Module and Its Endomorphisms. It is $R$-linear in $a$ because right multiplication is $R$-bilinear, and it carries the reversed product of $A^{\mathrm{op}}$ to composition: $R_{a a'}(b)=b(aa')=(ba)a'=R_{a'}(R_a(b))$. Taking units gives the second statement. $\square$
+*Proof.* The isomorphism is proved in *Modules over an Algebra*, §The Regular Module and Its Endomorphisms. It is $R$-linear in $a$ because right multiplication is $R$-bilinear, and it carries the reversed product of $A^{\mathrm{op}}$ to composition: $R_{a a'}(b)=b(aa')=(ba)a'=R_{a'}(R_a(b))$. Taking units gives the second statement.
 
 Three consequences deserve emphasis. First, the theorem is asymmetric: it is right multiplication, not left multiplication, that gives $A$-linear endomorphisms of ${}_A A$. Left multiplication by $a$ is the module action itself and is $A$-linear only in the trivial sense that it is the action of an element on the module; as a transformation of $A$ it is not $A$-linear unless $a$ is central. Second, the automorphism group of the regular module is the group of units of $A$, so it is small in a precise sense: for $A=M_n(F)$ it is $GL_n(F)$, and for a division algebra $D$ it is $D^{\times}$. Third, the group $\operatorname{Aut}_A({}_A A)$ is not the group of algebra automorphisms of $A$: the latter consists of the bijective $R$-algebra maps $A \to A$ preserving the product, and it can be strictly larger, as the biquaternion case below shows. Automorphisms of the module and automorphisms of the algebra are different objects, and only the first is discussed here.
 
@@ -101,7 +101,7 @@ $$
 
 Equivalently, the image of $A$ in $\operatorname{End}_D(S)$ is dense for the finite topology.
 
-*Proof sketch.* For $n=1$ simplicity gives $Ax_1=S$, so some $a$ carries $x_1$ to $y_1$. For general $n$, consider the submodule $N=\{(ax_1,\dots,ax_n) : a \in A\}$ of $S^{\oplus n}$. If the conclusion failed for some $(y_1,\dots,y_n)$, then $N$ would be a proper submodule of the semisimple module $S^{\oplus n}$ and would miss a simple summand; composing a projection onto that summand with the resulting relation forces a nontrivial $D$-linear dependence among the $x_i$, contradicting independence. $\square$
+*Proof sketch.* For $n=1$ simplicity gives $Ax_1=S$, so some $a$ carries $x_1$ to $y_1$. For general $n$, consider the submodule $N=\{(ax_1,\dots,ax_n) : a \in A\}$ of $S^{\oplus n}$. If the conclusion failed for some $(y_1,\dots,y_n)$, then $N$ would be a proper submodule of the semisimple module $S^{\oplus n}$ and would miss a simple summand; composing a projection onto that summand with the resulting relation forces a nontrivial $D$-linear dependence among the $x_i$, contradicting independence.
 
 The theorem is standard and is quoted as such. It has the following corollary, which is the case used most often.
 
@@ -113,7 +113,7 @@ $$
 
 is an isomorphism. In particular, if $A$ is finite-dimensional over a field and $S$ is a finite-dimensional simple module with $D=\operatorname{End}_A(S)$, then $A/\operatorname{Ann}_A(S) \cong M_n(D^{\mathrm{op}})$ for $n=\dim_D S$, the opposite being the computation $\operatorname{End}_D(D^n)\cong M_n(D^{\mathrm{op}})$ of §Over a Division Ring applied to a $D$-basis of $S$.
 
-*Proof.* Density gives surjectivity when the finite topology is discrete, which is the case when $S$ is finite-dimensional over $D$; the kernel is $\operatorname{Ann}_A(S)$; the identification of $\operatorname{End}_D(S)$ with $M_n(D^{\mathrm{op}})$ is the choice of a $D$-basis. $\square$
+*Proof.* Density gives surjectivity when the finite topology is discrete, which is the case when $S$ is finite-dimensional over $D$; the kernel is $\operatorname{Ann}_A(S)$; the identification of $\operatorname{End}_D(S)$ with $M_n(D^{\mathrm{op}})$ is the choice of a $D$-basis.
 
 This corollary is the precise sense in which a finite-dimensional simple module is the defining module of a matrix algebra. It is the double centralizer statement in the form used by representation theory.
 
@@ -127,7 +127,7 @@ $$
 
 where $D=\operatorname{End}_A(S)$ is a division ring. Therefore $\operatorname{Aut}_A(S)=D^{\times}$.
 
-*Proof.* The kernel and image of $f$ are submodules, so each is $0$ or everything; a nonzero $f$ has zero kernel and full image, hence is bijective. An $A$-linear bijection has $A$-linear inverse, and a nonzero endomorphism of $S$ is invertible, so $\operatorname{End}_A(S)$ is a division ring whose units are the automorphisms. $\square$
+*Proof.* The kernel and image of $f$ are submodules, so each is $0$ or everything; a nonzero $f$ has zero kernel and full image, hence is bijective. An $A$-linear bijection has $A$-linear inverse, and a nonzero endomorphism of $S$ is invertible, so $\operatorname{End}_A(S)$ is a division ring whose units are the automorphisms.
 
 Consequently, for a simple module the only $A$-linear transformations are zero and invertible, and the invertible ones form the multiplicative group of a division ring. In particular $\operatorname{Aut}_A(S)$ is the unit group of the division ring $D$, not a matrix group, and the size of $D$ depends on the base field: for $A=M_n(\mathbb{C})$ the simple module is $\mathbb{C}^n$ and $D=\mathbb{C}$, so $\operatorname{Aut}_A(\mathbb{C}^n)=\mathbb{C}^{\times}$, while over $\mathbb{R}$ the same matrix algebra has $D=\mathbb{R}$ and automorphism group $\mathbb{R}^{\times}$. Over a non-algebraically-closed field the simple module of a finite-dimensional algebra can have endomorphism ring a larger division algebra.
 
@@ -143,7 +143,7 @@ $$
 \delta_{ki}\,t_{jl}=t_{ki}\,\delta_{jl}.
 $$
 
-Taking $i=j$ gives $t_{il}=t_{ii}\delta_{il}$, so $T$ is diagonal; taking $i \neq j$, $k=i$, $l=j$ gives $t_{jj}=t_{ii}$, so all diagonal entries are equal. Hence $T=\lambda I$ with $\lambda \in F$, and every scalar matrix is central. Therefore $\operatorname{End}_{M_n(F)}(S)\cong F$. $\square$
+Taking $i=j$ gives $t_{il}=t_{ii}\delta_{il}$, so $T$ is diagonal; taking $i \neq j$, $k=i$, $l=j$ gives $t_{jj}=t_{ii}$, so all diagonal entries are equal. Hence $T=\lambda I$ with $\lambda \in F$, and every scalar matrix is central. Therefore $\operatorname{End}_{M_n(F)}(S)\cong F$.
 
 **Corollary.** $\operatorname{Aut}_{M_n(F)}(S)\cong F^{\times}$.
 
@@ -156,7 +156,7 @@ $$
 \operatorname{Aut}_{M_n(F)}(M_n(F))\cong GL_n(F).
 $$
 
-*Proof.* The first isomorphism is the theorem on the regular module, applied to $A=M_n(F)$. The transpose $X \mapsto X^{\mathsf T}$ is an $F$-algebra isomorphism $M_n(F)^{\mathrm{op}}\to M_n(F)$, since $(XY)^{\mathsf T}=Y^{\mathsf T}X^{\mathsf T}$. Taking units gives $\operatorname{Aut}_{M_n(F)}(M_n(F))\cong GL_n(F)$. $\square$
+*Proof.* The first isomorphism is the theorem on the regular module, applied to $A=M_n(F)$. The transpose $X \mapsto X^{\mathsf T}$ is an $F$-algebra isomorphism $M_n(F)^{\mathrm{op}}\to M_n(F)$, since $(XY)^{\mathsf T}=Y^{\mathsf T}X^{\mathsf T}$. Taking units gives $\operatorname{Aut}_{M_n(F)}(M_n(F))\cong GL_n(F)$.
 
 Thus the regular module recovers the full matrix group $GL_n(F)$ as its automorphism group, while the simple module contributes only the scalars. Both statements are instances of the general principle that $\operatorname{Aut}_A(M)$ is large when $M$ is the algebra and small when $M$ is rigid.
 
@@ -218,11 +218,11 @@ $$
 \operatorname{Aut}_{\mathbb{B}}(\mathbb{B})\cong\mathbb{B}^{\times}\cong GL_2(\mathbb{C}),
 $$
 
-using that $\mathbb{B}$ is isomorphic to its opposite (quaternion conjugation is a $\mathbb{C}$-linear anti-automorphism) and that the group of units of $\mathbb{B}$ is the set of elements of nonzero norm, identified with $GL_2(\mathbb{C})$ under the matrix representative. Equivalently $\operatorname{Aut}_{\mathbb{B}}(\mathbb{B})=GL_2(\mathbb{C})$.
+using that $\mathbb{B}$ is isomorphic to its opposite (quaternion conjugation is a $\mathbb{C}$-linear anti-automorphism) and that the group of units of $\mathbb{B}$ is the set of elements $\tilde Q$ with $\tilde Q\bar{\tilde Q} \neq 0$, identified with $GL_2(\mathbb{C})$ under the matrix representative. Equivalently $\operatorname{Aut}_{\mathbb{B}}(\mathbb{B})=GL_2(\mathbb{C})$.
 
 ### Why the zero divisors obstruct a basis
 
-The biquaternion algebra has zero divisors: a nonzero $\tilde{Q}$ is a zero divisor exactly when its norm form vanishes, $N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}=0$. This has an immediate effect on endomorphisms and on bases. In any free module with basis $B$, a basis element $b$ has trivial annihilator: if $ab=0$ then $a$ must vanish, since the coefficient of $b$ in the expansion of $ab$ is the whole of $a$. But a zero divisor $\tilde{Q}$ has $\operatorname{Ann}_{\mathbb{B}}(\tilde{Q})\neq 0$, so $\tilde{Q}$ cannot occur in a basis. More: the cyclic module $\mathbb{B}\tilde{Q}$ is nonzero and not free. A free module of rank $r$ needs at least $r$ generators, so a free quotient of ${}_\mathbb{B}\mathbb{B}$ generated by one element can have rank at most one; and rank one would give $\mathbb{B}\tilde{Q}\cong\mathbb{B}$ with $\tilde{Q}$ the image of $1_{\mathbb{B}}$, forcing $\operatorname{Ann}_{\mathbb{B}}(\tilde{Q})=0$. Hence
+The biquaternion algebra has zero divisors: a nonzero $\tilde{Q}$ is a zero divisor exactly when $\tilde{Q}\bar{\tilde{Q}}=0$. This has an immediate effect on endomorphisms and on bases. In any free module with basis $B$, a basis element $b$ has trivial annihilator: if $ab=0$ then $a$ must vanish, since the coefficient of $b$ in the expansion of $ab$ is the whole of $a$. But a zero divisor $\tilde{Q}$ has $\operatorname{Ann}_{\mathbb{B}}(\tilde{Q})\neq 0$, so $\tilde{Q}$ cannot occur in a basis. More: the cyclic module $\mathbb{B}\tilde{Q}$ is nonzero and not free. A free module of rank $r$ needs at least $r$ generators, so a free quotient of ${}_\mathbb{B}\mathbb{B}$ generated by one element can have rank at most one; and rank one would give $\mathbb{B}\tilde{Q}\cong\mathbb{B}$ with $\tilde{Q}$ the image of $1_{\mathbb{B}}$, forcing $\operatorname{Ann}_{\mathbb{B}}(\tilde{Q})=0$. Hence
 
 $$
 \tilde{Q} \text{ a zero divisor} \implies \mathbb{B}\tilde{Q} \text{ is a nonzero cyclic module that is not free.}
@@ -306,7 +306,6 @@ Schur's lemma makes $\operatorname{End}_A(S)$ a division ring for simple $S$, wi
 | $\mathbb{H}$ | quaternions |
 | $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | biquaternions, $\cong M_2(\mathbb{C})$ over $\mathbb{C}$ |
 | $S=\mathbb{C}^2$ | defining module of $\mathbb{B}$ |
-| $N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}$ | norm form of $\mathbb{B}$ |
 | $\operatorname{Mod}(A)$ | category of left $A$-modules |
 
 

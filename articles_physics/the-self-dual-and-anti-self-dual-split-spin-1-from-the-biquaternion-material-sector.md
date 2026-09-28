@@ -58,7 +58,7 @@ $$
 a complex vector space of dimension three, equivalently a real vector space of dimension six with basis $\{e_1,e_2,e_3,ie_1,ie_2,ie_3\}$. The same six real basis elements are the six bivectors of the Clifford algebra $\mathrm{Cl}_{1,3}$: the three spatial rotation generators are the images of $e_k$, and the three boost generators are the images of $ie_k$. The real vector part is therefore at once
 
 - the space of real antisymmetric tensors, that is, of bivectors and of field strengths, through the identification of a complex three-vector with the pair $(\mathbf{E},\mathbf{B})$; and
-- the Lorentz Lie algebra $\mathfrak{so}(1,3)$ of rotations and boosts, with the commutator bracket.
+- the Lorentz Lie algebra $\mathrm{SO}(1,3)$ of rotations and boosts, with the commutator bracket.
 
 That the two are the same six-dimensional real space is not a coincidence of dimension: both are the antisymmetric square of the four-vector space, and in the $ict$ convention the four-vector space is the material sector. The material sector $\mathbb{M}_-$ is the four-dimensional real subspace spanned by $ie_0, e_1, e_2, e_3$; its antisymmetric square is the six-dimensional space spanned by the products of distinct basis elements, which is exactly the real vector part of $\mathbb{B}$.
 

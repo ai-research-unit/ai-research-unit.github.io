@@ -4,7 +4,7 @@
 
 The double-slit experiment is the minimal experiment in which a quantum amplitude is the **sum of two alternatives**. A particle reaches a screen point by either slit, the two routes contribute two amplitudes, and the intensity at the screen is the squared modulus of their sum. The cross term is the interference pattern; closing one slit removes it. Everything that is strange and everything that is ordinary about quantum amplitudes is visible in this one arrangement.
 
-This article asks what the biquaternion framework $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ says about the double slit, and what it does not. The read list has already settled the three objects the question depends on. *The Path Integral in Biquaternionic Form* identifies the symbol $i$ of the phase $e^{iS/\hbar}$ with the **central scalar imaginary**, places the exponent $iS/\hbar$ in the material sector $\mathbb{M}_-$, and records that only *relative* phases of paths are observable. *The Schrödinger Equation in Biquaternionic Form* identifies the wave function not with an element of $\mathbb{M}_+$ but with a **spinor in a minimal left ideal** $\mathbb{B}\tilde{P} \cong \mathbb{C}^2$, and shows that the same central $i$ is the complex structure of that module. *Quantum Mechanics in Biquaternionic Form* supplies the states, observables, Born rule, and measurement rule for the corresponding qubit. Two further articles of the series carry the geometry the double slit turns out to use: *The Bloch Ball as the Trace-One Slice of the Future Light Cone* identifies the state space with a slice of the norm-form cone, and *Decoherence as Idempotent Projection* describes the destruction of coherence as an algebraic channel. This article assembles these into the canonical interference experiment.
+This article asks what the biquaternion framework $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ says about the double slit, and what it does not. The read list has already settled the three objects the question depends on. *The Path Integral in Biquaternionic Form* identifies the symbol $i$ of the phase $e^{iS/\hbar}$ with the **central scalar imaginary**, places the exponent $iS/\hbar$ in the material sector $\mathbb{M}_-$, and records that only *relative* phases of paths are observable. *The Schrödinger Equation in Biquaternionic Form* identifies the wave function not with an element of $\mathbb{M}_+$ but with a **spinor in a minimal left ideal** $\mathbb{B}\tilde{P} \cong \mathbb{C}^2$, and shows that the same central $i$ is the complex structure of that module. *Quantum Mechanics in Biquaternionic Form* supplies the states, observables, Born rule, and measurement rule for the corresponding qubit. Two further articles of the series carry the geometry the double slit turns out to use: *The Bloch Ball as the Trace-One Slice of the Future Light Cone* identifies the state space with a slice of the biquaternion-norm cone, and *Decoherence as Idempotent Projection* describes the destruction of coherence as an algebraic channel. This article assembles these into the canonical interference experiment.
 
 The division between what is established and what is interpretation is stated here and kept explicit.
 
@@ -16,7 +16,7 @@ One further finding is reported as a **limit on what the double slit demonstrate
 
 The article is organized as follows. The next section writes the two-route amplitude and its interference. The section after that treats the fringe pattern and its standard geometry. The following section identifies the which-path qubit and its Bloch ball. The next proves the visibility–predictability bound and reads it as the cone condition. A section treats which-path detection and dephasing. A section examines the choice of phase root. A section treats spinor-valued routes and spin-dependent fringes. The article closes with what the algebra supplies, what it does not, and the open questions.
 
-**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$, and $i$ is the scalar imaginary, $i^2 = -1$, commuting with every $e_k$. The fixed-point subspaces are $\mathbb{M}_-$ (anti-Hermitian, the material sector) and $\mathbb{M}_+$ (Hermitian, the informational sector); $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace and $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_0, ie_0\}$ is the complex scalar subspace, the center of the algebra. The biquaternionic gradient is $\tilde{\nabla} = e_0\partial_{ict} + e_1\partial_x + e_2\partial_y + e_3\partial_z$ and its quaternion conjugate is $\bar{\tilde{\nabla}} = e_0\partial_{ict} - e_1\partial_x - e_2\partial_y - e_3\partial_z$. A Hermitian element is written $\tilde{H} = h_0 e_0 + i\mathbf{h}$, an idempotent is $\tilde{P}_\pm(\hat{\mu}) = \tfrac12(e_0 \pm i\hat{\mu})$ with $\hat{\mu}$ a unit pure real quaternion, and a state is $\tilde{\rho} = \tfrac12(e_0 + i\mathbf{r})$ with $|\mathbf{r}|\le 1$. The norm form is $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$. The trace formula $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ is inherited unchanged, as is the statement that multiplication by $i$ exchanges the sectors, $i\,\mathbb{M}_\pm = \mathbb{M}_\mp$.
+**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$, and $i$ is the scalar imaginary, $i^2 = -1$, commuting with every $e_k$. The fixed-point subspaces are $\mathbb{M}_-$ (anti-Hermitian, the material sector) and $\mathbb{M}_+$ (Hermitian, the informational sector); $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace and $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_0, ie_0\}$ is the complex scalar subspace, the center of the algebra. The biquaternionic gradient is $\tilde{\nabla} = e_0\partial_{ict} + e_1\partial_x + e_2\partial_y + e_3\partial_z$ and its quaternion conjugate is $\bar{\tilde{\nabla}} = e_0\partial_{ict} - e_1\partial_x - e_2\partial_y - e_3\partial_z$. A Hermitian element is written $\tilde{H} = h_0 e_0 + i\mathbf{h}$, an idempotent is $\tilde{P}_\pm(\hat{\mu}) = \tfrac12(e_0 \pm i\hat{\mu})$ with $\hat{\mu}$ a unit pure real quaternion, and a state is $\tilde{\rho} = \tfrac12(e_0 + i\mathbf{r})$ with $|\mathbf{r}|\le 1$. The biquaternion norm is $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$. The trace formula $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ is inherited unchanged, as is the statement that multiplication by $i$ exchanges the sectors, $i\,\mathbb{M}_\pm = \mathbb{M}_\mp$.
 
 ## The Two-Path Amplitude
 
@@ -118,7 +118,7 @@ which was checked on random amplitudes independently of the derivation: the norm
 
 **Interpretation.** Reading the fringe pattern as the projection of a rotating equatorial Bloch vector is a geometric reading. The algebra is consistent with it and makes it precise, but the algebra does not require the reading; the standard statement in terms of the two amplitudes is complete without it.
 
-## Visibility, Predictability, and the Norm-Form Bound
+## Visibility, Predictability, and the Biquaternion-Norm Bound
 
 Two numbers summarise the pattern and the path information. The **visibility** is the contrast of the fringes,
 
@@ -138,7 +138,7 @@ $$
 V^2 + P^2 = |\mathbf{r}_\perp|^2 + r_\parallel^2 = |\mathbf{r}|^2 \le 1 .
 $$
 
-This was checked on random pure and mixed which-path states; the identity held to machine precision, and equality held exactly for the pure states and failed for the mixed ones. The bound has a clean biquaternion reading. The norm form of $\tilde{\rho}$ is
+This was checked on random pure and mixed which-path states; the identity held to machine precision, and equality held exactly for the pure states and failed for the mixed ones. The bound has a clean biquaternion reading. The biquaternion norm of $\tilde{\rho}$ is
 
 $$
 N(\tilde{\rho}) = \tilde{\rho}\,\bar{\tilde{\rho}} = \tfrac14\bigl(1 - |\mathbf{r}|^2\bigr)e_0,
@@ -150,11 +150,11 @@ $$
 V^2 + P^2 = 1 - 4\,\mathrm{Sc}\bigl(N(\tilde{\rho})\bigr).
 $$
 
-By *The Bloch Ball as the Trace-One Slice of the Future Light Cone*, a trace-one element of $\mathbb{M}_+$ is a physical state exactly when it lies in the future light cone of the norm form, and it is pure exactly when it lies *on* the cone, where it is a zero divisor. Hence
+By *The Bloch Ball as the Trace-One Slice of the Future Light Cone*, a trace-one element of $\mathbb{M}_+$ is a physical state exactly when it lies in the future light cone of the biquaternion norm, and it is pure exactly when it lies *on* the cone, where it is a zero divisor. Hence
 
 > **maximal fringe contrast is the statement that the which-path state lies on the zero-divisor cone of $\mathbb{M}_+$; partial contrast is the statement that it lies in the interior.**
 
-Half-filled fringes and a mixed which-path state are the same fact, and it is a fact about the norm form. This is the framework's translation of the standard two-path duality $V^2 + P^2 \le 1$; the algebra does not change the number, it identifies the bound with the cone condition that the framework already uses for purity.
+Half-filled fringes and a mixed which-path state are the same fact, and it is a fact about the biquaternion norm. This is the framework's translation of the standard two-path duality $V^2 + P^2 \le 1$; the algebra does not change the number, it identifies the bound with the cone condition that the framework already uses for purity.
 
 ## Which-Path Detection and the Loss of Interference
 
@@ -273,7 +273,7 @@ maximal when the two route spinors are parallel (the scalar case) and vanishing 
 
 3. **Spin-dependent routes from first principles.** The spin-dependent fringe formula above is standard once the route spinors differ. Does the framework produce the spin-path coupling of its own accord — for instance through a non-central phase generated by a spinor field equation — or must the route spinors be put in by hand? (Compare *The Path Integral in Biquaternionic Form*, open question 2.)
 
-4. **Does the cone reading add content?** The identity $V^2 + P^2 = 1 - 4\,\mathrm{Sc}(N(\tilde{\rho}))$ identifies the duality bound with the norm-form cone. Is that identification merely a restatement, or does the cone's Lorentzian geometry constrain interference in ways the standard inequality does not?
+4. **Does the cone reading add content?** The identity $V^2 + P^2 = 1 - 4\,\mathrm{Sc}(N(\tilde{\rho}))$ identifies the duality bound with the biquaternion-norm cone. Is that identification merely a restatement, or does the cone's Lorentzian geometry constrain interference in ways the standard inequality does not?
 
 5. **More than two paths.** The which-path state of a two-slit experiment is a qubit, and its state space is the Bloch ball. A three-slit experiment is a three-state system, whose framework state space would require the tensor or module extension that *Quantum Mechanics in Biquaternionic Form* leaves open. Does the cone picture survive, and in what dimension?
 
@@ -325,7 +325,7 @@ The algebra supplies the phase's imaginary unit, the sector of its exponent, a s
 | $r_\parallel = \hat{\mu}\cdot\mathbf{r}$, $\mathbf{r}_\perp$ | Polar (predictability) and equatorial (coherence) parts |
 | $V = |\mathbf{r}_\perp| = 2|\rho_{12}|$ | Fringe visibility |
 | $P = |r_\parallel| = |\rho_{11}-\rho_{22}|$ | Path predictability |
-| $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$ | Norm form; $N(\tilde{\rho}) = \tfrac14(1-|\mathbf{r}|^2)e_0$ |
+| $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$ | Biquaternion norm; $N(\tilde{\rho}) = \tfrac14(1-|\mathbf{r}|^2)e_0$ |
 | $V^2 + P^2 = |\mathbf{r}|^2 \le 1$ | Visibility–predictability (duality) bound = cone condition |
 | $\psi = \psi_1 + \psi_2 \in \mathbb{B}\tilde{P} \cong \mathbb{C}^2$ | Spinor-valued two-route amplitude |
 | $\langle\hat{s}_1,\hat{s}_2\rangle = \mathrm{Tr}(\hat{s}_1^\dagger\hat{s}_2)$ | Module inner product; spin overlap |
@@ -341,7 +341,7 @@ The algebra supplies the phase's imaginary unit, the sector of its exponent, a s
 - *Quantum Mechanics in Biquaternionic Form* — states, observables, the Born rule, and the measurement update.
 - *The Schrödinger Equation in Biquaternionic Form* — the wave function as a spinor in a minimal left ideal, and the central imaginary as the complex structure.
 - *The Path Integral in Biquaternionic Form* — the phase $e^{iS/\hbar}$ as a central unitary, its exponent in $\mathbb{M}_-$, and the measure/paths gap.
-- *The Bloch Ball as the Trace-One Slice of the Future Light Cone* — the state space as a slice of the norm-form cone.
+- *The Bloch Ball as the Trace-One Slice of the Future Light Cone* — the state space as a slice of the biquaternion-norm cone.
 - *Decoherence as Idempotent Projection* — the dephasing channel and the destruction of coherence.
 - *The Measurement Problem in Algebraic Form* — the mixture versus the realised outcome.
 - *The Born Rule as a Trace Formula — Derivation and Comparison* — the trace formula and its comparison with the standard postulate.

@@ -23,7 +23,7 @@ with multiplication composition and identity $\operatorname{id}_V$.
 
 **Proposition.** $\operatorname{GL}(V)$ is a group, and $T:V \to V$ is invertible if and only if $\ker T=0$, equivalently if and only if $T$ is surjective.
 
-*Proof.* Composition is associative, $\operatorname{id}_V$ is an identity, and the inverse of a bijective linear map is linear, so $\operatorname{GL}(V)$ is a group. For a linear endomorphism of a finite-dimensional space, injective, surjective and bijective coincide by the rank–nullity theorem of the linear-maps article. $\square$
+*Proof.* Composition is associative, $\operatorname{id}_V$ is an identity, and the inverse of a bijective linear map is linear, so $\operatorname{GL}(V)$ is a group. For a linear endomorphism of a finite-dimensional space, injective, surjective and bijective coincide by the rank–nullity theorem of the linear-maps article.
 
 Since the spaces arising here are finite-dimensional, no distinction between left and right inverses is needed. In infinite dimension the group of invertible bounded operators is a genuinely different object, and the algebraic general linear group of all invertible linear maps becomes a large non-finitely-generated group; the finite-dimensional case is the one used in this category.
 
@@ -53,7 +53,7 @@ So the two matrix realisations of $\operatorname{GL}(V)$ differ by conjugation b
 
 **Proposition.** If $V \neq 0$ then $Z(\operatorname{GL}(V))=\{\lambda \operatorname{id}_V : \lambda \in F^{\times}\}$, a subgroup isomorphic to $F^{\times}$.
 
-*Proof.* A scalar map commutes with everything. Conversely, let $T$ commute with every $S \in \operatorname{GL}(V)$ and let $v \neq 0$. First $T(v) \in \langle v\rangle$: were $v,T(v)$ linearly independent they would extend to a basis, and the map $S$ with $S(v)=v$ and $S(T(v))=v+T(v)$ would be invertible with $ST(v)=v+T(v)$ while $TS(v)=T(v)$, contradicting $ST=TS$. Write $T(v)=\lambda_vv$, with $\lambda_v \neq 0$ because $T$ is invertible. If $u,v$ are independent then $T(u+v)=\lambda_{u+v}(u+v)=\lambda_uu+\lambda_vv$ forces $\lambda_u=\lambda_v$; if $u=cv$ are dependent then $\lambda_ucv=T(cv)=c\lambda_vv$, so again $\lambda_u=\lambda_v$. Hence all $\lambda_v$ agree and $T=\lambda\operatorname{id}_V$ with $\lambda \in F^{\times}$. $\square$
+*Proof.* A scalar map commutes with everything. Conversely, let $T$ commute with every $S \in \operatorname{GL}(V)$ and let $v \neq 0$. First $T(v) \in \langle v\rangle$: were $v,T(v)$ linearly independent they would extend to a basis, and the map $S$ with $S(v)=v$ and $S(T(v))=v+T(v)$ would be invertible with $ST(v)=v+T(v)$ while $TS(v)=T(v)$, contradicting $ST=TS$. Write $T(v)=\lambda_vv$, with $\lambda_v \neq 0$ because $T$ is invertible. If $u,v$ are independent then $T(u+v)=\lambda_{u+v}(u+v)=\lambda_uu+\lambda_vv$ forces $\lambda_u=\lambda_v$; if $u=cv$ are dependent then $\lambda_ucv=T(cv)=c\lambda_vv$, so again $\lambda_u=\lambda_v$. Hence all $\lambda_v$ agree and $T=\lambda\operatorname{id}_V$ with $\lambda \in F^{\times}$.
 
 The centre is the group of **homotheties**, or dilations, and it is the kernel of the action of $\operatorname{GL}(V)$ on lines. It is not a complement to $\operatorname{SL}(V)$ in general: the scalar $\lambda \operatorname{id}$ has determinant $\lambda^n$, so the scalars meeting $\operatorname{SL}(V)$ are the $n$-th roots of unity.
 
@@ -67,7 +67,7 @@ $$
 
 whose kernel is the subgroup of automorphisms of determinant $1$.
 
-*Proof.* Multiplicativity $\det(AB)=\det A \det B$ gives $\det(ST)=\det S \det T$, and invertibility forces $\det T \neq 0$, so the image lies in $F^{\times}$. Surjectivity: every $\lambda \in F^{\times}$ occurs, for instance as the determinant of the diagonal map sending a basis vector $v_1$ to $\lambda v_1$ and each other $v_i$ to itself. The kernel description is the definition of the kernel. $\square$
+*Proof.* Multiplicativity $\det(AB)=\det A \det B$ gives $\det(ST)=\det S \det T$, and invertibility forces $\det T \neq 0$, so the image lies in $F^{\times}$. Surjectivity: every $\lambda \in F^{\times}$ occurs, for instance as the determinant of the diagonal map sending a basis vector $v_1$ to $\lambda v_1$ and each other $v_i$ to itself. The kernel description is the definition of the kernel.
 
 **Definition.** $\operatorname{SL}(V)=\ker\det$ is the **special linear group** of $V$.
 
@@ -75,7 +75,7 @@ The determinant is not merely one homomorphism among many: it is the unique alte
 
 **Proposition.** $\operatorname{SL}(V)$ is a normal subgroup of $\operatorname{GL}(V)$, and $\operatorname{GL}(V)/\operatorname{SL}(V) \cong F^{\times}$.
 
-*Proof.* It is the kernel of a homomorphism, hence normal, and the first isomorphism theorem identifies the quotient with the image $F^{\times}$. $\square$
+*Proof.* It is the kernel of a homomorphism, hence normal, and the first isomorphism theorem identifies the quotient with the image $F^{\times}$.
 
 ## The Projective General Linear Group
 
@@ -89,7 +89,7 @@ $$
 
 **Proposition.** The kernel of this action is $Z(\operatorname{GL}(V))$, so the action factors through an action of $\operatorname{GL}(V)/Z(\operatorname{GL}(V))$ on $\mathbb{P}(V)$ that is faithful and transitive.
 
-*Proof.* $T$ fixes every line exactly when every vector is an eigenvector of $T$, which forces $T$ to be scalar; that is the centre. By the first isomorphism theorem the quotient acts faithfully. For transitivity, any two nonzero vectors lie in bases of $V$ of the same cardinality, and a linear isomorphism carries one basis to the other. $\square$
+*Proof.* $T$ fixes every line exactly when every vector is an eigenvector of $T$, which forces $T$ to be scalar; that is the centre. By the first isomorphism theorem the quotient acts faithfully. For transitivity, any two nonzero vectors lie in bases of $V$ of the same cardinality, and a linear isomorphism carries one basis to the other.
 
 **Definition.** The **projective general linear group** is
 
@@ -123,7 +123,7 @@ $$
 \begin{pmatrix} A & B \\ 0 & D \end{pmatrix}, \qquad A \in \operatorname{GL}_k(F),\ D \in \operatorname{GL}_{n-k}(F).
 $$
 
-*Proof.* Transitivity: a linear isomorphism carries any $k$-subspace to any other, because bases of the two subspaces extend to bases of $V$, and a bijection of bases extends to an automorphism. For the stabiliser, an operator with $T(W) \subseteq W$ and $\dim W=\dim T(W)$ in finite dimension has $T(W)=W$, so the containment is an equality. In a basis adapted to $W$ the first $k$ columns of the matrix have their last $n-k$ entries zero, which is the block form, and invertibility is exactly $A,D$ invertible. $\square$
+*Proof.* Transitivity: a linear isomorphism carries any $k$-subspace to any other, because bases of the two subspaces extend to bases of $V$, and a bijection of bases extends to an automorphism. For the stabiliser, an operator with $T(W) \subseteq W$ and $\dim W=\dim T(W)$ in finite dimension has $T(W)=W$, so the containment is an equality. In a basis adapted to $W$ the first $k$ columns of the matrix have their last $n-k$ entries zero, which is the block form, and invertibility is exactly $A,D$ invertible.
 
 The subgroups $P_W$ are the **maximal parabolics** of $\operatorname{GL}(V)$; they are conjugate as $W$ varies over $\operatorname{Gr}_k(V)$, and their conjugacy classes are the conjugacy classes of parabolic subgroups. A maximal flag
 
@@ -157,7 +157,7 @@ For $w=w_0$ the right-hand side is $\min(j,n+1-i)$, so the big cell $Bw_0B$ is t
 
 **Theorem.** Over a field, $\operatorname{GL}_n(F)$ is generated by the elementary matrices $E_{ij}(\lambda)=I+\lambda e_{ij}$, where $e_{ij}$ is the matrix unit with a $1$ in position $(i,j)$ and zeros elsewhere, $i \neq j$, together with the invertible diagonal matrices.
 
-*Proof.* This is Gaussian elimination read backwards: every invertible matrix can be reduced to the identity by row operations, so it is a product of elementary matrices and one diagonal matrix; the elementary row operations are left multiplication by the matrices $E_{ij}(\lambda)$, transposition of two rows, and scaling of a row. A transposition matrix is a product of elementary matrices and a diagonal sign change over a field, and scaling is diagonal. $\square$
+*Proof.* This is Gaussian elimination read backwards: every invertible matrix can be reduced to the identity by row operations, so it is a product of elementary matrices and one diagonal matrix; the elementary row operations are left multiplication by the matrices $E_{ij}(\lambda)$, transposition of two rows, and scaling of a row. A transposition matrix is a product of elementary matrices and a diagonal sign change over a field, and scaling is diagonal.
 
 **Theorem.** For $n \ge 2$ and $F$ a field, $\operatorname{SL}_n(F)$ is generated by the elementary matrices $E_{ij}(\lambda)$.
 

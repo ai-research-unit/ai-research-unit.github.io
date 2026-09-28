@@ -28,7 +28,7 @@ $$
 
 **Proposition (first moment method).** Let $X \geq 0$ be a random variable taking values in a countable set. If $\mathbb{E}[X] < 1$ then $\mathbb{P}(X = 0) > 0$; more generally, if $\mathbb{E}[X] \leq k$ then $\mathbb{P}(X \leq k) > 0$. When $X$ counts the defects of a random object, the object is defect-free with positive probability.
 
-*Proof.* Markov's inequality gives $\mathbb{P}(X \geq 1) \leq \mathbb{E}[X] < 1$, so $\mathbb{P}(X = 0) > 0$. For the second statement, $\mathbb{P}(X \geq k+1)\leq \mathbb{E}[X]/(k+1) < 1$. $\square$
+*Proof.* Markov's inequality gives $\mathbb{P}(X \geq 1) \leq \mathbb{E}[X] < 1$, so $\mathbb{P}(X = 0) > 0$. For the second statement, $\mathbb{P}(X \geq k+1)\leq \mathbb{E}[X]/(k+1) < 1$.
 
 The two propositions are the workhorses of the method, and they are the measure-theoretic statements behind the whole technique: the union bound controls the event that some bad configuration occurs, and the first moment bound controls the expected number of bad configurations. The usual pattern is: define a random object, count the expected number of defects, and if the expectation is below one, conclude that a defect-free object exists.
 
@@ -44,7 +44,7 @@ $$
 \mathbb{E}[X] = \binom{n}{k}2^{1-\binom{k}{2}} < \frac{n^k}{k!}\,2^{1-k(k-1)/2}.
 $$
 
-Taking $n = \lfloor 2^{k/2}\rfloor$ gives $\mathbb{E}[X] < 2^{k/2+1}/k!$, and $k! \geq 2^{k/2+1}$ for $k \geq 3$; hence $\mathbb{E}[X] < 1$, so $\mathbb{P}(X = 0) > 0$: there is a colouring with no monochromatic $K_k$, and $R(k,k) > n$. $\square$
+Taking $n = \lfloor 2^{k/2}\rfloor$ gives $\mathbb{E}[X] < 2^{k/2+1}/k!$, and $k! \geq 2^{k/2+1}$ for $k \geq 3$; hence $\mathbb{E}[X] < 1$, so $\mathbb{P}(X = 0) > 0$: there is a colouring with no monochromatic $K_k$, and $R(k,k) > n$.
 
 The proof is the original application of the method and it remains its model: a probabilistic construction proves a lower bound that no explicit construction matches, and the gap between the bound $2^{k/2}$ and the upper bound $R(k,k) \leq 4^k$ remains one of the classical open problems.
 
@@ -54,7 +54,7 @@ The proof is the original application of the method and it remains its model: a 
 
 **Theorem (property B).** Every $k$-uniform hypergraph with fewer than $2^{k-1}$ edges is 2-colourable in the sense that no edge is monochromatic.
 
-*Proof.* Colour the vertices independently red or blue with probability $1/2$. For a fixed edge $E$ of size $k$ the probability that $E$ is monochromatic is $2^{1-k}$, so the expected number of monochromatic edges is $m2^{1-k} < 1$ when $m < 2^{k-1}$; the first moment method gives a colouring with no monochromatic edge. $\square$
+*Proof.* Colour the vertices independently red or blue with probability $1/2$. For a fixed edge $E$ of size $k$ the probability that $E$ is monochromatic is $2^{1-k}$, so the expected number of monochromatic edges is $m2^{1-k} < 1$ when $m < 2^{k-1}$; the first moment method gives a colouring with no monochromatic edge.
 
 The bound is the first and simplest of the colouring results, and it is the entry point of the local lemma, which replaces the counting of all edges by the counting of the edges through each vertex.
 
@@ -68,7 +68,7 @@ $$
 \mathbb{P}(X = 0) \leq \frac{\operatorname{Var}(X)}{\mathbb{E}[X]^2}, \qquad \text{and hence} \qquad \mathbb{P}(X > 0) \geq 1 - \frac{\operatorname{Var}(X)}{\mathbb{E}[X]^2}.
 $$
 
-*Proof.* By the Cauchy–Schwarz inequality, $\mathbb{E}[X]^2 = \mathbb{E}[X\mathbf{1}_{\{X>0\}}]^2 \leq \mathbb{E}[X^2]\,\mathbb{P}(X > 0)$, whence $\mathbb{P}(X>0) \geq \mathbb{E}[X]^2/\mathbb{E}[X^2]$; subtracting from $1$ and using $\mathbb{E}[X^2] = \operatorname{Var}(X) + \mathbb{E}[X]^2$ gives the stated form. $\square$
+*Proof.* By the Cauchy–Schwarz inequality, $\mathbb{E}[X]^2 = \mathbb{E}[X\mathbf{1}_{\{X>0\}}]^2 \leq \mathbb{E}[X^2]\,\mathbb{P}(X > 0)$, whence $\mathbb{P}(X>0) \geq \mathbb{E}[X]^2/\mathbb{E}[X^2]$; subtracting from $1$ and using $\mathbb{E}[X^2] = \operatorname{Var}(X) + \mathbb{E}[X]^2$ gives the stated form.
 
 The second moment criterion converts a variance computation into a lower bound on the probability that a random object has at least one of the desired configurations, and it is the standard tool of the threshold phenomena: when $\operatorname{Var}(X) = o(\mathbb{E}[X]^2)$ the count $X$ is concentrated near its mean, so almost surely $X>0$ whenever $\mathbb{E}[X]\to\infty$.
 
@@ -104,7 +104,7 @@ $$
 \mathbb{P}\!\left(\bigcap_iA_i^c\right) = \prod_i\left(1 - \mathbb{P}\!\left(A_i\bigm\mid \bigcap_{j<i}A_j^c\right)\right) > 0,
 $$
 
-since every factor is at least $1-x_i > 0$; in the symmetric form one takes $x_i = 1/(d+1)$, for which $\prod_{j\in N(i)}(1-x_j) \geq (1-\frac1{d+1})^d$, and $ep(d+1)\leq1$ makes the product inequality hold. $\square$
+since every factor is at least $1-x_i > 0$; in the symmetric form one takes $x_i = 1/(d+1)$, for which $\prod_{j\in N(i)}(1-x_j) \geq (1-\frac1{d+1})^d$, and $ep(d+1)\leq1$ makes the product inequality hold.
 
 **Theorem (general form).** If there exist $x_i \in [0,1)$ with
 
@@ -120,7 +120,7 @@ The local lemma is the union bound with the intersections controlled: the union 
 
 **Theorem (LLL for hypergraph colouring).** Every $k$-uniform hypergraph in which every edge intersects at most $d$ other edges is 2-colourable with no monochromatic edge, provided $e\,2^{1-k}(d+1) \leq 1$.
 
-*Proof.* Colour independently; let $A_E$ be the event that the edge $E$ is monochromatic, so $\mathbb{P}(A_E) = 2^{1-k}$, and the dependency graph joins two edges that intersect. The degree is at most $d$ by hypothesis and the symmetric local lemma applies. $\square$
+*Proof.* Colour independently; let $A_E$ be the event that the edge $E$ is monochromatic, so $\mathbb{P}(A_E) = 2^{1-k}$, and the dependency graph joins two edges that intersect. The degree is at most $d$ by hypothesis and the symmetric local lemma applies.
 
 The result is strictly stronger than the first moment bound on the number of edges, since the count of edges through a vertex can be large. The other standard applications are the satisfiability of a $k$-CNF formula in which each clause shares a variable with at most $2^{k-1}/e - 1$ other clauses, and the existence of Ramsey lower bounds with the alteration step, where the local lemma sharpens the constant.
 
@@ -132,7 +132,7 @@ The result is strictly stronger than the first moment bound on the number of edg
 
 *Proof (sketch).* Let $G = G(n,p)$ with $p = n^{\theta-1}$ for a fixed $\theta \in (0,1)$. The expected number of cycles of length at most $g$ is $O(n^{\theta g})$ and the expected number of independent sets of size $s = \lceil 3\ln n/p\rceil$ is $o(1)$; more precisely, a first moment estimate bounds the probability that some $s$-set is independent by
 $\binom{n}{s}(1-p)^{\binom{s}{2}} \leq (ne^{-p(s-1)/2})^s = o(1)$.
-Alter the graph by deleting one vertex from each short cycle: the graph that remains has girth exceeding $g$ and its chromatic number is at least $n/(2s)$ — because every colour class is an independent set of size at most $s$, and at most $n/(2s)$ vertices were deleted when $n$ is large — which exceeds $\chi$ for $n$ large. $\square$
+Alter the graph by deleting one vertex from each short cycle: the graph that remains has girth exceeding $g$ and its chromatic number is at least $n/(2s)$ — because every colour class is an independent set of size at most $s$, and at most $n/(2s)$ vertices were deleted when $n$ is large — which exceeds $\chi$ for $n$ large.
 
 The alteration method is the second of the classical techniques: one first produces a random object with few defects, then repairs the defects by discarding them, and shows that the repair costs little relative to the size of the object. It is the technique behind the construction of graphs of large girth and large chromatic number, the Ramsey lower bound $\frac{k}{e\sqrt2}2^{k/2}$ of Spencer, and many of the constructions of extremal combinatorics.
 

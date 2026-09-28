@@ -19,11 +19,11 @@ A homogeneous space is a manifold $G/H$ on which the Lie group $G$ acts transiti
 | the homogeneous space $G/H$ | the orbit space of the transitive action, of dimension $\dim G - \dim H$ | *Homogeneous Spaces* |
 | the orbit map $\theta_p(g) = g\cdot p$ | the surjection $G \to G/H$ exhibiting the principal $H$-bundle | *Homogeneous Spaces* |
 | the isotropy representation | the linear action of $H$ on the tangent space $T_{eH}(G/H)$ | *Homogeneous Spaces* |
-| the reductive decomposition $\mathfrak{g} = \mathfrak{h}\oplus\mathfrak{m}$ | the splitting with $[\mathfrak{h},\mathfrak{m}] \subseteq \mathfrak{m}$, carrying the geometry | *Homogeneous Spaces* |
-| the $G$-invariant metric on $G/H$ | the metric determined by an $\operatorname{Ad}(H)$-invariant inner product on $\mathfrak{m}$ | *Homogeneous Spaces* |
+| the reductive decomposition $\mathrm{G} = \mathrm{H}\oplus\mathrm{M}$ | the splitting with $[\mathrm{H},\mathrm{M}] \subseteq \mathrm{M}$, carrying the geometry | *Homogeneous Spaces* |
+| the $G$-invariant metric on $G/H$ | the metric determined by an $\operatorname{Ad}(H)$-invariant inner product on $\mathrm{M}$ | *Homogeneous Spaces* |
 | the isometry group $\operatorname{Isom}(M,g)$ | a Lie group by Myers–Steenrod, the ambient group of a geometry | *Homogeneous Spaces* |
 
-The isotropy representation is the linear data that survives the passage from the pair $(G,H)$ to the space, and the invariant metric, the invariant complex structure and the invariant forms are all determined by invariant tensors on the tangent space at a single point. The transitivity is the whole content of the homogeneous case: it reduces the local differential geometry of the space to the linear algebra of $\mathfrak{g}$, $\mathfrak{h}$ and $\mathfrak{m}$.
+The isotropy representation is the linear data that survives the passage from the pair $(G,H)$ to the space, and the invariant metric, the invariant complex structure and the invariant forms are all determined by invariant tensors on the tangent space at a single point. The transitivity is the whole content of the homogeneous case: it reduces the local differential geometry of the space to the linear algebra of $\mathrm{G}$, $\mathrm{H}$ and $\mathrm{M}$.
 
 ## The Classical Geometries
 
@@ -86,7 +86,7 @@ A symmetric space is a homogeneous space $G/H$ in which the stabiliser is the fi
 | Object | The property it has | Introduced in |
 |---|---|---|
 | a symmetric space $G/H$ | a homogeneous space with a Cartan involution $\sigma$ of $G$ whose fixed group is $H$ | *Symmetric Spaces* |
-| the symmetric pair $(\mathfrak{g},\sigma)$ | the Lie algebra with the involution splitting $\mathfrak{g} = \mathfrak{h}\oplus\mathfrak{m}$ | *Symmetric Spaces* |
+| the symmetric pair $(\mathrm{G},\sigma)$ | the Lie algebra with the involution splitting $\mathrm{G} = \mathrm{H}\oplus\mathrm{M}$ | *Symmetric Spaces* |
 | a compact or noncompact symmetric space | the sign of the curvature, decided by the sign of the invariant form | *Symmetric Spaces* |
 | the rank of a symmetric space | the dimension of a maximal flat totally geodesic submanifold | *Symmetric Spaces*; *Homogeneous Spaces* |
 | a Hermitian symmetric space | a symmetric space with a parallel invariant complex structure | *Symmetric Spaces* |
@@ -117,7 +117,7 @@ A catalogue denotes its objects by name rather than by symbol. The symbols that 
 
 | Symbol | Meaning |
 |---|---|
-| $G/H$, $\mathfrak{g}$, $\mathfrak{h}$, $\mathfrak{m}$ | Homogeneous space, Lie algebra, isotropy algebra, isotropy complement |
+| $G/H$, $\mathrm{G}$, $\mathrm{H}$, $\mathrm{M}$ | Homogeneous space, Lie algebra, isotropy algebra, isotropy complement |
 | $E(n)$, $O(n)$, $SO(n)$ | Euclidean and orthogonal groups |
 | $\mathbb{R}^n$, $S^n$, $\mathbf{H}^n$, $\mathbb{A}^n$, $\mathbb{P}^n$ | Euclidean, spherical, hyperbolic, affine and projective spaces |
 | $O(n+1,1)$, $SO(n,1)$ | Conformal and hyperbolic isometry groups |
@@ -125,11 +125,11 @@ A catalogue denotes its objects by name rather than by symbol. The symbols that 
 | $\mathrm{Gr}_k(\mathbb{R}^n)$, $V_k(\mathbb{R}^n)$, $F\ell_n(\mathbb{K})$ | Grassmannian, Stiefel manifold, flag manifold |
 | $S^n/\Gamma$, $\mathbf{H}^n/\Gamma$, $L(p,q)$ | Spherical and hyperbolic space forms; lens space |
 | $S^3$, $E^3$, $\mathbf{H}^3$, $S^2\times\mathbb{R}$, $\mathbf{H}^2\times\mathbb{R}$, $\widetilde{SL_2(\mathbb{R})}$, $\mathrm{Nil}$, $\mathrm{Sol}$ | The eight three-dimensional model geometries |
-| $(\mathfrak{g},\sigma)$, rank | Symmetric pair and rank of a symmetric space |
+| $(\mathrm{G},\sigma)$, rank | Symmetric pair and rank of a symmetric space |
 | $\mathbb{Z}$ | The standard number systems of the corpus |
 | $\operatorname{Isom}(M,g)$ | Isometry group of a metric, a Lie group by Myers–Steenrod |
 | $\operatorname{Aff}(n)$ | The affine group, $GL(n)\ltimes\mathbb{R}^n$ |
-| $\operatorname{Ad}(H)$ | The adjoint action of the isotropy group on $\mathfrak{m}$ |
+| $\operatorname{Ad}(H)$ | The adjoint action of the isotropy group on $\mathrm{M}$ |
 
 ## Further Reading
 

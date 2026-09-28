@@ -10,7 +10,7 @@ The physical content enters through one identification and one only: the eight r
 
 The algebra is stated and its properties are proved. The physical reading is an **identification**, not a derivation, and it is flagged as such wherever it occurs: the series does not claim that the algebra forces the interpretation.
 
-The six distinguished subspaces each have their own article in the **Subspaces** group of the series, where the basis and dimension, the algebra and module structure, the norm form, the matrix image and the intersections are worked out in full. The present article uses them throughout and points to the article concerned at each step.
+The six distinguished subspaces each have their own article in the **Focus on Subspaces** group of the series, where the basis and dimension, the algebra and module structure, the biquaternion norm, the matrix image and the intersections are worked out in full. The present article uses them throughout and points to the article concerned at each step.
 
 ## Biquaternions
 
@@ -40,7 +40,7 @@ because each complex dimension contributes two real dimensions, the real and ima
 
 **Which view the physics uses.** Both, for different purposes, and it is worth being explicit about which is in force.
 
-- The **real view** is the one in which the physics is written. The six distinguished subspaces $\mathbb{C}_{\mathbb{B}}$, $\mathrm{Vect}(\mathbb{B})$, $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$, $\mathbb{M}_-$ are **real** subspaces of this eight-dimensional space, the coordinate dictionary of the series is a dictionary between real parameters and physical coordinates, and the two signatures carried by the norm form are real forms on two of those subspaces. A statement about a signature is a statement over $\mathbb{R}$ and cannot be read off the complex view.
+- The **real view** is the one in which the physics is written. The six distinguished subspaces $\mathbb{C}_{\mathbb{B}}$, $\mathrm{Vect}(\mathbb{B})$, $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$, $\mathbb{M}_-$ are **real** subspaces of this eight-dimensional space, the coordinate dictionary of the series is a dictionary between real parameters and physical coordinates, and the two signatures carried by the biquaternion norm are real forms on two of those subspaces. A statement about a signature is a statement over $\mathbb{R}$ and cannot be read off the complex view.
 
 - The **complex view** is the view in which the complex scalars act as scalars, so the algebra is four-dimensional over $\mathbb{C}$ and therefore as small as it can be.
 
@@ -96,7 +96,7 @@ $$
 \tilde{Q} = ct'\,e_0 + i\mathbf{x}' \quad\text{(the \textbf{informational coordinate})}.
 $$
 
-The four coordinates $ct, x, y, z$ and the four coordinates $ct', x', y', z'$ are **the same eight parameters in a different grouping**, not two independent sets: the unprimed coordinates are the imaginary parts of the coefficients and the primed coordinates are the real parts. The material coordinate is the four-position of relativistic physics, written with the time coordinate $ict$ so that the Minkowski interval is carried by the norm form of the algebra; the informational coordinate is the same object read on the other sector. Primes always mark the informational end of the dictionary. **No index is raised or lowered anywhere in the series**, and no metric is used to move one: the $ict$ convention is what replaces that operation.
+The four coordinates $ct, x, y, z$ and the four coordinates $ct', x', y', z'$ are **the same eight parameters in a different grouping**, not two independent sets: the unprimed coordinates are the imaginary parts of the coefficients and the primed coordinates are the real parts. The material coordinate is the four-position of relativistic physics, written with the time coordinate $ict$ so that the Minkowski interval is carried by the biquaternion norm of the algebra; the informational coordinate is the same object read on the other sector. Primes always mark the informational end of the dictionary. **No index is raised or lowered anywhere in the series**, and no metric is used to move one: the $ict$ convention is what replaces that operation.
 
 ### The Algebra Structure
 
@@ -212,7 +212,7 @@ The table gives each subspace under its **algebraic** name, from the property th
 | $\mathbb{M}_+$ (Hermitian) | informational sector | $\tilde{Q}^{\dagger} = \tilde{Q}$ | $e_0,\ ie_1,\ ie_2,\ ie_3$ | $4$ | $ct',\ ix',\ iy',\ iz'$ |
 | $\mathbb{M}_-$ (anti-Hermitian) | material sector | $\tilde{Q}^{\flat} = \tilde{Q}$ | $ie_0,\ e_1,\ e_2,\ e_3$ | $4$ | $ict,\ x,\ y,\ z$ |
 
-Each of the six has its own article in the **Subspaces** group of the series:
+Each of the six has its own article in the **Focus on Subspaces** group of the series:
 
 | subspace | article |
 |---|---|
@@ -258,7 +258,7 @@ $$
 (ie_0)(ie_0) = -e_0 ,
 $$
 
-which has a real scalar part, so the product has left the material sector. The physical consequence is the one the series uses everywhere: the product of two four-vectors is not a four-vector, and it is the **norm form** and the **inner product**, not the algebra product, that carry the metric and the contractions of four-vectors. Multiplication in the algebra is reserved for the rotors and for the operators built from them.
+which has a real scalar part, so the product has left the material sector. The physical consequence is the one the series uses everywhere: the product of two four-vectors is not a four-vector, and it is the **biquaternion norm** and the **inner product**, not the algebra product, that carry the metric and the contractions of four-vectors. Multiplication in the algebra is reserved for the rotors and for the operators built from them.
 
 The six subspaces are pairwise distinct, and their dimensions $2,6,4,4,4,4$ sum to more than $8$, so they necessarily overlap; how they do so is the subject of *Relations Between Subspaces*.
 
@@ -424,9 +424,9 @@ which is $ict\,e_0 + \mathbf{x}$ with $ct = ct'$ and $\mathbf{x} = -\mathbf{x}'$
 
 ## Quadratic Forms and Inner Product
 
-### The Norm Form
+### The Biquaternion Norm
 
-The **norm form** of a biquaternion is
+The **biquaternion norm** of a biquaternion is
 
 $$
 N(\tilde{Q}) = \tilde{Q} \bar{\tilde{Q}} = \sum_{\mu=0}^{3} Q_\mu^2 ,
@@ -440,7 +440,7 @@ $$
 
 not positive-definite, and capable of vanishing for a nonzero $\tilde{Q}$. The elements on which it vanishes and the structure of the zero divisors are the subject of *Biquaternion Zero Divisors*.
 
-**Physical reading: the norm form is the metric.** The series calls $N$ the **level-1 form**, and it is the form the whole framework is built on. On the material coordinate it is the Minkowski interval:
+**Physical reading: the biquaternion norm is the metric.** The series calls $N$ the **level-1 form**, and it is the form the whole framework is built on. On the material coordinate it is the Minkowski interval:
 
 $$
 N\!\left(ict\,e_0 + \mathbf{x}\right) = (ict)^2 + x^2 + y^2 + z^2 = -c^2t^2 + \mathbf{x}^2 .
@@ -452,9 +452,9 @@ $$
 N\!\left(ct'\,e_0 + i\mathbf{x}'\right) = c^2t'^2 - \mathbf{x}'^2 .
 $$
 
-The vanishing of the norm form is the light cone: $N(ict\,e_0 + x e_1) = 0$ exactly when $x = \pm ct$, and the null material coordinates are the zero divisors of the algebra. The two signatures are worked out in **The Two Real Restrictions** below, and the physics of the zero divisors in *The Light Cone as the Biquaternion Zero Divisor Cone* and *Zero Divisors as a Physical Locus in Biquaternionic Form*.
+The vanishing of the biquaternion norm is the light cone: $N(ict\,e_0 + x e_1) = 0$ exactly when $x = \pm ct$, and the null material coordinates are the zero divisors of the algebra. The two signatures are worked out in **The Two Real Restrictions** below, and the physics of the zero divisors in *The Light Cone as the Biquaternion Zero Divisor Cone* and *Zero Divisors as a Physical Locus in Biquaternionic Form*.
 
-**Why multiplicativity matters.** Because $N$ is multiplicative, an element of unit norm form — a **rotor** — preserves the interval of every element it acts on. This is the single algebraic fact behind the rotor calculus of the series: the Lorentz transformations are the unit-norm-form elements acting on the material sector, and the four-position, the four-velocity and the four-momentum are all carried by the same action. The norm form is thus not a side object but the invariant of the theory.
+**Why multiplicativity matters.** Because $N$ is multiplicative, an element of unit norm — a **rotor** — preserves the interval of every element it acts on. This is the single algebraic fact behind the rotor calculus of the series: the Lorentz transformations are the unit-norm elements acting on the material sector, and the four-position, the four-velocity and the four-momentum are all carried by the same action. The biquaternion norm is thus not a side object but the invariant of the theory.
 
 ### The Hermitian Form
 
@@ -488,7 +488,7 @@ $$
 \tilde{Q}^\dagger = e_0 + ie_1, \qquad \tilde{Q}\tilde{Q}^\dagger = (e_0 + ie_1)^2 = 2e_0 + 2ie_1 ,
 $$
 
-with a nonzero vector part. Note that for this element the **norm form** vanishes instead, $N(\tilde{Q}) = 1 + i^2 = 0$: the two forms are different objects, and an element can be a zero divisor of the norm form and a perfectly ordinary element for the Hermitian form.
+with a nonzero vector part. Note that for this element the **biquaternion norm** vanishes instead, $N(\tilde{Q}) = 1 + i^2 = 0$: the two forms are different objects, and an element can be a zero divisor of the biquaternion norm and a perfectly ordinary element for the Hermitian form.
 
 The corresponding **Euclidean norm** on the underlying real space is
 
@@ -536,15 +536,15 @@ vanishing only for $\tilde{Q} = 0$.
 
 The three quadratic objects are distinct and each is used for a different job:
 
-- **Norm form:** $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$. Complex in general, central, multiplicative, capable of vanishing for nonzero $\tilde{Q}$. It controls the multiplicative structure: the rotors are its unit elements, and it carries the metric of the material sector.
+- **Biquaternion norm:** $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$. Complex in general, central, multiplicative, capable of vanishing for nonzero $\tilde{Q}$. It controls the multiplicative structure: the rotors are its unit elements, and it carries the metric of the material sector.
 - **Hermitian form:** $\tilde{Q}\tilde{Q}^\dagger$, an element of the informational sector whose scalar part is $\sum_\mu |Q_\mu|^2$ and whose vector part is generally nonzero. Not multiplicative. It carries the positive-definite norm used by the operator and informational side of the series.
 - **Inner product:** $\langle \tilde{P},\tilde{Q}\rangle = \sum_\mu P_\mu^* Q_\mu$, complex in general, Hermitian, linear in the second argument. Its diagonal value equals the scalar part of the Hermitian form, and its imaginary part carries the relative phase of a pair.
 
-The norm form controls the multiplicative structure, the scalar part of the Hermitian form (equivalently the diagonal of the inner product) controls the topological structure — continuity, completeness, the Euclidean topology — and the full inner product adds the phase.
+The biquaternion norm controls the multiplicative structure, the scalar part of the Hermitian form (equivalently the diagonal of the inner product) controls the topological structure — continuity, completeness, the Euclidean topology — and the full inner product adds the phase.
 
 ### The Two Real Restrictions
 
-On the **real sector** $\mathbb{H}_{\mathbb{B}}$, where the coefficients are real, the norm form is the sum of four squares and is positive-definite:
+On the **real sector** $\mathbb{H}_{\mathbb{B}}$, where the coefficients are real, the biquaternion norm is the sum of four squares and is positive-definite:
 
 $$
 N\!\left(q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3\right) = q_0^2 + q_1^2 + q_2^2 + q_3^2 ,
@@ -554,7 +554,7 @@ the Euclidean form of the quaternion algebra, which is why the real sector is th
 
 The two **sectors** are where the form becomes indefinite, and they are the two cases the physics uses:
 
-| subspace | basis | norm form | signature |
+| subspace | basis | biquaternion norm | signature |
 |---|---|---|---|
 | $\mathbb{H}_{\mathbb{B}}$ (real) | $e_0, e_1, e_2, e_3$ | $q_0^2 + \mathbf{q}^2$ | $(+,+,+,+)$ |
 | $i\mathbb{H}_{\mathbb{B}}$ (imaginary) | $ie_0, ie_1, ie_2, ie_3$ | $-(q'^2_0 + \mathbf{q}'^2)$ | $(-,-,-,-)$ |
@@ -578,7 +578,7 @@ It carries four natural conjugations, $\bar{\cdot}$, ${}^{*}$, ${}^{\dagger}$ an
 
 The three involutions give three direct-sum decompositions, $\mathbb{B} = \mathbb{H}_{\mathbb{B}} \oplus i\mathbb{H}_{\mathbb{B}}$, $\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-$ and $\mathbb{B} = \mathbb{C}_{\mathbb{B}} \oplus \mathrm{Vect}(\mathbb{B})$, which are the three pairings of the four coordinate blocks $\mathbb{R}e_0$, $\mathbb{R}(ie_0)$, $\operatorname{span}_\mathbb{R}\{e_1,e_2,e_3\}$, $\operatorname{span}_\mathbb{R}\{ie_1,ie_2,ie_3\}$; there is no fourth. Each of the four four-dimensional subspaces is one scalar block plus one vector block, and two distinct subspaces meet in dimension $0$, $1$ or $3$, the dimension $0$ occurring exactly for the three complementary pairs. Multiplication by the central $i$ swaps the two sectors and preserves the centre and the vector subspace.
 
-On the algebra sit three quadratic objects, kept apart throughout: the **norm form** $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$, multiplicative and capable of vanishing for nonzero $\tilde{Q}$, which is the level-1 form and reproduces the Minkowski interval on the material coordinate and the opposite signature on the informational one; the **Hermitian form** $\tilde{Q}\tilde{Q}^\dagger$, an element of the informational sector whose scalar part is $\sum_\mu |Q_\mu|^2$; and the complex **inner product** $\langle \tilde{P},\tilde{Q}\rangle = \sum_\mu P_\mu^* Q_\mu$, whose diagonal value is that scalar part and whose imaginary part carries the relative phase of a pair.
+On the algebra sit three quadratic objects, kept apart throughout: the **biquaternion norm** $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$, multiplicative and capable of vanishing for nonzero $\tilde{Q}$, which is the level-1 form and reproduces the Minkowski interval on the material coordinate and the opposite signature on the informational one; the **Hermitian form** $\tilde{Q}\tilde{Q}^\dagger$, an element of the informational sector whose scalar part is $\sum_\mu |Q_\mu|^2$; and the complex **inner product** $\langle \tilde{P},\tilde{Q}\rangle = \sum_\mu P_\mu^* Q_\mu$, whose diagonal value is that scalar part and whose imaginary part carries the relative phase of a pair.
 
 ## Summary of Notation
 
@@ -603,7 +603,7 @@ On the algebra sit three quadratic objects, kept apart throughout: the **norm fo
 | $\tilde{Q}^* = Q_0^* e_0 + \mathbf{Q}^*$ | Complex conjugate |
 | $\tilde{Q}^\dagger = Q_0^* e_0 - \mathbf{Q}^*$ | Hermitian conjugate |
 | $\tilde{Q}^\flat = -\bar{\tilde{Q}}^{*} = -\tilde{Q}^\dagger$ | Anti-Hermitian conjugate |
-| $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$ | Norm form, the level-1 form |
+| $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$ | Biquaternion norm, the level-1 form |
 | $\mathrm{Sc}(\tilde{Q}\tilde{Q}^\dagger) = \sum_\mu |Q_\mu|^2$ | Scalar part of the Hermitian form |
 | $\langle \tilde{P},\tilde{Q}\rangle = \sum_\mu P_\mu^* Q_\mu$ | Inner product |
 | $\|\tilde{Q}\|_E = \sqrt{\mathrm{Sc}(\tilde{Q}\tilde{Q}^\dagger)}$ | Euclidean norm |

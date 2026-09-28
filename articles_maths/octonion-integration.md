@@ -23,7 +23,7 @@ $$
 
 so that multiplication by a constant commutes with integration exactly as it commutes with any finite sum, and there is no difficulty of associativity because no product of two variable octonions occurs. In particular the integral of a product is not computable from the integrals of the factors: $\int fg \neq \left(\int f\right)\left(\int g\right)$ in general, and not only because of the inequality of the moduli.
 
-*Proof.* Both identities are the linearity of the componentwise integral with respect to scalar multiplication on the left and on the right, and the multiplication by a constant is a linear map of $\mathbb{O}$. $\square$
+*Proof.* Both identities are the linearity of the componentwise integral with respect to scalar multiplication on the left and on the right, and the multiplication by a constant is a linear map of $\mathbb{O}$.
 
 **Remark.** The distinction between the two displayed identities matters: because $\mathbb{O}$ is not commutative, the position of the constant relative to the integrand is part of the statement of the integral, and an integral is a sum of values of the function, so a change of the order of the factors inside the integrand changes the value of the integral. This is the first place where the non-commutativity of the octonions appears in integration, before any question of associativity.
 
@@ -41,7 +41,7 @@ $$
 \int_{\partial\Omega}f(y)n(y)\,dS(y) = \int_\Omega (fD)(y)\,dV(y) .
 $$
 
-*Proof.* The first identity is the classical divergence theorem applied to the eight real components of $f$: the normal component $n_kf$ has divergence $\partial_kf$, and assembling the eight identities with the basis elements and the signs of $\bar D$ gives the display. The order of the factors is the order of the multiplication by the constant basis elements in the assembly. The second identity is the same statement with the roles of the basis elements reversed, that is, it is the first identity applied to the conjugate function and conjugated back, using the conjugacy $\overline{Df} = \bar fD$ of *Octonion Analysis*. $\square$
+*Proof.* The first identity is the classical divergence theorem applied to the eight real components of $f$: the normal component $n_kf$ has divergence $\partial_kf$, and assembling the eight identities with the basis elements and the signs of $\bar D$ gives the display. The order of the factors is the order of the multiplication by the constant basis elements in the assembly. The second identity is the same statement with the roles of the basis elements reversed, that is, it is the first identity applied to the conjugate function and conjugated back, using the conjugacy $\overline{Df} = \bar fD$ of *Octonion Analysis*.
 
 The divergence theorem is the fundamental integration identity of the octonionic calculus, and it is the form in which the operator meets the integral. Its content is the same as in the real case: what is new is only the bookkeeping of the order of the factors, fixed by the position of $\bar D$ or of $D$ in the identity.
 
@@ -53,7 +53,7 @@ $$
 
 with the multiplication by the scalar $u$ on the left of $v$ in both terms.
 
-*Proof.* Apply the divergence theorem to the product $uv$ and use $\bar D(uv) = (\bar Du)v + u(\bar Dv)$. The product rule in this form holds because $u$ and its partial derivatives are real scalars, hence central and associative with everything. $\square$
+*Proof.* Apply the divergence theorem to the product $uv$ and use $\bar D(uv) = (\bar Du)v + u(\bar Dv)$. The product rule in this form holds because $u$ and its partial derivatives are real scalars, hence central and associative with everything.
 
 **Remark.** For octonion-valued $u$ the same computation acquires associator corrections: the difference between $\bar D(uv)$ and $(\bar Du)v + u(\bar Dv)$ is a sum of terms each of which is an associator with one factor $e_k$ or $\bar e_k$, exactly as in the product rule of *Octonion Analysis* for $D$ in place of $\bar D$, and it vanishes identically only in the associative case. The classical Green identity in its displayed form is therefore a statement about a scalar weight; for two octonion-valued functions it holds only up to those correction terms.
 
@@ -67,7 +67,7 @@ $$
 
 and more generally the integral $\int_\Sigma K_x(y)\,n(y)f(y)dS(y)$ depends only on the homology class of $\Sigma$ in $\Omega\setminus\{x\}$, where $K_x(y) = \overline{y-x}/\lvert y-x\rvert^8$ and $n$ is the outer normal of the region bounded.
 
-*Proof.* The integrand is $E(y-x)n(y)f(y)$, and its divergence with respect to $y$ is computed by the product rule; for $y\neq x$ the kernel is monogenic on both sides, and the terms combine to a divergence, so Stokes' theorem makes the integral depend only on the homology class. The argument is the standard one of the Cauchy theory of the octonionic operator, with the sources cited; the cancellations happen before any product of two monogenic functions is formed. $\square$
+*Proof.* The integrand is $E(y-x)n(y)f(y)$, and its divergence with respect to $y$ is computed by the product rule; for $y\neq x$ the kernel is monogenic on both sides, and the terms combine to a divergence, so Stokes' theorem makes the integral depend only on the homology class. The argument is the standard one of the Cauchy theory of the octonionic operator, with the sources cited; the cancellations happen before any product of two monogenic functions is formed.
 
 **Corollary.** The kernel is normalised by the sphere: for every $r>0$,
 
@@ -77,7 +77,7 @@ $$
 
 so that the integral of the kernel against the outer normal over a sphere is the identity, independently of the radius.
 
-*Proof.* Apply the Cauchy integral formula of *Octonion Analysis* to the constant function $f = e_0$ and $x = 0$; the left side is the displayed integral. Alternatively, compute it directly: $\bar yy = r^2$, so the integrand is $r^{-7}e_0dS$ and the integral is $\omega_7r^7\cdot r^{-7}e_0 = \omega_7e_0$. $\square$
+*Proof.* Apply the Cauchy integral formula of *Octonion Analysis* to the constant function $f = e_0$ and $x = 0$; the left side is the displayed integral. Alternatively, compute it directly: $\bar yy = r^2$, so the integrand is $r^{-7}e_0dS$ and the integral is $\omega_7r^7\cdot r^{-7}e_0 = \omega_7e_0$.
 
 The corollary exhibits the sphere as the cycle that detects the singularity of the kernel, in exact analogy with the complex and quaternionic cases; it is the source of the Cauchy formula and of the "winding" of a general cycle relative to a point.
 
@@ -87,7 +87,7 @@ $$
 f(x) = \frac{1}{\omega_7}\int_\Sigma E(y-x)\,n(y)\,f(y)\,dS(y) .
 $$
 
-*Proof.* The difference of the two cycles is a boundary in $\Omega\setminus\{x\}$, and the Cauchy integral over a boundary is zero by the Cauchy integral theorem; hence the integrals over $\Sigma$ and over the small sphere agree, and the latter equals $f(x)$ by the Cauchy formula on a ball. $\square$
+*Proof.* The difference of the two cycles is a boundary in $\Omega\setminus\{x\}$, and the Cauchy integral over a boundary is zero by the Cauchy integral theorem; hence the integrals over $\Sigma$ and over the small sphere agree, and the latter equals $f(x)$ by the Cauchy formula on a ball.
 
 The homology form is the reason why the Cauchy integral is a topological object in the octonionic case as in the associative cases: the value at a point is determined by a cycle up to homology, and the entire dependence on the function is through its boundary values on that cycle.
 
@@ -107,7 +107,7 @@ $$
 
 where the integrals are principal values and $(\mathcal{C}f)^\pm$ denote the limits from outside and from inside; hence $(\mathcal{C}f)^+ - (\mathcal{C}f)^- = f$.
 
-*Proof.* The standard Plemelj–Sokhotski argument: the singular integral with the kernel $E(y-x)$ has a principal value, and the difference of the two boundary values is the integral of the kernel over an infinitesimal sphere, which is the identity by the normalisation corollary. The monogenicity away from $\Sigma$ is the monogenicity of the kernel composed with the function. The argument uses the associativity of the triple products involved only in the order in which they are written. $\square$
+*Proof.* The standard Plemelj–Sokhotski argument: the singular integral with the kernel $E(y-x)$ has a principal value, and the difference of the two boundary values is the integral of the kernel over an infinitesimal sphere, which is the identity by the normalisation corollary. The monogenicity away from $\Sigma$ is the monogenicity of the kernel composed with the function. The argument uses the associativity of the triple products involved only in the order in which they are written.
 
 The jump formulas are the boundary-value theory of the octonionic Cauchy integral, and they are the exact analogues of the complex ones, because the singularity of the kernel is detected by the sphere and the sphere integral is a scalar multiple of the identity; what fails in the octonionic case, and fails also for the quaternions, is the possibility of iterating the operator to obtain a product formula for boundary values, since the composition of two Cauchy integrals would require the product of two monogenic functions, which need not be monogenic.
 
@@ -121,7 +121,7 @@ $$
 
 is not in general equal to $\mathcal{C}f$ or to a constant multiple of $f$, and there is no identity of the form $\mathcal{C}^2 = \mathcal{C}$.
 
-*Proof.* The classical proof of the idempotence of the Cauchy transform uses the associativity of the product of the kernel with the function to interchange the order of the two integrations and identify a composition kernel; in the octonionic case the interchange produces associator terms $[E(y-x),n(y),E(z-y)]$, which do not vanish identically, and the composition kernel is not the single kernel. Hence no such identity holds; the failure is the same as the failure of the product of monogenic functions to be monogenic, transferred to the level of the integral. $\square$
+*Proof.* The classical proof of the idempotence of the Cauchy transform uses the associativity of the product of the kernel with the function to interchange the order of the two integrations and identify a composition kernel; in the octonionic case the interchange produces associator terms $[E(y-x),n(y),E(z-y)]$, which do not vanish identically, and the composition kernel is not the single kernel. Hence no such identity holds; the failure is the same as the failure of the product of monogenic functions to be monogenic, transferred to the level of the integral.
 
 This is the integration-theoretic face of the failure of the Leibniz rule of *Octonion Analysis*: the Cauchy integral is a good operator, but it is not an idempotent projector, and the space of boundary values is not an algebra of holomorphic-type functions in the sense of the complex theory. The harmonic analysis takes the place of the missing function algebra in the spectral description.
 
@@ -131,7 +131,7 @@ This is the integration-theoretic face of the failure of the Leibniz rule of *Oc
 
 **Proposition.** Every element of $\mathcal{P}_k$ is harmonic on $\mathbb{R}^8$, hence its restriction to the unit sphere is an eigenfunction of the spherical Laplacian with eigenvalue $-k(k+6)$; the spaces $\mathcal{P}_k$ and $\mathcal{P}_l$ are orthogonal with respect to the $L^2$ inner product on $S^7$ whenever $k\neq l$, and each $\mathcal{P}_k$ is a finite-dimensional real vector space.
 
-*Proof.* Harmonicity is $D\bar D = \Delta_8$; the eigenvalue statement is the standard separation of variables for a homogeneous harmonic polynomial of degree $k$ in eight variables, where the radial equation is $r^{-k-6}(r^8(r^{-k}v)')' = 0$ and gives the shift $k+6$. Orthogonality of different degrees is the standard orthogonality of spherical harmonics; finite-dimensionality is the finite-dimensionality of the space of polynomials of bounded degree. $\square$
+*Proof.* Harmonicity is $D\bar D = \Delta_8$; the eigenvalue statement is the standard separation of variables for a homogeneous harmonic polynomial of degree $k$ in eight variables, where the radial equation is $r^{-k-6}(r^8(r^{-k}v)')' = 0$ and gives the shift $k+6$. Orthogonality of different degrees is the standard orthogonality of spherical harmonics; finite-dimensionality is the finite-dimensionality of the space of polynomials of bounded degree.
 
 The shift $k+6$ is the octonionic case of the general rule $k+n-2$ for spherical harmonics in $n$ variables with $n = 8$; the dimension of $\mathcal{P}_k$ is computed by the theory of the harmonic analysis of the octonions, and the orthogonal decomposition of $L^2(S^7)$ into the spaces $\mathcal{P}_k$ is not covered here.
 
@@ -143,7 +143,7 @@ $$
 
 and more generally the mean value property of *Octonion Analysis* expresses every interior value as a surface integral over a sphere centred at the point.
 
-*Proof.* The mean value property of *Octonion Analysis*, multiplied by the volume of the sphere. $\square$
+*Proof.* The mean value property of *Octonion Analysis*, multiplied by the volume of the sphere.
 
 The expansion of the kernel in monogenic polynomials of increasing degree turns the Cauchy formula into a Taylor expansion of a monogenic function, with the coefficients given by the integrals of the function against the monogenic polynomials of dual degree; the details are those of the associative theory and carry over, since the argument involves only the kernel, the function and the sphere, and never a product of two variable octonions.
 
@@ -161,7 +161,7 @@ $$
 
 so that the integrals of the calibration forms over closed submanifolds depend only on the homology class, and the Stokes theorem for these forms is the divergence theorem of the previous section applied to their coefficient functions.
 
-*Proof.* The forms have constant coefficients, so their exterior derivatives vanish; Stokes' theorem then gives the vanishing of the boundary integrals, and the invariance under homology is the same statement for two homologous cycles. $\square$
+*Proof.* The forms have constant coefficients, so their exterior derivatives vanish; Stokes' theorem then gives the vanishing of the boundary integrals, and the invariance under homology is the same statement for two homologous cycles.
 
 **Corollary (calibrated minimality, integral form).** Let $L\subset\operatorname{Im}\mathbb{O}$ be a compact oriented three-dimensional submanifold with $\varphi$ of constant sign on each tangent plane, so that $L$ is calibrated by $\varphi$ in the sense of *Octonion Geometry*. Then for every compact oriented three-dimensional $L'$ homologous to $L$,
 
@@ -171,7 +171,7 @@ $$
 
 with equality exactly when $L'$ is calibrated by $\varphi$ as well; the same argument with $\psi$ gives the coassociative four-folds, and with $\Phi$ the Cayley four-folds of $\mathbb{R}^8$.
 
-*Proof.* The calibration inequality $\lvert\varphi(\xi_1,\xi_2,\xi_3)\rvert\leq1$ on orthonormal triples gives $\varphi\leq$ the volume form on each oriented tangent plane, with equality exactly on calibrated planes; integrating over $L$ gives $\int_L\varphi = \operatorname{vol}(L)$, and over $L'$ gives $\int_{L'}\varphi\leq\operatorname{vol}(L')$; the integrals agree by the homology invariance of the preceding proposition, and equality forces equality in the pointwise inequality almost everywhere. $\square$
+*Proof.* The calibration inequality $\lvert\varphi(\xi_1,\xi_2,\xi_3)\rvert\leq1$ on orthonormal triples gives $\varphi\leq$ the volume form on each oriented tangent plane, with equality exactly on calibrated planes; integrating over $L$ gives $\int_L\varphi = \operatorname{vol}(L)$, and over $L'$ gives $\int_{L'}\varphi\leq\operatorname{vol}(L')$; the integrals agree by the homology invariance of the preceding proposition, and equality forces equality in the pointwise inequality almost everywhere.
 
 The corollary is the integral form of the calibration statement: the constancy of the forms reduces the minimality of the calibrated submanifolds to the Stokes theorem and a pointwise algebraic inequality, and no property of the octonion multiplication beyond the existence of the forms is used. This is the reason why the calibrated submanifolds of the exceptional geometries of *Octonions and Exceptional Geometry* can be studied by the closedness of the forms alone, the multiplication entering only through the identification of their stabilisers.
 

@@ -30,11 +30,11 @@ where the subscript records that only $1$ is required to be fixed, so that $\ope
 
 **(c)** $\sigma$ preserves idempotents, nilpotents, the characteristic, and the prime subring.
 
-**(d)** $\sigma(I)$ is an ideal for every ideal $I \subseteq R$; $\sigma(\mathfrak{p})$ is prime for every prime ideal $\mathfrak{p}$, and $\sigma(\mathfrak{m})$ is maximal for every maximal ideal $\mathfrak{m}$. Hence $\sigma$ acts on the set of primes of $R$.
+**(d)** $\sigma(I)$ is an ideal for every ideal $I \subseteq R$; $\sigma(\mathrm{P})$ is prime for every prime ideal $\mathrm{P}$, and $\sigma(\mathrm{M})$ is maximal for every maximal ideal $\mathrm{M}$. Hence $\sigma$ acts on the set of primes of $R$.
 
 **(e)** If $R$ is an integral domain, then $\sigma$ extends uniquely to an automorphism of $\operatorname{Frac}(R)$, and $\operatorname{Aut}(R) \leq \operatorname{Aut}(\operatorname{Frac}(R))$.
 
-**Proof.** (a) $\sigma(u)\sigma(u^{-1}) = \sigma(1) = 1$. (b) $\sigma(0) = \sigma(0+0)$ forces $\sigma(0)=0$, and injectivity gives the rest. (c) $\sigma(e)^2 = \sigma(e^2) = \sigma(e)$; $\sigma(x)^n = \sigma(x^n)$; the additive order of $1$ is preserved. (d) $\sigma(I)$ is an additive subgroup and for $r \in R$, $r\sigma(i) = \sigma(\sigma^{-1}(r) i) \in \sigma(I)$; the quotient induced by $\sigma$ is $R/\sigma^{-1}(\mathfrak{p}) \cong R/\mathfrak{p}$, so primality and maximality are preserved. (e) The universal property of the fraction field applies to $\sigma : R \to \operatorname{Frac}(R)$. $\square$
+**Proof.** (a) $\sigma(u)\sigma(u^{-1}) = \sigma(1) = 1$. (b) $\sigma(0) = \sigma(0+0)$ forces $\sigma(0)=0$, and injectivity gives the rest. (c) $\sigma(e)^2 = \sigma(e^2) = \sigma(e)$; $\sigma(x)^n = \sigma(x^n)$; the additive order of $1$ is preserved. (d) $\sigma(I)$ is an additive subgroup and for $r \in R$, $r\sigma(i) = \sigma(\sigma^{-1}(r) i) \in \sigma(I)$; the quotient induced by $\sigma$ is $R/\sigma^{-1}(\mathrm{P}) \cong R/\mathrm{P}$, so primality and maximality are preserved. (e) The universal property of the fraction field applies to $\sigma : R \to \operatorname{Frac}(R)$.
 
 ### Inner Automorphisms and the Noncommutative Case
 
@@ -52,7 +52,7 @@ $$
 \operatorname{Inn}(R) \cong R^\times / Z(R)^\times, \qquad \operatorname{Inn}(R) \trianglelefteq \operatorname{Aut}(R).
 $$
 
-**Proof.** $\operatorname{conj}_u \operatorname{conj}_v = \operatorname{conj}_{uv}$, and $\operatorname{conj}_u = \mathrm{id}$ exactly when $ur = ru$ for all $r$, that is, $u \in Z(R)$. Normality holds because $\sigma \operatorname{conj}_u \sigma^{-1} = \operatorname{conj}_{\sigma(u)}$ for $\sigma \in \operatorname{Aut}(R)$. $\square$
+**Proof.** $\operatorname{conj}_u \operatorname{conj}_v = \operatorname{conj}_{uv}$, and $\operatorname{conj}_u = \mathrm{id}$ exactly when $ur = ru$ for all $r$, that is, $u \in Z(R)$. Normality holds because $\sigma \operatorname{conj}_u \sigma^{-1} = \operatorname{conj}_{\sigma(u)}$ for $\sigma \in \operatorname{Aut}(R)$.
 
 **Corollary.** If $R$ is commutative then $\operatorname{Inn}(R) = 1$, and $\operatorname{Aut}(R) = \operatorname{Out}(R)$. In particular, the inner automorphisms of a commutative ring carry no information.
 
@@ -73,7 +73,7 @@ In the commutative theory, therefore, an automorphism can only act through the a
 
 **Theorem.** For a field $F$, every $F$-algebra automorphism of $F[x]$ is of the form $x \mapsto ax + b$ with $a \in F^\times$, $b \in F$. Every $F$-algebra automorphism of the rational function field $F(x)$ is of the form $x \mapsto \frac{ax+b}{cx+d}$ with $ad - bc \neq 0$.
 
-**Proof.** An $F$-algebra endomorphism $\varphi$ of $F[x]$ is determined by $f = \varphi(x)$, and $\varphi$ is surjective exactly when $f$ generates $F[x]$ as an $F$-algebra, that is, exactly when $x$ lies in the subalgebra $F[f]$ of polynomials in $f$; this happens exactly when $\deg f = 1$, since $x = a^{-1}(f - b)$ for $f = ax + b$ with $a \neq 0$, and $x \notin F[f]$ when $\deg f \geq 2$. Similarly, an $F$-algebra endomorphism of $F(x)$ is determined by $g = \varphi(x) \in F(x)$, and it is an automorphism exactly when $g$ has degree $1$ as a rational map, that is, when $g$ is a fractional linear transformation; the composition rule is matrix multiplication in $\operatorname{PGL}_2(F)$. $\square$
+**Proof.** An $F$-algebra endomorphism $\varphi$ of $F[x]$ is determined by $f = \varphi(x)$, and $\varphi$ is surjective exactly when $f$ generates $F[x]$ as an $F$-algebra, that is, exactly when $x$ lies in the subalgebra $F[f]$ of polynomials in $f$; this happens exactly when $\deg f = 1$, since $x = a^{-1}(f - b)$ for $f = ax + b$ with $a \neq 0$, and $x \notin F[f]$ when $\deg f \geq 2$. Similarly, an $F$-algebra endomorphism of $F(x)$ is determined by $g = \varphi(x) \in F(x)$, and it is an automorphism exactly when $g$ has degree $1$ as a rational map, that is, when $g$ is a fractional linear transformation; the composition rule is matrix multiplication in $\operatorname{PGL}_2(F)$.
 
 **Remark.** For a non-reduced commutative ring the automorphism group of $R[x]$ is larger than the affine group: if $a \in R$ is nilpotent then $x \mapsto x + ax^2$ is an automorphism, because $y = x + ax^2$ can be solved for $x$ by the series $x = y - ay^2 + 2a^2y^3 - \cdots$, which terminates in a polynomial since $a^N = 0$ for some $N$; over a field the same substitution is not an automorphism, the series being infinite. Separately, $\operatorname{Aut}(\mathbb{Z}/n\mathbb{Z}) = 1$ for every $n$, because a unital automorphism fixes $1$ and hence every element; the group $(\mathbb{Z}/n\mathbb{Z})^\times$ that one meets in this connection is the automorphism group of the *additive group* $\mathbb{Z}/n\mathbb{Z}$, not of the ring.
 
@@ -93,7 +93,7 @@ For a field $K$ and $G \leq \operatorname{Aut}(K)$, $K^G$ is the **fixed field**
 
 **Proposition.** $R^G$ is a subring of $R$ containing the prime subring, and the map $G \mapsto R^G$ reverses inclusions: $H \leq G$ implies $R^G \subseteq R^H$.
 
-**Proof.** If $\sigma$ fixes $r$ and $s$ for all $\sigma \in G$, it fixes $r \pm s$ and $rs$, and fixes $1$; every automorphism fixes the prime subring since it fixes $1$. The inclusion reversal is immediate. $\square$
+**Proof.** If $\sigma$ fixes $r$ and $s$ for all $\sigma \in G$, it fixes $r \pm s$ and $rs$, and fixes $1$; every automorphism fixes the prime subring since it fixes $1$. The inclusion reversal is immediate.
 
 **Theorem (Artin).** Let $K$ be a field and $G$ a finite subgroup of $\operatorname{Aut}(K)$. Then $K/K^G$ is a Galois extension of degree $\lvert G \rvert$ and
 
@@ -107,7 +107,7 @@ $$
 \lvert G \rvert \leq \lvert \operatorname{Aut}(K/K^G) \rvert \leq [K:K^G] \leq \lvert G \rvert,
 $$
 
-so equality holds throughout; thus $\lvert \operatorname{Aut}(K/K^G) \rvert = [K:K^G]$ and $K/K^G$ is Galois by the characterization of *Galois Theory*, and $\operatorname{Gal}(K/K^G) = \operatorname{Aut}(K/K^G)$ equals $G$ because both have order $\lvert G \rvert$. $\square$
+so equality holds throughout; thus $\lvert \operatorname{Aut}(K/K^G) \rvert = [K:K^G]$ and $K/K^G$ is Galois by the characterization of *Galois Theory*, and $\operatorname{Gal}(K/K^G) = \operatorname{Aut}(K/K^G)$ equals $G$ because both have order $\lvert G \rvert$.
 
 ---
 
@@ -125,7 +125,7 @@ The group $\operatorname{Aut}(K) = \operatorname{Aut}_{\mathbb{Z}}(K)$ of all au
 
 **Proposition.** Let $K = F(\alpha)$ be algebraic with minimal polynomial $m_\alpha$ over $F$. Then $\sigma \mapsto \sigma(\alpha)$ is a bijection from $\operatorname{Aut}_F(F(\alpha))$ onto the set of roots of $m_\alpha$ lying in $F(\alpha)$; if $m_\alpha$ splits in $F(\alpha)$ with distinct roots, so that the root set has $\deg m_\alpha$ elements, the automorphism group has order $\deg m_\alpha$.
 
-**Proof.** An $F$-automorphism $\sigma$ is determined by $\sigma(\alpha)$, which must be a root of $m_\alpha$; conversely every root of $m_\alpha$ in $F(\alpha)$ defines an $F$-embedding $F(\alpha) \to F(\alpha)$, which is an automorphism because the extension is finite-dimensional over $F$. $\square$
+**Proof.** An $F$-automorphism $\sigma$ is determined by $\sigma(\alpha)$, which must be a root of $m_\alpha$; conversely every root of $m_\alpha$ in $F(\alpha)$ defines an $F$-embedding $F(\alpha) \to F(\alpha)$, which is an automorphism because the extension is finite-dimensional over $F$.
 
 **Example.** For $\mathbb{Q}(\sqrt2)/\mathbb{Q}$ the minimal polynomial $x^2 - 2$ splits in $\mathbb{Q}(\sqrt2)$, so the automorphism group has order $2$. For $\mathbb{Q}(\sqrt[3]{2})/\mathbb{Q}$ the minimal polynomial $x^3 - 2$ has only one root in the field, so the group is trivial, even though the extension is not Galois and $\lvert \operatorname{Aut} \rvert < [K:F]$.
 
@@ -145,7 +145,7 @@ Let $K/F$ be a finite extension and let $E = K^{\operatorname{Gal}(K/F)}$ be the
 
 **Theorem.** Let $K$ have characteristic $p > 0$. The **Frobenius map** $\varphi(x) = x^p$ is an injective endomorphism of $K$; it is an automorphism exactly when $K$ is perfect. In particular $\varphi \in \operatorname{Aut}(\mathbb{F}_{p^n})$ has order $n$, and $\operatorname{Aut}(\mathbb{F}_{p^n}) = \operatorname{Gal}(\mathbb{F}_{p^n}/\mathbb{F}_p) = \langle \varphi \rangle \cong \mathbb{Z}/n$.
 
-**Proof.** The freshman's dream gives additivity, multiplicativity is immediate, and the kernel is trivial. Surjectivity of $\varphi$ is exactly the perfectness criterion of *Splitting Fields and Algebraic Closure*; it holds for every finite field since an injective self-map of a finite set is bijective, and for every algebraically closed field. The order computation on $\mathbb{F}_{p^n}$ and the identification with the full automorphism group are from *Finite Fields* and *Galois Theory*. $\square$
+**Proof.** The freshman's dream gives additivity, multiplicativity is immediate, and the kernel is trivial. Surjectivity of $\varphi$ is exactly the perfectness criterion of *Splitting Fields and Algebraic Closure*; it holds for every finite field since an injective self-map of a finite set is bijective, and for every algebraically closed field. The order computation on $\mathbb{F}_{p^n}$ and the identification with the full automorphism group are from *Finite Fields* and *Galois Theory*.
 
 **Remark (absolute Galois group).** The automorphism group $\operatorname{Gal}(\overline{F}/F) = \operatorname{Aut}_F(\overline{F})$ is the **absolute Galois group** of $F$. It is a profinite group and it is the basic invariant of the arithmetic of $F$; for $F = \mathbb{F}_p$ it is the profinite completion $\widehat{\mathbb{Z}}$, topologically generated by the Frobenius, while for $F = \mathbb{Q}$ it is a large group about which much is known and much is not. The structure of absolute Galois groups belongs to algebraic number theory ; only the finite-field case is elementary.
 
@@ -161,7 +161,7 @@ $$
 
 When $[K:F] = 2$ this fixed field is $F$ itself, and if in addition $\operatorname{char} F \neq 2$ then $K = F(\sqrt{a})$ for a nonsquare $a \in F$.
 
-**Proof.** The first identity is the fundamental theorem applied to the subgroup of order $2$, and the second follows from the tower law. If $[K:F] = 2$ then $\sigma$ generates $\operatorname{Gal}(K/F)$, so $K^{\langle\sigma\rangle}$ is the fixed field of the full Galois group, namely $F$; in characteristic different from $2$ every quadratic extension is obtained by adjoining a square root of a nonsquare in the base field (the usual completion-of-the-square argument). $\square$
+**Proof.** The first identity is the fundamental theorem applied to the subgroup of order $2$, and the second follows from the tower law. If $[K:F] = 2$ then $\sigma$ generates $\operatorname{Gal}(K/F)$, so $K^{\langle\sigma\rangle}$ is the fixed field of the full Galois group, namely $F$; in characteristic different from $2$ every quadratic extension is obtained by adjoining a square root of a nonsquare in the base field (the usual completion-of-the-square argument).
 
 **Example.** The complex conjugation $\sigma(z) = \bar z$ is an involution of $\mathbb{C}$ with fixed field $\mathbb{R}$; the field extension $\mathbb{R}(i)/\mathbb{R}$ is quadratic, adjoining a root of $x^2 + 1$. On $\mathbb{F}_{p^n}$ with $n$ even, the involution $\varphi^{n/2}$ has fixed field $\mathbb{F}_{p^{n/2}}$, and the extension $\mathbb{F}_{p^n}/\mathbb{F}_{p^{n/2}}$ is quadratic.
 
@@ -213,7 +213,7 @@ Anti-automorphisms reverse multiplication; complex conjugation is the standard i
 |---|---|
 | $R$ | Ring; commutative with $1 \neq 0$ unless stated |
 | $\operatorname{char} R$ | Characteristic of $R$ |
-| $\mathfrak{p}$, $\mathfrak{m}$ | Prime and maximal ideals of $R$ |
+| $\mathrm{P}$, $\mathrm{M}$ | Prime and maximal ideals of $R$ |
 | $\operatorname{Frac}(R)$ | Field of fractions of an integral domain $R$ |
 | $\widehat{\mathbb{Z}}$ | Profinite completion of $\mathbb{Z}$, $\operatorname{Gal}(\overline{\mathbb{F}_p}/\mathbb{F}_p)$ |
 | $\operatorname{Aut}(R)$ | Group of unital ring automorphisms of $R$ |

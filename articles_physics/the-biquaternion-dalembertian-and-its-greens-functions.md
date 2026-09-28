@@ -10,7 +10,7 @@ built from the biquaternionic gradient $\tilde{\nabla}$ and its quaternion conju
 
 The article is deliberately not about a particle. The Klein–Gordon equation and its propagator belong to the companion articles on spin $0$; the Dirac equation and its descendants belong to the companions on spin $1/2$; Proca and Rarita–Schwinger belong to spin $1$ and above. What those articles share, and what is developed here, is the operator that all of them are written in terms of, together with the object that turns a source into a field. Three things are established.
 
-First, the operator. The d'Alembertian is the **norm form of the gradient**, $\Box = N(\tilde{\nabla})$, and it is *central*: it is a scalar multiple of the algebra's identity as an operator, so it commutes with every biquaternion. Its symbol on a plane wave is $\omega^2/c^2 - \mathbf{k}^2$. Its formal adjoint is itself, and this is the first application of the involution lattice that the companion article on the involutions develops: the adjoint of the gradient is $-\bar{\tilde{\nabla}}$, and the two signs cancel in the composed operator. The sign convention is the series convention of the companion *Conventions in the Biquaternion Universe*,
+First, the operator. The d'Alembertian is the **biquaternion norm of the gradient**, $\Box = N(\tilde{\nabla})$, and it is *central*: it is a scalar multiple of the algebra's identity as an operator, so it commutes with every biquaternion. Its symbol on a plane wave is $\omega^2/c^2 - \mathbf{k}^2$. Its formal adjoint is itself, and this is the first application of the involution lattice that the companion article on the involutions develops: the adjoint of the gradient is $-\bar{\tilde{\nabla}}$, and the two signs cancel in the composed operator. The sign convention is the series convention of the companion *Conventions in the Biquaternion Universe*,
 $$
 \Box = \tilde{\nabla}\bar{\tilde{\nabla}} = \partial_{ict}^2 + \Delta = \Delta - c^{-2}\partial_t^2 ,
 $$
@@ -51,7 +51,7 @@ $$
 $$
 Nothing else in the construction depends on the choice of left or right action, because the d'Alembertian will turn out to be central; the first-order kernel will not be, and there the order is the content.
 
-## The D'Alembertian as a Norm Form
+## The D'Alembertian as a Biquaternion Norm
 
 ### Composition and the central scalar
 
@@ -71,7 +71,7 @@ $$
 \Box = \tilde{\nabla}\bar{\tilde{\nabla}} = \bar{\tilde{\nabla}}\tilde{\nabla} = \partial_{ict}^2 + \Delta = \Delta - c^{-2}\partial_t^2 .
 $$
 
-The result says two things. It says that the d'Alembertian is the **norm form of the gradient**, $\Box = N(\tilde{\nabla})$, evaluated on the operator rather than on a fixed biquaternion: the composition that defines $N$ is exactly the composition of the gradient with its reversal. And it says that $\Box$ is a **central scalar** as an operator — a multiple of the identity of the algebra — so that it commutes with every biquaternion,
+The result says two things. It says that the d'Alembertian is the **biquaternion norm of the gradient**, $\Box = N(\tilde{\nabla})$, evaluated on the operator rather than on a fixed biquaternion: the composition that defines $N$ is exactly the composition of the gradient with its reversal. And it says that $\Box$ is a **central scalar** as an operator — a multiple of the identity of the algebra — so that it commutes with every biquaternion,
 $$
 \Box(\tilde{A}\tilde{\Phi}) = \tilde{A}\,(\Box\tilde{\Phi}), \qquad \tilde{A} \in \mathbb{B},\ \tilde{\Phi}\ \text{any field}.
 $$
@@ -91,7 +91,7 @@ $$
 \qquad
 \Box \to \frac{\omega^2}{c^2} - \mathbf{k}^2 .
 $$
-The symbol was checked by finite differences on such a wave, with the numerical value of $\Box\tilde{\Phi}$ agreeing with $(\omega^2/c^2 - \mathbf{k}^2)\tilde{\Phi}$ to the accuracy of the difference scheme. The zero set of the symbol, $\omega^2 = c^2\mathbf{k}^2$, is the light cone, which in this algebra is the zero-divisor cone of the norm form; the mass-shell condition $\Box \to \mu^2$ is the shifted cone.
+The symbol was checked by finite differences on such a wave, with the numerical value of $\Box\tilde{\Phi}$ agreeing with $(\omega^2/c^2 - \mathbf{k}^2)\tilde{\Phi}$ to the accuracy of the difference scheme. The zero set of the symbol, $\omega^2 = c^2\mathbf{k}^2$, is the light cone, which in this algebra is the zero-divisor cone of the biquaternion norm; the mass-shell condition $\Box \to \mu^2$ is the shifted cone.
 
 The sign convention deserves a paragraph of its own, because it is the series' most common false alarm. With $\partial_{ict} = -\frac{i}{c}\partial_t$, the operator above is $\Box = \Delta - c^{-2}\partial_t^2$, and the physical mass equation is
 $$
@@ -158,7 +158,7 @@ the operator is translation invariant and the convolution is a convolution. This
 
 ### The four-dimensional Euclidean reading
 
-With $\tilde{Q} = ict\,e_0 + \mathbf{x}$, the norm form is
+With $\tilde{Q} = ict\,e_0 + \mathbf{x}$, the biquaternion norm is
 $$
 \rho^2 := N(\tilde{Q}) = (ict)^2 + \mathbf{x}^2 = -c^2t^2 + \mathbf{x}^2 ,
 $$
@@ -180,7 +180,7 @@ $$
 $$
 the four-dimensional Coulomb kernel.
 
-Three properties of $G_{\mathrm{inv}}$ are worth naming. It is **real and scalar**: it is a multiple of $e_0$, hence central, and it commutes with every biquaternion. It is **invariant**: it depends on $\tilde{Q}$ only through $N(\tilde{Q})$, so it is unchanged by the Lorentz action $\tilde{Q} \mapsto \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^\dagger$, which preserves the norm form. And it is **singular on the light cone**: $\rho^2$ vanishes exactly on the zero-divisor cone, and the kernel is not defined there as a function. As the Euclidean solution it is the one selected by decay at large $\rho$ with no reference to time; the causal solutions below differ from it by solutions of the homogeneous equation, and the difference is the whole of the physical content of the choice.
+Three properties of $G_{\mathrm{inv}}$ are worth naming. It is **real and scalar**: it is a multiple of $e_0$, hence central, and it commutes with every biquaternion. It is **invariant**: it depends on $\tilde{Q}$ only through $N(\tilde{Q})$, so it is unchanged by the Lorentz action $\tilde{Q} \mapsto \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^\dagger$, which preserves the biquaternion norm. And it is **singular on the light cone**: $\rho^2$ vanishes exactly on the zero-divisor cone, and the kernel is not defined there as a function. As the Euclidean solution it is the one selected by decay at large $\rho$ with no reference to time; the causal solutions below differ from it by solutions of the homogeneous equation, and the difference is the whole of the physical content of the choice.
 
 ### The light-cone delta and the retarded kernel
 
@@ -222,7 +222,7 @@ $$
 \qquad
 \Box\,\Delta_{\mathrm{PJ}} = 0 .
 $$
-This is the Pauli–Jordan (commutator) function: it is antisymmetric in time, supported on the full light cone, and in the quantum theory of the field it is the kernel of the equal-time commutator. Its vanishing outside the cone is the algebraic expression of microcausality, and it is the object that the companion articles on canonical quantisation use. In the framework's terms, $\Delta_{\mathrm{PJ}}$ is an odd distribution whose support is precisely the zero-divisor cone of the norm form — the statement that the algebraic null cone is the geometric causal cone.
+This is the Pauli–Jordan (commutator) function: it is antisymmetric in time, supported on the full light cone, and in the quantum theory of the field it is the kernel of the equal-time commutator. Its vanishing outside the cone is the algebraic expression of microcausality, and it is the object that the companion articles on canonical quantisation use. In the framework's terms, $\Delta_{\mathrm{PJ}}$ is an odd distribution whose support is precisely the zero-divisor cone of the biquaternion norm — the statement that the algebraic null cone is the geometric causal cone.
 
 The **causal** or Feynman kernel is the boundary-value combination that is symmetric in time and selects positive frequencies forward and negative frequencies backward. In the $ict$ variables it is the analytic continuation of the Euclidean kernel with the Feynman prescription,
 $$
@@ -253,7 +253,7 @@ The mass shell is the symbol condition
 $$
 N(\tilde{K}) = -\!\left(\frac{\omega^2}{c^2} - \mathbf{k}^2\right)\Big|_{\text{on shell}} = -\mu^2 ,
 $$
-which was checked on a random on-shell four-momentum $K = i(\omega/c)e_0 + \mathbf{k}$ in $\mathbb{M}_-$, the norm form returning $-m^2c^2/\hbar^2$ exactly. Off shell the operator is invertible on the algebra; on the mass shell the symbol vanishes on the zero-divisor cone of the relevant complex momentum, which is the algebraic origin of the propagation and of the rank drop that the massless limit will exhibit.
+which was checked on a random on-shell four-momentum $K = i(\omega/c)e_0 + \mathbf{k}$ in $\mathbb{M}_-$, the biquaternion norm returning $-m^2c^2/\hbar^2$ exactly. Off shell the operator is invertible on the algebra; on the mass shell the symbol vanishes on the zero-divisor cone of the relevant complex momentum, which is the algebraic origin of the propagation and of the rank drop that the massless limit will exhibit.
 
 ## The First-Order Kernel
 
@@ -302,13 +302,13 @@ where the last line uses $\flat = -\dagger$. The first-order kernel lies in the 
 $$
 \tilde{G}_1^\flat = \tilde{G}_1 , \qquad \tilde{G}_1^\dagger = -\,\tilde{G}_1 ,
 $$
-which is exactly the definition of the material sector. Its $i$-multiple lies in the informational sector, $i\tilde{G}_1 \in \mathbb{M}_+$, since $i\mathbb{M}_- = \mathbb{M}_+$; the conjugations themselves leave the sector untouched and it is the central multiplication that exchanges the two, as the companion article on the involutions establishes. The operator identities mirror these statements: $\Box$ has real coefficients, hence is fixed by $\bar{\cdot}$, ${}^*$ and $\dagger$ and negated by $\flat$, exactly as the real scalar kernels are, and $\tilde{\nabla}^\dagger = -\bar{\tilde{\nabla}}$. The kernel's conjugation behaviour is therefore the operator's own: the reality of the kernel and the reality of the operator are one statement, inherited by the scalar kernel from the operator it inverts. The companion article *Conventions in the Biquaternion Universe* fixes the four conjugations and their real subspaces; the companion article on the involutions develops the lattice, the Klein four-group of $\{\mathrm{id}, \bar{\cdot}, {}^*, {}^\dagger\}$ with $\flat = -\dagger$, and the matrix realisations. What this article adds is the operator content: the wave operator is the norm form of the gradient, its adjoint is itself because the adjoint of the gradient is $-\bar{\tilde{\nabla}}$, and the kernel that inverts it is central, while the kernel that inverts the first-order operator is a material four-vector.
+which is exactly the definition of the material sector. Its $i$-multiple lies in the informational sector, $i\tilde{G}_1 \in \mathbb{M}_+$, since $i\mathbb{M}_- = \mathbb{M}_+$; the conjugations themselves leave the sector untouched and it is the central multiplication that exchanges the two, as the companion article on the involutions establishes. The operator identities mirror these statements: $\Box$ has real coefficients, hence is fixed by $\bar{\cdot}$, ${}^*$ and $\dagger$ and negated by $\flat$, exactly as the real scalar kernels are, and $\tilde{\nabla}^\dagger = -\bar{\tilde{\nabla}}$. The kernel's conjugation behaviour is therefore the operator's own: the reality of the kernel and the reality of the operator are one statement, inherited by the scalar kernel from the operator it inverts. The companion article *Conventions in the Biquaternion Universe* fixes the four conjugations and their real subspaces; the companion article on the involutions develops the lattice, the Klein four-group of $\{\mathrm{id}, \bar{\cdot}, {}^*, {}^\dagger\}$ with $\flat = -\dagger$, and the matrix realisations. What this article adds is the operator content: the wave operator is the biquaternion norm of the gradient, its adjoint is itself because the adjoint of the gradient is $-\bar{\tilde{\nabla}}$, and the kernel that inverts it is central, while the kernel that inverts the first-order operator is a material four-vector.
 
-A last structural remark ties the kernel theory to the algebra's null cone. The massless symbol vanishes on $\{N(\tilde{K}) = 0\}$, the zero-divisor cone, and the causal kernels are supported on exactly the corresponding cone in position space. The algebra's zero divisors, its projective geometry, and the light-cone structure are the subject of the companion articles on the null quadric; for the operator theory the point is that the characteristic cone of $\Box$ is the algebra's null cone, so that the propagation described by these Green's functions is the propagation of the norm form's zero set. That identification — the light cone *is* the zero-divisor cone — is what makes the framework's causal structure algebraic rather than postulated.
+A last structural remark ties the kernel theory to the algebra's null cone. The massless symbol vanishes on $\{N(\tilde{K}) = 0\}$, the zero-divisor cone, and the causal kernels are supported on exactly the corresponding cone in position space. The algebra's zero divisors, its projective geometry, and the light-cone structure are the subject of the companion articles on the null quadric; for the operator theory the point is that the characteristic cone of $\Box$ is the algebra's null cone, so that the propagation described by these Green's functions is the propagation of the biquaternion norm's zero set. That identification — the light cone *is* the zero-divisor cone — is what makes the framework's causal structure algebraic rather than postulated.
 
 ## Summary
 
-The biquaternion d'Alembertian is the norm form of the gradient,
+The biquaternion d'Alembertian is the biquaternion norm of the gradient,
 $$
 \Box = \tilde{\nabla}\bar{\tilde{\nabla}} = \bar{\tilde{\nabla}}\tilde{\nabla} = \partial_{ict}^2 + \Delta = \Delta - c^{-2}\partial_t^2 ,
 $$
@@ -351,7 +351,7 @@ which is material-sector-valued, transforms as a four-vector, and does not commu
 | $\tilde{\nabla}^\dagger = -\bar{\tilde{\nabla}}$, $\Box^\dagger = \Box$ | Adjoints under $\langle\tilde{F},\tilde{G}\rangle = \int\mathrm{Tr}(\tilde{F}^\dagger\tilde{G})$ |
 | $\Box^\flat = -\Box$, $G_\Box^\flat = -G_\Box$, $\tilde{G}_1^\flat = \tilde{G}_1$ | Conjugation action on the operator and the kernels: $\bar{\cdot}$, ${}^*$, $\dagger$ fix a real scalar and $\flat$ negates it; the conjugations preserve the sectors, multiplication by $i$ exchanges them, $i\tilde{G}_1 \in \mathbb{M}_+$ |
 | $\tilde{Q} = ict\,e_0 + \mathbf{x}$ | Material four-position |
-| $\rho^2 = N(\tilde{Q}) = -c^2t^2 + \mathbf{x}^2$ | Norm form of the separation; Euclidean four-distance squared |
+| $\rho^2 = N(\tilde{Q}) = -c^2t^2 + \mathbf{x}^2$ | Biquaternion norm of the separation; Euclidean four-distance squared |
 | $G_{\mathrm{inv}} = \frac{1}{4\pi^2\rho^2}$ | Invariant (Euclidean) kernel; $-\Box G_{\mathrm{inv}} = \delta^{(4)}$ |
 | $G_{\mathrm{ret}} = \frac{1}{4\pi R}\delta(t - R/c)$ | Retarded kernel; $\Box G_{\mathrm{ret}} = -\delta$ |
 | $G_{\mathrm{adv}} = \frac{1}{4\pi R}\delta(t + R/c)$ | Advanced kernel; $\Box G_{\mathrm{adv}} = -\delta$ |

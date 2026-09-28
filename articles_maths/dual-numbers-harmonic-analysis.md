@@ -45,7 +45,7 @@ $$
 
 These characters take values in the affine line $1 + \mathbb{D}' \varepsilon$, and their Euclidean norm $\sqrt{1 + \langle \xi, Z \rangle^2}$ grows only linearly in the coordinates. This is the fundamental difference from the split complex case, where the characters grow exponentially.
 
-So the dual case is intermediate between the complex case, where the characters take values in the compact circle, and the split complex case, where the characters take values in the non-compact hyperbola. In the dual case, the characters take values in the affine line $1 + \mathfrak{m}$, so their deviation from the identity lies in the nilpotent maximal ideal.
+So the dual case is intermediate between the complex case, where the characters take values in the compact circle, and the split complex case, where the characters take values in the non-compact hyperbola. In the dual case, the characters take values in the affine line $1 + \mathrm{M}$, so their deviation from the identity lies in the nilpotent maximal ideal.
 
 ## The Dual Fourier Transform
 
@@ -164,7 +164,7 @@ $$
 \widehat{f * g}(\xi) = \hat{f}(\xi) \hat{g}(\xi).
 $$
 
-**Proof.** Write the definition, apply Fubini, and change variables. $\square$
+**Proof.** Write the definition, apply Fubini, and change variables.
 
 ### The Structure of the Convolution Theorem
 
@@ -314,7 +314,7 @@ $$
 \|Mf\|_p \leq C_p \|f\|_p.
 $$
 
-**Proof.** The case $p = \infty$ is trivial. The case $1 < p < \infty$ follows from the weak $(1,1)$ estimate and the trivial $L^\infty$ estimate by interpolation. $\square$
+**Proof.** The case $p = \infty$ is trivial. The case $1 < p < \infty$ follows from the weak $(1,1)$ estimate and the trivial $L^\infty$ estimate by interpolation.
 
 ### The Structure of the Maximal Function
 
@@ -400,7 +400,7 @@ $$
 \widehat{Rf(\theta, \cdot)}(\sigma) = \hat{f}(\sigma \cos\theta, \sigma \sin\theta).
 $$
 
-**Proof.** Write the definition of the Radon transform, take the dual Fourier transform in $t$, and change variables. $\square$
+**Proof.** Write the definition of the Radon transform, take the dual Fourier transform in $t$, and change variables.
 
 The Fourier slice theorem is the mathematical basis of dual tomography, the analogue of computed tomography for the dual plane.
 
@@ -490,7 +490,7 @@ The section on the structure principle states what organises the subject: whenev
 | $\mathcal{M} f$ | Dual Mellin transform |
 | $Rf$ | Dual Radon transform |
 | $W_\psi f$ | Dual wavelet transform |
-| $\mathfrak{m} = (\varepsilon)$ | Maximal ideal |
+| $\mathrm{M} = (\varepsilon)$ | Maximal ideal |
 
 ## Further Reading
 

@@ -6,7 +6,7 @@ The companion articles of the relativistic quantum series build the biquaternion
 
 The subject is the following observation, made precise. The biquaternion algebra $\mathbb{B}$ is isomorphic to the **even** part of the Clifford algebra $\mathrm{Cl}_{1,3}$. Its elements include the Lorentz rotors, which act on four-vectors by conjugation; and its elements are at the same time the points of the rotation group. The generators $\gamma^\mu$, by contrast, are **odd**: they are not biquaternions at all, they lie outside the even part, and they are not rotors. They act on spinors and they **exchange the two chiralities**. The odd/even split of the Clifford algebra is therefore not a bookkeeping device. It is the split between the transformations that *turn* and the transformations that *reflect*, and chirality — the property that separates the two Weyl spinors — is precisely what the odd part changes and the even part preserves.
 
-The article is organized as follows. The first section reconciles the two ways a single element of the algebra is used — as an object and as an operator. The second establishes the grading, by the classical theorem that every orthogonal transformation is a product of reflections. The third introduces the frame $\gamma^0$ and shows that the Clifford metric is the norm form of the Hermitian sector, which is what makes the mostly-minus convention of the series a statement about the objects rather than a choice. The fourth shows that conjugation by $\gamma^0$ is complex conjugation on $\mathbb{B}$, so that the frame, the sector swap, and the reflection are one operator. The fifth and sixth give the spaces of rotations and of reflections, and answer the question of how many reflections a given Lorentz transformation needs. The last two sections draw the consequence for chirality and explain why the Pauli algebra cannot carry it.
+The article is organized as follows. The first section reconciles the two ways a single element of the algebra is used — as an object and as an operator. The second establishes the grading, by the classical theorem that every orthogonal transformation is a product of reflections. The third introduces the frame $\gamma^0$ and shows that the Clifford metric is the biquaternion norm of the Hermitian sector, which is what makes the mostly-minus convention of the series a statement about the objects rather than a choice. The fourth shows that conjugation by $\gamma^0$ is complex conjugation on $\mathbb{B}$, so that the frame, the sector swap, and the reflection are one operator. The fifth and sixth give the spaces of rotations and of reflections, and answer the question of how many reflections a given Lorentz transformation needs. The last two sections draw the consequence for chirality and explain why the Pauli algebra cannot carry it.
 
 The conventions are those of the series: the biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0 = 1, e_1, e_2, e_3$, $e_k^2 = -e_0$, $e_1e_2 = e_3$; the scalar imaginary $i$; the sectors $\mathbb{M}_-$, $\mathbb{M}_+$, $\mathbb{H}_{\mathbb{B}}$; the Clifford metric $g = \mathrm{diag}(+1,-1,-1,-1)$ of the generators; and the isomorphism $\Phi$ of the dictionary article, under which $\Phi(e_k)$ is a spacelike bivector, $\Phi(e_0) = I_4$, and $\Phi(i) = -\omega$ with $\omega = \gamma^0\gamma^1\gamma^2\gamma^3$ the pseudoscalar. No convention is changed here.
 
@@ -96,7 +96,7 @@ $$
 
 the identity together with the spacelike bivectors, which generate the spatial rotations.
 
-The decisive consequence concerns the **metric**. The norm form $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$ evaluated on the two sector bases gives
+The decisive consequence concerns the **metric**. The biquaternion norm $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$ evaluated on the two sector bases gives
 
 $$
 N \text{ on } (e_0, ie_1, ie_2, ie_3) = \mathrm{diag}(+1,-1,-1,-1) = g,
@@ -105,7 +105,7 @@ $$
 N \text{ on } (ie_0, e_1, e_2, e_3) = \mathrm{diag}(-1,+1,+1,+1) = \eta = -g .
 $$
 
-The Clifford metric of the generators is not an independent convention laid on top of the algebra. **It is the norm form of the Hermitian sector**, and the $ict$ metric of the material sector is its negative, the norm form of $\mathbb{M}_-$. This closes the loop of the series' metric conventions: level $2$ carries $\eta = \mathrm{diag}(-1,+1,+1,+1)$, the form of the material coordinates; level $3$ carries $g = \mathrm{diag}(+1,-1,-1,-1)$, the form of the objects the generators represent, which are Hermitian. The two differ by the sign that distinguishes the two sectors, and neither could consistently be anything else.
+The Clifford metric of the generators is not an independent convention laid on top of the algebra. **It is the biquaternion norm of the Hermitian sector**, and the $ict$ metric of the material sector is its negative, the biquaternion norm of $\mathbb{M}_-$. This closes the loop of the series' metric conventions: level $2$ carries $\eta = \mathrm{diag}(-1,+1,+1,+1)$, the form of the material coordinates; level $3$ carries $g = \mathrm{diag}(+1,-1,-1,-1)$, the form of the objects the generators represent, which are Hermitian. The two differ by the sign that distinguishes the two sectors, and neither could consistently be anything else.
 
 The same fact appears in the vector square. For $w = x_0e_0 + ix_1e_1 + ix_2e_2 + ix_3e_3 \in \mathbb{M}_+$,
 
@@ -270,7 +270,7 @@ Combine this with the grading of the second section and the statement is: **rota
 The representation-theoretic form of the same fact is the split of the complexified Lorentz algebra,
 
 $$
-\mathfrak{so}(1,3)_{\mathbb{C}} \cong \mathfrak{su}(2)\oplus\mathfrak{su}(2),
+\mathrm{SO}(1,3)_{\mathbb{C}} \cong \mathrm{SU}(2)\oplus\mathrm{SU}(2),
 $$
 
 under which a representation is labelled by a pair $(j_1,j_2)$. The rotations and boosts act within each factor, and chirality is *which* factor:
@@ -290,7 +290,7 @@ $$
 \mathsf{P} : (\tfrac12,0) \longleftrightarrow (0,\tfrac12),
 $$
 
-verified at the level of the projectors as $\gamma^0\tilde\Pi_R = \tilde\Pi_L\gamma^0$. Parity violation — the statement that the weak interaction couples to one chirality and not the other — is therefore not an accidental property of the Standard Model but the statement that the interaction distinguishes the two factors of $\mathfrak{su}(2)\oplus\mathfrak{su}(2)$. This is what *Chiral Fermions in the Biquaternion Framework* and *The Neutrino and Majorana Fermions in Biquaternionic Form* develop on the physical side.
+verified at the level of the projectors as $\gamma^0\tilde\Pi_R = \tilde\Pi_L\gamma^0$. Parity violation — the statement that the weak interaction couples to one chirality and not the other — is therefore not an accidental property of the Standard Model but the statement that the interaction distinguishes the two factors of $\mathrm{SU}(2)\oplus\mathrm{SU}(2)$. This is what *Chiral Fermions in the Biquaternion Framework* and *The Neutrino and Majorana Fermions in Biquaternionic Form* develop on the physical side.
 
 One corollary concerns the mass. The mass term of the series is linear and chirality-off-diagonal; being even, $m$ itself commutes with $\gamma_5$ and does not flip chirality. What the mass does is *couple* the two chiral equations, so that chirality ceases to be conserved — it permits the flip, while the generators perform it. A massive fermion therefore has no definite chirality, which is the operator-level content of the standard statement that chirality and helicity agree only in the massless limit.
 
@@ -312,7 +312,7 @@ $$
 \gamma_5 = i_{\mathrm{Cl}}\gamma^0\gamma^1\gamma^2\gamma^3 ,
 $$
 
-and there is no way to form it from three. The timelike direction is not an optional extra; it is the ingredient that makes the grading exist. Chirality is therefore intrinsically relativistic: it is defined for a massless relativistic particle, mass mixes chirality with helicity, and only in the non-relativistic limit does the distinction collapse into the spin that the Pauli algebra describes. The same conclusion follows from the label table above, since the split $\mathfrak{su}(2)\oplus\mathfrak{su}(2)$ is a property of the complexified *Lorentz* algebra, which the spatial rotation algebra does not possess.
+and there is no way to form it from three. The timelike direction is not an optional extra; it is the ingredient that makes the grading exist. Chirality is therefore intrinsically relativistic: it is defined for a massless relativistic particle, mass mixes chirality with helicity, and only in the non-relativistic limit does the distinction collapse into the spin that the Pauli algebra describes. The same conclusion follows from the label table above, since the split $\mathrm{SU}(2)\oplus\mathrm{SU}(2)$ is a property of the complexified *Lorentz* algebra, which the spatial rotation algebra does not possess.
 
 ## Summary
 
@@ -322,7 +322,7 @@ The claims of this article, in order.
 
 2. **The grading is the reflection count.** By Cartan–Dieudonné, an orthogonal transformation is a product of reflections and its determinant is $(-1)^{\text{count}}$. The split $\mathrm{Cl}_{1,3} = \mathrm{Cl}_{1,3}^{+}\oplus\mathrm{Cl}_{1,3}^{-}$ is that parity. Verified: even unit elements act with determinant $+1$, odd ones with $-1$.
 
-3. **The frame and the metric.** Every vector is $\gamma^0\Phi(w)$ with $w\in\mathbb{M}_+$, and $\Phi(\mathbb{M}_+)$ is the identity together with the timelike bivectors — the boost sector. The norm form on the Hermitian basis is $g = \mathrm{diag}(+1,-1,-1,-1)$, and on the material basis $\eta = -g$. The Clifford metric is the norm form of the objects the generators represent, so the mostly-minus convention is forced rather than chosen.
+3. **The frame and the metric.** Every vector is $\gamma^0\Phi(w)$ with $w\in\mathbb{M}_+$, and $\Phi(\mathbb{M}_+)$ is the identity together with the timelike bivectors — the boost sector. The biquaternion norm on the Hermitian basis is $g = \mathrm{diag}(+1,-1,-1,-1)$, and on the material basis $\eta = -g$. The Clifford metric is the biquaternion norm of the objects the generators represent, so the mostly-minus convention is forced rather than chosen.
 
 4. **Conjugation by $\gamma^0$ is complex conjugation.** $\gamma^0\Phi(\tilde{Q})\gamma^0 = \Phi(\tilde{Q}^*)$, the sector-exchanging conjugation. Together with reversal, which is quaternion conjugation, it composes into $\dagger$. The real structure $\flat = -\dagger$ therefore carries the frame within it.
 
@@ -330,7 +330,7 @@ The claims of this article, in order.
 
 6. **Two reflections, or four.** A rotation is a product of two reflections exactly when it fixes a plane — equivalently, when a certain $4\times 4$ determinant vanishes. Pure boosts and pure spatial rotations qualify; a generic boost-plus-rotation does not, and needs four.
 
-7. **Chirality is what the reflection changes.** Even elements commute with $\gamma_5$, odd ones anticommute, so rotations preserve chirality and reflections reverse it. In the split $\mathfrak{so}(1,3)_{\mathbb{C}}\cong\mathfrak{su}(2)\oplus\mathfrak{su}(2)$, chirality is which factor, and the exchange of the factors is parity.
+7. **Chirality is what the reflection changes.** Even elements commute with $\gamma_5$, odd ones anticommute, so rotations preserve chirality and reflections reverse it. In the split $\mathrm{SO}(1,3)_{\mathbb{C}}\cong\mathrm{SU}(2)\oplus\mathrm{SU}(2)$, chirality is which factor, and the exchange of the factors is parity.
 
 8. **Chirality is relativistic.** The Pauli algebra $\mathrm{Cl}(3)\cong M_2(\mathbb{C})$ is simple, its volume element is central and squares to $-1$, and it admits no nontrivial grading. The grading requires the timelike generator.
 
@@ -361,7 +361,7 @@ The claims of this article, in order.
 
 ## Further Reading
 
-- Companion articles in this series: *The Dirac Algebra and Biquaternions — A Dictionary* (the isomorphism $\Phi$, the sign conventions, and the chirality operator used throughout); *The Dirac Equation in Biquaternionic Form* (the linear, chirality-off-diagonal mass term); *The Spinor Module in Biquaternionic Form and Its Lorentz Action* (the module, the one-sided spinor action, and the two factors $\mathfrak{su}(2)\oplus\mathfrak{su}(2)$); *Exercise: Chirality and the Weyl Spinors* (the projectors and the two Weyl modules); *The Lorentz Transformation as a Biquaternionic Rotation* (the boost rotor, its Hermiticity, and the rotor conjugation); *The Lorentz Group in Biquaternionic Form — Structure and Representations*; *Exercise: The Thomas Precession* (the composition of non-collinear boosts); *Exercise: Boosting a Four-Velocity and Rapidity Composition*.
+- Companion articles in this series: *The Dirac Algebra and Biquaternions — A Dictionary* (the isomorphism $\Phi$, the sign conventions, and the chirality operator used throughout); *The Dirac Equation in Biquaternionic Form* (the linear, chirality-off-diagonal mass term); *The Spinor Module in Biquaternionic Form and Its Lorentz Action* (the module, the one-sided spinor action, and the two factors $\mathrm{SU}(2)\oplus\mathrm{SU}(2)$); *Exercise: Chirality and the Weyl Spinors* (the projectors and the two Weyl modules); *The Lorentz Transformation as a Biquaternionic Rotation* (the boost rotor, its Hermiticity, and the rotor conjugation); *The Lorentz Group in Biquaternionic Form — Structure and Representations*; *Exercise: The Thomas Precession* (the composition of non-collinear boosts); *Exercise: Boosting a Four-Velocity and Rapidity Composition*.
 - On the physics of chirality: *Chiral Fermions in the Biquaternion Framework*; *The Neutrino and Majorana Fermions in Biquaternionic Form*; *The CPT Theorem in Biquaternionic Form* (the anti-linear discrete symmetries of the last subsection); *Zitterbewegung in Biquaternionic Form* (the mass as the coupling between the chiralities); *Exercise: The Non-Relativistic Limit and the Pauli Equation* (the reduction to the Pauli algebra).
 - Foundational articles: *Introduction to the Biquaternion Universe*; *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*; *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*; *Conventions in the Biquaternion Universe*.
 - On the Clifford structures used here: *Clifford Algebras*; *Clifford Algebras in finite dimensions*; *Spinors*; *The Spinor Representation of the Lorentz Group in Biquaternionic Form*.

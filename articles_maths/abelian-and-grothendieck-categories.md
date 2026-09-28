@@ -27,7 +27,7 @@ $$
 
 **Proposition.** In an additive category the product and the coproduct of two objects, when both exist, are canonically isomorphic, and the structure maps satisfy the biproduct identities. Finite products and finite coproducts therefore coincide.
 
-*Proof.* Write $A\coprod B$ for the coproduct with inclusions and $A\prod B$ for the product with projections. The universal properties give a map $A\coprod B\to A\prod B$ whose composites with the inclusions are the inclusion followed by each projection; explicitly, the four composites are the two identities and the two zero maps. A map $A\prod B\to A\coprod B$ is constructed from the identities and the zero maps; the two composites are identities by the universal properties and uniqueness. The resulting identities are the biproduct axioms. $\square$
+*Proof.* Write $A\coprod B$ for the coproduct with inclusions and $A\prod B$ for the product with projections. The universal properties give a map $A\coprod B\to A\prod B$ whose composites with the inclusions are the inclusion followed by each projection; explicitly, the four composites are the two identities and the two zero maps. A map $A\prod B\to A\coprod B$ is constructed from the identities and the zero maps; the two composites are identities by the universal properties and uniqueness. The resulting identities are the biproduct axioms.
 
 **Example.** $R\text{-}\mathbf{Mod}$ is additive: the hom sets are abelian groups, composition is $R$-bilinear, $0$ is a zero object, and the direct sum is a biproduct. The abelian groups themselves form the additive category $\mathbf{Ab}$, and the category of finitely generated projective $R$-modules is additive but not abelian.
 
@@ -37,7 +37,7 @@ $$
 
 **Proposition.** An additive functor $F$ satisfies $F(A\oplus B)\cong FA\oplus FB$ compatibly with the inclusions and projections, and $F(0)\cong0$.
 
-*Proof.* Additivity gives $F(0)=F(0+0)=F(0)+F(0)$, so $F(0)=0$; the biproduct identities are preserved because they are equations between composites of morphisms, and additivity preserves sums of morphisms. $\square$
+*Proof.* Additivity gives $F(0)=F(0+0)=F(0)+F(0)$, so $F(0)=0$; the biproduct identities are preserved because they are equations between composites of morphisms, and additivity preserves sums of morphisms.
 
 **Proposition.** The functors $\operatorname{Hom}_{\mathcal{A}}(A,-)$ and $\operatorname{Hom}_{\mathcal{A}}(-,A)$ with values in $\mathbf{Ab}$ are additive, and $\operatorname{Hom}_{\mathcal{A}}(A,B)$ is the group of morphisms that the bifunctor assigns to the pair.
 
@@ -75,11 +75,11 @@ The condition is exactly the categorical form of the first isomorphism theorem, 
 
 (iii) $f$ is an isomorphism if and only if it is both a monomorphism and an epimorphism.
 
-*Proof.* (i) If $f$ is a monomorphism and $k:\ker f\to A$, then $fk=0=f0$, so $k=0$, and the universal property of the zero map gives $\ker f=0$. Conversely if $\ker f=0$ and $fg=fh$, then $f(g-h)=0$ and the map $g-h$ factors through $\ker f=0$, so $g=h$. The cokernel statement is dual. (ii) The canonical map $A\to\operatorname{coim}f$ is an epimorphism by definition of the cokernel, and $\operatorname{im}f\to B$ is a monomorphism by definition of the kernel; the abelian axiom inserts the isomorphism between them. (iii) A monomorphism that is an epimorphism has $\ker f=0=\operatorname{coker}f$, so the factorisation is an isomorphism. $\square$
+*Proof.* (i) If $f$ is a monomorphism and $k:\ker f\to A$, then $fk=0=f0$, so $k=0$, and the universal property of the zero map gives $\ker f=0$. Conversely if $\ker f=0$ and $fg=fh$, then $f(g-h)=0$ and the map $g-h$ factors through $\ker f=0$, so $g=h$. The cokernel statement is dual. (ii) The canonical map $A\to\operatorname{coim}f$ is an epimorphism by definition of the cokernel, and $\operatorname{im}f\to B$ is a monomorphism by definition of the kernel; the abelian axiom inserts the isomorphism between them. (iii) A monomorphism that is an epimorphism has $\ker f=0=\operatorname{coker}f$, so the factorisation is an isomorphism.
 
 **Proposition.** An additive functor between abelian categories preserves kernels if and only if it preserves the multiplicative relation defining a kernel; a covariant additive functor is left exact precisely when it sends exact sequences $0\to A\to B\to C$ to exact sequences, right exact precisely when it sends $A\to B\to C\to0$ to exact sequences, and exact when it does both.
 
-*Proof.* This is the definition of exactness read through the functor: preservation of the kernel of $B\to C$ is the exactness at $B$, and preservation of the cokernel is exactness at $C$. Additivity supplies the compatibility with the zero objects. $\square$
+*Proof.* This is the definition of exactness read through the functor: preservation of the kernel of $B\to C$ is the exactness at $B$, and preservation of the cokernel is exactness at $C$. Additivity supplies the compatibility with the zero objects.
 
 ### Exact Sequences and the Diagram Lemmas
 
@@ -99,11 +99,11 @@ $$
 
 and the connecting morphism $\partial$ is natural in the diagram.
 
-*Proof.* The construction of $\partial$ in the category of modules used elements; in an abelian category it is performed with the epi–mono factorisation instead. The map $\ker c\to C$ is a monomorphism, and composing with the epimorphism $B\to C$ and forming a pullback produces the object $B\times_C\ker c$; the composite into $B'$ lands in the image of $A'$, and the comparison with the kernel gives $\partial$. The verification of exactness is by the universal properties, with no elements used; the details are the standard argument of Mitchell's theory of the embedding into module categories, and reduce to the module case after applying the Freyd–Mitchell theorem below. $\square$
+*Proof.* The construction of $\partial$ in the category of modules used elements; in an abelian category it is performed with the epi–mono factorisation instead. The map $\ker c\to C$ is a monomorphism, and composing with the epimorphism $B\to C$ and forming a pullback produces the object $B\times_C\ker c$; the composite into $B'$ lands in the image of $A'$, and the comparison with the kernel gives $\partial$. The verification of exactness is by the universal properties, with no elements used; the details are the standard argument of Mitchell's theory of the embedding into module categories, and reduce to the module case after applying the Freyd–Mitchell theorem below.
 
 **Theorem (five).** Consider a commutative diagram with exact rows $A_1\to A_2\to A_3\to A_4\to A_5$ and $B_1\to\cdots\to B_5$ and vertical maps $\alpha_i:A_i\to B_i$. If $\alpha_1,\alpha_2,\alpha_4,\alpha_5$ are isomorphisms then so is $\alpha_3$; if $\alpha_2,\alpha_4$ are monomorphisms and $\alpha_1$ an epimorphism then $\alpha_3$ is a monomorphism, and dually for epimorphisms.
 
-*Proof.* The argument is the diagram chase of the article *Exact Sequences*; it uses only exactness, composition and the abelian axiom, so it applies verbatim in every abelian category once exactness is stated categorically. Alternatively, embed the finite diagram in $R\text{-}\mathbf{Mod}$ by the Freyd–Mitchell theorem and chase elements there. $\square$
+*Proof.* The argument is the diagram chase of the article *Exact Sequences*; it uses only exactness, composition and the abelian axiom, so it applies verbatim in every abelian category once exactness is stated categorically. Alternatively, embed the finite diagram in $R\text{-}\mathbf{Mod}$ by the Freyd–Mitchell theorem and chase elements there.
 
 **Corollary.** A map of short exact sequences $0\to A\to B\to C\to0$ and $0\to A'\to B'\to C'\to0$ whose outer vertical maps are isomorphisms has an isomorphism for its middle vertical map.
 
@@ -115,7 +115,7 @@ and the connecting morphism $\partial$ is natural in the diagram.
 
 **Theorem.** $R\text{-}\mathbf{Mod}$ has enough projectives, the free modules, and enough injectives, via the construction of the article *Projective and Injective Modules*. The same statement holds in every Grothendieck category, below, for injectives.
 
-*Proof.* For projectives, every module is a quotient of a free module. For injectives, embed a module into a product of copies of an injective cogenerator; the general Grothendieck case is the theorem of Grothendieck, proved below. $\square$
+*Proof.* For projectives, every module is a quotient of a free module. For injectives, embed a module into a product of copies of an injective cogenerator; the general Grothendieck case is the theorem of Grothendieck, proved below.
 
 Enough projectives and enough injectives are precisely the hypotheses under which the derived functors are defined. An abelian category with neither is outside the theory's reach: the full subcategory of finitely generated modules over a ring is abelian, but the injective hull of a finitely generated module need not be finitely generated, so it generally has not enough injectives; and the category of sheaves on a compact space has enough injectives and rarely has enough projectives.
 
@@ -127,7 +127,7 @@ The elementary results of the preceding section were proved by the same element 
 
 **Theorem (Freyd–Mitchell).** Every small abelian category $\mathcal{A}$ admits a full, faithful and exact functor into the category $R\text{-}\mathbf{Mod}$ of left modules over some ring $R$. Consequently every finite diagram in $\mathcal{A}$ can be realised in a module category, and every statement about finitely many objects and morphisms that is expressible by exactness, composition and the abelian axioms and that holds in all module categories holds in every abelian category.
 
-*Proof (in outline).* The category of additive functors from $\mathcal{A}^{\mathrm{op}}$ to $\mathbf{Ab}$ is abelian, and evaluation at an object is exact; the **Yoneda embedding** $A\mapsto\mathcal{A}(-,A)$ is full, faithful and left exact. It remains to correct the failure of exactness, and to reduce to a module category over a ring rather than a functor category. Mitchell's argument forms the ring $R=\operatorname{End}(\mathcal{P})^{\mathrm{op}}$ of endomorphisms of a suitable projective generator of the functor category and shows that the functor category has a full exact subcategory equivalent to $R\text{-}\mathbf{Mod}$ containing the image of $\mathcal{A}$. $\square$
+*Proof (in outline).* The category of additive functors from $\mathcal{A}^{\mathrm{op}}$ to $\mathbf{Ab}$ is abelian, and evaluation at an object is exact; the **Yoneda embedding** $A\mapsto\mathcal{A}(-,A)$ is full, faithful and left exact. It remains to correct the failure of exactness, and to reduce to a module category over a ring rather than a functor category. Mitchell's argument forms the ring $R=\operatorname{End}(\mathcal{P})^{\mathrm{op}}$ of endomorphisms of a suitable projective generator of the functor category and shows that the functor category has a full exact subcategory equivalent to $R\text{-}\mathbf{Mod}$ containing the image of $\mathcal{A}$.
 
 ### Consequences
 
@@ -149,7 +149,7 @@ Grothendieck isolated a list of exactness conditions on the coproducts of an abe
 
 **Proposition.** In $R\text{-}\mathbf{Mod}$ the regular module $R$ is a generator and the conditions AB3, AB4, AB5 hold: direct sums and filtered colimits are exact.
 
-*Proof.* The functor $\operatorname{Hom}_R(R,-)$ is the identity, hence faithful, so $R$ generates; the exactness of direct sums and of filtered colimits is the statement recorded in *Module Categories*. $\square$
+*Proof.* The functor $\operatorname{Hom}_R(R,-)$ is the identity, hence faithful, so $R$ generates; the exactness of direct sums and of filtered colimits is the statement recorded in *Module Categories*.
 
 ### Definition and First Properties
 
@@ -159,7 +159,7 @@ Grothendieck isolated a list of exactness conditions on the coproducts of an abe
 
 **Theorem.** A Grothendieck category has all small colimits, is complete, has enough injectives, and has an injective cogenerator.
 
-*Proof.* AB3 gives all small coproducts, and the existence of all filtered colimits follows from AB5 together with the construction of a general colimit as a quotient of a coproduct, so all small colimits exist; all small limits exist by the dual argument, using that an abelian category has finite limits and products. For enough injectives one uses the generator $G$: since $G$ generates, the evaluation map embeds $A$ into the product $\prod_{x\in\operatorname{Hom}(A,G)}G$, and the same construction applied to the cokernel of the embedding, repeated along the ordinals, produces an increasing chain of embeddings whose transfinite colimit is injective; AB5, the exactness of filtered colimits, is exactly what is needed for the colimit to behave and for the iteration to terminate in an injective envelope. $\square$
+*Proof.* AB3 gives all small coproducts, and the existence of all filtered colimits follows from AB5 together with the construction of a general colimit as a quotient of a coproduct, so all small colimits exist; all small limits exist by the dual argument, using that an abelian category has finite limits and products. For enough injectives one uses the generator $G$: since $G$ generates, the evaluation map embeds $A$ into the product $\prod_{x\in\operatorname{Hom}(A,G)}G$, and the same construction applied to the cokernel of the embedding, repeated along the ordinals, produces an increasing chain of embeddings whose transfinite colimit is injective; AB5, the exactness of filtered colimits, is exactly what is needed for the colimit to behave and for the iteration to terminate in an injective envelope.
 
 **Remark.** The proof of enough injectives is the place where AB5 is used and where it cannot be weakened: an abelian category satisfying only AB3 need not have enough injectives. This is the technical reason Grothendieck categories are the natural setting for the cohomological theory of sheaves, where injective resolutions are the only ones generally available.
 
@@ -169,7 +169,7 @@ Grothendieck isolated a list of exactness conditions on the coproducts of an abe
 
 **Corollary.** In a Grothendieck category every object has an injective resolution; in an abelian category with enough projectives every object has a projective resolution.
 
-*Proof.* Embed $A$ in an injective $I^0$, embed the cokernel in an injective $I^1$, and iterate; the construction is the standard one. The projective case is dual. $\square$
+*Proof.* Embed $A$ in an injective $I^0$, embed the cokernel in an injective $I^1$, and iterate; the construction is the standard one. The projective case is dual.
 
 Resolutions are the input to the derived-functor theory; their existence in a Grothendieck category is what makes sheaf cohomology, which is developed in Part II, a derived-functor theory in the sense of this category.
 
@@ -181,7 +181,7 @@ Resolutions are the input to the derived-functor theory; their existence in a Gr
 
 **Proposition.** The quotient $\mathcal{A}/\mathcal{S}$ of an abelian category by a Serre subcategory is abelian, and the quotient functor is exact. Its objects are the objects of $\mathcal{A}$, and a morphism becomes an isomorphism exactly when its kernel and cokernel lie in $\mathcal{S}$.
 
-*Proof.* The calculus of fractions in the quotient admits a description in which a morphism $A\to B$ is represented by a diagram $A'\leftarrow A$ with kernel and cokernel in $\mathcal{S}$ followed by $A'\to B$ with the same property; the abelian axioms are verified on these representatives. Exactness of the quotient functor is immediate from the characterisation of the isomorphisms. $\square$
+*Proof.* The calculus of fractions in the quotient admits a description in which a morphism $A\to B$ is represented by a diagram $A'\leftarrow A$ with kernel and cokernel in $\mathcal{S}$ followed by $A'\to B$ with the same property; the abelian axioms are verified on these representatives. Exactness of the quotient functor is immediate from the characterisation of the isomorphisms.
 
 ### The Theorem
 
@@ -193,7 +193,7 @@ Resolutions are the input to the derived-functor theory; their existence in a Gr
 
 (iii) the induced functor $R\text{-}\mathbf{Mod}/\mathcal{S}\to\mathcal{A}$ is an equivalence. In this form every Grothendieck category is a quotient of a module category.
 
-*Proof (in outline).* The functor $H$ is left exact because it is a hom functor, and faithful by the definition of a generator; the fullness is the substance of the theorem and is proved by showing that a natural transformation $\operatorname{Hom}_{\mathcal{A}}(G,A)\to\operatorname{Hom}_{\mathcal{A}}(G,B)$ of $R$-modules is induced by a morphism $A\to B$, using that every object of a Grothendieck category is a quotient of a coproduct of copies of the generator. For the adjunction, the left adjoint $T$ sends the free module $R$ to $G$ and is right exact, so it is determined by this value; the unit and counit are isomorphisms on $G$, and since $G$ generates they are isomorphisms everywhere on the image, which is what makes the induced functor on the quotient an equivalence. The kernel $\mathcal{S}$ is closed under subobjects, quotients and extensions and, being the kernel of a functor with a right adjoint $H$, the quotient functor has the right adjoint that makes it localising. Exactness of $T$ follows from the equivalence in (iii), since an equivalence is exact and the quotient functor is exact. $\square$
+*Proof (in outline).* The functor $H$ is left exact because it is a hom functor, and faithful by the definition of a generator; the fullness is the substance of the theorem and is proved by showing that a natural transformation $\operatorname{Hom}_{\mathcal{A}}(G,A)\to\operatorname{Hom}_{\mathcal{A}}(G,B)$ of $R$-modules is induced by a morphism $A\to B$, using that every object of a Grothendieck category is a quotient of a coproduct of copies of the generator. For the adjunction, the left adjoint $T$ sends the free module $R$ to $G$ and is right exact, so it is determined by this value; the unit and counit are isomorphisms on $G$, and since $G$ generates they are isomorphisms everywhere on the image, which is what makes the induced functor on the quotient an equivalence. The kernel $\mathcal{S}$ is closed under subobjects, quotients and extensions and, being the kernel of a functor with a right adjoint $H$, the quotient functor has the right adjoint that makes it localising. Exactness of $T$ follows from the equivalence in (iii), since an equivalence is exact and the quotient functor is exact.
 
 **Corollary.** Every Grothendieck category is equivalent to a quotient of a module category by a localising subcategory. When that subcategory is a **hereditary torsion class** — closed under subobjects as well as under quotients and extensions — the quotient is the category of modules over $R$ equipped with the corresponding **Gabriel topology**, that is, the full subcategory of $R\text{-}\mathbf{Mod}$ of the modules that are torsion-free and injective for the topology. The abelian categories that arise in algebraic geometry and in the theory of sites are all of the torsion-theoretic form.
 

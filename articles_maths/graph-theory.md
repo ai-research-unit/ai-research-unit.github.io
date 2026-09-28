@@ -29,7 +29,7 @@ Throughout, a graph is **simple** unless the contrary is said explicitly: no loo
 
 **Proposition.** Isomorphism is an equivalence relation on graphs.
 
-*Proof.* The identity map is a morphism, the inverse of an isomorphism is an isomorphism by definition, and a composite of bijective edge-preserving maps is again one. $\square$
+*Proof.* The identity map is a morphism, the inverse of an isomorphism is an isomorphism by definition, and a composite of bijective edge-preserving maps is again one.
 
 **Remark.** A graph morphism is more permissive than the drawing suggests: it need not be injective, and it may create adjacencies, since $u \not\sim w$ does not prevent $f(u) \sim f(w)$. It cannot, however, collapse an edge to a vertex: if $uv \in E(\Gamma)$ then $f(u)f(v) \in E(\Lambda)$, and a simple graph has no loops, so $f(u) \neq f(v)$ whenever $u \sim v$. An isomorphism, by contrast, preserves adjacency and non-adjacency both, since $uv \notin E(\Gamma)$ forces $f(u)f(v) \notin E(\Lambda)$ when $f^{-1}$ is a morphism; isomorphism is therefore the correct notion of "the same graph", and every invariant introduced below is an isomorphism invariant.
 
@@ -49,11 +49,11 @@ $$
 \sum_{v \in V(\Gamma)} \deg v = 2\,|E(\Gamma)|.
 $$
 
-*Proof.* Count the pairs $(v,e)$ with $v$ an end of $e$. Each vertex $v$ contributes exactly $\deg v$ such pairs and each edge contributes exactly two, one for each of its ends, so the two counts are equal; no loop occurs, which is why every edge contributes two and not one. $\square$
+*Proof.* Count the pairs $(v,e)$ with $v$ an end of $e$. Each vertex $v$ contributes exactly $\deg v$ such pairs and each edge contributes exactly two, one for each of its ends, so the two counts are equal; no loop occurs, which is why every edge contributes two and not one.
 
 **Corollary.** In every finite graph the number of vertices of odd degree is even.
 
-*Proof.* The sum $\sum_v \deg v = 2|E(\Gamma)|$ is even, and it is congruent modulo $2$ to the number of odd-degree vertices. $\square$
+*Proof.* The sum $\sum_v \deg v = 2|E(\Gamma)|$ is even, and it is congruent modulo $2$ to the number of odd-degree vertices.
 
 **Corollary.** Every $d$-regular finite graph satisfies $d\,|V(\Gamma)| = 2|E(\Gamma)|$, so $d|V(\Gamma)|$ is even. In particular, there is no $d$-regular finite graph on $n$ vertices when $d$ and $n$ are both odd.
 
@@ -65,7 +65,7 @@ $$
 
 **Proposition.** If there is a walk from $u$ to $v$, there is a path from $u$ to $v$.
 
-*Proof.* Choose a walk of least length among those from $u$ to $v$. If two of its vertices coincided, say $v_i = v_j$ with $i < j$, deleting the segment $v_{i+1}, \ldots, v_j$ would produce a shorter walk from $u$ to $v$, a contradiction; hence all vertices are distinct and the walk is a path. $\square$
+*Proof.* Choose a walk of least length among those from $u$ to $v$. If two of its vertices coincided, say $v_i = v_j$ with $i < j$, deleting the segment $v_{i+1}, \ldots, v_j$ would produce a shorter walk from $u$ to $v$, a contradiction; hence all vertices are distinct and the walk is a path.
 
 **Example.** The girth of $C_n$ is $n$, of $K_n$ is $3$ for $n \geq 3$, and of $K_{m,n}$ is $4$ when $m, n \geq 2$. A graph with girth $\infty$ is exactly an acyclic graph.
 
@@ -75,7 +75,7 @@ $$
 
 **Theorem.** The relation "$u$ is connected to $v$" is an equivalence relation on $V(\Gamma)$.
 
-*Proof.* The one-vertex walk $v_0 = v$ is a path of length zero, so the relation is reflexive; reversing a path gives a path in the opposite direction, so it is symmetric; and concatenating a walk from $u$ to $v$ with a walk from $v$ to $w$ gives a walk from $u$ to $w$, so it is transitive. $\square$
+*Proof.* The one-vertex walk $v_0 = v$ is a path of length zero, so the relation is reflexive; reversing a path gives a path in the opposite direction, so it is symmetric; and concatenating a walk from $u$ to $v$ with a walk from $v$ to $w$ gives a walk from $u$ to $w$, so it is transitive.
 
 **Corollary.** The components partition $V(\Gamma)$, and a graph is connected if and only if it has exactly one component. Writing $c(\Gamma)$ for the number of components and $\Gamma_1, \ldots, \Gamma_{c}$ for the components, every edge lies within one $\Gamma_i$, so $E(\Gamma)$ is the disjoint union of the edge sets $E(\Gamma_i)$.
 
@@ -84,16 +84,16 @@ $$
 *Proof.* Induct on $n$; the case $n = 1$ is vacuous. Let $v$ be a vertex and let $\Gamma_1, \ldots, \Gamma_k$ be the components of $\Gamma - v$, of orders $n_1, \ldots, n_k$ with $n_1 + \cdots + n_k = n-1$. By induction $|E(\Gamma_i)| \geq n_i - 1$, so $|E(\Gamma-v)| \geq (n-1) - k$. Each $\Gamma_i$ contains a neighbour of $v$: otherwise no edge of $\Gamma$ would join $\Gamma_i$ to $v$ or to any $\Gamma_j$, and $\Gamma$ would be disconnected. Hence $\deg v \geq k$, and
 
 $$
-|E(\Gamma)| \geq (n-1-k) + k = n-1. \qquad \square
+|E(\Gamma)| \geq (n-1-k) + k = n-1.
 $$
 
 **Corollary.** For every finite graph $\Gamma$, $|E(\Gamma)| \geq n - c(\Gamma)$.
 
-*Proof.* Apply the lemma to each component and add. $\square$
+*Proof.* Apply the lemma to each component and add.
 
 **Lemma (edge count of a forest).** Every finite acyclic graph with $n$ vertices, $m$ edges and $c$ components satisfies $m = n - c$.
 
-*Proof.* Induct on $m$. If $m = 0$ then $c = n$ and both sides are zero. Otherwise choose an edge $e = uv$. Since the graph is acyclic, $e$ is the unique path in it from $u$ to $v$: a second path together with $e$ would form a cycle. Removing $e$ therefore separates $u$ from $v$ and leaves every other pair of vertices joined as before, so the graph with $e$ removed has $n$ vertices, $m-1$ edges and $c+1$ components, and is still acyclic. By induction $m - 1 = n - (c+1)$, so $m = n-c$. $\square$
+*Proof.* Induct on $m$. If $m = 0$ then $c = n$ and both sides are zero. Otherwise choose an edge $e = uv$. Since the graph is acyclic, $e$ is the unique path in it from $u$ to $v$: a second path together with $e$ would form a cycle. Removing $e$ therefore separates $u$ from $v$ and leaves every other pair of vertices joined as before, so the graph with $e$ removed has $n$ vertices, $m-1$ edges and $c+1$ components, and is still acyclic. By induction $m - 1 = n - (c+1)$, so $m = n-c$.
 
 **Corollary.** A tree on $n$ vertices has exactly $n-1$ edges.
 
@@ -109,7 +109,7 @@ which exists by connectedness and is attained because the set of admissible leng
 
 **Theorem.** On each component of a graph, $d$ is a metric: $d(u,v) \geq 0$ with equality if and only if $u = v$; $d(u,v) = d(v,u)$; and $d(u,w) \leq d(u,v) + d(v,w)$.
 
-*Proof.* The distance is a nonnegative integer, and $d(u,v) = 0$ says there is a path of length zero, which is a path whose only vertex is both $u$ and $v$, so $u = v$. Symmetry is the reversal of paths. For the triangle inequality, concatenate a shortest path from $u$ to $v$ with a shortest path from $v$ to $w$; the result is a walk from $u$ to $w$ of length $d(u,v) + d(v,w)$, and a shortest path is no longer than any walk, so $d(u,w) \leq d(u,v) + d(v,w)$. $\square$
+*Proof.* The distance is a nonnegative integer, and $d(u,v) = 0$ says there is a path of length zero, which is a path whose only vertex is both $u$ and $v$, so $u = v$. Symmetry is the reversal of paths. For the triangle inequality, concatenate a shortest path from $u$ to $v$ with a shortest path from $v$ to $w$; the result is a walk from $u$ to $w$ of length $d(u,v) + d(v,w)$, and a shortest path is no longer than any walk, so $d(u,w) \leq d(u,v) + d(v,w)$.
 
 **Remark.** This is the distance of *Metric, Uniform and Complete Spaces* applied to the graph, and it is the sense in which a graph is a metric space. A vertex and the graph are the only objects of the article; the metric language is inherited, and nothing topological beyond the metric — no compactness, no continuity of an invariant — is used in what follows.
 
@@ -126,12 +126,12 @@ and the **radius** is the least eccentricity, $\operatorname{rad}\Gamma = \min_v
 *Proof.* The first inequality is immediate from the definitions. For the second, let $z$ be a centre and let $u, v$ be vertices with $d(u,v) = \operatorname{diam}\Gamma$. Two applications of the triangle inequality through $z$ give
 
 $$
-\operatorname{diam}\Gamma = d(u,v) \leq d(u,z) + d(z,v) \leq 2 \operatorname{ecc}(z) = 2\operatorname{rad}\Gamma. \qquad \square
+\operatorname{diam}\Gamma = d(u,v) \leq d(u,z) + d(z,v) \leq 2 \operatorname{ecc}(z) = 2\operatorname{rad}\Gamma.
 $$
 
 **Proposition.** A connected graph is finite if and only if it is locally finite and of finite diameter.
 
-*Proof.* A finite graph is locally finite and of finite diameter. Conversely let $\Gamma$ be connected, locally finite and of finite diameter $D$, and fix a vertex $v$. By induction on $r$ the set of vertices at distance at most $r$ from $v$ is finite: for $r = 0$ it is $\{v\}$, and at each step it is enlarged by the neighbour sets of its finitely many vertices, each of them finite by local finiteness. The set of vertices at distance at most $D$ is therefore finite, and it is all of $V(\Gamma)$ because no distance exceeds $D$. $\square$
+*Proof.* A finite graph is locally finite and of finite diameter. Conversely let $\Gamma$ be connected, locally finite and of finite diameter $D$, and fix a vertex $v$. By induction on $r$ the set of vertices at distance at most $r$ from $v$ is finite: for $r = 0$ it is $\{v\}$, and at each step it is enlarged by the neighbour sets of its finitely many vertices, each of them finite by local finiteness. The set of vertices at distance at most $D$ is therefore finite, and it is all of $V(\Gamma)$ because no distance exceeds $D$.
 
 **Example.** $\operatorname{diam} K_n = 1$ for $n \geq 2$, $\operatorname{diam} P_n = n-1$, $\operatorname{diam} C_n = \lfloor n/2 \rfloor$, $\operatorname{diam} K_{1,1} = 1$, and $\operatorname{diam} K_{m,n} = 2$ for $m+n \geq 3$. In the cycle, a vertex has exactly one vertex at distance $\lfloor n/2\rfloor$ from it when $n$ is even and exactly two when $n$ is odd.
 
@@ -141,7 +141,7 @@ $$
 
 **Proposition.** A connected graph, with its distance, is a geodesic metric space.
 
-*Proof.* Let $u \neq v$ and let $k = d(u,v)$. By the definition of the distance as a minimum over a nonempty set of path lengths, there is a path of length $k$ from $u$ to $v$, and this path is a geodesic by definition. $\square$
+*Proof.* Let $u \neq v$ and let $k = d(u,v)$. By the definition of the distance as a minimum over a nonempty set of path lengths, there is a path of length $k$ from $u$ to $v$, and this path is a geodesic by definition.
 
 **Definition.** A graph is **geodesic** if it is connected and every pair of vertices is joined by a geodesic; by the proposition every connected graph is geodesic. The metric space of a Cayley graph, constructed in *Topology on Groups*, is read through this property, and the choice of the geodesic is what carries the information there.
 
@@ -155,7 +155,7 @@ $$
 
 **Proposition.** Every tree with at least two vertices has at least two leaves.
 
-*Proof.* Let $P = v_0, \ldots, v_k$ be a longest path in the tree, so that all its vertices are distinct. Then $v_0$ has no neighbour outside $P$ by maximality of the length, and its only neighbour in $P$ is $v_1$ by distinctness, so $\deg v_0 = 1$; the same argument applies to $v_k$. $\square$
+*Proof.* Let $P = v_0, \ldots, v_k$ be a longest path in the tree, so that all its vertices are distinct. Then $v_0$ has no neighbour outside $P$ by maximality of the length, and its only neighbour in $P$ is $v_1$ by distinctness, so $\deg v_0 = 1$; the same argument applies to $v_k$.
 
 ### Characterisations of a Tree
 
@@ -183,11 +183,11 @@ $$
 
 (e) $\Rightarrow$ (f): first, $\Gamma$ is connected: if $u$ and $v$ lay in different components, the edge $uv$ could be added between two non-adjacent vertices and would create no cycle, since no path joins $u$ to $v$. So $\Gamma$ is acyclic and connected, hence a tree, and deleting an edge of a tree disconnects it: the edge is the unique path between its ends, and any path in $\Gamma - e$ between them would be a second such path, hence would close a cycle in $\Gamma$.
 
-(f) $\Rightarrow$ (a): the graph is connected, so it remains to show acyclicity. If $\Gamma$ contained a cycle, deleting an edge of that cycle would leave $\Gamma$ connected, since the cycle provides an alternative route between its ends, contradicting (f). $\square$
+(f) $\Rightarrow$ (a): the graph is connected, so it remains to show acyclicity. If $\Gamma$ contained a cycle, deleting an edge of that cycle would leave $\Gamma$ connected, since the cycle provides an alternative route between its ends, contradicting (f).
 
 **Theorem (Cayley).** The number of labelled trees on $n \geq 2$ vertices is $n^{n-2}$.
 
-*Proof sketch.* A **Prüfer sequence** of a labelled tree on $\{1, \ldots, n\}$ is obtained by repeatedly deleting the smallest leaf and recording its unique neighbour, until two vertices remain: this produces a sequence of $n-2$ elements of $\{1,\ldots,n\}$. Conversely, given a sequence $(a_1, \ldots, a_{n-2})$, let $d_i = 1 + |\{j : a_j = i\}|$; the smallest $x$ with $d_x = 1$ is the first vertex deleted, it is joined to $a_1$, and the counts are updated by lowering $d_x$ and $d_{a_1}$; repeating recovers the tree. The two constructions are inverse to one another, so the number of labelled trees on $n$ vertices is the number of sequences of length $n-2$ in an $n$-element set, namely $n^{n-2}$. $\square$
+*Proof sketch.* A **Prüfer sequence** of a labelled tree on $\{1, \ldots, n\}$ is obtained by repeatedly deleting the smallest leaf and recording its unique neighbour, until two vertices remain: this produces a sequence of $n-2$ elements of $\{1,\ldots,n\}$. Conversely, given a sequence $(a_1, \ldots, a_{n-2})$, let $d_i = 1 + |\{j : a_j = i\}|$; the smallest $x$ with $d_x = 1$ is the first vertex deleted, it is joined to $a_1$, and the counts are updated by lowering $d_x$ and $d_{a_1}$; repeating recovers the tree. The two constructions are inverse to one another, so the number of labelled trees on $n$ vertices is the number of sequences of length $n-2$ in an $n$-element set, namely $n^{n-2}$.
 
 **Remark.** The values of $n^{n-2}$ for $n = 2, 3, 4, 5$ are $1, 3, 16, 125$, and they agree with the direct enumeration of the labelled trees on those few vertices; the number of unlabelled trees on $n$ vertices grows far more slowly and has no comparable closed form.
 
@@ -195,7 +195,7 @@ $$
 
 **Theorem.** Every finite connected graph contains a spanning tree.
 
-*Proof.* Let $\Lambda$ be a spanning subgraph of $\Gamma$ that is connected and has as few edges as possible; such a $\Lambda$ exists because $\Gamma$ itself is a connected spanning subgraph and $\Gamma$ is finite. If $\Lambda$ contained a cycle, deleting an edge of that cycle would keep $\Lambda$ connected, by the same argument as in the characterisation above, contradicting minimality; hence $\Lambda$ is acyclic, and a connected acyclic spanning subgraph is a spanning tree. $\square$
+*Proof.* Let $\Lambda$ be a spanning subgraph of $\Gamma$ that is connected and has as few edges as possible; such a $\Lambda$ exists because $\Gamma$ itself is a connected spanning subgraph and $\Gamma$ is finite. If $\Lambda$ contained a cycle, deleting an edge of that cycle would keep $\Lambda$ connected, by the same argument as in the characterisation above, contradicting minimality; hence $\Lambda$ is acyclic, and a connected acyclic spanning subgraph is a spanning tree.
 
 **Corollary.** A connected graph on $n$ vertices has at least $n-1$ edges, with equality exactly for the trees.
 
@@ -205,7 +205,7 @@ $$
 
 **Proposition.** In a tree, the geodesic between two vertices is unique: for any two vertices $u$ and $v$, the path of part (b) of the characterisation theorem is the unique path of length $d(u,v)$.
 
-*Proof.* Part (b) gives uniqueness among all paths, and a geodesic is a path. $\square$
+*Proof.* Part (b) gives uniqueness among all paths, and a geodesic is a path.
 
 **Proposition (four-point condition for trees).** Let $T$ be a tree with distance $d$. For any four vertices $x_1, x_2, x_3, x_4$, of the three sums
 
@@ -223,7 +223,7 @@ $$
 s_{12|34} = a_1+a_2+b_3+b_4, \qquad s_{13|24} = s_{14|23} = a_1+a_2+b_3+b_4+2L,
 $$
 
-so the two largest of the three sums are equal. $\square$
+so the two largest of the three sums are equal.
 
 **Remark.** The four-point condition characterises, among metrics, those that embed isometrically in a tree. The two cases of the proof are the two shapes of the minimal subtree: a star, where all three sums are equal, and a pair of cherries joined by an edge, where the sum pairing the cherries is strictly the smallest and the other two coincide. The condition is the metric shadow of the acyclicity of the tree, and it is the form in which a tree metric is recognised when only the distances are given.
 
@@ -233,7 +233,7 @@ so the two largest of the three sums are equal. $\square$
 
 **Proposition.** Let $T_d$ be the infinite $(d+1)$-regular tree with $d \geq 1$. Then for every vertex $v$, $|S(v,0)| = 1$, $|S(v,1)| = d+1$, and $|S(v,r)| = (d+1)d^{r-1}$ for $r \geq 1$. Consequently $|B(v,r)| = 1 + (d+1)\dfrac{d^r-1}{d-1}$ for $d \geq 2$, and $T_d$ has exponential growth.
 
-*Proof.* In a tree a vertex of $S(v,r)$ with $r \geq 1$ has exactly one neighbour at distance $r-1$ from $v$, namely its predecessor on the unique path to $v$, and the neighbours at distance $r$ of distinct vertices of $S(v,r-1)$ are distinct, since a common successor of two of them would give two paths from that successor to $v$. Hence $S(v,r)$ is in bijection with the set of pairs consisting of a vertex of $S(v,r-1)$ and one of its $d$ neighbours at distance $r$: each vertex of $S(v,r-1)$ has, for $r \geq 2$, exactly one neighbour in $S(v,r-2)$ and $d+1$ neighbours in all, so exactly $d$ of them lie in $S(v,r)$. Summing the geometric series gives the ball count, and it exceeds $d^{r}$ up to a constant, so the growth is exponential. $\square$
+*Proof.* In a tree a vertex of $S(v,r)$ with $r \geq 1$ has exactly one neighbour at distance $r-1$ from $v$, namely its predecessor on the unique path to $v$, and the neighbours at distance $r$ of distinct vertices of $S(v,r-1)$ are distinct, since a common successor of two of them would give two paths from that successor to $v$. Hence $S(v,r)$ is in bijection with the set of pairs consisting of a vertex of $S(v,r-1)$ and one of its $d$ neighbours at distance $r$: each vertex of $S(v,r-1)$ has, for $r \geq 2$, exactly one neighbour in $S(v,r-2)$ and $d+1$ neighbours in all, so exactly $d$ of them lie in $S(v,r)$. Summing the geometric series gives the ball count, and it exceeds $d^{r}$ up to a constant, so the growth is exponential.
 
 **Example (the number systems as graphs).** The integer line $\mathbb{Z}$ with edges $\{i, i+1\}$ is the infinite $2$-regular tree and has $|B(v,r)| = 2r+1$, so it has polynomial growth of degree one. A cycle has bounded balls, since its diameter is finite, and a finite graph has polynomial growth of degree zero: its ball of radius at least the diameter is the whole vertex set. The exponential growth of the regular tree is the property that the group-theoretic articles read on the Cayley graph of a free group, which is that tree; the construction belongs to *Topology on Groups*.
 
@@ -247,7 +247,7 @@ so the two largest of the three sums are equal. $\square$
 
 *Proof.* Suppose $(X,Y)$ is a bipartition. Along a closed walk the sides $X$ and $Y$ alternate, so the walk has even length; hence every cycle, being a closed walk, has even length.
 
-Conversely, assume every cycle is even and define a colouring by fixing a vertex $v$ in each component and setting $\chi(u) = d(v,u) \bmod 2$. Adjacent vertices have distances from $v$ differing by at most one. If the colouring failed to be proper there would be an edge $uw$ with $d(v,u)$ and $d(v,w)$ of the same parity; then a geodesic from $v$ to $u$ and a geodesic from $v$ to $w$, followed by the edge $wu$, form a closed walk of length $d(v,u)+d(v,w)+1$, which is odd, and a closed walk of odd length contains a cycle of odd length, since it decomposes into cycles whose lengths sum to its own length. This contradicts the hypothesis; hence the colouring is proper, and the two colour classes form a bipartition. $\square$
+Conversely, assume every cycle is even and define a colouring by fixing a vertex $v$ in each component and setting $\chi(u) = d(v,u) \bmod 2$. Adjacent vertices have distances from $v$ differing by at most one. If the colouring failed to be proper there would be an edge $uw$ with $d(v,u)$ and $d(v,w)$ of the same parity; then a geodesic from $v$ to $u$ and a geodesic from $v$ to $w$, followed by the edge $wu$, form a closed walk of length $d(v,u)+d(v,w)+1$, which is odd, and a closed walk of odd length contains a cycle of odd length, since it decomposes into cycles whose lengths sum to its own length. This contradicts the hypothesis; hence the colouring is proper, and the two colour classes form a bipartition.
 
 **Corollary.** Every forest is bipartite, and every tree is bipartite.
 
@@ -259,11 +259,11 @@ Conversely, assume every cycle is even and define a colouring by fixing a vertex
 
 *Proof.* If a matching saturating $X$ exists, its edges inject $S$ into $N(S)$ for every $S \subseteq X$, so $|N(S)| \geq |S|$.
 
-For the converse, argue by induction on $|X|$, the case $X = \emptyset$ being vacuous. If some nonempty proper $S \subsetneq X$ satisfies $|N(S)| = |S|$, then $\Gamma[S \cup N(S)]$ has a matching saturating $S$ by induction, and the remaining graph on $(X \setminus S) \cup (Y \setminus N(S))$ satisfies Hall's condition: if $T \subseteq X \setminus S$ had $|N(T)| < |T|$, then $N(S \cup T) \subseteq N(S) \cup N(T)$ and $|N(S \cup T)| \leq |S| + |N(T)| < |S| + |T| = |S \cup T|$, a violation on $S \cup T$. Induction applies to both parts, and their matchings combine. If no such $S$ exists, then $|N(S)| > |S|$ for every nonempty proper $S$. Choose $a \in X$ and $b \in N(\{a\})$, and remove $a$ and $b$; Hall's condition persists on $X \setminus \{a\}$: for $T \subseteq X \setminus \{a\}$, the set $T$ is a proper subset of $X$, so $|N_\Gamma(T)| > |T|$ and hence $|N_{\Gamma-\{a,b\}}(T)| \geq |N_\Gamma(T)| - 1 \geq |T|$. Induction gives a matching saturating $X \setminus \{a\}$ in the smaller graph, and adjoining the edge $ab$ saturates $X$. $\square$
+For the converse, argue by induction on $|X|$, the case $X = \emptyset$ being vacuous. If some nonempty proper $S \subsetneq X$ satisfies $|N(S)| = |S|$, then $\Gamma[S \cup N(S)]$ has a matching saturating $S$ by induction, and the remaining graph on $(X \setminus S) \cup (Y \setminus N(S))$ satisfies Hall's condition: if $T \subseteq X \setminus S$ had $|N(T)| < |T|$, then $N(S \cup T) \subseteq N(S) \cup N(T)$ and $|N(S \cup T)| \leq |S| + |N(T)| < |S| + |T| = |S \cup T|$, a violation on $S \cup T$. Induction applies to both parts, and their matchings combine. If no such $S$ exists, then $|N(S)| > |S|$ for every nonempty proper $S$. Choose $a \in X$ and $b \in N(\{a\})$, and remove $a$ and $b$; Hall's condition persists on $X \setminus \{a\}$: for $T \subseteq X \setminus \{a\}$, the set $T$ is a proper subset of $X$, so $|N_\Gamma(T)| > |T|$ and hence $|N_{\Gamma-\{a,b\}}(T)| \geq |N_\Gamma(T)| - 1 \geq |T|$. Induction gives a matching saturating $X \setminus \{a\}$ in the smaller graph, and adjoining the edge $ab$ saturates $X$.
 
 **Corollary.** Every $d$-regular bipartite graph with $d \geq 1$ has a perfect matching.
 
-*Proof.* For $S \subseteq X$, count the edges between $S$ and $N(S)$: there are $d|S|$ of them, and each vertex of $N(S)$ is incident with at most $d$ of them, so $d|S| \leq d|N(S)|$ and $|N(S)| \geq |S|$. Hall gives a matching saturating $X$, and the same argument with the roles of $X$ and $Y$ exchanged gives one saturating $Y$; $d$-regularity forces $d|X| = |E(\Gamma)| = d|Y|$, so $|X| = |Y|$ and a matching saturating $X$ is perfect. $\square$
+*Proof.* For $S \subseteq X$, count the edges between $S$ and $N(S)$: there are $d|S|$ of them, and each vertex of $N(S)$ is incident with at most $d$ of them, so $d|S| \leq d|N(S)|$ and $|N(S)| \geq |S|$. Hall gives a matching saturating $X$, and the same argument with the roles of $X$ and $Y$ exchanged gives one saturating $Y$; $d$-regularity forces $d|X| = |E(\Gamma)| = d|Y|$, so $|X| = |Y|$ and a matching saturating $X$ is perfect.
 
 **Example.** In the complete bipartite graph $K_{m,n}$ every nonempty subset of the $m$-side has the whole $n$-side as its neighbourhood, so Hall's condition holds exactly when $m \leq n$ and the matching is an injection; in the cycle $C_{2k}$ the two sides alternate along the cycle, and a subset of one side that is a union of consecutive blocks has a neighbourhood one vertex larger.
 
@@ -273,11 +273,11 @@ For the converse, argue by induction on $|X|$, the case $X = \emptyset$ being va
 
 **Proposition.** For every finite graph, $\chi(\Gamma) \leq \Delta(\Gamma) + 1$.
 
-*Proof.* Colour the vertices one at a time in any order. A vertex has at most $\Delta(\Gamma)$ neighbours, so among $\Delta(\Gamma)+1$ colours at least one is unused by its already coloured neighbours; assign it that colour. Every edge is properly coloured when its second end is assigned, and so at the end. $\square$
+*Proof.* Colour the vertices one at a time in any order. A vertex has at most $\Delta(\Gamma)$ neighbours, so among $\Delta(\Gamma)+1$ colours at least one is unused by its already coloured neighbours; assign it that colour. Every edge is properly coloured when its second end is assigned, and so at the end.
 
 **Theorem (König's edge-colouring theorem).** Every finite bipartite graph has a proper edge colouring with $\Delta(\Gamma)$ colours, where edges with a common end receive distinct colours.
 
-*Proof sketch.* Decompose a $d$-regular bipartite graph into $d$ perfect matchings by iterating the corollary above, and reduce a general bipartite graph to a regular one by adjoining a suitable number of vertices and edges; each perfect matching is one colour class, so $\Delta(\Gamma)$ colours suffice, and the lower bound is $\Delta(\Gamma)$ because the edges at a vertex of maximum degree are pairwise adjacent. $\square$
+*Proof sketch.* Decompose a $d$-regular bipartite graph into $d$ perfect matchings by iterating the corollary above, and reduce a general bipartite graph to a regular one by adjoining a suitable number of vertices and edges; each perfect matching is one colour class, so $\Delta(\Gamma)$ colours suffice, and the lower bound is $\Delta(\Gamma)$ because the edges at a vertex of maximum degree are pairwise adjacent.
 
 **Remark.** The two fundamental bounds are sharp in the expected places: $\chi(K_n) = n = \Delta(K_n)+1$ attains the greedy bound, and for a cycle $\chi(C_n) = 2$ for even $n$ and $3$ for odd $n$, so the greedy bound is far from sharp there. The refinement of the greedy bound for connected graphs — Brooks' theorem, that $\chi(\Gamma) \leq \Delta(\Gamma)$ unless $\Gamma$ is complete or an odd cycle — is standard and is quoted here rather than proved.
 
@@ -295,7 +295,7 @@ The classification of *Root Systems and Classification* attaches to an irreducib
 
 **Proposition.** The underlying graph of a connected Dynkin diagram of finite type is a tree, hence bipartite; it has at most one double or triple edge, and removing the arrow and suppressing multiple edges makes it simply laced, that is, a graph all of whose edges are single.
 
-*Proof.* The diagram is connected and finite. The constraints on a connected diagram of finite type — no cycles, no vertex of degree at least four, and a subdiagram argument for multiple edges — are exactly the exclusions proved in the classification of *Root Systems and Classification*, and they say that the underlying graph is a tree. A tree is bipartite by the corollary above. The second claim is the corresponding constraint on the number of double and triple edges, also part of the same classification; on contracting the multiple edges to single ones the result is a graph with the same connected tree structure and no multiple edges. $\square$
+*Proof.* The diagram is connected and finite. The constraints on a connected diagram of finite type — no cycles, no vertex of degree at least four, and a subdiagram argument for multiple edges — are exactly the exclusions proved in the classification of *Root Systems and Classification*, and they say that the underlying graph is a tree. A tree is bipartite by the corollary above. The second claim is the corresponding constraint on the number of double and triple edges, also part of the same classification; on contracting the multiple edges to single ones the result is a graph with the same connected tree structure and no multiple edges.
 
 **Example.** The diagram $A_n$ is the path $P_n$, the diagram $D_n$ is the tree obtained from $P_{n-2}$ by attaching two leaves at an end, and the exceptional diagrams $E_6, E_7, E_8$ are the trees drawn in *Root Systems and Classification*. The diagrams $B_n$, $C_n$ and $F_4$ carry a double edge and $G_2$ a triple edge, so they are not simply laced; the simply-laced types are exactly $A_n, D_n, E_6, E_7, E_8$. The affine Dynkin diagrams, whose underlying graphs may contain a cycle and are the Coxeter diagrams of the affine Coxeter groups, are treated in *Coxeter Groups*, where the Coxeter matrix is the defining datum.
 

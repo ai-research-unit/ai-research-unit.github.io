@@ -59,7 +59,7 @@ $$
 \bar\pi=\frac{1}{|G|}\sum_{g \in G}\rho(g)\,\pi\,\rho(g)^{-1},
 $$
 
-the factor $|G|^{-1}$ existing because $\operatorname{char} F \nmid |G|$. Then $\bar\pi$ is $F$-linear and $G$-equivariant, since conjugation by any $\rho(h)$ permutes the terms of the sum, and its restriction to $W$ is the identity, because $W$ is invariant and $\pi$ fixes $W$ pointwise. Hence $\bar\pi$ is an $F[G]$-linear projection of $V$ onto $W$, so that $V=W\oplus\ker\bar\pi$; every submodule of every module is therefore a direct summand, and every representation is completely reducible by *Simple and Semisimple Modules*. Applying this to the regular module gives that $F[G]$ is semisimple. $\square$
+the factor $|G|^{-1}$ existing because $\operatorname{char} F \nmid |G|$. Then $\bar\pi$ is $F$-linear and $G$-equivariant, since conjugation by any $\rho(h)$ permutes the terms of the sum, and its restriction to $W$ is the identity, because $W$ is invariant and $\pi$ fixes $W$ pointwise. Hence $\bar\pi$ is an $F[G]$-linear projection of $V$ onto $W$, so that $V=W\oplus\ker\bar\pi$; every submodule of every module is therefore a direct summand, and every representation is completely reducible by *Simple and Semisimple Modules*. Applying this to the regular module gives that $F[G]$ is semisimple.
 
 The proof is the module-theoretic form of the classical averaging argument: the group supplies an idempotent $\frac{1}{|G|}\sum_g g$ that is central and projects onto the invariants. When $\operatorname{char} F$ divides $|G|$, the averaging fails, the group algebra has a nonzero radical, and the theory becomes modular; the simple modules are then the simple modules of $F[G]/J(F[G])$, and the general theory of *Change of Rings* applies with $I=J(F[G])$.
 
@@ -125,7 +125,7 @@ $$
 \sum_{g \in G}\rho_i(g)\otimes\rho_j(g^{-1})=\frac{|G|}{d_i}\delta_{ij}\,P_i,
 $$
 
-where for $i=j$ the operator $P_i$ is the flip $v\otimes w\mapsto w\otimes v$ of $V_i\otimes V_i$, whose trace is $d_i=\dim V_i$. Taking traces yields the displayed orthogonality. $\square$
+where for $i=j$ the operator $P_i$ is the flip $v\otimes w\mapsto w\otimes v$ of $V_i\otimes V_i$, whose trace is $d_i=\dim V_i$. Taking traces yields the displayed orthogonality.
 
 **Theorem (Second orthogonality).** Let $\mathcal{C}$ be a conjugacy class of $G$ and let $g \in \mathcal{C}$. Then for representatives $g,h$ of classes,
 
@@ -151,7 +151,7 @@ $$
 
 and $V\cong\bigoplus_i V_i^{\oplus m_i}$ with uniquely determined multiplicities. In particular $V$ is irreducible if and only if $\langle\chi_V,\chi_V\rangle_G=1$, and $\langle\chi_V,\chi_V\rangle_G=\sum_i m_i^2$, so that the character determines the representation.
 
-*Proof.* By direct orthogonality of the simple modules in a semisimple category, the multiplicity of $V_i$ in a semisimple $V$ is $\dim_{\mathbb{C}}\operatorname{Hom}_G(V_i,V)$, and the averaging projection computes this dimension as the inner product of characters. The last clause is the orthonormality $\langle\chi_i,\chi_j\rangle_G=\delta_{ij}$ together with additivity of the inner product in each variable. $\square$
+*Proof.* By direct orthogonality of the simple modules in a semisimple category, the multiplicity of $V_i$ in a semisimple $V$ is $\dim_{\mathbb{C}}\operatorname{Hom}_G(V_i,V)$, and the averaging projection computes this dimension as the inner product of characters. The last clause is the orthonormality $\langle\chi_i,\chi_j\rangle_G=\delta_{ij}$ together with additivity of the inner product in each variable.
 
 This is the computational heart of the subject: entire representation-theoretic questions are reduced to inner products of class functions. Two irreducible representations are isomorphic exactly when their characters are equal, and the decomposition of any representation is determined by its character.
 
@@ -215,7 +215,7 @@ $$
 
 while $V_{\mathrm{std}}\otimes V_{\mathrm{sign}}\cong V_{\mathrm{std}}$. All these multiplicities were recomputed from the character table above by the formula for $c_{ij}^k$.
 
-**The Lie-theoretic analogue.** For a compact Lie group the same formalism applies with the group algebra replaced by the algebra of representative functions and the finite sums by integrals; the classical Clebsch–Gordan rule for the representations of $\mathfrak{sl}(2,\mathbb{C})$,
+**The Lie-theoretic analogue.** For a compact Lie group the same formalism applies with the group algebra replaced by the algebra of representative functions and the finite sums by integrals; the classical Clebsch–Gordan rule for the representations of $\mathrm{SL}(2,\mathbb{C})$,
 
 $$
 V_m \otimes V_n \cong \bigoplus_{k=|m-n|}^{m+n} V_k, \qquad \text{all multiplicities one,}

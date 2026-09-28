@@ -257,7 +257,7 @@ The gauge-fixing condition itself has a natural biquaternionic form. The gauge s
 
 ## Open Questions
 
-1. **A measure intrinsic to the material sector.** The measure is written in components. Is there a biquaternion measure — built from the trace form or the norm form, with the right transformation properties — that makes the fourfold component structure a single object, and does it treat the two fixed-point sectors differently?
+1. **A measure intrinsic to the material sector.** The measure is written in components. Is there a biquaternion measure — built from the trace form or the biquaternion norm, with the right transformation properties — that makes the fourfold component structure a single object, and does it treat the two fixed-point sectors differently?
 
 2. **The abelian determinant as a central operator.** For the Maxwell field the Faddeev–Popov determinant is $\det(-\Box)$, a power of a central scalar. Is there a sense in which the whole abelian gauge-fixing problem is the statement that $\Box$ is central, so that the gauge-fixing delta functional and the determinant are the only objects the algebra produces without extra input?
 

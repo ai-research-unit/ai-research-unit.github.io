@@ -31,7 +31,7 @@ In $\mathbb{K}^n$ the three norms $\|\cdot\|_1,\|\cdot\|_2,\|\cdot\|_\infty$ are
 
 **Theorem.** On a finite-dimensional vector space over $\mathbb{R}$ or $\mathbb{C}$, any two norms are equivalent.
 
-*Proof.* It suffices to compare an arbitrary norm $\|\cdot\|$ with the Euclidean norm $\|\cdot\|_2$ on $\mathbb{K}^n$. Upper bound: writing $x=\sum x_ie_i$, one has $\|x\| \le \sum_i|x_i|\|e_i\| \le c_2\|x\|_2$ with $c_2=(\sum_i\|e_i\|^2)^{1/2}$ by Cauchy–Schwarz. Lower bound: the function $x \mapsto \|x\|$ is continuous for $\|\cdot\|_2$ because $|\|x\|-\|y\|| \le \|x-y\| \le c_2\|x-y\|_2$, and the sphere $\{x:\|x\|_2=1\}$ is compact by Heine–Borel; the continuous function attains a positive minimum $c_1>0$ there, and homogeneity extends $c_1\|x\|_2 \le \|x\|$ to all $x$. $\square$
+*Proof.* It suffices to compare an arbitrary norm $\|\cdot\|$ with the Euclidean norm $\|\cdot\|_2$ on $\mathbb{K}^n$. Upper bound: writing $x=\sum x_ie_i$, one has $\|x\| \le \sum_i|x_i|\|e_i\| \le c_2\|x\|_2$ with $c_2=(\sum_i\|e_i\|^2)^{1/2}$ by Cauchy–Schwarz. Lower bound: the function $x \mapsto \|x\|$ is continuous for $\|\cdot\|_2$ because $|\|x\|-\|y\|| \le \|x-y\| \le c_2\|x-y\|_2$, and the sphere $\{x:\|x\|_2=1\}$ is compact by Heine–Borel; the continuous function attains a positive minimum $c_1>0$ there, and homogeneity extends $c_1\|x\|_2 \le \|x\|$ to all $x$.
 
 **Corollary.** A linear map between finite-dimensional normed spaces is automatically continuous, and every finite-dimensional normed space is complete.
 
@@ -47,11 +47,11 @@ $$
 
 **Theorem.** For linear $T:X \to Y$ the following are equivalent: (i) $T$ is continuous; (ii) $T$ is continuous at $0$; (iii) $T$ is bounded; (iv) $T$ maps bounded sets to bounded sets. In this case $\ker T$ is closed.
 
-*Proof.* (i)$\Rightarrow$(ii) is trivial. (ii)$\Rightarrow$(iii): continuity at $0$ gives $\delta>0$ with $\|x\|\le\delta \Rightarrow \|Tx\|\le1$, hence $\|Tx\| \le \delta^{-1}\|x\|$. (iii)$\Rightarrow$(i): $\|Tx-Tx_0\| \le C\|x-x_0\|$. The equivalence with (iv) is immediate from the definitions, and $\ker T$ is the preimage of the closed set $\{0\}$. $\square$
+*Proof.* (i)$\Rightarrow$(ii) is trivial. (ii)$\Rightarrow$(iii): continuity at $0$ gives $\delta>0$ with $\|x\|\le\delta \Rightarrow \|Tx\|\le1$, hence $\|Tx\| \le \delta^{-1}\|x\|$. (iii)$\Rightarrow$(i): $\|Tx-Tx_0\| \le C\|x-x_0\|$. The equivalence with (iv) is immediate from the definitions, and $\ker T$ is the preimage of the closed set $\{0\}$.
 
 **Proposition.** $B(X,Y)$ is a normed space under the operator norm and a Banach space when $Y$ is a Banach space; the operator norm is submultiplicative, $\|ST\| \le \|S\|\|T\|$, and composition of bounded maps is continuous. The dual space $X^*=B(X,\mathbb{K})$ is always a Banach space.
 
-*Proof.* The norm axioms are immediate. For completeness, if $(T_n)$ is Cauchy then $(T_nx)$ is Cauchy for each $x$; define $Tx=\lim T_nx$, check linearity, and let $m \to \infty$ in $\|T_nx-T_mx\| \le \varepsilon\|x\|$ to obtain $\|T-T_m\| \le \varepsilon$. Submultiplicativity is $\|STx\| \le \|S\|\|Tx\| \le \|S\|\|T\|\|x\|$. $\square$
+*Proof.* The norm axioms are immediate. For completeness, if $(T_n)$ is Cauchy then $(T_nx)$ is Cauchy for each $x$; define $Tx=\lim T_nx$, check linearity, and let $m \to \infty$ in $\|T_nx-T_mx\| \le \varepsilon\|x\|$ to obtain $\|T-T_m\| \le \varepsilon$. Submultiplicativity is $\|STx\| \le \|S\|\|Tx\| \le \|S\|\|T\|\|x\|$.
 
 ### Isomorphisms and Isometries
 
@@ -67,7 +67,7 @@ $$
 
 **Theorem.** In a normed space $X$, if a series satisfies $\sum_n\|x_n\|<\infty$ then $\sum_nx_n$ converges and $\|\sum_nx_n\| \le \sum_n\|x_n\|$. In a Banach space the converse holds: if every absolutely convergent series converges, then $X$ is complete.
 
-*Proof.* The partial sums are Cauchy because $\|\sum_{n=m}^{N}x_n\| \le \sum_{n=m}^N\|x_n\|$ tends to $0$. Conversely, a Cauchy sequence $(y_k)$ has a subsequence with $\|y_{k_{j+1}}-y_{k_j}\| \le 2^{-j}$; the telescoping series converges absolutely, hence converges to some $y$, and the Cauchy property forces $y_k \to y$. $\square$
+*Proof.* The partial sums are Cauchy because $\|\sum_{n=m}^{N}x_n\| \le \sum_{n=m}^N\|x_n\|$ tends to $0$. Conversely, a Cauchy sequence $(y_k)$ has a subsequence with $\|y_{k_{j+1}}-y_{k_j}\| \le 2^{-j}$; the telescoping series converges absolutely, hence converges to some $y$, and the Cauchy property forces $y_k \to y$.
 
 **Definition.** A **Schauder basis** of a Banach space $X$ is a sequence $(e_n)$ such that every $x \in X$ has a unique expansion $x=\sum_n a_ne_n$ convergent in norm. Not every separable Banach space has one; in contrast every separable Hilbert space has an orthonormal basis, which is a Schauder basis, by the companion article on Banach and Hilbert spaces.
 
@@ -78,12 +78,12 @@ $$
 *Proof.* Choose $z \notin Y$ with $d(z,Y)=d>0$ and pick $y \in Y$ with $\|z-y\| \le d/(1-\varepsilon)$; set $x=(z-y)/\|z-y\|$. For $y' \in Y$ one has $y+\|z-y\|y' \in Y$ and hence
 
 $$
-\|x-y'\|=\frac{1}{\|z-y\|}\bigl\|z-\bigl(y+\|z-y\|y'\bigr)\bigr\| \ge \frac{d}{\|z-y\|} \ge 1-\varepsilon . \qquad \square
+\|x-y'\|=\frac{1}{\|z-y\|}\bigl\|z-\bigl(y+\|z-y\|y'\bigr)\bigr\| \ge \frac{d}{\|z-y\|} \ge 1-\varepsilon .
 $$
 
 **Theorem.** A normed space is finite-dimensional if and only if its closed unit ball is compact. Consequently every locally compact normed space is finite-dimensional.
 
-*Proof.* In finite dimension the ball is compact by Heine–Borel and the equivalence of norms. Conversely, if the ball is compact and $X$ is infinite-dimensional, construct by Riesz's lemma a sequence $(x_n)$ in the unit sphere with $\|x_m-x_n\| \ge 1/2$ for $m \neq n$, which has no convergent subsequence, contradiction. $\square$
+*Proof.* In finite dimension the ball is compact by Heine–Borel and the equivalence of norms. Conversely, if the ball is compact and $X$ is infinite-dimensional, construct by Riesz's lemma a sequence $(x_n)$ in the unit sphere with $\|x_m-x_n\| \ge 1/2$ for $m \neq n$, which has no convergent subsequence, contradiction.
 
 ## The Baire-Based Cornerstones
 
@@ -91,33 +91,33 @@ $$
 
 **Theorem (Baire).** A complete metric space is not the union of countably many nowhere dense subsets; equivalently, a countable intersection of dense open subsets of a complete metric space is dense.
 
-*Proof.* Standard: given dense open $G_n$ and a nonempty open $U$, choose a closed ball $\overline B_1 \subseteq G_1 \cap U$ of radius $<1$, then $\overline B_{k+1}\subseteq G_{k+1}\cap B_k$ of radius $<2^{-k}$; the centres form a Cauchy sequence whose limit lies in every $G_n \cap U$. $\square$
+*Proof.* Standard: given dense open $G_n$ and a nonempty open $U$, choose a closed ball $\overline B_1 \subseteq G_1 \cap U$ of radius $<1$, then $\overline B_{k+1}\subseteq G_{k+1}\cap B_k$ of radius $<2^{-k}$; the centres form a Cauchy sequence whose limit lies in every $G_n \cap U$.
 
 ### Uniform Boundedness
 
 **Theorem (uniform boundedness principle, Banach–Steinhaus).** Let $X$ be a Banach space, $Y$ a normed space, and $\mathcal{F} \subseteq B(X,Y)$ a family that is pointwise bounded: $\sup_{T \in \mathcal{F}}\|Tx\|<\infty$ for every $x$. Then $\mathcal{F}$ is uniformly bounded, $\sup_{T \in \mathcal{F}}\|T\|<\infty$.
 
-*Proof.* Put $X_n=\{x:\sup_{T \in \mathcal{F}}\|Tx\| \le n\}$; each $X_n$ is closed and the hypothesis is $X=\bigcup_nX_n$. By Baire, some $X_N$ has nonempty interior, so there are $x_0$ and $\delta>0$ with $\|x\| \le \delta \Rightarrow \sup_T\|T(x_0+x)\| \le N$. Then for $\|x\|\le\delta$ and $T \in \mathcal{F}$, $\|Tx\| \le \|T(x_0+x)\|+\|Tx_0\| \le 2N$, so $\|T\| \le 2N/\delta$. $\square$
+*Proof.* Put $X_n=\{x:\sup_{T \in \mathcal{F}}\|Tx\| \le n\}$; each $X_n$ is closed and the hypothesis is $X=\bigcup_nX_n$. By Baire, some $X_N$ has nonempty interior, so there are $x_0$ and $\delta>0$ with $\|x\| \le \delta \Rightarrow \sup_T\|T(x_0+x)\| \le N$. Then for $\|x\|\le\delta$ and $T \in \mathcal{F}$, $\|Tx\| \le \|T(x_0+x)\|+\|Tx_0\| \le 2N$, so $\|T\| \le 2N/\delta$.
 
 ### Open Mapping and Closed Graph
 
 **Theorem (open mapping).** Let $X,Y$ be Banach spaces and $T:X \to Y$ a surjective bounded linear map. Then $T$ is open: the image of every open set is open. Consequently a bounded linear bijection between Banach spaces has a bounded inverse (the bounded inverse theorem).
 
-*Proof (sketch).* The Baire category theorem applied to $Y=\bigcup_n \overline{T(nB_X)}$ gives some $\overline{T(rB_X)}$ with nonempty interior, and by linearity this implies $T(B_X)$ contains a ball around $0$, hence $T$ is open; the bounded inverse statement follows by applying openness to the open set $T^{-1}(\cdot)$. Full details are standard. $\square$
+*Proof (sketch).* The Baire category theorem applied to $Y=\bigcup_n \overline{T(nB_X)}$ gives some $\overline{T(rB_X)}$ with nonempty interior, and by linearity this implies $T(B_X)$ contains a ball around $0$, hence $T$ is open; the bounded inverse statement follows by applying openness to the open set $T^{-1}(\cdot)$. Full details are standard.
 
 **Theorem (closed graph).** Let $X,Y$ be Banach spaces and $T:X \to Y$ linear. Then $T$ is bounded if and only if its graph $\Gamma_T=\{(x,Tx)\} \subseteq X \times Y$ is closed.
 
-*Proof.* If $T$ is bounded then $\Gamma_T$ is the preimage of the diagonal under the continuous map $(x,y)\mapsto Tx-y$, hence closed. Conversely, if $\Gamma_T$ is closed, it is a Banach space under the norm of $X \times Y$, and the projection $\Gamma_T \to X$ is a bounded linear bijection; by the bounded inverse theorem its inverse $x \mapsto (x,Tx)$ is bounded, so $T$ is bounded. $\square$
+*Proof.* If $T$ is bounded then $\Gamma_T$ is the preimage of the diagonal under the continuous map $(x,y)\mapsto Tx-y$, hence closed. Conversely, if $\Gamma_T$ is closed, it is a Banach space under the norm of $X \times Y$, and the projection $\Gamma_T \to X$ is a bounded linear bijection; by the bounded inverse theorem its inverse $x \mapsto (x,Tx)$ is bounded, so $T$ is bounded.
 
 ### Hahn–Banach
 
 **Theorem (Hahn–Banach, analytic form).** Let $X$ be a real vector space, $p:X \to \mathbb{R}$ a seminorm, $M \subseteq X$ a subspace and $f:M \to \mathbb{R}$ linear with $f \le p$ on $M$. Then $f$ extends to a linear $\tilde f:X \to \mathbb{R}$ with $\tilde f \le p$ on $X$. Over $\mathbb{C}$ the extension preserves the norm of a bounded functional.
 
-*Proof (sketch).* The one-step extension: for $x \notin M$, the values $\tilde f(x)=t$ making $\tilde f \le p$ on $M+\mathbb{R}x$ are those with $\sup_{m \in M}(f(m)-p(m-x)) \le t \le \inf_{m \in M}(p(m+x)-f(m))$, an interval shown nonempty by subadditivity of $p$; transfinite induction over a well-ordered basis of $X/M$ completes the extension. $\square$
+*Proof (sketch).* The one-step extension: for $x \notin M$, the values $\tilde f(x)=t$ making $\tilde f \le p$ on $M+\mathbb{R}x$ are those with $\sup_{m \in M}(f(m)-p(m-x)) \le t \le \inf_{m \in M}(p(m+x)-f(m))$, an interval shown nonempty by subadditivity of $p$; transfinite induction over a well-ordered basis of $X/M$ completes the extension.
 
 **Corollary.** (i) For every $x \neq 0$ in a normed space there is $f \in X^*$ with $\|f\|=1$ and $f(x)=\|x\|$; hence $X^*$ separates points and $\|x\|=\sup_{\|f\|\le1}|f(x)|$. (ii) A subspace $M$ is dense if and only if every $f \in X^*$ vanishing on $M$ is zero. (iii) If $Y \subseteq X$ is a closed subspace and $x \notin Y$, there is $f \in X^*$ with $f|_Y=0$ and $f(x) \neq 0$.
 
-*Proof.* (i) Apply the theorem to $M=\mathbb{K}x$ with the norm and the functional $\lambda x \mapsto \lambda\|x\|$. (ii) and (iii) are immediate from (i) applied in the quotient $X/\overline Y$. $\square$
+*Proof.* (i) Apply the theorem to $M=\mathbb{K}x$ with the norm and the functional $\lambda x \mapsto \lambda\|x\|$. (ii) and (iii) are immediate from (i) applied in the quotient $X/\overline Y$.
 
 ## The Dual Space
 
@@ -125,7 +125,7 @@ $$
 
 **Proposition.** $X^*$ is a Banach space for every normed $X$; $J$ is an isometry but need not be surjective; the weak topology on $X$ is the coarsest making every $f \in X^*$ continuous, and the weak-$*$ topology on $X^*$ is the coarsest making every evaluation $f \mapsto f(x)$ continuous. By the Banach–Alaoglu theorem, the closed unit ball of $X^*$ is weak-$*$ compact.
 
-*Proof.* The completeness and the isometry were established above; the topologies are defined by the stated families of functionals, and Banach–Alaoglu is the statement that the product of the closed discs $\{|f(x)| \le \|x\|\}$ is compact, the ball being closed inside it. $\square$
+*Proof.* The completeness and the isometry were established above; the topologies are defined by the stated families of functionals, and Banach–Alaoglu is the statement that the product of the closed discs $\{|f(x)| \le \|x\|\}$ is compact, the ball being closed inside it.
 
 **Example.** $\ell^p$ is reflexive for $1<p<\infty$, while $\ell^1$ and $\ell^\infty$ are not; $c_0$ is not reflexive, since $c_0^{**}=\ell^\infty \neq c_0$. Hilbert spaces are reflexive, by the Riesz representation theorem of the companion article on Banach and Hilbert spaces.
 
@@ -133,15 +133,15 @@ $$
 
 **Theorem.** Let $X$ be a normed space and $M \subseteq X$ a closed subspace. Then the quotient $X/M$ with $\|x+M\|=\inf_{m \in M}\|x+m\|$ is a normed space, the quotient map is bounded and open with norm $1$ if $M \neq X$, and $X/M$ is a Banach space whenever $X$ is.
 
-*Proof.* The quotient norm is well defined, since translating $x$ by an element of $M$ does not change the set of distances, and it satisfies the norm axioms; the quotient map has norm at most $1$ and exactly $1$ when $M \neq X$, choosing $x$ with $d(x,M)<1+\varepsilon$. Completeness passes to the quotient directly: from a Cauchy sequence $(x_n+M)$ pass to a subsequence with $\|(x_{n_{k+1}}-x_{n_k})+M\| \le 2^{-k}$ and choose representatives $u_k \in M$ with $\|x_{n_{k+1}}-x_{n_k}+u_k\| \le 2^{-k}$; the series $\sum_k(x_{n_{k+1}}-x_{n_k}+u_k)$ converges absolutely, hence converges in the Banach space $X$, and its partial sums differ from the $x_{n_j}$ by elements of $M$, so the subsequence, and therefore the Cauchy sequence itself, converges in $X/M$. $\square$
+*Proof.* The quotient norm is well defined, since translating $x$ by an element of $M$ does not change the set of distances, and it satisfies the norm axioms; the quotient map has norm at most $1$ and exactly $1$ when $M \neq X$, choosing $x$ with $d(x,M)<1+\varepsilon$. Completeness passes to the quotient directly: from a Cauchy sequence $(x_n+M)$ pass to a subsequence with $\|(x_{n_{k+1}}-x_{n_k})+M\| \le 2^{-k}$ and choose representatives $u_k \in M$ with $\|x_{n_{k+1}}-x_{n_k}+u_k\| \le 2^{-k}$; the series $\sum_k(x_{n_{k+1}}-x_{n_k}+u_k)$ converges absolutely, hence converges in the Banach space $X$, and its partial sums differ from the $x_{n_j}$ by elements of $M$, so the subsequence, and therefore the Cauchy sequence itself, converges in $X/M$.
 
 **Theorem.** For normed spaces $X_1,\dots,X_n$ the direct sum is a normed space under each of $\|(x_i)\|=\sum_i\|x_i\|$, $\max_i\|x_i\|$ and $(\sum_i\|x_i\|^2)^{1/2}$, these norms being equivalent, and it is complete exactly when every $X_i$ is. The direct sum of countably many nonzero Banach spaces is incomplete for each of these norms: its completion for the sum norm is the space of sequences with $\sum_i\|x_i\|<\infty$, and its completion for the supremum norm is the space of sequences with $\|x_i\| \to 0$.
 
-*Proof.* Equivalence of the three norms reduces to equivalence of the corresponding norms on $\mathbb{K}^n$, together with homogeneity. Cauchy sequences are Cauchy in each coordinate and conversely, which gives both the completeness statement and the diagonal limit. For the countable case fix nonzero $x_i \in X_i$ with $\sum_i\|x_i\|<\infty$, and put $x^{(k)}=(x_1,\dots,x_k,0,\dots)$. Then $\|x^{(k)}-x^{(m)}\|$ is $\sum_{i>\min(k,m)}^{\max(k,m)}\|x_i\|$ for the sum norm and $\max_{i>\min(k,m)}\|x_i\|$ for the supremum norm, and both tend to $0$, so $(x^{(k)})$ is Cauchy in either norm. It has no limit in the direct sum: a limit $y$ there has finite support, and for $j$ outside that support and $k \ge j$ one has $\|x^{(k)}-y\| \ge \|x_j\|$, a fixed positive number, so the distance does not tend to $0$. Hence the direct sum is incomplete in both norms, and the two completions are the sequences with $\sum_i\|x_i\|<\infty$ and those with $\|x_i\| \to 0$. $\square$
+*Proof.* Equivalence of the three norms reduces to equivalence of the corresponding norms on $\mathbb{K}^n$, together with homogeneity. Cauchy sequences are Cauchy in each coordinate and conversely, which gives both the completeness statement and the diagonal limit. For the countable case fix nonzero $x_i \in X_i$ with $\sum_i\|x_i\|<\infty$, and put $x^{(k)}=(x_1,\dots,x_k,0,\dots)$. Then $\|x^{(k)}-x^{(m)}\|$ is $\sum_{i>\min(k,m)}^{\max(k,m)}\|x_i\|$ for the sum norm and $\max_{i>\min(k,m)}\|x_i\|$ for the supremum norm, and both tend to $0$, so $(x^{(k)})$ is Cauchy in either norm. It has no limit in the direct sum: a limit $y$ there has finite support, and for $j$ outside that support and $k \ge j$ one has $\|x^{(k)}-y\| \ge \|x_j\|$, a fixed positive number, so the distance does not tend to $0$. Hence the direct sum is incomplete in both norms, and the two completions are the sequences with $\sum_i\|x_i\|<\infty$ and those with $\|x_i\| \to 0$.
 
 **Corollary (completion).** Every normed space $X$ has a completion $\widehat X$, unique up to isometric isomorphism, which is a Banach space containing $X$ as a dense subspace. The completion of the finitely supported sequences under $\|\cdot\|_p$ is $\ell^p$.
 
-*Proof.* Complete the metric space $X$; the vector operations and the norm extend by continuity and uniformity, and the result is a Banach space. Uniqueness is the universal property of the completion of a metric space. The finitely supported sequences are dense in $\ell^p$. $\square$
+*Proof.* Complete the metric space $X$; the vector operations and the norm extend by continuity and uniformity, and the result is a Banach space. Uniqueness is the universal property of the completion of a metric space. The finitely supported sequences are dense in $\ell^p$.
 
 ## Summary
 

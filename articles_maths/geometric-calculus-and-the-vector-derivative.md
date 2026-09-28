@@ -23,7 +23,7 @@ and the derivative from the right is $F\partial=\sum_i\frac{\partial F}{\partial
 
 **Proposition.** The vector derivative is independent of the basis used in its definition, and the two sides agree when the basis is orthonormal: $\partial=\sum_ie_i\partial_i$.
 
-**Proof.** A change of basis changes both the reciprocal vectors and the coordinates in the compensating way, and the identity $B(e^i,e_j)=\delta^i_j$ is the definition of reciprocity; for an orthonormal basis the reciprocal basis is the basis itself. $\square$
+**Proof.** A change of basis changes both the reciprocal vectors and the coordinates in the compensating way, and the identity $B(e^i,e_j)=\delta^i_j$ is the definition of reciprocity; for an orthonormal basis the reciprocal basis is the basis itself.
 
 **Example (the derivative of the position vector).** Let $x=\sum_ix^ie_i$, so that $\partial_i x=e_i$. Then
 
@@ -43,7 +43,7 @@ $$
 
 where $\partial\cdot F$ is the divergence of the field, a scalar-valued function, and $\partial\wedge F$ is its curl, a bivector-valued function.
 
-**Proof.** The geometric product of the vector $\partial$ with the vector $F$ has the grades $0$ and $2$, and the grade decomposition of *The Geometric Product and the Grade Decomposition* identifies the two parts as the contraction and the wedge; the divergence is the contraction with the derivative and the curl is the wedge. $\square$
+**Proof.** The geometric product of the vector $\partial$ with the vector $F$ has the grades $0$ and $2$, and the grade decomposition of *The Geometric Product and the Grade Decomposition* identifies the two parts as the contraction and the wedge; the divergence is the contraction with the derivative and the curl is the wedge.
 
 **Theorem (the Leibniz rule).** For smooth functions $A$ and $B$,
 
@@ -53,7 +53,7 @@ $$
 
 where the dots indicate the factor to which the derivative is applied and the place at which the vector factor of the differentiation stands.
 
-**Proof.** Differentiating the product in a coordinate and multiplying by the reciprocal vector gives $\partial_i(AB)=\partial_iA\,B+A\,\partial_iB$; multiplying by $e^i$ on the left and using the associativity of the geometric product gives the statement, the dots keeping track of which factor each differentiation acts upon. $\square$
+**Proof.** Differentiating the product in a coordinate and multiplying by the reciprocal vector gives $\partial_i(AB)=\partial_iA\,B+A\,\partial_iB$; multiplying by $e^i$ on the left and using the associativity of the geometric product gives the statement, the dots keeping track of which factor each differentiation acts upon.
 
 **Remark (the bracket convention).** The overdot records both the factor to which the derivative is applied and the place at which the vector factor of the differentiation stands: in the second term $\dot A\dot\partial B$ the derivative acts on $B$ and the vector factor it produces stands where $A$ stands, which is what the expansion of $\partial(AB)$ in a coordinate basis produces. With this convention the Leibniz rule above is an identity and not a convention.
 
@@ -69,7 +69,7 @@ $$
 
 where $dV$ is the volume element of the region and $dS$ is the directed boundary element, a vector $(n)\,|dS|$ with $n$ the outward unit normal and $|dS|$ the scalar element of area.
 
-**Proof.** In a coordinate system in which the region is described by the inequalities $a_i\le x^i\le b_i$ after a partition into such pieces, the left-hand side integrates the partial derivatives of $F$ over the region, and the fundamental theorem of calculus in each coordinate produces the boundary terms; the boundary terms assemble into the integral of the directed element over the boundary, because the directed element of a piece of boundary with normal $n$ is $n$ times the scalar element of area and the orientation of the region fixes the sign. The assembly is the same computation that proves the divergence theorem in vector analysis, with the Clifford product in place of the dot and cross products. $\square$
+**Proof.** In a coordinate system in which the region is described by the inequalities $a_i\le x^i\le b_i$ after a partition into such pieces, the left-hand side integrates the partial derivatives of $F$ over the region, and the fundamental theorem of calculus in each coordinate produces the boundary terms; the boundary terms assemble into the integral of the directed element over the boundary, because the directed element of a piece of boundary with normal $n$ is $n$ times the scalar element of area and the orientation of the region fixes the sign. The assembly is the same computation that proves the divergence theorem in vector analysis, with the Clifford product in place of the dot and cross products.
 
 ### The Classical Theorems as Grades
 
@@ -79,7 +79,7 @@ $$
 \int_{\partial M}dS\cdot F=\int_M\partial\cdot F\,dV .
 $$
 
-**Proof.** Apply the fundamental theorem to the vector-valued $F$ and take the scalar part of both sides. On the left, $dS F=dS\cdot F+dS\wedge F$ and the scalar part is $dS\cdot F$; on the right, $\dot\partial F=\partial\cdot F+\partial\wedge F$ and the scalar part is $\partial\cdot F$. $\square$
+**Proof.** Apply the fundamental theorem to the vector-valued $F$ and take the scalar part of both sides. On the left, $dS F=dS\cdot F+dS\wedge F$ and the scalar part is $dS\cdot F$; on the right, $\dot\partial F=\partial\cdot F+\partial\wedge F$ and the scalar part is $\partial\cdot F$.
 
 **Theorem (Stokes).** For a vector-valued function $F$,
 
@@ -87,7 +87,7 @@ $$
 \int_{\partial M}dS\wedge F=\int_M\partial\wedge F\,dV .
 $$
 
-**Proof.** Apply the fundamental theorem to the vector-valued $F$ and take the bivector part of both sides. $\square$
+**Proof.** Apply the fundamental theorem to the vector-valued $F$ and take the bivector part of both sides.
 
 **Theorem (the fundamental theorem of calculus).** In one dimension, with $V$ spanned by the unit vector $e$ of square one and $M=[a,b]$, the fundamental theorem reads
 
@@ -97,7 +97,7 @@ $$
 
 which is the classical statement multiplied by $e$.
 
-**Proof.** The vector derivative is $e\,d/dx$, and the boundary of the interval consists of the two points with directed elements $-e$ at $a$ and $+e$ at $b$; the theorem reduces to the fundamental theorem of calculus. $\square$
+**Proof.** The vector derivative is $e\,d/dx$, and the boundary of the interval consists of the two points with directed elements $-e$ at $a$ and $+e$ at $b$; the theorem reduces to the fundamental theorem of calculus.
 
 **Remark (the Cauchy theorem in the plane).** In the plane, with $z=x+iy$ identified with the vector $x+e_1e_2y$ and with a similar identification of the derivative, the equation $\partial F=0$ is the Cauchy–Riemann equation, and the fundamental theorem becomes Cauchy's integral theorem; the full development is in *Clifford Analysis*, which treats the monogenic functions and the integral formula. The present article supplies the single theorem from which these are the two-dimensional cases.
 
@@ -113,7 +113,7 @@ $$
 
 in the positive definite case and with orthonormal coordinates; hence every monogenic function is harmonic, in every component.
 
-**Proof.** $\partial^2=\bigl(\sum_ie^i\partial_i\bigr)\bigl(\sum_je^j\partial_j\bigr)=\sum_{i,j}e^ie^j\partial_i\partial_j=\sum_i\partial_i^2$, because the mixed terms with $i\neq j$ cancel in pairs, $e^ie^j+e^je^i=2B(e^i,e^j)=0$ for the orthonormal reciprocal basis of a diagonal form, while the equal-index terms contribute $e^ie^i\partial_i^2=\partial_i^2$. A monogenic $F$ has $\Delta F=\partial(\partial F)=0$. $\square$
+**Proof.** $\partial^2=\bigl(\sum_ie^i\partial_i\bigr)\bigl(\sum_je^j\partial_j\bigr)=\sum_{i,j}e^ie^j\partial_i\partial_j=\sum_i\partial_i^2$, because the mixed terms with $i\neq j$ cancel in pairs, $e^ie^j+e^je^i=2B(e^i,e^j)=0$ for the orthonormal reciprocal basis of a diagonal form, while the equal-index terms contribute $e^ie^i\partial_i^2=\partial_i^2$. A monogenic $F$ has $\Delta F=\partial(\partial F)=0$.
 
 **Remark.** The converse fails: a harmonic function need not be monogenic, exactly as a harmonic function of two variables need not be holomorphic. The monogenic functions form a much smaller class, and the theory of that class, with the Cauchy integral formula, the Fischer decomposition and the function theory of the Clifford algebras, is the subject of *Clifford Analysis* and of *Clifford Modules and the Twisted Cauchy–Riemann Operator*, where the results are developed.
 
@@ -135,7 +135,7 @@ $$
 
 up to the sign convention of the codifferential.
 
-**Proof.** The exterior derivative is characterised by its action on a $k$-form as the alternating part of the derivative of the components, and the wedge product of vectors with the antisymmetrisation of the derivative is exactly that; the codifferential is the formal adjoint of the exterior derivative and it is given by the contraction with the derivative, with the sign fixed by the convention of the adjoint. The identification of forms with multivectors by the metric, and the two operators, are in *The Exterior Algebra* and *Differential Forms and Stokes' Theorem*. $\square$
+**Proof.** The exterior derivative is characterised by its action on a $k$-form as the alternating part of the derivative of the components, and the wedge product of vectors with the antisymmetrisation of the derivative is exactly that; the codifferential is the formal adjoint of the exterior derivative and it is given by the contraction with the derivative, with the sign fixed by the convention of the adjoint. The identification of forms with multivectors by the metric, and the two operators, are in *The Exterior Algebra* and *Differential Forms and Stokes' Theorem*.
 
 **Corollary.** In the notation of the vector derivative, the Hodge Laplacian of the exterior calculus and the square of the vector derivative agree up to the sign convention chosen for the formal adjoint:
 
@@ -145,7 +145,7 @@ $$
 
 the sign being the one carried by the definition of the codifferential, and in the flat case with the positive definite metric both are the Laplacian of the components.
 
-**Proof.** Immediate from the two identifications and from the theorem on the square of the vector derivative, together with the standard sign in the definition of the codifferential recorded in *Differential Forms and Stokes' Theorem*. $\square$
+**Proof.** Immediate from the two identifications and from the theorem on the square of the vector derivative, together with the standard sign in the definition of the codifferential recorded in *Differential Forms and Stokes' Theorem*.
 
 ## The Equations of the Calculus
 

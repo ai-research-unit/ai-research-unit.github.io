@@ -3,9 +3,9 @@
 
 ## Introduction
 
-This article introduces the split-quaternion algebra as an algebraic structure. It defines the algebra, describes the conjugations and their fixed-point subspaces, the norm form of signature $(2,2)$, the idempotents and the distinguished subspaces, and the Lie algebra structure. It closes with a comparison with the quaternions $\mathbb{H}$ and with the split-biquaternions $\mathbb{H}_{\mathbb{D}}$.
+This article introduces the split-quaternion algebra as an algebraic structure. It defines the algebra, describes the conjugations and their fixed-point subspaces, the idempotents and the distinguished subspaces, and the Lie algebra structure. It closes with a comparison with the quaternions $\mathbb{H}$ and with the split-biquaternions $\mathbb{H}_{\mathbb{D}}$.
 
-The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. The quaternion algebra and its norm form are assumed from *Quaternion Algebra*; the split-complex algebra and its idempotents from *Split-Complex Algebra*; the Clifford algebra $\mathrm{Cl}_{p,q}$ and its low-dimensional classification from *Clifford Algebras in Finite Dimensions* and *The Number Systems as Clifford Algebras*. The rotations, the Lorentz group and the hyperbolic geometry that the algebra carries are not treated here; they belong to *Split-Quaternion Rotations and the Lorentz Group*, *Split-Quaternion Geometry* and *Split-Quaternions and Hyperbolic Geometry*.
+The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. The inner product of the algebra is formed and evaluated here as an algebraic pairing — its scalar, its vanishing and its non-degeneracy; nothing is measured with it, and the theory of norms, forms and signatures belongs to the Topology group (*Split-Quaternion Norm and Invertibility*). The quaternion algebra is assumed from *Quaternion Algebra*; the split-complex algebra and its idempotents from *Split-Complex Algebra*; the Clifford algebra $\mathrm{Cl}_{p,q}$ and its low-dimensional classification from *Clifford Algebras in Finite Dimensions* and *The Number Systems as Clifford Algebras*. The rotations, the Lorentz group and the hyperbolic geometry that the algebra carries are not treated here; they belong to *Split-Quaternion Rotations and the Lorentz Group*, *Split-Quaternion Geometry* and *Split-Quaternions and Hyperbolic Geometry*.
 
 ## The Split-Quaternion Algebra
 
@@ -86,6 +86,14 @@ $$
 
 so $1 + e_2$ and $1 - e_2$ are nonzero zero divisors. The algebra therefore has zero divisors and is not a division algebra. Frobenius' theorem, recalled in *Normed Division Algebras and the Hurwitz Theorem*, states that the only finite-dimensional associative real division algebras are $\mathbb{R}$, $\mathbb{C}$ and $\mathbb{H}$; the split-quaternion algebra is a fourth four-dimensional associative real algebra, and the failure of the division property is exactly the appearance of the zero divisors above. The zero divisor set is the subject of *Split-Quaternion Zero Divisors*.
 
+**The matrix model.** The algebra is isomorphic to the algebra of $2\times2$ real matrices: the low-dimensional Clifford classification gives
+
+$$
+\mathbb{H}_{\mathrm{s}} \cong \mathrm{Cl}_{1,1} \cong M_2(\mathbb{R})
+$$
+
+(*The Number Systems as Clifford Algebras*), and this abstract identification is used throughout the category, in the ideal theory of *Split-Quaternion Ideals and Peirce Decomposition*, in the idempotent theory of *Split-Quaternion Idempotents and Projections*, and in the spectral and exponential theory of the later articles.
+
 ## Conjugations and Fixed-Point Subspaces
 
 ### The Conjugation
@@ -100,7 +108,7 @@ It negates the three vector basis elements and fixes the scalars.
 
 **Proposition.** The conjugation is an involutive algebra anti-automorphism: it is $\mathbb{R}$-linear, it satisfies $\overline{\tilde q y} = \bar{y}\, \bar{\tilde q}$ and $\overline{\bar{\tilde q}} = \tilde q$, and its fixed-point set is the scalar line $\mathbb{R}$.
 
-**Proof.** Linearity and the second identity are immediate from the definition. For the anti-automorphism property it suffices to check the generators: $\overline{e_1 e_2} = \overline{e_3} = -e_3$, while $\bar{e}_2 \bar{e}_1 = (-e_2)(-e_1) = e_2 e_1 = -e_3$, and the other products are similar. The fixed points satisfy $q_1 e_1 + q_2 e_2 + q_3 e_3 = -(q_1 e_1 + q_2 e_2 + q_3 e_3)$, hence $q_1 = q_2 = q_3 = 0$. $\square$
+**Proof.** Linearity and the second identity are immediate from the definition. For the anti-automorphism property it suffices to check the generators: $\overline{e_1 e_2} = \overline{e_3} = -e_3$, while $\bar{e}_2 \bar{e}_1 = (-e_2)(-e_1) = e_2 e_1 = -e_3$, and the other products are similar. The fixed points satisfy $q_1 e_1 + q_2 e_2 + q_3 e_3 = -(q_1 e_1 + q_2 e_2 + q_3 e_3)$, hence $q_1 = q_2 = q_3 = 0$.
 
 ### The Two Eigenspaces
 
@@ -122,7 +130,7 @@ the first summand lying in $S$ and the second in $V$.
 
 ### The Other Two Involutions
 
-Two further involutions act on the algebra, and they are recorded here because the subspaces of *Split-Quaternion Analysis on Subspaces* are cut out by them. The **principal involution** $\alpha$ is the algebra automorphism defined on the generators by
+Two further involutions act on the algebra, and they are recorded here because the subspaces of *Split-Quaternion Subspaces and the Involutions* are cut out by them. The **principal involution** $\alpha$ is the algebra automorphism defined on the generators by
 
 $$
 \alpha(e_1) = -e_1, \qquad \alpha(e_2) = -e_2, \qquad \alpha(e_3) = e_3,
@@ -140,68 +148,25 @@ $$
 \mathbb{H}_{\mathrm{s}} = \mathbb{R} \cdot 1 \oplus \operatorname{span}\{e_1,e_2\} \oplus \mathbb{R} e_3,
 $$
 
-of dimensions $1, 2, 1$, the sign pair $(\alpha,\rho)$ being $(+,+)$ on $\mathbb{R}\cdot 1$, $(-,+)$ on $\operatorname{span}\{e_1,e_2\}$ and $(+,-)$ on $\mathbb{R}e_3$. This is the finest decomposition produced by the three involutions: on $\operatorname{span}\{e_1,e_2\}$ all three act as $-1$, so no eigenspace of any of them splits that plane. The eigenspaces of the involutions taken one at a time are the ones used in *Split-Quaternion Analysis on Subspaces*: the principal involution has $+1$ on $\operatorname{span}\{1,e_3\}$ and $-1$ on $\operatorname{span}\{e_1,e_2\}$; the reversal has $+1$ on $\operatorname{span}\{1,e_1,e_2\}$ and $-1$ on $\mathbb{R}e_3$; and the conjugation has $+1$ on $\mathbb{R}\cdot 1$ and $-1$ on $V$.
+of dimensions $1, 2, 1$, the sign pair $(\alpha,\rho)$ being $(+,+)$ on $\mathbb{R}\cdot 1$, $(-,+)$ on $\operatorname{span}\{e_1,e_2\}$ and $(+,-)$ on $\mathbb{R}e_3$. This is the finest decomposition produced by the three involutions: on $\operatorname{span}\{e_1,e_2\}$ all three act as $-1$, so no eigenspace of any of them splits that plane. The eigenspaces of the involutions taken one at a time are the ones used in *Split-Quaternion Analysis*: the principal involution has $+1$ on $\operatorname{span}\{1,e_3\}$ and $-1$ on $\operatorname{span}\{e_1,e_2\}$; the reversal has $+1$ on $\operatorname{span}\{1,e_1,e_2\}$ and $-1$ on $\mathbb{R}e_3$; and the conjugation has $+1$ on $\mathbb{R}\cdot 1$ and $-1$ on $V$.
 
-## Quadratic Forms
+## The Inner Product
 
-### The Norm Form
-
-**Definition.** The **norm form** of a split-quaternion $\tilde q$ is
+The **inner product** of two split-quaternions is the real scalar
 
 $$
-N(\tilde q) = \tilde q \bar{\tilde q} = \bar{\tilde q} \tilde q = q_0^2 + q_1^2 - q_2^2 - q_3^2 .
+B(\tilde q, y) = \operatorname{Sc}(\tilde q\, \bar y) = q_0 q_0' + q_1 q_1' - q_2 q_2' - q_3 q_3',
 $$
 
-The two products agree because $\bar{\tilde q}$ is an anti-automorphism and $\tilde q\bar{\tilde q} = \overline{\tilde q\bar{\tilde q}}$.
+for $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ and $y = q_0' e_0 + q_1' e_1 + q_2' e_2 + q_3' e_3$. It is symmetric and bilinear, and it is **non-degenerate**: if $B(\tilde q, y) = 0$ for every $y$, then $\tilde q = 0$, since testing against the units gives $q_\mu = 0$.
 
-**Proposition.** The norm form is a quadratic form of **signature $(2,2)$**. It is multiplicative,
-
-$$
-N(\tilde q y) = N(\tilde q) N(y).
-$$
-
-
-**Proof.** The signature is read from the diagonal form $\operatorname{diag}(+1, +1, -1, -1)$ in the basis $1, e_1, e_2, e_3$. Multiplicativity follows from the anti-automorphism property:
+Forming the inner product, evaluating it to a scalar and asking when it vanishes is all that is done with it here. Its diagonal value is the product
 
 $$
-N(\tilde q y) = \tilde q y \overline{\tilde q y} = \tilde q y\, \bar{y} \bar{\tilde q} = \tilde q N(y) \bar{\tilde q} = N(y) \tilde q \bar{\tilde q} = N(\tilde q)N(y),
+B(\tilde q, \tilde q) = \tilde q \bar{\tilde q} = q_0^2 + q_1^2 - q_2^2 - q_3^2,
 $$
 
-where $N(y)$ is a real scalar and therefore central. $\square$
-
-The norm form is **indefinite**: it is positive on $\mathbb{R} \cdot 1 \oplus \mathbb{R} e_1$, negative on $\mathbb{R} e_2 \oplus \mathbb{R} e_3$, and it vanishes on a three-dimensional cone. This is in sharp contrast with the quaternion norm, which is positive definite, and it is the algebraic origin of every difference between the two theories.
-
-### The Bilinear Form
-
-**Definition.** The **bilinear form** polarised from $N$ is
-
-$$
-B(\tilde q, y) = \tfrac{1}{2}\big(N(\tilde q + y) - N(\tilde q) - N(y)\big).
-$$
-
-In the basis $1, e_1, e_2, e_3$ its matrix is $\operatorname{diag}(+1, +1, -1, -1)$, and on developed elements
-
-$$
-B(\tilde q, y) = q_0 q_0' + q_1 q_1' - q_2 q_2' - q_3 q_3',
-$$
-
-for $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ and $y = q_0' e_0 + q_1' e_1 + q_2' e_2 + q_3' e_3$. The form $B$ is symmetric and bilinear, it satisfies $B(\tilde q,\tilde q) = N(\tilde q)$, and it is non-degenerate of signature $(2,2)$.
-
-### The Restricted Form on the Vector Subspace
-
-The restriction of $N$ to $V$ is
-
-$$
-N(q_1 e_1 + q_2 e_2 + q_3 e_3) = q_1^2 - q_2^2 - q_3^2,
-$$
-
-a form of **signature $(2,1)$**: one direction of square $+1$ and two of square $-1$. It is the three-dimensional Minkowski form written in the basis $e_1, e_2, e_3$. Its null cone in $V$ is the set
-
-$$
-q_1^2 = q_2^2 + q_3^2,
-$$
-
-a cone over a circle, and every nonzero element of it is a nonzero nilpotent, since for $\tilde q \in V$ one has $\tilde q^2 = -N(\tilde q)$ and therefore $\tilde q^2 = 0$ exactly when $N(\tilde q) = 0$. The signature $(2,1)$ of this restriction, and not $(3,1)$, is the root of the geometry of the category: the group of the algebra acts on $V$ as the Lorentz group of a three-dimensional form, and the hyperbolic geometry the system carries is the hyperbolic plane. This is developed in *Split-Quaternion Rotations and the Lorentz Group*, *Split-Quaternion Geometry* and *Split-Quaternions and Hyperbolic Geometry*.
+which lies in the centre $S$ and is multiplicative, $(\tilde q y)\overline{(\tilde q y)} = (\tilde q\bar{\tilde q})(y\bar y)$, because $\tilde q\bar{\tilde q}$ is central. The equation $\tilde q\bar{\tilde q} = 0$, equivalently $B(\tilde q,\tilde q) = 0$, is the algebraic condition that decides the zero divisors, and the elements on which it holds are studied in *Split-Quaternion Zero Divisors*. No length, no sign and no orthogonal or orthonormal decomposition is read from the inner product in this article; the metrical reading — the signature of the pairings, their isotropy, the resulting classification of the elements and the group of units — is in *Split-Quaternion Norm and Invertibility*.
 
 ## The Idempotents and the Split-Complex Subspaces
 
@@ -235,7 +200,7 @@ $$
 \tilde\pi_+^2 = \tfrac{1}{4}(1 + 2e_2 + e_2^2) = \tfrac{1}{4}(2 + 2e_2) = \tilde\pi_+,
 $$
 
-and its analogue for $\tilde\pi_-$, together with $\tilde\pi_+\tilde\pi_- = \tfrac14(1 - e_2^2) = 0$ and $\tilde\pi_+ + \tilde\pi_- = 1$. For non-centrality, $e_1 \tilde\pi_+ = \tfrac12(e_1 + e_3)$ while $\tilde\pi_+ e_1 = \tfrac12(e_1 - e_3)$, so $e_1 \tilde\pi_+ \neq \tilde\pi_+ e_1$. An element $\tilde q \tilde\pi_+$ of the first summand is fixed by right multiplication by $\tilde\pi_+$, since $\tilde q \tilde\pi_+ \tilde\pi_+ = \tilde q \tilde\pi_+$, and the map $\tilde q \mapsto \tilde q \tilde\pi_+$ has image of dimension $2$ because its kernel is $\mathbb{H}_{\mathrm{s}} \tilde\pi_-$. The sum $\mathbb{H}_{\mathrm{s}} \tilde\pi_+ + \mathbb{H}_{\mathrm{s}} \tilde\pi_-$ is all of $\mathbb{H}_{\mathrm{s}}$, since $\tilde q = \tilde q(\tilde\pi_+ + \tilde\pi_-)$, and the intersection is zero: if $\tilde q \tilde\pi_+ = y \tilde\pi_-$ then multiplying on the right by $\tilde\pi_+$ gives $\tilde q \tilde\pi_+ = 0$. Hence the sum is direct, and each summand is a minimal left ideal, as the idempotent theory of *Split-Quaternion Idempotents and Projections* shows. The final claim holds because $\tilde\pi_+ \tilde\pi_- = 0$ and the span of $\tilde\pi_+, \tilde\pi_-$ has dimension $2$. $\square$
+and its analogue for $\tilde\pi_-$, together with $\tilde\pi_+\tilde\pi_- = \tfrac14(1 - e_2^2) = 0$ and $\tilde\pi_+ + \tilde\pi_- = 1$. For non-centrality, $e_1 \tilde\pi_+ = \tfrac12(e_1 + e_3)$ while $\tilde\pi_+ e_1 = \tfrac12(e_1 - e_3)$, so $e_1 \tilde\pi_+ \neq \tilde\pi_+ e_1$. An element $\tilde q \tilde\pi_+$ of the first summand is fixed by right multiplication by $\tilde\pi_+$, since $\tilde q \tilde\pi_+ \tilde\pi_+ = \tilde q \tilde\pi_+$, and the map $\tilde q \mapsto \tilde q \tilde\pi_+$ has image of dimension $2$ because its kernel is $\mathbb{H}_{\mathrm{s}} \tilde\pi_-$. The sum $\mathbb{H}_{\mathrm{s}} \tilde\pi_+ + \mathbb{H}_{\mathrm{s}} \tilde\pi_-$ is all of $\mathbb{H}_{\mathrm{s}}$, since $\tilde q = \tilde q(\tilde\pi_+ + \tilde\pi_-)$, and the intersection is zero: if $\tilde q \tilde\pi_+ = y \tilde\pi_-$ then multiplying on the right by $\tilde\pi_+$ gives $\tilde q \tilde\pi_+ = 0$. Hence the sum is direct, and each summand is a minimal left ideal, as the idempotent theory of *Split-Quaternion Idempotents and Projections* shows. The final claim holds because $\tilde\pi_+ \tilde\pi_- = 0$ and the span of $\tilde\pi_+, \tilde\pi_-$ has dimension $2$.
 
 ### The Split-Complex Subspaces
 
@@ -274,19 +239,19 @@ $$
 \mathbf{v} e_1 = -q_1 - q_2 e_3 + q_3 e_2, \qquad e_1 \mathbf{v} = -q_1 + q_2 e_3 - q_3 e_2,
 $$
 
-so $\mathbf{v} e_1 - e_1 \mathbf{v} = -2q_2 e_3 + 2q_3 e_2 = 0$, giving $q_2 = q_3 = 0$. Commuting with $e_2$ similarly gives $q_1 = 0$. Hence $\mathbf{v} = 0$ and $\tilde q = q_0$ is scalar. $\square$
+so $\mathbf{v} e_1 - e_1 \mathbf{v} = -2q_2 e_3 + 2q_3 e_2 = 0$, giving $q_2 = q_3 = 0$. Commuting with $e_2$ similarly gives $q_1 = 0$. Hence $\mathbf{v} = 0$ and $\tilde q = q_0$ is scalar.
 
 **Theorem (Simplicity).** The split-quaternion algebra is **simple**: it has no two-sided ideal other than $0$ and the algebra itself.
 
-**Proof.** Let $I \neq 0$ be a two-sided ideal and let $0 \neq x \in I$. If $N(x) \neq 0$ then $x^{-1} = \bar{x}/N(x)$ and $x$ is a unit, so $I = \mathbb{H}_{\mathrm{s}}$. If $N(x) = 0$, then for every real $\lambda$ the element $x + \lambda$ lies in $I$ and
+**Proof.** Let $I \neq 0$ be a two-sided ideal and let $0 \neq x \in I$. If $x\bar{x} \neq 0$ then $x$ is a unit, by the invertibility criterion of *Split-Quaternion Norm and Invertibility*, so $I = \mathbb{H}_{\mathrm{s}}$. If $x\bar{x} = 0$, then for every real $\lambda$ the element $x + \lambda$ lies in $I$ and
 
 $$
-N(x + \lambda) = N(x) + 2\lambda \operatorname{Sc}(x) + \lambda^2 = \lambda\big(2\operatorname{Sc}(x) + \lambda\big),
+(x + \lambda)\overline{(x + \lambda)} = x\bar{x} + 2\lambda \operatorname{Sc}(x) + \lambda^2 = \lambda\big(2\operatorname{Sc}(x) + \lambda\big),
 $$
 
-which is nonzero for every $\lambda$ outside the two-element set $\{0, -2\operatorname{Sc}(x)\}$. Choosing such a $\lambda$ exhibits a unit in $I$, so again $I = \mathbb{H}_{\mathrm{s}}$. Hence the only two-sided ideals are $0$ and the algebra. $\square$
+which is nonzero for every $\lambda$ outside the two-element set $\{0, -2\operatorname{Sc}(x)\}$. Choosing such a $\lambda$ exhibits a unit in $I$, so again $I = \mathbb{H}_{\mathrm{s}}$. Hence the only two-sided ideals are $0$ and the algebra.
 
-The algebra is thus **associative, non-commutative, simple**, with centre $\mathbb{R}$, and it is **not** a division algebra. The combination — associative, non-commutative, simple, centre $\mathbb{R}$, and not a division algebra — is the signature of the algebra.
+The algebra is thus **associative, non-commutative, simple**, with centre $\mathbb{R}$, and it is **not** a division algebra. The combination — associative, non-commutative, simple, centre $\mathbb{R}$, and not a division algebra — is the one the comparisons below set against the quaternions and the split-biquaternions.
 
 ## The Lie Algebra Structure
 
@@ -296,7 +261,7 @@ $$
 [e_1, e_2] = 2 e_3, \qquad [e_2, e_3] = -2 e_1, \qquad [e_3, e_1] = 2 e_2 .
 $$
 
-So $V$ is a three-dimensional Lie subalgebra of $\mathbb{H}_{\mathrm{s}}$, and the displayed relations are those of the three-dimensional simple real Lie algebra $\mathfrak{sl}_2(\mathbb{R})$; the bracket algebra on $V$ is therefore $\mathfrak{sl}_2(\mathbb{R})$. This is the algebraic origin of the relation between the split-quaternions and the Lorentz group of signature $(2,1)$: the vector subspace is a Lie algebra of infinitesimal Lorentz transformations, and the exponential of the bracket gives the rotations of *Split-Quaternion Rotations and the Lorentz Group*.
+So $V$ is a three-dimensional Lie subalgebra of $\mathbb{H}_{\mathrm{s}}$, and the displayed relations are those of the three-dimensional simple real Lie algebra $\mathrm{SL}_2(\mathbb{R})$; the bracket algebra on $V$ is therefore $\mathrm{SL}_2(\mathbb{R})$. This is the algebraic origin of the relation between the split-quaternions and the Lorentz group: the vector subspace is a Lie algebra of infinitesimal Lorentz transformations, and the exponential of the bracket gives the rotations of *Split-Quaternion Rotations and the Lorentz Group*.
 
 The scalar line $S$ is the centre of $\mathbb{H}_{\mathrm{s}}$ and therefore contributes nothing to the bracket. The full Lie algebra $\mathbb{H}_{\mathrm{s}}$ is the direct sum of the bracket algebra on $V$ and a central scalar line.
 
@@ -309,15 +274,15 @@ The split-quaternions and the quaternions are the two real forms of the same com
 | | $\mathbb{H}$ | $\mathbb{H}_{\mathrm{s}}$ |
 |---|---|---|
 | basis and squares | $e_1^2=e_2^2=e_3^2=-1$ | $e_1^2=-1$, $e_2^2=e_3^2=+1$ |
-| norm form | $q_0^2+q_1^2+q_2^2+q_3^2$, signature $(4,0)$ | $q_0^2+q_1^2-q_2^2-q_3^2$, signature $(2,2)$ |
-| zero divisors | none | the null cone of $N$ |
+| diagonal product $\tilde q\bar{\tilde q}$ | $q_0^2+q_1^2+q_2^2+q_3^2$ | $q_0^2+q_1^2-q_2^2-q_3^2$ |
+| zero divisors | none | yes |
 | nonzero nilpotents | none | yes |
 | division algebra | yes | no |
 | centre | $\mathbb{R}$ | $\mathbb{R}$ |
-| vector subspace | $\mathbb{R}^3$, $\mathfrak{so}(3)$ | $V$, $\mathfrak{sl}_2(\mathbb{R})$, form of signature $(2,1)$ |
+| vector subspace | $\mathbb{R}^3$, $\mathrm{SO}(3)$ | $V$, $\mathrm{SL}_2(\mathbb{R})$ |
 | scalar group attached | $Sp(1) \cong SU(2)$ | $\mathrm{SL}_2(\mathbb{R})$ |
 
-The decisive difference is the sign of the norm form. The quaternion norm is positive definite, so the unit sphere is compact and the group of unit quaternions is $Sp(1) \cong SU(2)$, double-covering $\mathrm{SO}(3)$. The split-quaternion norm is indefinite of signature $(2,2)$, so the unit set is non-compact, the group of norm-one elements is $\mathrm{SL}_2(\mathbb{R})$, and the group it double-covers is the Lorentz group of signature $(2,1)$. The change of a single sign turns a compact three-sphere into a non-compact three-dimensional group and the rotations of three-space into the Lorentz transformations of the hyperbolic plane.
+The decisive difference is the sign in the diagonal product. For a nonzero quaternion the diagonal product is positive, so the elements of diagonal product $1$ form the compact three-sphere $Sp(1) \cong SU(2)$, double-covering $\mathrm{SO}(3)$. For a nonzero split-quaternion the diagonal product takes both signs, so the elements of diagonal product $1$ form the non-compact group $\mathrm{SL}_2(\mathbb{R})$. The change of a single sign turns a compact three-sphere into a non-compact three-dimensional group. The metrical statements that follow from this — the signatures, the definiteness in the quaternion case and the indefiniteness in the split case, and the groups they define — are treated in *Split-Quaternion Norm and Invertibility* and *Split-Quaternion Rotations and the Lorentz Group*.
 
 ### Comparison with the Split-Biquaternions
 
@@ -334,13 +299,13 @@ The name *split quaternions* is used in the classical literature for the four-di
 
 The two rows that separate the algebras most sharply are the last two. A nilpotent is an element $\tilde q \neq 0$ with $\tilde q^2 = 0$, and the split-quaternion algebra has them: $(e_1 + e_3)^2 = e_1^2 + e_1e_3 + e_3e_1 + e_3^2 = -1 + 0 + 1 = 0$, since $e_1 e_3 = -e_3 e_1$. An algebra that is a product of two division algebras, as $\mathbb{H}_{\mathbb{D}}$ is by the dictionary of *The Number Systems as Clifford Algebras*, has no nilpotents at all, because a nilpotent would have a nilpotent component in one of the factors and a division algebra has none. Simultaneously, the split-quaternion algebra is **simple**, while a product of two algebras is not. A **simple** algebra with nilpotents and non-central idempotents is therefore entirely different from a **semisimple, non-simple** product of two division algebras with central idempotents and no nilpotents.
 
-The eight-dimensional relative of the corpus is treated later in Part V, under Split-Biquaternions; nothing in it is used here. What is stated here is stated from the algebra of this article and from the conventions: a four-dimensional simple real algebra with an isotropic determinant form, on the one hand, and the eight-dimensional $\mathbb{D} \otimes_{\mathbb{R}} \mathbb{H}$ of the notation table, on the other.
+The eight-dimensional relative of the corpus is treated later in Part V, under Split-Biquaternions; nothing in it is used here. What is stated here is stated from the algebra of this article and from the conventions: a four-dimensional simple real algebra with zero divisors and non-central idempotents, on the one hand, and the eight-dimensional $\mathbb{D} \otimes_{\mathbb{R}} \mathbb{H}$ of the notation table, on the other.
 
 ## Summary
 
 The split-quaternion algebra $\mathbb{H}_{\mathrm{s}}$ is the four-dimensional real algebra with basis $1, e_1, e_2, e_3$, the products $e_1^2 = -1$, $e_2^2 = e_3^2 = +1$, the anticommutation $e_1 e_2 = -e_2 e_1$ and $e_3 = e_1 e_2$. It is associative, non-commutative and simple, with centre $\mathbb{R}$, and it is not a division algebra: $1 + e_2$ and $1 - e_2$ are nonzero and multiply to zero.
 
-The algebra is the Clifford algebra $\mathrm{Cl}_{1,1}$ of a form of signature $(1,1)$. The norm form $N(\tilde q) = q_0^2 + q_1^2 - q_2^2 - q_3^2$ has signature $(2,2)$ and is multiplicative; restricted to the vector subspace $V$ it is the Minkowski form of signature $(2,1)$, and the group of the algebra acts on $V$ through $\mathfrak{sl}_2(\mathbb{R})$.
+The algebra is the Clifford algebra $\mathrm{Cl}_{1,1}$, and its conjugation $\bar{\tilde q}$ is the Clifford conjugation. The diagonal product $\tilde q\bar{\tilde q} = q_0^2 + q_1^2 - q_2^2 - q_3^2$ takes both signs and vanishes exactly on the zero divisors; its metrical reading, the associated group of units and the action of the group on $V$ are treated in *Split-Quaternion Norm and Invertibility* and *Split-Quaternion Rotations and the Lorentz Group*.
 
 The conjugation $\bar{\tilde q} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$ is an involutive anti-automorphism whose fixed-point subspaces are the scalar line $S$ and the vector space $V$. The principal involution and the reversal commute and cut the algebra into the scalar line, the plane $\operatorname{span}\{e_1,e_2\}$ and the line $\mathbb{R}e_3$. The idempotents $\tilde\pi_\pm = \tfrac12(1 \pm e_2)$ are non-central, sum to $1$, multiply to zero, and split the algebra as a direct sum of two minimal left ideals, and not as an algebra. The split-complex subalgebras $\operatorname{span}\{1,e_2\}$ and $\operatorname{span}\{1,e_3\}$ are copies of $\mathbb{D}$ and carry the zero divisors of the algebra.
 
@@ -360,12 +325,12 @@ The system is not the eight-dimensional $\mathbb{H}_{\mathbb{D}} = \mathbb{D} \o
 | $\bar{\tilde q} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$ | the split-quaternion conjugation | this article |
 | $\alpha$ | the principal involution, $e_1,e_2 \mapsto -e_1,-e_2$, $e_3 \mapsto e_3$ | this article |
 | $\rho$ | the reversal, $e_1,e_2 \mapsto e_1,e_2$, $e_3 \mapsto -e_3$ | this article |
-| $N(\tilde q) = \tilde q\bar{\tilde q} = q_0^2+q_1^2-q_2^2-q_3^2$ | the norm form, signature $(2,2)$ | *Split-Quaternion Norm and Invertibility* |
-| $B(\tilde q,y)$ | the polarised bilinear form | *Split-Quaternion Norm and Invertibility* |
+| $B(\tilde q,y) = \operatorname{Sc}(\tilde q\bar y) = q_0q_0'+q_1q_1'-q_2q_2'-q_3q_3'$ | the inner product, formed and evaluated algebraically | this article |
+| $N(\tilde q) = \tilde q\bar{\tilde q} = q_0^2+q_1^2-q_2^2-q_3^2$ | the split-quaternion norm, named here only by forward reference | *Split-Quaternion Norm and Invertibility* |
 | $\tilde\pi_\pm = \tfrac12(1 \pm e_2)$ | the non-central idempotents | this article |
 | $\mathbb{D}_2 = \operatorname{span}\{1,e_2\}$, $\mathbb{D}_3 = \operatorname{span}\{1,e_3\}$ | the split-complex subalgebras | this article |
 | $[\tilde q,y] = \tilde q y - y\tilde q$ | the commutator bracket | this article |
-| $\mathfrak{sl}_2(\mathbb{R})$ | the three-dimensional simple Lie algebra of $V$ | this article |
+| $\mathrm{SL}_2(\mathbb{R})$ | the three-dimensional simple Lie algebra of $V$ | this article |
 | $\mathbb{D}$ | the split-complex numbers, $j^2=+1$ | *Split-Complex Algebra* |
 | $\mathbb{H}$ | the real quaternions | *Quaternion Algebra* |
 | $\mathbb{H}_{\mathbb{D}}$ | the split-biquaternions, $\mathbb{D}\otimes_{\mathbb{R}}\mathbb{H}$, a later Part V system | *The Number Systems as Clifford Algebras* |

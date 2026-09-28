@@ -35,7 +35,7 @@ The equivalence of unique factorisation with "every irreducible is prime" is the
 | $k[x_1, x_2, \ldots]$ in infinitely many variables | the irreducible polynomials in finitely many variables | *Examples of Rings and Fields* |
 | $k[[x]]$ | $x$ alone, up to units | *Examples of Rings and Fields* |
 | every field, for instance $\mathbb{Q}$, $\mathbb{R}$, $\mathbb{C}$, $\mathbb{F}_p$, $\mathbb{Q}_p$ | none: every nonzero element is a unit | *Fields* |
-| $\mathcal{O}_{K,\mathfrak{p}}$, a discrete valuation ring | the uniformiser, a generator of the maximal ideal | *Dedekind Domains and Ideal Class Groups* |
+| $\mathcal{O}_{K,\mathrm{P}}$, a discrete valuation ring | the uniformiser, a generator of the maximal ideal | *Dedekind Domains and Ideal Class Groups* |
 | $\mathbb{Q}[x]$, $\mathbb{R}[x]$, $\mathbb{C}[x]$ | the monic irreducibles; the linear ones over $\mathbb{C}$ | *Polynomial Rings and Rational Functions* |
 
 The Gaussian integers give the standard worked example: $2 = -i(1+i)^2$ ramifies, an odd prime $p \equiv 3 \bmod 4$ remains irreducible, and a prime $p \equiv 1 \bmod 4$ splits as $\pi\bar\pi$ with $N(\pi) = p$, the case $5 = (2+i)(2-i)$. In the power series ring the only irreducible is $x$, and the localisation $\mathbb{Z}_{(p)}$ has the single irreducible $p$; a discrete valuation ring has one irreducible up to associates, and this is recorded in *List of Local Rings and Valuations*.
@@ -51,7 +51,7 @@ The discrete valuation rings are the unique factorisation domains with the small
 | $k[t]_{(t)}$ | $t$ | $tk[t]_{(t)}$ | *Absolute Values, Valuations and Completions* |
 | $\mathbb{F}_p[x]_{(x)}$ | $x$ | $x\mathbb{F}_p[x]_{(x)}$ | *Examples of Rings and Fields* |
 | $k[[x]]$ | $x$ | $(x)$ | *Examples of Rings and Fields* |
-| $\mathcal{O}_{K,\mathfrak{p}}$ | a generator of $\mathfrak{p}$ | $\mathfrak{p}$ | *Dedekind Domains and Ideal Class Groups* |
+| $\mathcal{O}_{K,\mathrm{P}}$ | a generator of $\mathrm{P}$ | $\mathrm{P}$ | *Dedekind Domains and Ideal Class Groups* |
 
 Each of these rings is a principal ideal domain and hence a unique factorisation domain, and in each the factorisation of an element is the statement that its value is a nonnegative integer. The power series ring is not a field, and its single irreducible is a nonunit that is not a zero divisor.
 

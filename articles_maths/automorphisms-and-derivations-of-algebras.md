@@ -7,7 +7,7 @@ The ideal theory of an algebra records its quotients; the group $\operatorname{A
 
 Throughout, $R$ is a commutative ring with identity $1 \neq 0$ and $A$ is an $R$-algebra. Automorphisms are $R$-algebra automorphisms, so they are $R$-linear and multiplicative; the ground ring is named whenever the group depends on it. The pair $(\operatorname{Aut}_R(A), \operatorname{Der}_R(A))$ is the algebra analogue of a Lie group and its Lie algebra, and over a general ring only the algebraic shadow of that correspondence survives; the analytic version requires the topology of a topological or Banach algebra, supplied in Part II.
 
-No metric structure is part of the data of an algebra. An automorphism preserves addition, scalar multiplication and the product, and nothing else; lengths, angles and norm forms are extra structures that an algebra automorphism need not preserve. The final section makes that point with an example.
+No metric structure is part of the data of an algebra. An automorphism preserves addition, scalar multiplication and the product, and nothing else; lengths and angles are extra structures that an algebra automorphism need not preserve. The final section makes that point with an example.
 
 ## Algebra Automorphisms
 
@@ -21,7 +21,7 @@ for all $x, y \in A$. The set of all such maps is a group under composition, wri
 
 **Proposition.** Every algebra automorphism maps the centre onto itself, and it preserves idempotents, units, zero divisors and the lattice of two-sided ideals.
 
-*Proof.* The centre statement is proved in *Centre, Units, Zero Divisors and Division Algebras*: $\sigma$ restricts to an automorphism of $Z(A)$. If $e^2 = e$ then $\sigma(e)^2 = \sigma(e)$; if $u$ is a unit then $\sigma(u)^{-1} = \sigma(u^{-1})$; if $zw = 0$ then $\sigma(z)\sigma(w) = 0$; and if $I$ is a two-sided ideal then $\sigma(I)$ is one, with inverse the same statement for $\sigma^{-1}$. $\square$
+*Proof.* The centre statement is proved in *Centre, Units, Zero Divisors and Division Algebras*: $\sigma$ restricts to an automorphism of $Z(A)$. If $e^2 = e$ then $\sigma(e)^2 = \sigma(e)$; if $u$ is a unit then $\sigma(u)^{-1} = \sigma(u^{-1})$; if $zw = 0$ then $\sigma(z)\sigma(w) = 0$; and if $I$ is a two-sided ideal then $\sigma(I)$ is one, with inverse the same statement for $\sigma^{-1}$.
 
 ### Inner Automorphisms
 
@@ -45,7 +45,7 @@ $$
 \iota_u(xy) = uxyu^{-1} = (uxu^{-1})(uyu^{-1}) = \iota_u(x)\iota_u(y).
 $$
 
-The composition and identity statements are direct. $\square$
+The composition and identity statements are direct.
 
 **Theorem.** The homomorphism $A^\times \to \operatorname{Aut}_R(A)$, $u \mapsto \iota_u$, has kernel $Z(A)^\times$, so
 
@@ -53,7 +53,7 @@ $$
 \operatorname{Inn}_R(A) \;\cong\; A^\times / Z(A)^\times.
 $$
 
-*Proof.* The inner automorphism $\iota_u$ is the identity exactly when $ux = xu$ for all $x$, that is, when $u \in Z(A)$; with $u$ a unit this is $u \in Z(A)^\times$. The first isomorphism theorem for groups gives the displayed isomorphism. $\square$
+*Proof.* The inner automorphism $\iota_u$ is the identity exactly when $ux = xu$ for all $x$, that is, when $u \in Z(A)$; with $u$ a unit this is $u \in Z(A)^\times$. The first isomorphism theorem for groups gives the displayed isomorphism.
 
 **Proposition.** $\operatorname{Inn}_R(A)$ is a normal subgroup of $\operatorname{Aut}_R(A)$, and for $\sigma \in \operatorname{Aut}_R(A)$,
 
@@ -61,7 +61,7 @@ $$
 \sigma \circ \iota_u \circ \sigma^{-1} = \iota_{\sigma(u)}.
 $$
 
-*Proof.* Compute on $x$: $(\sigma \iota_u \sigma^{-1})(x) = \sigma(u\,\sigma^{-1}(x)\,u^{-1}) = \sigma(u)\,x\,\sigma(u)^{-1} = \iota_{\sigma(u)}(x)$, using multiplicativity of $\sigma$ and $\sigma^{-1}$. Since $\sigma(u)$ is a unit, $\sigma \operatorname{Inn}\sigma^{-1} \subseteq \operatorname{Inn}$; applying this to $\sigma^{-1}$ gives equality. $\square$
+*Proof.* Compute on $x$: $(\sigma \iota_u \sigma^{-1})(x) = \sigma(u\,\sigma^{-1}(x)\,u^{-1}) = \sigma(u)\,x\,\sigma(u)^{-1} = \iota_{\sigma(u)}(x)$, using multiplicativity of $\sigma$ and $\sigma^{-1}$. Since $\sigma(u)$ is a unit, $\sigma \operatorname{Inn}\sigma^{-1} \subseteq \operatorname{Inn}$; applying this to $\sigma^{-1}$ gives equality.
 
 **Definition.** The **outer automorphism group** is the quotient
 
@@ -95,7 +95,7 @@ $$
 \operatorname{Aut}_{\mathbb{R}}(\mathbb{D}') \cong \mathbb{R}^\times, \qquad \varepsilon \mapsto d\varepsilon.
 $$
 
-This automorphism rescales the infinitesimal direction and does not preserve the Euclidean norm on $\mathbb{R}^2$; it is the first indication that automorphisms carry no metric information.
+This automorphism rescales the infinitesimal direction and does not preserve the Euclidean length on $\mathbb{R}^2$; it is the first indication that automorphisms carry no metric information.
 
 **The quaternions.** Over $\mathbb{R}$ one has
 
@@ -189,7 +189,7 @@ $$
 = (\delta\varepsilon - \varepsilon\delta)(x)\,y + x\,(\delta\varepsilon - \varepsilon\delta)(y),
 $$
 
-where $\delta(x)$ and $\varepsilon(x)$ were interchanged by associativity. Antisymmetry is immediate, and the Jacobi identity is the identity of operators on the composition of linear maps: for endomorphisms $u,v,w$ of any module, $[u,[v,w]] + [v,[w,u]] + [w,[u,v]] = 0$. $\square$
+where $\delta(x)$ and $\varepsilon(x)$ were interchanged by associativity. Antisymmetry is immediate, and the Jacobi identity is the identity of operators on the composition of linear maps: for endomorphisms $u,v,w$ of any module, $[u,[v,w]] + [v,[w,u]] + [w,[u,v]] = 0$.
 
 Associativity of $A$ is needed in the displayed expansion, at the point where the middle terms regroup. The derivation space is also a module over the centre: for $z \in Z(A)$ and $\delta \in \operatorname{Der}_R(A)$, the map $z\delta$ is a derivation because $z$ may be moved past $\delta(x)$ and past $x$.
 
@@ -221,16 +221,16 @@ $$
 
 as Lie algebras, where $A/Z(A)$ carries the bracket induced by the commutator.
 
-*Proof.* The Leibniz rule is the identity $[a, xy] = [a,x]y + x[a,y]$, which is associativity. The bracket identity is the Jacobi identity in the form $[[a,b],x] = [a,[b,x]] - [b,[a,x]]$. The kernel of $\mathrm{ad}$ consists of those $a$ with $[a,x] = 0$ for all $x$, which is exactly $Z(A)$. $\square$
+*Proof.* The Leibniz rule is the identity $[a, xy] = [a,x]y + x[a,y]$, which is associativity. The bracket identity is the Jacobi identity in the form $[[a,b],x] = [a,[b,x]] - [b,[a,x]]$. The kernel of $\mathrm{ad}$ consists of those $a$ with $[a,x] = 0$ for all $x$, which is exactly $Z(A)$.
 
 **Theorem (every derivation of a central simple algebra is inner).** Let $k$ be a field and let $A$ be a finite-dimensional central simple $k$-algebra. Then $\operatorname{Der}_k(A) = \operatorname{InnDer}_k(A)$.
 
-The proof is the standard one, by a computation with matrix units after extending scalars to an algebraic closure; for $M_n(k)$ it also follows from the identification $\operatorname{Der}_k(M_n(k)) \cong \mathfrak{sl}_n(k)$ below. The theorem is the derivation-level companion of Skolem–Noether and is a special case of the vanishing of the first Hochschild cohomology of a separable algebra.
+The proof is the standard one, by a computation with matrix units after extending scalars to an algebraic closure; for $M_n(k)$ it also follows from the identification $\operatorname{Der}_k(M_n(k)) \cong \mathrm{SL}_n(k)$ below. The theorem is the derivation-level companion of Skolem–Noether and is a special case of the vanishing of the first Hochschild cohomology of a separable algebra.
 
-**Example ($M_n(k)$).** Since $Z(M_n(k)) = k I_n$ is one-dimensional, the inner derivations form the quotient $M_n(k)/k I_n$, the **traceless matrices** $\mathfrak{sl}_n(k)$, of dimension $n^2 - 1$. Hence
+**Example ($M_n(k)$).** Since $Z(M_n(k)) = k I_n$ is one-dimensional, the inner derivations form the quotient $M_n(k)/k I_n$, the **traceless matrices** $\mathrm{SL}_n(k)$, of dimension $n^2 - 1$. Hence
 
 $$
-\operatorname{Der}_k(M_n(k)) = \operatorname{InnDer}_k(M_n(k)) \cong \mathfrak{sl}_n(k).
+\operatorname{Der}_k(M_n(k)) = \operatorname{InnDer}_k(M_n(k)) \cong \mathrm{SL}_n(k).
 $$
 
 Writing $E_{ij}$ for the matrix units, the derivations $\mathrm{ad}_{E_{ij}}$ for $(i,j) \neq (n,n)$ span the space, and the bracket is the matrix commutator.
@@ -247,15 +247,15 @@ $$
 [D_1, D_2] = D_3, \qquad [D_2, D_3] = D_1, \qquad [D_3, D_1] = D_2,
 $$
 
-the standard relations of $\mathfrak{so}(3)$. Hence
+the standard relations of $\mathrm{SO}(3)$. Hence
 
 $$
-\operatorname{Der}_{\mathbb{R}}(\mathbb{H}) \cong \mathbb{R}^3 \text{ with the cross product} \cong \mathfrak{so}(3),
+\operatorname{Der}_{\mathbb{R}}(\mathbb{H}) \cong \mathbb{R}^3 \text{ with the cross product} \cong \mathrm{SO}(3),
 $$
 
 the Lie algebra of the automorphism group $\operatorname{Aut}_{\mathbb{R}}(\mathbb{H}) \cong SO(3)$ computed above.
 
-**Example ($\mathbb{B}$).** The biquaternion algebra is $M_2(\mathbb{C})$ over $\mathbb{C}$, so every $\mathbb{C}$-linear derivation is inner and $\operatorname{Der}_{\mathbb{C}}(\mathbb{B}) \cong \mathfrak{sl}_2(\mathbb{C})$, of complex dimension $3$. Over $\mathbb{R}$ the same space results, because $\mathbb{R}$-linear derivations of $\mathbb{B}$ are automatically $\mathbb{C}$-linear: the centre $\mathbb{C}_{\mathbb{B}}$ is a finite separable field extension of $\mathbb{R}$ and admits no nonzero derivation. The details, including the identification with the traceless part, are.
+**Example ($\mathbb{B}$).** The biquaternion algebra is $M_2(\mathbb{C})$ over $\mathbb{C}$, so every $\mathbb{C}$-linear derivation is inner and $\operatorname{Der}_{\mathbb{C}}(\mathbb{B}) \cong \mathrm{SL}_2(\mathbb{C})$, of complex dimension $3$. Over $\mathbb{R}$ the same space results, because $\mathbb{R}$-linear derivations of $\mathbb{B}$ are automatically $\mathbb{C}$-linear: the centre $\mathbb{C}_{\mathbb{B}}$ is a finite separable field extension of $\mathbb{R}$ and admits no nonzero derivation. The details, including the identification with the traceless part, are.
 
 ## The Exponential Correspondence
 
@@ -279,11 +279,11 @@ $$
 \exp(\delta)(xy) = \exp(\delta)(x)\,\exp(\delta)(y).
 $$
 
-The same identity applied to $\exp(-\delta)$, together with the commutativity of $\delta$ with its powers in the product $\exp(\delta)\exp(-\delta) = \exp(0) = 1$, gives the inverse. $\square$
+The same identity applied to $\exp(-\delta)$, together with the commutativity of $\delta$ with its powers in the product $\exp(\delta)\exp(-\delta) = \exp(0) = 1$, gives the inverse.
 
 **Proposition (derivative of a family of automorphisms).** Let $t \mapsto \varphi_t$ be a family of algebra automorphisms of $A$, defined for $t$ in a neighbourhood of $0$ in $R$ and differentiable, with $\varphi_0 = \mathrm{id}$. Then $\delta = \frac{d}{dt}\big|_{t=0}\varphi_t$ is a derivation.
 
-*Proof.* Differentiate $\varphi_t(xy) = \varphi_t(x)\varphi_t(y)$ at $t = 0$ and use $\varphi_0 = \mathrm{id}$. $\square$
+*Proof.* Differentiate $\varphi_t(xy) = \varphi_t(x)\varphi_t(y)$ at $t = 0$ and use $\varphi_0 = \mathrm{id}$.
 
 **Theorem (inner derivations exponentiate to inner automorphisms).** Let $a \in A$ and suppose $\exp(a)$ is a unit of $A$. Then
 
@@ -297,21 +297,21 @@ This is the identity $\mathrm{Ad}_{e^a} = e^{\mathrm{ad}_a}$ of the adjoint repr
 
 ## What an Algebra Automorphism Does Not Preserve
 
-The data of an $R$-algebra $A$ are the module structure and the product. An automorphism is required to preserve exactly these, so any further structure that happens to be present on the underlying module — a quadratic form, an inner product, a norm, a volume form — is not automatically preserved.
+The data of an $R$-algebra $A$ are the module structure and the product. An automorphism is required to preserve exactly these, so any further structure that happens to be present on the underlying module — a length, an angle, a volume — is not automatically preserved.
 
-**Example.** The automorphism $\varphi(\varepsilon) = d\varepsilon$ of $\mathbb{D}'$, $d \neq 1$, has matrix $\begin{pmatrix} 1 & 0 \\ 0 & d \end{pmatrix}$ in the basis $\{1, \varepsilon\}$. It preserves the product because it fixes $1$ and scales $\varepsilon$, but it changes the Euclidean norm: $\|\varphi(\varepsilon)\|_E = |d|$ while $\|\varepsilon\|_E = 1$.
+**Example.** The automorphism $\varphi(\varepsilon) = d\varepsilon$ of $\mathbb{D}'$, $d \neq 1$, has matrix $\begin{pmatrix} 1 & 0 \\ 0 & d \end{pmatrix}$ in the basis $\{1, \varepsilon\}$. It preserves the product because it fixes $1$ and scales $\varepsilon$, but it changes the Euclidean length, scaling a unit vector by $|d|$.
 
-**Example.** Complex conjugation $\kappa$ on $\mathbb{C}$ is an $\mathbb{R}$-algebra automorphism and preserves the quadratic form $a^2 + b^2$, but this is a coincidence of the two-dimensional case, not a general property. On $\mathbb{B} \cong M_2(\mathbb{C})$ the norm form $N(\tilde{Q}) = \sum_\mu Q_\mu^2$ is the determinant of the matrix image , so **every** inner automorphism preserves it, conjugation by a matrix leaving the determinant unchanged. The automorphism that moves the norm form is the complex conjugation $\sigma(\tilde{Q}) = \tilde{Q}^{*}$ of the coefficients, which satisfies $N(\tilde{Q}^{*}) = \overline{N(\tilde{Q})}$ and is not inner; on the real quaternion subspace $\mathbb{H}_{\mathbb{B}}$, where the coefficients are real, $\sigma$ is the identity and $N$ is preserved.
+**Example.** Complex conjugation $\kappa$ on $\mathbb{C}$ is an $\mathbb{R}$-algebra automorphism and preserves the quantity $a^2 + b^2$, but this is a coincidence of the two-dimensional case, not a general property. On $\mathbb{B} \cong M_2(\mathbb{C})$ the determinantal invariant $\sum_\mu Q_\mu^2$ is carried along by **every** inner automorphism, conjugation by a matrix leaving the determinant unchanged; the complex conjugation $\sigma(\tilde{Q}) = \tilde{Q}^{*}$ of the coefficients moves it and is not inner.
 
-The group of transformations preserving a quadratic form or an inner product is therefore a different object, generally not contained in $\operatorname{Aut}_R(A)$. Norm-preserving maps and isometries belong to the theory of quadratic forms and Clifford algebras, and are treated in category 14; the algebra automorphism group is the layer below them.
+The group of transformations preserving a length or an angle is therefore a different object, generally not contained in $\operatorname{Aut}_R(A)$. Such structure-preserving maps belong to the theory of forms and Clifford algebras, and are treated in the category *Forms, Clifford Algebras and Spinors*; the algebra automorphism group is the layer below them.
 
 ## Summary
 
 The **automorphisms** of an $R$-algebra $A$ form the group $\operatorname{Aut}_R(A)$; they preserve the centre, idempotents, units, zero divisors and the lattice of two-sided ideals. Inner automorphisms $\iota_u(x) = uxu^{-1}$ by units form the normal subgroup $\operatorname{Inn}_R(A) \cong A^\times/Z(A)^\times$, the outer automorphism group is $\operatorname{Out}_R(A) = \operatorname{Aut}_R(A)/\operatorname{Inn}_R(A)$, and for a commutative algebra all automorphisms are outer. The worked cases are $\operatorname{Aut}_{\mathbb{R}}(\mathbb{C}) \cong \mathbb{Z}/2$, $\operatorname{Aut}_{\mathbb{R}}(\mathbb{D}) \cong \mathbb{Z}/2$, $\operatorname{Aut}_{\mathbb{R}}(\mathbb{D}') \cong \mathbb{R}^\times$, $\operatorname{Aut}_{\mathbb{R}}(\mathbb{H}) \cong SO(3)$, and $\operatorname{Aut}_k(M_n(k)) \cong PGL_n(k)$ for a field $k$; over $\mathbb{C}$ the biquaternion group is $PGL(2,\mathbb{C})$, over $\mathbb{R}$ it is $PGL(2,\mathbb{C}) \rtimes \mathbb{Z}/2$.
 
-The **derivations** $\operatorname{Der}_R(A)$ are the $R$-linear maps satisfying the Leibniz rule; they form a Lie algebra under the commutator, and a module over the centre. The inner derivations $\mathrm{ad}_a = [a,\cdot]$ form the Lie algebra $A/Z(A)$, and for a central simple algebra every derivation is inner, so $\operatorname{Der}_k(M_n(k)) \cong \mathfrak{sl}_n(k)$ and $\operatorname{Der}_{\mathbb{R}}(\mathbb{H}) \cong \mathfrak{so}(3)$, the bracket on $\mathbb{H}/\mathbb{R} \cong \mathbb{R}^3$ being twice the cross product. The exponential $\exp(\delta)$ of a nilpotent derivation is an automorphism over any $\mathbb{Q}$-algebra, inner derivations exponentiate to inner automorphisms, and over a general ring the exponential may not exist.
+The **derivations** $\operatorname{Der}_R(A)$ are the $R$-linear maps satisfying the Leibniz rule; they form a Lie algebra under the commutator, and a module over the centre. The inner derivations $\mathrm{ad}_a = [a,\cdot]$ form the Lie algebra $A/Z(A)$, and for a central simple algebra every derivation is inner, so $\operatorname{Der}_k(M_n(k)) \cong \mathrm{SL}_n(k)$ and $\operatorname{Der}_{\mathbb{R}}(\mathbb{H}) \cong \mathrm{SO}(3)$, the bracket on $\mathbb{H}/\mathbb{R} \cong \mathbb{R}^3$ being twice the cross product. The exponential $\exp(\delta)$ of a nilpotent derivation is an automorphism over any $\mathbb{Q}$-algebra, inner derivations exponentiate to inner automorphisms, and over a general ring the exponential may not exist.
 
-An algebra automorphism preserves the product and nothing more; a norm form, an inner product or a length is extra structure that need not be preserved.
+An algebra automorphism preserves the product and nothing more; a length or an angle is extra structure that need not be preserved.
 
 ## Summary of Notation
 
@@ -330,14 +330,13 @@ An algebra automorphism preserves the product and nothing more; a norm form, an 
 | $\operatorname{InnDer}_R(A) \cong A/Z(A)$ | Inner derivations |
 | $[\delta,\varepsilon]$ | Commutator bracket on derivations |
 | $\delta = f\partial_x$ | The derivations of $R[x]$ |
-| $D_k = \tfrac{1}{2}\mathrm{ad}_{e_k}$ | Basis of $\operatorname{Der}_{\mathbb{R}}(\mathbb{H}) \cong \mathfrak{so}(3)$ |
+| $D_k = \tfrac{1}{2}\mathrm{ad}_{e_k}$ | Basis of $\operatorname{Der}_{\mathbb{R}}(\mathbb{H}) \cong \mathrm{SO}(3)$ |
 | $PGL_n(k) = GL_n(k)/k^\times$ | Automorphism group of $M_n(k)$ |
 | $\exp(\delta)$ | Exponential of a derivation |
-| $\mathfrak{so}(3)$, $\mathfrak{sl}_n(k)$ | Lie algebras of rotations and traceless matrices |
+| $\mathrm{SO}(3)$, $\mathrm{SL}_n(k)$ | Lie algebras of rotations and traceless matrices |
 | $\mathbb{C}$, $\mathbb{D}$, $\mathbb{D}'$ | Complex, split complex and dual numbers |
 | $\mathbb{H}$, $\mathbb{B}$ | Quaternions and biquaternions |
 | $\mathbb{H}_{\mathbb{B}}$ | Real quaternion subspace of $\mathbb{B}$ |
-| $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$ | Norm form of $\mathbb{B}$; the determinant of the matrix image |
 
 
 

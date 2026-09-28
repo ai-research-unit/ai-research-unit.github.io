@@ -143,24 +143,24 @@ $$
 Because the generators are nilpotent, the one-mode theorem can be stated and proved exactly.
 
 > **Theorem (one-mode Wick).** In $\mathcal{A}_{\mathrm{tr}}$,
-> $$
+>$$
 > \tilde a_{\mathrm{tr}}\tilde a_{\mathrm{tr}}^\dagger = \,:\tilde a_{\mathrm{tr}}\tilde a_{\mathrm{tr}}^\dagger: \,+\, \langle \tilde a_{\mathrm{tr}}\tilde a_{\mathrm{tr}}^\dagger\rangle_0\,e_0,
 > \qquad
 > :\tilde a_{\mathrm{tr}}\tilde a_{\mathrm{tr}}^\dagger: \,=\, -\tilde N_{\mathrm{tr}},
 > \qquad
 > \langle \tilde a_{\mathrm{tr}}\tilde a_{\mathrm{tr}}^\dagger\rangle_0 = 1 ,
-> $$
+>$$
 > and for every product $\tilde{Q}_1\cdots\tilde{Q}_{2m}$ of mode operators,
-> $$
+>$$
 > \langle \tilde{Q}_1\cdots\tilde{Q}_{2m}\rangle_0
 > = \sum_{\text{complete pairings}} \mathrm{sgn}(\pi)\prod_{(i,j)}\langle \tilde{Q}_i\tilde{Q}_j\rangle_0 .
-> $$
+>$$
 
 **Proof of the two-point identity.** The contraction is, by the anticommutator,
 $$
 \tilde a_{\mathrm{tr}}\tilde a_{\mathrm{tr}}^\dagger = e_0 - \tilde a_{\mathrm{tr}}^\dagger\tilde a_{\mathrm{tr}} = e_0 - \tilde N_{\mathrm{tr}} = \tilde\Pi_1,
 $$
-whose vacuum expectation is $\mathrm{Tr}(\tilde\Pi_1^2)=\mathrm{Tr}(\tilde\Pi_1)=1$. Normal ordering moves the creation operator to the left and produces $:\tilde a\tilde a^\dagger:\,=-\tilde a^\dagger\tilde a=-\tilde N_{\mathrm{tr}}$. Adding back the contraction gives $-\tilde N_{\mathrm{tr}}+e_0=e_0-\tilde N_{\mathrm{tr}}$, which is the left-hand side. $\square$
+whose vacuum expectation is $\mathrm{Tr}(\tilde\Pi_1^2)=\mathrm{Tr}(\tilde\Pi_1)=1$. Normal ordering moves the creation operator to the left and produces $:\tilde a\tilde a^\dagger:\,=-\tilde a^\dagger\tilde a=-\tilde N_{\mathrm{tr}}$. Adding back the contraction gives $-\tilde N_{\mathrm{tr}}+e_0=e_0-\tilde N_{\mathrm{tr}}$, which is the left-hand side.
 
 **Why the higher identities are exact.** No induction is needed. The identities $\tilde a_{\mathrm{tr}}^2=0$ and $(\tilde a_{\mathrm{tr}}^\dagger)^2=0$ say that any word in the mode operators that contains two adjacent equal letters vanishes; and any word in which the letters alternate can be reduced by the anticommutator to a word with a repeated adjacent pair plus a contraction times a shorter word:
 $$

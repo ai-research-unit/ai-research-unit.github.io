@@ -10,7 +10,7 @@ is, in this reading, the sign of $i^2$; it is not put into the metric by hand. T
 
 The parent of this article is *Electromagnetism in Media — The Local Complex Structure at Work*, where the local structure is used in a material medium. There the medium supplies the general case and the vacuum is its limit. Here the subject is the structure itself and its relation to the speed of light; the medium appears only as the setting in which the local structure is seen to vary from point to point. The distinction between the global and the local statement is the organising theme, and every step below says which of the two is being claimed.
 
-Throughout, the notation is inherited unchanged from the read-list articles. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis $e_0=1,e_1,e_2,e_3$ satisfying $e_k^2=-e_0$ and scalar imaginary $i$ commuting with the quaternion units. The two complementary four-dimensional real subspaces are $\mathbb{M}_-$ (anti-Hermitian: imaginary scalar, real vector; the material sector) and $\mathbb{M}_+$ (Hermitian: real scalar, imaginary vector; the informational sector), with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$. The real-quaternion subspace is $\mathbb{H}_{\mathbb{B}}$, the scalar subspace is $\mathbb{C}_{\mathbb{B}}$, and the trace formula is $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$. The norm form is $N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}=\sum_\mu Q_\mu^2$. The speed of light in the medium is $c=1/\sqrt{\epsilon\mu}$ and the vacuum speed is $c_0=1/\sqrt{\epsilon_0\mu_0}$; in vacuum $c=c_0$. One symbol is introduced here and used only here: $J$ denotes an abstract complex structure, and $J_{\mathbb{B}}$ the specific map $\tilde{Q}\mapsto i\tilde{Q}$ on $\mathbb{B}$.
+Throughout, the notation is inherited unchanged from the read-list articles. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis $e_0=1,e_1,e_2,e_3$ satisfying $e_k^2=-e_0$ and scalar imaginary $i$ commuting with the quaternion units. The two complementary four-dimensional real subspaces are $\mathbb{M}_-$ (anti-Hermitian: imaginary scalar, real vector; the material sector) and $\mathbb{M}_+$ (Hermitian: real scalar, imaginary vector; the informational sector), with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$. The real-quaternion subspace is $\mathbb{H}_{\mathbb{B}}$, the scalar subspace is $\mathbb{C}_{\mathbb{B}}$, and the trace formula is $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$. The biquaternion norm is $N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}=\sum_\mu Q_\mu^2$. The speed of light in the medium is $c=1/\sqrt{\epsilon\mu}$ and the vacuum speed is $c_0=1/\sqrt{\epsilon_0\mu_0}$; in vacuum $c=c_0$. One symbol is introduced here and used only here: $J$ denotes an abstract complex structure, and $J_{\mathbb{B}}$ the specific map $\tilde{Q}\mapsto i\tilde{Q}$ on $\mathbb{B}$.
 
 ## Two Senses of "Complex Structure"
 
@@ -29,7 +29,7 @@ This $J_{\mathbb{B}}$ is defined on all of $\mathbb{B}$ and is the same everywhe
 The question of this article is whether $J_{\mathbb{B}}$ — or any other complex structure — is a complex structure **on spacetime**. Three distinct levels must be kept apart, because a statement at one level is easily mistaken for a statement at another.
 
 1. **The algebra $\mathbb{B}$.** Here $J_{\mathbb{B}}$ is a complex structure, globally and exactly.
-2. **Spacetime, the material sector $\mathbb{M}_-$.** This is a four-dimensional *real* vector space carrying the norm form of signature $(3,1)$. Here the question is whether a complex structure exists that is compatible with that form.
+2. **Spacetime, the material sector $\mathbb{M}_-$.** This is a four-dimensional *real* vector space carrying the biquaternion norm of signature $(3,1)$. Here the question is whether a complex structure exists that is compatible with that form.
 3. **The complexified local tangent space.** Here multiplication by $i$ is again a complex structure, but on a larger space; it is not a structure *on* the real tangent space.
 
 A local statement can be true while the corresponding global statement is false, and the two are not interchangeable. The next two sections separate the levels.
@@ -50,7 +50,7 @@ The second obstruction is independent of the algebra and concerns any real compl
 $$
 N(JX,JY)=N(\tilde{Q},\tilde{R}) \qquad \text{for all } \tilde{Q},\tilde{R},
 $$
-which is the condition that the complex structure be an isometry of the norm form. Two elementary identities follow. Taking $\tilde{R}=JX$ and using $J^2=-I$ and the symmetry of $N$,
+which is the condition that the complex structure be an isometry of the biquaternion norm. Two elementary identities follow. Taking $\tilde{R}=JX$ and using $J^2=-I$ and the symmetry of $N$,
 $$
 N(JX,-\tilde{Q})=N(\tilde{Q},JX) \;\Longrightarrow\; -N(\tilde{Q},JX)=N(\tilde{Q},JX) \;\Longrightarrow\; N(\tilde{Q},JX)=0 ,
 $$
@@ -62,7 +62,7 @@ Hence on the two-dimensional plane $\mathrm{span}\{X,JX\}$, whenever $N(\tilde{Q
 $$
 N(JY,Z)=N(J^2\tilde{R},JZ)=-N(\tilde{R},JZ)=0,
 $$
-using compatibility in the first equality and $JZ$ in the plane in the last. Iterating, a four-dimensional space is an orthogonal direct sum of two such planes, so its signature is $(4,0)$, $(2,2)$ or $(0,4)$. The norm form of $\mathbb{M}_-$ has signature $(3,1)$: three positive directions and one negative. It is not in the list. Therefore **no complex structure compatible with the Minkowski metric exists**, neither globally nor at a single point.
+using compatibility in the first equality and $JZ$ in the plane in the last. Iterating, a four-dimensional space is an orthogonal direct sum of two such planes, so its signature is $(4,0)$, $(2,2)$ or $(0,4)$. The biquaternion norm of $\mathbb{M}_-$ has signature $(3,1)$: three positive directions and one negative. It is not in the list. Therefore **no complex structure compatible with the Minkowski metric exists**, neither globally nor at a single point.
 
 The obstruction is easy to check directly. In two dimensions, writing $g=\begin{pmatrix}p&q\\q&r\end{pmatrix}$ and $J=\begin{pmatrix}0&-1\\1&0\end{pmatrix}$, the condition $J^{\mathsf T}gJ=g$ forces $p=r$ and $q=0$: the compatible form is a multiple of the identity, hence definite, of signature $(2,0)$ or $(0,2)$, never $(1,1)$. In four dimensions the forms compatible with a complex structure have eigenvalues each of multiplicity two, so each sign occurs an even number of times — the signature is $(4,0)$, $(2,2)$ or $(0,4)$; a symbolic solution of $J_0^{\mathsf T}GJ_0=G$ for the standard $J_0$ returns a form whose eigenvalues each occur twice. A count of three positives and one negative cannot arise, and the signature $(3,1)$ is exactly the excluded case.
 
@@ -122,7 +122,7 @@ Two cautions belong here. First, this is not a claim that a medium produces the 
 
 The local structure leaves one number undetermined: the scale $c$. The physics does not leave it undetermined. Two independent requirements fix it, and they agree.
 
-**Route 1: the null cone of the norm form.** The local quadratic form vanishes on
+**Route 1: the null cone of the biquaternion norm.** The local quadratic form vanishes on
 $$
 (ic\,dt)^2+d\mathbf x^2=0
 \;\Longleftrightarrow\;
@@ -146,7 +146,7 @@ and plane waves satisfy $k^2=\omega^2\epsilon\mu$, so the characteristic speed o
 $$
 c=c_{em}=\frac{1}{\sqrt{\epsilon\mu}} .
 $$
-The wave-operator route uses the field equation and the constitutive relations, and nothing about the null cone of the norm form.
+The wave-operator route uses the field equation and the constitutive relations, and nothing about the null cone of the biquaternion norm.
 
 **Independence and agreement.** Route 1 is geometric: it reads $c$ off a quadratic form. Route 2 is dynamical: it reads the same $c$ off a differential operator and the medium's constitutive relations. Neither determines the numerical value of $c$ — that is empirical, as it is in the metric formalism — but together they fix what $c$ is *for*: it is at once the aperture of the local light cone and the characteristic speed of the medium's electrodynamics, and there is exactly one number doing both jobs. This is the precise sense in which $c$ is fixed by the local structure rather than postulated alongside it. In the metric formalism one writes $-c^2dt^2$ and, separately, $\mathbf D=\epsilon\mathbf E$ and $\mathbf B=\mu\mathbf H$; the appearance of the same $c$ in both places is a consistency to be checked. Here it is a single scale with a single role.
 
@@ -163,11 +163,11 @@ Four boundaries should be stated, so that the local claim is not read as a globa
 
 The Lorentzian signature of spacetime is algebraic in the biquaternion framework: the minus sign in $ds^2=-c^2dt^2+d\mathbf x^2$ is the sign of $i^2$. What this article has separated is the sense in which the complex structure that produces it is, and is not, available.
 
-A **global** complex structure on spacetime, in the sense the question requires — an endomorphism of $\mathbb{M}_-$ compatible with its norm form — is not available, on two independent grounds. First, the algebra's complex structure $J_{\mathbb{B}}:\tilde{Q}\mapsto i\tilde{Q}$ exchanges the two sectors, $i\mathbb{M}_-=\mathbb{M}_+$, so it is not an endomorphism of the material sector. Second, and independently of the algebra, no real complex structure compatible with the Minkowski metric exists at all: compatibility with $J^2=-I$ forces the metric to be an orthogonal sum of definite two-planes, in which each sign occurs an even number of times, while the norm form of $\mathbb{M}_-$ has signature $(3,1)$. The $ict$ convention is not a counterexample; it is a complexification of the coordinates, a different object, and its global use is limited to flat spacetime with a constant scale.
+A **global** complex structure on spacetime, in the sense the question requires — an endomorphism of $\mathbb{M}_-$ compatible with its biquaternion norm — is not available, on two independent grounds. First, the algebra's complex structure $J_{\mathbb{B}}:\tilde{Q}\mapsto i\tilde{Q}$ exchanges the two sectors, $i\mathbb{M}_-=\mathbb{M}_+$, so it is not an endomorphism of the material sector. Second, and independently of the algebra, no real complex structure compatible with the Minkowski metric exists at all: compatibility with $J^2=-I$ forces the metric to be an orthogonal sum of definite two-planes, in which each sign occurs an even number of times, while the biquaternion norm of $\mathbb{M}_-$ has signature $(3,1)$. The $ict$ convention is not a counterexample; it is a complexification of the coordinates, a different object, and its global use is limited to flat spacetime with a constant scale.
 
 A **local** structure is available, and it is the following pointwise data: the temporal direction is identified with the imaginary scalar generator with a local scale $c$, so that the temporal coordinate is $ict$ with $c=c(\mathbf x)$ — and $c(\omega)$ in a dispersive medium. The phase is the algebra's fixed $i$; only the scale varies, and because $c$ is real and positive the map rescales the imaginary axis rather than rotating it. At each point the induced quadratic form is $-c^2dt^2+d\mathbf x^2$, so the local complex structure produces the local Minkowski metric with its one free number, $c$.
 
-That number is fixed by the local structure on two independent routes, and they agree. The null cone of the norm form has aperture $c$. The characteristic speed of the local wave operator $\Box=\partial_{ict}^2+\Delta=\Delta-c^{-2}\partial_t^2$ must equal the characteristic speed $c_{em}=1/\sqrt{\epsilon\mu}$ of the medium's Maxwell equations, so $c=c_{em}$. The numerical value of $c$ remains empirical, as in the metric formalism; what is fixed is its role.
+That number is fixed by the local structure on two independent routes, and they agree. The null cone of the biquaternion norm has aperture $c$. The characteristic speed of the local wave operator $\Box=\partial_{ict}^2+\Delta=\Delta-c^{-2}\partial_t^2$ must equal the characteristic speed $c_{em}=1/\sqrt{\epsilon\mu}$ of the medium's Maxwell equations, so $c=c_{em}$. The numerical value of $c$ remains empirical, as in the metric formalism; what is fixed is its role.
 
 The reading closes no empirical gap and claims no global structure. Its content is that the signature is algebra, the scale is local, and the one scale is the speed of light.
 
@@ -181,7 +181,7 @@ The reading closes no empirical gap and claims no global structure. Its content 
 | $\mathbb{C}_{\mathbb{B}},\mathbb{H}_{\mathbb{B}}$ | Scalar subspace, real-quaternion subspace |
 | $\mathbb{M}_+,\mathbb{M}_-$ | Hermitian (informational), anti-Hermitian (material) subspaces |
 | $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ | Sector decomposition; $i\mathbb{M}_-=\mathbb{M}_+$ |
-| $N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}=\sum_\mu Q_\mu^2$ | Norm form; zero divisors where $N=0$ |
+| $N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}=\sum_\mu Q_\mu^2$ | Biquaternion norm; zero divisors where $N=0$ |
 | $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ | Trace formula |
 | $J^2=-I$ | Abstract complex structure |
 | $J_{\mathbb{B}}:\tilde{Q}\mapsto i\tilde{Q}$ | Complex structure of the algebra |
@@ -197,7 +197,7 @@ The reading closes no empirical gap and claims no global structure. Its content 
 
 - *Introduction to the Biquaternion Universe*, for the two sectors, the local complex structure, and the statement that $c=1/\sqrt{\epsilon\mu}$ is the local scale factor of the structure.
 - *Why Complexify Spacetime?*, for the $ict$ convention, the $SO(4,\mathbb C)$ rotation picture, and the limitations of the global convention.
-- *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*, for the norm form of signature $(3,1)$, the basis $\{ie_0,e_1,e_2,e_3\}$, and the zero-divisor light cone.
+- *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*, for the biquaternion norm of signature $(3,1)$, the basis $\{ie_0,e_1,e_2,e_3\}$, and the zero-divisor light cone.
 - *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*, for the complementary sector and the exchange $i\mathbb{M}_-=\mathbb{M}_+$ by multiplication by $i$.
 - *A Brief History of Biquaternions in Physics*, for the displacement of the $ict$ convention and its relation to the abandonment of the complex formalism.
 - *Electromagnetism in Media — The Local Complex Structure at Work*, the parent article, for the medium conventions, the local and spectral scale $c(\omega)$, and the boundaries of the structure near absorption.

@@ -31,7 +31,7 @@ $$
 
 the Laplacian of $\mathbb{R}^8$ in the coordinates $x_0,\dots,x_7$. Consequently every left-monogenic or right-monogenic function is harmonic, $\Delta_8f = 0$.
 
-*Proof.* Expanding, $D\bar D = \sum_{k,l}e_ke_l\partial_k\partial_l' $ with the sign $\partial_l' = \partial_l$ for $l = 0$ and $\partial_l' = -\partial_l$ otherwise; the partial derivatives commute, so the mixed terms combine as $\sum_{k<l}(e_ke_l + e_le_k)\partial_k\partial_l$ up to the sign of the conjugate, and the Clifford relations $e_ke_l + e_le_k = -2\delta_{kl}$ for $k,l\geq1$ together with $e_0e_0 = e_0$ give $\sum_k\partial_k^2$. Only products of two basis elements occur, so no associativity is needed. For the harmonicity, $\Delta_8f = \bar D(Df) = 0$ when $Df = 0$. $\square$
+*Proof.* Expanding, $D\bar D = \sum_{k,l}e_ke_l\partial_k\partial_l' $ with the sign $\partial_l' = \partial_l$ for $l = 0$ and $\partial_l' = -\partial_l$ otherwise; the partial derivatives commute, so the mixed terms combine as $\sum_{k<l}(e_ke_l + e_le_k)\partial_k\partial_l$ up to the sign of the conjugate, and the Clifford relations $e_ke_l + e_le_k = -2\delta_{kl}$ for $k,l\geq1$ together with $e_0e_0 = e_0$ give $\sum_k\partial_k^2$. Only products of two basis elements occur, so no associativity is needed. For the harmonicity, $\Delta_8f = \bar D(Df) = 0$ when $Df = 0$.
 
 The factorisation is the same as in the quaternion and biquaternion cases, and it shows that the elliptic character of the octonionic Cauchy–Riemann operator is not affected by the failure of associativity: the operator is a first-order elliptic operator with the Laplace operator as its square.
 
@@ -53,7 +53,7 @@ $$
 
 and $\Delta_8E = 0$ away from the origin.
 
-*Proof.* Away from the origin, $D(\bar x/\lvert x\rvert^8) = 0$ and $(\bar x/\lvert x\rvert^8)D = 0$, by the same computation as in the associative Clifford case: $\bar x$ is the product of seven-tuples of basis elements... the identity is the one used to prove that $\bar x/\lvert x\rvert^n$ is the kernel of the Cauchy–Riemann operator in $\mathbb{R}^n$, and the computation uses the Clifford relations and the identity $\sum_kx_ke_k = x$, $\sum_k e_kx_k = \bar x$ for monomials; it requires no associativity because only products of two basis elements are formed at each step. The constant $\omega_7$ is chosen so that $\int_{\lvert x\rvert = 1}\bar x\,dS/n = 1$ in the distributional sense; the constant is the volume of the unit sphere, computed as $\pi^4/3$ in *Octonion Norm and Invertibility*. $\square$
+*Proof.* Away from the origin, $D(\bar x/\lvert x\rvert^8) = 0$ and $(\bar x/\lvert x\rvert^8)D = 0$, by the same computation as in the associative Clifford case: $\bar x$ is the product of seven-tuples of basis elements... the identity is the one used to prove that $\bar x/\lvert x\rvert^n$ is the kernel of the Cauchy–Riemann operator in $\mathbb{R}^n$, and the computation uses the Clifford relations and the identity $\sum_kx_ke_k = x$, $\sum_k e_kx_k = \bar x$ for monomials; it requires no associativity because only products of two basis elements are formed at each step. The constant $\omega_7$ is chosen so that $\int_{\lvert x\rvert = 1}\bar x\,dS/n = 1$ in the distributional sense; the constant is the volume of the unit sphere, computed as $\pi^4/3$ in *Octonion Norm and Invertibility*.
 
 The kernel reproduces the quaternionic situation, where the analogous function is $\bar x/\lvert x\rvert^4$, and it is the kernel out of which the Cauchy formula of the next section is built. What differs is not the kernel but the class of functions.
 
@@ -87,7 +87,7 @@ $$
 Df = \frac{u'}{r}\sum_ke_kx_k + \frac{v'}{r}\sum_kx_k(e_k\bar x) + v\sum_ke_k\bar e_k = \frac{u'}{r}x + \frac{v'}{r}x\bar x + 8v ,
 $$
 
-because $\sum_ke_kx_k = x$ for scalar coefficients $x_k$, because the associator with a scalar vanishes, and because $\sum_ke_k\bar e_k = e_0 - \sum_{k\geq1}e_k^2 = 8e_0$. Since $x\bar x = \lvert x\rvert^2 = r^2$, the display follows. (3) The second ansatz gives $\sum_ke_k(x_kx) = x^2$ in place of $x\bar x$, and $x^2$ is scalar only when $x$ lies in a one-dimensional subspace, so no nonconstant radial solution arises. $\square$
+because $\sum_ke_kx_k = x$ for scalar coefficients $x_k$, because the associator with a scalar vanishes, and because $\sum_ke_k\bar e_k = e_0 - \sum_{k\geq1}e_k^2 = 8e_0$. Since $x\bar x = \lvert x\rvert^2 = r^2$, the display follows. (3) The second ansatz gives $\sum_ke_k(x_kx) = x^2$ in place of $x\bar x$, and $x^2$ is scalar only when $x$ lies in a one-dimensional subspace, so no nonconstant radial solution arises.
 
 The radial reduction is worth isolating, since it is the source of the explicit examples and it shows how sharply the non-commutativity and non-associativity constrain them: the order of the factors in the ansatz matters, because $x\bar x$ is a scalar while $xx$ is not, and the associator-free step $\sum_ke_k(x_k\bar x) = x\bar x$ is the one that makes the kernel monogenic.
 
@@ -113,13 +113,13 @@ $$
 D(fg) = \sum_k e_k(\partial_kf)g + \sum_k e_k(f\partial_kg) .
 $$
 
-The first sum is $\sum_k(e_k\partial_kf)g + \sum_k\bigl(e_k((\partial_kf)g) - (e_k\partial_kf)g\bigr) = (Df)g - \sum_k[e_k,\partial_kf,g]$. For the second sum, $f(Dg) = \sum_kf(e_k\partial_kg)$, and the difference term by term is $e_k(f\partial_kg) - f(e_k\partial_kg) = [e_k,f]\partial_kg - 2[e_k,f,\partial_kg]$, using the alternation of the associator; adding gives the display. The correction vanishes for all triples exactly when all associators vanish, that is exactly when the algebra is associative. The special case follows by putting $\partial_ka = 0$ and using $Da = 0$ for constant $a$. $\square$
+The first sum is $\sum_k(e_k\partial_kf)g + \sum_k\bigl(e_k((\partial_kf)g) - (e_k\partial_kf)g\bigr) = (Df)g - \sum_k[e_k,\partial_kf,g]$. For the second sum, $f(Dg) = \sum_kf(e_k\partial_kg)$, and the difference term by term is $e_k(f\partial_kg) - f(e_k\partial_kg) = [e_k,f]\partial_kg - 2[e_k,f,\partial_kg]$, using the alternation of the associator; adding gives the display. The correction vanishes for all triples exactly when all associators vanish, that is exactly when the algebra is associative. The special case follows by putting $\partial_ka = 0$ and using $Da = 0$ for constant $a$.
 
 The theorem is the precise form of the statement that the octonionic differential calculus is not associative: the Leibniz rule acquires two correction terms built from the commutator and the associator, and they are not a defect of a particular presentation but an invariant of the algebra, since they vanish for all arguments only in the associative case. The consequence is immediate and severe:
 
 **Corollary.** The product of two left-monogenic functions need not be left-monogenic, and the space $\mathcal{M}_L(\Omega)$ is **not** a left module over $\mathbb{O}$ with respect to pointwise multiplication; indeed $D(af) = \sum_k[e_k,a,\partial_kf]$ for $a$ constant and $f$ monogenic, and this is nonzero for suitable $a,f$.
 
-*Proof.* By the product rule with $Df = Dg = 0$ the first two terms vanish, and the correction terms remain; they do not vanish identically by the alternation properties of the associator, and an explicit example is obtained from $f = E$ and $a = e_1$: the function $e_1E$ is not monogenic, because $D(e_1E) = \sum_k[e_k,e_1,\partial_kE]$ and the associators $\partial_kE$ do not all commute with $e_1$. $\square$
+*Proof.* By the product rule with $Df = Dg = 0$ the first two terms vanish, and the correction terms remain; they do not vanish identically by the alternation properties of the associator, and an explicit example is obtained from $f = E$ and $a = e_1$: the function $e_1E$ is not monogenic, because $D(e_1E) = \sum_k[e_k,e_1,\partial_kE]$ and the associators $\partial_kE$ do not all commute with $e_1$.
 
 This is the sharpest structural difference from the associative case: in Clifford analysis the monogenic functions form a module over the coefficient algebra, because the Cauchy–Riemann operator is a derivation with respect to the associative product, and in octonionic analysis they do not.
 
@@ -139,7 +139,7 @@ $$
 
 and the two classes are conjugate to one another.
 
-*Proof.* Conjugating $Df = \sum_ke_k\partial_kf$ and using $\overline{\partial_kf} = \partial_k\bar f$ for real coordinates, $\bar e_0 = e_0$ and $\bar e_k = -e_k$ for $k\geq1$, one obtains $\overline{Df} = \sum_k\partial_k\bar f\,\bar e_k = \partial_0\bar f - \sum_{k\geq1}\partial_k\bar f\,e_k = \bar fD$, which is the first identity; the second follows by applying the involution again, since it is an anti-automorphism of order two and carries $0$ to $0$. $\square$
+*Proof.* Conjugating $Df = \sum_ke_k\partial_kf$ and using $\overline{\partial_kf} = \partial_k\bar f$ for real coordinates, $\bar e_0 = e_0$ and $\bar e_k = -e_k$ for $k\geq1$, one obtains $\overline{Df} = \sum_k\partial_k\bar f\,\bar e_k = \partial_0\bar f - \sum_{k\geq1}\partial_k\bar f\,e_k = \bar fD$, which is the first identity; the second follows by applying the involution again, since it is an anti-automorphism of order two and carries $0$ to $0$.
 
 Since the algebra is neither commutative nor associative, the classes are not the same in general: a left-monogenic function need not be right-monogenic, and the two-sided monogenic functions are the intersection, which is closed under neither pointwise product in general. In the complex case the two classes coincide; in the quaternion and biquaternion cases they are distinct but related by conjugation, exactly as here.
 
@@ -157,7 +157,7 @@ $$
 f(x) = \frac{1}{\omega_7}\int_{\partial\Omega}\frac{\overline{y - x}}{\lvert y - x\rvert^8}\,n(y)\,f(y)\,dS(y), \qquad x\in\Omega .
 $$
 
-*Proof.* The formula is the standard Cauchy–Pompeiu formula for the octonionic Cauchy–Riemann operator: it follows from Stokes' theorem for the form $E(y-x)n(y)f(y)dS$, whose exterior derivative is computed with the product rule, and the resulting volume integrand is $E(y-x)(Df)(y)$ up to the correction terms, which are total derivatives and integrate to zero. The reader is referred to the sources cited for the details of the Stokes argument in the non-associative case. The passage to the monogenic case is the vanishing of the volume term. $\square$
+*Proof.* The formula is the standard Cauchy–Pompeiu formula for the octonionic Cauchy–Riemann operator: it follows from Stokes' theorem for the form $E(y-x)n(y)f(y)dS$, whose exterior derivative is computed with the product rule, and the resulting volume integrand is $E(y-x)(Df)(y)$ up to the correction terms, which are total derivatives and integrate to zero. The reader is referred to the sources cited for the details of the Stokes argument in the non-associative case. The passage to the monogenic case is the vanishing of the volume term.
 
 Two features of the formula are worth recording. First, the order of the factors is part of the statement: the kernel multiplies the normal on the left and the function on the left of that, and a right-monogenic version of the formula requires the conjugate arrangement of the factors given by the conjugacy of the two classes. Second, the formula holds although the algebra is not associative; its proof uses the Clifford relations and Stokes' theorem and does not require the product of two monogenic functions to be monogenic, which is why it survives the failure of the Leibniz rule recorded above.
 
@@ -169,7 +169,7 @@ $$
 
 the integral being over the sphere of radius $r$, whose volume is $\omega_7r^7$; hence $f(0)$ is the mean value of $f$ over the sphere, and a non-constant monogenic function has no interior maximum of the modulus, so that the maximum principle holds.
 
-*Proof.* In the Cauchy formula on the ball, the kernel and the normal are $\bar y/r^8$ and $n(y) = y/r$, and $\bar yy = r^2$, so the integrand reduces to $f(y)/r^9 \cdot r^2 = f(y)/r^7$ up to the constant; dividing by $\omega_7$ gives the mean value. Harmonicity gives the maximum principle. $\square$
+*Proof.* In the Cauchy formula on the ball, the kernel and the normal are $\bar y/r^8$ and $n(y) = y/r$, and $\bar yy = r^2$, so the integrand reduces to $f(y)/r^9 \cdot r^2 = f(y)/r^7$ up to the constant; dividing by $\omega_7$ gives the mean value. Harmonicity gives the maximum principle.
 
 ## Comparison with the Associative Clifford Case
 
@@ -177,7 +177,7 @@ The octonionic Cauchy–Riemann operator is a first-order elliptic operator whos
 
 **Theorem.** Let $A$ be a real associative algebra with a positive definite inner product and an orthonormal basis $f_1,\dots,f_m$ satisfying the Clifford relations, and let $\mathcal{D} = \sum_kf_k\partial_k$ on $A$-valued functions of $m$ variables. Then the left-monogenic functions form a left $A$-module, and for constant $a$ one has $\mathcal{D}(af) = a(\mathcal{D}f)$; the product of two monogenic functions need not be monogenic in this case either.
 
-*Proof.* The first statement is the Leibniz rule of the associative case, which has no correction terms; the second is the observation that $\mathcal{D}(fg) = (\mathcal{D}f)g + \sum_kf_k(f\partial_kg)$, whose second term is a first-order operator applied to $g$ and is not zero for arbitrary monogenic $f,g$. $\square$
+*Proof.* The first statement is the Leibniz rule of the associative case, which has no correction terms; the second is the observation that $\mathcal{D}(fg) = (\mathcal{D}f)g + \sum_kf_k(f\partial_kg)$, whose second term is a first-order operator applied to $g$ and is not zero for arbitrary monogenic $f,g$.
 
 The comparison is therefore precise and asymmetric. The failure of the product of two monogenic functions to be monogenic is **not** a feature of the octonions: it holds already for the associative Clifford algebras. What is peculiar to the octonions is the failure of the **module** property, $D(af)\neq a(Df)$ for constant $a\in\mathbb{O}$, which in the associative case is a triviality and in the octonionic case is a sum of associators; and with it the failure of every structure that presupposes that the solutions are acted on by the coefficient algebra. This is why the octonionic analysis retains the elliptic, harmonic and integral theory — those never multiply two solutions — and loses the module-theoretic theory.
 

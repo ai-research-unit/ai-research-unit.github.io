@@ -45,7 +45,7 @@ and with $A^*y$ the unique vector satisfying $\langle Ax,y\rangle=\langle x,A^*y
 
 **Proposition.** Let $A$ be densely defined. Then $A$ is closable if and only if $D(A^*)$ is dense, and then $\overline A=A^{**}$. If $A$ is closed and $D(A)=H$ then $A$ is bounded.
 
-*Proof.* The first statement is the standard duality between the graph of $A$ and the graph of $-A^*$ in $H\oplus H$: $\Gamma(A)^\perp=\{(-A^*y,y):y \in D(A^*)\}$ after the symplectic identification, so $\Gamma(A)$ is the graph of an operator exactly when the projection of $\Gamma(A)^\perp$ to the second factor is injective, which is the density of $D(A^*)$ when this holds; the second is the closed graph theorem. $\square$
+*Proof.* The first statement is the standard duality between the graph of $A$ and the graph of $-A^*$ in $H\oplus H$: $\Gamma(A)^\perp=\{(-A^*y,y):y \in D(A^*)\}$ after the symplectic identification, so $\Gamma(A)$ is the graph of an operator exactly when the projection of $\Gamma(A)^\perp$ to the second factor is injective, which is the density of $D(A^*)$ when this holds; the second is the closed graph theorem.
 
 **Definition.** A densely defined operator $A$ is **symmetric** if
 
@@ -77,7 +77,7 @@ and their dimensions $n_+=\dim N_+$ and $n_-=\dim N_-$ are the **deficiency indi
 
 **Theorem (basic criterion).** A closed symmetric operator $A$ is self-adjoint if and only if $n_+=n_-=0$, equivalently if and only if $(A-i)D(A)$ and $(A+i)D(A)$ are dense in $H$; it is essentially self-adjoint if and only if its deficiency indices are $(0,0)$.
 
-*Proof.* The ranges of $A\pm i$ are the orthogonal complements of $N_\mp$: indeed $\langle(A-i)x,y\rangle=\langle x,(A^*+i)y\rangle$ for $x \in D(A)$, $y \in D(A^*)$, so $y \in\ker(A^*+i)$ exactly when $y \perp (A-i)D(A)$. Hence $A-i$ has dense range precisely when $n_-=0$, and the symmetric operator $A$ is self-adjoint precisely when $A-i$ and $A+i$ map $D(A)$ onto $H$; for a symmetric $A$ one has $\|(A-i)x\|^2=\|Ax\|^2+\|x\|^2$, so $A-i$ is bounded below, and a closed operator bounded below has closed range; dense range therefore gives surjectivity, and the surjectivity of $A-i$ and of $A+i$ for a closed symmetric $A$ is exactly self-adjointness. $\square$
+*Proof.* The ranges of $A\pm i$ are the orthogonal complements of $N_\mp$: indeed $\langle(A-i)x,y\rangle=\langle x,(A^*+i)y\rangle$ for $x \in D(A)$, $y \in D(A^*)$, so $y \in\ker(A^*+i)$ exactly when $y \perp (A-i)D(A)$. Hence $A-i$ has dense range precisely when $n_-=0$, and the symmetric operator $A$ is self-adjoint precisely when $A-i$ and $A+i$ map $D(A)$ onto $H$; for a symmetric $A$ one has $\|(A-i)x\|^2=\|Ax\|^2+\|x\|^2$, so $A-i$ is bounded below, and a closed operator bounded below has closed range; dense range therefore gives surjectivity, and the surjectivity of $A-i$ and of $A+i$ for a closed symmetric $A$ is exactly self-adjointness.
 
 **Example.** (i) For $D_0=-i\,d/dx$ on $(0,\infty)$: the adjoint is $D=-i\,d/dx$ on $H^1(0,\infty)$, and
 
@@ -162,7 +162,7 @@ $$
 
 The measure satisfies $E(B)=0$ for Borel $B$ disjoint from $\sigma(A)$, so $\operatorname{supp}E=\sigma(A)$; conversely $\lambda \in \sigma(A)$ exactly when $E\bigl((\lambda-\varepsilon,\lambda+\varepsilon)\bigr)\neq0$ for every $\varepsilon>0$, so the spectrum is real. If $A$ is bounded with $\|A\|\le M$ then $E$ is supported in $[-M,M]$ and $A=\int_{-M}^M\lambda\,dE(\lambda)$, recovering the spectral theorem of *Banach and Hilbert Spaces*.
 
-*Proof (sketch).* The Cayley transform $V=(A-i)(A+i)^{-1}$ is unitary and $1$ is not an eigenvalue, so the bounded spectral theorem applied to $V$ gives $V=\int_{S^1}z\,dF(z)$; the inverse Cayley map transports $F$ to a projection-valued measure on the real line, and the domain of $A$ is computed from the integrability condition $z \mapsto i(1+z)(1-z)^{-1}$ being in $L^2$. Uniqueness follows because the moments $\int\lambda^n\,dE_{x,y}$ are determined by $A$ for all $x,y$. $\square$
+*Proof (sketch).* The Cayley transform $V=(A-i)(A+i)^{-1}$ is unitary and $1$ is not an eigenvalue, so the bounded spectral theorem applied to $V$ gives $V=\int_{S^1}z\,dF(z)$; the inverse Cayley map transports $F$ to a projection-valued measure on the real line, and the domain of $A$ is computed from the integrability condition $z \mapsto i(1+z)(1-z)^{-1}$ being in $L^2$. Uniqueness follows because the moments $\int\lambda^n\,dE_{x,y}$ are determined by $A$ for all $x,y$.
 
 **Corollary (functional calculus).** For every bounded Borel function $f$ on $\mathbb{R}$ the operator $f(A)=\int f\,dE$ is bounded with $\|f(A)\|\le\|f\|_\infty$, and
 
@@ -222,7 +222,7 @@ $$
 x_+=\int_0^\infty e^{-t}U(t)y\,dt, \qquad x_-=\int_0^\infty e^{-t}U(-t)y\,dt
 $$
 
-are defined by strong integrals and satisfy $(A+i)x_+=iy$ and $(A-i)x_-=-iy$, as one checks by differentiating $e^{s}\int_s^\infty e^{-u}U(u)y\,du$ and $e^{-s}\int_{-\infty}^s e^{u}U(u)y\,du$ at $s=0$. Hence $A\pm i$ have range all of $H$, and $A$ is self-adjoint by the basic criterion. The converse is the functional calculus: the multiplicativity $e^{is\lambda}e^{it\lambda}=e^{i(s+t)\lambda}$ holds under the measure, so the group law holds, and the strong continuity follows from dominated convergence. $\square$
+are defined by strong integrals and satisfy $(A+i)x_+=iy$ and $(A-i)x_-=-iy$, as one checks by differentiating $e^{s}\int_s^\infty e^{-u}U(u)y\,du$ and $e^{-s}\int_{-\infty}^s e^{u}U(u)y\,du$ at $s=0$. Hence $A\pm i$ have range all of $H$, and $A$ is self-adjoint by the basic criterion. The converse is the functional calculus: the multiplicativity $e^{is\lambda}e^{it\lambda}=e^{i(s+t)\lambda}$ holds under the measure, so the group law holds, and the strong continuity follows from dominated convergence.
 
 **Corollary (dynamics).** Stone's theorem is the analytic form of a continuous dynamical system: a flow $t \mapsto T_t$ of measure-preserving transformations of a space corresponds to the unitary group $U(t)f=f\circ T_t$ on $L^2$, and its generator is the self-adjoint operator of differentiation along the flow; the spectral properties of the generator are the frequencies of the system. The correspondence between flows and their generators, the mean ergodic theorem and the mixing properties expressed in the spectrum are the subject,and *Probability and Ergodic Theory*; the case of the geodesic flow is treated.
 

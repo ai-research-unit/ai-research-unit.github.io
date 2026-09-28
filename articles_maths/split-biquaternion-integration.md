@@ -1,3 +1,4 @@
+
 # __Split-Biquaternion Integration__
 
 ## Introduction
@@ -52,7 +53,7 @@ $$
 \int_\Omega (\alpha \tilde{F} + \beta \tilde{G}) \, dV = \alpha \int_\Omega \tilde{F} \, dV + \beta \int_\Omega \tilde{G} \, dV.
 $$
 
-**Proof.** This follows from the component-wise definition and the linearity of the Lebesgue integral. $\square$
+**Proof.** This follows from the component-wise definition and the linearity of the Lebesgue integral.
 
 ### Additivity
 
@@ -62,7 +63,7 @@ $$
 \int_\Omega \tilde{F} \, dV = \int_{\Omega_1} \tilde{F} \, dV + \int_{\Omega_2} \tilde{F} \, dV.
 $$
 
-**Proof.** This follows from the additivity of the Lebesgue integral. $\square$
+**Proof.** This follows from the additivity of the Lebesgue integral.
 
 ### The Fundamental Estimate
 
@@ -78,17 +79,17 @@ $$
 \left| \int_\Omega u_\mu \, dV \right| \leq \int_\Omega |u_\mu| \, dV \leq \int_\Omega \|\tilde{F}\|_E \, dV \leq M \cdot \mathrm{vol}(\Omega),
 $$
 
-and similarly for $v_\mu$. So each component is bounded by $M \cdot \mathrm{vol}(\Omega)$, and the Euclidean norm, which is equivalent to the maximum of the absolute values of the eight components, is bounded by the same constant. $\square$
+and similarly for $v_\mu$. So each component is bounded by $M \cdot \mathrm{vol}(\Omega)$, and the Euclidean norm, which is equivalent to the maximum of the absolute values of the eight components, is bounded by the same constant.
 
 ### Integrability
 
 **Theorem (integrability).** If $\tilde{F}$ is continuous on a compact domain $\Omega$, then $\tilde{F}$ is integrable over $\Omega$.
 
-**Proof.** A continuous real-valued function on a compact subset of $\mathbb{R}^4$ is bounded and Lebesgue-integrable. Applying this to each of the eight real components and using the component-wise definition gives the result. $\square$
+**Proof.** A continuous real-valued function on a compact subset of $\mathbb{R}^4$ is bounded and Lebesgue-integrable. Applying this to each of the eight real components and using the component-wise definition gives the result.
 
 **Theorem (absolute integrability).** If $\|\tilde{F}\|_E$ is integrable over $\Omega$, then $\tilde{F}$ is integrable over $\Omega$.
 
-**Proof.** Since $|u_\mu| \leq \|\tilde{F}\|_E$ and $|v_\mu| \leq \|\tilde{F}\|_E$ for each $\mu$, the integrability of $\|\tilde{F}\|_E$ implies the integrability of each component. $\square$
+**Proof.** Since $|u_\mu| \leq \|\tilde{F}\|_E$ and $|v_\mu| \leq \|\tilde{F}\|_E$ for each $\mu$, the integrability of $\|\tilde{F}\|_E$ implies the integrability of each component.
 
 ### The Integral in the Idempotent Basis
 
@@ -114,7 +115,7 @@ $$
 
 where $n_\mu$ is the $\mu$-th component of the outward unit normal on $\partial \Omega$ and $dS$ is the surface measure.
 
-**Proof.** This is the standard integration by parts formula in $\mathbb{R}^4$, applied to the scalar function $\phi$ and each of the eight real components of $\tilde{F}$. Summing over the components gives the result. $\square$
+**Proof.** This is the standard integration by parts formula in $\mathbb{R}^4$, applied to the scalar function $\phi$ and each of the eight real components of $\tilde{F}$. Summing over the components gives the result.
 
 ### The Vector Case
 
@@ -126,7 +127,7 @@ $$
 
 where $\tilde{n} = \sum_\mu n_\mu e_\mu$ is the split-biquaternion-valued outward unit normal.
 
-**Proof.** This follows from the scalar integration by parts applied to each component of $\tilde{\nabla}\tilde{F}$ and the product rule for the gradient. $\square$
+**Proof.** This follows from the scalar integration by parts applied to each component of $\tilde{\nabla}\tilde{F}$ and the product rule for the gradient.
 
 ## The Divergence Theorem
 
@@ -150,7 +151,7 @@ $$
 \int_\Omega \partial_\mu F_\nu \, dV = \int_{\partial \Omega} F_\nu n_\mu \, dS.
 $$
 
-Multiplying by $e_\mu e_\nu$ and summing gives the result. $\square$
+Multiplying by $e_\mu e_\nu$ and summing gives the result.
 
 **Theorem (divergence theorem for the quaternion conjugate).** Under the same hypotheses,
 
@@ -160,7 +161,7 @@ $$
 
 where $\bar{\tilde{n}} = n_0 e_0 - \sum_{k=1}^{3} n_k e_k$ is the quaternion conjugate of the outward unit normal.
 
-**Proof.** This is the same computation as above, with the signs of the vector components reversed. $\square$
+**Proof.** This is the same computation as above, with the signs of the vector components reversed.
 
 ## Green's Formulas
 
@@ -172,7 +173,7 @@ $$
 \int_\Omega \left[ (\tilde{\nabla}\tilde{F}) \bar{\tilde{G}} + \tilde{F} (\bar{\tilde{\nabla}}\bar{\tilde{G}}) \right] dV = \int_{\partial \Omega} \tilde{F} \tilde{n} \bar{\tilde{G}} \, dS.
 $$
 
-**Proof.** Apply the divergence theorem to the product $\tilde{F} \bar{\tilde{G}}$ and use the product rule for the gradient. $\square$
+**Proof.** Apply the divergence theorem to the product $\tilde{F} \bar{\tilde{G}}$ and use the product rule for the gradient.
 
 ### Second Green's Formula
 
@@ -194,7 +195,7 @@ $$
 
 where $\Box = \partial_0^2 + \Delta$ is the four-dimensional Laplacian.
 
-**Proof.** Apply the second Green's formula with $\tilde{F}$ replaced by $\tilde{\nabla}\tilde{F}$ and $\bar{\tilde{G}}$ replaced by $\bar{\tilde{G}}$, and use the definition of $\Box$. $\square$
+**Proof.** Apply the second Green's formula with $\tilde{F}$ replaced by $\tilde{\nabla}\tilde{F}$ and $\bar{\tilde{G}}$ replaced by $\bar{\tilde{G}}$, and use the definition of $\Box$.
 
 ## The Fundamental Solution
 
@@ -238,7 +239,7 @@ $$
 \bar{\tilde{Q}} \tilde{\nabla} \left( \frac{1}{\|\tilde{Q}\|_E^4} \right) = \bar{\tilde{Q}} \sum_\mu e_\mu \partial_\mu \left( \frac{1}{\|\tilde{Q}\|_E^4} \right) = \bar{\tilde{Q}} \sum_\mu e_\mu \left( -\frac{4 x_\mu}{\|\tilde{Q}\|_E^6} \right) = -\frac{4 \bar{\tilde{Q}} \tilde{Q}}{\|\tilde{Q}\|_E^6}.
 $$
 
-Since $\bar{\tilde{Q}} \tilde{Q} = \|\tilde{Q}\|_E^2 e_0$, the second term is $-4 \|\tilde{Q}\|_E^2 / \|\tilde{Q}\|_E^6 \cdot e_0 = -4 e_0 / \|\tilde{Q}\|_E^4$. So the two terms cancel, and $\tilde{\nabla} \tilde{G} = 0$. $\square$
+Since $\bar{\tilde{Q}} \tilde{Q} = \|\tilde{Q}\|_E^2 e_0$, the second term is $-4 \|\tilde{Q}\|_E^2 / \|\tilde{Q}\|_E^6 \cdot e_0 = -4 e_0 / \|\tilde{Q}\|_E^4$. So the two terms cancel, and $\tilde{\nabla} \tilde{G} = 0$.
 
 ### The Distributional Gradient
 
@@ -280,7 +281,7 @@ $$
 \langle \tilde{\nabla} \tilde{G}, \phi \rangle = 2\pi^2 \phi(0) e_0,
 $$
 
-which is the distributional identity $\tilde{\nabla} \tilde{G} = 2\pi^2 \delta_0 e_0$, in agreement with the statement of the theorem. $\square$
+which is the distributional identity $\tilde{\nabla} \tilde{G} = 2\pi^2 \delta_0 e_0$, in agreement with the statement of the theorem.
 
 ## The Cauchy Integral Formula
 
@@ -332,7 +333,7 @@ $$
 \int_\Omega \tilde{G}(\tilde{Q} - \tilde{Q}_0) (\tilde{\nabla}\tilde{F})(\tilde{Q}) \, dV = \int_{\partial \Omega} \tilde{G}(\tilde{Q} - \tilde{Q}_0) \tilde{n} \tilde{F}(\tilde{Q}) \, dS - 2\pi^2 \tilde{F}(\tilde{Q}_0).
 $$
 
-Rearranging gives the stated formula. $\square$
+Rearranging gives the stated formula.
 
 ### The Cauchy Integral Formula in the Idempotent Basis
 
@@ -356,25 +357,25 @@ $$
 
 where $2\pi^2 r^3$ is the surface area of the three-sphere of radius $r$ in $\mathbb{R}^4$.
 
-**Proof.** Apply the Cauchy integral formula to the ball $B(\tilde{Q}_0, r)$ and use the explicit form of the fundamental solution. The kernel becomes constant on the sphere, and the integral reduces to the average of $\tilde{F}$ over the sphere. $\square$
+**Proof.** Apply the Cauchy integral formula to the ball $B(\tilde{Q}_0, r)$ and use the explicit form of the fundamental solution. The kernel becomes constant on the sphere, and the integral reduces to the average of $\tilde{F}$ over the sphere.
 
 ### The Maximum Principle
 
 **Theorem (maximum principle).** If $\tilde{F}$ satisfies $\tilde{\nabla}\tilde{F} = 0$ on a domain $\Omega$ and $\|\tilde{F}\|_E$ attains its maximum at an interior point of $\Omega$, then $\tilde{F}$ is constant on $\Omega$.
 
-**Proof.** Use the mean value property: if $\|\tilde{F}\|_E$ attains its maximum at $\tilde{Q}_0$, then $\tilde{F}(\tilde{Q}_0)$ equals the average of $\tilde{F}$ over every small sphere around $\tilde{Q}_0$, so $\|\tilde{F}(\tilde{Q}_0)\|_E \leq$ the average of $\|\tilde{F}\|_E \leq \|\tilde{F}(\tilde{Q}_0)\|_E$; both inequalities are equalities, so $\|\tilde{F}\|_E$ is constant on each such sphere. The Cauchy estimates for the first derivatives then give $\partial_\mu \tilde{F}(\tilde{Q}_0) = 0$, so $\tilde{F}$ is constant in a neighbourhood of $\tilde{Q}_0$, and iterating over a connected chain of spheres, $\tilde{F}$ is constant on $\Omega$. $\square$
+**Proof.** Use the mean value property: if $\|\tilde{F}\|_E$ attains its maximum at $\tilde{Q}_0$, then $\tilde{F}(\tilde{Q}_0)$ equals the average of $\tilde{F}$ over every small sphere around $\tilde{Q}_0$, so $\|\tilde{F}(\tilde{Q}_0)\|_E \leq$ the average of $\|\tilde{F}\|_E \leq \|\tilde{F}(\tilde{Q}_0)\|_E$; both inequalities are equalities, so $\|\tilde{F}\|_E$ is constant on each such sphere. The Cauchy estimates for the first derivatives then give $\partial_\mu \tilde{F}(\tilde{Q}_0) = 0$, so $\tilde{F}$ is constant in a neighbourhood of $\tilde{Q}_0$, and iterating over a connected chain of spheres, $\tilde{F}$ is constant on $\Omega$.
 
 ### Liouville's Theorem
 
 **Theorem (Liouville).** If $\tilde{F}$ satisfies $\tilde{\nabla}\tilde{F} = 0$ on all of $V$ and $\|\tilde{F}\|_E$ is bounded, then $\tilde{F}$ is constant.
 
-**Proof.** Apply the Cauchy integral formula to a large ball of radius $R$ centered at $\tilde{Q}_0$, and estimate the boundary integral using the boundedness of $\tilde{F}$. The kernel $\tilde{G}(\tilde{Q} - \tilde{Q}_0)$ is of order $R^{-3}$ on the sphere of radius $R$, and the surface area is of order $R^3$, so the boundary integral is of order $R^0$, i.e., bounded. As $R \to \infty$, the boundary integral tends to zero (using the decay of the kernel and the boundedness of $\tilde{F}$), so $\tilde{F}(\tilde{Q}_0)$ is independent of $\tilde{Q}_0$. $\square$
+**Proof.** Apply the Cauchy integral formula to a large ball of radius $R$ centered at $\tilde{Q}_0$, and estimate the boundary integral using the boundedness of $\tilde{F}$. The kernel $\tilde{G}(\tilde{Q} - \tilde{Q}_0)$ is of order $R^{-3}$ on the sphere of radius $R$, and the surface area is of order $R^3$, so the boundary integral is of order $R^0$, i.e., bounded. As $R \to \infty$, the boundary integral tends to zero (using the decay of the kernel and the boundedness of $\tilde{F}$), so $\tilde{F}(\tilde{Q}_0)$ is independent of $\tilde{Q}_0$.
 
 ### The Identity Theorem
 
 **Theorem (identity theorem).** If two functions $\tilde{F}$ and $\tilde{G}$ satisfying $\tilde{\nabla}\tilde{F} = \tilde{\nabla}\tilde{G} = 0$ on a connected domain $\Omega$ agree on an open subset of $\Omega$, then they agree on all of $\Omega$.
 
-**Proof.** The difference $\tilde{H} = \tilde{F} - \tilde{G}$ satisfies $\tilde{\nabla}\tilde{H} = 0$ and vanishes on an open subset. By the maximum principle applied to $\tilde{H}$ and to $-\tilde{H}$, the modulus of $\tilde{H}$ cannot attain a maximum at an interior point unless $\tilde{H}$ is constant, and since $\tilde{H}$ vanishes on an open subset, the constant is zero. $\square$
+**Proof.** The difference $\tilde{H} = \tilde{F} - \tilde{G}$ satisfies $\tilde{\nabla}\tilde{H} = 0$ and vanishes on an open subset. By the maximum principle applied to $\tilde{H}$ and to $-\tilde{H}$, the modulus of $\tilde{H}$ cannot attain a maximum at an interior point unless $\tilde{H}$ is constant, and since $\tilde{H}$ vanishes on an open subset, the constant is zero.
 
 ### The Cauchy Estimates
 
@@ -386,7 +387,7 @@ $$
 
 where $C_\alpha$ is a constant depending on $\alpha$ and $|\alpha|$ is the total order of the multi-index.
 
-**Proof.** Differentiate the Cauchy integral formula with respect to $\tilde{Q}_0$ and estimate the resulting integral using the bound on $\tilde{F}$. $\square$
+**Proof.** Differentiate the Cauchy integral formula with respect to $\tilde{Q}_0$ and estimate the resulting integral using the bound on $\tilde{F}$.
 
 ## The Residue Theory
 
@@ -414,7 +415,7 @@ $$
 
 for any $\tilde{Q}_0$ outside the singularities.
 
-**Proof.** Apply the Cauchy integral formula to the domain with small spheres removed around each singularity, and use the definition of the residue. $\square$
+**Proof.** Apply the Cauchy integral formula to the domain with small spheres removed around each singularity, and use the definition of the residue.
 
 ### The Residue in the Idempotent Basis
 
@@ -495,7 +496,7 @@ The **fundamental solution** of the gradient operator is $\tilde{G}(\tilde{Q}) =
 | $\tilde{Q} = \sum_{\mu=0}^{3} Q_\mu e_\mu$ | General split biquaternion |
 | $Q_\mu = q_\mu + j q'_\mu$, $F_\mu = u_\mu + j v_\mu$ | Split complex coefficients and values |
 | $\bar{\cdot}, {}^*, {}^\dagger, {}^\flat$ | The four conjugations |
-| $N(\tilde{Q}) = \tilde{Q} \bar{\tilde{Q}}$ | Norm form |
+| $N(\tilde{Q}) = \tilde{Q} \bar{\tilde{Q}}$ | Split-Biquaternion norm |
 | $\tilde{Q}_\pm = \tilde{Q} \tilde\Pi_\pm$ | Idempotent components |
 | $V$ | A four-dimensional real subspace, coordinates $x_0, \dots, x_3$ |
 | $\Omega \subset V$ | Domain of integration |

@@ -51,7 +51,7 @@ $$
 \det\Phi(\tilde{Q}) = Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2 = N(\tilde{Q}),
 $$
 
-so that the **norm form** of $\mathbb{B}$ is the determinant. The isomorphism also intertwines Hermitian conjugation with the conjugate transpose,
+so that the **biquaternion norm** of $\mathbb{B}$ is the determinant. The isomorphism also intertwines Hermitian conjugation with the conjugate transpose,
 
 $$
 \Phi(\tilde{Q}^\dagger) = \Phi(\tilde{Q})^{\dagger},
@@ -202,7 +202,7 @@ $$
 SL(2,\mathbb{C}) \;=\; \{\tilde{\Lambda}\in\mathbb{B} : \tilde{\Lambda}\bar{\tilde{\Lambda}} = e_0\},
 $$
 
-which under $\Phi$ is exactly $\{g\in GL_2(\mathbb{C}) : \det g = 1\}$, because the norm form is the determinant. It is a simply connected complex Lie group of complex dimension $3$ (real dimension $6$), with Lie algebra $\mathfrak{sl}(2,\mathbb{C})$, the traceless $2\times2$ complex matrices.
+which under $\Phi$ is exactly $\{g\in GL_2(\mathbb{C}) : \det g = 1\}$, because the biquaternion norm is the determinant. It is a simply connected complex Lie group of complex dimension $3$ (real dimension $6$), with Lie algebra $\mathrm{SL}(2,\mathbb{C})$, the traceless $2\times2$ complex matrices.
 
 The subgroups relevant to the series sit inside it as follows:
 
@@ -221,7 +221,7 @@ $$
 \pi(\tilde{\Lambda}):\; \tilde{Q} \;\longmapsto\; \tilde{\Lambda}\,\tilde{Q}\,\tilde{\Lambda}^{\dagger}, \qquad \tilde{Q}\in\mathbb{M}_-.
 $$
 
-It is well defined (the image of an anti-Hermitian element is anti-Hermitian), it preserves the norm form, and it is a group homomorphism. Its kernel is
+It is well defined (the image of an anti-Hermitian element is anti-Hermitian), it preserves the biquaternion norm, and it is a group homomorphism. Its kernel is
 
 $$
 \ker\pi = \{\pm e_0\} \cong \mathbb{Z}/2\mathbb{Z},
@@ -283,16 +283,16 @@ the standard $SU(2)$ rotation matrix. A rotation by $2\pi$ sends $\Phi(\tilde{R}
 Differentiating at the identity gives the action of the Lie algebra. The generators of $SL(2,\mathbb{C})$ are the traceless matrices, and in the biquaternion basis
 
 $$
-\mathfrak{sl}(2,\mathbb{C}) = \operatorname{span}_{\mathbb{R}}\{\,e_1,e_2,e_3\,\} \;\oplus\; \operatorname{span}_{\mathbb{R}}\{\,ie_1,ie_2,ie_3\,\},
+\mathrm{SL}(2,\mathbb{C}) = \operatorname{span}_{\mathbb{R}}\{\,e_1,e_2,e_3\,\} \;\oplus\; \operatorname{span}_{\mathbb{R}}\{\,ie_1,ie_2,ie_3\,\},
 $$
 
-the first summand being the rotations (the compact subalgebra $\mathfrak{su}(2)\cong\mathfrak{so}(3)$ and $\mathbb{H}_{\mathbb{B}}$) and the second the boosts (the non-compact part, in $\mathbb{M}_+$). Under $\Phi$,
+the first summand being the rotations (the compact subalgebra $\mathrm{SU}(2)\cong\mathrm{SO}(3)$ and $\mathbb{H}_{\mathbb{B}}$) and the second the boosts (the non-compact part, in $\mathbb{M}_+$). Under $\Phi$,
 
 $$
 e_k \longmapsto -i\sigma_k, \qquad i e_k \longmapsto \sigma_k,
 $$
 
-so the anti-Hermitian generators $-i\sigma_k$ and the Hermitian generators $\sigma_k$ both act on $S$ by matrix multiplication. On the spinor module the infinitesimal generators act as the Pauli matrices and their multiples, which is the familiar statement that the spin-$\frac{1}{2}$ representation is the fundamental representation of $\mathfrak{sl}(2,\mathbb{C})$.
+so the anti-Hermitian generators $-i\sigma_k$ and the Hermitian generators $\sigma_k$ both act on $S$ by matrix multiplication. On the spinor module the infinitesimal generators act as the Pauli matrices and their multiples, which is the familiar statement that the spin-$\frac{1}{2}$ representation is the fundamental representation of $\mathrm{SL}(2,\mathbb{C})$.
 
 The **compact subgroup** $SU(2)\subset SL(2,\mathbb{C})$ consists of the unit-norm biquaternions with real vector part (the unit quaternions), for which $\tilde{R}^\dagger\tilde{R} = e_0$. Its action on $S$ is unitary with respect to the Hermitian inner product $\langle\psi,\phi\rangle = \psi^\dagger\phi$, and it is the double cover of the spatial rotation group $SO(3)$. The boosts, by contrast, are not unitary, and they do not preserve that inner product; this is the representation-theoretic expression of the non-compactness of the Lorentz group.
 
@@ -490,7 +490,7 @@ The spinor module carries three bilinear structures and one equivariant bilinear
 | $e_0=1,e_1,e_2,e_3$ | Quaternion basis, $e_k^2=-e_0$, $e_1e_2=e_3$ |
 | $i$ | Scalar imaginary, $i^2=-1$ |
 | $\Phi:\mathbb{B}\to M_2(\mathbb{C})$ | Matrix realization, $\Phi(e_k)=-i\sigma_k$ |
-| $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \det\Phi(\tilde{Q})$ | Norm form |
+| $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \det\Phi(\tilde{Q})$ | Biquaternion norm |
 | $S = \mathbb{C}^2$ | Spinor module (unique simple module), $\dim_{\mathbb{C}}S=2$ |
 | $V_1 = (\tfrac12,0)$ | Left-handed Weyl (defining) representation |
 | $\bar{S} = \overline{V_1} = (0,\tfrac12)$ | Right-handed Weyl (conjugate) representation |

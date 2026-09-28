@@ -13,7 +13,7 @@ $$
 
 the Hermitian case reading the same way with the form sesquilinear in the second variable and the alternating case with $\beta$ alternating; the symmetric, Hermitian and alternating forms give the three classical families. That is all that is taken from outside this article. The general construction of $O(V, g)$, $U(V, h)$ and $Sp(V, \omega)$ from a form, including the four families $A$, $B$, $C$, $D$ and the quaternionic unitary group, is not covered here. What is assumed here is the definition of a form and of its isometry group, and what is supplied here is: the explicit matrix conditions, the determinant constraints, the compactness and the centres, the realisation of $SU(2)$ as the unit quaternions, and the double covers $SU(2) \to SO(3)$ and $SU(2) \times SU(2) \to SO(4)$.
 
-Throughout, $R$ is a commutative ring with identity $1 \neq 0$ and $K$ a field; $\mathbb{K}$ is $\mathbb{R}$ or $\mathbb{C}$ when only those are meant. The quaternion algebra is $\mathbb{H}$ with basis $e_0 = 1, e_1, e_2, e_3$, $e_k^2 = -e_0$, the norm form is $N(q) = q \bar q$ and $\mathrm{Sc}$, $\mathrm{Vect}$ are the scalar and vector parts. No physics is invoked: the rotation groups appear here as groups of linear transformations preserving a form, never as symmetry groups of a physical system.
+Throughout, $R$ is a commutative ring with identity $1 \neq 0$ and $K$ a field; $\mathbb{K}$ is $\mathbb{R}$ or $\mathbb{C}$ when only those are meant. The quaternion algebra is $\mathbb{H}$ with basis $e_0 = 1, e_1, e_2, e_3$, $e_k^2 = -e_0$, the norm is $N(q) = q \bar q$ and $\mathrm{Sc}$, $\mathrm{Vect}$ are the scalar and vector parts. No physics is invoked: the rotation groups appear here as groups of linear transformations preserving a form, never as symmetry groups of a physical system.
 
 ## Matrices, Determinants and the Two Linear Groups
 
@@ -53,23 +53,23 @@ and $O(n) = O(n, \mathbb{R})$.
 
 **Proposition (matrix form).** $O(n, K) = \{A \in GL_n(K) : A^T A = I\}$, and equivalently the columns of $A$, and also the rows, form an orthonormal basis of $K^n$ for $g$.
 
-**Proof.** Computing in the standard basis, $g(Ae_i, Ae_j)$ is the $(i, j)$ entry of $A^T A$. The form is non-degenerate, so a map preserving it is determined by the Gram matrix of the images of a basis; hence $g(Ax, Ay) = g(x, y)$ for all $x, y$ if and only if $A^T A = I$. The entries of $A^T A$ are exactly the pairwise inner products of the columns, so $A^T A = I$ says the columns are orthonormal, and orthonormal columns form a basis because they are linearly independent over a field. The statement for rows is the same applied to $A^T$, which is orthogonal when $A$ is. $\square$
+**Proof.** Computing in the standard basis, $g(Ae_i, Ae_j)$ is the $(i, j)$ entry of $A^T A$. The form is non-degenerate, so a map preserving it is determined by the Gram matrix of the images of a basis; hence $g(Ax, Ay) = g(x, y)$ for all $x, y$ if and only if $A^T A = I$. The entries of $A^T A$ are exactly the pairwise inner products of the columns, so $A^T A = I$ says the columns are orthonormal, and orthonormal columns form a basis because they are linearly independent over a field. The statement for rows is the same applied to $A^T$, which is orthogonal when $A$ is.
 
 **Proposition (compactness).** $O(n)$ is a compact subgroup of $GL_n(\mathbb{R})$, and it is the isometry group of the unit sphere $S^{n-1} \subseteq \mathbb{R}^n$.
 
-**Proof.** The condition $A^T A = I$ says that the columns are unit vectors with pairwise zero inner product, so the $n^2$ entries of $A$ satisfy $\sum_{i} A_{ij}^2 = 1$ for each $j$; hence $O(n)$ is bounded in $M_n(\mathbb{R}) \cong \mathbb{R}^{n^2}$. It is closed because the entries of $A^T A$ are continuous functions of the entries of $A$ and $O(n)$ is their preimage at the identity matrix. A closed bounded subset of $\mathbb{R}^{n^2}$ is compact. For the second statement, orthogonal maps preserve the norm and hence the sphere; conversely an isometry $f$ of the sphere extends to $\mathbb{R}^n$ by $x \mapsto |x|\, f(x/|x|)$ for $x \neq 0$ and $0 \mapsto 0$, which preserves norms and hence, by polarisation, the inner product, so the extension is a linear isometry of $\mathbb{R}^n$. $\square$
+**Proof.** The condition $A^T A = I$ says that the columns are unit vectors with pairwise zero inner product, so the $n^2$ entries of $A$ satisfy $\sum_{i} A_{ij}^2 = 1$ for each $j$; hence $O(n)$ is bounded in $M_n(\mathbb{R}) \cong \mathbb{R}^{n^2}$. It is closed because the entries of $A^T A$ are continuous functions of the entries of $A$ and $O(n)$ is their preimage at the identity matrix. A closed bounded subset of $\mathbb{R}^{n^2}$ is compact. For the second statement, orthogonal maps preserve the norm and hence the sphere; conversely an isometry $f$ of the sphere extends to $\mathbb{R}^n$ by $x \mapsto |x|\, f(x/|x|)$ for $x \neq 0$ and $0 \mapsto 0$, which preserves norms and hence, by polarisation, the inner product, so the extension is a linear isometry of $\mathbb{R}^n$.
 
 ### The Determinant and the Special Orthogonal Group
 
 **Proposition.** If $A \in O(n, K)$ then $\det A = \pm 1$.
 
-**Proof.** $1 = \det I = \det(A^T A) = (\det A)^2$ in $K$, and the solutions of $x^2 = 1$ in a field are $\pm 1$. $\square$
+**Proof.** $1 = \det I = \det(A^T A) = (\det A)^2$ in $K$, and the solutions of $x^2 = 1$ in a field are $\pm 1$.
 
 **Definition.** The **special orthogonal group** is $SO(n, K) = O(n, K) \cap SL_n(K) = \{A \in O(n, K) : \det A = 1\}$.
 
 **Theorem.** $SO(n, K)$ is a normal subgroup of $O(n, K)$ of index $2$ when $-1 \neq 1$ in $K$, being the kernel of $\det : O(n, K) \to \{\pm 1\}$, and this homomorphism is surjective because $\operatorname{diag}(-1, 1, \ldots, 1)$ is orthogonal of determinant $-1$. Over $\mathbb{R}$, $SO(n)$ is connected and $O(n)$ has exactly two connected components; $SO(n)$ is the identity component.
 
-**Proof.** The kernel of a homomorphism is normal and the surjectivity is exhibited. For connectedness, every element of $SO(n)$ is a product of rotations of coordinate planes, and each rotation of a plane can be joined to the identity by a path inside that plane; this is the standard generation of $SO(n)$ by plane rotations, and it exhibits a path. A closed subgroup of index $2$ is both open and closed, so the components of $O(n)$ are $SO(n)$ and the other coset. $\square$
+**Proof.** The kernel of a homomorphism is normal and the surjectivity is exhibited. For connectedness, every element of $SO(n)$ is a product of rotations of coordinate planes, and each rotation of a plane can be joined to the identity by a path inside that plane; this is the standard generation of $SO(n)$ by plane rotations, and it exhibits a path. A closed subgroup of index $2$ is both open and closed, so the components of $O(n)$ are $SO(n)$ and the other coset.
 
 For $n = 2$ the group $SO(2)$ consists of the matrices $\begin{pmatrix} \cos \theta & -\sin \theta \\ \sin \theta & \cos \theta \end{pmatrix}$ and is isomorphic to the circle group $S^1 = U(1)$; for $n = 1$, $O(1) = \{\pm 1\}$ and $SO(1) = \{1\}$. Every element of $O(n)$ is a product of at most $n$ reflections of hyperplanes, a theorem of Cartan and Dieudonné, proved in the cited literature.
 
@@ -89,7 +89,7 @@ which is $\mathbb{C}$-linear in the second argument, conjugate-linear in the fir
 
 **Proposition (matrix form).** With $A^* = \overline{A}^{\,T}$ the conjugate transpose, $U(n) = \{A \in GL_n(\mathbb{C}) : A^* A = I\}$; equivalently the columns of $A$ are orthonormal for $h$. Moreover $\det A \in S^1$ for $A \in U(n)$, the determinant $\det : U(n) \to S^1$ is surjective, and $U(n)/SU(n) \cong S^1$.
 
-**Proof.** The $(i,j)$ entry of $A^* A$ is $h(Ae_i, Ae_j)$, so the argument of the orthogonal case applies with conjugation inserted: the form is non-degenerate and the Gram matrix determines the map. From $A^* A = I$ we get $1 = \det(A^*A) = \overline{\det A} \det A = |\det A|^2$, so $\det A \in S^1$. The map $\operatorname{diag}(\lambda, 1, \ldots, 1)$ is unitary of determinant $\lambda$ for every $\lambda \in S^1$, so the determinant is onto $S^1$, and $SU(n)$ is its kernel. $\square$
+**Proof.** The $(i,j)$ entry of $A^* A$ is $h(Ae_i, Ae_j)$, so the argument of the orthogonal case applies with conjugation inserted: the form is non-degenerate and the Gram matrix determines the map. From $A^* A = I$ we get $1 = \det(A^*A) = \overline{\det A} \det A = |\det A|^2$, so $\det A \in S^1$. The map $\operatorname{diag}(\lambda, 1, \ldots, 1)$ is unitary of determinant $\lambda$ for every $\lambda \in S^1$, so the determinant is onto $S^1$, and $SU(n)$ is its kernel.
 
 For $n = 1$, $U(1) = S^1$ and $SU(1) = \{1\}$.
 
@@ -97,11 +97,11 @@ For $n = 1$, $U(1) = S^1$ and $SU(1) = \{1\}$.
 
 **Theorem.** $U(n)$ is a compact connected subgroup of $GL_n(\mathbb{C})$, and $U(n) \cong (SU(n) \times U(1))/\mu_n$, where $\mu_n \subseteq U(1)$ is the group of $n$-th roots of unity embedded diagonally as scalar matrices.
 
-**Proof.** The entries satisfy the closed bounded conditions of the orthogonal case with conjugation and absolute values, so $U(n)$ is compact; connectedness follows because every unitary matrix is diagonalised by a unitary change of basis and the eigenvalues can be joined to $1$ along the circle. For the decomposition, let $A \in U(n)$ and $\lambda = \det A \in S^1$; choose $\mu \in S^1$ with $\mu^n = \lambda$ and write $A = \mu \cdot (\mu^{-1} A)$; the second factor is unitary of determinant $\mu^{-n}\lambda = 1$, hence lies in $SU(n)$. The pair $(\mu^{-1} A, \mu)$ is determined by $A$ up to multiplication by $(\omega^{-1}, \omega)$ with $\omega \in \mu_n$, which gives the asserted quotient. $\square$
+**Proof.** The entries satisfy the closed bounded conditions of the orthogonal case with conjugation and absolute values, so $U(n)$ is compact; connectedness follows because every unitary matrix is diagonalised by a unitary change of basis and the eigenvalues can be joined to $1$ along the circle. For the decomposition, let $A \in U(n)$ and $\lambda = \det A \in S^1$; choose $\mu \in S^1$ with $\mu^n = \lambda$ and write $A = \mu \cdot (\mu^{-1} A)$; the second factor is unitary of determinant $\mu^{-n}\lambda = 1$, hence lies in $SU(n)$. The pair $(\mu^{-1} A, \mu)$ is determined by $A$ up to multiplication by $(\omega^{-1}, \omega)$ with $\omega \in \mu_n$, which gives the asserted quotient.
 
 **Theorem (centres).** $Z(U(n)) = \{\lambda I : \lambda \in S^1\} \cong S^1$ and $Z(SU(n)) = \{\lambda I : \lambda^n = 1\} \cong \mathbb{Z}/n\mathbb{Z}$. In particular $Z(SU(2)) = \{\pm I\}$.
 
-**Proof.** If $A$ commutes with every unitary matrix it commutes with every diagonal unitary matrix, so $A$ is diagonal: comparing the $(i,j)$ entries of $AD = DA$ for a diagonal $D$ with distinct eigenvalues gives $A_{ij}(D_{jj} - D_{ii}) = 0$, hence $A_{ij} = 0$ for $i \neq j$, and diagonal unitaries with distinct eigenvalues exist in abundance. The same argument applies inside $SU(n)$, using diagonal unitaries of determinant $1$ with distinct entries, whose existence requires only that $n \geq 2$. A diagonal $A$ that commutes with a permutation matrix is unchanged by the corresponding permutation of its entries; for $n \geq 3$ a $3$-cycle of determinant $1$ lies in $SU(n)$ and moves any triple, so all diagonal entries of $A$ are equal, while for $n = 2$ the matrix $\begin{pmatrix} 0 & 1 \\ -1 & 0 \end{pmatrix} \in SU(2)$ forces $\operatorname{diag}(\lambda_1, \lambda_2)$ to have $\lambda_1 = \lambda_2$ by direct comparison. Hence $A = \lambda I$ in both groups, the unitarity gives $|\lambda| = 1$, and the additional condition $\det A = 1$ gives $\lambda^n = 1$. Conversely these matrices are central, and the maps $\lambda \mapsto \lambda I$ identify the centres with $S^1$ and with the group of $n$-th roots of unity. $\square$
+**Proof.** If $A$ commutes with every unitary matrix it commutes with every diagonal unitary matrix, so $A$ is diagonal: comparing the $(i,j)$ entries of $AD = DA$ for a diagonal $D$ with distinct eigenvalues gives $A_{ij}(D_{jj} - D_{ii}) = 0$, hence $A_{ij} = 0$ for $i \neq j$, and diagonal unitaries with distinct eigenvalues exist in abundance. The same argument applies inside $SU(n)$, using diagonal unitaries of determinant $1$ with distinct entries, whose existence requires only that $n \geq 2$. A diagonal $A$ that commutes with a permutation matrix is unchanged by the corresponding permutation of its entries; for $n \geq 3$ a $3$-cycle of determinant $1$ lies in $SU(n)$ and moves any triple, so all diagonal entries of $A$ are equal, while for $n = 2$ the matrix $\begin{pmatrix} 0 & 1 \\ -1 & 0 \end{pmatrix} \in SU(2)$ forces $\operatorname{diag}(\lambda_1, \lambda_2)$ to have $\lambda_1 = \lambda_2$ by direct comparison. Hence $A = \lambda I$ in both groups, the unitarity gives $|\lambda| = 1$, and the additional condition $\det A = 1$ gives $\lambda^n = 1$. Conversely these matrices are central, and the maps $\lambda \mapsto \lambda I$ identify the centres with $S^1$ and with the group of $n$-th roots of unity.
 
 The quotient $PSU(n) = SU(n)/Z(SU(n))$ is the **projective special unitary group**, and in the low-dimensional cases below it is a rotation group.
 
@@ -109,7 +109,7 @@ The quotient $PSU(n) = SU(n)/Z(SU(n))$ is the **projective special unitary group
 
 ### Quaternionic Hermitian Forms
 
-Let $\mathbb{H}$ be the quaternion algebra, with conjugation $\bar q$, norm form $N(q) = q \bar q = |q|^2$, and real part $\mathrm{Sc}(q) = \tfrac{1}{2}(q + \bar q)$. On $\mathbb{H}^n$ define
+Let $\mathbb{H}$ be the quaternion algebra, with conjugation $\bar q$, norm $N(q) = q \bar q = |q|^2$, and real part $\mathrm{Sc}(q) = \tfrac{1}{2}(q + \bar q)$. On $\mathbb{H}^n$ define
 
 $$
 h(x, y) = \sum_{i=1}^{n} \overline{x_i} y_i \in \mathbb{H},
@@ -127,7 +127,7 @@ the group of $\mathbb{H}$-linear maps of $\mathbb{H}^n$ preserving $h$.
 
 **Proposition.** $Sp(n)$ is a compact subgroup of $GL_n(\mathbb{H}) \cong GL_{4n}(\mathbb{R})$, the columns of $A \in Sp(n)$ are orthonormal for $h$, and $Sp(1)$ is the group of unit quaternions, hence is homeomorphic to the sphere $S^3$.
 
-**Proof.** The condition $A^*A = I$ says the columns are orthonormal for $h$; it is a closed condition in the $4n^2$ real coordinates and the diagonal entries $h(Ae_j, Ae_j) = 1$ bound the entries by $1$ in norm, so $Sp(n)$ is closed and bounded. For $n = 1$ the condition is $N(q) = 1$, and the unit sphere of $\mathbb{H} \cong \mathbb{R}^4$ is $S^3$. $\square$
+**Proof.** The condition $A^*A = I$ says the columns are orthonormal for $h$; it is a closed condition in the $4n^2$ real coordinates and the diagonal entries $h(Ae_j, Ae_j) = 1$ bound the entries by $1$ in norm, so $Sp(n)$ is closed and bounded. For $n = 1$ the condition is $N(q) = 1$, and the unit sphere of $\mathbb{H} \cong \mathbb{R}^4$ is $S^3$.
 
 ### Sp(n) Inside SU(2n)
 
@@ -135,7 +135,7 @@ Since $\mathbb{H}$ is a two-dimensional complex vector space, with $i \in \mathb
 
 **Theorem.** Under this identification $Sp(n) \subseteq SU(2n)$; that is, the complex determinant of the image of every element of $Sp(n)$ is $1$.
 
-**Proof.** The complex determinant is a continuous homomorphism $\det : Sp(n) \to S^1$, since the image lies in $U(2n)$. Its derivative at the identity is the trace of the complex $2n \times 2n$ matrix, which for the image of a quaternionic matrix $X$ is $2\,\mathrm{Sc}(\operatorname{tr}_{\mathbb{H}} X)$: the diagonal $2 \times 2$ block of $X_{ii}$ contributes the trace $2\,\mathrm{Sc}(X_{ii})$. The Lie algebra of $Sp(n)$ consists of the quaternionic matrices with $X^* = -X$, and for such a matrix $\operatorname{tr}_{\mathbb{H}} X$ is a pure quaternion, because $(\operatorname{tr} X)^* = \operatorname{tr}(X^*) = -\operatorname{tr} X$. Hence the trace vanishes on the Lie algebra and the determinant has derivative zero; since $Sp(n)$ is connected and is generated by exponentials of its Lie algebra, $\det \equiv 1$. $\square$
+**Proof.** The complex determinant is a continuous homomorphism $\det : Sp(n) \to S^1$, since the image lies in $U(2n)$. Its derivative at the identity is the trace of the complex $2n \times 2n$ matrix, which for the image of a quaternionic matrix $X$ is $2\,\mathrm{Sc}(\operatorname{tr}_{\mathbb{H}} X)$: the diagonal $2 \times 2$ block of $X_{ii}$ contributes the trace $2\,\mathrm{Sc}(X_{ii})$. The Lie algebra of $Sp(n)$ consists of the quaternionic matrices with $X^* = -X$, and for such a matrix $\operatorname{tr}_{\mathbb{H}} X$ is a pure quaternion, because $(\operatorname{tr} X)^* = \operatorname{tr}(X^*) = -\operatorname{tr} X$. Hence the trace vanishes on the Lie algebra and the determinant has derivative zero; since $Sp(n)$ is connected and is generated by exponentials of its Lie algebra, $\det \equiv 1$.
 
 So the compact symplectic group is a subgroup of the special unitary group: $Sp(1) = SU(2)$, and $Sp(n) \subseteq SU(2n)$ for every $n$.
 
@@ -162,7 +162,7 @@ $$
 \det \rho(q) = z \bar z + w \bar w = N(q) .
 $$
 
-**Proof.** Multiplicativity is the identity $(z + wj)(z' + w'j) = (zz' - w\bar w') + (zw' + w\bar z')j$, obtained from $jz' = \bar z' j$ and $j^2 = -1$, which is exactly the matrix product $\rho(z + wj)\rho(z' + w'j) = \rho((z + wj)(z' + w'j))$; the entries of the product matrix are $zz' - w\bar w'$, $zw' + w\bar z'$, $-\overline{zw' + w\bar z'}$ and $\overline{zz' - w\bar w'}$. So $\rho$ is a homomorphism, and it is injective because $q \neq 0$ has an inverse, namely $\bar q / N(q)$. The determinant is $z\bar z - w(-\bar w) = |z|^2 + |w|^2 = N(q)$. $\square$
+**Proof.** Multiplicativity is the identity $(z + wj)(z' + w'j) = (zz' - w\bar w') + (zw' + w\bar z')j$, obtained from $jz' = \bar z' j$ and $j^2 = -1$, which is exactly the matrix product $\rho(z + wj)\rho(z' + w'j) = \rho((z + wj)(z' + w'j))$; the entries of the product matrix are $zz' - w\bar w'$, $zw' + w\bar z'$, $-\overline{zw' + w\bar z'}$ and $\overline{zz' - w\bar w'}$. So $\rho$ is a homomorphism, and it is injective because $q \neq 0$ has an inverse, namely $\bar q / N(q)$. The determinant is $z\bar z - w(-\bar w) = |z|^2 + |w|^2 = N(q)$.
 
 **Example.** With the Pauli matrices
 
@@ -182,7 +182,7 @@ $$
 \mathbb{H}^1 \longrightarrow SU(2), \qquad \mathbb{H}^1 = S^3 .
 $$
 
-**Proof.** For $q \in \mathbb{H}^1$ the matrix $\rho(q)$ is unitary, since $\rho(q)^* \rho(q) = \rho(\bar q)\rho(q) = \rho(\bar q q) = \rho(1) = I$, and it has determinant $N(q) = 1$, so the image lies in $SU(2)$. Conversely, if $A = \begin{pmatrix} z & w \\ -\bar w & \bar z \end{pmatrix}$ is unitary of determinant $1$ then $|z|^2 + |w|^2 = 1$, so $A = \rho(q)$ with $q = z + wj$ of norm $1$. The map is a homeomorphism because it is a continuous bijection between compact Hausdorff spaces. $\square$
+**Proof.** For $q \in \mathbb{H}^1$ the matrix $\rho(q)$ is unitary, since $\rho(q)^* \rho(q) = \rho(\bar q)\rho(q) = \rho(\bar q q) = \rho(1) = I$, and it has determinant $N(q) = 1$, so the image lies in $SU(2)$. Conversely, if $A = \begin{pmatrix} z & w \\ -\bar w & \bar z \end{pmatrix}$ is unitary of determinant $1$ then $|z|^2 + |w|^2 = 1$, so $A = \rho(q)$ with $q = z + wj$ of norm $1$. The map is a homeomorphism because it is a continuous bijection between compact Hausdorff spaces.
 
 **Corollary.** $SU(2) \cong Sp(1) \cong \mathbb{H}^1 \cong S^3$; consequently $SU(2)$ is connected and simply connected, and its centre is $\{\pm I\}$, corresponding to the quaternions $\pm 1$.
 
@@ -202,7 +202,7 @@ $$
 
 is a continuous surjective homomorphism with kernel $\{\pm 1\}$. Hence $SO(3) \cong \mathbb{H}^1/\{\pm 1\} \cong SU(2)/\{\pm I\} = PSU(2)$.
 
-**Proof.** If $x$ is pure and $u$ is a unit then $u x \bar u$ is pure, because $\overline{u x \bar u} = u \bar x \bar u = -u x \bar u$, conjugation reversing the scalar sign; the norms agree, $N(ux\bar u) = N(u)N(x)N(u) = N(x)$, so $\varphi_u$ preserves the standard form of $\mathbb{R}^3$; and $\varphi$ is a homomorphism because the map is the conjugation action of the group of units on the algebra, which is multiplicative in $u$. The image lies in $SO(3)$ rather than merely in $O(3)$: the map $u \mapsto \varphi_u$ is continuous and $\mathbb{H}^1 = S^3$ is connected, so the image lies in the identity component. If $u$ lies in the kernel then $ux = xu$ for all pure $x$, in particular for $x = e_1, e_2, e_3$, so $u$ commutes with $e_1, e_2, e_3$ and hence lies in the centre of $\mathbb{H}$, which is $\mathbb{R}$; with $N(u) = 1$ this gives $u = \pm 1$. Thus the kernel has order two and the image is a compact connected subgroup of dimension $3$; as $SO(3)$ is connected of dimension $3$, the image is open and closed and therefore all of $SO(3)$. $\square$
+**Proof.** If $x$ is pure and $u$ is a unit then $u x \bar u$ is pure, because $\overline{u x \bar u} = u \bar x \bar u = -u x \bar u$, conjugation reversing the scalar sign; the norms agree, $N(ux\bar u) = N(u)N(x)N(u) = N(x)$, so $\varphi_u$ preserves the standard form of $\mathbb{R}^3$; and $\varphi$ is a homomorphism because the map is the conjugation action of the group of units on the algebra, which is multiplicative in $u$. The image lies in $SO(3)$ rather than merely in $O(3)$: the map $u \mapsto \varphi_u$ is continuous and $\mathbb{H}^1 = S^3$ is connected, so the image lies in the identity component. If $u$ lies in the kernel then $ux = xu$ for all pure $x$, in particular for $x = e_1, e_2, e_3$, so $u$ commutes with $e_1, e_2, e_3$ and hence lies in the centre of $\mathbb{H}$, which is $\mathbb{R}$; with $N(u) = 1$ this gives $u = \pm 1$. Thus the kernel has order two and the image is a compact connected subgroup of dimension $3$; as $SO(3)$ is connected of dimension $3$, the image is open and closed and therefore all of $SO(3)$.
 
 **Corollary.** The homomorphism $\varphi$ is a two-to-one covering, the two preimages of a rotation being antipodal unit quaternions $u$ and $-u$; consequently $SO(3)$ is homeomorphic to the quotient of $S^3$ by the antipodal map, that is, to the real projective space $\mathbb{RP}^3$, and $\pi_1(SO(3)) \cong \mathbb{Z}/2\mathbb{Z}$.
 
@@ -210,7 +210,7 @@ is a continuous surjective homomorphism with kernel $\{\pm 1\}$. Hence $SO(3) \c
 
 **Proposition (Rodrigues form).** If $u = \cos(\theta/2) + \sin(\theta/2) n$ with $n$ a pure unit quaternion, then $\varphi_u$ is the rotation about the axis $n$ through the angle $\theta$.
 
-**Proof.** Conjugation by $u$ fixes $u$ itself and hence fixes $n = u - \mathrm{Sc}(u)$ up to normalisation, so the axis is $n$. For the angle, the trace of the matrix of $\varphi_u$ on the pure part is computed from the multiplication table: writing $a = \mathrm{Sc}(u)$ and $v = \mathrm{Vect}(u)$ with $N(v) = 1 - a^2$, the diagonal entries of the matrix are $a^2 + v_1^2 - v_2^2 - v_3^2$, $a^2 - v_1^2 + v_2^2 - v_3^2$ and $a^2 - v_1^2 - v_2^2 + v_3^2$, whose sum is $3a^2 - N(v) = 4a^2 - 1$. For a rotation through $\theta$ the trace is $1 + 2\cos \theta$, so $4a^2 - 1 = 1 + 2\cos \theta$, that is, $2a^2 - 1 = \cos \theta$, which is $\cos \theta = 2\cos^2(\theta/2) - 1$ with $a = \cos(\theta/2)$. $\square$
+**Proof.** Conjugation by $u$ fixes $u$ itself and hence fixes $n = u - \mathrm{Sc}(u)$ up to normalisation, so the axis is $n$. For the angle, the trace of the matrix of $\varphi_u$ on the pure part is computed from the multiplication table: writing $a = \mathrm{Sc}(u)$ and $v = \mathrm{Vect}(u)$ with $N(v) = 1 - a^2$, the diagonal entries of the matrix are $a^2 + v_1^2 - v_2^2 - v_3^2$, $a^2 - v_1^2 + v_2^2 - v_3^2$ and $a^2 - v_1^2 - v_2^2 + v_3^2$, whose sum is $3a^2 - N(v) = 4a^2 - 1$. For a rotation through $\theta$ the trace is $1 + 2\cos \theta$, so $4a^2 - 1 = 1 + 2\cos \theta$, that is, $2a^2 - 1 = \cos \theta$, which is $\cos \theta = 2\cos^2(\theta/2) - 1$ with $a = \cos(\theta/2)$.
 
 The proposition explains the two-to-one cover: the quaternions $u$ and $-u$ give the same rotation, and a rotation through $2\pi$ about any axis corresponds to $\theta = 2\pi$, hence to $u = \cos \pi + \sin \pi \, n = -1$, which is not the identity of $\mathbb{H}^1$; the path $t \mapsto \cos(\pi t) + \sin(\pi t) n$ in $S^3$ joins $1$ to $-1$ and closes only after two full turns.
 
@@ -238,7 +238,7 @@ $$
 SO(4) \cong (\mathbb{H}^1 \times \mathbb{H}^1)/\{\pm(1,1)\} \cong (SU(2) \times SU(2))/\{\pm(I,I)\}.
 $$
 
-**Proof.** The map $\psi_{(u,v)}$ preserves the norm because $N(uq\bar v) = N(u)N(q)N(v) = N(q)$, so it is orthogonal; it is the composite of left multiplication by $u$ and right multiplication by $\bar v$, and each of these has real determinant $1$: the maps $u \mapsto L_u$ and $v \mapsto R_v$ are continuous from the connected group $\mathbb{H}^1 = S^3$ into the orthogonal group $O(4)$ of $\mathbb{H} \cong \mathbb{R}^4$, so their images lie in the identity component $SO(4)$. The map is a homomorphism because each factor acts multiplicatively. Its kernel consists of the pairs with $uq = qv$ for all $q$; taking $q = 1$ gives $u = v$, and then $uq = qu$ for all $q$, so $u$ is central and, being a unit of norm $1$, is $\pm 1$. Thus the kernel has order $2$ and the image is a connected compact subgroup of dimension $6$, equal to $\dim SO(4)$; a connected subgroup of a connected group of the same dimension is open and closed, so the image is all of $SO(4)$. $\square$
+**Proof.** The map $\psi_{(u,v)}$ preserves the norm because $N(uq\bar v) = N(u)N(q)N(v) = N(q)$, so it is orthogonal; it is the composite of left multiplication by $u$ and right multiplication by $\bar v$, and each of these has real determinant $1$: the maps $u \mapsto L_u$ and $v \mapsto R_v$ are continuous from the connected group $\mathbb{H}^1 = S^3$ into the orthogonal group $O(4)$ of $\mathbb{H} \cong \mathbb{R}^4$, so their images lie in the identity component $SO(4)$. The map is a homomorphism because each factor acts multiplicatively. Its kernel consists of the pairs with $uq = qv$ for all $q$; taking $q = 1$ gives $u = v$, and then $uq = qu$ for all $q$, so $u$ is central and, being a unit of norm $1$, is $\pm 1$. Thus the kernel has order $2$ and the image is a connected compact subgroup of dimension $6$, equal to $\dim SO(4)$; a connected subgroup of a connected group of the same dimension is open and closed, so the image is all of $SO(4)$.
 
 **Corollary.** $SO(4)$ is not simple: the image of each factor is a normal subgroup isomorphic to $S^3/\{\pm 1\} = SU(2)/\{\pm I\} = SO(3)$, the two images intersect in $\{\pm I\}$ and together generate $SO(4)$, and the quotient by either of them is the other factor, $S^3 = SU(2)$; the quotient by the centre $\{\pm I\}$ is $SO(3) \times SO(3)$.
 
@@ -303,7 +303,7 @@ The representations of the quaternion algebra make the lowest cases explicit. Th
 | $PSU(n)$ | $SU(n)/Z(SU(n))$ |
 | $Sp(n)$ | Compact symplectic (quaternionic unitary) group, $A^*A = I$ over $\mathbb{H}$ |
 | $Sp(2n, K)$ | Symplectic group of an alternating form, as in the companion article |
-| $\mathbb{H}$, $N(q) = q\bar q$, $\mathrm{Sc}$, $\mathrm{Vect}$ | Quaternions, norm form, scalar and vector parts |
+| $\mathbb{H}$, $N(q) = q\bar q$, $\mathrm{Sc}$, $\mathrm{Vect}$ | Quaternions, norm, scalar and vector parts |
 | $\mathbb{H}^1 = S^3$ | Unit quaternions; also written $Sp(1)$ |
 | $\rho(z + wj) = \begin{pmatrix} z & w \\ -\bar w & \bar z \end{pmatrix}$ | Representation of $\mathbb{H}$ in $M_2(\mathbb{C})$, determinant $N(q)$ |
 | $\sigma_x, \sigma_y, \sigma_z$ | Pauli matrices; $\rho(e_1) = i\sigma_z$, $\rho(e_2) = i\sigma_y$, $\rho(e_3) = i\sigma_x$ |

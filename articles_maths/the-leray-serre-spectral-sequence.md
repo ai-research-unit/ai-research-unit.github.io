@@ -76,7 +76,7 @@ $$
 E^1_{p,q} \cong C_p^{\mathrm{CW}}\bigl(B; H_q(F;R)\bigr),
 $$
 
-the cellular chains of $B$ with coefficients in $H_q(F)$, and the differential $d^1$ is the cellular boundary twisted by the action of $\pi_1(B)$; when the action is trivial, $E^2_{p,q} = H_p(B;H_q(F;R))$ as stated. Convergence is the theorem of Part I applied to the Serre filtration. $\square$
+the cellular chains of $B$ with coefficients in $H_q(F)$, and the differential $d^1$ is the cellular boundary twisted by the action of $\pi_1(B)$; when the action is trivial, $E^2_{p,q} = H_p(B;H_q(F;R))$ as stated. Convergence is the theorem of Part I applied to the Serre filtration.
 
 **Remark.** The triviality of the action of $\pi_1(B)$ on $H_q(F;R)$ holds automatically when $B$ is simply connected, and when $R = \mathbb{Q}$ and the action is finite it may be replaced by the invariant and coinvariant parts. The general statement with local coefficients is recorded at the end of the article.
 
@@ -94,7 +94,7 @@ obtained by projecting the filtration quotients. When $B$ is path-connected and 
 
 **Theorem.** The edge homomorphisms coincide with the maps induced by the inclusion $F \hookrightarrow E$ and the projection $p : E \to B$.
 
-*Proof.* A cycle whose simplices all project to the basepoint is a cycle in the fibre, and a cycle whose simplices project into the $0$-skeleton... more precisely, the projection of the filtration identifies the $(0,q)$-entry with the chains in $F$, and the identification of the $(p,0)$-entry passes to the base's cellular chains through $p_\#$. Naturality of the filtration under the inclusion and the projection gives the identification on homology. $\square$
+*Proof.* A cycle whose simplices all project to the basepoint is a cycle in the fibre, and a cycle whose simplices project into the $0$-skeleton... more precisely, the projection of the filtration identifies the $(0,q)$-entry with the chains in $F$, and the identification of the $(p,0)$-entry passes to the base's cellular chains through $p_\#$. Naturality of the filtration under the inclusion and the projection gives the identification on homology.
 
 ### The Five-Term and Low-Degree Exact Sequences
 
@@ -110,7 +110,7 @@ $$
 0 \to H^1(B;R) \to H^1(E;R) \to H^1(F;R)^{B} \xrightarrow{\ \tau\ } H^2(B;R) \to H^2(E;R).
 $$
 
-*Proof.* These are the statements that in the spectral sequence of a first quadrant double complex all differentials into and out of the entries of total degree $\leq 2$ vanish or are the only ones present; reading off $E^\infty$ from $E^2$ and using the filtration gives the sequences. $\square$
+*Proof.* These are the statements that in the spectral sequence of a first quadrant double complex all differentials into and out of the entries of total degree $\leq 2$ vanish or are the only ones present; reading off $E^\infty$ from $E^2$ and using the filtration gives the sequences.
 
 **Definition.** The **transgression** of the spectral sequence of a fibration is the map that a class of the fibre acquires when it survives long enough to receive a differential. In the cohomological indexing $E_r^{p,q} = H^p(B;H^q(F))$, a class of $E_2^{0,q}$ that is killed by $d_2, d_3, \ldots, d_q$ survives to the entry $E_{q+1}^{0,q}$, and $d_{q+1}$ then carries it to $E_{q+1}^{q+1,0}$; this assignment is the transgression
 
@@ -144,7 +144,7 @@ $$
 
 the **Wang sequence** of the fibration; the map $\partial$ is the differential $d^n$ in the indexing of the sequence. The sequence does not split in general: for the Hopf fibration the term $H_1(E) = H_1(S^3)$ vanishes while $H_1(F) \oplus H_{1-n}(F) = H_1(S^1) \cong R$, so $H_*(E)$ is not the direct sum of the two columns.
 
-*Proof.* The $E^2$ page has $E^2_{p,q} = H_p(S^n;H_q(F))$, which is nonzero only for $p = 0$ and $p = n$; hence the only possibly nonzero differential is $d^n : E^n_{n,q} \to E^n_{0,q+n-1}$, and the spectral sequence collapses at $E^{n+1} = E^\infty$. Reading the convergence off the filtration gives the exact sequence. $\square$
+*Proof.* The $E^2$ page has $E^2_{p,q} = H_p(S^n;H_q(F))$, which is nonzero only for $p = 0$ and $p = n$; hence the only possibly nonzero differential is $d^n : E^n_{n,q} \to E^n_{0,q+n-1}$, and the spectral sequence collapses at $E^{n+1} = E^\infty$. Reading the convergence off the filtration gives the exact sequence.
 
 **Example (the Hopf fibration).** For $F = S^1$, $E = S^3$, $B = S^2$ and $n = 2$, the Wang sequence is
 
@@ -202,7 +202,7 @@ $$
 
 induced by the cross product and the multiplication of $H^*(F;R)$. The product on $E_\infty$ induces the cup product on $H^*(E;R)$.
 
-*Proof sketch.* The product is induced by the Eilenberg–Zilber map of *Cup and Cap Products* applied to the filtered complexes: $\Xi$ is compatible with the filtrations because the product of a simplex projecting to $B^{(p)}$ with one projecting to $B^{(p')}$ projects to $B^{(p+p')}$. The Leibniz rule is the derivation property of the differential, and the identification on $E_2$ uses the Künneth theorem of *Cup and Cap Products* for the tensor product of the base's cochains with $H^*(F)$. $\square$
+*Proof sketch.* The product is induced by the Eilenberg–Zilber map of *Cup and Cap Products* applied to the filtered complexes: $\Xi$ is compatible with the filtrations because the product of a simplex projecting to $B^{(p)}$ with one projecting to $B^{(p')}$ projects to $B^{(p+p')}$. The Leibniz rule is the derivation property of the differential, and the identification on $E_2$ uses the Künneth theorem of *Cup and Cap Products* for the tensor product of the base's cochains with $H^*(F)$.
 
 **Corollary.** If the coefficient module $H^*(F;R)$ is free over $R$ and the spectral sequence degenerates, then $E_2 = E_\infty = H^*(B;R)\otimes_R H^*(F;R)$ by the universal coefficient theorem, so $H^*(E;R)$ is the associated graded of a filtration of that tensor product, and the edge homomorphisms assemble into the successive quotients of the filtration. For a fibration $F \to E \to B$ with $B$ simply connected and $R$ a field, the multiplicativity of the spectral sequence makes the computation of $H^*(E;R)$ from the $E_2$ page a computation of rings and not merely of groups.
 

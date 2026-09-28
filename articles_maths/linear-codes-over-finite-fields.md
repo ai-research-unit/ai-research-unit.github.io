@@ -30,7 +30,7 @@ a subspace of dimension $n-k$, so that $C^\perp$ is an $[n,n-k,d^\perp]$-code fo
 
 **(c)** $C^{\perp\perp} = C$, and $\dim C + \dim C^\perp = n$.
 
-**Proof.** (a) is the definition of $d$ applied to the difference of two codewords. (b) and (c) are linear algebra over a field, using that the pairing $\sum_iv_iw_i$ is nondegenerate; the finite-field input is only the existence of the field, from *Finite Fields*. $\square$
+**Proof.** (a) is the definition of $d$ applied to the difference of two codewords. (b) and (c) are linear algebra over a field, using that the pairing $\sum_iv_iw_i$ is nondegenerate; the finite-field input is only the existence of the field, from *Finite Fields*.
 
 **Example ($\mathbb{F}_2^n$ and the zero code).** The whole space $\mathbb{F}_2^n$ is an $[n,n,1]$-code with dual the zero code; the zero code has parameters $[n,0,\cdot]$. The repetition code $\{0, (1,1,\ldots,1)\}$ is an $[n,1,n]$-code, and its dual, the even-weight code $\{v : \sum v_i = 0\}$, is $[n,n-1,2]$.
 
@@ -38,7 +38,7 @@ a subspace of dimension $n-k$, so that $C^\perp$ is an $[n,n-k,d^\perp]$-code fo
 
 **Theorem (Singleton bound).** Every $[n,k,d]_q$-code satisfies $d \leq n-k+1$; a code attaining the bound is called **MDS**; the abbreviation is the classical one and its expansion refers to the metric reading of the weight, which belongs to Part II, so it is used here only as a name.
 
-**Proof.** Delete $d-1$ coordinates from the code: the projection $\mathbb{F}_q^n \to \mathbb{F}_q^{n-d+1}$ is injective on $C$, since a nonzero codeword of weight $< d$ cannot vanish on $n-d+1$ coordinates — it has at most $d-1$ nonzero coordinates, hence vanishes on at least $n-d+1$ of them. Hence $k \leq n-d+1$. $\square$
+**Proof.** Delete $d-1$ coordinates from the code: the projection $\mathbb{F}_q^n \to \mathbb{F}_q^{n-d+1}$ is injective on $C$, since a nonzero codeword of weight $< d$ cannot vanish on $n-d+1$ coordinates — it has at most $d-1$ nonzero coordinates, hence vanishes on at least $n-d+1$ of them. Hence $k \leq n-d+1$.
 
 **Theorem (Hamming bound and perfect codes).** For an $[n,k,d]_q$-code with $d = 2t+1$, writing $V = \sum_{i=0}^{t}\binom{n}{i}(q-1)^i$ for the number of words agreeing with a fixed word in at least $n-t$ coordinates,
 
@@ -48,13 +48,13 @@ $$
 
 with equality exactly when every word of $\mathbb{F}_q^n$ agrees with some codeword in at least $n-t$ coordinates; such a code is called **perfect**.
 
-**Proof.** The sets of words agreeing with a codeword in at least $n-t$ coordinates are disjoint, by the same subtraction argument as in part (a) of the previous proposition, and each has $V$ elements; counting them all inside $\mathbb{F}_q^n$ gives the inequality, and the equality case is immediate. $\square$
+**Proof.** The sets of words agreeing with a codeword in at least $n-t$ coordinates are disjoint, by the same subtraction argument as in part (a) of the previous proposition, and each has $V$ elements; counting them all inside $\mathbb{F}_q^n$ gives the inequality, and the equality case is immediate.
 
 **Example.** For the binary Hamming code of length $7$ and minimum weight $3$ (constructed below), $q^k = 16$, $t = 1$, $V = 1+7 = 8$, and $16\cdot8 = 128 = 2^7$: the code is perfect. For the binary Golay code of length $23$ and minimum weight $7$, $q^k = 2^{12}$, $t = 3$, $V = 1+23+\binom{23}{2}+\binom{23}{3} = 1+23+253+1771 = 2048 = 2^{11}$, and $2^{12}\cdot2^{11} = 2^{23}$: the Golay code is perfect as well.
 
 **Theorem (Gilbert–Varshamov bound).** For every $n,q$ and every $d$ with $\sum_{i=0}^{d-2}\binom{n-1}{i}(q-1)^i < q^{n-k}$ there exists an $[n,k,d']_q$-code with $d' \geq d$. Equivalently, if $M$ is the least integer with $q^{M} > \sum_{i=0}^{d-2}\binom{n-1}{i}(q-1)^i$, then a code of length $n$ and minimum weight at least $d$ exists with $k = n-M$, that is, with $k \geq n-\log_q\left(\sum_{i=0}^{d-2}\binom{n-1}{i}(q-1)^i\right) - 1$.
 
-**Proof.** Build a parity check matrix column by column in $\mathbb{F}_q^{n-k}$: a word of weight at most $d-1$ in the kernel corresponds to a linear dependence among at most $d-1$ columns, so it suffices that the span of any $d-2$ chosen columns avoid the next one. The number of vectors spanned by at most $d-2$ columns, counted by the number of nonzero coefficients, is at most $\sum_{i=0}^{d-2}\binom{n-1}{i}(q-1)^i$, so as long as this is less than $q^{n-k}$ a column outside the span exists. $\square$
+**Proof.** Build a parity check matrix column by column in $\mathbb{F}_q^{n-k}$: a word of weight at most $d-1$ in the kernel corresponds to a linear dependence among at most $d-1$ columns, so it suffices that the span of any $d-2$ chosen columns avoid the next one. The number of vectors spanned by at most $d-2$ columns, counted by the number of nonzero coefficients, is at most $\sum_{i=0}^{d-2}\binom{n-1}{i}(q-1)^i$, so as long as this is less than $q^{n-k}$ a column outside the span exists.
 
 ---
 
@@ -70,7 +70,7 @@ $$
 
 is an $[n,k,n-k+1]_q$-code, hence MDS, of dimension $k$ and minimum weight exactly $n-k+1$.
 
-**Proof.** The evaluation map is injective on $\mathbb{F}_q[x]_{<k}$ by the root bound, giving dimension $k$; a nonzero polynomial of degree $<k$ vanishes in at most $k-1$ of the points of $S$, so a nonzero codeword has at most $k-1$ zero coordinates, hence weight at least $n-k+1$; and a polynomial vanishing exactly at $k-1$ of the points exists, so the bound is attained. The Singleton bound gives the same value from above. $\square$
+**Proof.** The evaluation map is injective on $\mathbb{F}_q[x]_{<k}$ by the root bound, giving dimension $k$; a nonzero polynomial of degree $<k$ vanishes in at most $k-1$ of the points of $S$, so a nonzero codeword has at most $k-1$ zero coordinates, hence weight at least $n-k+1$; and a polynomial vanishing exactly at $k-1$ of the points exists, so the bound is attained. The Singleton bound gives the same value from above.
 
 **Example.** Over $\mathbb{F}_7$ with $S = \{0,1,2,3,4,5,6\}$ and $k = 3$: the Reed–Solomon code $[7,3,5]_7$ has $7^3 = 343$ words and minimum weight $5$; the code obtained by taking the polynomials of degree $<3$ with coefficients summing to zero has $49$ words and is a subcode. Shortened and punctured versions of Reed–Solomon codes are the ones used in practice, and the general construction with $S$ a subset of a larger field is the **generalized Reed–Solomon** code.
 
@@ -90,7 +90,7 @@ $$
 
 so that the weight distribution of the dual code is determined by that of $C$.
 
-**Proof sketch.** The enumerator is a sum over the codewords of a product over the coordinates, and the Fourier expansion of the indicator of a subspace over $\mathbb{F}_q$ — that is, the character sum $\sum_{w}\psi(w\cdot v)$ — transforms the sum over $C$ into a sum over $C^\perp$; for $q = 2$ the characters are $\pm1$ and the substitution is the displayed one. $\square$
+**Proof sketch.** The enumerator is a sum over the codewords of a product over the coordinates, and the Fourier expansion of the indicator of a subspace over $\mathbb{F}_q$ — that is, the character sum $\sum_{w}\psi(w\cdot v)$ — transforms the sum over $C$ into a sum over $C^\perp$; for $q = 2$ the characters are $\pm1$ and the substitution is the displayed one.
 
 **Example ($[7,4,3]$ and its dual).** The binary linear code with the parity check matrix whose columns are the seven nonzero vectors of $\mathbb{F}_2^3$ is a $[7,4,3]$-code, the **Hamming code**. Its weight distribution, computed by listing its sixteen words, is
 
@@ -118,13 +118,13 @@ $$
 
 is a product of fields, the $f_i$ being the distinct irreducible factors of $x^n-1$; the dimension of the cyclic code attached to a divisor $g = \prod_{i\in I}f_i$ is $\sum_{i\notin I}\deg f_i$.
 
-**Proof.** Multiplication by $x$ in $R_n$ is the cyclic shift, so the cyclic codes are the ideals; $R_n$ is a quotient of the principal ideal domain $\mathbb{F}_q[x]$, hence every ideal is principal and is generated by a divisor of $x^n-1$; the Chinese remainder theorem provides the product decomposition when $x^n-1$ is squarefree, which by the derivative criterion of *Polynomial Rings and Rational Functions* holds exactly when $\gcd(n,q)=1$. $\square$
+**Proof.** Multiplication by $x$ in $R_n$ is the cyclic shift, so the cyclic codes are the ideals; $R_n$ is a quotient of the principal ideal domain $\mathbb{F}_q[x]$, hence every ideal is principal and is generated by a divisor of $x^n-1$; the Chinese remainder theorem provides the product decomposition when $x^n-1$ is squarefree, which by the derivative criterion of *Polynomial Rings and Rational Functions* holds exactly when $\gcd(n,q)=1$.
 
 **Example ($[7,4,3]$ as a cyclic code).** Over $\mathbb{F}_2$ with $n = 7$: $x^7-1 = (x+1)(x^3+x+1)(x^3+x^2+1)$, and the cyclic code generated by $g = x^3+x+1$ has dimension $7-3 = 4$ and is the Hamming code of the previous section; the code generated by $x+1$ is the even-weight code $[7,6,2]$, and the code generated by the product $(x^3+x+1)(x^3+x^2+1)$ is the repetition code $[7,1,7]$. The dual of the Hamming code is generated by the polynomial $(x^7-1)/g$, of degree $3$, and is the $[7,3,4]$ simplex code.
 
 **Example (BCH codes).** Let $n$ be coprime to $q$, let $\alpha$ be a primitive $n$-th root of unity in an extension field, and let $\delta \geq 2$. The **BCH code** of designed weight $\delta$ is the cyclic code whose generator is the least common multiple of the minimal polynomials over $\mathbb{F}_q$ of $\alpha, \alpha^2, \ldots, \alpha^{\delta-1}$; its minimum weight is at least $\delta$, by the BCH bound, and its dimension is at least $n-m(\delta-1)$ where $m$ is the degree of the field containing $\alpha$ over $\mathbb{F}_q$. For $q=2$, $n = 2^m-1$ and $\delta = 3$ one obtains the Hamming codes; the binary Golay code $[23,12,7]$ is the BCH code with $n = 23$, $\delta = 5$ and dimension $12$; the ternary Golay code is $[11,6,5]$.
 
-**Example (algebraic-geometry codes).** Let $C$ be a nonsingular curve of genus $g$ over $\mathbb{F}_q$ with $n$ distinct rational points $P_1,\ldots,P_n$, let $G$ be a divisor on $C$ with $\operatorname{supp}G \cap \{P_i\} = \emptyset$ and $\deg G < n$, and let $L(G)$ be the space of functions whose poles are bounded by $G$. Evaluating a basis of $L(G)$ at the points $P_1,\ldots,P_n$ gives a linear code of length $n$ and dimension $\ell(G)-\ell(G-\sum_iP_i) \geq \deg G+1-g$, by the Riemann–Roch theorem of *The Riemann–Roch Theorem for Curves*, and its minimum weight is at least $n-\deg G$, since a nonzero function in $L(G)$ has at most $\deg G$ zeros among the $n$ points. For $g = 0$ and $G = (k-1)\mathfrak{p}_\infty$ these are the Reed–Solomon codes above; for suitable families of curves of growing genus they give sequences of codes whose parameters approach the Gilbert–Varshamov bound, and for $q \geq 49$ they exceed it, a theorem of Tsfasman, Vlăduț and Zink. The asymptotic comparison of such families belongs to information theory and is not made here.
+**Example (algebraic-geometry codes).** Let $C$ be a nonsingular curve of genus $g$ over $\mathbb{F}_q$ with $n$ distinct rational points $P_1,\ldots,P_n$, let $G$ be a divisor on $C$ with $\operatorname{supp}G \cap \{P_i\} = \emptyset$ and $\deg G < n$, and let $L(G)$ be the space of functions whose poles are bounded by $G$. Evaluating a basis of $L(G)$ at the points $P_1,\ldots,P_n$ gives a linear code of length $n$ and dimension $\ell(G)-\ell(G-\sum_iP_i) \geq \deg G+1-g$, by the Riemann–Roch theorem of *The Riemann–Roch Theorem for Curves*, and its minimum weight is at least $n-\deg G$, since a nonzero function in $L(G)$ has at most $\deg G$ zeros among the $n$ points. For $g = 0$ and $G = (k-1)\mathrm{P}_\infty$ these are the Reed–Solomon codes above; for suitable families of curves of growing genus they give sequences of codes whose parameters approach the Gilbert–Varshamov bound, and for $q \geq 49$ they exceed it, a theorem of Tsfasman, Vlăduț and Zink. The asymptotic comparison of such families belongs to information theory and is not made here.
 
 ---
 
@@ -137,7 +137,7 @@ $$
 
 **Theorem (Reed–Muller parameters).** $\operatorname{RM}_q(r,m)$ is a linear code of length $q^m$ and dimension $\sum_{j=0}^{r}\sum_{i=0}^{\lfloor j/q\rfloor}(-1)^i\binom{m}{i}\binom{j-iq+m-1}{m-1}$, and for $r < q$ its minimum weight is $(q-r)q^{m-1}$; in particular over $\mathbb{F}_2$, $\operatorname{RM}(r,m)$ has length $2^m$, dimension $\sum_{i=0}^{r}\binom{m}{i}$ and minimum weight $2^{m-r}$.
 
-**Proof sketch.** The dimension is the dimension of the space of polynomials of degree at most $r$ modulo those vanishing on $\mathbb{F}_q^m$, computed by the reduction of monomials modulo $x_i^q-x_i$; the minimum weight is computed by bounding the number of zeros of a polynomial of given degree on $\mathbb{F}_q^m$, using the Combinatorial Nullstellensatz and its degree estimates. $\square$
+**Proof sketch.** The dimension is the dimension of the space of polynomials of degree at most $r$ modulo those vanishing on $\mathbb{F}_q^m$, computed by the reduction of monomials modulo $x_i^q-x_i$; the minimum weight is computed by bounding the number of zeros of a polynomial of given degree on $\mathbb{F}_q^m$, using the Combinatorial Nullstellensatz and its degree estimates.
 
 **Example.** $\operatorname{RM}(1,3)$ over $\mathbb{F}_2$ has length $8$, dimension $1+3 = 4$ and minimum weight $4$: it is the extended Hamming code $[8,4,4]$ of the example above, as the degree-one polynomials in three variables are the affine linear functions, of which the nonzero ones vanish on exactly four points. Its dual is $\operatorname{RM}(m-1-r,m) = \operatorname{RM}(1,3)$, so the extended Hamming code is self-dual.
 

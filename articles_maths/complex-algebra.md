@@ -49,25 +49,13 @@ The notation $i$ is chosen deliberately. In some of the older literature, the im
 
 **Associative.** Complex multiplication is associative: $(Z W) U = Z (W U)$.
 
-**Division algebra.** Every nonzero complex number has a multiplicative inverse. The inverse is
+**Division algebra.** Every nonzero complex number has a multiplicative inverse, and there are no zero divisors. The conjugation is
 
 $$
-Z^{-1} = \frac{\bar{Z}}{|Z|^2},
+\bar{Z} = a - i b,
 $$
 
-where
-
-$$
-\bar{Z} = a - i b
-$$
-
-is the **complex conjugate**, and
-
-$$
-|Z|^2 = Z \bar{Z} = a^2 + b^2
-$$
-
-is the **norm squared**. The norm is multiplicative: $|Z W| = |Z| |W|$.
+and the inverse is built from it with the norm. The norm is a form and a distance, a structure of the layer above this one, and the inverse formula belongs to the companion article *Complex Norm and Invertibility*; the algebra layer records only that the inverse exists.
 
 **Frobenius theorem.** The complex algebra is one of only three finite-dimensional associative real division algebras, the others being $\mathbb{R}$ and $\mathbb{H}$. In fact, $\mathbb{C}$ is the only one that is commutative but not ordered.
 
@@ -79,7 +67,7 @@ $$
 Z W = (a c - b d) + (a d + b c) i, \qquad Z = a + i b, \quad W = c + i d.
 $$
 
-This is the formula for the product in the algebra, written in real coordinates. There is no dot product and no cross product in this expression, because $\mathbb{C}$ is commutative and two-dimensional. The multiplication is the only operation, and it encodes both a rotation and a scaling of the plane.
+This is the formula for the product in the algebra, written in real coordinates. There is no dot product and no cross product in this expression, because $\mathbb{C}$ is commutative and two-dimensional. The multiplication is the only operation of the algebra; the reading of it as a rotation and a scaling of the plane is a geometric one, made in the companion article *Rotations and Reflections in the Complex Plane*.
 
 ## Complex Algebra
 
@@ -212,85 +200,7 @@ This is the same decomposition as above, written in terms of the eigenspaces of 
 
 ## Quadratic Forms and Inner Product
 
-### The Norm Form
-
-The **norm form** of a complex number $Z$ is
-
-$$
-N(Z) = Z \bar{Z} = a^2 + b^2,
-$$
-
-where $\bar{Z}$ is the complex conjugate. It is a non-negative real number, and it vanishes if and only if $Z = 0$. It is a genuine positive-definite quadratic form.
-
-The norm form is **multiplicative**:
-
-$$
-N(Z W) = N(Z) N(W).
-$$
-
-This is the statement that $|Z W|^2 = |Z|^2 |W|^2$, which follows from the multiplicativity of the complex norm.
-
-### The Hermitian Form
-
-The **Hermitian form** of a complex number $Z$ is
-
-$$
-Z \bar{Z} = a^2 + b^2.
-$$
-
-It coincides with the norm form, because $\mathbb{C}$ is commutative and the conjugation is the only non-trivial involution. It is a non-negative real number, and it vanishes if and only if $Z = 0$.
-
-The corresponding **Euclidean norm** is
-
-$$
-\|Z\|_E = \sqrt{Z \bar{Z}} = \sqrt{a^2 + b^2}.
-$$
-
-It is a genuine norm on the real vector space $\mathbb{C} \cong \mathbb{R}^2$: positive-definite, subadditive, and homogeneous of degree one. It **is** multiplicative with respect to the complex product, because $|Z W| = |Z| |W|$.
-
-### The Inner Product
-
-The **inner product** of two complex numbers $Z$ and $W$ is
-
-$$
-\langle Z, W \rangle = \bar{Z} W = (a - i b)(c + i d) = (a c + b d) + (a d - b c) i.
-$$
-
-In general this is a **complex number**, not a real one. This is a genuinely complex feature: the inner product of two complex numbers is complex, and its imaginary part measures the oriented area of the parallelogram spanned by $Z$ and $W$.
-
-The inner product is linear in the second argument and anti-linear in the first:
-
-$$
-\langle \lambda Z, W \rangle = \bar{\lambda} \langle Z, W \rangle, \qquad \langle Z, \lambda W \rangle = \lambda \langle Z, W \rangle, \qquad \lambda \in \mathbb{C}.
-$$
-
-It is **Hermitian** in the sense that
-
-$$
-\langle Z, W \rangle^* = \langle W, Z \rangle,
-$$
-
-which follows from the definition.
-
-The inner product of a complex number with itself is
-
-$$
-\langle Z, Z \rangle = \bar{Z} Z = a^2 + b^2,
-$$
-
-which is the Hermitian form. So the Hermitian form is the restriction of the inner product to the diagonal.
-
-### Relation Between the Three Forms
-
-The three quadratic objects are related as follows:
-
-- **Norm form:** $N(Z) = Z \bar{Z} = a^2 + b^2$. Non-negative real, vanishes only at $Z = 0$, multiplicative.
-- **Hermitian form:** $Z \bar{Z} = a^2 + b^2$. Same as the norm form, because $\mathbb{C}$ is commutative.
-- **Inner product:** $\langle Z, W \rangle = \bar{Z} W$. Complex-valued in general, Hermitian, linear in the second argument.
-
-The norm form and the Hermitian form coincide, while the inner product is a distinct two-variable object; each is useful in a different context. The norm form controls the multiplicative structure (invertibility, zero divisors). The Hermitian form controls the topological structure (continuity, completeness). The inner product combines both, and is the natural pairing on the algebra as a complex vector space.
-
-In the complex case, the norm form and the Hermitian form coincide, because the conjugation is the only non-trivial involution and the algebra is commutative. This is a degeneracy of the two-dimensional case, and it is the reason the complex numbers are often treated as a trivial example rather than as a case study.
+The quadratic form of the algebra and the inner product are a **form** and a **distance**, structures of the topology layer, which this layer may name but cannot measure with. They are developed in the companion article *Complex Norm and Invertibility*, which develops the norm $N(Z) = Z\bar{Z}$, its multiplicativity, the Hermitian form, the Euclidean norm and the inner product $\langle Z, W\rangle = \bar{Z}W$. Nothing is proved with them here, and the absence of that development is itself the layer statement of this article: the algebra carries its multiplication, its single nontrivial involution and its two subspaces, and the form enters at the next layer.
 
 ## Summary
 
@@ -298,7 +208,7 @@ The complex algebra $\mathbb{C}$ is the real algebra of dimension $2$ with basis
 
 Complex conjugation is the nontrivial $\mathbb{R}$-linear involution; its fixed subspace is the real subspace $\mathbb{R}_{\mathbb{C}}$, on which it acts as the identity, and its anti-fixed subspace is the imaginary subspace $i\mathbb{R}_{\mathbb{C}}$, which it negates. These are the eigenspaces for the eigenvalues $+1$ and $-1$, and every complex number decomposes uniquely in each of the two ways the article records: as a real part plus an imaginary part, and as the sum of the $+1$ and $-1$ eigencomponents.
 
-Three quadratic objects are attached to the algebra. The norm form $N(Z) = Z\bar{Z} = a^2 + b^2$ is positive definite and multiplicative, $N(ZW) = N(Z)N(W)$, and it vanishes only at $Z = 0$; it is the form that controls invertibility. The Hermitian form is the same expression, while the inner product $\langle Z, W\rangle = \bar{Z}W$ is a genuinely two-variable Hermitian object, complex-valued in general and linear in the second argument. That the norm form and the Hermitian form coincide is a degeneracy of the commutative two-dimensional case, and it is the reason the complex numbers are commonly treated as a trivial example rather than as a case study.
+The quadratic form of the algebra and the inner product — the norm $N(Z) = Z\bar{Z}$, the Hermitian form and the inner product $\langle Z, W\rangle = \bar{Z}W$ — are a form and a distance, structures of the topology layer, and they are developed in the companion article *Complex Norm and Invertibility*, not here.
 
 ## Summary of Notation
 
@@ -313,10 +223,6 @@ Three quadratic objects are attached to the algebra. The norm form $N(Z) = Z\bar
 | $b = \operatorname{Im} Z$ | Imaginary part |
 | $\bar{Z} = a - i b$ | Complex conjugate |
 | $\operatorname{id}(Z) = Z$ | Identity conjugation |
-| $N(Z) = Z \bar{Z}$ | Norm form |
-| $Z \bar{Z} = a^2 + b^2$ | Hermitian form |
-| $\langle Z, W \rangle = \bar{Z} W$ | Inner product |
-| $\|Z\|_E = \sqrt{Z \bar{Z}}$ | Euclidean norm |
 | $\mathbb{R}_{\mathbb{C}}$ | Real subspace, fixed-point set of $\bar{\cdot}$ |
 | $i\mathbb{R}_{\mathbb{C}}$ | Imaginary subspace, anti-fixed set of $\bar{\cdot}$ |
 | $\mathbb{C}_{\mathbb{C}}$ | Complex subspace, fixed-point set of $\operatorname{id}$ |

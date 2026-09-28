@@ -1,3 +1,4 @@
+
 # __Split-Biquaternion Roots of Minus One__
 
 ## Introduction
@@ -96,9 +97,9 @@ There are no other roots of $-1$ in $\mathbb{H}_{\mathbb{D}}$.
 
 **Step 1: Reduction.** As shown above, the equation $\xi^2 = -1$ is equivalent to the pair of equations $\xi_+^2 = -1$ and $\xi_-^2 = -1$, where $\xi_\pm \in \mathbb{H}$ are the idempotent components of $\xi$.
 
-**Step 2: Quaternion roots.** The roots of $-1$ in $\mathbb{H}$ are exactly the unit pure real quaternions. This is the standard result: $\mu^2 = -1$ with $\mu \in \mathbb{H}$ implies $\mu$ is pure and $|\mu| = 1$: writing $\mu = a + v$ with $a$ real and $v$ a vector, the vector part of $\mu^2$ is $2av$, which must vanish, so $a = 0$ or $v = 0$; the case $v = 0$ gives $\mu^2 = a^2 \geq 0 \neq -1$, leaving $a = 0$, and then $\mu^2 = -|v|^2 = -1$ gives $|v| = 1$.
+**Step 2: Quaternion roots.** The roots of $-1$ in $\mathbb{H}$ are exactly the unit pure real quaternions. This is the standard result: $\mu^2 = -1$ with $\mu \in \mathbb{H}$ implies $\mu$ is pure and $N(\mu) = 1$: writing $\mu = a + v$ with $a$ real and $v$ a vector, the vector part of $\mu^2$ is $2av$, which must vanish, so $a = 0$ or $v = 0$; the case $v = 0$ gives $\mu^2 = a^2 \geq 0 \neq -1$, leaving $a = 0$, and then $\mu^2 = -N(v) = -1$ gives $N(v) = 1$.
 
-**Step 3: Combination.** Any pair $(\mu_+, \mu_-)$ of unit pure real quaternions gives a root $\xi = \mu_+ \tilde\Pi_+ + \mu_- \tilde\Pi_-$. Conversely, every root arises this way. $\square$
+**Step 3: Combination.** Any pair $(\mu_+, \mu_-)$ of unit pure real quaternions gives a root $\xi = \mu_+ \tilde\Pi_+ + \mu_- \tilde\Pi_-$. Conversely, every root arises this way.
 
 ### The Scalar Part
 
@@ -142,7 +143,7 @@ $$
 \xi = \mu_+ \tilde\Pi_+ - \mu_+ \tilde\Pi_- = \mu_+ (\tilde\Pi_+ - \tilde\Pi_-) = \mu_+ j.
 $$
 
-So the pure roots of $-1$ are exactly the elements of the form $\mu j$ with $\mu \in \mathbb{H}$ a unit pure real quaternion. This is a two-dimensional family, parametrized by the unit sphere $\mathbb{S}^2$ in $\mathbb{R}^3$.
+So the pure roots of $-1$ are exactly the elements of the form $\mu j$ with $\mu \in \mathbb{H}$ a unit pure real quaternion. This is a two-dimensional family, parametrized by the level set $N = 1$ in $\mathbb{R}^3$.
 
 ### The Scalar Roots
 
@@ -166,15 +167,15 @@ So the scalar roots of $-1$ in $\mathbb{H}_{\mathbb{D}}$ form a two-dimensional 
 
 ### Dimension of the Root Set
 
-The root set is parametrized by a pair of unit pure real quaternions $\mu_+, \mu_-$, each of which lies on the unit sphere $\mathbb{S}^2$ in $\mathbb{R}^3$. So the root set has real dimension $2 + 2 = 4$.
+The root set is parametrized by a pair of unit pure real quaternions $\mu_+, \mu_-$, each of which has $N = 1$. So the root set has real dimension $2 + 2 = 4$.
 
-This is a four-dimensional submanifold of the eight-dimensional algebra $\mathbb{H}_{\mathbb{D}}$.
+This is a four-dimensional real algebraic subset of the eight-dimensional algebra $\mathbb{H}_{\mathbb{D}}$; its manifold structure is established in *Split-Biquaternion Analysis*.
 
 ### Comparison with the Biquaternion Case
 
 In the biquaternion algebra $\mathbb{B}$, the roots of $-1$ are:
 - The trivial root $\pm i$ (two points).
-- The real roots $\pm \mu$ with $\mu$ a unit pure real quaternion (a two-dimensional family, the unit sphere $\mathbb{S}^2$, which is invariant under $\mu \mapsto -\mu$).
+- The real roots $\pm \mu$ with $\mu$ a unit pure real quaternion (a two-dimensional family, the level set $N = 1$, which is invariant under $\mu \mapsto -\mu$).
 - The non-trivial roots $b\mu + d\nu i$ with $\mu \perp \nu$ and $b^2 - d^2 = 1$ (a four-dimensional family).
 
 The biquaternion root set has a much richer structure, with degenerate roots, real roots, and non-trivial roots. The split biquaternion root set is simpler: it is the product of two copies of the quaternion root set, i.e., a pair of unit pure real quaternions.
@@ -233,7 +234,7 @@ The nontrivial idempotents $\tilde\Pi_+$ and $\tilde\Pi_-$ are zero divisors: $\
 
 ### The Cones
 
-The roots of $-1$ form a four-dimensional submanifold of $\mathbb{H}_{\mathbb{D}}$. The idempotents form a finite set of four points. The relation between the two is not a map from roots to idempotents, as in the biquaternion case, but rather the two structures are independent.
+The roots of $-1$ form a four-dimensional real algebraic subset of $\mathbb{H}_{\mathbb{D}}$. The idempotents form a finite set of four points. The relation between the two is not a map from roots to idempotents, as in the biquaternion case, but rather the two structures are independent.
 
 ## Comparison with the Biquaternion Case
 
@@ -254,22 +255,6 @@ The key differences are:
 3. **The root set is a product.** The split biquaternion root set is the product of two copies of the quaternion root set, parametrized by a pair of unit pure real quaternions. The biquaternion root set is more complicated, because the scalar imaginary interacts with the quaternion roots.
 4. **The idempotents are different.** The idempotents of the split biquaternion algebra are the four elements $0, \tilde\Pi_+, \tilde\Pi_-, 1$, and they are not generated by the roots of $-1$. The idempotents of the biquaternion algebra are generated by the roots of $-1$ via the formula $\tfrac{1}{2} e_0 \pm \tfrac{1}{2} \xi i$.
 
-## The Root Set as a Manifold
-
-The root set of $-1$ in $\mathbb{H}_{\mathbb{D}}$ is the product of two copies of the unit sphere $\mathbb{S}^2$:
-
-$$
-\{\xi \in \mathbb{H}_{\mathbb{D}} : \xi^2 = -1\} \cong \mathbb{S}^2 \times \mathbb{S}^2.
-$$
-
-The isomorphism is given by $\xi \mapsto (\mu_+, \mu_-)$, where $\xi = \mu_+ \tilde\Pi_+ + \mu_- \tilde\Pi_-$ and $\mu_\pm$ are unit pure real quaternions.
-
-So the root set of $-1$ in $\mathbb{H}_{\mathbb{D}}$ is a compact four-dimensional manifold, isomorphic to $\mathbb{S}^2 \times \mathbb{S}^2$.
-
-### Comparison with the Biquaternion Root Set
-
-The biquaternion root set has dimension 4 (the non-trivial family is four-dimensional, and the degenerate families are lower-dimensional). So both root sets have dimension 4, but their structures are different: the biquaternion root set is a four-dimensional stratified space with a more complicated topology, while the split biquaternion root set is the product of two two-spheres.
-
 ## Summary
 
 The roots of $-1$ in the split biquaternion algebra $\mathbb{H}_{\mathbb{D}}$ are exactly the elements of the form
@@ -286,7 +271,7 @@ $$
 
 There are no other roots. The proof is by reduction to the idempotent components: the equation $\xi^2 = -1$ is equivalent to the pair of equations $\xi_+^2 = -1$ and $\xi_-^2 = -1$, and the roots of $-1$ in the quaternion algebra are the unit pure real quaternions.
 
-The root set is parametrized by a pair of unit pure real quaternions, i.e., by a pair of points on the two-sphere $\mathbb{S}^2$. It is therefore a compact four-dimensional manifold, isomorphic to $\mathbb{S}^2 \times \mathbb{S}^2$.
+The root set is parametrized by a pair of unit pure real quaternions, i.e., by a pair of elements with $N = 1$. It therefore has real dimension four; that the root set is the topological product of two level sets $\{N = 1\}$, and its manifold structure, are established in *Split-Biquaternion Analysis*.
 
 The pure roots (with vanishing scalar part) are the elements $\mu j$ with $\mu$ a unit pure real quaternion. The scalar roots (with vanishing vector part) are the unit pure real quaternions themselves. The general root is a combination of the two.
 
@@ -304,7 +289,7 @@ The split biquaternion root set is simpler than the biquaternion root set, becau
 | $\mu, \mu_+, \mu_-$ | Unit pure real quaternions |
 | $\tilde\Pi_+ = \tfrac{1}{2}(1 + j)$ | Positive idempotent |
 | $\tilde\Pi_- = \tfrac{1}{2}(1 - j)$ | Negative idempotent |
-| $\mathbb{S}^2$ | Unit sphere in $\mathbb{R}^3$ |
+| $\{N = 1\}$ | The level set in $\mathbb{R}^3$ |
 
 ## Further Reading
 
@@ -313,4 +298,3 @@ The split biquaternion root set is simpler than the biquaternion root set, becau
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the connection to Clifford algebras.
 - John H. Conway and Derek A. Smith, *On Quaternions and Octonions* (A K Peters, 2003), for the classification of real algebras.
 - F. Brackx, R. Delanghe, and F. Sommen, *Clifford Analysis* (Pitman, 1982), for the general Clifford analysis.
-

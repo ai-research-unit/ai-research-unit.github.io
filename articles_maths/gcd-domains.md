@@ -31,7 +31,7 @@ An element $c$ with the first two properties is a **common divisor** of $a$ and 
 
 **(c)** If $u \in R^{\times}$ then $\gcd(ua, b) \sim \gcd(a,b)$, and $a \mid b$ if and only if $\gcd(a,b) \sim a$.
 
-**Proof.** (a) If $d$ and $d'$ are both greatest common divisors then $d \mid d'$ and $d' \mid d$, so $d \sim d'$ by the proposition on associates in *Integral Domains*. (b) Every element divides $0$, and $a \mid a$. (c) Multiplication by a unit permutes the common divisors; and if $a \mid b$ then $a$ is a common divisor of $a$ and $b$ divisible by every common divisor, while $\gcd(a,b) \mid a$ with both being common divisors forces the two to be associates. $\square$
+**Proof.** (a) If $d$ and $d'$ are both greatest common divisors then $d \mid d'$ and $d' \mid d$, so $d \sim d'$ by the proposition on associates in *Integral Domains*. (b) Every element divides $0$, and $a \mid a$. (c) Multiplication by a unit permutes the common divisors; and if $a \mid b$ then $a$ is a common divisor of $a$ and $b$ divisible by every common divisor, while $\gcd(a,b) \mid a$ with both being common divisors forces the two to be associates.
 
 **Definition.** An integral domain $R$ is a **GCD domain** if every pair of elements of $R$, not both zero, has a greatest common divisor in $R$.
 
@@ -45,11 +45,11 @@ $$
 \gcd(ca, cb) \sim c \cdot \gcd(a,b) .
 $$
 
-**Proof.** Put $d = \gcd(a,b)$ and $e = \gcd(ca,cb)$. Since $cd \mid ca$ and $cd \mid cb$, the defining property of $e$ gives $cd \mid e$, say $e = c d f$. Now $e \mid ca$ and $e \mid cb$, that is, $cdf \mid ca$ and $cdf \mid cb$; cancelling $c$ by the domain hypothesis, $df \mid a$ and $df \mid b$. Hence $df \mid d$ by the defining property of $d$, so $f$ is a unit and $e \sim cd$. $\square$
+**Proof.** Put $d = \gcd(a,b)$ and $e = \gcd(ca,cb)$. Since $cd \mid ca$ and $cd \mid cb$, the defining property of $e$ gives $cd \mid e$, say $e = c d f$. Now $e \mid ca$ and $e \mid cb$, that is, $cdf \mid ca$ and $cdf \mid cb$; cancelling $c$ by the domain hypothesis, $df \mid a$ and $df \mid b$. Hence $df \mid d$ by the defining property of $d$, so $f$ is a unit and $e \sim cd$.
 
 **Corollary.** Let $d = \gcd(a,b)$ with $a, b$ not both zero, and write $a = da'$, $b = db'$. Then $a'$ and $b'$ have no common divisor outside $R^{\times}$; that is, $\gcd(a',b') \sim 1$. Moreover, if $\gcd(a', b) \sim 1$ and $\gcd(a', c) \sim 1$, then $\gcd(a', bc) \sim 1$.
 
-**Proof.** Since $d = \gcd(da', db') \sim d \cdot \gcd(a',b')$ by the proposition, cancelling $d$ gives $1 \sim \gcd(a',b')$. For the second statement, coprimality is multiplicative in a GCD domain: if $\gcd(x, y) \sim 1$ and $\gcd(x, z) \sim 1$ then $\gcd(x, yz) \sim 1$, because a common divisor of $x$ and $yz$ is coprime to $z$ and therefore divides $y$ by the standard Euclid property of a GCD domain, that a divisor of a product coprime to one factor divides the other; the property is cited from the literature. The coprimality of $a'$ must be with $b$ and not merely with $b'$: for $a = 12$, $b = 18$, $d = 6$ one has $a' = 2$, $b' = 3$ and $\gcd(2,3) = 1$, while $\gcd(2, 18) = 2$. $\square$
+**Proof.** Since $d = \gcd(da', db') \sim d \cdot \gcd(a',b')$ by the proposition, cancelling $d$ gives $1 \sim \gcd(a',b')$. For the second statement, coprimality is multiplicative in a GCD domain: if $\gcd(x, y) \sim 1$ and $\gcd(x, z) \sim 1$ then $\gcd(x, yz) \sim 1$, because a common divisor of $x$ and $yz$ is coprime to $z$ and therefore divides $y$ by the standard Euclid property of a GCD domain, that a divisor of a product coprime to one factor divides the other; the property is cited from the literature. The coprimality of $a'$ must be with $b$ and not merely with $b'$: for $a = 12$, $b = 18$, $d = 6$ one has $a' = 2$, $b' = 3$ and $\gcd(2,3) = 1$, while $\gcd(2, 18) = 2$.
 
 **Remark.** The proposition is the reason a GCD domain behaves as if its elements had prime decompositions, even when they do not: every pair can be reduced to a coprime pair by dividing out the gcd. What a GCD domain does **not** supply is a factorisation of an element into irreducibles, and this is exactly what the strengthening to a unique factorisation domain adds. The class in which the reduction is accompanied by unique factorisation into irreducibles is *Unique Factorisation Domains*, below this article in this category.
 
@@ -73,17 +73,17 @@ $$
 \gcd(a,b) \cdot \operatorname{lcm}(a,b) \sim a b .
 $$
 
-**Proof.** Suppose $d = \gcd(a,b)$ exists and put $m = ab/d$, which lies in $R$ because $d \mid a$ and $d \mid b$. Then $m = a(b/d) = b(a/d)$, so $a \mid m$ and $b \mid m$. If $a \mid c$ and $b \mid c$, then $ab \mid cb$ and $ab \mid ca$, hence $ab$ divides the gcd of $cb$ and $ca$, which is $c \cdot \gcd(a,b) = cd$ by the proposition above; so $ab \mid cd$ and therefore $m = ab/d \mid c$. Hence $m = \operatorname{lcm}(a,b)$ and the identity holds. The converse is symmetric, reading $d = ab/m$; the details are the same. $\square$
+**Proof.** Suppose $d = \gcd(a,b)$ exists and put $m = ab/d$, which lies in $R$ because $d \mid a$ and $d \mid b$. Then $m = a(b/d) = b(a/d)$, so $a \mid m$ and $b \mid m$. If $a \mid c$ and $b \mid c$, then $ab \mid cb$ and $ab \mid ca$, hence $ab$ divides the gcd of $cb$ and $ca$, which is $c \cdot \gcd(a,b) = cd$ by the proposition above; so $ab \mid cd$ and therefore $m = ab/d \mid c$. Hence $m = \operatorname{lcm}(a,b)$ and the identity holds. The converse is symmetric, reading $d = ab/m$; the details are the same.
 
 **Corollary.** In any integral domain, $(a) \cap (b) = (\operatorname{lcm}(a,b))$ whenever the least common multiple exists, and $(a) + (b) \subseteq (\gcd(a,b))$ whenever the greatest common divisor exists.
 
-**Proof.** $c \in (a) \cap (b)$ means $a \mid c$ and $b \mid c$, which by the definition of the lcm means $m \mid c$, that is, $c \in (m)$; conversely $a \mid m$ and $b \mid m$ say $m \in (a) \cap (b)$. For the second statement, $d \mid a$ and $d \mid b$ say $a, b \in (d)$, so $(a) + (b) \subseteq (d)$. $\square$
+**Proof.** $c \in (a) \cap (b)$ means $a \mid c$ and $b \mid c$, which by the definition of the lcm means $m \mid c$, that is, $c \in (m)$; conversely $a \mid m$ and $b \mid m$ say $m \in (a) \cap (b)$. For the second statement, $d \mid a$ and $d \mid b$ say $a, b \in (d)$, so $(a) + (b) \subseteq (d)$.
 
 ### The Ideal-Theoretic Characterisation
 
 **Proposition.** Let $a, b \in R$ be nonzero and $d \in R$. Then $d$ is a greatest common divisor of $a$ and $b$ if and only if $(d)$ is the least principal ideal containing $(a) + (b)$: that is, $(a) + (b) \subseteq (d)$, and $(a) + (b) \subseteq (e)$ implies $(d) \subseteq (e)$.
 
-**Proof.** The condition $(a) + (b) \subseteq (d)$ says exactly that $d \mid a$ and $d \mid b$. Given that, a further ideal $(e) \supseteq (a) + (b)$ satisfies $e \mid a$ and $e \mid b$, and the requirement $(d) \subseteq (e)$ is the requirement $e \mid d$. So the two formulations say the same thing. $\square$
+**Proof.** The condition $(a) + (b) \subseteq (d)$ says exactly that $d \mid a$ and $d \mid b$. Given that, a further ideal $(e) \supseteq (a) + (b)$ satisfies $e \mid a$ and $e \mid b$, and the requirement $(d) \subseteq (e)$ is the requirement $e \mid d$. So the two formulations say the same thing.
 
 **Theorem.** For an integral domain $R$ the following are equivalent.
 
@@ -93,7 +93,7 @@ $$
 
 **(c)** Every pair of elements of $R$ has a least common multiple.
 
-**Proof.** By the identity $\gcd \cdot \operatorname{lcm} \sim ab$, the existence of the gcd of a pair is equivalent to the existence of the lcm, so (a) and (c) are equivalent, and the ideal $(a) \cap (b)$ is generated by the lcm when it exists, by the corollary above; this gives (a) $\Leftrightarrow$ (b). $\square$
+**Proof.** By the identity $\gcd \cdot \operatorname{lcm} \sim ab$, the existence of the gcd of a pair is equivalent to the existence of the lcm, so (a) and (c) are equivalent, and the ideal $(a) \cap (b)$ is generated by the lcm when it exists, by the corollary above; this gives (a) $\Leftrightarrow$ (b).
 
 **Remark.** The characterisation (b) is the one that passes to the ideal theory of a general commutative ring: it says that the lattice of principal ideals of a GCD domain is closed under finite intersections. The class of Bézout domains below captures the dual closure property.
 
@@ -105,7 +105,7 @@ $$
 
 **Proposition.** Every unique factorisation domain is a GCD domain.
 
-**Proof.** In a unique factorisation domain every nonzero non-unit is a product of primes, and the gcd of two nonzero elements is the product of the primes occurring in both factorisations, each taken to the smaller exponent; this element divides both and is divisible by every common divisor, since a common divisor has a factorisation whose prime factors occur in both factorisations with exponents no larger. The details, together with the definition of unique factorisation, are *Unique Factorisation Domains*, below this article in this category. $\square$
+**Proof.** In a unique factorisation domain every nonzero non-unit is a product of primes, and the gcd of two nonzero elements is the product of the primes occurring in both factorisations, each taken to the smaller exponent; this element divides both and is divisible by every common divisor, since a common divisor has a factorisation whose prime factors occur in both factorisations with exponents no larger. The details, together with the definition of unique factorisation, are *Unique Factorisation Domains*, below this article in this category.
 
 That article also supplies the standard example that is a unique factorisation domain without being either a Bézout domain or a principal ideal domain, namely $\mathbb{Z}[x]$.
 
@@ -113,7 +113,7 @@ That article also supplies the standard example that is a unique factorisation d
 
 **Proposition.** Let $R$ be an integral domain and $a, b \in R$ not both zero. Then $\gcd(a,b)$ exists and satisfies $(a,b) = (\gcd(a,b))$ if and only if the ideal $(a) + (b)$ is principal.
 
-**Proof.** If $(a) + (b) = (d)$ then $d \mid a$ and $d \mid b$; if $c \mid a$ and $c \mid b$ then $d \in (a) + (b) \subseteq (c)$, so $c \mid d$; hence $d = \gcd(a,b)$. Conversely if $d = \gcd(a,b)$ and $d = ax + by$ then $d \in (a)+(b)$ and $(d) \subseteq (a)+(b) \subseteq (d)$, so equality holds. $\square$
+**Proof.** If $(a) + (b) = (d)$ then $d \mid a$ and $d \mid b$; if $c \mid a$ and $c \mid b$ then $d \in (a) + (b) \subseteq (c)$, so $c \mid d$; hence $d = \gcd(a,b)$. Conversely if $d = \gcd(a,b)$ and $d = ax + by$ then $d \in (a)+(b)$ and $(d) \subseteq (a)+(b) \subseteq (d)$, so equality holds.
 
 **Definition.** An integral domain $R$ is a **Bézout domain** if every finitely generated ideal of $R$ is principal.
 
@@ -123,7 +123,7 @@ Thus in a Bézout domain every gcd exists, so a Bézout domain is a GCD domain; 
 
 **Theorem.** The classes of unique factorisation domains and of Bézout domains are incomparable, and both are contained in the class of GCD domains.
 
-**Proof.** Each of the two classes consists of GCD domains, by the two propositions above. For the incomparability, a unique factorisation domain that is not a Bézout domain is $\mathbb{Z}[x]$, in which $(2,x)$ is not principal, so $\gcd(2,x)$ is not a linear combination; and a Bézout domain that is not a unique factorisation domain is the ring $\overline{\mathbb{Z}}$ of all algebraic integers, which is Bézout but in which elements fail to factor into irreducibles. The first example is *Unique Factorisation Domains* and the second *Bézout Domains*, both below this article in this category. $\square$
+**Proof.** Each of the two classes consists of GCD domains, by the two propositions above. For the incomparability, a unique factorisation domain that is not a Bézout domain is $\mathbb{Z}[x]$, in which $(2,x)$ is not principal, so $\gcd(2,x)$ is not a linear combination; and a Bézout domain that is not a unique factorisation domain is the ring $\overline{\mathbb{Z}}$ of all algebraic integers, which is Bézout but in which elements fail to factor into irreducibles. The first example is *Unique Factorisation Domains* and the second *Bézout Domains*, both below this article in this category.
 
 The two strengthenings are therefore the two directions in which one can demand that divisibility be computable: by prime factorisation, or by a linear-combination identity. They meet in the principal ideal domains, which are precisely the Noetherian Bézout domains and also a subclass of the unique factorisation domains; the chain returns to a single line there, and continues to the Euclidean domains. Both statements belong to *Principal Ideal Domains*, below this article in this category.
 
@@ -147,7 +147,7 @@ $$
 
 **(b)** If $d = ax + by$ and $e \mid a$, $e \mid b$, then $e \mid d$.
 
-**Proof.** (a) is the proposition of the previous section. For (b), $e$ divides each of $a$ and $b$, hence each term of $ax + by$. $\square$
+**Proof.** (a) is the proposition of the previous section. For (b), $e$ divides each of $a$ and $b$, hence each term of $ax + by$.
 
 **Remark (back-substitution).** When the gcd is computed by a finite chain of divisions,
 
@@ -175,7 +175,7 @@ So the Bézout combination is $2 = 240 \cdot (-9) + 46 \cdot 47$, and the identi
 
 **Corollary.** Let $a, b \in R$ be nonzero. If there exist $x, y$ with $ax + by = 1$, then every common divisor of $a$ and $b$ is a unit, so $1$ is a greatest common divisor of $a$ and $b$. Conversely, if $\gcd(a,b) = d$ is a Bézout combination $d = ax + by$ and $d$ is a unit, then $a(xd^{-1}) + b(yd^{-1}) = 1$.
 
-**Proof.** A common divisor of $a$ and $b$ divides $ax + by = 1$, hence is a unit. Conversely, multiply the identity by $d^{-1}$. $\square$
+**Proof.** A common divisor of $a$ and $b$ divides $ax + by = 1$, hence is a unit. Conversely, multiply the identity by $d^{-1}$.
 
 ---
 

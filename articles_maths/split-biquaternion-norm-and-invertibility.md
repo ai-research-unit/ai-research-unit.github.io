@@ -1,8 +1,9 @@
+
 # __Split-Biquaternion Norm and Invertibility__
 
 ## Introduction
 
-This article studies the norm form of the split biquaternion algebra and the invertibility of its elements. It follows the article on split biquaternion algebra, which defined the algebra, its four conjugations, and its four fixed-point subspaces. The goal here is to define the norm form and the Hermitian form, to establish the criterion for invertibility, and to describe the group of units.
+This article studies the split-biquaternion norm of the algebra and the invertibility of its elements. It follows the article on split biquaternion algebra, which defined the algebra, its four conjugations, and its four fixed-point subspaces. The goal here is to define the split-biquaternion norm and the Hermitian form, to establish the criterion for invertibility, and to describe the group of units.
 
 The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. No examples are given. The quaternion algebra $\mathbb{H}$ is assumed from the article on quaternion algebra. The split complex algebra $\mathbb{D}$ is assumed from the article on split complex algebra, together with its idempotents $\tilde\Pi_+ = \tfrac{1}{2}(1 + j)$ and $\tilde\Pi_- = \tfrac{1}{2}(1 - j)$ and the isomorphism $\mathbb{D} \cong \mathbb{R} \oplus \mathbb{R}$. The split biquaternion algebra $\mathbb{H}_{\mathbb{D}} = \mathbb{D} \otimes_{\mathbb{R}} \mathbb{H}$ is assumed from the preceding article, together with its four conjugations, its four fixed-point subspaces, and its three decompositions.
 
@@ -22,11 +23,11 @@ $$
 
 with $\tilde{Q}_\pm = \tilde{Q} \tilde\Pi_\pm \in \mathbb{H}$ ordinary quaternions.
 
-## The Norm Form
+## The Split-Biquaternion Norm
 
 ### Definition
 
-The **norm form** of a split biquaternion $\tilde{Q}$ is
+The **split-biquaternion norm** of a split biquaternion $\tilde{Q}$ is
 
 $$
 N(\tilde{Q}) = \tilde{Q} \bar{\tilde{Q}} = \sum_{\mu=0}^{3} Q_\mu^2,
@@ -37,7 +38,7 @@ where $\bar{\tilde{Q}}$ is the quaternion conjugate.
 **Basic properties.**
 
 - $N(\tilde{Q})$ is a split complex number in general. It is real when $\tilde{Q}$ lies in the quaternion subspace $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$ or in the imaginary translate $j \mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$, and outside their union it need not be real.
-- $N(\tilde{Q})$ is **anisotropic**: it vanishes only when $\tilde{Q} = 0$, so the norm form does not by itself detect the zero divisors. Those are described by the idempotent criterion below, and are studied in the article on split biquaternion zero divisors.
+- $N(\tilde{Q})$ is **anisotropic**: it vanishes only when $\tilde{Q} = 0$, so the split-biquaternion norm does not by itself detect the zero divisors. Those are described by the idempotent criterion below, and are studied in the article on split biquaternion zero divisors.
 - $N(\tilde{Q})$ is invariant under quaternion conjugation: $N(\bar{\tilde{Q}}) = N(\tilde{Q})$.
 - $N(\tilde{Q})$ is not invariant under split complex conjugation: $N(\tilde{Q}^*) = N(\tilde{Q})^*$.
 - $N(\tilde{Q})$ is not invariant under Hermitian conjugation: $N(\tilde{Q}^\dagger) = N(\tilde{Q})^*$.
@@ -50,11 +51,11 @@ $$
 N(\tilde{Q}) = \sum_{\mu=0}^{3} (q_\mu^2 + q'^2_\mu) + 2j \sum_{\mu=0}^{3} q_\mu q'_\mu.
 $$
 
-So the real part of the norm form is the sum of the squares of all eight real components, and the split part is twice the inner product of the real and split parts. This is the **same structure** as in the biquaternion case, with $j$ in place of $i$. The difference is the sign of the square of the extra unit: $j^2 = +1$ versus $i^2 = -1$.
+So the real part of the split-biquaternion norm is the sum of the squares of all eight real components, and the split part is twice the inner product of the real and split parts. This is the **same structure** as in the biquaternion case, with $j$ in place of $i$. The difference is the sign of the square of the extra unit: $j^2 = +1$ versus $i^2 = -1$.
 
 ### Multiplicativity
 
-**Theorem.** The norm form is multiplicative:
+**Theorem.** The split-biquaternion norm is multiplicative:
 
 $$
 N(\tilde{Q} \circ \tilde{R}) = N(\tilde{Q}) \, N(\tilde{R}).
@@ -72,15 +73,13 @@ $$
 \tilde{Q} N(\tilde{R}) \bar{\tilde{Q}} = N(\tilde{R}) \tilde{Q} \bar{\tilde{Q}} = N(\tilde{R}) N(\tilde{Q}).
 $$
 
-$\square$
-
 **Corollary.** If $N(\tilde{Q})$ and $N(\tilde{R})$ are invertible in $\mathbb{D}$, then $N(\tilde{Q} \circ \tilde{R})$ is invertible in $\mathbb{D}$.
 
 **Corollary.** If $N(\tilde{Q}) = 0$ or $N(\tilde{R}) = 0$, then $N(\tilde{Q} \circ \tilde{R}) = 0$. In particular, the product of a zero divisor with any split biquaternion is either zero or a zero divisor.
 
-### The Norm Form in the Idempotent Basis
+### The Split-Biquaternion Norm in the Idempotent Basis
 
-In the idempotent basis, the norm form takes a particularly simple form. Writing $\tilde{Q} = \tilde{Q}_+ \tilde\Pi_+ + \tilde{Q}_- \tilde\Pi_-$ with $\tilde{Q}_\pm \in \mathbb{H}$,
+In the idempotent basis, the split-biquaternion norm takes a particularly simple form. Writing $\tilde{Q} = \tilde{Q}_+ \tilde\Pi_+ + \tilde{Q}_- \tilde\Pi_-$ with $\tilde{Q}_\pm \in \mathbb{H}$,
 
 $$
 N(\tilde{Q}) = N_{\mathbb{H}}(\tilde{Q}_+) \tilde\Pi_+ + N_{\mathbb{H}}(\tilde{Q}_-) \tilde\Pi_-,
@@ -88,7 +87,56 @@ $$
 
 where $N_{\mathbb{H}}(\tilde{Q}_\pm) = \tilde{Q}_\pm \bar{\tilde{Q}}_\pm$ is the ordinary quaternion norm of $\tilde{Q}_\pm$, which is a non-negative real number.
 
-So the norm form of a split biquaternion is the pair of non-negative real numbers $(N_{\mathbb{H}}(\tilde{Q}_+), N_{\mathbb{H}}(\tilde{Q}_-))$, embedded in the split complex algebra via the idempotent basis. This is the cleanest form of the norm form, and it is the form in which the invertibility criterion is most transparent.
+So the split-biquaternion norm of a split biquaternion is the pair of non-negative real numbers $(N_{\mathbb{H}}(\tilde{Q}_+), N_{\mathbb{H}}(\tilde{Q}_-))$, embedded in the split complex algebra via the idempotent basis. This is the cleanest form of the split-biquaternion norm, and it is the form in which the invertibility criterion is most transparent.
+
+### The Quadratic Form and Its Polarisation
+
+The split-biquaternion norm is the quadratic form of the bilinear pairing obtained by polarisation. For two split biquaternions $\tilde P = \sum_\mu P_\mu e_\mu$ and $\tilde{Q} = \sum_\mu Q_\mu e_\mu$, set
+
+$$
+B(\tilde P, \tilde{Q}) = \sum_{\mu=0}^{3} P_\mu Q_\mu,
+$$
+
+a split complex number, so that $N(\tilde{Q}) = B(\tilde{Q}, \tilde{Q})$. The pairing is symmetric, split-complex-bilinear, and its polarisation is the quadratic form
+
+$$
+N(\tilde P + \tilde{Q}) - N(\tilde P) - N(\tilde{Q}) = 2 B(\tilde P, \tilde{Q}).
+$$
+
+The **quadratic space** so defined is the split complex quadratic space of dimension $4$ whose form is anisotropic: $B(\tilde{Q}, \tilde{Q}) = 0$ forces $\tilde{Q} = 0$, since the real part of $N$ is a sum of squares. This is the same construction as in the biquaternion case, with the split complex algebra in place of the complex field and $j^2 = +1$ in place of $i^2 = -1$.
+
+**Proposition.** The polarisation $B$ is $\mathbb{D}$-bilinear, symmetric and non-degenerate, and the unit basis is orthonormal:
+
+$$
+B(\tilde P, \tilde{Q}) = \tfrac{1}{2}\left(\tilde P \bar{\tilde{Q}} + \tilde{Q} \bar{\tilde P}\right), \qquad B(e_\mu, e_\nu) = \delta_{\mu\nu}.
+$$
+
+**Proof.** Bilinearity is that of the polarisation of a quadratic form, symmetry is its defining property, and $B(e_\mu, e_\nu) = \delta_{\mu\nu}$ is immediate from the coordinate formula. Non-degeneracy follows because $B(e_\mu, e_\mu) = e_0$ is a unit of $\mathbb{D}$.
+
+**Remark.** Unlike the biquaternion case, where the norm is the determinant of a $2\times 2$ complex matrix, here $N$ is not a determinant of a matrix over a field, because the algebra is a product of two division algebras; the polarisation $B$ is the honest $\mathbb{D}$-valued bilinear form and not a trace form.
+
+### The Real Forms and Their Signatures
+
+Writing $Q_\mu = q_\mu + jq'_\mu$ with $q_\mu, q'_\mu \in \mathbb{R}$,
+
+$$
+N(\tilde{Q}) = R(\tilde{Q}) + j\,I(\tilde{Q}), \qquad R(\tilde{Q}) = \sum_\mu (q_\mu^2 + q'^2_\mu), \quad I(\tilde{Q}) = 2\sum_\mu q_\mu q'_\mu.
+$$
+
+**Proposition.** The form $R$ is the Euclidean form, positive definite of signature $(8,0)$; the form $I$ is the polarisation of the pairing of each real coordinate with its split partner, non-degenerate of signature $(4,4)$. The Hermitian scalar form $g(\tilde P, \tilde{Q}) = \mathrm{Sc}(\tilde P \tilde{Q}^\dagger)$ is also non-degenerate of signature $(4,4)$.
+
+**Proof.** $R$ is a sum of squares of the eight real coordinates. $I$ has the matrix with two $4\times 4$ off-diagonal blocks $I_4$, of signature $(4,4)$. The Hermitian form is non-degenerate of signature $(4,4)$ as established in *Split-Biquaternion Rotations and the Lorentz Group*.
+
+The signatures of $N$ restricted to the four distinguished subspaces are:
+
+| Subspace | Condition | $N$ restricted | Signature |
+|---|---|---|---|
+| $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$ | $Q_\mu = 0$, $\mu \geq 1$ | $q_0^2 + q'^2_0 + 2jq_0q'_0$ | real part $(2,0)$ |
+| $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$ | $q'_\mu = 0$ | $\sum_\mu q_\mu^2$ | $(4,0)$ |
+| $\mathbb{M}_+$ | $q'_0 = 0$, $q_k = 0$ | $q_0^2 - \sum_k q'^2_k$ | $(1,3)$ |
+| $\mathbb{M}_-$ | $q_0 = 0$, $q'_k = 0$ | $-q'^2_0 + \sum_k q_k^2$ | $(3,1)$ |
+
+On the quaternion subspace the split-biquaternion norm is real and positive definite; on the two Hermitian sectors it is real and Lorentzian; on the centre it is split complex, the split complex norm of $\mathbb{D}$.
 
 ## The Hermitian Form
 
@@ -126,7 +174,33 @@ $$
 \sum_{\mu=0}^{3} q_\mu^2 = \sum_{\mu=0}^{3} q'^2_\mu.
 $$
 
-This is a quadric hypersurface of dimension $7$ in $\mathbb{H}_{\mathbb{D}} \cong \mathbb{R}^8$, the analogue of a light cone in Minkowski space, with signature $(4, 4)$ instead of $(1, 3)$.
+This is a quadric hypersurface of dimension $7$ in $\mathbb{H}_{\mathbb{D}} \cong \mathbb{R}^8$, the analogue of the null cone of a Lorentzian four-space, with signature $(4, 4)$ instead of $(1, 3)$.
+
+### The Inner Product
+
+The Hermitian form is polarised by the **inner product**
+
+$$
+\langle \tilde P, \tilde{Q} \rangle = \sum_{\mu=0}^{3} P_\mu^* Q_\mu,
+$$
+
+which is a split complex number in general:
+
+$$
+\langle \tilde P, \tilde{Q} \rangle = \sum_{\mu=0}^{3} (p_\mu q_\mu - p'_\mu q'_\mu) + j \sum_{\mu=0}^{3} (p_\mu q'_\mu - p'_\mu q_\mu).
+$$
+
+Its real part is the real form of signature $(4, 4)$ above, and its split part is the cross-term. The pairing is linear in the second argument and split-antilinear in the first, and it is Hermitian in the sense that $\langle \tilde P, \tilde{Q} \rangle^* = \langle \tilde{Q}, \tilde{P} \rangle$.
+
+### Relation Between the Three Forms
+
+The three quadratic objects are related as follows.
+
+- **Norm:** $N(\tilde{Q}) = \tilde{Q} \bar{\tilde{Q}} = \sum_\mu Q_\mu^2$, split complex-valued, anisotropic, multiplicative, with polarisation $B$.
+- **Hermitian form:** $\tilde{Q} \tilde{Q}^\dagger$, whose scalar part is $\sum_\mu (q_\mu^2 - q'^2_\mu)$, real, indefinite of signature $(4, 4)$, vanishing on a quadric hypersurface of dimension $7$; the full product is not multiplicative.
+- **Inner product:** $\langle \tilde P, \tilde{Q} \rangle = \sum_\mu P_\mu^* Q_\mu$, split complex-valued, Hermitian, linear in the second argument.
+
+The three are distinct, and each is useful in a different context. The split-biquaternion norm controls invertibility through the reduced norm below. The zero divisors are not a condition on the split-biquaternion norm; they are the vanishing of an idempotent component. The Hermitian form is indefinite and does not control the topological structure; the Euclidean norm, defined separately, does.
 
 ## The Euclidean Norm
 
@@ -140,9 +214,9 @@ $$
 
 It is a genuine norm on the real vector space $\mathbb{H}_{\mathbb{D}} \cong \mathbb{R}^8$: positive-definite, subadditive, and homogeneous of degree one.
 
-### Relation to the Norm Form and the Hermitian Form
+### Relation to the Split-Biquaternion Norm and the Hermitian Form
 
-The Euclidean norm is not the square root of the Hermitian form, because the Hermitian form is indefinite. It is also not the modulus of the norm form, because the norm form is split complex and its modulus is
+The Euclidean norm is not the square root of the Hermitian form, because the Hermitian form is indefinite. It is also not the modulus of the split-biquaternion norm, because the split-biquaternion norm is split complex and its modulus is
 
 $$
 |N(\tilde{Q})| = \sqrt{\left(\sum_\mu (q_\mu^2 + q'^2_\mu)\right)^2 - 4\left(\sum_\mu q_\mu q'_\mu\right)^2},
@@ -150,13 +224,13 @@ $$
 
 which is not the Euclidean norm squared.
 
-The Euclidean norm is defined separately, and it is the ordinary Euclidean norm on the underlying real vector space. It is the norm that defines the topology of $\mathbb{H}_{\mathbb{D}}$, the convergence of sequences, and the completeness of the algebra as a metric space.
+The Euclidean norm is defined separately, and it is the ordinary Euclidean norm on the underlying real vector space. It is the split-biquaternion norm that defines the topology of $\mathbb{H}_{\mathbb{D}}$, the convergence of sequences, and the completeness of the algebra as a metric space.
 
 ### Multiplicativity
 
 The Euclidean norm is **not** multiplicative with respect to the split biquaternion product. This is the same situation as in the biquaternion case, where the Euclidean norm is not multiplicative because the Hermitian form is not multiplicative.
 
-The norm form, which is multiplicative, is split complex-valued and anisotropic: it is the idempotent components, not the norm, that detect the zero divisors. The Euclidean norm, which is positive-definite, is not multiplicative, and it does not detect the zero divisors.
+The split-biquaternion norm, which is multiplicative, is split complex-valued and anisotropic: it is the idempotent components, not the value of the split-biquaternion norm, that detect the zero divisors. The Euclidean norm, which is positive-definite, is not multiplicative, and it does not detect the zero divisors.
 
 ## Invertibility
 
@@ -176,7 +250,7 @@ In a general non-commutative algebra, the notions of left inverse, right inverse
 
 ### Criterion for Invertibility
 
-**Theorem.** A split biquaternion $\tilde{Q}$ is invertible if and only if its norm form is invertible in $\mathbb{D}$:
+**Theorem.** A split biquaternion $\tilde{Q}$ is invertible if and only if its split-biquaternion norm is invertible in $\mathbb{D}$:
 
 $$
 N(\tilde{Q}) \in \mathbb{D}^\times.
@@ -196,13 +270,13 @@ $$
 
 so $\tilde{R}$ is a right inverse, hence also a left inverse.
 
-Conversely, suppose $\tilde{Q}$ is invertible. Applying the norm form to $\tilde{Q} \circ \tilde{Q}^{-1} = e_0$ and using multiplicativity gives
+Conversely, suppose $\tilde{Q}$ is invertible. Applying the split-biquaternion norm to $\tilde{Q} \circ \tilde{Q}^{-1} = e_0$ and using multiplicativity gives
 
 $$
 N(\tilde{Q}) N(\tilde{Q}^{-1}) = N(e_0) = 1,
 $$
 
-so $N(\tilde{Q})$ is invertible in $\mathbb{D}$, with inverse $N(\tilde{Q}^{-1})$. $\square$
+so $N(\tilde{Q})$ is invertible in $\mathbb{D}$, with inverse $N(\tilde{Q}^{-1})$.
 
 **Remark.** The hypothesis is not simply $\tilde{Q} \neq 0$, nor $N(\tilde{Q}) \neq 0$, which is the same thing by anisotropy. For $\tilde{Q} = \tilde\Pi_+$ one has $N(\tilde{Q}) = \tilde\Pi_+$, a nonzero zero divisor of $\mathbb{D}$, and $\tilde\Pi_+$ is a zero divisor of $\mathbb{H}_{\mathbb{D}}$, since $\tilde\Pi_+ \tilde\Pi_- = 0$.
 
@@ -240,6 +314,60 @@ This is the cleanest form of the invertibility criterion. It is a **linear** con
 
 **Comparison with the biquaternion case.** In the biquaternion algebra, the invertibility criterion $N(\tilde{Q}) \neq 0$ is a **quadratic** condition, and the zero divisor set is a complex cone of complex dimension 3 (real dimension 6). In the split biquaternion algebra, the invertibility criterion is a linear condition in the idempotent basis, and the zero divisor set is a union of two four-dimensional linear subspaces. The difference is a consequence of the fact that $\mathbb{H}_{\mathbb{D}}$ is semisimple while $\mathbb{B}$ is simple.
 
+### The Reduced Norm
+
+The split-biquaternion norm alone does not give an inverse. The formula
+
+$$
+\tilde{Q}^{-1} = \bar{\tilde{Q}} \, N(\tilde{Q})^{-1}
+$$
+
+requires $N(\tilde{Q})$ to be invertible in $\mathbb{D}$, not merely nonzero: since $\mathbb{D} \cong \mathbb{R} \oplus \mathbb{R}$ has zero divisors, when $\tilde{Q}$ is a zero divisor the value $N(\tilde{Q})$ is a nonzero zero divisor of $\mathbb{D}$ and $N(\tilde{Q})^{-1}$ does not exist.
+
+In the idempotent basis the inverse of a unit of $\mathbb{D}$ is computed componentwise. Writing $N(\tilde{Q}) = N_+ \tilde\Pi_+ + N_- \tilde\Pi_-$ with $N_\pm = N_{\mathbb{H}}(\tilde{Q}_\pm) \in \mathbb{R}$,
+
+$$
+N(\tilde{Q})^{-1} = \frac{\tilde\Pi_+}{N_+} + \frac{\tilde\Pi_-}{N_-} = \frac{N(\tilde{Q})^*}{\Delta(\tilde{Q})},
+$$
+
+where $N(\tilde{Q})^* = N_- \tilde\Pi_+ + N_+ \tilde\Pi_-$ is the split complex conjugate of $N(\tilde{Q})$. Substituting into $\tilde{Q}^{-1} = \bar{\tilde{Q}} N(\tilde{Q})^{-1}$ expresses the inverse through the **reduced norm**
+
+$$
+\Delta(\tilde{Q}) = N_{\mathbb{H}}(\tilde{Q}_+) N_{\mathbb{H}}(\tilde{Q}_-) = N(\tilde{Q}) N(\tilde{Q})^* \in \mathbb{R},
+$$
+
+a real quartic, the product of the two ordinary quaternion norms:
+
+$$
+\tilde{Q}^{-1} = \frac{\bar{\tilde{Q}} \, N(\tilde{Q})^*}{\Delta(\tilde{Q})}, \qquad \Delta(\tilde{Q}) \neq 0.
+$$
+
+The identity is forced by multiplicativity of the split-biquaternion norm: $\tilde{Q} \bar{\tilde{Q}} N(\tilde{Q})^* = N(\tilde{Q}) N(\tilde{Q})^* = \Delta(\tilde{Q}) e_0$, so the right-hand side is a two-sided inverse of $\tilde{Q}$ exactly when $\Delta(\tilde{Q}) \neq 0$.
+
+The reduced norm gives the invertibility criterion in its sharpest form:
+
+$$
+\tilde{Q} \text{ is invertible} \iff \Delta(\tilde{Q}) \neq 0 \iff \tilde{Q}_+ \neq 0 \text{ and } \tilde{Q}_- \neq 0.
+$$
+
+The difference from the biquaternion algebra is the field. There $\mathbb{C}$ is a field, so $N(\tilde{Q}) \neq 0$ is already the criterion, and the zero divisors are exactly the nonzero elements with $N(\tilde{Q}) = 0$. Here the split-biquaternion norm takes values in $\mathbb{D}$, which is not a field, so the criterion is the invertibility of $N(\tilde{Q})$ in $\mathbb{D}$, equivalently $\Delta(\tilde{Q}) \neq 0$.
+
+### A Worked Element
+
+For the element $\tilde{Q}$ with $Q_0 = 1 + j$, $Q_1 = 2$, $Q_2 = 1 - j$, $Q_3 = 0$,
+
+$$
+N(\tilde{Q}) = (1 + j)^2 + 2^2 + (1 - j)^2 + 0^2 = (2 + 2j) + 4 + (2 - 2j) = 8.
+$$
+
+Since $8 \in \mathbb{D}^\times$, the element is a unit, and
+
+$$
+\tilde{Q} \bar{\tilde{Q}} = 8 e_0, \qquad \tilde{Q}^{-1} = \tfrac{1}{8} \bar{\tilde{Q}} = \tfrac{1}{8}\big(1 - 2 e_1 - e_2\big) + \tfrac{j}{8}\big(1 + e_2\big).
+$$
+
+The criterion is not the naive one $N(\tilde{Q}) \neq 0$. For $\tilde P = \tilde\Pi_+$ one has $N(\tilde\Pi_+) = \tilde\Pi_+ \neq 0$, yet $\tilde\Pi_+$ is a zero divisor, because $\tilde\Pi_+$ is a nonzero non-unit of $\mathbb{D}$ and so does not lie in $\mathbb{D}^\times$. In the idempotent basis $N_{\mathbb{H}}(\tilde{Q}_+) = N_{\mathbb{H}}(\tilde{Q}_-) = 8$, so $N(\tilde{Q}) = 8\tilde\Pi_+ + 8\tilde\Pi_- = 8$, matching the direct computation.
+
 ### Corollaries
 
 **Corollary.** The inverse of an invertible element is invertible, and $(\tilde{Q}^{-1})^{-1} = \tilde{Q}$.
@@ -271,7 +399,7 @@ $$
 
 where $\mathbb{H}^\times = \mathbb{H} \setminus \{0\}$ is the group of nonzero quaternions.
 
-**Proof.** In the idempotent basis, an element is invertible if and only if both idempotent components are nonzero. The multiplication is componentwise, so the group of units is the direct product of the groups of units of the two components. Each component is a copy of $\mathbb{H}$, and its group of units is $\mathbb{H}^\times$. $\square$
+**Proof.** In the idempotent basis, an element is invertible if and only if both idempotent components are nonzero. The multiplication is componentwise, so the group of units is the direct product of the groups of units of the two components. Each component is a copy of $\mathbb{H}$, and its group of units is $\mathbb{H}^\times$.
 
 ### Basic Properties
 
@@ -281,8 +409,6 @@ where $\mathbb{H}^\times = \mathbb{H} \setminus \{0\}$ is the group of nonzero q
 
 **Connected components.** The group of units is connected. Indeed, in the idempotent basis, an invertible element is a pair $(\tilde{Q}_+, \tilde{Q}_-)$ with both components nonzero, and $\mathbb{H} \setminus \{0\} \cong S^3 \times (0, \infty)$ is connected; the group of units is therefore homeomorphic to $(\mathbb{H} \setminus \{0\}) \times (\mathbb{H} \setminus \{0\})$, with a single component. (The group $\mathbb{D}^\times$ of split complex scalars, by contrast, does have four components.)
 
-**Lie group structure.** The group of units is a Lie group of dimension $8$ over $\mathbb{R}$. Its Lie algebra is $\mathbb{H}_{\mathbb{D}}$ itself, with the commutator bracket.
-
 **Center.** The center of $\mathbb{H}_{\mathbb{D}}^\times$ is the group of invertible split complex scalars, which is the group of units of $\mathbb{D}$:
 
 $$
@@ -290,16 +416,6 @@ Z(\mathbb{H}_{\mathbb{D}}^\times) = \mathbb{D}^\times = \{Q_0 \in \mathbb{D} : Q
 $$
 
 The group of units of $\mathbb{D}$ has four connected components, corresponding to the four sign combinations of the real and split parts.
-
-### The Inverse Map
-
-The **inverse map**
-
-$$
-\iota : \mathbb{H}_{\mathbb{D}}^\times \to \mathbb{H}_{\mathbb{D}}^\times, \qquad \iota(\tilde{Q}) = \tilde{Q}^{-1},
-$$
-
-is a smooth involution. Its differential at the identity is $-\mathrm{id}_{\mathbb{H}_{\mathbb{D}}}$, which is the reason the Lie algebra bracket is antisymmetric.
 
 ## The Three-Way Classification
 
@@ -323,7 +439,7 @@ The Frobenius theorem states that the only finite-dimensional associative real d
 
 ## Distribution of the Invertible Elements
 
-We now examine how the invertible elements are distributed among the four fixed-point subspaces of $\mathbb{H}_{\mathbb{D}}$ defined in the preceding article. The criterion is the same in all cases: an element is invertible if and only if its norm form is invertible in $\mathbb{D}$, equivalently if and only if both of its idempotent components are nonzero.
+We now examine how the invertible elements are distributed among the four fixed-point subspaces of $\mathbb{H}_{\mathbb{D}}$ defined in the preceding article. The criterion is the same in all cases: an element is invertible if and only if its split-biquaternion norm is invertible in $\mathbb{D}$, equivalently if and only if both of its idempotent components are nonzero.
 
 ### The Split Complex Subspace $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$
 
@@ -333,7 +449,7 @@ $$
 \tilde{Q} = Q_0 e_0, \qquad Q_0 \in \mathbb{D}.
 $$
 
-The norm form is
+The split-biquaternion norm is
 
 $$
 N(\tilde{Q}) = Q_0^2.
@@ -351,7 +467,7 @@ $$
 \tilde{Q} = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3, \qquad q_\mu \in \mathbb{R}.
 $$
 
-The norm form is
+The split-biquaternion norm is
 
 $$
 N(\tilde{Q}) = q_0^2 + q_1^2 + q_2^2 + q_3^2.
@@ -367,7 +483,7 @@ $$
 \tilde{Q} = q_0 e_0 + j q'_1 e_1 + j q'_2 e_2 + j q'_3 e_3, \qquad q_0, q'_1, q'_2, q'_3 \in \mathbb{R}.
 $$
 
-With $Q_0 = q_0$ (real) and $Q_k = j q'_k$ (purely split-imaginary), the norm form is
+With $Q_0 = q_0$ (real) and $Q_k = j q'_k$ (purely split-imaginary), the split-biquaternion norm is
 
 $$
 N(\tilde{Q}) = Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2 = q_0^2 + (j q'_1)^2 + (j q'_2)^2 + (j q'_3)^2 = q_0^2 + (q'_1)^2 + (q'_2)^2 + (q'_3)^2.
@@ -375,7 +491,7 @@ $$
 
 Since $j^2 = +1$, the split-imaginary vector components contribute $(j q'_k)^2 = j^2 (q'_k)^2 = +(q'_k)^2$.
 
-So the norm form on $\mathbb{M}_+$ is
+So the split-biquaternion norm on $\mathbb{M}_+$ is
 
 $$
 N(\tilde{Q}) = q_0^2 + (q'_1)^2 + (q'_2)^2 + (q'_3)^2,
@@ -391,7 +507,7 @@ $$
 \tilde{Q} = j r_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3, \qquad r_0, q_1, q_2, q_3 \in \mathbb{R}.
 $$
 
-The norm form is
+The split-biquaternion norm is
 
 $$
 N(\tilde{Q}) = (j r_0)^2 + q_1^2 + q_2^2 + q_3^2 = r_0^2 + q_1^2 + q_2^2 + q_3^2,
@@ -410,11 +526,11 @@ Of the four fixed-point subspaces:
 
 ## Summary
 
-The norm form $N(\tilde{Q}) = \tilde{Q} \bar{\tilde{Q}}$ is a split complex-valued multiplicative quadratic form on the split biquaternion algebra. It is anisotropic: it vanishes only at the origin, so it does not detect the zero divisors. In the idempotent basis, it is the pair of ordinary quaternion norms of the two idempotent components, which is the cleanest form of the norm form.
+The split-biquaternion norm $N(\tilde{Q}) = \tilde{Q} \bar{\tilde{Q}}$ is a split complex-valued multiplicative quadratic form on the split biquaternion algebra. It is anisotropic: it vanishes only at the origin, so it does not detect the zero divisors. In the idempotent basis, it is the pair of ordinary quaternion norms of the two idempotent components, which is the cleanest form of the split-biquaternion norm. Its polarisation is the symmetric split-complex-bilinear pairing $B(\tilde P, \tilde{Q}) = \sum_\mu P_\mu Q_\mu$.
 
-The scalar part of the Hermitian form $\tilde{Q} \tilde{Q}^\dagger$ is a real indefinite quadratic form of signature $(4, 4)$; the product itself need not be real. It does not define a Euclidean norm. The Euclidean norm is defined separately and is positive-definite but not multiplicative.
+The scalar part of the Hermitian form $\tilde{Q} \tilde{Q}^\dagger$ is a real indefinite quadratic form of signature $(4, 4)$; the product itself need not be real. Its polarisation is the Hermitian inner product $\langle \tilde P, \tilde{Q} \rangle = \sum_\mu P_\mu^* Q_\mu$. Neither defines a Euclidean norm. The Euclidean norm is defined separately and is positive-definite but not multiplicative.
 
-The invertibility criterion is: $\tilde{Q}$ is invertible if and only if $N(\tilde{Q})$ is invertible in $\mathbb{D}$, equivalently if and only if both of its idempotent components are nonzero. In the idempotent basis, this is equivalent to both idempotent components being nonzero:
+The invertibility criterion is: $\tilde{Q}$ is invertible if and only if $N(\tilde{Q})$ is invertible in $\mathbb{D}$, equivalently if and only if the reduced norm $\Delta(\tilde{Q}) = N_{\mathbb{H}}(\tilde{Q}_+) N_{\mathbb{H}}(\tilde{Q}_-)$ is nonzero, equivalently if and only if both idempotent components are nonzero:
 
 $$
 \tilde{Q} \text{ is invertible} \iff \tilde{Q}_+ \neq 0 \text{ and } \tilde{Q}_- \neq 0.
@@ -439,8 +555,11 @@ The zero divisors themselves are studied in the article on split biquaternion ze
 | $\tilde{Q}^*$ | Split complex conjugate |
 | $\tilde{Q}^\dagger = \bar{\tilde{Q}}^*$ | Hermitian conjugate |
 | $\tilde{Q}^\flat = -\tilde{Q}^\dagger$ | Anti-Hermitian conjugate |
-| $N(\tilde{Q}) = \tilde{Q} \bar{\tilde{Q}}$ | Norm form |
+| $N(\tilde{Q}) = \tilde{Q} \bar{\tilde{Q}}$ | Split-Biquaternion norm |
+| $B(\tilde P, \tilde{Q}) = \sum_\mu P_\mu Q_\mu$ | Polarisation of the split-biquaternion norm |
+| $\langle \tilde P, \tilde{Q} \rangle = \sum_\mu P_\mu^* Q_\mu$ | Hermitian inner product |
 | $\tilde{Q} \tilde{Q}^\dagger = \sum_\mu (q_\mu^2 - q'^2_\mu)$ | Hermitian form (signature $(4,4)$) |
+| $\Delta(\tilde{Q}) = N_{\mathbb{H}}(\tilde{Q}_+) N_{\mathbb{H}}(\tilde{Q}_-) = N(\tilde{Q}) N(\tilde{Q})^*$ | Reduced norm (determinant) |
 | $\|\tilde{Q}\|_E = \sqrt{\sum_\mu (q_\mu^2 + q'^2_\mu)}$ | Euclidean norm |
 | $\tilde{Q}^{-1} = \bar{\tilde{Q}}/N(\tilde{Q})$ | Inverse |
 | $\mathbb{H}_{\mathbb{D}}^\times$ | Group of units |
@@ -455,7 +574,7 @@ The zero divisors themselves are studied in the article on split biquaternion ze
 ## Further Reading
 
 - William Rowan Hamilton, *Lectures on Quaternions* (Hodges and Smith, Dublin, 1853), for the original formulation of quaternions and their complexification.
-- J. P. Ward, *Quaternions and Cayley Numbers: Algebra and Applications* (Kluwer, Dordrecht, 1997), for the algebraic structure and the norm form of the split biquaternions.
+- J. P. Ward, *Quaternions and Cayley Numbers: Algebra and Applications* (Kluwer, Dordrecht, 1997), for the algebraic structure and the split-biquaternion norm.
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the connection to Clifford algebras.
 - John H. Conway and Derek A. Smith, *On Quaternions and Octonions* (A K Peters, 2003), for the classification of real algebras.
 - F. Brackx, R. Delanghe, and F. Sommen, *Clifford Analysis* (Pitman, 1982), for the general Clifford analysis.

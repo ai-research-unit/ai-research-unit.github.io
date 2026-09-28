@@ -29,7 +29,7 @@ $$
 \int_a^t(t-s)^{\alpha-1}\int_a^s(s-\tau)^{\beta-1}f(\tau)\,d\tau\,ds = B(\alpha,\beta)\int_a^t(t-\tau)^{\alpha+\beta-1}f(\tau)\,d\tau ,
 $$
 
-with $B(\alpha,\beta) = \Gamma(\alpha)\Gamma(\beta)/\Gamma(\alpha+\beta)$; dividing by $\Gamma(\alpha)\Gamma(\beta)$ gives the law, and the symmetry in $\alpha,\beta$ the commutativity. $\square$
+with $B(\alpha,\beta) = \Gamma(\alpha)\Gamma(\beta)/\Gamma(\alpha+\beta)$; dividing by $\Gamma(\alpha)\Gamma(\beta)$ gives the law, and the symmetry in $\alpha,\beta$ the commutativity.
 
 **Example.** $I_a^\alpha(t-a)^\beta = \frac{\Gamma(\beta+1)}{\Gamma(\beta+\alpha+1)}(t-a)^{\beta+\alpha}$ for $\beta>-1$, which is the fundamental computation from which most others follow; in particular $I_a^\alpha 1 = (t-a)^\alpha/\Gamma(\alpha+1)$, which vanishes at $t=a$ precisely when $\alpha>0$.
 
@@ -57,7 +57,7 @@ $$
 
 In particular $D_a^\alpha$ of a constant is $\frac{(t-a)^{-\alpha}}{\Gamma(1-\alpha)}$ for $0<\alpha<1$, whereas the Caputo derivative of a constant is zero.
 
-*Proof.* For integer $\alpha$ the operator $I^{0}$ is the identity and the definitions reduce to $f^{(n)}$. For the difference, write $f$ as its Taylor polynomial of order $n-1$ at $a$ plus a remainder whose first $n$ derivatives vanish at $a$; the Caputo derivative kills the polynomial and acts on the remainder, while the Riemann–Liouville derivative picks up the contribution of the polynomial, computed term by term from $D_a^\alpha(t-a)^k = \frac{\Gamma(k+1)}{\Gamma(k+1-\alpha)}(t-a)^{k-\alpha}$. $\square$
+*Proof.* For integer $\alpha$ the operator $I^{0}$ is the identity and the definitions reduce to $f^{(n)}$. For the difference, write $f$ as its Taylor polynomial of order $n-1$ at $a$ plus a remainder whose first $n$ derivatives vanish at $a$; the Caputo derivative kills the polynomial and acts on the remainder, while the Riemann–Liouville derivative picks up the contribution of the polynomial, computed term by term from $D_a^\alpha(t-a)^k = \frac{\Gamma(k+1)}{\Gamma(k+1-\alpha)}(t-a)^{k-\alpha}$.
 
 The difference is not a technicality. The Caputo derivative is the one for which the initial conditions of a fractional differential equation are the ordinary values $f^{(k)}(a)$, $k<n$, and for which the derivative of a constant vanishes; the Riemann–Liouville derivative is the one that composes cleanly with the fractional integral. The two operators are the two natural completions of the integer-order derivative to non-integer order, and the theory uses both.
 
@@ -73,7 +73,7 @@ $$
 I_a^\alpha\,{}^C D_a^\alpha f(t) = f(t) - \sum_{k=0}^{n-1}\frac{(t-a)^k}{k!}f^{(k)}(a).
 $$
 
-*Proof.* The first identity is the fundamental theorem of calculus applied to $I^{n-\alpha}f$. For the second, apply the operator identity $I^\alpha D^n I^{n-\alpha}$ and peel off the boundary terms of the repeated integration; the Caputo identity follows from $I^\alpha I^{n-\alpha}f^{(n)} = I^nf^{(n)}$ and the $n$-fold integration formula. $\square$
+*Proof.* The first identity is the fundamental theorem of calculus applied to $I^{n-\alpha}f$. For the second, apply the operator identity $I^\alpha D^n I^{n-\alpha}$ and peel off the boundary terms of the repeated integration; the Caputo identity follows from $I^\alpha I^{n-\alpha}f^{(n)} = I^nf^{(n)}$ and the $n$-fold integration formula.
 
 **Definition.** The **Grünwald–Letnikov derivative** of order $\alpha$ is the limit of the finite-difference quotient
 
@@ -85,7 +85,7 @@ with $\binom{\alpha}{k} = \frac{\Gamma(\alpha+1)}{\Gamma(k+1)\Gamma(\alpha-k+1)}
 
 **Proposition.** For $f$ of class $C^n$ with $n=\lceil\alpha\rceil$ the Grünwald–Letnikov derivative agrees with the Riemann–Liouville derivative; for $\alpha = n$ the generating function $(1-z)^n$ has finitely many nonzero coefficients and the definition reduces to the $n$-th finite difference.
 
-*Proof.* The coefficients of $(1-z)^\alpha$ are $(-1)^k\binom{\alpha}{k}$, so the sum is the $\alpha$-th finite difference of $f$; expanding $f(t-kh)$ in a Taylor polynomial and summing against the binomial coefficients, whose partial sums have the known asymptotics, gives the Riemann–Liouville derivative in the limit. For $\alpha=n$ the generating function is a polynomial of degree $n$, so only $k\le n$ contribute and the quotient is the $n$-th difference quotient. $\square$
+*Proof.* The coefficients of $(1-z)^\alpha$ are $(-1)^k\binom{\alpha}{k}$, so the sum is the $\alpha$-th finite difference of $f$; expanding $f(t-kh)$ in a Taylor polynomial and summing against the binomial coefficients, whose partial sums have the known asymptotics, gives the Riemann–Liouville derivative in the limit. For $\alpha=n$ the generating function is a polynomial of degree $n$, so only $k\le n$ contribute and the quotient is the $n$-th difference quotient.
 
 The Grünwald–Letnikov form is the definition best suited to computation, and it is the definition that shows the nonlocality most plainly: the value of $D^\alpha f$ at $t$ depends on the values of $f$ at all earlier points $t-kh$ down to $0$, with weights decaying like $k^{-\alpha-1}$.
 
@@ -111,7 +111,7 @@ $$
 \int_0^\infty e^{-st}t^{\beta-1}E_{\alpha,\beta}(\lambda t^\alpha)dt = \sum_{k\ge0}\frac{\lambda^k}{\Gamma(\alpha k+\beta)}\cdot\frac{\Gamma(\alpha k+\beta)}{s^{\alpha k+\beta}} = \sum_{k\ge0}\lambda^ks^{-\alpha k-\beta} ,
 $$
 
-which is the displayed geometric series, absolutely convergent for $|s|>|\lambda|^{1/\alpha}$. $\square$
+which is the displayed geometric series, absolutely convergent for $|s|>|\lambda|^{1/\alpha}$.
 
 **Theorem (asymptotics).** For $0<\alpha<1$ and $\lambda>0$,
 
@@ -121,7 +121,7 @@ $$
 
 so the function decays algebraically and not exponentially; for $1<\alpha<2$ the decay is algebraic with an oscillation. Near $t=0$, $E_\alpha(-\lambda t^\alpha) = 1 - \frac{\lambda t^\alpha}{\Gamma(\alpha+1)} + O(t^{2\alpha})$.
 
-*Proof.* Quoted as standard. The expansion follows from the integral representation $E_\alpha(-z) = \int_\gamma \frac{e^{\zeta}\zeta^{\alpha-1}}{\zeta^\alpha+z}d\zeta$ and the residue at the pole $\zeta$ with $\zeta^\alpha = -z$; the pole contributes $t^{-\alpha}$. $\square$
+*Proof.* Quoted as standard. The expansion follows from the integral representation $E_\alpha(-z) = \int_\gamma \frac{e^{\zeta}\zeta^{\alpha-1}}{\zeta^\alpha+z}d\zeta$ and the residue at the pole $\zeta$ with $\zeta^\alpha = -z$; the pole contributes $t^{-\alpha}$.
 
 The algebraic decay is the quantitative content of anomalous relaxation: a fractional relaxation equation relaxes to equilibrium as a power of the time rather than exponentially, and the fractional order $\alpha$ is the exponent.
 
@@ -145,7 +145,7 @@ $$
 
 For general $\alpha$ with $n=\lceil\alpha\rceil$, the equivalent equation is $y(t) = \sum_{k<n}\frac{t^k}{k!}y_k + I_0^\alpha f(\cdot,y)(t)$.
 
-*Proof.* Apply $I_0^\alpha$ to both sides of the equation and use the composition identity $I_0^\alpha\,{}^C D_0^\alpha y = y - \sum_{k<n}\frac{t^k}{k!}y^{(k)}(0)$; conversely, applying ${}^C D_0^\alpha$ to the integral equation returns the equation, by the same identity read backwards. $\square$
+*Proof.* Apply $I_0^\alpha$ to both sides of the equation and use the composition identity $I_0^\alpha\,{}^C D_0^\alpha y = y - \sum_{k<n}\frac{t^k}{k!}y^{(k)}(0)$; conversely, applying ${}^C D_0^\alpha$ to the integral equation returns the equation, by the same identity read backwards.
 
 **Theorem (existence and uniqueness).** Let $\alpha\in(0,1)$, let $f:[0,T]\times X\to X$ be continuous and Lipschitz in the second variable with constant $L$, and let $y_0 \in X$. Then on the interval $[0,T_*]$ with
 
@@ -161,7 +161,7 @@ $$
 \|\Lambda y - \Lambda z\|_\infty \le L\,\|I_0^\alpha\| \cdot \|y-z\|_\infty, \qquad \|I_0^\alpha\|\le \frac{(T')^\alpha}{\Gamma(\alpha+1)},
 $$
 
-as follows from $I_0^\alpha 1 = t^\alpha/\Gamma(\alpha+1)$ and the positivity of the kernel; choosing $T'$ with $L(T')^\alpha/\Gamma(\alpha+1)<1$ makes $\Lambda$ a contraction, the contraction mapping principle gives a unique fixed point, and the fixed point is exactly the solution by the equivalence theorem. Iterating over successive intervals gives the maximal interval. $\square$
+as follows from $I_0^\alpha 1 = t^\alpha/\Gamma(\alpha+1)$ and the positivity of the kernel; choosing $T'$ with $L(T')^\alpha/\Gamma(\alpha+1)<1$ makes $\Lambda$ a contraction, the contraction mapping principle gives a unique fixed point, and the fixed point is exactly the solution by the equivalence theorem. Iterating over successive intervals gives the maximal interval.
 
 The proof is the Picard argument verbatim, with the single change that the kernel is weakly singular: the factor $T^\alpha/\Gamma(\alpha+1)$ replaces the factor $T$ of the ordinary theory, and the singularity is integrable, so no separate treatment is needed.
 
@@ -173,7 +173,7 @@ $$
 
 and more generally the solution with $y(0)=y_0$ of ${}^C D_0^\alpha y - \lambda y = t^{\beta-1}g(t)$ is given by the convolution of the Mittag-Leffler kernel with the forcing term.
 
-*Proof.* The Laplace transform of the equation, using $\mathcal L\{{}^C D_0^\alpha y\}(s) = s^\alpha\hat y(s) - s^{\alpha-1}y_0$, gives $\hat y(s) = \frac{s^{\alpha-1}y_0}{s^\alpha-\lambda} = \frac{y_0s^{-1}}{1-\lambda s^{-\alpha}}$; the inverse transform by the previous theorem with $\beta=1$ is $y_0E_\alpha(\lambda t^\alpha)$. $\square$
+*Proof.* The Laplace transform of the equation, using $\mathcal L\{{}^C D_0^\alpha y\}(s) = s^\alpha\hat y(s) - s^{\alpha-1}y_0$, gives $\hat y(s) = \frac{s^{\alpha-1}y_0}{s^\alpha-\lambda} = \frac{y_0s^{-1}}{1-\lambda s^{-\alpha}}$; the inverse transform by the previous theorem with $\beta=1$ is $y_0E_\alpha(\lambda t^\alpha)$.
 
 **Example (stretched and algebraic relaxation).** For $0<\alpha<1$ and $\lambda>0$ the solution of ${}^C D_0^\alpha y = -\lambda y$ is $y = y_0E_\alpha(-\lambda t^\alpha)$, which begins at $1$, decays initially like $1 - \lambda t^\alpha/\Gamma(\alpha+1)$, and at large time decays like $y_0/(\lambda\Gamma(1-\alpha))\,t^{-\alpha}$; for $\alpha=1$ it is the exponential $e^{-\lambda t}$. The limiting cases are exact: as $\alpha\to1$ the Mittag-Leffler function tends to the exponential, and the algebraic tail disappears.
 
@@ -199,7 +199,7 @@ $$
 K_t^{(\alpha)}(x) = \frac{1}{(2\pi)^n}\int_{\mathbb{R}^n}e^{ix\cdot\xi}E_\alpha\bigl(-|\xi|^2t^\alpha\bigr)d\xi .
 $$
 
-*Proof.* Taking the Fourier transform in $x$ turns the equation into the fractional ordinary equation ${}^C D_0^\alpha\hat u = -|\xi|^2\hat u$ with $\hat u(\xi,0)=\hat f(\xi)$, whose solution is the Mittag-Leffler function by the preceding theorem. $\square$
+*Proof.* Taking the Fourier transform in $x$ turns the equation into the fractional ordinary equation ${}^C D_0^\alpha\hat u = -|\xi|^2\hat u$ with $\hat u(\xi,0)=\hat f(\xi)$, whose solution is the Mittag-Leffler function by the preceding theorem.
 
 **Theorem (subdiffusive scaling).** The kernel $K_t^{(\alpha)}$ is a probability density for each $t>0$, it is self-similar,
 
@@ -215,7 +215,7 @@ $$
 
 with a constant $c$ depending on $\alpha$ and $n$. Consequently the second moment $\int|x|^2K_t^{(\alpha)}$ is infinite for $0<\alpha<1$, while the truncated second moment over the ball $|x|\le R$ with $R$ large compared with $t^{\alpha/2}$ grows as $C\,t^{\alpha}$. For $\alpha=1$ the kernel is the Gaussian heat kernel of the classical theory and the second moment is $2nt$.
 
-*Proof.* The scaling is the substitution $\xi\mapsto t^{-\alpha/2}\xi$ in the Fourier integral. The tail follows from the behaviour of $E_\alpha(-|\xi|^2t^\alpha)$ near $\xi=0$, namely $1 - c_1|\xi|^2t^\alpha + o(|\xi|^2)$; a density whose Fourier transform has this expansion has the tail $|x|^{-n-2}$ with coefficient proportional to $t^\alpha$, and its second moment diverges because $\int R^2\cdot R^{-n-2}R^{n-1}dR = \int R^{-1}dR$ diverges at infinity. Truncating at $R$ recovers the growth $t^\alpha$. $\square$
+*Proof.* The scaling is the substitution $\xi\mapsto t^{-\alpha/2}\xi$ in the Fourier integral. The tail follows from the behaviour of $E_\alpha(-|\xi|^2t^\alpha)$ near $\xi=0$, namely $1 - c_1|\xi|^2t^\alpha + o(|\xi|^2)$; a density whose Fourier transform has this expansion has the tail $|x|^{-n-2}$ with coefficient proportional to $t^\alpha$, and its second moment diverges because $\int R^2\cdot R^{-n-2}R^{n-1}dR = \int R^{-1}dR$ diverges at infinity. Truncating at $R$ recovers the growth $t^\alpha$.
 
 **Remark (anomalous diffusion as mathematics).** The exponent of the mean square displacement, $\alpha$ instead of $1$, is the defining feature of subdiffusion, and it is a statement about the scaling of the kernel. The equation is mathematically distinct from the heat equation not only in its solutions but in its operator theory: the operator ${}^C D_t^\alpha$ does not generate a semigroup in the ordinary sense, and the solution operator is not a one-parameter group but a family obeying an integro-differential evolution equation. The general theory of such evolution families belongs with the semigroups and evolution equations of this Part, where the generation theorem for the classical case is proved; the fractional case is the boundary of that theory, and the Mittag-Leffler function replaces the exponential throughout.
 
@@ -237,7 +237,7 @@ $$
 
 the Bochner integral converging in the operator norm.
 
-*Proof.* The semigroup law for the first formula follows from the resolvent identity and the fact that the Laplace transform of the product of two power kernels is the power kernel of the sum, evaluated at the resolvent; the second formula follows from the first by the standard representation of the resolvent as the Laplace transform of the semigroup, $\int_0^\infty e^{-\lambda t}e^{-tA}dt = (\lambda I+A)^{-1}$, and the beta integral. $\square$
+*Proof.* The semigroup law for the first formula follows from the resolvent identity and the fact that the Laplace transform of the product of two power kernels is the power kernel of the sum, evaluated at the resolvent; the second formula follows from the first by the standard representation of the resolvent as the Laplace transform of the semigroup, $\int_0^\infty e^{-\lambda t}e^{-tA}dt = (\lambda I+A)^{-1}$, and the beta integral.
 
 The two formulas coincide on their common domain and give the fractional power in terms of a semigroup that is assumed to exist; the generation theory that decides when it does — the Hille–Yosida and Lumer–Phillips theorems, and the analytic semigroup setting in which $A^\alpha$ is defined for complex $\alpha$ — is the content of the article of this Part on semigroups and evolution equations. What belongs to this article is the scalar theory of the fractional integral and derivative and the way it is used to write the fractional equations as Volterra equations; the operator-valued theory is the functional-analytic continuation of the same formulas.
 

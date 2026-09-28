@@ -431,7 +431,7 @@ $$
 
 where $F_+$ and $F_-$ are the corresponding real special functions.
 
-**Proof.** The split complex algebra is isomorphic to $\mathbb{R} \oplus \mathbb{R}$ via the idempotent decomposition. Every operation in the split complex algebra corresponds to the componentwise operation in $\mathbb{R} \oplus \mathbb{R}$. Every split complex special function is defined by a formula built from these operations, so it decomposes componentwise. $\square$
+**Proof.** The split complex algebra is isomorphic to $\mathbb{R} \oplus \mathbb{R}$ via the idempotent decomposition. Every operation in the split complex algebra corresponds to the componentwise operation in $\mathbb{R} \oplus \mathbb{R}$. Every split complex special function is defined by a formula built from these operations, so it decomposes componentwise.
 
 This theorem is the reason split complex special functions are simpler than complex special functions. In the complex case, the special functions are genuinely new objects, because the complex algebra is a field and the exponential is periodic. In the split complex case, the special functions are pairs of real special functions, because the split complex algebra is a product of two copies of $\mathbb{R}$ and the exponential is injective.
 

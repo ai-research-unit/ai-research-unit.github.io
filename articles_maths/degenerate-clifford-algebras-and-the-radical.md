@@ -25,17 +25,17 @@ $$
 v \in \operatorname{rad}(q) \implies q(v) = B(v, v) = 0.
 $$
 
-**Proof.** Take $w = v$ in the defining condition. $\square$
+**Proof.** Take $w = v$ in the defining condition.
 
 **Proposition.** The radical is orthogonal to all of $V$ and contains every vector orthogonal to all of $V$; hence it is the largest totally isotropic subspace orthogonal to the whole space. For a subspace $W$ complementary to the radical, the restriction $q|_W$ is non-degenerate.
 
-**Proof.** Orthogonality to all of $V$ is the definition. If $W$ is a complement, $V = W \oplus \operatorname{rad}(q)$, then a vector $w \in W$ orthogonal to all of $W$ is orthogonal to all of $V$, hence lies in $W \cap \operatorname{rad}(q) = 0$. $\square$
+**Proof.** Orthogonality to all of $V$ is the definition. If $W$ is a complement, $V = W \oplus \operatorname{rad}(q)$, then a vector $w \in W$ orthogonal to all of $W$ is orthogonal to all of $V$, hence lies in $W \cap \operatorname{rad}(q) = 0$.
 
 ### The Reduced Form
 
 **Proposition.** The form $q$ induces a quadratic form $\bar{q}$ on the quotient $V/\operatorname{rad}(q)$ by $\bar{q}(v + \operatorname{rad}(q)) = q(v)$, and the polar form of $\bar{q}$ is the induced bilinear form on the quotient; when $\operatorname{rad}(q)$ is a direct summand with complement $W$, the quotient is identified with $W$ and $\bar{q}$ with $q|_W$.
 
-**Proof.** The form $q$ is constant on the cosets of the radical because for $r \in \operatorname{rad}(q)$ one has $q(v + r) = q(v) + 2B(v, r) + q(r) = q(v)$, using $B(v, r) = 0$ and $q(r) = 0$. The polar form descends by the same computation applied to $B$. $\square$
+**Proof.** The form $q$ is constant on the cosets of the radical because for $r \in \operatorname{rad}(q)$ one has $q(v + r) = q(v) + 2B(v, r) + q(r) = q(v)$, using $B(v, r) = 0$ and $q(r) = 0$. The polar form descends by the same computation applied to $B$.
 
 **Remark.** Over a field every subspace is a direct summand, so a complement $W$ always exists and $\bar{q}$ is a form on $W$. Over a general commutative ring the existence of a complement is an additional hypothesis, and it is assumed throughout the decomposition below.
 
@@ -73,7 +73,7 @@ $$
 \mathrm{Cl}(V, q) \cong \mathrm{Cl}(W, \bar{q}) \,\hat{\otimes}\, \mathrm{Cl}(\operatorname{rad}(q), 0),
 $$
 
-and $\mathrm{Cl}(\operatorname{rad}(q), 0) \cong \Lambda(\operatorname{rad}(q))$ because the defining relation $v^2 = 0$ on the second factor is exactly the defining relation of the exterior algebra. $\square$
+and $\mathrm{Cl}(\operatorname{rad}(q), 0) \cong \Lambda(\operatorname{rad}(q))$ because the defining relation $v^2 = 0$ on the second factor is exactly the defining relation of the exterior algebra.
 
 **Proof by relations.** The same statement can be read off from the fundamental relation. Write $V = W \oplus \operatorname{rad}(q)$ and let $v, w \in W$ and $r, s \in \operatorname{rad}(q)$. The fundamental relation gives three families:
 
@@ -81,13 +81,13 @@ and $\mathrm{Cl}(\operatorname{rad}(q), 0) \cong \Lambda(\operatorname{rad}(q))$
 - $vr + rv = 2B(v, r)\cdot 1 = 0$ for $v \in W$, $r \in \operatorname{rad}(q)$, so the generators of $W$ and of the radical anticommute;
 - $rs + sr = 2B(r, s)\cdot 1 = 0$ for $r, s \in \operatorname{rad}(q)$, so the radical generators anticommute and each squares to zero, the relations of $\Lambda(\operatorname{rad}(q))$.
 
-The first family generates the first factor, the third generates the second, and the second family is precisely the sign rule of the graded tensor product. $\square$
+The first family generates the first factor, the third generates the second, and the second family is precisely the sign rule of the graded tensor product.
 
 ### Dependence on the Complement
 
 **Proposition.** The isomorphism depends on the choice of complement $W$. Two complements $W, W'$ of the radical give algebras $\mathrm{Cl}(W, \bar{q})$ and $\mathrm{Cl}(W', \bar{q})$ that are isomorphic — the two projections of $W'$ onto $W$ along the radical define an isometry and hence an isomorphism of Clifford algebras — but the isomorphism between the two tensor product decompositions of $\mathrm{Cl}(V, q)$ depends on that choice.
 
-**Proof.** The projection $W' \to W$ along $\operatorname{rad}(q)$ is an isometry for $\bar{q}$ because $\bar{q}$ is constant on cosets of the radical; it is bijective by symmetry of the decomposition. The induced isomorphism of Clifford algebras is the one from functoriality. $\square$
+**Proof.** The projection $W' \to W$ along $\operatorname{rad}(q)$ is an isometry for $\bar{q}$ because $\bar{q}$ is constant on cosets of the radical; it is bijective by symmetry of the decomposition. The induced isomorphism of Clifford algebras is the one from functoriality.
 
 ## The Nilpotent Factor and the Rank
 
@@ -115,7 +115,7 @@ $$
 \operatorname{rank}\mathrm{Cl}(V, q) = 2^{n - r_0} \cdot 2^{r_0} = 2^n.
 $$
 
-**Pro.** The graded tensor product of two free modules of ranks $2^{n - r_0}$ and $2^{r_0}$ is free of rank $2^{n - r_0} \cdot 2^{r_0} = 2^n$. The rank of the non-degenerate factor is the dimension count. $\square$
+**Pro.** The graded tensor product of two free modules of ranks $2^{n - r_0}$ and $2^{r_0}$ is free of rank $2^{n - r_0} \cdot 2^{r_0} = 2^n$. The rank of the non-degenerate factor is the dimension count.
 
 So the presence of a radical changes the structure but not the rank: it replaces part of the algebra by an exterior algebra on the same number of generators.
 
@@ -124,66 +124,66 @@ So the presence of a radical changes the structure but not the rank: it replaces
 **Theorem.** The image of $\operatorname{rad}(q)$ generates a two-sided ideal
 
 $$
-\mathfrak{n} = \operatorname{rad}(q)\cdot \mathrm{Cl}(V, q) = \mathrm{Cl}(V, q)\cdot \operatorname{rad}(q),
+\mathrm{N} = \operatorname{rad}(q)\cdot \mathrm{Cl}(V, q) = \mathrm{Cl}(V, q)\cdot \operatorname{rad}(q),
 $$
 
-which under the decomposition is $\mathrm{Cl}(W, \bar{q}) \otimes \bigoplus_{k\geq 1}\Lambda^k(\operatorname{rad}(q))$. The ideal $\mathfrak{n}$ is nilpotent, and the quotient $\mathrm{Cl}(V, q)/\mathfrak{n}$ is $\mathrm{Cl}(W, \bar{q})$. For a field $F$ of characteristic not $2$, $\mathfrak{n}$ is the Jacobson radical of $\mathrm{Cl}(V, q)$.
+which under the decomposition is $\mathrm{Cl}(W, \bar{q}) \otimes \bigoplus_{k\geq 1}\Lambda^k(\operatorname{rad}(q))$. The ideal $\mathrm{N}$ is nilpotent, and the quotient $\mathrm{Cl}(V, q)/\mathrm{N}$ is $\mathrm{Cl}(W, \bar{q})$. For a field $F$ of characteristic not $2$, $\mathrm{N}$ is the Jacobson radical of $\mathrm{Cl}(V, q)$.
 
-**Proof.** For $r \in \operatorname{rad}(q)$ and $x \in \mathrm{Cl}(V, q)$ the products $rx$ and $xr$ lie in $\mathfrak{n}$, so $\mathfrak{n}$ is a two-sided ideal; the decomposition identifies it with the positive part of the exterior factor tensored with the non-degenerate factor. Its $(r_0+1)$-st power vanishes because a product of $r_0 + 1$ radical generators vanishes, so $\mathfrak{n}^{r_0+1} = 0$. The quotient is obtained by setting the radical generators to zero, which is the defining presentation of $\mathrm{Cl}(W, \bar{q})$. A nilpotent ideal is contained in the Jacobson radical, and when $\mathrm{Cl}(W, \bar{q})$ is semisimple the quotient has zero Jacobson radical, so the two coincide. $\square$
+**Proof.** For $r \in \operatorname{rad}(q)$ and $x \in \mathrm{Cl}(V, q)$ the products $rx$ and $xr$ lie in $\mathrm{N}$, so $\mathrm{N}$ is a two-sided ideal; the decomposition identifies it with the positive part of the exterior factor tensored with the non-degenerate factor. Its $(r_0+1)$-st power vanishes because a product of $r_0 + 1$ radical generators vanishes, so $\mathrm{N}^{r_0+1} = 0$. The quotient is obtained by setting the radical generators to zero, which is the defining presentation of $\mathrm{Cl}(W, \bar{q})$. A nilpotent ideal is contained in the Jacobson radical, and when $\mathrm{Cl}(W, \bar{q})$ is semisimple the quotient has zero Jacobson radical, so the two coincide.
 
 **Corollary.** For a field $F$ of characteristic not $2$, $\mathrm{Cl}(V, q)$ is semisimple if and only if $q$ is non-degenerate.
 
-**Proof.** If $q$ is non-degenerate then $\mathfrak{n} = 0$ and the algebra is $\mathrm{Cl}(W, \bar{q})$, which is semisimple as a finite-dimensional algebra over a field that is either simple or a product of two simple algebras. If $q$ is degenerate then $\mathfrak{n} \neq 0$ is nilpotent, so the algebra is not semisimple. $\square$
+**Proof.** If $q$ is non-degenerate then $\mathrm{N} = 0$ and the algebra is $\mathrm{Cl}(W, \bar{q})$, which is semisimple as a finite-dimensional algebra over a field that is either simple or a product of two simple algebras. If $q$ is degenerate then $\mathrm{N} \neq 0$ is nilpotent, so the algebra is not semisimple.
 
 ### The Nilpotency Index
 
 **Theorem.** With the notation of the decomposition,
 
 $$
-\mathfrak{n}^k = \mathrm{Cl}(W, \bar{q}) \otimes \bigoplus_{j \geq k} \Lambda^j(\operatorname{rad}(q)),
+\mathrm{N}^k = \mathrm{Cl}(W, \bar{q}) \otimes \bigoplus_{j \geq k} \Lambda^j(\operatorname{rad}(q)),
 $$
 
-and if the radical is free of rank $r_0$ the nilpotency index of $\mathfrak{n}$ is exactly $r_0 + 1$.
+and if the radical is free of rank $r_0$ the nilpotency index of $\mathrm{N}$ is exactly $r_0 + 1$.
 
-**Proof.** A product of $k$ elements of $\mathfrak{n}$ involves at least $k$ radical generators in each of its terms after expansion in a basis of $\operatorname{rad}(q)$, so $\mathfrak{n}^k$ is contained in the displayed submodule. Conversely that submodule is spanned by the products $x\,r_{i_1}\cdots r_{i_j}$ with $x \in \mathrm{Cl}(W, \bar q)$ and $j \geq k$, each of which is a product of $k$ elements of $\mathfrak{n}$ when $j \geq k$: write it as $\bigl(x r_{i_1}\cdots r_{i_{j-k}}\bigr)\bigl(r_{i_{j-k+1}}\bigr)\cdots\bigl(r_{i_j}\bigr)$. Hence the two submodules coincide. For the index, $\Lambda^{r_0}(\operatorname{rad}(q)) \cong R$ with generator the product of a basis, which is nonzero in the free case; therefore $\mathfrak{n}^{r_0} = \mathrm{Cl}(W,\bar q)\otimes\Lambda^{r_0}(\operatorname{rad}(q))$ is nonzero as a free $R$-module, while $\mathfrak{n}^{r_0+1} = 0$ since there is no exterior degree above $r_0$. $\square$
+**Proof.** A product of $k$ elements of $\mathrm{N}$ involves at least $k$ radical generators in each of its terms after expansion in a basis of $\operatorname{rad}(q)$, so $\mathrm{N}^k$ is contained in the displayed submodule. Conversely that submodule is spanned by the products $x\,r_{i_1}\cdots r_{i_j}$ with $x \in \mathrm{Cl}(W, \bar q)$ and $j \geq k$, each of which is a product of $k$ elements of $\mathrm{N}$ when $j \geq k$: write it as $\bigl(x r_{i_1}\cdots r_{i_{j-k}}\bigr)\bigl(r_{i_{j-k+1}}\bigr)\cdots\bigl(r_{i_j}\bigr)$. Hence the two submodules coincide. For the index, $\Lambda^{r_0}(\operatorname{rad}(q)) \cong R$ with generator the product of a basis, which is nonzero in the free case; therefore $\mathrm{N}^{r_0} = \mathrm{Cl}(W,\bar q)\otimes\Lambda^{r_0}(\operatorname{rad}(q))$ is nonzero as a free $R$-module, while $\mathrm{N}^{r_0+1} = 0$ since there is no exterior degree above $r_0$.
 
-Thus the nilpotency index grows linearly with the rank of the radical; in the non-degenerate case $\mathfrak{n} = 0$ and the algebra has no nilpotent factor at all.
+Thus the nilpotency index grows linearly with the rank of the radical; in the non-degenerate case $\mathrm{N} = 0$ and the algebra has no nilpotent factor at all.
 
 ### The Filtration by the Radical Ideal
 
-The ideal $\mathfrak{n}$ is generated by the image of $\operatorname{rad}(q)$ in $\mathrm{Cl}(V,q)$, so it is independent of any choice of complement, and so is the decreasing filtration
+The ideal $\mathrm{N}$ is generated by the image of $\operatorname{rad}(q)$ in $\mathrm{Cl}(V,q)$, so it is independent of any choice of complement, and so is the decreasing filtration
 
 $$
-\mathrm{Cl}(V, q) = \mathfrak{n}^0 \supseteq \mathfrak{n}^1 \supseteq \mathfrak{n}^2 \supseteq \cdots \supseteq \mathfrak{n}^{r_0+1} = 0.
+\mathrm{Cl}(V, q) = \mathrm{N}^0 \supseteq \mathrm{N}^1 \supseteq \mathrm{N}^2 \supseteq \cdots \supseteq \mathrm{N}^{r_0+1} = 0.
 $$
 
 **Proposition.** The successive quotients have rank
 
 $$
-\operatorname{rank}\bigl(\mathfrak{n}^k/\mathfrak{n}^{k+1}\bigr) = 2^{\,n - r_0}\binom{r_0}{k},
+\operatorname{rank}\bigl(\mathrm{N}^k/\mathrm{N}^{k+1}\bigr) = 2^{\,n - r_0}\binom{r_0}{k},
 $$
 
 so the associated graded has total rank $\sum_k 2^{n-r_0}\binom{r_0}{k} = 2^{n-r_0}\cdot 2^{r_0} = 2^n$, which is the rank of the algebra.
 
-**Proof.** Choosing a complement identifies $\mathfrak{n}^k$ with $\mathrm{Cl}(W,\bar q)\otimes\bigoplus_{j\geq k}\Lambda^j(\operatorname{rad}(q))$ by the theorem above, and $\Lambda^k(\operatorname{rad}(q))$ is free of rank $\binom{r_0}{k}$; hence the quotient $\mathfrak{n}^k/\mathfrak{n}^{k+1}$ is free of the stated rank, and the identification of the associated graded is independent of the complement because the filtration is. $\square$
+**Proof.** Choosing a complement identifies $\mathrm{N}^k$ with $\mathrm{Cl}(W,\bar q)\otimes\bigoplus_{j\geq k}\Lambda^j(\operatorname{rad}(q))$ by the theorem above, and $\Lambda^k(\operatorname{rad}(q))$ is free of rank $\binom{r_0}{k}$; hence the quotient $\mathrm{N}^k/\mathrm{N}^{k+1}$ is free of the stated rank, and the identification of the associated graded is independent of the complement because the filtration is.
 
-So the filtration detects the rank of the radical through the length of the filtration and the ranks of its quotients: the rank of $\mathfrak{n}/\mathfrak{n}^2$ is $2^{n-r_0}r_0$, which together with the length $r_0 + 1$ of the filtration determines $r_0$, and then $2^n$ determines $n - r_0$. This is the precise sense in which the Clifford algebra of a degenerate form retains the rank of the radical, even though it does not retain the form on it.
+So the filtration detects the rank of the radical through the length of the filtration and the ranks of its quotients: the rank of $\mathrm{N}/\mathrm{N}^2$ is $2^{n-r_0}r_0$, which together with the length $r_0 + 1$ of the filtration determines $r_0$, and then $2^n$ determines $n - r_0$. This is the precise sense in which the Clifford algebra of a degenerate form retains the rank of the radical, even though it does not retain the form on it.
 
 ### The Split Extension
 
 The decomposition also describes the algebra as an extension of a semisimple algebra by a nilpotent ideal.
 
-**Theorem.** Let $\mathfrak{g} = \mathrm{Cl}(W, \bar q) \otimes 1$ be the image of the reduced Clifford algebra in $\mathrm{Cl}(V, q)$. Then $\mathfrak{g}$ is a subalgebra, $\mathfrak{n}$ is a two-sided ideal, $\mathfrak{g} \cap \mathfrak{n} = 0$ and $\mathfrak{g} + \mathfrak{n} = \mathrm{Cl}(V,q)$; hence
+**Theorem.** Let $\mathrm{G} = \mathrm{Cl}(W, \bar q) \otimes 1$ be the image of the reduced Clifford algebra in $\mathrm{Cl}(V, q)$. Then $\mathrm{G}$ is a subalgebra, $\mathrm{N}$ is a two-sided ideal, $\mathrm{G} \cap \mathrm{N} = 0$ and $\mathrm{G} + \mathrm{N} = \mathrm{Cl}(V,q)$; hence
 
 $$
-\mathrm{Cl}(V, q) = \mathfrak{g} \oplus \mathfrak{n}
+\mathrm{Cl}(V, q) = \mathrm{G} \oplus \mathrm{N}
 $$
 
-as a direct sum of $R$-modules, the quotient map restricts to an isomorphism $\mathfrak{g} \to \mathrm{Cl}(V, q)/\mathfrak{n}$, and $\mathfrak{n}$ is the largest nilpotent two-sided ideal of the algebra.
+as a direct sum of $R$-modules, the quotient map restricts to an isomorphism $\mathrm{G} \to \mathrm{Cl}(V, q)/\mathrm{N}$, and $\mathrm{N}$ is the largest nilpotent two-sided ideal of the algebra.
 
-**Proof.** The image of $\mathrm{Cl}(W,\bar q)$ under $x \mapsto x \otimes 1$ is a subalgebra because the map is an algebra homomorphism; the image of the positive part of the exterior algebra is $\mathfrak{n}$ by the theorem above, and the intersection is zero because the two factors meet only in degree zero on the second side: an element $x \otimes b$ with $b$ of positive degree is not of the form $y \otimes 1$. The ranks add, $2^{n - r_0} + 2^{n-r_0}(2^{r_0} - 1) = 2^n$, so the sum is everything, and the restriction of the quotient map is injective with image of full rank, hence an isomorphism. Finally $\mathfrak{n}$ is nilpotent and the Jacobson radical of the algebra, so it contains every nilpotent ideal. $\square$
+**Proof.** The image of $\mathrm{Cl}(W,\bar q)$ under $x \mapsto x \otimes 1$ is a subalgebra because the map is an algebra homomorphism; the image of the positive part of the exterior algebra is $\mathrm{N}$ by the theorem above, and the intersection is zero because the two factors meet only in degree zero on the second side: an element $x \otimes b$ with $b$ of positive degree is not of the form $y \otimes 1$. The ranks add, $2^{n - r_0} + 2^{n-r_0}(2^{r_0} - 1) = 2^n$, so the sum is everything, and the restriction of the quotient map is injective with image of full rank, hence an isomorphism. Finally $\mathrm{N}$ is nilpotent and the Jacobson radical of the algebra, so it contains every nilpotent ideal.
 
-**Remark.** This is the split extension of the semisimple algebra $\mathfrak{g} \cong \mathrm{Cl}(V,q)/\mathfrak{n}$ by the nilpotent bimodule $\mathfrak{n}$: the products of an element of $\mathfrak{g}$ with an element of $\mathfrak{n}$ lie in $\mathfrak{n}$, and the multiplication of the whole algebra is determined by the multiplication in $\mathfrak{g}$, the bimodule structure of $\mathfrak{n}$ and the multiplication inside $\mathfrak{n}$. When $r_0 = 1$ the interior product vanishes, so $\mathfrak{n}^2 = 0$ and the extension is a split null extension. The complement $\mathfrak{g}$ is not canonical, since it comes from the choice of $W$, while $\mathfrak{n}$ and the isomorphism class of the quotient are.
+**Remark.** This is the split extension of the semisimple algebra $\mathrm{G} \cong \mathrm{Cl}(V,q)/\mathrm{N}$ by the nilpotent bimodule $\mathrm{N}$: the products of an element of $\mathrm{G}$ with an element of $\mathrm{N}$ lie in $\mathrm{N}$, and the multiplication of the whole algebra is determined by the multiplication in $\mathrm{G}$, the bimodule structure of $\mathrm{N}$ and the multiplication inside $\mathrm{N}$. When $r_0 = 1$ the interior product vanishes, so $\mathrm{N}^2 = 0$ and the extension is a split null extension. The complement $\mathrm{G}$ is not canonical, since it comes from the choice of $W$, while $\mathrm{N}$ and the isomorphism class of the quotient are.
 
 ## The Degenerate and Non-Degenerate Cases Compared
 
@@ -195,7 +195,7 @@ The table records how each feature of the algebra behaves as the radical grows.
 | Decomposition | $\mathrm{Cl}(V, q)$ | $\mathrm{Cl}(W, \bar{q}) \,\hat\otimes\, \Lambda(\operatorname{rad}(q))$ |
 | Rank | $2^n$ | $2^n$ |
 | Centre | $R$ or $R \oplus R\omega$ | $\Lambda^{\mathrm{ev}}(\operatorname{rad}(q))$, and $\Lambda^{\mathrm{ev}}(\operatorname{rad}(q)) \oplus R\omega$ when $n$ is odd |
-| Nilpotent ideal | none | nonzero, generating $\mathfrak{n}$ |
+| Nilpotent ideal | none | nonzero, generating $\mathrm{N}$ |
 | Semisimple | yes | no |
 | Quadratic form detected | up to isometry | only the reduced form |
 
@@ -233,7 +233,7 @@ $$
 \mathrm{Cl}(\mathbb{R}^2, x^2) \cong \mathbb{D}\,\hat{\otimes}\,\Lambda(\mathbb{R}), \qquad e^2 = 1, \quad \varepsilon^2 = 0, \quad e\varepsilon = -\varepsilon e,
 $$
 
-a four-dimensional algebra. The grading of $\mathbb{D}$ is nontrivial — its generator $e$ is odd — so the graded tensor product is not the ordinary tensor product, and the algebra is not the product of two copies of $\mathbb{R}[\varepsilon]/(\varepsilon^2)$: the idempotents $(1 \pm e)/2$ are not central, since $e\varepsilon = -\varepsilon e$, and the centre is only $\mathbb{R}$. The radical generator spans the nonzero nilpotent ideal $\mathfrak{n} = \operatorname{span}\{\varepsilon, e\varepsilon\}$ with $\mathfrak{n}^2 = 0$, and the reduced form is the one-dimensional form of square $+1$, in agreement with the rank count $2^2 = 4$.
+a four-dimensional algebra. The grading of $\mathbb{D}$ is nontrivial — its generator $e$ is odd — so the graded tensor product is not the ordinary tensor product, and the algebra is not the product of two copies of $\mathbb{R}[\varepsilon]/(\varepsilon^2)$: the idempotents $(1 \pm e)/2$ are not central, since $e\varepsilon = -\varepsilon e$, and the centre is only $\mathbb{R}$. The radical generator spans the nonzero nilpotent ideal $\mathrm{N} = \operatorname{span}\{\varepsilon, e\varepsilon\}$ with $\mathrm{N}^2 = 0$, and the reduced form is the one-dimensional form of square $+1$, in agreement with the rank count $2^2 = 4$.
 
 ### A Radical of Rank Two
 
@@ -253,7 +253,7 @@ $$
 \mathrm{Cl}(\mathbb{R}^3, x^2 - y^2) \cong M_2(\mathbb{R}) \,\hat{\otimes}\, \Lambda(\mathbb{R}), \qquad \text{rank } 4 \cdot 2 = 8,
 $$
 
-and the ideal $\mathfrak{n} = M_2(\mathbb{R}) \otimes \mathbb{R}\varepsilon$ has rank $4$ with $\mathfrak{n}^2 = 0$, so the nilpotency index is $2 = r_0 + 1$ with $r_0 = 1$. The example shows that the nilpotency index is governed by the rank of the radical alone and is independent of the size of the reduced algebra.
+and the ideal $\mathrm{N} = M_2(\mathbb{R}) \otimes \mathbb{R}\varepsilon$ has rank $4$ with $\mathrm{N}^2 = 0$, so the nilpotency index is $2 = r_0 + 1$ with $r_0 = 1$. The example shows that the nilpotency index is governed by the rank of the radical alone and is independent of the size of the reduced algebra.
 
 ## Summary
 
@@ -267,7 +267,7 @@ $$
 
 the graded tensor product of the Clifford algebra of the reduced non-degenerate form and the exterior algebra on the radical. It follows both from the splitting theorem for orthogonal sums and from the three families of fundamental relations among vectors of $W$ and of the radical. The isomorphism depends on the choice of complement, although different complements give isomorphic factors.
 
-The generator $r$ of the radical satisfies $r^2 = 0$, so the exterior algebra is nilpotent in positive degree. In fact $\mathfrak{n}^k = \mathrm{Cl}(W, \bar{q}) \otimes \bigoplus_{j\geq k}\Lambda^j(\operatorname{rad}(q))$ and the nilpotency index is exactly $\operatorname{rank}\operatorname{rad}(q) + 1$ when the radical is free. The radical generates a nilpotent two-sided ideal $\mathfrak{n}$, the quotient by which is the non-degenerate factor; over a field of characteristic not $2$, $\mathfrak{n}$ is the Jacobson radical and $\mathrm{Cl}(V, q)$ is semisimple if and only if $q$ is non-degenerate. The **centre** is the even part of the exterior algebra on the radical, of rank $2^{r_0 - 1}$ for $r_0 \geq 1$, together with the span of the volume element when $n$ is odd, which reduces to the classical $R$ or $R \oplus R\omega$ when the radical vanishes. The **rank** of the algebra is $2^n$ whether or not the form is degenerate, since the dimension lost by the reduced form is recovered by the exterior factor. The extreme case is the zero form, for which $\mathrm{Cl}(V, 0) = \Lambda(V)$; the one-dimensional case is the algebra of dual numbers $\mathbb{D}'$.
+The generator $r$ of the radical satisfies $r^2 = 0$, so the exterior algebra is nilpotent in positive degree. In fact $\mathrm{N}^k = \mathrm{Cl}(W, \bar{q}) \otimes \bigoplus_{j\geq k}\Lambda^j(\operatorname{rad}(q))$ and the nilpotency index is exactly $\operatorname{rank}\operatorname{rad}(q) + 1$ when the radical is free. The radical generates a nilpotent two-sided ideal $\mathrm{N}$, the quotient by which is the non-degenerate factor; over a field of characteristic not $2$, $\mathrm{N}$ is the Jacobson radical and $\mathrm{Cl}(V, q)$ is semisimple if and only if $q$ is non-degenerate. The **centre** is the even part of the exterior algebra on the radical, of rank $2^{r_0 - 1}$ for $r_0 \geq 1$, together with the span of the volume element when $n$ is odd, which reduces to the classical $R$ or $R \oplus R\omega$ when the radical vanishes. The **rank** of the algebra is $2^n$ whether or not the form is degenerate, since the dimension lost by the reduced form is recovered by the exterior factor. The extreme case is the zero form, for which $\mathrm{Cl}(V, 0) = \Lambda(V)$; the one-dimensional case is the algebra of dual numbers $\mathbb{D}'$.
 
 ## Summary of Notation
 
@@ -285,9 +285,9 @@ The generator $r$ of the radical satisfies $r^2 = 0$, so the exterior algebra is
 | $\Lambda^{\mathrm{ev}}(U)$ | Even part of $\Lambda(U)$, spanned by the products of even degree |
 | $\hat\otimes$ | Graded tensor product |
 | $r_i$ | Basis elements of the radical, $r_i^2 = 0$ |
-| $\mathfrak{n}$ | Nilpotent ideal generated by the radical; Jacobson radical over a field |
-| $\mathfrak{n}^k$ | Its powers, $\mathrm{Cl}(W,\bar q)\otimes\bigoplus_{j\geq k}\Lambda^j(\operatorname{rad}(q))$ |
-| Nilpotency index | $r_0 + 1$, the least $k$ with $\mathfrak{n}^k = 0$ |
+| $\mathrm{N}$ | Nilpotent ideal generated by the radical; Jacobson radical over a field |
+| $\mathrm{N}^k$ | Its powers, $\mathrm{Cl}(W,\bar q)\otimes\bigoplus_{j\geq k}\Lambda^j(\operatorname{rad}(q))$ |
+| Nilpotency index | $r_0 + 1$, the least $k$ with $\mathrm{N}^k = 0$ |
 | $M_2(\mathbb{R})$ | $2 \times 2$ real matrices, $\mathrm{Cl}$ of the hyperbolic plane |
 | $\omega$ | Volume element $e_1 \cdots e_n$ of an orthogonal basis of $V$, central when $n$ is odd |
 | $\omega_W$, $\omega_{\operatorname{rad}}$ | Volume elements of the reduced factor and of the radical |

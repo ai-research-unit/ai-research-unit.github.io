@@ -5,11 +5,11 @@
 
 The quaternion algebra has several algebraic realizations that do not have an article of their own: the spinor representation on two-component complex vectors, the identification with a Clifford algebra and with the even part of a Clifford algebra, and the module structure of the algebra over itself and over its subalgebras. This article collects them, states the identifications precisely, and records the role of the choices involved. It is the quaternion member of the family's residual-representation pair; its counterpart is *Biquaternion Other Algebraic Representations*, and it supplies the realizations that the dedicated articles on the four-vector, regular, $2\times2$ and operator representations leave aside.
 
-The article depends on *Quaternion Algebra* for the basis and the relations, on *Quaternion Norm and Invertibility* for the norm form, and on *Quaternion 2x2 Matrix Representation* for the realization of the algebra. The Clifford identifications use the conventions of *Clifford Algebras in Finite Dimensions* for $\mathrm{Cl}(V,\tilde q)$ and $\mathrm{Cl}_{p,\tilde q}$, and the spinor realization is the representation theory of the unit group $Sp(1)$ from *Quaternion Rotations and Reflections*. No physical vocabulary is used: in particular the spinors below are the vectors of a module for $Sp(1)$, not the spinors of a field.
+The article depends on *Quaternion Algebra* for the basis and the relations, on *Quaternion Norm and Invertibility* for the quaternion norm, and on *Quaternion 2x2 Matrix Representation* for the realization of the algebra. The Clifford identifications use the conventions of *Clifford Algebras in Finite Dimensions* for $\mathrm{Cl}(V,\tilde q)$ and $\mathrm{Cl}_{p,\tilde q}$, and the spinor realization is the representation theory of the unit group $Sp(1)$ from *Quaternion Rotations and Reflections*. No physical vocabulary is used: in particular the spinors below are the vectors of a module for $Sp(1)$, not the spinors of a field.
 
 The corpus's default base is a commutative ring with identity; the Clifford identifications are stated over $\mathbb{R}$ and after complexification over $\mathbb{C}$, and the module statements hold over any base in which the relevant subalgebra is defined.
 
-Throughout, $\mathbb{H}$ is the quaternion algebra with basis $e_0 = 1, e_1, e_2, e_3$, $e_k^2 = -e_0$; a quaternion is $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ with conjugate $\bar{\tilde q}$ and norm form $N(\tilde q) = \tilde q\bar{\tilde q}$; the unit group is $\mathbb{H}^{\times} = \mathbb{H}\setminus\{0\}$ and the unit sphere is $Sp(1)\cong S^3$. The Clifford algebra of a quadratic space $(V,\tilde q)$ is written $\mathrm{Cl}(V,\tilde q)$ and its real signature form $\mathrm{Cl}_{p,\tilde q}$, and the even subalgebra is $\mathrm{Cl}^0$.
+Throughout, $\mathbb{H}$ is the quaternion algebra with basis $e_0 = 1, e_1, e_2, e_3$, $e_k^2 = -e_0$; a quaternion is $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ with conjugate $\bar{\tilde q}$ and norm $N(\tilde q) = \tilde q\bar{\tilde q}$; the unit group is $\mathbb{H}^{\times} = \mathbb{H}\setminus\{0\}$ and the unit sphere is $Sp(1)\cong S^3$. The Clifford algebra of a quadratic space $(V,\tilde q)$ is written $\mathrm{Cl}(V,\tilde q)$ and its real signature form $\mathrm{Cl}_{p,\tilde q}$, and the even subalgebra is $\mathrm{Cl}^0$.
 
 ## The Spinor Representation
 
@@ -21,15 +21,15 @@ $$
 
 **Theorem.** The spinor representation is a faithful $\mathbb{R}$-linear representation of $\mathbb{H}$ by complex-linear maps of $\mathbb{C}^2$; restricted to the unit group it is the defining two-dimensional unitary representation of $Sp(1)\cong SU(2)$.
 
-*Proof.* The action is a representation because $\iota$ is multiplicative, and it is faithful because $\iota$ is injective. For a unit $u$, $\iota(u)$ is unitary by *Quaternion 2x2 Matrix Representation*, so the restriction is a unitary representation; its dimension is two and it is irreducible, since any $\mathbb{C}$-linear map of $\mathbb{C}^2$ is in $M_2(\mathbb{C}) = \iota(\mathbb{H}\otimes\mathbb{C})$ and the algebra acts transitively on non-zero vectors. $\square$
+*Proof.* The action is a representation because $\iota$ is multiplicative, and it is faithful because $\iota$ is injective. For a unit $u$, $\iota(u)$ is unitary by *Quaternion 2x2 Matrix Representation*, so the restriction is a unitary representation; its dimension is two and it is irreducible, since any $\mathbb{C}$-linear map of $\mathbb{C}^2$ is in $M_2(\mathbb{C}) = \iota(\mathbb{H}\otimes\mathbb{C})$ and the algebra acts transitively on non-zero vectors.
 
 **Proposition.** The spinor representation is the fundamental representation of $Sp(1)$ and is the source of the double cover $Sp(1)\to SO(3)$: the adjoint (three-dimensional) representation is the symmetric square of the spinor representation, and the tensor square decomposes as $\mathbb{C}^2\otimes\mathbb{C}^2\cong\mathrm{Sym}^2\oplus\Lambda^2$, of dimensions three and one.
 
-*Proof.* The twofold symmetric square of the defining representation of $SU(2)$ is the three-dimensional irreducible representation, which is the adjoint representation on $\operatorname{Im}\mathbb{H}\otimes\mathbb{C}$; the alternating square is one-dimensional and trivial because the invariant antisymmetric form $\epsilon = i\sigma_2$ exists. $\square$
+*Proof.* The twofold symmetric square of the defining representation of $SU(2)$ is the three-dimensional irreducible representation, which is the adjoint representation on $\operatorname{Im}\mathbb{H}\otimes\mathbb{C}$; the alternating square is one-dimensional and trivial because the invariant antisymmetric form $\epsilon = i\sigma_2$ exists.
 
 **Corollary.** The spinor representation is complex and of complex dimension two, so it is not equivalent to any real representation of $\mathbb{H}$; the quaternionic multiplication by $e_1,e_2,e_3$ supplies the three complex structures on $\mathbb{C}^2$ that make it a quaternionic line.
 
-*Proof.* If the module were real of dimension two, the representation would be an injective homomorphism $\mathbb{H}\to M_2(\mathbb{R})$, which does not exist by *Quaternion 2x2 Matrix Representation*. The three images $\iota(e_k)$ satisfy $\iota(e_k)^2 = -I$ and pairwise anticommute, so they are three complex structures on $\mathbb{C}^2$. $\square$
+*Proof.* If the module were real of dimension two, the representation would be an injective homomorphism $\mathbb{H}\to M_2(\mathbb{R})$, which does not exist by *Quaternion 2x2 Matrix Representation*. The three images $\iota(e_k)$ satisfy $\iota(e_k)^2 = -I$ and pairwise anticommute, so they are three complex structures on $\mathbb{C}^2$.
 
 ## The Clifford Algebra Identification
 
@@ -47,11 +47,11 @@ $$
 \mathbb{H}\cong\mathrm{Cl}^0_{0,3}.
 $$
 
-*Proof.* Let $f_1,f_2$ generate $\mathrm{Cl}_{0,2}$, so $f_k^2 = -1$ and $f_1f_2 = -f_2f_1$. Setting $e_1 = f_1$, $e_2 = f_2$, $e_3 = f_1f_2$ gives $e_3^2 = -1$ and $e_1e_2 = e_3$, so the four elements $1,e_1,e_2,e_3$ satisfy the quaternion relations and form a basis of the four-dimensional algebra $\mathrm{Cl}_{0,2}$; hence $\mathbb{H}\cong\mathrm{Cl}_{0,2}$. For the second identification, the even subalgebra $\mathrm{Cl}^0_{0,3}$ is generated by the products $f_if_j$ with $i<j$, and these three elements satisfy the quaternion relations, giving $\mathrm{Cl}^0_{0,3}\cong\mathbb{H}$. $\square$
+*Proof.* Let $f_1,f_2$ generate $\mathrm{Cl}_{0,2}$, so $f_k^2 = -1$ and $f_1f_2 = -f_2f_1$. Setting $e_1 = f_1$, $e_2 = f_2$, $e_3 = f_1f_2$ gives $e_3^2 = -1$ and $e_1e_2 = e_3$, so the four elements $1,e_1,e_2,e_3$ satisfy the quaternion relations and form a basis of the four-dimensional algebra $\mathrm{Cl}_{0,2}$; hence $\mathbb{H}\cong\mathrm{Cl}_{0,2}$. For the second identification, the even subalgebra $\mathrm{Cl}^0_{0,3}$ is generated by the products $f_if_j$ with $i<j$, and these three elements satisfy the quaternion relations, giving $\mathrm{Cl}^0_{0,3}\cong\mathbb{H}$.
 
 **Corollary.** Under the identification $\mathbb{H}\cong\mathrm{Cl}_{0,2}$ the scalar subspace is the degree-zero part, and the vector subspace is the sum of the degree-one and degree-two parts, because $e_1,e_2$ are the degree-one generators while $e_3 = e_1e_2$ is degree two; quaternion conjugation is the Clifford conjugation $\alpha\circ\tau$, the composition of the grade involution with reversion, which is the identity on the scalar part and the negation on each positive-degree part, hence negates the vector part.
 
-*Proof.* The generators $e_1,e_2$ span the degree-one part and $e_3 = e_1e_2$ spans the degree-two part, so $1$ is degree zero and the vector subspace is the sum of the two positive-degree parts. The grade involution $\alpha$ negates the degree-one part and fixes the even part, while reversion $\tau$ fixes the degree-zero and degree-one parts and negates the degree-two part; their composition $\alpha\tau$ is therefore $+1$ on $1$ and $-1$ on each of $e_1,e_2,e_3$, which is quaternion conjugation. $\square$
+*Proof.* The generators $e_1,e_2$ span the degree-one part and $e_3 = e_1e_2$ spans the degree-two part, so $1$ is degree zero and the vector subspace is the sum of the two positive-degree parts. The grade involution $\alpha$ negates the degree-one part and fixes the even part, while reversion $\tau$ fixes the degree-zero and degree-one parts and negates the degree-two part; their composition $\alpha\tau$ is therefore $+1$ on $1$ and $-1$ on each of $e_1,e_2,e_3$, which is quaternion conjugation.
 
 ## The Even Clifford Algebra by Complexification
 
@@ -62,7 +62,7 @@ $$
 \mathrm{Cl}^0_{3,0}\cong M_2(\mathbb{R}), \qquad \mathrm{Cl}^0_{3,0}\otimes_{\mathbb{R}}\mathbb{C}\cong M_2(\mathbb{C})\cong\mathbb{H}\otimes_{\mathbb{R}}\mathbb{C}.
 $$
 
-*Proof.* Complexifying $\mathrm{Cl}_{0,2}$ gives the complex Clifford algebra $\mathrm{Cl}_2(\mathbb{C})$, which is $M_2(\mathbb{C})$; the even part of the positive definite real algebra $\mathrm{Cl}_{3,0}$ is $\mathrm{Cl}_{2,0}\cong M_2(\mathbb{R})$, and its complexification is $M_2(\mathbb{C})$. Both are the complexification of $\mathbb{H}$ by the first identification. $\square$
+*Proof.* Complexifying $\mathrm{Cl}_{0,2}$ gives the complex Clifford algebra $\mathrm{Cl}_2(\mathbb{C})$, which is $M_2(\mathbb{C})$; the even part of the positive definite real algebra $\mathrm{Cl}_{3,0}$ is $\mathrm{Cl}_{2,0}\cong M_2(\mathbb{R})$, and its complexification is $M_2(\mathbb{C})$. Both are the complexification of $\mathbb{H}$ by the first identification.
 
 **Remark.** The two real forms obtained this way — $\mathbb{H}$ itself and $\mathrm{Cl}^0_{3,0}\cong M_2(\mathbb{R})$ — have the same complexification but are not isomorphic over $\mathbb{R}$: one is a division algebra and the other a full matrix algebra. This is the manifestation, in the Clifford language, of the fact that $\mathbb{H}$ and $M_2(\mathbb{R})$ are distinct real forms of $M_2(\mathbb{C})$.
 
@@ -72,11 +72,11 @@ $$
 
 **Theorem.** The regular module is simple, its endomorphism ring is the opposite algebra $\operatorname{End}_{\mathbb{H}}({}_{\mathbb{H}}\mathbb{H})\cong\mathbb{H}^{\mathrm{op}}\cong\mathbb{H}$, and it is the unique simple left module up to isomorphism.
 
-*Proof.* A submodule of ${}_{\mathbb{H}}\mathbb{H}$ is a left ideal, and the only left ideals are $0$ and $\mathbb{H}$, so the module is simple. An endomorphism is determined by its value at $1$ and is right multiplication by that value, so $\operatorname{End}_{\mathbb{H}}({}_{\mathbb{H}}\mathbb{H})\cong\mathbb{H}^{\mathrm{op}}$, which is isomorphic to $\mathbb{H}$ through conjugation, an anti-automorphism. Uniqueness is Schur's lemma together with the classification of simple modules over the division algebra $\mathbb{H}$. $\square$
+*Proof.* A submodule of ${}_{\mathbb{H}}\mathbb{H}$ is a left ideal, and the only left ideals are $0$ and $\mathbb{H}$, so the module is simple. An endomorphism is determined by its value at $1$ and is right multiplication by that value, so $\operatorname{End}_{\mathbb{H}}({}_{\mathbb{H}}\mathbb{H})\cong\mathbb{H}^{\mathrm{op}}$, which is isomorphic to $\mathbb{H}$ through conjugation, an anti-automorphism. Uniqueness is Schur's lemma together with the classification of simple modules over the division algebra $\mathbb{H}$.
 
 **Theorem (module over a subalgebra).** For a root of $-1$, $\xi\in\{\xi : \xi^2 = -1\}$, let $\mathbb{C}_\xi = \mathbb{R}[\xi]\cong\mathbb{C}$ be the subalgebra generated by $\xi$. Then $\mathbb{H}$ is a free module of rank two over $\mathbb{C}_\xi$, and it is a free module of rank four over $\mathbb{R}$ and of rank one over itself.
 
-*Proof.* The subalgebra $\mathbb{C}_\xi$ has dimension two, and $\mathbb{H}$ has dimension four over $\mathbb{R}$, so it has dimension two over $\mathbb{C}_\xi$; a finite-dimensional module over a division algebra is free, and its rank is the dimension quotient. The ranks over $\mathbb{R}$ and over $\mathbb{H}$ are the dimensions four and one. $\square$
+*Proof.* The subalgebra $\mathbb{C}_\xi$ has dimension two, and $\mathbb{H}$ has dimension four over $\mathbb{R}$, so it has dimension two over $\mathbb{C}_\xi$; a finite-dimensional module over a division algebra is free, and its rank is the dimension quotient. The ranks over $\mathbb{R}$ and over $\mathbb{H}$ are the dimensions four and one.
 
 **Corollary.** The choice of a root $\xi$ makes $\mathbb{H}$ a two-dimensional complex vector space, and different roots give different, conjugate, complex structures on the same underlying real space; the module structure over $\mathbb{C}_\xi$ is the algebraic content of the complex structure $L_\xi$ of *Quaternion Roots of Minus One*.
 
@@ -84,11 +84,11 @@ $$
 
 **Proposition.** Each of the identifications above depends on a choice: the Clifford identification $\mathbb{H}\cong\mathrm{Cl}_{0,2}$ on the choice of an orthonormal basis $(f_1,f_2)$ of the negative plane; the spinor representation on the choice of the isomorphism $\iota$; and the complex module structure on the choice of root $\xi$.
 
-*Proof.* An orthonormal basis of the negative plane determines the generators $f_1,f_2$ and hence the identification; the matrix realization $\iota$ is fixed by a specific choice of the images of $e_1,e_2,e_3$; and $\mathbb{C}_\xi$ depends on $\xi$. $\square$
+*Proof.* An orthonormal basis of the negative plane determines the generators $f_1,f_2$ and hence the identification; the matrix realization $\iota$ is fixed by a specific choice of the images of $e_1,e_2,e_3$; and $\mathbb{C}_\xi$ depends on $\xi$.
 
 **Theorem.** Two choices in any of these three lists differ by the action of the compact group $Sp(1)$ (equivalently $SO(3)$ on the imaginary subspace), and all the structural statements of the article are invariant under this action.
 
-*Proof.* A change of orthonormal basis of the negative plane is a rotation of $\operatorname{Im}\mathbb{H}$, and every rotation is the adjoint action of a unit quaternion, so the generators change by conjugation by a unit; the matrix realization changes by conjugation by the corresponding unitary matrix; and the root $\xi$ changes to $u\xi u^{-1}$ under the adjoint action. Each of the invariants — the norm form, the trace, the determinant, the module ranks — is unchanged. $\square$
+*Proof.* A change of orthonormal basis of the negative plane is a rotation of $\operatorname{Im}\mathbb{H}$, and every rotation is the adjoint action of a unit quaternion, so the generators change by conjugation by a unit; the matrix realization changes by conjugation by the corresponding unitary matrix; and the root $\xi$ changes to $u\xi u^{-1}$ under the adjoint action. Each of the invariants — the quaternion norm, the trace, the determinant, the module ranks — is unchanged.
 
 ## Relation to the Biquaternion Representations
 

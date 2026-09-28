@@ -63,7 +63,7 @@ $$
 
 **Proposition.** If $h$ is non-degenerate, then $|\det T| = 1$ for every $T \in \operatorname{U}(V, h)$, and the determinant map $\operatorname{U}(V, h) \to \{z \in \mathbb{C} : |z| = 1\}$ has kernel $\operatorname{SU}(V, h)$.
 
-**Proof.** Choose a basis and let $H$ be the matrix of $h$, so that $h(u, v) = u^{\dagger} H v$ with $u^{\dagger}$ the conjugate transpose. The isometry condition is $T^{\dagger} H T = H$. Taking determinants gives $\overline{\det T}\det T \det H = \det H$, so $|\det T|^2 = 1$ because $H$ is invertible. The kernel of the determinant is exactly $\operatorname{SU}(V, h)$. $\square$
+**Proof.** Choose a basis and let $H$ be the matrix of $h$, so that $h(u, v) = u^{\dagger} H v$ with $u^{\dagger}$ the conjugate transpose. The isometry condition is $T^{\dagger} H T = H$. Taking determinants gives $\overline{\det T}\det T \det H = \det H$, so $|\det T|^2 = 1$ because $H$ is invertible. The kernel of the determinant is exactly $\operatorname{SU}(V, h)$.
 
 ### The Standard Unitary Groups
 
@@ -87,7 +87,7 @@ $$
 U(n)/SU(n) \cong U(1) \cong S^1.
 $$
 
-**Proof.** The defining equation $U^{\dagger}U = I$ is a closed condition in $M_n(\mathbb{C})$, so $U(n)$ is closed; its columns are unit vectors, so it is bounded, hence compact. Near the identity it is a submanifold of the real vector space of $n \times n$ complex matrices, whose real dimension is $2n^2$. The condition $U^{\dagger}U = I$ is Hermitian, hence imposes $n^2$ real equations, and the derivative at $I$ is $A + A^{\dagger} = 0$, the anti-Hermitian condition, a real vector space of dimension $n^2$; the dimension of $U(n)$ near $I$ is therefore $2n^2 - n^2 = n^2$. The determinant has derivative the trace, which is nonzero on the anti-Hermitian matrices, so $SU(n)$ has dimension $n^2 - 1$. The determinant of a diagonal matrix $\operatorname{diag}(z, 1, \ldots, 1)$ with $|z| = 1$ realises every unit complex number, so the determinant is surjective onto $U(1)$. $\square$
+**Proof.** The defining equation $U^{\dagger}U = I$ is a closed condition in $M_n(\mathbb{C})$, so $U(n)$ is closed; its columns are unit vectors, so it is bounded, hence compact. Near the identity it is a submanifold of the real vector space of $n \times n$ complex matrices, whose real dimension is $2n^2$. The condition $U^{\dagger}U = I$ is Hermitian, hence imposes $n^2$ real equations, and the derivative at $I$ is $A + A^{\dagger} = 0$, the anti-Hermitian condition, a real vector space of dimension $n^2$; the dimension of $U(n)$ near $I$ is therefore $2n^2 - n^2 = n^2$. The determinant has derivative the trace, which is nonzero on the anti-Hermitian matrices, so $SU(n)$ has dimension $n^2 - 1$. The determinant of a diagonal matrix $\operatorname{diag}(z, 1, \ldots, 1)$ with $|z| = 1$ realises every unit complex number, so the determinant is surjective onto $U(1)$.
 
 **Example.** $U(1)$ is the circle group and $SU(1)$ is trivial. $SU(2)$ consists of the matrices $\begin{pmatrix} a & b \\ -\bar b & \bar a \end{pmatrix}$ with $|a|^2 + |b|^2 = 1$, a three-dimensional sphere; it is the unit quaternions, and it double covers $\operatorname{SO}(3)$, as described in the applications of the Clifford layer of this category, written in parallel.
 
@@ -101,7 +101,7 @@ $$
 \operatorname{U}(V, h) = \operatorname{O}(V_{\mathbb{R}}, s) \cap \operatorname{Sp}(V_{\mathbb{R}}, a).
 $$
 
-**Proof.** The identity $h(Tu, Tv) = h(u, v)$ is equivalent to the pair of real identities $s(Tu, Tv) = s(u, v)$ and $a(Tu, Tv) = a(u, v)$, because the real and imaginary parts of a complex number vanish together. The first is the orthogonal condition for $s$ and the second the symplectic condition for $a$. $\square$
+**Proof.** The identity $h(Tu, Tv) = h(u, v)$ is equivalent to the pair of real identities $s(Tu, Tv) = s(u, v)$ and $a(Tu, Tv) = a(u, v)$, because the real and imaginary parts of a complex number vanish together. The first is the orthogonal condition for $s$ and the second the symplectic condition for $a$.
 
 This is the precise sense in which the unitary group lies between the orthogonal and symplectic groups: it is the intersection of one of each on the realification of the space.
 
@@ -119,7 +119,7 @@ For $u = v$ the number $u^{\dagger}Hu$ is real, because its conjugate is $u^{\da
 
 **Theorem (inertia for Hermitian forms).** Let $h$ be a Hermitian form on a finite-dimensional $\mathbb{C}$-space of dimension $n$. Then there are unique integers $p, r, z \geq 0$ with $p + r + z = n$ and a basis in which the Gram matrix is $\operatorname{diag}(I_p, -I_r, 0_z)$.
 
-**Proof.** The argument is that of Sylvester's law of inertia for real quadratic forms: the diagonalisation by completing the square applies, because the diagonal entries $h(e_i, e_i)$ are real and the substitution $v \mapsto v - \frac{h(e, v)}{h(e,e)}e$ kills the entries $h(v, e)$ for a vector with $h(e,e) \neq 0$; the uniqueness follows by counting the maximal dimension $p$ of a subspace on which $h$ is positive definite and the maximal dimension $r$ on which it is negative definite, both of which are invariants of $h$. $\square$
+**Proof.** The argument is that of Sylvester's law of inertia for real quadratic forms: the diagonalisation by completing the square applies, because the diagonal entries $h(e_i, e_i)$ are real and the substitution $v \mapsto v - \frac{h(e, v)}{h(e,e)}e$ kills the entries $h(v, e)$ for a vector with $h(e,e) \neq 0$; the uniqueness follows by counting the maximal dimension $p$ of a subspace on which $h$ is positive definite and the maximal dimension $r$ on which it is negative definite, both of which are invariants of $h$.
 
 The triple $(p, r, z)$ is the **signature** of $h$, and $h$ is non-degenerate exactly when $z = 0$. The isometry group of the form $\operatorname{diag}(I_p, -I_r)$ is written
 
@@ -139,7 +139,7 @@ $$
 
 **Example.** The matrices $\begin{pmatrix} \cosh t & \sinh t \\ \sinh t & \cosh t\end{pmatrix}$ for $t \in \mathbb{R}$ and $\begin{pmatrix} e^{i\theta} & 0 \\ 0 & e^{-i\theta}\end{pmatrix}$ for $\theta \in \mathbb{R}$ both lie in $SU(1,1)$: for the first the three equations reduce to $\cosh^2 t - \sinh^2 t = 1$, and for the second $|e^{i\theta}|^2 = 1$. The first family is a hyperbolic one-parameter subgroup, the second a compact circle, and the two generate a subgroup of $SU(1,1)$ through which the two types of one-parameter subgroup of a non-compact real form are visible.
 
-**Remark.** The group $SU(1,1)$ is isomorphic to $SL(2, \mathbb{R})$ and to $Sp(2, \mathbb{R})$, the three real forms of $\mathfrak{sl}(2, \mathbb{C})$ of rank one; the compact form $SU(2)$ is not isomorphic to them. The isomorphism $SU(1,1) \cong Sp(2, \mathbb{R})$ is the first case of the general statement that the quaternionic and the symplectic descriptions agree over $\mathbb{C}$.
+**Remark.** The group $SU(1,1)$ is isomorphic to $SL(2, \mathbb{R})$ and to $Sp(2, \mathbb{R})$, the three real forms of $\mathrm{SL}(2, \mathbb{C})$ of rank one; the compact form $SU(2)$ is not isomorphic to them. The isomorphism $SU(1,1) \cong Sp(2, \mathbb{R})$ is the first case of the general statement that the quaternionic and the symplectic descriptions agree over $\mathbb{C}$.
 
 ## The Symplectic Group
 
@@ -167,11 +167,11 @@ $$
 \operatorname{Sp}(2m, F) \subseteq SL(2m, F).
 $$
 
-**Proof.** Let $\operatorname{Pf}$ be the Pfaffian, which satisfies $\operatorname{Pf}(M^T \Omega M) = \det(M)\operatorname{Pf}(\Omega)$ for every $2m \times 2m$ matrix $M$, and $\operatorname{Pf}(\Omega) = (-1)^{m(m-1)/2} \neq 0$ for the matrix above. If $M^T \Omega M = \Omega$, applying $\operatorname{Pf}$ gives $\det(M)\operatorname{Pf}(\Omega) = \operatorname{Pf}(\Omega)$, that is $\det M = 1$. $\square$
+**Proof.** Let $\operatorname{Pf}$ be the Pfaffian, which satisfies $\operatorname{Pf}(M^T \Omega M) = \det(M)\operatorname{Pf}(\Omega)$ for every $2m \times 2m$ matrix $M$, and $\operatorname{Pf}(\Omega) = (-1)^{m(m-1)/2} \neq 0$ for the matrix above. If $M^T \Omega M = \Omega$, applying $\operatorname{Pf}$ gives $\det(M)\operatorname{Pf}(\Omega) = \operatorname{Pf}(\Omega)$, that is $\det M = 1$.
 
 **Proposition.** $Sp(2m, F)$ has dimension $2m^2 + m$ over $F$; over $\mathbb{R}$ or $\mathbb{C}$ it is connected, and it is non-compact.
 
-**Proof.** The equations $M^T \Omega M = \Omega$ are $\binom{2m}{2}$ scalar conditions on the $4m^2$ entries of $M$ (the antisymmetric part of $M^T\Omega M$, since the symmetric part is automatic). Hence the dimension is at most $4m^2 - m(2m-1) = 2m^2 + m$; equality holds because the derivative at the identity imposes the same count. The connectedness and non-compactness are standard. $\square$
+**Proof.** The equations $M^T \Omega M = \Omega$ are $\binom{2m}{2}$ scalar conditions on the $4m^2$ entries of $M$ (the antisymmetric part of $M^T\Omega M$, since the symmetric part is automatic). Hence the dimension is at most $4m^2 - m(2m-1) = 2m^2 + m$; equality holds because the derivative at the identity imposes the same count. The connectedness and non-compactness are standard.
 
 The plane case is the base of the family and can be settled directly.
 
@@ -183,7 +183,7 @@ $$
 M^{T}\Omega M = \begin{pmatrix} 0 & ad - bc \\ bc - ad & 0\end{pmatrix} = (\det M)\,\Omega,
 $$
 
-so $M^{T}\Omega M = \Omega$ if and only if $\det M = 1$, since $\Omega \neq 0$. $\square$
+so $M^{T}\Omega M = \Omega$ if and only if $\det M = 1$, since $\Omega \neq 0$.
 
 So the symplectic family begins with the special linear group in dimension two, and $Sp(2, F) \cong SL(2, F)$: the alternating form on a plane is unique up to scale, and every determinant-one $2 \times 2$ matrix preserves it.
 
@@ -197,7 +197,7 @@ $$
 Sp(2m, \mathbb{R}) \cap O(2m) = U(m).
 $$
 
-**Proof.** Let $A \in GL(2m, \mathbb{R})$ satisfy $A^{T}\Omega A = \Omega$ and $A^{T}A = I$. From the first relation, $\Omega A = (A^{T})^{-1}\Omega = A\Omega$, because $A^{T} = A^{-1}$ by the second; so $A$ commutes with $\Omega$. Identifying $\mathbb{R}^{2m}$ with $\mathbb{C}^m$ by taking $\Omega$ as the matrix of multiplication by $i$, commutativity with $\Omega$ says exactly that $A$ is complex-linear, and the orthogonal condition $A^{T}A = I$ says that $A$ preserves the Euclidean form, which is the real part of the standard Hermitian form. Hence $A$ is complex-linear and unitary, that is $A \in U(m)$. Conversely, let $U \in U(m)$ and write it as the real matrix $A = \begin{pmatrix} X & -Y \\ Y & X\end{pmatrix}$; the conditions $X^{T}X + Y^{T}Y = I$ and $X^{T}Y - Y^{T}X = 0$, which are $U^{\dagger}U = I$, give $A^{T}A = I$ directly, and $A$ commutes with $\Omega$ because it is complex-linear, so $A^{T}\Omega A = A^{-1}\Omega A = \Omega$. $\square$
+**Proof.** Let $A \in GL(2m, \mathbb{R})$ satisfy $A^{T}\Omega A = \Omega$ and $A^{T}A = I$. From the first relation, $\Omega A = (A^{T})^{-1}\Omega = A\Omega$, because $A^{T} = A^{-1}$ by the second; so $A$ commutes with $\Omega$. Identifying $\mathbb{R}^{2m}$ with $\mathbb{C}^m$ by taking $\Omega$ as the matrix of multiplication by $i$, commutativity with $\Omega$ says exactly that $A$ is complex-linear, and the orthogonal condition $A^{T}A = I$ says that $A$ preserves the Euclidean form, which is the real part of the standard Hermitian form. Hence $A$ is complex-linear and unitary, that is $A \in U(m)$. Conversely, let $U \in U(m)$ and write it as the real matrix $A = \begin{pmatrix} X & -Y \\ Y & X\end{pmatrix}$; the conditions $X^{T}X + Y^{T}Y = I$ and $X^{T}Y - Y^{T}X = 0$, which are $U^{\dagger}U = I$, give $A^{T}A = I$ directly, and $A$ commutes with $\Omega$ because it is complex-linear, so $A^{T}\Omega A = A^{-1}\Omega A = \Omega$.
 
 Both groups in the statement are compact, and the theorem exhibits $U(m)$ as a maximal compact subgroup of the non-compact group $Sp(2m, \mathbb{R})$. The dimension count reflects the splitting: $\dim Sp(2m, \mathbb{R}) = 2m^2 + m$ and $\dim U(m) = m^2$, the difference $m^2 + m$ being the dimension of the symmetric space $Sp(2m, \mathbb{R})/U(m)$.
 
@@ -217,7 +217,7 @@ $$
 
 **Proposition.** $Sp(n)$ is a compact connected group of real dimension $n(2n + 1)$. It is the intersection $Sp(2n, \mathbb{C}) \cap U(2n)$ inside $GL(2n, \mathbb{C})$.
 
-**Proof.** A quaternionic $n \times n$ matrix has $4n^2$ real parameters; the condition $A^{\dagger}A = I$ imposes $n(2n-1)$ independent real equations, leaving dimension $4n^2 - n(2n-1) = n(2n+1)$. Compactness is the closedness and boundedness of the defining condition, as in the complex case. The identification of $Sp(n)$ with $Sp(2n, \mathbb{C}) \cap U(2n)$ is the standard realisation of the quaternions as $2 \times 2$ complex matrices. $\square$
+**Proof.** A quaternionic $n \times n$ matrix has $4n^2$ real parameters; the condition $A^{\dagger}A = I$ imposes $n(2n-1)$ independent real equations, leaving dimension $4n^2 - n(2n-1) = n(2n+1)$. Compactness is the closedness and boundedness of the defining condition, as in the complex case. The identification of $Sp(n)$ with $Sp(2n, \mathbb{C}) \cap U(2n)$ is the standard realisation of the quaternions as $2 \times 2$ complex matrices.
 
 ### Relation to $GL$ and $SL$
 
@@ -242,9 +242,9 @@ Over an algebraically closed field the simple Lie algebras fall into the four in
 | $C_n$ | $Sp(2n, \mathbb{C})$ | $n$ | $n(2n+1)$ |
 | $D_n$ | $SO(2n, \mathbb{C})$ | $n$ | $n(2n-1)$ |
 
-The families $B_n$ and $C_n$ have the same dimension and rank and are dual to one another; the Lie algebras $\mathfrak{so}(2n+1)$ and $\mathfrak{sp}(2n)$ are not isomorphic, but their root systems are dual, with the long and short roots interchanged. The orthogonal family splits into $B$ and $D$ because $\operatorname{SO}(2n+1)$ and $\operatorname{SO}(2n)$ have different root systems: $B_n$ has roots of two lengths, while $D_n$ is simply laced for $n \geq 3$.
+The families $B_n$ and $C_n$ have the same dimension and rank and are dual to one another; the Lie algebras $\mathrm{SO}(2n+1)$ and $\mathrm{Sp}(2n)$ are not isomorphic, but their root systems are dual, with the long and short roots interchanged. The orthogonal family splits into $B$ and $D$ because $\operatorname{SO}(2n+1)$ and $\operatorname{SO}(2n)$ have different root systems: $B_n$ has roots of two lengths, while $D_n$ is simply laced for $n \geq 3$.
 
-**Example.** $A_1 = B_1 = C_1$ is the case of rank one: $SL(2)$, $SO(3)$, and $Sp(2)$ all have the same Lie algebra $\mathfrak{sl}(2)$, and the three descriptions are related by the low-dimensional coincidences of *The Orthogonal Lie Algebra*. $D_2 = A_1 \times A_1$ is the rank-two exception $\mathfrak{so}(4) \cong \mathfrak{sl}(2) \oplus \mathfrak{sl}(2)$, which is not simple; the family $D_n$ is simple for $n \geq 3$.
+**Example.** $A_1 = B_1 = C_1$ is the case of rank one: $SL(2)$, $SO(3)$, and $Sp(2)$ all have the same Lie algebra $\mathrm{SL}(2)$, and the three descriptions are related by the low-dimensional coincidences of *The Orthogonal Lie Algebra*. $D_2 = A_1 \times A_1$ is the rank-two exception $\mathrm{SO}(4) \cong \mathrm{SL}(2) \oplus \mathrm{SL}(2)$, which is not simple; the family $D_n$ is simple for $n \geq 3$.
 
 ### Real Forms and Compact Groups
 
@@ -260,7 +260,7 @@ Over $\mathbb{C}$ the standard unitary groups are $U(n) = \{U : U^{\dagger}U = I
 
 The standard symplectic group $Sp(2m, F) = \{M : M^T\Omega M = \Omega\}$ has dimension $2m^2 + m$, is contained in $SL(2m, F)$ (every symplectic matrix has determinant $1$, by the Pfaffian), is connected and non-compact, and in dimension two coincides with $SL(2, F)$. The **quaternionic unitary group** $Sp(n)$, of dimension $n(2n+1)$, is compact and is the compact real form of $Sp(2n, \mathbb{C})$; the notation $Sp$ therefore carries two distinct meanings, which the context separates.
 
-Over an algebraically closed field the simple Lie algebras coming from these groups are the four families $A_n = \mathfrak{sl}(n+1)$, $B_n = \mathfrak{so}(2n+1)$, $C_n = \mathfrak{sp}(2n)$ and $D_n = \mathfrak{so}(2n)$, of ranks $n$ and dimensions $n(n+2)$, $n(2n+1)$, $n(2n+1)$ and $n(2n-1)$. $B$ and $C$ are dual families of equal dimension; $D_2$ is not simple, splitting as $A_1 \times A_1$. The compact real forms are $SU(n)$, $SO(2n+1)$, $Sp(n)$, $SO(2n)$, and the split real forms are $SL(n+1, \mathbb{R})$, $SO(n, n+1)$, $Sp(2n, \mathbb{R})$, $SO(n, n)$.
+Over an algebraically closed field the simple Lie algebras coming from these groups are the four families $A_n = \mathrm{SL}(n+1)$, $B_n = \mathrm{SO}(2n+1)$, $C_n = \mathrm{Sp}(2n)$ and $D_n = \mathrm{SO}(2n)$, of ranks $n$ and dimensions $n(n+2)$, $n(2n+1)$, $n(2n+1)$ and $n(2n-1)$. $B$ and $C$ are dual families of equal dimension; $D_2$ is not simple, splitting as $A_1 \times A_1$. The compact real forms are $SU(n)$, $SO(2n+1)$, $Sp(n)$, $SO(2n)$, and the split real forms are $SL(n+1, \mathbb{R})$, $SO(n, n+1)$, $Sp(2n, \mathbb{R})$, $SO(n, n)$.
 
 A **Hermitian form** has a Hermitian Gram matrix $H = H^{\dagger}$ and a real-valued diagonal $v \mapsto h(v, v)$. By the **inertia theorem for Hermitian forms** it has a unique signature $(p, r, z)$ with normal form $\operatorname{diag}(I_p, -I_r, 0_z)$, and its isometry group is $U(p, r)$, of real dimension $n^2$, with special subgroup $SU(p, r)$ of dimension $n^2 - 1$. The case $U(1, 1)$ is non-compact and contains both a hyperbolic and a compact one-parameter subgroup; $SU(1, 1) \cong SL(2, \mathbb{R}) \cong Sp(2, \mathbb{R})$.
 
@@ -293,7 +293,7 @@ The compact and split forms of the symplectic family meet in the unitary group: 
 | $\delta_{ij}$ | Kronecker delta |
 | $GL(V)$, $SL(V)$ | General and special linear groups |
 | $A_n, B_n, C_n, D_n$ | The four classical families of simple Lie algebras |
-| $\mathfrak{sl}, \mathfrak{so}, \mathfrak{sp}$ | The corresponding Lie algebras |
+| $\mathrm{SL}, \mathrm{SO}, \mathrm{Sp}$ | The corresponding Lie algebras |
 | $\mathbb{H}$ | Quaternions |
 | $\mathbb{C}, \mathbb{R}$ | Complex and real numbers |
 

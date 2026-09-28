@@ -77,7 +77,7 @@ $$
 u_\sigma(u_\tau u_\rho) = u_\sigma c(\tau,\rho) u_{\tau\rho} = \alpha_\sigma\bigl(c(\tau,\rho)\bigr) u_\sigma u_{\tau\rho} = \alpha_\sigma\bigl(c(\tau,\rho)\bigr)c(\sigma,\tau\rho) u_{\sigma\tau\rho},
 $$
 
-so the two agree for all basis elements exactly when the displayed identity holds. A function satisfying it is a **$2$-cocycle** for the action, and the set of such functions is written $Z^2(G, A^\times)$; it is a group under pointwise multiplication, because $\alpha_\sigma$ is multiplicative and $A^\times$ is a group. A general cocycle is replaced by the normalised one $\tilde c(\sigma,\tau) = c(1,1)^{-1}c(\sigma,\tau)$, which yields the same algebra up to isomorphism, so we assume normalisation from now on. $\square$
+so the two agree for all basis elements exactly when the displayed identity holds. A function satisfying it is a **$2$-cocycle** for the action, and the set of such functions is written $Z^2(G, A^\times)$; it is a group under pointwise multiplication, because $\alpha_\sigma$ is multiplicative and $A^\times$ is a group. A general cocycle is replaced by the normalised one $\tilde c(\sigma,\tau) = c(1,1)^{-1}c(\sigma,\tau)$, which yields the same algebra up to isomorphism, so we assume normalisation from now on.
 
 ### Basic properties
 
@@ -91,7 +91,7 @@ $$
 Z(B) = \{a \in A : \alpha_\sigma(a) = a \ \forall \sigma\} \cap \{a : a\, c(\sigma,\tau) = c(\sigma,\tau)\,\alpha_\sigma(a) \ \forall \sigma,\tau\} .
 $$
 
-*Proof.* 1 and 2 are immediate from the definition. For 3, $u_\sigma A = A u_\sigma$ always, so $A$ is an ideal exactly when $u_\sigma A \subseteq A$ for all $\sigma$, that is, when $\alpha_\sigma(A) \subseteq A$ with equality, which holds automatically; what fails is $A u_\sigma \subseteq A$ for $\sigma \neq 1$, impossible because the $A u_\sigma$ are independent direct summands. For 4, an element $x = \sum_\sigma a_\sigma u_\sigma$ is central exactly when $xu_\tau = u_\tau x$ for all $\tau$, which after expanding and using linear independence of the $u_{\sigma\tau}$ gives $\alpha_\tau(a_\sigma) c(\tau,\sigma) = a_\sigma c(\sigma,\tau)$ for all $\sigma,\tau$; for $\sigma = 1$ this forces $a_1$ to be fixed, and for $\sigma \neq 1$ it forces $a_\sigma = 0$ in the cases of interest. $\square$
+*Proof.* 1 and 2 are immediate from the definition. For 3, $u_\sigma A = A u_\sigma$ always, so $A$ is an ideal exactly when $u_\sigma A \subseteq A$ for all $\sigma$, that is, when $\alpha_\sigma(A) \subseteq A$ with equality, which holds automatically; what fails is $A u_\sigma \subseteq A$ for $\sigma \neq 1$, impossible because the $A u_\sigma$ are independent direct summands. For 4, an element $x = \sum_\sigma a_\sigma u_\sigma$ is central exactly when $xu_\tau = u_\tau x$ for all $\tau$, which after expanding and using linear independence of the $u_{\sigma\tau}$ gives $\alpha_\tau(a_\sigma) c(\tau,\sigma) = a_\sigma c(\sigma,\tau)$ for all $\sigma,\tau$; for $\sigma = 1$ this forces $a_1$ to be fixed, and for $\sigma \neq 1$ it forces $a_\sigma = 0$ in the cases of interest.
 
 The last computation is the one used in the central simple case below: when $A = L$ is a finite Galois extension of $F$ with group $G$ acting faithfully, the only central elements have $\sigma = 1$ and then $a \in L^G = F$, so $Z(L \rtimes_c G) = F$.
 
@@ -121,7 +121,7 @@ $$
 \lvert G\rvert = \sum_\chi d_\chi^2 .
 $$
 
-*Proof (sketch).* The averaging argument of Maschke applies to the regular representation of $G$ on $F^\alpha G$ because the group elements act by semilinear maps with respect to the twisted multiplication, and the average of an invariant projection exists since $\lvert G\rvert$ is invertible. Statement 2 is the Artin–Wedderburn theorem applied to the semisimple algebra $F^\alpha G$, whose simple modules are the irreducible $\alpha$-projective representations; the dimension count is the sum of the squares of their degrees, since the regular module is a direct sum of $d_\chi$ copies of each simple module of dimension $d_\chi$. $\square$
+*Proof (sketch).* The averaging argument of Maschke applies to the regular representation of $G$ on $F^\alpha G$ because the group elements act by semilinear maps with respect to the twisted multiplication, and the average of an invariant projection exists since $\lvert G\rvert$ is invertible. Statement 2 is the Artin–Wedderburn theorem applied to the semisimple algebra $F^\alpha G$, whose simple modules are the irreducible $\alpha$-projective representations; the dimension count is the sum of the squares of their degrees, since the regular module is a direct sum of $d_\chi$ copies of each simple module of dimension $d_\chi$.
 
 The irreducible $F^\alpha G$-modules are exactly the **$\alpha$-projective representations** of $G$; the twisted group algebra is the device that turns a projective representation of $G$ into an ordinary representation of an algebra.
 
@@ -177,7 +177,7 @@ $$
 u'_\sigma u'_\tau = c'(\sigma,\tau)u'_{\sigma\tau}, \qquad \text{while} \qquad t(\sigma)^{-1}u'_\sigma \cdot t(\tau)^{-1}u'_\tau = t(\sigma)^{-1}\alpha_\sigma(t(\tau))^{-1} c'(\sigma,\tau) u'_{\sigma\tau},
 $$
 
-and the two agree after the substitution $c'(\sigma,\tau) = t(\sigma)\alpha_\sigma(t(\tau))t(\sigma\tau)^{-1}c(\sigma,\tau)$. $\square$
+and the two agree after the substitution $c'(\sigma,\tau) = t(\sigma)\alpha_\sigma(t(\tau))t(\sigma\tau)^{-1}c(\sigma,\tau)$.
 
 ### The product of classes and the Brauer group
 
@@ -195,7 +195,7 @@ $$
 (A \otimes_F B) \otimes_F L \;\cong\; (A \otimes_F L) \otimes_L (B \otimes_F L)
 $$
 
-is graded with homogeneous component $L(u_\sigma \otimes v_\sigma)$, whose product is governed by the factor set $\sigma,\tau \mapsto c(\sigma,\tau)c'(\sigma,\tau)$. Hence $A \otimes_F B$ is split by $L$ and its class is $\Phi([c][c'])$. $\square$
+is graded with homogeneous component $L(u_\sigma \otimes v_\sigma)$, whose product is governed by the factor set $\sigma,\tau \mapsto c(\sigma,\tau)c'(\sigma,\tau)$. Hence $A \otimes_F B$ is split by $L$ and its class is $\Phi([c][c'])$.
 
 ### The Noether–Deuring theorem
 
@@ -205,7 +205,7 @@ $$
 \operatorname{Br}(L/F) \;\cong\; H^2(G, L^\times) .
 $$
 
-*Proof (outline).* The construction $[c] \mapsto [L \rtimes_c G]$ is injective because a crossed product with factor set $c$ determines the cocycle up to equivalence: the $L$-basis $\{u_\sigma\}$ is unique up to the substitutions $u_\sigma \mapsto t(\sigma)^{-1}u_\sigma$ that change $c$ by a coboundary. It is surjective by the crossed-product theorem for central simple algebras: if $A$ is central simple over $F$ and split by $L$, then $A \otimes_F L \cong M_n(L)$, and choosing an identification of the simple $A \otimes_F L$-module with $L^n$ exhibits $A$ as the algebra of $G$-fixed points in $M_n(L)$ with respect to the action twisted by the factor set; explicitly $A \cong L \rtimes_c G$ for a suitable $c$. The cohomological form of this statement is that every class in the relative Brauer group is represented by a crossed product, and it is the content of the classical theorem. $\square$
+*Proof (outline).* The construction $[c] \mapsto [L \rtimes_c G]$ is injective because a crossed product with factor set $c$ determines the cocycle up to equivalence: the $L$-basis $\{u_\sigma\}$ is unique up to the substitutions $u_\sigma \mapsto t(\sigma)^{-1}u_\sigma$ that change $c$ by a coboundary. It is surjective by the crossed-product theorem for central simple algebras: if $A$ is central simple over $F$ and split by $L$, then $A \otimes_F L \cong M_n(L)$, and choosing an identification of the simple $A \otimes_F L$-module with $L^n$ exhibits $A$ as the algebra of $G$-fixed points in $M_n(L)$ with respect to the action twisted by the factor set; explicitly $A \cong L \rtimes_c G$ for a suitable $c$. The cohomological form of this statement is that every class in the relative Brauer group is represented by a crossed product, and it is the content of the classical theorem.
 
 It follows that the relative Brauer group is the second cohomology of the Galois group, and, taking the union over all finite Galois extensions, that the Brauer group is a union of such cohomology groups. The theorem also shows that an algebra whose class is a coboundary is split: if $c(\sigma,\tau) = t(\sigma)\alpha_\sigma(t(\tau))t(\sigma\tau)^{-1}$ then the substitution of the proposition makes the factor set trivial, and $L \rtimes_c G \cong L \rtimes_1 G \cong M_{\lvert G\rvert}(F)$ when the action is trivial; this is the algebraic form of Hilbert's theorem 90 in the background.
 

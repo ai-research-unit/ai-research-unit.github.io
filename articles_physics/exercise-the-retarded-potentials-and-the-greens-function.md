@@ -344,7 +344,7 @@ The further reading of this exercise is the parent and companion articles of thi
 - *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector* — the four-vectors, including the four-potential and four-current, and the light cone as the zero-divisor cone.
 - *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector* — the Hermitian subspace and the trace formula.
 - *Maxwell's Equations in the Biquaternionic Formulation* — the direct parent: the potential equation and the source biquaternions.
-- *The Field-Strength Biquaternion and Its Invariants* — the field strength built from the potential by differentiation, and its norm form.
+- *The Field-Strength Biquaternion and Its Invariants* — the field strength built from the potential by differentiation, and its biquaternion norm.
 - *The Lorentz Transformation as a Biquaternionic Rotation* — the covariance of the four-potential, inherited here unchanged.
 - *Radiation from Accelerated Charges in Biquaternionic Form* — the companion that states (but does not derive) the retarded kernel and convolution and specializes them to a point charge, with the worldline Jacobian of Problem 4(b).
 - *The Feynman Propagator in Biquaternionic Form* — the causal contour prescription and the relation among the Feynman, retarded, and advanced kernels (Problems 2(c) and 3).

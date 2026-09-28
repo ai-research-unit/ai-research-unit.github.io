@@ -22,7 +22,7 @@ The article introduces nothing and proves nothing. It records examples and non-e
 | $k[[x]]$ | $(x)$ | $k$ | yes, discrete | *Examples of Rings and Fields* |
 | $\mathbb{Z}_p$ | $(p)$ | $\mathbb{F}_p$ | yes, discrete | *Absolute Values, Valuations and Completions* |
 | $\mathbb{F}_p$, $\mathbb{Q}_p$, $\mathbb{R}$, $\mathbb{C}$ | $(0)$ | the field itself | yes, the trivial valuation | *Finite Fields*, *The Real Numbers*, *The Complex Numbers*, *Absolute Values, Valuations and Completions* |
-| $\mathcal{O}_v$, a general valuation ring | $\mathfrak{m}_v = \{x : v(x) > 0\}$ | $k(v) = \mathcal{O}_v/\mathfrak{m}_v$ | yes, by definition | *Valuation Theory and Henselian Rings* |
+| $\mathcal{O}_v$, a general valuation ring | $\mathrm{M}_v = \{x : v(x) > 0\}$ | $k(v) = \mathcal{O}_v/\mathrm{M}_v$ | yes, by definition | *Valuation Theory and Henselian Rings* |
 | $\overline{\mathbb{Z}_p}$ | the extension of $p\mathbb{Z}_p$ | $\overline{\mathbb{F}_p}$ | yes, value group $\mathbb{Q}$ | *Absolute Values, Valuations and Completions* |
 | $R^h$, the henselization of a local ring | the maximal ideal of $R$ extended | the residue field of $R$ | when $R$ is a valuation ring | *Valuation Theory and Henselian Rings* |
 
@@ -38,9 +38,9 @@ A discrete valuation ring is a valuation ring whose value group is $\mathbb{Z}$;
 | $k[t]_{(t)}$ | $(t)$ | $\mathbb{Z}$ | $k$ | *Absolute Values, Valuations and Completions* |
 | $k[[x]]$ | $(x)$ | $\mathbb{Z}$ | $k$ | *Examples of Rings and Fields* |
 | $\mathbb{Z}_p$ | $p\mathbb{Z}_p$ | $\mathbb{Z}$ | $\mathbb{F}_p$ | *Absolute Values, Valuations and Completions* |
-| $\mathcal{O}_{K,\mathfrak{p}}$, the localisation of $\mathcal{O}_K$ at a prime | $\mathfrak{p}$ | $\mathbb{Z}$ | $\mathcal{O}_K/\mathfrak{p}$ | *Dedekind Domains and Ideal Class Groups* |
+| $\mathcal{O}_{K,\mathrm{P}}$, the localisation of $\mathcal{O}_K$ at a prime | $\mathrm{P}$ | $\mathbb{Z}$ | $\mathcal{O}_K/\mathrm{P}$ | *Dedekind Domains and Ideal Class Groups* |
 
-The valuation is the exponent of the maximal ideal: $v_p(a/b)$ is the exponent of $p$ in $a$ minus the exponent in $b$, and the same rule with an irreducible element replaces $p$ in the other rows. Every DVR has the ideal chain $\mathcal{O} \supsetneq \mathfrak{m} \supsetneq \mathfrak{m}^2 \supsetneq \cdots$, and the localisation of a Dedekind domain at each of its nonzero prime ideals is a discrete valuation ring, as recorded in *Dedekind Domains and Ideal Class Groups*.
+The valuation is the exponent of the maximal ideal: $v_p(a/b)$ is the exponent of $p$ in $a$ minus the exponent in $b$, and the same rule with an irreducible element replaces $p$ in the other rows. Every DVR has the ideal chain $\mathcal{O} \supsetneq \mathrm{M} \supsetneq \mathrm{M}^2 \supsetneq \cdots$, and the localisation of a Dedekind domain at each of its nonzero prime ideals is a discrete valuation ring, as recorded in *Dedekind Domains and Ideal Class Groups*.
 
 ## Non-Discrete and Higher-Rank Valuations
 
@@ -72,7 +72,7 @@ In the non-Archimedean case the completion preserves both invariants: the value 
 | Value group | The rings and fields that carry it | Introduced in |
 |---|---|---|
 | $0$ | every field, with the trivial valuation | *Valuation Theory and Henselian Rings* |
-| $\mathbb{Z}$ | every discrete valuation ring: $\mathbb{Z}_{(p)}$, $k[t]_{(t)}$, $k[[x]]$, $\mathbb{Z}_p$, $\mathcal{O}_{K,\mathfrak{p}}$, and the fields $\mathbb{Q}_p$, $k((t))$ | *Absolute Values, Valuations and Completions*, *Examples of Rings and Fields*, *Dedekind Domains and Ideal Class Groups* |
+| $\mathbb{Z}$ | every discrete valuation ring: $\mathbb{Z}_{(p)}$, $k[t]_{(t)}$, $k[[x]]$, $\mathbb{Z}_p$, $\mathcal{O}_{K,\mathrm{P}}$, and the fields $\mathbb{Q}_p$, $k((t))$ | *Absolute Values, Valuations and Completions*, *Examples of Rings and Fields*, *Dedekind Domains and Ideal Class Groups* |
 | a dense subgroup of $\mathbb{R}$ | the non-discrete rank-one valuation ring of $k(x)$ | *Valuation Theory and Henselian Rings* |
 | $\mathbb{Q}$ | the valuation ring of $\overline{\mathbb{Q}_p}$ and of $\mathbb{C}_p$ | *Absolute Values, Valuations and Completions* |
 | $\mathbb{Z} \oplus \mathbb{Z}$, lexicographic | the rank-two valuation ring of $k(x,y)$ | *Valuation Theory and Henselian Rings* |
@@ -101,14 +101,14 @@ A catalogue denotes its objects by name rather than by symbol. The symbols that 
 | Symbol | Meaning |
 |---|---|
 | $\mathcal{O}$, $\mathcal{O}_v$ | Valuation ring of the valuation $v$ |
-| $\mathfrak{m}$, $\mathfrak{m}_v$ | Maximal ideal of a local ring or valuation ring |
-| $k(v)$ | Residue field $\mathcal{O}_v/\mathfrak{m}_v$ |
+| $\mathrm{M}$, $\mathrm{M}_v$ | Maximal ideal of a local ring or valuation ring |
+| $k(v)$ | Residue field $\mathcal{O}_v/\mathrm{M}_v$ |
 | $\Gamma$, $\Gamma_v$ | Value group, written additively |
 | $v_p$ | The $p$-adic valuation |
 | $\mathbb{Z}_{(p)}$, $\mathbb{Z}_p$ | Localisation at $p$, $p$-adic integers |
 | $\mathbb{Q}_p$, $\mathbb{C}_p$ | $p$-adic numbers, completed algebraic closure |
 | $k((t))$, $k[[x]]$ | Laurent series field, power series ring |
-| $\mathcal{O}_{K,\mathfrak{p}}$, $\mathcal{O}_K$ | Localisation of the ring of integers, ring of integers |
+| $\mathcal{O}_{K,\mathrm{P}}$, $\mathcal{O}_K$ | Localisation of the ring of integers, ring of integers |
 | $\overline{\mathbb{Q}_p}$, $\overline{\mathbb{Z}_p}$, $\overline{\mathbb{F}_p}$ | Algebraic closures and their valuation ring |
 | $\widehat{F}$, $R^h$ | Completion, henselization |
 | $\mathbb{D}'$ | The dual numbers, a local ring that is not a valuation ring |

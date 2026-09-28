@@ -45,11 +45,11 @@ $$
 B(X,Y)=-\tfrac12|x-y|^2 .
 $$
 
-**Proof.** Expand $X^2=q(x)+2B(x,\tfrac12|x|^2n_\infty)+2B(x,n)+2B(\tfrac12|x|^2n_\infty,n)+0+0$, using $n^2=n_\infty^2=0$: the two cross terms with $x$ vanish because $x$ is orthogonal to $n$ and to $n_\infty$, and the last is $\tfrac12|x|^2\cdot2B(n_\infty,n)=-|x|^2$, so $X^2=|x|^2-|x|^2=0$. For the second statement, expand the bilinear form on $X$ and $Y$ in the same way; the terms degenerate to $B(x,y)-\tfrac12|x|^2-\tfrac12|y|^2$, which is $-\tfrac12|x-y|^2$ by the expansion of the square. $\square$
+**Proof.** Expand $X^2=q(x)+2B(x,\tfrac12|x|^2n_\infty)+2B(x,n)+2B(\tfrac12|x|^2n_\infty,n)+0+0$, using $n^2=n_\infty^2=0$: the two cross terms with $x$ vanish because $x$ is orthogonal to $n$ and to $n_\infty$, and the last is $\tfrac12|x|^2\cdot2B(n_\infty,n)=-|x|^2$, so $X^2=|x|^2-|x|^2=0$. For the second statement, expand the bilinear form on $X$ and $Y$ in the same way; the terms degenerate to $B(x,y)-\tfrac12|x|^2-\tfrac12|y|^2$, which is $-\tfrac12|x-y|^2$ by the expansion of the square.
 
 **Corollary.** The Euclidean distance of two points is recoverable from the model, $|x-y|^2=-2B(X,Y)$, and the null cone of $\mathbb{R}^{n+1,1}$ is in bijection with the points of $\mathbb{R}^n$, with the ray of the vector corresponding to the point and the two rays $\lambda n$ and $\lambda n_\infty$ corresponding to the origin and to the point at infinity.
 
-**Proof.** The first statement is the theorem; the second identifies the null vectors $x+\tfrac12|x|^2n_\infty+n$ and rescales them, and the maps $x\mapsto X$ and $X\mapsto$ point are inverse on the rays. $\square$
+**Proof.** The first statement is the theorem; the second identifies the null vectors $x+\tfrac12|x|^2n_\infty+n$ and rescales them, and the maps $x\mapsto X$ and $X\mapsto$ point are inverse on the rays.
 
 ## Spheres and Planes
 
@@ -67,22 +67,22 @@ the point vector of $x$ being orthogonal to $s$.
 
 1. For a point $c$ and a radius $r>0$, the sphere of centre $c$ and radius $r$ is represented by
    
-   $$
+$$
    s=c+\tfrac12\bigl(|c|^2-r^2\bigr)n_\infty+n ,
-   $$
+$$
 
    which is the point vector of the centre displaced by $-\tfrac12r^2n_\infty$.
 2. For a hyperplane $\{x:a\cdot x=d\}$ with a unit normal $a$ and an offset $d$, the hyperplane is represented by
 
-   $$
+$$
    s=a+dn_\infty .
-   $$
+$$
 
-**Proof.** For the sphere, compute $B(X,s)$ with $X$ the point vector of $x$ and $s$ as displayed, using the orthogonality of $n$ and $n_\infty$ to $\mathbb{R}^n$ and $B(X,n_\infty)=-1$, $B(X,n)=-\tfrac12|x|^2$: the result is $-\tfrac12|x-c|^2+\tfrac12r^2$, which vanishes exactly on the sphere. For the hyperplane, $B(X,s)=B(x,a)+dB(x,n_\infty)+\tfrac12|x|^2B(n_\infty,a)+dB(n,n_\infty)$, and all the terms but the first and the last vanish because $x$ and $a$ are orthogonal to $n_\infty$, so the expression is $B(x,a)-d$, which vanishes exactly on the hyperplane. $\square$
+**Proof.** For the sphere, compute $B(X,s)$ with $X$ the point vector of $x$ and $s$ as displayed, using the orthogonality of $n$ and $n_\infty$ to $\mathbb{R}^n$ and $B(X,n_\infty)=-1$, $B(X,n)=-\tfrac12|x|^2$: the result is $-\tfrac12|x-c|^2+\tfrac12r^2$, which vanishes exactly on the sphere. For the hyperplane, $B(X,s)=B(x,a)+dB(x,n_\infty)+\tfrac12|x|^2B(n_\infty,a)+dB(n,n_\infty)$, and all the terms but the first and the last vanish because $x$ and $a$ are orthogonal to $n_\infty$, so the expression is $B(x,a)-d$, which vanishes exactly on the hyperplane.
 
 **Corollary.** The spheres are the vectors $s$ with $B(s,n_\infty)\neq0$ and the hyperplanes are the vectors with $B(s,n_\infty)=0$; accordingly the hyperplanes are the spheres through the point at infinity, and a point is a sphere of radius zero.
 
-**Proof.** For the sphere of the theorem, $B(s,n_\infty)=B(n,n_\infty)=-1$; for the hyperplane, $B(s,n_\infty)=0$. The last statement follows from the null point vector being of the displayed form with $r=0$. $\square$
+**Proof.** For the sphere of the theorem, $B(s,n_\infty)=B(n,n_\infty)=-1$; for the hyperplane, $B(s,n_\infty)=0$. The last statement follows from the null point vector being of the displayed form with $r=0$.
 
 ### Incidence and Duality
 
@@ -92,7 +92,7 @@ the point vector of $x$ being orthogonal to $s$.
 2. the intersection of a sphere and a plane is a sphere of dimension $n-2$, and of two planes a space of dimension $n-2$;
 3. in $\mathbb{R}^3$ a third sphere cuts the circle of two spheres in two points, the two null directions of the orthogonal complement of the 3-blade.
 
-**Proof.** The conditions $B(X,s_i)=0$ for all $i$ are the statement that $X$ is orthogonal to each $s_i$, hence to their wedge, which is the general duality statement. The dimension of the space of solutions is read off from the grade of the blade: the orthogonal complement of a $k$-blade in the space of dimension $n+2$ has dimension $n+2-k$, and its null rays are the common points, a circle for $k=2$ in three dimensions and two points for $k=3$. $\square$
+**Proof.** The conditions $B(X,s_i)=0$ for all $i$ are the statement that $X$ is orthogonal to each $s_i$, hence to their wedge, which is the general duality statement. The dimension of the space of solutions is read off from the grade of the blade: the orthogonal complement of a $k$-blade in the space of dimension $n+2$ has dimension $n+2-k$, and its null rays are the common points, a circle for $k=2$ in three dimensions and two points for $k=3$.
 
 **Remark.** The stated incidence is the reason sphere geometry becomes linear in this model: a statement about the intersection of spheres becomes a statement about the dimension of the orthogonal complement of a blade, and the algebra of blades is the calculus of the geometry. The full development, including the oriented spheres and the hyperbolic geometry of the space of them, is Lie sphere geometry, recorded in the literature cited below.
 
@@ -106,7 +106,7 @@ $$
 \mathrm{Conf}(\mathbb{R}^n)=\mathrm{Conf}(S^n)\cong O(n+1,1)/\{\pm1\}.
 $$
 
-**Proof.** An orthogonal map preserves the form, so it carries null vectors to null vectors, and the induced map on the rays is a bijection of the sphere of directions, hence a transformation of $S^n$; the metric statement of the theorem above, $|x-y|^2=-2B(X,Y)$, shows that the transformation is conformal with respect to the round metric, because it preserves the bilinear form up to a scalar factor on the cone. The converse, that every conformal transformation arises from an orthogonal map, is the classical theorem of Liouville for $n\ge3$ and is verified by enumeration in low dimensions; the kernel is $\{\pm1\}$ because a linear map fixing every point of the cone fixes the whole space. $\square$
+**Proof.** An orthogonal map preserves the form, so it carries null vectors to null vectors, and the induced map on the rays is a bijection of the sphere of directions, hence a transformation of $S^n$; the metric statement of the theorem above, $|x-y|^2=-2B(X,Y)$, shows that the transformation is conformal with respect to the round metric, because it preserves the bilinear form up to a scalar factor on the cone. The converse, that every conformal transformation arises from an orthogonal map, is the classical theorem of Liouville for $n\ge3$ and is verified by enumeration in low dimensions; the kernel is $\{\pm1\}$ because a linear map fixing every point of the cone fixes the whole space.
 
 **Corollary (dimension check).** The dimension of the conformal group is
 
@@ -116,7 +116,7 @@ $$
 
 the three terms being the dimensions of the rotations, of the translations and the special conformal transformations together, and of the dilations.
 
-**Proof.** The first expression is the dimension of the orthogonal group of a space of dimension $n+2$; the second collects the rotations of $\mathbb{R}^n$, the two $n$-dimensional families of translations and special conformal transformations, and the one-parameter family of dilations. The equality is immediate. $\square$
+**Proof.** The first expression is the dimension of the orthogonal group of a space of dimension $n+2$; the second collects the rotations of $\mathbb{R}^n$, the two $n$-dimensional families of translations and special conformal transformations, and the one-parameter family of dilations. The equality is immediate.
 
 ### The Transformations as Versors
 
@@ -128,7 +128,7 @@ $$
 
 which is a rotor, with $\widetilde{\mathrm{Ad}}_{T_t}(X)$ the point vector of $x+t$.
 
-**Proof.** The element $tn_\infty$ is the product of two orthogonal vectors, so its square is $q(t)\,q(n_\infty)=0$, and the exponential series terminates: $\exp(-\tfrac12tn_\infty)=1-\tfrac12tn_\infty$. Its norm is $T_t\bar T_t=(1-\tfrac12tn_\infty)(1+\tfrac12tn_\infty)=1$, because $n_\infty t=-tn_\infty$ and $n_\infty^2=0$; so it is a rotor, and its twisted adjoint is the plain one. The computation of $\widetilde{\mathrm{Ad}}_{T_t}(X)$ in the model, using $n_\infty x=-xn_\infty$ and $n_\infty n=-nn_\infty-2$, gives the point vector of $x+t$, the sign of the generator being the one for which the rotation acts as a translation by $+t$ rather than by $-t$. $\square$
+**Proof.** The element $tn_\infty$ is the product of two orthogonal vectors, so its square is $q(t)\,q(n_\infty)=0$, and the exponential series terminates: $\exp(-\tfrac12tn_\infty)=1-\tfrac12tn_\infty$. Its norm is $T_t\bar T_t=(1-\tfrac12tn_\infty)(1+\tfrac12tn_\infty)=1$, because $n_\infty t=-tn_\infty$ and $n_\infty^2=0$; so it is a rotor, and its twisted adjoint is the plain one. The computation of $\widetilde{\mathrm{Ad}}_{T_t}(X)$ in the model, using $n_\infty x=-xn_\infty$ and $n_\infty n=-nn_\infty-2$, gives the point vector of $x+t$, the sign of the generator being the one for which the rotation acts as a translation by $+t$ rather than by $-t$.
 
 **Remark (the four generators).** The rotations are the rotors of the Euclidean part of the model, the translations are the rotors displayed, the dilations are the rotors $\exp\bigl(\tfrac12\ln\lambda\;(n_\infty\wedge n)\bigr)$, whose generator has square one, since $(n_\infty\wedge n)^2=1$, and the special conformal transformations are obtained by conjugating a translation by an inversion. The group generated is the whole of $O(n+1,1)$, and the inversions themselves correspond to the reflections of the model, so the classical statement that the conformal group is generated by inversions is the statement that the orthogonal group is generated by reflections. The development of the versors and of their exponentiation is in *Versors, Rotors and the Sandwich Action*.
 

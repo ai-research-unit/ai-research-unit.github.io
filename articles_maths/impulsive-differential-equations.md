@@ -31,11 +31,11 @@ The convention on one-sided values is the only point of care in the definition, 
 
 **Theorem (interval method).** Suppose $f$ is continuous and locally Lipschitz in its second variable, each $I_k$ is continuous, and the impulse times are locally finite, that is, every compact subinterval of $I$ contains only finitely many $\tau_k$. Then for every initial datum there is a unique maximal solution.
 
-*Proof.* On the interval $[\tau_0, \tau_1]$, before the first impulse, the equation is the ordinary problem $y' = f(t,y)$ with the given initial value, and the Picard–Lindelöf theorem of *Ordinary Differential Equations* gives a unique maximal solution there. If the solution reaches $\tau_1$ with a left limit $y(\tau_1^-)$, the jump condition defines $y(\tau_1^+) = y(\tau_1^-) + I_1(y(\tau_1^-))$, which is continuous in $y(\tau_1^-)$ because $I_1$ is; the ordinary argument then restarts at $(\tau_1, y(\tau_1^+))$ on $[\tau_1,\tau_2]$. Because the impulse times are locally finite, finitely many steps cover any compact subinterval, and the solution is obtained by gluing. Uniqueness is the uniqueness of each ordinary subproblem together with the determinism of the jump maps. $\square$
+*Proof.* On the interval $[\tau_0, \tau_1]$, before the first impulse, the equation is the ordinary problem $y' = f(t,y)$ with the given initial value, and the Picard–Lindelöf theorem of *Ordinary Differential Equations* gives a unique maximal solution there. If the solution reaches $\tau_1$ with a left limit $y(\tau_1^-)$, the jump condition defines $y(\tau_1^+) = y(\tau_1^-) + I_1(y(\tau_1^-))$, which is continuous in $y(\tau_1^-)$ because $I_1$ is; the ordinary argument then restarts at $(\tau_1, y(\tau_1^+))$ on $[\tau_1,\tau_2]$. Because the impulse times are locally finite, finitely many steps cover any compact subinterval, and the solution is obtained by gluing. Uniqueness is the uniqueness of each ordinary subproblem together with the determinism of the jump maps.
 
 **Corollary (maximal interval and blow-up).** The maximal solution has an interval $(\alpha,\beta)$; if $\beta < \infty$ and $\beta$ is not an accumulation point of impulse times, then the solution is unbounded on $[\tau_0,\beta)$, and if $\beta$ is an accumulation point the solution may have a finite limit or no limit at all.
 
-*Proof.* If the solution were bounded on $[\tau_0,\beta)$ and there were a final impulse time $\tau_N < \beta$ before $\beta$, the boundedness and the local Lipschitz condition would extend the solution beyond $\beta$, as in the ordinary maximal-interval theorem. When the impulse times accumulate at $\beta$ the limit need not exist, and the standard examples below show both possibilities. $\square$
+*Proof.* If the solution were bounded on $[\tau_0,\beta)$ and there were a final impulse time $\tau_N < \beta$ before $\beta$, the boundedness and the local Lipschitz condition would extend the solution beyond $\beta$, as in the ordinary maximal-interval theorem. When the impulse times accumulate at $\beta$ the limit need not exist, and the standard examples below show both possibilities.
 
 ### Accumulation of Impulses and Beating
 
@@ -76,15 +76,15 @@ $$
 
 the **monodromy matrix**, and the fundamental matrix satisfies $W(t+T) = W(t)M$ for $t$ in the first period.
 
-*Proof.* The formula is the interval method applied to the matrix equation: between impulses the matrix solves the linear equation $W' = AW$, so it equals the ordinary fundamental matrix; across an impulse left multiplication by $I+B_k$ performs the jump. The causality and invertibility are immediate from the formula and from the invertibility of each factor. $\square$
+*Proof.* The formula is the interval method applied to the matrix equation: between impulses the matrix solves the linear equation $W' = AW$, so it equals the ordinary fundamental matrix; across an impulse left multiplication by $I+B_k$ performs the jump. The causality and invertibility are immediate from the formula and from the invertibility of each factor.
 
 **Theorem (Floquet).** If $A$ is $T$-periodic and the jump pattern is $T$-periodic with finitely many jumps per period, then $W(t,t_0) = P(t)e^{(t-t_0)C}$ where $P$ is $T$-periodic and invertible in $t$ and $C$ is constant, $e^{TC}=M$.
 
-*Proof.* Since $W(t+T) = W(t)M$ by periodicity, and $M$ is invertible as a product of invertible factors, choose a logarithm $C$ with $e^{TC}=M$ and put $P(t) = W(t)e^{-tC}$; then $P(t+T) = W(t+T)e^{-(t+T)C} = W(t)Me^{-TC}e^{-tC} = W(t)e^{-tC} = P(t)$. $\square$
+*Proof.* Since $W(t+T) = W(t)M$ by periodicity, and $M$ is invertible as a product of invertible factors, choose a logarithm $C$ with $e^{TC}=M$ and put $P(t) = W(t)e^{-tC}$; then $P(t+T) = W(t+T)e^{-(t+T)C} = W(t)Me^{-TC}e^{-tC} = W(t)e^{-tC} = P(t)$.
 
 **Corollary (stability).** The linear impulsive periodic system is asymptotically stable if and only if every eigenvalue of the monodromy matrix $M$ has modulus strictly less than $1$; it is stable if and only if the eigenvalues have modulus at most $1$ and those of modulus $1$ are semisimple. The eigenvalues of $M$ are the **Floquet multipliers** and the eigenvalues of $C$ the **Floquet exponents**.
 
-*Proof.* By Floquet's theorem $W(t) = P(t)e^{tC}$ with $P$ bounded and invertible, so the growth of $W(t)$ as $t\to\infty$ is governed by $e^{tC}$, hence by the eigenvalues of $C$; these are $\log\mu/T$ for the eigenvalues $\mu$ of $M$, so $|\mu|<1$ is equivalent to strictly negative real part for the exponents. $\square$
+*Proof.* By Floquet's theorem $W(t) = P(t)e^{tC}$ with $P$ bounded and invertible, so the growth of $W(t)$ as $t\to\infty$ is governed by $e^{tC}$, hence by the eigenvalues of $C$; these are $\log\mu/T$ for the eigenvalues $\mu$ of $M$, so $|\mu|<1$ is equivalent to strictly negative real part for the exponents.
 
 **Example (an oscillator with a periodic kick).** With $A = \begin{pmatrix}0&1\\-1&0\end{pmatrix}$, a period $T = 2\pi$ and one impulse per period with $B = \alpha I$ at $t = \pi$, the monodromy over one period is the product of two rotation-half matrices and the factor $1+\alpha$:
 
@@ -104,7 +104,7 @@ $$
 
 the sum being finite on every compact interval when the impulse times are locally finite.
 
-*Proof.* By linearity it suffices to verify each term. The first is the homogeneous solution; the integral term is the ordinary variation-of-constants formula between impulses, its value jumping correctly because $W$ does; and each $c_k$ contributes the response of an impulse to the state at $\tau_k$, propagated forward by $W(t,\tau_k^+)$, which is the definition of $c_k$. Uniqueness of the solution of the impulsive initial-value problem completes the proof. $\square$
+*Proof.* By linearity it suffices to verify each term. The first is the homogeneous solution; the integral term is the ordinary variation-of-constants formula between impulses, its value jumping correctly because $W$ does; and each $c_k$ contributes the response of an impulse to the state at $\tau_k$, propagated forward by $W(t,\tau_k^+)$, which is the definition of $c_k$. Uniqueness of the solution of the impulsive initial-value problem completes the proof.
 
 ## Stability
 
@@ -120,7 +120,7 @@ along solutions.
 
 **Theorem (stability).** If such a Lyapunov function exists with $\dot V \le 0$ and nonincreasing jumps, the zero solution is stable; if in addition $\dot V \le -w(\|y\|)$ for a positive definite $w$ and the jumps satisfy $V(\tau_k^+,y^+) \le (1 - d_k)V(\tau_k^-,y^-)$ with $d_k \ge 0$ and $\sum_k d_k = \infty$, the zero solution is asymptotically stable.
 
-*Proof.* Between impulses $V(\tau_k^+,y(t))$ is nonincreasing by $\dot V \le 0$, and the jump hypothesis makes it nonincreasing across the impulses as well; so $V$ is a nonincreasing function of time along the solution, and positive definiteness gives stability exactly as in the direct method of Lyapunov for ordinary equations. Under the stronger hypotheses the total decrement is infinite, so $V \to 0$ and, by positive definiteness, $y \to 0$. $\square$
+*Proof.* Between impulses $V(\tau_k^+,y(t))$ is nonincreasing by $\dot V \le 0$, and the jump hypothesis makes it nonincreasing across the impulses as well; so $V$ is a nonincreasing function of time along the solution, and positive definiteness gives stability exactly as in the direct method of Lyapunov for ordinary equations. Under the stronger hypotheses the total decrement is infinite, so $V \to 0$ and, by positive definiteness, $y \to 0$.
 
 **Corollary (linear systems).** For the linear impulsive system with constant $A$ and jumps $B_k$, the quadratic $V(y) = y^*y$ gives
 
@@ -130,7 +130,7 @@ $$
 
 and the derivative along the flow is $\dot V = y^*(A^*+A)y$. Hence if $A^*+A \le -2\alpha I$ and $\|I+B_k\|^2 \le e^{-2\beta_k}$ with $\alpha$ and the $\beta_k$ giving an infinite total decrement, the zero solution is asymptotically stable.
 
-*Proof.* Immediate from the theorem applied to the quadratic; the infinite decrement condition is $\sum_k(\beta_k) = \infty$ when the impulses are separated in a bounded way, more precisely when the inter-impulse times are bounded above, so that the continuous decrement $\alpha \cdot$ (time) is not lost. $\square$
+*Proof.* Immediate from the theorem applied to the quadratic; the infinite decrement condition is $\sum_k(\beta_k) = \infty$ when the impulses are separated in a bounded way, more precisely when the inter-impulse times are bounded above, so that the continuous decrement $\alpha \cdot$ (time) is not lost.
 
 **Example (a stable discrete map).** For the pure impulse problem with $A=0$, $B_k = B$ constant and impulses at every integer, the theorem gives the sufficient discrete-time condition $\|(I+B)\|<1$; the sharp condition for the stability of the iteration $x \mapsto (I+B)x$ is the spectral one $\rho(I+B)<1$, which is strictly weaker — the norm of a matrix can exceed its spectral radius, as it does for a nilpotent $I+B$ of large norm — and which is equivalent to $\|(I+B)^n\|<1$ for some $n$ by the spectral radius formula $\rho(M)=\lim_n\|M^n\|^{1/n}$. The two conditions agree when $I+B$ is normal, since then $\|I+B\|=\rho(I+B)$ in the operator norm induced by the Euclidean norm. The example shows that the impulsive theory contains the theory of the iterated linear map $x \mapsto (I+B)x$ as the special case $A=0$.
 
@@ -148,7 +148,7 @@ $$
 u(t) \le a\,\exp\Bigl(\int_{t_0}^t\beta(s)\,ds\Bigr)\prod_{\tau_k \in (t_0,t]}(1+\gamma_k) .
 $$
 
-*Proof.* Apply the ordinary Gronwall inequality of *Ordinary Differential Equations* on each interval between consecutive impulse times, accumulating the factor $1+\gamma_k$ at each impulse. $\square$
+*Proof.* Apply the ordinary Gronwall inequality of *Ordinary Differential Equations* on each interval between consecutive impulse times, accumulating the factor $1+\gamma_k$ at each impulse.
 
 The inequality is the working tool for continuous dependence and for existence proofs with non-Lipschitz impulses; it shows that the jumps multiply the ordinary estimate by the product of the jump factors, so that stability is a question about the convergence of that product.
 
@@ -172,7 +172,7 @@ the integral being the Lebesgue–Stieltjes (or Kurzweil–Stieltjes) integral o
 
 **Theorem (existence and uniqueness).** If $F$ is continuous, $\mu$ is locally finite, and $F$ satisfies a global Lipschitz condition in the second variable with $\mu$-integrable constant, then for every $t_0$ and $y_0$ there is a unique solution on the whole interval.
 
-*Proof.* The integral operator is a contraction on the space of $\mu$-a.e. continuous functions with the sup norm when the Lipschitz constant times $\mu([t_0,t])$ is less than $1$, which holds on a sufficiently short interval and can be iterated; this is the Picard argument with the Stieltjes integral replacing the Lebesgue integral, and the completeness of the space is that of $C([t_0,t],X)$ under the supremum norm. $\square$
+*Proof.* The integral operator is a contraction on the space of $\mu$-a.e. continuous functions with the sup norm when the Lipschitz constant times $\mu([t_0,t])$ is less than $1$, which holds on a sufficiently short interval and can be iterated; this is the Picard argument with the Stieltjes integral replacing the Lebesgue integral, and the completeness of the space is that of $C([t_0,t],X)$ under the supremum norm.
 
 **Remark (why the measure language is the right one).** The measure formulation removes the need for local finiteness of the impulse times: an accumulated sequence of impulses is carried by a measure $\sum_k m_k\delta_{\tau_k}$ that is finite on compact sets whenever $\sum_{k:\tau_k\le t}m_k < \infty$, and the Stieltjes integral converges under this summability even though the intervals between impulses shrink to zero length. The Zeno phenomenon is then a statement about the mass of the measure on a small interval, not about the count of the impulse times, and the solution continues to exist when the total mass is finite. The general interaction of this formulation with the ordinary equation in the absolutely continuous part of $\mu$ is the theory of measure differential equations, and its study for finite-dimensional $X$ and a general $\mu$ is a standard chapter of the field.
 

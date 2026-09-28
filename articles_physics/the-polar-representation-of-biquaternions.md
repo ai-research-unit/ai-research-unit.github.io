@@ -19,15 +19,15 @@ The dictionary is as follows, and each line is established in a section below.
 | $B$ | the Lorentz boost rotor, in the positive-definite normalisation |
 | $\hat{q}$ | the spatial rotation, the subgroup $SU(2)$, and the Thomas–Wigner rotation when two boosts are composed |
 
-Two consequences of the algebraic theorem are physical, and they frame the article. First, a Lorentz rotor of unit norm form has $r = 1$ and $\alpha = 0$, so the representation reduces on the Lorentz group to the Cartan decomposition $\tilde{\Lambda} = \tilde{B}\tilde{R}$, which is therefore a **special case** of the four-factor representation and not a separate theorem. Second, the norm form is the determinant of the $2\times2$ representation, so the modulus of the representation is the square root of a determinant, and the four factors are respectively the absolute value of a determinant, an argument of a determinant, a positive Hermitian matrix, and a unitary matrix. The physics of the representation is the physics of combining four objects under one multiplication, and the algebra of the representation is the matrix polar decomposition of $GL(2,\mathbb{C})$.
+Two consequences of the algebraic theorem are physical, and they frame the article. First, a Lorentz rotor of unit norm has $r = 1$ and $\alpha = 0$, so the representation reduces on the Lorentz group to the Cartan decomposition $\tilde{\Lambda} = \tilde{B}\tilde{R}$, which is therefore a **special case** of the four-factor representation and not a separate theorem. Second, the biquaternion norm is the determinant of the $2\times2$ representation, so the modulus of the representation is the square root of a determinant, and the four factors are respectively the absolute value of a determinant, an argument of a determinant, a positive Hermitian matrix, and a unitary matrix. The physics of the representation is the physics of combining four objects under one multiplication, and the algebra of the representation is the matrix polar decomposition of $GL(2,\mathbb{C})$.
 
-The conventions are those of *Conventions in the Biquaternion Universe* as used by *The Four-Vector Representation of Biquaternions*, *The 2×2 Matrix Representation of Biquaternions* and *The 4×4 Regular Matrix Representation of Biquaternions*: the scalar imaginary is $i$, central; the units satisfy $e_k^2 = -e_0$ and $e_1e_2 = e_3$; the norm form is $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$; $\mathbb{H}_{\mathbb{B}}$, the fixed space of complex conjugation, is the real quaternion subspace, the home of the rotations, meeting the informational sector in $\mathbb{R}e_0$ and the material sector in the pure-vector space; the informational sector $\mathbb{M}_+$ is the Hermitian subspace, the home of the boosts; and the material sector $\mathbb{M}_-$ is the anti-fixed space of quaternion conjugation, with $Q_0 = iq'_0$ and $Q_k = q_k$ real, the home of the four-vectors, with the interval $N = -c^2t^2+\mathbf{x}^2$. Every numerical value below was recomputed in double precision.
+The conventions are those of *Conventions in the Biquaternion Universe* as used by *The Four-Vector Representation of Biquaternions*, *The 2×2 Matrix Representation of Biquaternions* and *The 4×4 Regular Matrix Representation of Biquaternions*: the scalar imaginary is $i$, central; the units satisfy $e_k^2 = -e_0$ and $e_1e_2 = e_3$; the biquaternion norm is $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$; $\mathbb{H}_{\mathbb{B}}$, the fixed space of complex conjugation, is the real quaternion subspace, the home of the rotations, meeting the informational sector in $\mathbb{R}e_0$ and the material sector in the pure-vector space; the informational sector $\mathbb{M}_+$ is the Hermitian subspace, the home of the boosts; and the material sector $\mathbb{M}_-$ is the anti-fixed space of quaternion conjugation, with $Q_0 = iq'_0$ and $Q_k = q_k$ real, the home of the four-vectors, with the interval $N = -c^2t^2+\mathbf{x}^2$. Every numerical value below was recomputed in double precision.
 
 ## The Scale and the Determinant
 
 ### The Modulus Is a Determinant
 
-In the $2\times2$ matrix representation the norm form is the determinant,
+In the $2\times2$ matrix representation the biquaternion norm is the determinant,
 
 $$
 \det\Phi(\tilde{Q}) = N(\tilde{Q}) = \sum_\mu Q_\mu^2 ,
@@ -49,7 +49,7 @@ Every statement about the modulus is therefore a statement about the determinant
 
 ### The Unit-Norm Slice Is the Lorentz Group
 
-For a Lorentz rotor $\tilde{\Lambda}$ the norm form is the unit, $N(\tilde{\Lambda}) = e_0$, so $r = 1$ and $\alpha = 0$ and the representation collapses to two factors,
+For a Lorentz rotor $\tilde{\Lambda}$ the biquaternion norm is the unit, $N(\tilde{\Lambda}) = e_0$, so $r = 1$ and $\alpha = 0$ and the representation collapses to two factors,
 
 $$
 \tilde{\Lambda} = B\,\hat{q} , \qquad B\in\mathbb{M}_+,\quad \hat{q}\in\mathrm{Sp}(1) .
@@ -71,7 +71,7 @@ $$
 \tilde{Q} = i\,ct\,e_0 + \beta c t\,\hat{\mathbf{u}} ,
 $$
 
-and its norm form is the interval
+and its biquaternion norm is the interval
 
 $$
 N(\tilde{Q}) = -c^2t^2 + \beta^2c^2t^2 = -c^2t^2\left(1-\beta^2\right) ,
@@ -93,7 +93,7 @@ The phase factor $e^{i\alpha}$ is central, so it commutes with every element of 
 
 ### The Phase Cannot Be Removed by a Lorentz Transformation
 
-The norm form is invariant under the rotor conjugation $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^\dagger$ with $N(\tilde{\Lambda}) = e_0$, and the modulus inherits the invariance:
+The biquaternion norm is invariant under the rotor conjugation $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^\dagger$ with $N(\tilde{\Lambda}) = e_0$, and the modulus inherits the invariance:
 
 $$
 N\left(\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^\dagger\right) = N(\tilde{\Lambda})N(\tilde{Q})N\left(\tilde{\Lambda}^\dagger\right) = N(\tilde{Q}) .
@@ -159,7 +159,7 @@ $$
 \tilde{\Lambda} = \cosh\frac{\psi}{2}e_0 + i\sinh\frac{\psi}{2}e_1 , \qquad \psi = \operatorname{atanh}0.6 = 0.693147181 ,
 $$
 
-that is, $\tilde{\Lambda} = 1.060660172\,e_0 + 0.353553391\,ie_1$. Its norm form is $N(\tilde{\Lambda}) = \cosh^2\frac{\psi}{2} - \sinh^2\frac{\psi}{2} = 1$, so the modulus is $\rho = 1$, the scale is $r = 1$, the phase is $\alpha = 0$, and the representation returns
+that is, $\tilde{\Lambda} = 1.060660172\,e_0 + 0.353553391\,ie_1$. Its biquaternion norm is $N(\tilde{\Lambda}) = \cosh^2\frac{\psi}{2} - \sinh^2\frac{\psi}{2} = 1$, so the modulus is $\rho = 1$, the scale is $r = 1$, the phase is $\alpha = 0$, and the representation returns
 
 $$
 \tilde{\Lambda} = 1\cdot e^{i\cdot0}\cdot B\cdot\hat{q} , \qquad B = \tilde{\Lambda} , \qquad \hat{q} = e_0 ,
@@ -247,20 +247,20 @@ $$
 \tilde{Q} = |\tilde{Q}|\,e^{\alpha\theta_t}\,e^{I\beta\theta_h},
 $$
 
-with a complex modulus in place of the corpus's scale and phase. Their trigonometric factor is the rotor $\hat{q}$ of this section exactly, and their hyperbolic factor is the boost about the rotor-conjugated axis, $\hat{q}^{-1}B\hat{q}$, of the same rapidity and the same norm form; recomputed on their own example the two factors multiply to the corpus word, since $\hat{q}\,(\hat{q}^{-1}B\hat{q}) = B\hat{q}$. Their reversed order is therefore not the reversed physical order of this section and must not be read as an identification of $\hat{q}B$ with $B\hat{q}$: the hyperbolic factor they write is not $B$ but its conjugate, the conjugation being the one already displayed above, which rotates the boost axis and leaves the rapidity alone. The same element is described by the two words, once with the boost in the original frame and once with the boost in the rotated one.
+with a complex modulus in place of the corpus's scale and phase. Their trigonometric factor is the rotor $\hat{q}$ of this section exactly, and their hyperbolic factor is the boost about the rotor-conjugated axis, $\hat{q}^{-1}B\hat{q}$, of the same rapidity and the same biquaternion norm; recomputed on their own example the two factors multiply to the corpus word, since $\hat{q}\,(\hat{q}^{-1}B\hat{q}) = B\hat{q}$. Their reversed order is therefore not the reversed physical order of this section and must not be read as an identification of $\hat{q}B$ with $B\hat{q}$: the hyperbolic factor they write is not $B$ but its conjugate, the conjugation being the one already displayed above, which rotates the boost axis and leaves the rapidity alone. The same element is described by the two words, once with the boost in the original frame and once with the boost in the rotated one.
 
 The non-commutativity of $B$ is a property of the algebra and not of the representation, and its infinitesimal form is in the brackets of the companion article *The Lorentz Group in Biquaternionic Form*: with the rotation generators $J_k = e_k$ and the boost generators $K_k = ie_k$, the brackets read $[J_j,K_k] = 2\varepsilon_{jkl}K_l$ and $[K_j,K_k] = -2\varepsilon_{jkl}J_l$. The rotations and the boosts do not commute, and the boosts do not close: the bracket of two boost generators is a rotation generator, which is the Lie-algebraic origin of the rotor in the polar representation of a product of boosts. The two extremes are the ones where the order ceases to matter: two boosts along the same line commute, compose into a boost, and leave the rotor trivial, and a rotation about the axis of a boost commutes with it, so that the word is a single boost-rotation about that axis.
 
 ## Summary
 
-The polar representation of a biquaternion is $r e^{i\alpha}B\hat{q}$, and in the physics of the corpus its four factors are the scale, the central phase, the Lorentz boost and the spatial rotation. On the Lorentz group, where the norm form is one, the scale and the phase are trivial and the representation is the Cartan decomposition $\tilde{\Lambda} = \tilde{B}\tilde{R}$, with the positivity of the boost factor supplying the normalisation. The modulus is $\sqrt{\det\Phi(\tilde{Q})}$, the scale is its modulus and the phase is half its argument, and both are invariants of the Lorentz orbit, since the determinant is multiplicative and the rotor conjugation multiplies by $N(\tilde{\Lambda})N(\tilde{\Lambda}^\dagger) = 1$. The boost factor of a four-vector is the square of the physics boost rotor in the rest-to-lab normalisation, $B = \bar{\tilde{\Lambda}}^2 = -(i/c)\tilde{U}$, so that rotor is the unique positive-definite square root of the representation's boost; for a four-position on a world line the scale is $c$ times the proper time and the phase is $\pi/2$, the angle that makes the time coordinate imaginary. The rotor is the Thomas–Wigner rotation when two boosts are composed, and it is the algebraic expression of the non-closure of the boosts. The representation fails exactly on the light cone, where the determinant vanishes, the element is a zero divisor, and the four-vector has no proper length.
+The polar representation of a biquaternion is $r e^{i\alpha}B\hat{q}$, and in the physics of the corpus its four factors are the scale, the central phase, the Lorentz boost and the spatial rotation. On the Lorentz group, where the biquaternion norm is one, the scale and the phase are trivial and the representation is the Cartan decomposition $\tilde{\Lambda} = \tilde{B}\tilde{R}$, with the positivity of the boost factor supplying the normalisation. The modulus is $\sqrt{\det\Phi(\tilde{Q})}$, the scale is its modulus and the phase is half its argument, and both are invariants of the Lorentz orbit, since the determinant is multiplicative and the rotor conjugation multiplies by $N(\tilde{\Lambda})N(\tilde{\Lambda}^\dagger) = 1$. The boost factor of a four-vector is the square of the physics boost rotor in the rest-to-lab normalisation, $B = \bar{\tilde{\Lambda}}^2 = -(i/c)\tilde{U}$, so that rotor is the unique positive-definite square root of the representation's boost; for a four-position on a world line the scale is $c$ times the proper time and the phase is $\pi/2$, the angle that makes the time coordinate imaginary. The rotor is the Thomas–Wigner rotation when two boosts are composed, and it is the algebraic expression of the non-closure of the boosts. The representation fails exactly on the light cone, where the determinant vanishes, the element is a zero divisor, and the four-vector has no proper length.
 
 ## Summary of Notation
 
 | symbol | meaning |
 |---|---|
 | $\tilde{Q} = \sum_\mu Q_\mu e_\mu$ | a biquaternion, $Q_\mu\in\mathbb{C}$ |
-| $N(\tilde{Q}) = \sum_\mu Q_\mu^2 = \det\Phi(\tilde{Q})$ | the norm form, the determinant of the $2\times2$ representative |
+| $N(\tilde{Q}) = \sum_\mu Q_\mu^2 = \det\Phi(\tilde{Q})$ | the biquaternion norm, the determinant of the $2\times2$ representative |
 | $\det\rho_L(\tilde{Q}) = N(\tilde{Q})^2$, $\operatorname{Tr}\rho_L(\tilde{Q}) = 4Q_0$ | determinant and trace of the $4\times4$ regular representative |
 | $\rho = re^{i\alpha} = \sqrt{N(\tilde{Q})}$ | the complex modulus |
 | $r$ | the scale, $|\det\Phi|^{1/2}$ |
@@ -278,7 +278,7 @@ The polar representation of a biquaternion is $r e^{i\alpha}B\hat{q}$, and in th
 - *Biquaternion Partial Polar Representations* (`articles_maths/biquaternion-partial-polar-representations.md`), for the Hamilton, complex and Cartan representations as the three pairings of the four factors.
 - *The 2×2 Matrix Representation of Biquaternions* (`articles_physics/the-2x2-matrix-representation-of-biquaternions.md`), for $\det\Phi(\tilde{Q}) = N(\tilde{Q})$ and the matrix polar decomposition.
 - *The 4×4 Regular Matrix Representation of Biquaternions* (`articles_physics/the-4x4-regular-matrix-representation-of-biquaternions.md`), for the squared determinant, the trace $4Q_0$ and the two chiralities.
-- *The Four-Vector Representation of Biquaternions* (`articles_physics/the-four-vector-representation-of-biquaternions.md`), for the informational and material sectors, the interval and the real restrictions of the norm form.
+- *The Four-Vector Representation of Biquaternions* (`articles_physics/the-four-vector-representation-of-biquaternions.md`), for the informational and material sectors, the interval and the real restrictions of the biquaternion norm.
 - *The Lorentz Group in Biquaternionic Form: Structure and Representations* (`articles_physics/the-lorentz-group-in-biquaternionic-form-structure-and-representations.md`), for the Cartan decomposition, the non-closure of the boosts and the Thomas–Wigner rotation.
 - *The Two-Sheeted Cover and the Topology of Boosts in Biquaternionic Form* (`articles_physics/the-two-sheeted-cover-and-the-topology-of-boosts-in-biquaternionic-form.md`), for the $\pm e_0$ kernel and the sign normalisation of the rotor.
 - *Spin, Entropy and the Lorentz Group in Biquaternionic Form* (`articles_physics/spin-entropy-and-the-lorentz-group-in-biquaternionic-form.md`), for the reading of the central circle and the boost parameters as information.

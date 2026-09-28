@@ -32,13 +32,13 @@ A commutative $R$-algebra $A$ is **free on a set $X$** if there is a map $\iota 
 
 **Theorem.** The polynomial algebra $R[X] = R[x_s : s \in X]$ is the free commutative $R$-algebra on $X$. If $X$ is finite of cardinality $n$, then $R[X] = R[x_1, \ldots, x_n]$.
 
-*Proof.* Given $\phi : X \to B$, define the homomorphism on monomials by $x_{i_1}^{a_1}\cdots x_{i_k}^{a_k} \mapsto \phi(x_{i_1})^{a_1}\cdots \phi(x_{i_k})^{a_k}$ and extend $R$-linearly. This is well defined because the commutative law makes monomials a basis indexed by finitely supported families of exponents and the order of factors irrelevant; it is a homomorphism because $B$ is commutative and associative; and it is unique because $X$ generates $R[X]$ as an algebra. $\square$
+*Proof.* Given $\phi : X \to B$, define the homomorphism on monomials by $x_{i_1}^{a_1}\cdots x_{i_k}^{a_k} \mapsto \phi(x_{i_1})^{a_1}\cdots \phi(x_{i_k})^{a_k}$ and extend $R$-linearly. This is well defined because the commutative law makes monomials a basis indexed by finitely supported families of exponents and the order of factors irrelevant; it is a homomorphism because $B$ is commutative and associative; and it is unique because $X$ generates $R[X]$ as an algebra.
 
 By *The Symmetric Algebra*, the symmetric algebra of a free module of rank $n$ is $R[x_1, \ldots, x_n]$; more generally $\operatorname{Sym}(M) = \bigoplus_{n\geq0}\operatorname{Sym}^n(M)$ is the free commutative algebra on a basis of $M$ when $M$ is free. The free commutative algebra is therefore not a new object but the symmetric algebra.
 
-**Proposition.** Every commutative $R$-algebra is a quotient of a polynomial algebra; that is, $A \cong R[x_s : s \in X]/\mathfrak{a}$ for some set $X$ and some ideal $\mathfrak{a}$.
+**Proposition.** Every commutative $R$-algebra is a quotient of a polynomial algebra; that is, $A \cong R[x_s : s \in X]/\mathrm{A}$ for some set $X$ and some ideal $\mathrm{A}$.
 
-*Proof.* Choose a generating set $X$ of $A$ as an $R$-algebra, for instance a set of module generators; the universal property gives a surjection $R[X] \to A$, and its kernel is an ideal. $\square$
+*Proof.* Choose a generating set $X$ of $A$ as an $R$-algebra, for instance a set of module generators; the universal property gives a surjection $R[X] \to A$, and its kernel is an ideal.
 
 ## The Coproduct: Tensor Product
 
@@ -66,7 +66,7 @@ $$
 f(aa')h(bb') = f(a)f(a')h(b)h(b') = \bigl(f(a)h(b)\bigr)\bigl(f(a')h(b')\bigr),
 $$
 
-using the commutativity of $C$ to reorder. $\square$
+using the commutativity of $C$ to reorder.
 
 **Corollary.** $R$ is the initial object and $R\otimes_R A \cong A$, so the tensor product has the unit properties expected of a coproduct. The tensor product is associative and commutative up to canonical isomorphism, $(A\otimes_R B)\otimes_R C \cong A\otimes_R(B\otimes_R C)$ and $A\otimes_R B \cong B\otimes_R A$.
 
@@ -96,13 +96,13 @@ $\operatorname{Sym}(M)$ is graded, $\operatorname{Sym}(M) = \bigoplus_{n\geq0}\o
 
 **Proposition.** $\operatorname{rank}_R \operatorname{Sym}^k(R^n) = \binom{n+k-1}{k}$, the dimension when $R$ is a field.
 
-*Proof.* A monomial $x_1^{a_1}\cdots x_n^{a_n}$ of total degree $k$ corresponds to a weak composition $a_1 + \cdots + a_n = k$ with $a_i \geq 0$; the number of such compositions is the number of ways to place $n - 1$ separators among $k$ identical objects, namely $\binom{n+k-1}{n-1} = \binom{n+k-1}{k}$. $\square$
+*Proof.* A monomial $x_1^{a_1}\cdots x_n^{a_n}$ of total degree $k$ corresponds to a weak composition $a_1 + \cdots + a_n = k$ with $a_i \geq 0$; the number of such compositions is the number of ways to place $n - 1$ separators among $k$ identical objects, namely $\binom{n+k-1}{n-1} = \binom{n+k-1}{k}$.
 
 ## Constructions
 
 ### Quotients and Ideals
 
-An **ideal** $\mathfrak{a} \subseteq A$ of a commutative algebra is an $R$-submodule with $A\mathfrak{a} \subseteq \mathfrak{a}$; the quotient $A/\mathfrak{a}$ is again a commutative $R$-algebra, and the pair $(A/\mathfrak{a}, A \to A/\mathfrak{a})$ is universal among homomorphisms out of $A$ that vanish on $\mathfrak{a}$. Ideals are exactly the kernels, so the correspondence between ideals and quotients is bijective on isomorphism classes, and it is order reversing: $\mathfrak{a} \subseteq \mathfrak{b}$ gives a surjection $A/\mathfrak{b}\twoheadrightarrow A/\mathfrak{a}$.
+An **ideal** $\mathrm{A} \subseteq A$ of a commutative algebra is an $R$-submodule with $A\mathrm{A} \subseteq \mathrm{A}$; the quotient $A/\mathrm{A}$ is again a commutative $R$-algebra, and the pair $(A/\mathrm{A}, A \to A/\mathrm{A})$ is universal among homomorphisms out of $A$ that vanish on $\mathrm{A}$. Ideals are exactly the kernels, so the correspondence between ideals and quotients is bijective on isomorphism classes, and it is order reversing: $\mathrm{A} \subseteq \mathrm{B}$ gives a surjection $A/\mathrm{B}\twoheadrightarrow A/\mathrm{A}$.
 
 **Example.** $\mathbb{Z}[x]/(x^2 - 2) \cong \mathbb{Z}[\sqrt2]$ and $\mathbb{R}[x]/(x^2 + 1) \cong \mathbb{C}$; in both cases the quotient by a principal ideal is described as adjoining a formal root of the polynomial.
 
@@ -112,9 +112,9 @@ Let $S \subseteq A$ be a **multiplicative subset**: $1 \in S$ and $s, t \in S \R
 
 **Proposition (universal property).** Every homomorphism $\phi : A \to B$ with $\phi(S) \subseteq B^{\times}$ factors uniquely through the canonical map $A \to S^{-1}A$.
 
-*Proof.* The formula $\phi(a/s) = \phi(a)\phi(s)^{-1}$ is forced; it is well defined because $as' = a's$ gives $\phi(a)\phi(s') = \phi(a')\phi(s)$, and $\phi(s)$, $\phi(s')$ are units; it is a homomorphism by the usual rules of fractions. $\square$
+*Proof.* The formula $\phi(a/s) = \phi(a)\phi(s)^{-1}$ is forced; it is well defined because $as' = a's$ gives $\phi(a)\phi(s') = \phi(a')\phi(s)$, and $\phi(s)$, $\phi(s')$ are units; it is a homomorphism by the usual rules of fractions.
 
-The localisations $A_f$ for $f \in A$ ($S = \{f^n\}$) and $A_{\mathfrak{p}}$ for a prime ideal $\mathfrak{p}$ ($S = A \setminus \mathfrak{p}$) are the principal and local cases. The primes of $S^{-1}A$ correspond bijectively to the primes of $A$ disjoint from $S$; in particular $\operatorname{Spec} A_f = D(f)$ as sets.
+The localisations $A_f$ for $f \in A$ ($S = \{f^n\}$) and $A_{\mathrm{P}}$ for a prime ideal $\mathrm{P}$ ($S = A \setminus \mathrm{P}$) are the principal and local cases. The primes of $S^{-1}A$ correspond bijectively to the primes of $A$ disjoint from $S$; in particular $\operatorname{Spec} A_f = D(f)$ as sets.
 
 ### Polynomial Extensions and Base Change
 
@@ -126,7 +126,7 @@ For any commutative algebra $B$, the polynomial algebra $B[x_1, \ldots, x_n] = B
 
 ### Finite Type and Finite
 
-A commutative $R$-algebra $A$ is **of finite type** if it is generated as an $R$-algebra by finitely many elements, that is, $A \cong R[x_1, \ldots, x_n]/\mathfrak{a}$ for some $n$ and ideal $\mathfrak{a}$; it is **finite** if it is finitely generated as an $R$-module. Finite implies finite type, because module generators generate the algebra. The converse fails: $R[x]$ is of finite type but not finite.
+A commutative $R$-algebra $A$ is **of finite type** if it is generated as an $R$-algebra by finitely many elements, that is, $A \cong R[x_1, \ldots, x_n]/\mathrm{A}$ for some $n$ and ideal $\mathrm{A}$; it is **finite** if it is finitely generated as an $R$-module. Finite implies finite type, because module generators generate the algebra. The converse fails: $R[x]$ is of finite type but not finite.
 
 **Theorem (Hilbert basis theorem).** If $R$ is Noetherian, then every commutative $R$-algebra of finite type is Noetherian; in particular $R[x_1, \ldots, x_n]$ is Noetherian.
 
@@ -166,39 +166,39 @@ The elements of $h_A(B)$ are the **$B$-valued points** of the object represented
 
 ### Prime and Maximal Ideals
 
-Let $A$ be a commutative $R$-algebra. A **prime ideal** is an ideal $\mathfrak{p} \subsetneq A$ such that $ab \in \mathfrak{p}$ implies $a \in \mathfrak{p}$ or $b \in \mathfrak{p}$; equivalently, $A/\mathfrak{p}$ is a domain. A **maximal ideal** is an ideal $\mathfrak{m}$ maximal under inclusion among proper ideals; equivalently, $A/\mathfrak{m}$ is a field. Every maximal ideal is prime; the converse fails, as in $A = \mathbb{Z}[x]$ where $(x)$ is prime but not maximal.
+Let $A$ be a commutative $R$-algebra. A **prime ideal** is an ideal $\mathrm{P} \subsetneq A$ such that $ab \in \mathrm{P}$ implies $a \in \mathrm{P}$ or $b \in \mathrm{P}$; equivalently, $A/\mathrm{P}$ is a domain. A **maximal ideal** is an ideal $\mathrm{M}$ maximal under inclusion among proper ideals; equivalently, $A/\mathrm{M}$ is a field. Every maximal ideal is prime; the converse fails, as in $A = \mathbb{Z}[x]$ where $(x)$ is prime but not maximal.
 
 The **spectrum** is the set of prime ideals,
 
 $$
-\operatorname{Spec} A = \{\mathfrak{p} \subseteq A : \mathfrak{p} \text{ prime}\},
+\operatorname{Spec} A = \{\mathrm{P} \subseteq A : \mathrm{P} \text{ prime}\},
 $$
 
-and the **maximal spectrum** is the set of maximal ideals, $\operatorname{MaxSpec} A = \{\mathfrak{m}\}$. For $A = k[x_1,\ldots,x_n]$ over an algebraically closed field $k$ the maximal ideals are exactly the $(x_1 - a_1, \ldots, x_n - a_n)$, so $\operatorname{MaxSpec} A$ is the affine $n$-space $k^n$; this is the classical content of the Nullstellensatz, and its proof belongs to commutative algebra rather than to this article.
+and the **maximal spectrum** is the set of maximal ideals, $\operatorname{MaxSpec} A = \{\mathrm{M}\}$. For $A = k[x_1,\ldots,x_n]$ over an algebraically closed field $k$ the maximal ideals are exactly the $(x_1 - a_1, \ldots, x_n - a_n)$, so $\operatorname{MaxSpec} A$ is the affine $n$-space $k^n$; this is the classical content of the Nullstellensatz, and its proof belongs to commutative algebra rather than to this article.
 
 ### The Zariski Topology
 
-For an ideal $\mathfrak{a} \subseteq A$ put
+For an ideal $\mathrm{A} \subseteq A$ put
 
 $$
-V(\mathfrak{a}) = \{\mathfrak{p} \in \operatorname{Spec} A : \mathfrak{a} \subseteq \mathfrak{p}\}.
+V(\mathrm{A}) = \{\mathrm{P} \in \operatorname{Spec} A : \mathrm{A} \subseteq \mathrm{P}\}.
 $$
 
-**Proposition.** The sets $V(\mathfrak{a})$ are the closed sets of a topology, the **Zariski topology**, on $\operatorname{Spec} A$.
+**Proposition.** The sets $V(\mathrm{A})$ are the closed sets of a topology, the **Zariski topology**, on $\operatorname{Spec} A$.
 
-*Proof.* $V(0) = \operatorname{Spec} A$ and $V(A) = \varnothing$. Intersections: $V(\mathfrak{a}) \cap V(\mathfrak{b}) = V(\mathfrak{a} + \mathfrak{b})$, because a prime containing both $\mathfrak{a}$ and $\mathfrak{b}$ contains their sum, and conversely. Unions: $V(\mathfrak{a}) \cup V(\mathfrak{b}) = V(\mathfrak{a}\mathfrak{b})$, because a prime containing $\mathfrak{a}\mathfrak{b}$ contains $\mathfrak{a}$ or $\mathfrak{b}$ by primality. The same argument with an arbitrary family of ideals gives $\bigcap_i V(\mathfrak{a}_i) = V(\sum_i \mathfrak{a}_i)$, using that every prime is proper, so the collection is closed under arbitrary intersections and finite unions; that is a topology. $\square$
+*Proof.* $V(0) = \operatorname{Spec} A$ and $V(A) = \varnothing$. Intersections: $V(\mathrm{A}) \cap V(\mathrm{B}) = V(\mathrm{A} + \mathrm{B})$, because a prime containing both $\mathrm{A}$ and $\mathrm{B}$ contains their sum, and conversely. Unions: $V(\mathrm{A}) \cup V(\mathrm{B}) = V(\mathrm{A}\mathrm{B})$, because a prime containing $\mathrm{A}\mathrm{B}$ contains $\mathrm{A}$ or $\mathrm{B}$ by primality. The same argument with an arbitrary family of ideals gives $\bigcap_i V(\mathrm{A}_i) = V(\sum_i \mathrm{A}_i)$, using that every prime is proper, so the collection is closed under arbitrary intersections and finite unions; that is a topology.
 
-The sets $D(f) = \operatorname{Spec} A \setminus V((f)) = \{\mathfrak{p} : f \notin \mathfrak{p}\}$ for $f \in A$ are the **principal open sets**, a basis of the topology. A point $\mathfrak{p}$ is closed exactly when $\mathfrak{p}$ is maximal, so $\operatorname{MaxSpec} A$ is the subspace of closed points.
+The sets $D(f) = \operatorname{Spec} A \setminus V((f)) = \{\mathrm{P} : f \notin \mathrm{P}\}$ for $f \in A$ are the **principal open sets**, a basis of the topology. A point $\mathrm{P}$ is closed exactly when $\mathrm{P}$ is maximal, so $\operatorname{MaxSpec} A$ is the subspace of closed points.
 
 ### Functoriality
 
 A homomorphism $\phi : A \to B$ of commutative $R$-algebras induces a map on spectra,
 
 $$
-\phi^* : \operatorname{Spec} B \longrightarrow \operatorname{Spec} A, \qquad \phi^*(\mathfrak{q}) = \phi^{-1}(\mathfrak{q}),
+\phi^* : \operatorname{Spec} B \longrightarrow \operatorname{Spec} A, \qquad \phi^*(\mathrm{Q}) = \phi^{-1}(\mathrm{Q}),
 $$
 
-which is well defined because the preimage of a prime ideal is prime, and continuous because $(\phi^*)^{-1}V(\mathfrak{a}) = V(B\phi(\mathfrak{a}))$. The assignment is contravariant: $(\psi \circ \phi)^* = \phi^* \circ \psi^*$, and $(\mathrm{id})^* = \mathrm{id}$. Thus
+which is well defined because the preimage of a prime ideal is prime, and continuous because $(\phi^*)^{-1}V(\mathrm{A}) = V(B\phi(\mathrm{A}))$. The assignment is contravariant: $(\psi \circ \phi)^* = \phi^* \circ \psi^*$, and $(\mathrm{id})^* = \mathrm{id}$. Thus
 
 $$
 \operatorname{Spec} : \mathsf{CAlg}_R^{\mathrm{op}} \longrightarrow \mathsf{Top}
@@ -206,15 +206,15 @@ $$
 
 is a functor from the opposite category of commutative $R$-algebras to topological spaces.
 
-**Example.** The inclusion $\phi : R \to A$ induces $\phi^* : \operatorname{Spec} A \to \operatorname{Spec} R$, the **structure map**, whose fibres are the spectra of the geometric fibres $A\otimes_R\kappa(\mathfrak{p})$ over residue fields $\kappa(\mathfrak{p}) = \operatorname{Frac}(R/\mathfrak{p})$. The spectrum of a coproduct computes a fibre product: for finitely presented algebras over an algebraically closed field, $\operatorname{Spec}(A\otimes_k B)$ is the fibre product $\operatorname{Spec} A \times_{\operatorname{Spec} k} \operatorname{Spec} B$. This is the geometric meaning of the coproduct theorem.
+**Example.** The inclusion $\phi : R \to A$ induces $\phi^* : \operatorname{Spec} A \to \operatorname{Spec} R$, the **structure map**, whose fibres are the spectra of the geometric fibres $A\otimes_R\kappa(\mathrm{P})$ over residue fields $\kappa(\mathrm{P}) = \operatorname{Frac}(R/\mathrm{P})$. The spectrum of a coproduct computes a fibre product: for finitely presented algebras over an algebraically closed field, $\operatorname{Spec}(A\otimes_k B)$ is the fibre product $\operatorname{Spec} A \times_{\operatorname{Spec} k} \operatorname{Spec} B$. This is the geometric meaning of the coproduct theorem.
 
 ### The Coordinate Algebra and its Functions
 
-An element $f \in A$ is a **function** on $\operatorname{Spec} A$: its value at $\mathfrak{p}$ is the image of $f$ in the residue field $\kappa(\mathfrak{p})$. The function $f$ vanishes at $\mathfrak{p}$ exactly when $f \in \mathfrak{p}$, so the ideal of functions vanishing on the closed set $V(\mathfrak{a})$ is the radical $\sqrt{\mathfrak{a}} = \{f : f^n \in \mathfrak{a} \text{ for some } n\}$, by the definition of the radical; this is the **radical** or nilradical theorem, and it says that $\operatorname{Spec}$ sees exactly the radical ideals.
+An element $f \in A$ is a **function** on $\operatorname{Spec} A$: its value at $\mathrm{P}$ is the image of $f$ in the residue field $\kappa(\mathrm{P})$. The function $f$ vanishes at $\mathrm{P}$ exactly when $f \in \mathrm{P}$, so the ideal of functions vanishing on the closed set $V(\mathrm{A})$ is the radical $\sqrt{\mathrm{A}} = \{f : f^n \in \mathrm{A} \text{ for some } n\}$, by the definition of the radical; this is the **radical** or nilradical theorem, and it says that $\operatorname{Spec}$ sees exactly the radical ideals.
 
 **Proposition.** For a commutative $R$-algebra $A$, the nilradical $\sqrt{0}$ is the intersection of all prime ideals, and $A$ is reduced, that is $\sqrt{0} = 0$, if and only if $A$ embeds in a product of domains.
 
-*Proof.* If $f$ is nilpotent then $f \in \mathfrak{p}$ for every prime $\mathfrak{p}$, since $f^n = 0 \in \mathfrak{p}$ forces $f \in \mathfrak{p}$. Conversely, if $f$ is not nilpotent, the localisation $A_f$ is nonzero and has a maximal ideal $\mathfrak{m}$, whose contraction to $A$ is a prime ideal not containing $f$. The second statement follows by embedding $A$ into the product of the domains $A/\mathfrak{p}$ over primes. $\square$
+*Proof.* If $f$ is nilpotent then $f \in \mathrm{P}$ for every prime $\mathrm{P}$, since $f^n = 0 \in \mathrm{P}$ forces $f \in \mathrm{P}$. Conversely, if $f$ is not nilpotent, the localisation $A_f$ is nonzero and has a maximal ideal $\mathrm{M}$, whose contraction to $A$ is a prime ideal not containing $f$. The second statement follows by embedding $A$ into the product of the domains $A/\mathrm{P}$ over primes.
 
 ### The Structure Sheaf
 
@@ -224,10 +224,10 @@ $$
 \mathcal{O}(D(f)) = A_f ,
 $$
 
-and on a general open set $U$ let $\mathcal{O}(U)$ be the set of compatible families of elements of the $A_f$ over principal opens $D(f) \subseteq U$, with the restriction maps coming from the localisations $A_f \to A_{fg}$. Then $\mathcal{O}$ is a sheaf of commutative $R$-algebras, the **structure sheaf**, and its stalk at a prime $\mathfrak{p}$ is the local ring
+and on a general open set $U$ let $\mathcal{O}(U)$ be the set of compatible families of elements of the $A_f$ over principal opens $D(f) \subseteq U$, with the restriction maps coming from the localisations $A_f \to A_{fg}$. Then $\mathcal{O}$ is a sheaf of commutative $R$-algebras, the **structure sheaf**, and its stalk at a prime $\mathrm{P}$ is the local ring
 
 $$
-\mathcal{O}_{\mathfrak{p}} = \varinjlim_{f \notin \mathfrak{p}} A_f = A_{\mathfrak{p}} .
+\mathcal{O}_{\mathrm{P}} = \varinjlim_{f \notin \mathrm{P}} A_f = A_{\mathrm{P}} .
 $$
 
 The global sections recover the algebra, $\mathcal{O}(\operatorname{Spec} A) = A$; this is the precise sense in which the spectrum is a geometric model of $A$. The pair $(\operatorname{Spec} A, \mathcal{O})$ is an affine scheme, and the construction is the starting point of algebraic geometry; only the sheaf-theoretic organisation of the localisations is used here.
@@ -238,7 +238,7 @@ The idempotents of a commutative algebra encode the decompositions of its spectr
 
 **Proposition.** Let $A$ be a commutative $R$-algebra and let $e \in A$ with $e^2 = e$. Put $f = 1 - e$, so that $ef = 0$ and $e + f = 1$. Then there is a canonical isomorphism $A \cong Ae \times Af$ of commutative $R$-algebras, and $\operatorname{Spec} A$ is the disjoint union of the open sets $D(e)$ and $D(f)$.
 
-*Proof.* Every $a \in A$ has the decomposition $a = ae + af$ with $ae \in Ae$, $af \in Af$; the components satisfy $(ae)(af) = a^2ef = 0$, so the product in $A$ agrees with the coordinatewise product, and $e$, $f$ are the coordinate units. The open sets $D(e)$ and $D(f)$ are disjoint because $ef = 0$ lies in every prime, and they cover $\operatorname{Spec} A$ because $e + f = 1$ lies in no prime. $\square$
+*Proof.* Every $a \in A$ has the decomposition $a = ae + af$ with $ae \in Ae$, $af \in Af$; the components satisfy $(ae)(af) = a^2ef = 0$, so the product in $A$ agrees with the coordinatewise product, and $e$, $f$ are the coordinate units. The open sets $D(e)$ and $D(f)$ are disjoint because $ef = 0$ lies in every prime, and they cover $\operatorname{Spec} A$ because $e + f = 1$ lies in no prime.
 
 It follows that $\operatorname{Spec} A$ is disconnected if and only if $A$ has a nontrivial idempotent, and that the decomposition of a spectrum into connected components corresponds to the decomposition of the algebra into a product of algebras. For a reduced algebra of finite type over a field, the idempotents of $A$ are exactly the characteristic functions of the clopen subsets of $\operatorname{MaxSpec} A$. This is the algebraic counterpart of the fact that the polynomial algebra $k[x]$ has no idempotents other than $0$ and $1$, hence connected spectrum, while $k[x]/(x^2 - x) \cong k\times k$ has two.
 
@@ -256,15 +256,15 @@ A **commutative $R$-algebra** is an associative, commutative, unital $R$-algebra
 | $R[X] = R[x_s : s \in X]$ | Free commutative algebra on $X$ |
 | $\operatorname{Sym}(M)$ | Symmetric algebra, free commutative algebra on $M$ |
 | $\operatorname{Sym}^k(M)$ | $k$-th symmetric power |
-| $\mathfrak{p}$, $\mathfrak{m}$ | Prime ideal, maximal ideal |
+| $\mathrm{P}$, $\mathrm{M}$ | Prime ideal, maximal ideal |
 | $\operatorname{Spec} A$ | Spectrum: set of prime ideals |
 | $\operatorname{MaxSpec} A$ | Set of maximal ideals (closed points) |
-| $V(\mathfrak{a})$ | Zariski-closed set of primes containing $\mathfrak{a}$ |
-| $D(f)$ | Principal open set $\{\mathfrak{p} : f \notin \mathfrak{p}\}$ |
-| $\phi^*(\mathfrak{q}) = \phi^{-1}(\mathfrak{q})$ | Contravariant map on spectra |
-| $\sqrt{\mathfrak{a}}$, $\sqrt{0}$ | Radical of $\mathfrak{a}$; nilradical |
-| $\kappa(\mathfrak{p})$ | Residue field at a prime $\mathfrak{p}$, $\operatorname{Frac}(A/\mathfrak{p})$ |
-| $S^{-1}A$, $A_f$, $A_{\mathfrak{p}}$ | Localisations of $A$ |
+| $V(\mathrm{A})$ | Zariski-closed set of primes containing $\mathrm{A}$ |
+| $D(f)$ | Principal open set $\{\mathrm{P} : f \notin \mathrm{P}\}$ |
+| $\phi^*(\mathrm{Q}) = \phi^{-1}(\mathrm{Q})$ | Contravariant map on spectra |
+| $\sqrt{\mathrm{A}}$, $\sqrt{0}$ | Radical of $\mathrm{A}$; nilradical |
+| $\kappa(\mathrm{P})$ | Residue field at a prime $\mathrm{P}$, $\operatorname{Frac}(A/\mathrm{P})$ |
+| $S^{-1}A$, $A_f$, $A_{\mathrm{P}}$ | Localisations of $A$ |
 | $\mathcal{O}$ | Structure sheaf on $\operatorname{Spec} A$, $\mathcal{O}(D(f)) = A_f$ |
 | $h_A(B) = \operatorname{Hom}(A,B)$ | Functor of points of $A$ |
 

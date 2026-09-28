@@ -3,7 +3,7 @@
 
 ## Introduction
 
-The norm form $N(a + \varepsilon b) = a^2$ decides invertibility in the dual-number algebra and vanishes exactly on the zero divisors together with the origin. Both statements are algebraic: the criterion is in *Dual-Numbers Norm and Invertibility* and the zero-divisor classification in *Dual-Numbers Zero Divisors*. This article treats the form geometrically, following the structural model *Biquaternion Null Quadric and Projective Geometry*, where the norm form of the biquaternions defines the Segre quadric in $\mathbb{P}^3$. Here the algebra is two-dimensional and the form has rank one, so the quadric degenerates to a single point of multiplicity two and the whole projective picture collapses.
+The norm $N(a + \varepsilon b) = a^2$ decides invertibility in the dual-number algebra and vanishes exactly on the zero divisors together with the origin. Both statements are algebraic: the criterion is in *Dual-Numbers Norm and Invertibility* and the zero-divisor classification in *Dual-Numbers Zero Divisors*. This article treats the form geometrically, following the structural model *Biquaternion Null Quadric and Projective Geometry*, where the norm of the biquaternions defines the Segre quadric in $\mathbb{P}^3$. Here the algebra is two-dimensional and the form has rank one, so the quadric degenerates to a single point of multiplicity two and the whole projective picture collapses.
 
 The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. Throughout the algebra is $\mathbb{D}' = \mathbb{R}[\varepsilon]/(\varepsilon^2)$, a general dual number is
 
@@ -11,59 +11,23 @@ $$
 Z = a + \varepsilon b, \qquad a, b \in \mathbb{R},
 $$
 
-with $a = \operatorname{Re} Z$, $b = \operatorname{Inf} Z$, dual conjugation $\bar{Z} = a - \varepsilon b$, norm form $N(Z) = Z\bar{Z} = a^2$, polarisation $B$, maximal ideal $\mathfrak{m} = (\varepsilon) = \varepsilon\mathbb{R}$, real submodule $R_{\mathbb{D}'}$ and infinitesimal submodule $\varepsilon R_{\mathbb{D}'}$. The geometry of the dual plane itself—dilations, shears, the parabolic angle—is developed in *Shears and Parabolic Rotations*.
-
-## The Norm Form and Its Polarisation
-
-### The Polar Form
-
-**Definition.** The **polar form** of the norm form is
-
-$$
-B(Z, W) = \tfrac{1}{2}\bigl(N(Z + W) - N(Z) - N(W)\bigr), \qquad Z = a + \varepsilon b, \quad W = c + \varepsilon d.
-$$
-
-**Proposition.** $B(Z, W) = a c$. It is symmetric and $\mathbb{R}$-bilinear, and $B(Z, Z) = N(Z)$.
-
-**Proof.** $N(Z + W) = (a + c)^2 = a^2 + 2a c + c^2$, so the polarisation gives $\tfrac{1}{2}(2a c) = a c$. Symmetry and bilinearity are clear, and $B(Z,Z) = a^2 = N(Z)$. $\square$
-
-### The Matrix of the Form
-
-In the basis $(1, \varepsilon)$ the polar form has the matrix
-
-$$
-[B] = \begin{pmatrix} B(1,1) & B(1,\varepsilon) \\ B(\varepsilon,1) & B(\varepsilon,\varepsilon) \end{pmatrix} = \begin{pmatrix} 1 & 0 \\ 0 & 0 \end{pmatrix},
-$$
-
-of rank one. So the quadratic space $(\mathbb{D}', N)$ has rank one and its bilinear form is degenerate; the radical is $\ker [B] = \varepsilon\mathbb{R} = \mathfrak{m}$.
-
-### The Radical and Its Orthogonal Complements
-
-**Proposition.** The orthogonal complement of a subset is computed with $B$; in particular
-
-$$
-R_{\mathbb{D}'}^\perp = \mathfrak{m}, \qquad \mathfrak{m}^\perp = \mathbb{D}', \qquad \mathfrak{m} = \operatorname{rad}(B).
-$$
-
-**Proof.** For $Z = a + \varepsilon b$ and $W$, $B(Z,W) = a c$ vanishes for all $W$ exactly when $a = 0$, so $Z \in \mathfrak{m}$; this gives the radical. A point with $a \neq 0$ has $B$-orthogonal complement $\{c = 0\} = \mathfrak{m}$, and a point with $a = 0$ is $B$-orthogonal to everything. $\square$
-
-So the form admits **no polarity**: the correspondence $Z \mapsto Z^\perp$ is not a bijection of the projective line, because every point off the isotropic point has the same polar, namely $\mathfrak{m}$, and the isotropic point itself has polar the whole space.
+with $a = \operatorname{Re} Z$, $b = \operatorname{Inf} Z$, dual conjugation $\bar{Z} = a - \varepsilon b$, the norm $N(Z) = Z\bar{Z} = a^2$ and its polar form $B(Z, W) = a c$ (a form and a distance, defined in *Dual-Numbers Norm and Invertibility*), and the maximal ideal $\mathrm{M} = (\varepsilon) = \varepsilon\mathbb{R}$, real submodule $R_{\mathbb{D}'}$ and infinitesimal submodule $\varepsilon R_{\mathbb{D}'}$. The geometry of the dual plane itself—dilations, shears, the parabolic angle—is developed in *Shears and Parabolic Rotations*.
 
 ## The Degenerate Isotropic Cone
 
 ### The Isotropic Set
 
-**Definition.** The **isotropic set** of the norm form is
+**Definition.** The **isotropic set** of the norm is
 
 $$
-\mathcal{N} = \{Z \in \mathbb{D}' : N(Z) = 0\} = \{Z : a = 0\} = \mathfrak{m},
+\mathcal{N} = \{Z \in \mathbb{D}' : N(Z) = 0\} = \{Z : a = 0\} = \mathrm{M},
 $$
 
-the maximal ideal. Its punctured part is the zero-divisor set $\mathcal{Z} = \mathfrak{m} \setminus \{0\}$.
+the maximal ideal. Its punctured part is the zero-divisor set $\mathcal{Z} = \mathrm{M} \setminus \{0\}$.
 
-**Theorem.** $\mathcal{N} = \mathfrak{m}$ is a single line through the origin, closed and of real dimension one, and it is a cone with apex $0$; it is the radical of $B$. As a quadratic cone it is a **double line**: the equation $a^2 = 0$ is the square of the linear equation $a = 0$, so the cone is the line $a = 0$ counted twice.
+**Theorem.** $\mathcal{N} = \mathrm{M}$ is a single line through the origin, closed and of real dimension one, and it is a cone with apex $0$; it is the radical of $B$. As a quadratic cone it is a **double line**: the equation $a^2 = 0$ is the square of the linear equation $a = 0$, so the cone is the line $a = 0$ counted twice.
 
-**Proof.** $N(Z) = a^2 = 0$ forces $a = 0$, giving the line $\varepsilon\mathbb{R}$; homogeneity gives the cone property; and $a^2$ factors as $a\cdot a$, so the defining polynomial is the square of the linear form $a$. $\square$
+**Proof.** $N(Z) = a^2 = 0$ forces $a = 0$, giving the line $\varepsilon\mathbb{R}$; homogeneity gives the cone property; and $a^2$ factors as $a\cdot a$, so the defining polynomial is the square of the linear form $a$.
 
 ### Comparison with a Non-Degenerate Cone
 
@@ -107,7 +71,7 @@ $$
 
 a point of multiplicity two. It is the unique real point of the projective quadric $a^2 = 0$, and the projective quadric is that point counted twice.
 
-**Proof.** In homogeneous coordinates the equation $N = 0$ reads $a^2 = 0$, whose only solution is $a = 0$, giving the point $[0 : 1]$; the equation is a square, so the zero is of multiplicity two. $\square$
+**Proof.** In homogeneous coordinates the equation $N = 0$ reads $a^2 = 0$, whose only solution is $a = 0$, giving the point $[0 : 1]$; the equation is a square, so the zero is of multiplicity two.
 
 ### The Ramified Point
 
@@ -137,7 +101,7 @@ $$
 
 It fixes the isotropic point $[\varepsilon] = [0:1]$ and no other point, and it is the one-parameter unipotent subgroup of the parabolic subgroup of $PGL_2(\mathbb{R})$ that fixes that point.
 
-**Proof.** The computation of $t \mapsto t + s$ is immediate; the point $[0:1]$ is fixed because $S(s)(\varepsilon) = \varepsilon$, and a translation of the affine line fixes only its point at infinity. The matrix has a repeated eigenvalue $1$ and is unipotent, so the subgroup is parabolic and conjugate to the translations. $\square$
+**Proof.** The computation of $t \mapsto t + s$ is immediate; the point $[0:1]$ is fixed because $S(s)(\varepsilon) = \varepsilon$, and a translation of the affine line fixes only its point at infinity. The matrix has a repeated eigenvalue $1$ and is unipotent, so the subgroup is parabolic and conjugate to the translations.
 
 ### The Projectivity Fixing the Ramified Point
 
@@ -147,16 +111,16 @@ So the parabolic one-parameter group of the dual numbers is exactly the unipoten
 
 ### The Biquaternion Quadric
 
-In the biquaternion algebra the norm form $N(\tilde{Q}) = \sum_\mu Q_\mu^2$ is non-degenerate on $\mathbb{C}^4$, and its null cone projects to the smooth Segre quadric $\mathbb{P}^1 \times \mathbb{P}^1 \subset \mathbb{P}^3$, a surface with two rulings, each ruling a family of null planes, and the isotropic subspaces are two-dimensional. Every ingredient of that picture depends on the non-degeneracy of the form and on the complex dimension four.
+In the biquaternion algebra the norm $N(\tilde{Q}) = \sum_\mu Q_\mu^2$ is non-degenerate on $\mathbb{C}^4$, and its null cone projects to the smooth Segre quadric $\mathbb{P}^1 \times \mathbb{P}^1 \subset \mathbb{P}^3$, a surface with two rulings, each ruling a family of null planes, and the isotropic subspaces are two-dimensional. Every ingredient of that picture depends on the non-degeneracy of the form and on the complex dimension four.
 
 In the dual case the form has rank one on a real vector space of dimension two. The consequences are the following, and they are all forced by the rank:
 
 | | $\mathbb{B}$ (rank $4$, dim $4$ over $\mathbb{C}$) | $\mathbb{D}'$ (rank $1$, dim $2$ over $\mathbb{R}$) |
 |---|---|---|
-| Polar form $B$ | non-degenerate | degenerate, $\operatorname{rad} B = \mathfrak{m}$ |
-| Isotropic set | null cone, codimension $2$ | single line $\mathfrak{m}$, codimension $1$ |
+| Polar form $B$ | non-degenerate | degenerate, $\operatorname{rad} B = \mathrm{M}$ |
+| Isotropic set | null cone, codimension $2$ | single line $\mathrm{M}$, codimension $1$ |
 | Projective quadric | smooth Segre quadric $\mathbb{P}^1\times\mathbb{P}^1$ | single point of multiplicity two |
-| Maximal totally isotropic subspace | dimension $2$ (null planes) | dimension $1$ (the line $\mathfrak{m}$) |
+| Maximal totally isotropic subspace | dimension $2$ (null planes) | dimension $1$ (the line $\mathrm{M}$) |
 | Rulings | two, indexed by spinors | none |
 | Polarity | non-degenerate correlation | none |
 | Symmetry group of the quadric | projectivity group acting on $\mathbb{P}^3$ | parabolic subgroup of $PGL_2(\mathbb{R})$ |
@@ -165,11 +129,11 @@ The comparison isolates the single feature that controls the whole degeneration:
 
 ### The Geometry of the Dual Plane
 
-Read on the dual plane rather than on the projective line, the picture is the one developed in *Shears and Parabolic Rotations*: the isotropic line $\mathfrak{m}$ is the fixed line of the shear, the shear translates the fibres of the augmentation, and the norm form registers none of the displacement because the nilpotent direction lies in the radical. The projective statement—the shear is the parabolic projectivity fixing the doubled isotropic point—is the compact way to say that multiplication by a unit acts on the dual plane as a unipotent map with a single fixed line, the isotropic line.
+Read on the dual plane rather than on the projective line, the picture is the one developed in *Shears and Parabolic Rotations*: the isotropic line $\mathrm{M}$ is the fixed line of the shear, the shear translates the fibres of the augmentation, and the norm registers none of the displacement because the nilpotent direction lies in the radical. The projective statement—the shear is the parabolic projectivity fixing the doubled isotropic point—is the compact way to say that multiplication by a unit acts on the dual plane as a unipotent map with a single fixed line, the isotropic line.
 
 ## Summary
 
-The norm form $N(a + \varepsilon b) = a^2$ of the dual numbers has the polar form $B(Z, W) = a c$, a symmetric $\mathbb{R}$-bilinear form of rank one with radical the maximal ideal $\mathfrak{m} = \varepsilon\mathbb{R}$. The isotropic set is the single line $\mathfrak{m}$, a cone with apex $0$ that is the **double line** $a^2 = 0$; the form admits no polarity, since every point off the isotropic line has the same polar $\mathfrak{m}$ and the isotropic line has polar the whole space. On the projective dual line $\mathbb{P}^1(\mathbb{R})$ with affine coordinate $t = b/a$, the projective quadric is the single point $[\varepsilon] = [0:1]$ of multiplicity two, the ramified point at infinity of the chart. Multiplication by the unit $1 + s\varepsilon$ acts as the shear, which on the projective line is the parabolic projectivity $t \mapsto t + s$ fixing $[\varepsilon]$, the unipotent subgroup of $PGL_2(\mathbb{R})$ that fixes the doubled isotropic point and generates the geometry of the dual plane. Compared with the biquaternion null quadric—the smooth Segre quadric $\mathbb{P}^1\times\mathbb{P}^1$ with two rulings, self-dual polarity and dimension-two null planes—the dual quadric is the total degeneration forced by rank one: a single doubled point, no rulings, no polarity, and a one-dimensional isotropic subspace.
+The norm $N(a + \varepsilon b) = a^2$ of the dual numbers has the polar form $B(Z, W) = a c$, a symmetric $\mathbb{R}$-bilinear form of rank one with radical the maximal ideal $\mathrm{M} = \varepsilon\mathbb{R}$. The isotropic set is the single line $\mathrm{M}$, a cone with apex $0$ that is the **double line** $a^2 = 0$; the form admits no polarity, since every point off the isotropic line has the same polar $\mathrm{M}$ and the isotropic line has polar the whole space. On the projective dual line $\mathbb{P}^1(\mathbb{R})$ with affine coordinate $t = b/a$, the projective quadric is the single point $[\varepsilon] = [0:1]$ of multiplicity two, the ramified point at infinity of the chart. Multiplication by the unit $1 + s\varepsilon$ acts as the shear, which on the projective line is the parabolic projectivity $t \mapsto t + s$ fixing $[\varepsilon]$, the unipotent subgroup of $PGL_2(\mathbb{R})$ that fixes the doubled isotropic point and generates the geometry of the dual plane. Compared with the biquaternion null quadric—the smooth Segre quadric $\mathbb{P}^1\times\mathbb{P}^1$ with two rulings, self-dual polarity and dimension-two null planes—the dual quadric is the total degeneration forced by rank one: a single doubled point, no rulings, no polarity, and a one-dimensional isotropic subspace.
 
 ## Summary of Notation
 
@@ -178,11 +142,11 @@ The norm form $N(a + \varepsilon b) = a^2$ of the dual numbers has the polar for
 | $\mathbb{D}' = \mathbb{R}[\varepsilon]/(\varepsilon^2)$ | Dual-number algebra; $\varepsilon^2 = 0$ |
 | $Z = a + \varepsilon b$ | General dual number |
 | $a = \operatorname{Re} Z$, $b = \operatorname{Inf} Z$ | Real and infinitesimal parts |
-| $N(Z) = Z\bar{Z} = a^2$ | Norm form, rank one |
+| $N(Z) = Z\bar{Z} = a^2$ | Norm, rank one |
 | $B(Z,W) = a c$ | Polar form, symmetric bilinear, rank one |
 | $[B] = \begin{pmatrix} 1 & 0 \\ 0 & 0 \end{pmatrix}$ | Matrix of the polar form $B$ in the basis $(1,\varepsilon)$ |
-| $\mathfrak{m} = (\varepsilon) = \operatorname{rad}(B)$ | Maximal ideal, radical, isotropic line |
-| $\mathcal{N} = \mathfrak{m}$ | Isotropic set, the double line $a^2 = 0$ |
+| $\mathrm{M} = (\varepsilon) = \operatorname{rad}(B)$ | Maximal ideal, radical, isotropic line |
+| $\mathcal{N} = \mathrm{M}$ | Isotropic set, the double line $a^2 = 0$ |
 | $\mathbb{P}(\mathbb{D}') = \mathbb{P}^1(\mathbb{R})$ | Projective dual line |
 | $[a : b]$ | Homogeneous coordinates; $[\varepsilon] = [0:1]$ |
 | $t = b/a$ | Affine coordinate on $\{a \neq 0\}$ |
@@ -197,4 +161,4 @@ The norm form $N(a + \varepsilon b) = a^2$ of the dual numbers has the polar for
 - Wilhelm Blaschke, *Vorlesungen über Differentialgeometrie I* (Springer, Berlin, 1930), for the classical use of the dual isotropic direction in line geometry.
 - Vladimir V. Kisil, *Geometry of Möbius Transformations: Elliptic, Parabolic and Hyperbolic Actions of $SL(2,\mathbb{R})$* (Imperial College Press, London, 2012), for parabolic projectivities fixing a point of the projective line and the unipotent one-parameter subgroups.
 - Max-Albert Knus, *Quadratic and Hermitian Forms over Rings* (Grundlehren der mathematischen Wissenschaften 294, Springer, Berlin, 1991), for the radical of a degenerate form and the dimension of its maximal totally isotropic subspaces.
-- John H. Conway and Derek A. Smith, *On Quaternions and Octonions* (A K Peters, Natick, 2003), for the norm forms and isotropic sets of the number systems of the family.
+- John H. Conway and Derek A. Smith, *On Quaternions and Octonions* (A K Peters, Natick, 2003), for the norms and isotropic sets of the number systems of the family.

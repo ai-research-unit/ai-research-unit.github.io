@@ -25,7 +25,7 @@ The elements of $G$ form a $k$-basis, so $\dim_k k[G] = |G|$ when $G$ is finite,
 
 **Proposition (elementary structure).** $k[G]$ is an associative $k$-algebra with unit $1_G$; the map $g \mapsto g$ embeds $G$ as a subgroup of the unit group $k[G]^\times$; and $k^\times \subseteq k[G]^\times$ sits in the centre as the scalar multiples of $1_G$.
 
-*Proof.* Associativity of the product follows from associativity in $G$ and bilinearity, and the identity element is $1_G$ since $1_Gg = g1_G = g$. Each $g$ has inverse $g^{-1}$, so $G$ lies in the unit group, and the scalars $\lambda 1_G$ commute with every basis element and are invertible when $\lambda \neq 0$. $\square$
+*Proof.* Associativity of the product follows from associativity in $G$ and bilinearity, and the identity element is $1_G$ since $1_Gg = g1_G = g$. Each $g$ has inverse $g^{-1}$, so $G$ lies in the unit group, and the scalars $\lambda 1_G$ commute with every basis element and are invertible when $\lambda \neq 0$.
 
 **Remark (the identification with convolution).** Writing an element as a function $a : G \to k$ of finite support, the product becomes the **convolution**
 
@@ -45,7 +45,7 @@ $$
 
 **Proposition.** $\lambda$ is an injective algebra homomorphism, so $k[G]$ is isomorphic to the subalgebra $\lambda(k[G])$ of $\operatorname{End}_k(k[G])$; for finite $G$ it is an isomorphism onto the algebra of all $k$-linear endomorphisms that commute with right multiplication by every element of $G$.
 
-*Proof.* Injectivity: $k[G]$ is a free module with basis the group elements, and $\lambda(x) = 0$ implies $xg = 0$ for all $g$, hence $x = 0$. The commutant statement is standard: an endomorphism commuting with all right multiplications is determined by the image of $1_G$, which can be any element. $\square$
+*Proof.* Injectivity: $k[G]$ is a free module with basis the group elements, and $\lambda(x) = 0$ implies $xg = 0$ for all $g$, hence $x = 0$. The commutant statement is standard: an endomorphism commuting with all right multiplications is determined by the image of $1_G$, which can be any element.
 
 Every $k[G]$-module is thus a representation of $G$ by $k$-linear maps, and conversely; the group algebra is precisely the algebra whose module category is the representation category of $G$. This is the sense in which $k[G]$ linearises the group, and it is the reason the structure theory of representations is the structure theory of modules over $k[G]$.
 
@@ -57,7 +57,7 @@ $$
 
 where $\rho$ runs over the irreducible complex representations, $V_\rho$ has dimension $n_\rho$, and each occurs with multiplicity equal to its dimension; comparing dimensions gives $\sum_\rho n_\rho^2 = |G|$.
 
-*Proof.* This is the decomposition of the regular representation of a finite group; the multiplicity of an irreducible representation in the regular representation equals its dimension by the orthogonality relations. $\square$
+*Proof.* This is the decomposition of the regular representation of a finite group; the multiplicity of an irreducible representation in the regular representation equals its dimension by the orthogonality relations.
 
 ## The Augmentation Ideal
 
@@ -83,7 +83,7 @@ $$
 \sum_g a_g g = \sum_g a_g (g - 1_G) + \Bigl(\sum_g a_g\Bigr)1_G = \sum_g a_g(g-1_G),
 $$
 
-so the $g - 1_G$ generate $I(G)$; the quotient statement is the first isomorphism theorem. The second identification is the standard computation of $I/I^2$ in terms of the abelianisation. $\square$
+so the $g - 1_G$ generate $I(G)$; the quotient statement is the first isomorphism theorem. The second identification is the standard computation of $I/I^2$ in terms of the abelianisation.
 
 **Corollary.** If $G$ is a nontrivial finite group and $k$ has characteristic zero, then $I(G) \neq 0$ is a nontrivial ideal, so $k[G]$ is not simple; if in addition the characteristic does not divide $|G|$, then $k[G]$ is semisimple and $I(G)$ is a direct sum of matrix algebras.
 
@@ -91,7 +91,7 @@ so the $g - 1_G$ generate $I(G)$; the quotient statement is the first isomorphis
 
 **Proposition (units).** For any group $G$, the group $G$ and the scalars $k^\times$ lie in $k[G]^\times$, so $k^\times G \subseteq k[G]^\times$. The inclusion can be strict: for $k = \mathbb{R}$ and $G = \mathbb{Z}/2$ one has $\mathbb{R}[\mathbb{Z}/2] \cong \mathbb{R}\times\mathbb{R}$, whose units are the pairs with both entries nonzero, and $(1,2)$ is a unit of $\mathbb{R}\times\mathbb{R}$ lying outside $\mathbb{R}^\times G$, which consists of the pairs $(\lambda,\lambda)$ and $(\lambda,-\lambda)$.
 
-*Proof.* The first statement is the proposition on elementary structure. For the second, the isomorphism $\mathbb{R}[\mathbb{Z}/2] \cong \mathbb{R}\times\mathbb{R}$ sends $1_G$ to $(1,1)$ and $g$ to $(1,-1)$, so the units are the pairs $(\lambda,\mu)$ with $\lambda\mu \neq 0$, while $\mathbb{R}^\times G$ consists of $\lambda(1,1)$ and $\lambda(1,-1)$; the pair $(1,2)$ is a unit outside that set. $\square$
+*Proof.* The first statement is the proposition on elementary structure. For the second, the isomorphism $\mathbb{R}[\mathbb{Z}/2] \cong \mathbb{R}\times\mathbb{R}$ sends $1_G$ to $(1,1)$ and $g$ to $(1,-1)$, so the units are the pairs $(\lambda,\mu)$ with $\lambda\mu \neq 0$, while $\mathbb{R}^\times G$ consists of $\lambda(1,1)$ and $\lambda(1,-1)$; the pair $(1,2)$ is a unit outside that set.
 
 **Proposition (zero divisors).** Let $g \in G$ have finite order $m \geq 2$. Then
 
@@ -101,7 +101,7 @@ $$
 
 with both factors nonzero, so $1_G - g$ is a zero divisor and $k[G]$ is not a domain.
 
-*Proof.* The product telescopes, and $g^m = e$; both factors are nonzero because $g \neq e$ and the group elements are linearly independent. $\square$
+*Proof.* The product telescopes, and $g^m = e$; both factors are nonzero because $g \neq e$ and the group elements are linearly independent.
 
 Thus the group algebra of a nontrivial finite group always has zero divisors, and it is a division algebra only in the trivial case $G = \{e\}$, where $k[G] \cong k$. This is the first place where the torsion of the group is visible in the algebra.
 
@@ -113,7 +113,7 @@ $$
 \tilde p(v) = \frac{1}{|G|}\sum_{g\in G} g\,p(g^{-1}v),
 $$
 
-which is $k[G]$-linear because the averaging is invariant under $G$, and which is still a projection onto $W$; hence every submodule is a direct summand. $\square$
+which is $k[G]$-linear because the averaging is invariant under $G$, and which is still a projection onto $W$; hence every submodule is a direct summand.
 
 **Example (characteristic two).** Let $k = \mathbb{F}_2$ and $G = \mathbb{Z}/2 = \{1_G, g\}$. Then $\operatorname{char} k = 2$ divides $|G| = 2$, and
 
@@ -143,7 +143,7 @@ $$
 k[G] \cong \prod_{\rho} M_{n_\rho}(k), \qquad |G| = \sum_\rho n_\rho^2 .
 $$
 
-*Proof.* By Maschke the algebra is semisimple, so the Wedderburn–Artin theorem applies and gives the product of matrix algebras over division algebras; over an algebraically closed field every finite-dimensional division algebra over $k$ is $k$, and the number of factors and their sizes come from the decomposition of the regular module. $\square$
+*Proof.* By Maschke the algebra is semisimple, so the Wedderburn–Artin theorem applies and gives the product of matrix algebras over division algebras; over an algebraically closed field every finite-dimensional division algebra over $k$ is $k$, and the number of factors and their sizes come from the decomposition of the regular module.
 
 **Corollary (the centre).** $\dim_k Z(k[G])$ equals the number of conjugacy classes of $G$; over an algebraically closed field, $\dim_k Z(k[G])$ equals the number of irreducible representations, and a basis is given by the **class sums**
 
@@ -153,7 +153,7 @@ $$
 
 one for each conjugacy class $\chi$.
 
-*Proof.* An element $\sum a_g g$ is central exactly when its coefficients are constant on conjugacy classes, as in *Centre, Units, Zero Divisors and Division Algebras*. $\square$
+*Proof.* An element $\sum a_g g$ is central exactly when its coefficients are constant on conjugacy classes, as in *Centre, Units, Zero Divisors and Division Algebras*.
 
 **Example (cyclic groups).** For $G = \mathbb{Z}/n$ generated by $g$, the group algebra is
 

@@ -23,7 +23,7 @@ Composition is induced by composition of chain maps, which descends to homotopy 
 
 **Proposition.** $K(\mathcal{A})$ is an additive category with biproducts, and the canonical functor $\mathbf{Ch}(\mathcal{A})\to K(\mathcal{A})$ is additive and the identity on objects. Homotopic maps become equal, so every null-homotopic complex is isomorphic to zero in $K(\mathcal{A})$.
 
-*Proof.* The hom functor $\operatorname{Hom}^\bullet$ is a complex of abelian groups whose $H^0$ is chain maps modulo homotopy; composition is compatible with the differential and descends. Direct sums and their structure maps are those of $\mathbf{Ch}(\mathcal{A})$, and the homotopy relation is additive, so they descend. A complex with a contracting homotopy has the identity homotopic to zero, hence the identity is zero in $K(\mathcal{A})$ and the object is zero. $\square$
+*Proof.* The hom functor $\operatorname{Hom}^\bullet$ is a complex of abelian groups whose $H^0$ is chain maps modulo homotopy; composition is compatible with the differential and descends. Direct sums and their structure maps are those of $\mathbf{Ch}(\mathcal{A})$, and the homotopy relation is additive, so they descend. A complex with a contracting homotopy has the identity homotopic to zero, hence the identity is zero in $K(\mathcal{A})$ and the object is zero.
 
 **Definition.** The full subcategories $K^+(\mathcal{A})$, $K^-(\mathcal{A})$ and $K^b(\mathcal{A})$ consist of the complexes bounded below, bounded above and bounded on both sides.
 
@@ -41,7 +41,7 @@ $$
 
 in which $i$ is the inclusion of $D$ as the degree-$0$ component of the cone and $q$ is the projection onto $C[1]$; the composite of any two consecutive maps is zero, and the induced maps on homology form the long exact sequence of *Homological Algebra*.
 
-*Proof.* The maps are $i(d)=(d,0)$ and $q(c,d)=-c$, the sign being chosen with the cone's differential of *Homological Algebra* so that $q\,i=0$ and $i\,f=0$. The homology statement is the long exact sequence of the cone. $\square$
+*Proof.* The maps are $i(d)=(d,0)$ and $q(c,d)=-c$, the sign being chosen with the cone's differential of *Homological Algebra* so that $q\,i=0$ and $i\,f=0$. The homology statement is the long exact sequence of the cone.
 
 ## Localisation
 
@@ -51,7 +51,7 @@ in which $i$ is the inclusion of $D$ as the degree-$0$ component of the cone and
 
 **Proposition.** The localisation, when it exists, is unique up to equivalence of categories. It exists whenever the class $\Sigma$ admits a calculus of fractions; in that case the morphisms of $\mathcal{C}[\Sigma^{-1}]$ are represented by **roofs** $A\xleftarrow{s}B\xrightarrow{f}C$ with $s\in\Sigma$, two roofs being identified when they are linked by a commutative diagram of roofs.
 
-*Proof.* Uniqueness is the universal property applied to the identity functor. For the calculus of fractions one imposes that $\Sigma$ be closed under composition and contain the identities, and the two conditions that every diagram with one arrow in $\Sigma$ can be completed to a commuting square with the other arrow in $\Sigma$, in both orientations; then the roofs compose and the identification relation is an equivalence, giving a category with the universal property. $\square$
+*Proof.* Uniqueness is the universal property applied to the identity functor. For the calculus of fractions one imposes that $\Sigma$ be closed under composition and contain the identities, and the two conditions that every diagram with one arrow in $\Sigma$ can be completed to a commuting square with the other arrow in $\Sigma$, in both orientations; then the roofs compose and the identification relation is an equivalence, giving a category with the universal property.
 
 **Example.** The localisation of a commutative ring at a multiplicative set, which is the article *Localization and Completion of Modules*, is the special case of the construction for the category with one object whose endomorphisms are the ring: the localised ring is the localisation of that one-object category at the multiplicative set, and its universal property is the same statement. The same construction applies to modules over the ring.
 
@@ -67,11 +67,11 @@ The bounded versions $D^+(\mathcal{A})$, $D^-(\mathcal{A})$ and $D^b(\mathcal{A}
 
 **Theorem.** The localisation $D(\mathcal{A})=K(\mathcal{A})[\mathrm{qis}^{-1}]$ exists, and the objects whose cohomology is bounded, bounded above or bounded below form full subcategories closed under the construction, so that the localisations of $K^b$, $K^-$ and $K^+$ at their quasi-isomorphisms are these subcategories. Moreover, when $\mathcal{A}$ has enough injectives the class of quasi-isomorphisms between complexes of injectives admits a calculus of fractions, so that every morphism of $D(\mathcal{A})$ is represented by a roof $A\xleftarrow{s}B\xrightarrow{f}C$ of chain maps with $s$ a quasi-isomorphism; dually when $\mathcal{A}$ has enough projectives.
 
-*Proof (in outline).* The localisation exists by the general construction of a category of fractions of Gabriel and Zisman, in which the morphisms are formal zigzags and the class of quasi-isomorphisms is saturated. The technical heart of the calculability is the replacement of an arbitrary complex by a complex of projectives or injectives without changing its quasi-isomorphism type: if every object of $\mathcal{A}$ embeds in an injective, then every complex admits a quasi-isomorphism into a complex of injectives, and between complexes of injectives every quasi-isomorphism is a homotopy equivalence, which makes the roofs composable and the Ore conditions verifiable. In general the morphisms of $D(\mathcal{A})$ are represented by three-arrow zigzags rather than by roofs, and the bounded subcategories are handled by the same replacements truncated at the ends. Dually with projectives. $\square$
+*Proof (in outline).* The localisation exists by the general construction of a category of fractions of Gabriel and Zisman, in which the morphisms are formal zigzags and the class of quasi-isomorphisms is saturated. The technical heart of the calculability is the replacement of an arbitrary complex by a complex of projectives or injectives without changing its quasi-isomorphism type: if every object of $\mathcal{A}$ embeds in an injective, then every complex admits a quasi-isomorphism into a complex of injectives, and between complexes of injectives every quasi-isomorphism is a homotopy equivalence, which makes the roofs composable and the Ore conditions verifiable. In general the morphisms of $D(\mathcal{A})$ are represented by three-arrow zigzags rather than by roofs, and the bounded subcategories are handled by the same replacements truncated at the ends. Dually with projectives.
 
 **Proposition.** The canonical functor $K(\mathcal{A})\to D(\mathcal{A})$ is the identity on objects and is additive. A chain map becomes an isomorphism in $D(\mathcal{A})$ if and only if it is a quasi-isomorphism; a complex becomes isomorphic to zero in $D(\mathcal{A})$ if and only if it is acyclic.
 
-*Proof.* The first statement is the definition of the localisation. For the second, the localisation inverts exactly the quasi-isomorphisms by construction, and a complex is acyclic exactly when the map from it to the zero complex is a quasi-isomorphism. $\square$
+*Proof.* The first statement is the definition of the localisation. For the second, the localisation inverts exactly the quasi-isomorphisms by construction, and a complex is acyclic exactly when the map from it to the zero complex is a quasi-isomorphism.
 
 **Example.** In $D(R\text{-}\mathbf{Mod})$ the acyclic complex $0\to R\xrightarrow{\operatorname{id}}R\to0$ is zero, and a module $M$ placed in degree $0$ is isomorphic to any resolution of $M$: the resolution is exact except in degree $0$ with homology $M$, and the augmentation is a quasi-isomorphism. Hence a module and its projective resolution are the same object of the derived category, which is the sense in which resolutions compute derived functors.
 
@@ -93,7 +93,7 @@ The bounded versions $D^+(\mathcal{A})$, $D^-(\mathcal{A})$ and $D^b(\mathcal{A}
 
 **Theorem.** The derived category $D(\mathcal{A})$ is triangulated with translation $C\mapsto C[1]$ and distinguished triangles the images of the cone diagrams $C\to D\to\operatorname{Cone}(f)\to C[1]$ of the homotopy category.
 
-*Proof.* Distinguished triangles are defined by the cone construction of *Homological Algebra*, and the axioms are verified using the explicit mapping-cylinder models of the maps, which exist because the localisation can be computed with complexes of injectives or projectives. The octahedral axiom follows from the construction of the mapping cone of a composition. $\square$
+*Proof.* Distinguished triangles are defined by the cone construction of *Homological Algebra*, and the axioms are verified using the explicit mapping-cylinder models of the maps, which exist because the localisation can be computed with complexes of injectives or projectives. The octahedral axiom follows from the construction of the mapping cone of a composition.
 
 **Definition.** A functor between triangulated categories is **exact** if it is additive, commutes with the translation up to natural isomorphism, and carries distinguished triangles to distinguished triangles.
 
@@ -107,7 +107,7 @@ $$
 
 and an exact functor between triangulated categories carries distinguished triangles to distinguished triangles, so it preserves these long exact sequences when the target is the derived category.
 
-*Proof.* The composition of two consecutive maps of a distinguished triangle is zero, so the displayed sequence is a complex; exactness at each term is obtained by rotating the triangle and applying $H$ to the exact triangle on the relevant morphism, using that a rotation of a distinguished triangle is distinguished. $\square$
+*Proof.* The composition of two consecutive maps of a distinguished triangle is zero, so the displayed sequence is a complex; exactness at each term is obtained by rotating the triangle and applying $H$ to the exact triangle on the relevant morphism, using that a rotation of a distinguished triangle is distinguished.
 
 ### Cohomological Functors and Homology
 
@@ -129,7 +129,7 @@ $$
 
 so the derived functors of *Derived Functors* are recovered as the cohomology of the total derived functor.
 
-*Proof.* Define $\mathbb{R}F$ on the full subcategory of complexes of injectives by applying $F$ degreewise; a quasi-isomorphism between complexes of injectives is a homotopy equivalence, so this descends to the derived category, and the universal property of the localisation extends it to all of $D(\mathcal{A})$. The identification of the cohomology follows from the definition of $R^nF$. The projective case is dual. $\square$
+*Proof.* Define $\mathbb{R}F$ on the full subcategory of complexes of injectives by applying $F$ degreewise; a quasi-isomorphism between complexes of injectives is a homotopy equivalence, so this descends to the derived category, and the universal property of the localisation extends it to all of $D(\mathcal{A})$. The identification of the cohomology follows from the definition of $R^nF$. The projective case is dual.
 
 **Corollary.** $\mathbb{R}\operatorname{Hom}_R(M,-)$ and $\mathbb{L}(-\otimes_RN)$ are exact functors on $D(R\text{-}\mathbf{Mod})$, and their cohomology in degree $n$ is $\operatorname{Ext}_R^n(M,-)$ and $\operatorname{Tor}_n^R(-,N)$ respectively.
 
@@ -157,7 +157,7 @@ $$
 
 so $-\otimes_R^{\mathbb{L}}N$ is left adjoint to $\mathbb{R}\operatorname{Hom}_R(N,-)$ on the derived category. There is also a natural isomorphism $M\otimes_R^{\mathbb{L}}N\cong N\otimes_R^{\mathbb{L}}M$.
 
-*Proof.* The adjunction of the tensor product and Hom on the level of complexes, together with the fact that a complex of projectives computes the derived tensor product and a complex of injectives the derived hom, gives the displayed bijection; the universal property of the localisation shows that it is the hom set of the derived category. The commutativity follows from the corresponding isomorphism in the homotopy category and the symmetry of the resolutions. $\square$
+*Proof.* The adjunction of the tensor product and Hom on the level of complexes, together with the fact that a complex of projectives computes the derived tensor product and a complex of injectives the derived hom, gives the displayed bijection; the universal property of the localisation shows that it is the hom set of the derived category. The commutativity follows from the corresponding isomorphism in the homotopy category and the symmetry of the resolutions.
 
 **Example.** For modules $M,N$ placed in degree $0$, the cohomology of $\mathbb{R}\operatorname{Hom}_R(M,N)$ is $\operatorname{Ext}_R^\bullet(M,N)$ and the homology of $M\otimes_R^{\mathbb{L}}N$ is $\operatorname{Tor}_\bullet^R(M,N)$, with the extra structure that the derived objects carry: the cup product on $\mathbb{R}\operatorname{Hom}$ and the graded-commutative product on the derived tensor product, coming from the total complexes of *Homological Algebra*.
 
@@ -173,7 +173,7 @@ so $-\otimes_R^{\mathbb{L}}N$ is left adjoint to $\mathbb{R}\operatorname{Hom}_R
 
 **Theorem.** For a ring $R$ and an integer $n\ge0$ the following are equivalent: (i) every $R$-module has projective dimension at most $n$; (ii) $\operatorname{Ext}_R^k(-,-)=0$ for all $k>n$. Moreover the canonical functor $K^b(R\text{-}\mathbf{Proj})\to D^b(R\text{-}\mathbf{Mod})$ from the homotopy category of bounded complexes of projective modules is an equivalence if and only if $R$ has finite global dimension, that is, if and only if every module has finite projective dimension.
 
-*Proof.* (i) and (ii) are equivalent because a module of projective dimension at most $n$ is exactly one with a projective resolution of length at most $n$, and $\operatorname{Ext}^k$ vanishes beyond the resolution length. If every module has finite projective dimension, resolving each term of a bounded complex and applying the horseshoe lemma produces a bounded complex of projectives quasi-isomorphic to it, and between bounded complexes of projectives a quasi-isomorphism is a homotopy equivalence, so the canonical functor is an equivalence. Conversely, if the functor is an equivalence, a module $M$ placed in degree $0$ is quasi-isomorphic to a bounded complex of projectives, and the cone of the comparison map exhibits a finite projective resolution of $M$; so the global dimension is finite. $\square$
+*Proof.* (i) and (ii) are equivalent because a module of projective dimension at most $n$ is exactly one with a projective resolution of length at most $n$, and $\operatorname{Ext}^k$ vanishes beyond the resolution length. If every module has finite projective dimension, resolving each term of a bounded complex and applying the horseshoe lemma produces a bounded complex of projectives quasi-isomorphic to it, and between bounded complexes of projectives a quasi-isomorphism is a homotopy equivalence, so the canonical functor is an equivalence. Conversely, if the functor is an equivalence, a module $M$ placed in degree $0$ is quasi-isomorphic to a bounded complex of projectives, and the cone of the comparison map exhibits a finite projective resolution of $M$; so the global dimension is finite.
 
 **Example.** A field has global dimension $0$: every module is free, so $\operatorname{Ext}^n=0$ for $n\ge1$ and $D^b$ is the homotopy category of bounded complexes of vector spaces. A principal ideal domain that is not a field has global dimension $1$: every module has a free resolution of length one, so $\operatorname{Ext}^n=0$ for $n\ge2$ and every bounded complex is quasi-isomorphic to a bounded complex of free modules by the structure theorem. Both examples show that when the global dimension is finite every object of $D^b(R\text{-}\mathbf{Mod})$ is isomorphic to a bounded complex of projective modules, so that $D^b(R\text{-}\mathbf{Mod})\simeq K^b(R\text{-}\mathbf{Proj})$ and no objects beyond these complexes appear; it is the unbounded complexes, and the rings of infinite global dimension, that require the full localisation.
 
@@ -191,7 +191,7 @@ $$
 
 in $D(\mathcal{A})$, and the long exact homology sequence is the long exact sequence of this triangle under the cohomological functor $H^0$.
 
-*Proof.* The sequence is degreewise a surjection $B^n\to C^n$ of modules, so a degreewise section of the underlying sets exists; the standard construction of *Homological Algebra* assembles it into a chain map $C_\bullet\to A_\bullet[1]$ whose mapping cone is quasi-isomorphic to $B_\bullet$, and the comparison with the mapping cone of $A_\bullet\to B_\bullet$ gives the distinguished triangle. The long exact sequence is the theorem on cohomological functors applied to it. $\square$
+*Proof.* The sequence is degreewise a surjection $B^n\to C^n$ of modules, so a degreewise section of the underlying sets exists; the standard construction of *Homological Algebra* assembles it into a chain map $C_\bullet\to A_\bullet[1]$ whose mapping cone is quasi-isomorphic to $B_\bullet$, and the comparison with the mapping cone of $A_\bullet\to B_\bullet$ gives the distinguished triangle. The long exact sequence is the theorem on cohomological functors applied to it.
 
 **Corollary.** The connecting morphism of the long exact sequence is, in the derived category, the morphism $C\to A[1]$ of the triangle; the naturality of the connecting morphism is the functoriality of the cone construction.
 
@@ -201,7 +201,7 @@ in $D(\mathcal{A})$, and the long exact homology sequence is the long exact sequ
 
 **Theorem (Verdier).** In a triangulated category the octahedral axiom is equivalent to the following sharpened form: for a composition $X\xrightarrow{f}Y\xrightarrow{g}Z$ with cones $Z'=\operatorname{Cone}(f)$, $X'=\operatorname{Cone}(g)$ and $Y'=\operatorname{Cone}(gf)$, there is a morphism $Z'\to Y'$ completing the diagrams to a distinguished triangle $Z'\to Y'\to X'\to TZ'$ such that the composite $X'\to TZ'\to TY$ differs from the structure morphism $X'\to TY$ by the sign forced by the translation. Thus the axiom asserts the functoriality of the cone construction on a composition, not merely the existence of a fourth triangle.
 
-*Proof.* This is the classical form of the axiom, due to Verdier; the equivalence with the version stated above is the standard rearrangement of the diagrams, and the comparison of signs is the comparison of the two rotations of the triangle on $gf$. The proof is a diagram chase in the triangulated category, and is standard. $\square$
+*Proof.* This is the classical form of the axiom, due to Verdier; the equivalence with the version stated above is the standard rearrangement of the diagrams, and the comparison of signs is the comparison of the two rotations of the triangle on $gf$. The proof is a diagram chase in the triangulated category, and is standard.
 
 ## Summary
 

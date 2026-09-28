@@ -3,7 +3,7 @@
 
 ## Introduction
 
-This article develops integration for functions of one split complex variable. It follows *Split Complex Analysis*, which fixed the split complex plane, its Euclidean topology, split complex differentiability and the split Cauchy–Riemann equations, and it follows *Split-Complex Algebra* for the ring $\mathbb{D} = \mathbb{R}[j]$, $j^2 = +1$, the idempotents $\Pi_\pm = \tfrac12(1 \pm j)$, the conjugation $\bar Z$, and the norm form $N(Z) = Z\bar Z = x^2 - y^2$. The aim is to construct the integral from first principles and then to determine exactly how much of the Cauchy theory survives when the coefficient ring is not a field.
+This article develops integration for functions of one split complex variable. It follows *Split Complex Analysis*, which fixed the split complex plane, its Euclidean topology, split complex differentiability and the split Cauchy–Riemann equations, and it follows *Split-Complex Algebra* for the ring $\mathbb{D} = \mathbb{R}[j]$, $j^2 = +1$, the idempotents $\Pi_\pm = \tfrac12(1 \pm j)$, the conjugation $\bar Z$, and the norm $N(Z) = Z\bar Z = x^2 - y^2$. The aim is to construct the integral from first principles and then to determine exactly how much of the Cauchy theory survives when the coefficient ring is not a field.
 
 The base ring throughout is $\mathbb{D}$. It is a commutative ring with identity, of characteristic zero, in which $2$ is invertible; it is not an integral domain, because $1 + j$ and $1 - j$ are non-zero and their product is zero. This single algebraic fact governs the whole theory, and it divides the classical Cauchy theory into a half that survives and a half that does not. The **vanishing** statement — the integral of a split complex differentiable function over a closed contour is zero — survives, and it in fact holds on every domain, not merely on the simply connected ones. The **representation** statement — the Cauchy integral formula that recovers an interior value from a boundary integral, and with it the residue theorem, the Cauchy estimates, the mean value property and the Laurent expansion — does not survive, and the obstruction is exactly the zero-divisor cone. The kernel $1/(\zeta - Z)$ of the formula is defined only where $\zeta - Z$ is a unit, and the set where it is not is not the point $Z$ but the two lines through $Z$; no contour that surrounds $Z$ avoids them.
 
@@ -65,7 +65,7 @@ $$
 Z_k - Z_{k-1} = \int_{t_{k-1}}^{t_k} \gamma'(t)\,dt = \gamma'(\tau_k)(t_k - t_{k-1}) + \rho_k, \qquad \|\rho_k\|_E \leq \omega(\|\Delta\|)(t_k - t_{k-1}),
 $$
 
-with $\omega(\|\Delta\|) \to 0$ by uniform continuity of $\gamma'$ on the finitely many pieces. Hence $S$ differs from the Riemann sum of $t \mapsto f(\gamma(t))\gamma'(t)$ by a term bounded in norm by $\max_{\gamma^*}\|f\|_E \,\omega(\|\Delta\|)(b-a) \to 0$. $\square$
+with $\omega(\|\Delta\|) \to 0$ by uniform continuity of $\gamma'$ on the finitely many pieces. Hence $S$ differs from the Riemann sum of $t \mapsto f(\gamma(t))\gamma'(t)$ by a term bounded in norm by $\max_{\gamma^*}\|f\|_E \,\omega(\|\Delta\|)(b-a) \to 0$.
 
 The integral exists because $\mathbb{D}$ is a complete normed space under $\| \cdot \|_E$, exactly as $\mathbb{C}$ is under the modulus; completeness is what makes the limit of Riemann sums legitimate, and it is not affected by the presence of zero divisors.
 
@@ -95,7 +95,7 @@ $$
 \|ZW\|_E^2 = (xc + yd)^2 + (xd + yc)^2 = (x^2 + y^2)(c^2 + d^2) + 4xycd,
 $$
 
-and $4xycd \leq 4\lvert xy\rvert \lvert cd\rvert \leq (x^2 + y^2)(c^2 + d^2)$ by the arithmetic–geometric mean inequality applied to each pair, so $\|ZW\|_E^2 \leq 2\|Z\|_E^2\|W\|_E^2$. Equality holds if and only if $\lvert x\rvert = \lvert y\rvert$, $\lvert c\rvert = \lvert d\rvert$ and $xycd > 0$, that is, if and only if $Z$ and $W$ are non-zero elements of the same one of the two null lines $\mathbb{R}\Pi_1$ and $\mathbb{R}\Pi_2$; the bound is therefore attained and $\sqrt2$ cannot be lowered. Hence $\|f(\gamma(t))\gamma'(t)\|_E \leq \sqrt2\,m\,\|\gamma'(t)\|_E$, and integrating gives the estimate. $\square$
+and $4xycd \leq 4\lvert xy\rvert \lvert cd\rvert \leq (x^2 + y^2)(c^2 + d^2)$ by the arithmetic–geometric mean inequality applied to each pair, so $\|ZW\|_E^2 \leq 2\|Z\|_E^2\|W\|_E^2$. Equality holds if and only if $\lvert x\rvert = \lvert y\rvert$, $\lvert c\rvert = \lvert d\rvert$ and $xycd > 0$, that is, if and only if $Z$ and $W$ are non-zero elements of the same one of the two null lines $\mathbb{R}\Pi_1$ and $\mathbb{R}\Pi_2$; the bound is therefore attained and $\sqrt2$ cannot be lowered. Hence $\|f(\gamma(t))\gamma'(t)\|_E \leq \sqrt2\,m\,\|\gamma'(t)\|_E$, and integrating gives the estimate.
 
 **Remark.** The factor $\sqrt2$ is a feature of the multiplicativity failure of the Euclidean norm and has no analogue in $\mathbb{C}$, where the modulus is multiplicative. It is the first sign that the Euclidean metric and the ring multiplication are not aligned; the alignment that does hold is the multiplicativity of $N$, used below.
 
@@ -111,7 +111,7 @@ $$
 
 where $\gamma_\pm(t) = x(\gamma(t)) \pm y(\gamma(t))$ are the projected paths and each integral on the right is an ordinary real line integral.
 
-**Proof.** Since $dZ = \Pi_1\,dZ_+ + \Pi_2\,dZ_-$ and $\Pi_1 \Pi_2 = \Pi_2 \Pi_1 = 0$, $\Pi_\pm^2 = \Pi_\pm$, the product $f(Z)\,dZ$ splits as $f_+(Z_+)\,\Pi_1\,dZ_+ + f_-(Z_-)\,\Pi_2\,dZ_-$. Integrating the two summands separately gives the stated identity. $\square$
+**Proof.** Since $dZ = \Pi_1\,dZ_+ + \Pi_2\,dZ_-$ and $\Pi_1 \Pi_2 = \Pi_2 \Pi_1 = 0$, $\Pi_\pm^2 = \Pi_\pm$, the product $f(Z)\,dZ$ splits as $f_+(Z_+)\,\Pi_1\,dZ_+ + f_-(Z_-)\,\Pi_2\,dZ_-$. Integrating the two summands separately gives the stated identity.
 
 So a split complex contour integral is exactly a pair of real line integrals, one for each idempotent, and the two are independent of each other. This is the source of both the strength and the weakness of the theory.
 
@@ -139,7 +139,7 @@ $$
 \frac{\partial}{\partial Z} = \tfrac12\big((\partial_+ + \partial_-) + j(\partial_+ - \partial_-)\big) = \tfrac12\big((1+j)\partial_+ + (1-j)\partial_-\big) = \Pi_1\partial_+ + \Pi_2\partial_-,
 $$
 
-and the conjugate is computed the same way with $j$ replaced by $-j$, which interchanges $\Pi_1$ and $\Pi_2$. $\square$
+and the conjugate is computed the same way with $j$ replaced by $-j$, which interchanges $\Pi_1$ and $\Pi_2$.
 
 **Proposition (the d'Alembertian).** For the conjugate operator $\bar D = 2\,\partial_Z = \partial_x + j\,\partial_y$,
 
@@ -147,7 +147,7 @@ $$
 \bar D D = D \bar D = \Box := \partial_x^2 - \partial_y^2 = 4\,\partial_+ \partial_-.
 $$
 
-**Proof.** Expanding, $\bar D D = (\partial_x + j\partial_y)(\partial_x - j\partial_y) = \partial_x^2 - j^2 \partial_y^2 = \partial_x^2 - \partial_y^2$, the mixed terms cancelling; the same expansion gives $D\bar D$. In the idempotent coordinates $\partial_+ \partial_- = \tfrac14(\partial_x^2 - \partial_y^2)$. $\square$
+**Proof.** Expanding, $\bar D D = (\partial_x + j\partial_y)(\partial_x - j\partial_y) = \partial_x^2 - j^2 \partial_y^2 = \partial_x^2 - \partial_y^2$, the mixed terms cancelling; the same expansion gives $D\bar D$. In the idempotent coordinates $\partial_+ \partial_- = \tfrac14(\partial_x^2 - \partial_y^2)$.
 
 So the split Cauchy–Riemann operator factors the wave operator, not the Laplacian. It is therefore not elliptic: the principal symbol of $D$ is $\xi_1 - j\,\xi_2$, whose norm is $\xi_1^2 - \xi_2^2$, so it is a unit off the two lines $\xi_1 = \pm\xi_2$ and a zero divisor on them; those lines are exactly the set on which the symbol of $\Box = 4\partial_+\partial_-$ vanishes. This is the analytic face of the algebra's zero divisors, and the next sections show that it is the same set.
 
@@ -165,7 +165,7 @@ $$
 \partial_{\bar Z} f = (\Pi_2\partial_+ + \Pi_1\partial_-)(f_+\Pi_1 + f_-\Pi_2) = (\partial_+ f_-)\,\Pi_2 + (\partial_- f_+)\,\Pi_1,
 $$
 
-because $\Pi_2 \Pi_1 = \Pi_1 \Pi_2 = 0$ and $\Pi_\pm^2 = \Pi_\pm$. The two idempotents are independent, so this vanishes if and only if $\partial_+ f_- = 0$ and $\partial_- f_+ = 0$, that is, if and only if $f_-$ is locally a function of $Z_-$ alone and $f_+$ of $Z_+$ alone. $\square$
+because $\Pi_2 \Pi_1 = \Pi_1 \Pi_2 = 0$ and $\Pi_\pm^2 = \Pi_\pm$. The two idempotents are independent, so this vanishes if and only if $\partial_+ f_- = 0$ and $\partial_- f_+ = 0$, that is, if and only if $f_-$ is locally a function of $Z_-$ alone and $f_+$ of $Z_+$ alone.
 
 **Corollary (the derivative in idempotent coordinates).** If $f$ is split complex differentiable, then
 
@@ -203,7 +203,7 @@ $$
 d(f\,dZ) = df \wedge dZ = (\partial_x f\,dx + \partial_y f\,dy)\wedge(dx + j\,dy) = \big(\partial_x f \, j - \partial_y f\big)\,dx \wedge dy.
 $$
 
-This vanishes if and only if $\partial_y f = \partial_x f\, j$, which is the split Cauchy–Riemann equation $Df = 0$. The two computations agree because $\partial_+ f_- = 0$ and $\partial_- f_+ = 0$ is precisely that equation in the idempotent basis. $\square$
+This vanishes if and only if $\partial_y f = \partial_x f\, j$, which is the split Cauchy–Riemann equation $Df = 0$. The two computations agree because $\partial_+ f_- = 0$ and $\partial_- f_+ = 0$ is precisely that equation in the idempotent basis.
 
 In the complex plane the same computation gives the same conclusion, closedness being equivalent to holomorphy, so on the differentiable side the two theories have the same shape. What differs is what the condition costs. There it is an elliptic system, whose solutions are rigid; here it says only that $f_+$ does not depend on $Z_-$ and $f_-$ does not depend on $Z_+$, so that the differentiable functions are exactly the pairs of one-variable functions, one for each idempotent, with no interaction between the two components and no exclusion beyond the separation itself.
 
@@ -215,7 +215,7 @@ $$
 \int_\gamma f(Z)\,dZ = F(\gamma(b)) - F(\gamma(a)).
 $$
 
-**Proof.** On $U$ the components satisfy $f_+ = f_+(Z_+)$ and $f_- = f_-(Z_-)$ with $f_\pm$ continuous functions of one real variable on intervals $I_\pm$, the projections of $U$. A continuous function of one real variable has an antiderivative, so choose $F_+$ on $I_+$ with $F_+' = f_+$ and $F_-$ on $I_-$ with $F_-' = f_-$, and set $F = F_+ \circ Z_+ \cdot \Pi_1 + F_- \circ Z_- \cdot \Pi_2$. Then $F$ is split complex differentiable with $F' = f$ by the corollary of the previous section. Along a piecewise $C^1$ path, $\frac{d}{dt}F(\gamma(t)) = F'(\gamma(t))\gamma'(t) = f(\gamma(t))\gamma'(t)$, and the fundamental theorem of calculus in the two idempotent components gives the endpoint formula. $\square$
+**Proof.** On $U$ the components satisfy $f_+ = f_+(Z_+)$ and $f_- = f_-(Z_-)$ with $f_\pm$ continuous functions of one real variable on intervals $I_\pm$, the projections of $U$. A continuous function of one real variable has an antiderivative, so choose $F_+$ on $I_+$ with $F_+' = f_+$ and $F_-$ on $I_-$ with $F_-' = f_-$, and set $F = F_+ \circ Z_+ \cdot \Pi_1 + F_- \circ Z_- \cdot \Pi_2$. Then $F$ is split complex differentiable with $F' = f$ by the corollary of the previous section. Along a piecewise $C^1$ path, $\frac{d}{dt}F(\gamma(t)) = F'(\gamma(t))\gamma'(t) = f(\gamma(t))\gamma'(t)$, and the fundamental theorem of calculus in the two idempotent components gives the endpoint formula.
 
 Two facts distinguish this from the complex case. First, the primitive exists on *every* domain, with no simple connectivity hypothesis, because each component is a function of a single real variable and a real antiderivative always exists; in $\mathbb{C}$ the primitive exists only when the closed integrals vanish. Second, the primitive is determined only up to an additive split complex constant, since each one-variable antiderivative is determined up to a constant; the ambiguity does not affect differences.
 
@@ -227,7 +227,7 @@ $$
 \oint_\gamma f(Z)\,dZ = 0.
 $$
 
-**Proof.** By the primitive theorem the integral equals $F(\gamma(b)) - F(\gamma(a))$, and for a closed path $\gamma(b) = \gamma(a)$. $\square$
+**Proof.** By the primitive theorem the integral equals $F(\gamma(b)) - F(\gamma(a))$, and for a closed path $\gamma(b) = \gamma(a)$.
 
 **Remark (softness).** The theorem holds in $\mathbb{D}$ for a reason that gives it no force: every pair of one-variable functions is split complex differentiable, so the class of integrands for which closed integrals vanish is the class of *all* differentiable functions, and the vanishing is not a restriction. In $\mathbb{C}$ the same statement is the origin of the whole theory — it forces primitives, the Cauchy integral formula, the maximum principle and the identity theorem. In $\mathbb{D}$ it forces none of these, because nothing is excluded. The mean value property likewise fails: a split complex differentiable function is a pair of arbitrary one-variable functions, and its average over a circle need not equal its centre value.
 
@@ -236,7 +236,7 @@ $$
 1. $\oint_{\partial R} f(Z)\,dZ = 0$ for every axis-parallel rectangle $R \subseteq U$.
 2. $f$ has the separated form $f = f_+(Z_+)\Pi_1 + f_-(Z_-)\Pi_2$ with $f_\pm$ continuous functions of one variable.
 
-**Proof.** If (2) holds, $\oint_{\partial R} f\,dZ = \Pi_1\oint_{\partial R} f_+(Z_+)\,dZ_+ + \Pi_2\oint_{\partial R} f_-(Z_-)\,dZ_-$, and each term vanishes because the projected boundary of the rectangle is a closed real path over which a one-variable continuous function is integrated, and every continuous function of one real variable has an antiderivative. Conversely, if (1) holds, the integral $F$ of $f$ from a fixed base point along axis-parallel paths is well defined: two such paths inside a rectangle of $U$ differ by the boundaries of the subrectangles between them, and a chain of overlapping rectangles inside $U$ carries the independence from one rectangle to the next. The standard difference-quotient computation in each component then shows that $F$ is split complex differentiable with $F' = f$. By the Cauchy–Riemann theorem $F$ has the separated form $F = F_+(Z_+)\Pi_1 + F_-(Z_-)\Pi_2$, so $f = F' = F_+'(Z_+)\Pi_1 + F_-'(Z_-)\Pi_2$ has the separated form. $\square$
+**Proof.** If (2) holds, $\oint_{\partial R} f\,dZ = \Pi_1\oint_{\partial R} f_+(Z_+)\,dZ_+ + \Pi_2\oint_{\partial R} f_-(Z_-)\,dZ_-$, and each term vanishes because the projected boundary of the rectangle is a closed real path over which a one-variable continuous function is integrated, and every continuous function of one real variable has an antiderivative. Conversely, if (1) holds, the integral $F$ of $f$ from a fixed base point along axis-parallel paths is well defined: two such paths inside a rectangle of $U$ differ by the boundaries of the subrectangles between them, and a chain of overlapping rectangles inside $U$ carries the independence from one rectangle to the next. The standard difference-quotient computation in each component then shows that $F$ is split complex differentiable with $F' = f$. By the Cauchy–Riemann theorem $F$ has the separated form $F = F_+(Z_+)\Pi_1 + F_-(Z_-)\Pi_2$, so $f = F' = F_+'(Z_+)\Pi_1 + F_-'(Z_-)\Pi_2$ has the separated form.
 
 **Remark (no regularity upgrade).** In $\mathbb{C}$ the same rectangle hypothesis upgrades a merely continuous $f$ to a holomorphic one, because the primitive of a continuous function is holomorphic and the derivative of a holomorphic function is holomorphic. In $\mathbb{D}$ no such upgrade is available: the components $f_\pm = F_\pm'$ are derivatives of one-variable functions and are continuous by hypothesis, but a continuous function of one real variable need not be differentiable. The hypothesis of the theorem therefore stops at the separated form, one step short of differentiability, and this gap is a further face of the failure of the representation half of the theory. In particular there is no Morera theorem in $\mathbb{D}$ of the classical strength; the rectangle condition characterises the class of continuous separated densities, not the class of split complex differentiable functions.
 
@@ -252,7 +252,7 @@ $$
 (\zeta - Z_0)^{-1} = \frac{\overline{\zeta - Z_0}}{N(\zeta - Z_0)} = \frac{\Pi_1}{\zeta_+ - Z_{0+}} + \frac{\Pi_2}{\zeta_- - Z_{0-}}.
 $$
 
-**Proof.** The inverse formula $W^{-1} = \bar W / N(W)$ is valid whenever $N(W) \neq 0$, and $N(\zeta - Z_0) = (\zeta_+ - Z_{0+})(\zeta_- - Z_{0-})$, which vanishes exactly on the two stated lines. $\square$
+**Proof.** The inverse formula $W^{-1} = \bar W / N(W)$ is valid whenever $N(W) \neq 0$, and $N(\zeta - Z_0) = (\zeta_+ - Z_{0+})(\zeta_- - Z_{0-})$, which vanishes exactly on the two stated lines.
 
 **Theorem (obstruction).** There is no Cauchy integral formula in $\mathbb{D}$: there is no constant $c \in \mathbb{D}$ such that
 
@@ -262,7 +262,7 @@ $$
 
 holds for every split complex differentiable $f$, every $Z_0$ in the domain of $f$ and every closed piecewise $C^1$ path $\gamma$ in that domain. The constant of the classical formula, $1/(2\pi i)$, is not an element of $\mathbb{D}$ at all; but no constant whatever serves, because the kernel $(\zeta - Z_0)^{-1}$ is undefined on the null cone through $Z_0$, and every closed curve whose winding number about $Z_0$ is non-zero meets that cone.
 
-**Proof.** The complement of the two lines $\zeta_+ = Z_{0+}$ and $\zeta_- = Z_{0-}$ has four connected components, the open sectors determined by the signs of $\zeta_+ - Z_{0+}$ and $\zeta_- - Z_{0-}$, and each is convex. A closed curve lying in one component lies in a convex set omitting $Z_0$, hence is null-homotopic in $\mathbb{D} \setminus \{Z_0\}$ and has winding number zero about $Z_0$. So a curve of non-zero winding about $Z_0$ must leave every component, that is, must meet the cone, where the integrand is not defined. $\square$
+**Proof.** The complement of the two lines $\zeta_+ = Z_{0+}$ and $\zeta_- = Z_{0-}$ has four connected components, the open sectors determined by the signs of $\zeta_+ - Z_{0+}$ and $\zeta_- - Z_{0-}$, and each is convex. A closed curve lying in one component lies in a convex set omitting $Z_0$, hence is null-homotopic in $\mathbb{D} \setminus \{Z_0\}$ and has winding number zero about $Z_0$. So a curve of non-zero winding about $Z_0$ must leave every component, that is, must meet the cone, where the integrand is not defined.
 
 This is the precise sense in which the Cauchy theorem of a ring with zero divisors is obstructed: the kernel of the would-be formula is not a function on the punctured neighbourhood of $Z_0$, because the punctured neighbourhood is not the set on which $\zeta - Z_0$ is invertible. In $\mathbb{C}$ the two sets coincide and the formula holds; in $\mathbb{D}$ the invertible set is the complement of a pair of lines.
 
@@ -276,7 +276,7 @@ $$
 E(Z) = H(Z_-)\,\delta(Z_+)\,\Pi_1 + H(Z_+)\,\delta(Z_-)\,\Pi_2,
 $$
 
-where $H$ is the Heaviside function, $\delta$ is the one-dimensional Dirac distribution, and a normalisation is fixed by $D E = \delta_0$ in the Lebesgue measure of the plane. The support of $E$ is the union of the two null rays
+where $H$ is the Heaviside function, $\delta$ is the one-dimensional delta distribution, and a normalisation is fixed by $D E = \delta_0$ in the Lebesgue measure of the plane. The support of $E$ is the union of the two null rays
 
 $$
 \{Z : Z_+ = 0,\ Z_- \geq 0\} \cup \{Z : Z_- = 0,\ Z_+ \geq 0\},
@@ -290,7 +290,7 @@ $$
 D E = 2\,(\partial_+ E_-)\,\Pi_2 + 2\,(\partial_- E_+)\,\Pi_1,
 $$
 
-the cross terms vanishing as before. Taking $E_+ = H(Z_-)\delta(Z_+)$ and $E_- = H(Z_+)\delta(Z_-)$ gives $\partial_- E_+ = \delta(Z_-)\delta(Z_+)$ and $\partial_+ E_- = \delta(Z_+)\delta(Z_-)$; with $\lvert\partial(Z_+,Z_-)/\partial(x,y)\rvert = 2$, so that $\delta(Z_+)\delta(Z_-) = \tfrac12\delta_0$, one has $2\,\delta(Z_+)\delta(Z_-) = \delta_0$ in the plane measure, so $DE = \delta_0$. The support statement is immediate from the factors $H$ and $\delta$. $\square$
+the cross terms vanishing as before. Taking $E_+ = H(Z_-)\delta(Z_+)$ and $E_- = H(Z_+)\delta(Z_-)$ gives $\partial_- E_+ = \delta(Z_-)\delta(Z_+)$ and $\partial_+ E_- = \delta(Z_+)\delta(Z_-)$; with $\lvert\partial(Z_+,Z_-)/\partial(x,y)\rvert = 2$, so that $\delta(Z_+)\delta(Z_-) = \tfrac12\delta_0$, one has $2\,\delta(Z_+)\delta(Z_-) = \delta_0$ in the plane measure, so $DE = \delta_0$. The support statement is immediate from the factors $H$ and $\delta$.
 
 The contrast with $\mathbb{C}$ is the contrast of an elliptic with a hyperbolic operator, and it is the same contrast as that of a field with a ring having zero divisors. In $\mathbb{C}$ the principal symbol never vanishes off the origin, the fundamental solution is a function singular at a point, and the boundary integral of the Cauchy formula is meaningful on any small circle. In $\mathbb{D}$ the principal symbol degenerates on the real characteristics, the fundamental solution is a distribution carried by those characteristics, and a boundary integral can represent an interior value only if the contour is allowed to meet the singular support — which the definition of the integral forbids.
 
@@ -322,7 +322,7 @@ Along such a line the integral sees only the minus idempotent component of $f$; 
 
 **Proposition (characteristic tangency).** If $\gamma$ is tangent to a null direction at $t_0$, then $\gamma'(t_0)$ is a zero divisor.
 
-**Proof.** A null direction is the kernel of $dZ_+$ or of $dZ_-$; putting $Z'(t_0) = p + jq$, tangency to the line $Z_+ = \mathrm{const}$ means $p + q = 0$, that is $Z'(t_0) = p(1 - j) = 2p\,\Pi_2$, a multiple of the zero divisor $\Pi_2$. The other family gives multiples of $\Pi_1$. $\square$
+**Proof.** A null direction is the kernel of $dZ_+$ or of $dZ_-$; putting $Z'(t_0) = p + jq$, tangency to the line $Z_+ = \mathrm{const}$ means $p + q = 0$, that is $Z'(t_0) = p(1 - j) = 2p\,\Pi_2$, a multiple of the zero divisor $\Pi_2$. The other family gives multiples of $\Pi_1$.
 
 So the derivative of a curve is a zero divisor exactly at its tangencies with the characteristics. The difference quotient $(f(Z_0 + h) - f(Z_0))/h$ is not defined for a null increment $h$, since $h$ is not invertible, so the limit defining the split derivative is taken over the invertible increments; the null directions are exactly the increments excluded from it, and they are the directions in which the argument reducing differentiability to the Cauchy–Riemann equations cannot be run.
 
@@ -338,7 +338,7 @@ $$
 
 with no hypothesis on $U$ beyond $f$ being defined and differentiable on it. In particular, if $U$ omits the null cone through $Z_0$ and $P, Q$ lie in the same component of $U$, the two points may be joined inside that component and the integral between them is independent of the path.
 
-**Proof.** By the primitive theorem $f\,dZ = dF$ for a globally defined primitive $F$ on $U$, and the integral of an exact form along a path depends only on the endpoints, so both integrals equal $F(Q) - F(P)$. $\square$
+**Proof.** By the primitive theorem $f\,dZ = dF$ for a globally defined primitive $F$ on $U$, and the integral of an exact form along a path depends only on the endpoints, so both integrals equal $F(Q) - F(P)$.
 
 Thus path independence does hold within each sector bounded by the null lines; it is the *extension* to paths that would cross a line which fails, and that is the subject of the next subsection.
 
@@ -346,7 +346,7 @@ Thus path independence does hold within each sector bounded by the null lines; i
 
 **Proposition (cut by a null line).** Let $a \in \mathbb{R}$ and let $f$ on $\{Z : Z_+ \neq a\}$ be given by $f(Z) = \Pi_1 (Z_+ - a)^{-1}$. Then $f$ is split complex differentiable, $f$ has no singularity at a point, and its singular set is the whole null line $\{Z : Z_+ = a\}$. There is no path in the domain joining a point with $Z_+ > a$ to a point with $Z_+ < a$, and the primitive $F = \Pi_1 \log|Z_+ - a|$, which is defined on each half-plane, has no continuous extension across the line.
 
-**Proof.** $f$ is of the form $f_+(Z_+)\Pi_1$ with $f_+(t) = (t-a)^{-1}$, so it is split complex differentiable by the Cauchy–Riemann theorem, and $f\,dZ = \Pi_1\,dZ_+/(Z_+ - a)$ has the primitive $\Pi_1\log|Z_+ - a|$ on each of the two half-planes $Z_+ > a$ and $Z_+ < a$. The line $Z_+ = a$ is exactly the set on which $f$ is undefined, and it separates the two half-planes. $\square$
+**Proof.** $f$ is of the form $f_+(Z_+)\Pi_1$ with $f_+(t) = (t-a)^{-1}$, so it is split complex differentiable by the Cauchy–Riemann theorem, and $f\,dZ = \Pi_1\,dZ_+/(Z_+ - a)$ has the primitive $\Pi_1\log|Z_+ - a|$ on each of the two half-planes $Z_+ > a$ and $Z_+ < a$. The line $Z_+ = a$ is exactly the set on which $f$ is undefined, and it separates the two half-planes.
 
 The failure of path independence is therefore not the appearance of a non-zero period, as it is in $\mathbb{C}$, where $\oint Z^{-1}dZ = 2\pi i$. The split complex form $f\,dZ$ is closed and has zero integral over every closed path in each component; indeed no closed path in the domain can leave a single half-plane. What fails is the *extension* of path independence across the null direction: the characteristic is an impenetrable cut, and the fundamental group that controls the complex case is replaced by a purely local, sector-wise statement. In $\mathbb{C}$ the singular set of $(\zeta - Z_0)^{-1}$ is a point, whose complement is connected, so a contour can encircle it and produce the residue $2\pi i$; in $\mathbb{D}$ the singular set is a line, whose complement has two components, and no contour can encircle it at all.
 
@@ -428,7 +428,7 @@ whose square $D\bar D = \bar D D$ is a Laplacian and whose fundamental solution 
 
 **Proposition.** There is no element $W \in \mathbb{D}$ with $W^2 = -1$. Hence the split complex system cannot be presented as an elliptic hypercomplex system in the sense of the general theory, and no choice of generators $B_k$ satisfies the general hypotheses.
 
-**Proof.** Write $W = x + jy$. Then $W^2 = (x^2 + y^2) + 2xy\,j$. The equation $W^2 = -1$ requires $xy = 0$ and $x^2 + y^2 = -1$, impossible for real $x, y$ since $x^2 + y^2 \geq 0$. $\square$
+**Proof.** Write $W = x + jy$. Then $W^2 = (x^2 + y^2) + 2xy\,j$. The equation $W^2 = -1$ requires $xy = 0$ and $x^2 + y^2 = -1$, impossible for real $x, y$ since $x^2 + y^2 \geq 0$.
 
 The consequences are those of the preceding sections. The general Cauchy–Goursat theorem applies to the split system, because $\mathbb{D}$ is commutative, but it carries no information there, since the vanishing half of the theory is soft. The general residue theory and Cauchy integral formula, by contrast, have no split complex analogue, because their proofs use the point singularity of the fundamental solution. The mechanism of the failure is the constant in the characteristic equation: for $\mathbb{C}$ the characteristic set of $D$ is the single point $0$, for $\mathbb{D}$ it is the null cone, and the cone is the zero-divisor set. The split complex theory is thus the boundary case of the general theory at which ellipticity is lost and with it the representation half of the Cauchy theory, while the vanishing half survives in a form too weak to carry the rest.
 
@@ -449,7 +449,7 @@ The **obstruction to the Cauchy theorem** is the zero divisor. The element $\zet
 | $\mathbb{D} = \mathbb{R}[j]$, $j^2 = +1$ | Split complex numbers |
 | $Z = x + jy$ | General split complex number, $x = \operatorname{Re} Z$, $y = \operatorname{Im} Z$ |
 | $\bar Z = x - jy$ | Split complex conjugate |
-| $N(Z) = Z\bar Z = x^2 - y^2$ | Norm form, signature $(1,1)$ |
+| $N(Z) = Z\bar Z = x^2 - y^2$ | Norm, signature $(1,1)$ |
 | $\{N = 0\}$ | Null cone, the zero-divisor set |
 | $\|Z\|_E = \sqrt{x^2 + y^2}$ | Euclidean modulus |
 | $\Pi_1 = \tfrac12(1+j), \ \Pi_2 = \tfrac12(1-j)$ | Idempotents, $\Pi_\pm^2 = \Pi_\pm$, $\Pi_1\Pi_2 = 0$ |
@@ -470,7 +470,7 @@ The **obstruction to the Cauchy theorem** is the zero divisor. The element $\zet
 | $H$ | Heaviside function, $H(t) = 1$ for $t > 0$ and $0$ for $t < 0$ |
 | $E = H(Z_-)\delta(Z_+)\Pi_1 + H(Z_+)\delta(Z_-)\Pi_2$ | Fundamental solution of $D$, supported on the two null rays |
 | $\operatorname{Res}_L f$ | Residue at a null line $L$, an idempotent coefficient |
-| $\delta$, $\delta_0$ | One-dimensional Dirac distribution, and the two-dimensional one at the origin |
+| $\delta$, $\delta_0$ | One-dimensional delta distribution, and the two-dimensional one at the origin |
 
 
 

@@ -17,10 +17,10 @@ This article defines the two chain conditions, gives the equivalent formulations
 **Definition.** A commutative ring $R$ is **Noetherian** if every ascending chain of ideals
 
 $$
-\mathfrak{a}_1 \subseteq \mathfrak{a}_2 \subseteq \mathfrak{a}_3 \subseteq \cdots
+\mathrm{A}_1 \subseteq \mathrm{A}_2 \subseteq \mathrm{A}_3 \subseteq \cdots
 $$
 
-stabilises: there is an index $N$ with $\mathfrak{a}_n = \mathfrak{a}_N$ for all $n \geq N$. This is the **ascending chain condition**, abbreviated ACC.
+stabilises: there is an index $N$ with $\mathrm{A}_n = \mathrm{A}_N$ for all $n \geq N$. This is the **ascending chain condition**, abbreviated ACC.
 
 The definition can be recast in two ways that are used constantly.
 
@@ -32,11 +32,11 @@ The definition can be recast in two ways that are used constantly.
 
 **(c)** Every ideal of $R$ is finitely generated.
 
-**Proof.** (a) $\Rightarrow$ (b): suppose $\Sigma$ is a nonempty set of ideals with no maximal element. Choose $\mathfrak{a}_1 \in \Sigma$; since it is not maximal there is $\mathfrak{a}_2 \in \Sigma$ with $\mathfrak{a}_1 \subsetneq \mathfrak{a}_2$; continuing produces a strictly increasing chain, contradicting (a).
+**Proof.** (a) $\Rightarrow$ (b): suppose $\Sigma$ is a nonempty set of ideals with no maximal element. Choose $\mathrm{A}_1 \in \Sigma$; since it is not maximal there is $\mathrm{A}_2 \in \Sigma$ with $\mathrm{A}_1 \subsetneq \mathrm{A}_2$; continuing produces a strictly increasing chain, contradicting (a).
 
-(b) $\Rightarrow$ (c): let $I$ be an ideal and let $\Sigma$ be the set of finitely generated ideals contained in $I$. It is nonempty since $(0) \in \Sigma$, so it has a maximal element $\mathfrak{b} = (b_1, \ldots, b_n)$. If $x \in I \setminus \mathfrak{b}$ then $(b_1, \ldots, b_n, x) \subseteq I$ is finitely generated and strictly larger, a contradiction; hence $I = \mathfrak{b}$ is finitely generated.
+(b) $\Rightarrow$ (c): let $I$ be an ideal and let $\Sigma$ be the set of finitely generated ideals contained in $I$. It is nonempty since $(0) \in \Sigma$, so it has a maximal element $\mathrm{B} = (b_1, \ldots, b_n)$. If $x \in I \setminus \mathrm{B}$ then $(b_1, \ldots, b_n, x) \subseteq I$ is finitely generated and strictly larger, a contradiction; hence $I = \mathrm{B}$ is finitely generated.
 
-(c) $\Rightarrow$ (a): let $\mathfrak{a}_1 \subseteq \mathfrak{a}_2 \subseteq \cdots$ be an ascending chain and put $I = \bigcup_n \mathfrak{a}_n$. The union is an ideal: it is closed under addition because two elements lie in some common $\mathfrak{a}_n$, and under multiplication by $R$ because each $\mathfrak{a}_n$ is an ideal. By hypothesis $I = (x_1, \ldots, x_m)$, and each $x_j$ lies in some $\mathfrak{a}_{n_j}$; with $N = \max_j n_j$ all the generators lie in $\mathfrak{a}_N$, so $I \subseteq \mathfrak{a}_N \subseteq I$ and the chain is constant from $N$ on. $\square$
+(c) $\Rightarrow$ (a): let $\mathrm{A}_1 \subseteq \mathrm{A}_2 \subseteq \cdots$ be an ascending chain and put $I = \bigcup_n \mathrm{A}_n$. The union is an ideal: it is closed under addition because two elements lie in some common $\mathrm{A}_n$, and under multiplication by $R$ because each $\mathrm{A}_n$ is an ideal. By hypothesis $I = (x_1, \ldots, x_m)$, and each $x_j$ lies in some $\mathrm{A}_{n_j}$; with $N = \max_j n_j$ all the generators lie in $\mathrm{A}_N$, so $I \subseteq \mathrm{A}_N \subseteq I$ and the chain is constant from $N$ on.
 
 **Examples.**
 
@@ -57,7 +57,7 @@ The definition can be recast in two ways that are used constantly.
 **Definition.** A commutative ring $R$ is **Artinian** if every descending chain of ideals
 
 $$
-\mathfrak{a}_1 \supseteq \mathfrak{a}_2 \supseteq \mathfrak{a}_3 \supseteq \cdots
+\mathrm{A}_1 \supseteq \mathrm{A}_2 \supseteq \mathrm{A}_3 \supseteq \cdots
 $$
 
 stabilises. Equivalently, by the same argument as above with inclusions reversed, every nonempty set of ideals has a minimal element under inclusion. This is the **descending chain condition**, abbreviated DCC.
@@ -72,7 +72,7 @@ $$
 
 stabilises; that is, there is $n \geq 1$ with $x^n = x^{n+1} y$ for some $y \in R$.
 
-**Proof.** The chain is descending, so it stabilises by the DCC; equality $(x^n) = (x^{n+1})$ then exhibits $y$ with $x^n = x^{n+1}y$. $\square$
+**Proof.** The chain is descending, so it stabilises by the DCC; equality $(x^n) = (x^{n+1})$ then exhibits $y$ with $x^n = x^{n+1}y$.
 
 **Examples.**
 
@@ -104,11 +104,11 @@ That the length is well defined is the content of the Jordan–Hölder theorem, 
 
 **Theorem (Jordan–Hölder).** If $R$ has a composition series, then any two composition series of $R$ have the same length, and every strictly decreasing chain of ideals can be refined to a composition series.
 
-**Proof sketch.** The argument of Zassenhaus and Schreier is transcribed from groups to ideals: for two factor chains one forms the "butterfly" intersections $I_i \cap J_j$ and shows the factor quotients of a common refinement are isomorphic up to order, using the isomorphism $(A \cap B)/(A \cap C) \cong (C + (A \cap B))/(C + (A \cap C))$ for $C \subseteq B \subseteq A$. $\square$
+**Proof sketch.** The argument of Zassenhaus and Schreier is transcribed from groups to ideals: for two factor chains one forms the "butterfly" intersections $I_i \cap J_j$ and shows the factor quotients of a common refinement are isomorphic up to order, using the isomorphism $(A \cap B)/(A \cap C) \cong (C + (A \cap B))/(C + (A \cap C))$ for $C \subseteq B \subseteq A$.
 
 **Theorem.** Let $R$ be a commutative ring. Then $R$ has finite length if and only if it is both Noetherian and Artinian.
 
-**Proof sketch.** If $R$ is Noetherian and Artinian, build a chain $R = I_0 \supsetneq I_1 \supsetneq \cdots$ by choosing $I_{i+1}$ maximal among the proper ideals of $I_i$; this is possible by the ascending chain condition, and the descending chain condition forces the process to terminate at $(0)$ after finitely many steps, producing a composition series. Conversely, a composition series of length $\ell$ has at most $\ell + 1$ terms, and every chain of ideals can be refined to one of length at most $\ell$; between two ideals of such a chain only finitely many distinct intermediate ideals can occur, so both chain conditions hold. $\square$
+**Proof sketch.** If $R$ is Noetherian and Artinian, build a chain $R = I_0 \supsetneq I_1 \supsetneq \cdots$ by choosing $I_{i+1}$ maximal among the proper ideals of $I_i$; this is possible by the ascending chain condition, and the descending chain condition forces the process to terminate at $(0)$ after finitely many steps, producing a composition series. Conversely, a composition series of length $\ell$ has at most $\ell + 1$ terms, and every chain of ideals can be refined to one of length at most $\ell$; between two ideals of such a chain only finitely many distinct intermediate ideals can occur, so both chain conditions hold.
 
 Thus for rings of finite length the two chain conditions coincide, and the length is a numerical invariant. A field has length $1$, the ring $\mathbb{Z}/p^n\mathbb{Z}$ has length $n$, and the polynomial ring $k[x]$ has infinite length.
 
@@ -128,13 +128,13 @@ Thus for rings of finite length the two chain conditions coincide, and the lengt
 
 **Proof.** (a) The ideals of $R/I$ correspond bijectively to the ideals of $R$ containing $I$, and an ascending chain of the latter is an ascending chain of ideals of $R$, hence stabilises.
 
-(b) Let $\mathfrak{b}_1 \subseteq \mathfrak{b}_2 \subseteq \cdots$ be an ascending chain of ideals of $S^{-1}R$, and put $\mathfrak{a}_n = \iota^{-1}(\mathfrak{b}_n)$, where $\iota : R \to S^{-1}R$ is the structure map. These are ideals of $R$ forming an ascending chain, so $\mathfrak{a}_n = \mathfrak{a}_N$ for $n \geq N$. By the ideal correspondence of *Localization and the Fraction Field*, $S^{-1}\mathfrak{a}_n = \mathfrak{b}_n$, so $\mathfrak{b}_n = S^{-1}\mathfrak{a}_n = S^{-1}\mathfrak{a}_N = \mathfrak{b}_N$ for $n \geq N$.
+(b) Let $\mathrm{B}_1 \subseteq \mathrm{B}_2 \subseteq \cdots$ be an ascending chain of ideals of $S^{-1}R$, and put $\mathrm{A}_n = \iota^{-1}(\mathrm{B}_n)$, where $\iota : R \to S^{-1}R$ is the structure map. These are ideals of $R$ forming an ascending chain, so $\mathrm{A}_n = \mathrm{A}_N$ for $n \geq N$. By the ideal correspondence of *Localization and the Fraction Field*, $S^{-1}\mathrm{A}_n = \mathrm{B}_n$, so $\mathrm{B}_n = S^{-1}\mathrm{A}_n = S^{-1}\mathrm{A}_N = \mathrm{B}_N$ for $n \geq N$.
 
-(c) The ideals of a product $A \times B$ are of the form $I \times J$ with $I$ an ideal of $A$ and $J$ an ideal of $B$, and a chain in the product projects to chains in the factors. If both factors are Noetherian, a chain in $A \times B$ stabilises since both projections do, using that an ideal of a product is determined by its two projections. Conversely if $A \times B$ is Noetherian then $A$ and $B$ are quotients of it, hence Noetherian by (a). $\square$
+(c) The ideals of a product $A \times B$ are of the form $I \times J$ with $I$ an ideal of $A$ and $J$ an ideal of $B$, and a chain in the product projects to chains in the factors. If both factors are Noetherian, a chain in $A \times B$ stabilises since both projections do, using that an ideal of a product is determined by its two projections. Conversely if $A \times B$ is Noetherian then $A$ and $B$ are quotients of it, hence Noetherian by (a).
 
 **Theorem (finitely generated extensions).** If $R$ is Noetherian and $A$ is a finitely generated commutative $R$-algebra, then $A$ is Noetherian.
 
-**Proof.** By definition $A \cong R[x_1, \ldots, x_n]/I$ for some $n$ and some ideal $I$. The polynomial ring $R[x_1, \ldots, x_n]$ is Noetherian by the Hilbert basis theorem iterated $n$ times, and a quotient of a Noetherian ring is Noetherian by (a). $\square$
+**Proof.** By definition $A \cong R[x_1, \ldots, x_n]/I$ for some $n$ and some ideal $I$. The polynomial ring $R[x_1, \ldots, x_n]$ is Noetherian by the Hilbert basis theorem iterated $n$ times, and a quotient of a Noetherian ring is Noetherian by (a).
 
 ### The Hilbert Basis Theorem
 
@@ -144,7 +144,7 @@ Thus for rings of finite length the two chain conditions coincide, and the lengt
 
 Each $L_n$ for $n \leq N$ is finitely generated, say $L_n = (a_{n,1}, \ldots, a_{n,k_n})$. Choose $f_{n,j} \in I$ of degree $n$ with leading coefficient $a_{n,j}$, and put $J = (f_{n,j} : 0 \leq n \leq N,\ 1 \leq j \leq k_n) \subseteq I$. We claim $J = I$.
 
-Let $f \in I$ be nonzero, of degree $d$, with leading coefficient $a$. If $d \leq N$, then $a \in L_d$, so $a = \sum_j c_j a_{d,j}$ with $c_j \in R$, and $f - \sum_j c_j f_{d,j}$ has degree strictly less than $d$ and still lies in $I$. If $d > N$, then $a \in L_d = L_N$, so $a = \sum_j c_j a_{N,j}$ and $f - \sum_j c_j x^{d-N} f_{N,j}$ lies in $I$ and has degree strictly less than $d$. Repeating this reduction finitely many times expresses $f$ as an element of $J$. Hence $I = J$ is finitely generated, and $R[x]$ is Noetherian. $\square$
+Let $f \in I$ be nonzero, of degree $d$, with leading coefficient $a$. If $d \leq N$, then $a \in L_d$, so $a = \sum_j c_j a_{d,j}$ with $c_j \in R$, and $f - \sum_j c_j f_{d,j}$ has degree strictly less than $d$ and still lies in $I$. If $d > N$, then $a \in L_d = L_N$, so $a = \sum_j c_j a_{N,j}$ and $f - \sum_j c_j x^{d-N} f_{N,j}$ lies in $I$ and has degree strictly less than $d$. Repeating this reduction finitely many times expresses $f$ as an element of $J$. Hence $I = J$ is finitely generated, and $R[x]$ is Noetherian.
 
 **Corollary.** If $R$ is Noetherian, then $R[x_1, \ldots, x_n]$ is Noetherian; more generally every finitely generated commutative $R$-algebra is Noetherian.
 
@@ -158,7 +158,7 @@ The Hilbert basis theorem is the first instance of a general principle: finite g
 
 **Theorem.** Let $R = \bigoplus_{n \geq 0} R_n$ be a graded commutative ring with $R_0$ Noetherian and $R$ generated as an $R_0$-algebra by finitely many homogeneous elements of positive degree. Then $R$ is Noetherian.
 
-**Proof.** A finitely generated graded algebra over $R_0$ is a quotient of a polynomial ring $R_0[x_1, \ldots, x_n]$ with the standard grading, which is Noetherian by the Hilbert basis theorem; a quotient of a Noetherian ring is Noetherian. $\square$
+**Proof.** A finitely generated graded algebra over $R_0$ is a quotient of a polynomial ring $R_0[x_1, \ldots, x_n]$ with the standard grading, which is Noetherian by the Hilbert basis theorem; a quotient of a Noetherian ring is Noetherian.
 
 **Corollary.** If $k$ is a field, the ring $k[x_1, \ldots, x_n]$ with its standard grading is Noetherian, and so is any quotient of it by a homogeneous ideal. Consequently a graded $k$-algebra generated by finitely many elements of positive degree has the ascending chain condition on homogeneous ideals.
 
@@ -183,20 +183,20 @@ It is an ideal because if $x^m = 0$ and $y^n = 0$ then $(x + y)^{m+n} = 0$ by th
 **Definition.** The **Jacobson radical** of $R$ is the intersection of all maximal ideals,
 
 $$
-\operatorname{Jac}(R) = \bigcap_{\mathfrak{m} \text{ maximal}} \mathfrak{m}.
+\operatorname{Jac}(R) = \bigcap_{\mathrm{M} \text{ maximal}} \mathrm{M}.
 $$
 
 **Theorem (Akizuki–Hopkins; the Hopkins–Levitzki theorem).** Every Artinian commutative ring is Noetherian.
 
-**Proof sketch.** Let $R$ be Artinian, and put $\mathfrak{N} = \operatorname{nil}(R)$.
+**Proof sketch.** Let $R$ be Artinian, and put $\mathrm{N} = \operatorname{nil}(R)$.
 
-The first step is that every prime ideal of $R$ is maximal. If $\mathfrak{p}$ is prime and $R/\mathfrak{p}$ is not a field, then $R/\mathfrak{p}$ is an Artinian domain that is not a field, which is impossible: in an Artinian domain every nonzero element $a$ generates a descending chain $(a) \supseteq (a^2) \supseteq \cdots$, which stabilises, so $a^n = a^{n+1} b$ for some $n$ and some $b$, and cancellation of $a^n \neq 0$ in the domain gives $1 = ab$.
+The first step is that every prime ideal of $R$ is maximal. If $\mathrm{P}$ is prime and $R/\mathrm{P}$ is not a field, then $R/\mathrm{P}$ is an Artinian domain that is not a field, which is impossible: in an Artinian domain every nonzero element $a$ generates a descending chain $(a) \supseteq (a^2) \supseteq \cdots$, which stabilises, so $a^n = a^{n+1} b$ for some $n$ and some $b$, and cancellation of $a^n \neq 0$ in the domain gives $1 = ab$.
 
-The second step is that there are only finitely many maximal ideals. If $\mathfrak{m}_1, \mathfrak{m}_2, \ldots$ were infinitely many distinct maximal ideals, the products $\mathfrak{m}_1 \supseteq \mathfrak{m}_1\mathfrak{m}_2 \supseteq \mathfrak{m}_1\mathfrak{m}_2\mathfrak{m}_3 \supseteq \cdots$ form a descending chain; if it stabilised at stage $n$, then $\mathfrak{m}_1 \cdots \mathfrak{m}_n = \mathfrak{m}_1 \cdots \mathfrak{m}_{n+1}$ and, since the $\mathfrak{m}_i$ are distinct maximal ideals, they are pairwise comaximal, so $\mathfrak{m}_1 \cdots \mathfrak{m}_n + \mathfrak{m}_{n+1} = R$, and multiplying the stabilised equality by an element of $R$ shows $\mathfrak{m}_1 \cdots \mathfrak{m}_n \subseteq \mathfrak{m}_{n+1}$, forcing $\mathfrak{m}_1 \cdots \mathfrak{m}_n = \mathfrak{m}_1\cdots\mathfrak{m}_n \cap \mathfrak{m}_{n+1}$ and hence $\mathfrak{m}_1 \cdots \mathfrak{m}_n \subseteq \mathfrak{m}_{n+1}$, which contradicts comaximality. So there are finitely many, say $\mathfrak{m}_1, \ldots, \mathfrak{m}_r$.
+The second step is that there are only finitely many maximal ideals. If $\mathrm{M}_1, \mathrm{M}_2, \ldots$ were infinitely many distinct maximal ideals, the products $\mathrm{M}_1 \supseteq \mathrm{M}_1\mathrm{M}_2 \supseteq \mathrm{M}_1\mathrm{M}_2\mathrm{M}_3 \supseteq \cdots$ form a descending chain; if it stabilised at stage $n$, then $\mathrm{M}_1 \cdots \mathrm{M}_n = \mathrm{M}_1 \cdots \mathrm{M}_{n+1}$ and, since the $\mathrm{M}_i$ are distinct maximal ideals, they are pairwise comaximal, so $\mathrm{M}_1 \cdots \mathrm{M}_n + \mathrm{M}_{n+1} = R$, and multiplying the stabilised equality by an element of $R$ shows $\mathrm{M}_1 \cdots \mathrm{M}_n \subseteq \mathrm{M}_{n+1}$, forcing $\mathrm{M}_1 \cdots \mathrm{M}_n = \mathrm{M}_1\cdots\mathrm{M}_n \cap \mathrm{M}_{n+1}$ and hence $\mathrm{M}_1 \cdots \mathrm{M}_n \subseteq \mathrm{M}_{n+1}$, which contradicts comaximality. So there are finitely many, say $\mathrm{M}_1, \ldots, \mathrm{M}_r$.
 
-The third step is that $\mathfrak{N}$ is nilpotent. The descending chain $\mathfrak{N} \supseteq \mathfrak{N}^2 \supseteq \mathfrak{N}^3 \supseteq \cdots$ stabilises, say $\mathfrak{N}^n = \mathfrak{N}^{n+1} = \cdots = \mathfrak{I}$. If $\mathfrak{I} \neq (0)$, consider the nonempty set of ideals $\mathfrak{b}$ with $\mathfrak{I}\mathfrak{b} \neq (0)$ and choose one minimal by the descending chain condition. Since $\mathfrak{I}\mathfrak{b} \neq (0)$ there is $x \in \mathfrak{b}$ with $x\mathfrak{I} \neq (0)$; then $x\mathfrak{I}$ is an ideal contained in $\mathfrak{b}$ with $x\mathfrak{I} \neq (0)$, so minimality gives $\mathfrak{b} = (x)$. Also $x\mathfrak{I}$ is an ideal with $(x\mathfrak{I})\mathfrak{I} = x\mathfrak{I}^2 = x\mathfrak{I} \neq (0)$, so by minimality $(x) \subseteq x\mathfrak{I}$; hence $x = xa$ for some $a \in \mathfrak{I}$, that is, $x(1 - a) = 0$. Now $\mathfrak{I} = \mathfrak{N}^n \subseteq \mathfrak{N}$, so $a$ is nilpotent, and $1 - a$ is then a unit, because $(1-a)(1 + a + \cdots + a^{m-1}) = 1 - a^m = 1$ for $m$ large. Hence $x = 0$, contradicting $x\mathfrak{I} \neq (0)$. So $\mathfrak{I} = (0)$, and $\mathfrak{N}^n = (0)$.
+The third step is that $\mathrm{N}$ is nilpotent. The descending chain $\mathrm{N} \supseteq \mathrm{N}^2 \supseteq \mathrm{N}^3 \supseteq \cdots$ stabilises, say $\mathrm{N}^n = \mathrm{N}^{n+1} = \cdots = \mathrm{I}$. If $\mathrm{I} \neq (0)$, consider the nonempty set of ideals $\mathrm{B}$ with $\mathrm{I}\mathrm{B} \neq (0)$ and choose one minimal by the descending chain condition. Since $\mathrm{I}\mathrm{B} \neq (0)$ there is $x \in \mathrm{B}$ with $x\mathrm{I} \neq (0)$; then $x\mathrm{I}$ is an ideal contained in $\mathrm{B}$ with $x\mathrm{I} \neq (0)$, so minimality gives $\mathrm{B} = (x)$. Also $x\mathrm{I}$ is an ideal with $(x\mathrm{I})\mathrm{I} = x\mathrm{I}^2 = x\mathrm{I} \neq (0)$, so by minimality $(x) \subseteq x\mathrm{I}$; hence $x = xa$ for some $a \in \mathrm{I}$, that is, $x(1 - a) = 0$. Now $\mathrm{I} = \mathrm{N}^n \subseteq \mathrm{N}$, so $a$ is nilpotent, and $1 - a$ is then a unit, because $(1-a)(1 + a + \cdots + a^{m-1}) = 1 - a^m = 1$ for $m$ large. Hence $x = 0$, contradicting $x\mathrm{I} \neq (0)$. So $\mathrm{I} = (0)$, and $\mathrm{N}^n = (0)$.
 
-The fourth step concludes. The chain $R \supseteq \mathfrak{N} \supseteq \mathfrak{N}^2 \supseteq \cdots \supseteq \mathfrak{N}^n = (0)$ has factors $\mathfrak{N}^i/\mathfrak{N}^{i+1}$, each annihilated by $\mathfrak{N}$ and hence an ideal of the reduced Artinian ring $R/\mathfrak{N}$. A reduced Artinian ring is a finite product of fields — its finitely many minimal primes are maximal, pairwise comaximal and have zero intersection — and an ideal of a finite product of fields that satisfies the descending chain condition is a finite direct sum of copies of those fields, hence has a composition series. Concatenating composition series along the chain exhibits a composition series of $R$, so $R$ has finite length and is Noetherian by the theorem on finite length above. $\square$
+The fourth step concludes. The chain $R \supseteq \mathrm{N} \supseteq \mathrm{N}^2 \supseteq \cdots \supseteq \mathrm{N}^n = (0)$ has factors $\mathrm{N}^i/\mathrm{N}^{i+1}$, each annihilated by $\mathrm{N}$ and hence an ideal of the reduced Artinian ring $R/\mathrm{N}$. A reduced Artinian ring is a finite product of fields — its finitely many minimal primes are maximal, pairwise comaximal and have zero intersection — and an ideal of a finite product of fields that satisfies the descending chain condition is a finite direct sum of copies of those fields, hence has a composition series. Concatenating composition series along the chain exhibits a composition series of $R$, so $R$ has finite length and is Noetherian by the theorem on finite length above.
 
 **Corollary.** A commutative ring is Artinian if and only if it is Noetherian of Krull dimension zero. Consequently an Artinian ring has finitely many prime ideals, all of them maximal, and its nilradical is nilpotent.
 
@@ -206,21 +206,21 @@ Here the Krull dimension of a ring is the supremum of the lengths of chains of p
 
 The Akizuki–Hopkins theorem reduces the study of Artinian rings to that of Noetherian rings of dimension zero, and these have a complete structure theory.
 
-**Theorem.** Let $R$ be a commutative Artinian ring. Then $R$ has finitely many maximal ideals $\mathfrak{m}_1, \ldots, \mathfrak{m}_r$, the ideals $\mathfrak{m}_1, \ldots, \mathfrak{m}_r$ are pairwise comaximal, and the natural map
+**Theorem.** Let $R$ be a commutative Artinian ring. Then $R$ has finitely many maximal ideals $\mathrm{M}_1, \ldots, \mathrm{M}_r$, the ideals $\mathrm{M}_1, \ldots, \mathrm{M}_r$ are pairwise comaximal, and the natural map
 
 $$
-R \longrightarrow R/\mathfrak{m}_1^{n_1} \times \cdots \times R/\mathfrak{m}_r^{n_r}
+R \longrightarrow R/\mathrm{M}_1^{n_1} \times \cdots \times R/\mathrm{M}_r^{n_r}
 $$
 
-is an isomorphism for every $n_i \geq 1$ with $\mathfrak{N}^{n_i} \subseteq \mathfrak{m}_i^{n_i}$; in particular
+is an isomorphism for every $n_i \geq 1$ with $\mathrm{N}^{n_i} \subseteq \mathrm{M}_i^{n_i}$; in particular
 
 $$
-R \;\cong\; R_{\mathfrak{m}_1} \times \cdots \times R_{\mathfrak{m}_r},
+R \;\cong\; R_{\mathrm{M}_1} \times \cdots \times R_{\mathrm{M}_r},
 $$
 
-a finite product of Artinian local rings, where $R_{\mathfrak{m}_i}$ is the localization of $R$ at $\mathfrak{m}_i$.
+a finite product of Artinian local rings, where $R_{\mathrm{M}_i}$ is the localization of $R$ at $\mathrm{M}_i$.
 
-**Proof sketch.** By the Akizuki–Hopkins proof there are finitely many maximal ideals and $\mathfrak{N}^{n} = (0)$ for some $n$. Distinct maximal ideals are comaximal, and the Chinese remainder theorem gives $R/\mathfrak{N}^n \cong \prod_i R/\mathfrak{m}_i^{n}$ up to the multiplicities that $\mathfrak{N}^n = (0)$ forces; each factor is a local Artinian ring with maximal ideal the image of $\mathfrak{m}_i$. Finally, since every element outside $\mathfrak{m}_i$ is invertible in $R_{\mathfrak{m}_i}$ and since only the powers of $\mathfrak{m}_i$ survive in the corresponding factor, $R_{\mathfrak{m}_i} \cong R/\mathfrak{m}_i^{N}$ for $N$ large enough. $\square$
+**Proof sketch.** By the Akizuki–Hopkins proof there are finitely many maximal ideals and $\mathrm{N}^{n} = (0)$ for some $n$. Distinct maximal ideals are comaximal, and the Chinese remainder theorem gives $R/\mathrm{N}^n \cong \prod_i R/\mathrm{M}_i^{n}$ up to the multiplicities that $\mathrm{N}^n = (0)$ forces; each factor is a local Artinian ring with maximal ideal the image of $\mathrm{M}_i$. Finally, since every element outside $\mathrm{M}_i$ is invertible in $R_{\mathrm{M}_i}$ and since only the powers of $\mathrm{M}_i$ survive in the corresponding factor, $R_{\mathrm{M}_i} \cong R/\mathrm{M}_i^{N}$ for $N$ large enough.
 
 **Corollary.** A commutative Artinian ring is local if and only if its nilradical is its unique maximal ideal. A reduced Artinian ring — one with $\operatorname{nil}(R) = (0)$ — is a finite product of fields.
 
@@ -240,7 +240,7 @@ The Artinian rings are the rings of Krull dimension zero, and for Noetherian rin
 
 **Theorem.** A Noetherian commutative ring of Krull dimension zero is Artinian.
 
-**Proof.** Let $R$ be Noetherian of dimension zero. Every prime ideal is maximal, and there are finitely many of them: if there were infinitely many, choose $\mathfrak{p}_1, \mathfrak{p}_2, \ldots$ distinct, and consider the chain of radical-type ideals $\mathfrak{p}_1 \supseteq \mathfrak{p}_1 \cap \mathfrak{p}_2 \supseteq \cdots$; since $R$ is Noetherian, the ideal $I_n = \mathfrak{p}_1 \cap \cdots \cap \mathfrak{p}_n$ stabilises, giving $I_n \subseteq \mathfrak{p}_{n+1}$; but then $\mathfrak{p}_{n+1}$ contains some $\mathfrak{p}_i$ with $i \leq n$, and since both are maximal, $\mathfrak{p}_{n+1} = \mathfrak{p}_i$, a contradiction. So there are finitely many maximal ideals $\mathfrak{m}_1, \ldots, \mathfrak{m}_r$. For each $i$ the localization $R_{\mathfrak{m}_i}$ is a Noetherian local ring of dimension zero; its maximal ideal is nilpotent, since a noetherian local ring of dimension zero has nilpotent maximal ideal by the principal ideal theorem. Hence $\mathfrak{m}_i^{n_i} \subseteq \mathfrak{m}_i R_{\mathfrak{m}_i}$ is zero in $R_{\mathfrak{m}_i}$, and the kernel of $R \to \prod_i R_{\mathfrak{m}_i}$ is contained in every maximal ideal, hence in $\operatorname{Jac}(R)$; but that kernel is $\operatorname{nil}(R)$, which is the intersection of the maximal ideals, and it is nilpotent, so $R \cong \prod_i R_{\mathfrak{m}_i}$ is a finite product of Artinian local rings, hence Artinian. $\square$
+**Proof.** Let $R$ be Noetherian of dimension zero. Every prime ideal is maximal, and there are finitely many of them: if there were infinitely many, choose $\mathrm{P}_1, \mathrm{P}_2, \ldots$ distinct, and consider the chain of radical-type ideals $\mathrm{P}_1 \supseteq \mathrm{P}_1 \cap \mathrm{P}_2 \supseteq \cdots$; since $R$ is Noetherian, the ideal $I_n = \mathrm{P}_1 \cap \cdots \cap \mathrm{P}_n$ stabilises, giving $I_n \subseteq \mathrm{P}_{n+1}$; but then $\mathrm{P}_{n+1}$ contains some $\mathrm{P}_i$ with $i \leq n$, and since both are maximal, $\mathrm{P}_{n+1} = \mathrm{P}_i$, a contradiction. So there are finitely many maximal ideals $\mathrm{M}_1, \ldots, \mathrm{M}_r$. For each $i$ the localization $R_{\mathrm{M}_i}$ is a Noetherian local ring of dimension zero; its maximal ideal is nilpotent, since a noetherian local ring of dimension zero has nilpotent maximal ideal by the principal ideal theorem. Hence $\mathrm{M}_i^{n_i} \subseteq \mathrm{M}_i R_{\mathrm{M}_i}$ is zero in $R_{\mathrm{M}_i}$, and the kernel of $R \to \prod_i R_{\mathrm{M}_i}$ is contained in every maximal ideal, hence in $\operatorname{Jac}(R)$; but that kernel is $\operatorname{nil}(R)$, which is the intersection of the maximal ideals, and it is nilpotent, so $R \cong \prod_i R_{\mathrm{M}_i}$ is a finite product of Artinian local rings, hence Artinian.
 
 **Corollary.** For a Noetherian commutative ring, Artinian is equivalent to Krull dimension zero, equivalently to every prime ideal being maximal.
 
@@ -273,15 +273,15 @@ The intermediate notion is finite length: a ring has a composition series exactl
 | Symbol | Meaning |
 |---|---|
 | $R$ | Commutative ring with identity $1 \neq 0$ |
-| $\mathfrak{a}, \mathfrak{b}, I, J$ | Ideals of $R$ |
-| $\mathfrak{p}, \mathfrak{m}$ | Prime ideal, maximal ideal |
+| $\mathrm{A}, \mathrm{B}, I, J$ | Ideals of $R$ |
+| $\mathrm{P}, \mathrm{M}$ | Prime ideal, maximal ideal |
 | $(a_1, \ldots, a_n)$ | Ideal generated by the $a_i$ |
 | ACC | Ascending chain condition |
 | DCC | Descending chain condition |
 | $\operatorname{nil}(R)$ | Nilradical, the ideal of nilpotent elements |
 | $\operatorname{Jac}(R)$ | Jacobson radical, the intersection of the maximal ideals |
 | $R/I$ | Quotient ring |
-| $S^{-1}R$, $R_{\mathfrak{m}}$ | Localization, localization at a maximal ideal |
+| $S^{-1}R$, $R_{\mathrm{M}}$ | Localization, localization at a maximal ideal |
 | $R[x_1, \ldots, x_n]$ | Polynomial ring, Noetherian by the Hilbert basis theorem |
 | $L_n$ | Ideal of leading coefficients in degree $n$ |
 | $I_0 \supsetneq \cdots \supsetneq I_\ell$ | Composition series of length $\ell$ |

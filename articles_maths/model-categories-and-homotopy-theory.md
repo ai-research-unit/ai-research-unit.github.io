@@ -37,7 +37,7 @@ A **model category** is a bicomplete category equipped with a model structure. T
 
 **Theorem (factorisation).** Let $\mathcal{I}$ be a set of morphisms of a bicomplete category $\mathcal{C}$ whose domains are small, in the sense that the representable functors commute with sufficiently long transfinite compositions. Then every morphism of $\mathcal{C}$ factors as a morphism in the class of transfinite composites of pushouts of elements of $\mathcal{I}$ followed by a morphism having the right lifting property with respect to $\mathcal{I}$.
 
-*Proof sketch.* Given $f : X \to Y$, define a transfinite sequence $X = X_0 \to X_1 \to \cdots$ by pushing out, at each stage, over all commutative squares from elements of $\mathcal{I}$ into the current map, and take the colimit; smallness of the domains makes the colimit-detection work, and the resulting map $X_\infty \to Y$ has the right lifting property by construction, while $X \to X_\infty$ is a transfinite composite of pushouts. $\square$
+*Proof sketch.* Given $f : X \to Y$, define a transfinite sequence $X = X_0 \to X_1 \to \cdots$ by pushing out, at each stage, over all commutative squares from elements of $\mathcal{I}$ into the current map, and take the colimit; smallness of the domains makes the colimit-detection work, and the resulting map $X_\infty \to Y$ has the right lifting property by construction, while $X \to X_\infty$ is a transfinite composite of pushouts.
 
 **Corollary.** Every model category has functorial factorisations, and the classes $\mathcal{C}\mathrm{of}$ and $\mathcal{F}\mathrm{ib}$ are determined by each other through the lifting property and the factorisation axiom.
 
@@ -57,7 +57,7 @@ $$
 
 the homotopy classes of morphisms between a cofibrant replacement of $X$ and a fibrant replacement of $Y$, where the homotopy relation is defined through cylinder and path objects.
 
-*Proof sketch.* Cofibrant and fibrant replacements exist by the factorisation axiom, weak equivalences between cofibrant (or fibrant) objects are the homotopy equivalences of a cylinder-object deformation, and the quotient of $\operatorname{Hom}_{\mathcal{C}}(QX,RY)$ by this relation is a category in which weak equivalences become isomorphisms; the universal property of the localisation shows it is $\operatorname{Ho}(\mathcal{C})$. $\square$
+*Proof sketch.* Cofibrant and fibrant replacements exist by the factorisation axiom, weak equivalences between cofibrant (or fibrant) objects are the homotopy equivalences of a cylinder-object deformation, and the quotient of $\operatorname{Hom}_{\mathcal{C}}(QX,RY)$ by this relation is a category in which weak equivalences become isomorphisms; the universal property of the localisation shows it is $\operatorname{Ho}(\mathcal{C})$.
 
 **Definition.** Two morphisms $f, g : X \to Y$ between cofibrant-fibrant objects are **left homotopic** if they factor through a **cylinder object** $X \sqcup X \to \mathrm{Cyl}(X) \xrightarrow{\sim} X$ and **right homotopic** if they factor through a **path object** $Y \to \mathrm{Path}(Y) \xrightarrow{\sim} Y\times Y$; for cofibrant-fibrant objects the two relations coincide and are an equivalence relation.
 
@@ -76,7 +76,7 @@ the homotopy classes of morphisms between a cofibrant replacement of $X$ and a f
 
 **Theorem (homotopy invariance).** A weak equivalence of diagrams induces a weak equivalence of homotopy colimits and of homotopy limits, whereas the ordinary colimit and limit are not homotopy invariant.
 
-*Proof.* Derived functors of a Quillen functor preserve weak equivalences between cofibrant (respectively fibrant) objects by Ken Brown's lemma, and the replacement makes the diagram cofibrant (respectively fibrant). $\square$
+*Proof.* Derived functors of a Quillen functor preserve weak equivalences between cofibrant (respectively fibrant) objects by Ken Brown's lemma, and the replacement makes the diagram cofibrant (respectively fibrant).
 
 ## Quillen Functors and Derived Functors
 
@@ -86,7 +86,7 @@ the homotopy classes of morphisms between a cofibrant replacement of $X$ and a f
 
 **Theorem (Ken Brown's lemma).** If $F$ is left Quillen then $F$ preserves weak equivalences between cofibrant objects; if $G$ is right Quillen it preserves weak equivalences between fibrant objects.
 
-*Proof.* A weak equivalence between cofibrant objects factors as an acyclic cofibration with a retraction, and $F$ preserves acyclic cofibrations and retracts; the details are the standard factorisation argument. $\square$
+*Proof.* A weak equivalence between cofibrant objects factors as an acyclic cofibration with a retraction, and $F$ preserves acyclic cofibrations and retracts; the details are the standard factorisation argument.
 
 **Definition (total derived functors).** For a Quillen adjunction $F \dashv G$, the **total left derived functor** $\mathbb{L}F : \operatorname{Ho}(\mathcal{C}) \to \operatorname{Ho}(\mathcal{D})$ is defined on objects by $\mathbb{L}F(X) = F(QX)$ and the **total right derived functor** $\mathbb{R}G(Y) = G(RY)$; by Ken Brown's lemma these are well defined and the adjunction descends to an adjunction $\mathbb{L}F \dashv \mathbb{R}G$ between the homotopy categories.
 
@@ -108,7 +108,7 @@ and $\operatorname{Sing}$ carries the CW complexes to the Kan complexes.
 
 **Theorem (Dold–Kan correspondence).** For a commutative ring $R$ with $1 \neq 0$, there is an equivalence of categories between simplicial $R$-modules and nonnegatively graded chain complexes of $R$-modules, under which the homotopy groups of a simplicial module correspond to the homology of the associated complex, and the **normalised** chain complex is obtained by quotienting by the degenerate simplices.
 
-*Proof sketch.* The functor sends a simplicial module $M_\bullet$ to the complex with $C_n = M_n / (\text{degenerate } n\text{-simplices})$ and boundary $\sum_i (-1)^i \partial_i$; the inverse is the "Dold–Kan" functor and the two are quasi-inverse. $\square$
+*Proof sketch.* The functor sends a simplicial module $M_\bullet$ to the complex with $C_n = M_n / (\text{degenerate } n\text{-simplices})$ and boundary $\sum_i (-1)^i \partial_i$; the inverse is the "Dold–Kan" functor and the two are quasi-inverse.
 
 **Corollary.** The homotopy groups of a simplicial abelian group agree with the homology of its normalised chain complex, and the singular chains of *Simplicial and Singular Homology* are the normalised chains of the simplicial module $\operatorname{Sing}(X) \otimes R$. This identifies the singular complex with a simplicial object and is the entry point of the simplicial methods in the sheaf theory of articles 16–21.
 
@@ -124,7 +124,7 @@ and $\operatorname{Sing}$ carries the CW complexes to the Kan complexes.
 
 ### Monoidal and Enriched Structure
 
-**Definition.** A **monoidal model category** is a model category with a symmetric monoidal structure, a unit, and the **pushout-product axiom**: for a cofibration $i$ and a cofibration $j$ the induced map $i\square j$ on the pushout-product is a cofibration, acyclic if either $i$ or $j$ is. A **simplicial model category** is a model category enriched over simplicial sets with a compatible action, so that the mapping objects $\operatorname{Map}(X,Y)$ are simplicial sets and the axioms of Quillen's homotopical algebra hold.
+**Definition.** A **monoidal model category** is a model category with a symmetric monoidal structure, a unit, and the **pushout-product axiom**: for a cofibration $i$ and a cofibration $j$ the induced map $i j$ on the pushout-product is a cofibration, acyclic if either $i$ or $j$ is. A **simplicial model category** is a model category enriched over simplicial sets with a compatible action, so that the mapping objects $\operatorname{Map}(X,Y)$ are simplicial sets and the axioms of Quillen's homotopical algebra hold.
 
 **Theorem.** Let $\mathcal{C}$ be a monoidal model category.
 
@@ -132,7 +132,7 @@ and $\operatorname{Sing}$ carries the CW complexes to the Kan complexes.
 2. If $\mathcal{C}$ is simplicial, then for cofibrant $X$ and fibrant $Y$ the simplicial set $\operatorname{Map}(X,Y)$ has homotopy groups computing the homotopy classes of maps and the higher homotopies, and $\pi_0\operatorname{Map}(X,Y)$ is the morphism set of the homotopy category.
 3. In a simplicial model category one may form the **simplicial localisation** of Dwyer and Kan, an $\infty$-category whose homotopy category is $\operatorname{Ho}(\mathcal{C})$ and whose mapping spaces are the $\operatorname{Map}(X,Y)$; this construction is the bridge to the higher-categorical formulation, and Quillen-equivalent model categories present equivalent $\infty$-categories, so the homotopy theory is an invariant of the underlying homotopy theory rather than of the chosen model structure.
 
-*Pro.* (1) the pushout-product axiom makes the tensor product of cofibrant objects homotopy invariant and the derived tensor product well defined on the homotopy category, and the coherence of the associativity is the content of the monoidal structure on the homotopy category; the higher coherence for monoids requires the simplicial or $\infty$-categorical enrichment. (2) is Quillen's axiom SM7 and its consequences, computing the homotopy classes of maps as $\pi_0$ of the function complex. (3) is the Dwyer–Kan simplicial localisation; the proof of the invariance is the theorem that the simplicial localisation depends only on the homotopy theory, quoted as standard and expounded. $\square$
+*Pro.* (1) the pushout-product axiom makes the tensor product of cofibrant objects homotopy invariant and the derived tensor product well defined on the homotopy category, and the coherence of the associativity is the content of the monoidal structure on the homotopy category; the higher coherence for monoids requires the simplicial or $\infty$-categorical enrichment. (2) is Quillen's axiom SM7 and its consequences, computing the homotopy classes of maps as $\pi_0$ of the function complex. (3) is the Dwyer–Kan simplicial localisation; the proof of the invariance is the theorem that the simplicial localisation depends only on the homotopy theory, quoted as standard and expounded.
 
 **Remark (the two languages).** A model category is a strict presentation of a homotopy theory: it names the cofibrations and the fibrations, it makes the constructions of homotopy limits and derived functors available by explicit replacements, and it is the setting in which the classical computations of the subject are performed. An $\infty$-category is the intrinsic object: it retains only the homotopy theory and has the mapping spaces as its primary data, so it is well suited to the multiplicative and higher-structural statements for which a model-categorical presentation would require an elaborate coherence machine. The two are not rivals; a Quillen adjunction is presented by a pair of adjoint functors, an $\infty$-categorical adjunction by a coherent datum, and every model category presents an $\infty$-category whose theory is independent of the presentation. The present article uses the model-categorical language, other articles the higher-categorical one, and the bridge is the simplicial localisation of the theorem above.
 
@@ -160,7 +160,7 @@ Homotopy colimits and limits are the derived functors of colimit and limit; they
 | Dold–Kan | Equivalence simplicial $R$-modules $\leftrightarrow$ chain complexes |
 | $L_S\mathcal{C}$ | Left Bousfield localisation at a set of morphisms $S$ |
 | $\operatorname{Map}(X,Y)$ | Function complex in a simplicial model category; $\pi_0\operatorname{Map}(X,Y) = \operatorname{Ho}(\mathcal{C})(X,Y)$ |
-| Pushout-product $i\square j$ | Axiom making the monoidal structure homotopy invariant |
+| Pushout-product $i j$ | Axiom making the monoidal structure homotopy invariant |
 | Dwyer–Kan localisation | Simplicial localisation presenting an $\infty$-category |
 | $R$ | Commutative ring with identity $1 \neq 0$ |
 

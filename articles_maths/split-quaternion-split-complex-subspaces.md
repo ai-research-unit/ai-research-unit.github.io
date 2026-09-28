@@ -9,7 +9,7 @@ The split-complex subspaces are the split-quaternion analogues of the **centre**
 
 The article gives the two subalgebras, their bases, dimensions and defining conditions; their idempotents, which are exactly the standard idempotents $\tilde\pi_\pm$ for the first plane; the zero divisors they carry; the module structure of the algebra over each, with the twisted multiplication; and the comparison with the centre of $\mathbb{B}$. It closes with examples.
 
-**Conventions.** The algebra $\mathbb{H}_{\mathrm{s}}$ has basis $1, e_1, e_2, e_3$ with $e_1^2 = -1$, $e_2^2 = +1$, $e_3 = e_1 e_2$, $e_1 e_2 = -e_2 e_1$, and norm form $N(q_0 + q_1e_1 + q_2e_2 + q_3e_3) = q_0^2 + q_1^2 - q_2^2 - q_3^2$. The scalar subspace $S$ and the vector subspace $V$ are as in *Split-Quaternion Scalar and Vector Subspaces*. The split-complex numbers are $\mathbb{D} = \mathbb{R}[j]/(j^2-1) \cong \mathbb{R} \oplus \mathbb{R}$, an algebra over the commutative ring $\mathbb{R}$; their idempotents are $e_\pm = \tfrac{1}{2}(1 \pm j)$.
+**Conventions.** The algebra $\mathbb{H}_{\mathrm{s}}$ has basis $1, e_1, e_2, e_3$ with $e_1^2 = -1$, $e_2^2 = +1$, $e_3 = e_1 e_2$, $e_1 e_2 = -e_2 e_1$, and norm $N(q_0 + q_1e_1 + q_2e_2 + q_3e_3) = q_0^2 + q_1^2 - q_2^2 - q_3^2$. The scalar subspace $S$ and the vector subspace $V$ are as in *Split-Quaternion Scalar and Vector Subspaces*. The split-complex numbers are $\mathbb{D} = \mathbb{R}[j]/(j^2-1) \cong \mathbb{R} \oplus \mathbb{R}$, an algebra over the commutative ring $\mathbb{R}$; their idempotents are $e_\pm = \tfrac{1}{2}(1 \pm j)$.
 
 ## Definition and Basis
 
@@ -28,7 +28,7 @@ $$
 \mathbb{D}_2 \cap V = \mathbb{R} e_2, \qquad \mathbb{D}_3 \cap V = \mathbb{R} e_3 .
 $$
 
-**Proof.** Since $e_2^2 = +1$ and $e_3^2 = +1$, each span is closed under multiplication and commutative, so each is a subalgebra, and the unique $\mathbb{R}$-algebra map $j \mapsto e_k$ is an isomorphism $\mathbb{D} \to \mathbb{D}_k$ because $j^2 = 1 = e_k^2$. An element of $\mathbb{D}_2 \cap \mathbb{D}_3$ has the form $q_0 + q_2e_2 = q_0' + q_3 e_3$, and linear independence of $1, e_2, e_3$ forces $q_2 = q_3 = 0$, so the intersection is $S$. The last two identities are read off the bases. $\square$
+**Proof.** Since $e_2^2 = +1$ and $e_3^2 = +1$, each span is closed under multiplication and commutative, so each is a subalgebra, and the unique $\mathbb{R}$-algebra map $j \mapsto e_k$ is an isomorphism $\mathbb{D} \to \mathbb{D}_k$ because $j^2 = 1 = e_k^2$. An element of $\mathbb{D}_2 \cap \mathbb{D}_3$ has the form $q_0 + q_2e_2 = q_0' + q_3 e_3$, and linear independence of $1, e_2, e_3$ forces $q_2 = q_3 = 0$, so the intersection is $S$. The last two identities are read off the bases.
 
 The two subalgebras together with the definite plane $\mathbb{R}[e_1] = \operatorname{span}\{1, e_1\}$ exhaust the coordinate planes through the scalar line. The third, $\mathbb{R}[e_1]$, is isomorphic to the complex numbers $\mathbb{C}$ because $e_1^2 = -1$, and it is definite, but the menu asks only for the two split-complex planes, and $\mathbb{R}[e_1]$ is recorded in *Split-Quaternion Algebra*.
 
@@ -79,11 +79,11 @@ $$
 
 This is the multiplication of a quaternion-like algebra over the commutative ring $\mathbb{D}_2$, in which the anticommuting generator $e_1$ acts by the conjugation of the coefficient algebra. The same computation with $e_2$ in place of $e_1$ gives the rank-$2$ module structure over $\mathbb{D}_3$. Because $\mathbb{D}_2$ and $\mathbb{D}_3$ are not central, the algebra is a module and a bimodule over each, but not an algebra over either, and the twist $\bar{\cdot}$ is exactly what obstructs the algebra structure.
 
-## The Norm Form
+## The Split-Quaternion Norm
 
 ### Restriction
 
-The norm form restricts to each plane as the two-dimensional form
+The split-quaternion norm restricts to each plane as the two-dimensional form
 
 $$
 N(q_0 + q_2 e_2) = q_0^2 - q_2^2, \qquad N(q_0 + q_3 e_3) = q_0^2 - q_3^2,
@@ -103,7 +103,7 @@ on which $q_0 = \pm q_2$; every nonzero element of these lines is a zero divisor
 
 **Proposition.** The zero divisors of $\mathbb{D}_2$ are exactly the nonzero elements of the two isotropic lines $\mathbb{R}(1 \pm e_2)$, and the zero divisors of $\mathbb{D}_3$ are exactly the nonzero elements of $\mathbb{R}(1 \pm e_3)$.
 
-**Proof.** The norm form of the plane has signature $(1,1)$, so its null set is the union of the two lines indicated, and an element is a unit if and only if its norm is nonzero, by the norm criterion of *Split-Quaternion Norm and Invertibility*; hence the non-units are exactly the nonzero null elements. $\square$
+**Proof.** The split-quaternion norm of the plane has signature $(1,1)$, so its null set is the union of the two lines indicated, and an element is a unit if and only if its split-quaternion norm is nonzero, by the split-quaternion norm criterion of *Split-Quaternion Norm and Invertibility*; hence the non-units are exactly the nonzero null elements.
 
 ## The Structure of the Planes
 
@@ -152,7 +152,7 @@ The biquaternion algebra $\mathbb{B}$ is a $\mathbb{C}$-algebra: its centre $\ma
 
 **Example (an idempotent of the first plane).** For $\tilde\pi_+ = \tfrac{1}{2}(1 + e_2)$ one has $\tilde\pi_+^2 = \tilde\pi_+$, with $e_2 \tilde\pi_+ = \tilde\pi_+$ and $\tilde\pi_- \tilde\pi_+ = 0$; $N(\tilde\pi_+) = 0$, and $\tilde\pi_+$ is a zero divisor in $\mathbb{D}_2$ with $\tilde\pi_+ \tilde\pi_- = 0$.
 
-**Example (a unit of the second plane).** For $\tilde q = 2 + e_3$, the norm is $N = 4 - 1 = 3$, so $\tilde q$ is a unit with inverse $(2 - e_3)/3$.
+**Example (a unit of the second plane).** For $\tilde q = 2 + e_3$, the split-quaternion norm is $N = 4 - 1 = 3$, so $\tilde q$ is a unit with inverse $(2 - e_3)/3$.
 
 **Example (the twisted multiplication).** Take $z_1 = 1$, $z_2 = e_2$, $w_1 = 1$, $w_2 = 0$ in $\mathbb{H}_{\mathrm{s}} = \mathbb{D}_2 \oplus \mathbb{D}_2 e_1$. Then $(1 + e_2 e_1)(1) = 1 + e_2 e_1 = 1 - e_1 e_2 = 1 - e_3$, while treating $e_1$ as commuting with $\mathbb{D}_2$ would give $1 + e_3$; the sign is the twist $e_1 e_2 = \bar{e_2}\, e_1$. This is the concrete content of the twisted formula above.
 
@@ -162,7 +162,7 @@ The biquaternion algebra $\mathbb{B}$ is a $\mathbb{C}$-algebra: its centre $\ma
 
 The split-quaternion algebra contains two commutative subalgebras $\mathbb{D}_2 = \operatorname{span}\{1,e_2\}$ and $\mathbb{D}_3 = \operatorname{span}\{1,e_3\}$, each isomorphic to the split-complex numbers $\mathbb{D} \cong \mathbb{R} \oplus \mathbb{R}$. They meet the scalar line in $\mathbb{R}\cdot 1$, meet the vector subspace in $\mathbb{R} e_2$ and $\mathbb{R} e_3$, and span together the three-dimensional space $\operatorname{span}\{1,e_2,e_3\}$.
 
-The idempotents of $\mathbb{D}_2$ are the standard idempotents $\tilde\pi_\pm = \tfrac{1}{2}(1 \pm e_2)$, and those of $\mathbb{D}_3$ are $v_\pm = \tfrac{1}{2}(1 \pm e_3)$; in each plane they are central within the plane but not in the algebra. The norm form restricts to $q_0^2 - q_2^2$ and $q_0^2 - q_3^2$, of signature $(1,1)$, and the zero divisors of each plane are the nonzero elements of its two isotropic lines $\mathbb{R}(1\pm e_2)$ and $\mathbb{R}(1\pm e_3)$. The algebra is a free rank-$2$ module over each plane, with the **twisted** multiplication in which the anticommuting generator acts through the conjugation of the coefficient plane; because the planes are not central, the structure is a module and not an algebra structure. This is the non-central analogue of the centre of the biquaternion algebra, which is central and a field and therefore carries no nontrivial idempotents.
+The idempotents of $\mathbb{D}_2$ are the standard idempotents $\tilde\pi_\pm = \tfrac{1}{2}(1 \pm e_2)$, and those of $\mathbb{D}_3$ are $v_\pm = \tfrac{1}{2}(1 \pm e_3)$; in each plane they are central within the plane but not in the algebra. The split-quaternion norm restricts to $q_0^2 - q_2^2$ and $q_0^2 - q_3^2$, of signature $(1,1)$, and the zero divisors of each plane are the nonzero elements of its two isotropic lines $\mathbb{R}(1\pm e_2)$ and $\mathbb{R}(1\pm e_3)$. The algebra is a free rank-$2$ module over each plane, with the **twisted** multiplication in which the anticommuting generator acts through the conjugation of the coefficient plane; because the planes are not central, the structure is a module and not an algebra structure. This is the non-central analogue of the centre of the biquaternion algebra, which is central and a field and therefore carries no nontrivial idempotents.
 
 ## Summary of Notation
 

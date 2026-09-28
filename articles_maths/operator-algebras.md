@@ -29,7 +29,7 @@ $$
 \|T^*T\| = \|T\|^2 .
 $$
 
-*Proof.* One inequality is $\|T^*T\| \leq \|T^*\|\|T\| = \|T\|^2$ since $\|T^*\| = \|T\|$, which follows from the definition of the adjoint. For the other, $\|Tx\|^2 = \langle Tx, Tx\rangle = \langle x, T^*Tx\rangle \leq \|x\|^2\|T^*T\|$, so $\|T\|^2 \leq \|T^*T\|$. $\square$
+*Proof.* One inequality is $\|T^*T\| \leq \|T^*\|\|T\| = \|T\|^2$ since $\|T^*\| = \|T\|$, which follows from the definition of the adjoint. For the other, $\|Tx\|^2 = \langle Tx, Tx\rangle = \langle x, T^*Tx\rangle \leq \|x\|^2\|T^*T\|$, so $\|T\|^2 \leq \|T^*T\|$.
 
 **Definition.** A **$\mathrm{C}^*$-algebra** is a complex Banach algebra $A$ with an involution $a \mapsto a^*$ satisfying
 
@@ -69,15 +69,15 @@ $$
 \|a\| = \sup_{\omega \text{ a state}} \|\pi_\omega(a)\|
 $$
 
-for every $a \in A$; the direct sum of the representations $\pi_\omega$ over all states is therefore faithful and isometric. $\square$
+for every $a \in A$; the direct sum of the representations $\pi_\omega$ over all states is therefore faithful and isometric.
 
 **Theorem (commutative Gelfand–Naimark).** Every commutative $\mathrm{C}^*$-algebra $A$ is isometrically $*$-isomorphic to $C_0(X)$ for a locally compact Hausdorff space $X$, namely the space of characters of $A$ with the weak-$*$ topology; if $A$ has an identity, $X$ is compact and $A \cong C(X)$.
 
-*Proof (sketch).* The characters form a locally compact space $X$ in the weak-$*$ topology, and the Gelfand transform $\hat a(\chi) = \chi(a)$ is a $*$-homomorphism $A \to C_0(X)$; for a $\mathrm{C}^*$-algebra the Gelfand transform is isometric, because $\|\hat a\|_\infty^2 = \|\widehat{a^*a}\|_\infty = \|a^*a\| = \|a\|^2$ by the $\mathrm{C}^*$-identity, and it is surjective by the Stone–Weierstrass theorem. $\square$
+*Proof (sketch).* The characters form a locally compact space $X$ in the weak-$*$ topology, and the Gelfand transform $\hat a(\chi) = \chi(a)$ is a $*$-homomorphism $A \to C_0(X)$; for a $\mathrm{C}^*$-algebra the Gelfand transform is isometric, because $\|\hat a\|_\infty^2 = \|\widehat{a^*a}\|_\infty = \|a^*a\| = \|a\|^2$ by the $\mathrm{C}^*$-identity, and it is surjective by the Stone–Weierstrass theorem.
 
 **Corollary (the norm is determined algebraically).** A $\mathrm{C}^*$-algebra carries at most one norm making it a $\mathrm{C}^*$-algebra, and every $*$-homomorphism from a $\mathrm{C}^*$-algebra to a $\mathrm{C}^*$-algebra is norm-decreasing, hence continuous.
 
-*Proof.* If $\|\cdot\|_1, \|\cdot\|_2$ both satisfy the $\mathrm{C}^*$-identity, then the completion in one norm has the same spectral values for each self-adjoint element, and for self-adjoint $a$ the norm is the spectral radius, $\|a\| = \sup\{|\lambda| : \lambda \in \sigma(a)\}$; hence the two norms agree on self-adjoint elements and therefore on all elements, by the $\mathrm{C}^*$-identity applied to $a^*a$. For the second statement, a $*$-homomorphism $\pi$ sends self-adjoint elements to self-adjoint elements and $\sigma(\pi(a)) \subseteq \sigma(a)$, so $\|\pi(a)\|^2 = \|\pi(a^*a)\| = r(\pi(a^*a)) \leq r(a^*a) = \|a\|^2$. $\square$
+*Proof.* If $\|\cdot\|_1, \|\cdot\|_2$ both satisfy the $\mathrm{C}^*$-identity, then the completion in one norm has the same spectral values for each self-adjoint element, and for self-adjoint $a$ the norm is the spectral radius, $\|a\| = \sup\{|\lambda| : \lambda \in \sigma(a)\}$; hence the two norms agree on self-adjoint elements and therefore on all elements, by the $\mathrm{C}^*$-identity applied to $a^*a$. For the second statement, a $*$-homomorphism $\pi$ sends self-adjoint elements to self-adjoint elements and $\sigma(\pi(a)) \subseteq \sigma(a)$, so $\|\pi(a)\|^2 = \|\pi(a^*a)\| = r(\pi(a^*a)) \leq r(a^*a) = \|a\|^2$.
 
 This corollary is the sharpest contrast with the general Banach-algebra setting: a $\mathrm{C}^*$-algebra's analytic structure is entirely determined by its algebra and involution.
 
@@ -100,7 +100,7 @@ $$
 This is well defined because $N_\omega$ is a left ideal, and it is bounded: for self-adjoint $a$, the estimate $[ab,ab]_\omega = \omega(b^*a^*ab) \leq \|a\|^2\,\omega(b^*b) = \|a\|^2[b,b]_\omega$ follows from the positivity of the functional $b \mapsto \omega(b^*(\|a\|^2 - a^*a)b)$ on the algebra with $\|a\|^2 - a^*a \geq 0$ in the self-adjoint part; the general case follows by applying this to $a^*a$. Hence $\pi_\omega(a)$ extends to a bounded operator on $H_\omega$, and it is a $*$-homomorphism because the involution and multiplication of $A$ act on the quotient as expected. The class $x_\omega = 1 + N_\omega$ is cyclic, and
 
 $$
-\langle\pi_\omega(a)x_\omega, x_\omega\rangle = [a, 1]_\omega = \omega(1^*a) = \omega(a) . \qquad \square
+\langle\pi_\omega(a)x_\omega, x_\omega\rangle = [a, 1]_\omega = \omega(1^*a) = \omega(a) .
 $$
 
 **Corollary (states exist).** Every $\mathrm{C}^*$-algebra with identity has at least one state, hence a nontrivial representation, and the Gelfand–Naimark theorem follows.
@@ -115,7 +115,7 @@ $$
 
 from the continuous functions on the compact spectrum of $a$ onto the $\mathrm{C}^*$-subalgebra generated by $a$ and $1$.
 
-*Proof.* The subalgebra $C^*(a,1)$ is generated by $a$ and $a^*$, which commute with one another because $a$ is normal, so it is commutative; by commutative Gelfand–Naimark it is $C(X)$ for its character space $X$, and $X$ is homeomorphic to $\sigma(a)$ by the identification of characters with spectral points. The inverse of the Gelfand transform is the required map. $\square$
+*Proof.* The subalgebra $C^*(a,1)$ is generated by $a$ and $a^*$, which commute with one another because $a$ is normal, so it is commutative; by commutative Gelfand–Naimark it is $C(X)$ for its character space $X$, and $X$ is homeomorphic to $\sigma(a)$ by the identification of characters with spectral points. The inverse of the Gelfand transform is the required map.
 
 **Corollary (the square root and the modulus).** Every positive element $a$ (that is, $a = b^*b$ for some $b$) has a unique positive square root; every element has a polar decomposition $a = u|a|$ with $|a| = (a^*a)^{1/2}$ and a partial isometry $u$.
 
@@ -133,7 +133,7 @@ $$
 \|a(1-u_\lambda)\|^2 = \|(1-u_\lambda)a^*a(1-u_\lambda)\| \longrightarrow 0 ,
 $$
 
-so $au_\lambda \to a$ and hence $\|u_\lambda a^* - a^*\| = \|au_\lambda - a\| \to 0$. Since $u_\lambda a^* \in I$ and $I$ is closed, $a^* \in I$. The quotient is a Banach algebra with an involution; the $\mathrm{C}^*$-identity for the quotient norm is checked using the approximate units of $I$. $\square$
+so $au_\lambda \to a$ and hence $\|u_\lambda a^* - a^*\| = \|au_\lambda - a\| \to 0$. Since $u_\lambda a^* \in I$ and $I$ is closed, $a^* \in I$. The quotient is a Banach algebra with an involution; the $\mathrm{C}^*$-identity for the quotient norm is checked using the approximate units of $I$.
 
 **Definition.** A $\mathrm{C}^*$-algebra is **simple** if it has no nontrivial closed two-sided ideals. The **Calkin algebra** is the quotient $B(H)/K(H)$.
 
@@ -141,7 +141,7 @@ so $au_\lambda \to a$ and hence $\|u_\lambda a^* - a^*\| = \|au_\lambda - a\| \t
 
 **Proposition (the quotient is the algebra of the orthogonal complement).** Let $\mathcal{M} \subseteq B(H)$ be a $\mathrm{C}^*$-subalgebra and let $K \subseteq H$ be a closed subspace invariant under $\mathcal{M}$. Then the restriction map $T \mapsto T|_K$ is a $*$-homomorphism $\mathcal{M} \to B(K)$; if $K^\perp$ is invariant as well, so that $K$ is reducing, the restriction is the quotient of $\mathcal{M}$ by the ideal of operators of $\mathcal{M}$ that vanish on $K$.
 
-*Proof.* Invariance of $K$ under each $T \in \mathcal{M}$ implies invariance under $T^*$ when $\mathcal{M}$ is self-adjoint and $K$ is reducing; then $T|_K$ is bounded with $\|T|_K\| \leq \|T\|$, and $(T|_K)^* = T^*|_K$. The kernel is a closed two-sided ideal, and the induced map on the quotient is injective with dense image, hence an isomorphism onto its image. $\square$
+*Proof.* Invariance of $K$ under each $T \in \mathcal{M}$ implies invariance under $T^*$ when $\mathcal{M}$ is self-adjoint and $K$ is reducing; then $T|_K$ is bounded with $\|T|_K\| \leq \|T\|$, and $(T|_K)^* = T^*|_K$. The kernel is a closed two-sided ideal, and the induced map on the quotient is injective with dense image, hence an isomorphism onto its image.
 
 ## Von Neumann Algebras
 
@@ -155,11 +155,11 @@ $$
 
 **Theorem (von Neumann bicommutant theorem).** A $*$-subalgebra $\mathcal{M} \subseteq B(H)$ containing $1$ is a von Neumann algebra if and only if $\mathcal{M} = \mathcal{M}''$.
 
-*Proof (sketch).* The inclusion $\mathcal{M} \subseteq \mathcal{M}''$ is immediate. For the converse one shows that the weak operator closure of $\mathcal{M}$ equals $\mathcal{M}''$: a vector $\xi \in H$ and an operator $T \in \mathcal{M}''$ are compared by applying the double commutant to the closure of $\mathcal{M}\xi$, which is $\mathcal{M}''\xi$; the strong closure of $\mathcal{M}$ contains every operator in $\mathcal{M}''$ by a Kaplansky density argument together with the fact that the unit ball is compact in the weak operator topology. $\square$
+*Proof (sketch).* The inclusion $\mathcal{M} \subseteq \mathcal{M}''$ is immediate. For the converse one shows that the weak operator closure of $\mathcal{M}$ equals $\mathcal{M}''$: a vector $\xi \in H$ and an operator $T \in \mathcal{M}''$ are compared by applying the double commutant to the closure of $\mathcal{M}\xi$, which is $\mathcal{M}''\xi$; the strong closure of $\mathcal{M}$ contains every operator in $\mathcal{M}''$ by a Kaplansky density argument together with the fact that the unit ball is compact in the weak operator topology.
 
 **Proposition (the centre and the decomposition).** The centre of a von Neumann algebra $\mathcal{M}$ is $Z(\mathcal{M}) = \mathcal{M} \cap \mathcal{M}'$, and it is a commutative von Neumann algebra; hence $Z(\mathcal{M}) \cong C(X)$ for a compact hyperstonean space $X$, and $\mathcal{M}$ decomposes as a direct integral of **factors**, von Neumann algebras with trivial centre.
 
-*Proof.* $\mathcal{M} \cap \mathcal{M}'$ is commutative because each element commutes with the other by definition; it is a von Neumann algebra and is commutative, so the commutative Gelfand–Naimark theorem applies, and the spectral decomposition of the centre gives the direct-integral decomposition. $\square$
+*Proof.* $\mathcal{M} \cap \mathcal{M}'$ is commutative because each element commutes with the other by definition; it is a von Neumann algebra and is commutative, so the commutative Gelfand–Naimark theorem applies, and the spectral decomposition of the centre gives the direct-integral decomposition.
 
 ## Traces, the Trace Class and the Hilbert–Schmidt Class
 
@@ -191,7 +191,7 @@ $L^1(H)$ and $L^2(H)$ are two-sided $*$-ideals, $L^2(H)$ is dense in $K(H)$ in t
 2. $\mathrm{Tr}(ST) = \mathrm{Tr}(TS)$ whenever $S \in L^1(H)$ and $T \in B(H)$, and $\mathrm{Tr}$ is the unique normal tracial weight on $B(H)$ up to scaling;
 3. the pairing $(S,T) \mapsto \mathrm{Tr}(ST)$ identifies $L^1(H)$ with the dual of $K(H)$, and $B(H)$ with the dual of $L^1(H)$.
 
-*Proof.* The first two statements are the standard theory of the Schatten classes: $|ST| \leq \|S\|\,|T|$ gives the ideal property, the Schmidt decomposition of a Hilbert–Schmidt operator gives the inner product and the norm inequality, and the trace identity follows from the absolute convergence of the series by a rearrangement. The duality statements are the standard duality of the Schatten classes; the second identification is the one that exhibits the weak operator topology as the $\sigma(B(H), L^1(H))$-topology on bounded sets. $\square$
+*Proof.* The first two statements are the standard theory of the Schatten classes: $|ST| \leq \|S\|\,|T|$ gives the ideal property, the Schmidt decomposition of a Hilbert–Schmidt operator gives the inner product and the norm inequality, and the trace identity follows from the absolute convergence of the series by a rearrangement. The duality statements are the standard duality of the Schatten classes; the second identification is the one that exhibits the weak operator topology as the $\sigma(B(H), L^1(H))$-topology on bounded sets.
 
 **Example (the finite-dimensional case).** For $H = \mathbb{C}^n$ all classes coincide with $B(H) = M_n(\mathbb{C})$, the trace is the matrix trace and $\tau = \mathrm{Tr}/n$ is the unique **tracial state**, $\tau(1) = 1$. For a general von Neumann algebra $\mathcal{M}$ a **trace** is a map $\tau : \mathcal{M}_+ \to [0,\infty]$ that is additive, positively homogeneous and unitarily invariant; it is **faithful** if $\tau(x^*x) = 0$ forces $x = 0$, **finite** if $\tau(1) < \infty$, **semifinite** if every nonzero positive element dominates a positive element of finite trace, and a **tracial state** if $\tau(1) = 1$. The existence of a faithful normal tracial weight is the dividing line between the types of the next section, and the trace class is the model: $\mathrm{Tr}$ on $B(H)$ is faithful, normal and semifinite, but not finite when $H$ is infinite-dimensional.
 
@@ -209,7 +209,7 @@ $L^1(H)$ and $L^2(H)$ are two-sided $*$-ideals, $L^2(H)$ is dense in $K(H)$ in t
 
 **Example (types $\mathrm{I}$ and $\mathrm{II}_1$).** $B(H)$ is a factor of type I, the finite-dimensional $M_n(\mathbb{C})$ being of type $\mathrm{I}_n$; the group von Neumann algebra $L(G)$ of a discrete group $G$ in which every nontrivial conjugacy class is infinite (an **icc** group) is a factor of type $\mathrm{II}_1$, with unique tracial state $\tau(a) = \langle a\delta_e,\delta_e\rangle$ and no minimal projections. The tensor product $B(H)\bar\otimes R$ of $B(H)$ with a type $\mathrm{II}_1$ factor $R$ is a factor of type $\mathrm{II}_\infty$, and crossed products of a type $\mathrm{II}_\infty$ factor by ergodic non-measure-preserving actions give the Powers factors of type $\mathrm{III}_\lambda$.
 
-*Proof (outline).* Murray–von Neumann's comparison theorem shows that the projections of a factor are totally ordered by $\preceq$, so a factor is finite exactly when no proper projection is equivalent to $1$; finiteness is equivalent to the existence of a faithful normal tracial weight. If a minimal projection exists, $\mathcal{M}$ is isomorphic to the algebra of all bounded operators on its range, which gives type I. If there is no minimal projection and a finite trace exists, the trace is a faithful normal tracial state and the factor is of type $\mathrm{II}_1$; if the trace is only semifinite, the type is $\mathrm{II}_\infty$. If no faithful normal semifinite trace exists, the factor is of type III; the refinement of the type into $\mathrm{III}_\lambda$ uses the modular theory of the next section, $\lambda$ being the invariant read off the crossed product of $\mathcal{M}$ by its modular group. This is the classification of Murray and von Neumann with the refinement of Connes; the details are a substantial theory and are cited rather than reproduced. $\square$
+*Proof (outline).* Murray–von Neumann's comparison theorem shows that the projections of a factor are totally ordered by $\preceq$, so a factor is finite exactly when no proper projection is equivalent to $1$; finiteness is equivalent to the existence of a faithful normal tracial weight. If a minimal projection exists, $\mathcal{M}$ is isomorphic to the algebra of all bounded operators on its range, which gives type I. If there is no minimal projection and a finite trace exists, the trace is a faithful normal tracial state and the factor is of type $\mathrm{II}_1$; if the trace is only semifinite, the type is $\mathrm{II}_\infty$. If no faithful normal semifinite trace exists, the factor is of type III; the refinement of the type into $\mathrm{III}_\lambda$ uses the modular theory of the next section, $\lambda$ being the invariant read off the crossed product of $\mathcal{M}$ by its modular group. This is the classification of Murray and von Neumann with the refinement of Connes; the details are a substantial theory and are cited rather than reproduced.
 
 ## The Modular Theory of Tomita–Takesaki
 
@@ -251,7 +251,7 @@ $$
 J\bigl(\Delta_\omega^{it}a\Delta_\omega^{-it}\bigr)J = \Delta_\omega^{-it}(JaJ)\Delta_\omega^{it} = JaJ,
 $$
 
-the second equality because $JaJ \in \mathcal{M}'$ commutes with $\Delta_\omega^{it}$ by the relation above. Hence $JaJ \in \mathcal{M}'$ implies $\Delta_\omega^{it}a\Delta_\omega^{-it} \in J\mathcal{M}'J = \mathcal{M}$, and applying the same argument with $-t$ gives the reverse inclusion. $\square$
+the second equality because $JaJ \in \mathcal{M}'$ commutes with $\Delta_\omega^{it}$ by the relation above. Hence $JaJ \in \mathcal{M}'$ implies $\Delta_\omega^{it}a\Delta_\omega^{-it} \in J\mathcal{M}'J = \mathcal{M}$, and applying the same argument with $-t$ gives the reverse inclusion.
 
 **Remark (notation).** The modular group is written $\varsigma_t^\omega$ and not $\sigma_t^\omega$: the letter $\sigma$ denotes the spectrum $\sigma(a)$ of an element in this article and the symbol $\sigma(\xi)$ of the Cauchy–Riemann operator, and the three uses are kept apart deliberately. Likewise $\Delta_\omega$ here is the modular operator of Tomita–Takesaki theory, not the Laplacian and its companions; the two are unrelated operators and appear in different articles.
 
@@ -299,7 +299,7 @@ $$
 J\Delta_\omega^{1/2}\bigl(a\rho^{1/2}\bigr) = J\bigl(\rho^{1/2}a\rho^{-1/2}\rho^{1/2}\bigr) = J\bigl(\rho^{1/2}a\bigr) = \bigl(\rho^{1/2}a\bigr)^* = a^*\rho^{1/2},
 $$
 
-so $S = J\Delta_\omega^{1/2}$ with $\Delta_\omega^{1/2}(a\rho^{1/2}) = \rho^{1/2}a$, that is $\Delta_\omega^{1/2}(a\Omega) = \rho^{1/2}a\Omega$, and hence $\Delta_\omega^{it}a\Omega = \rho^{it}a\rho^{-it}\Omega$: the modular operator is conjugation by $\rho^{it}$ on the left and by $\rho^{-it}$ on the right, $\Delta_\omega = L_\rho R_\rho^{-1}$. Taking logarithms, $\log\Delta_\omega = L_{\log\rho} - R_{\log\rho}$. $\square$
+so $S = J\Delta_\omega^{1/2}$ with $\Delta_\omega^{1/2}(a\rho^{1/2}) = \rho^{1/2}a$, that is $\Delta_\omega^{1/2}(a\Omega) = \rho^{1/2}a\Omega$, and hence $\Delta_\omega^{it}a\Omega = \rho^{it}a\rho^{-it}\Omega$: the modular operator is conjugation by $\rho^{it}$ on the left and by $\rho^{-it}$ on the right, $\Delta_\omega = L_\rho R_\rho^{-1}$. Taking logarithms, $\log\Delta_\omega = L_{\log\rho} - R_{\log\rho}$.
 
 **Verification of the KMS condition.** Define, for $a, b \in M_n(\mathbb{C})$ and $z \in \mathbb{C}$,
 
@@ -329,11 +329,11 @@ as in *Automorphisms and Derivations of Algebras*. The derivations of $A$ form a
 
 **Theorem (automatic continuity, standard).** Every derivation of a $\mathrm{C}^*$-algebra is bounded, and hence continuous.
 
-*Proof.* This is the Kadison–Sakai theorem; the argument first shows the continuity of derivations on the self-adjoint part, using the order structure and the functional calculus, and then extends to the whole algebra by linearity over $\mathbb{C}$. $\square$
+*Proof.* This is the Kadison–Sakai theorem; the argument first shows the continuity of derivations on the self-adjoint part, using the order structure and the functional calculus, and then extends to the whole algebra by linearity over $\mathbb{C}$.
 
 **Theorem (innerness, standard).** Every derivation of a von Neumann algebra $\mathcal{M}$ is inner: for each $\delta$ there is $h \in \mathcal{M}$ with $\delta(a) = [h, a]$ for all $a \in \mathcal{M}$. Consequently every derivation of $\mathbb{M}_n(\mathbb{C})$ and of $B(H)$ is inner.
 
-*Proof (sketch).* For the weakly closed case, take a family of mutually orthogonal projections summing to $1$ and define $h$ by the off-diagonal blocks $\delta(p)\,q$ for projections $p, q$; the commutation relations force $h$ to commute with every element of the commutant, so $h \in \mathcal{M}'' = \mathcal{M}$, and the identity $\delta(a) = [h,a]$ is then checked on a generating set. $\square$
+*Proof (sketch).* For the weakly closed case, take a family of mutually orthogonal projections summing to $1$ and define $h$ by the off-diagonal blocks $\delta(p)\,q$ for projections $p, q$; the commutation relations force $h$ to commute with every element of the commutant, so $h \in \mathcal{M}'' = \mathcal{M}$, and the identity $\delta(a) = [h,a]$ is then checked on a generating set.
 
 **Corollary (vanishing of the outer derivations).** For a von Neumann algebra the outer derivation space $\operatorname{Der}(\mathcal{M})/\operatorname{Inn}(\mathcal{M})$ vanishes; for a general Banach or associative algebra it need not, as the examples of *Automorphisms and Derivations of Algebras* show.
 

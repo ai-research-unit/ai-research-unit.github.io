@@ -3,9 +3,9 @@
 
 ## Introduction
 
-This is the o-minimality article of the Real Numbers system, and it occupies the second **geometry slot** of that system, read for the definable rather than the metric structure of the line. The system is the ordered field $\mathbb{R}$ of *The Real Numbers*, and the object of study is the *tameness* of its definable sets: the property that every subset of the line definable by a first-order formula with parameters is a finite union of intervals and points, and the structure theory of definable sets in all dimensions that this property forces.
+This is the o-minimality article of the Real Numbers system, and it stands in the Analysis group of that system, read for the definable rather than the metric structure of the line. The system is the ordered field $\mathbb{R}$ of *The Real Numbers*, and the object of study is the *tameness* of its definable sets: the property that every subset of the line definable by a first-order formula with parameters is a finite union of intervals and points, and the structure theory of definable sets in all dimensions that this property forces.
 
-This article is the one article of the load that is model-theoretic rather than synthetic, and its position is deliberate: o-minimality is not a construction on $\mathbb{R}$ but a property of the line's definable sets, and it is a property of the real line in the same way that the intermediate value property or the cell decomposition of a semialgebraic set is. It is placed here because it is the geometric form of the completeness and order of $\mathbb{R}$: the definable sets of the line are the sets that the geometry of the line can describe, and o-minimality says that they cannot be wild. The general model theory — languages, structures, satisfaction, quantifier elimination, compactness, types and elementary extensions — is the subject of the companion article *Model Theory*, which is being written in parallel and is used here rather than developed; the model theory of the natural numbers, with its wild definability and its undecidability, is the subject of *Peano Arithmetic and Model Theory* and forms the contrast to everything below. The real algebraic geometry of the semialgebraic sets is from *Real Algebraic Geometry*, and the ordered field theory of $\mathbb{R}$ from *Real-Closed and Complete Ordered Fields*.
+This article is the one article of the load that is model-theoretic rather than synthetic, and its position is deliberate: o-minimality is not a construction on $\mathbb{R}$ but a property of the line's definable sets, and it is a property of the real line in the same way that the intermediate value property or the cell decomposition of a semialgebraic set is. It is placed here because it is the definable form of the completeness and order of $\mathbb{R}$: the definable sets of the line are the sets that a first-order description of the line can name, and o-minimality says that they cannot be wild. Its content is the regularity of the definable functions — piecewise continuity, piecewise monotonicity and the existence of one-sided limits — which is the order-and-definability analogue of the analytic regularity that the Analysis group develops. The general model theory — languages, structures, satisfaction, quantifier elimination, compactness, types and elementary extensions — is the subject of the companion article *Model Theory*, which is being written in parallel and is used here rather than developed; the model theory of the natural numbers, with its wild definability and its undecidability, is the subject of *Peano Arithmetic and Model Theory* and forms the contrast to everything below. The real algebraic geometry of the semialgebraic sets is from *Real Algebraic Geometry*, and the ordered field theory of $\mathbb{R}$ from *Real-Closed and Complete Ordered Fields*.
 
 Throughout, $\mathcal{L}$ is a first-order language containing a binary relation symbol $<$, an $\mathcal{L}$-**structure** $\mathcal{M}$ is o-minimal if $<$ is interpreted as a dense linear order without endpoints on its domain $M$ and every subset of $M$ definable with parameters is a finite union of intervals and points; $\mathbb{R}$ denotes the real line as an $\mathcal{L}$-structure, $\mathrm{RCF}$ the theory of real closed fields in the language of ordered rings, $\mathbb{R}_{\exp}$ the real exponential field $(\mathbb{R}, +, \cdot, <, \exp)$ and $\mathbb{R}_{\mathrm{an}}$ the real field with restricted analytic functions. Definable sets are written as $\varphi(M, \bar a) = \{x \in M^n : \mathcal{M} \models \varphi(x, \bar a)\}$, and a **cell** is a definable set of a particular recursive form introduced below.
 
@@ -23,13 +23,13 @@ A set definable without parameters is **0-definable**. A function is definable i
 
 **Theorem.** The definable sets are closed under finite unions, finite intersections, complements in $M^n$, Cartesian products, coordinate permutations, and images and preimages under definable functions. In particular the projection $\pi : M^{n+1} \to M^n$ of a definable set is definable.
 
-**Proof.** The Boolean combinations are the logical connectives, the products and permutations are the renamings of variables, and the projection is the existential quantifier; the closure under images follows from the closure under projections and graphs. $\square$
+**Proof.** The Boolean combinations are the logical connectives, the products and permutations are the renamings of variables, and the projection is the existential quantifier; the closure under images follows from the closure under projections and graphs.
 
 **Definition.** A theory $T$ has **quantifier elimination** if every formula is equivalent, modulo $T$, to a quantifier-free formula; equivalently, every definable set is a finite Boolean combination of sets defined by atomic formulas.
 
 **Theorem (Tarski–Seidenberg).** The theory $\mathrm{RCF}$ of real closed fields has quantifier elimination in the language of ordered rings. Consequently a subset of $\mathbb{R}^n$ is definable in $(\mathbb{R}, +, \cdot, <)$ if and only if it is **semialgebraic**, that is, a finite Boolean combination of sets $\{x : f(x) \geq 0\}$ with $f \in \mathbb{R}[x_1,\dots,x_n]$.
 
-**Proof.** Quantifier elimination for real closed fields is Tarski's theorem, and the identification of the quantifier-free definable sets with the semialgebraic sets is immediate from the form of the atomic formulas. The elimination is proved by an algebraic argument reducing the one-variable case to the sign of a polynomial on a finite set of roots; it is given in *Model Theory* and *Real Algebraic Geometry*. $\square$
+**Proof.** Quantifier elimination for real closed fields is Tarski's theorem, and the identification of the quantifier-free definable sets with the semialgebraic sets is immediate from the form of the atomic formulas. The elimination is proved by an algebraic argument reducing the one-variable case to the sign of a polynomial on a finite set of roots; it is given in *Model Theory* and *Real Algebraic Geometry*.
 
 **Corollary.** The theory $\mathrm{RCF}$ is complete and decidable: there is an algorithm deciding, for a sentence in the language of ordered rings, whether it holds in $\mathbb{R}$.
 
@@ -37,11 +37,11 @@ A set definable without parameters is **0-definable**. A function is definable i
 
 **Theorem (dense linear orders).** Let $\mathcal{M} = (M, <)$ be a dense linear order without endpoints. Then every definable subset of $M$ is a finite union of intervals and points.
 
-**Proof.** The theory of dense linear orders without endpoints has quantifier elimination: a quantifier-free formula in one free variable is a Boolean combination of atoms $x = a$ and $a < x < b$, hence defines a finite union of points and intervals. $\square$
+**Proof.** The theory of dense linear orders without endpoints has quantifier elimination: a quantifier-free formula in one free variable is a Boolean combination of atoms $x = a$ and $a < x < b$, hence defines a finite union of points and intervals.
 
 **Theorem.** Let $\mathcal{M} = (M, +, <)$ be a nontrivial **divisible** ordered abelian group, that is, an ordered $\mathbb{Q}$-vector space. Then every definable subset of $M$ is a finite union of intervals and points.
 
-**Proof.** The theory of divisible ordered abelian groups admits quantifier elimination in the language of ordered groups. A quantifier-free formula in one free variable with parameters is therefore a Boolean combination of atoms $x < a$ and $a < x$, and such a Boolean combination defines a finite union of points and intervals. The argument is in *Model Theory*. $\square$
+**Proof.** The theory of divisible ordered abelian groups admits quantifier elimination in the language of ordered groups. A quantifier-free formula in one free variable with parameters is therefore a Boolean combination of atoms $x < a$ and $a < x$, and such a Boolean combination defines a finite union of points and intervals. The argument is in *Model Theory*.
 
 **Theorem (sharpness).** Divisibility cannot be dropped for ordered abelian groups. An ordered abelian group with a dense order is o-minimal if and only if it is divisible.
 
@@ -51,7 +51,7 @@ $$
 2M = \{x \in M : \text{there is } y \in M \text{ with } y + y = x\}.
 $$
 
-The set $2M$ is a proper definable subgroup, proper because divisibility is exactly the condition $2M = M$. It cannot be a finite union of intervals and points: it is infinite, so such a decomposition would contain a nondegenerate interval $(a,b)$, and then $2M$, being a subgroup, would contain the symmetric interval $(a - b, b - a)$ about $0$; in the archimedean case a subgroup of a dense ordered group that contains a neighbourhood of $0$ is the whole group, forcing $2M = M$. In the non-archimedean case the same conclusion is reached through the block structure of the lexicographic example below. The general statement is standard and is in the references. $\square$
+The set $2M$ is a proper definable subgroup, proper because divisibility is exactly the condition $2M = M$. It cannot be a finite union of intervals and points: it is infinite, so such a decomposition would contain a nondegenerate interval $(a,b)$, and then $2M$, being a subgroup, would contain the symmetric interval $(a - b, b - a)$ about $0$; in the archimedean case a subgroup of a dense ordered group that contains a neighbourhood of $0$ is the whole group, forcing $2M = M$. In the non-archimedean case the same conclusion is reached through the block structure of the lexicographic example below. The general statement is standard and is in the references.
 
 **Example.** In the lexicographic group $M = \mathbb{Z} \times \mathbb{Q}$ the subgroup $2M$ is $2\mathbb{Z} \times \mathbb{Q}$, which omits $(1,0)$ and so is proper. The maximal convex subsets of $2M$ are the blocks $\{2k\} \times \mathbb{Q}$ over the even integers: a convex set meeting two distinct blocks contains the interval between a point of one and a point of the other, and that interval contains a point of an odd block, which lies outside $2M$. The definable set $2M$ is therefore an infinite disjoint union of convex blocks, and a finite union of intervals and points would meet only finitely many of them, a contradiction. So $2M$ is not a finite union of intervals and points and $M$ is not o-minimal.
 
@@ -77,11 +77,11 @@ The definition is a condition on the definable subsets of the domain only; the c
 
 **(iv)** every definable function $f : M \to M$ is piecewise constant or strictly monotone.
 
-**Proof.** The equivalence of (i), (ii) and (iii) is immediate from the fact that a finite union of intervals and points has finitely many components and no infinite discrete definable subset, while an infinite definable set with a least element above each of its points contains a discrete definable subset. The equivalence with (iv) is the one-dimensional case of the monotonicity theorem below. $\square$
+**Proof.** The equivalence of (i), (ii) and (iii) is immediate from the fact that a finite union of intervals and points has finitely many components and no infinite discrete definable subset, while an infinite definable set with a least element above each of its points contains a discrete definable subset. The equivalence with (iv) is the one-dimensional case of the monotonicity theorem below.
 
 **Theorem (elementary equivalence).** If $\mathcal{M}$ is o-minimal then every structure elementarily equivalent to $\mathcal{M}$ is o-minimal; o-minimality is therefore a property of the complete theory, not of a single structure. It passes to reducts, and to expansions that do not change the definable subsets of the line.
 
-**Proof.** The condition that every definable subset of the line is a finite union of intervals and points is a schema of first-order sentences, one for each formula, and is thus preserved under elementary equivalence. $\square$
+**Proof.** The condition that every definable subset of the line is a finite union of intervals and points is a schema of first-order sentences, one for each formula, and is thus preserved under elementary equivalence.
 
 ### Examples and Non-Examples
 
@@ -97,7 +97,7 @@ The definition is a condition on the definable subsets of the domain only; the c
 
 **(e)** $\mathbb{R}_{\mathrm{an}} = (\mathbb{R}, +, \cdot, <, f)$ with the restricted analytic functions $f$ (Denef–van den Dries, after Gabrielov).
 
-**Proof.** Case (a) is the quantifier elimination for dense linear orders; (b) is the quantifier elimination for ordered abelian groups in the divisible case; (c) is Tarski–Seidenberg together with the cell decomposition below; (d) is Wilkie's theorem of 1996, proved by a model-theoretic analysis of the real exponential field; (e) is the analytic cell decomposition obtained by Gabrielov's theorem on the complements of subanalytic sets. The statements (c)–(e) are quoted from the literature. $\square$
+**Proof.** Case (a) is the quantifier elimination for dense linear orders; (b) is the quantifier elimination for ordered abelian groups in the divisible case; (c) is Tarski–Seidenberg together with the cell decomposition below; (d) is Wilkie's theorem of 1996, proved by a model-theoretic analysis of the real exponential field; (e) is the analytic cell decomposition obtained by Gabrielov's theorem on the complements of subanalytic sets. The statements (c)–(e) are quoted from the literature.
 
 **Theorem.** The following structures are **not** o-minimal:
 
@@ -107,7 +107,7 @@ The definition is a condition on the definable subsets of the domain only; the c
 
 **(c)** any expansion of the real field in which an infinite discrete set is 0-definable, such as $(\mathbb{R}, +, \cdot, <, \mathbb{Z})$ with a predicate for the integers, since $\mathbb{Z}$ itself is then definable, infinite and discrete.
 
-**Proof.** In each case an infinite discrete subset of the line is definable with parameters, and o-minimality forbids this by condition (iii) above. In (b), $\pi$ is a parameter and $\sin(\pi x) = 0$ defines exactly $\mathbb{Z}$; in (c) the offending set is part of the language. $\square$
+**Proof.** In each case an infinite discrete subset of the line is definable with parameters, and o-minimality forbids this by condition (iii) above. In (b), $\pi$ is a parameter and $\sin(\pi x) = 0$ defines exactly $\mathbb{Z}$; in (c) the offending set is part of the language.
 
 **Remark.** The contrast between (b) and (c) on the one hand and the o-minimality of $\mathbb{R}_{\exp}$ on the other is the central phenomenon: the exponential function is tame because it is a function from the line to the line with no zeroes and no oscillations, while the sine function and the integers are wild because they produce an infinite discrete definable set. The same contrast is the model-theoretic form of the difference between the algebraic and the analytic functions in the theory of the real line.
 
@@ -125,15 +125,15 @@ where $C \subseteq M^n$ is a cell and $f, g : C \to M$ are definable continuous 
 
 **Theorem (cell decomposition).** Let $\mathcal{M}$ be o-minimal and let $A_1, \dots, A_k \subseteq M^n$ be definable. Then there is a decomposition of $M^n$ into finitely many cells, each contained in one of the $A_i$ or in its complement, and refining any given finite decomposition. Moreover, if $f : A \to M$ is definable with $A \subseteq M^n$ definable, the decomposition can be chosen so that $f$ is continuous on each cell contained in $A$.
 
-**Proof.** The proof is an induction on $n$ using the one-dimensional definition: in $M^1$ the definable sets are finite unions of intervals and points, which is already a cell decomposition. For the induction step one uses the **uniform finiteness** of the fibres, itself a consequence of o-minimality, to ensure that the number of intervals in a fibre is bounded by an integer depending only on the formula, and then one applies the one-dimensional case to the finitely many boundary functions. The full induction is the standard proof. $\square$
+**Proof.** The proof is an induction on $n$ using the one-dimensional definition: in $M^1$ the definable sets are finite unions of intervals and points, which is already a cell decomposition. For the induction step one uses the **uniform finiteness** of the fibres, itself a consequence of o-minimality, to ensure that the number of intervals in a fibre is bounded by an integer depending only on the formula, and then one applies the one-dimensional case to the finitely many boundary functions. The full induction is the standard proof.
 
 **Corollary.** Every definable subset of $M^n$ has finitely many definably connected components, each of them definable, and every definable subset of $M^n$ is a finite disjoint union of cells. A definable set is finite if and only if it has dimension $0$.
 
-**Proof.** The first statement is the cell decomposition applied to the set and its boundary, using that a cell is definably connected and that the cells of a decomposition are disjoint; the second is immediate from the definition of dimension. $\square$
+**Proof.** The first statement is the cell decomposition applied to the set and its boundary, using that a cell is definably connected and that the cells of a decomposition are disjoint; the second is immediate from the definition of dimension.
 
 **Theorem (definable choice).** If $A \subseteq M^{n+1}$ is definable, then there is a definable function $f : \pi(A) \to M$ with $(\bar x, f(\bar x)) \in A$ for all $\bar x \in \pi(A)$, where $\pi$ is the projection to the first $n$ coordinates.
 
-**Proof.** The cell decomposition of $A$ exhibits $A$ as a finite union of cells over the cells of a decomposition of $\pi(A)$, and on each part one chooses the least (or the first) element of the fibre; the resulting function is definable because the choice is made by a definable formula. $\square$
+**Proof.** The cell decomposition of $A$ exhibits $A$ as a finite union of cells over the cells of a decomposition of $\pi(A)$, and on each part one chooses the least (or the first) element of the fibre; the resulting function is definable because the choice is made by a definable formula.
 
 ## Definable Functions and Dimension
 
@@ -141,11 +141,11 @@ where $C \subseteq M^n$ is a cell and $f, g : C \to M$ are definable continuous 
 
 **Theorem (monotonicity).** Let $\mathcal{M}$ be o-minimal and let $f : (a,b) \to M$ be definable. Then there are $a = a_0 < a_1 < \cdots < a_k = b$ such that on each open interval $(a_i, a_{i+1})$ the function $f$ is continuous and either constant or strictly monotone.
 
-**Proof.** The set of points at which $f$ fails to be locally constant or locally strictly monotone is definable, and by o-minimality it is a finite union of points and intervals; one shows that it cannot contain an interval, for otherwise a definable order-isomorphism argument would produce an infinite discrete definable set. Removing the finitely many offending points gives the required partition. This is the monotonicity theorem of the theory; the details are in the references. $\square$
+**Proof.** The set of points at which $f$ fails to be locally constant or locally strictly monotone is definable, and by o-minimality it is a finite union of points and intervals; one shows that it cannot contain an interval, for otherwise a definable order-isomorphism argument would produce an infinite discrete definable set. Removing the finitely many offending points gives the required partition. This is the monotonicity theorem of the theory; the details are in the references.
 
 **Corollary.** Let $\mathcal{M}$ be an o-minimal expansion of an ordered field and let $f : (a,b) \to M$ be definable. Then $f$ is piecewise continuous and on each piece either constant or strictly monotone, and its one-sided limits exist at every point of $(a,b)$. The set of points at which $f$ is differentiable is definable, and the derivative is a definable function wherever it exists.
 
-**Proof.** The partition, the monotonicity and the one-sided limits are the monotonicity theorem. For a definable $f$ the difference quotients are definable functions of two variables, and the set of pairs $(x,y)$ for which the quotient tends to $y$ as the increment tends to $0$ is definable and meets each vertical line in at most one point; by definable choice it is the graph of a definable function, which is the derivative of $f$. $\square$
+**Proof.** The partition, the monotonicity and the one-sided limits are the monotonicity theorem. For a definable $f$ the difference quotients are definable functions of two variables, and the set of pairs $(x,y)$ for which the quotient tends to $y$ as the increment tends to $0$ is definable and meets each vertical line in at most one point; by definable choice it is the graph of a definable function, which is the derivative of $f$.
 
 **Example.** For the real field $\mathcal{M} = (\mathbb{R}, +, \cdot, <)$ the definable functions are the semialgebraic ones, and these are piecewise Nash: the pieces of the monotonicity partition can be refined to semialgebraic cells on which the function is analytic, so that in this structure the conclusion strengthens to piecewise $C^k$ for every $k$. The same strengthening holds for the restricted analytic structure $\mathbb{R}_{\mathrm{an}}$, whose definable functions are piecewise analytic by construction, and for the exponential field $\mathbb{R}_{\exp}$. Such strengthenings are proved structure by structure; the regularity that o-minimality supplies on its own is the monotonicity and definability statement above.
 
@@ -161,19 +161,19 @@ $$
 
 and for every definable function $f : A \to M^n$, $\dim f(A) \leq \dim A$, with equality holding if $f$ is injective.
 
-**Proof.** The first three properties follow from the cell decomposition, using that the dimension of a cell is additive under products and maximal under unions. The behaviour under definable functions is checked on cells: a definable continuous function on a cell cannot increase the number of free coordinates, and an injective function cannot decrease it. $\square$
+**Proof.** The first three properties follow from the cell decomposition, using that the dimension of a cell is additive under products and maximal under unions. The behaviour under definable functions is checked on cells: a definable continuous function on a cell cannot increase the number of free coordinates, and an injective function cannot decrease it.
 
 **Theorem (exchange and the matroid axioms).** Let $\mathrm{dcl}$ be the definable closure in an o-minimal structure. Then $\mathrm{dcl}$ satisfies the **exchange property**: if $b \in \mathrm{dcl}(A \cup \{a\}) \setminus \mathrm{dcl}(A)$, then $a \in \mathrm{dcl}(A \cup \{b\})$. Consequently the dimension is the rank function of a matroid, and for a definable set $A \subseteq M^n$ the dimension equals the maximum, over the tuples $\bar a \in A$, of the dcl-rank of the set of coordinates of $\bar a$ in the matroid induced by $\mathrm{dcl}$.
 
-**Proof.** The exchange property is proved from the monotonicity theorem and the cell decomposition: a definable function establishing $b \in \mathrm{dcl}(A \cup \{a\})$ can be inverted off a finite set. The matroid axioms and the identification of the dimension with the rank then follow from the general theory of matroids and the dimension properties above. The argument is in the references. $\square$
+**Proof.** The exchange property is proved from the monotonicity theorem and the cell decomposition: a definable function establishing $b \in \mathrm{dcl}(A \cup \{a\})$ can be inverted off a finite set. The matroid axioms and the identification of the dimension with the rank then follow from the general theory of matroids and the dimension properties above. The argument is in the references.
 
 **Corollary (uniform finiteness).** For a definable family $\{A_{\bar x} : \bar x \in B\}$ of subsets of $M$, there is an integer $N$ such that every set in the family has at most $N$ definably connected components; more generally, the dimension of the fibres is uniformly bounded and attained on a definable subset of the parameter space.
 
-**Proof.** If the number of components of the fibres were unbounded, the cell decomposition applied to the family would produce a formula defining an infinite discrete subset of $M$, contradicting o-minimality; so the number is uniformly bounded. The same argument bounds the fibre dimensions, which by the cell decomposition take finitely many values. $\square$
+**Proof.** If the number of components of the fibres were unbounded, the cell decomposition applied to the family would produce a formula defining an infinite discrete subset of $M$, contradicting o-minimality; so the number is uniformly bounded. The same argument bounds the fibre dimensions, which by the cell decomposition take finitely many values.
 
 **Theorem (Pillay).** Every group definable in an o-minimal structure is, definably, a Lie group: there is a definable manifold structure on the group making the group operations definable and the group locally Euclidean, and the group is definably isomorphic to a definable subgroup of a linear group.
 
-**Proof.** The definable manifold structure is obtained from a cell decomposition adapted to the group operation, using definable choice to build the charts; the linear representation is obtained from the adjoint action on the Lie algebra of the definable group. The theorem is Pillay's and is quoted from the literature. $\square$
+**Proof.** The definable manifold structure is obtained from a cell decomposition adapted to the group operation, using definable choice to build the charts; the linear representation is obtained from the adjoint action on the Lie algebra of the definable group. The theorem is Pillay's and is quoted from the literature.
 
 ## O-Minimality and Real Algebraic Geometry
 
@@ -181,25 +181,25 @@ and for every definable function $f : A \to M^n$, $\dim f(A) \leq \dim A$, with 
 
 **Theorem.** The real field $(\mathbb{R}, +, \cdot, <)$ is o-minimal, and a subset of $\mathbb{R}^n$ is definable in it if and only if it is semialgebraic. The definable sets are exactly the finite unions of cells of the semialgebraic cell decomposition.
 
-**Proof.** By Tarski–Seidenberg the definable sets are the semialgebraic sets, and the one-variable statement follows because a semialgebraic subset of $\mathbb{R}$ is a finite union of points and intervals. The cell decomposition then follows from the algebraic arguments of *Real Algebraic Geometry*. $\square$
+**Proof.** By Tarski–Seidenberg the definable sets are the semialgebraic sets, and the one-variable statement follows because a semialgebraic subset of $\mathbb{R}$ is a finite union of points and intervals. The cell decomposition then follows from the algebraic arguments of *Real Algebraic Geometry*.
 
 **Corollary (projection).** If $A \subseteq \mathbb{R}^{n+1}$ is semialgebraic then its projection to $\mathbb{R}^n$ is semialgebraic; this is the Tarski–Seidenberg projection theorem, and it is the algebraic form of the statement that the real field has quantifier elimination.
 
 **Theorem (o-minimality of the exponential field; Wilkie).** $\mathbb{R}_{\exp} = (\mathbb{R}, +, \cdot, <, \exp)$ is o-minimal. Consequently every set definable with the exponential function is a finite union of cells, every definable function is piecewise monotone and piecewise $C^k$, and the definable sets are tame.
 
-**Proof.** Wilkie's theorem, proved by a model-theoretic analysis of the real exponential field and the theory of the exponential function near the origin; it is quoted. $\square$
+**Proof.** Wilkie's theorem, proved by a model-theoretic analysis of the real exponential field and the theory of the exponential function near the origin; it is quoted.
 
 **Theorem (analytic case).** $\mathbb{R}_{\mathrm{an}} = (\mathbb{R}, +, \cdot, <, f_1, \dots, f_m)$ with the restricted analytic functions is o-minimal, and the subanalytic sets are the definable sets.
 
-**Proof.** The result is Denef–van den Dries, using Gabrielov's theorem that the complement of a subanalytic set is subanalytic; it is quoted. $\square$
+**Proof.** The result is Denef–van den Dries, using Gabrielov's theorem that the complement of a subanalytic set is subanalytic; it is quoted.
 
 ### Counting Rational Points: The Pila–Wilkie Theorem
 
 **Theorem (Pila–Wilkie).** Let $A \subseteq \mathbb{R}^n$ be definable in an o-minimal structure and suppose that $A$ contains no infinite semialgebraic subset. Then for every $\varepsilon > 0$ there is $c$ such that the number of rational points of height at most $H$ in $A$ is at most $c H^{\varepsilon}$, where the height of $p/q$ is $\max(\lvert p\rvert, q)$.
 
-**Proof.** The theorem is Pila and Wilkie's, proved by a counting of the intersections of $A$ with the algebraic curves of bounded degree and a reduction to the o-minimal dimension theory; it is quoted from the literature. $\square$
+**Proof.** The theorem is Pila and Wilkie's, proved by a counting of the intersections of $A$ with the algebraic curves of bounded degree and a reduction to the o-minimal dimension theory; it is quoted from the literature.
 
-**Remark.** The Pila–Wilkie theorem is the o-minimal counterpart of the Diophantine approximation of *Diophantine Approximation and Continued Fractions*: the tame geometry of the real line bounds the rational points on a definable set in the same way that the continued fractions bound the rational approximations to a real number. The theorem has become the engine of the Pila–Zannier proof of the Manin–Mumford conjecture and of Pila's proof of the André–Oort conjecture for the modular curves, and it shows that o-minimality is not a technical curiosity but the geometric structure underlying a range of arithmetic results.
+**Remark.** The Pila–Wilkie theorem is the o-minimal counterpart of the Diophantine approximation of *Diophantine Approximation and Continued Fractions*: the tameness of the definable sets of the line bounds the rational points on a definable set in the same way that the continued fractions bound the rational approximations to a real number. The theorem has become the engine of the Pila–Zannier proof of the Manin–Mumford conjecture and of Pila's proof of the André–Oort conjecture for the modular curves, and it shows that o-minimality is not a technical curiosity but the structural reason behind a range of arithmetic results.
 
 ### The Contrast with the Natural Numbers
 
@@ -209,7 +209,7 @@ and for every definable function $f : A \to M^n$, $\dim f(A) \leq \dim A$, with 
 
 A set is definable in a structure if it is the set of solutions of a first-order formula with parameters, and a structure expanding a dense linear order is o-minimal if every definable subset of its domain is a finite union of intervals and points; equivalently, every definable subset of the line has finitely many connected components, there is no infinite discrete definable subset, and every definable unary function is piecewise constant or strictly monotone. O-minimality is preserved under elementary equivalence, so it is a property of a complete theory, and the real field, the real exponential field, the real field with restricted analytic functions and the ordered vector spaces are o-minimal, whereas the integers, the field of reals with the sine function, and any expansion by an infinite discrete set are not.
 
-The structure theory of o-minimal structures rests on the cell decomposition: every definable subset of $M^n$ is a finite disjoint union of cells, the decomposition can be made compatible with any finite family of definable sets and any definable function, and it yields definable choice, the finiteness of the connected components and a dimension function on definable sets. The dimension is additive under products, maximal under unions, non-increasing under definable images, and the definable closure satisfies the exchange property, so that the dimension is the rank of a matroid and the fibre dimensions in a definable family are uniformly bounded. Definable unary functions are piecewise monotone, and in o-minimal expansions of fields they are piecewise $C^k$; definable groups are definably Lie groups by Pillay's theorem. In the real field the definable sets are exactly the semialgebraic sets, by Tarski–Seidenberg, and the cell decomposition is the semialgebraic one of *Real Algebraic Geometry*; Wilkie's theorem extends o-minimality to the exponential field and the Denef–van den Dries theorem to the restricted analytic functions, and the Pila–Wilkie theorem converts o-minimality into a bound on the number of rational points on a definable set. The second geometry slot of the system $\mathbb{R}$ is thus completed by the statement that the definable sets of the line are tame, and o-minimality is the precise sense in which the completeness and order of $\mathbb{R}$ prevent its geometry from realising the wildness of the discrete systems.
+The structure theory of o-minimal structures rests on the cell decomposition: every definable subset of $M^n$ is a finite disjoint union of cells, the decomposition can be made compatible with any finite family of definable sets and any definable function, and it yields definable choice, the finiteness of the connected components and a dimension function on definable sets. The dimension is additive under products, maximal under unions, non-increasing under definable images, and the definable closure satisfies the exchange property, so that the dimension is the rank of a matroid and the fibre dimensions in a definable family are uniformly bounded. Definable unary functions are piecewise monotone, and in o-minimal expansions of fields they are piecewise $C^k$; definable groups are definably Lie groups by Pillay's theorem. In the real field the definable sets are exactly the semialgebraic sets, by Tarski–Seidenberg, and the cell decomposition is the semialgebraic one of *Real Algebraic Geometry*; Wilkie's theorem extends o-minimality to the exponential field and the Denef–van den Dries theorem to the restricted analytic functions, and the Pila–Wilkie theorem converts o-minimality into a bound on the number of rational points on a definable set. The model-theoretic content of the system $\mathbb{R}$, in its Analysis group, is thus completed by the statement that the definable sets of the line are tame, and o-minimality is the precise sense in which the completeness and order of $\mathbb{R}$ prevent its definable sets from realising the wildness of the discrete systems.
 
 ## Summary of Notation
 

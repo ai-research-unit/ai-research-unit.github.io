@@ -35,7 +35,7 @@ $$
 \tilde{\rho}^2 = \tilde{\rho} \qquad \Longleftrightarrow \qquad |\mathbf{r}| = 1 .
 $$
 
-For $\mathbf{r} \neq 0$ the pure state is the rank-one projector $\tilde{P}_+(\hat{\mathbf{r}}) = \tfrac{1}{2}(e_0 + i\hat{\mathbf{r}})$, with $\hat{\mathbf{r}} = \mathbf{r}/|\mathbf{r}|$ a unit pure real quaternion; the complementary idempotent $\tilde{P}_-(\hat{\mathbf{r}}) = \tfrac{1}{2}(e_0 - i\hat{\mathbf{r}})$ corresponds to the antipodal point. The pure states are the boundary sphere of the Bloch ball, which is also the trace-one slice of the future light cone of the norm form, since
+For $\mathbf{r} \neq 0$ the pure state is the rank-one projector $\tilde{P}_+(\hat{\mathbf{r}}) = \tfrac{1}{2}(e_0 + i\hat{\mathbf{r}})$, with $\hat{\mathbf{r}} = \mathbf{r}/|\mathbf{r}|$ a unit pure real quaternion; the complementary idempotent $\tilde{P}_-(\hat{\mathbf{r}}) = \tfrac{1}{2}(e_0 - i\hat{\mathbf{r}})$ corresponds to the antipodal point. The pure states are the boundary sphere of the Bloch ball, which is also the trace-one slice of the future light cone of the biquaternion norm, since
 
 $$
 N(\tilde{\rho}) = \tfrac{1}{4}\left(1 - |\mathbf{r}|^2\right)e_0 .
@@ -297,7 +297,7 @@ The pointer basis is the commutative $\dagger$-subalgebra of $\mathbb{B}$ genera
 | $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ | Trace formula (Born rule) |
 | $\mathrm{Tr}(\tilde{\rho}^2) = \tfrac12(1 + |\mathbf{r}|^2)$ | Purity |
 | $\tilde{\rho}^2 - \tilde{\rho} = \tfrac14(|\mathbf{r}|^2-1)e_0$ | Deviation from idempotency (mixedness) |
-| $N(\tilde{\rho}) = \tfrac14(1-|\mathbf{r}|^2)e_0$ | Norm form (positivity condition) |
+| $N(\tilde{\rho}) = \tfrac14(1-|\mathbf{r}|^2)e_0$ | Biquaternion norm (positivity condition) |
 | $\Phi^{\mathrm{deph}}_p$ | Dephasing channel of strength $p \in [0,1]$ along $\hat{\mathbf{n}}$ |
 | $\Phi^{\mathrm{deph}}_p(\tilde{\rho}) = (1-p)\tilde{\rho} + p(\tilde{P}_+\tilde{\rho}\tilde{P}_+ + \tilde{P}_-\tilde{\rho}\tilde{P}_-)$ | Dephasing action on states |
 | $\tilde{K}_0 = \sqrt{1-p}\,e_0,\ \tilde{K}_{1,2} = \sqrt{p}\,\tilde{P}_\pm$ | Kraus operators of dephasing |

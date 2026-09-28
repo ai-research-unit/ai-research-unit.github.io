@@ -38,7 +38,7 @@ $$
 \overline{\lambda \tilde{Q}} = \lambda \bar{\tilde{Q}}, \qquad (\lambda \tilde{Q})^{*} = \lambda^{*} \tilde{Q}^{*}, \qquad (\lambda \tilde{Q})^{\dagger} = \lambda^{*} \tilde{Q}^{\dagger}, \qquad (\lambda \tilde{Q})^{\flat} = \lambda^{*} \tilde{Q}^{\flat}.
 $$
 
-**Proof.** Split complex conjugation acts on $j$ by $j^{*} = -j$, while quaternion conjugation fixes $j$ and touches only the quaternion units; hence $\overline{\lambda \tilde{Q}} = \lambda \bar{\tilde{Q}}$, and the other three conjugate the coefficient $\lambda$. The action on the basis and the square of each map give the involution property. $\square$
+**Proof.** Split complex conjugation acts on $j$ by $j^{*} = -j$, while quaternion conjugation fixes $j$ and touches only the quaternion units; hence $\overline{\lambda \tilde{Q}} = \lambda \bar{\tilde{Q}}$, and the other three conjugate the coefficient $\lambda$. The action on the basis and the square of each map give the involution property.
 
 **Proposition.** Quaternion conjugation, split complex conjugation and Hermitian conjugation are antiautomorphisms or automorphisms of the algebra, and the anti-Hermitian conjugation is an antiautomorphism up to the central sign: for $\tilde{Q}, \tilde{R} \in \mathbb{H}_{\mathbb{D}}$,
 
@@ -46,7 +46,7 @@ $$
 \overline{\tilde{Q}\tilde{R}} = \bar{\tilde{R}}\,\bar{\tilde{Q}} , \qquad (\tilde{Q}\tilde{R})^{*} = \tilde{Q}^{*}\tilde{R}^{*} , \qquad (\tilde{Q}\tilde{R})^{\dagger} = \tilde{R}^{\dagger}\tilde{Q}^{\dagger} , \qquad (\tilde{Q}\tilde{R})^{\flat} = -\tilde{R}^{\flat}\tilde{Q}^{\flat} .
 $$
 
-**Proof.** Each formula is a direct computation. The second follows because ${}^{*}$ is coefficient-wise and the coefficients commute with the quaternion units: it is an automorphism, not an antiautomorphism. The third is the composite of the automorphism ${}^{*}$ with the antiautomorphism $\bar{\cdot}$; the sign in the last follows from $\flat = -\dagger$ and the centrality of $-1$. $\square$
+**Proof.** Each formula is a direct computation. The second follows because ${}^{*}$ is coefficient-wise and the coefficients commute with the quaternion units: it is an automorphism, not an antiautomorphism. The third is the composite of the automorphism ${}^{*}$ with the antiautomorphism $\bar{\cdot}$; the sign in the last follows from $\flat = -\dagger$ and the centrality of $-1$.
 
 The distinction of the second formula — it alone preserves the order of a product — is the reason the four maps are not interchangeable.
 
@@ -62,7 +62,7 @@ $$
 
 and any two distinct ones among $\bar{\cdot}, {}^{*}, {}^{\dagger}$ generate the third, so that $\{ \mathrm{id}, \bar{\cdot}, {}^{*}, {}^{\dagger} \}$ is a group isomorphic to the Klein four-group and those three are pairwise commuting involutions. Each of the four is its own inverse.
 
-**Proof.** The first rule defines $\dagger$; the second defines $\flat$. Quaternion conjugation acts on the quaternion units and split complex conjugation acts on the coefficients, so they commute and their composite $\dagger$ is an involution; a product of two commuting involutions is an involution. $\square$
+**Proof.** The first rule defines $\dagger$; the second defines $\flat$. Quaternion conjugation acts on the quaternion units and split complex conjugation acts on the coefficients, so they commute and their composite $\dagger$ is an involution; a product of two commuting involutions is an involution.
 
 The set $\{ \mathrm{id}, \bar{\cdot}, {}^{*}, {}^{\dagger} \}$ is the **involution group** of the algebra. The four conjugations including $\flat$ do not form a group, since $\flat \circ \bar{\cdot}$ is $-\bar{\cdot}\circ{}^{*} = -{}^{\dagger}$, not among the four.
 
@@ -87,7 +87,7 @@ $$
 \bar{\cdot} \circ {}^{*} \circ \bar{\cdot} = {}^{*} , \qquad \bar{\cdot} \circ {}^{\dagger} \circ \bar{\cdot} = {}^{\dagger} , \qquad \bar{\cdot} \circ \flat \circ \bar{\cdot} = \flat .
 $$
 
-**Proof.** The group $\{ \mathrm{id}, \bar{\cdot}, {}^{*}, {}^{\dagger} \}$ is abelian by the preceding theorem, and in an abelian group conjugation is the identity; the anti-Hermitian conjugation is central because it is $-\dagger$ with $-\mathrm{id}$ central. $\square$
+**Proof.** The group $\{ \mathrm{id}, \bar{\cdot}, {}^{*}, {}^{\dagger} \}$ is abelian by the preceding theorem, and in an abelian group conjugation is the identity; the anti-Hermitian conjugation is central because it is $-\dagger$ with $-\mathrm{id}$ central.
 
 The practical content is that the four conjugations can be applied in any order without changing the result, and that the orbit of an element under the group does not depend on the order of the operations.
 
@@ -110,7 +110,7 @@ $$
 \left\{ \tilde{Q} : \tilde{Q}^{\flat} = \tilde{Q} \right\} = \mathbb{M}_- , \qquad \left\{ \tilde{Q} : \tilde{Q}^{\flat} = -\tilde{Q} \right\} = \mathbb{M}_+ .
 $$
 
-**Proof.** Each row is the comparison-of-coefficients computation recorded in the article of the corresponding subspace. For the last row, the equations $-\tilde{Q}^{\dagger} = \tilde{Q}$ and $-\tilde{Q}^{\dagger} = -\tilde{Q}$ are those of $\dagger$ read with the opposite labels. $\square$
+**Proof.** Each row is the comparison-of-coefficients computation recorded in the article of the corresponding subspace. For the last row, the equations $-\tilde{Q}^{\dagger} = \tilde{Q}$ and $-\tilde{Q}^{\dagger} = -\tilde{Q}$ are those of $\dagger$ read with the opposite labels.
 
 The four subspaces that are **named** as the distinguished subspaces — the fixed spaces of the four involutions — are $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$, $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$, $\mathbb{M}_+$ and $\mathbb{M}_-$. The two remaining distinct sets, $\mathrm{Vect}(\mathbb{H}_{\mathbb{D}})$ of dimension $6$ and the anti-fixed space $j\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$ of split complex conjugation, are sums of coordinate blocks; the second is isometric to $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$ under multiplication by the central scalar $j$, as explained in *Split-Biquaternion Relations Between Subspaces*.
 
@@ -140,7 +140,7 @@ $$
 
 the size being $1$ for the real line $\langle e_0\rangle$, $2$ for the elements lying in $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$, in $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$ or in $\mathbb{M}_+$ but not in $\langle e_0\rangle$, and $4$ otherwise.
 
-**Proof.** An element is fixed by the whole group exactly when it is fixed by $\bar{\cdot}$ and by ${}^{*}$, since ${}^{\dagger}$ is their composite; that is $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}} \cap \mathbb{H}_{\mathbb{H}_{\mathbb{D}}} = \langle e_0\rangle$, giving orbit size $1$. The stabilizer has order two exactly when the element is fixed by one of $\bar{\cdot}, {}^{*}, {}^{\dagger}$ and by no second one — fixed by two it is fixed by the third and falls back into $\langle e_0\rangle$ — and the three fixed spaces of those maps are $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$, $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$ and $\mathbb{M}_+$, whose pairwise intersections are all $\langle e_0\rangle$; that gives orbit size $2$ exactly on the stated set, and orbit size $4$ on its complement. $\square$
+**Proof.** An element is fixed by the whole group exactly when it is fixed by $\bar{\cdot}$ and by ${}^{*}$, since ${}^{\dagger}$ is their composite; that is $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}} \cap \mathbb{H}_{\mathbb{H}_{\mathbb{D}}} = \langle e_0\rangle$, giving orbit size $1$. The stabilizer has order two exactly when the element is fixed by one of $\bar{\cdot}, {}^{*}, {}^{\dagger}$ and by no second one — fixed by two it is fixed by the third and falls back into $\langle e_0\rangle$ — and the three fixed spaces of those maps are $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$, $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$ and $\mathbb{M}_+$, whose pairwise intersections are all $\langle e_0\rangle$; that gives orbit size $2$ exactly on the stated set, and orbit size $4$ on its complement.
 
 ## Examples
 
@@ -158,6 +158,18 @@ For the element $e_1 \in \mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$ the stabilizer is
 ### A Hermitian Element
 
 For the Hermitian element $\tilde{Q} = e_0 + je_1$ the stabilizer contains ${}^{\dagger}$ by definition; moreover $\bar{\tilde{Q}} = e_0 - je_1 = {}^{*}\tilde{Q}$, so quaternion and split complex conjugations also send it to $e_0 - je_1$, and the stabilizer is $\{ \mathrm{id}, {}^{\dagger} \}$, of order $2$, with orbit $\{e_0 + je_1, e_0 - je_1\}$.
+
+## The Analysis and the Geometry of the Lattice
+
+The lattice is algebraic, and the four spaces that it organises carry the four analytical and geometrical readings.
+
+### The Analysis on the Labelled Spaces
+
+The fixed spaces of the four conjugations are the four subspaces of *Split-Biquaternion Relations Between Subspaces*, and the analysis they carry is accordingly the elliptic analysis on the quaternion subspace, the hyperbolic analysis on the centre, and the restricted ambient analysis on the two Hermitian sectors; the group generated by the four conjugations acts on the functions by pull-back, permuting the four readings.
+
+### The Geometry on the Labelled Spaces
+
+Geometrically the four conjugations are four linear involutions of $\mathbb{R}^8$, and their fixed and anti-fixed spaces are the four invariant planes of the lattice. The orbit of a point under the Klein four group has size $1$, $2$ or $4$, according to the dimension of the stabiliser, and the geometric content of the lattice is that the four invariant planes are the axes along which the group acts; the reduction to four labelled spaces is the geometric form of the reduction from the six subspaces of $\mathbb{B}$ to the four here.
 
 ## Summary
 

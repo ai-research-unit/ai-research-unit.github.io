@@ -82,11 +82,11 @@ A related caution concerns the symbol $i$. In the framework, $i$ is the **scalar
 
 The two programmes do agree on one substantive geometric fact: the null cone is the fundamental object, and it is controlled by the two-component spinor.
 
-On the biquaternion side, the norm form $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2 = \det\Phi(\tilde{Q})$ vanishes exactly on the zero divisors, and the nonzero null elements are exactly the rank-one matrices. Projectivising, the null cone of $\mathbb{B}$ is a cone over the **Segre quadric** $\mathbb{P}^1\times\mathbb{P}^1 \subset \mathbb{PT}$, and its two rulings are the two families of chiral spinor lines — the primed and unprimed spinor lines. This is the content of the companion article *Biquaternion Null Quadric and Projective Geometry*, and it is not repeated here.
+On the biquaternion side, the biquaternion norm $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2 = \det\Phi(\tilde{Q})$ vanishes exactly on the zero divisors, and the nonzero null elements are exactly the rank-one matrices. Projectivising, the null cone of $\mathbb{B}$ is a cone over the **Segre quadric** $\mathbb{P}^1\times\mathbb{P}^1 \subset \mathbb{PT}$, and its two rulings are the two families of chiral spinor lines — the primed and unprimed spinor lines. This is the content of the companion article *Biquaternion Null Quadric and Projective Geometry*, and it is not repeated here.
 
 On the twistor side, the same projective space and the same spinor lines appear, now carrying the metric. The incidence relation makes the null separation of two points a statement about the intersection of two lines: the null cone at $x$ is swept out by the points $y$ whose lines $L_y$ meet $L_x$, and this is exactly the condition $\det(x-y)=0$. The Klein correspondence is the dictionary between the two descriptions of the same projective geometry.
 
-Two qualifications keep the agreement honest. First, the quadrics are different objects. The biquaternion norm form $N$ is a **complex bilinear** (symmetric) form on $\mathbb{B}\cong\mathbb{C}^4$, and its null cone is a complex quadric; the twistor form $h$ is **Hermitian** of signature $(2,2)$, and its null set is the real cone that defines the conformal structure. They agree in being governed by the spinor and its two chiralities, not in being the same equation. Second, the agreement is at the level of the algebra of spinors and null directions, which is standard; neither programme owns it.
+Two qualifications keep the agreement honest. First, the quadrics are different objects. The biquaternion norm $N$ is a **complex bilinear** (symmetric) form on $\mathbb{B}\cong\mathbb{C}^4$, and its null cone is a complex quadric; the twistor form $h$ is **Hermitian** of signature $(2,2)$, and its null set is the real cone that defines the conformal structure. They agree in being governed by the spinor and its two chiralities, not in being the same equation. Second, the agreement is at the level of the algebra of spinors and null directions, which is standard; neither programme owns it.
 
 ## Where the Aims Diverge
 
@@ -127,7 +127,7 @@ The biquaternion algebra $\mathbb{B}\cong M_2(\mathbb{C})$ carries three distinc
 | $\mathbb{M}_+$ | Hermitian subspace (informational sector), fixed points of $\dagger$ |
 | $\mathbb{H}_{\mathbb{B}}$ | Real-quaternion subspace, fixed points of complex conjugation |
 | $\mathbb{C}_{\mathbb{B}}$ | Complex subspace, fixed points of quaternion conjugation |
-| $N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}=\sum_\mu Q_\mu^2$ | Norm form (determinant) |
+| $N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}=\sum_\mu Q_\mu^2$ | Biquaternion norm (determinant) |
 | $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ | Trace formula (Born rule) |
 | $S=\mathbb{C}^2$ | Spinor module, unique simple module of $\mathbb{B}$ |
 | $(\tfrac12,0)=S$, $(0,\tfrac12)=\bar{S}$ | Left- and right-handed Weyl modules |

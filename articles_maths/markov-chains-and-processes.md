@@ -37,7 +37,7 @@ p^{(m+n)}(x,B) = \int_E p^{(m)}(x,dy)\,p^{(n)}(y,B), \qquad P^{m+n} = P^mP^n \te
 $$
 
 *Proof.* Condition on $X_m$ and apply the Markov property to the last $n$ steps:
-$\mathbb{P}_x(X_{m+n}\in B) = \sum_y \mathbb{P}_x(X_m=y)\mathbb{P}(X_{m+n}\in B\mid X_m=y) = \sum_y p^{(m)}(x,y)p^{(n)}(y,B)$. $\square$
+$\mathbb{P}_x(X_{m+n}\in B) = \sum_y \mathbb{P}_x(X_m=y)\mathbb{P}(X_{m+n}\in B\mid X_m=y) = \sum_y p^{(m)}(x,y)p^{(n)}(y,B)$.
 
 **Theorem (strong Markov property).** Let $\tau$ be a stopping time for the natural filtration of the chain. Then conditionally on $\{\tau < \infty\}$ and $X_\tau = x$, the post-$\tau$ process $(X_{\tau+n})_{n\geq0}$ is a Markov chain with transition matrix $P$ started at $x$, and it is conditionally independent of $\mathcal{F}_\tau$ given $X_\tau$.
 
@@ -49,7 +49,7 @@ The strong Markov property is the extension of the Markov property to random tim
 
 **Theorem.** Let $h$ be bounded and harmonic for a Markov chain and let $\mathcal{F}_n = \sigma(X_0,\dots,X_n)$. Then $\{h(X_n)\}$ is a martingale.
 
-*Proof.* By the Markov property, $\mathbb{E}[h(X_{n+1})\mid\mathcal{F}_n] = \mathbb{E}_{X_n}[h(X_1)] = Ph(X_n) = h(X_n)$. $\square$
+*Proof.* By the Markov property, $\mathbb{E}[h(X_{n+1})\mid\mathcal{F}_n] = \mathbb{E}_{X_n}[h(X_1)] = Ph(X_n) = h(X_n)$.
 
 The theorem is the bridge between the Markov and martingale theories: harmonic functions produce martingales, the martingale convergence theorem controls their limits, and the identity $Ph = h$ is the discrete maximum principle. The classical application is the uniqueness of the bounded harmonic functions on a recurrent class — the boundary theory of the chain — and the same correspondence appears in the harmonic functions of a group and the random walks.
 
@@ -67,7 +67,7 @@ The theorem is the bridge between the Markov and martingale theories: harmonic f
 
 **Theorem (recurrence criterion).** A state $x$ is recurrent if and only if $\sum_{n\geq0}p^{(n)}(x,x) = \infty$; it is transient if and only if the series converges, in which case $N_x < \infty$ a.s. and $\mathbb{E}_x[N_x] = 1/(1 - \mathbb{P}_x(\tau_x^+ < \infty))$.
 
-*Proof.* Decompose the expected number of visits into the sum of the probabilities of return, and use the strong Markov property at the successive return times: the number of visits is a geometric random variable with success probability $1 - \mathbb{P}_x(\tau_x^+<\infty) < 1$ in the transient case. In the recurrent case the expectation diverges. $\square$
+*Proof.* Decompose the expected number of visits into the sum of the probabilities of return, and use the strong Markov property at the successive return times: the number of visits is a geometric random variable with success probability $1 - \mathbb{P}_x(\tau_x^+<\infty) < 1$ in the transient case. In the recurrent case the expectation diverges.
 
 The criterion is the standard test for recurrence, and it is the form in which the recurrence of the simple random walk on $\mathbb{Z}^d$ is decided: the return probabilities are of order $n^{-d/2}$, whose sum diverges for $d \leq 2$ and converges for $d \geq 3$, which is Pólya's theorem.
 
@@ -97,7 +97,7 @@ $$
 \frac{1}{n}\sum_{k=0}^{n-1}f(X_k) \longrightarrow \int_E f\,d\pi \qquad \text{a.s.}
 $$
 
-*Proof (sketch).* The argument is the regenerative decomposition at the successive visits to a fixed state $x$: the chain decomposes into independent and identically distributed **excursions** away from $x$, by the strong Markov property, and the empirical average over an excursion converges by the law of large numbers of *Laws of Large Numbers and the Central Limit Theorem*. The ratio of the excursion sums to the excursion lengths gives the identity $\int f\,d\pi = \mathbb{E}_x\bigl[\sum_{k<\tau_x^+}f(X_k)\bigr]/\mathbb{E}_x[\tau_x^+]$. The full statement is the special case of the pointwise ergodic theorem, applied to the shift on the canonical path space with the invariant measure $\pi$. $\square$
+*Proof (sketch).* The argument is the regenerative decomposition at the successive visits to a fixed state $x$: the chain decomposes into independent and identically distributed **excursions** away from $x$, by the strong Markov property, and the empirical average over an excursion converges by the law of large numbers of *Laws of Large Numbers and the Central Limit Theorem*. The ratio of the excursion sums to the excursion lengths gives the identity $\int f\,d\pi = \mathbb{E}_x\bigl[\sum_{k<\tau_x^+}f(X_k)\bigr]/\mathbb{E}_x[\tau_x^+]$. The full statement is the special case of the pointwise ergodic theorem, applied to the shift on the canonical path space with the invariant measure $\pi$.
 
 The formula $\int f\,d\pi = \mathbb{E}_x[\sum_{k<\tau_x^+}f(X_k)]/\mathbb{E}_x[\tau_x^+]$ is the **Kac formula**, and it is the bridge between the Markov classification and the ergodic theory: the stationary measure is the expected occupation measure of an excursion normalised by its expected duration.
 
@@ -111,7 +111,7 @@ $$
 
 where $\|\cdot\|_{\mathrm{TV}}$ is the total variation norm; and if the chain is periodic with period $d$, the convergence holds along each residue class modulo $d$ with the appropriate limiting measure.
 
-*Proof (sketch).* The argument is coupling: two copies of the chain are run independently until they meet, and after the meeting they are glued; the coupling inequality bounds the total variation distance by the probability that the two copies have not met by time $n$, which tends to $0$ for an irreducible aperiodic positive recurrent chain. $\square$
+*Proof (sketch).* The argument is coupling: two copies of the chain are run independently until they meet, and after the meeting they are glued; the coupling inequality bounds the total variation distance by the probability that the two copies have not met by time $n$, which tends to $0$ for an irreducible aperiodic positive recurrent chain.
 
 The convergence theorem is the Markov-chain form of mixing, and it is the reason the Markov chain Monte Carlo method works. The rate is governed by the **spectral gap**.
 

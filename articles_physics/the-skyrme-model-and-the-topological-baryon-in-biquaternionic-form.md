@@ -26,7 +26,7 @@ B = -\frac{2}{\pi}\int_0^\infty \sin^2\!F\,\frac{dF}{dr}\,dr = \frac{1}{\pi}\lef
 $$
 so $B = 1$ for the profile $F(0) = \pi$, $F(\infty) = 0$, and $B = k$ for $F(0) = k\pi$: the winding is additive, and the values $B = 1, 2, 3$ were recomputed to nine figures. The purely two-derivative model has no stable three-dimensional soliton — Derrick's scaling gives $E(\lambda) = E_2/\lambda$, which is minimized by collapse — and the Skyrme term supplies the compensating $\lambda E_4$, whose minimum sits at $\lambda_* = \sqrt{E_2/E_4}$ with $E = 2\sqrt{E_2E_4}$; recomputed.
 - **Interpretation.** Identifying the unit real quaternion with the skyrmion field, and the algebra-valued flat current with the topological density, is the interpretive step. The baryon number as a degree of a map, and the soliton's quantisation into nucleons, are standard and imported.
-- **Gap, left visible.** The framework supplies the group manifold, the flat current and the norm form; it does not supply the fermionic baryon, the Wess–Zumino–Witten term, or the anomaly that fixes the quantisation. Baryon number is standard topology, and the identification of the soliton with the physical nucleon is the large-$N_c$ statement, imported.
+- **Gap, left visible.** The framework supplies the group manifold, the flat current and the biquaternion norm; it does not supply the fermionic baryon, the Wess–Zumino–Witten term, or the anomaly that fixes the quantisation. Baryon number is standard topology, and the identification of the soliton with the physical nucleon is the large-$N_c$ statement, imported.
 
 - Companion article *The Nonlinear Sigma Model in Biquaternionic Form*, for the chiral field, its target and its flat current, and for the derivative expansion and the power counting.
 - Companion article *The Pion and the Chiral Lagrangian in Biquaternionic Form*, for the pion decay constant and the identification of the field with the pion.
@@ -36,7 +36,7 @@ so $B = 1$ for the profile $F(0) = \pi$, $F(\infty) = 0$, and $B = k$ for $F(0) 
 - Companion article *Chiral Fermions in the Biquaternion Framework*, for the anomaly context of the Wess–Zumino–Witten term.
 - Companion article *The Standard Model under the Biquaternion Framework — A Research Agenda*, for the flavour and matter content.
 
-**Conventions.** We use those of the companion articles throughout. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$ and $e_ae_b = -\delta_{ab}e_0 + \varepsilon_{abc}e_c$, and $i$ is the central scalar imaginary. The sectors are $\mathbb{M}_-$ (anti-Hermitian, material) and $\mathbb{M}_+$ (Hermitian, informational); $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace and $\mathbb{H}^1_{\mathbb{B}}$ the unit real quaternions $\cong SU(2)\cong\mathbb{S}^3$. The skyrmion field is $\tilde U\in\mathbb{H}^1_{\mathbb{B}}$, its current is $j_\mu = \tilde U^{-1}\partial_\mu\tilde U\in\mathfrak{su}(2)\subset\mathbb{M}_-$, and the invariant trace is $\mathrm{Tr} = 2\,\mathrm{Sc}$ with the matrix trace $\mathrm{Tr}(e_ae_b) = -2\delta_{ab}$. The gradient is $\tilde\nabla = e_0\partial_{ict} + e_k\partial_k$, the $ict$ metric is $\eta = \mathrm{diag}(-1,+1,+1,+1)$, and the norm-form contraction is the one whose positive kinetic term carries the overall sign exhibited below. The energy functional is written in the static gauge with coordinates $\mathbf{x}\in\mathbb{R}^3$, and natural units $\hbar = c = 1$ are used throughout. The decay constant is $f_\pi$ and the Skyrme parameter is $e$; the pion field is $\tilde\pi = \pi^a e_a\in\mathfrak{su}(2)\subset\mathbb{M}_-$ with $\tilde U = \exp(\tilde\pi/f_\pi)$, as in the pion article. The Skyrme Lagrangian is understood as the leading part of a derivative expansion of the pion effective theory, not as part of the framework's fundamental Lagrangian; the framework's fundamental scalar is free and has no potential, as the instanton-and-soliton article records.
+**Conventions.** We use those of the companion articles throughout. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$ and $e_ae_b = -\delta_{ab}e_0 + \varepsilon_{abc}e_c$, and $i$ is the central scalar imaginary. The sectors are $\mathbb{M}_-$ (anti-Hermitian, material) and $\mathbb{M}_+$ (Hermitian, informational); $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace and $\mathbb{H}^1_{\mathbb{B}}$ the unit real quaternions $\cong SU(2)\cong\mathbb{S}^3$. The skyrmion field is $\tilde U\in\mathbb{H}^1_{\mathbb{B}}$, its current is $j_\mu = \tilde U^{-1}\partial_\mu\tilde U\in\mathrm{SU}(2)\subset\mathbb{M}_-$, and the invariant trace is $\mathrm{Tr} = 2\,\mathrm{Sc}$ with the matrix trace $\mathrm{Tr}(e_ae_b) = -2\delta_{ab}$. The gradient is $\tilde\nabla = e_0\partial_{ict} + e_k\partial_k$, the $ict$ metric is $\eta = \mathrm{diag}(-1,+1,+1,+1)$, and the biquaternion-norm contraction is the one whose positive kinetic term carries the overall sign exhibited below. The energy functional is written in the static gauge with coordinates $\mathbf{x}\in\mathbb{R}^3$, and natural units $\hbar = c = 1$ are used throughout. The decay constant is $f_\pi$ and the Skyrme parameter is $e$; the pion field is $\tilde\pi = \pi^a e_a\in\mathrm{SU}(2)\subset\mathbb{M}_-$ with $\tilde U = \exp(\tilde\pi/f_\pi)$, as in the pion article. The Skyrme Lagrangian is understood as the leading part of a derivative expansion of the pion effective theory, not as part of the framework's fundamental Lagrangian; the framework's fundamental scalar is free and has no potential, as the instanton-and-soliton article records.
 
 ## The Skyrme Field and the Skyrme Term
 
@@ -57,7 +57,7 @@ where the last identities hold because $\tilde U$ is a unit real quaternion. The
 **The current.** The Maurer–Cartan form of the companion article is
 
 $$
-j_\mu = \tilde U^{-1}\partial_\mu\tilde U \in \mathfrak{su}(2)\subset\mathbb{M}_- ,
+j_\mu = \tilde U^{-1}\partial_\mu\tilde U \in \mathrm{SU}(2)\subset\mathbb{M}_- ,
 $$
 
 and it is **flat**,
@@ -81,15 +81,15 @@ $$
 = \frac{1}{16e^2}\,\mathrm{Sc}\!\left(\left[j_\mu, j_\nu\right]\left[j_\mu, j_\nu\right]\right),
 $$
 
-with $e$ a dimensionless parameter. The commutator lies in $\mathfrak{su}(2)$, so its square is a negative-definite algebra element and the scalar part is negative; the overall sign of $\mathcal{L}_4$ is fixed by requiring the energy to be positive, and in the static gauge the term becomes
+with $e$ a dimensionless parameter. The commutator lies in $\mathrm{SU}(2)$, so its square is a negative-definite algebra element and the scalar part is negative; the overall sign of $\mathcal{L}_4$ is fixed by requiring the energy to be positive, and in the static gauge the term becomes
 
 $$
 \mathcal{L}_4 = \frac{1}{16e^2}\,\mathrm{Sc}\!\left([j_i,j_j][j_i,j_j]\right)\Big|_{\text{static}} .
 $$
 
-The two invariants $\mathcal{L}_2$ and $\mathcal{L}_4$ are the first two terms of the derivative expansion of the pion effective theory; the first fixes the target geometry and $f_\pi$, and the second is weighted by $1/e^2$. The framework's contribution is that both are norm forms of the algebra-valued current, and the reason the Skyrme term is a commutator is that $\mathfrak{su}(2)$ is the algebra the current lies in.
+The two invariants $\mathcal{L}_2$ and $\mathcal{L}_4$ are the first two terms of the derivative expansion of the pion effective theory; the first fixes the target geometry and $f_\pi$, and the second is weighted by $1/e^2$. The framework's contribution is that both are biquaternion norms of the algebra-valued current, and the reason the Skyrme term is a commutator is that $\mathrm{SU}(2)$ is the algebra the current lies in.
 
-<!-- CONVENTION — norm-form kinetic term: the contraction $\mathrm{Sc}(\bar j_\mu j_\mu)$ is summed over the four coordinate derivatives with both indices down, and the overall minus sign in $\mathcal{L}_2$ is what makes the kinetic energy positive. Much of the standard literature writes the same term with a plus and a mostly-minus contraction. Do not "fix" the minus sign. -->
+<!-- CONVENTION — biquaternion-norm kinetic term: the contraction $\mathrm{Sc}(\bar j_\mu j_\mu)$ is summed over the four coordinate derivatives with both indices down, and the overall minus sign in $\mathcal{L}_2$ is what makes the kinetic energy positive. Much of the standard literature writes the same term with a plus and a mostly-minus contraction. Do not "fix" the minus sign. -->
 
 **Why the fourth-order term is needed.** A term with four derivatives has dimension of length to the minus four in four spacetime dimensions and is therefore non-renormalizable; it is admitted in the effective theory because it is the leading term that can stabilise a soliton. The next section shows that the two-derivative term alone cannot.
 
@@ -156,7 +156,7 @@ B^\mu = \frac{1}{24\pi^2}\,\varepsilon^{\mu\nu\rho\sigma}\,\mathrm{Tr}\!\left(j_
 j_\mu = \tilde U^{-1}\partial_\mu\tilde U .
 $$
 
-The normalisation $\frac{1}{24\pi^2}$ is chosen so that the charge is an integer, and the trace is the matrix trace on $\mathfrak{su}(2)$. The current is **conserved identically**,
+The normalisation $\frac{1}{24\pi^2}$ is chosen so that the charge is an integer, and the trace is the matrix trace on $\mathrm{SU}(2)$. The current is **conserved identically**,
 
 $$
 \partial_\mu B^\mu = 0 ,
@@ -230,13 +230,13 @@ because the topological charge is conserved for the same reason baryon number is
 
 **The topological density is the flat current's cube.** The current $j_\mu = \tilde U^{-1}\partial_\mu\tilde U$ is the framework's Maurer–Cartan form, and the topological density is its totally antisymmetric cube. The density is therefore built from the algebra's commutators and the flatness of its current, and the normalisation $\frac{1}{24\pi^2}$ is the one that makes the charge the degree of the map. The framework supplies the object; the normalisation is standard topology.
 
-**The Skyrme term is a norm form.** Both terms of the Lagrangian are norm forms of the same flat current: $\mathcal{L}_2$ is the quadratic norm form and $\mathcal{L}_4$ is the norm form of the commutator. The algebra therefore organises the derivative expansion into invariants of the current, with $\mathrm{Sc}$ supplying the scalar extraction. This is the same role the trace plays elsewhere in the series, and it is the sense in which the Skyrme Lagrangian is a framework object.
+**The Skyrme term is a biquaternion norm.** Both terms of the Lagrangian are biquaternion norms of the same flat current: $\mathcal{L}_2$ is the quadratic biquaternion norm and $\mathcal{L}_4$ is the biquaternion norm of the commutator. The algebra therefore organises the derivative expansion into invariants of the current, with $\mathrm{Sc}$ supplying the scalar extraction. This is the same role the trace plays elsewhere in the series, and it is the sense in which the Skyrme Lagrangian is a framework object.
 
-**What is imported.** The identification of the winding with baryon number, the large-$N_c$ justification, the existence of the minimiser, the profile equation and its solution, the Wess–Zumino–Witten term with its colour-counting coefficient, and the quantisation that turns the soliton into the nucleon are all standard and imported. The framework supplies the target, the current and the norm form, and it supplies neither the fermionic baryon nor the anomaly that selects its statistics.
+**What is imported.** The identification of the winding with baryon number, the large-$N_c$ justification, the existence of the minimiser, the profile equation and its solution, the Wess–Zumino–Witten term with its colour-counting coefficient, and the quantisation that turns the soliton into the nucleon are all standard and imported. The framework supplies the target, the current and the biquaternion norm, and it supplies neither the fermionic baryon nor the anomaly that selects its statistics.
 
 ## Open Questions
 
-1. **Does the framework fix the Skyrme parameter?** The ratio $f_\pi/e$ sets the mass scale of the soliton; whether the framework's norm form or trace structure fixes a relation between $e$ and $f_\pi$, rather than leaving $e$ a free parameter, is not shown.
+1. **Does the framework fix the Skyrme parameter?** The ratio $f_\pi/e$ sets the mass scale of the soliton; whether the framework's biquaternion norm or trace structure fixes a relation between $e$ and $f_\pi$, rather than leaving $e$ a free parameter, is not shown.
 
 2. **The Wess–Zumino–Witten level.** Whether the framework's spinor sector supplies the anomaly coefficient that quantises the level to the number of colours — and hence the fermionic statistics of the skyrmion — is the question that would make the topological baryon a framework statement rather than an import.
 
@@ -266,7 +266,7 @@ $$
 
 For the hedgehog $\tilde U = \cos F\,e_0 + \sin F\,\hat r$ the density is $B^0 = -\frac{1}{2\pi^2}\sin^2F\,F'/r^2$ and the charge is $B = -\frac{2}{\pi}\int_0^\infty\sin^2F\,F'\,dr = \frac{1}{\pi}[F-\tfrac12\sin 2F]_{F(\infty)}^{F(0)}$, giving $B = k$ for $F(0) = k\pi$; the direct evaluation of the density agreed with the closed form, and the charges $B = 1, 2, 3$ were recomputed to nine figures. The purely two-derivative model has no stable three-dimensional soliton, since Derrick's scaling gives $E(\lambda) = E_2/\lambda$ with no minimum; the Skyrme term adds $\lambda E_4$ and the minimum sits at $\lambda_* = \sqrt{E_2/E_4}$ with $E = 2\sqrt{E_2E_4}$, recomputed.
 
-The framework supplies the target manifold, the flat current, the commutator structure and the norm-form organisation of the derivative expansion; it supplies neither the fermionic baryon, whose statistics come from the Wess–Zumino–Witten term, nor the anomaly that fixes the level, nor the large-$N_c$ justification of the identification. The topological baryon is thus a framework-compatible construction on the framework's own group manifold, with its dynamics and its quantisation imported.
+The framework supplies the target manifold, the flat current, the commutator structure and the biquaternion-norm organisation of the derivative expansion; it supplies neither the fermionic baryon, whose statistics come from the Wess–Zumino–Witten term, nor the anomaly that fixes the level, nor the large-$N_c$ justification of the identification. The topological baryon is thus a framework-compatible construction on the framework's own group manifold, with its dynamics and its quantisation imported.
 
 ## Summary of Notation
 

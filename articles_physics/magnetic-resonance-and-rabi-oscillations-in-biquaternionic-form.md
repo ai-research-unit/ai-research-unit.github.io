@@ -43,7 +43,7 @@ $$
 \omega_0 = \gamma B_0, \quad \omega_1 = \gamma B_1 .
 $$
 
-Here $\omega_0$ is the Larmor frequency and $\omega_1$ is the **Rabi frequency**, the rate set by the transverse amplitude. Each of the three terms lies in $\mathbb{M}_+$: the longitudinal term is a multiple of $ie_3$ and the transverse terms are multiples of $ie_1$ and $ie_2$, each with a real time-dependent coefficient. The Hamiltonian is therefore Hermitian at every instant, and the evolution it generates preserves the norm form and the trace, as the Schrödinger article requires.
+Here $\omega_0$ is the Larmor frequency and $\omega_1$ is the **Rabi frequency**, the rate set by the transverse amplitude. Each of the three terms lies in $\mathbb{M}_+$: the longitudinal term is a multiple of $ie_3$ and the transverse terms are multiples of $ie_1$ and $ie_2$, each with a real time-dependent coefficient. The Hamiltonian is therefore Hermitian at every instant, and the evolution it generates preserves the biquaternion norm and the trace, as the Schrödinger article requires.
 
 The choice of the $-\hat{y}$ sense for the second transverse component is the one that corotates with the Larmor precession in the convention of the companion exercise *Exercise: Spin Precession in a Magnetic Field*, where the Bloch vector of a spin in a static field precesses as $\mathbf{r}(t) = (\cos\omega_0 t, -\sin\omega_0 t, 0)$ for a state initially along $+\hat{x}$. The field of the equation above rotates in the same sense, so the drive remains in phase with the precession; a linearly polarised drive is the sum of this circular component and its counter-rotating partner, and the rotating-wave approximation discards the latter, as discussed below.
 

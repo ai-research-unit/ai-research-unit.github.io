@@ -1,3 +1,4 @@
+
 # __Split-Biquaternion Analysis__
 
 ## Introduction
@@ -8,7 +9,7 @@ The treatment is purely mathematical. The independent variables are four real va
 
 Every claim is either proved or stated as a definition. Where a computation is long, all steps are shown.
 
-The integral theory of split-biquaternion-valued functions is the subject of the companion article on split biquaternion integration. The specialization to the four fixed-point subspaces is the subject of the article on split biquaternion analysis on subspaces.
+The integral theory of split-biquaternion-valued functions is the subject of the companion article on split biquaternion integration. The specialization to the four fixed-point subspaces is treated in the four subspace articles of the category, from *Split-Biquaternion Split-Complex Subspace* to *Split-Biquaternion Anti-Hermitian Subspace*, each of which carries the analysis on its own subspace.
 
 Throughout, a split biquaternion is written
 
@@ -16,7 +17,7 @@ $$
 \tilde{Q} = Q_0 e_0 + Q_1 e_1 + Q_2 e_2 + Q_3 e_3, \qquad Q_\mu = q_\mu + j q'_\mu, \quad q_\mu, q'_\mu \in \mathbb{R}.
 $$
 
-The split complex unit is $j$, with $j^2 = +1$, and it commutes with the quaternion units. The quaternion conjugate is $\bar{\tilde{Q}} = Q_0 e_0 - \mathbf{Q}$, where $\mathbf{Q} = Q_1 e_1 + Q_2 e_2 + Q_3 e_3$. The split complex conjugate is $\tilde{Q}^* = Q_0^* e_0 + \mathbf{Q}^*$, with $Q_\mu^* = q_\mu - j q'_\mu$. The Hermitian conjugate is $\tilde{Q}^\dagger = \bar{\tilde{Q}}^*$, and the anti-Hermitian conjugate is $\tilde{Q}^\flat = -\tilde{Q}^\dagger$. The norm form is $N(\tilde{Q}) = \tilde{Q} \bar{\tilde{Q}}$.
+The split complex unit is $j$, with $j^2 = +1$, and it commutes with the quaternion units. The quaternion conjugate is $\bar{\tilde{Q}} = Q_0 e_0 - \mathbf{Q}$, where $\mathbf{Q} = Q_1 e_1 + Q_2 e_2 + Q_3 e_3$. The split complex conjugate is $\tilde{Q}^* = Q_0^* e_0 + \mathbf{Q}^*$, with $Q_\mu^* = q_\mu - j q'_\mu$. The Hermitian conjugate is $\tilde{Q}^\dagger = \bar{\tilde{Q}}^*$, and the anti-Hermitian conjugate is $\tilde{Q}^\flat = -\tilde{Q}^\dagger$. The split-biquaternion norm is $N(\tilde{Q}) = \tilde{Q} \bar{\tilde{Q}}$.
 
 The idempotents of the split complex algebra are $\tilde\Pi_+ = \tfrac{1}{2}(1 + j)$ and $\tilde\Pi_- = \tfrac{1}{2}(1 - j)$. The idempotent decomposition of a split biquaternion is
 
@@ -42,7 +43,7 @@ $$
 \|\tilde{Q} + \tilde{R}\|_E \leq \|\tilde{Q}\|_E + \|\tilde{R}\|_E, \qquad \|\lambda \tilde{Q}\|_E = |\lambda| \|\tilde{Q}\|_E, \qquad \lambda \in \mathbb{R}.
 $$
 
-The Euclidean norm is **not** the square root of the norm form or of the Hermitian form. The norm form is split complex-valued and is not positive-definite; the Hermitian form is real but indefinite of signature $(4, 4)$. The Euclidean norm is defined separately, and it is the norm that gives $\mathbb{H}_{\mathbb{D}}$ its structure as a metric space.
+The Euclidean norm is **not** the square root of the split-biquaternion norm or of the Hermitian form. The split-biquaternion norm is split complex-valued and is not positive-definite; the Hermitian form is real but indefinite of signature $(4, 4)$. The Euclidean norm is defined separately, and it is the split-biquaternion norm that gives $\mathbb{H}_{\mathbb{D}}$ its structure as a metric space.
 
 ### The Distance
 
@@ -90,11 +91,11 @@ $$
 \|\tilde{L} - \tilde{L}'\|_E \leq \|\tilde{L} - \tilde{F}(\tilde{Q})\|_E + \|\tilde{F}(\tilde{Q}) - \tilde{L}'\|_E < 2\varepsilon = \|\tilde{L} - \tilde{L}'\|_E,
 $$
 
-a contradiction. $\square$
+a contradiction.
 
 **Theorem (sequential criterion).** $\lim_{\tilde{Q} \to \tilde{Q}_0} \tilde{F}(\tilde{Q}) = \tilde{L}$ if and only if for every sequence $(\tilde{Q}_n)$ in $\mathbb{H}_{\mathbb{D}} \setminus \{\tilde{Q}_0\}$ with $\tilde{Q}_n \to \tilde{Q}_0$, we have $\tilde{F}(\tilde{Q}_n) \to \tilde{L}$.
 
-**Proof.** The forward direction is immediate from the definition. For the converse, suppose the limit is not $\tilde{L}$. Then there exists $\varepsilon > 0$ such that for every $\delta > 0$ there exists $\tilde{Q}$ with $0 < \|\tilde{Q} - \tilde{Q}_0\|_E < \delta$ and $\|\tilde{F}(\tilde{Q}) - \tilde{L}\|_E \geq \varepsilon$. Taking $\delta = 1/n$ gives a sequence $\tilde{Q}_n \to \tilde{Q}_0$ with $\tilde{F}(\tilde{Q}_n) \not\to \tilde{L}$, contradicting the hypothesis. $\square$
+**Proof.** The forward direction is immediate from the definition. For the converse, suppose the limit is not $\tilde{L}$. Then there exists $\varepsilon > 0$ such that for every $\delta > 0$ there exists $\tilde{Q}$ with $0 < \|\tilde{Q} - \tilde{Q}_0\|_E < \delta$ and $\|\tilde{F}(\tilde{Q}) - \tilde{L}\|_E \geq \varepsilon$. Taking $\delta = 1/n$ gives a sequence $\tilde{Q}_n \to \tilde{Q}_0$ with $\tilde{F}(\tilde{Q}_n) \not\to \tilde{L}$, contradicting the hypothesis.
 
 **Theorem (algebra of limits).** If $\tilde{F}(\tilde{Q}) \to \tilde{L}$ and $\tilde{G}(\tilde{Q}) \to \tilde{M}$ as $\tilde{Q} \to \tilde{Q}_0$, then
 
@@ -114,7 +115,7 @@ $$
 \tilde{F} \tilde{G} - \tilde{L} \tilde{M} = (\tilde{F} - \tilde{L}) \tilde{G} + \tilde{L} (\tilde{G} - \tilde{M}),
 $$
 
-and the fact that $\tilde{G}$ is bounded near $\tilde{Q}_0$ (because it has a limit). $\square$
+and the fact that $\tilde{G}$ is bounded near $\tilde{Q}_0$ (because it has a limit).
 
 ### Continuity
 
@@ -134,15 +135,15 @@ The function is **continuous on an open set** if it is continuous at every point
 
 **Theorem (basic properties).** If $\tilde{F}$ and $\tilde{G}$ are continuous at $\tilde{Q}_0$, then so are $\tilde{F} + \tilde{G}$ and $\tilde{F} \circ \tilde{G}$. If $\tilde{F}$ is continuous at $\tilde{Q}_0$ and $\tilde{G}$ is continuous at $\tilde{F}(\tilde{Q}_0)$, then $\tilde{G} \circ \tilde{F}$ is continuous at $\tilde{Q}_0$.
 
-**Proof.** The first two claims follow from the algebra of limits. The third follows from the definition: given $\varepsilon > 0$, choose $\eta > 0$ with $\|\tilde{G}(\tilde{R}) - \tilde{G}(\tilde{F}(\tilde{Q}_0))\|_E < \varepsilon$ when $\|\tilde{R} - \tilde{F}(\tilde{Q}_0)\|_E < \eta$, and then choose $\delta > 0$ with $\|\tilde{F}(\tilde{Q}) - \tilde{F}(\tilde{Q}_0)\|_E < \eta$ when $\|\tilde{Q} - \tilde{Q}_0\|_E < \delta$. $\square$
+**Proof.** The first two claims follow from the algebra of limits. The third follows from the definition: given $\varepsilon > 0$, choose $\eta > 0$ with $\|\tilde{G}(\tilde{R}) - \tilde{G}(\tilde{F}(\tilde{Q}_0))\|_E < \varepsilon$ when $\|\tilde{R} - \tilde{F}(\tilde{Q}_0)\|_E < \eta$, and then choose $\delta > 0$ with $\|\tilde{F}(\tilde{Q}) - \tilde{F}(\tilde{Q}_0)\|_E < \eta$ when $\|\tilde{Q} - \tilde{Q}_0\|_E < \delta$.
 
 **Theorem (component-wise continuity).** A function $\tilde{F} = \sum_\mu F_\mu e_\mu$ is continuous at $\tilde{Q}_0$ if and only if each split complex-valued coefficient $F_\mu$ is continuous at $\tilde{Q}_0$, which in turn holds if and only if each of the eight real-valued functions $\Re(F_\mu)$, $\Im(F_\mu)$ (with respect to $j$) is continuous at $\tilde{Q}_0$.
 
-**Proof.** The Euclidean norm is equivalent to the maximum of the moduli of the coefficients, and the modulus of a split complex number is equivalent to the maximum of the absolute values of its real and split parts. So convergence in $\mathbb{H}_{\mathbb{D}}$ is equivalent to convergence of each of the eight real components. $\square$
+**Proof.** The Euclidean norm is equivalent to the maximum of the moduli of the coefficients, and the modulus of a split complex number is equivalent to the maximum of the absolute values of its real and split parts. So convergence in $\mathbb{H}_{\mathbb{D}}$ is equivalent to convergence of each of the eight real components.
 
 **Theorem (uniform continuity).** A continuous function on a compact subset of $\mathbb{H}_{\mathbb{D}}$ is uniformly continuous.
 
-**Proof.** This is the standard argument: if $\tilde{F}$ is not uniformly continuous, there exist $\varepsilon > 0$ and sequences $(\tilde{Q}_n)$, $(\tilde{R}_n)$ in the compact set with $\|\tilde{Q}_n - \tilde{R}_n\|_E \to 0$ but $\|\tilde{F}(\tilde{Q}_n) - \tilde{F}(\tilde{R}_n)\|_E \geq \varepsilon$. By compactness, pass to a subsequence with $\tilde{Q}_n \to \tilde{Q}$. Then $\tilde{R}_n \to \tilde{Q}$, and by continuity $\tilde{F}(\tilde{Q}_n) \to \tilde{F}(\tilde{Q})$ and $\tilde{F}(\tilde{R}_n) \to \tilde{F}(\tilde{Q})$, contradicting the inequality. $\square$
+**Proof.** This is the standard argument: if $\tilde{F}$ is not uniformly continuous, there exist $\varepsilon > 0$ and sequences $(\tilde{Q}_n)$, $(\tilde{R}_n)$ in the compact set with $\|\tilde{Q}_n - \tilde{R}_n\|_E \to 0$ but $\|\tilde{F}(\tilde{Q}_n) - \tilde{F}(\tilde{R}_n)\|_E \geq \varepsilon$. By compactness, pass to a subsequence with $\tilde{Q}_n \to \tilde{Q}$. Then $\tilde{R}_n \to \tilde{Q}$, and by continuity $\tilde{F}(\tilde{Q}_n) \to \tilde{F}(\tilde{Q})$ and $\tilde{F}(\tilde{R}_n) \to \tilde{F}(\tilde{Q})$, contradicting the inequality.
 
 ## The Problem of Differentiability
 
@@ -169,7 +170,7 @@ These two conventions give different results in general. So the derivative would
 
 The quotient $\tilde{A} / \tilde{H}$ requires $\tilde{H}^{-1}$ to exist. In a division algebra, every nonzero element has an inverse, so this is automatic. In $\mathbb{H}_{\mathbb{D}}$, however, the zero divisor set is the union of two four-dimensional linear subspaces $Z_+$ and $Z_-$, and for $\tilde{H}$ in this set (with $\tilde{H} \neq 0$), the inverse does not exist.
 
-So the limit defining the derivative cannot be evaluated along directions in which $\tilde{H}$ is a zero divisor. The zero divisor set in the split biquaternion case is a union of two linear subspaces, which is a different geometry from the complex cone of the biquaternion case. In particular, the zero divisor set has real codimension 4, while the biquaternion zero divisor set, being the zero set of the complex norm form, has real codimension 2 (complex dimension 3, real dimension 6). Neither set has interior points, so a generic direction in the ambient algebra is a zero divisor in neither case; what distinguishes the split biquaternion case is that its zero divisor set is a finite union of linear subspaces rather than a cone cut out by a single complex equation.
+So the limit defining the derivative cannot be evaluated along directions in which $\tilde{H}$ is a zero divisor. The zero divisor set in the split biquaternion case is a union of two linear subspaces, which is a different geometry from the complex cone of the biquaternion case. In particular, the zero divisor set has real codimension 4, while the biquaternion zero divisor set, being the zero set of the complex norm, has real codimension 2 (complex dimension 3, real dimension 6). Neither set has interior points, so a generic direction in the ambient algebra is a zero divisor in neither case; what distinguishes the split biquaternion case is that its zero divisor set is a finite union of linear subspaces rather than a cone cut out by a single complex equation.
 
 ### The Standard Approach
 
@@ -437,6 +438,22 @@ The zero divisor set of $\mathbb{H}_{\mathbb{D}}$ is the union of two four-dimen
 
 **In the integration theory.** The fundamental solution of the gradient has singularities on the zero divisor set, and the integral formulas require careful treatment on or near the zero divisors.
 
+## The Root Set as a Manifold
+
+The root set of $-1$ in $\mathbb{H}_{\mathbb{D}}$ is the product of two copies of the unit sphere $\mathbb{S}^2$:
+
+$$
+\{\xi \in \mathbb{H}_{\mathbb{D}} : \xi^2 = -1\} \cong \mathbb{S}^2 \times \mathbb{S}^2.
+$$
+
+The isomorphism is given by $\xi \mapsto (\mu_+, \mu_-)$, where $\xi = \mu_+ \tilde\Pi_+ + \mu_- \tilde\Pi_-$ and $\mu_\pm$ are unit pure real quaternions.
+
+The parametrisation $\xi \mapsto (\mu_+, \mu_-)$ is a regular parametrisation: its differential has rank $4$ everywhere, because the two-sphere is a manifold and the parametrisation is a product of the two identity maps. So the root set of $-1$ in $\mathbb{H}_{\mathbb{D}}$ is a compact four-dimensional embedded submanifold, isomorphic to $\mathbb{S}^2 \times \mathbb{S}^2$. The proof of regularity uses the derivative, and for that reason the manifold statement is placed here in the analysis rather than in the algebraic article *Split-Biquaternion Roots of Minus One*, where the root set is determined only as a set.
+
+### Comparison with the Biquaternion Root Set
+
+The biquaternion root set has dimension 4 (the non-trivial family is four-dimensional, and the degenerate families are lower-dimensional). So both root sets have dimension 4, but their structures are different: the biquaternion root set is a four-dimensional stratified space with a more complicated topology, while the split biquaternion root set is the product of two two-spheres.
+
 ## Open Questions
 
 The following questions are not answered in this article and are left for later work:
@@ -474,8 +491,6 @@ The **idempotent decomposition** is the most important structural tool in the sp
 
 The specialization to specific four-dimensional subspaces, including the quaternion subspace $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$, the Hermitian subspace $\mathbb{M}_+$, and the anti-Hermitian subspace $\mathbb{M}_-$, is not covered here. The integral theory, including the Cauchy integral formula, is the subject of the companion article on split biquaternion integration.
 
-
-
 ## Summary of Notation
 
 | Symbol | Meaning |
@@ -490,7 +505,7 @@ The specialization to specific four-dimensional subspaces, including the quatern
 | $Q_\mu = q_\mu + j q'_\mu$ | Split complex coefficient |
 | $\mathbf{Q} = Q_1 e_1 + Q_2 e_2 + Q_3 e_3$ | Split vector part |
 | $\bar{\tilde{Q}}, \tilde{Q}^*, \tilde{Q}^\dagger, \tilde{Q}^\flat$ | The four conjugations |
-| $N(\tilde{Q}) = \tilde{Q} \bar{\tilde{Q}}$ | Norm form |
+| $N(\tilde{Q}) = \tilde{Q} \bar{\tilde{Q}}$ | Split-Biquaternion norm |
 | $\tilde{Q}_\pm = \tilde{Q} \tilde\Pi_\pm$ | Idempotent components |
 | $\|\tilde{Q}\|_E$ | Euclidean norm on $\mathbb{H}_{\mathbb{D}} \cong \mathbb{R}^8$ |
 | $d(\tilde P, \tilde{Q}) = \|\tilde P - \tilde{Q}\|_E$ | Distance |
@@ -501,6 +516,7 @@ The specialization to specific four-dimensional subspaces, including the quatern
 | $\Box$ | d'Alembertian (wave operator) |
 | $\tilde{\nabla}^2$ | Square of the split-biquaternion gradient |
 | $\tilde{D}$ | Split-biquaternion convective derivative |
+| $\{\xi \in \mathbb{H}_{\mathbb{D}} : \xi^2 = -1\} \cong \mathbb{S}^2\times\mathbb{S}^2$ | Root set of $-1$, a compact four-dimensional manifold |
 
 ## Further Reading
 

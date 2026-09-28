@@ -23,7 +23,7 @@ The characteristic function is the tool that converts a statement about distribu
 
 **Theorem (Lévy's continuity theorem).** Let $\mu_n$ be probability measures on $\mathbb{R}$ with characteristic functions $\varphi_n$ and suppose $\varphi_n(t) \to \varphi(t)$ for every $t$ and $\varphi$ is continuous at $t=0$. Then $\varphi$ is the characteristic function of a probability measure $\mu$ and $\mu_n \to \mu$ weakly.
 
-*Proof.* The measures $\mu_n$ are tight: by the estimate of the next lemma, a uniform bound of the integrals of $1-\Re\varphi_n$ over a neighbourhood of $0$ controls the mass outside a large compact set, and the assumed convergence to a function continuous at $0$ gives that bound. Tightness supplies a weakly convergent subsequence $\mu_{n_k} \to \mu$, whose characteristic function is $\varphi$ by the elementary direction; the limit is independent of the subsequence because the limit function $\varphi$ is the same, so the whole sequence converges. $\square$
+*Proof.* The measures $\mu_n$ are tight: by the estimate of the next lemma, a uniform bound of the integrals of $1-\Re\varphi_n$ over a neighbourhood of $0$ controls the mass outside a large compact set, and the assumed convergence to a function continuous at $0$ gives that bound. Tightness supplies a weakly convergent subsequence $\mu_{n_k} \to \mu$, whose characteristic function is $\varphi$ by the elementary direction; the limit is independent of the subsequence because the limit function $\varphi$ is the same, so the whole sequence converges.
 
 **Lemma (tail estimate).** For a probability measure with characteristic function $\varphi$ and any $u > 0$,
 
@@ -31,7 +31,7 @@ $$
 \mu\bigl((-\infty, -2/u] \cup [2/u, \infty)\bigr) \leq \frac{2}{u}\int_{-u}^{u}\bigl(1 - \Re\varphi(t)\bigr)\, dt.
 $$
 
-*Proof.* Integrate the identity $1 - \Re\varphi(t) = \int (1 - \cos tx)\, d\mu(x)$ over $-u \le t \le u$ and use $(1/u)\int_{-u}^u(1-\cos tx)\,dt = 1 - \sin(ux)/(ux)$, which is at least $1/2$ for $|ux| \ge 2$; this last inequality gives, after dividing by $u$, the bound $\mu(|x|\ge 2/u)\le \frac{2}{u}\int_{-u}^{u}(1 - \Re\varphi(t))\,dt$ on the union of the two tails. $\square$
+*Proof.* Integrate the identity $1 - \Re\varphi(t) = \int (1 - \cos tx)\, d\mu(x)$ over $-u \le t \le u$ and use $(1/u)\int_{-u}^u(1-\cos tx)\,dt = 1 - \sin(ux)/(ux)$, which is at least $1/2$ for $|ux| \ge 2$; this last inequality gives, after dividing by $u$, the bound $\mu(|x|\ge 2/u)\le \frac{2}{u}\int_{-u}^{u}(1 - \Re\varphi(t))\,dt$ on the union of the two tails.
 
 The continuity theorem is the reason the central limit theorem is proved by computing the limit of the characteristic functions: one computes $\varphi_{Z_n}(t) \to e^{-t^2/2}$ for every $t$, observes that the limit is continuous, and invokes Lévy. The same pattern proves the convergence of the binomial to the normal, of the Poisson to the normal in the appropriate regime, and of the triangular-array limits of the next sections.
 
@@ -47,7 +47,7 @@ $$
 \mathbb{P}\bigl(|\bar X_n - \mu| \geq \varepsilon\bigr) \leq \frac{\operatorname{Var}(\bar X_n)}{\varepsilon^2} = \frac{\sigma^2}{n\varepsilon^2} \longrightarrow 0
 $$
 
-for every $\varepsilon > 0$. $\square$
+for every $\varepsilon > 0$.
 
 The proof shows that the weak law at finite variance is a variance computation, and that the rate is $O(1/n)$. The assumption of a common variance is unnecessary and the next theorem removes both it and the assumption of identical moments.
 
@@ -61,7 +61,7 @@ $$
 \operatorname{Var}(\bar Y_n) = \frac{1}{n}\operatorname{Var}(Y_{n,1}) \leq \frac{1}{n}\mathbb{E}\bigl[X_1^2\mathbf{1}_{\{|X_1|\le n\}}\bigr] \leq \mathbb{E}\bigl[|X_1|\mathbf{1}_{\{|X_1|\le n\}}\bigr] \longrightarrow 0
 $$
 
-by dominated convergence, because $|X_1|\mathbf{1}_{\{|X_1|\le n\}}\le|X_1| \in L^1$; hence $\bar Y_n \xrightarrow{\mathbb{P}} \mu$ by Chebyshev. It remains to control the discarded mass: $\mathbb{P}(\bigcup_{i\le n}\{X_i \neq Y_{n,i}\}) \leq n\mathbb{P}(|X_1| > n) \to 0$ since $n\mathbf{1}_{\{|X_1|>n\}}\le|X_1|\mathbf{1}_{\{|X_1|>n\}}$ and $X_1$ is integrable, and on the complement the two averages coincide. $\square$
+by dominated convergence, because $|X_1|\mathbf{1}_{\{|X_1|\le n\}}\le|X_1| \in L^1$; hence $\bar Y_n \xrightarrow{\mathbb{P}} \mu$ by Chebyshev. It remains to control the discarded mass: $\mathbb{P}(\bigcup_{i\le n}\{X_i \neq Y_{n,i}\}) \leq n\mathbb{P}(|X_1| > n) \to 0$ since $n\mathbf{1}_{\{|X_1|>n\}}\le|X_1|\mathbf{1}_{\{|X_1|>n\}}$ and $X_1$ is integrable, and on the complement the two averages coincide.
 
 The truncation argument is the standard method for extracting a law of large numbers from an integrability hypothesis, and it identifies the correct hypothesis: the weak law holds precisely when the truncated means converge to $\mu$, which fails exactly for the distributions with $\mathbb{E}|X_1| = \infty$ and a Cauchy-like tail. The prototypical failure is the Cauchy distribution, whose characteristic function is $e^{-|t|}$ and for which the sample mean has the same Cauchy distribution for every $n$, so it does not converge.
 
@@ -81,7 +81,7 @@ $$
 \mathbb{E}[S_n^2] \geq \sum_{k=1}^{n}\mathbb{E}\bigl[S_n^2\mathbf{1}_{A_k}\bigr] = \sum_{k=1}^{n}\left(\mathbb{E}\bigl[S_k^2\mathbf{1}_{A_k}\bigr] + 2\mathbb{E}\bigl[S_k(S_n - S_k)\mathbf{1}_{A_k}\bigr] + \mathbb{E}\bigl[(S_n-S_k)^2\mathbf{1}_{A_k}\bigr]\right).
 $$
 
-The cross term vanishes because $S_k\mathbf{1}_{A_k}$ is $\sigma(X_1,\dots,X_k)$-measurable and $S_n - S_k$ is independent of that $\sigma$-algebra with mean zero; dropping the two nonnegative terms leaves $\mathbb{E}[S_n^2] \geq \sum_k \lambda^2\mathbb{P}(A_k) = \lambda^2\mathbb{P}(A)$. $\square$
+The cross term vanishes because $S_k\mathbf{1}_{A_k}$ is $\sigma(X_1,\dots,X_k)$-measurable and $S_n - S_k$ is independent of that $\sigma$-algebra with mean zero; dropping the two nonnegative terms leaves $\mathbb{E}[S_n^2] \geq \sum_k \lambda^2\mathbb{P}(A_k) = \lambda^2\mathbb{P}(A)$.
 
 The inequality is the martingale-type maximal bound in its independent-sum form, and it is the reason the strong law can be proved before the martingale theory is available; the general maximal inequality of Doob, contains it. The proof uses the independence only through the orthogonality of the past and the future, which is exactly the property the martingale theory abstracts.
 
@@ -93,11 +93,11 @@ $$
 \bar X_n \longrightarrow \mu \qquad \text{a.s.}
 $$
 
-*Proof (sketch).* It suffices to treat the mean-zero case by centring. Assume first a finite fourth moment; the estimate $\mathbb{E}[S_n^4] \leq Cn^2$ (obtained by expanding the fourth power and using independence) together with the first Borel–Cantelli lemma applied to the events $\{|\bar X_{n}| \geq \varepsilon\}$ along the subsequence $n = 2^k$ gives convergence along that subsequence; the maximal inequality extends it to the intermediate integers, using that the increments between $2^k$ and $2^{k+1}$ are controlled by the maximal inequality. For the general case, truncate at the level $n$ and use the three-series-type estimate to show that the truncated and untruncated averages have the same limit a.s.; the details are the standard argument. $\square$
+*Proof (sketch).* It suffices to treat the mean-zero case by centring. Assume first a finite fourth moment; the estimate $\mathbb{E}[S_n^4] \leq Cn^2$ (obtained by expanding the fourth power and using independence) together with the first Borel–Cantelli lemma applied to the events $\{|\bar X_{n}| \geq \varepsilon\}$ along the subsequence $n = 2^k$ gives convergence along that subsequence; the maximal inequality extends it to the intermediate integers, using that the increments between $2^k$ and $2^{k+1}$ are controlled by the maximal inequality. For the general case, truncate at the level $n$ and use the three-series-type estimate to show that the truncated and untruncated averages have the same limit a.s.; the details are the standard argument.
 
 **Theorem (Etemadi).** The strong law holds for a sequence of pairwise independent and identically distributed integrable random variables: the full independence of Kolmogorov is not needed.
 
-*Proof (sketch).* The maximal inequality of Kolmogorov is replaced by a maximal inequality for pairwise independent variables, valid because the variance of a sum of pairwise independent variables is still the sum of the variances; the truncation argument is then the same. $\square$
+*Proof (sketch).* The maximal inequality of Kolmogorov is replaced by a maximal inequality for pairwise independent variables, valid because the variance of a sum of pairwise independent variables is still the sum of the variances; the truncation argument is then the same.
 
 **Theorem (converse).** If the $X_n$ are independent and identically distributed with $\mathbb{E}|X_1| = \infty$ then $\limsup_n |\bar X_n| = \infty$ a.s., so the sample mean does not converge.
 
@@ -127,7 +127,7 @@ $$
 \varphi_{Z_n}(t) = \left(1 - \frac{t^2}{2n} + o\!\left(\frac{1}{n}\right)\right)^n \longrightarrow e^{-t^2/2},
 $$
 
-which is the characteristic function of $N(0,1)$; the limit is continuous at $0$, so Lévy's theorem applies. $\square$
+which is the characteristic function of $N(0,1)$; the limit is continuous at $0$, so Lévy's theorem applies.
 
 **Example (de Moivre–Laplace).** For $X_i$ Bernoulli$(p)$ the statement is the convergence of the standardised binomial to the normal: if $S_n \sim \mathrm{Bin}(n,p)$ then $(S_n - np)/\sqrt{np(1-p)} \xrightarrow{d} N(0,1)$. The computation is the case $\sigma^2 = p(1-p)$ of the theorem, and it is the oldest form of the central limit theorem.
 

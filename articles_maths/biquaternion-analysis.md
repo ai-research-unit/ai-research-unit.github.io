@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This article introduces the analysis of biquaternion-valued functions. It follows the basic algebra article, which defined the biquaternion algebra $\mathbb{B}$, its conjugations, and its six distinguished subspaces, and it follows the article on biquaternion norm and invertibility, which defined the norm form, the Hermitian form, and the Euclidean norm. The goal here is to define limits, continuity, and differentiation for biquaternion-valued functions, and to establish the differential operators that will be used in later applications.
+This article introduces the analysis of biquaternion-valued functions. It follows the basic algebra article, which defined the biquaternion algebra $\mathbb{B}$, its conjugations, and its six distinguished subspaces, and it follows the article on biquaternion norm and invertibility, which defined the norm, the Hermitian form, and the Euclidean norm. The goal here is to define limits, continuity, and differentiation for biquaternion-valued functions, and to establish the differential operators that will be used in later applications.
 
 The treatment is purely mathematical. The independent variables are four real parameters — the coordinates of a four-dimensional real subspace of $\mathbb{B}$. They are independent of any physical interpretation. The complex structure of the coefficients and the non-commutative structure of the quaternion units are the only algebraic ingredients.
 
@@ -34,7 +34,7 @@ $$
 \|\tilde{Q} + \tilde{R}\|_E \leq \|\tilde{Q}\|_E + \|\tilde{R}\|_E, \qquad \|\lambda \tilde{Q}\|_E = |\lambda| \|\tilde{Q}\|_E, \qquad \lambda \in \mathbb{R}.
 $$
 
-The norm is **not** multiplicative with respect to the biquaternion product. The reason is structural: the product $\tilde{Q}\tilde{R}$ is not obtained by multiplying the moduli $\|\tilde{Q}\|_E$ and $\|\tilde{R}\|_E$, and the equality $\|\tilde{Q}\tilde{R}\|_E = \|\tilde{Q}\|_E\|\tilde{R}\|_E$ fails in general. (This is in contrast to the multiplicative but complex-valued norm form $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$, which satisfies $N(\tilde{Q}\tilde{R}) = N(\tilde{Q})N(\tilde{R})$ but vanishes on the zero divisors, so it cannot serve as a norm.)
+The biquaternion norm is **not** multiplicative with respect to the biquaternion product. The reason is structural: the product $\tilde{Q}\tilde{R}$ is not obtained by multiplying the moduli $\|\tilde{Q}\|_E$ and $\|\tilde{R}\|_E$, and the equality $\|\tilde{Q}\tilde{R}\|_E = \|\tilde{Q}\|_E\|\tilde{R}\|_E$ fails in general. (This is in contrast to the multiplicative but complex-valued norm $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$, which satisfies $N(\tilde{Q}\tilde{R}) = N(\tilde{Q})N(\tilde{R})$ but vanishes on the zero divisors, so it cannot serve as a norm.)
 
 As a concrete example, take $\tilde{Q} = \tilde{R} = e_1 + ie_2$. Then $\|\tilde{Q}\|_E = \|\tilde{R}\|_E = \sqrt{2}$, but
 
@@ -90,11 +90,11 @@ $$
 \|\tilde{L} - \tilde{L}'\|_E \leq \|\tilde{L} - \tilde{F}(\tilde{Q})\|_E + \|\tilde{F}(\tilde{Q}) - \tilde{L}'\|_E < 2\varepsilon = \|\tilde{L} - \tilde{L}'\|_E,
 $$
 
-a contradiction. $\square$
+a contradiction.
 
 **Theorem (sequential criterion).** $\lim_{\tilde{Q} \to \tilde{Q}_0} \tilde{F}(\tilde{Q}) = \tilde{L}$ if and only if for every sequence $(\tilde{Q}_n)$ in $\mathbb{B} \setminus \{\tilde{Q}_0\}$ with $\tilde{Q}_n \to \tilde{Q}_0$, we have $\tilde{F}(\tilde{Q}_n) \to \tilde{L}$.
 
-**Proof.** The forward direction is immediate from the definition. For the converse, suppose the limit is not $\tilde{L}$. Then there exists $\varepsilon > 0$ such that for every $\delta > 0$ there exists $\tilde{Q}$ with $0 < \|\tilde{Q} - \tilde{Q}_0\|_E < \delta$ and $\|\tilde{F}(\tilde{Q}) - \tilde{L}\|_E \geq \varepsilon$. Taking $\delta = 1/n$ gives a sequence $\tilde{Q}_n \to \tilde{Q}_0$ with $\tilde{F}(\tilde{Q}_n) \not\to \tilde{L}$, contradicting the hypothesis. $\square$
+**Proof.** The forward direction is immediate from the definition. For the converse, suppose the limit is not $\tilde{L}$. Then there exists $\varepsilon > 0$ such that for every $\delta > 0$ there exists $\tilde{Q}$ with $0 < \|\tilde{Q} - \tilde{Q}_0\|_E < \delta$ and $\|\tilde{F}(\tilde{Q}) - \tilde{L}\|_E \geq \varepsilon$. Taking $\delta = 1/n$ gives a sequence $\tilde{Q}_n \to \tilde{Q}_0$ with $\tilde{F}(\tilde{Q}_n) \not\to \tilde{L}$, contradicting the hypothesis.
 
 **Theorem (algebra of limits).** If $\tilde{F}(\tilde{Q}) \to \tilde{L}$ and $\tilde{G}(\tilde{Q}) \to \tilde{M}$ as $\tilde{Q} \to \tilde{Q}_0$, then
 
@@ -114,7 +114,7 @@ $$
 \tilde{F} \tilde{G} - \tilde{L} \tilde{M} = (\tilde{F} - \tilde{L}) \tilde{G} + \tilde{L} (\tilde{G} - \tilde{M}),
 $$
 
-and the fact that $\tilde{G}$ is bounded near $\tilde{Q}_0$ (because it has a limit). $\square$
+and the fact that $\tilde{G}$ is bounded near $\tilde{Q}_0$ (because it has a limit).
 
 ### Continuity
 
@@ -134,15 +134,15 @@ The function is **continuous on an open set** if it is continuous at every point
 
 **Theorem (basic properties).** If $\tilde{F}$ and $\tilde{G}$ are continuous at $\tilde{Q}_0$, then so are $\tilde{F} + \tilde{G}$ and $\tilde{F} \circ \tilde{G}$. If $\tilde{F}$ is continuous at $\tilde{Q}_0$ and $\tilde{G}$ is continuous at $\tilde{F}(\tilde{Q}_0)$, then $\tilde{G} \circ \tilde{F}$ is continuous at $\tilde{Q}_0$.
 
-**Proof.** The first two claims follow from the algebra of limits. The third follows from the definition: given $\varepsilon > 0$, choose $\eta > 0$ with $\|\tilde{G}(\tilde{R}) - \tilde{G}(\tilde{F}(\tilde{Q}_0))\|_E < \varepsilon$ when $\|\tilde{R} - \tilde{F}(\tilde{Q}_0)\|_E < \eta$, and then choose $\delta > 0$ with $\|\tilde{F}(\tilde{Q}) - \tilde{F}(\tilde{Q}_0)\|_E < \eta$ when $\|\tilde{Q} - \tilde{Q}_0\|_E < \delta$. $\square$
+**Proof.** The first two claims follow from the algebra of limits. The third follows from the definition: given $\varepsilon > 0$, choose $\eta > 0$ with $\|\tilde{G}(\tilde{R}) - \tilde{G}(\tilde{F}(\tilde{Q}_0))\|_E < \varepsilon$ when $\|\tilde{R} - \tilde{F}(\tilde{Q}_0)\|_E < \eta$, and then choose $\delta > 0$ with $\|\tilde{F}(\tilde{Q}) - \tilde{F}(\tilde{Q}_0)\|_E < \eta$ when $\|\tilde{Q} - \tilde{Q}_0\|_E < \delta$.
 
 **Theorem (component-wise continuity).** A function $\tilde{F} = \sum_\mu F_\mu e_\mu$ is continuous at $\tilde{Q}_0$ if and only if each complex-valued coefficient $F_\mu$ is continuous at $\tilde{Q}_0$.
 
-**Proof.** The Euclidean norm is equivalent to the maximum of the moduli of the coefficients: $\max_\mu |F_\mu| \leq \|\tilde{F}\|_E \leq 2 \max_\mu |F_\mu|$. So convergence in $\mathbb{B}$ is equivalent to convergence of each coefficient. $\square$
+**Proof.** The Euclidean norm is equivalent to the maximum of the moduli of the coefficients: $\max_\mu |F_\mu| \leq \|\tilde{F}\|_E \leq 2 \max_\mu |F_\mu|$. So convergence in $\mathbb{B}$ is equivalent to convergence of each coefficient.
 
 **Theorem (uniform continuity).** A continuous function on a compact subset of $\mathbb{B}$ is uniformly continuous.
 
-**Proof.** This is the standard argument: if $\tilde{F}$ is not uniformly continuous, there exist $\varepsilon > 0$ and sequences $(\tilde{Q}_n)$, $(\tilde{R}_n)$ in the compact set with $\|\tilde{Q}_n - \tilde{R}_n\|_E \to 0$ but $\|\tilde{F}(\tilde{Q}_n) - \tilde{F}(\tilde{R}_n)\|_E \geq \varepsilon$. By compactness, pass to a subsequence with $\tilde{Q}_n \to \tilde{Q}$. Then $\tilde{R}_n \to \tilde{Q}$, and by continuity $\tilde{F}(\tilde{Q}_n) \to \tilde{F}(\tilde{Q})$ and $\tilde{F}(\tilde{R}_n) \to \tilde{F}(\tilde{Q})$, contradicting the inequality. $\square$
+**Proof.** This is the standard argument: if $\tilde{F}$ is not uniformly continuous, there exist $\varepsilon > 0$ and sequences $(\tilde{Q}_n)$, $(\tilde{R}_n)$ in the compact set with $\|\tilde{Q}_n - \tilde{R}_n\|_E \to 0$ but $\|\tilde{F}(\tilde{Q}_n) - \tilde{F}(\tilde{R}_n)\|_E \geq \varepsilon$. By compactness, pass to a subsequence with $\tilde{Q}_n \to \tilde{Q}$. Then $\tilde{R}_n \to \tilde{Q}$, and by continuity $\tilde{F}(\tilde{Q}_n) \to \tilde{F}(\tilde{Q})$ and $\tilde{F}(\tilde{R}_n) \to \tilde{F}(\tilde{Q})$, contradicting the inequality.
 
 ## The Problem of Differentiability
 
@@ -167,7 +167,7 @@ These two conventions give different results in general. So the derivative would
 
 ### The Second Obstruction: Zero Divisors
 
-The quotient $\tilde{A} / \tilde{H}$ requires $\tilde{H}^{-1}$ to exist. In a division algebra, every nonzero element has an inverse, so this is automatic. In $\mathbb{B}$, however, there are nonzero elements $\tilde{H}$ with vanishing norm form, $\tilde{H} \bar{\tilde{H}} = 0$, for which no inverse exists. These are the **zero divisors** of the algebra, discussed in detail in the article on biquaternion zero divisors. For such $\tilde{H}$, the quotient $\tilde{A} / \tilde{H}$ is undefined, and the limit defining the derivative cannot be evaluated along directions in which $\tilde{H}$ is a zero divisor.
+The quotient $\tilde{A} / \tilde{H}$ requires $\tilde{H}^{-1}$ to exist. In a division algebra, every nonzero element has an inverse, so this is automatic. In $\mathbb{B}$, however, there are nonzero elements $\tilde{H}$ with vanishing norm, $\tilde{H} \bar{\tilde{H}} = 0$, for which no inverse exists. These are the **zero divisors** of the algebra, discussed in detail in the article on biquaternion zero divisors. For such $\tilde{H}$, the quotient $\tilde{A} / \tilde{H}$ is undefined, and the limit defining the derivative cannot be evaluated along directions in which $\tilde{H}$ is a zero divisor.
 
 ### The Standard Approach
 
@@ -492,7 +492,7 @@ The following questions are not answered in this article and are left for later 
 
 5. **The general case.** Can the analysis be extended from a four-dimensional subspace to the full biquaternion algebra $\mathbb{B}$, with a precise definition of the partial derivatives with respect to genuinely complex coefficients?
 
-6. **Differentiability on other subspaces.** How does the analysis extend to the other fixed-point subspaces, and in particular to the relation between $\mathbb{M}_-$ and $\mathbb{M}_+$?
+6. **Differentiability on other subspaces.** How does the analysis extend to the other fixed-point subspaces, and in particular to the relation between $\mathbb{M}_+$ and $\mathbb{M}_-$?
 
 7. **The square of the gradient.** The square $\tilde{\nabla}^2$ appears when the gradient is applied twice without conjugation. The identity $\tilde{\nabla}^2 = 2\partial_{Q_0}\tilde{\nabla} - \Box$ expresses it in terms of $\Box$ and the first derivative. What is the natural setting in which the square $\tilde{\nabla}^2$ (as opposed to $\Box$) is the operator that appears?
 
@@ -502,13 +502,13 @@ The biquaternion algebra $\mathbb{B}$ is a real vector space of dimension 8, wit
 
 A direct definition of differentiability with respect to the biquaternion variable is problematic, because of the ambiguity of left and right division and the presence of zero divisors. The standard approach is to restrict to a four-dimensional real subspace of $\mathbb{B}$, with four real parameters as independent variables, and to define the differential operators on this subspace.
 
-The four subspaces used here are the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, with all complex coefficients real; the anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$, with all complex coefficients purely imaginary; the anti-Hermitian subspace $\mathbb{M}_-$, with the first complex coefficient purely imaginary and the three spatial complex coefficients real; and the Hermitian subspace $\mathbb{M}_+$, with the first complex coefficient real and the three spatial complex coefficients purely imaginary. In each case, the partial derivatives are taken with respect to the complex coefficients, with a factor of $-i$ when the coefficient is purely imaginary.
+The four subspaces used here are the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, with all complex coefficients real; the anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$, with all complex coefficients purely imaginary; the Hermitian subspace $\mathbb{M}_+$, with the first complex coefficient real and the three spatial complex coefficients purely imaginary; and the anti-Hermitian subspace $\mathbb{M}_-$, with the first complex coefficient purely imaginary and the three spatial complex coefficients real. In each case, the partial derivatives are taken with respect to the complex coefficients, with a factor of $-i$ when the coefficient is purely imaginary.
 
-The **biquaternionic gradient** $\tilde{\nabla} = \sum_\mu e_\mu \partial/\partial Q_\mu$ is a biquaternion-valued first-order operator. Its quaternion conjugate $\bar{\tilde{\nabla}}$ is obtained by negating the vector part. The **d'Alembertian** $\Box = \tilde{\nabla}\bar{\tilde{\nabla}} = \bar{\tilde{\nabla}}\tilde{\nabla} = \partial^2/\partial Q_0^2 + \Delta_Q$ is the **natural second-order operator**: it is scalar-valued, symmetric under conjugation, and it appears in the standard second-order equations. On the quaternion subspace $\mathbb{H}_{\mathbb{B}}$ it is the ordinary four-dimensional Euclidean Laplacian; on the anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$ it is the negative of that Laplacian; and on the anti-Hermitian subspace $\mathbb{M}_-$ and the Hermitian subspace $\mathbb{M}_+$ it takes a Lorentzian form in the underlying real coordinates. The **square of the gradient** $\tilde{\nabla}^2 = (\partial^2/\partial Q_0^2 - \Delta_Q) + 2\sum_k e_k \partial^2/(\partial Q_0 \partial Q_k)$ is a related second-order operator, expressed through the identity $\tilde{\nabla}^2 = 2\partial_{Q_0}\tilde{\nabla} - \Box$. The **convective derivative** $\tilde{D} = \bar{\tilde{U}}\tilde{\nabla}$ is a biquaternion-valued first-order operator whose scalar part is the four-dimensional convective derivative.
+The **biquaternionic gradient** $\tilde{\nabla} = \sum_\mu e_\mu \partial/\partial Q_\mu$ is a biquaternion-valued first-order operator. Its quaternion conjugate $\bar{\tilde{\nabla}}$ is obtained by negating the vector part. The **d'Alembertian** $\Box = \tilde{\nabla}\bar{\tilde{\nabla}} = \bar{\tilde{\nabla}}\tilde{\nabla} = \partial^2/\partial Q_0^2 + \Delta_Q$ is the **natural second-order operator**: it is scalar-valued, symmetric under conjugation, and it appears in the standard second-order equations. On the quaternion subspace $\mathbb{H}_{\mathbb{B}}$ it is the ordinary four-dimensional Euclidean Laplacian; on the anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$ it is the negative of that Laplacian; and on the Hermitian subspace $\mathbb{M}_+$ and the anti-Hermitian subspace $\mathbb{M}_-$ it takes a Lorentzian form in the underlying real coordinates. The **square of the gradient** $\tilde{\nabla}^2 = (\partial^2/\partial Q_0^2 - \Delta_Q) + 2\sum_k e_k \partial^2/(\partial Q_0 \partial Q_k)$ is a related second-order operator, expressed through the identity $\tilde{\nabla}^2 = 2\partial_{Q_0}\tilde{\nabla} - \Box$. The **convective derivative** $\tilde{D} = \bar{\tilde{U}}\tilde{\nabla}$ is a biquaternion-valued first-order operator whose scalar part is the four-dimensional convective derivative.
 
 The approach is closely related to Fueter's quaternionic analysis and to Clifford analysis. The generalization to the biquaternion algebra includes the complex coefficients and the four conjugations, which enrich the structure.
 
-The specialization to specific four-dimensional subspaces, including the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, the anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$, the anti-Hermitian subspace $\mathbb{M}_-$, and the Hermitian subspace $\mathbb{M}_+$, is not covered here. The integral theory, including the Cauchy integral formula, is the subject of the companion article on biquaternion integration.
+The specialization to specific four-dimensional subspaces, including the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, the anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$, the Hermitian subspace $\mathbb{M}_+$, and the anti-Hermitian subspace $\mathbb{M}_-$, is not covered here. The integral theory, including the Cauchy integral formula, is the subject of the companion article on biquaternion integration.
 
 ## Summary of Notation
 
@@ -527,8 +527,6 @@ The specialization to specific four-dimensional subspaces, including the quatern
 | $\Box = \tilde{\nabla}\bar{\tilde{\nabla}} = \bar{\tilde{\nabla}}\tilde{\nabla}$ | d'Alembertian (natural second-order operator) |
 | $\tilde{\nabla}^2 = 2\partial_{Q_0}\tilde{\nabla} - \Box$ | Square of the gradient |
 | $\tilde{D} = \bar{\tilde{U}}\tilde{\nabla}$ | Convective derivative |
-
-
 
 ## Further Reading
 

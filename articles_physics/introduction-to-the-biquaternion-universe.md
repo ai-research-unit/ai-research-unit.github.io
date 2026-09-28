@@ -86,7 +86,7 @@ In vacuum, $c = c_0$, and the material time coordinate becomes $ic_0 t$ — the 
 
 ## The Metric
 
-The natural quadratic form on the biquaternion algebra is the **norm form**
+The natural quadratic form on the biquaternion algebra is the **biquaternion norm**
 
 $$
 N(d\tilde{Q}) = d\tilde{Q} \circ \overline{d\tilde{Q}} = \sum_{\mu=0}^{3} (dQ_\mu)^2,
@@ -100,7 +100,7 @@ $$
 
 The **real part** of $N(d\tilde{Q}) = \sum_\mu (dQ_\mu)^2$ reproduces the Lorentzian interval on the material sector. The minus sign in the time–time component arises algebraically from $i^2 = -1$ in the imaginary time coordinate $ict$, not from an independently postulated metric signature. The **imaginary part** couples the material and informational sectors through cross terms.
 
-Because each sector retains only half of the eight parameters, the same norm form reads off as a real quadratic form on each, and it is again worth having both writings. On the material sector, where only $dq'_0$ and the $dq_k$ are non-zero,
+Because each sector retains only half of the eight parameters, the same biquaternion norm reads off as a real quadratic form on each, and it is again worth having both writings. On the material sector, where only $dq'_0$ and the $dq_k$ are non-zero,
 
 $$
 N(d\tilde{Q}) = -(dq'_0)^2 + dq_1^2 + dq_2^2 + dq_3^2 = -c^2\,dt^2 + dx^2 + dy^2 + dz^2,
@@ -123,9 +123,9 @@ Each of these is one equation written twice: on the left in the sector's own par
 
 ### Where the Minus Comes From
 
-The same norm form is read two ways, and keeping them apart prevents a recurring confusion. They are worth stating plainly here, at the start.
+The same biquaternion norm is read two ways, and keeping them apart prevents a recurring confusion. They are worth stating plainly here, at the start.
 
-**The algebra's own form.** The biquaternion universe is a $\mathbb{C}$-universe over the quaternions, and its coefficients $Q_\mu$ are complex. Read as a metric on $\mathbb{C}$, the norm form is the identity,
+**The algebra's own form.** The biquaternion universe is a $\mathbb{C}$-universe over the quaternions, and its coefficients $Q_\mu$ are complex. Read as a metric on $\mathbb{C}$, the biquaternion norm is the identity,
 
 $$
 N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_{\mu=0}^{3} Q_\mu^2, \qquad \mathrm{diag}(+1,+1,+1,+1),
@@ -140,7 +140,7 @@ with every entry positive and the four directions of $\mathbb{B}$ on an equal fo
 | $\mathbb{M}_-$ (material) | $ie_0,\ e_1,\ e_2,\ e_3$ | $-1,+1,+1,+1$ | $(-,+,+,+)$ |
 | $\mathbb{M}_+$ (informational) | $e_0,\ ie_1,\ ie_2,\ ie_3$ | $+1,-1,-1,-1$ | $(+,-,-,-)$ |
 
-Multiplying by $i$ exchanges the two sectors, $i\mathbb{M}_+ = \mathbb{M}_-$, and reverses the sign of the form, $N(i\tilde{Q}) = -N(\tilde{Q})$; that is the algebraic content of the mirror relation between the two signatures. The Minkowski signature is therefore not an independent input of the theory. It is what the algebra's own form looks like once the time coordinate is written $ict$ — the same norm form, read on the material sector, with $i^2 = -1$ supplying the minus.
+Multiplying by $i$ exchanges the two sectors, $i\mathbb{M}_+ = \mathbb{M}_-$, and reverses the sign of the form, $N(i\tilde{Q}) = -N(\tilde{Q})$; that is the algebraic content of the mirror relation between the two signatures. The Minkowski signature is therefore not an independent input of the theory. It is what the algebra's own form looks like once the time coordinate is written $ict$ — the same biquaternion norm, read on the material sector, with $i^2 = -1$ supplying the minus.
 
 ## What the Framework Achieves
 
@@ -148,7 +148,7 @@ The main result of the framework so far is that the biquaternion algebra **conta
 
 ### Relativity in $\mathbb{M}_-$
 
-The material sector $\mathbb{M}_-$ carries the four-vectors of relativistic physics: position, velocity, momentum, force, potential, current. The **proper orthochronous Lorentz group** $SO^+(1,3)$ is realized through its double cover $SL(2,\mathbb{C})$, which is the **group of biquaternions of unit norm form** in $\mathbb{B}$:
+The material sector $\mathbb{M}_-$ carries the four-vectors of relativistic physics: position, velocity, momentum, force, potential, current. The **proper orthochronous Lorentz group** $SO^+(1,3)$ is realized through its double cover $SL(2,\mathbb{C})$, which is the **group of biquaternions of unit norm** in $\mathbb{B}$:
 
 $$
 SL(2,\mathbb{C}) \;\cong\; \{\tilde{\Lambda} \in \mathbb{B} : \tilde{\Lambda}\bar{\tilde{\Lambda}} = e_0\}.
@@ -180,7 +180,7 @@ The operator algebra of quantum mechanics, its state space, its Born rule, and i
 
 ### The Shared Home
 
-The most significant feature of the framework is that **relativity and quantum mechanics share the same algebraic home**. The Lorentz group is realized (via its double cover $SL(2,\mathbb{C})$) as the group of biquaternions of unit norm form in $\mathbb{B}$, and the operator algebra of quantum mechanics is realized in the Hermitian subspace $\mathbb{M}_+$. The two structures are not independent; they are aspects of the same algebra.
+The most significant feature of the framework is that **relativity and quantum mechanics share the same algebraic home**. The Lorentz group is realized (via its double cover $SL(2,\mathbb{C})$) as the group of biquaternions of unit norm in $\mathbb{B}$, and the operator algebra of quantum mechanics is realized in the Hermitian subspace $\mathbb{M}_+$. The two structures are not independent; they are aspects of the same algebra.
 
 This is the sense in which the framework is proposed as an alternative to the standard formulation: not as a modification of relativity or of quantum mechanics, but as a **common algebraic ground** on which both can be expressed.
 
@@ -215,7 +215,7 @@ The framework is offered as a structural intuition: that the two natural subspac
 | $Q_\mu = q_\mu + iq'_\mu$ | Complex coefficient: $q_\mu$ its real part (the coefficient of $e_\mu$), $q'_\mu$ its imaginary part (the coefficient of $ie_\mu$) |
 | $\tilde{Q} = iq'_0e_0 + q_1e_1 + q_2e_2 + q_3e_3 = ict\,e_0 + \mathbf{x}$ | Material element, both writings; $q'_0 = ct$, $q_k = x_k$ |
 | $\tilde{H} = q_0e_0 + iq'_1e_1 + iq'_2e_2 + iq'_3e_3 = (ct')\,e_0 + i\mathbf{x}'$ | Informational element, both writings; $q_0 = ct'$, $q'_k = x'_k$ |
-| $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$ | Norm form; the identity matrix $\mathrm{diag}(+1,+1,+1,+1)$ as a metric on $\mathbb{C}$, signature $(-,+,+,+)$ on the real material sector |
+| $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$ | Biquaternion norm; the identity matrix $\mathrm{diag}(+1,+1,+1,+1)$ as a metric on $\mathbb{C}$, signature $(-,+,+,+)$ on the real material sector |
 | $\mathbb{M}_-$ | Anti-Hermitian subspace (material sector): coordinates $(ict, x, y, z)$, parameters $q'_0, q_1, q_2, q_3$ |
 | $\mathbb{M}_+$ | Hermitian subspace (informational sector): coordinates $(ct', ix', iy', iz')$, parameters $q_0, q'_1, q'_2, q'_3$ |
 | $\mathbb{H}_{\mathbb{B}}$ | Real quaternion subspace (home of the rotation rotors): the real half, all four coefficients real, fixed points of complex conjugation; a subalgebra |
@@ -224,7 +224,7 @@ The framework is offered as a structural intuition: that the two natural subspac
 | $\tilde{H} = h_0 e_0 + i\mathbf{h}$ | Hermitian element (observable of the informational sector); $h_0 \in \mathbb{R}$ is the scalar component and $\mathbf{h} = (h_1,h_2,h_3)$ the vector components. These are the generic names used for these components throughout the series; written as a coordinate-carrying element, the same object is $q_0e_0 + iq'_ke_k$ |
 | $(t, x, y, z)$ | Real coordinates of the material sector ($c$ is a scale factor, not a coordinate) |
 | $(t', x', y', z')$ | Real coordinates of the informational sector |
-| $\tilde{\Lambda} \in \mathbb{B}$ with $\tilde{\Lambda}\bar{\tilde{\Lambda}} = e_0$ | Lorentz rotor (unit-norm-form biquaternion) |
+| $\tilde{\Lambda} \in \mathbb{B}$ with $\tilde{\Lambda}\bar{\tilde{\Lambda}} = e_0$ | Lorentz rotor (unit-norm biquaternion) |
 | $c = 1/\sqrt{\epsilon\mu}$ | Speed of light in the medium (local) |
 | $c_0 = 1/\sqrt{\epsilon_0\mu_0}$ | Speed of light in vacuum (global constant) |
 | $v$ | Particle or frame velocity |

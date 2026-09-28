@@ -21,11 +21,11 @@ $$
 
 is an idempotent, and $ef=\pi$ while $e \pi'=-\pi'$ for $\pi'=\tfrac12(1-e)$, which is the complementary idempotent.
 
-**Proof.** $\pi^2=\tfrac14(1+2e+e^2)=\tfrac14(1+2e+1)=\tfrac12(1+e)=\pi$, using $e^2=q(e)=1$. The products are $ef=\tfrac12(e+e^2)=\tfrac12(e+1)=\pi$ and $ef'=\tfrac12(e-e^2)=\tfrac12(e-1)=-\pi'$. $\square$
+**Proof.** $\pi^2=\tfrac14(1+2e+e^2)=\tfrac14(1+2e+1)=\tfrac12(1+e)=\pi$, using $e^2=q(e)=1$. The products are $ef=\tfrac12(e+e^2)=\tfrac12(e+1)=\pi$ and $ef'=\tfrac12(e-e^2)=\tfrac12(e-1)=-\pi'$.
 
 **Proposition.** With $\pi$ and $\pi'$ as above, $\pi+\pi'=1$ and $ff'=\pi'\pi=0$.
 
-**Proof.** The sum is $\tfrac12(1+e)+\tfrac12(1-e)=1$, and $ff'=\tfrac14(1+e)(1-e)=\tfrac14(1-e^2)=0$, the other order being the same computation. $\square$
+**Proof.** The sum is $\tfrac12(1+e)+\tfrac12(1-e)=1$, and $ff'=\tfrac14(1+e)(1-e)=\tfrac14(1-e^2)=0$, the other order being the same computation.
 
 So a non-isotropic vector of square one splits the identity of the algebra into two orthogonal idempotents, and it acts as $+1$ on the first and $-1$ on the second.
 
@@ -33,7 +33,7 @@ So a non-isotropic vector of square one splits the identity of the algebra into 
 
 **Theorem.** Let $q$ be non-degenerate, $n=\dim V$, and let $e\in V$ with $q(e)=1$. Then $\pi=\tfrac12(1+e)$ is an idempotent and the left ideal $\mathrm{Cl}(V,q)\pi$ has dimension $2^{n-1}$; it is minimal, equivalently $\pi$ is primitive, exactly when it is simple as a left module. For a simple Clifford algebra $\mathrm{Cl}(V,q)\cong M_k(D)$ this happens exactly when $k=2$, that is, when the algebra is a $2\times2$ matrix algebra over a division algebra.
 
-**Proof.** The idempotence is the proposition above. Left multiplication by $e$ is an involution of the algebra, since $e^2=1$, and it exchanges the parity parts, since multiplication by an odd element carries $\mathrm{Cl}^0$ to $\mathrm{Cl}^1$ and back; the two parts have the same dimension, so that involution has trace zero and its eigenspaces for the eigenvalues $+1$ and $-1$ have equal dimension $2^{n-1}$. The idempotent $\pi$ projects onto the first, so $\dim\mathrm{Cl}(V,q)\pi=2^{n-1}$. In a simple algebra $M_k(D)$ with simple module $S$ the ideal $\mathrm{Cl}(V,q)\pi$ is a sum of copies of $S$, of dimension $2^n/k$ each, so its dimension $2^{n-1}$ leaves the multiplicity $k/2$; a sum of copies of a simple module is simple exactly when it is one copy, that is, when $k=2$. In a product of simple algebras the count applies to each factor, and the ideal is simple only when all but one factor contributes nothing. The two worked cases below have $k=2$, and the counterexamples of the remark have $k=16$ and two factors with one copy each. $\square$
+**Proof.** The idempotence is the proposition above. Left multiplication by $e$ is an involution of the algebra, since $e^2=1$, and it exchanges the parity parts, since multiplication by an odd element carries $\mathrm{Cl}^0$ to $\mathrm{Cl}^1$ and back; the two parts have the same dimension, so that involution has trace zero and its eigenspaces for the eigenvalues $+1$ and $-1$ have equal dimension $2^{n-1}$. The idempotent $\pi$ projects onto the first, so $\dim\mathrm{Cl}(V,q)\pi=2^{n-1}$. In a simple algebra $M_k(D)$ with simple module $S$ the ideal $\mathrm{Cl}(V,q)\pi$ is a sum of copies of $S$, of dimension $2^n/k$ each, so its dimension $2^{n-1}$ leaves the multiplicity $k/2$; a sum of copies of a simple module is simple exactly when it is one copy, that is, when $k=2$. In a product of simple algebras the count applies to each factor, and the ideal is simple only when all but one factor contributes nothing. The two worked cases below have $k=2$, and the counterexamples of the remark have $k=16$ and two factors with one copy each.
 
 **Remark (the failure in general).** The theorem does not say that the ideal of a unit vector is always minimal, and it is not: for $\mathrm{Cl}_{8,0}\cong M_{16}(\mathbb{R})$ the ideal $\mathrm{Cl}\pi$ has dimension $128$ against a minimal left ideal of dimension $16$, and already for $\mathrm{Cl}_{2,1}\cong M_2(\mathbb{R})\oplus M_2(\mathbb{R})$ it is the sum of one copy of each of the two simple modules, of dimension $4$ against $2$. For the general construction of a minimal left ideal one takes a product of such idempotents, namely the idempotent of a Witt basis, in the section below.
 
@@ -45,21 +45,21 @@ So a non-isotropic vector of square one splits the identity of the algebra into 
 
 **Proposition.** Every left ideal is a Clifford module, and a minimal left ideal is an irreducible Clifford module with a faithful action of $\mathrm{Cl}(V,q)$ up to the annihilator of the ideal.
 
-**Proof.** A left ideal is a module over the algebra by definition, so the Clifford action of a vector satisfies $c(v)^2=q(v)$ as it does on the algebra itself. The annihilator of $I$ is a two-sided ideal, and if the algebra is simple the action is faithful. $\square$
+**Proof.** A left ideal is a module over the algebra by definition, so the Clifford action of a vector satisfies $c(v)^2=q(v)$ as it does on the algebra itself. The annihilator of $I$ is a two-sided ideal, and if the algebra is simple the action is faithful.
 
 **Theorem.** Let $I=\mathrm{Cl}(V,q)\pi$ with $\pi$ a primitive idempotent. Then $I$ is a minimal left ideal, all minimal left ideals are of this form, and they are all isomorphic as Clifford modules.
 
-**Proof.** By definition $I$ is a left ideal, and the minimality is the primitivity of $\pi$. Conversely, a minimal left ideal contains an idempotent $\pi$ with $I=\mathrm{Cl}\pi$. The isomorphism of the minimal left ideals is the statement that a simple algebra has a single isomorphism class of simple modules — over a simple algebra $\mathrm{Cl}(V,q)\cong M_k(D)$ the minimal left ideals are the columns $D^k$ — which is the structure theory of *Simple and Semisimple Modules* that *Spin Representations and Clifford Modules* uses. $\square$
+**Proof.** By definition $I$ is a left ideal, and the minimality is the primitivity of $\pi$. Conversely, a minimal left ideal contains an idempotent $\pi$ with $I=\mathrm{Cl}\pi$. The isomorphism of the minimal left ideals is the statement that a simple algebra has a single isomorphism class of simple modules — over a simple algebra $\mathrm{Cl}(V,q)\cong M_k(D)$ the minimal left ideals are the columns $D^k$ — which is the structure theory of *Simple and Semisimple Modules* that *Spin Representations and Clifford Modules* uses.
 
 **Theorem (dimension).** Over an algebraically closed field the minimal left ideal of $\mathrm{Cl}(V,q)$ has dimension $2^{\lfloor n/2\rfloor}$, where $n=\dim V$. Over $\mathbb{R}$ the minimal left ideal is the real spinor module of *Spin Representations and Clifford Modules*, of dimension over the division algebra $D$ given by the eightfold table.
 
-**Proof.** Over an algebraically closed field the complex Clifford algebra is $M_{2^m}(\mathbb{C})$ for $n=2m$ or $n=2m+1$, and a minimal left ideal is a column, of dimension $2^m=2^{\lfloor n/2\rfloor}$; the statement is the module-theoretic reading of the classification of *Spin Representations and Clifford Modules*. Over $\mathbb{R}$ the same reading of the eightfold table gives the real module. $\square$
+**Proof.** Over an algebraically closed field the complex Clifford algebra is $M_{2^m}(\mathbb{C})$ for $n=2m$ or $n=2m+1$, and a minimal left ideal is a column, of dimension $2^m=2^{\lfloor n/2\rfloor}$; the statement is the module-theoretic reading of the classification of *Spin Representations and Clifford Modules*. Over $\mathbb{R}$ the same reading of the eightfold table gives the real module.
 
 ### The Action of the Spin Group
 
 **Theorem.** The spin group $\mathrm{Spin}(V,q)\subseteq\mathrm{Cl}^0(V,q)$ acts on a minimal left ideal by left multiplication, and this action is the spin representation of *Spin Representations and Clifford Modules*; its kernel on an irreducible module is $\{\pm1\}$.
 
-**Proof.** The spin group lies in the group of units of the algebra and acts on every left ideal by left multiplication; for an irreducible module this is the spin representation, and the statement about the kernel, $\rho(-1)=-\mathrm{id}$, is proved in the cited article. $\square$
+**Proof.** The spin group lies in the group of units of the algebra and acts on every left ideal by left multiplication; for an irreducible module this is the spin representation, and the statement about the kernel, $\rho(-1)=-\mathrm{id}$, is proved in the cited article.
 
 So a spinor is an element of a minimal left ideal and transforms under $\psi\mapsto R\psi$; the sandwich $v\mapsto RvR^{-1}$ of *Versors, Rotors and the Sandwich Action* is the action on the vectors, and the two are different actions of the same group element, as that article records.
 
@@ -83,7 +83,7 @@ $$
 
 is an idempotent, and $a_if=0$ for every $i$.
 
-**Proof.** For one pair, $a^{\dagger}a=1-aa^{\dagger}$ gives $aa^{\dagger}a=a(1-aa^{\dagger})=a-a^2a^{\dagger}=a$, because $a^2=0$; hence $(aa^{\dagger})^2=aa^{\dagger}aa^{\dagger}=(aa^{\dagger}a)a^{\dagger}=aa^{\dagger}$. The annihilation is $a(aa^{\dagger})=a^2a^{\dagger}=0$. For several pairs the factors are idempotents and commute, the anticommutation relations sending an even number of signs into each interchange, so the product is idempotent and each $a_i$ annihilates it on the left. $\square$
+**Proof.** For one pair, $a^{\dagger}a=1-aa^{\dagger}$ gives $aa^{\dagger}a=a(1-aa^{\dagger})=a-a^2a^{\dagger}=a$, because $a^2=0$; hence $(aa^{\dagger})^2=aa^{\dagger}aa^{\dagger}=(aa^{\dagger}a)a^{\dagger}=aa^{\dagger}$. The annihilation is $a(aa^{\dagger})=a^2a^{\dagger}=0$. For several pairs the factors are idempotents and commute, the anticommutation relations sending an even number of signs into each interchange, so the product is idempotent and each $a_i$ annihilates it on the left.
 
 ### The Identification with the Exterior Algebra
 
@@ -95,7 +95,7 @@ $$
 
 is an isomorphism of vector spaces, and under it the creation operators $a_i^{\dagger}$ act by exterior multiplication and the annihilation operators $a_i$ by contraction.
 
-**Proof.** The creation operators anticommute among themselves, so the image of a wedge depends only on the set of indices and the map is well defined; the elements $a_{i_1}^{\dagger}\cdots a_{i_k}^{\dagger}\pi$ with $i_1<\cdots<i_k$ span $\mathrm{Cl}\pi$ because every product of the generators can be reordered into creation operators, annihilation operators and the idempotent, and the annihilation operators on the right of the expression always meet $\pi$ and vanish unless they have already been converted into creation operators by the anticommutation relations. The dimension count is the dimension of the spinor module, $2^m$; the action of $a_i^{\dagger}$ is multiplication and that of $a_i$ is the adjoint operation on the exterior algebra induced by the pairing, which is the contraction. $\square$
+**Proof.** The creation operators anticommute among themselves, so the image of a wedge depends only on the set of indices and the map is well defined; the elements $a_{i_1}^{\dagger}\cdots a_{i_k}^{\dagger}\pi$ with $i_1<\cdots<i_k$ span $\mathrm{Cl}\pi$ because every product of the generators can be reordered into creation operators, annihilation operators and the idempotent, and the annihilation operators on the right of the expression always meet $\pi$ and vanish unless they have already been converted into creation operators by the anticommutation relations. The dimension count is the dimension of the spinor module, $2^m$; the action of $a_i^{\dagger}$ is multiplication and that of $a_i$ is the adjoint operation on the exterior algebra induced by the pairing, which is the contraction.
 
 **Remark.** The theorem identifies the abstract ideal with the Chevalley module $\Delta=\Lambda^{\bullet}W$ of *Spin Representations and Clifford Modules*, the exterior algebra of a maximal isotropic subspace. The operators $\varepsilon(w)$ and $\iota(w')$ of that article are the left multiplications by the elements of $W$ and of $W'$ on the ideal, so the creation and annihilation operators of the spinor module are multiplications in the algebra, and the two constructions of the spinor space are the same one written on the algebra and on the exterior algebra.
 
@@ -113,7 +113,7 @@ $$
 
 is an isomorphism of $\mathrm{Cl}^0$-modules; hence $\mathrm{Cl}(V,q)\pi$ is free of rank one over the even subalgebra and has dimension $2^{n-1}=\dim\mathrm{Cl}^0(V,q)$.
 
-**Proof.** The identity $ef=\pi$ and the decomposition $\mathrm{Cl}^1(V,q)=\mathrm{Cl}^0(V,q)e$ of the odd part, valid because $e$ is invertible, give $\mathrm{Cl}^1\pi=\mathrm{Cl}^0ef=\mathrm{Cl}^0\pi$, so the two ideals coincide and the map is onto. For injectivity, if $xf=0$ with $x$ even then $x(1+e)=0$, that is $x=-xe$; the grade involution fixes $x$ and sends $e$ to $-e$, so applying it gives $x=xe$, and the two relations give $x=-x$, whence $x=0$ in characteristic not two. $\square$
+**Proof.** The identity $ef=\pi$ and the decomposition $\mathrm{Cl}^1(V,q)=\mathrm{Cl}^0(V,q)e$ of the odd part, valid because $e$ is invertible, give $\mathrm{Cl}^1\pi=\mathrm{Cl}^0ef=\mathrm{Cl}^0\pi$, so the two ideals coincide and the map is onto. For injectivity, if $xf=0$ with $x$ even then $x(1+e)=0$, that is $x=-xe$; the grade involution fixes $x$ and sends $e$ to $-e$, so applying it gives $x=xe$, and the two relations give $x=-x$, whence $x=0$ in characteristic not two.
 
 **Corollary.** When in addition $\pi$ is primitive, so that $\mathrm{Cl}(V,q)\pi$ is the spinor module, the even subalgebra is identified with the spinor module and a spinor may be represented by an even multivector. When $\pi$ is not primitive the ideal is a sum of copies of the spinor module, and the even subalgebra represents that larger module.
 
@@ -123,7 +123,7 @@ is an isomorphism of $\mathrm{Cl}^0$-modules; hence $\mathrm{Cl}(V,q)\pi$ is fre
 
 **Theorem.** Let $n=\dim V$ be even. Then $\mathrm{Cl}^0(V,q)$ is the Clifford algebra of a space of dimension $n-1$ and the half-spinor spaces $\Delta_{\pm}$ are its irreducible modules; they are non-isomorphic when $\mathrm{Cl}^0$ has two simple factors and isomorphic when it is simple. A minimal left ideal of $\mathrm{Cl}^0(V,q)$ is a half-spinor space, and the spinor module of $\mathrm{Cl}(V,q)$ is the sum $\Delta_+\oplus\Delta_-$ of the two when they are non-isomorphic, and a sum of two copies of the unique simple module when $\mathrm{Cl}^0$ is simple.
 
-**Proof.** The even part is a Clifford algebra of one dimension less, and the half-spinor spaces are its irreducible modules, by *Spin Representations and Clifford Modules*. They are the eigenspaces of the volume element, which is central for even $n$ and whose square is a scalar, so the algebra acts on their sum by the two projections; that sum is the spinor module of $\mathrm{Cl}(V,q)$, with one copy of each of the two simple modules when they differ and two copies of the single one when they agree. $\square$
+**Proof.** The even part is a Clifford algebra of one dimension less, and the half-spinor spaces are its irreducible modules, by *Spin Representations and Clifford Modules*. They are the eigenspaces of the volume element, which is central for even $n$ and whose square is a scalar, so the algebra acts on their sum by the two projections; that sum is the spinor module of $\mathrm{Cl}(V,q)$, with one copy of each of the two simple modules when they differ and two copies of the single one when they agree.
 
 ## Worked Cases
 
@@ -151,7 +151,7 @@ which is the action of the Pauli matrices with $i=\omega$: $e_1$ acts as $\begin
 
 ### Minkowski Space
 
-In $\mathrm{Cl}_{1,3}=M_2(\mathbb{H})$ the even part is $\mathrm{Cl}^0_{1,3}\cong\mathrm{Cl}_{1,2}\cong M_2(\mathbb{C})$, which is the biquaternion algebra $\mathbb{B}$ of *The Biquaternion Algebra as a Clifford Algebra*. An even multivector of $\mathrm{Cl}_{1,3}$ has $1+6+1=8$ real components, the scalar, the six bivectors and the pseudoscalar, and this is the real dimension of a Dirac spinor; the chiral halves are the two minimal left ideals of $M_2(\mathbb{C})$, each of complex dimension two, and they are the two Weyl spinors of the spinor module. The description of a Dirac spinor as an even multivector is thus the statement that the spinor module is the even subalgebra, which here is the biquaternion algebra acting on itself.
+In $\mathrm{Cl}_{1,3}=M_2(\mathbb{H})$ the even part is $\mathrm{Cl}^0_{1,3}\cong\mathrm{Cl}_{1,2}\cong M_2(\mathbb{C})$, which is the biquaternion algebra $\mathbb{B}$ of *The Clifford Structure of the Biquaternion Algebra*. An even multivector of $\mathrm{Cl}_{1,3}$ has $1+6+1=8$ real components, the scalar, the six bivectors and the pseudoscalar, and this is the real dimension of a Dirac spinor; the chiral halves are the two minimal left ideals of $M_2(\mathbb{C})$, each of complex dimension two, and they are the two Weyl spinors of the spinor module. The description of a Dirac spinor as an even multivector is thus the statement that the spinor module is the even subalgebra, which here is the biquaternion algebra acting on itself.
 
 ## The Two Actions on the Ideal
 
@@ -159,7 +159,7 @@ Let $I=\mathrm{Cl}(V,q)\pi$ be a minimal left ideal, $\psi\in I$ a spinor and $R
 
 **Proposition.** Left multiplication is an action of the rotors on $I$, $\psi\mapsto R\psi$, and it is the spin representation. The dual representation is realised by right multiplication on a minimal right ideal, $J=\pi'\mathrm{Cl}(V,q)$, and right multiplication by a rotor does not preserve a minimal left ideal in general. The sandwich $v\mapsto RvR^{-1}$ is neither, being the action on the vectors.
 
-**Proof.** The left action is the module action of *Spin Representations and Clifford Modules*. For the second statement, right multiplication carries $I$ to $\mathrm{Cl}(V,q)(fx)$, and $fx$ need not lie in $I$: in $\mathrm{Cl}_{3,0}$ with $\pi=\tfrac12(1+e_3)$ one has $fe_2e_3=\tfrac12(e_2e_3-e_2)$, while a combination $af+be_1\pi+ce_2\pi+d\omega \pi$ has the same coefficient $\tfrac c2$ of $e_2$ and of $e_2e_3$, so the two coefficients of $fe_2e_3$, namely $-\tfrac12$ and $+\tfrac12$, cannot both be matched, and $fe_2e_3\notin I$. A right ideal is preserved by right multiplication by a unit, because $\mathrm{Cl}(V,q)R^{-1}=\mathrm{Cl}(V,q)$, and the resulting action of the rotors is the dual of the spin representation. The sandwich acts on $V=\mathrm{Cl}_1$, not on $I$ in general. $\square$
+**Proof.** The left action is the module action of *Spin Representations and Clifford Modules*. For the second statement, right multiplication carries $I$ to $\mathrm{Cl}(V,q)(fx)$, and $fx$ need not lie in $I$: in $\mathrm{Cl}_{3,0}$ with $\pi=\tfrac12(1+e_3)$ one has $fe_2e_3=\tfrac12(e_2e_3-e_2)$, while a combination $af+be_1\pi+ce_2\pi+d\omega \pi$ has the same coefficient $\tfrac c2$ of $e_2$ and of $e_2e_3$, so the two coefficients of $fe_2e_3$, namely $-\tfrac12$ and $+\tfrac12$, cannot both be matched, and $fe_2e_3\notin I$. A right ideal is preserved by right multiplication by a unit, because $\mathrm{Cl}(V,q)R^{-1}=\mathrm{Cl}(V,q)$, and the resulting action of the rotors is the dual of the spin representation. The sandwich acts on $V=\mathrm{Cl}_1$, not on $I$ in general.
 
 **Remark (the grading of a spinor).** A spinor is an element of $I$ and need not be homogeneous or even; the even-multivector picture of the previous section applies when $I$ is identified with the even subalgebra through a primitive idempotent, and there the representative of a spinor is even. In $\mathrm{Cl}_{1,3}$ this makes the representative of a Dirac spinor a biquaternion, which is the form in which the applications of the category write it.
 

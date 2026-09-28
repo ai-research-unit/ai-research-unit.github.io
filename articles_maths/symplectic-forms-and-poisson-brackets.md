@@ -25,7 +25,7 @@ for all $u \in V$. An alternating bilinear form is also called a **$2$-form**, o
 
 **Proposition.** Let $\omega$ be an alternating bilinear form. Then $\omega(u, v) = -\omega(v, u)$ for all $u, v \in V$. Conversely, if $2$ is invertible in $K$ and $\omega(u, v) = -\omega(v, u)$ for all $u, v$, then $\omega$ is alternating.
 
-**Proof.** Expanding $0 = \omega(u + v, u + v)$ by bilinearity gives $\omega(u, u) + \omega(u, v) + \omega(v, u) + \omega(v, v) = \omega(u, v) + \omega(v, u)$, so the first claim follows. For the second, put $u = v$ in the skew-symmetry to obtain $\omega(u, u) = -\omega(u, u)$, that is $2\omega(u, u) = 0$, and invertibility of $2$ gives $\omega(u, u) = 0$. $\square$
+**Proof.** Expanding $0 = \omega(u + v, u + v)$ by bilinearity gives $\omega(u, u) + \omega(u, v) + \omega(v, u) + \omega(v, v) = \omega(u, v) + \omega(v, u)$, so the first claim follows. For the second, put $u = v$ in the skew-symmetry to obtain $\omega(u, u) = -\omega(u, u)$, that is $2\omega(u, u) = 0$, and invertibility of $2$ gives $\omega(u, u) = 0$.
 
 **Remark.** Over a field of characteristic $2$ skew-symmetry and symmetry coincide, and the alternating condition is strictly stronger; the symplectic theory is stated through alternation so that it is correct in every characteristic. Over characteristic different from $2$ the two notions agree and the reader may substitute skew-symmetry everywhere.
 
@@ -49,7 +49,7 @@ The form is **nondegenerate** if $\operatorname{rad}(\omega) = 0$.
 
 **Proposition.** Let $\Omega$ be the matrix of $\omega$ in a basis. Then $u \in \operatorname{rad}(\omega)$ if and only if $\Omega u = 0$. Consequently $\omega$ is nondegenerate precisely when $\Omega$ is invertible, and in that case the rank of $\omega$, defined as the rank of $\Omega$, equals $\dim V$.
 
-**Proof.** By definition $u \in \operatorname{rad}(\omega)$ means $u^{\mathsf{T}}\Omega v = 0$ for all coordinate vectors $v$, equivalently $u^{\mathsf{T}}\Omega = 0$, equivalently $\Omega u = 0$ because $\Omega^{\mathsf{T}} = -\Omega$. $\square$
+**Proof.** By definition $u \in \operatorname{rad}(\omega)$ means $u^{\mathsf{T}}\Omega v = 0$ for all coordinate vectors $v$, equivalently $u^{\mathsf{T}}\Omega = 0$, equivalently $\Omega u = 0$ because $\Omega^{\mathsf{T}} = -\Omega$.
 
 ## The Standard Symplectic Form
 
@@ -69,7 +69,7 @@ $$
 
 **Proposition.** $\omega_0$ is alternating and nondegenerate, and $\det(J) = 1$; hence $J$ is invertible with $J^{-1} = -J$.
 
-**Proof.** Alternation is immediate from the definition: $\omega_0(u, u) = \sum_i (x_i y_i - y_i x_i) = 0$. For nondegeneracy, suppose $\omega_0(u, v) = 0$ for all $v$. Evaluating on the basis vector $e_i$ of the $x$-block gives $\omega_0(u, e_i) = -y_i = 0$, and evaluating on the basis vector $f_i$ of the $y$-block gives $\omega_0(u, f_i) = x_i = 0$; hence $u = 0$. Finally $\det J = 1$: exchanging the two block columns multiplies the determinant by $(-1)^{n^2} = (-1)^n$ and leaves the block triangular matrix $\begin{pmatrix} I_n & 0 \\ 0 & -I_n\end{pmatrix}$ of determinant $\det(I_n)\det(-I_n) = (-1)^n$, so the two signs cancel. $\square$
+**Proof.** Alternation is immediate from the definition: $\omega_0(u, u) = \sum_i (x_i y_i - y_i x_i) = 0$. For nondegeneracy, suppose $\omega_0(u, v) = 0$ for all $v$. Evaluating on the basis vector $e_i$ of the $x$-block gives $\omega_0(u, e_i) = -y_i = 0$, and evaluating on the basis vector $f_i$ of the $y$-block gives $\omega_0(u, f_i) = x_i = 0$; hence $u = 0$. Finally $\det J = 1$: exchanging the two block columns multiplies the determinant by $(-1)^{n^2} = (-1)^n$ and leaves the block triangular matrix $\begin{pmatrix} I_n & 0 \\ 0 & -I_n\end{pmatrix}$ of determinant $\det(I_n)\det(-I_n) = (-1)^n$, so the two signs cancel.
 
 **Remark.** The determinant can also be reached through the Pfaffian: for the coordinate order used here, $\operatorname{Pf}(J) = (-1)^{n(n-1)/2}$, whence $\det(J) = \operatorname{Pf}(J)^2 = 1$.
 
@@ -91,7 +91,7 @@ $$
 
 In this basis the matrix of $\omega$ is $J$, so every symplectic space of dimension $2n$ is isomorphic to $(K^{2n}, \omega_0)$.
 
-**Proof.** If $V = 0$ there is nothing to prove. Otherwise choose $e_1 \neq 0$. Since $\omega$ is nondegenerate there is $f_1$ with $\omega(e_1, f_1) \neq 0$; replacing $f_1$ by $\omega(e_1, f_1)^{-1} f_1$ gives $\omega(e_1, f_1) = 1$. The restriction of $\omega$ to the orthogonal complement $W = \langle e_1, f_1\rangle^{\perp}$ is alternating, and it is nondegenerate: if $w \in W$ is orthogonal to all of $W$, then $w$ is orthogonal to $e_1, f_1$ as well, because $w \in W$, and every element of $V$ is a combination of $e_1, f_1$ and an element of $W$, so $w \in \operatorname{rad}(\omega) = 0$. Moreover $V = \langle e_1, f_1\rangle \oplus W$: any $v$ can be corrected by a multiple of $f_1$ and a multiple of $e_1$ to land in $W$, since $\omega(e_1, v)$ and $\omega(f_1, v)$ can be adjusted to zero, and the sum is direct because $\langle e_1, f_1\rangle \cap W = 0$. Induction on $\dim V$ now applies to $W$, producing $e_2, \ldots, e_n, f_2, \ldots, f_n$. $\square$
+**Proof.** If $V = 0$ there is nothing to prove. Otherwise choose $e_1 \neq 0$. Since $\omega$ is nondegenerate there is $f_1$ with $\omega(e_1, f_1) \neq 0$; replacing $f_1$ by $\omega(e_1, f_1)^{-1} f_1$ gives $\omega(e_1, f_1) = 1$. The restriction of $\omega$ to the orthogonal complement $W = \langle e_1, f_1\rangle^{\perp}$ is alternating, and it is nondegenerate: if $w \in W$ is orthogonal to all of $W$, then $w$ is orthogonal to $e_1, f_1$ as well, because $w \in W$, and every element of $V$ is a combination of $e_1, f_1$ and an element of $W$, so $w \in \operatorname{rad}(\omega) = 0$. Moreover $V = \langle e_1, f_1\rangle \oplus W$: any $v$ can be corrected by a multiple of $f_1$ and a multiple of $e_1$ to land in $W$, since $\omega(e_1, v)$ and $\omega(f_1, v)$ can be adjusted to zero, and the sum is direct because $\langle e_1, f_1\rangle \cap W = 0$. Induction on $\dim V$ now applies to $W$, producing $e_2, \ldots, e_n, f_2, \ldots, f_n$.
 
 **Corollary.** A symplectic space has even dimension, and a nondegenerate alternating form exists on $V$ if and only if $\dim V$ is even.
 
@@ -113,25 +113,25 @@ For $V = K^{2n}$ with the standard form one writes $Sp(2n, K) = \{A \in GL_{2n}(
 
 **Proposition.** $Sp(V, \omega)$ is a subgroup of $GL(V)$, and $Sp(2n, K)$ is the subgroup of $GL_{2n}(K)$ defined by the polynomial equations $A^{\mathsf{T}} J A = J$.
 
-**Proof.** The identity preserves $\omega$; if $A$ and $B$ preserve $\omega$ then so does $AB$, since $\omega(ABu, ABv) = \omega(Bu, Bv) = \omega(u, v)$; and if $A$ preserves $\omega$ then so does $A^{-1}$, applying the preservation to $A^{-1}u, A^{-1}v$. The matrix description is the same condition written in the standard basis. $\square$
+**Proof.** The identity preserves $\omega$; if $A$ and $B$ preserve $\omega$ then so does $AB$, since $\omega(ABu, ABv) = \omega(Bu, Bv) = \omega(u, v)$; and if $A$ preserves $\omega$ then so does $A^{-1}$, applying the preservation to $A^{-1}u, A^{-1}v$. The matrix description is the same condition written in the standard basis.
 
 ### Determinant One
 
 **Theorem.** Every $A \in Sp(2n, K)$ has $\det(A) = 1$. Hence $Sp(2n, K) \subseteq SL_{2n}(K)$.
 
-**Proof.** Taking determinants in $A^{\mathsf{T}} J A = J$ gives $(\det A)^2 \det J = \det J$, and $\det J = 1 \neq 0$, so $(\det A)^2 = 1$ and $\det A = \pm 1$. To rule out $-1$ one uses the Pfaffian identity established in the section *The Pfaffian and the Volume Form* below: the Pfaffian is multiplicative in the sense $\operatorname{Pf}(A^{\mathsf{T}} \Omega A) = \det(A)\operatorname{Pf}(\Omega)$ for every alternating $\Omega$ and every $A$, and with $\Omega = J$ and $A^{\mathsf{T}} J A = J$ this gives $\operatorname{Pf}(J) = \det(A)\operatorname{Pf}(J)$. Since $\operatorname{Pf}(J) = (-1)^{n(n-1)/2} \neq 0$, it follows that $\det(A) = 1$. $\square$
+**Proof.** Taking determinants in $A^{\mathsf{T}} J A = J$ gives $(\det A)^2 \det J = \det J$, and $\det J = 1 \neq 0$, so $(\det A)^2 = 1$ and $\det A = \pm 1$. To rule out $-1$ one uses the Pfaffian identity established in the section *The Pfaffian and the Volume Form* below: the Pfaffian is multiplicative in the sense $\operatorname{Pf}(A^{\mathsf{T}} \Omega A) = \det(A)\operatorname{Pf}(\Omega)$ for every alternating $\Omega$ and every $A$, and with $\Omega = J$ and $A^{\mathsf{T}} J A = J$ this gives $\operatorname{Pf}(J) = \det(A)\operatorname{Pf}(J)$. Since $\operatorname{Pf}(J) = (-1)^{n(n-1)/2} \neq 0$, it follows that $\det(A) = 1$.
 
-### The Lie Algebra $\mathfrak{sp}(2n, K)$
+### The Lie Algebra $\mathrm{Sp}(2n, K)$
 
 **Definition.** The **symplectic Lie algebra** is
 
 $$
-\mathfrak{sp}(2n, K) = \{X \in \mathfrak{gl}(2n, K) : X^{\mathsf{T}} J + J X = 0\}.
+\mathrm{Sp}(2n, K) = \{X \in \mathrm{GL}(2n, K) : X^{\mathsf{T}} J + J X = 0\}.
 $$
 
-**Proposition.** $\mathfrak{sp}(2n, K)$ is a Lie subalgebra of $\mathfrak{gl}(2n, K)$ under the commutator bracket, of dimension $n(2n+1)$, and it consists of those $X$ for which $JX$ is symmetric. It is the tangent space at the identity of $Sp(2n, K)$, equivalently the Lie algebra of the symplectic group in the sense of *Lie Groups*.
+**Proposition.** $\mathrm{Sp}(2n, K)$ is a Lie subalgebra of $\mathrm{GL}(2n, K)$ under the commutator bracket, of dimension $n(2n+1)$, and it consists of those $X$ for which $JX$ is symmetric. It is the tangent space at the identity of $Sp(2n, K)$, equivalently the Lie algebra of the symplectic group in the sense of *Lie Groups*.
 
-**Proof.** The defining equation $A^{\mathsf{T}} J A = J$ is a polynomial identity in the entries of $A$, so it may be evaluated at $A = I + tX$ in $K[t]$: the coefficient of $t$ is $X^{\mathsf{T}} J + J X$, and it must vanish, so the Lie algebra is contained in the displayed set; the two sides have the same dimension because the map $X \mapsto JX$ identifies the solution set with the symmetric matrices, which form a subspace of dimension $\binom{2n+1}{2} = n(2n+1)$. Closure under the commutator is the usual one: if $X^{\mathsf{T}}J + JX = 0$ and $Y^{\mathsf{T}}J + JY = 0$, then $[X,Y]^{\mathsf{T}}J + J[X,Y] = 0$, as one checks by expanding. $\square$
+**Proof.** The defining equation $A^{\mathsf{T}} J A = J$ is a polynomial identity in the entries of $A$, so it may be evaluated at $A = I + tX$ in $K[t]$: the coefficient of $t$ is $X^{\mathsf{T}} J + J X$, and it must vanish, so the Lie algebra is contained in the displayed set; the two sides have the same dimension because the map $X \mapsto JX$ identifies the solution set with the symmetric matrices, which form a subspace of dimension $\binom{2n+1}{2} = n(2n+1)$. Closure under the commutator is the usual one: if $X^{\mathsf{T}}J + JX = 0$ and $Y^{\mathsf{T}}J + JY = 0$, then $[X,Y]^{\mathsf{T}}J + J[X,Y] = 0$, as one checks by expanding.
 
 ### Order over a Finite Field
 
@@ -147,7 +147,7 @@ $$
 |Sp(2n, \mathbb{F}_q)| = \prod_{i=1}^{n} (q^{2n-2i+2} - 1)\, q^{2n-2i+1} = q^{\sum_{i=1}^n (2n-2i+1)} \prod_{i=1}^{n}(q^{2i} - 1),
 $$
 
-and the exponent is $\sum_{i=1}^n (2n - 2i + 1) = n^2$. $\square$
+and the exponent is $\sum_{i=1}^n (2n - 2i + 1) = n^2$.
 
 **Example.** For $n = 1$, $Sp(2, \mathbb{F}_q) = SL_2(\mathbb{F}_q)$, and the formula gives $q(q^2 - 1)$, which is the order of $SL_2(\mathbb{F}_q)$. Indeed every $2 \times 2$ matrix of determinant $1$ preserves the alternating form up to scalar, and the scalar is fixed to $1$ by the determinant.
 
@@ -159,13 +159,13 @@ and the exponent is $\sum_{i=1}^n (2n - 2i + 1) = n^2$. $\square$
 
 **Proposition.** For every subspace $W$ of a symplectic space $V$ one has $\dim W + \dim W^{\perp} = \dim V$. If $W$ is isotropic then $\dim W \leq \tfrac{1}{2}\dim V$.
 
-**Proof.** The linear map $V \to W^*$, $v \mapsto \omega(v, \cdot)|_W$, has kernel $W^{\perp}$; it is onto, because a linear functional on $W$ extends to $V$ and is represented by an element of $V$ by nondegeneracy of $\omega$. Hence $\dim W^{\perp} = \dim V - \dim W$. If $W$ is isotropic then $W \subseteq W^{\perp}$, so $\dim W \leq \dim W^{\perp} = \dim V - \dim W$. $\square$
+**Proof.** The linear map $V \to W^*$, $v \mapsto \omega(v, \cdot)|_W$, has kernel $W^{\perp}$; it is onto, because a linear functional on $W$ extends to $V$ and is represented by an element of $V$ by nondegeneracy of $\omega$. Hence $\dim W^{\perp} = \dim V - \dim W$. If $W$ is isotropic then $W \subseteq W^{\perp}$, so $\dim W \leq \dim W^{\perp} = \dim V - \dim W$.
 
 ### Lagrangian Subspaces
 
 **Theorem.** Let $(V, \omega)$ be symplectic of dimension $2n$. A subspace $W$ is Lagrangian if and only if it is isotropic of dimension $n$, and Lagrangian subspaces exist.
 
-**Proof.** An isotropic subspace of dimension $n$ is Lagrangian by definition. Conversely a Lagrangian is isotropic of dimension $n$. For existence, the span $\langle e_1, \ldots, e_n\rangle$ of the first half of a symplectic basis is isotropic, since $\omega(e_i, e_j) = 0$. $\square$
+**Proof.** An isotropic subspace of dimension $n$ is Lagrangian by definition. Conversely a Lagrangian is isotropic of dimension $n$. For existence, the span $\langle e_1, \ldots, e_n\rangle$ of the first half of a symplectic basis is isotropic, since $\omega(e_i, e_j) = 0$.
 
 **Example.** In $(K^{2n}, \omega_0)$ the subspaces $\langle e_1, \ldots, e_n\rangle$ and $\langle f_1, \ldots, f_n\rangle$ are Lagrangian, and so is the diagonal $\langle e_i + f_i : i = 1, \ldots, n\rangle$.
 
@@ -175,7 +175,7 @@ and the exponent is $\sum_{i=1}^n (2n - 2i + 1) = n^2$. $\square$
 
 **Proposition.** $\operatorname{Lag}(V)$ is a smooth projective variety of dimension $\tfrac{1}{2} n(n+1)$. Over $\mathbb{F}_q$ its cardinality is $\prod_{i=1}^{n}(q^i + 1)$.
 
-**Proof.** The count over $\mathbb{F}_q$ is obtained by counting the ordered isotropic tuples: the number of ordered symplectic bases whose first $n$ vectors span a given Lagrangian is $|P|$, and dividing $|Sp(2n, \mathbb{F}_q)|$ by $|P|$ gives $\prod_{i=1}^{n}(q^i + 1)$ by a direct computation. The leading power of $q$ in that product is $q^{n(n+1)/2}$, which is the dimension of the variety. $\square$
+**Proof.** The count over $\mathbb{F}_q$ is obtained by counting the ordered isotropic tuples: the number of ordered symplectic bases whose first $n$ vectors span a given Lagrangian is $|P|$, and dividing $|Sp(2n, \mathbb{F}_q)|$ by $|P|$ gives $\prod_{i=1}^{n}(q^i + 1)$ by a direct computation. The leading power of $q$ in that product is $q^{n(n+1)/2}$, which is the dimension of the variety.
 
 ## The Pfaffian and the Volume Form
 
@@ -201,7 +201,7 @@ $$
 \frac{1}{2^n n!}\Bigl(\sum_{i,j}\Omega_{ij}\,x_i \wedge x_j\Bigr)^{n} = \operatorname{Pf}(\Omega)\, x_1 \wedge \cdots \wedge x_{2n},
 $$
 
-which agrees with the explicit sum above because the $n$-fold wedge counts each partition of $\{1, \ldots, 2n\}$ into unordered pairs $n!$ times and the ordered sum counts it $2^n n!$ times. Writing $\Omega' = A^{\mathsf{T}}\Omega A$ for the matrix of the form in the coordinates $y = Ax$ gives $\sum \Omega'_{ij}x_i\wedge x_j = \sum\Omega_{ij}y_i\wedge y_j$, and $y_1\wedge\cdots\wedge y_{2n} = \det(A)x_1\wedge\cdots\wedge x_{2n}$; taking $n$-th powers of both sides of this identity and comparing the coefficients of $x_1\wedge\cdots\wedge x_{2n}$ gives $\operatorname{Pf}(A^{\mathsf{T}}\Omega A) = \det(A)\operatorname{Pf}(\Omega)$. For the second identity, the normal form theorem supplies $B$ with $\Omega = B^{\mathsf{T}}JB$, so with $J' = P^{\mathsf{T}}JP$ as above one has $J = PJ'P^{\mathsf{T}}$ and hence $\Omega = C^{\mathsf{T}}J'C$ for $C = P^{\mathsf{T}}B$, whence $\operatorname{Pf}(\Omega) = \det(C)\operatorname{Pf}(J') = \det(C)$ and $\det(\Omega) = \det(C)^2\det(J') = \det(C)^2$; hence $\det(\Omega) = \operatorname{Pf}(\Omega)^2$. $\square$
+which agrees with the explicit sum above because the $n$-fold wedge counts each partition of $\{1, \ldots, 2n\}$ into unordered pairs $n!$ times and the ordered sum counts it $2^n n!$ times. Writing $\Omega' = A^{\mathsf{T}}\Omega A$ for the matrix of the form in the coordinates $y = Ax$ gives $\sum \Omega'_{ij}x_i\wedge x_j = \sum\Omega_{ij}y_i\wedge y_j$, and $y_1\wedge\cdots\wedge y_{2n} = \det(A)x_1\wedge\cdots\wedge x_{2n}$; taking $n$-th powers of both sides of this identity and comparing the coefficients of $x_1\wedge\cdots\wedge x_{2n}$ gives $\operatorname{Pf}(A^{\mathsf{T}}\Omega A) = \det(A)\operatorname{Pf}(\Omega)$. For the second identity, the normal form theorem supplies $B$ with $\Omega = B^{\mathsf{T}}JB$, so with $J' = P^{\mathsf{T}}JP$ as above one has $J = PJ'P^{\mathsf{T}}$ and hence $\Omega = C^{\mathsf{T}}J'C$ for $C = P^{\mathsf{T}}B$, whence $\operatorname{Pf}(\Omega) = \det(C)\operatorname{Pf}(J') = \det(C)$ and $\det(\Omega) = \det(C)^2\det(J') = \det(C)^2$; hence $\det(\Omega) = \operatorname{Pf}(\Omega)^2$.
 
 **Corollary.** A symplectic form is nondegenerate precisely when its Pfaffian is nonzero; over a field, an alternating matrix of even size is invertible exactly when its Pfaffian is nonzero.
 
@@ -217,7 +217,7 @@ which is nonzero because $\omega$ is nondegenerate; in a symplectic basis, where
 
 **Proposition.** Every $A \in Sp(V, \omega)$ preserves the Liouville form, and consequently $\det(A) = 1$; the volume of a symplectic space is preserved by its symplectic automorphisms.
 
-**Proof.** If $A$ preserves $\omega$ then $A$ preserves $\omega^{\wedge n}$ and hence its scalar multiple $\omega^{\wedge n}/n!$, so $\det(A) = 1$ by the determinant-one theorem. $\square$
+**Proof.** If $A$ preserves $\omega$ then $A$ preserves $\omega^{\wedge n}$ and hence its scalar multiple $\omega^{\wedge n}/n!$, so $\det(A) = 1$ by the determinant-one theorem.
 
 **Remark.** The Liouville form is the symplectic analogue of a volume form, and the inclusion $Sp \subseteq SL$ says that symplectic transformations preserve it. The Pfaffian is the square root of the determinant, defined only for alternating matrices, and it is the algebraic reason for the restriction to determinant one.
 
@@ -243,7 +243,7 @@ $$
 
 where $\operatorname{Der}(A)$ is the Lie algebra of derivations of $A$ under the commutator. Hence $A$ is a Lie algebra under $\{\cdot, \cdot\}$, and its image in $\operatorname{Der}(A)$ consists of the **Hamiltonian derivations**.
 
-**Proof.** The derivation property is (b) rewritten. The map $\operatorname{ad}$ is $R$-linear, and the Jacobi identity (c) reads $\operatorname{ad}_{\{f,g\}} = [\operatorname{ad}_f, \operatorname{ad}_g]$, which is exactly the statement that $\operatorname{ad}$ preserves the bracket. $\square$
+**Proof.** The derivation property is (b) rewritten. The map $\operatorname{ad}$ is $R$-linear, and the Jacobi identity (c) reads $\operatorname{ad}_{\{f,g\}} = [\operatorname{ad}_f, \operatorname{ad}_g]$, which is exactly the statement that $\operatorname{ad}$ preserves the bracket.
 
 ### The Bracket from a Symplectic Form
 
@@ -275,7 +275,7 @@ $$
 
 **Theorem.** The bracket so defined is a Poisson bracket on $A$: it is bilinear, alternating, a derivation in each argument, and satisfies the Jacobi identity. The map $f \mapsto X_f$ is a homomorphism of Lie algebras onto the Hamiltonian derivations, with kernel the constants $K \cdot 1$ when the derivatives separate constants.
 
-**Proof.** Bilinearity and alternation are immediate from the definition and from $\omega$ being alternating. For the derivation property, $X_{gh} = g X_h + h X_g$ because $d(gh) = g\, dh + h\, dg$ and $\omega$ is bilinear; substituting into $\{f, gh\} = \omega(X_f, X_{gh})$ gives (b). For the Jacobi identity, expand in coordinates: the bracket is $\sum_{ij}\omega^{ij}\partial_j f\, \partial_i g$ with $\omega^{ij}$ constant and alternating, so the bracket of two coordinate functions is the constant $\{x_i, x_j\} = -\omega^{ij}$, and the triple bracket of coordinate functions vanishes. The expression $\{f, \{g, h\}\} + \{g, \{h, f\}\} + \{h, \{f, g\}\}$ is a derivation in each of its three arguments, as the Leibniz rule (b) shows by expanding a product in that argument, and it vanishes on the coordinate functions; since the coordinate functions generate $A$, it vanishes identically. The remaining statements follow from the proposition above, the kernel of $f \mapsto X_f$ consisting exactly of the functions with all first partial derivatives zero. $\square$
+**Proof.** Bilinearity and alternation are immediate from the definition and from $\omega$ being alternating. For the derivation property, $X_{gh} = g X_h + h X_g$ because $d(gh) = g\, dh + h\, dg$ and $\omega$ is bilinear; substituting into $\{f, gh\} = \omega(X_f, X_{gh})$ gives (b). For the Jacobi identity, expand in coordinates: the bracket is $\sum_{ij}\omega^{ij}\partial_j f\, \partial_i g$ with $\omega^{ij}$ constant and alternating, so the bracket of two coordinate functions is the constant $\{x_i, x_j\} = -\omega^{ij}$, and the triple bracket of coordinate functions vanishes. The expression $\{f, \{g, h\}\} + \{g, \{h, f\}\} + \{h, \{f, g\}\}$ is a derivation in each of its three arguments, as the Leibniz rule (b) shows by expanding a product in that argument, and it vanishes on the coordinate functions; since the coordinate functions generate $A$, it vanishes identically. The remaining statements follow from the proposition above, the kernel of $f \mapsto X_f$ consisting exactly of the functions with all first partial derivatives zero.
 
 **Remark.** In the general setting of a symplectic manifold the constant-coefficient computation is replaced by the closedness condition $d\omega = 0$, and the Jacobi identity for the bracket is equivalent to $d\omega = 0$. The algebraic content is the same: the bracket is a derivation in each slot, and the Jacobi identity is the statement that the derivations it produces commute up to the bracket.
 
@@ -319,7 +319,7 @@ $$
 
 so the Poisson bracket is the leading term of the commutator of the deformed product, up to the normalisation factor $2\hbar$.
 
-**Proof.** The $r = 0$ term of the definition is $fg$ and the $r = 1$ term is $-\sum_{ij}\omega^{ij}\partial_i f \partial_j g = \sum_{ij}\omega^{ij}\partial_j f \partial_i g = \{f,g\}$, which gives the first display. The $r$-th term of $g*f$ is obtained from that of $f*g$ by exchanging $f$ and $g$ and relabelling the summation indices; for even $r$ this term is symmetric in $f, g$ and for odd $r$ it is antisymmetric, so the commutator retains only the odd powers, and its $r = 1$ term is $2\hbar\{f,g\}$. Associativity is the classical theorem of Weyl and Moyal, and is most cleanly seen by transporting the product along the Weyl map: there is a linear isomorphism from $A[[\hbar]]$ onto a space of operators under which the star product becomes operator composition, and composition is associative. $\square$
+**Proof.** The $r = 0$ term of the definition is $fg$ and the $r = 1$ term is $-\sum_{ij}\omega^{ij}\partial_i f \partial_j g = \sum_{ij}\omega^{ij}\partial_j f \partial_i g = \{f,g\}$, which gives the first display. The $r$-th term of $g*f$ is obtained from that of $f*g$ by exchanging $f$ and $g$ and relabelling the summation indices; for even $r$ this term is symmetric in $f, g$ and for odd $r$ it is antisymmetric, so the commutator retains only the odd powers, and its $r = 1$ term is $2\hbar\{f,g\}$. Associativity is the classical theorem of Weyl and Moyal, and is most cleanly seen by transporting the product along the Weyl map: there is a linear isomorphism from $A[[\hbar]]$ onto a space of operators under which the star product becomes operator composition, and composition is associative.
 
 **Remark.** The theorem identifies the Poisson algebra $(A, \cdot, \{\cdot, \cdot\})$ as the classical limit of a family of noncommutative associative algebras $A_\hbar = (A[[\hbar]], *)$. The bracket is exactly the commutator of the deformation, divided by $\hbar$ and taken to leading order, so the Lie algebra structure on the functions is not an isolated algebraic accident but the shadow at order $\hbar$ of an associative product. For a general Poisson manifold the existence of a star product with the analogous property is Kontsevich's deformation-quantisation theorem; the constant-coefficient case above is the classical Weyl–Moyal product, and it is entirely algebraic.
 
@@ -327,7 +327,7 @@ so the Poisson bracket is the leading term of the commutator of the deformed pro
 
 A symplectic form on a finite-dimensional vector space $V$ over a field $K$ of characteristic different from $2$ is a nondegenerate alternating bilinear form $\omega$. Its matrix in a basis is an invertible alternating matrix, and nondegeneracy is equivalent to the radical being zero. Every symplectic space of dimension $2n$ admits a symplectic basis $e_1, \ldots, e_n, f_1, \ldots, f_n$ with $\omega(e_i, f_j) = \delta_{ij}$ and all other pairings zero; hence the dimension is even and every symplectic form is equivalent to the standard form $\omega_0$ on $K^{2n}$, the linear Darboux normal form.
 
-The symplectic group $Sp(V, \omega) = \{A \in GL(V) : \omega(Au, Av) = \omega(u, v)\}$ preserve the form; every element has determinant one, by the Pfaffian identity $\operatorname{Pf}(A^{\mathsf{T}}\Omega A) = \det(A)\operatorname{Pf}(\Omega)$, and the Lie algebra is $\mathfrak{sp}(2n, K) = \{X : X^{\mathsf{T}}J + JX = 0\}$ of dimension $n(2n+1)$. Isotropic subspaces have dimension at most $n$; the Lagrangians are the isotropic subspaces of dimension $n$, they form the Lagrangian Grassmannian of dimension $\tfrac{1}{2}n(n+1)$, and the Pfaffian is the square root of the determinant of an alternating matrix, so the Liouville form $\omega^{\wedge n}/n!$ is preserved by symplectic maps.
+The symplectic group $Sp(V, \omega) = \{A \in GL(V) : \omega(Au, Av) = \omega(u, v)\}$ preserve the form; every element has determinant one, by the Pfaffian identity $\operatorname{Pf}(A^{\mathsf{T}}\Omega A) = \det(A)\operatorname{Pf}(\Omega)$, and the Lie algebra is $\mathrm{Sp}(2n, K) = \{X : X^{\mathsf{T}}J + JX = 0\}$ of dimension $n(2n+1)$. Isotropic subspaces have dimension at most $n$; the Lagrangians are the isotropic subspaces of dimension $n$, they form the Lagrangian Grassmannian of dimension $\tfrac{1}{2}n(n+1)$, and the Pfaffian is the square root of the determinant of an alternating matrix, so the Liouville form $\omega^{\wedge n}/n!$ is preserved by symplectic maps.
 
 On the commutative algebra of functions on a symplectic space, the Poisson bracket is a bilinear, alternating, derivation-like bracket satisfying the Jacobi identity; it makes the functions a Lie algebra, the Hamiltonian vector fields a Lie subalgebra of the derivations, and the map $f \mapsto X_f$ a Lie algebra homomorphism with kernel the constants. Finally, the star product is an associative deformation of the commutative product whose commutator has the Poisson bracket as its leading term, so the bracket is the classical limit of a commutator algebra.
 
@@ -346,7 +346,7 @@ On the commutative algebra of functions on a symplectic space, the Poisson brack
 | $J = \begin{pmatrix} 0 & I_n \\ -I_n & 0\end{pmatrix}$ | Matrix of $\omega_0$; $J^{-1} = -J$, $\det J = 1$, $\operatorname{Pf}(J) = (-1)^{n(n-1)/2}$ |
 | $e_1, \ldots, e_n, f_1, \ldots, f_n$ | Symplectic basis; $\omega(e_i, f_j) = \delta_{ij}$ |
 | $Sp(V, \omega)$, $Sp(2n, K)$ | Symplectic group; $A^{\mathsf{T}} J A = J$; contained in $SL$ |
-| $\mathfrak{sp}(2n, K)$ | Symplectic Lie algebra, $X^{\mathsf{T}} J + J X = 0$, dimension $n(2n+1)$ |
+| $\mathrm{Sp}(2n, K)$ | Symplectic Lie algebra, $X^{\mathsf{T}} J + J X = 0$, dimension $n(2n+1)$ |
 | $W^{\perp}$ | Orthogonal complement, $\{u : \omega(u, w) = 0 \ \forall w \in W\}$ |
 | Isotropic, Lagrangian | $\omega\vert_W = 0$; maximal isotropic, of dimension $n$ |
 | $\operatorname{Lag}(V)$ | Lagrangian Grassmannian, dimension $\tfrac{1}{2}n(n+1)$ |

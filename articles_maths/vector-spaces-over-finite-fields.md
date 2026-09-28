@@ -17,7 +17,7 @@ $$
 N(n,k)=(q^n-1)(q^n-q)\cdots(q^n-q^{k-1})=\prod_{i=0}^{k-1}(q^n-q^i) .
 $$
 
-*Proof.* Choosing coordinates identifies $V$ with $\mathbb{F}_q^n$, of cardinality $q^n$. For the count, choose the first vector to be nonzero, with $q^n-1$ choices; having chosen $i$ independent vectors, their span has $q^i$ elements, so the next vector must avoid it, leaving $q^n-q^i$ choices. $\square$
+*Proof.* Choosing coordinates identifies $V$ with $\mathbb{F}_q^n$, of cardinality $q^n$. For the count, choose the first vector to be nonzero, with $q^n-1$ choices; having chosen $i$ independent vectors, their span has $q^i$ elements, so the next vector must avoid it, leaving $q^n-q^i$ choices.
 
 **Corollary.** The number of ordered bases of $V$ is $N(n,n)=\prod_{i=0}^{n-1}(q^n-q^i)$.
 
@@ -29,7 +29,7 @@ $$
 |\operatorname{GL}_n(\mathbb{F}_q)|=\prod_{i=0}^{n-1}(q^n-q^i)=q^{n(n-1)/2}\prod_{i=1}^{n}(q^i-1) .
 $$
 
-*Proof.* An invertible matrix is exactly an ordered basis of $\mathbb{F}_q^n$, read as the list of its columns: a matrix is invertible if and only if its columns are linearly independent, and every ordered basis occurs exactly once. Hence the order is the number of ordered bases, which is the previous corollary. For the second expression, write $q^n-q^i=q^i(q^{n-i}-1)$ and collect: the exponents sum to $\sum_{i=0}^{n-1}i=n(n-1)/2$, and reindexing gives $\prod_{i=1}^n(q^i-1)$. $\square$
+*Proof.* An invertible matrix is exactly an ordered basis of $\mathbb{F}_q^n$, read as the list of its columns: a matrix is invertible if and only if its columns are linearly independent, and every ordered basis occurs exactly once. Hence the order is the number of ordered bases, which is the previous corollary. For the second expression, write $q^n-q^i=q^i(q^{n-i}-1)$ and collect: the exponents sum to $\sum_{i=0}^{n-1}i=n(n-1)/2$, and reindexing gives $\prod_{i=1}^n(q^i-1)$.
 
 **Corollary.** The special linear group has order
 
@@ -61,15 +61,15 @@ $$
 \#\{W:\dim W=k\}=\frac{\prod_{i=0}^{k-1}(q^n-q^i)}{\prod_{i=0}^{k-1}(q^k-q^i)} =\prod_{i=0}^{k-1}\frac{q^n-q^i}{q^k-q^i},
 $$
 
-and simplifying $\dfrac{q^n-q^i}{q^k-q^i}=\dfrac{q^{n-i}-1}{q^{k-i}-1}$ and reindexing gives the stated product. $\square$
+and simplifying $\dfrac{q^n-q^i}{q^k-q^i}=\dfrac{q^{n-i}-1}{q^{k-i}-1}$ and reindexing gives the stated product.
 
 **Corollary.** The number of lines (one-dimensional subspaces) equals the number of hyperplanes (codimension-one subspaces), both equal to $\dfrac{q^n-1}{q-1}=1+q+\cdots+q^{n-1}$.
 
-*Proof.* The count of lines is $\binom{n}{1}_q=(q^n-1)/(q-1)$, and the count of hyperplanes is $\binom{n}{n-1}_q=(q^n-1)/(q-1)$; the symmetry is the duality $W \mapsto W^{\perp}$ for a nondegenerate bilinear form, or directly the identity $\binom{n}{k}_q=\binom{n}{n-k}_q$ from the formula. $\square$
+*Proof.* The count of lines is $\binom{n}{1}_q=(q^n-1)/(q-1)$, and the count of hyperplanes is $\binom{n}{n-1}_q=(q^n-1)/(q-1)$; the symmetry is the duality $W \mapsto W^{\perp}$ for a nondegenerate bilinear form, or directly the identity $\binom{n}{k}_q=\binom{n}{n-k}_q$ from the formula.
 
 **Corollary (symmetry and the $q \to 1$ limit).** $\binom{n}{k}_q=\binom{n}{n-k}_q$, and $\lim_{q \to 1}\binom{n}{k}_q=\binom{n}{k}$ for a complex $q$ approaching $1$; the Gaussian binomial therefore interpolates the ordinary binomial, the case $q=1$ being the analogue of a one-element field.
 
-*Proof.* Symmetry is immediate from the product display for $k$ and for $n-k$. For the limit, $\frac{q^m-1}{q^r-1} \to \frac{m}{r}$ as $q \to 1$, so the product $\prod_{i=1}^k\frac{q^{n-k+i}-1}{q^i-1}$ tends to $\prod_{i=1}^k\frac{n-k+i}{i}=\binom{n}{k}$. $\square$
+*Proof.* Symmetry is immediate from the product display for $k$ and for $n-k$. For the limit, $\frac{q^m-1}{q^r-1} \to \frac{m}{r}$ as $q \to 1$, so the product $\prod_{i=1}^k\frac{q^{n-k+i}-1}{q^i-1}$ tends to $\prod_{i=1}^k\frac{n-k+i}{i}=\binom{n}{k}$.
 
 ### The Recursion
 
@@ -78,7 +78,7 @@ and simplifying $\dfrac{q^n-q^i}{q^k-q^i}=\dfrac{q^{n-i}-1}{q^{k-i}-1}$ and rein
 *Proof.* Put $A=\binom{n}{k}_q$, $B=\binom{n-1}{k-1}_q$ and $C=\binom{n-1}{k}_q$. From the product formula, $A=B\cdot\dfrac{q^n-1}{q^k-1}$, and $q^kC=B\cdot\dfrac{q^n-q^k}{q^k-1}$. Adding,
 
 $$
-B+q^kC=B\cdot\frac{q^k-1+q^n-q^k}{q^k-1}=B\cdot\frac{q^n-1}{q^k-1}=A . \qquad \square
+B+q^kC=B\cdot\frac{q^k-1+q^n-q^k}{q^k-1}=B\cdot\frac{q^n-1}{q^k-1}=A .
 $$
 
 Geometrically, fixing a hyperplane $H$, a $k$-subspace lies in $H$, contributing $C$, or meets $H$ in a $(k-1)$-subspace $W_0$; for each of the $B$ choices of $W_0$ there are $q^{n-k}$ such subspaces, namely the lines of $V/W_0$ not lying in the hyperplane $H/W_0$, so that $\binom{n}{k}_q=C+q^{n-k}B$. This is the equivalent form of the recursion displayed, the two agreeing by the symmetry $\binom{n-1}{k}_q=\binom{n-1}{n-1-k}_q$.
@@ -93,7 +93,7 @@ $$
 \prod_{i=1}^{n}\frac{q^{i}-1}{q-1}=\prod_{i=1}^{n}(1+q+\cdots+q^{i-1}) .
 $$
 
-*Proof.* The first is the count of lines. For the second, build the flag by choosing $V_1$ in $\binom{n}{1}_q$ ways, then $V_2/V_1$ as a line in the $(n-1)$-dimensional quotient $V/V_1$ in $\binom{n-1}{1}_q$ ways, and so on; the product is $\prod_{i=1}^n\frac{q^{i}-1}{q-1}$. $\square$
+*Proof.* The first is the count of lines. For the second, build the flag by choosing $V_1$ in $\binom{n}{1}_q$ ways, then $V_2/V_1$ as a line in the $(n-1)$-dimensional quotient $V/V_1$ in $\binom{n-1}{1}_q$ ways, and so on; the product is $\prod_{i=1}^n\frac{q^{i}-1}{q-1}$.
 
 **Example.** For $n=3$ and $q=2$: the number of lines and of planes in $\mathbb{F}_2^3$ is each $\binom{3}{1}_2=\binom{3}{2}_2=7$, and the number of points of the projective plane is $7$; the number of complete flags is $(1)(1+2)(1+2+4)=1\cdot3\cdot7=21$. The Gaussian binomials are $\binom{3}{0}_2=\binom{3}{3}_2=1$, $\binom{3}{1}_2=\binom{3}{2}_2=7$, and the total number of subspaces is $1+7+7+1=16$.
 
@@ -109,7 +109,7 @@ $$
 N_n(q)=\frac1n\sum_{d\mid n}\mu(d)q^{n/d} .
 $$
 
-*Proof.* Count the $q^n$ monic polynomials of degree $n$ by their factorisation into monic irreducibles, grouping the factors by degree: a monic irreducible of degree $d$ contributes $d$ to the degree, and each monic polynomial of degree $n$ arises once, giving $q^n=\sum_{d\mid n}dN_d(q)$. Möbius inversion of this divisor identity gives the displayed formula. $\square$
+*Proof.* Count the $q^n$ monic polynomials of degree $n$ by their factorisation into monic irreducibles, grouping the factors by degree: a monic irreducible of degree $d$ contributes $d$ to the degree, and each monic polynomial of degree $n$ arises once, giving $q^n=\sum_{d\mid n}dN_d(q)$. Möbius inversion of this divisor identity gives the displayed formula.
 
 **Example.** $N_1(q)=q$, the linear polynomials; $N_2(q)=(q^2-q)/2$; $N_3(q)=(q^3-q)/3$; $N_4(q)=(q^4-q^2)/4$. For $q=2$ these are $2,1,2,3$: the linear $x,x+1$, the quadratic $x^2+x+1$, the cubics $x^3+x+1$ and $x^3+x^2+1$, and three quartics.
 
@@ -119,7 +119,7 @@ $$
 \prod_{m\ge1}(1-t^m)^{-a_m}, \qquad a_m=\sum_{d\mid m}N_d(q) .
 $$
 
-*Proof.* By the structure theorem a similarity class is determined by its multiset of elementary divisors, the prime powers $f^e$ with $f$ monic irreducible. For a fixed irreducible $f$ of degree $d$, the possible exponents $e \ge 1$ contribute the factor $\prod_{e\ge1}(1-t^{de})^{-1}$ to the generating function for total degree, so the count is $\prod_d\bigl(\prod_e(1-t^{de})^{-1}\bigr)^{N_d}$. Collecting the factors with $de=m$ gives the displayed product with exponent $a_m$. $\square$
+*Proof.* By the structure theorem a similarity class is determined by its multiset of elementary divisors, the prime powers $f^e$ with $f$ monic irreducible. For a fixed irreducible $f$ of degree $d$, the possible exponents $e \ge 1$ contribute the factor $\prod_{e\ge1}(1-t^{de})^{-1}$ to the generating function for total degree, so the count is $\prod_d\bigl(\prod_e(1-t^{de})^{-1}\bigr)^{N_d}$. Collecting the factors with $de=m$ gives the displayed product with exponent $a_m$.
 
 **Example.** For $n=2$ the coefficient is $a_2+\binom{a_1+1}{2}=\bigl(N_1+N_2\bigr)+\frac{q(q+1)}{2}=q^2+q$, so there are $q^2+q$ similarity classes of $2\times2$ matrices over $\mathbb{F}_q$; at $q=2$ this is $6$, namely the two scalars, the two Jordan blocks $J_2(0),J_2(1)$, the companion matrix of $x^2+x+1$, and $\operatorname{diag}(0,1)$.
 

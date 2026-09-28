@@ -7,9 +7,9 @@ This article describes the orthogonal group of three-dimensional Euclidean space
 
 The treatment is mathematical throughout. A rotation is an element of $SO(3)$ and a reflection is an element of $O(3)$; no physical object is introduced, no state of a physical system is named, and no physical interpretation is invoked. The group $Sp(1)$ is treated as a group of quaternions, and the maps $Sp(1)\to SO(3)$ and $Sp(1)\times Sp(1)\to SO(4)$ are treated as covering homomorphisms of Lie groups.
 
-The quaternion algebra, its basis $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$, its conjugation, its norm form $N(\tilde q) = \tilde q\bar{\tilde q}$ and its imaginary subspace $\operatorname{Im}\mathbb{H}\cong\mathbb{R}^3$ are taken from *Quaternion Algebra*. The structure of $\mathbb{H}$ as a simple algebra is taken from *Quaternion Ideals and Simplicity*. The general construction of the Clifford, Pin and Spin groups, of which the results below are the three-dimensional instance, is the subject of *The Clifford, Pin and Spin Groups*; the parity of the Cartan–Dieudonné reflection length is taken from *The Rotation Group and Orientation* and from *Isometries and Orthogonal Transformations*. The complex plane, where the same questions have the degenerate answer that multiplication by a unit is already a rotation and the sandwich action is trivial, is treated in *Rotations and Reflections in the Complex Plane*.
+The quaternion algebra, its basis $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$, its conjugation, its quaternion norm $N(\tilde q) = \tilde q\bar{\tilde q}$ and its imaginary subspace $\operatorname{Im}\mathbb{H}\cong\mathbb{R}^3$ are taken from *Quaternion Algebra*. The structure of $\mathbb{H}$ as a simple algebra is taken from *Quaternion Ideals and Simplicity*. The general construction of the Clifford, Pin and Spin groups, of which the results below are the three-dimensional instance, is the subject of *The Clifford, Pin and Spin Groups*; the parity of the Cartan–Dieudonné reflection length is taken from *The Rotation Group and Orientation* and from *Isometries and Orthogonal Transformations*. The complex plane, where the same questions have the degenerate answer that multiplication by a unit is already a rotation and the sandwich action is trivial, is treated in *Rotations and Reflections in the Complex Plane*.
 
-Throughout, a general quaternion is $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ with scalar part $q_0$ and vector part $\mathbf{q} = q_1e_1+q_2e_2+q_3e_3 \in \operatorname{Im}\mathbb{H}$, the conjugate is $\bar{\tilde q} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$, the norm form is $N(\tilde q) = \tilde q\bar{\tilde q} = |\tilde q|^2$, and the real inner product of two vectors of $\operatorname{Im}\mathbb{H}$ is $\langle x, y\rangle = \operatorname{Sc}(x\bar{y}) = \sum_{k=1}^{3} x_ky_k$. A point of $\operatorname{Im}\mathbb{H}$ is a **vector**, and $|x|^2 = \langle x,x\rangle$. The transpose of a matrix $A$ is $A^{T}$ and the conjugate transpose is $A^{\dagger}$.
+Throughout, a general quaternion is $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ with scalar part $q_0$ and vector part $\mathbf{q} = q_1e_1+q_2e_2+q_3e_3 \in \operatorname{Im}\mathbb{H}$, the conjugate is $\bar{\tilde q} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$, the quaternion norm is $N(\tilde q) = \tilde q\bar{\tilde q} = |\tilde q|^2$, and the real inner product of two vectors of $\operatorname{Im}\mathbb{H}$ is $\langle x, y\rangle = \mathrm{Sc}(x\bar{y}) = \sum_{k=1}^{3} x_ky_k$. A point of $\operatorname{Im}\mathbb{H}$ is a **vector**, and $|x|^2 = \langle x,x\rangle$. The transpose of a matrix $A$ is $A^{T}$ and the conjugate transpose is $A^{\dagger}$.
 
 ## The Group of Unit Quaternions
 
@@ -23,9 +23,9 @@ $$
 
 As a subset of $\mathbb{H}\cong\mathbb{R}^4$ it is the unit sphere $S^3$.
 
-**Theorem.** $Sp(1)$ is a group under quaternion multiplication and is the kernel of the norm homomorphism $\mathbb{H}^{\times}\to\mathbb{R}_{>0}$, $\tilde q\mapsto|\tilde q|$.
+**Theorem.** $Sp(1)$ is a group under quaternion multiplication and is the kernel of the quaternion norm homomorphism $\mathbb{H}^{\times}\to\mathbb{R}_{>0}$, $\tilde q\mapsto|\tilde q|$.
 
-**Proof.** The norm form is multiplicative, $N(uv) = N(u)N(v)$, because $uv\overline{uv} = uv\bar{v}\bar{u} = uN(v)\bar{u} = N(u)N(v)$; hence if $|u| = |v| = 1$ then $|uv| = 1$, and if $|u| = 1$ then $u^{-1} = \bar{u}$ has $|u^{-1}| = 1$. Associativity and the identity $1\in Sp(1)$ are inherited from $\mathbb{H}$, and multiplication is a surjective homomorphism $\mathbb{H}^{\times}\to\mathbb{R}_{>0}$ with kernel exactly $Sp(1)$. $\square$
+**Proof.** The quaternion norm is multiplicative, $N(uv) = N(u)N(v)$, because $uv\overline{uv} = uv\bar{v}\bar{u} = uN(v)\bar{u} = N(u)N(v)$; hence if $|u| = |v| = 1$ then $|uv| = 1$, and if $|u| = 1$ then $u^{-1} = \bar{u}$ has $|u^{-1}| = 1$. Associativity and the identity $1\in Sp(1)$ are inherited from $\mathbb{H}$, and multiplication is a surjective homomorphism $\mathbb{H}^{\times}\to\mathbb{R}_{>0}$ with kernel exactly $Sp(1)$.
 
 For every unit quaternion $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ one has $\tilde q^{-1} = \bar{\tilde q} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$, so inversion is quaternion conjugation. The group is non-abelian; its centre is the two-element group
 
@@ -45,7 +45,7 @@ $$
 
 in which the angle $\theta$ is unique; the axis $u$ is unique when $0 < \theta < \pi$, while for $\theta = 0$ and $\theta = \pi$ the quaternion is $\tilde q = 1$ and $\tilde q = -1$ respectively and $u$ is arbitrary.
 
-**Proof.** A unit quaternion has $q_0^2 + |\mathbf{q}|^2 = 1$, so there is a unique $\theta\in[0,\pi]$ with $q_0 = \cos\theta$ and $|\mathbf{q}| = \sin\theta$. If $\sin\theta\neq0$ then $u = \mathbf{q}/\sin\theta$ is a unit vector, uniquely determined by $\tilde q$, and $\tilde q = \cos\theta+u\sin\theta$; if $\sin\theta = 0$ then $\mathbf{q} = 0$ and $\tilde q = \pm1$. $\square$
+**Proof.** A unit quaternion has $q_0^2 + |\mathbf{q}|^2 = 1$, so there is a unique $\theta\in[0,\pi]$ with $q_0 = \cos\theta$ and $|\mathbf{q}| = \sin\theta$. If $\sin\theta\neq0$ then $u = \mathbf{q}/\sin\theta$ is a unit vector, uniquely determined by $\tilde q$, and $\tilde q = \cos\theta+u\sin\theta$; if $\sin\theta = 0$ then $\mathbf{q} = 0$ and $\tilde q = \pm1$.
 
 **Theorem (exponential).** For a unit vector $u\in\operatorname{Im}\mathbb{H}$ and real $\theta$,
 
@@ -55,7 +55,7 @@ $$
 
 the series converging absolutely. Consequently $Sp(1)$ is the image of the exponential map of the Lie algebra $\operatorname{Im}\mathbb{H}$, and every unit quaternion is $\exp(u\theta)$ for some unit vector $u$ and real $\theta$.
 
-**Proof.** Since $u^2 = -1$, the even part of the series is $\sum_k(-1)^k\theta^{2k}/(2k)! = \cos\theta$ and the odd part is $u\sum_k(-1)^k\theta^{2k+1}/(2k+1)! = u\sin\theta$. The polar form exhibits each unit quaternion in this shape. $\square$
+**Proof.** Since $u^2 = -1$, the even part of the series is $\sum_k(-1)^k\theta^{2k}/(2k)! = \cos\theta$ and the odd part is $u\sum_k(-1)^k\theta^{2k+1}/(2k+1)! = u\sin\theta$. The polar form exhibits each unit quaternion in this shape.
 
 The exponential satisfies $\exp(u(\theta+2\pi)) = -\exp(u\theta)$ because $\exp(2\pi u) = -1$, and $\exp(u(\theta+4\pi)) = \exp(u\theta)$; this doubling is the algebraic root of the periodicity discussed below.
 
@@ -63,11 +63,11 @@ The exponential satisfies $\exp(u(\theta+2\pi)) = -\exp(u\theta)$ because $\exp(
 
 **Theorem.** The group $Sp(1)$ of unit quaternions is the special unitary group $\mathrm{SU}(2)$, the group of $2\times2$ complex unitary matrices of determinant one.
 
-This is the standard identification of the unit sphere of the quaternion division algebra with the special unitary group, quoted here as standard; its infinitesimal form is the Lie algebra identification $\operatorname{Im}\mathbb{H}\cong\mathfrak{su}(2)$.
+This is the standard identification of the unit sphere of the quaternion division algebra with the special unitary group, quoted here as standard; its infinitesimal form is the Lie algebra identification $\operatorname{Im}\mathbb{H}\cong\mathrm{SU}(2)$.
 
 **Theorem.** $Sp(1)\cong S^3$ is compact, connected, and simply connected, and it is a three-dimensional real Lie group with Lie algebra $\operatorname{Im}\mathbb{H}$.
 
-**Proof.** As $S^3$ it is a closed bounded subset of $\mathbb{R}^4$, hence compact, and connected. The sphere $S^n$ is simply connected for $n\geq2$, by the standard argument that a loop in $S^n$ can be pushed off a point and contracted in the complementary ball; hence $S^3$ is simply connected. The smooth structure and the group law make it a Lie group of dimension $3$, and its Lie algebra is the tangent space at the identity, which is $\operatorname{Im}\mathbb{H}$ with the commutator bracket. $\square$
+**Proof.** As $S^3$ it is a closed bounded subset of $\mathbb{R}^4$, hence compact, and connected. The sphere $S^n$ is simply connected for $n\geq2$, by the standard argument that a loop in $S^n$ can be pushed off a point and contracted in the complementary ball; hence $S^3$ is simply connected. The smooth structure and the group law make it a Lie group of dimension $3$, and its Lie algebra is the tangent space at the identity, which is $\operatorname{Im}\mathbb{H}$ with the commutator bracket.
 
 ## The Adjoint Action on the Imaginary Quaternions
 
@@ -79,9 +79,9 @@ $$
 \operatorname{Ad}_q : \mathbb{H}\longrightarrow\mathbb{H}, \qquad \operatorname{Ad}_q(x) = qxq^{-1} = qx\bar{\tilde q}.
 $$
 
-**Theorem.** For every $\tilde q\in Sp(1)$ the map $\operatorname{Ad}_q$ is an $\mathbb{R}$-algebra automorphism of $\mathbb{H}$ that preserves the norm form and the scalar part. It restricts to a linear isometry of $\operatorname{Im}\mathbb{H}$, and the assignment $\tilde q\mapsto\operatorname{Ad}_q$ is a group homomorphism $Sp(1)\to GL(\operatorname{Im}\mathbb{H})$.
+**Theorem.** For every $\tilde q\in Sp(1)$ the map $\operatorname{Ad}_q$ is an $\mathbb{R}$-algebra automorphism of $\mathbb{H}$ that preserves the quaternion norm and the scalar part. It restricts to a linear isometry of $\operatorname{Im}\mathbb{H}$, and the assignment $\tilde q\mapsto\operatorname{Ad}_q$ is a group homomorphism $Sp(1)\to GL(\operatorname{Im}\mathbb{H})$.
 
-**Proof.** Conjugation by an invertible element is an algebra automorphism: the map $x\mapsto qxq^{-1}$ is $\mathbb{R}$-linear and a bijection with inverse $x\mapsto \tilde q^{-1}xq$, and it respects multiplication because $(qaq^{-1})(qbq^{-1}) = \tilde q(ab)\tilde q^{-1}$; for $|\tilde q| = 1$ the inverse is $x\mapsto\bar{\tilde q}xq$. Norm preservation: $N(qxq^{-1}) = N(\tilde q)N(x)N(\tilde q)^{-1} = N(x)$. Scalar part: if $x\in\operatorname{Im}\mathbb{H}$ then conjugation reverses the order of the factors, so $\overline{\operatorname{Ad}_q(x)} = \overline{\tilde q^{-1}}\,\bar{x}\,\bar{\tilde q} = \tilde q\,(-x)\,\bar{\tilde q} = -qx\bar{\tilde q} = -\operatorname{Ad}_q(x)$, and the scalar part of $\operatorname{Ad}_q(x)$ vanishes. Hence $\operatorname{Ad}_q$ preserves $\operatorname{Im}\mathbb{H}$, and since it preserves the norm form there it is an isometry. Finally $\operatorname{Ad}_{q_1}\circ\operatorname{Ad}_{q_2} = \operatorname{Ad}_{q_1q_2}$ and $\operatorname{Ad}_1 = \mathrm{id}$ by associativity. $\square$
+**Proof.** Conjugation by an invertible element is an algebra automorphism: the map $x\mapsto qxq^{-1}$ is $\mathbb{R}$-linear and a bijection with inverse $x\mapsto \tilde q^{-1}xq$, and it respects multiplication because $(qaq^{-1})(qbq^{-1}) = \tilde q(ab)\tilde q^{-1}$; for $|\tilde q| = 1$ the inverse is $x\mapsto\bar{\tilde q}xq$. Norm preservation: $N(qxq^{-1}) = N(\tilde q)N(x)N(\tilde q)^{-1} = N(x)$. Scalar part: if $x\in\operatorname{Im}\mathbb{H}$ then conjugation reverses the order of the factors, so $\overline{\operatorname{Ad}_q(x)} = \overline{\tilde q^{-1}}\,\bar{x}\,\bar{\tilde q} = \tilde q\,(-x)\,\bar{\tilde q} = -qx\bar{\tilde q} = -\operatorname{Ad}_q(x)$, and the scalar part of $\operatorname{Ad}_q(x)$ vanishes. Hence $\operatorname{Ad}_q$ preserves $\operatorname{Im}\mathbb{H}$, and since it preserves the quaternion norm there it is an isometry. Finally $\operatorname{Ad}_{q_1}\circ\operatorname{Ad}_{q_2} = \operatorname{Ad}_{q_1q_2}$ and $\operatorname{Ad}_1 = \mathrm{id}$ by associativity.
 
 ### The Homomorphism to SO(3)
 
@@ -89,7 +89,7 @@ $$
 
 **Theorem.** For every $\tilde q\in Sp(1)$ the isometry $\operatorname{Ad}_q$ of $\operatorname{Im}\mathbb{H}$ has determinant $+1$. Hence the homomorphism $\tilde q\mapsto\operatorname{Ad}_q$ takes values in $SO(3)$.
 
-**Proof.** An isometry of a three-dimensional real inner product space has determinant $\pm1$. The determinant function $\det\circ\operatorname{Ad} : Sp(1)\to\{\pm1\}$ is continuous, and $Sp(1)$ is connected, so its image is connected in the discrete two-point set; hence it is constant, and its value at $\tilde q = 1$ is $\det(\mathrm{id}) = 1$. $\square$
+**Proof.** An isometry of a three-dimensional real inner product space has determinant $\pm1$. The determinant function $\det\circ\operatorname{Ad} : Sp(1)\to\{\pm1\}$ is continuous, and $Sp(1)$ is connected, so its image is connected in the discrete two-point set; hence it is constant, and its value at $\tilde q = 1$ is $\det(\mathrm{id}) = 1$.
 
 In the basis $(e_1, e_2, e_3)$ of $\operatorname{Im}\mathbb{H}$ the matrix of $\operatorname{Ad}_q$, with $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$, is
 
@@ -105,11 +105,11 @@ whose trace is $\operatorname{tr}R_q = 4q_0^2 - 1$. The formula is the coordinat
 
 ### The Differential and the Lie Algebra
 
-**Theorem.** The Lie algebra of $Sp(1)$ is $\operatorname{Im}\mathbb{H}$ with the commutator bracket $[x,y] = xy - yx = 2(x\times y)$, where $\times$ is the cross product. The differential of the adjoint action at the identity is the map $\operatorname{Im}\mathbb{H}\to\mathfrak{so}(3)$, $x\mapsto \operatorname{ad}_x = [x,\cdot]$, and the map $x\mapsto \operatorname{ad}_x$ is an isomorphism of Lie algebras $\operatorname{Im}\mathbb{H}\cong\mathfrak{so}(3)$.
+**Theorem.** The Lie algebra of $Sp(1)$ is $\operatorname{Im}\mathbb{H}$ with the commutator bracket $[x,y] = xy - yx = 2(x\times y)$, where $\times$ is the cross product. The differential of the adjoint action at the identity is the map $\operatorname{Im}\mathbb{H}\to\mathrm{SO}(3)$, $x\mapsto \operatorname{ad}_x = [x,\cdot]$, and the map $x\mapsto \operatorname{ad}_x$ is an isomorphism of Lie algebras $\operatorname{Im}\mathbb{H}\cong\mathrm{SO}(3)$.
 
-**Proof.** The tangent space of $Sp(1) = S^3$ at $1$ is the orthogonal complement of $1$, which is $\operatorname{Im}\mathbb{H}$. For pure imaginary $x,y$, the product is $xy = x\times y - \langle x, y\rangle$, so $xy - yx = 2(x\times y)$ and the bracket is $\mathbb{R}$-bilinear and antisymmetric. The adjoint action of $Sp(1)$ differentiates to the bracket of the Lie algebra, $\operatorname{ad}_x(y) = [x,y]$, and $\operatorname{ad}_x$ is skew-symmetric because $\langle x\times y, z\rangle = -\langle y, x\times z\rangle$. The map $x\mapsto\operatorname{ad}_x$ is injective: if $\operatorname{ad}_x = 0$ then $x\times y = 0$ for every $y$, so $x = 0$. Both $\operatorname{Im}\mathbb{H}$ and $\mathfrak{so}(3)$ are three-dimensional, so it is a linear isomorphism, and it preserves brackets because it is the derivative of a homomorphism of groups. $\square$
+**Proof.** The tangent space of $Sp(1) = S^3$ at $1$ is the orthogonal complement of $1$, which is $\operatorname{Im}\mathbb{H}$. For pure imaginary $x,y$, the product is $xy = x\times y - \langle x, y\rangle$, so $xy - yx = 2(x\times y)$ and the bracket is $\mathbb{R}$-bilinear and antisymmetric. The adjoint action of $Sp(1)$ differentiates to the bracket of the Lie algebra, $\operatorname{ad}_x(y) = [x,y]$, and $\operatorname{ad}_x$ is skew-symmetric because $\langle x\times y, z\rangle = -\langle y, x\times z\rangle$. The map $x\mapsto\operatorname{ad}_x$ is injective: if $\operatorname{ad}_x = 0$ then $x\times y = 0$ for every $y$, so $x = 0$. Both $\operatorname{Im}\mathbb{H}$ and $\mathrm{SO}(3)$ are three-dimensional, so it is a linear isomorphism, and it preserves brackets because it is the derivative of a homomorphism of groups.
 
-The Lie algebra isomorphism $\operatorname{Im}\mathbb{H}\cong\mathfrak{so}(3)$ is the differential form of the group isomorphism established below; it also identifies $\operatorname{Im}\mathbb{H}$ with $\mathfrak{su}(2)$, and the factor $2$ in the bracket is the infinitesimal shadow of the half-angle.
+The Lie algebra isomorphism $\operatorname{Im}\mathbb{H}\cong\mathrm{SO}(3)$ is the differential form of the group isomorphism established below; it also identifies $\operatorname{Im}\mathbb{H}$ with $\mathrm{SU}(2)$, and the factor $2$ in the bracket is the infinitesimal shadow of the half-angle.
 
 ## The Double Cover of SO(3)
 
@@ -117,7 +117,7 @@ The Lie algebra isomorphism $\operatorname{Im}\mathbb{H}\cong\mathfrak{so}(3)$ i
 
 **Theorem.** The kernel of the homomorphism $Sp(1)\to SO(3)$, $\tilde q\mapsto\operatorname{Ad}_q$, is $\{\pm1\}$.
 
-**Proof.** If $\operatorname{Ad}_q = \mathrm{id}$ on $\operatorname{Im}\mathbb{H}$, then $qx = xq$ for every $x\in\operatorname{Im}\mathbb{H}$. Since $\tilde q$ commutes with $1$ and with its own vector part, it commutes with every element of $\mathbb{H}$, so $\tilde q\in Z(\mathbb{H}) = \mathbb{R}$. Together with $|\tilde q| = 1$ this gives $\tilde q = \pm1$. Conversely $\pm1$ act trivially. $\square$
+**Proof.** If $\operatorname{Ad}_q = \mathrm{id}$ on $\operatorname{Im}\mathbb{H}$, then $qx = xq$ for every $x\in\operatorname{Im}\mathbb{H}$. Since $\tilde q$ commutes with $1$ and with its own vector part, it commutes with every element of $\mathbb{H}$, so $\tilde q\in Z(\mathbb{H}) = \mathbb{R}$. Together with $|\tilde q| = 1$ this gives $\tilde q = \pm1$. Conversely $\pm1$ act trivially.
 
 Thus two unit quaternions $\tilde q$ and $-\tilde q$ determine the same rotation, and no other coincidence occurs.
 
@@ -129,11 +129,11 @@ $$
 SO(3) \cong Sp(1)/\{\pm1\}.
 $$
 
-**Proof.** The differential at the identity is the isomorphism $\operatorname{Im}\mathbb{H}\to\mathfrak{so}(3)$ of the preceding section, so by the inverse function theorem $\operatorname{Ad}$ is a local diffeomorphism near $1$, and therefore its image is an open subset of $SO(3)$. The image is a subgroup, and it is compact as a continuous image of the compact group $Sp(1)$, hence closed in the Hausdorff group $SO(3)$. The group $SO(3)$ is connected, so the only non-empty subset that is both open and closed is the whole of it; therefore $\operatorname{Ad}$ is surjective. The first isomorphism theorem for groups, together with the computation of the kernel, gives $SO(3)\cong Sp(1)/\{\pm1\}$. $\square$
+**Proof.** The differential at the identity is the isomorphism $\operatorname{Im}\mathbb{H}\to\mathrm{SO}(3)$ of the preceding section, so by the inverse function theorem $\operatorname{Ad}$ is a local diffeomorphism near $1$, and therefore its image is an open subset of $SO(3)$. The image is a subgroup, and it is compact as a continuous image of the compact group $Sp(1)$, hence closed in the Hausdorff group $SO(3)$. The group $SO(3)$ is connected, so the only non-empty subset that is both open and closed is the whole of it; therefore $\operatorname{Ad}$ is surjective. The first isomorphism theorem for groups, together with the computation of the kernel, gives $SO(3)\cong Sp(1)/\{\pm1\}$.
 
 **Theorem (double cover).** The quotient map $Sp(1)\to Sp(1)/\{\pm1\}\cong SO(3)$ is a two-sheeted covering map of Lie groups, and it is the universal cover of $SO(3)$.
 
-**Proof.** The group $\{\pm1\}$ is a discrete normal subgroup, so the quotient map is a covering map with fibres of two elements. Since $Sp(1)\cong S^3$ is simply connected, it is the universal cover of the quotient, which is $SO(3)$. $\square$
+**Proof.** The group $\{\pm1\}$ is a discrete normal subgroup, so the quotient map is a covering map with fibres of two elements. Since $Sp(1)\cong S^3$ is simply connected, it is the universal cover of the quotient, which is $SO(3)$.
 
 **Corollary.** The fundamental group of the rotation group is
 
@@ -141,7 +141,7 @@ $$
 \pi_1(SO(3)) \cong \mathbb{Z}/2\mathbb{Z}.
 $$
 
-**Proof.** Since $Sp(1)$ is simply connected, the covering $p$ is the universal cover of $SO(3)$, and the group of deck transformations of the universal cover is isomorphic to $\pi_1(SO(3))$. The deck transformations are $\tilde q\mapsto -\tilde q$, a group of order two; hence $\pi_1(SO(3))\cong\mathbb{Z}/2\mathbb{Z}$. $\square$
+**Proof.** Since $Sp(1)$ is simply connected, the covering $p$ is the universal cover of $SO(3)$, and the group of deck transformations of the universal cover is isomorphic to $\pi_1(SO(3))$. The deck transformations are $\tilde q\mapsto -\tilde q$, a group of order two; hence $\pi_1(SO(3))\cong\mathbb{Z}/2\mathbb{Z}$.
 
 The covering is non-trivial: the two elements $1$ and $-1$ of the fibre over the identity of $SO(3)$ are distinct, and no continuous section $SO(3)\to Sp(1)$ exists, because $SO(3)$ is not simply connected. This is the precise sense in which a rotation has two quaternion representatives and not one.
 
@@ -163,7 +163,7 @@ $$
 qx_{\perp}\tilde q^{-1} = (cx_{\perp}+sy)(c-su) = c^2x_{\perp} - cs\,x_{\perp}u + cs\,y - s^2\,yu = (c^2-s^2)x_{\perp} + 2cs\,y,
 $$
 
-using $x_{\perp}u = -y$ and $yu = x_{\perp}$. Since $c^2 - s^2 = \cos\theta$ and $2cs = \sin\theta$, the perpendicular part is rotated by $\theta$ in the plane spanned by $x_{\perp}$ and $y = u\times x_{\perp}$, and adding the fixed parallel part gives the displayed formula. $\square$
+using $x_{\perp}u = -y$ and $yu = x_{\perp}$. Since $c^2 - s^2 = \cos\theta$ and $2cs = \sin\theta$, the perpendicular part is rotated by $\theta$ in the plane spanned by $x_{\perp}$ and $y = u\times x_{\perp}$, and adding the fixed parallel part gives the displayed formula.
 
 ### The Half-Angle Formula
 
@@ -175,7 +175,7 @@ $$
 
 and $\tilde q$ is determined by the rotation up to the replacement $\tilde q\mapsto -\tilde q$.
 
-**Proof.** The preceding theorem identifies $\operatorname{Ad}_q$ as the rotation about $u$ through $\theta$. If $\operatorname{Ad}_q = \operatorname{Ad}_{\tilde q'}$ then $\tilde q'\tilde q^{-1}$ lies in the kernel $\{\pm1\}$, so $\tilde q' = \pm \tilde q$. $\square$
+**Proof.** The preceding theorem identifies $\operatorname{Ad}_q$ as the rotation about $u$ through $\theta$. If $\operatorname{Ad}_q = \operatorname{Ad}_{\tilde q'}$ then $\tilde q'\tilde q^{-1}$ lies in the kernel $\{\pm1\}$, so $\tilde q' = \pm \tilde q$.
 
 The occurrence of the half-angle is the algebraic expression of the double cover: the rotation angle is $\theta$, but the quaternion carries $\theta/2$, so a rotation through $2\pi$, whose matrix is the identity, is represented by $\exp(\pi u) = -1$ and not by $1$.
 
@@ -189,7 +189,7 @@ $$
 
 and the rotation by $\theta_1$ about $u$ followed by the rotation by $\theta_2$ about $u$ is the rotation by $\theta_1+\theta_2$ about $u$.
 
-**Proof.** The first identity is the multiplicativity of the adjoint action proved above, extended to any number of factors by induction. For the second, $\exp(\frac{u\theta_1}{2})\exp(\frac{u\theta_2}{2}) = \exp(\frac{u(\theta_1+\theta_2)}{2})$ because $u$ commutes with itself. $\square$
+**Proof.** The first identity is the multiplicativity of the adjoint action proved above, extended to any number of factors by induction. For the second, $\exp(\frac{u\theta_1}{2})\exp(\frac{u\theta_2}{2}) = \exp(\frac{u(\theta_1+\theta_2)}{2})$ because $u$ commutes with itself.
 
 Thus composition of rotations is quaternion multiplication, and the failure of commutativity of $Sp(1)$ is exactly the failure of rotations about different axes to commute. The correspondence is a group homomorphism with kernel $\{\pm1\}$, hence two-to-one onto $SO(3)$.
 
@@ -209,7 +209,7 @@ $$
 \rho_v(x) = x - 2\langle x, v\rangle v .
 $$
 
-Hence $\rho_v$ is the **reflection in the plane** $v^{\perp}\subset\operatorname{Im}\mathbb{H}$: it fixes every vector perpendicular to $v$, sends $v$ to $-v$, is $\mathbb{R}$-linear, preserves the norm form, is an involution, and has determinant $-1$ on $\operatorname{Im}\mathbb{H}$.
+Hence $\rho_v$ is the **reflection in the plane** $v^{\perp}\subset\operatorname{Im}\mathbb{H}$: it fixes every vector perpendicular to $v$, sends $v$ to $-v$, is $\mathbb{R}$-linear, preserves the quaternion norm, is an involution, and has determinant $-1$ on $\operatorname{Im}\mathbb{H}$.
 
 **Proof.** Since $v^{-1} = \bar{v} = -v$, we have $-vxv^{-1} = -vx(-v) = vxv$. For pure imaginary $v, x$ the product is $vx = v\times x - \langle v, x\rangle$, so $xv = -v\times x - \langle v,x\rangle$ and $vx + xv = -2\langle v,x\rangle$. Therefore
 
@@ -217,7 +217,7 @@ $$
 vxv = (vx)v = -xv^2 - 2\langle v,x\rangle v = x - 2\langle v,x\rangle v,
 $$
 
-using $v^2 = -1$. The formula shows that $\rho_v$ is the identity on the hyperplane $\langle x,v\rangle = 0$ and equals $-v$ on $\mathbb{R}v$; linearity and norm preservation are immediate, and $\rho_v^2 = \mathrm{id}$ because the eigenvalues are $+1$ on the plane and $-1$ on the line, so the determinant is $-1$. $\square$
+using $v^2 = -1$. The formula shows that $\rho_v$ is the identity on the hyperplane $\langle x,v\rangle = 0$ and equals $-v$ on $\mathbb{R}v$; linearity and norm preservation are immediate, and $\rho_v^2 = \mathrm{id}$ because the eigenvalues are $+1$ on the plane and $-1$ on the line, so the determinant is $-1$.
 
 **Remark.** On the whole algebra $\mathbb{H}$, and not merely on $\operatorname{Im}\mathbb{H}$, the map $\rho_v$ is not the reflection in a hyperplane of $\mathbb{R}^4$: it also multiplies the scalar line by $-1$, so its fixed space is the two-dimensional plane $\operatorname{span}(e_0,v)^{\perp}$ and it acts as a rotation through $\pi$ in the plane $\operatorname{span}(e_0,v)$. The reflection statement above is the statement about the three-dimensional imaginary subspace, which is the space the rotation and reflection groups act on. This is the quaternionic instance of the twisted adjoint action $\widetilde{\operatorname{Ad}}_v(x) = \alpha(v)xv^{-1}$ of *The Clifford, Pin and Spin Groups*, in which the grade involution supplies the sign that distinguishes odd from even elements.
 
@@ -237,7 +237,7 @@ $$
 \rho_{v_1}(\rho_{v_2}(x)) = -v_1\bigl(-v_2xv_2^{-1}\bigr)v_1^{-1} = (v_1v_2)\,x\,(v_1v_2)^{-1} = \operatorname{Ad}_{v_1v_2}(x).
 $$
 
-The product $v_1v_2$ is $v_1\times v_2 - \langle v_1,v_2\rangle$, whose vector part is $v_1\times v_2$; by the half-angle formula the rotation angle $\theta$ of $\operatorname{Ad}_{v_1v_2}$ satisfies $\cos\frac{\theta}{2} = -\langle v_1,v_2\rangle = -\cos\phi$, where $\phi$ is the angle between $v_1$ and $v_2$. Hence $\theta \equiv 2\phi \pmod{2\pi}$ in the appropriate orientation, and the axis is $v_1\times v_2$, the direction of the intersection of the two planes. $\square$
+The product $v_1v_2$ is $v_1\times v_2 - \langle v_1,v_2\rangle$, whose vector part is $v_1\times v_2$; by the half-angle formula the rotation angle $\theta$ of $\operatorname{Ad}_{v_1v_2}$ satisfies $\cos\frac{\theta}{2} = -\langle v_1,v_2\rangle = -\cos\phi$, where $\phi$ is the angle between $v_1$ and $v_2$. Hence $\theta \equiv 2\phi \pmod{2\pi}$ in the appropriate orientation, and the axis is $v_1\times v_2$, the direction of the intersection of the two planes.
 
 Conversely every rotation is a product of two reflections. By the half-angle formula the rotation through $\theta$ about $u$ is $\operatorname{Ad}_q$ with $\tilde q = \cos\frac{\theta}{2}+u\sin\frac{\theta}{2}$; if $a$ is a unit vector perpendicular to $u$ and $v_1 = a$, $v_2 = (u\times a)\sin\frac{\theta}{2} - a\cos\frac{\theta}{2}$, then $v_1$ and $v_2$ are unit vectors in the plane $u^{\perp}$ and $v_1v_2 = \sin\frac{\theta}{2}\,a(u\times a) + \cos\frac{\theta}{2} = u\sin\frac{\theta}{2} + \cos\frac{\theta}{2} = \tilde q$, using $a(u\times a) = a\times(u\times a) = u$.
 
@@ -245,7 +245,7 @@ Conversely every rotation is a product of two reflections. By the half-angle for
 
 **Theorem (Cartan–Dieudonné, dimension three).** Every element of $O(3)$ is a product of at most three reflections in planes through the origin. The orientation-preserving isometries are exactly the products of an even number of reflections, and the orientation-reversing isometries the products of an odd number.
 
-**Proof.** This is the general Cartan–Dieudonné theorem of *Isometries and Orthogonal Transformations* specialised to a three-dimensional non-degenerate space: every isometry is a product of reflections in hyperplanes, and the number of factors can be reduced to at most the dimension, so at most three suffice. The parity is the determinant, which is $(-1)^{(\text{number of factors})}$ because each reflection has determinant $-1$. $\square$
+**Proof.** This is the general Cartan–Dieudonné theorem of *Isometries and Orthogonal Transformations* specialised to a three-dimensional non-degenerate space: every isometry is a product of reflections in hyperplanes, and the number of factors can be reduced to at most the dimension, so at most three suffice. The parity is the determinant, which is $(-1)^{(\text{number of factors})}$ because each reflection has determinant $-1$.
 
 In the quaternion algebra the two-factor products are $\tilde q = v_1v_2$, acting as the rotation $\operatorname{Ad}_q$, and conversely every unit quaternion is a product of two unit vectors: given $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ with $q_0^2+|\mathbf q|^2 = 1$, choose a unit vector $a\perp\mathbf q$ and put $b = \mathbf q\times a - q_0a$, so that $ab = a\times b - \langle a,b\rangle = \mathbf q + q_0 = \tilde q$. Hence the even products of unit vectors are exactly the elements of $Sp(1)$, and the odd products are the elements of $\mathrm{Pin}(3)$ outside its even part, whose twisted adjoints are the orientation-reversing isometries.
 
@@ -259,7 +259,7 @@ $$
 
 with kernel $\{\pm1\}$, whose restriction to the even part is a surjective homomorphism $\mathrm{Spin}(3)\to SO(3)$ with kernel $\{\pm1\}$. The even Clifford algebra is $\mathrm{Cl}^0_{3,0}\cong\mathbb{H}$, and $\mathrm{Spin}(3)\cong Sp(1)$.
 
-**Proof.** The general construction and the isomorphism $\mathrm{Cl}_{3,0}\cong\mathbb{H}\oplus\mathbb{H}$, whose even part $\mathrm{Cl}^0_{3,0}$ is a copy of $\mathbb{H}$, are those of *The Clifford, Pin and Spin Groups*; the twisted adjoint of a unit vector is the reflection $\rho_v$, and the twisted adjoint of an even unit is the conjugation $\operatorname{Ad}_q$. Surjectivity follows from Cartan–Dieudonné above, and the kernel $\{\pm1\}$ is computed as in the case of $Sp(1)$. $\square$
+**Proof.** The general construction and the isomorphism $\mathrm{Cl}_{3,0}\cong\mathbb{H}\oplus\mathbb{H}$, whose even part $\mathrm{Cl}^0_{3,0}$ is a copy of $\mathbb{H}$, are those of *The Clifford, Pin and Spin Groups*; the twisted adjoint of a unit vector is the reflection $\rho_v$, and the twisted adjoint of an even unit is the conjugation $\operatorname{Ad}_q$. Surjectivity follows from Cartan–Dieudonné above, and the kernel $\{\pm1\}$ is computed as in the case of $Sp(1)$.
 
 **Corollary.** There is a short exact sequence
 
@@ -291,7 +291,7 @@ $$
 SO(4) \cong (Sp(1)\times Sp(1))/\{\pm(1,1)\} \cong \mathrm{Spin}(4).
 $$
 
-**Proof.** Linearity is clear. Norm preservation: $N(q_1xq_2^{-1}) = N(q_1)N(x)N(q_2)^{-1} = N(x)$. Homomorphism: $\Phi_{(q_1,q_2)}\circ\Phi_{(r_1,r_2)} = \Phi_{(q_1r_1, q_2r_2)}$. Determinant: $\det\Phi_{(q_1,q_2)} = \pm1$ and depends continuously on $(q_1,q_2)$, which ranges over the connected set $Sp(1)\times Sp(1)$, so it is constant and equals its value $\det(\mathrm{id}) = 1$ at $(1,1)$. Kernel: if $\Phi_{(q_1,q_2)} = \mathrm{id}$ then evaluating at $x = 1$ gives $q_1q_2^{-1} = 1$, so $q_1 = q_2 = \tilde q$, and then $qxq^{-1} = x$ for all $x$, so $\tilde q\in\{\pm1\}$. Surjectivity: the differential of $\Phi$ at the identity is the linear map $(x,y)\mapsto\bigl(z\mapsto xz - zy\bigr)$ from $\operatorname{Im}\mathbb{H}\oplus\operatorname{Im}\mathbb{H}$ to $\mathfrak{so}(4)$; it is injective, because $xz = zy$ for all $z$ gives $x = y$ on taking $z = 1$ and then forces $x$ to be central, hence $x = y = 0$; since both spaces have dimension $6$, it is an isomorphism. Hence $\Phi$ is a local diffeomorphism, its image is open, and, being a compact subgroup, it is also closed in the connected group $SO(4)$, so the image is everything. $\square$
+**Proof.** Linearity is clear. Norm preservation: $N(q_1xq_2^{-1}) = N(q_1)N(x)N(q_2)^{-1} = N(x)$. Homomorphism: $\Phi_{(q_1,q_2)}\circ\Phi_{(r_1,r_2)} = \Phi_{(q_1r_1, q_2r_2)}$. Determinant: $\det\Phi_{(q_1,q_2)} = \pm1$ and depends continuously on $(q_1,q_2)$, which ranges over the connected set $Sp(1)\times Sp(1)$, so it is constant and equals its value $\det(\mathrm{id}) = 1$ at $(1,1)$. Kernel: if $\Phi_{(q_1,q_2)} = \mathrm{id}$ then evaluating at $x = 1$ gives $q_1q_2^{-1} = 1$, so $q_1 = q_2 = \tilde q$, and then $qxq^{-1} = x$ for all $x$, so $\tilde q\in\{\pm1\}$. Surjectivity: the differential of $\Phi$ at the identity is the linear map $(x,y)\mapsto\bigl(z\mapsto xz - zy\bigr)$ from $\operatorname{Im}\mathbb{H}\oplus\operatorname{Im}\mathbb{H}$ to $\mathrm{SO}(4)$; it is injective, because $xz = zy$ for all $z$ gives $x = y$ on taking $z = 1$ and then forces $x$ to be central, hence $x = y = 0$; since both spaces have dimension $6$, it is an isomorphism. Hence $\Phi$ is a local diffeomorphism, its image is open, and, being a compact subgroup, it is also closed in the connected group $SO(4)$, so the image is everything.
 
 The kernel has order two, so $SO(4)$ is doubly covered by $Sp(1)\times Sp(1)$, which is simply connected as $S^3\times S^3$; this is the Spin group $\mathrm{Spin}(4)$ of the four-dimensional Euclidean space. Whereas $SO(3)$ is simple and its universal cover is the simple group $Sp(1)$, the group $SO(4)$ is not simple, and the two factors of the cover are the left and the right multiplications. The adjoint action of the diagonal subgroup $q_1 = q_2 = \tilde q$ is $\operatorname{Ad}_q$ on $\operatorname{Im}\mathbb{H}$ together with the identity on the scalar line, and it is the copy of $SO(3)$ found earlier.
 
@@ -307,21 +307,21 @@ $$
 
 and $\operatorname{Ad}_{\tilde q(\theta+2\pi)} = \operatorname{Ad}_{\tilde q(\theta)}$. Consequently the map $\theta\mapsto\operatorname{Ad}_{\tilde q(\theta)}$ describing the rotation has period $2\pi$, while its quaternion lift $\tilde q$ has period $4\pi$.
 
-**Proof.** Since $\exp(\frac{u(\theta+2\pi)}{2}) = \exp(\frac{u\theta}{2})\exp(\pi u) = -\tilde q(\theta)$ and $\exp(2\pi u) = 1$. The adjoint action is unchanged by $\tilde q\mapsto -\tilde q$ because the kernel is $\{\pm1\}$. $\square$
+**Proof.** Since $\exp(\frac{u(\theta+2\pi)}{2}) = \exp(\frac{u\theta}{2})\exp(\pi u) = -\tilde q(\theta)$ and $\exp(2\pi u) = 1$. The adjoint action is unchanged by $\tilde q\mapsto -\tilde q$ because the kernel is $\{\pm1\}$.
 
 **Theorem.** The path $t\mapsto\exp(ut)$, $t\in[0,\pi]$, is a path in $Sp(1)$ from $1$ to $-1$; its image under the covering $Sp(1)\to SO(3)$ is a closed loop in $SO(3)$ that is not homotopic to the constant loop. Hence a rotation through the angle $2\pi$ corresponds to the non-identity element $-1$ of the fibre, and the identity quaternion is recovered only after the angle $4\pi$.
 
-**Proof.** The path from $1$ to $-1$ does not close in $Sp(1)$, but its image does close in $SO(3)$ because $\operatorname{Ad}_{-1} = \operatorname{Ad}_1$. Since the covering is two-to-one with fibre $\{\pm1\}$, a loop in $SO(3)$ is null-homotopic if and only if its lift in $Sp(1)$ closes; here the lift does not close, so the loop is not null-homotopic, and it represents the generator of $\pi_1(SO(3))\cong\mathbb{Z}/2\mathbb{Z}$. Doubling the loop lifts to the path $t\mapsto\exp(ut)$, $t\in[0,2\pi]$, which closes at $\exp(2\pi u) = 1$. $\square$
+**Proof.** The path from $1$ to $-1$ does not close in $Sp(1)$, but its image does close in $SO(3)$ because $\operatorname{Ad}_{-1} = \operatorname{Ad}_1$. Since the covering is two-to-one with fibre $\{\pm1\}$, a loop in $SO(3)$ is null-homotopic if and only if its lift in $Sp(1)$ closes; here the lift does not close, so the loop is not null-homotopic, and it represents the generator of $\pi_1(SO(3))\cong\mathbb{Z}/2\mathbb{Z}$. Doubling the loop lifts to the path $t\mapsto\exp(ut)$, $t\in[0,2\pi]$, which closes at $\exp(2\pi u) = 1$.
 
 This is the failure of the period $2\pi$: the rotation through $2\pi$ about $u$ is the identity of $SO(3)$, but the quaternion that represents it is $-1$, not $1$. The parametrisation returns to its initial value only after $4\pi$. The non-triviality of the covering is therefore not a convention but the statement $\pi_1(SO(3))\cong\mathbb{Z}/2\mathbb{Z}$, and it is the same statement as the existence of closed loops in $SO(3)$ that are not null-homotopic.
 
-**Remark.** The biquaternion treatment of the same questions carries hyperbolic rotations, the Lorentz group and a family of retractions, because its norm form is indefinite and its exponential takes values in a non-compact group. Here the norm form is positive definite: the exponential of a vector is a unit quaternion, the group of units is $\mathbb{R}_{>0}\times Sp(1)$ with $Sp(1)$ compact, and there are no boost directions, so the only orthogonal groups that arise are the compact $SO(3)$ and $SO(4)$.
+**Remark.** The biquaternion treatment of the same questions carries hyperbolic rotations, the Lorentz group and a family of retractions, because its norm is indefinite and its exponential takes values in a non-compact group. Here the quaternion norm is positive definite: the exponential of a vector is a unit quaternion, the group of units is $\mathbb{R}_{>0}\times Sp(1)$ with $Sp(1)$ compact, and there are no hyperbolic directions, so the only orthogonal groups that arise are the compact $SO(3)$ and $SO(4)$.
 
 ## Summary
 
 The unit quaternions $Sp(1) = \{\tilde q : |\tilde q| = 1\} = S^3$ form a compact connected simply connected Lie group, non-abelian with centre $\{\pm1\}$, isomorphic to $SU(2)$, and every unit quaternion is $\cos\theta + u\sin\theta = \exp(u\theta)$ for an angle $\theta$ and a unit axis $u$.
 
-Conjugation by a unit, $\operatorname{Ad}_q(x) = qxq^{-1}$, is an algebra automorphism that preserves the norm form and stabilises the imaginary subspace $\operatorname{Im}\mathbb{H}\cong\mathbb{R}^3$, where it acts as an isometry of determinant $+1$. The assignment $\tilde q\mapsto\operatorname{Ad}_q$ is a surjective homomorphism $Sp(1)\to SO(3)$ with kernel $\{\pm1\}$, so $SO(3)\cong Sp(1)/\{\pm1\}$ and the map is a two-sheeted covering, indeed the universal cover, giving $\pi_1(SO(3))\cong\mathbb{Z}/2\mathbb{Z}$.
+Conjugation by a unit, $\operatorname{Ad}_q(x) = qxq^{-1}$, is an algebra automorphism that preserves the quaternion norm and stabilises the imaginary subspace $\operatorname{Im}\mathbb{H}\cong\mathbb{R}^3$, where it acts as an isometry of determinant $+1$. The assignment $\tilde q\mapsto\operatorname{Ad}_q$ is a surjective homomorphism $Sp(1)\to SO(3)$ with kernel $\{\pm1\}$, so $SO(3)\cong Sp(1)/\{\pm1\}$ and the map is a two-sheeted covering, indeed the universal cover, giving $\pi_1(SO(3))\cong\mathbb{Z}/2\mathbb{Z}$.
 
 The rotation about the unit axis $u$ through the angle $\theta$ is $\operatorname{Ad}_q$ with $\tilde q = \cos\frac{\theta}{2} + u\sin\frac{\theta}{2}$, the half-angle formula; composition of rotations is quaternion multiplication, $\operatorname{Ad}_{q_1}\circ\operatorname{Ad}_{q_2} = \operatorname{Ad}_{q_1q_2}$; and the parametrisation has period $4\pi$, since a rotation through $2\pi$ is represented by $-1$.
 
@@ -337,9 +337,9 @@ Finally, the two-sided action $\Phi_{(q_1,q_2)}(x) = q_1xq_2^{-1}$ is a surjecti
 | $e_0 = 1, e_1, e_2, e_3$ | Quaternion basis, $e_k^2 = -e_0$ |
 | $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3 = \sum_\mu q_\mu e_\mu$ | General quaternion, scalar part $q_0$, vector part $\mathbf{q}$ |
 | $\bar{\tilde q} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$ | Quaternion conjugate |
-| $N(\tilde q) = \tilde q\bar{\tilde q} = \lvert \tilde q\rvert^2$ | Norm form and modulus |
+| $N(\tilde q) = \tilde q\bar{\tilde q} = \lvert \tilde q\rvert^2$ | Quaternion norm and modulus |
 | $\operatorname{Im}\mathbb{H}\cong\mathbb{R}^3$ | Imaginary quaternions, the space of vectors |
-| $\langle x, y\rangle = \operatorname{Sc}(x\bar{y})$ | Real inner product on $\operatorname{Im}\mathbb{H}$ |
+| $\langle x, y\rangle = \mathrm{Sc}(x\bar{y})$ | Real inner product on $\operatorname{Im}\mathbb{H}$ |
 | $Sp(1) = \{\tilde q : \lvert \tilde q\rvert = 1\} = S^3$ | Group of unit quaternions |
 | $Z(Sp(1)) = \{\pm1\}$ | Centre of $Sp(1)$ |
 | $\exp(u\theta) = \cos\theta + u\sin\theta$ | Exponential of a unit vector |
@@ -347,7 +347,7 @@ Finally, the two-sided action $\Phi_{(q_1,q_2)}(x) = q_1xq_2^{-1}$ is a surjecti
 | $\operatorname{Ad}_q(x) = qxq^{-1}$ | Adjoint action |
 | $R_q$ | Matrix of $\operatorname{Ad}_q$ on $\operatorname{Im}\mathbb{H}$ |
 | $\operatorname{ad}_x(y) = [x,y] = 2(x\times y)$ | Adjoint map of the Lie algebra $\operatorname{Im}\mathbb{H}$ |
-| $\operatorname{Im}\mathbb{H}\cong\mathfrak{so}(3)\cong\mathfrak{su}(2)$ | Lie algebra of $Sp(1)\cong SU(2)$ and of $SO(3)$ |
+| $\operatorname{Im}\mathbb{H}\cong\mathrm{SO}(3)\cong\mathrm{SU}(2)$ | Lie algebra of $Sp(1)\cong SU(2)$ and of $SO(3)$ |
 | $SO(3)$ | Rotation group of $\mathbb{R}^3$, $\cong Sp(1)/\{\pm1\}$ |
 | $O(3)\cong SO(3)\rtimes\mathbb{Z}/2\mathbb{Z}$ | Orthogonal group of $\mathbb{R}^3$ |
 | $\rho_v(x) = -vxv^{-1}$ | Reflection in the plane $v^{\perp}$, $v$ a unit vector |

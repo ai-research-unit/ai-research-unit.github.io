@@ -63,7 +63,7 @@ is smooth as a map of open subsets of Euclidean spaces. The property is local, s
 
 **Theorem.** Every smooth manifold admits a smooth partition of unity subordinate to any given open cover.
 
-**Proof sketch.** Since $M$ is second countable and locally compact, it is paracompact; *Paracompactness and Partitions of Unity* supplies a locally finite refinement of the given cover and a subordinate partition of unity by continuous functions. Choosing a chart in each member of the refinement and smoothing the functions with a bump function produces smooth functions with the same supports, and normalising by their sum gives the stated partition. $\square$
+**Proof sketch.** Since $M$ is second countable and locally compact, it is paracompact; *Paracompactness and Partitions of Unity* supplies a locally finite refinement of the given cover and a subordinate partition of unity by continuous functions. Choosing a chart in each member of the refinement and smoothing the functions with a bump function produces smooth functions with the same supports, and normalising by their sum gives the stated partition.
 
 **Remark.** The existence of smooth partitions of unity is what distinguishes the smooth category from the topological and the analytic categories: it is the mechanism by which local constructions are glued into global ones, and every global object constructed below by patching — a smooth function, a Riemannian metric, a vector field, a connection — uses it. The construction requires the local finiteness, which is why second countability and paracompactness are imposed in the definition of a manifold.
 
@@ -95,7 +95,7 @@ $$
 T_pM \longrightarrow \operatorname{Der}_p(C^\infty(M)).
 $$
 
-**Proof sketch.** The map is well defined because tangent curves give the same derivative of $f \circ \gamma$ by the chain rule, and it is linear. For injectivity, a derivation that kills every function has vanishing pairing with every coordinate function, hence the corresponding coordinate velocity vanishes. For surjectivity, let $D$ be a derivation and choose a chart with coordinates $x^i$ around $p$, which we may suppose is the origin. Writing $f$ in the chart and subtracting its Taylor expansion to first order expresses $f - f(p) - \sum_i (\partial f/\partial x^i)(0) x^i$ as a sum of products of functions vanishing at $0$; the Leibniz rule applied to those products shows that $D(f) = \sum_i D(x^i)\,(\partial f/\partial x^i)(0)$, so $D$ is the derivation of the vector $\sum_i D(x^i)\partial_{x^i}|_p$. $\square$
+**Proof sketch.** The map is well defined because tangent curves give the same derivative of $f \circ \gamma$ by the chain rule, and it is linear. For injectivity, a derivation that kills every function has vanishing pairing with every coordinate function, hence the corresponding coordinate velocity vanishes. For surjectivity, let $D$ be a derivation and choose a chart with coordinates $x^i$ around $p$, which we may suppose is the origin. Writing $f$ in the chart and subtracting its Taylor expansion to first order expresses $f - f(p) - \sum_i (\partial f/\partial x^i)(0) x^i$ as a sum of products of functions vanishing at $0$; the Leibniz rule applied to those products shows that $D(f) = \sum_i D(x^i)\,(\partial f/\partial x^i)(0)$, so $D$ is the derivation of the vector $\sum_i D(x^i)\partial_{x^i}|_p$.
 
 The theorem identifies the two definitions, and one writes a tangent vector as a derivation $v = \sum_i v^i \partial_{x^i}|_p$ acting on functions by $v(f) = \sum_i v^i \partial f/\partial x^i(p)$. This is the **directional derivative**.
 
@@ -123,7 +123,7 @@ $$
 d(G \circ F)_p(v)(g) = v\bigl(g \circ G \circ F\bigr) = dF_p(v)(g \circ G) = dG_{F(p)}\bigl(dF_p(v)\bigr)(g),
 $$
 
-which is the claim; the identity statement is immediate, and the inverse statement follows because $d(F^{-1})_{F(p)} \circ dF_p = d(\mathrm{id})_p = \mathrm{id}$. $\square$
+which is the claim; the identity statement is immediate, and the inverse statement follows because $d(F^{-1})_{F(p)} \circ dF_p = d(\mathrm{id})_p = \mathrm{id}$.
 
 In coordinates $x^1, \ldots, x^m$ on $M$ and $y^1, \ldots, y^n$ on $N$, the matrix of $dF_p$ in the bases $\partial_{x^i}$ and $\partial_{y^j}$ is the Jacobian matrix with entries $\partial F^j/\partial x^i(p)$, so the differential is the intrinsic form of the Jacobian.
 
@@ -139,7 +139,7 @@ The bundle structure of $TM$, its sections and its transition functions are the 
 
 ## Vector Fields and the Lie Bracket
 
-**Definition.** A **vector field** on $M$ is a smooth section of the tangent bundle, that is, a smooth map $X : M \to TM$ with $\pi \circ X = \mathrm{id}_M$. The space of vector fields is written $\mathfrak{X}(M)$; it is a module over the ring $C^\infty(M)$ and a real vector space. In a chart, $X = \sum_i X^i \partial_{x^i}$ with $X^i \in C^\infty(U)$, and $X$ acts on functions by $X(f) = \sum_i X^i \partial f/\partial x^i$.
+**Definition.** A **vector field** on $M$ is a smooth section of the tangent bundle, that is, a smooth map $X : M \to TM$ with $\pi \circ X = \mathrm{id}_M$. The space of vector fields is written $\mathrm{X}(M)$; it is a module over the ring $C^\infty(M)$ and a real vector space. In a chart, $X = \sum_i X^i \partial_{x^i}$ with $X^i \in C^\infty(U)$, and $X$ acts on functions by $X(f) = \sum_i X^i \partial f/\partial x^i$.
 
 **Definition.** The **Lie bracket** of vector fields $X$ and $Y$ is the vector field
 
@@ -161,11 +161,11 @@ $$
 
 for $f \in C^\infty(M)$. It is not a tensor: the value of $[X, Y]$ at $p$ depends on the first derivatives of the coefficients of $X$ and $Y$, not merely on their values at $p$.
 
-**Proof.** The expression $X(Y(f)) - Y(X(f))$ is a derivation of $C^\infty(M)$ in $f$: the second-order terms cancel, because $XY(f) - YX(f)$ is the commutator of two first-order differential operators and its symbol is symmetric. Hence it defines a smooth vector field. Skew-symmetry is immediate; the Jacobi identity is the associativity of composition of the operators $X, Y, Z$ arranged cyclically; the Leibniz rule follows by expanding $X(fY)(h) - fY(X(h))$. $\square$
+**Proof.** The expression $X(Y(f)) - Y(X(f))$ is a derivation of $C^\infty(M)$ in $f$: the second-order terms cancel, because $XY(f) - YX(f)$ is the commutator of two first-order differential operators and its symbol is symmetric. Hence it defines a smooth vector field. Skew-symmetry is immediate; the Jacobi identity is the associativity of composition of the operators $X, Y, Z$ arranged cyclically; the Leibniz rule follows by expanding $X(fY)(h) - fY(X(h))$.
 
-**Theorem.** The pair $(\mathfrak{X}(M), [\cdot, \cdot])$ is a real Lie algebra, the **Lie algebra of the manifold** $M$. For a Lie group, the left-invariant vector fields form a subalgebra isomorphic to the Lie algebra of the group, and the two notions agree; this is developed in *Lie Groups* and *The Lie Algebra and the Exponential Map*.
+**Theorem.** The pair $(\mathrm{X}(M), [\cdot, \cdot])$ is a real Lie algebra, the **Lie algebra of the manifold** $M$. For a Lie group, the left-invariant vector fields form a subalgebra isomorphic to the Lie algebra of the group, and the two notions agree; this is developed in *Lie Groups* and *The Lie Algebra and the Exponential Map*.
 
-**Proof.** The module $\mathfrak{X}(M)$ is a real vector space and the bracket is bilinear, alternating and satisfies the Jacobi identity, which is the definition of a Lie algebra. $\square$
+**Proof.** The module $\mathrm{X}(M)$ is a real vector space and the bracket is bilinear, alternating and satisfies the Jacobi identity, which is the definition of a Lie algebra.
 
 **Definition.** Vector fields $X$ and $Y$ **commute** if $[X, Y] = 0$. In a chart with coordinates $x^i$, the coordinate vector fields satisfy $[\partial_{x^i}, \partial_{x^j}] = 0$, and this is exactly the symmetry of the mixed partial derivatives.
 
@@ -191,11 +191,11 @@ $$
 
 Consequently, about a point of constant rank $r$, the map $F$ looks like the projection of the first $r$ coordinates followed by the inclusion of the first $r$ coordinates.
 
-**Proof sketch.** The statement is local, so one may work in Euclidean spaces. Composing with linear isomorphisms reduces the derivative at $p$ to the standard form, and the inverse function theorem applied to the map $x \mapsto (F_1(x), \ldots, F_r(x), x^{r+1}, \ldots, x^m)$ produces a change of coordinates in which the first $r$ components of $F$ are the first $r$ coordinates and the remaining components have vanishing derivative; a further argument, using the constancy of the rank, shows the remaining components are independent of the first $r$ variables and then eliminates them by a second change of coordinates in the target. $\square$
+**Proof sketch.** The statement is local, so one may work in Euclidean spaces. Composing with linear isomorphisms reduces the derivative at $p$ to the standard form, and the inverse function theorem applied to the map $x \mapsto (F_1(x), \ldots, F_r(x), x^{r+1}, \ldots, x^m)$ produces a change of coordinates in which the first $r$ components of $F$ are the first $r$ coordinates and the remaining components have vanishing derivative; a further argument, using the constancy of the rank, shows the remaining components are independent of the first $r$ variables and then eliminates them by a second change of coordinates in the target.
 
 **Theorem (implicit function theorem, manifold form).** Let $F : M \to N$ be a smooth map and let $c \in N$ be a **regular value**, meaning that $dF_p$ is surjective for every $p \in F^{-1}(c)$. Then $F^{-1}(c)$ is a regular submanifold of $M$ of dimension $\dim M - \dim N$, and its tangent space at $p$ is $\ker dF_p$.
 
-**Proof sketch.** Regularity is open, so $F$ has rank $\dim N$ on a neighbourhood of each point of the preimage; the rank theorem then provides adapted coordinates in which the preimage is the common zero set of the last $\dim N$ coordinates, which is exactly the local model of a regular submanifold. The tangent space statement follows by differentiating $F \circ \iota = c$ for the inclusion $\iota$. $\square$
+**Proof sketch.** Regularity is open, so $F$ has rank $\dim N$ on a neighbourhood of each point of the preimage; the rank theorem then provides adapted coordinates in which the preimage is the common zero set of the last $\dim N$ coordinates, which is exactly the local model of a regular submanifold. The tangent space statement follows by differentiating $F \circ \iota = c$ for the inclusion $\iota$.
 
 **Corollary.** A smooth map $F : M \to N$ with $\dim M = \dim N$ whose differential is invertible at $p$ is a local diffeomorphism near $p$; in particular, if in addition $F$ is bijective then $F$ is a diffeomorphism. This is the **inverse function theorem** in its manifold form.
 
@@ -221,13 +221,13 @@ where $\langle\cdot,\cdot\rangle$ is the standard positive definite inner produc
 
 **Theorem.** The sphere $S^{n-1}$ is a smooth manifold of dimension $n-1$.
 
-**Proof.** Define $f : \mathbb{R}^n \to \mathbb{R}$ by $f(x) = \langle x, x\rangle$. Its differential at $x$ is $df_x(v) = 2\langle x, v\rangle$, which is surjective whenever $x \neq 0$, since $df_x(x) = 2\langle x, x\rangle \neq 0$. Hence $1$ is a regular value of $f$, and $S^{n-1} = f^{-1}(1)$ is a regular submanifold of dimension $n-1$ by the implicit function theorem. $\square$
+**Proof.** Define $f : \mathbb{R}^n \to \mathbb{R}$ by $f(x) = \langle x, x\rangle$. Its differential at $x$ is $df_x(v) = 2\langle x, v\rangle$, which is surjective whenever $x \neq 0$, since $df_x(x) = 2\langle x, x\rangle \neq 0$. Hence $1$ is a regular value of $f$, and $S^{n-1} = f^{-1}(1)$ is a regular submanifold of dimension $n-1$ by the implicit function theorem.
 
 **Example.** The manifold structure is also visible in charts: the two hemispheres $x^n > 0$ and $x^n < 0$ are graphs over the ball, with coordinates $x^1, \ldots, x^{n-1}$ and the last coordinate recovered as $\pm(1 - |x'|^2)^{1/2}$; on the overlap $|x'| < 1$, the transition map is a diffeomorphism of the open ball. The smooth structure obtained from the implicit function theorem agrees with this one.
 
 **Theorem.** The sphere $S^{n-1}$ is compact and connected, and for $n = 2$ it is the circle $S^1$.
 
-**Proof.** It is closed and bounded in $\mathbb{R}^n$, hence compact; it is path connected for $n \geq 2$, since any two points are joined by an arc of a great circle, and connected. $\square$
+**Proof.** It is closed and bounded in $\mathbb{R}^n$, hence compact; it is path connected for $n \geq 2$, since any two points are joined by an arc of a great circle, and connected.
 
 ### The Real Projective Spaces
 
@@ -235,7 +235,7 @@ where $\langle\cdot,\cdot\rangle$ is the standard positive definite inner produc
 
 **Theorem.** The space $\mathbb{RP}^n$ is a compact smooth manifold of dimension $n$.
 
-**Proof sketch.** For $i = 0, \ldots, n$ let $U_i$ be the set of lines not contained in the hyperplane $x^i = 0$; the map sending a line to the affine coordinates $(x^0/x^i, \ldots, \widehat{x^i/x^i}, \ldots, x^n/x^i)$ is a homeomorphism onto $\mathbb{R}^n$, and the transition maps are smooth rational functions, so the $U_i$ form a smooth atlas with $n+1$ charts. Compactness is the compactness of $S^n$ under the quotient map. $\square$
+**Proof sketch.** For $i = 0, \ldots, n$ let $U_i$ be the set of lines not contained in the hyperplane $x^i = 0$; the map sending a line to the affine coordinates $(x^0/x^i, \ldots, \widehat{x^i/x^i}, \ldots, x^n/x^i)$ is a homeomorphism onto $\mathbb{R}^n$, and the transition maps are smooth rational functions, so the $U_i$ form a smooth atlas with $n+1$ charts. Compactness is the compactness of $S^n$ under the quotient map.
 
 ### The Classical Matrix Groups
 
@@ -249,11 +249,11 @@ $$
 
 is a compact smooth submanifold of $M_n(\mathbb{R})$ of dimension $n(n-1)/2$, and the special orthogonal group $SO(n) = \{A \in O(n) : \det A = 1\}$ is a submanifold of the same dimension.
 
-**Proof.** Consider $F : M_n(\mathbb{R}) \to \operatorname{Sym}_n(\mathbb{R})$, $F(A) = A^T A$, where $\operatorname{Sym}_n$ is the space of symmetric matrices, of dimension $n(n+1)/2$. Its differential at $A$ is $dF_A(H) = A^T H + H^T A$. For $A \in O(n)$, this map is surjective: given a symmetric $S$, take $H = \frac{1}{2} A S$, then $A^T H + H^T A = \frac{1}{2}S + \frac{1}{2}S = S$. Hence $I$ is a regular value, and $O(n) = F^{-1}(I)$ is a submanifold of dimension $n^2 - n(n+1)/2 = n(n-1)/2$. It is bounded in $M_n(\mathbb{R})$ and closed, hence compact; $SO(n)$ is a union of components, cut out by the condition $\det = 1$. $\square$
+**Proof.** Consider $F : M_n(\mathbb{R}) \to \operatorname{Sym}_n(\mathbb{R})$, $F(A) = A^T A$, where $\operatorname{Sym}_n$ is the space of symmetric matrices, of dimension $n(n+1)/2$. Its differential at $A$ is $dF_A(H) = A^T H + H^T A$. For $A \in O(n)$, this map is surjective: given a symmetric $S$, take $H = \frac{1}{2} A S$, then $A^T H + H^T A = \frac{1}{2}S + \frac{1}{2}S = S$. Hence $I$ is a regular value, and $O(n) = F^{-1}(I)$ is a submanifold of dimension $n^2 - n(n+1)/2 = n(n-1)/2$. It is bounded in $M_n(\mathbb{R})$ and closed, hence compact; $SO(n)$ is a union of components, cut out by the condition $\det = 1$.
 
 **Theorem.** The unitary group $U(n)$ is a smooth submanifold of $M_n(\mathbb{C}) \cong \mathbb{R}^{2n^2}$ of real dimension $n^2$, and the special unitary group $SU(n)$ has real dimension $n^2 - 1$.
 
-**Proof.** The same argument applied to $F(A) = A^* A$ with values in the real vector space of Hermitian matrices, of real dimension $n^2$, gives $\dim U(n) = 2n^2 - n^2 = n^2$; the determinant maps $U(n)$ onto the unit circle with kernel $SU(n)$, and the derivative of the determinant is surjective, so $SU(n)$ is a submanifold of dimension $n^2 - 1$. $\square$
+**Proof.** The same argument applied to $F(A) = A^* A$ with values in the real vector space of Hermitian matrices, of real dimension $n^2$, gives $\dim U(n) = 2n^2 - n^2 = n^2$; the determinant maps $U(n)$ onto the unit circle with kernel $SU(n)$, and the derivative of the determinant is surjective, so $SU(n)$ is a submanifold of dimension $n^2 - 1$.
 
 These groups are the classical groups of *Matrix Groups and Classical Groups*, and they are Lie groups in the sense of *Lie Groups*: the group operations are smooth because they are given by polynomial and rational expressions in the matrix entries, and the manifold structure is the one produced here.
 
@@ -279,7 +279,7 @@ $$
 g = \sum_\alpha \rho_\alpha\, g_\alpha.
 $$
 
-The sum is finite near each point by local finiteness, its coefficients are smooth, and it is positive definite because at each point at least one $\rho_\alpha$ is positive and the corresponding $g_\alpha$ is definite there. $\square$
+The sum is finite near each point by local finiteness, its coefficients are smooth, and it is positive definite because at each point at least one $\rho_\alpha$ is positive and the corresponding $g_\alpha$ is definite there.
 
 **Example (the Euclidean metric).** On $\mathbb{R}^n$ the standard metric is $g_{ij} = \delta_{ij}$, whose value at $x$ is the standard inner product on the tangent space $\mathbb{R}^n$.
 
@@ -305,7 +305,7 @@ the integral being the elementary Riemann integral of the continuous function $t
 
 **Theorem.** The length is invariant under reparametrisation: if $\sigma : [c, d] \to [a, b]$ is a smooth increasing surjection and $\gamma$ a smooth curve, then $L_g(\gamma \circ \sigma) = L_g(\gamma)$. Consequently the length of a piecewise smooth curve depends only on its image and its orientation.
 
-**Proof.** The chain rule gives $(\gamma \circ \sigma)'(t) = \sigma'(t)\,\gamma'(\sigma(t))$, hence $|(\gamma \circ \sigma)'(t)|_g = \sigma'(t)\,|\gamma'(\sigma(t))|_g$, and the change-of-variables formula in one variable gives the result. $\square$
+**Proof.** The chain rule gives $(\gamma \circ \sigma)'(t) = \sigma'(t)\,\gamma'(\sigma(t))$, hence $|(\gamma \circ \sigma)'(t)|_g = \sigma'(t)\,|\gamma'(\sigma(t))|_g$, and the change-of-variables formula in one variable gives the result.
 
 **Definition.** For $p, q \in M$ the **Riemannian distance** is
 
@@ -317,7 +317,7 @@ the infimum being taken over all piecewise smooth curves joining the two points;
 
 **Theorem.** The function $d_g$ is a metric on $M$, and its metric topology is the given topology of $M$.
 
-**Proof sketch.** Symmetry and the triangle inequality follow from reversing and concatenating curves; positivity and separation were noted. For the topology, one shows that a point and the complement of a small geodesically convex ball of radius $r$ are at distance at least $r$ from each other, using the fact that the exponential map of the metric provides a coordinate system in which the metric is close to Euclidean; hence the metric balls generate the given topology. $\square$
+**Proof sketch.** Symmetry and the triangle inequality follow from reversing and concatenating curves; positivity and separation were noted. For the topology, one shows that a point and the complement of a small geodesically convex ball of radius $r$ are at distance at least $r$ from each other, using the fact that the exponential map of the metric provides a coordinate system in which the metric is close to Euclidean; hence the metric balls generate the given topology.
 
 The metric $d_g$ is the distance that this Part places on the manifold, and it is the object that allows all the topological and metric notions of *Metric, Uniform and Complete Spaces* to be applied to $M$. The finer metric theory — geodesics, completeness, curvature and the comparison theorems — is the subject of *Riemannian Geometry* and *Curvature and Geodesics* in Part IV.
 
@@ -327,7 +327,7 @@ The metric $d_g$ is the distance that this Part places on the manifold, and it i
 
 A topological manifold is a second-countable Hausdorff space locally homeomorphic to $\mathbb{R}^n$; a smooth structure is a maximal atlas of smoothly compatible charts, and a smooth manifold is the pair. Smooth maps are those whose coordinate expressions are smooth, diffeomorphisms are the isomorphisms of the category, and smooth partitions of unity subordinate to any open cover are the gluing device that the rest of the theory uses.
 
-The tangent space $T_pM$ may be defined by equivalence classes of curves through $p$ or as the derivations of the algebra of smooth functions at $p$, and the two definitions agree; it is a vector space of dimension $n$ with a basis of coordinate derivations $\partial_{x^i}$ in each chart. The differential $dF_p : T_pM \to T_{F(p)}N$ is the intrinsic form of the Jacobian and satisfies the chain rule, so it is the functorial part of the theory. Vector fields are sections of the tangent bundle, they form the real Lie algebra $\mathfrak{X}(M)$ under the bracket $[X, Y](f) = X(Y(f)) - Y(X(f))$, and the bracket measures the failure of the flows of the fields to commute; the existence of the flows is a differential-equation statement deferred to Part III.
+The tangent space $T_pM$ may be defined by equivalence classes of curves through $p$ or as the derivations of the algebra of smooth functions at $p$, and the two definitions agree; it is a vector space of dimension $n$ with a basis of coordinate derivations $\partial_{x^i}$ in each chart. The differential $dF_p : T_pM \to T_{F(p)}N$ is the intrinsic form of the Jacobian and satisfies the chain rule, so it is the functorial part of the theory. Vector fields are sections of the tangent bundle, they form the real Lie algebra $\mathrm{X}(M)$ under the bracket $[X, Y](f) = X(Y(f)) - Y(X(f))$, and the bracket measures the failure of the flows of the fields to commute; the existence of the flows is a differential-equation statement deferred to Part III.
 
 A regular submanifold is one that looks locally like a coordinate subspace, the rank theorem puts every constant-rank map into a normal form, and the implicit function theorem identifies the preimage of a regular value as a submanifold whose tangent space is the kernel of the differential. The spheres, the real projective spaces, and the general linear, orthogonal, unitary and special unitary groups are manifolds by these results, the last three being the classical groups of this Part.
 
@@ -345,7 +345,7 @@ A Riemannian metric is a smooth positive definite inner product on each tangent 
 | $T_pM$, $TM$, $T^*M$ | Tangent space at $p$, tangent bundle, cotangent bundle |
 | $\partial_{x^i}\big|_p$ | Coordinate basis vector of $T_pM$ |
 | $dF_p : T_pM \to T_{F(p)}N$ | Differential (tangent map, pushforward) of a smooth map |
-| $\mathfrak{X}(M)$ | Lie algebra of smooth vector fields on $M$ |
+| $\mathrm{X}(M)$ | Lie algebra of smooth vector fields on $M$ |
 | $[X, Y](f) = X(Y(f)) - Y(X(f))$ | Lie bracket of vector fields; $[X,Y] = -[Y,X]$, Jacobi identity |
 | $X(f) = df(X)$ | Action of a vector field on a function; the directional derivative |
 | Regular submanifold | Locally a coordinate subspace; preimage of a regular value |

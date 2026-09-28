@@ -43,7 +43,7 @@ $$
 
 where $L_u$ and $L_p$ denote the partial derivatives of $L$ with respect to its second argument and its third argument.
 
-*Proof.* Differentiate under the integral sign: $\frac{d}{dt}L(x,u+tv,\nabla u+t\nabla v)|_{t=0} = L_u v + L_p\cdot\nabla v$, and the domination required to interchange derivative and integral holds on the interval of $t$ for which $u+tv$ remains in a compact subset of the domain of $L$, since $L$ is $C^1$ and $v$ is bounded. $\square$
+*Proof.* Differentiate under the integral sign: $\frac{d}{dt}L(x,u+tv,\nabla u+t\nabla v)|_{t=0} = L_u v + L_p\cdot\nabla v$, and the domination required to interchange derivative and integral holds on the interval of $t$ for which $u+tv$ remains in a compact subset of the domain of $L$, since $L$ is $C^1$ and $v$ is bounded.
 
 ### Derivation of the Equation
 
@@ -61,7 +61,7 @@ $$
 0 = \delta J(u;v) = \int_\Omega\Bigl(L_u - \sum_i\partial_iL_{p_i}\Bigr)v\,dx .
 $$
 
-Since $v$ is arbitrary and the bracket is continuous, it vanishes identically. $\square$
+Since $v$ is arbitrary and the bracket is continuous, it vanishes identically.
 
 **Remark (the du Bois-Reymond argument).** The proof above assumes that $u$ is of class $C^2$, so that the bracket $L_u-\partial_iL_{p_i}$ is continuous and may be read off from the vanishing of the integral. When $u$ is only Lipschitz, or merely of class $W^{1,1}$, the same conclusion is reached by the argument of du Bois-Reymond: the vanishing of the first variation against all compactly supported smooth $v$ forces the bracket, interpreted as a distribution, to be the derivative of a constant, and the equation is recovered after a further integration by parts; the regularity of a minimiser, beyond the weak differentiability assumed, is then a separate theorem, quoted as standard and depending on the strict convexity of $L$ in $p$.
 
@@ -73,7 +73,7 @@ $$
 
 where $\nu$ is the outward unit normal; if the functional contains a boundary term, the corresponding condition involves the boundary integrand.
 
-*Proof.* The divergence theorem now leaves a boundary integral $\int_{\partial\Omega}(L_p\cdot\nu)v\,dS$, which must vanish for every admissible boundary value $v$ of the variation; since $v|_{\partial\Omega}$ is arbitrary, the normal component of $L_p$ vanishes. $\square$
+*Proof.* The divergence theorem now leaves a boundary integral $\int_{\partial\Omega}(L_p\cdot\nu)v\,dS$, which must vanish for every admissible boundary value $v$ of the variation; since $v|_{\partial\Omega}$ is arbitrary, the normal component of $L_p$ vanishes.
 
 **Theorem (the Beltrami identity).** If $L$ does not depend explicitly on $x$, then along every $C^2$ solution of the Euler–Lagrange equation,
 
@@ -81,7 +81,7 @@ $$
 L(u,u') - \sum_i u_i'\,L_{p_i}(u,u') = \text{constant} .
 $$
 
-*Proof.* Differentiate the left-hand side with respect to $x$: the derivative is $\sum_iL_{u_i}u_i' + \sum_iL_{p_i}u_i'' - \sum_iu_i''L_{p_i} - \sum_iu_i'\frac{d}{dx}L_{p_i} = \sum_iu_i'\bigl(L_{u_i} - \frac{d}{dx}L_{p_i}\bigr) = 0$ by the Euler–Lagrange equation. $\square$
+*Proof.* Differentiate the left-hand side with respect to $x$: the derivative is $\sum_iL_{u_i}u_i' + \sum_iL_{p_i}u_i'' - \sum_iu_i''L_{p_i} - \sum_iu_i'\frac{d}{dx}L_{p_i} = \sum_iu_i'\bigl(L_{u_i} - \frac{d}{dx}L_{p_i}\bigr) = 0$ by the Euler–Lagrange equation.
 
 **Remark (the two classical reductions).** If $L$ does not depend on $u$ but only on $u'$, the Euler–Lagrange equation integrates once to $L_{p_i} = c_i$; if $L$ does not depend on $x$, the Beltrami identity gives the first integral. Both are instances of the general principle that a symmetry of the Lagrangian produces a conservation law for the Euler–Lagrange equation, the theorem of Noether, stated in its general form in the article of this Part on Lagrangian and Hamiltonian systems; in the case of a one-parameter group of translations the conserved quantity is exactly the first integral above.
 
@@ -134,13 +134,13 @@ with $L_{uu}$, $L_{up}$ and $L_{pp}$ evaluated at $(x,u,\nabla u)$ and $L_{pp}$ 
 
 **Theorem (necessary and sufficient conditions).** If $u$ is a local minimum of class $C^2$, then the Euler–Lagrange equation holds and the second variation is nonnegative: $\delta^2J(u;v)\ge0$ for every admissible $v$. Conversely, if $u$ satisfies the Euler–Lagrange equation and the **strengthened Legendre condition** $L_{pp}(x,u,\nabla u)\ge\theta I$ for some $\theta>0$ and the second variation is positive for every nonzero admissible $v$, then $u$ is a local minimum in the $W^{1,\infty}$ topology.
 
-*Proof.* The first derivative of $J$ along $u+tv$ vanishes at $t=0$ by stationarity, and the second derivative is the displayed quadratic form in $v$; a local minimum has nonnegative second derivative at a stationary point by Taylor's formula in $t$, which proves necessity. For sufficiency, the strengthened convexity in the gradient variables bounds $J(u+v)-J(u)$ below by a positive multiple of $\|v\|_{W^{1,2}}^2$ for small $v$, whence the minimum. $\square$
+*Proof.* The first derivative of $J$ along $u+tv$ vanishes at $t=0$ by stationarity, and the second derivative is the displayed quadratic form in $v$; a local minimum has nonnegative second derivative at a stationary point by Taylor's formula in $t$, which proves necessity. For sufficiency, the strengthened convexity in the gradient variables bounds $J(u+v)-J(u)$ below by a positive multiple of $\|v\|_{W^{1,2}}^2$ for small $v$, whence the minimum.
 
 **Definition.** For the one-dimensional problem the **Legendre condition** is $L_{pp}\ge0$ and the **strengthened Legendre condition** is $L_{pp}>0$; the **Jacobi equation** is the linearisation of the Euler–Lagrange equation along a solution, and a **conjugate point** is a zero of a nontrivial Jacobi field vanishing at the initial point. A solution is a local minimum of the length or energy if the strengthened Legendre condition holds and there is no conjugate point in the open interval.
 
 **Theorem (Jacobi).** Let $u$ be a solution of the scalar Euler–Lagrange equation on $[a,b]$ with $L_{pp}>0$, and suppose no point of $(a,b]$ is conjugate to $a$. Then $u$ is a local minimum of $J$ among curves with the same endpoints; if a conjugate point lies in $(a,b)$, then $u$ is not a minimum.
 
-*Proof.* Quoted as standard (the Jacobi condition). The second variation is a quadratic form whose associated Sturm–Liouville problem has no zero eigenvalue precisely when there is no conjugate point, by the Sturm oscillation theory; the positivity of the quadratic form is then equivalent to the absence of conjugacy, and the strengthened Legendre condition supplies the ellipticity of that Sturm–Liouville problem. $\square$
+*Proof.* Quoted as standard (the Jacobi condition). The second variation is a quadratic form whose associated Sturm–Liouville problem has no zero eigenvalue precisely when there is no conjugate point, by the Sturm oscillation theory; the positivity of the quadratic form is then equivalent to the absence of conjugacy, and the strengthened Legendre condition supplies the ellipticity of that Sturm–Liouville problem.
 
 The conjugate-point theory is what makes the geodesic example precise: a geodesic minimises length up to its first conjugate point and not beyond, and the conjugate points are computed from the curvature through the Jacobi equation, which is the subject of the geometry of Part II.
 
@@ -152,7 +152,7 @@ The conjugate-point theory is what makes the geodesic example precise: a geodesi
 
 **Theorem (direct method).** Let $V$ be a reflexive Banach space and let $J$ be coercive and sequentially weakly lower semicontinuous. Then $J$ attains its minimum on $V$.
 
-*Proof.* Let $(u_m)$ be a minimising sequence; coercivity keeps it bounded, and reflexivity (the Banach–Alaoglu theorem, in the form of *Banach and Hilbert Spaces*) gives a weakly convergent subsequence $u_{m_k}\rightharpoonup u$. Weak lower semicontinuity gives $J(u)\le\liminf_kJ(u_{m_k}) = \inf_VJ$, so $u$ is a minimiser. $\square$
+*Proof.* Let $(u_m)$ be a minimising sequence; coercivity keeps it bounded, and reflexivity (the Banach–Alaoglu theorem, in the form of *Banach and Hilbert Spaces*) gives a weakly convergent subsequence $u_{m_k}\rightharpoonup u$. Weak lower semicontinuity gives $J(u)\le\liminf_kJ(u_{m_k}) = \inf_VJ$, so $u$ is a minimiser.
 
 **Theorem (Tonelli).** Let $\Omega$ be bounded, let $1<p<\infty$ and let $L : \Omega\times\mathbb{R}\times\mathbb{R}^n\to\mathbb{R}$ satisfy a growth condition
 
@@ -162,7 +162,7 @@ $$
 
 with $\alpha>0$, and let $L$ be convex in $p$ for each $(x,s)$. Then $J$ is sequentially weakly lower semicontinuous on $W^{1,p}(\Omega)$; in particular, if $J$ is coercive, it has a minimiser.
 
-*Proof.* Quoted as standard. Convexity of $L$ in $p$ gives, for each $(x,s)$ and every $q$, the affine lower bound $L(x,s,p) \ge L(x,s,q) + L_p(x,s,q)\cdot(p-q)$; integrating along a weakly convergent sequence and passing to the limit in the linear terms, whose coefficients are fixed $L^1$ functions, leaves the convex part $\int L$ and gives the lower semicontinuity. The growth condition makes $J$ well defined and coercive on the reflexive space $W^{1,p}$. $\square$
+*Proof.* Quoted as standard. Convexity of $L$ in $p$ gives, for each $(x,s)$ and every $q$, the affine lower bound $L(x,s,p) \ge L(x,s,q) + L_p(x,s,q)\cdot(p-q)$; integrating along a weakly convergent sequence and passing to the limit in the linear terms, whose coefficients are fixed $L^1$ functions, leaves the convex part $\int L$ and gives the lower semicontinuity. The growth condition makes $J$ well defined and coercive on the reflexive space $W^{1,p}$.
 
 **Remark (why convexity and not just stationarity).** A stationary point of a nonconvex functional need not be a minimum: the Euler–Lagrange equation is a necessary condition only. The direct method supplies existence by compactness, and convexity is the hypothesis that makes the functional's sublevel sets convex and the weak limit a minimiser. For a nonconvex problem the minimiser may fail to exist, or may exist but fail to satisfy the Euler–Lagrange equation in the classical sense; the existence theory then proceeds through relaxation, in which the functional is replaced by its lower convex envelope on an enlarged space.
 
@@ -176,7 +176,7 @@ $$
 
 and inherits the regularity theorem of the preceding article.
 
-*Proof.* The weak form of the equation is exactly the vanishing of the first variation, so $u$ is a weak solution of a quasilinear elliptic equation; since $L$ is uniformly convex in the gradient, the linearised operator is uniformly elliptic with bounded measurable coefficients, and the difference-quotient argument of the preceding article applies. For the full regularity, including the case of non-smooth coefficients and the resolution of Hilbert's nineteenth problem, the argument is the De Giorgi–Nash–Moser theory, quoted as standard. $\square$
+*Proof.* The weak form of the equation is exactly the vanishing of the first variation, so $u$ is a weak solution of a quasilinear elliptic equation; since $L$ is uniformly convex in the gradient, the linearised operator is uniformly elliptic with bounded measurable coefficients, and the difference-quotient argument of the preceding article applies. For the full regularity, including the case of non-smooth coefficients and the resolution of Hilbert's nineteenth problem, the argument is the De Giorgi–Nash–Moser theory, quoted as standard.
 
 ## Constrained Problems
 
@@ -190,13 +190,13 @@ $$
 
 so that $u$ is a stationary point of the unconstrained functional $J - \sum_j\lambda_jK_j$.
 
-*Proof.* Quoted as standard (the Lagrange multiplier rule in Banach space, the Lyusternik form). The surjectivity of the derivative of the constraint map $K=(K_1,\dots,K_m)$ onto $\mathbb{R}^m$ permits the implicit function theorem to write the constraint set as a graph over the kernel of $DK(u)$, reducing the problem to an unconstrained one on that kernel, and the abstract multiplier rule gives the coefficients. $\square$
+*Proof.* Quoted as standard (the Lagrange multiplier rule in Banach space, the Lyusternik form). The surjectivity of the derivative of the constraint map $K=(K_1,\dots,K_m)$ onto $\mathbb{R}^m$ permits the implicit function theorem to write the constraint set as a graph over the kernel of $DK(u)$, reducing the problem to an unconstrained one on that kernel, and the abstract multiplier rule gives the coefficients.
 
 **Example (the isoperimetric problem).** Among closed plane curves of fixed length $\ell$, find the one enclosing the greatest area. With the curves parametrised by arclength and $A$ and $\ell$ the area and length functionals, the multiplier rule applied to $A - \lambda\ell$ gives the Euler–Lagrange equation of a constant-curvature curve, whose only closed solution is the circle, with $\ell = 2\pi r$ and $A = \pi r^2$; the example is the prototype of a constrained variational problem and its solution is the circle. The computation is exact for the radial family and the circle is the unique smooth maximiser.
 
 **Theorem (variational problem with a holonomic constraint).** Let $J(u) = \int_a^bL(x,u,u')dx$ be stationary subject to the pointwise constraint $G(x,u(x))=0$ with $G$ of full rank. Then the Euler–Lagrange equation acquires a multiplier, $L_u - \frac{d}{dx}L_{u'} = \lambda\,G_u$, and the constrained problem is a differential-algebraic system of the type studied in the article of this category on differential-algebraic equations, with the multiplier $\lambda$ determined by the constraint and its derivatives.
 
-*Proof.* The constraint is imposed pointwise, so the admissible variations $v$ satisfy $G_uv=0$ at each point; the multiplier rule in its pointwise form gives $L_u - \frac{d}{dx}L_{u'} = \lambda G_u$ with $\lambda$ a functions of $x$, and the resulting system of the Euler–Lagrange equation together with $G=0$ is a differential-algebraic system whose index is computed as in that article. $\square$
+*Proof.* The constraint is imposed pointwise, so the admissible variations $v$ satisfy $G_uv=0$ at each point; the multiplier rule in its pointwise form gives $L_u - \frac{d}{dx}L_{u'} = \lambda G_u$ with $\lambda$ a functions of $x$, and the resulting system of the Euler–Lagrange equation together with $G=0$ is a differential-algebraic system whose index is computed as in that article.
 
 ## The Hamiltonian Reformulation
 
@@ -214,7 +214,7 @@ $$
 
 the **Hamiltonian system**, and along solutions $H$ is constant when $L$ does not depend explicitly on $x$.
 
-*Proof.* The envelope theorem gives $H_{p^*} = p$ and $H_u = -L_u$ at the stationary point of the supremum, so the Euler–Lagrange equation $(p^*)' = L_u = -H_u$ together with the definition $u' = p = H_{p^*}$. The constancy of $H$ for an autonomous $L$ is the computation $\frac{d}{dx}H = H_uu' + H_{p^*}(p^*)' = H_uH_{p^*} - H_{p^*}H_u = 0$. $\square$
+*Proof.* The envelope theorem gives $H_{p^*} = p$ and $H_u = -L_u$ at the stationary point of the supremum, so the Euler–Lagrange equation $(p^*)' = L_u = -H_u$ together with the definition $u' = p = H_{p^*}$. The constancy of $H$ for an autonomous $L$ is the computation $\frac{d}{dx}H = H_uu' + H_{p^*}(p^*)' = H_uH_{p^*} - H_{p^*}H_u = 0$.
 
 The Legendre transform converts the second-order Euler–Lagrange equation into a first-order system in twice as many variables, and the Hamiltonian system is the form in which the conservation laws and the geometry of the solution space are read. The development of the Hamiltonian formalism — symplectic structure, canonical transformations, Poisson brackets — belongs to the article of this Part on Lagrangian and Hamiltonian systems; the variational derivation given here is the input to it.
 
@@ -230,7 +230,7 @@ where $H$ is the Hamiltonian of the Legendre transform above and the conjugate m
 
 **Theorem (the action solves the Hamilton–Jacobi equation).** Fix an initial point $(x_0,u_0)$ and let $\mathcal{S}(x,u)$ be the value of the functional $J$ evaluated at the extremal joining $(x_0,u_0)$ to $(x,u)$, for $(x,u)$ near a point at which the extremals do not focus. Then $\mathcal{S}$ is differentiable and satisfies the Hamilton–Jacobi equation, and along an extremal $u(x)$ one has $\mathcal{S}_u(x,u(x)) = L_p(x,u(x),u'(x))$.
 
-*Proof.* The derivative of $\mathcal{S}$ with respect to the endpoint is the boundary term obtained by differentiating the integral along the extremal: $\mathcal{S}_x = L - u'L_p$ and $\mathcal{S}_u = L_p$. Substituting $p^* = L_p = \mathcal{S}_u$ into the identity $L - u'\mathcal{S}_u$ and using the definition of $H$ as the Legendre transform gives $\mathcal{S}_x = -H(x,u,\mathcal{S}_u)$. $\square$
+*Proof.* The derivative of $\mathcal{S}$ with respect to the endpoint is the boundary term obtained by differentiating the integral along the extremal: $\mathcal{S}_x = L - u'L_p$ and $\mathcal{S}_u = L_p$. Substituting $p^* = L_p = \mathcal{S}_u$ into the identity $L - u'\mathcal{S}_u$ and using the definition of $H$ as the Legendre transform gives $\mathcal{S}_x = -H(x,u,\mathcal{S}_u)$.
 
 **Theorem (Noether).** Let $G$ be a one-parameter group of transformations of the variables $(x,u)$ leaving the functional $J$ invariant, with infinitesimal generator $(\xi,\eta)$. Then the quantity
 
@@ -240,7 +240,7 @@ $$
 
 is constant along every solution of the Euler–Lagrange equation.
 
-*Proof.* Quoted as standard. The invariance of the integral under the group means that the derivative of $J$ with respect to the group parameter vanishes identically for every curve, not merely at an extremal; writing this derivative as an integral, integrating by parts and using the Euler–Lagrange equation leaves only the boundary term, which is the derivative of the displayed quantity. $\square$
+*Proof.* Quoted as standard. The invariance of the integral under the group means that the derivative of $J$ with respect to the group parameter vanishes identically for every curve, not merely at an extremal; writing this derivative as an integral, integrating by parts and using the Euler–Lagrange equation leaves only the boundary term, which is the derivative of the displayed quantity.
 
 **Example (translation invariance).** For $L$ independent of $x$ the group is the translation $x\mapsto x+\varepsilon$ with $\xi=1$, $\eta=0$, and Noether's quantity is $L-\sum_iu_i'L_{p_i}$, the Beltrami first integral. For $L$ independent of a component $u_i$ the group is the translation of that component with $\eta_i=1$, and the conserved quantity is the conjugate momentum $L_{p_i}$. The Beltrami identity of the first section is thus the translation case of Noether's theorem.
 

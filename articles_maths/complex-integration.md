@@ -69,7 +69,7 @@ $$
 S = \sum_k f(\gamma(\tau_k)) \gamma'(\tau_k) (t_k - t_{k-1}) + \sum_k f(\gamma(\tau_k)) \rho_k .
 $$
 
-The first sum is a Riemann sum for the continuous function $t \mapsto f(\gamma(t)) \gamma'(t)$ on $[a, b]$, so it converges to the displayed integral; the second is bounded in modulus by $\max_{\gamma^*}|f| \, \varepsilon(\|\Delta\|) (b-a) \to 0$. $\square$
+The first sum is a Riemann sum for the continuous function $t \mapsto f(\gamma(t)) \gamma'(t)$ on $[a, b]$, so it converges to the displayed integral; the second is bounded in modulus by $\max_{\gamma^*}|f| \, \varepsilon(\|\Delta\|) (b-a) \to 0$.
 
 ### Basic Properties
 
@@ -94,7 +94,7 @@ $$
 **Proof.** From the definition,
 
 $$
-\left| \int_a^b f(\gamma(t)) \gamma'(t) \, dt \right| \le \int_a^b |f(\gamma(t))| \, |\gamma'(t)| \, dt \le m \int_a^b |\gamma'(t)| \, dt = m L(\gamma). \qquad \square
+\left| \int_a^b f(\gamma(t)) \gamma'(t) \, dt \right| \le \int_a^b |f(\gamma(t))| \, |\gamma'(t)| \, dt \le m \int_a^b |\gamma'(t)| \, dt = m L(\gamma).
 $$
 
 **Real and imaginary parts.** Writing $f = u + iv$ and $dz = dx + i \, dy$ gives
@@ -115,7 +115,7 @@ $$
 \int_\gamma f(z) \, dz = F(z_2) - F(z_1).
 $$
 
-**Proof.** On each smooth piece the chain rule gives $\frac{d}{dt} F(\gamma(t)) = F'(\gamma(t)) \gamma'(t) = f(\gamma(t)) \gamma'(t)$. Integrating over the piece, applying the fundamental theorem of calculus of the real theory to the real and imaginary parts, and summing the pieces gives the stated formula. $\square$
+**Proof.** On each smooth piece the chain rule gives $\frac{d}{dt} F(\gamma(t)) = F'(\gamma(t)) \gamma'(t) = f(\gamma(t)) \gamma'(t)$. Integrating over the piece, applying the fundamental theorem of calculus of the real theory to the real and imaginary parts, and summing the pieces gives the stated formula.
 
 **Corollary.** If $f$ has a primitive on $U$, its integral along every closed path in $U$ vanishes.
 
@@ -155,13 +155,13 @@ $$
 h'(z) = \oint_\gamma \frac{dw}{(w - z)^2}.
 $$
 
-The integrand $(w-z)^{-2}$ has the primitive $-(w-z)^{-1}$ in the variable $w$ on $\mathbb{C} \setminus \{z\}$, so $h'(z) = 0$ and $h$ is locally constant. Put $\Phi(z) = \exp h(z)$; then $\Phi'(z) = h'(z) \Phi(z) = 0$, so $\Phi$ is constant, and as $|z| \to \infty$ the integrand tends to $0$ uniformly on the compact set $\gamma^*$, so $h(z) \to 0$ and $\Phi(z) \to 1$. Therefore $\Phi \equiv 1$, that is, $h(z) \in 2\pi i \mathbb{Z}$ for every $z$. A continuous function with values in a discrete set is locally constant, hence constant on each connected component, and on the unbounded component the limit at infinity forces the value $0$. $\square$
+The integrand $(w-z)^{-2}$ has the primitive $-(w-z)^{-1}$ in the variable $w$ on $\mathbb{C} \setminus \{z\}$, so $h'(z) = 0$ and $h$ is locally constant. Put $\Phi(z) = \exp h(z)$; then $\Phi'(z) = h'(z) \Phi(z) = 0$, so $\Phi$ is constant, and as $|z| \to \infty$ the integrand tends to $0$ uniformly on the compact set $\gamma^*$, so $h(z) \to 0$ and $\Phi(z) \to 1$. Therefore $\Phi \equiv 1$, that is, $h(z) \in 2\pi i \mathbb{Z}$ for every $z$. A continuous function with values in a discrete set is locally constant, hence constant on each connected component, and on the unbounded component the limit at infinity forces the value $0$.
 
 **Example.** For the positively oriented circle $\gamma(t) = z_0 + re^{it}$ one has $\operatorname{Ind}(\gamma, z_0) = 1$ and $\operatorname{Ind}(\gamma, z) = 0$ for $|z - z_0| > r$. For the same circle traversed $m$ times the index is $m$.
 
 **Theorem (homotopy invariance).** Let $\gamma_0, \gamma_1$ be closed piecewise $C^1$ paths in a domain $U$ and let $H : [0,1] \times [a,b] \to U$ be continuous with $H(s, \cdot)$ closed and piecewise $C^1$ for every $s$, $H(0, \cdot) = \gamma_0$ and $H(1, \cdot) = \gamma_1$. Then $\operatorname{Ind}(\gamma_0, z_0) = \operatorname{Ind}(\gamma_1, z_0)$ for every $z_0 \notin U$.
 
-**Proof.** For a closed path $\gamma$ avoiding $z_0$ one may write $\gamma(t) - z_0 = r(t) e^{i\Theta(t)}$ with $r > 0$ and $\Theta$ continuous on $[a, b]$, and the total change of the argument is $2\pi \operatorname{Ind}(\gamma, z_0)$. Since $z_0 \notin U$, the map $H - z_0$ takes values in $\mathbb{C}^\times$, and because the rectangle $[0,1] \times [a,b]$ is simply connected the argument admits a continuous lift $\tilde\Theta$ on the whole rectangle, with $H(s,t) - z_0 = \rho(s,t) e^{i \tilde\Theta(s,t)}$ and $\rho > 0$. Then $s \mapsto \tilde\Theta(s, b) - \tilde\Theta(s, a)$ is continuous and takes values in the discrete set $2\pi\mathbb{Z}$, hence is constant, and its value is $2\pi \operatorname{Ind}(H(s, \cdot), z_0)$. $\square$
+**Proof.** For a closed path $\gamma$ avoiding $z_0$ one may write $\gamma(t) - z_0 = r(t) e^{i\Theta(t)}$ with $r > 0$ and $\Theta$ continuous on $[a, b]$, and the total change of the argument is $2\pi \operatorname{Ind}(\gamma, z_0)$. Since $z_0 \notin U$, the map $H - z_0$ takes values in $\mathbb{C}^\times$, and because the rectangle $[0,1] \times [a,b]$ is simply connected the argument admits a continuous lift $\tilde\Theta$ on the whole rectangle, with $H(s,t) - z_0 = \rho(s,t) e^{i \tilde\Theta(s,t)}$ and $\rho > 0$. Then $s \mapsto \tilde\Theta(s, b) - \tilde\Theta(s, a)$ is continuous and takes values in the discrete set $2\pi\mathbb{Z}$, hence is constant, and its value is $2\pi \operatorname{Ind}(H(s, \cdot), z_0)$.
 
 The winding number therefore depends only on the homotopy class of the path in $U$, and it is the reason a closed path in a simply connected domain has winding number zero about every point outside the domain.
 
@@ -199,7 +199,7 @@ $$
 \left| \oint_{\partial T^{(n)}} f \right| \le \operatorname{diam} T^{(n)} \cdot \varepsilon_n \cdot L(\partial T^{(n)}) = 4^{-n} \, \varepsilon_n \operatorname{diam} T \, L(\partial T).
 $$
 
-Combining with $|I| \le 4^n \left| \oint_{\partial T^{(n)}} f \right|$ gives $|I| \le \varepsilon_n \operatorname{diam} T \, L(\partial T) \to 0$, so $I = 0$. $\square$
+Combining with $|I| \le 4^n \left| \oint_{\partial T^{(n)}} f \right|$ gives $|I| \le \varepsilon_n \operatorname{diam} T \, L(\partial T) \to 0$, so $I = 0$.
 
 **Remark.** The proof uses only that $f'$ exists, never that $f'$ is continuous. This is Goursat's contribution; the earlier formulations of the theorem assumed continuity of $f'$ and could then invoke Green's theorem. The triangle version suffices for everything that follows, because every closed polygon decomposes into finitely many triangles and every contour is a uniform limit of inscribed polygons.
 
@@ -227,13 +227,13 @@ $$
 \frac{F(z+h) - F(z)}{h} - f(z) = \int_0^1 \bigl( f(z + th) - f(z) \bigr) \, dt \longrightarrow 0
 $$
 
-by continuity of $f$ at $z$. Hence $F'(z) = f(z)$. $\square$
+by continuity of $f$ at $z$. Hence $F'(z) = f(z)$.
 
 **Corollary (path independence).** On a domain on which a holomorphic function has a primitive, its integral depends only on the endpoints. In particular this holds on every star-shaped domain, hence on every disk.
 
 **Theorem (Morera).** If $f$ is continuous on a domain $U$ and $\oint_{\partial T} f \, dz = 0$ for every triangle $T \subseteq U$, then $f$ is holomorphic on $U$.
 
-**Proof.** The preceding theorem supplies a primitive $F$ with $F' = f$. A holomorphic function is infinitely differentiable, as follows from the Cauchy integral formula below, so $f = F'$ is holomorphic. $\square$
+**Proof.** The preceding theorem supplies a primitive $F$ with $F' = f$. A holomorphic function is infinitely differentiable, as follows from the Cauchy integral formula below, so $f = F'$ is holomorphic.
 
 Morera is the converse of the Cauchy–Goursat theorem and is the standard tool for proving holomorphy from an integral condition.
 
@@ -268,7 +268,7 @@ $$
 The function $g$ is holomorphic on $U$: away from $z$ it is a quotient of holomorphic functions with non-vanishing denominator, and at $z$ it extends holomorphically with value $f'(z)$, since $f(w) = f(z) + f'(z)(w - z) + o(|w - z|)$. Since $g$ is holomorphic on $U$ and $\gamma$ is homologous to zero in $U$, the homological Cauchy theorem gives $\oint_\gamma g(w) \, dw = 0$, that is,
 
 $$
-\oint_\gamma \frac{f(w)}{w - z} \, dw = f(z) \oint_\gamma \frac{dw}{w - z} = f(z) \cdot 2\pi i \operatorname{Ind}(\gamma, z). \qquad \square
+\oint_\gamma \frac{f(w)}{w - z} \, dw = f(z) \oint_\gamma \frac{dw}{w - z} = f(z) \cdot 2\pi i \operatorname{Ind}(\gamma, z).
 $$
 
 **Corollary.** If $\gamma$ winds once about $z$, then
@@ -291,7 +291,7 @@ $$
 f^{(n)}(z) \operatorname{Ind}(\gamma, z) = \frac{n!}{2\pi i} \oint_\gamma \frac{f(w)}{(w - z)^{n+1}} \, dw .
 $$
 
-**Proof.** For $z$ ranging over a small disk whose closure misses $\gamma^*$, the difference quotients of the kernel converge uniformly on $\gamma^*$, so differentiation under the integral sign is legitimate and gives the formula for $n = 1$; induction gives the general case. $\square$
+**Proof.** For $z$ ranging over a small disk whose closure misses $\gamma^*$, the difference quotients of the kernel converge uniformly on $\gamma^*$, so differentiation under the integral sign is legitimate and gives the formula for $n = 1$; induction gives the general case.
 
 **Corollary (Cauchy estimates).** If $f$ is holomorphic on a neighbourhood of $\overline{B}(z_0, r)$ and $|f| \le M$ on $C(z_0, r)$, then
 
@@ -299,15 +299,15 @@ $$
 \left| f^{(n)}(z_0) \right| \le \frac{n! \, m}{r^n} \qquad (n \ge 0).
 $$
 
-**Proof.** Apply the derivative formula on the circle of radius $r$, where $|w - z_0| = r$ and the estimation property gives $|f^{(n)}(z_0)| \le \frac{n!}{2\pi} \cdot \frac{m}{r^{n+1}} \cdot 2\pi r$. $\square$
+**Proof.** Apply the derivative formula on the circle of radius $r$, where $|w - z_0| = r$ and the estimation property gives $|f^{(n)}(z_0)| \le \frac{n!}{2\pi} \cdot \frac{m}{r^{n+1}} \cdot 2\pi r$.
 
 **Theorem (Liouville).** Every bounded holomorphic function $f : \mathbb{C} \to \mathbb{C}$ is constant.
 
-**Proof.** Let $|f| \le m$ on $\mathbb{C}$. Applying the Cauchy estimate for $n = 1$ about an arbitrary $z_0$ on the circle of radius $r$ gives $|f'(z_0)| \le M/r$ for every $r > 0$, hence $f'(z_0) = 0$. Since $z_0$ is arbitrary, $f' \equiv 0$ and $f$ is constant. $\square$
+**Proof.** Let $|f| \le m$ on $\mathbb{C}$. Applying the Cauchy estimate for $n = 1$ about an arbitrary $z_0$ on the circle of radius $r$ gives $|f'(z_0)| \le M/r$ for every $r > 0$, hence $f'(z_0) = 0$. Since $z_0$ is arbitrary, $f' \equiv 0$ and $f$ is constant.
 
 **Corollary (fundamental theorem of algebra).** Every non-constant polynomial with complex coefficients has a root in $\mathbb{C}$.
 
-**Proof.** If $p$ had no root, then $1/p$ would be holomorphic on all of $\mathbb{C}$ and bounded, since $|p(z)| \to \infty$ as $|z| \to \infty$; by Liouville $1/p$ would be constant, hence $p$ constant, a contradiction. $\square$
+**Proof.** If $p$ had no root, then $1/p$ would be holomorphic on all of $\mathbb{C}$ and bounded, since $|p(z)| \to \infty$ as $|z| \to \infty$; by Liouville $1/p$ would be constant, hence $p$ constant, a contradiction.
 
 **Theorem (mean value property).** If $f$ is holomorphic on a neighbourhood of $\overline{B}(z_0, r)$, then
 
@@ -315,11 +315,11 @@ $$
 f(z_0) = \frac{1}{2\pi} \int_0^{2\pi} f(z_0 + re^{i\theta}) \, d\theta .
 $$
 
-**Proof.** In the Cauchy integral formula on $C(z_0, r)$, parametrise $w = z_0 + re^{i\theta}$, so $dw = ire^{i\theta} d\theta$ and $w - z_0 = re^{i\theta}$; the factors cancel and the formula becomes the displayed average. $\square$
+**Proof.** In the Cauchy integral formula on $C(z_0, r)$, parametrise $w = z_0 + re^{i\theta}$, so $dw = ire^{i\theta} d\theta$ and $w - z_0 = re^{i\theta}$; the factors cancel and the formula becomes the displayed average.
 
 **Theorem (maximum modulus).** If $f$ is holomorphic on a domain $U$ and $|f|$ attains a maximum at a point of $U$, then $f$ is constant on $U$.
 
-**Proof.** Suppose $|f(z_0)| \ge |f(z)|$ for all $z \in U$. The mean value property gives $|f(z_0)| \le \max_{|w - z_0| = r} |f(w)| \le |f(z_0)|$ for every small $r$, so equality holds throughout each circle and $|f|$ is constant near $z_0$. A holomorphic function of constant modulus on a disk is constant, and by the identity theorem $f$ is then constant on $U$. $\square$
+**Proof.** Suppose $|f(z_0)| \ge |f(z)|$ for all $z \in U$. The mean value property gives $|f(z_0)| \le \max_{|w - z_0| = r} |f(w)| \le |f(z_0)|$ for every small $r$, so equality holds throughout each circle and $|f|$ is constant near $z_0$. A holomorphic function of constant modulus on a disk is constant, and by the identity theorem $f$ is then constant on $U$.
 
 ## The Residue Theorem
 
@@ -337,7 +337,7 @@ $$
 \operatorname{Res}(f, z_0) = \frac{1}{2\pi i} \oint_C f(z) \, dz .
 $$
 
-**Proof of the equivalence.** The Laurent series converges uniformly on $C$, so it may be integrated term by term; every term with $n \neq -1$ has a primitive and integrates to $0$ over the closed circle, while $\oint_C (z - z_0)^{-1} dz = 2\pi i$. Hence the integral is $2\pi i c_{-1}$. $\square$
+**Proof of the equivalence.** The Laurent series converges uniformly on $C$, so it may be integrated term by term; every term with $n \neq -1$ has a primitive and integrates to $0$ over the closed circle, while $\oint_C (z - z_0)^{-1} dz = 2\pi i$. Hence the integral is $2\pi i c_{-1}$.
 
 The residue is therefore computable from the integral and, conversely, is the single Laurent coefficient that the closed integral sees.
 
@@ -347,7 +347,7 @@ $$
 \operatorname{Res}(f, z_0) = \frac{g(z_0)}{h'(z_0)} .
 $$
 
-**Proof.** Write $h(z) = h'(z_0)(z - z_0) + O((z - z_0)^2)$; then $f(z) = \frac{g(z_0)}{h'(z_0)} (z - z_0)^{-1} + O(1)$, and the coefficient of $(z - z_0)^{-1}$ is the residue. $\square$
+**Proof.** Write $h(z) = h'(z_0)(z - z_0) + O((z - z_0)^2)$; then $f(z) = \frac{g(z_0)}{h'(z_0)} (z - z_0)^{-1} + O(1)$, and the coefficient of $(z - z_0)^{-1}$ is the residue.
 
 **Proposition (pole of order $m$).** If $f$ has a pole of order $m \ge 1$ at $z_0$, then
 
@@ -355,7 +355,7 @@ $$
 \operatorname{Res}(f, z_0) = \frac{1}{(m-1)!} \lim_{z \to z_0} \frac{d^{m-1}}{dz^{m-1}} \left[ (z - z_0)^m f(z) \right].
 $$
 
-**Proof.** The function $\varphi(z) = (z - z_0)^m f(z)$ is holomorphic and non-zero at $z_0$, so near $z_0$ it equals its Taylor series $\sum_{j \ge 0} \varphi^{(j)}(z_0)(z-z_0)^j / j!$; dividing by $(z-z_0)^m$, the coefficient of $(z-z_0)^{-1}$ is $\varphi^{(m-1)}(z_0)/(m-1)!$. $\square$
+**Proof.** The function $\varphi(z) = (z - z_0)^m f(z)$ is holomorphic and non-zero at $z_0$, so near $z_0$ it equals its Taylor series $\sum_{j \ge 0} \varphi^{(j)}(z_0)(z-z_0)^j / j!$; dividing by $(z-z_0)^m$, the coefficient of $(z-z_0)^{-1}$ is $\varphi^{(m-1)}(z_0)/(m-1)!$.
 
 **Proposition (residue at infinity).** If $f$ is holomorphic outside a bounded set, then for all sufficiently large $R$,
 
@@ -369,7 +369,7 @@ $$
 \sum_{p \in \widehat{\mathbb{C}}} \operatorname{Res}(f, p) = 0 .
 $$
 
-**Proof.** Put $z = 1/w$; then $dz = -w^{-2} dw$ and the positively oriented circle $|z| = R$ becomes the negatively oriented circle $|w| = 1/R$, so the two residues differ by the sign of the orientation and by the factor $w^{-2}$. Applying the residue theorem to the exterior region bounded by a large circle gives the vanishing of the total sum. $\square$
+**Proof.** Put $z = 1/w$; then $dz = -w^{-2} dw$ and the positively oriented circle $|z| = R$ becomes the negatively oriented circle $|w| = 1/R$, so the two residues differ by the sign of the orientation and by the factor $w^{-2}$. Applying the residue theorem to the exterior region bounded by a large circle gives the vanishing of the total sum.
 
 **Example.** For $f(z) = 1/z$ one has $\operatorname{Res}(f, 0) = 1$ and $\operatorname{Res}(f, \infty) = -1$; the sum is $0$. For $f(z) = 1/(z^2+1)$ the residues at $i$ and $-i$ are $\pm \frac{1}{2i}$ and cancel, consistent with the vanishing residue at infinity of a function decaying like $z^{-2}$.
 
@@ -392,7 +392,7 @@ $$
 has winding number zero about every point of $\mathbb{C} \setminus U$ and about every singularity $z_k$; for suitable $\rho_k$ it is homologous to zero in $U \setminus \{z_1, \dots, z_n\}$, on which $f$ is holomorphic. The homological Cauchy theorem gives $\oint_\Gamma f \, dz = 0$, that is,
 
 $$
-\oint_\gamma f(z) \, dz = \sum_k \operatorname{Ind}(\gamma, z_k) \oint_{\gamma_k} f(z) \, dz = 2\pi i \sum_k \operatorname{Ind}(\gamma, z_k) \operatorname{Res}(f, z_k). \qquad \square
+\oint_\gamma f(z) \, dz = \sum_k \operatorname{Ind}(\gamma, z_k) \oint_{\gamma_k} f(z) \, dz = 2\pi i \sum_k \operatorname{Ind}(\gamma, z_k) \operatorname{Res}(f, z_k).
 $$
 
 **Corollary.** If $\gamma$ is a positively oriented contour that winds once about each of $z_1, \dots, z_n$ and about no other point, then
@@ -415,7 +415,7 @@ $$
 \frac{f'(z)}{f(z)} = \frac{\mu}{z - z_0} + \frac{\phi'(z)}{\phi(z)} ,
 $$
 
-and the second term is holomorphic at $z_0$; hence $f'/f$ has a simple pole at $z_0$ with residue $\mu$. Near a pole of order $\nu$, writing $f(z) = (z - z_0)^{-\nu} \psi(z)$ with $\psi(z_0) \neq 0$ gives $f'/f = -\nu/(z-z_0) + \psi'/\psi$, so the residue there is $-\nu$. The residue theorem applied to $f'/f$ gives the stated sum. $\square$
+and the second term is holomorphic at $z_0$; hence $f'/f$ has a simple pole at $z_0$ with residue $\mu$. Near a pole of order $\nu$, writing $f(z) = (z - z_0)^{-\nu} \psi(z)$ with $\psi(z_0) \neq 0$ gives $f'/f = -\nu/(z-z_0) + \psi'/\psi$, so the residue there is $-\nu$. The residue theorem applied to $f'/f$ gives the stated sum.
 
 **Corollary.** If in addition $\gamma$ winds once about each zero and pole and about nothing else, the right-hand side is the number of zeros minus the number of poles, counted with multiplicity. Equivalently, it is the winding number of the closed curve $f \circ \gamma$ about the origin:
 
@@ -431,11 +431,11 @@ $$
 N(t) = \frac{1}{2\pi i} \oint_\gamma \frac{f_t'(z)}{f_t(z)} \, dz
 $$
 
-is the number of zeros of $f_t$ inside $\gamma$ by the argument principle, and it depends continuously on $t$, since the integrand is continuous in $t$ and $\gamma^*$ is compact. Being integer-valued and continuous, $N$ is constant, so $N(0) = N(1)$. $\square$
+is the number of zeros of $f_t$ inside $\gamma$ by the argument principle, and it depends continuously on $t$, since the integrand is continuous in $t$ and $\gamma^*$ is compact. Being integer-valued and continuous, $N$ is constant, so $N(0) = N(1)$.
 
 **Corollary (fundamental theorem of algebra).** A polynomial $p(z) = a_n z^n + \cdots + a_0$ of degree $n \ge 1$ has exactly $n$ roots in $\mathbb{C}$, counted with multiplicity.
 
-**Proof.** On a circle $|z| = R$ of large radius and $f(z) = a_n z^n$, $g(z) = a_{n-1}z^{n-1} + \cdots + a_0$, one has $|g| < |f|$ once $R$ exceeds $\max(1, |a_{n-1}| + \cdots + |a_0|)/|a_n|$. By Rouché, $p$ has as many zeros inside the circle as $a_n z^n$, namely $n$. $\square$
+**Proof.** On a circle $|z| = R$ of large radius and $f(z) = a_n z^n$, $g(z) = a_{n-1}z^{n-1} + \cdots + a_0$, one has $|g| < |f|$ once $R$ exceeds $\max(1, |a_{n-1}| + \cdots + |a_0|)/|a_n|$. By Rouché, $p$ has as many zeros inside the circle as $a_n z^n$, namely $n$.
 
 ### Evaluation of Definite Integrals
 
@@ -487,7 +487,7 @@ Complex integration gives the cleanest construction of analytic continuation, be
 
 **Theorem (monodromy).** Let $U$ be a simply connected domain, let $\gamma_0, \gamma_1$ be paths in $U$ from $z_0$ to $z_1$ that are homotopic relative to their endpoints, and let a function element at $z_0$ continue along both. Then the two continuations agree on a neighbourhood of $z_1$, and the continuation along every path in $U$ defines a single-valued holomorphic function on $U$.
 
-**Sketch.** The continuation along a homotopy is locally constant in the homotopy parameter, because of the uniqueness of continuation on a disk; being constant on a connected parameter interval, it takes the same value at the two ends. Single-valuedness on all of $U$ follows since $U$ is simply connected, so all paths from $z_0$ are homotopic. $\square$
+**Sketch.** The continuation along a homotopy is locally constant in the homotopy parameter, because of the uniqueness of continuation on a disk; being constant on a connected parameter interval, it takes the same value at the two ends. Single-valuedness on all of $U$ follows since $U$ is simply connected, so all paths from $z_0$ are homotopic.
 
 **Example (the logarithm).** On the disk $D_0 = B(1, 1)$ the principal branch $f_0(z) = \int_1^z \frac{dw}{w}$ is holomorphic, because the disk omits the origin and $1/w$ has a primitive there. Continuing $f_0$ once around the circle $|z| = 1$ in the positive direction and back to a point just past the start returns $f_0(z) + 2\pi i$, since the increment equals $\oint_{|z|=1} dw/w = 2\pi i$. The continuation is therefore not single-valued on $\mathbb{C}^\times$, the discrepancy is exactly the winding number times $2\pi i$, and the domain of definition is the Riemann surface of the logarithm: an infinite-sheeted covering of $\mathbb{C}^\times$. The obstruction is measured by the fundamental group $\pi_1(\mathbb{C}^\times) \cong \mathbb{Z}$, whose generator acts on the germ by the **monodromy** $2\pi i$.
 

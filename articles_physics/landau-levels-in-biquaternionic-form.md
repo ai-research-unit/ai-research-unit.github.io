@@ -170,7 +170,7 @@ $$
 
 whose right-hand side is a central **area**: the flux count of the fifth section is the statement that this area is the phase-space cell of one state. The two algebras are the same central oscillator algebra; the first is the energy, the second is the degeneracy.
 
-In the biquaternion reading $\hat L_z$ and the guiding-centre operators are central Hermitian, and both commute with the module. The algebra has thus two commuting $\mathfrak{u}(1)$'s worth of central ladder structure — the energy ladder and the degeneracy ladder — and the state module is invariant under both. The symmetric-gauge eigenstates are the angular-momentum eigenstates $L_z=m\hbar$ within a Landau level, with $m$ bounded below by $-n$; the two gauges are related by a gauge transformation and give the same spectrum and degeneracy.
+In the biquaternion reading $\hat L_z$ and the guiding-centre operators are central Hermitian, and both commute with the module. The algebra has thus two commuting $\mathrm{U}(1)$'s worth of central ladder structure — the energy ladder and the degeneracy ladder — and the state module is invariant under both. The symmetric-gauge eigenstates are the angular-momentum eigenstates $L_z=m\hbar$ within a Landau level, with $m$ bounded below by $-n$; the two gauges are related by a gauge transformation and give the same spectrum and degeneracy.
 
 The lowest Landau level is especially transparent in this gauge. Writing $z=x+iy$, the states
 

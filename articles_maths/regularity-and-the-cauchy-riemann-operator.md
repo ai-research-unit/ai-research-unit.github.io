@@ -51,7 +51,7 @@ $$
 \Bigl(\xi_0 + \sum_k B_k\xi_k\Bigr)\Bigl(\xi_0 - \sum_j B_j\xi_j\Bigr) = \xi_0^2 - \sum_{j,k}B_jB_k\xi_j\xi_k = \xi_0^2 + \sum_k\xi_k^2 = |\xi|^2,
 $$
 
-using $B_k^2 = -1$ and $B_jB_k = -B_kB_j$; the two factors commute because $\xi_0$ is a real scalar and $B_k\xi_0 = \xi_0 B_k$. The same computation in the other order gives the same result. Since $|\xi|^2$ is a nonzero real number, it is a unit of $A$, and the displayed expression is the inverse. $\square$
+using $B_k^2 = -1$ and $B_jB_k = -B_kB_j$; the two factors commute because $\xi_0$ is a real scalar and $B_k\xi_0 = \xi_0 B_k$. The same computation in the other order gives the same result. Since $|\xi|^2$ is a nonzero real number, it is a unit of $A$, and the displayed expression is the inverse.
 
 **Corollary.** The symbol $\sigma_D$ is invertible for every nonzero covector, so $D$ is a first-order elliptic operator with constant coefficients on $\mathbb{R}^m$; in particular the Laplace-type operators $D\bar D$ and $\bar D D$ are the Laplacian.
 
@@ -101,7 +101,7 @@ $$
 (\rho \circ f)\bar D = \sum_\alpha \partial_\alpha(\rho\circ f)\,\rho(B_\alpha) = \sum_\alpha \rho(\partial_\alpha f)\,\rho(B_\alpha) = \rho\Bigl(\sum_\alpha B_\alpha \partial_\alpha f\Bigr) = \rho(Df),
 $$
 
-using the anti-automorphism property $\rho(u)\rho(v) = \rho(vu)$ with $u = \partial_\alpha f$ and $v = B_\alpha$, and linearity for the sum. This vanishes if and only if $Df$ does. $\square$
+using the anti-automorphism property $\rho(u)\rho(v) = \rho(vu)$ with $u = \partial_\alpha f$ and $v = B_\alpha$, and linearity for the sum. This vanishes if and only if $Df$ does.
 
 With $\rho$ the principal conjugation of a Clifford-type system, $\rho(B_k) = -B_k$ for $k \geq 1$ and $\rho(1) = 1$, so $\bar D = \partial_0 - \sum_k B_k\partial_k$ is the conjugate operator of *Hypercomplex Analysis*, and the theorem says that conjugation converts left regularity into right regularity. When $A$ is commutative, left and right regularity coincide, and the distinction disappears.
 
@@ -111,15 +111,15 @@ With $\rho$ the principal conjugation of a Clifford-type system, $\rho(B_k) = -B
 
 **Theorem (Weyl lemma).** Let $f$ be locally integrable on an open set $\Omega$ and suppose $Df = 0$ in the sense of distributions. Then $f$ agrees almost everywhere with a smooth, indeed real-analytic, left regular function on $\Omega$.
 
-*Proof.* The operator $D$ is elliptic with constant coefficients by the symbol computation, and elliptic regularity gives that any distributional solution is smooth; analytic hypoellipticity of elliptic operators upgrades this to real-analyticity. The equation then holds classically. $\square$
+*Proof.* The operator $D$ is elliptic with constant coefficients by the symbol computation, and elliptic regularity gives that any distributional solution is smooth; analytic hypoellipticity of elliptic operators upgrades this to real-analyticity. The equation then holds classically.
 
 **Corollary (unique continuation and identity theorem).** If a left regular function vanishes on an open subset of a connected domain $\Omega$, it vanishes on all of $\Omega$; more generally, two left regular functions that agree on a set with an accumulation point in $\Omega$ agree on $\Omega$.
 
-*Proof.* Smoothness and real-analyticity from the Weyl lemma, applied on a connected domain. $\square$
+*Proof.* Smoothness and real-analyticity from the Weyl lemma, applied on a connected domain.
 
 **Proposition (the kernel of $D$ and of $\Delta$).** Every left regular function is harmonic: $\ker D \subseteq \ker\Delta$, componentwise. Consequently the components of a regular function satisfy the classical maximum principle, mean value property and Liouville theorem for harmonic functions.
 
-*Proof.* If $Df = 0$ then $\Delta f = \bar D D f = 0$ by the factorisation. $\square$
+*Proof.* If $Df = 0$ then $\Delta f = \bar D D f = 0$ by the factorisation.
 
 **Proposition (the kernel is infinite-dimensional).** Let $m = \dim_\mathbb{R} A$. If $m \geq 2$, then on every nonempty open set $\Omega \subseteq A$ the space of left regular functions is infinite-dimensional. If $m = 1$, so that $A = \mathbb{R}$ and $D = d/dx$, the left regular functions are exactly the constants.
 
@@ -135,7 +135,7 @@ $$
 D(z^na) = nz^{n-1}a + B_1\,nz^{n-1}B_1a = nz^{n-1}\bigl(1+B_1^2\bigr)a = 0,
 $$
 
-using $\partial_0 z^n = nz^{n-1}$, $\partial_1z^n = nz^{n-1}B_1$ and the centrality of $B_1$ in $C$. The functions $z^na$, $n \geq 0$, are linearly independent for $a \neq 0$, because their Taylor expansions at the origin have distinct lowest-degree terms; restricting them to a ball about the origin, and then to a ball about any other point by translating the variable, gives an infinite linearly independent family of left regular functions on every nonempty open $\Omega$. $\square$
+using $\partial_0 z^n = nz^{n-1}$, $\partial_1z^n = nz^{n-1}B_1$ and the centrality of $B_1$ in $C$. The functions $z^na$, $n \geq 0$, are linearly independent for $a \neq 0$, because their Taylor expansions at the origin have distinct lowest-degree terms; restricting them to a ball about the origin, and then to a ball about any other point by translating the variable, gives an infinite linearly independent family of left regular functions on every nonempty open $\Omega$.
 
 **Remark (plane waves).** The infinite dimensionality is also visible through plane waves, the standard mechanism for a constant-coefficient operator whose symbol is not injective over $\mathbb{C}$. Complexify the coefficients: for $\zeta \in \mathbb{C}^m$ the symbol element $\sigma(\zeta) = \sum_\alpha B_\alpha\zeta_\alpha$ and its conjugate $\tilde\sigma(\zeta) = \zeta_0 - \sum_kB_k\zeta_k$ satisfy
 
@@ -187,7 +187,7 @@ $$
 \Delta(|x|^2Q) = (\Delta|x|^2)Q + 2\sum_j x_j\,\partial_jQ + |x|^2\Delta Q = 2mQ + 4(k-2)Q + |x|^2\Delta Q,
 $$
 
-using $\Delta|x|^2 = 2m$ and Euler's identity $\sum_j x_j\partial_jQ = (k-2)Q$. Write $T = \lambda\,\mathrm{id} + |x|^2\Delta$ with $\lambda = 2m + 4(k-2) > 0$. Since $\Delta$ lowers degree by two, the operator $|x|^2\Delta$ satisfies $(|x|^2\Delta)^r = |x|^{2r}\Delta^r$, which is zero as soon as $2r > k-2$; hence $|x|^2\Delta$ is nilpotent on $\mathcal{P}_{k-2}$ and $T$ is invertible, with inverse a finite geometric series in $|x|^2\Delta$. For any $R \in \mathcal{P}_{k-2}$ the element $P = |x|^2T^{-1}R$ therefore satisfies $\Delta P = T T^{-1}R = R$, so $\Delta$ is surjective. Moreover $|x|^2Q \in \mathcal{H}_k$ forces $TQ = 0$, hence $Q = 0$, so the image meets $\mathcal{H}_k$ trivially. $\square$
+using $\Delta|x|^2 = 2m$ and Euler's identity $\sum_j x_j\partial_jQ = (k-2)Q$. Write $T = \lambda\,\mathrm{id} + |x|^2\Delta$ with $\lambda = 2m + 4(k-2) > 0$. Since $\Delta$ lowers degree by two, the operator $|x|^2\Delta$ satisfies $(|x|^2\Delta)^r = |x|^{2r}\Delta^r$, which is zero as soon as $2r > k-2$; hence $|x|^2\Delta$ is nilpotent on $\mathcal{P}_{k-2}$ and $T$ is invertible, with inverse a finite geometric series in $|x|^2\Delta$. For any $R \in \mathcal{P}_{k-2}$ the element $P = |x|^2T^{-1}R$ therefore satisfies $\Delta P = T T^{-1}R = R$, so $\Delta$ is surjective. Moreover $|x|^2Q \in \mathcal{H}_k$ forces $TQ = 0$, hence $Q = 0$, so the image meets $\mathcal{H}_k$ trivially.
 
 **Theorem (Fischer decomposition; the Stokes decomposition).** For every $k \geq 0$,
 
@@ -197,7 +197,7 @@ $$
 
 and the expansion $P = \sum_j |x|^{2j}h_j$ with $h_j \in \mathcal{H}_{k-2j}$ is unique. In particular every $A$-valued polynomial on $A$ has a unique expansion as a sum of harmonic layers in the radial direction.
 
-*Proof.* By the lemma, $\Delta : \mathcal{P}_k \to \mathcal{P}_{k-2}$ is surjective with kernel $\mathcal{H}_k$, so $\dim\mathcal{H}_k = \dim\mathcal{P}_k - \dim\mathcal{P}_{k-2}$; the image $|x|^2\mathcal{P}_{k-2}$ has dimension $\dim\mathcal{P}_{k-2}$ and meets $\mathcal{H}_k$ trivially, so the two summands are complementary and $\mathcal{P}_k = \mathcal{H}_k \oplus |x|^2\mathcal{P}_{k-2}$. Applying the same statement to $\mathcal{P}_{k-2}, \mathcal{P}_{k-4}, \dots$ gives the iterated form. $\square$
+*Proof.* By the lemma, $\Delta : \mathcal{P}_k \to \mathcal{P}_{k-2}$ is surjective with kernel $\mathcal{H}_k$, so $\dim\mathcal{H}_k = \dim\mathcal{P}_k - \dim\mathcal{P}_{k-2}$; the image $|x|^2\mathcal{P}_{k-2}$ has dimension $\dim\mathcal{P}_{k-2}$ and meets $\mathcal{H}_k$ trivially, so the two summands are complementary and $\mathcal{P}_k = \mathcal{H}_k \oplus |x|^2\mathcal{P}_{k-2}$. Applying the same statement to $\mathcal{P}_{k-2}, \mathcal{P}_{k-4}, \dots$ gives the iterated form.
 
 This is the classical decomposition of a homogeneous polynomial into harmonic layers, found by Stokes for the sphere and rediscovered by Fischer in the algebraic setting; it is the statement that the harmonic polynomials of all degrees, multiplied by the radial factors $|x|^{2j}$, exhaust the polynomials, and it reduces the theory of spherical harmonics to the linear algebra of the spaces $\mathcal{H}_k$.
 
@@ -239,7 +239,7 @@ $$
 \int_{\partial\Omega} \sum_\alpha \nu_\alpha B_\alpha f\, dS = \int_\Omega \sum_\alpha \partial_\alpha(B_\alpha f)\, dy = \int_\Omega Df\, dy = 0,
 $$
 
-using the divergence form of $D$ and $\partial_\alpha(B_\alpha f) = B_\alpha \partial_\alpha f$ because $B_\alpha$ is constant. $\square$
+using the divergence form of $D$ and $\partial_\alpha(B_\alpha f) = B_\alpha \partial_\alpha f$ because $B_\alpha$ is constant.
 
 **Theorem (a fundamental solution from the Laplacian).** Let $\Phi$ be a fundamental solution of the Laplacian on $\mathbb{R}^m$, so that $\Delta \Phi = \delta_0$ in the sense of distributions. Then
 
@@ -249,7 +249,7 @@ $$
 
 satisfies $D E = \delta_0$; thus $E$ is a fundamental solution of $D$, and $E(x - y)$ is a Cauchy kernel.
 
-*Proof.* Since $D\bar D = \Delta$ and the coefficients are constant, $D E = D\bar D \Phi = \Delta \Phi = \delta_0$, the operators acting on distributions by differentiation. $\square$
+*Proof.* Since $D\bar D = \Delta$ and the coefficients are constant, $D E = D\bar D \Phi = \Delta \Phi = \delta_0$, the operators acting on distributions by differentiation.
 
 **Theorem (Cauchy–Pompeiu, derived from the divergence theorem).** Let $E$ be a fundamental solution of $D$ as above and let $\Omega \subseteq A$ be a bounded domain with smooth boundary. Then for $f$ of class $C^1$ on $\bar\Omega$ and $x \in \Omega$,
 
@@ -265,7 +265,7 @@ $$
 \sum_\alpha \partial_\alpha\bigl(B_\alpha E(x-y)f(y)\bigr) = \bigl(D_y E(x-y)\bigr) f(y) + \sum_\alpha B_\alpha E(x-y)\,\partial_\alpha f(y),
 $$
 
-and $D_y E(x-y) = -(DE)(x-y) = -\delta_x(y)$ by translation invariance and the evenness of $\delta_0$. Integrating, letting $\epsilon \to 0$ and using that the small sphere around $x$ contributes $f(x)$ in the limit gives the stated formula. $\square$
+and $D_y E(x-y) = -(DE)(x-y) = -\delta_x(y)$ by translation invariance and the evenness of $\delta_0$. Integrating, letting $\epsilon \to 0$ and using that the small sphere around $x$ contributes $f(x)$ in the limit gives the stated formula.
 
 **Corollary (Cauchy integral formula).** For a left regular $f$ the volume term vanishes and the representation becomes purely a boundary integral,
 
@@ -281,11 +281,11 @@ which is the general form of the Cauchy integral formula stated in *Hypercomplex
 
 **Proposition (equivalence of operators).** Let $u \in A^\times$ be a constant unit and let $D' = uD$, that is, $D'f = u\,(Df)$. Then $f$ is $D'$-regular if and only if $f$ is $D$-regular. More generally, if $D' = D + $ (a zeroth-order term) then the regular functions need not coincide, and the zeroth-order term changes the class.
 
-*Proof.* If $u$ is a unit then $u(Df) = 0$ if and only if $Df = 0$. The second statement is immediate from an example: adding a constant multiple of the identity changes $Df = 0$ into a first-order system with a potential term. $\square$
+*Proof.* If $u$ is a unit then $u(Df) = 0$ if and only if $Df = 0$. The second statement is immediate from an example: adding a constant multiple of the identity changes $Df = 0$ into a first-order system with a potential term.
 
 **Proposition (characterisation of the operator by its kernel, locally).** Two first-order operators with the same leading-order symbol and the same kernel on a connected domain differ by a zeroth-order term whose action on the kernel vanishes. In particular a constant-coefficient operator is determined by its leading symbol up to a zeroth-order perturbation, and among operators with the same symbol, the elliptic ones all have kernels containing the constants.
 
-*Proof.* If $D$ and $D'$ have the same leading symbol then $D' - D$ is a zeroth-order operator, that is, multiplication by a constant $c \in A$ (in the constant-coefficient case); $D'f = 0$ and $Df = 0$ coincide on the common kernel exactly when $cf = 0$ there. The last statement follows from $D(1) = 0$ for an operator with $B_0 = 1$. $\square$
+*Proof.* If $D$ and $D'$ have the same leading symbol then $D' - D$ is a zeroth-order operator, that is, multiplication by a constant $c \in A$ (in the constant-coefficient case); $D'f = 0$ and $Df = 0$ coincide on the common kernel exactly when $cf = 0$ there. The last statement follows from $D(1) = 0$ for an operator with $B_0 = 1$.
 
 **Definition.** Two hypercomplex systems $(A,D)$ and $(A',D')$ are **equivalent** if there is an algebra isomorphism $\phi : A \to A'$ carrying the coefficients of $D$ to those of $D'$, $\phi(B_\alpha) = B'_\alpha$. Equivalent systems have isomorphic spaces of regular functions, by the proposition on the action of the automorphism group in *Hypercomplex Analysis*.
 

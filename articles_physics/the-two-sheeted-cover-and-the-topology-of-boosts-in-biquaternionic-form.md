@@ -32,9 +32,9 @@ The **boosts**, by contrast, are topologically trivial. The pure boosts form a t
 
 The article develops three threads. The first is the manifold structure of the covering group and its contraction onto $SU(2)$. The second is the covering itself, the $2\pi$ loop and the belt picture. The third is the topology of the boost manifold, the non-closure of the boost composition law, and the Wigner angle. The closing sections separate the algebraic content from the standard topology and record the open questions.
 
-**Boundaries.** The physical consequences of the double cover for spinning matter — spinor representations, the transformation law of a spinor under a $2\pi$ rotation, and the observed sign change — belong to the sibling category on relativistic quantum theory and are not developed here. This article is the group-theoretic and geometric statement: what the covering group is, what its fundamental group is, and what the boost manifold is. The structure and representations of the group are treated in the companion article *The Lorentz Group in Biquaternionic Form — Structure and Representations*, and the automorphism characterization in *The Lorentz Group as Biquaternion Norm-Form Automorphisms*.
+**Boundaries.** The physical consequences of the double cover for spinning matter — spinor representations, the transformation law of a spinor under a $2\pi$ rotation, and the observed sign change — belong to the sibling category on relativistic quantum theory and are not developed here. This article is the group-theoretic and geometric statement: what the covering group is, what its fundamental group is, and what the boost manifold is. The structure and representations of the group are treated in the companion article *The Lorentz Group in Biquaternionic Form — Structure and Representations*, and the automorphism characterization in *The Lorentz Group as Biquaternion Norm Automorphisms*.
 
-**Conventions.** We use those of the read list unchanged. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with quaternion basis $e_0=1,e_1,e_2,e_3$, $e_k^2 = -e_0$ and $e_je_k = -\delta_{jk}e_0 + \varepsilon_{jkl}e_l$, and central scalar imaginary $i$. The subspaces are $\mathbb{M}_-$ (anti-Hermitian: imaginary scalar and real vector — the material sector), $\mathbb{M}_+$ (Hermitian: real scalar and imaginary vector — the informational sector), $\mathbb{H}_{\mathbb{B}}$ (real quaternions) and $\mathbb{C}_{\mathbb{B}}$ (the center). The conjugations are $\bar{\cdot}$, ${}^*$, ${}^\dagger = \bar{\cdot}^{\,*}$ and ${}^\flat = -\dagger$. The norm form is $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$, the level-1 identity form $\mathrm{diag}(+1,+1,+1,+1)$ on $\mathbb{C}$, restricting to the level-2 form $\eta = \mathrm{diag}(-1,+1,+1,+1)$ on $\mathbb{M}_-$. A **rotor** is a unit-norm biquaternion, $N(\tilde{\Lambda}) = e_0$, and a general rotor decomposes as
+**Conventions.** We use those of the read list unchanged. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with quaternion basis $e_0=1,e_1,e_2,e_3$, $e_k^2 = -e_0$ and $e_je_k = -\delta_{jk}e_0 + \varepsilon_{jkl}e_l$, and central scalar imaginary $i$. The subspaces are $\mathbb{M}_-$ (anti-Hermitian: imaginary scalar and real vector — the material sector), $\mathbb{M}_+$ (Hermitian: real scalar and imaginary vector — the informational sector), $\mathbb{H}_{\mathbb{B}}$ (real quaternions) and $\mathbb{C}_{\mathbb{B}}$ (the center). The conjugations are $\bar{\cdot}$, ${}^*$, ${}^\dagger = \bar{\cdot}^{\,*}$ and ${}^\flat = -\dagger$. The biquaternion norm is $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$, the level-1 identity form $\mathrm{diag}(+1,+1,+1,+1)$ on $\mathbb{C}$, restricting to the level-2 form $\eta = \mathrm{diag}(-1,+1,+1,+1)$ on $\mathbb{M}_-$. A **rotor** is a unit-norm biquaternion, $N(\tilde{\Lambda}) = e_0$, and a general rotor decomposes as
 
 $$
 \tilde{\Lambda} = R\,B,
@@ -326,7 +326,7 @@ It is worth being precise about what is *not* claimed here. The sign that a roto
 
 1. **The full Lorentz group and its cover.** The two-to-one cover established here is that of the identity component $SO^+(1,3)$. The full group $O(1,3)$ has four components, and its covering groups are extensions involving the discrete transformations. Whether the biquaternion algebra supplies a single algebraic object covering all four components, and how parity and time reversal act on rotors, is not settled by the conjugation action alone.
 
-2. **The Euclidean real form and its topology.** The same algebra contains the Euclidean real form on $\mathbb{H}_{\mathbb{B}}$, whose group is compact and whose topology is different. The relation between the two real forms' topologies, and whether the informational sector prefers the compact one, is an open question connecting this article to *The Lorentz Group as Biquaternion Norm-Form Automorphisms*.
+2. **The Euclidean real form and its topology.** The same algebra contains the Euclidean real form on $\mathbb{H}_{\mathbb{B}}$, whose group is compact and whose topology is different. The relation between the two real forms' topologies, and whether the informational sector prefers the compact one, is an open question connecting this article to *The Lorentz Group as Biquaternion Norm Automorphisms*.
 
 3. **Gravity and the boost manifold.** The boost manifold is hyperbolic three-space, which is also the spatial slice of a cosmological or hyperbolic geometry. Whether the framework's boost space has any relation to a physical spatial geometry, or merely shares the homogeneous-space structure, is not addressed here.
 
@@ -336,9 +336,9 @@ It is worth being precise about what is *not* claimed here. The sign that a roto
 
 The conventions of the construction are those of the following companion articles:
 
-- Companion article *Introduction to the Biquaternion Universe*, for the notation, the norm form and the rotor parametrisation.
+- Companion article *Introduction to the Biquaternion Universe*, for the notation, the biquaternion norm and the rotor parametrisation.
 - Companion article *Conventions in the Biquaternion Universe*, for the algebra and basis, the conjugations, the real subspaces and the metric at its three levels.
-- Companion article *The Lorentz Group as Biquaternion Norm-Form Automorphisms*, for the group as an algebraic object and its Lie algebra.
+- Companion article *The Lorentz Group as Biquaternion Norm Automorphisms*, for the group as an algebraic object and its Lie algebra.
 - Companion article *The Lorentz Group in Biquaternionic Form — Structure and Representations*, for the representation theory of the group and its real forms.
 - Companion article *The Spinor Module in Biquaternionic Form and Its Lorentz Action*, for the module on which the two-to-one sign is seen.
 
@@ -382,7 +382,7 @@ with $\omega\approx\tfrac{\psi^2}{2}\sin\theta$ for small rapidity and $\omega\t
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
-| $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$ | Norm form; level-1 identity on $\mathbb{C}$ |
+| $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$ | Biquaternion norm; level-1 identity on $\mathbb{C}$ |
 | $\mathbb{M}_-, \mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\mathbb{H}_{\mathbb{B}}, \mathbb{C}_{\mathbb{B}}$ | Real-quaternion subspace; complex scalar line (center) |
 | $\tilde{\Lambda}$, $N(\tilde{\Lambda}) = e_0$ | Unit-norm biquaternion; Lorentz rotor |

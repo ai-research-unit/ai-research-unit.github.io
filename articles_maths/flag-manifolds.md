@@ -55,7 +55,7 @@ $$
 
 with $T$ the diagonal maximal torus.
 
-**Proof sketch.** Transitivity: given two flags there is a basis adapted to each, and the change-of-basis matrix carries one to the other. The stabiliser of the standard flag is the group preserving each subspace of the chain, which is exactly the block upper triangular group. The compact form follows because $U(n)$ acts transitively on the flags of $\mathbb{C}^n$ and the stabiliser of the standard flag in $U(n)$ is the diagonal torus $T \cong U(1)^n$. $\square$
+**Proof sketch.** Transitivity: given two flags there is a basis adapted to each, and the change-of-basis matrix carries one to the other. The stabiliser of the standard flag is the group preserving each subspace of the chain, which is exactly the block upper triangular group. The compact form follows because $U(n)$ acts transitively on the flags of $\mathbb{C}^n$ and the stabiliser of the standard flag in $U(n)$ is the diagonal torus $T \cong U(1)^n$.
 
 **Theorem (dimension).** The flag manifold has dimension
 
@@ -69,7 +69,7 @@ $$
 \dim_{\mathbb{R}} F\ell_n(\mathbb{R}) = \frac{n(n-1)}{2}, \qquad \dim_{\mathbb{R}} F\ell_n(\mathbb{C}) = n(n-1), \qquad \dim_{\mathbb{C}} F\ell_n(\mathbb{C}) = \frac{n(n-1)}{2}.
 $$
 
-**Proof sketch.** This is the dimension count $\dim GL(n,\mathbb{K}) - \dim P$, and the sum formula is the count of the entries of the block upper triangular matrix that are not forced to vanish: the $i$-th off-diagonal block of size $d_i \times (d_{i+1} - d_i)$. For the complete flag over $\mathbb{C}$, $\dim_\mathbb{R} = n^2 - n = n(n-1)$, of complex dimension $n(n-1)/2$. For the Grassmannian, $k=1$ and the sum is $d_1(n - d_1)$. $\square$
+**Proof sketch.** This is the dimension count $\dim GL(n,\mathbb{K}) - \dim P$, and the sum formula is the count of the entries of the block upper triangular matrix that are not forced to vanish: the $i$-th off-diagonal block of size $d_i \times (d_{i+1} - d_i)$. For the complete flag over $\mathbb{C}$, $\dim_\mathbb{R} = n^2 - n = n(n-1)$, of complex dimension $n(n-1)/2$. For the Grassmannian, $k=1$ and the sum is $d_1(n - d_1)$.
 
 **Corollary.** The flag manifold is a compact, connected smooth manifold; it is a projective variety in the complex case; and it is simply connected over $\mathbb{C}$, being a homogeneous space of the simply connected group $SU(n)$ (the quotient of $U(n)$ by the connected torus is the same manifold).
 
@@ -93,7 +93,7 @@ $$
 
 of rank $\sum_{i<j}\dim_{\mathbb{R}}\mathbb{K} = (\dim_{\mathbb{R}}\mathbb{K})\,n(n-1)/2$.
 
-**Proof sketch.** The fibre of $\mathcal{S}_i$ varies smoothly by the local triviality of the flag manifold; the tangent space at a flag is the space of infinitesimal deformations of the chain, which is the space of filtered endomorphisms, identified with the direct sum of the $\operatorname{Hom}(\mathcal{L}_i,\mathcal{L}_j)$; the rank count gives the dimension of the previous theorem. The bundle theory is that of *Fibre Bundles, Connections and Curvature*. $\square$
+**Proof sketch.** The fibre of $\mathcal{S}_i$ varies smoothly by the local triviality of the flag manifold; the tangent space at a flag is the space of infinitesimal deformations of the chain, which is the space of filtered endomorphisms, identified with the direct sum of the $\operatorname{Hom}(\mathcal{L}_i,\mathcal{L}_j)$; the rank count gives the dimension of the previous theorem. The bundle theory is that of *Fibre Bundles, Connections and Curvature*.
 
 **Corollary (the characterisation of flags).** A rank-$n$ bundle $E$ over a paracompact base together with a complete flag of subbundles is classified by a map into $F\ell_n(\mathbb{K})$; the tautological flag pulls back to the given flag. In particular the projective space classifies the line subbundles of a rank-$n$ bundle, and the flag manifold classifies the filtrations.
 
@@ -119,7 +119,7 @@ $$
 
 the cells all having even real dimension $2\ell(w)$.
 
-**Proof sketch.** In terms of the matrix of a flag in the standard basis, the cell $C_w$ is described by the vanishing of certain entries and the value $1$ at the pivots prescribed by $w$; the free entries are exactly the inversions of $w$, so the cell is an affine space of dimension $\ell(w)$. The computation of the Euler characteristic is the alternating sum over the cells, and $2\ell(w)$ is even, so every term contributes $+1$ and the sum is the order of $S_n$. $\square$
+**Proof sketch.** In terms of the matrix of a flag in the standard basis, the cell $C_w$ is described by the vanishing of certain entries and the value $1$ at the pivots prescribed by $w$; the free entries are exactly the inversions of $w$, so the cell is an affine space of dimension $\ell(w)$. The computation of the Euler characteristic is the alternating sum over the cells, and $2\ell(w)$ is even, so every term contributes $+1$ and the sum is the order of $S_n$.
 
 **Example (the Schubert cells of $F\ell_3(\mathbb{C})$).** There are $3! = 6$ cells, one for each permutation, of complex dimensions $0, 1, 1, 2, 2, 3$ corresponding to the permutations $123, 132, 213, 231, 312, 321$ (the longer permutations having the larger dimension), and $\chi = 6$. The partial flag manifold $F\ell(1;\mathbb{C}^3) = \mathbb{CP}^2$ has the three cells of dimensions $0,1,2$ corresponding to the three cosets $S_3/S_2$, matching the three projective Schubert cells of *Grassmannians and Stiefel Manifolds*.
 
@@ -127,7 +127,7 @@ the cells all having even real dimension $2\ell(w)$.
 
 **Proposition.** The Schubert variety $X_w$ is the set of flags whose $i$-th subspace has intersection of dimension at least the number prescribed by $w$ with the standard $j$-th coordinate subspace; it is a closed subvariety of dimension $\ell(w)$, and $X_v \subseteq X_w$ if and only if $v \leq w$ in the Bruhat order.
 
-**Proof sketch.** The intersection conditions are closed conditions; the cell of $v$ lies in the variety of $w$ exactly when the vanishing pattern of $v$ is weaker than that of $w$, which is the rank condition of the Bruhat order. $\square$
+**Proof sketch.** The intersection conditions are closed conditions; the cell of $v$ lies in the variety of $w$ exactly when the vanishing pattern of $v$ is weaker than that of $w$, which is the rank condition of the Bruhat order.
 
 ### The Cohomology Ring
 
@@ -139,7 +139,7 @@ $$
 
 where $e_i$ is the $i$-th elementary symmetric polynomial and $x_i$ is the first Chern class of the tautological quotient line $\mathcal{L}_i$; the ring is free of rank $n!$ as a $\mathbb{Z}$-module, with basis the **Schubert classes** $[X_w]$ for $w \in S_n$.
 
-**Proof sketch.** The quotient $U(n)/T$ has classifying map that identifies $H^*(F\ell_n)$ with the $T$-equivariant cohomology of a point modulo the ideal generated by the elementary symmetric classes, which is the Borel presentation of the cohomology of a homogeneous space of a compact group; the Schubert cells give a basis by the cell decomposition. $\square$
+**Proof sketch.** The quotient $U(n)/T$ has classifying map that identifies $H^*(F\ell_n)$ with the $T$-equivariant cohomology of a point modulo the ideal generated by the elementary symmetric classes, which is the Borel presentation of the cohomology of a homogeneous space of a compact group; the Schubert cells give a basis by the cell decomposition.
 
 **Corollary (Euler characteristic and Poincaré polynomial).** The cohomology is concentrated in even degrees, the Poincaré polynomial is the statistic of the inversion number,
 
@@ -163,17 +163,17 @@ $$
 
 by the map sending a flag to its sequence of subspaces; the image is the closed subvariety defined by the **incidence relations** $V_{i} \subset V_{i+1}$, and composing with the Plücker embeddings of the factors gives an embedding of the flag manifold into a product of projective spaces, so the flag manifold over $\mathbb{C}$ is a smooth projective variety. The **Plücker coordinates** of a flag are the Plücker coordinates of its subspaces, subject to the incidence conditions.
 
-**Proof sketch.** The map is injective because a flag is its sequence of subspaces; it is an immersion because each subspace varies smoothly; and the image is closed because the incidence conditions are the vanishing of the minors of the matrices expressing one subspace in the basis of the next, which are polynomial equations. The Plücker description of each factor is that of *Grassmannians and Stiefel Manifolds*. $\square$
+**Proof sketch.** The map is injective because a flag is its sequence of subspaces; it is an immersion because each subspace varies smoothly; and the image is closed because the incidence conditions are the vanishing of the minors of the matrices expressing one subspace in the basis of the next, which are polynomial equations. The Plücker description of each factor is that of *Grassmannians and Stiefel Manifolds*.
 
 **Corollary (line bundles and the Borel–Weil theorem).** Every holomorphic line bundle on $F\ell_n(\mathbb{C})$ is a product of powers of the tautological quotient lines, $\mathcal{O}(a_1, \ldots, a_n) = \mathcal{L}_1^{a_1}\otimes\cdots\otimes\mathcal{L}_n^{a_n}$, the expression being defined up to the relation $\mathcal{L}_1\otimes\cdots\otimes\mathcal{L}_n \cong \mathcal{O}$; the finite-dimensional irreducible holomorphic representations of $GL(n,\mathbb{C})$ are realised on the spaces of sections $H^0(F\ell_n(\mathbb{C}), \mathcal{O}(a_1,\ldots,a_n))$ for dominant weights $(a_1 \geq \cdots \geq a_n)$, by the Borel–Weil theorem.
 
-**Proof sketch.** The Picard group is computed from the homogeneous space description: the characters of the torus $T$ index the line bundles, and the dominant characters are those with nonincreasing exponents; the sections are the polynomials of the prescribed flag-multi-degree, giving the irreducible representation of highest weight. $\square$
+**Proof sketch.** The Picard group is computed from the homogeneous space description: the characters of the torus $T$ index the line bundles, and the dominant characters are those with nonincreasing exponents; the sections are the polynomials of the prescribed flag-multi-degree, giving the irreducible representation of highest weight.
 
 **Remark.** This is the geometric form of the classification of the representations of the general linear group by highest weights, and the flag manifold is the universal space on which the representations of all dominant weights are simultaneously visible as spaces of sections of line bundles. The representation theory itself is the corpus's algebraic material and is cited as standard; the cohomology of the flag manifold, with its Schubert basis, is the topological shadow.
 
 ## Generalised Flag Manifolds
 
-**Definition.** Let $G$ be a semisimple Lie group with Lie algebra $\mathfrak{g}$, and let $P$ be a **parabolic subgroup**, that is, a closed subgroup containing a Borel subgroup; equivalently, $P$ is the normaliser of a parabolic subalgebra $\mathfrak{p}$, which is a subalgebra containing a Borel subalgebra $\mathfrak{b}$. The quotient
+**Definition.** Let $G$ be a semisimple Lie group with Lie algebra $\mathrm{G}$, and let $P$ be a **parabolic subgroup**, that is, a closed subgroup containing a Borel subgroup; equivalently, $P$ is the normaliser of a parabolic subalgebra $\mathrm{P}$, which is a subalgebra containing a Borel subalgebra $\mathrm{B}$. The quotient
 
 $$
 G/P
@@ -181,21 +181,21 @@ $$
 
 is the **generalised flag manifold** of the pair $(G, P)$; when $G = GL(n,\mathbb{C})$ and $P$ is the stabiliser of a chain of subspaces, this is the flag manifold of the previous sections.
 
-**Theorem.** A generalised flag manifold $G/P$ is a compact complex manifold, in fact a smooth projective variety, homogeneous under the action of $G$; its tangent space at the identity coset is $\mathfrak{g}/\mathfrak{p}$, and its cohomology has a basis of **Schubert classes** indexed by the Weyl group $W$ of $G$ modulo the parabolic subgroup $W_P$, with a Borel presentation
+**Theorem.** A generalised flag manifold $G/P$ is a compact complex manifold, in fact a smooth projective variety, homogeneous under the action of $G$; its tangent space at the identity coset is $\mathrm{G}/\mathrm{P}$, and its cohomology has a basis of **Schubert classes** indexed by the Weyl group $W$ of $G$ modulo the parabolic subgroup $W_P$, with a Borel presentation
 
 $$
-H^*(G/P;\mathbb{Z}) \cong \mathbb{Z}[\mathfrak{t}^*]\big/\bigl(\text{the Weyl-invariant polynomials with positive degree}\bigr)
+H^*(G/P;\mathbb{Z}) \cong \mathbb{Z}[\mathrm{T}^*]\big/\bigl(\text{the Weyl-invariant polynomials with positive degree}\bigr)
 $$
 
-for the maximal compact quotient, where $\mathfrak{t}$ is the Cartan subalgebra.
+for the maximal compact quotient, where $\mathrm{T}$ is the Cartan subalgebra.
 
-**Proof sketch.** The compact form of $G$ acts transitively with stabiliser the compact form of $P$, giving a compact complex homogeneous space; the embedding in a projective space is given by a dominant weight whose stabiliser is $P$, by the Borel–Weil theorem; the cohomology statement is the Borel presentation for a homogeneous space of a compact group, and the Schubert classes come from the Bruhat decomposition of $G$ into the double cosets $BwB$. $\square$
+**Proof sketch.** The compact form of $G$ acts transitively with stabiliser the compact form of $P$, giving a compact complex homogeneous space; the embedding in a projective space is given by a dominant weight whose stabiliser is $P$, by the Borel–Weil theorem; the cohomology statement is the Borel presentation for a homogeneous space of a compact group, and the Schubert classes come from the Bruhat decomposition of $G$ into the double cosets $BwB$.
 
 **Example (the incidence variety and the projective space).** The projective space $\mathbb{KP}^{n-1} = GL(n)/P_1$, with $P_1$ the stabiliser of a line, is the flag manifold of a maximal parabolic; the Grassmannian $\mathrm{Gr}_k(\mathbb{K}^n) = GL(n)/P_k$ is the flag manifold of another; and the complete flag $GL(n)/B$ is the flag manifold of the Borel. In the semisimple generalisation the role of the symmetric group is taken by the Weyl group $W$, and the role of the parabolic subgroup of $S_n$ by the parabolic subgroup $W_P$ of $W$ generated by the reflections in the simple roots not in $P$.
 
-**Theorem (the symmetric case).** A compact generalised flag manifold $G/P$ that is a Riemannian symmetric space is necessarily a **Hermitian symmetric space**, because it is a complex manifold and the complex structure is invariant under the action of the compact group; conversely every compact Hermitian symmetric space is a generalised flag manifold $G/P$ with $P$ a maximal parabolic of Hermitian type. The symmetric flag manifolds are therefore exactly the compact Hermitian symmetric spaces: the complex Grassmannians, the projective spaces over $\mathbb{R}$, $\mathbb{C}$, $\mathbb{H}$ and $\mathbb{O}$, the quadrics, the Lagrangian Grassmannians and the two exceptional cases $E_6/(\mathrm{Spin}(10)\cdot U(1))$ and $E_7/(E_6\cdot U(1))$. A flag manifold that is not of this type is homogeneous without being symmetric, and its canonical connection has nonzero torsion, the component of the bracket in $\mathfrak{m}$ of *Homogeneous Spaces*; the complete flag manifold $U(n)/T$ with $n \geq 3$ is the basic example, its isotropy representation being the sum of the positive root spaces, whose brackets are not contained in the torus.
+**Theorem (the symmetric case).** A compact generalised flag manifold $G/P$ that is a Riemannian symmetric space is necessarily a **Hermitian symmetric space**, because it is a complex manifold and the complex structure is invariant under the action of the compact group; conversely every compact Hermitian symmetric space is a generalised flag manifold $G/P$ with $P$ a maximal parabolic of Hermitian type. The symmetric flag manifolds are therefore exactly the compact Hermitian symmetric spaces: the complex Grassmannians, the projective spaces over $\mathbb{R}$, $\mathbb{C}$, $\mathbb{H}$ and $\mathbb{O}$, the quadrics, the Lagrangian Grassmannians and the two exceptional cases $E_6/(\mathrm{Spin}(10)\cdot U(1))$ and $E_7/(E_6\cdot U(1))$. A flag manifold that is not of this type is homogeneous without being symmetric, and its canonical connection has nonzero torsion, the component of the bracket in $\mathrm{M}$ of *Homogeneous Spaces*; the complete flag manifold $U(n)/T$ with $n \geq 3$ is the basic example, its isotropy representation being the sum of the positive root spaces, whose brackets are not contained in the torus.
 
-**Proof sketch.** A complex structure on a compact symmetric space $G/H$ is invariant under $G$ and hence parallel, so the symmetric space is Hermitian; the isotropy algebra of a Hermitian symmetric space has a central circle, which identifies the symmetric subgroup $H$ as a maximal parabolic with the right root-theoretic property, and the classification of the compact Hermitian symmetric spaces then gives the list. For $U(n)/T$ with $n \ge 3$ the roots $\alpha, \beta$ with $\alpha+\beta$ a root give a bracket $[\mathfrak{m},\mathfrak{m}]$ with a nonzero component in $\mathfrak{m}$, so the symmetric-pair condition fails. $\square$
+**Proof sketch.** A complex structure on a compact symmetric space $G/H$ is invariant under $G$ and hence parallel, so the symmetric space is Hermitian; the isotropy algebra of a Hermitian symmetric space has a central circle, which identifies the symmetric subgroup $H$ as a maximal parabolic with the right root-theoretic property, and the classification of the compact Hermitian symmetric spaces then gives the list. For $U(n)/T$ with $n \ge 3$ the roots $\alpha, \beta$ with $\alpha+\beta$ a root give a bracket $[\mathrm{M},\mathrm{M}]$ with a nonzero component in $\mathrm{M}$, so the symmetric-pair condition fails.
 
 **Remark (the coadjoint orbit picture).** The generalised flag manifolds are the coadjoint orbits of the compact form of $G$ through the regular elements, and they carry the natural symplectic structure of the orbit; the symplectic geometry of the orbits, the moment maps and the quantisation are *Symplectic Geometry*, written in parallel, and only the homogeneous and combinatorial structure is used here.
 
@@ -224,7 +224,7 @@ The flag manifold embeds in a product of Grassmannians by the sequence of subspa
 | $H^*(F\ell_n(\mathbb{C})) = \mathbb{Z}[x_1,\ldots,x_n]/(e_1,\ldots,e_n)$ | Borel presentation; $x_i = c_1(\mathcal{L}_i)$ |
 | $P_t = [n]_{t^2}!$ | Poincaré polynomial; $q$-factorial |
 | $G/P$ | Generalised flag manifold; $P$ parabolic in a semisimple $G$ |
-| $[\mathfrak{t}^*]^W$, $W_P$ | Invariant polynomials; parabolic subgroup of the Weyl group |
+| $[\mathrm{T}^*]^W$, $W_P$ | Invariant polynomials; parabolic subgroup of the Weyl group |
 | Incidence relations | $V_i \subset V_{i+1}$; cut out the image in the product of Grassmannians |
 
 

@@ -18,11 +18,11 @@ Throughout, $K$ is a field of characteristic not dividing $n!$ unless a modular 
 
 **Theorem (Maschke).** Let $G$ be a finite group and $K$ a field whose characteristic does not divide $\lvert G\rvert$. Then every representation of $G$ over $K$ is completely reducible.
 
-**Proof.** Let $N \subseteq M$ be a subrepresentation and $\pi : M \to N$ any $K$-linear projection; the averaged map $\tilde\pi = \frac{1}{\lvert G\rvert}\sum_{g}\rho(g)\pi\rho(g)^{-1}$ is $G$-equivariant, has image $N$, and is a projection, so its kernel is a complementary subrepresentation. Iterating gives the decomposition. $\square$
+**Proof.** Let $N \subseteq M$ be a subrepresentation and $\pi : M \to N$ any $K$-linear projection; the averaged map $\tilde\pi = \frac{1}{\lvert G\rvert}\sum_{g}\rho(g)\pi\rho(g)^{-1}$ is $G$-equivariant, has image $N$, and is a projection, so its kernel is a complementary subrepresentation. Iterating gives the decomposition.
 
 **Lemma (Schur).** Let $M, N$ be irreducible representations over a field $K$. Then every nonzero homomorphism $M \to N$ is an isomorphism, and over an algebraically closed field every endomorphism of an irreducible $M$ is a scalar.
 
-**Proof.** The kernel and image of an intertwining map are subrepresentations; an endomorphism of an irreducible has an eigenvalue over an algebraically closed field, and the corresponding eigenspace is a nonzero subrepresentation, hence all of $M$. $\square$
+**Proof.** The kernel and image of an intertwining map are subrepresentations; an endomorphism of an irreducible has an eigenvalue over an algebraically closed field, and the corresponding eigenspace is a nonzero subrepresentation, hence all of $M$.
 
 **Definition.** The **character** of a finite-dimensional representation $M$ is the function $\chi : S_n \to K$, $\chi(\sigma) = \operatorname{tr}(\rho(\sigma))$; it is constant on conjugacy classes, so it is determined by its values on the partitions $\mu$ of $n$. Characters of representations are sums of characters of irreducible constituents, and the irreducible characters are exactly those that cannot be written as such a sum.
 
@@ -34,7 +34,7 @@ $$
 
 whence $\sum_{\lambda\vdash n}(\dim S^\lambda)^2 = n!$, and the character of the regular representation is $n!$ at the identity and $0$ elsewhere.
 
-**Proof sketch.** The number of irreducible characters is the dimension of the centre of the group ring, which has as a basis the class sums, one for each conjugacy class; the decomposition of the regular representation into isotypic components gives the displayed multiplicity $\dim S^\lambda$, and evaluating at the identity gives $\sum_\lambda(\dim S^\lambda)^2 = n!$ together with the character values: the identity contributes $n!$, and the transformation of characters under the regular action gives $\sum_\lambda\dim(S^\lambda)\chi^\lambda(\sigma) = 0$ for $\sigma \neq 1$. $\square$
+**Proof sketch.** The number of irreducible characters is the dimension of the centre of the group ring, which has as a basis the class sums, one for each conjugacy class; the decomposition of the regular representation into isotypic components gives the displayed multiplicity $\dim S^\lambda$, and evaluating at the identity gives $\sum_\lambda(\dim S^\lambda)^2 = n!$ together with the character values: the identity contributes $n!$, and the transformation of characters under the regular action gives $\sum_\lambda\dim(S^\lambda)\chi^\lambda(\sigma) = 0$ for $\sigma \neq 1$.
 
 **Example.** For $n = 3$: the partitions are $(3)$, $(2,1)$, $(1,1,1)$ with hook length dimensions $1$, $2$, $1$, and $1^2+2^2+1^2 = 6 = \lvert S_3\rvert$. The three irreducibles are the trivial representation, the sign representation, and the two-dimensional **standard representation**, on which $S_3$ acts by permuting the three coordinates of the submodule $\{(a,b,c) : a+b+c = 0\}$ of $K^3$.
 
@@ -78,7 +78,7 @@ $$
 
 with $K_{\mu\lambda}$ the Kostka number, the number of semistandard tableaux of shape $\mu$ and weight $\lambda$.
 
-**Proof sketch.** The endomorphism ring of $M^\lambda$ is a Hecke-type double coset ring, and the multiplicity of $S^\mu$ in $M^\lambda$ equals the dimension of the space of $S_n$-invariant maps, which is computed by counting semistandard tableaux: a standard argument assigns to each semistandard tableau of shape $\mu$ and weight $\lambda$ a nonzero homomorphism, and shows these form a basis of $\operatorname{Hom}_{S_n}(S^\mu, M^\lambda)$. $\square$
+**Proof sketch.** The endomorphism ring of $M^\lambda$ is a Hecke-type double coset ring, and the multiplicity of $S^\mu$ in $M^\lambda$ equals the dimension of the space of $S_n$-invariant maps, which is computed by counting semistandard tableaux: a standard argument assigns to each semistandard tableau of shape $\mu$ and weight $\lambda$ a nonzero homomorphism, and shows these form a basis of $\operatorname{Hom}_{S_n}(S^\mu, M^\lambda)$.
 
 **Example.** For $n = 3$ and $\lambda = (2,1)$: the permutation module is the natural three-dimensional module $K^3$ spanned by three tabloids, and $K^3$ is the direct sum of the trivial representation (spanned by the sum of the basis) and the two-dimensional standard representation. Correspondingly $h_2h_1 = s_{(3)}+s_{(2,1)}$ in the symmetric function notation of *Symmetric Functions and Schur Functions*, since $M^\lambda$ has characteristic $\operatorname{ch}(M^\lambda) = h_\lambda$, and the Kostka numbers $K_{(3),(2,1)} = 1$, $K_{(2,1),(2,1)} = 1$.
 
@@ -96,7 +96,7 @@ with $K_{\mu\lambda}$ the Kostka number, the number of semistandard tableaux of 
 
 **(d)** (branching rule) $S^\lambda$ restricted to $S_{n-1}$ decomposes as $\bigoplus_{\lambda^-}S^{\lambda^-}$, the sum over partitions $\lambda^-$ of $n-1$ whose Young diagram is obtained from that of $\lambda$ by removing one cell.
 
-**Proof sketch.** (a) The standard filtration argument: the polytabloids span, and the submodule structure of $M^\lambda$ over an arbitrary field is controlled by the dominance order, the Specht modules being the layers, and over a field of characteristic $0$ each layer is a direct summand, hence irreducible. (b) The standard basis theorem, proved by the straightening algorithm: a straightening rule expresses any polytabloid as an integer combination of standard ones, and the leading terms are distinct, which gives independence and spanning. (d) follows from the same description, since removing a cell from the diagram of $\lambda$ is exactly what restriction does to the standard bases. $\square$
+**Proof sketch.** (a) The standard filtration argument: the polytabloids span, and the submodule structure of $M^\lambda$ over an arbitrary field is controlled by the dominance order, the Specht modules being the layers, and over a field of characteristic $0$ each layer is a direct summand, hence irreducible. (b) The standard basis theorem, proved by the straightening algorithm: a straightening rule expresses any polytabloid as an integer combination of standard ones, and the leading terms are distinct, which gives independence and spanning. (d) follows from the same description, since removing a cell from the diagram of $\lambda$ is exactly what restriction does to the standard bases.
 
 **Example.** Dimensions of the irreducible representations of $S_4$, computed by the hook length formula: $f^{(4)} = 24/(4\cdot3\cdot2\cdot1) = 1$; $f^{(3,1)} = 24/(4\cdot2\cdot1\cdot1) = 3$; $f^{(2,2)} = 24/(3\cdot2\cdot2\cdot1) = 2$; $f^{(2,1,1)} = 3$; $f^{(1^4)} = 1$. The squares sum to $1+9+4+9+1 = 24 = \lvert S_4\rvert$. The hook lengths used are those tabulated in *Symmetric Functions and Schur Functions*.
 
@@ -114,7 +114,7 @@ $$
 
 the sum over all ways to remove from $\lambda$ a rim hook $\xi$ of size $\mu_1$ such that the remaining diagram is the diagram of a partition $\lambda^-$ with $\chi^{\lambda^-}_{(\mu_2,\ldots,\mu_k)} \neq 0$, each removal weighted by its sign.
 
-**Proof sketch.** The rule follows from the restriction of $S^\lambda$ to the Young subgroup of a cycle and the explicit combinatorics of the $n$-cycle acting on the polytabloid basis; equivalently, it is the translation into tableaux of the identity $\operatorname{ch}(\chi)(p_\mu) = \chi_\mu$ together with the Jacobi–Trudi expansion of the Schur function. $\square$
+**Proof sketch.** The rule follows from the restriction of $S^\lambda$ to the Young subgroup of a cycle and the explicit combinatorics of the $n$-cycle acting on the polytabloid basis; equivalently, it is the translation into tableaux of the identity $\operatorname{ch}(\chi)(p_\mu) = \chi_\mu$ together with the Jacobi–Trudi expansion of the Schur function.
 
 **Example.** For $\lambda = (2,1)$ and $\mu = (3)$: the border strips of $(2,1)$ are the single cells $(1,2)$ and $(2,1)$ and the whole rim $\{(1,1),(1,2),(2,1)\}$ of size $3$ and height $1$; only the whole rim has size $3$, so $χ^{(2,1)}_{(3)} = -1$. For $\mu = (2,1)$ there is no border strip of size $2$ at all — the two ways of deleting two cells of the rim leave the shapes $\{(2,1)\}$ and $\{(1,2)\}$, neither of which is a Young diagram — so the sum is empty and $\chi^{(2,1)}_{(2,1)} = 0$. For $\mu = (1^3)$, each removal of a single corner leaves a Young diagram, giving $\chi^{(2,1)}_{(1^3)} = \chi^{(1,1)}_{(1,1)}+\chi^{(2)}_{(1,1)} = 1+1 = 2 = f^{(2,1)}$. The three values $2, 0, -1$ are exactly the row of the character table of $S_3$ for $\chi^{(2,1)}$.
 

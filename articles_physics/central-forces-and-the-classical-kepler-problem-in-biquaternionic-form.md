@@ -266,7 +266,7 @@ is conserved, points along the perihelion direction, and makes the momentum hodo
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
 | $e_0 = 1, e_1, e_2, e_3$ | Quaternion basis, $e_k^2 = -e_0$, $e_je_k = \epsilon_{jkl}e_l$ $(j\neq k)$ |
 | $i$ | Central scalar imaginary, $i^2 = -e_0$ |
-| $\mathbb{M}_-$, $\mathbb{M}_+$ | Material (anti-Hermitian), informational (Hermitian) sectors |
+| $\mathbb{M}_+$, $\mathbb{M}_-$ | Informational (Hermitian), material (anti-Hermitian) sectors |
 | $\mathbf{r}, \mathbf{p}, \mathbf{v}, \mathbf{F}$ | Position, momentum, velocity, force: real vectors in $\operatorname{span}\{e_1,e_2,e_3\}$ |
 | $\kappa$ | Inverse-square coupling; $\kappa = GMm$ for gravity |
 | $V(r) = -\kappa/r$ | Kepler potential; central scalar $\tilde{V} = V(r)e_0$ |

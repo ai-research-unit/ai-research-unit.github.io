@@ -247,7 +247,7 @@ The biquaternion framework has nothing to add to this argument except the observ
 
 The phase $e^{-i\eta\ln\sin^2(\theta/2)}$ and the phase $2\sigma_0$ are both energy dependent, through $\eta=\alpha/\hbar v$ and through $\sigma_0(\eta)$. They do not affect the cross section, but they do affect the wave function and any interference with a second amplitude. This is the practical signature of the long-range potential: the Coulomb amplitude's phase cannot be gauged away by a constant, because the logarithm makes it angle dependent and the parameter $\eta$ makes it energy dependent.
 
-In the biquaternion reading these are central phases: $e^{-i\eta\ln\sin^2(\theta/2)}$ and $e^{2i\sigma_0}$ are elements of the center's unit circle $U(1)\subset\mathbb{C}_{\mathbb{B}}$, of the same kind as the free phase $e^{iS/\hbar}$ and the path-integral phase $e^{iS/\hbar}$. They multiply the amplitude without touching the module. The framework's unitary-versus-rotor distinction applies: these are unitary central phases, not unit-norm-form rotors.
+In the biquaternion reading these are central phases: $e^{-i\eta\ln\sin^2(\theta/2)}$ and $e^{2i\sigma_0}$ are elements of the center's unit circle $U(1)\subset\mathbb{C}_{\mathbb{B}}$, of the same kind as the free phase $e^{iS/\hbar}$ and the path-integral phase $e^{iS/\hbar}$. They multiply the amplitude without touching the module. The framework's unitary-versus-rotor distinction applies: these are unitary central phases, not unit-norm rotors.
 
 ### The scattering length and the infrared analogy
 

@@ -21,7 +21,7 @@ equivalently if the fixed space $H = \ker(1-g) = V^g$ has codimension $2$ in $V$
 
 **Proposition.** Let $s$ be a symplectic reflection with fixed hyperplane $H$. Then $\operatorname{im}(1-s)$ is a $2$-dimensional subspace $W$ containing no nonzero vector of $H$, the form $\omega$ restricts to a nondegenerate alternating form on $W$, and the fixed hyperplane is $\omega$-orthogonal to $W$.
 
-**Proof.** Since $s \in \operatorname{Sp}(V,\omega)$, for $h \in H$ and $v \in V$ one has $\omega(h,(1-s)v) = \omega(h,v) - \omega(h,sv) = \omega(h,v) - \omega(s^{-1}h, v) = 0$, so $H$ is $\omega$-orthogonal to $W$. The subspaces $H$ and $W$ are $s$-stable, $V = H + W$ because $v = sv + (1-s)v$ with $sv \in H$, and $\dim H = \dim V - 2$, $\dim W = 2$, so $H \cap W = 0$ by dimensions and $V = H \oplus W$. A vector $w \in W$ orthogonal to $W$ is orthogonal to $V = H \oplus W$ by the orthogonality of $H$ and $W$, hence is zero by the nondegeneracy of $\omega$, so $\omega\vert_W$ is nondegenerate. $\square$
+**Proof.** Since $s \in \operatorname{Sp}(V,\omega)$, for $h \in H$ and $v \in V$ one has $\omega(h,(1-s)v) = \omega(h,v) - \omega(h,sv) = \omega(h,v) - \omega(s^{-1}h, v) = 0$, so $H$ is $\omega$-orthogonal to $W$. The subspaces $H$ and $W$ are $s$-stable, $V = H + W$ because $v = sv + (1-s)v$ with $sv \in H$, and $\dim H = \dim V - 2$, $\dim W = 2$, so $H \cap W = 0$ by dimensions and $V = H \oplus W$. A vector $w \in W$ orthogonal to $W$ is orthogonal to $V = H \oplus W$ by the orthogonality of $H$ and $W$, hence is zero by the nondegeneracy of $\omega$, so $\omega\vert_W$ is nondegenerate.
 
 **Remark.** The proof records the spectral form of a symplectic reflection: $V$ is the $\omega$-orthogonal direct sum $H \oplus W$ of $s$-stable subspaces with $\dim W = 2$, the form $\omega\vert_W$ is nondegenerate, and $s$ acts on $W$ with two eigenvalues $\lambda, \lambda^{-1}$ of product $1$ and neither equal to $1$, since $s$ has no nonzero fixed vector in $W$: the elements of $W$ are the vectors moved by $s$, and the fixed vectors form $H$. In particular a symplectic reflection is the identity on a hyperplane and a twist with eigenvalues $\lambda, \lambda^{-1}$ on the complementary plane.
 
@@ -33,13 +33,13 @@ Its radical is the fixed hyperplane $H$ of $s$ and it is nondegenerate on $\oper
 
 **Proposition.** The form $\omega_s$ is alternating and its radical is $H$; it is $G$-equivariant in the sense that $\omega_{gsg^{-1}}(x,y) = \omega_s(g^{-1}x,g^{-1}y)$; and it is uniquely determined by $H$ and the scalar $\omega_s(w_1,w_2)$ on a symplectic basis of $W$, so the normalisation of $c(s)$ absorbs the choice of $\omega_s$ up to a scalar.
 
-**Proof.** Alternation is the alternation of $\omega$. If $y \in H$ then $(1-s)y = 0$ and $\omega_s(\cdot,y)=0$, so $H$ is contained in the radical; the radical is $\ker(1-s)$ in the splitting $V = H \oplus W$, since $\omega_s$ restricted to $W$ is nondegenerate because $\omega$ is nondegenerate on $W$ and $(1-s)\vert_W = 1 - s\vert_W$ is invertible on $W$; hence the radical is exactly $H$ and the rank is $2$. Equivariance uses $(1 - gsg^{-1}) = g(1-s)g^{-1}$ and the invariance of $\omega$. The final statement is that an alternating form on the two-dimensional $W$ with the two fixed eigenvalues is determined by one scalar, which is absorbed in the definition of $c(s)$. $\square$
+**Proof.** Alternation is the alternation of $\omega$. If $y \in H$ then $(1-s)y = 0$ and $\omega_s(\cdot,y)=0$, so $H$ is contained in the radical; the radical is $\ker(1-s)$ in the splitting $V = H \oplus W$, since $\omega_s$ restricted to $W$ is nondegenerate because $\omega$ is nondegenerate on $W$ and $(1-s)\vert_W = 1 - s\vert_W$ is invertible on $W$; hence the radical is exactly $H$ and the rank is $2$. Equivariance uses $(1 - gsg^{-1}) = g(1-s)g^{-1}$ and the invariance of $\omega$. The final statement is that an alternating form on the two-dimensional $W$ with the two fixed eigenvalues is determined by one scalar, which is absorbed in the definition of $c(s)$.
 
 ### Examples of Symplectic Reflection Groups
 
 **Example (the two-dimensional case).** Let $\dim V = 2$, so that $\operatorname{Sp}(V, \omega) = SL(V)$ and a finite subgroup is a finite subgroup of $SL_2(K)$. For $g \in SL(V)$ the rank of $1-g$ is $2$ unless $g = 1$ and, in characteristic zero, also unless $g$ is a nontrivial unipotent element; for a finite group there are no nontrivial unipotent elements of infinite order and a unipotent element of finite order in characteristic zero is trivial. Hence for a finite subgroup $G \subseteq SL_2(K)$ every nontrivial element is a symplectic reflection, and such a $G$ is a symplectic reflection group. The finite subgroups of $SL_2(\mathbb{C})$ are the binary polyhedral groups, that is, the cyclic groups $\mu_n$, the binary dihedral groups, and the binary tetrahedral, octahedral and icosahedral groups; their quotients by the centre are the finite rotation groups of the sphere, and the corresponding quotient singularities $\mathbb{C}^2/G$ are the Kleinian or Du Val singularities.
 
-**Example (the symmetric group).** Let $\mathfrak{h}$ be the reflection representation of the symmetric group $S_n$, of dimension $n-1$, and let $V = \mathfrak{h} \oplus \mathfrak{h}^*$ with the standard alternating form $\omega((x,f),(y,g)) = f(y) - g(x)$. Then $S_n$ acts on $V$ by $w \cdot (x,f) = (wx, wf)$, and this action is symplectic. A transposition $s_{ij}$ acts on $\mathfrak{h}$ as a complex reflection fixing a hyperplane, and on $V = \mathfrak{h}\oplus\mathfrak{h}^*$ it fixes the hyperplanes of both summands; the rank of $1 - s_{ij}$ on $V$ is $2$, so transpositions are symplectic reflections, and they generate $S_n$.
+**Example (the symmetric group).** Let $\mathrm{H}$ be the reflection representation of the symmetric group $S_n$, of dimension $n-1$, and let $V = \mathrm{H} \oplus \mathrm{H}^*$ with the standard alternating form $\omega((x,f),(y,g)) = f(y) - g(x)$. Then $S_n$ acts on $V$ by $w \cdot (x,f) = (wx, wf)$, and this action is symplectic. A transposition $s_{ij}$ acts on $\mathrm{H}$ as a complex reflection fixing a hyperplane, and on $V = \mathrm{H}\oplus\mathrm{H}^*$ it fixes the hyperplanes of both summands; the rank of $1 - s_{ij}$ on $V$ is $2$, so transpositions are symplectic reflections, and they generate $S_n$.
 
 **Example (wreath products).** Let $\Gamma \subseteq SL_2(K)$ be finite and let $G = S_n \ltimes \Gamma^n$ act on $V = (K^2)^n$ by permuting the $n$ planes and acting by $\Gamma$ in each, the form being the direct sum of the standard forms and the action being symplectic. The group $G$ is generated by symplectic reflections: the elements of $\Gamma$ acting in a single plane, the nontrivial ones having rank $2$ on that plane and rank $0$ on the others, together with the transpositions of two planes, which have rank $2$ on the sum of the two planes and rank $0$ elsewhere. The case $\Gamma = \{1\}$ is the symmetric group acting on $(K^2)^n$, the **rank-one** symplectic reflection group; the case $\Gamma = \{\pm 1\}$ is the hyperoctahedral group $W(B_n) = S_n \ltimes (\mathbb{Z}/2)^n$, generated by the sign changes of a single coordinate and the transpositions, and it sits inside the symplectic group of a symplectic space of dimension $2n$ as a symplectic reflection group. The irreducible symplectic reflection groups have been classified, in the quaternionic form, by Cohen; the classification is the symplectic analogue of the classification of the finite reflection groups.
 
@@ -79,7 +79,7 @@ is an isomorphism of vector spaces; the algebra has the **triangular decompositi
 $$
 D_x = \partial_x - \sum_{s \in S} c(s)\,\frac{\omega_s(x,\alpha_s)}{\alpha_s}\, s ,
 $$
-where $\alpha_s$ is a linear form whose zero set is the fixed hyperplane of $s$ and the fraction is the algebraic division by a linear form in the localised ring; the identities $D_x D_y - D_y D_x = \omega(x,y) - \sum_s c(s)\omega_s(x,y)s$ are verified from the transformation law of the $D_x$ under the reflections, and the embedding of $S(V^*)$ by multiplication closes the algebra. Since the operators $D_x$ reduce modulo the reflection terms to the partial derivatives, the associated graded of the image is $S(V) \rtimes G$, which gives the PBW property for $t = 1$; the substitution $x \mapsto t^{1/2}x$ for the elements of $V$ rescales the relation to give every $t \neq 0$, and the case $t = 0$ is the associated graded case. The details are in the cited paper. $\square$
+where $\alpha_s$ is a linear form whose zero set is the fixed hyperplane of $s$ and the fraction is the algebraic division by a linear form in the localised ring; the identities $D_x D_y - D_y D_x = \omega(x,y) - \sum_s c(s)\omega_s(x,y)s$ are verified from the transformation law of the $D_x$ under the reflections, and the embedding of $S(V^*)$ by multiplication closes the algebra. Since the operators $D_x$ reduce modulo the reflection terms to the partial derivatives, the associated graded of the image is $S(V) \rtimes G$, which gives the PBW property for $t = 1$; the substitution $x \mapsto t^{1/2}x$ for the elements of $V$ rescales the relation to give every $t \neq 0$, and the case $t = 0$ is the associated graded case. The details are in the cited paper.
 
 **Corollary.** The algebra $H_{t,c}(V)$ has Gelfand–Kirillov dimension $\dim V$ and the same Hilbert series as $S(V) \rtimes G$; the natural filtration is exhausting and separated; and the algebra is a finite module over its subalgebra $S(V)$ and over its subalgebra $S(V^*)$.
 
@@ -89,7 +89,7 @@ where $\alpha_s$ is a linear form whose zero set is the fixed hyperplane of $s$ 
 
 **Definition.** The **parameter space** of the symplectic reflection algebra is
 $$
-\mathfrak{P} = K \oplus \bigl(K[S]\bigr)^G,
+\mathrm{P} = K \oplus \bigl(K[S]\bigr)^G,
 $$
 the second factor being the invariants of the permutation representation on the set of symplectic reflections, that is, the functions constant on conjugacy classes. The pair $(t,c)$ has a rescaling: for $\lambda \in K^\times$ the substitution $x \mapsto \lambda x$ on $V$ sends the relations of $(t,c)$ to the relations of $(\lambda^2 t, \lambda^2 c)$, so the pair $(t,c)$ and $(\lambda^2 t, \lambda^2 c)$ give isomorphic algebras, and the pair $(t,c)$ may be normalised by fixing $t = 1$ when $t \neq 0$.
 
@@ -99,7 +99,7 @@ H_{0,0}(V) = S(V) \rtimes G, \qquad H_{t,0}(V) = A(V) \rtimes G,
 $$
 with $A(V)$ the Weyl algebra; the family $\{H_{t,c}\}$ is a flat deformation of $S(V) \rtimes G$ over the parameter space, in the sense that $H_{t,c}$ has a filtration with associated graded $S(V) \rtimes G$ for all $(t,c)$.
 
-**Proof.** The statements about the specialisations are the definitions. Flatness is the PBW theorem: the associated graded is $S(V) \rtimes G$ independently of $(t,c)$, so the family is a deformation of the associated graded, and the independence of the deformation parameter is the content of the PBW property. $\square$
+**Proof.** The statements about the specialisations are the definitions. Flatness is the PBW theorem: the associated graded is $S(V) \rtimes G$ independently of $(t,c)$, so the family is a deformation of the associated graded, and the independence of the deformation parameter is the content of the PBW property.
 
 ## The Centre and the Structure of the Algebra
 
@@ -113,7 +113,7 @@ The first two statements are the theorem of Etingof and Ginzburg for the case $t
 
 **Theorem.** The subalgebras $S(V)$ and $S(V^*)$ are polynomial algebras in $\dim V$ indeterminates, the group algebra $KG$ is a subalgebra, and the multiplication maps induce the triangular decomposition; $H_{t,c}(V)$ is free as a left $S(V)$-module and as a right $S(V^*)$-module, with bases respectively the monomials in $S(V^*)$ times $G$ and the monomials in $S(V)$ times $G$.
 
-**Proof.** The PBW theorem identifies $H_{t,c}$ with $S(V) \otimes KG \otimes S(V^*)$ as a vector space, and the subalgebra generated by $V$ is $S(V)$ because the relations express the commutator of two elements of $V$ in the span of $1$ and $KS$, which does not involve additional generators; the same argument applies to $S(V^*)$, whose generators are the linear forms. The basis statement is then the PBW isomorphism read in a single factor. $\square$
+**Proof.** The PBW theorem identifies $H_{t,c}$ with $S(V) \otimes KG \otimes S(V^*)$ as a vector space, and the subalgebra generated by $V$ is $S(V)$ because the relations express the commutator of two elements of $V$ in the span of $1$ and $KS$, which does not involve additional generators; the same argument applies to $S(V^*)$, whose generators are the linear forms. The basis statement is then the PBW isomorphism read in a single factor.
 
 **Example (the Kleinian case).** Let $\dim V = 2$ and let $G \subseteq SL_2(\mathbb{C})$ be finite. Then $S(V)^G = \mathbb{C}[x,y]^G$ is the coordinate ring of the Kleinian singularity $\mathbb{C}^2/G$, and $H_{0,c}(V)$ is a deformation of the skew group ring with centre a deformation of $\mathbb{C}[x,y]^G$, the invariant ring itself occurring at $c = 0$; the algebra $H_{0,c}$ is a "noncommutative resolution" of the singularity for suitable $c$, and its category of modules provides the McKay correspondence between the resolutions of $\mathbb{C}^2/G$ and the representations of $G$.
 
@@ -129,7 +129,7 @@ for a finite-dimensional representation $\tau$ of $G$, on which the elements of 
 
 **Proposition.** The Verma modules $M_{t,c}(\tau)$ have a unique irreducible quotient $L_{t,c}(\tau)$ when the parameter is not resonant; the module $M_{t,c}(\tau)$ is free over $S(V^*)$ and has Gelfand–Kirillov dimension $\dim V$; the polynomial representation is $M_{0,0}(\mathrm{triv})$ and it is irreducible for generic $c$; the finite-dimensional representations of $H_{t,c}$ exist only for special parameters.
 
-**Proof sketch.** The freeness is the PBW theorem; the existence and uniqueness of the irreducible quotient is the usual highest weight argument for a filtered algebra with a triangular decomposition, using that the cyclic vector generates over $S(V^*)$, and the genericity statement is the standard analysis of the Verma module for the associated "rational" parameters, in which the only obstructions come from finitely many hyperplanes in the parameter space. $\square$
+**Proof sketch.** The freeness is the PBW theorem; the existence and uniqueness of the irreducible quotient is the usual highest weight argument for a filtered algebra with a triangular decomposition, using that the cyclic vector generates over $S(V^*)$, and the genericity statement is the standard analysis of the Verma module for the associated "rational" parameters, in which the only obstructions come from finitely many hyperplanes in the parameter space.
 
 ### The KZ Functor and the Hecke Algebra
 
@@ -172,7 +172,7 @@ with $t$ a scalar and $c$ an invariant function on the set $S$ of symplectic ref
 | $\omega_s$ | $\tfrac12\omega((1-s)\cdot,(1-s)\cdot)$, rank two with radical $H$ |
 | $H_{t,c}(V)$ | Symplectic reflection algebra |
 | $t$, $c$ | Scalar and $G$-invariant function on $S$ |
-| $\mathfrak{P} = K \oplus (K[S])^G$ | Parameter space |
+| $\mathrm{P} = K \oplus (K[S])^G$ | Parameter space |
 | $A(V)$ | Weyl algebra of $(V,\omega)$ |
 | $S(V) \rtimes G$ | Smash product; associated graded of $H_{t,c}$ |
 | $D_x$ | Dunkl operator acting on $K[V]$ |

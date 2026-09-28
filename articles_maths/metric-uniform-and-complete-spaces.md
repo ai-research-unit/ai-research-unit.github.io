@@ -23,7 +23,7 @@ The pair $(X, d)$ is a **metric space**; the last condition is the **triangle in
 
 **Theorem.** The metric topology is a topology, and it is Hausdorff, first countable, normal and metrisable by construction. A set $U$ is open exactly when for every $x \in U$ there is $r > 0$ with $B(x, r) \subseteq U$.
 
-**Pro.** The empty union gives $\emptyset$ and $X = \bigcup_{x} B(x, 1)$; arbitrary unions of balls are open by definition, and if $U, V$ are open and $x \in U \cap V$ choose $r_1, r_2$ with $B(x, r_i)$ inside the respective set; then $B(x, \min(r_1, r_2)) \subseteq U \cap V$. Hausdorffness uses $d(x, y) > 0$ and the balls of radius $d(x,y)/2$; first countability uses the rational radii; normality is shown. $\square$
+**Pro.** The empty union gives $\emptyset$ and $X = \bigcup_{x} B(x, 1)$; arbitrary unions of balls are open by definition, and if $U, V$ are open and $x \in U \cap V$ choose $r_1, r_2$ with $B(x, r_i)$ inside the respective set; then $B(x, \min(r_1, r_2)) \subseteq U \cap V$. Hausdorffness uses $d(x, y) > 0$ and the balls of radius $d(x,y)/2$; first countability uses the rational radii; normality is shown.
 
 **Example (Euclidean spaces).** On $\mathbb{K}^n$ the **Euclidean metric** is $d(x, y) = \left(\sum_{i=1}^n |x_i - y_i|^2\right)^{1/2}$, and the **sup metric** $d_\infty(x, y) = \max_i |x_i - y_i|$ induces the same topology; both are special cases of the $\ell^p$ metrics for $1 \leq p \leq \infty$.
 
@@ -37,7 +37,7 @@ The pair $(X, d)$ is a **metric space**; the last condition is the **triangle in
 
 **Proposition.** Strong equivalence implies uniform equivalence, which implies topological equivalence; neither converse holds in general. Two metrics $d_1, d_2$ are uniformly equivalent exactly when they have the same uniformly continuous maps into every metric space, and exactly when they have the same Cauchy sequences.
 
-**Proof.** The implications are immediate from the definitions. For the failure of the converses, the usual metric $|x - y|$ on $\mathbb{R}$ and the metric $|\arctan x - \arctan y|$ induce the same topology but not the same uniformity, since points far apart can be made $\arctan$-close: with $x = M$ and $y = M + 1$ the first distance is $1$ while the second tends to $0$ as $M \to \infty$. On the other hand $d$ and $\min(d, 1)$ are uniformly equivalent but not strongly equivalent. $\square$
+**Proof.** The implications are immediate from the definitions. For the failure of the converses, the usual metric $|x - y|$ on $\mathbb{R}$ and the metric $|\arctan x - \arctan y|$ induce the same topology but not the same uniformity, since points far apart can be made $\arctan$-close: with $x = M$ and $y = M + 1$ the first distance is $1$ while the second tends to $0$ as $M \to \infty$. On the other hand $d$ and $\min(d, 1)$ are uniformly equivalent but not strongly equivalent.
 
 The point is that the metric, and not merely its topology, controls Cauchy sequences. Completeness is therefore a property of the metric or of the uniform structure, and not of the topology.
 
@@ -51,7 +51,7 @@ The point is that the metric, and not merely its topology, controls Cauchy seque
 
 **Proposition.** Lipschitz implies uniformly continuous, which implies continuous. An isometry is injective and uniformly continuous, and a bijective isometry is a homeomorphism whose inverse is an isometry.
 
-**Proof.** Given $L$, take $\delta = \epsilon / \max(L, 1)$; given uniform continuity, take $\delta$ at the point; injectivity of an isometry follows from $d_Y(f(x), f(x')) = 0 \Rightarrow x = x'$. $\square$
+**Proof.** Given $L$, take $\delta = \epsilon / \max(L, 1)$; given uniform continuity, take $\delta$ at the point; injectivity of an isometry follows from $d_Y(f(x), f(x')) = 0 \Rightarrow x = x'$.
 
 **Theorem (Banach fixed point theorem).** Let $(X, d)$ be a complete metric space and let $f : X \to X$ be a contraction with constant $L < 1$. Then $f$ has exactly one fixed point $x^*$, and for every $x_0 \in X$ the iterates $x_{n+1} = f(x_n)$ converge to $x^*$ with the estimate
 
@@ -59,7 +59,7 @@ $$
 d(x_n, x^*) \leq \frac{L^n}{1 - L} \, d(x_1, x_0).
 $$
 
-**Proof.** For $m > n$, the triangle inequality and the geometric bound give $d(x_n, x_m) \leq \frac{L^n}{1-L} d(x_1, x_0)$, so $(x_n)$ is Cauchy; let $x^*$ be its limit, which exists by completeness. Continuity of $f$ gives $f(x^*) = \lim f(x_n) = \lim x_{n+1} = x^*$. If $y$ is another fixed point, then $d(x^*, y) = d(f(x^*), f(y)) \leq L\,d(x^*, y)$, forcing $d(x^*, y) = 0$. The estimate follows by letting $m \to \infty$. $\square$
+**Proof.** For $m > n$, the triangle inequality and the geometric bound give $d(x_n, x_m) \leq \frac{L^n}{1-L} d(x_1, x_0)$, so $(x_n)$ is Cauchy; let $x^*$ be its limit, which exists by completeness. Continuity of $f$ gives $f(x^*) = \lim f(x_n) = \lim x_{n+1} = x^*$. If $y$ is another fixed point, then $d(x^*, y) = d(f(x^*), f(y)) \leq L\,d(x^*, y)$, forcing $d(x^*, y) = 0$. The estimate follows by letting $m \to \infty$.
 
 The theorem is the standard existence proof for solutions of differential and integral equations (both Part III's): the solution operator is a contraction on a suitable complete space of functions, and completeness is exactly the hypothesis the argument consumes.
 
@@ -101,7 +101,7 @@ by induction on $n$, since integrating the $k$-th term of $f_n$ produces the $(k
 
 **Proposition.** Let $f : X \to Y$ be uniformly continuous and let $(x_n)$ be Cauchy in $X$. Then $(f(x_n))$ is Cauchy in $Y$. Continuity alone does not suffice: the homeomorphism $x \mapsto 1/x$ of $(0,1)$ onto $(1,\infty)$ carries the Cauchy sequence $1/n$ to the unbounded sequence $n$.
 
-**Proof.** Given $\epsilon$ choose $\delta$ for uniform continuity and $N$ for the Cauchy condition; then $m, n \geq N$ gives $d_Y(f(x_m), f(x_n)) < \epsilon$. For the counterexample, $d(f(1/n), f(1/m)) = |n - m|$ is unbounded. $\square$
+**Proof.** Given $\epsilon$ choose $\delta$ for uniform continuity and $N$ for the Cauchy condition; then $m, n \geq N$ gives $d_Y(f(x_m), f(x_n)) < \epsilon$. For the counterexample, $d(f(1/n), f(1/m)) = |n - m|$ is unbounded.
 
 ### Complete Spaces
 
@@ -109,11 +109,11 @@ by induction on $n$, since integrating the $k$-th term of $f_n$ produces the $(k
 
 **Theorem.** A subspace $A$ of a complete metric space $X$ is complete if and only if $A$ is closed in $X$.
 
-**Proof.** If $A$ is closed and $(a_n)$ is Cauchy in $A$, it converges in $X$ to some $x$, which lies in $\overline A = A$; so $A$ is complete. Conversely, if $A$ is complete and $x \in \overline A$, choose $a_n \in A$ with $d(a_n, x) < 1/n$; then $(a_n)$ is Cauchy, so it converges to a point of $A$, which must be $x$; hence $A$ is closed. $\square$
+**Proof.** If $A$ is closed and $(a_n)$ is Cauchy in $A$, it converges in $X$ to some $x$, which lies in $\overline A = A$; so $A$ is complete. Conversely, if $A$ is complete and $x \in \overline A$, choose $a_n \in A$ with $d(a_n, x) < 1/n$; then $(a_n)$ is Cauchy, so it converges to a point of $A$, which must be $x$; hence $A$ is closed.
 
 **Theorem.** $\mathbb{K}^n$ with the Euclidean metric is complete. More generally, a finite product of complete metric spaces, with any of the standard product metrics, is complete.
 
-**Pro.** A Cauchy sequence in $\mathbb{K}^n$ has Cauchy coordinate sequences, since each coordinate difference is bounded by the norm of the difference. By completeness of $\mathbb{K}$ , each coordinate converges, and the coordinatewise limit is the limit of the sequence because finitely many coordinates are involved. $\square$
+**Pro.** A Cauchy sequence in $\mathbb{K}^n$ has Cauchy coordinate sequences, since each coordinate difference is bounded by the norm of the difference. By completeness of $\mathbb{K}$ , each coordinate converges, and the coordinatewise limit is the limit of the sequence because finitely many coordinates are involved.
 
 **Example.** $\mathbb{R}^n$ is complete; so is every closed subset of it. The rationals $\mathbb{Q}$ with $|x - y|$ are not complete, the sequence of decimal truncations of $\sqrt{2}$ being Cauchy without a rational limit; nor is $(0, 1)$, nor $\mathbb{Q}$ with the $p$-adic metric, whose completion is $\mathbb{Q}_p$.
 
@@ -141,13 +141,13 @@ $$
 
 **The embedding.** The map $\iota(x) = [(x, x, x, \ldots)]$ is an isometry, since constant sequences satisfy $\hat d(\iota x, \iota y) = d(x, y)$, and its image is dense: a class $[(x_n)]$ is the limit of the classes $\iota(x_k)$ as $k \to \infty$, because $d(x_n, x_k)$ is small for $n, k$ large.
 
-**Uniqueness.** Let $(\hat X', \iota')$ have the same properties. Define $\Phi : \hat X \to \hat X'$ by $\Phi(\lim \iota(x_n)) = \lim \iota'(x_n)$ for a Cauchy sequence $(x_n)$; the definition is forced, and the limits exist by completeness of $\hat X'$. The map is well defined and isometric because $\iota, \iota'$ are isometric and limits are unique, and it is surjective by density of $\iota'(X)$. Uniqueness of $\Phi$ is clear from the defining formula, since $X$ is dense. $\square$
+**Uniqueness.** Let $(\hat X', \iota')$ have the same properties. Define $\Phi : \hat X \to \hat X'$ by $\Phi(\lim \iota(x_n)) = \lim \iota'(x_n)$ for a Cauchy sequence $(x_n)$; the definition is forced, and the limits exist by completeness of $\hat X'$. The map is well defined and isometric because $\iota, \iota'$ are isometric and limits are unique, and it is surjective by density of $\iota'(X)$. Uniqueness of $\Phi$ is clear from the defining formula, since $X$ is dense.
 
 ### The Universal Property
 
 **Theorem.** Let $Y$ be a complete metric space and $f : X \to Y$ uniformly continuous. Then $f$ extends uniquely to a uniformly continuous map $\hat f : \hat X \to Y$, and $\hat f \circ \iota = f$.
 
-**Proof.** For $p \in \hat X$ choose $x_n \in X$ with $\iota(x_n) \to p$; then $(x_n)$ is Cauchy, so $(f(x_n))$ is Cauchy by uniform continuity and converges in $Y$; set $\hat f(p) = \lim f(x_n)$. The value is independent of the chosen sequence, and uniform continuity of $\hat f$ follows by applying the given $\delta$ of $f$ to the dense subset and passing to limits. Uniqueness is from density and continuity. $\square$
+**Proof.** For $p \in \hat X$ choose $x_n \in X$ with $\iota(x_n) \to p$; then $(x_n)$ is Cauchy, so $(f(x_n))$ is Cauchy by uniform continuity and converges in $Y$; set $\hat f(p) = \lim f(x_n)$. The value is independent of the chosen sequence, and uniform continuity of $\hat f$ follows by applying the given $\delta$ of $f$ to the dense subset and passing to limits. Uniqueness is from density and continuity.
 
 Thus the completion is characterised by a universal property: it is the initial complete space receiving a uniformly continuous map from $X$. This is the sense in which the completion is a universal construction, and it is this characterisation, not the particular construction by Cauchy sequences, that is used in practice. Repeating the construction starting from $\mathbb{Q}$ with the usual metric yields $\mathbb{R}$; starting from $\mathbb{Q}$ with the $p$-adic metric yields $\mathbb{Q}_p$; starting from a field with an absolute value yields its completion, a construction taken up with valuations in the companion category.
 
@@ -197,7 +197,7 @@ $$
 
 **Proposition.** $d_\infty$ is a metric on $B(X, Y)$, and it is complete when $(Y, d)$ is complete.
 
-**Proof.** The metric axioms are inherited from $d$ pointwise, with the supremum finite by boundedness. For completeness, let $(f_n)$ be Cauchy in the sup metric; then $(f_n(x))$ is Cauchy in $Y$ for each $x$, with limit $f(x)$. Given $\epsilon > 0$, choose $N$ with $d_\infty(f_m, f_n) < \epsilon/2$ for $m, n \geq N$; passing to the limit in $m$ gives $d(f_n(x), f(x)) \leq \epsilon/2$ for all $x$, so $f$ is bounded and $d_\infty(f_n, f) \leq \epsilon/2$; hence $f_n \to f$. $\square$
+**Proof.** The metric axioms are inherited from $d$ pointwise, with the supremum finite by boundedness. For completeness, let $(f_n)$ be Cauchy in the sup metric; then $(f_n(x))$ is Cauchy in $Y$ for each $x$, with limit $f(x)$. Given $\epsilon > 0$, choose $N$ with $d_\infty(f_m, f_n) < \epsilon/2$ for $m, n \geq N$; passing to the limit in $m$ gives $d(f_n(x), f(x)) \leq \epsilon/2$ for all $x$, so $f$ is bounded and $d_\infty(f_n, f) \leq \epsilon/2$; hence $f_n \to f$.
 
 **Definition.** A sequence $(f_n)$ of functions $X \to Y$ **converges uniformly** to $f$ if for every $\epsilon > 0$ there is $N$ with $d(f_n(x), f(x)) < \epsilon$ for all $n \geq N$ and all $x \in X$; equivalently, if $d_\infty(f_n, f) \to 0$ when the functions are bounded. It **converges pointwise** if $f_n(x) \to f(x)$ for each $x$.
 
@@ -205,17 +205,17 @@ $$
 
 **Theorem (continuity of the uniform limit).** If $f_n : X \to Y$ are continuous and $f_n \to f$ uniformly, then $f$ is continuous.
 
-**Proof.** Given $x$ and $\epsilon > 0$, choose $n$ with $d(f_n(z), f(z)) < \epsilon/3$ for all $z$, then $\delta$ with $d(f_n(x), f_n(x')) < \epsilon/3$ when $d(x, x') < \delta$. The triangle inequality gives $d(f(x), f(x')) < \epsilon$. $\square$
+**Proof.** Given $x$ and $\epsilon > 0$, choose $n$ with $d(f_n(z), f(z)) < \epsilon/3$ for all $z$, then $\delta$ with $d(f_n(x), f_n(x')) < \epsilon/3$ when $d(x, x') < \delta$. The triangle inequality gives $d(f(x), f(x')) < \epsilon$.
 
 **Corollary.** The continuous bounded functions on a metric space form a closed subset $C_b(X, Y) \subseteq B(X, Y)$; when $Y$ is complete, $C_b(X, Y)$ is complete.
 
-**Proof.** The limit of a uniformly convergent sequence of continuous functions is continuous, which is closedness in the sup metric; a closed subset of a complete space is complete. $\square$
+**Proof.** The limit of a uniformly convergent sequence of continuous functions is continuous, which is closedness in the sup metric; a closed subset of a complete space is complete.
 
 ### Uniform Convergence in Analysis
 
 **Theorem (Cauchy criterion).** A sequence $(f_n)$ converges uniformly to a bounded limit if and only if for every $\epsilon > 0$ there is $N$ with $d_\infty(f_m, f_n) < \epsilon$ for $m, n \geq N$.
 
-**Proof.** This is the completeness of the sup metric for bounded functions, together with the observation that a uniformly Cauchy sequence is bounded. $\square$
+**Proof.** This is the completeness of the sup metric for bounded functions, together with the observation that a uniformly Cauchy sequence is bounded.
 
 **Theorem (interchange of limit and integral; the integral is Part III's, quoted).** Let $f_n : [a, b] \to \mathbb{R}$ be Riemann integrable with $f_n \to f$ uniformly. Then $f$ is Riemann integrable and
 
@@ -223,11 +223,11 @@ $$
 \int_a^b f = \lim_{n \to \infty} \int_a^b f_n.
 $$
 
-**Proof.** Uniform convergence controls the difference of the integrals: $\left|\int f_n - \int f\right| \leq (b - a) \sup |f_n - f| \to 0$. Integrability of $f$ follows from the standard criterion, since $f$ can be approximated uniformly by integrable functions. $\square$
+**Proof.** Uniform convergence controls the difference of the integrals: $\left|\int f_n - \int f\right| \leq (b - a) \sup |f_n - f| \to 0$. Integrability of $f$ follows from the standard criterion, since $f$ can be approximated uniformly by integrable functions.
 
 **Theorem (Dini).** Let $X$ be compact, $f_n : X \to \mathbb{R}$ continuous with $f_n \to f$ pointwise and $f_n \geq f_{n+1}$ for all $n$, with $f$ continuous. Then $f_n \to f$ uniformly.
 
-**Proof.** The functions $g_n = f_n - f$ decrease to $0$; given $\epsilon > 0$ the open sets $U_n = \{x : g_n(x) < \epsilon\}$ increase and cover $X$, so by compactness $U_N = X$ for some $N$, giving uniform convergence. $\square$
+**Proof.** The functions $g_n = f_n - f$ decrease to $0$; given $\epsilon > 0$ the open sets $U_n = \{x : g_n(x) < \epsilon\}$ increase and cover $X$, so by compactness $U_N = X$ for some $N$, giving uniform convergence.
 
 Uniform convergence is the metric form of a statement about uniform spaces: the pointwise convergence uniformity on a set of functions is not complete, while the uniformity of uniform convergence is, and it is the latter that has a complete function space. The distinction is taken up again in measure theory, where almost everywhere convergence replaces pointwise convergence and the dominated convergence theorem replaces uniform convergence.
 
@@ -239,23 +239,23 @@ Uniform convergence is the metric form of a statement about uniform spaces: the 
 
 **Proposition.** A countable union of meagre sets is meagre; a subset of a meagre set is meagre; nowhere dense sets are meagre and have empty interior. The relation between meagreness and "small" in the measure-theoretic sense is one of analogy, not implication: $\mathbb{R}$ decomposes as the union of a meagre set and a set of measure zero, and in that decomposition the meagre piece may have full measure while the null piece may be comeagre.
 
-**Proof.** Countable unions of countable unions are countable unions, and a subset of a nowhere dense set is nowhere dense. For the decomposition, enumerate the rationals as $q_1, q_2, \ldots$ and let $I_{n,k}$ be an open interval about $q_n$ of length $2^{-n-k}$; then $G_k = \bigcup_n I_{n,k}$ is open and dense with Lebesgue measure at most $\sum_{n \geq 1} 2^{-n-k} = 2^{-k}$, so $N = \bigcap_k G_k$ is a countable intersection of dense open sets, hence comeagre, and has measure zero. Its complement is therefore meagre and of full measure. $\square$
+**Proof.** Countable unions of countable unions are countable unions, and a subset of a nowhere dense set is nowhere dense. For the decomposition, enumerate the rationals as $q_1, q_2, \ldots$ and let $I_{n,k}$ be an open interval about $q_n$ of length $2^{-n-k}$; then $G_k = \bigcup_n I_{n,k}$ is open and dense with Lebesgue measure at most $\sum_{n \geq 1} 2^{-n-k} = 2^{-k}$, so $N = \bigcap_k G_k$ is a countable intersection of dense open sets, hence comeagre, and has measure zero. Its complement is therefore meagre and of full measure.
 
 ### The Baire Category Theorem
 
 **Theorem (Baire).** Every complete metric space is a Baire space. Every locally compact Hausdorff space is a Baire space.
 
-**Proof (complete metric case).** Let $U_1, U_2, \ldots$ be dense open sets; we show $\bigcap_n U_n$ is dense. Let $V$ be a nonempty open set and pick $x_1 \in V \cap U_1$ with a radius $r_1 < 1$ and $\overline{B}(x_1, r_1) \subseteq V \cap U_1$, possible by density and openness. Inductively, having chosen $x_n$ and $r_n < 1/n$, choose $x_{n+1} \in B(x_n, r_n) \cap U_{n+1}$ and $r_{n+1} < 1/(n+1)$ with $\overline{B}(x_{n+1}, r_{n+1}) \subseteq B(x_n, r_n) \cap U_{n+1}$. The centres form a Cauchy sequence, since $x_m \in B(x_n, r_n)$ for $m > n$ and $r_n \to 0$; by completeness they converge to some $x$, which lies in $\overline{B}(x_n, r_n)$ for every $n$, hence in $U_n$ for every $n$ and in $V$ for the initial choice. Thus $\bigcap_n U_n$ meets every nonempty open set and is dense. The locally compact case is the same argument with compact neighbourhoods in place of closed balls. $\square$
+**Proof (complete metric case).** Let $U_1, U_2, \ldots$ be dense open sets; we show $\bigcap_n U_n$ is dense. Let $V$ be a nonempty open set and pick $x_1 \in V \cap U_1$ with a radius $r_1 < 1$ and $\overline{B}(x_1, r_1) \subseteq V \cap U_1$, possible by density and openness. Inductively, having chosen $x_n$ and $r_n < 1/n$, choose $x_{n+1} \in B(x_n, r_n) \cap U_{n+1}$ and $r_{n+1} < 1/(n+1)$ with $\overline{B}(x_{n+1}, r_{n+1}) \subseteq B(x_n, r_n) \cap U_{n+1}$. The centres form a Cauchy sequence, since $x_m \in B(x_n, r_n)$ for $m > n$ and $r_n \to 0$; by completeness they converge to some $x$, which lies in $\overline{B}(x_n, r_n)$ for every $n$, hence in $U_n$ for every $n$ and in $V$ for the initial choice. Thus $\bigcap_n U_n$ meets every nonempty open set and is dense. The locally compact case is the same argument with compact neighbourhoods in place of closed balls.
 
 **Corollary.** $\mathbb{R}$ is not a countable union of nowhere dense sets, and $\mathbb{Q}$ is meagre in $\mathbb{R}$; consequently $\mathbb{Q}$ is not a Baire space and the irrationals form a dense set of the second category.
 
-**Proof.** $\mathbb{R}$ is complete, hence Baire, so it cannot be meagre; $\mathbb{Q}$ is a countable union of singletons, each nowhere dense. A Baire space is not meagre in itself, and every subset of a meagre set is meagre, so $\mathbb{Q}$ is not Baire. Since $\mathbb{R} = \mathbb{Q} \cup (\mathbb{R} \setminus \mathbb{Q})$ is not meagre and $\mathbb{Q}$ is, the irrationals are not meagre. $\square$
+**Proof.** $\mathbb{R}$ is complete, hence Baire, so it cannot be meagre; $\mathbb{Q}$ is a countable union of singletons, each nowhere dense. A Baire space is not meagre in itself, and every subset of a meagre set is meagre, so $\mathbb{Q}$ is not Baire. Since $\mathbb{R} = \mathbb{Q} \cup (\mathbb{R} \setminus \mathbb{Q})$ is not meagre and $\mathbb{Q}$ is, the irrationals are not meagre.
 
 ### Consequences
 
 **Theorem.** The set of continuous functions $f : [0, 1] \to \mathbb{R}$ that are differentiable (Part III's notion, named here) at at least one point is meagre in $C[0, 1]$ with the sup metric; in particular there exist continuous nowhere differentiable functions.
 
-**Proof sketch.** For $n \in \mathbb{N}$ let $A_n$ be the set of $f$ for which some point $x$ satisfies $|f(x + h) - f(x)| \leq n|h|$ for all small $h$. Each $A_n$ is closed and has empty interior in the sup metric, using a piecewise linear sawtooth perturbation of small sup norm and large slope. The set of functions differentiable somewhere is contained in $\bigcup_n A_n$, a countable union of nowhere dense sets, hence meagre; the space $C[0,1]$ is complete and therefore not meagre, so the complement is nonempty and in fact of the second category. $\square$
+**Proof sketch.** For $n \in \mathbb{N}$ let $A_n$ be the set of $f$ for which some point $x$ satisfies $|f(x + h) - f(x)| \leq n|h|$ for all small $h$. Each $A_n$ is closed and has empty interior in the sup metric, using a piecewise linear sawtooth perturbation of small sup norm and large slope. The set of functions differentiable somewhere is contained in $\bigcup_n A_n$, a countable union of nowhere dense sets, hence meagre; the space $C[0,1]$ is complete and therefore not meagre, so the complement is nonempty and in fact of the second category.
 
 **Remark (the Baire category method).** The theorem is used as a tool in three shapes. It proves **existence** without construction, as in the theorem above. It proves **open mapping principles**: the open mapping theorem, the closed graph theorem and the uniform boundedness principle for Banach spaces are all consequences of the Baire category theorem for the complete space on which the operators act, and they are treated with normed spaces in the companion category. It proves **genericity** statements, since a countable intersection of dense open sets is a residual set and "most" points may be taken to mean "complementary to a meagre set". The method is used in measure theory in the companion article, where it supplies the decomposition of the line into a meagre set and a null set, and in the theory of locally compact groups; the open mapping and closed graph theorems for Banach spaces rest on it as well.
 

@@ -22,7 +22,7 @@ Two warnings are in order at the outset, both inherited from the companion artic
 
 First, the mathematics below is **standard quantum information theory** transcribed into biquaternion notation. Nothing here depends on the physical hypothesis that $\mathbb{M}_+$ is a distinct sector of the world. The reformulation is structural: it says where the objects of quantum computation live in the algebra and which algebraic operation each circuit ingredient is.
 
-Second, the word "rotor conjugation" is used for the gate action, and it must be distinguished sharply from the Lorentz rotor of the material sector. Both actions have the same form $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^\dagger$, but the condition on the acting element is different. The material-sector rotor satisfies the **unit-norm-form** condition $\tilde{\Lambda}\bar{\tilde{\Lambda}} = e_0$ and generates $SL(2,\mathbb{C})$; a gate satisfies the **matrix-unitarity** condition $\tilde{U}\tilde{U}^\dagger = e_0$ and generates $U(2)$. A Lorentz boost is Hermitian and therefore satisfies $\tilde{\Lambda}\tilde{\Lambda}^\dagger = \tilde{\Lambda}^2 \neq e_0$: it is a perfectly good rotor on $\mathbb{M}_-$ but **not** a gate on $\mathbb{M}_+$, because it does not preserve the trace. The two groups sit in the same algebra, and keeping them apart is the main technical discipline of this article.
+Second, the word "rotor conjugation" is used for the gate action, and it must be distinguished sharply from the Lorentz rotor of the material sector. Both actions have the same form $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^\dagger$, but the condition on the acting element is different. The material-sector rotor satisfies the **unit-norm** condition $\tilde{\Lambda}\bar{\tilde{\Lambda}} = e_0$ and generates $SL(2,\mathbb{C})$; a gate satisfies the **matrix-unitarity** condition $\tilde{U}\tilde{U}^\dagger = e_0$ and generates $U(2)$. A Lorentz boost is Hermitian and therefore satisfies $\tilde{\Lambda}\tilde{\Lambda}^\dagger = \tilde{\Lambda}^2 \neq e_0$: it is a perfectly good rotor on $\mathbb{M}_-$ but **not** a gate on $\mathbb{M}_+$, because it does not preserve the trace. The two groups sit in the same algebra, and keeping them apart is the main technical discipline of this article.
 
 The article is organised as follows. The gate group and its structure are described first. Then the standard single-qubit gate set is exhibited in biquaternion form. Then composition is treated as the algebra product, including the Clifford group. Then multi-qubit gates are built in the tensor-product arena, with the controlled gate, CNOT, CZ, and SWAP. Then a simple circuit — the preparation of a Bell state — is worked through algebraically. Then the reversible gates are contrasted with the irreversible channels of the read list. The article closes with what the reformulation does and does not claim, and with open questions.
 
@@ -62,9 +62,9 @@ So a gate maps states to states.
 
 **The gate is a channel of Kraus rank one.** In the language of the companion article on quantum channels, $\Phi_{\tilde{U}}$ has the single Kraus operator $\tilde{K} = \tilde{U}$ with $\tilde{K}^\dagger\tilde{K} = e_0$. It is therefore completely positive and trace preserving, and it is exactly the class of channels that are **invertible within the channels**, with inverse $\Phi_{\tilde{U}}^{-1} = \Phi_{\tilde{U}^\dagger}$ (whose Kraus operator is $\tilde{U}^\dagger$); it is also exactly the class that **preserves purity**, $\mathrm{Tr}(\Phi_{\tilde{U}}(\tilde{\rho})^2) = \mathrm{Tr}(\tilde{\rho}^2)$. A gate is a reversible process, and conversely every reversible process of the informational sector is a gate.
 
-### Why Matrix-Unitarity and Not Unit Norm Form
+### Why Matrix-Unitarity and Not Unit Norm
 
-The condition $\tilde{U}\tilde{U}^\dagger = e_0$ must not be confused with the unit-norm-form condition $\tilde{U}\bar{\tilde{U}} = e_0$ that defines the Lorentz rotors $SL(2,\mathbb{C})$. The two conditions pick out two different subgroups of the same algebra, and only the first is a group of gates.
+The condition $\tilde{U}\tilde{U}^\dagger = e_0$ must not be confused with the unit-norm condition $\tilde{U}\bar{\tilde{U}} = e_0$ that defines the Lorentz rotors $SL(2,\mathbb{C})$. The two conditions pick out two different subgroups of the same algebra, and only the first is a group of gates.
 
 The distinction is visible in a single example. A **boost biquaternion**
 
@@ -72,7 +72,7 @@ $$
 \tilde{\Lambda} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\,\hat{\mathbf{u}}
 $$
 
-is Hermitian, $\tilde{\Lambda}^\dagger = \tilde{\Lambda}$, and has unit norm form, $\tilde{\Lambda}\bar{\tilde{\Lambda}} = e_0$. Hence $\tilde{\Lambda}\tilde{\Lambda}^\dagger = \tilde{\Lambda}^2 \neq e_0$, and conjugation by $\tilde{\Lambda}$ does not preserve the trace:
+is Hermitian, $\tilde{\Lambda}^\dagger = \tilde{\Lambda}$, and has unit norm, $\tilde{\Lambda}\bar{\tilde{\Lambda}} = e_0$. Hence $\tilde{\Lambda}\tilde{\Lambda}^\dagger = \tilde{\Lambda}^2 \neq e_0$, and conjugation by $\tilde{\Lambda}$ does not preserve the trace:
 
 $$
 \mathrm{Tr}\!\left(\tilde{\Lambda}\tilde{\rho}\tilde{\Lambda}^\dagger\right) \neq \mathrm{Tr}(\tilde{\rho}) \quad \text{in general}.
@@ -472,7 +472,7 @@ The channel set is convex, with the gates among its extreme points; the companio
 
 ## Open Questions
 
-**1. The two groups in one algebra.** The gate group $U(2)$ and the Lorentz group $SL(2,\mathbb{C})$ both act on the framework, on $\mathbb{M}_+$ and $\mathbb{M}_-$ respectively, by the same form of conjugation. A boost is a rotor on $\mathbb{M}_-$ but not a gate on $\mathbb{M}_+$; a gate is unitary on $\mathbb{M}_+$ but has no norm-form-preserving interpretation on $\mathbb{M}_-$. What is the precise sense in which a physical operation can be one and not the other, and is there any process that is naturally described by both?
+**1. The two groups in one algebra.** The gate group $U(2)$ and the Lorentz group $SL(2,\mathbb{C})$ both act on the framework, on $\mathbb{M}_+$ and $\mathbb{M}_-$ respectively, by the same form of conjugation. A boost is a rotor on $\mathbb{M}_-$ but not a gate on $\mathbb{M}_+$; a gate is unitary on $\mathbb{M}_+$ but has no biquaternion-norm-preserving interpretation on $\mathbb{M}_-$. What is the precise sense in which a physical operation can be one and not the other, and is there any process that is naturally described by both?
 
 **2. The measurement as a gate.** Every channel is a generalized measurement followed by a state transformation. The controlled gate shows that an idempotent can be used coherently, and dephasing shows that it can be used incoherently. Is there an algebraic criterion, beyond Kraus rank, that distinguishes the two uses in terms of the elements involved?
 
@@ -486,7 +486,7 @@ The channel set is convex, with the gates among its extreme points; the companio
 
 ## Summary
 
-A gate in the biquaternion framework is a **unitary element** $\tilde{U}\in\mathbb{B}$ with $\tilde{U}\tilde{U}^\dagger = e_0$, acting on a state $\tilde{\rho}\in\mathbb{M}_+$ by **rotor conjugation** $\tilde{\rho}\mapsto\tilde{U}\tilde{\rho}\tilde{U}^\dagger$. This is exactly the class of channels of Kraus rank one, and exactly the reversible, purity-preserving state maps. The gate group is $U(2) = U(1)\cdot SU(2)$: every gate is a central phase times a rotation, and the phase is unobservable, so the effective group is $PU(2)\cong SO(3)$ acting on the Bloch ball. The condition $\tilde{U}\tilde{U}^\dagger = e_0$ is **not** the unit-norm-form condition $\tilde{\Lambda}\bar{\tilde{\Lambda}} = e_0$ of the Lorentz rotors: a boost is a rotor on $\mathbb{M}_-$ but not a gate on $\mathbb{M}_+$.
+A gate in the biquaternion framework is a **unitary element** $\tilde{U}\in\mathbb{B}$ with $\tilde{U}\tilde{U}^\dagger = e_0$, acting on a state $\tilde{\rho}\in\mathbb{M}_+$ by **rotor conjugation** $\tilde{\rho}\mapsto\tilde{U}\tilde{\rho}\tilde{U}^\dagger$. This is exactly the class of channels of Kraus rank one, and exactly the reversible, purity-preserving state maps. The gate group is $U(2) = U(1)\cdot SU(2)$: every gate is a central phase times a rotation, and the phase is unobservable, so the effective group is $PU(2)\cong SO(3)$ acting on the Bloch ball. The condition $\tilde{U}\tilde{U}^\dagger = e_0$ is **not** the unit-norm condition $\tilde{\Lambda}\bar{\tilde{\Lambda}} = e_0$ of the Lorentz rotors: a boost is a rotor on $\mathbb{M}_-$ but not a gate on $\mathbb{M}_+$.
 
 The standard single-qubit gate set has explicit representatives: the Pauli gates are $\tilde{Q}=ie_1$, $\tilde{Y}=ie_2$, $\tilde{Z}=ie_3$; the Hadamard is $\tilde{H}=\tfrac{i}{\sqrt2}(e_1+e_3)$; the phase and $T$ gates are the rotations $\tfrac{1}{\sqrt2}(e_0+e_3)$ and $\cos\tfrac{\pi}{8}e_0+\sin\tfrac{\pi}{8}e_3$; a general gate is $e^{i\phi}(\cos\tfrac{\theta}{2}e_0+\sin\tfrac{\theta}{2}\hat{\mathbf{n}})$. Apart from the identity gate, the Hermitian gates are the $\pi$-rotations $\pm i\hat{\mathbf{n}}$; the Pauli and Hadamard gates are of this type, the phase and $T$ gates are not.
 
@@ -510,7 +510,7 @@ The **contrast with the irreversible channels** is the Kraus-rank dichotomy. A c
 | $\tilde{\rho}=\tfrac12(e_0+i\mathbf{r})$ | State of a qubit |
 | $\tilde{P}_\pm(\hat{\mathbf{n}})=\tfrac12(e_0\pm i\hat{\mathbf{n}})$ | Complementary idempotents |
 | $\tilde{U}\tilde{U}^\dagger=e_0$ | Gate (matrix-unitary element); $U(2)$ |
-| $\tilde{\Lambda}\bar{\tilde{\Lambda}}=e_0$ | Lorentz rotor (unit norm form); $SL(2,\mathbb{C})$, not a gate |
+| $\tilde{\Lambda}\bar{\tilde{\Lambda}}=e_0$ | Lorentz rotor (unit norm); $SL(2,\mathbb{C})$, not a gate |
 | $\Phi_{\tilde{U}}(\tilde{\rho})=\tilde{U}\tilde{\rho}\tilde{U}^\dagger$ | Rotor conjugation (gate action) |
 | $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ | Trace formula (Born rule) |
 | $\tilde{Q}=ie_1,\ \tilde{Y}=ie_2,\ \tilde{Z}=ie_3$ | Pauli gates |

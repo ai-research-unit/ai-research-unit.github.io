@@ -63,7 +63,7 @@ $$
 A^n \otimes_A \operatorname{Hom}_{M_n(A)}(A^n, N) \longrightarrow N,
 $$
 
-sending $(u,f)$ to $f(u)$; it is surjective because $A^n$ generates $\operatorname{Mod}(M_n(A))$, every module being a quotient of a direct sum of copies of the regular module $M_n(A)=A^n\oplus\cdots$ and each summand being reachable from $A^n$, and it is injective by the same description of $\operatorname{Hom}_{M_n(A)}(A^n,N)$. Hence $\Phi$ is an equivalence, with quasi-inverse $\Psi$. $\square$
+sending $(u,f)$ to $f(u)$; it is surjective because $A^n$ generates $\operatorname{Mod}(M_n(A))$, every module being a quotient of a direct sum of copies of the regular module $M_n(A)=A^n\oplus\cdots$ and each summand being reachable from $A^n$, and it is injective by the same description of $\operatorname{Hom}_{M_n(A)}(A^n,N)$. Hence $\Phi$ is an equivalence, with quasi-inverse $\Psi$.
 
 The heart of the theorem is that the free module $A^n$ carries two endomorphism rings: as a left $A$-module its endomorphism ring is $M_n(A^{\mathrm{op}})$, and as a left $M_n(A)$-module its endomorphism ring is $A^{\mathrm{op}}$, the Morita theorem reading these as $M_n(A)\cong\operatorname{End}_A(A^n)^{\mathrm{op}}$ and $A\cong\operatorname{End}_{M_n(A)}(A^n)^{\mathrm{op}}$. When $A$ is commutative the two opposite rings coincide with $M_n(A)$ and $A$. The equivalence exchanges the regular module of $A$ for the module $A^n$ over $M_n(A)$: under $\Phi$, ${}_A A$ corresponds to $A^n$ as a left $M_n(A)$-module, which is the direct sum of $n$ copies of the defining module of $M_n(A)$ when $A$ is a field. This is why the defining module of $M_n(F)$ inherits the role of the regular module of $F$.
 
@@ -95,7 +95,7 @@ $$
 
 is an equivalence of categories, with quasi-inverse $P \otimes_B -$. Conversely, every equivalence $\operatorname{Mod}(A)\to\operatorname{Mod}(B)$ arises in this way from a progenerator.
 
-*Proof.* The right $B$-module structure on $P$ is $p \cdot b = b(p)$, which is a right action because $B$ is the opposite of the endomorphism ring; this makes $P$ an $(A,B)$-bimodule since endomorphisms are $A$-linear. The adjunction $\operatorname{Hom}_A(P \otimes_B -, -)\cong\operatorname{Hom}_B(-,\operatorname{Hom}_A(P,-))$ has unit and counit which are isomorphisms precisely because $P$ is a generator (counit) and finitely generated projective (unit), by the standard argument dual to the matrix case above. $\square$
+*Proof.* The right $B$-module structure on $P$ is $p \cdot b = b(p)$, which is a right action because $B$ is the opposite of the endomorphism ring; this makes $P$ an $(A,B)$-bimodule since endomorphisms are $A$-linear. The adjunction $\operatorname{Hom}_A(P \otimes_B -, -)\cong\operatorname{Hom}_B(-,\operatorname{Hom}_A(P,-))$ has unit and counit which are isomorphisms precisely because $P$ is a generator (counit) and finitely generated projective (unit), by the standard argument dual to the matrix case above.
 
 **Theorem (Morita II).** The following are equivalent for unital rings $A$ and $B$.
 
@@ -103,7 +103,7 @@ is an equivalence of categories, with quasi-inverse $P \otimes_B -$. Conversely,
 2. $B \cong \operatorname{End}_A(P)^{\mathrm{op}}$ for some progenerator $P$ of left $A$-modules.
 3. $B \cong eM_n(A)e$ for some $n \geq 1$ and some idempotent $e \in M_n(A)$ with $M_n(A)eM_n(A)=M_n(A)$.
 
-*Proof.* The equivalence of (1) and (2) is Morita I. For (2)$\Leftrightarrow$(3), a finitely generated projective left $A$-module is a direct summand of $A^n$ for some $n$, hence of the form $P\cong A^ne$ for an idempotent $e \in M_n(A)$ acting on the right of the row module $A^n$; then $\operatorname{End}_A(P)^{\mathrm{op}}\cong eM_n(A)e$, and the generator condition is exactly $M_n(A)eM_n(A)=M_n(A)$. $\square$
+*Proof.* The equivalence of (1) and (2) is Morita I. For (2)$\Leftrightarrow$(3), a finitely generated projective left $A$-module is a direct summand of $A^n$ for some $n$, hence of the form $P\cong A^ne$ for an idempotent $e \in M_n(A)$ acting on the right of the row module $A^n$; then $\operatorname{End}_A(P)^{\mathrm{op}}\cong eM_n(A)e$, and the generator condition is exactly $M_n(A)eM_n(A)=M_n(A)$.
 
 An idempotent $e$ with $M_n(A)eM_n(A)=M_n(A)$ is called **full**. The characterization (3) shows that the Morita equivalence class of $A$ consists exactly of the full corner rings of matrix algebras over $A$, and the algebra $eM_n(A)e$ is the general form of an algebra with the same module category.
 
@@ -138,7 +138,7 @@ The following are not Morita invariants.
 - **The algebra itself.** $\mathbb{C}$ and $M_2(\mathbb{C})$ are Morita equivalent but not isomorphic, being of different dimensions over $\mathbb{C}$.
 - **The group of units.** $\mathbb{C}^{\times}$ is abelian and $GL_2(\mathbb{C})$ is not, yet $\mathbb{C}$ and $M_2(\mathbb{C})$ are Morita equivalent. What is preserved is $\operatorname{Aut}_A(M)$ for corresponding modules $M$ and $F(M)$, not the group of units of the algebra as such.
 - **Dimensions and cardinalities.** Morita equivalence can change the dimension of the algebra over its base ring arbitrarily, as the passage from $A$ to $M_n(A)$ shows.
-- **The trace form, the norm form and other algebra-level structures.** These are not determined by the module category.
+- **Algebra-level forms such as the trace and the determinant.** These are not determined by the module category.
 
 The dividing line is exact: Morita equivalence has access only to the category of modules, so anything that can be stated using modules and maps is invariant, and anything requiring the elements of the algebra as such need not be.
 
@@ -148,7 +148,7 @@ The behaviour of the simple modules deserves to be stated separately, because it
 
 **Theorem.** Let $F: \operatorname{Mod}(A)\to\operatorname{Mod}(B)$ be an equivalence. Then $F$ restricts to a bijection between the isomorphism classes of simple left $A$-modules and those of simple left $B$-modules, and for corresponding simple modules $S$ and $S'=F(S)$ there is a ring isomorphism $\operatorname{End}_A(S)\cong\operatorname{End}_B(S')$. Consequently the number of simple modules up to isomorphism is a Morita invariant, and so is the multiset of their endomorphism division rings.
 
-*Proof.* An equivalence preserves submodule lattices and, being additive and exact, preserves the property of having no proper nonzero submodule; fully faithful functors induce isomorphisms on endomorphism rings. $\square$
+*Proof.* An equivalence preserves submodule lattices and, being additive and exact, preserves the property of having no proper nonzero submodule; fully faithful functors induce isomorphisms on endomorphism rings.
 
 For $A=M_n(F)$ the statement is the one already met: the simple module of $M_n(F)$ is $F^n$, and the simple module of $F$ is $F$, with the same endomorphism ring $F$; the equivalence of §The Fundamental Example carries the one to the other. For the biquaternion algebra, the equivalence $\operatorname{Mod}(\mathbb{B})\simeq\operatorname{Mod}(\mathbb{C})$ matches the simple module $\mathbb{C}^2$ of $\mathbb{B}$ with the simple module $\mathbb{C}$ of $\mathbb{C}$, and the division rings match: $\operatorname{End}_{\mathbb{B}}(\mathbb{C}^2)=\mathbb{C}$ and $\operatorname{End}_{\mathbb{C}}(\mathbb{C})=\mathbb{C}$.
 
@@ -234,7 +234,7 @@ Let $F$ be a field. A finite-dimensional $F$-algebra $A$ is **central simple** i
 
 **Theorem.** Two central simple $F$-algebras $A$ and $B$ are Morita equivalent if and only if they have the same underlying division algebra, i.e. $A\cong M_m(D)$ and $B\cong M_n(D)$ for the same division algebra $D$ with center $F$.
 
-*Proof.* By the fundamental example, $M_m(D)$ and $M_n(D)$ are both Morita equivalent to $D$. Conversely, if $A\sim_M B$, then their simple modules have isomorphic endomorphism division rings by §Simple Modules under Morita Equivalence; the simple module of $M_n(D)$ is $D^n$ with endomorphism ring $D^{\mathrm{op}}$, so the underlying division algebras of $A$ and $B$ are isomorphic. $\square$
+*Proof.* By the fundamental example, $M_m(D)$ and $M_n(D)$ are both Morita equivalent to $D$. Conversely, if $A\sim_M B$, then their simple modules have isomorphic endomorphism division rings by §Simple Modules under Morita Equivalence; the simple module of $M_n(D)$ is $D^n$ with endomorphism ring $D^{\mathrm{op}}$, so the underlying division algebras of $A$ and $B$ are isomorphic.
 
 The set of Morita equivalence classes of central simple $F$-algebras therefore coincides with the set of isomorphism classes of finite-dimensional central division algebras over $F$, and it is a group under
 
@@ -254,7 +254,7 @@ so the Brauer class of $\mathbb{H}$ becomes trivial after base change to $\mathb
 
 ## Summary
 
-Morita equivalence is the equivalence relation on algebras generated by having equivalent module categories, equivalently by the existence of an $R$-linear equivalence $\operatorname{Mod}(A)\simeq\operatorname{Mod}(B)$. It is realized by a progenerator $P$ of left $A$-modules with $B\cong\operatorname{End}_A(P)^{\mathrm{op}}$, the equivalence being $\operatorname{Hom}_A(P,-)$ with quasi-inverse $P\otimes_B-$; equivalently, $B$ is a full corner $eM_n(A)e$ of a matrix algebra over $A$. The fundamental example is that $A$ and $M_n(A)$ are always Morita equivalent, via $P=A^n$, whose two endomorphism rings are $A^{\mathrm{op}}$ and $M_n(A^{\mathrm{op}})$. Morita equivalence preserves the center, the simple modules together with their endomorphism division rings, the finitely generated projectives and $K_0$, the lattice of two-sided ideals, and the isotypic structure of modules; it does not preserve the algebra, its dimension, its group of units, or algebra-level forms such as the trace and norm. Every finite-dimensional algebra is Morita equivalent to a unique basic algebra, and a semisimple algebra $\prod_i M_{n_i}(D_i)$ has basic algebra $\prod_i D_i$, so semisimple algebras over an algebraically closed field are classified up to Morita equivalence by the number of simple modules. For group algebras this gives $\mathbb{C}[G]\sim_M\mathbb{C}[H]$ exactly when $G$ and $H$ have the same number of conjugacy classes; in the modular case the group algebra splits into blocks and the comparison of blocks up to Morita equivalence is the organising principle. For central simple algebras the Morita equivalence classes are exactly the classes in the Brauer group, so $\operatorname{Br}(F)$ measures the failure of matrix algebras over $F$ to exhaust the central simple ones.
+Morita equivalence is the equivalence relation on algebras generated by having equivalent module categories, equivalently by the existence of an $R$-linear equivalence $\operatorname{Mod}(A)\simeq\operatorname{Mod}(B)$. It is realized by a progenerator $P$ of left $A$-modules with $B\cong\operatorname{End}_A(P)^{\mathrm{op}}$, the equivalence being $\operatorname{Hom}_A(P,-)$ with quasi-inverse $P\otimes_B-$; equivalently, $B$ is a full corner $eM_n(A)e$ of a matrix algebra over $A$. The fundamental example is that $A$ and $M_n(A)$ are always Morita equivalent, via $P=A^n$, whose two endomorphism rings are $A^{\mathrm{op}}$ and $M_n(A^{\mathrm{op}})$. Morita equivalence preserves the center, the simple modules together with their endomorphism division rings, the finitely generated projectives and $K_0$, the lattice of two-sided ideals, and the isotypic structure of modules; it does not preserve the algebra, its dimension, its group of units, or algebra-level forms such as the trace and the determinant. Every finite-dimensional algebra is Morita equivalent to a unique basic algebra, and a semisimple algebra $\prod_i M_{n_i}(D_i)$ has basic algebra $\prod_i D_i$, so semisimple algebras over an algebraically closed field are classified up to Morita equivalence by the number of simple modules. For group algebras this gives $\mathbb{C}[G]\sim_M\mathbb{C}[H]$ exactly when $G$ and $H$ have the same number of conjugacy classes; in the modular case the group algebra splits into blocks and the comparison of blocks up to Morita equivalence is the organising principle. For central simple algebras the Morita equivalence classes are exactly the classes in the Brauer group, so $\operatorname{Br}(F)$ measures the failure of matrix algebras over $F$ to exhaust the central simple ones.
 
 ## Summary of Notation
 

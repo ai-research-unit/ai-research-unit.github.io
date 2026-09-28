@@ -21,7 +21,7 @@ where $B$ is the polar form.
 
 **Theorem (structure of Clifford modules).** Let $(V,q)$ be a non-degenerate real quadratic space of dimension $n$ and let $S$ be its spinor module. If $\mathrm{Cl}(V,q)$ is simple — that is, for $n$ even, and for $n$ odd with $d=p-q\equiv3,7\bmod8$ — every finite-dimensional Clifford module $E$ is a direct sum of copies of the unique irreducible module $S$. If $n$ is odd with $d\equiv1,5\bmod8$, where the algebra is a product of two simple factors, then $E$ is a direct sum of copies of each of the two irreducible modules. In the simple case, in particular in the even case, this reads $E\cong S\otimes W$ for a vector space $W$, with the Clifford action $c(v)=c_S(v)\otimes\mathrm{id}_W$.
 
-**Proof.** The Clifford algebra is central simple over $\mathbb{R}$ for $n$ even, is simple with center $\mathbb{C}$ for $n$ odd with $d\equiv3,7\bmod8$, and is a product of two simple algebras for $n$ odd with $d\equiv1,5\bmod8$, by the classification of the preceding articles; over a simple algebra every module is a direct sum of copies of the simple module, and over a product of two simple algebras it is a direct sum of copies of the simple module of each factor. The tensor form of the action is the definition of the tensor product action. $\square$
+**Proof.** The Clifford algebra is central simple over $\mathbb{R}$ for $n$ even, is simple with center $\mathbb{C}$ for $n$ odd with $d\equiv3,7\bmod8$, and is a product of two simple algebras for $n$ odd with $d\equiv1,5\bmod8$, by the classification of the preceding articles; over a simple algebra every module is a direct sum of copies of the simple module, and over a product of two simple algebras it is a direct sum of copies of the simple module of each factor. The tensor form of the action is the definition of the tensor product action.
 
 **Definition.** The vector space $W$ is the **twisting space**, and $E=S\otimes W$ is the **twisted Clifford module**; a Clifford module is **untwisted** when $W$ is one-dimensional.
 
@@ -35,7 +35,7 @@ where $B$ is the polar form.
 
 **Theorem.** Let $(M,g)$ be a spin Riemannian manifold with spinor bundle $S$ and Levi-Civita connection $\nabla$. There is a unique connection $\nabla^S$ on $S$ that is compatible with the metric and the Clifford multiplication, $X\bigl(c(v)s\bigr)=c(\nabla_Xv)s+c(v)\nabla^S_Xs$ for all vector fields $X,v$ and sections $s$. For a twisted Clifford module bundle $E=S\otimes W$ with a connection $\nabla^W$ on $W$, the tensor connection $\nabla^E=\nabla^S\otimes\mathrm{id}+\mathrm{id}\otimes\nabla^W$ is compatible with the metric and the Clifford action.
 
-**Proof.** The spin connection is constructed by lifting the Levi-Civita connection to the spin structure; the compatibility condition determines it uniquely because the spin representation is faithful and the Clifford algebra generates the endomorphisms of the spinor fibre. The tensor connection satisfies the Leibniz rule and is compatible with the metric, and compatibility with the Clifford action is inherited from $\nabla^S$. $\square$
+**Proof.** The spin connection is constructed by lifting the Levi-Civita connection to the spin structure; the compatibility condition determines it uniquely because the spin representation is faithful and the Clifford algebra generates the endomorphisms of the spinor fibre. The tensor connection satisfies the Leibniz rule and is compatible with the metric, and compatibility with the Clifford action is inherited from $\nabla^S$.
 
 ## The Twisted Cauchy–Riemann Operator
 
@@ -55,7 +55,7 @@ $$
 
 where $T^*M$ is identified with $TM$ by the metric. When $E$ is $\mathbb{Z}/2$-graded and the grading is preserved by parallel transport, $D_E$ is odd, $D_E\Gamma(E_\pm)\subseteq\Gamma(E_\mp)$.
 
-**Proof.** The sum $\sum_ic(e_i)\nabla^E_{e_i}$ is a geometric first-order operator: a change of orthonormal frame replaces $e_i$ by $O_{ij}e_j$ with $O$ orthogonal, and the contracted expression is invariant because $c$ is linear and $\sum_iO_{ij}O_{ik}=\delta_{jk}$. Compatibility of $\nabla^E$ with the Clifford action identifies the sum with the composition displayed; oddness is the statement that $c(v)$ is odd and that $\nabla^E$ preserves the grading. $\square$
+**Proof.** The sum $\sum_ic(e_i)\nabla^E_{e_i}$ is a geometric first-order operator: a change of orthonormal frame replaces $e_i$ by $O_{ij}e_j$ with $O$ orthogonal, and the contracted expression is invariant because $c$ is linear and $\sum_iO_{ij}O_{ik}=\delta_{jk}$. Compatibility of $\nabla^E$ with the Clifford action identifies the sum with the composition displayed; oddness is the statement that $c(v)$ is odd and that $\nabla^E$ preserves the grading.
 
 **Example (the classical cases).** For $M=\mathbb{R}^2$ with the complex structure and $W$ trivial, the operator $D=\partial_0+i\partial_1$ is the classical Cauchy–Riemann operator, and its kernel is the holomorphic functions; for $M=\mathbb{R}^n$ with trivial twisting it is the generalised Cauchy–Riemann operator. The construction of this article is thus the co-ordinate-free and twisted form of those operators.
 
@@ -77,7 +77,7 @@ $$
 
 in the untwisted case $\mathcal{R}=\tfrac14 s\,\mathrm{id}$ with $s$ the scalar curvature, and in general $\mathcal{R}^E=\tfrac14s\,\mathrm{id}+\sum_{i<j}c(e_i)c(e_j)F^W_{ij}$, where $F^W$ is the curvature two-form of the twisting connection; the Clifford multiplication of a two-form is the sum of its coefficients against the corresponding bivectors, $c(F^W)=\sum_{i<j}c(e_i)c(e_j)F^W_{ij}$.
 
-**Proof sketch.** Compute $D_E^2=\sum_{i,j}c(e_i)c(e_j)\nabla^E_i\nabla^E_j$; split the sum into the symmetric and antisymmetric parts. The symmetric part is the connection Laplacian by the Clifford relation, and the antisymmetric part is a curvature term: the commutator $[\nabla^E_i,\nabla^E_j]$ is the curvature, Clifford-multiplied. The trace of the curvature over the spinorial indices gives the scalar curvature, and the twisting curvature enters through $c(F^W)$. $\square$
+**Proof sketch.** Compute $D_E^2=\sum_{i,j}c(e_i)c(e_j)\nabla^E_i\nabla^E_j$; split the sum into the symmetric and antisymmetric parts. The symmetric part is the connection Laplacian by the Clifford relation, and the antisymmetric part is a curvature term: the commutator $[\nabla^E_i,\nabla^E_j]$ is the curvature, Clifford-multiplied. The trace of the curvature over the spinorial indices gives the scalar curvature, and the twisting curvature enters through $c(F^W)$.
 
 **Corollary.** In the untwisted case the **Lichnerowicz formula** holds:
 
@@ -87,7 +87,7 @@ $$
 
 and if $s>0$ pointwise then $D$ has no harmonic spinors, $\ker D=0$, since $\int_M\langle D^2s,s\rangle=\int_M|\nabla s|^2+\tfrac14\int_M s|s|^2>0$ for nonzero $s$.
 
-**Proof.** The formula is the untwisted case of the theorem; integrating the identity $D^2=\nabla^*\nabla+\tfrac14s$ against a spinor and integrating by parts gives the positivity. $\square$
+**Proof.** The formula is the untwisted case of the theorem; integrating the identity $D^2=\nabla^*\nabla+\tfrac14s$ against a spinor and integrating by parts gives the positivity.
 
 **Remark.** The Weitzenböck formula is the bridge between the operator and the geometry: the harmonic spinors of $D_E$ are the solutions of a second-order equation whose potential is the curvature, and the vanishing or non-vanishing of the kernel is controlled by the sign of the curvature. In the twisted case the twisting curvature $F^W$ shifts the potential, and the index measures the net effect.
 
@@ -101,7 +101,7 @@ $$
 
 and this endomorphism is invertible for every $\xi\neq0$. Hence $D_E$ is elliptic.
 
-**Proof.** The symbol of a first-order operator $\sum_ic(e_i)\nabla_i$ is $\sum_ic(e_i)\xi_i=c(\xi)$ up to the factor $i$ from the Fourier convention. The square is $\sigma(D_E)^2=-c(\xi)^2=-|\xi|^2\mathrm{id}$, so the symbol is invertible with inverse $-c(\xi)/|\xi|^2$ for $\xi\neq0$. A differential operator whose principal symbol is invertible for all nonzero covectors is elliptic by definition. $\square$
+**Proof.** The symbol of a first-order operator $\sum_ic(e_i)\nabla_i$ is $\sum_ic(e_i)\xi_i=c(\xi)$ up to the factor $i$ from the Fourier convention. The square is $\sigma(D_E)^2=-c(\xi)^2=-|\xi|^2\mathrm{id}$, so the symbol is invertible with inverse $-c(\xi)/|\xi|^2$ for $\xi\neq0$. A differential operator whose principal symbol is invertible for all nonzero covectors is elliptic by definition.
 
 **Theorem.** On a closed spin Riemannian manifold with a $\mathbb{Z}/2$-graded twisted Clifford module bundle $E=E_+\oplus E_-$, the operator restricts to an elliptic operator
 
@@ -117,7 +117,7 @@ $$
 
 is a finite integer, equal to $\dim\ker D_+-\dim\ker D_-$ because $D_E$ is self-adjoint and $D_-=D_+^{*}$.
 
-**Proof.** $D_E$ is odd and formally self-adjoint with respect to the $L^2$ inner products, so its off-diagonal blocks are adjoint to one another, and $\operatorname{coker}D_+=\ker D_+^{*}=\ker D_-$. Ellipticity on a closed manifold gives finite-dimensional kernel and cokernel by the standard regularity theory. $\square$
+**Proof.** $D_E$ is odd and formally self-adjoint with respect to the $L^2$ inner products, so its off-diagonal blocks are adjoint to one another, and $\operatorname{coker}D_+=\ker D_+^{*}=\ker D_-$. Ellipticity on a closed manifold gives finite-dimensional kernel and cokernel by the standard regularity theory.
 
 **Remark.** The index is the analytic datum of the elliptic complex $0\to\Gamma(E_+)\xrightarrow{D_+}\Gamma(E_-)\to0$, and it is invariant under continuous deformations of the operator within the class of elliptic operators, because the kernel dimension can jump only by the same amount as the cokernel dimension. This stability is what makes the index computable by topological means, and the computation is the subject of the next section.
 
@@ -131,7 +131,7 @@ $$
 
 and the right-hand side is independent of $t$.
 
-**Proof.** The nonzero eigenvalues of $D_-D_+$ and $D_+D_-$ coincide, with the same multiplicities, by the standard argument: if $D_+D_-v=\lambda v$ with $\lambda\neq0$ then $D_-v$ is an eigenvector of $D_-D_+$ with the same eigenvalue, and the map is a bijection between the eigenspaces. The trace difference therefore selects only the eigenvalue $0$; the kernel of $D_-D_+$ is $\ker D_+$ and the kernel of $D_+D_-$ is $\ker D_-$, so the difference is $\dim\ker D_+-\dim\ker D_-$. Since the nonzero spectra agree, the difference is $t$-independent. $\square$
+**Proof.** The nonzero eigenvalues of $D_-D_+$ and $D_+D_-$ coincide, with the same multiplicities, by the standard argument: if $D_+D_-v=\lambda v$ with $\lambda\neq0$ then $D_-v$ is an eigenvector of $D_-D_+$ with the same eigenvalue, and the map is a bijection between the eigenspaces. The trace difference therefore selects only the eigenvalue $0$; the kernel of $D_-D_+$ is $\ker D_+$ and the kernel of $D_+D_-$ is $\ker D_-$, so the difference is $\dim\ker D_+-\dim\ker D_-$. Since the nonzero spectra agree, the difference is $t$-independent.
 
 **Theorem (twisted index formula).** Let $(M,g)$ be a closed spin manifold of even dimension $n=2m$, and let $E=S\otimes W$ be a twisted Clifford module bundle with $W$ a Hermitian vector bundle. Then
 
@@ -141,7 +141,7 @@ $$
 
 where $\hat{A}(TM)$ is the $\hat{A}$-class of the tangent bundle, expressed in the Pontryagin classes, and $\operatorname{ch}(W)$ is the Chern character of $W$.
 
-**Proof sketch.** By the McKean–Singer formula the index is the $t\to\infty$ (equivalently, the $t$-independent) supertrace of the heat kernel. The local index theorem of Atiyah–Singer–Patodi identifies the $t\to0$ limit of the pointwise supertrace as the top-degree part of $\hat{A}(TM)\operatorname{ch}(W)$, so integrating gives the stated formula. The untwisted case $\operatorname{ch}(W)=1$ is the statement that the index of the Cauchy–Riemann operator on the spinor bundle is the $\hat{A}$-genus. $\square$
+**Proof sketch.** By the McKean–Singer formula the index is the $t\to\infty$ (equivalently, the $t$-independent) supertrace of the heat kernel. The local index theorem of Atiyah–Singer–Patodi identifies the $t\to0$ limit of the pointwise supertrace as the top-degree part of $\hat{A}(TM)\operatorname{ch}(W)$, so integrating gives the stated formula. The untwisted case $\operatorname{ch}(W)=1$ is the statement that the index of the Cauchy–Riemann operator on the spinor bundle is the $\hat{A}$-genus.
 
 **Example (compact Riemann surface).** Let $M$ be a closed Riemann surface, spin with $S=K^{1/2}\oplus K^{-1/2}$, and let $W=L$ be a complex line bundle of degree $k=\int_Mc_1(L)$. The $\hat{A}$-class of a surface is $1$, so
 

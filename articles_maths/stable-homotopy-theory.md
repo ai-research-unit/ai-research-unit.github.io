@@ -35,7 +35,7 @@ the colimit along the structure maps, and a spectrum with all homotopy groups ze
 
 **Theorem.** $\mathcal{SH}$ is an additive category with a shift functor $\Sigma$ that is an equivalence, and it is triangulated: cofibre sequences, equivalently fibre sequences, produce the exact triangles, and every map extends to a triangle unique up to noncanonical isomorphism.
 
-*Proof sketch.* The stable homotopy category is the homotopy category of the stable $\infty$-category of spectra, which is stable in the sense of *Higher Algebra and Higher Categories*; the theorem that the homotopy category of a stable $\infty$-category is triangulated then applies. Concretely, the cofibre of $f : E \to F$ is the spectrum $Cf$ with $Cf_n$ the mapping cone of $f_n$, and the resulting cofibre sequence is exact on homotopy groups. $\square$
+*Proof sketch.* The stable homotopy category is the homotopy category of the stable $\infty$-category of spectra, which is stable in the sense of *Higher Algebra and Higher Categories*; the theorem that the homotopy category of a stable $\infty$-category is triangulated then applies. Concretely, the cofibre of $f : E \to F$ is the spectrum $Cf$ with $Cf_n$ the mapping cone of $f_n$, and the resulting cofibre sequence is exact on homotopy groups.
 
 **Remark.** The passage from spaces to spectra is the passage from $\pi_{n+k}(S^n)$ to $\operatorname{colim}_n\pi_{n+k}(S^n)$; this is an instance of the general principle that a stable theory is one in which the suspension is invertible, and it is what makes the stable theory computable: the suspension of a spectrum is an equivalence, so no information is lost by suspending.
 
@@ -73,7 +73,7 @@ $$
 
 naturally in $X$; and every spectrum defines a reduced cohomology theory by this formula. The corresponding homology theory is $E_k(X) = \pi_k(E\wedge \Sigma^\infty X)$.
 
-*Proof sketch.* The representing objects are the values of the theory on spheres, $E_n = $ a space representing $E^n(S^0)$ in the appropriate sense, and the structure maps come from the suspension isomorphisms; the argument is the classical Brown representability theorem applied to the homotopy functor on CW complexes. $\square$
+*Proof sketch.* The representing objects are the values of the theory on spheres, $E_n = $ a space representing $E^n(S^0)$ in the appropriate sense, and the structure maps come from the suspension isomorphisms; the argument is the classical Brown representability theorem applied to the homotopy functor on CW complexes.
 
 **Example.** The spectrum $\mathbb{S}$ represents stable cohomotopy, $\tilde{\mathbb{S}}^k(X) \cong \operatorname{colim}_n[\Sigma^nX, S^{k+n}]$; the Eilenberg–MacLane spectrum $H\pi$ represents ordinary cohomology $\tilde H^k(X;\pi)$; the spectrum $MU$ represents complex cobordism, with $\pi_*MU$ the Lazard ring of formal group laws, and $KO$, $KU$ represent real and complex topological $K$-theory.
 
@@ -101,7 +101,7 @@ $$
 
 where the Ext groups are computed in the abelian category of graded $\mathcal{A}_p$-modules, the differential is $d_r : E_r^{s,t}\to E_r^{s+r,t+r-1}$, and the **Adams filtration** is by the number of stable maps in a factorisation. The spectral sequence converges conditionally in the sense of Boardman.
 
-*Proof sketch.* Filter $\pi_*E$ by the subgroups of elements whose representing map $S^n \to E$ factors through a finite complex killed by an Adams-tower construction of length $s$; the associated graded is computed by a resolution of $H^*(E;\mathbb{F}_p)$ by free $\mathcal{A}_p$-modules, and the homology of the resulting complex is the Ext group. The construction is a special case of the derived functors of Part I's *Derived Functors*, written in parallel, applied to the module category over the Steenrod algebra, and it is the stable analogue of the Leray–Serre spectral sequence of *The Leray–Serre Spectral Sequence*. $\square$
+*Proof sketch.* Filter $\pi_*E$ by the subgroups of elements whose representing map $S^n \to E$ factors through a finite complex killed by an Adams-tower construction of length $s$; the associated graded is computed by a resolution of $H^*(E;\mathbb{F}_p)$ by free $\mathcal{A}_p$-modules, and the homology of the resulting complex is the Ext group. The construction is a special case of the derived functors of Part I's *Derived Functors*, written in parallel, applied to the module category over the Steenrod algebra, and it is the stable analogue of the Leray–Serre spectral sequence of *The Leray–Serre Spectral Sequence*.
 
 **Remark.** The Adams spectral sequence is the central computing device of stable homotopy theory, and the systematic treatment of the Steenrod algebra and its Ext groups is a substantial theory in its own right (the **Adams–Novikov** spectral sequence replaces ordinary cohomology by complex cobordism and makes the $E_2$ page computable); only the shape of the result is required here.
 
@@ -131,7 +131,7 @@ $$
 
 the **Atiyah–Hirzebruch spectral sequence**, with differentials $d^r : E^r_{p,q} \to E^r_{p-r,q+r-1}$; dually in cohomology, $E_2^{p,q} = H^p(X;E^{-q}) \Rightarrow E^{p+q}(X)$. It is natural in $X$ and in the spectrum $E$, and it is multiplicative when $E$ is a ring spectrum.
 
-*Proof sketch.* Filter the CW spectrum $E\wedge \Sigma^\infty X$ by the skeleta of $X$; the associated graded pieces are the smash products of $E$ with the quotients $X^{(p)}/X^{(p-1)}$, which are wedges of spheres, so the $E^1$ page is the cellular chains of $X$ with coefficients in $E_*$; hence $E^2_{p,q} = H_p(X;E_q)$ and convergence is to the homotopy of the total spectrum. $\square$
+*Proof sketch.* Filter the CW spectrum $E\wedge \Sigma^\infty X$ by the skeleta of $X$; the associated graded pieces are the smash products of $E$ with the quotients $X^{(p)}/X^{(p-1)}$, which are wedges of spheres, so the $E^1$ page is the cellular chains of $X$ with coefficients in $E_*$; hence $E^2_{p,q} = H_p(X;E_q)$ and convergence is to the homotopy of the total spectrum.
 
 **Example.** For $E = H\mathbb{Z}$ and $R$ coefficients the spectral sequence has $E^2_{p,q} = H_p(X;\mathbb{Z})$ concentrated in $q = 0$ and collapses, recovering ordinary homology. For $E = KU$ the coefficient ring is $\mathbb{Z}[u^{\pm1}]$ with $|u| = 2$, so the $E^2$ page is ordinary homology with a degree-two coefficient; the differentials $d^3$ are the integral Steenrod operations, and the **Bott periodicity** makes the $E^\infty$ page the associated graded of $K^*$-theory.
 
@@ -147,7 +147,7 @@ $$
 
 is the **Hurewicz map** of the theory $E$, the natural transformation sending a homology class to its image under the unit $\mathbb{S}\to E$; and the transgression $d^2 : E^2_{0,1}\to E^2_{2,0}$ is the map that carries $E_1 = \pi_1E$ to $H_2(X;E_0)$ through the cohomology operation classifying the first $k$-invariant of $E$.
 
-*Proof.* Both statements are the identification of the low-degree terms of the spectral sequence; the first is the naturality of the unit, the second is the identification of $d^2$ with the $k$-invariant of the spectrum, in the sense of the Postnikov tower of *The Leray–Serre Spectral Sequence*. $\square$
+*Proof.* Both statements are the identification of the low-degree terms of the spectral sequence; the first is the naturality of the unit, the second is the identification of $d^2$ with the $k$-invariant of the spectrum, in the sense of the Postnikov tower of *The Leray–Serre Spectral Sequence*.
 
 **Example (the mod-$p$ Moore spectrum and the first differential).** The **Moore spectrum** $S/p$ is the cofibre of the multiplication-by-$p$ map $p : \mathbb{S} \to \mathbb{S}$, so that there is a cofibre sequence $\mathbb{S} \xrightarrow{p}\mathbb{S} \to S/p \to \Sigma\mathbb{S}$; its mod-$p$ homology is that of the mod-$p$ Eilenberg–MacLane spectrum. The Atiyah–Hirzebruch spectral sequence for $S/p$ computes $\pi_*(S/p)$ from $H_*(S/p;\mathbb{Z})$, whose only nonzero groups are $\mathbb{Z}$ in degree $0$ and $\mathbb{Z}/p$ in degree $1$, and the first nontrivial differential is the Bockstein $\beta$ of *Cohomology and the Universal Coefficient Theorem*; the mod-$p$ stable homotopy of spheres is thereby organised into the **$\mathcal{A}_p$-module** structure of $H_*(S/p)$.
 
@@ -163,7 +163,7 @@ is the **Hurewicz map** of the theory $E$, the natural transformation sending a 
 2. **(Periodicity, Hopkins–Smith.)** If $X$ is of type $n$, then there is a self-map $v : \Sigma^{d}X\to X$ inducing an isomorphism in $K(n)_*$ and nilpotent in $K(m)_*$ for $m>n$; the iteration of $v$ gives the **periodic families** of elements in the stable homotopy groups of spheres.
 3. **(Thick subcategory theorem.)** The thick subcategories of the homotopy category of finite spectra are exactly the categories of spectra of type $\geq n$, one for each $n$.
 
-*Proof.* These are the three central theorems of chromatic homotopy theory; the common input is the theory of formal groups and the complex cobordism spectrum $MU$ of *Cobordism and Surgery Theory*, whose coefficient ring carries the universal formal group law and whose Morava $K$-theories are the $p$-typical reductions. The proofs use the **Bousfield localisation** at $K(n)$ and the **telescopic** localisations built from the self-maps of (2), and they are quoted as standard. $\square$
+*Proof.* These are the three central theorems of chromatic homotopy theory; the common input is the theory of formal groups and the complex cobordism spectrum $MU$ of *Cobordism and Surgery Theory*, whose coefficient ring carries the universal formal group law and whose Morava $K$-theories are the $p$-typical reductions. The proofs use the **Bousfield localisation** at $K(n)$ and the **telescopic** localisations built from the self-maps of (2), and they are quoted as standard.
 
 **Remark (what the picture explains).** The Adams–Novikov spectral sequence is the computational shadow of the chromatic picture: its $E_2$ page is built from the complex cobordism of the point, the $v_n$-periodic families appear as the columns of the $E_2$ page, and the nilpotence theorem says that outside the periodic families the elements are nilpotent, so that the stable homotopy groups of spheres are, in a precise sense, generated by the periodic families and their nilpotent multiples. The chromatic filtration is not finite for a general spectrum: the localisations $L_{K(n)}$ assemble into a tower whose inverse limit is the $p$-local sphere, and each layer is governed by the formal group of height $n$ and its Morava stabiliser group. The detailed computation of the layers belongs to the arithmetic of formal groups and stable homotopy theory beyond the scope of this article, and the rational and $v_1$-periodic parts are the ones used in the comparison with algebraic $K$-theory.
 

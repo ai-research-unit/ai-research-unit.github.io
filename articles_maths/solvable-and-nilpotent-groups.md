@@ -22,7 +22,7 @@ The article is purely algebraic. The classical examples of nilpotent groups draw
 3. $[x,y] = 1$ if and only if $x$ and $y$ commute.
 4. If $N \trianglelefteq G$ then $G/N$ is abelian if and only if $G' \leq N$; in particular $G'$ is the least normal subgroup with abelian quotient. Also $N \leq Z(G)$ if and only if $[G,N] = 1$.
 
-**Proof.** (1) and (3) are immediate from the definition. (2) Expanding $[x,yz] = x^{-1}z^{-1}y^{-1}xyz$ and regrouping the middle gives $x^{-1}z^{-1}xz \cdot z^{-1}x^{-1}y^{-1}xyz = [x,z]\cdot z^{-1}[x,y]z$; the second identity is verified by the same expansion of $[xy,z] = y^{-1}x^{-1}z^{-1}xyz$ as $y^{-1}x^{-1}z^{-1}xz\,y \cdot y^{-1}z^{-1}yz = y^{-1}[x,z]y\cdot[y,z]$. (4) The quotient $G/N$ is abelian if and only if $xyN = yxN$ for all $x,y$, that is, $[x,y] \in N$ for all $x,y$, which says $G' \leq N$; the case $N = G'$ shows that $G/G'$ is abelian, so $G'$ is the least such normal subgroup. Finally $N \leq Z(G)$ says every $n \in N$ commutes with every $g \in G$, which is $[g,n] = 1$ for all such $g,n$, that is, $[G,N] = 1$. $\square$
+**Proof.** (1) and (3) are immediate from the definition. (2) Expanding $[x,yz] = x^{-1}z^{-1}y^{-1}xyz$ and regrouping the middle gives $x^{-1}z^{-1}xz \cdot z^{-1}x^{-1}y^{-1}xyz = [x,z]\cdot z^{-1}[x,y]z$; the second identity is verified by the same expansion of $[xy,z] = y^{-1}x^{-1}z^{-1}xyz$ as $y^{-1}x^{-1}z^{-1}xz\,y \cdot y^{-1}z^{-1}yz = y^{-1}[x,z]y\cdot[y,z]$. (4) The quotient $G/N$ is abelian if and only if $xyN = yxN$ for all $x,y$, that is, $[x,y] \in N$ for all $x,y$, which says $G' \leq N$; the case $N = G'$ shows that $G/G'$ is abelian, so $G'$ is the least such normal subgroup. Finally $N \leq Z(G)$ says every $n \in N$ commutes with every $g \in G$, which is $[g,n] = 1$ for all such $g,n$, that is, $[G,N] = 1$.
 
 The quotient $G/[G,G]$ is the **abelianisation** of $G$, and it is the largest abelian quotient of $G$: every homomorphism from $G$ to an abelian group factors uniquely through it. This is the universal property of the abelianisation, and it is the first instance of the pattern of the next section.
 
@@ -44,11 +44,11 @@ Each $G^{(i)}$ is characteristic in $G$, hence normal, and each quotient $G^{(i)
 2. If $N$ and $G/N$ are solvable then $G$ is solvable, with $\operatorname{dl}(G) \leq \operatorname{dl}(N) + \operatorname{dl}(G/N)$.
 3. If $G$ is solvable then $G' = G^{(1)} \neq G$ unless $G$ is trivial; a nontrivial solvable group has a nontrivial abelian quotient.
 
-**Proof.** (1) The derived series of a subgroup satisfies $H^{(i)} \leq G^{(i)}$, by induction on $i$ from the definition of the commutator subgroup; for a quotient, $(G/N)^{(i)} = G^{(i)}N/N$. (2) Let $m = \operatorname{dl}(G/N)$ and $n = \operatorname{dl}(N)$. Then $G^{(m)} \leq N$, so $G^{(m+n)} \leq N^{(n)} = 1$. (3) If $G^{(1)} = G$ then the derived series is constant and never reaches $1$; the abelianisation $G/G'$ is then nontrivial when $G \neq 1$. $\square$
+**Proof.** (1) The derived series of a subgroup satisfies $H^{(i)} \leq G^{(i)}$, by induction on $i$ from the definition of the commutator subgroup; for a quotient, $(G/N)^{(i)} = G^{(i)}N/N$. (2) Let $m = \operatorname{dl}(G/N)$ and $n = \operatorname{dl}(N)$. Then $G^{(m)} \leq N$, so $G^{(m+n)} \leq N^{(n)} = 1$. (3) If $G^{(1)} = G$ then the derived series is constant and never reaches $1$; the abelianisation $G/G'$ is then nontrivial when $G \neq 1$.
 
 **Corollary.** A group $G$ is solvable if and only if it has a **subnormal series** — a chain $1 = G_0 \trianglelefteq G_1 \trianglelefteq \cdots \trianglelefteq G_n = G$ — whose successive quotients $G_{i+1}/G_i$ are abelian.
 
-**Proof.** Given a subnormal series with abelian quotients, each quotient $G_{i+1}/G_i$ being abelian means $G_{i+1}' \leq G_i$, so the derived series of $G$ descends at least one step per term of the series and reaches $1$. Conversely the derived series itself is such a series, because each $G^{(i)}/G^{(i+1)}$ is abelian. $\square$
+**Proof.** Given a subnormal series with abelian quotients, each quotient $G_{i+1}/G_i$ being abelian means $G_{i+1}' \leq G_i$, so the derived series of $G$ descends at least one step per term of the series and reaches $1$. Conversely the derived series itself is such a series, because each $G^{(i)}/G^{(i+1)}$ is abelian.
 
 The corollary is the definition of solvability in terms of a filtration by abelian layers, and it is the form in which solvability is usually verified: it suffices to exhibit one subnormal series with abelian factors.
 
@@ -80,7 +80,7 @@ so that $\gamma_2 G = G'$ and $\gamma_1 G \geq \gamma_2 G \geq \gamma_3 G \geq \
 
 **Proposition.** If $G$ is nilpotent of class $c$ then every subgroup and every quotient of $G$ is nilpotent of class at most $c$, and the centre of a nontrivial nilpotent group is nontrivial.
 
-**Proof sketch.** For subgroups, $\gamma_n H \leq \gamma_n G$ by induction. For quotients, $\gamma_n(G/N) = \gamma_n G \cdot N/N$. For the centre, if $\gamma_c G \neq 1$ and $\gamma_{c+1}G = 1$ then $\gamma_c G$ is central in $G$, because $[\gamma_c G, G] = \gamma_{c+1}G = 1$. $\square$
+**Proof sketch.** For subgroups, $\gamma_n H \leq \gamma_n G$ by induction. For quotients, $\gamma_n(G/N) = \gamma_n G \cdot N/N$. For the centre, if $\gamma_c G \neq 1$ and $\gamma_{c+1}G = 1$ then $\gamma_c G$ is central in $G$, because $[\gamma_c G, G] = \gamma_{c+1}G = 1$.
 
 The last statement is the key structural fact about nilpotent groups: the descending central series reaches the centre from the bottom, so a nontrivial nilpotent group has a nontrivial centre and one can argue by induction on the class by passing to the quotient by the centre.
 
@@ -102,7 +102,7 @@ so that $Z_1(G) = Z(G)$ and $Z_i(G) \trianglelefteq G$ for all $i$, and $Z_i(G) 
 2. $Z_c(G) = G$;
 3. there is a central series $1 = N_0 \leq N_1 \leq \cdots \leq N_c = G$ with $N_i \trianglelefteq G$ and $N_{i+1}/N_i \leq Z(G/N_i)$ for all $i$.
 
-**Proof sketch.** (1) $\Rightarrow$ (3): the lower central series is such a series, because $\gamma_n G/\gamma_{n+1}G$ is central in $G/\gamma_{n+1}G$; reindexing from the bottom gives the required chain. (3) $\Rightarrow$ (2): prove $N_{c-i} \leq Z_i(G)$ by induction on $i$, so that $G = N_c \leq Z_c(G)$. (2) $\Rightarrow$ (1): prove $\gamma_{i+1}G \leq Z_{c-i}(G)$ by induction on $i$, so that $\gamma_{c+1}G \leq Z_0(G) = 1$. $\square$
+**Proof sketch.** (1) $\Rightarrow$ (3): the lower central series is such a series, because $\gamma_n G/\gamma_{n+1}G$ is central in $G/\gamma_{n+1}G$; reindexing from the bottom gives the required chain. (3) $\Rightarrow$ (2): prove $N_{c-i} \leq Z_i(G)$ by induction on $i$, so that $G = N_c \leq Z_c(G)$. (2) $\Rightarrow$ (1): prove $\gamma_{i+1}G \leq Z_{c-i}(G)$ by induction on $i$, so that $\gamma_{c+1}G \leq Z_0(G) = 1$.
 
 **Corollary.** Every nilpotent group is solvable, and $\operatorname{dl}(G) \leq \operatorname{cl}(G)$. The converse fails: $S_3$ is solvable and has trivial centre, hence is not nilpotent.
 
@@ -124,7 +124,7 @@ so that $Z_1(G) = Z(G)$ and $Z_i(G) \trianglelefteq G$ for all $i$, and $Z_i(G) 
 
 Conversely, if a finite group has a Hall $\pi$-subgroup for every set of primes $\pi$, then it is solvable.
 
-**Proof sketch.** The proof is by induction on $|G|$, using the existence of a nontrivial abelian normal subgroup — supplied by the derived series, whose last nontrivial term is abelian and normal — and reducing to the quotient by a minimal normal subgroup. Since solvable groups have composition factors of prime order, the reduction step splits into the cases of a normal subgroup of prime index and of a normal elementary abelian subgroup, and in each case the Hall subgroup of the quotient is lifted along a Sylow argument. The converse is proved by exhibiting a set of primes for which no Hall subgroup exists in a nonsolvable group, using that a nonsolvable group has a composition factor isomorphic to a nonabelian simple group, in which two distinct maximal subgroups supply the obstruction; the details are in the references. $\square$
+**Proof sketch.** The proof is by induction on $|G|$, using the existence of a nontrivial abelian normal subgroup — supplied by the derived series, whose last nontrivial term is abelian and normal — and reducing to the quotient by a minimal normal subgroup. Since solvable groups have composition factors of prime order, the reduction step splits into the cases of a normal subgroup of prime index and of a normal elementary abelian subgroup, and in each case the Hall subgroup of the quotient is lifted along a Sylow argument. The converse is proved by exhibiting a set of primes for which no Hall subgroup exists in a nonsolvable group, using that a nonsolvable group has a composition factor isomorphic to a nonabelian simple group, in which two distinct maximal subgroups supply the obstruction; the details are in the references.
 
 For $p$-groups, the Hall subgroups specialise to the Sylow theorems: a finite $p$-group is its own Sylow $p$-subgroup, and the Sylow theorems of *Group Actions and Structure* give existence, conjugacy and containment for the prime case.
 
@@ -138,11 +138,11 @@ For $p$-groups, the Hall subgroups specialise to the Sylow theorems: a finite $p
 2. $\Phi(G)$ is characteristic in $G$, and $\Phi(G)$ is nilpotent; in fact $\Phi(G) \leq F(G)$.
 3. A subgroup $H \leq G$ satisfies $H\Phi(G) = G$ only if $H = G$ (the **non-generator** property), and for a finite $p$-group $\Phi(G) = G^p[G,G]$, where $G^p$ is the subgroup generated by the $p$-th powers.
 
-**Proof sketch.** (1) The product of normal nilpotent subgroups is normal, and the product of two normal nilpotent subgroups is nilpotent by Fitting's theorem; the centre of $G$ is a normal nilpotent subgroup, so it lies in $F(G)$; and $G$ itself is normal and nilpotent when $G$ is nilpotent. (2) Characteristic is immediate from the definition; $\Phi(G)$ is nilpotent because a finite group all of whose maximal subgroups are normal with prime-power index is nilpotent, and the Frattini argument shows that $\Phi(G)$ is contained in the Fitting subgroup. For (3), the non-generator property follows from the definition, and the formula for a $p$-group is the Burnside basis theorem: $G/\Phi(G)$ is elementary abelian of order $p^{d}$ with $d$ the minimal number of generators, and $G^p[G,G]$ is the least normal subgroup with that quotient. $\square$
+**Proof sketch.** (1) The product of normal nilpotent subgroups is normal, and the product of two normal nilpotent subgroups is nilpotent by Fitting's theorem; the centre of $G$ is a normal nilpotent subgroup, so it lies in $F(G)$; and $G$ itself is normal and nilpotent when $G$ is nilpotent. (2) Characteristic is immediate from the definition; $\Phi(G)$ is nilpotent because a finite group all of whose maximal subgroups are normal with prime-power index is nilpotent, and the Frattini argument shows that $\Phi(G)$ is contained in the Fitting subgroup. For (3), the non-generator property follows from the definition, and the formula for a $p$-group is the Burnside basis theorem: $G/\Phi(G)$ is elementary abelian of order $p^{d}$ with $d$ the minimal number of generators, and $G^p[G,G]$ is the least normal subgroup with that quotient.
 
 **Theorem.** For a finite group $G$, the following are equivalent: (i) $G$ is nilpotent; (ii) every Sylow subgroup of $G$ is normal; (iii) $G$ is the direct product of its Sylow subgroups; (iv) every maximal subgroup of $G$ is normal.
 
-**Proof sketch.** (i) $\Rightarrow$ (ii): a Sylow $p$-subgroup $P$ of a nilpotent group satisfies $N_G(P) = G$, because if $N_G(P) \neq G$ then $N_G(P) \neq N_G(N_G(P))$ in a nilpotent group, and this contradicts the maximality of $P$ among its conjugates. (ii) $\Rightarrow$ (iii): distinct Sylow subgroups of coprime order intersect trivially and commute when both are normal, so the product map is an isomorphism. (iii) $\Rightarrow$ (i): a direct product of $p$-groups is nilpotent. (i) $\Leftrightarrow$ (iv): a maximal subgroup of a nilpotent group is normal because it contains the normaliser of its own normaliser, and conversely a group all of whose maximal subgroups are normal is nilpotent. $\square$
+**Proof sketch.** (i) $\Rightarrow$ (ii): a Sylow $p$-subgroup $P$ of a nilpotent group satisfies $N_G(P) = G$, because if $N_G(P) \neq G$ then $N_G(P) \neq N_G(N_G(P))$ in a nilpotent group, and this contradicts the maximality of $P$ among its conjugates. (ii) $\Rightarrow$ (iii): distinct Sylow subgroups of coprime order intersect trivially and commute when both are normal, so the product map is an isomorphism. (iii) $\Rightarrow$ (i): a direct product of $p$-groups is nilpotent. (i) $\Leftrightarrow$ (iv): a maximal subgroup of a nilpotent group is normal because it contains the normaliser of its own normaliser, and conversely a group all of whose maximal subgroups are normal is nilpotent.
 
 The equivalence (i) $\Leftrightarrow$ (iii) is the structure theorem for finite nilpotent groups: they are exactly the direct products of their Sylow subgroups. It gives a second proof that finite $p$-groups are nilpotent, and it shows that every finite nilpotent group is the direct product of its primary components, in the additive language of *Infinite Abelian Groups*.
 
@@ -158,7 +158,7 @@ The first is proved by a character-theoretic argument on the vanishing of charac
 
 **Theorem (the derived subgroup of a nilpotent group).** If $G$ is nilpotent of class $c$ then $G'$ is nilpotent of class at most $c - 1$ and $\gamma_i G' \leq \gamma_{i+1}G$; in particular a group of class $2$ has abelian derived subgroup.
 
-**Proof sketch.** By induction on $i$: $\gamma_1 G' = G' = \gamma_2 G$, and $\gamma_{i+1}G' = [\gamma_i G', G'] \leq [\gamma_{i+1}G, G] = \gamma_{i+2}G$. At $i = c-1$ this gives $\gamma_c G' \leq \gamma_{c+1}G = 1$. $\square$
+**Proof sketch.** By induction on $i$: $\gamma_1 G' = G' = \gamma_2 G$, and $\gamma_{i+1}G' = [\gamma_i G', G'] \leq [\gamma_{i+1}G, G] = \gamma_{i+2}G$. At $i = c-1$ this gives $\gamma_c G' \leq \gamma_{c+1}G = 1$.
 
 ## Examples from Permutation Groups
 
@@ -168,7 +168,7 @@ The derived series of the symmetric groups is the source of the standard example
 
 **Theorem.** For $n \geq 2$, the derived subgroup of $S_n$ is $A_n$; for $n \geq 5$, the derived subgroup of $A_n$ is $A_n$. Consequently $S_n$ is solvable for $n \leq 4$ and nonsolvable for $n \geq 5$.
 
-**Proof sketch.** The quotient $S_n/A_n \cong \mathbb{Z}/2\mathbb{Z}$ is abelian, so $S_n' \leq A_n$; the transposition identity $[(ab),(bc)] = (abc)$ and its conjugates show that $S_n'$ contains a $3$-cycle, and the $3$-cycles generate $A_n$, so $S_n' = A_n$. For $n \geq 5$, that $A_n$ is nonabelian and simple gives $A_n' = A_n$. $\square$
+**Proof sketch.** The quotient $S_n/A_n \cong \mathbb{Z}/2\mathbb{Z}$ is abelian, so $S_n' \leq A_n$; the transposition identity $[(ab),(bc)] = (abc)$ and its conjugates show that $S_n'$ contains a $3$-cycle, and the $3$-cycles generate $A_n$, so $S_n' = A_n$. For $n \geq 5$, that $A_n$ is nonabelian and simple gives $A_n' = A_n$.
 
 **Example.** The solvable cases are $S_2 \cong \mathbb{Z}/2$, $S_3$ of derived length $2$, and $S_4$ of derived length $3$, with derived series
 
@@ -184,11 +184,11 @@ The case $S_4$ is the largest solvable symmetric group, and the constant derived
 
 **Proposition.** For $n \geq 2$ the group $D_{2n}$ is solvable of derived length at most $2$: its derived subgroup is $\langle r^2\rangle$, of index at most $2$ in the cyclic group $\langle r\rangle$ and abelian.
 
-**Proof.** The quotient $D_{2n}/\langle r\rangle \cong \mathbb{Z}/2$ is abelian, so $D_{2n}' \leq \langle r\rangle$. The commutator $[r,s] = r^{-1}s^{-1}rs = r^{-2}$ generates $\langle r^2\rangle$, and $\langle r^2\rangle$ is normal in $D_{2n}$ with $D_{2n}/\langle r^2\rangle$ abelian — of order $4$ when $n$ is even and of order $2$ when $n$ is odd — so $D_{2n}' = \langle r^2\rangle$, which is cyclic and hence abelian. $\square$
+**Proof.** The quotient $D_{2n}/\langle r\rangle \cong \mathbb{Z}/2$ is abelian, so $D_{2n}' \leq \langle r\rangle$. The commutator $[r,s] = r^{-1}s^{-1}rs = r^{-2}$ generates $\langle r^2\rangle$, and $\langle r^2\rangle$ is normal in $D_{2n}$ with $D_{2n}/\langle r^2\rangle$ abelian — of order $4$ when $n$ is even and of order $2$ when $n$ is odd — so $D_{2n}' = \langle r^2\rangle$, which is cyclic and hence abelian.
 
 **Proposition.** $D_{2n}$ is nilpotent if and only if $n$ is a power of $2$; in that case it is a $2$-group.
 
-**Proof sketch.** If $n = 2^k$ then $|D_{2n}| = 2^{k+1}$ and $D_{2n}$ is a $2$-group, hence nilpotent. Otherwise write $n = 2^k m$ with $m > 1$ odd. The Sylow $q$-subgroups for the odd primes $q \mid n$ are characteristic in the cyclic normal subgroup $\langle r\rangle$, hence normal; but the Sylow $2$-subgroup $P = \langle r^m, s\rangle$, of order $2^{k+1}$, has the $m$ distinct conjugates $\langle r^m, r^{2i}s\rangle$ for $i = 0, 1, \ldots, m-1$, so it is not normal, and the case $k = 0$ is included. By the equivalence of nilpotency with the normality of every Sylow subgroup, $D_{2n}$ is not nilpotent. $\square$
+**Proof sketch.** If $n = 2^k$ then $|D_{2n}| = 2^{k+1}$ and $D_{2n}$ is a $2$-group, hence nilpotent. Otherwise write $n = 2^k m$ with $m > 1$ odd. The Sylow $q$-subgroups for the odd primes $q \mid n$ are characteristic in the cyclic normal subgroup $\langle r\rangle$, hence normal; but the Sylow $2$-subgroup $P = \langle r^m, s\rangle$, of order $2^{k+1}$, has the $m$ distinct conjugates $\langle r^m, r^{2i}s\rangle$ for $i = 0, 1, \ldots, m-1$, so it is not normal, and the case $k = 0$ is included. By the equivalence of nilpotency with the normality of every Sylow subgroup, $D_{2n}$ is not nilpotent.
 
 The example $D_8$, the case $n = 4$, is the smallest nonabelian nilpotent dihedral group, and $D_{2p}$ for an odd prime $p$ is the smallest nonabelian group that is solvable but not nilpotent, since its $p$ Sylow $2$-subgroups, each of order $2$, are not normal.
 

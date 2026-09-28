@@ -27,7 +27,7 @@ and the **Riemann $\Xi$ function** is $\Xi(t) = \xi(\tfrac12+it)$.
 $$
 \text{RH} \iff \text{every zero of } \Xi \text{ is real} \iff \xi(s)\neq0 \text{ for } \Re s > \tfrac12 .
 $$
-**Proof.** The function $s(s-1)$ removes the pole of $\zeta$ at $s=1$ and the trivial zero at $s=0$; the factor $\Gamma(s/2)$ removes the trivial zeros at the negative even integers; what remains is entire by the functional equation of *Zeta Functions*, which reads $\xi(s)=\xi(1-s)$ in these variables, and the order and the reality on the line follow from the Hadamard factorisation and from the functional equation, which for real $s$ exhibits $\xi$ as real. The equivalence of the three statements is a rewriting of the definitions. $\square$
+**Proof.** The function $s(s-1)$ removes the pole of $\zeta$ at $s=1$ and the trivial zero at $s=0$; the factor $\Gamma(s/2)$ removes the trivial zeros at the negative even integers; what remains is entire by the functional equation of *Zeta Functions*, which reads $\xi(s)=\xi(1-s)$ in these variables, and the order and the reality on the line follow from the Hadamard factorisation and from the functional equation, which for real $s$ exhibits $\xi$ as real. The equivalence of the three statements is a rewriting of the definitions.
 
 **Remark (Riemann's original formulation).** Riemann's 1859 paper states the hypothesis as the reality of the roots of $\Xi$, with the product representation
 $$
@@ -43,7 +43,7 @@ N(T) = \frac{T}{2\pi}\log\frac{T}{2\pi e} + \frac78 + S(T) + O\bigl(T^{-1}\bigr)
 $$
 where $S(T) = \frac1\pi\arg\zeta(\tfrac12+iT) = O(\log T)$ unconditionally, and $S(T) = O(\log T/\log\log T)$ under the hypothesis.
 
-**Proof sketch.** The argument principle applied to $\xi$ along the rectangle with corners $\tfrac12\pm iT$, $-\tfrac12\pm iT$: the variation of the argument along the vertical sides contributes the main term, the horizontal sides contribute $O(\log T)$ by the functional equation and the Stirling estimate, and the contribution of the real zeros is $O(\log T)$; one arrives at the stated main term with the constant $7/8$ from the explicit evaluation. $\square$
+**Proof sketch.** The argument principle applied to $\xi$ along the rectangle with corners $\tfrac12\pm iT$, $-\tfrac12\pm iT$: the variation of the argument along the vertical sides contributes the main term, the horizontal sides contribute $O(\log T)$ by the functional equation and the Stirling estimate, and the contribution of the real zeros is $O(\log T)$; one arrives at the stated main term with the constant $7/8$ from the explicit evaluation.
 
 **Remark (the density of the zeros).** The formula shows that the number of zeros with $\gamma$ up to $T$ grows like $\frac{T}{2\pi}\log\frac{T}{2\pi}$, so that the mean spacing of consecutive $\gamma$'s near height $T$ is $2\pi/\log(T/2\pi)$; at $T=50$ this is about $3.0$, while the average of the nine gaps among the first ten zeros below — the gaps themselves ranging from $1.769$ to $6.887$ — is about $3.96$. It also shows that infinitely many nontrivial zeros exist, a statement first proved by Riemann and Hadamard by this argument, and it explains why the numerical verification of the hypothesis is a matter of counting.
 
@@ -59,7 +59,7 @@ each to six decimal places, these being the exact ordinates of zeros of $\zeta$ 
 $$
 Z(t) = 2\sum_{n\leq N}\frac{\cos(\theta(t)-t\log n)}{\sqrt n} + \text{correction}, \qquad N = \Bigl\lfloor\sqrt{\frac{t}{2\pi}}\Bigr\rfloor,
 $$
-for the function $Z(t) = e^{i\theta(t)}\zeta(\tfrac12+it)$, which is real for real $t$ and has the same zeros as $\zeta$ on the line; the zeros are then located by the sign changes of $Z$, and the counting formula of the previous theorem detects a zero off the line as a discrepancy between the number of sign changes found and the value of $N(T)$. The verification in a range consists in establishing the count exactly by such computations with rigorous error bounds. $\square$
+for the function $Z(t) = e^{i\theta(t)}\zeta(\tfrac12+it)$, which is real for real $t$ and has the same zeros as $\zeta$ on the line; the zeros are then located by the sign changes of $Z$, and the counting formula of the previous theorem detects a zero off the line as a discrepancy between the number of sign changes found and the value of $N(T)$. The verification in a range consists in establishing the count exactly by such computations with rigorous error bounds.
 
 **Remark (the extent of the verification).** The numerical verification of the hypothesis has reached the first $10^{13}$ zeros in computations without rigorous error bounds, and all the zeros with $\lvert\gamma\rvert < 3\cdot10^{12}$ in a rigorous computation; no zero off the line has ever been found, and none has ever been proved to exist.
 
@@ -79,11 +79,11 @@ for the function $Z(t) = e^{i\theta(t)}\zeta(\tfrac12+it)$, which is real for re
 
 **(d)** $N(\sigma,T) = 0$ for $\sigma>\tfrac12$ and every $T$, where $N(\sigma,T)$ counts the zeros with $\beta>\sigma$ and $\lvert\gamma\rvert\leq T$.
 
-**Proof sketch.** The explicit formula of *The Prime Number Theorem* writes $\psi(x)-x$ as $-\sum_{\lvert\gamma\rvert\leq T}\frac{x^{\rho}}{\rho}$ plus controlled terms; if every $\beta=\tfrac12$ the sum contributes $O(x^{1/2}\log^{2}x)$ after truncation, and if some $\beta>\tfrac12$ the corresponding term $x^{\beta}/\rho$ is $\Omega_{\pm}(x^{\beta-o(1)})$, by the standard argument that a single zero produces oscillations of that order in both directions along a sequence of $x$. The equivalence of (a) with (b) is the conversion between $\psi$ and $\pi$ by Abel summation. The statement (d) is the definition of the hypothesis. $\square$
+**Proof sketch.** The explicit formula of *The Prime Number Theorem* writes $\psi(x)-x$ as $-\sum_{\lvert\gamma\rvert\leq T}\frac{x^{\rho}}{\rho}$ plus controlled terms; if every $\beta=\tfrac12$ the sum contributes $O(x^{1/2}\log^{2}x)$ after truncation, and if some $\beta>\tfrac12$ the corresponding term $x^{\beta}/\rho$ is $\Omega_{\pm}(x^{\beta-o(1)})$, by the standard argument that a single zero produces oscillations of that order in both directions along a sequence of $x$. The equivalence of (a) with (b) is the conversion between $\psi$ and $\pi$ by Abel summation. The statement (d) is the definition of the hypothesis.
 
 **Theorem (Schmidt; Littlewood).** Unconditionally, $\psi(x)-x = \Omega_{\pm}(\sqrt x)$, so no error term of order smaller than $x^{1/2}$ can hold; and $\pi(x)-\mathrm{Li}(x)$ changes sign infinitely often, so $\pi(x)<\mathrm{Li}(x)$ fails for arbitrarily large $x$.
 
-**Proof sketch.** The oscillation of $\psi(x)-x$ is proved by inserting an explicit test function into the explicit formula and choosing the truncation to make one hypothetical zero contribute beyond the plausible error; Littlewood's theorem is the same argument applied to the convolution of the zeros with a suitable kernel, and it shows in particular that the numerical fact $\pi(x)<\mathrm{Li}(x)$ for all $x$ in the computed range is not a theorem. $\square$
+**Proof sketch.** The oscillation of $\psi(x)-x$ is proved by inserting an explicit test function into the explicit formula and choosing the truncation to make one hypothetical zero contribute beyond the plausible error; Littlewood's theorem is the same argument applied to the convolution of the zeros with a suitable kernel, and it shows in particular that the numerical fact $\pi(x)<\mathrm{Li}(x)$ for all $x$ in the computed range is not a theorem.
 
 ### Arithmetic Formulations
 
@@ -97,7 +97,7 @@ for the function $Z(t) = e^{i\theta(t)}\zeta(\tfrac12+it)$, which is real for re
 
 **(c)** Lagarias' inequality: $\sigma(n) \leq H_n + e^{H_n}\log H_n$ for every $n\geq1$, with equality only at $n=1$.
 
-**Proof sketch.** For (a), the Mellin transform of $M$ is $1/(s\zeta(s))$; the hypothesis makes $1/\zeta$ holomorphic for $\sigma>\tfrac12$, and the standard a priori bound on the growth of the transform converts the analytic continuation into the estimate. For (b) and (c) the equivalence is a computation of the extremal order of $\sigma$, using the explicit formula for $\sum_{n\le x}\Lambda(n)/n$ and the fact that $\limsup\sigma(n)/(n\log\log n) = e^\gamma$; the direction RH$\Rightarrow$(b) is Robin's theorem of 1984 and the converse is by the standard construction of colossally abundant $n$ violating the bound if a zero lies off the line. $\square$
+**Proof sketch.** For (a), the Mellin transform of $M$ is $1/(s\zeta(s))$; the hypothesis makes $1/\zeta$ holomorphic for $\sigma>\tfrac12$, and the standard a priori bound on the growth of the transform converts the analytic continuation into the estimate. For (b) and (c) the equivalence is a computation of the extremal order of $\sigma$, using the explicit formula for $\sum_{n\le x}\Lambda(n)/n$ and the fact that $\limsup\sigma(n)/(n\log\log n) = e^\gamma$; the direction RH$\Rightarrow$(b) is Robin's theorem of 1984 and the converse is by the standard construction of colossally abundant $n$ violating the bound if a zero lies off the line.
 
 **Remark (the discredited heuristic).** The bound $M(x) = O(\sqrt x)$ — the Mertens conjecture — would have implied the hypothesis, and it is false: Odlyzko and te Riele showed in 1985 that $M(x)/\sqrt x$ exceeds $1$ and is less than $-1$ infinitely often, so the hypothesis cannot be reached through a pointwise bound of that shape. The hypothesis itself allows the slower bound $O(x^{1/2+\epsilon})$, and no proof of the hypothesis by this route is known.
 
@@ -109,7 +109,7 @@ $$
 $$
 **Theorem (Li's criterion).** $\lambda_n = \sum_{\rho}\bigl(1-(1-1/\rho)^n\bigr)$, the sum over the nontrivial zeros, and the Riemann hypothesis is equivalent to $\lambda_n\geq0$ for every $n\geq1$.
 
-**Proof sketch.** Expanding the logarithm of the Hadamard product for $\xi$ and differentiating term by term gives the displayed identity; if all the zeros lie on the critical line the terms $1-(1-1/\rho)^n$ have nonnegative real part, which is the positivity; if a zero lies off the line, then the zeros $\rho$ and $1-\rho$ contribute a term that is negative for some $n$, by the explicit computation of the real part. $\square$
+**Proof sketch.** Expanding the logarithm of the Hadamard product for $\xi$ and differentiating term by term gives the displayed identity; if all the zeros lie on the critical line the terms $1-(1-1/\rho)^n$ have nonnegative real part, which is the positivity; if a zero lies off the line, then the zeros $\rho$ and $1-\rho$ contribute a term that is negative for some $n$, by the explicit computation of the real part.
 
 **Theorem (Nyman–Beurling criterion).** For $0<\theta<1$ let $\rho_\theta(x) = \{\theta/x\}-\theta\{1/x\}$ on $(0,\infty)$, with $\{\cdot\}$ the fractional part. The Riemann hypothesis is equivalent to the density in $L^2(0,\infty)$ of the closed span of the functions $\rho_\theta$, and equivalently to the statement that the characteristic function of $(0,1)$ lies in that span.
 
@@ -149,7 +149,7 @@ so that $H_0$ is the Riemann $\Xi$ function in the variable $u$; let $\Lambda$ b
 
 **(e)** the least prime in an arithmetic progression $a \bmod q$ is $O(q^{2+\epsilon})$, and the least quadratic nonresidue modulo a prime $p$ is $O(\log^2p)$ — the latter the theorem of Ankeny, and the bound is the conjectured truth up to the constant.
 
-**Proof sketch.** Part (a) is the equivalence above; (b) follows from (a) applied on a short interval, since no primes can be skipped for longer than the error permits, with the elementary check that the difference of two consecutive primes is at most the first prime exceeding $p_n$ by a distance for which the count is positive; (c) is (a) on short intervals; (d) is the same zero-free-region argument for the Dirichlet $L$-functions with the region improved to $\sigma>\tfrac12$; (e) combines (d) with the character-sum estimates in the proof of Linnik's theorem. $\square$
+**Proof sketch.** Part (a) is the equivalence above; (b) follows from (a) applied on a short interval, since no primes can be skipped for longer than the error permits, with the elementary check that the difference of two consecutive primes is at most the first prime exceeding $p_n$ by a distance for which the count is positive; (c) is (a) on short intervals; (d) is the same zero-free-region argument for the Dirichlet $L$-functions with the region improved to $\sigma>\tfrac12$; (e) combines (d) with the character-sum estimates in the proof of Linnik's theorem.
 
 ### The Lindelöf and Density Hypotheses
 
@@ -157,7 +157,7 @@ so that $H_0$ is the Riemann $\Xi$ function in the variable $u$; let $\Lambda$ b
 
 **Theorem.** The Riemann hypothesis implies the Lindelöf hypothesis, which implies the density hypothesis; both implications are strict in the sense that neither converse is known.
 
-**Proof sketch.** Under the hypothesis, the standard convexity argument applied to $\log\zeta$ between the lines $\sigma = \tfrac12$ (where the Hadamard product and the hypothesis bound the growth) and $\sigma>1$ (where the Euler product gives the bound) yields the bound; for the density hypothesis one applies the same convexity argument to the count of the zeros in a rectangle, using that there are no zeros off the line. $\square$
+**Proof sketch.** Under the hypothesis, the standard convexity argument applied to $\log\zeta$ between the lines $\sigma = \tfrac12$ (where the Hadamard product and the hypothesis bound the growth) and $\sigma>1$ (where the Euler product gives the bound) yields the bound; for the density hypothesis one applies the same convexity argument to the count of the zeros in a rectangle, using that there are no zeros off the line.
 
 **Remark (what is known about the density).** Ingham's density theorem, $N(\sigma,T) = O(T^{3(1-\sigma)/(2-\sigma)+\epsilon})$ for $\tfrac12\leq\sigma\leq1$, is the best general unconditional estimate, with improvements near $\sigma=1$ by Huxley and by later authors; the density hypothesis is weaker than the Lindelöf hypothesis, which is weaker than the Riemann hypothesis, and none of the three is known.
 
@@ -169,7 +169,7 @@ so that $H_0$ is the Riemann $\Xi$ function in the variable $u$; let $\Lambda$ b
 
 **Theorem (Selberg, Levinson, Conrey, Pratt–Robles–Zaharescu–Zeindler).** For a positive proportion of the zeros, to be defined precisely, the zero lies on the critical line: Hardy and Littlewood and Selberg established the existence of such a proportion, Levinson showed that at least one third of the zeros are on the line, Conrey improved this to two fifths, and the current record is at least $5/12\approx41.7\%$. Moreover a positive proportion of the zeros are simple, by Conrey, Ghosh and Gonek.
 
-**Proof sketch.** The method of Hardy and Littlewood applies the mean value estimates for $\lvert\zeta(\tfrac12+it)\rvert^{2k}$ — the moments of the zeta function on the critical line — to show that the sign changes of the real function $Z$ are numerous; Levinson's method instead counts the zeros of a suitable combination $\zeta(s)+c\zeta'(s)$ in a rectangle, using a mollifier, and translates the count into a lower bound for the zeros of $\zeta$ on the line. The proportion is the ratio of the number counted to the total $N(T)$. $\square$
+**Proof sketch.** The method of Hardy and Littlewood applies the mean value estimates for $\lvert\zeta(\tfrac12+it)\rvert^{2k}$ — the moments of the zeta function on the critical line — to show that the sign changes of the real function $Z$ are numerous; Levinson's method instead counts the zeros of a suitable combination $\zeta(s)+c\zeta'(s)$ in a rectangle, using a mollifier, and translates the count into a lower bound for the zeros of $\zeta$ on the line. The proportion is the ratio of the number counted to the total $N(T)$.
 
 **Remark.** The mean values $I_k(T) = \int_0^T\lvert\zeta(\tfrac12+it)\rvert^{2k}dt$ are known asymptotically only for $k=1$ and $k=2$ (Hardy–Littlewood, Ingham), and the conjectured asymptotic for general $k$ is
 $$
@@ -195,7 +195,7 @@ $$
 
 **Theorem (Weil).** Let $X$ be a smooth projective curve over a finite field $\mathbb{F}_q$ and let $\zeta_X$ be its zeta function. Then $\zeta_X$ is a rational function of $q^{-s}$ with a functional equation, and all its zeros satisfy $\Re s = \tfrac12$.
 
-**Proof sketch.** The analogue of the Riemann hypothesis for a curve was proved by Weil in 1948 from the theory of correspondences and the positivity of the intersection pairing on divisors, using the Riemann–Roch theorem and the Castelnuovo inequality to establish the required positivity; the modern proof passes through the cohomology of the curve, where the Frobenius acts on the first cohomology and the statement becomes the positivity of the corresponding Hermitian form, which is the Castelnuovo–Severi inequality. The generalisation to varieties is the theorem of Deligne of 1974. $\square$
+**Proof sketch.** The analogue of the Riemann hypothesis for a curve was proved by Weil in 1948 from the theory of correspondences and the positivity of the intersection pairing on divisors, using the Riemann–Roch theorem and the Castelnuovo inequality to establish the required positivity; the modern proof passes through the cohomology of the curve, where the Frobenius acts on the first cohomology and the statement becomes the positivity of the corresponding Hermitian form, which is the Castelnuovo–Severi inequality. The generalisation to varieties is the theorem of Deligne of 1974.
 
 **Remark.** The function field case is the model of what a proof over $\mathbb{Q}$ would have to achieve, and it is the reason for the weight attached to positivity criteria: the proof there is an intersection-theoretic positivity statement, and Weil's criterion for $\zeta$ is its analogue over $\mathbb{Q}$, with the archimedean and prime terms of the explicit formula playing the role of the intersection numbers. The zeta functions of curves and varieties and their rationality are treated by Dwork's theorem and by the arithmetic geometry of Part I, and the precise statements are cited there.
 
@@ -207,7 +207,7 @@ $$
 
 **Theorem (the generalised Riemann hypothesis).** Let $L(s)$ be an $L$-function in the sense of *L-Functions*, with Euler product, completed function $\Lambda(s) = Q^{s/2}\prod_j\Gamma\bigl(\frac{s+\kappa_j}{2}\bigr)L(s)$ and functional equation $\Lambda(s)=\epsilon\Lambda(1-s)$; the trivial zeros are the poles of the Gamma factors, at $s=-\kappa_j-2m$ with $m\geq0$, so the nontrivial zeros lie in a region symmetric about the critical line $\Re s = \tfrac12$, and for the Dirichlet, Dedekind and Hecke $L$-functions that region is the critical strip $0\leq\Re s\leq1$. The generalised hypothesis is that every nontrivial zero satisfies $\Re s=\tfrac12$, and the grand generalised hypothesis is the statement for all such $L$-functions at once. It is known for the $L$-functions of function fields, by Weil and Deligne, and it is open for the $L$-functions of number fields.
 
-**Proof of the consequences.** Assuming the generalised hypothesis, the same explicit-formula argument that gives $\psi(x)-x = O(\sqrt x\log^2x)$ applies to each $L$-function, and summing over the characters modulo $q$ gives the effective Chebotarev theorem of Lagarias–Odlyzko and the effective versions of the theorems on primes in arithmetic progressions; the deterministic primality criterion of Miller–Rabin follows from the bound for the least quadratic nonresidue, and the conditional solutions of the class number problem and of Artin's primitive root conjecture follow from the same effective estimates. Each of these is stated in its own place and cited here only as a consequence. $\square$
+**Proof of the consequences.** Assuming the generalised hypothesis, the same explicit-formula argument that gives $\psi(x)-x = O(\sqrt x\log^2x)$ applies to each $L$-function, and summing over the characters modulo $q$ gives the effective Chebotarev theorem of Lagarias–Odlyzko and the effective versions of the theorems on primes in arithmetic progressions; the deterministic primality criterion of Miller–Rabin follows from the bound for the least quadratic nonresidue, and the conditional solutions of the class number problem and of Artin's primitive root conjecture follow from the same effective estimates. Each of these is stated in its own place and cited here only as a consequence.
 
 ## Summary
 

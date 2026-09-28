@@ -94,7 +94,7 @@ $$
 \mathrm{Tr}(\partial_\mu\tilde{P}) = 2\,\mathrm{Tr}\!\left(\tilde{P}\,\partial_\mu\tilde{P}\right).
 $$
 
-But $\mathrm{Tr}(\tilde{P}) = 1$ is constant, so $\mathrm{Tr}(\partial_\mu\tilde{P}) = 0$, and hence $\mathrm{Tr}(\tilde{P}\partial_\mu\tilde{P}) = 0$. $\square$
+But $\mathrm{Tr}(\tilde{P}) = 1$ is constant, so $\mathrm{Tr}(\partial_\mu\tilde{P}) = 0$, and hence $\mathrm{Tr}(\tilde{P}\partial_\mu\tilde{P}) = 0$.
 
 The lemma is not special to the qubit: it is the algebraic statement that a rank-one projector carries no phase information. For the idempotent $\tilde{P}_+(\hat{\mathbf{R}}) = \tfrac12(e_0 + i\hat{\mathbf{R}})$ it can also be checked directly, since $\partial_\mu\tilde{P}_+ = \tfrac12 i\,\partial_\mu\hat{\mathbf{R}}$ and $\mathrm{Sc}\bigl((e_0 + i\hat{\mathbf{R}})\,\partial_\mu\hat{\mathbf{R}}\bigr) = \mathrm{Sc}(\partial_\mu\hat{\mathbf{R}}) + i\,\mathrm{Sc}(\hat{\mathbf{R}}\,\partial_\mu\hat{\mathbf{R}}) = 0$, using $\hat{\mathbf{R}}\cdot\partial_\mu\hat{\mathbf{R}} = 0$ from $|\hat{\mathbf{R}}| = 1$. Both the general proof and the direct computation return zero.
 

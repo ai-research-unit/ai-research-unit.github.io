@@ -33,13 +33,13 @@ $$
 \{P \in M_n(\mathbb{R}) : P^2 = P,\ P^T = P,\ \operatorname{rank} P = k\}.
 $$
 
-**Proof.** An orthogonal projection has image $W$ of rank $k$, and $W$ is recovered from $P_W$ as its image; conversely a symmetric idempotent of rank $k$ is the orthogonal projection onto its image. The two constructions are inverse. $\square$
+**Proof.** An orthogonal projection has image $W$ of rank $k$, and $W$ is recovered from $P_W$ as its image; conversely a symmetric idempotent of rank $k$ is the orthogonal projection onto its image. The two constructions are inverse.
 
 ### Charts and the Manifold Structure
 
 **Theorem.** The Grassmannian $\mathrm{Gr}_k(\mathbb{R}^n)$ is a compact smooth manifold of dimension $k(n-k)$.
 
-**Proof sketch.** For a partition of $\{1, \ldots, n\}$ into a set $I$ of size $k$ and its complement $J$, let $U_I$ be the set of subspaces $W$ such that the projection $\mathbb{R}^n \to \mathbb{R}^I$ restricts to an isomorphism $W \to \mathbb{R}^I$. Equivalently, $W$ is the graph of a unique linear map $A : \mathbb{R}^I \to \mathbb{R}^J$ given by the matrix with entries $A_{ji}$ such that the columns $\binom{e_i}{A_{\cdot i}}$ span $W$. The assignment $W \mapsto A$ is a bijection $U_I \to M_{J,I}(\mathbb{R}) \cong \mathbb{R}^{k(n-k)}$, and the transition maps between two charts are smooth rational functions of the matrices, so the $U_I$ form a smooth atlas. Compactness is the compactness of the image under the projections: the map $W \mapsto P_W$ has image closed and bounded in the finite-dimensional space $M_n(\mathbb{R})$. $\square$
+**Proof sketch.** For a partition of $\{1, \ldots, n\}$ into a set $I$ of size $k$ and its complement $J$, let $U_I$ be the set of subspaces $W$ such that the projection $\mathbb{R}^n \to \mathbb{R}^I$ restricts to an isomorphism $W \to \mathbb{R}^I$. Equivalently, $W$ is the graph of a unique linear map $A : \mathbb{R}^I \to \mathbb{R}^J$ given by the matrix with entries $A_{ji}$ such that the columns $\binom{e_i}{A_{\cdot i}}$ span $W$. The assignment $W \mapsto A$ is a bijection $U_I \to M_{J,I}(\mathbb{R}) \cong \mathbb{R}^{k(n-k)}$, and the transition maps between two charts are smooth rational functions of the matrices, so the $U_I$ form a smooth atlas. Compactness is the compactness of the image under the projections: the map $W \mapsto P_W$ has image closed and bounded in the finite-dimensional space $M_n(\mathbb{R})$.
 
 **Definition.** The coordinates $A$ above are the **Stiefel coordinates** of $W$ in the chart $U_I$, and the chart is the **big cell** when $I = \{1, \ldots, k\}$. The Grassmannian is covered by the $\binom{n}{k}$ charts $U_I$, one for each $k$-element subset of $\{1, \ldots, n\}$.
 
@@ -59,7 +59,7 @@ $$
 \dim V_k(\mathbb{R}^n) = nk - \frac{k(k+1)}{2}.
 $$
 
-**Proof.** The map $F : M_{n,k}(\mathbb{R}) \to \operatorname{Sym}_k(\mathbb{R})$, $F(X) = X^TX - I_k$, has $V_k = F^{-1}(0)$. Its differential at $X$ is $dF_X(H) = X^TH + H^TX$; this is surjective whenever $X^TX = I_k$, because for a symmetric $S$ one takes $H = \frac{1}{2}XS$, giving $X^TH + H^TX = \frac{1}{2}S + \frac{1}{2}S = S$. Hence $0$ is a regular value and $V_k = F^{-1}(0)$ is a submanifold of dimension $nk - \dim\operatorname{Sym}_k = nk - k(k+1)/2$, by the regular value theorem of *Smooth Manifolds and Differential Geometry*. It is closed and bounded in $M_{n,k}$, hence compact. $\square$
+**Proof.** The map $F : M_{n,k}(\mathbb{R}) \to \operatorname{Sym}_k(\mathbb{R})$, $F(X) = X^TX - I_k$, has $V_k = F^{-1}(0)$. Its differential at $X$ is $dF_X(H) = X^TH + H^TX$; this is surjective whenever $X^TX = I_k$, because for a symmetric $S$ one takes $H = \frac{1}{2}XS$, giving $X^TH + H^TX = \frac{1}{2}S + \frac{1}{2}S = S$. Hence $0$ is a regular value and $V_k = F^{-1}(0)$ is a submanifold of dimension $nk - \dim\operatorname{Sym}_k = nk - k(k+1)/2$, by the regular value theorem of *Smooth Manifolds and Differential Geometry*. It is closed and bounded in $M_{n,k}$, hence compact.
 
 **Corollary.** $\dim V_1(\mathbb{R}^n) = n - 1$, recovering the sphere $S^{n-1}$; $\dim V_n(\mathbb{R}^n) = n^2 - n(n+1)/2 = n(n-1)/2$, recovering $\dim O(n)$; $\dim V_2(\mathbb{R}^3) = 6 - 3 = 3$.
 
@@ -73,7 +73,7 @@ $$
 
 is a smooth surjective submersion whose fibre over $W$ is the set of orthonormal bases of $W$, in bijection with $O(k)$. It is a principal $O(k)$-bundle, the **Stiefel bundle**, with the action of $O(k)$ on a frame by right multiplication; the base is the Grassmannian and the total space the Stiefel manifold.
 
-**Proof sketch.** Surjectivity is the existence of an orthonormal basis; the fibre is $O(k)$ by the definition of orthonormal basis; local trivialisations are obtained from a local section of $\pi$ constructed by the Gram–Schmidt process applied to the columns of a projection. The bundle theory is that of *Fibre Bundles, Connections and Curvature*. $\square$
+**Proof sketch.** Surjectivity is the existence of an orthonormal basis; the fibre is $O(k)$ by the definition of orthonormal basis; local trivialisations are obtained from a local section of $\pi$ constructed by the Gram–Schmidt process applied to the columns of a projection. The bundle theory is that of *Fibre Bundles, Connections and Curvature*.
 
 **Corollary (dimensions).** The dimension count is consistent:
 
@@ -97,7 +97,7 @@ $$
 
 whose fibre at $W$ is the space of linear maps $W \to W^\perp$, of dimension $k(n-k)$.
 
-**Proof sketch.** A curve of subspaces through $W$ has derivative a linear map $W \to \mathbb{R}^n/W \cong W^\perp$; the identification of the tangent space with the graph of such a map uses the projection chart. $\square$
+**Proof sketch.** A curve of subspaces through $W$ has derivative a linear map $W \to \mathbb{R}^n/W \cong W^\perp$; the identification of the tangent space with the graph of such a map uses the projection chart.
 
 ## The Natural Metric and Its Geometry
 
@@ -108,12 +108,12 @@ whose fibre at $W$ is the space of linear maps $W \to W^\perp$, of dimension $k(
 **Theorem.** The standard metric makes $\mathrm{Gr}_k(\mathbb{R}^n)$ a Riemannian manifold of nonnegative sectional curvature. Its geodesics are the images of the one-parameter subgroups $\exp(tX)$ of $O(n)$ acting on $W$, that is,
 
 $$
-\gamma(t) = \exp(tX)\,W, \qquad X \in \mathfrak{so}(n),
+\gamma(t) = \exp(tX)\,W, \qquad X \in \mathrm{SO}(n),
 $$
 
-and they are closed, since $O(n)$ is compact and the exponential of $\mathfrak{so}(n)$ is periodic.
+and they are closed, since $O(n)$ is compact and the exponential of $\mathrm{SO}(n)$ is periodic.
 
-**Proof sketch.** The embedding $W \mapsto P_W$ is equivariant for the action of $O(n)$ by conjugation and is isometric for the standard metrics, so the metric is $O(n)$-invariant; an $O(n)$-invariant metric on a homogeneous space has the geodesics given by the one-parameter subgroups through the identity, and the compactness of $O(n)$ makes them closed. $\square$
+**Proof sketch.** The embedding $W \mapsto P_W$ is equivariant for the action of $O(n)$ by conjugation and is isometric for the standard metrics, so the metric is $O(n)$-invariant; an $O(n)$-invariant metric on a homogeneous space has the geodesics given by the one-parameter subgroups through the identity, and the compactness of $O(n)$ makes them closed.
 
 ### The Symmetric Space Structure
 
@@ -125,17 +125,17 @@ $$
 
 and, in the oriented case, $SO(n)/(SO(k) \times SO(n-k))$; the action of $O(n)$ is transitive and the stabiliser of $W_0 = \mathbb{R}^k \times \{0\}$ is $O(k) \times O(n-k)$, acting on $W_0$ and on its orthogonal complement.
 
-**Proof.** The group $O(n)$ acts on subspaces preserving dimension, on the complement, $W \mapsto (AW)$. It is transitive: any $W$ has an orthonormal basis completed to a basis of $\mathbb{R}^n$, giving an orthogonal matrix carrying $W_0$ to $W$. The stabiliser of $W_0$ preserves $W_0$ and its orthogonal complement, hence is $O(k) \times O(n-k)$. $\square$
+**Proof.** The group $O(n)$ acts on subspaces preserving dimension, on the complement, $W \mapsto (AW)$. It is transitive: any $W$ has an orthonormal basis completed to a basis of $\mathbb{R}^n$, giving an orthogonal matrix carrying $W_0$ to $W$. The stabiliser of $W_0$ preserves $W_0$ and its orthogonal complement, hence is $O(k) \times O(n-k)$.
 
 **Theorem (symmetric space).** The Grassmannian is a Riemannian symmetric space: for each $W$ the **geodesic symmetry** $\sigma_W$ given by reflection in $W$, that is $\sigma_W(v) = v$ for $v \in W$ and $\sigma_W(v) = -v$ for $v \in W^\perp$, is an involutive isometry with isolated fixed point $W$; and $\sigma_W$ reverses every geodesic through $W$.
 
-**Proof.** The reflection $\sigma_W = P_W - P_{W^\perp}$ is an orthogonal transformation, hence an isometry preserving the Grassmannian and acting on the tangent space $T_W\mathrm{Gr} = \operatorname{Hom}(W, W^\perp)$ by $X \mapsto -X$, so its differential at $W$ is $-\mathrm{id}$; an isometry with differential $-\mathrm{id}$ at a fixed point reverses every geodesic through it, which is the defining property of a symmetric space. $\square$
+**Proof.** The reflection $\sigma_W = P_W - P_{W^\perp}$ is an orthogonal transformation, hence an isometry preserving the Grassmannian and acting on the tangent space $T_W\mathrm{Gr} = \operatorname{Hom}(W, W^\perp)$ by $X \mapsto -X$, so its differential at $W$ is $-\mathrm{id}$; an isometry with differential $-\mathrm{id}$ at a fixed point reverses every geodesic through it, which is the defining property of a symmetric space.
 
 **Corollary (rank and isotropy).** The rank of $\mathrm{Gr}_k(\mathbb{R}^n)$ as a symmetric space is $\min(k, n-k)$, the dimension of a maximal flat totally geodesic submanifold. The space is of **compact type**: the group $O(n)$ is compact, the sectional curvature is nonnegative, and the space has positive curvature.
 
 **Definition.** A maximal flat in $\mathrm{Gr}_k(\mathbb{R}^n)$ is obtained by choosing a decomposition $\mathbb{R}^n = \mathbb{R}^{\min(k,n-k)} \oplus \mathbb{R}^{\min(k,n-k)} \oplus \mathbb{R}^{\text{rest}}$ into mutually orthogonal pieces of the indicated dimensions and varying the graph of a diagonal map between the first two.
 
-**Proof sketch.** The stabiliser $O(k)\times O(n-k)$ acts on the tangent space, and the maximal abelian subalgebra of its action is diagonal of size $\min(k, n-k)$; the corresponding flat is totally geodesic since its tangent directions close under the bracket. $\square$
+**Proof sketch.** The stabiliser $O(k)\times O(n-k)$ acts on the tangent space, and the maximal abelian subalgebra of its action is diagonal of size $\min(k, n-k)$; the corresponding flat is totally geodesic since its tangent directions close under the bracket.
 
 ### Curvature
 
@@ -145,9 +145,9 @@ $$
 K(X \wedge Y) = \| [X, Y]\|^2 \geq 0,
 $$
 
-where the bracket is that of $\mathfrak{so}(n)$, identified with $\bigwedge^2\mathbb{R}^n$, and the norm is the invariant norm (the formula is stated for the normalisation in which the metric is that of the embedding); in particular the curvature of $\mathrm{Gr}_k(\mathbb{R}^n)$ is nonnegative and it vanishes exactly on the two-planes tangent to a maximal flat.
+where the bracket is that of $\mathrm{SO}(n)$, identified with $\bigwedge^2\mathbb{R}^n$, and the norm is the invariant norm (the formula is stated for the normalisation in which the metric is that of the embedding); in particular the curvature of $\mathrm{Gr}_k(\mathbb{R}^n)$ is nonnegative and it vanishes exactly on the two-planes tangent to a maximal flat.
 
-**Proof sketch.** The formula is the general formula $K(X,Y) = \|[X,Y]\|^2$ for the curvature of a symmetric space $G/H$ of compact type with an $\operatorname{Ad}(H)$-invariant metric, applied to $G = O(n)$, $H = O(k)\times O(n-k)$ and the inner product on the complement of $\mathfrak{h}$ in $\mathfrak{so}(n)$; the vanishing of the bracket is exactly the commuting condition that defines a flat, and the nonnegativity is the compact type. $\square$
+**Proof sketch.** The formula is the general formula $K(X,Y) = \|[X,Y]\|^2$ for the curvature of a symmetric space $G/H$ of compact type with an $\operatorname{Ad}(H)$-invariant metric, applied to $G = O(n)$, $H = O(k)\times O(n-k)$ and the inner product on the complement of $\mathrm{H}$ in $\mathrm{SO}(n)$; the vanishing of the bracket is exactly the commuting condition that defines a flat, and the nonnegativity is the compact type.
 
 **Example (the real projective space).** For $k = 1$ the Grassmannian is $\mathbb{RP}^{n-1} = O(n)/(O(1)\times O(n-1)) = S^{n-1}/\{\pm 1\}$, of rank one and constant positive sectional curvature: the map $W \mapsto P_W$ sends a unit vector $v$ to $vv^T$ in the unit sphere of $\operatorname{Sym}_n(\mathbb{R})$, and the differential on a unit normal direction $w \perp v$ has squared norm $2$, so the induced metric is twice the round metric of $S^{n-1}$ and the sectional curvature is $1/2$ in this normalisation. The space is the elliptic space $\mathbb{E}^{n-1}$ of *Spherical Geometry*, of diameter $\pi/\sqrt2$ in this normalisation and, with the normalisation that makes the curvature $+1$, exactly the quotient of the round sphere of radius one by the antipodal map. Its geodesics are the projective lines, images of great circles.
 
@@ -177,7 +177,7 @@ $$
 
 where $p_{i_1\ldots i_k}$ are the coordinates of the class in the basis $e_{i_1}\wedge\cdots\wedge e_{i_k}$.
 
-**Proof sketch.** Injectivity: $W$ is recovered from $[w_1\wedge\cdots\wedge w_k]$ as the set of $v$ with $v \wedge (w_1\wedge\cdots\wedge w_k) = 0$. Well definedness: a change of basis multiplies the wedge by a nonzero scalar, which is the projectivisation. The map is an injective immersion of the compact Grassmannian into the projective space, hence a closed embedding; the Plücker relations, obtained by expanding the identity $w_{k+1}\wedge w_1\wedge\cdots\wedge w_k = 0$ in coordinates, cut out the decomposable classes. $\square$
+**Proof sketch.** Injectivity: $W$ is recovered from $[w_1\wedge\cdots\wedge w_k]$ as the set of $v$ with $v \wedge (w_1\wedge\cdots\wedge w_k) = 0$. Well definedness: a change of basis multiplies the wedge by a nonzero scalar, which is the projectivisation. The map is an injective immersion of the compact Grassmannian into the projective space, hence a closed embedding; the Plücker relations, obtained by expanding the identity $w_{k+1}\wedge w_1\wedge\cdots\wedge w_k = 0$ in coordinates, cut out the decomposable classes.
 
 **Example (lines in $\mathbb{P}^3$).** For $k = 2$, $n = 4$ the Plücker vector has six coordinates $p_{ij}$, $i<j$, and there is a single Plücker relation
 
@@ -215,7 +215,7 @@ $$
 
 and the cells are the open cells of a CW decomposition whose closures are the Schubert varieties; there is one cell for each $k$-element subset $\lambda$ of $\{1, \ldots, n\}$, so $\binom{n}{k}$ cells in total.
 
-**Proof sketch.** Choose a complete flag adapted to a fixed $W_0$ and put the chart $U_{\lambda_1}$; the condition on the intersections with the flag gives a chain of nested affine spaces; the dimension count is the number of free entries of the matrix of the corresponding projection, which is $\sum_i(\lambda_i - i)$. $\square$
+**Proof sketch.** Choose a complete flag adapted to a fixed $W_0$ and put the chart $U_{\lambda_1}$; the condition on the intersections with the flag gives a chain of nested affine spaces; the dimension count is the number of free entries of the matrix of the corresponding projection, which is $\sum_i(\lambda_i - i)$.
 
 **Corollary (the Poincaré polynomial).** The cells are indexed by the $k$-element subsets, and the generating function of the cell counts by dimension is the **Gaussian binomial coefficient**
 
@@ -231,7 +231,7 @@ $$
 
 and in particular $\chi(\mathbb{RP}^{n-1}) = 1$ for $n$ odd and $0$ for $n$ even.
 
-**Proof sketch.** The generating function $\sum_\lambda t^{|\lambda|}$, over the $k$-element subsets $\lambda$ of $\{1,\ldots,n\}$, is by definition the Gaussian binomial coefficient $\binom{n}{k}_t$, the generating function of the partitions fitting in a $k \times (n-k)$ box; the evaluation at $t = -1$ is the standard $q \to -1$ evaluation of the Gaussian binomial, which gives the stated case distinction. The projective-space case $k = 1$ is the alternating sum $1 - 1 + 1 - \cdots$ of $n$ cells of dimensions $0, 1, \ldots, n-1$. $\square$
+**Proof sketch.** The generating function $\sum_\lambda t^{|\lambda|}$, over the $k$-element subsets $\lambda$ of $\{1,\ldots,n\}$, is by definition the Gaussian binomial coefficient $\binom{n}{k}_t$, the generating function of the partitions fitting in a $k \times (n-k)$ box; the evaluation at $t = -1$ is the standard $q \to -1$ evaluation of the Gaussian binomial, which gives the stated case distinction. The projective-space case $k = 1$ is the alternating sum $1 - 1 + 1 - \cdots$ of $n$ cells of dimensions $0, 1, \ldots, n-1$.
 
 **Example.** For $k = 2$, $n = 4$ the cells have dimensions $0, 1, 2, 2, 3, 4$ and $\chi = 1 - 1 + 2 - 1 + 1 = 2 = \binom{2}{1}$; the integral cohomology has $2$-torsion in degree $3$, so the integral Betti numbers are not the cell counts while the mod-$2$ Betti numbers are.
 
@@ -247,13 +247,13 @@ $$
 
 the classifying space of rank-$k$ real vector bundles, and for a suitable topology every rank-$k$ real vector bundle over a paracompact base is the pullback of $\gamma_k$ along a classifying map unique up to homotopy.
 
-**Proof sketch.** The tautological bundle over the limit Grassmannian is the universal bundle because the space of $k$-frames in $\mathbb{R}^\infty$ is contractible, a fact of the stable linear algebra; the classification theorem is the bundle theory of *Fibre Bundles, Connections and Curvature*. $\square$
+**Proof sketch.** The tautological bundle over the limit Grassmannian is the universal bundle because the space of $k$-frames in $\mathbb{R}^\infty$ is contractible, a fact of the stable linear algebra; the classification theorem is the bundle theory of *Fibre Bundles, Connections and Curvature*.
 
 **Corollary.** The characteristic classes of a real vector bundle are the pullbacks of the classes of the universal bundle on $BO(k)$; the Stiefel–Whitney and Pontryagin classes are computed by the cohomology of the Grassmannian, which is why the Schubert cells of the previous section are the computational device for the characteristic classes.
 
 **Theorem (Gauss map).** Let $M \subseteq \mathbb{R}^n$ be a submanifold of dimension $k$. The **Gauss map** $\nu : M \to \mathrm{Gr}_{n-k}(\mathbb{R}^n)$ sending a point to its normal subspace, $\nu(p) = (T_pM)^\perp$, is smooth, and the pullback of the tautological bundle along $\nu$ is the normal bundle of $M$ in $\mathbb{R}^n$, while the pullback of the complement bundle is the tangent bundle.
 
-**Proof.** The tangent space varies smoothly with the point, so the normal subspace does too; the two pullback identifications are the definitions of the bundles involved. $\square$
+**Proof.** The tangent space varies smoothly with the point, so the normal subspace does too; the two pullback identifications are the definitions of the bundles involved.
 
 **Corollary.** The Gauss map is the reason the Grassmannian is the natural home of the extrinsic geometry of submanifolds: the second fundamental form of *Riemannian Geometry* is the derivative of the Gauss map, and the curvature of a submanifold is computed from its Gauss image in the Grassmannian.
 

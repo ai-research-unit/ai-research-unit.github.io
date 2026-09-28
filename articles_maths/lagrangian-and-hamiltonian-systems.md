@@ -25,7 +25,7 @@ $$
 
 **Theorem (Hamilton's principle).** A curve $q$ is a critical point of the action among curves with fixed endpoints if and only if it satisfies the Euler–Lagrange equations.
 
-*Proof.* This is the first variation of the functional of the calculus of variations, applied to the Lagrangian $L(q,\dot q,t)$ with the roles of the independent variable $x$ and the field $u$ taken by $t$ and $q$; the derivation, the du Bois-Reymond argument and the natural boundary conditions are those of that article. $\square$
+*Proof.* This is the first variation of the functional of the calculus of variations, applied to the Lagrangian $L(q,\dot q,t)$ with the roles of the independent variable $x$ and the field $u$ taken by $t$ and $q$; the derivation, the du Bois-Reymond argument and the natural boundary conditions are those of that article.
 
 **Definition.** The system is **autonomous** if $L$ is independent of $t$. For an autonomous Lagrangian the **energy** is
 
@@ -57,7 +57,7 @@ $$
 \dot q^i = \frac{\partial H}{\partial p_i}, \qquad \dot p_i = -\frac{\partial H}{\partial q^i} .
 $$
 
-*Proof.* The Legendre transform of the calculus of variations, computed for the case in which $L$ is convex in $\dot q$; the envelope theorem gives $H_{p_i}=\dot q^i$ and $H_{q^i} = -L_{q^i}$, so that $\dot p_i = \frac{d}{dt}L_{\dot q^i}=L_{q^i}=-H_{q^i}$ along a solution. The invertibility of $\mathbb{F}L$ makes the change of variables from $(q,\dot q)$ to $(q,p)$ a diffeomorphism. $\square$
+*Proof.* The Legendre transform of the calculus of variations, computed for the case in which $L$ is convex in $\dot q$; the envelope theorem gives $H_{p_i}=\dot q^i$ and $H_{q^i} = -L_{q^i}$, so that $\dot p_i = \frac{d}{dt}L_{\dot q^i}=L_{q^i}=-H_{q^i}$ along a solution. The invertibility of $\mathbb{F}L$ makes the change of variables from $(q,\dot q)$ to $(q,p)$ a diffeomorphism.
 
 **Example (the mechanical Lagrangian).** For a Riemannian metric $g$ on $Q$ and a potential $V : Q\to\mathbb{R}$, the Lagrangian
 
@@ -99,11 +99,11 @@ $$
 
 consequently $C^\infty(M)$ is a Lie algebra under the bracket and the map $f\mapsto X_f$ is a Lie algebra homomorphism, $[X_f,X_g]=X_{\{f,g\}}$. The bracket is nondegenerate in the sense that $\{f,g\}=0$ for all $g$ implies that $f$ is locally constant.
 
-*Proof.* The bilinearity, skew-symmetry and Leibniz rule follow from the corresponding properties of $\omega$ and of the differential; the Jacobi identity is the identity $d\omega=0$ written in terms of the bracket, and the homomorphism property is the computation $[X_f,X_g]=\omega$-dual of $d\{f,g\}$. The details are those of *Symplectic Forms and Poisson Brackets* and of the symplectic geometry of Part II. $\square$
+*Proof.* The bilinearity, skew-symmetry and Leibniz rule follow from the corresponding properties of $\omega$ and of the differential; the Jacobi identity is the identity $d\omega=0$ written in terms of the bracket, and the homomorphism property is the computation $[X_f,X_g]=\omega$-dual of $d\{f,g\}$. The details are those of *Symplectic Forms and Poisson Brackets* and of the symplectic geometry of Part II.
 
 **Theorem (Darboux).** Every symplectic manifold is locally symplectomorphic to $(\mathbb{R}^{2n},\sum_{i=1}^n dq^i\wedge dp_i)$: around every point there are coordinates $(q^1,\dots,q^n,p_1,\dots,p_n)$, the **canonical coordinates**, in which the form is the displayed one.
 
-*Proof.* Quoted as standard and belonging to the symplectic geometry of Part II, written in parallel; the proof is a Moser-type argument using the closedness and nondegeneracy of $\omega$ and a homotopy of forms. $\square$
+*Proof.* Quoted as standard and belonging to the symplectic geometry of Part II, written in parallel; the proof is a Moser-type argument using the closedness and nondegeneracy of $\omega$ and a homotopy of forms.
 
 **Corollary (Hamilton's equations in canonical coordinates).** In canonical coordinates, $X_H$ has components
 
@@ -119,7 +119,7 @@ $$
 
 Moreover $\frac{d}{dt}f = \{f,H\}$ along the flow of $X_H$, so that $f$ is conserved exactly when $\{f,H\}=0$.
 
-*Proof.* The form $\omega = \sum dq^i\wedge dp_i$ gives $\omega(X_H,Y)=dq(X_H)\,dp(Y)-dp(X_H)\,dq(Y) = \dot q\,dp(Y)+\dot p\,dq(Y)$ for $X_H=(\dot q,\dot p)$; requiring this to equal $dH(Y)=H_qdq(Y)+H_pdp(Y)$ for all $Y$ gives the equations. The bracket formula is the same computation applied to $f$ and $g$, and the last statement is $\frac{d}{dt}f = df(X_H)=X_H(f)=\{f,H\}$. $\square$
+*Proof.* The form $\omega = \sum dq^i\wedge dp_i$ gives $\omega(X_H,Y)=dq(X_H)\,dp(Y)-dp(X_H)\,dq(Y) = \dot q\,dp(Y)+\dot p\,dq(Y)$ for $X_H=(\dot q,\dot p)$; requiring this to equal $dH(Y)=H_qdq(Y)+H_pdp(Y)$ for all $Y$ gives the equations. The bracket formula is the same computation applied to $f$ and $g$, and the last statement is $\frac{d}{dt}f = df(X_H)=X_H(f)=\{f,H\}$.
 
 **Definition.** A **Poisson manifold** is a manifold with a bracket on its functions that is bilinear, skew-symmetric, satisfies the Leibniz rule and the Jacobi identity; the bracket need not come from a symplectic form, and its rank may drop on a subvariety. A **Poisson structure** is the corresponding section of $\Lambda^2TM$; when it is nondegenerate it is the inverse of a symplectic form.
 
@@ -129,15 +129,15 @@ Moreover $\frac{d}{dt}f = \{f,H\}$ along the flow of $X_H$, so that $f$ is conse
 
 **Theorem (conservation of energy).** For an autonomous Hamiltonian $H$, the function $H$ is conserved by its own flow, $\{H,H\}=0$, and the flow preserves the symplectic form, $\mathcal{L}_{X_H}\omega=0$, and hence the volume form $\omega^n/n!$.
 
-*Proof.* The bracket is skew, so $\{H,H\}=0$; the preservation of $\omega$ is Cartan's formula $\mathcal{L}_{X_H}\omega = d\iota_{X_H}\omega+\iota_{X_H}d\omega = d\,dH + 0 = 0$, using closedness. The volume form is a power of $\omega$, so it is preserved as well. $\square$
+*Proof.* The bracket is skew, so $\{H,H\}=0$; the preservation of $\omega$ is Cartan's formula $\mathcal{L}_{X_H}\omega = d\iota_{X_H}\omega+\iota_{X_H}d\omega = d\,dH + 0 = 0$, using closedness. The volume form is a power of $\omega$, so it is preserved as well.
 
 **Theorem (Liouville).** The flow of a Hamiltonian vector field on a symplectic manifold of dimension $2n$ preserves the measure induced by $\omega^n/n!$; consequently, on a bounded invariant set of finite measure, almost every orbit returns arbitrarily close to its starting point infinitely often (Poincaré recurrence).
 
-*Proof.* The invariance of the volume form is the preceding theorem. For the recurrence, let $A$ be the invariant set of finite positive measure and let $U\subseteq A$ be open; the images $\phi_t(U)$ all have the same measure as $U$, so if they were pairwise disjoint their union would have infinite measure; hence $\phi_{t_1}(U)\cap\phi_{t_2}(U)\neq\emptyset$ for some $t_1<t_2$, and $\phi_{t_2-t_1}(U)\cap U\neq\emptyset$, which is recurrence. $\square$
+*Proof.* The invariance of the volume form is the preceding theorem. For the recurrence, let $A$ be the invariant set of finite positive measure and let $U\subseteq A$ be open; the images $\phi_t(U)$ all have the same measure as $U$, so if they were pairwise disjoint their union would have infinite measure; hence $\phi_{t_1}(U)\cap\phi_{t_2}(U)\neq\emptyset$ for some $t_1<t_2$, and $\phi_{t_2-t_1}(U)\cap U\neq\emptyset$, which is recurrence.
 
-**Theorem (Noether, Hamiltonian form).** Let a Lie group $G$ act on the symplectic manifold $(M,\omega)$ preserving $\omega$ and the Hamiltonian $H$, with infinitesimal generators $\xi_{\mathfrak{g}}$ and a momentum map $J : M\to\mathfrak{g}^*$ satisfying $d\langle J,\xi\rangle = \iota_{\xi_M}\omega$. Then $J$ is conserved along the flow of $H$: $\{J_\xi,H\}=0$ for every $\xi\in\mathfrak{g}$.
+**Theorem (Noether, Hamiltonian form).** Let a Lie group $G$ act on the symplectic manifold $(M,\omega)$ preserving $\omega$ and the Hamiltonian $H$, with infinitesimal generators $\xi_{\mathrm{G}}$ and a momentum map $J : M\to\mathrm{G}^*$ satisfying $d\langle J,\xi\rangle = \iota_{\xi_M}\omega$. Then $J$ is conserved along the flow of $H$: $\{J_\xi,H\}=0$ for every $\xi\in\mathrm{G}$.
 
-*Proof.* The invariance of $H$ under the group gives $\mathcal{L}_{\xi_M}H = 0$, i.e., $dH(\xi_M)=0$. On the other hand $dH(\xi_M)=\omega(X_H,\xi_M)$ by the definition of $X_H$, and $\omega(X_H,\xi_M)=-\omega(\xi_M,X_H)=-d\langle J,\xi\rangle(X_H)=-\{J_\xi,H\}$, because $X_{J_\xi}=\xi_M$ by the definition of the momentum map and the nondegeneracy of $\omega$. Hence the bracket vanishes. The one-parameter case is the Noether theorem of the calculus of variations, from which the statement descends. $\square$
+*Proof.* The invariance of $H$ under the group gives $\mathcal{L}_{\xi_M}H = 0$, i.e., $dH(\xi_M)=0$. On the other hand $dH(\xi_M)=\omega(X_H,\xi_M)$ by the definition of $X_H$, and $\omega(X_H,\xi_M)=-\omega(\xi_M,X_H)=-d\langle J,\xi\rangle(X_H)=-\{J_\xi,H\}$, because $X_{J_\xi}=\xi_M$ by the definition of the momentum map and the nondegeneracy of $\omega$. Hence the bracket vanishes. The one-parameter case is the Noether theorem of the calculus of variations, from which the statement descends.
 
 ## Complete Integrability and Action-Angle Variables
 
@@ -149,7 +149,7 @@ Moreover $\frac{d}{dt}f = \{f,H\}$ along the flow of $X_H$, so that $f$ is conse
 2. the flow of $X_H$ is linear on $M_c$ in suitable coordinates, so the motion is **conditionally periodic** with $n$ frequencies;
 3. there is a neighbourhood of $M_c$ with **action-angle coordinates** $(I,\theta)\in\mathbb{R}^n\times\mathbb{T}^n$ in which $\omega = \sum d\theta^i\wedge dI_i$ and $H = H(I)$ depends only on the actions.
 
-*Proof.* Quoted as standard. The vector fields $X_{F_i}$ are tangent to $M_c$ because the $F_i$ are in involution; they commute, since $[X_{F_i},X_{F_j}]=X_{\{F_i,F_j\}}=0$, so they define an integrable distribution whose leaves are open subsets of $M_c$. Compactness and connectedness make each leaf a torus, giving the first assertion. The leaves are the orbits of an abelian group of translations, and the parameters along the commuting flows are the angles, giving the second. The actions are defined by integrating the $1$-forms $\iota_{X_{F_i}}\omega$ over a basis of cycles of the torus; that the integrals are locally constant in $c$ follows from the closedness of those forms, and the resulting coordinates are canonical because the cycles are Lagrangian, which gives the third assertion. $\square$
+*Proof.* Quoted as standard. The vector fields $X_{F_i}$ are tangent to $M_c$ because the $F_i$ are in involution; they commute, since $[X_{F_i},X_{F_j}]=X_{\{F_i,F_j\}}=0$, so they define an integrable distribution whose leaves are open subsets of $M_c$. Compactness and connectedness make each leaf a torus, giving the first assertion. The leaves are the orbits of an abelian group of translations, and the parameters along the commuting flows are the angles, giving the second. The actions are defined by integrating the $1$-forms $\iota_{X_{F_i}}\omega$ over a basis of cycles of the torus; that the integrals are locally constant in $c$ follows from the closedness of those forms, and the resulting coordinates are canonical because the cycles are Lagrangian, which gives the third assertion.
 
 **Corollary (solution by quadrature).** In action-angle coordinates the equations of the flow are $\dot I=0$ and $\dot\theta = \omega(I) = \frac{\partial H}{\partial I}$, so $I$ is constant and $\theta(t)=\theta(0)+\omega(I)t$; the system is solved by a single integration of known functions.
 
@@ -159,7 +159,7 @@ Moreover $\frac{d}{dt}f = \{f,H\}$ along the flow of $X_H$, so that $f$ is conse
 
 **Example (the Kepler problem).** For a particle of unit mass in a central potential $-k/r$ in the plane, the configuration space is $\mathbb{R}^2\setminus\{0\}$ with polar coordinates, $H = \frac12(p_r^2+p_\theta^2/r^2)-k/r$, and the system is completely integrable with the commuting pair $F_1=H$ and $F_2=p_\theta$, the angular momentum. The level sets of $(H,p_\theta)$ are tori except for the separatrix of the parabolic orbit, the actions are the classical Delaunay variables, and the additional conserved vector (the Runge–Lenz vector) accounts for the further degeneracy of the frequency vector: the two frequencies of the bounded motion coincide, so the bounded orbits close and are ellipses rather than dense on a torus. The example shows that a system may have more integrals than the Liouville theorem requires, and that the extra integral is detected by a resonance of the frequency vector.
 
-**Example (the Euler top).** The rigid body with a fixed point and no external torque has phase space the dual of the Lie algebra $\mathfrak{so}(3)$, with the Lie–Poisson structure and the Hamiltonian $H = \frac12\bigl(M_1^2/I_1+M_2^2/I_2+M_3^2/I_3\bigr)$; equivalently, in the body frame, the Euler equations $\dot M = M\times(I^{-1}M)$. The Casimir function of the Lie–Poisson structure, $\tfrac12(M_1^2+M_2^2+M_3^2)$, is conserved, and together with the energy and the component of the angular momentum along a fixed axis of space it gives three commuting integrals in the six-dimensional phase space $T^*SO(3)$, so the system is completely integrable, and the reduced level sets are the classical ellipsoids cut by the energy spheres; the free symmetric top has a further degeneracy and the motion is a regular precession. The example is the standard instance of a system whose integrability is read off a Poisson structure that is not symplectic, and whose reduction is the setting of the symplectic geometry of Part II.
+**Example (the Euler top).** The rigid body with a fixed point and no external torque has phase space the dual of the Lie algebra $\mathrm{SO}(3)$, with the Lie–Poisson structure and the Hamiltonian $H = \frac12\bigl(M_1^2/I_1+M_2^2/I_2+M_3^2/I_3\bigr)$; equivalently, in the body frame, the Euler equations $\dot M = M\times(I^{-1}M)$. The Casimir function of the Lie–Poisson structure, $\tfrac12(M_1^2+M_2^2+M_3^2)$, is conserved, and together with the energy and the component of the angular momentum along a fixed axis of space it gives three commuting integrals in the six-dimensional phase space $T^*SO(3)$, so the system is completely integrable, and the reduced level sets are the classical ellipsoids cut by the energy spheres; the free symmetric top has a further degeneracy and the motion is a regular precession. The example is the standard instance of a system whose integrability is read off a Poisson structure that is not symplectic, and whose reduction is the setting of the symplectic geometry of Part II.
 
 **Example (the geodesic flow).** For the mechanical Lagrangian with zero potential, the Hamiltonian flow on $T^*Q$ is the geodesic flow of the metric $g$. It is the model of a Hamiltonian system whose dynamics is chaotic for a negatively curved metric — the flow on a compact quotient of the hyperbolic plane is Anosov and ergodic, as the articles of this Part on the geodesic flow and on hyperbolic dynamics record — and completely integrable for a metric with sufficiently many Killing fields. The comparison of the two cases is the classical instance of the dichotomy between integrable and chaotic Hamiltonian dynamics.
 

@@ -23,7 +23,7 @@ and the pair $(W, S)$ is a **Coxeter system**. The **rank** of the system is $|S
 
 **Proposition.** Every Coxeter group splits as the free product of the Coxeter groups of the connected components of its diagram, so a Coxeter system is determined by its irreducible components.
 
-**Proof.** The generators of two different components have no relation between them in the presentation, and a group presented by generators with no relation between two disjoint sets is the free product of the groups presented by the two sets, by the universal property of the free product. $\square$
+**Proof.** The generators of two different components have no relation between them in the presentation, and a group presented by generators with no relation between two disjoint sets is the free product of the groups presented by the two sets, by the universal property of the free product.
 
 ### Examples
 
@@ -31,7 +31,7 @@ and the pair $(W, S)$ is a **Coxeter system**. The **rank** of the system is $|S
 
 **Example (type $A_n$).** The Coxeter group with generators $s_1, \ldots, s_n$ and relations $s_i^2 = 1$, $(s_i s_{i+1})^3 = 1$ and $(s_i s_j)^2 = 1$ for $|i - j| \geq 2$ is isomorphic to the symmetric group $S_{n+1}$, with $s_i$ corresponding to the transposition $(i\ i+1)$.
 
-**Proof.** The transpositions $(i\ i+1)$ satisfy the relations: they are involutions, $(s_i s_{i+1})^3 = 1$ is the braid relation $(i\ i+1)(i+1\ i+2)(i\ i+1) = (i+1\ i+2)(i\ i+1)(i+1\ i+2)$, and disjoint transpositions commute. Hence the map from the presented group to $S_{n+1}$ is well defined and surjective. For injectivity one uses the length function and the exchange condition below: every element of the presented group has a reduced expression $s_{i_1}\cdots s_{i_k}$ in which no letter can be deleted, and two such expressions are related by the braid relations; since the corresponding products of transpositions satisfy the same reduced-word combinatorics as the permutations they produce, a word representing the identity must reduce to the empty word, so the map is injective. $\square$
+**Proof.** The transpositions $(i\ i+1)$ satisfy the relations: they are involutions, $(s_i s_{i+1})^3 = 1$ is the braid relation $(i\ i+1)(i+1\ i+2)(i\ i+1) = (i+1\ i+2)(i\ i+1)(i+1\ i+2)$, and disjoint transpositions commute. Hence the map from the presented group to $S_{n+1}$ is well defined and surjective. For injectivity one uses the length function and the exchange condition below: every element of the presented group has a reduced expression $s_{i_1}\cdots s_{i_k}$ in which no letter can be deleted, and two such expressions are related by the braid relations; since the corresponding products of transpositions satisfy the same reduced-word combinatorics as the permutations they produce, a word representing the identity must reduce to the empty word, so the map is injective.
 
 **Example (the symmetric group as type $A$).** The identification $A_n \cong S_{n+1}$ gives the Coxeter structure of the symmetric groups; $A_1 = S_2$, $A_2 = S_3$ (which is $I_2(3)$), and $A_3 = S_4$ are the smallest cases.
 
@@ -49,7 +49,7 @@ $$
 
 for every $w \in W$ and $s \in S$, and $\ell(w) \equiv \ell(w') \pmod{2}$ whenever $w$ and $w'$ are related by a sequence of relations; hence $\varepsilon(w) = (-1)^{\ell(w)}$ is a well-defined map $W \to \{\pm 1\}$ and is a homomorphism.
 
-**Proof sketch.** If $w = s_1\cdots s_k$ is reduced then $\ell(ws) \leq k+1$ and, if $\ell(ws) = k+1$, the word $s_1\cdots s_k s$ is reduced; the alternative $\ell(ws) = k-1$ occurs exactly when $s = s_k$. For the parity statement, each defining relation of the presentation has even total length in $S$: $s^2$ has length $2$ and $(st)^{m}$ has length $2m$, so all relations change the length parity by an even amount, and the length parity is therefore a homomorphism on the group. $\square$
+**Proof sketch.** If $w = s_1\cdots s_k$ is reduced then $\ell(ws) \leq k+1$ and, if $\ell(ws) = k+1$, the word $s_1\cdots s_k s$ is reduced; the alternative $\ell(ws) = k-1$ occurs exactly when $s = s_k$. For the parity statement, each defining relation of the presentation has even total length in $S$: $s^2$ has length $2$ and $(st)^{m}$ has length $2m$, so all relations change the length parity by an even amount, and the length parity is therefore a homomorphism on the group.
 
 **Definition.** The **exchange condition** holds in $(W,S)$ if, whenever $w = s_1 \cdots s_k$ is reduced and $s \in S$ satisfies $\ell(sw) < \ell(w)$, there is an index $i$ with
 
@@ -67,7 +67,7 @@ $$
 
 and iterating gives a reduced word for the same element.
 
-**Proof sketch.** The deletion condition is a reformulation of the exchange condition, obtained by applying the exchange condition at the first letter where the length fails to increase; the exchange condition itself is proved by induction on $\ell(w)$ from the defining relations, using that in a rank-2 parabolic subgroup the two possible reductions of a word of length $2m$ are the two halves of the longest element. $\square$
+**Proof sketch.** The deletion condition is a reformulation of the exchange condition, obtained by applying the exchange condition at the first letter where the length fails to increase; the exchange condition itself is proved by induction on $\ell(w)$ from the defining relations, using that in a rank-2 parabolic subgroup the two possible reductions of a word of length $2m$ are the two halves of the longest element.
 
 ### Matsumoto's Theorem and the Word Problem
 
@@ -75,11 +75,11 @@ and iterating gives a reduced word for the same element.
 
 **Theorem (Matsumoto).** Two reduced words represent the same element of $W$ if and only if they are related by a sequence of braid moves.
 
-**Proof sketch.** One shows by induction on the length that any two reduced words for $w$ are braid-equivalent, using the deletion condition: if the two words begin with different letters $s \neq t$, then $sw$ and $tw$ both have length $\ell(w)-1$, and the exchange condition produces positions at which the letters can be removed, reducing the problem to words of smaller length after a braid move at the beginning. The induction is on $\ell(w)$ and uses the rank-two case, in which the braid relation is exactly the defining relation $(st)^m = 1$. $\square$
+**Proof sketch.** One shows by induction on the length that any two reduced words for $w$ are braid-equivalent, using the deletion condition: if the two words begin with different letters $s \neq t$, then $sw$ and $tw$ both have length $\ell(w)-1$, and the exchange condition produces positions at which the letters can be removed, reducing the problem to words of smaller length after a braid move at the beginning. The induction is on $\ell(w)$ and uses the rank-two case, in which the braid relation is exactly the defining relation $(st)^m = 1$.
 
 **Corollary (the word problem for Coxeter groups).** The word problem is solvable for every finitely presented Coxeter group: given a word in $S$, apply the deletion condition repeatedly to reduce its length, and test whether the reduced word is empty.
 
-**Proof sketch.** The deletion condition gives a terminating procedure: scan the word and, whenever a letter can be deleted, delete it; the length decreases strictly, so the procedure halts, and by the theorem the result is a reduced word for the same element. The word represents the identity exactly when its reduction is the empty word. The procedure is effective because the braid relations are the only identifications needed (Matsumoto). $\square$
+**Proof sketch.** The deletion condition gives a terminating procedure: scan the word and, whenever a letter can be deleted, delete it; the length decreases strictly, so the procedure halts, and by the theorem the result is a reduced word for the same element. The word represents the identity exactly when its reduction is the empty word. The procedure is effective because the braid relations are the only identifications needed (Matsumoto).
 
 **Corollary.** Coxeter groups are **automatic** in the sense of the theory of automatic groups: there is a finite automaton recognising the reduced words for the elements, and another recognising pairs of reduced words differing by one generator, so the word problem is solvable in quadratic time and the regular language of reduced words provides a normal form.
 
@@ -137,7 +137,7 @@ The verification accompanying this article recomputes each order as the product 
 
 **Theorem.** For $T \subseteq S$ the pair $(W_T, T)$ is a Coxeter system whose diagram is the subdiagram induced by $T$. The intersection $W_T \cap W_{T'}$ is $W_{T \cap T'}$, and the **cosets** of parabolic subgroups have canonical representatives: every element $w \in W$ has a unique decomposition $w = w^T w_T$ with $w_T \in W_T$ and $w^T$ of minimal length in its coset, and $\ell(w) = \ell(w^T) + \ell(w_T)$.
 
-**Proof sketch.** The presentation of $W_T$ is the restriction of the presentation of $W$ to the generators in $T$, so there is a homomorphism $W_T \to W$, and it is injective by the exchange condition applied within the subdiagram. For the decomposition, the set of minimal-length coset representatives is characterised by the condition that it contains no generator $s \in T$ on the right; the product decomposition and the length additivity follow from the exchange condition. $\square$
+**Proof sketch.** The presentation of $W_T$ is the restriction of the presentation of $W$ to the generators in $T$, so there is a homomorphism $W_T \to W$, and it is injective by the exchange condition applied within the subdiagram. For the decomposition, the set of minimal-length coset representatives is characterised by the condition that it contains no generator $s \in T$ on the right; the product decomposition and the length additivity follow from the exchange condition.
 
 **Example.** For type $A_n$ with $S = \{s_1,\ldots,s_n\}$, the parabolic subgroup generated by a subset $T$ corresponding to a composition of $n+1$ is a product of symmetric groups, and the coset representatives are the permutations with a prescribed descent pattern. The parabolic structure of the Coxeter system is the combinatorial form of the subgroup structure of the symmetric group.
 
@@ -173,13 +173,13 @@ $$
 
 and the longest element $w_0$ has length $\binom{n+1}{2}$ and order $2$, sending $i$ to $n+2-i$.
 
-**Proof sketch.** Each adjacent transposition $s_i$ changes the inversion number by $\pm 1$, so the inversion number is a lower bound for the length, and the bubble-sort procedure constructs a reduced word of exactly that length, using that a permutation with an inversion has an adjacent pair out of order which can be swapped to decrease the inversion number. The longest element reverses the order, and it has the stated length and order. $\square$
+**Proof sketch.** Each adjacent transposition $s_i$ changes the inversion number by $\pm 1$, so the inversion number is a lower bound for the length, and the bubble-sort procedure constructs a reduced word of exactly that length, using that a permutation with an inversion has an adjacent pair out of order which can be swapped to decrease the inversion number. The longest element reverses the order, and it has the stated length and order.
 
 ### Dihedral and Rank-Two Cases
 
 **Proposition.** In type $I_2(m)$ the Coxeter group has $2m$ elements: $m$ elements of the form $(st)^k$ for $k = 0,\ldots,m-1$ and $m$ elements of the form $(st)^k s$, each of the latter being an involution. For $m = \infty$, the group is the infinite dihedral group and the elements are the powers of $st$ and their products with $s$.
 
-**Proof.** The computation is the one for the dihedral groups in *Solvable and Nilpotent Groups*; the relation $(st)^m = 1$ makes the powers of $st$ cyclic of order $m$, and the coset of $s$ gives the remaining $m$ elements. $\square$
+**Proof.** The computation is the one for the dihedral groups in *Solvable and Nilpotent Groups*; the relation $(st)^m = 1$ makes the powers of $st$ cyclic of order $m$, and the coset of $s$ gives the remaining $m$ elements.
 
 **Example (hyperbolic Coxeter groups).** A Coxeter group whose diagram is neither finite nor affine is **hyperbolic** in the rough sense that it is not virtually abelian while all its proper parabolics may be finite; the triangle groups $\langle s_1, s_2, s_3 \mid s_i^2 = 1,\ (s_is_j)^{m_{ij}} = 1\rangle$ with $1/m_{12} + 1/m_{23} + 1/m_{31} < 1$ are the basic examples. The geometric description of such groups as reflection groups of the hyperbolic plane belongs to Part II; the algebraic statement is that the group is infinite, generated by three involutions, and not virtually abelian.
 

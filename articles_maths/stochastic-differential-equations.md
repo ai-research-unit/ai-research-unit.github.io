@@ -54,7 +54,7 @@ $$
 
 and the integral extends uniquely to an isometry $\mathcal{H}^2\to L^2(\Omega)$; the extended stochastic process $t\mapsto\int_0^t\phi_s\,dB_s$ is a continuous martingale with quadratic variation $\langle\int\phi\,dB\rangle_t=\int_0^t\phi_s^2ds$.
 
-*Proof.* For simple processes the two identities follow from the independence and the Gaussian moments of the increments: cross terms vanish because the $\xi_i\xi_j$ with $i<j$ are $\mathcal{F}_{t_j}$-measurable and the conditional mean of $B_{t_{j+1}}-B_{t_j}$ vanishes. The isometry makes the map an isometry from the dense subspace of simple processes into $L^2(\Omega)$, and the completeness of $L^2$ gives the extension. The martingale property follows by conditioning on $\mathcal{F}_s$ and using the independence of the increments beyond $s$. $\square$
+*Proof.* For simple processes the two identities follow from the independence and the Gaussian moments of the increments: cross terms vanish because the $\xi_i\xi_j$ with $i<j$ are $\mathcal{F}_{t_j}$-measurable and the conditional mean of $B_{t_{j+1}}-B_{t_j}$ vanishes. The isometry makes the map an isometry from the dense subspace of simple processes into $L^2(\Omega)$, and the completeness of $L^2$ gives the extension. The martingale property follows by conditioning on $\mathcal{F}_s$ and using the independence of the increments beyond $s$.
 
 **Definition.** For a general integrand $\phi\in\mathcal{H}^2$ the integral is the $L^2$ limit of the integrals of an approximating sequence of simple processes.
 
@@ -68,7 +68,7 @@ $$
 f(t,X_t) = f(0,X_0)+\int_0^t\Bigl(\partial_sf(s,X_s)+b_s\partial_xf(s,X_s)+\tfrac12\sigma_s^2\partial_{xx}f(s,X_s)\Bigr)ds+\int_0^t\sigma_s\partial_xf(s,X_s)\,dB_s .
 $$
 
-*Proof.* Quoted as standard. The proof is a Taylor expansion along a partition: the first-order terms converge to the drift and the stochastic integral, and the second-order term in $x$ leaves the sum $\sum(\Delta X_i)^2$, which converges to the quadratic variation $\int\sigma_s^2ds$ rather than to zero. The third- and higher-order terms are of higher order by the finite quadratic variation and the continuity of the paths. $\square$
+*Proof.* Quoted as standard. The proof is a Taylor expansion along a partition: the first-order terms converge to the drift and the stochastic integral, and the second-order term in $x$ leaves the sum $\sum(\Delta X_i)^2$, which converges to the quadratic variation $\int\sigma_s^2ds$ rather than to zero. The third- and higher-order terms are of higher order by the finite quadratic variation and the continuity of the paths.
 
 **Definition.** For a diffusion $dX_t=b(t,X_t)dt+\sigma(t,X_t)dB_t$ with $\sigma\sigma^{\mathrm{T}}$ the diffusion matrix, the **generator** is the second-order operator
 
@@ -84,7 +84,7 @@ $$
 \mathbb{E}_x\bigl[f(X_\tau)\bigr] = f(x)+\mathbb{E}_x\left[\int_0^\tau Lf(X_s)\,ds\right] .
 $$
 
-*Proof.* Apply Itô's formula to $f(X_t)$, note that the stochastic integral is a martingale, and take expectations at the stopping time $\tau$; the optional stopping theorem for a bounded martingale and a truncation argument for the integrability of $\tau$ justify the passage. $\square$
+*Proof.* Apply Itô's formula to $f(X_t)$, note that the stochastic integral is a martingale, and take expectations at the stopping time $\tau$; the optional stopping theorem for a bounded martingale and a truncation argument for the integrability of $\tau$ justify the passage.
 
 **Remark (the generator and the operators of the previous articles).** The generator $L$ is an elliptic second-order operator with the ellipsoid of the diffusion matrix as its symbol, so the backward equation $\partial_tu+Lu=0$ is a parabolic equation of the type studied in the earlier article of this Part: elliptic when the diffusion matrix is positive definite, degenerate when it is not, and with the boundary conditions supplied by the problem. The transition semigroup $P_tf(x)=\mathbb{E}_x[f(X_t)]$ is a strongly continuous semigroup on a suitable Banach space whose generator is $L$, and the well-posedness theory of the semigroup article applies to it; this is the precise point of contact between the stochastic and the deterministic theories.
 
@@ -108,7 +108,7 @@ $$
 \int_0^tf(B_s)\circ dB_s = \int_0^tf(B_s)\,dB_s+\frac12\int_0^tf'(B_s)\,ds .
 $$
 
-*Proof.* Quoted as standard. The midpoint value differs from the left endpoint by $\frac12(\phi_{t_{i+1}}-\phi_{t_i})$, and the sum of these differences times the corresponding Brownian increment converges to $\frac12\langle\phi,B\rangle_t$ by the definition of the joint quadratic variation; for $\phi=f(B)$ the joint variation is computed from the quadratic variation of $B$, giving the second formula. $\square$
+*Proof.* Quoted as standard. The midpoint value differs from the left endpoint by $\frac12(\phi_{t_{i+1}}-\phi_{t_i})$, and the sum of these differences times the corresponding Brownian increment converges to $\frac12\langle\phi,B\rangle_t$ by the definition of the joint quadratic variation; for $\phi=f(B)$ the joint variation is computed from the quadratic variation of $B$, giving the second formula.
 
 **Theorem (the Stratonovich chain rule).** If $X_t = X_0+\int_0^t\sigma(X_s)\circ dB_s+\int_0^tb(X_s)ds$ is a Stratonovich equation and $f\in C^3$, then
 
@@ -118,7 +118,7 @@ $$
 
 so the classical chain rule holds and the change of variables requires no second-order term.
 
-*Proof.* Quoted as standard. The correction term of the Itô–Stratonovich formula is exactly the second-order term of Itô's formula, so the two formulas combine to the classical one. $\square$
+*Proof.* Quoted as standard. The correction term of the Itô–Stratonovich formula is exactly the second-order term of Itô's formula, so the two formulas combine to the classical one.
 
 **Theorem (conversion between Itô and Stratonovich forms).** In one dimension, the Itô equation $dX_t=b(X_t)dt+\sigma(X_t)dB_t$ is equivalent to the Stratonovich equation
 
@@ -128,7 +128,7 @@ $$
 
 and conversely; in several dimensions the correction term is $\frac12\sum_{j,k}\sigma^j_k\partial_{x_j}\sigma^i_k$ in the $i$-th component.
 
-*Proof.* Apply the Stratonovich chain rule to $\sigma(X_t)$ and substitute the Itô equation: the cross variation $\langle\sigma(X),B\rangle_t=\int\sigma'\sigma\,ds$ produces the drift correction, and the equivalence follows. $\square$
+*Proof.* Apply the Stratonovich chain rule to $\sigma(X_t)$ and substitute the Itô equation: the cross variation $\langle\sigma(X),B\rangle_t=\int\sigma'\sigma\,ds$ produces the drift correction, and the equivalence follows.
 
 **Remark (which calculus to use).** The Itô form is the one in which the generator, the martingale property and the martingale problem are stated, and it is the form in which the theory is proved. The Stratonovich form is the one in which the equation is written when the noise is a limit of smooth processes, and the one in which the transformation rules of differential geometry apply; for a stochastic flow of diffeomorphisms, the Stratonovich equation is the one whose solutions depend smoothly on the initial datum. The two are equivalent, and the conversion rule above is the dictionary.
 
@@ -138,17 +138,17 @@ and conversely; in several dimensions the correction term is $\frac12\sum_{j,k}\
 
 **Theorem (existence and pathwise uniqueness under Lipschitz conditions).** Let $b$ and $\sigma$ be measurable, locally Lipschitz in $x$ uniformly in $t$, and of at most linear growth: $|b(t,x)|+|\sigma(t,x)|\le C(1+|x|)$. Then for every $X_0\in L^2(\Omega)$ the equation has a strong solution, unique among solutions with $\mathbb{E}\int_0^T|X_t|^2dt<\infty$; the solution is a continuous semimartingale, and it satisfies $\mathbb{E}[\sup_{t\le T}|X_t|^2]<\infty$.
 
-*Proof.* Quoted as standard (the Picard iteration for stochastic equations). One defines $X^{(0)}_t=X_0$ and $X^{(n+1)}_t = X_0+\int_0^tb(s,X^{(n)}_s)ds+\int_0^t\sigma(s,X^{(n)}_s)dB_s$; the Lipschitz condition and the Burkholder–Davis–Gundy inequality give $\mathbb{E}[\sup_{t\le T}|X^{(n+1)}_t-X^{(n)}_t|^2]\le C\int_0^T\mathbb{E}[\sup_{s\le t}|X^{(n)}_s-X^{(n-1)}_s|^2]dt$, whose iteration converges geometrically, so the sequence converges uniformly on $[0,T]$ in $L^2$ and the limit solves the equation. Pathwise uniqueness follows from the same estimate applied to the difference of two solutions, whose initial datum is zero: the difference is bounded by a constant times its own integral, hence vanishes by Gronwall's inequality. $\square$
+*Proof.* Quoted as standard (the Picard iteration for stochastic equations). One defines $X^{(0)}_t=X_0$ and $X^{(n+1)}_t = X_0+\int_0^tb(s,X^{(n)}_s)ds+\int_0^t\sigma(s,X^{(n)}_s)dB_s$; the Lipschitz condition and the Burkholder–Davis–Gundy inequality give $\mathbb{E}[\sup_{t\le T}|X^{(n+1)}_t-X^{(n)}_t|^2]\le C\int_0^T\mathbb{E}[\sup_{s\le t}|X^{(n)}_s-X^{(n-1)}_s|^2]dt$, whose iteration converges geometrically, so the sequence converges uniformly on $[0,T]$ in $L^2$ and the limit solves the equation. Pathwise uniqueness follows from the same estimate applied to the difference of two solutions, whose initial datum is zero: the difference is bounded by a constant times its own integral, hence vanishes by Gronwall's inequality.
 
 **Theorem (Yamada–Watanabe).** Pathwise uniqueness implies uniqueness in law, and if in addition a weak solution exists then a strong solution exists.
 
-*Proof.* Quoted as standard. The principle is proved by constructing the solution as a measurable functional of the driving Brownian motion, using the almost sure convergence of a Picard-type iteration under the weaker hypotheses; uniqueness in law then follows from pathwise uniqueness by an approximation of the coefficients by Lipschitz ones. $\square$
+*Proof.* Quoted as standard. The principle is proved by constructing the solution as a measurable functional of the driving Brownian motion, using the almost sure convergence of a Picard-type iteration under the weaker hypotheses; uniqueness in law then follows from pathwise uniqueness by an approximation of the coefficients by Lipschitz ones.
 
 **Definition.** The **martingale problem** for the generator $L$ and the initial law $\mu$ asks for a process $X$ with $X_0\sim\mu$ such that $f(X_t)-\int_0^tLf(X_s)ds$ is a martingale for every $f$ in the domain of $L$. A solution of the martingale problem is a weak solution of the stochastic equation, and conversely.
 
 **Theorem (Stroock–Varadhan).** If $L$ is the generator of a diffusion with bounded measurable coefficients and a uniformly elliptic diffusion matrix, then the martingale problem for $L$ and any initial law is well posed: there is a unique solution law, and the associated transition kernels form a Feller semigroup.
 
-*Proof.* Quoted as standard (Stroock–Varadhan). The existence is by a compactness argument on the laws of approximating processes with smooth coefficients, using the tightness supplied by the uniformity of the oscillation estimates; the uniqueness is by the identification of the generator through the maximum principle for the associated parabolic equation. $\square$
+*Proof.* Quoted as standard (Stroock–Varadhan). The existence is by a compactness argument on the laws of approximating processes with smooth coefficients, using the tightness supplied by the uniformity of the oscillation estimates; the uniqueness is by the identification of the generator through the maximum principle for the associated parabolic equation.
 
 **Example (a Lipschitz equation).** The equation $dX_t=-\theta X_tdt+\sigma dB_t$ with constants $\theta,\sigma$ satisfies the Lipschitz hypotheses, and its solution is
 
@@ -176,7 +176,7 @@ $$
 
 is a Brownian motion under $\mathbb{Q}$.
 
-*Proof.* Quoted as standard. The exponential is a positive martingale under Novikov's condition, so $\mathbb{Q}$ is a probability measure equivalent to $\mathbb{P}$; Bayes' rule shows that $\tilde B$ has the martingale property and the correct quadratic variation $t$ under $\mathbb{Q}$, and Lévy's characterisation of Brownian motion (a continuous local martingale with $\langle\tilde B\rangle_t=t$ is a Brownian motion) identifies it. $\square$
+*Proof.* Quoted as standard. The exponential is a positive martingale under Novikov's condition, so $\mathbb{Q}$ is a probability measure equivalent to $\mathbb{P}$; Bayes' rule shows that $\tilde B$ has the martingale property and the correct quadratic variation $t$ under $\mathbb{Q}$, and Lévy's characterisation of Brownian motion (a continuous local martingale with $\langle\tilde B\rangle_t=t$ is a Brownian motion) identifies it.
 
 **Corollary (removing a drift).** An equation with a drift, $dX_t=b(t,X_t)dt+dB_t$, can be transformed into a driftless equation by the change of measure with $\theta_t=b(t,X_t)$; consequently the law of the solution with drift is absolutely continuous with respect to that of the driftless solution on each finite time interval, with the Radon–Nikodym density given above.
 
@@ -190,7 +190,7 @@ $$
 
 and for time-homogeneous coefficients the kernels $P_t$ form a semigroup, $P_{s,t}=P_{0,t-s}$ and $P_{s+t}=P_sP_t$.
 
-*Proof.* The solution restarted at time $s$ from $X_s$ solves the same equation driven by the shifted Brownian motion by the strong uniqueness; the conditional expectation depends on $\mathcal{F}_s$ only through $X_s$, which is the Markov property, and the semigroup law is the composition of the transitions. $\square$
+*Proof.* The solution restarted at time $s$ from $X_s$ solves the same equation driven by the shifted Brownian motion by the strong uniqueness; the conditional expectation depends on $\mathcal{F}_s$ only through $X_s$, which is the Markov property, and the semigroup law is the composition of the transitions.
 
 **Theorem (backward and forward Kolmogorov equations).** Let $u(t,x)=\mathbb{E}_x[f(X_t)]$ for $f$ smooth. Then $u$ solves the **backward Kolmogorov equation**
 
@@ -206,7 +206,7 @@ $$
 
 with the initial condition $p(0,\cdot,y)\to\delta_y$.
 
-*Proof.* Apply Itô's formula to $u(T-t,X_t)$: the drift is $(-\partial_tu+Lu)(T-t,X_t)$ and the stochastic integral is a martingale; taking expectations over $[0,T]$ and using $u(0,X_T)=f(X_T)$ gives the backward equation when the drift vanishes for every $f$, and the Fokker–Planck equation is the formal adjoint obtained by integrating the backward equation against a test function. $\square$
+*Proof.* Apply Itô's formula to $u(T-t,X_t)$: the drift is $(-\partial_tu+Lu)(T-t,X_t)$ and the stochastic integral is a martingale; taking expectations over $[0,T]$ and using $u(0,X_T)=f(X_T)$ gives the backward equation when the drift vanishes for every $f$, and the Fokker–Planck equation is the formal adjoint obtained by integrating the backward equation against a test function.
 
 **Theorem (Feynman–Kac).** Let $V$ be bounded and continuous and let $f$ be bounded. Then
 
@@ -218,7 +218,7 @@ is the unique bounded solution of $\partial_tu = Lu - Vu$ with $u(0,x)=f(x)$.
 
 *Proof.* Quoted as standard (the Feynman–Kac formula). Let $Z_t = \exp(-\int_0^tV(X_s)ds)\,u(t,X_t)$. Itô's formula applied to the product gives
 $dZ_t = e^{-\int_0^tV}\bigl(\partial_tu+Lu-Vu\bigr)(t,X_t)\,dt+d(\text{martingale})$;
-when $\partial_tu=Lu-Vu$ the finite-variation part vanishes, so $Z$ is a martingale, and taking expectations between $0$ and $t$ gives $\mathbb{E}_x[Z_t]=Z_0=u(0,x)=f(x)$, which is the formula. Uniqueness follows from the maximum principle and the boundedness of $V$. $\square$
+when $\partial_tu=Lu-Vu$ the finite-variation part vanishes, so $Z$ is a martingale, and taking expectations between $0$ and $t$ gives $\mathbb{E}_x[Z_t]=Z_0=u(0,x)=f(x)$, which is the formula. Uniqueness follows from the maximum principle and the boundedness of $V$.
 
 **Example (geometric Brownian motion).** For $dX_t=\mu X_tdt+\sigma X_tdB_t$ with constants $\mu,\sigma$, the solution is
 

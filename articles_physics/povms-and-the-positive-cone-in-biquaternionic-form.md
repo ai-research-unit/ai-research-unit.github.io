@@ -4,20 +4,20 @@
 
 The most general measurement that quantum mechanics admits is not a projective measurement. It is a **positive operator-valued measure**: a family of positive elements summing to the identity, each paired with the state by the Born rule. In the biquaternion framework these elements are elements of the Hermitian subspace $\mathbb{M}_+$, and the condition that a measurement be possible is the condition that they lie in the **positive cone** of the algebra. This article develops the cone, the effects it contains, and the general measurement, in the framework's own terms.
 
-The central observation is that the positive cone of $\mathbb{M}_+$ is the positive cone of the norm form. For a Hermitian element $\tilde{E} = a_0e_0 + i\mathbf{a}$ with $a_0\in\mathbb{R}$, $\mathbf{a}\in\mathbb{R}^3$, positivity of the operator is
+The central observation is that the positive cone of $\mathbb{M}_+$ is the positive cone of the biquaternion norm. For a Hermitian element $\tilde{E} = a_0e_0 + i\mathbf{a}$ with $a_0\in\mathbb{R}$, $\mathbf{a}\in\mathbb{R}^3$, positivity of the operator is
 
 $$
 \tilde{E}\geq0 \quad\Longleftrightarrow\quad N(\tilde{E}) = a_0^2 - |\mathbf{a}|^2 \geq 0 \ \text{ and }\ a_0\geq0
 \quad\Longleftrightarrow\quad a_0\geq|\mathbf{a}| ,
 $$
 
-so the cone of the algebra is the future light cone of the norm form. An **effect** is an element of the operator interval $0\leq\tilde{E}\leq e_0$, which in coefficients reads $|\mathbf{a}|\leq\min(a_0,1-a_0)$; a **POVM** is a resolution of the identity by effects, $\sum_y\tilde{E}_y = e_0$; and the Born rule for the measurement is the trace pairing $p_y = \mathrm{Tr}(\tilde{\rho}\tilde{E}_y)$. The projective measurements are the special case in which the effects are idempotents, and they are the extreme elements of the set of effects; the general measurement is a convex decomposition of the identity into non-extreme effects, and it is strictly more powerful.
+so the cone of the algebra is the future light cone of the biquaternion norm. An **effect** is an element of the operator interval $0\leq\tilde{E}\leq e_0$, which in coefficients reads $|\mathbf{a}|\leq\min(a_0,1-a_0)$; a **POVM** is a resolution of the identity by effects, $\sum_y\tilde{E}_y = e_0$; and the Born rule for the measurement is the trace pairing $p_y = \mathrm{Tr}(\tilde{\rho}\tilde{E}_y)$. The projective measurements are the special case in which the effects are idempotents, and they are the extreme elements of the set of effects; the general measurement is a convex decomposition of the identity into non-extreme effects, and it is strictly more powerful.
 
 The cone is self-dual with respect to the trace pairing, which is the algebraic reason the pairing serves both as the Born rule and as the duality that makes the measurement formalism work. The article derives this, characterizes the effects, exhibits the general POVM, and works two examples: the **trine** POVM, which distinguishes three equatorial states better than any projective measurement, and unambiguous discrimination, which two non-orthogonal states admit with a POVM and not with a projective measurement. The general measurement's realization as a projective measurement on a larger system — Naimark's dilation — is stated in the framework's language, and its status as an extension of the algebra is noted.
 
 ## The Positive Cone
 
-### Positivity as the norm form
+### Positivity as the biquaternion norm
 
 Let $\tilde{H} = h_0e_0 + i\mathbf{h}$ be a general Hermitian element, with $h_0\in\mathbb{R}$ and $\mathbf{h}\in\mathbb{R}^3$. Its matrix image is $h_0I_2 + \mathbf{h}\cdot\boldsymbol{\sigma}$, whose eigenvalues are $h_0\pm|\mathbf{h}|$. Hence
 
@@ -25,19 +25,19 @@ $$
 \tilde{H}\geq0 \quad\Longleftrightarrow\quad h_0 \geq |\mathbf{h}| ,
 $$
 
-and the norm form is
+and the biquaternion norm is
 
 $$
 N(\tilde{H}) = \tilde{H}\bar{\tilde{H}} = h_0^2 - |\mathbf{h}|^2 = \det M(\tilde{H}),
 $$
 
-a real scalar. The two conditions $N(\tilde{H})\geq0$ and $h_0\geq0$ are together equivalent to $h_0\geq|\mathbf{h}|$, so the set of positive elements is the future light cone of the norm form:
+a real scalar. The two conditions $N(\tilde{H})\geq0$ and $h_0\geq0$ are together equivalent to $h_0\geq|\mathbf{h}|$, so the set of positive elements is the future light cone of the biquaternion norm:
 
 $$
 C_+ = \bigl\{h_0e_0 + i\mathbf{h}\in\mathbb{M}_+ : h_0 \geq |\mathbf{h}|\bigr\} .
 $$
 
-This is the **positive cone** of the algebra. Its boundary $h_0 = |\mathbf{h}|$ is the set of positive elements of rank one — the rank-one projectors and their non-negative multiples — which are the zero divisors of the norm form. Its interior $h_0>|\mathbf{h}|$ is the set of positive definite elements.
+This is the **positive cone** of the algebra. Its boundary $h_0 = |\mathbf{h}|$ is the set of positive elements of rank one — the rank-one projectors and their non-negative multiples — which are the zero divisors of the biquaternion norm. Its interior $h_0>|\mathbf{h}|$ is the set of positive definite elements.
 
 ### The cone is self-dual
 
@@ -204,7 +204,7 @@ which is the standard Ivanovic–Dieks–Peres value. Unambiguous discrimination
 
 Collecting the structure, a measurement in the framework is a resolution of the identity into positive elements of $\mathbb{M}_+$:
 
-- **States** are the trace-one elements of the cone $C_+$; the cone is the future light cone of the norm form.
+- **States** are the trace-one elements of the cone $C_+$; the cone is the future light cone of the biquaternion norm.
 - **Effects** are the elements of the operator interval $[0,e_0]$, i.e. the cone intersected with its reflection through $\tfrac12 e_0$; in coefficients, $|\mathbf{a}|\leq\min(a_0,1-a_0)$.
 - **POVMs** are resolutions of the identity by effects; **PVMs** are the resolutions by idempotents, i.e. by extreme effects.
 - **Probabilities** are the trace pairing $p_y = \mathrm{Tr}(\tilde{\rho}\tilde{E}_y)$, and the pairing is the one under which the cone is self-dual.
@@ -216,7 +216,7 @@ The general measurement is a convex decomposition of the identity into effects t
 
 **What it does.**
 
-- It identifies the positive cone of $\mathbb{M}_+$ with the future light cone of the norm form and derives the effect condition $|\mathbf{a}|\leq\min(a_0,1-a_0)$.
+- It identifies the positive cone of $\mathbb{M}_+$ with the future light cone of the biquaternion norm and derives the effect condition $|\mathbf{a}|\leq\min(a_0,1-a_0)$.
 - It shows that the cone is self-dual with respect to the trace pairing, so that one pairing serves both the Born rule and the state-effect duality.
 - It identifies the idempotents as the extreme effects and the projective measurements as the extreme resolutions, with the general POVM as a convex decomposition.
 - It expresses the general measurement, its Kraus form, and its post-measurement state entirely in terms of elements of $\mathbb{B}$.
@@ -230,25 +230,25 @@ The general measurement is a convex decomposition of the identity into effects t
 
 ## Open Questions
 
-**1. The effect body in higher dimensions.** The characterization $|\mathbf{a}|\leq\min(a_0,1-a_0)$ is special to $M_2(\mathbb{C})$. For $\mathbb{B}\otimes\mathbb{B}$ and its effects, what is the analogous coefficient condition, and does the norm form of the tensor product define the cone?
+**1. The effect body in higher dimensions.** The characterization $|\mathbf{a}|\leq\min(a_0,1-a_0)$ is special to $M_2(\mathbb{C})$. For $\mathbb{B}\otimes\mathbb{B}$ and its effects, what is the analogous coefficient condition, and does the biquaternion norm of the tensor product define the cone?
 
 **2. Instruments and information.** A general instrument produces a post-measurement state that depends on the outcome, and the information it leaves in the system is quantified by the disturbance it causes. Is there an algebraic characterization of the instruments that are "minimally disturbing" for a given POVM, in terms of the two sectors $\mathbb{M}_\pm$?
 
-**3. The self-duality and the two pairings.** The cone is self-dual under the trace pairing; the norm form defines the cone but is a different, indefinite pairing. Is there an algebraic relation between the two pairings — a form of Lorentzian duality — that explains why the cone is the norm form's cone and the measurement pairing is the trace pairing?
+**3. The self-duality and the two pairings.** The cone is self-dual under the trace pairing; the biquaternion norm defines the cone but is a different, indefinite pairing. Is there an algebraic relation between the two pairings — a form of Lorentzian duality — that explains why the cone is the biquaternion norm's cone and the measurement pairing is the trace pairing?
 
-**4. Continuous POVMs.** The article treats finite POVMs. Position and momentum measurements require continuous families of effects; their biquaternion form, and the status of the norm form for unbounded effects, is open.
+**4. Continuous POVMs.** The article treats finite POVMs. Position and momentum measurements require continuous families of effects; their biquaternion form, and the status of the biquaternion norm for unbounded effects, is open.
 
 **5. Empirical content.** The POVM formalism in biquaternion form reproduces the standard one and predicts nothing new.
 
 ## Summary
 
-A general measurement of a qubit is a resolution of the identity into positive elements of the Hermitian subspace. The positive cone of $\mathbb{M}_+$ is the future light cone of the norm form:
+A general measurement of a qubit is a resolution of the identity into positive elements of the Hermitian subspace. The positive cone of $\mathbb{M}_+$ is the future light cone of the biquaternion norm:
 
 $$
 \tilde{E} = a_0e_0+i\mathbf{a}\geq0 \quad\Longleftrightarrow\quad a_0\geq|\mathbf{a}| \quad\Longleftrightarrow\quad N(\tilde{E}) = a_0^2-|\mathbf{a}|^2\geq0,\ a_0\geq0,
 $$
 
-and the cone is self-dual with respect to the trace pairing, $\mathrm{Tr}(\tilde{H}\tilde{E}) = 2(h_0a_0+\mathbf{h}\cdot\mathbf{a})$. An effect is an element of the operator interval $0\leq\tilde{E}\leq e_0$, characterized by $|\mathbf{a}|\leq\min(a_0,1-a_0)$; its extreme points are the idempotents, so the projective measurements are the extreme resolutions. A POVM is a family $\{\tilde{E}_y\}$ with $\tilde{E}_y\geq0$ and $\sum_y\tilde{E}_y = e_0$; the outcome probabilities are the trace pairing $p_y = \mathrm{Tr}(\tilde{\rho}\tilde{E}_y)$, and the post-measurement states are the Kraus images. Every POVM is the compression of a projective measurement on a larger space (Naimark), and every measurement is an instrument, a family of completely positive maps indexed by the outcome. The cone, the effects, and the Born rule are thus all read off the algebra: positivity is the norm form's non-negativity, and measurement is the trace pairing on the effect body.
+and the cone is self-dual with respect to the trace pairing, $\mathrm{Tr}(\tilde{H}\tilde{E}) = 2(h_0a_0+\mathbf{h}\cdot\mathbf{a})$. An effect is an element of the operator interval $0\leq\tilde{E}\leq e_0$, characterized by $|\mathbf{a}|\leq\min(a_0,1-a_0)$; its extreme points are the idempotents, so the projective measurements are the extreme resolutions. A POVM is a family $\{\tilde{E}_y\}$ with $\tilde{E}_y\geq0$ and $\sum_y\tilde{E}_y = e_0$; the outcome probabilities are the trace pairing $p_y = \mathrm{Tr}(\tilde{\rho}\tilde{E}_y)$, and the post-measurement states are the Kraus images. Every POVM is the compression of a projective measurement on a larger space (Naimark), and every measurement is an instrument, a family of completely positive maps indexed by the outcome. The cone, the effects, and the Born rule are thus all read off the algebra: positivity is the biquaternion norm's non-negativity, and measurement is the trace pairing on the effect body.
 
 ## Summary of Notation
 
@@ -258,7 +258,7 @@ and the cone is self-dual with respect to the trace pairing, $\mathrm{Tr}(\tilde
 | $\mathbb{M}_+$ | Hermitian subspace (states and effects) |
 | $e_0 = 1, e_1, e_2, e_3$ | Quaternion units, $e_k^2 = -e_0$ |
 | $i$ | Central scalar imaginary |
-| $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$ | Norm form |
+| $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$ | Biquaternion norm |
 | $C_+ = \{h_0e_0+i\mathbf{h}: h_0\ge|\mathbf{h}|\}$ | Positive cone (future light cone of $N$) |
 | $C_+^{*} = C_+$ | Self-duality under the trace pairing |
 | $\mathrm{Tr}(\tilde{H}\tilde{E}) = 2(h_0a_0+\mathbf{h}\cdot\mathbf{a})$ | Trace pairing |

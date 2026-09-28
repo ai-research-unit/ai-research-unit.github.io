@@ -21,14 +21,14 @@ The fourth conjugation, the anti-Hermitian conjugation $\flat = -\dagger$, has t
 
 ## The Four Subspaces at a Glance
 
-| subspace | defining condition | real basis | $\dim_{\mathbb{R}}$ | subalgebra | norm form |
+| subspace | defining condition | real basis | $\dim_{\mathbb{R}}$ | subalgebra | norm |
 |---|---|---|---|---|---|
 | $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$ | $\bar{\tilde{Q}} = \tilde{Q}$ | $e_0, j$ | $2$ | yes, $\cong \mathbb{D}$ | $Q_0^2$, split complex; real part $(2,0)$, Hermitian form $(1,1)$ |
 | $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$ | $\tilde{Q}^{*} = \tilde{Q}$ | $e_0,e_1,e_2,e_3$ | $4$ | yes, $\cong \mathbb{H}$ | $q_0^2+q_1^2+q_2^2+q_3^2$, definite positive |
 | $\mathbb{M}_+$ | $\tilde{Q}^{\dagger} = \tilde{Q}$ | $e_0,je_1,je_2,je_3$ | $4$ | no, Jordan | definite positive $(4,0)$; Hermitian form $(1,3)$ |
 | $\mathbb{M}_-$ | $\tilde{Q}^{\flat} = \tilde{Q}$ | $je_0,e_1,e_2,e_3$ | $4$ | no, Lie | definite positive $(4,0)$; Hermitian form $(3,1)$ |
 
-Only two of the four are closed under multiplication; of the remaining two, exactly one is closed under the commutator and exactly one under the symmetrized product, so one of the four is a Lie algebra and one is a Jordan algebra. A structural difference from the biquaternion family of six subspaces is the behaviour of the norm form: there the two sectors $\mathbb{M}_\pm$ carry an **indefinite** norm form of signature $(1,3)$ and $(3,1)$, while here the central unit $j$ satisfies $j^2 = +1$ and the norm form is **definite positive** on both sectors. The indefinite form on the sectors here is the Hermitian form, of signature $(1,3)$ and $(3,1)$ respectively.
+Only two of the four are closed under multiplication; of the remaining two, exactly one is closed under the commutator and exactly one under the symmetrized product, so one of the four is a Lie algebra and one is a Jordan algebra. A structural difference from the biquaternion family of six subspaces is the behaviour of the split-biquaternion norm: there the two sectors $\mathbb{M}_\pm$ carry an **indefinite** norm of signature $(1,3)$ and $(3,1)$, while here the central unit $j$ satisfies $j^2 = +1$ and the split-biquaternion norm is **definite positive** on both sectors. The indefinite form on the sectors here is the Hermitian form, of signature $(1,3)$ and $(3,1)$ respectively.
 
 ## The Four Coordinate Blocks
 
@@ -118,14 +118,14 @@ $$
 \tilde{Q}\tilde{R} = q_0 r_0 - \mathbf{u}\cdot\mathbf{v} + \mathbf{u}\times\mathbf{v} + j(q_0\mathbf{v}+r_0\mathbf{u}),
 $$
 
-which has real scalar part, real vector part $\mathbf{u}\times\mathbf{v}$ and split-imaginary vector part $j(q_0\mathbf{v}+r_0\mathbf{u})$, hence lies in $\mathbb{R}\oplus\mathrm{Vect}(\mathbb{H}_{\mathbb{D}})$; the commutator keeps only $2\,\mathbf{u}\times\mathbf{v}$, a real vector, so it lies in $\mathbb{M}_-$, and the symmetrized product drops $\mathbf{u}\times\mathbf{v}$, leaving a real scalar and a split-imaginary vector, which is $\mathbb{M}_+$. The other rows follow from the analogous expansion for $\mathbb{M}_-$ and from the mixed expansion. In words: the symmetrized products respect the sectors (Hermitian stays Hermitian, anti-Hermitian goes to Hermitian, mixed goes to anti-Hermitian), while the commutators leave the sector in the Hermitian direction and give $\mathfrak{so}(3)$ for the pure units. The centre multiplies into every subspace without change, and the quaternion subspace acts on the algebra by multiplication.
+which has real scalar part, real vector part $\mathbf{u}\times\mathbf{v}$ and split-imaginary vector part $j(q_0\mathbf{v}+r_0\mathbf{u})$, hence lies in $\mathbb{R}\oplus\mathrm{Vect}(\mathbb{H}_{\mathbb{D}})$; the commutator keeps only $2\,\mathbf{u}\times\mathbf{v}$, a real vector, so it lies in $\mathbb{M}_-$, and the symmetrized product drops $\mathbf{u}\times\mathbf{v}$, leaving a real scalar and a split-imaginary vector, which is $\mathbb{M}_+$. The other rows follow from the analogous expansion for $\mathbb{M}_-$ and from the mixed expansion. In words: the symmetrized products respect the sectors (Hermitian stays Hermitian, anti-Hermitian goes to Hermitian, mixed goes to anti-Hermitian), while the commutators leave the sector in the Hermitian direction and give $\mathrm{SO}(3)$ for the pure units. The centre multiplies into every subspace without change, and the quaternion subspace acts on the algebra by multiplication.
 
 ### The Reduction from Six Subspaces to Four
 
 In $\mathbb{B}$ the fixed spaces of $\bar{\cdot}, {}^{*}, {}^{\dagger}, {}^{\flat}$ are complemented by naming the two **anti-fixed** spaces of $\bar{\cdot}$ and ${}^{*}$, namely $\mathrm{Vect}(\mathbb{B})$ and $i\mathbb{H}_{\mathbb{B}}$, which gives six distinguished subspaces. In $\mathbb{H}_{\mathbb{D}}$ only four are named. The reason is the sign in the central square:
 
 - $\mathrm{Vect}(\mathbb{H}_{\mathbb{D}})$ is the six-dimensional complement of the centre in the scalar–vector split; it is treated inside the algebra article rather than as a subspace of its own, because it is larger than the other members and is not a fixed space of any of the four involutions.
-- $j\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$, the anti-fixed space of split complex conjugation, is the image of $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$ under the central scalar $j$. Since $j^2 = +1$, multiplication by $j$ **preserves** the norm form, $N(j\tilde{Q}) = j^2 N(\tilde{Q}) = N(\tilde{Q})$, so $j\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$ is isometric to $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$ and carries no new structure. In $\mathbb{B}$ the corresponding multiplication by the central unit $i$ **negates** the norm form, $N(i\tilde{Q}) = i^2 N(\tilde{Q}) = -N(\tilde{Q})$, so the anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$ is negative definite and is genuinely distinct from $\mathbb{H}_{\mathbb{B}}$.
+- $j\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$, the anti-fixed space of split complex conjugation, is the image of $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$ under the central scalar $j$. Since $j^2 = +1$, multiplication by $j$ **preserves** the split-biquaternion norm, $N(j\tilde{Q}) = j^2 N(\tilde{Q}) = N(\tilde{Q})$, so $j\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$ is isometric to $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$ and carries no new structure. In $\mathbb{B}$ the corresponding multiplication by the central unit $i$ **negates** the split-biquaternion norm, $N(i\tilde{Q}) = i^2 N(\tilde{Q}) = -N(\tilde{Q})$, so the anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$ is negative definite and is genuinely distinct from $\mathbb{H}_{\mathbb{B}}$.
 
 The four named subspaces are therefore the four fixed spaces of the four involutions, and the two anti-fixed spaces are omitted: one because it is a degenerate six-dimensional object, the other because it is isometric to a named subspace.
 
@@ -149,9 +149,29 @@ $$
 
 the two parts lying in the two sectors of the Hermitian decomposition, as the general statement requires.
 
+## The Four Readings Compared
+
+The four distinguished subspaces are read in four ways, and the comparison is the content of this section.
+
+### The Algebra
+
+The quaternion subspace $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$ is the only subalgebra, and it is a division algebra; the centre $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$ is a commutative subalgebra with zero divisors; $\mathbb{M}_+$ is a Jordan algebra with respect to the symmetrized product; and $\mathbb{M}_-$ is a Lie algebra with respect to the commutator. The product of two elements closes inside a subspace exactly for the quaternion subspace and the centre, and the two Hermitian sectors instead exchange under the product.
+
+### The Topology
+
+The Euclidean norm restricts to a positive definite form of signature $(4,0)$ on the quaternion subspace, on $\mathbb{M}_+$ and on $\mathbb{M}_-$, and to $(2,0)$ on the centre, so its unit level set is compact on every subspace. The Hermitian scalar form $g$ agrees with the Euclidean form on the quaternion subspace, is $(2,0)$ on the centre, and is indefinite on the two Hermitian sectors, of signature $(1,3)$ on $\mathbb{M}_+$ and $(3,1)$ on $\mathbb{M}_-$, so its level sets there are non-compact. These restrictions are tabulated in *Split-Biquaternion Norm and Invertibility* and *Split-Biquaternion Rotations and the Lorentz Group*.
+
+### The Analysis
+
+The quaternion subspace carries the elliptic quaternion analysis of *Quaternion Analysis* and the centre the hyperbolic split complex analysis of *Split Complex Analysis*; the two Hermitian sectors are not subalgebras and carry only the restricted ambient analysis, governed respectively by a wave operator of signature $(1,3)$ and $(3,1)$. The distinction follows the sign of the restricted Hermitian form: elliptic where that form is definite, hyperbolic where it is Lorentzian.
+
+### The Geometry
+
+Geometrically the four subspaces are the four invariant planes of the four conjugations: the centre is the axis of quaternion conjugation, the quaternion subspace the axis of split complex conjugation, and the two Hermitian sectors the positive and negative eigenspaces of Hermitian conjugation. The quaternion subspace carries the round sphere $S^3$, the centre the pair of null lines and a pair of hyperbolas, and the two Hermitian sectors the null cones of the two real Lorentzian forms of signature $(1,3)$ and $(3,1)$; the motions carried are the rotations $SO(4)$ on the first and the Lorentz group $SO(1,3)$ on the last two, as in *Split-Biquaternions and Hyperbolic Geometry*.
+
 ## Summary
 
-The four distinguished subspaces of $\mathbb{H}_{\mathbb{D}}$ are the fixed spaces of the four involutions: the centre $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$ of dimension $2$, and the quaternion, Hermitian and anti-Hermitian subspaces of dimension $4$. Three of the involutions give direct-sum decompositions — the scalar–vector, the split complex and the Hermitian decomposition, of which only the last is a decomposition into two of the four named subspaces. The eight real coordinates split into four blocks: the real and split-imaginary scalar lines and the real and split-imaginary vector triples; two subspaces meet in a sum of the blocks they share, and the intersection and sum tables are computed from these. The centre meets the others in a scalar line, the quaternion subspace meets the Hermitian subspace in the scalar line and the anti-Hermitian subspace in the real vector triple, and only the Hermitian pair $(\mathbb{M}_+,\mathbb{M}_-)$ spans the algebra. Each involution acts diagonally on each subspace with signs $\pm 1$, its multiplicities of $-1$ composing by symmetric difference under $\dagger = {}^{*}\circ\bar{\cdot}$. The product of two Hermitian or two anti-Hermitian elements lies in $\mathbb{R}\oplus\mathrm{Vect}(\mathbb{H}_{\mathbb{D}})$, a mixed product lies in $j\mathbb{R}\oplus\mathrm{Vect}(\mathbb{H}_{\mathbb{D}})$; the symmetrized products respect the sectors, while the commutators give pure quaternions and the algebra $\mathfrak{so}(3)$. The family reduces from the six subspaces of $\mathbb{B}$ to four because $\mathrm{Vect}(\mathbb{H}_{\mathbb{D}})$ is a six-dimensional non-fixed space and $j\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$ is isometric to $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$ under $j^2 = +1$, whereas in $\mathbb{B}$ the corresponding anti-fixed space $i\mathbb{H}_{\mathbb{B}}$ is negative definite and genuinely new.
+The four distinguished subspaces of $\mathbb{H}_{\mathbb{D}}$ are the fixed spaces of the four involutions: the centre $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$ of dimension $2$, and the quaternion, Hermitian and anti-Hermitian subspaces of dimension $4$. Three of the involutions give direct-sum decompositions — the scalar–vector, the split complex and the Hermitian decomposition, of which only the last is a decomposition into two of the four named subspaces. The eight real coordinates split into four blocks: the real and split-imaginary scalar lines and the real and split-imaginary vector triples; two subspaces meet in a sum of the blocks they share, and the intersection and sum tables are computed from these. The centre meets the others in a scalar line, the quaternion subspace meets the Hermitian subspace in the scalar line and the anti-Hermitian subspace in the real vector triple, and only the Hermitian pair $(\mathbb{M}_+,\mathbb{M}_-)$ spans the algebra. Each involution acts diagonally on each subspace with signs $\pm 1$, its multiplicities of $-1$ composing by symmetric difference under $\dagger = {}^{*}\circ\bar{\cdot}$. The product of two Hermitian or two anti-Hermitian elements lies in $\mathbb{R}\oplus\mathrm{Vect}(\mathbb{H}_{\mathbb{D}})$, a mixed product lies in $j\mathbb{R}\oplus\mathrm{Vect}(\mathbb{H}_{\mathbb{D}})$; the symmetrized products respect the sectors, while the commutators give pure quaternions and the algebra $\mathrm{SO}(3)$. The family reduces from the six subspaces of $\mathbb{B}$ to four because $\mathrm{Vect}(\mathbb{H}_{\mathbb{D}})$ is a six-dimensional non-fixed space and $j\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$ is isometric to $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$ under $j^2 = +1$, whereas in $\mathbb{B}$ the corresponding anti-fixed space $i\mathbb{H}_{\mathbb{B}}$ is negative definite and genuinely new.
 
 ## Summary of Notation
 
@@ -167,7 +187,7 @@ The four distinguished subspaces of $\mathbb{H}_{\mathbb{D}}$ are the fixed spac
 | $\langle e_0\rangle, \langle je_0\rangle, \langle e_1,e_2,e_3\rangle, \langle je_1,je_2,je_3\rangle$ | The four coordinate blocks |
 | $\bar{\cdot}, {}^{*}, {}^{\dagger}, {}^{\flat}$ | The four conjugations |
 | $\mathbb{R}\oplus\mathrm{Vect}(\mathbb{H}_{\mathbb{D}})$, $j\mathbb{R}\oplus\mathrm{Vect}(\mathbb{H}_{\mathbb{D}})$ | Target spaces of the sector products |
-| $\mathfrak{so}(3)$ | Bracket image of the pure units, $\mathrm{span}\{e_1,e_2,e_3\}$ |
+| $\mathrm{SO}(3)$ | Bracket image of the pure units, $\mathrm{span}\{e_1,e_2,e_3\}$ |
 
 ## Further Reading
 

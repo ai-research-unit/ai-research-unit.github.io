@@ -32,7 +32,7 @@ with $m_n$ the neutron mass. The Lorentz group acts on the module through $SL(2,
 
 **The mass is a parameter, and the near-degeneracy with the proton is unexplained.** The free equation contains $m_n$ exactly once, as the coefficient of the linear mass term $m_n$;
 
-the framework is scale-free until that number is supplied, so the neutron mass is an input rather than a consequence. So is the fact that the neutron and proton masses agree to about $0.14\%$ ($m_n-m_p \approx 1.293$ MeV): in standard physics this near-degeneracy is the isospin symmetry of the strong interaction, an approximate flavour $SU(2)$ acting on the $(p,n)$ doublet. The framework does contain an $SU(2)$ — the real-vector part of $\mathbb{M}_-$ is $\mathfrak{su}(2)$ under the commutator — but that is the rotation/gauge algebra of the material sector, not flavour isospin, and identifying the two would be an import rather than a derivation. The framework supplies no second fermion with a nearly equal mass.
+the framework is scale-free until that number is supplied, so the neutron mass is an input rather than a consequence. So is the fact that the neutron and proton masses agree to about $0.14\%$ ($m_n-m_p \approx 1.293$ MeV): in standard physics this near-degeneracy is the isospin symmetry of the strong interaction, an approximate flavour $SU(2)$ acting on the $(p,n)$ doublet. The framework does contain an $SU(2)$ — the real-vector part of $\mathbb{M}_-$ is $\mathrm{SU}(2)$ under the commutator — but that is the rotation/gauge algebra of the material sector, not flavour isospin, and identifying the two would be an import rather than a derivation. The framework supplies no second fermion with a nearly equal mass.
 
 ## Neutrality and the Charge Operator
 
@@ -77,7 +77,7 @@ which has solutions for special charge ratios (for instance $(n_L,n_R)=(1,2)$ re
 
 The reason the bound composite is unavailable is structural, and the QCD research agenda of this series states it precisely. Three of its established findings carry over unchanged.
 
-**No colour group.** The compact algebra available inside $\mathbb{B}$ under the commutator is at most $\mathfrak{u}(2)=\mathfrak{u}(1)\oplus\mathfrak{su}(2)$, of real dimension four: $\mathbb{M}_-$ decomposes as a Lie algebra into $\mathbb{R}(ie_0)\oplus\mathfrak{su}(2)$, and the maximal compact subalgebra of $\mathfrak{gl}(2,\mathbb{C})$ is $\mathfrak{u}(2)$. No $\mathfrak{su}(3)$ subalgebra is available, and the three quaternion units $e_1,e_2,e_3$ span the *adjoint* of $\mathfrak{su}(2)$, not a complex triplet. Counting three basis vectors is not constructing colour.
+**No colour group.** The compact algebra available inside $\mathbb{B}$ under the commutator is at most $\mathrm{U}(2)=\mathrm{U}(1)\oplus\mathrm{SU}(2)$, of real dimension four: $\mathbb{M}_-$ decomposes as a Lie algebra into $\mathbb{R}(ie_0)\oplus\mathrm{SU}(2)$, and the maximal compact subalgebra of $\mathrm{GL}(2,\mathbb{C})$ is $\mathrm{U}(2)$. No $\mathrm{SU}(3)$ subalgebra is available, and the three quaternion units $e_1,e_2,e_3$ span the *adjoint* of $\mathrm{SU}(2)$, not a complex triplet. Counting three basis vectors is not constructing colour.
 
 **No three-dimensional module.** The algebra $\mathbb{B}\cong M_2(\mathbb{C})$ is simple, so every module is a direct sum of copies of the unique simple module $\mathbb{C}^2$: every $\mathbb{B}$-module has complex dimension $2k$. A colour triplet — a complex three-dimensional internal space for a quark — is not a $\mathbb{B}$-module. The ceiling is a statement about the carrier, not about the arithmetic.
 
@@ -145,7 +145,7 @@ The framework's charge operator $Q=q_LP_L+q_RP_R$ acts on the module with spectr
 
 The framework does have a Fock space, so a neutral many-particle **state** is not ruled out in principle. But no neutral **bound composite** is expressible: there is no colour, no confinement, no binding, and no selection rule fixing three constituents. The neutrality is therefore stateable as a constraint on unfixed charges but not derived, and manufacturing it from the standard quark charges would be an import.
 
-The neutron's composite character is not reached. The framework has no colour group (the compact algebra is at most $\mathfrak{u}(2)$, of dimension four), no three-dimensional module (every $\mathbb{B}$-module has even complex dimension), no confinement mechanism, and no bound-state construction; its baryon number, mass, lifetime, and isospin are not derived here. Its magnetic moment is the sharp quantitative case: a neutral structureless Dirac field has $\mu=0$, while $\mu_n=-1.9130427\,\mu_N$, so the framework's tree-level spin statement does not describe the neutron. The honest summary is that the framework reaches the neutron's neutrality as a constraint and its spin as a generic representation, and reaches nothing of what makes it a composite baryon.
+The neutron's composite character is not reached. The framework has no colour group (the compact algebra is at most $\mathrm{U}(2)$, of dimension four), no three-dimensional module (every $\mathbb{B}$-module has even complex dimension), no confinement mechanism, and no bound-state construction; its baryon number, mass, lifetime, and isospin are not derived here. Its magnetic moment is the sharp quantitative case: a neutral structureless Dirac field has $\mu=0$, while $\mu_n=-1.9130427\,\mu_N$, so the framework's tree-level spin statement does not describe the neutron. The honest summary is that the framework reaches the neutron's neutrality as a constraint and its spin as a generic representation, and reaches nothing of what makes it a composite baryon.
 
 ## Summary of Notation
 
@@ -166,7 +166,7 @@ The neutron's composite character is not reached. The framework has no colour gr
 | $Q = q_LP_L+q_RP_R = \mathrm{diag}(q_L,q_L,q_R,q_R)$ | Charge operator on the module; $q_L,q_R$ unfixed parameters |
 | $Q\psi=0$ | Neutrality constraint; kernel trivial unless $q_L=0$ or $q_R=0$ |
 | $\bar{\Psi}\Psi = \psi_L^{\dagger}\psi_R+\psi_R^{\dagger}\psi_L$ | Dirac bilinear, chirality-odd |
-| $\mathfrak{u}(2)=\mathfrak{u}(1)\oplus\mathfrak{su}(2)$ | Maximal compact algebra in $\mathbb{B}$; dimension $4$ |
+| $\mathrm{U}(2)=\mathrm{U}(1)\oplus\mathrm{SU}(2)$ | Maximal compact algebra in $\mathbb{B}$; dimension $4$ |
 | $m_n$, $\mu_n = -1.9130427\,\mu_N$ | Neutron mass (input) and measured magnetic moment (outside) |
 | $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ | Inherited informational trace formula |
 | $c = 1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |

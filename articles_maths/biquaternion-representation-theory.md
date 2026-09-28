@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ was defined in the basic algebra article, with its conjugations, its norm form and its group of units. This article treats its **representation theory** in the technical sense: a representation of an algebra $A$ over a field $k$ is a $k$-vector space $V$ with a unital algebra homomorphism $A \to \operatorname{End}_k(V)$, and a representation of a group $G$ is a vector space with a homomorphism $G \to GL(V)$. The chapter also uses the word in a non-technical sense, for a *concrete realization* of the algebra: the companion articles on biquaternion algebraic representations and on biquaternion polar representations, together with the three articles on the four-vector, matrix and regular realizations of the algebra, written in parallel, use it so. Only the matrix and the regular realizations are representations in the technical sense as well, since only they carry an action; the four-vector realization is the coefficient space alone. The two senses meet at the simple module, which every realization carries, and the theory below is stated for the module, so that it holds independently of the realization chosen.
+The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ was defined in the basic algebra article, with its conjugations, its biquaternion norm and its group of units. This article treats its **representation theory** in the technical sense: a representation of an algebra $A$ over a field $k$ is a $k$-vector space $V$ with a unital algebra homomorphism $A \to \operatorname{End}_k(V)$, and a representation of a group $G$ is a vector space with a homomorphism $G \to GL(V)$. The chapter also uses the word in a non-technical sense, for a *concrete realization* of the algebra: the companion articles on biquaternion algebraic representations and on biquaternion polar representations, together with the three articles on the four-vector, matrix and regular realizations of the algebra, written in parallel, use it so. Only the matrix and the regular realizations are representations in the technical sense as well, since only they carry an action; the four-vector realization is the coefficient space alone. The two senses meet at the simple module, which every realization carries, and the theory below is stated for the module, so that it holds independently of the realization chosen.
 
 Every claim below states its ground field ($\mathbb{R}$ or $\mathbb{C}$) and its side (algebra or group). The first group of sections treats the algebra: over $\mathbb{C}$, $\mathbb{B}$ is four-dimensional and isomorphic to $M_2(\mathbb{C})$, hence semisimple and central simple, with a unique simple module of complex dimension $2$; over $\mathbb{R}$ it is eight-dimensional, simple with centre $\mathbb{C}$, again with a unique simple module of complex dimension $2$. The later sections treat the group of units $\mathbb{B}^{\times} \cong GL(2,\mathbb{C})$ and its unit-norm subgroup $SL(2,\mathbb{C})$, the double cover of the proper orthochronous Lorentz group: its finite-dimensional polynomial representations, the defining representation and the Weyl spinors, the Clebsch–Gordan rule and tensor powers, and the unitary representations, including the principal series.
 
@@ -14,7 +14,7 @@ $$
 \mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H} \cong M_2(\mathbb{C}),
 $$
 
-which is the structure theorem of a central simple algebra of degree $2$ over its centre: the theorem writes such an algebra as $M_2(D)$ for a division algebra $D$ over the centre, and over the algebraically closed field $\mathbb{C}$ the only such $D$ is $\mathbb{C}$ itself, so the algebra is $M_2(\mathbb{C})$. The isomorphism is not unique, two choices differing by conjugation by an invertible matrix, and nothing below depends on the choice; it is therefore stated here as an isomorphism and not as a matrix. Each concrete realization of the algebra is one way of writing it down, and each has its own companion article: the complex four-vector realization, the $2 \times 2$ matrix realization and the $4 \times 4$ regular realization, all three written in parallel. In the four-vector realization the norm form is read directly from the coefficients; in the other two it is recovered from the operator instead, whose determinant is $N(\tilde{Q})$ on the simple module and $N(\tilde{Q})^2$ on the regular one, and whose trace is the scalar part $Q_0$ multiplied by the dimension of the space it acts on, that is, $2$ on the simple module and $4$ on the regular one. Three consequences are used throughout. The **centre** of $M_2(\mathbb{C})$ is the scalar matrices, so the centre of $\mathbb{B}$ is $\mathbb{C}_{\mathbb{B}} = \mathbb{C}e_0$: one-dimensional over $\mathbb{C}$, and the two-dimensional real space spanned by $e_0$ and $ie_0$ over $\mathbb{R}$. The algebra is **simple**, having no nontrivial two-sided ideals: a nonzero ideal of $M_2(\mathbb{C})$ contains a rank-one matrix, and products of a rank-one matrix with arbitrary matrices generate the whole algebra. Finally it is **central** over $\mathbb{C}$, since its centre is the ground field $\mathbb{C}$, but **not** central over $\mathbb{R}$, where its centre is the quadratic field $\mathbb{C} \neq \mathbb{R}$; it is central simple over its centre $\mathbb{C}$.
+which is the structure theorem of a central simple algebra of degree $2$ over its centre: the theorem writes such an algebra as $M_2(D)$ for a division algebra $D$ over the centre, and over the algebraically closed field $\mathbb{C}$ the only such $D$ is $\mathbb{C}$ itself, so the algebra is $M_2(\mathbb{C})$. The isomorphism is not unique, two choices differing by conjugation by an invertible matrix, and nothing below depends on the choice; it is therefore stated here as an isomorphism and not as a matrix. Each concrete realization of the algebra is one way of writing it down, and each has its own companion article: the complex four-vector realization, the $2 \times 2$ matrix realization and the $4 \times 4$ regular realization, all three written in parallel. In the four-vector realization the biquaternion norm is read directly from the coefficients; in the other two it is recovered from the operator instead, whose determinant is $N(\tilde{Q})$ on the simple module and $N(\tilde{Q})^2$ on the regular one, and whose trace is the scalar part $Q_0$ multiplied by the dimension of the space it acts on, that is, $2$ on the simple module and $4$ on the regular one. Three consequences are used throughout. The **centre** of $M_2(\mathbb{C})$ is the scalar matrices, so the centre of $\mathbb{B}$ is $\mathbb{C}_{\mathbb{B}} = \mathbb{C}e_0$: one-dimensional over $\mathbb{C}$, and the two-dimensional real space spanned by $e_0$ and $ie_0$ over $\mathbb{R}$. The algebra is **simple**, having no nontrivial two-sided ideals: a nonzero ideal of $M_2(\mathbb{C})$ contains a rank-one matrix, and products of a rank-one matrix with arbitrary matrices generate the whole algebra. Finally it is **central** over $\mathbb{C}$, since its centre is the ground field $\mathbb{C}$, but **not** central over $\mathbb{R}$, where its centre is the quadratic field $\mathbb{C} \neq \mathbb{R}$; it is central simple over its centre $\mathbb{C}$.
 
 ## Complex Representations of the Algebra
 
@@ -22,7 +22,7 @@ Over $\mathbb{C}$, a representation is a complex vector space with a unital homo
 
 **Theorem.** Up to isomorphism, $V$ is the only simple $\mathbb{B}$-module, and $\dim_{\mathbb{C}} V = 2$.
 
-**Proof.** The minimal left ideals of $M_n(\mathbb{C})$ are the spaces of matrices supported in one column, all isomorphic to $\mathbb{C}^n$; for $n = 2$ this is $V$. $\square$
+**Proof.** The minimal left ideals of $M_n(\mathbb{C})$ are the spaces of matrices supported in one column, all isomorphic to $\mathbb{C}^n$; for $n = 2$ this is $V$.
 
 **Theorem.** Every finite-dimensional $\mathbb{B}$-module is a direct sum of copies of $V$,
 
@@ -30,7 +30,7 @@ $$
 W \cong V^{\oplus n}, \qquad n = \tfrac{1}{2}\dim_{\mathbb{C}} W.
 $$
 
-**Proof.** The algebra $M_2(\mathbb{C})$ is simple Artinian, hence semisimple; a finite-dimensional module over a semisimple algebra is a direct sum of simple modules, each isomorphic to $V$. $\square$
+**Proof.** The algebra $M_2(\mathbb{C})$ is simple Artinian, hence semisimple; a finite-dimensional module over a semisimple algebra is a direct sum of simple modules, each isomorphic to $V$.
 
 Hence a finite-dimensional complex representation is determined up to isomorphism by its (even) dimension, and no irreducible representation other than $V$ exists. Every such representation is completely reducible, and the category of finite-dimensional $\mathbb{B}$-modules is semisimple with a single simple object. The dual $V^{*}$ is again simple of dimension $2$, so $V^{*} \cong V$, and the Grothendieck group of finite-dimensional modules is $\mathbb{Z}$, generated by $[V]$.
 
@@ -44,7 +44,7 @@ Let $V$ be the simple module. A $\mathbb{B}$-module homomorphism, or intertwinin
 
 **Schur's lemma.** $\operatorname{End}_{\mathbb{B}}(V) \cong \mathbb{C}$; if $V$ and $V'$ are non-isomorphic simple modules then $\operatorname{Hom}_{\mathbb{B}}(V, V') = 0$.
 
-**Proof.** The kernel and image of a module homomorphism are submodules; a nonzero endomorphism of the simple module $V$ has zero kernel and full image, hence is an isomorphism, and an operator commuting with all of $M_2(\mathbb{C})$ is a scalar matrix. $\square$
+**Proof.** The kernel and image of a module homomorphism are submodules; a nonzero endomorphism of the simple module $V$ has zero kernel and full image, hence is an isomorphism, and an operator commuting with all of $M_2(\mathbb{C})$ is a scalar matrix.
 
 For direct sums of the simple module,
 
@@ -69,10 +69,10 @@ $$
 **Derivations.** Every derivation of a full matrix algebra is inner, $D = \operatorname{ad}_{\tilde{Q}}$ with $\operatorname{ad}_{\tilde{Q}}(\tilde{R}) = \tilde{Q}\tilde{R} - \tilde{R}\tilde{Q}$. The map $\tilde{Q} \mapsto \operatorname{ad}_{\tilde{Q}}$ has kernel the centre $\mathbb{C}$ and image the traceless matrices, so
 
 $$
-\operatorname{Der}_{\mathbb{C}}(\mathbb{B}) \cong \mathfrak{sl}(2,\mathbb{C}), \qquad \dim_{\mathbb{C}} \operatorname{Der}_{\mathbb{C}}(\mathbb{B}) = 3.
+\operatorname{Der}_{\mathbb{C}}(\mathbb{B}) \cong \mathrm{SL}(2,\mathbb{C}), \qquad \dim_{\mathbb{C}} \operatorname{Der}_{\mathbb{C}}(\mathbb{B}) = 3.
 $$
 
-Every $\mathbb{R}$-derivation annihilates the centre, because for central $\lambda$ one has $D(\lambda)x = xD(\lambda)$ for all $x$, and $0 = D(-1) = D(i^2) = 2iD(i)$ forces $D(i) = 0$, so the derivation is $\mathbb{C}$-linear; hence $\operatorname{Der}_{\mathbb{R}}(\mathbb{B}) = \operatorname{Der}_{\mathbb{C}}(\mathbb{B}) \cong \mathfrak{sl}(2,\mathbb{C})$ as a real Lie algebra of dimension $6$. All derivations, over $\mathbb{C}$ and over $\mathbb{R}$, are inner.
+Every $\mathbb{R}$-derivation annihilates the centre, because for central $\lambda$ one has $D(\lambda)x = xD(\lambda)$ for all $x$, and $0 = D(-1) = D(i^2) = 2iD(i)$ forces $D(i) = 0$, so the derivation is $\mathbb{C}$-linear; hence $\operatorname{Der}_{\mathbb{R}}(\mathbb{B}) = \operatorname{Der}_{\mathbb{C}}(\mathbb{B}) \cong \mathrm{SL}(2,\mathbb{C})$ as a real Lie algebra of dimension $6$. All derivations, over $\mathbb{C}$ and over $\mathbb{R}$, are inner.
 
 ## Real Representations of the Algebra
 
@@ -84,13 +84,13 @@ $$
 W \cong S^{\oplus n}, \qquad n = \tfrac{1}{4}\dim_{\mathbb{R}} W.
 $$
 
-**Proof.** The real algebra $\mathbb{B}_{\mathbb{R}} \cong M_2(\mathbb{C})$ is simple, and its minimal left ideals all have real dimension $4$. A real subspace of $S$ stable under $\mathbb{B}$ is stable in particular under the scalar matrices $zI$, $z \in \mathbb{C}$, hence is a complex subspace; therefore the $\mathbb{B}$-submodules of $S$ are exactly its complex subspaces, and $S$ is simple. Semisimplicity of $\mathbb{B}_{\mathbb{R}}$ gives the direct-sum statement. $\square$
+**Proof.** The real algebra $\mathbb{B}_{\mathbb{R}} \cong M_2(\mathbb{C})$ is simple, and its minimal left ideals all have real dimension $4$. A real subspace of $S$ stable under $\mathbb{B}$ is stable in particular under the scalar matrices $zI$, $z \in \mathbb{C}$, hence is a complex subspace; therefore the $\mathbb{B}$-submodules of $S$ are exactly its complex subspaces, and $S$ is simple. Semisimplicity of $\mathbb{B}_{\mathbb{R}}$ gives the direct-sum statement.
 
 By Schur's lemma, $\operatorname{End}_{\mathbb{B}}(S) = \mathbb{C}$: an $\mathbb{R}$-division algebra containing the algebraically closed field $\mathbb{C} = Z(\mathbb{B})$ and finite-dimensional over it, hence equal to $\mathbb{C}$. Thus $S$ is of **complex type**, neither real nor quaternionic, and this is the precise sense in which the simple module of the real algebra is "two-dimensional complex" while being four-dimensional real. Restriction and extension of scalars relate the two cases, $S$ being the restriction of the complex simple module $V$. The case $n = 2$ of the theorem is the real regular representation, $\mathbb{B} \cong S \oplus S$ of real dimension $8$: the algebra as a left module over itself. This is why the regular representation is $4 \times 4$ over $\mathbb{C}$ and $8 \times 8$ over $\mathbb{R}$, the complex and the real matrix realization of one and the same action.
 
 ## The Group of Units and $SL(2,\mathbb{C})$
 
-The group of units is $\mathbb{B}^{\times} = \{\tilde{Q} : N(\tilde{Q}) \neq 0\}$, which under $\mathbb{B} \cong M_2(\mathbb{C})$ is the group of invertible matrices, because the norm form is the determinant:
+The group of units is $\mathbb{B}^{\times} = \{\tilde{Q} : N(\tilde{Q}) \neq 0\}$, which under $\mathbb{B} \cong M_2(\mathbb{C})$ is the group of invertible matrices, because the biquaternion norm is the determinant:
 
 $$
 \mathbb{B}^{\times} \cong GL_2(\mathbb{C}),
@@ -114,17 +114,17 @@ is surjective with kernel $\{\pm e_0\}$, so $SL(2,\mathbb{C})$ is the double cov
 
 ## Finite-Dimensional Representations of $SL(2,\mathbb{C})$
 
-Let $G = SL(2,\mathbb{C})$ and let $\mathfrak{g} = \mathfrak{sl}(2,\mathbb{C})$ be its Lie algebra, regarded as a real Lie algebra. Its complexification is a sum of two copies of $\mathfrak{sl}(2,\mathbb{C})$, the complexified Lorentz algebra:
+Let $G = SL(2,\mathbb{C})$ and let $\mathrm{G} = \mathrm{SL}(2,\mathbb{C})$ be its Lie algebra, regarded as a real Lie algebra. Its complexification is a sum of two copies of $\mathrm{SL}(2,\mathbb{C})$, the complexified Lorentz algebra:
 
 $$
-\mathfrak{so}(1,3)\otimes_{\mathbb{R}}\mathbb{C} \cong \mathfrak{sl}(2,\mathbb{C}) \oplus \mathfrak{sl}(2,\mathbb{C}),
+\mathrm{SO}(1,3)\otimes_{\mathbb{R}}\mathbb{C} \cong \mathrm{SL}(2,\mathbb{C}) \oplus \mathrm{SL}(2,\mathbb{C}),
 $$
 
 the two summands corresponding to the self-dual and anti-self-dual parts.
 
-Every finite-dimensional smooth complex representation of $G$ is completely reducible, and its irreducible summands are the outer tensor products $(m,n) = V_m \boxtimes V_n$ with $m, n \in \tfrac{1}{2}\mathbb{Z}_{\geq 0}$, where $V_j$ denotes the irreducible $\mathfrak{su}(2)$-module of dimension $2j+1$, equivalently the $\mathfrak{sl}(2,\mathbb{C})$-module $\operatorname{Sym}^{2j}(\mathbb{C}^2)$ of highest weight $2j$; thus $\dim_{\mathbb{C}}(m,n) = (2m+1)(2n+1)$. The defining representation is $(\tfrac{1}{2}, 0)$ and its complex conjugate is $(0, \tfrac{1}{2})$.
+Every finite-dimensional smooth complex representation of $G$ is completely reducible, and its irreducible summands are the outer tensor products $(m,n) = V_m \boxtimes V_n$ with $m, n \in \tfrac{1}{2}\mathbb{Z}_{\geq 0}$, where $V_j$ denotes the irreducible $\mathrm{SU}(2)$-module of dimension $2j+1$, equivalently the $\mathrm{SL}(2,\mathbb{C})$-module $\operatorname{Sym}^{2j}(\mathbb{C}^2)$ of highest weight $2j$; thus $\dim_{\mathbb{C}}(m,n) = (2m+1)(2n+1)$. The defining representation is $(\tfrac{1}{2}, 0)$ and its complex conjugate is $(0, \tfrac{1}{2})$.
 
-**Polynomial representations.** Relative to a Cartan subalgebra spanned by $h = \operatorname{diag}(1,-1)$, the irreducible $\mathfrak{sl}(2,\mathbb{C})$-modules are the symmetric powers $V_j \cong \operatorname{Sym}^{2j}(\mathbb{C}^2)$, with spin $j \in \tfrac{1}{2}\mathbb{Z}_{\geq 0}$, highest weight $2j$ and dimension $2j+1$. These are exactly the **polynomial** (equivalently holomorphic, equivalently algebraic) finite-dimensional representations of the complex group $G$: their matrix entries are polynomial functions of the entries of $g \in G$, and every finite-dimensional holomorphic representation of $G$ is a direct sum of the $V_j$, hence is parameterised by its highest weight $2j$, that is, by its spin $j \in \tfrac{1}{2}\mathbb{Z}_{\geq 0}$. Not every continuous finite-dimensional representation is polynomial: the complex conjugates of the $V_j$ are antiholomorphic and belong to the $(0, j)$ family.
+**Polynomial representations.** Relative to a Cartan subalgebra spanned by $h = \operatorname{diag}(1,-1)$, the irreducible $\mathrm{SL}(2,\mathbb{C})$-modules are the symmetric powers $V_j \cong \operatorname{Sym}^{2j}(\mathbb{C}^2)$, with spin $j \in \tfrac{1}{2}\mathbb{Z}_{\geq 0}$, highest weight $2j$ and dimension $2j+1$. These are exactly the **polynomial** (equivalently holomorphic, equivalently algebraic) finite-dimensional representations of the complex group $G$: their matrix entries are polynomial functions of the entries of $g \in G$, and every finite-dimensional holomorphic representation of $G$ is a direct sum of the $V_j$, hence is parameterised by its highest weight $2j$, that is, by its spin $j \in \tfrac{1}{2}\mathbb{Z}_{\geq 0}$. Not every continuous finite-dimensional representation is polynomial: the complex conjugates of the $V_j$ are antiholomorphic and belong to the $(0, j)$ family.
 
 **The unitary trick.** Restriction to the maximal compact subgroup $SU(2)$ is an equivalence of categories
 
@@ -160,7 +160,7 @@ $$
 V_{1/2} \otimes V_{1/2} \cong \operatorname{Sym}^2 V_{1/2} \oplus \Lambda^2 V_{1/2} \cong V_1 \oplus V_0, \qquad \dim_{\mathbb{C}} V_1 = 3, \quad \dim_{\mathbb{C}} V_0 = 1.
 $$
 
-The summand $V_1$ is the **traceless symmetric part** and is the adjoint representation of $\mathfrak{sl}(2,\mathbb{C})$, that is, the complexification of the adjoint representation of the compact algebra $\mathfrak{su}(2) \cong \mathfrak{so}(3)$; concretely, $\operatorname{Sym}^2 V_{1/2}$ is the space of symmetric $2 \times 2$ matrices and $V_1$ the traceless subspace. The summand $V_0 = \Lambda^2 V_{1/2} \cong \mathbb{C}$ is the **scalar**, spanned by the invariant alternating form $\varepsilon$. Thus the tensor square of the spinor splits as the complexified adjoint representation plus a scalar. This is the three-dimensional rotation algebra; the adjoint representation of the six-dimensional Lorentz algebra is instead $(1,0) \oplus (0,1)$.
+The summand $V_1$ is the **traceless symmetric part** and is the adjoint representation of $\mathrm{SL}(2,\mathbb{C})$, that is, the complexification of the adjoint representation of the compact algebra $\mathrm{SU}(2) \cong \mathrm{SO}(3)$; concretely, $\operatorname{Sym}^2 V_{1/2}$ is the space of symmetric $2 \times 2$ matrices and $V_1$ the traceless subspace. The summand $V_0 = \Lambda^2 V_{1/2} \cong \mathbb{C}$ is the **scalar**, spanned by the invariant alternating form $\varepsilon$. Thus the tensor square of the spinor splits as the complexified adjoint representation plus a scalar. This is the three-dimensional rotation algebra; the adjoint representation of the six-dimensional Lorentz algebra is instead $(1,0) \oplus (0,1)$.
 
 For the two-parameter family the rule applies to each factor:
 
@@ -221,11 +221,11 @@ Unitarity is the one property that complexification does not preserve. The defin
 | $V_j$ | Irreducible representation of spin $j$, highest weight $2j$, dimension $2j+1$ |
 | $(m,n)$ | Irreducible representation of the complexified Lorentz algebra |
 | $\operatorname{End}_{\mathbb{B}}(V) \cong \mathbb{C}$ | Intertwining operators, by Schur's lemma |
-| $\operatorname{Der}(\mathbb{B}) \cong \mathfrak{sl}(2,\mathbb{C})$ | Inner derivations |
+| $\operatorname{Der}(\mathbb{B}) \cong \mathrm{SL}(2,\mathbb{C})$ | Inner derivations |
 
 ## Further Reading
 
-- William Fulton and Joe Harris, *Representation Theory: A First Course* (Springer, 1991), for the representation theory of $\mathfrak{sl}(2,\mathbb{C})$, highest weights, Clebsch–Gordan decompositions, and the spin representations.
+- William Fulton and Joe Harris, *Representation Theory: A First Course* (Springer, 1991), for the representation theory of $\mathrm{SL}(2,\mathbb{C})$, highest weights, Clebsch–Gordan decompositions, and the spin representations.
 - Anthony W. Knapp, *Representation Theory of Semisimple Groups: An Overview Based on Examples* (Princeton University Press, 1986), for the principal series, the complementary series, and the unitary dual of $SL(2,\mathbb{C})$.
 - Hermann Weyl, *The Classical Groups: Their Invariants and Representations* (Princeton University Press, 1946), for the unitary trick relating representations of a compact group and its complexification.
 - Richard S. Pierce, *Associative Algebras* (Springer, 1982), for the structure theory of semisimple algebras and the classification of simple modules over matrix algebras.

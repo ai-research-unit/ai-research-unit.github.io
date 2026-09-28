@@ -39,7 +39,7 @@ $$
 
 then the solution is of class $C^k$ on $[\sigma-r,\sigma+T)$; without compatibility the solution is only continuous at $\sigma$, with a jump in the derivative at $\sigma$.
 
-*Proof.* The solution is differentiable for $t>\sigma$ by the equation, and its derivative at the initial time is the prescribed limit only when $\phi$ is compatible with the right-hand side, since the right-hand side at $t = \sigma$ is computed from $\phi$; each further differentiation of the equation raises the order of the condition by one and requires the corresponding derivative of $\phi$ to exist and match. $\square$
+*Proof.* The solution is differentiable for $t>\sigma$ by the equation, and its derivative at the initial time is the prescribed limit only when $\phi$ is compatible with the right-hand side, since the right-hand side at $t = \sigma$ is computed from $\phi$; each further differentiation of the equation raises the order of the condition by one and requires the corresponding derivative of $\phi$ to exist and match.
 
 **Example (discontinuous derivative).** For $y'(t) = -y(t-1)$ with history $\phi(\theta) = 1$ for $\theta \in [-1,0]$, the solution is $\phi$ continued by $y(t) = 1 - t$ on $[0,1]$, then $y(t) = 1 - t + \tfrac12(t-1)^2$ on $[1,2]$, and so on. The derivative jumps at $t = 0$ from $0$ to $-1$, because $\phi'(0^-) = 0$ does not match the equation. The solution becomes smoother with each step, a smoothing that is invisible to a point initial condition.
 
@@ -53,13 +53,13 @@ $$
 y'(t) = f\bigl(t, y(t), \phi(t-\sigma-r)\bigr), \qquad y(\sigma) = \phi(0),
 $$
 
-whose right-hand side is continuous and locally Lipschitz in $y$; the Picard–Lindelöf theorem of the preceding article gives a unique solution on $[\sigma, \sigma+\delta_1]$ where $\delta_1 > 0$ depends only on the bounds of $f$ and $\phi$. If $\delta_1 \ge r$ the first step is complete; otherwise the argument restarts at $\sigma+\delta_1$. In either case one obtains a solution on $[\sigma,\sigma+r]$. On the next interval $[\sigma+r, \sigma+2r]$ the values $y(t-r)$ lie in $[\sigma,\sigma+r]$ and are now the known solution of the first step, so the same argument applies, and iteration over successive intervals of length $r$ gives the solution. The solution is unique on each step because the ordinary problem is, and the steps cover all of $[\sigma, \sigma+T]$ for every $T$ for which the bounds allow. $\square$
+whose right-hand side is continuous and locally Lipschitz in $y$; the Picard–Lindelöf theorem of the preceding article gives a unique solution on $[\sigma, \sigma+\delta_1]$ where $\delta_1 > 0$ depends only on the bounds of $f$ and $\phi$. If $\delta_1 \ge r$ the first step is complete; otherwise the argument restarts at $\sigma+\delta_1$. In either case one obtains a solution on $[\sigma,\sigma+r]$. On the next interval $[\sigma+r, \sigma+2r]$ the values $y(t-r)$ lie in $[\sigma,\sigma+r]$ and are now the known solution of the first step, so the same argument applies, and iteration over successive intervals of length $r$ gives the solution. The solution is unique on each step because the ordinary problem is, and the steps cover all of $[\sigma, \sigma+T]$ for every $T$ for which the bounds allow.
 
 The method of steps is not merely a proof device: it is the algorithm by which the solution is computed, and it shows that a delay equation is an ordinary equation repeating with the data of the preceding step.
 
 **Corollary (maximal interval).** The solution extends to a maximal interval $[\sigma-r,\beta)$ with $\beta > \sigma$; if $\beta < \infty$ then the solution leaves every compact subset of $X$ as $t \to \beta^-$.
 
-*Proof.* Each step is an ordinary initial-value problem, to which the maximal-interval theorem for the ordinary theory applies; the maximal interval of the delay equation is the union of the maximal intervals of the steps. $\square$
+*Proof.* Each step is an ordinary initial-value problem, to which the maximal-interval theorem for the ordinary theory applies; the maximal interval of the delay equation is the union of the maximal intervals of the steps.
 
 **Example (logistic delay).** The equation $y'(t) = y(t)\bigl(1 - y(t-1)\bigr)$ with history $\phi \equiv \tfrac12$ is solved on $[0,1]$ by $y' = y(1-\tfrac12)$, that is $y(t) = \tfrac12 e^{t/2}$; the second step solves a logistic equation with a known forcing term, and the iteration continues. The solution remains defined for all time but its large-time behaviour depends on the lag, as the linear analysis below explains.
 
@@ -83,7 +83,7 @@ $$
 
 the **characteristic equation**. This transcendental equation has countably many roots $\lambda_n$, none of them with a finite accumulation point in $\mathbb{C}$, and for each root $e^{\lambda t}$ is a solution; when a root has multiplicity $m$, the functions $t^{k}e^{\lambda t}$, $0 \le k < m$, are also solutions.
 
-*Proof.* Substitution gives $\lambda e^{\lambda t} = (a + be^{-\lambda r})e^{\lambda t}$; the equation in $\lambda$ is transcendental and therefore has countably many roots. If $\lambda$ has multiplicity $m$ as a root of $\lambda - a - be^{-\lambda r}$, differentiation of the identity $m-1$ times with respect to $\lambda$ shows that $t^k e^{\lambda t}$ solves the equation for $k < m$. $\square$
+*Proof.* Substitution gives $\lambda e^{\lambda t} = (a + be^{-\lambda r})e^{\lambda t}$; the equation in $\lambda$ is transcendental and therefore has countably many roots. If $\lambda$ has multiplicity $m$ as a root of $\lambda - a - be^{-\lambda r}$, differentiation of the identity $m-1$ times with respect to $\lambda$ shows that $t^k e^{\lambda t}$ solves the equation for $k < m$.
 
 The contrast with the ordinary theory is exact: a scalar linear ordinary equation has $n$ roots and an $n$-dimensional solution space, whereas a scalar linear delay equation has infinitely many roots and an infinite-dimensional solution space, because its initial datum is a function. The **spectrum** of the solution operator is the set of characteristic roots, and it is discrete but infinite.
 
@@ -103,7 +103,7 @@ The example shows that a delay can destabilise a system that is stable without i
 
 **Theorem (semigroup property).** The solution operators satisfy $T(0) = I$, $T(t+s) = T(t)\,T(s)$ for $s, t \ge 0$, and $t \mapsto T(t)\phi$ is continuous from $[0,\infty)$ to $C$ for every $\phi \in C$; moreover $\|T(t)\|$ is bounded on each compact interval, and $T(t)$ is compact for $t \ge r$.
 
-*Proof.* The semigroup property is the uniqueness of the solution: the history of the solution at $t+s$ is the history of the solution starting from the history at $t$, and the initial-value problem with a history in $C$ has a unique solution. Strong continuity follows from the continuity of solutions in their initial history, which is the estimate of the next theorem. The compactness for $t \ge r$ is the Arzelà–Ascoli theorem: the operator $T(t)$ maps bounded subsets of $C$ to subsets that are uniformly bounded and equicontinuous, since the solution is Lipschitz on $[t-r,t]$ with a bound depending only on the norm of the history. $\square$
+*Proof.* The semigroup property is the uniqueness of the solution: the history of the solution at $t+s$ is the history of the solution starting from the history at $t$, and the initial-value problem with a history in $C$ has a unique solution. Strong continuity follows from the continuity of solutions in their initial history, which is the estimate of the next theorem. The compactness for $t \ge r$ is the Arzelà–Ascoli theorem: the operator $T(t)$ maps bounded subsets of $C$ to subsets that are uniformly bounded and equicontinuous, since the solution is Lipschitz on $[t-r,t]$ with a bound depending only on the norm of the history.
 
 The semigroup property places linear delay equations inside the theory of strongly continuous semigroups of bounded operators, which is developed for general evolution equations; here it is used only to state the variation-of-constants formula, and the spectral theory of $T(t)$ is the spectral theory of the characteristic equation.
 
@@ -121,7 +121,7 @@ $$
 
 the contour $\Gamma$ enclosing all characteristic roots to the right of a vertical line, the integral being an inverse Laplace transform.
 
-*Proof.* By linearity it suffices to treat the two terms separately. The first is the homogeneous solution. For the second, both sides satisfy the inhomogeneous equation and vanish for $t \le \sigma$, by the causality of the integral and the vanishing of the history of $K$; uniqueness of the solution of the initial-value problem completes the argument. The contour formula is the inversion of the Laplace transform, valid to the right of the rightmost characteristic root. $\square$
+*Proof.* By linearity it suffices to treat the two terms separately. The first is the homogeneous solution. For the second, both sides satisfy the inhomogeneous equation and vanish for $t \le \sigma$, by the causality of the integral and the vanishing of the history of $K$; uniqueness of the solution of the initial-value problem completes the argument. The contour formula is the inversion of the Laplace transform, valid to the right of the rightmost characteristic root.
 
 **Theorem (continuous dependence).** With $A, B$ bounded and $\|A\| + \|B\| \le M$, the solution of the homogeneous equation satisfies
 
@@ -129,7 +129,7 @@ $$
 \|y_t\|_\infty \le \|\phi\|_\infty\, e^{Mt} \qquad (t \ge 0).
 $$
 
-*Proof.* The integral equation $y(t) = \phi(0) + \int_\sigma^t(Ay(s)+By(s-r))\,ds$ gives, for the supremum $u(t) = \sup_{\sigma-r\le s\le t}\|y(s)\|$, the inequality $u(t) \le \|\phi\|_\infty + M\int_\sigma^t u(s)\,ds$; Gronwall's inequality of the preceding article gives the bound. $\square$
+*Proof.* The integral equation $y(t) = \phi(0) + \int_\sigma^t(Ay(s)+By(s-r))\,ds$ gives, for the supremum $u(t) = \sup_{\sigma-r\le s\le t}\|y(s)\|$, the inequality $u(t) \le \|\phi\|_\infty + M\int_\sigma^t u(s)\,ds$; Gronwall's inequality of the preceding article gives the bound.
 
 ## Stability and Lyapunov Functionals
 
@@ -145,7 +145,7 @@ $$
 
 satisfies $\operatorname{Re}\lambda \le -\gamma$ for some $\gamma > 0$; equivalently, if and only if all roots lie in a fixed left half-plane.
 
-*Proof.* From the contour representation of the fundamental solution, the growth of $K(t)$ as $t\to\infty$ is governed by the rightmost characteristic root, and the estimate $|e^{\lambda t}| = e^{(\operatorname{Re}\lambda)t}$ gives the equivalence; the passage from the scalar contour formula to the matrix determinant is the standard Laplace-transform solution of the linear system. $\square$
+*Proof.* From the contour representation of the fundamental solution, the growth of $K(t)$ as $t\to\infty$ is governed by the rightmost characteristic root, and the estimate $|e^{\lambda t}| = e^{(\operatorname{Re}\lambda)t}$ gives the equivalence; the passage from the scalar contour formula to the matrix determinant is the standard Laplace-transform solution of the linear system.
 
 **Example.** For $y'(t) = -ay(t-r)$ the criterion reproduces the condition $ar < \pi/2$ found above. For $y'(t) = -ay(t) - by(t-r)$ the boundary of stability in the $(a,b)$-plane is traced by the purely imaginary roots $\lambda = i\omega$. Separating the real and imaginary parts of $i\omega = -a - b(\cos\omega r - i\sin\omega r)$ gives
 
@@ -169,7 +169,7 @@ is nonpositive, where $y_{t+h}(t,\phi)$ is the history of the solution starting 
 
 **Theorem (Lyapunov stability).** If a Lyapunov functional exists with $\dot V \le 0$ for all $(t,\phi)$, the zero solution is stable; if in addition $\dot V \le -w_1(\|\phi(0)\|)$ for a positive definite $w_1$ and $V$ is bounded above on bounded sets by $w_2(\|\phi\|_\infty)$, the zero solution is asymptotically stable.
 
-*Proof.* This is the direct method of Lyapunov, transplanted from finite dimensions: the monotonicity of $t \mapsto V(t,y_t)$ confines the solution to sublevel sets of $V$, which are neighbourhoods of the origin by positive definiteness, and the stronger decay condition forces the solution to the origin, the boundedness of $V$ on bounded sets providing the uniformity in the initial history. $\square$
+*Proof.* This is the direct method of Lyapunov, transplanted from finite dimensions: the monotonicity of $t \mapsto V(t,y_t)$ confines the solution to sublevel sets of $V$, which are neighbourhoods of the origin by positive definiteness, and the stronger decay condition forces the solution to the origin, the boundedness of $V$ on bounded sets providing the uniformity in the initial history.
 
 **Example (a quadratic functional).** For $y'(t) = -ay(t) + by(t-r)$ with $a > 0$ and $|b| < a$, the functional
 
@@ -181,7 +181,7 @@ has derivative along a solution equal to $-2a\phi(0)^2 + 2b\phi(0)\phi(-r) + \mu
 
 **Theorem (Razumikhin).** Suppose there is a continuous $V : \mathbb{R}\times X \to \mathbb{R}$ with $V(t,0)=0$, $V$ positive definite, and $\dot V(t,y(t)) \le -w(\|y(t)\|)$ whenever $V(t+\theta, y(t+\theta)) \le V(t,y(t))$ for all $\theta \in [-r,0]$, where $\dot V$ is the derivative along the solution of the associated ordinary equation. Then the zero solution is asymptotically stable.
 
-*Proof.* If $V(t,y(t))$ were to increase at some time, there would be, by continuity and by the condition of the history at that time, a first time at which $V(t,y(t))$ equals its previous maximum over $[t-r,t]$; at that time the hypothesis applies and gives $\dot V < 0$, a contradiction. Hence $V(t,y(t))$ is nonincreasing, and the argument proceeds as in the direct method. $\square$
+*Proof.* If $V(t,y(t))$ were to increase at some time, there would be, by continuity and by the condition of the history at that time, a first time at which $V(t,y(t))$ equals its previous maximum over $[t-r,t]$; at that time the hypothesis applies and gives $\dot V < 0$, a contradiction. Hence $V(t,y(t))$ is nonincreasing, and the argument proceeds as in the direct method.
 
 Razumikhin's method avoids the integral over the history, at the cost of a hypothesis on the whole history only at the instants at which the maximum is attained; it is the more flexible tool for a nonlinearity that depends on the past through a bounded function.
 
@@ -207,13 +207,13 @@ $$
 y(t) = \phi(0) + \int_\sigma^t f(s,y_s)\,ds \qquad (t \ge \sigma),
 $$
 
-on the space of continuous $y : [\sigma-r,\sigma+T] \to X$ extending $\phi$, with the supremum norm. The map $T(y)(t) = \phi(0) + \int_\sigma^t f(s,y_s)\,ds$ is a contraction on the closed ball of radius $b$ for $T$ small enough, exactly as in the proof of Picard–Lindelöf, provided the evaluation $y \mapsto y_s$ is continuous, which it is with $\|y_s - z_s\|_\infty \le \|y-z\|_\infty$; the contraction mapping principle gives a fixed point, and the fixed point is a solution by the fundamental theorem of calculus. $\square$
+on the space of continuous $y : [\sigma-r,\sigma+T] \to X$ extending $\phi$, with the supremum norm. The map $T(y)(t) = \phi(0) + \int_\sigma^t f(s,y_s)\,ds$ is a contraction on the closed ball of radius $b$ for $T$ small enough, exactly as in the proof of Picard–Lindelöf, provided the evaluation $y \mapsto y_s$ is continuous, which it is with $\|y_s - z_s\|_\infty \le \|y-z\|_\infty$; the contraction mapping principle gives a fixed point, and the fixed point is a solution by the fundamental theorem of calculus.
 
 The proof is the Picard argument in the Banach space of histories; the only new ingredient is that the right-hand side is a function of an element of $C$ rather than of a point of $X$, and that the Lipschitz hypothesis is taken in the norm of $C$.
 
 **Theorem (existence without Lipschitz).** If $f$ is continuous and completely continuous and maps bounded sets to bounded sets, then for every $(\sigma,\phi)$ there is at least one solution. Uniqueness may fail.
 
-*Proof.* Quoted as standard. The argument uses the theory of condensing maps and the Schauder fixed point theorem: the integral operator is compact on bounded sets of the space of continuous extensions, so approximate solutions for the Lipschitz problems with $f_n \to f$ have a convergent subsequence whose limit solves the equation. $\square$
+*Proof.* Quoted as standard. The argument uses the theory of condensing maps and the Schauder fixed point theorem: the integral operator is compact on bounded sets of the space of continuous extensions, so approximate solutions for the Lipschitz problems with $f_n \to f$ have a convergent subsequence whose limit solves the equation.
 
 ### Linear Functional Equations and Decomposition of the Spectrum
 
@@ -233,7 +233,7 @@ $$
 
 and the **characteristic matrix** $\Delta$ has a determinant that is an entire function of exponential type; its zeros are the characteristic roots, they are countable, and for every $\gamma \in \mathbb{R}$ there are only finitely many with $\operatorname{Re}\lambda > \gamma$. The **spectral projection** onto the root subspace of a finite set of roots can be written as a contour integral of the resolvent $(\lambda I - L)^{-1}$ around the roots.
 
-*Proof.* Substitution gives the eigenvalue equation. The determinant of $\Delta$ is $\lambda^n$ plus terms involving $\int e^{\lambda\theta}\,d\eta$, each of which is entire of exponential type bounded by $e^{r|\lambda|}\|\eta\|$; Hadamard's theory of entire functions of exponential type gives the countability and the finiteness on each right half-plane, since the exponential growth of the determinant forces its zeros to be asymptotically contained in a union of vertical strips. The contour representation of the spectral projection is the standard Riesz projection of the resolvent. $\square$
+*Proof.* Substitution gives the eigenvalue equation. The determinant of $\Delta$ is $\lambda^n$ plus terms involving $\int e^{\lambda\theta}\,d\eta$, each of which is entire of exponential type bounded by $e^{r|\lambda|}\|\eta\|$; Hadamard's theory of entire functions of exponential type gives the countability and the finiteness on each right half-plane, since the exponential growth of the determinant forces its zeros to be asymptotically contained in a union of vertical strips. The contour representation of the spectral projection is the standard Riesz projection of the resolvent.
 
 **Remark (the decomposition theorem).** For a linear autonomous equation the space of solutions splits into a finite-dimensional part spanned by the exponential solutions corresponding to the finitely many roots in a right half-plane and a remainder on which the solution operator decays; this is the decomposition theorem of the theory, and it is the form in which the theory is used to reduce a delay equation to a finite-dimensional one plus a stable error. It is the seed of the semigroup theory of the evolution equations of this Part, where the same decomposition appears as the spectral decomposition of a semigroup with eventually compact orbits.
 

@@ -27,11 +27,11 @@ The monomials $1, x, x^2, \dots$ form a $k$-basis, so $k[x]$ is infinite-dimensi
 
 **Proposition (degree).** For $f, g \in k[x]$ over a field, $\deg(fg) = \deg f + \deg g$, and $k[x]$ is an integral domain.
 
-*Proof.* The coefficient of $x^{d_f + d_g}$ in $fg$ is the product of the leading coefficients of $f$ and $g$, which is nonzero in a field; all higher coefficients vanish. Hence the leading coefficient of $fg$ does not vanish and the degree is the sum. A product of nonzero polynomials is then nonzero, so there are no zero divisors. $\square$
+*Proof.* The coefficient of $x^{d_f + d_g}$ in $fg$ is the product of the leading coefficients of $f$ and $g$, which is nonzero in a field; all higher coefficients vanish. Hence the leading coefficient of $fg$ does not vanish and the degree is the sum. A product of nonzero polynomials is then nonzero, so there are no zero divisors.
 
 **Corollary (units).** The units of $k[x]$ are exactly the nonzero constants, $k[x]^\times = k^\times$.
 
-*Proof.* If $fg = 1$ then $\deg f + \deg g = 0$, so $f$ and $g$ are constants; conversely every nonzero constant is a unit. $\square$
+*Proof.* If $fg = 1$ then $\deg f + \deg g = 0$, so $f$ and $g$ are constants; conversely every nonzero constant is a unit.
 
 ## The Universal Property
 
@@ -47,7 +47,7 @@ $$
 \operatorname{Hom}_{k\text{-alg}}(k[x], A) \cong A .
 $$
 
-*Proof.* A $k$-algebra homomorphism is determined by the image of $x$, because $k$ is fixed and the monomials generate; conversely, given $a$ the assignment $x \mapsto a$ extends to a homomorphism since the monomials are linearly independent and products of monomials multiply by adding exponents. The two constructions are inverse to each other. $\square$
+*Proof.* A $k$-algebra homomorphism is determined by the image of $x$, because $k$ is fixed and the monomials generate; conversely, given $a$ the assignment $x \mapsto a$ extends to a homomorphism since the monomials are linearly independent and products of monomials multiply by adding exponents. The two constructions are inverse to each other.
 
 **Corollary.** $k[x]$ is the free commutative $k$-algebra on one generator, and it is the **initial** object among commutative $k$-algebras equipped with a chosen element: for every such pair $(A,a)$ there is a unique homomorphism $k[x] \to A$ carrying $x$ to $a$.
 
@@ -61,7 +61,7 @@ $$
 f = qg + r, \qquad \deg r < \deg g .
 $$
 
-*Proof.* If $\deg f < \deg g$ take $q = 0$, $r = f$. Otherwise let $a$ and $b$ be the leading coefficients of $f$ and $g$ and let $m = \deg f - \deg g \geq 0$; the polynomial $f - (a/b)x^mg$ has degree less than $\deg f$, and induction on the degree produces $q$ and $r$. For uniqueness, suppose $qg + r = q'g + r'$ with $\deg r, \deg r' < \deg g$; then $(q - q')g = r' - r$. If $q \neq q'$ the left side has degree $\deg(q-q') + \deg g \geq \deg g$, while the right side has degree less than $\deg g$, a contradiction; hence $q = q'$ and then $r = r'$. $\square$
+*Proof.* If $\deg f < \deg g$ take $q = 0$, $r = f$. Otherwise let $a$ and $b$ be the leading coefficients of $f$ and $g$ and let $m = \deg f - \deg g \geq 0$; the polynomial $f - (a/b)x^mg$ has degree less than $\deg f$, and induction on the degree produces $q$ and $r$. For uniqueness, suppose $qg + r = q'g + r'$ with $\deg r, \deg r' < \deg g$; then $(q - q')g = r' - r$. If $q \neq q'$ the left side has degree $\deg(q-q') + \deg g \geq \deg g$, while the right side has degree less than $\deg g$, a contradiction; hence $q = q'$ and then $r = r'$.
 
 **Theorem (remainder and factor).** For $f \in k[x]$ and $a \in k$,
  
@@ -71,11 +71,11 @@ $$
 
 for a unique $q \in k[x]$; consequently $f(a) = 0$ if and only if $(x-a)$ divides $f$.
 
-*Proof.* Divide $f$ by the monic polynomial $x - a$: the remainder has degree less than $1$, hence is a constant $c$, and evaluating $f = (x-a)q + c$ at $x = a$ gives $c = f(a)$. The factor statement is immediate. $\square$
+*Proof.* Divide $f$ by the monic polynomial $x - a$: the remainder has degree less than $1$, hence is a constant $c$, and evaluating $f = (x-a)q + c$ at $x = a$ gives $c = f(a)$. The factor statement is immediate.
 
 **Corollary (number of roots).** If $f \neq 0$ and $\deg f = d$, then $f$ has at most $d$ roots in any integral domain containing $k$.
 
-*Proof.* If $a$ is a root, $f = (x-a)q$ with $\deg q = d-1$; by induction $q$ has at most $d-1$ roots, and every root of $f$ is $a$ or a root of $q$ since the ambient ring is a domain. $\square$
+*Proof.* If $a$ is a root, $f = (x-a)q$ with $\deg q = d-1$; by induction $q$ has at most $d-1$ roots, and every root of $f$ is $a$ or a root of $q$ since the ambient ring is a domain.
 
 The bound fails over a ring with zero divisors, and this failure is precisely what allows the quotient constructions of the corpus: in $k[x]/(x^2)$ the class of $x$ is a root of $t^2$ of multiplicity two, and in $\mathbb{R}[x]/(x^2-1)$ the element $j$ is a root of $t^2 - 1$ distinct from $\pm 1$, so a degree-two polynomial has more than two roots.
 
@@ -83,11 +83,11 @@ The bound fails over a ring with zero divisors, and this failure is precisely wh
 
 **Theorem ($k[x]$ is a principal ideal domain).** Every ideal $I$ of $k[x]$ is $(f)$ for some polynomial $f$, unique up to multiplication by a unit if $I \neq 0$.
 
-*Proof.* If $I \neq 0$, choose $f \in I$ of least degree; for any $g \in I$ the division algorithm gives $g = qf + r$ with $\deg r < \deg f$, and $r = g - qf \in I$, so $r = 0$ by minimality of $\deg f$. Hence $I = (f)$. Uniqueness up to units follows from $(f) = (g)$ implying $f$ and $g$ divide each other, hence are scalar multiples. $\square$
+*Proof.* If $I \neq 0$, choose $f \in I$ of least degree; for any $g \in I$ the division algorithm gives $g = qf + r$ with $\deg r < \deg f$, and $r = g - qf \in I$, so $r = 0$ by minimality of $\deg f$. Hence $I = (f)$. Uniqueness up to units follows from $(f) = (g)$ implying $f$ and $g$ divide each other, hence are scalar multiples.
 
 **Corollary (maximal ideals and fields).** For $f \neq 0$ the following are equivalent: $(f)$ is maximal; $(f)$ is prime; $f$ is irreducible. In that case $k[x]/(f)$ is a field, of degree $\dim_k k[x]/(f) = \deg f$ over $k$.
 
-*Proof.* The quotient $k[x]/(f)$ is an integral domain if and only if $(f)$ is prime, and a field if and only if $(f)$ is maximal; in a principal ideal domain the two notions coincide, and $k[x]/(f)$ is a domain exactly when $f$ is irreducible, since a factorisation $f = gh$ with both factors of lower degree produces zero divisors. The dimension statement is that the images of $1, x, \dots, x^{d-1}$ form a basis, by the division algorithm. $\square$
+*Proof.* The quotient $k[x]/(f)$ is an integral domain if and only if $(f)$ is prime, and a field if and only if $(f)$ is maximal; in a principal ideal domain the two notions coincide, and $k[x]/(f)$ is a domain exactly when $f$ is irreducible, since a factorisation $f = gh$ with both factors of lower degree produces zero divisors. The dimension statement is that the images of $1, x, \dots, x^{d-1}$ form a basis, by the division algorithm.
 
 **Example (the two-dimensional algebras).** The three two-dimensional commutative unital real algebras are quotients by a quadratic:
 
@@ -123,7 +123,7 @@ $$
 \operatorname{Hom}_{k\text{-alg}}\bigl(k[x_1,\dots,x_n], A\bigr) \cong A^n, \qquad \varphi \longmapsto (\varphi(x_1), \dots, \varphi(x_n)).
 $$
 
-*Proof.* As in the one-variable case, a homomorphism is determined by the images of the generators, and any $n$-tuple of elements defines one by evaluating the monomials. $\square$
+*Proof.* As in the one-variable case, a homomorphism is determined by the images of the generators, and any $n$-tuple of elements defines one by evaluating the monomials.
 
 **Theorem (Hilbert basis theorem, standard).** If $k$ is a field, then every ideal of $k[x_1,\dots,x_n]$ is finitely generated; the algebra is therefore Noetherian.
 
@@ -143,7 +143,7 @@ $$
 
 where $\partial_i = \partial/\partial x_i$. In one variable, $\operatorname{Der}_k(k[x]) = k[x]\,\partial_x$.
 
-*Proof.* Every $\sum_i f_i\partial_i$ is a derivation, since the partial derivatives are. Conversely, let $\delta$ be a derivation and put $f_i = \delta(x_i)$; then $\eta = \delta - \sum_i f_i\partial_i$ is a derivation with $\eta(x_i) = 0$ for all $i$. Since $\eta$ obeys the Leibniz rule and vanishes on the generators and on $k$, it vanishes on every monomial, hence on all of $k[x_1,\dots,x_n]$. So $\delta = \sum_i f_i\partial_i$, and the expression is unique because the $\partial_i$ are linearly independent over the algebra. $\square$
+*Proof.* Every $\sum_i f_i\partial_i$ is a derivation, since the partial derivatives are. Conversely, let $\delta$ be a derivation and put $f_i = \delta(x_i)$; then $\eta = \delta - \sum_i f_i\partial_i$ is a derivation with $\eta(x_i) = 0$ for all $i$. Since $\eta$ obeys the Leibniz rule and vanishes on the generators and on $k$, it vanishes on every monomial, hence on all of $k[x_1,\dots,x_n]$. So $\delta = \sum_i f_i\partial_i$, and the expression is unique because the $\partial_i$ are linearly independent over the algebra.
 
 **Example (the Euler derivation).** The derivation $\vartheta = \sum_i x_i\partial_i$ acts on monomials by $\vartheta(x^\alpha) = |\alpha| x^\alpha$, where $|\alpha| = \sum_i\alpha_i$. Over $k = \mathbb{R}$ or $\mathbb{C}$ it is the infinitesimal generator of the one-parameter group of algebra automorphisms $x_i \mapsto \lambda x_i$, $\lambda = e^{t} \in k^\times$, whose derivative at $\lambda = 1$ is $\vartheta$; over a general field the one-parameter group need not be available, and only the derivation is available. It is not inner, because $k[x_1,\dots,x_n]$ is commutative and therefore has no nonzero inner derivations.
 
@@ -155,7 +155,7 @@ $$
 
 so that $\operatorname{Aut}_k(k[x])$ is the affine group of the line.
 
-*Proof.* An automorphism $\varphi$ is determined by $g = \varphi(x)$, and $\varphi$ is surjective exactly when $g$ generates $k[x]$ as a $k$-algebra. If $\deg g = d \geq 1$, every element of $k[g]$ is a $k$-linear combination of $1, g, g^2, \dots$, hence has degree a multiple of $d$; if $d \geq 2$ then $x \notin k[g]$, so $g$ does not generate. Hence $d = 1$ and $g = ax+b$ with $a \neq 0$; conversely every such $g$ generates $k[x]$ and defines an automorphism. $\square$
+*Proof.* An automorphism $\varphi$ is determined by $g = \varphi(x)$, and $\varphi$ is surjective exactly when $g$ generates $k[x]$ as a $k$-algebra. If $\deg g = d \geq 1$, every element of $k[g]$ is a $k$-linear combination of $1, g, g^2, \dots$, hence has degree a multiple of $d$; if $d \geq 2$ then $x \notin k[g]$, so $g$ does not generate. Hence $d = 1$ and $g = ax+b$ with $a \neq 0$; conversely every such $g$ generates $k[x]$ and defines an automorphism.
 
 For $n \geq 2$ the automorphism group is much larger; already the **triangular** maps $x_i \mapsto x_i + h_i(x_1,\dots,x_{i-1})$ are automorphisms, and the structure of $\operatorname{Aut}_k(k[x_1,x_2])$ is known (it is generated by the affine and triangular maps), whereas for $n \geq 3$ the question of whether every automorphism is a composition of these is a substantial open problem of affine algebraic geometry.
 

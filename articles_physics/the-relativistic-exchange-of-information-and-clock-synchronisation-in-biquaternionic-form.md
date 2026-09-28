@@ -4,7 +4,7 @@
 
 The companion article *Causality and the Light Cone as an Information Barrier in Biquaternionic Form* establishes what the causal structure of the material sector forbids. No admissible signal crosses a spacelike separation; the light cone is the invariant boundary between the events that can influence one another and those that cannot; the relative speed of two observers is strictly below $c$; and the cone is the characteristic cone of the algebra's wave operator. This article treats what is nevertheless possible within that barrier. One event can send a signal to another precisely when their displacement is null, and the round trip of a light signal is the operation by which observers who never share a clock establish a common time. The subject is therefore the relativistic exchange of information and the synchronisation of clocks, read in the biquaternion algebra.
 
-The two themes are one. A signal is a null displacement, and a null displacement is a zero divisor of $\mathbb{B}$; the algebra's degenerate locus, which is the barrier of the companion article, is also the channel through which every exchange passes. A clock is an integral of the norm form along a worldline, and clocks in relative motion read different totals for the same pair of events; the radar procedure that repairs this is a definition of simultaneity built out of the very null displacements the algebra singles out. The companion article *The Light Cone as the Biquaternion Zero-Divisor Cone* gives the null cone as the material-sector part of the zero-divisor set; the present article uses that identification at every step and does not re-derive it.
+The two themes are one. A signal is a null displacement, and a null displacement is a zero divisor of $\mathbb{B}$; the algebra's degenerate locus, which is the barrier of the companion article, is also the channel through which every exchange passes. A clock is an integral of the biquaternion norm along a worldline, and clocks in relative motion read different totals for the same pair of events; the radar procedure that repairs this is a definition of simultaneity built out of the very null displacements the algebra singles out. The companion article *The Light Cone as the Biquaternion Zero-Divisor Cone* gives the null cone as the material-sector part of the zero-divisor set; the present article uses that identification at every step and does not re-derive it.
 
 The article develops the following.
 
@@ -18,7 +18,7 @@ The article develops the following.
 
 The exchange discussed here is the classical exchange of signals. It is not the operator-theoretic content of the Hermitian sector $\mathbb{M}_+$ treated in the companion article *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*; the two share the algebra, and the information in question is carried by null displacements of $\mathbb{M}_-$.
 
-**Conventions.** The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_0 = 1, e_1, e_2, e_3$ satisfying $e_k^2 = -e_0$, and central scalar imaginary $i$ with $i^2 = -1$. The material sector $\mathbb{M}_-$ is the anti-Hermitian subspace, with elements $i\alpha\,e_0+\mathbf{a}$ of imaginary scalar part and real vector part. The norm form is $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$, the material coordinate is $\tilde{Q} = ic\,t\,e_0 + \mathbf{x}$, and the $ict$-coordinate metric is $\eta = \mathrm{diag}(-1,+1,+1,+1)$. The biquaternionic gradient is $\tilde{\nabla} = e_0\partial_{ict}+\nabla$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ its vacuum value. Numerical statements were checked in the four-component coefficient representation $\tilde{Q} = Q_0e_0+Q_1e_1+Q_2e_2+Q_3e_3$ with complex coefficients, and the frequency exchange was checked on a superposition of two wavevectors.
+**Conventions.** The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_0 = 1, e_1, e_2, e_3$ satisfying $e_k^2 = -e_0$, and central scalar imaginary $i$ with $i^2 = -1$. The material sector $\mathbb{M}_-$ is the anti-Hermitian subspace, with elements $i\alpha\,e_0+\mathbf{a}$ of imaginary scalar part and real vector part. The biquaternion norm is $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$, the material coordinate is $\tilde{Q} = ic\,t\,e_0 + \mathbf{x}$, and the $ict$-coordinate metric is $\eta = \mathrm{diag}(-1,+1,+1,+1)$. The biquaternionic gradient is $\tilde{\nabla} = e_0\partial_{ict}+\nabla$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ its vacuum value. Numerical statements were checked in the four-component coefficient representation $\tilde{Q} = Q_0e_0+Q_1e_1+Q_2e_2+Q_3e_3$ with complex coefficients, and the frequency exchange was checked on a superposition of two wavevectors.
 
 ## Signals as Null Displacements
 
@@ -31,7 +31,7 @@ $$
 \qquad \Delta t = t_B - t_A, \quad \Delta\mathbf{x} = \mathbf{x}_B - \mathbf{x}_A,
 $$
 
-with norm form $N(\tilde{Q}_{BA}) = -c^2(\Delta t)^2 + |\Delta\mathbf{x}|^2$. A light signal travelling from $A$ to $B$ covers the spatial separation at speed $c$, so
+with biquaternion norm $N(\tilde{Q}_{BA}) = -c^2(\Delta t)^2 + |\Delta\mathbf{x}|^2$. A light signal travelling from $A$ to $B$ covers the spatial separation at speed $c$, so
 
 $$
 |\Delta\mathbf{x}| = c\,\Delta t,
@@ -67,7 +67,7 @@ $$
 
 independent of $t$, while $v$ increases at rate $2$; and conversely for the incoming ray.
 
-For a displacement whose spatial part is collinear with $\hat{\mathbf{n}}$ — which is the case for a signal along $\hat{\mathbf{n}}$ — the norm form factorizes in these coordinates:
+For a displacement whose spatial part is collinear with $\hat{\mathbf{n}}$ — which is the case for a signal along $\hat{\mathbf{n}}$ — the biquaternion norm factorizes in these coordinates:
 
 $$
 N(\tilde{Q}_{BA}) = -c^2\,\Delta u\,\Delta v .
@@ -87,7 +87,7 @@ If $A \rightsquigarrow B$ and $B \rightsquigarrow C$ are two light exchanges, th
 
 ## Clocks and Proper Time
 
-### Proper Time from the Norm Form
+### Proper Time from the Biquaternion Norm
 
 A clock is a physical system that measures the interval along its own worldline. If the worldline is $\tilde{Q}(\lambda)$, the **proper time** is defined by
 
@@ -114,7 +114,7 @@ $$
 = \int_{t_A}^{t_B}\sqrt{1-\frac{\mathbf{v}(t)^2}{c^2}}\;dt .
 $$
 
-The biquaternion form has one structural advantage over the component form: the integrand is the norm form of the displacement, so the invariance of $\Delta\tau$ under a change of frame is the invariance of $N$ under the rotor conjugation, established in the companion articles *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector* and *Relativistic Mechanics in Biquaternionic Form*. No separate transformation law for the clock is needed; the clock is an integral of the algebra's own quadratic form.
+The biquaternion form has one structural advantage over the component form: the integrand is the biquaternion norm of the displacement, so the invariance of $\Delta\tau$ under a change of frame is the invariance of $N$ under the rotor conjugation, established in the companion articles *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector* and *Relativistic Mechanics in Biquaternionic Form*. No separate transformation law for the clock is needed; the clock is an integral of the algebra's own quadratic form.
 
 ### The Clock Four-Velocity
 
@@ -126,13 +126,13 @@ $$
 = \gamma\left(ic\,e_0 + \mathbf{v}\right),
 $$
 
-an element of $\mathbb{M}_-$ whose norm form is fixed:
+an element of $\mathbb{M}_-$ whose biquaternion norm is fixed:
 
 $$
 N(\tilde{U}) = \gamma^2\left((ic)^2 + \mathbf{v}^2\right) = \gamma^2\left(-c^2+v^2\right) = -c^2 .
 $$
 
-Every clock, whatever its state of motion, carries a four-velocity of the same norm form $-c^2$. This normalization is the algebraic statement that proper time is the parameter with respect to which the four-velocity is a unit vector of $\mathbb{M}_-$, and it is the object in terms of which the frequency exchange of the next sections is written. A clock at rest has $\tilde{U} = ic\,e_0$; a clock moving with velocity $\mathbf{v}$ has the four-velocity above. The two are related by the boost rotor, and the relation between their readings is the content of the twins' effect below.
+Every clock, whatever its state of motion, carries a four-velocity of the same biquaternion norm $-c^2$. This normalization is the algebraic statement that proper time is the parameter with respect to which the four-velocity is a unit vector of $\mathbb{M}_-$, and it is the object in terms of which the frequency exchange of the next sections is written. A clock at rest has $\tilde{U} = ic\,e_0$; a clock moving with velocity $\mathbf{v}$ has the four-velocity above. The two are related by the boost rotor, and the relation between their readings is the content of the twins' effect below.
 
 ## The Radar Method and Einstein Synchronisation
 
@@ -293,9 +293,9 @@ t_B - t_A - \Delta\tau
 \;\approx\; \int\frac{\mathbf{v}^2}{2c^2}\,dt
 $$
 
-for a slow journey. For a clock whose velocity is $v(t) = 0.8c\,\sin(2\pi t/T)$ over a coordinate interval $T = 10$, which carries the clock away from $A$ and back to $A$ at $t = T$, a direct quadrature gives $\Delta\tau \approx 8.125496$, against the staying clock's $T = 10$: the travelled clock reads about $1.87$ units less. The two clocks meet again at the same event, so the deficit is a proper-time difference between two worldlines with the same endpoints and needs no synchronisation convention to be interpreted. The biquaternion content of the computation is that $\Delta\tau$ is the integral of the norm form and is therefore automatically frame-independent; the twin effect is the statement that this invariant depends on the path, and not only on its endpoints.
+for a slow journey. For a clock whose velocity is $v(t) = 0.8c\,\sin(2\pi t/T)$ over a coordinate interval $T = 10$, which carries the clock away from $A$ and back to $A$ at $t = T$, a direct quadrature gives $\Delta\tau \approx 8.125496$, against the staying clock's $T = 10$: the travelled clock reads about $1.87$ units less. The two clocks meet again at the same event, so the deficit is a proper-time difference between two worldlines with the same endpoints and needs no synchronisation convention to be interpreted. The biquaternion content of the computation is that $\Delta\tau$ is the integral of the biquaternion norm and is therefore automatically frame-independent; the twin effect is the statement that this invariant depends on the path, and not only on its endpoints.
 
-This is the **twin effect**, and it is a statement about worldlines, not about frames: the two clocks are not symmetric, because only one of them is accelerated in the sense of having a worldline that is not a single inertial straight line. The inertial worldline between two timelike-separated events maximizes the proper time, which is the reverse triangle inequality for the Minkowski norm form; the elementary return-to-origin case is the inequality displayed above. The general statement is standard, and the companion article *Relativistic Mechanics in Biquaternionic Form* records the proper-time integral from which it follows.
+This is the **twin effect**, and it is a statement about worldlines, not about frames: the two clocks are not symmetric, because only one of them is accelerated in the sense of having a worldline that is not a single inertial straight line. The inertial worldline between two timelike-separated events maximizes the proper time, which is the reverse triangle inequality for the Minkowski biquaternion norm; the elementary return-to-origin case is the inequality displayed above. The general statement is standard, and the companion article *Relativistic Mechanics in Biquaternionic Form* records the proper-time integral from which it follows.
 
 ### Transport Versus Radar Synchronisation
 
@@ -328,7 +328,7 @@ The moral is the one the whole article has developed. An exchange of information
 
 The conventions and the results taken over from the relativity series are those of the following companion articles:
 
-- Companion article *Introduction to the Biquaternion Universe*, for the notation, the norm form and the causal trichotomy.
+- Companion article *Introduction to the Biquaternion Universe*, for the notation, the biquaternion norm and the causal trichotomy.
 - Companion article *Conventions in the Biquaternion Universe*, for the algebra and basis, the four conjugations, the real subspaces and the metric at its three levels.
 - Companion article *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*, for the material four-vector, the interval and the proper-time parametrization.
 - Companion article *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*, for the Hermitian sector and its distinct informational reading.
@@ -341,7 +341,7 @@ The conventions and the results taken over from the relativity series are those 
 
 ## Summary
 
-The exchange of information and the synchronisation of clocks are built from the same objects: the null displacements of the material sector and the norm form along worldlines.
+The exchange of information and the synchronisation of clocks are built from the same objects: the null displacements of the material sector and the biquaternion norm along worldlines.
 
 1. **Signals are null displacements.** Two events are joined by a light signal exactly when their displacement is null, $|\Delta\mathbf{x}| = c\,\Delta t$, that is, when it is a zero divisor of $\mathbb{B}$. The signal direction satisfies $\Delta\mathbf{x} = \pm c\,\Delta t\,\hat{\mathbf{n}}$, and the retarded coordinate $u = t-\hat{\mathbf{n}}\cdot\mathbf{x}/c$ is constant along an outgoing ray. A null plane wave has phase $\Phi = -\omega u$.
 
@@ -369,7 +369,7 @@ The exchange of information and the synchronisation of clocks are built from the
 | $c$, $c_0$ | Speed of light in the medium, and in vacuum |
 | $\tilde{Q} = ic\,t\,e_0+\mathbf{x}$ | Material four-position |
 | $\tilde{Q}_{BA} = \tilde{Q}_B-\tilde{Q}_A$ | Displacement from $A$ to $B$ |
-| $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$ | Norm form |
+| $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$ | Biquaternion norm |
 | $\eta = \mathrm{diag}(-1,+1,+1,+1)$ | $ict$-coordinate metric |
 | $\mathrm{Sc}$ | Scalar projection |
 | $\hat{\mathbf{n}}$ | Propagation direction |

@@ -15,7 +15,7 @@ Throughout, $(\mathcal{C},J)$ is a site with a terminal object, $f:S'\to S$ is a
 
 **Proposition.** An indexed category is equivalent to a fibration over $\mathcal{C}$ with a cleavage, and the base-change functors are unique up to a canonical isomorphism; the fibre $\mathbb{X}_S$ over $S$ is the subcategory of the total category of the objects lying over $S$ and the morphisms lying over $\mathrm{id}_S$. The formation of the total category is inverse to the passage from a fibration to its indexed category, up to equivalence.
 
-*Proof.* The cleavage chooses a cartesian morphism over each base-change, and the coherence isomorphisms of the pseudofunctor are the unique comparison isomorphisms between the chosen cartesian morphisms; the two constructions are inverse by the universal property of the cartesian morphisms. $\square$
+*Proof.* The cleavage chooses a cartesian morphism over each base-change, and the coherence isomorphisms of the pseudofunctor are the unique comparison isomorphisms between the chosen cartesian morphisms; the two constructions are inverse by the universal property of the cartesian morphisms.
 
 **Example.** The fundamental example is the indexed category of modules: for a ring homomorphism $f:R\to R'$ the base change is the extension of scalars $-\otimes_RR'$ of *Extension of Scalars*, the fibre over $R$ is the category of $R$-modules, and the total category is the category of modules over all the rings, fibred over the category of rings. Another example is the indexed category of quasi-coherent sheaves over a site of schemes, the geometric case treated in Part II.
 
@@ -35,7 +35,7 @@ and the covering $\mathcal{U}$ is **effective for descent** in $\mathbb{X}$ if t
 
 **Proposition.** The comparison functor is fully faithful for every covering if and only if the base-change functors are compatible with the localisation, which holds for the indexed categories of modules and of sheaves. For the indexed category of sets valued functors on a category, the stack condition is exactly the sheaf condition of *Sheaves on Sites*, and for the indexed category of categories the stack condition is the effective descent of the objects together with the compatible descent of the morphisms.
 
-*Proof.* The full faithfulness of the comparison functor is the statement that a morphism of the base is determined by its pullbacks along a covering, which is the separatedness of the corresponding presheaf of morphisms. The identification with the sheaf condition is the description of a sheaf as a functor whose values satisfy the gluing axiom, applied to the constant indexed category with fibres the category of sets. $\square$
+*Proof.* The full faithfulness of the comparison functor is the statement that a morphism of the base is determined by its pullbacks along a covering, which is the separatedness of the corresponding presheaf of morphisms. The identification with the sheaf condition is the description of a sheaf as a functor whose values satisfy the gluing axiom, applied to the constant indexed category with fibres the category of sets.
 
 **Example.** For the covering of a set $c$ by the single map $\{c_i\}\to c$ of the members of an open cover in a topological space, a descent datum is precisely a compatible family of sections, and the descent condition is the sheaf condition; this is the sense in which descent generalises gluing, and the topological case is treated in Part II.
 
@@ -55,7 +55,7 @@ built from the tensor powers, with the coface and codegeneracy maps given by the
 $$
 0\to M\to M'\rightrightarrows M'\otimes_RR',
 $$
-and the flatness of $R'$ over $R$ shows that $M\otimes_RR'\cong M'$ compatibly with $\phi$; the cocycle condition is what makes the equalizer compute the correct module and makes the two constructions inverse. $\square$
+and the flatness of $R'$ over $R$ shows that $M\otimes_RR'\cong M'$ compatibly with $\phi$; the cocycle condition is what makes the equalizer compute the correct module and makes the two constructions inverse.
 
 **Definition.** The **Amitsur complex** of a faithfully flat cover $R\to R'$ is the cosimplicial object with terms $R'\otimes_RR'\otimes_R\cdots\otimes_RR'$ and the coface maps inserting $1$ in the consecutive positions; for an $R$-module $M$ the complex
 $$
@@ -65,7 +65,7 @@ is the **Amitsur cochain complex**, and its cohomology computes the descent obst
 
 **Proposition.** For a faithfully flat cover the Amitsur complex of $M$ is exact in positive degrees — it is a resolution of $M$ by the tensor powers of $R'$ — so $H^0=M$ and $H^n=0$ for $n\ge1$, and every descent datum of $R'$-modules is effective. Comparing the cohomology of the base with the cohomology of the cover in the derived setting is the Grothendieck spectral sequence of the composite of the two global-section functors, developed in *Spectral Sequences* and applied to the cosimplicial object of the cover; the obstruction to descending a more general structure is the usual Čech-style obstruction of *Sheaves on Sites*. The complex is the algebraic form of the cosimplicial object attached to a covering of a site.
 
-*Proof (in outline).* The exactness of the Amitsur complex in positive degrees is faithfully flat descent applied to the modules of the complex: a cycle in degree $n$ is a tensor that becomes a coboundary after the faithfully flat extension, and faithful flatness lets the coboundary descend. The comparison with a spectral sequence is the standard one for a cosimplicial object, filtered by the cosimplicial degree, and belongs to the Grothendieck theory of *Spectral Sequences*. $\square$
+*Proof (in outline).* The exactness of the Amitsur complex in positive degrees is faithfully flat descent applied to the modules of the complex: a cycle in degree $n$ is a tensor that becomes a coboundary after the faithfully flat extension, and faithful flatness lets the coboundary descend. The comparison with a spectral sequence is the standard one for a cosimplicial object, filtered by the cosimplicial degree, and belongs to the Grothendieck theory of *Spectral Sequences*.
 
 **Example.** Let $k\to K$ be a finite Galois extension of fields with group $\Gamma$. Then the descent data for the cover are the $K$-vector spaces with a semilinear action of $\Gamma$, and the faithfully flat descent theorem specialises to **Galois descent**: the $k$-vector spaces are equivalent to the $K$-vector spaces with a semilinear $\Gamma$-action. The identification of the automorphism group with $\Gamma$ and the semilinearity belong to the theory of *Fields*, and the cohomological obstructions to the descent of more general structures are the Galois cohomology groups $H^1(\Gamma,-)$.
 
@@ -77,7 +77,7 @@ is the **Amitsur cochain complex**, and its cohomology computes the descent obst
 
 **Corollary.** Faithfully flat descent for modules is the case of the monadicity theorem in which $\mathcal{B}=\mathbf{Mod}_R$, $\mathcal{A}=\mathbf{Mod}_{R'}$, and $F=-\otimes_RR'$: the monad is $M\mapsto M\otimes_RR'$ with the multiplication induced by the multiplication of $R'$, the Eilenberg–Moore algebras are the $R'$-modules with descent data, and the flatness and the faithfulness of the cover are exactly the conditions under which the coequalizers are created. The same pattern gives the descent for the modules over a sheaf of rings on a site and for the quasi-coherent sheaves of the geometric case of Part II.
 
-*Proof.* The monadicity theorem is quoted; the identification of the algebras with the descent data is the computation of the monad in the module case, where the structure map $M\otimes_RR'\otimes_RR'\to M\otimes_RR'$ is the multiplication of the tensor factors and the coherence is the cocycle condition. The creation of the coequalizers is the flatness of $R'$ together with the faithfulness of the cover. $\square$
+*Proof.* The monadicity theorem is quoted; the identification of the algebras with the descent data is the computation of the monad in the module case, where the structure map $M\otimes_RR'\otimes_RR'\to M\otimes_RR'$ is the multiplication of the tensor factors and the coherence is the cocycle condition. The creation of the coequalizers is the flatness of $R'$ together with the faithfulness of the cover.
 
 **Example.** For a cover by a single faithfully flat morphism that is also finite and locally free, the monad is the one attached to a finite projective algebra and the descent data are the modules over the algebra with the compatible action of the dual; this is the algebraic form of the descent of vector bundles, and the geometric case belongs to Part II.
 
@@ -87,7 +87,7 @@ is the **Amitsur cochain complex**, and its cohomology computes the descent obst
 
 **Theorem (stackification).** Every prestack over a site has a stackification, unique up to equivalence, and the stackification is left exact in the sense that it preserves the finite limits of the prestacks; the stackification of the prestack of the sets is the associated sheaf, and the stackification of the prestack of the categories is the stack of the categories with the effective descent data. For a site with a subcanonical topology the representable prestacks are already stacks.
 
-*Proof.* The stackification is constructed by composing the descent comparison with the associated sheaf functor on the fibres, and the universal property follows from the adjunction between the prestacks and the stacks; the identification with the associated sheaf is the case of the discrete fibres, and the left exactness is the exactness of the sheafification. $\square$
+*Proof.* The stackification is constructed by composing the descent comparison with the associated sheaf functor on the fibres, and the universal property follows from the adjunction between the prestacks and the stacks; the identification with the associated sheaf is the case of the discrete fibres, and the left exactness is the exactness of the sheafification.
 
 **Example.** For the site of a group $G$ with the trivial topology the stacks are the categories with an action of $G$, that is, the $G$-objects in the 2-category of categories; for the étale site of a scheme the stacks are the étale stacks, whose geometric theory belongs to Part II; the stack of the torsors under a sheaf of groups is the classifying stack, and its sections over a cover are the cohomology classes of $H^1$ of the cover.
 

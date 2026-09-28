@@ -220,13 +220,13 @@ In the framework's terms, all three are the statement that the trace pairing can
 
 ## Open Questions
 
-**1. The obstruction and the norm form.** No-cloning is an obstruction about the trace pairing. Is there a formulation in terms of the norm form of the tensor product, and does the norm form's multiplicativity, $N(\tilde{A}\tilde{B}) = N(\tilde{A})N(\tilde{B})$, play the role that the squared inner product plays in the unitary argument?
+**1. The obstruction and the biquaternion norm.** No-cloning is an obstruction about the trace pairing. Is there a formulation in terms of the biquaternion norm of the tensor product, and does the biquaternion norm's multiplicativity, $N(\tilde{A}\tilde{B}) = N(\tilde{A})N(\tilde{B})$, play the role that the squared inner product plays in the unitary argument?
 
 **2. Cloning and the two sectors.** The algebra splits into $\mathbb{M}_-$ and $\mathbb{M}_+$; the obstruction is stated entirely in $\mathbb{M}_+$. Does the material sector constrain the class of admissible cloning machines, or is it inert here?
 
 **3. Correlated inputs.** The theorem forbids cloning an unknown state. What is the algebraic characterization of the correlations that a cloning machine can exploit, and does the entanglement of the blank with the input modify the bound?
 
-**4. Many copies.** The asymptotic cloning of $n$ copies to $m>n$ copies approaches perfect cloning as $n\to\infty$, with a rate given by the entropy. Does the norm-form reading of the single-qubit entropy extend to the asymptotic cloning rate?
+**4. Many copies.** The asymptotic cloning of $n$ copies to $m>n$ copies approaches perfect cloning as $n\to\infty$, with a rate given by the entropy. Does the biquaternion-norm reading of the single-qubit entropy extend to the asymptotic cloning rate?
 
 **5. Empirical content.** The no-cloning theorem in biquaternion form is the standard theorem transcribed; it predicts nothing new.
 

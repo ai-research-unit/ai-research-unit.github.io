@@ -23,7 +23,7 @@ A pair $(M, J)$ is an **almost complex manifold**. A map $F : (M,J) \to (N,J')$ 
 
 **Proposition.** An almost complex structure exists on $M$ only if $M$ is even dimensional, and then it reduces the structure group of the tangent bundle from $GL(2n,\mathbb{R})$ to $GL(n,\mathbb{C})$.
 
-**Proof.** At a point $x$ the endomorphism $J_x$ is a real linear map with $J_x^2 = -\mathrm{id}$, so its minimal polynomial divides $t^2+1$ and its eigenvalues lie among $\pm i$; the nonreal eigenvalues of a real matrix occur in conjugate pairs, so the characteristic polynomial is $(t^2+1)^n$ and the dimension is $2n$, with $\det J_x = 1$. A complex basis of $T_xM$, that is, a real basis $e_1,\ldots,e_n, Je_1,\ldots, Je_n$, gives the required local reduction, and the transition functions preserve the structure. $\square$
+**Proof.** At a point $x$ the endomorphism $J_x$ is a real linear map with $J_x^2 = -\mathrm{id}$, so its minimal polynomial divides $t^2+1$ and its eigenvalues lie among $\pm i$; the nonreal eigenvalues of a real matrix occur in conjugate pairs, so the characteristic polynomial is $(t^2+1)^n$ and the dimension is $2n$, with $\det J_x = 1$. A complex basis of $T_xM$, that is, a real basis $e_1,\ldots,e_n, Je_1,\ldots, Je_n$, gives the required local reduction, and the transition functions preserve the structure.
 
 **Definition.** The **complexified tangent bundle** is $T_{\mathbb{C}}M = TM\otimes_{\mathbb{R}}\mathbb{C}$, and $J$ extends to it $\mathbb{C}$-linearly. Its eigenvalues are $\pm i$, and the corresponding eigenbundles are
 
@@ -39,7 +39,7 @@ $$
 
 The isomorphism is $X \mapsto X - iJX \in T^{1,0}M$ with inverse $v\mapsto \mathrm{Re}\,v$, and the projection onto $T^{1,0}$ is $\frac12(\mathrm{id} - iJ)$.
 
-**Proof.** For $X \in TM$, $J(X - iJX) = JX - iJ^2X = JX + iX = i(X - iJX)$ and $J(X+iJX) = JX + iJ^2X = JX - iX = -i(X+iJX)$; since $X = \frac12[(X-iJX) + (X+iJX)]$, the two eigenbundles span $T_{\mathbb{C}}M$ and, having distinct eigenvalues, are independent. Conjugation exchanges them because $J$ is real. $\square$
+**Proof.** For $X \in TM$, $J(X - iJX) = JX - iJ^2X = JX + iX = i(X - iJX)$ and $J(X+iJX) = JX + iJ^2X = JX - iX = -i(X+iJX)$; since $X = \frac12[(X-iJX) + (X+iJX)]$, the two eigenbundles span $T_{\mathbb{C}}M$ and, having distinct eigenvalues, are independent. Conjugation exchanges them because $J$ is real.
 
 **Example.** On $\mathbb{R}^{2n}$ with coordinates $x_1,\ldots,x_n, y_1,\ldots,y_n$, put $J\partial_{x_i} = \partial_{y_i}$ and $J\partial_{y_i} = -\partial_{x_i}$. Then $J^2 = -\mathrm{id}$, and with $z_i = x_i + iy_i$ the fields $\partial_{z_i} = \frac12(\partial_{x_i} - i\partial_{y_i})$ span $T^{1,0}$ and the fields $\partial_{\bar z_i} = \frac12(\partial_{x_i}+i\partial_{y_i})$ span $T^{0,1}$. This is the **standard complex structure** on $\mathbb{C}^n$.
 
@@ -54,7 +54,7 @@ The isomorphism is $X \mapsto X - iJX \in T^{1,0}M$ with inverse $v\mapsto \math
 **Definition.** The **Nijenhuis tensor** of an almost complex structure $J$ is the assignment
 
 $$
-N_J(X, Y) = [JX, JY] - J[X, JY] - J[JX, Y] - [X, Y], \qquad X, Y \in \mathfrak{X}(M).
+N_J(X, Y) = [JX, JY] - J[X, JY] - J[JX, Y] - [X, Y], \qquad X, Y \in \mathrm{X}(M).
 $$
 
 **Proposition.** The tensor $N_J$ is well defined, antisymmetric and $C^\infty(M)$-bilinear, so it is a section of $\Lambda^2T^*M\otimes TM$; it satisfies $N_J(X, JX) = 0$ and $N_J(JX, JY) = -N_J(X,Y)$ for all $X,Y$.
@@ -70,12 +70,12 @@ J[J(fX), Y] &= fJ[JX,Y] - Y(f)\,J^2X,\\
 $$
 Since $J^2 = -\mathrm{id}$, the correction $-(JY)(f)JX$ from the first line cancels against the correction $+(JY)(f)JX$ from the second, and the correction $-Y(f)J^2X = +Y(f)X$ from the third line cancels against the term $-Y(f)X$ carried by the fourth; the terms carrying $f$ reproduce $fN_J(X,Y)$. Hence $N_J(fX,Y)=fN_J(X,Y)$, and the same computation with the roles of the slots exchanged gives $N_J(X,fY) = fN_J(X,Y)$. Therefore $N_J$ is tensorial. Finally $N_J(X,JX) = [JX, J^2X] - J[X,J^2X] - J[JX,JX] - [X,JX] = -[JX,X] + J[X,X] - 0 - [X,JX] = [X,JX] - [X,JX] = 0$, and substituting $JX$ and $JY$ in the definition gives
 $$
-N_J(JX,JY) = [J^2X,J^2Y] - J[JX,J^2Y] - J[J^2X,JY] - [JX,JY] = [X,Y] + J[JX,Y] + J[X,JY] - [JX,JY] = -N_J(X,Y). \ \square
+N_J(JX,JY) = [J^2X,J^2Y] - J[JX,J^2Y] - J[J^2X,JY] - [JX,JY] = [X,Y] + J[JX,Y] + J[X,JY] - [JX,JY] = -N_J(X,Y).
 $$
 
 **Theorem (Newlander–Nijenhuis).** An almost complex structure $J$ on a smooth manifold $M$ is integrable, that is, $M$ admits an atlas of charts whose transition functions are holomorphic and whose induced almost complex structures are $J$, if and only if $N_J = 0$.
 
-**Proof sketch.** If holomorphic coordinates exist, then in them $J$ is the standard constant structure and $N_J=0$ by a direct computation: for constant $J$ one has $[JX,JY] = J[X,JY] = J[JX,Y] = J^2[X,Y] = -[X,Y]$ and the four terms cancel. Conversely, if $N_J=0$ then the distribution $T^{0,1}$ is closed under the Lie bracket, hence integrable by the Frobenius theorem of *Differential Forms and Stokes' Theorem*, and a full set of complex-valued functions $z^i$ annihilated by $T^{0,1}$ provides local holomorphic coordinates; the Frobenius theorem applied to the real distribution underlying $T^{0,1}$ produces the foliation whose leaves are the required complex coordinate domains. $\square$
+**Proof sketch.** If holomorphic coordinates exist, then in them $J$ is the standard constant structure and $N_J=0$ by a direct computation: for constant $J$ one has $[JX,JY] = J[X,JY] = J[JX,Y] = J^2[X,Y] = -[X,Y]$ and the four terms cancel. Conversely, if $N_J=0$ then the distribution $T^{0,1}$ is closed under the Lie bracket, hence integrable by the Frobenius theorem of *Differential Forms and Stokes' Theorem*, and a full set of complex-valued functions $z^i$ annihilated by $T^{0,1}$ provides local holomorphic coordinates; the Frobenius theorem applied to the real distribution underlying $T^{0,1}$ produces the foliation whose leaves are the required complex coordinate domains.
 
 **Corollary.** On a manifold of real dimension two, every almost complex structure is integrable. Indeed $N_J$ is antisymmetric and $N_J(X,JX) = 0$, while at each point the pair $\{X, JX\}$ spans the tangent space; so $N_J = 0$ identically. Consequently every oriented surface is a Riemann surface, and a complex curve is the same thing as an oriented conformal surface.
 
@@ -129,7 +129,7 @@ $$
 
 **Proposition.** On a complex manifold, $d = \partial + \bar\partial$, $\partial^2 = \bar\partial^2 = 0$ and $\partial\bar\partial + \bar\partial\partial = 0$. A function is holomorphic exactly when $\bar\partial f = 0$, and the holomorphic $1$-forms are the local sections of $(T^{1,0})^*$ that are $\bar\partial$-closed.
 
-**Proof.** The type decomposition of $d$ follows from the integrability: the $(0,2)$-component of $d$ on functions is measured by $N_J$, and the general statement follows from writing $d$ in holomorphic coordinates. The relations follow from $d^2=0$ and the bidegree. $\square$
+**Proof.** The type decomposition of $d$ follows from the integrability: the $(0,2)$-component of $d$ on functions is measured by $N_J$, and the general statement follows from writing $d$ in holomorphic coordinates. The relations follow from $d^2=0$ and the bidegree.
 
 **Remark.** The Dolbeault complex is a complex of sections of vector bundles, and its cohomology can be computed by the analysis of the $\bar\partial$-operator: on a compact complex manifold the cohomology spaces are finite dimensional and are represented by harmonic forms. That statement is the Hodge theory of the $\bar\partial$-operator, and it requires the theory of elliptic operators, Sobolev spaces and completions, which belong to Part III, where the measure and the limit are available. What is used here is only the algebraic complex and the identification of its degree zero with the holomorphic functions. The topological interpretation of the Dolbeault groups via the de Rham complex and the relation $H^k_{dR}(M,\mathbb{C}) = \bigoplus_{p+q=k}H^{p,q}_{\bar\partial}(M)$ for a compact Kähler manifold is treated in *Kähler Geometry*, being written in parallel.
 
@@ -138,7 +138,7 @@ $$
 **Definition.** Let $(M,J)$ be an almost complex manifold. A **Hermitian metric** on $(M,J)$ is a Riemannian metric $g$ with
 
 $$
-g(JX, JY) = g(X, Y) \qquad \text{for all } X, Y \in \mathfrak{X}(M).
+g(JX, JY) = g(X, Y) \qquad \text{for all } X, Y \in \mathrm{X}(M).
 $$
 
 An **almost Hermitian manifold** is a triple $(M, J, g)$ of a manifold, an almost complex structure and a Hermitian metric; when $J$ is integrable the triple is a **Hermitian manifold**. The **fundamental form** or **associated form** of the triple is
@@ -161,7 +161,7 @@ $$
 h(v,v) = g_{\mathbb{C}}(X-iJX, X+iJX) = g(X,X) + i\,g(X,JX) - i\,g(JX,X) + g(JX,JX) = 2\,g(X,X) > 0
 $$
 
-for $X \neq 0$: the two middle terms cancel, since $g(X,JX) = g(JX,X)$ by symmetry of $g$, and $g(JX,JX) = g(X,X)$ supplies the second copy of $g(X,X)$. $\square$
+for $X \neq 0$: the two middle terms cancel, since $g(X,JX) = g(JX,X)$ by symmetry of $g$, and $g(JX,JX) = g(X,X)$ supplies the second copy of $g(X,X)$.
 
 **Proposition.** Every almost complex manifold admits a Hermitian metric: if $g_0$ is any Riemannian metric, then
 
@@ -171,7 +171,7 @@ $$
 
 is Hermitian, and the assignment is a projection onto the Hermitian metrics among all metrics.
 
-**Proof.** Compute $g(JX,JY) = \frac12(g_0(JX,JY) + g_0(J^2X, J^2Y)) = \frac12(g_0(JX,JY)+g_0(X,Y)) = g(X,Y)$, so $g$ is invariant; it is symmetric because $g_0$ is, and positive definite because it is half the sum of two positive definite forms. $\square$
+**Proof.** Compute $g(JX,JY) = \frac12(g_0(JX,JY) + g_0(J^2X, J^2Y)) = \frac12(g_0(JX,JY)+g_0(X,Y)) = g(X,Y)$, so $g$ is invariant; it is symmetric because $g_0$ is, and positive definite because it is half the sum of two positive definite forms.
 
 **Remark.** A Hermitian metric is exactly a Riemannian metric for which the structure group of the frame bundle reduces further, from $GL(n,\mathbb{C})$ to the unitary group $U(n)$; the reduction is that of *Fibre Bundles, Connections and Curvature*, and the associated form $\Omega$ is the $(1,1)$-form whose nondegeneracy and closedness govern the Kähler condition. The metric $g$ and the form $\Omega$ determine one another given $J$; the notation $g(JX,Y)$ for the fundamental form is the one fixed for this category, and it is the form that is written $\Omega$ throughout, the Kähler form of the companion article *Kähler Geometry*, being written in parallel.
 
@@ -183,7 +183,7 @@ $$
 
 with equality if and only if $V$ is a complex subspace, that is $JV = V$.
 
-**Proof.** For $k=1$ and an orthonormal basis $u, v$ of $V$, $\Omega(u,v) = g(Ju,v)$ and Cauchy–Schwarz gives $|g(Ju,v)| \leq \|Ju\|\,\|v\| = 1$, with equality exactly when $v = Ju$, that is, when $V$ is complex. For general $k$, choose an orthonormal basis adapted to the complex part of $V$: the bilinear form $\Omega^{\wedge k}$ decomposes as a sum of $k$-fold products of the $k=1$ case, and the Cauchy–Schwarz inequality applies to each factor. $\square$
+**Proof.** For $k=1$ and an orthonormal basis $u, v$ of $V$, $\Omega(u,v) = g(Ju,v)$ and Cauchy–Schwarz gives $|g(Ju,v)| \leq \|Ju\|\,\|v\| = 1$, with equality exactly when $v = Ju$, that is, when $V$ is complex. For general $k$, choose an orthonormal basis adapted to the complex part of $V$: the bilinear form $\Omega^{\wedge k}$ decomposes as a sum of $k$-fold products of the $k=1$ case, and the Cauchy–Schwarz inequality applies to each factor.
 
 **Remark.** The Wirtinger inequality is the pointwise statement that complex submanifolds about which it is an equality are **calibrated** by $\Omega^k/k!$: their volume equals the integral of the form. This is the geometric content of the Kähler form and the reason complex submanifolds of a Kähler manifold are volume-minimising in their homology class; the details belong to *Kähler Geometry*, being written in parallel, and to the calibration theory cited there.
 
@@ -205,7 +205,7 @@ $$
 \theta^k_{\;j} = \sum_l g^{k\bar l}\,\partial g_{j\bar l}, \qquad \text{and} \qquad \bar\partial \text{-part of } \theta^k_{\;j} = 0,
 $$
 
-that is, the connection $1$-form is $\theta = h^{-1}\partial h$ in a holomorphic frame. Uniqueness is the uniqueness of the solution of the resulting linear system. $\square$
+that is, the connection $1$-form is $\theta = h^{-1}\partial h$ in a holomorphic frame. Uniqueness is the uniqueness of the solution of the resulting linear system.
 
 **Proposition.** The Chern connection is the unique connection on the holomorphic tangent bundle $\nabla : \Gamma(T^{1,0})\to\Omega^1\otimes\Gamma(T^{1,0})$ that is **compatible with the Hermitian metric** in the sense $dh(u,v) = h(\nabla u, v) + h(u,\nabla v)$ and whose $(0,1)$-part is the Dolbeault operator $\bar\partial$; its curvature has **type $(1,1)$**, that is, the curvature $2$-form takes values in the $(1,1)$-forms. In a holomorphic frame the connection matrix is $\theta = h^{-1}\partial h$ and the curvature matrix is
 
@@ -215,7 +215,7 @@ $$
 
 which is a matrix of $(1,1)$-forms.
 
-**Proof.** In a holomorphic frame the entries of $h$ are smooth functions satisfying $h_{j\bar l} = \overline{h_{l\bar j}}$; the metric-compatibility condition $dh = {}^t\bar\theta\, h + h\,\theta$ forces the antiholomorphic part of $\theta$ to vanish, and the $(1,0)$-part is $h^{-1}\partial h$. The curvature is $\Theta = d\theta + \theta\wedge\theta$ for the convention $\nabla = d + \theta$, and since $\partial(h^{-1}) = -h^{-1}\partial h\,h^{-1}$ one has $\partial\theta = -\,h^{-1}\partial h\,h^{-1}\wedge\partial h = -\theta\wedge\theta$, so the $(2,0)$-terms cancel and $\Theta = \bar\partial\theta$. $\square$
+**Proof.** In a holomorphic frame the entries of $h$ are smooth functions satisfying $h_{j\bar l} = \overline{h_{l\bar j}}$; the metric-compatibility condition $dh = {}^t\bar\theta\, h + h\,\theta$ forces the antiholomorphic part of $\theta$ to vanish, and the $(1,0)$-part is $h^{-1}\partial h$. The curvature is $\Theta = d\theta + \theta\wedge\theta$ for the convention $\nabla = d + \theta$, and since $\partial(h^{-1}) = -h^{-1}\partial h\,h^{-1}$ one has $\partial\theta = -\,h^{-1}\partial h\,h^{-1}\wedge\partial h = -\theta\wedge\theta$, so the $(2,0)$-terms cancel and $\Theta = \bar\partial\theta$.
 
 **Remark.** The Chern classes of a Hermitian holomorphic vector bundle are the Chern–Weil classes of $\frac{i}{2\pi}\Theta$, and they are independent of the metric; that construction and the splitting principle belong to *Characteristic Classes*, earlier in this Part. In the Kähler case the Chern connection coincides with the Levi-Civita connection of $g$: the Levi-Civita connection preserves $J$ exactly when $\Omega$ is closed, and then it satisfies (a), (b) and (c) and is unique. The condition $\nabla J = 0$ for the Levi-Civita connection is therefore equivalent to the Kähler condition $d\Omega = 0$, and this is the bridge to *Kähler Geometry*.
 
@@ -235,7 +235,7 @@ which is a matrix of $(1,1)$-forms.
 
 **Example (the six-sphere).** On $S^6$ with the octonionic almost complex structure the round metric is nearly Kähler: the tensor $\nabla J$ is antisymmetric and nonzero, so $\nabla J \neq 0$ and the structure is not Kähler; its fundamental form satisfies $d\Omega \neq 0$. Since $S^6$ has no complex structure as far as is known, this is the most important example of a nearly Kähler structure that is not Hermitian.
 
-**Example (homogeneous Hermitian manifolds).** If $G$ is a Lie group and $H$ a closed subgroup with a $G$-invariant almost complex structure on $G/H$ and a $G$-invariant metric, the reduction to a Hermitian structure is a question about the isotropy representation and the Lie algebra of $\mathfrak{g}$; a flag manifold $G/T$ of a compact Lie group carries an invariant complex structure, and every invariant metric is Hermitian for it. The Lie-theoretic input is that of *Lie Groups* and its companions; the classical groups supply the projective spaces, the Grassmannians and the quadrics.
+**Example (homogeneous Hermitian manifolds).** If $G$ is a Lie group and $H$ a closed subgroup with a $G$-invariant almost complex structure on $G/H$ and a $G$-invariant metric, the reduction to a Hermitian structure is a question about the isotropy representation and the Lie algebra of $\mathrm{G}$; a flag manifold $G/T$ of a compact Lie group carries an invariant complex structure, and every invariant metric is Hermitian for it. The Lie-theoretic input is that of *Lie Groups* and its companions; the classical groups supply the projective spaces, the Grassmannians and the quadrics.
 
 ## Summary
 
@@ -250,7 +250,7 @@ Every Hermitian manifold carries a unique Chern connection, the one connection w
 | Symbol | Meaning |
 |---|---|
 | $M$, $\dim M = n$ | Smooth manifold; $T_xM$, $TM$, $T^*M$ its tangent and cotangent objects |
-| $\mathfrak{X}(M)$, $\Omega^k(M)$ | Smooth vector fields and $k$-forms |
+| $\mathrm{X}(M)$, $\Omega^k(M)$ | Smooth vector fields and $k$-forms |
 | $J$, $J^2 = -\mathrm{id}$ | Almost complex structure |
 | $T^{1,0}$, $T^{0,1}$ | Eigenbundles of $J$ on $T_{\mathbb{C}}M = TM\otimes_{\mathbb{R}}\mathbb{C}$ with eigenvalues $i$, $-i$ |
 | $N_J(X,Y)$ | Nijenhuis tensor; $N_J=0$ is the integrability condition (Newlander–Nijenhuis) |

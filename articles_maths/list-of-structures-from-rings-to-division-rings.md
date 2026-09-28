@@ -50,7 +50,7 @@ The witness for the first step is recorded also in *List of Non-Commutative Ring
 | a number field $K$ | field | the top rung; $\mathcal{O}_K$ is its domain of integers | *Algebraic Number Theory* |
 | $\mathbb{F}_p$, $\mathbb{F}_q$ | field | finite, hence commutative by Wedderburn's little theorem | *Finite Fields* |
 
-The biquaternions $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ and the split-biquaternions $\mathbb{H}_{\mathbb{D}} = \mathbb{D} \otimes_{\mathbb{R}} \mathbb{H}$ are the two eight-dimensional relatives of $\mathbb{H}$ that lie at the bottom rung: both acquire zero divisors, and neither is a domain. The biquaternions are simple, so they have no nontrivial two-sided ideals, but they are not division rings; this is the first point at which the loss of the norm form's definiteness is visible in the ladder.
+The biquaternions $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ and the split-biquaternions $\mathbb{H}_{\mathbb{D}} = \mathbb{D} \otimes_{\mathbb{R}} \mathbb{H}$ are the two eight-dimensional relatives of $\mathbb{H}$ that lie at the bottom rung: both acquire zero divisors, and neither is a domain. The biquaternions are simple, so they have no nontrivial two-sided ideals, but they are not division rings; this is the first point at which the loss of the norm's definiteness is visible in the ladder.
 
 ## Why Commutativity Is a Separate Branch
 

@@ -4,7 +4,7 @@
 
 This article is about the **anti-quaternion subspace** $i\mathbb{H}_{\mathbb{B}}$, the anti-fixed space of complex conjugation.
 
-$i\mathbb{H}_{\mathbb{B}}$ is the image of the quaternion algebra multiplied by the scalar imaginary. Its elements are the products $i\tilde{Q}$ with $\tilde{Q}$ a real quaternion, so every coefficient is imaginary and no coefficient is real. It is **not** a subalgebra, and its norm form is **negative definite**, negative in every direction. Multiplication of its elements does not close inside it: the product of two of its elements is an element with real coefficients.
+$i\mathbb{H}_{\mathbb{B}}$ is the image of the quaternion algebra multiplied by the scalar imaginary. Its elements are the products $i\tilde{Q}$ with $\tilde{Q}$ a real quaternion, so every coefficient is imaginary and no coefficient is real. It is **not** a subalgebra, and its biquaternion norm is **negative definite**, negative in every direction. Multiplication of its elements does not close inside it: the product of two of its elements is an element with real coefficients.
 
 The article describes the subspace on its own terms: its basis and parameters, its algebraic behaviour under multiplication and commutation, the reading that gives it its name, its Lie-algebraic structure, and the boost generators and complex-time axis it contains.
 
@@ -92,7 +92,7 @@ $$
 
 because $i^2 = -e_0$ is central and $\mathbb{H}_{\mathbb{B}}$ is a subalgebra. The subspace is therefore not closed under multiplication: it behaves like the imaginary part of a complex structure, whose products return to the real part.
 
-**Negative definite norm form.** The norm form restricted to the subspace is
+**Negative definite biquaternion norm.** The biquaternion norm restricted to the subspace is
 
 $$
 N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = (iq'_0)^2 + (iq'_1)^2 + (iq'_2)^2 + (iq'_3)^2 = -(q'^2_0 + q'^2_1 + q'^2_2 + q'^2_3),
@@ -136,7 +136,7 @@ $$
 
 which is again real. So the anti-quaternion subspace is closed neither under products nor under commutators. Its bracket structure nevertheless closes on the whole algebra: the commutators of the imaginary vector units reproduce the rotation algebra, $[ie_1, ie_2] = -2e_3$ and cyclically.
 
-**The Lorentz algebra.** The rotation generators of $\mathfrak{so}(1,3)$ are the pure vector units $e_1, e_2, e_3$; the **boost generators** are the imaginary vector units $i e_1, i e_2, i e_3$, which are exactly the three vector directions of $i\mathbb{H}_{\mathbb{B}}$. Their commutators reproduce the algebra, $[ie_1, ie_2] = -2e_3$ and cyclically, mixing the two families as the Lorentz algebra requires.
+**The Lorentz algebra.** The rotation generators of $\mathrm{SO}(1,3)$ are the pure vector units $e_1, e_2, e_3$; the **boost generators** are the imaginary vector units $i e_1, i e_2, i e_3$, which are exactly the three vector directions of $i\mathbb{H}_{\mathbb{B}}$. Their commutators reproduce the algebra, $[ie_1, ie_2] = -2e_3$ and cyclically, mixing the two families as the Lorentz algebra requires.
 
 **Generators versus transformations.** It is worth distinguishing the generators from the transformations they generate, because the distinction is exactly the statement that $i\mathbb{H}_{\mathbb{B}}$ is not closed under exponentiation. Exponentiating the generator $i\psi\,\hat{\mathbf{u}}\cdot\mathbf{e}/2$ gives
 
@@ -144,7 +144,7 @@ $$
 \exp\Big(\frac{i\psi}{2}\hat{\mathbf{u}}\cdot\mathbf{e}\Big) = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\,\hat{\mathbf{u}}\cdot\mathbf{e},
 $$
 
-a **finite boost**, whose scalar part is real. A finite boost therefore has a real scalar coefficient and does not lie in $i\mathbb{H}_{\mathbb{B}}$: the subspace contains the infinitesimal generators of the boosts, and the boosts themselves are obtained by leaving it. The rapidity $\psi$ is the parameter along the boost direction, and the hyperbolic functions appear instead of the trigonometric ones because the corresponding directions of the norm form are negative.
+a **finite boost**, whose scalar part is real. A finite boost therefore has a real scalar coefficient and does not lie in $i\mathbb{H}_{\mathbb{B}}$: the subspace contains the infinitesimal generators of the boosts, and the boosts themselves are obtained by leaving it. The rapidity $\psi$ is the parameter along the boost direction, and the hyperbolic functions appear instead of the trigonometric ones because the corresponding directions of the biquaternion norm are negative.
 
 ## Examples
 
@@ -166,7 +166,7 @@ The two families together give the reading of $i\mathbb{H}_{\mathbb{B}}$ as the 
 
 The anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$ is the anti-fixed-point set of complex conjugation, a four-dimensional real subspace of $\mathbb{B}$ spanned by $ie_0, ie_1, ie_2, ie_3$ with real coefficients, all of whose coefficients in the quaternion basis are purely imaginary. It is the image of the quaternion subspace under multiplication by the central scalar imaginary, and it shares with it only the origin.
 
-It is neither a subalgebra nor a Lie subalgebra: the product of two of its elements, and the commutator of two of its elements, both have real coefficients and so lie outside it. Its norm form is negative definite of signature $(0,4)$, so it contains no zero divisors and every nonzero element of it is invertible, even though it is not closed under multiplication.
+It is neither a subalgebra nor a Lie subalgebra: the product of two of its elements, and the commutator of two of its elements, both have real coefficients and so lie outside it. Its biquaternion norm is negative definite of signature $(0,4)$, so it contains no zero divisors and every nonzero element of it is invertible, even though it is not closed under multiplication.
 
 Physically it is the home of the **boost generators** $ie_1, ie_2, ie_3$ and of the complex-time axis $ie_0$. The generators lie in the subspace; the finite boosts do not, since exponentiation produces a real scalar part.
 
@@ -180,7 +180,7 @@ Physically it is the home of the **boost generators** $ie_1, ie_2, ie_3$ and of 
 | $ict\,e_0 + ix'\,e_1 + iy'\,e_2 + iz'\,e_3$ | The same element in physical coordinates; $q'_0 = ct$ and $(q'_1, q'_2, q'_3) = (x', y', z')$ |
 | $(ie_k)^2 = +e_0$, $(ie_1)(ie_2) = -e_3$ | Products leave the subspace: $i\mathbb{H}_{\mathbb{B}} \cdot i\mathbb{H}_{\mathbb{B}} \subseteq \mathbb{H}_{\mathbb{B}}$ |
 | $[ie_1, ie_2] = -2e_3$ | Commutators also leave the subspace |
-| $N(\tilde{Q}) = -(q'^2_0 + q'^2_1 + q'^2_2 + q'^2_3)$ | Norm form; negative definite, signature $(0,4)$ |
+| $N(\tilde{Q}) = -(q'^2_0 + q'^2_1 + q'^2_2 + q'^2_3)$ | Biquaternion norm; negative definite, signature $(0,4)$ |
 | $\tilde{Q}^{-1} = \bar{\tilde{Q}}/N(\tilde{Q})$ | Inverse; exists for every nonzero element |
 | $ie_1, ie_2, ie_3$ | Boost generators of the Lorentz algebra |
 | $ie_0$ | Complex-time axis of the $ict$ convention |

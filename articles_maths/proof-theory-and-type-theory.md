@@ -46,7 +46,7 @@ with the side condition for $\vee E$ that the assumptions of the two minor premi
 
 **Proposition (deduction theorem).** $T \cup \{\varphi\} \vdash \psi$ if and only if $T \vdash \varphi \to \psi$.
 
-**Proof.** From $T \vdash \varphi \to \psi$ and $T \cup \{\varphi\} \vdash \varphi$ one concludes $T \cup \{\varphi\} \vdash \psi$ by $\to E$. Conversely, given a derivation of $\psi$ from $T \cup \{\varphi\}$, add the assumption $\varphi$ at the leaves discharging to $\varphi$ and apply $\to I$ at the root. $\square$
+**Proof.** From $T \vdash \varphi \to \psi$ and $T \cup \{\varphi\} \vdash \varphi$ one concludes $T \cup \{\varphi\} \vdash \psi$ by $\to E$. Conversely, given a derivation of $\psi$ from $T \cup \{\varphi\}$, add the assumption $\varphi$ at the leaves discharging to $\varphi$ and apply $\to I$ at the root.
 
 **Definition (sequent notation).** The derivation tree is more compactly written as a **sequent** $\Gamma \vdash \varphi$, where $\Gamma$ is the multiset of undischarged assumptions and $\varphi$ the conclusion. The rules are then displayed with sequents as premises and conclusion. The derivation of the previous proposition is exactly the passage between the two notations.
 
@@ -118,7 +118,7 @@ The final step is contraction on the right, which is available in LK; in LJ the 
 
 **Theorem (Gentzen's Hauptsatz; cut elimination).** Every LK derivation of a sequent has a cut-free derivation of the same sequent. The same holds for LJ.
 
-**Proof sketch.** One assigns to each derivation a **cut rank**, the maximum size of a cut formula, and a measure of the number of cuts of that rank, and shows that a derivation with a cut can be transformed into one with a smaller measure. The essential case is a cut whose cut formula is introduced by the last rules on both sides; it is replaced by two cuts on formulas of smaller size, using the rules that introduced the connectives. The transformation is the **reduction** of the cut, and iterating it terminates by induction on the cut rank, with the number of cuts of maximal rank decreasing at each step. $\square$
+**Proof sketch.** One assigns to each derivation a **cut rank**, the maximum size of a cut formula, and a measure of the number of cuts of that rank, and shows that a derivation with a cut can be transformed into one with a smaller measure. The essential case is a cut whose cut formula is introduced by the last rules on both sides; it is replaced by two cuts on formulas of smaller size, using the rules that introduced the connectives. The transformation is the **reduction** of the cut, and iterating it terminates by induction on the cut rank, with the number of cuts of maximal rank decreasing at each step.
 
 **Corollary (subformula property).** Every theorem of LK or LJ has a derivation in which every formula is a subformula of the theorem.
 
@@ -126,7 +126,7 @@ The final step is contraction on the right, which is available in LK; in LJ the 
 
 **Corollary (disjunction and existence properties of LJ).** If $\vdash \varphi \vee \psi$ is derivable in LJ, then $\vdash \varphi$ or $\vdash \psi$; if $\vdash \exists x\,\varphi(x)$ is derivable, then $\vdash \varphi(t)$ is derivable for some term $t$.
 
-**Proof sketch.** In a cut-free derivation of $\vdash \varphi \vee \psi$, the last rule must be the introduction of the disjunction, since no other rule can introduce a disjunction on the right without a cut; its premise is a derivation of one of the disjuncts. For the existential statement, the last rule must be $\exists R$, and its premise supplies a witness term. $\square$
+**Proof sketch.** In a cut-free derivation of $\vdash \varphi \vee \psi$, the last rule must be the introduction of the disjunction, since no other rule can introduce a disjunction on the right without a cut; its premise is a derivation of one of the disjuncts. For the existential statement, the last rule must be $\exists R$, and its premise supplies a witness term.
 
 Cut elimination is the central theorem of proof theory and the model of every later result of the same shape: it converts a derivation into one whose structure follows the structure of its conclusion, and the byproducts — the subformula property, consistency, the disjunction property — are all immediate from that structure.
 
@@ -140,7 +140,7 @@ Cut elimination is the central theorem of proof theory and the model of every la
 
 **Theorem (normalisation).** Every derivation in NJ reduces to a **normal** derivation, in which no detour occurs. Consequently every derivation in NJ reduces to one with the **subformula property**: every formula in it is a subformula of the conclusion or of an undischarged assumption.
 
-**Proof sketch.** Assign to each formula its **degree** and to each derivation the pair (highest degree of a detour, number of detours of that degree). The reduction of a detour of maximal degree produces detours of strictly smaller degree or fewer detours of the same degree, so the pair decreases in the lexicographic order on natural numbers, and the process terminates. The result is a normal derivation. In a normal derivation, an introduction rule cannot be followed by an elimination of the same connective, which forces the derivation to have the **path property**: every formula on a path from a leaf to the root is a subformula of the leaf or of the conclusion, giving the subformula property. $\square$
+**Proof sketch.** Assign to each formula its **degree** and to each derivation the pair (highest degree of a detour, number of detours of that degree). The reduction of a detour of maximal degree produces detours of strictly smaller degree or fewer detours of the same degree, so the pair decreases in the lexicographic order on natural numbers, and the process terminates. The result is a normal derivation. In a normal derivation, an introduction rule cannot be followed by an elimination of the same connective, which forces the derivation to have the **path property**: every formula on a path from a leaf to the root is a subformula of the leaf or of the conclusion, giving the subformula property.
 
 **Corollary.** NJ is consistent: there is no derivation of $\bot$ from no assumptions. Indeed, $\bot$ has no introduction rule, so a normal derivation of $\bot$ must end in an elimination rule; its major premise is then a formula which, by normality, is the conclusion of an introduction rule, and the two form a detour, unless the major premise is an undischarged assumption — and there is none. Hence no derivation of $\bot$ from no assumptions exists.
 
@@ -150,7 +150,7 @@ Cut elimination is the central theorem of proof theory and the model of every la
 
 **Theorem (strong normalisation).** Every term of the simply typed lambda calculus of the next section is strongly normalising; equivalently, every derivation of intuitionistic propositional logic reduces to a normal form in finitely many steps, whatever the order of reduction.
 
-**Proof sketch.** One assigns to each type a **reducibility candidate**, a set of strongly normalising terms closed under reduction and under application, and proves by induction on the type that every term of that type belongs to the candidate. The argument, due to Tait, is the prototype of the **computability** arguments used throughout proof theory and type theory. $\square$
+**Proof sketch.** One assigns to each type a **reducibility candidate**, a set of strongly normalising terms closed under reduction and under application, and proves by induction on the type that every term of that type belongs to the candidate. The argument, due to Tait, is the prototype of the **computability** arguments used throughout proof theory and type theory.
 
 Strong normalisation is strictly stronger than the normalisation theorem for derivations; it says that no clever choice of reduction order can cause a loop, which is what is needed to run a typed program with the guarantee that it halts. The untyped lambda calculus below fails it.
 
@@ -196,7 +196,7 @@ satisfies $Y\,f =_\beta f\,(Y\,f)$ for every term $f$, since both sides reduce t
 
 **Theorem (Church; Turing).** The untyped lambda calculus is computationally universal: every recursive function is represented by a term. Moreover the problem of deciding whether a given term has a normal form, and the problem of deciding whether two terms are $\beta$-convertible, are undecidable.
 
-**Proof sketch.** The Church numerals and the combinators for primitive recursion represent the initial recursive functions of *Formal Logic and Computability*, and minimisation is represented by a search whose termination is tested by a fixed point; the converse representation of terms by natural numbers gives the undecidability by the halting problem. The fixed-point combinator $Y$ is the mechanism that makes the representation of recursion possible. $\square$
+**Proof sketch.** The Church numerals and the combinators for primitive recursion represent the initial recursive functions of *Formal Logic and Computability*, and minimisation is represented by a search whose termination is tested by a fixed point; the converse representation of terms by natural numbers gives the undecidability by the halting problem. The fixed-point combinator $Y$ is the mechanism that makes the representation of recursion possible.
 
 ## The Curry–Howard Correspondence
 
@@ -227,7 +227,7 @@ $$
 
 and $\beta$-reduction of terms corresponds to the reduction of detours in the derivation, while $\eta$-conversion corresponds to the two-way equivalence of a detour with the derivation obtained by removing it.
 
-**Proof.** Structural induction on derivations and on terms: each rule of NJ corresponds to a typing rule, and each typing rule to a rule of NJ, with the variables of the context corresponding to undischarged assumptions. The reduction of a detour $(\to I)$ followed by $(\to E)$ is exactly the substitution $(\lambda x.M)N \to_\beta M[x:=N]$. $\square$
+**Proof.** Structural induction on derivations and on terms: each rule of NJ corresponds to a typing rule, and each typing rule to a rule of NJ, with the variables of the context corresponding to undischarged assumptions. The reduction of a detour $(\to I)$ followed by $(\to E)$ is exactly the substitution $(\lambda x.M)N \to_\beta M[x:=N]$.
 
 **Corollary.** Normalisation of NJ derivations is equivalent to weak normalisation of the simply typed lambda calculus, and the disjunction and existence properties of NJ are the **canonicity** properties of the corresponding type theory.
 

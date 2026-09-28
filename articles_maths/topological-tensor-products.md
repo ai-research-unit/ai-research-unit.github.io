@@ -25,7 +25,7 @@ is continuous. The **projective tensor product** $E \widehat{\otimes}_\pi F$ is 
 
 **Theorem (universal property).** Let $E$, $F$, $G$ be locally convex spaces and let $B : E \times F \to G$ be a continuous bilinear map. Then there is a unique continuous linear map $\widetilde{B} : E \widehat{\otimes}_\pi F \to G$ with $B(x,y) = \widetilde{B}(x \otimes y)$; the correspondence $B \leftrightarrow \widetilde{B}$ is a linear bijection between the continuous bilinear maps and the continuous linear maps.
 
-**Proof.** The projective topology is by definition the finest making $\otimes$ continuous, so $B$ factors through $\otimes$ as a linear map $\widetilde{B}$ on the algebraic tensor product, and the definition of the projective topology as the finest is precisely the statement that $\widetilde{B}$ is continuous; the extension to the completion is the universal property of completion. Uniqueness is the density of $E \otimes F$. $\square$
+**Proof.** The projective topology is by definition the finest making $\otimes$ continuous, so $B$ factors through $\otimes$ as a linear map $\widetilde{B}$ on the algebraic tensor product, and the definition of the projective topology as the finest is precisely the statement that $\widetilde{B}$ is continuous; the extension to the completion is the universal property of completion. Uniqueness is the density of $E \otimes F$.
 
 **Proposition (the projective norm for normed spaces).** Let $E$, $F$ be normed spaces and let $u \in E\otimes F$. Then
 
@@ -35,7 +35,7 @@ $$
 
 the infimum over all finite representations of $u$; this is a norm on $E \otimes F$ generating the projective topology, and its completion is $E\widehat{\otimes}_\pi F$.
 
-**Proof.** The formula defines a seminorm by the standard homogeneity and subadditivity computation, and it is the gauge of the convex balanced hull of $\{x \otimes y : \lVert x\rVert \leq 1, \lVert y\rVert \leq 1\}$; it is a norm because $\lVert x\otimes y\rVert_\pi = \lVert x\rVert\lVert y\rVert$ for elementary tensors and the norm is non-degenerate on the algebraic tensor product. The topology it generates is the projective topology by the universal property, since it is the finest norm making $\otimes$ a contraction. $\square$
+**Proof.** The formula defines a seminorm by the standard homogeneity and subadditivity computation, and it is the gauge of the convex balanced hull of $\{x \otimes y : \lVert x\rVert \leq 1, \lVert y\rVert \leq 1\}$; it is a norm because $\lVert x\otimes y\rVert_\pi = \lVert x\rVert\lVert y\rVert$ for elementary tensors and the norm is non-degenerate on the algebraic tensor product. The topology it generates is the projective topology by the universal property, since it is the finest norm making $\otimes$ a contraction.
 
 **Example (sequence identifications).** The projective tensor product of $\ell^1$ with a Banach space $E$ is the space of summable sequences in $E$:
 
@@ -63,7 +63,7 @@ $$
 
 and this is a norm on $E\otimes F$ generating the injective topology; it satisfies $\lVert u\rVert_\varepsilon \leq \lVert u\rVert_\pi$ for every $u$.
 
-**Proof.** The displayed supremum is finite and defines a norm by the description of $\mathcal{B}(E'_1\times F'_1)$ as a space of bounded functions; the inequality $\lVert\cdot\rVert_\varepsilon \leq \lVert\cdot\rVert_\pi$ follows by evaluating the representation $u = \sum_k x_k \otimes y_k$ on $\xi \otimes \eta$ and applying the triangle inequality. $\square$
+**Proof.** The displayed supremum is finite and defines a norm by the description of $\mathcal{B}(E'_1\times F'_1)$ as a space of bounded functions; the inequality $\lVert\cdot\rVert_\varepsilon \leq \lVert\cdot\rVert_\pi$ follows by evaluating the representation $u = \sum_k x_k \otimes y_k$ on $\xi \otimes \eta$ and applying the triangle inequality.
 
 **Example (the injective identifications).** For compact Hausdorff spaces $X$, $Y$ one has
 
@@ -81,7 +81,7 @@ $$
 
 which is injective when $E$ and $F$ are Hausdorff, and it is a topological isomorphism for all $F$ if and only if $E$ is nuclear.
 
-**Proof.** The continuity is the inequality $\lVert\cdot\rVert_\varepsilon \leq \lVert\cdot\rVert_\pi$ of the preceding proposition in the normed case, and the general case follows by reducing to the seminorm quotients. Injectivity is the injectivity of the canonical map into the space of bilinear forms on the dual, using the Hahn–Banach theorem. The final statement is Grothendieck's characterisation of nuclearity, which was stated and used in *Nuclear Spaces*. $\square$
+**Proof.** The continuity is the inequality $\lVert\cdot\rVert_\varepsilon \leq \lVert\cdot\rVert_\pi$ of the preceding proposition in the normed case, and the general case follows by reducing to the seminorm quotients. Injectivity is the injectivity of the canonical map into the space of bilinear forms on the dual, using the Hahn–Banach theorem. The final statement is Grothendieck's characterisation of nuclearity, which was stated and used in *Nuclear Spaces*.
 
 ---
 
@@ -119,7 +119,7 @@ $$
 
 hold, where $S_2(H)$ is the space of Hilbert–Schmidt operators on $H$; the injective completion $H\widehat{\otimes}_\varepsilon H$ is the space of compact operators $S_\infty(H)$, and the projective completion $H\widehat{\otimes}_\pi H$ is the space of trace-class operators $S_1(H)$.
 
-**Proof.** The positivity of the inner product is checked on finite tensor combinations by writing them as matrices in a basis and using that the resulting Gram matrix is positive semidefinite; the orthonormal basis statement is the standard separability computation, and the identifications of the completions are Grothendieck's computations for Hilbert spaces, in which the nuclear and Hilbert–Schmidt norms are compared through the singular values. The operator-theoretic development of the trace class and the Hilbert–Schmidt class belongs to *Analysis on Linear Spaces* in Part III. $\square$
+**Proof.** The positivity of the inner product is checked on finite tensor combinations by writing them as matrices in a basis and using that the resulting Gram matrix is positive semidefinite; the orthonormal basis statement is the standard separability computation, and the identifications of the completions are Grothendieck's computations for Hilbert spaces, in which the nuclear and Hilbert–Schmidt norms are compared through the singular values. The operator-theoretic development of the trace class and the Hilbert–Schmidt class belongs to *Analysis on Linear Spaces* in Part III.
 
 **Example (the Schwartz space tensor product).** For the Schwartz space the nuclearity of *Nuclear Spaces* gives
 
@@ -139,7 +139,7 @@ $$
 
 the first supremum over Hilbert-space vectors $s_i$, $t_j$ of norm at most $1$ and the second over real numbers $s_i$, $t_j'$ of modulus at most $1$.
 
-**Proof.** The theorem is Grothendieck's inequality, in the form of the comparison between the norms of the tensor product and of the space of bounded bilinear forms; it is proved by a randomisation argument with Gaussian variables, or by the factorisation theory of $\gamma$-summing operators. It is quoted here as standard. The best general bound in the real case is Krivine’s $K_G \leq \pi/(2\ln(1+\sqrt2)) \approx 1.7822$, and the exact value of the real Grothendieck constant is not known; the theorem needs only that $K_G < 2$. $\square$
+**Proof.** The theorem is Grothendieck's inequality, in the form of the comparison between the norms of the tensor product and of the space of bounded bilinear forms; it is proved by a randomisation argument with Gaussian variables, or by the factorisation theory of $\gamma$-summing operators. It is quoted here as standard. The best general bound in the real case is Krivine’s $K_G \leq \pi/(2\ln(1+\sqrt2)) \approx 1.7822$, and the exact value of the real Grothendieck constant is not known; the theorem needs only that $K_G < 2$.
 
 **Remark.** Grothendieck's inequality quantifies how far the injective and projective tensor products on $\ell^2$ can be from each other: the identity map $\ell^2\widehat{\otimes}_\pi\ell^2 \to \ell^2\widehat{\otimes}_\varepsilon\ell^2$ is a topological isomorphism onto its image with distortion at most $K_G$ in the real case, but it is not surjective onto the injective completion. The constant is the basis of the theory of **absolutely summing operators** and of the metric theory of tensor products, whose operator-theoretic content belongs to *Analysis on Linear Spaces* in Part III.
 
@@ -159,7 +159,7 @@ $$
 
 defines a duality under which $(E\widehat{\otimes}_\pi F)'$ is isometrically isomorphic to $\mathcal{B}(E,F')$.
 
-**Proof.** For $T \in \mathcal{B}(E,F')$ the form $(x,y)\mapsto\langle y,Tx\rangle$ is bilinear and continuous with $\lvert\langle y,Tx\rangle\rvert \leq \lVert T\rVert\lVert x\rVert\lVert y\rVert$, so by the universal property of the projective tensor product it defines a functional $J(T)$ on $E\widehat{\otimes}_\pi F$ with $\lVert J(T)\rVert \leq \lVert T\rVert$. Conversely, a functional $\varphi$ on $E\widehat{\otimes}_\pi F$ determines a linear map $T_\varphi : E \to F'$ by $\langle T_\varphi x, y\rangle = \varphi(x\otimes y)$, which is bounded because $\lvert\langle T_\varphi x, y\rangle\rvert \leq \lVert\varphi\rVert\lVert x\rVert\lVert y\rVert$ for all $y$, whence $\lVert T_\varphi\rVert \leq \lVert\varphi\rVert$. The two passages are inverse on the dense subspace of elementary tensors, and the isometry follows because the norm of $J(T)$ is the supremum of $\lvert\langle y,Tx\rangle\rvert$ over the pairs with $\lVert x\rVert \leq 1$, $\lVert y\rVert \leq 1$, that is $\sup\{\lVert Tx\rVert : \lVert x\rVert\leq1\} = \lVert T\rVert$. $\square$
+**Proof.** For $T \in \mathcal{B}(E,F')$ the form $(x,y)\mapsto\langle y,Tx\rangle$ is bilinear and continuous with $\lvert\langle y,Tx\rangle\rvert \leq \lVert T\rVert\lVert x\rVert\lVert y\rVert$, so by the universal property of the projective tensor product it defines a functional $J(T)$ on $E\widehat{\otimes}_\pi F$ with $\lVert J(T)\rVert \leq \lVert T\rVert$. Conversely, a functional $\varphi$ on $E\widehat{\otimes}_\pi F$ determines a linear map $T_\varphi : E \to F'$ by $\langle T_\varphi x, y\rangle = \varphi(x\otimes y)$, which is bounded because $\lvert\langle T_\varphi x, y\rangle\rvert \leq \lVert\varphi\rVert\lVert x\rVert\lVert y\rVert$ for all $y$, whence $\lVert T_\varphi\rVert \leq \lVert\varphi\rVert$. The two passages are inverse on the dense subspace of elementary tensors, and the isometry follows because the norm of $J(T)$ is the supremum of $\lvert\langle y,Tx\rangle\rvert$ over the pairs with $\lVert x\rVert \leq 1$, $\lVert y\rVert \leq 1$, that is $\sup\{\lVert Tx\rVert : \lVert x\rVert\leq1\} = \lVert T\rVert$.
 
 **Corollary (the finite-dimensional duality).** For $E = \mathbb{K}^m$ and $F = \mathbb{K}^n$, with $E\otimes F = M_{m,n}(\mathbb{K})$ as in the previous section, the theorem says that the nuclear norm and the operator norm are dual to one another: the supremum of $\lvert\operatorname{tr}(A^{\mathsf T}B)\rvert$ over the matrices $B$ with $\lVert B\rVert_{\mathrm{op}}\leq1$ equals $\lVert A\rVert_{\mathrm{nuc}}$, so that $(M_{m,n},\lVert\cdot\rVert_{\mathrm{op}})' \cong (M_{m,n},\lVert\cdot\rVert_{\mathrm{nuc}})$ isometrically. In the diagonal case $A = \operatorname{diag}(\sigma_1,\sigma_2)$ with $\sigma_1 \geq \sigma_2 \geq 0$ the value $\sigma_1+\sigma_2$ is attained at the diagonal $B$ with entries $1$ and $\operatorname{sign}$; both norms are invariant under the changes of orthonormal bases that conjugate $A$ into that form, so the identity holds in general, and the inequality $\lvert\operatorname{tr}(A^{\mathsf T}B)\rvert \leq \lVert A\rVert_{\mathrm{nuc}}\lVert B\rVert_{\mathrm{op}}$ has been checked on the general case, with equality at the orthogonal factor of the polar decomposition of $A$.
 
@@ -181,7 +181,7 @@ isometrically, with the pairing $\langle T, A\rangle = \operatorname{Tr}(TA)$. T
 
 **Proposition.** Let $A$, $B$ be Banach algebras. Then $A\widehat{\otimes}_\pi B$ is a Banach algebra with $\lVert u v\rVert_\pi \leq \lVert u\rVert_\pi\lVert v\rVert_\pi$; it is commutative if $A$ and $B$ are, and continuous multiplicative bilinear maps on $A\times B$ correspond to continuous algebra homomorphisms on $A\widehat{\otimes}_\pi B$.
 
-**Proof.** The submultiplicativity of the projective norm follows from the representations $u = \sum_k a_k \otimes b_k$, $v = \sum_l a_l'\otimes b_l'$ and the estimate on the products; the universal property is the universal property of the projective tensor product restricted to multiplicative bilinear maps. $\square$
+**Proof.** The submultiplicativity of the projective norm follows from the representations $u = \sum_k a_k \otimes b_k$, $v = \sum_l a_l'\otimes b_l'$ and the estimate on the products; the universal property is the universal property of the projective tensor product restricted to multiplicative bilinear maps.
 
 **Remark (the operator-algebraic case).** The Hilbert tensor product of the previous section supplies the model for the tensor products of operator algebras. If $A \subseteq B(H_1)$ and $B \subseteq B(H_2)$ are algebras of operators, the algebraic tensor product acts on the Hilbert tensor product $H_1\widehat{\otimes}H_2$ by $(a\otimes b)(x\otimes y) = ax\otimes by$, and the **spatial** (or **minimal**) tensor product $A\otimes_{\min}B$ is the completion in the operator norm on $B(H_1\widehat{\otimes}H_2)$, while the **maximal** tensor product $A\otimes_{\max}B$ is the completion in the largest $C^*$-norm on the algebraic tensor product. The two coincide when one of the factors is nuclear, and their theory — including the class of nuclear $C^*$-algebras and the uniqueness of the $C^*$-tensor product for amenable groups — is developed in the operator-algebraic articles of the next category of this Part.
 

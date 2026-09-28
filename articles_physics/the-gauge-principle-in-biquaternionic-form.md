@@ -246,7 +246,7 @@ $$
 F_{\mu\nu} = \partial_\mu A_\nu - \partial_\nu A_\mu + \frac{iq}{\hbar}[A_\mu, A_\nu].
 $$
 
-The biquaternion algebra already contains the non-commutativity this needs: no enlargement of the algebra is required to write a non-abelian curvature. But the commutator algebra of $\mathbb{B} \cong M_2(\mathbb{C})$ is $\mathfrak{gl}(2,\mathbb{C})$, not a compact simple algebra; to land on a gauge algebra such as $\mathfrak{su}(2)$ one must impose a reality condition (anti-Hermiticity, and tracelessness) on the connection. **The algebra supplies the non-commutativity but not the compactness.** Whether the reality conditions required are natural in the biquaternion framework, and which gauge algebras they admit, is the open question that the planned companions on the covariant derivative, non-abelian fields, and Yang–Mills must settle. This article does not.
+The biquaternion algebra already contains the non-commutativity this needs: no enlargement of the algebra is required to write a non-abelian curvature. But the commutator algebra of $\mathbb{B} \cong M_2(\mathbb{C})$ is $\mathrm{GL}(2,\mathbb{C})$, not a compact simple algebra; to land on a gauge algebra such as $\mathrm{SU}(2)$ one must impose a reality condition (anti-Hermiticity, and tracelessness) on the connection. **The algebra supplies the non-commutativity but not the compactness.** Whether the reality conditions required are natural in the biquaternion framework, and which gauge algebras they admit, is the open question that the planned companions on the covariant derivative, non-abelian fields, and Yang–Mills must settle. This article does not.
 
 ## The Mass Term and the Axial Symmetry
 

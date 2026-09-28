@@ -10,9 +10,9 @@ $$
 
 is the same inverse-square form as the Kepler force, with the coupling $\kappa = -q_1q_2/(4\pi\epsilon_0)$ replacing $GMm$; for opposite charges the coupling is attractive and the problem is the Kepler problem with a different constant. The orbits are the conic sections derived in the preceding article of this subcategory, and the present article does not repeat them. Its subject is the symmetry that the $1/r$ potential conceals.
 
-The inverse-square force conserves not only the angular momentum $\mathbf{L} = \mathbf{r}\times\mathbf{p}$ but also the **Runge–Lenz vector** $\mathbf{A} = \mathbf{p}\times\mathbf{L} - m\kappa\hat{\mathbf{r}}$. Together these six quantities close under the Poisson bracket into a Lie algebra, and for bound orbits the algebra is $\mathfrak{so}(4)$, the six-dimensional rotation algebra of four-dimensional space. The symmetry is **hidden** in the sense that it is not a symmetry of space; it is a symmetry of the phase space that mixes the conserved orbital vectors. It is the classical origin of the $n^2$ degeneracy of the non-relativistic hydrogen spectrum, and the quantization of the same algebra is how Pauli obtained the Balmer formula before the Schrödinger equation existed.
+The inverse-square force conserves not only the angular momentum $\mathbf{L} = \mathbf{r}\times\mathbf{p}$ but also the **Runge–Lenz vector** $\mathbf{A} = \mathbf{p}\times\mathbf{L} - m\kappa\hat{\mathbf{r}}$. Together these six quantities close under the Poisson bracket into a Lie algebra, and for bound orbits the algebra is $\mathrm{SO}(4)$, the six-dimensional rotation algebra of four-dimensional space. The symmetry is **hidden** in the sense that it is not a symmetry of space; it is a symmetry of the phase space that mixes the conserved orbital vectors. It is the classical origin of the $n^2$ degeneracy of the non-relativistic hydrogen spectrum, and the quantization of the same algebra is how Pauli obtained the Balmer formula before the Schrödinger equation existed.
 
-The article develops the symmetry in the framework's notation and states plainly what the framework does and does not supply. The generators $\mathbf{L}$ and $\mathbf{A}$ are real vectors, $\mathbf{L}$ is the vector part of the quaternion product $\mathbf{r}\mathbf{p}$, and the brackets are computed with the Poisson bracket of the companion article *Similitudes Between the Poisson Bracket and the Quantum Commutator*. What the framework does **not** supply is the compact algebra $\mathfrak{so}(4)$ itself: the biquaternion algebra is finite-dimensional, and its largest compact subalgebra is the material sector $\mathbb{M}_- \cong \mathfrak{u}(2)$, of real dimension four, so a compact six-dimensional algebra does not embed in it. The six-dimensional algebra it does carry is its traceless part, the Lorentz algebra $\mathfrak{sl}(2,\mathbb{C}) \cong \mathfrak{so}(3,1)$ of rotations and boosts — the split real form of the very same complexification as $\mathfrak{so}(4)$, and the symmetry type of the unbound case below. The extra generators of the bound-state symmetry live in the phase space of the particle, not in $\mathbb{B}$, and the article is explicit about that boundary. The non-relativistic hydrogen article records the same boundary from the quantum side, as an open question about the algebraic origin of the degeneracy; the present article supplies the classical symmetry algebra, locates it correctly, and fixes how far the algebra's own structure reaches towards it.
+The article develops the symmetry in the framework's notation and states plainly what the framework does and does not supply. The generators $\mathbf{L}$ and $\mathbf{A}$ are real vectors, $\mathbf{L}$ is the vector part of the quaternion product $\mathbf{r}\mathbf{p}$, and the brackets are computed with the Poisson bracket of the companion article *Similitudes Between the Poisson Bracket and the Quantum Commutator*. What the framework does **not** supply is the compact algebra $\mathrm{SO}(4)$ itself: the biquaternion algebra is finite-dimensional, and its largest compact subalgebra is the material sector $\mathbb{M}_- \cong \mathrm{U}(2)$, of real dimension four, so a compact six-dimensional algebra does not embed in it. The six-dimensional algebra it does carry is its traceless part, the Lorentz algebra $\mathrm{SL}(2,\mathbb{C}) \cong \mathrm{SO}(3,1)$ of rotations and boosts — the split real form of the very same complexification as $\mathrm{SO}(4)$, and the symmetry type of the unbound case below. The extra generators of the bound-state symmetry live in the phase space of the particle, not in $\mathbb{B}$, and the article is explicit about that boundary. The non-relativistic hydrogen article records the same boundary from the quantum side, as an open question about the algebraic origin of the degeneracy; the present article supplies the classical symmetry algebra, locates it correctly, and fixes how far the algebra's own structure reaches towards it.
 
 **Conventions.** The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; the basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$ and $e_je_k = \epsilon_{jkl}e_l$ for $j \neq k$; the scalar imaginary $i$ is central with $i^2 = -e_0$. The material sector is $\mathbb{M}_-$ and the informational sector $\mathbb{M}_+$, with $\mathbb{B} = \mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm = \mathbb{M}_\mp$. The configuration is a real vector in $\operatorname{span}\{e_1,e_2,e_3\} \subset \mathbb{M}_-$; the potential and the energy are central scalars, real multiples of $e_0$. The Poisson bracket is the classical bracket of the companion article on the bracket and the quantum commutator, with $\{x_i,p_j\} = \delta_{ij}$ and $\{x_i,x_j\} = \{p_i,p_j\} = 0$, and the bracket of vector-valued functions is taken componentwise. The angular momentum is $\mathbf{L} = \mathbf{r}\times\mathbf{p} = \tfrac12[\mathbf{r},\mathbf{p}]$, the vector part of the quaternion product $\mathbf{r}\mathbf{p}$.
 
@@ -120,7 +120,7 @@ The first is the angular-momentum algebra; the second says that $\mathbf{A}$ tra
 
 The appearance of $E$ in the third bracket is the reason the algebra has different forms in the bound and unbound cases.
 
-### The Bound Case: $\mathfrak{so}(4)$
+### The Bound Case: $\mathrm{SO}(4)$
 
 For $E < 0$ define the rescaled vector
 
@@ -128,7 +128,7 @@ $$
 \mathbf{D} = \frac{\mathbf{A}}{\sqrt{-2mE}} ,
 $$
 
-so that $\{D_i, D_j\} = \epsilon_{ijk}L_k$ and $\{L_i, D_j\} = \epsilon_{ijk}D_k$. The six generators $\mathbf{L}, \mathbf{D}$ then form two commuting copies of $\mathfrak{su}(2)$. Define
+so that $\{D_i, D_j\} = \epsilon_{ijk}L_k$ and $\{L_i, D_j\} = \epsilon_{ijk}D_k$. The six generators $\mathbf{L}, \mathbf{D}$ then form two commuting copies of $\mathrm{SU}(2)$. Define
 
 $$
 \mathbf{J}^{\pm} = \frac{1}{2}\left(\mathbf{L} \pm \mathbf{D}\right) .
@@ -140,7 +140,7 @@ $$
 \{J_i^+, J_j^+\} = \epsilon_{ijk}J_k^+, \qquad \{J_i^-, J_j^-\} = \epsilon_{ijk}J_k^-, \qquad \{J_i^+, J_j^-\} = 0 ,
 $$
 
-so that $\mathfrak{so}(4) \cong \mathfrak{su}(2)\oplus\mathfrak{su}(2)$ with generators $\mathbf{J}^+$ and $\mathbf{J}^-$. The numerical check confirms all three relations, and the two Casimirs are equal:
+so that $\mathrm{SO}(4) \cong \mathrm{SU}(2)\oplus\mathrm{SU}(2)$ with generators $\mathbf{J}^+$ and $\mathbf{J}^-$. The numerical check confirms all three relations, and the two Casimirs are equal:
 
 $$
 \left(\mathbf{J}^+\right)^2 = \left(\mathbf{J}^-\right)^2 = \frac{1}{4}\left(L^2 + D^2\right) = \frac{1}{4}\left(L^2 + \frac{|\mathbf{A}|^2}{-2mE}\right) = \frac{m\kappa^2}{8|E|} ,
@@ -156,21 +156,21 @@ $$
 \{D_i, D_j\} = -\epsilon_{ijk}L_k, \qquad \{L_i, D_j\} = \epsilon_{ijk}D_k ,
 $$
 
-which is the algebra $\mathfrak{so}(3,1)$ of the Lorentz group in three space dimensions. Its Casimirs are $\mathbf{L}\cdot\mathbf{D}$ and $L^2 - D^2$, and the representations are the infinite-dimensional ones of the non-compact group; this is the algebraic reflection of the fact that the unbound orbits are hyperbolas with a continuous family of scattering angles.
+which is the algebra $\mathrm{SO}(3,1)$ of the Lorentz group in three space dimensions. Its Casimirs are $\mathbf{L}\cdot\mathbf{D}$ and $L^2 - D^2$, and the representations are the infinite-dimensional ones of the non-compact group; this is the algebraic reflection of the fact that the unbound orbits are hyperbolas with a continuous family of scattering angles.
 
 At the threshold $E = 0$ the coefficient in the third bracket vanishes, $\{A_i,A_j\} = 0$, and with $\mathbf{D} = \mathbf{A}$ the brackets become $\{D_i,D_j\}=0$ and $\{L_i,D_j\} = \epsilon_{ijk}D_k$. This is the algebra of the Euclidean group $E(3)$: the $\mathbf{L}$ generate rotations and the $\mathbf{A}$ generate translations. The three cases are collected below.
 
 | Energy | Rescaled vector | Algebra | Group |
 |---|---|---|---|
-| $E < 0$ | $\mathbf{D} = \mathbf{A}/\sqrt{-2mE}$ | $\{D,D\}=\epsilon L$, $\{L,D\}=\epsilon D$ | $\mathfrak{so}(4)\cong\mathfrak{su}(2)\oplus\mathfrak{su}(2)$ |
-| $E = 0$ | $\mathbf{D} = \mathbf{A}$ | $\{D,D\}=0$, $\{L,D\}=\epsilon D$ | $\mathfrak{e}(3)$ |
-| $E > 0$ | $\mathbf{D} = \mathbf{A}/\sqrt{2mE}$ | $\{D,D\}=-\epsilon L$, $\{L,D\}=\epsilon D$ | $\mathfrak{so}(3,1)$ |
+| $E < 0$ | $\mathbf{D} = \mathbf{A}/\sqrt{-2mE}$ | $\{D,D\}=\epsilon L$, $\{L,D\}=\epsilon D$ | $\mathrm{SO}(4)\cong\mathrm{SU}(2)\oplus\mathrm{SU}(2)$ |
+| $E = 0$ | $\mathbf{D} = \mathbf{A}$ | $\{D,D\}=0$, $\{L,D\}=\epsilon D$ | $\mathrm{E}(3)$ |
+| $E > 0$ | $\mathbf{D} = \mathbf{A}/\sqrt{2mE}$ | $\{D,D\}=-\epsilon L$, $\{L,D\}=\epsilon D$ | $\mathrm{SO}(3,1)$ |
 
 The bound case is the one that bears on the hydrogen spectrum, and it is the case developed below.
 
 ### Numerical Checks
 
-The bracket algebra was verified by central-difference evaluation of the Poisson brackets of the six generators at several representative bound phase-space points; the figures quoted are for the point with $m = \kappa = 1$ and $E = -0.446714$, and the identities reproduce at every bound point tested. The brackets $\{L_i,L_j\} = \epsilon_{ijk}L_k$, $\{L_i,A_j\} = \epsilon_{ijk}A_k$ and $\{A_i,A_j\} = -2mE\,\epsilon_{ijk}L_k$ were all confirmed to a maximum deviation of order $10^{-11}$; the rescaled bracket $\{D_i,D_j\} = \epsilon_{ijk}L_k$ was confirmed to the same accuracy; and the two $\mathfrak{su}(2)$ relations $\{J_i^\pm,J_j^\pm\} = \epsilon_{ijk}J_k^\pm$ and $\{J_i^+,J_j^-\} = 0$ were confirmed to order $10^{-11}$. The two Casimirs were found equal to eight decimal places, both equal to $0.27982080$, in agreement with $m\kappa^2/(8|E|)$; and the identities $\mathbf{L}\cdot\mathbf{A} = 0$ and $|\mathbf{A}|^2 = m^2\kappa^2 + 2mEL^2$ were confirmed to machine precision.
+The bracket algebra was verified by central-difference evaluation of the Poisson brackets of the six generators at several representative bound phase-space points; the figures quoted are for the point with $m = \kappa = 1$ and $E = -0.446714$, and the identities reproduce at every bound point tested. The brackets $\{L_i,L_j\} = \epsilon_{ijk}L_k$, $\{L_i,A_j\} = \epsilon_{ijk}A_k$ and $\{A_i,A_j\} = -2mE\,\epsilon_{ijk}L_k$ were all confirmed to a maximum deviation of order $10^{-11}$; the rescaled bracket $\{D_i,D_j\} = \epsilon_{ijk}L_k$ was confirmed to the same accuracy; and the two $\mathrm{SU}(2)$ relations $\{J_i^\pm,J_j^\pm\} = \epsilon_{ijk}J_k^\pm$ and $\{J_i^+,J_j^-\} = 0$ were confirmed to order $10^{-11}$. The two Casimirs were found equal to eight decimal places, both equal to $0.27982080$, in agreement with $m\kappa^2/(8|E|)$; and the identities $\mathbf{L}\cdot\mathbf{A} = 0$ and $|\mathbf{A}|^2 = m^2\kappa^2 + 2mEL^2$ were confirmed to machine precision.
 
 The algebra statements of the closing sections were checked at the same time, in explicit complex-matrix form using the isomorphism $e_k \mapsto -i\sigma_k$, $i \mapsto iI_2$ of $\mathbb{B}$ with $M_2(\mathbb{C})$. The material sector was confirmed closed under the commutator, with $[\mathbb{M}_+,\mathbb{M}_+] \subseteq \mathbb{M}_-$ and every element of $[\mathbb{M}_-,\mathbb{M}_-]$ again anti-Hermitian; the traceless part was confirmed to close exactly on
 
@@ -182,7 +182,7 @@ $$
 
 and the six operators $L_k, R_k$ of left and right multiplication were confirmed antisymmetric on $\mathbb{H}$, with $[L_i,L_j] = 2\epsilon_{ijk}L_k$, $[R_i,R_j] = -2\epsilon_{ijk}R_k$, $[L_i,R_j] = 0$ and $\sum_kL_k^2 = \sum_kR_k^2 = -3\,e_0$. The last identity is the statement of equal Casimirs, and its value divided by the square of the generator normalization gives $\tfrac34$, that is $j(j+1)$ at $j = \tfrac12$.
 
-<!-- CONVENTION — what the algebra contains at dimension six: the claim that $\mathbb{B}$ carries an $\mathfrak{so}(3,1)$ but no $\mathfrak{so}(4)$ is deliberate and is not a miscount. $\mathbb{M}_-$ is closed under the commutator and is $\mathfrak{u}(2)$, of real dimension four; since the maximal compact subalgebra of $\mathfrak{gl}(2,\mathbb{C})$ is $\mathfrak{u}(2)$, no compact six-dimensional algebra embeds, whereas the traceless part $\mathfrak{sl}(2,\mathbb{C}) \cong \mathfrak{so}(3,1)$ is six-dimensional and does embed. The $\mathfrak{so}(4)$ that appears in this article is either the phase-space symmetry of the Coulomb problem or the bimultiplication algebra of the algebra on itself, never a commutator subalgebra of the biquaternions. A reviewer must not "repair" this by putting $\mathfrak{so}(4)$ inside $\mathbb{B}$. -->
+<!-- CONVENTION — what the algebra contains at dimension six: the claim that $\mathbb{B}$ carries an $\mathrm{SO}(3,1)$ but no $\mathrm{SO}(4)$ is deliberate and is not a miscount. $\mathbb{M}_-$ is closed under the commutator and is $\mathrm{U}(2)$, of real dimension four; since the maximal compact subalgebra of $\mathrm{GL}(2,\mathbb{C})$ is $\mathrm{U}(2)$, no compact six-dimensional algebra embeds, whereas the traceless part $\mathrm{SL}(2,\mathbb{C}) \cong \mathrm{SO}(3,1)$ is six-dimensional and does embed. The $\mathrm{SO}(4)$ that appears in this article is either the phase-space symmetry of the Coulomb problem or the bimultiplication algebra of the algebra on itself, never a commutator subalgebra of the biquaternions. A reviewer must not "repair" this by putting $\mathrm{SO}(4)$ inside $\mathbb{B}$. -->
 
 ## The Classical Origin of the Degeneracy
 
@@ -216,11 +216,11 @@ The Balmer formula $E_n = -m\kappa^2/(2\hbar^2n^2)$ is recovered by inverting th
 
 The quantum companion article *The Hydrogen Atom in Biquaternionic Form — The Non-Relativistic Case* records the $n^2$ degeneracy and states that the framework does not account for it, and poses the $SO(4)$ origin as an open question. The present article answers half of the question and sharpens the other half.
 
-**What is answered.** The degeneracy's square form is the dimension of a balanced representation of $\mathfrak{so}(4)$, and the symmetry that produces it is generated by the angular momentum and the Runge–Lenz vector. This is the origin of the degeneracy, it is classical, and the classical generators are $\mathbf{L}$ and $\mathbf{A}$ as written above. The degeneracy is not a coincidence of the Coulomb potential; it is the representation theory of the hidden symmetry.
+**What is answered.** The degeneracy's square form is the dimension of a balanced representation of $\mathrm{SO}(4)$, and the symmetry that produces it is generated by the angular momentum and the Runge–Lenz vector. This is the origin of the degeneracy, it is classical, and the classical generators are $\mathbf{L}$ and $\mathbf{A}$ as written above. The degeneracy is not a coincidence of the Coulomb potential; it is the representation theory of the hidden symmetry.
 
-**What remains open.** The generators $\mathbf{L}$ and $\mathbf{A}$ are functions on the phase space, not elements of $\mathbb{B}$, and the algebra $\mathfrak{so}(4)$ is six-dimensional. Why the algebra cannot host it is worth stating exactly, because the exact statement is sharper than the count of dimensions. Under the commutator the material sector is closed, $[\mathbb{M}_-,\mathbb{M}_-] \subseteq \mathbb{M}_-$ and $[\mathbb{M}_+,\mathbb{M}_+] \subseteq \mathbb{M}_-$, and $\mathbb{M}_-$ is the algebra $\mathfrak{u}(2) \cong \mathfrak{u}(1)\oplus\mathfrak{su}(2)$ of real dimension four, whose traceless part $\operatorname{span}\{e_1,e_2,e_3\}$ is the $\mathfrak{su}(2)$ of rotations. Since the maximal compact subalgebra of $\mathfrak{gl}(2,\mathbb{C})$ is $\mathfrak{u}(2)$, of dimension four, no compact subalgebra of dimension six lies in $\mathbb{B}$: the compact algebra $\mathfrak{so}(4) \cong \mathfrak{su}(2)\oplus\mathfrak{su}(2)$ is not a commutator subalgebra of the biquaternions, and that is the reason, rather than a count of rotation generators.
+**What remains open.** The generators $\mathbf{L}$ and $\mathbf{A}$ are functions on the phase space, not elements of $\mathbb{B}$, and the algebra $\mathrm{SO}(4)$ is six-dimensional. Why the algebra cannot host it is worth stating exactly, because the exact statement is sharper than the count of dimensions. Under the commutator the material sector is closed, $[\mathbb{M}_-,\mathbb{M}_-] \subseteq \mathbb{M}_-$ and $[\mathbb{M}_+,\mathbb{M}_+] \subseteq \mathbb{M}_-$, and $\mathbb{M}_-$ is the algebra $\mathrm{U}(2) \cong \mathrm{U}(1)\oplus\mathrm{SU}(2)$ of real dimension four, whose traceless part $\operatorname{span}\{e_1,e_2,e_3\}$ is the $\mathrm{SU}(2)$ of rotations. Since the maximal compact subalgebra of $\mathrm{GL}(2,\mathbb{C})$ is $\mathrm{U}(2)$, of dimension four, no compact subalgebra of dimension six lies in $\mathbb{B}$: the compact algebra $\mathrm{SO}(4) \cong \mathrm{SU}(2)\oplus\mathrm{SU}(2)$ is not a commutator subalgebra of the biquaternions, and that is the reason, rather than a count of rotation generators.
 
-What $\mathbb{B}$ does contain at dimension six is its traceless part, which is $\mathfrak{sl}(2,\mathbb{C})$ as a real Lie algebra, spanned by the rotations $e_k/2$ — the vector directions of the material sector — together with the boosts $ie_k/2$ — the vector directions of the informational sector:
+What $\mathbb{B}$ does contain at dimension six is its traceless part, which is $\mathrm{SL}(2,\mathbb{C})$ as a real Lie algebra, spanned by the rotations $e_k/2$ — the vector directions of the material sector — together with the boosts $ie_k/2$ — the vector directions of the informational sector:
 
 $$
 \left[\tfrac{e_i}{2},\tfrac{e_j}{2}\right] = \epsilon_{ijk}\tfrac{e_k}{2}, \qquad
@@ -228,7 +228,7 @@ $$
 \left[\tfrac{ie_i}{2},\tfrac{ie_j}{2}\right] = -\epsilon_{ijk}\tfrac{e_k}{2} .
 $$
 
-This is the Lorentz algebra of the corpus's rotors, and it is $\mathfrak{so}(3,1)$: the split real form of the same complexification whose compact real form is $\mathfrak{so}(4)$. The algebra therefore carries a six-dimensional symmetry algebra of exactly the right complexification, and the real form it carries is the one belonging to the **unbound** case of the brackets above; the bound case's compact $\mathfrak{so}(4)$ is its compact form. An algebraic account of the bound-state degeneracy **inside $\mathbb{B}$** is still not available, and the open question of the hydrogen article is not resolved by the present article. What is established is that the symmetry is classical, that it lives in the phase space, and that the algebra's own six-dimensional structure is the continuation of the bound-state symmetry to the other sign of the energy.
+This is the Lorentz algebra of the corpus's rotors, and it is $\mathrm{SO}(3,1)$: the split real form of the same complexification whose compact real form is $\mathrm{SO}(4)$. The algebra therefore carries a six-dimensional symmetry algebra of exactly the right complexification, and the real form it carries is the one belonging to the **unbound** case of the brackets above; the bound case's compact $\mathrm{SO}(4)$ is its compact form. An algebraic account of the bound-state degeneracy **inside $\mathbb{B}$** is still not available, and the open question of the hydrogen article is not resolved by the present article. What is established is that the symmetry is classical, that it lives in the phase space, and that the algebra's own six-dimensional structure is the continuation of the bound-state symmetry to the other sign of the energy.
 
 ## The Reach and the Limits of the Algebra
 
@@ -238,11 +238,11 @@ The biquaternion algebra contains the following objects of the Coulomb problem.
 
 **The real three-space.** The vectors $\mathbf{r}, \mathbf{p}, \mathbf{L}, \mathbf{A}$ all lie in $\operatorname{span}\{e_1,e_2,e_3\} \subset \mathbb{M}_-$, which is the configuration three-space. The angular momentum is the vector part of the product $\mathbf{r}\mathbf{p}$, $\mathbf{L} = \operatorname{Vect}(\mathbf{r}\mathbf{p})$, and its conservation is the vanishing of the commutator $[\mathbf{r},\mathbf{F}]$.
 
-**The rotation group.** The unit real quaternions $R$ act by $R(\cdot)R^{-1}$ and rotate all six generators as vectors: $R\mathbf{L}R^{-1}$ is the rotated angular momentum, and the same for $\mathbf{A}$. The algebra carries the $\mathfrak{su}(2)$ of spatial rotations in its own commutator, $[e_j,e_k] = 2\epsilon_{jkl}e_l$.
+**The rotation group.** The unit real quaternions $R$ act by $R(\cdot)R^{-1}$ and rotate all six generators as vectors: $R\mathbf{L}R^{-1}$ is the rotated angular momentum, and the same for $\mathbf{A}$. The algebra carries the $\mathrm{SU}(2)$ of spatial rotations in its own commutator, $[e_j,e_k] = 2\epsilon_{jkl}e_l$.
 
 **The central scalars.** The energy, the potential and the coupling are real multiples of $e_0$; the Casimir value $m\kappa^2/(8|E|)$ and the energy–eccentricity relation are scalar statements.
 
-**The Lorentz algebra.** The traceless part of $\mathbb{B}$ is closed under the commutator and is six-dimensional; generated by the rotations $e_k/2$ and the boosts $ie_k/2$, it is $\mathfrak{so}(3,1) \cong \mathfrak{sl}(2,\mathbb{C})$, the Lorentz algebra of the corpus's rotors. It is the compact form $\mathfrak{so}(4)$ that is absent, not the six-dimensional complexification.
+**The Lorentz algebra.** The traceless part of $\mathbb{B}$ is closed under the commutator and is six-dimensional; generated by the rotations $e_k/2$ and the boosts $ie_k/2$, it is $\mathrm{SO}(3,1) \cong \mathrm{SL}(2,\mathbb{C})$, the Lorentz algebra of the corpus's rotors. It is the compact form $\mathrm{SO}(4)$ that is absent, not the six-dimensional complexification.
 
 ### The Symmetry of the Algebra on Itself
 
@@ -258,7 +258,7 @@ $$
 [L_i,L_j] = 2\epsilon_{ijk}L_k, \qquad [R_i,R_j] = -2\epsilon_{ijk}R_k, \qquad [L_i,R_j] = 0 ,
 $$
 
-so that $\operatorname{span}\{L_1,L_2,L_3,R_1,R_2,R_3\}$ is six-dimensional and is $\mathfrak{su}(2)\oplus\mathfrak{su}(2) \cong \mathfrak{so}(4)$: the rotations of the four-dimensional space on which the algebra acts. This is the sense in which the algebra does carry an $\mathfrak{so}(4)$ — as the symmetry of its own module structure. It is not a commutator subalgebra, and it acts on the algebra rather than on the phase space, so it does not supply the hidden symmetry of the Coulomb problem.
+so that $\operatorname{span}\{L_1,L_2,L_3,R_1,R_2,R_3\}$ is six-dimensional and is $\mathrm{SU}(2)\oplus\mathrm{SU}(2) \cong \mathrm{SO}(4)$: the rotations of the four-dimensional space on which the algebra acts. This is the sense in which the algebra does carry an $\mathrm{SO}(4)$ — as the symmetry of its own module structure. It is not a commutator subalgebra, and it acts on the algebra rather than on the phase space, so it does not supply the hidden symmetry of the Coulomb problem.
 
 Under this action $\mathbb{B}$ is a single balanced representation. Its two Casimirs are equal, $\sum_kL_k^2 = \sum_kR_k^2 = -3\,e_0$ on $\mathbb{H}$ — the balance condition that the bound-state multiplicity requires — and its complex dimension is four, the value of $n^2$ at $n = 2$. The lowest shell of the degeneracy therefore has an image in the algebra, as the balanced $(\tfrac12,\tfrac12)$; the shells $n \geq 3$, of dimensions $9, 16, \dots$, have none, because the self-action of a four-dimensional algebra carries only one balanced representation. The boundary is consequently sharper than a dimension count: the algebra is not foreign to the symmetry — it carries the symmetry's lowest carrier, with the balance the multiplicity needs — but it cannot carry the tower, and it does not derive the dynamics that selects the inverse-square force. Whether the matching at $n = 2$ has dynamical content is not established here, and the degeneracy's algebraic origin remains the open question it was.
 
@@ -268,7 +268,7 @@ Under this action $\mathbb{B}$ is a single balanced representation. Its two Casi
 
 **The phase space.** The six generators and their brackets are functions on the six-dimensional space of pairs $(\mathbf{r},\mathbf{p})$. That space is not a module over $\mathbb{B}$; the algebra is a single copy of $M_2(\mathbb{C})$ and the phase space is infinite-dimensional as a space of functions. The hidden symmetry is a symmetry of the phase space.
 
-**The six-dimensional algebra.** The biquaternion algebra has real dimension eight, $\mathbb{B} \cong M_2(\mathbb{C})$. Its largest compact subalgebra is the material sector $\mathbb{M}_- \cong \mathfrak{u}(2)$, of real dimension four, which contains the $\mathfrak{su}(2)$ of spatial rotations; a compact six-dimensional algebra such as $\mathfrak{so}(4)$ therefore does not embed, and the three extra generators of the hidden symmetry require the phase-space structure that the algebra does not carry. The six-dimensional subalgebra the algebra does possess is its traceless part, the Lorentz algebra $\mathfrak{sl}(2,\mathbb{C}) \cong \mathfrak{so}(3,1)$ generated by the rotations and the boosts — the non-compact real form of the same complexification as $\mathfrak{so}(4)$, and the symmetry type of the unbound case. This is the structural boundary between the framework's algebra and the hidden symmetry, and it is the same boundary that the quantum hydrogen article reports.
+**The six-dimensional algebra.** The biquaternion algebra has real dimension eight, $\mathbb{B} \cong M_2(\mathbb{C})$. Its largest compact subalgebra is the material sector $\mathbb{M}_- \cong \mathrm{U}(2)$, of real dimension four, which contains the $\mathrm{SU}(2)$ of spatial rotations; a compact six-dimensional algebra such as $\mathrm{SO}(4)$ therefore does not embed, and the three extra generators of the hidden symmetry require the phase-space structure that the algebra does not carry. The six-dimensional subalgebra the algebra does possess is its traceless part, the Lorentz algebra $\mathrm{SL}(2,\mathbb{C}) \cong \mathrm{SO}(3,1)$ generated by the rotations and the boosts — the non-compact real form of the same complexification as $\mathrm{SO}(4)$, and the symmetry type of the unbound case. This is the structural boundary between the framework's algebra and the hidden symmetry, and it is the same boundary that the quantum hydrogen article reports.
 
 ## Summary
 
@@ -294,15 +294,15 @@ $$
 \{J_i^+,J_j^+\} = \epsilon_{ijk}J_k^+, \qquad \{J_i^-,J_j^-\} = \epsilon_{ijk}J_k^-, \qquad \{J_i^+,J_j^-\} = 0 ,
 $$
 
-so that the symmetry algebra is $\mathfrak{so}(4)\cong\mathfrak{su}(2)\oplus\mathfrak{su}(2)$, with equal Casimirs
+so that the symmetry algebra is $\mathrm{SO}(4)\cong\mathrm{SU}(2)\oplus\mathrm{SU}(2)$, with equal Casimirs
 
 $$
 \left(\mathbf{J}^+\right)^2 = \left(\mathbf{J}^-\right)^2 = \frac{m\kappa^2}{8|E|} .
 $$
 
-The balanced representations of dimension $(2j+1)^2$ are the classical origin of the $n^2$ degeneracy of the hydrogen spectrum, with $2j+1 = n$ after quantization. For $E>0$ the algebra is $\mathfrak{so}(3,1)$ and for $E=0$ it is $\mathfrak{e}(3)$.
+The balanced representations of dimension $(2j+1)^2$ are the classical origin of the $n^2$ degeneracy of the hydrogen spectrum, with $2j+1 = n$ after quantization. For $E>0$ the algebra is $\mathrm{SO}(3,1)$ and for $E=0$ it is $\mathrm{E}(3)$.
 
-The framework supplies the real three-space in which all six generators take their values, the product form $\mathbf{L} = \operatorname{Vect}(\mathbf{r}\mathbf{p})$, and the rotation group that acts on them. It does not supply the compact six-dimensional symmetry algebra, because the largest compact subalgebra of $\mathbb{B} \cong M_2(\mathbb{C})$ is the material sector $\mathbb{M}_- \cong \mathfrak{u}(2)$, of dimension four, and because $\mathbf{A}$ contains the reciprocal length $\mathbf{r}/|\mathbf{r}|$ and lives on the phase space. What it does supply at dimension six is the Lorentz algebra $\mathfrak{so}(3,1) \cong \mathfrak{sl}(2,\mathbb{C})$ — the split form of the same complexification as $\mathfrak{so}(4)$, and the symmetry type of the unbound case — together with the balanced $(\tfrac12,\tfrac12)$ self-action whose dimension is $n^2$ at $n = 2$ and which cannot carry the higher shells. The degeneracy's algebraic origin inside the framework therefore remains the open question it was; what the present article establishes is the classical symmetry algebra, the precise location of the boundary, and how far the algebra's own structure reaches towards it.
+The framework supplies the real three-space in which all six generators take their values, the product form $\mathbf{L} = \operatorname{Vect}(\mathbf{r}\mathbf{p})$, and the rotation group that acts on them. It does not supply the compact six-dimensional symmetry algebra, because the largest compact subalgebra of $\mathbb{B} \cong M_2(\mathbb{C})$ is the material sector $\mathbb{M}_- \cong \mathrm{U}(2)$, of dimension four, and because $\mathbf{A}$ contains the reciprocal length $\mathbf{r}/|\mathbf{r}|$ and lives on the phase space. What it does supply at dimension six is the Lorentz algebra $\mathrm{SO}(3,1) \cong \mathrm{SL}(2,\mathbb{C})$ — the split form of the same complexification as $\mathrm{SO}(4)$, and the symmetry type of the unbound case — together with the balanced $(\tfrac12,\tfrac12)$ self-action whose dimension is $n^2$ at $n = 2$ and which cannot carry the higher shells. The degeneracy's algebraic origin inside the framework therefore remains the open question it was; what the present article establishes is the classical symmetry algebra, the precise location of the boundary, and how far the algebra's own structure reaches towards it.
 
 ## Summary of Notation
 
@@ -325,9 +325,9 @@ The framework supplies the real three-space in which all six generators take the
 | $\{L_i,A_j\}=\epsilon_{ijk}A_k$ | Vector transformation of $\mathbf{A}$ |
 | $\{A_i,A_j\}=-2mE\,\epsilon_{ijk}L_k$ | Energy-dependent bracket |
 | $\mathbf{D} = \mathbf{A}/\sqrt{-2mE}$ $(E<0)$ | Rescaled generator |
-| $\mathbf{J}^\pm = \tfrac12(\mathbf{L}\pm\mathbf{D})$ | $\mathfrak{su}(2)\oplus\mathfrak{su}(2)$ generators |
+| $\mathbf{J}^\pm = \tfrac12(\mathbf{L}\pm\mathbf{D})$ | $\mathrm{SU}(2)\oplus\mathrm{SU}(2)$ generators |
 | $(\mathbf{J}^\pm)^2 = m\kappa^2/(8|E|)$ | Equal Casimirs |
-| $E<0$ / $E=0$ / $E>0$ | $\mathfrak{so}(4)$ / $\mathfrak{e}(3)$ / $\mathfrak{so}(3,1)$ |
+| $E<0$ / $E=0$ / $E>0$ | $\mathrm{SO}(4)$ / $\mathrm{E}(3)$ / $\mathrm{SO}(3,1)$ |
 | $p = L^2/(m\kappa)$, $a = -\kappa/(2E)$ | Semi-latus rectum, semi-major axis |
 | $e = \sqrt{1 + 2EL^2/(m\kappa^2)}$ | Eccentricity |
 
@@ -338,6 +338,6 @@ The framework supplies the real three-space in which all six generators take the
 - V. Bargmann, "Zur Theorie des Wasserstoffatoms: Bemerkungen zur gleichnamigen Arbeit von V. Fock," *Zeitschrift für Physik* **99** (1936) 576–582, for the representation theory of the bound-state symmetry.
 - W. Lenz, "Über den Bewegungsverlauf und die Quantenzustände der gestörten Keplerbewegung," *Zeitschrift für Physik* **24** (1924) 197–207, for the conserved vector of the Kepler problem.
 - Herbert Goldstein, Charles Poole and John Safko, *Classical Mechanics* (Pearson, 2002), for the Runge–Lenz vector and the symmetry algebra in the classical setting.
-- M. Bander and C. Itzykson, "Group theory and the hydrogen atom (I) and (II)," *Reviews of Modern Physics* **38** (1966) 330 and 346, for the $\mathfrak{so}(4)$ and $\mathfrak{so}(4,1)$ treatments of the Coulomb problem.
+- M. Bander and C. Itzykson, "Group theory and the hydrogen atom (I) and (II)," *Reviews of Modern Physics* **38** (1966) 330 and 346, for the $\mathrm{SO}(4)$ and $\mathrm{SO}(4,1)$ treatments of the Coulomb problem.
 - L. D. Landau and E. M. Lifshitz, *Mechanics* (Pergamon, 1976), for the classical Coulomb problem and the Rutherford scattering orbit.
 - Chris Doran and Anthony Lasenby, *Geometric Algebra for Physicists* (Cambridge, 2003), for the geometric-algebra treatment of the Kepler and Coulomb symmetries.

@@ -46,7 +46,7 @@ the second with the convention that $H^n(G_K,A)$ is the direct limit $\varinjlim
 
 **(d)** $H^2(G,A)$ classifies the group extensions of $G$ by $A$ that realise the given action of $G$ on $A$, that is, the exact sequences $1 \to A \to E \to G \to 1$ with the conjugation action of $E$ on $A$ inducing the given $G$-action, up to equivalence. When $A$ is central in $E$, the classification is by the second cohomology with the trivial action.
 
-**Proof.** (a) is the definition of the zeroth cohomology. (b) is the standard identification: a $1$-cochain is a map $G \to A$, the cocycle condition $\partial f = 0$ is exactly $f(gh) = f(g) + g f(h)$, and the $1$-coboundaries are the principal crossed homomorphisms. (c) is immediate from (b) with trivial action. (d) is the classical classification of extensions: given an extension one chooses a section $s : G \to E$ and the failure of $s$ to be a homomorphism is a $2$-cocycle; changing the section by an element of $A$ changes it by a coboundary. $\square$
+**Proof.** (a) is the definition of the zeroth cohomology. (b) is the standard identification: a $1$-cochain is a map $G \to A$, the cocycle condition $\partial f = 0$ is exactly $f(gh) = f(g) + g f(h)$, and the $1$-coboundaries are the principal crossed homomorphisms. (c) is immediate from (b) with trivial action. (d) is the classical classification of extensions: given an extension one chooses a section $s : G \to E$ and the failure of $s$ to be a homomorphism is a $2$-cocycle; changing the section by an element of $A$ changes it by a coboundary.
 
 **Example (the absolute Galois group of a finite field).** Let $K = \mathbb{F}_q$. Then $\overline K = \overline{\mathbb{F}_q}$ and $G_K$ is the inverse limit of the groups $\operatorname{Gal}(\mathbb{F}_{q^n}/\mathbb{F}_q) \cong \mathbb{Z}/n\mathbb{Z}$ under the natural compatible maps, which we may write $\widehat{\mathbb{Z}}$; it is generated in the natural sense by the Frobenius. It is abelian, and $H^1(G_K, A) = \operatorname{Hom}(G_K, A)$ for trivial coefficients.
 
@@ -54,7 +54,7 @@ the second with the convention that $H^n(G_K,A)$ is the direct limit $\varinjlim
 
 **Proposition (the zeroth cohomology of the multiplicative group).** For $L/K$ finite Galois with group $G$, $H^0(L/K, L^\times) = K^\times$ and $H^0(L/K, L) = K$. For the absolute Galois group, $H^0(K, \overline K^\times) = K^\times$ and $H^0(K, \overline K) = K$.
 
-**Proof.** The invariants of $L^\times$ under $G$ are the elements of $L^\times$ fixed by every $K$-automorphism of $L$, and these are exactly $K^\times$ by the fundamental theorem of Galois theory; the same argument for the additive group. $\square$
+**Proof.** The invariants of $L^\times$ under $G$ are the elements of $L^\times$ fixed by every $K$-automorphism of $L$, and these are exactly $K^\times$ by the fundamental theorem of Galois theory; the same argument for the additive group.
 
 ---
 
@@ -76,7 +76,7 @@ $$
 
 with $\operatorname{cor} \circ \operatorname{res} = [G:H]$, the multiplication by the index.
 
-**Proof.** These are the standard constructions of *Group Cohomology*: restriction is the functoriality of $H^n$ in the group variable, and corestriction is the transfer in the group algebra. $\square$
+**Proof.** These are the standard constructions of *Group Cohomology*: restriction is the functoriality of $H^n$ in the group variable, and corestriction is the transfer in the group algebra.
 
 **Theorem (long exact sequence).** Let $0 \to A \to B \to C \to 0$ be an exact sequence of abelian $G$-groups. Then there is a long exact sequence
 
@@ -86,7 +86,7 @@ $$
 
 which is natural in the coefficient sequence.
 
-**Proof.** The short exact sequence of coefficient groups becomes a short exact sequence of cochain complexes after applying $\operatorname{Hom}(\mathbb{Z}[G\text{-free resolution}], -)$; the zig-zag lemma produces the connecting homomorphism $\delta$ and the long exact sequence. This is the fundamental theorem of *Group Cohomology*. $\square$
+**Proof.** The short exact sequence of coefficient groups becomes a short exact sequence of cochain complexes after applying $\operatorname{Hom}(\mathbb{Z}[G\text{-free resolution}], -)$; the zig-zag lemma produces the connecting homomorphism $\delta$ and the long exact sequence. This is the fundamental theorem of *Group Cohomology*.
 
 **Theorem (inflation–restriction).** Let $L/K$ be Galois, $M/K$ a Galois subextension with $K \subseteq M \subseteq L$, $H = \operatorname{Gal}(L/M) \trianglelefteq G = \operatorname{Gal}(L/K)$ and $Q = G/H = \operatorname{Gal}(M/K)$. For an abelian $G$-group $A$ there is an exact sequence
 
@@ -96,7 +96,7 @@ $$
 
 where $\inf$ is the **inflation** $H^n(Q,A^H) \to H^n(G,A)$ induced by the quotient map $G \to Q$, and $\operatorname{tg}$ is the **transgression**.
 
-**Proof.** The $5$-term sequence is obtained from the Hochschild–Serre spectral sequence for the group extension $1 \to H \to G \to Q \to 1$, and it may also be obtained by a diagram chase with the standard resolution; the identification of the terms is the content of *Group Cohomology*. $\square$
+**Proof.** The $5$-term sequence is obtained from the Hochschild–Serre spectral sequence for the group extension $1 \to H \to G \to Q \to 1$, and it may also be obtained by a diagram chase with the standard resolution; the identification of the terms is the content of *Group Cohomology*.
 
 **Theorem (Shapiro's lemma).** Let $H \leq G$ and let $B$ be an abelian $H$-group. Let $A = \operatorname{Ind}_H^G B$ be the group of functions $f : G \to B$ with the $G$-action $(gf)(g') = f(g'g)$, so that $A$ is an abelian $G$-group whose $H$-action agrees with that on $B$ under the identification of $B$ with the functions supported on $H$. Then
 
@@ -106,7 +106,7 @@ $$
 
 for every $n \geq 0$. In particular, if $A$ is induced from the trivial subgroup, $H^n(G,A) = 0$ for $n \geq 1$.
 
-**Proof.** The standard proof of *Group Cohomology* identifies the standard resolution of $G$ with the induced resolution of $H$, so that the two cohomology groups are the cohomology of the same complex. $\square$
+**Proof.** The standard proof of *Group Cohomology* identifies the standard resolution of $G$ with the induced resolution of $H$, so that the two cohomology groups are the cohomology of the same complex.
 
 **Corollary.** If $G$ is finite then $\lvert G\rvert$ annihilates $H^n(G,A)$ for every $n \geq 1$ and every abelian $G$-group $A$. Indeed, taking $H = 1$ and $B = A$ in the proposition, $\operatorname{cor} \circ \operatorname{res}$ on $H^n(G,A)$ is multiplication by $[G:1] = \lvert G\rvert$, while $H^n(1,A) = 0$ for $n \geq 1$, so $\lvert G\rvert$ acts as the zero map. The same argument applied to the finite quotient through which the action on $A$ factors shows that the order of that quotient also annihilates $H^n(G,A)$.
 
@@ -136,7 +136,7 @@ $$
 g(c) = \sum_{h} g(f(h))\, gh(z) = \sum_{h} f(gh) f(g)^{-1} \, gh(z) = f(g)^{-1} \sum_{h} f(gh)\, (gh)(z) = f(g)^{-1} c ,
 $$
 
-the last step because $h \mapsto gh$ is a bijection of $G$. Hence $f(g) = c / g(c) = g^{-1}(c)/c$ for all $g$, so $f$ is a principal crossed homomorphism and represents the zero class. $\square$
+the last step because $h \mapsto gh$ is a bijection of $G$. Hence $f(g) = c / g(c) = g^{-1}(c)/c$ for all $g$, so $f$ is a principal crossed homomorphism and represents the zero class.
 
 **Theorem (Hilbert's theorem 90, additive form).** With $L/K$ finite Galois with group $G$, the additive group $L$ carries a $G$-action and
 
@@ -144,7 +144,7 @@ $$
 H^1(L/K, L) = 0 .
 $$
 
-**Proof.** The normal basis theorem, proved in *Galois Theory*, supplies $z \in L$ whose conjugates $g(z)$, $g \in G$, form a $K$-basis of $L$. Given a crossed homomorphism $f : G \to L$, define $c = \sum_h f(h) h(z)$ exactly as above and repeat the computation, which is purely additive. $\square$
+**Proof.** The normal basis theorem, proved in *Galois Theory*, supplies $z \in L$ whose conjugates $g(z)$, $g \in G$, form a $K$-basis of $L$. Given a crossed homomorphism $f : G \to L$, define $c = \sum_h f(h) h(z)$ exactly as above and repeat the computation, which is purely additive.
 
 **Corollary.** For the absolute Galois group,
 
@@ -152,7 +152,7 @@ $$
 H^1(K, \overline K^\times) = 0, \qquad H^1(K, \overline K) = 0 .
 $$
 
-**Proof.** Every element of $H^1(G_K, \overline K^\times)$ is represented on a finite Galois extension $L/K$ and is killed by the vanishing of $H^1(L/K,L^\times)$; the direct limit of zero groups is zero. $\square$
+**Proof.** Every element of $H^1(G_K, \overline K^\times)$ is represented on a finite Galois extension $L/K$ and is killed by the vanishing of $H^1(L/K,L^\times)$; the direct limit of zero groups is zero.
 
 **Example (cyclic extensions and the norm).** Let $L/K$ be cyclic of degree $n$ with group generated by $\sigma$. Then $H^1$ is $\ker(\operatorname{N})/(\sigma-1)L^\times$ and $H^{-1}$ is likewise, so Hilbert 90 says
 
@@ -188,7 +188,7 @@ $$
 1 \to \mu_n(K) \to K^\times \xrightarrow{\ n\ } K^\times \xrightarrow{\delta} H^1(K,\mu_n) \to H^1(K,\overline K^\times) = 0 .
 $$
 
-Exactness at $H^1(K,\mu_n)$ gives that $\delta$ is surjective, and exactness at the middle $K^\times$ gives $\ker \delta = (K^\times)^n$; hence $\delta$ induces $K^\times/(K^\times)^n \cong H^1(K,\mu_n)$. $\square$
+Exactness at $H^1(K,\mu_n)$ gives that $\delta$ is surjective, and exactness at the middle $K^\times$ gives $\ker \delta = (K^\times)^n$; hence $\delta$ induces $K^\times/(K^\times)^n \cong H^1(K,\mu_n)$.
 
 **Corollary (the cohomological form of Kummer theory).** Let $\zeta_n \in K$. Then $G_K$ acts trivially on $\mu_n$ and hence $H^1(K,\mu_n) = \operatorname{Hom}(G_K, \mu_n)$, so
 
@@ -218,7 +218,7 @@ $$
 H^1(K,\mu_n) \xrightarrow{\delta} H^2(K,\mu_n) \to H^2(K,\overline K^\times) \xrightarrow{n} H^2(K,\overline K^\times),
 $$
 
-so the image of $\delta$ is the kernel of multiplication by $n$ on $H^2(K,\overline K^\times)$, which is the definition of ${}_n\operatorname{Br}(K)$; the kernel of $\delta$ is the image of $K^\times$ under the $n$-th power map, so $\delta$ identifies $K^\times/(K^\times)^n$ with a subgroup of ${}_n\operatorname{Br}(K)$, and the two have the same order by the exactness of the remaining terms. $\square$
+so the image of $\delta$ is the kernel of multiplication by $n$ on $H^2(K,\overline K^\times)$, which is the definition of ${}_n\operatorname{Br}(K)$; the kernel of $\delta$ is the image of $K^\times$ under the $n$-th power map, so $\delta$ identifies $K^\times/(K^\times)^n$ with a subgroup of ${}_n\operatorname{Br}(K)$, and the two have the same order by the exactness of the remaining terms.
 
 **Example.** For $K = \mathbb{R}$, the cohomology of the group of order $2$ gives $H^2(\mathbb{R},\mathbb{C}^\times) = \frac12\mathbb{Z}/\mathbb{Z} = \mathbb{Z}/2\mathbb{Z}$, generated by the class of the unique nontrivial central division algebra over $\mathbb{R}$ (the quaternion algebra, treated in the algebra layer, in *Division Algebras* and *Central Simple Algebras and the Brauer Group*), and $H^1(\mathbb{R},\mathbb{C}^\times) = 0$; thus the cohomological dimension of $\mathbb{R}$ is $2$.
 
@@ -238,7 +238,7 @@ so the image of $\delta$ is the kernel of multiplication by $n$ on $H^2(K,\overl
 
 **(c)** For $\mathbb{R}$, $\operatorname{cd}(\mathbb{R}) = 2$, as computed from the cohomology of the group of order $2$; the same value holds for a number field, and the proof of that case passes through the completions of $K$ at its places, so it belongs to Part II , and only the statement is recorded here.
 
-**Proof sketch.** (a) A trivial Galois group has trivial cohomology in positive degrees. (b) If some finite extension $L/K$ has $\operatorname{Br}(L) \neq 0$ then $H^2(L,\overline L{}^\times) \neq 0$ and $\operatorname{cd}(L) \geq 2$, so the vanishing for all finite extensions is necessary; it is sufficient by the cohomological interpretation of the Brauer group together with the periodicity of finite group cohomology. For finite fields, $\widehat{\mathbb{Z}} = G_{\mathbb{F}_q}$ acts trivially on $\overline{\mathbb{F}_q}^\times = \mu$, a divisible-by-finite group with no $p$-torsion for the relevant primes, so $H^2(\mathbb{F}_q,\overline{\mathbb{F}_q}^\times) = 0$ and $\operatorname{cd} = 1$; Tsen's theorem gives $\operatorname{cd} \leq 1$ for $C_1$ fields. (c) For $\mathbb{R}$ the periodicity of the cohomology of the group of order $2$ gives the nonvanishing second cohomology $\mathbb{Z}/2\mathbb{Z}$ computed above, so $\operatorname{cd}(\mathbb{R}) = 2$. For a number field the invariant maps at the places combine to a nonzero $H^2$, and the vanishing above degree $2$ follows from the theory of the Brauer group; the details pass through the completions and belong to Part II and . $\square$
+**Proof sketch.** (a) A trivial Galois group has trivial cohomology in positive degrees. (b) If some finite extension $L/K$ has $\operatorname{Br}(L) \neq 0$ then $H^2(L,\overline L{}^\times) \neq 0$ and $\operatorname{cd}(L) \geq 2$, so the vanishing for all finite extensions is necessary; it is sufficient by the cohomological interpretation of the Brauer group together with the periodicity of finite group cohomology. For finite fields, $\widehat{\mathbb{Z}} = G_{\mathbb{F}_q}$ acts trivially on $\overline{\mathbb{F}_q}^\times = \mu$, a divisible-by-finite group with no $p$-torsion for the relevant primes, so $H^2(\mathbb{F}_q,\overline{\mathbb{F}_q}^\times) = 0$ and $\operatorname{cd} = 1$; Tsen's theorem gives $\operatorname{cd} \leq 1$ for $C_1$ fields. (c) For $\mathbb{R}$ the periodicity of the cohomology of the group of order $2$ gives the nonvanishing second cohomology $\mathbb{Z}/2\mathbb{Z}$ computed above, so $\operatorname{cd}(\mathbb{R}) = 2$. For a number field the invariant maps at the places combine to a nonzero $H^2$, and the vanishing above degree $2$ follows from the theory of the Brauer group; the details pass through the completions and belong to Part II and .
 
 **Theorem (local invariant).** Let $K$ be a field complete with respect to a discrete valuation, with residue field $\mathbb{F}_q$. Then there is an isomorphism, the **invariant map**,
 

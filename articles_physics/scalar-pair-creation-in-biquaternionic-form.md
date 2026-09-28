@@ -10,7 +10,7 @@ Three statements organise the article.
 
 1. **The background is a classical central-valued field.** In the framework the scalar background that drives the process is a classical field $\tilde\sigma(\tilde{Q})=\sigma(\tilde{Q})e_0$ in the center, and the coupling that makes the mass spacetime-dependent is central. The background therefore enters the field equation exactly as the mass does, and the mode equation is an ordinary second-order oscillator equation with a time-dependent frequency.
 2. **Pair creation is a two-mode squeezing, and it conserves charge.** The transformation mixes $\hat a_{\mathbf k}$ with $\hat b_{-\mathbf k}^\dagger$; its generator commutes with the $U(1)$ charge, so pairs are created with zero net charge, and the mean pair number is $|\beta_{\mathbf k}|^2$. The framework's canonical continuous symmetry — the central $U(1)$ — is what makes the antiparticle well defined and the pair the unit of production.
-3. **The framework supplies no new mechanism.** The algebra contributes the central-valuedness of the background and the norm-form reading of the in- and out-frequencies; the transformation itself is the standard Bogoliubov mixing on an imported module, because the scalar sector has no native ladder in $\mathbb{B}$, as the companion Fock-space article proves.
+3. **The framework supplies no new mechanism.** The algebra contributes the central-valuedness of the background and the biquaternion-norm reading of the in- and out-frequencies; the transformation itself is the standard Bogoliubov mixing on an imported module, because the scalar sector has no native ladder in $\mathbb{B}$, as the companion Fock-space article proves.
 
 The article is organised as follows. The next section sets up the background and the mode equation. The following section defines the in- and out-regions and the Bogoliubov transformation. The next section derives the mean pair number and the vacuum persistence amplitude. The section after that works the exactly solvable sudden-quench limit and verifies it numerically. A section states the biquaternion reading and the charge-conservation statement. The article closes with the standard/open separation.
 
@@ -20,7 +20,7 @@ The article is organised as follows. The next section sets up the background and
 - Companion article *Bogoliubov Transformations in Biquaternionic Form*, for the general theory of the mixing, its canonical normalization, and its realization as a squeezing of the Fock space.
 - Companion article *The Klein–Gordon Equation in Biquaternionic Form*, for the field equation and its frequency branches.
 - Companion article *Noether's Theorem in Biquaternionic Form*, for the conserved $U(1)$ current $\tilde J\in\mathbb{M}_-$ and the charge.
-- Companion article *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*, for the material four-wavevector and the norm form.
+- Companion article *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*, for the material four-wavevector and the biquaternion norm.
 
 **Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_0=1,e_1,e_2,e_3$ with $e_k^2=-e_0$, and $i$ is the central scalar imaginary. The material and informational sectors are $\mathbb{M}_-$ and $\mathbb{M}_+$; the center is $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_0,ie_0\}$. The gradient is $\tilde{\nabla}=e_0\partial_{ict}+e_1\partial_x+e_2\partial_y+e_3\partial_z$ and $\Box=\tilde{\nabla}\bar{\tilde{\nabla}}=\partial_{ict}^2+\Delta$. Natural units $\hbar=c=1$ are used throughout, with $E_{\mathbf{p}}=\sqrt{\mathbf{p}^2+\mu^2}$ and $\mu=mc/\hbar$; dimensionful factors are restored where they carry meaning. The scalar field is $\tilde{\Phi}=\phi\,e_0$ with $\phi$ complex. A dot denotes $\partial_t$.
 
@@ -54,7 +54,7 @@ $$
 \omega_{\mathbf k}^2(t)=\mathbf{k}^2+\mu^2+g\,\sigma(t).
 $$
 
-This is the central object of the article: a set of independent harmonic oscillators with a time-dependent frequency. The biquaternion packaging is that the effective mass-squared is read off the norm form of a material four-wavevector whose time component is not conserved: the mass shell is the level set
+This is the central object of the article: a set of independent harmonic oscillators with a time-dependent frequency. The biquaternion packaging is that the effective mass-squared is read off the biquaternion norm of a material four-wavevector whose time component is not conserved: the mass shell is the level set
 
 $$
 N(\tilde{K}_{\mathbf k}(t))=-\left(\mu^2+g\,\sigma(t)\right)e_0 ,
@@ -62,7 +62,7 @@ N(\tilde{K}_{\mathbf k}(t))=-\left(\mu^2+g\,\sigma(t)\right)e_0 ,
 \tilde{K}_{\mathbf k}(t)=i\omega_{\mathbf k}(t)e_0+\mathbf{k},
 $$
 
-equivalently $\mu^2+g\,\sigma(t)=-\mathrm{Sc}(N(\tilde{K}_{\mathbf k}(t)))$, since $N(\tilde{K})=(\mathbf{k}^2-\omega^2)e_0$ for this four-wavevector. A time-dependent background is therefore a time-dependent level set of the norm form. The interaction itself is central: $\mathcal{L}_{\mathrm{int}}$ is a multiple of $e_0$, it commutes with the algebra, and no spinor structure is involved.
+equivalently $\mu^2+g\,\sigma(t)=-\mathrm{Sc}(N(\tilde{K}_{\mathbf k}(t)))$, since $N(\tilde{K})=(\mathbf{k}^2-\omega^2)e_0$ for this four-wavevector. A time-dependent background is therefore a time-dependent level set of the biquaternion norm. The interaction itself is central: $\mathcal{L}_{\mathrm{int}}$ is a multiple of $e_0$, it commutes with the algebra, and no spinor structure is involved.
 
 Two standard realizations fix the interpretation. A **mass quench** changes $\mu^2$ abruptly or smoothly in time; an **expanding background** makes the frequency depend on time through a scale factor, $u''+(\mathbf k^2+a^2(t)\mu^2)u=0$ in conformal time for a suitably coupled field. Both are captured by $\omega_{\mathbf k}^2(t)$ above, and both are standard cosmological and condensed-matter problems; the framework writes their operator in the notation of the center.
 
@@ -225,7 +225,7 @@ $$
 
 which is symmetric in $\omega_1\leftrightarrow\omega_2$, vanishes when the frequency does not change, and grows without bound as the ratio $\omega_2/\omega_1$ becomes extreme. Physically, a sudden change of the mass produces particles in proportion to the square of the fractional frequency change.
 
-**Verification.** Direct mode matching gives $|\beta|^2=0.125$ for $(\omega_1,\omega_2)=(1,2)$, in agreement with $(\omega_2-\omega_1)^2/(4\omega_1\omega_2)$; for $(3.7,1.1)$ it gives $0.4152334$; for $(0.5,0.9)$ it gives $0.0888889$; and for $(2,2)$ it gives zero. In every case $|\alpha|^2-|\beta|^2=1$ to fifteen decimal places. The formula is the standard sudden-limit result for a scalar field mode, and its biquaternion content is only that $\omega_1,\omega_2$ are the two asymptotically constant level sets of the norm form.
+**Verification.** Direct mode matching gives $|\beta|^2=0.125$ for $(\omega_1,\omega_2)=(1,2)$, in agreement with $(\omega_2-\omega_1)^2/(4\omega_1\omega_2)$; for $(3.7,1.1)$ it gives $0.4152334$; for $(0.5,0.9)$ it gives $0.0888889$; and for $(2,2)$ it gives zero. In every case $|\alpha|^2-|\beta|^2=1$ to fifteen decimal places. The formula is the standard sudden-limit result for a scalar field mode, and its biquaternion content is only that $\omega_1,\omega_2$ are the two asymptotically constant level sets of the biquaternion norm.
 
 ## The Biquaternion Reading
 
@@ -233,11 +233,11 @@ Four statements summarise what the framework contributes to scalar pair creation
 
 **The background is central.** The driving field is a classical element of $\mathbb{C}_{\mathbb{B}}$; it enters the equation only through the invariant $\mathrm{Sc}(\tilde{\Phi}^\dagger\tilde{\Phi})$, it commutes with every element of the algebra, and it carries no spinor index. Pair creation by a scalar background is therefore a process in the center, and the state module is not acted on by the background.
 
-**The in- and out-modes are the parent's plane waves at two masses.** Each asymptotic region has its own on-shell level set $N(\tilde{K})=-\mu^2-g\sigma_{\mathrm{in/out}}$, and the Bogoliubov coefficients are the overlap of two such plane-wave systems. The mass shell, which is a level set of the norm form, is time-dependent during the transition and constant on either side.
+**The in- and out-modes are the parent's plane waves at two masses.** Each asymptotic region has its own on-shell level set $N(\tilde{K})=-\mu^2-g\sigma_{\mathrm{in/out}}$, and the Bogoliubov coefficients are the overlap of two such plane-wave systems. The mass shell, which is a level set of the biquaternion norm, is time-dependent during the transition and constant on either side.
 
 **The charge selects pairs.** The framework's canonical continuous symmetry is the central $U(1)$, whose Noether current $\tilde J$ lies in $\mathbb{M}_-$ and whose charge is the difference of the particle and antiparticle number operators. Because the generator of the mixing commutes with the charge, the background creates pairs and not single quanta; the pair is the framework's unit of production for the same reason it is the standard one.
 
-**The algebra supplies no mechanism of its own.** The mixing is a Bogoliubov transformation on the Fock space built from an imported module; the scalar sector has no native ladder in $\mathbb{B}$, because no pair in the algebra realizes $[\tilde a,\tilde a^\dagger]=e_0$. The framework contributes the central-valued background, the norm-form reading of the asymptotic frequencies, and the notation; it contributes no new creation mechanism. The process is standard scalar quantum field theory in an external background, transcribed.
+**The algebra supplies no mechanism of its own.** The mixing is a Bogoliubov transformation on the Fock space built from an imported module; the scalar sector has no native ladder in $\mathbb{B}$, because no pair in the algebra realizes $[\tilde a,\tilde a^\dagger]=e_0$. The framework contributes the central-valued background, the biquaternion-norm reading of the asymptotic frequencies, and the notation; it contributes no new creation mechanism. The process is standard scalar quantum field theory in an external background, transcribed.
 
 The standard realizations are worth naming for orientation. Cosmological particle creation in an expanding universe, with the scale factor playing the role of the background, and the dynamical Casimir effect, in which a moving boundary modulates the modes, are the standard examples; the electromagnetic analogue — pair creation in a strong electric field — is the Schwinger process, and it belongs to the charged-field setting rather than to the free scalar background treated here. The framework's notation applies to all of them through the mode equation, and modifies none of them.
 
@@ -255,11 +255,11 @@ The standard realizations are worth naming for orientation. Cosmological particl
 
 ## Summary
 
-Scalar pair creation is the production of particle–antiparticle pairs by a classical background that breaks time-translation invariance. In the framework the background is a central-valued classical field $\tilde\sigma=\sigma e_0$ coupling through $\mathrm{Sc}(\tilde{\Phi}^\dagger\tilde{\Phi})$, so a homogeneous background makes the frequency time-dependent, $\ddot u_{\mathbf k}+\omega_{\mathbf k}^2(t)u_{\mathbf k}=0$ with $\omega_{\mathbf k}^2=\mathbf{k}^2+\mu^2+g\sigma(t)$, and the effective mass-squared is the time-dependent level set of the norm form of the material four-wavevector, $\mu^2+g\sigma=-\mathrm{Sc}(N(\tilde{K}))$. The in- and out-mode decompositions are related by a Bogoliubov transformation mixing $\hat a_{\mathbf k}$ with $\hat b_{-\mathbf k}^\dagger$, with $|\alpha_{\mathbf k}|^2-|\beta_{\mathbf k}|^2=1$.
+Scalar pair creation is the production of particle–antiparticle pairs by a classical background that breaks time-translation invariance. In the framework the background is a central-valued classical field $\tilde\sigma=\sigma e_0$ coupling through $\mathrm{Sc}(\tilde{\Phi}^\dagger\tilde{\Phi})$, so a homogeneous background makes the frequency time-dependent, $\ddot u_{\mathbf k}+\omega_{\mathbf k}^2(t)u_{\mathbf k}=0$ with $\omega_{\mathbf k}^2=\mathbf{k}^2+\mu^2+g\sigma(t)$, and the effective mass-squared is the time-dependent level set of the biquaternion norm of the material four-wavevector, $\mu^2+g\sigma=-\mathrm{Sc}(N(\tilde{K}))$. The in- and out-mode decompositions are related by a Bogoliubov transformation mixing $\hat a_{\mathbf k}$ with $\hat b_{-\mathbf k}^\dagger$, with $|\alpha_{\mathbf k}|^2-|\beta_{\mathbf k}|^2=1$.
 
 The transformation is charge neutral: its generator $\hat G_{\mathbf k}=\hat a_{\mathbf k}^\dagger\hat b_{-\mathbf k}^\dagger-\hat a_{\mathbf k}\hat b_{-\mathbf k}$ commutes with the $U(1)$ charge, so the background creates pairs and not single quanta. The in-vacuum is a two-mode squeezed state, the mean number of created pairs per mode is $|\beta_{\mathbf k}|^2$, and the vacuum persistence amplitude is $|\langle0_{\mathrm{out}}|0_{\mathrm{in}}\rangle|^2=1/|\alpha_{\mathbf k}|^2=1/(1+|\beta_{\mathbf k}|^2)$, with the continuum product $\exp\big(-\int\frac{d^3k}{(2\pi)^3}\ln(1+|\beta_{\mathbf k}|^2)\big)$. On the sudden-quench background $\omega_1\to\omega_2$ the result is $|\beta|^2=(\omega_2-\omega_1)^2/(4\omega_1\omega_2)$, verified numerically, with $|\alpha|^2-|\beta|^2=1$ to fifteen decimal places.
 
-The process is standard scalar quantum field theory in an external background, transcribed into the framework's notation. The framework contributes the central-valued background, the norm-form reading of the asymptotic frequencies, and the charge selection rule; it contributes no creation mechanism of its own, because the scalar sector has no native ladder in $\mathbb{B}$. The general Bogoliubov theory is imported from the standard literature and from the generalities of the second-quantized framework, and is not re-derived here.
+The process is standard scalar quantum field theory in an external background, transcribed into the framework's notation. The framework contributes the central-valued background, the biquaternion-norm reading of the asymptotic frequencies, and the charge selection rule; it contributes no creation mechanism of its own, because the scalar sector has no native ladder in $\mathbb{B}$. The general Bogoliubov theory is imported from the standard literature and from the generalities of the second-quantized framework, and is not re-derived here.
 
 ## Summary of Notation
 
@@ -272,7 +272,7 @@ The process is standard scalar quantum field theory in an external background, t
 | $\tilde{\Phi}=\phi\,e_0$, $\tilde\sigma=\sigma\,e_0$ | Scalar field and central background |
 | $\mathcal{L}_{\mathrm{int}}=-g\,\mathrm{Sc}(\tilde{\Phi}^\dagger\tilde{\Phi})\sigma$ | Central interaction |
 | $\omega_{\mathbf k}^2(t)=\mathbf{k}^2+\mu^2+g\sigma(t)$ | Time-dependent frequency |
-| $\tilde{K}_{\mathbf k}(t)=i\omega_{\mathbf k}(t)e_0+\mathbf{k}$ | Material four-wavevector; $N(\tilde{K})$ its norm form |
+| $\tilde{K}_{\mathbf k}(t)=i\omega_{\mathbf k}(t)e_0+\mathbf{k}$ | Material four-wavevector; $N(\tilde{K})$ its biquaternion norm |
 | $\omega_{\mathrm{in}},\omega_{\mathrm{out}}$ | Asymptotic frequencies |
 | $\alpha_{\mathbf k},\beta_{\mathbf k}$ | Bogoliubov coefficients, $\vert\alpha\vert^2-\vert\beta\vert^2=1$ |
 | $r_{\mathbf k}$, $\tanh r_{\mathbf k}=\vert\beta_{\mathbf k}/\alpha_{\mathbf k}\vert$ | Squeezing parameter |

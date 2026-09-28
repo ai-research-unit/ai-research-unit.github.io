@@ -16,13 +16,13 @@ $$
 \mathcal{S}(\tilde{\rho}) = -2\,\mathrm{Sc}\!\left(\tilde{\rho}\log\tilde{\rho}\right) = h(|\mathbf{r}|),
 $$
 
-which is a function of the sector's norm form. Erasure is the reset of a state to a fixed pointer value; it is a completely positive trace-preserving map of **rank two** in the algebra, and it lowers $\mathcal{S}$ by exactly $\log 2$ for a full bit. The second law, applied to the memory together with its environment, then forces the environment's entropy upward by the same amount, and the heat that carries that entropy is the material cost. The exchange rate is the temperature $T$, and the price is $k_B T \log 2$ per bit.
+which is a function of the sector's biquaternion norm. Erasure is the reset of a state to a fixed pointer value; it is a completely positive trace-preserving map of **rank two** in the algebra, and it lowers $\mathcal{S}$ by exactly $\log 2$ for a full bit. The second law, applied to the memory together with its environment, then forces the environment's entropy upward by the same amount, and the heat that carries that entropy is the material cost. The exchange rate is the temperature $T$, and the price is $k_B T \log 2$ per bit.
 
-The biquaternion content of the article is structural. The two ledgers of the exchange are the norm forms of the two sectors, and the two norm forms are exchanged by the central factor $i$: for every element, $N(i\tilde{Q}) = -N(\tilde{Q})$, so multiplication by $i$ maps the material sector to the informational sector and reverses the sign of the quadratic form. The material ledger and the informational ledger are thus mirror images under the algebra's imaginary unit, and the temperature is the thermodynamic rate at which one is converted into the other. What the framework does **not** supply is the numerical rate itself: $k_B T \log 2$ is a theorem of thermodynamics and statistical mechanics, transcribed here as standard, and the framework's role is to exhibit the two sectors, their entropies, and the exchange of their quadratic forms.
+The biquaternion content of the article is structural. The two ledgers of the exchange are the biquaternion norms of the two sectors, and the two biquaternion norms are exchanged by the central factor $i$: for every element, $N(i\tilde{Q}) = -N(\tilde{Q})$, so multiplication by $i$ maps the material sector to the informational sector and reverses the sign of the quadratic form. The material ledger and the informational ledger are thus mirror images under the algebra's imaginary unit, and the temperature is the thermodynamic rate at which one is converted into the other. What the framework does **not** supply is the numerical rate itself: $k_B T \log 2$ is a theorem of thermodynamics and statistical mechanics, transcribed here as standard, and the framework's role is to exhibit the two sectors, their entropies, and the exchange of their quadratic forms.
 
 The treatment is classical. The memory is a classical bit: a state diagonal in a pointer basis, with no coherences, and its entropy is the Shannon entropy of its pointer distribution. The erasure map is the classical reset. Nothing quantum is used, and the standard results of quantum thermodynamics — the entropy of a thermal state, the free-energy balance of a quantum channel — are not developed; where they are cited, they are cited as the standard context.
 
-The conventions are those of the companion articles. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; the basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$; $i$ is the central scalar imaginary; the sectors are $\mathbb{M}_+$ (Hermitian states) and $\mathbb{M}_-$ (anti-Hermitian energy-momentum); the trace is $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$ with $\mathrm{Tr}(e_0) = 2$; the norm form is $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$; and the entropy is measured in nats, the thermodynamic entropy being $k_B$ times it.
+The conventions are those of the companion articles. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; the basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$; $i$ is the central scalar imaginary; the sectors are $\mathbb{M}_+$ (Hermitian states) and $\mathbb{M}_-$ (anti-Hermitian energy-momentum); the trace is $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$ with $\mathrm{Tr}(e_0) = 2$; the biquaternion norm is $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$; and the entropy is measured in nats, the thermodynamic entropy being $k_B$ times it.
 
 ## Landauer's Principle
 
@@ -113,7 +113,7 @@ N(i\tilde{Q}) = (i\tilde{Q})\,\overline{(i\tilde{Q})}
 = -N(\tilde{Q}) .
 $$
 
-That is, multiplication by $i$ maps $\mathbb{M}_-$ to $\mathbb{M}_+$ and reverses the sign of the norm form. The energy-momentum vector of a material body, whose norm form is non-positive, is carried by $i$ to an element of the informational sector whose norm form is non-negative — the same sign convention that makes the state space of $\mathbb{M}_+$ the future cone of $N$. The two ledgers of the exchange are mirror images under the algebra's imaginary unit.
+That is, multiplication by $i$ maps $\mathbb{M}_-$ to $\mathbb{M}_+$ and reverses the sign of the biquaternion norm. The energy-momentum vector of a material body, whose biquaternion norm is non-positive, is carried by $i$ to an element of the informational sector whose biquaternion norm is non-negative — the same sign convention that makes the state space of $\mathbb{M}_+$ the future cone of $N$. The two ledgers of the exchange are mirror images under the algebra's imaginary unit.
 
 This is a structural statement and it should not be over-read. The factor $i$ exchanges the sectors and their quadratic forms; it does not by itself produce the conversion factor $T$, and it does not produce the value $\log 2$ per bit. Those are thermodynamic facts about the memory and its environment, and the framework expresses them rather than deriving them. What the factor $i$ does supply is the reason the exchange is natural in this algebra: the quantity that carries the entropy and the quantity that carries the heat are the two real forms of the same complexified object.
 
@@ -177,7 +177,7 @@ The entropy removed is the state's own, whether the state is a classical mixture
 
 ### Erasure Is Irreversible
 
-The erasure map is a contraction with an empty spectrum: its linear part on the Bloch vector is $L = 0$, so in the language of the companion article *The Lyapunov Exponent and Information Loss in the Biquaternion Framework* the state is contracted to a point and no distinction survives. The map is not invertible — infinitely many states share the image $\tilde{P}_+$ — and it is the prototype of an **irreversible** operation. A reversible operation, by contrast, is a rotor conjugation, which preserves the norm form and increases no entropy. Erasure is where the framework's reversible and irreversible classes separate, and it is the operation that carries the entire thermodynamic cost.
+The erasure map is a contraction with an empty spectrum: its linear part on the Bloch vector is $L = 0$, so in the language of the companion article *The Lyapunov Exponent and Information Loss in the Biquaternion Framework* the state is contracted to a point and no distinction survives. The map is not invertible — infinitely many states share the image $\tilde{P}_+$ — and it is the prototype of an **irreversible** operation. A reversible operation, by contrast, is a rotor conjugation, which preserves the biquaternion norm and increases no entropy. Erasure is where the framework's reversible and irreversible classes separate, and it is the operation that carries the entire thermodynamic cost.
 
 ## The Material Cost and the Exchange Rate
 
@@ -209,7 +209,7 @@ $$
 Q \ge k_B T\,\mathcal{S}(\tilde{\rho}) ,
 $$
 
-so the cost is the entropy functional of the erased state, read in units of $k_B T$. The material cost is thus controlled by the norm form that controls the entropy: a state near the null cone is cheap to erase, and the maximally mixed state is the most expensive, at $k_BT\log2$.
+so the cost is the entropy functional of the erased state, read in units of $k_B T$. The material cost is thus controlled by the biquaternion norm that controls the entropy: a state near the null cone is cheap to erase, and the maximally mixed state is the most expensive, at $k_BT\log2$.
 
 ### A Worked Model
 
@@ -241,9 +241,9 @@ The accounting separates the operations of the framework into two classes, and t
 | Coarse-graining | conditional expectation $\Phi$ | $\ge 0$ | $\le 0$ |
 | Erasure | reset to $\tilde{P}_+(\hat{\mathbf{n}})$ | $-\mathcal{S}(\tilde{\rho})$ on the memory, $+\mathcal{S}(\tilde{\rho})$ on the environment | $-\infty$ (linear part $L=0$) |
 
-A **reversible** operation is an isometry: it preserves the norm form, produces no entropy, and has a vanishing Lyapunov spectrum. An **irreversible** operation is a contraction: it destroys distinctions, produces entropy in the combined account, and has non-positive exponents. Erasure is the extreme case of the second class. The thermodynamic cost appears **only** in the second class, and it appears as the compensating environment entropy required by the second law. This is the operational meaning of the material–informational exchange: the informational sector's reversible operations are free, and its irreversible operations are paid for in the material sector.
+A **reversible** operation is an isometry: it preserves the biquaternion norm, produces no entropy, and has a vanishing Lyapunov spectrum. An **irreversible** operation is a contraction: it destroys distinctions, produces entropy in the combined account, and has non-positive exponents. Erasure is the extreme case of the second class. The thermodynamic cost appears **only** in the second class, and it appears as the compensating environment entropy required by the second law. This is the operational meaning of the material–informational exchange: the informational sector's reversible operations are free, and its irreversible operations are paid for in the material sector.
 
-It is worth stating what is not claimed. The framework does not derive the Landauer bound; the bound follows from the second law and the Clausius relation, both standard. The framework's contribution is the exact expression of the informational debit — the entropy functional of the state, a function of the norm form — and the identification of the material credit with the energy component of a material-sector four-vector. The rate $T$ is thermodynamic input.
+It is worth stating what is not claimed. The framework does not derive the Landauer bound; the bound follows from the second law and the Clausius relation, both standard. The framework's contribution is the exact expression of the informational debit — the entropy functional of the state, a function of the biquaternion norm — and the identification of the material credit with the energy component of a material-sector four-vector. The rate $T$ is thermodynamic input.
 
 ## What Is Derived and What Is Imported
 
@@ -269,9 +269,9 @@ $$
 Q \ge k_B T\,\mathcal{S}(\tilde{\rho}) \qquad (\text{a full bit: } k_BT\log 2).
 $$
 
-The exchange rate between the sectors is $k_BT$ per nat. The two ledgers are related by the central factor $i$, which exchanges the sectors and reverses the sign of the norm form, $N(i\tilde{Q}) = -N(\tilde{Q})$.
+The exchange rate between the sectors is $k_BT$ per nat. The two ledgers are related by the central factor $i$, which exchanges the sectors and reverses the sign of the biquaternion norm, $N(i\tilde{Q}) = -N(\tilde{Q})$.
 
-Reversible operations — rotor conjugations — preserve the norm form, produce no entropy and have a vanishing Lyapunov spectrum; irreversible operations — coarse-grainings, and erasure above all — contract, produce entropy in the combined account, and are paid for in the material sector. This is the material–informational exchange: the reversible part of the informational sector is free, and the irreversible part costs $k_BT$ per nat, at the exchange rate set by the temperature.
+Reversible operations — rotor conjugations — preserve the biquaternion norm, produce no entropy and have a vanishing Lyapunov spectrum; irreversible operations — coarse-grainings, and erasure above all — contract, produce entropy in the combined account, and are paid for in the material sector. This is the material–informational exchange: the reversible part of the informational sector is free, and the irreversible part costs $k_BT$ per nat, at the exchange rate set by the temperature.
 
 ## Summary of Notation
 
@@ -285,7 +285,7 @@ Reversible operations — rotor conjugations — preserve the norm form, produce
 | $\tilde{P}_\pm(\hat{\mathbf{n}}) = \tfrac{1}{2}(e_0\pm i\hat{\mathbf{n}})$ | Pointer idempotents (logical states) |
 | $\tilde{\rho} = p_+\tilde{P}_+ + p_-\tilde{P}_-$ | Classical bit (diagonal state) |
 | $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$ | Trace, $\mathrm{Tr}(e_0)=2$ |
-| $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$ | Norm form |
+| $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$ | Biquaternion norm |
 | $N(i\tilde{Q}) = -N(\tilde{Q})$ | Sector exchange of the quadratic form |
 | $\mathcal{S}(\tilde{\rho}) = -2\,\mathrm{Sc}(\tilde{\rho}\log\tilde{\rho}) = h(|\mathbf{r}|)$ | Entropy functional (nats) |
 | $h(x) = -\tfrac{1+x}{2}\log\tfrac{1+x}{2} - \tfrac{1-x}{2}\log\tfrac{1-x}{2}$ | Binary entropy, bias argument: $h(0)=\log 2$, $h(1)=0$ |

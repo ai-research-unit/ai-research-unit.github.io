@@ -31,7 +31,7 @@ The pair $(S^n_R, g_R)$ is a compact Riemannian manifold of dimension $n$; for $
 
 **Proposition.** The round metric is well defined (the tangent space at $x$ is the orthogonal complement of $x$), it is positive definite, and the inclusion $S^n_R \hookrightarrow \mathbb{R}^{n+1}$ is an isometric embedding with second fundamental form $\mathrm{II}(X, Y) = -\frac{1}{R}g_R(X, Y)N$ for the outward unit normal $N(x) = x/R$.
 
-**Proof.** Differentiate $\langle x, x\rangle = R^2$ along a curve in the sphere to get $\langle x, x'\rangle = 0$, so $T_xS^n_R = x^\perp$; the restriction of the positive definite form is positive definite. The second fundamental form is computed from $\nabla_XN = X/R$ in the flat connection. $\square$
+**Proof.** Differentiate $\langle x, x\rangle = R^2$ along a curve in the sphere to get $\langle x, x'\rangle = 0$, so $T_xS^n_R = x^\perp$; the restriction of the positive definite form is positive definite. The second fundamental form is computed from $\nabla_XN = X/R$ in the flat connection.
 
 **Theorem.** The round sphere has constant sectional curvature $K = 1/R^2$; its geodesics are the **great circles**, the intersections $S^n_R \cap P$ with two-dimensional linear subspaces $P$ through the origin, parametrised proportionally to arclength; and its distance is
 
@@ -41,7 +41,7 @@ $$
 
 where $\theta(x, y) \in [0, \pi]$ is the **central angle** between the two position vectors.
 
-**Proof sketch.** The Gauss equation with the second fundamental form above gives $K = R^{-2}$, since for orthonormal $X, Y$ in the tangent plane, $K = g(\mathrm{II}(X, X), \mathrm{II}(Y, Y)) - |\mathrm{II}(X, Y)|^2 = R^{-2}$. A great circle has constant speed and its acceleration is normal to the sphere, hence tangential acceleration zero, so it is a geodesic; conversely the geodesic equation on the sphere has as its solutions the intersections with the two-planes, by isometry and homogeneity. The distance formula is the polar-coordinate computation: the minimising curve is the shorter arc of the great circle through $x$ and $y$, subtending the central angle $\theta$. $\square$
+**Proof sketch.** The Gauss equation with the second fundamental form above gives $K = R^{-2}$, since for orthonormal $X, Y$ in the tangent plane, $K = g(\mathrm{II}(X, X), \mathrm{II}(Y, Y)) - |\mathrm{II}(X, Y)|^2 = R^{-2}$. A great circle has constant speed and its acceleration is normal to the sphere, hence tangential acceleration zero, so it is a geodesic; conversely the geodesic equation on the sphere has as its solutions the intersections with the two-planes, by isometry and homogeneity. The distance formula is the polar-coordinate computation: the minimising curve is the shorter arc of the great circle through $x$ and $y$, subtending the central angle $\theta$.
 
 **Corollary.** The diameter of $S^n_R$ is $\pi R$, attained exactly by antipodal pairs $y = -x$, and two distinct non-antipodal points are joined by exactly one minimising geodesic; antipodal points are joined by infinitely many, each of length $\pi R$. Every geodesic is periodic of length $2\pi R$.
 
@@ -59,7 +59,7 @@ The volume formula uses the Gamma function, which is a closed form of an integra
 
 **Theorem.** The isometry group of the round sphere is the orthogonal group $O(n+1)$, acting on $S^n_R$ by restriction, and the group of orientation-preserving isometries is $SO(n+1)$. The action is transitive on points and, after a point is fixed, transitive on the orthonormal frames of the tangent space.
 
-**Proof.** Every $A \in O(n+1)$ preserves the ambient inner product and the sphere, so its restriction is an isometry. Conversely an isometry of the sphere extends to a linear map of $\mathbb{R}^{n+1}$ preserving the inner product: an isometry $F$ with $F(x) = y$ composes with an element of $O(n+1)$ to fix $x$; the composition of the differential with the identity shows the extension is linear, and the Myers–Steenrod theorem of *Riemannian Geometry* gives the smoothness. $\square$
+**Proof.** Every $A \in O(n+1)$ preserves the ambient inner product and the sphere, so its restriction is an isometry. Conversely an isometry of the sphere extends to a linear map of $\mathbb{R}^{n+1}$ preserving the inner product: an isometry $F$ with $F(x) = y$ composes with an element of $O(n+1)$ to fix $x$; the composition of the differential with the identity shows the extension is linear, and the Myers–Steenrod theorem of *Riemannian Geometry* gives the smoothness.
 
 **Corollary.** Two points are related by an isometry if and only if they have the same distance from a fixed base point, and the round sphere is a homogeneous space $O(n+1)/O(n)$.
 
@@ -77,7 +77,7 @@ $$
 A + B + C = \pi + \frac{\Delta}{R^2}, \qquad \text{so} \qquad \Delta = R^2(A + B + C - \pi).
 $$
 
-**Proof sketch.** The lune bounded by the two great circles through a vertex of angle $A$ has area $2AR^2$, and the three such lunes, together with their antipodal lunes, have total area $4R^2(A+B+C)$. These six lunes cover the sphere with multiplicity one at every point except on the triangle and on its antipodal triangle, where the multiplicity is three; counting the eight triangles cut out by the three great circles therefore gives $4R^2(A+B+C) = 4\pi R^2 + 4\Delta$, which rearranges to the statement. $\square$
+**Proof sketch.** The lune bounded by the two great circles through a vertex of angle $A$ has area $2AR^2$, and the three such lunes, together with their antipodal lunes, have total area $4R^2(A+B+C)$. These six lunes cover the sphere with multiplicity one at every point except on the triangle and on its antipodal triangle, where the multiplicity is three; counting the eight triangles cut out by the three great circles therefore gives $4R^2(A+B+C) = 4\pi R^2 + 4\Delta$, which rearranges to the statement.
 
 **Corollary.** The angle sum of a spherical triangle exceeds $\pi$, by the **spherical excess** $\Delta/R^2$; as $R \to \infty$ with the side lengths held fixed the excess tends to zero and the Euclidean angle sum $\pi$ is recovered.
 
@@ -91,7 +91,7 @@ $$
 
 and cyclically in the other five pairings.
 
-**Proof sketch.** Place the vertices as unit vectors $u, v, w$ with angles $a = \arccos\langle v, w\rangle$, $b = \arccos\langle w, u\rangle$, $c = \arccos\langle u, v\rangle$, and let $A, B, C$ be the angles between the tangent vectors along the sides. The decomposition of $w$ in the basis $u$ and an orthonormal vector in the plane $\mathrm{span}(u, w)$ gives $\cos a = \cos b\cos c + \sin b\sin c\cos A$; rearranging the labels gives the law. $\square$
+**Proof sketch.** Place the vertices as unit vectors $u, v, w$ with angles $a = \arccos\langle v, w\rangle$, $b = \arccos\langle w, u\rangle$, $c = \arccos\langle u, v\rangle$, and let $A, B, C$ be the angles between the tangent vectors along the sides. The decomposition of $w$ in the basis $u$ and an orthonormal vector in the plane $\mathrm{span}(u, w)$ gives $\cos a = \cos b\cos c + \sin b\sin c\cos A$; rearranging the labels gives the law.
 
 **Theorem (spherical law of sines).** With the same notation,
 
@@ -99,7 +99,7 @@ $$
 \frac{\sin a}{\sin A} = \frac{\sin b}{\sin B} = \frac{\sin c}{\sin C}.
 $$
 
-**Proof sketch.** Compute the volume of the parallelepiped spanned by $u, v, w$ in two ways, using the spherical law of cosines in one relation and the antisymmetry of the determinant in the other. $\square$
+**Proof sketch.** Compute the volume of the parallelepiped spanned by $u, v, w$ in two ways, using the spherical law of cosines in one relation and the antisymmetry of the determinant in the other.
 
 **Theorem (Pythagoras for right spherical triangles).** If $C = \pi/2$ then
 
@@ -107,7 +107,7 @@ $$
 \cos c = \cos a\cos b, \qquad \cos A = \frac{\tan b}{\tan c}, \qquad \sin A = \frac{\sin a}{\sin c}.
 $$
 
-**Proof.** Put $C = \pi/2$ in the law of cosines for the first formula; the remaining two are the law of sines and the law of cosines applied to the polar triangle. $\square$
+**Proof.** Put $C = \pi/2$ in the law of cosines for the first formula; the remaining two are the law of sines and the law of cosines applied to the polar triangle.
 
 **Corollary (the Euclidean limit).** For small sides $a, b, c \ll 1$ the expansions $\cos x = 1 - x^2/2 + O(x^4)$ and $\sin x = x + O(x^3)$ recover the Euclidean law of cosines $c^2 = a^2 + b^2 - 2ab\cos C$ and the Euclidean Pythagorean theorem $c^2 = a^2 + b^2$. Spherical trigonometry therefore contains Euclidean trigonometry as its flat limit, which is the statement that the sphere of large radius approaches the plane.
 
@@ -117,7 +117,7 @@ $$
 
 **Theorem.** The polar triangle has sides $a' = \pi - A$, $b' = \pi - B$, $c' = \pi - C$ and angles $A' = \pi - a$, $B' = \pi - b$, $C' = \pi - c$.
 
-**Proof.** The side $B'C'$ lies on the great circle through the poles of $AC$ and $AB$, which is the polar of $A$; the angle between the planes through the origin associated with the sides is the supplement of the corresponding side of the original triangle. $\square$
+**Proof.** The side $B'C'$ lies on the great circle through the poles of $AC$ and $AB$, which is the polar of $A$; the angle between the planes through the origin associated with the sides is the supplement of the corresponding side of the original triangle.
 
 **Corollary.** Every theorem about sides has a dual statement about angles, and conversely; this is the **duality** of spherical trigonometry, and it is the reason the laws of cosines and sines come in the two interchanged forms.
 
@@ -141,11 +141,11 @@ $$
 
 so that the diameter of elliptic space is $\pi/2$, half that of the sphere.
 
-**Proof.** The quotient metric is well defined by equivariance, and the curvature is unchanged by the local isometry of the covering $S^n \to \mathbb{E}^n$. The distance in the quotient is the minimum over the lifts, and the two lifts of a point are antipodal, so the two candidates are $\theta$ and $\pi - \theta$. $\square$
+**Proof.** The quotient metric is well defined by equivariance, and the curvature is unchanged by the local isometry of the covering $S^n \to \mathbb{E}^n$. The distance in the quotient is the minimum over the lifts, and the two lifts of a point are antipodal, so the two candidates are $\theta$ and $\pi - \theta$.
 
 **Theorem (no parallels).** In elliptic geometry any two lines meet in exactly one point, so the parallel postulate fails with no parallels at all.
 
-**Proof.** A line is the image of a great circle; two great circles meet in an antipodal pair, which is a single point in the quotient. $\square$
+**Proof.** A line is the image of a great circle; two great circles meet in an antipodal pair, which is a single point in the quotient.
 
 **Remark (the two conventions of the elliptic plane).** The sphere itself is sometimes called the **double elliptic plane**, because each pair of antipodal points is a single point of the elliptic plane doubled; this is why the sphere is simply connected while the elliptic plane has fundamental group $\mathbb{Z}/2\mathbb{Z}$. Both are models of positive curvature: the sphere is the simply connected one, and the elliptic plane is the quotient by the antipodal involution, the simplest spherical space form.
 
@@ -155,7 +155,7 @@ so that the diameter of elliptic space is $\pi/2$, half that of the sphere.
 
 **Theorem.** Every finite subgroup of $SO(3)$ is one of: the cyclic group $C_m$ of rotations about a fixed axis; the dihedral group $D_m$ of order $2m$ preserving a regular $m$-gon; or one of the three groups of the Platonic solids, the tetrahedral group $A_4$ of order $12$, the octahedral group $S_4$ of order $24$ and the icosahedral group $A_5$ of order $60$.
 
-**Proof sketch.** The group acts on the sphere; the orbits of the vertices of the convex hull of a generic orbit give a spherical tiling whose faces are congruent spherical polygons. Let $v, e, f$ be the numbers of vertices, edges and faces of the tiling and let $q$ be the number of faces at a vertex. Counting incidences gives $qf = 2e$ and $pf = 2e$ for the number $p$ of sides of a face, and the spherical Euler formula $v - e + f = 2$ together with the angle-sum formula gives $1/p + 1/q > 1/2$. The integer solutions with $p, q \geq 2$ are $(p, q) = (2, q)$ — the cyclic and dihedral families — and $(3,3), (3,4), (3,5), (4,3), (5,3)$ — the five Platonic cases, the last three up to interchange being $A_4$, $S_4$ and $A_5$. $\square$
+**Proof sketch.** The group acts on the sphere; the orbits of the vertices of the convex hull of a generic orbit give a spherical tiling whose faces are congruent spherical polygons. Let $v, e, f$ be the numbers of vertices, edges and faces of the tiling and let $q$ be the number of faces at a vertex. Counting incidences gives $qf = 2e$ and $pf = 2e$ for the number $p$ of sides of a face, and the spherical Euler formula $v - e + f = 2$ together with the angle-sum formula gives $1/p + 1/q > 1/2$. The integer solutions with $p, q \geq 2$ are $(p, q) = (2, q)$ — the cyclic and dihedral families — and $(3,3), (3,4), (3,5), (4,3), (5,3)$ — the five Platonic cases, the last three up to interchange being $A_4$, $S_4$ and $A_5$.
 
 **Corollary.** The finite subgroups of $O(3)$ that act freely on $S^2$ — those containing no rotation with a fixed point — are the trivial group and the cyclic groups of order $2$ acting by the antipodal map: the sphere and the elliptic space are the only two-dimensional spherical space forms up to isometry. In particular a finite free action of $SO(3)$ on $S^2$ is trivial, because every nontrivial rotation has an axis.
 
@@ -171,7 +171,7 @@ $$
 
 is a surjective two-to-one Lie group homomorphism with kernel $\{\pm 1\}$. It identifies $S^3$ with $SU(2)$ and exhibits $S^3$ as the double cover of $SO(3)$.
 
-**Proof sketch.** Unit quaternions are closed under multiplication and the norm is multiplicative, so $S^3$ is a group; conjugation by a unit quaternion preserves the imaginary subspace and the norm, so $\Phi(q) \in SO(3)$; the kernel consists of the unit quaternions commuting with every imaginary quaternion, namely $\{\pm 1\}$; both sides have dimension three, so the differential is an isomorphism and the map is a covering. $\square$
+**Proof sketch.** Unit quaternions are closed under multiplication and the norm is multiplicative, so $S^3$ is a group; conjugation by a unit quaternion preserves the imaginary subspace and the norm, so $\Phi(q) \in SO(3)$; the kernel consists of the unit quaternions commuting with every imaginary quaternion, namely $\{\pm 1\}$; both sides have dimension three, so the differential is an isomorphism and the map is a covering.
 
 **Corollary.** The fundamental group of $SO(3)$ is $\mathbb{Z}/2\mathbb{Z}$, and $S^3$ is simply connected; the two are the two-dimensional rotation groups that the quaternion algebra distinguishes.
 
@@ -187,7 +187,7 @@ using the identification of the imaginary subspace with $\mathbb{R}^3$ and restr
 
 **Theorem.** The Hopf map is a smooth submersion, its fibre over every point is a great circle of $S^3$, and it is a fibre bundle with structure group $U(1) = S^1$; the sphere $S^3$ is the total space of a principal $S^1$-bundle over $S^2$.
 
-**Proof sketch.** The map $\Phi$ has image $SO(3)$ and the stabiliser of a point of $S^2$ is a circle $SO(2)$, so the preimage of a point under the quotient $S^3 \to SO(3) \to S^2$ is a coset of the circle $\{e^{i\theta}\}$, a great circle. The local trivialisations come from local sections of the fibration, and the transition functions are circle-valued. The bundle theory is *Fibre Bundles, Connections and Curvature*. $\square$
+**Proof sketch.** The map $\Phi$ has image $SO(3)$ and the stabiliser of a point of $S^2$ is a circle $SO(2)$, so the preimage of a point under the quotient $S^3 \to SO(3) \to S^2$ is a coset of the circle $\{e^{i\theta}\}$, a great circle. The local trivialisations come from local sections of the fibration, and the transition functions are circle-valued. The bundle theory is *Fibre Bundles, Connections and Curvature*.
 
 **Corollary.** The Hopf fibration is the standard nontrivial principal circle bundle and the first example of the relation between the homotopy groups of spheres; it realises $S^3$ as the total space of a bundle whose base is $S^2$ and whose fibre is $S^1$, and it is the geometric form of the double cover $SU(2) \to SO(3)$.
 
@@ -197,7 +197,7 @@ using the identification of the imaginary subspace with $\mathbb{R}^3$ and restr
 
 **Theorem.** Every spherical space form is isometric to a quotient $S^n/\Gamma$, where $\Gamma$ is a finite subgroup of $O(n+1)$ acting freely on $S^n$. In particular, a spherical space form is covered by the round sphere, its fundamental group is $\Gamma$, and its curvature is $+1$.
 
-**Proof sketch.** The universal cover is complete, simply connected and of constant curvature $+1$, hence is isometric to the round sphere by Cartan's classification, and the covering group is a finite group of isometries acting freely, so it lies in $O(n+1)$. $\square$
+**Proof sketch.** The universal cover is complete, simply connected and of constant curvature $+1$, hence is isometric to the round sphere by Cartan's classification, and the covering group is a finite group of isometries acting freely, so it lies in $O(n+1)$.
 
 **Corollary.** The fundamental group of a spherical space form is finite, the first Betti number is zero when the dimension is positive, and all such manifolds are compact with diameter at most $\pi$.
 

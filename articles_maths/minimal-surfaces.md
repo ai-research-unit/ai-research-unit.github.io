@@ -37,7 +37,7 @@ $$
 
 where $dA = \sqrt{\det(g_{ij})}\,dx$ is the area element and $H$ is the mean curvature vector. Hence a surface is a critical point of the area functional for all variations fixing the boundary if and only if $H\equiv0$.
 
-*Proof.* Quoted as standard and used in the preceding article in its one-dimensional form. The derivative of the induced metric is $\partial_tg_{ij} = \partial_iV\cdot\partial_j\phi + \partial_jV\cdot\partial_i\phi$, and the derivative of the volume element is the trace of that with respect to $g$; integrating by parts on $M$ and using the vanishing of $V$ on $\partial M$ produces the integral of $V$ against the trace of the second fundamental form, with the sign displayed. Since $V$ is an arbitrary field along $\phi$ vanishing on the boundary, the integral vanishes for all such $V$ exactly when $H=0$. $\square$
+*Proof.* Quoted as standard and used in the preceding article in its one-dimensional form. The derivative of the induced metric is $\partial_tg_{ij} = \partial_iV\cdot\partial_j\phi + \partial_jV\cdot\partial_i\phi$, and the derivative of the volume element is the trace of that with respect to $g$; integrating by parts on $M$ and using the vanishing of $V$ on $\partial M$ produces the integral of $V$ against the trace of the second fundamental form, with the sign displayed. Since $V$ is an arbitrary field along $\phi$ vanishing on the boundary, the integral vanishes for all such $V$ exactly when $H=0$.
 
 **Remark (the degeneracy of the area).** The area functional is invariant under reparametrisation: $A(\phi\circ\psi) = A(\phi)$ for every diffeomorphism $\psi$ of $M$. Its first variation therefore vanishes in the directions tangent to the reparametrisation group, and the functional is not coercive on a space of maps without a constraint on the parametrisation. This is why the existence theory of Plateau's problem is carried out for the **energy**
 
@@ -57,7 +57,7 @@ $$
 
 **Theorem (Euler–Lagrange equation of the graph area).** The area of the graph of $u$ is $A(u) = \int_\Omega\sqrt{1+|\nabla u|^2}\,dx$, and its first variation vanishes for every compactly supported $v$ exactly when the minimal surface equation holds.
 
-*Proof.* The integrand is $L(x,u,\nabla u) = \sqrt{1+|\nabla u|^2}$, with $L_{u}=0$ and $L_{p} = p/\sqrt{1+|p|^2}$; the Euler–Lagrange equation of the preceding article gives the displayed equation, and the equation is elliptic because $L_{pp} = (1+|p|^2)^{-1/2}(I - pp^{\mathrm{T}}/(1+|p|^2))$ is positive definite for every $p$. $\square$
+*Proof.* The integrand is $L(x,u,\nabla u) = \sqrt{1+|\nabla u|^2}$, with $L_{u}=0$ and $L_{p} = p/\sqrt{1+|p|^2}$; the Euler–Lagrange equation of the preceding article gives the displayed equation, and the equation is elliptic because $L_{pp} = (1+|p|^2)^{-1/2}(I - pp^{\mathrm{T}}/(1+|p|^2))$ is positive definite for every $p$.
 
 The minimal surface equation is a quasilinear elliptic equation in divergence form, and it is the model of a **non-uniformly** elliptic equation: the eigenvalues of $L_{pp}$ are $1/(1+|p|^2)^{3/2}$ and $1/(1+|p|^2)^{1/2}$, so the ellipticity degenerates as $|\nabla u|\to\infty$. Every regularity theorem for minimal graphs must therefore control the gradient, and the theory begins with the gradient estimate.
 
@@ -69,7 +69,7 @@ $$
 
 with a constant $C$ depending only on $n$, so that a bounded minimal graph has a gradient bounded on compact subsets.
 
-*Proof.* Quoted as standard (the Bombieri–De Giorgi–Giusti gradient estimate, in the form for the minimal surface equation on a ball). The proof uses a cut-off function, the once-integrated form of the equation and the Bochner-type identity for the function $\log(1+|\nabla u|^2)$. $\square$
+*Proof.* Quoted as standard (the Bombieri–De Giorgi–Giusti gradient estimate, in the form for the minimal surface equation on a ball). The proof uses a cut-off function, the once-integrated form of the equation and the Bochner-type identity for the function $\log(1+|\nabla u|^2)$.
 
 ## Examples and Classification
 
@@ -115,11 +115,11 @@ is conformal with $\sigma_{uu}+\sigma_{vv}=0$, so it is minimal, and it is one o
 
 **Theorem (Douglas–Radó).** For every rectifiable Jordan curve $\Gamma \subset \mathbb{R}^n$, Plateau's problem has a solution; the solution minimises the energy $E$ among all $W^{1,2}$ maps of the disc whose boundary values are a (suitably normalised) parametrisation of $\Gamma$.
 
-*Proof.* Quoted as standard (the theorem of Douglas and Radó, 1931). The proof minimises $E$ over the class of admissible maps, uses the coercivity of the energy and its weak lower semicontinuity on the reflexive space $W^{1,2}(D,\mathbb{R}^n)$ by the direct method of the preceding articles, and then shows that a minimiser with a suitably normalised boundary parametrisation is conformal; the conformality makes it a critical point of the area and hence minimal. The existence of the minimiser requires care because the class of admissible boundary parametrisations is not closed under weak limits, and it is exactly this difficulty that the **Douglas condition** resolves. $\square$
+*Proof.* Quoted as standard (the theorem of Douglas and Radó, 1931). The proof minimises $E$ over the class of admissible maps, uses the coercivity of the energy and its weak lower semicontinuity on the reflexive space $W^{1,2}(D,\mathbb{R}^n)$ by the direct method of the preceding articles, and then shows that a minimiser with a suitably normalised boundary parametrisation is conformal; the conformality makes it a critical point of the area and hence minimal. The existence of the minimiser requires care because the class of admissible boundary parametrisations is not closed under weak limits, and it is exactly this difficulty that the **Douglas condition** resolves.
 
 **Theorem (regularity).** A solution of Plateau's problem is real analytic on the open disc; it is an immersion except possibly at finitely many interior **branch points**, where $\nabla\phi$ vanishes and the surface has a conical or umbilic-like singularity, and it is embedded near a sufficiently smooth Jordan curve except possibly finitely many boundary branch points (Gulliver–Osserman–Spruck).
 
-*Proof.* Quoted as standard. Interior analyticity is a consequence of the elliptic regularity of the minimal surface equation and of the conformality, the branch points are isolated by analyticity, and the boundary regularity is proved by a reflection argument when the curve is analytic, with the general smooth case following by approximation. $\square$
+*Proof.* Quoted as standard. Interior analyticity is a consequence of the elliptic regularity of the minimal surface equation and of the conformality, the branch points are isolated by analyticity, and the boundary regularity is proved by a reflection argument when the curve is analytic, with the general smooth case following by approximation.
 
 **Remark (dimensions and singularities).** In $\mathbb{R}^3$ a minimal disc has no interior singularity other than the branch points described; in higher codimension the situation is different, and there are minimal surfaces with isolated singularities. The cone over $S^3\times S^3$ in $\mathbb{R}^8$, the **Simons cone** $\{|x'|=|x''|\}$ with $x',x''\in\mathbb{R}^4$, is a stable minimal cone that is not flat, and it is the boundary case of the Bernstein theorem below: its existence is the reason the theorem holds in dimensions $n\le7$ and fails at $n=8$.
 
@@ -133,7 +133,7 @@ $$
 
 with equality only for the planar disc.
 
-*Proof.* Quoted as standard. The proof uses the conformal parametrisation, the harmonicity of the coordinate functions, and the Wirtinger inequality on the boundary circle applied to the Fourier expansion of the boundary parametrisation. $\square$
+*Proof.* Quoted as standard. The proof uses the conformal parametrisation, the harmonicity of the coordinate functions, and the Wirtinger inequality on the boundary circle applied to the Fourier expansion of the boundary parametrisation.
 
 ## Stability and the Second Variation
 
@@ -153,7 +153,7 @@ $$
 
 for every compactly supported $f$; the plane and the catenoid are stable, the helicoid is not, and a complete stable minimal surface in $\mathbb{R}^3$ is a plane (do Carmo–Peng, Fischer-Colbrie–Schoen).
 
-*Proof.* Quoted as standard. The first inequality is the second variation formula with the normalisation of the variation, and the stability inequality for a general normal variation follows by linearity; the classification of the stable complete surfaces uses the stability inequality tested against a logarithmic cut-off and the Gauss equation to bound the total curvature. $\square$
+*Proof.* Quoted as standard. The first inequality is the second variation formula with the normalisation of the variation, and the stability inequality for a general normal variation follows by linearity; the classification of the stable complete surfaces uses the stability inequality tested against a logarithmic cut-off and the Gauss equation to bound the total curvature.
 
 **Remark (stability and minimisation).** Stability is a local condition, and a stable minimal surface need not minimise area globally: the catenoid is stable and locally area-minimising, but a large enough bounding curve has a doubly connected minimal surface of smaller area. The distinction between a minimal surface and an area-minimising one is exactly the distinction between the first and the second variation, and it is the reason the existence theory of Plateau's problem is stated for minimisers of the energy rather than for stationary surfaces in general.
 
@@ -163,11 +163,11 @@ for every compactly supported $f$; the plane and the catenoid are stable, the he
 
 **Theorem (Bernstein).** Every entire solution $u : \mathbb{R}^2 \to \mathbb{R}$ of the minimal surface equation is an affine function; equivalently, every complete minimal graph in $\mathbb{R}^3$ is a plane.
 
-*Proof.* Quoted as standard (Bernstein, 1915). The proof uses the conformal structure of the graph, the fact that the Gauss map of a minimal graph is quasiconformal with a bounded distortion given by the gradient estimate of the preceding section, and Liouville's theorem for the resulting bounded holomorphic function. $\square$
+*Proof.* Quoted as standard (Bernstein, 1915). The proof uses the conformal structure of the graph, the fact that the Gauss map of a minimal graph is quasiconformal with a bounded distortion given by the gradient estimate of the preceding section, and Liouville's theorem for the resulting bounded holomorphic function.
 
 **Theorem (Bernstein in higher dimensions).** Every entire solution of the minimal surface equation on $\mathbb{R}^n$ is affine for $n\le7$ (Bombieri–De Giorgi–Giusti, using the theorems of Simons and of Almgren), and for $n\ge8$ there are entire non-affine solutions, whose graphs are asymptotic to the Simons cone; the Simons cone is area-minimising for $n\ge8$.
 
-*Proof.* Quoted as standard. The dimension $n=8$ is critical because the stability of the Simons cone changes there, and the monotonicity and dimension-reduction arguments of geometric measure theory show that any non-flat minimal cone of least area in $\mathbb{R}^{n}$ gives rise to a non-affine entire solution in dimension $n$. $\square$
+*Proof.* Quoted as standard. The dimension $n=8$ is critical because the stability of the Simons cone changes there, and the monotonicity and dimension-reduction arguments of geometric measure theory show that any non-flat minimal cone of least area in $\mathbb{R}^{n}$ gives rise to a non-affine entire solution in dimension $n$.
 
 ### The Weierstrass Representation
 
@@ -181,7 +181,7 @@ and the induced metric is $\tfrac14(1+|g|^2)^2|\omega|^2$, so that $\phi$ is con
 
 **Theorem (Weierstrass representation).** Every conformal minimal immersion of a simply connected Riemann surface into $\mathbb{R}^3$ arises from Weierstrass data $(g,\omega)$ as above, and conversely every pair $(g,\omega)$ for which the metric $\tfrac14(1+|g|^2)^2|\omega|^2$ is nondegenerate defines a conformal minimal immersion; the immersion is single-valued on $M$ exactly when the periods of the holomorphic form vanish over a basis of $H_1(M,\mathbb{Z})$.
 
-*Proof.* Quoted as standard. The harmonicity and conformality of $\phi$ imply that its coordinate functions are harmonic and that $\partial_z\phi$ is holomorphic with $\partial_z\phi\cdot\partial_z\phi = 0$; a holomorphic null vector in $\mathbb{C}^3$ is determined up to scale by its third component and its stereographically projected direction, which are $g$ and $\omega$, and integrating gives the formula. The period condition is the statement that the integral of the $1$-form over closed loops depends only on the homotopy class. $\square$
+*Proof.* Quoted as standard. The harmonicity and conformality of $\phi$ imply that its coordinate functions are harmonic and that $\partial_z\phi$ is holomorphic with $\partial_z\phi\cdot\partial_z\phi = 0$; a holomorphic null vector in $\mathbb{C}^3$ is determined up to scale by its third component and its stereographically projected direction, which are $g$ and $\omega$, and integrating gives the formula. The period condition is the statement that the integral of the $1$-form over closed loops depends only on the homotopy class.
 
 **Example (the catenoid and the helicoid in Weierstrass data).** For the catenoid, $g(z)=z$ and $\omega = dz/z^2$; for the helicoid, $g(z)=z$ and $\omega = i\,dz/z^2$. The two surfaces differ only by the constant phase of the Weierstrass form, which is the conformal form of the isometric deformation between them; the computation is exact and exhibits the power of the representation.
 

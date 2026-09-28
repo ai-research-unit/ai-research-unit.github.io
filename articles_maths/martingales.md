@@ -79,8 +79,6 @@ $$
 \mathbb{E}[X_n] \geq \mathbb{E}[X_n\mathbf{1}_{\{X_n^*\geq\lambda\}}] \geq \mathbb{E}[X_\tau \mathbf{1}_{\{X_n^*\geq\lambda\}}] \geq \lambda\,\mathbb{P}(X_n^*\geq\lambda).
 $$
 
-$\square$
-
 The maximal inequality is the martingale form of the Kolmogorov inequality of *Laws of Large Numbers and the Central Limit Theorem*, and it is the engine of the almost-sure convergence theorem below. Its $L^p$ version is the following.
 
 **Theorem (Doob's $L^p$ inequality).** For a nonnegative submartingale and $p > 1$,
@@ -109,7 +107,7 @@ $$
 \mathbb{E}\bigl[U_n(a,b)\bigr] \leq \frac{\mathbb{E}\bigl[(X_n - a)^+\bigr]}{b-a} \leq \frac{\mathbb{E}|X_n| + |a|}{b-a}.
 $$
 
-*Proof.* The process $(X_{n\wedge\tau_j} - a)^+$ increased at each upcrossing by at least $b - a$; summing the expected increments of the submartingale $(X_n - a)^+$ over the intervals and comparing with the upcrossing count gives the bound. Alternatively, apply the optional stopping theorem to the submartingale $(X_n - a)^+$ at the passage times; the bounded number of crossings and the monotone convergence complete the estimate. $\square$
+*Proof.* The process $(X_{n\wedge\tau_j} - a)^+$ increased at each upcrossing by at least $b - a$; summing the expected increments of the submartingale $(X_n - a)^+$ over the intervals and comparing with the upcrossing count gives the bound. Alternatively, apply the optional stopping theorem to the submartingale $(X_n - a)^+$ at the passage times; the bounded number of crossings and the monotone convergence complete the estimate.
 
 The upcrossing inequality is the criterion for convergence: a process that cannot cross an interval infinitely often must converge. Its content is quantitative, and it is the reason the convergence theorem of the next section has no hypotheses beyond the boundedness of the expectations.
 
@@ -119,7 +117,7 @@ The upcrossing inequality is the criterion for convergence: a process that canno
 
 **Theorem (martingale convergence theorem).** Let $\{X_n\}$ be a submartingale with $\sup_n\mathbb{E}[X_n^+] < \infty$. Then $X_n$ converges a.s. to an integrable limit $X_\infty$ as $n\to\infty$.
 
-*Proof.* Fix $a < b$ and let $U_\infty(a,b)$ be the total number of upcrossings. The upcrossing inequality gives $\mathbb{E}U_\infty(a,b) \leq \sup_n(\mathbb{E}[X_n^+] + |a|)/(b-a) < \infty$ by monotone convergence, so $U_\infty(a,b) < \infty$ a.s. The event $\{\liminf X_n < \limsup X_n\}$ is the union over rational $a < b$ of the events $\{U_\infty(a,b) = \infty\}$, hence a null set; the limit $X_\infty = \lim_n X_n$ therefore exists a.s. in $[-\infty,\infty]$. The negative parts are controlled because $\mathbb{E}X_n$ is nondecreasing, so $\sup_n\mathbb{E}|X_n| < \infty$; Fatou's lemma then gives $\mathbb{E}|X_\infty| \leq \liminf_n\mathbb{E}|X_n| \leq \sup_n\mathbb{E}|X_n| < \infty$, and $X_\infty$ is integrable. $\square$
+*Proof.* Fix $a < b$ and let $U_\infty(a,b)$ be the total number of upcrossings. The upcrossing inequality gives $\mathbb{E}U_\infty(a,b) \leq \sup_n(\mathbb{E}[X_n^+] + |a|)/(b-a) < \infty$ by monotone convergence, so $U_\infty(a,b) < \infty$ a.s. The event $\{\liminf X_n < \limsup X_n\}$ is the union over rational $a < b$ of the events $\{U_\infty(a,b) = \infty\}$, hence a null set; the limit $X_\infty = \lim_n X_n$ therefore exists a.s. in $[-\infty,\infty]$. The negative parts are controlled because $\mathbb{E}X_n$ is nondecreasing, so $\sup_n\mathbb{E}|X_n| < \infty$; Fatou's lemma then gives $\mathbb{E}|X_\infty| \leq \liminf_n\mathbb{E}|X_n| \leq \sup_n\mathbb{E}|X_n| < \infty$, and $X_\infty$ is integrable.
 
 **Corollary (the martingale case).** A martingale that is bounded in $L^1$ converges a.s. to an integrable limit. The limit need not be the $L^1$ limit, and the process need not be uniformly integrable: the multiplicative martingale $M_0 = 1$, $M_{n+1} = 2M_n$ on a head and $M_{n+1} = 0$ on a tail, with independent fair tosses, is nonnegative with $\mathbb{E}M_n = 1$ for every $n$, and $M_n \to 0$ a.s. because a tail eventually occurs, but $M_n$ does not converge to $0$ in $L^1$ since $\mathbb{E}M_n = 1$.
 
@@ -133,7 +131,7 @@ $$
 
 **Theorem (uniform integrability and convergence).** Let $\{X_n\}$ be a submartingale. The following are equivalent: $\{X_n\}$ is uniformly integrable; $X_n \to X_\infty$ a.s. and in $L^1$ for some integrable $X_\infty$; and there is an integrable $X_\infty$ with $X_n = \mathbb{E}[X_\infty \mid \mathcal{F}_n]$ for every $n$. If $\sup_n\mathbb{E}|X_n|^p < \infty$ for some $p > 1$ then the process is uniformly integrable and $X_n \to X_\infty$ in $L^p$.
 
-*Proof (sketch).* Uniform integrability gives $\sup_n\mathbb{E}|X_n| < \infty$, so $X_\infty$ exists a.s. by the convergence theorem; the uniform integrability upgrades the almost-sure convergence to $L^1$ convergence by the theorem of Vitali, and the $L^1$ convergence gives $X_n = \mathbb{E}[X_\infty\mid\mathcal{F}_n]$ by passing to the limit in the defining identity. Conversely a process closed by an integrable terminal variable is uniformly integrable by the absolute continuity of the integral. $\square$
+*Proof (sketch).* Uniform integrability gives $\sup_n\mathbb{E}|X_n| < \infty$, so $X_\infty$ exists a.s. by the convergence theorem; the uniform integrability upgrades the almost-sure convergence to $L^1$ convergence by the theorem of Vitali, and the $L^1$ convergence gives $X_n = \mathbb{E}[X_\infty\mid\mathcal{F}_n]$ by passing to the limit in the defining identity. Conversely a process closed by an integrable terminal variable is uniformly integrable by the absolute continuity of the integral.
 
 **Theorem (Lévy's upward theorem).** For an integrable $X$ and a filtration $\{\mathcal{F}_n\}$,
 
@@ -151,7 +149,7 @@ $$
 \mathbb{E}[X_\tau \mid \mathcal{F}_\sigma] = X_\sigma \qquad \text{a.s.}; \qquad \text{in particular } \mathbb{E}[X_\tau] = \mathbb{E}[X_0].
 $$
 
-*Proof.* The stopped process $X^\tau$ is a uniformly integrable martingale, and by the convergence theorem it converges a.s. and in $L^1$ to $X_\tau$. Applying the martingale property at the stopping time $\sigma$ to the stopped process gives the displayed identity, the measurability of $X_\sigma$ being established by the definition of $\mathcal{F}_\sigma$. $\square$
+*Proof.* The stopped process $X^\tau$ is a uniformly integrable martingale, and by the convergence theorem it converges a.s. and in $L^1$ to $X_\tau$. Applying the martingale property at the stopping time $\sigma$ to the stopped process gives the displayed identity, the measurability of $X_\sigma$ being established by the definition of $\mathcal{F}_\sigma$.
 
 **Corollary.** If $\{X_n\}$ is a martingale and $\tau$ is a stopping time with $\mathbb{P}(\tau \leq N) = 1$ for some finite $N$, then $\mathbb{E}[X_\tau] = \mathbb{E}[X_0]$. Consequently for a simple symmetric random walk $\{S_n\}$ and the passage times $\tau_a = \inf\{n : S_n = a\}$, $\tau_{-b} = \inf\{n : S_n = -b\}$, the **gambler's ruin** probability is
 

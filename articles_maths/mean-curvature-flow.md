@@ -43,13 +43,13 @@ $$
 \frac{d}{dt}\operatorname{Area} = -\int_M H^2\,dA \le 0 .
 $$
 
-*Proof.* The first variation formula of the article on minimal surfaces gives the derivative as the integral of $V$ against the mean curvature vector with a minus sign; the normal component of $V$ is $V\cdot\nu$ and the tangential part contributes nothing to the first order, because the area is invariant under reparametrisation. Choosing $V=-H\nu$ makes the integrand negative, $-(H)^2$, and Cauchy–Schwarz shows that this choice maximises the rate. $\square$
+*Proof.* The first variation formula of the article on minimal surfaces gives the derivative as the integral of $V$ against the mean curvature vector with a minus sign; the normal component of $V$ is $V\cdot\nu$ and the tangential part contributes nothing to the first order, because the area is invariant under reparametrisation. Choosing $V=-H\nu$ makes the integrand negative, $-(H)^2$, and Cauchy–Schwarz shows that this choice maximises the rate.
 
 **Corollary (stationary surfaces).** A surface is stationary for the area if and only if $H\equiv0$; the stationary points of the mean curvature flow are exactly the minimal surfaces.
 
 **Theorem (short-time existence).** For a compact smoothly immersed initial surface $F_0 : M\to\mathbb{R}^{n+1}$ there is $T>0$ and a smooth solution of the mean curvature flow on $[0,T)$; the solution is unique, and it extends beyond $T$ unless the second fundamental form becomes unbounded as $t\to T^-$.
 
-*Proof.* Quoted as standard. The flow is a quasilinear parabolic system for the immersion; the linearisation is the heat operator for the normal component with lower-order terms, and the standard parabolic existence and continuation theory gives the short-time solution and the blow-up criterion. The tangential components of the motion are diffeomorphisms of $M$, so the flow is well defined up to the choice of parametrisation. $\square$
+*Proof.* Quoted as standard. The flow is a quasilinear parabolic system for the immersion; the linearisation is the heat operator for the normal component with lower-order terms, and the standard parabolic existence and continuation theory gives the short-time solution and the blow-up criterion. The tangential components of the motion are diffeomorphisms of $M$, so the flow is well defined up to the choice of parametrisation.
 
 **Example (the shrinking sphere).** For the round sphere of radius $r_0$ in $\mathbb{R}^{n+1}$ the flow is the shrinking family of concentric spheres with radius
 
@@ -59,7 +59,7 @@ $$
 
 which becomes extinct at $T = r_0^2/(2n)$. The solution is self-similar: it is a rescaling of the initial sphere, and its speed at each point is proportional to the curvature.
 
-*Proof.* A sphere of radius $r$ has $H=n/r$ with the outward normal, so the flow moves each point inward with speed $n/r$, and $\dot r=-n/r$; integrating gives $r^2 = r_0^2-2nt$. The exactness of the family is verified by substituting the ansatz into the flow. $\square$
+*Proof.* A sphere of radius $r$ has $H=n/r$ with the outward normal, so the flow moves each point inward with speed $n/r$, and $\dot r=-n/r$; integrating gives $r^2 = r_0^2-2nt$. The exactness of the family is verified by substituting the ansatz into the flow.
 
 ## The Graph Equation and Curve Shortening
 
@@ -77,7 +77,7 @@ $$
 \partial_tu = -HW = W\operatorname{div}\Bigl(\frac{\nabla u}{W}\Bigr),
 $$
 
-which is the displayed equation. The equation is parabolic because $\operatorname{div}(\nabla u/W)$ has the Hessian of $u$ as its principal part with the positive definite coefficient matrix $(1/W)(I-\nabla u\otimes\nabla u/W^2)$. $\square$
+which is the displayed equation. The equation is parabolic because $\operatorname{div}(\nabla u/W)$ has the Hessian of $u$ as its principal part with the positive definite coefficient matrix $(1/W)(I-\nabla u\otimes\nabla u/W^2)$.
 
 **Example (curve shortening in the plane).** For a closed embedded curve $\gamma : S^1\to\mathbb{R}^2$ the flow
 
@@ -89,7 +89,7 @@ with $\kappa$ the curvature and $N$ the inward normal shrinks the curve; a circl
 
 **Theorem (Gage–Hamilton, Grayson).** Under curve shortening flow a convex embedded closed plane curve remains convex, shrinks to a point in finite time, after rescaling about the extinction point so that the enclosed area is constant, converges to a round circle; moreover every embedded closed plane curve becomes convex after finite time, so the conclusion holds for arbitrary embedded initial curves.
 
-*Proof.* Quoted as standard (Gage–Hamilton for the convex case, Grayson for the reduction to it). The convexity is preserved by the maximum principle applied to the curvature, which satisfies $\partial_t\kappa = \kappa_{ss}+\kappa^3$ in the arclength parameter $s$; the convergence to a circle uses the monotonicity of an isoperimetric ratio; the elimination of the non-convex case is a separate argument controlling the number of inflections. $\square$
+*Proof.* Quoted as standard (Gage–Hamilton for the convex case, Grayson for the reduction to it). The convexity is preserved by the maximum principle applied to the curvature, which satisfies $\partial_t\kappa = \kappa_{ss}+\kappa^3$ in the arclength parameter $s$; the convergence to a circle uses the monotonicity of an isoperimetric ratio; the elimination of the non-convex case is a separate argument controlling the number of inflections.
 
 **Remark (non-embedded curves and singularities).** An immersed but non-embedded plane curve need not become convex: a figure-eight curve shrinks to a crossing point and the flow becomes singular there before extinction, the crossing point forming a self-similar singularity. The example shows that the global regularity conclusion of Grayson's theorem is a property of embeddedness, and it is the first indication that the flow can develop a singularity whose model is not the shrinking circle.
 
@@ -104,11 +104,11 @@ $$
 
 where $|A|^2$ is the squared norm of the second fundamental form and $\Delta$ is the Laplace–Beltrami operator of the evolving surface; in a general ambient Riemannian manifold the equation for $H$ acquires the additional term $H\,\mathrm{Ric}(\nu,\nu)$.
 
-*Proof.* Quoted as standard (Huisken). The computations differentiate the structure equations of the immersion with respect to time, using the evolution of the induced metric and of the normal; the reaction terms are quadratic in the second fundamental form, as required by scaling, and the term $-2|\nabla A|^2$ in the second equation is what makes the maximum principle for $|A|^2$ effective. $\square$
+*Proof.* Quoted as standard (Huisken). The computations differentiate the structure equations of the immersion with respect to time, using the evolution of the induced metric and of the normal; the reaction terms are quadratic in the second fundamental form, as required by scaling, and the term $-2|\nabla A|^2$ in the second equation is what makes the maximum principle for $|A|^2$ effective.
 
 **Corollary (the maximum principle for the curvature).** Along a mean curvature flow, $\max_MH$ is nonincreasing and $\min_MH$ is nondecreasing when $H$ is signed appropriately, so a strictly convex initial hypersurface remains strictly convex; the corresponding statement for $|A|^2$ requires the pinching cone used in Huisken's theorem below.
 
-*Proof.* The equation $\partial_tH=\Delta H+H|A|^2$ is a differential inequality $\partial_t H\ge\Delta H+H|A|^2$ whose zeroth-order term has a definite sign when $H$ has a definite sign; the maximum principle applied to $-H$ gives the nonincrease of the maximum, and the minimum is treated by the same argument with the sign of the reaction term reversed. $\square$
+*Proof.* The equation $\partial_tH=\Delta H+H|A|^2$ is a differential inequality $\partial_t H\ge\Delta H+H|A|^2$ whose zeroth-order term has a definite sign when $H$ has a definite sign; the maximum principle applied to $-H$ gives the nonincrease of the maximum, and the minimum is treated by the same argument with the sign of the reaction term reversed.
 
 **Theorem (Huisken's pinching theorem).** Let $F_0 : M^n\to\mathbb{R}^{n+1}$ be a compact, strictly convex immersed hypersurface. Then the mean curvature flow becomes extinct at a finite time $T$, and, after rescaling about the extinction point so that the enclosed volume is constant,
 
@@ -118,11 +118,11 @@ $$
 
 so the rescaled surfaces converge to a round sphere; consequently $M$ is diffeomorphic to $S^n$.
 
-*Proof.* Quoted as standard (Huisken 1984). The maximum principle is applied to the quantity $|A|^2/H^2 - 1/n$, whose evolution is a reaction-diffusion equation with a favourable reaction term for a convex surface; the estimate gives the pinching, and the convergence of the rescaled surfaces to a sphere follows from the pinching together with the area bound and the compactness of immersions with bounded curvature. $\square$
+*Proof.* Quoted as standard (Huisken 1984). The maximum principle is applied to the quantity $|A|^2/H^2 - 1/n$, whose evolution is a reaction-diffusion equation with a favourable reaction term for a convex surface; the estimate gives the pinching, and the convergence of the rescaled surfaces to a sphere follows from the pinching together with the area bound and the compactness of immersions with bounded curvature.
 
 **Theorem (finiteness of the extinction).** A compact mean curvature flow cannot exist for all time with the curvature bounded; the flow either becomes extinct at a finite time or its curvature becomes unbounded at a finite time. For a closed convex plane curve the extinction is finite, and the extinction time is bounded above in terms of the initial area, the bound being attained by the circle.
 
-*Proof.* The decrease of the area is the first variation formula. The extinction statements are quoted as standard: for curves, the Gauss–Bonnet theorem turns the decrease of the area into a lower bound for the rate of decrease, and integrating gives the finite extinction time; in higher dimension the corresponding statement is that a bounded-curvature solution on a finite time interval can be extended, which is the continuation criterion of the short-time existence theorem. $\square$
+*Proof.* The decrease of the area is the first variation formula. The extinction statements are quoted as standard: for curves, the Gauss–Bonnet theorem turns the decrease of the area into a lower bound for the rate of decrease, and integrating gives the finite extinction time; in higher dimension the corresponding statement is that a bounded-curvature solution on a finite time interval can be extended, which is the continuation criterion of the short-time existence theorem.
 
 ## Singularities and Self-Shrinkers
 
@@ -146,11 +146,11 @@ is nonincreasing in $t$, and it is constant exactly when the flow is a self-shri
 
 *Proof.* Quoted as standard (Huisken). The derivative of $\Phi$ is a sum of a nonnegative term and a perfect square built from the self-shrinker equation; integrating by parts gives
 $\frac{d}{dt}\Phi_{x_0,t_0} = -\int_M\left|H-\frac{\langle F-x_0,\nu\rangle}{2(t_0-t)}\right|^2(4\pi(t_0-t))^{-n/2}e^{-|F-x_0|^2/4(t_0-t)}dA\le0$,
-which also identifies the equality case. $\square$
+which also identifies the equality case.
 
 **Theorem (blow-up limits are self-shrinkers).** Let $F$ be a mean curvature flow that becomes singular at $T<\infty$, let $(x_j,t_j)$ be a sequence of points and times with $t_j\to T$ along which the curvature is maximal at the scale of the blow-up, and rescale the flow about $(x_j,t_j)$ by the factor $|A|(x_j,t_j)$. Then every smooth limit of the rescaled flows, after passing to a subsequence, is a self-shrinker (for a Type I singularity); for a Type II singularity the limit is an ancient solution which, in the generic case, is a translator.
 
-*Proof.* Quoted as standard (Huisken, Ilmanen and others). The monotonicity of the Gaussian area is applied to the rescaled flows: the Gaussian area of the blow-up sequence is bounded by the initial value, which gives the local area bounds needed for compactness; the limit flow has a Gaussian area that is constant in time, and the equality case of the monotonicity theorem makes it a self-shrinker. $\square$
+*Proof.* Quoted as standard (Huisken, Ilmanen and others). The monotonicity of the Gaussian area is applied to the rescaled flows: the Gaussian area of the blow-up sequence is bounded by the initial value, which gives the local area bounds needed for compactness; the limit flow has a Gaussian area that is constant in time, and the equality case of the monotonicity theorem makes it a self-shrinker.
 
 **Remark (neckpinch and dumbbell).** For a dumbbell surface in $\mathbb{R}^3$ — two large spheres joined by a thin neck — the flow shrinks the neck faster than the spheres, and the neck pinches off at a point where the curvature blows up; the blow-up limit is the cylinder $S^1\times\mathbb{R}$, the basic nonspherical self-shrinker, and after the pinch the flow continues as two components. The example is the prototype of a singularity that the level-set and varifold weak solutions handle, and it is the reason the strong solutions of the smooth theory require a hypothesis such as convexity or mean convexity.
 
@@ -166,7 +166,7 @@ which is the level-set form of the flow and which is independent of the choice o
 
 **Theorem (well-posedness of the level-set flow).** For every continuous $u_0$ that changes sign, the level-set equation has a unique viscosity solution, and the zero level set agrees with the classical mean curvature flow wherever the latter is smooth; the solution is stable under the addition of a small constant, which selects the level set in the sense of an evolution of closed sets.
 
-*Proof.* Quoted as standard (Evans–Spruck, Chen–Giga–Goto). The equation is degenerate parabolic and is understood in the viscosity sense; the comparison principle for viscosity solutions gives uniqueness, and the agreement with the smooth flow follows from the fact that the smooth immersion satisfies the equation after composition with a suitable reparametrisation. $\square$
+*Proof.* Quoted as standard (Evans–Spruck, Chen–Giga–Goto). The equation is degenerate parabolic and is understood in the viscosity sense; the comparison principle for viscosity solutions gives uniqueness, and the agreement with the smooth flow follows from the fact that the smooth immersion satisfies the equation after composition with a suitable reparametrisation.
 
 **Remark (varifold solutions).** An alternative weak formulation is that of **Brakke**, in which the flow is a family of varifolds satisfying the transport inequality for the area; the Brakke flow exists for a large class of initial data, it is the natural setting for the monotonicity of the Gaussian area, and the two weak theories agree where both are defined. The varifold setting is the measure-theoretic one, and the regularity theory that upgrades a weak solution to a smooth one away from a small singular set belongs to the geometric measure theory of this Part.
 

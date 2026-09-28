@@ -115,7 +115,7 @@ where $\hat{\otimes}$ is the graded tensor product, and $\Lambda(\mathrm{rad}(Q)
 - For $v \in W$, $r \in \mathrm{rad}(Q)$: $v r + r v = 2 B(v, r) \cdot 1 = 0$.
 - For $r, s \in \mathrm{rad}(Q)$: $r s + s r = 2 B(r, s) \cdot 1 = 0$.
 
-The first family generates $Cl(W, Q|_W) \cong Cl(M/\mathrm{rad}(Q), \bar{Q})$. The third family generates $\Lambda(\mathrm{rad}(Q))$, since $r^2 = 0$ and $r s = -s r$. The second family says that the generators of $W$ and the generators of $\mathrm{rad}(Q)$ anticommute, which is the graded tensor product relation. So the algebra is the graded tensor product of the two. $\square$
+The first family generates $Cl(W, Q|_W) \cong Cl(M/\mathrm{rad}(Q), \bar{Q})$. The third family generates $\Lambda(\mathrm{rad}(Q))$, since $r^2 = 0$ and $r s = -s r$. The second family says that the generators of $W$ and the generators of $\mathrm{rad}(Q)$ anticommute, which is the graded tensor product relation. So the algebra is the graded tensor product of the two.
 
 The isomorphism is not canonical: it depends on the choice of complement $W$.
 
@@ -147,7 +147,7 @@ So $\Lambda(\mathrm{rad}(Q))$ is a graded-commutative algebra, and every element
 
 **Theorem.** For a field $R$, the algebra $\Lambda(\mathrm{rad}(Q))$ is semisimple iff $\mathrm{rad}(Q) = 0$.
 
-**Proof.** If $\mathrm{rad}(Q) \neq 0$, the ideal $\Lambda^{\geq 1}(\mathrm{rad}(Q))$ is a non-zero nilpotent ideal (the rank is finite here), so the algebra is not semisimple. If $\mathrm{rad}(Q) = 0$, the algebra is $R$, which is semisimple when $R$ is a field. $\square$
+**Proof.** If $\mathrm{rad}(Q) \neq 0$, the ideal $\Lambda^{\geq 1}(\mathrm{rad}(Q))$ is a non-zero nilpotent ideal (the rank is finite here), so the algebra is not semisimple. If $\mathrm{rad}(Q) = 0$, the algebra is $R$, which is semisimple when $R$ is a field.
 
 So the degenerate Clifford algebra is semisimple iff the quadratic form is non-degenerate, under the usual hypotheses on the base ring.
 
@@ -209,13 +209,13 @@ $$
 [M_2, M_2] \subseteq M_2.
 $$
 
-So $M_2$, equipped with the commutator bracket, is a Lie subalgebra of $Cl(M, Q)$. In the non-degenerate case, $M_2$ is isomorphic to the orthogonal Lie algebra $\mathfrak{so}(M, Q)$:
+So $M_2$, equipped with the commutator bracket, is a Lie subalgebra of $Cl(M, Q)$. In the non-degenerate case, $M_2$ is isomorphic to the orthogonal Lie algebra $\mathrm{SO}(M, Q)$:
 
 $$
-M_2 \cong \mathfrak{so}(M, Q).
+M_2 \cong \mathrm{SO}(M, Q).
 $$
 
-**The degenerate case.** If $Q$ is degenerate, the bivectors involving radical elements are nilpotent, and the Lie algebra $\mathfrak{so}(M, Q)$ is replaced by a more complicated object. The spin group does not exist in the usual sense, because the radical elements do not have inverses. The bivectors involving radical elements generate a nilpotent ideal in $M_2$, and the quotient of $M_2$ by this ideal is the Lie algebra of the non-degenerate part.
+**The degenerate case.** If $Q$ is degenerate, the bivectors involving radical elements are nilpotent, and the Lie algebra $\mathrm{SO}(M, Q)$ is replaced by a more complicated object. The spin group does not exist in the usual sense, because the radical elements do not have inverses. The bivectors involving radical elements generate a nilpotent ideal in $M_2$, and the quotient of $M_2$ by this ideal is the Lie algebra of the non-degenerate part.
 
 ---
 

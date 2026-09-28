@@ -16,11 +16,11 @@ Throughout, $p$ is a prime, $q = p^n$ with $n \geq 1$, and $\mathbb{F}_p = \math
 
 **Theorem.** Every field $K$ has a prime field isomorphic to $\mathbb{Q}$ if $\operatorname{char} K = 0$ and to $\mathbb{F}_p$ if $\operatorname{char} K = p$. In particular a finite field has characteristic $p > 0$ and contains $\mathbb{F}_p$.
 
-**Proof.** The unique ring homomorphism $\mathbb{Z} \to K$ has kernel $0$ or $(p)$ for a prime $p$, by *Fields*, §3. In the first case it extends to an embedding $\mathbb{Q} \to K$, whose image is the smallest subfield. In the second it induces an embedding $\mathbb{F}_p \to K$, and the image is the smallest subfield. A finite field cannot contain $\mathbb{Q}$, since $\mathbb{Q}$ is infinite. $\square$
+**Proof.** The unique ring homomorphism $\mathbb{Z} \to K$ has kernel $0$ or $(p)$ for a prime $p$, by *Fields*, §3. In the first case it extends to an embedding $\mathbb{Q} \to K$, whose image is the smallest subfield. In the second it induces an embedding $\mathbb{F}_p \to K$, and the image is the smallest subfield. A finite field cannot contain $\mathbb{Q}$, since $\mathbb{Q}$ is infinite.
 
 **Proposition.** Let $K$ be a finite field. Then $\lvert K \rvert = p^n$, where $p = \operatorname{char} K$ and $n = [K:\mathbb{F}_p]$.
 
-**Proof.** The prime field $\mathbb{F}_p$ is a subfield of $K$, and $K$ is a vector space over it. If $[K:\mathbb{F}_p] = n < \infty$ then $\lvert K \rvert = p^n$, and $K$ is finite precisely when this degree is finite. $\square$
+**Proof.** The prime field $\mathbb{F}_p$ is a subfield of $K$, and $K$ is a vector space over it. If $[K:\mathbb{F}_p] = n < \infty$ then $\lvert K \rvert = p^n$, and $K$ is finite precisely when this degree is finite.
 
 ---
 
@@ -41,7 +41,7 @@ over $\mathbb{F}_p$.
 - if $\alpha^q = \alpha$ and $\beta^q = \beta$, then $(\alpha \pm \beta)^q = \alpha^q \pm \beta^q = \alpha \pm \beta$ by the freshman's dream, since the binomial coefficients $\binom{q}{k}$ are divisible by $p$ for $0 < k < q$;
 - $(\alpha\beta)^q = \alpha^q \beta^q = \alpha\beta$, and $(\alpha^{-1})^q = (\alpha^q)^{-1} = \alpha^{-1}$ for $\alpha \neq 0$.
 
-So the roots form a subfield of $K$ containing $\mathbb{F}_p$; since $K$ is generated over $\mathbb{F}_p$ by the roots, $K$ equals that subfield and consists exactly of the $q$ distinct roots of $f_q$. Hence $\lvert K \rvert = q$. $\square$
+So the roots form a subfield of $K$ containing $\mathbb{F}_p$; since $K$ is generated over $\mathbb{F}_p$ by the roots, $K$ equals that subfield and consists exactly of the $q$ distinct roots of $f_q$. Hence $\lvert K \rvert = q$.
 
 **Definition.** The field with $q = p^n$ elements is written $\mathbb{F}_q$ or $\mathbb{F}_{p^n}$, and is called the **Galois field** of order $q$.
 
@@ -49,7 +49,7 @@ So the roots form a subfield of $K$ containing $\mathbb{F}_p$; since $K$ is gene
 
 **Theorem.** Any two fields with $q = p^n$ elements are isomorphic. Moreover, every finite field has $p^n$ elements for some prime $p$ and some $n \geq 1$.
 
-**Proof.** Let $K$ be a field with $q$ elements. Then $\operatorname{char} K = p$ for a prime $p$ and $K \supseteq \mathbb{F}_p$, with $q = p^n$ and $n = [K:\mathbb{F}_p]$. The multiplicative group $K^\times$ has order $q - 1$, so every $\alpha \in K^\times$ satisfies $\alpha^{q-1} = 1$ by Lagrange's theorem and hence $\alpha^q = \alpha$; the same holds for $\alpha = 0$. Thus every element of $K$ is a root of $x^q - x$, and since $x^q - x$ has at most $q$ roots, $K$ is exactly the set of its roots. Therefore $K$ is a splitting field of $x^q - x$ over $\mathbb{F}_p$, and splitting fields of a polynomial are unique up to isomorphism fixing $\mathbb{F}_p$. $\square$
+**Proof.** Let $K$ be a field with $q$ elements. Then $\operatorname{char} K = p$ for a prime $p$ and $K \supseteq \mathbb{F}_p$, with $q = p^n$ and $n = [K:\mathbb{F}_p]$. The multiplicative group $K^\times$ has order $q - 1$, so every $\alpha \in K^\times$ satisfies $\alpha^{q-1} = 1$ by Lagrange's theorem and hence $\alpha^q = \alpha$; the same holds for $\alpha = 0$. Thus every element of $K$ is a root of $x^q - x$, and since $x^q - x$ has at most $q$ roots, $K$ is exactly the set of its roots. Therefore $K$ is a splitting field of $x^q - x$ over $\mathbb{F}_p$, and splitting fields of a polynomial are unique up to isomorphism fixing $\mathbb{F}_p$.
 
 **Remark.** The uniqueness is strong enough that one writes *the* field $\mathbb{F}_q$ with $q$ elements. Note that $\mathbb{Z}/4\mathbb{Z}$ is not a field: $2 \cdot 2 = 0$. The additive group of $\mathbb{F}_{p^n}$ is isomorphic to $(\mathbb{Z}/p\mathbb{Z})^n$, which is not cyclic for $n \geq 2$, while the multiplicative structure is cyclic, as shown below.
 
@@ -67,17 +67,17 @@ $$
 
 is an injective field endomorphism, called the **Frobenius map**. If $K$ is finite, $\varphi$ is an automorphism, of order $\log_p \lvert K \rvert$ when $K = \mathbb{F}_{p^n}$.
 
-**Proof.** Additivity is the freshman's dream: $(x + y)^p = x^p + y^p$, since the intermediate binomial coefficients $\binom{p}{k}$ are divisible by $p$ for $0 < k < p$. Multiplicativity is immediate, and $\varphi(1) = 1$. The kernel is $0$, since $x^p = 0$ forces $x = 0$, so $\varphi$ is injective; an injective map from a finite set to itself is bijective, so $\varphi$ is an automorphism when $K$ is finite. On $\mathbb{F}_{p^n}$, $\varphi^n(x) = x^{p^n} = x$ for all $x$, since every element satisfies $x^{p^n} = x$; and $\varphi^k \neq \mathrm{id}$ for $0 < k < n$, because if $\varphi^k$ were the identity then every element of $\mathbb{F}_{p^n}$ would satisfy $x^{p^k} = x$, so all $p^n$ elements of the field would be roots of the polynomial $x^{p^k} - x$ of degree $p^k < p^n$, which is impossible. Hence the order is exactly $n$. $\square$
+**Proof.** Additivity is the freshman's dream: $(x + y)^p = x^p + y^p$, since the intermediate binomial coefficients $\binom{p}{k}$ are divisible by $p$ for $0 < k < p$. Multiplicativity is immediate, and $\varphi(1) = 1$. The kernel is $0$, since $x^p = 0$ forces $x = 0$, so $\varphi$ is injective; an injective map from a finite set to itself is bijective, so $\varphi$ is an automorphism when $K$ is finite. On $\mathbb{F}_{p^n}$, $\varphi^n(x) = x^{p^n} = x$ for all $x$, since every element satisfies $x^{p^n} = x$; and $\varphi^k \neq \mathrm{id}$ for $0 < k < n$, because if $\varphi^k$ were the identity then every element of $\mathbb{F}_{p^n}$ would satisfy $x^{p^k} = x$, so all $p^n$ elements of the field would be roots of the polynomial $x^{p^k} - x$ of degree $p^k < p^n$, which is impossible. Hence the order is exactly $n$.
 
 **Corollary.** For each divisor $d$ of $n$ the fixed field of $\varphi^d$ in $\mathbb{F}_{p^n}$ is $\mathbb{F}_{p^{d}}$; in particular the fixed field of $\varphi$ is $\mathbb{F}_p$.
 
-**Proof.** The fixed field of $\varphi^d$ consists of the elements $x$ with $x^{p^d} = x$, a set of at most $p^d$ elements, and it contains $\mathbb{F}_{p^d}$ since every element of $\mathbb{F}_{p^d}$ satisfies $x^{p^d} = x$. Hence it has at least $p^d$ and at most $p^d$ elements, so it equals $\mathbb{F}_{p^d}$. $\square$
+**Proof.** The fixed field of $\varphi^d$ consists of the elements $x$ with $x^{p^d} = x$, a set of at most $p^d$ elements, and it contains $\mathbb{F}_{p^d}$ since every element of $\mathbb{F}_{p^d}$ satisfies $x^{p^d} = x$. Hence it has at least $p^d$ and at most $p^d$ elements, so it equals $\mathbb{F}_{p^d}$.
 
 ### The Galois Group
 
 **Theorem.** The automorphism group $\operatorname{Aut}(\mathbb{F}_{p^n}/\mathbb{F}_p)$ is cyclic of order $n$, generated by the Frobenius automorphism $\varphi$. Consequently $\mathbb{F}_{p^n}/\mathbb{F}_p$ is a Galois extension of degree $n$.
 
-**Proof.** The extension $\mathbb{F}_{p^n}/\mathbb{F}_p$ is separable, because $\mathbb{F}_{p^n}$ is finite and hence perfect, so by the counting theorem of *Splitting Fields and Algebraic Closure* the number of $\mathbb{F}_p$-embeddings of $\mathbb{F}_{p^n}$ into an algebraic closure equals the degree $n$, and every such embedding is an automorphism of the finite field. The powers $\varphi^0, \varphi^1, \ldots, \varphi^{n-1}$ are $n$ distinct $\mathbb{F}_p$-automorphisms by the order computation above, so $\operatorname{Aut}(\mathbb{F}_{p^n}/\mathbb{F}_p) = \langle \varphi \rangle$ is cyclic of order $n$, and $\mathbb{F}_{p^n}/\mathbb{F}_p$ is Galois of degree $n$. $\square$
+**Proof.** The extension $\mathbb{F}_{p^n}/\mathbb{F}_p$ is separable, because $\mathbb{F}_{p^n}$ is finite and hence perfect, so by the counting theorem of *Splitting Fields and Algebraic Closure* the number of $\mathbb{F}_p$-embeddings of $\mathbb{F}_{p^n}$ into an algebraic closure equals the degree $n$, and every such embedding is an automorphism of the finite field. The powers $\varphi^0, \varphi^1, \ldots, \varphi^{n-1}$ are $n$ distinct $\mathbb{F}_p$-automorphisms by the order computation above, so $\operatorname{Aut}(\mathbb{F}_{p^n}/\mathbb{F}_p) = \langle \varphi \rangle$ is cyclic of order $n$, and $\mathbb{F}_{p^n}/\mathbb{F}_p$ is Galois of degree $n$.
 
 The Frobenius automorphism acts on an element $\alpha$ by the cycle
 
@@ -99,7 +99,7 @@ This is a special case of the general fact that every finite subgroup of the mul
 
 **Theorem.** Let $K$ be a field and let $G \leq K^\times$ be a finite subgroup of order $m$. Then $G$ is cyclic.
 
-**Proof.** Let $e$ be the exponent of the finite abelian group $G$, so $e \mid m$ and $e$ is the least common multiple of the orders of the elements of $G$. Every element of $G$ satisfies $x^e = 1$, so every element of $G$ is a root of $x^e - 1$. A polynomial of degree $e$ has at most $e$ roots in the field $K$, so $m \leq e$. Since always $e \mid m$, we get $e = m$. A finite abelian group whose exponent equals its order is cyclic, by the structure theorem for finite abelian groups. Hence $G$ is cyclic. $\square$
+**Proof.** Let $e$ be the exponent of the finite abelian group $G$, so $e \mid m$ and $e$ is the least common multiple of the orders of the elements of $G$. Every element of $G$ satisfies $x^e = 1$, so every element of $G$ is a root of $x^e - 1$. A polynomial of degree $e$ has at most $e$ roots in the field $K$, so $m \leq e$. Since always $e \mid m$, we get $e = m$. A finite abelian group whose exponent equals its order is cyclic, by the structure theorem for finite abelian groups. Hence $G$ is cyclic.
 
 **Corollary.** $\mathbb{F}_q^\times$ is cyclic of order $q - 1$; a generator is called a **primitive element** of $\mathbb{F}_q$.
 
@@ -109,7 +109,7 @@ This is a special case of the general fact that every finite subgroup of the mul
 
 **Theorem.** Let $q = p^n$. The number of primitive elements of $\mathbb{F}_q$ is $\varphi(q - 1)$, where $\varphi$ is the Euler totient function; the number of monic primitive polynomials of degree $n$ over $\mathbb{F}_p$ is $\varphi(q-1)/n$.
 
-**Proof.** The generators of the cyclic group of order $q - 1$ are exactly the $\gamma^k$ with $\gcd(k, q-1) = 1$, so there are $\varphi(q-1)$ of them. Each monic primitive polynomial of degree $n$ has exactly $n$ roots in $\mathbb{F}_q$, namely the conjugates of a primitive element under the Frobenius, and the sets of roots of distinct such polynomials are disjoint, partitioning the $\varphi(q-1)$ primitive elements into classes of size $n$. $\square$
+**Proof.** The generators of the cyclic group of order $q - 1$ are exactly the $\gamma^k$ with $\gcd(k, q-1) = 1$, so there are $\varphi(q-1)$ of them. Each monic primitive polynomial of degree $n$ has exactly $n$ roots in $\mathbb{F}_q$, namely the conjugates of a primitive element under the Frobenius, and the sets of roots of distinct such polynomials are disjoint, partitioning the $\varphi(q-1)$ primitive elements into classes of size $n$.
 
 **Corollary (number of irreducibles).** The number of monic irreducible polynomials of degree $n$ over $\mathbb{F}_p$ is
 
@@ -119,7 +119,7 @@ $$
 
 where $\mu$ is the Möbius function. Each is the minimal polynomial of an element of $\mathbb{F}_{p^n}$ of degree $n$ over $\mathbb{F}_p$, and the formula counts the Frobenius orbits of size $n$.
 
-**Proof.** Let $d$ be the degree of $\alpha \in \mathbb{F}_{p^n}$ over $\mathbb{F}_p$. Then $d \mid n$, the element $\alpha$ lies in $\mathbb{F}_{p^d}$ and in no proper subfield of it, and $m_\alpha$ has degree equal to the size of the Frobenius orbit of $\alpha$, so the elements of degree $d$ are exactly those counted by the Möbius inversion. Counting the $p^n$ elements of $\mathbb{F}_{p^n}$ by the degrees of their minimal polynomials gives the formula. $\square$
+**Proof.** Let $d$ be the degree of $\alpha \in \mathbb{F}_{p^n}$ over $\mathbb{F}_p$. Then $d \mid n$, the element $\alpha$ lies in $\mathbb{F}_{p^d}$ and in no proper subfield of it, and $m_\alpha$ has degree equal to the size of the Frobenius orbit of $\alpha$, so the elements of degree $d$ are exactly those counted by the Möbius inversion. Counting the $p^n$ elements of $\mathbb{F}_{p^n}$ by the degrees of their minimal polynomials gives the formula.
 
 **Example.** Over $\mathbb{F}_2$ the monic irreducible polynomial $x^2 + x + 1$ is primitive: its roots have order $3 = 2^2 - 1$. Over $\mathbb{F}_3$ the polynomial $x^2 + 1$ is irreducible but **not** primitive: a root $i$ satisfies $i^2 = -1 = 2$, so $i^4 = 1$ and $i$ has order $4 < 8$; the primitive quadratic polynomials over $\mathbb{F}_3$ are $x^2 + x + 2$ and $x^2 + 2x + 2$, in agreement with $\varphi(8)/2 = 2$.
 
@@ -133,11 +133,11 @@ where $\mu$ is the Möbius function. Each is the minimal polynomial of an elemen
 
 **Proof.** Suppose $\mathbb{F}_{p^m} \subseteq \mathbb{F}_{p^n}$. The degree is multiplicative over the tower $\mathbb{F}_p \subseteq \mathbb{F}_{p^m} \subseteq \mathbb{F}_{p^n}$, so $n = m \cdot [\,\mathbb{F}_{p^n}:\mathbb{F}_{p^m}\,]$ and $m \mid n$.
 
-Conversely, suppose $m \mid n$. Since $p^m - 1$ divides $p^n - 1$, the polynomial $x^{p^m-1} - 1$ divides $x^{p^n-1} - 1$, so $x^{p^m} - x$ divides $x^{p^n} - x$ in $\mathbb{F}_p[x]$. All roots of $x^{p^m} - x$ lie in $\mathbb{F}_{p^n}$, since they are roots of $x^{p^n} - x$, whose root set is $\mathbb{F}_{p^n}$. These roots form the subfield $\mathbb{F}_{p^m}$ by the argument of the construction theorem. Uniqueness: a subfield with $p^m$ elements is a field of that order, unique up to isomorphism inside its algebraic closure. The degree is $n/m$ by the tower law. $\square$
+Conversely, suppose $m \mid n$. Since $p^m - 1$ divides $p^n - 1$, the polynomial $x^{p^m-1} - 1$ divides $x^{p^n-1} - 1$, so $x^{p^m} - x$ divides $x^{p^n} - x$ in $\mathbb{F}_p[x]$. All roots of $x^{p^m} - x$ lie in $\mathbb{F}_{p^n}$, since they are roots of $x^{p^n} - x$, whose root set is $\mathbb{F}_{p^n}$. These roots form the subfield $\mathbb{F}_{p^m}$ by the argument of the construction theorem. Uniqueness: a subfield with $p^m$ elements is a field of that order, unique up to isomorphism inside its algebraic closure. The degree is $n/m$ by the tower law.
 
 **Corollary.** The subfields of $\mathbb{F}_{p^n}$ correspond bijectively to the divisors of $n$, and form a lattice isomorphic to the divisor lattice: $\mathbb{F}_{p^{m_1}} \cap \mathbb{F}_{p^{m_2}} = \mathbb{F}_{p^{\gcd(m_1,m_2)}}$ and the compositum inside $\mathbb{F}_{p^n}$ is $\mathbb{F}_{p^{\operatorname{lcm}(m_1,m_2)}}$.
 
-**Proof.** The first identity follows since the intersection has $p^{\gcd}$ elements by the criterion; the second since the compositum is the smallest subfield containing both, hence corresponds to the least common multiple. $\square$
+**Proof.** The first identity follows since the intersection has $p^{\gcd}$ elements by the criterion; the second since the compositum is the smallest subfield containing both, hence corresponds to the least common multiple.
 
 **Example.** The subfields of $\mathbb{F}_{2^{12}}$ correspond to the divisors of $12$, namely
 
@@ -187,7 +187,7 @@ so $(1+i)^8 = 1$ and the order is $8 = 9 - 1$. The minimal polynomial of $1+i$ i
 
 **Proposition.** Let $\alpha \in \mathbb{F}_{p^n}$ have degree $d$ over $\mathbb{F}_p$, and let $m_\alpha$ be its minimal polynomial. Then $d \mid n$, the roots of $m_\alpha$ are $\alpha, \alpha^p, \ldots, \alpha^{p^{d-1}}$, and they are distinct.
 
-**Proof.** The extension $\mathbb{F}_p(\alpha)/\mathbb{F}_p$ has degree $d$ and sits inside $\mathbb{F}_{p^n}$, so $d \mid n$ by the tower law. The Frobenius map $\varphi$ fixes $\mathbb{F}_p$, so if $m_\alpha(\alpha) = 0$ then $0 = \varphi(m_\alpha(\alpha)) = m_\alpha(\alpha^p)$; iterating, each $\alpha^{p^i}$ is a root of $m_\alpha$. The orbit closes at the first $d$ with $\alpha^{p^d} = \alpha$, which is the degree of $\alpha$ over $\mathbb{F}_p$. Distinctness holds because $\varphi$ is injective: if $\alpha^{p^i} = \alpha^{p^j}$ with $0 \leq i < j < d$, then $\alpha^{p^{j-i}} = \alpha$ and the degree of $\alpha$ is at most $j - i < d$, a contradiction. $\square$
+**Proof.** The extension $\mathbb{F}_p(\alpha)/\mathbb{F}_p$ has degree $d$ and sits inside $\mathbb{F}_{p^n}$, so $d \mid n$ by the tower law. The Frobenius map $\varphi$ fixes $\mathbb{F}_p$, so if $m_\alpha(\alpha) = 0$ then $0 = \varphi(m_\alpha(\alpha)) = m_\alpha(\alpha^p)$; iterating, each $\alpha^{p^i}$ is a root of $m_\alpha$. The orbit closes at the first $d$ with $\alpha^{p^d} = \alpha$, which is the degree of $\alpha$ over $\mathbb{F}_p$. Distinctness holds because $\varphi$ is injective: if $\alpha^{p^i} = \alpha^{p^j}$ with $0 \leq i < j < d$, then $\alpha^{p^{j-i}} = \alpha$ and the degree of $\alpha$ is at most $j - i < d$, a contradiction.
 
 **Remark (Wedderburn's theorem).** Every finite division ring is a field. Thus there is no noncommutative analogue of $\mathbb{F}_q$: the finite structures in this category are all commutative. The proof is standard and is not needed for the commutative theory developed here.
 

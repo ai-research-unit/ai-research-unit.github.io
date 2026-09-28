@@ -5,15 +5,15 @@
 
 This article describes the group of linear transformations of the split complex plane that preserve the split norm, and its realisation by the algebra $\mathbb{D} = \mathbb{R}[j]$, $j^2 = +1$. It is the split complex counterpart of *Rotations and Reflections in the Complex Plane*, written in parallel: there the unit circle acts by multiplication and its group is identified with the compact rotation group $SO(2)$, whereas here the unit hyperbola acts by multiplication and its identity component is identified with $SO(1,1)$, a group isomorphic to the additive line. The transformations are the **hyperbolic rotations**, and they are treated here only as a group of linear transformations of a plane, with no physical interpretation invoked.
 
-The split complex algebra, its conjugation $\bar Z = x - jy$, its norm form $N(Z) = Z\bar Z = x^2 - y^2$ and its idempotents $\Pi_\pm = \tfrac12(1\pm j)$ are taken from *Split-Complex Algebra*. The vocabulary of quadratic forms, polar forms and orthogonal groups is that of *Isometries and Orthogonal Transformations*, and the Lie algebra of a matrix group is that of *The Orthogonal Lie Algebra*. The base field throughout is $\mathbb{R}$, so that $2$ is invertible and every isometry of a non-degenerate form is a linear automorphism; the coefficients $x, y$ of $Z = x + jy$ are always real, and $\mathbb{D}$ is written in the basis $\{1, j\}$.
+The split complex algebra and its conjugation $\bar Z = x - jy$ are taken from *Split-Complex Algebra*; the split norm $N(Z) = Z\bar Z = x^2 - y^2$, its polarisation and the group of units are the form and the distance of *Split-Complex Norm and Invertibility*; and the idempotents $\Pi_\pm = \tfrac12(1\pm j)$ are taken from *Split-Complex Idempotents and Projections*. The vocabulary of quadratic forms, polar forms and orthogonal groups is that of *Isometries and Orthogonal Transformations*, and the Lie algebra of a matrix group is that of *The Orthogonal Lie Algebra*. The base field throughout is $\mathbb{R}$, so that $2$ is invertible and every isometry of a non-degenerate form is a linear automorphism; the coefficients $x, y$ of $Z = x + jy$ are always real, and $\mathbb{D}$ is written in the basis $\{1, j\}$.
 
-Two features distinguish the theory from its complex counterpart and organise everything below. The norm form $N$ is indefinite, of signature $(1,1)$, so the set $\{N = 0\}$ is a pair of lines, the **null cone**, rather than the single point of the complex case; and the unit group $\{N = 1\}$ is a hyperbola with two branches rather than a circle, so the rotation group is non-compact and its exponential is injective. The null cone is also the zero-divisor set of $\mathbb{D}$, so the group theory developed here and the failure of the Cauchy theory recorded below have the same locus.
+Two features distinguish the theory from its complex counterpart and organise everything below. The norm $N$ is indefinite, of signature $(1,1)$, so the set $\{N = 0\}$ is a pair of lines, the **null cone**, rather than the single point of the complex case; and the unit group $\{N = 1\}$ is a hyperbola with two branches rather than a circle, so the rotation group is non-compact and its exponential is injective. The null cone is also the zero-divisor set of $\mathbb{D}$, so the group theory developed here and the failure of the Cauchy theory recorded below have the same locus.
 
-## The Norm Form and Its Isometries
+## The Form and Its Isometries
 
 ### The Bilinear Form
 
-**Definition.** The **split bilinear form** on $\mathbb{D}$ is
+The **split bilinear form** on $\mathbb{D}$ is the polarisation of the norm $N$ of *Split-Complex Norm and Invertibility*; in explicit terms it is
 
 $$
 g(Z, W) = \operatorname{Re}(\bar Z W) = \frac{1}{2}\big(N(Z + W) - N(Z) - N(W)\big), \qquad Z, W \in \mathbb{D}.
@@ -37,7 +37,7 @@ $$
 \{Z : N(Z) = 0\} = \{Z : Z_+ = 0 \text{ or } Z_- = 0\}.
 $$
 
-**Proof.** Bilinearity and symmetry follow from the definition through $N$ and from the explicit formula $xc - yd$. The matrix is read off from $g(1,1) = 1$, $g(1,j) = 0$, $g(j,j) = -1$, and $\det G = -1 \neq 0$, so the form is non-degenerate with one positive and one negative square, that is, signature $(1,1)$. Since $N(Z) = Z_+Z_-$, the null set is the union of the two lines $Z_+ = 0$ and $Z_- = 0$. $\square$
+**Proof.** Bilinearity and symmetry follow from the definition through $N$ and from the explicit formula $xc - yd$. The matrix is read off from $g(1,1) = 1$, $g(1,j) = 0$, $g(j,j) = -1$, and $\det G = -1 \neq 0$, so the form is non-degenerate with one positive and one negative square, that is, signature $(1,1)$. Since $N(Z) = Z_+Z_-$, the null set is the union of the two lines $Z_+ = 0$ and $Z_- = 0$.
 
 The two null lines are the real spans of $\Pi_1$ and of $\Pi_2$ respectively. They are the lines on which the form vanishes, and equivalently the lines of zero divisors of the ring: a non-zero element is a zero divisor exactly when it lies on the cone.
 
@@ -59,7 +59,7 @@ $$
 2g(TZ, TW) = N(T(Z + W)) - N(TZ) - N(TW) = N(Z + W) - N(Z) - N(W) = 2g(Z, W),
 $$
 
-and $2$ is invertible. The converse is the case $Z = W$. If $N(TZ) = N(Z)$ and $TZ = 0$, then $g(Z, W) = g(TZ, TW) = 0$ for every $W$, so $Z = 0$ by non-degeneracy of $g$; hence $T$ is injective, and being linear on a finite-dimensional space it is invertible. $\square$
+and $2$ is invertible. The converse is the case $Z = W$. If $N(TZ) = N(Z)$ and $TZ = 0$, then $g(Z, W) = g(TZ, TW) = 0$ for every $W$, so $Z = 0$ by non-degeneracy of $g$; hence $T$ is injective, and being linear on a finite-dimensional space it is invertible.
 
 The determinant of an isometry is $\pm 1$, since $(\det T)^2 \det G = \det G$ and $\det G \neq 0$; thus $SO(1,1)$ is the kernel of the determinant on $O(1,1)$ and has index two in $O(1,1)$.
 
@@ -73,7 +73,7 @@ $$
 
 In the first case $\det T = 1$ and in the second $\det T = -1$.
 
-**Proof.** Both maps preserve $N$: $N(uZ) = N(u)N(Z) = N(Z)$ and $N(u\bar Z) = N(u)N(\bar Z) = N(Z)$, since $N(\bar Z) = N(Z)$ and the norm form is multiplicative. This proves the converse, and the determinant statement follows from $\det M_u = N(u) = 1$ for the matrix $M_u$ of multiplication, computed below, together with $\det \mathrm{diag}(1,-1) = -1$ for conjugation.
+**Proof.** Both maps preserve $N$: $N(uZ) = N(u)N(Z) = N(Z)$ and $N(u\bar Z) = N(u)N(\bar Z) = N(Z)$, since $N(\bar Z) = N(Z)$ and the norm is multiplicative. This proves the converse, and the determinant statement follows from $\det M_u = N(u) = 1$ for the matrix $M_u$ of multiplication, computed below, together with $\det \mathrm{diag}(1,-1) = -1$ for conjugation.
 
 Conversely, let $T$ preserve $N$ and put $u = T(1)$. Then $N(u) = N(1) = 1$. Since $g(T(1), T(j)) = g(1, j) = 0$, the vector $T(j)$ lies in the $g$-orthogonal complement $u^\perp$. That complement is one-dimensional, spanned by $ju$: indeed $g(u, ju) = \operatorname{Re}(\bar u\, ju) = \operatorname{Re}(j\,\bar u u) = N(u)\operatorname{Re}(j) = 0$, since $\bar u u = N(u)$ is real, and $ju \neq 0$. So $T(j) = \lambda\, ju$ for some real $\lambda$. Taking norms,
 
@@ -81,31 +81,15 @@ $$
 -1 = N(T(j)) = N(\lambda\, ju) = \lambda^2 N(ju) = \lambda^2 N(j) N(u) = -\lambda^2,
 $$
 
-so $\lambda = \pm 1$. If $\lambda = 1$ then $T$ fixes $1 \mapsto u$ and $j \mapsto ju$, hence by linearity $T(Z) = uZ$ for $Z = x + jy$. If $\lambda = -1$ then $T(j) = -ju$, and $T(Z) = xu - yju = u(x - jy) = u\bar Z$. $\square$
+so $\lambda = \pm 1$. If $\lambda = 1$ then $T$ fixes $1 \mapsto u$ and $j \mapsto ju$, hence by linearity $T(Z) = uZ$ for $Z = x + jy$. If $\lambda = -1$ then $T(j) = -ju$, and $T(Z) = xu - yju = u(x - jy) = u\bar Z$.
 
 The two families are the rotations and the reflections. They are disjoint, since a map of the first form is $\mathbb{D}$-linear while a map of the second is not: $S_u(j\cdot 1) = S_u(j) = -ju \neq j S_u(1) = ju$. Every isometry is therefore either a rotation or a reflection, and the determinant distinguishes the two.
 
-## The Unit Group and the Hyperbola
+## The Unit Hyperbola and Its Branches
 
-### Units and the Norm Homomorphism
+### The Units and the Norm-One Group
 
-**Proposition.** An element $Z \in \mathbb{D}$ is a unit if and only if $N(Z) \neq 0$, and then
-
-$$
-Z^{-1} = \frac{\bar Z}{N(Z)}.
-$$
-
-The norm is a surjective group homomorphism
-
-$$
-N : \mathbb{D}^\times \longrightarrow \mathbb{R}^\times, \qquad N(ZW) = N(Z)N(W),
-$$
-
-with kernel $\{u : N(u) = 1\}$.
-
-**Proof.** If $N(Z) \neq 0$ then $Z\bar Z = N(Z)$ shows that $\bar Z / N(Z)$ is an inverse. Conversely if $Z$ is a unit, say $ZW = 1$, then $N(Z)N(W) = N(1) = 1$, so $N(Z) \neq 0$. Multiplicativity of $N$ is the identity $(x^2-y^2)(c^2-d^2) = (xc+yd)^2 - (xd+yc)^2$, the case $n = 1$ of Brahmagupta's identity for the form $a^2 - nb^2$; surjectivity is seen on the real axis, where $N(t) = t^2$ assumes every positive value, and $N(j) = -1$ supplies the negative ones. $\square$
-
-So $\mathbb{D}^\times$ is the complement of the null cone, and $N$ presents it as an extension of $\mathbb{R}^\times$ by the norm-one group $\mathcal{H} = \ker N$.
+By *Split-Complex Norm and Invertibility*, an element $Z \in \mathbb{D}$ is a unit exactly when $N(Z) \neq 0$, with $Z^{-1} = \bar Z/N(Z)$, and the norm is a surjective group homomorphism $N : \mathbb{D}^\times \to \mathbb{R}^\times$ with kernel the norm-one group $\mathcal{H} = \{u : N(u) = 1\}$. So $\mathbb{D}^\times$ is the complement of the null cone, and $N$ presents it as an extension of $\mathbb{R}^\times$ by $\mathcal{H}$; the unit group, its four components and its exponential parametrisation are treated in *Split-Complex Norm and Invertibility* and *Split-Complex Exponential and Lie Group Structure*.
 
 ### The Unit Hyperbola
 
@@ -123,7 +107,7 @@ $$
 
 is a group isomorphism onto the component $\mathcal{H}^+ = \{u \in \mathcal{H} : \operatorname{Re} u > 0\}$ of $\mathcal{H}$. The other component is $\mathcal{H}^- = -\mathcal{H}^+ = \{u \in \mathcal{H} : \operatorname{Re} u < 0\}$, and $\mathcal{H} = \mathcal{H}^+ \sqcup \mathcal{H}^-$ with $\operatorname{Re} u$ of constant sign on each component.
 
-**Proof.** The split complex exponential $\exp(W) = \sum W^n/n!$ converges for every $W$, and $e^{\phi j} = \cosh\phi + j\sinh\phi$ because $j^{2m} = 1$ and $j^{2m+1} = j$; this follows also from the addition formula. Then $N(e^{\phi j}) = \cosh^2\phi - \sinh^2\phi = 1$, so the image lies in $\mathcal{H}$, and $e^{\phi j}e^{\psi j} = e^{(\phi+\psi)j}$ since $j$ commutes with scalars and $j^2 = 1$. So the map is a homomorphism from $(\mathbb{R},+)$. It is injective, because $\cosh\phi \geq 1$ determines $|\phi|$ and $\sinh\phi$ determines the sign, and it is surjective onto $\mathcal{H}^+$, since for $u = x + jy \in \mathcal{H}^+$ the number $\phi = \operatorname{arsinh} y$ is real and then $x = \cosh\phi \geq 1$ is forced by $x^2 - y^2 = 1$ and $x > 0$. The component $\mathcal{H}^-$ is the negative of $\mathcal{H}^+$, and $\operatorname{Re} u$ cannot vanish on $\mathcal{H}$ because that would give $-y^2 = 1$. $\square$
+**Proof.** The split complex exponential $\exp(W) = \sum W^n/n!$ converges for every $W$, and $e^{\phi j} = \cosh\phi + j\sinh\phi$ because $j^{2m} = 1$ and $j^{2m+1} = j$; this follows also from the addition formula. Then $N(e^{\phi j}) = \cosh^2\phi - \sinh^2\phi = 1$, so the image lies in $\mathcal{H}$, and $e^{\phi j}e^{\psi j} = e^{(\phi+\psi)j}$ since $j$ commutes with scalars and $j^2 = 1$. So the map is a homomorphism from $(\mathbb{R},+)$. It is injective, because $\cosh\phi \geq 1$ determines $|\phi|$ and $\sinh\phi$ determines the sign, and it is surjective onto $\mathcal{H}^+$, since for $u = x + jy \in \mathcal{H}^+$ the number $\phi = \operatorname{arsinh} y$ is real and then $x = \cosh\phi \geq 1$ is forced by $x^2 - y^2 = 1$ and $x > 0$. The component $\mathcal{H}^-$ is the negative of $\mathcal{H}^+$, and $\operatorname{Re} u$ cannot vanish on $\mathcal{H}$ because that would give $-y^2 = 1$.
 
 The parameter $\phi$ is the **hyperbolic angle** of the unit $u$; it is also called the rapidity. Since the branch sign $\epsilon$ is carried separately, $\phi$ is a coordinate on all of $\mathcal{H}$, one copy of $\mathbb{R}$ for each branch; and it is defined modulo nothing at all, because the exponential is injective, in contrast with $e^{i\theta}$, whose kernel is $2\pi\mathbb{Z}$. Half of the difference between the two theories is already visible here.
 
@@ -141,7 +125,7 @@ $$
 Z = \rho\,\big(\sigma_+ \Pi_1 + \sigma_- \Pi_2\big)e^{\phi j}.
 $$
 
-**Proof.** The map $Z \mapsto (Z_+, Z_-)$ is a ring isomorphism $\mathbb{D} \to \mathbb{R} \times \mathbb{R}$, hence restricts to an isomorphism of unit groups, and $(Z^{-1})_\pm = Z_\pm^{-1}$. Each factor $\mathbb{R}^\times$ is $\mathbb{R}_{>0} \times \{\pm1\}$ through $t \mapsto (|t|, t/|t|)$. Hence $\mathbb{D}^\times \cong \mathbb{R}_{>0}^2 \times (\mathbb{Z}/2)^2$, which has four components and is isomorphic to $\mathbb{R}_{>0} \times \mathbb{R} \times (\mathbb{Z}/2)^2$ because $\mathbb{R}_{>0}^2 \cong \mathbb{R}_{>0} \times \mathbb{R}_{>0}$ and $\mathbb{R}_{>0} \cong \mathbb{R}$ by the logarithm. In the coordinates $(Z_+, Z_-)$ the identity component is $Z_+ > 0$, $Z_- > 0$, and the norm there is positive; transporting back through $e^{\phi j}$ gives the stated form. The factors of the isomorphism are the two moduli $\lvert Z_+ \rvert, \lvert Z_- \rvert$, written as the geometric mean $\rho$ and the ratio $e^{2\phi}$, and the two signs $\sigma_\pm$. $\square$
+**Proof.** The map $Z \mapsto (Z_+, Z_-)$ is a ring isomorphism $\mathbb{D} \to \mathbb{R} \times \mathbb{R}$, hence restricts to an isomorphism of unit groups, and $(Z^{-1})_\pm = Z_\pm^{-1}$. Each factor $\mathbb{R}^\times$ is $\mathbb{R}_{>0} \times \{\pm1\}$ through $t \mapsto (|t|, t/|t|)$. Hence $\mathbb{D}^\times \cong \mathbb{R}_{>0}^2 \times (\mathbb{Z}/2)^2$, which has four components and is isomorphic to $\mathbb{R}_{>0} \times \mathbb{R} \times (\mathbb{Z}/2)^2$ because $\mathbb{R}_{>0}^2 \cong \mathbb{R}_{>0} \times \mathbb{R}_{>0}$ and $\mathbb{R}_{>0} \cong \mathbb{R}$ by the logarithm. In the coordinates $(Z_+, Z_-)$ the identity component is $Z_+ > 0$, $Z_- > 0$, and the norm there is positive; transporting back through $e^{\phi j}$ gives the stated form. The factors of the isomorphism are the two moduli $\lvert Z_+ \rvert, \lvert Z_- \rvert$, written as the geometric mean $\rho$ and the ratio $e^{2\phi}$, and the two signs $\sigma_\pm$.
 
 For non-zero $Z$, the factorisation $Z = \rho u$ with $\rho > 0$ and $N(u) = \pm 1$ is the **polar decomposition** of a split complex number, the analogue of $Z = |Z|\,u$ in the complex case, with the circle replaced by the union of the two hyperbolas $N = 1$ and $N = -1$. The unit group is not compact, because the branch $\mathcal{H}^+$ is a hyperbola, and it is abelian, as the multiplicative group of a commutative ring must be.
 
@@ -149,7 +133,7 @@ For non-zero $Z$, the factorisation $Z = \rho u$ with $\rho > 0$ and $N(u) = \pm
 
 **Proposition.** The identity component $SO^+(1,1)$ acts simply transitively on each branch $\mathcal{H}^\pm$ of the unit hyperbola, and on each of the two branches of the hyperbola $\{N = -1\}$.
 
-**Proof.** For $u = e^{\alpha j}$ and the parametrisation $e^{\phi j}$ of a branch, $R_u(e^{\phi j}) = e^{(\alpha+\phi)j}$, which is a free and transitive action of $(\mathbb{R},+)$ on the branch by translation of the parameter; the same computation applies to the branch $-\mathcal{H}^+$ and, after multiplying by $j$, to the branches of $\{N = -1\}$. $\square$
+**Proof.** For $u = e^{\alpha j}$ and the parametrisation $e^{\phi j}$ of a branch, $R_u(e^{\phi j}) = e^{(\alpha+\phi)j}$, which is a free and transitive action of $(\mathbb{R},+)$ on the branch by translation of the parameter; the same computation applies to the branch $-\mathcal{H}^+$ and, after multiplying by $j$, to the branches of $\{N = -1\}$.
 
 ## Hyperbolic Rotations
 
@@ -169,7 +153,7 @@ $$
 
 is a group isomorphism and $R_u$ has determinant $1$.
 
-**Proof.** The isometry property is $N(uZ) = N(u)N(Z) = N(Z)$. The composition law is associativity of multiplication, and $u^{-1} = \bar u$ when $N(u) = 1$, by the inversion formula. Injectivity of $u \mapsto R_u$ is clear at $Z = 1$, and surjectivity onto $SO(1,1)$ is the determinant-one half of the classification theorem. $\square$
+**Proof.** The isometry property is $N(uZ) = N(u)N(Z) = N(Z)$. The composition law is associativity of multiplication, and $u^{-1} = \bar u$ when $N(u) = 1$, by the inversion formula. Injectivity of $u \mapsto R_u$ is clear at $Z = 1$, and surjectivity onto $SO(1,1)$ is the determinant-one half of the classification theorem.
 
 **Proposition (matrix form).** In the basis $\{1, j\}$, write $u = x + jy$. Then
 
@@ -177,7 +161,7 @@ $$
 R_u \ \longleftrightarrow \ M_u = \begin{pmatrix} x & y \\ y & x \end{pmatrix}, \qquad \det M_u = x^2 - y^2 = N(u).
 $$
 
-**Proof.** $R_u(1) = u = x\cdot 1 + y\cdot j$ and $R_u(j) = uj = (x+jy)j = y + xj$, which are the two columns. The determinant is $x^2 - y^2$. $\square$
+**Proof.** $R_u(1) = u = x\cdot 1 + y\cdot j$ and $R_u(j) = uj = (x+jy)j = y + xj$, which are the two columns. The determinant is $x^2 - y^2$.
 
 So the matrices of the form $\begin{pmatrix} x & y\\ y & x\end{pmatrix}$ constitute a two-dimensional family, and the rotation group is cut out inside it by the single equation $N(u) = 1$: the group $SO(1,1) = \{M_u : N(u) = 1\}$ is the hyperbola $x^2 - y^2 = 1$, a curve with two branches, and $SO^+(1,1)$ is the branch $x > 0$, which the angle parametrises.
 
@@ -193,7 +177,7 @@ $$
 
 Hence the hyperbolic angle is additive, $\operatorname{angle}(uv) = \alpha + \beta$, and the branch sign multiplies; both are homomorphisms from $\mathcal{H}$ to $\mathbb{R}$ and to $\{\pm1\}$ respectively.
 
-**Proof.** Since $e^{\alpha j}e^{\beta j} = e^{(\alpha+\beta)j}$ and $\epsilon, \eta, e^{\alpha j}, e^{\beta j}$ all commute, the product formula follows, and both stated homomorphism properties are read off from it. $\square$
+**Proof.** Since $e^{\alpha j}e^{\beta j} = e^{(\alpha+\beta)j}$ and $\epsilon, \eta, e^{\alpha j}, e^{\beta j}$ all commute, the product formula follows, and both stated homomorphism properties are read off from it.
 
 The angle is the group coordinate of the identity component: it identifies $SO^+(1,1)$ with the additive group of real numbers, and it is the logarithm of the eigenvalues $e^{\pm\phi}$ of the corresponding rotation matrix, as the idempotent decomposition below makes explicit.
 
@@ -209,7 +193,7 @@ $$
 
 Equivalently, $R_u$ fixes each null line and scales the two primitive idempotents by reciprocal positive factors, and it preserves the product $N(Z) = Z_+Z_-$.
 
-**Proof.** Since $\Pi_1 j = \Pi_1$ and $\Pi_2 j = -\Pi_2$, one has $e^{\phi j} = e^{\phi}\Pi_1 + e^{-\phi}\Pi_2$. Multiplying a split complex number in the idempotent basis is componentwise, so the action is as stated. The product $Z_+Z_-$ is multiplied by $e^{\phi}e^{-\phi} = 1$; the two null lines $Z_- = 0$ and $Z_+ = 0$ are preserved. $\square$
+**Proof.** Since $\Pi_1 j = \Pi_1$ and $\Pi_2 j = -\Pi_2$, one has $e^{\phi j} = e^{\phi}\Pi_1 + e^{-\phi}\Pi_2$. Multiplying a split complex number in the idempotent basis is componentwise, so the action is as stated. The product $Z_+Z_-$ is multiplied by $e^{\phi}e^{-\phi} = 1$; the two null lines $Z_- = 0$ and $Z_+ = 0$ are preserved.
 
 **Remark.** The name *hyperbolic rotation* records the action on the hyperbola, not a rotation of the Euclidean plane. In the Euclidean coordinates $x, y$ the map is a squeeze: the lines $y = \pm x$ are fixed and the hyperbolas $N = \text{const}$ are traced out, with the point $(1,0)$ moving along the branch to $(\cosh\phi, \sinh\phi)$. Euclidean angles are not preserved; the invariant is the indefinite form $N$.
 
@@ -223,7 +207,7 @@ $$
 
 so $SO^+(1,1)$ is abelian and isomorphic to the additive group of the line.
 
-**Proof.** By the theorem above, $R_{e^{\alpha j}}R_{e^{\beta j}} = R_{e^{(\alpha+\beta)j}}$, so the correspondence preserves the group law, and it is bijective because $\phi \mapsto e^{\phi j}$ parametrises $\mathcal{H}^+$ bijectively. $\square$
+**Proof.** By the theorem above, $R_{e^{\alpha j}}R_{e^{\beta j}} = R_{e^{(\alpha+\beta)j}}$, so the correspondence preserves the group law, and it is bijective because $\phi \mapsto e^{\phi j}$ parametrises $\mathcal{H}^+$ bijectively.
 
 So the "rotation group of the split plane" is the real line, and the composition of two hyperbolic rotations is the addition of their angles; the two-element group of the sign of $x$ supplies the second component of $SO(1,1)$.
 
@@ -254,10 +238,10 @@ because the product of the matrices $M_\alpha$ and $M_\beta$ is $M_{\alpha+\beta
 **Definition.** The **orthogonal Lie algebra** of the form is
 
 $$
-\mathfrak{so}(1,1) = \{X \in \mathfrak{gl}_2(\mathbb{R}) : X^T G + G X = 0\}.
+\mathrm{SO}(1,1) = \{X \in \mathrm{GL}_2(\mathbb{R}) : X^T G + G X = 0\}.
 $$
 
-**Proposition.** $\mathfrak{so}(1,1)$ is one-dimensional, spanned by
+**Proposition.** $\mathrm{SO}(1,1)$ is one-dimensional, spanned by
 
 $$
 J = \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix},
@@ -266,14 +250,14 @@ $$
 and is abelian: $[J, J] = 0$. The exponential map
 
 $$
-\exp : \mathfrak{so}(1,1) \longrightarrow SO^+(1,1), \qquad \exp(tJ) = \begin{pmatrix} \cosh t & \sinh t \\ \sinh t & \cosh t \end{pmatrix},
+\exp : \mathrm{SO}(1,1) \longrightarrow SO^+(1,1), \qquad \exp(tJ) = \begin{pmatrix} \cosh t & \sinh t \\ \sinh t & \cosh t \end{pmatrix},
 $$
 
 is a bijection, and in particular $SO^+(1,1)$ is simply connected and contractible.
 
-**Proof.** For $X = \begin{pmatrix} p & q\\ r & s\end{pmatrix}$ the condition reads $2p = 0$, $q = r$, $2s = 0$, so $X = qJ$; the bracket vanishes in one dimension. Since $J^2 = I$, the exponential series gives $\exp(tJ) = I\cosh t + J\sinh t$, the stated matrix. The map $t \mapsto \exp(tJ)$ is the isomorphism of the previous section, hence bijective. $\square$
+**Proof.** For $X = \begin{pmatrix} p & q\\ r & s\end{pmatrix}$ the condition reads $2p = 0$, $q = r$, $2s = 0$, so $X = qJ$; the bracket vanishes in one dimension. Since $J^2 = I$, the exponential series gives $\exp(tJ) = I\cosh t + J\sinh t$, the stated matrix. The map $t \mapsto \exp(tJ)$ is the isomorphism of the previous section, hence bijective.
 
-**Remark.** In the complex plane the analogous map $\mathfrak{so}(2) \to SO(2)$ is surjective but not injective, with kernel $2\pi\mathbb{Z}$, because the exponential of an imaginary number is periodic. Here $J^2 = I$, the exponential is a diffeomorphism onto the identity component, and the group is non-compact. The passage from the Lie algebra to the group loses nothing on the identity component, but the exponential does not see the other components of $O(1,1)$: no $t$ gives $-I$ or a reflection.
+**Remark.** In the complex plane the analogous map $\mathrm{SO}(2) \to SO(2)$ is surjective but not injective, with kernel $2\pi\mathbb{Z}$, because the exponential of an imaginary number is periodic. Here $J^2 = I$, the exponential is a diffeomorphism onto the identity component, and the group is non-compact. The passage from the Lie algebra to the group loses nothing on the identity component, but the exponential does not see the other components of $O(1,1)$: no $t$ gives $-I$ or a reflection.
 
 ### The Group Law in Hyperbolic Coordinates
 
@@ -287,7 +271,7 @@ $$
 
 With this operation, $(-1,1)$ is a group isomorphic to $SO^+(1,1)$.
 
-**Proof.** $\tanh$ is a strictly increasing bijection of $\mathbb{R}$ onto $(-1,1)$. The identity $\tanh(\alpha+\beta) = (\tanh\alpha + \tanh\beta)/(1 + \tanh\alpha\tanh\beta)$ is the quotient of the two addition theorems above, and it becomes the stated law under the identification $s = \tanh\alpha$, $t = \tanh\beta$. $\square$
+**Proof.** $\tanh$ is a strictly increasing bijection of $\mathbb{R}$ onto $(-1,1)$. The identity $\tanh(\alpha+\beta) = (\tanh\alpha + \tanh\beta)/(1 + \tanh\alpha\tanh\beta)$ is the quotient of the two addition theorems above, and it becomes the stated law under the identification $s = \tanh\alpha$, $t = \tanh\beta$.
 
 The quantity $s = \tanh\phi$ is bounded, while $\phi$ is not, and the group law on the interval is the one that makes the two ends $\pm 1$ infinitely far from the identity. The parametrisation is the split complex analogue of the tangent half-angle substitution, with the circle replaced by the hyperbola.
 
@@ -307,7 +291,7 @@ $$
 M_u\, \kappa, \qquad \kappa = \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix}.
 $$
 
-**Proof.** $N(u\bar Z) = N(u)N(\bar Z) = N(Z)$, since $N(\bar Z) = N(Z)$. Conjugation has matrix $\kappa$ and determinant $-1$, the matrix $M_u$ has determinant $1$, so $\det S_u = -1$. That $S_u$ is an involution is $u\overline{u\bar Z} = u\bar u Z = Z$ because $u\bar u = N(u) = 1$. Finally $S_u(j) = u\bar j = -uj = -j u \neq jS_u(1) = ju$, so $S_u$ is not $\mathbb{D}$-linear. $\square$
+**Proof.** $N(u\bar Z) = N(u)N(\bar Z) = N(Z)$, since $N(\bar Z) = N(Z)$. Conjugation has matrix $\kappa$ and determinant $-1$, the matrix $M_u$ has determinant $1$, so $\det S_u = -1$. That $S_u$ is an involution is $u\overline{u\bar Z} = u\bar u Z = Z$ because $u\bar u = N(u) = 1$. Finally $S_u(j) = u\bar j = -uj = -j u \neq jS_u(1) = ju$, so $S_u$ is not $\mathbb{D}$-linear.
 
 So the reflections are the anti-linear isometries, exactly as in the complex plane, where they are the maps $Z \mapsto u\bar Z$. The element $u = 1$ gives the plain conjugation $\bar\cdot$, whose matrix is $\kappa$.
 
@@ -333,7 +317,7 @@ $$
 S_u(Z) = e^{\phi}Z_-\, \Pi_1 + e^{-\phi}Z_+\, \Pi_2.
 $$
 
-The fixed condition $S_u(Z) = Z$ is therefore $Z_+ = e^{\phi}Z_-$, a line in the $(Z_+,Z_-)$-plane; transporting a direction $Z_+ = e^{\phi}t$, $Z_- = t$ to the coordinates $x = (Z_++Z_-)/2$, $y = (Z_+-Z_-)/2$ gives $(x,y) = t\,e^{\phi/2}(\cosh(\phi/2),\sinh(\phi/2))$, which is $L_+$, with norm $t^2e^{\phi}$ vanishing nowhere on $L_+ \setminus \{0\}$. Because $S_u$ preserves $g$, it preserves the $g$-orthogonal complement $L_+^\perp$, which is one-dimensional and spanned by $(\sinh(\phi/2),\cosh(\phi/2))$, a vector of norm $-1$; indeed the two generators are $g$-orthogonal because $\cosh(\phi/2)\sinh(\phi/2) - \sinh(\phi/2)\cosh(\phi/2) = 0$. The eigenvalues of $S_u$ are the roots of $\lambda^2 - (\operatorname{tr} S_u)\lambda + \det S_u = \lambda^2 - 1$, namely $\pm 1$, so $S_u$ acts on $L_+^\perp$, which the fixed line does not meet, by the eigenvalue $-1$. $\square$
+The fixed condition $S_u(Z) = Z$ is therefore $Z_+ = e^{\phi}Z_-$, a line in the $(Z_+,Z_-)$-plane; transporting a direction $Z_+ = e^{\phi}t$, $Z_- = t$ to the coordinates $x = (Z_++Z_-)/2$, $y = (Z_+-Z_-)/2$ gives $(x,y) = t\,e^{\phi/2}(\cosh(\phi/2),\sinh(\phi/2))$, which is $L_+$, with norm $t^2e^{\phi}$ vanishing nowhere on $L_+ \setminus \{0\}$. Because $S_u$ preserves $g$, it preserves the $g$-orthogonal complement $L_+^\perp$, which is one-dimensional and spanned by $(\sinh(\phi/2),\cosh(\phi/2))$, a vector of norm $-1$; indeed the two generators are $g$-orthogonal because $\cosh(\phi/2)\sinh(\phi/2) - \sinh(\phi/2)\cosh(\phi/2) = 0$. The eigenvalues of $S_u$ are the roots of $\lambda^2 - (\operatorname{tr} S_u)\lambda + \det S_u = \lambda^2 - 1$, namely $\pm 1$, so $S_u$ acts on $L_+^\perp$, which the fixed line does not meet, by the eigenvalue $-1$.
 
 **Example.** For $u = 1$ (angle $\phi = 0$) the reflection is plain conjugation: it fixes the real axis and negates the $j$-axis. For $u = -1$ the reflection is $Z \mapsto -\bar Z$, and direct computation shows that it fixes the imaginary axis $\mathbb{R}j$ and negates the real axis. For $u = e^{\phi j}$ with $\phi \neq 0$, the fixed line is the tilted line $L_+$ above, which is neither of the coordinate axes. In general, for $u = \epsilon e^{\phi j}$ with $\epsilon = \pm 1$, the fixed line has a generator of norm $\epsilon$ and the negated line a generator of norm $-\epsilon$; the sign of $u$ exchanges the roles of the two eigenspaces.
 
@@ -341,7 +325,7 @@ The fixed condition $S_u(Z) = Z$ is therefore $Z_+ = e^{\phi}Z_-$, a line in the
 
 **Proposition.** Every reflection $S_u$ interchanges the two null lines and every rotation $R_u$ preserves each of them.
 
-**Proof.** $\overline{\Pi_1} = \Pi_2$ and $\overline{\Pi_2} = \Pi_1$, so $\bar\cdot$ swaps the two null lines $\mathbb{R}\Pi_1$ and $\mathbb{R}\Pi_2$. For $u = \epsilon e^{\phi j} \in \mathcal{H}$ one has $u \Pi_1 = \epsilon e^{\phi}\Pi_1$ and $u \Pi_2 = \epsilon e^{-\phi}\Pi_2$, non-zero multiples of $\Pi_1$ and of $\Pi_2$, so multiplication by $u$ preserves each line separately. Hence $S_u$ swaps the lines and $R_u$ fixes them. $\square$
+**Proof.** $\overline{\Pi_1} = \Pi_2$ and $\overline{\Pi_2} = \Pi_1$, so $\bar\cdot$ swaps the two null lines $\mathbb{R}\Pi_1$ and $\mathbb{R}\Pi_2$. For $u = \epsilon e^{\phi j} \in \mathcal{H}$ one has $u \Pi_1 = \epsilon e^{\phi}\Pi_1$ and $u \Pi_2 = \epsilon e^{-\phi}\Pi_2$, non-zero multiples of $\Pi_1$ and of $\Pi_2$, so multiplication by $u$ preserves each line separately. Hence $S_u$ swaps the lines and $R_u$ fixes them.
 
 So the null lines are the fixed directions of the rotation group and the exchanged directions of the reflection coset. Since the null lines are the zero-divisor cone of *Split-Complex Algebra* and the characteristic set of the Cauchy–Riemann operator, this is the group-theoretic statement that the rotations preserve the cone and the reflections permute its two halves.
 
@@ -355,15 +339,15 @@ $$
 
 In particular the composition of two reflections is a rotation, and the composition of a reflection with a rotation is a reflection.
 
-**Proof.** Directly, $S_u(S_v(Z)) = u\overline{v\bar Z} = u\bar v Z = R_{u\bar v}(Z)$, since $\overline{\bar Z} = Z$; the other two identities are the same computation. Moreover $N(u\bar v) = N(u)N(v) = 1$, so $u\bar v \in \mathcal{H}$ and $R_{u\bar v}$ is a rotation. $\square$
+**Proof.** Directly, $S_u(S_v(Z)) = u\overline{v\bar Z} = u\bar v Z = R_{u\bar v}(Z)$, since $\overline{\bar Z} = Z$; the other two identities are the same computation. Moreover $N(u\bar v) = N(u)N(v) = 1$, so $u\bar v \in \mathcal{H}$ and $R_{u\bar v}$ is a rotation.
 
 **Corollary (angles).** If $u = e^{\alpha j}$ and $v = e^{\beta j}$, then $S_u S_v = R_{e^{(\alpha-\beta)j}}$; the composition of two reflections is the rotation whose angle is the difference of their angles.
 
-**Proof.** $\bar v = e^{-\beta j}$, so $u\bar v = e^{(\alpha-\beta)j}$. $\square$
+**Proof.** $\bar v = e^{-\beta j}$, so $u\bar v = e^{(\alpha-\beta)j}$.
 
 **Corollary (Cartan–Dieudonné, dimension two).** Every element of $O(1,1)$ is a product of at most two reflections: the identity is $S_1 \circ S_1$, a reflection is itself, and a rotation is $R_u = S_u \circ S_1$.
 
-**Proof.** $S_u(S_1(Z)) = u\overline{\bar Z} = uZ = R_u(Z)$ for every $Z$, and the classification theorem lists the elements of $O(1,1)$ as the rotations and the reflections. $\square$
+**Proof.** $S_u(S_1(Z)) = u\overline{\bar Z} = uZ = R_u(Z)$ for every $Z$, and the classification theorem lists the elements of $O(1,1)$ as the rotations and the reflections.
 
 **Proposition (conjugacy of the reflections).** For $u, W \in \mathcal{H}$,
 
@@ -379,7 +363,7 @@ $$
 R_WS_uR_W^{-1} = R_WS_uR_{\bar W} = R_WS_{uW} = S_{W^2u},
 $$
 
-and the second identity is $S_WS_uS_W^{-1} = S_WS_uS_W = R_{W\bar u}S_W = S_{W^2\bar u}$, because $S_W$ is an involution. Write $W = \epsilon e^{\phi j}$; then $W^2 = e^{2\phi j} \in \mathcal{H}^+$ has both idempotent coordinates positive, and $\bar u$ has the two idempotent coordinates of $u$ in the opposite order, so $W^2u$ and $W^2\bar u$ lie in the branch of $u$. Given $u, v \in \mathcal{H}^+$, the element $W = \sqrt{v/u}$ lies in $\mathcal{H}^+$ and satisfies $W^2u = v$, so the first identity conjugates $S_u$ to $S_v$; in particular each such $S_u$ is conjugate to $S_1$. The same argument inside $\mathcal{H}^-$ conjugates every $S_u$ there to $S_{-1}$. Since conjugation always preserves the branch of the parameter, the two sets are distinct, and they are the two conjugacy classes. $\square$
+and the second identity is $S_WS_uS_W^{-1} = S_WS_uS_W = R_{W\bar u}S_W = S_{W^2\bar u}$, because $S_W$ is an involution. Write $W = \epsilon e^{\phi j}$; then $W^2 = e^{2\phi j} \in \mathcal{H}^+$ has both idempotent coordinates positive, and $\bar u$ has the two idempotent coordinates of $u$ in the opposite order, so $W^2u$ and $W^2\bar u$ lie in the branch of $u$. Given $u, v \in \mathcal{H}^+$, the element $W = \sqrt{v/u}$ lies in $\mathcal{H}^+$ and satisfies $W^2u = v$, so the first identity conjugates $S_u$ to $S_v$; in particular each such $S_u$ is conjugate to $S_1$. The same argument inside $\mathcal{H}^-$ conjugates every $S_u$ there to $S_{-1}$. Since conjugation always preserves the branch of the parameter, the two sets are distinct, and they are the two conjugacy classes.
 
 In $O(2)$, where every unit is a square, the reflections form a single conjugacy class; here the two branches of $\mathcal{H}$ separate them, exactly as the two branches separate $SO(1,1)$ from $-SO(1,1)$.
 
@@ -404,7 +388,7 @@ and the following table describes them, where $\operatorname{Re} u$ denotes the 
 | $M_\phi\kappa$ | $-1$ | $+$ | $Z \mapsto u\bar Z$ | reflection, $x > 0$ |
 | $-M_\phi\kappa$ | $-1$ | $-$ | $Z \mapsto -u\bar Z$ | reflection, $x < 0$ |
 
-**Proof.** By the classification theorem every isometry is $R_u$ or $S_u$ with $N(u) = 1$. If $u \in \mathcal{H}^+$, then $u = e^{\phi j}$ and the matrix is $M_\phi$ or $M_\phi\kappa$; if $u \in \mathcal{H}^-$, then $u = -e^{\phi j}$ and the matrix is $-M_\phi$ or $-M_\phi\kappa$. The determinant is read off from $\det M_\phi = 1$ and $\det\kappa = -1$, and the first entry of the first column is $\operatorname{Re} u$, whose sign is that of the branch of $\mathcal{H}$ containing $u$. $\square$
+**Proof.** By the classification theorem every isometry is $R_u$ or $S_u$ with $N(u) = 1$. If $u \in \mathcal{H}^+$, then $u = e^{\phi j}$ and the matrix is $M_\phi$ or $M_\phi\kappa$; if $u \in \mathcal{H}^-$, then $u = -e^{\phi j}$ and the matrix is $-M_\phi$ or $-M_\phi\kappa$. The determinant is read off from $\det M_\phi = 1$ and $\det\kappa = -1$, and the first entry of the first column is $\operatorname{Re} u$, whose sign is that of the branch of $\mathcal{H}$ containing $u$.
 
 The table shows that $O(1,1)$ has four connected components, indexed by the sign of the determinant and by the branch of $u$, and that each is a copy of $\mathbb{R}$.
 
@@ -418,17 +402,17 @@ $$
 
 the second $\mathbb{Z}/2\mathbb{Z}$ being generated by the conjugation $\kappa$.
 
-**Proof.** The map $(\phi, \sigma) \mapsto (-1)^\sigma e^{\phi j}$ is a group isomorphism $(\mathbb{R},+) \times \mathbb{Z}/2 \to \mathcal{H}$, because $-1$ is central of order two and $(-1)e^{\phi j} = -e^{\phi j}$; applying $u \mapsto R_u$ gives the first isomorphism. For the second, $O(1,1) = SO(1,1) \cup SO(1,1)\kappa$, and $\kappa^2 = \mathrm{id}$, so the union is a semidirect product once the action of $\kappa$ on $SO(1,1)$ is known: conjugation by $\kappa$ inverts the angle, $\kappa M_\phi \kappa^{-1} = M_{-\phi}$, as is checked by matrix multiplication. $\square$
+**Proof.** The map $(\phi, \sigma) \mapsto (-1)^\sigma e^{\phi j}$ is a group isomorphism $(\mathbb{R},+) \times \mathbb{Z}/2 \to \mathcal{H}$, because $-1$ is central of order two and $(-1)e^{\phi j} = -e^{\phi j}$; applying $u \mapsto R_u$ gives the first isomorphism. For the second, $O(1,1) = SO(1,1) \cup SO(1,1)\kappa$, and $\kappa^2 = \mathrm{id}$, so the union is a semidirect product once the action of $\kappa$ on $SO(1,1)$ is known: conjugation by $\kappa$ inverts the angle, $\kappa M_\phi \kappa^{-1} = M_{-\phi}$, as is checked by matrix multiplication.
 
 So the rotation subgroup is normal and its complement is a single coset, the extension being split by $\kappa$. The identity component is $SO^+(1,1) \cong \mathbb{R}$.
 
 ### The Center and the Lie Algebra
 
-**Theorem.** The center of $O(1,1)$ is $\{\pm I\}$. The group $SO(1,1)$ is abelian, so its center is $SO(1,1)$ itself; the center of the identity component $SO^+(1,1)$ is $SO^+(1,1)$. The Lie algebra of both is $\mathfrak{so}(1,1) = \mathbb{R}J$; the exponential has image the identity component $SO^+(1,1)$, and is not surjective onto $O(1,1)$.
+**Theorem.** The center of $O(1,1)$ is $\{\pm I\}$. The group $SO(1,1)$ is abelian, so its center is $SO(1,1)$ itself; the center of the identity component $SO^+(1,1)$ is $SO^+(1,1)$. The Lie algebra of both is $\mathrm{SO}(1,1) = \mathbb{R}J$; the exponential has image the identity component $SO^+(1,1)$, and is not surjective onto $O(1,1)$.
 
-**Proof.** A matrix $X = \begin{pmatrix} p & q \\ r & s\end{pmatrix}$ commuting with every $M_\phi$ commutes with $M_\phi - M_0 = (\cosh\phi - 1)I + \sinh\phi\, J$, hence with $J$, and the equation $XJ = JX$ gives $q = r$ and $p = s$, so $X = \begin{pmatrix} p & q \\ q & p\end{pmatrix}$. For such an $X$, the condition $X\kappa = \kappa X$ forces $q = 0$, and then $X \in O(1,1)$ forces $p = \pm 1$; hence the center of $O(1,1)$ is $\{\pm I\}$. Since $M_\alpha M_\beta = M_{\alpha+\beta} = M_\beta M_\alpha$, the group $SO(1,1) = \{M_\phi\} \cup \{-M_\phi\}$ is abelian and equals its own center; so does its identity component. The Lie algebra was computed above, and $\exp(\mathfrak{so}(1,1)) = \{M_\phi\} = SO^+(1,1)$; the element $-I$, which is $M_\phi$ for no real $\phi$, and the reflections are not in the image. $\square$
+**Proof.** A matrix $X = \begin{pmatrix} p & q \\ r & s\end{pmatrix}$ commuting with every $M_\phi$ commutes with $M_\phi - M_0 = (\cosh\phi - 1)I + \sinh\phi\, J$, hence with $J$, and the equation $XJ = JX$ gives $q = r$ and $p = s$, so $X = \begin{pmatrix} p & q \\ q & p\end{pmatrix}$. For such an $X$, the condition $X\kappa = \kappa X$ forces $q = 0$, and then $X \in O(1,1)$ forces $p = \pm 1$; hence the center of $O(1,1)$ is $\{\pm I\}$. Since $M_\alpha M_\beta = M_{\alpha+\beta} = M_\beta M_\alpha$, the group $SO(1,1) = \{M_\phi\} \cup \{-M_\phi\}$ is abelian and equals its own center; so does its identity component. The Lie algebra was computed above, and $\exp(\mathrm{SO}(1,1)) = \{M_\phi\} = SO^+(1,1)$; the element $-I$, which is $M_\phi$ for no real $\phi$, and the reflections are not in the image.
 
-**Remark.** Both $SO(2)$ and $SO^+(1,1)$ are abelian, and both are the image of the exponential of a one-dimensional abelian Lie algebra; what separates them is that $SO(2)$ is compact and the exponential winds around it, whereas $SO^+(1,1)$ is non-compact and contractible. The identity component here is a line, so it is simply connected and its only connected covering is itself; the passage from $\mathfrak{so}(1,1)$ to $SO^+(1,1)$ is a diffeomorphism, while the exponential misses the other component of $SO(1,1)$ and the reflection coset entirely.
+**Remark.** Both $SO(2)$ and $SO^+(1,1)$ are abelian, and both are the image of the exponential of a one-dimensional abelian Lie algebra; what separates them is that $SO(2)$ is compact and the exponential winds around it, whereas $SO^+(1,1)$ is non-compact and contractible. The identity component here is a line, so it is simply connected and its only connected covering is itself; the passage from $\mathrm{SO}(1,1)$ to $SO^+(1,1)$ is a diffeomorphism, while the exponential misses the other component of $SO(1,1)$ and the reflection coset entirely.
 
 ## The Null Cone and the Sectors
 
@@ -436,7 +420,7 @@ So the rotation subgroup is normal and its complement is a single coset, the ext
 
 **Proposition.** The null cone $\{N = 0\}$ is the union of the two lines $\mathbb{R}\Pi_1$ and $\mathbb{R}\Pi_2$; its non-zero elements are exactly the zero divisors of $\mathbb{D}$, and $\Pi_1$ and $\Pi_2$ are the primitive idempotents.
 
-**Proof.** $N(Z) = Z_+Z_-$, which vanishes exactly when $Z_+ = 0$ or $Z_- = 0$; these are the lines spanned by $\Pi_2$ and $\Pi_1$ respectively. An element $W$ is a zero divisor exactly when it is not a unit, that is, when $N(W) = 0$, by the unit criterion. $\square$
+**Proof.** $N(Z) = Z_+Z_-$, which vanishes exactly when $Z_+ = 0$ or $Z_- = 0$; these are the lines spanned by $\Pi_2$ and $\Pi_1$ respectively. An element $W$ is a zero divisor exactly when it is not a unit, that is, when $N(W) = 0$, by the unit criterion.
 
 The cone is therefore at once the zero-divisor set, the complement of the unit group, the obstruction to the Cauchy integral formula. It is the locus common to the algebra, the analysis and the group theory of the plane.
 
@@ -452,7 +436,7 @@ They are indexed by the pair of signs $(\operatorname{sgn} Z_+, \operatorname{sg
 
 **Theorem.** Every hyperbolic rotation $R_u$ preserves each of the four sectors. A reflection $S_u$ with $u \in \mathcal{H}^+$ preserves the two sectors in which $Z_+$ and $Z_-$ have the same sign and interchanges the two in which they have opposite signs. Every isometry of $N$ preserves the value of $N$, hence its sign, and the sign of $N$ is positive exactly on the two sectors with $Z_+Z_- > 0$.
 
-**Proof.** $R_u$ multiplies $Z_+$ by $e^{\phi} > 0$ and $Z_-$ by $e^{-\phi} > 0$, so both signs are unchanged and $N = Z_+Z_-$ is unchanged in value. The conjugation $\bar\cdot$ interchanges $Z_+$ and $Z_-$, so it interchanges the two signs; multiplying by $u \in \mathcal{H}^+$ changes neither sign, and $u_+u_- = N(u) = 1$, so $S_u$ maps the sign pair $(s_+, s_-)$ to $(s_-, s_+)$ and leaves the product $Z_+Z_-$ unchanged. Hence the equal-sign sectors are preserved and the opposite-sign sectors are swapped. All isometries preserve $N$ by definition of $O(1,1)$. $\square$
+**Proof.** $R_u$ multiplies $Z_+$ by $e^{\phi} > 0$ and $Z_-$ by $e^{-\phi} > 0$, so both signs are unchanged and $N = Z_+Z_-$ is unchanged in value. The conjugation $\bar\cdot$ interchanges $Z_+$ and $Z_-$, so it interchanges the two signs; multiplying by $u \in \mathcal{H}^+$ changes neither sign, and $u_+u_- = N(u) = 1$, so $S_u$ maps the sign pair $(s_+, s_-)$ to $(s_-, s_+)$ and leaves the product $Z_+Z_-$ unchanged. Hence the equal-sign sectors are preserved and the opposite-sign sectors are swapped. All isometries preserve $N$ by definition of $O(1,1)$.
 
 So the identity component of the isometry group acts on the four sectors trivially at the level of the discrete invariant, while the reflection coset acts by the swap on the two mixed-sign sectors, and the group of components of $O(1,1)$ is $(\mathbb{Z}/2\mathbb{Z})^2$, one factor for the branch of $u$ and one for the determinant.
 
@@ -462,11 +446,11 @@ The norm-one hyperbola $x^2 - y^2 = 1$ has the two null lines as asymptotes; it 
 
 ## Comparison with the Complex Case
 
-The two theories are the positive-definite and indefinite cases of the same construction: the unit group of the norm form acting on the plane by multiplication.
+The two theories are the positive-definite and indefinite cases of the same construction: the unit group of the norm acting on the plane by multiplication.
 
 | Property | Complex | Split complex |
 |---|---|---|
-| Norm form | $x^2 + y^2$, signature $(2,0)$ | $x^2 - y^2$, signature $(1,1)$ |
+| Norm | $x^2 + y^2$, signature $(2,0)$ | $x^2 - y^2$, signature $(1,1)$ |
 | Null cone | $\{0\}$, no null directions | two null lines, the zero divisors |
 | Norm-one group | circle $U(1)$, compact, connected | hyperbola $\mathcal{H}$, non-compact, two branches |
 | Rotation group | $SO(2) \cong U(1) \cong \mathbb{R}/2\pi\mathbb{Z}$ | $SO^+(1,1) \cong \mathbb{R}$, $SO(1,1) \cong \mathbb{R} \times \mathbb{Z}/2$ |
@@ -483,9 +467,9 @@ The complex rotation group is compact and the angle is periodic, so a rotation i
 
 ## Summary
 
-The split plane carries the indefinite **norm form** $N(x+jy) = x^2 - y^2$ of signature $(1,1)$ and its **polar form** $g(Z,W) = xc - yd$. The **isometries** of $N$ are exactly the maps $Z \mapsto uZ$ and $Z \mapsto u\bar Z$ with $N(u) = 1$; the first family is the rotation subgroup with determinant $1$ and the second the reflection coset with determinant $-1$. The **unit group** $\mathbb{D}^\times$ is the complement of the null cone, with four components and polar decomposition $Z = \rho u$, $\rho > 0$, $N(u) = \pm 1$.
+The split plane carries the indefinite **norm** $N(x+jy) = x^2 - y^2$ of signature $(1,1)$ and its **polar form** $g(Z,W) = xc - yd$. The **isometries** of $N$ are exactly the maps $Z \mapsto uZ$ and $Z \mapsto u\bar Z$ with $N(u) = 1$; the first family is the rotation subgroup with determinant $1$ and the second the reflection coset with determinant $-1$. The **unit group** $\mathbb{D}^\times$ is the complement of the null cone, with four components and polar decomposition $Z = \rho u$, $\rho > 0$, $N(u) = \pm 1$.
 
-The **unit hyperbola** $\mathcal{H} = \{N = 1\}$ has two branches, parametrised by the **hyperbolic angle** through $u = e^{\phi j} = \cosh\phi + j\sinh\phi$, and $\mathcal{H}^+ \cong \mathbb{R}$ via the additive angle. The **hyperbolic rotation** $R_u(Z) = uZ$ is an isometry, realises $\mathcal{H}$ as $SO(1,1)$ through $u \mapsto R_u$, and in the idempotent coordinates is the diagonal map $(Z_+, Z_-) \mapsto (e^{\phi}Z_+, e^{-\phi}Z_-)$, a squeeze that preserves the product $Z_+Z_-$ and hence the form. The composition law is the addition of angles, $SO^+(1,1) \cong (\mathbb{R},+)$, and the group law transported to the interval $(-1,1)$ by $s = \tanh\phi$ is $s \star t = (s+t)/(1+st)$. The Lie algebra is $\mathfrak{so}(1,1) = \mathbb{R}J$ with $J^2 = I$, and the exponential is a bijection onto the identity component.
+The **unit hyperbola** $\mathcal{H} = \{N = 1\}$ has two branches, parametrised by the **hyperbolic angle** through $u = e^{\phi j} = \cosh\phi + j\sinh\phi$, and $\mathcal{H}^+ \cong \mathbb{R}$ via the additive angle. The **hyperbolic rotation** $R_u(Z) = uZ$ is an isometry, realises $\mathcal{H}$ as $SO(1,1)$ through $u \mapsto R_u$, and in the idempotent coordinates is the diagonal map $(Z_+, Z_-) \mapsto (e^{\phi}Z_+, e^{-\phi}Z_-)$, a squeeze that preserves the product $Z_+Z_-$ and hence the form. The composition law is the addition of angles, $SO^+(1,1) \cong (\mathbb{R},+)$, and the group law transported to the interval $(-1,1)$ by $s = \tanh\phi$ is $s \star t = (s+t)/(1+st)$. The Lie algebra is $\mathrm{SO}(1,1) = \mathbb{R}J$ with $J^2 = I$, and the exponential is a bijection onto the identity component.
 
 The **reflection** $S_u(Z) = u\bar Z$ has determinant $-1$, is an involution, fixes a line pointwise and negates the $g$-orthogonal line, interchanges the two null lines, and satisfies $S_uS_v = R_{u\bar v}$: the composition of two reflections is the rotation whose angle is the difference of their angles. Every element of $O(1,1)$ is a product of at most two reflections, since $R_u = S_uS_1$, and the reflections form exactly two conjugacy classes, one for each branch of $\mathcal{H}$, because conjugation sends $S_u$ to $S_{W^2u}$ or to $S_{W^2\bar u}$ and $W^2$ always lies in $\mathcal{H}^+$. The orthogonal group has **four components**, $O(1,1) \cong SO(1,1) \rtimes \mathbb{Z}/2$ with $SO(1,1) \cong \mathbb{R} \times \mathbb{Z}/2$, its center is $\{\pm I\}$, and the null cone, which is the zero-divisor set, divides the plane into four sectors that the rotations preserve and the reflections swap.
 
@@ -496,7 +480,7 @@ The **reflection** $S_u(Z) = u\bar Z$ has determinant $-1$, is an involution, fi
 | $\mathbb{D} = \mathbb{R}[j]$, $j^2 = +1$ | Split complex numbers |
 | $Z = x + jy$ | General split complex number, $x = \operatorname{Re} Z$, $y = \operatorname{Im} Z$ |
 | $\bar Z = x - jy$ | Split complex conjugate |
-| $N(Z) = Z\bar Z = x^2 - y^2$ | Norm form, signature $(1,1)$ |
+| $N(Z) = Z\bar Z = x^2 - y^2$ | Norm, signature $(1,1)$ |
 | $g(Z,W) = \operatorname{Re}(\bar Z W) = xc - yd$ | Polar bilinear form of $N$ |
 | $G = \operatorname{diag}(1,-1)$ | Matrix of $g$ in the basis $\{1,j\}$ |
 | $\{N = 0\}$ | Null cone, the zero-divisor set |
@@ -516,8 +500,8 @@ The **reflection** $S_u(Z) = u\bar Z$ has determinant $-1$, is an involution, fi
 | $S_u(Z) = u\bar Z$ | Reflection determined by $u$; $S_1 = \bar{\cdot}$ is conjugation |
 | $L_\pm$, $L_+^\perp$ | Fixed and negated lines of a reflection |
 | $\kappa = \operatorname{diag}(1,-1)$ | Matrix of conjugation |
-| $\mathfrak{so}(1,1) = \mathbb{R}J$, $J = \begin{pmatrix}0&1\\1&0\end{pmatrix}$ | Orthogonal Lie algebra, abelian |
-| $\exp : \mathfrak{so}(1,1) \to SO^+(1,1)$ | Matrix exponential, a bijection |
+| $\mathrm{SO}(1,1) = \mathbb{R}J$, $J = \begin{pmatrix}0&1\\1&0\end{pmatrix}$ | Orthogonal Lie algebra, abelian |
+| $\exp : \mathrm{SO}(1,1) \to SO^+(1,1)$ | Matrix exponential, a bijection |
 | $s = \tanh\phi \in (-1,1)$ | Bounded angle coordinate, law $s \star t = \frac{s+t}{1+st}$ |
 | $\rho = \sqrt{\lvert N(Z)\rvert}$ | Positive factor of the polar decomposition |
 
@@ -527,6 +511,6 @@ The **reflection** $S_u(Z) = u\bar Z$ has determinant $-1$, is an involution, fi
 - Felix Klein, *Vorlesungen über nicht-euklidische Geometrie* (Springer, 1928), for the projective treatment of non-Euclidean geometry and its isometries.
 - Carl Ludwig Siegel, *Topics in Complex Function Theory, Vol. I* (Wiley, 1969), for the exponential, the argument and the contrast between the periodic and the injective cases.
 - Michael Artin, *Algebra* (Prentice Hall, 2nd ed. 2011), for the structure of orthogonal groups, semidirect products and the classification of isometries of a plane.
-- John Stillwell, *Naive Lie Theory* (Springer, 2008), for the exponential map, the Lie algebra $\mathfrak{so}(1,1)$ and the topology of the rotation groups.
+- John Stillwell, *Naive Lie Theory* (Springer, 2008), for the exponential map, the Lie algebra $\mathrm{SO}(1,1)$ and the topology of the rotation groups.
 - Vladimir V. Kisil, *Geometry of Möbius Transformations: Elliptic, Parabolic and Hyperbolic Actions of $SL(2,\mathbb{R})$* (Imperial College Press, 2012), for the hyperbolic action and its comparison with the elliptic one.
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge University Press, 2nd ed. 2001), for the split complex numbers as a Clifford algebra and the null cone as its zero-divisor set.

@@ -3,7 +3,7 @@
 
 ## Introduction
 
-The algebra article defined the split-quaternion algebra $\mathbb{H}_{\mathrm{s}}$, its basis $1, e_1, e_2, e_3$, its conjugation, its norm form $N$ of signature $(2,2)$ and its distinguished subspaces. This article treats the **idempotents** of $\mathbb{H}_{\mathrm{s}}$ — the elements $\tilde\pi$ with $\tilde\pi^2 = \tilde\pi$ — and the projections and direct sum decompositions they carry.
+The algebra article defined the split-quaternion algebra $\mathbb{H}_{\mathrm{s}}$, its basis $1, e_1, e_2, e_3$, its conjugation, its central product $\tilde q\bar{\tilde q}$ and its distinguished subspaces. This article treats the **idempotents** of $\mathbb{H}_{\mathrm{s}}$ — the elements $\tilde\pi$ with $\tilde\pi^2 = \tilde\pi$ — and the projections and direct sum decompositions they carry.
 
 Idempotents are the algebraic form of a projection, and in $\mathbb{H}_{\mathrm{s}}$ they do four jobs at once:
 
@@ -14,15 +14,15 @@ Idempotents are the algebraic form of a projection, and in $\mathbb{H}_{\mathrm{
 
 The last two items are developed in the companion articles *Split-Quaternion Zero Divisors* and *Split-Quaternion Ideals and Peirce Decomposition*; here they enter only as forward pointers.
 
-**Placement.** The article is third in the Algebra group, after the algebra and the norm forms and before the roots of $-1$, the zero divisors and the ideals, because the ideals and the zero divisors both use the idempotents. Its proofs use only the algebra article and the basic facts of the norm form; the classification of the non-scalar idempotents is proved here from the quadratic equation, so nothing is quoted from the roots of $-1$ article, which is the companion classification of the opposite sign.
+**Placement.** The article is third in the Algebra group, after the algebra and before the roots of $-1$, the zero divisors and the ideals, because the ideals and the zero divisors both use the idempotents. Its proofs use only the algebra article and the algebraic product $\tilde q\bar{\tilde q}$; the classification of the non-scalar idempotents is proved here from the quadratic equation, so nothing is quoted from the roots of $-1$ article, which is the companion classification of the opposite sign.
 
-**Conventions.** The algebra is $\mathbb{H}_{\mathrm{s}} = \mathrm{Cl}_{1,1} \cong M_2(\mathbb{R})$, with basis $1, e_1, e_2, e_3$, the relations $e_1^2 = -1$, $e_2^2 = +1$, $e_3 = e_1 e_2$ and $e_1 e_2 = -e_2 e_1$. A general element is $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$, its scalar part is $q_0 = \operatorname{Sc}(\tilde q)$ and its vector part is $\mathbf{v} = q_1 e_1 + q_2 e_2 + q_3 e_3$. The conjugation is $\bar{\tilde q} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$, the norm form is
+**Conventions.** The algebra is $\mathbb{H}_{\mathrm{s}} = \mathrm{Cl}_{1,1} \cong M_2(\mathbb{R})$, with basis $1, e_1, e_2, e_3$, the relations $e_1^2 = -1$, $e_2^2 = +1$, $e_3 = e_1 e_2$ and $e_1 e_2 = -e_2 e_1$. A general element is $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$, its scalar part is $q_0 = \operatorname{Sc}(\tilde q)$ and its vector part is $\mathbf{v} = q_1 e_1 + q_2 e_2 + q_3 e_3$. The conjugation is $\bar{\tilde q} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$. The product $\tilde q\bar{\tilde q}$ lies in the centre and is written
 
 $$
-N(\tilde q) = \tilde q\bar{\tilde q} = q_0^2 + q_1^2 - q_2^2 - q_3^2,
+N(\tilde q) = \tilde q\bar{\tilde q} = q_0^2 + q_1^2 - q_2^2 - q_3^2 ;
 $$
 
-The scalar subspace is $S = \mathbb{R}\cdot 1$ and the vector subspace is $V = \operatorname{span}\{e_1, e_2, e_3\}$; on $V$ the square of an element is minus its norm, $\mathbf{v}^2 = -N(\mathbf{v})$.
+it is formed and evaluated here as an algebraic product, and its metrical reading — the signature of the pairings, their isotropy and the group of units — is in *Split-Quaternion Norm and Invertibility*. The scalar subspace is $S = \mathbb{R}\cdot 1$ and the vector subspace is $V = \operatorname{span}\{e_1, e_2, e_3\}$; on $V$ the square of an element is minus that product, $\mathbf{v}^2 = -N(\mathbf{v})$.
 
 ## Idempotents in an Algebra
 
@@ -102,7 +102,7 @@ $$
 N(\eta) = 4N(\mathbf{u}) = -1, \qquad \eta^2 = 4\mathbf{u}^2 = -4N(\mathbf{u}) = 1,
 $$
 
-where the second identity uses $\mathbf{u}^2 = -N(\mathbf{u})$ for a vector. Thus $\eta$ is a root of $+1$ in the vector subspace, and $\tilde\pi = \tfrac{1}{2} + \mathbf{u} = \tfrac{1}{2}(1 + \eta)$. $\square$
+where the second identity uses $\mathbf{u}^2 = -N(\mathbf{u})$ for a vector. Thus $\eta$ is a root of $+1$ in the vector subspace, and $\tilde\pi = \tfrac{1}{2} + \mathbf{u} = \tfrac{1}{2}(1 + \eta)$.
 
 The roots of $+1$ in $V$ are the vectors of the **spacelike unit hyperboloid** $N = -1$, a one-sheeted hyperboloid of two real dimensions, as recorded in *Split-Quaternion Roots of Minus One*, §*The Roots of $+1$*. The standard idempotents correspond to $\eta = e_2$ and $\eta = -e_2$, both of which satisfy $N = -1$.
 
@@ -122,7 +122,7 @@ $$
 \tilde\pi(\eta)^2 = \tfrac{1}{4}(1 + 2\eta + \eta^2) = \tfrac{1}{4}(1 + 2\eta + 1) = \tfrac{1}{2}(1 + \eta) = \tilde\pi(\eta),
 $$
 
-and $\tilde\pi(\eta)$ is non-scalar because $\eta \neq 0$. *Injective:* $\tilde\pi(\eta) = \tilde\pi(\eta')$ gives $\eta = \eta'$. *Surjective:* the classification theorem says every non-scalar idempotent is $\tfrac{1}{2}(1+\eta)$ for a root $\eta$ of $+1$ in $V$. $\square$
+and $\tilde\pi(\eta)$ is non-scalar because $\eta \neq 0$. *Injective:* $\tilde\pi(\eta) = \tilde\pi(\eta')$ gives $\eta = \eta'$. *Surjective:* the classification theorem says every non-scalar idempotent is $\tfrac{1}{2}(1+\eta)$ for a root $\eta$ of $+1$ in $V$.
 
 The **complementary pairs** $\{\tilde\pi, 1 - \tilde\pi\}$ of non-scalar idempotents are in bijection with the roots of $+1$ modulo the sign identification $\eta \sim -\eta$, since
 
@@ -172,19 +172,19 @@ $$
 \tilde\pi(1 - \tilde\pi) = \tilde\pi - \tilde\pi^2 = 0,
 $$
 
-and both factors are nonzero unless $\tilde\pi$ is $0$ or $1$. The direct verification uses the norm form:
+and both factors are nonzero unless $\tilde\pi$ is $0$ or $1$. The direct verification is the product
 
 $$
-N(\tilde\pi_\pm) = \tfrac{1}{4}N(1 \pm e_2) = \tfrac{1}{4}\big(N(1) \pm 2B(1, e_2) + N(e_2)\big) = \tfrac{1}{4}(1 + 0 - 1) = 0,
+\tilde\pi_\pm \bar{\tilde\pi}_\pm = \tfrac{1}{4}(1 \pm e_2)(1 \mp e_2) = \tfrac{1}{4}(1 - e_2^2) = 0,
 $$
 
-with $B(1,e_2) = 0$ because the scalar subspace and the vector subspace are $B$-orthogonal. Every non-scalar idempotent $\tilde\pi = \tfrac{1}{2}(1+\eta)$ has, by the same computation with $\eta$ in place of $e_2$ and $N(\eta) = -1$,
+and for a general non-scalar idempotent $\tilde\pi = \tfrac{1}{2}(1+\eta)$ with $\eta \in V$ and $\eta^2 = 1$,
 
 $$
-N(\tilde\pi) = \tfrac{1}{4}\big(1 + N(\eta)\big) = 0,
+\tilde\pi \bar{\tilde\pi} = \tfrac{1}{4}(1 + \eta)(1 - \eta) = \tfrac{1}{4}(1 - \eta^2) = 0,
 $$
 
-so the whole idempotent family is contained in the null cone of $N$. The idempotents are the non-nilpotent points of the zero divisor set: $\tilde\pi^2 = \tilde\pi \neq 0$, whereas the nilpotents of the algebra are exactly the nonzero vectors of the light cone $q_1^2 = q_2^2 + q_3^2$ in $V$, treated in *Split-Quaternion Zero Divisors*, §*Nonzero Nilpotents*.
+so the whole idempotent family lies on the zero divisor set $\{\tilde q : \tilde q\bar{\tilde q} = 0\}$. The idempotents are the non-nilpotent points of that set: $\tilde\pi^2 = \tilde\pi \neq 0$, whereas the nilpotents of the algebra are exactly the nonzero vectors of $V$ whose square vanishes, treated in *Split-Quaternion Zero Divisors*, §*Nonzero Nilpotents*.
 
 ## Idempotents and the Minimal Left Ideals
 
@@ -196,19 +196,19 @@ $$
 
 satisfy $\mathbb{H}_{\mathrm{s}} = \mathbb{H}_{\mathrm{s}} \tilde\pi_+ \oplus \mathbb{H}_{\mathrm{s}} \tilde\pi_-$ as left $\mathbb{H}_{\mathrm{s}}$-modules, and each has real dimension $2$ and is a minimal left ideal.
 
-**Proof.** Every $\tilde q$ satisfies $\tilde q = \tilde q(\tilde\pi_+ + \tilde\pi_-) = \tilde q \tilde\pi_+ + \tilde q \tilde\pi_-$, and the intersection of the two ideals is zero because $\tilde\pi_+ \tilde\pi_- = 0$: if $\tilde q \tilde\pi_+ = y \tilde\pi_-$ then multiplying on the right by $\tilde\pi_+$ gives $\tilde q \tilde\pi_+ = 0$. For the dimension, the reduction $e_3 \tilde\pi_+ = e_1 \tilde\pi_+$ above shows that the four products $e_\mu \tilde\pi_+$ lie in $\operatorname{span}\{\tilde\pi_+, e_1 \tilde\pi_+\}$, and the two are independent, so $\mathbb{H}_{\mathrm{s}} \tilde\pi_+$ has dimension $2$; the two summands then span $2 + 2 = 4 = \dim_{\mathbb{R}} \mathbb{H}_{\mathrm{s}}$. Minimality is the standard fact that the left ideal generated by a primitive idempotent of a ring is a minimal left ideal (*Rings*), applied to the primitive idempotent $\tilde\pi_+$. $\square$
+**Proof.** Every $\tilde q$ satisfies $\tilde q = \tilde q(\tilde\pi_+ + \tilde\pi_-) = \tilde q \tilde\pi_+ + \tilde q \tilde\pi_-$, and the intersection of the two ideals is zero because $\tilde\pi_+ \tilde\pi_- = 0$: if $\tilde q \tilde\pi_+ = y \tilde\pi_-$ then multiplying on the right by $\tilde\pi_+$ gives $\tilde q \tilde\pi_+ = 0$. For the dimension, the reduction $e_3 \tilde\pi_+ = e_1 \tilde\pi_+$ above shows that the four products $e_\mu \tilde\pi_+$ lie in $\operatorname{span}\{\tilde\pi_+, e_1 \tilde\pi_+\}$, and the two are independent, so $\mathbb{H}_{\mathrm{s}} \tilde\pi_+$ has dimension $2$; the two summands then span $2 + 2 = 4 = \dim_{\mathbb{R}} \mathbb{H}_{\mathrm{s}}$. Minimality is the standard fact that the left ideal generated by a primitive idempotent of a ring is a minimal left ideal (*Rings*), applied to the primitive idempotent $\tilde\pi_+$.
 
 **Proposition.** Each minimal left ideal is a two-dimensional real vector space, and the two ideals are isomorphic to one another as left $\mathbb{H}_{\mathrm{s}}$-modules.
 
-**Proof.** Every element of $\mathbb{H}_{\mathrm{s}} \tilde\pi_+$ is uniquely $\alpha \tilde\pi_+ + \beta e_1 \tilde\pi_+$ with $\alpha, \beta \in \mathbb{R}$, so the assignment $\alpha \tilde\pi_+ + \beta e_1 \tilde\pi_+ \mapsto (\alpha, \beta)$ is a bijection onto $\mathbb{R}^2$, exhibiting the ideal as a two-dimensional real vector space. Left multiplication by $\tilde q'$ sends $\tilde q \tilde\pi_+$ to $(\tilde q' \tilde q) \tilde\pi_+$, again an element of $\mathbb{H}_{\mathrm{s}} \tilde\pi_+$, with coordinates linear in $(\alpha, \beta)$; hence it is an isomorphism of left $\mathbb{H}_{\mathrm{s}}$-modules. The same argument applies to $\tilde\pi_-$; since the algebra is simple, all its simple left modules are isomorphic, so the two ideals are isomorphic. $\square$
+**Proof.** Every element of $\mathbb{H}_{\mathrm{s}} \tilde\pi_+$ is uniquely $\alpha \tilde\pi_+ + \beta e_1 \tilde\pi_+$ with $\alpha, \beta \in \mathbb{R}$, so the assignment $\alpha \tilde\pi_+ + \beta e_1 \tilde\pi_+ \mapsto (\alpha, \beta)$ is a bijection onto $\mathbb{R}^2$, exhibiting the ideal as a two-dimensional real vector space. Left multiplication by $\tilde q'$ sends $\tilde q \tilde\pi_+$ to $(\tilde q' \tilde q) \tilde\pi_+$, again an element of $\mathbb{H}_{\mathrm{s}} \tilde\pi_+$, with coordinates linear in $(\alpha, \beta)$; hence it is an isomorphism of left $\mathbb{H}_{\mathrm{s}}$-modules. The same argument applies to $\tilde\pi_-$; since the algebra is simple, all its simple left modules are isomorphic, so the two ideals are isomorphic.
 
 The two ideals here are the two minimal left ideals of the projective line of left ideals of *Split-Quaternion Ideals and Peirce Decomposition*, where the Peirce corners and the matrix units are computed. The corresponding right ideals are $\tilde\pi_+ \mathbb{H}_{\mathrm{s}}$ and $\tilde\pi_- \mathbb{H}_{\mathrm{s}}$.
 
 ## The Dimension of the Set of Idempotents
 
-The non-scalar idempotents correspond bijectively to the roots of $+1$ in $V$, namely the one-sheeted hyperboloid $N = -1$. That hyperboloid is a connected surface of real dimension $2$; the complementation $\eta \mapsto -\eta$ acts on it freely with quotient the set of **pairs** of complementary idempotents. Hence the set of non-scalar idempotents has real dimension $2$, and the set of complementary pairs has dimension $2$ as well.
+The non-scalar idempotents correspond bijectively to the roots of $+1$ in $V$, namely the level set $\{\eta \in V : \eta^2 = 1\}$, equivalently $\{N = -1\}$. That level set has real dimension $2$; the complementation $\eta \mapsto -\eta$ acts on it freely with quotient the set of **pairs** of complementary idempotents. Hence the set of non-scalar idempotents has real dimension $2$, and the set of complementary pairs has dimension $2$ as well.
 
-The trivial idempotents $0$ and $1$ are the two isolated points of the idempotent set, and they are excluded from the non-scalar family. This is the first structural difference from the biquaternion case, where the idempotents correspond to roots of $-1$ and form a set of real dimension $4$. The reason is the opposite sign: in $\mathbb{H}_{\mathrm{s}}$ the idempotents are parametrised by an equation of signature $(2,1)$ with one negative direction, a hyperboloid, while in $\mathbb{B}$ they are parametrised by a compact sphere's worth of extra parameters.
+The trivial idempotents $0$ and $1$ are the two isolated points of the idempotent set, and they are excluded from the non-scalar family. This is the first structural difference from the biquaternion case, where the idempotents correspond to roots of $-1$ and form a set of real dimension $4$. The reason is the opposite sign: in $\mathbb{H}_{\mathrm{s}}$ the idempotents are parametrised by the level set $\eta^2 = 1$ of the vector subspace, which is not compact, while in $\mathbb{B}$ they are parametrised by a compact set of extra parameters.
 
 ## Comparison With the Neighbouring Algebras
 
@@ -218,7 +218,7 @@ $$
 \tilde\Pi_1 = \tfrac{1}{2}(e_0 + i e_3), \qquad \tilde\Pi_2 = \tfrac{1}{2}(e_0 - i e_3)
 $$
 
-are likewise non-central, but for a different reason: $\mathbb{B}$ is simple, so its only central idempotents are $0$ and $e_0$, and the nontrivial idempotents are obtained from the roots of $-1$ by $\xi \mapsto \tfrac{1}{2}(e_0 + \xi i)$ written with the central unit $i$ of $\mathbb{B}$. The biquaternion idempotents are therefore parametrised by the roots of $-1$, a set of real dimension $4$, whereas the split-quaternion idempotents are parametrised by the roots of $+1$ in $V$, a hyperboloid of real dimension $2$.
+are likewise non-central, but for a different reason: $\mathbb{B}$ is simple, so its only central idempotents are $0$ and $e_0$, and the nontrivial idempotents are obtained from the roots of $-1$ by $\xi \mapsto \tfrac{1}{2}(e_0 + \xi i)$ written with the central unit $i$ of $\mathbb{B}$. The biquaternion idempotents are therefore parametrised by the roots of $-1$, a set of real dimension $4$, whereas the split-quaternion idempotents are parametrised by the roots of $+1$ in $V$, a level set of real dimension $2$.
 
 The algebra in which the idempotents are genuinely **central** is not $\mathbb{B}$ but the eight-dimensional split-biquaternion algebra $\mathbb{H}_{\mathbb{D}} = \mathbb{D} \otimes_{\mathbb{R}} \mathbb{H}$ of the notation table, whose central split-complex unit $j$ carries the idempotents $e_\pm = \tfrac{1}{2}(1 \pm j)$. Those are central, they commute with every element, and their complementary pair decomposes $\mathbb{H}_{\mathbb{D}}$ as a product of two algebras. Nothing of this kind occurs in $\mathbb{H}_{\mathrm{s}}$: its idempotents are non-central, and the companion article *Split-Quaternion Ideals and Peirce Decomposition* records that the corresponding decomposition is a module decomposition and not an algebra decomposition. The same central-idempotent phenomenon is what the commutative split-complex algebra $\mathbb{D}$ exhibits, and the split-quaternion idempotents $\tilde\pi_\pm$ are precisely the images of the idempotents of $\mathbb{D}$ inside the non-commutative algebra $\mathbb{H}_{\mathrm{s}}$, where they cease to be central.
 
@@ -245,7 +245,7 @@ Every idempotent is either trivial ($0$ or $1$) or of the form $\tilde\pi = \tfr
 | $\tilde\pi(\eta) = \tfrac{1}{2}(1 + \eta)$ | the idempotent of the root $\eta$; $\eta \mapsto \tilde\pi(\eta)$ is a bijection | this article |
 | $\mathbb{H}_{\mathrm{s}} \tilde\pi_\pm$, $\tilde\pi_\pm \mathbb{H}_{\mathrm{s}}$ | the minimal left and right ideals, each $\cong \mathbb{R}^2$ | this article |
 | $\tilde\pi_+ \mathbb{H}_{\mathrm{s}} \tilde\pi_-$ | the off-diagonal Peirce corner, nonzero | this article |
-| $N(\tilde q) = \tilde q\bar{\tilde q}$ | the norm form, signature $(2,2)$ | *Split-Quaternion Norm and Invertibility* |
+| $N(\tilde q) = \tilde q\bar{\tilde q}$ | the central product, formed and evaluated algebraically; the metrical reading is in *Split-Quaternion Norm and Invertibility* | this article |
 | $S = \mathbb{R}\cdot 1$, $V = \operatorname{span}\{e_1,e_2,e_3\}$ | the scalar and vector subspaces | *Split-Quaternion Algebra* |
 | $\mathbb{D}_2 = \operatorname{span}\{1, e_2\}$ | the split-complex subalgebra carrying $\tilde\pi_\pm$ | *Split-Quaternion Algebra* |
 | $e_\pm = \tfrac{1}{2}(1 \pm j)$ | the idempotents of the split-complex algebra $\mathbb{D}$ | *Split-Complex Algebra* |

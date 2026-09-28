@@ -81,7 +81,7 @@ $$
 e^{iS/\hbar}\,\big(e^{iS/\hbar}\big)^\dagger=e_0.
 $$
 
-It is **not**, however, a **unit-norm-form** element. The Lorentz rotors are the biquaternions with $\tilde{\Lambda}\bar{\tilde{\Lambda}}=e_0$ (the group $SL(2,\mathbb{C})$), and for a central element $\lambda e_0$ this condition reads $\lambda^2=1$, so $\lambda=\pm1$. For the phase,
+It is **not**, however, a **unit-norm** element. The Lorentz rotors are the biquaternions with $\tilde{\Lambda}\bar{\tilde{\Lambda}}=e_0$ (the group $SL(2,\mathbb{C})$), and for a central element $\lambda e_0$ this condition reads $\lambda^2=1$, so $\lambda=\pm1$. For the phase,
 
 $$
 e^{iS/\hbar}\,\overline{\big(e^{iS/\hbar}\big)}=e^{2iS/\hbar}\neq e_0
@@ -274,7 +274,7 @@ with no non-central element anywhere, exactly as for the full kernel. Under the 
 
 ## Summary
 
-The path integral $K=\int\mathcal{D}x\,e^{iS[x]/\hbar}$ is a sum over paths weighted by the phase $e^{iS/\hbar}$. In the biquaternion framework the symbol $i$ in that phase is the **central scalar imaginary**, the unique central root of $-1$ in $\mathbb{B}$ up to sign; the phase exponent $iS/\hbar$ is a purely imaginary scalar and therefore lies in the **material sector** $\mathbb{M}_-$, along the $ict$ direction; and the phase factor $e^{iS/\hbar}$ is a **central unitary** element of $\mathbb{C}_{\mathbb{B}}$, satisfying $(e^{iS/\hbar})(e^{iS/\hbar})^\dagger=e_0$ but not the unit-norm-form condition of the Lorentz group, since $e^{iS/\hbar}\overline{e^{iS/\hbar}}=e^{2iS/\hbar}$.
+The path integral $K=\int\mathcal{D}x\,e^{iS[x]/\hbar}$ is a sum over paths weighted by the phase $e^{iS/\hbar}$. In the biquaternion framework the symbol $i$ in that phase is the **central scalar imaginary**, the unique central root of $-1$ in $\mathbb{B}$ up to sign; the phase exponent $iS/\hbar$ is a purely imaginary scalar and therefore lies in the **material sector** $\mathbb{M}_-$, along the $ict$ direction; and the phase factor $e^{iS/\hbar}$ is a **central unitary** element of $\mathbb{C}_{\mathbb{B}}$, satisfying $(e^{iS/\hbar})(e^{iS/\hbar})^\dagger=e_0$ but not the unit-norm condition of the Lorentz group, since $e^{iS/\hbar}\overline{e^{iS/\hbar}}=e^{2iS/\hbar}$.
 
 Centrality has three consequences: the amplitude is a complex scalar times $e_0$; the phase multiplies every spinor component of the state module equally; and the global phase cancels in the density matrix $\tilde{\rho}=\psi\psi^\dagger$, so only relative phases — the differences of actions between paths — are observable. These relative phases produce the standard interference, $|e^{iS_1/\hbar}+e^{iS_2/\hbar}|=2|\cos(\Delta S/2\hbar)|$, with nodes at $\Delta S=(2n+1)\pi\hbar$.
 

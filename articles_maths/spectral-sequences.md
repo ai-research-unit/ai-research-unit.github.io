@@ -50,7 +50,7 @@ The differentials of the pages are induced by the boundary of $C$, and the stabl
 $$
 E^\infty_{p,q}\cong\frac{F_pH_{p+q}(C)}{F_{p+1}H_{p+q}(C)}, \qquad F_pH_n(C)=\frac{F_pZ_n+B_n}{B_n} .
 $$
-Boundedness makes the filtrations of each $Z_n$, $B_n$ and $H_n$ finite, so the successive quotients stabilise after finitely many pages and the limit is attained. $\square$
+Boundedness makes the filtrations of each $Z_n$, $B_n$ and $H_n$ finite, so the successive quotients stabilise after finitely many pages and the limit is attained.
 
 **Definition.** A spectral sequence **degenerates at the $E^r$-page** if $d^s=0$ for all $s\ge r$, so that $E^r\cong E^\infty$ and the successive pages are unchanged. In that case $E^r_{p,q}\cong F_pH_{p+q}/F_{p+1}H_{p+q}$ for all $(p,q)$, and the homology is determined by the $E^r$-page up to extension problems.
 
@@ -68,11 +68,11 @@ $$
 
 where $H^{\mathrm{h}}$ and $H^{\mathrm{v}}$ denote homology with respect to the horizontal and the vertical differentials.
 
-*Proof.* Filter $\operatorname{Tot}(C)$ by the column degree, $F_p\operatorname{Tot}(C)_n=\bigoplus_{p'\ge p}C_{p',n-p'}$, so that the filtration is exhaustive, separated and bounded under the finiteness hypothesis. The $E^0$-page has $E^0_{p,q}=C_{p,q}$, and the differential $d^0$ is the vertical differential up to a sign; hence $E^1_{p,q}=H^{\mathrm{v}}_q(C_{p,\bullet})$ and $E^2_{p,q}=H^{\mathrm{h}}_pH^{\mathrm{v}}_q(C)$, by the sign rule that makes the total differential square to zero. The convergence is the theorem on filtered complexes. The second spectral sequence is obtained from the filtration by rows. $\square$
+*Proof.* Filter $\operatorname{Tot}(C)$ by the column degree, $F_p\operatorname{Tot}(C)_n=\bigoplus_{p'\ge p}C_{p',n-p'}$, so that the filtration is exhaustive, separated and bounded under the finiteness hypothesis. The $E^0$-page has $E^0_{p,q}=C_{p,q}$, and the differential $d^0$ is the vertical differential up to a sign; hence $E^1_{p,q}=H^{\mathrm{v}}_q(C_{p,\bullet})$ and $E^2_{p,q}=H^{\mathrm{h}}_pH^{\mathrm{v}}_q(C)$, by the sign rule that makes the total differential square to zero. The convergence is the theorem on filtered complexes. The second spectral sequence is obtained from the filtration by rows.
 
 **Proposition.** If the columns of the double complex are exact, then $E^1_{p,q}=H^{\mathrm{v}}_q(C_{p,\bullet})=0$ for all $(p,q)$ and the spectral sequence collapses, so the total complex is exact; dually, exactness of the rows kills the second spectral sequence and forces $H_n(\operatorname{Tot}C)=0$ for all $n$.
 
-*Proof.* If the columns are exact then $H^{\mathrm{v}}_q(C_{p,\bullet})=0$ for all $p,q$, so $E^1=0$ and hence $E^\infty=0$, which forces $H_n(\operatorname{Tot}C)=0$ for all $n$. The row statement is the same argument applied to the transposed double complex. $\square$
+*Proof.* If the columns are exact then $H^{\mathrm{v}}_q(C_{p,\bullet})=0$ for all $p,q$, so $E^1=0$ and hence $E^\infty=0$, which forces $H_n(\operatorname{Tot}C)=0$ for all $n$. The row statement is the same argument applied to the transposed double complex.
 
 ### Applications to Balance and Künneth
 
@@ -98,7 +98,7 @@ $$
 
 natural in $A$, with differentials $d^r:E^r_{p,q}\to E^r_{p+r,q-r+1}$.
 
-*Proof.* Take an injective resolution $A\to I^\bullet$ and apply the Cartan–Eilenberg resolution of the complex $F(I^\bullet)$ by injectives, then apply $G$; the result is a double complex whose two spectral sequences are as follows. In one direction the $q$-variable computes the derived functors of $F$ and the $p$-variable applies $G$ to injectives, giving $E_2^{p,q}=R^pG(R^qF(A))$; in the other direction $E_2^{p,q}=0$ for $q\neq0$, because each $F(I^q)$ is $G$-acyclic, so that sequence collapses and the abutment is $R^{p+q}(GF)(A)$. The hypothesis on injectives is exactly what makes the second direction degenerate. $\square$
+*Proof.* Take an injective resolution $A\to I^\bullet$ and apply the Cartan–Eilenberg resolution of the complex $F(I^\bullet)$ by injectives, then apply $G$; the result is a double complex whose two spectral sequences are as follows. In one direction the $q$-variable computes the derived functors of $F$ and the $p$-variable applies $G$ to injectives, giving $E_2^{p,q}=R^pG(R^qF(A))$; in the other direction $E_2^{p,q}=0$ for $q\neq0$, because each $F(I^q)$ is $G$-acyclic, so that sequence collapses and the abutment is $R^{p+q}(GF)(A)$. The hypothesis on injectives is exactly what makes the second direction degenerate.
 
 **Corollary (five-term exact sequence).** Under the hypotheses, for every object $A$ there is an exact sequence
 
@@ -108,7 +108,7 @@ $$
 
 obtained from the low-degree terms of the spectral sequence together with the edge homomorphisms.
 
-*Proof.* The sequence is the exact sequence of the terms $E_2^{0,0},E_2^{1,0},E_2^{0,1},E_2^{2,0},E_2^{1,1}$ of the spectral sequence, using the identifications $E_2^{p,0}=R^pG(FA)$ and $E_2^{0,q}=G(R^qF(A))$ and the convergence to $R^{p+q}(GF)(A)$. Exactness is the general exactness of the low-degree part of a first-quadrant spectral sequence. $\square$
+*Proof.* The sequence is the exact sequence of the terms $E_2^{0,0},E_2^{1,0},E_2^{0,1},E_2^{2,0},E_2^{1,1}$ of the spectral sequence, using the identifications $E_2^{p,0}=R^pG(FA)$ and $E_2^{0,q}=G(R^qF(A))$ and the convergence to $R^{p+q}(GF)(A)$. Exactness is the general exactness of the low-degree part of a first-quadrant spectral sequence.
 
 ### Edge Homomorphisms
 
@@ -134,7 +134,7 @@ $$
 
 where $\operatorname{Res}N$ is $N$ regarded as an $R$-module. When $S$ is flat over $R$ the terms $\operatorname{Tor}_q^R(S,M)$ vanish for $q\ge1$ and the spectral sequence degenerates to the isomorphism $\operatorname{Tor}_n^S(S\otimes_RM,N)\cong\operatorname{Tor}_n^R(M,\operatorname{Res}N)$ of *Derived Functors*.
 
-*Proof.* Apply the Grothendieck spectral sequence to the composite of the right exact functors $M\mapsto S\otimes_RM$ and $-\otimes_SN$, using left derived functors in place of right; equivalently, apply the spectral sequence of the double complex obtained from resolutions of $M$ over $R$ and of $N$ over $S$. The degeneration in the flat case is the vanishing of the higher Tor over $R$ of the flat module $S$. $\square$
+*Proof.* Apply the Grothendieck spectral sequence to the composite of the right exact functors $M\mapsto S\otimes_RM$ and $-\otimes_SN$, using left derived functors in place of right; equivalently, apply the spectral sequence of the double complex obtained from resolutions of $M$ over $R$ and of $N$ over $S$. The degeneration in the flat case is the vanishing of the higher Tor over $R$ of the flat module $S$.
 
 ### The Lyndon–Hochschild–Serre Spectral Sequence
 
@@ -146,7 +146,7 @@ $$
 
 where the coefficient system $H^q(N,M)$ for $G/N$ comes from the conjugation action of $G$ on $N$.
 
-*Proof.* The functor of $G$-invariants is the composite of the functors of $N$-invariants and of $(G/N)$-invariants: $M^G=(M^N)^{G/N}$. Both are left exact, and the functor $M\mapsto M^N$ carries injective $\mathbb{Z}[G]$-modules to injective $\mathbb{Z}[G/N]$-modules, because restriction along $G\to G/N$ has an exact left adjoint and preserves the relevant classes; the Grothendieck spectral sequence applied to this composite, with the identification $H^n(G,M)=\operatorname{Ext}^n_{\mathbb{Z}[G]}(\mathbb{Z},M)$ of *Ext and Tor*, is the displayed spectral sequence. The action of $G/N$ on $H^q(N,M)$ is the one induced by conjugation. $\square$
+*Proof.* The functor of $G$-invariants is the composite of the functors of $N$-invariants and of $(G/N)$-invariants: $M^G=(M^N)^{G/N}$. Both are left exact, and the functor $M\mapsto M^N$ carries injective $\mathbb{Z}[G]$-modules to injective $\mathbb{Z}[G/N]$-modules, because restriction along $G\to G/N$ has an exact left adjoint and preserves the relevant classes; the Grothendieck spectral sequence applied to this composite, with the identification $H^n(G,M)=\operatorname{Ext}^n_{\mathbb{Z}[G]}(\mathbb{Z},M)$ of *Ext and Tor*, is the displayed spectral sequence. The action of $G/N$ on $H^q(N,M)$ is the one induced by conjugation.
 
 **Example.** For the trivial coefficient module $M=\mathbb{Z}$ the five-term exact sequence of the theorem becomes the inflation–restriction exact sequence relating $H^1(G/N,\mathbb{Z})$, $H^1(G,\mathbb{Z})$, $H^1(N,\mathbb{Z})^{G/N}$, $H^2(G/N,\mathbb{Z})$ and $H^2(G,\mathbb{Z})$.
 
@@ -160,11 +160,11 @@ The Grothendieck spectral sequence is the source of most of the spectral sequenc
 
 **Proposition.** A first-quadrant spectral sequence $(E^r)$ with $E^2_{p,q}=0$ for all $q>0$ degenerates at $E^2$, and $H_n\cong E^2_{n,0}$. Similarly, if $E^2_{p,q}=0$ for all $p>0$ then it degenerates at $E^2$ and $H_n\cong E^2_{0,n}$. More generally, if the differentials must land in a vanishing region, they vanish and the sequence degenerates.
 
-*Proof.* The differential on $E^2$ maps $E^2_{p,q}\to E^2_{p+2,q-1}$; if $q=0$ the target is zero in the first case, and if $p=0$ the source is zero in the second. Inductively the same vanishing kills every higher differential on the surviving region. $\square$
+*Proof.* The differential on $E^2$ maps $E^2_{p,q}\to E^2_{p+2,q-1}$; if $q=0$ the target is zero in the first case, and if $p=0$ the source is zero in the second. Inductively the same vanishing kills every higher differential on the surviving region.
 
 **Theorem.** If a first-quadrant spectral sequence converges to $H$ and $E^2_{p,q}=0$ for all $q\neq0$, then the edge homomorphism $E^2_{p,0}\to H_p$ is an isomorphism for every $p$, and the filtration of $H_p$ has a single nontrivial step.
 
-*Proof.* The only nonzero column contributes in each total degree, so $F_pH_p/F_{p+1}H_p=E^\infty_{p,0}=E^2_{p,0}$ and all other graded pieces vanish; the edge map is the composite of the projection and the inclusion, which are inverse to the identifications. $\square$
+*Proof.* The only nonzero column contributes in each total degree, so $F_pH_p/F_{p+1}H_p=E^\infty_{p,0}=E^2_{p,0}$ and all other graded pieces vanish; the edge map is the composite of the projection and the inclusion, which are inverse to the identifications.
 
 ### The Extension Problem in Low Degree
 
@@ -176,7 +176,7 @@ $$
 
 the last map having kernel the image of $d_2^{0,1}$; the map $H_2\to E^2_{0,2}$ induced by the filtration has image $\ker d_2^{0,2}$, and the kernel of that map is the next filtration step, which contains the image of $E^2_{2,0}$ and equals it exactly when the stable term $E^\infty_{1,1}$ vanishes.
 
-*Proof.* Convergence gives the filtration steps $F_1H_1/F_2H_1=E^\infty_{1,0}=E^2_{1,0}$, $F_0H_1/F_1H_1=E^\infty_{0,1}=\ker d_2^{0,1}$ and $F_0H_2/F_1H_2=E^\infty_{0,2}=\ker d_2^{0,2}$, while $E^\infty_{2,0}=E^2_{2,0}/\operatorname{im}d_2^{0,1}$ is the smallest step of the filtration of $H_2$; assembling the successive quotients gives the displayed exactness. $\square$
+*Proof.* Convergence gives the filtration steps $F_1H_1/F_2H_1=E^\infty_{1,0}=E^2_{1,0}$, $F_0H_1/F_1H_1=E^\infty_{0,1}=\ker d_2^{0,1}$ and $F_0H_2/F_1H_2=E^\infty_{0,2}=\ker d_2^{0,2}$, while $E^\infty_{2,0}=E^2_{2,0}/\operatorname{im}d_2^{0,1}$ is the smallest step of the filtration of $H_2$; assembling the successive quotients gives the displayed exactness.
 
 **Proposition.** If only the two columns $p=0$ and $p=1$ of a first-quadrant spectral sequence are nonzero, then every differential vanishes, $E^\infty=E^2$, and for every $n$ there is a short exact sequence
 
@@ -186,7 +186,7 @@ $$
 
 so the extension problem in degree $n$ is the extension of $E^2_{0,n}$ by $E^2_{1,n-1}$. This is the situation of the Künneth spectral sequence of a tensor product over a principal ideal domain, where $\operatorname{Tor}_p$ vanishes for $p\ge2$ and only the columns $p=0,1$ survive.
 
-*Proof.* The differential $d^r$ changes the column by $r$, so $d^r=0$ for $r\ge2$ when only the columns $0$ and $1$ are present; the only differential that may be nonzero is $d^1$, and it is absorbed into the passage from $E^1$ to $E^2$, so that $E^\infty=E^2$. The filtration of $H_n$ is then the two-step filtration $0\subseteq F_1H_n\subseteq H_n$ with graded pieces $E^\infty_{1,n-1}=E^2_{1,n-1}$ and $E^\infty_{0,n}=E^2_{0,n}$, which is the displayed short exact sequence. $\square$
+*Proof.* The differential $d^r$ changes the column by $r$, so $d^r=0$ for $r\ge2$ when only the columns $0$ and $1$ are present; the only differential that may be nonzero is $d^1$, and it is absorbed into the passage from $E^1$ to $E^2$, so that $E^\infty=E^2$. The filtration of $H_n$ is then the two-step filtration $0\subseteq F_1H_n\subseteq H_n$ with graded pieces $E^\infty_{1,n-1}=E^2_{1,n-1}$ and $E^\infty_{0,n}=E^2_{0,n}$, which is the displayed short exact sequence.
 
 ## Summary
 

@@ -8,7 +8,7 @@ $$
 \xi^2 = -1.
 $$
 
-It follows *Biquaternion Idempotents and Projections*, where the idempotents are classified by the roots, and the article on biquaternion norm and invertibility, where the norm form and the invertibility criterion are established. The goal here is to state the classification precisely and to prove it.
+It follows *Biquaternion Idempotents and Projections*, where the idempotents are classified by the roots, and the article *Biquaternion Norm and Invertibility*, where the invertibility criterion is established. The goal here is to state the classification precisely and to prove it.
 
 The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. The quaternion algebra $\mathbb{H}$ is assumed from the article on quaternion algebra. The biquaternion algebra $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ is assumed from the article on biquaternion algebra, together with its four conjugations and its six distinguished subspaces.
 
@@ -96,7 +96,7 @@ $$
 
 From the first condition, $|\mathbf{q}|^2 = 1 + |\mathbf{q}'|^2 \geq 1 > 0$, so $\mathbf{q} \neq 0$.
 
-**Sub-case 2a: $\mathbf{q}' = 0$.** Then $|\mathbf{q}|^2 = 1$, so $\mathbf{q}$ is a unit vector in $\mathbb{R}^3$. Let $\mu = \mathbf{q}$, which is a unit pure real quaternion. Then $\mathbf{Q} = \mu$, and $\xi = \mu$. Since $\mu$ is a unit pure real quaternion, $\mu^2 = -1$ (a standard fact from the quaternion algebra). These are the **real roots**. Since $\mu$ ranges over the whole unit sphere $S^2 \subset \mathbb{R}^3$, and $S^2$ is invariant under $\mu \mapsto -\mu$, the family can also be written in the redundant form $\xi = \pm \mu$.
+**Sub-case 2a: $\mathbf{q}' = 0$.** Then $|\mathbf{q}|^2 = 1$, so $\mathbf{q}$ is a unit vector in $\mathbb{R}^3$. Let $\mu = \mathbf{q}$, which is a unit pure real quaternion. Then $\mathbf{Q} = \mu$, and $\xi = \mu$. Since $\mu$ is a unit pure real quaternion, $\mu^2 = -1$ (a standard fact from the quaternion algebra). These are the **real roots**. Since $\mu$ ranges over all the real roots, and the set of real roots is invariant under $\mu \mapsto -\mu$, the family can also be written in the redundant form $\xi = \pm \mu$.
 
 **Sub-case 2b: $\mathbf{q}' \neq 0$.** Then $|\mathbf{q}| \geq 1 > 0$ and $|\mathbf{q}'| > 0$, so we can normalize both. Let
 
@@ -150,7 +150,7 @@ We verify that each of the three families consists of roots of $-1$.
 
 **Trivial root.** $(\pm i)^2 = -1$ since $i^2 = -1$. ✓
 
-**Real roots.** For a unit pure real quaternion $\mu$, $\mu^2 = -1$ (a standard quaternion fact: the unit pure real quaternions form the unit sphere $S^2$ in $\mathbb{R}^3$, and every such element squares to $-1$). So $(\pm \mu)^2 = \mu^2 = -1$. ✓
+**Real roots.** For a unit pure real quaternion $\mu$, $\mu^2 = -1$ (a standard quaternion fact: every unit pure real quaternion squares to $-1$). So $(\pm \mu)^2 = \mu^2 = -1$. ✓
 
 **Non-trivial roots.** Compute
 
@@ -176,41 +176,25 @@ using the constraint $b^2 - d^2 = 1$. ✓
 
 The three families are related as follows.
 
-**Real roots as the boundary of the non-trivial family.** If $d \to 0$ in the non-trivial family, then $b^2 \to 1$ (by the constraint $b^2 - d^2 = 1$), and $\xi = b\mu + d\nu i$ tends to $\mu$, a real root. The unit pure quaternion $\nu$ becomes undetermined in the limit. So the real roots (the unit sphere $S^2$) form the boundary of the non-trivial family.
+**Real roots as the boundary of the non-trivial family.** If $d \to 0$ in the non-trivial family, then $b^2 \to 1$ (by the constraint $b^2 - d^2 = 1$), and $\xi = b\mu + d\nu i$ tends to $\mu$, a real root. The unit pure quaternion $\nu$ becomes undetermined in the limit. The statement that the real roots are thereby the boundary of the non-trivial family is a limit and is made in *Biquaternion Topology*.
 
 **Trivial roots as a separate family.** The trivial roots $\xi = \pm i$ have vanishing vector part. Neither the real roots (which are pure, hence have $\mathbf{Q} = \mu \neq 0$) nor the non-trivial roots (which have $\mathbf{Q} = b\mu + d\nu i$ with $b \neq 0$, hence $\mathbf{Q} \neq 0$) include or approach the trivial roots. So the trivial roots form a separate family, consisting of two isolated points.
-
-### Parametrization by Hyperbolic Functions
-
-The constraint $b^2 - d^2 = 1$ is the equation of a hyperbola in the $(b, d)$-plane. If we take $b > 0$, we can parametrize the constraint by
-
-$$
-b = \cosh t, \qquad d = \sinh t, \qquad t \in \mathbb{R},
-$$
-
-using the identity $\cosh^2 t - \sinh^2 t = 1$. Substituting:
-
-$$
-\xi = \cosh t \, \mu + \sinh t \, \nu i, \qquad \mu \perp \nu, \quad |\mu| = |\nu| = 1, \quad t \in \mathbb{R}.
-$$
-
-The parameter $t$ is the **rapidity** of the root, by analogy with the rapidity parameter of a hyperbolic rotation.
 
 ### Status of the Roots
 
 The **non-trivial** roots form a **four-real-dimensional** family, parametrized by:
 
-- the choice of $\mu$ on the unit sphere $S^2 \subset \mathbb{R}^3$ (two real parameters);
+- the choice of $\mu$ among the real roots (two real parameters);
 - the choice of $\nu$ on the unit circle in the plane perpendicular to $\mu$ (one real parameter);
-- the choice of $(b, d)$ on the branch of the hyperbola $b^2 - d^2 = 1$ with $b, d > 0$ (one real parameter).
+- the choice of $(b, d)$ with $b^2 - d^2 = 1$ and $b, d > 0$ (one real parameter).
 
 Together: $2 + 1 + 1 = 4$ real dimensions.
 
-The **real** roots form a **two-real-dimensional** submanifold, the unit sphere $S^2$, which is the boundary of the non-trivial family. The **trivial** roots are two isolated points. So the set of roots of $-1$ is a stratified space whose largest stratum (the non-trivial family) is four-dimensional.
+The **real** roots form a set of real dimension two, the boundary of the non-trivial family; the **trivial** roots are two isolated points. That this boundary is a sphere, and the topological stratification of the set, belong to *Biquaternion Topology*, where the boundary is treated as a limit; only the dimensions are used here, and the non-trivial family is four-real-dimensional.
 
 All roots except the trivial ones are **pure** (their scalar part vanishes). The pure roots (real and non-trivial) sit inside the six-real-dimensional space of pure biquaternions.
 
-The roots are neither idempotents ($\xi^2 = -1 \neq \xi$) nor zero divisors ($N(\xi) \neq 0$ in every case). They therefore lie in the group of units $\mathbb{B}^\times$ studied in the article on biquaternion norm and invertibility.
+The roots are neither idempotents ($\xi^2 = -1 \neq \xi$) nor zero divisors ($\xi\bar{\xi} \neq 0$ in every case, computed in §*The Roots as Invertible Elements*). They therefore lie in the group of units, treated in *Biquaternion Norm and Invertibility*.
 
 ## The Relation to the Idempotents
 
@@ -226,11 +210,11 @@ is a bijection from the set of roots of $-1$ onto the set of idempotents, under 
 
 ### The Idempotents as Zero Divisors
 
-Every non-trivial idempotent is a zero divisor, $\tilde\Pi(e_0 - \tilde\Pi) = 0$ with both factors nonzero (the computation is in *Biquaternion Idempotents and Projections*), so the non-trivial idempotents form a subset of the zero divisor set $\mathcal{Z}$ studied in *Biquaternion Zero Divisors*, which follows this article. The trivial idempotents $0$ and $e_0$ are not zero divisors: $0$ is excluded by the definition, and $e_0$ has nonzero norm form.
+Every non-trivial idempotent is a zero divisor, $\tilde\Pi(e_0 - \tilde\Pi) = 0$ with both factors nonzero (the computation is in *Biquaternion Idempotents and Projections*), so the non-trivial idempotents form a subset of the zero divisor set $\mathcal{Z}$ studied in *Biquaternion Zero Divisors*, which follows this article. The trivial idempotents $0$ and $e_0$ are not zero divisors: $0$ is excluded by the definition, and $e_0$ is a unit.
 
 ### The Roots as Invertible Elements
 
-A root of $-1$ is **not** a zero divisor. Indeed, the norm form of a root satisfies
+A root of $-1$ is **not** a zero divisor. Indeed, the product $\xi\bar{\xi}$ of a root satisfies
 
 $$
 N(\xi) = \xi\bar{\xi} = \begin{cases} -1 & \text{for the trivial root } \xi = \pm i, \\ +1 & \text{for a pure root.} \end{cases}
@@ -240,9 +224,9 @@ In either case $N(\xi) \neq 0$, so by the invertibility criterion, $\xi$ is inve
 
 ### Dimensions
 
-The set of roots of $-1$ is a stratified space of real dimension $4$ (the non-trivial family) with a two-dimensional boundary stratum (the real roots, $S^2$) and two isolated points (the trivial roots, $\pm i$).
+The set of roots of $-1$ has a non-trivial family of real dimension $4$, a real family of real dimension $2$, and two isolated points.
 
-By the bijection of §*The Relation to the Idempotents* the idempotents inherit this size: the non-trivial idempotents form a set of real dimension $4$ with a two-dimensional boundary stratum, with no isolated points, and they sit inside the six-real-dimensional zero divisor set.
+By the bijection of §*The Relation to the Idempotents* the idempotents inherit this size: the non-trivial idempotents form a set of real dimension $4$, with no isolated points, and they sit inside the six-real-dimensional zero divisor set.
 
 The non-trivial roots sit inside the six-real-dimensional space of pure biquaternions. The trivial roots ($\pm i$) are isolated points outside it.
 
@@ -282,9 +266,9 @@ The roots of $-1$ in the biquaternion algebra are exactly:
 
 The proof proceeds by writing $\xi = Q_0 + \mathbf{Q}$ in scalar-vector form, squaring using the biquaternion product formula, and equating to $-1$. The vector part of the square is $2A\mathbf{Q}$, which forces $A = 0$ or $\mathbf{Q} = 0$; the scalar part is $A^2 - (\mathbf{Q}, \mathbf{Q})$, which then determines the roots in each case. The scalar case gives the trivial root. The pure case reduces to $(\mathbf{Q}, \mathbf{Q}) = 1$, which splits into the real and non-trivial families according to whether the imaginary part of the pure biquaternion vanishes.
 
-The non-trivial roots form a four-real-dimensional family, with the real roots (a two-dimensional sphere) as their boundary. The trivial roots are two isolated points. All roots except the trivial ones are pure, and they lie in the six-dimensional space of pure biquaternions.
+The non-trivial roots form a four-real-dimensional family, the real roots a two-real-dimensional family, and the trivial roots two isolated points. All roots except the trivial ones are pure, and they lie in the six-real-dimensional space of pure biquaternions.
 
-The classification of the roots of $-1$ gives the classification of the idempotents of $\mathbb{B}$, which are of the form $\tfrac{1}{2} e_0 \pm \tfrac{1}{2} \xi i$. The map $\xi \mapsto \tilde\Pi_+(\xi) = \tfrac{1}{2}(e_0 + \xi i)$ is a bijection from the roots of $-1$ to the idempotents; complementary pairs of idempotents correspond to roots modulo the sign identification $\xi \sim -\xi$. The non-trivial idempotents form a four-dimensional family in the six-dimensional zero divisor set, and are used in the classification of the non-pure zero divisors in the article on biquaternion zero divisors. The roots themselves are invertible, and they lie in the group of units studied in the article on biquaternion norm and invertibility.
+The classification of the roots of $-1$ gives the classification of the idempotents of $\mathbb{B}$, which are of the form $\tfrac{1}{2} e_0 \pm \tfrac{1}{2} \xi i$. The map $\xi \mapsto \tilde\Pi_+(\xi) = \tfrac{1}{2}(e_0 + \xi i)$ is a bijection from the roots of $-1$ to the idempotents; complementary pairs of idempotents correspond to roots modulo the sign identification $\xi \sim -\xi$. The non-trivial idempotents form a four-dimensional family in the six-dimensional zero divisor set, and are used in the classification of the non-pure zero divisors in the article on biquaternion zero divisors. The roots themselves are invertible, and they lie in the group of units, treated in *Biquaternion Norm and Invertibility*.
 
 The roots of $+1$ are obtained from the roots of $-1$ by multiplication by $i$: $\eta = \xi i$. They are not used in the idempotent classification, but they appear in the theory of the biquaternion exponential.
 
@@ -301,7 +285,6 @@ The roots of $+1$ are obtained from the roots of $-1$ by multiplication by $i$: 
 | $\mathbf{Q} = Q_1e_1+Q_2e_2+Q_3e_3$ | Complex vector part of the root |
 | $\mu, \nu$ | Unit pure real quaternions |
 | $b, d$ | Real parameters with $b^2 - d^2 = 1$ |
-| $t$ | Rapidity parameter |
 | $\tilde\Pi = \tfrac{1}{2} e_0 \pm \tfrac{1}{2} \xi i$ | Idempotent |
 
 ## Further Reading
@@ -310,6 +293,6 @@ The roots of $+1$ are obtained from the roots of $-1$ by multiplication by $i$: 
 - S. J. Sangwine, "Biquaternion (complexified quaternion) roots of $-1$", *Advances in Applied Clifford Algebras* **16** (2006) 63–68, for the original classification.
 - S. J. Sangwine and D. Alfsmann, "Determination of the biquaternion divisors of zero, including the idempotents and nilpotents", *Advances in Applied Clifford Algebras* **20** (2010) 401–416, for the relation to the idempotents and the zero divisors.
 - S. J. Sangwine, T. A. Ell, and N. Le Bihan, "Fundamental representations and algebraic properties of biquaternions or complexified quaternions", *Advances in Applied Clifford Algebras* **21** (2011) 607–636, for the constraint verification.
-- J. P. Ward, *Quaternions and Cayley Numbers: Algebra and Applications* (Kluwer, Dordrecht, 1997), for the semi-norm and the algebraic properties of the biquaternions.
+- J. P. Ward, *Quaternions and Cayley Numbers: Algebra and Applications* (Kluwer, Dordrecht, 1997), for the algebraic properties of the biquaternions.
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the connection to Clifford algebras.
 

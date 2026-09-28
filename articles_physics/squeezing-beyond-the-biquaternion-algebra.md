@@ -7,14 +7,14 @@ Squeezing is the reduction of a state's uncertainty in one variable at the expen
 Three boundaries are examined, and each is a different kind of "beyond".
 
 - **Beyond the spin-0 reach.** A squeeze operator built from central operators can squeeze the quadratures of the envelope, but it cannot squeeze the module, because a central unitary multiplies both components of a state-module element by the same phase and does not change their relative weights. Squeezing the module requires a non-central generator, which is spin squeezing and belongs to the sibling spin subcategories. This is the boundary of the present subcategory.
-- **Beyond the algebra by contraction.** A contraction is a singular limit that degenerates the algebra: generators are rescaled so that some commutators and some norms go to zero. The quaternion algebra contracts to the algebra of complex numbers with nilpotents, the norm form degenerates, and elements that were invertible become zero divisors. The zero divisor cone is the limiting locus of that degeneration. This is a boundary of the algebra's quadratic structure.
+- **Beyond the algebra by contraction.** A contraction is a singular limit that degenerates the algebra: generators are rescaled so that some commutators and some norms go to zero. The quaternion algebra contracts to the algebra of complex numbers with nilpotents, the biquaternion norm degenerates, and elements that were invertible become zero divisors. The zero divisor cone is the limiting locus of that degeneration. This is a boundary of the algebra's quadratic structure.
 - **Beyond the algebra by deformation, enlargement, or completion.** q-deformations replace the commutators by q-commutators and turn the algebra into a Hopf algebra with no invariant quadratic form of the same kind; Clifford enlargements, octonionic doublings, and the infinite-dimensional or non-unitary algebras of field theory and open systems each lie outside $\mathbb{B}$ for a definite algebraic reason. This is the boundary of associativity, finite dimensionality, and unitarity.
 
 The article states each boundary, computes what can be computed, and marks the rest. The biquaternion framework's contribution is to make the boundaries precise: it says which manipulations of the oscillator are central and therefore available, and which require an operation the algebra does not contain.
 
-The article is organised as follows. The next section sets up squeezing inside the algebra and verifies the squeezed-vacuum uncertainty product. The third section explains why the module cannot be squeezed centrally and where spin squeezing lives. The fourth treats contractions and the degeneration of the norm form. The fifth treats q-deformations, Clifford and octonionic enlargements, and infinite-dimensional or non-unitary extensions. The sixth collects the boundary statements, and the closing sections are the summary, the notation table, and the external literature.
+The article is organised as follows. The next section sets up squeezing inside the algebra and verifies the squeezed-vacuum uncertainty product. The third section explains why the module cannot be squeezed centrally and where spin squeezing lives. The fourth treats contractions and the degeneration of the biquaternion norm. The fifth treats q-deformations, Clifford and octonionic enlargements, and infinite-dimensional or non-unitary extensions. The sixth collects the boundary statements, and the closing sections are the summary, the notation table, and the external literature.
 
-The conventions are those of the companion articles: $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with $e_0=1,e_1,e_2,e_3$, $e_j^2=-e_0$, central $i$; $\mathbb{M}_\pm$ are the Hermitian and anti-Hermitian sectors; $\mathbb{C}_{\mathbb{B}}$ is the center; $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace; the state module is $\mathbb{B}\tilde P\cong\mathbb{C}^2$; $\mathrm{Tr}(\tilde H)=2\,\mathrm{Sc}(\tilde H)$; and the norm form is $N(x)=x\bar x$.
+The conventions are those of the companion articles: $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with $e_0=1,e_1,e_2,e_3$, $e_j^2=-e_0$, central $i$; $\mathbb{M}_\pm$ are the Hermitian and anti-Hermitian sectors; $\mathbb{C}_{\mathbb{B}}$ is the center; $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace; the state module is $\mathbb{B}\tilde P\cong\mathbb{C}^2$; $\mathrm{Tr}(\tilde H)=2\,\mathrm{Sc}(\tilde H)$; and the biquaternion norm is $N(x)=x\bar x$.
 
 ## Squeezing Inside the Algebra
 
@@ -44,7 +44,7 @@ $$
 S\,S^\dagger=e_0 ,
 $$
 
-and it is a **unitary central element**, not a unit-norm-form rotor. It acts on a state-module element by scalar multiplication,
+and it is a **unitary central element**, not a unit-norm rotor. It acts on a state-module element by scalar multiplication,
 
 $$
 \psi\ \longmapsto\ S\,\psi = S\otimes I_2\;\psi ,
@@ -139,7 +139,7 @@ so the central operation preserves the component weights while the non-central o
 
 ## Contracting the Algebra
 
-### Contraction and the degeneration of the norm form
+### Contraction and the degeneration of the biquaternion norm
 
 A contraction of a Lie algebra rescales a subset of the generators so that some structure constants tend to zero, producing a different, typically non-semisimple algebra in the limit. For $\mathbb{B}$ the standard route is a rescaled quaternion basis. Let $\epsilon>0$ and set
 
@@ -163,9 +163,9 @@ E_2^2=E_3^2=-\epsilon^2 e_0,
 [E_1,E_2]=2E_3,\quad [E_1,E_3]=-2E_2 ,
 $$
 
-so that as $\epsilon\to0$ the commutators involving $E_2,E_3$ vanish and the algebra contracts to the direct sum of the complex numbers generated by $E_1$ and a two-dimensional abelian nilpotent piece. The rescaling was verified numerically: the commutator $[E_2,E_3]=2\epsilon^2E_1$ and the norm form $N(E_2)=\epsilon^2e_0$ both scale as $\epsilon^2$ and vanish together, at $\epsilon=1,0.1,0.01$ giving the values $2,2\times10^{-2},2\times10^{-4}$ and $1,10^{-2},10^{-4}$ respectively.
+so that as $\epsilon\to0$ the commutators involving $E_2,E_3$ vanish and the algebra contracts to the direct sum of the complex numbers generated by $E_1$ and a two-dimensional abelian nilpotent piece. The rescaling was verified numerically: the commutator $[E_2,E_3]=2\epsilon^2E_1$ and the biquaternion norm $N(E_2)=\epsilon^2e_0$ both scale as $\epsilon^2$ and vanish together, at $\epsilon=1,0.1,0.01$ giving the values $2,2\times10^{-2},2\times10^{-4}$ and $1,10^{-2},10^{-4}$ respectively.
 
-The essential point is that the **norm form degenerates with the algebra**. For $\epsilon>0$ the norm form on the real span of $E_1,E_2,E_3$ is positive definite and every nonzero element of that real span is invertible; at $\epsilon=0$ the elements $E_2,E_3$ have $N=0$ despite being nonzero, and are nilpotent zero divisors. The contraction takes a real basis with a nondegenerate norm form to one with a degenerate norm form. This is the algebraic mechanism behind the zero divisor locus: zero divisors are what survive when a quadratic structure is squeezed until its metric collapses. The companion article *Zero Divisors as a Physical Locus in Biquaternionic Form* treats the locus itself; here it appears as the endpoint of a contraction.
+The essential point is that the **biquaternion norm degenerates with the algebra**. For $\epsilon>0$ the biquaternion norm on the real span of $E_1,E_2,E_3$ is positive definite and every nonzero element of that real span is invertible; at $\epsilon=0$ the elements $E_2,E_3$ have $N=0$ despite being nonzero, and are nilpotent zero divisors. The contraction takes a real basis with a nondegenerate biquaternion norm to one with a degenerate biquaternion norm. This is the algebraic mechanism behind the zero divisor locus: zero divisors are what survive when a quadratic structure is squeezed until its metric collapses. The companion article *Zero Divisors as a Physical Locus in Biquaternionic Form* treats the locus itself; here it appears as the endpoint of a contraction.
 
 ### Contractions to split and degenerate algebras
 
@@ -187,7 +187,7 @@ $$
 (1+K)(1-K)=0 .
 $$
 
-Both identities were verified in the two-dimensional representation $I=i\sigma_z$, $J=\sigma_x$: the products vanish exactly, while $I^2=-1$ and $J^2=+1$ were confirmed. The split algebra is what one obtains when the biquaternion norm form is contracted in one direction, and its zero divisors are the real image of the biquaternion null cone. The real quaternion algebra $\mathbb{H}$ is a division algebra — every nonzero element of $\mathbb{H}$ has $N(x)>0$ and is invertible — but $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ is not: the complex coefficients supply the null cone that the last article of this subcategory treats. The contraction exhibits that locus in a real basis, where it becomes the lightlike cone of the split algebra.
+Both identities were verified in the two-dimensional representation $I=i\sigma_z$, $J=\sigma_x$: the products vanish exactly, while $I^2=-1$ and $J^2=+1$ were confirmed. The split algebra is what one obtains when the biquaternion norm is contracted in one direction, and its zero divisors are the real image of the biquaternion null cone. The real quaternion algebra $\mathbb{H}$ is a division algebra — every nonzero element of $\mathbb{H}$ has $N(x)>0$ and is invertible — but $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ is not: the complex coefficients supply the null cone that the last article of this subcategory treats. The contraction exhibits that locus in a real basis, where it becomes the lightlike cone of the split algebra.
 
 ## Deforming and Enlarging
 
@@ -201,9 +201,9 @@ $$
 [J_+,J_-]=\frac{q^{\,2J_3}-q^{-2J_3}}{q-q^{-1}},
 $$
 
-which reduces to the undeformed $\mathfrak{su}(2)$ relations as $q\to1$. The limit was verified numerically: at $J_3=1$ the deformed bracket takes the values $2.0333$, $2.0001$, and $2.000001$ for $q=1.2,1.01,1.001$, approaching the undeformed value $2J_3=2$.
+which reduces to the undeformed $\mathrm{SU}(2)$ relations as $q\to1$. The limit was verified numerically: at $J_3=1$ the deformed bracket takes the values $2.0333$, $2.0001$, and $2.000001$ for $q=1.2,1.01,1.001$, approaching the undeformed value $2J_3=2$.
 
-The q-deformed algebra lies **beyond** the biquaternion algebra in a definite sense. It is a Hopf algebra, not simply a unital associative algebra; its representation theory is not the representation theory of $\mathbb{H}$ or $\mathbb{B}$; and, crucially for this corpus, it does not carry an invariant positive-definite quadratic form playing the role of $N$. The norm form is the framework's central object — it defines unitarity, the sectors, and the zero divisor cone — and a q-deformation does not preserve it. Whether a q-deformed biquaternion structure with an appropriate q-norm form exists, and what its physical reading would be, is not addressed here; the framework's conventions do not contain such an object, and inventing one would go beyond the algebra the corpus uses.
+The q-deformed algebra lies **beyond** the biquaternion algebra in a definite sense. It is a Hopf algebra, not simply a unital associative algebra; its representation theory is not the representation theory of $\mathbb{H}$ or $\mathbb{B}$; and, crucially for this corpus, it does not carry an invariant positive-definite quadratic form playing the role of $N$. The biquaternion norm is the framework's central object — it defines unitarity, the sectors, and the zero divisor cone — and a q-deformation does not preserve it. Whether a q-deformed biquaternion structure with an appropriate q-biquaternion norm exists, and what its physical reading would be, is not addressed here; the framework's conventions do not contain such an object, and inventing one would go beyond the algebra the corpus uses.
 
 ### Clifford enlargements and octonionic doubling
 
@@ -219,7 +219,7 @@ The biquaternion framework uses associativity at every step — the module actio
 
 ### Infinite-dimensional and non-unitary extensions
 
-Two further extensions are outside $\mathbb{B}$ for different reasons. The **infinite-dimensional** algebras of quantum field theory — the canonical commutation relations of a field, the Virasoro and Kac–Moody algebras, the algebra of local observables — have no finite trace and no finite-dimensional module, so the framework's trace pairing $\mathrm{Tr}(\tilde H)=2\,\mathrm{Sc}(\tilde H)$ has no direct analogue. The **non-unitary** (dissipative) algebras of open systems, generated by Lindblad operators, take the evolution out of the unitary group: the semigroup $e^{\mathcal{L}t}$ is not unitary, a state's purity is not conserved, and the norm form's value changes with time. The informational reading of such evolution belongs to the informational subcategory.
+Two further extensions are outside $\mathbb{B}$ for different reasons. The **infinite-dimensional** algebras of quantum field theory — the canonical commutation relations of a field, the Virasoro and Kac–Moody algebras, the algebra of local observables — have no finite trace and no finite-dimensional module, so the framework's trace pairing $\mathrm{Tr}(\tilde H)=2\,\mathrm{Sc}(\tilde H)$ has no direct analogue. The **non-unitary** (dissipative) algebras of open systems, generated by Lindblad operators, take the evolution out of the unitary group: the semigroup $e^{\mathcal{L}t}$ is not unitary, a state's purity is not conserved, and the biquaternion norm's value changes with time. The informational reading of such evolution belongs to the informational subcategory.
 
 The framework's central statement about unitarity — that a central Hamiltonian generates a unitary flow, $e^{-i\tilde Ht/\hbar}$ with $\tilde H$ Hermitian and central — is exactly what fails in each of these cases: a field-theoretic Hamiltonian has no finite trace, and a Lindbladian is not anti-Hermitian. Both are honest extensions, and both are beyond the algebra as the corpus uses it.
 
@@ -231,17 +231,17 @@ The three boundaries can be stated compactly.
 |---|---|---|
 | Envelope squeezing (quadratures) | Yes | Central generator, central unitary, module spectator |
 | Module squeezing (spin squeezing) | No | Requires a non-central generator; sibling spin subcategories |
-| Contraction (degenerating the norm form) | Limiting case | The limit is a different, degenerate algebra with zero divisors |
+| Contraction (degenerating the biquaternion norm) | Limiting case | The limit is a different, degenerate algebra with zero divisors |
 | q-deformation | No | No invariant quadratic form of the framework's kind |
 | Clifford enlargement | No | The module and trace pairing change dimension and structure |
 | Octonionic doubling | No | Non-associativity destroys the module action and the trace |
 | Field-theoretic / dissipative algebra | No | No finite trace; non-unitary evolution |
 
-The table is the article's answer: envelope squeezing is available, module squeezing is not, and every operation that deforms, contracts, enlarges, or completes the algebra takes it outside the class where the norm form, the sectors, and the trace pairing are defined.
+The table is the article's answer: envelope squeezing is available, module squeezing is not, and every operation that deforms, contracts, enlarges, or completes the algebra takes it outside the class where the biquaternion norm, the sectors, and the trace pairing are defined.
 
 ## Open Questions
 
-**1. Is there a q-deformed norm form?** The framework's structure is carried by the quadratic form $N$. Whether a q-analogue exists that reduces to $N$ as $q\to1$ and supports a sector decomposition is unknown; if it does, the q-deformed theory would have a biquaternion reading, and if it does not, the deformation is a genuine boundary.
+**1. Is there a q-deformed biquaternion norm?** The framework's structure is carried by the quadratic form $N$. Whether a q-analogue exists that reduces to $N$ as $q\to1$ and supports a sector decomposition is unknown; if it does, the q-deformed theory would have a biquaternion reading, and if it does not, the deformation is a genuine boundary.
 
 **2. Can a contraction be given a physical reading?** The contraction to the split algebra produces the light cone zero divisors; whether the contraction parameter has a physical interpretation — a decoherence rate, an infrared cutoff, a strong-field limit — is not established here.
 
@@ -255,7 +255,7 @@ Squeezing is generated by $S(\xi)=\exp[\frac12(\bar\xi a^2-\xi a^{\dagger2})]$, 
 
 Squeezing the **module** is beyond the spin-0 reach: a central unitary cannot change the relative weights of the two module components, and a module squeeze requires a non-central generator, which is a spin rotation and belongs to the sibling spin subcategories.
 
-Contracting the algebra by $E_2=\epsilon e_2$, $E_3=\epsilon e_3$ degenerates the norm form: $[E_2,E_3]=2\epsilon^2E_1$ and $N(E_2)=\epsilon^2e_0$ vanish together as $\epsilon\to0$ (verified at $\epsilon=1,0.1,0.01$), and the limit contains nilpotent zero divisors. In the split algebra with $I^2=-1$, $J^2=+1$, the elements $1+J$ and $1+K$ are zero divisors, $(1+J)(1-J)=(1+K)(1-K)=0$, verified exactly in the representation $I=i\sigma_z$, $J=\sigma_x$.
+Contracting the algebra by $E_2=\epsilon e_2$, $E_3=\epsilon e_3$ degenerates the biquaternion norm: $[E_2,E_3]=2\epsilon^2E_1$ and $N(E_2)=\epsilon^2e_0$ vanish together as $\epsilon\to0$ (verified at $\epsilon=1,0.1,0.01$), and the limit contains nilpotent zero divisors. In the split algebra with $I^2=-1$, $J^2=+1$, the elements $1+J$ and $1+K$ are zero divisors, $(1+J)(1-J)=(1+K)(1-K)=0$, verified exactly in the representation $I=i\sigma_z$, $J=\sigma_x$.
 
 q-deformations, with $[J_+,J_-]=\frac{q^{2J_3}-q^{-2J_3}}{q-q^{-1}}\to2J_3$ as $q\to1$ (verified at $q=1.2,1.01,1.001$), lie beyond the algebra because no invariant quadratic form of the framework's kind survives. Clifford enlargements change the module and trace pairing; the octonionic doubling is non-associative and therefore destroys the module action and the trace; and the field-theoretic and dissipative algebras have no finite trace or no unitary evolution. Envelope squeezing is inside the algebra; module squeezing, contractions, deformations, enlargements, and completions are beyond it, each for a definite structural reason.
 
@@ -270,7 +270,7 @@ q-deformations, with $[J_+,J_-]=\frac{q^{2J_3}-q^{-2J_3}}{q-q^{-1}}\to2J_3$ as $
 | $\mathbb{H}_{\mathbb{B}}$ | Real-quaternion subspace |
 | $\mathbb{M}_+$, $\mathbb{M}_-$ | Hermitian and anti-Hermitian sectors |
 | $\mathbb{B}\tilde P\cong\mathbb{C}^2$ | State module |
-| $N(x)=x\bar x$ | Norm form |
+| $N(x)=x\bar x$ | Biquaternion norm |
 | $a,a^\dagger$ | Central oscillator operators, $[a,a^\dagger]=e_0$ |
 | $S(\xi)=\exp[\frac12(\bar\xi a^2-\xi a^{\dagger2})]$ | Squeeze operator; central unitary |
 | $\xi=re^{i\theta}$ | Squeeze parameter |

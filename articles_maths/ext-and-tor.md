@@ -29,13 +29,13 @@ Equivalently, since $\operatorname{Hom}_R(M,-)$ is left exact, $\operatorname{Ex
 
 **Theorem (balance).** The two computations agree: if $P_\bullet\to M$ is a projective resolution and $N\to I^\bullet$ an injective resolution, then $H^n(\operatorname{Hom}_R(P_\bullet,N))\cong H^n(\operatorname{Hom}_R(M,I^\bullet))$ naturally in $M$ and $N$.
 
-*Proof (in outline).* The double complex with entries $\operatorname{Hom}_R(P_p,I^q)$ has two differentials, one induced by $P_\bullet$ and one by $I^\bullet$, and they anticommute. The two spectral sequences of the double complex have $E_2^{p,q}=0$ for $q\neq0$ in one case and for $p\neq0$ in the other, because $P_p$ is projective and $I^q$ injective; both sequences therefore collapse, and their common abutment computes both sides. The degenerate case of the argument can also be run directly by the comparison theorem, comparing two resolutions of $M$. $\square$
+*Proof (in outline).* The double complex with entries $\operatorname{Hom}_R(P_p,I^q)$ has two differentials, one induced by $P_\bullet$ and one by $I^\bullet$, and they anticommute. The two spectral sequences of the double complex have $E_2^{p,q}=0$ for $q\neq0$ in one case and for $p\neq0$ in the other, because $P_p$ is projective and $I^q$ injective; both sequences therefore collapse, and their common abutment computes both sides. The degenerate case of the argument can also be run directly by the comparison theorem, comparing two resolutions of $M$.
 
 The proof is the first place the spectral-sequence machinery is needed; it is carried out, and the balance statement is quoted here.
 
 **Proposition.** $\operatorname{Ext}_R^0(M,N)\cong\operatorname{Hom}_R(M,N)$. The groups $\operatorname{Ext}_R^n(M,N)$ are additive functors of $N$ and, in the contravariant sense, of $M$; they vanish for $n\ge1$ whenever $M$ is projective or $N$ is injective.
 
-*Proof.* $H^0=\ker d^0$ is $\operatorname{Hom}_R(M,N)$ because a map $P_0\to N$ killed by precomposition with $P_1\to P_0$ factors through the cokernel $M$ of $P_1\to P_0$. If $M$ is projective, $P_\bullet=M$ in degree $0$ and the complex is concentrated in degree $0$. If $N$ is injective, $\operatorname{Hom}_R(-,N)$ is exact and takes the exact resolution to an exact complex. $\square$
+*Proof.* $H^0=\ker d^0$ is $\operatorname{Hom}_R(M,N)$ because a map $P_0\to N$ killed by precomposition with $P_1\to P_0$ factors through the cokernel $M$ of $P_1\to P_0$. If $M$ is projective, $P_\bullet=M$ in degree $0$ and the complex is concentrated in degree $0$. If $N$ is injective, $\operatorname{Hom}_R(-,N)$ is exact and takes the exact resolution to an exact complex.
 
 ### The Long Exact Sequences
 
@@ -53,11 +53,11 @@ $$
 
 natural in the sequence.
 
-*Proof.* The first is the long exact sequence of the left exact functor $\operatorname{Hom}_R(M,-)$ applied to the injective resolution, from *Derived Functors*. For the second, apply the contravariant left exact functor $\operatorname{Hom}_R(-,N)$ to a projective resolution of $M''$, or equivalently resolve the sequence by the horseshoe lemma and apply $\operatorname{Hom}_R(-,N)$; the connecting maps come from the snake lemma and the long exact homology sequence. $\square$
+*Proof.* The first is the long exact sequence of the left exact functor $\operatorname{Hom}_R(M,-)$ applied to the injective resolution, from *Derived Functors*. For the second, apply the contravariant left exact functor $\operatorname{Hom}_R(-,N)$ to a projective resolution of $M''$, or equivalently resolve the sequence by the horseshoe lemma and apply $\operatorname{Hom}_R(-,N)$; the connecting maps come from the snake lemma and the long exact homology sequence.
 
 **Corollary.** The functors $\operatorname{Ext}_R^n(M,-)$ vanish for $n\ge1$ if and only if $M$ is projective, and $\operatorname{Ext}_R^n(-,N)$ vanish for $n\ge1$ if and only if $N$ is injective.
 
-*Proof.* If $M$ is projective the first statement is the proposition above. Conversely, if $\operatorname{Ext}_R^1(M,-)=0$ then applying the long exact sequence to a surjection $P\to M$ with $P$ projective gives exactness of $\operatorname{Hom}_R(M,-)$ on the relevant short exact sequence, hence a lift of the identity of $M$ to $P$, so $M$ is a direct summand of $P$ and projective. The argument for injectives is dual. $\square$
+*Proof.* If $M$ is projective the first statement is the proposition above. Conversely, if $\operatorname{Ext}_R^1(M,-)=0$ then applying the long exact sequence to a surjection $P\to M$ with $P$ projective gives exactness of $\operatorname{Hom}_R(M,-)$ on the relevant short exact sequence, hence a lift of the identity of $M$ to $P$, so $M$ is a direct summand of $P$ and projective. The argument for injectives is dual.
 
 ### Ext$^1$ and Extensions
 
@@ -67,7 +67,7 @@ natural in the sequence.
 
 **Theorem.** There is a natural isomorphism of abelian groups $\operatorname{Ext}_R^1(M,N)\cong\operatorname{Ext}^1_R(M,N)_{\mathrm{ext}}$. The class $0$ corresponds to the split extension.
 
-*Proof (in outline).* Given an extension $0\to N\to E\xrightarrow{\pi}M\to0$, choose a projective resolution and lift the identity of $M$ to a chain map into the complex $0\to N\to E\to0$ concentrated in degrees $2,1,0$; the failure of the lift to be a chain map in degree one is a cocycle in $\operatorname{Hom}_R(P_1,N)$, and its class does not depend on the lift. Conversely, a class $[c]\in\operatorname{Ext}^1_R(M,N)$ with $c\in\operatorname{Hom}_R(P_1,N)$ defines an extension as the cokernel of $P_1\to P_0\oplus N$, $x\mapsto(d_1x,cx)$, which is exact at the middle because of the cocycle condition. The two constructions are inverse, and the Baer sum agrees with addition of cohomology classes. $\square$
+*Proof (in outline).* Given an extension $0\to N\to E\xrightarrow{\pi}M\to0$, choose a projective resolution and lift the identity of $M$ to a chain map into the complex $0\to N\to E\to0$ concentrated in degrees $2,1,0$; the failure of the lift to be a chain map in degree one is a cocycle in $\operatorname{Hom}_R(P_1,N)$, and its class does not depend on the lift. Conversely, a class $[c]\in\operatorname{Ext}^1_R(M,N)$ with $c\in\operatorname{Hom}_R(P_1,N)$ defines an extension as the cokernel of $P_1\to P_0\oplus N$, $x\mapsto(d_1x,cx)$, which is exact at the middle because of the cocycle condition. The two constructions are inverse, and the Baer sum agrees with addition of cohomology classes.
 
 **Theorem (Yoneda).** For $n\ge1$ the group $\operatorname{Ext}_R^n(M,N)$ is naturally isomorphic to the group of equivalence classes of **$n$-fold extensions**, that is, exact sequences
 
@@ -77,7 +77,7 @@ $$
 
 under a suitable equivalence relation, with the Baer-sum addition. For $n=1$ this reduces to the previous theorem.
 
-*Proof.* The verification is that the Yoneda product of extensions composes with the connecting homomorphisms and that a projective resolution is a universal $n$-fold extension; the details are the standard Yoneda theory. $\square$
+*Proof.* The verification is that the Yoneda product of extensions composes with the connecting homomorphisms and that a projective resolution is a universal $n$-fold extension; the details are the standard Yoneda theory.
 
 **Example.** $\operatorname{Ext}_{\mathbb{Z}}^1(\mathbb{Z}/n\mathbb{Z},A)\cong A/nA$ for every abelian group $A$: apply $\operatorname{Hom}_{\mathbb{Z}}(-,A)$ to the free resolution $0\to\mathbb{Z}\xrightarrow{\cdot n}\mathbb{Z}\to\mathbb{Z}/n\mathbb{Z}\to0$, giving the complex $0\to A\xrightarrow{\cdot n}A\to0$ concentrated in degrees $1,0$, whose $H^1$ is $A/nA$. For $A=\mathbb{Z}/m\mathbb{Z}$ this is $\mathbb{Z}/\gcd(m,n)\mathbb{Z}$. The extension interpretation recovers the fact that the nonsplit extensions of $\mathbb{Z}/n\mathbb{Z}$ by itself correspond to the elements of $\mathbb{Z}/n\mathbb{Z}$.
 
@@ -97,11 +97,11 @@ Since $-\otimes_RN$ is right exact, $\operatorname{Tor}_n^R(M,N)=L_n(-\otimes_RN
 
 **Theorem (balance).** $\operatorname{Tor}_n^R(M,N)\cong\operatorname{Tor}_n^R(N,M)$ naturally in $M$ and $N$; both are computed by resolving either variable.
 
-*Proof.* Resolving $M$ by projectives and $N$ by projectives and forming the double complex $P_\bullet\otimes_RQ_\bullet$ gives two spectral sequences, both collapsing because projectives are flat; their common abutment is the total complex of $P_\bullet\otimes_RQ_\bullet$, whose homology computes both sides. The direct argument uses the comparison theorem and the flatness of projectives. $\square$
+*Proof.* Resolving $M$ by projectives and $N$ by projectives and forming the double complex $P_\bullet\otimes_RQ_\bullet$ gives two spectral sequences, both collapsing because projectives are flat; their common abutment is the total complex of $P_\bullet\otimes_RQ_\bullet$, whose homology computes both sides. The direct argument uses the comparison theorem and the flatness of projectives.
 
 **Proposition.** $\operatorname{Tor}_0^R(M,N)\cong M\otimes_RN$, and $\operatorname{Tor}_n^R(M,N)=0$ for $n\ge1$ whenever $M$ or $N$ is flat; in particular $\operatorname{Tor}_n^R(M,N)=0$ whenever $M$ or $N$ is projective, and over a field every $\operatorname{Tor}_n$ with $n\ge1$ vanishes.
 
-*Proof.* $\operatorname{Tor}_0=M\otimes_RN$ because the tensor product is right exact and the resolution is exact. If $M$ is flat, the functor $-\otimes_RN$ is exact and the complex $P_\bullet\otimes_RN$ is exact in positive degrees. Flatness of $N$ means $M\otimes_R-$ is exact, and the symmetry of Tor reduces this to the previous case. $\square$
+*Proof.* $\operatorname{Tor}_0=M\otimes_RN$ because the tensor product is right exact and the resolution is exact. If $M$ is flat, the functor $-\otimes_RN$ is exact and the complex $P_\bullet\otimes_RN$ is exact in positive degrees. Flatness of $N$ means $M\otimes_R-$ is exact, and the symmetry of Tor reduces this to the previous case.
 
 **Corollary.** $M$ is flat if and only if $\operatorname{Tor}_1^R(M,N)=0$ for every $N$, equivalently if and only if $\operatorname{Tor}_n^R(M,N)=0$ for every $n\ge1$ and every $N$. This is the homological characterisation of flatness.
 
@@ -113,7 +113,7 @@ $$
 
 natural in the sequence; a short exact sequence in $M$ gives the analogous sequence, and by symmetry the two agree.
 
-*Proof.* Apply the functor $-\otimes_RN$ to a short exact sequence of projective resolutions produced by the horseshoe lemma and take the long exact homology sequence, as in *Derived Functors*. $\square$
+*Proof.* Apply the functor $-\otimes_RN$ to a short exact sequence of projective resolutions produced by the horseshoe lemma and take the long exact homology sequence, as in *Derived Functors*.
 
 ### Tor and Torsion
 
@@ -125,7 +125,7 @@ $$
 
 where $\operatorname{Tor}(M,N)=\operatorname{Tor}_1^R(M,N)$ is the **torsion product**, computed from any free presentation $0\to K\to F\to M\to0$ as the kernel of $K\otimes_RN\to F\otimes_RN$. For $R=\mathbb{Z}$ and $M=\mathbb{Z}/m\mathbb{Z}$ one has $\operatorname{Tor}_1^{\mathbb{Z}}(\mathbb{Z}/m\mathbb{Z},N)\cong\{n\in N:mn=0\}$.
 
-*Proof.* Write $0\to K\to F\to M\to0$ with $F$ free, so $K$ is free because $R$ is a principal ideal domain; then $\operatorname{Tor}_n^R(M,N)=0$ for $n\ge2$, since the resolution has length one, and $\operatorname{Tor}_1^R(M,N)=\ker(K\otimes_RN\to F\otimes_RN)$. This kernel is the **torsion product** $\operatorname{Tor}(M,N)$. For $M=\mathbb{Z}/m\mathbb{Z}$ the resolution $0\to\mathbb{Z}\xrightarrow{\cdot m}\mathbb{Z}\to M\to0$ gives $\operatorname{Tor}_1=\ker(m:N\to N)$. $\square$
+*Proof.* Write $0\to K\to F\to M\to0$ with $F$ free, so $K$ is free because $R$ is a principal ideal domain; then $\operatorname{Tor}_n^R(M,N)=0$ for $n\ge2$, since the resolution has length one, and $\operatorname{Tor}_1^R(M,N)=\ker(K\otimes_RN\to F\otimes_RN)$. This kernel is the **torsion product** $\operatorname{Tor}(M,N)$. For $M=\mathbb{Z}/m\mathbb{Z}$ the resolution $0\to\mathbb{Z}\xrightarrow{\cdot m}\mathbb{Z}\to M\to0$ gives $\operatorname{Tor}_1=\ker(m:N\to N)$.
 
 **Example.** $\operatorname{Tor}_1^{\mathbb{Z}}(\mathbb{Z}/m\mathbb{Z},\mathbb{Z}/n\mathbb{Z})\cong\mathbb{Z}/\gcd(m,n)\mathbb{Z}$, from the resolution above with $N=\mathbb{Z}/n\mathbb{Z}$. The symmetry of Tor expresses the symmetry of the gcd.
 
@@ -153,7 +153,7 @@ $$
 
 which splits, though not naturally.
 
-*Proof (of the homology form).* Filter the complex $C_\bullet$ by its cycles. The short exact sequences $0\to Z_n\to C_n\to B_{n-1}\to0$ and $0\to B_n\to Z_n\to H_n\to0$ are short exact sequences of complexes; applying $-\otimes_RN$ and using that $C_n$ is free, hence flat, gives the connecting maps and identifies the two ends. The Ext form is dual, with $\operatorname{Hom}_R(-,N)$ in place of $-\otimes_RN$ and the freeness of $C_n$ making $\operatorname{Hom}_R(C_n,-)$ exact. The splitting uses that the middle term is free, or more generally that the end terms are; it is not natural because the identification of the splitting depends on a choice of free presentation of the homology. $\square$
+*Proof (of the homology form).* Filter the complex $C_\bullet$ by its cycles. The short exact sequences $0\to Z_n\to C_n\to B_{n-1}\to0$ and $0\to B_n\to Z_n\to H_n\to0$ are short exact sequences of complexes; applying $-\otimes_RN$ and using that $C_n$ is free, hence flat, gives the connecting maps and identifies the two ends. The Ext form is dual, with $\operatorname{Hom}_R(-,N)$ in place of $-\otimes_RN$ and the freeness of $C_n$ making $\operatorname{Hom}_R(C_n,-)$ exact. The splitting uses that the middle term is free, or more generally that the end terms are; it is not natural because the identification of the splitting depends on a choice of free presentation of the homology.
 
 **Corollary.** If $R$ is a principal ideal domain and $H_{n-1}(C_\bullet)$ is free, then $H^n(\operatorname{Hom}_R(C_\bullet,N))\cong\operatorname{Hom}_R(H_n(C_\bullet),N)$ and $H_n(C_\bullet\otimes_RN)\cong H_n(C_\bullet)\otimes_RN$. Over a field the Ext and Tor terms always vanish and both theorems are the statement that (co)homology commutes with coefficients.
 
@@ -169,7 +169,7 @@ $$
 
 which splits, though not naturally.
 
-*Pro.* Filter the tensor product complex by the degree of $C$, or apply the spectral sequence of the bicomplex $C_p\otimes_RD_q$; over a principal ideal domain the two rows of the $E^2$-page are the displayed terms and the spectral sequence has only two nonzero rows, so it degenerates to the short exact sequence. The derivation by the spectral sequence is carried out, and the direct proof uses the universal coefficient theorem. $\square$
+*Pro.* Filter the tensor product complex by the degree of $C$, or apply the spectral sequence of the bicomplex $C_p\otimes_RD_q$; over a principal ideal domain the two rows of the $E^2$-page are the displayed terms and the spectral sequence has only two nonzero rows, so it degenerates to the short exact sequence. The derivation by the spectral sequence is carried out, and the direct proof uses the universal coefficient theorem.
 
 **Remark.** The Künneth sequence is the reason $\operatorname{Tor}_1$ occurs in the computation of the homology of a product; the topological instance of the formula needs spaces and belongs to Part II. The algebraic form above is stated for chain complexes of modules, as here.
 
@@ -185,7 +185,7 @@ $$
 
 where $\mathbb{Z}$ is the trivial $G$-module. The group homology is $\operatorname{Tor}_n^{\mathbb{Z}[G]}(\mathbb{Z},M)$.
 
-*Proof.* The functor of invariants $M\mapsto M^G$ is naturally isomorphic to $\operatorname{Hom}_{\mathbb{Z}[G]}(\mathbb{Z},M)$, and the functor of coinvariants to $\mathbb{Z}\otimes_{\mathbb{Z}[G]}M$. The statement is the definition of group cohomology as the right derived functors of invariants, together with the identification of that functor with $\operatorname{Hom}_{\mathbb{Z}[G]}(\mathbb{Z},-)$. $\square$
+*Proof.* The functor of invariants $M\mapsto M^G$ is naturally isomorphic to $\operatorname{Hom}_{\mathbb{Z}[G]}(\mathbb{Z},M)$, and the functor of coinvariants to $\mathbb{Z}\otimes_{\mathbb{Z}[G]}M$. The statement is the definition of group cohomology as the right derived functors of invariants, together with the identification of that functor with $\operatorname{Hom}_{\mathbb{Z}[G]}(\mathbb{Z},-)$.
 
 **Example.** The augmentation ideal of $\mathbb{Z}[G]$ and the standard bar resolution give the usual cocycle description of $H^n(G,M)$, and $\operatorname{Ext}_{\mathbb{Z}[G]}^1(\mathbb{Z},M)$ classifies the extensions of $\mathbb{Z}$ by $M$, that is, the extensions of groups $1\to M\to E\to G\to1$ with abelian kernel; this is the group-theoretic face of the extension interpretation of $\operatorname{Ext}^1$. The development belongs to the companion article *Group Cohomology* of the *Groups* category, being written in the same batch.
 
@@ -205,7 +205,7 @@ where $\mathbb{Z}$ is the trivial $G$-module. The group homology is $\operatorna
 
 (iv) If $R$ is a field, all groups with $n\ge1$ vanish.
 
-*Proof.* (i) and (ii) are the propositions of this article and the additivity of derived functors. (iii) follows from the length-one free resolution over a principal ideal domain. (iv) is the projectivity of every module over a field. $\square$
+*Proof.* (i) and (ii) are the propositions of this article and the additivity of derived functors. (iii) follows from the length-one free resolution over a principal ideal domain. (iv) is the projectivity of every module over a field.
 
 ## Summary
 

@@ -31,21 +31,21 @@ A representation of a finite group $G$ over a field $F$ is a module over the gro
 
 ## Representations of Lie Groups and Lie Algebras
 
-A representation of a Lie algebra $\mathfrak{g}$ is a vector space with a linear map $\mathfrak{g} \to \mathfrak{gl}(V)$ preserving the bracket; a representation of a Lie group is a smooth or continuous action on a vector space, whose differential is a representation of the Lie algebra. **Weyl's theorem** states that every finite-dimensional representation of a semisimple Lie algebra is completely reducible; the irreducible ones are classified by their highest weight, computed from the weights and the roots of a Cartan subalgebra.
+A representation of a Lie algebra $\mathrm{G}$ is a vector space with a linear map $\mathrm{G} \to \mathrm{GL}(V)$ preserving the bracket; a representation of a Lie group is a smooth or continuous action on a vector space, whose differential is a representation of the Lie algebra. **Weyl's theorem** states that every finite-dimensional representation of a semisimple Lie algebra is completely reducible; the irreducible ones are classified by their highest weight, computed from the weights and the roots of a Cartan subalgebra.
 
 | Representation | The property it has | Introduced in |
 |---|---|---|
-| Representation of a Lie algebra | a module over $\mathfrak{g}$, with the bracket action | *Representations of Lie Algebras* |
-| Universal enveloping algebra $U(\mathfrak{g})$ | the associative algebra whose modules are the representations, by the PBW theorem | *Representations of Lie Algebras* |
+| Representation of a Lie algebra | a module over $\mathrm{G}$, with the bracket action | *Representations of Lie Algebras* |
+| Universal enveloping algebra $U(\mathrm{G})$ | the associative algebra whose modules are the representations, by the PBW theorem | *Representations of Lie Algebras* |
 | Weight and weight space | the generalised eigenspaces of a Cartan subalgebra | *Representations of Lie Algebras* |
 | Highest weight representation | the irreducible representation determined by a dominant weight | *Representations of Lie Algebras* |
 | Weyl's theorem | complete reducibility for a semisimple Lie algebra | *Representations of Lie Algebras* |
 | Weyl character formula | the character of the highest weight representation | *Representations of Lie Algebras* |
-| Adjoint representation | the action of $\mathfrak{g}$ on itself by the bracket | *Lie Algebras* |
+| Adjoint representation | the action of $\mathrm{G}$ on itself by the bracket | *Lie Algebras* |
 | Root system and Cartan matrix | the discrete data classifying the semisimple Lie algebras and their representations | *Lie Algebras* |
 | Peter–Weyl decomposition | the decomposition of $L^2(G)$ for a compact group into irreducibles | *The Peter–Weyl Theorem* (Part III) |
 | Unitary representation of a locally compact group | a continuous action on a Hilbert space, with the imprimitivity theorem | *Representation Theory of Locally Compact Groups* (Part II) |
-| Non-example: a representation of a non-semisimple Lie algebra | fails Weyl's theorem: the solvable algebra $\mathfrak{b}$ has non-split extensions | *Representations of Lie Algebras* |
+| Non-example: a representation of a non-semisimple Lie algebra | fails Weyl's theorem: the solvable algebra $\mathrm{B}$ has non-split extensions | *Representations of Lie Algebras* |
 | Non-example: an infinite-dimensional representation of a compact Lie group | fails the finite-dimensional weight classification: the highest weight theory needs finite dimension | *The Peter–Weyl Theorem* (Part III) |
 
 ## Representations of Associative Algebras
@@ -95,7 +95,7 @@ A **quiver** is a directed graph, and a representation assigns a vector space to
 
 ## Summary
 
-The list gathers the representations of the corpus. The representations of a finite group are the $F[G]$-modules, the irreducibles, the regular and permutation representations, the characters with their orthogonality relations and character table, the Clebsch–Gordan decomposition, induction and restriction, the representation ring, the Specht modules of the symmetric group and the Schur–Weyl decomposition, with Maschke's theorem the governing result. The representations of a Lie group and a Lie algebra are the $\mathfrak{g}$-modules, the universal enveloping algebra, the weights and the highest weight classification, the adjoint representation, the root system, Weyl's theorem and character formula, and the Peter–Weyl and unitary representation theories. The representations of an associative algebra are the modules, the simple and semisimple modules, Schur's lemma and the density theorem, the matrix-algebra and group-algebra cases; over the number systems they are the real, complex, split-complex, quaternion and biquaternion representations. The representations of a quiver are the diagrams of vector spaces, the path-algebra modules, Gabriel's classification, the tame–wild dichotomy and the Auslander–Reiten theory. The non-examples — a modular representation, a non-split extension, a representation of a non-semisimple Lie algebra, an infinite-dimensional compact-group representation, a module over the dual numbers or a non-semisimple algebra, a biquaternion module treated as a vector space, a wild quiver and an infinite-length indecomposable — each name the property that fails.
+The list gathers the representations of the corpus. The representations of a finite group are the $F[G]$-modules, the irreducibles, the regular and permutation representations, the characters with their orthogonality relations and character table, the Clebsch–Gordan decomposition, induction and restriction, the representation ring, the Specht modules of the symmetric group and the Schur–Weyl decomposition, with Maschke's theorem the governing result. The representations of a Lie group and a Lie algebra are the $\mathrm{G}$-modules, the universal enveloping algebra, the weights and the highest weight classification, the adjoint representation, the root system, Weyl's theorem and character formula, and the Peter–Weyl and unitary representation theories. The representations of an associative algebra are the modules, the simple and semisimple modules, Schur's lemma and the density theorem, the matrix-algebra and group-algebra cases; over the number systems they are the real, complex, split-complex, quaternion and biquaternion representations. The representations of a quiver are the diagrams of vector spaces, the path-algebra modules, Gabriel's classification, the tame–wild dichotomy and the Auslander–Reiten theory. The non-examples — a modular representation, a non-split extension, a representation of a non-semisimple Lie algebra, an infinite-dimensional compact-group representation, a module over the dual numbers or a non-semisimple algebra, a biquaternion module treated as a vector space, a wild quiver and an infinite-length indecomposable — each name the property that fails.
 
 ## Summary of Notation
 
@@ -106,7 +106,7 @@ The article denotes its representations by name; the symbols appearing in the ta
 | $F[G]$, $k[G]$ | group algebra |
 | $\rho : G \to GL_F(V)$ | representation of a group |
 | $\chi_V$, $\operatorname{Res}$, $\operatorname{Ind}$, $R(G)$ | character, restriction, induction, representation ring |
-| $\mathfrak{g}$, $\mathfrak{gl}(V)$, $U(\mathfrak{g})$ | Lie algebra, endomorphism algebra, universal enveloping algebra |
+| $\mathrm{G}$, $\mathrm{GL}(V)$, $U(\mathrm{G})$ | Lie algebra, endomorphism algebra, universal enveloping algebra |
 | $\operatorname{ad}$ | adjoint representation |
 | $M_n(k)$ | matrix algebra |
 | $\operatorname{End}_A(S)$, $\operatorname{End}_A(M)$ | endomorphism ring of a simple module, of a module |

@@ -39,7 +39,7 @@ the infimum over all such representations, and it is a norm on the space of nucl
 
 **(d)** the nuclear maps form a Banach space under the nuclear norm; the space of nuclear maps is the completed projective tensor product $F \widehat{\otimes}_\pi E'$ when one of the spaces has the approximation property.
 
-**Pro.** (a) The partial sums are finite-rank operators converging in the norm because $\lVert \sum_{n>N}\lambda_n\langle\cdot,a_n\rangle b_n\rVert \leq \sum_{n>N}\lvert\lambda_n\rvert\lVert a_n\rVert\lVert b_n\rVert$, so $T$ is the norm limit of finite-rank maps, hence compact; the inequality $\lVert T\rVert \leq \lVert T\rVert_{\mathrm{nuc}}$ follows by taking the supremum over the unit ball and using $\lvert\langle x,a_n\rangle\rvert \leq \lVert a_n\rVert$ for $\lVert x\rVert \leq 1$. (b) and (c) are immediate from the series representation, summing the two series and composing termwise. (d) is the standard identification of nuclear operators with the completed projective tensor product, which is the tensor-product statement. $\square$
+**Pro.** (a) The partial sums are finite-rank operators converging in the norm because $\lVert \sum_{n>N}\lambda_n\langle\cdot,a_n\rangle b_n\rVert \leq \sum_{n>N}\lvert\lambda_n\rvert\lVert a_n\rVert\lVert b_n\rVert$, so $T$ is the norm limit of finite-rank maps, hence compact; the inequality $\lVert T\rVert \leq \lVert T\rVert_{\mathrm{nuc}}$ follows by taking the supremum over the unit ball and using $\lvert\langle x,a_n\rangle\rvert \leq \lVert a_n\rVert$ for $\lVert x\rVert \leq 1$. (b) and (c) are immediate from the series representation, summing the two series and composing termwise. (d) is the standard identification of nuclear operators with the completed projective tensor product, which is the tensor-product statement.
 
 **Example (a nuclear operator on $\ell^2$).** Let $T$ be the diagonal operator on $\ell^2$ with $T e_n = \lambda_n e_n$ where $\lambda_n = n^{-2}$. Then $T$ is nuclear with $\lVert T\rVert_{\mathrm{nuc}} = \sum_n n^{-2} = \pi^2/6 \approx 1.6449$, while $\lVert T\rVert = 1$. The example is the model nuclear operator: the coefficients are summable, the operator is compact of infinite rank, and its trace in the operator-theoretic sense is the sum of the eigenvalues, $\pi^2/6$; the derivation of the trace formula for nuclear operators, and the spectral theory that gives it, belong to *Analysis on Linear Spaces* in Part III.
 
@@ -63,7 +63,7 @@ $$
 
 the partial sum $\sum_{k<n}\lambda_k\langle\cdot,a_k\rangle b_k$ being a map of rank at most $n-1$; in particular $d_n(T) \to 0$, so that a nuclear operator between Banach spaces is compact. For operators between Hilbert spaces the two quantities agree, $\sum_{n\geq1} d_n(T) = \lVert T\rVert_{\mathrm{nuc}}$, the common value being the sum of the singular values.
 
-**Proof.** The partial sum $S_{n-1} = \sum_{k<n}\lambda_k\langle\cdot,a_k\rangle b_k$ has rank at most $n-1$, so $d_n(T) \leq \lVert T - S_{n-1}\rVert$ and the norm of the difference is bounded by the triangle inequality and $\lvert\langle x,a_k\rangle\rvert \leq \lVert a_k\rVert\lVert x\rVert$; since the series $\sum_k\lvert\lambda_k\rvert\lVert a_k\rVert\lVert b_k\rVert$ converges, its tails tend to $0$, whence $d_n(T) \to 0$ and $T$ is the norm limit of finite-rank maps. On Hilbert spaces the approximation numbers of a compact operator are its singular values, and the nuclear norm of a diagonal operator with respect to an orthonormal basis is $\sum_k\lvert\lambda_k\rvert$, so the two quantities coincide; the general Hilbert-space statement follows by the spectral decomposition of the compact self-adjoint operator $(T^*T)^{1/2}$. $\square$
+**Proof.** The partial sum $S_{n-1} = \sum_{k<n}\lambda_k\langle\cdot,a_k\rangle b_k$ has rank at most $n-1$, so $d_n(T) \leq \lVert T - S_{n-1}\rVert$ and the norm of the difference is bounded by the triangle inequality and $\lvert\langle x,a_k\rangle\rvert \leq \lVert a_k\rVert\lVert x\rVert$; since the series $\sum_k\lvert\lambda_k\rvert\lVert a_k\rVert\lVert b_k\rVert$ converges, its tails tend to $0$, whence $d_n(T) \to 0$ and $T$ is the norm limit of finite-rank maps. On Hilbert spaces the approximation numbers of a compact operator are its singular values, and the nuclear norm of a diagonal operator with respect to an orthonormal basis is $\sum_k\lvert\lambda_k\rvert$, so the two quantities coincide; the general Hilbert-space statement follows by the spectral decomposition of the compact self-adjoint operator $(T^*T)^{1/2}$.
 
 **Remark.** On Hilbert spaces the characterisation is exact: a bounded operator is nuclear exactly when the sum of its approximation numbers is finite, and that sum is the nuclear norm. On general Banach spaces the corresponding statement — that $T$ is nuclear if and only if $\sum_n d_n(T) < \infty$, with the nuclear norm equivalent to that sum — requires the approximation property, and it is the criterion by which nuclearity is checked in practice; it is quoted from the standard references, and the Fréchet-space counterpart is the seminorm characterisation given below.
 
@@ -91,7 +91,7 @@ $$
 
 between the completions of the quotients $E/\ker q$ and $E/\ker p$ is nuclear; here $\widehat{E}_p$ carries the norm induced by $p$.
 
-**Proof.** The condition is Grothendieck's description of nuclearity in terms of seminorms; its equivalence with the tensor-product definition is proved by factoring an arbitrary map through the completions of the seminorm quotients and reducing to the Banach case. It is quoted as standard. $\square$
+**Proof.** The condition is Grothendieck's description of nuclearity in terms of seminorms; its equivalence with the tensor-product definition is proved by factoring an arbitrary map through the completions of the seminorm quotients and reducing to the Banach case. It is quoted as standard.
 
 **Theorem (characterisation by approximation numbers).** Let $E$ be a Fréchet space with an increasing generating sequence $(p_n)$ of seminorms. Then $E$ is nuclear if and only if for every $n$ there is $m > n$ such that the canonical map
 
@@ -105,7 +105,7 @@ $$
 \sum_{k \geq 1} d_k\bigl(\widehat{E}_{p_m} \to \widehat{E}_{p_n}\bigr) < \infty .
 $$
 
-**Proof.** The summability of the approximation numbers is equivalent, by the proposition above, to the nuclearity of the canonical map; the passage from the Banach case to the Fréchet case uses the projective limit description and a diagonal argument to replace the family of seminorms by a cofinal sequence. It is quoted as standard. $\square$
+**Proof.** The summability of the approximation numbers is equivalent, by the proposition above, to the nuclearity of the canonical map; the passage from the Banach case to the Fréchet case uses the projective limit description and a diagonal argument to replace the family of seminorms by a cofinal sequence. It is quoted as standard.
 
 ### The Basic Structure Theorems
 
@@ -121,11 +121,11 @@ $$
 
 **(e)** the strong dual of a nuclear Fréchet space is nuclear, and the strong dual is a Montel space.
 
-**Proof.** (a) is the equivalence of the seminorm characterisation with the definition. (b) A Fréchet space is nuclear precisely when the maps between the completions of the seminorm quotients are nuclear, hence compact; it follows that a bounded set, which is bounded in some $\widehat{E}_{p_n}$, is precompact for the topology defined by a larger seminorm, hence relatively compact, so every closed bounded set is compact and the space is Montel. (c)–(e) are standard closure properties, proved by restricting the seminorm condition to subspaces, pushing it forward to quotients, and dualising it for the strong dual. $\square$
+**Proof.** (a) is the equivalence of the seminorm characterisation with the definition. (b) A Fréchet space is nuclear precisely when the maps between the completions of the seminorm quotients are nuclear, hence compact; it follows that a bounded set, which is bounded in some $\widehat{E}_{p_n}$, is precompact for the topology defined by a larger seminorm, hence relatively compact, so every closed bounded set is compact and the space is Montel. (c)–(e) are standard closure properties, proved by restricting the seminorm condition to subspaces, pushing it forward to quotients, and dualising it for the strong dual.
 
 **Corollary (a nuclear Banach space is finite-dimensional).** Let $E$ be a Banach space which is nuclear. Then $E$ is finite-dimensional.
 
-**Proof.** The canonical map $\widehat{E}_p \to \widehat{E}_p$ is the identity on a Banach space, and by Proposition (a) above it is compact; the closed unit ball is therefore compact, which is equivalent to finite dimension. $\square$
+**Proof.** The canonical map $\widehat{E}_p \to \widehat{E}_p$ is the identity on a Banach space, and by Proposition (a) above it is compact; the closed unit ball is therefore compact, which is equivalent to finite dimension.
 
 **Remark.** The corollary is the reason that the examples of nuclear spaces are all infinite-dimensional spaces of functions or sequences with a topology strictly finer than any norm topology. It also shows that nuclearity cannot be checked on a single norm and is genuinely a statement about a whole family of seminorms.
 
@@ -157,7 +157,7 @@ $$
 
 is a topological isomorphism, and the completed tensor product is a nuclear space. Consequently every continuous bilinear form on $E \times F$ corresponds to a continuous linear functional on the completed tensor product, and there is no ambiguity in the notation $E \widehat{\otimes} F$ for nuclear $E$.
 
-**Proof.** The isomorphism of the two topologies is the definition of nuclearity, and the nuclearity of the completed tensor product follows from the seminorm characterisation applied to the product family of seminorms; the correspondence of bilinear forms and functionals is the universal property of the projective tensor product. The statement is Grothendieck's theorem; it is quoted as standard. $\square$
+**Proof.** The isomorphism of the two topologies is the definition of nuclearity, and the nuclearity of the completed tensor product follows from the seminorm characterisation applied to the product family of seminorms; the correspondence of bilinear forms and functionals is the universal property of the projective tensor product. The statement is Grothendieck's theorem; it is quoted as standard.
 
 **Theorem (Schwartz kernel theorem).** Let $U \subseteq \mathbb{R}^m$ and $V \subseteq \mathbb{R}^n$ be open. Then every continuous linear map $T : C_c^\infty(U) \to \mathcal{D}'(V)$ is represented by a unique distribution $K_T \in \mathcal{D}'(U \times V)$ with
 
@@ -167,7 +167,7 @@ $$
 
 and the correspondence $T \leftrightarrow K_T$ is a linear bijection.
 
-**Proof.** The kernel theorem is the statement that $\mathcal{D}'(U \times V) \cong \mathcal{D}'(U) \widehat{\otimes}\mathcal{D}'(V)$ for the relevant tensor topology, which holds because the spaces $C_c^\infty$ are nuclear; the identification with continuous linear maps is the universal property. The theory of distributions, of which the statement is a part, belongs to *Analysis on Linear Spaces* in Part III; the topological content, namely the coincidence of the tensor topologies for nuclear spaces, is the present article's contribution. $\square$
+**Proof.** The kernel theorem is the statement that $\mathcal{D}'(U \times V) \cong \mathcal{D}'(U) \widehat{\otimes}\mathcal{D}'(V)$ for the relevant tensor topology, which holds because the spaces $C_c^\infty$ are nuclear; the identification with continuous linear maps is the universal property. The theory of distributions, of which the statement is a part, belongs to *Analysis on Linear Spaces* in Part III; the topological content, namely the coincidence of the tensor topologies for nuclear spaces, is the present article's contribution.
 
 **Remark.** The kernel theorem is the sharpest illustration of the analytic value of nuclearity: the correspondence between operators and kernels, which in finite dimensions is the correspondence between matrices and linear maps, extends verbatim to the nuclear infinite-dimensional spaces of analysis and fails without the nuclearity hypothesis. This is the sense in which nuclear spaces are the infinite-dimensional spaces that behave like finite-dimensional ones.
 

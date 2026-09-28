@@ -20,14 +20,14 @@ The trap in this subject is to *assert* the thermality — to write down the exp
 
 **Relation to the parent.** *The KMS Condition and the Biquaternion Framework* is the parent article. It establishes two facts that this article uses unchanged: the imaginary time of the material sector is intrinsic, and the modular Hamiltonian $K=-\log\rho$ of a finite-dimensional Gibbs state is a Hermitian element of $\mathbb{M}_+$. It also leaves a gap, which is stated here rather than filled silently. Its modular Hamiltonian is defined through a density matrix in a **finite-dimensional** setting. The wedge-restricted Minkowski vacuum is a state on a field algebra; it is not given by a density matrix, and the parent neither defines the modular operator $\Delta$ nor the modular flow in that setting. The identification of the modular flow with the boost is the **Bisognano–Wichmann theorem** — established physics, imported here, not derived from the biquaternion algebra. What this article does with the gap is make the flow geometric in the one case where the standard theorem supplies it, and label precisely what remains outside the framework.
 
-- **Established, and recomputed below.** In the right wedge, the boost Killing vector $\xi=x\partial_t+t\partial_x$ is future-directed; a boost by rapidity $\psi$ shifts Rindler time $\eta$ by $\eta\mapsto\eta-\psi$ under the rotor $\tilde\Lambda(\psi)=\cosh\frac{\psi}{2}+i\sinh\frac{\psi}{2}e_1$; the rotor lies in $\mathbb{M}_+$, preserves $\mathbb{M}_-$ and preserves the norm form. The massless two-point function along the orbit $\rho=\text{const}$ is $W=-\tfrac{1}{16\pi^2\rho^2}\sinh^{-2}\!\big(\tfrac{1}{2}(\delta\eta-i\epsilon)\big)$ in units $c=1$; it is even and periodic under $\delta\eta\mapsto\delta\eta+2\pi i$, equivalently in imaginary proper time with period $\beta=2\pi/a$, giving the KMS strip $0<\mathrm{Im}\,\delta\tau<\beta$ and the boundary relation $W(\delta\tau+i\beta)=W(-\delta\tau)$. The surface gravity of the redshift-normalized boost $\chi=a\xi$ is $\kappa=a$ on the horizon, so $T=\kappa/(2\pi)=a/(2\pi)$.
+- **Established, and recomputed below.** In the right wedge, the boost Killing vector $\xi=x\partial_t+t\partial_x$ is future-directed; a boost by rapidity $\psi$ shifts Rindler time $\eta$ by $\eta\mapsto\eta-\psi$ under the rotor $\tilde\Lambda(\psi)=\cosh\frac{\psi}{2}+i\sinh\frac{\psi}{2}e_1$; the rotor lies in $\mathbb{M}_+$, preserves $\mathbb{M}_-$ and preserves the biquaternion norm. The massless two-point function along the orbit $\rho=\text{const}$ is $W=-\tfrac{1}{16\pi^2\rho^2}\sinh^{-2}\!\big(\tfrac{1}{2}(\delta\eta-i\epsilon)\big)$ in units $c=1$; it is even and periodic under $\delta\eta\mapsto\delta\eta+2\pi i$, equivalently in imaginary proper time with period $\beta=2\pi/a$, giving the KMS strip $0<\mathrm{Im}\,\delta\tau<\beta$ and the boundary relation $W(\delta\tau+i\beta)=W(-\delta\tau)$. The surface gravity of the redshift-normalized boost $\chi=a\xi$ is $\kappa=a$ on the horizon, so $T=\kappa/(2\pi)=a/(2\pi)$.
 - **Standard, and imported.** The Unruh effect itself; the Bisognano–Wichmann theorem; the KMS characterization of thermal equilibrium; the massless Wightman function and its pole structure; the definition of surface gravity.
 - **Interpretation.** Reading the modular flow as the biquaternionic boost flow, and the Rindler horizon as the zero-divisor cone, are structural readings of the standard construction. The algebra is consistent with them; it does not by itself force the thermal interpretation.
 - **Gaps, left visible.** The general modular operator of a field algebra is not constructed in the framework; the algebra of observables of a quantum field theory is infinite-dimensional, so the finite-dimensional reading of the modular flow as an inner automorphism is a model, not a derivation; and the framework does not derive thermality, only house it. These are collected in the open questions.
 
 The article is organized as follows. The next section fixes the wedge, the Rindler coordinates, and the boost. The section after that states the modular Hamiltonian and identifies the flow, with the parent's gap stated explicitly. The next section computes the two-point function and derives the KMS relation from its analytic strip. Two short sections recompute the temperature, one from the imaginary-time period and one from the surface gravity. A section isolates what the biquaternion framework adds and what it only transcribes, and a short section records the statistics. The article closes with the established/interpretation split, open questions, and the summary.
 
-**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_0=1,e_1,e_2,e_3$ with $e_k^2=-e_0$, and $i$ is the scalar imaginary, $i^2=-1$, commuting with every $e_k$. The material (anti-Hermitian) subspace is $\mathbb{M}_-$ and the informational (Hermitian) subspace is $\mathbb{M}_+$, with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm=\mathbb{M}_\mp$; $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace. The material coordinate is $\tilde{Q}=ict\,e_0+x\,e_1+y\,e_2+z\,e_3\in\mathbb{M}_-$, with norm form $N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}=-c^2t^2+x^2+y^2+z^2$. The biquaternionic gradient is $\tilde\nabla=e_0\partial_{ict}+e_k\partial_k$ and $\Box=\tilde\nabla\bar{\tilde\nabla}=\bar{\tilde\nabla}\tilde\nabla$. The trace formula $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$ is inherited unchanged. Throughout, $\hbar$ and $k_B$ are the reduced Planck and Boltzmann constants, and $c$ is the speed of light. The two-point-function computation is done in units $c=1$, restoring $c$ only in the temperature.
+**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_0=1,e_1,e_2,e_3$ with $e_k^2=-e_0$, and $i$ is the scalar imaginary, $i^2=-1$, commuting with every $e_k$. The material (anti-Hermitian) subspace is $\mathbb{M}_-$ and the informational (Hermitian) subspace is $\mathbb{M}_+$, with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm=\mathbb{M}_\mp$; $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace. The material coordinate is $\tilde{Q}=ict\,e_0+x\,e_1+y\,e_2+z\,e_3\in\mathbb{M}_-$, with biquaternion norm $N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}=-c^2t^2+x^2+y^2+z^2$. The biquaternionic gradient is $\tilde\nabla=e_0\partial_{ict}+e_k\partial_k$ and $\Box=\tilde\nabla\bar{\tilde\nabla}=\bar{\tilde\nabla}\tilde\nabla$. The trace formula $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$ is inherited unchanged. Throughout, $\hbar$ and $k_B$ are the reduced Planck and Boltzmann constants, and $c$ is the speed of light. The two-point-function computation is done in units $c=1$, restoring $c$ only in the temperature.
 
 ## The Rindler Wedge and the Boost
 
@@ -53,7 +53,7 @@ $$
 
 is the light cone. In the algebra the light cone of $\mathbb{M}_-$ is the **zero-divisor cone**: a nonzero $\tilde{Q}\in\mathbb{M}_-$ satisfies $\tilde{Q}\bar{\tilde{Q}}=0$ exactly on $N(\tilde{Q})=0$ (the companion article on $\mathbb{M}_-$ establishes this and identifies its two components). The horizon of an accelerated observer is therefore not an extra geometric object imported into the algebra: it is the algebraic null cone of the material sector.
 
-Inside $R$ the norm form is positive, $N>0$. Introduce **Rindler coordinates** $(\rho,\eta)$ by
+Inside $R$ the biquaternion norm is positive, $N>0$. Introduce **Rindler coordinates** $(\rho,\eta)$ by
 
 $$
 x = \rho\cosh\eta, \qquad ct = \rho\sinh\eta, \qquad \rho>0,\ \eta\in\mathbb{R},
@@ -89,7 +89,7 @@ $$
 \tilde\Lambda(\psi) = \exp\!\Big(\frac{\psi}{2}G_1\Big) = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\,e_1 \in \mathbb{M}_+,
 $$
 
-which is Hermitian and of unit norm form, $\tilde\Lambda\bar{\tilde\Lambda}=e_0$. It acts on the material sector by **rotor conjugation**
+which is Hermitian and of unit norm, $\tilde\Lambda\bar{\tilde\Lambda}=e_0$. It acts on the material sector by **rotor conjugation**
 
 $$
 \tilde{Q} \longmapsto \tilde\Lambda(\psi)\,\tilde{Q}\,\tilde\Lambda(\psi),
@@ -116,7 +116,7 @@ $$
 q_0 \longmapsto q_0 - 2s\,q_1, \qquad q_1 \longmapsto q_1 - 2s\,q_0
 $$
 
-for the flow parameter $s=\psi/2$. This is the sign that has to be fixed before anything else can be; we record it explicitly and use the orientation that advances $\eta$ when we need a direction. The same computation shows that the boost preserves the norm form, $N(\tilde\Lambda\tilde{Q}\tilde\Lambda)=N(\tilde{Q})$, so $R$ is mapped to itself and the horizon to itself. Two checks beyond the case that suggested the formulas are recorded in the companion: the rotor maps $\eta$ to $\eta-\psi$ on an independently chosen orbit, and the norm form is preserved on a general element of $\mathbb{M}_-$.
+for the flow parameter $s=\psi/2$. This is the sign that has to be fixed before anything else can be; we record it explicitly and use the orientation that advances $\eta$ when we need a direction. The same computation shows that the boost preserves the biquaternion norm, $N(\tilde\Lambda\tilde{Q}\tilde\Lambda)=N(\tilde{Q})$, so $R$ is mapped to itself and the horizon to itself. Two checks beyond the case that suggested the formulas are recorded in the companion: the rotor maps $\eta$ to $\eta-\psi$ on an independently chosen orbit, and the biquaternion norm is preserved on a general element of $\mathbb{M}_-$.
 
 **Which wedge.** The two wedges have opposite orientation. The boost generator whose flow is future-directed on $R$ is past-directed on $L$, so the modular Hamiltonians of the two wedges satisfy $K_L=-K_R$, and the surface gravities have opposite signs. The temperature is built from $|\kappa|=a$, so it is the same for both; but a statement about "the modular Hamiltonian" that omits the wedge is ambiguous, and we keep the wedge explicit.
 
@@ -313,7 +313,7 @@ in agreement with the imaginary-time route. The two computations are independent
 **What it adds (algebra and structure).**
 
 - *The flow generator is in $\mathbb{M}_+$.* The modular Hamiltonian of the wedge is represented by the Hermitian boost generator $G_1=ie_1$, up to the normalization of the modular generator noted above. This is the exact form of the parent's statement that $K=-\log\rho\in\mathbb{M}_+$ — the same Hermitian element that rotates $\mathbb{M}_-$ by rotor conjugation is the generator of the thermal flow — and it is not an analogy.
-- *The horizon is the zero-divisor cone.* The Rindler horizon of the accelerated observer is the null cone of the material sector, the zero-divisor set of the algebra. The wedge is a connected region on which the norm form has one sign; the horizon is where it changes.
+- *The horizon is the zero-divisor cone.* The Rindler horizon of the accelerated observer is the null cone of the material sector, the zero-divisor set of the algebra. The wedge is a connected region on which the biquaternion norm has one sign; the horizon is where it changes.
 - *The thermal circle lies along the material time.* The KMS analyticity is a continuation in the $ict$ direction, i.e. the complexification of the Rindler time, and the flow that acts is an inner automorphism by rotors in $\mathbb{M}_+$. The material sector supplies the time in which the state is thermal; the informational sector supplies the operator that generates the flow.
 - *The boost is two-sided.* The generator acts on $\mathbb{M}_-$ through the rotor anticommutator $G_1\tilde{Q}+\tilde{Q}G_1$, not through the commutator. This is the curved-spacetime companion's caution, and the Unruh flow is a case where it is load-bearing: the commutator generates a rotation in the plane orthogonal to the boost (it vanishes on the boost plane itself) and does not produce the boost.
 
@@ -332,7 +332,7 @@ The Unruh temperature does not depend on the statistics of the field. The KMS bo
 
 **Established (physics).** The Unruh effect and the temperature $T=\hbar a/(2\pi c k_B)$; the Bisognano–Wichmann theorem; the KMS characterization of thermal equilibrium and its boundary relation; the massless Wightman function and its pole structure; the definition of surface gravity and its value $\kappa=a$ for the redshift-normalized boost.
 
-**Established (algebra), recomputed here.** The boost rotor $\tilde\Lambda(\psi)=\cosh\frac{\psi}{2}+i\sinh\frac{\psi}{2}e_1$ lies in $\mathbb{M}_+$, is Hermitian and of unit norm form, and preserves $\mathbb{M}_-$ and the norm form; it shifts the Rindler time by $\eta\mapsto\eta-\psi$; its generator is $G_1=ie_1\in\mathbb{M}_+$ with the two-sided action; the horizon is the zero-divisor cone of $\mathbb{M}_-$.
+**Established (algebra), recomputed here.** The boost rotor $\tilde\Lambda(\psi)=\cosh\frac{\psi}{2}+i\sinh\frac{\psi}{2}e_1$ lies in $\mathbb{M}_+$, is Hermitian and of unit norm, and preserves $\mathbb{M}_-$ and the biquaternion norm; it shifts the Rindler time by $\eta\mapsto\eta-\psi$; its generator is $G_1=ie_1\in\mathbb{M}_+$ with the two-sided action; the horizon is the zero-divisor cone of $\mathbb{M}_-$.
 
 **Interpretation.** Reading the modular flow as the biquaternionic boost flow, and the Rindler horizon as the zero-divisor cone, are structural readings. The algebra is consistent with them and makes the flow explicit in the finite-dimensional model; it does not force the thermal reading.
 
@@ -390,7 +390,7 @@ The framework supplies the algebraic home: the horizon as the zero-divisor cone,
 | $\mathbb{M}_-,\mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\mathbb{H}_{\mathbb{B}}$ | Real-quaternion subspace |
 | $\tilde{Q}=ict\,e_0+x\,e_1+y\,e_2+z\,e_3$ | Material-sector coordinate $\in\mathbb{M}_-$ |
-| $N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}$ | Norm form, signature $(3,1)$ on $\mathbb{M}_-$ |
+| $N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}$ | Biquaternion norm, signature $(3,1)$ on $\mathbb{M}_-$ |
 | $R=\{x>|ct|\}$ | Right Rindler wedge; $L$ its mirror |
 | $\rho,\eta$ | Rindler radius and Rindler time, $x=\rho\cosh\eta$, $ct=\rho\sinh\eta$ |
 | $\tau$ | Proper time along the accelerated orbit, $cd\tau=\rho\,d\eta$ |
@@ -399,7 +399,7 @@ The framework supplies the algebraic home: the horizon as the zero-divisor cone,
 | $\chi=a\xi$ | Redshift-normalized boost; $\kappa=a$ its surface gravity |
 | $\kappa$ | Surface gravity of the boost horizon |
 | $G_1=ie_1\in\mathbb{M}_+$ | Boost generator (Hermitian) |
-| $\tilde\Lambda(\psi)=\cosh\frac{\psi}{2}+i\sinh\frac{\psi}{2}e_1$ | Boost rotor (Hermitian, unit norm form) |
+| $\tilde\Lambda(\psi)=\cosh\frac{\psi}{2}+i\sinh\frac{\psi}{2}e_1$ | Boost rotor (Hermitian, unit norm) |
 | $\tilde{Q}\mapsto\tilde\Lambda\tilde{Q}\tilde\Lambda$ | Boost = rotor conjugation on $\mathbb{M}_-$ |
 | $K_{\mathrm{boost}},\ \Delta=e^{-2\pi K_{\mathrm{boost}}}$ | Boost Hamiltonian; modular operator (Bisognano–Wichmann) |
 | $\alpha_s$ | Modular flow = boost by rapidity $2\pi s$ |

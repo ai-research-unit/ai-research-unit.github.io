@@ -91,7 +91,7 @@ S(\tilde{\rho}_{AB}) = -\sum_\epsilon \tfrac14\bigl(1-{\textstyle\sum_j}c_j\epsi
 I(A:B) = 2 - S(\tilde{\rho}_{AB}) .
 $$
 
-For Bell-diagonal states the quantum mutual information is thus a function of the three trace pairings $c_j$ alone — the two-qubit analogue of the statement, for a single qubit, that the entropy is a function of the norm form.
+For Bell-diagonal states the quantum mutual information is thus a function of the three trace pairings $c_j$ alone — the two-qubit analogue of the statement, for a single qubit, that the entropy is a function of the biquaternion norm.
 
 ## Classical Mutual Information and Discord
 
@@ -214,7 +214,7 @@ The physical meaning is that entanglement is one kind of quantum correlation and
 
 - It expresses the bipartite mutual information and the discord entirely in terms of the partial trace, the trace pairing, and the entropies of elements of $\mathbb{M}_+^{\otimes2}$.
 - It identifies the Bell-diagonal family with the convex hull of the Bell idempotents and parametrizes it by the three trace pairings $c_j = \mathrm{Tr}(\tilde{\rho}_{AB}\tilde{Q}_j)$ with $\tilde{Q}_j = -e_j\otimes e_j$.
-- It gives the entropy and the mutual information of the family as functions of the triple $(c_1,c_2,c_3)$, the two-qubit analogue of the single-qubit norm-form statement.
+- It gives the entropy and the mutual information of the family as functions of the triple $(c_1,c_2,c_3)$, the two-qubit analogue of the single-qubit biquaternion-norm statement.
 - It exhibits a separable state with positive discord and verifies the separability criterion and the discord numerically.
 
 **What it does not.**
@@ -222,12 +222,12 @@ The physical meaning is that entanglement is one kind of quantum correlation and
 - It does not compute the discord for general two-qubit states. The Bell-diagonal restriction is what makes the computation tractable and the trace-pairing parametrization exact.
 - It does not prove the Luo result that the optimal measurement for Bell-diagonal states is along a coordinate axis; that is cited as standard, and the computed values use it.
 - It does not resolve the interpretation of discord, nor does it claim that discord is a resource in every operational sense; the operational interpretations are cited, not derived.
-- It does not extend the norm-form reading to the two-qubit case generally: the norm form of a two-qubit state is not a single number, and only the Bell-diagonal family is controlled by three trace pairings.
+- It does not extend the biquaternion-norm reading to the two-qubit case generally: the biquaternion norm of a two-qubit state is not a single number, and only the Bell-diagonal family is controlled by three trace pairings.
 - It does not predict anything beyond standard quantum information theory; the discord values are the standard ones.
 
 ## Open Questions
 
-**1. Discord and the two-qubit norm form.** For a single qubit the entropy is a function of the norm form. For a two-qubit Bell-diagonal state the entropy is a function of the three trace pairings $c_j$. Is there an algebraic object — a generalized norm form on $\mathbb{M}_+^{\otimes2}$ — whose invariant theory reproduces the triple $(c_1,c_2,c_3)$ and hence the discord?
+**1. Discord and the two-qubit biquaternion norm.** For a single qubit the entropy is a function of the biquaternion norm. For a two-qubit Bell-diagonal state the entropy is a function of the three trace pairings $c_j$. Is there an algebraic object — a generalized biquaternion norm on $\mathbb{M}_+^{\otimes2}$ — whose invariant theory reproduces the triple $(c_1,c_2,c_3)$ and hence the discord?
 
 **2. The geometry of the Bell-diagonal tetrahedron.** The Bell-diagonal states form a tetrahedron inscribed in the two-qubit state space, and the separable subset is the octahedron $\sum_j|c_j|\leq1$. What is the corresponding geometry in the cone of $\mathbb{M}_+^{\otimes2}$, and where does the discord vanish on it?
 

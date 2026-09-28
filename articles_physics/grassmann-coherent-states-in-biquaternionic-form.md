@@ -213,7 +213,7 @@ $$
 
 so the parity is the reflection of the label, in agreement with the trace formula's need for $\langle-\theta|$. For one mode $(-1)^{\hat N}=ie_3$ as the parents record; the reflection is therefore both an algebra element and a relabelling of the coherent states.
 
-**Bilinear pairings.** The bilinear $\langle\theta|\hat O|\eta\rangle$ is a function of a pair of odd labels and is the natural object to appear in the invariant pairings. Since the norm form on $\mathbb{B}$ is the complex bilinear $N=\sum_\mu Q_\mu^2$ and vanishes on the one-particle ideal, while the Hermitian form is positive definite, the two roles separate as in the Fock-space article: the Berezin-integral pairing is the Hermitian one, and the Lorentz-invariant bilinears of the module are the antisymmetric form $\varepsilon$ and the mixed pairing with the dual.
+**Bilinear pairings.** The bilinear $\langle\theta|\hat O|\eta\rangle$ is a function of a pair of odd labels and is the natural object to appear in the invariant pairings. Since the biquaternion norm on $\mathbb{B}$ is the complex bilinear $N=\sum_\mu Q_\mu^2$ and vanishes on the one-particle ideal, while the Hermitian form is positive definite, the two roles separate as in the Fock-space article: the Berezin-integral pairing is the Hermitian one, and the Lorentz-invariant bilinears of the module are the antisymmetric form $\varepsilon$ and the mixed pairing with the dual.
 
 ## The Thermal Kernel
 

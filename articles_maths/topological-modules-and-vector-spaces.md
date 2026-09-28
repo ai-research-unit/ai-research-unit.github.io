@@ -15,7 +15,7 @@ Throughout, $R$ is a topological ring, commutative with $1 \neq 0$ unless stated
 
 **Proposition.** (i) The topology of a topological module is translation-invariant: the maps $x \mapsto x+a$ are homeomorphisms, so the topology is determined by the neighbourhoods of $0$. (ii) The negation $x \mapsto -x$ is a homeomorphism. (iii) If $U$ is a neighbourhood of $0$ then there is a neighbourhood $V$ of $0$ with $V+V \subseteq U$, and there is a neighbourhood of $0$ contained in $U$ that is closed.
 
-*Proof.* (i) and (ii) hold because the group operations are continuous bijections with continuous inverses. (iii) Continuity of addition at $(0,0)$ gives $V+V\subseteq U$; the existence of a closed neighbourhood inside a given one uses the regularity of the additive topological group, obtained by iterating the neighbourhood condition. $\square$
+*Proof.* (i) and (ii) hold because the group operations are continuous bijections with continuous inverses. (iii) Continuity of addition at $(0,0)$ gives $V+V\subseteq U$; the existence of a closed neighbourhood inside a given one uses the regularity of the additive topological group, obtained by iterating the neighbourhood condition.
 
 **Definition.** A **fundamental system of neighbourhoods of $0$** is a family $\mathcal{B}$ of neighbourhoods of $0$ such that every neighbourhood of $0$ contains a member of $\mathcal{B}$. A topological module is **Hausdorff** (or **separated**) if and only if
 
@@ -39,7 +39,7 @@ is the topology in which a set is open if it is a union of cosets of the $U_n$; 
 
 **Proposition.** A descending chain of submodules $M=U_0 \supseteq U_1 \supseteq \cdots$ defines a topology in which a set is open exactly when it is a union of cosets of the $U_n$, and the $U_n$ are then a fundamental system of neighbourhoods of $0$. Addition and negation are continuous, so the topology is translation-invariant, and it is Hausdorff if and only if $\bigcap_nU_n=0$. The closure of a submodule $N$ is $\overline N=\bigcap_n(N+U_n)$, and the quotient topology on $M/N$ is linear, with neighbourhoods of zero the images of the $U_n$. Scalar multiplication is continuous when the topology on $R$ is discrete, and more generally when $U_n=I^nM$ for an ideal $I$ and $R$ carries the $I$-adic topology; for an arbitrary topological ring it can fail, as the discrete topology on $M=\mathbb{R}$ over $R=\mathbb{R}$ shows: at the point $(0,1)$ the product is $0$, while the elements $\lambda \cdot 1$ for arbitrarily small nonzero $\lambda$ are nonzero, so no neighbourhood of $(0,1)$ maps into the open set $\{0\}$.
 
-*Proof.* The cosets of the $U_n$ form a basis for a topology, and $U_{n+1}+U_{n+1}\subseteq U_n$ makes addition continuous at $0$, hence everywhere by translation-invariance. Since each $U_n$ is a submodule, $rU_n \subseteq U_n$ for every $r \in R$; taking the first factor of $R \times M$ to be the open singleton $\{r_0\}$ when $R$ is discrete, or the coset $r_0+I^m$ when $R$ is $I$-adic, and the second to be $x_0+U_m$, the terms $r_0u$, $wx_0$ and $wu$ of the product all land in $U_m$, which is the stated continuity. Hausdorffness is the intersection condition, and for the closure, $x \in \overline N$ iff every neighbourhood $x+U_n$ meets $N$, that is, $x \in N+U_n$ for every $n$. $\square$
+*Proof.* The cosets of the $U_n$ form a basis for a topology, and $U_{n+1}+U_{n+1}\subseteq U_n$ makes addition continuous at $0$, hence everywhere by translation-invariance. Since each $U_n$ is a submodule, $rU_n \subseteq U_n$ for every $r \in R$; taking the first factor of $R \times M$ to be the open singleton $\{r_0\}$ when $R$ is discrete, or the coset $r_0+I^m$ when $R$ is $I$-adic, and the second to be $x_0+U_m$, the terms $r_0u$, $wx_0$ and $wu$ of the product all land in $U_m$, which is the stated continuity. Hausdorffness is the intersection condition, and for the closure, $x \in \overline N$ iff every neighbourhood $x+U_n$ meets $N$, that is, $x \in N+U_n$ for every $n$.
 
 **Example (the $I$-adic topology).** For an ideal $I \subseteq R$ the chain $M \supseteq IM \supseteq I^2M \supseteq \cdots$ defines the **$I$-adic topology** on $M$; it is linear, and it is Hausdorff exactly when $\bigcap_n I^nM=0$. The completion of this topology is the algebraic $I$-adic completion treated in the companion article of this category on localisation and completion of modules; here it is the topology that is the object of study.
 
@@ -49,7 +49,7 @@ is the topology in which a set is open if it is a union of cosets of the $U_n$; 
 
 **Theorem.** Let $N \subseteq M$ be a submodule. The quotient topology on $M/N$, with the quotient map $q:M \to M/N$ open, makes $M/N$ a topological module, and $q$ is continuous and open. If $M$ is Hausdorff and $N$ is closed, then $M/N$ is Hausdorff. The quotient topology is the finest topology on $M/N$ making $q$ continuous.
 
-*Proof.* Addition and scalar multiplication on $M/N$ are the composites of the continuous maps on $M$ with $q$, hence continuous; openness of $q$ is the definition of the quotient topology, and the remaining statements are general topology of quotient maps. $\square$
+*Proof.* Addition and scalar multiplication on $M/N$ are the composites of the continuous maps on $M$ with $q$, hence continuous; openness of $q$ is the definition of the quotient topology, and the remaining statements are general topology of quotient maps.
 
 ### Completion
 
@@ -63,11 +63,11 @@ $$
 
 the inverse limit of the discrete quotients; there is a continuous homomorphism $\iota:M \to \widehat M$ with dense image, $\widehat M$ is Hausdorff and complete, and for every complete Hausdorff topological module $N$ and every uniformly continuous homomorphism $f:M \to N$ there is a unique continuous $\widehat f:\widehat M \to N$ with $f=\widehat f \circ \iota$.
 
-*Proof.* The quotients $M/U$ are discrete and the transition maps are the natural projections; the inverse limit is a closed subspace of the product $\prod_{U \in \mathcal{B}}M/U$ of the discrete, hence Hausdorff, quotients, so it is Hausdorff. A Cauchy net in $M$ has a compatible system of images in the $M/U$, and every compatible system lifts: this is the standard construction of the completion of a uniform space, adapted to the additive uniformity. The universal property is verified on the dense image and extended by continuity and uniqueness. $\square$
+*Proof.* The quotients $M/U$ are discrete and the transition maps are the natural projections; the inverse limit is a closed subspace of the product $\prod_{U \in \mathcal{B}}M/U$ of the discrete, hence Hausdorff, quotients, so it is Hausdorff. A Cauchy net in $M$ has a compatible system of images in the $M/U$, and every compatible system lifts: this is the standard construction of the completion of a uniform space, adapted to the additive uniformity. The universal property is verified on the dense image and extended by continuity and uniqueness.
 
 **Proposition.** The completion functor commutes with finite products, and the natural map $\iota$ is an isomorphism exactly when $M$ is complete and Hausdorff. If $i:M' \to M$ is a uniformly continuous injection which is a uniform embedding, then $\widehat{M'} \to \widehat M$ is injective, so completion is left exact on such sequences. For a uniformly continuous injection that is not a uniform embedding, $\widehat{M'} \to \widehat M$ need not be injective, and completion is not exact in general; on finitely generated modules over a Noetherian ring with the $I$-adic topology it is exact, by the Artin–Rees lemma, as the companion article on localisation and completion of modules records.
 
-*Proof.* Finite products of inverse limits are inverse limits of products, and a complete Hausdorff module is its own completion. If $i$ is a uniform embedding, the pullbacks $i^{-1}U$ are a cofinal system of neighbourhoods of $0$ in $M'$, so $\widehat{M'}=\varprojlim_U M'/i^{-1}U$ and, the inverse limit being left exact, the kernel of $\widehat{M'} \to \widehat M$ is $\varprojlim_U\ker(M'/i^{-1}U \to M/U)$; these kernels vanish because $i$ is injective, so the map on completions is injective. The exactness theorem of the companion article on localisation and completion of modules supplies the Noetherian statement. $\square$
+*Proof.* Finite products of inverse limits are inverse limits of products, and a complete Hausdorff module is its own completion. If $i$ is a uniform embedding, the pullbacks $i^{-1}U$ are a cofinal system of neighbourhoods of $0$ in $M'$, so $\widehat{M'}=\varprojlim_U M'/i^{-1}U$ and, the inverse limit being left exact, the kernel of $\widehat{M'} \to \widehat M$ is $\varprojlim_U\ker(M'/i^{-1}U \to M/U)$; these kernels vanish because $i$ is injective, so the map on completions is injective. The exactness theorem of the companion article on localisation and completion of modules supplies the Noetherian statement.
 
 ## The $p$-adic Integers
 
@@ -89,13 +89,13 @@ the inverse limit of the rings $\mathbb{Z}/p^n\mathbb{Z}$ with the reduction map
 
 (iv) $\mathbb{Z}_p$ is compact, Hausdorff, totally disconnected and complete, and it is a profinite ring.
 
-*Proof.* (i) A compatible system of residues modulo $p^n$ is precisely the data of digits $a_k$ with the partial sums convergent, since the $p^n\mathbb{Z}_p$ form a neighbourhood basis. (ii) An element $x$ with constant digit $a_0 \neq 0$ is a unit: $a_0$ is prime to $p$, hence a unit of $\mathbb{Z}_p$, and $x=a_0\bigl(1+a_0^{-1}(x-a_0)\bigr)$ with $a_0^{-1}(x-a_0) \in p\mathbb{Z}_p$, so $x^{-1}=a_0^{-1}\sum_{k \ge 0}\bigl(-a_0^{-1}(x-a_0)\bigr)^k$ converges in $\mathbb{Z}_p$, which is complete for this topology by (iv). Hence the non-units are exactly the elements with zero constant digit, that is, $p\mathbb{Z}_p$, so $p\mathbb{Z}_p$ is the unique maximal ideal and $\mathbb{Z}_p/p\mathbb{Z}_p \cong \mathbb{F}_p$. Moreover $\mathbb{Z}_p$ is a domain: for $x \neq 0$ the integer $v_p(x)=\max\{k:x \in p^k\mathbb{Z}_p\}$ is finite because $\bigcap_kp^k\mathbb{Z}_p=0$, so $x=p^{v_p(x)}u$ with $u$ a unit, and for $x,y \neq 0$ this gives $xy=p^{v_p(x)+v_p(y)}uv$ with $uv$ a unit, whence $xy \neq 0$. (iii) Inverting $p$ gives the Laurent expansions, and the result is a field. (iv) The inverse limit of the finite discrete rings $\mathbb{Z}/p^n$ is a closed subspace of the product $\prod_n \mathbb{Z}/p^n$, which is compact by Tychonoff; total disconnectedness and completeness follow from the description of the topology by the clopen subgroups $p^n\mathbb{Z}_p$. $\square$
+*Proof.* (i) A compatible system of residues modulo $p^n$ is precisely the data of digits $a_k$ with the partial sums convergent, since the $p^n\mathbb{Z}_p$ form a neighbourhood basis. (ii) An element $x$ with constant digit $a_0 \neq 0$ is a unit: $a_0$ is prime to $p$, hence a unit of $\mathbb{Z}_p$, and $x=a_0\bigl(1+a_0^{-1}(x-a_0)\bigr)$ with $a_0^{-1}(x-a_0) \in p\mathbb{Z}_p$, so $x^{-1}=a_0^{-1}\sum_{k \ge 0}\bigl(-a_0^{-1}(x-a_0)\bigr)^k$ converges in $\mathbb{Z}_p$, which is complete for this topology by (iv). Hence the non-units are exactly the elements with zero constant digit, that is, $p\mathbb{Z}_p$, so $p\mathbb{Z}_p$ is the unique maximal ideal and $\mathbb{Z}_p/p\mathbb{Z}_p \cong \mathbb{F}_p$. Moreover $\mathbb{Z}_p$ is a domain: for $x \neq 0$ the integer $v_p(x)=\max\{k:x \in p^k\mathbb{Z}_p\}$ is finite because $\bigcap_kp^k\mathbb{Z}_p=0$, so $x=p^{v_p(x)}u$ with $u$ a unit, and for $x,y \neq 0$ this gives $xy=p^{v_p(x)+v_p(y)}uv$ with $uv$ a unit, whence $xy \neq 0$. (iii) Inverting $p$ gives the Laurent expansions, and the result is a field. (iv) The inverse limit of the finite discrete rings $\mathbb{Z}/p^n$ is a closed subspace of the product $\prod_n \mathbb{Z}/p^n$, which is compact by Tychonoff; total disconnectedness and completeness follow from the description of the topology by the clopen subgroups $p^n\mathbb{Z}_p$.
 
 **Definition.** The **$p$-adic absolute value** is $|x|_p=p^{-v_p(x)}$ for $x \neq 0$, where $v_p(x)$ is the largest $k$ with $p^k \mid x$, and $|0|_p=0$. It satisfies the strong triangle inequality $|x+y|_p \le \max(|x|_p,|y|_p)$, so the metric $d(x,y)=|x-y|_p$ is ultrametric, and $\mathbb{Z}_p$ is the closed unit ball.
 
 **Proposition.** $\mathbb{Z}_p$ is the metric completion of $\mathbb{Z}$ with respect to $|\cdot|_p$, and $\mathbb{Q}_p$ is the metric completion of $\mathbb{Q}$ with respect to the same absolute value; the two descriptions of the completion, metric and $I$-adic, agree.
 
-*Proof.* A sequence is $p$-adically Cauchy exactly when it is Cauchy for the $(p)$-adic topology's uniformity, since the basic neighbourhoods $p^n\mathbb{Z}_p$ agree; the metric completion is therefore the inverse limit of the quotients. $\square$
+*Proof.* A sequence is $p$-adically Cauchy exactly when it is Cauchy for the $(p)$-adic topology's uniformity, since the basic neighbourhoods $p^n\mathbb{Z}_p$ agree; the metric completion is therefore the inverse limit of the quotients.
 
 ## Profinite and Complete Modules
 
@@ -109,11 +109,11 @@ $$
 
 is profinite, with $\mathbb{Z}$ dense in it.
 
-*Proof.* (i) Inverse limits and products of compact Hausdorff totally disconnected spaces have the same property, and the module structure is compatible; a closed subspace of a compact space is compact, and a Hausdorff quotient of a compact space is compact. (ii) The Chinese remainder theorem identifies $\mathbb{Z}/n \cong \prod_{p \mid n}\mathbb{Z}/p^{v_p(n)}$, and passing to the limit gives the displayed product. $\square$
+*Proof.* (i) Inverse limits and products of compact Hausdorff totally disconnected spaces have the same property, and the module structure is compatible; a closed subspace of a compact space is compact, and a Hausdorff quotient of a compact space is compact. (ii) The Chinese remainder theorem identifies $\mathbb{Z}/n \cong \prod_{p \mid n}\mathbb{Z}/p^{v_p(n)}$, and passing to the limit gives the displayed product.
 
-**Theorem.** Let $R$ be Noetherian and $I \subseteq R$ an ideal, and let $M$ be a finitely generated $R$-module. Then the $I$-adic completion $\widehat M$ is a complete Hausdorff topological $\widehat R$-module, and if $R$ is local with maximal ideal $\mathfrak m$ and $I=\mathfrak m$, then $\widehat M$ is separated, so $M \hookrightarrow \widehat M$.
+**Theorem.** Let $R$ be Noetherian and $I \subseteq R$ an ideal, and let $M$ be a finitely generated $R$-module. Then the $I$-adic completion $\widehat M$ is a complete Hausdorff topological $\widehat R$-module, and if $R$ is local with maximal ideal $\mathrm{M}$ and $I=\mathrm{M}$, then $\widehat M$ is separated, so $M \hookrightarrow \widehat M$.
 
-*Proof.* This is Krull's intersection theorem and the exactness and flatness of completion for finitely generated modules over a Noetherian ring, quoted from the companion article on localisation and completion of modules and standard commutative algebra. $\square$
+*Proof.* This is Krull's intersection theorem and the exactness and flatness of completion for finitely generated modules over a Noetherian ring, quoted from the companion article on localisation and completion of modules and standard commutative algebra.
 
 ## Topological Vector Spaces
 
@@ -129,7 +129,7 @@ is profinite, with $\mathbb{Z}$ dense in it.
 
 **Proposition.** The locally convex topology is the coarsest topology making $V$ a topological vector space and every $p \in \mathcal{P}$ continuous. It is Hausdorff if and only if for every $x \neq 0$ there is $p \in \mathcal{P}$ with $p(x) \neq 0$. A topological vector space is **locally convex**, meaning that every point has a neighbourhood basis of convex sets, exactly when its topology arises from a family of seminorms.
 
-*Proof.* The sets described form a neighbourhood basis for a group topology with the stated continuity; Hausdorffness is the separation statement, and the converse direction is a standard reconstruction of seminorms from a locally convex topology by gauge functions. $\square$
+*Proof.* The sets described form a neighbourhood basis for a group topology with the stated continuity; Hausdorffness is the separation statement, and the converse direction is a standard reconstruction of seminorms from a locally convex topology by gauge functions.
 
 ### Fréchet Spaces
 
@@ -139,7 +139,7 @@ is profinite, with $\mathbb{Z}$ dense in it.
 
 **Proposition.** A finite-dimensional Hausdorff topological vector space over a complete valued field is isomorphic as a topological vector space to $K^n$ with the product topology, and every linear map between finite-dimensional Hausdorff topological vector spaces is continuous. In particular every norm on a finite-dimensional space induces the same topology.
 
-*Proof.* Choose a basis and compare the given topology with the product topology: the coordinate functionals are continuous, the unit sphere is compact, and the standard argument of the equivalence of norms applies; the details belong to the companion article on normed and Banach spaces. $\square$
+*Proof.* Choose a basis and compare the given topology with the product topology: the coordinate functionals are continuous, the unit sphere is compact, and the standard argument of the equivalence of norms applies; the details belong to the companion article on normed and Banach spaces.
 
 ## Summary
 

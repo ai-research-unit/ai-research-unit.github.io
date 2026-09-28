@@ -19,7 +19,7 @@ From the closure axioms everything else follows: an algebra is closed under fini
 
 **Theorem (monotone class theorem).** If $\mathcal{A}_0$ is an algebra of subsets of $X$, then the smallest $\sigma$-algebra containing $\mathcal{A}_0$ equals the smallest monotone class containing $\mathcal{A}_0$. Equivalently, the smallest Dynkin system containing a $\pi$-system coincides with the $\sigma$-algebra it generates.
 
-**Proof sketch.** A monotone class that is an algebra is a $\sigma$-algebra, because a countable union can be written as an increasing union of finite unions. The smallest monotone class $\mathcal{M}$ containing the algebra $\mathcal{A}_0$ is therefore shown to be an algebra by the standard $\mathcal{A}_0$-first, then $X$-first, argument: fix $A$, show $\{B \in \mathcal{M} : A \cap B \in \mathcal{M}\}$ is a monotone class containing $\mathcal{A}_0$ when $A \in \mathcal{A}_0$, then repeat for general $A \in \mathcal{M}$. The Dynkin version is the same argument with disjoint unions in place of unions. $\square$
+**Proof sketch.** A monotone class that is an algebra is a $\sigma$-algebra, because a countable union can be written as an increasing union of finite unions. The smallest monotone class $\mathcal{M}$ containing the algebra $\mathcal{A}_0$ is therefore shown to be an algebra by the standard $\mathcal{A}_0$-first, then $X$-first, argument: fix $A$, show $\{B \in \mathcal{M} : A \cap B \in \mathcal{M}\}$ is a monotone class containing $\mathcal{A}_0$ when $A \in \mathcal{A}_0$, then repeat for general $A \in \mathcal{M}$. The Dynkin version is the same argument with disjoint unions in place of unions.
 
 **Corollary (uniqueness device).** If two measures agree on a $\pi$-system that generates $\mathcal{A}$ and are $\sigma$-finite on it, then they agree on $\mathcal{A}$.
 
@@ -47,7 +47,7 @@ This property is **$\sigma$-additivity**. A measure is **finite** if $\mu(X) < \
 
 **(d)** continuity from above: if $A_1 \supseteq A_2 \supseteq \cdots$ and $\mu(A_1) < \infty$ then $\mu(\bigcap_n A_n) = \lim_n \mu(A_n)$.
 
-**Proof.** (a) $B = A \sqcup (B \setminus A)$. (b) Disjointify: $B_n = A_n \setminus \bigcup_{k<n} A_k$. (c) Write $\bigcup_n A_n = A_1 \sqcup \bigsqcup_{n \geq 1} (A_{n+1} \setminus A_n)$ and apply $\sigma$-additivity. (d) Apply (c) to $A_1 \setminus A_n$, using $\mu(A_1) < \infty$ to subtract. $\square$
+**Proof.** (a) $B = A \sqcup (B \setminus A)$. (b) Disjointify: $B_n = A_n \setminus \bigcup_{k<n} A_k$. (c) Write $\bigcup_n A_n = A_1 \sqcup \bigsqcup_{n \geq 1} (A_{n+1} \setminus A_n)$ and apply $\sigma$-additivity. (d) Apply (c) to $A_1 \setminus A_n$, using $\mu(A_1) < \infty$ to subtract.
 
 The finiteness hypothesis in (d) is necessary: on $\mathbb{N}$ with counting measure the sets $A_n = \{n, n+1, \ldots\}$ decrease to $\emptyset$ but have infinite measure throughout.
 
@@ -71,7 +71,7 @@ $$
 \mu^*(E) \geq \mu^*(E \cap A \cap B) + \mu^*(E \cap A \setminus B) + \mu^*(E \setminus A) \geq \mu^*(E \cap (A \cup B)) + \mu^*(E \setminus (A \cup B)),
 $$
 
-so $A \cup B \in \mathcal{A}$, and by induction $\mathcal{A}$ is closed under finite unions. For a disjoint sequence $(A_n) \subseteq \mathcal{A}$ and $E \subseteq X$, iterating the defining identity gives $\sum_{n \leq N} \mu^*(E \cap A_n) \leq \mu^*(E)$, and letting $N \to \infty$ and using subadditivity gives the countable case; completeness follows because a null set $A$ satisfies the Carathéodory condition trivially. $\square$
+so $A \cup B \in \mathcal{A}$, and by induction $\mathcal{A}$ is closed under finite unions. For a disjoint sequence $(A_n) \subseteq \mathcal{A}$ and $E \subseteq X$, iterating the defining identity gives $\sum_{n \leq N} \mu^*(E \cap A_n) \leq \mu^*(E)$, and letting $N \to \infty$ and using subadditivity gives the countable case; completeness follows because a null set $A$ satisfies the Carathéodory condition trivially.
 
 **Definition.** A **premeasure** on an algebra $\mathcal{A}_0$ is a function $\mu_0 : \mathcal{A}_0 \to [0,\infty]$ that is $\sigma$-additive on $\mathcal{A}_0$ and satisfies $\mu_0(\emptyset) = 0$. It induces an outer measure by
 
@@ -81,13 +81,13 @@ $$
 
 **Theorem (Carathéodory extension).** If $\mu_0$ is a premeasure on an algebra $\mathcal{A}_0$, then $\mu_0$ extends to a measure on $\sigma(\mathcal{A}_0)$, and the extension is unique when $\mu_0$ is $\sigma$-finite.
 
-**Proof sketch.** The induced $\mu^*$ is an outer measure agreeing with $\mu_0$ on $\mathcal{A}_0$. By the previous theorem, $\mu^*$ restricts to a measure on a $\sigma$-algebra containing $\mathcal{A}_0$; the uniqueness follows from the corollary to the monotone class theorem, since the family on which two $\sigma$-finite extensions agree is a Dynkin system containing the $\pi$-system $\mathcal{A}_0$. $\square$
+**Proof sketch.** The induced $\mu^*$ is an outer measure agreeing with $\mu_0$ on $\mathcal{A}_0$. By the previous theorem, $\mu^*$ restricts to a measure on a $\sigma$-algebra containing $\mathcal{A}_0$; the uniqueness follows from the corollary to the monotone class theorem, since the family on which two $\sigma$-finite extensions agree is a Dynkin system containing the $\pi$-system $\mathcal{A}_0$.
 
 **Example (Lebesgue measure).** On $\mathbb{R}^n$ let $\mathcal{A}_0$ be the algebra of finite disjoint unions of boxes $\prod_{i=1}^n (a_i, b_i]$, and let $\mu_0$ be the volume $\prod_i (b_i - a_i)$. This is a premeasure, so it extends to a measure $\lambda^n$ on the Borel $\sigma$-algebra, and its completion is **Lebesgue measure**. It is translation-invariant, $\lambda^n(Q) = \prod_i (b_i - a_i)$ for a box, and $\sigma$-finite; on $\mathbb{R}$ it is, up to a positive scalar, the unique translation-invariant Borel measure, the scalar being fixed by the normalisation $\lambda([0,1]) = 1$.
 
 **Theorem (non-measurability).** There exists a subset of $\mathbb{R}$ that is not Lebesgue measurable.
 
-**Proof.** On $[0,1)$ consider the equivalence relation $x \sim y \iff x - y \in \mathbb{Q}$; by the axiom of choice choose one representative from each class and let $V$ be the resulting set. Enumerate the rationals in $[-1,1)$ as $q_1, q_2, \ldots$; the translates $V + q_n$ are pairwise disjoint, since a common point of $V + q_m$ and $V + q_n$ would give $v - v' = q_n - q_m \in \mathbb{Q}$ with $v, v' \in V$, forcing $v = v'$ and hence $q_m = q_n$. Their union contains $[0,1)$, because each $x \in [0,1)$ differs from the representative $v$ of its class by a rational in $[-1,1)$, and their union is contained in $[-1,2)$ because $V \subseteq [0,1)$ and $|q_n| < 1$. If $V$ were measurable of measure $a$, translation invariance would give $\lambda(\bigcup_n (V + q_n)) = \sum_n a$, a series that is $0$ if $a = 0$ and $+\infty$ otherwise and therefore never lies in $[1, 3]$, contradicting the containment. Hence no such $a$ exists and $V$ is not Lebesgue measurable. $\square$
+**Proof.** On $[0,1)$ consider the equivalence relation $x \sim y \iff x - y \in \mathbb{Q}$; by the axiom of choice choose one representative from each class and let $V$ be the resulting set. Enumerate the rationals in $[-1,1)$ as $q_1, q_2, \ldots$; the translates $V + q_n$ are pairwise disjoint, since a common point of $V + q_m$ and $V + q_n$ would give $v - v' = q_n - q_m \in \mathbb{Q}$ with $v, v' \in V$, forcing $v = v'$ and hence $q_m = q_n$. Their union contains $[0,1)$, because each $x \in [0,1)$ differs from the representative $v$ of its class by a rational in $[-1,1)$, and their union is contained in $[-1,2)$ because $V \subseteq [0,1)$ and $|q_n| < 1$. If $V$ were measurable of measure $a$, translation invariance would give $\lambda(\bigcup_n (V + q_n)) = \sum_n a$, a series that is $0$ if $a = 0$ and $+\infty$ otherwise and therefore never lies in $[1, 3]$, contradicting the containment. Hence no such $a$ exists and $V$ is not Lebesgue measurable.
 
 The example shows that a $\sigma$-algebra of measurable sets cannot be all of $\mathcal{P}(\mathbb{R})$ if translation invariance and the interval volume are demanded. It also shows why measurability is a hypothesis in the theorems below and cannot be dropped.
 
@@ -105,7 +105,7 @@ The example shows that a $\sigma$-algebra of measurable sets cannot be all of $\
 
 **(c)** if $f$ is measurable and $\Phi : \mathbb{K} \to \mathbb{K}$ is continuous, then $\Phi \circ f$ is measurable.
 
-**Proof.** For (a) it suffices to show that $(f,g) : X \to \mathbb{K}^2$ is measurable: the preimage of a basic rectangle is the intersection of the preimages of the factors, and the open sets of $\mathbb{K}^2$ are countable unions of rectangles. Then use the continuity of $(x,y)\mapsto x+y$ and $(x,y)\mapsto xy$ and part (c). For (b), $\{\sup_n f_n \leq a\} = \bigcap_n \{f_n \leq a\}$ and $\{\limsup f_n \leq a\} = \bigcap_m \bigcup_n \bigcap_{k \geq n}\{f_k < a + 1/m\}$. For (c), $(\Phi \circ f)^{-1}(U) = f^{-1}(\Phi^{-1}(U))$ with $\Phi^{-1}(U)$ open. $\square$
+**Proof.** For (a) it suffices to show that $(f,g) : X \to \mathbb{K}^2$ is measurable: the preimage of a basic rectangle is the intersection of the preimages of the factors, and the open sets of $\mathbb{K}^2$ are countable unions of rectangles. Then use the continuity of $(x,y)\mapsto x+y$ and $(x,y)\mapsto xy$ and part (c). For (b), $\{\sup_n f_n \leq a\} = \bigcap_n \{f_n \leq a\}$ and $\{\limsup f_n \leq a\} = \bigcap_m \bigcup_n \bigcap_{k \geq n}\{f_k < a + 1/m\}$. For (c), $(\Phi \circ f)^{-1}(U) = f^{-1}(\Phi^{-1}(U))$ with $\Phi^{-1}(U)$ open.
 
 **Definition.** A **simple function** is a finite linear combination $s = \sum_{i=1}^n c_i \mathbf{1}_{A_i}$ with $c_i \in \mathbb{K}$ and $A_i$ measurable; the canonical representation uses disjoint $A_i$ with distinct nonzero $c_i$. A property holds **almost everywhere** with respect to $\mu$ (abbreviated $\mu$-a.e.) if it fails only on a set of $\mu$-measure $0$. Two functions are **equal a.e.** if their difference is $0$ a.e.
 
@@ -117,7 +117,7 @@ $$
 s_n = \sum_{k=1}^{n2^n} \frac{k-1}{2^n} \, \mathbf{1}_{E_{n,k}} + n \, \mathbf{1}_{\{f \geq n\}}.
 $$
 
-Each $s_n$ is simple, $s_n \leq f$, and $s_n \uparrow f$ pointwise. If $f$ is bounded with $f \leq M$ and $n > M$, the last term vanishes and $f - s_n < 2^{-n}$ on every $E_{n,k}$, so $\|f - s_n\|_\infty \leq 2^{-n}$. $\square$
+Each $s_n$ is simple, $s_n \leq f$, and $s_n \uparrow f$ pointwise. If $f$ is bounded with $f \leq M$ and $n > M$, the last term vanishes and $f - s_n < 2^{-n}$ on every $E_{n,k}$, so $\|f - s_n\|_\infty \leq 2^{-n}$.
 
 ### Modes of Convergence
 
@@ -125,7 +125,7 @@ Each $s_n$ is simple, $s_n \leq f$, and $s_n \uparrow f$ pointwise. If $f$ is bo
 
 **Theorem (Egorov).** If $\mu(X) < \infty$ and $f_n \to f$ a.e., then $f_n \to f$ almost uniformly, and hence in measure.
 
-**Proof.** For $\epsilon > 0$ and $k \in \mathbb{N}$ put $E_{n,k} = \bigcup_{m \geq n}\{|f_m - f| > 1/k\}$; by a.e. convergence the decreasing family decreases to a null set, so $\mu(E_{n,k}) \to 0$ as $n \to \infty$. Choose $n_k$ with $\mu(E_{n_k, k}) < \epsilon/2^k$ and set $E = \bigcup_k E_{n_k,k}$, of measure $< \epsilon$; on the complement, $|f_m - f| \leq 1/k$ for $m \geq n_k$, so the convergence is uniform. $\square$
+**Proof.** For $\epsilon > 0$ and $k \in \mathbb{N}$ put $E_{n,k} = \bigcup_{m \geq n}\{|f_m - f| > 1/k\}$; by a.e. convergence the decreasing family decreases to a null set, so $\mu(E_{n,k}) \to 0$ as $n \to \infty$. Choose $n_k$ with $\mu(E_{n_k, k}) < \epsilon/2^k$ and set $E = \bigcup_k E_{n_k,k}$, of measure $< \epsilon$; on the complement, $|f_m - f| \leq 1/k$ for $m \geq n_k$, so the convergence is uniform.
 
 **Theorem (Lusin).** Let $X$ be a locally compact Hausdorff space with a regular Borel measure $\mu$, finite on compacts, and let $f$ be measurable with $\mu(X) < \infty$. Then for every $\epsilon > 0$ there is a compact set $K$ with $\mu(X \setminus K) < \epsilon$ such that $f|_K$ is continuous.
 
@@ -133,7 +133,7 @@ The theorems of Egorov and Lusin are the two standard statements that measure-th
 
 **Theorem (convergence in measure, partial converses).** Convergence in measure implies a.e. convergence of a subsequence. If $\mu(X) < \infty$, a.e. convergence implies convergence in measure but not conversely: the indicator functions of the dyadic intervals $[k/2^m, (k+1)/2^m) \subseteq [0,1]$, enumerated with $m$ increasing and, for fixed $m$, $k$ running from $0$ to $2^m - 1$, converge to $0$ in measure on $[0,1]$, since the length of the $n$-th interval tends to $0$, but at every point of $[0,1)$ the values are $1$ for infinitely many $n$ and $0$ for infinitely many $n$, so there is no pointwise limit.
 
-**Proof.** If $f_n \to f$ in measure, choose $n_k$ with $\mu(\{|f_{n_k} - f| > 2^{-k}\}) < 2^{-k}$; the Borel–Cantelli lemma makes the limsup of these sets null, so $f_{n_k} \to f$ a.e. With $\mu(X) < \infty$, a.e. convergence gives convergence in measure by Egorov's theorem, and the sliding dyadic intervals show that the converse fails even in a probability space. $\square$
+**Proof.** If $f_n \to f$ in measure, choose $n_k$ with $\mu(\{|f_{n_k} - f| > 2^{-k}\}) < 2^{-k}$; the Borel–Cantelli lemma makes the limsup of these sets null, so $f_{n_k} \to f$ a.e. With $\mu(X) < \infty$, a.e. convergence gives convergence in measure by Egorov's theorem, and the sliding dyadic intervals show that the converse fails even in a probability space.
 
 ## Integration
 
@@ -159,7 +159,7 @@ $$
 f \leq g \Rightarrow \int f \leq \int g, \qquad \int (\alpha f + g) = \alpha \int f + \int g \quad (\alpha \geq 0), \qquad \int f \, d\mu = 0 \text{ if } f = 0 \text{ a.e.}
 $$
 
-**Proof.** Each statement is first checked on simple functions, where it is the additivity and monotonicity of the finite sum, and then passed to the supremum over $s \leq f$; the last uses that $\{f > 0\} = \bigcup_n \{f > 1/n\}$ is a countable union of null sets when $f = 0$ a.e. $\square$
+**Proof.** Each statement is first checked on simple functions, where it is the additivity and monotonicity of the finite sum, and then passed to the supremum over $s \leq f$; the last uses that $\{f > 0\} = \bigcup_n \{f > 1/n\}$ is a countable union of null sets when $f = 0$ a.e.
 
 ### The Convergence Theorems
 
@@ -171,7 +171,7 @@ $$
 
 the common value being finite or $+\infty$.
 
-**Proof sketch.** The inequality $\geq$ is monotonicity. For $\leq$, let $s$ be simple with $0 \leq s \leq f$ and fix $c \in (0,1)$; the measurable sets $E_n = \{f_n \geq c\,s\}$ increase to $X$, so by continuity from below $\int c s \mathbf{1}_{E_n} \to \int c s$, and $\int f_n \geq \int c s \mathbf{1}_{E_n}$; let $c \uparrow 1$. $\square$
+**Proof sketch.** The inequality $\geq$ is monotonicity. For $\leq$, let $s$ be simple with $0 \leq s \leq f$ and fix $c \in (0,1)$; the measurable sets $E_n = \{f_n \geq c\,s\}$ increase to $X$, so by continuity from below $\int c s \mathbf{1}_{E_n} \to \int c s$, and $\int f_n \geq \int c s \mathbf{1}_{E_n}$; let $c \uparrow 1$.
 
 **Theorem (Fatou's lemma).** For nonnegative measurable $f_n$,
 
@@ -179,7 +179,7 @@ $$
 \int_X \liminf_{n \to \infty} f_n \, d\mu \leq \liminf_{n \to \infty} \int_X f_n \, d\mu.
 $$
 
-**Proof.** Apply monotone convergence to the increasing sequence $g_n = \inf_{k \geq n} f_k$, whose integral is at most $\int f_k$ for every $k \geq n$, hence at most the liminf. $\square$
+**Proof.** Apply monotone convergence to the increasing sequence $g_n = \inf_{k \geq n} f_k$, whose integral is at most $\int f_k$ for every $k \geq n$, hence at most the liminf.
 
 **Theorem (dominated convergence).** Let $f_n, f$ be measurable with $f_n \to f$ a.e. Suppose there is an integrable $g$ with $|f_n| \leq g$ a.e. for all $n$. Then $f$ is integrable and
 
@@ -187,11 +187,11 @@ $$
 \lim_{n \to \infty} \int_X f_n \, d\mu = \int_X f \, d\mu, \qquad \lim_{n \to \infty} \int_X |f_n - f| \, d\mu = 0.
 $$
 
-**Proof.** Apply Fatou to $g + f_n$ and to $g - f_n$ to get $\int f \leq \liminf \int f_n$ and $\int f \geq \limsup \int f_n$; hence $\int f_n \to \int f$. Applying the same conclusion to $|f_n - f|$, bounded by $2g$, gives the second statement. $\square$
+**Proof.** Apply Fatou to $g + f_n$ and to $g - f_n$ to get $\int f \leq \liminf \int f_n$ and $\int f \geq \limsup \int f_n$; hence $\int f_n \to \int f$. Applying the same conclusion to $|f_n - f|$, bounded by $2g$, gives the second statement.
 
 **Theorem (linearity).** If $f, g$ are integrable and $\alpha, \beta \in \mathbb{R}$ (or $\mathbb{C}$), then $\alpha f + \beta g$ is integrable and $\int (\alpha f + \beta g) = \alpha \int f + \beta \int g$.
 
-**Proof.** Reduce to nonnegative functions and use monotone convergence on approximations by simple functions; the complex case is by real and imaginary parts. $\square$
+**Proof.** Reduce to nonnegative functions and use monotone convergence on approximations by simple functions; the complex case is by real and imaginary parts.
 
 ### Comparison with the Riemann Integral and $L^p$ Spaces
 
@@ -225,7 +225,7 @@ the **product measure**; on $\mathbb{R}^{m+n}$ it gives $\lambda^{m+n} = \lambda
 
 **Theorem (sections).** Let $E \in \mathcal{A} \otimes \mathcal{B}$. Then the section $E_x = \{y : (x, y) \in E\}$ is in $\mathcal{B}$ for every $x$, the section $E^y = \{x : (x,y) \in E\}$ is in $\mathcal{A}$ for every $y$, and $x \mapsto \nu(E_x)$, $y \mapsto \mu(E^y)$ are measurable.
 
-**Proof sketch.** The family of $E$ for which the conclusion holds is a Dynkin system containing the rectangles, so it is all of $\mathcal{A} \otimes \mathcal{B}$; the measurability of the section function is proved by the monotone class argument applied to the simple functions approximating $\mathbf{1}_E$. $\square$
+**Proof sketch.** The family of $E$ for which the conclusion holds is a Dynkin system containing the rectangles, so it is all of $\mathcal{A} \otimes \mathcal{B}$; the measurability of the section function is proved by the monotone class argument applied to the simple functions approximating $\mathbf{1}_E$.
 
 ### The Theorems of Fubini and Tonelli
 
@@ -239,7 +239,7 @@ all three quantities being finite or infinite together.
 
 **Theorem (Fubini).** Let $f \in L^1(\mu \otimes \nu)$. Then $f(x, \cdot) \in L^1(\nu)$ for a.e. $x$, $f(\cdot, y) \in L^1(\mu)$ for a.e. $y$, the iterated integrals are finite, and the same equality as in Tonelli holds.
 
-**Proof sketch.** Tonelli is proved for indicator functions by the section theorem, extended to simple functions by linearity, to nonnegative functions by monotone convergence, and to $L^1$ functions by applying Tonelli to $f^+$ and $f^-$. Fubini reduces to Tonelli applied to $|f|$, which shows the iterated integrability and justifies the subtraction; the conditional qualifications are null-set exceptions. $\square$
+**Proof sketch.** Tonelli is proved for indicator functions by the section theorem, extended to simple functions by linearity, to nonnegative functions by monotone convergence, and to $L^1$ functions by applying Tonelli to $f^+$ and $f^-$. Fubini reduces to Tonelli applied to $|f|$, which shows the iterated integrability and justifies the subtraction; the conditional qualifications are null-set exceptions.
 
 For a nonnegative function Tonelli needs no integrability hypothesis and is the practical tool; Fubini needs $\int |f| < \infty$, and without it the iterated integrals may differ, as the standard example on $(0,1)^2$ of a function whose integrals have opposite signs shows. The pair is the basis of the convolution of measures and functions:
 
@@ -257,7 +257,7 @@ defined for measures on a locally compact abelian group, and, at the level of de
 
 **Theorem (Hahn decomposition).** Let $\nu$ be a signed measure. Then there exist a positive set $P$ and a negative set $N$, disjoint with $P \cup N = X$; the decomposition is unique up to null sets.
 
-**Proof sketch.** Replacing $\nu$ by $-\nu$ if necessary, assume $\nu$ omits $+\infty$, so that $c = \sup\{\nu(A) : A \in \mathcal{A}\}$ is finite; choose $A_n$ with $\nu(A_n) \to c$. Discarding from $A_n$ a negative subset of as large a magnitude as possible before passing to the next index, as in the standard construction, produces a set $P$ with $\nu(P) = c$: a measurable subset of $P$ of negative measure could be removed from it to increase $\nu$ beyond $c$, and a measurable subset of $X \setminus P$ of positive measure could be added to it, so $P$ is positive and $N = X \setminus P$ is negative. Uniqueness is immediate from the definition of a null set. $\square$
+**Proof sketch.** Replacing $\nu$ by $-\nu$ if necessary, assume $\nu$ omits $+\infty$, so that $c = \sup\{\nu(A) : A \in \mathcal{A}\}$ is finite; choose $A_n$ with $\nu(A_n) \to c$. Discarding from $A_n$ a negative subset of as large a magnitude as possible before passing to the next index, as in the standard construction, produces a set $P$ with $\nu(P) = c$: a measurable subset of $P$ of negative measure could be removed from it to increase $\nu$ beyond $c$, and a measurable subset of $X \setminus P$ of positive measure could be added to it, so $P$ is positive and $N = X \setminus P$ is negative. Uniqueness is immediate from the definition of a null set.
 
 **Theorem (Jordan decomposition).** Every signed measure $\nu$ has a unique expression $\nu = \nu^+ - \nu^-$ with $\nu^+, \nu^-$ mutually singular measures, $|\nu| = \nu^+ + \nu^-$ the total variation.
 
@@ -275,11 +275,11 @@ $$
 
 The function $h$ is the **Radon–Nikodym derivative**, written $h = d\nu/d\mu$; it is integrable exactly when $\nu$ is finite.
 
-**Proof sketch.** Assume $\mu, \nu$ finite and $\nu$ nonnegative, and put $\lambda = \mu + \nu$. Since $\nu \leq \lambda$, the functional $f \mapsto \int f \, d\nu$ is bounded on $L^2(\lambda)$ with norm at most $\lambda(X)^{1/2}$, so by the Riesz representation theorem there is $g \in L^2(\lambda)$ with $\int f \, d\nu = \int f g \, d\lambda$ for every $f \in L^2(\lambda)$. Testing on indicators, which lie in $L^2(\lambda)$ because $\lambda$ is finite, gives $\nu = g \lambda$ and hence $\mu = \lambda - \nu = (1 - g)\lambda$; since $\nu \geq 0$ and $\nu \leq \lambda$ one has $0 \leq g \leq 1$ $\lambda$-a.e., and $\mu(\{g = 1\}) = \int_{\{g=1\}} (1 - g) \, d\lambda = 0$. On $\{g < 1\}$ the two identities combine into $\nu(A) = \int_A \frac{g}{1-g} \, d\mu$, and the hypothesis $\nu \ll \mu$ makes the exceptional set $\{g = 1\}$, being $\mu$-null, also $\nu$-null; so $h = g/(1-g)$ on $\{g < 1\}$ and $h$ arbitrary on $\{g = 1\}$ has $\nu(A) = \int_A h \, d\mu$. Uniqueness is immediate, and the $\sigma$-finite case follows by exhausting $X$ by sets of finite measure. $\square$
+**Proof sketch.** Assume $\mu, \nu$ finite and $\nu$ nonnegative, and put $\lambda = \mu + \nu$. Since $\nu \leq \lambda$, the functional $f \mapsto \int f \, d\nu$ is bounded on $L^2(\lambda)$ with norm at most $\lambda(X)^{1/2}$, so by the Riesz representation theorem there is $g \in L^2(\lambda)$ with $\int f \, d\nu = \int f g \, d\lambda$ for every $f \in L^2(\lambda)$. Testing on indicators, which lie in $L^2(\lambda)$ because $\lambda$ is finite, gives $\nu = g \lambda$ and hence $\mu = \lambda - \nu = (1 - g)\lambda$; since $\nu \geq 0$ and $\nu \leq \lambda$ one has $0 \leq g \leq 1$ $\lambda$-a.e., and $\mu(\{g = 1\}) = \int_{\{g=1\}} (1 - g) \, d\lambda = 0$. On $\{g < 1\}$ the two identities combine into $\nu(A) = \int_A \frac{g}{1-g} \, d\mu$, and the hypothesis $\nu \ll \mu$ makes the exceptional set $\{g = 1\}$, being $\mu$-null, also $\nu$-null; so $h = g/(1-g)$ on $\{g < 1\}$ and $h$ arbitrary on $\{g = 1\}$ has $\nu(A) = \int_A h \, d\mu$. Uniqueness is immediate, and the $\sigma$-finite case follows by exhausting $X$ by sets of finite measure.
 
 **Theorem (Lebesgue decomposition).** Let $\mu, \nu$ be $\sigma$-finite measures. Then there are unique measures $\nu_{\mathrm{ac}} \ll \mu$ and $\nu_{\mathrm{s}}$ with $\nu_{\mathrm{s}} \perp \mu$ such that $\nu = \nu_{\mathrm{ac}} + \nu_{\mathrm{s}}$.
 
-**Proof sketch.** In the finite case use the function $g \in L^2(\mu + \nu)$ of the preceding proof: put $\nu_{\mathrm{ac}}(A) = \nu(A \cap \{g < 1\})$ and $\nu_{\mathrm{s}}(A) = \nu(A \cap \{g = 1\})$. Then $\nu = \nu_{\mathrm{ac}} + \nu_{\mathrm{s}}$, and $\nu_{\mathrm{ac}} \ll \mu$ because on $\{g < 1\}$ the measure $\nu$ has the density $g/(1-g)$ with respect to $\mu$, while $\nu_{\mathrm{s}} \perp \mu$ because $\mu(\{g = 1\}) = 0$. The $\sigma$-finite case follows by exhausting $X$ by sets of finite measure. $\square$
+**Proof sketch.** In the finite case use the function $g \in L^2(\mu + \nu)$ of the preceding proof: put $\nu_{\mathrm{ac}}(A) = \nu(A \cap \{g < 1\})$ and $\nu_{\mathrm{s}}(A) = \nu(A \cap \{g = 1\})$. Then $\nu = \nu_{\mathrm{ac}} + \nu_{\mathrm{s}}$, and $\nu_{\mathrm{ac}} \ll \mu$ because on $\{g < 1\}$ the measure $\nu$ has the density $g/(1-g)$ with respect to $\mu$, while $\nu_{\mathrm{s}} \perp \mu$ because $\mu(\{g = 1\}) = 0$. The $\sigma$-finite case follows by exhausting $X$ by sets of finite measure.
 
 **Theorem (fundamental theorem of calculus for the Lebesgue integral).** If $f \in L^1([a,b])$ then $F(x) = \int_a^x f$ is differentiable a.e. with $F' = f$ a.e.; conversely if $F$ is absolutely continuous on $[a,b]$ then $F' \in L^1$ and $F(x) - F(a) = \int_a^x F'$. A function is absolutely continuous exactly when it is the integral of its derivative, and the three conditions — absolutely continuous, an indefinite integral of an $L^1$ function, and continuous of bounded variation with the Lusin property — are equivalent.
 

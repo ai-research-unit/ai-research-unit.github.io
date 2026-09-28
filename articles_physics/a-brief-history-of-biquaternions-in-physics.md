@@ -92,7 +92,7 @@ A terminological caution is necessary, because the word "biquaternion" has not b
 
 The algebra and its subspaces are established in the companion articles and are recalled here only in the form the history needs. The notation is inherited, not redefined.
 
-$\mathbb{B}$ is four-dimensional over $\mathbb{C}$ and eight-dimensional over $\mathbb{R}$. Its four natural conjugations have as fixed-point sets the distinguished real subspaces used throughout the corpus: the complex subspace $\mathbb{C}_{\mathbb{B}}$ (the complex scalars, the center of $\mathbb{B}$), the quaternion subspace $\mathbb{H}_{\mathbb{B}}$ (the real quaternions), the Hermitian subspace $\mathbb{M}_{+}$ (real scalar part, imaginary vector part, the informational sector), and the anti-Hermitian subspace $\mathbb{M}_{-}$ (imaginary scalar part, real vector part, the material sector). The natural quadratic form is the norm form
+$\mathbb{B}$ is four-dimensional over $\mathbb{C}$ and eight-dimensional over $\mathbb{R}$. Its four natural conjugations have as fixed-point sets the distinguished real subspaces used throughout the corpus: the complex subspace $\mathbb{C}_{\mathbb{B}}$ (the complex scalars, the center of $\mathbb{B}$), the quaternion subspace $\mathbb{H}_{\mathbb{B}}$ (the real quaternions), the Hermitian subspace $\mathbb{M}_{+}$ (real scalar part, imaginary vector part, the informational sector), and the anti-Hermitian subspace $\mathbb{M}_{-}$ (imaginary scalar part, real vector part, the material sector). The natural quadratic form is the biquaternion norm
 
 $$
 N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_{\mu=0}^{3} Q_\mu^2 ,
@@ -106,7 +106,7 @@ $$
 \mathbb{B} \;\cong\; M_2(\mathbb{C}) ,
 $$
 
-realized by sending the quaternion units to $-i$ times the Pauli matrices, $e_k \mapsto -i\sigma_k$. Equivalently, $\mathbb{B}$ is the real Clifford algebra $Cl_{3,0}(\mathbb{R})$ — the **Pauli algebra** — and the even subalgebra of the spacetime algebra $Cl_{1,3}$. Under this isomorphism the norm form is the determinant, $N(\tilde{Q}) = \det\Phi(\tilde{Q})$, and the unit-norm-form elements
+realized by sending the quaternion units to $-i$ times the Pauli matrices, $e_k \mapsto -i\sigma_k$. Equivalently, $\mathbb{B}$ is the real Clifford algebra $Cl_{3,0}(\mathbb{R})$ — the **Pauli algebra** — and the even subalgebra of the spacetime algebra $Cl_{1,3}$. Under this isomorphism the biquaternion norm is the determinant, $N(\tilde{Q}) = \det\Phi(\tilde{Q})$, and the unit-norm elements
 
 $$
 SL(2,\mathbb{C}) = \{\tilde{\Lambda} \in \mathbb{B} : \tilde{\Lambda}\bar{\tilde{\Lambda}} = e_0\}
@@ -132,7 +132,7 @@ This part of the story concerns real quaternions and their vector parts almost e
 
 Special relativity is where the biquaternions came closest to becoming a standard physical language, and the closeness is structural before it is historical.
 
-The structural fact is recorded above: the unit-norm-form biquaternions are $SL(2,\mathbb{C})$, the double cover of the Lorentz group, and they act on the four-dimensional real space $\mathbb{M}_{-}$ by rotor conjugation. A four-vector of relativistic physics is an element of $\mathbb{M}_{-}$; a Lorentz transformation is a unit biquaternion; the invariance of the interval is the invariance of the norm form under the action. The biquaternion algebra therefore contained the kinematics of special relativity as soon as the physics was written down — not because anyone looked for it there, but because the group of unit biquaternions had sat inside Hamilton's algebra since the 1840s.
+The structural fact is recorded above: the unit-norm biquaternions are $SL(2,\mathbb{C})$, the double cover of the Lorentz group, and they act on the four-dimensional real space $\mathbb{M}_{-}$ by rotor conjugation. A four-vector of relativistic physics is an element of $\mathbb{M}_{-}$; a Lorentz transformation is a unit biquaternion; the invariance of the interval is the invariance of the biquaternion norm under the action. The biquaternion algebra therefore contained the kinematics of special relativity as soon as the physics was written down — not because anyone looked for it there, but because the group of unit biquaternions had sat inside Hamilton's algebra since the 1840s.
 
 The historical record then shows that this formulation was published, not merely available. Arthur W. Conway applied biquaternion algebra to special relativity, publishing an article in 1911 and in 1912 asserting priority over Ludwik Silberstein, who had independently applied biquaternions to relativity; Conway's claim was later backed by George Temple, and in 1915 Conway published a 43-page tract, *Relativity*, in Edinburgh. Silberstein's treatment appeared as "Quaternionic form of relativity" (*Philosophical Magazine* **23** (1912) 790–809), with a second memoir in 1913, and it became a textbook: *The Theory of Relativity* (Macmillan, 1914; second edition, 1924), which used biquaternions throughout. Silberstein had also introduced, in 1907, the complex three-vector $\mathbf{E} + ic\mathbf{B}$ of the electromagnetic field — now called the **Riemann–Silberstein vector**. The corpus's Maxwell article writes the same object, up to a normalisation, as $i\sqrt{\epsilon}\,\mathbf{E}-\sqrt{\mu}\,\mathbf{H}$. (The attribution of the name's "Riemann" to Bernhard Riemann I have not verified; the 1907 introduction is Silberstein's. This is flagged in the companion.)
 
@@ -184,7 +184,7 @@ The distinction on which this turns is between an algebra **containing** a struc
 
 ## Summary
 
-The biquaternions are the complex quaternions, $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, introduced and named by Hamilton and treated at length in his *Lectures on Quaternions* (1853). The motive for the complexification was algebraic: in $\mathbb{H}$ a quadratic equation has no quadratic formula, its solution set need not be finite, and its resolution can call for a scalar square root of $-1$ — that is, for complex coefficients. As an algebra the biquaternions are $M_2(\mathbb{C})$, equivalently the Pauli algebra $Cl_{3,0}(\mathbb{R})$ and the even subalgebra of the spacetime algebra $Cl_{1,3}$. Their unit-norm-form elements are $SL(2,\mathbb{C})$, the double cover of the Lorentz group, acting on the material sector $\mathbb{M}_{-}$ by rotor conjugation; the full algebra $\mathbb{B}\cong M_2(\mathbb{C})$ is the operator algebra of a two-state system, of which $\mathbb{M}_{+}$ is the Hermitian subspace.
+The biquaternions are the complex quaternions, $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, introduced and named by Hamilton and treated at length in his *Lectures on Quaternions* (1853). The motive for the complexification was algebraic: in $\mathbb{H}$ a quadratic equation has no quadratic formula, its solution set need not be finite, and its resolution can call for a scalar square root of $-1$ — that is, for complex coefficients. As an algebra the biquaternions are $M_2(\mathbb{C})$, equivalently the Pauli algebra $Cl_{3,0}(\mathbb{R})$ and the even subalgebra of the spacetime algebra $Cl_{1,3}$. Their unit-norm elements are $SL(2,\mathbb{C})$, the double cover of the Lorentz group, acting on the material sector $\mathbb{M}_{-}$ by rotor conjugation; the full algebra $\mathbb{B}\cong M_2(\mathbb{C})$ is the operator algebra of a two-state system, of which $\mathbb{M}_{+}$ is the Hermitian subspace.
 
 In physics, real quaternions first entered through Maxwell's electromagnetism and Tait's advocacy, and were displaced from the mid-1880s by the vector analysis of Gibbs and Heaviside. Biquaternions were applied to special relativity by Conway and by Silberstein in the 1910s, most fully in Silberstein's *The Theory of Relativity* (1914), and were displaced by Minkowski's tensor formalism. The algebra returned in the mid-twentieth century through quaternionic quantum mechanics, geometric algebra, twistor theory, and modern biquaternionic field theory.
 
@@ -202,9 +202,9 @@ The history shows that the algebra is old, rich, and structurally sufficient for
 | $\mathbb{H}_{\mathbb{B}}$ | Quaternion subspace (real quaternions; norm $(4,0)$) |
 | $\mathbb{M}_{+}$ | Hermitian subspace (informational sector; norm $(1,3)$) |
 | $\mathbb{M}_{-}$ | Anti-Hermitian subspace (material sector; norm $(3,1)$) |
-| $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$ | Norm form (zero divisors where $N=0$) |
+| $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$ | Biquaternion norm (zero divisors where $N=0$) |
 | $\mathbb{B} \cong M_2(\mathbb{C}) \cong Cl_{3,0}(\mathbb{R})$ | Pauli algebra; $\Phi(e_k) = -i\sigma_k$ |
-| $SL(2,\mathbb{C}) = \{\tilde{\Lambda} : \tilde{\Lambda}\bar{\tilde{\Lambda}} = e_0\}$ | Unit-norm-form biquaternions; Lorentz double cover |
+| $SL(2,\mathbb{C}) = \{\tilde{\Lambda} : \tilde{\Lambda}\bar{\tilde{\Lambda}} = e_0\}$ | Unit-norm biquaternions; Lorentz double cover |
 | $\tilde{Q} \mapsto \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{\dagger}$ | Rotor conjugation on $\mathbb{M}_{-}$ |
 | $\tilde{P}_\pm = \tfrac{1}{2}(e_0 \pm i\hat{\mu})$ | Idempotent (pure state of $\mathbb{M}_{+}$) |
 | $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ | Trace formula (Born rule) |

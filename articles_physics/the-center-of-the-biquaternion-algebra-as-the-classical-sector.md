@@ -31,7 +31,7 @@ $$
 \qquad
 \mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_- .
 $$
-The trace is $\mathrm{Tr}(\tilde{Q})=2\,\mathrm{Sc}(\tilde{Q})$ with $\mathrm{Tr}(e_0)=2$; the norm form is $N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}$, central-valued; the Hermitian form is $\langle\tilde{Q},\tilde{Y}\rangle_\dagger=\mathrm{Tr}(\tilde{Q}^\dagger\tilde{Y})$. The matrix model is the $\mathbb{C}$-linear representation $\Phi(e_0)=I_2$, $\Phi(e_k)=-i\sigma_k$, under which $\Phi(\mathbb{B})=M_2(\mathbb{C})$ and $\det M(\tilde{Q})=N(\tilde{Q})$. A state is $\tilde{\rho}=\tfrac12(e_0+i\mathbf{r})$, $|\mathbf{r}|\leq1$, and a pure state is $\tilde{P}(\hat{\mu})=\tfrac12(e_0+i\hat{\mu})$.
+The trace is $\mathrm{Tr}(\tilde{Q})=2\,\mathrm{Sc}(\tilde{Q})$ with $\mathrm{Tr}(e_0)=2$; the biquaternion norm is $N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}$, central-valued; the Hermitian form is $\langle\tilde{Q},\tilde{Y}\rangle_\dagger=\mathrm{Tr}(\tilde{Q}^\dagger\tilde{Y})$. The matrix model is the $\mathbb{C}$-linear representation $\Phi(e_0)=I_2$, $\Phi(e_k)=-i\sigma_k$, under which $\Phi(\mathbb{B})=M_2(\mathbb{C})$ and $\det M(\tilde{Q})=N(\tilde{Q})$. A state is $\tilde{\rho}=\tfrac12(e_0+i\mathbf{r})$, $|\mathbf{r}|\leq1$, and a pure state is $\tilde{P}(\hat{\mu})=\tfrac12(e_0+i\hat{\mu})$.
 
 ## The Center: Definition and Computation
 
@@ -73,11 +73,11 @@ The identification $Z(M_2(\mathbb{C}))=\mathbb{C}I_2$ is the standard statement 
 $$
 \langle\lambda e_0,\mu e_0\rangle_\dagger=\mathrm{Tr}\bigl((\lambda e_0)^\dagger(\mu e_0)\bigr)=2\,\lambda^{*}\mu ,
 $$
-positive definite on $\mathbb{C}$; it is the standard Hermitian form of the scalars, up to the trace normalization $\mathrm{Tr}(e_0)=2$. The norm form restricts to the **complex square**,
+positive definite on $\mathbb{C}$; it is the standard Hermitian form of the scalars, up to the trace normalization $\mathrm{Tr}(e_0)=2$. The biquaternion norm restricts to the **complex square**,
 $$
 N(\lambda e_0)=\lambda^2e_0 ,
 $$
-which is holomorphic rather than Hermitian: it is positive definite on the Hermitian part of the centre, $N(ae_0)=a^2e_0\geq0$ for $a\in\mathbb{R}$, negative definite on its anti-Hermitian part, $N(ibe_0)=-b^2e_0\leq0$ for $b\in\mathbb{R}$, and complex-valued on the rest of the complex centre, where the form is non-degenerate and vanishes only at $\lambda=0$. The two forms therefore behave on the centre exactly as they behave on the whole algebra — one Hermitian, one holomorphic/quadratic — and the centre is the smallest subspace on which both are visible, with the Hermitian form positive definite and the norm form indefinite (on the complexified directions). The verification of $N(\lambda e_0)=\lambda^2e_0$ for representative $\lambda$ is elementary and was checked numerically.
+which is holomorphic rather than Hermitian: it is positive definite on the Hermitian part of the centre, $N(ae_0)=a^2e_0\geq0$ for $a\in\mathbb{R}$, negative definite on its anti-Hermitian part, $N(ibe_0)=-b^2e_0\leq0$ for $b\in\mathbb{R}$, and complex-valued on the rest of the complex centre, where the form is non-degenerate and vanishes only at $\lambda=0$. The two forms therefore behave on the centre exactly as they behave on the whole algebra — one Hermitian, one holomorphic/quadratic — and the centre is the smallest subspace on which both are visible, with the Hermitian form positive definite and the biquaternion norm indefinite (on the complexified directions). The verification of $N(\lambda e_0)=\lambda^2e_0$ for representative $\lambda$ is elementary and was checked numerically.
 
 **Commutativity and associativity.** The centre is commutative, $\tilde{Q}\tilde{Y}=\tilde{Y}\tilde{Q}$, and associative, being a subalgebra; its multiplication is complex multiplication,
 $$
@@ -101,7 +101,7 @@ This is the operational characterization of the classical sector: it is the set 
 $$
 Z(\mathbb{B})=\bigcap_{\tilde{Q}\in\mathbb{B}}\ker\bigl(\mathrm{ad}_{\tilde{Q}}\bigr),
 $$
-and since the derivations are the infinitesimal symmetries, this is the infinitesimal form of characterization 2. The Lie algebra of the unitary group here is $\mathfrak{u}(2)=\mathbb{M}_-$ (the anti-Hermitian subspace), and the centre is the one-dimensional subspace of $\mathfrak{u}(2)$ on which the adjoint representation is trivial, $\mathfrak{z}(\mathfrak{u}(2))=\mathbb{R}\,ie_0$.
+and since the derivations are the infinitesimal symmetries, this is the infinitesimal form of characterization 2. The Lie algebra of the unitary group here is $\mathrm{U}(2)=\mathbb{M}_-$ (the anti-Hermitian subspace), and the centre is the one-dimensional subspace of $\mathrm{U}(2)$ on which the adjoint representation is trivial, $\mathrm{Z}(\mathrm{U}(2))=\mathbb{R}\,ie_0$.
 
 **4. Factorization of the trace pairing.** An element $\tilde{Q}$ is central if and only if its Hilbert–Schmidt correlations factorize,
 $$
@@ -249,7 +249,7 @@ Z(\mathbb{C}\otimes_\mathbb{R}\mathbb{H})=\mathbb{C}\otimes_\mathbb{R}\mathbb{R}
 $$
 The tensor product multiplies the centres, and this is the algebraic origin of the framework's scalar field: the quaternionic centre is real, and complexifying the quaternions complexifies the centre. The central imaginary $i$ is not an element of $\mathbb{H}$; it is the complexification of the unit, and it is central by construction. The companion articles on the material and informational spaces use this fact when they separate the two sectors: $i$ commutes with everything, which is why it can serve as a global complex structure on the modules while the non-central roots of $-e_0$ cannot.
 
-**5. Casimir elements.** In the enveloping algebra of $\mathfrak{u}(2)=\mathbb{M}_-$ the central elements are the Casimirs, and on each irreducible module they act as scalars. The quadratic Casimir and the identity furnish the labels by which a representation is characterized, and those labels — a mass, a spin quantum number — are classical data attached to the representation rather than to the algebra. They are central in the enveloping algebra, not in $\mathbb{B}$ itself, and the distinction is the representation-theoretic counterpart of the statement that the framework's classical sector is minimal: the labels live in the centre of the symmetry algebra, and the symmetry algebra is larger than $\mathbb{B}$'s centre.
+**5. Casimir elements.** In the enveloping algebra of $\mathrm{U}(2)=\mathbb{M}_-$ the central elements are the Casimirs, and on each irreducible module they act as scalars. The quadratic Casimir and the identity furnish the labels by which a representation is characterized, and those labels — a mass, a spin quantum number — are classical data attached to the representation rather than to the algebra. They are central in the enveloping algebra, not in $\mathbb{B}$ itself, and the distinction is the representation-theoretic counterpart of the statement that the framework's classical sector is minimal: the labels live in the centre of the symmetry algebra, and the symmetry algebra is larger than $\mathbb{B}$'s centre.
 
 ## Summary
 
@@ -275,13 +275,13 @@ The centre's limitations are as exact as its properties. Because $\mathbb{B}$ is
 | $Z(\mathbb{B})=\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_0$ | Centre of $\mathbb{B}$; the series symbol is $\mathbb{C}_{\mathbb{B}}$ |
 | $Z(\mathbb{B})\cap\mathbb{M}_+=\mathbb{R}e_0$ | Hermitian central elements |
 | $\mathrm{Tr}(\tilde{Q})=2\,\mathrm{Sc}(\tilde{Q})$ | Trace, $\mathrm{Tr}(e_0)=2$ |
-| $N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}$ | Norm form, $N(\lambda e_0)=\lambda^2e_0$ |
+| $N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}$ | Biquaternion norm, $N(\lambda e_0)=\lambda^2e_0$ |
 | $\mathrm{Ad}_{\tilde{U}}(\tilde{Q})=\tilde{U}\tilde{Q}\tilde{U}^{-1}$ | Adjoint (inner) action |
 | $\mathrm{ad}_{\tilde{Q}}(\tilde{Y})=[\tilde{Q},\tilde{Y}]$ | Inner derivation |
 | $\mathbb{A}_{\hat{n}}=\mathrm{span}_\mathbb{C}\{\tilde{P}(\hat{n}),e_0-\tilde{P}(\hat{n})\}$ | Maximal commutative subalgebra (MASA) |
 | $\tilde{P}(\hat{n})=\tfrac12(e_0+i\hat{n})$ | Pure-state projection, $|\hat{n}|=1$ |
 | $M_2(\mathbb{C})$ | Matrix model; $\Phi(e_0)=I_2$, $\Phi(e_k)=-i\sigma_k$ |
-| $\mathfrak{u}(2)=\mathbb{M}_-$ | Lie algebra of the unitary group |
+| $\mathrm{U}(2)=\mathbb{M}_-$ | Lie algebra of the unitary group |
 | $C(\{\ast\})$ | Gelfand character algebra of the centre |
 
 ## Further Reading

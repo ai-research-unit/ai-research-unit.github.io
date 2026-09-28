@@ -41,7 +41,7 @@ $$
 
 the antisymmetrised product. Then $\sigma$ is linear, $\sigma(\Lambda^kV)\subseteq\mathrm{Cl}_k(V,q)$, and $\sigma:\Lambda(V)\to\mathrm{Cl}(V,q)$ is an isomorphism of vector spaces over a field of characteristic $0$ or of characteristic greater than $n$.
 
-**Proof.** Linearity is clear, and the grading statement follows because every term of the sum is a product of $k$ vectors. For the basis monomials $e_{i_1}\wedge\cdots\wedge e_{i_k}$ with $i_1<\cdots<i_k$ of an orthogonal basis, every product $e_{i_{\pi(1)}}\cdots e_{i_{\pi(k)}}$ reorders into $e_{i_1}\cdots e_{i_k}$ with the factor $\operatorname{sgn}(\pi)$, the indices being distinct so that no square of a generator is encountered; each of the $k!$ terms therefore equals $\operatorname{sgn}(\pi)^2e_{i_1}\cdots e_{i_k}=e_{i_1}\cdots e_{i_k}$, and $\sigma$ carries the wedge monomial to the Clifford monomial. The matrix of $\sigma$ in these two bases is the identity, so $\sigma$ is an isomorphism. $\square$
+**Proof.** Linearity is clear, and the grading statement follows because every term of the sum is a product of $k$ vectors. For the basis monomials $e_{i_1}\wedge\cdots\wedge e_{i_k}$ with $i_1<\cdots<i_k$ of an orthogonal basis, every product $e_{i_{\pi(1)}}\cdots e_{i_{\pi(k)}}$ reorders into $e_{i_1}\cdots e_{i_k}$ with the factor $\operatorname{sgn}(\pi)$, the indices being distinct so that no square of a generator is encountered; each of the $k!$ terms therefore equals $\operatorname{sgn}(\pi)^2e_{i_1}\cdots e_{i_k}=e_{i_1}\cdots e_{i_k}$, and $\sigma$ carries the wedge monomial to the Clifford monomial. The matrix of $\sigma$ in these two bases is the identity, so $\sigma$ is an isomorphism.
 
 The $k$-vectors of $\mathrm{Cl}(V,q)$ are thus the image of the $k$-fold wedges, and $\langle x\rangle_k$ is the component read in the exterior algebra through $\sigma$. On the basis monomials $\sigma$ is the identity; on a non-orthogonal wedge it is the antisymmetrisation and not the naive product.
 
@@ -59,7 +59,7 @@ $$
 
 so that all the surviving grades have the parity of $k+l$ and lie between $|k-l|$ and $k+l$. In particular the product of two $k$-vectors is even, and the product of an even with an odd multivector is odd.
 
-**Proof.** Both sides being bilinear, it suffices to take monomials $u=e_{i_1}\cdots e_{i_k}$ and $w=e_{j_1}\cdots e_{j_l}$ with increasing indices, in an orthogonal basis. Let $S$ be the set of indices common to the two monomials, of cardinality $s$. In the concatenation $uw$ each index of $S$ occurs twice and every other index once. Moving the factors so that the repeated indices become adjacent, and replacing each $e^2$ by the scalar $q(e)$, leaves a scalar multiple of the product of the $k+l-2s$ distinct indices outside $S$; the anticommutation of distinct generators contributes only signs. That product is an element of $\mathrm{Cl}_{k+l-2s}(V,q)$. As $s$ ranges from $0$ to $\min(k,l)$, the grades $k+l-2s$ are exactly $k+l,k+l-2,\ldots,|k-l|$. $\square$
+**Proof.** Both sides being bilinear, it suffices to take monomials $u=e_{i_1}\cdots e_{i_k}$ and $w=e_{j_1}\cdots e_{j_l}$ with increasing indices, in an orthogonal basis. Let $S$ be the set of indices common to the two monomials, of cardinality $s$. In the concatenation $uw$ each index of $S$ occurs twice and every other index once. Moving the factors so that the repeated indices become adjacent, and replacing each $e^2$ by the scalar $q(e)$, leaves a scalar multiple of the product of the $k+l-2s$ distinct indices outside $S$; the anticommutation of distinct generators contributes only signs. That product is an element of $\mathrm{Cl}_{k+l-2s}(V,q)$. As $s$ ranges from $0$ to $\min(k,l)$, the grades $k+l-2s$ are exactly $k+l,k+l-2,\ldots,|k-l|$.
 
 The theorem is the precise sense in which the geometric product is not homogeneous but has a controlled spread: the discrepancy between the degrees is bounded by the smaller of the two, and each step of the spread is by two.
 
@@ -85,7 +85,7 @@ $$
 
 The two grades of $aB$ are separated by symmetry rather than by the parity of the degrees: the grade-one part is the alternating part and the grade-three part the symmetric one, the opposite assignment to the case of two vectors. For a simple bivector $B$ the grade-three part vanishes exactly when $a$ lies in the plane of $B$, and then $aB$ is a pure vector.
 
-**Proof of the second identity.** In the notation of the theorem with $k=1$ and $l=2$, the monomial computation gives $aB$ in grades $1$ and $3$. For $Ba$ the same computation with the factors exchanged assigns to the grade-one part the opposite sign, because the single interchange of the odd monomial with the even monomial reverses the order of the shared factor. The grade-three part is symmetric in $a$ and $B$ by the Koszul rule applied to $\Lambda^1$ and $\Lambda^2$. $\square$
+**Proof of the second identity.** In the notation of the theorem with $k=1$ and $l=2$, the monomial computation gives $aB$ in grades $1$ and $3$. For $Ba$ the same computation with the factors exchanged assigns to the grade-one part the opposite sign, because the single interchange of the odd monomial with the even monomial reverses the order of the shared factor. The grade-three part is symmetric in $a$ and $B$ by the Koszul rule applied to $\Lambda^1$ and $\Lambda^2$.
 
 **Example.** In $\mathrm{Cl}_{3,0}$ take $a=e_3$ and $B=e_1e_2$. Then $aB=e_3e_1e_2=e_1e_2e_3=\omega$, of pure grade three, while $Ba=e_1e_2e_3=\omega$ as well, the grade-one parts vanishing because $e_3$ is orthogonal to the plane of $B$. Take instead $a=e_1$ and $B=e_1e_2$: then $aB=e_1e_1e_2=e_2$, of pure grade one, and $Ba=e_1e_2e_1=-e_2$, so that the grade-three parts vanish and the two orders differ by the sign of the grade-one part.
 
@@ -126,7 +126,7 @@ $$
 
 and for two vectors it is the decomposition of the first corollary, $uv=B(u,v)+u\wedge v$.
 
-**Proof.** The grade theorem enumerates the grades of $uw$; the highest is $k+l$ and defines the outer product, and the lowest is $|k-l|$, which is $l-k$ for $k\le l$, the left contraction, and $k-l$ for $k\ge l$, the right contraction. If $k=1$ the list $l+1,l-1,\ldots,|l-1|$ has exactly two entries, and the two are the inner product and the outer product; the case $l=1$ is the same. $\square$
+**Proof.** The grade theorem enumerates the grades of $uw$; the highest is $k+l$ and defines the outer product, and the lowest is $|k-l|$, which is $l-k$ for $k\le l$, the left contraction, and $k-l$ for $k\ge l$, the right contraction. If $k=1$ the list $l+1,l-1,\ldots,|l-1|$ has exactly two entries, and the two are the inner product and the outer product; the case $l=1$ is the same.
 
 **Remark.** The inner product of a vector with a $k$-vector agrees with the left contraction when $k\ge1$, since $|1-k|=k-1$; the two notions differ only in the conventions at $k=0$ or $l=0$, where the inner product is set to zero and the contraction of a scalar is the scalar multiple. The distinction is a matter of bookkeeping and not of substance, and the version used below is the one that makes the two-vector identity exact.
 
@@ -142,7 +142,7 @@ $$
 
 and the map $\sigma$ of the first section is an isomorphism of graded algebras from $\Lambda(V)$ with its wedge product onto that algebra.
 
-**Proof.** It suffices to take monomials $u=e_{i_1}\cdots e_{i_k}$ and $w=e_{j_1}\cdots e_{j_l}$ in an orthogonal basis, bilinearity doing the rest. If the two index sets are disjoint, then $uw$ and $wu$ are both of pure grade $k+l$, and reordering the concatenation moves the $l$ factors of $w$ past the $k$ factors of $u$, a factor $(-1)^{kl}$; hence $u\wedge w=(-1)^{kl}w\wedge u$. If the index sets meet, the repeated index lowers the degree of every grade of both products by at least two, so the grade $k+l$ part of $uw$ and of $wu$ vanishes and the identity reads $0=0$. The identification of the outer product with the wedge of the exterior algebra, and the graded-commutativity of the latter, are from *The Exterior Algebra*; that $\sigma$ intertwines the two products follows from the same monomial check, where both sides give the monomial of the union of the indices. $\square$
+**Proof.** It suffices to take monomials $u=e_{i_1}\cdots e_{i_k}$ and $w=e_{j_1}\cdots e_{j_l}$ in an orthogonal basis, bilinearity doing the rest. If the two index sets are disjoint, then $uw$ and $wu$ are both of pure grade $k+l$, and reordering the concatenation moves the $l$ factors of $w$ past the $k$ factors of $u$, a factor $(-1)^{kl}$; hence $u\wedge w=(-1)^{kl}w\wedge u$. If the index sets meet, the repeated index lowers the degree of every grade of both products by at least two, so the grade $k+l$ part of $uw$ and of $wu$ vanishes and the identity reads $0=0$. The identification of the outer product with the wedge of the exterior algebra, and the graded-commutativity of the latter, are from *The Exterior Algebra*; that $\sigma$ intertwines the two products follows from the same monomial check, where both sides give the monomial of the union of the indices.
 
 So the Clifford algebra is a deformation of the exterior algebra: it has the same underlying graded vector space, the wedge is its top-grade part, and the remaining grades are the deformation. This is the reading of the remark of *The Clifford Algebra* that setting $q=0$ recovers $\Lambda(V)$.
 
@@ -160,7 +160,7 @@ The signs are those recorded in *Clifford Algebras in Finite Dimensions*; the ta
 
 **Corollary.** Reversion fixes the scalars and the vectors, negates the bivectors and the trivectors, and fixes the four-vectors; Clifford conjugation fixes the scalars and the four-vectors and negates the vectors and the bivectors.
 
-**Proof.** Substituting $k=0,1,2,3,4$ in the signs of the table: for reversion the exponents are $0,0,1,3,6$, giving $+,+,-,-,+$; for conjugation the exponents are $0,1,3,6,10$, giving $+,-,-,+,+$. $\square$
+**Proof.** Substituting $k=0,1,2,3,4$ in the signs of the table: for reversion the exponents are $0,0,1,3,6$, giving $+,+,-,-,+$; for conjugation the exponents are $0,1,3,6,10$, giving $+,-,-,+,+$.
 
 ## Worked Cases
 

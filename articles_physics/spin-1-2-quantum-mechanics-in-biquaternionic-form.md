@@ -280,7 +280,7 @@ So the **spin rotations of a spin-1/2 particle are realized in the biquaternion 
 
 The Hermitian biquaternions in $\mathbb{M}_+$ with unit norm are the **boost biquaternions** $\tilde{\Lambda} = \cosh(\psi/2) + i\sinh(\psi/2)\hat{\mathbf{u}}$. They generate the Lorentz boosts, and their action on $\mathbb{M}_-$ is the rotor conjugation.
 
-In the quantum-mechanical context, the boosts are **not** unitary (they are Hermitian, and their squares are not the identity). They correspond to operations that are non-unitary but still **invertible**: a boost has unit norm form, so it inverts to $\bar{\tilde{\Lambda}}$, and it represents a reversible change of state — unlike the genuinely irreversible idempotent projections.
+In the quantum-mechanical context, the boosts are **not** unitary (they are Hermitian, and their squares are not the identity). They correspond to operations that are non-unitary but still **invertible**: a boost has unit norm, so it inverts to $\bar{\tilde{\Lambda}}$, and it represents a reversible change of state — unlike the genuinely irreversible idempotent projections.
 
 The full group of unit-norm biquaternions is $SL(2,\mathbb{C})$, which is the double cover of the proper orthochronous Lorentz group $SO^+(1,3)$. It contains $SU(2)$ as the compact subgroup of spatial rotations, and the Hermitian elements as the non-compact set of boosts.
 

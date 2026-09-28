@@ -7,7 +7,7 @@ The rigid motions of space form a group of six parameters, three of rotation and
 
 This article develops the two constructions and their relation. The degeneracy of the form is the point of the second: the ideal element of the projective space is null, so that the translations are rotations about the ideal plane rather than transformations of a non-degenerate algebra, and the algebra is the smallest one that carries the incidence of projective geometry together with the metric of Euclidean geometry. The dual quaternions are the even part of that algebra, and the study of rigid motions in them is the older form of the same theory.
 
-The Clifford algebra, the geometric product, the grade decomposition and the contraction are from *The Clifford Algebra* and *The Geometric Product and the Grade Decomposition*; the degenerate Clifford algebras, the radical and the filtration are from *Degenerate Clifford Algebras and the Radical* and *The Filtration and the Associated Graded Algebra*; the volume element, the duality and the Hodge star are from *The Volume Element, Duality and the Hodge Star*; the versors, the rotors, the sandwich action and the exponentiation of a bivector are from *Versors, Rotors and the Sandwich Action*; the quaternions, the rotation group and the quaternion double cover are from *Quaternion Rotations and Reflections* and *The Rotation and Reflection Groups in the Biquaternion Algebra*; the dual numbers are from *The Number Systems as Clifford Algebras*; the biquaternion algebra and its zero divisors are from *The Biquaternion Algebra as a Clifford Algebra*; the null vectors and the sphere vocabulary of the conformal model are from *The Conformal Model of Euclidean Space*. Nothing owned by those entries is re-derived.
+The Clifford algebra, the geometric product, the grade decomposition and the contraction are from *The Clifford Algebra* and *The Geometric Product and the Grade Decomposition*; the degenerate Clifford algebras, the radical and the filtration are from *Degenerate Clifford Algebras and the Radical* and *The Filtration and the Associated Graded Algebra*; the volume element, the duality and the Hodge star are from *The Volume Element, Duality and the Hodge Star*; the versors, the rotors, the sandwich action and the exponentiation of a bivector are from *Versors, Rotors and the Sandwich Action*; the quaternions, the rotation group and the quaternion double cover are from *Quaternion Rotations and Reflections* and *Biquaternion Rotations and Lorentz Transformations*; the dual numbers are from *The Number Systems as Clifford Algebras*; the biquaternion algebra and its zero divisors are from *The Clifford Structure of the Biquaternion Algebra*; the null vectors and the sphere vocabulary of the conformal model are from *The Conformal Model of Euclidean Space*. Nothing owned by those entries is re-derived.
 
 ## The Projective Model of Space
 
@@ -39,7 +39,7 @@ Lines are the wedges of two planes, points are the wedges of three planes, and t
 2. the point of intersection of three planes is the wedge $\pi_1\wedge\pi_2\wedge\pi_3$, so the plane through three points and the point on three planes are read off from the same wedge;
 3. the join of two objects is obtained from the meet of their duals by the duality of the algebra, which pairs the blades of complementary grade, so that the line through two points and the plane through three points are computed from the same products as their meet counterparts.
 
-**Proof.** Write a point as the wedge of three planes through it. Then a plane contains the point exactly when adjoining it to the wedge does not increase the grade, which is the condition $\pi\wedge P=0$; two planes in general position have a line common to them, which is the join of the two, and the wedge of the two planes is the blade of common points, of grade two, so the wedge is the line; the same argument one step further gives the point of three planes. The join statements are the duality of *The Volume Element, Duality and the Hodge Star*, applied with the care that the degeneracy of the form requires for the ideal elements. $\square$
+**Proof.** Write a point as the wedge of three planes through it. Then a plane contains the point exactly when adjoining it to the wedge does not increase the grade, which is the condition $\pi\wedge P=0$; two planes in general position have a line common to them, which is the join of the two, and the wedge of the two planes is the blade of common points, of grade two, so the wedge is the line; the same argument one step further gives the point of three planes. The join statements are the duality of *The Volume Element, Duality and the Hodge Star*, applied with the care that the degeneracy of the form requires for the ideal elements.
 
 **Remark.** The correspondence with the conformal model is the reason the plane is taken as primitive here: in the conformal model the point is primitive and the sphere is a vector, while in the projective model the plane is primitive and the point is a wedge of three planes. The two models are dual descriptions of the same incidence, and the projective one is the more economical when the objects of interest are planes and lines and the transformations are rigid motions.
 
@@ -55,11 +55,11 @@ $$
 
 with $t$ a Euclidean vector and $e_0$ the null generator of the radical, so that $t e_0$ has square zero and the exponential terminates.
 
-**Proof.** That the rotations of the Euclidean part are the rotors of $\mathrm{Cl}_{3,0}$ is in *Quaternion Rotations and Reflections*; the extension acts on the whole algebra because the construction is by the sandwich and the extra generator is annihilated. For the translations: $(te_0)^2=q(t)q(e_0)=0$, so $\exp(-\tfrac12te_0)=1-\tfrac12te_0$; the norm is $1$, so it is a rotor, and its sandwich action on the planes is the translation of the planes by $+t$, the computation being the degenerate analogue of the one for the conformal model. $\square$
+**Proof.** That the rotations of the Euclidean part are the rotors of $\mathrm{Cl}_{3,0}$ is in *Quaternion Rotations and Reflections*; the extension acts on the whole algebra because the construction is by the sandwich and the extra generator is annihilated. For the translations: $(te_0)^2=q(t)q(e_0)=0$, so $\exp(-\tfrac12te_0)=1-\tfrac12te_0$; the norm is $1$, so it is a rotor, and its sandwich action on the planes is the translation of the planes by $+t$, the computation being the degenerate analogue of the one for the conformal model.
 
 **Corollary (screw motions).** Every rigid motion of space is a rotor of the algebra, and every rotor is the exponential of a bivector, so every rigid motion is the exponential of a bivector and is therefore a **screw motion**: a rotation about an axis together with a translation along it.
 
-**Proof.** The composition of a rotation and a translation is a rotor, and by the Chasles theorem every rigid motion of space is a screw motion; the exponential statement is the theorem on the exponentiation of bivectors of *Versors, Rotors and the Sandwich Action*, and the two descriptions agree because the exponential of a general bivector of the algebra is a rotation about a line together with a translation along it. $\square$
+**Proof.** The composition of a rotation and a translation is a rotor, and by the Chasles theorem every rigid motion of space is a screw motion; the exponential statement is the theorem on the exponentiation of bivectors of *Versors, Rotors and the Sandwich Action*, and the two descriptions agree because the exponential of a general bivector of the algebra is a rotation about a line together with a translation along it.
 
 ### The Even Part and the Dual Quaternions
 
@@ -77,11 +77,11 @@ $$
 \mathrm{Cl}^0_{3,0,1}\cong\mathbb{D}\mathbb{H} .
 $$
 
-**Proof.** Both are eight-dimensional, and the even part is generated by the products $e_ie_j$ of the Euclidean generators, which are the quaternion units, and by the products $e_ie_0$, which are those units multiplied by the nilpotent element $\omega=e_1e_2e_3e_0$; the element $\omega$ lies in the even part, is central there and has square zero, so the even part is the quaternions extended by a central nilpotent. $\square$
+**Proof.** Both are eight-dimensional, and the even part is generated by the products $e_ie_j$ of the Euclidean generators, which are the quaternion units, and by the products $e_ie_0$, which are those units multiplied by the nilpotent element $\omega=e_1e_2e_3e_0$; the element $\omega$ lies in the even part, is central there and has square zero, so the even part is the quaternions extended by a central nilpotent.
 
 **Corollary.** A rigid motion is a unit dual quaternion, and the action of a rigid motion on a point is the sandwich action of the unit dual quaternion on the dual quaternion representing the point.
 
-**Proof.** Immediate from the identification and the theorem on the versors. $\square$
+**Proof.** Immediate from the identification and the theorem on the versors.
 
 ## The Dual Quaternions at Work
 
@@ -101,7 +101,7 @@ $$
 
 with kernel $\{\pm1\}$.
 
-**Proof.** The norm of $q_0+\varepsilon q_1$ is $N(q_0)+\varepsilon\,2B(q_0,q_1)$ in the dual numbers, and it equals $1$ in $\mathbb{D}$ exactly when $N(q_0)=1$ and $B(q_0,q_1)=0$. The first condition is the unit sphere of the quaternions, of dimension three, and the second is a linear condition on $q_1$, cutting the six real dimensions of $q_1$ down to three; the total is six, equal to the dimension of the group of rigid motions, and the map to $SE(3)$ is the sandwich action, which forgets the sign. $\square$
+**Proof.** The norm of $q_0+\varepsilon q_1$ is $N(q_0)+\varepsilon\,2B(q_0,q_1)$ in the dual numbers, and it equals $1$ in $\mathbb{D}$ exactly when $N(q_0)=1$ and $B(q_0,q_1)=0$. The first condition is the unit sphere of the quaternions, of dimension three, and the second is a linear condition on $q_1$, cutting the six real dimensions of $q_1$ down to three; the total is six, equal to the dimension of the group of rigid motions, and the map to $SE(3)$ is the sandwich action, which forgets the sign.
 
 **Corollary (the action on points).** The image of a point $p\in\mathbb{R}^3$ is the sandwich
 
@@ -111,7 +111,7 @@ $$
 
 where $p$ is identified with the quaternion with zero real part and $q$ is the unit dual quaternion of the motion, and the result is again of the form $1+\varepsilon p'$ with $p'$ the image of the point.
 
-**Proof.** The expression $P=1+\varepsilon p$ represents the point, being the point vector translated to the dual-number form, and the sandwich by a unit dual quaternion is an automorphism of the algebra; taking the $\varepsilon$ part of the result gives the transformed point, the computation being the quaternionic form of the composition of a rotation and a translation. $\square$
+**Proof.** The expression $P=1+\varepsilon p$ represents the point, being the point vector translated to the dual-number form, and the sandwich by a unit dual quaternion is an automorphism of the algebra; taking the $\varepsilon$ part of the result gives the transformed point, the computation being the quaternionic form of the composition of a rotation and a translation.
 
 **Remark (interpolation).** The reason the dual quaternions are the standard tool for rigid motion interpolation is that they carry the group linearly: a screw motion is a unit dual quaternion, the logarithm of a unit dual quaternion is a bivector of the algebra and hence a screw axis with a pitch, and the interpolation of two unit dual quaternions along the exponential of the difference of the logarithms is the screw interpolation of the motions. The same construction in the quaternions is the interpolation of rotations by the exponential of a bivector, which is in *Versors, Rotors and the Sandwich Action*.
 
@@ -123,7 +123,7 @@ where $p$ is identified with the quaternion with zero real part and $q$ is the u
 2. the unit dual quaternions, which are the even part of that algebra, modulo sign;
 3. the group $SE(3)$ of orientation-preserving isometries of $\mathbb{R}^3$.
 
-**Proof.** The first two are identified by the theorem on the even part, and the second and third by the theorem on the unit dual quaternions. $\square$
+**Proof.** The first two are identified by the theorem on the even part, and the second and third by the theorem on the unit dual quaternions.
 
 **Remark (the projective model and the conformal model).** The two models of the corpus serve different purposes and are not interchangeable: the projective model has a degenerate form and the plane as primitive, and it describes the rigid motions, the incidence of planes, lines and points, and the screw motions; the conformal model of *The Conformal Model of Euclidean Space* has a non-degenerate form of signature $(n+1,1)$ and the point as primitive, and it describes the conformal transformations and the spheres. The rigid motions form a subgroup of the conformal group, and the passage from the conformal model to the projective one is the passage from the non-degenerate form with the two null vectors to the degenerate form with one.
 

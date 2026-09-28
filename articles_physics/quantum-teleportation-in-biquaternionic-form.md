@@ -140,7 +140,7 @@ $$
 |\Psi^-\rangle_{12}:\ \tfrac12\left(\alpha|1\rangle-\beta|0\rangle\right)=\tfrac12 (XZ)|\psi\rangle_3 .
 $$
 
-Collecting the four terms gives the stated identity. $\square$
+Collecting the four terms gives the stated identity.
 
 The four operators appearing on the right are the Pauli gates $I,X,Z,XZ$, and in biquaternion representatives (companion article on gates and circuits) they are
 

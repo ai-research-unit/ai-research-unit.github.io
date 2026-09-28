@@ -107,7 +107,7 @@ $$
 \rho_E(a + \varepsilon b) \rho_E(c + \varepsilon d) = (a \cdot \mathrm{id}_V + b E)(c \cdot \mathrm{id}_V + d E) = ac \cdot \mathrm{id}_V + (ad + bc) E + bd E^2 = ac \cdot \mathrm{id}_V + (ad + bc) E,
 $$
 
-since $E^2 = 0$. The two agree. $\square$
+since $E^2 = 0$. The two agree.
 
 So the representation theory of $\mathbb{D}'$ is equivalent to the theory of square-zero endomorphisms. This is the reason the representation theory is both simple and rich: simple because the endomorphism is square-zero, rich because there are many such endomorphisms.
 
@@ -125,7 +125,7 @@ It satisfies $(E \oplus F)^2 = E^2 \oplus F^2 = 0$, so it is again a representat
 
 **Theorem.** The only irreducible representation of $\mathbb{D}'$ is the trivial representation on $R$.
 
-**Proof.** Let $(V, E)$ be irreducible. If $E \neq 0$, then $\ker E$ is a non-zero proper subrepresentation, because $E^2 = 0$ implies $\ker E \neq 0$ and $\operatorname{im} E \subseteq \ker E$ implies $\ker E \neq V$ when $E \neq 0$. This contradicts irreducibility. So $E = 0$, and the representation is the trivial representation on $V$. For it to be irreducible, $V$ must be one-dimensional over $R$ when $R$ is a field. $\square$
+**Proof.** Let $(V, E)$ be irreducible. If $E \neq 0$, then $\ker E$ is a non-zero proper subrepresentation, because $E^2 = 0$ implies $\ker E \neq 0$ and $\operatorname{im} E \subseteq \ker E$ implies $\ker E \neq V$ when $E \neq 0$. This contradicts irreducibility. So $E = 0$, and the representation is the trivial representation on $V$. For it to be irreducible, $V$ must be one-dimensional over $R$ when $R$ is a field.
 
 So the irreducible representations are exactly the trivial ones, indexed by the simple $R$-modules. When $R$ is a field, there is exactly one irreducible representation up to isomorphism, namely the one-dimensional trivial representation.
 
@@ -138,7 +138,7 @@ A representation $(V, E)$ is **indecomposable** if it cannot be written as a dir
 - The trivial representation on $R$ (with $E = 0$).
 - The regular representation on $R^2$ (with $E$ the nilpotent Jordan block of size two).
 
-**Proof.** Let $(V, E)$ be indecomposable with $E \neq 0$. Then $E^2 = 0$ implies $\operatorname{im} E \subseteq \ker E$. Choose a non-zero $v \in \operatorname{im} E$, and choose $w \in V$ with $E w = v$. Then $E v = E^2 w = 0$, so $v \in \ker E$. The subspace spanned by $v$ and $w$ is a subrepresentation isomorphic to the regular representation. If $V$ is larger, it decomposes as the direct sum of this subrepresentation and a complement, contradicting indecomposability. So $V$ is the regular representation. $\square$
+**Proof.** Let $(V, E)$ be indecomposable with $E \neq 0$. Then $E^2 = 0$ implies $\operatorname{im} E \subseteq \ker E$. Choose a non-zero $v \in \operatorname{im} E$, and choose $w \in V$ with $E w = v$. Then $E v = E^2 w = 0$, so $v \in \ker E$. The subspace spanned by $v$ and $w$ is a subrepresentation isomorphic to the regular representation. If $V$ is larger, it decomposes as the direct sum of this subrepresentation and a complement, contradicting indecomposability. So $V$ is the regular representation.
 
 So over a field, there are exactly two indecomposable representations, and the classification is finite. This is the simplest possible representation theory of a non-semisimple algebra.
 
@@ -158,7 +158,7 @@ This is the complete classification over a field: the representation is determin
 
 **Theorem (Schur).** Every $\mathbb{D}'$-linear endomorphism of an irreducible representation of $\mathbb{D}'$ is a scalar multiple of the identity.
 
-**Proof.** Let $(V, E)$ be irreducible and let $T : V \to V$ be $\mathbb{D}'$-linear, i.e. $T E = E T$. Then $\ker T$ and $\operatorname{im} T$ are subrepresentations. Since $V$ is irreducible and $E = 0$ on $V$, the only subrepresentations are $0$ and $V$. So $T$ is either zero or an isomorphism. In the second case, $T$ is an isomorphism of one-dimensional $R$-modules when $R$ is a field, hence multiplication by a non-zero scalar. $\square$
+**Proof.** Let $(V, E)$ be irreducible and let $T : V \to V$ be $\mathbb{D}'$-linear, i.e. $T E = E T$. Then $\ker T$ and $\operatorname{im} T$ are subrepresentations. Since $V$ is irreducible and $E = 0$ on $V$, the only subrepresentations are $0$ and $V$. So $T$ is either zero or an isomorphism. In the second case, $T$ is an isomorphism of one-dimensional $R$-modules when $R$ is a field, hence multiplication by a non-zero scalar.
 
 **Corollary.** The endomorphism ring of the trivial representation is $R$ itself.
 
@@ -268,7 +268,7 @@ $$
 
 The factor of $2$ comes from the endomorphisms of the regular representation, which form a two-dimensional algebra. The cross terms $ps$ and $qr$ come from the one-dimensional spaces $\operatorname{Hom}_{\mathbb{D}'}(R, R^2)$ and $\operatorname{Hom}_{\mathbb{D}'}(R^2, R)$, which are non-zero even though the two indecomposables are non-isomorphic: Schur's lemma constrains only homomorphisms between **irreducible** modules, and the regular representation is not irreducible.
 
-**Proof.** A homomorphism is a block matrix with four types of blocks. The blocks $R^{\oplus p} \to R^{\oplus r}$ give $M_p(R)$, of dimension $pr$; the blocks $(R^2)^{\oplus q} \to (R^2)^{\oplus s}$ give matrices over $\operatorname{End}_{\mathbb{D}'}(R^2) \cong \mathbb{D}'$, of dimension $2qs$. For the cross blocks, $\operatorname{Hom}_{\mathbb{D}'}(R, R^2) \cong \ker E \cong R$ (the image of the generator must lie in the kernel of $E$) and $\operatorname{Hom}_{\mathbb{D}'}(R^2, R) \cong R$ (the map must vanish on the image of $E$), so those contribute $ps$ and $qr$. $\square$
+**Proof.** A homomorphism is a block matrix with four types of blocks. The blocks $R^{\oplus p} \to R^{\oplus r}$ give $M_p(R)$, of dimension $pr$; the blocks $(R^2)^{\oplus q} \to (R^2)^{\oplus s}$ give matrices over $\operatorname{End}_{\mathbb{D}'}(R^2) \cong \mathbb{D}'$, of dimension $2qs$. For the cross blocks, $\operatorname{Hom}_{\mathbb{D}'}(R, R^2) \cong \ker E \cong R$ (the image of the generator must lie in the kernel of $E$) and $\operatorname{Hom}_{\mathbb{D}'}(R^2, R) \cong R$ (the map must vanish on the image of $E$), so those contribute $ps$ and $qr$.
 
 ### The Endomorphism Ring
 
@@ -306,7 +306,7 @@ $$
 \operatorname{Ext}^\bullet_{\mathbb{D}'}(R, R) \cong R[x],
 $$
 
-the polynomial algebra on one generator of degree one. So $\operatorname{Ext}^i_{\mathbb{D}'}(R, R) \cong R$ in every degree $i \geq 0$: the minimal free resolution $\cdots \to \mathbb{D}' \xrightarrow{\varepsilon} \mathbb{D}' \xrightarrow{\varepsilon} \mathbb{D}' \to R \to 0$ has one free module in each degree, and after applying $\operatorname{Hom}_{\mathbb{D}'}(-, R)$ all the differentials vanish because $\varepsilon$ acts as zero on $R$. This is a general phenomenon: for a local ring with maximal ideal $\mathfrak{m}$ satisfying $\mathfrak{m}^2 = 0$, the Ext algebra of the residue field is the Koszul dual, which is the symmetric algebra on the dual of $\mathfrak{m}$ (untruncated).
+the polynomial algebra on one generator of degree one. So $\operatorname{Ext}^i_{\mathbb{D}'}(R, R) \cong R$ in every degree $i \geq 0$: the minimal free resolution $\cdots \to \mathbb{D}' \xrightarrow{\varepsilon} \mathbb{D}' \xrightarrow{\varepsilon} \mathbb{D}' \to R \to 0$ has one free module in each degree, and after applying $\operatorname{Hom}_{\mathbb{D}'}(-, R)$ all the differentials vanish because $\varepsilon$ acts as zero on $R$. This is a general phenomenon: for a local ring with maximal ideal $\mathrm{M}$ satisfying $\mathrm{M}^2 = 0$, the Ext algebra of the residue field is the Koszul dual, which is the symmetric algebra on the dual of $\mathrm{M}$ (untruncated).
 
 So the representation theory of $\mathbb{D}'$ is controlled by the Ext algebra, and the nilpotence of $\varepsilon$ is the source of the non-semisimplicity.
 

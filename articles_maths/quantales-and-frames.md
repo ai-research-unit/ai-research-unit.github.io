@@ -29,7 +29,7 @@ $$
 
 and conversely every complete Heyting algebra is a frame. The underlying lattice of a frame is distributive.
 
-**Proof.** The element displayed is the largest $c$ with $c\wedge a \leq b$ by the distribution axiom, so it is the relative pseudocomplement and residuation holds; this is the definition of a complete Heyting algebra. Conversely, in a complete Heyting algebra the distribution axiom follows from residuation: for every $i$ one has $a\wedge b_i \leq a\wedge\bigvee_i b_i$, so $\bigvee_i(a\wedge b_i)\leq a\wedge\bigvee_i b_i$, while $a\wedge\bigvee_i b_i \leq \bigvee_i(a\wedge b_i)$ follows by applying the adjunction to the element $\bigvee_i(a\wedge b_i)$, which satisfies $c\wedge a\leq \bigvee_i b_i$. Distributivity is immediate from the axiom applied to finite joins. $\square$
+**Proof.** The element displayed is the largest $c$ with $c\wedge a \leq b$ by the distribution axiom, so it is the relative pseudocomplement and residuation holds; this is the definition of a complete Heyting algebra. Conversely, in a complete Heyting algebra the distribution axiom follows from residuation: for every $i$ one has $a\wedge b_i \leq a\wedge\bigvee_i b_i$, so $\bigvee_i(a\wedge b_i)\leq a\wedge\bigvee_i b_i$, while $a\wedge\bigvee_i b_i \leq \bigvee_i(a\wedge b_i)$ follows by applying the adjunction to the element $\bigvee_i(a\wedge b_i)$, which satisfies $c\wedge a\leq \bigvee_i b_i$. Distributivity is immediate from the axiom applied to finite joins.
 
 **Example (open sets).** Let $X$ be a topological space. The open sets, ordered by inclusion, form a frame $\mathcal{O}(X)$: the join of a family of open sets is its union, the meet of two is the intersection, and the distribution axiom is the set-theoretic identity
 
@@ -53,7 +53,7 @@ $$
 
 **Theorem.** For every nucleus $j$ on a frame $L$, the fixed-point set $L_j$ is a frame for the order inherited from $L$, with joins $\bigvee_i a_i$ computed as $j\bigl(\bigvee_i a_i\bigr)$ and meets computed as in $L$; the map $j$ is a frame homomorphism onto $L_j$, and this correspondence is a bijection between nuclei and **sublocales** of $L$.
 
-**Proof.** The set $L_j$ is closed under meets because $j$ preserves them, and it contains $1$. The join of a family in $L_j$ must be the least fixed point above the family, which is $j(\bigvee_i a_i)$; that this is fixed follows from idempotence and that it is the least follows from monotonicity. The distribution axiom in $L_j$ follows from the distribution axiom in $L$ and the preservation of meets. The correspondence with surjective frame homomorphisms is the standard equivalence between quotient frames and nuclei. $\square$
+**Proof.** The set $L_j$ is closed under meets because $j$ preserves them, and it contains $1$. The join of a family in $L_j$ must be the least fixed point above the family, which is $j(\bigvee_i a_i)$; that this is fixed follows from idempotence and that it is the least follows from monotonicity. The distribution axiom in $L_j$ follows from the distribution axiom in $L$ and the preservation of meets. The correspondence with surjective frame homomorphisms is the standard equivalence between quotient frames and nuclei.
 
 **Example (the double-negation nucleus).** The map $j(a) = \neg\neg a$ is a nucleus on any frame, as in *Heyting Algebras and Intuitionistic Logic*; its fixed points are the **regular elements**. For $L = \mathcal{O}(X)$ they are the regular open sets, and $L_j$ is the complete Boolean algebra of regular open sets, the **Booleanization** of the frame. It is the smallest dense sublocale of $L$: it contains no new open sets and every element of $L$ has a dense interior in $L_j$.
 
@@ -81,7 +81,7 @@ $$
 
 the unit $X \to \operatorname{pt}(\mathcal{O}(X))$ assigns to a point $x$ the frame homomorphism $U \mapsto 1$ if $x \in U$ and $0$ otherwise.
 
-**Proof.** A continuous map $g : X \to \operatorname{pt}(L)$ determines the frame homomorphism $L \to \mathcal{O}(X)$, $a \mapsto \{x : g(x)(a) = 1\}$, and conversely a frame homomorphism $L \to \mathcal{O}(X)$ determines $g$ by the same formula. The two assignments are mutually inverse and natural, which is the adjunction. The unit is the special case. $\square$
+**Proof.** A continuous map $g : X \to \operatorname{pt}(L)$ determines the frame homomorphism $L \to \mathcal{O}(X)$, $a \mapsto \{x : g(x)(a) = 1\}$, and conversely a frame homomorphism $L \to \mathcal{O}(X)$ determines $g$ by the same formula. The two assignments are mutually inverse and natural, which is the adjunction. The unit is the special case.
 
 ### Spatial and Sober Objects
 
@@ -95,11 +95,11 @@ is an isomorphism; equivalently, if the points separate the elements of $L$. A t
 
 **Theorem.** The adjunction $\mathcal{O} \dashv \operatorname{pt}$ restricts to an equivalence between the full subcategory of sober spaces and the full subcategory of spatial locales. In particular the open-set functor is full and faithful on sober spaces, and every locale is the quotient of a spatial locale by a sublocale.
 
-**Proof.** The unit $X \to \operatorname{pt}(\mathcal{O}(X))$ is a homeomorphism exactly when $X$ is sober, and the counit is an isomorphism exactly when $L$ is spatial; the general adjunction theorem then gives the equivalence on the fixed objects. The last statement is the standard factorization of a locale through its spatial reflection and its Booleanization. $\square$
+**Proof.** The unit $X \to \operatorname{pt}(\mathcal{O}(X))$ is a homeomorphism exactly when $X$ is sober, and the counit is an isomorphism exactly when $L$ is spatial; the general adjunction theorem then gives the equivalence on the fixed objects. The last statement is the standard factorization of a locale through its spatial reflection and its Booleanization.
 
 **Proposition.** If $X$ is a Hausdorff space then $X$ is sober. Every finite topological space is sober, and every totally ordered set with the order topology is sober.
 
-**Proof.** In a Hausdorff space an irreducible closed set is a singleton: if $F$ were irreducible and contained two distinct points $x,y$, disjoint neighbourhoods of them would separate $F$ into two proper closed subsets. The finite and order-topology cases are checked directly. $\square$
+**Proof.** In a Hausdorff space an irreducible closed set is a singleton: if $F$ were irreducible and contained two distinct points $x,y$, disjoint neighbourhoods of them would separate $F$ into two proper closed subsets. The finite and order-topology cases are checked directly.
 
 **Remark.** Not every locale is spatial, and a locale can have no points at all. The standard examples are constructed from nuclei that leave only $0$ as a fixed point, giving the empty sublocale as the space of points while retaining a nontrivial algebra; the details are in *Stone Spaces*. This is the precise sense in which pointfree topology is not the topology of a set of points: the frame, not its spectrum, is the primary object, and the points are recovered only when they exist in sufficient supply.
 
@@ -109,7 +109,7 @@ is an isomorphism; equivalently, if the points separate the elements of $L$. A t
 
 **Theorem.** If $X$ is a compact topological space then $\mathcal{O}(X)$ is a compact locale, and if $X$ is compact Hausdorff then $\mathcal{O}(X)$ is a compact Hausdorff locale. Conversely a spatial compact locale is $\mathcal{O}(X)$ for a compact space $X$.
 
-**Proof.** The cover condition for $X$ is the statement that a family of open sets with union $X$ has a finite subfamily with union $X$, which is exactly the compactness of $\mathcal{O}(X)$; the spatial converse follows from the equivalence of the previous theorem. The Hausdorff locale conditions are the pointfree translations of the separation axioms and agree with the topological ones for spatial locales. $\square$
+**Proof.** The cover condition for $X$ is the statement that a family of open sets with union $X$ has a finite subfamily with union $X$, which is exactly the compactness of $\mathcal{O}(X)$; the spatial converse follows from the equivalence of the previous theorem. The Hausdorff locale conditions are the pointfree translations of the separation axioms and agree with the topological ones for spatial locales.
 
 **Example (the Zariski locale).** Let $R$ be a commutative ring and let $\operatorname{Rad}(R)$ be its frame of radical ideals, ordered by inclusion. The **Zariski locale** of $R$ is this frame; its points are the prime ideals of $R$, and they form the Zariski spectrum of *Rings*. The construction is the algebraic prototype of a locale: the spectrum is recovered as the points, and the frame is the primary datum. The same construction with the frame of open sets of a space is the topological prototype, and the two are the standard examples of the theory.
 
@@ -127,7 +127,7 @@ A quantale is **unital** if it has an element $e$ with $e\cdot a = a\cdot e = a$
 
 **Theorem.** A frame is exactly a quantale $Q$ in which the multiplication is commutative and agrees with the meet, $a \cdot b = a \wedge b$. In that case $1$ is a unit, the multiplication is idempotent, and the quantale axioms reduce to the frame axiom.
 
-**Proof.** In a frame the meet is commutative and associative with unit $1$, and it distributes over arbitrary joins by the frame axiom, so the frame is a quantale with $\cdot = \wedge$. Conversely, if in a quantale the multiplication is the meet, then the distribution axiom of the frame is exactly the distribution of $\cdot$ over arbitrary joins, and the lattice is complete by hypothesis. $\square$
+**Proof.** In a frame the meet is commutative and associative with unit $1$, and it distributes over arbitrary joins by the frame axiom, so the frame is a quantale with $\cdot = \wedge$. Conversely, if in a quantale the multiplication is the meet, then the distribution axiom of the frame is exactly the distribution of $\cdot$ over arbitrary joins, and the lattice is complete by hypothesis.
 
 **Example (relations).** Let $X$ be a set and let $Q = \mathcal{P}(X \times X)$ be the set of binary relations on $X$, ordered by inclusion. The join is union, and the product is composition of relations:
 
@@ -159,7 +159,7 @@ $$
 
 form a frame for the order inherited from $Q$, with the joins and meets of $Q$.
 
-**Proof.** The involution preserves arbitrary joins by hypothesis and is its own inverse, so it is a poset isomorphism and preserves arbitrary meets as well; the fixed points are therefore closed under arbitrary joins and meets, and they inherit the distribution of the multiplication from $Q$. $\square$
+**Proof.** The involution preserves arbitrary joins by hypothesis and is its own inverse, so it is a poset isomorphism and preserves arbitrary meets as well; the fixed points are therefore closed under arbitrary joins and meets, and they inherit the distribution of the multiplication from $Q$.
 
 **Example (the quantale of a group).** Let $G$ be a group and let $Q = \mathcal{P}(G)$ with convolution
 

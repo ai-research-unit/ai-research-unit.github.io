@@ -8,7 +8,7 @@ The claim to be established is that the informational unit of the framework — 
 
 This is the informational reading of a structural fact. The article does not claim that the biquaternion algebra predicts the existence of a two-state system, nor that it excludes systems of other dimension: it claims that *if* the informational sector is described by $\mathbb{B}$, then its elementary carrier is forced, because an algebra of $2\times2$ complex matrices has exactly one simple module up to isomorphism, and that module is two-dimensional over $\mathbb{C}$. The qubit is native in the sense that it is read off the algebra rather than imposed on it. What is genuinely open is whether the tensor product $\mathbb{B}\otimes\mathbb{B}$, on which the multi-qubit information-theoretic articles of this subcategory depend, is native in the same sense; that question is raised here and left where the companion articles leave it.
 
-The article proceeds as follows. The algebra and its matrix representative are fixed first. Then the defining module is introduced, its simplicity and uniqueness are recorded, and it is shown that the algebra's left regular module is two copies of it. Then the states are placed on the module: the Hermitian elements act as observables, the rank-one idempotents correspond to rays, and the trace pairing becomes the Hilbert-space inner product. Then the geometry of the module's state space is read off the norm form. A section collects what the module supplies and what it does not, and the article closes with the open questions.
+The article proceeds as follows. The algebra and its matrix representative are fixed first. Then the defining module is introduced, its simplicity and uniqueness are recorded, and it is shown that the algebra's left regular module is two copies of it. Then the states are placed on the module: the Hermitian elements act as observables, the rank-one idempotents correspond to rays, and the trace pairing becomes the Hilbert-space inner product. Then the geometry of the module's state space is read off the biquaternion norm. A section collects what the module supplies and what it does not, and the article closes with the open questions.
 
 ## The Algebra and a Matrix Representative
 
@@ -180,13 +180,13 @@ $$
 \qquad \lambda_\pm = \tfrac{1}{2}\bigl(1\pm|\mathbf{r}|\bigr),
 $$
 
-when $\mathbf{r}\neq0$, and is the maximally mixed state $\tfrac12 e_0$ when $\mathbf{r}=0$. This is the spectral decomposition on the module: the two eigenvectors are the rays of $\hat{\mathbf{r}}$ and $-\hat{\mathbf{r}}$. The correspondence is exactly the ordinary one between a density operator and its eigenvectors, expressed in the algebra. The Bloch ball is the image of the trace-one positive cone, and its boundary is the set of rank-one projectors; the companion article *The Bloch Ball as the Trace-One Slice of the Future Light Cone* develops that geometry from the norm form, and it is recalled below only as far as the module requires.
+when $\mathbf{r}\neq0$, and is the maximally mixed state $\tfrac12 e_0$ when $\mathbf{r}=0$. This is the spectral decomposition on the module: the two eigenvectors are the rays of $\hat{\mathbf{r}}$ and $-\hat{\mathbf{r}}$. The correspondence is exactly the ordinary one between a density operator and its eigenvectors, expressed in the algebra. The Bloch ball is the image of the trace-one positive cone, and its boundary is the set of rank-one projectors; the companion article *The Bloch Ball as the Trace-One Slice of the Future Light Cone* develops that geometry from the biquaternion norm, and it is recalled below only as far as the module requires.
 
 ## The Geometry of the Module
 
-### The norm form on the module
+### The biquaternion norm on the module
 
-The norm form of the algebra is
+The biquaternion norm of the algebra is
 
 $$
 N(\tilde{Q}) = \tilde{Q}\,\bar{\tilde{Q}} = \sum_{\mu=0}^{3} Q_\mu^2 .
@@ -198,13 +198,13 @@ $$
 N(\tilde{Q}) = \bigl(q_0^2 - |\mathbf{q}|^2\bigr)e_0 ,
 $$
 
-which is a real scalar. Positivity of the operator is the non-negativity of the norm form together with $q_0\geq0$: the norm form is the determinant of the matrix image, $N(\tilde{Q}) = \det M(\tilde{Q})\,e_0$, so it vanishes on the boundary of the positive cone as well as outside it, and only the sign of $q_0$ selects the future cone. For a state
+which is a real scalar. Positivity of the operator is the non-negativity of the biquaternion norm together with $q_0\geq0$: the biquaternion norm is the determinant of the matrix image, $N(\tilde{Q}) = \det M(\tilde{Q})\,e_0$, so it vanishes on the boundary of the positive cone as well as outside it, and only the sign of $q_0$ selects the future cone. For a state
 
 $$
 N(\tilde{\rho}) = \tfrac{1}{4}\bigl(1 - |\mathbf{r}|^2\bigr)e_0 .
 $$
 
-The norm form therefore measures the departure of a state from the boundary of the Bloch ball, and it vanishes precisely on the rank-one idempotents — the rays of the module. On the pure states the algebra's norm form has a nonzero kernel; that degenerate cone is the module's set of rays, and it is the geometric reason the rank-one idempotents are the zero divisors of $\mathbb{M}_+$.
+The biquaternion norm therefore measures the departure of a state from the boundary of the Bloch ball, and it vanishes precisely on the rank-one idempotents — the rays of the module. On the pure states the algebra's biquaternion norm has a nonzero kernel; that degenerate cone is the module's set of rays, and it is the geometric reason the rank-one idempotents are the zero divisors of $\mathbb{M}_+$.
 
 ### Tomography on the module
 
@@ -230,7 +230,7 @@ the three pairs of outcome probabilities determine $\mathbf{r}$ and hence the st
 - **The inner product is native.** The Hilbert-space inner product on $S$ is the trace pairing of the algebra, $\langle u|v\rangle = \mathrm{Tr}(|u\rangle\langle v|)$; it is not an independent axiom.
 - **The pure states are the module's rays.** The rank-one idempotents of $\mathbb{M}_+$ correspond bijectively to the rays of $S$, and their matrix images are the rank-one Hermitian projectors.
 - **The Born rule is a module pairing.** $\mathrm{Tr}(\tilde{P}\tilde{H}) = \langle u|\hat{H}|u\rangle$; the algebra's trace formula and the module expectation value are the same operation.
-- **The state geometry is the norm form's cone slice.** The Bloch ball is the trace-one positive slice of $\mathbb{M}_+$, its boundary is the zero-divisor cone of the norm form, and the rays are its extreme points.
+- **The state geometry is the biquaternion norm's cone slice.** The Bloch ball is the trace-one positive slice of $\mathbb{M}_+$, its boundary is the zero-divisor cone of the biquaternion norm, and the rays are its extreme points.
 
 **What it does not supply.**
 
@@ -247,7 +247,7 @@ the three pairs of outcome probabilities determine $\mathbf{r}$ and hence the st
 
 **3. Higher-dimensional modules.** The algebra's simple module is two-dimensional, but its *projective* representations and its tensor powers are not. Which of those are physically available is the module-theoretic form of the question whether the framework admits qutrits and larger systems.
 
-**4. The status of the inner product at the boundary.** The trace pairing is positive definite on $\mathbb{M}_+$ but the norm form is degenerate on the rank-one idempotents. The relation between these two pairings — one the Born rule, the other the light-cone structure — is the geometric thread running through this subcategory, and it is pursued in the entropy and positive-cone articles that follow.
+**4. The status of the inner product at the boundary.** The trace pairing is positive definite on $\mathbb{M}_+$ but the biquaternion norm is degenerate on the rank-one idempotents. The relation between these two pairings — one the Born rule, the other the light-cone structure — is the geometric thread running through this subcategory, and it is pursued in the entropy and positive-cone articles that follow.
 
 **5. Empirical contact.** As for the whole framework, a reformulation of the qubit's carrier predicts nothing that ordinary quantum mechanics does not. The module's nativeness is a statement about how the formalism hangs together, not a new observable.
 
@@ -255,7 +255,7 @@ the three pairs of outcome probabilities determine $\mathbf{r}$ and hence the st
 
 The elementary informational unit of the biquaternion framework is the defining module of the algebra. Because $\mathbb{B}\cong M_2(\mathbb{C})$ is a simple finite-dimensional complex algebra, it has a unique simple left module $S=\mathbb{C}^2$, the column space, and every irreducible representation is equivalent to the action on $S$. The qubit is therefore native to the algebra: it is what the algebra is a matrix algebra of, not a Hilbert space adjoined to it.
 
-On the module, the elements of $\mathbb{M}_+$ act as Hermitian operators; the rank-one idempotents $\tilde{P}_\pm(\hat{\mu}) = \tfrac12(e_0\pm i\hat{\mu})$ correspond bijectively to the rays of $S$, and are exactly the pure states; the trace pairing $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ is the Born rule and coincides with the module expectation value $\langle u|\hat{H}|u\rangle$. A general state $\tilde{\rho} = \tfrac12(e_0+i\mathbf{r})$ is a positive trace-one element with spectral decomposition into two rays, and the norm form $N(\tilde{\rho}) = \tfrac14(1-|\mathbf{r}|^2)e_0$ vanishes exactly on the rays, so that the pure states are the zero divisors of $\mathbb{M}_+$ and the Bloch ball is the trace-one slice of the positive cone. The left regular module is $\mathbb{B}\cong S\oplus S$, an algebraic doubling whose informational content is left open.
+On the module, the elements of $\mathbb{M}_+$ act as Hermitian operators; the rank-one idempotents $\tilde{P}_\pm(\hat{\mu}) = \tfrac12(e_0\pm i\hat{\mu})$ correspond bijectively to the rays of $S$, and are exactly the pure states; the trace pairing $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ is the Born rule and coincides with the module expectation value $\langle u|\hat{H}|u\rangle$. A general state $\tilde{\rho} = \tfrac12(e_0+i\mathbf{r})$ is a positive trace-one element with spectral decomposition into two rays, and the biquaternion norm $N(\tilde{\rho}) = \tfrac14(1-|\mathbf{r}|^2)e_0$ vanishes exactly on the rays, so that the pure states are the zero divisors of $\mathbb{M}_+$ and the Bloch ball is the trace-one slice of the positive cone. The left regular module is $\mathbb{B}\cong S\oplus S$, an algebraic doubling whose informational content is left open.
 
 What the module does not supply is the composition rule for several qubits: the tensor product $\mathbb{B}\otimes\mathbb{B}$ and its four-dimensional module are an additional structure. That, and not the definition of the unit, is where the framework's informational assumptions become substantive.
 
@@ -272,12 +272,12 @@ What the module does not supply is the composition rule for several qubits: the 
 | $\rho_S$ | The defining representation of $\mathbb{B}$ on $S$ |
 | $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$ | Trace |
 | $\tilde{Q}^\dagger$ | Hermitian conjugate (anti-linear involution) |
-| $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$ | Norm form |
+| $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$ | Biquaternion norm |
 | $\tilde{P}_\pm(\hat{\mu}) = \tfrac12(e_0\pm i\hat{\mu})$ | Rank-one idempotents (pure states) |
 | $\tilde{\rho} = \tfrac12(e_0 + i\mathbf{r})$ | State with Bloch vector $\mathbf{r}$, $|\mathbf{r}|\le1$ |
 | $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H}) = \langle u|\hat{H}|u\rangle$ | Trace pairing (Born rule) |
 | $r_k = \mathrm{Tr}(\tilde{\rho}\,ie_k)$ | Bloch components (tomography) |
-| $N(\tilde{\rho}) = \tfrac14(1-|\mathbf{r}|^2)e_0$ | Norm form of a state |
+| $N(\tilde{\rho}) = \tfrac14(1-|\mathbf{r}|^2)e_0$ | Biquaternion norm of a state |
 
 ## Further Reading
 

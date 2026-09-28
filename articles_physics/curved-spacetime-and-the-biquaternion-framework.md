@@ -2,13 +2,13 @@
 
 ## Introduction
 
-Every result in the read-list articles is a statement about one fixed algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, evaluated at one point. The norm form, the rotor group, the rotor conjugation, the light cone as the zero-divisor set, the decomposition $\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-$ — all of them are pointwise and flat. The wave equations written with them presuppose a global coordinate system $(ict,\,x,\,y,\,z)$ carrying a distinguished imaginary time.
+Every result in the read-list articles is a statement about one fixed algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, evaluated at one point. The biquaternion norm, the rotor group, the rotor conjugation, the light cone as the zero-divisor set, the decomposition $\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-$ — all of them are pointwise and flat. The wave equations written with them presuppose a global coordinate system $(ict,\,x,\,y,\,z)$ carrying a distinguished imaginary time.
 
 This article is about what happens when the spacetime in which those equations are written is curved. It is not a report of a finished construction. Its subject is a boundary: what the flat machinery extends to, what a curved metric can be made to do inside the algebra, and where the programme stops.
 
 Three claims organise the discussion, and they are worth stating at the outset, because the prose of the framework elsewhere can suggest more than has been built.
 
-**First, curvature cannot reside in the algebra.** The algebra is the same at every point and its norm form has constant coefficients. Curvature can therefore be carried only by the field that attaches the algebra to the manifold, not by the algebra itself. The question "what is curved spacetime in the biquaternion framework?" is a question about a field of frames, not about $\mathbb{B}$.
+**First, curvature cannot reside in the algebra.** The algebra is the same at every point and its biquaternion norm has constant coefficients. Curvature can therefore be carried only by the field that attaches the algebra to the manifold, not by the algebra itself. The question "what is curved spacetime in the biquaternion framework?" is a question about a field of frames, not about $\mathbb{B}$.
 
 **Second, the framework's own local device does not reach general relativity.** That device is the local scale factor $c = 1/\sqrt{\epsilon\mu}$ of the imaginary time axis. Read as a map of points it produces no curvature at all, because the resulting line element is the flat form of $\mathbb{M}_-$ written in curvilinear coordinates; read as a derivative rule it produces a genuinely curved metric, but of a class so rigid that within it Ricci-flatness forces flatness. The two readings are inequivalent, and the framework's prose does not choose between them.
 
@@ -16,11 +16,11 @@ Three claims organise the discussion, and they are worth stating at the outset, 
 
 The article closes by separating what has been constructed from what remains an agenda. The separation is stark: the kinematical fibre of tetrad gravity is present, its dynamics is absent, and the informational sector $\mathbb{M}_+$ has no curved-space treatment at all.
 
-The conventions are inherited from the read-list articles and none is redefined. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis $e_0 = 1, e_1, e_2, e_3$ satisfying $e_k^2 = -e_0$ and $e_1e_2 = e_3$, and scalar imaginary $i$ commuting with the quaternion units. The anti-Hermitian and Hermitian subspaces are $\mathbb{M}_-$ and $\mathbb{M}_+$, the real-quaternion subspace is $\mathbb{H}_{\mathbb{B}}$, and the norm form is $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$. The rotor group is $\{\tilde{\Lambda} : \tilde{\Lambda}\bar{\tilde{\Lambda}} = e_0\} \cong SL(2,\mathbb{C})$, acting on $\mathbb{M}_-$ by rotor conjugation $\tilde{Q} \mapsto \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^\dagger$, with covering homomorphism $\mathrm{Ad}$ onto $SO^+(1,3)$ and kernel $\{\pm e_0\}$. The trace formula of the informational sector is $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ the vacuum speed.
+The conventions are inherited from the read-list articles and none is redefined. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis $e_0 = 1, e_1, e_2, e_3$ satisfying $e_k^2 = -e_0$ and $e_1e_2 = e_3$, and scalar imaginary $i$ commuting with the quaternion units. The anti-Hermitian and Hermitian subspaces are $\mathbb{M}_-$ and $\mathbb{M}_+$, the real-quaternion subspace is $\mathbb{H}_{\mathbb{B}}$, and the biquaternion norm is $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$. The rotor group is $\{\tilde{\Lambda} : \tilde{\Lambda}\bar{\tilde{\Lambda}} = e_0\} \cong SL(2,\mathbb{C})$, acting on $\mathbb{M}_-$ by rotor conjugation $\tilde{Q} \mapsto \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^\dagger$, with covering homomorphism $\mathrm{Ad}$ onto $SO^+(1,3)$ and kernel $\{\pm e_0\}$. The trace formula of the informational sector is $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ the vacuum speed.
 
 ## What the Flat Machinery Assumes
 
-The pointwise metric of the framework is the polar form of the norm form. For $\tilde{Q} = iq_0 + \mathbf{q}$ and $\tilde{P} = ip_0 + \mathbf{p}$ in $\mathbb{M}_-$,
+The pointwise metric of the framework is the polar form of the biquaternion norm. For $\tilde{Q} = iq_0 + \mathbf{q}$ and $\tilde{P} = ip_0 + \mathbf{p}$ in $\mathbb{M}_-$,
 
 $$
 \tfrac{1}{2}\left(\tilde{Q}\bar{\tilde{P}} + \tilde{P}\bar{\tilde{Q}}\right)
@@ -34,13 +34,13 @@ $$
 \langle \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^\dagger,\ \tilde{\Lambda}\tilde{P}\tilde{\Lambda}^\dagger \rangle = \langle \tilde{Q}, \tilde{P}\rangle,
 $$
 
-because the norm form is invariant and the conjugation action is linear in $\tilde{Q}$. This is the entire metric content of the flat framework: one fixed form on one fixed real vector space.
+because the biquaternion norm is invariant and the conjugation action is linear in $\tilde{Q}$. This is the entire metric content of the flat framework: one fixed form on one fixed real vector space.
 
 Four assumptions are built into that statement, and each is a flat-space assumption.
 
 **1. One algebra, at one point.** The framework has no notion of two points. The four-position $\tilde{Q}$, the four-velocity $\tilde{U}$, and every other four-vector are elements of $\mathbb{M}_-$; separation between events enters only as a difference $\tilde{Q}_1 - \tilde{Q}_2$, never as a displacement along a path.
 
-**2. A norm form with constant coefficients.** The form $\langle \cdot,\cdot \rangle$ is the same at every point, by construction. Nothing in the algebra can vary it.
+**2. A biquaternion norm with constant coefficients.** The form $\langle \cdot,\cdot \rangle$ is the same at every point, by construction. Nothing in the algebra can vary it.
 
 **3. A global chart with a distinguished time axis.** The biquaternionic gradient
 
@@ -56,7 +56,7 @@ The framework is not silent about these limitations. *Introduction to the Biquat
 
 ## Curvature Cannot Be Carried by the Algebra
 
-An algebra has no points, so it cannot have a curvature. The statement is worth making concrete rather than rhetorical. The norm form on $\mathbb{B}$ is a quadratic form with constant coefficients in a fixed basis; the only freedom in writing it is a change of basis, that is, a linear transformation, and a linear transformation maps a flat form to a flat form. There is no parameter in $\mathbb{B}$ that a field could modulate and no way to make the coefficient of the time direction a function of position. If one wants curvature in this framework, one must supply it in the map that attaches $\mathbb{B}$ to spacetime.
+An algebra has no points, so it cannot have a curvature. The statement is worth making concrete rather than rhetorical. The biquaternion norm on $\mathbb{B}$ is a quadratic form with constant coefficients in a fixed basis; the only freedom in writing it is a change of basis, that is, a linear transformation, and a linear transformation maps a flat form to a flat form. There is no parameter in $\mathbb{B}$ that a field could modulate and no way to make the coefficient of the time direction a function of position. If one wants curvature in this framework, one must supply it in the map that attaches $\mathbb{B}$ to spacetime.
 
 Two forms of that map are available, and they are the two routes examined below:
 
@@ -174,7 +174,7 @@ A frame field is not by itself a geometry; a manifold also needs a way to compar
 The positive part is dimensional. The Lie algebra of the rotor group is the traceless part of $\mathbb{B}$,
 
 $$
-\mathfrak{sl}(2,\mathbb{C})_{\mathbb{R}}
+\mathrm{SL}(2,\mathbb{C})_{\mathbb{R}}
 = \mathrm{span}_{\mathbb{R}}\{e_1,e_2,e_3\} \oplus \mathrm{span}_{\mathbb{R}}\{ie_1,ie_2,ie_3\}
 = \left\{ G \in \mathbb{B} : G + \bar{G} = 0 \right\},
 $$
@@ -201,7 +201,7 @@ $$
 
 with $\tilde{\Gamma}_\mu$ in the Lie subspace; the natural abbreviation $D_\mu = \partial_\mu + [\tilde{\Gamma}_\mu, \cdot]$ would be wrong for exactly the boosts, which is where the Lorentzian content of the theory lives.
 
-One object in this neighbourhood is automatic and one is not. The automatic one is the logarithmic derivative of a rotor field: if $\tilde{\Lambda}(x)$ is unit-norm, then both $\bar{\tilde{\Lambda}}\,\partial_\mu\tilde{\Lambda}$ and $\partial_\mu\tilde{\Lambda}\,\bar{\tilde{\Lambda}}$ are traceless, hence lie in the Lie algebra, because $\bar{\tilde{\Lambda}}\tilde{\Lambda} = e_0$ differentiates to zero. So a frame carried by a rotor field arrives with a natural $\mathfrak{sl}(2,\mathbb{C})$-valued connection. But it is pure gauge, and its curvature vanishes — which is the same statement as the flatness of the rotor-field metric in the previous section, arrived at from the other direction. Consistency, not new content.
+One object in this neighbourhood is automatic and one is not. The automatic one is the logarithmic derivative of a rotor field: if $\tilde{\Lambda}(x)$ is unit-norm, then both $\bar{\tilde{\Lambda}}\,\partial_\mu\tilde{\Lambda}$ and $\partial_\mu\tilde{\Lambda}\,\bar{\tilde{\Lambda}}$ are traceless, hence lie in the Lie algebra, because $\bar{\tilde{\Lambda}}\tilde{\Lambda} = e_0$ differentiates to zero. So a frame carried by a rotor field arrives with a natural $\mathrm{SL}(2,\mathbb{C})$-valued connection. But it is pure gauge, and its curvature vanishes — which is the same statement as the flatness of the rotor-field metric in the previous section, arrived at from the other direction. Consistency, not new content.
 
 What is not automatic is everything one would want. Metric compatibility and the vanishing of torsion are conditions, not consequences; nothing in the algebra selects the Levi-Civita lift. And the whole dynamics is absent: there is no action, no field equation for $\tilde{E}_\mu$ or $\tilde{\Gamma}_\mu$, and therefore no Einstein equation. The algebra can hold the objects of the spin-connection formalism in the same notation in which it holds the rotors and the four-vectors. It does not generate a single equation for them.
 
@@ -217,7 +217,7 @@ The two-sector decomposition $\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-$ is 
 
 The boundary can be drawn as a list, and drawing it is this article's main result.
 
-**Constructed** (algebraic facts, each recomputed for this article). The pointwise metric of $\mathbb{M}_-$ as the polar form of the norm form, with signature $(3,1)$. Its invariance under rotor conjugation. The representation of an arbitrary Lorentzian metric by a frame field $\tilde{E}_\mu \in \mathbb{M}_-$ with $g_{\mu\nu} = \langle \tilde{E}_\mu, \tilde{E}_\nu\rangle$, and the local $SL(2,\mathbb{C})$ gauge invariance of that representation. The identification of the rotor group's Lie algebra with the six-dimensional traceless subspace of $\mathbb{B}$. The two-sided infinitesimal action of a connection, and the tracelessness of a rotor field's logarithmic derivative. The induced metrics of the local-scale route in both readings, with the flatness of Reading A and the closed-form curvature of Reading B, and the result that within Reading B's metric class Ricci-flatness implies flatness.
+**Constructed** (algebraic facts, each recomputed for this article). The pointwise metric of $\mathbb{M}_-$ as the polar form of the biquaternion norm, with signature $(3,1)$. Its invariance under rotor conjugation. The representation of an arbitrary Lorentzian metric by a frame field $\tilde{E}_\mu \in \mathbb{M}_-$ with $g_{\mu\nu} = \langle \tilde{E}_\mu, \tilde{E}_\nu\rangle$, and the local $SL(2,\mathbb{C})$ gauge invariance of that representation. The identification of the rotor group's Lie algebra with the six-dimensional traceless subspace of $\mathbb{B}$. The two-sided infinitesimal action of a connection, and the tracelessness of a rotor field's logarithmic derivative. The induced metrics of the local-scale route in both readings, with the flatness of Reading A and the closed-form curvature of Reading B, and the result that within Reading B's metric class Ricci-flatness implies flatness.
 
 **Agenda** (nothing constructed). An action principle or field equation for the frame or the connection, and hence any Einstein equation. Coupling to sources, with the bookkeeping problem that the gravitating objects are symmetric rank-2 tensors, $\left(1,1\right)\oplus\left(0,0\right)$, while the framework's own fields are four-vectors in $\mathbb{M}_-$. Curved-space forms of the biquaternion Maxwell and Dirac equations written in the framework's own notation, for which the background-dependence of $\tilde{\nabla}$ is precisely the obstacle. Global and topological structure of every kind: the algebra is a point, so causal structure, horizons, singularities, and topology are outside it, and even the existence of spinor fields on a manifold is a topological condition — the vanishing of the second Stiefel–Whitney class — that the algebra cannot see; the globalisation of the spinor module to a bundle over a curved background is recorded as a separate open item in *The Spinor Module in Biquaternionic Form and Its Lorentz Action*. The discrete symmetries, which are not in the connected rotor group. The informational sector, as above. And empirical contact, which remains the framework's central open question and is not advanced by anything here.
 
@@ -225,7 +225,7 @@ The honest summary of the boundary is this. The biquaternion framework contains 
 
 ## Summary
 
-The read-list machinery is flat and pointwise: one fixed algebra, one fixed norm form with constant coefficients, a global chart with a distinguished imaginary time, and a global rotor group. Curvature cannot be made a property of the algebra, because the algebra has no points and no deformable coefficient; it can only be carried by the field that attaches the algebra to spacetime.
+The read-list machinery is flat and pointwise: one fixed algebra, one fixed biquaternion norm with constant coefficients, a global chart with a distinguished imaginary time, and a global rotor group. Curvature cannot be made a property of the algebra, because the algebra has no points and no deformable coefficient; it can only be carried by the field that attaches the algebra to spacetime.
 
 The framework's own local device is the local scale $c = 1/\sqrt{\epsilon\mu}$ of the imaginary time axis. It admits two inequivalent readings. As a map of points, $\tilde{Q} = i\,c(\mathbf{x})\,t\,e_0 + \mathbf{x}$, it yields a nondegenerate metric with $\det g = -c^2$ that is identically flat — the pullback of the flat form of $\mathbb{M}_-$ along a diffeomorphism — as direct computation confirms. As a derivative rule, $\partial_{ict} = -(i/c)\partial_t$ with $c$ held fixed in the differential, it yields $g_{\mu\nu} = \mathrm{diag}(-c^2,1,1,1)$, genuinely curved, with $R_{00} = -u\Delta u$, $R_{0i} = 0$, $R_{ij} = \partial_i\partial_j u / u$ for $u = c$. The framework's prose does not choose between the readings, and the choice is left open here.
 
@@ -242,9 +242,9 @@ What is missing is not a technical detail but the theory. Nothing determines the
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
 | $e_0=1,e_1,e_2,e_3$ | Quaternion basis, $e_k^2=-e_0$, $e_1e_2=e_3$ |
 | $i$ | Scalar imaginary, $i^2=-1$ |
-| $\mathbb{M}_-$, $\mathbb{M}_+$ | Anti-Hermitian (material) and Hermitian (informational) subspaces |
+| $\mathbb{M}_+$, $\mathbb{M}_-$ | Hermitian (informational) and anti-Hermitian (material) subspaces |
 | $\mathbb{H}_{\mathbb{B}}$ | Real-quaternion subspace, home of the rotation rotors |
-| $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$ | Norm form |
+| $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$ | Biquaternion norm |
 | $\langle \tilde{Q},\tilde{P}\rangle = \mathrm{Sc}(\tilde{Q}\bar{\tilde{P}})$ | Bilinear (polar) form on $\mathbb{M}_-$; the pointwise metric |
 | $\tilde{\Lambda} \in SL(2,\mathbb{C})$ | Unit-norm biquaternion (Lorentz rotor) |
 | $\tilde{Q} \mapsto \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^\dagger$ | Rotor conjugation (four-vector action) |
@@ -254,7 +254,7 @@ What is missing is not a technical detail but the theory. Nothing determines the
 | $\tilde{\nabla} = e_0\partial_{ict}+e_1\partial_x+e_2\partial_y+e_3\partial_z$ | Biquaternionic gradient (needs a global chart) |
 | $\tilde{E}_\mu(x) \in \mathbb{M}_-$ | Frame field (tetrad): $d\tilde{Q} = \tilde{E}_\mu dx^\mu$ |
 | $g_{\mu\nu} = \langle \tilde{E}_\mu,\tilde{E}_\nu\rangle$ | Metric carried by the frame field |
-| $J_k = e_k$, $K_k = ie_k$ | Rotation and boost generators, spanning $\mathfrak{sl}(2,\mathbb{C})_{\mathbb{R}} \subset \mathbb{B}$ |
+| $J_k = e_k$, $K_k = ie_k$ | Rotation and boost generators, spanning $\mathrm{SL}(2,\mathbb{C})_{\mathbb{R}} \subset \mathbb{B}$ |
 | $\tilde{\Gamma}_\mu$ | Connection 1-form, valued in the Lie subspace |
 | $D_\mu\tilde{Q} = \partial_\mu\tilde{Q} + \tilde{\Gamma}_\mu\tilde{Q} + \tilde{Q}\tilde{\Gamma}_\mu^\dagger$ | Covariant derivative on $\mathbb{M}_-$ (two-sided) |
 | $u = c$, $f = c^2$ | Local scale factor and its square, in the local-scale route |

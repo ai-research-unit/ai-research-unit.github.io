@@ -23,11 +23,11 @@ Equivalently, $R$ has no zero divisors in the sense of *Rings*, §Zero Divisors,
 
 **Proposition (cancellation).** Let $R$ be an integral domain, $a, b, c \in R$ and $a \neq 0$. If $ab = ac$ then $b = c$.
 
-**Proof.** From $a(b-c) = 0$ and $a \neq 0$ the definition gives $b - c = 0$. $\square$
+**Proof.** From $a(b-c) = 0$ and $a \neq 0$ the definition gives $b - c = 0$.
 
 **Proposition.** Every integral domain is a reduced ring in the sense of *Reduced Rings and the Nilradical*, above this article in this category, and every domain other than the zero ring is connected, its only idempotents being $0$ and $1$.
 
-**Proof.** A nonzero nilpotent $a$ with $a^n = 0$ and $n$ minimal satisfies $a \cdot a^{n-1} = 0$ with $a^{n-1} \neq 0$, so $a$ is a zero divisor, which a domain does not have. If $e$ is idempotent and $e \neq 0$ then $e(1-e) = 0$, so $1 - e = 0$ and $e = 1$. $\square$
+**Proof.** A nonzero nilpotent $a$ with $a^n = 0$ and $n$ minimal satisfies $a \cdot a^{n-1} = 0$ with $a^{n-1} \neq 0$, so $a$ is a zero divisor, which a domain does not have. If $e$ is idempotent and $e \neq 0$ then $e(1-e) = 0$, so $1 - e = 0$ and $e = 1$.
 
 **Remark.** The condition "$1 \neq 0$" is not redundant: the zero ring satisfies $ab = 0 \Rightarrow a = 0$ or $b = 0$ vacuously, and is excluded in order that the prime subring of a domain be well defined.
 
@@ -43,7 +43,7 @@ Equivalently, $R$ has no zero divisors in the sense of *Rings*, §Zero Divisors,
 
 **(d)** $(R[x])^{\times} = R^{\times}$.
 
-**Proof.** (a) A subring with the same $1$ inherits the absence of zero divisors. (b) $(1, 0)(0, 1) = (0,0)$ with both factors nonzero. (c) If $f$ and $g$ are nonzero with leading coefficients $a$ and $b$, then the term of degree $\deg f + \deg g$ in $fg$ is $ab x^{\deg f + \deg g}$, and $ab \neq 0$ in the domain $R$; no higher-degree term occurs, so the coefficient is nonzero and $fg \neq 0$. (d) If $fg = 1$ then $\deg f + \deg g = \deg 1 = 0$, so $f$ and $g$ are nonzero constants, and a constant is a unit of $R[x]$ exactly when it is a unit of $R$. $\square$
+**Proof.** (a) A subring with the same $1$ inherits the absence of zero divisors. (b) $(1, 0)(0, 1) = (0,0)$ with both factors nonzero. (c) If $f$ and $g$ are nonzero with leading coefficients $a$ and $b$, then the term of degree $\deg f + \deg g$ in $fg$ is $ab x^{\deg f + \deg g}$, and $ab \neq 0$ in the domain $R$; no higher-degree term occurs, so the coefficient is nonzero and $fg \neq 0$. (d) If $fg = 1$ then $\deg f + \deg g = \deg 1 = 0$, so $f$ and $g$ are nonzero constants, and a constant is a unit of $R[x]$ exactly when it is a unit of $R$.
 
 The general theory of polynomial rings — degree, the division algorithm, roots in the applications sense and the arithmetic of $R[x]$ as a ring — is *Polynomial Rings and Rational Functions*, below this article in this category, and only the two facts above and the root theorem of this article are used before it is reached.
 
@@ -71,7 +71,7 @@ The general theory of polynomial rings — degree, the division algorithm, roots
 
 **(e)** If $a \mid b$ and $a \mid c$ then $a \mid (bx + cy)$ for all $x, y \in R$.
 
-**Proof.** (a) $a = a \cdot 1$, $a = 1 \cdot a$ and $0 = a \cdot 0$. (b) If $b = ax$ and $c = by$ then $c = a(xy)$. (c) $b = ac$ says exactly that $b \in (a)$, that is, $(b) \subseteq (a)$. (d) Clear from the definition; cancellation gives $ua = av \Rightarrow u = v$ when $a \neq 0$. (e) $bx + cy = a(x'x + y'y)$ if $b = ax'$ and $c = ay'$. $\square$
+**Proof.** (a) $a = a \cdot 1$, $a = 1 \cdot a$ and $0 = a \cdot 0$. (b) If $b = ax$ and $c = by$ then $c = a(xy)$. (c) $b = ac$ says exactly that $b \in (a)$, that is, $(b) \subseteq (a)$. (d) Clear from the definition; cancellation gives $ua = av \Rightarrow u = v$ when $a \neq 0$. (e) $bx + cy = a(x'x + y'y)$ if $b = ax'$ and $c = ay'$.
 
 Thus divisibility is a reflexive and transitive relation, a preorder; by (c) it is the inclusion order of principal ideals read backwards.
 
@@ -81,13 +81,13 @@ Thus divisibility is a reflexive and transitive relation, a preorder; by (c) it 
 
 **Proposition (associates).** Let $R$ be an integral domain and $a, b \in R$. Then $a \sim b$ if and only if $a \mid b$ and $b \mid a$.
 
-**Proof.** If $a = ub$ with $u$ a unit then $b = u^{-1}a$, so each divides the other. Conversely suppose $b = ax$ and $a = by$. If $a = 0$ then $b = a x = 0$, and $a = 1 \cdot b$. If $a \neq 0$, then $a = axy$ and cancellation gives $1 = xy$, so $x$ is a unit and $a \sim b$. $\square$
+**Proof.** If $a = ub$ with $u$ a unit then $b = u^{-1}a$, so each divides the other. Conversely suppose $b = ax$ and $a = by$. If $a = 0$ then $b = a x = 0$, and $a = 1 \cdot b$. If $a \neq 0$, then $a = axy$ and cancellation gives $1 = xy$, so $x$ is a unit and $a \sim b$.
 
 This is the point at which the domain hypothesis is used: in a general commutative ring the conclusion fails, and what breaks it is that the two cofactors need not be units. In $R = k[s,t]/(s^2, st^2)$ the element $s$ divides $s + st$, because $s + st = s(1+t)$, and $s + st$ divides $s$, because $s = (s+st)(1-t)$; but the units of $R$ are the classes $c + s(b + et)$ with $c \neq 0$, and these multiply $s$ to $cs$, so $s+st$ is not an associate of $s$.
 
 **Corollary.** Association is an equivalence relation, and divisibility induces a partial order on the associate classes of an integral domain: $[a] \leq [b]$ exactly when $a \mid b$. The class of $0$ is the largest element, and the class of the units is the smallest.
 
-**Proof.** Reflexivity, symmetry and transitivity follow from $1 \in R^{\times}$ and the closure of $R^{\times}$ under inverses and products; antisymmetry on classes is the proposition above. $\square$
+**Proof.** Reflexivity, symmetry and transitivity follow from $1 \in R^{\times}$ and the closure of $R^{\times}$ under inverses and products; antisymmetry on classes is the proposition above.
 
 ### Irreducible and Prime Elements
 
@@ -105,7 +105,7 @@ Immediately above a domain in the chain one asks which elements cannot be factor
 
 **(b)** The ideal $(p)$ generated by a prime element $p$ is a prime ideal, and conversely if $(p)$ is prime and $p \neq 0$ then $p$ is prime.
 
-**Proof.** (a) Let $p$ be prime and $p = bc$. Since $p \mid bc = p$, primality gives $p \mid b$ or $p \mid c$. If $p \mid b$, say $b = pd$, then $p = pdc$ and cancellation of $p \neq 0$ gives $dc = 1$, so $c$ is a unit; the other case is symmetric. (b) $ab \in (p)$ means $p \mid ab$, which for prime $p$ means $p \mid a$ or $p \mid b$, that is $a \in (p)$ or $b \in (p)$; conversely $(p)$ prime says $p \mid ab$ implies $p \mid a$ or $p \mid b$. $\square$
+**Proof.** (a) Let $p$ be prime and $p = bc$. Since $p \mid bc = p$, primality gives $p \mid b$ or $p \mid c$. If $p \mid b$, say $b = pd$, then $p = pdc$ and cancellation of $p \neq 0$ gives $dc = 1$, so $c$ is a unit; the other case is symmetric. (b) $ab \in (p)$ means $p \mid ab$, which for prime $p$ means $p \mid a$ or $p \mid b$, that is $a \in (p)$ or $b \in (p)$; conversely $(p)$ prime says $p \mid ab$ implies $p \mid a$ or $p \mid b$.
 
 **Remark.** The converse of (a) fails, and its failure is the arithmetic obstruction that the rung *Unique Factorisation Domains*, below this article in this category, is defined to exclude: in $\mathbb{Z}[\sqrt{-5}]$ the element $2$ is irreducible but not prime. What is missing in a general domain is not the factorisation theory but the existence of greatest common divisors, which *GCD Domains*, below this article in this category, adds.
 
@@ -123,7 +123,7 @@ $$
 
 **Theorem.** Let $R$ be an integral domain. Then $\operatorname{char} R$ is either $0$ or a prime number. In particular $\operatorname{char} R \neq 1$, and no domain has composite characteristic.
 
-**Proof.** Suppose $n = \operatorname{char} R$ is finite and $n = ab$ with $a, b > 1$. Then $(a \cdot 1)(b \cdot 1) = (ab) \cdot 1 = n \cdot 1 = 0$, and since $R$ is a domain one factor vanishes, so $a \cdot 1 = 0$ or $b \cdot 1 = 0$, contradicting the minimality of $n$. Hence $n$ has no proper factorisation. $\square$
+**Proof.** Suppose $n = \operatorname{char} R$ is finite and $n = ab$ with $a, b > 1$. Then $(a \cdot 1)(b \cdot 1) = (ab) \cdot 1 = n \cdot 1 = 0$, and since $R$ is a domain one factor vanishes, so $a \cdot 1 = 0$ or $b \cdot 1 = 0$, contradicting the minimality of $n$. Hence $n$ has no proper factorisation.
 
 **Corollary.** $\mathbb{Z}/6\mathbb{Z}$ is not an integral domain, since it has characteristic $6$; a domain of characteristic $0$ contains a copy of $\mathbb{Z}$ and no finite subring, and a domain of characteristic $p$ contains a copy of $\mathbb{F}_p$. The quotient $\mathbb{Z}/p\mathbb{Z}$ is the field $\mathbb{F}_p$, the field axioms being those of *Fields*, later in this category.
 
@@ -133,7 +133,7 @@ $$
 (x + y)^{p^n} = x^{p^n} + y^{p^n}, \qquad (xy)^{p^n} = x^{p^n} y^{p^n} .
 $$
 
-**Proof.** For $n = 1$, expand $(x+y)^p$ by the binomial theorem of *Commutative Rings*. Each binomial coefficient $\binom{p}{k}$ with $0 < k < p$ is divisible by $p$ and so vanishes in $R$, leaving $x^p + y^p$; the second identity is the commutativity of $R$. The general case follows by iterating the case $n = 1$. $\square$
+**Proof.** For $n = 1$, expand $(x+y)^p$ by the binomial theorem of *Commutative Rings*. Each binomial coefficient $\binom{p}{k}$ with $0 < k < p$ is divisible by $p$ and so vanishes in $R$, leaving $x^p + y^p$; the second identity is the commutativity of $R$. The general case follows by iterating the case $n = 1$.
 
 ### The Prime Subring and the Prime Field
 
@@ -149,11 +149,11 @@ The image of $\chi$ is the smallest subring of $R$ containing $1$.
 
 **(c)** The characteristic of a subring of $R$ that contains $1$ equals $\operatorname{char} R$, and its prime subring is $P$.
 
-**Proof.** (a) If $\chi(m) = \chi(n)$ with $m > n$ then $(m-n) \cdot 1 = 0$ with $m - n > 0$, contradicting $\operatorname{char} R = 0$. (b) The kernel of $\chi$ is $p\mathbb{Z}$ and $\mathbb{Z}/p\mathbb{Z}$ is a field. (c) The element $1$ and the subring it generates are the same in $R$ and in a subring containing $1$. $\square$
+**Proof.** (a) If $\chi(m) = \chi(n)$ with $m > n$ then $(m-n) \cdot 1 = 0$ with $m - n > 0$, contradicting $\operatorname{char} R = 0$. (b) The kernel of $\chi$ is $p\mathbb{Z}$ and $\mathbb{Z}/p\mathbb{Z}$ is a field. (c) The element $1$ and the subring it generates are the same in $R$ and in a subring containing $1$.
 
 **Proposition (embedding of the prime field).** Let $R$ be an integral domain. Then $R$ contains a smallest subfield, namely $\mathbb{Q}$ if $\operatorname{char} R = 0$ and $\mathbb{F}_p$ if $\operatorname{char} R = p$.
 
-**Proof.** In prime characteristic the prime subring is the field $\mathbb{F}_p$ by the proposition above. In characteristic $0$ the prime subring is $\mathbb{Z}$, which is not a field; it is contained in every subfield of $R$, and the smallest subfield containing it is its fraction field. $\square$
+**Proof.** In prime characteristic the prime subring is the field $\mathbb{F}_p$ by the proposition above. In characteristic $0$ the prime subring is $\mathbb{Z}$, which is not a field; it is contained in every subfield of $R$, and the smallest subfield containing it is its fraction field.
 
 The fraction field of a domain is constructed in *Localization and the Fraction Field*, below this article in this category: every integral domain $R$ embeds in a field $\operatorname{Frac}(R)$, its **fraction field**, characterised by the property that every injective homomorphism from $R$ into a field extends uniquely to $\operatorname{Frac}(R)$. In characteristic $0$ the fraction field of $\mathbb{Z}$ is $\mathbb{Q}$; in prime characteristic the fraction field of $\mathbb{F}_p$ is $\mathbb{F}_p$ itself.
 
@@ -175,7 +175,7 @@ $$
 f(x) = f(x) - f(a) = \sum_{k=1}^{n} c_k (x^k - a^k) = (x-a) \sum_{k=1}^{n} c_k (x^{k-1} + x^{k-2}a + \cdots + a^{k-1}),
 $$
 
-which exhibits $g$ of the stated degree when $c_n \neq 0$. $\square$
+which exhibits $g$ of the stated degree when $c_n \neq 0$.
 
 **Theorem (root theorem).** Let $R$ be an integral domain and let $f \in R[x]$ have degree $< m$. If $f$ has $m$ distinct roots $a_1, \ldots, a_m$ in $R$, then $f = 0$.
 
@@ -185,23 +185,23 @@ $$
 0 = f(a_i) = (a_i - a_1) g(a_i),
 $$
 
-and $a_i - a_1 \neq 0$ since the roots are distinct, so $g(a_i) = 0$ because $R$ is a domain. Thus $g$ has the $m - 1$ distinct roots $a_2, \ldots, a_m$ and degree $< m - 1$, and the induction hypothesis gives $g = 0$, hence $f = 0$. $\square$
+and $a_i - a_1 \neq 0$ since the roots are distinct, so $g(a_i) = 0$ because $R$ is a domain. Thus $g$ has the $m - 1$ distinct roots $a_2, \ldots, a_m$ and degree $< m - 1$, and the induction hypothesis gives $g = 0$, hence $f = 0$.
 
 ### Consequences
 
 **Corollary.** Let $R$ be an integral domain and $f \in R[x]$ nonzero of degree $n$. Then $f$ has at most $n$ roots in $R$.
 
-**Proof.** If $f$ had $n+1$ distinct roots, the root theorem with $m = n+1$ would give $f = 0$, since $\deg f = n < n+1$. $\square$
+**Proof.** If $f$ had $n+1$ distinct roots, the root theorem with $m = n+1$ would give $f = 0$, since $\deg f = n < n+1$.
 
 **Corollary.** Let $R$ be an integral domain and let $f, g \in R[x]$ have degree $\leq n$. If $f(a) = g(a)$ for $n+1$ distinct elements $a \in R$, then $f = g$.
 
-**Proof.** Apply the previous corollary to $f - g$, of degree $\leq n$. $\square$
+**Proof.** Apply the previous corollary to $f - g$, of degree $\leq n$.
 
 **Example.** Over $\mathbb{Z}/4\mathbb{Z}$, which is not a domain, the polynomial $2x$ of degree $1$ has the two roots $0$ and $2$; over $\mathbb{Z}/8\mathbb{Z}$, the polynomial $x^2 - 1$ has the four roots $1, 3, 5, 7$, since each of these is its own inverse modulo $8$. So the number of roots can exceed the degree when the ring has zero divisors, and the domain hypothesis in the root theorem and in both corollaries cannot be dropped. Over a domain the bound is sharp: $x^2 - 1$ has exactly the two roots $\pm 1$ in $\mathbb{Z}$, and $x^2 + 1$ has none.
 
 **Corollary.** A finite integral domain is a field.
 
-**Proof.** Let $R$ be a finite domain and $a \in R$ nonzero. The powers $a, a^2, a^3, \ldots$ cannot all be distinct in the finite set $R$, so $a^i = a^j$ for some $i > j \geq 1$. Then $a^j (a^{i-j} - 1) = 0$ with $a^j \neq 0$, so $a^{i-j} = 1$ and $a \cdot a^{i-j-1} = 1$ exhibits $a$ as a unit. $\square$
+**Proof.** Let $R$ be a finite domain and $a \in R$ nonzero. The powers $a, a^2, a^3, \ldots$ cannot all be distinct in the finite set $R$, so $a^i = a^j$ for some $i > j \geq 1$. Then $a^j (a^{i-j} - 1) = 0$ with $a^j \neq 0$, so $a^{i-j} = 1$ and $a \cdot a^{i-j-1} = 1$ exhibits $a$ as a unit.
 
 ---
 
@@ -219,7 +219,7 @@ $$
 N(a + b\sqrt{d}) = a^2 - d b^2 = (a + b\sqrt{d})(a - b\sqrt{d}),
 $$
 
-which is multiplicative, so that $N(xy) = N(x)N(y)$, and an element is a unit exactly when its norm is a unit of $\mathbb{Z}$, that is, when $N(x) = \pm 1$; when $d < 0$ the norm is non-negative and the condition is $N(x) = 1$. For $d = -1$ and $d = -5$ the norm reads $N(a+bi) = a^2 + b^2$ and $N(a + b\sqrt{-5}) = a^2 + 5b^2$. This $N$ is the norm form on a quadratic ring; it is not the Euclidean degree function of *Euclidean Domains*, below this article in this category, although the letter is the same.
+which is multiplicative, so that $N(xy) = N(x)N(y)$, and an element is a unit exactly when its norm is a unit of $\mathbb{Z}$, that is, when $N(x) = \pm 1$; when $d < 0$ the norm is non-negative and the condition is $N(x) = 1$. For $d = -1$ and $d = -5$ the norm reads $N(a+bi) = a^2 + b^2$ and $N(a + b\sqrt{-5}) = a^2 + 5b^2$. This $N$ is the norm on a quadratic ring; it is not the Euclidean degree function of *Euclidean Domains*, below this article in this category, although the letter is the same.
 
 ### Where the Rung Sits
 
@@ -261,7 +261,7 @@ A nonzero non-unit is irreducible when it admits no nontrivial factorisation and
 | $\chi : \mathbb{Z} \to R$ | The unique unital homomorphism, $n \mapsto n \cdot 1$ |
 | $\mathbb{F}_p$ | The field $\mathbb{Z}/p\mathbb{Z}$ of $p$ elements |
 | $\operatorname{Frac}(R)$ | Fraction field of $R$ |
-| $N(a + b\sqrt{d}) = a^2 - d b^2$ | Norm form on a quadratic ring $\mathbb{Z}[\sqrt{d}]$ |
+| $N(a + b\sqrt{d}) = a^2 - d b^2$ | Norm on a quadratic ring $\mathbb{Z}[\sqrt{d}]$ |
 
 ## Further Reading
 

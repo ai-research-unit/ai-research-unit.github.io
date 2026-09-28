@@ -53,7 +53,7 @@ The satisfaction relation depends only on the isomorphism type of the structure,
 
 **Proposition.** A homomorphism preserves the satisfaction of every **positive** formula, that is, a formula built from atomic formulas by $\wedge, \vee$ and the quantifiers (without $\neg$ and without $\to$); an embedding preserves the satisfaction of every **existential** formula, and an isomorphism preserves every formula. If $h$ is an embedding then $\mathcal{M} \models \varphi[a]$ implies $\mathcal{N} \models \varphi[h \circ a]$ for quantifier-free $\varphi$.
 
-**Proof sketch.** Induction on the complexity of $\varphi$. Atomic formulas are preserved by a homomorphism by the definition, and the definition of a homomorphism for relations is one-directional; an embedding is two-directional, which extends the induction through negations; and injectivity together with the substructure conditions extends it through quantifiers for existential formulas. $\square$
+**Proof sketch.** Induction on the complexity of $\varphi$. Atomic formulas are preserved by a homomorphism by the definition, and the definition of a homomorphism for relations is one-directional; an embedding is two-directional, which extends the induction through negations; and injectivity together with the substructure conditions extends it through quantifiers for existential formulas.
 
 ## Elementary Equivalence and Elementary Maps
 
@@ -65,7 +65,7 @@ The satisfaction relation depends only on the isomorphism type of the structure,
 
 **Theorem (Vaught's test).** Let $T$ be a theory in a countable language with no finite models. If $T$ is $\kappa$-categorical for some infinite cardinal $\kappa$, then $T$ is complete.
 
-**Proof.** Let $\mathcal{M}, \mathcal{N} \models T$. By the downward Löwenheim–Skolem theorem of *Formal Logic and Computability*, each has a countable model elementarily equivalent to it; since $T$ has no finite models, those countable models are infinite. By the upward theorem, each has a model of cardinality $\kappa$, and by $\kappa$-categoricity those two models are isomorphic, hence elementarily equivalent. Composing the elementary equivalences gives $\mathcal{M} \equiv \mathcal{N}$. $\square$
+**Proof.** Let $\mathcal{M}, \mathcal{N} \models T$. By the downward Löwenheim–Skolem theorem of *Formal Logic and Computability*, each has a countable model elementarily equivalent to it; since $T$ has no finite models, those countable models are infinite. By the upward theorem, each has a model of cardinality $\kappa$, and by $\kappa$-categoricity those two models are isomorphic, hence elementarily equivalent. Composing the elementary equivalences gives $\mathcal{M} \equiv \mathcal{N}$.
 
 Vaught's test is the standard route to completeness, and it is applied to algebraically closed fields and to dense linear orders below. Its hypothesis that the theory have no finite models is essential: the theory with no nonlogical axioms has finite models of every size and is not complete.
 
@@ -89,7 +89,7 @@ is true in every dense linear order without endpoints and false in $\mathbb{Z}$,
 
 **Theorem (Tarski–Vaught criterion).** Let $\mathcal{M}$ be a substructure of $\mathcal{N}$. Then $\mathcal{M} \preceq \mathcal{N}$ if and only if, for every formula $\varphi(x, \vec y)$ and every tuple $\vec a \in M$, whenever $\mathcal{N} \models \exists x\,\varphi(x,\vec a)$ there is $b \in M$ with $\mathcal{N} \models \varphi(b, \vec a)$.
 
-**Proof sketch.** If $\mathcal{M} \preceq \mathcal{N}$, an element witnessing the existential statement in $\mathcal{N}$ may be replaced by one in $M$ using elementarity and the satisfaction of the existential formula in $\mathcal{M}$. Conversely, assume the condition and prove $\mathcal{M} \models \varphi[\vec a] \iff \mathcal{N} \models \varphi[\vec a]$ for all $\vec a \in M$ by induction on $\varphi$: the atomic case is the definition of substructure, the connectives are immediate, and the quantifier case uses the condition to move a witness into $M$. $\square$
+**Proof sketch.** If $\mathcal{M} \preceq \mathcal{N}$, an element witnessing the existential statement in $\mathcal{N}$ may be replaced by one in $M$ using elementarity and the satisfaction of the existential formula in $\mathcal{M}$. Conversely, assume the condition and prove $\mathcal{M} \models \varphi[\vec a] \iff \mathcal{N} \models \varphi[\vec a]$ for all $\vec a \in M$ by induction on $\varphi$: the atomic case is the definition of substructure, the connectives are immediate, and the quantifier case uses the condition to move a witness into $M$.
 
 The criterion is the working form of the downward Löwenheim–Skolem theorem: given a subset $A$ of a structure, one closes $A$ under the functions and under the choice of witnesses, and the closure is an elementary substructure of cardinality at most $\max(|A|, |L|, \aleph_0)$.
 
@@ -105,7 +105,7 @@ is **definable** in $\mathcal{M}$ with **parameters** $\vec b$. A set is **$\var
 
 **Proposition.** The definable sets in $\mathcal{M}$ with parameters in a fixed set $B$ form a Boolean algebra under union, intersection and complement, and are closed under finite and — when the quantifiers are available — under arbitrary definable images and preimages. They are invariant under automorphisms: if $\sigma$ is an automorphism of $\mathcal{M}$ fixing $B$ pointwise and $D$ is definable with parameters in $B$, then $\sigma(D) = D$.
 
-**Proof.** Union, intersection and complement correspond to $\vee$, $\wedge$ and $\neg$; an image under the projection $(x_1,\ldots,x_n) \mapsto (x_1,\ldots,x_{n-1})$ corresponds to existential quantification, and a preimage to substitution. For the invariance, if $D = \varphi(\mathcal{M}, \vec b)$ and $\sigma$ is an automorphism fixing $\vec b$, then $\vec a \in D$ iff $\mathcal{M} \models \varphi[\vec a, \vec b]$ iff $\mathcal{M} \models \varphi[\sigma(\vec a), \vec b]$ iff $\sigma(\vec a) \in D$, using the isomorphism lemma. $\square$
+**Proof.** Union, intersection and complement correspond to $\vee$, $\wedge$ and $\neg$; an image under the projection $(x_1,\ldots,x_n) \mapsto (x_1,\ldots,x_{n-1})$ corresponds to existential quantification, and a preimage to substitution. For the invariance, if $D = \varphi(\mathcal{M}, \vec b)$ and $\sigma$ is an automorphism fixing $\vec b$, then $\vec a \in D$ iff $\mathcal{M} \models \varphi[\vec a, \vec b]$ iff $\mathcal{M} \models \varphi[\sigma(\vec a), \vec b]$ iff $\sigma(\vec a) \in D$, using the isomorphism lemma.
 
 The invariance under automorphisms gives the standard method for showing that a set is *not* definable: exhibit an automorphism of the structure that does not preserve it. It is used for groups and for fields throughout the corpus.
 
@@ -134,7 +134,7 @@ The Löwenheim–Skolem theorems of *Formal Logic and Computability* take the fo
 1. If $\mathcal{M} \models T$ and $A \subseteq M$, there is an elementary substructure of $\mathcal{M}$ containing $A$ of cardinality at most $\max(|A|, \kappa, \aleph_0)$.
 2. $T$ has a model of every cardinality $\lambda \geq \max(\kappa, \aleph_0)$.
 
-**Proof sketch.** (1) is the Tarski–Vaught criterion applied to the closure of $A$ under the constants, the functions and a choice of witnesses, iterated $\omega$ times; the closure has the required cardinality and is elementary. (2) adds $\lambda$ constants with the sentences $c_\alpha \neq c_\beta$ and applies compactness and (1). $\square$
+**Proof sketch.** (1) is the Tarski–Vaught criterion applied to the closure of $A$ under the constants, the functions and a choice of witnesses, iterated $\omega$ times; the closure has the required cardinality and is elementary. (2) adds $\lambda$ constants with the sentences $c_\alpha \neq c_\beta$ and applies compactness and (1).
 
 The **Löwenheim–Skolem paradox** is the special case in which a theory such as the theory of fields has a countable model: a countable field can be algebraically closed, and the statement "every nonconstant polynomial has a root" is satisfied in it because the polynomial is an element of the model and its root is found inside the model. Cardinality in the metatheory and cardinality as seen by the model are different notions, and the paradox disappears once they are distinguished.
 
@@ -150,7 +150,7 @@ $$
 
 **Proposition.** If $T$ admits quantifier elimination then every definable set in a model of $T$ is a finite Boolean combination of the sets defined by the atomic formulas. If in addition $T$ is recursively axiomatised and the quantifier-free sentences of its language are decidable, then $T$ is complete and decidable.
 
-**Proof sketch.** The first statement is immediate from the definition. For the second, a sentence is equivalent modulo $T$ to a quantifier-free sentence; if the quantifier-free sentences are decidable then so is the set of sentences provable from $T$, by enumerating derivations (which is possible by the completeness theorem) and deciding equivalence, and completeness follows because either $\sigma$ or $\neg\sigma$ reduces to a quantifier-free sentence that is decided. $\square$
+**Proof sketch.** The first statement is immediate from the definition. For the second, a sentence is equivalent modulo $T$ to a quantifier-free sentence; if the quantifier-free sentences are decidable then so is the set of sentences provable from $T$, by enumerating derivations (which is possible by the completeness theorem) and deciding equivalence, and completeness follows because either $\sigma$ or $\neg\sigma$ reduces to a quantifier-free sentence that is decided.
 
 **Theorem (quantifier-elimination criterion).** $T$ admits quantifier elimination if and only if for every quantifier-free formula $\varphi(\vec x, \vec y)$, every pair of models $\mathcal{M}, \mathcal{N}$ of $T$ with a common substructure $\mathcal{A}$, and every tuple $\vec a \in A$,
 
@@ -158,7 +158,7 @@ $$
 \mathcal{M} \models \exists \vec x\,\varphi(\vec x, \vec a) \iff \mathcal{N} \models \exists \vec x\,\varphi(\vec x, \vec a).
 $$
 
-**Proof sketch.** If $T$ admits quantifier elimination, then $\exists\vec x\,\varphi(\vec x,\vec y)$ is equivalent modulo $T$ to a quantifier-free formula $\psi(\vec y)$; for $\vec a$ in the common substructure $\mathcal{A}$, the truth of $\psi(\vec a)$ is decided inside $\mathcal{A}$ and hence is the same in $\mathcal{M}$ and in $\mathcal{N}$. Conversely, the criterion permits the construction, by induction on the number of quantifiers, of a quantifier-free equivalent for each formula, the quantifier step being handled by showing that the set of tuples satisfying $\exists\vec x\,\varphi$ is already quantifier-free definable. $\square$
+**Proof sketch.** If $T$ admits quantifier elimination, then $\exists\vec x\,\varphi(\vec x,\vec y)$ is equivalent modulo $T$ to a quantifier-free formula $\psi(\vec y)$; for $\vec a$ in the common substructure $\mathcal{A}$, the truth of $\psi(\vec a)$ is decided inside $\mathcal{A}$ and hence is the same in $\mathcal{M}$ and in $\mathcal{N}$. Conversely, the criterion permits the construction, by induction on the number of quantifiers, of a quantifier-free equivalent for each formula, the quantifier step being handled by showing that the set of tuples satisfying $\exists\vec x\,\varphi$ is already quantifier-free definable.
 
 The criterion reduces quantifier elimination to the solvability of quantifier-free formulas over a common substructure, and it is the standard verification. It is applied in the two examples below.
 
@@ -174,7 +174,7 @@ and the sentence $1 \neq 0$. For a prime $p$ or $p = 0$, the theory $\mathrm{ACF
 
 **Theorem (Tarski; Chevalley; Robinson).** $\mathrm{ACF}$ admits quantifier elimination. Each theory $\mathrm{ACF}_p$ is complete, decidable and $\kappa$-categorical for every uncountable $\kappa$.
 
-**Proof sketch.** Quantifier elimination is verified by the criterion: the substructures of a field are its subrings, and a quantifier-free formula with parameters in a subring $A$ is a finite Boolean combination of polynomial equations $f(\vec x) = 0$. Whether such a combination has a solution in an algebraically closed field containing $A$ is decided by the ideal generated by the polynomials together with the equations and inequations of the combination, and the decision is expressible by quantifier-free conditions on the coefficients: this is the content of Chevalley's theorem on the constructible image of a constructible set, and the details are in the standard references. Completeness follows from Vaught's test, since $\mathrm{ACF}_p$ has no finite models and is $\kappa$-categorical for uncountable $\kappa$; decidability follows from the quantifier elimination because the quantifier-free sentences of the language of rings reduce to equations between integers, which are decidable. $\square$
+**Proof sketch.** Quantifier elimination is verified by the criterion: the substructures of a field are its subrings, and a quantifier-free formula with parameters in a subring $A$ is a finite Boolean combination of polynomial equations $f(\vec x) = 0$. Whether such a combination has a solution in an algebraically closed field containing $A$ is decided by the ideal generated by the polynomials together with the equations and inequations of the combination, and the decision is expressible by quantifier-free conditions on the coefficients: this is the content of Chevalley's theorem on the constructible image of a constructible set, and the details are in the standard references. Completeness follows from Vaught's test, since $\mathrm{ACF}_p$ has no finite models and is $\kappa$-categorical for uncountable $\kappa$; decidability follows from the quantifier elimination because the quantifier-free sentences of the language of rings reduce to equations between integers, which are decidable.
 
 **Corollary.** Two algebraically closed fields are elementarily equivalent if and only if they have the same characteristic. In particular any two uncountable algebraically closed fields of the same characteristic are elementarily equivalent.
 
@@ -186,13 +186,13 @@ The result explains why the theory of algebraically closed fields is "tame": the
 
 **Theorem (Tarski–Seidenberg).** The theory $\mathrm{RCF}$ of real-closed fields, in the language of ordered rings, admits quantifier elimination and is complete and decidable.
 
-**Proof sketch.** Quantifier elimination is verified by the criterion in the form of a sign-changing argument: for a quantifier-free formula $\varphi(x,\vec a)$ whose atomic parts are polynomial equations and inequalities, the set of $x$ satisfying $\varphi$ is a finite union of intervals and points, and whether it is nonempty is decided by evaluating the polynomials at the finitely many roots of the polynomials occurring in $\varphi$ and their derivatives together with the parameters, using the intermediate value property of odd-degree polynomials. Completeness follows because any two real-closed fields satisfy the same sentences, which is the algebraic form of Tarski's theorem in *Real-Closed and Complete Ordered Fields*; decidability follows from the quantifier elimination and the decidability of the quantifier-free sentences. $\square$
+**Proof sketch.** Quantifier elimination is verified by the criterion in the form of a sign-changing argument: for a quantifier-free formula $\varphi(x,\vec a)$ whose atomic parts are polynomial equations and inequalities, the set of $x$ satisfying $\varphi$ is a finite union of intervals and points, and whether it is nonempty is decided by evaluating the polynomials at the finitely many roots of the polynomials occurring in $\varphi$ and their derivatives together with the parameters, using the intermediate value property of odd-degree polynomials. Completeness follows because any two real-closed fields satisfy the same sentences, which is the algebraic form of Tarski's theorem in *Real-Closed and Complete Ordered Fields*; decidability follows from the quantifier elimination and the decidability of the quantifier-free sentences.
 
 **Definition.** A theory $T$ extending the theory of ordered fields is **o-minimal** if every definable subset of the domain in one variable is a finite union of points and intervals with endpoints in the model.
 
 **Theorem.** $\mathrm{RCF}$ is o-minimal.
 
-**Proof sketch.** By quantifier elimination, a definable subset of the line is a finite Boolean combination of sets $\{x : f(x) = 0\}$ and $\{x : f(x) > 0\}$ for polynomials $f$ with parameters; the zero set of a nonzero polynomial is finite, and the sign of a polynomial changes only at its roots, so the set is a finite union of points and intervals. $\square$
+**Proof sketch.** By quantifier elimination, a definable subset of the line is a finite Boolean combination of sets $\{x : f(x) = 0\}$ and $\{x : f(x) > 0\}$ for polynomials $f$ with parameters; the zero set of a nonzero polynomial is finite, and the sign of a polynomial changes only at its roots, so the set is a finite union of points and intervals.
 
 O-minimality is the tameness property of real-closed fields: every definable set is built from intervals, so definable sets have finitely many connected pieces and definable functions are piecewise monotone. The definitions of connectedness and of a cell decomposition require a topology and belong to Part II; the order-theoretic content, that definable sets are finite unions of points and intervals, is the statement proved here, and it is the one the corpus uses.
 
@@ -204,7 +204,7 @@ $$
 v(xy) = v(x) + v(y), \qquad v(x+y) \geq \min(v(x), v(y)), \qquad v(x) = \infty \iff x = 0.
 $$
 
-The set $\mathcal{O}_v = \{x \in K : v(x) \geq 0\}$ is the **valuation ring**, a subring of $K$ containing the identity, and $\mathfrak{m}_v = \{x : v(x) > 0\}$ is its unique maximal ideal; the **residue field** is $\mathcal{O}_v/\mathfrak{m}_v$. The triple $(K, \mathcal{O}_v)$ is a **valued field**.
+The set $\mathcal{O}_v = \{x \in K : v(x) \geq 0\}$ is the **valuation ring**, a subring of $K$ containing the identity, and $\mathrm{M}_v = \{x : v(x) > 0\}$ is its unique maximal ideal; the **residue field** is $\mathcal{O}_v/\mathrm{M}_v$. The triple $(K, \mathcal{O}_v)$ is a **valued field**.
 
 **Theorem (Ax–Kochen; Ershov).** Let $(K, v)$ and $(L, w)$ be Henselian valued fields with the same residue characteristic and value group, and suppose that the residue fields are elementarily equivalent or that both are algebraically closed. Then $(K,v)$ and $(L,w)$ are elementarily equivalent; if the residue fields are elementarily equivalent and the value groups are elementarily equivalent as ordered groups, then the valued fields are elementarily equivalent.
 
@@ -230,7 +230,7 @@ $$
 \prod_U \mathcal{M}_i \models \varphi[[f_1],\ldots,[f_n]] \iff \{i \in I : \mathcal{M}_i \models \varphi[f_1(i),\ldots,f_n(i)]\} \in U.
 $$
 
-**Proof sketch.** Induction on the complexity of $\varphi$. For an atomic formula the statement is the definition of the coordinatewise interpretation modulo $U$. For a conjunction, the two sets whose membership in $U$ is asserted are the intersection of the two sets for the conjuncts, and an ultrafilter is closed under finite intersections and contains a set exactly when it contains its supersets. For a negation, use that an ultrafilter contains exactly one of a set and its complement. For a quantifier, the existential case is the substantive one: if the set of indices at which a witness exists lies in $U$, one chooses a witness at each such index using the axiom of choice and glues them into a function; the axiom of choice is used exactly here. $\square$
+**Proof sketch.** Induction on the complexity of $\varphi$. For an atomic formula the statement is the definition of the coordinatewise interpretation modulo $U$. For a conjunction, the two sets whose membership in $U$ is asserted are the intersection of the two sets for the conjuncts, and an ultrafilter is closed under finite intersections and contains a set exactly when it contains its supersets. For a negation, use that an ultrafilter contains exactly one of a set and its complement. For a quantifier, the existential case is the substantive one: if the set of indices at which a witness exists lies in $U$, one chooses a witness at each such index using the axiom of choice and glues them into a function; the axiom of choice is used exactly here.
 
 ### Consequences
 
@@ -238,7 +238,7 @@ $$
 
 **Theorem.** Every structure $\mathcal{M}$ embeds elementarily in its ultrapower $\mathcal{M}^I/U$ by the diagonal map $m \mapsto [\text{constant } m]$, and the embedding is an isomorphism if and only if $U$ is principal. If $U$ is a nonprincipal ultrafilter on $\mathbb{N}$ and $\mathcal{M}$ is infinite, the ultrapower contains elements not in the image of the diagonal embedding.
 
-**Proof sketch.** The diagonal map is elementary by Łoś's theorem, since a sentence true in $\mathcal{M}$ is true at every index. If $U$ is principal at $k$, the projection to the $k$-th coordinate is an isomorphism. If $U$ is nonprincipal and $\mathcal{M}$ is infinite, let $f$ be a function whose values enumerate infinitely many distinct elements; the set of indices at which $f$ agrees with a fixed constant is finite, hence not in $U$, so $[f]$ differs from every constant. $\square$
+**Proof sketch.** The diagonal map is elementary by Łoś's theorem, since a sentence true in $\mathcal{M}$ is true at every index. If $U$ is principal at $k$, the projection to the $k$-th coordinate is an isomorphism. If $U$ is nonprincipal and $\mathcal{M}$ is infinite, let $f$ be a function whose values enumerate infinitely many distinct elements; the set of indices at which $f$ agrees with a fixed constant is finite, hence not in $U$, so $[f]$ differs from every constant.
 
 Ultraproducts give a uniform construction of elementary extensions and are the tool behind **saturation**, the property that a structure realises every finitely satisfiable type over a small parameter set; the language of types, and the topology of the space of types, belong to the further development of the subject and to Part II.
 
@@ -264,7 +264,7 @@ Quantifier elimination reduces every formula to a quantifier-free one and makes 
 | $\varphi(\mathcal{M}, \vec b)$ | Definable set with parameters $\vec b$ |
 | $T$, $\mathrm{ACF}$, $\mathrm{ACF}_p$, $\mathrm{RCF}$, DLO | Theories; algebraically closed fields; real-closed fields; dense linear order |
 | $v : K \to \Gamma \cup \{\infty\}$ | Valuation, value group $\Gamma$, valuation ring $\mathcal{O}_v$ |
-| $\mathfrak{m}_v$ | Maximal ideal of the valuation ring; residue field $\mathcal{O}_v/\mathfrak{m}_v$ |
+| $\mathrm{M}_v$ | Maximal ideal of the valuation ring; residue field $\mathcal{O}_v/\mathrm{M}_v$ |
 | $U$ | Ultrafilter on an index set $I$ |
 | $\prod_U \mathcal{M}_i$, $\mathcal{M}^I/U$ | Ultraproduct; ultrapower |
 | $[f]$ | Equivalence class of $f$ modulo $U$ |

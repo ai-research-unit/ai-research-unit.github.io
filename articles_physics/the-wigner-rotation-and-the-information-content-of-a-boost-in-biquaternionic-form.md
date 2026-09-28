@@ -2,7 +2,7 @@
 
 ## Introduction
 
-A boost is the elementary operation that changes the frame of a relativistic system, and in the biquaternion framework it is a single element of the algebra: a Hermitian unit-norm biquaternion. Its action on the material sector is a congruence and is completely transparent — a four-vector is carried to a four-vector by a linear map that preserves the norm form. Its action on the informational sector is not transparent, and it is not a pure rotation: the left action on the spinor is non-unitary, and the little-group part of it depends on the momentum. The residue of that momentum dependence is the **Wigner rotation**, and the purpose of this article is to reconstruct it from the algebra and to ask what information a boost carries.
+A boost is the elementary operation that changes the frame of a relativistic system, and in the biquaternion framework it is a single element of the algebra: a Hermitian unit-norm biquaternion. Its action on the material sector is a congruence and is completely transparent — a four-vector is carried to a four-vector by a linear map that preserves the biquaternion norm. Its action on the informational sector is not transparent, and it is not a pure rotation: the left action on the spinor is non-unitary, and the little-group part of it depends on the momentum. The residue of that momentum dependence is the **Wigner rotation**, and the purpose of this article is to reconstruct it from the algebra and to ask what information a boost carries.
 
 The question has three layers, and the article treats them in order. First, there is the algebraic layer: a product of two unit-norm rotors is again a unit-norm rotor, a product of two Hermitian ones is not Hermitian, and the mismatch is a rotation in the compact subgroup. The Wigner rotation is that mismatch, and it is a **one-cocycle** on the little-group bundle. Second, there is the operational layer: on a state with momentum superposition a boost acts as a **controlled rotation**, rotating the spin by an amount that depends on the momentum branch, and this is the precise sense in which a boost is an entangling gate between spin and momentum rather than a spin operation. Third, there is the information layer: what a boost carries is a rotation, its parameters are compressed from three to three but its action on a single spin is a two-parameter rotation, the information it can move from momentum to spin is bounded by the entropy of the induced channel, and a **closed loop** of boosts that returns the four-velocity to its starting value need not return the spin — it leaves a rotation whose angle is a curvature of the boost parameter space.
 
@@ -14,7 +14,7 @@ The findings are stated in advance.
 4. **The information content is a rotation angle.** Everything a boost can do to a spin is summarised by the pair (angle, axis) of its Wigner rotation; the angle vanishes for collinear boosts and is maximal for transverse ones, and the entropy it can imprint on a transverse spin is $h((1+\cos\alpha)/2)$.
 5. **A closed loop of boosts leaves a rotation.** The product of boosts around a closed path in velocity space is a pure rotation about the normal to the path, with an angle that grows with the area; this is the Thomas–Wigner holonomy, the curvature of the boost connection, and the relativistic content of Thomas precession.
 
-The notation is that of the foundational articles: $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, quaternion units $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$ and $e_1e_2 = e_3$, central scalar $i$, trace $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$, norm form $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$, Hermitian sector $\mathbb{M}_+$, anti-Hermitian sector $\mathbb{M}_-$, and the matrix model $\Phi$ with $e_k\mapsto-i\sigma_k$, $i\mapsto iI_2$. The boost rotor is
+The notation is that of the foundational articles: $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, quaternion units $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$ and $e_1e_2 = e_3$, central scalar $i$, trace $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$, biquaternion norm $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$, Hermitian sector $\mathbb{M}_+$, anti-Hermitian sector $\mathbb{M}_-$, and the matrix model $\Phi$ with $e_k\mapsto-i\sigma_k$, $i\mapsto iI_2$. The boost rotor is
 $$
 \tilde{\Lambda} = \cosh\frac{\psi}{2}\,e_0 + i\sinh\frac{\psi}{2}\,\hat{\mathbf{u}} = e^{(\psi/2)\,i\hat{\mathbf{u}}}, \qquad N(\tilde{\Lambda}) = 1 ,
 $$
@@ -25,7 +25,7 @@ The companion articles supply the pieces:
 - Companion article *Frame-Dependent Entanglement and Relativistic Quantum Information in Biquaternionic Form*, for the channel induced by a boost on a momentum superposition.
 - Companion article *Exercise: Boosting a Four-Velocity and Rapidity Composition*, for the composition of boosts and the frame four-velocity.
 - Companion article *Exercise: The Thomas Precession*, for the precession of a spin in an accelerated frame.
-- Companion article *The Anti-Hermitian Subspace M- as the Material Sector*, for four-vectors and the norm form.
+- Companion article *The Anti-Hermitian Subspace M- as the Material Sector*, for four-vectors and the biquaternion norm.
 - Companion article *The Lorentz Group in Biquaternionic Form — Structure and Representations*, for the Cartan decomposition and the subgroups.
 
 ## The Boost and Its Rotor
@@ -57,7 +57,7 @@ A boost acts on the two sectors differently. On the material sector it acts by c
 $$
 \tilde{Q}\ \longmapsto\ \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^\dagger , \qquad \tilde{Q}\in\mathbb{M}_- ,
 $$
-which preserves the norm form because $N(\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^\dagger) = N(\tilde{\Lambda})N(\tilde{Q})N(\tilde{\Lambda}^\dagger) = N(\tilde{Q})$: the interval, the mass shell, and the light cone are all invariant. On the informational sector it acts on the spinor by left multiplication, and that action is not unitary: $\tilde{\Lambda}^\dagger\tilde{\Lambda} = e_0$ fails for a boost, so the spinor norm is scaled,
+which preserves the biquaternion norm because $N(\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^\dagger) = N(\tilde{\Lambda})N(\tilde{Q})N(\tilde{\Lambda}^\dagger) = N(\tilde{Q})$: the interval, the mass shell, and the light cone are all invariant. On the informational sector it acts on the spinor by left multiplication, and that action is not unitary: $\tilde{\Lambda}^\dagger\tilde{\Lambda} = e_0$ fails for a boost, so the spinor norm is scaled,
 $$
 \langle\tilde{\Lambda}u|\tilde{\Lambda}u\rangle = \langle u|\tilde{\Lambda}^\dagger\tilde{\Lambda}|u\rangle = \langle u|u\rangle + i\sinh\psi\,\langle u|\hat{\mathbf{u}}|u\rangle .
 $$
@@ -67,7 +67,7 @@ A boost therefore has a trivial action on four-vectors and a non-trivial, non-un
 
 ### The composition of two boosts
 
-Let $\tilde{\Lambda}_1$ and $\tilde{\Lambda}_2$ be two boost rotors with non-collinear directions. Their product $\tilde{\Lambda} = \tilde{\Lambda}_2\tilde{\Lambda}_1$ is unit-norm, $N(\tilde{\Lambda}) = 1$, because the norm form is multiplicative; but it is not Hermitian,
+Let $\tilde{\Lambda}_1$ and $\tilde{\Lambda}_2$ be two boost rotors with non-collinear directions. Their product $\tilde{\Lambda} = \tilde{\Lambda}_2\tilde{\Lambda}_1$ is unit-norm, $N(\tilde{\Lambda}) = 1$, because the biquaternion norm is multiplicative; but it is not Hermitian,
 $$
 \tilde{\Lambda}^\dagger = \tilde{\Lambda}_1^\dagger\tilde{\Lambda}_2^\dagger = \tilde{\Lambda}_1\tilde{\Lambda}_2 \neq \tilde{\Lambda}_2\tilde{\Lambda}_1 \quad\text{unless } [\tilde{\Lambda}_1,\tilde{\Lambda}_2] = 0 .
 $$
@@ -231,7 +231,7 @@ Three algebraic facts about a boost are therefore three faces of one statement. 
 
 ## Summary
 
-A boost is the Hermitian unit-norm biquaternion $\tilde{\Lambda} = \cosh(\psi/2)e_0 + i\sinh(\psi/2)\hat{\mathbf{u}}$. It acts on four-vectors by congruence, preserving the norm form, and on spinors by a non-unitary left multiplication. Its product with another boost is not a boost: the Cartan decomposition writes
+A boost is the Hermitian unit-norm biquaternion $\tilde{\Lambda} = \cosh(\psi/2)e_0 + i\sinh(\psi/2)\hat{\mathbf{u}}$. It acts on four-vectors by congruence, preserving the biquaternion norm, and on spinors by a non-unitary left multiplication. Its product with another boost is not a boost: the Cartan decomposition writes
 $$
 \tilde{\Lambda}_2\tilde{\Lambda}_1 = \tilde{\Lambda}_{\mathrm{boost}}\,\tilde{W}, \qquad \tilde{W}\in SU(2),
 $$

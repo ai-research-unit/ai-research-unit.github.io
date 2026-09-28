@@ -48,7 +48,7 @@ The statement "the Lorentz transformation is a rotation" requires care, because 
 
 **1. The rotation angle is imaginary.** A boost is a rotation by an **imaginary angle** in a plane that mixes the time direction with a spatial direction. To see this, consider the spatial rotation rotor in the plane $(x^0, x^1)$ by angle $\theta$: it is $\cos\frac{\theta}{2} + \sin\frac{\theta}{2}\,\hat{e}_{01}$, where $\hat{e}_{01}$ is the unit bivector for the $(x^0, x^1)$ plane. Substituting $\theta = i\psi$ (imaginary angle) gives $\cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\,\hat{e}_{01}$, which is the **boost** rotor in the $(x^0, x^1)$ plane. The boost is therefore a rotation by an imaginary angle, and the parameter $\psi$ (the rapidity) is the "imaginary angle" of the rotation.
 
-**2. The bilinear form is complex.** The quantity preserved by the rotation is the complex bilinear form $(x^0)^2 + (x^1)^2 + (x^2)^2 + (x^3)^2$, which is the biquaternion norm form $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$. On the real slice, this form can be negative (timelike intervals), positive (spacelike intervals), or zero (null intervals).
+**2. The bilinear form is complex.** The quantity preserved by the rotation is the complex bilinear form $(x^0)^2 + (x^1)^2 + (x^2)^2 + (x^3)^2$, which is the biquaternion norm $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$. On the real slice, this form can be negative (timelike intervals), positive (spacelike intervals), or zero (null intervals).
 
 **3. The Euclidean form is only apparent.** The Euclidean appearance of the metric $ds^2 = (x^0)^2 + (x^1)^2 + (x^2)^2 + (x^3)^2$ is a consequence of using the imaginary coordinate $x^0 = ict$. On the real slice, the metric is still Lorentzian, because the coordinate $x^0$ is constrained to be imaginary. The "Euclidean" character is a formal device that trades the Lorentzian signature for a complex structure.
 
@@ -95,7 +95,7 @@ $$
 \tilde{\Lambda}^\dagger = \bar{\tilde{\Lambda}}^* = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\hat{\mathbf{u}} = \tilde{\Lambda}.
 $$
 
-**3. It has unit norm.** The norm form is
+**3. It has unit norm.** The biquaternion norm is
 
 $$
 \tilde{\Lambda}\bar{\tilde{\Lambda}} = \left(\cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\hat{\mathbf{u}}\right)\left(\cosh\frac{\psi}{2} - i\sinh\frac{\psi}{2}\hat{\mathbf{u}}\right) = \cosh^2\frac{\psi}{2} - \left(i\sinh\frac{\psi}{2}\right)^2\hat{\mathbf{u}}^2.
@@ -145,13 +145,13 @@ $$
 
 **1. It preserves the subspace $\mathbb{M}_-$.** If $\tilde{A} \in \mathbb{M}_-$ and $\tilde{\Lambda}$ is a unit-norm biquaternion, then $\tilde{\Lambda}\tilde{A}\tilde{\Lambda}^\dagger \in \mathbb{M}_-$.
 
-**2. It preserves the norm form.** Since $\tilde{\Lambda}$ has unit norm, we have
+**2. It preserves the biquaternion norm.** Since $\tilde{\Lambda}$ has unit norm, we have
 
 $$
 \tilde{A}'\bar{\tilde{A}'} = \tilde{\Lambda}\tilde{A}\tilde{\Lambda}^\dagger\,\overline{\tilde{\Lambda}\tilde{A}\tilde{\Lambda}^\dagger} = \tilde{A}\bar{\tilde{A}},
 $$
 
-so the norm form of the transformed four-vector is the same as the norm form of the original. This is the biquaternion expression of the Lorentz invariance of the Minkowski interval.
+so the biquaternion norm of the transformed four-vector is the same as the biquaternion norm of the original. This is the biquaternion expression of the Lorentz invariance of the Minkowski interval.
 
 **3. It is a group action.** The composition of two rotor conjugations is another rotor conjugation: if $\tilde{\Lambda}_1$ and $\tilde{\Lambda}_2$ are two unit-norm biquaternions, then
 
@@ -272,7 +272,7 @@ The complex nature of the rotation appears in the following places:
 
 2. **The rotor has an imaginary vector part.** The boost biquaternion $\tilde{\Lambda} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\hat{\mathbf{u}}$ has a purely imaginary vector part. In contrast, a spatial rotation rotor has a real vector part.
 
-3. **The bilinear form is complex.** The quantity preserved by the rotation is not the real Euclidean norm (which is positive-definite), but the **complex bilinear form** $(x^0)^2 + (x^1)^2 + (x^2)^2 + (x^3)^2$, which is the biquaternion norm form $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$. On the real slice, this form can be negative, positive, or zero.
+3. **The bilinear form is complex.** The quantity preserved by the rotation is not the real Euclidean norm (which is positive-definite), but the **complex bilinear form** $(x^0)^2 + (x^1)^2 + (x^2)^2 + (x^3)^2$, which is the biquaternion norm $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$. On the real slice, this form can be negative, positive, or zero.
 
 ### The Euclidean Form Is Only Apparent
 

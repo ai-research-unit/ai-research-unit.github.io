@@ -17,7 +17,7 @@ A scheme is a locally ringed space locally isomorphic to the spectrum of a ring,
 |---|---|---|
 | the spectrum $\operatorname{Spec} A$ | the prime ideals of $A$ with the Zariski topology and the structure sheaf | *Schemes* |
 | a scheme $(X,\mathcal{O}_X)$ | a locally ringed space locally affine, with stalks the local rings | *Schemes* |
-| the structure sheaf $\mathcal{O}_X$ | the sheaf of the functions, with $\mathcal{O}_{X,\mathfrak{p}} = A_{\mathfrak{p}}$ | *Schemes* |
+| the structure sheaf $\mathcal{O}_X$ | the sheaf of the functions, with $\mathcal{O}_{X,\mathrm{P}} = A_{\mathrm{P}}$ | *Schemes* |
 | a morphism of schemes | a morphism of locally ringed spaces, $f^{\#} : \mathcal{O}_Y \to f_*\mathcal{O}_X$ | *Schemes* |
 | an $S$-scheme $X \to S$ and the functor of points $X(T)$ | the relative viewpoint and the functor represented by the scheme | *Schemes* |
 | the fibre product $X\times_SY$ and the fibre $X_s$ | the base change and the geometric fibres | *Schemes* |
@@ -26,7 +26,7 @@ A scheme is a locally ringed space locally isomorphic to the spectrum of a ring,
 | separated and proper morphisms | the closed diagonal, and properness by the valuative criterion | *Schemes* |
 | the dimension $\dim X$ | the Krull dimension, equal to the transcendence degree of the function field | *Schemes* |
 | reduced, normal, regular schemes | the local rings reduced, integrally closed, regular | *Schemes* |
-| the cotangent sheaf $\Omega^1_{X/k}$ | the sheaf of Kähler differentials, the cotangent space $\mathfrak{m}_x/\mathfrak{m}_x^2$ | *Schemes* |
+| the cotangent sheaf $\Omega^1_{X/k}$ | the sheaf of Kähler differentials, the cotangent space $\mathrm{M}_x/\mathrm{M}_x^2$ | *Schemes* |
 | a projective scheme $\operatorname{Proj} S$ | the projective spectrum of a graded ring, with the twisting sheaf | *Sheaves in Algebraic Geometry* |
 
 The scheme is the object that carries the nilpotents, the arithmetic fibres and the geometrically meaningful base change, and the functor of points converts the scheme into a representable functor, so that the constructions on schemes are the constructions on their functors. The fibre product and the fibres are the operations that make a scheme over a base a family, and the local conditions on the morphisms classify the families.
@@ -40,7 +40,7 @@ A variety is the classical geometric object: a reduced scheme of finite type ove
 | the affine variety $V(S)$ | the zero set of a set of polynomials, with the Zariski topology | *Algebraic Geometry* |
 | the coordinate ring $k[X]$ | the quotient $k[x_1,\ldots,x_n]/I(X)$, its Krull dimension the dimension of the variety | *Algebraic Geometry* |
 | the projective variety and its homogeneous coordinate ring | the zero set in $\mathbb{P}^n_k$ of homogeneous polynomials | *Algebraic Geometry* |
-| the Zariski topology | the closed sets $V(\mathfrak{a})$: quasicompact, Noetherian, not Hausdorff | *Algebraic Geometry* |
+| the Zariski topology | the closed sets $V(\mathrm{A})$: quasicompact, Noetherian, not Hausdorff | *Algebraic Geometry* |
 | an irreducible variety | not the union of two proper closed subsets; the components are the maximal ones | *Algebraic Geometry* |
 | a morphism of varieties and its pullback | a polynomial map and the ring map $\varphi^* : k[Y] \to k[X]$ | *Algebraic Geometry* |
 | the function field $k(X)$ | the fraction field of $k[X]$, of transcendence degree $\dim X$ | *Algebraic Geometry* |
@@ -116,7 +116,7 @@ A catalogue denotes its objects by name rather than by symbol. The symbols that 
 
 | Symbol | Meaning |
 |---|---|
-| $\operatorname{Spec} A$, $\operatorname{Proj} S$, $D(f)$, $V(\mathfrak{a})$ | Spectrum, projective spectrum, distinguished open, closed set |
+| $\operatorname{Spec} A$, $\operatorname{Proj} S$, $D(f)$, $V(\mathrm{A})$ | Spectrum, projective spectrum, distinguished open, closed set |
 | $\mathcal{O}_X$, $\mathcal{O}_X(d)$, $\omega_X$ | Structure sheaf, twisting sheaf, canonical sheaf |
 | $X\times_SY$, $X(T)$, $X_s$ | Fibre product, functor of points, fibre |
 | $k[X]$, $k(X)$, $I(X)$, $V(S)$ | Coordinate ring, function field, vanishing ideal, zero set |
@@ -125,7 +125,7 @@ A catalogue denotes its objects by name rather than by symbol. The symbols that 
 | $X/\!/G$ | GIT quotient |
 | $\mathbb{Z}$, $\mathbb{C}$ | The standard number systems of the corpus |
 | $\mathbb{P}^n_k$ | Projective space over $k$, the ambient of a projective variety |
-| $\mathfrak{p}$, $\mathfrak{m}_x$, $\mathcal{M}$ | Prime ideal; maximal ideal of a point; moduli functor |
+| $\mathrm{P}$, $\mathrm{M}_x$, $\mathcal{M}$ | Prime ideal; maximal ideal of a point; moduli functor |
 
 ## Further Reading
 

@@ -9,7 +9,7 @@ The treatment is mathematically honest: every claim is either proved or stated a
 
 Throughout this article, the quaternion algebra is denoted $\mathbb{H}$, and its basis is $e_0 = 1, e_1, e_2, e_3$. The scalar imaginary of the complex numbers is denoted $i$, so that it does not collide with the quaternion units.
 
-**Remark.** In the biquaternion case the Fourier kernel is obstructed on the null cone, where the norm form vanishes and the symbol of the transform is not invertible. Here the norm form is positive definite, every non-zero $\xi$ is invertible, and the kernel is everywhere defined; there is no vanishing-norm restriction to record.
+**Remark.** In the biquaternion case the Fourier kernel is obstructed on the null cone, where the norm vanishes and the symbol of the transform is not invertible. Here the quaternion norm is positive definite, every non-zero $\xi$ is invertible, and the kernel is everywhere defined; there is no vanishing-norm restriction to record.
 
 ## The Additive Group and Its Characters
 
@@ -101,7 +101,7 @@ $$
 \widehat{f_\lambda}(\xi) = \frac{1}{|\lambda|^4} \hat{f}(\bar{\lambda}^{-1}\xi).
 $$
 
-**Rotation.** If $f_u(\tilde q) = f(u \tilde q u^{-1})$ for a unit quaternion $u$, then $\hat{f}_u(\xi) = \hat{f}(u \xi u^{-1})$. The transform commutes with rotations.
+**Conjugation equivariance.** If $f_u(\tilde q) = f(u \tilde q u^{-1})$ for a unit quaternion $u$, then $\hat{f}_u(\xi) = \hat{f}(u \xi u^{-1})$. The transform commutes with the conjugation action of the unit group.
 
 **Conjugation.** $\widehat{\bar{f}}(\xi) = \overline{\hat{f}(-\xi)}$.
 
@@ -167,7 +167,7 @@ $$
 
 with the same ordering on both sides for the left-sided transform. For the two-sided transform, the statement is more complicated, because the two kernels do not commute.
 
-**Proof.** Write the definition, apply Fubini, and change variables. $\square$
+**Proof.** Write the definition, apply Fubini, and change variables.
 
 ### The Structure of the Convolution Theorem
 
@@ -305,7 +305,7 @@ $$
 \|Mf\|_p \leq C_p \|f\|_p.
 $$
 
-**Proof.** The case $p = \infty$ is trivial. The case $1 < p < \infty$ follows from the weak $(1,1)$ estimate and the trivial $L^\infty$ estimate by interpolation. $\square$
+**Proof.** The case $p = \infty$ is trivial. The case $1 < p < \infty$ follows from the weak $(1,1)$ estimate and the trivial $L^\infty$ estimate by interpolation.
 
 ### The Structure of the Maximal Function
 
@@ -399,7 +399,7 @@ $$
 \widehat{Rf(\theta, \cdot)}(\sigma) = \hat{f}(\sigma \theta).
 $$
 
-**Proof.** Write the definition of the Radon transform, take the quaternion Fourier transform in $t$, and change variables. $\square$
+**Proof.** Write the definition of the Radon transform, take the quaternion Fourier transform in $t$, and change variables.
 
 The Fourier slice theorem is the mathematical basis of quaternion tomography, the analogue of computed tomography for the quaternion space.
 
@@ -493,7 +493,7 @@ The section on the structure principle states what organises the subject: whenev
 - F. Brackx, R. Delanghe, and F. Sommen, *Clifford Analysis* (Pitman, 1982), for the general Clifford theory.
 - John Ryan, *Clifford Algebras in Analysis and Related Topics* (CRC Press, 1996), for the analytic theory.
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the connection to Clifford algebras.
-- H. Blaine Lawson and Marie-Louise Michelsohn, *Spin Geometry* (Princeton, 1989), for the role of the Dirac operator in geometry.
+- H. Blaine Lawson and Marie-Louise Michelsohn, *Spin Geometry* (Princeton, 1989), for the role of the spinor-valued first-order operator in geometry.
 - Elias M. Stein and Guido Weiss, *Introduction to Fourier Analysis on Euclidean Spaces* (Princeton, 1971), for the classical treatment of the Fourier transform on $\mathbb{R}^n$.
 - Todd A. Ell and Stephen J. Sangwine, *Quaternion Fourier Transforms for Signal and Image Processing* (Wiley, 2014), for the engineering applications.
 

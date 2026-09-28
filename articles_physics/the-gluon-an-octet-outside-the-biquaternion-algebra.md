@@ -6,21 +6,21 @@ The gluon is the gauge boson of the strong interaction: massless, electrically n
 
 The result is a boundary, and it is sharp. The algebra $\mathbb{B}\cong M_2(\mathbb{C})$ is eight-dimensional over the reals, so the number eight is not by itself the obstruction; the obstruction is that the **compact** Lie structure inside the algebra is four-dimensional. The maximal compact subalgebra of $\mathbb{B}$ under the commutator is
 $$
-\mathfrak{u}(2)=\mathbb{R}(ie_0)\oplus\mathfrak{su}(2),
+\mathrm{U}(2)=\mathbb{R}(ie_0)\oplus\mathrm{SU}(2),
 \qquad
-\dim_\mathbb{R}\mathfrak{u}(2)=4 ,
+\dim_\mathbb{R}\mathrm{U}(2)=4 ,
 $$
 whereas the compact algebra of the colour group is
 $$
-\mathfrak{su}(3),
+\mathrm{SU}(3),
 \qquad
-\dim_\mathbb{R}\mathfrak{su}(3)=8 ,
+\dim_\mathbb{R}\mathrm{SU}(3)=8 ,
 $$
 and there is no eight-dimensional compact subalgebra to be found. The algebra therefore reaches $SU(2)\times U(1)$ and not $SU(3)$; the Standard Model's gauge group has the factors $SU(3)\times SU(2)\times U(1)$, and the framework reaches the last two and not the first. The gluon's **free kinematics**, by contrast, is reached completely: a single gluon, with its colour index fixed, is a massless spin-one field, and the framework's material vector carries it exactly as it carries the photon. What is outside the algebra is the **colour multiplet** — the triplet of colours and the octet of gluons — not the free propagation of one of them.
 
 The article is organised as follows. A first section transcribes the gluon's standard field theory: the eight fields, the field strength, the self-couplings, the invariant tensors, asymptotic freedom and confinement. A second section states what the framework reaches, namely the free kinematics of a single constituent. A third section establishes the obstructions, one at a time: the dimension of the compact algebra, the dimension of the modules, the symmetric invariant tensor, and the failure of the octonion route through non-associativity. A fourth section records the enlarged carrier in which the octet can be embedded and identifies the price — the colour index becomes external data. A fifth section places the result as the ceiling of the category and points to the informational reading of confinement.
 
-We use the conventions of the companion articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}\cong M_2(\mathbb{C})$, with basis $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, $e_je_k=-\delta_{jk}e_0+\varepsilon_{jkl}e_l$, and central $i$; the matrix realization is $\Phi(e_0)=I_2$, $\Phi(e_k)=-i\sigma_k$. The sectors are $\mathbb{M}_-=\mathrm{span}_\mathbb{R}\{ie_0,e_1,e_2,e_3\}$ (material, anti-Hermitian) and $\mathbb{M}_+=\mathrm{span}_\mathbb{R}\{e_0,ie_1,ie_2,ie_3\}$ (informational, Hermitian), and the center is $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_\mathbb{R}\{e_0,ie_0\}$. The compact factor is $\mathfrak{u}(2)=\mathbb{R}(ie_0)\oplus\mathfrak{su}(2)$ with $\mathfrak{su}(2)=\mathrm{span}_\mathbb{R}\{e_1,e_2,e_3\}$, $[e_a,e_b]=2\varepsilon_{abc}e_c$, $T_a=\tfrac12 e_a$; the covariant derivative is $D_\mu=\partial_\mu+i\kappa\mathcal{A}_\mu$ with $\kappa=q/\hbar$; and the non-abelian curvature is $F_{\mu\nu}=\partial_\mu\mathcal{A}_\nu-\partial_\nu\mathcal{A}_\mu+i\kappa[\mathcal{A}_\mu,\mathcal{A}_\nu]$, from the companion articles. The gradient is $\tilde{\nabla}=e_0\partial_{ict}+e_k\partial_k$ with $\Box=\tilde{\nabla}\bar{\tilde{\nabla}}=\partial_{ict}^2+\Delta$, and the $ict$ metric is $\eta=\mathrm{diag}(-1,+1,+1,+1)$. Natural units $\hbar=c=1$ are used for the strong-interaction formulae, where $g_s$ denotes the standard QCD coupling and the standard symbols $f^{abc},d^{abc}$ the $\mathfrak{su}(3)$ invariant tensors; the framework's coupling is $\kappa$ where it appears in the algebra's expressions. Matrix traces on the gauge factors are written $\mathrm{Tr}$, distinct from the informational trace formula $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$.
+We use the conventions of the companion articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}\cong M_2(\mathbb{C})$, with basis $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, $e_je_k=-\delta_{jk}e_0+\varepsilon_{jkl}e_l$, and central $i$; the matrix realization is $\Phi(e_0)=I_2$, $\Phi(e_k)=-i\sigma_k$. The sectors are $\mathbb{M}_-=\mathrm{span}_\mathbb{R}\{ie_0,e_1,e_2,e_3\}$ (material, anti-Hermitian) and $\mathbb{M}_+=\mathrm{span}_\mathbb{R}\{e_0,ie_1,ie_2,ie_3\}$ (informational, Hermitian), and the center is $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_\mathbb{R}\{e_0,ie_0\}$. The compact factor is $\mathrm{U}(2)=\mathbb{R}(ie_0)\oplus\mathrm{SU}(2)$ with $\mathrm{SU}(2)=\mathrm{span}_\mathbb{R}\{e_1,e_2,e_3\}$, $[e_a,e_b]=2\varepsilon_{abc}e_c$, $T_a=\tfrac12 e_a$; the covariant derivative is $D_\mu=\partial_\mu+i\kappa\mathcal{A}_\mu$ with $\kappa=q/\hbar$; and the non-abelian curvature is $F_{\mu\nu}=\partial_\mu\mathcal{A}_\nu-\partial_\nu\mathcal{A}_\mu+i\kappa[\mathcal{A}_\mu,\mathcal{A}_\nu]$, from the companion articles. The gradient is $\tilde{\nabla}=e_0\partial_{ict}+e_k\partial_k$ with $\Box=\tilde{\nabla}\bar{\tilde{\nabla}}=\partial_{ict}^2+\Delta$, and the $ict$ metric is $\eta=\mathrm{diag}(-1,+1,+1,+1)$. Natural units $\hbar=c=1$ are used for the strong-interaction formulae, where $g_s$ denotes the standard QCD coupling and the standard symbols $f^{abc},d^{abc}$ the $\mathrm{SU}(3)$ invariant tensors; the framework's coupling is $\kappa$ where it appears in the algebra's expressions. Matrix traces on the gauge factors are written $\mathrm{Tr}$, distinct from the informational trace formula $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$.
 
 - Companion article *The Gauge Group Ceiling: Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)*, for the general theorem of which this article is the gluon case.
 - Companion article *Quantum Chromodynamics under the Biquaternion Framework — A Research Agenda*, for the placement of the strong sector in the framework and the list of open problems.
@@ -38,13 +38,13 @@ We use the conventions of the companion articles. The biquaternion algebra is $\
 
 ### The Field and Its Action
 
-Quantum chromodynamics is the gauge theory of the group $SU(3)$ with coupling $g_s$, whose gauge fields are eight massless vectors $G^a_\mu$, $a=1,\dots,8$, one for each generator $\lambda^a/2$ of $\mathfrak{su}(3)$. The action is
+Quantum chromodynamics is the gauge theory of the group $SU(3)$ with coupling $g_s$, whose gauge fields are eight massless vectors $G^a_\mu$, $a=1,\dots,8$, one for each generator $\lambda^a/2$ of $\mathrm{SU}(3)$. The action is
 $$
 S_{\mathrm{QCD}}=-\frac{1}{4}\int d^4x\,G^a_{\mu\nu}G^{a\mu\nu},
 \qquad
 G^a_{\mu\nu}=\partial_\mu G^a_\nu-\partial_\nu G^a_\mu+g_s f^{abc}G^b_\mu G^c_\nu ,
 $$
-with $f^{abc}$ the structure constants of $\mathfrak{su}(3)$, defined by
+with $f^{abc}$ the structure constants of $\mathrm{SU}(3)$, defined by
 $$
 [\lambda^a,\lambda^b]=2i f^{abc}\lambda^c ,
 \qquad
@@ -84,7 +84,7 @@ T(\text{fundamental})=\frac12 .
 $$
 The gluon is in the adjoint representation, whose dimension is the dimension of the group,
 $$
-\dim\mathfrak{su}(3)=N^2-1=8 ,
+\dim\mathrm{SU}(3)=N^2-1=8 ,
 $$
 which is the origin of the eight gluons. The action is invariant under the gauge transformation $G^a_\mu\mapsto G^a_\mu-\partial_\mu\Gamma^a-g_s f^{abc}G^b_\mu\Gamma^c$, and its expansion in powers of the fields contains the three-gluon and four-gluon self-couplings,
 $$
@@ -107,7 +107,7 @@ where the last form is for $N_f$ Dirac quark flavours; the coefficient is positi
 
 ### The Octet as the Adjoint of $SU(3)$
 
-Three facts about the octet are the ones to hold against the algebra. Its dimension is eight, $\dim\mathfrak{su}(3)=8$. Its group is $SU(3)$, whose defining representation is the three-dimensional colour triplet of the quarks. Its invariant tensors include both the antisymmetric $f^{abc}$ and the symmetric $d^{abc}$, and the latter is a genuinely $SU(3)$ object: for $SU(2)$ the corresponding symmetric invariant vanishes identically. The octet therefore presupposes a three-dimensional module (the triplet) and an eight-dimensional compact algebra.
+Three facts about the octet are the ones to hold against the algebra. Its dimension is eight, $\dim\mathrm{SU}(3)=8$. Its group is $SU(3)$, whose defining representation is the three-dimensional colour triplet of the quarks. Its invariant tensors include both the antisymmetric $f^{abc}$ and the symmetric $d^{abc}$, and the latter is a genuinely $SU(3)$ object: for $SU(2)$ the corresponding symmetric invariant vanishes identically. The octet therefore presupposes a three-dimensional module (the triplet) and an eight-dimensional compact algebra.
 
 ## What the Framework Reaches: The Free Constituent
 
@@ -137,17 +137,17 @@ $$
 $$
 and the maximal compact subalgebra of $\mathbb{B}$ under the commutator is
 $$
-\mathfrak{u}(2)=\mathbb{R}(ie_0)\oplus\mathfrak{su}(2),
+\mathrm{U}(2)=\mathbb{R}(ie_0)\oplus\mathrm{SU}(2),
 \qquad
-\dim_\mathbb{R}\mathfrak{u}(2)=4 ,
+\dim_\mathbb{R}\mathrm{U}(2)=4 ,
 $$
-the compact form of the complexified algebra $\mathfrak{gl}(2,\mathbb{C})$, whose Cartan decomposition is $\mathfrak{gl}(2,\mathbb{C})=\mathfrak{u}(2)\oplus i\,\mathfrak{u}(2)$ with both factors of real dimension four. The colour algebra is compact of dimension eight,
+the compact form of the complexified algebra $\mathrm{GL}(2,\mathbb{C})$, whose Cartan decomposition is $\mathrm{GL}(2,\mathbb{C})=\mathrm{U}(2)\oplus i\,\mathrm{U}(2)$ with both factors of real dimension four. The colour algebra is compact of dimension eight,
 $$
-\dim_\mathbb{R}\mathfrak{su}(3)=8 ,
+\dim_\mathbb{R}\mathrm{SU}(3)=8 ,
 $$
-and a compact Lie algebra of dimension eight cannot embed in a compact Lie algebra of dimension four. The same count is visible in the group: the compact group the algebra's gauge structure generates is $U(2)$, of real dimension four, and $SU(3)$ has real dimension eight. The number eight that suggests an embedding is the real dimension of $\mathbb{B}$, not the dimension of its compact part; the compact part is half the algebra, and the half is $\mathfrak{u}(2)$.
+and a compact Lie algebra of dimension eight cannot embed in a compact Lie algebra of dimension four. The same count is visible in the group: the compact group the algebra's gauge structure generates is $U(2)$, of real dimension four, and $SU(3)$ has real dimension eight. The number eight that suggests an embedding is the real dimension of $\mathbb{B}$, not the dimension of its compact part; the compact part is half the algebra, and the half is $\mathrm{U}(2)$.
 
-It is worth stating why the estimate "eight equals eight, so try to embed" fails even before the modules are examined. A gauge algebra is realized as a subalgebra of $\mathbb{B}$ under the commutator, so an eight-dimensional one would be all of $\mathbb{B}$; but $\mathbb{B}\cong\mathfrak{gl}(2,\mathbb{C})$ is not a compact algebra, its maximal compact subalgebra being the four-dimensional $\mathfrak{u}(2)$, and a gauge algebra must be compact, because a non-compact gauge direction generates negative-norm states. Every compact subalgebra lies in a maximal compact one, so the compact subalgebras of $\mathbb{B}$ have real dimension at most four, while $\dim_\mathbb{R}\mathfrak{su}(3)=8$. The coincidence of the two numbers eight is the real dimension of $\mathbb{B}$, which is not the size of its compact part. The algebra's gauge group is therefore $U(2)$, the electroweak factor and not the colour factor.
+It is worth stating why the estimate "eight equals eight, so try to embed" fails even before the modules are examined. A gauge algebra is realized as a subalgebra of $\mathbb{B}$ under the commutator, so an eight-dimensional one would be all of $\mathbb{B}$; but $\mathbb{B}\cong\mathrm{GL}(2,\mathbb{C})$ is not a compact algebra, its maximal compact subalgebra being the four-dimensional $\mathrm{U}(2)$, and a gauge algebra must be compact, because a non-compact gauge direction generates negative-norm states. Every compact subalgebra lies in a maximal compact one, so the compact subalgebras of $\mathbb{B}$ have real dimension at most four, while $\dim_\mathbb{R}\mathrm{SU}(3)=8$. The coincidence of the two numbers eight is the real dimension of $\mathbb{B}$, which is not the size of its compact part. The algebra's gauge group is therefore $U(2)$, the electroweak factor and not the colour factor.
 
 ### The Dimension of the Modules
 
@@ -214,7 +214,7 @@ So an $SU(3)$ gauge theory can be written on the enlarged carrier, with the colo
 
 The gluon is the boundary of this subcategory, and the boundary is algebraic. The framework's gauge sector is
 $$
-\mathfrak{u}(2)=\mathfrak{u}(1)\oplus\mathfrak{su}(2)
+\mathrm{U}(2)=\mathrm{U}(1)\oplus\mathrm{SU}(2)
 \qquad\text{and}\qquad
 U(2)\cong\big(SU(2)\times U(1)\big)/\mathbb{Z}_2 ,
 $$
@@ -228,7 +228,7 @@ The interpretation of the strong-sector results is not this article's. Confineme
 
 ## What the Algebra Supplies and What It Imports
 
-**Supplied by the algebra, and recomputed here.** The free kinematics of a colour-fixed gluon, as a massless material vector with the self-dual/anti-self-dual helicity split and the field-strength invariants of the companion articles. The form of the non-abelian self-couplings, as the expansion of the commutator with structure constants $f^{abc}=2\varepsilon^{abc}$ of the compact factor. The obstruction: the maximal compact subalgebra of $\mathbb{B}$ is $\mathfrak{u}(2)$ of real dimension four, computed from $\mathbb{B}=\mathfrak{u}(2)\oplus i\mathfrak{u}(2)$ and from $\mathbb{M}_-=\mathrm{span}_\mathbb{R}\{ie_0,e_1,e_2,e_3\}$, against $\dim_\mathbb{R}\mathfrak{su}(3)=8$; the module dimension, every $\mathbb{B}$-module being a sum of copies of $\mathbb{C}^2$ and hence even-dimensional over $\mathbb{C}$; the vanishing of the symmetric invariant, $\{T_a,T_b\}=-\tfrac12\delta_{ab}e_0$ and hence $d^{abc}=0$ for the compact factor; and the non-associativity of the octonions, which removes the Jacobi identity on which the curvature and the Bianchi identity depend.
+**Supplied by the algebra, and recomputed here.** The free kinematics of a colour-fixed gluon, as a massless material vector with the self-dual/anti-self-dual helicity split and the field-strength invariants of the companion articles. The form of the non-abelian self-couplings, as the expansion of the commutator with structure constants $f^{abc}=2\varepsilon^{abc}$ of the compact factor. The obstruction: the maximal compact subalgebra of $\mathbb{B}$ is $\mathrm{U}(2)$ of real dimension four, computed from $\mathbb{B}=\mathrm{U}(2)\oplus i\mathrm{U}(2)$ and from $\mathbb{M}_-=\mathrm{span}_\mathbb{R}\{ie_0,e_1,e_2,e_3\}$, against $\dim_\mathbb{R}\mathrm{SU}(3)=8$; the module dimension, every $\mathbb{B}$-module being a sum of copies of $\mathbb{C}^2$ and hence even-dimensional over $\mathbb{C}$; the vanishing of the symmetric invariant, $\{T_a,T_b\}=-\tfrac12\delta_{ab}e_0$ and hence $d^{abc}=0$ for the compact factor; and the non-associativity of the octonions, which removes the Jacobi identity on which the curvature and the Bianchi identity depend.
 
 **Imported, and left visible.** The group $SU(3)$ and its adjoint octet; the Gell-Mann matrices, the tensors $f^{abc}$ and $d^{abc}$ and their values; the colour triplet of the quarks; the QCD action, the self-couplings and the beta function; asymptotic freedom and confinement; and the enlarged-carrier embedding $SU(3)\subset U(3)\subset U(4)$ of $M_4(\mathbb{C})$. The algebra supplies the ceiling and the free kinematics; the colour data are standard and external.
 
@@ -248,9 +248,9 @@ The framework does not reach the **octet**, and the failure has an algebraic roo
 $$
 \dim_\mathbb{R}\mathbb{B}=8,
 \qquad
-\dim_\mathbb{R}\mathfrak{u}(2)=4=\dim_\mathbb{R}\mathbb{M}_-,
+\dim_\mathbb{R}\mathrm{U}(2)=4=\dim_\mathbb{R}\mathbb{M}_-,
 \qquad
-\dim_\mathbb{R}\mathfrak{su}(3)=8,
+\dim_\mathbb{R}\mathrm{SU}(3)=8,
 $$
 so the compact part of the algebra is four-dimensional and cannot contain the eight-dimensional compact colour algebra. The module count reinforces the matter side: every $\mathbb{B}$-module is a sum of copies of $\mathbb{C}^2$ and has even complex dimension, whereas the colour triplet is three-dimensional; the octet's dimension eight is even, so this argument constrains the triplet and not the gluon. The invariant tensors are the third obstruction: the compact factor's symmetric invariant vanishes, $\{T_a,T_b\}=-\tfrac12\delta_{ab}e_0$ and $d^{abc}=0$, whereas $SU(3)$ has the nonzero symmetric tensor $d^{abc}$ with the components listed above, recomputed from the Gell-Mann matrices together with $f^{abc}$ and the Casimirs $C_2(\text{adj})=3$, $C_2(\text{fund})=\frac43$, $T(\text{fund})=\frac12$.
 
@@ -265,10 +265,10 @@ The one structure that carries the octet is the octonion algebra: $\dim_\mathbb{
 | $i$ | Central scalar imaginary |
 | $\mathbb{M}_-,\mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\mathbb{M}_-=\mathrm{span}_\mathbb{R}\{ie_0,e_1,e_2,e_3\}$ | Compact part of the algebra; real dimension 4 |
-| $\mathfrak{u}(2)=\mathbb{R}(ie_0)\oplus\mathfrak{su}(2)$ | Maximal compact subalgebra; real dimension 4 |
-| $\mathfrak{su}(2)=\mathrm{span}_\mathbb{R}\{e_1,e_2,e_3\}$, $[e_a,e_b]=2\varepsilon_{abc}e_c$ | Compact factor and its structure constants |
+| $\mathrm{U}(2)=\mathbb{R}(ie_0)\oplus\mathrm{SU}(2)$ | Maximal compact subalgebra; real dimension 4 |
+| $\mathrm{SU}(2)=\mathrm{span}_\mathbb{R}\{e_1,e_2,e_3\}$, $[e_a,e_b]=2\varepsilon_{abc}e_c$ | Compact factor and its structure constants |
 | $f^{abc}=2\varepsilon^{abc}$, $\{T_a,T_b\}=-\tfrac12\delta_{ab}e_0$ | Antisymmetric invariant of the compact factor, in the unnormalized basis $e_a$; vanishing symmetric invariant $d^{abc}=0$ |
-| $\mathfrak{su}(3)$, $\dim_\mathbb{R}\mathfrak{su}(3)=8$ | Colour algebra; not reachable from the compact part |
+| $\mathrm{SU}(3)$, $\dim_\mathbb{R}\mathrm{SU}(3)=8$ | Colour algebra; not reachable from the compact part |
 | $G^a_\mu$ $(a=1,\dots,8)$ | Gluon fields; adjoint octet |
 | $G^a_{\mu\nu}=\partial_\mu G^a_\nu-\partial_\nu G^a_\mu+g_s f^{abc}G^b_\mu G^c_\nu$ | Gluon field strength |
 | $[\lambda^a,\lambda^b]=2if^{abc}\lambda^c$, $\{\lambda^a,\lambda^b\}=\tfrac43\delta^{ab}I+2d^{abc}\lambda^c$ | Gell-Mann tensors |

@@ -148,7 +148,7 @@ $$
 \qquad
 \mathbf{V}_0 = \mathbf{E}_0 + i\,\hat{\mathbf{k}}\times\mathbf{E}_0 ,
 $$
-which is the parent's form of the amplitude. For a pure-vector biquaternion the norm form is the complex bilinear form $N(\tilde{F}_0) = \tilde{F}_0\bar{\tilde{F}}_0 = \sum_k F_{0k}^2$, and $N(i\sqrt{\epsilon}\mathbf{V}_0) = (i\sqrt{\epsilon})^2\mathbf{V}_0\cdot\mathbf{V}_0 = -\epsilon\,\mathbf{V}_0\cdot\mathbf{V}_0$. Expand the complex dot product:
+which is the parent's form of the amplitude. For a pure-vector biquaternion the biquaternion norm is the complex bilinear form $N(\tilde{F}_0) = \tilde{F}_0\bar{\tilde{F}}_0 = \sum_k F_{0k}^2$, and $N(i\sqrt{\epsilon}\mathbf{V}_0) = (i\sqrt{\epsilon})^2\mathbf{V}_0\cdot\mathbf{V}_0 = -\epsilon\,\mathbf{V}_0\cdot\mathbf{V}_0$. Expand the complex dot product:
 $$
 \mathbf{V}_0\cdot\mathbf{V}_0 = \mathbf{E}_0^2 - (\hat{\mathbf{k}}\times\mathbf{E}_0)^2 + 2i\,\mathbf{E}_0\cdot(\hat{\mathbf{k}}\times\mathbf{E}_0).
 $$
@@ -162,7 +162,7 @@ $$
 $$
 Since $\tilde{F}_0$ is a pure vector, $\tilde{F}_0^2 = -\mathbf{F}_0\cdot\mathbf{F}_0 = -N(\tilde{F}_0) = 0$: the amplitude is **nilpotent**, and a nonzero nilpotent element of $\mathbb{B}$ is a zero divisor. This is the algebra of a nonzero null field, and it holds for every polarisation, linear or elliptical, because the argument used only $\hat{\mathbf{k}}\cdot\mathbf{E}_0 = 0$.
 
-**Solution (b).** The four-wavevector is null as well. Its norm form is
+**Solution (b).** The four-wavevector is null as well. Its biquaternion norm is
 $$
 N(\tilde{K}) = \left(\frac{i\omega}{c}\right)^2 + \mathbf{k}^2 = -\frac{\omega^2}{c^2} + k^2 = 0
 $$
@@ -248,7 +248,7 @@ $$
 $$
 using $\mathbf{k}\hat{\mathbf{k}} = -k e_0$. So $\tilde{\nabla}\tilde{W} = 0$: the energy–momentum biquaternion of a free plane wave is conserved, which is the source-free case of the parent's law $\tilde{\nabla}\tilde{W} = -\tilde{P}$ with $\tilde{P} = 0$.
 
-Finally, the norm form of $\tilde{W}$ is
+Finally, the biquaternion norm of $\tilde{W}$ is
 $$
 N(\tilde{W}) = W^2\left(1 + (i\hat{\mathbf{k}})^2\right) = W^2\left(1 - \hat{\mathbf{k}}\cdot\hat{\mathbf{k}}\right) = W^2\left(1 - 1\right) = 0 .
 $$
@@ -347,7 +347,7 @@ The exercise confirms the parent's plane-wave results on cases the parent did no
 | $\tilde{A} = \frac{i\phi}{c}e_0 + \mathbf{A}$ | Potential biquaternion |
 | $\tilde{R} = \frac{i\rho}{\sqrt{\epsilon}}e_0 + \sqrt{\mu}\,\mathbf{J}$ | Source biquaternion |
 | $\mathbf{V} = \mathbf{E} + ic\mathbf{B}$, $\tilde{F} = i\sqrt{\epsilon}\,\mathbf{V}$ | Riemann–Silberstein vector and the field strength |
-| $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$ | Norm form (complex scalar) |
+| $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$ | Biquaternion norm (complex scalar) |
 | $I_1 = \mathbf{E}^2 - c^2\mathbf{B}^2$, $I_2 = \mathbf{E}\cdot\mathbf{B}$ | Field invariants (see gap 4 on the medium setting) |
 | $W = \frac{1}{2}(\epsilon\mathbf{E}^2 + \mu\mathbf{H}^2)$ | Electromagnetic energy density |
 | $\mathbf{S} = \mathbf{E}\times\mathbf{H}$ | Poynting vector |
@@ -363,6 +363,6 @@ The further reading of this exercise is the parent and companion articles of thi
 - *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector* — the four-vectors, including the four-wavevector, and the light cone as the zero-divisor cone.
 - *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector* — the Hermitian subspace, the conjugation action, and the trace formula.
 - *Maxwell's Equations in the Biquaternionic Formulation* — the field strength, the source, the gradient, the gauge structure, and the energy–momentum biquaternion.
-- *The Field-Strength Biquaternion and Its Invariants* — the norm form, the Riemann–Silberstein vector, and the invariant classification of the field.
+- *The Field-Strength Biquaternion and Its Invariants* — the biquaternion norm, the Riemann–Silberstein vector, and the invariant classification of the field.
 - *Electromagnetism in Media — The Local Complex Structure at Work* — the direct parent: the medium parameters, dispersion, interfaces, and the plane-wave conventions applied here.
 - *Exercise: The Electromagnetic Energy–Momentum Tensor* — the rank-two energy–momentum tensor built from $\tilde{F}$, whose four-component biquaternionic counterpart appears in Problem 3.

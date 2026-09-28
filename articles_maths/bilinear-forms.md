@@ -65,7 +65,7 @@ $$
 0 = B(u, u) + B(u, v) + B(v, u) + B(v, v) = B(u, v) + B(v, u),
 $$
 
-so $B(u, v) = -B(v, u)$ and $B$ is skew-symmetric. Conversely, if $B$ is skew-symmetric then $B(v, v) = -B(v, v)$, that is $2 B(v, v) = 0$, and invertibility of $2$ gives $B(v, v) = 0$. If $B$ is both symmetric and skew-symmetric then $B(u, v) = B(v, u) = -B(u, v)$, so $2B(u, v) = 0$ and again $B = 0$ when $2$ is invertible. $\square$
+so $B(u, v) = -B(v, u)$ and $B$ is skew-symmetric. Conversely, if $B$ is skew-symmetric then $B(v, v) = -B(v, v)$, that is $2 B(v, v) = 0$, and invertibility of $2$ gives $B(v, v) = 0$. If $B$ is both symmetric and skew-symmetric then $B(u, v) = B(v, u) = -B(u, v)$, so $2B(u, v) = 0$ and again $B = 0$ when $2$ is invertible.
 
 **Remark.** Over a ring in which $2$ is not invertible the three notions genuinely differ. Over $\mathbb{F}_2$ the form $B(x, y) = xy$ on $\mathbb{F}_2$ is symmetric because $-1 = 1$, but it is not alternating, since $B(1, 1) = 1$. Symmetric and alternating forms are therefore not interchangeable in characteristic $2$.
 
@@ -89,7 +89,7 @@ where $[u]$ and $[v]$ are the coordinate columns. The matrix $G$ is the **Gram m
 
 **Proposition.** The form $B$ is symmetric if and only if $G = G^T$, and skew-symmetric if and only if $G = -G^T$. It is alternating if and only if $G = -G^T$ and every diagonal entry of $G$ is zero.
 
-**Proof.** The first two statements are immediate from $B(e_i, e_j) = G_{ij}$ and the symmetry conditions. For the third, $G = -G^T$ is equivalent to skew-symmetry, and the diagonal entries are $G_{ii} = B(e_i, e_i)$; these vanish for all $i$ if and only if $B(v, v) = 0$ for every $v$, since $B(v, v) = \sum_i v_i^2 G_{ii}$ when $B$ is skew-symmetric. $\square$
+**Proof.** The first two statements are immediate from $B(e_i, e_j) = G_{ij}$ and the symmetry conditions. For the third, $G = -G^T$ is equivalent to skew-symmetry, and the diagonal entries are $G_{ii} = B(e_i, e_i)$; these vanish for all $i$ if and only if $B(v, v) = 0$ for every $v$, since $B(v, v) = \sum_i v_i^2 G_{ii}$ when $B$ is skew-symmetric.
 
 Two bases give two Gram matrices, related by a change of basis.
 
@@ -105,7 +105,7 @@ $$
 B(u, v) = [u]_{\mathcal{B}'}^T \bigl(P^T G P\bigr) [v]_{\mathcal{B}'},
 $$
 
-and the Gram matrix in $\mathcal{B}'$ is the matrix appearing in the middle. $\square$
+and the Gram matrix in $\mathcal{B}'$ is the matrix appearing in the middle.
 
 **Definition.** Two matrices $G, G' \in M_n(R)$ are **congruent** if $G' = P^T G P$ for some invertible $P$; two bilinear forms on a free module are congruent when their Gram matrices are related in this way in some pair of bases. Congruence is an equivalence relation, and classifying bilinear forms on a free module of rank $n$ up to congruence is the same as classifying forms up to change of basis.
 
@@ -153,7 +153,7 @@ where $M^* = \operatorname{Hom}_R(M, R)$ is the dual module. For a symmetric or 
 2. the map $M \to M^*$, $u \mapsto B(u, -)$, is injective;
 3. $\det G$ is not a zero divisor of $R$.
 
-**Proof.** In coordinates the map $u \mapsto B(u, -)$ sends $x$ to the functional $y \mapsto x^T G y$, that is to the row vector $x^T G$, whose transpose is $G^T x$. Its kernel is $\operatorname{rad}(B)$, and for a symmetric or skew-symmetric form it is also the kernel of $x \mapsto Gx$, since $G^T$ then differs from $\pm G$. Statement 3 is the condition that the square matrix $G$ have no nonzero kernel vector, a condition equivalent to $\det G$ being a non-zero-divisor; this equivalence is a standard corollary of McCoy's theorem for matrices over a commutative ring. $\square$
+**Proof.** In coordinates the map $u \mapsto B(u, -)$ sends $x$ to the functional $y \mapsto x^T G y$, that is to the row vector $x^T G$, whose transpose is $G^T x$. Its kernel is $\operatorname{rad}(B)$, and for a symmetric or skew-symmetric form it is also the kernel of $x \mapsto Gx$, since $G^T$ then differs from $\pm G$. Statement 3 is the condition that the square matrix $G$ have no nonzero kernel vector, a condition equivalent to $\det G$ being a non-zero-divisor; this equivalence is a standard corollary of McCoy's theorem for matrices over a commutative ring.
 
 ### Non-Degenerate Forms
 
@@ -163,7 +163,7 @@ Over a general commutative ring non-degeneracy is strictly stronger than the van
 
 **Proposition.** Let $M$ be free of finite rank with Gram matrix $G$. Then $B$ is non-degenerate if and only if $\det G$ is a **unit** of $R$.
 
-**Proof.** The map $M \to M^*$ is represented by $G$, and an endomorphism of a free module of finite rank is an isomorphism if and only if its determinant is a unit. $\square$
+**Proof.** The map $M \to M^*$ is represented by $G$, and an endomorphism of a free module of finite rank is an isomorphism if and only if its determinant is a unit.
 
 **Example.** Let $R = \mathbb{R}$ and $G = \operatorname{diag}(1, 1, 0)$ on $\mathbb{R}^3$. Then $G$ has rank $2$ and radical spanned by $e_3$, so the form is degenerate. Let $R = \mathbb{Z}$ and $G = (2)$ on $\mathbb{Z}$. Then $\det G = 2$ is not a unit, the radical is zero, and the map $\mathbb{Z} \to \mathbb{Z}^*$ is multiplication by $2$, which is injective but not surjective: the form is degenerate although its radical vanishes.
 
@@ -188,7 +188,7 @@ $$
 
 **Proposition.** The orthogonal direct sum $B_1 \perp B_2$ is symmetric, skew-symmetric or alternating if and only if both summands are. It is non-degenerate if and only if both summands are, and its Gram matrix in the concatenated basis is the block sum $\operatorname{diag}(G_1, G_2)$.
 
-**Proof.** The symmetry statements are immediate. The subspace $M_1$ is orthogonal to $M_2$, so the radical of $B_1 \perp B_2$ is $\operatorname{rad}(B_1) \oplus \operatorname{rad}(B_2)$, and the map to the dual is the direct sum of the two maps. Hence it is an isomorphism exactly when both factors are. The Gram matrix is block diagonal by construction. $\square$
+**Proof.** The symmetry statements are immediate. The subspace $M_1$ is orthogonal to $M_2$, so the radical of $B_1 \perp B_2$ is $\operatorname{rad}(B_1) \oplus \operatorname{rad}(B_2)$, and the map to the dual is the direct sum of the two maps. Hence it is an isomorphism exactly when both factors are. The Gram matrix is block diagonal by construction.
 
 The restriction of a non-degenerate form to a general submodule need not be non-degenerate. Over a field, however, the situation is controlled.
 
@@ -200,7 +200,7 @@ $$
 
 and the following are equivalent: (i) $V = W \perp W^\perp$; (ii) $W \cap W^\perp = 0$; (iii) the restriction of $B$ to $W$ is non-degenerate.
 
-**Proof.** The map $V \to W^*$, $v \mapsto B(v, -)|_W$, has kernel $W^\perp$, and it is surjective: a functional on $W$ extends to a functional on $V$, and non-degeneracy of $B$ realises that extension as $B(v, -)$. Hence $\dim W^\perp = \dim V - \dim W$. The same formula applied to $W^\perp$ gives $\dim (W^\perp)^\perp = \dim W$, and since $W \subseteq (W^\perp)^\perp$ always, the inclusion is an equality. A vector of $W \cap W^\perp$ is orthogonal to all of $W$ and to all of $W^\perp$, hence to all of $V$, so $W \cap W^\perp = 0$ because $B$ is non-degenerate; consequently $W + W^\perp = V$ by the dimension formula. The three conditions are now equivalent: the radical of the restriction of $B$ to $W$ is $W \cap W^\perp$, so (ii) and (iii) hold or fail together, and they hold exactly when $W + W^\perp = V$, which is (i). $\square$
+**Proof.** The map $V \to W^*$, $v \mapsto B(v, -)|_W$, has kernel $W^\perp$, and it is surjective: a functional on $W$ extends to a functional on $V$, and non-degeneracy of $B$ realises that extension as $B(v, -)$. Hence $\dim W^\perp = \dim V - \dim W$. The same formula applied to $W^\perp$ gives $\dim (W^\perp)^\perp = \dim W$, and since $W \subseteq (W^\perp)^\perp$ always, the inclusion is an equality. A vector of $W \cap W^\perp$ is orthogonal to all of $W$ and to all of $W^\perp$, hence to all of $V$, so $W \cap W^\perp = 0$ because $B$ is non-degenerate; consequently $W + W^\perp = V$ by the dimension formula. The three conditions are now equivalent: the radical of the restriction of $B$ to $W$ is $W \cap W^\perp$, so (ii) and (iii) hold or fail together, and they hold exactly when $W + W^\perp = V$, which is (i).
 
 **Remark.** Over a ring, the proof fails at the step that extends a functional from $W$ to $V$: the extension need not be of the form $B(v, -)$, and the dimension formula can fail. This is the source of the additional hypotheses in the ring version of the extension theorem and in the discussion of forms with values in an algebra.
 
@@ -212,7 +212,7 @@ Alternating forms behave more rigidly than symmetric ones.
 
 **Proposition.** Let $B$ be an alternating form on a free module of finite rank over a ring in which $2$ is invertible. If $B$ is non-degenerate, the rank of the module is even.
 
-**Proof.** The Gram matrix satisfies $G = -G^T$. Taking determinants, $\det G = \det(-G^T) = (-1)^n \det G$, where $n$ is the rank. Hence $2 \det G = 0$ when $n$ is odd. Since $2$ is invertible this gives $\det G = 0$, contradicting non-degeneracy. $\square$
+**Proof.** The Gram matrix satisfies $G = -G^T$. Taking determinants, $\det G = \det(-G^T) = (-1)^n \det G$, where $n$ is the rank. Hence $2 \det G = 0$ when $n$ is odd. Since $2$ is invertible this gives $\det G = 0$, contradicting non-degeneracy.
 
 Over a field the same argument shows that the rank of any alternating form is even: the radical is orthogonal to all of $V$, so $V = W \perp \operatorname{rad}(B)$ with $W$ carrying a non-degenerate alternating form of dimension $\operatorname{rank}(B)$, to which the proposition applies.
 
@@ -232,7 +232,7 @@ $$
 
 In the ordering $e_1, f_1, \ldots, e_m, f_m$ the Gram matrix is the block sum of $m$ copies of $\begin{pmatrix} 0 & 1 \\ -1 & 0 \end{pmatrix}$; in the ordering $e_1, \ldots, e_m, f_1, \ldots, f_m$, which is the one used, it is the block matrix $\begin{pmatrix} 0 & I_m \\ -I_m & 0 \end{pmatrix}$ with $I_m$ the identity matrix of size $m$.
 
-**Proof sketch.** If $B \neq 0$ there are $u, v$ with $c = B(u, v) \neq 0$, and $u, v$ are independent because $B$ is alternating; replacing $v$ by $v/c$, which is legal over a field, gives $B(e_1, f_1) = 1$ for $e_1 = u$ and $f_1 = v/c$. The plane $H_1 = \operatorname{span}\{e_1, f_1\}$ is non-degenerate, so $V = H_1 \perp H_1^\perp$ by the restriction proposition, and $H_1^\perp$ carries a non-degenerate alternating form of dimension $\dim V - 2$; induction on $\dim V$ finishes. $\square$
+**Proof sketch.** If $B \neq 0$ there are $u, v$ with $c = B(u, v) \neq 0$, and $u, v$ are independent because $B$ is alternating; replacing $v$ by $v/c$, which is legal over a field, gives $B(e_1, f_1) = 1$ for $e_1 = u$ and $f_1 = v/c$. The plane $H_1 = \operatorname{span}\{e_1, f_1\}$ is non-degenerate, so $V = H_1 \perp H_1^\perp$ by the restriction proposition, and $H_1^\perp$ carries a non-degenerate alternating form of dimension $\dim V - 2$; induction on $\dim V$ finishes.
 
 **Definition.** A basis with the property above is a **symplectic basis**, and the form is **hyperbolic** when it has such a basis. Two non-degenerate alternating forms of the same dimension over a field are isometric, because each can be put in symplectic form; the alternation case therefore has a single invariant, the dimension, once non-degeneracy is assumed.
 
@@ -266,7 +266,7 @@ $$
 B'(TST^{-1}u, TST^{-1}v) = B(ST^{-1}u, ST^{-1}v) = B(T^{-1}u, T^{-1}v) = B'(u, v),
 $$
 
-so $TST^{-1}$ is an isometry of $B'$; the assignment is a homomorphism with inverse $R \mapsto T^{-1}RT$. $\square$
+so $TST^{-1}$ is an isometry of $B'$; the assignment is a homomorphism with inverse $R \mapsto T^{-1}RT$.
 
 The group is written $\operatorname{O}(M, B)$ when $B$ is symmetric, and $\operatorname{Sp}(M, B)$ when $B$ is alternating; the notation and the structure theory of these groups are developed in *The Orthogonal Lie Algebra* and *The Unitary and Symplectic Groups*.
 
@@ -284,7 +284,7 @@ the image of $\det G$ in the group of square classes.
 
 **Proposition.** The discriminant is well defined: a change of basis replaces $G$ by $P^T G P$ and multiplies the determinant by $(\det P)^2$, which is a square. If $B$ is replaced by $c\,B$ for $c \in F^\times$, then $\Delta(cB) = c^{n}\,\Delta(B)$, where $n$ is the rank.
 
-**Proof.** Immediate from $\det(P^T G P) = (\det P)^2 \det G$ and from scaling $G$ by $c$. $\square$
+**Proof.** Immediate from $\det(P^T G P) = (\det P)^2 \det G$ and from scaling $G$ by $c$.
 
 The discriminant is the first congruence invariant of a non-degenerate symmetric form. It is not a complete invariant: over $\mathbb{R}$ the matrices $\operatorname{diag}(1, 1)$ and $\operatorname{diag}(-1, -1)$ have the same discriminant $1$ but represent forms of opposite signature, treated.
 

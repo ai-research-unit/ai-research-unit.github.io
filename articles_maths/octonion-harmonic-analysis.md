@@ -34,7 +34,7 @@ $$
 
 holds, and the Parseval form $\int f\bar g\,dx = (2\pi)^{-8}\int\hat f\overline{\hat g}\,d\xi$.
 
-*Proof.* The phase $e^{-i\langle\xi,x\rangle}$ is a scalar, hence central, so it may be placed anywhere in a product; the transform is therefore the componentwise complex Fourier transform of the eight components, and the classical theory applies to each of them. Linearity is componentwise, and the isometry is the classical Plancherel theorem in dimension eight. $\square$
+*Proof.* The phase $e^{-i\langle\xi,x\rangle}$ is a scalar, hence central, so it may be placed anywhere in a product; the transform is therefore the componentwise complex Fourier transform of the eight components, and the classical theory applies to each of them. Linearity is componentwise, and the isometry is the classical Plancherel theorem in dimension eight.
 
 The one structural point is the centrality of the phase: because $e^{-i\langle\xi,x\rangle}$ is a scalar, the transform does not disturb the order of the octonion factors of a function, and this is the reason why the theory below survives the failure of associativity while the product formulae do not.
 
@@ -55,13 +55,13 @@ $$
 = \left(\int f(z)e^{-i\langle\xi,z\rangle}dz\right)\left(\int g(y)e^{-i\langle\xi,y\rangle}dy\right),
 $$
 
-the step being legitimate because the phase is scalar and the two integrals are limits of finite sums of octonions, which multiply bilinearly. No associativity is used: the product on the right involves only the two limits. $\square$
+the step being legitimate because the phase is scalar and the two integrals are limits of finite sums of octonions, which multiply bilinearly. No associativity is used: the product on the right involves only the two limits.
 
 The convolution theorem therefore holds with no modification, and this is not an accident: the convolution is a sum of products in which the two factors enter in a fixed order, the order of the integrand $f(x-y)g(y)$, and the scalar phase factorises. What fails is the dual statement:
 
 **Theorem (failure of the product theorem).** For $f,g\in L^1\cap L^2$ there is no formula expressing $\widehat{fg}$ through $\hat f$ and $\hat g$ alone, and the classical identity $\widehat{fg} = (2\pi)^{-8}\,\hat f*\hat g$ fails in general.
 
-*Proof.* The classical proof of the product theorem for the Fourier transform is the convolution theorem applied twice, or a direct computation which for the transform of the product would require the interchange of the roles of $x$ and $\xi$ with the product $f(x)g(x)$; in the octonionic case the direct computation produces terms in which the scalar phase is interleaved with the product $f(x)g(x)$, and the correction terms are exactly the associator corrections of the product rule of *Octonion Analysis*: the difference between $\widehat{fg}$ and $(2\pi)^{-8}\hat f*\hat g$ is a sum of integrals of associators and does not vanish identically. $\square$
+*Proof.* The classical proof of the product theorem for the Fourier transform is the convolution theorem applied twice, or a direct computation which for the transform of the product would require the interchange of the roles of $x$ and $\xi$ with the product $f(x)g(x)$; in the octonionic case the direct computation produces terms in which the scalar phase is interleaved with the product $f(x)g(x)$, and the correction terms are exactly the associator corrections of the product rule of *Octonion Analysis*: the difference between $\widehat{fg}$ and $(2\pi)^{-8}\hat f*\hat g$ is a sum of integrals of associators and does not vanish identically.
 
 The asymmetry between the convolution theorem and the failure of the product theorem is the harmonic-analytic face of the whole non-associative theory: the transform is well behaved on the **linear** structure (sums, convolution, multiplication by constants) and fails on the **multiplicative** structure, precisely where the Leibniz rule of the differential calculus also fails.
 
@@ -81,11 +81,11 @@ $$
 
 and equality is attained exactly for the functions $f(x) = c\exp(-\alpha\lvert x\rvert^2)$ with constant $c\in\mathbb{O}$ and $\alpha>0$.
 
-*Proof.* Both integrals are sums of the eight componentwise integrals, and the classical Heisenberg inequality in $n$ variables, with the unitary normalisation, gives the constant $n^2/4$; here $n = 8$, so $n^2/4 = 16$. The extremals are the Gaussians with a constant octonion factor, which satisfy the componentwise equality conditions. $\square$
+*Proof.* Both integrals are sums of the eight componentwise integrals, and the classical Heisenberg inequality in $n$ variables, with the unitary normalisation, gives the constant $n^2/4$; here $n = 8$, so $n^2/4 = 16$. The extremals are the Gaussians with a constant octonion factor, which satisfy the componentwise equality conditions.
 
 **Proposition.** The group of automorphisms $G_2 = \operatorname{Aut}(\mathbb{O})$ acts on functions by $(g\cdot f)(x) = g(f(g^{-1}x))$, and this action commutes with the Fourier transform: $\widehat{g\cdot f} = g\cdot\hat f$. Consequently the transform is equivariant for the action of the rotations of $G_2\subset SO(7)$ on the imaginary part and is diagonal on the isotypical components of the representation of $G_2$ on functions.
 
-*Proof.* The multiplication is $G_2$-invariant and the norm is too, so $g\in G_2$ preserves the inner product $\langle\xi,x\rangle$ used in the phase; the transform therefore intertwines the action. The equivariance statement is the standard commutation of a symmetry of the Euclidean structure with the Fourier transform. $\square$
+*Proof.* The multiplication is $G_2$-invariant and the norm is too, so $g\in G_2$ preserves the inner product $\langle\xi,x\rangle$ used in the phase; the transform therefore intertwines the action. The equivariance statement is the standard commutation of a symmetry of the Euclidean structure with the Fourier transform.
 
 ## Spherical Harmonics and the Monogenic Decomposition
 
@@ -101,7 +101,7 @@ $$
 
 the closure of the algebraic direct sum. The monogenic subspaces satisfy $\mathcal{P}_k\subset\mathcal{H}_k$ and are related to the harmonic spaces by the degree-lowering action of the operator $D$.
 
-*Proof.* The finite-dimensionality and the eigenvalue statement are the classical theory of spherical harmonics in eight variables; density is the density of polynomials in $L^2$ of the sphere together with the decomposition of a polynomial into harmonic components; the inclusion $\mathcal{P}_k\subset\mathcal{H}_k$ is the harmonicity of monogenic functions from *Octonion Analysis*. $\square$
+*Proof.* The finite-dimensionality and the eigenvalue statement are the classical theory of spherical harmonics in eight variables; density is the density of polynomials in $L^2$ of the sphere together with the decomposition of a polynomial into harmonic components; the inclusion $\mathcal{P}_k\subset\mathcal{H}_k$ is the harmonicity of monogenic functions from *Octonion Analysis*.
 
 The dimension of $\mathcal{H}_k$ follows from the classical count in eight variables,
 
@@ -115,11 +115,11 @@ the factor $8$ being the octonion-valued coefficients. The corresponding count f
 
 **Proposition.** The monogenic polynomials of degree $k$ restrict to eigenfunctions of the spherical Laplacian with eigenvalue $-k(k+6)$, and their integrals against the kernel give the Taylor coefficients of a monogenic function, as in *Octonion Integration*. The first cases are explicit: $\mathcal{P}_0$ consists of the constants; $\mathcal{P}_1$ consists of the linear functions $x\mapsto\sum_{k=0}^{7}x_kc_k$ with $\sum_{k=0}^{7}e_kc_k = 0$, a real vector space of dimension $8\cdot8-8 = 56$; and the dimension of $\mathcal{P}_k$ grows like $k^6$ in the eight variables.
 
-*Proof.* The eigenvalue statement is the harmonicity of monogenic functions; the growth of the dimension is the standard polynomial growth of the dimension of the harmonic spaces in fixed dimension and degree, $k^{n-2}$ for $\mathbb{R}^n$ with $n = 8$, hence $k^6$. $\square$
+*Proof.* The eigenvalue statement is the harmonicity of monogenic functions; the growth of the dimension is the standard polynomial growth of the dimension of the harmonic spaces in fixed dimension and degree, $k^{n-2}$ for $\mathbb{R}^n$ with $n = 8$, hence $k^6$.
 
 **Theorem.** The homology form of the Cauchy formula expresses the projection of a monogenic function onto the monogenic spherical harmonics of degree $k$ as the integral of the function against the conjugate spherical harmonic over the sphere; consequently the monogenic functions of finite energy are exactly those whose spherical harmonic coefficients are square-summable, and the space of such functions is a real Hilbert space on which $G_2$ acts unitarily.
 
-*Proof.* The Cauchy formula with the kernel expanded in monogenic spherical harmonics gives the coefficients as boundary integrals; the completeness of the monogenic spherical harmonics in the monogenic class follows from the standard argument with the maximum principle, applied to the difference of a monogenic function and the sum of its spherical harmonic projections. $\square$
+*Proof.* The Cauchy formula with the kernel expanded in monogenic spherical harmonics gives the coefficients as boundary integrals; the completeness of the monogenic spherical harmonics in the monogenic class follows from the standard argument with the maximum principle, applied to the difference of a monogenic function and the sum of its spherical harmonic projections.
 
 ### The Fourier Transform of the Axial Class
 
@@ -131,7 +131,7 @@ $$
 
 where $J_3$ is the Bessel function of the first kind of order $3 = \frac{n}{2}-1$ with $n = 8$, and the axial part transforms by the same formula applied to the two profiles $u$ and $v$ separately.
 
-*Proof.* The transform commutes with the rotations of $\operatorname{Im}\mathbb{O}$ by the equivariance proposition, and those rotations are transitive on the spheres of the imaginary part; the axial symmetry is therefore preserved, and the transform is determined by its values on the positive imaginary axis. For the radial case the classical formula in $n$ dimensions is $\widehat{f_0}(\xi) = (2\pi)^{n/2}\rho^{-(n/2-1)}\int_0^{\infty}w(r)J_{n/2-1}(\rho r)r^{n/2}dr$ with $\rho = \lvert\xi\rvert$; with $n = 8$ this is the display. The details are the standard theory of the Hankel transform. $\square$
+*Proof.* The transform commutes with the rotations of $\operatorname{Im}\mathbb{O}$ by the equivariance proposition, and those rotations are transitive on the spheres of the imaginary part; the axial symmetry is therefore preserved, and the transform is determined by its values on the positive imaginary axis. For the radial case the classical formula in $n$ dimensions is $\widehat{f_0}(\xi) = (2\pi)^{n/2}\rho^{-(n/2-1)}\int_0^{\infty}w(r)J_{n/2-1}(\rho r)r^{n/2}dr$ with $\rho = \lvert\xi\rvert$; with $n = 8$ this is the display. The details are the standard theory of the Hankel transform.
 
 **Corollary.** The kernel $E$ is axial, with profiles $u = x_0\lvert x\rvert^{-8}$ and $v = -\lvert\underline x\rvert\lvert x\rvert^{-8}$; its transform is axial and, since $E$ is homogeneous of degree $-7$ and the transform of a homogeneous function of degree $\lambda$ in dimension $n$ is homogeneous of degree $-\lambda-n$, the transform $\hat E$ is homogeneous of degree $-15$ away from the origin. The axial class is closed under the Fourier transform, since the transform preserves the rotational symmetry of the imaginary part.
 
@@ -141,7 +141,7 @@ The axial class is the maximal class of functions on which the octonionic harmon
 
 The features of the octonionic theory are consequences of one algebraic fact. Among the composition algebras $\mathbb{R}$, $\mathbb{C}$, $\mathbb{H}$, $\mathbb{O}$ the octonions are the only one whose multiplication is not associative; it is alternative, so that every subalgebra generated by two elements is associative, and the associator is alternating. Every structural phenomenon of the octonionic theory is the trace of that single fact:
 
-1. **Algebra.** The algebra has no associative law, so the representations are the left and right multiplications, the derivations form $\mathfrak{g}_2$ rather than the derivations of an associative algebra, and the automorphism group $G_2$ is the exceptional group acting on the imaginary part.
+1. **Algebra.** The algebra has no associative law, so the representations are the left and right multiplications, the derivations form $\mathrm{G}_2$ rather than the derivations of an associative algebra, and the automorphism group $G_2$ is the exceptional group acting on the imaginary part.
 2. **Geometry.** The cross product on $\operatorname{Im}\mathbb{O}$ gives the associative three-form with stabiliser $G_2$ and the Cayley four-form with stabiliser $\operatorname{Spin}(7)$, hence the holonomy geometries and the calibrations; the octonionic planes are Moufang but not Desarguesian, and the projective planes over the tensor products of $\mathbb{O}$ give the geometries of $E_6$, $E_7$, $E_8$.
 3. **Analysis.** The Cauchy–Riemann operator factorises the Laplacian and has a monogenic kernel class with a Cauchy formula, but the Leibniz rule carries the associator corrections, the product of two monogenic functions need not be monogenic, and the class is not a module over $\mathbb{O}$.
 4. **Integration.** The divergence theorem, the homology invariance of the Cauchy integral and the jump formulas survive, since they never form a product of two variable octonions; the Cauchy transform is not idempotent, since the classical proof interchanges integrations through an associative product.

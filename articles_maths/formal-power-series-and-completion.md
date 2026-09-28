@@ -10,9 +10,9 @@ $$
 \hat A = \varprojlim_k A/I^k,
 $$
 
-for an ideal $I \subseteq A$. Applied to the polynomial algebra $R[x_1, \ldots, x_n]$ at the ideal $\mathfrak{m} = (x_1, \ldots, x_n)$ of polynomials with zero constant term, it produces the algebra $R[[x_1, \ldots, x_n]]$ of formal power series. The two algebras carry the same generators and the same linear terms but differ in what they allow: a polynomial must be finite, a formal power series may be infinite, and the completion is exactly the device that admits the infinite sums while keeping every individual computation finite.
+for an ideal $I \subseteq A$. Applied to the polynomial algebra $R[x_1, \ldots, x_n]$ at the ideal $\mathrm{M} = (x_1, \ldots, x_n)$ of polynomials with zero constant term, it produces the algebra $R[[x_1, \ldots, x_n]]$ of formal power series. The two algebras carry the same generators and the same linear terms but differ in what they allow: a polynomial must be finite, a formal power series may be infinite, and the completion is exactly the device that admits the infinite sums while keeping every individual computation finite.
 
-The article develops the basic algebra of formal power series, the order and the $\mathfrak{m}$-adic filtration, the completion functor and the completion of the polynomial algebra, the formal inverse function theorem with its filtration-improving proof, and the relation between completion, the symmetric algebra and Taylor expansion. The formal inverse function theorem is derived here, not cited, because its proof is the clean illustration of why completeness for the $\mathfrak{m}$-adic filtration is the right hypothesis. No distance and no topology is used: completeness is the algebraic statement that every coherent sequence of truncations has a unique limit, and convergence is replaced throughout by agreement modulo each power of the ideal.
+The article develops the basic algebra of formal power series, the order and the $\mathrm{M}$-adic filtration, the completion functor and the completion of the polynomial algebra, the formal inverse function theorem with its filtration-improving proof, and the relation between completion, the symmetric algebra and Taylor expansion. The formal inverse function theorem is derived here, not cited, because its proof is the clean illustration of why completeness for the $\mathrm{M}$-adic filtration is the right hypothesis. No distance and no topology is used: completeness is the algebraic statement that every coherent sequence of truncations has a unique limit, and convergence is replaced throughout by agreement modulo each power of the ideal.
 
 ## Formal Power Series
 
@@ -40,30 +40,30 @@ $$
 
 with $\operatorname{ord}(0) = +\infty$. The order satisfies $\operatorname{ord}(f+h) \geq \min(\operatorname{ord} f, \operatorname{ord} h)$ and $\operatorname{ord}(fh) \geq \operatorname{ord} f + \operatorname{ord} h$; over a domain the second is an equality.
 
-### The Augmentation Ideal and the $\mathfrak{m}$-adic Filtration
+### The Augmentation Ideal and the $\mathrm{M}$-adic Filtration
 
 Let
 
 $$
-\mathfrak{m} = (x_1, \ldots, x_n) = \{f : \operatorname{ord}(f) \geq 1\}
+\mathrm{M} = (x_1, \ldots, x_n) = \{f : \operatorname{ord}(f) \geq 1\}
 $$
 
 be the ideal of series vanishing at the origin, the **augmentation ideal**. Its powers are the sets of series of order at least $k$,
 
 $$
-\mathfrak{m}^k = \{f : \operatorname{ord}(f) \geq k\},
+\mathrm{M}^k = \{f : \operatorname{ord}(f) \geq k\},
 $$
 
-so the $\mathfrak{m}$-adic filtration of $R[[x_1,\ldots,x_n]]$ is the order filtration. The quotients are
+so the $\mathrm{M}$-adic filtration of $R[[x_1,\ldots,x_n]]$ is the order filtration. The quotients are
 
 $$
-R[[x_1,\ldots,x_n]]/\mathfrak{m}^k \cong R[x_1,\ldots,x_n]/(x_1,\ldots,x_n)^k,
+R[[x_1,\ldots,x_n]]/\mathrm{M}^k \cong R[x_1,\ldots,x_n]/(x_1,\ldots,x_n)^k,
 $$
 
-the polynomials of degree less than $k$; both sides consist of the truncations of order at most $k - 1$. The algebra is complete for the $\mathfrak{m}$-adic filtration, meaning that the canonical map
+the polynomials of degree less than $k$; both sides consist of the truncations of order at most $k - 1$. The algebra is complete for the $\mathrm{M}$-adic filtration, meaning that the canonical map
 
 $$
-R[[x_1, \ldots, x_n]] \longrightarrow \varprojlim_k R[[x_1,\ldots,x_n]]/\mathfrak{m}^k
+R[[x_1, \ldots, x_n]] \longrightarrow \varprojlim_k R[[x_1,\ldots,x_n]]/\mathrm{M}^k
 $$
 
 is a bijection: a series is the same thing as a coherent sequence of its truncations. This is the structure that the next sections exploit.
@@ -72,27 +72,27 @@ is a bijection: a series is the same thing as a coherent sequence of its truncat
 
 **Proposition.** A formal power series $f \in R[[x_1,\ldots,x_n]]$ is a unit if and only if its constant term $f(0)$ is a unit of $R$.
 
-*Proof.* If $f(0) = u \in R^{\times}$, write $f = u(1 - h)$ with $h \in \mathfrak{m}$. Since $h^k \in \mathfrak{m}^k$ and a series is determined by its truncations, the partial sums of the geometric series
+*Proof.* If $f(0) = u \in R^{\times}$, write $f = u(1 - h)$ with $h \in \mathrm{M}$. Since $h^k \in \mathrm{M}^k$ and a series is determined by its truncations, the partial sums of the geometric series
 
 $$
 f^{-1} = u^{-1}\bigl(1 + h + h^2 + h^3 + \cdots\bigr)
 $$
 
-are coherent modulo every $\mathfrak{m}^k$ and so define an element of $R[[x_1,\ldots,x_n]]$, and multiplying that element by $1-h$ gives $1$; so $f$ is a unit. Conversely, if $f$ is a unit then $fh = 1$ for some $h$, and evaluating the constant terms gives $f(0)h(0) = 1$, so $f(0)$ is a unit. $\square$
+are coherent modulo every $\mathrm{M}^k$ and so define an element of $R[[x_1,\ldots,x_n]]$, and multiplying that element by $1-h$ gives $1$; so $f$ is a unit. Conversely, if $f$ is a unit then $fh = 1$ for some $h$, and evaluating the constant terms gives $f(0)h(0) = 1$, so $f(0)$ is a unit.
 
 **Example.** $1 + x$ is a unit in $R[[x]]$ with inverse $1 - x + x^2 - x^3 + \cdots$, the coefficients being $(-1)^k$. The series $x$ is not a unit; over a domain it is a non-zerodivisor, so not every non-unit of $R[[x]]$ is a zerodivisor.
 
 ### Substitution and Composition
 
-Let $h_1, \ldots, h_n$ be series with $h_i \in \mathfrak{m}$, that is $\operatorname{ord}(h_i) \geq 1$. For any $f \in R[[x_1,\ldots,x_n]]$, the substituted series $f(h_1,\ldots,h_n)$ is defined: the contribution of the monomial $x^a$ of degree $d$ lies in $\mathfrak{m}^d$, so each coefficient of the result is a finite sum of contributions from the finitely many monomials of bounded degree. The substitution depends only on the truncations of $f$, and it is a filtration-preserving $R$-algebra homomorphism
+Let $h_1, \ldots, h_n$ be series with $h_i \in \mathrm{M}$, that is $\operatorname{ord}(h_i) \geq 1$. For any $f \in R[[x_1,\ldots,x_n]]$, the substituted series $f(h_1,\ldots,h_n)$ is defined: the contribution of the monomial $x^a$ of degree $d$ lies in $\mathrm{M}^d$, so each coefficient of the result is a finite sum of contributions from the finitely many monomials of bounded degree. The substitution depends only on the truncations of $f$, and it is a filtration-preserving $R$-algebra homomorphism
 
 $$
 R[[x_1,\ldots,x_n]] \longrightarrow R[[x_1,\ldots,x_n]], \qquad f \longmapsto f(h_1,\ldots,h_n),
 $$
 
-precisely when the $h_i$ have no constant terms. Without that condition the substitution of a series with infinitely many terms need not make sense, and the requirement $h_i \in \mathfrak{m}$ is the standard hypothesis under which composition is defined.
+precisely when the $h_i$ have no constant terms. Without that condition the substitution of a series with infinitely many terms need not make sense, and the requirement $h_i \in \mathrm{M}$ is the standard hypothesis under which composition is defined.
 
-## The $\mathfrak{m}$-adic Completion
+## The $\mathrm{M}$-adic Completion
 
 ### The Completion Functor
 
@@ -107,18 +107,18 @@ the module of coherent sequences $(a_k)_{k\geq0}$ with $a_k \in A/I^k$ and $a_{k
 **Proposition.** The completion of the polynomial algebra at the augmentation ideal is the formal power series algebra:
 
 $$
-R[x_1,\ldots,x_n]^{\wedge}_{\mathfrak{m}} \cong R[[x_1,\ldots,x_n]], \qquad \mathfrak{m} = (x_1,\ldots,x_n),
+R[x_1,\ldots,x_n]^{\wedge}_{\mathrm{M}} \cong R[[x_1,\ldots,x_n]], \qquad \mathrm{M} = (x_1,\ldots,x_n),
 $$
 
-where $\widehat{\phantom{A}}$ denotes $\mathfrak{m}$-adic completion.
+where $\widehat{\phantom{A}}$ denotes $\mathrm{M}$-adic completion.
 
-*Proof.* For each $k$ the truncation map $R[[x_1,\ldots,x_n]]\to R[x_1,\ldots,x_n]/\mathfrak{m}^k$ is surjective with kernel $\mathfrak{m}^k$, giving isomorphisms
+*Proof.* For each $k$ the truncation map $R[[x_1,\ldots,x_n]]\to R[x_1,\ldots,x_n]/\mathrm{M}^k$ is surjective with kernel $\mathrm{M}^k$, giving isomorphisms
 
 $$
-R[x_1,\ldots,x_n]/\mathfrak{m}^k \cong R[[x_1,\ldots,x_n]]/\mathfrak{m}^k
+R[x_1,\ldots,x_n]/\mathrm{M}^k \cong R[[x_1,\ldots,x_n]]/\mathrm{M}^k
 $$
 
-because every class modulo $\mathfrak{m}^k$ has a polynomial representative, namely its truncation. Passing to the inverse limit and using that the power series algebra is complete for the $\mathfrak{m}$-adic filtration gives the stated isomorphism. $\square$
+because every class modulo $\mathrm{M}^k$ has a polynomial representative, namely its truncation. Passing to the inverse limit and using that the power series algebra is complete for the $\mathrm{M}$-adic filtration gives the stated isomorphism.
 
 The proposition is the precise sense in which the polynomial algebra and the power series algebra are the same thing: they have the same finite truncations, and the second is obtained from the first by completing the filtration.
 
@@ -152,23 +152,23 @@ $$
 G = \Phi(G), \qquad \Phi(G) = L\bigl(x - N(G)\bigr).
 $$
 
-**Lemma.** The Newton step $\Phi$ gains one order on the $\mathfrak{m}$-adic filtration: if $G \equiv G' \bmod \mathfrak{m}^k$ then $\Phi(G) \equiv \Phi(G') \bmod \mathfrak{m}^{k+1}$.
+**Lemma.** The Newton step $\Phi$ gains one order on the $\mathrm{M}$-adic filtration: if $G \equiv G' \bmod \mathrm{M}^k$ then $\Phi(G) \equiv \Phi(G') \bmod \mathrm{M}^{k+1}$.
 
 *Proof.* Since $N$ has no terms of degree at most $1$, every monomial of $N$ has degree at least $2$ and therefore contains at least one factor from the tuple's variables; hence
 
 $$
-N(G) - N(G') \in \mathfrak{m}\cdot(G_1 - G'_1, \ldots, G_n - G'_n) \subseteq \mathfrak{m}^{k+1}
+N(G) - N(G') \in \mathrm{M}\cdot(G_1 - G'_1, \ldots, G_n - G'_n) \subseteq \mathrm{M}^{k+1}
 $$
 
-whenever $G_i - G'_i \in \mathfrak{m}^k$ for all $i$, which is the gain of one order. Applying the linear map $-L$ preserves membership in $\mathfrak{m}^{k+1}$. $\square$
+whenever $G_i - G'_i \in \mathrm{M}^k$ for all $i$, which is the gain of one order. Applying the linear map $-L$ preserves membership in $\mathrm{M}^{k+1}$.
 
-*Proof of the theorem.* Choose $G^{(0)} = Lx$, which has zero constant term and satisfies $F(G^{(0)}) \equiv x \bmod \mathfrak{m}^2$ because $F(Lx) = JLx + N(Lx) = x + N(Lx)$ and $N(Lx) \in \mathfrak{m}^2$. Set $G^{(r+1)} = \Phi(G^{(r)})$. By the lemma, $G^{(r+1)} - G^{(r)} \in \mathfrak{m}^{r+1}$, so the terms from $G^{(r)}$ on are coherent modulo every $\mathfrak{m}^k$ and define an element $G$, and $F(G) = x$ because $F$ respects the filtration. For uniqueness, suppose $F(G) = F(G') = x$. Then $J(G - G') + (N(G) - N(G')) = 0$, and $N(G) - N(G') \in \mathfrak{m}\cdot(G-G')$, so $(J + M)(G - G') = 0$ with $M$ having entries in $\mathfrak{m}$; since $J$ is invertible and $M$ is nilpotent modulo every $\mathfrak{m}^k$, the element $J + M$ is invertible, whence $G = G'$. Finally, $G$ has Jacobian $L$ at the origin, also invertible, so the same argument applied to $G$ produces $H$ with $G\circ H = \mathrm{id}$; then
+*Proof of the theorem.* Choose $G^{(0)} = Lx$, which has zero constant term and satisfies $F(G^{(0)}) \equiv x \bmod \mathrm{M}^2$ because $F(Lx) = JLx + N(Lx) = x + N(Lx)$ and $N(Lx) \in \mathrm{M}^2$. Set $G^{(r+1)} = \Phi(G^{(r)})$. By the lemma, $G^{(r+1)} - G^{(r)} \in \mathrm{M}^{r+1}$, so the terms from $G^{(r)}$ on are coherent modulo every $\mathrm{M}^k$ and define an element $G$, and $F(G) = x$ because $F$ respects the filtration. For uniqueness, suppose $F(G) = F(G') = x$. Then $J(G - G') + (N(G) - N(G')) = 0$, and $N(G) - N(G') \in \mathrm{M}\cdot(G-G')$, so $(J + M)(G - G') = 0$ with $M$ having entries in $\mathrm{M}$; since $J$ is invertible and $M$ is nilpotent modulo every $\mathrm{M}^k$, the element $J + M$ is invertible, whence $G = G'$. Finally, $G$ has Jacobian $L$ at the origin, also invertible, so the same argument applied to $G$ produces $H$ with $G\circ H = \mathrm{id}$; then
 
 $$
 G \circ F = (G\circ F)\circ (G\circ H) = G \circ (F \circ G)\circ H = G\circ H = \mathrm{id},
 $$
 
-so $G$ is a two-sided inverse. $\square$
+so $G$ is a two-sided inverse.
 
 ### Consequence: the Implicit Function Theorem
 
@@ -206,7 +206,7 @@ $$
 f(a_n) = f(a_{n-1}) + h f'(a_{n-1}) + h^2 r
 $$
 
-for some $r \in A$; now $f'(a_{n-1}) \equiv f'(a_0) \bmod I$ because $a_{n-1}\equiv a_0 \bmod I$, so $f'(a_{n-1})$ is a unit, and the choice of $h = -f(a_{n-1})f'(a_{n-1})^{-1}$ makes $f(a_n) = h^2 r \in I^{2^n}$. Uniqueness: if $f(a) = f(a') = 0$ with $a \equiv a' \equiv a_0 \bmod I$, then $0 = f(a) - f(a') = (a - a')(f'(a_0) + m)$ with $m \in I$, and $f'(a_0) + m$ is a unit, so $a = a'$. $\square$
+for some $r \in A$; now $f'(a_{n-1}) \equiv f'(a_0) \bmod I$ because $a_{n-1}\equiv a_0 \bmod I$, so $f'(a_{n-1})$ is a unit, and the choice of $h = -f(a_{n-1})f'(a_{n-1})^{-1}$ makes $f(a_n) = h^2 r \in I^{2^n}$. Uniqueness: if $f(a) = f(a') = 0$ with $a \equiv a' \equiv a_0 \bmod I$, then $0 = f(a) - f(a') = (a - a')(f'(a_0) + m)$ with $m \in I$, and $f'(a_0) + m$ is a unit, so $a = a'$.
 
 **Example.** In $R[[x]]$ the series $y = \sqrt{1 + x}$ is produced by Hensel's lemma applied to $f(t) = t^2 - (1+x)$ at $a_0 = 1$: the derivative $2t$ is a unit at $t = 1$ when $2$ is invertible, and the root is the binomial series $y = \sum_{k\geq0}\binom{1/2}{k}x^k = 1 + \tfrac12 x - \tfrac18 x^2 + \tfrac{1}{16}x^3 - \cdots$. Over the $p$-adic integers $\mathbb{Z}_p$ with $p$ odd, applied to $f(t) = t^2 - u$ at a unit $a_0$ with $a_0^2 \equiv u \pmod{p}$, the derivative $2a_0$ is a unit and the lemma lifts the square root modulo $p$ to a square root in $\mathbb{Z}_p$; this is the classical instance of Hensel's lemma.
 
@@ -216,19 +216,19 @@ for some $r \in A$; now $f'(a_{n-1}) \equiv f'(a_0) \bmod I$ because $a_{n-1}\eq
 
 The completion assembles the graded pieces of the symmetric algebra into a power series algebra whose associated graded algebra is the symmetric algebra again.
 
-**Theorem.** Let $M$ be a free $R$-module of rank $n$ and let $S = \operatorname{Sym}(M) = \bigoplus_{k\geq0}\operatorname{Sym}^k(M)$, graded, with augmentation ideal $\mathfrak{m} = \bigoplus_{k\geq1}\operatorname{Sym}^k(M)$. Then
+**Theorem.** Let $M$ be a free $R$-module of rank $n$ and let $S = \operatorname{Sym}(M) = \bigoplus_{k\geq0}\operatorname{Sym}^k(M)$, graded, with augmentation ideal $\mathrm{M} = \bigoplus_{k\geq1}\operatorname{Sym}^k(M)$. Then
 
 $$
-\operatorname{gr}_{\mathfrak{m}} S = \bigoplus_{k\geq0}\mathfrak{m}^k/\mathfrak{m}^{k+1} \cong \operatorname{Sym}(M),
+\operatorname{gr}_{\mathrm{M}} S = \bigoplus_{k\geq0}\mathrm{M}^k/\mathrm{M}^{k+1} \cong \operatorname{Sym}(M),
 $$
 
-and the $\mathfrak{m}$-adic completion of $S$ is
+and the $\mathrm{M}$-adic completion of $S$ is
 
 $$
 \hat S \cong \prod_{k\geq0}\operatorname{Sym}^k(M).
 $$
 
-*Proof.* The associated graded of a polynomial algebra in $n$ variables is the polynomial algebra again, since $\mathfrak{m}^k/\mathfrak{m}^{k+1}$ is the module of homogeneous polynomials of degree $k$, isomorphic to $\operatorname{Sym}^k(M)$; this is the general fact that $\operatorname{gr}$ of the symmetric algebra of a free module is the symmetric algebra. The completion consists of the coherent sequences of truncations, and a coherent sequence is exactly a formal sum $\sum_{k\geq0} s_k$ with $s_k \in \operatorname{Sym}^k(M)$, that is, an element of the product $\prod_k\operatorname{Sym}^k(M)$. $\square$
+*Proof.* The associated graded of a polynomial algebra in $n$ variables is the polynomial algebra again, since $\mathrm{M}^k/\mathrm{M}^{k+1}$ is the module of homogeneous polynomials of degree $k$, isomorphic to $\operatorname{Sym}^k(M)$; this is the general fact that $\operatorname{gr}$ of the symmetric algebra of a free module is the symmetric algebra. The completion consists of the coherent sequences of truncations, and a coherent sequence is exactly a formal sum $\sum_{k\geq0} s_k$ with $s_k \in \operatorname{Sym}^k(M)$, that is, an element of the product $\prod_k\operatorname{Sym}^k(M)$.
 
 Thus the passage from the symmetric algebra to its completion replaces the direct sum by the product, allowing arbitrary infinite homogeneous components. The algebra $R[[x_1,\ldots,x_n]]$ is the completion $\hat S$ in the case $M = R^n$, and its associated graded algebra is $R[x_1,\ldots,x_n]$ again: the completion does not change the graded pieces, only the way they are assembled.
 
@@ -240,7 +240,7 @@ $$
 f = \sum_{a \in \mathbb{N}^n} \frac{1}{a!}\,\partial^a f(0)\, x^a, \qquad a! = a_1!\cdots a_n!,
 $$
 
-where $\partial^a f(0)$ denotes the iterated formal derivative evaluated at the origin; the formula is the definition of the derivatives read backwards: the iterated derivative $\partial^a f(0)$ is $a_1!\cdots a_n!$ times the coefficient of $x^a$. The linear part of $f$ is the element of $\operatorname{Hom}_R(\mathfrak{m}/\mathfrak{m}^2, R)$ with components $\partial_1 f(0), \ldots, \partial_n f(0)$; the cotangent space is $\mathfrak{m}/\mathfrak{m}^2 \cong \operatorname{Sym}^1(M) \cong R^n$, and its dual $(\mathfrak{m}/\mathfrak{m}^2)^*$, the algebraic tangent space (a name for this dual module only, no manifold is meant), is the module of $R$-derivations of $R[[x_1,\ldots,x_n]]$ at the origin. The formal inverse function theorem is the statement that an invertible linear part lifts to an invertible series.
+where $\partial^a f(0)$ denotes the iterated formal derivative evaluated at the origin; the formula is the definition of the derivatives read backwards: the iterated derivative $\partial^a f(0)$ is $a_1!\cdots a_n!$ times the coefficient of $x^a$. The linear part of $f$ is the element of $\operatorname{Hom}_R(\mathrm{M}/\mathrm{M}^2, R)$ with components $\partial_1 f(0), \ldots, \partial_n f(0)$; the cotangent space is $\mathrm{M}/\mathrm{M}^2 \cong \operatorname{Sym}^1(M) \cong R^n$, and its dual $(\mathrm{M}/\mathrm{M}^2)^*$, the algebraic tangent space (a name for this dual module only, no manifold is meant), is the module of $R$-derivations of $R[[x_1,\ldots,x_n]]$ at the origin. The formal inverse function theorem is the statement that an invertible linear part lifts to an invertible series.
 
 **Remark.** In characteristic zero the Taylor formula identifies $R[[x_1,\ldots,x_n]]$ with the completed divided-power algebra, and the natural divided powers $\gamma_k(x) = x^k/k!$ are the coefficients of the exponential; the divided-power algebra of *Divided Powers* is the correct substitute in small characteristic, where the factorials are not invertible. The completion, the symmetric algebra and the divided-power algebra therefore agree in characteristic zero and diverge in small characteristic, exactly as in the uncompleted case.
 
@@ -249,10 +249,10 @@ where $\partial^a f(0)$ denotes the iterated formal derivative evaluated at the 
 The formal power series algebra $R[[x_1,\ldots,x_n]]$ is the completed polynomial algebra: it is the $I$-adic completion
 
 $$
-R[x_1,\ldots,x_n]^{\wedge}_{\mathfrak{m}} = \varprojlim_k R[x_1,\ldots,x_n]/\mathfrak{m}^k \cong R[[x_1,\ldots,x_n]], \qquad \mathfrak{m} = (x_1,\ldots,x_n),
+R[x_1,\ldots,x_n]^{\wedge}_{\mathrm{M}} = \varprojlim_k R[x_1,\ldots,x_n]/\mathrm{M}^k \cong R[[x_1,\ldots,x_n]], \qquad \mathrm{M} = (x_1,\ldots,x_n),
 $$
 
-where completion takes the inverse limit of the quotient algebras $A/I^k$. The filtration is the order filtration, $\mathfrak{m}^k$ is the set of series of order at least $k$, and the algebra is complete for the $\mathfrak{m}$-adic filtration. A series is a unit exactly when its constant term is a unit, by the geometric series; substitution is defined for series with zero constant term. The formal inverse function theorem states that an $n$-tuple $F$ with $F(0) = 0$ and invertible Jacobian $J = (\partial F_i/\partial x_j)(0)$ has a unique two-sided compositional inverse, and it is proved by the Newton step $G \mapsto L(x - N(G))$, which gains one order on the $\mathfrak{m}$-adic filtration. Completion converts the direct-sum symmetric algebra $\operatorname{Sym}(M)$ into the product $\prod_k \operatorname{Sym}^k(M)$, leaves the associated graded algebra unchanged, and in characteristic zero agrees with the Taylor expansion and with the completed divided-power algebra. In small characteristic the divided powers provide the correct substitute.
+where completion takes the inverse limit of the quotient algebras $A/I^k$. The filtration is the order filtration, $\mathrm{M}^k$ is the set of series of order at least $k$, and the algebra is complete for the $\mathrm{M}$-adic filtration. A series is a unit exactly when its constant term is a unit, by the geometric series; substitution is defined for series with zero constant term. The formal inverse function theorem states that an $n$-tuple $F$ with $F(0) = 0$ and invertible Jacobian $J = (\partial F_i/\partial x_j)(0)$ has a unique two-sided compositional inverse, and it is proved by the Newton step $G \mapsto L(x - N(G))$, which gains one order on the $\mathrm{M}$-adic filtration. Completion converts the direct-sum symmetric algebra $\operatorname{Sym}(M)$ into the product $\prod_k \operatorname{Sym}^k(M)$, leaves the associated graded algebra unchanged, and in characteristic zero agrees with the Taylor expansion and with the completed divided-power algebra. In small characteristic the divided powers provide the correct substitute.
 
 ## Summary of Notation
 
@@ -260,14 +260,14 @@ where completion takes the inverse limit of the quotient algebras $A/I^k$. The f
 |---|---|
 | $R$ | Commutative ring with identity $1 \neq 0$ |
 | $R[[x_1,\ldots,x_n]]$ | Formal power series algebra |
-| $\mathfrak{m} = (x_1,\ldots,x_n)$ | Augmentation ideal, series of positive order |
+| $\mathrm{M} = (x_1,\ldots,x_n)$ | Augmentation ideal, series of positive order |
 | $\operatorname{ord}(f)$ | Order of a series; least total degree of a term |
-| $\mathfrak{m}^k$ | Series of order at least $k$ |
+| $\mathrm{M}^k$ | Series of order at least $k$ |
 | $\hat A = \varprojlim A/I^k$ | $I$-adic completion of $A$ |
-| $\operatorname{gr}_{\mathfrak{m}} A$ | Associated graded algebra |
+| $\operatorname{gr}_{\mathrm{M}} A$ | Associated graded algebra |
 | $J = (\partial F_i/\partial x_j(0))$ | Jacobian matrix at the origin |
 | $\Phi(G) = L(x - N(G))$ | Newton-step operator, $L = J^{-1}$ |
-| $\mathfrak{m}/\mathfrak{m}^2$ | Cotangent space at the origin |
+| $\mathrm{M}/\mathrm{M}^2$ | Cotangent space at the origin |
 | $C_m = \frac{1}{m+1}\binom{2m}{m}$ | Catalan number, coefficients of the inverse of $x + x^2$ |
 | $a_{n+1} = a_n - f(a_n)f'(a_n)^{-1}$ | Newton step in Hensel's lemma |
 

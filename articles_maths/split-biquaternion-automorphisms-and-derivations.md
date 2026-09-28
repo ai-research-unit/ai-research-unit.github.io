@@ -3,7 +3,7 @@
 
 ## Introduction
 
-The **split biquaternion algebra** is $\mathbb{H}_{\mathbb{D}} = \mathbb{D} \otimes_{\mathbb{R}} \mathbb{H}$, an eight-dimensional real algebra isomorphic to $\mathbb{H} \oplus \mathbb{H}$. It carries two structures distinguished by the ground ring: over the split complex algebra $\mathbb{D}$ it is a free $\mathbb{D}$-algebra of rank $4$, and over $\mathbb{R}$ the same set is an eight-dimensional real algebra. This article describes its algebra **automorphisms** and its **derivations**, over each ground structure, and compares them with the biquaternion case. The algebra and its decomposition are used from *Split-Biquaternion Algebra* and *Split-Biquaternion Ideals and Peirce Decomposition*; the split complex unit and the idempotents are those of *Split-Complex Numbers*.
+The **split biquaternion algebra** is $\mathbb{H}_{\mathbb{D}} = \mathbb{D} \otimes_{\mathbb{R}} \mathbb{H}$, an eight-dimensional real algebra isomorphic to $\mathbb{H} \oplus \mathbb{H}$. It carries two structures distinguished by the ground ring: over the split complex algebra $\mathbb{D}$ it is a free $\mathbb{D}$-algebra of rank $4$, and over $\mathbb{R}$ the same set is an eight-dimensional real algebra. This article describes its algebra **automorphisms** and its **derivations**, over each ground structure, and compares them with the biquaternion case. The algebra and its decomposition are used from *Split-Biquaternion Algebra* and *Split-Biquaternion Ideals and Peirce Decomposition*; the split complex unit and the idempotents are those of *Split-Complex Algebra*.
 
 We use the conventions of the split biquaternion algebra: the basis $\{e_0,e_1,e_2,e_3\}$ with $e_k^2 = -e_0$; the central split complex unit $j$ with $j^2 = +1$; the idempotents $\tilde\Pi_\pm = \tfrac{1}{2}(1 \pm j)$; the conjugations $\bar{\cdot}$, ${}^{*}$, ${}^{\dagger} = {}^{*}\bar{\cdot}$, ${}^{\flat} = -{}^{\dagger}$; and the four distinguished subspaces $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$, $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$, $\mathbb{M}_+$, $\mathbb{M}_-$. A general element is $\tilde{Q} = A + jB$ with $A, B \in \mathbb{H}$.
 
@@ -25,7 +25,7 @@ Throughout this section the ground ring is $\mathbb{D}$, and an automorphism is 
 
 **Theorem.** $\mathrm{Aut}_{\mathbb{D}}(\mathbb{H}_{\mathbb{D}}) \cong SO(3) \times SO(3)$.
 
-**Proof.** A $\mathbb{D}$-linear automorphism fixes the centre $\mathbb{D}$ pointwise, hence fixes the idempotents $\tilde\Pi_\pm$ and preserves each of the two factors $\mathbb{H} \tilde\Pi_+$ and $\mathbb{H} \tilde\Pi_-$. On each factor it is an $\mathbb{R}$-algebra automorphism of $\mathbb{H}$, and every such automorphism is inner, by the Skolem–Noether theorem for the division algebra $\mathbb{H}$: it is $\iota_{u}(x) = u x u^{-1}$ for some $u \in \mathbb{H}^\times$, depending only on $u$ modulo the central scalars $\mathbb{R}^\times$. Thus the automorphisms of the first factor form $\mathbb{H}^\times / \mathbb{R}^\times \cong S^3/\{\pm 1\} = SO(3)$, and likewise for the second, giving the product. $\square$
+**Proof.** A $\mathbb{D}$-linear automorphism fixes the centre $\mathbb{D}$ pointwise, hence fixes the idempotents $\tilde\Pi_\pm$ and preserves each of the two factors $\mathbb{H} \tilde\Pi_+$ and $\mathbb{H} \tilde\Pi_-$. On each factor it is an $\mathbb{R}$-algebra automorphism of $\mathbb{H}$, and every such automorphism is inner, by the Skolem–Noether theorem for the division algebra $\mathbb{H}$: it is $\iota_{u}(x) = u x u^{-1}$ for some $u \in \mathbb{H}^\times$, depending only on $u$ modulo the central scalars $\mathbb{R}^\times$. Thus the automorphisms of the first factor form $\mathbb{H}^\times / \mathbb{R}^\times \cong S^3/\{\pm 1\} = SO(3)$, and likewise for the second, giving the product.
 
 **Corollary.** As a Lie group, $\mathrm{Aut}_{\mathbb{D}}(\mathbb{H}_{\mathbb{D}})$ has dimension $6$ and is connected and compact.
 
@@ -53,7 +53,7 @@ is an $\mathbb{R}$-algebra automorphism, because ${}^{*}$ is a ring automorphism
 
 **Theorem.** $\mathrm{Aut}_{\mathbb{R}}(\mathbb{H}_{\mathbb{D}}) \cong \left(SO(3) \times SO(3)\right) \rtimes \mathbb{Z}/2$, the generator of $\mathbb{Z}/2$ acting by interchanging the two factors of $SO(3)\times SO(3)$.
 
-**Proof.** There is a short exact sequence $1 \to SO(3)\times SO(3) \to \mathrm{Aut}_{\mathbb{R}}(\mathbb{H}_{\mathbb{D}}) \xrightarrow{\rho} \mathbb{Z}/2 \to 1$, split by $c$ because $c^2 = \mathrm{id}$. The action of $c$ on the kernel conjugates an automorphism of the first factor into one of the second and conversely, that is, swaps the factors. $\square$
+**Proof.** There is a short exact sequence $1 \to SO(3)\times SO(3) \to \mathrm{Aut}_{\mathbb{R}}(\mathbb{H}_{\mathbb{D}}) \xrightarrow{\rho} \mathbb{Z}/2 \to 1$, split by $c$ because $c^2 = \mathrm{id}$. The action of $c$ on the kernel conjugates an automorphism of the first factor into one of the second and conversely, that is, swaps the factors.
 
 **Concretely**, every real automorphism of $\mathbb{H}_{\mathbb{D}}$ has exactly one of the two forms
 
@@ -77,7 +77,7 @@ $$
 \mathrm{Der}(\mathbb{H}_{\mathbb{D}}) = \mathrm{Der}_{\mathbb{D}}(\mathbb{H}_{\mathbb{D}}) .
 $$
 
-**Theorem.** $\mathrm{Der}(\mathbb{H}_{\mathbb{D}}) \cong \mathfrak{so}(3) \oplus \mathfrak{so}(3) \cong \mathfrak{so}(4)$, a real Lie algebra of dimension $6$, and every derivation is inner.
+**Theorem.** $\mathrm{Der}(\mathbb{H}_{\mathbb{D}}) \cong \mathrm{SO}(3) \oplus \mathrm{SO}(3) \cong \mathrm{SO}(4)$, a real Lie algebra of dimension $6$, and every derivation is inner.
 
 **Proof.** A derivation $D$ fixes each central idempotent: from $D(\tilde\Pi_+) = D(\tilde\Pi_+^2) = \tilde\Pi_+D(\tilde\Pi_+) + D(\tilde\Pi_+)\tilde\Pi_+$ and the centrality of $D(\tilde\Pi_+)$ one obtains $D(\tilde\Pi_+) = 0$, and similarly $D(\tilde\Pi_-) = 0$. Hence $D$ kills no element of the form $x_+ \tilde\Pi_+$ into the other factor and, by the Leibniz rule, preserves the splitting; so $D$ acts as a derivation of $\mathbb{H}$ on the first factor and one on the second, and
 
@@ -85,7 +85,7 @@ $$
 \mathrm{Der}(\mathbb{H}_{\mathbb{D}}) \cong \mathrm{Der}(\mathbb{H}) \oplus \mathrm{Der}(\mathbb{H}) .
 $$
 
-For the division algebra $\mathbb{H}$, every derivation is inner: $\mathrm{Der}(\mathbb{H}) = \mathrm{ad}(\mathbb{H})$ with kernel the centre $\mathbb{R}$, so $\mathrm{Der}(\mathbb{H}) \cong \mathbb{H}/\mathbb{R} \cong \mathfrak{so}(3)$, of dimension $3$. Summing the two factors gives $\mathfrak{so}(3) \oplus \mathfrak{so}(3) \cong \mathfrak{so}(4)$. $\square$
+For the division algebra $\mathbb{H}$, every derivation is inner: $\mathrm{Der}(\mathbb{H}) = \mathrm{ad}(\mathbb{H})$ with kernel the centre $\mathbb{R}$, so $\mathrm{Der}(\mathbb{H}) \cong \mathbb{H}/\mathbb{R} \cong \mathrm{SO}(3)$, of dimension $3$. Summing the two factors gives $\mathrm{SO}(3) \oplus \mathrm{SO}(3) \cong \mathrm{SO}(4)$.
 
 **Inner derivations.** For $a \in \mathbb{H}_{\mathbb{D}}$ the map $\mathrm{ad}_a(x) = ax - xa$ is a derivation, and $\mathrm{ad}$ has kernel the centre $Z(\mathbb{H}_{\mathbb{D}}) = \mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$ and image all derivations, so
 
@@ -95,7 +95,7 @@ $$
 
 an isomorphism of Lie algebras because $[\mathrm{ad}_a,\mathrm{ad}_b] = \mathrm{ad}_{[a,b]}$.
 
-**Derivations and automorphisms.** The two structures are linked by the exponential, $\exp(t\,\mathrm{ad}_a)(x) = e^{ta}xe^{-ta}$, the inner automorphism determined by $e^{ta}$. Hence the Lie algebra of the identity component of $\mathrm{Aut}_{\mathbb{R}}(\mathbb{H}_{\mathbb{D}})$ is the derivation algebra: $\mathrm{Lie}\left(SO(3)\times SO(3)\right) \cong \mathfrak{so}(3)\oplus\mathfrak{so}(3)$.
+**Derivations and automorphisms.** The two structures are linked by the exponential, $\exp(t\,\mathrm{ad}_a)(x) = e^{ta}xe^{-ta}$, the inner automorphism determined by $e^{ta}$. Hence the Lie algebra of the identity component of $\mathrm{Aut}_{\mathbb{R}}(\mathbb{H}_{\mathbb{D}})$ is the derivation algebra: $\mathrm{Lie}\left(SO(3)\times SO(3)\right) \cong \mathrm{SO}(3)\oplus\mathrm{SO}(3)$.
 
 **An explicit basis.** The derivations $A_k = \tfrac{1}{2}\mathrm{ad}_{e_k}$, $k = 1,2,3$, act on the two factors simultaneously, each as $\mathrm{ad}_{e_k}$, and satisfy $[A_1,A_2] = A_3$ together with its cyclic permutations; the companion derivations $\tfrac{1}{2}\mathrm{ad}_{je_k}$ act with opposite signs on the two factors. Their combinations
 
@@ -117,7 +117,7 @@ act on the first and on the second factor respectively and vanish on the other, 
 
 ## Summary
 
-The split biquaternion algebra is the product $\mathbb{H} \oplus \mathbb{H}$ of two quaternion division algebras, with centre $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}} \cong \mathbb{D}$ and two minimal two-sided ideals. Over the split complex algebra every automorphism is $\mathbb{D}$-linear and consists of an inner automorphism of each factor, so $\mathrm{Aut}_{\mathbb{D}}(\mathbb{H}_{\mathbb{D}}) \cong SO(3) \times SO(3)$, connected, of dimension $6$. Over $\mathbb{R}$ an automorphism may also interchange the two factors, and the split complex conjugation $c(\tilde{Q}) = \tilde{Q}^{*}$ realises that swap, an outer automorphism; hence $\mathrm{Aut}_{\mathbb{R}}(\mathbb{H}_{\mathbb{D}}) \cong (SO(3)\times SO(3)) \rtimes \mathbb{Z}/2$, of dimension $6$ with two connected components. Every real derivation is automatically $\mathbb{D}$-linear, because the centre $\mathbb{D}$ admits no nonzero derivation; every derivation preserves the splitting and is inner, so $\mathrm{Der}(\mathbb{H}_{\mathbb{D}}) \cong \mathbb{H}_{\mathbb{D}}/\mathbb{D}_{\mathbb{H}_{\mathbb{D}}} \cong \mathfrak{so}(3)\oplus\mathfrak{so}(3) \cong \mathfrak{so}(4)$, of dimension $6$, the Lie algebra of the identity component of the automorphism group. The contrast with the biquaternion case is exact: there the algebra is simple and central over $\mathbb{C}$, every automorphism is inner, $\mathrm{Aut}_{\mathbb{C}}(\mathbb{B}) = PGL(2,\mathbb{C}) = PSL(2,\mathbb{C})$ and $\mathrm{Aut}_{\mathbb{R}}(\mathbb{B}) \cong PGL(2,\mathbb{C}) \rtimes \mathbb{Z}/2$, with derivation algebra $\mathfrak{sl}(2,\mathbb{C})_{\mathbb{R}} \cong \mathfrak{so}(1,3)$; here the semisimple product structure replaces the simple algebra, the compact group $SO(3)\times SO(3)$ replaces the projective Lorentz group, and the derivation algebra $\mathfrak{so}(4)$ replaces $\mathfrak{so}(1,3)$.
+The split biquaternion algebra is the product $\mathbb{H} \oplus \mathbb{H}$ of two quaternion division algebras, with centre $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}} \cong \mathbb{D}$ and two minimal two-sided ideals. Over the split complex algebra every automorphism is $\mathbb{D}$-linear and consists of an inner automorphism of each factor, so $\mathrm{Aut}_{\mathbb{D}}(\mathbb{H}_{\mathbb{D}}) \cong SO(3) \times SO(3)$, connected, of dimension $6$. Over $\mathbb{R}$ an automorphism may also interchange the two factors, and the split complex conjugation $c(\tilde{Q}) = \tilde{Q}^{*}$ realises that swap, an outer automorphism; hence $\mathrm{Aut}_{\mathbb{R}}(\mathbb{H}_{\mathbb{D}}) \cong (SO(3)\times SO(3)) \rtimes \mathbb{Z}/2$, of dimension $6$ with two connected components. Every real derivation is automatically $\mathbb{D}$-linear, because the centre $\mathbb{D}$ admits no nonzero derivation; every derivation preserves the splitting and is inner, so $\mathrm{Der}(\mathbb{H}_{\mathbb{D}}) \cong \mathbb{H}_{\mathbb{D}}/\mathbb{D}_{\mathbb{H}_{\mathbb{D}}} \cong \mathrm{SO}(3)\oplus\mathrm{SO}(3) \cong \mathrm{SO}(4)$, of dimension $6$, the Lie algebra of the identity component of the automorphism group. The contrast with the biquaternion case is exact: there the algebra is simple and central over $\mathbb{C}$, every automorphism is inner, $\mathrm{Aut}_{\mathbb{C}}(\mathbb{B}) = PGL(2,\mathbb{C}) = PSL(2,\mathbb{C})$ and $\mathrm{Aut}_{\mathbb{R}}(\mathbb{B}) \cong PGL(2,\mathbb{C}) \rtimes \mathbb{Z}/2$, with derivation algebra $\mathrm{SL}(2,\mathbb{C})_{\mathbb{R}} \cong \mathrm{SO}(1,3)$; here the semisimple product structure replaces the simple algebra, the compact group $SO(3)\times SO(3)$ replaces the projective Lorentz group, and the derivation algebra $\mathrm{SO}(4)$ replaces $\mathrm{SO}(1,3)$.
 
 ## Summary of Notation
 
@@ -133,7 +133,7 @@ The split biquaternion algebra is the product $\mathbb{H} \oplus \mathbb{H}$ of 
 | $\mathrm{Aut}_{\mathbb{D}}(\mathbb{H}_{\mathbb{D}}) \cong SO(3)\times SO(3)$ | $\mathbb{D}$-linear automorphisms |
 | $\mathrm{Aut}_{\mathbb{R}}(\mathbb{H}_{\mathbb{D}}) \cong (SO(3)\times SO(3))\rtimes\mathbb{Z}/2$ | Real automorphisms |
 | $c(\tilde{Q}) = \tilde{Q}^{*}$ | Factor swap, the outer real automorphism |
-| $\mathrm{Der}(\mathbb{H}_{\mathbb{D}}) = \mathrm{Der}_{\mathbb{D}}(\mathbb{H}_{\mathbb{D}}) \cong \mathfrak{so}(3)\oplus\mathfrak{so}(3)\cong\mathfrak{so}(4)$ | Derivation algebra |
+| $\mathrm{Der}(\mathbb{H}_{\mathbb{D}}) = \mathrm{Der}_{\mathbb{D}}(\mathbb{H}_{\mathbb{D}}) \cong \mathrm{SO}(3)\oplus\mathrm{SO}(3)\cong\mathrm{SO}(4)$ | Derivation algebra |
 | $\mathrm{ad}_a(x) = ax - xa$ | Inner derivation |
 | $D_k^{\pm} = \tfrac{1}{2}\mathrm{ad}_{e_k \tilde\Pi_\pm}$ | Derivation basis: $D_k^{+}$ acts on the first factor, $D_k^{-}$ on the second, $[D_1^{\pm},D_2^{\pm}]=D_3^{\pm}$ |
 
@@ -142,4 +142,4 @@ The split biquaternion algebra is the product $\mathbb{H} \oplus \mathbb{H}$ of 
 - Richard S. Pierce, *Associative Algebras*, Graduate Texts in Mathematics 88 (Springer, 1982), for Skolem–Noether and the automorphisms and derivations of a product of simple algebras.
 - I. N. Herstein, *Noncommutative Rings*, Carus Mathematical Monographs 15 (Mathematical Association of America, 1968), for inner automorphisms and derivations of central simple algebras.
 - John Voight, *Quaternion Algebras*, Graduate Texts in Mathematics 288 (Springer, 2021), for the automorphism group and derivation algebra of the quaternion algebra.
-- Nathan Jacobson, *Lie Algebras* (Dover, 1979), for derivations of associative algebras and the isomorphism $\mathfrak{so}(4)\cong\mathfrak{so}(3)\oplus\mathfrak{so}(3)$.
+- Nathan Jacobson, *Lie Algebras* (Dover, 1979), for derivations of associative algebras and the isomorphism $\mathrm{SO}(4)\cong\mathrm{SO}(3)\oplus\mathrm{SO}(3)$.

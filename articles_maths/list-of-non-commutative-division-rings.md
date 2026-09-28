@@ -35,7 +35,7 @@ The commutative entries are the fields and are listed for completeness; the prop
 | a quaternion algebra $(a,b)_k$ that is not split | $k$ | $4$ | *Division Algebras* |
 | a cyclic division algebra over $k$ | $k$ | $\deg^2$ | *Division Algebras* |
 
-Over $\mathbb{R}$ the finite-dimensional associative division algebras are exactly $\mathbb{R}$, $\mathbb{C}$ and $\mathbb{H}$, by the theorem of Frobenius recorded in *Division Algebras*; this is why the first three rows are the whole real case. Over $\mathbb{Q}$ there is more than one quaternion division algebra: a quaternion algebra $(a,b)_{\mathbb{Q}}$ is a division ring exactly when its norm form is anisotropic, and the classes of the quaternion algebras over $\mathbb{Q}$ are the elements of order dividing two in the Brauer group of $\mathbb{Q}$, as recorded in *Division Algebras*.
+Over $\mathbb{R}$ the finite-dimensional associative division algebras are exactly $\mathbb{R}$, $\mathbb{C}$ and $\mathbb{H}$, by the theorem of Frobenius recorded in *Division Algebras*; this is why the first three rows are the whole real case. Over $\mathbb{Q}$ there is more than one quaternion division algebra: a quaternion algebra $(a,b)_{\mathbb{Q}}$ is a division ring exactly when its norm is anisotropic, and the classes of the quaternion algebras over $\mathbb{Q}$ are the elements of order dividing two in the Brauer group of $\mathbb{Q}$, as recorded in *Division Algebras*.
 
 ## The Infinite-Dimensional Division Rings
 

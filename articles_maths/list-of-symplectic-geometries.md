@@ -68,7 +68,7 @@ A symmetry of a symplectic manifold with a Hamiltonian function defines a moment
 | Object | The property it has | Introduced in |
 |---|---|---|
 | a Hamiltonian action of a Lie group | an action preserving $\omega$ and admitting a moment map | *Symplectic Geometry*, §Symplectic Reduction |
-| the moment map $\mu : M \to \mathfrak{g}^*$ | the map with $d\mu_X = \iota_{X^{\#}}\omega$, encoding the conserved quantities | *Symplectic Geometry*, §Symplectic Reduction |
+| the moment map $\mu : M \to \mathrm{G}^*$ | the map with $d\mu_X = \iota_{X^{\#}}\omega$, encoding the conserved quantities | *Symplectic Geometry*, §Symplectic Reduction |
 | the fundamental vector field $X^{\#}$ | the field of the infinitesimal action, Hamiltonian with potential $\mu_X$ | *Symplectic Geometry*; *Homogeneous Spaces* |
 | the equivariance of the moment map | the compatibility of $\mu$ with the coadjoint action | *Symplectic Geometry* |
 | the symplectic quotient $M/\!/G = \mu^{-1}(0)/G$ | the reduced symplectic manifold, of dimension $\dim M - 2\dim G$ | *Symplectic Geometry*, §Symplectic Reduction |
@@ -87,7 +87,7 @@ The linear symplectic geometry is the geometry of a vector space with an alterna
 | a symplectic vector space $(V,\omega)$ | a vector space with a nondegenerate alternating form, of dimension $2n$ | *Symplectic Forms and Poisson Brackets* |
 | a symplectic basis | a basis with $\omega(e_i,f_j) = \delta_{ij}$ and $\omega(e_i,e_j) = \omega(f_i,f_j) = 0$ | *Symplectic Forms and Poisson Brackets* |
 | the symplectic group $Sp(2n,K)$ | the matrices with $A^{\mathsf{T}}JA = J$, contained in $SL$ | *Symplectic Forms and Poisson Brackets*; *The Unitary and Symplectic Groups* |
-| the symplectic Lie algebra $\mathfrak{sp}(2n,K)$ | $X^{\mathsf{T}}J + JX = 0$, of dimension $n(2n+1)$ | *Symplectic Forms and Poisson Brackets* |
+| the symplectic Lie algebra $\mathrm{Sp}(2n,K)$ | $X^{\mathsf{T}}J + JX = 0$, of dimension $n(2n+1)$ | *Symplectic Forms and Poisson Brackets* |
 | the Lagrangian Grassmannian $\operatorname{Lag}(V)$ | the variety of the Lagrangian subspaces, of dimension $\tfrac12n(n+1)$ | *Symplectic Forms and Poisson Brackets* |
 | the Pfaffian $\operatorname{Pf}(\Omega)$ | the square root of $\det\Omega$, invariant up to $\det A$ | *Symplectic Forms and Poisson Brackets* |
 | the Liouville form $\omega^{\wedge n}/n!$ | the volume form of the linear symplectic space | *Symplectic Forms and Poisson Brackets* |
@@ -122,8 +122,8 @@ A catalogue denotes its objects by name rather than by symbol. The symbols that 
 | $T^*Q$, $\theta = \sum_i p_i\,dq^i$ | Cotangent bundle and tautological form |
 | $X_f$, $\{f,g\}$ | Hamiltonian vector field, Poisson bracket |
 | $(P,\pi)$, Schouten bracket, Casimir | Poisson manifold and its structures |
-| $\mu : M \to \mathfrak{g}^*$, $M/\!/G$ | Moment map, symplectic quotient |
-| $Sp(2n,K)$, $\mathfrak{sp}(2n,K)$, $J$ | Symplectic group, Lie algebra, matrix of the form |
+| $\mu : M \to \mathrm{G}^*$, $M/\!/G$ | Moment map, symplectic quotient |
+| $Sp(2n,K)$, $\mathrm{Sp}(2n,K)$, $J$ | Symplectic group, Lie algebra, matrix of the form |
 | $\operatorname{Lag}(V)$, $\operatorname{Pf}(\Omega)$ | Lagrangian Grassmannian, Pfaffian |
 | $g_J$, $J$ | Compatible metric and almost complex structure |
 | $\mathbb{R}$ | The standard number systems of the corpus |

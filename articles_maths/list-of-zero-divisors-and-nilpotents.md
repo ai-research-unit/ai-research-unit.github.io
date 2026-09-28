@@ -73,7 +73,7 @@ The torsion case is where the three kinds of zero divisor separate most cleanly:
 | the upper triangular matrices | yes: the strictly upper triangular matrices | yes: the diagonal idempotents | *Matrix Algebras* |
 | $k[G]$ for $G$ with torsion | when the characteristic divides the order | from the idempotents of the group algebra | *Group Algebras* |
 
-The two eight-dimensional cases are the contrast the corpus records: $\mathbb{B}$ has both kinds, since the vanishing of its norm form produces nilpotents as well as idempotents, while $\mathbb{H}_{\mathbb{D}}$ has only the idempotents, since it is isomorphic to the product $\mathbb{H} \oplus \mathbb{H}$ of two division rings and a product of division rings has no nonzero nilpotents. The matrix ring $M_2(\mathbb{R})$ is semisimple and has no nonzero nilpotent ideal, yet it has nilpotent elements: semisimplicity forbids a nilpotent ideal and not a nilpotent element.
+The two eight-dimensional cases are the contrast the corpus records: $\mathbb{B}$ has both kinds, since the vanishing of its norm produces nilpotents as well as idempotents, while $\mathbb{H}_{\mathbb{D}}$ has only the idempotents, since it is isomorphic to the product $\mathbb{H} \oplus \mathbb{H}$ of two division rings and a product of division rings has no nonzero nilpotents. The matrix ring $M_2(\mathbb{R})$ is semisimple and has no nonzero nilpotent ideal, yet it has nilpotent elements: semisimplicity forbids a nilpotent ideal and not a nilpotent element.
 
 ## The Reduced Rings
 

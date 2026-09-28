@@ -5,11 +5,11 @@
 
 Every associative algebra acts on itself by left multiplication, and the resulting matrices form the **left regular representation**. For the quaternion algebra this gives an injective algebra homomorphism $\mathbb{H}\to M_4(\mathbb{R})$, the four-dimensional real matrix representation; the matrix of left multiplication by $\tilde q$ is the **Cayley matrix** of $\tilde q$. This article develops that representation: the explicit matrix, its multiplicativity, its determinant and trace, its behaviour under transposition and under the three involutions, the parallel right regular representation, and the double centraliser theorem which identifies the two representations as each other's commutants. It is the quaternion member of the family's regular-representation pair; the counterpart is the $8\times8$ real regular representation of the biquaternion algebra, into which the present one embeds after complexification.
 
-The article depends on *Quaternion Algebra* for the multiplication table and on *Quaternion Norm and Invertibility* for the norm form; the $2\times2$ complex representation, which is obtained by complexification and carries the same information in half the size, is treated in *Quaternion 2x2 Matrix Representation*, and the coordinate form of the multiplication is in *Quaternion Four-Vector Representation*.
+The article depends on *Quaternion Algebra* for the multiplication table and on *Quaternion Norm and Invertibility* for the quaternion norm; the $2\times2$ complex representation, which is obtained by complexification and carries the same information in half the size, is treated in *Quaternion 2x2 Matrix Representation*, and the coordinate form of the multiplication is in *Quaternion Four-Vector Representation*.
 
-The corpus's default base is a commutative ring with identity, and the regular representation is defined over such a base whenever the algebra is faithful over itself; the determinant and norm statements are stated over a field $F$, and the positivity of the norm form is the statement over $\mathbb{R}$.
+The corpus's default base is a commutative ring with identity, and the regular representation is defined over such a base whenever the algebra is faithful over itself; the determinant and norm statements are stated over a field $F$, and the positivity of the quaternion norm is the statement over $\mathbb{R}$.
 
-Throughout, $\mathbb{H}$ is the quaternion algebra with basis $e_0 = 1, e_1, e_2, e_3$, $e_k^2 = -e_0$, $e_1e_2 = e_3$; a quaternion is $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$, written $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ with conjugate $\bar{\tilde q} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$ and norm form $N(\tilde q) = \tilde q\bar{\tilde q}$; the matrix of left multiplication is $L_q$ and the matrix of right multiplication is $R_q$.
+Throughout, $\mathbb{H}$ is the quaternion algebra with basis $e_0 = 1, e_1, e_2, e_3$, $e_k^2 = -e_0$, $e_1e_2 = e_3$; a quaternion is $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$, written $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ with conjugate $\bar{\tilde q} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$ and norm $N(\tilde q) = \tilde q\bar{\tilde q}$; the matrix of left multiplication is $L_q$ and the matrix of right multiplication is $R_q$.
 
 ## The Left Regular Representation
 
@@ -17,7 +17,7 @@ Throughout, $\mathbb{H}$ is the quaternion algebra with basis $e_0 = 1, e_1, e_2
 
 **Theorem.** The map $L$ is an injective algebra homomorphism: $L_{p+\tilde q} = L_p+L_q$, $L_{pq} = L_pL_q$, $L_1 = \mathrm{id}$, and $L$ is injective. Its image is a four-dimensional subalgebra of $M_4(F)$ isomorphic to $\mathbb{H}$.
 
-*Proof.* Left multiplication is $F$-linear, and associativity gives $L_pL_q(x) = p(qx) = (pq)x = L_{pq}(x)$. If $L_q = 0$ then $\tilde q = L_q(1) = 0$, so $L$ is injective; the image is a subalgebra of dimension $\dim\mathbb{H} = 4$. $\square$
+*Proof.* Left multiplication is $F$-linear, and associativity gives $L_pL_q(x) = p(qx) = (pq)x = L_{pq}(x)$. If $L_q = 0$ then $\tilde q = L_q(1) = 0$, so $L$ is injective; the image is a subalgebra of dimension $\dim\mathbb{H} = 4$.
 
 **Theorem (Cayley matrix).** For $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$, the Cayley matrix of left multiplication is
 
@@ -36,7 +36,7 @@ $$
 qe_0 = \tilde q, \quad qe_1 = -q_1+q_0e_1+q_3e_2-q_2e_3, \quad qe_2 = -q_2-q_3e_1+q_0e_2+q_1e_3, \quad qe_3 = -q_3+q_2e_1-q_1e_2+q_0e_3,
 $$
 
-which are the four columns of the displayed matrix. $\square$
+which are the four columns of the displayed matrix.
 
 **Proposition.** The Cayley matrix is the sum of a scalar and a skew-symmetric part,
 
@@ -44,7 +44,7 @@ $$
 L_q = q_0 I + \Omega_q, \qquad \Omega_q = \begin{pmatrix} 0 & -q_1 & -q_2 & -q_3 \\ q_1 & 0 & -q_3 & q_2 \\ q_2 & q_3 & 0 & -q_1 \\ q_3 & -q_2 & q_1 & 0 \end{pmatrix}, \qquad \Omega_q^{T} = -\Omega_q .
 $$
 
-*Proof.* Subtract the scalar matrix $q_0I$ from $L_q$; the remainder is the displayed matrix, whose transpose is its negative. $\square$
+*Proof.* Subtract the scalar matrix $q_0I$ from $L_q$; the remainder is the displayed matrix, whose transpose is its negative.
 
 The decomposition separates the two subspaces: for a scalar $s$ the Cayley matrix is the scalar matrix $L_s = sI$, and for a pure quaternion $\mathbf{q}$ it is $L_{\mathbf{q}} = \Omega_{\mathbf{q}}$, traceless and skew-symmetric. The scalar subspace therefore maps to the scalar matrices and the vector subspace to the traceless skew-symmetric ones.
 
@@ -83,11 +83,11 @@ $$
 L_pL_q = L_{pq}, \qquad L_p+L_q = L_{p+\tilde q}, \qquad L_{\tilde q^{-1}} = L_q^{-1}.
 $$
 
-*Proof.* The first two are the homomorphism property; the third follows from $L_qL_{\tilde q^{-1}} = L_{\tilde q \tilde q^{-1}} = L_1 = I$ for an invertible $\tilde q$. $\square$
+*Proof.* The first two are the homomorphism property; the third follows from $L_qL_{\tilde q^{-1}} = L_{\tilde q \tilde q^{-1}} = L_1 = I$ for an invertible $\tilde q$.
 
 **Corollary.** The Cayley matrix of a unit quaternion is invertible, and $L_q^{-1} = L_{\bar{\tilde q}}/N(\tilde q)$; in particular the left regular representation restricts to an injective homomorphism of groups $Sp(1)\to O(4)$.
 
-*Proof.* $L_{\bar{\tilde q}/N(\tilde q)} = L_{\bar{\tilde q}}/N(\tilde q)$ and $L_{\bar{\tilde q}}L_q = L_{\bar{\tilde q} \tilde q} = L_{N(\tilde q)} = N(\tilde q)I$, so $L_q^{-1} = L_{\bar{\tilde q}}/N(\tilde q)$. For a unit $N(\tilde q) = 1$ and $L_q^{-1} = L_{\bar{\tilde q}} = L_q^{T}$ by the next theorem, so $L_q\in O(4)$. $\square$
+*Proof.* $L_{\bar{\tilde q}/N(\tilde q)} = L_{\bar{\tilde q}}/N(\tilde q)$ and $L_{\bar{\tilde q}}L_q = L_{\bar{\tilde q} \tilde q} = L_{N(\tilde q)} = N(\tilde q)I$, so $L_q^{-1} = L_{\bar{\tilde q}}/N(\tilde q)$. For a unit $N(\tilde q) = 1$ and $L_q^{-1} = L_{\bar{\tilde q}} = L_q^{T}$ by the next theorem, so $L_q\in O(4)$.
 
 ## Determinant and Trace
 
@@ -103,11 +103,11 @@ $$
 L_q^{T}L_q = L_{\bar{\tilde q}}L_q = L_{\bar{\tilde q} \tilde q} = L_{N(\tilde q)} = N(\tilde q)\,I,
 $$
 
-whence $(\det L_q)^2 = \det(N(\tilde q)I) = N(\tilde q)^4$, and $\det L_q = N(\tilde q)^2$ by the sign check at $\tilde q = 1$, where $L_1 = I$ and $\det = 1 = N(1)^2$. $\square$
+whence $(\det L_q)^2 = \det(N(\tilde q)I) = N(\tilde q)^4$, and $\det L_q = N(\tilde q)^2$ by the sign check at $\tilde q = 1$, where $L_1 = I$ and $\det = 1 = N(1)^2$.
 
 **Corollary.** The Cayley matrix of a non-zero quaternion is invertible, and $\det L_q > 0$ for $\tilde q\neq0$; the representation $L$ sends $\mathbb{H}^{\times}$ into $GL_4(F)$, and over $\mathbb{R}$ the determinant is a perfect square.
 
-*Proof.* $\det L_q = N(\tilde q)^2\neq0$ for $\tilde q\neq0$ by the unit criterion, and the square of a non-zero real number is positive. $\square$
+*Proof.* $\det L_q = N(\tilde q)^2\neq0$ for $\tilde q\neq0$ by the unit criterion, and the square of a non-zero real number is positive.
 
 **Remark.** The identity $L_q^{T}L_q = N(\tilde q)I$ says that $L_q$ is $\sqrt{N(\tilde q)}$ times an orthogonal matrix; on the unit sphere the map $\tilde q\mapsto L_q$ is then a homomorphism $Sp(1)\to SO(4)$, the left-translation factor of the two-sided covering $Sp(1)\times Sp(1)\to SO(4)$ of *Quaternion Operator Representation* in matrix form, whose other factor is the right regular representation.
 
@@ -119,7 +119,7 @@ $$
 L_q^{T} = L_{\bar{\tilde q}}.
 $$
 
-*Proof.* The transpose of the displayed matrix is obtained by interchanging rows and columns; comparing entrywise with $L_{\bar{\tilde q}}$, the diagonal is unchanged and each off-diagonal entry changes sign in the pattern $-q_1,-q_2,-q_3$ exactly as conjugation negates the vector part. $\square$
+*Proof.* The transpose of the displayed matrix is obtained by interchanging rows and columns; comparing entrywise with $L_{\bar{\tilde q}}$, the diagonal is unchanged and each off-diagonal entry changes sign in the pattern $-q_1,-q_2,-q_3$ exactly as conjugation negates the vector part.
 
 **Theorem.** The three involutions of the algebra act on the Cayley matrix by
 
@@ -129,7 +129,7 @@ $$
 
 and the identity involution gives $L_q$ itself.
 
-*Proof.* The first is the transposition theorem; the second follows from linearity, $L_{-\bar{\tilde q}} = -L_{\bar{\tilde q}} = -L_q^T$; the third likewise, $L_{-\tilde q} = -L_q$. $\square$
+*Proof.* The first is the transposition theorem; the second follows from linearity, $L_{-\bar{\tilde q}} = -L_{\bar{\tilde q}} = -L_q^T$; the third likewise, $L_{-\tilde q} = -L_q$.
 
 **Corollary.** The left regular representation identifies the four linear involutions $\tilde q\mapsto \tilde q,\ \bar{\tilde q},\ -\bar{\tilde q},\ -\tilde q$ with the four matrices $\pm L_q,\ \pm L_q^{T}$, and the fixed spaces of the involutions are the $\pm1$ eigenspaces of these matrices, in agreement with *The Scalar and Vector Subspaces of $\mathbb{H}$*.
 
@@ -151,7 +151,7 @@ $$
 *Proof.* $(R_pR_q)(x) = R_p(xq) = xqp = R_{qp}(x)$, so $R_{pq} = R_qR_p$. The columns are $R_q(e_k) = e_kq$, computed directly as
 
 $$
-e_0\tilde q = \tilde q, \quad e_1\tilde q = -q_1+q_0e_1-q_3e_2+q_2e_3, \quad e_2\tilde q = -q_2+q_3e_1+q_0e_2-q_1e_3, \quad e_3\tilde q = -q_3-q_2e_1+q_1e_2+q_0e_3 . \square
+e_0\tilde q = \tilde q, \quad e_1\tilde q = -q_1+q_0e_1-q_3e_2+q_2e_3, \quad e_2\tilde q = -q_2+q_3e_1+q_0e_2-q_1e_3, \quad e_3\tilde q = -q_3-q_2e_1+q_1e_2+q_0e_3 .
 $$
 
 **Theorem.** The right representation has the same determinant and trace,
@@ -174,11 +174,11 @@ $$
 D L_q^{T} D x = D L_{\bar{\tilde q}} D x = D\bigl(\bar{\tilde q}\,\bar x\bigr) = \overline{\bar{\tilde q}\,\bar x} = xq = R_q\,x,
 $$
 
-using $L_q^{T} = L_{\bar{\tilde q}}$ and the reversal $\overline{\tilde q_1\tilde q_2} = \bar{\tilde q}_2\,\bar{\tilde q}_1$ of conjugation. Hence $R_q = D L_q^{T} D$, and the determinant is that of $L_q$ because $D^2 = I$. $\square$
+using $L_q^{T} = L_{\bar{\tilde q}}$ and the reversal $\overline{\tilde q_1\tilde q_2} = \bar{\tilde q}_2\,\bar{\tilde q}_1$ of conjugation. Hence $R_q = D L_q^{T} D$, and the determinant is that of $L_q$ because $D^2 = I$.
 
 **Proposition.** The left and right representations commute: $L_pR_q = R_qL_p$ for all $p,\tilde q$.
 
-*Proof.* Both sides applied to $x$ give $pxq$, by associativity. $\square$
+*Proof.* Both sides applied to $x$ give $pxq$, by associativity.
 
 ## The Double Centraliser
 
@@ -189,11 +189,11 @@ $$
 \{A : AR_q = R_qA \ \forall \tilde q\} = \{L_p : p\in\mathbb{H}\}.
 $$
 
-*Proof.* Every $R_p$ commutes with every $L_q$, so the right image lies in the commutant of the left image, and the two have the same dimension four; for the reverse inclusion, an $A$ commuting with all $L_q$ is determined by its first column $v = Ae_0$ because the columns $Ae_k$ are obtained from $v$ by the action of the left multiplication, and such an $A$ is exactly some $R_p$ with $p = v$. The second statement is symmetric. $\square$
+*Proof.* Every $R_p$ commutes with every $L_q$, so the right image lies in the commutant of the left image, and the two have the same dimension four; for the reverse inclusion, an $A$ commuting with all $L_q$ is determined by its first column $v = Ae_0$ because the columns $Ae_k$ are obtained from $v$ by the action of the left multiplication, and such an $A$ is exactly some $R_p$ with $p = v$. The second statement is symmetric.
 
 **Corollary (double centraliser).** The image $L(\mathbb{H})$ of the left regular representation is its own double commutant, it is a simple algebra of dimension four, and its centraliser in $M_4(F)$ is the opposite algebra $R(\mathbb{H})\cong\mathbb{H}^{\mathrm{op}}$. Over $\mathbb{R}$, the algebra generated by the two images together is all of $M_4(\mathbb{R})$.
 
-*Proof.* The double centraliser theorem for a faithful finite-dimensional simple module gives that the image equals its double commutant; the dimension count $4\cdot4 = 16 = \dim M_4(\mathbb{R})$ shows that the two images together span $M_4(\mathbb{R})$. $\square$
+*Proof.* The double centraliser theorem for a faithful finite-dimensional simple module gives that the image equals its double commutant; the dimension count $4\cdot4 = 16 = \dim M_4(\mathbb{R})$ shows that the two images together span $M_4(\mathbb{R})$.
 
 ## Relation to the Biquaternion $8\times8$ Form
 
@@ -208,7 +208,7 @@ Over the complex field the quaternion algebra becomes the matrix algebra $M_2(\m
 | Transpose | $L_q^{T} = L_{\bar{\tilde q}}$ | $L_{\tilde Q}^{T} = L_{\bar{\tilde Q}}$ |
 | Commutant | $R(\mathbb{H})\cong\mathbb{H}^{\mathrm{op}}$ | $R(\mathbb{B})\cong\mathbb{B}^{\mathrm{op}}$ |
 
-The pattern is the same in both columns, with the complex field replacing the real one and the matrix size doubling in the real counting; the determinant acquires the complex values of the biquaternion norm form, and its vanishing locus is the null cone rather than the origin. The biquaternion account is in *Biquaternion 4x4 Regular Matrix Representation*.
+The pattern is the same in both columns, with the complex field replacing the real one and the matrix size doubling in the real counting; the determinant acquires the complex values of the biquaternion norm, and its vanishing locus is the null cone rather than the origin. The biquaternion account is in *Biquaternion 4×4 Regular Matrix Representation*.
 
 ## Summary
 
@@ -225,14 +225,14 @@ The right regular representation $R_q(x) = xq$ is an injective anti-homomorphism
 | $\mathbb{H}$ | The quaternion algebra |
 | $F$ | Base field |
 | $e_0 = 1, e_1, e_2, e_3$ | Basis, $e_k^2 = -e_0$ |
-| $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ | Quaternion, conjugate $\bar{\tilde q}$, norm form $N(\tilde q)$ |
+| $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ | Quaternion, conjugate $\bar{\tilde q}$, norm $N(\tilde q)$ |
 | $L_q$ | Cayley matrix of left multiplication $x\mapsto qx$ |
 | $\Omega_q = L_q - q_0I$ | Skew-symmetric part of the Cayley matrix |
 | $R_q$ | Matrix of right multiplication $x\mapsto xq$ |
 | $D = \operatorname{diag}(1,-1,-1,-1)$ | Matrix of conjugation, $R_q = D L_q^{T} D$ |
 | $L_q^{T} = L_{\bar{\tilde q}}$, $R_q^{T} = R_{\bar{\tilde q}}$ | Transposition as conjugation |
 | $\det L_q = N(\tilde q)^2$, $\operatorname{tr}L_q = 4q_0$ | Determinant and trace |
-| $L_q^{T}L_q = N(\tilde q)I$ | Orthogonality up to the norm scale |
+| $L_q^{T}L_q = N(\tilde q)I$ | Orthogonality up to the quaternion norm scale |
 | $\mathbb{H}^{\mathrm{op}}$ | Opposite algebra, the commutant of the left image |
 | $M_4(F)$, $M_8(\mathbb{R})$ | Matrix algebras of the real and biquaternion regular representations |
 | $\mathbb{B}$ | Biquaternion algebra, the $8\times8$ real case |

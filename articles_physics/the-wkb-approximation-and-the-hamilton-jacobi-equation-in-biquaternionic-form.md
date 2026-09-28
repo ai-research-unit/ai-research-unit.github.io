@@ -4,17 +4,17 @@
 
 The WKB approximation is the semiclassical expansion of the wave function in powers of $\hbar$. Its leading order is the classical Hamilton–Jacobi equation for the action, and its next order is a transport equation for the amplitude. It is the bridge between the quantum problem and the classical trajectories, and it is the method by which barrier penetration, quantisation conditions, and the correspondence principle are usually obtained. This article develops both the WKB approximation and the Hamilton–Jacobi equation in the biquaternion framework, for a spin-0 particle in an external scalar potential.
 
-The biquaternion content of the semiclassical limit is unusually clean, because the approximation is organised by the **phase**. In the biquaternion algebra the phase $e^{iS/\hbar}$ is a central element — its exponent is a real scalar times the central imaginary — so the WKB ansatz $\psi = A\,e^{iS/\hbar}$ places the amplitude in the center and the action in the center, and the leading-order momentum is the real quaternion $\nabla S$, the algebra's spatial vector. The Hamilton–Jacobi equation then turns out to be nothing but the **norm form of the momentum** equated to twice the kinetic energy,
+The biquaternion content of the semiclassical limit is unusually clean, because the approximation is organised by the **phase**. In the biquaternion algebra the phase $e^{iS/\hbar}$ is a central element — its exponent is a real scalar times the central imaginary — so the WKB ansatz $\psi = A\,e^{iS/\hbar}$ places the amplitude in the center and the action in the center, and the leading-order momentum is the real quaternion $\nabla S$, the algebra's spatial vector. The Hamilton–Jacobi equation then turns out to be nothing but the **biquaternion norm of the momentum** equated to twice the kinetic energy,
 
 $$
 \frac{1}{2m}N(\nabla S) = E - V ,
 $$
 
-which is the same norm form whose vanishing defines the zero divisor cone and whose value on $\mathbb{M}_+$ measures the purity of a state. The semiclassical limit is thus the regime in which the dynamics is carried by a real vector of the algebra, the phase gradient, and in which the norm form of that vector is the energy. This article derives that statement, its first correction, and its consequences.
+which is the same biquaternion norm whose vanishing defines the zero divisor cone and whose value on $\mathbb{M}_+$ measures the purity of a state. The semiclassical limit is thus the regime in which the dynamics is carried by a real vector of the algebra, the phase gradient, and in which the biquaternion norm of that vector is the energy. This article derives that statement, its first correction, and its consequences.
 
-The article is organised as follows. The next section sets up the amplitude–phase decomposition and derives the two real equations into which the Schrödinger equation separates. The third section treats the Hamilton–Jacobi equation, its norm-form reading, and the trajectories and rays it defines. The fourth treats the transport equation, the WKB amplitude, and the van Vleck determinant. The fifth obtains the quantisation condition, the Maslov phase, and the tunnelling law. The sixth gives the exact rewriting with the quantum potential. The seventh states what the biquaternion form adds and what remains open, and the closing sections are the summary, the notation table, and the external literature.
+The article is organised as follows. The next section sets up the amplitude–phase decomposition and derives the two real equations into which the Schrödinger equation separates. The third section treats the Hamilton–Jacobi equation, its biquaternion-norm reading, and the trajectories and rays it defines. The fourth treats the transport equation, the WKB amplitude, and the van Vleck determinant. The fifth obtains the quantisation condition, the Maslov phase, and the tunnelling law. The sixth gives the exact rewriting with the quantum potential. The seventh states what the biquaternion form adds and what remains open, and the closing sections are the summary, the notation table, and the external literature.
 
-The conventions are those of the companion articles. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with $e_0=1,e_1,e_2,e_3$, $e_j^2=-e_0$, central scalar imaginary $i$; $\mathbb{C}_{\mathbb{B}}$ is the center; $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace; $\mathbb{M}_+$ and $\mathbb{M}_-$ are the Hermitian and anti-Hermitian sectors; the state module is $\mathbb{B}\tilde P\cong\mathbb{C}^2$; and $\mathrm{Tr}(\tilde H)=2\,\mathrm{Sc}(\tilde H)$. The Hamiltonian for a scalar potential is $\tilde H = [-\frac{\hbar^2}{2m}\nabla^2 + V(\mathbf x)]e_0$, central. The d'Alembertian is not used here; the only sign conventions engaged are those of the norm form and the Laplacian, both of which follow from $e_j^2=-e_0$.
+The conventions are those of the companion articles. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with $e_0=1,e_1,e_2,e_3$, $e_j^2=-e_0$, central scalar imaginary $i$; $\mathbb{C}_{\mathbb{B}}$ is the center; $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace; $\mathbb{M}_+$ and $\mathbb{M}_-$ are the Hermitian and anti-Hermitian sectors; the state module is $\mathbb{B}\tilde P\cong\mathbb{C}^2$; and $\mathrm{Tr}(\tilde H)=2\,\mathrm{Sc}(\tilde H)$. The Hamiltonian for a scalar potential is $\tilde H = [-\frac{\hbar^2}{2m}\nabla^2 + V(\mathbf x)]e_0$, central. The d'Alembertian is not used here; the only sign conventions engaged are those of the biquaternion norm and the Laplacian, both of which follow from $e_j^2=-e_0$.
 
 ## The WKB Ansatz in Biquaternionic Form
 
@@ -81,7 +81,7 @@ where $Q$ is the quantum potential. The two equations are exact: together they a
 
 ## The Hamilton–Jacobi Equation
 
-### The equation as a norm form
+### The equation as a biquaternion norm
 
 Dropping the quantum potential, the leading-order equation is
 
@@ -97,7 +97,7 @@ $$
 = -|\nabla S|^2 e_0 ,
 $$
 
-while its norm form is
+while its biquaternion norm is
 
 $$
 N(\nabla S) = |\nabla S|^2 ,
@@ -109,7 +109,7 @@ $$
 \frac{1}{2m}N(\nabla S) = E - V ,
 $$
 
-an equation in the center of the algebra: **the kinetic energy is the norm form of the phase gradient**. This is the same identity that the free-particle article records for the momentum operator, $\tilde T=\tilde p\bar{\tilde p}/2m$, now applied to the leading-order momentum $\nabla S$. Two consequences follow immediately. First, the right-hand side is positive in the classically allowed region, $E>V$, and the norm form of a real vector is positive, so the equation can be solved there; in the forbidden region the right-hand side is negative, no real $\nabla S$ solves the equation, and the momentum becomes imaginary, turning the oscillatory phase into an exponential. Second, the vanishing of the norm form would be the condition $\nabla S=0$, i.e. the turning point; the null (zero divisor) cone is not reached by the phase gradient, whose norm form is fixed by the energy defect and vanishes only where the classical particle stops.
+an equation in the center of the algebra: **the kinetic energy is the biquaternion norm of the phase gradient**. This is the same identity that the free-particle article records for the momentum operator, $\tilde T=\tilde p\bar{\tilde p}/2m$, now applied to the leading-order momentum $\nabla S$. Two consequences follow immediately. First, the right-hand side is positive in the classically allowed region, $E>V$, and the biquaternion norm of a real vector is positive, so the equation can be solved there; in the forbidden region the right-hand side is negative, no real $\nabla S$ solves the equation, and the momentum becomes imaginary, turning the oscillatory phase into an exponential. Second, the vanishing of the biquaternion norm would be the condition $\nabla S=0$, i.e. the turning point; the null (zero divisor) cone is not reached by the phase gradient, whose biquaternion norm is fixed by the energy defect and vanishes only where the classical particle stops.
 
 ### Rays, trajectories, and the eikonal
 
@@ -147,7 +147,7 @@ $$
 S_k(x_k) = \pm\int^{x_k}\sqrt{2m\left(E_k - V_k(x_k')\right)}\;dx_k' .
 $$
 
-The signs are the two directions of motion, and the norm-form reading applies to each term: the square of the phase derivative is the norm form of the one-dimensional momentum. The turning points $E_k = V_k$ are where the radicand vanishes and the two branches meet.
+The signs are the two directions of motion, and the biquaternion-norm reading applies to each term: the square of the phase derivative is the biquaternion norm of the one-dimensional momentum. The turning points $E_k = V_k$ are where the radicand vanishes and the two branches meet.
 
 ## The Amplitude and the Transport Equation
 
@@ -263,7 +263,7 @@ The reality of $A$ is not an assumption but a choice of gauge. Any state can be 
 
 **What the biquaternion notation provides.**
 
-- **The Hamilton–Jacobi equation as a norm form.** The leading-order equation is $\frac{1}{2m}N(\nabla S)=E-V$: the kinetic energy is the norm form of the phase gradient, the same algebraic object whose vanishing defines the zero divisor cone and which on $\mathbb{M}_+$ measures purity. The forbidden region is where the norm form of the real phase gradient would have to be negative, which no real vector allows; that is the algebraic statement of the imaginary momentum.
+- **The Hamilton–Jacobi equation as a biquaternion norm.** The leading-order equation is $\frac{1}{2m}N(\nabla S)=E-V$: the kinetic energy is the biquaternion norm of the phase gradient, the same algebraic object whose vanishing defines the zero divisor cone and which on $\mathbb{M}_+$ measures purity. The forbidden region is where the biquaternion norm of the real phase gradient would have to be negative, which no real vector allows; that is the algebraic statement of the imaginary momentum.
 - **The phase gradient as a real quaternion.** The leading-order momentum is an element of the real-quaternion subspace $\mathbb{H}_{\mathbb{B}}$, the algebra's copy of space, while the momentum operator is Hermitian in $\mathbb{M}_+$. The correspondence is the semiclassical statement that the operator's expectation is the classical vector.
 - **A central phase and a central amplitude.** The WKB state is $Ae^{iS/\hbar}\chi$ with $A$ real and central and the phase central; the quantum potential is central; the whole semiclassical expansion lives in the center, and the module factor is a constant. The Maslov phases are operations on the central $i$, and the square roots under the connection formulas are taken inside the center.
 - **The same amplitude as the path integral.** The van Vleck determinant appears here from the transport equation and in the companion path-integral article from the stationary phase of the path integral; the framework exhibits them as one object.
@@ -281,7 +281,7 @@ The reality of $A$ is not an assumption but a choice of gauge. Any state can be 
 
 **2. Can the Maslov index be read from the algebra?** The $\pm\tfrac{\pi}{2}$ and $\pm\tfrac{\pi}{4}$ phases are the phases of the central square roots that appear in the Airy connection formulas. Whether their counting is an algebraic invariant of the ray congruence, or only an analytic one, is open.
 
-**3. What is the biquaternion status of the quantum potential?** It is a central real scalar and is the first correction to the Hamilton–Jacobi equation. Whether the framework gives it a sector reading, or a relation to the norm form at the next order, is not known.
+**3. What is the biquaternion status of the quantum potential?** It is a central real scalar and is the first correction to the Hamilton–Jacobi equation. Whether the framework gives it a sector reading, or a relation to the biquaternion norm at the next order, is not known.
 
 **4. Empirical content.** Nothing in the semiclassical reformulation distinguishes it from scalar WKB.
 
@@ -297,17 +297,17 @@ $$
 Q = -\frac{\hbar^2}{2m}\frac{\nabla^2 A}{A}.
 $$
 
-Dropping the quantum potential gives the **Hamilton–Jacobi equation**, which in the algebra is the norm-form statement
+Dropping the quantum potential gives the **Hamilton–Jacobi equation**, which in the algebra is the biquaternion-norm statement
 
 $$
 \frac{1}{2m}N(\nabla S) = E - V :
 $$
 
-the kinetic energy is the norm form of the phase gradient. Its characteristics are the classical trajectories, with $\dot{\mathbf x}=\mathbf p/m$ and $\dot{\mathbf p}=-\nabla V$, and the wave fronts are the surfaces of constant phase. The transport equation gives the WKB amplitude $A=C/\sqrt{|p|}$ and, in three dimensions, the van Vleck determinant $\big|\det\partial^2S_{\mathrm{cl}}/\partial x_i\partial x_f\big|^{1/2}$ — the same object that the companion path-integral article obtains from the Gaussian fluctuation determinant.
+the kinetic energy is the biquaternion norm of the phase gradient. Its characteristics are the classical trajectories, with $\dot{\mathbf x}=\mathbf p/m$ and $\dot{\mathbf p}=-\nabla V$, and the wave fronts are the surfaces of constant phase. The transport equation gives the WKB amplitude $A=C/\sqrt{|p|}$ and, in three dimensions, the van Vleck determinant $\big|\det\partial^2S_{\mathrm{cl}}/\partial x_i\partial x_f\big|^{1/2}$ — the same object that the companion path-integral article obtains from the Gaussian fluctuation determinant.
 
 The Bohr–Sommerfeld condition $\oint p\,dx = 2\pi\hbar(n+\tfrac12)$, with the Maslov offsets from the Airy connection formulas, was verified to be exact for the harmonic oscillator and the Morse potential (relative errors below $5\times10^{-9}$ and $2\times10^{-9}$ respectively) and to be approximate for the anharmonic well $\tfrac12x^2+0.1x^4$, where it underestimates the exact levels by $4.6\%$, $0.88\%$, $0.37\%$, and $0.21\%$ for $n=0,\dots,3$ (exact values from finite-difference diagonalisation). The WKB tunnelling exponent $-\frac{2}{\hbar}\int\sqrt{2m(V-E)}\,dx$ matches the closed parabolic-barrier value $\pi(V_0-E)/\hbar\omega$ to $10^{-9}$ and reproduces the leading exponential of Kemble's exact formula.
 
-The whole semiclassical expansion lives in the **center** of the algebra: the phase is a central unitary element, the amplitude and the quantum potential are central real scalars, the Maslov phases are operations on the central $i$, and the module factor is a constant. The framework supplies the norm-form reading of the Hamilton–Jacobi equation, the sector location of the phase and the amplitude, and the identity of the transport amplitude with the path-integral fluctuation determinant; it does not supply a uniform approximation at caustics, the branch of the complex action, or any prediction distinguishing the reformulation from scalar WKB.
+The whole semiclassical expansion lives in the **center** of the algebra: the phase is a central unitary element, the amplitude and the quantum potential are central real scalars, the Maslov phases are operations on the central $i$, and the module factor is a constant. The framework supplies the biquaternion-norm reading of the Hamilton–Jacobi equation, the sector location of the phase and the amplitude, and the identity of the transport amplitude with the path-integral fluctuation determinant; it does not supply a uniform approximation at caustics, the branch of the complex action, or any prediction distinguishing the reformulation from scalar WKB.
 
 ## Summary of Notation
 
@@ -324,8 +324,8 @@ The whole semiclassical expansion lives in the **center** of the algebra: the ph
 | $\tilde p=-i\hbar\nabla$ | Momentum operator, Hermitian |
 | $\tilde p\psi=[\nabla S-i\hbar\nabla\ln A]\psi$ | Action of the momentum on the WKB state |
 | $\nabla S=\sum_k(\partial_kS)e_k$ | Phase gradient; real quaternion, $\in\mathbb{H}_{\mathbb{B}}$ |
-| $N(\nabla S)=\lvert\nabla S\rvert^2$ | Norm form of the phase gradient; $\nabla S\,\overline{\nabla S}=\lvert\nabla S\rvert^2e_0$ |
-| $\frac{1}{2m}N(\nabla S)=E-V$ | Hamilton–Jacobi equation as a norm form |
+| $N(\nabla S)=\lvert\nabla S\rvert^2$ | Biquaternion norm of the phase gradient; $\nabla S\,\overline{\nabla S}=\lvert\nabla S\rvert^2e_0$ |
+| $\frac{1}{2m}N(\nabla S)=E-V$ | Hamilton–Jacobi equation as a biquaternion norm |
 | $\mathbf p=\nabla S$, $\dot{\mathbf x}=\mathbf p/m$, $\dot{\mathbf p}=-\nabla V$ | Characteristics; classical trajectories |
 | $\nabla\cdot(A^2\nabla S)=0$ | Transport equation |
 | $A=C/\sqrt{\lvert p\rvert}$ | WKB amplitude in one dimension |

@@ -14,7 +14,7 @@ The article is the frame around the two central-force articles that follow. It d
 
 The treatment is classical and non-quantum throughout. The companion articles *The Harmonic Oscillator in Biquaternionic Form* and *The Hydrogen Atom in Biquaternionic Form — The Non-Relativistic Case* treat the operator versions of two of these systems; the states, the operators and the canonical commutator do not appear here, and the only bracket used is the classical Poisson bracket of the companion article *Similitudes Between the Poisson Bracket and the Quantum Commutator*.
 
-**Conventions.** The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; the basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$ and $e_je_k = \epsilon_{jkl}e_l$ for $j \neq k$; the scalar imaginary $i$ is central with $i^2 = -e_0$. The anti-Hermitian subspace $\mathbb{M}_-$ is the material sector and the Hermitian subspace $\mathbb{M}_+$ the informational sector, with $\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-$ and $i\mathbb{M}_\pm = \mathbb{M}_\mp$. The real-quaternion subalgebra is $\mathbb{H}_{\mathbb{B}}$, its pure part is the real three-space $\operatorname{span}\{e_1, e_2, e_3\}$, and the centre is $\mathbb{C}_{\mathbb{B}} = \operatorname{span}_\mathbb{R}\{e_0, ie_0\}$. For a quaternion $\mathbf{a} = a_1e_1 + a_2e_2 + a_3e_3$ the norm form is $N(\mathbf{a}) = \mathbf{a}\overline{\mathbf{a}} = |\mathbf{a}|^2e_0$, so that $N$ restricts to the positive Euclidean square on the real three-space. The trace satisfies $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ for $\tilde{P}, \tilde{H} \in \mathbb{M}_+$.
+**Conventions.** The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; the basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$ and $e_je_k = \epsilon_{jkl}e_l$ for $j \neq k$; the scalar imaginary $i$ is central with $i^2 = -e_0$. The anti-Hermitian subspace $\mathbb{M}_-$ is the material sector and the Hermitian subspace $\mathbb{M}_+$ the informational sector, with $\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-$ and $i\mathbb{M}_\pm = \mathbb{M}_\mp$. The real-quaternion subalgebra is $\mathbb{H}_{\mathbb{B}}$, its pure part is the real three-space $\operatorname{span}\{e_1, e_2, e_3\}$, and the centre is $\mathbb{C}_{\mathbb{B}} = \operatorname{span}_\mathbb{R}\{e_0, ie_0\}$. For a quaternion $\mathbf{a} = a_1e_1 + a_2e_2 + a_3e_3$ the biquaternion norm is $N(\mathbf{a}) = \mathbf{a}\overline{\mathbf{a}} = |\mathbf{a}|^2e_0$, so that $N$ restricts to the positive Euclidean square on the real three-space. The trace satisfies $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ for $\tilde{P}, \tilde{H} \in \mathbb{M}_+$.
 
 ## The Non-Relativistic Configuration
 
@@ -56,7 +56,7 @@ $$
 T = -\tfrac12 m\,\mathbf{v}^2 = \tfrac12 m\,N(\mathbf{v}) = \tfrac12 m|\mathbf{v}|^2 e_0 ,
 $$
 
-which is the norm form of the velocity, up to the mass. The sign is the same algebraic fact — $e_k^2 = -e_0$ — that gives the real three-space its Euclidean-square norm and the material sector its Lorentzian signature. In the central-scalar limit, where the velocities are small and the vectors are real, the norm form of a vector is its positive Euclidean square, and the kinetic energy is a positive central scalar.
+which is the biquaternion norm of the velocity, up to the mass. The sign is the same algebraic fact — $e_k^2 = -e_0$ — that gives the real three-space its Euclidean-square norm and the material sector its Lorentzian signature. In the central-scalar limit, where the velocities are small and the vectors are real, the biquaternion norm of a vector is its positive Euclidean square, and the kinetic energy is a positive central scalar.
 
 ## The Definition of the Central-Scalar Limit
 
@@ -70,13 +70,13 @@ The conditions of the introduction can be stated as a restriction on the algebra
 
 No element of this list has a nonzero vector part in $\mathbb{M}_+$, and none has a noncentral scalar part. The vector part of the configuration is entirely in $\mathbb{M}_-$; the scalar data are entirely in the central part of $\mathbb{M}_+$.
 
-The reason the potential may depend on the position only through $|\mathbf{r}|$ is that it is a central scalar and therefore rotation-invariant. Under a rotation rotor $R \in \mathbb{H}_{\mathbb{B}}$ with $R\overline{R} = e_0$, the position transforms as $\mathbf{r} \mapsto R\mathbf{r}R^{-1}$, and the norm form is invariant,
+The reason the potential may depend on the position only through $|\mathbf{r}|$ is that it is a central scalar and therefore rotation-invariant. Under a rotation rotor $R \in \mathbb{H}_{\mathbb{B}}$ with $R\overline{R} = e_0$, the position transforms as $\mathbf{r} \mapsto R\mathbf{r}R^{-1}$, and the biquaternion norm is invariant,
 
 $$
 N(R\mathbf{r}R^{-1}) = R\,N(\mathbf{r})\,R^{-1} = N(\mathbf{r}) ,
 $$
 
-because the norm form is a central scalar. Hence $V(|\mathbf{r}|)e_0$ is unchanged by every rotation: a central scalar potential is automatically spherically symmetric, and its symmetry is trivial in the sense of the preceding section.
+because the biquaternion norm is a central scalar. Hence $V(|\mathbf{r}|)e_0$ is unchanged by every rotation: a central scalar potential is automatically spherically symmetric, and its symmetry is trivial in the sense of the preceding section.
 
 ## Two Limits, Distinguished
 
@@ -230,7 +230,7 @@ It is important not to conflate two algebras that the notation makes look alike.
 
 ### Numerical Checks
 
-Several identities used above were verified by explicit computation with complex-coefficient quaternions and with numerical differentiation of phase-space functions. The quaternion product of two real vectors was confirmed to be $\mathbf{a}\mathbf{b} = -\mathbf{a}\cdot\mathbf{b}\,e_0 + \mathbf{a}\times\mathbf{b}$ and the commutator to be $[\mathbf{a},\mathbf{b}] = 2\,\mathbf{a}\times\mathbf{b}$; the vector part of $\mathbf{r}\mathbf{p}$ was confirmed to equal $\mathbf{r}\times\mathbf{p}$; the central-force criterion $[\mathbf{r},\mathbf{F}] = 0$ was confirmed to hold exactly when $\mathbf{r}\times\mathbf{F} = 0$; and the bracket $\{L_i, L_j\} = \epsilon_{ijk}L_k$ was confirmed by central-difference evaluation of the Poisson bracket at several representative phase-space points, with a maximum deviation of order $10^{-11}$. The rotation-rotor identity $R\mathbf{a}R^{-1}$ for $R = \cos\frac{\theta}{2} + \sin\frac{\theta}{2}\hat{\mathbf{n}}$ was confirmed to rotate a vector by the angle $\theta$ about $\hat{\mathbf{n}}$ while preserving the norm form.
+Several identities used above were verified by explicit computation with complex-coefficient quaternions and with numerical differentiation of phase-space functions. The quaternion product of two real vectors was confirmed to be $\mathbf{a}\mathbf{b} = -\mathbf{a}\cdot\mathbf{b}\,e_0 + \mathbf{a}\times\mathbf{b}$ and the commutator to be $[\mathbf{a},\mathbf{b}] = 2\,\mathbf{a}\times\mathbf{b}$; the vector part of $\mathbf{r}\mathbf{p}$ was confirmed to equal $\mathbf{r}\times\mathbf{p}$; the central-force criterion $[\mathbf{r},\mathbf{F}] = 0$ was confirmed to hold exactly when $\mathbf{r}\times\mathbf{F} = 0$; and the bracket $\{L_i, L_j\} = \epsilon_{ijk}L_k$ was confirmed by central-difference evaluation of the Poisson bracket at several representative phase-space points, with a maximum deviation of order $10^{-11}$. The rotation-rotor identity $R\mathbf{a}R^{-1}$ for $R = \cos\frac{\theta}{2} + \sin\frac{\theta}{2}\hat{\mathbf{n}}$ was confirmed to rotate a vector by the angle $\theta$ about $\hat{\mathbf{n}}$ while preserving the biquaternion norm.
 
 ## What the Limit Excludes
 

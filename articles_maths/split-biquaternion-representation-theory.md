@@ -32,7 +32,7 @@ with $\tilde\Pi_\pm$ acting as the two projections. On $\tilde\Pi_+ M$ the algeb
 
 **Theorem.** A left $\mathbb{H}_{\mathbb{D}}$-module is the same thing as a pair $(M_+, M_-)$ of left $\mathbb{H}$-modules, and the passage to the pair is by $M \mapsto (\tilde\Pi_+ M, \tilde\Pi_- M)$.
 
-**Proof.** For a left $\mathbb{H}_{\mathbb{D}}$-module $M$, the central idempotents $\tilde\Pi_\pm$ act as commuting projections with $\tilde\Pi_+ + \tilde\Pi_- = 1$, giving the direct sum decomposition, and each piece is stable under the algebra, which acts through the corresponding factor of $\mathbb{H} \oplus \mathbb{H}$. Conversely two $\mathbb{H}$-modules $M_+, M_-$ form an $\mathbb{H}_{\mathbb{D}}$-module $M_+ \oplus M_-$ with $(\tilde{Q}_+, \tilde{Q}_-)(m_+, m_-) = (\tilde{Q}_+ m_+, \tilde{Q}_- m_-)$, and the two constructions are inverse. $\square$
+**Proof.** For a left $\mathbb{H}_{\mathbb{D}}$-module $M$, the central idempotents $\tilde\Pi_\pm$ act as commuting projections with $\tilde\Pi_+ + \tilde\Pi_- = 1$, giving the direct sum decomposition, and each piece is stable under the algebra, which acts through the corresponding factor of $\mathbb{H} \oplus \mathbb{H}$. Conversely two $\mathbb{H}$-modules $M_+, M_-$ form an $\mathbb{H}_{\mathbb{D}}$-module $M_+ \oplus M_-$ with $(\tilde{Q}_+, \tilde{Q}_-)(m_+, m_-) = (\tilde{Q}_+ m_+, \tilde{Q}_- m_-)$, and the two constructions are inverse.
 
 Since the quaternion algebra $\mathbb{H}$ is a division algebra, every $\mathbb{H}$-module is free: the category $\mathbb{H}\text{-}\mathrm{Mod}$ is the category of free $\mathbb{H}$-modules, and its simple objects are the one-dimensional $\mathbb{H}$-modules, isomorphic to $\mathbb{H}$ itself.
 
@@ -44,7 +44,7 @@ $$
 
 each of real dimension $4$, and each isomorphic as an $\mathbb{H}$-module to $\mathbb{H}$.
 
-**Proof.** The category of modules is the product $\mathbb{H}\text{-}\mathrm{Mod} \times \mathbb{H}\text{-}\mathrm{Mod}$ by the previous theorem; the simple objects of a product category are the simple objects of one factor with the other factor zero, which are $S_+$ and $S_-$. A product of division algebras has zero radical, and the module $\mathbb{H}_{\mathbb{D}} = S_+ \oplus S_-$ over itself shows the length. $\square$
+**Proof.** The category of modules is the product $\mathbb{H}\text{-}\mathrm{Mod} \times \mathbb{H}\text{-}\mathrm{Mod}$ by the previous theorem; the simple objects of a product category are the simple objects of one factor with the other factor zero, which are $S_+$ and $S_-$. A product of division algebras has zero radical, and the module $\mathbb{H}_{\mathbb{D}} = S_+ \oplus S_-$ over itself shows the length.
 
 The **regular representation** is therefore the regular bimodule $\mathbb{H}_{\mathbb{D}}$, which as a left module is $S_+ \oplus S_-$. By Wedderburn's theorem the algebra is isomorphic to the product of the endomorphism rings of its simple modules, $\mathbb{H} \oplus \mathbb{H}$, which is the splitting already used.
 
@@ -58,7 +58,7 @@ $$
 \operatorname{Hom}_{\mathbb{H}_{\mathbb{D}}}(S_+, S_-) = \operatorname{Hom}_{\mathbb{H}_{\mathbb{D}}}(S_-, S_+) = 0 , \qquad \operatorname{End}_{\mathbb{H}_{\mathbb{D}}}(S_\pm) \cong \mathbb{H}^{\mathrm{op}} \cong \mathbb{H} .
 $$
 
-**Proof.** Schur's lemma is standard. Because a homomorphism preserves the action of the central idempotents, it must carry $\tilde\Pi_+ T$ to $\tilde\Pi_+ T$ and vanishes on the other summand; hence a homomorphism $S_+ \to S_-$ vanishes, and one $S_+ \to S_+$ is an $\mathbb{H}$-linear endomorphism of the free rank-one module $\mathbb{H}$, that is right multiplication by a quaternion, which is $\mathbb{H}^{\mathrm{op}}$. $\square$
+**Proof.** Schur's lemma is standard. Because a homomorphism preserves the action of the central idempotents, it must carry $\tilde\Pi_+ T$ to $\tilde\Pi_+ T$ and vanishes on the other summand; hence a homomorphism $S_+ \to S_-$ vanishes, and one $S_+ \to S_+$ is an $\mathbb{H}$-linear endomorphism of the free rank-one module $\mathbb{H}$, that is right multiplication by a quaternion, which is $\mathbb{H}^{\mathrm{op}}$.
 
 The division ring $\operatorname{End}(S_\pm) \cong \mathbb{H}$ is the analogue of the field $\mathbb{C}$ appearing in the biquaternion case through $\mathbb{B} \cong M_2(\mathbb{C})$. The non-isomorphism of the two simple modules is the module-theoretic expression of the fact that $\tilde\Pi_+ \mathbb{H}_{\mathbb{D}} \tilde\Pi_- = 0$.
 
@@ -84,7 +84,7 @@ $$
 \mathbb{H}_{\mathbb{D}}^{\times} \cong \left\{ (\tilde{Q}_+, \tilde{Q}_-) : \tilde{Q}_+ \neq 0, \tilde{Q}_- \neq 0 \right\} , \qquad \tilde{Q}^{\times} = \mathbb{H}^{\times} \times \mathbb{H}^{\times} .
 $$
 
-**Proof.** An element is a unit in a product ring exactly when both components are units, and the units of the division algebra $\mathbb{H}$ are its nonzero elements. $\square$
+**Proof.** An element is a unit in a product ring exactly when both components are units, and the units of the division algebra $\mathbb{H}$ are its nonzero elements.
 
 The unit group is a real Lie group of dimension $8$, connected because it is the square of the connected group $\mathbb{H}^{\times}$. By the polar form of the nonzero quaternions, $\mathbb{H}^{\times} \cong \mathbb{R}_{>0} \times S^3$, so that
 
@@ -94,7 +94,7 @@ $$
 
 a group whose compact part is $S^3 \times S^3 \cong \mathrm{Spin}(4)$. This is the group acting on the algebra in the rotation theory developed in *Split-Biquaternion Rotations and the Lorentz Group*, and it contrasts with the biquaternion unit group, which is $GL(2,\mathbb{C}) \cong (SL(2,\mathbb{C}) \times \mathbb{C}^{\times})/\{\pm 1\}$, with compact part $U(2)$.
 
-The **norm-one group** — the elements whose norm form is the identity of $\mathbb{D}$ — is the kernel of $N$ restricted to the units. Since $N(\tilde{Q}) = N_+ N_-$ in components $N_\pm = |\tilde{Q}_\pm|^2$, the condition $N(\tilde{Q}) = 1$ is the pair of equations $|\tilde{Q}_+| = |\tilde{Q}_-| = 1$, so the norm-one group is
+The **norm-one group** — the elements whose split-biquaternion norm is the identity of $\mathbb{D}$ — is the kernel of $N$ restricted to the units. Since $N(\tilde{Q}) = N_+ N_-$ in components $N_\pm = |\tilde{Q}_\pm|^2$, the condition $N(\tilde{Q}) = 1$ is the pair of equations $|\tilde{Q}_+| = |\tilde{Q}_-| = 1$, so the norm-one group is
 
 $$
 \left\{ \tilde{Q} : N(\tilde{Q}) = 1 \right\} = S^3 \times S^3 \cong \mathrm{Spin}(4) .

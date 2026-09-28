@@ -245,8 +245,8 @@ The speculations are labelled as such. One sector sourcing the other at cosmolog
 | $\mathbb{B}$ | $\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the biquaternion algebra | inherited |
 | $e_0,e_1,e_2,e_3$ | quaternion basis, $e_k^2 = -e_0$ | inherited |
 | $i$ | scalar imaginary, commuting with every $e_k$ | inherited |
-| $\mathbb{M}_-$, $\mathbb{M}_+$ | material and informational sectors, $\mathbb{B} = \mathbb{M}_+\oplus\mathbb{M}_-$ | inherited |
-| $\mathbb{H}_{\mathbb{B}}$, $\mathbb{C}_{\mathbb{B}}$ | real-quaternion subspace; centre $\mathrm{span}_{\mathbb{R}}\{e_0, ie_0\}$ | inherited |
+| $\mathbb{M}_+$, $\mathbb{M}_-$ | informational and material sectors, $\mathbb{B} = \mathbb{M}_+\oplus\mathbb{M}_-$ | inherited |
+| $\mathbb{C}_{\mathbb{B}}$, $\mathbb{H}_{\mathbb{B}}$ | centre $\mathrm{span}_{\mathbb{R}}\{e_0, ie_0\}$; real-quaternion subspace | inherited |
 | $\varepsilon_\mu$ | material basis $\varepsilon_0 = ie_0$, $\varepsilon_k = e_k$ | inherited |
 | $\langle\tilde{Q},\tilde{P}\rangle$ | bilinear form $\mathrm{Sc}(\tilde{Q}\bar{\tilde{P}})$, $\langle\varepsilon_\mu,\varepsilon_\nu\rangle = \eta_{\mu\nu} = \mathrm{diag}(-1,1,1,1)$ | inherited |
 | $\tilde{\nabla}$, $\bar{\tilde{\nabla}}$, $\Box$ | biquaternionic gradient, its conjugate, and $\Box = \tilde{\nabla}\bar{\tilde{\nabla}}$ | inherited |

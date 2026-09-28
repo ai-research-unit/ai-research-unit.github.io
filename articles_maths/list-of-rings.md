@@ -18,12 +18,12 @@ The article introduces nothing and proves nothing. It records examples and non-e
 | $\mathbb{R}$ | $\mathbb{R}\setminus\{0\}$ | none | $0,\ \mathbb{R}$; Noetherian and Artinian | *The Real Numbers* |
 | $\mathbb{C}$ | $\mathbb{C}\setminus\{0\}$ | none | $0,\ \mathbb{C}$; Noetherian and Artinian | *The Complex Numbers* |
 | $\mathbb{D}$ | $N(u) \neq 0$ | the null cone $\{N = 0\}$ | $0,\ \mathbb{D}e_{\pm},\ \mathbb{D}$; Artinian | *Split-Complex Algebra* |
-| $\mathbb{D}'$ | $x \neq 0$ | the maximal ideal $\mathfrak{m} = (\varepsilon)$ | the powers $(\varepsilon^m)$; local, Artinian | *Dual-Numbers Algebra* |
+| $\mathbb{D}'$ | $x \neq 0$ | the maximal ideal $\mathrm{M} = (\varepsilon)$ | the powers $(\varepsilon^m)$; local, Artinian | *Dual-Numbers Algebra* |
 | $\mathbb{H}$ | $\mathbb{H}\setminus\{0\}$ | none | only $0$ and $\mathbb{H}$; simple | *Quaternion Algebra* |
 | $\mathbb{H}_{\mathbb{D}}$ | $N(u) \in \mathbb{D}^{\times}$ | yes | two maximal ideals | *Split-Biquaternion Algebra* |
 | $\mathbb{B}$ | $N(\tilde{Q}) \neq 0$ | yes | only $0$ and $\mathbb{B}$; simple, not division | *Biquaternion Algebra* |
 
-The quaternions $\mathbb{H}$ are the non-commutative ring whose every nonzero element is a unit; the biquaternions $\mathbb{B}$ and the split-biquaternions $\mathbb{H}_{\mathbb{D}}$ are the two eight-dimensional relatives that acquire zero divisors, and the split-complex numbers $\mathbb{D}$ and the dual numbers $\mathbb{D}'$ are the two-dimensional commutative rings with a degenerate or indefinite norm form.
+The quaternions $\mathbb{H}$ are the non-commutative ring whose every nonzero element is a unit; the biquaternions $\mathbb{B}$ and the split-biquaternions $\mathbb{H}_{\mathbb{D}}$ are the two eight-dimensional relatives that acquire zero divisors, and the split-complex numbers $\mathbb{D}$ and the dual numbers $\mathbb{D}'$ are the two-dimensional commutative rings with a degenerate or indefinite norm.
 
 ## Residue Rings, Finite Rings and Products
 
@@ -120,7 +120,7 @@ An object that a reader may expect among the rings, and does not find, is record
 | the octonions $\mathbb{O}$ | a division algebra, but multiplication is not associative, so $\mathbb{O}$ is not a ring | *Octonion Algebra* |
 | the sedenions $\mathbb{S}$ | a sixteen-dimensional real algebra with zero divisors, whose multiplication is not associative; neither a ring nor a division algebra | *Division Algebras* |
 | the zero ring $\{0\}$ | a ring, but excluded from every list by the corpus convention $1 \neq 0$ | *Rings*, §2 |
-| a Lie algebra $\mathfrak{g}$ | not a ring: the bracket is bilinear and antisymmetric but not associative | *Lie Algebras* |
+| a Lie algebra $\mathrm{G}$ | not a ring: the bracket is bilinear and antisymmetric but not associative | *Lie Algebras* |
 
 ## Summary
 

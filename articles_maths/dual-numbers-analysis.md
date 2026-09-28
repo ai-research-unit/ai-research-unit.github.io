@@ -21,7 +21,7 @@ $$
 
 where $\varepsilon^2 = 0$. The element $x$ is the **real part**, and $y$ is the **infinitesimal part**. We write $x = \operatorname{Re} Z$ and $y = \operatorname{Inf} Z$.
 
-There is no Euclidean modulus intrinsic to the algebra, because the norm form $N(Z) = x^2$ is degenerate and vanishes on the maximal ideal. The closest analogue is the **Euclidean modulus**
+There is no Euclidean modulus intrinsic to the algebra, because the norm $N(Z) = x^2$ is degenerate and vanishes on the maximal ideal. The closest analogue is the **Euclidean modulus**
 
 $$
 \|Z\|_E = \sqrt{x^2 + y^2},
@@ -195,7 +195,7 @@ $$
 \frac{f(Z_0 + h) - f(Z_0)}{h} = \frac{(u_x h_1 + u_y h_2) + (v_x h_1 + v_y h_2) \varepsilon}{h_1 + h_2 \varepsilon} + o(1).
 $$
 
-For the limit to exist independently of the direction of $h$, the numerator must be a dual multiple of $h$. This forces $u_y = 0$ and $u_x = v_y$; the remaining partial $v_x$ is free and becomes the infinitesimal part of the derivative. $\square$
+For the limit to exist independently of the direction of $h$, the numerator must be a dual multiple of $h$. This forces $u_y = 0$ and $u_x = v_y$; the remaining partial $v_x$ is free and becomes the infinitesimal part of the derivative.
 
 **Corollary.** If $f$ is dual differentiable on a domain, then $u$ depends only on $x$, and $v$ is affine in $y$ with slope $u'(x)$:
 
@@ -244,13 +244,13 @@ $$
 The **maximal ideal** of $\mathbb{D}'$ is
 
 $$
-\mathfrak{m} = (\varepsilon) = \{y \varepsilon : y \in R\}.
+\mathrm{M} = (\varepsilon) = \{y \varepsilon : y \in R\}.
 $$
 
 It is the set of elements with vanishing real part, and it is nilpotent of index two:
 
 $$
-\mathfrak{m}^2 = 0.
+\mathrm{M}^2 = 0.
 $$
 
 The maximal ideal is the infinitesimal direction, and it is the obstruction to the algebra being a field.
@@ -267,7 +267,7 @@ is the **augmentation map**, and its kernel is the maximal ideal. The augmentati
 
 ### The Infinitesimal Translation
 
-For $h \in \mathfrak{m}$, the map
+For $h \in \mathrm{M}$, the map
 
 $$
 T_h : \mathbb{D}' \to \mathbb{D}', \qquad T_h(Z) = Z + h,
@@ -307,7 +307,7 @@ $$
 
 provided the contour does not cross the maximal ideal in a way that makes the integral diverge.
 
-**Proof.** Since $f$ is dual differentiable, it is of the form $f(x + y\varepsilon) = u(x) + (y u'(x) + c(x))\varepsilon$. Let $U$ be an antiderivative of $u$ and let $C$ be an antiderivative of $c$, and set $F(x + y\varepsilon) = U(x) + (y u(x) + C(x))\varepsilon$. Then $F$ is dual differentiable with $F' = f$: its real part is $U$ with $U' = u$, and the $x$-derivative of its infinitesimal part $y u(x) + C(x)$ is $y u'(x) + c(x)$. So $f$ has a primitive, and the integral of $f$ over a closed contour vanishes. $\square$
+**Proof.** Since $f$ is dual differentiable, it is of the form $f(x + y\varepsilon) = u(x) + (y u'(x) + c(x))\varepsilon$. Let $U$ be an antiderivative of $u$ and let $C$ be an antiderivative of $c$, and set $F(x + y\varepsilon) = U(x) + (y u(x) + C(x))\varepsilon$. Then $F$ is dual differentiable with $F' = f$: its real part is $U$ with $U' = u$, and the $x$-derivative of its infinitesimal part $y u(x) + C(x)$ is $y u'(x) + c(x)$. So $f$ has a primitive, and the integral of $f$ over a closed contour vanishes.
 
 **Caution.** The theorem fails if the contour crosses the maximal ideal in a way that makes the integral diverge. The maximal ideal is the analogue of the branch cut in complex analysis, and it must be avoided.
 
@@ -355,7 +355,7 @@ $$
 
 valid for $\|Z - Z_0\|_E < r$.
 
-**Proof.** Since $f$ is dual differentiable, it is of the form $f(x + y\varepsilon) = u(x) + (y u'(x) + c(x))\varepsilon$. The real part $u$ has an ordinary real Taylor expansion, and the infinitesimal part $y u'(x) + c(x)$ is expanded by differentiating term by term. So the expansion is the real Taylor expansion of $u$ plus $\varepsilon$ times the real Taylor expansion of $y u'(x) + c(x)$. $\square$
+**Proof.** Since $f$ is dual differentiable, it is of the form $f(x + y\varepsilon) = u(x) + (y u'(x) + c(x))\varepsilon$. The real part $u$ has an ordinary real Taylor expansion, and the infinitesimal part $y u'(x) + c(x)$ is expanded by differentiating term by term. So the expansion is the real Taylor expansion of $u$ plus $\varepsilon$ times the real Taylor expansion of $y u'(x) + c(x)$.
 
 **Corollary.** A dual differentiable function is analytic: it equals its Taylor series in a neighborhood of every point.
 
@@ -378,26 +378,6 @@ Let $f$ be dual differentiable on a punctured disk $0 < \|Z - Z_0\|_E < R$.
 ### Residues
 
 There is **no** general residue theory in dual numbers analysis. The reason is that the integral around a singularity depends on the path, and there is no single number that captures the singularity. The dual differentiable functions are of the form $u(x) + (y u'(x) + c(x))\varepsilon$, and the singularity structure is that of the real functions $u$ and $c$.
-
-## Applications
-
-### Automatic Differentiation
-
-The dual numbers are the coefficient algebra for forward-mode automatic differentiation. A function $f : \mathbb{R} \to \mathbb{R}$ extends to a function on $\mathbb{D}'$ by the formula
-
-$$
-f(x + \varepsilon) = f(x) + f'(x) \varepsilon,
-$$
-
-which is exact because $\varepsilon^2 = 0$. This is the algebraic content of the derivative, and it is the basis of the computational technique.
-
-### Infinitesimal Deformations
-
-The dual numbers are the coefficients of first-order deformations. A deformation of a mathematical object over the dual numbers is a family parametrized by $\varepsilon$, with $\varepsilon^2 = 0$, and the first-order information is the derivative with respect to $\varepsilon$.
-
-### The Tangent Space
-
-In algebraic geometry, the tangent space at a point $x$ of a scheme $X$ is the set of morphisms $\operatorname{Spec} \mathbb{D}' \to X$ sending the closed point to $x$. The dual numbers are the algebraic model of the infinitesimal neighborhood of a point.
 
 ## Comparison with Complex Analysis
 
@@ -422,7 +402,7 @@ The complex case is rigid: differentiability is a strong condition, and it force
 
 Dual numbers analysis is the study of differentiable functions of a dual variable $Z = x + y\varepsilon$ with $\varepsilon^2 = 0$. The plane carries the Euclidean norm inherited from $R^2$, and with it the convergent sequences and the continuous functions on which the subject is built.
 
-The derivative is defined as in the complex case, but its behaviour differs because $\varepsilon$ is nilpotent. The structure theorem for dual differentiability records the consequence: the infinitesimal part of a dual differentiable function is determined by the derivative of its real part, so a dual function carries its own derivative inside itself. The maximal ideal $\mathfrak{m} = (\varepsilon)$, nilpotent of index two, is the infinitesimal direction, and it is the source of that rigidity.
+The derivative is defined as in the complex case, but its behaviour differs because $\varepsilon$ is nilpotent. The structure theorem for dual differentiability records the consequence: the infinitesimal part of a dual differentiable function is determined by the derivative of its real part, so a dual function carries its own derivative inside itself. The maximal ideal $\mathrm{M} = (\varepsilon)$, nilpotent of index two, is the infinitesimal direction, and it is the source of that rigidity.
 
 The article develops what the nilpotent structure supports: contour integrals along paths, power series with their radius of convergence, and the classification of the isolated singularities as removable, a pole, or essential. The final sections record the relation of the dual calculus to ordinary differentiation and compare the subject with complex analysis, where the square of the imaginary unit vanishes rather than equalling $-1$.
 
@@ -439,7 +419,7 @@ The article develops what the nilpotent structure supports: contour integrals al
 | $B(Z_0, r)$ | Open disk of radius $r$ |
 | $f'(Z)$ | Dual derivative |
 | $\partial/\partial Z, \partial/\partial \bar{Z}$ | Dual Wirtinger derivatives |
-| $\mathfrak{m} = (\varepsilon)$ | Maximal ideal |
+| $\mathrm{M} = (\varepsilon)$ | Maximal ideal |
 | $\pi : \mathbb{D}' \to R$ | Augmentation map |
 | $\int_\gamma f(Z) \, dZ$ | Contour integral |
 

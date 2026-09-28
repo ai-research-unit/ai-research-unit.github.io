@@ -193,7 +193,7 @@ The preceding section separates the algebra's $\flat$ from the module's $\mathca
 $$
 \mathrm{Spin}^c(n) \;=\; \frac{\mathrm{Spin}(n)\times U(1)}{\{\pm 1\}},
 \qquad
-\mathfrak{spin}^c(1,3) \;=\; \mathfrak{sl}(2,\mathbb{C})_{\mathbb{R}}\oplus\mathfrak{u}(1),
+\mathrm{SPIN}^c(1,3) \;=\; \mathrm{SL}(2,\mathbb{C})_{\mathbb{R}}\oplus\mathrm{U}(1),
 $$
 
 a double cover of $SO(1,3)\times U(1)$: the spin group extended by a central circle. It is **not** the complexification of $\mathrm{Spin}(1,3)$ — that is the larger $\mathrm{Spin}(1,3)_{\mathbb{C}}$, of real dimension twelve — and the looser name is sometimes used for it; the definition above is the one used here. $W_3$ is the integral class obstructing its existence, and the group is available exactly when $w_2$ is the mod $2$ reduction of an integral class. The Clifford action of $\mathrm{Cl}_{1,3}$ on the Dirac module is projective, realising a Lorentz transformation $\Lambda$ by $\pm S(\Lambda)$; that is why the acting group is the double cover $\mathrm{Spin}(1,3)$, and $\mathrm{Spin}^c$ is the central extension that adds the circle. The extra factor is **central** in $\mathrm{Spin}^c$, and it acts on the Dirac module by the same scalar on both chiral halves.

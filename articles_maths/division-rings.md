@@ -15,15 +15,15 @@ A **division ring** is a ring with $1 \neq 0$ in which every nonzero element is 
 
 **Proposition.** A division ring is a domain, hence is prime, hence is semiprime, and it has no nonzero nilpotent element and no nonzero nilpotent ideal.
 
-**Proof.** If $ab = 0$ with $a \neq 0$ then $b = a^{-1}ab = 0$, so there are no zero divisors and the ring is a domain. The chain of implications is the one of *Non-Commutative Domains* and *Prime Rings*, above. $\square$
+**Proof.** If $ab = 0$ with $a \neq 0$ then $b = a^{-1}ab = 0$, so there are no zero divisors and the ring is a domain. The chain of implications is the one of *Non-Commutative Domains* and *Prime Rings*, above.
 
 **Corollary.** Every field is a division ring, and a division ring is a field exactly when it is commutative. The class of division rings is not closed under subrings: the field $\mathbb{Q}$ is a division ring, the ring $\mathbb{Z}$ is a subring of it and is not one.
 
-**Proof.** A field is a commutative ring with $1 \neq 0$ in which every nonzero element is invertible, which is the definition here with the word commutative added. $\square$
+**Proof.** A field is a commutative ring with $1 \neq 0$ in which every nonzero element is invertible, which is the definition here with the word commutative added.
 
 **Proposition.** A finite domain is a division ring.
 
-**Proof.** Let $A$ be a finite ring with $1 \neq 0$ and no zero divisors, and let $a \neq 0$. The map $x \mapsto ax$ from $A$ to itself is injective, since $ax = ay$ gives $a(x - y) = 0$ and hence $x = y$; an injective map of a finite set to itself is bijective, so there is $x$ with $ax = 1$. So every nonzero element has a right inverse. A right inverse in a ring with no zero divisors is two-sided: if $ax = 1$ with $x \neq 0$, then $(xa - 1)x = xax - x = x - x = 0$, and cancelling the nonzero $x$ on the right gives $xa = 1$. Hence $A$ is a division ring. $\square$
+**Proof.** Let $A$ be a finite ring with $1 \neq 0$ and no zero divisors, and let $a \neq 0$. The map $x \mapsto ax$ from $A$ to itself is injective, since $ax = ay$ gives $a(x - y) = 0$ and hence $x = y$; an injective map of a finite set to itself is bijective, so there is $x$ with $ax = 1$. So every nonzero element has a right inverse. A right inverse in a ring with no zero divisors is two-sided: if $ax = 1$ with $x \neq 0$, then $(xa - 1)x = xax - x = x - x = 0$, and cancelling the nonzero $x$ on the right gives $xa = 1$. Hence $A$ is a division ring.
 
 **Corollary.** In a finite ring, the conditions of having no left zero divisor, of having no right zero divisor, of being a domain and of being a division ring coincide, and by Wedderburn's little theorem below they also coincide with being a field.
 
@@ -39,7 +39,7 @@ $$
 z^{-1}d = z^{-1}dzz^{-1} = z^{-1}zdz^{-1} = dz^{-1} ,
 $$
 
-using $dz = zd$. Hence every nonzero element of $Z(D)$ is a unit of $Z(D)$, and $Z(D)$ is a field. $\square$
+using $dz = zd$. Hence every nonzero element of $Z(D)$ is a unit of $Z(D)$, and $Z(D)$ is a field.
 
 **Definition.** $D$ is **finite-dimensional over its centre** if there are finitely many elements $d_1, \ldots, d_n \in D$ such that every element of $D$ is a $Z(D)$-linear combination $z_1d_1 + \cdots + z_nd_n$ with $z_i \in Z(D)$; the least such $n$ is the **dimension** of $D$ over its centre. Otherwise $D$ is **infinite-dimensional over its centre**.
 
@@ -59,11 +59,11 @@ the sum being over representatives of the non-central conjugacy classes, for whi
 
 Suppose $n \geq 2$ and let $\Phi_n$ be the $n$-th cyclotomic polynomial. Since $n_x$ divides $n$ and $n_x < n$, the polynomial $\Phi_n$ divides $x^n - 1$ and also divides the quotient $(x^n - 1)/(x^{n_x} - 1)$, because $\Phi_n$ is the product of the linear factors of $x^n - 1$ belonging to the primitive $n$-th roots of unity and none of those is a root of $x^{n_x} - 1$. Hence $\Phi_n(q)$ divides $q^n - 1$ and each quotient $(q^n - 1)/(q^{n_x} - 1)$, and therefore divides $(q - 1)$, which is the difference of $q^n - 1$ and the sum of the quotients in the class equation.
 
-On the other hand $\Phi_n(q) = \prod (q - \zeta)$, the product being over the primitive $n$-th roots of unity, and for each of them $q - \zeta$ lies in the open half-plane $\operatorname{Re} z > q - 1$, so $|q - \zeta| > q - 1$. Hence $|\Phi_n(q)| > (q-1)^{\varphi(n)} \geq q - 1$ for $n \geq 2$ and $q \geq 2$, contradicting the divisibility just proved. Therefore $n = 1$ and $D = F$: the division ring is a field. $\square$
+On the other hand $\Phi_n(q) = \prod (q - \zeta)$, the product being over the primitive $n$-th roots of unity, and for each of them $q - \zeta$ lies in the open half-plane $\operatorname{Re} z > q - 1$, so $|q - \zeta| > q - 1$. Hence $|\Phi_n(q)| > (q-1)^{\varphi(n)} \geq q - 1$ for $n \geq 2$ and $q \geq 2$, contradicting the divisibility just proved. Therefore $n = 1$ and $D = F$: the division ring is a field.
 
 **Corollary.** Every finite skew field is a field, and the finite division rings are exactly the finite fields. In particular a finite division ring has $p^m$ elements for a prime $p$ and an integer $m \geq 1$.
 
-**Proof.** The theorem gives the first statement, and the finite fields are classified by their orders in *Finite Fields*, above; $\mathbb{F}_p$ for prime $p$ is the smallest example of each characteristic. $\square$
+**Proof.** The theorem gives the first statement, and the finite fields are classified by their orders in *Finite Fields*, above; $\mathbb{F}_p$ for prime $p$ is the smallest example of each characteristic.
 
 **Example (a finite division ring that is not a field does not exist).** The matrix-style candidates fail: $\mathbb{Z}/4\mathbb{Z}$ is finite, commutative and not a field, and the smallest finite division rings are the fields $\mathbb{F}_p$. The theorem is the reason no finite non-commutative division ring appears anywhere in this corpus.
 
@@ -75,7 +75,7 @@ On the other hand $\Phi_n(q) = \prod (q - \zeta)$, the product being over the pr
 
 **Theorem.** The quaternions $\mathbb{H}$ form a division ring that is not a field, and $\mathbb{H}$ is four-dimensional over its centre $\mathbb{R}$.
 
-**Proof.** By *Non-Commutative Domains*, above, where $\mathbb{H}$ is defined as the real algebra with basis $1, i, j, k$ and $i^2 = j^2 = k^2 = ijk = -1$, every nonzero element is a unit, so $\mathbb{H}$ is a division ring; and $ij = k \neq -k = ji$, so $\mathbb{H}$ is not commutative. The centre contains $\mathbb{R} = \mathbb{R} \cdot 1$; conversely, if $q = a + bi + cj + dk$ is central, then $qi = iq$ gives, comparing coefficients, $b = c = d = 0$, so $q \in \mathbb{R}$. Hence $Z(\mathbb{H}) = \mathbb{R}$ and the basis $1, i, j, k$, four elements, generates $\mathbb{H}$ over $\mathbb{R}$, so the dimension over the centre is four. $\square$
+**Proof.** By *Non-Commutative Domains*, above, where $\mathbb{H}$ is defined as the real algebra with basis $1, i, j, k$ and $i^2 = j^2 = k^2 = ijk = -1$, every nonzero element is a unit, so $\mathbb{H}$ is a division ring; and $ij = k \neq -k = ji$, so $\mathbb{H}$ is not commutative. The centre contains $\mathbb{R} = \mathbb{R} \cdot 1$; conversely, if $q = a + bi + cj + dk$ is central, then $qi = iq$ gives, comparing coefficients, $b = c = d = 0$, so $q \in \mathbb{R}$. Hence $Z(\mathbb{H}) = \mathbb{R}$ and the basis $1, i, j, k$, four elements, generates $\mathbb{H}$ over $\mathbb{R}$, so the dimension over the centre is four.
 
 **Remark.** The computation of the centre is the standard one: a central element must commute with each of $i, j, k$, and each of those conditions kills two of the three imaginary coefficients. The quaternion ring is the standard example of a division ring finite-dimensional over its centre, and its centre is the field $\mathbb{R}$.
 
@@ -92,7 +92,7 @@ The basis elements multiply as follows, the table being read with the row elemen
 
 **Theorem.** The multiplication table of $\mathbb{H}$ is as displayed, the conjugate of $q = a + bi + cj + dk$ is $\bar q = a - bi - cj - dk$, and $q\bar q = \bar q q = a^2 + b^2 + c^2 + d^2$ is a positive real number for $q \neq 0$.
 
-**Proof.** The diagonal entries are the defining relations $i^2 = j^2 = k^2 = -1$. Multiplying $ijk = -1$ on the right by $k$ gives $-ij = -k$, so $ij = k$; multiplying it on the left by $i$ gives $-jk = -i$, so $jk = i$. From $jk = i$, multiplication on the left by $j$ gives $ji = j^2k = -k$, and multiplication on the right by $k$ gives $ik = jk^2 = -j$. Next, $(ik)(ki) = ik^2i = -i^2 = 1$, so that $ki$ is the inverse of $ik$: thus $ki = (-j)^{-1} = -j^{-1} = j$, using $j^{-1} = -j$. Finally, multiplying $ik = -j$ on the left by $k$ gives $kik = -kj$, while $kik = (ki)k = jk = i$, so $kj = -i$. Hence the table is as displayed. The conjugate is the linear map sending $1, i, j, k$ to $1, -i, -j, -k$, and multiplying $q$ by $\bar q$ with the table gives $a^2 + b^2 + c^2 + d^2$ in the centre. $\square$
+**Proof.** The diagonal entries are the defining relations $i^2 = j^2 = k^2 = -1$. Multiplying $ijk = -1$ on the right by $k$ gives $-ij = -k$, so $ij = k$; multiplying it on the left by $i$ gives $-jk = -i$, so $jk = i$. From $jk = i$, multiplication on the left by $j$ gives $ji = j^2k = -k$, and multiplication on the right by $k$ gives $ik = jk^2 = -j$. Next, $(ik)(ki) = ik^2i = -i^2 = 1$, so that $ki$ is the inverse of $ik$: thus $ki = (-j)^{-1} = -j^{-1} = j$, using $j^{-1} = -j$. Finally, multiplying $ik = -j$ on the left by $k$ gives $kik = -kj$, while $kik = (ki)k = jk = i$, so $kj = -i$. Hence the table is as displayed. The conjugate is the linear map sending $1, i, j, k$ to $1, -i, -j, -k$, and multiplying $q$ by $\bar q$ with the table gives $a^2 + b^2 + c^2 + d^2$ in the centre.
 
 **Example (subfields of $\mathbb{H}$).** The real span of $1$ and $i$ is a subfield of $\mathbb{H}$ isomorphic to $\mathbb{C}$, and it is a maximal commutative subring; the real span of $1$ is a subfield isomorphic to $\mathbb{R}$, the centre. Every nonzero imaginary unit $u$ with $u^2 = -1$ spans a copy of $\mathbb{C}$ with $1$, so $\mathbb{H}$ contains infinitely many subfields isomorphic to $\mathbb{C}$, and none of them is the centre. In particular the centre of a subring of a division ring need not lie in the centre of the division ring: $\mathbb{C} \subseteq \mathbb{H}$ has centre $\mathbb{C}$, while $Z(\mathbb{H}) = \mathbb{R}$.
 
@@ -102,11 +102,11 @@ The basis elements multiply as follows, the table being read with the row elemen
 
 **Theorem.** The first Weyl field $D_1(k) = \operatorname{Frac}(A_1(k))$ is a division ring that is not a field and is infinite-dimensional over its centre $k$.
 
-**Proof.** It is a division ring by Ore's theorem, it is not commutative because $A_1(k)$ is not, and its centre is $k$ by the computation in *Ore Domains and Division Rings of Fractions*, above (the article shows $Z(A_1(k)) = k$ and that the powers of $y$ are linearly independent over $k$). No finite list of elements can generate $D_1(k)$ over $k$: if $d_1, \ldots, d_n$ generated it, then $A_1(k)$, being a subring, would be contained in the $k$-span of the finitely many products of the $d_i$, and that span is finite-dimensional whereas $A_1(k)$ contains the powers of $y$, which are linearly independent over $k$ and infinitely many. $\square$
+**Proof.** It is a division ring by Ore's theorem, it is not commutative because $A_1(k)$ is not, and its centre is $k$ by the computation in *Ore Domains and Division Rings of Fractions*, above (the article shows $Z(A_1(k)) = k$ and that the powers of $y$ are linearly independent over $k$). No finite list of elements can generate $D_1(k)$ over $k$: if $d_1, \ldots, d_n$ generated it, then $A_1(k)$, being a subring, would be contained in the $k$-span of the finitely many products of the $d_i$, and that span is finite-dimensional whereas $A_1(k)$ contains the powers of $y$, which are linearly independent over $k$ and infinitely many.
 
 **Corollary.** The two division rings of this section are not isomorphic over their centres: the first is finite-dimensional over its centre and the second is not, and the dimension over the centre is an invariant of a division ring together with its centre.
 
-**Proof.** An isomorphism of division rings carries the centre to the centre, and it carries a finite generating list over the centre to a finite generating list, so the property of being finite-dimensional over the centre is preserved. $\square$
+**Proof.** An isomorphism of division rings carries the centre to the centre, and it carries a finite generating list over the centre to a finite generating list, so the property of being finite-dimensional over the centre is preserved.
 
 **Example.** The quaternion division ring and the first Weyl field are the two kinds of example that the corpus uses, and they stand at the two ends of the range of possibilities: a division ring can be finite-dimensional over its centre, like $\mathbb{H}$, or infinite-dimensional over its centre, like $D_1(k)$. The finite-dimensional ones are the division algebras of $k$-theory, treated in *Division Algebras*, in *Linear Algebras*, a later category of this Part, and the theory of both kinds together is the structure theory of simple rings of *Simple and Semisimple Modules*, also later.
 
@@ -132,7 +132,7 @@ characteristic zero.
 
 **Theorem.** Let $D$ be a division ring and let $n \geq 2$. Then the matrix ring $M_n(D)$ is prime and semiprime, is not a domain for $n \geq 2$, and is not a division ring; the matrix ring $M_n(D)$ is a division ring only for $n = 1$.
 
-**Proof.** The matrix ring is prime if and only if $D$ is prime, by the theorem on matrix rings in *Prime Rings*, above, and $D$ is prime; the same theorem gives semiprimeness. The computation $E_{12}E_{12} = 0$ with $E_{12} \neq 0$ shows that there are zero divisors for $n \geq 2$, and a ring with zero divisors is not a division ring. $\square$
+**Proof.** The matrix ring is prime if and only if $D$ is prime, by the theorem on matrix rings in *Prime Rings*, above, and $D$ is prime; the same theorem gives semiprimeness. The computation $E_{12}E_{12} = 0$ with $E_{12} \neq 0$ shows that there are zero divisors for $n \geq 2$, and a ring with zero divisors is not a division ring.
 
 **Remark.** The matrix rings over division rings are the standard examples of simple rings, and the theorem that they exhaust the simple Artinian rings together with the Wedderburn–Artin structure theorem belongs to *Simple and Semisimple Modules*, in a later category of this Part; the chain of this article stops before them, and only the primeness and the absence of the domain property are recorded here.
 
@@ -151,11 +151,11 @@ and each implication is strict.
 
 **Proof.** A division ring is a domain by the proposition above, and it is an Ore domain: for nonzero $a, b$ the choice $x = a^{-1}$, $y = b^{-1}$ gives nonzero $x, y$ with $xa = 1 = yb$, which is the oriented form of the left Ore condition. Every Ore domain is a domain by definition, and the implications from domain onward are *Non-Commutative Domains* and *Prime Rings*, above.
 
-The implications are strict: $\mathbb{Z}$ is an Ore domain and not a division ring; the free algebra $k\langle x_1, x_2\rangle$ is a domain and not an Ore domain; $M_2(F)$ is prime and not a domain; and $k \times k$ is semiprime and not prime. $\square$
+The implications are strict: $\mathbb{Z}$ is an Ore domain and not a division ring; the free algebra $k\langle x_1, x_2\rangle$ is a domain and not an Ore domain; $M_2(F)$ is prime and not a domain; and $k \times k$ is semiprime and not prime.
 
 **Corollary.** The commutative chain and the non-commutative chain meet exactly at the fields and the integral domains: a commutative division ring is a field, a commutative Ore domain is an integral domain, and the intersection of the two chains is the commutative half of each.
 
-**Proof.** A commutative domain is an integral domain by *Non-Commutative Domains*, above, and a commutative division ring is a field by definition; the chains themselves are the two halves of the category. $\square$
+**Proof.** A commutative domain is an integral domain by *Non-Commutative Domains*, above, and a commutative division ring is a field by definition; the chains themselves are the two halves of the category.
 
 ---
 

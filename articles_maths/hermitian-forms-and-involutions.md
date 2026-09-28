@@ -27,7 +27,7 @@ It is a subring containing $1$, and it is the natural ring of scalars for the di
 
 **Proposition.** If $A$ is commutative and $2$ is invertible in $A$, then $\sigma$ is a ring automorphism of order two, and if $\sigma \neq \mathrm{id}$ the fixed ring $A^\sigma$ is a subring with the property that every $a \in A$ satisfies a monic quadratic equation over $A^\sigma$.
 
-**Proof.** Commutativity makes anti-automorphisms into automorphisms. For $a \in A$ write $a = a_+ + a_-$ with $a_+ = (a + \sigma(a))/2$ and $a_- = (a - \sigma(a))/2$, using the invertibility of $2$. Then $a_+ \in A^\sigma$, $a_-$ is anti-fixed, and $a_-^2 \in A^\sigma$ because $\sigma(a_-^2) = \sigma(a_-)^2 = (-a_-)^2 = a_-^2$. Hence $a$ satisfies $x^2 - 2a_+ x + (a_+^2 - a_-^2) = 0$ with coefficients in $A^\sigma$. $\square$
+**Proof.** Commutativity makes anti-automorphisms into automorphisms. For $a \in A$ write $a = a_+ + a_-$ with $a_+ = (a + \sigma(a))/2$ and $a_- = (a - \sigma(a))/2$, using the invertibility of $2$. Then $a_+ \in A^\sigma$, $a_-$ is anti-fixed, and $a_-^2 \in A^\sigma$ because $\sigma(a_-^2) = \sigma(a_-)^2 = (-a_-)^2 = a_-^2$. Hence $a$ satisfies $x^2 - 2a_+ x + (a_+^2 - a_-^2) = 0$ with coefficients in $A^\sigma$.
 
 ### First and Second Kind
 
@@ -41,7 +41,7 @@ It is a subring containing $1$, and it is the natural ring of scalars for the di
 
 **Example (matrix transpose).** On $M_n(R)$ over a commutative ring the transpose $M \mapsto M^T$ is an involution of the first kind. On a matrix algebra with a symmetric or alternating form there are further involutions $M \mapsto G^{-1}M^T G$; the transpose corresponds to a symmetric form and the **symplectic involution** $M \mapsto \Omega^{-1}M^T\Omega$ to an alternating one.
 
-**Example (dual and split complex numbers).** On the split complex numbers $\mathbb{D} = \mathbb{R}[j]/(j^2 - 1)$ the map $a + bj \mapsto a - bj$ is an involution with fixed ring $\mathbb{R}$. On the dual numbers $\mathbb{D}' = \mathbb{R}[\varepsilon]/(\varepsilon^2)$ the analogous map is an involution, but the norm form it produces is degenerate. The notation $\mathbb{D}$ for the split complex numbers and $\mathbb{D}'$ for the dual numbers is fixed in *Dual Numbers Algebra*.
+**Example (dual and split complex numbers).** On the split complex numbers $\mathbb{D} = \mathbb{R}[j]/(j^2 - 1)$ the map $a + bj \mapsto a - bj$ is an involution with fixed ring $\mathbb{R}$. On the dual numbers $\mathbb{D}' = \mathbb{R}[\varepsilon]/(\varepsilon^2)$ the analogous map is an involution, but the norm it produces is degenerate. The notation $\mathbb{D}$ for the split complex numbers and $\mathbb{D}'$ for the dual numbers is fixed in *Dual Numbers Algebra*.
 
 ## The Two Types of Involutions of the First Kind
 
@@ -55,7 +55,7 @@ $$
 
 **Proposition.** $A = \mathrm{Sym}(A, \sigma) \oplus \mathrm{Skew}(A, \sigma)$ as abelian groups, and $\mathrm{Sym}(A,\sigma) = A^\sigma$ is the fixed ring.
 
-**Proof.** For $a \in A$ the elements $a_+ = \tfrac{1}{2}(a + \sigma(a))$ and $a_- = \tfrac{1}{2}(a - \sigma(a))$ are symmetric and skew, and $a = a_+ + a_-$; conversely an element that is both symmetric and skew satisfies $a = -a$, hence $a = 0$ because $2a = 0$ with $2$ invertible. $\square$
+**Proof.** For $a \in A$ the elements $a_+ = \tfrac{1}{2}(a + \sigma(a))$ and $a_- = \tfrac{1}{2}(a - \sigma(a))$ are symmetric and skew, and $a = a_+ + a_-$; conversely an element that is both symmetric and skew satisfies $a = -a$, hence $a = 0$ because $2a = 0$ with $2$ invertible.
 
 So over a field $F$ of characteristic not $2$ one has $\dim_F\mathrm{Sym}(A,\sigma) + \dim_F\mathrm{Skew}(A,\sigma) = \dim_F A$, and the dimension of either part is an invariant of the involution.
 
@@ -82,7 +82,7 @@ $$
 m^2 + 2\cdot\frac{m(m-1)}{2} = m(2m-1) = \frac{n(n-1)}{2}.
 $$
 
-The skew elements satisfy $X = -JX^{T}J^{-1}$, that is $XJ = -JX^{T}$, which replaces the conditions on $B$ and $C$ by symmetry and leaves $A$ free; the count becomes $m^2 + 2\cdot\frac{m(m+1)}{2} = m(2m+1)$. $\square$
+The skew elements satisfy $X = -JX^{T}J^{-1}$, that is $XJ = -JX^{T}$, which replaces the conditions on $B$ and $C$ by symmetry and leaves $A$ free; the count becomes $m^2 + 2\cdot\frac{m(m+1)}{2} = m(2m+1)$.
 
 ### Adjoint Involutions
 
@@ -96,7 +96,7 @@ $$
 
 Then $\sigma_b$ is of orthogonal type when $b$ is symmetric, and of symplectic type when $b$ is alternating.
 
-**Proof.** In a basis with Gram matrix $G$, the defining relation reads $f^{T}G = G\sigma_b(f)$, so $\sigma_b(f) = G^{-1}f^{T}G$ and $f$ is self-adjoint exactly when $Gf = f^{T}G$. If $G^{T} = G$ then $(Gf)^{T} = f^{T}G^{T} = f^{T}G = Gf$, so $Gf$ is symmetric, and conversely a symmetric $Gf$ satisfies $Gf = (Gf)^{T} = f^{T}G$. The assignment $f \mapsto Gf$ is a bijection, so the self-adjoint elements correspond to the symmetric matrices, of dimension $n(n+1)/2$. If $G^{T} = -G$, then $(Gf)^{T} = f^{T}G^{T} = -f^{T}G$, so the condition $Gf = f^{T}G$ becomes $Gf = -(Gf)^{T}$, that is $Gf$ alternating, and the self-adjoint elements correspond to the alternating matrices, of dimension $n(n-1)/2$; such a $G$ is invertible only for even $n$, which is exactly the condition for an alternating form to be non-degenerate. $\square$
+**Proof.** In a basis with Gram matrix $G$, the defining relation reads $f^{T}G = G\sigma_b(f)$, so $\sigma_b(f) = G^{-1}f^{T}G$ and $f$ is self-adjoint exactly when $Gf = f^{T}G$. If $G^{T} = G$ then $(Gf)^{T} = f^{T}G^{T} = f^{T}G = Gf$, so $Gf$ is symmetric, and conversely a symmetric $Gf$ satisfies $Gf = (Gf)^{T} = f^{T}G$. The assignment $f \mapsto Gf$ is a bijection, so the self-adjoint elements correspond to the symmetric matrices, of dimension $n(n+1)/2$. If $G^{T} = -G$, then $(Gf)^{T} = f^{T}G^{T} = -f^{T}G$, so the condition $Gf = f^{T}G$ becomes $Gf = -(Gf)^{T}$, that is $Gf$ alternating, and the self-adjoint elements correspond to the alternating matrices, of dimension $n(n-1)/2$; such a $G$ is invertible only for even $n$, which is exactly the condition for an alternating form to be non-degenerate.
 
 **Remark.** The theorem explains the terminology: the transpose on $M_n(R)$ is the adjoint involution of the standard symmetric form, and the map $X \mapsto \Omega^{-1}X^{T}\Omega$ is the adjoint involution of the standard alternating form; both are the involutions of the matrix transpose example above. The involution determined by a form and the type of that involution are therefore the same datum, and the dimension of the symmetric part is the invariant that separates the two cases.
 
@@ -120,7 +120,7 @@ $$
 s'(xa, yb) = \sigma\bigl(s(yb, xa)\bigr) = \sigma\bigl(\sigma(b)s(y,x)a\bigr) = \sigma(a)\sigma(s(y,x))\sigma(\sigma(b)) = \sigma(a)\,s'(x,y)\,b,
 $$
 
-using $\sigma^2 = \mathrm{id}$. $\square$
+using $\sigma^2 = \mathrm{id}$.
 
 ### Hermitian and Skew-Hermitian Forms
 
@@ -134,7 +134,7 @@ $$
 
 In particular, for a central element $a \in A^\sigma$ the diagonal is homogeneous of degree two, $q(xa) = a^2 q(x)$.
 
-**Proof.** For the fixed-ring property, $\sigma(q(x)) = \sigma(s(x,x)) = s(x,x) = q(x)$ by Hermitian symmetry. The scaling is $q(xa) = s(xa, xa) = \sigma(a)s(x,x)a = \sigma(a)q(x)a$. The polar identity is the expansion of $s(x + y, x + y)$ using additivity and the Hermitian symmetry. $\square$
+**Proof.** For the fixed-ring property, $\sigma(q(x)) = \sigma(s(x,x)) = s(x,x) = q(x)$ by Hermitian symmetry. The scaling is $q(xa) = s(xa, xa) = \sigma(a)s(x,x)a = \sigma(a)q(x)a$. The polar identity is the expansion of $s(x + y, x + y)$ using additivity and the Hermitian symmetry.
 
 **Definition.** The **diagonal form** of a $\sigma$-Hermitian form is the function $x \mapsto s(x, x)$ on $M$, with polar expression $s(x, y) + \sigma(s(x, y))$; over a field with $\sigma = \mathrm{id}$ the polar expression is $2B$, the associated bilinear form of *Quadratic Forms and Polarisation*. The diagonal form is a quadratic form on the fixed ring in the sense, and the name distinguishes it from the trace form of an algebra, defined below. When $A$ is a division ring with involution and $s$ is non-degenerate, the isometry group of $s$ is the **unitary group** of the form, and it is related to the classical groups of *The Unitary and Symplectic Groups*.
 
@@ -160,13 +160,13 @@ and $s$ is **non-degenerate** when the radical is zero.
 
 **Proposition.** Let $M$ be free of finite rank with Gram matrix $H$. Then $x \in \operatorname{rad}(s)$ if and only if $Hx = 0$, and $s$ is non-degenerate exactly when $H$ is invertible.
 
-**Proof.** With $x = \sum_i e_ix_i$ the condition $s(x, y) = 0$ for all $y$ reads $x^{\dagger}Hy' = 0$ for every column $y'$, that is $x^{\dagger}H = 0$. Transposing and conjugating gives $(x^{\dagger}H)^{\dagger} = H^{\dagger}x = Hx$, using $H^{\dagger} = H$; so the radical is the kernel of $H$, and it vanishes exactly when $H$ is invertible. $\square$
+**Proof.** With $x = \sum_i e_ix_i$ the condition $s(x, y) = 0$ for all $y$ reads $x^{\dagger}Hy' = 0$ for every column $y'$, that is $x^{\dagger}H = 0$. Transposing and conjugating gives $(x^{\dagger}H)^{\dagger} = H^{\dagger}x = Hx$, using $H^{\dagger} = H$; so the radical is the kernel of $H$, and it vanishes exactly when $H$ is invertible.
 
 ### Isometries and the Extension Theorem
 
 **Remark (reflections and extension).** When $A$ is commutative and $\sigma = \mathrm{id}$, so that $s$ is a symmetric bilinear form, the reflections of *Isometries and Orthogonal Transformations* apply verbatim and the extension and cancellation theorems are standard. For a general division ring with involution the same two theorems hold in the Hermitian case by Dieudonné's theorem for Hermitian forms, with the exception of a field of characteristic two, where the phenomena described reappear. These results are cited here as standard; their proofs belong to the theory of forms over division rings.
 
-The Hermitian case is genuinely richer than the symmetric one over a field. When $\sigma \neq \mathrm{id}$ the diagonal values $s(x,x)$ lie in the fixed field $A^\sigma$, which is properly smaller than the ring of scalars, so a Hermitian form carries a quadratic form over the fixed field rather than a bilinear form over the whole ring; this is the mechanism by which the norm forms of the complex and quaternion algebras become quadratic forms over $\mathbb{R}$, as developed.
+The Hermitian case is genuinely richer than the symmetric one over a field. When $\sigma \neq \mathrm{id}$ the diagonal values $s(x,x)$ lie in the fixed field $A^\sigma$, which is properly smaller than the ring of scalars, so a Hermitian form carries a quadratic form over the fixed field rather than a bilinear form over the whole ring; this is the mechanism by which the norms of the complex and quaternion algebras become quadratic forms over $\mathbb{R}$, as developed.
 
 ## Norms and Traces of an Algebra
 
@@ -190,11 +190,11 @@ with associated quadratic form $q_T(x) = T(x, x) = \operatorname{Tr}(m_{x^2})$ w
 
 **Proposition.** The regular norm is multiplicative, $N(xy) = N(x)N(y)$, and homogeneous of degree $n = \dim_F A$; the trace form is symmetric bilinear and satisfies $T(x, y) = T(y, x)$.
 
-**Proof.** $m_{xy} = m_x \circ m_y$, so $\det(m_{xy}) = \det(m_x)\det(m_y)$; homogeneity of degree $n$ follows from $\det(\lambda I) = \lambda^n$ applied to $m_{\lambda x} = \lambda m_x$. The trace form is symmetric because $\operatorname{Tr}(m_{xy}) = \operatorname{Tr}(m_x m_y) = \operatorname{Tr}(m_y m_x) = \operatorname{Tr}(m_{yx})$. $\square$
+**Proof.** $m_{xy} = m_x \circ m_y$, so $\det(m_{xy}) = \det(m_x)\det(m_y)$; homogeneity of degree $n$ follows from $\det(\lambda I) = \lambda^n$ applied to $m_{\lambda x} = \lambda m_x$. The trace form is symmetric because $\operatorname{Tr}(m_{xy}) = \operatorname{Tr}(m_x m_y) = \operatorname{Tr}(m_y m_x) = \operatorname{Tr}(m_{yx})$.
 
 **Proposition.** The regular norm $N$ is a quadratic form precisely when $\dim_F A = 2$.
 
-**Proof.** A homogeneous polynomial of degree $n$ is a quadratic form only for $n = 2$. $\square$
+**Proof.** A homogeneous polynomial of degree $n$ is a quadratic form only for $n = 2$.
 
 **Example (a field extension).** For a separable field extension $K/F$ of degree $n$, the left multiplication $m_x$ is the $F$-linear map "multiply by $x$", and the trace form is
 
@@ -224,7 +224,7 @@ The two descriptions agree because $m_x$ becomes left multiplication by a $d \ti
 
 **Proposition.** The reduced trace is an $F$-linear functional with $\operatorname{Trd}(1) = d$, and the reduced norm is multiplicative, $\operatorname{Nrd}(xy) = \operatorname{Nrd}(x)\operatorname{Nrd}(y)$, with $\operatorname{Nrd}(1) = 1$ and $\operatorname{Nrd}(x) = 0$ exactly when $x$ is not invertible. The $d$-th power of the reduced norm is the regular norm.
 
-**Proof.** These are standard properties of the reduced trace and norm of a central simple algebra; they follow by extension of scalars to $\bar F$, where $A$ becomes $M_d(\bar F)$ and $\operatorname{Trd}$, $\operatorname{Nrd}$ become the ordinary trace and determinant. $\square$
+**Proof.** These are standard properties of the reduced trace and norm of a central simple algebra; they follow by extension of scalars to $\bar F$, where $A$ becomes $M_d(\bar F)$ and $\operatorname{Trd}$, $\operatorname{Nrd}$ become the ordinary trace and determinant.
 
 **Definition.** The **reduced trace form** is the symmetric bilinear form
 
@@ -232,11 +232,11 @@ $$
 T_{\operatorname{red}}(x, y) = \operatorname{Trd}(xy),
 $$
 
-and the **reduced norm form** is the multiplicative form $x \mapsto \operatorname{Nrd}(x)$.
+and the **reduced norm** is the multiplicative form $x \mapsto \operatorname{Nrd}(x)$.
 
 **Proposition.** For a central simple algebra of degree $d$, the reduced norm is a form of degree $d$, hence a quadratic form precisely when $d = 2$, that is, for a quaternion algebra.
 
-**Proof.** Immediate from the definition: $\operatorname{Nrd}(\lambda x) = \lambda^d \operatorname{Nrd}(x)$. $\square$
+**Proof.** Immediate from the definition: $\operatorname{Nrd}(\lambda x) = \lambda^d \operatorname{Nrd}(x)$.
 
 ### The Polar Form of the Reduced Norm
 
@@ -248,9 +248,9 @@ $$
 
 **Proposition.** The polar form $B_N$ of the reduced norm is not a scalar multiple of the reduced trace form $T_{\operatorname{red}}(x, y) = \operatorname{Trd}(xy)$.
 
-**Proof.** For $y = 1$ the two forms give $B_N(x, 1) = \tfrac{1}{2}(x + \bar x) = \tfrac{1}{2}\operatorname{Trd}(x)$ and $T_{\operatorname{red}}(x, 1) = \operatorname{Trd}(x)$, so any constant of proportionality would have to be $\tfrac{1}{2}$. Equality would then require $\operatorname{Trd}(x\bar y) = \operatorname{Trd}(xy)$ for all $x, y$, that is $\operatorname{Trd}\bigl(x(\bar y - y)\bigr) = 0$. With $x = y = e_1$ this reads $\operatorname{Trd}\bigl(-2e_1^2\bigr) = \operatorname{Trd}(2) = 4 \neq 0$, a contradiction. $\square$
+**Proof.** For $y = 1$ the two forms give $B_N(x, 1) = \tfrac{1}{2}(x + \bar x) = \tfrac{1}{2}\operatorname{Trd}(x)$ and $T_{\operatorname{red}}(x, 1) = \operatorname{Trd}(x)$, so any constant of proportionality would have to be $\tfrac{1}{2}$. Equality would then require $\operatorname{Trd}(x\bar y) = \operatorname{Trd}(xy)$ for all $x, y$, that is $\operatorname{Trd}\bigl(x(\bar y - y)\bigr) = 0$. With $x = y = e_1$ this reads $\operatorname{Trd}\bigl(-2e_1^2\bigr) = \operatorname{Trd}(2) = 4 \neq 0$, a contradiction.
 
-**Example (the biquaternions).** For $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H} \cong M_2(\mathbb{C})$ the reduced norm is the determinant and the regular norm is its square; the norm form $N(\tilde Q) = \tilde Q\bar{\tilde Q} = \sum_\mu Q_\mu^2$ is exactly the reduced norm. It is $\mathbb{C}$-valued, isotropic, and vanishes on the zero divisors, and its nonzero zeros are precisely the matrices of rank one. The Hermitian conjugation ${}^{\dagger}$ of that algebra makes $T_{\operatorname{red}}(\tilde P, \tilde Q) = \operatorname{Trd}(\tilde P \tilde Q)$ a symmetric $\mathbb{C}$-bilinear form, while the form $\operatorname{Trd}(\tilde P \tilde Q^{\dagger})$ is complex-Hermitian and positive definite on the underlying real space; the two are related by the conjugation ${}^{\dagger}$.
+**Example (the biquaternions).** For $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H} \cong M_2(\mathbb{C})$ the reduced norm is the determinant and the regular norm is its square; the norm $N(\tilde Q) = \tilde Q\bar{\tilde Q} = \sum_\mu Q_\mu^2$ is exactly the reduced norm. It is $\mathbb{C}$-valued, isotropic, and vanishes on the zero divisors, and its nonzero zeros are precisely the matrices of rank one. The Hermitian conjugation ${}^{\dagger}$ of that algebra makes $T_{\operatorname{red}}(\tilde P, \tilde Q) = \operatorname{Trd}(\tilde P \tilde Q)$ a symmetric $\mathbb{C}$-bilinear form, while the form $\operatorname{Trd}(\tilde P \tilde Q^{\dagger})$ is complex-Hermitian and positive definite on the underlying real space; the two are related by the conjugation ${}^{\dagger}$.
 
 ## Summary
 

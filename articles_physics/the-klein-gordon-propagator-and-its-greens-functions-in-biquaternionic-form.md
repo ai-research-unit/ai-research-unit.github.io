@@ -10,7 +10,7 @@ $$
 \Box-\frac{m^2c^2}{\hbar^2}
 $$
 
-is a **central scalar** element of the algebra: the d'Alembertian $\Box=\tilde{\nabla}\bar{\tilde{\nabla}}$ is central because it is built from the gradient in a symmetric way, and the mass term is a multiple of $e_0$. Consequently every Green's function of the Klein–Gordon operator is a complex scalar times $e_0$, every propagator commutes with every element of $\mathbb{B}$, and the state module — the two-dimensional complex left ideal, of four real dimensions, on which the spinor fields live — is a spectator. The whole Green's-function structure of a spin-$0$ field is the scalar structure tensored with the identity on the module. What the algebra adds is the identification of the places where the kernel is singular: the **light cone** on which the massless kernel is supported is the zero-divisor cone of the material sector $\mathbb{M}_-$, the set of four-vectors of vanishing norm form, and the **mass shell** is the locus of constant norm form $N(\tilde{K})=-\mu^2$, a hyperboloid in $\mathbb{M}_-$. The analytic structure of the propagator is the geometry of the norm form, and that is the framework's own contribution rather than a transcription of standard results.
+is a **central scalar** element of the algebra: the d'Alembertian $\Box=\tilde{\nabla}\bar{\tilde{\nabla}}$ is central because it is built from the gradient in a symmetric way, and the mass term is a multiple of $e_0$. Consequently every Green's function of the Klein–Gordon operator is a complex scalar times $e_0$, every propagator commutes with every element of $\mathbb{B}$, and the state module — the two-dimensional complex left ideal, of four real dimensions, on which the spinor fields live — is a spectator. The whole Green's-function structure of a spin-$0$ field is the scalar structure tensored with the identity on the module. What the algebra adds is the identification of the places where the kernel is singular: the **light cone** on which the massless kernel is supported is the zero-divisor cone of the material sector $\mathbb{M}_-$, the set of four-vectors of vanishing biquaternion norm, and the **mass shell** is the locus of constant biquaternion norm $N(\tilde{K})=-\mu^2$, a hyperboloid in $\mathbb{M}_-$. The analytic structure of the propagator is the geometry of the biquaternion norm, and that is the framework's own contribution rather than a transcription of standard results.
 
 The article is organized as follows. The operator, its convention and its defining equation are stated first, together with the momentum-space amplitude and the sign conventions. The poles and the four standard prescriptions are then identified. The retarded Green's function is derived in position space from its Fourier representation: the frequency contour is done exactly, the angular integral is reduced by a hyperbolic rotation to a Bessel function, and the closed form is exhibited and checked against the homogeneous equation. The light-cone Jacobian that converts the invariant kernel into the retarded-time kernel is exhibited, and the massless limit is compared with the retarded kernel of the electromagnetism exercise. The advanced kernel, the boundary condition that selects the retarded one, and the Pauli–Jordan function are then treated, with microcausality verified. The Feynman propagator, its contour, its time-ordered interpretation and its Euclidean form are given. A closing section states the biquaternion reading of the whole construction, and open questions are recorded.
 
@@ -20,7 +20,7 @@ $$
 \Box=\tilde{\nabla}\bar{\tilde{\nabla}}=\bar{\tilde{\nabla}}\tilde{\nabla}=\partial_{ict}^2+\Delta=\Delta-\frac{1}{c^2}\partial_t^2 .
 $$
 
-The mass parameter is $\mu=mc/\hbar$, so that $\mu^2=m^2c^2/\hbar^2$ is the quantity that multiplies the field in the c-explicit equation; for the analytic parts the article uses natural units $\hbar=c=1$, as the companion article *The Feynman Propagator in Biquaternionic Form* does, and states the restoration of $c$ where a kernel is quoted. The signature conventions are level 1 and level 2 only: the norm form on $\mathbb{C}$ and the $ict$ metric $\eta=\mathrm{diag}(-1,+1,+1,+1)$. No Clifford metric is used anywhere in this article, and no gamma matrix appears.
+The mass parameter is $\mu=mc/\hbar$, so that $\mu^2=m^2c^2/\hbar^2$ is the quantity that multiplies the field in the c-explicit equation; for the analytic parts the article uses natural units $\hbar=c=1$, as the companion article *The Feynman Propagator in Biquaternionic Form* does, and states the restoration of $c$ where a kernel is quoted. The signature conventions are level 1 and level 2 only: the biquaternion norm on $\mathbb{C}$ and the $ict$ metric $\eta=\mathrm{diag}(-1,+1,+1,+1)$. No Clifford metric is used anywhere in this article, and no gamma matrix appears.
 
 - Companion article *The Klein–Gordon Equation in Biquaternionic Form*, for the equation, its mass term, and the central scalar d'Alembertian.
 - Companion article *The Scalar Field in the Center: Why Spin 0 Escapes the Biquaternion State Module*, for the field's central value space and the exclusion of the state module.
@@ -65,7 +65,7 @@ $$
 \omega^2=c^2\mathbf{k}^2+\frac{m^2c^4}{\hbar^2},
 $$
 
-which is the norm-form statement of the relativistic dispersion relation: the mass shell is the level set of the norm form at the fixed negative value $-\mu^2$, a two-sheeted hyperboloid in the material sector. In natural units it reads $\omega^2=\mathbf{k}^2+\mu^2$. The zero level set $N(\tilde{K})=0$ is the **zero-divisor cone**, the light cone; it is the set of four-wavevectors that are nilpotent in the algebra, and the massless kernel will be supported on its position-space image.
+which is the biquaternion-norm statement of the relativistic dispersion relation: the mass shell is the level set of the biquaternion norm at the fixed negative value $-\mu^2$, a two-sheeted hyperboloid in the material sector. In natural units it reads $\omega^2=\mathbf{k}^2+\mu^2$. The zero level set $N(\tilde{K})=0$ is the **zero-divisor cone**, the light cone; it is the set of four-wavevectors that are nilpotent in the algebra, and the massless kernel will be supported on its position-space image.
 
 ### Green's functions and the sign convention
 
@@ -281,7 +281,7 @@ $$
 
 which is supported on the closed cone and is not zero. The defining equation alone therefore does **not** select a kernel, and the selection is a boundary condition: the retarded kernel is chosen by the requirement of no incoming radiation from the past. This is the same statement the massless exercise makes for the wave operator, and it is a physical input rather than an algebraic consequence.
 
-It is worth stating the two kernels' structure in the algebra. Both are complex scalars times $e_0$, and their difference is too; the boundary condition selects between them by a $t$-dependent step, which is a central scalar function. Nothing in the selection involves the module, and nothing in it involves the vector part of the algebra: the causal structure of the spin-$0$ theory is a statement about the scalar $\mathbb{C}_{\mathbb{B}}$, encoded in the norm form through the cone.
+It is worth stating the two kernels' structure in the algebra. Both are complex scalars times $e_0$, and their difference is too; the boundary condition selects between them by a $t$-dependent step, which is a central scalar function. Nothing in the selection involves the module, and nothing in it involves the vector part of the algebra: the causal structure of the spin-$0$ theory is a statement about the scalar $\mathbb{C}_{\mathbb{B}}$, encoded in the biquaternion norm through the cone.
 
 ## Microcausality and the Pauli–Jordan Function
 
@@ -318,7 +318,7 @@ The support statement can be read without the Bessel function. The commutator fu
 
 ### What the algebra contributes
 
-The commutator is a **central scalar** times $e_0$. There is no non-central part, because the field is central and the kernel is central. The light cone on which $G_C$ is supported is the zero-divisor cone $N(\tilde{Q})=0$ of $\mathbb{M}_-$: the points of the material sector at which the norm form vanishes, which are exactly the elements of $\mathbb{M}_-$ that fail to be invertible. The mass shell, where the kernel's momentum-space amplitude is singular, is the level set $N(\tilde{K})=-\mu^2$. Both singular loci are statements about the algebra's norm form, and the causal structure of the scalar theory is therefore a statement about $\mathbb{M}_-$ alone, with the center as the field's value space and no module in sight. This is the concrete form, for the propagator, of the structural article's verdict that spin $0$ lives in the center: its causality is the geometry of the cone, not the representation theory of a module.
+The commutator is a **central scalar** times $e_0$. There is no non-central part, because the field is central and the kernel is central. The light cone on which $G_C$ is supported is the zero-divisor cone $N(\tilde{Q})=0$ of $\mathbb{M}_-$: the points of the material sector at which the biquaternion norm vanishes, which are exactly the elements of $\mathbb{M}_-$ that fail to be invertible. The mass shell, where the kernel's momentum-space amplitude is singular, is the level set $N(\tilde{K})=-\mu^2$. Both singular loci are statements about the algebra's biquaternion norm, and the causal structure of the scalar theory is therefore a statement about $\mathbb{M}_-$ alone, with the center as the field's value space and no module in sight. This is the concrete form, for the propagator, of the structural article's verdict that spin $0$ lives in the center: its causality is the geometry of the cone, not the representation theory of a module.
 
 ## The Feynman Propagator and Time Ordering
 
@@ -367,7 +367,7 @@ K_1\!\left(\mu\sqrt{\rho_E^2}\right),
 \rho_E^2=x_E^2,
 $$
 
-with $K_1$ the modified Bessel function of the second kind. It decays exponentially at large spacelike separation, with range $\mu^{-1}=\hbar/(mc)$, the Compton wavelength; this is the analytic form of the statement that the causal kernel vanishes outside the cone but that the Feynman kernel retains an exponentially small tail inside it. Both behaviors follow from the same norm-form geometry: the Lorentzian cone for the commutator, the Euclidean sphere for the Wick-rotated kernel.
+with $K_1$ the modified Bessel function of the second kind. It decays exponentially at large spacelike separation, with range $\mu^{-1}=\hbar/(mc)$, the Compton wavelength; this is the analytic form of the statement that the causal kernel vanishes outside the cone but that the Feynman kernel retains an exponentially small tail inside it. Both behaviors follow from the same biquaternion-norm geometry: the Lorentzian cone for the commutator, the Euclidean sphere for the Wick-rotated kernel.
 
 ### Composition and the free generating functional
 
@@ -386,11 +386,11 @@ Three facts summarize what the framework does and does not contribute to the Kle
 
 **The kernel is central, and the module is a spectator.** The operator $\Box-\mu^2$ is a central scalar, so every Green's function is a central scalar times $e_0$, and the whole construction is the scalar construction tensored with the identity on the state module. This is not a deficiency but the exact statement of spin $0$: a scalar field has no internal index for a non-central kernel to act on. The companion article *The Scalar Field in the Center: Why Spin 0 Escapes the Biquaternion State Module* shows why this must be so, and the present article exhibits it at the level of the kernel.
 
-**The singular loci are the norm form's geometry.** The light cone is the zero-divisor cone $N(\tilde{Q})=0$ of the material sector; the mass shell is the level set $N(\tilde{K})=-\mu^2$. The Fourier kernel's poles, the support of the retarded kernel, the vanishing of the commutator, and the exponential range of the Euclidean kernel are all faces of one algebraic object, the norm form of $\mathbb{B}$ read on $\mathbb{M}_-$. This is genuinely the algebra's contribution: the framework does not postulate the light cone, it identifies it as the zero set of the norm form, and the propagation of a spin-$0$ field follows.
+**The singular loci are the biquaternion norm's geometry.** The light cone is the zero-divisor cone $N(\tilde{Q})=0$ of the material sector; the mass shell is the level set $N(\tilde{K})=-\mu^2$. The Fourier kernel's poles, the support of the retarded kernel, the vanishing of the commutator, and the exponential range of the Euclidean kernel are all faces of one algebraic object, the biquaternion norm of $\mathbb{B}$ read on $\mathbb{M}_-$. This is genuinely the algebra's contribution: the framework does not postulate the light cone, it identifies it as the zero set of the biquaternion norm, and the propagation of a spin-$0$ field follows.
 
 **The causal boundary condition is physical, not algebraic.** The defining equation admits both the retarded and the advanced kernel, and the algebra is indifferent between them; the retarded choice is the no-incoming-radiation condition, a physical input. The framework locates the choice in the direction of the $i\epsilon$ displacement along the imaginary-scalar axis $ict$, exactly as the companion article on the Feynman propagator argues; it does not derive the choice.
 
-The derivation of the retarded kernel given above is a transcription of the standard scalar field theory into the framework's notation, with the norm-form identifications supplying the interpretation. The genuinely biquaternionic content lies in the identification of the cone and the shell with the norm form, and in the proof that nothing else of the algebra enters.
+The derivation of the retarded kernel given above is a transcription of the standard scalar field theory into the framework's notation, with the biquaternion-norm identifications supplying the interpretation. The genuinely biquaternionic content lies in the identification of the cone and the shell with the biquaternion norm, and in the proof that nothing else of the algebra enters.
 
 ## Open Questions
 
@@ -400,7 +400,7 @@ The derivation of the retarded kernel given above is a transcription of the stan
 
 3. **The massless limit and the zero-divisor cone.** The massless kernel is supported on the zero-divisor cone and is the boundary case of the massive hyperboloid as $\mu\to0$; the limit is singular in the sense that the volume term vanishes while the cone term survives. Whether the framework should regard the massless scalar as a degenerate case of the massive one, or as the fundamental case whose cone support is primary, is a matter of reading that the present article does not settle.
 
-4. **The Euclidean kernel and the informational sector.** The Wick rotation identifies the material sector with the quaternion subspace, on which the norm form is positive definite. The Euclidean kernel $G_E$ is therefore a function on $\mathbb{H}_{\mathbb{B}}$, and its Yukawa form is the standard one. Whether the informational sector's operators act on $G_E$ in a way that reproduces the Euclidean path-integral measure is a question for the path-integral article and for the informational articles.
+4. **The Euclidean kernel and the informational sector.** The Wick rotation identifies the material sector with the quaternion subspace, on which the biquaternion norm is positive definite. The Euclidean kernel $G_E$ is therefore a function on $\mathbb{H}_{\mathbb{B}}$, and its Yukawa form is the standard one. Whether the informational sector's operators act on $G_E$ in a way that reproduces the Euclidean path-integral measure is a question for the path-integral article and for the informational articles.
 
 5. **The propagator on a non-constant background.** The closed forms above hold for constant $\epsilon,\mu$ and hence constant $c$. In a medium whose parameters vary, or in a background field, the operator has variable coefficients and these free kernels are only the leading geometric-optics approximation. The framework's local complex structure makes $c$ a field, and the form of the kernel in that setting is not settled here.
 
@@ -423,7 +423,7 @@ in natural units. The delta term is the massless retarded kernel, whose invarian
 
 The Pauli–Jordan function $G_C=G_R-G_A$ is supported on the closed cone and vanishes for spacelike separations, which is microcausality; the commutator is $[\tilde{\Phi},\tilde{\Phi}^\dagger]=G_C e_0$ in the normalization used here, and it is nonzero inside the cone. The Feynman propagator is the opposite-pole displacement, equal to the time-ordered two-point function $\langle0|T\tilde{\Phi}(x)\tilde{\Phi}^\dagger(y)|0\rangle=G_F(x-y)e_0$; its spacelike tail is the Euclidean Yukawa kernel $\frac{\mu}{4\pi^2\sqrt{\rho_E^2}}K_1(\mu\sqrt{\rho_E^2})$, of range the Compton wavelength, and its inverse in momentum space is the quadratic form of the action used in the companion path-integral article.
 
-The algebra's contribution is the identification of the singular loci with the norm form: the light cone is the zero-divisor cone $N(\tilde{Q})=0$ of the material sector and the mass shell is the level set $N(\tilde{K})=-\mu^2$. The kernel is central, the module is a spectator, and the causal boundary condition is a physical input. The retarded, advanced, commutator and Feynman kernels are the standard scalar kernels, written in the framework's notation and interpreted through its norm form.
+The algebra's contribution is the identification of the singular loci with the biquaternion norm: the light cone is the zero-divisor cone $N(\tilde{Q})=0$ of the material sector and the mass shell is the level set $N(\tilde{K})=-\mu^2$. The kernel is central, the module is a spectator, and the causal boundary condition is a physical input. The retarded, advanced, commutator and Feynman kernels are the standard scalar kernels, written in the framework's notation and interpreted through its biquaternion norm.
 
 ## Summary of Notation
 
@@ -436,7 +436,7 @@ The algebra's contribution is the identification of the singular loci with the n
 | $\mathbb{C}_{\mathbb{B}}=\operatorname{span}_{\mathbb{R}}\{e_0,ie_0\}$ | Center of $\mathbb{B}$; the scalar field's value space |
 | $\tilde{Q}=ict\,e_0+\mathbf{x}$ | Material coordinate, $\in\mathbb{M}_-$ |
 | $\tilde{K}=i\omega/c\,e_0+\mathbf{k}$ | Material four-wavevector, $\in\mathbb{M}_-$ |
-| $N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}$ | Norm form |
+| $N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}$ | Biquaternion norm |
 | $\tilde{\nabla}=e_0\partial_{ict}+\sum_k e_k\partial_k$ | Biquaternionic gradient |
 | $\Box=\tilde{\nabla}\bar{\tilde{\nabla}}=\partial_{ict}^2+\Delta$ | d'Alembertian, series convention |
 | $\mu=mc/\hbar$ | Inverse Compton wavenumber; the mass scale, $\mu=m$ in natural units |
@@ -462,4 +462,4 @@ The algebra's contribution is the identification of the singular loci with the n
 - I. S. Gradshteyn and I. M. Ryzhik, *Table of Integrals, Series and Products* (Academic Press, 2007), for the Bessel integral representations used to reduce the retarded kernel.
 - G. N. Watson, *A Treatise on the Theory of Bessel Functions* (Cambridge, 1922), for the representation $J_0(z)=\frac{2}{\pi}\int_0^\infty\sin(z\cosh v)\,dv$ and the modified Bessel function $K_1$.
 - M. E. Peskin and D. V. Schroeder, *An Introduction to Quantum Field Theory* (Addison-Wesley, 1995), for the propagator conventions and the Wick rotation to Euclidean space.
-- Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the norm form, the zero divisors, and the geometry of the light cone in the biquaternion algebra.
+- Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the biquaternion norm, the zero divisors, and the geometry of the light cone in the biquaternion algebra.

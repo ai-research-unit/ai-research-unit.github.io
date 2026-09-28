@@ -2,7 +2,7 @@
 
 ## Introduction
 
-*Maxwell's Equations in the Biquaternionic Formulation* compresses the four Maxwell equations into a single biquaternion equation, $\tilde{\nabla}\tilde{F} = -\tilde{R}$, in which a biquaternionic field strength is sourced by a biquaternionic current. *Non-Abelian Gauge Fields in Biquaternionic Form* then lets the connection of the same framework take values in the compact factor $\mathfrak{su}(2) = \mathrm{span}_\mathbb{R}\{e_1,e_2,e_3\}$ of the material sector, obtains the non-abelian curvature
+*Maxwell's Equations in the Biquaternionic Formulation* compresses the four Maxwell equations into a single biquaternion equation, $\tilde{\nabla}\tilde{F} = -\tilde{R}$, in which a biquaternionic field strength is sourced by a biquaternionic current. *Non-Abelian Gauge Fields in Biquaternionic Form* then lets the connection of the same framework take values in the compact factor $\mathrm{SU}(2) = \mathrm{span}_\mathbb{R}\{e_1,e_2,e_3\}$ of the material sector, obtains the non-abelian curvature
 
 $$
 F_{\mu\nu} = \partial_\mu \mathcal{A}_\nu - \partial_\nu \mathcal{A}_\mu + i\kappa[\mathcal{A}_\mu,\mathcal{A}_\nu],
@@ -27,17 +27,17 @@ with the covariant derivative $D_\mu = \partial_\mu + i\kappa\mathcal{A}_\mu$ ac
 
 The division between what is established and what is interpretation is kept explicit.
 
-- **Established, and recomputed below.** The curvature identity $[D_\mu,D_\nu] = i\kappa F_{\mu\nu}$; the Bianchi identity $D_\lambda F_{\mu\nu} + D_\mu F_{\nu\lambda} + D_\nu F_{\lambda\mu} = 0$; the Yang–Mills equation $D_\mu F^{\mu\nu} = J^\nu$ with the commutator term $i\kappa[\mathcal{A}_\mu,F^{\mu\nu}]$; the covariant conservation $D_\mu J^\mu = 0$ and the failure of ordinary conservation; the reduction to Maxwell on a commuting generator set; and the adjoint transformation $J'_\nu = U J_\nu U^{-1}$ of the source. Each was recomputed on a generic, non-constant $\mathfrak{su}(2)$-valued connection — all three generators, non-commuting — at four generic points, by exact polynomial arithmetic; no claim below rests on the abelian case.
+- **Established, and recomputed below.** The curvature identity $[D_\mu,D_\nu] = i\kappa F_{\mu\nu}$; the Bianchi identity $D_\lambda F_{\mu\nu} + D_\mu F_{\nu\lambda} + D_\nu F_{\lambda\mu} = 0$; the Yang–Mills equation $D_\mu F^{\mu\nu} = J^\nu$ with the commutator term $i\kappa[\mathcal{A}_\mu,F^{\mu\nu}]$; the covariant conservation $D_\mu J^\mu = 0$ and the failure of ordinary conservation; the reduction to Maxwell on a commuting generator set; and the adjoint transformation $J'_\nu = U J_\nu U^{-1}$ of the source. Each was recomputed on a generic, non-constant $\mathrm{SU}(2)$-valued connection — all three generators, non-commuting — at four generic points, by exact polynomial arithmetic; no claim below rests on the abelian case.
 - **Interpretation.** Reading $D_\mu F^{\mu\nu}$ as the conserved current of a non-abelian gauge field, and the field equation as the Euler–Lagrange equation of $-\tfrac12\mathrm{Tr}(F_{\mu\nu}F^{\mu\nu})$, is the standard reading of the algebra, placed in the framework's notation. It is labelled as interpretation where it occurs.
 - **Gaps and defects, left visible.** The biquaternion packaging of the curvature that the parent articles use, $\mathcal{F} = \tfrac12\sum_{\mu\nu}F_{\mu\nu}\bar{e}_\mu e_\nu$, does not inherit the adjoint transformation as a single algebra conjugation, and the naive product $\nabla\!\cdot\!(\sum_\nu F^{\mu\nu}e_\nu)$ is not the covariant divergence of the field equation; both are stated precisely and neither is smoothed over. The framework's inability to fix the gauge is inherited unchanged and bounds the whole construction; no gauge is chosen anywhere below.
 
-**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$ and $e_1e_2 = e_3$, and $i$ is the scalar imaginary, $i^2 = -1$, commuting with every $e_k$. The fixed-point subspaces are $\mathbb{M}_-$ (anti-Hermitian, the material sector) and $\mathbb{M}_+$ (Hermitian, the informational sector); $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace and $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_0, ie_0\}$ is the complex scalar subspace, which is the center of the algebra. The biquaternionic gradient is $\tilde{\nabla} = e_0\partial_{ict} + e_1\partial_x + e_2\partial_y + e_3\partial_z$, its quaternion conjugate is $\bar{\tilde{\nabla}} = e_0\partial_{ict} - e_1\partial_x - e_2\partial_y - e_3\partial_z$, and $\Box = \tilde{\nabla}\bar{\tilde{\nabla}} = \bar{\tilde{\nabla}}\tilde{\nabla}$. On the material sector, $\mathbb{M}_- = \mathbb{R}(ie_0)\oplus\mathfrak{su}(2)$ with $\mathfrak{su}(2) = \mathrm{span}_\mathbb{R}\{e_1,e_2,e_3\}$, $[e_a,e_b] = 2\varepsilon_{abc}e_c$, and normalized generators $T_a = \tfrac12 e_a$ with $[T_a,T_b] = \varepsilon_{abc}T_c$ and $\mathrm{Tr}(T_aT_b) = -\tfrac12\delta_{ab}$. The gauge group is $SU(2)$, the unit real quaternions, $U^{-1} = \bar U = U^\dagger$. The connection and field strength of the non-abelian sector are $\mathcal{A}_\mu = \mathcal{A}_\mu^a e_a \in \mathfrak{su}(2)$ with $\mathcal{A} = \sum_\mu\mathcal{A}_\mu e_\mu$, and $F_{\mu\nu} = \partial_\mu\mathcal{A}_\nu - \partial_\nu\mathcal{A}_\mu + i\kappa[\mathcal{A}_\mu,\mathcal{A}_\nu]$, with $\kappa = q/\hbar$ the coupling. The covariant derivative is $D_\mu = \partial_\mu + i\kappa\mathcal{A}_\mu$, $D = \tilde{\nabla} + i\kappa\mathcal{A}$, acting on a matter field by left multiplication. Indices run $\mu,\nu,\lambda \in \{0,1,2,3\}$ with $\partial_0 = \partial_{ict}$; in the $ict$ convention $\partial_\mu = \partial_{x_\mu}$ raises and lowers no index, so the coordinate sum $\sum_\mu$ is the Lorentz-invariant contraction and we may write $F^{\mu\nu}$ and $F_{\mu\nu}$ interchangeably. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the **speed of light in the medium** and $c_0$ the vacuum speed of light. The trace formula $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ is inherited unchanged; where the Yang–Mills density is written, the trace is the **matrix trace** on the $\mathfrak{su}(2)$ factor, which is a different operation. No gauge is fixed.
+**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$ and $e_1e_2 = e_3$, and $i$ is the scalar imaginary, $i^2 = -1$, commuting with every $e_k$. The fixed-point subspaces are $\mathbb{M}_-$ (anti-Hermitian, the material sector) and $\mathbb{M}_+$ (Hermitian, the informational sector); $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace and $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_0, ie_0\}$ is the complex scalar subspace, which is the center of the algebra. The biquaternionic gradient is $\tilde{\nabla} = e_0\partial_{ict} + e_1\partial_x + e_2\partial_y + e_3\partial_z$, its quaternion conjugate is $\bar{\tilde{\nabla}} = e_0\partial_{ict} - e_1\partial_x - e_2\partial_y - e_3\partial_z$, and $\Box = \tilde{\nabla}\bar{\tilde{\nabla}} = \bar{\tilde{\nabla}}\tilde{\nabla}$. On the material sector, $\mathbb{M}_- = \mathbb{R}(ie_0)\oplus\mathrm{SU}(2)$ with $\mathrm{SU}(2) = \mathrm{span}_\mathbb{R}\{e_1,e_2,e_3\}$, $[e_a,e_b] = 2\varepsilon_{abc}e_c$, and normalized generators $T_a = \tfrac12 e_a$ with $[T_a,T_b] = \varepsilon_{abc}T_c$ and $\mathrm{Tr}(T_aT_b) = -\tfrac12\delta_{ab}$. The gauge group is $SU(2)$, the unit real quaternions, $U^{-1} = \bar U = U^\dagger$. The connection and field strength of the non-abelian sector are $\mathcal{A}_\mu = \mathcal{A}_\mu^a e_a \in \mathrm{SU}(2)$ with $\mathcal{A} = \sum_\mu\mathcal{A}_\mu e_\mu$, and $F_{\mu\nu} = \partial_\mu\mathcal{A}_\nu - \partial_\nu\mathcal{A}_\mu + i\kappa[\mathcal{A}_\mu,\mathcal{A}_\nu]$, with $\kappa = q/\hbar$ the coupling. The covariant derivative is $D_\mu = \partial_\mu + i\kappa\mathcal{A}_\mu$, $D = \tilde{\nabla} + i\kappa\mathcal{A}$, acting on a matter field by left multiplication. Indices run $\mu,\nu,\lambda \in \{0,1,2,3\}$ with $\partial_0 = \partial_{ict}$; in the $ict$ convention $\partial_\mu = \partial_{x_\mu}$ raises and lowers no index, so the coordinate sum $\sum_\mu$ is the Lorentz-invariant contraction and we may write $F^{\mu\nu}$ and $F_{\mu\nu}$ interchangeably. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the **speed of light in the medium** and $c_0$ the vacuum speed of light. The trace formula $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ is inherited unchanged; where the Yang–Mills density is written, the trace is the **matrix trace** on the $\mathrm{SU}(2)$ factor, which is a different operation. No gauge is fixed.
 
 ## The Non-Abelian Curvature and the Adjoint Covariant Derivative
 
 The constructions of this article are those of its two parents, and they are recalled here only far enough to fix the conventions the field equation uses.
 
-The connection is an $\mathfrak{su}(2)$-valued one-form, $\mathcal{A}_\mu$, and the covariant derivative is $D_\mu = \partial_\mu + i\kappa\mathcal{A}_\mu$, with $[D_\mu,D_\nu] = i\kappa F_{\mu\nu}$. Under a local gauge transformation $U(\tilde{Q})\in SU(2)$ the connection and field strength transform in the adjoint representation,
+The connection is an $\mathrm{SU}(2)$-valued one-form, $\mathcal{A}_\mu$, and the covariant derivative is $D_\mu = \partial_\mu + i\kappa\mathcal{A}_\mu$, with $[D_\mu,D_\nu] = i\kappa F_{\mu\nu}$. Under a local gauge transformation $U(\tilde{Q})\in SU(2)$ the connection and field strength transform in the adjoint representation,
 
 $$
 \mathcal{A}'_\mu = U\mathcal{A}_\mu U^{-1} + \frac{i}{\kappa}(\partial_\mu U)U^{-1},
@@ -88,7 +88,7 @@ It collects the six independent curvature components against the quaternion-basi
 Let the current be the covariant divergence of the curvature,
 
 $$
-J^\nu := D_\mu F^{\mu\nu} = \partial_\mu F^{\mu\nu} + i\kappa\,[\mathcal{A}_\mu, F^{\mu\nu}], \qquad J^\nu \in \mathfrak{su}(2),
+J^\nu := D_\mu F^{\mu\nu} = \partial_\mu F^{\mu\nu} + i\kappa\,[\mathcal{A}_\mu, F^{\mu\nu}], \qquad J^\nu \in \mathrm{SU}(2),
 $$
 
 summed over $\mu$. This is the definition of the source in this article; the equation
@@ -126,7 +126,7 @@ $$
 \sum_{\nu=0}^{3} \bigl(D_\mu F_{\mu\nu}\bigr) e_\nu = \sum_{\nu=0}^{3} J_\nu\, e_\nu ,
 $$
 
-in which the covariant derivative acts on the $\mathfrak{su}(2)$-valued curvature components by the adjoint action $D_\mu F_{\mu\nu} = \partial_\mu F_{\mu\nu} + i\kappa[\mathcal{A}_\mu,F_{\mu\nu}]$, and the sum over $\mu$ is the divergence. The left-hand side is the covariant divergence of the curvature, expanded in the quaternion basis; the right-hand side is the source biquaternion. This is the direct non-abelian analogue of the parent's $\tilde{\nabla}\tilde{F} = -\tilde{R}$: the parent's source biquaternion $\tilde{R}$ plays the role of $-\mathcal{J}$ up to the parent's normalisation of $\tilde{F}$ and $\tilde{R}$ (the parent uses $R_0 = i\rho/\sqrt{\epsilon}$, $\mathbf{R} = \sqrt{\mu}\,\mathbf{J}$, and writes its equation with the opposite sign). The sign of the source is a convention, fixed here by defining $J^\nu$ through the field equation; what is not a convention is that the derivative on the left is covariant.
+in which the covariant derivative acts on the $\mathrm{SU}(2)$-valued curvature components by the adjoint action $D_\mu F_{\mu\nu} = \partial_\mu F_{\mu\nu} + i\kappa[\mathcal{A}_\mu,F_{\mu\nu}]$, and the sum over $\mu$ is the divergence. The left-hand side is the covariant divergence of the curvature, expanded in the quaternion basis; the right-hand side is the source biquaternion. This is the direct non-abelian analogue of the parent's $\tilde{\nabla}\tilde{F} = -\tilde{R}$: the parent's source biquaternion $\tilde{R}$ plays the role of $-\mathcal{J}$ up to the parent's normalisation of $\tilde{F}$ and $\tilde{R}$ (the parent uses $R_0 = i\rho/\sqrt{\epsilon}$, $\mathbf{R} = \sqrt{\mu}\,\mathbf{J}$, and writes its equation with the opposite sign). The sign of the source is a convention, fixed here by defining $J^\nu$ through the field equation; what is not a convention is that the derivative on the left is covariant.
 
 **The biquaternion packaging does not collapse.** It is tempting to write the left-hand side as $\sum_\mu D_\mu F^\mu$ with $F^\mu := \sum_\nu F^{\mu\nu}e_\nu$, and to advertise a one-line product. That is not correct, and the failure is instructive. Because the adjoint commutator does not pass through the quaternion basis,
 
@@ -210,7 +210,7 @@ $$
 
 because $[\mathcal{A}_\nu,J^\nu] = a_\nu[g,g]J^\nu = 0$; the current is **ordinarily** conserved, and it is invariant under the abelian gauge transformations that preserve the commuting generator set, $J'^\nu = U J^\nu U^{-1} = J^\nu$ (in the center case every central $U$ qualifies, since $U$ is central; on a single spatial generator, the qualifying $U$ are those of the abelian subgroup generated by $g$).
 
-Nothing here cancels. Every non-abelian term vanishes because the abelian connection commutes — with itself, with the curvature it generates, and with the current — not because two nonzero contributions are arranged to cancel. This is the precise sense in which the abelian case is the degenerate one, and it is why agreement on a commuting generator set is a consistency check on normalisation and signs but *not* evidence for the non-abelian statement: every non-abelian identity above was checked on the full non-commuting $\mathfrak{su}(2)$ connection, where the commutators are nonzero, and the abelian reduction was checked separately.
+Nothing here cancels. Every non-abelian term vanishes because the abelian connection commutes — with itself, with the curvature it generates, and with the current — not because two nonzero contributions are arranged to cancel. This is the precise sense in which the abelian case is the degenerate one, and it is why agreement on a commuting generator set is a consistency check on normalisation and signs but *not* evidence for the non-abelian statement: every non-abelian identity above was checked on the full non-commuting $\mathrm{SU}(2)$ connection, where the commutators are nonzero, and the abelian reduction was checked separately.
 
 ## The Bianchi Identity and the Homogeneous Half
 
@@ -247,7 +247,7 @@ Two consequences follow, and both are stated as findings rather than repairs.
 
 1. **A one-line biquaternion form.** The abelian parent compresses its four equations into $\tilde{\nabla}\tilde{F} = -\tilde{R}$. Is there a representative of the non-abelian curvature, or a modified product, for which the Yang–Mills equation is a single adjoint-covariant biquaternion identity, or is the index-mixing obstruction of this article fatal to that program? The obstruction found here is sharp enough to state and not resolved.
 
-2. **Which compact algebra, and how many factors.** The gauge algebra used here is the $\mathfrak{su}(2)$ factor of the material sector, with the abelian factor $\mathbb{R}(ie_0)$ beside it. Whether larger gauge algebras are available, and whether the framework selects one, is the gap recorded by the non-abelian parent and untouched here.
+2. **Which compact algebra, and how many factors.** The gauge algebra used here is the $\mathrm{SU}(2)$ factor of the material sector, with the abelian factor $\mathbb{R}(ie_0)$ beside it. Whether larger gauge algebras are available, and whether the framework selects one, is the gap recorded by the non-abelian parent and untouched here.
 
 3. **The reality class of the connection.** The non-abelian parent shows that no single Hermitian-conjugation eigenspace accommodates the connection across all four components, with the obstruction sitting in the time direction because $\partial_0 = \partial_{ict} = -i\partial_t$. The field equation and its conservation law are statements about the algebra and do not depend on resolving that, but the physical identification of $\mathcal{A}_\mu$ does.
 
@@ -268,7 +268,7 @@ D_\mu F^{\mu\nu} = J^\nu,
 \qquad
 D_\mu F^{\mu\nu} = \partial_\mu F^{\mu\nu} + i\kappa\,[\mathcal{A}_\mu,F^{\mu\nu}],
 \qquad
-J^\nu \in \mathfrak{su}(2),
+J^\nu \in \mathrm{SU}(2),
 $$
 
 with $D_\mu = \partial_\mu + i\kappa\mathcal{A}_\mu$ and $F_{\mu\nu} = \partial_\mu\mathcal{A}_\nu - \partial_\nu\mathcal{A}_\mu + i\kappa[\mathcal{A}_\mu,\mathcal{A}_\nu]$. Two things change from the abelian case, and both come from the single fact that the covariant derivative is not the ordinary one.
@@ -294,10 +294,10 @@ The biquaternionic packaging is exact for the current, $\mathcal{J} = \sum_\nu J
 | $\bar{\tilde{\nabla}} = e_0\partial_{ict} - e_k\partial_k$ | Quaternion-conjugate gradient |
 | $\Box = \tilde{\nabla}\bar{\tilde{\nabla}} = \bar{\tilde{\nabla}}\tilde{\nabla}$ | d'Alembertian |
 | $[e_a,e_b] = 2\varepsilon_{abc}e_c$ | Commutator on the vector part of $\mathbb{M}_-$ |
-| $\mathfrak{su}(2) = \mathrm{span}_{\mathbb{R}}\{e_1,e_2,e_3\}$ | Compact gauge algebra inside $\mathbb{M}_-$ |
+| $\mathrm{SU}(2) = \mathrm{span}_{\mathbb{R}}\{e_1,e_2,e_3\}$ | Compact gauge algebra inside $\mathbb{M}_-$ |
 | $T_a = \tfrac12 e_a$, $\mathrm{Tr}(T_aT_b) = -\tfrac12\delta_{ab}$ | Normalized generators; matrix trace |
 | $U(\tilde{Q}) \in SU(2)$ | Unit real quaternion, $U^{-1} = \bar U = U^\dagger$ |
-| $\mathcal{A}_\mu = \mathcal{A}_\mu^a e_a \in \mathfrak{su}(2)$, $\mathcal{A} = \sum_\mu\mathcal{A}_\mu e_\mu$ | Non-abelian connection |
+| $\mathcal{A}_\mu = \mathcal{A}_\mu^a e_a \in \mathrm{SU}(2)$, $\mathcal{A} = \sum_\mu\mathcal{A}_\mu e_\mu$ | Non-abelian connection |
 | $\kappa = q/\hbar$ | Coupling |
 | $D_\mu = \partial_\mu + i\kappa\mathcal{A}_\mu$, $D = \tilde{\nabla} + i\kappa\mathcal{A}$ | Covariant derivative (left multiplication on matter) |
 | $\mathcal{A}'_\mu = U\mathcal{A}_\mu U^{-1} + \frac{i}{\kappa}(\partial_\mu U)U^{-1}$ | Adjoint gauge transformation of the connection |
@@ -321,17 +321,17 @@ The biquaternionic packaging is exact for the current, $\mathcal{J} = \sum_\nu J
 
 ## Further Reading
 
-- *Non-Abelian Gauge Fields in Biquaternionic Form* — the immediate parent; the $\mathfrak{su}(2)$ factor, the curvature with its commutator, the adjoint transformation, the Bianchi identity, and the source-free equation $D_\mu F^{\mu\nu} = 0$ that this article sources.
+- *Non-Abelian Gauge Fields in Biquaternionic Form* — the immediate parent; the $\mathrm{SU}(2)$ factor, the curvature with its commutator, the adjoint transformation, the Bianchi identity, and the source-free equation $D_\mu F^{\mu\nu} = 0$ that this article sources.
 - *The Covariant Derivative and Gauge Connection in Biquaternionic Form* — the abelian connection and covariant derivative, the curvature as a commutator that closes on the algebra, and the gap this article and its non-abelian companion take up.
 - *Maxwell's Equations in the Biquaternionic Formulation* — the abelian field equation $\tilde{\nabla}\tilde{F} = -\tilde{R}$, the source biquaternion, and the conservation law whose non-abelian generalisation is the subject here.
 - *The Gauge Principle in Biquaternionic Form* — the origin of the connection and the transformation law, and the preview of the non-abelian curvature used here.
-- *The Field-Strength Biquaternion and Its Invariants* — the abelian invariants and the norm form, whose non-abelian extension remains open.
+- *The Field-Strength Biquaternion and Its Invariants* — the abelian invariants and the biquaternion norm, whose non-abelian extension remains open.
 - *Chiral Fermions in the Biquaternion Framework* — the covariant derivative on the spinor module and the matter representation that the current of this article does not fix.
 - *The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism* — the left/right matter-representation question and the coupled Dirac equation.
 - *Canonical Quantization of the Biquaternion Maxwell Field* — the framework's inability to fix the gauge, which bounds the non-abelian orbit.
 - *Instantons and Solitons in Biquaternionic Form* — the self-dual truncation $D_\mu F^{\mu\nu} = 0$ and the topological charge built from the Bianchi identity.
 - *Lie Algebras: A General Introduction* — the Jacobi identity, the adjoint action as a derivation, and the commutator bracket on an associative algebra.
 - *Biquaternion Algebra* and *Quaternion Algebra* — the multiplication rule, the conjugations and the center used throughout.
-- *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector* — the sector basis and the imaginary-scalar/real-vector structure on which the $\mathfrak{su}(2)$ gauge factor rests.
+- *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector* — the sector basis and the imaginary-scalar/real-vector structure on which the $\mathrm{SU}(2)$ gauge factor rests.
 - *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector* — the Hermitian sector and the trace formula distinguished here from the matrix trace.
 - *Curved Spacetime and the Biquaternion Framework* — the two-sided gravitational connection, distinct from the one-sided gauge connection of this article.

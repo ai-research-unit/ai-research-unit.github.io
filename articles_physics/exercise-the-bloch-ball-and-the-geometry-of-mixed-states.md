@@ -12,7 +12,7 @@ $$
 \tilde{\rho} = \tfrac{1}{2}\bigl(e_0 + i\mathbf{r}\bigr), \qquad \mathbf{r} = r_1 e_1 + r_2 e_2 + r_3 e_3 \in \mathbb{R}^3,
 $$
 
-with $\mathbf{r}$ the **Bloch vector**; it is a state exactly when $|\mathbf{r}| \leq 1$, i.e. when it lies in the closed unit ball $B^3$. The norm form on the trace-one slice is $\tilde{\rho}\bar{\tilde{\rho}} = \tfrac{1}{4}(1 - |\mathbf{r}|^2)e_0$. The eigenvalues are $\lambda_\pm = \tfrac{1}{2}(1 \pm |\mathbf{r}|)$. The purity is $\mathrm{Tr}(\tilde{\rho}^2) = \tfrac{1}{2}(1 + |\mathbf{r}|^2)$ and the linear entropy is $S_{\mathrm{lin}}(\tilde{\rho}) = 1 - \mathrm{Tr}(\tilde{\rho}^2) = \tfrac{1}{2}(1 - |\mathbf{r}|^2)$. The von Neumann entropy is $S(\tilde{\rho}) = -\lambda_+\log\lambda_+ - \lambda_-\log\lambda_-$. The trace pairing on the slice is
+with $\mathbf{r}$ the **Bloch vector**; it is a state exactly when $|\mathbf{r}| \leq 1$, i.e. when it lies in the closed unit ball $B^3$. The biquaternion norm on the trace-one slice is $\tilde{\rho}\bar{\tilde{\rho}} = \tfrac{1}{4}(1 - |\mathbf{r}|^2)e_0$. The eigenvalues are $\lambda_\pm = \tfrac{1}{2}(1 \pm |\mathbf{r}|)$. The purity is $\mathrm{Tr}(\tilde{\rho}^2) = \tfrac{1}{2}(1 + |\mathbf{r}|^2)$ and the linear entropy is $S_{\mathrm{lin}}(\tilde{\rho}) = 1 - \mathrm{Tr}(\tilde{\rho}^2) = \tfrac{1}{2}(1 - |\mathbf{r}|^2)$. The von Neumann entropy is $S(\tilde{\rho}) = -\lambda_+\log\lambda_+ - \lambda_-\log\lambda_-$. The trace pairing on the slice is
 
 $$
 \mathrm{Tr}(\tilde{\rho}\tilde{\sigma}) = \tfrac{1}{2}\bigl(1 + \mathbf{r}\cdot\mathbf{s}\bigr), \qquad \tilde{\sigma} = \tfrac{1}{2}\bigl(e_0 + i\mathbf{s}\bigr),
@@ -234,7 +234,7 @@ so the two notions of separation are complementary on the boundary: coincident d
 
 ## Problem 5: The Centre and the Boundary
 
-**Problem.** (a) Characterize the center of the ball and compute its purity, entropies, and norm form. (b) Characterize the boundary and show that a boundary state is an extreme point that cannot be written as a nontrivial convex combination. (c) Show that the elements of the trace-one hyperplane with $|\mathbf{r}| > 1$ are not states.
+**Problem.** (a) Characterize the center of the ball and compute its purity, entropies, and biquaternion norm. (b) Characterize the boundary and show that a boundary state is an extreme point that cannot be written as a nontrivial convex combination. (c) Show that the elements of the trace-one hyperplane with $|\mathbf{r}| > 1$ are not states.
 
 **Solution.** (a) The center is $\mathbf{r} = 0$, i.e.
 
@@ -242,7 +242,7 @@ $$
 \tilde{\rho} = \tfrac12 e_0,
 $$
 
-the maximally mixed state. Its purity is $\mathrm{Tr}(\tilde{\rho}^2) = \tfrac12(1+0) = \tfrac12$, the minimum on the ball; its linear entropy is $\tfrac12$, the maximum; its norm form is $\tilde{\rho}\bar{\tilde{\rho}} = \tfrac14 e_0$, whose scalar coefficient $\tfrac14$ is the largest attainable on the slice; and its von Neumann entropy is $\log 2$, the maximum. In the spectral form it is the equal mixture $\tfrac12\tilde{P}_+(\hat{\boldsymbol{\mu}}) + \tfrac12\tilde{P}_-(\hat{\boldsymbol{\mu}})$ of the complementary idempotents along **any** axis, and it is the unique state invariant under the full unitary group $U(2)$, which acts on the ball by rotations. It is also the barycenter: the uniform average of the pure states over the boundary sphere is
+the maximally mixed state. Its purity is $\mathrm{Tr}(\tilde{\rho}^2) = \tfrac12(1+0) = \tfrac12$, the minimum on the ball; its linear entropy is $\tfrac12$, the maximum; its biquaternion norm is $\tilde{\rho}\bar{\tilde{\rho}} = \tfrac14 e_0$, whose scalar coefficient $\tfrac14$ is the largest attainable on the slice; and its von Neumann entropy is $\log 2$, the maximum. In the spectral form it is the equal mixture $\tfrac12\tilde{P}_+(\hat{\boldsymbol{\mu}}) + \tfrac12\tilde{P}_-(\hat{\boldsymbol{\mu}})$ of the complementary idempotents along **any** axis, and it is the unique state invariant under the full unitary group $U(2)$, which acts on the ball by rotations. It is also the barycenter: the uniform average of the pure states over the boundary sphere is
 
 $$
 \frac{1}{4\pi}\int_{S^2}\tilde{P}(\hat{\boldsymbol{\mu}})\,d\Omega
@@ -252,7 +252,7 @@ $$
 
 because the mean of the unit vector over the sphere vanishes.
 
-(b) The boundary is $|\mathbf{r}| = 1$. For these states the norm form vanishes,
+(b) The boundary is $|\mathbf{r}| = 1$. For these states the biquaternion norm vanishes,
 
 $$
 \tilde{\rho}\bar{\tilde{\rho}} = \tfrac14(1 - |\mathbf{r}|^2)e_0 = 0 \quad\Longleftrightarrow\quad |\mathbf{r}| = 1,
@@ -268,7 +268,7 @@ vanishes exactly there, so a boundary state is an idempotent, hence a rank-one p
 
 A boundary state is an **extreme point** of the ball. Suppose $\tilde{P} = \lambda\tilde{\rho}_1 + (1-\lambda)\tilde{\rho}_2$ with $0 < \lambda < 1$. Then $\mathbf{r} = \lambda\mathbf{r}_1 + (1-\lambda)\mathbf{r}_2$ with $|\mathbf{r}_1|, |\mathbf{r}_2| \leq 1$ and $|\mathbf{r}| = 1$. By the strict convexity of the Euclidean norm, equality $|\mathbf{r}| = 1$ forces $\mathbf{r}_1 = \mathbf{r}_2 = \mathbf{r}$, so $\tilde{\rho}_1 = \tilde{\rho}_2 = \tilde{P}$: no boundary state is a nontrivial mixture. Conversely, every interior state is a nontrivial mixture (Problem 3), so the extreme points of the ball are exactly the pure states.
 
-(c) On the trace-one hyperplane an element $\tilde{\rho} = \tfrac12(e_0 + i\mathbf{r})$ has eigenvalues $\lambda_\pm = \tfrac12(1 \pm |\mathbf{r}|)$. If $|\mathbf{r}| > 1$ then $\lambda_- = \tfrac12(1 - |\mathbf{r}|) < 0$, so $\tilde{\rho}$ is Hermitian of trace one but not positive semidefinite, and is not a state. Its norm form is $\tfrac14(1 - |\mathbf{r}|^2)e_0$ with negative scalar coefficient, so it lies in the spacelike region outside the future cone. For instance $\mathbf{r} = 2e_3$ gives $\lambda_\pm = \tfrac32, -\tfrac12$. The ball $|\mathbf{r}| \leq 1$ is thus exactly the positivity domain on the slice.
+(c) On the trace-one hyperplane an element $\tilde{\rho} = \tfrac12(e_0 + i\mathbf{r})$ has eigenvalues $\lambda_\pm = \tfrac12(1 \pm |\mathbf{r}|)$. If $|\mathbf{r}| > 1$ then $\lambda_- = \tfrac12(1 - |\mathbf{r}|) < 0$, so $\tilde{\rho}$ is Hermitian of trace one but not positive semidefinite, and is not a state. Its biquaternion norm is $\tfrac14(1 - |\mathbf{r}|^2)e_0$ with negative scalar coefficient, so it lies in the spacelike region outside the future cone. For instance $\mathbf{r} = 2e_3$ gives $\lambda_\pm = \tfrac32, -\tfrac12$. The ball $|\mathbf{r}| \leq 1$ is thus exactly the positivity domain on the slice.
 
 ## Problem 6: Identical and Orthogonal States
 

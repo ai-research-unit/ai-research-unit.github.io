@@ -9,7 +9,7 @@ This article develops both in the biquaternion algebra $\mathbb{B}=\mathbb{C}\ot
 The biquaternion algebra contributes two things to the discussion.
 
 1. **The action is central-valued.** For a real-quaternion configuration the Lagrangian is central, so the action is a complex scalar and its phase is unambiguous. There is no ordering question in the exponent, and the stationary-phase construction applies directly.
-2. **The rotor action and its geodesic principle.** For a rotor-valued configuration — a path in the group of unit real quaternions — the action built from the norm form of the velocity is the energy of a geodesic on the group, and the classical path is a one-parameter subgroup. This is the first place where the algebra's noncommutativity produces the classical equations rather than merely expressing them, and it is the bridge to the rigid-body article.
+2. **The rotor action and its geodesic principle.** For a rotor-valued configuration — a path in the group of unit real quaternions — the action built from the biquaternion norm of the velocity is the energy of a geodesic on the group, and the classical path is a one-parameter subgroup. This is the first place where the algebra's noncommutativity produces the classical equations rather than merely expressing them, and it is the bridge to the rigid-body article.
 
 The conventions are those of the read list, unchanged from the preceding article. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$; $i$ is central with $i^2=-1$; $\mathbb{M}_-$ and $\mathbb{M}_+$ are the anti-Hermitian and Hermitian sectors; $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace. The configuration is a real quaternion $\tilde q$, its conjugate momentum is $\tilde p=\partial L/\partial\dot{\tilde q}$, the phase-space biquaternion is $\tilde Z=\tilde q+i\tilde p$, and the scalar pairing is $\mathrm{Sc}(\bar{\tilde a}\tilde b)=\sum_\mu a_\mu b_\mu$. The rotor is $\tilde R\in\mathbb{H}_{\mathbb{B}}$ with $N(\tilde R)=\tilde R\bar{\tilde R}=e_0$, and it acts by conjugation $\tilde{Q}\mapsto\tilde R\tilde{Q}\tilde R^\dagger$.
 
@@ -17,7 +17,7 @@ The companion articles used below are:
 - Companion article *Lagrangian and Hamiltonian Mechanics in Biquaternionic Form*, for the action, the Euler–Lagrange equation, the Legendre transform, and the phase-space biquaternion.
 - Companion article *Similitudes Between Biquaternion Rotors and Hamiltonian Flow*, for the rotor conjugation and the flow on the coadjoint orbit.
 - Companion article *Noether's Theorem in Biquaternionic Form*, for the boundary-term construction of conserved quantities.
-- Companion article *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*, for the norm form and the material-sector structure.
+- Companion article *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*, for the biquaternion norm and the material-sector structure.
 
 ## The Action and Its First Variation
 
@@ -200,31 +200,31 @@ $$
 m\,\ddot\xi+V''(\tilde q_c)\,\xi=0 .
 $$
 
-This is the equation of **geodesic deviation** for the norm-form kinetic term. A point $t_2$ at which a nontrivial solution with $\xi(t_1)=0$ also satisfies $\xi(t_2)=0$ is a **conjugate point**; conjugate points are where the second variation degenerates and where the classical path ceases to be a strict minimum. For the free particle, $V''=0$ and the Jacobi equation reduces to $\ddot\xi=0$, whose solutions are linear in $t$; a linear solution vanishing at both ends of an interval of nonzero length is identically zero, so the free path has no conjugate points.
+This is the equation of **geodesic deviation** for the biquaternion-norm kinetic term. A point $t_2$ at which a nontrivial solution with $\xi(t_1)=0$ also satisfies $\xi(t_2)=0$ is a **conjugate point**; conjugate points are where the second variation degenerates and where the classical path ceases to be a strict minimum. For the free particle, $V''=0$ and the Jacobi equation reduces to $\ddot\xi=0$, whose solutions are linear in $t$; a linear solution vanishing at both ends of an interval of nonzero length is identically zero, so the free path has no conjugate points.
 
 **Stability.** The sign of the second variation is the classical stability statement: positive for a stable extremum, a change of sign at a conjugate point. Nothing here is quantum; the second variation is the Hessian of a function on a function space, and its degeneracy is the classical Morse-theoretic datum.
 
 ## The Action as a Geodesic Principle
 
-### The Norm-Form Metric
+### The Biquaternion-Norm Metric
 
-The kinetic term of the Lagrangian is the norm form, and the corresponding free action,
+The kinetic term of the Lagrangian is the biquaternion norm, and the corresponding free action,
 
 $$
 S_0[\tilde q]=\frac{m}{2}\int N(\dot{\tilde q})\,dt ,
 $$
 
-is the energy of a curve in the positive-definite metric that the norm form defines on $\mathbb{H}_{\mathbb{B}}$. Its extremals are the straight lines $\ddot{\tilde q}=0$ found in the preceding article, and the geodesic equation of the norm-form metric is the same equation. The length functional $\int\sqrt{N(d\tilde q)}$ has the same extremals as the energy functional at fixed duration, by the standard argument: extremising the energy at fixed duration selects the geodesics parametrised proportionally to arc length, which are exactly the extremals of the length.
+is the energy of a curve in the positive-definite metric that the biquaternion norm defines on $\mathbb{H}_{\mathbb{B}}$. Its extremals are the straight lines $\ddot{\tilde q}=0$ found in the preceding article, and the geodesic equation of the biquaternion-norm metric is the same equation. The length functional $\int\sqrt{N(d\tilde q)}$ has the same extremals as the energy functional at fixed duration, by the standard argument: extremising the energy at fixed duration selects the geodesics parametrised proportionally to arc length, which are exactly the extremals of the length.
 
-The geodesic reading has a Hamiltonian form, and it is the same statement. On the cotangent bundle the norm-form metric induces the Hamiltonian
+The geodesic reading has a Hamiltonian form, and it is the same statement. On the cotangent bundle the biquaternion-norm metric induces the Hamiltonian
 
 $$
 H(\tilde q,\tilde p)=\frac{1}{2m}\,p_\mu p_\mu=\frac{N(\tilde p)}{2m},
 $$
 
-the two forms agreeing because the norm-form metric is Euclidean in the basis $e_\mu$, so that the inverse metric is the metric itself. Hamilton's equations for it are $\dot{\tilde q}=\partial_{\tilde p}H=\tilde p/m$ and $\dot{\tilde p}=0$, whose solutions are the straight lines found above: the geodesic flow of the norm form **is** a Hamiltonian flow, its Hamiltonian is the Legendre transform of the free action, and $H=N(\tilde p)/2m$ is conserved along it. This is the flat case of the general statement that a geodesic flow is the Hamiltonian flow of the quadratic form built from the inverse metric. Checked on the same free particle as the polar-coordinate example above, now read as a Hamiltonian flow: integrating Hamilton's equations for $H=\tfrac12\big(p_r^2+p_\varphi^2/r^2\big)$ returns the same straight line in Cartesian coordinates, with residual $3.2\times10^{-14}$, $p_\varphi$ constant, and $H$ conserved to $3.4\times10^{-14}$. It is the abelian counterpart of the correspondence the companion article *Similitudes Between Biquaternion Rotors and Hamiltonian Flow* establishes on the coadjoint orbit: the free particle is the case in which the carrier is abelian and the metric flat.
+the two forms agreeing because the biquaternion-norm metric is Euclidean in the basis $e_\mu$, so that the inverse metric is the metric itself. Hamilton's equations for it are $\dot{\tilde q}=\partial_{\tilde p}H=\tilde p/m$ and $\dot{\tilde p}=0$, whose solutions are the straight lines found above: the geodesic flow of the biquaternion norm **is** a Hamiltonian flow, its Hamiltonian is the Legendre transform of the free action, and $H=N(\tilde p)/2m$ is conserved along it. This is the flat case of the general statement that a geodesic flow is the Hamiltonian flow of the quadratic form built from the inverse metric. Checked on the same free particle as the polar-coordinate example above, now read as a Hamiltonian flow: integrating Hamilton's equations for $H=\tfrac12\big(p_r^2+p_\varphi^2/r^2\big)$ returns the same straight line in Cartesian coordinates, with residual $3.2\times10^{-14}$, $p_\varphi$ constant, and $H$ conserved to $3.4\times10^{-14}$. It is the abelian counterpart of the correspondence the companion article *Similitudes Between Biquaternion Rotors and Hamiltonian Flow* establishes on the coadjoint orbit: the free particle is the case in which the carrier is abelian and the metric flat.
 
-The norm form is positive definite on $\mathbb{H}_{\mathbb{B}}$, so its metric is Riemannian and there are no null directions. The **norm-form cone** $N(\tilde{Q})=0$ is trivial on the real-quaternion sector; it becomes nontrivial on the material sector $\mathbb{M}_-$ of the complexified algebra, where the four-vector $\tilde{Q}=ict\,e_0+\mathbf x$ has the indefinite norm $N(\tilde{Q})=-c^2t^2+\mathbf x^2$, whose zero set is the light cone. The two statements are consistent: the indefinite norm appears when the central coordinate is imaginary, $q_0=ict$, which is exactly the passage from a real quaternion to a material-sector four-vector. The cone and its role in the symplectic geometry are the subject of the next article.
+The biquaternion norm is positive definite on $\mathbb{H}_{\mathbb{B}}$, so its metric is Riemannian and there are no null directions. The **biquaternion-norm cone** $N(\tilde{Q})=0$ is trivial on the real-quaternion sector; it becomes nontrivial on the material sector $\mathbb{M}_-$ of the complexified algebra, where the four-vector $\tilde{Q}=ict\,e_0+\mathbf x$ has the indefinite norm $N(\tilde{Q})=-c^2t^2+\mathbf x^2$, whose zero set is the light cone. The two statements are consistent: the indefinite norm appears when the central coordinate is imaginary, $q_0=ict$, which is exactly the passage from a real quaternion to a material-sector four-vector. The cone and its role in the symplectic geometry are the subject of the next article.
 
 ### The Rotor Action
 
@@ -297,7 +297,7 @@ Nothing in the paraphrase requires a Hilbert space, a state, or an operator. The
 
 ### The Fluctuation Factor and the Classical Hessian
 
-The prefactor $A[\tilde q_c]$ of the stationary-phase evaluation is built from the second variation of the previous section. In the biquaternion setting the fluctuation operator is the Jacobi operator $\mathcal{J}$, and its regularized determinant is the biquaternion form of the van Vleck factor. The zeros of the determinant are the conjugate points; the Maslov phase jumps there. This is the classical Morse theory of the action, expressed with the norm-form kinetic term.
+The prefactor $A[\tilde q_c]$ of the stationary-phase evaluation is built from the second variation of the previous section. In the biquaternion setting the fluctuation operator is the Jacobi operator $\mathcal{J}$, and its regularized determinant is the biquaternion form of the van Vleck factor. The zeros of the determinant are the conjugate points; the Maslov phase jumps there. This is the classical Morse theory of the action, expressed with the biquaternion-norm kinetic term.
 
 For the free particle the calculation is explicit. The Jacobi operator is $\mathcal{J}=-m\,d^2/dt^2$ with Dirichlet boundary conditions on the interval $[0,T]$. Its eigenfunctions are $\sin(n\pi t/T)$ with eigenvalues $\lambda_n=m n^2\pi^2/T^2$, $n=1,2,\dots$, and the zeta-regularized determinant is computed from the spectral zeta function
 
@@ -317,11 +317,11 @@ $$
 \det\mathcal{J}=\frac{2T}{\sqrt m}\;\propto\;T ,
 $$
 
-per real component. The determinant is therefore **linear** in $T$, and the fluctuation factor — its inverse square root — falls as $T^{-1/2}$ per real component. That is the standard free-particle van Vleck factor: the free propagator's prefactor in one dimension is $\sqrt{m/(2\pi i\hbar T)}\propto T^{-1/2}$. The free path has no conjugate points, and there is no Maslov phase. The computation is the standard one; the biquaternion formulation contributes the observation that the second variation is the Hessian of the norm form, so the classical stability problem and the norm-form geometry are the same problem.
+per real component. The determinant is therefore **linear** in $T$, and the fluctuation factor — its inverse square root — falls as $T^{-1/2}$ per real component. That is the standard free-particle van Vleck factor: the free propagator's prefactor in one dimension is $\sqrt{m/(2\pi i\hbar T)}\propto T^{-1/2}$. The free path has no conjugate points, and there is no Maslov phase. The computation is the standard one; the biquaternion formulation contributes the observation that the second variation is the Hessian of the biquaternion norm, so the classical stability problem and the biquaternion-norm geometry are the same problem.
 
 ### Rotor Paths and the Geometric Phase of the Sum
 
-The rotor action of the preceding section adds a feature that a scalar configuration cannot show. Its critical points are the one-parameter subgroups $\tilde R(t)=\tilde R(0)\exp(+\tfrac12\tilde\omega_bt)$, and about each of them the fluctuation operator is again built from the norm form. The group of unit quaternions is compact and not simply connected, $\pi_1(SU(2))=\mathbb{Z}_2$, so the critical paths joining a given pair of endpoints are not unique — the geodesics of a bi-invariant metric on a group occur in several families — and they fall into the two homotopy classes. The stationary-phase sum over rotor paths therefore carries the relative phases $e^{iS[\tilde R_c]/\hbar}$ of these critical paths. The transport of a rotor along a path is a parallel transport for a connection on the group, and the failure of the transport to be path-independent is its **holonomy**: the extra group element picked up around a closed loop. That holonomy, and the Hannay angle that an adiabatic classical system accumulates because of it, is the subject of the companion article *Hannay's Angles and the Classical Geometric Phase in Biquaternionic Form*; it is a classical geometric phase, and the rotor action is the classical object whose stationary-phase sum carries it.
+The rotor action of the preceding section adds a feature that a scalar configuration cannot show. Its critical points are the one-parameter subgroups $\tilde R(t)=\tilde R(0)\exp(+\tfrac12\tilde\omega_bt)$, and about each of them the fluctuation operator is again built from the biquaternion norm. The group of unit quaternions is compact and not simply connected, $\pi_1(SU(2))=\mathbb{Z}_2$, so the critical paths joining a given pair of endpoints are not unique — the geodesics of a bi-invariant metric on a group occur in several families — and they fall into the two homotopy classes. The stationary-phase sum over rotor paths therefore carries the relative phases $e^{iS[\tilde R_c]/\hbar}$ of these critical paths. The transport of a rotor along a path is a parallel transport for a connection on the group, and the failure of the transport to be path-independent is its **holonomy**: the extra group element picked up around a closed loop. That holonomy, and the Hannay angle that an adiabatic classical system accumulates because of it, is the subject of the companion article *Hannay's Angles and the Classical Geometric Phase in Biquaternionic Form*; it is a classical geometric phase, and the rotor action is the classical object whose stationary-phase sum carries it.
 
 ## The Hamilton–Jacobi Equation and the Classical Phase
 
@@ -350,7 +350,7 @@ The action principle and the classical limit as stationary phase take the follow
 - The action $S[\tilde q]=\int L\,dt$ is central-valued for a real-quaternion configuration, so its phase is unambiguous.
 - The principle is not restricted to finitely many coordinates: for a continuum the Lagrangian becomes a density and the Euler–Lagrange equations become field equations.
 - A non-conservative load cannot enter a potential, so no $T-V$ Lagrangian contains it and the plain form fails. The principle is then extended by virtual work, or replaced by **Herglotz's principle**, whose action solves $\dot S=L$ and whose Euler–Lagrange–Herglotz equation carries the dissipative term; the energy is replaced by a weighted conserved quantity, and the Hamiltonian form becomes a contact system on $(\tilde q,\tilde p,S)$.
-- The geodesic flow of the norm-form metric is a Hamiltonian flow, with Hamiltonian $H=N(\tilde p)/2m$. The free particle is the abelian case of the correspondence that the rotor articles exhibit on the coadjoint orbit.
+- The geodesic flow of the biquaternion-norm metric is a Hamiltonian flow, with Hamiltonian $H=N(\tilde p)/2m$. The free particle is the abelian case of the correspondence that the rotor articles exhibit on the coadjoint orbit.
 - Its first variation is the sum of a bulk term and a boundary term. The bulk term vanishes for all variations exactly when the quaternion Euler–Lagrange equation $\frac{d}{dt}\partial_{\dot{\tilde q}}L-\partial_{\tilde q}L=0$ holds. The boundary term is the symplectic potential $\theta=\mathrm{Sc}(\bar{\tilde p}\,d\tilde q)$, and on shell $dS=\theta_2-\theta_1$: the action generates the canonical transformation between its endpoints.
 - The phase-space action $\int[\mathrm{Sc}(\bar{\tilde p}\dot{\tilde q})-H]dt$ has Hamilton's equations as its critical-point equations.
 - The second variation defines the Jacobi operator $\mathcal{J}\delta\tilde q=-m\,\delta\ddot{\tilde q}-V''\delta\tilde q$ and the geodesic-deviation equation $m\ddot\xi+V''\xi=0$; conjugate points are where the classical extremum ceases to be a strict minimum.
@@ -358,7 +358,7 @@ The action principle and the classical limit as stationary phase take the follow
 - The stationary-phase lemma evaluates an oscillatory sum over trajectories as a sum over the critical points of the action, weighted by $e^{iS[\tilde q_c]/\hbar}$ and the fluctuation factor. The classical content is the identification of the critical points with the classical paths; the statement is a theorem about an integral and is not a quantisation.
 - The action as a function of its endpoint is Hamilton's principal function, and its eikonal equation is the Hamilton–Jacobi equation $\partial_tW+H(\tilde q,\partial_{\tilde q}W)=0$.
 
-The biquaternion algebra supplies a central-valued action, so the phase is well defined; a norm-form kinetic term, so the free dynamics is geodesic motion; and a rotor action on a noncommutative group, whose extremals are computed in closed form.
+The biquaternion algebra supplies a central-valued action, so the phase is well defined; a biquaternion-norm kinetic term, so the free dynamics is geodesic motion; and a rotor action on a noncommutative group, whose extremals are computed in closed form.
 
 ## Summary of Notation
 
@@ -373,7 +373,7 @@ The biquaternion algebra supplies a central-valued action, so the phase is well 
 | $\delta^2S$ | Second variation |
 | $\mathcal{J}$ | Jacobi (fluctuation) operator |
 | $\xi$ | Deviation field; $\mathcal{J}\xi=0$ is the Jacobi/geodesic-deviation equation |
-| $N(\tilde q)=\tilde q\bar{\tilde q}$ | Norm form |
+| $N(\tilde q)=\tilde q\bar{\tilde q}$ | Biquaternion norm |
 | $\tilde R\in\mathbb{H}_{\mathbb{B}}$, $N(\tilde R)=e_0$ | Rotor configuration |
 | $\tilde\omega_b,\tilde\omega_s$ | Body- and space-frame angular velocities |
 | $W(\tilde q,t)$ | Hamilton's principal function |

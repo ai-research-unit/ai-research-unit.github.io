@@ -7,7 +7,7 @@ A module is simple when it has no proper nonzero submodule, and semisimple when 
 
 The conventions are those fixed in *Modules over an Algebra*: $R$ is a commutative ring with identity, $A$ is a unital associative $R$-algebra, modules are left modules, $S$ denotes a simple module, $D=\operatorname{End}_A(S)$ its endomorphism division ring, and $J(A)$ is the Jacobson radical. The base is the commutative ring; several results below require the base field and are flagged where they do. Schur's lemma and the density theorem are established in *Automorphisms of Modules over an Algebra* and are used here without reproof.
 
-The plan is as follows. The simple modules are classified first: they are the quotients $A/\mathfrak{m}$ by maximal left ideals, and their endomorphism rings are division rings. The semisimple modules are then characterised by four equivalent conditions, and their endomorphism rings are computed as products of matrix rings over division rings. The algebras whose modules are all semisimple are identified by the Wedderburn–Artin theorem, and the obstruction to semisimplicity is isolated in the Jacobson radical. The last section fixes the composition series and the length, which measure how far a general module is from being semisimple.
+The plan is as follows. The simple modules are classified first: they are the quotients $A/\mathrm{m}$ by maximal left ideals, and their endomorphism rings are division rings. The semisimple modules are then characterised by four equivalent conditions, and their endomorphism rings are computed as products of matrix rings over division rings. The algebras whose modules are all semisimple are identified by the Wedderburn–Artin theorem, and the obstruction to semisimplicity is isolated in the Jacobson radical. The last section fixes the composition series and the length, which measure how far a general module is from being semisimple.
 
 ## Simple Modules
 
@@ -15,11 +15,11 @@ The plan is as follows. The simple modules are classified first: they are the qu
 
 A nonzero left $A$-module $S$ is **simple** if its only submodules are $0$ and $S$. The zero module is excluded by the definition. A submodule of a simple module is therefore either zero or the whole module, and every nonzero element of $S$ generates $S$, since $Am$ is a nonzero submodule.
 
-**Proposition.** A nonzero left $A$-module $S$ is simple if and only if $S \cong A/\mathfrak{m}$ for a maximal left ideal $\mathfrak{m} \subseteq A$.
+**Proposition.** A nonzero left $A$-module $S$ is simple if and only if $S \cong A/\mathrm{m}$ for a maximal left ideal $\mathrm{m} \subseteq A$.
 
-*Proof.* If $S$ is simple, choose $0 \neq m \in S$ and consider the $A$-linear surjection $A \to S$, $a \mapsto am$, which exists because $Am=S$. Its kernel is a left ideal $\mathfrak{m}$ with $A/\mathfrak{m}\cong S$, and $\mathfrak{m}$ is maximal: the submodules of $A/\mathfrak{m}$ correspond to the left ideals between $\mathfrak{m}$ and $A$, and simplicity of $A/\mathfrak{m}$ says there are none. Conversely, if $\mathfrak{m}$ is maximal, the submodules of $A/\mathfrak{m}$ correspond to the left ideals containing $\mathfrak{m}$, of which there are only $\mathfrak{m}$ and $A$; hence $A/\mathfrak{m}$ is simple. $\square$
+*Proof.* If $S$ is simple, choose $0 \neq m \in S$ and consider the $A$-linear surjection $A \to S$, $a \mapsto am$, which exists because $Am=S$. Its kernel is a left ideal $\mathrm{m}$ with $A/\mathrm{m}\cong S$, and $\mathrm{m}$ is maximal: the submodules of $A/\mathrm{m}$ correspond to the left ideals between $\mathrm{m}$ and $A$, and simplicity of $A/\mathrm{m}$ says there are none. Conversely, if $\mathrm{m}$ is maximal, the submodules of $A/\mathrm{m}$ correspond to the left ideals containing $\mathrm{m}$, of which there are only $\mathrm{m}$ and $A$; hence $A/\mathrm{m}$ is simple.
 
-Thus the simple left $A$-modules are exactly the quotients of the regular module by its maximal left ideals. When $A$ is commutative, the maximal left ideals are the maximal (two-sided) ideals, so the simple $A$-modules are the quotients $A/\mathfrak{M}$ by maximal ideals; when $A$ is a field, the only simple module is the field itself. When $A$ is noncommutative, distinct maximal left ideals can give isomorphic simple modules, and the classification up to isomorphism requires the radicals of §The Jacobson Radical.
+Thus the simple left $A$-modules are exactly the quotients of the regular module by its maximal left ideals. When $A$ is commutative, the maximal left ideals are the maximal (two-sided) ideals, so the simple $A$-modules are the quotients $A/\mathrm{M}$ by maximal ideals; when $A$ is a field, the only simple module is the field itself. When $A$ is noncommutative, distinct maximal left ideals can give isomorphic simple modules, and the classification up to isomorphism requires the radicals of §The Jacobson Radical.
 
 ### Schur's lemma
 
@@ -45,7 +45,7 @@ The lemma is proved in *Automorphisms of Modules over an Algebra*; it is recalle
 
 **(e)** Over the polynomial algebra $F[x]$, the simple modules are the quotients $F[x]/(p)$ for irreducible $p$, one for each maximal ideal $(p)$; the zero ideal is prime but not maximal, so the field of fractions $F(x)=F[x]_{(0)}$ is an $F[x]$-module that is not simple. Over an algebraically closed field the irreducible polynomials are the linear ones, so the finite-dimensional simple modules are the one-dimensional modules $F[x]/(x-\lambda)$, $\lambda \in F$.
 
-**(f)** Over a commutative ring $R$, the simple modules are the quotients $R/\mathfrak{M}$ by maximal ideals; when $R$ is a field these are copies of the field.
+**(f)** Over a commutative ring $R$, the simple modules are the quotients $R/\mathrm{M}$ by maximal ideals; when $R$ is a field these are copies of the field.
 
 ## Semisimple Modules
 
@@ -60,7 +60,7 @@ A left $A$-module $M$ is **semisimple**, or **completely reducible**, if it is a
 3. Every submodule $N \subseteq M$ is a direct summand of $M$.
 4. Every submodule $N \subseteq M$ has a complement, i.e. $M=N \oplus N'$ for some submodule $N'$.
 
-*Proof sketch.* The implication (2)$\Rightarrow$(1) and (4)$\Leftrightarrow$(3) are immediate. For (1)$\Rightarrow$(3), let $N$ be a submodule and use Zorn's lemma on the set of submodules disjoint from $N$ to obtain a maximal such $L$; if $N+L \neq M$, a simple summand of $M$ not contained in $N+L$ can be adjoined to $L$, contradicting maximality, so $M=N\oplus L$. For (3)$\Rightarrow$(2), write $M=\operatorname{soc}(M)\oplus N'$ using (3), and suppose $N'\neq0$; fix $0\neq x\in N'$ and let $L$ be maximal among the submodules of $N'$ not containing $x$, which exists by Zorn's lemma. By (3), $L$ is a direct summand, say $N'=L\oplus K$, and writing $x=l+y$ with $l\in L$ one has $0\neq y\in K$. Every nonzero submodule $Q\subseteq K$ contains $y$, since otherwise $L\oplus Q$ would be a strictly larger submodule of $N'$ not containing $x$. Hence $Ay$ is contained in every nonzero submodule of $K$, and since by (3) the submodule $Ay$ has a complement in $K$, that complement must be $0$; so $K=Ay$, and $K$ is simple because every nonzero submodule of it contains $y$. Then $K\subseteq\operatorname{soc}(M)$, contradicting $N'\cap\operatorname{soc}(M)=0$. $\square$
+*Proof sketch.* The implication (2)$\Rightarrow$(1) and (4)$\Leftrightarrow$(3) are immediate. For (1)$\Rightarrow$(3), let $N$ be a submodule and use Zorn's lemma on the set of submodules disjoint from $N$ to obtain a maximal such $L$; if $N+L \neq M$, a simple summand of $M$ not contained in $N+L$ can be adjoined to $L$, contradicting maximality, so $M=N\oplus L$. For (3)$\Rightarrow$(2), write $M=\operatorname{soc}(M)\oplus N'$ using (3), and suppose $N'\neq0$; fix $0\neq x\in N'$ and let $L$ be maximal among the submodules of $N'$ not containing $x$, which exists by Zorn's lemma. By (3), $L$ is a direct summand, say $N'=L\oplus K$, and writing $x=l+y$ with $l\in L$ one has $0\neq y\in K$. Every nonzero submodule $Q\subseteq K$ contains $y$, since otherwise $L\oplus Q$ would be a strictly larger submodule of $N'$ not containing $x$. Hence $Ay$ is contained in every nonzero submodule of $K$, and since by (3) the submodule $Ay$ has a complement in $K$, that complement must be $0$; so $K=Ay$, and $K$ is simple because every nonzero submodule of it contains $y$. Then $K\subseteq\operatorname{soc}(M)$, contradicting $N'\cap\operatorname{soc}(M)=0$.
 
 A submodule and a quotient of a semisimple module are semisimple, and a direct sum of semisimple modules is semisimple. In particular, every direct summand of a semisimple module is semisimple, and $M$ is semisimple exactly when every element of $M$ lies in a direct sum of simple submodules.
 
@@ -100,7 +100,7 @@ The algebra $A$ is **semisimple** if the left regular module ${}_A A$ is semisim
 
 **Proposition.** If $A$ is semisimple, every left $A$-module is semisimple.
 
-*Proof.* Every module is a quotient of a free module, hence of a direct sum of copies of ${}_A A$; quotients of semisimple modules are semisimple. $\square$
+*Proof.* Every module is a quotient of a free module, hence of a direct sum of copies of ${}_A A$; quotients of semisimple modules are semisimple.
 
 Thus over a semisimple algebra the module theory is completely determined by the set of simple modules and their endomorphism division rings.
 
@@ -114,7 +114,7 @@ $$
 
 for division rings $D_1,\dots,D_r$ and positive integers $n_1,\dots,n_r$. The number $r$, the integers $n_i$ and the division rings $D_i$ are determined by $A$ up to permutation of the factors.
 
-*Proof sketch.* Write ${}_A A=\bigoplus_i S_i^{\oplus n_i}$ with $S_i$ pairwise non-isomorphic simple. By the endomorphism computation of §Isotypic decomposition, $\operatorname{End}_A({}_A A)\cong\prod_i M_{n_i}(\operatorname{End}_A(S_i))$. But $\operatorname{End}_A({}_A A)\cong A^{\mathrm{op}}$ by the theorem on the regular module of *Modules over an Algebra*, so $A^{\mathrm{op}}\cong\prod_i M_{n_i}(\operatorname{End}_A(S_i))$ and, taking opposites, $A\cong\prod_i M_{n_i}(\operatorname{End}_A(S_i)^{\mathrm{op}})$. This is a product of matrix rings over the division rings $\operatorname{End}_A(S_i)^{\mathrm{op}}$, which is the stated form with $D_i=\operatorname{End}_A(S_i)^{\mathrm{op}}$. The uniqueness of the factors is the Jordan–Hölder theorem applied to the regular module together with the division-ring form of Schur's lemma. $\square$
+*Proof sketch.* Write ${}_A A=\bigoplus_i S_i^{\oplus n_i}$ with $S_i$ pairwise non-isomorphic simple. By the endomorphism computation of §Isotypic decomposition, $\operatorname{End}_A({}_A A)\cong\prod_i M_{n_i}(\operatorname{End}_A(S_i))$. But $\operatorname{End}_A({}_A A)\cong A^{\mathrm{op}}$ by the theorem on the regular module of *Modules over an Algebra*, so $A^{\mathrm{op}}\cong\prod_i M_{n_i}(\operatorname{End}_A(S_i))$ and, taking opposites, $A\cong\prod_i M_{n_i}(\operatorname{End}_A(S_i)^{\mathrm{op}})$. This is a product of matrix rings over the division rings $\operatorname{End}_A(S_i)^{\mathrm{op}}$, which is the stated form with $D_i=\operatorname{End}_A(S_i)^{\mathrm{op}}$. The uniqueness of the factors is the Jordan–Hölder theorem applied to the regular module together with the division-ring form of Schur's lemma.
 
 Several consequences are immediate.
 
@@ -147,7 +147,7 @@ The **Jacobson radical** $J(A)$ of $A$ is the intersection of all maximal left i
 4. $1-ax$ is right-invertible for every $x \in A$.
 5. $1-xay$ is invertible for all $x,y \in A$.
 
-*Proof sketch.* The equivalence of (1) and (2) follows from the description of simple modules as $A/\mathfrak{m}$: $a$ annihilates $A/\mathfrak{m}$ precisely when $a \in \mathfrak{m}$ for every maximal left ideal. For (2)$\Rightarrow$(3), if $1-xa$ had no left inverse then $A(1-xa)$ lies in a maximal left ideal, which contains $a$ and $xa$, whence $1 \in$ that ideal, a contradiction; the converse and the right-handed statements are symmetric. $\square$
+*Proof sketch.* The equivalence of (1) and (2) follows from the description of simple modules as $A/\mathrm{m}$: $a$ annihilates $A/\mathrm{m}$ precisely when $a \in \mathrm{m}$ for every maximal left ideal. For (2)$\Rightarrow$(3), if $1-xa$ had no left inverse then $A(1-xa)$ lies in a maximal left ideal, which contains $a$ and $xa$, whence $1 \in$ that ideal, a contradiction; the converse and the right-handed statements are symmetric.
 
 The radical is thus the obstruction to semisimplicity, and it is a two-sided ideal precisely because of the symmetric form (5).
 
@@ -155,7 +155,7 @@ The radical is thus the obstruction to semisimplicity, and it is a two-sided ide
 
 **Theorem (Jacobson).** $J(A/J(A))=0$ for every ring $A$. If in addition $A$ is left artinian, then $A/J(A)$ is semisimple, and $J(A)$ is nilpotent and is the largest nilpotent left ideal.
 
-*Proof sketch.* The maximal left ideals of $A/J(A)$ are the images of the maximal left ideals of $A$, so their intersection is zero, giving $J(A/J(A))=0$; this alone does not make $A/J(A)$ semisimple, as $A=F[x]$ shows. When $A$ is left artinian its radical is nilpotent, by the standard induction on the length of the regular module. For semisimplicity, take a nonzero left ideal of the artinian ring $A/J(A)$; it contains a minimal left ideal $I$. Since a left ideal with $I^2=0$ lies in the Jacobson radical, and $J(A/J(A))=0$, one has $I^2\neq0$; choosing $a\in I$ with $Ia\neq0$ gives $Ia=I$, hence $e\in I$ with $ea=a$, and the left ideal $\{y\in I : ya=0\}$ is proper (it does not contain $e$) hence zero, so $e^2-e\in I$ and $(e^2-e)a=0$ force $e^2=e$ and $I=Ae$. An idempotent makes $Ae$ a direct summand of ${}_AA$, so $I$ is a simple direct summand, and a maximal family of such summands has sum all of $A/J(A)$ by the usual Zorn argument. $\square$
+*Proof sketch.* The maximal left ideals of $A/J(A)$ are the images of the maximal left ideals of $A$, so their intersection is zero, giving $J(A/J(A))=0$; this alone does not make $A/J(A)$ semisimple, as $A=F[x]$ shows. When $A$ is left artinian its radical is nilpotent, by the standard induction on the length of the regular module. For semisimplicity, take a nonzero left ideal of the artinian ring $A/J(A)$; it contains a minimal left ideal $I$. Since a left ideal with $I^2=0$ lies in the Jacobson radical, and $J(A/J(A))=0$, one has $I^2\neq0$; choosing $a\in I$ with $Ia\neq0$ gives $Ia=I$, hence $e\in I$ with $ea=a$, and the left ideal $\{y\in I : ya=0\}$ is proper (it does not contain $e$) hence zero, so $e^2-e\in I$ and $(e^2-e)a=0$ force $e^2=e$ and $I=Ae$. An idempotent makes $Ae$ a direct summand of ${}_AA$, so $I$ is a simple direct summand, and a maximal family of such summands has sum all of $A/J(A)$ by the usual Zorn argument.
 
 So every artinian algebra is an extension of a semisimple algebra by a nilpotent radical, and the module theory of $A$ is the module theory of $A/J(A)$ together with the deformations introduced by $J(A)$. The precise statement is that $A$ and $A/J(A)$ have the same simple modules: every simple $A$-module is annihilated by $J(A)$ by characterization (2), hence is a simple $A/J(A)$-module, and conversely by inflation.
 
@@ -187,7 +187,7 @@ with the convention that the sum over an empty family is $0$.
 
 **Proposition.** $\operatorname{soc}(M)$ is the largest semisimple submodule of $M$; it is the direct sum of the simple submodules of $M$, and $M$ is semisimple if and only if $\operatorname{soc}(M)=M$.
 
-*Proof.* A sum of simple modules is semisimple, since by the theorem of §Semisimple Modules it is a direct sum of a subfamily of them; a submodule of a semisimple module is semisimple, so every semisimple submodule of $M$ is contained in the sum of its simple submodules, which is $\operatorname{soc}(M)$; this proves maximality. Writing $\operatorname{soc}(M)$ as the sum of the simple submodules indexed by isomorphism class and applying the isotypic decomposition of §Semisimple Modules gives the direct-sum statement. The final equivalence is immediate from maximality, since a semisimple $M$ is spanned by its simple submodules. $\square$
+*Proof.* A sum of simple modules is semisimple, since by the theorem of §Semisimple Modules it is a direct sum of a subfamily of them; a submodule of a semisimple module is semisimple, so every semisimple submodule of $M$ is contained in the sum of its simple submodules, which is $\operatorname{soc}(M)$; this proves maximality. Writing $\operatorname{soc}(M)$ as the sum of the simple submodules indexed by isomorphism class and applying the isotypic decomposition of §Semisimple Modules gives the direct-sum statement. The final equivalence is immediate from maximality, since a semisimple $M$ is spanned by its simple submodules.
 
 ### Essential submodules
 
@@ -195,7 +195,7 @@ A submodule $N\subseteq M$ is **essential** if $N\cap N'\neq0$ for every nonzero
 
 **Theorem.** $\operatorname{soc}(M)$ is contained in every essential submodule, and if $M$ has finite length then $\operatorname{soc}(M)$ is itself essential, so that $\operatorname{soc}(M)$ is the intersection of the essential submodules of $M$.
 
-*Proof.* If $N$ is essential and $S\subseteq M$ is simple, then $S\cap N$ is a nonzero submodule of $S$, hence equal to $S$, so $S\subseteq N$; summing over the simple submodules gives $\operatorname{soc}(M)\subseteq N$. Suppose now that $M$ has finite length and let $0\neq N'\subseteq M$. Then $N'$ has finite length and is nonzero, so it contains a minimal nonzero submodule, which is simple; hence $N'\cap\operatorname{soc}(M)\neq0$, and $\operatorname{soc}(M)$ is essential. Since $\operatorname{soc}(M)$ is then one of the essential submodules and is contained in all of them, the intersection is $\operatorname{soc}(M)$. $\square$
+*Proof.* If $N$ is essential and $S\subseteq M$ is simple, then $S\cap N$ is a nonzero submodule of $S$, hence equal to $S$, so $S\subseteq N$; summing over the simple submodules gives $\operatorname{soc}(M)\subseteq N$. Suppose now that $M$ has finite length and let $0\neq N'\subseteq M$. Then $N'$ has finite length and is nonzero, so it contains a minimal nonzero submodule, which is simple; hence $N'\cap\operatorname{soc}(M)\neq0$, and $\operatorname{soc}(M)$ is essential. Since $\operatorname{soc}(M)$ is then one of the essential submodules and is contained in all of them, the intersection is $\operatorname{soc}(M)$.
 
 ### The socle of the regular module
 
@@ -237,7 +237,7 @@ A module has finite length if and only if it is both noetherian and artinian, i.
 
 **Proposition.** If $0 \to L \to M \to N \to 0$ is a short exact sequence of modules of finite length, then $\ell_A(M)=\ell_A(L)+\ell_A(N)$, and for each simple $S$, $[M:S]=[L:S]+[N:S]$.
 
-*Proof.* Concatenate a composition series of $L$ with the preimage of a composition series of $N$. $\square$
+*Proof.* Concatenate a composition series of $L$ with the preimage of a composition series of $N$.
 
 The length is therefore additive on short exact sequences, and it measures the deviation of $M$ from semisimplicity: $M$ is semisimple exactly when it is the direct sum of its simple submodules, equivalently when every short exact sequence $0\to L\to M\to N\to 0$ splits.
 
@@ -259,7 +259,7 @@ The length is therefore additive on short exact sequences, and it measures the d
 
 ## Summary
 
-A nonzero module is simple when it has no proper nonzero submodule; the simple left $A$-modules are the quotients $A/\mathfrak{m}$ by maximal left ideals, up to isomorphism. Schur's lemma makes the endomorphism ring of a simple module a division ring $D$ and its automorphism group $D^{\times}$. A module is semisimple when it is a sum of simples, equivalently a direct sum of simples, equivalently when every submodule is a direct summand; the isotypic decomposition groups the simple summands by isomorphism class, and the endomorphism ring of a semisimple module is a product $\prod_i M_{n_i}(\operatorname{End}_A(S_i))$ of matrix rings over the endomorphism division rings of its simple constituents. An algebra is semisimple when its regular module is, equivalently when every module is; the Wedderburn–Artin theorem then writes $A\cong\prod_i M_{n_i}(D_i)$, the factors being determined up to permutation, and the simple modules are the defining modules $D_i^{n_i}$.
+A nonzero module is simple when it has no proper nonzero submodule; the simple left $A$-modules are the quotients $A/\mathrm{m}$ by maximal left ideals, up to isomorphism. Schur's lemma makes the endomorphism ring of a simple module a division ring $D$ and its automorphism group $D^{\times}$. A module is semisimple when it is a sum of simples, equivalently a direct sum of simples, equivalently when every submodule is a direct summand; the isotypic decomposition groups the simple summands by isomorphism class, and the endomorphism ring of a semisimple module is a product $\prod_i M_{n_i}(\operatorname{End}_A(S_i))$ of matrix rings over the endomorphism division rings of its simple constituents. An algebra is semisimple when its regular module is, equivalently when every module is; the Wedderburn–Artin theorem then writes $A\cong\prod_i M_{n_i}(D_i)$, the factors being determined up to permutation, and the simple modules are the defining modules $D_i^{n_i}$.
 
 The obstruction to semisimplicity is the Jacobson radical $J(A)$, the intersection of the maximal left ideals, characterized as the set of elements annihilating every simple module and as the set of $a$ for which every $1-xay$ is invertible. It is a two-sided ideal and $J(A/J(A))=0$ always, but $A/J(A)$ is semisimple only in the artinian case, where $J(A)$ is also the largest nilpotent ideal. Hence $A$ is semisimple precisely when it is left artinian with zero radical, and over a finite-dimensional algebra this is simply $J(A)=0$. Composition series and their length make the deviation explicit and are additive on short exact sequences. The examples — fields and division rings, matrix algebras, products of fields, polynomial algebras, local algebras, group algebras and the biquaternion algebra — show the range of the theory; over a field of characteristic not dividing the order of a finite group, the group algebra is semisimple, which is the precise algebraic content of Maschke's theorem.
 
@@ -271,7 +271,7 @@ The obstruction to semisimplicity is the Jacobson radical $J(A)$, the intersecti
 | $A$ | unital associative $R$-algebra |
 | $F$ | a field |
 | $S$, $T$ | simple left $A$-modules |
-| $A/\mathfrak{m}$ | simple module from a maximal left ideal $\mathfrak{m}$ |
+| $A/\mathrm{m}$ | simple module from a maximal left ideal $\mathrm{m}$ |
 | $D=\operatorname{End}_A(S)$ | division ring of a simple module |
 | $D_i=\operatorname{End}_A(S_i)^{\mathrm{op}}$ | division ring of the $i$-th Wedderburn factor, $M_{n_i}(D_i)$ |
 | $\operatorname{End}_A(M)$ | endomorphism ring of $M$ |

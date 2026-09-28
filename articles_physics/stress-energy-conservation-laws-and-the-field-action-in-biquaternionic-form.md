@@ -32,7 +32,7 @@ $$
 \Box = \tilde{\nabla}\bar{\tilde{\nabla}} = \bar{\tilde{\nabla}}\tilde{\nabla} = \partial_{ict}^2+\Delta = -\frac{1}{c^2}\partial_t^2+\Delta .
 $$
 
-The norm form is $N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}=\sum_\mu Q_\mu^2$ — level 1, the identity $\mathrm{diag}(+1,+1,+1,+1)$ on $\mathbb{C}$ — and its restriction to the real material slice is the level-2 form $\eta=\mathrm{diag}(-1,+1,+1,+1)$. The scalar mass parameter is $\mu = mc/\hbar$, so that the scalar equation is $(\Box-\mu^2)\tilde{\Phi}=0$, matching the companion article *The Klein–Gordon Equation in Biquaternionic Form*. The field strength is $\tilde{F}=i\sqrt{\epsilon}\,\mathbf{E}-\sqrt{\mu}\,\mathbf{H}$, the source is $\tilde{R}=\frac{i\rho}{\sqrt{\epsilon}}e_0+\sqrt{\mu}\,\mathbf{J}$, and the Maxwell equation is $\tilde{\nabla}\tilde{F}=-\tilde{R}$, all as fixed in the companion article *Maxwell's Equations in the Biquaternionic Formulation*. The energy density is $W=\tfrac12(\epsilon\mathbf{E}^2+\mu\mathbf{H}^2)$ and the Poynting vector is $\mathbf{S}=\mathbf{E}\times\mathbf{H}$. The trace formula is $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$. Throughout, $c=1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ its vacuum value.
+The biquaternion norm is $N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}=\sum_\mu Q_\mu^2$ — level 1, the identity $\mathrm{diag}(+1,+1,+1,+1)$ on $\mathbb{C}$ — and its restriction to the real material slice is the level-2 form $\eta=\mathrm{diag}(-1,+1,+1,+1)$. The scalar mass parameter is $\mu = mc/\hbar$, so that the scalar equation is $(\Box-\mu^2)\tilde{\Phi}=0$, matching the companion article *The Klein–Gordon Equation in Biquaternionic Form*. The field strength is $\tilde{F}=i\sqrt{\epsilon}\,\mathbf{E}-\sqrt{\mu}\,\mathbf{H}$, the source is $\tilde{R}=\frac{i\rho}{\sqrt{\epsilon}}e_0+\sqrt{\mu}\,\mathbf{J}$, and the Maxwell equation is $\tilde{\nabla}\tilde{F}=-\tilde{R}$, all as fixed in the companion article *Maxwell's Equations in the Biquaternionic Formulation*. The energy density is $W=\tfrac12(\epsilon\mathbf{E}^2+\mu\mathbf{H}^2)$ and the Poynting vector is $\mathbf{S}=\mathbf{E}\times\mathbf{H}$. The trace formula is $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$. Throughout, $c=1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ its vacuum value.
 
 **A sign warning.** As in the companion exercise *Exercise: The Electromagnetic Energy–Momentum Tensor*, the mixed component $T^0{}_0$ carries a sign in the $ict$ convention: for the electromagnetic field $T^0{}_0=-W$, while the physical energy density is the contravariant $T^{00}=W$. This article keeps the same convention for the scalar field and states it at each tensor, so that the two fields can be compared without a sign discrepancy.
 
@@ -96,7 +96,7 @@ S_{\mathrm{em}} = -\frac14\int F_{\mu\nu}F^{\mu\nu}\,d^4x ,
 F_{\mu\nu}F^{\mu\nu} = 2\mu\,\mathrm{Re}\,N(\tilde{F}) ,
 $$
 
-the second equality being the statement, established in the companion article *The Field-Strength Biquaternion and Its Invariants*, that the two Lorentz invariants of the free field are the real and imaginary parts of the norm form $N(\tilde{F})=\sum_kF_k^2$. Varying with respect to $A_\nu$ gives the source-free Maxwell equation
+the second equality being the statement, established in the companion article *The Field-Strength Biquaternion and Its Invariants*, that the two Lorentz invariants of the free field are the real and imaginary parts of the biquaternion norm $N(\tilde{F})=\sum_kF_k^2$. Varying with respect to $A_\nu$ gives the source-free Maxwell equation
 
 $$
 \partial_\mu F^{\mu\nu} = 0 ,
@@ -114,7 +114,7 @@ $$
 
 the form fixed in the companion article *Maxwell's Equations in the Biquaternionic Formulation*. Its content is exactly the four component equations together with the integrability condition $\mathrm{Sc}(\bar{\tilde{\nabla}}\tilde{R})=0$, equivalent to charge conservation.
 
-The two actions exhibit the same pattern. The kinetic term is the norm form of the derivative, $-\tfrac12\partial_\mu\tilde{\Phi}\partial^\mu\bar{\tilde{\Phi}}$ for the scalar and $-\tfrac14 F_{\mu\nu}F^{\mu\nu}\propto N(\tilde{F})$ for the electromagnetic field; the equation of motion is the vanishing of the appropriate first-order or second-order operator; and the conservation of the source current is the integrability condition of the equation, not a separate law.
+The two actions exhibit the same pattern. The kinetic term is the biquaternion norm of the derivative, $-\tfrac12\partial_\mu\tilde{\Phi}\partial^\mu\bar{\tilde{\Phi}}$ for the scalar and $-\tfrac14 F_{\mu\nu}F^{\mu\nu}\propto N(\tilde{F})$ for the electromagnetic field; the equation of motion is the vanishing of the appropriate first-order or second-order operator; and the conservation of the source current is the integrability condition of the equation, not a separate law.
 
 ## Noether's Theorem and the Stress–Energy of Translation
 
@@ -304,15 +304,15 @@ for the Hermitian form $\tilde{W}=\tfrac12\tilde{F}\tilde{F}^\dagger$, which the
 
 ## What the Algebra Supplies and What Is Transcribed
 
-**Supplied by the algebra.** The biquaternion bilinear form of the electromagnetic stress–energy, $T^\mu{}_\nu=\tfrac12\mathrm{Sc}(\tilde{F}\mathcal{E}_\mu\tilde{F}^\dagger\mathcal{E}_\nu)$, with the basis elements of $\mathbb{M}_-$ supplying the two index directions; the identification of the free-field Lagrangian with the norm form of the field strength, $\tfrac14F_{\mu\nu}F^{\mu\nu}\propto\mathrm{Re}\,N(\tilde{F})$, so that the action is built from the same norm form that defines the cone; the packaging of the scalar action, whose equation is the biquaternionic Klein–Gordon equation because $\Box=\tilde{\nabla}\bar{\tilde{\nabla}}$ is central and scalar; and the interchange law of the divergence, field action and conserved current that lets the divergence of the field tensor be read as the source term of the matter.
+**Supplied by the algebra.** The biquaternion bilinear form of the electromagnetic stress–energy, $T^\mu{}_\nu=\tfrac12\mathrm{Sc}(\tilde{F}\mathcal{E}_\mu\tilde{F}^\dagger\mathcal{E}_\nu)$, with the basis elements of $\mathbb{M}_-$ supplying the two index directions; the identification of the free-field Lagrangian with the biquaternion norm of the field strength, $\tfrac14F_{\mu\nu}F^{\mu\nu}\propto\mathrm{Re}\,N(\tilde{F})$, so that the action is built from the same biquaternion norm that defines the cone; the packaging of the scalar action, whose equation is the biquaternionic Klein–Gordon equation because $\Box=\tilde{\nabla}\bar{\tilde{\nabla}}$ is central and scalar; and the interchange law of the divergence, field action and conserved current that lets the divergence of the field tensor be read as the source term of the matter.
 
 **Standard field theory transcribed.** The Euler–Lagrange equations, Noether's theorem, the canonical stress–energy tensor, its improvement to a symmetric gauge-invariant form, the positivity of the scalar energy, the Poynting theorem and the Lorentz four-force are standard. The algebra reproduces them in its own notation; it does not add a conservation law or modify one.
 
-**Interpretation.** The reading of the bilinear as an element whose Hermitian part is a positive energy density, and of the algebra's basis elements as the index directions, is the framework's structural reading; the tensor components themselves are the standard ones. The one genuinely algebraic statement is that the free Lagrangians of the scalar and electromagnetic fields are both the norm form of their respective objects — the derivative for the scalar and the field strength for the gauge field — so that the action and the causal cone are constructed from the same quadratic form.
+**Interpretation.** The reading of the bilinear as an element whose Hermitian part is a positive energy density, and of the algebra's basis elements as the index directions, is the framework's structural reading; the tensor components themselves are the standard ones. The one genuinely algebraic statement is that the free Lagrangians of the scalar and electromagnetic fields are both the biquaternion norm of their respective objects — the derivative for the scalar and the field strength for the gauge field — so that the action and the causal cone are constructed from the same quadratic form.
 
 ## Open Questions
 
-1. **The gravitational coupling.** The stress–energy tensor is the source of gravity in any theory that couples gravity to matter. The framework so far is flat; whether the biquaternion algebra, whose norm form supplies the flat metric, can carry a dynamical metric in which $T^{\mu\nu}$ acts as source is the same open question the foundational articles record for curved spacetime.
+1. **The gravitational coupling.** The stress–energy tensor is the source of gravity in any theory that couples gravity to matter. The framework so far is flat; whether the biquaternion algebra, whose biquaternion norm supplies the flat metric, can carry a dynamical metric in which $T^{\mu\nu}$ acts as source is the same open question the foundational articles record for curved spacetime.
 
 2. **The scalar field's trace and conformal coupling.** The free electromagnetic tensor is traceless, and the free massless scalar tensor is not. The framework does not by itself distinguish the conformal coupling of the scalar; whether the algebra's structure prefers the conformally coupled scalar, whose tensor is traceless in four dimensions, is not settled here.
 
@@ -327,7 +327,7 @@ The conventions of the construction are those of the following companion article
 - Companion article *Conventions in the Biquaternion Universe*, for the algebra and basis, the conjugations, the real subspaces, the metric levels and the d'Alembertian.
 - Companion article *The Klein–Gordon Equation in Biquaternionic Form*, for the scalar equation and its mass parameter.
 - Companion article *Maxwell's Equations in the Biquaternionic Formulation*, for the field strength, the source biquaternion and the biquaternion Maxwell equation.
-- Companion article *The Field-Strength Biquaternion and Its Invariants*, for the norm form of the field strength and the Lorentz invariants.
+- Companion article *The Field-Strength Biquaternion and Its Invariants*, for the biquaternion norm of the field strength and the Lorentz invariants.
 - Companion article *Exercise: The Electromagnetic Energy–Momentum Tensor*, for the biquaternion bilinear form of the tensor and its component table.
 - Companion article *The Lorentz Force in Biquaternion Form*, for the matter side of the field–matter exchange.
 - Companion article *Noether's Theorem in Biquaternionic Form*, for the general construction of the conserved currents.
@@ -382,7 +382,7 @@ symmetric on raising the index, traceless in the Minkowski pairing, and conserve
 | $\mathbb{M}_-$, $\mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\mathcal{E}_\mu\in\{ie_0,e_1,e_2,e_3\}$ | Basis of $\mathbb{M}_-$; supplies the tensor index directions |
 | $\tilde{\nabla},\bar{\tilde{\nabla}}$, $\Box=\tilde{\nabla}\bar{\tilde{\nabla}}=\partial_{ict}^2+\Delta$ | Gradient, conjugate gradient, d'Alembertian |
-| $N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}=\sum_\mu Q_\mu^2$ | Norm form; level-1 identity on $\mathbb{C}$ |
+| $N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}=\sum_\mu Q_\mu^2$ | Biquaternion norm; level-1 identity on $\mathbb{C}$ |
 | $\eta=\mathrm{diag}(-1,+1,+1,+1)$ | Level-2 $ict$-coordinate metric |
 | $S=\int\mathcal{L}\,d^4x$ | Action; $\mathcal{L}$ the Lagrangian density |
 | $\mathcal{L}_\phi=-\tfrac12\partial_\mu\tilde{\Phi}\partial^\mu\bar{\tilde{\Phi}}-\tfrac12\mu^2\tilde{\Phi}\bar{\tilde{\Phi}}$ | Scalar Lagrangian |

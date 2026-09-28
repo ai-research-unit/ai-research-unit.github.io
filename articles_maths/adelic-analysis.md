@@ -21,9 +21,9 @@ $$
 $$
 whenever $A_v$ is a measurable subset of $K_v$ equal to $\mathcal{O}_v$ for almost every finite $v$ and equal to $\{0\}$ for almost every infinite $v$; the product converges because $\mu_v(\mathcal{O}_v) = 1$ for almost every $v$. The measure $\mu$ is translation-invariant, and it is the Tamagawa measure of $\mathbb{A}$.
 
-**Proof.** Existence and translation invariance follow because the restricted product is locally compact and the product of the local measures is finite on the basic compact open subgroups $\prod_{v \notin S}\mathcal{O}_v \times \prod_{v \in S}\{0\}$ for finite $S$ containing the infinite places, which form a neighbourhood basis of $0$; these subgroups determine the measure, and uniqueness is the uniqueness of the Haar measure of *Locally Compact Groups and Haar Measure*. $\square$
+**Proof.** Existence and translation invariance follow because the restricted product is locally compact and the product of the local measures is finite on the basic compact open subgroups $\prod_{v \notin S}\mathcal{O}_v \times \prod_{v \in S}\{0\}$ for finite $S$ containing the infinite places, which form a neighbourhood basis of $0$; these subgroups determine the measure, and uniqueness is the uniqueness of the Haar measure of *Locally Compact Groups and Haar Measure*.
 
-**Remark (the local picture).** At a finite place the measure is that of *p-adic Integration*, with $\mu_v(\mathcal{O}_v) = 1$ and $\mu_v(\mathfrak{p}_v^n) = q_v^{-n}$; the measure of $\mathcal{O}_v^\times$ is $1 - q_v^{-1}$. At the real place the measure is Lebesgue measure, and at a complex place twice the plane Lebesgue measure. The normalisation at the finite places is the one that makes the indicator of the ring of integers self-dual, and the normalisation at the infinite places is the one that makes the Gaussian self-dual; both are needed for the product formula of the next section to take its clean form.
+**Remark (the local picture).** At a finite place the measure is that of *p-adic Integration*, with $\mu_v(\mathcal{O}_v) = 1$ and $\mu_v(\mathrm{P}_v^n) = q_v^{-n}$; the measure of $\mathcal{O}_v^\times$ is $1 - q_v^{-1}$. At the real place the measure is Lebesgue measure, and at a complex place twice the plane Lebesgue measure. The normalisation at the finite places is the one that makes the indicator of the ring of integers self-dual, and the normalisation at the infinite places is the one that makes the Gaussian self-dual; both are needed for the product formula of the next section to take its clean form.
 
 ### The Volume of the Adele Class Group
 
@@ -33,7 +33,7 @@ $$
 $$
 where $h$ is the class number, $R$ the regulator, $w$ the number of roots of unity in $K$ and $d_K$ the discriminant. In particular $\operatorname{vol}(\mathbb{A}_\mathbb{Q}/\mathbb{Q}) = 1$.
 
-**Proof sketch.** A fundamental domain is the product of a fundamental domain for the ideal class group with a fundamental domain for the unit lattice, whose covolume is the regulator; the factors $2^{r_1}$ and $(2\pi)^{r_2}$ come from the normalisations of the local measures at the infinite places, and $w$ and $\sqrt{\lvert d_K\rvert}$ from the torsion and the discriminant. For $K = \mathbb{Q}$ the fundamental domain is $[0,1) \times \prod_p \mathbb{Z}_p$, of measure $1$. The computation is the analytic form of the finiteness of the class number and Dirichlet's unit theorem. $\square$
+**Proof sketch.** A fundamental domain is the product of a fundamental domain for the ideal class group with a fundamental domain for the unit lattice, whose covolume is the regulator; the factors $2^{r_1}$ and $(2\pi)^{r_2}$ come from the normalisations of the local measures at the infinite places, and $w$ and $\sqrt{\lvert d_K\rvert}$ from the torsion and the discriminant. For $K = \mathbb{Q}$ the fundamental domain is $[0,1) \times \prod_p \mathbb{Z}_p$, of measure $1$. The computation is the analytic form of the finiteness of the class number and Dirichlet's unit theorem.
 
 **Theorem (the idele class group).** The idele class group $\mathbb{A}^\times/K^\times$ is not compact; its norm-one subgroup $\mathbb{A}^1/K^\times$ is compact, and with the multiplicative measure induced by the product of the local measures $\mu_v^\times$,
 $$
@@ -41,7 +41,7 @@ $$
 $$
 the same quantity as the additive volume, in accordance with the Tamagawa number $1$ of the multiplicative group.
 
-**Proof sketch.** The exact sequence $1 \to \mathbb{A}^1/K^\times \to \mathbb{A}^\times/K^\times \to \mathbb{R}_{>0} \to 1$, with the last map the norm, reduces the compactness of the middle to that of the first, which is the compactness of the norm-one subgroup; its volume is computed by the same fundamental domain as above, the multiplicative and additive measures agreeing on the units by the local relation $d^\times x = \frac{q_v}{q_v-1}\lvert x\rvert_v^{-1}d\mu_v$ of *p-adic Integration*. $\square$
+**Proof sketch.** The exact sequence $1 \to \mathbb{A}^1/K^\times \to \mathbb{A}^\times/K^\times \to \mathbb{R}_{>0} \to 1$, with the last map the norm, reduces the compactness of the middle to that of the first, which is the compactness of the norm-one subgroup; its volume is computed by the same fundamental domain as above, the multiplicative and additive measures agreeing on the units by the local relation $d^\times x = \frac{q_v}{q_v-1}\lvert x\rvert_v^{-1}d\mu_v$ of *p-adic Integration*.
 
 ## Characters and Self-Duality
 
@@ -59,7 +59,7 @@ $$
 $$
 by the product formula; consequently it induces a character of the compact group $\mathbb{A}/K$ and, by Pontryagin duality, an isomorphism $\mathbb{A} \cong \widehat{\mathbb{A}}$ given by $\xi \mapsto \psi_\xi$ with $\psi_\xi(x) = \psi(\xi x)$.
 
-**Proof.** Almost every factor has $x \in \mathcal{O}_v$ and hence $\{x\}_v = 0$, so the product is finite; continuity is local. For $x \in K$ the identity $\psi(x) = 1$ is the product formula $\prod_v \lvert x \rvert_v = 1$ written in the form $\sum_v \{x\}_v \equiv 0$ modulo the appropriate lattices; the induced character is trivial on $K$ by construction. Pontryagin duality is the duality of *Harmonic Analysis on Groups* applied to the self-dual groups $K_v$ and assembled over the restricted product. $\square$
+**Proof.** Almost every factor has $x \in \mathcal{O}_v$ and hence $\{x\}_v = 0$, so the product is finite; continuity is local. For $x \in K$ the identity $\psi(x) = 1$ is the product formula $\prod_v \lvert x \rvert_v = 1$ written in the form $\sum_v \{x\}_v \equiv 0$ modulo the appropriate lattices; the induced character is trivial on $K$ by construction. Pontryagin duality is the duality of *Harmonic Analysis on Groups* applied to the self-dual groups $K_v$ and assembled over the restricted product.
 
 ### Self-Duality and the Fourier Transform
 
@@ -73,7 +73,7 @@ and the **Schwartz–Bruhat space** $\mathcal{S}(\mathbb{A})$ is the restricted 
 $$
 \hat{\hat f}(x) = f(-x), \qquad \int_{\mathbb{A}} \lvert \hat f(\xi) \rvert^2 \, d\mu(\xi) = \int_{\mathbb{A}} \lvert f(x) \rvert^2 \, d\mu(x).
 $$
-**Proof sketch.** The local statements are proved place by place: at a finite place the Fourier transform is the $\mu_v$-self-adjoint operator on the space of locally constant compactly supported functions, and the normalisation $\mu_v(\mathcal{O}_v)=1$ combined with the choice of $\psi_v$ gives $\widehat{\mathbf{1}_{\mathcal{O}_v}} = \mathbf{1}_{\mathcal{O}_v}$; at the infinite places the same statement holds for the Gaussian, and both imply inversion by the standard argument. The global transform is the product of the local transforms for factorisable functions, and the general case follows by linearity and a limiting argument. $\square$
+**Proof sketch.** The local statements are proved place by place: at a finite place the Fourier transform is the $\mu_v$-self-adjoint operator on the space of locally constant compactly supported functions, and the normalisation $\mu_v(\mathcal{O}_v)=1$ combined with the choice of $\psi_v$ gives $\widehat{\mathbf{1}_{\mathcal{O}_v}} = \mathbf{1}_{\mathcal{O}_v}$; at the infinite places the same statement holds for the Gaussian, and both imply inversion by the standard argument. The global transform is the product of the local transforms for factorisable functions, and the general case follows by linearity and a limiting argument.
 
 ## Poisson Summation and Riemann–Roch
 
@@ -83,11 +83,11 @@ $$
 $$
 both series converging absolutely.
 
-**Proof sketch.** The sum over $K$ of $f$ defines a continuous function $F$ on the compact quotient $\mathbb{A}/K$; its Fourier coefficients on the compact group are the values $\hat f(\gamma)$ of the transform, by the computation of the pairing of $F$ against the character $\psi_\gamma$. The inversion formula for the compact group $\mathbb{A}/K$, applied at $x=0$, identifies the value $F(0)$ with the sum of the coefficients. $\square$
+**Proof sketch.** The sum over $K$ of $f$ defines a continuous function $F$ on the compact quotient $\mathbb{A}/K$; its Fourier coefficients on the compact group are the values $\hat f(\gamma)$ of the transform, by the computation of the pairing of $F$ against the character $\psi_\gamma$. The inversion formula for the compact group $\mathbb{A}/K$, applied at $x=0$, identifies the value $F(0)$ with the sum of the coefficients.
 
 **Corollary (Riemann–Roch).** Let $K$ be a function field of one variable over a finite field, let $D$ be a divisor of $K$ and let $f$ be the indicator of the compact open subgroup of the adeles consisting of the elements integral with respect to $D$. Then the Poisson summation formula becomes the Riemann–Roch theorem: the dimension of the space of functions whose divisor is bounded below by $D$, together with the corresponding dimension for the complementary divisor $K-D$, differs by the fixed amount $\deg D + 1 - g$.
 
-**Proof sketch.** For the function field case $\mathbb{A}/K$ is compact and the Poisson summation formula is an identity between two finite sums; specialising $f$ to the indicator of the elements bounded by $D$ and computing both sides gives the theorem of Riemann–Roch with the correction term $1 - g$. $\square$
+**Proof sketch.** For the function field case $\mathbb{A}/K$ is compact and the Poisson summation formula is an identity between two finite sums; specialising $f$ to the indicator of the elements bounded by $D$ and computing both sides gives the theorem of Riemann–Roch with the correction term $1 - g$.
 
 The corollary is the reason that Poisson summation on the adeles is described as the analytic form of the Riemann–Roch theorem; in the number field case the corresponding statement is the subject of the next section.
 
@@ -105,7 +105,7 @@ with $d^\times x$ the local multiplicative measure of *p-adic Integration* at a 
 $$
 Z_v(s, \chi_v, \mathbf{1}_{\mathcal{O}_v}) = \frac{1}{1 - \chi_v(\varpi_v) q_v^{-s}} .
 $$
-**Proof.** For $\Phi_v = \mathbf{1}_{\mathcal{O}_v}$ the integrand is supported on $\mathcal{O}_v$ and constant on the spheres $\varpi_v^n\mathcal{O}_v^\times$ with $\chi_v(\varpi_v^n) = \chi_v(\varpi_v)^n$; the spheres have multiplicative measure $1$ and $\lvert x \rvert_v^s = q_v^{-ns}$ there, giving $\sum_{n \geq 0} \chi_v(\varpi_v)^n q_v^{-ns}$, which converges for $\lvert \chi_v(\varpi_v) q_v^{-s} \rvert < 1$. The general case is a finite sum of such terms, one for each sphere on which $\Phi_v$ is supported. $\square$
+**Proof.** For $\Phi_v = \mathbf{1}_{\mathcal{O}_v}$ the integrand is supported on $\mathcal{O}_v$ and constant on the spheres $\varpi_v^n\mathcal{O}_v^\times$ with $\chi_v(\varpi_v^n) = \chi_v(\varpi_v)^n$; the spheres have multiplicative measure $1$ and $\lvert x \rvert_v^s = q_v^{-ns}$ there, giving $\sum_{n \geq 0} \chi_v(\varpi_v)^n q_v^{-ns}$, which converges for $\lvert \chi_v(\varpi_v) q_v^{-s} \rvert < 1$. The general case is a finite sum of such terms, one for each sphere on which $\Phi_v$ is supported.
 
 ### The Local Functional Equation
 
@@ -120,7 +120,7 @@ $$
 \zeta_v(1-s, \chi_v^{-1}, \hat\Phi_v) = \epsilon_v(s,\chi_v)\,\zeta_v(s,\chi_v,\Phi_v).
 $$
 
-**Proof sketch.** For $\Phi_v = \mathbf{1}_{\mathcal{O}_v}$ both sides are computed directly from the previous theorem, using $\hat\Phi_v = \mathbf{1}_{\mathcal{O}_v}$ in the unramified case and the explicit Fourier transform of the indicator of a fractional ideal in the ramified case; the quotient then defines $\gamma_v$ and, by linearity and continuity, extends to all $\Phi_v$. The independence of $\Phi_v$ is the substance: the space of Schwartz–Bruhat functions is spanned by such indicators. $\square$
+**Proof sketch.** For $\Phi_v = \mathbf{1}_{\mathcal{O}_v}$ both sides are computed directly from the previous theorem, using $\hat\Phi_v = \mathbf{1}_{\mathcal{O}_v}$ in the unramified case and the explicit Fourier transform of the indicator of a fractional ideal in the ramified case; the quotient then defines $\gamma_v$ and, by linearity and continuity, extends to all $\Phi_v$. The independence of $\Phi_v$ is the substance: the space of Schwartz–Bruhat functions is spanned by such indicators.
 
 ## The Global Zeta Integral and Tate's Thesis
 
@@ -136,7 +136,7 @@ Z(s,\chi,\Phi) = \prod_v Z_v(s,\chi_v,\Phi_v),
 $$
 the product converging absolutely and locally uniformly in the half-plane of convergence.
 
-**Proof.** Convergence follows from the rapid decay of $\Phi$ and the growth of $\lvert x \rvert^s$; the factorisation is the multiplicativity of the measure and of the integrand under the identification of the restricted product with the product of the local pieces, and the absolute convergence justifies the interchange of product and integral by the dominated convergence theorem applied to the local factors. $\square$
+**Proof.** Convergence follows from the rapid decay of $\Phi$ and the growth of $\lvert x \rvert^s$; the factorisation is the multiplicativity of the measure and of the integrand under the identification of the restricted product with the product of the local pieces, and the absolute convergence justifies the interchange of product and integral by the dominated convergence theorem applied to the local factors.
 
 ### The Functional Equation
 
@@ -158,7 +158,7 @@ $$
 $$
 with the global root number satisfying $\epsilon(s,\chi)\epsilon(1-s,\chi^{-1}) = 1$.
 
-**Proof sketch.** The functional equation for the global integral is the Poisson summation formula applied to the function $x \mapsto \Phi(x)\chi(x)\lvert x \rvert^s$ and to its transform: Poisson summation gives an identity between the sum over $K^\times$ of a function and the sum over $K^\times$ of its transform, and the two sides are the integrals over the two fundamental domains obtained by truncating $\mathbb{A}^\times/K^\times$ at $\lvert x \rvert$ large and small. The contribution of the truncations is an integral over the compact set $\mathbb{A}^1/K^\times$, which is finite by the finiteness of the volume, and it converges and is holomorphic; the remaining terms give exactly the transformation $s \mapsto 1-s$. Multiplying the local functional equations over the places gives the functional equation of the normalised integral, with $\epsilon(s,\chi)$ the product of the local root numbers, and inserting $\prod_v L_v(s,\chi_v) = L(s,\chi)$ gives the functional equation of the completed $L$-function. The doubling identity for $\epsilon$ follows by applying the functional equation twice. $\square$
+**Proof sketch.** The functional equation for the global integral is the Poisson summation formula applied to the function $x \mapsto \Phi(x)\chi(x)\lvert x \rvert^s$ and to its transform: Poisson summation gives an identity between the sum over $K^\times$ of a function and the sum over $K^\times$ of its transform, and the two sides are the integrals over the two fundamental domains obtained by truncating $\mathbb{A}^\times/K^\times$ at $\lvert x \rvert$ large and small. The contribution of the truncations is an integral over the compact set $\mathbb{A}^1/K^\times$, which is finite by the finiteness of the volume, and it converges and is holomorphic; the remaining terms give exactly the transformation $s \mapsto 1-s$. Multiplying the local functional equations over the places gives the functional equation of the normalised integral, with $\epsilon(s,\chi)$ the product of the local root numbers, and inserting $\prod_v L_v(s,\chi_v) = L(s,\chi)$ gives the functional equation of the completed $L$-function. The doubling identity for $\epsilon$ follows by applying the functional equation twice.
 
 ### The Completed Zeta Function
 
@@ -168,7 +168,7 @@ Z(s) = \pi^{-s/2}\Gamma(s/2)\,\zeta(s) = \Lambda(s),
 $$
 the completed Riemann zeta function, and the functional equation of the theorem becomes $\Lambda(s) = \Lambda(1-s)$; the Euler product of the theorem becomes $\zeta(s) = \prod_p (1-p^{-s})^{-1}$.
 
-**Proof sketch.** The Archimedean integral is $\int_{\mathbb{R}^\times} e^{-\pi x^2}\lvert x \rvert^{s}d^\times x = \pi^{-s/2}\Gamma(s/2)$; the local integrals at the finite places are $(1-p^{-s})^{-1}$ by the local computation; the product over the places is the Euler product of $\zeta$. The Gaussian is self-dual, so the root number is $1$, and the functional equation reads $\Lambda(s) = \Lambda(1-s)$. $\square$
+**Proof sketch.** The Archimedean integral is $\int_{\mathbb{R}^\times} e^{-\pi x^2}\lvert x \rvert^{s}d^\times x = \pi^{-s/2}\Gamma(s/2)$; the local integrals at the finite places are $(1-p^{-s})^{-1}$ by the local computation; the product over the places is the Euler product of $\zeta$. The Gaussian is self-dual, so the root number is $1$, and the functional equation reads $\Lambda(s) = \Lambda(1-s)$.
 
 The corollary is the prototype. The analytic continuation, the special values, the distribution of the zeros and the arithmetic applications of $\zeta$ and of the Hecke $L$-functions $L(s,\chi)$ are the subject , which take this article's local and global functional equations as their analytic input; the analytic proof of the prime number theorem belongs and the statements about the zeros. What this article supplies is the adelic integration, the Fourier transform, the Poisson summation formula and the two functional equations, local and global.
 

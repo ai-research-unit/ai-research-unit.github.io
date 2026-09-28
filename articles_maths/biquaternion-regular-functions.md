@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This article studies **regular** (equivalently **monogenic**) biquaternion-valued functions. It follows the articles on biquaternion analysis, biquaternion integration, and biquaternion analysis on subspaces, and assumes the biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, its four conjugations, its norm form $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$, its Euclidean norm, and its zero divisors.
+This article studies **regular** (equivalently **monogenic**) biquaternion-valued functions. It follows the articles on biquaternion analysis, biquaternion integration, and biquaternion analysis on subspaces, and assumes the biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, its four conjugations, its biquaternion norm $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$, its Euclidean norm, and its zero divisors.
 
 The decisive fact is that $\mathbb{B}$ is **not a division algebra**: it has nonzero elements with no inverse, the zero divisors, forming the null quadric $N(\tilde{Q}) = 0$. Every failure of the complex analogy on the full algebra and on the indefinite subspaces is traceable to this fact; on $\mathbb{H}_{\mathbb{B}}$ the remaining failures are those of dimension and non-commutativity, so a statement of regularity must specify both the operator with respect to which the function is regular and the domain on which it is defined. The treatment is purely mathematical and no physical interpretation is used. Throughout, $\tilde{Q} = \sum_\mu Q_\mu e_\mu$ with $Q_\mu \in \mathbb{C}$, the units are anti-commuting with
 
@@ -28,7 +28,7 @@ $$
 \mathbb{C}[e_1] = \{a e_0 + b e_1 : a, b \in \mathbb{C}\} = \mathrm{span}_{\mathbb{R}}\{e_0, e_1, i e_0, i e_1\} \cong \mathbb{C} \times \mathbb{C},
 $$
 
-the largest commutative subalgebra in which $e_1$ is the imaginary unit; the coefficient structure similarly singles out $\mathbb{C}_{\mathbb{B}} = \mathbb{C} e_0$. These two structures give two inequivalent notions of holomorphy, distinguished in §*Regular Functions: Single-Plane versus Hypercomplex*: no single complex structure reduces the four real variables to one. Finally, $\mathbb{B}$ is a simple algebra whose center is $\mathbb{C}_{\mathbb{B}}$, and its norm form vanishes exactly on the zero divisors and the origin.
+the largest commutative subalgebra in which $e_1$ is the imaginary unit; the coefficient structure similarly singles out $\mathbb{C}_{\mathbb{B}} = \mathbb{C} e_0$. These two structures give two inequivalent notions of holomorphy, distinguished in §*Regular Functions: Single-Plane versus Hypercomplex*: no single complex structure reduces the four real variables to one. Finally, $\mathbb{B}$ is a simple algebra whose center is $\mathbb{C}_{\mathbb{B}}$, and its biquaternion norm vanishes exactly on the zero divisors and the origin.
 
 ## The Cauchy–Riemann Operator and Its Conjugate
 
@@ -124,13 +124,13 @@ $$
 \tilde{F}(\tilde{Q}_0) = \frac{1}{2\pi^2}\int_{\partial\Omega}\tilde{G}(\tilde{Q} - \tilde{Q}_0)\tilde{n}\tilde{F}(\tilde{Q})\,dS.
 $$
 
-Three hypotheses must be emphasized: the formula holds on the **quaternion subspace** $\mathbb{H}_{\mathbb{B}}$, where all four coefficients of $\tilde{Q}$ are real, and is **not** asserted on $\mathbb{M}_-$ or $\mathbb{M}_+$ or on the full algebra $\mathbb{B}$ (§*Where the Complex Analogy Fails: Zero Divisors and the Null Cone*); regularity is required on all of $\Omega$, not merely on the boundary; and the operator inverted is the first-order operator $\tilde{\nabla}$, normalized by $\tilde{\nabla}\tilde{G} = -2\pi^2\delta_0 e_0$. The mean value property, the maximum principle, Liouville's theorem, the identity theorem, the Cauchy estimates, and the residue theory for isolated singularities then follow, as in the integration article, on $\mathbb{H}_{\mathbb{B}}$ only.
+Three hypotheses must be emphasized: the formula holds on the **quaternion subspace** $\mathbb{H}_{\mathbb{B}}$, where all four coefficients of $\tilde{Q}$ are real, and is **not** asserted on $\mathbb{M}_+$ or $\mathbb{M}_-$ or on the full algebra $\mathbb{B}$ (§*Where the Complex Analogy Fails: Zero Divisors and the Null Cone*); regularity is required on all of $\Omega$, not merely on the boundary; and the operator inverted is the first-order operator $\tilde{\nabla}$, normalized by $\tilde{\nabla}\tilde{G} = -2\pi^2\delta_0 e_0$. The mean value property, the maximum principle, Liouville's theorem, the identity theorem, the Cauchy estimates, and the residue theory for isolated singularities then follow, as in the integration article, on $\mathbb{H}_{\mathbb{B}}$ only.
 
 ## Where the Complex Analogy Fails: Zero Divisors and the Null Cone
 
 The complex theory rests on $\mathbb{C}$ being a field. In the biquaternion algebra this fails, and every consequence below is traceable to the zero divisors.
 
-The zero divisors are exactly the nonzero elements with $N(\tilde{Q}) = Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2 = 0$. The zero divisor set $\mathcal{Z}$ is a complex cone of complex dimension $3$ (real dimension $6$); on the indefinite subspaces it cuts out the double cones $(q'_0)^2 = q_1^2 + q_2^2 + q_3^2$ in $\mathbb{M}_-$ and $q_0^2 = (q'_1)^2 + (q'_2)^2 + (q'_3)^2$ in $\mathbb{M}_+$, each three-dimensional with apex at the origin; in $\mathrm{Vect}(\mathbb{B})$ the norm form is complex and vanishes on the nilpotent cone, of real dimension $4$; while on $\mathbb{C}_{\mathbb{B}}$, $\mathbb{H}_{\mathbb{B}}$ and $i\mathbb{H}_{\mathbb{B}}$ the norm form is definite and there are none. On the null cone there is no inverse, so no quotient $\tilde{A}/\tilde{Q}$ is defined, and the naive difference quotient of the analysis article requires $\tilde{H}^{-1}$, which may not exist.
+The zero divisors are exactly the nonzero elements with $N(\tilde{Q}) = Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2 = 0$. The zero divisor set $\mathcal{Z}$ is a complex cone of complex dimension $3$ (real dimension $6$); on the indefinite subspaces it cuts out the double cones $q_0^2 = (q'_1)^2 + (q'_2)^2 + (q'_3)^2$ in $\mathbb{M}_+$ and $(q'_0)^2 = q_1^2 + q_2^2 + q_3^2$ in $\mathbb{M}_-$, each three-dimensional with apex at the origin; in $\mathrm{Vect}(\mathbb{B})$ the biquaternion norm is complex and vanishes on the nilpotent cone, of real dimension $4$; while on $\mathbb{C}_{\mathbb{B}}$, $\mathbb{H}_{\mathbb{B}}$ and $i\mathbb{H}_{\mathbb{B}}$ the biquaternion norm is definite and there are none. On the null cone there is no inverse, so no quotient $\tilde{A}/\tilde{Q}$ is defined, and the naive difference quotient of the analysis article requires $\tilde{H}^{-1}$, which may not exist.
 
 The proof that $\tilde{\nabla}\tilde{G} = 0$ uses $\bar{\tilde{Q}}\tilde{Q} = \|\tilde{Q}\|_E^2 e_0$, which requires real coefficients; on $\mathbb{M}_\pm$ this identity fails, so $\tilde{G}$ is not a fundamental solution and no Cauchy formula of the stated form holds, and whether a modified kernel exists is open (integration article). By §*The System of Regularity Equations* the principal symbol degenerates on the null cone on $\mathbb{M}_\pm$, so the system is not elliptic and the maximum principle, the mean value property, and Liouville's theorem do not generalize; a regular function there, if defined, solves a hyperbolic rather than an elliptic system. The natural singular set is the six-real-dimensional null quadric, not a point, so there is no punctured-disk model and the residue theory of the integration article is correspondingly delicate.
 
@@ -176,7 +176,7 @@ Restricting to real quaternion-valued functions recovers Fueter's quaternionic a
 | $\tilde{F}$ left-regular (left-monogenic) | $\tilde{\nabla}\tilde{F} = 0$ on a domain $\Omega$ |
 | $\tilde{F}$ anti-regular | $\bar{\tilde{\nabla}}\tilde{F} = 0$ |
 | $\tilde{G} = \bar{\tilde{Q}}/\|\tilde{Q}\|_E^4$ | Cauchy kernel, fundamental solution of $\tilde{\nabla}$ |
-| $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$ | Norm form; the zero divisors are the nonzero elements with $N = 0$ |
+| $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$ | Biquaternion norm; the zero divisors are the nonzero elements with $N = 0$ |
 | $\|\tilde{Q}\|_E$ | Euclidean norm on $\mathbb{B} \cong \mathbb{R}^8$ |
 | $\mathcal{Z}$ | Zero divisor set, a complex cone of real dimension $6$ |
 | $\mathbb{H}_{\mathbb{B}}$ | Real-quaternion subspace, a division ring; the domain of the integral theory |

@@ -1,0 +1,135 @@
+# __Biquaternion Lie Algebra__
+
+## Introduction
+
+The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ carries a natural bracket, the commutator, and with it the structure of a Lie algebra. This article reads that structure: the algebra as $\mathrm{GL}(2,\mathbb{C})$ over $\mathbb{C}$ with its centre, the trace-free part as $\mathrm{SL}(2,\mathbb{C})$, the derived subalgebra and its identity with the vector subspace, the bracket of two vectors as a cross product, the action of the bracket on the six distinguished subspaces, and the real form of the trace-free part with its two three-dimensional real summands. The adjoint maps close the account as the infinitesimal automorphisms. The metric identification of that real form with the Lorentz algebra belongs to *Biquaternion Lie Group and Exponential Structure*.
+
+The bracket is the infinitesimal counterpart of the group. The group of units, the exponential and its parametrisation are in *Biquaternion Lie Group and Exponential Structure*; the topology of the group is in *The Biquaternion Unit Group as a Topological Group*; the motions the bracket generates are in *Biquaternion Rotations and Lorentz Transformations*; and the full automorphism and derivation groups are in *Biquaternion Automorphisms and Derivations*. The algebra, its basis and its six subspaces are from *Biquaternion Algebra*, and the behaviour of the product and the bracket on each subspace is tabulated in *Biquaternion Relations Between Subspaces*, cited below.
+
+**Conventions.** The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_0=1,e_1,e_2,e_3$ and central scalar imaginary $i$; a general element is $\tilde{Q}=\sum_{\mu=0}^{3} Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$. Throughout, a biquaternion is written $\tilde{Q}=Q_0e_0+\mathbf{Q}$ with $\mathbf{Q}=\sum_{k=1}^3 Q_k e_k$.
+
+---
+
+## The Algebra as a Lie Algebra
+
+The trace functional is
+
+$$
+\mathrm{Tr}(\tilde{Q}) = 2Q_0 .
+$$
+
+**Dimension.** As a complex vector space, $\mathbb{B} \cong \mathbb{C}^4$ has complex dimension $4$; as a real vector space it has real dimension $8$. The trace-free part has complex dimension $3$ and real dimension $6$.
+
+The set $\mathbb{B}$ carries the **commutator bracket**
+
+$$
+[\tilde{P}, \tilde{Q}] = \tilde{P}\tilde{Q} - \tilde{Q}\tilde{P},
+$$
+
+under which it is a complex Lie algebra, written $\mathrm{G}$, of dimension $4$ over $\mathbb{C}$ and $8$ over $\mathbb{R}$. Its center is the scalar line
+
+$$
+\mathrm{Z}(\mathrm{G}) = \mathbb{C}e_0,
+$$
+
+of complex dimension $1$ and real dimension $2$; every scalar multiple of $e_0$ commutes with all of $\mathbb{B}$. Removing the center gives the decomposition
+
+$$
+\mathrm{G} = \mathrm{B}_0 \oplus \mathbb{C}e_0,
+$$
+
+with complex dimensions $4 = 3 + 1$ and real dimensions $8 = 6 + 2$, where
+
+$$
+\mathrm{B}_0 = \{\tilde{Q} \in \mathbb{B} : Q_0 = 0\} = \mathrm{span}_\mathbb{C}\{e_1, e_2, e_3\}
+$$
+
+is the **trace-free subalgebra**, the complex pure-vector part.
+
+## The Trace-Free Subalgebra
+
+The Lie algebra of $\mathbb{B}^\times_1$ is the trace-free subalgebra
+
+$$
+\mathrm{B}_0 = \{\tilde{Q} \in \mathbb{B} : Q_0 = 0\} = \mathrm{span}_\mathbb{C}\{e_1, e_2, e_3\},
+$$
+
+of complex dimension $3$ and real dimension $6$, closed under the bracket $[e_j,e_k] = 2\sum_l \epsilon_{jkl} e_l$. Over the reals it splits into two three-dimensional real subspaces,
+
+$$
+\mathrm{B}_0 = \mathrm{span}_\mathbb{R}\{e_1,e_2,e_3\} \;\oplus\; \mathrm{span}_\mathbb{R}\{ie_1, ie_2, ie_3\},
+$$
+
+with real dimensions $6 = 3 + 3$. The first summand is the rotation subalgebra
+
+$$
+\mathrm{K} = \mathrm{span}_\mathbb{R}\{e_1,e_2,e_3\},
+$$
+
+the Lie algebra of the rotation directions, on which the bracket is (twice) the cross product; the second, $\mathrm{span}_\mathbb{R}\{ie_1,ie_2,ie_3\}$, consists of the hyperbolic-rotation directions. The two are non-isomorphic real Lie algebras; which of them is compact is a topological statement, made in *The Biquaternion Unit Group as a Topological Group*.
+
+In the fixed-point subspaces of the basic algebra article the rotation directions are $e_k \in \mathbb{H}_{\mathbb{B}} \cap \mathbb{M}_-$ and the hyperbolic-rotation directions are $ie_k \in \mathbb{M}_+$. This is why pure spatial rotations have rotors in $\mathbb{H}_{\mathbb{B}}$ while pure hyperbolic rotations have rotors in $\mathbb{M}_+$: these are exactly the two real three-dimensional pieces into which $\mathrm{B}_0$ splits. The central direction $\mathbb{C}e_0$ completes the picture, $\mathrm{G} = \mathrm{B}_0 \oplus \mathbb{C}e_0$.
+
+## The Derived Subalgebra, the Cross Product and the Subspaces
+
+The commutator of two biquaternions has vanishing scalar part, since the scalar part commutes with everything:
+$$
+[\tilde{P},\tilde{Q}] = [\mathbf{P},\mathbf{Q}],
+$$
+and the bracket of the basis vectors is $[e_j,e_k]=2\sum_l\epsilon_{jkl}e_l$. Hence the **derived subalgebra** is the complex span of the vector units,
+$$
+[\mathrm{G},\mathrm{G}] = \mathrm{B}_0 = \mathrm{span}_{\mathbb{C}}\{e_1,e_2,e_3\} = \mathrm{Vect}(\mathbb{B}),
+$$
+of complex dimension $3$ and real dimension $6$: the derived subalgebra is exactly the vector subspace of *Biquaternion Algebra*, and the quotient $\mathrm{G}/[\mathrm{G},\mathrm{G}]$ is the centre $\mathbb{C}e_0$ of dimension $1$ over $\mathbb{C}$.
+
+For two pure vectors the quaternion product splits into its scalar and vector parts, $\mathbf{P}\mathbf{Q}=-(\textstyle\sum_k P_kQ_k)e_0+\mathbf{P}\times\mathbf{Q}$, so the bracket is **twice the cross product**,
+$$
+[\mathbf{P},\mathbf{Q}] = 2\,\mathbf{P}\times\mathbf{Q},
+$$
+with the cross product taken in $\mathbb{C}^3$ under the identification $\mathrm{Vect}(\mathbb{B})\cong\mathbb{C}^3$. The map $\mathbf{P}\mapsto\mathrm{ad}_{\mathbf{P}}|_{\mathrm{B}_0}$ is then the cross-product operator, and for a real vector part it is the antisymmetric map represented by a real antisymmetric $3\times3$ matrix.
+
+The action of the bracket on each of the six distinguished subspaces — the centre $\mathbb{C}_{\mathbb{B}}$, the vector subspace $\mathrm{Vect}(\mathbb{B})$, the quaternion and anti-quaternion subspaces $\mathbb{H}_{\mathbb{B}}$ and $i\mathbb{H}_{\mathbb{B}}$, and the Hermitian and anti-Hermitian sectors $\mathbb{M}_+$ and $\mathbb{M}_-$ — is the commutator row of the tables of *Biquaternion Relations Between Subspaces*, read there along with the product and the symmetrized product. In brief, the centre is central, $\mathrm{Vect}(\mathbb{B})$ is closed and the bracket on it is the cross product above, $\mathbb{H}_{\mathbb{B}}$ is closed with the bracket of the imaginary quaternions, the bracket carries $\mathbb{M}_+$ to $\mathbb{M}_-$ and $\mathbb{M}_-$ to itself, and the bracket of $\mathbb{M}_+$ with $\mathbb{M}_-$ carries the second back to the first; the exact signs are those tables'.
+
+## The Real Structure and the Adjoint Maps
+
+Over $\mathbb{R}$ the algebra is the Lie algebra of the real Lie group $\mathbb{B}^\times$, and the trace-free part $\mathrm{B}_0$, of real dimension $6$, is its real form, with $[\mathrm{G},\mathrm{G}]=\mathrm{B}_0$ as over $\mathbb{C}$. The identification of $\mathrm{B}_0$ with the Lorentz algebra, and of the group $\mathbb{B}_1^\times$ it exponentiates to with the spin group of Lorentzian signature, is metric: it is made in *Biquaternion Lie Group and Exponential Structure* and *The Biquaternion Unit Group as a Topological Group*, along with *Biquaternion Rotations and Lorentz Transformations*.
+
+The **adjoint maps** are the inner derivations
+$$
+\operatorname{ad}_{\tilde{Q}} : X\mapsto[\tilde{Q},X],
+$$
+each a derivation of the algebra by the Jacobi identity, and the map $\tilde{Q}\mapsto\operatorname{ad}_{\tilde{Q}}$ is a Lie algebra homomorphism whose kernel is the centre $\mathbb{C}e_0$. Since $\mathbb{B}$ is simple, every derivation is inner, so
+$$
+\operatorname{Der}(\mathbb{B}) = \operatorname{ad}(\mathbb{B}) \cong \mathrm{G}/\mathrm{Z}(\mathrm{G}) = \mathrm{SL}(2,\mathbb{C}),
+$$
+the derivations are the infinitesimal automorphisms of the algebra, of complex dimension $3$ and real dimension $6$, and they exponentiate to the inner automorphisms $\operatorname{Inn}(\mathbb{B})=\mathbb{B}^\times/\mathbb{C}^\times$ (*Biquaternion Automorphisms and Derivations*).
+
+## Summary
+
+Under the commutator $[\tilde{P},\tilde{Q}]=\tilde{P}\tilde{Q}-\tilde{Q}\tilde{P}$ the biquaternion algebra is a complex Lie algebra of complex dimension $4$ and real dimension $8$, isomorphic to $\mathrm{GL}(2,\mathbb{C})$; its centre is the scalar line $\mathbb{C}e_0$, of complex dimension $1$. The trace functional is $\mathrm{Tr}(\tilde{Q})=2Q_0$, and the trace-free part $\mathrm{B}_0=\{\tilde{Q}:Q_0=0\}=\mathrm{span}_{\mathbb{C}}\{e_1,e_2,e_3\}$ has complex dimension $3$ and real dimension $6$, isomorphic to $\mathrm{SL}(2,\mathbb{C})$; the algebra splits as $\mathrm{G}=\mathrm{B}_0\oplus\mathbb{C}e_0$.
+
+The derived subalgebra is the vector subspace itself, $[\mathrm{G},\mathrm{G}]=\mathrm{Vect}(\mathbb{B})$, so the algebra is not solvable; the bracket of two pure vectors is twice their cross product, $[\mathbf{P},\mathbf{Q}]=2\,\mathbf{P}\times\mathbf{Q}$. Over $\mathbb{R}$ the trace-free part splits into the rotation subalgebra $\mathrm{K}=\mathrm{span}_{\mathbb{R}}\{e_1,e_2,e_3\}$, on which the bracket is twice the cross product, and the hyperbolic directions $\mathrm{span}_{\mathbb{R}}\{ie_1,ie_2,ie_3\}$; the metric identification of this real form with the Lorentz algebra is in *Biquaternion Lie Group and Exponential Structure*. The derivations are exactly the inner ones, $\operatorname{Der}(\mathbb{B})=\operatorname{ad}(\mathbb{B})\cong\mathrm{SL}(2,\mathbb{C})$, the infinitesimal automorphisms, exponentiating to $\operatorname{Inn}(\mathbb{B})=\mathbb{B}^\times/\mathbb{C}^\times$.
+
+## Summary of Notation
+
+| Symbol | Meaning |
+|---|---|
+| $[\tilde{P},\tilde{Q}]=\tilde{P}\tilde{Q}-\tilde{Q}\tilde{P}$ | Commutator bracket; $\mathbb{B}$ is a complex Lie algebra under it |
+| $\mathrm{G}=\mathbb{B}$ | The algebra as a Lie algebra; complex dimension $4$, real dimension $8$ |
+| $\mathrm{Tr}(\tilde{Q})=2Q_0$ | Trace functional |
+| $\mathrm{B}_0=\{Q_0=0\}$ | Trace-free subalgebra; $\mathrm{span}_{\mathbb{C}}\{e_1,e_2,e_3\}$; $\mathrm{SL}(2,\mathbb{C})$ |
+| $\mathrm{Z}(\mathrm{G})=\mathbb{C}e_0$ | Centre; complex dimension $1$, real dimension $2$ |
+| $[\mathrm{G},\mathrm{G}]=\mathrm{Vect}(\mathbb{B})$ | Derived subalgebra, the vector subspace |
+| $[\mathbf{P},\mathbf{Q}]=2\,\mathbf{P}\times\mathbf{Q}$ | Bracket of pure vectors as twice the cross product |
+| $\mathrm{K}=\mathrm{span}_{\mathbb{R}}\{e_1,e_2,e_3\}$ | Rotation subalgebra; the bracket on it is twice the cross product |
+| $\mathrm{span}_{\mathbb{R}}\{ie_1,ie_2,ie_3\}$ | Hyperbolic-rotation directions |
+| $\mathrm{B}_0$, real form | Real dimension $6$; two three-dimensional real summands |
+| $\operatorname{ad}_{\tilde{Q}}=[\tilde{Q},\,\cdot\,]$ | Inner derivation |
+| $\operatorname{Der}(\mathbb{B})=\operatorname{ad}(\mathbb{B})\cong\mathrm{SL}(2,\mathbb{C})$ | Derivations as the infinitesimal automorphisms |
+
+## Further Reading
+
+- Brian C. Hall, *Lie Groups, Lie Algebras, and Representations: An Elementary Introduction* (Springer, 2nd ed. 2015).
+- John Stillwell, *Naive Lie Theory* (Springer, 2008).
+- J. P. Ward, *Quaternions and Cayley Numbers: Algebra and Applications* (Kluwer, Dordrecht, 1997).
+- Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001).

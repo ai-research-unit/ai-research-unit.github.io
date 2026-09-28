@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The framework presents a large collection of objects: the algebra $\mathbb{B}$, the scalar imaginary $i$, the quaternion units, the four conjugations, the four fixed-point subspaces, the two-sector split $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$, the norm form, the trace form, the roots of $-1$, the idempotents, the polar representations. The companion articles use them all. This article asks a different question about them: **which of these objects must be posited, and which follow from the others?**
+The framework presents a large collection of objects: the algebra $\mathbb{B}$, the scalar imaginary $i$, the quaternion units, the four conjugations, the four fixed-point subspaces, the two-sector split $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$, the biquaternion norm, the trace form, the roots of $-1$, the idempotents, the polar representations. The companion articles use them all. This article asks a different question about them: **which of these objects must be posited, and which follow from the others?**
 
 The question is not decorative. Every derivation in the framework inherits the status of its inputs. If an object is silently promoted from derived to fundamental — or quietly derived in one place and posited in another — then the framework's account of *why* it has the structure it has is wrong, even when every formula is right. The purpose of this article is to fix a sorting criterion, state the base to which it applies, and apply the criterion to the framework's objects one at a time.
 
@@ -280,7 +280,7 @@ $$
 R=\sqrt{N(\tilde Q)},\qquad \xi=\mathbf Q/B,\qquad \cos\Theta=Q_0/R,\qquad \sin\Theta=B/R,
 $$
 
-so that $\tilde Q=R\exp(\xi\Theta)$. The construction is a sequence of operations available in the base: the norm form from the multiplication and $\bar{\cdot}$, the square root and the angle functions from the exponential, and the normalization of the axis from the division by $B$. That it reconstructs $\tilde Q$ is a computation,
+so that $\tilde Q=R\exp(\xi\Theta)$. The construction is a sequence of operations available in the base: the biquaternion norm from the multiplication and $\bar{\cdot}$, the square root and the angle functions from the exponential, and the normalization of the axis from the division by $B$. That it reconstructs $\tilde Q$ is a computation,
 
 $$
 R(\cos\Theta+\xi\sin\Theta)=R\cdot\frac{Q_0}{R}+R\cdot\frac{\mathbf Q}{B}\cdot\frac{B}{R}=Q_0+\mathbf Q=\tilde Q,
@@ -316,7 +316,7 @@ The results are collected in one place. The statuses are those of the criterion,
 | Anti-Hermitian conjugation $\flat$ | Derived (rigid) | Defined as $-\dagger$; the central sign is a definitional convention, not a presentation — no automorphism of the base moves it. |
 | The sectors $\mathbb{M}_+,\mathbb{M}_-$ | Derived | Eigenspaces of the derived involution $\dagger$. |
 | The split $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ | Forced relative to the base | Eigen-decomposition of $\dagger$; the real form it uses is an input. |
-| The norm form $N(\tilde Q)=\tilde Q\bar{\tilde Q}$ | Derived | Multiplication plus $\bar{\cdot}$. |
+| The biquaternion norm $N(\tilde Q)=\tilde Q\bar{\tilde Q}$ | Derived | Multiplication plus $\bar{\cdot}$. |
 | The trace $\mathrm{Tr}(\tilde Q)=2\,\mathrm{Sc}(\tilde Q)$ | Derived (rigid) | Vanishes on the vector units because they are commutators; the normalization is the reduced trace of the degree-two matrix model, fixed by every automorphism of the base. |
 | The trace form $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$ | Derived | Consequence of the trace. |
 | Exponential, roots of $-1$, idempotents, $SL(2,\mathbb{C})$ | Derived | Solving equations with coefficients in the base. |
@@ -350,7 +350,7 @@ The one gap is left visible rather than closed. The complexification — equival
 | $\mathbb{C}_{\mathbb{B}}$ | Complex subspace; center; fixed set of $\bar{\cdot}$ |
 | $\mathbb{M}_+$ | Hermitian subspace: real scalar, imaginary vector |
 | $\mathbb{M}_-$ | Anti-Hermitian subspace: imaginary scalar, real vector |
-| $N(\tilde Q)=\tilde Q\bar{\tilde Q}=\sum_\mu Q_\mu^2$ | Norm form; derived |
+| $N(\tilde Q)=\tilde Q\bar{\tilde Q}=\sum_\mu Q_\mu^2$ | Biquaternion norm; derived |
 | $\mathrm{Tr}(\tilde Q)=2\,\mathrm{Sc}(\tilde Q)$ | Trace; rigidly derived |
 | $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$ | Trace form; derived |
 | $\mathcal{S}$ | The base: (B1) $\mathbb{H}$, (B2) the complexification |

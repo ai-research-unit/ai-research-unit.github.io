@@ -48,7 +48,7 @@ U_\mu(n)\in SU(2)=\{Q\in\mathbb{H}_{\mathbb{B}}:Q\bar Q=e_0\},
 \qquad
 \mathbb{H}_{\mathbb{B}}=\mathrm{span}_\mathbb{R}\{e_0,e_1,e_2,e_3\},
 $$
-the set of unit real quaternions — the coefficients of $e_0,e_1,e_2,e_3$ are real, so that $\bar Q=Q^\dagger=Q^{-1}$ and the quaternion conjugate, the Hermitian conjugate and the inverse coincide; it is a three-sphere embedded in the algebra, and it is the group that exponentiates the compact factor $\mathfrak{su}(2)$ in the Hermitian-generator realization fixed above. The link is the lattice approximation to the parallel transporter,
+the set of unit real quaternions — the coefficients of $e_0,e_1,e_2,e_3$ are real, so that $\bar Q=Q^\dagger=Q^{-1}$ and the quaternion conjugate, the Hermitian conjugate and the inverse coincide; it is a three-sphere embedded in the algebra, and it is the group that exponentiates the compact factor $\mathrm{SU}(2)$ in the Hermitian-generator realization fixed above. The link is the lattice approximation to the parallel transporter,
 $$
 U_\mu(n)=\exp\!\big(ia\kappa\mathcal{A}_\mu(n)\big)
 =\sum_{m=0}^{\infty}\frac{1}{m!}\big(ia\kappa\mathcal{A}_\mu(n)\big)^m ,
@@ -187,7 +187,7 @@ $$
 $$
 where $N=2$ for the framework's group and the $O(1)$ denotes the perimeter and tiling corrections. The special case $N=2$, in which the fundamental representation is real, replaces $2N^2$ by $N^2$ at leading order: the one-plaquette average is
 $$
-\frac{1}{2}\big\langle \mathrm{Tr}\,U_\square\big\rangle
+\frac{1}{2}\big\langle \mathrm{Tr}\,U_\big\rangle
 =\frac{I_2(\beta)}{I_1(\beta)}
 =\frac{\beta}{4}+O(\beta^3),
 $$
@@ -201,7 +201,7 @@ The area law is an operator statement about a Wilson loop, and its interpretatio
 
 ### The Two Regimes
 
-The area law is established at strong coupling, and what happens at weak coupling is a separate question whose answer depends on the matter content. For the pure gauge theory — no dynamical fermions — the area law persists from strong coupling to the continuum limit: confinement is a property of the pure non-abelian gauge theory, and the string tension scales according to the renormalization group, $\sigma\propto\Lambda^2$, so that the ratio $\sigma a^2$ decreases as $\beta$ grows according to the same beta function that governs the coupling. For the theory coupled to dynamical fundamental matter, the area law is replaced at large loops by a **perimeter law**, $W(C)\sim e^{-\mu P}$, because the matter field screens the static charges: a virtual pair is created, the string breaks, and the potential flattens to a constant rather than growing linearly. In the framework's lattice, which as constructed has no matter, the first case is the relevant one: the pure $\mathfrak{su}(2)$ theory confines, and the area law is its confinement statement. The transition between the two behaviours, and the deconfinement transition at finite temperature, are the standard lattice results cited below.
+The area law is established at strong coupling, and what happens at weak coupling is a separate question whose answer depends on the matter content. For the pure gauge theory — no dynamical fermions — the area law persists from strong coupling to the continuum limit: confinement is a property of the pure non-abelian gauge theory, and the string tension scales according to the renormalization group, $\sigma\propto\Lambda^2$, so that the ratio $\sigma a^2$ decreases as $\beta$ grows according to the same beta function that governs the coupling. For the theory coupled to dynamical fundamental matter, the area law is replaced at large loops by a **perimeter law**, $W(C)\sim e^{-\mu P}$, because the matter field screens the static charges: a virtual pair is created, the string breaks, and the potential flattens to a constant rather than growing linearly. In the framework's lattice, which as constructed has no matter, the first case is the relevant one: the pure $\mathrm{SU}(2)$ theory confines, and the area law is its confinement statement. The transition between the two behaviours, and the deconfinement transition at finite temperature, are the standard lattice results cited below.
 
 ## The Continuum Limit and the Running Coupling
 
@@ -211,7 +211,7 @@ $$
 \qquad
 b_0=\frac{11}{3}C_2(G)=\frac{11}{3}\cdot 2=\frac{22}{3}
 $$
-for the pure $\mathfrak{su}(2)$ theory, with the sign convention of the companion article *The Renormalization Group in Biquaternionic Form*. The coefficient is positive, so the coupling decreases as the scale increases (asymptotic freedom); conversely, at fixed lattice spacing the coupling grows at long distances, which is the regime in which the strong-coupling expansion applies. The two statements are the same running coupling read from opposite ends. In the continuum limit the lattice action reduces to the Yang–Mills action, the lattice path integral reduces to the gauge-field path integral, and the lattice provides the regulator whose removal is the renormalization.
+for the pure $\mathrm{SU}(2)$ theory, with the sign convention of the companion article *The Renormalization Group in Biquaternionic Form*. The coefficient is positive, so the coupling decreases as the scale increases (asymptotic freedom); conversely, at fixed lattice spacing the coupling grows at long distances, which is the regime in which the strong-coupling expansion applies. The two statements are the same running coupling read from opposite ends. In the continuum limit the lattice action reduces to the Yang–Mills action, the lattice path integral reduces to the gauge-field path integral, and the lattice provides the regulator whose removal is the renormalization.
 
 Three remarks place the construction.
 
@@ -281,7 +281,7 @@ with the $N=2$ one-plaquette average beginning at $\beta/4$; this is confinement
 | $W(C)=\tfrac1N\mathrm{Tr}\prod_{l\in C}U_l$ | Lattice Wilson loop |
 | $\langle W(C)\rangle\sim e^{-\sigma A}$ | Area law; $\sigma$ the string tension |
 | $\sigma a^2=-\ln(\beta/2N^2)+O(1)$ | Leading strong-coupling string tension |
-| $\tfrac12\langle\mathrm{Tr}U_\square\rangle=I_2(\beta)/I_1(\beta)=\beta/4+O(\beta^3)$ | $SU(2)$ one-plaquette average |
+| $\tfrac12\langle\mathrm{Tr}U_\rangle=I_2(\beta)/I_1(\beta)=\beta/4+O(\beta^3)$ | $SU(2)$ one-plaquette average |
 | $b_0=\tfrac{11}{3}C_2(G)=\tfrac{22}{3}$ | One-loop coefficient for pure $SU(2)$ |
 | $\eta=\mathrm{diag}(-1,+1,+1,+1)$ | $ict$ metric (level 2) |
 | $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ | Informational trace formula, distinct from the matrix trace |

@@ -403,7 +403,7 @@ The quadrupole moment is not an algebra element: it is a rank-two tensor, outsid
 | $\gamma$, $\beta = |\mathbf{v}|/c$ | Lorentz factor and speed ratio |
 | $\tilde{\Lambda}\in\mathbb{M}_+$ | Boost biquaternion, $\tilde{F}' = \bar{\tilde{\Lambda}}\tilde{F}\tilde{\Lambda}$ |
 | $\star$ | Hodge dual, $\star(\mathbf{E},\mathbf{B}) = (c\mathbf{B},-\mathbf{E}/c)$ |
-| $N(\tilde{F}) = \tilde{F}\bar{\tilde{F}}$ | Norm form; vanishes for a radiation field |
+| $N(\tilde{F}) = \tilde{F}\bar{\tilde{F}}$ | Biquaternion norm; vanishes for a radiation field |
 
 ## Further Reading
 

@@ -27,7 +27,7 @@ The criterion is intrinsic and uses no form theory: $f$ has a repeated root exac
 
 **Proposition.** Every algebraic extension of a field of characteristic $0$ is separable. Every algebraic extension of a finite field is separable. A field $F$ every algebraic extension of which is separable is called **perfect**, so fields of characteristic $0$ and finite fields are perfect.
 
-*Proof.* If $f \in F[x]$ is irreducible of degree $n$ and $f' \neq 0$ has degree $n-1$, then $f \nmid f'$, so $\gcd(f,f') = 1$ and $f$ has distinct roots. Over a field of characteristic $0$ every irreducible $f$ has $f' \neq 0$. Over a finite field $F = \mathbb{F}_q$, an irreducible $f$ of degree $n$ divides $x^{q^n} - x$, whose derivative is $-1$, so $f$ is coprime to its derivative; hence $f$ is separable. $\square$
+*Proof.* If $f \in F[x]$ is irreducible of degree $n$ and $f' \neq 0$ has degree $n-1$, then $f \nmid f'$, so $\gcd(f,f') = 1$ and $f$ has distinct roots. Over a field of characteristic $0$ every irreducible $f$ has $f' \neq 0$. Over a finite field $F = \mathbb{F}_q$, an irreducible $f$ of degree $n$ divides $x^{q^n} - x$, whose derivative is $-1$, so $f$ is coprime to its derivative; hence $f$ is separable.
 
 **Example (a non-separable extension).** Let $F = \mathbb{F}_p(t)$ be the field of rational functions in one variable over $\mathbb{F}_p$ and let $L = F(t^{1/p})$. Then $t^{1/p} \notin F$ and its minimal polynomial is $x^p - t$, whose derivative $px^{p-1}$ is zero; so $x^p - t = (x - t^{1/p})^p$ has a single root of multiplicity $p$, and $L/F$ is not separable. This is the standard example: non-separability is a phenomenon of imperfect fields in positive characteristic.
 
@@ -35,11 +35,11 @@ The criterion is intrinsic and uses no form theory: $f$ has a repeated root exac
 
 **Theorem.** Let $L/F$ be a finite extension of degree $n$ and let $\bar F$ be an algebraic closure. Then the number of distinct $F$-embeddings $L \to \bar F$ is at most $n$, and it equals $n$ if and only if $L/F$ is separable.
 
-*Proof.* Write $L = F(\alpha_1,\dots,\alpha_r)$ and build the tower $F = L_0 \subseteq L_1 \subseteq \cdots \subseteq L_r = L$ with $L_i = L_{i-1}(\alpha_i)$. An embedding of $L_i$ extending a fixed embedding of $L_{i-1}$ is determined by the image of $\alpha_i$, which must be a root in $\bar F$ of the minimal polynomial of $\alpha_i$ over $L_{i-1}$; the number of such roots is at most $[L_i : L_{i-1}]$, with equality exactly when that minimal polynomial is separable. Multiplying over the tower gives the bound and the criterion. $\square$
+*Proof.* Write $L = F(\alpha_1,\dots,\alpha_r)$ and build the tower $F = L_0 \subseteq L_1 \subseteq \cdots \subseteq L_r = L$ with $L_i = L_{i-1}(\alpha_i)$. An embedding of $L_i$ extending a fixed embedding of $L_{i-1}$ is determined by the image of $\alpha_i$, which must be a root in $\bar F$ of the minimal polynomial of $\alpha_i$ over $L_{i-1}$; the number of such roots is at most $[L_i : L_{i-1}]$, with equality exactly when that minimal polynomial is separable. Multiplying over the tower gives the bound and the criterion.
 
 **Corollary.** If $L/F$ is finite separable then $L = F(\alpha)$ for some $\alpha$, and the minimal polynomial of $\alpha$ has degree $[L:F]$ and distinct roots.
 
-*Proof.* The theorem of the primitive element for finite separable extensions follows by choosing $\alpha$ whose minimal polynomial has degree $[L:F]$, which the embedding count guarantees; the proof is the standard induction on the number of generators. $\square$
+*Proof.* The theorem of the primitive element for finite separable extensions follows by choosing $\alpha$ whose minimal polynomial has degree $[L:F]$, which the embedding count guarantees; the proof is the standard induction on the number of generators.
 
 ## Separable Algebras over a Field
 
@@ -57,7 +57,7 @@ $$
 
 where each $D_i$ is a finite-dimensional division algebra over $F$ whose centre $Z(D_i)$ is a finite separable field extension of $F$.
 
-*Proof (outline).* If $A$ is separable, then $A$ is semisimple, so Wedderburn–Artin gives $A \cong \prod_i M_{n_i}(D_i)$, and the centre is $Z(A) \cong \prod_i Z(D_i)$, a product of fields finite over $F$. Each $Z(D_i)$ is separable over $F$, because if $Z(D_i)$ contained a non-separable element then $D_i \otimes_F \bar F$ would acquire nilpotents and fail to be semisimple. Conversely, if each $D_i$ has separable centre, then $D_i \otimes_F \bar F$ is a product of matrix algebras over $\bar F$ — the centre splits into a product of copies of $\bar F$ and the division algebra becomes a matrix algebra over each copy — so $A \otimes_F \bar F$ is a product of matrix algebras and is semisimple. $\square$
+*Proof (outline).* If $A$ is separable, then $A$ is semisimple, so Wedderburn–Artin gives $A \cong \prod_i M_{n_i}(D_i)$, and the centre is $Z(A) \cong \prod_i Z(D_i)$, a product of fields finite over $F$. Each $Z(D_i)$ is separable over $F$, because if $Z(D_i)$ contained a non-separable element then $D_i \otimes_F \bar F$ would acquire nilpotents and fail to be semisimple. Conversely, if each $D_i$ has separable centre, then $D_i \otimes_F \bar F$ is a product of matrix algebras over $\bar F$ — the centre splits into a product of copies of $\bar F$ and the division algebra becomes a matrix algebra over each copy — so $A \otimes_F \bar F$ is a product of matrix algebras and is semisimple.
 
 **Corollary.** If $F$ is perfect — in particular if $F$ has characteristic $0$ or is finite — then a finite-dimensional $F$-algebra is separable if and only if it is semisimple. Over an arbitrary field, separable implies semisimple, but the field extension $L/F$ of the example above is a division algebra over $F$ that is not separable.
 
@@ -76,7 +76,7 @@ $$
 
 The element $e$ is the **separability idempotent**; condition 3 is the explicit form of condition 2, since an $A^{\mathrm{e}}$-linear splitting is determined by the image $s(1) = e$, and $\mu\circ s = \mathrm{id}$ says $\mu(e) = 1$ while $s$ being $A^{\mathrm{e}}$-linear says $ae = ea$ for all $a$ under the identification of $A$ with the diagonal copy of $A^{\mathrm{e}}$.
 
-*Proof (equivalences).* The equivalence of 2 and 3 is the observation just made. For $2 \Rightarrow 1$, suppose $\mu$ splits and let $M$ be any $A$-bimodule. Applying $\operatorname{Hom}_{A^{\mathrm{e}}}(-, M)$ to a split exact sequence preserves exactness, so every $A^{\mathrm{e}}$-linear map out of $A$ extends; taking $M = A$ shows that $A$ is projective as an $A^{\mathrm{e}}$-module. Projectivity of $A$ over $A^{\mathrm{e}}$ is equivalent to semisimplicity of $A$ when $A$ is finite-dimensional over $F$, by the Wedderburn–Artin description of $A^{\mathrm{e}}$-modules; and the argument applies after every base change, giving separability. For $1 \Rightarrow 2$, if $A$ is semisimple, then $A^{\mathrm{e}}$ is semisimple, $A$ is a projective $A^{\mathrm{e}}$-module, and $\mu$ splits. $\square$
+*Proof (equivalences).* The equivalence of 2 and 3 is the observation just made. For $2 \Rightarrow 1$, suppose $\mu$ splits and let $M$ be any $A$-bimodule. Applying $\operatorname{Hom}_{A^{\mathrm{e}}}(-, M)$ to a split exact sequence preserves exactness, so every $A^{\mathrm{e}}$-linear map out of $A$ extends; taking $M = A$ shows that $A$ is projective as an $A^{\mathrm{e}}$-module. Projectivity of $A$ over $A^{\mathrm{e}}$ is equivalent to semisimplicity of $A$ when $A$ is finite-dimensional over $F$, by the Wedderburn–Artin description of $A^{\mathrm{e}}$-modules; and the argument applies after every base change, giving separability. For $1 \Rightarrow 2$, if $A$ is semisimple, then $A^{\mathrm{e}}$ is semisimple, $A$ is a projective $A^{\mathrm{e}}$-module, and $\mu$ splits.
 
 **Example.** For $A = M_n(F)$ the separability idempotent is built from the matrix units: with $A^{\mathrm{e}} = M_n(F)\otimes_F M_n(F)^{\mathrm{op}}$,
 
@@ -105,13 +105,13 @@ holds; equivalently $A$ is a projective left $A^{\mathrm{e}}$-module.
 3. for every $A$-bimodule $M$ and every $A$-bimodule map $f : A \to M$, every $R$-linear derivation $D : A \to M$ is inner, that is, $D(a) = am - ma$ for some $m \in M$;
 4. the functor $\operatorname{Hom}_{A^{\mathrm{e}}}(A,-)$ is exact.
 
-*Proof (sketch).* The equivalence of 1 and 2 is the definition restated, since $\mu$ is a surjection of $A^{\mathrm{e}}$-modules and a surjection splits exactly when the source is projective over the target's complement. Statement 3 is the universal property of the module of Kähler differentials recast: derivations $A \to M$ correspond to $A^{\mathrm{e}}$-linear maps $\Omega_{A/R} \to M$, and every such map is inner exactly when the universal derivation is inner, which is equivalent to $A$ being projective over $A^{\mathrm{e}}$. Statement 4 is the exactness of the functor represented by a projective object. $\square$
+*Proof (sketch).* The equivalence of 1 and 2 is the definition restated, since $\mu$ is a surjection of $A^{\mathrm{e}}$-modules and a surjection splits exactly when the source is projective over the target's complement. Statement 3 is the universal property of the module of Kähler differentials recast: derivations $A \to M$ correspond to $A^{\mathrm{e}}$-linear maps $\Omega_{A/R} \to M$, and every such map is inner exactly when the universal derivation is inner, which is equivalent to $A$ being projective over $A^{\mathrm{e}}$. Statement 4 is the exactness of the functor represented by a projective object.
 
 ### Base change and examples
 
 **Proposition.** Separability is preserved by base change: if $A$ is separable over $R$ and $R \to S$ is a homomorphism of commutative rings, then $A \otimes_R S$ is separable over $S$.
 
-*Proof.* The separability idempotent $e \in A^{\mathrm{e}}$ base-changes to an element $e \otimes 1 \in (A\otimes_R S)^{\mathrm{e}} \cong A^{\mathrm{e}}\otimes_R S$ with $\mu(e\otimes1) = 1$ and $(a\otimes1)(e\otimes1) = (e\otimes1)(a\otimes1)$. $\square$
+*Proof.* The separability idempotent $e \in A^{\mathrm{e}}$ base-changes to an element $e \otimes 1 \in (A\otimes_R S)^{\mathrm{e}} \cong A^{\mathrm{e}}\otimes_R S$ with $\mu(e\otimes1) = 1$ and $(a\otimes1)(e\otimes1) = (e\otimes1)(a\otimes1)$.
 
 **Example (matrix algebras).** For every $n \geq 1$ and every commutative ring $R$, the algebra $M_n(R)$ is separable over $R$, with the idempotent $e = \sum_{i,j} E_{ij}\otimes E_{ji}$ of the field case, which is an element of $M_n(R)\otimes_R M_n(R)^{\mathrm{op}}$ with no denominators.
 
@@ -149,7 +149,7 @@ which is always an $R$-algebra homomorphism and is an isomorphism exactly for th
 
 **Theorem.** For a field $F$, the finite-dimensional $F$-algebras that are Azumaya over $F$ are the central simple $F$-algebras.
 
-*Proof.* A central simple algebra has centre $F$ and is separable, and it is finite-dimensional, hence finitely generated projective and faithful over $F$. Conversely an Azumaya algebra over $F$ has centre $F$ and is separable, so it is semisimple with all division algebra factors central over $F$; but a semisimple algebra with centre $F$ is simple, since a product of two factors would have a larger centre. Hence it is central simple. $\square$
+*Proof.* A central simple algebra has centre $F$ and is separable, and it is finite-dimensional, hence finitely generated projective and faithful over $F$. Conversely an Azumaya algebra over $F$ has centre $F$ and is separable, so it is semisimple with all division algebra factors central over $F$; but a semisimple algebra with centre $F$ is simple, since a product of two factors would have a larger centre. Hence it is central simple.
 
 ### The Brauer group of a commutative ring
 
@@ -185,7 +185,7 @@ is an isomorphism of $S$-algebras. Equivalently, $S$ is a $G$-Galois algebra ove
 
 **Theorem.** A Galois extension of rings is separable over $R$; conversely, the separable commutative $R$-algebras are the algebras that are locally Galois, that is, become Galois after a faithfully flat base change. A commutative separable $R$-algebra is called **étale** over $R$.
 
-*Proof (sketch).* For a Galois extension the separability element is built from the inverse of the Galois isomorphism: applying the inverse of $S\otimes_R S \to \prod_{\sigma\in G}S$ to the family with a single nonzero entry $1$ at the identity produces an element $e \in S\otimes_R S$ whose image under the isomorphism is supported at the identity, and the $G$-invariance of the construction gives $\sum s_i t_i = 1$ and $se = es$ for all $s \in S$. Conversely, a commutative separable algebra is a finitely generated projective $R$-module, and its separability element provides, after a faithfully flat base change that splits the algebra into a product of copies of the base, the finite group action and the isomorphism required by the definition. $\square$
+*Proof (sketch).* For a Galois extension the separability element is built from the inverse of the Galois isomorphism: applying the inverse of $S\otimes_R S \to \prod_{\sigma\in G}S$ to the family with a single nonzero entry $1$ at the identity produces an element $e \in S\otimes_R S$ whose image under the isomorphism is supported at the identity, and the $G$-invariance of the construction gives $\sum s_i t_i = 1$ and $se = es$ for all $s \in S$. Conversely, a commutative separable algebra is a finitely generated projective $R$-module, and its separability element provides, after a faithfully flat base change that splits the algebra into a product of copies of the base, the finite group action and the isomorphism required by the definition.
 
 **Example.** The étale algebras over a field $F$ are exactly the products of finite separable field extensions of $F$. For the number ring $R = \mathbb{Z}[\tfrac1n]$, the étale $R$-algebras are the products of rings of integers of number fields unramified outside the primes dividing $n$; since no number field other than $\mathbb{Q}$ has discriminant $\pm1$, the étale $\mathbb{Z}$-algebras are exactly the products $\mathbb{Z}^n$. Thus $\mathbb{Z}[i]$ is not étale over $\mathbb{Z}$ but becomes étale over $\mathbb{Z}[\tfrac12]$, and $\mathbb{Z}[x]/(x^2-x) \cong \mathbb{Z}\times\mathbb{Z}$ is étale over $\mathbb{Z}$.
 

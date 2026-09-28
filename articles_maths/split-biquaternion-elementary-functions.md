@@ -1,3 +1,4 @@
+
 # __Split-Biquaternion Elementary Functions__
 
 ## Introduction
@@ -16,7 +17,7 @@ $$
 \tilde{Q} = Q_0 e_0 + Q_1 e_1 + Q_2 e_2 + Q_3 e_3, \qquad Q_\mu = q_\mu + j q'_\mu, \quad q_\mu, q'_\mu \in \mathbb{R}.
 $$
 
-The split complex unit is $j$, with $j^2 = +1$, and it commutes with the quaternion units. The quaternion conjugate is $\bar{\tilde{Q}} = Q_0 e_0 - \mathbf{Q}$, where $\mathbf{Q} = Q_1 e_1 + Q_2 e_2 + Q_3 e_3$. The split complex conjugate is $\tilde{Q}^* = Q_0^* e_0 + \mathbf{Q}^*$, with $Q_\mu^* = q_\mu - j q'_\mu$. The Hermitian conjugate is $\tilde{Q}^\dagger = \bar{\tilde{Q}}^*$, and the anti-Hermitian conjugate is $\tilde{Q}^\flat = -\tilde{Q}^\dagger$. The norm form is $N(\tilde{Q}) = \tilde{Q} \bar{\tilde{Q}}$.
+The split complex unit is $j$, with $j^2 = +1$, and it commutes with the quaternion units. The quaternion conjugate is $\bar{\tilde{Q}} = Q_0 e_0 - \mathbf{Q}$, where $\mathbf{Q} = Q_1 e_1 + Q_2 e_2 + Q_3 e_3$. The split complex conjugate is $\tilde{Q}^* = Q_0^* e_0 + \mathbf{Q}^*$, with $Q_\mu^* = q_\mu - j q'_\mu$. The Hermitian conjugate is $\tilde{Q}^\dagger = \bar{\tilde{Q}}^*$, and the anti-Hermitian conjugate is $\tilde{Q}^\flat = -\tilde{Q}^\dagger$. The split-biquaternion norm is $N(\tilde{Q}) = \tilde{Q} \bar{\tilde{Q}}$.
 
 The **idempotent components** of $\tilde{Q}$ are the real quaternions
 
@@ -338,7 +339,7 @@ The key differences are:
 
 4. **The logarithm and power function are simpler.** In the biquaternion case, the logarithm and power function involve the complex angle and the roots of $-1$. In the split biquaternion case, they reduce to the quaternion logarithm and power function in each component.
 
-5. **The zero divisors play a role.** In the split biquaternion case, the logarithm is not defined when one of the idempotent components vanishes, i.e., when the split biquaternion is a zero divisor. In the biquaternion case, the logarithm is not defined when the norm form vanishes, which is a different condition.
+5. **The zero divisors play a role.** In the split biquaternion case, the logarithm is not defined when one of the idempotent components vanishes, i.e., when the split biquaternion is a zero divisor. In the biquaternion case, the logarithm is not defined when the split-biquaternion norm vanishes, which is a different condition.
 
 ## Open Questions
 
@@ -397,7 +398,7 @@ The elementary functions of several split biquaternion variables are largely ope
 | $\tilde\Pi_\pm = \tfrac{1}{2}(1 \pm j)$ | Idempotents of $\mathbb{D}$ |
 | $\tilde{Q} = \sum_{\mu=0}^{3} Q_\mu e_\mu$, $Q_\mu = q_\mu + j q'_\mu$ | General split biquaternion |
 | $\tilde{Q}_\pm = \sum_\mu (q_\mu \pm q'_\mu) e_\mu$ | Idempotent components, real quaternions |
-| $N(\tilde{Q}) = \tilde{Q} \bar{\tilde{Q}}$ | Norm form |
+| $N(\tilde{Q}) = \tilde{Q} \bar{\tilde{Q}}$ | Split-Biquaternion norm |
 | $\exp, \log$ | Split biquaternion exponential and logarithm |
 | $\sin, \cos, \sinh, \cosh$ | Trigonometric and hyperbolic functions |
 | $\tilde{Q}^\alpha$ | Split biquaternion power function |

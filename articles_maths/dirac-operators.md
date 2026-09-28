@@ -43,11 +43,11 @@ $$
 
 where $\nabla^*\nabla=-\sum_j\nabla_{e_j}\nabla_{e_j}+\cdots$ is the connection Laplacian (a nonnegative operator) and $\mathcal{R}$ is the endomorphism of $S$ determined by the curvature of $\nabla$ and, in the spin case, by the scalar curvature: $\mathcal{R}=\tfrac14\mathrm{scal}\cdot1_S$ for the spin Dirac operator.
 
-*Proof.* Quoted as standard. The proof expands $D^2$ in a local frame, uses the Clifford relations to isolate the second-order part, recognises the second-order part as the connection Laplacian up to the zeroth-order term produced by the frame derivatives, and identifies the remaining first-order term as an endomorphism via the Clifford relations. That the remaining term is a scalar multiple of the identity in the spin case is the Lichnerowicz computation. $\square$
+*Proof.* Quoted as standard. The proof expands $D^2$ in a local frame, uses the Clifford relations to isolate the second-order part, recognises the second-order part as the connection Laplacian up to the zeroth-order term produced by the frame derivatives, and identifies the remaining first-order term as an endomorphism via the Clifford relations. That the remaining term is a scalar multiple of the identity in the spin case is the Lichnerowicz computation.
 
 **Corollary (spectral consequences).** If $\mathcal{R}\ge0$ as an endomorphism, then $D^2\ge0$ and $\ker D=\ker D^2$ consists of the parallel sections annihilated by $\mathcal{R}$; in particular if the scalar curvature of a spin manifold is positive then the spin Dirac operator has no harmonic spinors.
 
-*Proof.* For a self-adjoint $D$, $\langle D^2s,s\rangle=\|Ds\|^2\ge0$, and the identity gives $\|Ds\|^2=\langle\nabla^*\nabla s,s\rangle+\langle\mathcal{R}s,s\rangle=\|\nabla s\|^2+\langle\mathcal{R}s,s\rangle$; both terms are nonnegative under the hypothesis, and the sum vanishes only if both do. $\square$
+*Proof.* For a self-adjoint $D$, $\langle D^2s,s\rangle=\|Ds\|^2\ge0$, and the identity gives $\|Ds\|^2=\langle\nabla^*\nabla s,s\rangle+\langle\mathcal{R}s,s\rangle=\|\nabla s\|^2+\langle\mathcal{R}s,s\rangle$; both terms are nonnegative under the hypothesis, and the sum vanishes only if both do.
 
 ## Self-Adjointness
 
@@ -61,7 +61,7 @@ $$
 \langle Df,g\rangle = \langle f,Dg\rangle .
 $$
 
-*Proof.* Since $e_j$ is skew and constant, $\langle e_j\partial_jf,g\rangle=-\langle\partial_jf,e_jg\rangle$; integrating by parts, the boundary term vanishing for compact support, gives $+\langle f,e_j\partial_jg\rangle$, and summing over $j$ gives the claim. $\square$
+*Proof.* Since $e_j$ is skew and constant, $\langle e_j\partial_jf,g\rangle=-\langle\partial_jf,e_jg\rangle$; integrating by parts, the boundary term vanishing for compact support, gives $+\langle f,e_j\partial_jg\rangle$, and summing over $j$ gives the claim.
 
 **Theorem (essential self-adjointness and domain).** The operator $D$ with domain $C_c^\infty$ is essentially self-adjoint; its closure has domain the Sobolev space $H^1(\mathbb{R}^m;\mathcal{S})$ and is self-adjoint with $D^2=-\Delta$, the positive Laplacian.
 
@@ -71,7 +71,7 @@ $$
 \|Df\|^2 = \langle D^2f,f\rangle = \langle-\Delta f,f\rangle = \|\nabla f\|^2 ,
 $$
 
-so the graph norm $\|f\|^2+\|Df\|^2$ is equivalent to the $H^1$ norm. A symmetric operator whose graph norm is equivalent to a norm in which the space is complete has a self-adjoint closure with that domain; the adjoint has the same domain because the formal adjoint and $D$ coincide on $C_c^\infty$ and the boundary terms at infinity vanish for $H^1$ functions. $\square$
+so the graph norm $\|f\|^2+\|Df\|^2$ is equivalent to the $H^1$ norm. A symmetric operator whose graph norm is equivalent to a norm in which the space is complete has a self-adjoint closure with that domain; the adjoint has the same domain because the formal adjoint and $D$ coincide on $C_c^\infty$ and the boundary terms at infinity vanish for $H^1$ functions.
 
 **Theorem (the spectrum of the flat model).** The self-adjoint operator $D$ has spectrum $\mathbb{R}$, purely absolutely continuous, with no eigenvalues; the unitary Fourier transform diagonalises it,
 
@@ -81,11 +81,11 @@ $$
 
 and the multiplier $i\sigma(\xi)$ is Hermitian with eigenvalues $\pm|\xi|$.
 
-*Proof.* The Fourier transform is unitary on $L^2(\mathbb{R}^m;\mathcal{S})$ and turns $\partial_j$ into multiplication by $i\xi_j$, hence $D$ into multiplication by $i\sigma(\xi)$. Since $\sigma(\xi)^2=-|\xi|^2$ and $e_j$ is skew, $i\sigma(\xi)$ is Hermitian, so it is diagonalisable with real eigenvalues; its eigenvalues are the square roots of $|\xi|^2$, namely $\pm|\xi|$. The spectrum of a direct-integral multiplication operator is the closure of the union of the spectra of its fibres, here $\overline{\bigcup_{\xi}\{-|\xi|,|\xi|\}}=\mathbb{R}$. There are no eigenvalues because the fibres are invertible for $\xi\neq0$; absolute continuity follows from the explicit direct-integral form. $\square$
+*Proof.* The Fourier transform is unitary on $L^2(\mathbb{R}^m;\mathcal{S})$ and turns $\partial_j$ into multiplication by $i\xi_j$, hence $D$ into multiplication by $i\sigma(\xi)$. Since $\sigma(\xi)^2=-|\xi|^2$ and $e_j$ is skew, $i\sigma(\xi)$ is Hermitian, so it is diagonalisable with real eigenvalues; its eigenvalues are the square roots of $|\xi|^2$, namely $\pm|\xi|$. The spectrum of a direct-integral multiplication operator is the closure of the union of the spectra of its fibres, here $\overline{\bigcup_{\xi}\{-|\xi|,|\xi|\}}=\mathbb{R}$. There are no eigenvalues because the fibres are invertible for $\xi\neq0$; absolute continuity follows from the explicit direct-integral form.
 
 **Corollary (Weyl-type asymptotics on a torus).** On the flat torus $\mathbb{T}^m=\mathbb{R}^m/\mathbb{Z}^m$, with the same operator acting on smooth sections, the spectrum is $\{\pm|\xi|:\xi\in\mathbb{Z}^m\}$ with the multiplicities of the fibre eigenvalues, and the counting function satisfies $\#\{\text{eigenvalues of }|D|\le\lambda\}\sim c_m\lambda^m$ with $c_m$ the volume of the unit ball; this is Weyl's law for a first-order elliptic operator, in which the exponent is the dimension, not half of it.
 
-*Proof.* The spectrum of the torus operator is the union of the spectra of the constant-coefficient operators on the Fourier modes, which are the fibres at integer frequencies; the counting statement is the standard lattice-point count for the ball of radius $\lambda$, with the multiplicity of the Clifford module as a constant. $\square$
+*Proof.* The spectrum of the torus operator is the union of the spectra of the constant-coefficient operators on the Fourier modes, which are the fibres at integer frequencies; the counting statement is the standard lattice-point count for the ball of radius $\lambda$, with the multiplicity of the Clifford module as a constant.
 
 **Example (the circle).** For $m=1$ and $\mathcal{S}=\mathbb{C}$ with $e_1=i$, the operator is $D=i\,d/d\theta$ and the eigenfunctions are $e^{in\theta}$ with eigenvalues $-n$, so the spectrum is $\mathbb{Z}$ with multiplicity one: $D$ is self-adjoint, its spectrum is discrete, and the resolvent is compact. This is the smallest Dirac operator, and it shows that self-adjointness and nonnegativity are independent: $D^2\ge0$ while $D$ has both signs.
 
@@ -93,7 +93,7 @@ and the multiplier $i\sigma(\xi)$ is Hermitian with eigenvalues $\pm|\xi|$.
 
 **Theorem (self-adjointness on a complete manifold).** Let $M$ be complete and $S$ a Clifford module with a Clifford connection and a Hermitian metric making the Clifford coefficients skew. Then the Dirac operator $D$, defined on $C_c^\infty(M;S)$, is essentially self-adjoint, and its closure has domain the first Sobolev space $H^1(M;S)$.
 
-*Proof.* Quoted as standard (Chernoff; the argument of the flat case, with the graph norm of $D$ recognised as a first-order elliptic graph norm and completeness replacing the Fourier argument). The essential point is that the symbol is skew-Hermitian, so the formal adjoint is $D$ itself, and that $D^2$ is a Laplace-type operator with a positive leading part, so the graph norm is controlled by the elliptic norm. $\square$
+*Proof.* Quoted as standard (Chernoff; the argument of the flat case, with the graph norm of $D$ recognised as a first-order elliptic graph norm and completeness replacing the Fourier argument). The essential point is that the symbol is skew-Hermitian, so the formal adjoint is $D$ itself, and that $D^2$ is a Laplace-type operator with a positive leading part, so the graph norm is controlled by the elliptic norm.
 
 **Remark (when self-adjointness can fail).** The hypotheses are not automatic. A connection that is not Clifford-compatible, an indefinite metric on the fibres, or a non-complete manifold can produce an operator that is merely symmetric with unequal deficiency indices; the self-adjoint extensions are then indexed by boundary data at infinity, and different extensions have different spectra. The deficiency index computation and the parametrisation of the self-adjoint extensions are the theory of *Unbounded Operators and Spectral Measures*; what the Dirac setting supplies is the geometric meaning of the boundary data.
 
@@ -101,7 +101,7 @@ and the multiplier $i\sigma(\xi)$ is Hermitian with eigenvalues $\pm|\xi|$.
 
 **Theorem (compact resolvent and discreteness).** Let $M$ be closed and let $D$ be a Dirac-type operator on a Clifford module. Then $D$ is self-adjoint with domain $H^1(M;S)$, its resolvent is compact, its spectrum is a discrete subset of $\mathbb{R}$ without finite accumulation point, each eigenspace is finite-dimensional, and the eigenvalues form an unbounded two-sided sequence $\lambda_1\le\lambda_2\le\cdots$, $\lambda_k\to+\infty$ and $\lambda_{-k}\to-\infty$.
 
-*Proof.* A self-adjoint elliptic operator on a closed manifold has compact resolvent: the domain embeds compactly in $L^2$ by the Rellich–Kondrachov theorem, so the resolvent is the composition of a bounded map into $H^1$ with a compact embedding. Compact self-adjointness gives a discrete spectrum with finite-dimensional eigenspaces; ellipticity gives the regularity of the eigenfunctions, and the two-sidedness follows from $c(\xi)\mapsto -c(\xi)$ symmetry. $\square$
+*Proof.* A self-adjoint elliptic operator on a closed manifold has compact resolvent: the domain embeds compactly in $L^2$ by the Rellich–Kondrachov theorem, so the resolvent is the composition of a bounded map into $H^1$ with a compact embedding. Compact self-adjointness gives a discrete spectrum with finite-dimensional eigenspaces; ellipticity gives the regularity of the eigenfunctions, and the two-sidedness follows from $c(\xi)\mapsto -c(\xi)$ symmetry.
 
 **Definition.** Suppose $S=S^+\oplus S^-$ is a $\mathbb{Z}_2$-grading by which every $c(\xi)$ reverses the summands — the **chirality** splitting. Then $D$ is odd with respect to the grading,
 
@@ -119,7 +119,7 @@ $$
 
 is unchanged by continuous deformations of the operator within the class of Dirac-type operators; it is the **analytic index** of the pair. The chiral Dirac operator has compact resolvent and its index is a topological invariant, computed by the Atiyah–Singer theorem of *The Atiyah–Singer Index Theorem and K-Theory*.
 
-*Proof.* The Fredholm property and the stability of the index under deformation are the general theory of *Fredholm Theory*; ellipticity gives the finite-dimensionality of the kernel and the cokernel. The identification of the index with a topological invariant is the Atiyah–Singer theorem, quoted from Part II. $\square$
+*Proof.* The Fredholm property and the stability of the index under deformation are the general theory of *Fredholm Theory*; ellipticity gives the finite-dimensionality of the kernel and the cokernel. The identification of the index with a topological invariant is the Atiyah–Singer theorem, quoted from Part II.
 
 **Remark (the index as a spectral asymmetry).** The index of $D^+$ measures the asymmetry of the spectrum of $D$ about the origin: it is the difference between the number of zero eigenvalues in the two chiral halves. The heat-kernel proof of the index theorem computes it from the small-time asymptotics of the heat kernel of $D^2$; the local form of the computation and the characteristic classes that appear are Part II's. For the spin Dirac operator on a spin manifold, the index of $D^+$ is the $\hat A$-genus, and the Lichnerowicz corollary of the Weitzenböck identity shows that it vanishes whenever the scalar curvature is positive.
 

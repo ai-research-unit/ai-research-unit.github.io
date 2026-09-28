@@ -7,7 +7,7 @@ This article develops the topology of the real algebra $\mathbb{R}$: the order t
 
 The subject is elementary, and its place in this blog is that of the base case. The topology is developed here for the one-dimensional algebra $\mathbb{R}$, in the companion articles *Complex Topology* for the two-dimensional definite algebra $\mathbb{C}$ and *Biquaternion Topology* for the eight-dimensional algebra $\mathbb{B}$, and in the companion articles on the topology of the other members of the family. The whole structure is one connected line with two ends: every homotopy group vanishes, the unit set is the finite sign group, and the compactification that appears is the circle. The properties that the higher members acquire — a compact unit sphere, a null cone with a link, a nontrivial fundamental group — are all absent here, and their absence is the mathematical content of the one-dimensionality.
 
-**Conventions.** The basis is $e_0 = 1$; a real number is $x = x e_0$ with its single real coordinate $x$; the norm form is $N(x) = x^2$ and the modulus and metric are $|x| = \sqrt{N(x)} = \sqrt{x^2}$; the group of units is $\mathbb{R}^\times = \mathbb{R}\setminus\{0\}$. No physics is invoked.
+**Conventions.** The basis is $e_0 = 1$; a real number is $x = x e_0$ with its single real coordinate $x$; the norm is $N(x) = x^2$ and the modulus and metric are $|x| = \sqrt{N(x)} = \sqrt{x^2}$; the group of units is $\mathbb{R}^\times = \mathbb{R}\setminus\{0\}$. No physics is invoked.
 
 ## The Algebra as a Topological Space
 
@@ -39,7 +39,7 @@ of the metric $d(x, y) = |x - y|$.
 
 **Theorem.** The order topology and the metric topology on $\mathbb{R}$ coincide.
 
-**Proof.** An open ball is the interval $(x_0-\varepsilon, x_0+\varepsilon)$, which is order-open, so every metric-open set is order-open. Conversely an open interval $(a,b)$ is the union of the balls $B\bigl(\tfrac{a+b}{2}, r\bigr)$ over $r < \tfrac{b-a}{2}$ centred in the interval, and a ray is a union of balls, so every order-open set is metric-open. The two topologies therefore have the same open sets. $\square$
+**Proof.** An open ball is the interval $(x_0-\varepsilon, x_0+\varepsilon)$, which is order-open, so every metric-open set is order-open. Conversely an open interval $(a,b)$ is the union of the balls $B\bigl(\tfrac{a+b}{2}, r\bigr)$ over $r < \tfrac{b-a}{2}$ centred in the interval, and a ray is a union of balls, so every order-open set is metric-open. The two topologies therefore have the same open sets.
 
 The coincidence is the statement that the order and the metric on the line determine the same notion of nearness; the metric is itself order-defined, $d(x,y) = |x-y|$ with $|x|$ the absolute value, so the order generates the metric, and conversely. In the complex case there is no order, and the topology comes from the Euclidean metric alone; in the real case the two descriptions are available and agree.
 
@@ -53,11 +53,11 @@ $$
 L = \sup_{n} \inf_{k \ge n} x_k
 $$
 
-exists in $\mathbb{R}$ by completeness; because the sequence is Cauchy, its oscillation over the tail falls below every $\varepsilon > 0$ eventually, so $|x_n - L| < \varepsilon$ for all large $n$, and $x_n \to L$. The completeness of $\mathbb{R}$ is what the construction of $\mathbb{R}$ from $\mathbb{Q}$ by Dedekind cuts or Cauchy sequences supplies, and it is the property that fails for $\mathbb{Q}$. $\square$
+exists in $\mathbb{R}$ by completeness; because the sequence is Cauchy, its oscillation over the tail falls below every $\varepsilon > 0$ eventually, so $|x_n - L| < \varepsilon$ for all large $n$, and $x_n \to L$. The completeness of $\mathbb{R}$ is what the construction of $\mathbb{R}$ from $\mathbb{Q}$ by Dedekind cuts or Cauchy sequences supplies, and it is the property that fails for $\mathbb{Q}$.
 
 **Theorem (local compactness).** $\mathbb{R}$ is **locally compact**: every point has a compact neighbourhood.
 
-**Proof.** The closed bounded interval $[x_0-1, x_0+1]$ is a neighbourhood of $x_0$, and by the Heine–Borel theorem it is compact: every open cover has a finite subcover. Equivalently, every sequence in a closed bounded interval has a convergent subsequence, by Bolzano–Weierstrass. $\square$
+**Proof.** The closed bounded interval $[x_0-1, x_0+1]$ is a neighbourhood of $x_0$, and by the Heine–Borel theorem it is compact: every open cover has a finite subcover. Equivalently, every sequence in a closed bounded interval has a convergent subsequence, by Bolzano–Weierstrass.
 
 Local compactness is the property that makes the one-point compactification available in the next section. The line is $\sigma$-compact, being the union of the intervals $[-n, n]$, and it is second countable, since the rational-ended intervals form a base.
 
@@ -65,7 +65,7 @@ Local compactness is the property that makes the one-point compactification avai
 
 **Theorem.** $\mathbb{R}$ is **connected**, and its connected subsets are exactly the intervals.
 
-**Proof.** Suppose $\mathbb{R} = A \sqcup B$ with $A$, $B$ non-empty open. Pick $a \in A$ and $b \in B$ with $a < b$, and let $c = \sup\{x \in A : x < b\}$; by completeness $c$ exists, and the openness of $A$ and $B$ gives a contradiction at $c$. Hence no such separation exists, so $\mathbb{R}$ is connected. A subset is connected exactly when it contains every point between any two of its points, which is the interval property. $\square$
+**Proof.** Suppose $\mathbb{R} = A \sqcup B$ with $A$, $B$ non-empty open. Pick $a \in A$ and $b \in B$ with $a < b$, and let $c = \sup\{x \in A : x < b\}$; by completeness $c$ exists, and the openness of $A$ and $B$ gives a contradiction at $c$. Hence no such separation exists, so $\mathbb{R}$ is connected. A subset is connected exactly when it contains every point between any two of its points, which is the interval property.
 
 Thus the connected subsets of $\mathbb{R}$ are the intervals — the sets $[a,b]$, $(a,b)$, $[a,b)$, $(a,b]$ and the rays — and every one of them is connected, giving the interval structure of the line. Every interval is connected and locally connected, and the line is path-connected, indeed every two points are joined by the interval between them.
 
@@ -85,11 +85,11 @@ $$
 \{x : |x| = 1\} = \{x : N(x) = 1\} = \{\pm1\} = O(1).
 $$
 
-The two descriptions coincide because the norm form is positive definite and equals the square of the modulus, $N(x) = |x|^2$. The unit set is therefore the two-point set, a finite **discrete** topological group.
+The two descriptions coincide because the norm is positive definite and equals the square of the modulus, $N(x) = |x|^2$. The unit set is therefore the two-point set, a finite **discrete** topological group.
 
 **Proposition.** $\{\pm1\}$ is a compact, disconnected, abelian topological group of dimension $0$, and it is the maximal compact subgroup of $\mathbb{R}^\times$.
 
-**Proof.** It is the kernel of the norm form on $\mathbb{R}^\times$, hence a subgroup; it is finite, hence compact and discrete, of dimension $0$; it is abelian and has the two components $\{+1\}$ and $\{-1\}$. A compact subgroup of the one-dimensional group $\mathbb{R}^\times$ lies in a compact interval around $1$, and the only such subgroups are $\{1\}$ and $\{\pm1\}$; since $\{1\}$ is not maximal, the maximal compact subgroup is $\{\pm1\}$. $\square$
+**Proof.** It is the kernel of the norm on $\mathbb{R}^\times$, hence a subgroup; it is finite, hence compact and discrete, of dimension $0$; it is abelian and has the two components $\{+1\}$ and $\{-1\}$. A compact subgroup of the one-dimensional group $\mathbb{R}^\times$ lies in a compact interval around $1$, and the only such subgroups are $\{1\}$ and $\{\pm1\}$; since $\{1\}$ is not maximal, the maximal compact subgroup is $\{\pm1\}$.
 
 The unit set is the group $O(1)$, and it is the **base case** of the theorem that the unit sphere of a real normed division algebra is a Lie group. The cases are the finite list $S^0 = \{\pm1\}$, $S^1$, $S^3$, and the real member is $S^0$. It is disconnected, in contrast with the connected circle $S^1$ of the complex case; the disconnectedness is the sign, and it is the topological form of the two-component unit group.
 
@@ -109,9 +109,9 @@ $$
 H(t, x) = (1-t) x, \qquad t \in [0,1],
 $$
 
-is continuous with $H(0,x) = x$ and $H(1,x) = 0$, so the identity is homotopic to the constant map at $0$. $\square$
+is continuous with $H(0,x) = x$ and $H(1,x) = 0$, so the identity is homotopic to the constant map at $0$.
 
-Every map into $\mathbb{R}$ is null-homotopic, and the same homotopy contracts each of the two rays and each interval, since they are closed under the contraction toward any base point. The single distinguished subspace, the whole line, therefore carries no topology beyond that of the contractible line; the norm-form content of *Real Algebra* lies in the quadratic form, not in the topology.
+Every map into $\mathbb{R}$ is null-homotopic, and the same homotopy contracts each of the two rays and each interval, since they are closed under the contraction toward any base point. The single distinguished subspace, the whole line, therefore carries no topology beyond that of the contractible line; the content on the norm of *Real Algebra* lies in the quadratic form, not in the topology.
 
 **The homotopy groups of the unit group.** The two components of $\mathbb{R}^\times$ are contractible, so
 
@@ -155,13 +155,13 @@ a compact ordered space in which every subset has a supremum and an infimum. The
 | One-point compactification | $S^1$ | $S^2$ | (dimension $8$, not a group) |
 | Ends | two | one | one |
 
-The three algebras share the contractibility of the ambient space. They differ in the unit sphere, which is the finite sign group for $\mathbb{R}$, a connected circle for $\mathbb{C}$, and a non-group seven-sphere for $\mathbb{B}$; in the unit group, which has two contractible components for $\mathbb{R}$ and a compact connected core for the other two; and in the ends, which are two for the line and one for the higher-dimensional spaces. Each difference traces to a single cause: the dimension of the real algebra, which makes the unit set finite, a circle or a sphere, and the definiteness of the norm form, which makes the zero set of $N$ a single point rather than a cone.
+The three algebras share the contractibility of the ambient space. They differ in the unit sphere, which is the finite sign group for $\mathbb{R}$, a connected circle for $\mathbb{C}$, and a non-group seven-sphere for $\mathbb{B}$; in the unit group, which has two contractible components for $\mathbb{R}$ and a compact connected core for the other two; and in the ends, which are two for the line and one for the higher-dimensional spaces. Each difference traces to a single cause: the dimension of the real algebra, which makes the unit set finite, a circle or a sphere, and the definiteness of the norm, which makes the zero set of $N$ a single point rather than a cone.
 
 ## Summary
 
 The real algebra $\mathbb{R}$ is contractible, hence path-connected and simply connected, with $\pi_n(\mathbb{R}) = 0$ for all $n \ge 1$; its order topology and its metric topology coincide, it is complete and locally compact, and its connected subsets are exactly the intervals. The unit set $\{\pm1\} = O(1)$ is a compact, disconnected, abelian topological group of dimension $0$, the base case $S^0$ of the unit spheres of the normed division algebras; it is the maximal compact subgroup of the unit group.
 
-The group of units is $\mathbb{R}^\times = \mathbb{R}\setminus\{0\}$, an open, dense, disconnected, non-compact topological group with the two contractible components $\mathbb{R}_{>0}$ and $\mathbb{R}_{<0}$, homeomorphic to $\mathbb{R}_{>0}\times\{\pm1\}$. It is homotopy equivalent to a two-point space, so all of its homotopy groups vanish, in contrast with the winding of the complex and biquaternion unit groups. The unit group is the disjoint union of its two contractible rays; there is no null cone and no link, because the norm form is definite and the zero-divisor class is empty.
+The group of units is $\mathbb{R}^\times = \mathbb{R}\setminus\{0\}$, an open, dense, disconnected, non-compact topological group with the two contractible components $\mathbb{R}_{>0}$ and $\mathbb{R}_{<0}$, homeomorphic to $\mathbb{R}_{>0}\times\{\pm1\}$. It is homotopy equivalent to a two-point space, so all of its homotopy groups vanish, in contrast with the winding of the complex and biquaternion unit groups. The unit group is the disjoint union of its two contractible rays; there is no null cone and no link, because the norm is definite and the zero-divisor class is empty.
 
 The line has two ends, and the two compactifications are the two-point compactification $\overline{\mathbb{R}} = [-\infty,+\infty] \cong [0,1]$, which keeps the ends apart, and the one-point compactification $\mathbb{R}\cup\{\infty\} \cong S^1$, which joins them into the circle. Compared with the complex and biquaternion algebras, the real case loses the connected unit circle, the seven-sphere, the null cone and its link, and the non-vanishing homotopy groups, and keeps a contractible line whose compactification is the simplest closed curve.
 
@@ -171,7 +171,7 @@ The line has two ends, and the two compactifications are the two-point compactif
 |---|---|
 | $\mathbb{R}$ | the real algebra as a topological space; contractible, two ends |
 | $x$ | a real number with real coordinate $x$ |
-| $N(x) = x^2$, $\lvert x\rvert = \sqrt{N(x)}$ | the norm form and the modulus |
+| $N(x) = x^2$, $\lvert x\rvert = \sqrt{N(x)}$ | the norm and the modulus |
 | $d(x,y) = \lvert x-y\rvert$ | the metric generating the topology |
 | $B(x_0,\varepsilon) = (x_0-\varepsilon, x_0+\varepsilon)$ | the open ball, an open interval |
 | $\{\pm1\} = O(1) = S^0$ | the unit set, a discrete compact group |

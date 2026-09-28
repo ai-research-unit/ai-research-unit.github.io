@@ -28,7 +28,7 @@ $$
 \tilde{Q} = Q_0 e_0 + \mathbf{Q}, \qquad \mathbf{Q} = Q_1 e_1 + Q_2 e_2 + Q_3 e_3.
 $$
 
-The scalar imaginary is $i$, which commutes with the quaternion units. The quaternion conjugate is $\bar{\tilde{Q}} = Q_0 e_0 - \mathbf{Q}$, and the norm form is $N(\tilde{Q}) = \tilde{Q} \bar{\tilde{Q}}$.
+The scalar imaginary is $i$, which commutes with the quaternion units. The quaternion conjugate is $\bar{\tilde{Q}} = Q_0 e_0 - \mathbf{Q}$, and the biquaternion norm is $N(\tilde{Q}) = \tilde{Q} \bar{\tilde{Q}}$.
 
 **Notation.** To avoid collision with the standard basis $\{e_0, e_1, e_2, e_3\}$ and with the scalar imaginary $i$, the root of $-1$ used in the Fourier kernel is denoted $\rho$ throughout. This is a local convention; the roots themselves are the objects classified in the division theory article.
 
@@ -54,7 +54,7 @@ $$
 W_N(n, u) = \cos\left(2\pi \frac{nu}{N}\right) e_0 - \sin\left(2\pi \frac{nu}{N}\right) \rho,
 $$
 
-where the cosine and sine are the ordinary complex trigonometric functions applied to the real argument $2\pi nu/N$. The kernel is therefore a unit biquaternion in the sense that its norm form is $e_0$:
+where the cosine and sine are the ordinary complex trigonometric functions applied to the real argument $2\pi nu/N$. The kernel is therefore a unit biquaternion in the sense that its biquaternion norm is $e_0$:
 
 $$
 N(W_N(n, u)) = \cos^2\left(2\pi \frac{nu}{N}\right) + \sin^2\left(2\pi \frac{nu}{N}\right) = 1, \qquad N(W_N(n, u)) = e_0.
@@ -136,9 +136,9 @@ The invertibility of the transform depends on the properties of the kernel and o
 
 **The kernel has unit norm.** For every $n$ and $u$, the kernel $W_N(n, u)$ satisfies $N(W_N(n, u)) = e_0$, as shown above. So the kernel is always invertible.
 
-**The signal may have vanishing norm.** If a sample $f[n]$ has vanishing norm form, $N(f[n]) = 0$, then $f[n]$ is a zero divisor, and it is not necessarily recoverable from the transform. The precise statement is the following.
+**The signal may have vanishing norm.** If a sample $f[n]$ has vanishing norm, $N(f[n]) = 0$, then $f[n]$ is a zero divisor, and it is not necessarily recoverable from the transform. The precise statement is the following.
 
-**Theorem (invertibility).** If every sample $f[n]$ has non-vanishing norm form, then the transform is invertible: the inverse formula reproduces $f[n]$ for every $n$.
+**Theorem (invertibility).** If every sample $f[n]$ has non-vanishing norm, then the transform is invertible: the inverse formula reproduces $f[n]$ for every $n$.
 
 **Proof.** Under the hypothesis, each $f[n]$ is invertible. The transform is a finite sum of products of invertible elements, and the inverse formula is verified by direct computation:
 
@@ -152,7 +152,7 @@ $$
 \sum_{u=0}^{N-1} \overline{W_N(n, u)} W_N(m, u) = \begin{cases} N e_0 & \text{if } n = m, \\ 0 & \text{if } n \neq m, \end{cases}
 $$
 
-which holds because the kernel is the ordinary complex kernel in the direction $\rho$, and the orthogonality is the standard one. So the double sum reduces to $f[n]$. $\square$
+which holds because the kernel is the ordinary complex kernel in the direction $\rho$, and the orthogonality is the standard one. So the double sum reduces to $f[n]$.
 
 **The transform is not invertible on signals containing zero-divisor samples.** If some $f[n]$ is a zero divisor, the inverse may not reproduce it. The precise condition under which the transform is invertible on a signal with zero-divisor samples is not known; it depends on the cancellations in the sum.
 
@@ -177,8 +177,6 @@ which follows from the closed form of the kernel and the parity of the cosine an
 $$
 F[N-u] = \sum_{n=0}^{N-1} W_N(n, N-u) f[n] = \sum_{n=0}^{N-1} \overline{W_N(n, u)} \overline{f[n]} = \overline{\sum_{n=0}^{N-1} W_N(n, u) f[n]} = \overline{F[u]}.
 $$
-
-$\square$
 
 The symmetry is the biquaternion analogue of the Hermitian symmetry $F[-u] = F[u]^*$ of the ordinary Fourier transform of a real signal. It is the basis for reconstructing a real signal from half of its spectrum, and it is the reason the standard techniques of real-signal processing extend to the biquaternion setting, provided the signal is real quaternion-valued.
 
@@ -206,7 +204,7 @@ $$
 Q_\rho = \langle \rho, \mathbf{v} \rangle, \qquad Q_\nu = \langle \nu, \mathbf{v} \rangle, \qquad Q_\xi = \langle \xi, \mathbf{v} \rangle,
 $$
 
-where the inner product is the complex bilinear inner product defined in the basic algebra article. The scalar coefficient $Q_0$ is unchanged.
+where the pairing is the complex bilinear dot product $\sum_k x_k y_k$ defined in *Biquaternion Algebra*, §*Biquaternions* (the polar form of the biquaternion norm, not the Hermitian inner product). The scalar coefficient $Q_0$ is unchanged.
 
 ### The Factorization
 
@@ -326,7 +324,7 @@ $$
 \mathcal{F}[f * g][u] = \sum_{m=0}^{N-1} \sum_{k=0}^{N-1} W_N(m, u) f[m] W_N(k, u) g[k] = \left(\sum_{m=0}^{N-1} W_N(m, u) f[m]\right) \left(\sum_{k=0}^{N-1} W_N(k, u) g[k]\right) = \mathcal{F}[f][u] \cdot \mathcal{F}[g][u].
 $$
 
-The change of variables and the multiplicativity of the kernel in the index are justified by the closed form of the kernel. $\square$
+The change of variables and the multiplicativity of the kernel in the index are justified by the closed form of the kernel.
 
 **Corollary (right-kernel case).** For the transform with the kernel on the right,
 
@@ -359,17 +357,17 @@ More precisely, if $f[n]$ is a zero divisor, there exists a nonzero biquaternion
 ### Consequences for the Transform
 
 - **The transform is not necessarily invertible on signals containing zero-divisor samples.** The inverse transform may not recover the vanished information.
-- **The transform is invertible on signals of non-vanishing norm.** If every sample has non-vanishing norm form, the transform is invertible (Theorem above).
+- **The transform is invertible on signals of non-vanishing norm.** If every sample has non-vanishing norm, the transform is invertible (Theorem above).
 
 ### Structural Interpretation
 
 The vanishing-norm issue is a genuinely biquaternionic feature. It does not arise in the complex or quaternion Fourier transforms, because the complex and quaternion algebras are division algebras: every nonzero element has an inverse. The biquaternion algebra is not a division algebra, and this is reflected in the harmonic analysis.
 
-The issue can be avoided by restricting the signals to a subspace where the norm form is nonzero, such as the quaternion subspace $\mathbb{H}_{\mathbb{B}}$. On $\mathbb{H}_{\mathbb{B}}$, every nonzero sample is invertible, and the transform is invertible on all signals. On the anti-Hermitian subspace $\mathbb{M}_-$, the samples with vanishing norm lie on a cone, and the transform is invertible only for signals whose samples lie off this cone.
+The issue can be avoided by restricting the signals to a subspace where the biquaternion norm is nonzero, such as the quaternion subspace $\mathbb{H}_{\mathbb{B}}$. On $\mathbb{H}_{\mathbb{B}}$, every nonzero sample is invertible, and the transform is invertible on all signals. On the anti-Hermitian subspace $\mathbb{M}_-$, the samples with vanishing norm lie on a cone, and the transform is invertible only for signals whose samples lie off this cone.
 
 ### The Open Question
 
-The precise condition under which the transform is invertible on a signal with zero-divisor samples is not known. It depends on the cancellations in the sum $\sum_n W_N(n, u) f[n]$, and it is not determined by the norms of the samples alone. This is one of the open questions listed below.
+The precise condition under which the transform is invertible on a signal with zero-divisor samples is not known. It depends on the cancellations in the sum $\sum_n W_N(n, u) f[n]$, and it is not determined by the biquaternion norms of the samples alone. This is one of the open questions listed below.
 
 ## The Two-Dimensional Transform
 
@@ -439,7 +437,7 @@ The discrete transform is the discrete analogue of the continuous transform of t
 | $W_N(n,u) = \exp(-2\pi\rho nu/N)$ | Discrete Fourier kernel, placed on the left of $f$; $\overline{W_N(n,u)}$ gives the inverse transform |
 | $\rho$ | Root of $-1$ in $\mathbb{B}$; the degenerate roots give the complex or quaternion transform, the non-trivial roots a genuinely biquaternionic one |
 | $N$ | Number of samples, in the kernel $W_N$ |
-| $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$ | Norm form; not to be confused with the sample count $N$ |
+| $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$ | Biquaternion norm; not to be confused with the sample count $N$ |
 | $\mathbf{Q} = Q_1 e_1 + Q_2 e_2 + Q_3 e_3$ | Vector part of a biquaternion |
 | $e^{\rho\theta} = \cos\theta\,e_0 + \sin\theta\,\rho$ | de Moivre formula, valid for every root $\rho$ of $-1$ |
 

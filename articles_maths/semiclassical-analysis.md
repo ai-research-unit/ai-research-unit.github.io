@@ -35,7 +35,7 @@ the normalisation chosen so that the symbol $\xi^\alpha$ gives the operator $(\h
 
 **Proposition.** (i) $\mathrm{Op}^w_\hbar$ is linear, and $\mathrm{Op}^w_\hbar(\overline a)=\mathrm{Op}^w_\hbar(a)^*$ on $\mathcal S$, so that real symbols give symmetric operators. (ii) If $a \in S^0_\hbar$ then $\mathrm{Op}^w_\hbar(a)$ is bounded on $L^2$ with $\|\mathrm{Op}^w_\hbar(a)\|\le C\sup_{|\alpha|+|\beta|\le N}\|\partial_\xi^\alpha\partial_x^\beta a\|_\infty$ for a constant and an integer depending only on $n$. (iii) If $a \in S^m_\hbar$ then $\mathrm{Op}^w_\hbar(a)$ maps $H^s$ continuously into $H^{s-m}$, with norms bounded uniformly in $\hbar$. (iv) $\mathrm{Op}^w_\hbar(a)$ differs from the left quantisation at the same scale, $\frac{1}{(2\pi\hbar)^n}\iint e^{i(x-y)\cdot\xi/\hbar}a(x,\xi)u(y)\,dy\,d\xi$, by $\frac{\hbar}{2i}\sum_j\partial_{x_j}\partial_{\xi_j}a$ plus terms of order $\hbar^2$; the two quantisations have the same principal symbol and differ only in the subprincipal terms, exactly as in *Pseudodifferential Operators* after the scaling $\xi\mapsto\xi/\hbar$.
 
-*Proof.* (i) is the symmetry of the Weyl kernel. (ii) is the Calderón–Vaillancourt theorem in its scaled form; the scaling $x\mapsto x$, $\xi\mapsto\xi/\hbar$ reduces the estimate to the unscaled one with the constants uniform in $\hbar$. (iii) follows from (ii) applied to $\mathrm{Op}^w_\hbar(a)\langle\hbar D\rangle^{-m}$ and the fact that the Bessel potentials commute with the calculus to leading order. (iv) is the expansion of the argument $(x+y)/2$ that produced the subprincipal term already computed in *Pseudodifferential Operators*. $\square$
+*Proof.* (i) is the symmetry of the Weyl kernel. (ii) is the Calderón–Vaillancourt theorem in its scaled form; the scaling $x\mapsto x$, $\xi\mapsto\xi/\hbar$ reduces the estimate to the unscaled one with the constants uniform in $\hbar$. (iii) follows from (ii) applied to $\mathrm{Op}^w_\hbar(a)\langle\hbar D\rangle^{-m}$ and the fact that the Bessel potentials commute with the calculus to leading order. (iv) is the expansion of the argument $(x+y)/2$ that produced the subprincipal term already computed in *Pseudodifferential Operators*.
 
 ### The Moyal Product
 
@@ -59,7 +59,7 @@ $$
 
 in operator norm for symbols of order $0$. This is the **Poisson-bracket correspondence**: the commutator is the Weyl operator of the Poisson bracket to leading order in $\hbar$.
 
-*Proof (sketch).* The product of two Weyl operators is computed from the kernel representation: the composed kernel is an oscillatory integral whose phase is expanded to second order about its stationary point, and the expansion produces the bidifferential operators of the statement; the first-order term is the Poisson bracket with the stated sign, checked by the exact computation below. $\square$
+*Proof (sketch).* The product of two Weyl operators is computed from the kernel representation: the composed kernel is an oscillatory integral whose phase is expanded to second order about its stationary point, and the expansion produces the bidifferential operators of the statement; the first-order term is the Poisson bracket with the stated sign, checked by the exact computation below.
 
 **Example (verification).** For $n=1$, $a(x,\xi)=x$ and $b(x,\xi)=\xi$: $\mathrm{Op}^w_\hbar(a)=M_x$ and $\mathrm{Op}^w_\hbar(b)=\hbar D=-i\hbar\partial_x$, and
 
@@ -101,7 +101,7 @@ $$
 [P,\mathrm{Op}^w_\hbar(a)]=\frac{\hbar}{i}\mathrm{Op}^w_\hbar(\{p,a\})+O(\hbar^2\mathrm{-order}),
 $$
 
-so that the derivative is $\mathrm{Op}^w_\hbar(\{p,a\})+O(\hbar)$ up to unitary conjugation. The transport equation $\partial_ta_t=\{p,a_t\}$ with $a_0=a$ has the solution $a_t=a\circ\Phi_t$, since $\{p,a\}=-\{a,p\}=-H_pa$; comparing the flow of the operator with the flow of the symbol and integrating the error gives the bound $O(\hbar\langle t\rangle)$. $\square$
+so that the derivative is $\mathrm{Op}^w_\hbar(\{p,a\})+O(\hbar)$ up to unitary conjugation. The transport equation $\partial_ta_t=\{p,a_t\}$ with $a_0=a$ has the solution $a_t=a\circ\Phi_t$, since $\{p,a\}=-\{a,p\}=-H_pa$; comparing the flow of the operator with the flow of the symbol and integrating the error gives the bound $O(\hbar\langle t\rangle)$.
 
 **Corollary (propagation of singularities, semiclassical form).** If a family of states $u_\hbar$ is localised on a set $\Lambda \subseteq T^*M$ in the microlocal sense, then $U(t)u_\hbar$ is localised on $\Phi_t(\Lambda)$ to leading order in $\hbar$: the singularities and the phase-space localisation are transported by the Hamiltonian flow. This is the semiclassical form of the propagation theorem of *Microlocal Analysis*, and the two statements agree in the limit in which the small parameter is the reciprocal of the frequency.
 
@@ -127,7 +127,7 @@ $$
 
 if $u_\hbar$ is localised in a compact region of phase space, $\mu$ is a finite measure on that region. Conversely every positive Radon measure on $T^*M$ of finite mass arises from some family of states.
 
-*Proof (sketch).* For each $a \in C_c^\infty$ the numbers $\langle \mathrm{Op}^w_\hbar(a)u_\hbar,u_\hbar\rangle$ are bounded by $\|a\|$ and the map $a\mapsto$ the limit along a subsequence is positive and linear on the separable algebra $C_c^\infty(T^*M)$; extend by continuity to a positive functional, which is a Radon measure by the Riesz representation theorem of *Measure Theory and Integration*. The positivity and the mass bound follow from the $L^2$ boundedness and the fact that $a\ge0$ gives an approximately positive operator. $\square$
+*Proof (sketch).* For each $a \in C_c^\infty$ the numbers $\langle \mathrm{Op}^w_\hbar(a)u_\hbar,u_\hbar\rangle$ are bounded by $\|a\|$ and the map $a\mapsto$ the limit along a subsequence is positive and linear on the separable algebra $C_c^\infty(T^*M)$; extend by continuity to a positive functional, which is a Radon measure by the Riesz representation theorem of *Measure Theory and Integration*. The positivity and the mass bound follow from the $L^2$ boundedness and the fact that $a\ge0$ gives an approximately positive operator.
 
 ### Invariance and the Energy Surface
 
@@ -145,7 +145,7 @@ $$
 
 and is invariant under the Hamiltonian flow of $p$: $\Phi_t{}_*\mu=\mu$ for all $t$. Consequently the semiclassical limit of a spectral problem is a problem in the dynamics of the classical flow and its invariant measures.
 
-*Proof (sketch).* For the support: if $a$ is supported off $\Sigma_E$, then $a=(p-E)b$ for some symbol $b$ that can be chosen compactly supported (Microlocal division of symbols), so $\mathrm{Op}^w_\hbar(a)=\mathrm{Op}^w_\hbar(p-E)\mathrm{Op}^w_\hbar(b)+O(\hbar)$ and the expectation is $O(\hbar)$ plus a term controlled by $\|(P-E)u_\hbar\|$. For the invariance: apply Egorov's theorem to the expectation, using that $U(t)$ commutes with $P$ and hence preserves the hypothesis $\|(P-E)u_\hbar\|=O(\hbar)$; the expectation of $\mathrm{Op}^w_\hbar(a)$ on $u_\hbar$ then equals the expectation of $\mathrm{Op}^w_\hbar(a\circ\Phi_{-t})$ on $U(t)u_\hbar$ up to $O(\hbar)$, and both have the same semiclassical limit after passing to a common subsequence. $\square$
+*Proof (sketch).* For the support: if $a$ is supported off $\Sigma_E$, then $a=(p-E)b$ for some symbol $b$ that can be chosen compactly supported (Microlocal division of symbols), so $\mathrm{Op}^w_\hbar(a)=\mathrm{Op}^w_\hbar(p-E)\mathrm{Op}^w_\hbar(b)+O(\hbar)$ and the expectation is $O(\hbar)$ plus a term controlled by $\|(P-E)u_\hbar\|$. For the invariance: apply Egorov's theorem to the expectation, using that $U(t)$ commutes with $P$ and hence preserves the hypothesis $\|(P-E)u_\hbar\|=O(\hbar)$; the expectation of $\mathrm{Op}^w_\hbar(a)$ on $u_\hbar$ then equals the expectation of $\mathrm{Op}^w_\hbar(a\circ\Phi_{-t})$ on $U(t)u_\hbar$ up to $O(\hbar)$, and both have the same semiclassical limit after passing to a common subsequence.
 
 **Example (the circle and the rotation number).** On the circle $S^1$ with $P=-\hbar^2\Delta$, the energy surface for $E>0$ is the pair of circles $\xi=\pm\sqrt E$; the Hamiltonian flow is the rotation at frequency $\pm\sqrt E$, whose invariant probability measures are the rotations, and the semiclassical measures of the eigenfunctions are the corresponding uniform measures on the two energy circles. On the torus the joint spectrum of the commuting operators gives the analogous statement in several frequencies. The classification of the invariant measures of a general flow, and the ergodic theorems that select them, belong,and *Probability and Ergodic Theory*.
 
@@ -183,7 +183,7 @@ $$
 \bigl\langle \mathrm{Op}^w_\hbar(a)\varphi_{z},\varphi_{z}\bigr\rangle=\int_{T^*M}a(z')\,(\pi\hbar)^{-n}e^{-|z-z'|^2/\hbar}\,dz' ,
 $$
 
-up to constants depending only on the dimension and for symbols suitably cut off in the frequency variable. The Gaussian kernel $(\pi\hbar)^{-n}e^{-|z-z'|^2/\hbar}$ is an approximate identity and converges weakly to the point mass $\delta_z$ as $\hbar\to0$; dominated convergence for a symbol in $S^0_\hbar$ gives the limit $a(z)$. $\square$
+up to constants depending only on the dimension and for symbols suitably cut off in the frequency variable. The Gaussian kernel $(\pi\hbar)^{-n}e^{-|z-z'|^2/\hbar}$ is an approximate identity and converges weakly to the point mass $\delta_z$ as $\hbar\to0$; dominated convergence for a symbol in $S^0_\hbar$ gives the limit $a(z)$.
 
 **Corollary.** Coherent states, translated over phase space, resolve the identity and turn the semiclassical calculus into a pseudodifferential calculus with the phase-space metric $|dz|^2/\hbar$; in this language the limit $\hbar\to0$ reads the symbol off the state, since the matrix element of $\mathrm{Op}^w_\hbar(a)$ in the coherent state centred at $z$ tends to $a(z)$.
 
@@ -209,7 +209,7 @@ $$
 \operatorname{tr}\chi(P)=\frac{1}{(2\pi\hbar)^n}\int\chi(p(x,\xi))\,dx\,d\xi+O(\hbar^{-n+1}),
 $$
 
-by the symbol calculus and the fact that the trace of a Weyl operator is the phase-space integral of its symbol to leading order (with a correction of relative order $\hbar$); the singularities of the cutoff as $E$ approaches a value of $p$ give the counting function, and the error term is controlled by the subprincipal expansion. The Dirichlet case is the specialisation $p=|\xi|^2$ on the cotangent bundle of $\Omega$ with the Weyl quantisation of $|\xi|^2$ giving $-\hbar^2\Delta$. $\square$
+by the symbol calculus and the fact that the trace of a Weyl operator is the phase-space integral of its symbol to leading order (with a correction of relative order $\hbar$); the singularities of the cutoff as $E$ approaches a value of $p$ give the counting function, and the error term is controlled by the subprincipal expansion. The Dirichlet case is the specialisation $p=|\xi|^2$ on the cotangent bundle of $\Omega$ with the Weyl quantisation of $|\xi|^2$ giving $-\hbar^2\Delta$.
 
 **Example (the quadratic symbol).** For $n=1$ and $p(x,\xi)=x^2+\xi^2$ the operator $P=\mathrm{Op}^w_\hbar(p)=-\hbar^2\frac{d^2}{dx^2}+x^2$ has the exact spectrum $\{E_k=\hbar(2k+1):k=0,1,2,\dots\}$, since the Hermite functions are its eigenfunctions. Its counting function is $N(E)=\#\{k:E_k\le E\}=\lfloor\frac12(\frac{E}{\hbar}+1)\rfloor$, and the phase-space volume of the sublevel set is
 

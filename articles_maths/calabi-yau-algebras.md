@@ -33,18 +33,18 @@ in the derived category $D(A^{\mathrm{e}})$ of DG $A^{\mathrm{e}}$-modules. The 
 
 **Proposition.** If $A$ is $d$-CY then the integer $d$ is determined by $A$ once the convention on the shift is fixed, because $\operatorname{RHom}_{A^{\mathrm{e}}}(A,A^{\mathrm{e}})$ has cohomology concentrated in a single degree.
 
-*Proof.* The condition gives $\operatorname{Ext}^i_{A^{\mathrm{e}}}(A,A^{\mathrm{e}}) = 0$ for $i\neq d$ and $\operatorname{Ext}^d_{A^{\mathrm{e}}}(A,A^{\mathrm{e}})\cong A$; a change of $d$ would change the vanishing statement, which is intrinsic. $\square$
+*Proof.* The condition gives $\operatorname{Ext}^i_{A^{\mathrm{e}}}(A,A^{\mathrm{e}}) = 0$ for $i\neq d$ and $\operatorname{Ext}^d_{A^{\mathrm{e}}}(A,A^{\mathrm{e}})\cong A$; a change of $d$ would change the vanishing statement, which is intrinsic.
 
 **Proposition.** The class of $d$-CY algebras is closed under the following operations:
 
 1. the tensor product: if $A$ is $d$-CY and $B$ is $e$-CY then $A\otimes_kB$ is $(d+e)$-CY, since $(A\otimes_kB)^{\mathrm{e}} = A^{\mathrm{e}}\otimes_kB^{\mathrm{e}}$ and the duality is the tensor product of the two dualities together with the Künneth isomorphism;
 2. the matrix algebra: $M_n(A)$ is $d$-CY whenever $A$ is $d$-CY, because $M_n(A)$ is Morita equivalent to $A$ and the Calabi–Yau condition is Morita invariant in the sense of the next proposition.
 
-*Proof.* Statement 1 is the Künneth formula for the enveloping algebra $A^{\mathrm{e}}\otimes_kB^{\mathrm{e}} = (A\otimes_kB)^{\mathrm{e}}$ and the compatibility of the two dualities; statement 2 follows from the fact that $M_n(A)$ and $A$ have equivalent categories of modules over their enveloping algebras in the appropriate sense. $\square$
+*Proof.* Statement 1 is the Künneth formula for the enveloping algebra $A^{\mathrm{e}}\otimes_kB^{\mathrm{e}} = (A\otimes_kB)^{\mathrm{e}}$ and the compatibility of the two dualities; statement 2 follows from the fact that $M_n(A)$ and $A$ have equivalent categories of modules over their enveloping algebras in the appropriate sense.
 
 **Proposition (Morita invariance).** Let $A$ and $B$ be homologically smooth algebras that are derived Morita equivalent in the sense of *Differential Graded Categories*. Then $A$ is $d$-CY if and only if $B$ is $d$-CY.
 
-*Proof.* A derived Morita equivalence induces an equivalence of the derived categories of DG modules over the enveloping algebras, and the object $A\in D(A^{\mathrm{e}})$ corresponds to $B\in D(B^{\mathrm{e}})$ under the equivalence up to the shift; an equivalence of triangulated categories preserves the vanishing of cohomology in all but one degree and the isomorphism class of the remaining cohomology, since it is compatible with the shift functor. Hence the isomorphism $\operatorname{RHom}_{A^{\mathrm{e}}}(A,A^{\mathrm{e}})\cong A[-d]$ translates to the corresponding statement for $B$. $\square$
+*Proof.* A derived Morita equivalence induces an equivalence of the derived categories of DG modules over the enveloping algebras, and the object $A\in D(A^{\mathrm{e}})$ corresponds to $B\in D(B^{\mathrm{e}})$ under the equivalence up to the shift; an equivalence of triangulated categories preserves the vanishing of cohomology in all but one degree and the isomorphism class of the remaining cohomology, since it is compatible with the shift functor. Hence the isomorphism $\operatorname{RHom}_{A^{\mathrm{e}}}(A,A^{\mathrm{e}})\cong A[-d]$ translates to the corresponding statement for $B$.
 
 ## The Hochschild Formulation
 
@@ -58,7 +58,7 @@ $$
 
 the **Hochschild Poincaré duality**: the Hochschild cohomology in degree $i$ is dual to the Hochschild homology in degree $d-i$, functorially for the $A$-bimodule structures.
 
-*Proof (outline).* For a homologically smooth $A$ there is an isomorphism $HH^\bullet(A,A)\cong \operatorname{RHom}_{A^{\mathrm{e}}}(A,A)$ with a shift, and $HH_\bullet(A,A)\cong A\otimes^{\mathbb{L}}_{A^{\mathrm{e}}}A$; the duality between $\operatorname{RHom}_{A^{\mathrm{e}}}(A,A^{\mathrm{e}})$ and the diagonal bimodule, together with the standard duality between $\operatorname{Hom}$ and $\otimes^{\mathbb{L}}$ for the compact objects of $D(A^{\mathrm{e}})$, converts the isomorphism of the definition into the displayed duality between the Hochschild groups. $\square$
+*Proof (outline).* For a homologically smooth $A$ there is an isomorphism $HH^\bullet(A,A)\cong \operatorname{RHom}_{A^{\mathrm{e}}}(A,A)$ with a shift, and $HH_\bullet(A,A)\cong A\otimes^{\mathbb{L}}_{A^{\mathrm{e}}}A$; the duality between $\operatorname{RHom}_{A^{\mathrm{e}}}(A,A^{\mathrm{e}})$ and the diagonal bimodule, together with the standard duality between $\operatorname{Hom}$ and $\otimes^{\mathbb{L}}$ for the compact objects of $D(A^{\mathrm{e}})$, converts the isomorphism of the definition into the displayed duality between the Hochschild groups.
 
 **Corollary.** A $d$-CY algebra satisfies $\dim_kHH^i(A,A) = \dim_kHH_{d-i}(A,A)$ in each degree, when these dimensions are finite; in particular the Hochschild homology and cohomology of a CY algebra have the same total dimension and their Betti numbers are palindromic about $d/2$.
 
@@ -100,7 +100,7 @@ be the **Jacobian algebra** of the pair $(Q,W)$, where $\partial_\alpha$ is the 
 
 **Theorem (standard).** Let $A$ be a Koszul algebra in the sense of *Koszul Duality* with Koszul dual $A^!$, both homologically smooth and proper. Then $A$ is $d$-CY if and only if $A^!$ is $d$-CY.
 
-*Proof (outline).* The Koszul complex identifies the derived categories of graded $A$-modules and graded $A^!$-modules, and the Koszul dual is $\operatorname{Ext}^\bullet_A(k,k)$; the diagonal bimodule of $A$ corresponds under the equivalence to the diagonal bimodule of $A^!$, and the self-duality of the one with shift $d$ corresponds to the self-duality of the other with the same shift, because the equivalence is compatible with the shift and with the duality functors. The precise comparison is the content of the Koszul duality for Hochschild (co)homology recorded in *Koszul Duality*; the Hochschild duality of the previous section is then transferred verbatim. $\square$
+*Proof (outline).* The Koszul complex identifies the derived categories of graded $A$-modules and graded $A^!$-modules, and the Koszul dual is $\operatorname{Ext}^\bullet_A(k,k)$; the diagonal bimodule of $A$ corresponds under the equivalence to the diagonal bimodule of $A^!$, and the self-duality of the one with shift $d$ corresponds to the self-duality of the other with the same shift, because the equivalence is compatible with the shift and with the duality functors. The precise comparison is the content of the Koszul duality for Hochschild (co)homology recorded in *Koszul Duality*; the Hochschild duality of the previous section is then transferred verbatim.
 
 **Corollary.** Let $V$ be a finite-dimensional vector space of dimension $n$. Then $\operatorname{Sym}(V)$ is $n$-CY and $\Lambda(V^*)$ is $n$-CY, consistently with $\operatorname{Sym}(V)^! = \Lambda(V^*)$; the transfer is the Koszul-dual form of the fact that the polynomial algebra and the exterior algebra have the same dimension in the Calabi–Yau sense. More generally, the $q$-deformations of a Koszul CY algebra along a Poisson bracket are again CY for the same dimension when the deformation is defined, since the Koszul dual deforms compatibly.
 
@@ -128,7 +128,7 @@ The Calabi–Yau condition is not merely a property an algebra may have; every a
 
 **Theorem (standard).** Let $A$ be a homologically smooth proper algebra. Then $A$ is $d$-CY if and only if the triangulated category $H^0(\mathrm{perf}(A))$ of compact DG $A$-modules is a Calabi–Yau category of dimension $d$.
 
-*Proof (outline).* The Serre functor on $H^0(\mathrm{perf}(A))$ is the functor $-\otimes^{\mathbb{L}}_A\operatorname{RHom}_{A^{\mathrm{e}}}(A,A^{\mathrm{e}})$ up to the appropriate identification; when $\operatorname{RHom}_{A^{\mathrm{e}}}(A,A^{\mathrm{e}})\cong A[-d]$ the functor is the shift $[d]$, and conversely the identification of the Serre functor determines the dualising bimodule. $\square$
+*Proof (outline).* The Serre functor on $H^0(\mathrm{perf}(A))$ is the functor $-\otimes^{\mathbb{L}}_A\operatorname{RHom}_{A^{\mathrm{e}}}(A,A^{\mathrm{e}})$ up to the appropriate identification; when $\operatorname{RHom}_{A^{\mathrm{e}}}(A,A^{\mathrm{e}})\cong A[-d]$ the functor is the shift $[d]$, and conversely the identification of the Serre functor determines the dualising bimodule.
 
 This is the form in which the Calabi–Yau condition is a condition on the derived category of a DG category, and it is the reason the notion belongs to this Part rather than to a later one: everything in the statement — the DG category, the compact objects, the derived category, the shift — has been introduced in *Differential Graded Categories* and *A-Infinity and L-Infinity Algebras*. The **Calabi–Yau manifold**, by contrast, is the geometric object whose derived category is expected to be Calabi–Yau; that statement, and the construction of the manifold, belong to Part II and to the geometry agent's articleand they are not used here.
 

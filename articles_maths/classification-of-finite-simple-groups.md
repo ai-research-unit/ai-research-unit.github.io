@@ -15,13 +15,13 @@ This article is the seventeenth of the corpus and the eighth of the group articl
 
 **Theorem (Jordan–Hölder).** Any two composition series of a finite group have the same length and the same multiset of composition factors up to isomorphism and order.
 
-**Proof sketch.** Induction on $|G|$: given two series, refine both to series with isomorphic factors using the second isomorphism theorem, and apply induction to the proper normal subgroups appearing in a common refinement. $\square$
+**Proof sketch.** Induction on $|G|$: given two series, refine both to series with isomorphic factors using the second isomorphism theorem, and apply induction to the proper normal subgroups appearing in a common refinement.
 
 Consequently a finite group is determined, in the coarse sense of its factor multiset, by simple groups and extensions, and the classification of the simple groups is the first and indispensable step of the classification of all finite groups.
 
 **Proposition.** A finite abelian simple group is cyclic of prime order; a finite simple group is either cyclic of prime order or nonabelian, and a nonabelian finite simple group is perfect: $G = [G,G]$, and its centre is trivial.
 
-**Proof.** In an abelian group every subgroup is normal, so simplicity forces the group to have no proper nontrivial subgroup, which for a finite group means prime order. If $G$ is nonabelian and simple then $[G,G]$ is a proper normal subgroup unless $G = [G,G]$; the centre is a normal subgroup, so it is trivial. $\square$
+**Proof.** In an abelian group every subgroup is normal, so simplicity forces the group to have no proper nontrivial subgroup, which for a finite group means prime order. If $G$ is nonabelian and simple then $[G,G]$ is a proper normal subgroup unless $G = [G,G]$; the centre is a normal subgroup, so it is trivial.
 
 ### The Classification Theorem
 
@@ -40,11 +40,11 @@ Consequently a finite group is determined, in the coarse sense of its factor mul
 
 **Corollary (Burnside).** A group of order $p^a q^b$ for primes $p, q$ is solvable; hence no nonabelian finite simple group has an order divisible by only two distinct primes.
 
-**Proof sketch of the corollary.** Burnside's theorem is proved by character theory, a tool of the representation theory of finite groups developed in *Representations of Groups*, in the category *Linear Spaces over Linear Algebras* of this Part; the character-theoretic argument is deferred to that article. The full proof is the $p^aq^b$ theorem of Burnside, and the odd order theorem is much deeper; both are character-theoretic and are cited as standard. $\square$
+**Proof sketch of the corollary.** Burnside's theorem is proved by character theory, a tool of the representation theory of finite groups developed in *Representations of Groups*, in the category *Linear Spaces over Linear Algebras* of this Part; the character-theoretic argument is deferred to that article. The full proof is the $p^aq^b$ theorem of Burnside, and the odd order theorem is much deeper; both are character-theoretic and are cited as standard.
 
 **Corollary.** The smallest nonabelian finite simple group is $A_5$, of order $60$; there is a unique simple group of order $60$ up to isomorphism. There is no nonabelian simple group of order less than $60$.
 
-**Proof.** $A_5$ has order $60$ and is simple, as verified below. A nonabelian simple group $G$ of order less than $60$ would have order with at least three distinct prime factors by Burnside's theorem; for every such order less than $60$ one of the Sylow theorems forces a nontrivial normal Sylow subgroup, or an element count forbids simplicity. The verification accompanying this article checks the counting for all orders less than $60$. $\square$
+**Proof.** $A_5$ has order $60$ and is simple, as verified below. A nonabelian simple group $G$ of order less than $60$ would have order with at least three distinct prime factors by Burnside's theorem; for every such order less than $60$ one of the Sylow theorems forces a nontrivial normal Sylow subgroup, or an element count forbids simplicity. The verification accompanying this article checks the counting for all orders less than $60$.
 
 ## The Families
 
@@ -52,7 +52,7 @@ Consequently a finite group is determined, in the coarse sense of its factor mul
 
 **Proposition.** $\mathbb{Z}/p\mathbb{Z}$ is simple for every prime $p$, and these are the only abelian finite simple groups. The alternating group $A_n$ is simple for $n \geq 5$, with $|A_n| = n!/2$.
 
-**Proof sketch.** For $A_n$, the simplicity is proved by showing that any nontrivial normal subgroup contains a $3$-cycle: a nontrivial element of $A_n$ can be moved by conjugating with a $3$-cycle to produce a commutator, and the $3$-cycles generate $A_n$; the case $n \geq 5$ is uniform because a $3$-cycle has a fixed point. $\square$
+**Proof sketch.** For $A_n$, the simplicity is proved by showing that any nontrivial normal subgroup contains a $3$-cycle: a nontrivial element of $A_n$ can be moved by conjugating with a $3$-cycle to produce a commutator, and the $3$-cycles generate $A_n$; the case $n \geq 5$ is uniform because a $3$-cycle has a fixed point.
 
 **Example.** $A_5$ has order $60$, and its conjugacy classes have sizes $1, 15, 20, 12, 12$; it is simple, and it is the smallest nonabelian simple group. The group $A_5$ acts on five points and, through its action on the six Sylow $5$-subgroups, on six points, where the image is $\mathrm{PSL}_2(5) \cong A_5$.
 
@@ -86,7 +86,7 @@ and among the small non-simple members $A_4 \cong \mathrm{PSL}_2(3)$, $S_4 \cong
 
 **Proposition.** The number of isomorphism classes of finite simple groups of order at most $N$ is finite for every $N$, and the classification determines it; the number of finite simple groups of order at most $100$ is $26$: the $25$ cyclic groups of prime order at most $100$ and $A_5$.
 
-**Proof sketch.** A finite group of order at most $N$ has at most $N$ elements and hence only finitely many multiplication tables, so finitely many isomorphism classes; the classification identifies which of these orders are realised by simple groups. The count for $N = 100$ is the list of primes at most $100$ together with the single order $60$ realised by $A_5$. $\square$
+**Proof sketch.** A finite group of order at most $N$ has at most $N$ elements and hence only finitely many multiplication tables, so finitely many isomorphism classes; the classification identifies which of these orders are realised by simple groups. The count for $N = 100$ is the list of primes at most $100$ together with the single order $60$ realised by $A_5$.
 
 ### The Sporadic Groups
 
@@ -121,7 +121,7 @@ The theorem occupies an entire volume, and its immediate consequence for the cla
 
 **Corollary.** Every nonabelian finite simple group contains an involution. Hence the classification can proceed by the **local analysis** of the centralisers of involutions: if $G$ is a nonabelian finite simple group and $t \in G$ is an involution, then $C_G(t)$ is a proper subgroup of even order, and the fusion in $G$ of the $2$-subgroups of $C_G(t)$ carries the information needed to reconstruct $G$.
 
-**Proof sketch of the corollary.** If $G$ has odd order it is solvable, so if $G$ is simple of odd order it is cyclic of prime order; a nonabelian simple group therefore has even order and contains an involution. The local analysis then begins from $C_G(t)$. $\square$
+**Proof sketch of the corollary.** If $G$ has odd order it is solvable, so if $G$ is simple of odd order it is cyclic of prime order; a nonabelian simple group therefore has even order and contains an involution. The local analysis then begins from $C_G(t)$.
 
 ### The Shape of the Proof
 
@@ -147,7 +147,7 @@ The chronology of the classification is itself part of its content. The Feit–T
 
 **Theorem (automorphisms and multipliers).** For a finite simple group $S$ the outer automorphism group $\mathrm{Out}(S) = \mathrm{Aut}(S)/\mathrm{Inn}(S)$ is solvable, of derived length at most $3$ (the **Schreier conjecture**, proved by the classification); for groups of Lie type, $\mathrm{Out}(S)$ is generated by the diagonal, field and graph automorphisms, and for alternating groups it has order $2$ except for $n = 6$, where it has order $4$; for sporadic groups it has order at most $2$. The Schur multiplier $M(S) = H_2(S,\mathbb{Z})$ is known for every finite simple group.
 
-**Proof sketch.** The automorphism group is computed group by group from the classification; the Lie-type case uses the structure of the algebraic group, and the alternating case uses the normaliser of the standard subgroup, with $A_6$ as the exceptional case. $\square$
+**Proof sketch.** The automorphism group is computed group by group from the classification; the Lie-type case uses the structure of the algebraic group, and the alternating case uses the normaliser of the standard subgroup, with $A_6$ as the exceptional case.
 
 **Theorem (applications).** The classification implies:
 

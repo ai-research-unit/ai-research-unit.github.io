@@ -7,7 +7,7 @@ This article introduces the split complex algebra as an algebraic structure. The
 
 The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. The idempotent decomposition is defined algebraically.
 
-The split complex algebra is the two-dimensional real algebra $\mathbb{D} = \mathbb{R}[x]/(x^2-1)$, written in a generator $j$ with $j^2 = +1$. It is the indefinite member of the two-dimensional pair whose definite member is the field $\mathbb{C}$ of complex numbers; the two share their basis, their conjugation and their dimension and differ in the sign of the square of the imaginary unit. The complex numbers are assumed from *Complex Algebra*, together with their basis, their multiplication, their conjugation and their norm, and no facts about them are restated here except where the comparison is the point.
+The split complex algebra is the two-dimensional real algebra $\mathbb{D} = \mathbb{R}[x]/(x^2-1)$, written in a generator $j$ with $j^2 = +1$. It is the indefinite member of the two-dimensional pair whose definite member is the field $\mathbb{C}$ of complex numbers; the two share their basis, their conjugation and their dimension and differ in the sign of the square of the imaginary unit. The complex numbers are assumed from *Complex Algebra*, together with their basis, their multiplication and their conjugation, and no facts about them are restated here except where the comparison is the point.
 
 ## The Split Complex Algebra
 
@@ -31,13 +31,7 @@ $$
 Z = a + j b, \qquad a, b \in \mathbb{R},
 $$
 
-or, more compactly, as
-
-$$
-Z = a + j b, \qquad a, b \in \mathbb{R}.
-$$
-
-The real number $a$ is the **real part** and the real number $b$ is the **imaginary part**:
+in the basis $\{1, j\}$. The real number $a$ is the **real part** and the real number $b$ is the **imaginary part**:
 
 $$
 a = \operatorname{Re} Z, \qquad b = \operatorname{Im} Z.
@@ -150,7 +144,7 @@ $$
 Z = a, \qquad a \in \mathbb{R}.
 $$
 
-This is the **real subspace** $\mathbb{R}_{\mathbb{D}}$, a copy of the real line embedded in $\mathbb{D}$ as the real axis. It is a real vector space of dimension $1$. It is a subalgebra of $\mathbb{D}$ isomorphic to $\mathbb{R}$, and as a ring it is a field. The restricted norm form is $N(a) = a^2$, positive definite.
+This is the **real subspace** $\mathbb{R}_{\mathbb{D}}$, a copy of the real line embedded in $\mathbb{D}$ as the real axis. It is a real vector space of dimension $1$. It is a subalgebra of $\mathbb{D}$ isomorphic to $\mathbb{R}$, and as a ring it is a field. The form it carries is treated in *Split-Complex Norm and Invertibility*.
 
 ### The Split Imaginary Subspace
 
@@ -160,7 +154,7 @@ $$
 Z = j b, \qquad b \in \mathbb{R}.
 $$
 
-This is the **split imaginary subspace** $j\mathbb{R}_{\mathbb{D}}$, a real vector space of dimension $1$. It is not a subalgebra: $(j b)^2 = b^2 \in \mathbb{R}_{\mathbb{D}}$, which is not in $j\mathbb{R}_{\mathbb{D}}$ unless $b = 0$. The restricted norm form is $N(j b) = -b^2$, negative definite.
+This is the **split imaginary subspace** $j\mathbb{R}_{\mathbb{D}}$, a real vector space of dimension $1$. It is not a subalgebra: $(j b)^2 = b^2 \in \mathbb{R}_{\mathbb{D}}$, which is not in $j\mathbb{R}_{\mathbb{D}}$ unless $b = 0$. The form it carries is treated in *Split-Complex Norm and Invertibility*.
 
 There is only one non-trivial fixed-point set and one non-trivial anti-fixed-point set, because there is only one non-trivial involution. The six-subspace lattice of the biquaternion algebra therefore has no analogue here: the involution lattice of $\mathbb{D}$ is the single edge $\{0\}\subset\mathbb{Z}/2$ drawn on the two lines.
 
@@ -266,109 +260,39 @@ $$
 
 So the idempotent components are the sum and difference of the real and imaginary parts.
 
-## Quadratic Forms and Inner Product
+## Zero Divisors
 
-### The Norm Form
-
-The **norm form** of a split complex number $Z$ is
+**Definition.** An element $Z \in \mathbb{D}$ is a **zero divisor** if $Z \neq 0$ and there exists $W \in \mathbb{D}$ with $W \neq 0$ and $ZW = 0$; the **annihilator** of $Z$ is the ideal
 
 $$
-N(Z) = Z \bar{Z} = a^2 - b^2.
+\operatorname{ann}(Z) = \{W \in \mathbb{D} : ZW = 0\}.
 $$
 
-It is a real number, but it is **indefinite**: it takes positive values on the region $|a| > |b|$, negative values on the region $|a| < |b|$, and vanishes on the null cone $a = \pm b$.
-
-The norm form is **multiplicative**:
+The algebra has zero divisors already among its primitive elements:
 
 $$
-N(Z W) = N(Z) N(W).
+(1+j)(1-j) = 1 - j^2 = 0,
 $$
 
-This is the statement that $(a^2 - b^2)(c^2 - d^2) = (a c + b d)^2 - (a d + b c)^2$, which is the two-dimensional case of the Brahmagupta–Fibonacci identity for the form $a^2 - b^2$.
+so $1+j$ and $1-j$ are non-zero elements with zero product, and $\mathbb{D}$ is not a domain.
 
-### Zero Divisors
-
-The norm form vanishes on the null cone, so the non-zero elements of the null cone are **zero divisors**. The two primitive zero divisors are
+**Proposition.** Write $Z = Z_+\Pi_1 + Z_-\Pi_2$ in the idempotent basis, with $Z$ not both coordinates zero. Then $Z$ is a zero divisor if and only if one of $Z_+, Z_-$ vanishes; if both are nonzero then $Z$ is a unit, with inverse
 
 $$
-\Pi_1 = \frac{1 + j}{2}, \qquad \Pi_2 = \frac{1 - j}{2}.
+Z^{-1} = Z_+^{-1}\Pi_1 + Z_-^{-1}\Pi_2.
 $$
 
-Both satisfy $N(\Pi_1) = N(\Pi_2) = 0$, and $\Pi_1 \Pi_2 = 0$. In the idempotent coordinates $Z = Z_+ \Pi_1 + Z_- \Pi_2$ of *The Idempotent Decomposition* a nonzero element is a zero divisor exactly when $Z_+ = 0$ or $Z_- = 0$, that is, exactly when it is a real multiple of $\Pi_1$ or of $\Pi_2$; when both coordinates are nonzero, $Z$ is a unit with inverse
+**Proof.** In the idempotent basis multiplication is componentwise, $ZW = Z_+W_+\Pi_1 + Z_-W_-\Pi_2$. If $Z_+ = 0$ then $Z\Pi_1 = Z_-\Pi_2\Pi_1 = 0$ with $\Pi_1 \neq 0$, so $Z$ is a zero divisor, and symmetrically for $Z_- = 0$. If both coordinates are nonzero, the displayed formula gives $Z Z^{-1} = \Pi_1 + \Pi_2 = 1$, so $Z$ is a unit, and a unit is never a zero divisor.
 
-$$
-Z^{-1} = Z_+^{-1} \Pi_1 + Z_-^{-1} \Pi_2,
-$$
-
-so the zero divisors are precisely the two lines $\mathbb{R}\Pi_1$ and $\mathbb{R}\Pi_2$ with the origin removed, and their union is the null cone. The classification of the null cone, and the distribution of its elements among the lines, is the subject of *Split-Complex Zero Divisors*.
-
-### The Hermitian Form
-
-There is no **positive-definite Hermitian form** on $\mathbb{D}$ analogous to the one on $\mathbb{C}$, because the norm form is indefinite: the biquaternion Hermitian form has no analogue in two dimensions, and the conjugation group is too small to produce one. The closest analogue is the **idempotent form**
-
-$$
-Z \mapsto Z_+^2 + Z_-^2 = (a + b)^2 + (a - b)^2 = 2(a^2 + b^2),
-$$
-
-which is positive-definite but is not multiplicative. It is **twice** the Euclidean norm squared on the underlying real vector space $\mathbb{D} \cong \mathbb{R}^2$; half of it, $a^2 + b^2$, is the natural "length squared" of $Z$ as a point in the plane.
-
-The **Euclidean norm** is
-
-$$
-\|Z\|_E = \sqrt{a^2 + b^2}.
-$$
-
-It is a genuine norm on the real vector space $\mathbb{D} \cong \mathbb{R}^2$: positive-definite, subadditive, and homogeneous of degree one. It is **not** multiplicative with respect to the split complex product, because the split complex product does not preserve the Euclidean norm.
-
-### The Inner Product
-
-The **inner product** of two split complex numbers $Z = a + j b$ and $W = c + j d$ is
-
-$$
-\langle Z, W \rangle = a c + b d.
-$$
-
-It is the ordinary Euclidean inner product on $\mathbb{R}^2$, written in split complex notation. It is real-valued, symmetric, and bilinear.
-
-The inner product of a split complex number with itself is
-
-$$
-\langle Z, Z \rangle = a^2 + b^2,
-$$
-
-which is the Euclidean norm squared. So the Euclidean norm is the restriction of the inner product to the diagonal.
-
-Note that this inner product is **not** the same as the real part of $Z \bar{W}$. Indeed,
-
-$$
-Z \bar{W} = (a + j b)(c - j d) = (a c - b d) + (b c - a d) j,
-$$
-
-so
-
-$$
-\operatorname{Re}(Z \bar{W}) = a c - b d,
-$$
-
-which is the indefinite form, not the Euclidean one. The Euclidean inner product is $\operatorname{Re}(Z W)$. So the distinction between the two forms is the distinction between the indefinite and the Euclidean structures on $\mathbb{R}^2$, and it is the source of the difference between split complex analysis and ordinary real analysis in the plane.
-
-### Relation Between the Three Forms
-
-The three quadratic objects are related as follows:
-
-- **Norm form:** $N(Z) = Z\bar{Z} = a^2 - b^2$. Real-valued, indefinite, of signature $(1,1)$, multiplicative, and vanishing on the null cone.
-- **Idempotent form:** $Z_+^2 + Z_-^2 = 2(a^2 + b^2)$, positive-definite but not multiplicative; it is the square of the Euclidean norm up to the factor $2$.
-- **Inner product:** $\langle Z, W\rangle = a c + b d$, the ordinary Euclidean inner product, independent of the multiplicative structure; its diagonal value is the Euclidean norm squared.
-
-The three are distinct, and each is useful in a different context. The norm form controls the multiplicative structure, the unit group and the zero divisors. The Euclidean norm controls the topological structure: continuity, completeness, the Euclidean topology.
+So the zero divisors are exactly the non-zero elements of the two idempotent lines $\mathbb{R}\Pi_1$ and $\mathbb{R}\Pi_2$, and the non-units of $\mathbb{D}$ are $0$ together with the zero divisors. The classification of the zero-divisor set, its two families and its relation to the isotropic cone are the subject of *Split-Complex Zero Divisors*; the criterion by the norm belongs to *Split-Complex Norm and Invertibility*, where the norm, the Hermitian form and the inner product — a form and a distance — are treated.
 
 ## Summary
 
-The split complex algebra $\mathbb{D}$ is the two-dimensional real algebra with basis $1$, $j$ and the relation $j^2 = +1$. It is commutative, associative and unital, and it is not a field: the norm form is indefinite and the algebra has zero divisors. A general element is written $Z = a + j b$, and the algebra is $\mathbb{R}[x]/(x^2-1)$.
+The split complex algebra $\mathbb{D}$ is the two-dimensional real algebra with basis $1$, $j$ and the relation $j^2 = +1$. It is commutative, associative and unital, and it is not a field: it has zero divisors. A general element is written $Z = a + j b$, and the algebra is $\mathbb{R}[x]/(x^2-1)$.
 
 Split complex conjugation sends $a + j b$ to $a - j b$; it is the unique non-trivial involution, and the idempotent conjugation coincides with it, so the conjugation group is $\mathbb{Z}/2$. Its fixed points form the real subspace $\mathbb{R}_{\mathbb{D}}$ and its anti-fixed points the split imaginary subspace $j\mathbb{R}_{\mathbb{D}}$; these are the eigenspaces for the eigenvalues $+1$ and $-1$, and every split complex number decomposes uniquely as a real part plus an imaginary part. The algebra carries a second natural decomposition, which the complex case does not have: the idempotent decomposition $Z = Z_+\Pi_1 + Z_-\Pi_2$, where $\Pi_\pm = (1 \pm j)/2$ are the two nontrivial idempotents and $Z_\pm = a \pm b$. The two components are independent ring homomorphisms, so $\mathbb{D}$ is the direct sum $\mathbb{R} \oplus \mathbb{R}$.
 
-The quadratic objects reflect the change of sign. The norm form $N(Z) = Z\bar{Z} = a^2 - b^2$ is indefinite: it takes both signs and vanishes on the two lines $a = \pm b$, which are exactly the zero divisors. There is therefore no positive-definite Hermitian form on $\mathbb{D}$ analogous to the one on $\mathbb{C}$; the closest substitute is built from the idempotent components, and the inner product $\langle Z, W\rangle = a c + b d$ is the ordinary Euclidean inner product on $\mathbb{R}^2$, independent of the multiplicative structure.
+The algebra has zero divisors: $(1+j)(1-j) = 0$, and in the idempotent basis a non-zero element $Z = Z_+\Pi_1 + Z_-\Pi_2$ is a zero divisor exactly when one of its two coordinates vanishes, while it is a unit with $Z^{-1} = Z_+^{-1}\Pi_1 + Z_-^{-1}\Pi_2$ exactly when both are nonzero. The zero divisors are therefore the non-zero elements of the two idempotent lines $\mathbb{R}\Pi_1$ and $\mathbb{R}\Pi_2$, classified in *Split-Complex Zero Divisors*. The norm, the Hermitian form and the inner product are a form and a distance and belong to *Split-Complex Norm and Invertibility*.
 
 ## Summary of Notation
 
@@ -385,15 +309,10 @@ The quadratic objects reflect the change of sign. The norm form $N(Z) = Z\bar{Z}
 | $\Pi_1 = (1 + j)/2$ | Positive idempotent |
 | $\Pi_2 = (1 - j)/2$ | Negative idempotent |
 | $Z = Z_+ \Pi_1 + Z_- \Pi_2$ | Idempotent decomposition, $Z_\pm = a \pm b$ |
-| $N(Z) = Z \bar{Z} = a^2 - b^2$ | Norm form (indefinite of signature $(1,1)$) |
+| $\operatorname{ann}(Z)$ | Annihilator, the ideal $\{W : ZW = 0\}$ |
 | $\mathbb{R}_{\mathbb{D}}$ | Real subspace, fixed-point set of $\bar{\cdot}$ |
 | $j \mathbb{R}_{\mathbb{D}}$ | Split imaginary subspace, $-1$ eigenspace of $\bar{\cdot}$ |
 | $\mathbb{D} \Pi_1, \mathbb{D} \Pi_2$ | The two ideals, isomorphic to $\mathbb{R}$ |
-| $a^2 + b^2$ | Euclidean norm squared |
-| $\langle Z, W \rangle = a c + b d$ | Euclidean inner product |
-| $\|Z\|_E = \sqrt{a^2 + b^2}$ | Euclidean norm |
-| $\mathbb{D}^\times$ | Group of units, $\{Z : N(Z) \neq 0\}$ |
-| $\mathcal{N} = \{Z : N(Z) = 0\}$ | Null cone |
 
 ## Further Reading
 

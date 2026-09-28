@@ -33,7 +33,7 @@ and $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace, the fixed-point s
 
 ## The Homogeneous Part, Recalled
 
-Rotor conjugation restricted to $\mathbb{M}_-$ is linear in $\tilde{Q}$, it preserves the subspace $\mathbb{M}_-$, and it preserves the norm form, $\tilde{Q}'\bar{\tilde{Q}'}=\tilde{Q}\bar{\tilde{Q}}$; it is an inner automorphism of $\mathbb{B}$ in the unitary sector, where $\tilde{R}^\dagger=\tilde{R}^{-1}$ and the map is conjugation, but a boost rotor is Hermitian, $\tilde{B}^\dagger=\tilde{B}$, and acts by the twisted map $\tilde{Q}\mapsto\tilde{B}\tilde{Q}\tilde{B}$, which is linear but not multiplicative and so is not an algebra automorphism. The map
+Rotor conjugation restricted to $\mathbb{M}_-$ is linear in $\tilde{Q}$, it preserves the subspace $\mathbb{M}_-$, and it preserves the biquaternion norm, $\tilde{Q}'\bar{\tilde{Q}'}=\tilde{Q}\bar{\tilde{Q}}$; it is an inner automorphism of $\mathbb{B}$ in the unitary sector, where $\tilde{R}^\dagger=\tilde{R}^{-1}$ and the map is conjugation, but a boost rotor is Hermitian, $\tilde{B}^\dagger=\tilde{B}$, and acts by the twisted map $\tilde{Q}\mapsto\tilde{B}\tilde{Q}\tilde{B}$, which is linear but not multiplicative and so is not an algebra automorphism. The map
 $$
 \mathrm{Ad}:\ SL(2,\mathbb{C})\longrightarrow SO^+(1,3),\qquad
 \mathrm{Ad}(\tilde{\Lambda}):\ \tilde{Q}\longmapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^\dagger
@@ -93,17 +93,17 @@ It is not an accident of parametrisation that the translation is separated out. 
 
 **A rotor conjugation cannot shift.** Conjugation fixes the origin: $\tilde{\Lambda}\,0\,\tilde{\Lambda}^\dagger=0$ for every rotor. A shift by $\tilde{a}\ne0$ sends $0$ to $\tilde{a}$. Since both maps are linear-plus-constant and they disagree at one point, no rotor conjugation equals a nonzero translation.
 
-**Conjugation preserves the norm form pointwise; a shift does not.** For any rotor, $N(\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^\dagger)=N(\tilde{Q})$. A shift changes the norm form of a single element:
+**Conjugation preserves the biquaternion norm pointwise; a shift does not.** For any rotor, $N(\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^\dagger)=N(\tilde{Q})$. A shift changes the biquaternion norm of a single element:
 $$
 N(\tilde{Q}+\tilde{a})=N(\tilde{Q})+\mathrm{Sc}\bigl(\tilde{Q}\bar{\tilde{a}}+\tilde{a}\bar{\tilde{Q}}\bigr)+N(\tilde{a}),
 $$
-and the correction terms vanish for all $\tilde{Q}$ only when $\tilde{a}=0$. The norm form of a four-vector is origin-dependent; only the norm form of a **difference** is intrinsic. This is why the affine map, and not a linear one, is the physically correct transformation: the interval $(\tilde{Q}_1-\tilde{Q}_2)\overline{(\tilde{Q}_1-\tilde{Q}_2)}$ is unchanged by the shift, since the displacements cancel, and a Poincaré transformation preserves it.
+and the correction terms vanish for all $\tilde{Q}$ only when $\tilde{a}=0$. The biquaternion norm of a four-vector is origin-dependent; only the biquaternion norm of a **difference** is intrinsic. This is why the affine map, and not a linear one, is the physically correct transformation: the interval $(\tilde{Q}_1-\tilde{Q}_2)\overline{(\tilde{Q}_1-\tilde{Q}_2)}$ is unchanged by the shift, since the displacements cancel, and a Poincaré transformation preserves it.
 
 **No homomorphism into the rotor group can be faithful.** Suppose one attempts to attach to every Poincaré element a unit-norm biquaternion, so that the Lorentz part of the action is rotor conjugation. Its homogeneous part is then a Lie-group homomorphism from the restricted Poincaré group into $SL(2,\mathbb{C})$. The restricted Poincaré group is connected of real dimension $10$; $SL(2,\mathbb{C})$, as a real Lie group, has dimension $6$ (equivalently $8$ for $\mathbb{B}^\times\cong GL(2,\mathbb{C})$). A Lie-group homomorphism from a connected group of dimension $10$ to a group of dimension $6$ has a kernel of dimension at least $4$. It therefore cannot be injective: a subgroup of dimension at least four acts trivially, and the ten parameters cannot all be distinguished. The group of unit-norm biquaternions is simply too small to hold the Poincaré group.
 
 The infinitesimal statement should be distinguished from the finite one. The translation generators $P_\mu$ do belong to the Lie algebra of the Poincaré group, which is the semidirect sum
 $$
-\mathfrak{p}=\mathfrak{sl}(2,\mathbb{C})_{\mathbb{R}}\ \ltimes\ \mathbb{R}^4,
+\mathrm{P}=\mathrm{SL}(2,\mathbb{C})_{\mathbb{R}}\ \ltimes\ \mathbb{R}^4,
 \qquad [P_\mu,P_\nu]=0,
 $$
 with the Lorentz generators acting on $P_\mu$ through the vector representation and the boosts not closing among themselves. On fields, the finite translation is the Taylor operator $\exp(a^\mu\partial_\mu)$, and on a plane wave of four-wavevector $\tilde{K}\in\mathbb{M}_-$ it is multiplication by the central phase $\exp\!\bigl(i\,\mathrm{Sc}(\tilde{K}\tilde{a})\bigr)$ — a unit-modulus scalar in the algebra, not a biquaternion factor multiplying the field. With the series' plane-wave convention $\tilde{\Phi}=\tilde{\Phi}_0\exp\!\bigl(i\,\mathrm{Sc}(\tilde{K}\tilde{Q})\bigr)$ and shift $\tilde{Q}\mapsto\tilde{Q}+\tilde{a}$, the multiplier is $e^{\,i\,\mathrm{Sc}(\tilde{K}\tilde{a})}$; the shift in the opposite direction gives its conjugate. The pairing is $\mathrm{Sc}(\tilde{K}\tilde{a})$, not $\mathrm{Sc}(\tilde{K}\bar{\tilde{a}})$: for $\tilde{K},\tilde{a}\in\mathbb{M}_-$ the latter equals $-(k_0a_0)+\mathbf{k}\cdot\mathbf{a}$, which is real, so the factor $\exp(\mathrm{Sc}(\tilde{K}\bar{\tilde{a}}))$ is a positive real number rather than a unit-modulus phase, and a translation multiplier must have unit modulus. So the translation is present in the infinitesimal algebra and acts finitely on field space, but it is not an element of the finite-dimensional rotor group.
@@ -187,7 +187,7 @@ the square root being multivalued by sign, with the branch selected by $\mathrm{
 
 The remaining question is whether the translation can be made multiplicative after all, by changing the algebra or the reading. Several routes are visible, and none is decided here.
 
-**The additive reading inside $\mathbb{B}$.** The plainest reading is the one used throughout: the displacement is an element of $\mathbb{M}_-$, translations are addition, and the algebra supplies not the translation but the action by which the homogeneous part drags it. This is complete and internally consistent. Its cost is that the Poincaré group then does not embed as a Lie subgroup of $\mathbb{B}^\times$, so none of the rotor machinery — composition by multiplication, the double cover, the trace and norm forms — applies to translations.
+**The additive reading inside $\mathbb{B}$.** The plainest reading is the one used throughout: the displacement is an element of $\mathbb{M}_-$, translations are addition, and the algebra supplies not the translation but the action by which the homogeneous part drags it. This is complete and internally consistent. Its cost is that the Poincaré group then does not embed as a Lie subgroup of $\mathbb{B}^\times$, so none of the rotor machinery — composition by multiplication, the double cover, the trace and biquaternion norms — applies to translations.
 
 **A larger Clifford algebra.** The dual quaternions are the model for a different reading in the Euclidean case: adjoining a nilpotent element $\varepsilon$ with $\varepsilon^2=0$ to the quaternions makes translations multiplicative, and the Euclidean rigid motions become unit dual quaternions acting by a single product law. Whether a Lorentzian analogue exists, and what it costs, is not settled here. Any enlargement is forced: the restricted Poincaré group has ten real dimensions and the unit group of $\mathbb{B}$ has six, so the new algebra must be strictly larger. Candidate settings in the literature include Clifford algebras with additional nilpotent or null generators, and conformal extensions in which translations appear as parabolic products of generalized inversions rather than as pure rotors. What such a construction would do to the two-sector structure $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$, and whether the enlarged objects still deserve to be called biquaternions, are exactly the questions that are open.
 
@@ -199,7 +199,7 @@ The honest summary is that the biquaternion frame answers the homogeneous questi
 
 The Poincaré group is the ten-parameter group of affine isometries of Minkowski space, and its restricted connected form is the semidirect product $SO^+(1,3)\ltimes\mathbb{R}^4$; its double cover is $SL(2,\mathbb{C})\ltimes\mathbb{R}^4$. The biquaternion algebra $\mathbb{B}$ contains the homogeneous factor exactly: the unit-norm biquaternions are $SL(2,\mathbb{C})$, rotor conjugation $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^\dagger$ is the action on the material sector $\mathbb{M}_-$, and $\mathrm{Ad}$ is the two-to-one covering map onto $SO^+(1,3)$.
 
-Translation is not a rotation in this algebra. A rotor conjugation is linear and fixes the origin; a shift is affine and does not. Conjugation preserves the norm form pointwise while a shift preserves only the norm form of differences, which is why the interval survives translation; and no faithful assignment of rotors to Poincaré elements exists, because the group has ten real dimensions and the rotor group six.
+Translation is not a rotation in this algebra. A rotor conjugation is linear and fixes the origin; a shift is affine and does not. Conjugation preserves the biquaternion norm pointwise while a shift preserves only the biquaternion norm of differences, which is why the interval survives translation; and no faithful assignment of rotors to Poincaré elements exists, because the group has ten real dimensions and the rotor group six.
 
 The correct object is the pair $(\tilde{\Lambda},\tilde{a})$, with $\tilde{a}\in\mathbb{M}_-$, acting by $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^\dagger+\tilde{a}$, and composing by
 $$
@@ -220,7 +220,7 @@ What the frame captures is the connected homogeneous group and its action; what 
 | $\mathbb{M}_-$ | Anti-Hermitian subspace (material sector), home of four-vectors and displacements |
 | $\mathbb{M}_+$ | Hermitian subspace (informational sector), home of boost rotors |
 | $\mathbb{H}_{\mathbb{B}}$ | Real-quaternion subspace, home of rotation rotors |
-| $N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}$ | Norm form |
+| $N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}$ | Biquaternion norm |
 | $\tilde{\Lambda}\in SL(2,\mathbb{C})$ | Unit-norm biquaternion (Lorentz rotor) |
 | $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^\dagger$ | Rotor conjugation (four-vector action) |
 | $\mathrm{Ad}:SL(2,\mathbb{C})\to SO^+(1,3)$ | Two-to-one covering homomorphism, kernel $\{\pm e_0\}$ |

@@ -227,7 +227,7 @@ where the last inclusion uses $i\mathbb{M}_+ = \mathbb{M}_-$.
 
 **Verification of the properties.** Since $H^{\dagger} = H$, $V^{\dagger} = (iH)^{\dagger} = -iH^{\dagger} = -V$, so $V\in\mathbb{M}_-$. The equivariance carries over: $H\mapsto gHg^{\dagger} = \Phi(\tilde{\Lambda}H\tilde{\Lambda}^{\dagger})$, using $g = \Phi(\tilde{\Lambda})$ and $\Phi(\tilde{\Lambda}^{\dagger}) = g^{\dagger}$; hence $V\mapsto \tilde{\Lambda}V\tilde{\Lambda}^{\dagger}$, the parent's **rotor conjugation** on the material sector, recovered from the one-sided spinor action (numerical residual $<10^{-12}$).
 
-**Norm form.** Write $H = h_0e_0 + i\mathbf{h}$. Then $V = ih_0e_0 - \mathbf{h}$, and
+**Biquaternion norm.** Write $H = h_0e_0 + i\mathbf{h}$. Then $V = ih_0e_0 - \mathbf{h}$, and
 
 $$
 N(V) = N(iH) = -\det\Phi(H) = -h_0^2 + \mathbf{h}^2 ,
@@ -364,7 +364,7 @@ Seven problems were solved. (1) The chiral projectors $P_L = \tfrac12(I_4-\gamma
 | $\mathbb{C}_{\mathbb{B}}, \mathbb{H}_{\mathbb{B}}$ | Complex subspace (centre), real-quaternion subspace |
 | $\mathbb{M}_-, \mathbb{M}_+$ | Anti-Hermitian (material), Hermitian (informational) subspaces |
 | $\Phi:\mathbb{B}\to M_2(\mathbb{C})$ | Matrix realization, $\Phi(e_k) = -i\sigma_k$, $\Phi(i) = iI_2$ |
-| $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \det\Phi(\tilde{Q})$ | Norm form |
+| $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \det\Phi(\tilde{Q})$ | Biquaternion norm |
 | $S = \mathbb{C}^2$, $\bar{S}$ | Spinor module, conjugate (right-handed) module |
 | $V_1 = (\tfrac12,0)$, $\bar{S} = (0,\tfrac12)$ | Left- and right-handed Weyl modules |
 | $\Delta = S\oplus\bar{S}$ | Dirac module, $\dim_{\mathbb{C}}\Delta = 4$ |

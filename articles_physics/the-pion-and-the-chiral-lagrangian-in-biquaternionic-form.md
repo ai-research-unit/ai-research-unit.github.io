@@ -7,7 +7,7 @@ The **pion** is the lightest hadron and the clearest realisation in nature of a 
 This article constructs the pion and the chiral Lagrangian in the biquaternion framework $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$. The framework's available compact group is the unit real quaternions $\mathbb{H}^1_{\mathbb{B}}\cong SU(2)\cong\mathbb{S}^3$, and the pion triplet is naturally carried by the adjoint of its Lie algebra, which lies in the material sector:
 
 $$
-\tilde\pi = \pi^a e_a \in \mathfrak{su}(2)\subset\mathbb{M}_- , \qquad a = 1,2,3 ,
+\tilde\pi = \pi^a e_a \in \mathrm{SU}(2)\subset\mathbb{M}_- , \qquad a = 1,2,3 ,
 $$
 
 an isovector whose three components are simultaneously the three components of a material-sector vector. The chiral field is the group element
@@ -16,16 +16,16 @@ $$
 \tilde U = \exp\!\left(\frac{\tilde\pi}{f_\pi}\right) \in \mathbb{H}^1_{\mathbb{B}} , \qquad \tilde U\bar{\tilde U} = e_0 ,
 $$
 
-and the chiral Lagrangian is the norm form of its derivative. The construction is therefore the framework's principal chiral model of the companion article, with the decay constant of two-flavour QCD.
+and the chiral Lagrangian is the biquaternion norm of its derivative. The construction is therefore the framework's principal chiral model of the companion article, with the decay constant of two-flavour QCD.
 
 The findings are the following.
 
-- **Established, and recomputed below.** The pion triplet is the adjoint of the compact $\mathfrak{su}(2)$ inside the material sector, and the chiral field $\tilde U = \exp(\tilde\pi/f_\pi)$ is a unit real quaternion. The trace identities $\mathrm{Tr}(e_ae_b) = -2\delta_{ab}$ and, for the standard generators $T_a = \tfrac{i}{2}e_a$, $\mathrm{Tr}(T_aT_b) = \tfrac12\delta_{ab}$, together with $[T_a,T_b] = i\varepsilon_{abc}T_c$, hold and were checked from the complex $2\times2$ representation $\Phi(e_a) = -i\sigma_a$. Expanding the biquaternion chiral Lagrangian,
+- **Established, and recomputed below.** The pion triplet is the adjoint of the compact $\mathrm{SU}(2)$ inside the material sector, and the chiral field $\tilde U = \exp(\tilde\pi/f_\pi)$ is a unit real quaternion. The trace identities $\mathrm{Tr}(e_ae_b) = -2\delta_{ab}$ and, for the standard generators $T_a = \tfrac{i}{2}e_a$, $\mathrm{Tr}(T_aT_b) = \tfrac12\delta_{ab}$, together with $[T_a,T_b] = i\varepsilon_{abc}T_c$, hold and were checked from the complex $2\times2$ representation $\Phi(e_a) = -i\sigma_a$. Expanding the biquaternion chiral Lagrangian,
 $$
 \mathcal{L}_\pi^{(2)} = -\frac{f_\pi^2}{4}\,\mathrm{Tr}\!\left(\partial_\mu\tilde U\,\partial_\mu\tilde U^\dagger\right),
 $$
 gives the canonical pion kinetic term $\tfrac12[(\partial_t\pi^a)^2-(\nabla\pi^a)^2]$ with coefficient exactly one; verified numerically. The mass term $\propto\mathrm{Tr}(M\tilde U + M\tilde U^\dagger)$ gives the standard Gell-Mann–Oakes–Renner relation $m_\pi^2 f_\pi^2 = -(m_u+m_d)\langle\bar qq\rangle$, equivalently $m_\pi^2 = B_0(m_u+m_d)$ with $B_0 = -\langle\bar qq\rangle/f_\pi^2$.
-- **Interpretation.** Reading the pion's isospin triplet as the adjoint of the framework's material-sector $\mathfrak{su}(2)$, and the chiral field as a unit real quaternion, is the interpretive link between the framework's compact group and the pion's quantum numbers. The interpretation is exact at the level of the unbroken subgroup and is labelled where the chiral group is involved.
+- **Interpretation.** Reading the pion's isospin triplet as the adjoint of the framework's material-sector $\mathrm{SU}(2)$, and the chiral field as a unit real quaternion, is the interpretive link between the framework's compact group and the pion's quantum numbers. The interpretation is exact at the level of the unbroken subgroup and is labelled where the chiral group is involved.
 - **Gap, left visible.** The framework's center is vector-like: the algebra supplies the diagonal isospin $SU(2)_V$ and its adjoint action on the pion triplet, but it does not supply the axial currents, the anomaly, or the Wess–Zumino–Witten term, which belong to the spinor and general-gauge sectors. The chiral Lagrangian is therefore realised as a geometric construction on the framework's group manifold, with the axial-current algebra and the anomaly imported from the standard treatment.
 
 - Companion article *Goldstone's Theorem in Biquaternionic Form*, for the Goldstone boson, the derivative couplings, the decay constant and the effective Lagrangian.
@@ -38,7 +38,7 @@ gives the canonical pion kinetic term $\tfrac12[(\partial_t\pi^a)^2-(\nabla\pi^a
 - Companion article *The Neutron in Biquaternionic Form*, for the same couplings in the neutral channel.
 - Companion article *The Dirac Equation in Biquaternionic Form*, for the spinor context of the axial current.
 
-**Conventions.** We use those of the companion articles throughout. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$ and $e_ae_b = -\delta_{ab}e_0 + \varepsilon_{abc}e_c$, and $i$ is the central scalar imaginary, $i^2 = -1$. The sectors are $\mathbb{M}_-$ (anti-Hermitian, material) and $\mathbb{M}_+$ (Hermitian, informational); $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace and $\mathbb{C}_{\mathbb{B}}$ the center. The compact generators of the framework are the anti-Hermitian $e_a$, with $\mathrm{Tr}(e_ae_b) = -2\delta_{ab}$ and $[e_a,e_b] = 2\varepsilon_{abc}e_c$; the standard Hermitian generators of the chiral Lagrangian are $T_a = \tfrac{i}{2}e_a$, with $\mathrm{Tr}(T_aT_b) = \tfrac12\delta_{ab}$ and $[T_a,T_b] = i\varepsilon_{abc}T_c$. The pion field is $\tilde\pi = \pi^a e_a\in\mathfrak{su}(2)\subset\mathbb{M}_-$, the chiral field is $\tilde U = \exp(\tilde\pi/f_\pi)\in\mathbb{H}^1_{\mathbb{B}}$, and the trace is $\mathrm{Tr} = 2\,\mathrm{Sc}$. The gradient is $\tilde\nabla = e_0\partial_{ict}+e_k\partial_k$ and $\Box = \partial_{ict}^2+\Delta$; the $ict$ metric is $\eta = \mathrm{diag}(-1,+1,+1,+1)$ and the norm-form contraction $\mathrm{Sc}(\overline{\partial_\mu\tilde U}\partial_\mu\tilde U)$ is the one in which the positive kinetic term is obtained with the overall sign exhibited below. The quark mass matrix is $M = \mathrm{diag}(m_u,m_d)$ and $B_0 = -\langle\bar qq\rangle/f_\pi^2$. Throughout, $f_\pi$ is the pion decay constant, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ its vacuum value, and natural units $\hbar = c = 1$ are used in the numerical values.
+**Conventions.** We use those of the companion articles throughout. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$ and $e_ae_b = -\delta_{ab}e_0 + \varepsilon_{abc}e_c$, and $i$ is the central scalar imaginary, $i^2 = -1$. The sectors are $\mathbb{M}_-$ (anti-Hermitian, material) and $\mathbb{M}_+$ (Hermitian, informational); $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace and $\mathbb{C}_{\mathbb{B}}$ the center. The compact generators of the framework are the anti-Hermitian $e_a$, with $\mathrm{Tr}(e_ae_b) = -2\delta_{ab}$ and $[e_a,e_b] = 2\varepsilon_{abc}e_c$; the standard Hermitian generators of the chiral Lagrangian are $T_a = \tfrac{i}{2}e_a$, with $\mathrm{Tr}(T_aT_b) = \tfrac12\delta_{ab}$ and $[T_a,T_b] = i\varepsilon_{abc}T_c$. The pion field is $\tilde\pi = \pi^a e_a\in\mathrm{SU}(2)\subset\mathbb{M}_-$, the chiral field is $\tilde U = \exp(\tilde\pi/f_\pi)\in\mathbb{H}^1_{\mathbb{B}}$, and the trace is $\mathrm{Tr} = 2\,\mathrm{Sc}$. The gradient is $\tilde\nabla = e_0\partial_{ict}+e_k\partial_k$ and $\Box = \partial_{ict}^2+\Delta$; the $ict$ metric is $\eta = \mathrm{diag}(-1,+1,+1,+1)$ and the biquaternion-norm contraction $\mathrm{Sc}(\overline{\partial_\mu\tilde U}\partial_\mu\tilde U)$ is the one in which the positive kinetic term is obtained with the overall sign exhibited below. The quark mass matrix is $M = \mathrm{diag}(m_u,m_d)$ and $B_0 = -\langle\bar qq\rangle/f_\pi^2$. Throughout, $f_\pi$ is the pion decay constant, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ its vacuum value, and natural units $\hbar = c = 1$ are used in the numerical values.
 
 ## Chiral Symmetry and Its Breaking
 
@@ -90,10 +90,10 @@ $$
 \mathrm{Sc}\!\left(\tilde\pi^2\right) = -\,\pi^a\pi^a ,
 $$
 
-so the triplet's invariant length is the quaternion norm up to sign — the same norm form that the free-field articles use. The pions are therefore carried by the material sector $\mathbb{M}_-$, exactly as the framework's four-current and its gauge fields are, and the assignment is
+so the triplet's invariant length is the quaternion norm up to sign — the same biquaternion norm that the free-field articles use. The pions are therefore carried by the material sector $\mathbb{M}_-$, exactly as the framework's four-current and its gauge fields are, and the assignment is
 
 $$
-\tilde\pi\in\mathfrak{su}(2)\subset\mathbb{M}_- ,
+\tilde\pi\in\mathrm{SU}(2)\subset\mathbb{M}_- ,
 \qquad
 \tilde\pi^\dagger = -\tilde\pi ,
 \qquad
@@ -124,7 +124,7 @@ the last because the symmetric $d$-symbol vanishes for $SU(2)$. These were check
 
 ## The Chiral Lagrangian
 
-The chiral Lagrangian is the most general Lagrangian for the field $\tilde U$ that is invariant under the global chiral group, organised by the number of derivatives. At two derivatives there is one term, and it is the norm form of the derivative.
+The chiral Lagrangian is the most general Lagrangian for the field $\tilde U$ that is invariant under the global chiral group, organised by the number of derivatives. At two derivatives there is one term, and it is the biquaternion norm of the derivative.
 
 **The chiral field.** Define
 
@@ -165,9 +165,9 @@ $$
 
 the canonical kinetic term of three real pion fields, with coefficient exactly one and no free parameter. The higher terms are the interactions: every vertex carries derivatives, their coefficients are fixed by the algebra, and at four derivatives the terms include the Skyrme term of the companion article. This is the chiral Lagrangian at leading order, and it is the framework's principal chiral model with $f = f_\pi$.
 
-<!-- CONVENTION — norm-form kinetic term: the contraction $\mathrm{Sc}(\overline{\partial_\mu\tilde U}\partial_\mu\tilde U)$ is summed over the four coordinate derivatives with both indices down, and the overall minus sign in $\mathcal{L}_\pi^{(2)}$ is what makes the kinetic energy positive. Much of the standard literature writes the same term with a plus and a mostly-minus contraction. Do not "fix" the minus sign. -->
+<!-- CONVENTION — biquaternion-norm kinetic term: the contraction $\mathrm{Sc}(\overline{\partial_\mu\tilde U}\partial_\mu\tilde U)$ is summed over the four coordinate derivatives with both indices down, and the overall minus sign in $\mathcal{L}_\pi^{(2)}$ is what makes the kinetic energy positive. Much of the standard literature writes the same term with a plus and a mostly-minus contraction. Do not "fix" the minus sign. -->
 
-**Verification.** The expansion coefficient was checked directly: for a field with $\pi^a(x^\mu) = \epsilon\,x\,\delta^{a1}$ and $\tilde U = \exp(\tilde\pi/f_\pi)$, the norm form $\mathrm{Sc}(\overline{\partial_\mu\tilde U}\partial_\mu\tilde U)$ divided by $(\epsilon/f_\pi)^2$ came out exactly $1$ (to double precision), confirming the normalisation $\mathrm{Sc}(\overline{e_1}e_1) = +1$ and hence the coefficient $\frac12$ in the kinetic term. The calculation used the real four-dimensional representation of $\mathbb{H}$.
+**Verification.** The expansion coefficient was checked directly: for a field with $\pi^a(x^\mu) = \epsilon\,x\,\delta^{a1}$ and $\tilde U = \exp(\tilde\pi/f_\pi)$, the biquaternion norm $\mathrm{Sc}(\overline{\partial_\mu\tilde U}\partial_\mu\tilde U)$ divided by $(\epsilon/f_\pi)^2$ came out exactly $1$ (to double precision), confirming the normalisation $\mathrm{Sc}(\overline{e_1}e_1) = +1$ and hence the coefficient $\frac12$ in the kinetic term. The calculation used the real four-dimensional representation of $\mathbb{H}$.
 
 ## Pion Mass and the Gell-Mann–Oakes–Renner Relation
 
@@ -250,7 +250,7 @@ connects the nucleon axial charge, its mass and its pion coupling. The relation 
 
 ## The Biquaternion Reading
 
-**The pion is a material-sector adjoint.** The framework's pion field is $\tilde\pi = \pi^a e_a$, an element of the compact $\mathfrak{su}(2)$ that lies in $\mathbb{M}_-$. The isovector assignment is not imposed: it is the adjoint of the framework's compact group, and the invariant $\mathrm{Sc}(\tilde\pi^2) = -\pi^a\pi^a$ is the norm form. The pion shares the material sector with the conserved four-current and the gauge fields, and it is distinguished from the central scalar of the Higgs and Goldstone articles by being non-central: the pion rotates under isospin, the scalar does not.
+**The pion is a material-sector adjoint.** The framework's pion field is $\tilde\pi = \pi^a e_a$, an element of the compact $\mathrm{SU}(2)$ that lies in $\mathbb{M}_-$. The isovector assignment is not imposed: it is the adjoint of the framework's compact group, and the invariant $\mathrm{Sc}(\tilde\pi^2) = -\pi^a\pi^a$ is the biquaternion norm. The pion shares the material sector with the conserved four-current and the gauge fields, and it is distinguished from the central scalar of the Higgs and Goldstone articles by being non-central: the pion rotates under isospin, the scalar does not.
 
 **The chiral field is a rotor.** The unit real quaternion $\tilde U = \exp(\tilde\pi/f_\pi)$ is the framework's rotation element, and the chiral transformation $\tilde U\mapsto g_L\tilde U g_R^{-1}$ is the composition of a left and a right rotation. The unbroken isospin is the diagonal, i.e. the conjugation by a single rotor, and the pion field is the logarithm of the rotor. This is the same geometric identification that the nonlinear-sigma-model article makes, specialised to $SU(2)$ and to the pion triplet, and it is exact as a statement about the framework's group manifold.
 
@@ -260,7 +260,7 @@ connects the nucleon axial charge, its mass and its pion coupling. The relation 
 
 ## Open Questions
 
-1. **Does the framework constrain $f_\pi$?** The decay constant is the order parameter in units of the kinetic term, and the chiral Lagrangian normalises it but does not fix it. Whether the framework's trace or norm form fixes a preferred relation between $f_\pi$ and the condensate scale $B_0$ is not shown.
+1. **Does the framework constrain $f_\pi$?** The decay constant is the order parameter in units of the kinetic term, and the chiral Lagrangian normalises it but does not fix it. Whether the framework's trace or biquaternion norm fixes a preferred relation between $f_\pi$ and the condensate scale $B_0$ is not shown.
 
 2. **The isospin-breaking corrections.** The leading-order Lagrangian gives a degenerate triplet; the observed $\pi^\pm$–$\pi^0$ splitting and the $\eta$–$\pi$ mixing require the next order, whose coefficients (the Gasser–Leutwyler constants) are not computed here. Whether the framework constrains them is open.
 
@@ -274,10 +274,10 @@ connects the nucleon axial charge, its mass and its pion coupling. The relation 
 
 ## Summary
 
-The pion is the pseudo-Goldstone boson of the two-flavour chiral symmetry $SU(2)_L\times SU(2)_R$ spontaneously broken to isospin $SU(2)_V$, with three components transforming in the adjoint and a decay constant $f_\pi$. In the biquaternion framework the pion triplet is the adjoint of the compact $\mathfrak{su}(2)$ inside the material sector,
+The pion is the pseudo-Goldstone boson of the two-flavour chiral symmetry $SU(2)_L\times SU(2)_R$ spontaneously broken to isospin $SU(2)_V$, with three components transforming in the adjoint and a decay constant $f_\pi$. In the biquaternion framework the pion triplet is the adjoint of the compact $\mathrm{SU}(2)$ inside the material sector,
 
 $$
-\tilde\pi = \pi^a e_a \in \mathfrak{su}(2)\subset\mathbb{M}_- ,
+\tilde\pi = \pi^a e_a \in \mathrm{SU}(2)\subset\mathbb{M}_- ,
 \qquad
 \left[e_a,e_b\right] = 2\varepsilon_{abc}e_c ,
 \qquad
@@ -292,14 +292,14 @@ $$
 \tilde U\bar{\tilde U} = e_0 ,
 $$
 
-and the leading chiral Lagrangian is the norm form of its derivative,
+and the leading chiral Lagrangian is the biquaternion norm of its derivative,
 
 $$
 \mathcal{L}_\pi^{(2)} = -\frac{f_\pi^2}{4}\,\mathrm{Tr}\!\left(\partial_\mu\tilde U\,\partial_\mu\tilde U^\dagger\right)
 = \frac12\left[(\partial_t\pi^a)^2-(\nabla\pi^a)^2\right] + O(\pi^4),
 $$
 
-with the coefficient exactly one, fixed by the trace identity $\mathrm{Tr}(T_aT_b) = \tfrac12\delta_{ab}$ for $T_a = \tfrac{i}{2}e_a$ (equivalently $\mathrm{Tr}(e_ae_b) = -2\delta_{ab}$ and $\mathrm{Sc}(\overline{e_a}e_b) = \delta_{ab}$). These identities were checked from the representation $\Phi(e_a) = -i\sigma_a$, and the kinetic coefficient was verified directly, the norm form divided by $(\epsilon/f_\pi)^2$ coming out exactly $1$.
+with the coefficient exactly one, fixed by the trace identity $\mathrm{Tr}(T_aT_b) = \tfrac12\delta_{ab}$ for $T_a = \tfrac{i}{2}e_a$ (equivalently $\mathrm{Tr}(e_ae_b) = -2\delta_{ab}$ and $\mathrm{Sc}(\overline{e_a}e_b) = \delta_{ab}$). These identities were checked from the representation $\Phi(e_a) = -i\sigma_a$, and the kinetic coefficient was verified directly, the biquaternion norm divided by $(\epsilon/f_\pi)^2$ coming out exactly $1$.
 
 The quark mass matrix adds the symmetry-breaking term $\frac{f_\pi^2B_0}{2}\mathrm{Tr}(M\tilde U + M^\dagger\tilde U^\dagger)$ with $B_0 = -\langle\bar qq\rangle/f_\pi^2$, whose quadratic part gives $m_{\pi^\pm}^2 = m_{\pi^0}^2 = B_0(m_u+m_d)$ in the isospin limit and hence the Gell-Mann–Oakes–Renner relation $m_\pi^2 f_\pi^2 = -(m_u+m_d)\langle\bar qq\rangle$. For the illustrative inputs $m_\pi = 139.6$ MeV, $f_\pi = 92.1$ MeV, $m_u+m_d = 7.0$ MeV, the relation gives $B_0 = 2.784$ GeV and $|\langle\bar qq\rangle|^{1/3} = 286.9$ MeV, of the standard order.
 
@@ -315,7 +315,7 @@ The framework supplies the pion's adjoint isovector assignment, the geometric ch
 | $\mathbb{M}_-, \mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\mathbb{H}_{\mathbb{B}}$, $\mathbb{H}^1_{\mathbb{B}}$ | Real quaternions; unit real quaternions $\cong SU(2)\cong\mathbb{S}^3$ |
 | $\mathbb{C}_{\mathbb{B}}$ | Center; home of the condensate and of every scalar singlet |
-| $\tilde\pi = \pi^a e_a\in\mathfrak{su}(2)\subset\mathbb{M}_-$ | Pion triplet; isovector adjoint |
+| $\tilde\pi = \pi^a e_a\in\mathrm{SU}(2)\subset\mathbb{M}_-$ | Pion triplet; isovector adjoint |
 | $[e_a,e_b] = 2\varepsilon_{abc}e_c$ | Compact algebra of the framework |
 | $T_a = \tfrac{i}{2}e_a$ | Standard Hermitian chiral generators |
 | $\mathrm{Tr}(T_aT_b) = \tfrac12\delta_{ab}$, $\mathrm{Tr}(e_ae_b) = -2\delta_{ab}$, $\mathrm{Sc}(\overline{e_a}e_b) = \delta_{ab}$ | Trace identities fixing the normalisation |

@@ -47,7 +47,7 @@ a Fréchet space in these seminorms. The inclusions $\mathcal D(\Omega) \subsete
 
 **Proposition (mollifiers).** There is $\rho \in \mathcal D(\mathbb{R}^n)$ with $\rho \ge 0$, $\operatorname{supp}\rho \subseteq \{|x|\le1\}$ and $\int\rho=1$. For $\varepsilon>0$ put $\rho_\varepsilon(x)=\varepsilon^{-n}\rho(x/\varepsilon)$. Then for $f \in L^p(\mathbb{R}^n)$, $1\le p<\infty$, the convolutions $f*\rho_\varepsilon$ are smooth, $\|f*\rho_\varepsilon\|_p\le\|f\|_p$, and $f*\rho_\varepsilon \to f$ in $L^p$; for $f$ uniformly continuous and bounded the convergence is uniform; and for $f \in L^1_{\mathrm{loc}}$ the convergence is in $L^1_{\mathrm{loc}}$.
 
-*Proof.* The function $\rho(x)=c\exp(-1/(1-|x|^2))$ for $|x|<1$ and $0$ otherwise, with $c$ chosen so that $\int\rho=1$, is the standard bump and lies in $\mathcal D$. Minkowski's integral inequality gives the norm bound and the continuity of translation in $L^p$ gives the convergence; the uniform case is uniform continuity, and the local case follows by testing on compact sets. $\square$
+*Proof.* The function $\rho(x)=c\exp(-1/(1-|x|^2))$ for $|x|<1$ and $0$ otherwise, with $c$ chosen so that $\int\rho=1$, is the standard bump and lies in $\mathcal D$. Minkowski's integral inequality gives the norm bound and the continuity of translation in $L^p$ gives the convergence; the uniform case is uniform continuity, and the local case follows by testing on compact sets.
 
 **Corollary (density).** $C_c^\infty(\Omega)$ is dense in $L^p(\Omega)$ for $1\le p<\infty$, dense in $C_0(\Omega)$ in the supremum norm, and $\mathcal D(\mathbb{R}^n)$ is dense in $\mathcal S(\mathbb{R}^n)$.
 
@@ -65,7 +65,7 @@ $$
 
 and the map $L^1_{\mathrm{loc}}(\Omega) \to \mathcal D'(\Omega)$ is injective.
 
-*Proof.* Continuity is the estimate $|\int_Kf\varphi|\le\|f\|_{L^1(K)}\|\varphi\|_{K,0}$. For injectivity, if $\int f\varphi=0$ for all $\varphi \in \mathcal D(\Omega)$, then given $x$ and a compactly supported test function $\psi$ equal to $1$ near $x$, the regularisations are $f*\rho_\varepsilon(x)=\int f(y)\psi(y)\rho_\varepsilon(x-y)\,dy=0$ for small $\varepsilon$ and for $x$ in a compact subset of the interior of $\{\psi=1\}$; since $f*\rho_\varepsilon\to f$ in $L^1_{\mathrm{loc}}$, the function $f$ vanishes a.e. $\square$
+*Proof.* Continuity is the estimate $|\int_Kf\varphi|\le\|f\|_{L^1(K)}\|\varphi\|_{K,0}$. For injectivity, if $\int f\varphi=0$ for all $\varphi \in \mathcal D(\Omega)$, then given $x$ and a compactly supported test function $\psi$ equal to $1$ near $x$, the regularisations are $f*\rho_\varepsilon(x)=\int f(y)\psi(y)\rho_\varepsilon(x-y)\,dy=0$ for small $\varepsilon$ and for $x$ in a compact subset of the interior of $\{\psi=1\}$; since $f*\rho_\varepsilon\to f$ in $L^1_{\mathrm{loc}}$, the function $f$ vanishes a.e.
 
 **Example.** (i) The **delta distribution** at $a \in \Omega$ is $\langle\delta_a,\varphi\rangle=\varphi(a)$; it is of order $0$ and is not given by any locally integrable function, since it would have to vanish away from $a$ while integrating to $1$.
 
@@ -117,7 +117,7 @@ $$
 
 holds for $\varphi \in C^\infty(\Omega)$ and $u \in \mathcal D'(\Omega)$. A distribution with all derivatives zero on a connected $\Omega$ is given by a constant function.
 
-*Proof.* The functional $\varphi \mapsto(-1)^{|\alpha|}\langle u,\partial^\alpha\varphi\rangle$ is a composite of $u$ with a continuous map of $\mathcal D(\Omega)$ into itself, hence continuous; the commutativity is the commutativity of partial derivatives on test functions, and the Leibniz rule is the identity $\partial^\alpha(\varphi\psi)=\sum_{\beta\le\alpha}\binom\alpha\beta\partial^{\alpha-\beta}\varphi\,\partial^\beta\psi$ transposed. The last statement reduces to $\partial_ju=0$ for all $j$, which forces $u$ to be constant by applying the classical mean value theorem to the test functions against which $u$ is paired. $\square$
+*Proof.* The functional $\varphi \mapsto(-1)^{|\alpha|}\langle u,\partial^\alpha\varphi\rangle$ is a composite of $u$ with a continuous map of $\mathcal D(\Omega)$ into itself, hence continuous; the commutativity is the commutativity of partial derivatives on test functions, and the Leibniz rule is the identity $\partial^\alpha(\varphi\psi)=\sum_{\beta\le\alpha}\binom\alpha\beta\partial^{\alpha-\beta}\varphi\,\partial^\beta\psi$ transposed. The last statement reduces to $\partial_ju=0$ for all $j$, which forces $u$ to be constant by applying the classical mean value theorem to the test functions against which $u$ is paired.
 
 **Example.** (i) $H'=\delta$ on $\mathbb{R}$: $\langle H',\varphi\rangle=-\int_0^\infty\varphi'=-\varphi(0)+\varphi(\infty)=-\varphi(0)$, using $\varphi$ compactly supported. More generally the derivative of the indicator of an interval with endpoints $a<b$ is $\delta_a-\delta_b$.
 
@@ -157,7 +157,7 @@ $$
 \widehat{\partial_jf}(\xi)=i\xi_j\hat f(\xi), \qquad \widehat{x_jf}(\xi)=i\partial_j\hat f(\xi), \qquad \widehat{(f*g)}=\hat f\hat g .
 $$
 
-*Proof.* These are the standard properties: differentiation under the integral sign for the first, integration by parts for the second and the convolution theorem by Fubini; inversion follows from the Fourier inversion theorem, and the $L^2$ identity is Plancherel's theorem. Their proofs, with the normalisation used here, belong to *Fourier Analysis on Euclidean Spaces*. $\square$
+*Proof.* These are the standard properties: differentiation under the integral sign for the first, integration by parts for the second and the convolution theorem by Fubini; inversion follows from the Fourier inversion theorem, and the $L^2$ identity is Plancherel's theorem. Their proofs, with the normalisation used here, belong to *Fourier Analysis on Euclidean Spaces*.
 
 **Definition.** A **tempered distribution** is a continuous linear functional on $\mathcal S(\mathbb{R}^n)$; the space is $\mathcal S'(\mathbb{R}^n)$. Every tempered distribution is a distribution, since $\mathcal D \subseteq \mathcal S$ continuously, and every compactly supported distribution is tempered, since $\mathcal S \subseteq \mathcal E$; the inclusions
 
@@ -203,7 +203,7 @@ $$
 
 If $u=\delta_a$ then $u*\varphi=\tau_a\varphi$, where $\tau_a\varphi(x)=\varphi(x-a)$; if $u=f \in L^1_{\mathrm{loc}}$ then $u*\varphi$ is the classical convolution $\int f(y)\varphi(x-y)\,dy$.
 
-*Proof.* The map $x \mapsto \tau_{-x}\check\varphi$ is $C^\infty$ from $\mathbb{R}^n$ into $\mathcal D$, with derivative computed by the chain rule of *Differential Calculus on Normed Spaces*; differentiating under the continuous linear functional $u$ gives smoothness and the first identity, and the second is the transposed Leibniz formula. The support statement is the statement that $\varphi(x-\cdot)$ vanishes on $\operatorname{supp}u$ unless $x$ is a sum of a point of $\operatorname{supp}u$ and a point of $\operatorname{supp}\varphi$. $\square$
+*Proof.* The map $x \mapsto \tau_{-x}\check\varphi$ is $C^\infty$ from $\mathbb{R}^n$ into $\mathcal D$, with derivative computed by the chain rule of *Differential Calculus on Normed Spaces*; differentiating under the continuous linear functional $u$ gives smoothness and the first identity, and the second is the transposed Leibniz formula. The support statement is the statement that $\varphi(x-\cdot)$ vanishes on $\operatorname{supp}u$ unless $x$ is a sum of a point of $\operatorname{supp}u$ and a point of $\operatorname{supp}\varphi$.
 
 **Corollary (regularisation).** Choosing $\rho_\varepsilon$ as above, $u*\rho_\varepsilon \in C^\infty$ and $u*\rho_\varepsilon \to u$ in $\mathcal D'$; hence $C^\infty(\Omega)$ is dense in $\mathcal D'(\Omega)$ in the weak-$*$ topology.
 
@@ -225,7 +225,7 @@ $$
 
 and $\operatorname{supp}(u*v) \subseteq \overline{\operatorname{supp}u+\operatorname{supp}v}$. The space $\mathcal E'(\mathbb{R}^n)$ of compactly supported distributions is a commutative algebra under convolution, with identity $\delta$; the space $L^1(\mathbb{R}^n)$ is a subalgebra, and the Fourier transform converts convolution into multiplication, $\widehat{u*v}=\hat u\hat v$ for $u \in \mathcal S'$ and $v \in \mathcal E'$.
 
-*Proof.* Bilinearity and continuity follow from the definition and the continuity of the pairings; the associativity, when the supports permit, is Fubini for the iterated pairing. The remaining identities are verified directly on test functions, and the Fourier statement is the convolution theorem transposed. $\square$
+*Proof.* Bilinearity and continuity follow from the definition and the continuity of the pairings; the associativity, when the supports permit, is Fubini for the iterated pairing. The remaining identities are verified directly on test functions, and the Fourier statement is the convolution theorem transposed.
 
 **Example.** On $\mathbb{R}$, $H*H=xH$: $\langle H*H,\varphi\rangle=\int_0^\infty\int_0^\infty\varphi(x+y)\,dy\,dx=\int_0^\infty t\varphi(t)\,dt$. Similarly $\delta'*H=H'=\delta$, which is the identity $(\partial\delta)*u=\partial u$ in the simplest case.
 
@@ -243,13 +243,13 @@ A **parametrix** of $P$ near $x_0$ is a distribution $E$ with $PE=\delta_{x_0}-R
 
 **Theorem (construction from a fundamental solution).** Let $P$ have constant coefficients and let $E$ be a fundamental solution of $P$ at $0$. Then for every $f \in \mathcal E'(\mathbb{R}^n)$ the distribution $u=E*f \in \mathcal D'(\mathbb{R}^n)$ satisfies $Pu=f$, and it is the unique solution in $\mathcal S'(\mathbb{R}^n)$ when $P$ has no nonzero tempered solution of $Pu=0$. If $f \in C_c^\infty$, then $u \in C^\infty$ away from the singular support of $E$.
 
-*Proof.* By the identities of the convolution section, $P(E*f)=(PE)*f=\delta*f=f$; uniqueness follows because the difference of two solutions is a solution of the homogeneous equation and the transform converts it into a distribution supported at the origin, which is a combination of derivatives of $\delta$ and is excluded by the hypothesis. The smoothness statement is the regularity of the convolution of $E$ with a smooth compactly supported function away from the singularities of $E$. $\square$
+*Proof.* By the identities of the convolution section, $P(E*f)=(PE)*f=\delta*f=f$; uniqueness follows because the difference of two solutions is a solution of the homogeneous equation and the transform converts it into a distribution supported at the origin, which is a combination of derivatives of $\delta$ and is excluded by the hypothesis. The smoothness statement is the regularity of the convolution of $E$ with a smooth compactly supported function away from the singularities of $E$.
 
 ### Existence for Constant Coefficients
 
 **Theorem (Ehrenpreis–Malgrange).** Every nonzero linear differential operator with constant coefficients on $\mathbb{R}^n$ has a fundamental solution.
 
-*Proof (sketch).* One has to define $\mathcal F^{-1}(1/P(\xi))$ as a tempered distribution even though $1/P(\xi)$ may fail to be locally integrable near the real zeros of the polynomial $P(\xi)$. One writes $1/P(\xi)$ as a limit of locally integrable functions obtained by translating the polynomial, $1/P(\xi+i\eta)$ for $\eta$ in a suitable dense set, and uses an a priori estimate for the translated operator to extract a convergent subsequence in $\mathcal S'$; the limit $E$ satisfies $P(\xi)\hat E=1$ in $\mathcal S'$, which is $PE=\delta$. The argument is standard and is proved in full in the works cited below. $\square$
+*Proof (sketch).* One has to define $\mathcal F^{-1}(1/P(\xi))$ as a tempered distribution even though $1/P(\xi)$ may fail to be locally integrable near the real zeros of the polynomial $P(\xi)$. One writes $1/P(\xi)$ as a limit of locally integrable functions obtained by translating the polynomial, $1/P(\xi+i\eta)$ for $\eta$ in a suitable dense set, and uses an a priori estimate for the translated operator to extract a convergent subsequence in $\mathcal S'$; the limit $E$ satisfies $P(\xi)\hat E=1$ in $\mathcal S'$, which is $PE=\delta$. The argument is standard and is proved in full in the works cited below.
 
 ### The Laplacian and the Heat Operator
 
@@ -283,7 +283,7 @@ $$
 
 and in particular $Pu \in C^\infty(\Omega)$ implies $u \in C^\infty(\Omega)$: an elliptic operator does not create singularities, and it removes them.
 
-*Proof (sketch).* The construction freezes the coefficients at a point $x_0$ and inverts the principal symbol by the Fourier formula: a local parametrix is $E_0(x)=\mathcal F^{-1}(\chi(\xi)/p_m(x_0,\xi))$ with $\chi$ a cutoff vanishing near $\xi=0$, and the operator $I-PE_0$ has order $-1$; iterating the construction and summing a Neumann series over the local pieces gives a parametrix with a smoothing remainder. The regularity statement follows from $u=E(Pu)+Ru$, the mapping property of $E$ of order $-m$ on the Bessel-potential spaces of *Interpolation Theory*, and the smoothing of $R$. The complete proof, with the calculus of symbols, is not covered here. $\square$
+*Proof (sketch).* The construction freezes the coefficients at a point $x_0$ and inverts the principal symbol by the Fourier formula: a local parametrix is $E_0(x)=\mathcal F^{-1}(\chi(\xi)/p_m(x_0,\xi))$ with $\chi$ a cutoff vanishing near $\xi=0$, and the operator $I-PE_0$ has order $-1$; iterating the construction and summing a Neumann series over the local pieces gives a parametrix with a smoothing remainder. The regularity statement follows from $u=E(Pu)+Ru$, the mapping property of $E$ of order $-m$ on the Bessel-potential spaces of *Interpolation Theory*, and the smoothing of $R$. The complete proof, with the calculus of symbols, is not covered here.
 
 The theorem explains the role of ellipticity: it is the condition under which the principal symbol can be inverted for large frequencies, and it is the analytic content of the parametrix. The calculus that makes the construction systematic — composition of symbols, the asymptotic expansion of a product, the parametrix of a general operator and the index theory that follows — is developed; the classical classification of a second-order equation into elliptic, parabolic and hyperbolic types and the explicit solution formulas are given, and the boundary-value theory lies outside this article.
 

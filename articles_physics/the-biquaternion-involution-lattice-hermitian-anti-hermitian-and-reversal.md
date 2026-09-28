@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ carries four distinguished conjugations, and almost every operation in the relativistic articles is one of them. The norm form is built from the first, the reality of an observable is decided by the second, the adjoint of an operator is the third, and the algebra's real structure is the fourth. This article fixes the four, derives their composition law, identifies the real subspaces they single out, and states the two pairings and the adjoint identities that the operator article uses.
+The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ carries four distinguished conjugations, and almost every operation in the relativistic articles is one of them. The biquaternion norm is built from the first, the reality of an observable is decided by the second, the adjoint of an operator is the third, and the algebra's real structure is the fourth. This article fixes the four, derives their composition law, identifies the real subspaces they single out, and states the two pairings and the adjoint identities that the operator article uses.
 
 The four maps are **quaternion conjugation** (also called reversal or conjugation by the quaternion conjugate) $\bar{\cdot}$, **complex conjugation** ${}^*$, **Hermitian conjugation** $\dagger = \bar{\cdot}^{\,*}$, and **anti-Hermitian conjugation** $\flat = -\dagger$. Their names are inherited unchanged from the companion *Conventions in the Biquaternion Universe*, and nothing here renames them. Three facts organise the article.
 
@@ -19,7 +19,7 @@ $$
 $$
 The remaining two are the anti-fixed spaces: the vector subspace $\mathrm{Vect}(\mathbb{B})$, the $-1$ eigenspace of $\bar{\cdot}$, and the antiquaternion subspace $i\mathbb{H}_{\mathbb{B}}$, the $-1$ eigenspace of ${}^*$. Named one by one in the order used throughout the framework, the six are the center subspace $\mathbb{C}_{\mathbb{B}}$, the vector subspace $\mathrm{Vect}(\mathbb{B})$, the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, the antiquaternion subspace $i\mathbb{H}_{\mathbb{B}}$, the informational sector $\mathbb{M}_+$ and the material sector $\mathbb{M}_-$; the table below lists all six with their involution, dimension and basis, and the lattice developed in this article is the lattice of the four fixed spaces among them, with the inclusions, the dimensions and the intersections tabulated and verified below. The two four-dimensional forms $\mathbb{M}_+$ and $\mathbb{M}_-$ are the eigenspaces of $\dagger$ with eigenvalues $+1$ and $-1$, so they are complementary, $\mathbb{B} = \mathbb{M}_+\oplus\mathbb{M}_-$; the companion articles call them the informational and material sectors. All four conjugations preserve each sector; the central multiplications $m_{\pm i}$ exchange them, and so does every product of one of those with a conjugation — eight of the sixteen operations in all — and this is the sharp sense in which the conjugations and the complex structure are different operations.
 
-Third, the adjoints. The reason the lattice is not merely bookkeeping is that adjoints of operators are read off it. Left multiplication by $\tilde{A}$ has adjoint left multiplication by $\tilde{A}^\dagger$, and the gradient of the operator article has adjoint $-\bar{\tilde{\nabla}}$; the two signs cancel in the d'Alembertian, which is self-adjoint. The reversal is the anti-automorphism that builds the norm form, and the fixed space of $\flat$ is the real form in which the first-order kernels live. The operator article uses these facts; this article derives them.
+Third, the adjoints. The reason the lattice is not merely bookkeeping is that adjoints of operators are read off it. Left multiplication by $\tilde{A}$ has adjoint left multiplication by $\tilde{A}^\dagger$, and the gradient of the operator article has adjoint $-\bar{\tilde{\nabla}}$; the two signs cancel in the d'Alembertian, which is self-adjoint. The reversal is the anti-automorphism that builds the biquaternion norm, and the fixed space of $\flat$ is the real form in which the first-order kernels live. The operator article uses these facts; this article derives them.
 
 The article is organised as follows. The four conjugations are defined and typed, the Klein four-group is established with its composition table, the fixed spaces and their lattice are computed. The two pairings — the bilinear one built from reversal and the Hermitian one built from $\dagger$ — are treated next, with their signatures and invariance, and the article closes with the adjoint identities and the central complex structure.
 
@@ -154,7 +154,7 @@ where $D_8 = \langle m_i, {}^*\rangle$ is the dihedral group of order eight — 
 
 ### A biquaternion need not commute with its complex conjugate
 
-An element commutes with its reversal in either order, and that is the identity behind the norm form,
+An element commutes with its reversal in either order, and that is the identity behind the biquaternion norm,
 $$
 \tilde{Q}\bar{\tilde{Q}} = \bar{\tilde{Q}}\tilde{Q} = N(\tilde{Q}) .
 $$
@@ -170,13 +170,13 @@ The exceptions are exact, and they are the three ways the commutator of the halv
 - Imaginary biquaternions, $q_r = 0$: both products reduce to $q_i^2$.
 - Co-planar elements, whose two halves lie on a common axis and therefore commute: both products reduce to $q_r^2 + q_i^2$.
 
-A concrete instance is $\tilde{Q} = e_0 + e_1 + ie_2$, with $q_r = e_0+e_1$ and $q_i = e_2$. Its norm form is $N(\tilde{Q}) = 1$, so it is invertible, and
+A concrete instance is $\tilde{Q} = e_0 + e_1 + ie_2$, with $q_r = e_0+e_1$ and $q_i = e_2$. Its biquaternion norm is $N(\tilde{Q}) = 1$, so it is invertible, and
 $$
 \tilde{Q}\tilde{Q}^* = -e_0 + 2e_1 - 2ie_3 , \qquad
 \tilde{Q}^*\tilde{Q} = -e_0 + 2e_1 + 2ie_3 , \qquad
 \tilde{Q}\tilde{Q}^* - \tilde{Q}^*\tilde{Q} = -4ie_3 \neq 0 .
 $$
-The two products are not the norm form and are not scalars; the norm form is the *reversal* product $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$, which is a complex scalar by construction. Reading the formula against the sign table, the non-commutation is the one place where the $e_k$ signs and the $i$ sign of two conjugations do not combine into a single sign choice: reversal and complex conjugation act on independent data, yet the products they build need not agree.
+The two products are not the biquaternion norm and are not scalars; the biquaternion norm is the *reversal* product $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$, which is a complex scalar by construction. Reading the formula against the sign table, the non-commutation is the one place where the $e_k$ signs and the $i$ sign of two conjugations do not combine into a single sign choice: reversal and complex conjugation act on independent data, yet the products they build need not agree.
 
 ## The Lattice of Fixed Spaces
 
@@ -266,7 +266,7 @@ verified on Hermitian and anti-Hermitian random elements: multiplying by $i$ con
 
 ## The Two Pairings
 
-### The bilinear pairing and the norm form
+### The bilinear pairing and the biquaternion norm
 
 Reversal defines a complex-bilinear pairing
 $$
@@ -274,14 +274,14 @@ B(\tilde{A},\tilde{B}) := \mathrm{Sc}\bigl(\bar{\tilde{A}}\tilde{B}\bigr) ,
 \qquad
 B(\tilde{A},\tilde{A}) = \mathrm{Sc}\bigl(\bar{\tilde{A}}\tilde{A}\bigr) = \mathrm{Sc}\,N(\tilde{A}) ,
 $$
-which is symmetric, $B(\tilde{A},\tilde{B}) = B(\tilde{B},\tilde{A})$, verified on random pairs, and reduces to the norm form on the diagonal. Read on the two sectors, its signature is the framework's metric structure:
+which is symmetric, $B(\tilde{A},\tilde{B}) = B(\tilde{B},\tilde{A})$, verified on random pairs, and reduces to the biquaternion norm on the diagonal. Read on the two sectors, its signature is the framework's metric structure:
 
 | Sector | Basis | $B$ on the basis | Signature |
 |---|---|---|---|
 | $\mathbb{M}_-$ | $ie_0,\ e_1,\ e_2,\ e_3$ | $-1,+1,+1,+1$ | $(-,+,+,+)$ |
 | $\mathbb{H}_{\mathbb{B}}$ | $e_0,\ e_1,\ e_2,\ e_3$ | $+1,+1,+1,+1$ | $(+,+,+,+)$ |
 
-The verification is the norm-form computation of the companion *Conventions in the Biquaternion Universe*: for $\tilde{Q} = i v_0e_0 + \mathbf{v} \in \mathbb{M}_-$ the diagonal is $N(\tilde{Q}) = -v_0^2 + \mathbf{v}^2$, the Minkowski interval, and for a real quaternion it is $\sum_\mu Q_\mu^2$. The lattice therefore carries the two signatures: the bilinear pairing is Lorentzian on the material sector and positive definite on the real quaternions, and it is the *same* level-one form read on the two bases, not a pair of independent choices. This is the algebraic content of the companion article's three-level metric discussion, and the reason a sign difference between the two sectors is never an inconsistency.
+The verification is the biquaternion-norm computation of the companion *Conventions in the Biquaternion Universe*: for $\tilde{Q} = i v_0e_0 + \mathbf{v} \in \mathbb{M}_-$ the diagonal is $N(\tilde{Q}) = -v_0^2 + \mathbf{v}^2$, the Minkowski interval, and for a real quaternion it is $\sum_\mu Q_\mu^2$. The lattice therefore carries the two signatures: the bilinear pairing is Lorentzian on the material sector and positive definite on the real quaternions, and it is the *same* level-one form read on the two bases, not a pair of independent choices. This is the algebraic content of the companion article's three-level metric discussion, and the reason a sign difference between the two sectors is never an inconsistency.
 
 **When the pairing vanishes.** Sangwine, Ell and Le Bihan give the criterion for $B(\tilde{A},\tilde{B}) = 0$ from the coordinate form of the same pairing,
 $$
@@ -307,7 +307,7 @@ Hermitian conjugation defines a second pairing,
 $$
 \langle \tilde{A},\tilde{B}\rangle_2 := 2\,\mathrm{Sc}\bigl(\tilde{A}^\dagger\tilde{B}\bigr) ,
 $$
-which is sesquilinear and positive definite, and the Gram matrix on any real basis is positive definite. It is the pairing in which operators have adjoints, and it is *not* the norm form: the norm form is bilinear and indefinite, the Hermitian pairing is sesquilinear and definite, and the companion article distinguishes them for exactly this reason. Both are preserved by the appropriate group. The bilinear form is invariant under reversal-conjugation,
+which is sesquilinear and positive definite, and the Gram matrix on any real basis is positive definite. It is the pairing in which operators have adjoints, and it is *not* the biquaternion norm: the biquaternion norm is bilinear and indefinite, the Hermitian pairing is sesquilinear and definite, and the companion article distinguishes them for exactly this reason. Both are preserved by the appropriate group. The bilinear form is invariant under reversal-conjugation,
 $$
 B\bigl(\bar{\tilde{\Lambda}}\tilde{A}\bar{\tilde{\Lambda}},\ \bar{\tilde{\Lambda}}\tilde{B}\bar{\tilde{\Lambda}}\bigr) = B(\tilde{A},\tilde{B}) \qquad \text{for unit-norm } \tilde{\Lambda} ,
 $$
@@ -346,9 +346,9 @@ The biquaternion algebra carries four conjugations. Quaternion conjugation (reve
 
 The four maps form the Klein four-group $\{\mathrm{id},\bar{\cdot},{}^*,\dagger\}$ with $\dagger = \bar{\cdot}\circ{}^*$, their composition table verified on random elements; together with the central scalars $\{\pm1,\pm i\}$ they generate a group of order sixteen, $\mathbb{Z}_4\rtimes V_4 \cong D_8\times\mathbb{Z}_2$ (non-abelian; the direct product $\mathbb{Z}_4\times V_4$ is excluded by the centre), whose sixteen elements were enumerated and found distinct. Their eigenspaces are the framework's six distinguished subspaces, named one by one: the center subspace $\mathbb{C}_{\mathbb{B}}$ (dim $2$), the vector subspace $\mathrm{Vect}(\mathbb{B})$ (dim $6$), the quaternion subspace $\mathbb{H}_{\mathbb{B}}$ (dim $4$), the antiquaternion subspace $i\mathbb{H}_{\mathbb{B}}$ (dim $4$), the informational sector $\mathbb{M}_+$ (dim $4$) and the material sector $\mathbb{M}_-$ (dim $4$). The four fixed spaces are $\mathbb{C}_{\mathbb{B}}$, $\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$ and $\mathbb{M}_-$, with the intersection lattice tabulated: $\mathbb{C}_{\mathbb{B}} = (\mathbb{C}_{\mathbb{B}}\cap\mathbb{M}_+)\oplus(\mathbb{C}_{\mathbb{B}}\cap\mathbb{M}_-)$ and $\mathbb{H}_{\mathbb{B}} = (\mathbb{H}_{\mathbb{B}}\cap\mathbb{M}_+)\oplus(\mathbb{H}_{\mathbb{B}}\cap\mathbb{M}_-)$, and $\mathbb{M}_+\cap\mathbb{M}_- = \{0\}$. Every conjugation preserves each sector; multiplication by $\pm i$ exchanges them, and the operations that exchange the sectors are the eight-element set $m_{\pm i}V_4$, not the central multiplications alone.
 
-Reversal defines the bilinear pairing $B(\tilde{A},\tilde{B}) = \mathrm{Sc}(\bar{\tilde{A}}\tilde{B})$, Lorentzian on $\mathbb{M}_-$ with signature $(-,+,+,+)$ and positive definite on $\mathbb{H}_{\mathbb{B}}$; Hermitian conjugation defines the positive-definite sesquilinear pairing $2\,\mathrm{Sc}(\tilde{A}^\dagger\tilde{B})$. Multiplication operators have adjoints $L_{\tilde{A}}^\dagger = L_{\tilde{A}^\dagger}$, and the gradient has adjoint $-\bar{\tilde{\nabla}}$, so that $\Box^\dagger = \Box$. Reversal is a word in the products, $\bar{\tilde{Q}} = -\tfrac12(\tilde{Q} + e_1\tilde{Q}e_1 + e_2\tilde{Q}e_2 + e_3\tilde{Q}e_3)$, whereas complex conjugation is primitive and no word in $\tilde{Q}$ computes it; an element commutes with its reversal, $\tilde{Q}\bar{\tilde{Q}} = \bar{\tilde{Q}}\tilde{Q} = N(\tilde{Q})$, but need not commute with its complex conjugate, for which $\tilde{Q}\tilde{Q}^* - \tilde{Q}^*\tilde{Q} = 2i\,(q_iq_r - q_rq_i)$ vanishes only for quaternions, for imaginary biquaternions, and for co-planar elements. The four characters of $V_4$ are four projections onto the four real components, the scalar, bivector, vector and pseudoscalar of the geometric-algebra dictionary, and the bilinear pairing vanishes in four grades, its vanishing being independent of the norm form.
+Reversal defines the bilinear pairing $B(\tilde{A},\tilde{B}) = \mathrm{Sc}(\bar{\tilde{A}}\tilde{B})$, Lorentzian on $\mathbb{M}_-$ with signature $(-,+,+,+)$ and positive definite on $\mathbb{H}_{\mathbb{B}}$; Hermitian conjugation defines the positive-definite sesquilinear pairing $2\,\mathrm{Sc}(\tilde{A}^\dagger\tilde{B})$. Multiplication operators have adjoints $L_{\tilde{A}}^\dagger = L_{\tilde{A}^\dagger}$, and the gradient has adjoint $-\bar{\tilde{\nabla}}$, so that $\Box^\dagger = \Box$. Reversal is a word in the products, $\bar{\tilde{Q}} = -\tfrac12(\tilde{Q} + e_1\tilde{Q}e_1 + e_2\tilde{Q}e_2 + e_3\tilde{Q}e_3)$, whereas complex conjugation is primitive and no word in $\tilde{Q}$ computes it; an element commutes with its reversal, $\tilde{Q}\bar{\tilde{Q}} = \bar{\tilde{Q}}\tilde{Q} = N(\tilde{Q})$, but need not commute with its complex conjugate, for which $\tilde{Q}\tilde{Q}^* - \tilde{Q}^*\tilde{Q} = 2i\,(q_iq_r - q_rq_i)$ vanishes only for quaternions, for imaginary biquaternions, and for co-planar elements. The four characters of $V_4$ are four projections onto the four real components, the scalar, bivector, vector and pseudoscalar of the geometric-algebra dictionary, and the bilinear pairing vanishes in four grades, its vanishing being independent of the biquaternion norm.
 
-The lattice is not decoration: it is the set of real forms on which the norm form, the observables, the adjoints, and the material kernels all live.
+The lattice is not decoration: it is the set of real forms on which the biquaternion norm, the observables, the adjoints, and the material kernels all live.
 
 ## Summary of Notation
 
@@ -368,7 +368,7 @@ The lattice is not decoration: it is the set of real forms on which the norm for
 | $i\mathbb{H}_{\mathbb{B}}$ | Antiquaternion subspace; $-1$ eigenspace of ${}^*$, dim $4$ |
 | $\mathbb{M}_+$ | Informational sector; fixed space of $\dagger$ (its $+1$ eigenspace), dim $4$ |
 | $\mathbb{M}_-$ | Material sector; fixed space of $\flat$ and $-1$ eigenspace of $\dagger$, dim $4$; $\mathbb{B} = \mathbb{M}_+\oplus\mathbb{M}_-$ |
-| $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$ | Norm form |
+| $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$ | Biquaternion norm |
 | $B(\tilde{A},\tilde{B}) = \mathrm{Sc}(\bar{\tilde{A}}\tilde{B})$ | Bilinear pairing; signature $(-,+,+,+)$ on $\mathbb{M}_-$; vanishes in four grades, independently of the norm |
 | $\Pi_S,\Pi_B,\Pi_V,\Pi_P$ | The four $V_4$ projections onto $\Re S$, $\Re V$, $i\Im V$, $i\Im S$ (scalar, bivector, vector, pseudoscalar) |
 | $\langle \tilde{A},\tilde{B}\rangle_2 = 2\,\mathrm{Sc}(\tilde{A}^\dagger\tilde{B})$ | Positive-definite sesquilinear pairing |
@@ -380,7 +380,7 @@ The lattice is not decoration: it is the set of real forms on which the norm for
 - Ian R. Porteous, *Clifford Algebras and the Classical Groups* (Cambridge, 1995), for the real forms of the complexified algebras and the correspondence between conjugations and real structures.
 - F. Reese Harvey, *Spinors and Calibrations* (Academic Press, 1990), for the quaternionic and complex structures on $\mathbb{H}$ and $M_2(\mathbb{C})$.
 - Israel M. Gel'fand and Mikhail A. Naimark, *Unitäre Darstellungen der klassischen Gruppen* (Akademie-Verlag, 1957), for the invariant Hermitian and bilinear forms on the quaternion algebra and the unitary and Lorentz groups preserving them.
-- Claude Chevalley, *The Algebraic Theory of Spinors* (Columbia, 1954), for the anti-automorphisms of the Clifford algebra and the norm form built from reversal.
+- Claude Chevalley, *The Algebraic Theory of Spinors* (Columbia, 1954), for the anti-automorphisms of the Clifford algebra and the biquaternion norm built from reversal.
 - Roger Penrose and Wolfgang Rindler, *Spinors and Space-Time*, Vol. 1 (Cambridge, 1984), for the two-component spinor conjugation structures and the correspondence with the quaternion conjugation.
 - S. J. Sangwine, T. A. Ell, and N. Le Bihan, "Fundamental representations and algebraic properties of biquaternions or complexified quaternions", *Advances in Applied Clifford Algebras* **21** (2011) 607–636, for the reversal word, the non-commutation of a biquaternion with its complex conjugate, the four graded projections, and the criterion for the vanishing of the bilinear pairing.
 - *Conventions in the Biquaternion Universe* and *Relations Between Subspaces*, the companion articles, for the conventions the four conjugations are named by, for the six distinguished subspaces named one by one with their closure properties, and for the six-subspace intersection table of which the four-space lattice here is the restriction.

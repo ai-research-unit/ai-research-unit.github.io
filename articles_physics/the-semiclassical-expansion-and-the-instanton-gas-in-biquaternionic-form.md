@@ -6,7 +6,7 @@
 
 The subject straddles a boundary that this corpus keeps sharp. The path integral itself, its measure, the gauge-fixing and the Faddeev–Popov procedure belong to the quantisation programme, developed in the articles of *Biquaternion Quantum Fields*, and *The Wick Rotation in the Biquaternion Universe* fixes the Euclidean continuation that the instanton calculus requires. Those results are used here, not re-derived. What belongs to the present article is the *use* of the instanton configurations: the steepest-descent evaluation around a saddle, the collective-coordinate measure that the ADHM moduli space supplies, the sum over topological sectors that produces the theta vacuum, and the dilute-gas approximation with its range of validity. The companion article *The Theta Parameter, Strong CP, and the Witten Effect in Biquaternionic Form* takes the theta angle so obtained and develops its consequences.
 
-Two of the framework's own results enter directly. First, the topological charge and its density were identified in *Instantons and Solitons in Biquaternionic Form*: the abelian density is the framework's invariant $I_2=\mathbf E\cdot\mathbf B$, and the non-abelian density is the matrix trace $\mathrm{Tr}(F\wedge F)$, which the norm form does not supply. Second, the moduli space of the saddle is the ADHM quotient of *The ADHM Construction and Biquaternion Instanton Data*, whose dimension fixes the number of collective coordinates and hence the measure. The semiclassical expansion is therefore built on the framework's topology and the framework's moduli; what it adds, and what it must import, is the fluctuation calculus of quantum field theory.
+Two of the framework's own results enter directly. First, the topological charge and its density were identified in *Instantons and Solitons in Biquaternionic Form*: the abelian density is the framework's invariant $I_2=\mathbf E\cdot\mathbf B$, and the non-abelian density is the matrix trace $\mathrm{Tr}(F\wedge F)$, which the biquaternion norm does not supply. Second, the moduli space of the saddle is the ADHM quotient of *The ADHM Construction and Biquaternion Instanton Data*, whose dimension fixes the number of collective coordinates and hence the measure. The semiclassical expansion is therefore built on the framework's topology and the framework's moduli; what it adds, and what it must import, is the fluctuation calculus of quantum field theory.
 
 **Conventions.** We use those of *Conventions in the Biquaternion Universe* and of the companion gauge articles. The Euclidean slice has coordinates $x_4,x_1,x_2,x_3$ with $x_4=c\tau$, the 't Hooft symbols of *Instantons and Solitons in Biquaternionic Form* are used for the self-dual solution, and the Euclidean curvature is written without the explicit $i$ in the commutator on Hermitian generators with $\mathrm{Tr}(T_aT_b)=\tfrac12\delta_{ab}$. The topological charge and action are
 
@@ -196,8 +196,8 @@ when the flavours are massive, and vanishes when any flavour is massless. The re
 
 The framework's role in the semiclassical expansion is the supply of the saddle and its moduli, and it is worth stating precisely what that amounts to.
 
-- **The saddle is the framework's.** The self-dual connection is the BPST instanton built in $\mathfrak{su}(2)=\mathrm{span}_{\mathbb R}\{e_1,e_2,e_3\}\subset\mathbb M_-$, and its action is fixed by the Bogomolny bound. The instanton is an object of the algebra's non-abelian factor and not of the abelian centre: the companion article *Instantons and Solitons in Biquaternionic Form* showed that a smooth abelian configuration of finite action has $Q=0$ on $\mathbb R^4$, so the semiclassical expansion of the Maxwell sector has no instanton saddle at all.
-- **The density is the framework's in the abelian case and the matrix trace otherwise.** The theta term's integrand is the topological density. In the abelian sector it is proportional to the invariant $I_2=\mathbf E\cdot\mathbf B$; in the non-abelian sector it is $\mathrm{Tr}(F\wedge F)$ with the matrix trace, which the rank-two, single-slot norm form does not supply. The semiclassical sum over sectors is therefore written in components rather than in the norm-form invariant calculus.
+- **The saddle is the framework's.** The self-dual connection is the BPST instanton built in $\mathrm{SU}(2)=\mathrm{span}_{\mathbb R}\{e_1,e_2,e_3\}\subset\mathbb M_-$, and its action is fixed by the Bogomolny bound. The instanton is an object of the algebra's non-abelian factor and not of the abelian centre: the companion article *Instantons and Solitons in Biquaternionic Form* showed that a smooth abelian configuration of finite action has $Q=0$ on $\mathbb R^4$, so the semiclassical expansion of the Maxwell sector has no instanton saddle at all.
+- **The density is the framework's in the abelian case and the matrix trace otherwise.** The theta term's integrand is the topological density. In the abelian sector it is proportional to the invariant $I_2=\mathbf E\cdot\mathbf B$; in the non-abelian sector it is $\mathrm{Tr}(F\wedge F)$ with the matrix trace, which the rank-two, single-slot biquaternion norm does not supply. The semiclassical sum over sectors is therefore written in components rather than in the biquaternion-norm invariant calculus.
 - **The moduli are the framework's.** The collective-coordinate measure integrates over the ADHM moduli space, whose dimension $8k$ and physical dimension $8k-3$ come from the quaternionic quotient of *The ADHM Construction and Biquaternion Instanton Data*. The five collective coordinates of the charge-one saddle are the quaternionic datum $\rho$ together with the translations of the quaternionic coordinate.
 - **The dynamics is imported.** The measure, the Faddeev–Popov procedure, the one-loop determinants, the beta function and the numerical prefactors are quantum field theory. The algebra is a complexified classical structure; it contains no $\hbar$, no running coupling and no action principle of its own. The semiclassical expansion is thus a physical use of the framework's topology that the framework itself cannot validate; it is validated by the standard quantum field theory of the companion quantisation articles.
 
@@ -218,7 +218,7 @@ The dilute instanton gas exponentiates the one-instanton weight into a pressure 
 | Symbol | Meaning |
 |---|---|
 | $\mathbb B=\mathbb C\otimes_{\mathbb R}\mathbb H$ | Biquaternion algebra |
-| $\mathfrak{su}(2)=\mathrm{span}_{\mathbb R}\{e_1,e_2,e_3\}$ | Compact factor; home of the instanton |
+| $\mathrm{SU}(2)=\mathrm{span}_{\mathbb R}\{e_1,e_2,e_3\}$ | Compact factor; home of the instanton |
 | $\mathcal A_\mu$, $F_{\mu\nu}$ | Gauge connection and curvature |
 | $Q=\frac{1}{8\pi^2}\int\mathrm{Tr}(F\wedge F)$ | Topological charge |
 | $S=\frac{1}{2g^2}\int\mathrm{Tr}(F_{\mu\nu}F^{\mu\nu})$ | Euclidean action |
@@ -231,7 +231,7 @@ The dilute instanton gas exponentiates the one-instanton weight into a pressure 
 | $x_0^\mu$, $\rho$ | Instanton collective coordinates (translation, scale) |
 | $8k$, $8k-3$ | ADHM moduli dimensions; collective-coordinate count |
 | $I_2=\mathbf E\cdot\mathbf B$ | Abelian topological density (framework invariant) |
-| $\mathrm{Tr}(F\wedge F)$ | Non-abelian density (matrix trace, not norm form) |
+| $\mathrm{Tr}(F\wedge F)$ | Non-abelian density (matrix trace, not biquaternion norm) |
 | $b_0$ | One-loop beta-function coefficient; $b_0=\tfrac{22-2N_f}{3}$ for $SU(2)$ with $N_f$ Dirac flavours, $b_0=22/3$ pure |
 | $g(\rho)$ | Running coupling at the instanton scale |
 

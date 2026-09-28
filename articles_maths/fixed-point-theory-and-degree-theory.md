@@ -31,7 +31,7 @@ $$
 d(x_m,x_n)\le\sum_{j=n}^{m-1}\kappa^jd(x_1,x_0)\le\frac{\kappa^n}{1-\kappa}d(x_1,x_0),
 $$
 
-and $(x_n)$ is Cauchy; its limit $x^*$ satisfies $Tx^*=x^*$ by continuity of $T$. Uniqueness: if $Tx^*=x^*$ and $Ty^*=y^*$ then $d(x^*,y^*)=d(Tx^*,Ty^*)\le\kappa d(x^*,y^*)$, so $d(x^*,y^*)=0$. $\square$
+and $(x_n)$ is Cauchy; its limit $x^*$ satisfies $Tx^*=x^*$ by continuity of $T$. Uniqueness: if $Tx^*=x^*$ and $Ty^*=y^*$ then $d(x^*,y^*)=d(Tx^*,Ty^*)\le\kappa d(x^*,y^*)$, so $d(x^*,y^*)=0$.
 
 **Example (completeness is needed).** On $M=(0,1]$ with the usual metric, $Tx=x/2$ is a contraction with no fixed point in $M$; the fixed point $0$ lies outside. On $M=\mathbb{R}$, the translation $Tx=x+1$ has no fixed point and is an isometry, not a contraction. On the closed unit ball of a Banach space, the map $Tx=(1-\|x\|)x$ is continuous and has fixed points, but it is not a contraction.
 
@@ -41,7 +41,7 @@ and $(x_n)$ is Cauchy; its limit $x^*$ satisfies $Tx^*=x^*$ by continuity of $T$
 
 **Theorem (Edelstein).** Let $(M,d)$ be compact and $T:M\to M$ satisfy $d(Tx,Ty)<d(x,y)$ for all $x \neq y$. Then $T$ has a unique fixed point.
 
-*Proof.* The function $x\mapsto d(x,Tx)$ is continuous on the compact set $M$ and attains its minimum at some $x^*$; if $Tx^*\neq x^*$ then $d(T^2x^*,Tx^*)<d(Tx^*,x^*)$ contradicts minimality, so $d(x^*,Tx^*)=0$; uniqueness is immediate from the strict inequality. $\square$
+*Proof.* The function $x\mapsto d(x,Tx)$ is continuous on the compact set $M$ and attains its minimum at some $x^*$; if $Tx^*\neq x^*$ then $d(T^2x^*,Tx^*)<d(Tx^*,x^*)$ contradicts minimality, so $d(x^*,Tx^*)=0$; uniqueness is immediate from the strict inequality.
 
 **Theorem (Rakotch).** Let $(M,d)$ be complete and let $T:M\to M$ satisfy $d(Tx,Ty)\le\alpha(d(x,y))\,d(x,y)$ where $\alpha:[0,\infty)\to[0,1)$ is nonincreasing. Then $T$ has a unique fixed point.
 
@@ -63,7 +63,7 @@ $$
 P_\epsilon x=\frac{\sum_{i=1}^m\max\{0,\ \epsilon-\|x-x_i\|\}\,x_i}{\sum_{i=1}^m\max\{0,\ \epsilon-\|x-x_i\|\}} ,
 $$
 
-the denominator being positive on $K$; the map is continuous, its image lies in the convex hull of the $x_i$, and for $x$ in $K$ the estimate $\|P_\epsilon x-x\|\le\epsilon$ follows because $P_\epsilon x$ is a convex combination of the centres of the balls containing $x$. $\square$
+the denominator being positive on $K$; the map is continuous, its image lies in the convex hull of the $x_i$, and for $x$ in $K$ the estimate $\|P_\epsilon x-x\|\le\epsilon$ follows because $P_\epsilon x$ is a convex combination of the centres of the balls containing $x$.
 
 ### The Schauder Fixed Point Theorem
 
@@ -75,7 +75,7 @@ $$
 \|x_n-Tx_n\|=\|T_nx_n-Tx_n\|\le1/n ,
 $$
 
-so $(Tx_n)$ has a convergent subsequence, say $Tx_{n_k}\to x^* \in\overline{T(C)}\subseteq C$; then $x_{n_k}=T_{n_k}x_{n_k}\to x^*$ as well, and continuity of $T$ gives $Tx^*=\lim Tx_{n_k}=x^*$. $\square$
+so $(Tx_n)$ has a convergent subsequence, say $Tx_{n_k}\to x^* \in\overline{T(C)}\subseteq C$; then $x_{n_k}=T_{n_k}x_{n_k}\to x^*$ as well, and continuity of $T$ gives $Tx^*=\lim Tx_{n_k}=x^*$.
 
 The proof is the model of the passage from the finite-dimensional to the infinite-dimensional theory: the finite-dimensional theorem is applied to the projections, and the compactness of $T$ upgrades the approximate fixed points to an exact one.
 
@@ -101,7 +101,7 @@ The proof is the model of the passage from the finite-dimensional to the infinit
 
 (v) **Excision.** If $\Omega_0 \subseteq\Omega$ is open and $p \notin(I-T)(\overline\Omega\setminus\Omega_0)$, then $\deg(I-T,\Omega,p)=\deg(I-T,\Omega_0,p)$.
 
-*Proof (sketch).* For the finite-dimensional case the statements are those of the Brouwer degree, cited from *Degree Theory and the Brouwer Fixed Point Theorem*; for the general case one observes that the approximation used in the definition has a uniform bound on the finite-dimensional degrees when the homotopy stays away from $p$ on the boundary, by the homotopy property in finite dimensions, and the integer obtained is therefore independent of the choice. The properties follow by passing to the limit in the corresponding finite-dimensional identities. $\square$
+*Proof (sketch).* For the finite-dimensional case the statements are those of the Brouwer degree, cited from *Degree Theory and the Brouwer Fixed Point Theorem*; for the general case one observes that the approximation used in the definition has a uniform bound on the finite-dimensional degrees when the homotopy stays away from $p$ on the boundary, by the homotopy property in finite dimensions, and the integer obtained is therefore independent of the choice. The properties follow by passing to the limit in the corresponding finite-dimensional identities.
 
 **Corollary.** $\deg(I-T,\Omega,p)$ depends only on the restriction of $T$ to $\partial\Omega$ and on the connected component of $X\setminus(I-T)(\partial\Omega)$ containing $p$; in particular, if $T$ is not defined on all of $\overline\Omega$ but only on a neighbourhood of $\overline\Omega$, the degree is unchanged.
 
@@ -109,7 +109,7 @@ The proof is the model of the passage from the finite-dimensional to the infinit
 
 **Theorem (Leray–Schauder continuation).** Let $H:[0,1]\times\overline\Omega\to X$ be a compact homotopy with $H(0,\cdot)=0$ and with $x \neq H(t,x)$ for all $x \in\partial\Omega$ and $t \in[0,1]$. Then $H(1,\cdot)$ has a fixed point in $\Omega$.
 
-*Proof.* By homotopy invariance and normalisation, $\deg(I-H(1,\cdot),\Omega,0)=\deg(I,\Omega,0)=1$, and the solvability property gives a fixed point. $\square$
+*Proof.* By homotopy invariance and normalisation, $\deg(I-H(1,\cdot),\Omega,0)=\deg(I,\Omega,0)=1$, and the solvability property gives a fixed point.
 
 The theorem is the standard tool for existence in nonlinear problems: one embeds the given equation in a one-parameter family joining it to the trivial equation, proves the a priori bound that keeps the fixed points away from the boundary, and concludes.
 
@@ -121,7 +121,7 @@ $$
 
 is bounded. Then $T$ has a fixed point.
 
-*Proof.* Choose $r>\sup_{x \in S}\|x\|$ and $\Omega=B(0,r)$; the homotopy $H(t,x)=t\,Tx$ has no fixed point on $\partial\Omega$ for $t \in[0,1]$, because a fixed point with $\|x\|=r$ would lie in $S$; the continuation theorem applies. $\square$
+*Proof.* Choose $r>\sup_{x \in S}\|x\|$ and $\Omega=B(0,r)$; the homotopy $H(t,x)=t\,Tx$ has no fixed point on $\partial\Omega$ for $t \in[0,1]$, because a fixed point with $\|x\|=r$ would lie in $S$; the continuation theorem applies.
 
 **Corollary (Schauder for unbounded sets).** If $C$ is a closed convex set and $T:C\to C$ is continuous and compact with $T(C)$ bounded, then $T$ has a fixed point: take $r$ with $T(C)\subseteq B(0,r)$ and apply Schauder's theorem to the closed bounded convex set $C\cap\overline{B(0,r)}$, which is invariant under $T$.
 
@@ -131,7 +131,7 @@ is bounded. Then $T$ has a fixed point.
 
 **Theorem (Krasnoselskii).** Let $C$ be a nonempty closed bounded convex subset of a Banach space $X$, let $S:C\to X$ be a contraction with constant $\kappa<1$, and let $K:C\to X$ be continuous and compact. If $Sx+Ky \in C$ for all $x,y \in C$, then $S+K$ has a fixed point in $C$.
 
-*Proof.* Extend $S$ to a map of $X$ with the same constant $\kappa$, which is possible because $C$ is a convex subset of a Banach space; then the series $\sum_{j\ge0}S^j$ converges in the operator norm, so $I-S$ is invertible with $(I-S)^{-1}=\sum_{j\ge0}S^j$ and $\|(I-S)^{-1}\|\le\frac1{1-\kappa}$. Put $T=(I-S)^{-1}K$; then $T$ is continuous and compact, as the composition of a continuous map with a compact one. To see that $T(C)\subseteq C$, fix $y \in C$ and let $z$ be the fixed point of the contraction $x\mapsto Sx+Ky$, which exists by the contraction principle; starting the iteration from any $x_0 \in C$, each iterate lies in $C$ by the hypothesis $Sx+Ky \in C$, so the limit $z$ lies in $C$ (which is closed). Hence $T(C)\subseteq C$, Schauder's theorem gives $z=Tz$, and $z=Tz$ means $(I-S)z=Kz$, that is, $z=Sz+Kz$. $\square$
+*Proof.* Extend $S$ to a map of $X$ with the same constant $\kappa$, which is possible because $C$ is a convex subset of a Banach space; then the series $\sum_{j\ge0}S^j$ converges in the operator norm, so $I-S$ is invertible with $(I-S)^{-1}=\sum_{j\ge0}S^j$ and $\|(I-S)^{-1}\|\le\frac1{1-\kappa}$. Put $T=(I-S)^{-1}K$; then $T$ is continuous and compact, as the composition of a continuous map with a compact one. To see that $T(C)\subseteq C$, fix $y \in C$ and let $z$ be the fixed point of the contraction $x\mapsto Sx+Ky$, which exists by the contraction principle; starting the iteration from any $x_0 \in C$, each iterate lies in $C$ by the hypothesis $Sx+Ky \in C$, so the limit $z$ lies in $C$ (which is closed). Hence $T(C)\subseteq C$, Schauder's theorem gives $z=Tz$, and $z=Tz$ means $(I-S)z=Kz$, that is, $z=Sz+Kz$.
 
 **Theorem (Rothe).** Let $C$ be a nonempty closed bounded convex subset of $X$ with $0 \in C$, and let $T:C\to X$ be continuous and compact with $T(\partial C)\subseteq C$. Then $T$ has a fixed point in $C$.
 
@@ -151,7 +151,7 @@ and the **Hausdorff measure of noncompactness** is $\beta(A)=\inf\{r>0:A \text{ 
 
 **Theorem (Darbo–Sadovskii).** Let $C$ be nonempty, closed, bounded and convex and let $T:C\to C$ be continuous and condensing. Then $T$ has a fixed point.
 
-*Proof (sketch).* One constructs a transfinite sequence of closed convex sets $C_\alpha$ by $C_{\alpha+1}=\overline{\mathrm{conv}}\,T(C_\alpha)$, starting from $C_0=C$, and shows that the ordinal sequence must stabilise at a set with $\alpha=0$, that is, at a compact convex set, on which Schauder's theorem applies. The construction is the standard transfinite one of the theory of condensing maps, cited below. $\square$
+*Proof (sketch).* One constructs a transfinite sequence of closed convex sets $C_\alpha$ by $C_{\alpha+1}=\overline{\mathrm{conv}}\,T(C_\alpha)$, starting from $C_0=C$, and shows that the ordinal sequence must stabilise at a set with $\alpha=0$, that is, at a compact convex set, on which Schauder's theorem applies. The construction is the standard transfinite one of the theory of condensing maps, cited below.
 
 A compact map is condensing, so the theorem contains Schauder's; the value of the extension is that many integral operators and many perturbations of the identity are condensing without being compact, and the theory applies to them.
 
@@ -175,7 +175,7 @@ $$
 
 (v) **Excision.** The index depends only on the values of $T$ on a neighbourhood of the set of its fixed points in $\Omega$.
 
-*Proof.* The statements are the degree properties of the previous section translated by the definition, since $i(T,\Omega)=\deg(I-T,\Omega,0)$ and a fixed point of $T$ is a zero of $I-T$. $\square$
+*Proof.* The statements are the degree properties of the previous section translated by the definition, since $i(T,\Omega)=\deg(I-T,\Omega,0)$ and a fixed point of $T$ is a zero of $I-T$.
 
 **Example (the index of a nondegenerate fixed point).** If $T$ is $C^1$ near a fixed point $x_0$, if $I-T'(x_0)$ is invertible, and if $x_0$ is the only fixed point in a small ball $\Omega$, then
 

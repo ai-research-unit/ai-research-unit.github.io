@@ -107,7 +107,7 @@ A catalogue denotes its objects by name rather than by symbol. The symbols that 
 | $\mathbb{D}$ | The split-complex numbers, $\mathbb{R}[j]/(j^2-1) \cong \mathbb{R}\times\mathbb{R}$ |
 | $\mathbb{D}'$ | The dual numbers, $\mathbb{R}[\varepsilon]/(\varepsilon^2)$ |
 | $e_{\pm}$ | The idempotents $\tfrac12(1 \pm j)$ of $\mathbb{D}$ |
-| $\mathfrak{m}$ | The maximal ideal of a local ring |
+| $\mathrm{M}$ | The maximal ideal of a local ring |
 | $\mathbb{Z}/n\mathbb{Z}$, $\mathbb{F}_p$ | Residue ring, prime field |
 | $k[x]/(x^n)$, $\mathbb{F}_2[C_2]$ | Truncated polynomial ring, a local group ring |
 | $\mathbb{Z}_{(p)}$, $k[[x]]$ | Localisations and power series rings, discrete valuation rings |

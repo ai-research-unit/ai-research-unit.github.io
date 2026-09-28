@@ -41,7 +41,7 @@ $$
 \Lambda^n f(e_J) = \sum_{|I| = n} A_{I,J}\, f_I.
 $$
 
-**Proof.** Expand each $f(e_{j_q}) = \sum_i a_{i,j_q} f_i$ and use multilinearity of the wedge: the coefficient of $f_{i_1} \wedge \cdots \wedge f_{i_n}$ is the alternating sum $\sum_{\sigma \in S_n} \operatorname{sgn}(\sigma) \prod_q a_{i_q, j_{\sigma(q)}}$, which is the Leibniz expansion of the minor. $\square$
+**Proof.** Expand each $f(e_{j_q}) = \sum_i a_{i,j_q} f_i$ and use multilinearity of the wedge: the coefficient of $f_{i_1} \wedge \cdots \wedge f_{i_n}$ is the alternating sum $\sum_{\sigma \in S_n} \operatorname{sgn}(\sigma) \prod_q a_{i_q, j_{\sigma(q)}}$, which is the Leibniz expansion of the minor.
 
 ## The Determinant
 
@@ -81,7 +81,7 @@ This is the **Leibniz formula**. It is a polynomial with integer coefficients in
 
 **(c)** $\det(A^{\mathsf{T}}) = \det(A)$.
 
-**Proof.** (a) Each term of the Leibniz formula contains exactly one entry from each column, so the formula is linear in each column; exchanging two columns permutes the summation index $\sigma$ by a transposition and multiplies each term by $-1$. (b) is immediate from the formula. (c) The transpose relabels $\sigma$ by $\sigma^{-1}$, and $\operatorname{sgn}(\sigma^{-1}) = \operatorname{sgn}(\sigma)$. $\square$
+**Proof.** (a) Each term of the Leibniz formula contains exactly one entry from each column, so the formula is linear in each column; exchanging two columns permutes the summation index $\sigma$ by a transposition and multiplies each term by $-1$. (b) is immediate from the formula. (c) The transpose relabels $\sigma$ by $\sigma^{-1}$, and $\operatorname{sgn}(\sigma^{-1}) = \operatorname{sgn}(\sigma)$.
 
 ### Multiplicativity and Invertibility
 
@@ -93,7 +93,7 @@ $$
 
 Moreover $f$ is invertible if and only if $\det(f)$ is a unit of $R$, and then $\det(f^{-1}) = \det(f)^{-1}$.
 
-**Proof.** Functoriality of the top exterior power gives $\Lambda^m(g \circ f) = \Lambda^m g \circ \Lambda^m f$, and on the rank-one module $\Lambda^m M$ these are multiplications by $\det(g \circ f)$, $\det(g)$, and $\det(f)$ respectively, so the scalars multiply. If $f$ is invertible, applying the first part to $g = f^{-1}$ and $g \circ f = \mathrm{id}$ gives $\det(f)\det(f^{-1}) = \det(\mathrm{id}) = 1$. Conversely, if $\det(f)$ is a unit, then the adjugate identity $f \circ \operatorname{adj}(f) = \det(f)\,\mathrm{id}_M$ exhibits an inverse: $\operatorname{adj}(f)$ is the endomorphism whose matrix entries are the $(m-1)$-minors of the matrix of $f$, with alternating signs, and it is defined over any commutative ring. $\square$
+**Proof.** Functoriality of the top exterior power gives $\Lambda^m(g \circ f) = \Lambda^m g \circ \Lambda^m f$, and on the rank-one module $\Lambda^m M$ these are multiplications by $\det(g \circ f)$, $\det(g)$, and $\det(f)$ respectively, so the scalars multiply. If $f$ is invertible, applying the first part to $g = f^{-1}$ and $g \circ f = \mathrm{id}$ gives $\det(f)\det(f^{-1}) = \det(\mathrm{id}) = 1$. Conversely, if $\det(f)$ is a unit, then the adjugate identity $f \circ \operatorname{adj}(f) = \det(f)\,\mathrm{id}_M$ exhibits an inverse: $\operatorname{adj}(f)$ is the endomorphism whose matrix entries are the $(m-1)$-minors of the matrix of $f$, with alternating signs, and it is defined over any commutative ring.
 
 **Remark.** Over a general commutative ring one cannot conclude that a non-invertible endomorphism has $\det(f) = 0$: only that $\det(f)$ is a non-unit. For example, over $R = \mathbb{Z}$ the map of $\mathbb{Z}$ given by multiplication by $2$ has determinant $2$, which is neither a unit nor zero. This is the point at which the determinant over a ring differs from the determinant over a field.
 
@@ -107,7 +107,7 @@ $$
 
 where $\operatorname{tr}(\Lambda^k f)$ denotes the trace of the induced endomorphism of $\Lambda^k M$ and $\operatorname{tr}(\Lambda^0 f) = 1$.
 
-**Proof.** Both sides are polynomials with integer coefficients in the matrix entries of $f$. It therefore suffices to prove the identity after base change to a field over which the matrix has a full set of eigenvalues, for instance over the algebraic closure of the fraction field of the polynomial ring in the entries. There $f$ is triangularisable, with eigenvalues $\lambda_1, \ldots, \lambda_m$; the eigenvalues of $\Lambda^k f$ are the products $\lambda_{i_1} \cdots \lambda_{i_k}$ over increasing $k$-tuples, so $\operatorname{tr}(\Lambda^k f)$ is the elementary symmetric function $e_k(\lambda)$ of the eigenvalues and $\det(\mathrm{id} + tf) = \prod_{i=1}^{m}(1 + t\lambda_i) = \sum_{k=0}^{m} e_k(\lambda) t^k$. $\square$
+**Proof.** Both sides are polynomials with integer coefficients in the matrix entries of $f$. It therefore suffices to prove the identity after base change to a field over which the matrix has a full set of eigenvalues, for instance over the algebraic closure of the fraction field of the polynomial ring in the entries. There $f$ is triangularisable, with eigenvalues $\lambda_1, \ldots, \lambda_m$; the eigenvalues of $\Lambda^k f$ are the products $\lambda_{i_1} \cdots \lambda_{i_k}$ over increasing $k$-tuples, so $\operatorname{tr}(\Lambda^k f)$ is the elementary symmetric function $e_k(\lambda)$ of the eigenvalues and $\det(\mathrm{id} + tf) = \prod_{i=1}^{m}(1 + t\lambda_i) = \sum_{k=0}^{m} e_k(\lambda) t^k$.
 
 Setting $t = -1/s$ and clearing denominators recovers the characteristic polynomial $\det(s\,\mathrm{id} - f) = s^m \sum_k \operatorname{tr}(\Lambda^k f)(-1/s)^k$; the coefficients are the traces of the induced maps on the exterior powers.
 
@@ -137,7 +137,7 @@ $$
 
 between the algebra of alternating forms under the wedge product and the exterior algebra of the dual module.
 
-**Proof.** A form of degree $n$ corresponds to a linear functional on $\Lambda^n M$, hence to an element of $(\Lambda^n M)^*$; over a free module of finite rank the natural map $\Lambda^n(M^*) \to (\Lambda^n M)^*$ sending $\varphi_1 \wedge \cdots \wedge \varphi_n$ to the form $(x_1, \ldots, x_n) \mapsto \det(\varphi_p(x_q))$ is an isomorphism, by the basis theorem of *Exterior Powers* applied to the dual basis. Multiplicativity of the correspondence is the definition of the wedge product of forms. $\square$
+**Proof.** A form of degree $n$ corresponds to a linear functional on $\Lambda^n M$, hence to an element of $(\Lambda^n M)^*$; over a free module of finite rank the natural map $\Lambda^n(M^*) \to (\Lambda^n M)^*$ sending $\varphi_1 \wedge \cdots \wedge \varphi_n$ to the form $(x_1, \ldots, x_n) \mapsto \det(\varphi_p(x_q))$ is an isomorphism, by the basis theorem of *Exterior Powers* applied to the dual basis. Multiplicativity of the correspondence is the definition of the wedge product of forms.
 
 **Definition.** The **wedge product of forms** $\alpha \wedge \beta \in \operatorname{Alt}^{p+q}(M; R)$ of forms $\alpha$ of degree $p$ and $\beta$ of degree $q$ is the form
 
@@ -157,7 +157,7 @@ $$
 
 **Proposition.** The pullback is contravariantly functorial: $\mathrm{id}^* = \mathrm{id}$ and $(g \circ f)^* = f^* \circ g^*$.
 
-**Proof.** Both are immediate from the definition; the reversal of order is the usual contravariance of a hom functor. $\square$
+**Proof.** Both are immediate from the definition; the reversal of order is the usual contravariance of a hom functor.
 
 ### The Prototype of Differential Forms
 
@@ -175,7 +175,7 @@ $$
 
 the sum over the increasing $n$-element subsets $K \subseteq \{1, \ldots, m\}$.
 
-**Proof.** Let $f : R^s \to R^m$ and $g : R^m \to R^r$ be the linear maps with matrices $B$ and $A$, so that $AB$ is the matrix of $g \circ f$. By the minor proposition, the matrix entries of $\Lambda^n(g \circ f)$ are the minors of $AB$, and by functoriality $\Lambda^n(g \circ f) = \Lambda^n g \circ \Lambda^n f$, whose matrix entries are sums of products of the minors of $A$ and of $B$ indexed by the intermediate basis wedges. Equating the two expressions gives the formula. $\square$
+**Proof.** Let $f : R^s \to R^m$ and $g : R^m \to R^r$ be the linear maps with matrices $B$ and $A$, so that $AB$ is the matrix of $g \circ f$. By the minor proposition, the matrix entries of $\Lambda^n(g \circ f)$ are the minors of $AB$, and by functoriality $\Lambda^n(g \circ f) = \Lambda^n g \circ \Lambda^n f$, whose matrix entries are sums of products of the minors of $A$ and of $B$ indexed by the intermediate basis wedges. Equating the two expressions gives the formula.
 
 **Corollary.** If $m = r = s = n$, Cauchy–Binet reduces to $\det(AB) = \det(A)\det(B)$.
 
@@ -199,7 +199,7 @@ $$
 \omega(f(e_1), \ldots, f(e_m)) = \det(f).
 $$
 
-**Proof.** The form $\omega$ is a basis of the one-dimensional space of alternating $m$-forms; the pullback $f^*\omega = \det(f)\omega$ by definition of the determinant, and evaluating at the basis gives the claim. $\square$
+**Proof.** The form $\omega$ is a basis of the one-dimensional space of alternating $m$-forms; the pullback $f^*\omega = \det(f)\omega$ by definition of the determinant, and evaluating at the basis gives the claim.
 
 **Example (alternating forms of degree $2$).** An alternating $2$-form on a free module with basis $(e_1, \ldots, e_m)$ is determined by its values $\omega_{ij} = \omega(e_i, e_j)$ on pairs, and these satisfy $\omega_{ij} = -\omega_{ji}$ and $\omega_{ii} = 0$. In matrix form $\Omega = (\omega_{ij})$ is **alternating**, $\Omega^{\mathsf{T}} = -\Omega$, and the form is
 

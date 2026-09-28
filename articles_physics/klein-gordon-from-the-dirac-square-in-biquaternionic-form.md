@@ -94,7 +94,7 @@ $$
 
 Three features of this reduction deserve to be named, because they are what the algebra contributes and not merely what it transcribes.
 
-First, the reduction uses the **two different gradients**. It is the passage from $\tilde{\nabla}$ to $\bar{\tilde{\nabla}}$ — from the operator to its quaternion conjugate — that produces a central scalar. This is the algebraic content of the matrix statement that a square root must be paired with its conjugate to square to a scalar: $\not\partial$ alone squares to $g^{\mu\nu}\partial_\mu\partial_\nu = -\Box$, and it is the anticommutator that makes the result central; in the algebra the pairing $\tilde{\nabla},\bar{\tilde{\nabla}}$ is the concrete form of that anticommutator. The square is the norm form $N(\tilde{\nabla}) = \tilde{\nabla}\bar{\tilde{\nabla}}$, exactly as $\tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$ is the norm form of a biquaternion — the observation the Klein–Gordon article makes about its own operator.
+First, the reduction uses the **two different gradients**. It is the passage from $\tilde{\nabla}$ to $\bar{\tilde{\nabla}}$ — from the operator to its quaternion conjugate — that produces a central scalar. This is the algebraic content of the matrix statement that a square root must be paired with its conjugate to square to a scalar: $\not\partial$ alone squares to $g^{\mu\nu}\partial_\mu\partial_\nu = -\Box$, and it is the anticommutator that makes the result central; in the algebra the pairing $\tilde{\nabla},\bar{\tilde{\nabla}}$ is the concrete form of that anticommutator. The square is the biquaternion norm $N(\tilde{\nabla}) = \tilde{\nabla}\bar{\tilde{\nabla}}$, exactly as $\tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$ is the biquaternion norm of a biquaternion — the observation the Klein–Gordon article makes about its own operator.
 
 Second, the reduction eliminates **both** members of the pair at once. It is not that one chiral half obeys Klein–Gordon and the other does not; the off-diagonal mass couples them so that squaring forces each half onto the same second-order shell. This is the biquaternion reading of the matrix statement that the mass term is off-diagonal: a diagonal mass term would square to a diagonal mass term, but the off-diagonal form is what makes the cross terms cancel between the two members and leaves the single central operator $\Box$.
 
@@ -223,7 +223,7 @@ $$
 \Box \longmapsto \frac{\omega^2}{c^2} - \mathbf{k}^2 .
 $$
 
-The norm form of the wave biquaternion is
+The biquaternion norm of the wave biquaternion is
 
 $$
 N(\tilde{K}) = \tilde{K}\bar{\tilde{K}} = \left(i\frac{\omega}{c}\right)^2 + \mathbf{k}^2 = -\frac{\omega^2}{c^2} + \mathbf{k}^2 = -\Box ,
@@ -237,7 +237,7 @@ $$
 \omega^2 = \mathbf{k}^2c^2 + \mu^2c^2,
 $$
 
-which is $E^2 = \mathbf{p}^2c^2 + m^2c^4$ under $E = \hbar\omega$, $\mathbf{p} = \hbar\mathbf{k}$ and $\mu = mc/\hbar$. The sign is the series sign and is consistent with the Klein–Gordon article: the operator $\Box - \mu^2$ vanishes on the same shell on which the norm form equals $-\mu^2$.
+which is $E^2 = \mathbf{p}^2c^2 + m^2c^4$ under $E = \hbar\omega$, $\mathbf{p} = \hbar\mathbf{k}$ and $\mu = mc/\hbar$. The sign is the series sign and is consistent with the Klein–Gordon article: the operator $\Box - \mu^2$ vanishes on the same shell on which the biquaternion norm equals $-\mu^2$.
 
 The kernel of the square is larger than the kernel of the pair, and the difference is the information the square discards. For a fixed three-momentum $\mathbf{p}$, a **scalar** field obeying the Klein–Gordon equation has a two-dimensional complex solution space, spanned by the positive- and negative-frequency modes $e^{\mp i(Et-\mathbf{p}\cdot\mathbf{x})}$. A **spinor-valued** field obeying the same second-order equation has one such pair for each of its four components, hence an eight-dimensional complex solution space at fixed $\mathbf{p}$, since $(\Box - \mu^2)$ acts on components without mixing them. The first-order Dirac equation selects a **four**-dimensional subspace of it: the two positive-frequency spinors $u^{(r)}(\mathbf{p})e^{-i(Et-\mathbf{p}\cdot\mathbf{x})}$ and the two negative-frequency spinors $v^{(r)}(\mathbf{p})e^{+i(Et-\mathbf{p}\cdot\mathbf{x})}$, with $r = 1,2$. Every one of the four is annihilated by $\Box - \mu^2$ — this was checked componentwise on a superposition of two plane waves — but the converse fails: a general second-order solution is a sum of **eight** independent modes with arbitrary coefficients, and the four linear relations $(\not\partial - m)\psi = 0$ cut that space down to the four-dimensional first-order solution space. The square therefore has a kernel twice as large as the pair's; it is a necessary condition, not a sufficient one.
 
@@ -289,7 +289,7 @@ The square carries the mass shell $\tilde{K}\bar{\tilde{K}} = -\mu^2$, hence $E^
 | $\bar{\tilde{\nabla}}$ | Quaternion conjugate gradient |
 | $\Box = \tilde{\nabla}\bar{\tilde{\nabla}} = \bar{\tilde{\nabla}}\tilde{\nabla} = \partial_{ict}^2 + \Delta$ | d'Alembertian, series convention |
 | $\tilde{K} = i\omega/c\,e_0 + \mathbf{k}$, $\tilde{Q} = ict\,e_0 + \mathbf{x}$ | Four-wavevector and four-position |
-| $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$ | Norm form |
+| $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$ | Biquaternion norm |
 | $\tilde{K}\bar{\tilde{K}} = -m^2c^2/\hbar^2$ | Mass-shell condition |
 | $\mu = mc/\hbar$ | Mass parameter of the operator pair (inverse reduced Compton wavelength) |
 | $\gamma^\mu$, $\{\gamma^\mu,\gamma^\nu\} = 2g^{\mu\nu}I_4$ | Dirac matrices and Clifford metric |

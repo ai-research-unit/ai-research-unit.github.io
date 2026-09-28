@@ -105,7 +105,7 @@ $$
 
 for almost every $x$, and for every $x$ if $f$ is continuous.
 
-**Proof.** For $\epsilon > 0$ define $f_\epsilon(x) = \int \hat{f}(\xi) e^{-\pi \epsilon^2 \xi^2} e^{2\pi i \xi x} d\xi$. Since $\hat{f} \in L^1$, convolution with the Gaussian $G_\epsilon(x) = \epsilon^{-1} e^{-\pi x^2/\epsilon^2}$ gives $f_\epsilon = f * G_\epsilon$. As $(G_\epsilon)$ is an approximate identity, $f_\epsilon \to f$ in $L^1$ and at Lebesgue points, while dominated convergence gives $f_\epsilon(x) \to \int \hat{f}(\xi) e^{2\pi i \xi x} d\xi$ at every $x$. $\square$
+**Proof.** For $\epsilon > 0$ define $f_\epsilon(x) = \int \hat{f}(\xi) e^{-\pi \epsilon^2 \xi^2} e^{2\pi i \xi x} d\xi$. Since $\hat{f} \in L^1$, convolution with the Gaussian $G_\epsilon(x) = \epsilon^{-1} e^{-\pi x^2/\epsilon^2}$ gives $f_\epsilon = f * G_\epsilon$. As $(G_\epsilon)$ is an approximate identity, $f_\epsilon \to f$ in $L^1$ and at Lebesgue points, while dominated convergence gives $f_\epsilon(x) \to \int \hat{f}(\xi) e^{2\pi i \xi x} d\xi$ at every $x$.
 
 ### The Plancherel Theorem
 
@@ -115,7 +115,7 @@ $$
 \mathcal{F} : L^2(\mathbb{R}) \to L^2(\mathbb{R}).
 $$
 
-**Proof.** For $f \in L^1 \cap L^2$, put $\tilde{f}(x) = \overline{f(-x)}$. Then $\widehat{f * \tilde{f}} = |\hat{f}|^2$, so inversion at $0$ gives $\int |\hat{f}|^2 = (f * \tilde{f})(0) = \int |f|^2$; polarization gives the inner-product identity. Since $L^1 \cap L^2$ is dense and $\mathcal{F}$ is an isometry there, it extends uniquely to an isometry of $L^2$ whose range is closed and dense. $\square$
+**Proof.** For $f \in L^1 \cap L^2$, put $\tilde{f}(x) = \overline{f(-x)}$. Then $\widehat{f * \tilde{f}} = |\hat{f}|^2$, so inversion at $0$ gives $\int |\hat{f}|^2 = (f * \tilde{f})(0) = \int |f|^2$; polarization gives the inner-product identity. Since $L^1 \cap L^2$ is dense and $\mathcal{F}$ is an isometry there, it extends uniquely to an isometry of $L^2$ whose range is closed and dense.
 
 For $f \in L^2(\mathbb{R})$ the transform is the $L^2$ limit of the truncated integrals, and $\mathcal{F}^2 f(x) = f(-x)$, $\mathcal{F}^{-1} = \mathcal{F}^3$, $\mathcal{F}^4 = \mathrm{Id}$.
 
@@ -187,7 +187,7 @@ $$
 \widehat{f * g}(\xi) = \hat{f}(\xi) \hat{g}(\xi).
 $$
 
-**Proof.** By Fubini, $\widehat{f * g}(\xi) = \int g(y) e^{-2\pi i \xi \cdot y} \big( \int f(x - y) e^{-2\pi i \xi \cdot (x - y)} dx \big) dy$, and the inner integral is $\hat{f}(\xi)$. $\square$
+**Proof.** By Fubini, $\widehat{f * g}(\xi) = \int g(y) e^{-2\pi i \xi \cdot y} \big( \int f(x - y) e^{-2\pi i \xi \cdot (x - y)} dx \big) dy$, and the inner integral is $\hat{f}(\xi)$.
 
 The theorem extends to $L^2$ and to tempered distributions in the sense described below.
 
@@ -241,7 +241,7 @@ $$
 |\{x : Mf(x) > \lambda\}| \le \frac{C_n}{\lambda} \|f\|_1.
 $$
 
-**Proof.** For each $x$ with $Mf(x) > \lambda$ choose a ball $B(x, r_x)$ with average exceeding $\lambda$. These balls cover the level set; a Vitali covering argument extracts a disjoint subcollection $B_j$ whose $3$-fold dilates cover it. Hence $|\{Mf > \lambda\}| \le 3^n \sum_j |B_j| \le 3^n \lambda^{-1} \|f\|_1$. $\square$
+**Proof.** For each $x$ with $Mf(x) > \lambda$ choose a ball $B(x, r_x)$ with average exceeding $\lambda$. These balls cover the level set; a Vitali covering argument extracts a disjoint subcollection $B_j$ whose $3$-fold dilates cover it. Hence $|\{Mf > \lambda\}| \le 3^n \sum_j |B_j| \le 3^n \lambda^{-1} \|f\|_1$.
 
 **Theorem.** For $1 < p \le \infty$ there is $C_{n,p}$ with $\|Mf\|_p \le C_{n,p} \|f\|_p$.
 
@@ -257,7 +257,7 @@ $$
 
 for almost every $x$.
 
-**Proof.** It suffices to prove the statement for $f \in L^1$. For $\epsilon > 0$ write $f = g + h$ with $g$ continuous and $\|h\|_1 < \epsilon$. For $g$ the statement holds at every point, while the maximal inequality bounds the measure of the set where the oscillation of the averages of $h$ exceeds $\lambda$ by $C_n \|h\|_1/\lambda$. Letting $\epsilon \to 0$ gives the result. $\square$
+**Proof.** It suffices to prove the statement for $f \in L^1$. For $\epsilon > 0$ write $f = g + h$ with $g$ continuous and $\|h\|_1 < \epsilon$. For $g$ the statement holds at every point, while the maximal inequality bounds the measure of the set where the oscillation of the averages of $h$ exceeds $\lambda$ by $C_n \|h\|_1/\lambda$. Letting $\epsilon \to 0$ gives the result.
 
 A point where the conclusion holds is a **Lebesgue point** of $f$. The maximal function gives the quantitative form of the theorem.
 
@@ -288,7 +288,7 @@ $$
 \hat{K}_\epsilon(\xi) = -i \, \mathrm{sgn}(\xi) \left( 1 - \frac{2}{\pi} \mathrm{Si}(2\pi |\xi| \epsilon) \right),
 $$
 
-where $\mathrm{Si}(t) = \int_0^t \frac{\sin s}{s} ds$ is the sine integral. These multipliers are bounded uniformly in $\epsilon$ and converge pointwise to $-i \, \mathrm{sgn}(\xi)$; Plancherel gives $\|H_\epsilon f\|_2 \le C \|f\|_2$, and the convolution theorem with dominated convergence identifies the limit on a dense subset of $L^2$. $\square$
+where $\mathrm{Si}(t) = \int_0^t \frac{\sin s}{s} ds$ is the sine integral. These multipliers are bounded uniformly in $\epsilon$ and converge pointwise to $-i \, \mathrm{sgn}(\xi)$; Plancherel gives $\|H_\epsilon f\|_2 \le C \|f\|_2$, and the convolution theorem with dominated convergence identifies the limit on a dense subset of $L^2$.
 
 ### Basic Properties
 
@@ -326,7 +326,7 @@ $$
 \|\hat{f}\|_q \le \|f\|_p.
 $$
 
-**Proof.** The transform is bounded $L^1 \to L^\infty$ with norm $1$ and $L^2 \to L^2$ with norm $1$ by Plancherel. Riesz–Thorin interpolation between $(p_0, q_0) = (1, \infty)$ and $(p_1, q_1) = (2, 2)$ gives the result. $\square$
+**Proof.** The transform is bounded $L^1 \to L^\infty$ with norm $1$ and $L^2 \to L^2$ with norm $1$ by Plancherel. Riesz–Thorin interpolation between $(p_0, q_0) = (1, \infty)$ and $(p_1, q_1) = (2, 2)$ gives the result.
 
 The endpoints are sharp: at $p = 1$ the transform is bounded but need not be integrable, and at $p = 2$ it is an isometry. For $p > 2$ the inequality fails, because the Fourier transform of an $L^p$ function need not lie in $L^q$; the defining integral need not converge absolutely, so the transform is taken in the distributional sense.
 
@@ -398,7 +398,7 @@ The **homogeneous** Sobolev space $\dot{H}^s$ uses the seminorm $\|f\|_{\dot{H}^
 
 **Theorem.** If $s > n/2$, then every class in $H^s(\mathbb{R}^n)$ has a representative in $C_0(\mathbb{R}^n)$, and $\|f\|_\infty \le C_{n,s} \|f\|_{H^s}$.
 
-**Proof.** By Cauchy–Schwarz, $\int |\hat{f}| = \int (1 + |\xi|^2)^{-s/2} (1 + |\xi|^2)^{s/2} |\hat{f}| \le \big( \int (1 + |\xi|^2)^{-s} d\xi \big)^{1/2} \|f\|_{H^s}$, and the first factor is finite exactly when $2s > n$. $\square$
+**Proof.** By Cauchy–Schwarz, $\int |\hat{f}| = \int (1 + |\xi|^2)^{-s/2} (1 + |\xi|^2)^{s/2} |\hat{f}| \le \big( \int (1 + |\xi|^2)^{-s} d\xi \big)^{1/2} \|f\|_{H^s}$, and the first factor is finite exactly when $2s > n$.
 
 ### The Riesz Potential
 
@@ -429,7 +429,7 @@ $$
 \le 2 \left( \int_{\mathbb{R}} x^2 |f|^2 \right)^{\!1/2} \left( \int_{\mathbb{R}} |f'|^2 \right)^{\!1/2},
 $$
 
-and $\|f'\|_2 = 2\pi \|\xi \hat{f}\|_2$ by Plancherel and the differentiation rule. $\square$
+and $\|f'\|_2 = 2\pi \|\xi \hat{f}\|_2$ by Plancherel and the differentiation rule.
 
 Equality holds if and only if $f(x) = c \, e^{-a x^2}$ for some $a > 0$ and $c \in \mathbb{C}$, so the Gaussian is the unique minimizer of the uncertainty product.
 
@@ -437,7 +437,7 @@ Equality holds if and only if $f(x) = c \, e^{-a x^2}$ for some $a > 0$ and $c \
 
 **Theorem.** There is no nonzero $f \in L^2(\mathbb{R})$ such that both $f$ and $\hat{f}$ are compactly supported.
 
-**Proof.** If $f$ is compactly supported, then $\hat{f}(\xi) = \int f(x) e^{-2\pi i \xi x} dx$ extends to an entire function of the complex variable $\xi$; if $\hat{f}$ were also compactly supported, the identity theorem for holomorphic functions would force $\hat{f} \equiv 0$. $\square$
+**Proof.** If $f$ is compactly supported, then $\hat{f}(\xi) = \int f(x) e^{-2\pi i \xi x} dx$ extends to an entire function of the complex variable $\xi$; if $\hat{f}$ were also compactly supported, the identity theorem for holomorphic functions would force $\hat{f} \equiv 0$.
 
 **Theorem (Amrein–Berthier–Benedicks).** If $f \in L^2(\mathbb{R})$ and both $f$ and $\hat{f}$ are supported on sets of finite Lebesgue measure, then $f = 0$.
 

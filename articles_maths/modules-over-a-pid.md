@@ -21,7 +21,7 @@ $$
 
 **Proposition.** $M_{\mathrm{tor}}$ is a submodule of $M$, and $M/M_{\mathrm{tor}}$ is torsion-free.
 
-*Proof.* If $rm=0$ and $sn=0$ with $r,s \neq 0$, then $rs(m+n)=s(rm)+r(sn)=0$ and $rs \neq 0$ because $R$ is a domain, so $m+n \in M_{\mathrm{tor}}$; and $r(am)=a(rm)=0$ for $a \in R$. For the quotient, if the class of $m$ is torsion then $rm \in M_{\mathrm{tor}}$, so $s(rm)=0$ for some $s \neq 0$, whence $(sr)m=0$ and $m \in M_{\mathrm{tor}}$. $\square$
+*Proof.* If $rm=0$ and $sn=0$ with $r,s \neq 0$, then $rs(m+n)=s(rm)+r(sn)=0$ and $rs \neq 0$ because $R$ is a domain, so $m+n \in M_{\mathrm{tor}}$; and $r(am)=a(rm)=0$ for $a \in R$. For the quotient, if the class of $m$ is torsion then $rm \in M_{\mathrm{tor}}$, so $s(rm)=0$ for some $s \neq 0$, whence $(sr)m=0$ and $m \in M_{\mathrm{tor}}$.
 
 The domain hypothesis is exactly what fails over a general commutative ring: in $\mathbb{Z}/6\mathbb{Z}$ as a module over itself, the elements $2$ and $3$ are torsion but their sum $5$ is a unit and is not, as noted. The module $M$ is **torsion-free** if $M_{\mathrm{tor}}=0$ and **torsion** if $M=M_{\mathrm{tor}}$; the quotient $M/M_{\mathrm{tor}}$ is always torsion-free.
 
@@ -33,7 +33,7 @@ Both are ideals, and $\operatorname{Ann}(M)$ is the kernel of the ring homomorph
 
 **Proposition.** Over a principal ideal domain the following hold. (i) Every ideal is principal, so $\operatorname{Ann}(m)=(a)$ and $Rm \cong R/(a)$ via $r \mapsto rm$. (ii) $Rm$ is free of rank $1$ if and only if $\operatorname{Ann}(m)=0$, and otherwise $Rm$ is torsion. (iii) The annihilator of a finitely generated module contains the product of the annihilators of a generating set, hence is nonzero for a torsion module.
 
-*Proof.* (i) The first isomorphism theorem applied to $R \to Rm$, $r \mapsto rm$, whose kernel is $\operatorname{Ann}(m)$. (ii) $R \cong Rm$ exactly when the kernel is zero. (iii) If $M=Rm_1+\cdots+Rm_k$ and $a_i m_i=0$ with $a_i \neq 0$, then $a_1\cdots a_k$ annihilates every generator, hence $M$. $\square$
+*Proof.* (i) The first isomorphism theorem applied to $R \to Rm$, $r \mapsto rm$, whose kernel is $\operatorname{Ann}(m)$. (ii) $R \cong Rm$ exactly when the kernel is zero. (iii) If $M=Rm_1+\cdots+Rm_k$ and $a_i m_i=0$ with $a_i \neq 0$, then $a_1\cdots a_k$ annihilates every generator, hence $M$.
 
 So cyclic modules over a principal ideal domain are exactly the modules $R/(a)$, with $a$ well defined up to multiplication by a unit, and the torsion cyclic modules are those with $a \neq 0$. The unit ambiguity is unavoidable and is the reason the invariant factors below are unique only up to units.
 
@@ -49,7 +49,7 @@ equivalently the set of elements annihilated by some power of $p$.
 
 **Proposition.** Each $M_p$ is a submodule; if $p \neq q$ are distinct primes then $M_p \cap M_q=0$; and if $M$ is a finitely generated torsion module then only finitely many $M_p$ are nonzero and $M=\bigoplus_p M_p$.
 
-*Proof.* That $M_p$ is a submodule and the intersection statement are immediate from unique factorisation: an element of $M_p\cap M_q$ is annihilated by coprime powers of $p$ and $q$, hence by a unit, hence is zero. For the sum, if $M$ is torsion and finitely generated, its annihilator $(a)$ is nonzero; the primes with $M_p \neq 0$ divide $a$, so there are finitely many. That every torsion element lies in the sum uses Bézout: if $rm=0$ and $r=\prod p_i^{n_i}$, the Chinese remainder theorem gives $m=\sum_i m_i$ with $p_i^{n_i}m_i=0$, so $m_i \in M_{p_i}$. $\square$
+*Proof.* That $M_p$ is a submodule and the intersection statement are immediate from unique factorisation: an element of $M_p\cap M_q$ is annihilated by coprime powers of $p$ and $q$, hence by a unit, hence is zero. For the sum, if $M$ is torsion and finitely generated, its annihilator $(a)$ is nonzero; the primes with $M_p \neq 0$ divide $a$, so there are finitely many. That every torsion element lies in the sum uses Bézout: if $rm=0$ and $r=\prod p_i^{n_i}$, the Chinese remainder theorem gives $m=\sum_i m_i$ with $p_i^{n_i}m_i=0$, so $m_i \in M_{p_i}$.
 
 The decomposition into primary components is the first step of the structure theorem: it separates the primes, and within one prime the classification is that of a finite abelian $p$-group.
 
@@ -59,7 +59,7 @@ The decomposition into primary components is the first step of the structure the
 
 **Theorem.** Let $R$ be a principal ideal domain. Every submodule of a free $R$-module is free, of rank at most the rank of the ambient module.
 
-*Proof.* Let $F$ be free with basis $u_1,\dots,u_n$ and let $N \subseteq F$. Induct on $n$. For $n=0$ there is nothing to prove. For $n \ge 1$ let $F_{n-1}=\langle u_1,\dots,u_{n-1}\rangle$ and let $\pi:F \to Ru_n \cong R$ be the projection onto the last coordinate. The image $\pi(N)$ is an ideal of $R$, hence $\pi(N)=(a)$ for some $a \in R$. If $a=0$ then $N=N \cap F_{n-1}$ and induction applies. Otherwise choose $x \in N$ with $\pi(x)=a$ and consider $N \cap F_{n-1}$, which is free of rank at most $n-1$ by induction, with basis $v_1,\dots,v_k$. Every $y \in N$ has $\pi(y)=ra$ for some $r \in R$, and $y-rx \in N \cap F_{n-1}$, so $y \in (N \cap F_{n-1})+Rx$; the sum is direct because $Rx \cap F_{n-1} \subseteq \ker \pi$ and $Rx \cap \ker\pi=0$ by $\pi(x)=a \neq 0$. Hence $v_1,\dots,v_k,x$ is a basis of $N$, and $N$ is free. $\square$
+*Proof.* Let $F$ be free with basis $u_1,\dots,u_n$ and let $N \subseteq F$. Induct on $n$. For $n=0$ there is nothing to prove. For $n \ge 1$ let $F_{n-1}=\langle u_1,\dots,u_{n-1}\rangle$ and let $\pi:F \to Ru_n \cong R$ be the projection onto the last coordinate. The image $\pi(N)$ is an ideal of $R$, hence $\pi(N)=(a)$ for some $a \in R$. If $a=0$ then $N=N \cap F_{n-1}$ and induction applies. Otherwise choose $x \in N$ with $\pi(x)=a$ and consider $N \cap F_{n-1}$, which is free of rank at most $n-1$ by induction, with basis $v_1,\dots,v_k$. Every $y \in N$ has $\pi(y)=ra$ for some $r \in R$, and $y-rx \in N \cap F_{n-1}$, so $y \in (N \cap F_{n-1})+Rx$; the sum is direct because $Rx \cap F_{n-1} \subseteq \ker \pi$ and $Rx \cap \ker\pi=0$ by $\pi(x)=a \neq 0$. Hence $v_1,\dots,v_k,x$ is a basis of $N$, and $N$ is free.
 
 The theorem is false without the principal ideal hypothesis, as the ideal $(x,y) \subseteq k[x,y]$ shows, and it is the reason presentations over a principal ideal domain are finite matrices with a completely computable normal form.
 
@@ -67,7 +67,7 @@ The theorem is false without the principal ideal hypothesis, as the ideal $(x,y)
 
 **Corollary.** Over a principal ideal domain, if $N \subseteq F$ are free of finite ranks $m$ and $n$ then $m \le n$. Moreover $N$ is a direct summand of $F$ if and only if $F/N$ is torsion-free, and $F/N$ is torsion if and only if $m=n$. The two conditions are opposite: equal ranks do not make $N$ a summand, and a summand need not have full rank.
 
-*Proof.* The structure theorem writes $F/N \cong R^{n-m} \oplus T$ with $T$ torsion, since $F/N$ is finitely generated and $N$ is free of rank $m$; tensoring $0 \to N \to F \to F/N \to 0$ with the flat module $K$ gives $m \le n$. From the display, $F/N$ is torsion precisely when $n-m=0$, that is when $m=n$, and it is torsion-free precisely when $T=0$, that is when $F/N \cong R^{n-m}$ is free. If $F=N \oplus P$ then $P \cong F/N$ is free, being a submodule of a free module; conversely if $F/N$ is torsion-free then it is free, so the surjection $F \to F/N$ splits and $N$ is a summand. Equal rank alone gives no splitting: for $F=R$ and $N=2R$ one has $m=n=1$ and $F/N=R/2R$ is torsion, while $N=R \oplus 0 \subseteq R^2$ is a summand with $m=1<n=2$ and $F/N \cong R$ free. $\square$
+*Proof.* The structure theorem writes $F/N \cong R^{n-m} \oplus T$ with $T$ torsion, since $F/N$ is finitely generated and $N$ is free of rank $m$; tensoring $0 \to N \to F \to F/N \to 0$ with the flat module $K$ gives $m \le n$. From the display, $F/N$ is torsion precisely when $n-m=0$, that is when $m=n$, and it is torsion-free precisely when $T=0$, that is when $F/N \cong R^{n-m}$ is free. If $F=N \oplus P$ then $P \cong F/N$ is free, being a submodule of a free module; conversely if $F/N$ is torsion-free then it is free, so the surjection $F \to F/N$ splits and $N$ is a summand. Equal rank alone gives no splitting: for $F=R$ and $N=2R$ one has $m=n=1$ and $F/N=R/2R$ is torsion, while $N=R \oplus 0 \subseteq R^2$ is a summand with $m=1<n=2$ and $F/N \cong R$ free.
 
 **Corollary (index).** Let $L' \subseteq L$ be free of the same finite rank $n$ over a principal ideal domain, and let $A$ be the matrix of the inclusion with respect to bases of $L'$ and $L$. Then $L/L'$ is torsion if and only if $\det A \neq 0$, and then
 
@@ -113,7 +113,7 @@ $$
 M \cong R^n/K \cong R^n / \langle d_1 e_1,\dots,d_m e_m\rangle \cong R/(d_1)\oplus\cdots\oplus R/(d_m)\oplus R^{n-m}.
 $$
 
-Discarding the $d_i$ that are units, for which $R/(d_i)=0$, and taking $r=n-m$ gives the decomposition of the theorem, and the divisibility of the surviving diagonal entries is inherited from the Smith form. This proves existence. $\square$
+Discarding the $d_i$ that are units, for which $R/(d_i)=0$, and taking $r=n-m$ gives the decomposition of the theorem, and the divisibility of the surviving diagonal entries is inherited from the Smith form. This proves existence.
 
 ### Uniqueness
 
@@ -143,7 +143,7 @@ $$
 \dim_{k(p)}\bigl(p^{n-1}T_p/p^nT_p\bigr)=\#\{j : e_j \ge n\},
 $$
 
-which depends only on $T_p$, hence only on $M$. Subtracting the dimensions for consecutive $n$ recovers the multiset $\{e_j\}$, hence $T_p$ up to isomorphism. Since this holds for every prime and only finitely many are nonzero, $T$, and therefore $M$, is determined. $\square$
+which depends only on $T_p$, hence only on $M$. Subtracting the dimensions for consecutive $n$ recovers the multiset $\{e_j\}$, hence $T_p$ up to isomorphism. Since this holds for every prime and only finitely many are nonzero, $T$, and therefore $M$, is determined.
 
 The same argument applied with $n-1$ replaced by $0$ gives the useful formula for the number of cyclic summands of $T_p$, namely $\dim_{k(p)}(T_p/pT_p)$.
 
@@ -243,7 +243,7 @@ The first summand is one-dimensional over $K$, the second two-dimensional, and t
 
 **Corollary.** Over a principal ideal domain, a finitely generated module is free if and only if it is torsion-free.
 
-*Proof.* A free module is torsion-free. Conversely, if $M$ is finitely generated and torsion-free then $k=0$ in the structure theorem, so $M \cong R^r$. $\square$
+*Proof.* A free module is torsion-free. Conversely, if $M$ is finitely generated and torsion-free then $k=0$ in the structure theorem, so $M \cong R^r$.
 
 This is a genuinely principal-ideal statement: over $k[x,y]$ the ideal $(x,y)$ is finitely generated and torsion-free but not free.
 
@@ -251,7 +251,7 @@ This is a genuinely principal-ideal statement: over $k[x,y]$ the ideal $(x,y)$ i
 
 **Corollary.** Over a principal ideal domain: (i) every submodule of a finitely generated module is finitely generated, so $R$ is Noetherian; (ii) a submodule of a free module of rank $n$ has rank at most $n$; (iii) if $M$ is generated by $n$ elements then every submodule of $M$ can be generated by $n$ elements; (iv) the rank function is additive on direct sums.
 
-*Proof.* (i) A submodule of a quotient of $R^n$ is the image of a submodule of $R^n$, which is free, hence finitely generated. (ii) is the rank corollary above. (iii) A submodule of $M=R^n/K$ is $N/K$ for a submodule $N \subseteq R^n$ with $K \subseteq N$; the free module $N$ has rank at most $n$, so $N/K$ is generated by at most $n$ elements. (iv) Immediate on ranks. $\square$
+*Proof.* (i) A submodule of a quotient of $R^n$ is the image of a submodule of $R^n$, which is free, hence finitely generated. (ii) is the rank corollary above. (iii) A submodule of $M=R^n/K$ is $N/K$ for a submodule $N \subseteq R^n$ with $K \subseteq N$; the free module $N$ has rank at most $n$, so $N/K$ is generated by at most $n$ elements. (iv) Immediate on ranks.
 
 ### The Classification of Finitely Generated Abelian Groups
 

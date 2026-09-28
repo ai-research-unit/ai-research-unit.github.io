@@ -33,7 +33,7 @@ $$
 \Lambda^n T(e_1 \wedge \cdots \wedge e_n) = Te_1 \wedge \cdots \wedge Te_n = (\det A)\, e_1 \wedge \cdots \wedge e_n,
 $$
 
-which is the classical determinantal description of the top exterior power; since $\Lambda^n V$ is one-dimensional, this determines $\Lambda^n T$ completely. A nonzero element of $\Lambda^n V$ is $t\,e_1\wedge\cdots\wedge e_n$ with $t \neq 0$, so the map $T$ multiplies the class of the oriented basis by the sign of $\det T$; the two signs correspond to the two components. $\square$
+which is the classical determinantal description of the top exterior power; since $\Lambda^n V$ is one-dimensional, this determines $\Lambda^n T$ completely. A nonzero element of $\Lambda^n V$ is $t\,e_1\wedge\cdots\wedge e_n$ with $t \neq 0$, so the map $T$ multiplies the class of the oriented basis by the sign of $\det T$; the two signs correspond to the two components.
 
 The statement is the algebraic reason the orientation sign exists: an orientation of $V$ is the same thing as one of the two components of the determinant line, and the sign of the determinant of an automorphism measures whether it interchanges them. Over a general field the same construction gives the parity of an automorphism whenever the two scalars $1$ and $-1$ are distinct, that is whenever the characteristic is not two.
 
@@ -89,7 +89,7 @@ where $n_1, n_2$ are the dimensions of $q, q'$ and $n = n_1 + n_2$. The sign $(-
 
 **Proposition.** Let $V$ be oriented and let $q$ be non-degenerate. Then the reflections $\tau_v$ are orientation-reversing and every element of $\operatorname{SO}(V, q)$ is orientation-preserving. A product of $k$ reflections is orientation-preserving exactly when $k$ is even.
 
-**Proof.** Each reflection has $\det \tau_v = -1$ by *Isometries and Orthogonal Transformations*, and the determinant is multiplicative, so a product of $k$ reflections has determinant $(-1)^k$. Over $\mathbb{R}$ this determinant is the orientation sign. $\square$
+**Proof.** Each reflection has $\det \tau_v = -1$ by *Isometries and Orthogonal Transformations*, and the determinant is multiplicative, so a product of $k$ reflections has determinant $(-1)^k$. Over $\mathbb{R}$ this determinant is the orientation sign.
 
 The proposition is the bridge between the two descriptions of the special orthogonal group: it is both the kernel of the determinant and the group of even reflection products, and in the definite real case it is the group of orientation-preserving isometries.
 
@@ -113,7 +113,7 @@ By the Cartan–Dieudonné theorem every isometry is a product of reflections, a
 
 **Proposition.** Let $\tau_u$ and $\tau_v$ be reflections in non-isotropic vectors $u, v$ that span a non-degenerate plane. Then $\tau_u \tau_v$ acts as the identity on the hyperplane $u^\perp \cap v^\perp$ and is a rotation on the plane $\operatorname{span}\{u, v\}$.
 
-**Proof.** Both reflections fix $u^\perp \cap v^\perp$ pointwise, so the product does; the plane $\operatorname{span}\{u, v\}$ is invariant because each reflection preserves it, and the restriction has determinant $(-1)^2 = 1$ on that plane. Since the plane is non-degenerate, $\operatorname{span}\{u,v\}$ and $u^\perp \cap v^\perp$ are complementary. $\square$
+**Proof.** Both reflections fix $u^\perp \cap v^\perp$ pointwise, so the product does; the plane $\operatorname{span}\{u, v\}$ is invariant because each reflection preserves it, and the restriction has determinant $(-1)^2 = 1$ on that plane. Since the plane is non-degenerate, $\operatorname{span}\{u,v\}$ and $u^\perp \cap v^\perp$ are complementary.
 
 ## The Definite Case and Angles
 
@@ -133,7 +133,7 @@ $$
 
 with equality if and only if $u$ and $v$ are linearly dependent.
 
-**Proof.** For all real $t$ the form is positive definite, so $q(u + tv) = q(u) + 2tB(u, v) + t^2 q(v)$ is non-negative. If $q(v) \neq 0$, the discriminant of this quadratic in $t$ is $4B(u, v)^2 - 4q(u)q(v) \leq 0$, giving the inequality; equality forces a double root, that is $u + tv = 0$ for some $t$. If $q(v) = 0$ then $v = 0$ and the statement is trivial. $\square$
+**Proof.** For all real $t$ the form is positive definite, so $q(u + tv) = q(u) + 2tB(u, v) + t^2 q(v)$ is non-negative. If $q(v) \neq 0$, the discriminant of this quadratic in $t$ is $4B(u, v)^2 - 4q(u)q(v) \leq 0$, giving the inequality; equality forces a double root, that is $u + tv = 0$ for some $t$. If $q(v) = 0$ then $v = 0$ and the statement is trivial.
 
 ### Angles
 
@@ -163,11 +163,11 @@ $$
 
 the unit circle, and $\operatorname{SO}(2)$ is abelian.
 
-**Proof.** Matrix multiplication gives $R(\theta)R(\phi) = R(\theta + \phi)$ and $R(\theta)^{-1} = R(-\theta)$, so the map is a homomorphism; the kernel is the set of $\theta$ with $\cos\theta = 1$ and $\sin\theta = 0$, namely $2\pi\mathbb{Z}$. An orientation-preserving orthogonal $2 \times 2$ matrix has columns that are orthonormal and positively oriented, hence is of the form $R(\theta)$; this proves surjectivity. $\square$
+**Proof.** Matrix multiplication gives $R(\theta)R(\phi) = R(\theta + \phi)$ and $R(\theta)^{-1} = R(-\theta)$, so the map is a homomorphism; the kernel is the set of $\theta$ with $\cos\theta = 1$ and $\sin\theta = 0$, namely $2\pi\mathbb{Z}$. An orientation-preserving orthogonal $2 \times 2$ matrix has columns that are orthonormal and positively oriented, hence is of the form $R(\theta)$; this proves surjectivity.
 
 **Proposition.** Every element of $SO(2)$ is a product of two reflections, and the angle of the rotation is twice the angle between the two mirror lines.
 
-**Proof.** Let $\tau_\phi$ denote the reflection of the plane in the line at angle $\phi$ from the positive $x$-axis. A computation gives $\tau_\phi \tau_\psi = R(2(\phi - \psi))$, so the product of two reflections is a rotation through twice the angle between the lines, and every angle is achieved. $\square$
+**Proof.** Let $\tau_\phi$ denote the reflection of the plane in the line at angle $\phi$ from the positive $x$-axis. A computation gives $\tau_\phi \tau_\psi = R(2(\phi - \psi))$, so the product of two reflections is a rotation through twice the angle between the lines, and every angle is achieved.
 
 The parametrisation by the circle is the plane case of the general fact that a compact connected abelian Lie group is a torus; the higher-dimensional tori appear.
 
@@ -183,7 +183,7 @@ $$
 
 and $m$ is the order of $H$.
 
-**Proof.** Let $A = \{\theta \in \mathbb{R}/2\pi\mathbb{Z} : R(\theta) \in H\}$, a finite subgroup of the circle group. If $A \neq 0$ let $\alpha$ be its smallest positive element; for any $\beta \in A$ write $\beta = k\alpha + \rho$ with $k$ an integer and $0 \leq \rho < \alpha$, so that $\rho = \beta - k\alpha \in A$, and minimality of $\alpha$ forces $\rho = 0$. Hence $A = \mathbb{Z}\alpha$, and finiteness forces $m\alpha \equiv 0$ modulo $2\pi$ for some $m \geq 1$, so $\alpha = 2\pi/m$ and $A$ has order $m$. $\square$
+**Proof.** Let $A = \{\theta \in \mathbb{R}/2\pi\mathbb{Z} : R(\theta) \in H\}$, a finite subgroup of the circle group. If $A \neq 0$ let $\alpha$ be its smallest positive element; for any $\beta \in A$ write $\beta = k\alpha + \rho$ with $k$ an integer and $0 \leq \rho < \alpha$, so that $\rho = \beta - k\alpha \in A$, and minimality of $\alpha$ forces $\rho = 0$. Hence $A = \mathbb{Z}\alpha$, and finiteness forces $m\alpha \equiv 0$ modulo $2\pi$ for some $m \geq 1$, so $\alpha = 2\pi/m$ and $A$ has order $m$.
 
 **Proposition.** Every finite subgroup of $\operatorname{O}(2)$ is cyclic or dihedral. In the second case the rotations in it form a cyclic subgroup of index two, and a reflection $s$ conjugates $R(\theta)$ to $R(-\theta)$.
 
@@ -193,7 +193,7 @@ $$
 s\,R(\theta)\,s^{-1} = \begin{pmatrix} \cos\theta & \sin\theta \\ -\sin\theta & \cos\theta\end{pmatrix} = R(-\theta),
 $$
 
-so $s$ conjugates the cyclic group to itself, and $H$ is the dihedral group of order $2m$. $\square$
+so $s$ conjugates the cyclic group to itself, and $H$ is the dihedral group of order $2m$.
 
 ## The Normal Form of a Rotation
 
@@ -221,11 +221,11 @@ $$
 B(v_\lambda, w_\mu) = B(Tv_\lambda, Tw_\mu) = \lambda\mu\,B(v_\lambda, w_\mu)
 $$
 
-so $B(v_\lambda, w_\mu) = 0$ whenever $\lambda\mu \neq 1$. For two distinct conjugate pairs the eigenvalues are $\lambda = e^{i\theta}$ and $\mu = e^{i\theta'}$ with $\theta \neq \theta'$ in $(0, \pi)$, so $\lambda\bar\mu = e^{i(\theta - \theta')} \neq 1$ and therefore $B(v_\lambda, \bar w_\mu) = 0$; conjugating this real-bilinear relation gives $B(\bar v_\lambda, w_\mu) = 0$ as well, and the two identities together give $B(x, y) = 0$ for every $x$ in the real plane of the pair $\lambda$ and every $y$ in the real plane of the pair $\mu$, since those planes are spanned by the real and imaginary parts of $v_\lambda$ and $w_\mu$. The same argument with $\mu = \pm 1$ shows that the planes are orthogonal to the eigenspaces $V_1$ and $V_{-1}$. The space therefore decomposes as an orthogonal direct sum of the planes $W$ and of the two eigenspaces, and the restriction of the positive definite form to each summand is again positive definite. Choose orthonormal bases: on $V_1$ the map is the identity, on $V_{-1}$ it is minus the identity, and on each plane $W$ it is the planar rotation $R(\theta_j)$. The determinant of $T$ is the product of the determinants of these restrictions, hence equals $(-1)^{k}$ where $k = \dim V_{-1}$; since $\det T = 1$ the number $k$ is even, and pairing the basis vectors of $V_{-1}$ exhibits that eigenspace as a sum of blocks $R(\pi)$. The multiset of angles is read off from the eigenvalues of $T$, which are invariants of $T$. $\square$
+so $B(v_\lambda, w_\mu) = 0$ whenever $\lambda\mu \neq 1$. For two distinct conjugate pairs the eigenvalues are $\lambda = e^{i\theta}$ and $\mu = e^{i\theta'}$ with $\theta \neq \theta'$ in $(0, \pi)$, so $\lambda\bar\mu = e^{i(\theta - \theta')} \neq 1$ and therefore $B(v_\lambda, \bar w_\mu) = 0$; conjugating this real-bilinear relation gives $B(\bar v_\lambda, w_\mu) = 0$ as well, and the two identities together give $B(x, y) = 0$ for every $x$ in the real plane of the pair $\lambda$ and every $y$ in the real plane of the pair $\mu$, since those planes are spanned by the real and imaginary parts of $v_\lambda$ and $w_\mu$. The same argument with $\mu = \pm 1$ shows that the planes are orthogonal to the eigenspaces $V_1$ and $V_{-1}$. The space therefore decomposes as an orthogonal direct sum of the planes $W$ and of the two eigenspaces, and the restriction of the positive definite form to each summand is again positive definite. Choose orthonormal bases: on $V_1$ the map is the identity, on $V_{-1}$ it is minus the identity, and on each plane $W$ it is the planar rotation $R(\theta_j)$. The determinant of $T$ is the product of the determinants of these restrictions, hence equals $(-1)^{k}$ where $k = \dim V_{-1}$; since $\det T = 1$ the number $k$ is even, and pairing the basis vectors of $V_{-1}$ exhibits that eigenspace as a sum of blocks $R(\pi)$. The multiset of angles is read off from the eigenvalues of $T$, which are invariants of $T$.
 
 **Corollary.** For a positive definite form the group $\operatorname{SO}(V, q)$ is path-connected, and $\operatorname{O}(V, q)$ has exactly two components, the cosets of $\operatorname{SO}(V, q)$.
 
-**Proof.** With the normal form in hand, the path $t \mapsto \operatorname{diag}(R(t\theta_1), \ldots, R(t\theta_m), 1, \ldots, 1)$ for $t \in [0, 1]$ runs from the identity to $T$ inside $\operatorname{SO}(V, q)$. Hence $\operatorname{SO}(V, q)$ is path-connected, and since a reflection exists for $n \geq 1$ the determinant is surjective onto $\{\pm 1\}$ and $\operatorname{O}(V, q)$ has two components. $\square$
+**Proof.** With the normal form in hand, the path $t \mapsto \operatorname{diag}(R(t\theta_1), \ldots, R(t\theta_m), 1, \ldots, 1)$ for $t \in [0, 1]$ runs from the identity to $T$ inside $\operatorname{SO}(V, q)$. Hence $\operatorname{SO}(V, q)$ is path-connected, and since a reflection exists for $n \geq 1$ the determinant is surjective onto $\{\pm 1\}$ and $\operatorname{O}(V, q)$ has two components.
 
 **Remark.** In dimension three the theorem reads $m = 1$ and $n - 2m = 1$: a rotation fixes a line pointwise and rotates the orthogonal plane, which is Euler's theorem below. In dimension four the two possibilities $m = 1$ and $m = 2$ occur; the rotations with $m = 2$ have no fixed vector, which is the case mentioned in the next section. The normal form is the definite case of the Cartan decomposition of an orthogonal group, and the indefinite analogue has hyperbolic blocks $H(u)$ in place of the circular blocks $R(\theta)$.
 
@@ -243,7 +243,7 @@ $$
 T^T(T - I) = I - T^T = -(T - I)^T, \qquad \det\bigl(T^T(T - I)\bigr) = \det(T - I) = (-1)^{3}\det(T - I) = -\det(T - I),
 $$
 
-using $\det T = 1$ and $\det T^T = 1$ for the left side and $n = 3$ for the right. Hence $2\det(T - I) = 0$, and since $2 \neq 0$ in $\mathbb{R}$, $\det(T - I) = 0$: there is a nonzero $v$ with $Tv = v$. If $v$ is chosen with $q(v) = 1$, then $T$ preserves $v^\perp$ (as in *Isometries and Orthogonal Transformations*), and the restriction of $T$ to the plane $v^\perp$ is an element of $\operatorname{SO}(2)$, hence a rotation through some angle. $\square$
+using $\det T = 1$ and $\det T^T = 1$ for the left side and $n = 3$ for the right. Hence $2\det(T - I) = 0$, and since $2 \neq 0$ in $\mathbb{R}$, $\det(T - I) = 0$: there is a nonzero $v$ with $Tv = v$. If $v$ is chosen with $q(v) = 1$, then $T$ preserves $v^\perp$ (as in *Isometries and Orthogonal Transformations*), and the restriction of $T$ to the plane $v^\perp$ is an element of $\operatorname{SO}(2)$, hence a rotation through some angle.
 
 **Remark.** The argument uses that the dimension is odd; in even dimension a rotation need not have an axis. A rotation of $\mathbb{R}^4$ can be a product of two independent planar rotations with no fixed vector, which is the geometric content of the double-cover phenomena treated with the quaternions.
 
@@ -255,7 +255,7 @@ $$
 T(x) = x\cos\theta + (v \times x)\sin\theta + v\,B(v, x)(1 - \cos\theta),
 $$
 
-where $\times$ denotes the vector product and $B$ the Euclidean inner product. For $v = (0, 0, 1)$ this reduces to the block form $\operatorname{diag}(R(\theta), 1)$. The vector product is itself a bilinear form on $\mathbb{R}^3$ with values in $\mathbb{R}^3$, alternating in its two arguments, and it singles out the three-dimensional case among the vector products; the corresponding Lie-theoretic statement is the isomorphism $\mathfrak{so}(3) \cong \mathbb{R}^3$.
+where $\times$ denotes the vector product and $B$ the Euclidean inner product. For $v = (0, 0, 1)$ this reduces to the block form $\operatorname{diag}(R(\theta), 1)$. The vector product is itself a bilinear form on $\mathbb{R}^3$ with values in $\mathbb{R}^3$, alternating in its two arguments, and it singles out the three-dimensional case among the vector products; the corresponding Lie-theoretic statement is the isomorphism $\mathrm{SO}(3) \cong \mathbb{R}^3$.
 
 **Remark.** The unit quaternions form a group that double covers $\operatorname{SO}(3)$, the axis-angle data being recovered from the real and vector parts of a unit quaternion; the description of this cover, and its complex and indefinite analogues, belongs to the applications of the Clifford layer of this category, written in parallel with this article.
 

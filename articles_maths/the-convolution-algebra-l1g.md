@@ -49,7 +49,7 @@ For $1 \leq p \leq \infty$ the space $L^p(G)$ is taken with respect to $dx$; sin
 
 **Theorem (continuity of translation).** For $1 \leq p < \infty$ and $f \in L^p(G)$, the maps $x \mapsto L_x f$ and $x \mapsto R_x f$ of $G$ into $L^p(G)$ are continuous, where $(L_xf)(y) = f(x^{-1}y)$ and $(R_xf)(y) = f(yx)$. Both are continuous unitary representations of $G$ on $L^2(G)$, the left and right regular representations.
 
-**Proof.** For $f \in C_c(G)$ the statements are uniform continuity of a compactly supported continuous function together with the compactness of its support; for general $f$ they follow by density of $C_c(G)$ in $L^p(G)$ and the isometry $\|L_xf\|_p = \|f\|_p$, $\|R_xf\|_p = \|f\|_p\Delta(x)^{-1/p}$ for the right translation. Unitarity of $L$ on $L^2(G)$ is the left invariance of $dx$, and unitarity of $R$ follows from the right invariance of $d\mu_R = \Delta^{-1}dx$, equivalently from the computation $\|R_x f\|_2^2 = \int|f(yx)|^2dy = \Delta(x)^{-1}\|f\|_2^2$ compensated by the weight in the inner product of the right regular representation; on a unimodular group both are directly unitary. $\square$
+**Proof.** For $f \in C_c(G)$ the statements are uniform continuity of a compactly supported continuous function together with the compactness of its support; for general $f$ they follow by density of $C_c(G)$ in $L^p(G)$ and the isometry $\|L_xf\|_p = \|f\|_p$, $\|R_xf\|_p = \|f\|_p\Delta(x)^{-1/p}$ for the right translation. Unitarity of $L$ on $L^2(G)$ is the left invariance of $dx$, and unitarity of $R$ follows from the right invariance of $d\mu_R = \Delta^{-1}dx$, equivalently from the computation $\|R_x f\|_2^2 = \int|f(yx)|^2dy = \Delta(x)^{-1}\|f\|_2^2$ compensated by the weight in the inner product of the right regular representation; on a unimodular group both are directly unitary.
 
 **Remark (the two regular representations).** The left regular representation $\lambda = L$ and the right regular representation $\rho = R$ commute, and on $L^2(G)$ they generate the regular representation of $G \times G$; this is the operator-algebraic frame of the Plancherel theory.
 
@@ -81,13 +81,13 @@ $$
 \|f*g\|_1 \leq \int_G\int_G |f(y)||g(y^{-1}x)|\,dy\,dx = \int_G|f(y)|\Bigl(\int_G|g(y^{-1}x)|\,dx\Bigr)dy = \|f\|_1\|g\|_1 .
 $$
 
-The general case is the Riesz–Thorin interpolation of the three elementary cases $(p,q,r) = (1,1,1)$, $(1,\infty,\infty)$ and $(\infty,\infty,\infty)$ with a change of variables; on a unimodular group the middle estimate is $\|f*g\|_\infty \leq \|f\|_1\|g\|_\infty$, which is immediate, and the interpolation is the standard Young inequality. The details are in the references. $\square$
+The general case is the Riesz–Thorin interpolation of the three elementary cases $(p,q,r) = (1,1,1)$, $(1,\infty,\infty)$ and $(\infty,\infty,\infty)$ with a change of variables; on a unimodular group the middle estimate is $\|f*g\|_\infty \leq \|f\|_1\|g\|_\infty$, which is immediate, and the interpolation is the standard Young inequality. The details are in the references.
 
 ### Associativity, Involution and the Banach Algebra Structure
 
 **Theorem.** The convolution on $L^1(G)$ is associative, bilinear and satisfies the norm inequality; the map $(f,g) \mapsto f*g$ is continuous and $L^1(G)$ is a Banach algebra with $\|f*g\|_1 \leq \|f\|_1\|g\|_1$. It has no identity when $G$ is not discrete and has an identity only in the discrete case, where the identity is $\delta_e$.
 
-**Proof.** Associativity is Fubini's theorem applied to the triple integral defining $(f*g)*h$ and $f*(g*h)$ and the change of variable that moves the compositional structure to the middle variable; the argument is the same as in the compact case of *Analysis on Compact Groups*, §Convolution and the Banach Algebra $L^1(K)$. If $u$ is a two-sided identity then $u*f = f$ for $f \in C_c(G)$; testing at points and using approximate identity arguments forces $u$ to be the point mass $\delta_e$, which is in $L^1(G)$ only when $G$ is discrete. $\square$
+**Proof.** Associativity is Fubini's theorem applied to the triple integral defining $(f*g)*h$ and $f*(g*h)$ and the change of variable that moves the compositional structure to the middle variable; the argument is the same as in the compact case of *Analysis on Compact Groups*, §Convolution and the Banach Algebra $L^1(K)$. If $u$ is a two-sided identity then $u*f = f$ for $f \in C_c(G)$; testing at points and using approximate identity arguments forces $u$ to be the point mass $\delta_e$, which is in $L^1(G)$ only when $G$ is discrete.
 
 **Theorem (adjoint of a convolution).** For $f, g \in L^1(G)$ the adjoints of the operators of convolution are
 
@@ -115,7 +115,7 @@ $$
 (g^* * f^*)(x) = \int_G \Delta(z)^{-1}\overline{g(z^{-1})}\,\Delta(z^{-1}x)^{-1}\overline{f(x^{-1}z)}\,dz = \Delta(x)^{-1}\int_G \overline{f(x^{-1}z)}\,\overline{g(z^{-1})}\,dz ,
 $$
 
-the two modular factors cancelling to $\Delta(x)^{-1}$. The two expressions agree, which is the identity. The computation is standard and is in the references. $\square$
+the two modular factors cancelling to $\Delta(x)^{-1}$. The two expressions agree, which is the identity. The computation is standard and is in the references.
 
 **Remark (why the modular function cannot be avoided).** On a non-unimodular group the naive involution $f \mapsto \overline{f(x^{-1})}$ fails to be isometric: on the affine group it changes the norm by the factor $\Delta$, since $\int|f(x^{-1})|dx = \int|f(x)|\Delta(x)^{-1}dx$ by the inversion identity. The factor $\Delta(x)^{-1}$ in $f^*$ is exactly what restores the $L^1$ norm, and it is the reason the convolution algebra of a non-unimodular group is a Banach $*$-algebra rather than a symmetric one in the naive sense. For abelian and compact groups $\Delta \equiv 1$ and the formula reduces to the familiar ones of *Harmonic Analysis on Groups* and *Analysis on Compact Groups*.
 
@@ -135,7 +135,7 @@ $$
 (u_\alpha * f)(x) - f(x) = \int_{U_\alpha} u_\alpha(y)\bigl(f(y^{-1}x) - f(x)\bigr)\,dy
 $$
 
-so $\|u_\alpha * f - f\|_1 \leq \int_{U_\alpha}u_\alpha(y)\|L_yf - f\|_1\,dy \leq \sup_{y \in U_\alpha}\|L_yf - f\|_1$, which tends to $0$ by the continuity of translation. The right-handed statement follows by writing $f * u_\alpha = (u_\alpha^* * f^*)^*$ with $u_\alpha^*$ supported in $U_\alpha^{-1}$, or by the same argument with the right regular representation; taking symmetric neighbourhoods and symmetric $u_\alpha$ handles both at once. The bound $\|u_\alpha\|_1 = 1$ is the normalisation. $\square$
+so $\|u_\alpha * f - f\|_1 \leq \int_{U_\alpha}u_\alpha(y)\|L_yf - f\|_1\,dy \leq \sup_{y \in U_\alpha}\|L_yf - f\|_1$, which tends to $0$ by the continuity of translation. The right-handed statement follows by writing $f * u_\alpha = (u_\alpha^* * f^*)^*$ with $u_\alpha^*$ supported in $U_\alpha^{-1}$, or by the same argument with the right regular representation; taking symmetric neighbourhoods and symmetric $u_\alpha$ handles both at once. The bound $\|u_\alpha\|_1 = 1$ is the normalisation.
 
 ### Reiter's Property and Amenability
 
@@ -149,7 +149,7 @@ uniformly for $g$ in compact subsets of $G$, where $L_g u_\alpha(x) = u_\alpha(g
 
 **Theorem (Reiter).** A locally compact group $G$ is amenable if and only if it has property $P_1$; equivalently, if and only if $L^1(G)$ has an approximate identity that is approximately invariant under left translation.
 
-**Proof sketch.** Amenability is the existence of an invariant mean on $L^\infty(G)$, the existence of Følner sets for the discrete case and the equivalent formulations of *Amenable Groups*, which states the group-theoretic criteria and defers the analytic ones to this article. If $(u_\alpha)$ satisfies $P_1$, the functionals $f \mapsto \int f\,u_\alpha\,dx$ on $L^\infty(G)$ are means whose limits along a subnet are invariant, giving amenability; conversely, an invariant mean is approximated weakly by absolutely continuous means, and a convexity argument (the mean is a fixed point of the action on the convex set of means, and the absolutely continuous means are weak-$*$ dense) produces a net satisfying $P_1$. The proof is Reiter's and is quoted from the literature. $\square$
+**Proof sketch.** Amenability is the existence of an invariant mean on $L^\infty(G)$, the existence of Følner sets for the discrete case and the equivalent formulations of *Amenable Groups*, which states the group-theoretic criteria and defers the analytic ones to this article. If $(u_\alpha)$ satisfies $P_1$, the functionals $f \mapsto \int f\,u_\alpha\,dx$ on $L^\infty(G)$ are means whose limits along a subnet are invariant, giving amenability; conversely, an invariant mean is approximated weakly by absolutely continuous means, and a convexity argument (the mean is a fixed point of the action on the convex set of means, and the absolutely continuous means are weak-$*$ dense) produces a net satisfying $P_1$. The proof is Reiter's and is quoted from the literature.
 
 **Remark (the invariant approximate identity as the analytic form of amenability).** The contrast with the always-existing approximate identity of the previous theorem is the point: every $L^1(G)$ has a *normalised* approximate identity, but only for an amenable $G$ can it be chosen approximately **invariant** under left translation. The convolution algebra is thus the analytic locus of amenability, and the weak-containment statement "the trivial representation is weakly contained in the regular representation" is its representation-theoretic form; that statement belongs to *Noncommutative Harmonic Analysis*.
 
@@ -167,7 +167,7 @@ $$
 
 the integral converging in the strong operator topology. The bijection respects direct sums, subrepresentations, irreducibility and unitary equivalence, and it satisfies $\|\pi(f)\| \leq \|f\|_1$ and $\pi(L_x f) = U(x)\pi(f)$, $\pi(R_x f) = \pi(f)U(x)^{-1}$.
 
-**Proof sketch.** For $f \in L^1(G)$ the map $f \mapsto \int f(g)U(g)dg$ is a bounded linear map into the bounded operators, with the norm bound by $\|f\|_1$, and the multiplicativity is the convolution theorem in integrated form; the *-property uses the modular factor in $f^*$ and the unitarity of $U$. Conversely, given a nondegenerate representation, the operators $U(x)$ are recovered as the strong limits of $\pi(f)$ for $f$ an approximate identity concentrated near $x$, or equivalently by the formula $U(x)\pi(f) = \pi(L_xf)$ extended to $H$ by nondegeneracy; continuity of $x \mapsto U(x)$ and the representation identities follow from the continuity of translation in $L^1(G)$. The details are standard. $\square$
+**Proof sketch.** For $f \in L^1(G)$ the map $f \mapsto \int f(g)U(g)dg$ is a bounded linear map into the bounded operators, with the norm bound by $\|f\|_1$, and the multiplicativity is the convolution theorem in integrated form; the *-property uses the modular factor in $f^*$ and the unitarity of $U$. Conversely, given a nondegenerate representation, the operators $U(x)$ are recovered as the strong limits of $\pi(f)$ for $f$ an approximate identity concentrated near $x$, or equivalently by the formula $U(x)\pi(f) = \pi(L_xf)$ extended to $H$ by nondegeneracy; continuity of $x \mapsto U(x)$ and the representation identities follow from the continuity of translation in $L^1(G)$. The details are standard.
 
 **Corollary (the representation theory is algebra).** The unitary representation theory of $G$ is recovered from the Banach $*$-algebra $L^1(G)$ alone, and the irreducible unitary representations of $G$ correspond to the nondegenerate irreducible $*$-representations of $L^1(G)$. This is the sense in which harmonic analysis is the representation theory of the convolution algebra, and it is the reason the articles of this block can pass freely between the two languages. The algebraic objects are Part II's; the analytic passage is here.
 
@@ -183,7 +183,7 @@ and the **full group $\mathrm{C}^*$-algebra** $C^*(G)$ is the completion of $L^1
 
 **Theorem.** (a) The map $L^1(G) \to C^*_r(G)$ is a surjective $*$-homomorphism with dense image, so $C^*_r(G)$ is the smallest $\mathrm{C}^*$-algebra generated by the regular representation. (b) The supremum defining the enveloping norm is finite, since $\|\pi(f)\| \leq \|f\|_1$, and $C^*(G)$ is a $\mathrm{C}^*$-algebra; there is a canonical surjection $C^*(G) \to C^*_r(G)$. (c) $\pi$ is a representation of $C^*(G)$ restricted to $L^1(G)$; the reduced representation is the composition with the quotient map precisely when the group is amenable, and otherwise the map is not injective. (d) For abelian $G$, $C^*(G) \cong C_0(G^\vee)$.
 
-**Pro.** (a) and (b) are the properties of the enveloping $\mathrm{C}^*$-norm and the density of $L^1(G)$; (c) is the statement that the regular representation is faithful on $C^*(G)$ exactly in the amenable case (the weak containment of the trivial representation in the regular representation), treated; (d) is the Gelfand–Naimark theorem for the commutative $\mathrm{C}^*$-algebra $L^1(G)$ of *Harmonic Analysis on Groups*, §The Algebra of the Transform. $\square$
+**Pro.** (a) and (b) are the properties of the enveloping $\mathrm{C}^*$-norm and the density of $L^1(G)$; (c) is the statement that the regular representation is faithful on $C^*(G)$ exactly in the amenable case (the weak containment of the trivial representation in the regular representation), treated; (d) is the Gelfand–Naimark theorem for the commutative $\mathrm{C}^*$-algebra $L^1(G)$ of *Harmonic Analysis on Groups*, §The Algebra of the Transform.
 
 ### The Group von Neumann Algebra
 
@@ -191,7 +191,7 @@ and the **full group $\mathrm{C}^*$-algebra** $C^*(G)$ is the completion of $L^1
 
 **Theorem.** $L(G)$ is a von Neumann algebra containing the image of $L^1(G)$; it is the double commutant of the image of the group, $L(G) = \lambda(G)''$, and it equals the commutant of the right regular representation, $L(G) = \rho(G)'$. When $G$ is discrete, $L(G)$ is finite, with faithful normal tracial weight $\tau(a) = \langle a\delta_e,\delta_e\rangle$, and it is a factor exactly when every nontrivial conjugacy class of $G$ is infinite (the **icc** condition); for $G$ discrete non-abelian free the factor is of type $\mathrm{II}_1$. For compact $G$, $L(G)\cong\bigoplus_{\pi\in\operatorname{Irr}(G)}\operatorname{End}(\mathcal{H}_\pi)$, a direct sum of type I factors, by *The Peter–Weyl Theorem*, §Consequences.
 
-**Proof.** The double-commutant theorem identifies the weak closure with the double commutant; $\rho(G)'$ contains $\lambda(G)$ and is the commutant of the right representation, and the two coincide for the regular representation by the standard computation of the commutant of a direct sum of type I factors or, in the general case, by the von Neumann algebra theory of *Operator Algebras*. The discrete statements are in *Operator Algebras*, §Examples from Matrix and Group Algebras. $\square$
+**Proof.** The double-commutant theorem identifies the weak closure with the double commutant; $\rho(G)'$ contains $\lambda(G)$ and is the commutant of the right representation, and the two coincide for the regular representation by the standard computation of the commutant of a direct sum of type I factors or, in the general case, by the von Neumann algebra theory of *Operator Algebras*. The discrete statements are in *Operator Algebras*, §Examples from Matrix and Group Algebras.
 
 ## The Abelian Case
 
@@ -209,7 +209,7 @@ $$
 
 the closed subspace of functions invariant under conjugation; for abelian $G$, $Z(L^1(G)) = L^1(G)$. The nonzero complex homomorphisms of the center are the **central characters**, and for a compact or a type I group they are in bijection with the unitary dual.
 
-**Proof.** $f$ is central iff $f*g = g*f$ for every $g \in L^1(G)$. Testing against a $g$ concentrated in a small neighbourhood of a point $z$ gives $f(z^{-1}x) = f(xz^{-1})$ for almost all $x$, which is the conjugation invariance $f(xy) = f(yx)$ after $z = y^{-1}$. Conversely conjugation invariance gives centrality by the same change of variable. The statement about central characters is the spectral theory of the commutative Banach algebra $Z(L^1(G))$ together with the description of its characters by irreducible representations; for compact groups the central characters are the normalised characters $\chi_\pi/d_\pi$ of *Analysis on Compact Groups*. $\square$
+**Proof.** $f$ is central iff $f*g = g*f$ for every $g \in L^1(G)$. Testing against a $g$ concentrated in a small neighbourhood of a point $z$ gives $f(z^{-1}x) = f(xz^{-1})$ for almost all $x$, which is the conjugation invariance $f(xy) = f(yx)$ after $z = y^{-1}$. Conversely conjugation invariance gives centrality by the same change of variable. The statement about central characters is the spectral theory of the commutative Banach algebra $Z(L^1(G))$ together with the description of its characters by irreducible representations; for compact groups the central characters are the normalised characters $\chi_\pi/d_\pi$ of *Analysis on Compact Groups*.
 
 **Remark (the abelian side is the whole center).** For $G$ abelian the center is the whole algebra and its Gelfand spectrum is $G^\vee$; for a compact group the center is the algebra of class functions and its spectrum is the dual; for a general unimodular type I group the center is described by the Plancherel measure. The center is thus the bridge between the commutative and the non-commutative pictures.
 

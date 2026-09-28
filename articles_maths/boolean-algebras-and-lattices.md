@@ -61,7 +61,7 @@ $$
 
 **Theorem.** Every distributive lattice is modular, and a lattice is distributive if and only if it contains neither of the two lattices $M_3$ nor $N_5$ as a sublattice.
 
-**Proof.** Distributive implies modular is an immediate substitution. The forbidden-sublattice criterion is the theorem of Dedekind and Birkhoff: $N_5$ is modular but not distributive and $M_3$ is not modular, and every non-distributive lattice contains one of them as a sublattice. The proof is in *Order Theory and Lattices* and is not repeated. $\square$
+**Proof.** Distributive implies modular is an immediate substitution. The forbidden-sublattice criterion is the theorem of Dedekind and Birkhoff: $N_5$ is modular but not distributive and $M_3$ is not modular, and every non-distributive lattice contains one of them as a sublattice. The proof is in *Order Theory and Lattices* and is not repeated.
 
 The theorem is the reason the Boolean system is so rigid: a Boolean algebra is a distributive lattice, so it contains neither $M_3$ nor $N_5$, and the congruence lattice of a distributive lattice is itself distributive. Non-distributive logic, which is the subject, begins exactly where this criterion fails.
 
@@ -85,7 +85,7 @@ $$
 c = c \wedge 1 = c \wedge (a \vee d) = (c \wedge a) \vee (c \wedge d) = 0 \vee (c \wedge d) = c \wedge d,
 $$
 
-so $c \leq d$; the same computation with $c$ and $d$ interchanged gives $d \leq c$, whence $c = d$ by antisymmetry. $\square$
+so $c \leq d$; the same computation with $c$ and $d$ interchanged gives $d \leq c$, whence $c = d$ by antisymmetry.
 
 Uniqueness is what makes $\neg$ an operation and not merely a relation, and it is what fails in the non-distributive ortholattices. The following identities are then forced, and they are the reason Boolean algebra is an equational theory.
 
@@ -113,7 +113,7 @@ $$
 (a \wedge b) \vee d = (a \vee \neg a \vee \neg b) \wedge (b \vee \neg a \vee \neg b) = 1 \wedge 1 = 1,
 $$
 
-so $d$ complements $a \wedge b$ and equals $\neg(a \wedge b)$ by uniqueness; the other De Morgan law is dual. For the last display, if $a \leq b$ then $a \wedge \neg b \leq b \wedge \neg b = 0$; conversely $a \wedge \neg b = 0$ gives $a = a \wedge 1 = a \wedge (b \vee \neg b) = (a \wedge b) \vee (a \wedge \neg b) = a \wedge b \leq b$, and the equivalence with $\neg a \vee b = 1$ is the De Morgan law applied to $a \wedge \neg b = 0$. $\square$
+so $d$ complements $a \wedge b$ and equals $\neg(a \wedge b)$ by uniqueness; the other De Morgan law is dual. For the last display, if $a \leq b$ then $a \wedge \neg b \leq b \wedge \neg b = 0$; conversely $a \wedge \neg b = 0$ gives $a = a \wedge 1 = a \wedge (b \vee \neg b) = (a \wedge b) \vee (a \wedge \neg b) = a \wedge b \leq b$, and the equivalence with $\neg a \vee b = 1$ is the De Morgan law applied to $a \wedge \neg b = 0$.
 
 ### The Duality Principle
 
@@ -165,7 +165,7 @@ $$
 
 where $\oplus$ is addition in $\mathbb{F}_2$ and the product is taken in $\mathbb{F}_2$.
 
-**Proof.** The $2^n$ reduced monomials are linearly independent over $\mathbb{F}_2$ as functions. Suppose a combination vanishes and let $e$ be an exponent vector with $c_e \neq 0$ minimal for coordinatewise comparison: if $e' < e$ coordinatewise then $c_{e'} = 0$, and evaluating the combination at the point $e$ (read as an element of $\mathbf{2}^n$) kills every monomial $x^{e'}$ with $e'$ not above $e$, while $x^{e}(e) = 1$; hence $c_e = 0$, a contradiction. So the span of the reduced monomials has dimension $2^n$. There are exactly $2^{2^n}$ functions $\mathbf{2}^n \to \mathbf{2}$ and exactly $2^{2^n}$ coefficient vectors $(c_e)$, so the span is everything and the expression is unique. $\square$
+**Proof.** The $2^n$ reduced monomials are linearly independent over $\mathbb{F}_2$ as functions. Suppose a combination vanishes and let $e$ be an exponent vector with $c_e \neq 0$ minimal for coordinatewise comparison: if $e' < e$ coordinatewise then $c_{e'} = 0$, and evaluating the combination at the point $e$ (read as an element of $\mathbf{2}^n$) kills every monomial $x^{e'}$ with $e'$ not above $e$, while $x^{e}(e) = 1$; hence $c_e = 0$, a contradiction. So the span of the reduced monomials has dimension $2^n$. There are exactly $2^{2^n}$ functions $\mathbf{2}^n \to \mathbf{2}$ and exactly $2^{2^n}$ coefficient vectors $(c_e)$, so the span is everything and the expression is unique.
 
 The expansion is the **Reed–Muller** expansion. It says that the Boolean functions on $n$ variables form the free $\mathbb{F}_2$-vector space on the $2^n$ reduced monomials, equivalently the free Boolean ring on $n$ generators, discussed.
 
@@ -196,7 +196,7 @@ where the algebra variables are written $y_1,\dots,y_n$ to distinguish them from
 
 **Theorem (free Boolean algebra).** The free Boolean algebra on $n$ generators is isomorphic to the algebra of Boolean functions on $n$ variables and to the power set $\mathcal{P}(\mathbf{2}^n)$. It has $2^{2^n}$ elements, and its atoms are the minterms.
 
-**Proof.** A homomorphism from the free algebra on $y_1,\dots,y_n$ to $\mathbf{2}$ is determined by the images of the generators, an arbitrary point of $\mathbf{2}^n$; hence the homomorphisms biject with $\mathbf{2}^n$. The map that sends a function $f$ to the set of points where it is $1$ is a bijection with $\mathcal{P}(\mathbf{2}^n)$, and the pointwise operations correspond to the set operations, so it is an isomorphism onto the power set; its cardinality is $2^{2^n}$. The atoms of a power set are the singletons, corresponding to the functions that vanish except at one point, which are exactly the minterms. $\square$
+**Proof.** A homomorphism from the free algebra on $y_1,\dots,y_n$ to $\mathbf{2}$ is determined by the images of the generators, an arbitrary point of $\mathbf{2}^n$; hence the homomorphisms biject with $\mathbf{2}^n$. The map that sends a function $f$ to the set of points where it is $1$ is a bijection with $\mathcal{P}(\mathbf{2}^n)$, and the pointwise operations correspond to the set operations, so it is an isomorphism onto the power set; its cardinality is $2^{2^n}$. The atoms of a power set are the singletons, corresponding to the functions that vanish except at one point, which are exactly the minterms.
 
 ## Boolean Algebras as the Algebra of Propositional Logic
 
@@ -212,7 +212,7 @@ that is, $T$ proves that $\varphi$ and $\psi$ are equivalent. The **Lindenbaum�
 
 **Theorem (Lindenbaum–Tarski).** The relation $\sim_T$ is a congruence on the propositional algebra, and the quotient is a Boolean algebra. It is the trivial algebra exactly when $T$ is inconsistent.
 
-**Proof.** The relation is an equivalence relation because $\leftrightarrow$ is reflexive, symmetric and transitive in the propositional calculus, and it is a congruence because the connectives are compatible with provable equivalence; the quotient therefore inherits the operations. The distributive, complementation and bound laws hold because their instances in the connectives are tautologies, each provable from the axioms of *Logic and Proof*; for instance $\varphi \wedge \neg \varphi$ is refutable and $\varphi \vee \neg \varphi$ is provable in the classical calculus. If $T$ is inconsistent then every proposition is provable, so all classes coincide and $0 = 1$; conversely if $0 = 1$ then $T$ proves a contradiction. $\square$
+**Proof.** The relation is an equivalence relation because $\leftrightarrow$ is reflexive, symmetric and transitive in the propositional calculus, and it is a congruence because the connectives are compatible with provable equivalence; the quotient therefore inherits the operations. The distributive, complementation and bound laws hold because their instances in the connectives are tautologies, each provable from the axioms of *Logic and Proof*; for instance $\varphi \wedge \neg \varphi$ is refutable and $\varphi \vee \neg \varphi$ is provable in the classical calculus. If $T$ is inconsistent then every proposition is provable, so all classes coincide and $0 = 1$; conversely if $0 = 1$ then $T$ proves a contradiction.
 
 ### Semantics and the Two-Element Model
 
@@ -224,7 +224,7 @@ $$
 T \vdash \varphi \iff \text{every valuation satisfying } T \text{ satisfies } \varphi .
 $$
 
-**Pro.** Soundness is induction on the length of a derivation, each axiom being a tautology and each rule preserving truth. For completeness, suppose $T \nvdash \varphi$; then the class of $\varphi$ is not $1$ in the Lindenbaum–Tarski algebra $B$ of $T$, and since $B$ is a nontrivial Boolean algebra it has a homomorphism to $\mathbf{2}$ — in the finite case by the finite representation theorem above, and in general by the prime-filter theorem — pulling back to a valuation satisfying $T$ and falsifying $\varphi$. A direct proof from the syntax is in *Logic and Proof*. $\square$
+**Pro.** Soundness is induction on the length of a derivation, each axiom being a tautology and each rule preserving truth. For completeness, suppose $T \nvdash \varphi$; then the class of $\varphi$ is not $1$ in the Lindenbaum–Tarski algebra $B$ of $T$, and since $B$ is a nontrivial Boolean algebra it has a homomorphism to $\mathbf{2}$ — in the finite case by the finite representation theorem above, and in general by the prime-filter theorem — pulling back to a valuation satisfying $T$ and falsifying $\varphi$. A direct proof from the syntax is in *Logic and Proof*.
 
 **Remark.** The completeness theorem identifies the semantic models of propositional logic with the homomorphisms into $\mathbf{2}$. This is the reason the two-element algebra is the object of study: the variety generated by $\mathbf{2}$ is the variety of all Boolean algebras, so the equational theory of the system is the theory of this single finite algebra.
 
@@ -242,7 +242,7 @@ and dually for an ideal.
 
 **Theorem.** The product is a Boolean algebra, with $\neg(a_1,a_2) = (\neg a_1, \neg a_2)$ and bounds $(0,0)$ and $(1,1)$, and it is the categorical product of $B_1$ and $B_2$. The quotient $B/F$ is a Boolean algebra, and it is trivial if and only if $F = B$.
 
-**Proof.** The componentwise verification is immediate, and the projection maps $B_1 \times B_2 \to B_i$ have the universal property of the product because a pair of homomorphisms assembles into one. For the quotient, the relation $\sim_F$ is a congruence: if $c \in F$ witnesses $a \sim_F b$ and $c' \in F$ witnesses $a' \sim_F b'$, then $c \wedge c' \in F$ witnesses $a \wedge a' \sim_F b \wedge b'$, and for the complement one uses that $a \wedge c = b \wedge c$ implies $\neg a \wedge c = \neg b \wedge c$; the standard filter-quotient computation is in *Order Theory and Lattices*. The quotient identifies $0$ and $1$ exactly when $F$ contains an element $c$ with $0 \wedge c = 1 \wedge c$, that is $c = 0$, and since $0 \in F$ forces $F = B$, the quotient is trivial exactly when $F = B$. $\square$
+**Proof.** The componentwise verification is immediate, and the projection maps $B_1 \times B_2 \to B_i$ have the universal property of the product because a pair of homomorphisms assembles into one. For the quotient, the relation $\sim_F$ is a congruence: if $c \in F$ witnesses $a \sim_F b$ and $c' \in F$ witnesses $a' \sim_F b'$, then $c \wedge c' \in F$ witnesses $a \wedge a' \sim_F b \wedge b'$, and for the complement one uses that $a \wedge c = b \wedge c$ implies $\neg a \wedge c = \neg b \wedge c$; the standard filter-quotient computation is in *Order Theory and Lattices*. The quotient identifies $0$ and $1$ exactly when $F$ contains an element $c$ with $0 \wedge c = 1 \wedge c$, that is $c = 0$, and since $0 \in F$ forces $F = B$, the quotient is trivial exactly when $F = B$.
 
 **Example.** The power set $\mathcal{P}(X)$ is the product over $x \in X$ of copies of $\mathbf{2}$: a subset is a $0$–$1$ function on $X$, and the product is taken pointwise. In the finite case every Boolean algebra arises this way, by the following theorem.
 
@@ -252,7 +252,7 @@ and dually for an ideal.
 
 **Theorem (finite representation).** Every finite Boolean algebra is isomorphic to the power set of its set of atoms. In particular a finite Boolean algebra has $2^n$ elements for some $n \geq 0$, and it is determined up to isomorphism by the number $n$ of its atoms.
 
-**Proof.** Let $A$ be the set of atoms of the finite algebra $B$. For $b \in B$ let $A_b = \{a \in A : a \leq b\}$. If $b \neq 0$, then some atom lies below $b$: the interval $[0,b]$ is finite, so a minimal element of the nonempty set $\{x : 0 < x \leq b\}$ is an atom of $B$ lying below $b$. Hence $b = \bigvee A_b$. Indeed the join $c = \bigvee A_b$ satisfies $c \leq b$; if $c < b$ then $b \wedge \neg c \neq 0$ contains an atom $a \leq b \wedge \neg c$, and $a$ lies in $A_b$ but not below $c$, contradicting the definition of $c$. Distinct atoms have meet $0$, since their meet lies below both and is neither of them. The map $b \mapsto A_b$ is therefore injective, and it preserves joins, meets, complements and bounds, so it is an isomorphism onto $\mathcal{P}(A)$; the cardinality is $2^{\lvert A \rvert}$. $\square$
+**Proof.** Let $A$ be the set of atoms of the finite algebra $B$. For $b \in B$ let $A_b = \{a \in A : a \leq b\}$. If $b \neq 0$, then some atom lies below $b$: the interval $[0,b]$ is finite, so a minimal element of the nonempty set $\{x : 0 < x \leq b\}$ is an atom of $B$ lying below $b$. Hence $b = \bigvee A_b$. Indeed the join $c = \bigvee A_b$ satisfies $c \leq b$; if $c < b$ then $b \wedge \neg c \neq 0$ contains an atom $a \leq b \wedge \neg c$, and $a$ lies in $A_b$ but not below $c$, contradicting the definition of $c$. Distinct atoms have meet $0$, since their meet lies below both and is neither of them. The map $b \mapsto A_b$ is therefore injective, and it preserves joins, meets, complements and bounds, so it is an isomorphism onto $\mathcal{P}(A)$; the cardinality is $2^{\lvert A \rvert}$.
 
 **Example (the atomless algebra).** The algebra of finite and cofinite subsets of an infinite set is Boolean and atomless; so is the algebra of measurable subsets of $[0,1]$ modulo null sets, the measure algebra of *Measure Theory and Integration*, which is the standard atomless Boolean algebra of cardinality continuum. These show that the finite representation theorem does not extend to the infinite case in the form in which atoms determine the algebra: the measure algebra has no atoms at all. The general representation is the Stone theorem of the topological slot.
 

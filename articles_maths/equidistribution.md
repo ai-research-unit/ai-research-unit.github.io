@@ -45,7 +45,7 @@ $$
 \frac{1}{N}\sum_{n=1}^{N} e^{2\pi i k x_n} \longrightarrow 0 \qquad \text{as } N \to \infty.
 $$
 
-*Proof.* If the sequence is equidistributed, the average of the continuous function $x\mapsto e^{2\pi ikx}$ tends to its integral, which is $0$ for $k \neq 0$. Conversely, the exponentials with $k \in \mathbb{Z}$ span a self-adjoint algebra of functions separating points, so by the Stone–Weierstrass theorem they are dense in $C([0,1))$, and the hypothesis tested against them extends to every continuous function. $\square$
+*Proof.* If the sequence is equidistributed, the average of the continuous function $x\mapsto e^{2\pi ikx}$ tends to its integral, which is $0$ for $k \neq 0$. Conversely, the exponentials with $k \in \mathbb{Z}$ span a self-adjoint algebra of functions separating points, so by the Stone–Weierstrass theorem they are dense in $C([0,1))$, and the hypothesis tested against them extends to every continuous function.
 
 The criterion is the $\mathbb{R}/\mathbb{Z}$ case of the general statement on a compact group, and it is the reason equidistribution is a chapter of harmonic analysis.
 
@@ -57,7 +57,7 @@ $$
 
 where $\pi_{ij}$ are the matrix coefficients of $\pi$; equivalently, if and only if $\frac{1}{N}\sum_n \pi(x_n) \to 0$ in each irreducible representation $\pi$ other than the trivial one, and the trivial representation contributes $\frac{1}{N}\sum_n 1 = 1$.
 
-*Proof.* The matrix coefficients span the representative-function algebra $A(K)$, which is dense in $C(K)$ by the Peter–Weyl theorem of *The Peter–Weyl Theorem*; testing against a dense subalgebra suffices. The integral of a nontrivial matrix coefficient is $0$ by the orthogonality relations of *Analysis on Compact Groups*. $\square$
+*Proof.* The matrix coefficients span the representative-function algebra $A(K)$, which is dense in $C(K)$ by the Peter–Weyl theorem of *The Peter–Weyl Theorem*; testing against a dense subalgebra suffices. The integral of a nontrivial matrix coefficient is $0$ by the orthogonality relations of *Analysis on Compact Groups*.
 
 **Corollary (abelian case).** For a compact abelian group $K$ the criterion reduces to testing against the characters: $(x_n)$ is equidistributed if and only if $\frac{1}{N}\sum_n \chi(x_n) \to 0$ for every nontrivial character $\chi \in K^\vee$. This is the Pontryagin-dual form of Weyl's criterion, and on $K = \mathbb{R}/\mathbb{Z}$ it is the statement above.
 
@@ -177,7 +177,7 @@ $$
 
 and the convergence is uniform in $x \in X$. Conversely, if the averages converge for every $f \in C(X)$ and every $x$, and the limit is independent of $x$, then $T$ is uniquely ergodic and the limit is the integral against the unique invariant measure.
 
-*Proof.* The set of invariant probability measures is convex and compact, and an extreme point is ergodic; uniqueness of the measure therefore gives the ergodicity of $\mu$. For each $x$, let $\nu$ be a weak limit point of the empirical measures; it is $T$-invariant, so $\nu = \mu$, and every limit point is $\mu$, hence the averages converge. The uniformity follows from the compactness of $C(X)$ and the fact that a pointwise-convergent sequence of continuous functions on a compact space whose limit is continuous is uniformly convergent. The converse is the standard argument: an invariant measure is recovered as a limit of empirical measures, and the assumed independence of $x$ makes it unique. $\square$
+*Proof.* The set of invariant probability measures is convex and compact, and an extreme point is ergodic; uniqueness of the measure therefore gives the ergodicity of $\mu$. For each $x$, let $\nu$ be a weak limit point of the empirical measures; it is $T$-invariant, so $\nu = \mu$, and every limit point is $\mu$, hence the averages converge. The uniformity follows from the compactness of $C(X)$ and the fact that a pointwise-convergent sequence of continuous functions on a compact space whose limit is continuous is uniformly convergent. The converse is the standard argument: an invariant measure is recovered as a limit of empirical measures, and the assumed independence of $x$ makes it unique.
 
 **Corollary.** If $T$ is uniquely ergodic, then every orbit is equidistributed with respect to the invariant measure. If in addition $T$ is minimal, the union of the orbits is a single minimal set and the equidistribution is uniform over the space; unique ergodicity alone allows the presence of a wandering set of measure zero.
 

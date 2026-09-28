@@ -31,7 +31,7 @@ Membership is a relation between objects and sets, and it is not symmetric or tr
 
 **Proposition.** The relation $\subseteq$ is reflexive, antisymmetric and transitive: $A \subseteq A$; if $A \subseteq B$ and $B \subseteq A$ then $A = B$; and if $A \subseteq B$ and $B \subseteq C$ then $A \subseteq C$.
 
-**Proof.** Reflexivity and transitivity are immediate from the definition, since a condition true of every element of $A$ is true of every element of $A$, and a condition true of every element of $A$ and of every element of $B \supseteq A$ is true of every element of $A$. Antisymmetry is extensionality: $A \subseteq B$ and $B \subseteq A$ say exactly that $z \in A \iff z \in B$ for all $z$. $\square$
+**Proof.** Reflexivity and transitivity are immediate from the definition, since a condition true of every element of $A$ is true of every element of $A$, and a condition true of every element of $A$ and of every element of $B \supseteq A$ is true of every element of $A$. Antisymmetry is extensionality: $A \subseteq B$ and $B \subseteq A$ say exactly that $z \in A \iff z \in B$ for all $z$.
 
 A relation that is reflexive, antisymmetric and transitive is a **partial order**; the subset relation is the model on which the general theory is built. The symbol $\subseteq$ is the order, and $A \subsetneq B$ is its strict part.
 
@@ -83,7 +83,7 @@ $$
 A \cap \bigcup_i B_i = \bigcup_i (A \cap B_i), \qquad A \cup \bigcap_i B_i = \bigcap_i (A \cup B_i)
 $$
 
-are proved by the same elementwise argument with a quantifier in place of a finite disjunction. $\square$
+are proved by the same elementwise argument with a quantifier in place of a finite disjunction.
 
 The laws listed are exactly the axioms of a **Boolean algebra**, with $\cup$, $\cap$, ${}^{\mathrm{c}}$, $\emptyset$ and $X$ playing the roles of sum, product, complement, zero and unit; the algebra of subsets and the algebra of propositions are the same set of laws read in two vocabularies.
 
@@ -101,7 +101,7 @@ The power set is a set by the power-set axiom of the ambient set theory.
 
 **Proposition.** The power set $\mathcal{P}(X)$, ordered by $\subseteq$, has $\emptyset$ as least element and $X$ as greatest element; the union $A \cup B$ is the least subset of $X$ containing both $A$ and $B$, and the intersection $A \cap B$ is the greatest subset contained in both.
 
-**Proof.** That $\emptyset \subseteq A \subseteq X$ for every $A \subseteq X$ is immediate. If $C \supseteq A$ and $C \supseteq B$, then $C$ contains every element of $A$ and of $B$, hence $C \supseteq A \cup B$; and $A \cup B$ itself contains both, so it is least. Dually, $A \cap B$ is contained in both and contains every set contained in both. $\square$
+**Proof.** That $\emptyset \subseteq A \subseteq X$ for every $A \subseteq X$ is immediate. If $C \supseteq A$ and $C \supseteq B$, then $C$ contains every element of $A$ and of $B$, hence $C \supseteq A \cup B$; and $A \cup B$ itself contains both, so it is least. Dually, $A \cap B$ is contained in both and contains every set contained in both.
 
 Thus $\mathcal{P}(X)$ carries a **lattice** structure — a partial order in which every pair has a least upper bound and a greatest lower bound — and the lattice is distributive and complemented, the first example of both a lattice and a Boolean algebra; the general theory is *Order Theory and Lattices*. The cardinality of $\mathcal{P}(X)$ is treated.
 
@@ -119,7 +119,7 @@ $$
 
 **Theorem.** For all $a, b, c, d$ one has $(a, b) = (c, d)$ if and only if $a = c$ and $b = d$.
 
-**Proof.** If $a = c$ and $b = d$ the two pairs are equal by construction. Conversely suppose $\{\{a\},\{a,b\}\} = \{\{c\},\{c,d\}\}$. Every element of the left side is an element of the right, and conversely. The set $\{a\}$ is an element of the left side, so it equals $\{c\}$ or $\{c,d\}$. In the first case $a = c$; in the second case $a = c = d$, so again $a = c$. Since $\{a\} = \{c\}$ holds in either case, the two-element member of each side must also agree: $\{a, b\} = \{c, d\}$. Now $b$ lies in $\{a,b\}$, hence in $\{c,d\}$, so $b = c$ or $b = d$; if $b = c$ then $b = c = a$, and $\{c,d\}$ contains $d$, which must equal $a$ or $b$, so $d = b$; otherwise $b = d$ directly. Hence $a = c$ and $b = d$. $\square$
+**Proof.** If $a = c$ and $b = d$ the two pairs are equal by construction. Conversely suppose $\{\{a\},\{a,b\}\} = \{\{c\},\{c,d\}\}$. Every element of the left side is an element of the right, and conversely. The set $\{a\}$ is an element of the left side, so it equals $\{c\}$ or $\{c,d\}$. In the first case $a = c$; in the second case $a = c = d$, so again $a = c$. Since $\{a\} = \{c\}$ holds in either case, the two-element member of each side must also agree: $\{a, b\} = \{c, d\}$. Now $b$ lies in $\{a,b\}$, hence in $\{c,d\}$, so $b = c$ or $b = d$; if $b = c$ then $b = c = a$, and $\{c,d\}$ contains $d$, which must equal $a$ or $b$, so $d = b$; otherwise $b = d$ directly. Hence $a = c$ and $b = d$.
 
 The definition is a coding whose only purpose is to reduce the ordered pair to a set that already exists; once the theorem is proved the coding is never used again, and the pair is treated as an object with two projections.
 
@@ -145,7 +145,7 @@ $$
 X \times (Y \cup Z) = (X \times Y) \cup (X \times Z), \qquad X \times (Y \cap Z) = (X \times Y) \cap (X \times Z).
 $$
 
-**Proof.** An element of the left side of the first identity is a pair $(x, w)$ with $x \in X$ and $w \in Y \cup Z$, so either $w \in Y$ or $w \in Z$; hence the pair lies in $X \times Y$ or in $X \times Z$. The converse is the reverse reading. The second identity is the same argument with "and" in place of "or". $\square$
+**Proof.** An element of the left side of the first identity is a pair $(x, w)$ with $x \in X$ and $w \in Y \cup Z$, so either $w \in Y$ or $w \in Z$; hence the pair lies in $X \times Y$ or in $X \times Z$. The converse is the reverse reading. The second identity is the same argument with "and" in place of "or".
 
 ### Families and Indexed Sets
 
@@ -193,11 +193,11 @@ $$
 
 **Lemma.** If $\sim$ is an equivalence relation on $X$ then $x \sim y$ if and only if $[x] = [y]$.
 
-**Proof.** If $[x] = [y]$ then $x \in [x] = [y]$, so $x \sim y$. Conversely if $x \sim y$ and $z \in [x]$, then $z \sim x$ and $x \sim y$, so $z \sim y$ by transitivity, and $z \in [y]$; thus $[x] \subseteq [y]$, and symmetry gives the reverse inclusion. $\square$
+**Proof.** If $[x] = [y]$ then $x \in [x] = [y]$, so $x \sim y$. Conversely if $x \sim y$ and $z \in [x]$, then $z \sim x$ and $x \sim y$, so $z \sim y$ by transitivity, and $z \in [y]$; thus $[x] \subseteq [y]$, and symmetry gives the reverse inclusion.
 
 **Proposition.** The equivalence classes of a relation $\sim$ on $X$ are nonempty, pairwise disjoint, and their union is $X$.
 
-**Proof.** Each class is nonempty because $x \in [x]$ by reflexivity. If $[x] \cap [y] \neq \emptyset$, choose $z$ in the intersection; then $z \sim x$ and $z \sim y$, so by symmetry and transitivity $x \sim y$, and the lemma gives $[x] = [y]$. If $[x] \neq [y]$ the classes are therefore disjoint. Finally every $x$ lies in $[x]$, so the union of all classes is $X$. $\square$
+**Proof.** Each class is nonempty because $x \in [x]$ by reflexivity. If $[x] \cap [y] \neq \emptyset$, choose $z$ in the intersection; then $z \sim x$ and $z \sim y$, so by symmetry and transitivity $x \sim y$, and the lemma gives $[x] = [y]$. If $[x] \neq [y]$ the classes are therefore disjoint. Finally every $x$ lies in $[x]$, so the union of all classes is $X$.
 
 The set of equivalence classes is the **quotient** of $X$ by $\sim$, written
 
@@ -215,7 +215,7 @@ The proposition above says that the equivalence classes of any equivalence relat
 
 **Theorem.** Let $X$ be a set. The map sending an equivalence relation to the set of its classes is a bijection between the equivalence relations on $X$ and the partitions of $X$.
 
-**Proof.** Injectivity: if two equivalence relations have the same classes then $x \sim y$ holds for the first exactly when $x$ lies in the same class as $y$, which is the same condition for the second. Surjectivity: given a partition $\mathcal{P}$, define $x \sim y$ to mean that $x$ and $y$ lie in a common member of $\mathcal{P}$. This is reflexive and symmetric immediately, and transitive because two members of $\mathcal{P}$ that meet a common element coincide, a partition being pairwise disjoint. Its classes are exactly the members of $\mathcal{P}$. $\square$
+**Proof.** Injectivity: if two equivalence relations have the same classes then $x \sim y$ holds for the first exactly when $x$ lies in the same class as $y$, which is the same condition for the second. Surjectivity: given a partition $\mathcal{P}$, define $x \sim y$ to mean that $x$ and $y$ lie in a common member of $\mathcal{P}$. This is reflexive and symmetric immediately, and transitive because two members of $\mathcal{P}$ that meet a common element coincide, a partition being pairwise disjoint. Its classes are exactly the members of $\mathcal{P}$.
 
 The theorem gives two ways of presenting a quotient, by the relation or by the partition; in group theory the partition is into the cosets of a normal subgroup, in ring theory into the cosets of an ideal.
 
@@ -249,7 +249,7 @@ Two functions are equal when they have the same domain, the same codomain and th
 
 **Proposition.** Composition is associative: $h \circ (g \circ f) = (h \circ g) \circ f$ whenever the composites are defined. The identity functions are two-sided identities: $f \circ \mathrm{id}_X = f = \mathrm{id}_Y \circ f$.
 
-**Proof.** For each $x$, both sides of the associativity identity evaluate to $h(g(f(x)))$, so the two functions agree at every point. The identities are immediate from the definitions. $\square$
+**Proof.** For each $x$, both sides of the associativity identity evaluate to $h(g(f(x)))$, so the two functions agree at every point. The identities are immediate from the definitions.
 
 Associativity makes the set of functions $X \to X$ under composition a monoid, whose invertible elements are the symmetric group $\operatorname{Sym}(X)$. Composition is not commutative in general: on $X = \{1,2\}$ the transposition and the constant map do not commute.
 
@@ -265,7 +265,7 @@ Injectivity says that distinct inputs have distinct outputs, surjectivity that t
 2. If $f$ and $g$ are surjective then $g \circ f$ is surjective; if $g \circ f$ is surjective then $g$ is surjective.
 3. If $f$ and $g$ are bijective then $g \circ f$ is bijective.
 
-**Proof.** (1) If $(g \circ f)(x) = (g \circ f)(x')$ then $g(f(x)) = g(f(x'))$, so $f(x) = f(x')$ by injectivity of $g$ and then $x = x'$ by injectivity of $f$. If $g \circ f$ is injective and $f(x) = f(x')$, then $(g \circ f)(x) = (g \circ f)(x')$, so $x = x'$. (2) If $z \in Z$, surjectivity of $g \circ f$ gives $x$ with $g(f(x)) = z$, so $z$ is the image under $g$ of $f(x)$. If $g \circ f$ is surjective and $z \in Z$, choose $x$ with $(g \circ f)(x) = z$; then $z = g(f(x))$ lies in the image of $g$. (3) Immediate from (1) and (2). $\square$
+**Proof.** (1) If $(g \circ f)(x) = (g \circ f)(x')$ then $g(f(x)) = g(f(x'))$, so $f(x) = f(x')$ by injectivity of $g$ and then $x = x'$ by injectivity of $f$. If $g \circ f$ is injective and $f(x) = f(x')$, then $(g \circ f)(x) = (g \circ f)(x')$, so $x = x'$. (2) If $z \in Z$, surjectivity of $g \circ f$ gives $x$ with $g(f(x)) = z$, so $z$ is the image under $g$ of $f(x)$. If $g \circ f$ is surjective and $z \in Z$, choose $x$ with $(g \circ f)(x) = z$; then $z = g(f(x))$ lies in the image of $g$. (3) Immediate from (1) and (2).
 
 **Definition.** A **bijection** from $X$ to $Y$ is a bijective function; one writes $X \cong Y$ when a bijection exists, and says that $X$ and $Y$ are **equipotent**. Equipotence is reflexive, symmetric and transitive, and it is the relation on which the theory of cardinality is founded.
 
@@ -275,7 +275,7 @@ Injectivity says that distinct inputs have distinct outputs, surjectivity that t
 
 **Proposition.** A function $f : X \to Y$ is injective if and only if it has a left inverse, surjective if and only if it has a right inverse, and bijective if and only if it has a two-sided inverse, which is then unique.
 
-**Pro.** If $g \circ f = \mathrm{id}_X$ and $f(x) = f(x')$ then $x = g(f(x)) = g(f(x')) = x'$, so $f$ is injective. Conversely, an injective $f$ has a left inverse: fix $x_0 \in X$ when $X \neq \emptyset$ and define $g(y) = x$ if $y = f(x)$, and $g(y) = x_0$ if $y \notin \operatorname{im} f$; the two cases are unambiguous by injectivity. If $f \circ h = \mathrm{id}_Y$ and $y \in Y$, then $y = f(h(y))$ lies in the image, so $f$ is surjective. Conversely a surjective $f$ has a right inverse, whose existence on each fibre is an appeal to the axiom of choice when $Y$ is infinite — the axiom is stated and discussed. Finally, if $f$ is bijective, define $f^{-1}(y)$ to be the unique $x$ with $f(x) = y$; this is a two-sided inverse, and it is unique because any two-sided inverse $g$ satisfies $g = g \circ f \circ f^{-1} = f^{-1}$. $\square$
+**Pro.** If $g \circ f = \mathrm{id}_X$ and $f(x) = f(x')$ then $x = g(f(x)) = g(f(x')) = x'$, so $f$ is injective. Conversely, an injective $f$ has a left inverse: fix $x_0 \in X$ when $X \neq \emptyset$ and define $g(y) = x$ if $y = f(x)$, and $g(y) = x_0$ if $y \notin \operatorname{im} f$; the two cases are unambiguous by injectivity. If $f \circ h = \mathrm{id}_Y$ and $y \in Y$, then $y = f(h(y))$ lies in the image, so $f$ is surjective. Conversely a surjective $f$ has a right inverse, whose existence on each fibre is an appeal to the axiom of choice when $Y$ is infinite — the axiom is stated and discussed. Finally, if $f$ is bijective, define $f^{-1}(y)$ to be the unique $x$ with $f(x) = y$; this is a two-sided inverse, and it is unique because any two-sided inverse $g$ satisfies $g = g \circ f \circ f^{-1} = f^{-1}$.
 
 **Corollary.** If $f$ is bijective then $(f^{-1})^{-1} = f$, and if $g \circ f$ is a bijection with $f$ and $g$ bijective then $(g \circ f)^{-1} = f^{-1} \circ g^{-1}$.
 
@@ -297,7 +297,7 @@ The notation $f^{-1}(B)$ for the preimage does not presuppose that $f$ is invert
 4. $f^{-1}(Y \setminus B) = X \setminus f^{-1}(B)$ and, for $A \subseteq X$, $f(X \setminus A) \subseteq Y \setminus f(A)$, with equality for all $A$ if and only if $f$ is surjective.
 5. $A \subseteq f^{-1}(f(A))$ and $f(f^{-1}(B)) = B \cap \operatorname{im} f$.
 
-**Proof.** (1) $y$ lies in $f(A \cup A')$ exactly when $y = f(x)$ for some $x$ in $A$ or in $A'$, which is exactly the condition that $y \in f(A) \cup f(A')$; the family case is the same with a quantifier. (2) If $y \in f(A \cap A')$ then $y = f(x)$ with $x \in A \cap A'$, so $y \in f(A) \cap f(A')$. If $f$ is injective and $y \in f(A) \cap f(A')$, then $y = f(x) = f(x')$ with $x \in A$, $x' \in A'$, and injectivity gives $x = x' \in A \cap A'$. Conversely equality fails for injectivity only if some $x \neq x'$ has $f(x) = f(x')$, and then $A = \{x\}$, $A' = \{x'\}$ give $f(A) \cap f(A') \neq \emptyset = f(A \cap A')$. (3) $x \in f^{-1}(B \cap B')$ exactly when $f(x) \in B$ and $f(x) \in B'$, that is, when $x$ lies in both preimages; the union is the same argument with "or", and the family statements are analogous. (4) $x \in f^{-1}(Y \setminus B)$ exactly when $f(x) \notin B$, that is, when $x \notin f^{-1}(B)$. For the second, if $y \in f(X \setminus A)$ then $y = f(x)$ with $x \notin A$, so $y \notin f(A)$ and $y \in Y \setminus f(A)$. If $f$ is surjective and $y \in Y \setminus f(A)$, choose $x$ with $f(x) = y$; then $x \notin A$, so $y \in f(X \setminus A)$. Conversely, if equality always holds then $A = \emptyset$ gives $f(X) = Y \setminus f(\emptyset) = Y$, so $f$ is surjective. (5) If $x \in A$ then $f(x) \in f(A)$, so $x \in f^{-1}(f(A))$; and $y \in f(f^{-1}(B))$ exactly when $y = f(x)$ for some $x$ with $f(x) \in B$, that is, when $y \in B$ and $y \in \operatorname{im} f$. $\square$
+**Proof.** (1) $y$ lies in $f(A \cup A')$ exactly when $y = f(x)$ for some $x$ in $A$ or in $A'$, which is exactly the condition that $y \in f(A) \cup f(A')$; the family case is the same with a quantifier. (2) If $y \in f(A \cap A')$ then $y = f(x)$ with $x \in A \cap A'$, so $y \in f(A) \cap f(A')$. If $f$ is injective and $y \in f(A) \cap f(A')$, then $y = f(x) = f(x')$ with $x \in A$, $x' \in A'$, and injectivity gives $x = x' \in A \cap A'$. Conversely equality fails for injectivity only if some $x \neq x'$ has $f(x) = f(x')$, and then $A = \{x\}$, $A' = \{x'\}$ give $f(A) \cap f(A') \neq \emptyset = f(A \cap A')$. (3) $x \in f^{-1}(B \cap B')$ exactly when $f(x) \in B$ and $f(x) \in B'$, that is, when $x$ lies in both preimages; the union is the same argument with "or", and the family statements are analogous. (4) $x \in f^{-1}(Y \setminus B)$ exactly when $f(x) \notin B$, that is, when $x \notin f^{-1}(B)$. For the second, if $y \in f(X \setminus A)$ then $y = f(x)$ with $x \notin A$, so $y \notin f(A)$ and $y \in Y \setminus f(A)$. If $f$ is surjective and $y \in Y \setminus f(A)$, choose $x$ with $f(x) = y$; then $x \notin A$, so $y \in f(X \setminus A)$. Conversely, if equality always holds then $A = \emptyset$ gives $f(X) = Y \setminus f(\emptyset) = Y$, so $f$ is surjective. (5) If $x \in A$ then $f(x) \in f(A)$, so $x \in f^{-1}(f(A))$; and $y \in f(f^{-1}(B))$ exactly when $y = f(x)$ for some $x$ with $f(x) \in B$, that is, when $y \in B$ and $y \in \operatorname{im} f$.
 
 **Remark.** Preimages behave better than images: they preserve unions, intersections and complements without exception, whereas images preserve only unions in general. This asymmetry is used silently throughout the corpus.
 

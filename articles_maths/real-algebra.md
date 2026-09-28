@@ -239,88 +239,6 @@ $$
 
 does not exist, because $\mathbb{M}_+$ and $\mathbb{M}_-$ are not defined. There is only one subspace, and it is the whole algebra.
 
-## Quadratic Forms and Inner Product
-
-### The Norm Form
-
-The **norm form** of a real number $a$ is
-
-$$
-N(a) = a \cdot a = a^2,
-$$
-
-where the product is the field multiplication. It is a real number in general. It is positive-definite, since $a^2 \geq 0$ for every $a$, and it vanishes only at $a = 0$, because $\mathbb{R}$ is a field.
-
-The norm form is **multiplicative**:
-
-$$
-N(a \cdot b) = N(a) \, N(b).
-$$
-
-This is the statement that $a^2 b^2 = (ab)^2$, which is true in any commutative ring.
-
-### The Hermitian Form
-
-The **Hermitian form** of a real number $a$ is
-
-$$
-a \cdot a = a^2,
-$$
-
-where the product is the field multiplication. It is a **non-negative real number**, and it vanishes if and only if $a = 0$. It is a genuine positive-definite quadratic form, and it is the natural "length squared" of $a$ in the underlying real vector space of dimension $1$.
-
-The corresponding **Euclidean norm** is
-
-$$
-\|a\|_E = \sqrt{a \cdot a} = |a|.
-$$
-
-It is a genuine norm on the real vector space $\mathbb{R} \cong \mathbb{R}^1$: positive-definite, subadditive, and homogeneous of degree one. It **is** multiplicative with respect to the real product, because $|ab| = |a||b|$.
-
-### The Inner Product
-
-The **inner product** of two real numbers $a$ and $b$ is
-
-$$
-\langle a, b \rangle = a \cdot b = ab.
-$$
-
-In general this is a **real number**, not a complex one. This is a genuinely real feature: the inner product of two real numbers is real, and its imaginary part is zero.
-
-The inner product is linear in both arguments:
-
-$$
-\langle \lambda a, b \rangle = \lambda \langle a, b \rangle, \qquad \langle a, \lambda b \rangle = \lambda \langle a, b \rangle, \qquad \lambda \in \mathbb{R}.
-$$
-
-It is **symmetric** in the sense that
-
-$$
-\langle a, b \rangle = \langle b, a \rangle,
-$$
-
-which follows from the commutativity of multiplication.
-
-The inner product of a real number with itself is
-
-$$
-\langle a, a \rangle = a \cdot a = a^2,
-$$
-
-which is the Hermitian form. So the Hermitian form is the restriction of the inner product to the diagonal.
-
-### Relation Between the Three Forms
-
-The three quadratic objects are related as follows:
-
-- **Norm form:** $N(a) = a^2$. Real-valued, vanishes only at $a = 0$, multiplicative.
-- **Hermitian form:** $a^2$. Non-negative real, vanishes only at $a = 0$, multiplicative.
-- **Inner product:** $\langle a, b \rangle = ab$. Real-valued, symmetric, bilinear.
-
-The norm form and the Hermitian form are the same function here, and the inner product is the bilinear form from which they are recovered by polarization. The norm form controls the multiplicative structure (invertibility, zero divisors). The Hermitian form controls the topological structure (continuity, completeness). The inner product combines both, and is the natural pairing on the algebra as a real vector space.
-
-In the real case, the norm form and the Hermitian form coincide, because the conjugation is trivial and there is no imaginary part. This is a degeneracy of the one-dimensional case, and it is the reason the real numbers are often treated as a trivial example rather than as a case study.
-
 ## Order-Theoretic Structure
 
 The order on $\mathbb{R}$ is not merely a binary relation. It interacts with the field operations and with completeness in ways that have no analogue in an unordered field.
@@ -359,9 +277,19 @@ Completeness is the axiom that distinguishes $\mathbb{R}$ from $\mathbb{Q}$. Its
 
 ### The Nested Interval Property and Uniqueness
 
-The completeness axiom, which is the least upper bound property stated as an axiom above, is equivalent to the nested interval property and to the convergence of Cauchy sequences. These equivalences are not trivial; they are the content of the standard constructions of $\mathbb{R}$ from $\mathbb{Q}$.
+The completeness axiom, which is the least upper bound property stated as an axiom above, is equivalent to the nested interval property and, in the metric reading, to the convergence of Cauchy sequences. These equivalences are not trivial; they are the content of the standard constructions of $\mathbb{R}$ from $\mathbb{Q}$. Only the order-theoretic form of them is used here: the metric reading is the topological development of *Real Topology*.
 
 The **uniqueness** of $\mathbb{R}$ as a complete ordered field is a theorem: if $F$ is any complete ordered field, there is a unique order-isomorphism $F \to \mathbb{R}$. This is why we speak of *the* real numbers.
+
+### Real Closedness
+
+**Definition.** An ordered field $F$ is **real closed** if every positive element of $F$ is a square in $F$ and every polynomial of odd degree over $F$ has a root in $F$.
+
+**Theorem.** $\mathbb{R}$ is real closed. It is the unique ordered field that is complete, and its order is the only order compatible with its field structure.
+
+An ordered field that is real closed has a unique ordering, since the positive elements are exactly the nonzero squares; and it has no proper ordered algebraic extension, so it coincides with its own real closure. Every ordered subfield $F \subsetneq \mathbb{R}$ is Archimedean, because $\mathbb{R}$ is, and has a **real closure** inside $\mathbb{R}$, namely the field of its elements algebraic over $F$ in the sense of field theory; this is the smallest real-closed subfield of $\mathbb{R}$ containing $F$. In particular $\overline{\mathbb{Q}} \cap \mathbb{R}$, the field of real algebraic numbers, is the real closure of $\mathbb{Q}$ inside $\mathbb{R}$.
+
+**Remark.** Real closedness is a field-theoretic property, and its proof from completeness is carried out in *Real-Closed and Complete Ordered Fields*. It is recorded here because the ordered-field structure of the real algebra is not complete without it: the order and the field structure of $\mathbb{R}$ determine one another.
 
 ## Summary
 
@@ -369,7 +297,7 @@ The real algebra is the field $\mathbb{R}$ of real numbers considered as a one-d
 
 The only conjugation is the identity. Its fixed-point set is all of $\mathbb{R}$, so the single fixed-point subspace is $\mathbb{R}$ itself. There is no nontrivial conjugate decomposition, because the eigenspace for the eigenvalue $-1$ is zero, and there is no Hermitian or anti-Hermitian subspace, because there is no Hermitian conjugation: the decomposition of the general case collapses to a single summand.
 
-The quadratic objects collapse with it. The norm form is $N(a) = a \cdot a = a^2$, positive definite and multiplicative, and in this one-dimensional case the Hermitian form and the inner product coincide with it. The article closes with the order-theoretic structure, recording how the order interacts with the field operations and with completeness in ways that have no analogue in an unordered field.
+The order is total, Archimedean and complete, and it interacts with the field operations in ways that have no analogue in an unordered field: the positive cone determines the order, and completeness supplies the least upper bound, the Archimedean property, the density of $\mathbb{Q}$, the existence of $n$-th roots and the nested interval property. The field is real closed — every positive element is a square, every odd-degree polynomial has a root, and the order is the only one compatible with the field structure. The norm, the Hermitian form and the inner product are a form and a distance rather than algebraic data, and they are carried by *Real Norm and Invertibility*, the topology entry of this category.
 
 ## Summary of Notation
 
@@ -381,10 +309,6 @@ The quadratic objects collapse with it. The norm form is $N(a) = a \cdot a = a^2
 | $a$ | Real coefficient |
 | $a$ | Scalar part |
 | $\operatorname{id}(a) = a$ | Identity conjugation |
-| $N(a) = a \cdot a$ | Norm form |
-| $a \cdot a$ | Hermitian form |
-| $\langle a, b \rangle = a \cdot b$ | Inner product |
-| $\|a\|_E = \sqrt{a \cdot a}$ | Euclidean norm |
 | $\mathbb{R}_{\mathbb{R}}$ | Real subspace, fixed-point set of $\operatorname{id}$ |
 | $\mathbb{R}_{\geq 0}$ | Positive cone (the non-negative reals) |
 | $[a, b], (a, b)$ | Closed and open intervals |

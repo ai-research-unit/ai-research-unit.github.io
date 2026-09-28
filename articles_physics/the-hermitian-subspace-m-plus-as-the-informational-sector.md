@@ -96,7 +96,7 @@ $$
 
 ### Properties
 
-**Quadratic form.** The biquaternion **norm form** restricts to a real quadratic form on $\mathbb{M}_+$:
+**Quadratic form.** The biquaternion **biquaternion norm** restricts to a real quadratic form on $\mathbb{M}_+$:
 
 $$
 N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = q_0^2 + (iq'_1)^2 + (iq'_2)^2 + (iq'_3)^2 = q_0^2 - q'^2_1 - q'^2_2 - q'^2_3 = c^2t'^2 - x'^2 - y'^2 - z'^2.
@@ -104,7 +104,7 @@ $$
 
 This is a real quadratic form of **signature** $(1,3)$: one positive direction (the temporal one, whose coordinate is $ct'$) and three negative directions (the vector components $q'_1, q'_2, q'_3$). The single positive direction is the temporal one, so the form is Lorentzian with a distinguished timelike axis in the sector's own coordinates.
 
-**Zero divisors.** The norm form vanishes on the cone
+**Zero divisors.** The biquaternion norm vanishes on the cone
 
 $$
 q_0^2 = q'^2_1 + q'^2_2 + q'^2_3, \qquad \text{that is} \qquad c^2t'^2 = x'^2 + y'^2 + z'^2,
@@ -142,7 +142,7 @@ $$
 \tilde{Q} = q_0e_0 + iq'_1e_1 + iq'_2e_2 + iq'_3e_3 = (ct')\,e_0 + (ix')\,e_1 + (iy')\,e_2 + (iz')\,e_3.
 $$
 
-The temporal direction therefore carries a real coordinate while the three spatial directions carry imaginary ones. Two consequences follow. First, the norm form has signature $(1,3)$, so the temporal axis is the single positive direction and the three spatial axes are the negative ones. Second, it is the vectors of this sector, not its scalar, that carry the $i$ — which is why the vectors are the primed parameters while the scalar is not. The placement of the $i$ is a property of the sector, fixed by the conjugation that defines it.
+The temporal direction therefore carries a real coordinate while the three spatial directions carry imaginary ones. Two consequences follow. First, the biquaternion norm has signature $(1,3)$, so the temporal axis is the single positive direction and the three spatial axes are the negative ones. Second, it is the vectors of this sector, not its scalar, that carry the $i$ — which is why the vectors are the primed parameters while the scalar is not. The placement of the $i$ is a property of the sector, fixed by the conjugation that defines it.
 
 ### What the Hypothesis Does and Does Not Claim
 
@@ -211,7 +211,7 @@ so the image is anti-Hermitian, i.e., in $\mathbb{M}_-$. The action maps the mat
 
 **2. The action is linear in $\tilde{Q}_-$.** This follows from the bilinearity of the biquaternion product.
 
-**3. The action preserves the norm form when $\tilde{Q}_+$ has unit norm form.** If $\tilde{Q}_+\bar{\tilde{Q}}_+ = e_0$ — for example a boost biquaternion, or any element of $SL(2,\mathbb{C})$ — then the action preserves $N(\tilde{Q}_-) = \tilde{Q}_-\bar{\tilde{Q}}_-$: by multiplicativity of the norm form, $N(\tilde{Q}_+\tilde{Q}_-\tilde{Q}_+^\dagger) = N(\tilde{Q}_+)N(\tilde{Q}_-)N(\tilde{Q}_+)^* = N(\tilde{Q}_-)$ when $N(\tilde{Q}_+) = 1$. This is the biquaternion expression of the Lorentz invariance of the Minkowski interval. The condition is on the norm form and not on $\tilde{Q}_+\tilde{Q}_+^\dagger$: a boost biquaternion is Hermitian, so $\tilde{Q}_+\tilde{Q}_+^\dagger = \tilde{Q}_+^2 = \cosh\tfrac{\psi}{2} + i\sinh\tfrac{\psi}{2}\,\hat{\mathbf{u}} \neq e_0$, and only the rotation rotors satisfy $\tilde{Q}\tilde{Q}^\dagger = e_0$.
+**3. The action preserves the biquaternion norm when $\tilde{Q}_+$ has unit norm.** If $\tilde{Q}_+\bar{\tilde{Q}}_+ = e_0$ — for example a boost biquaternion, or any element of $SL(2,\mathbb{C})$ — then the action preserves $N(\tilde{Q}_-) = \tilde{Q}_-\bar{\tilde{Q}}_-$: by multiplicativity of the biquaternion norm, $N(\tilde{Q}_+\tilde{Q}_-\tilde{Q}_+^\dagger) = N(\tilde{Q}_+)N(\tilde{Q}_-)N(\tilde{Q}_+)^* = N(\tilde{Q}_-)$ when $N(\tilde{Q}_+) = 1$. This is the biquaternion expression of the Lorentz invariance of the Minkowski interval. The condition is on the biquaternion norm and not on $\tilde{Q}_+\tilde{Q}_+^\dagger$: a boost biquaternion is Hermitian, so $\tilde{Q}_+\tilde{Q}_+^\dagger = \tilde{Q}_+^2 = \cosh\tfrac{\psi}{2} + i\sinh\tfrac{\psi}{2}\,\hat{\mathbf{u}} \neq e_0$, and only the rotation rotors satisfy $\tilde{Q}\tilde{Q}^\dagger = e_0$.
 
 **4. The action is a group action.** Compositions of actions compose:
 
@@ -232,9 +232,9 @@ This is the algebraic content of the reading of $\mathbb{M}_+$ as "informational
 
 The elements of $\mathbb{M}_+$ include two important classes.
 
-**Unit-norm-form elements** ($\tilde{Q}\bar{\tilde{Q}} = e_0$, i.e. $\tilde{Q} \in SL(2,\mathbb{C})$). These preserve the norm form and act by **reversible** transformations. Examples: the boost biquaternions $\tilde{\Lambda}$ and the spatial rotation rotors. These correspond to Lorentz transformations. The stronger condition $\tilde{Q}\tilde{Q}^\dagger = e_0$ is satisfied by the rotation rotors, which are real quaternions, but not by the boosts.
+**Unit-norm elements** ($\tilde{Q}\bar{\tilde{Q}} = e_0$, i.e. $\tilde{Q} \in SL(2,\mathbb{C})$). These preserve the biquaternion norm and act by **reversible** transformations. Examples: the boost biquaternions $\tilde{\Lambda}$ and the spatial rotation rotors. These correspond to Lorentz transformations. The stronger condition $\tilde{Q}\tilde{Q}^\dagger = e_0$ is satisfied by the rotation rotors, which are real quaternions, but not by the boosts.
 
-**Idempotent elements** ($\tilde{Q}^2 = \tilde{Q}$). These do not preserve the norm form (unless $\tilde{Q} = e_0$). They act by **irreversible** projections: $\tilde{Q}_- \mapsto \tilde{P}\tilde{Q}_-\tilde{P}$. Examples: the pure-state projectors $\tilde{P}_\pm(\hat{\boldsymbol\mu}) = \tfrac{1}{2}(e_0 \pm i\hat{\boldsymbol\mu})$. These correspond to quantum-mechanical measurements.
+**Idempotent elements** ($\tilde{Q}^2 = \tilde{Q}$). These do not preserve the biquaternion norm (unless $\tilde{Q} = e_0$). They act by **irreversible** projections: $\tilde{Q}_- \mapsto \tilde{P}\tilde{Q}_-\tilde{P}$. Examples: the pure-state projectors $\tilde{P}_\pm(\hat{\boldsymbol\mu}) = \tfrac{1}{2}(e_0 \pm i\hat{\boldsymbol\mu})$. These correspond to quantum-mechanical measurements.
 
 The **dichotomy between reversible and irreversible actions** is intrinsic to the structure of $\mathbb{M}_+$: it is the biquaternion version of the fundamental dichotomy of quantum information theory between unitary evolution and measurement.
 
@@ -283,7 +283,7 @@ The correspondence is not an analogy. **It is the same mathematics**, expressed 
 
 The correspondence with quantum information is closely related to the **spin-1/2 formalism** of non-relativistic quantum mechanics.
 
-- In spin-1/2 quantum mechanics, the state space is $\mathbb{C}^2$, and the observables are the Pauli matrices $\sigma_k$ generating $\mathfrak{su}(2)$. The rotation group $SU(2)$ acts on the states.
+- In spin-1/2 quantum mechanics, the state space is $\mathbb{C}^2$, and the observables are the Pauli matrices $\sigma_k$ generating $\mathrm{SU}(2)$. The rotation group $SU(2)$ acts on the states.
 - In the biquaternion framework, the spinor module of $\mathbb{B}$ is the state space, and the Hermitian elements of $\mathbb{M}_+$ are the observables. The action is by rotor conjugation on the module.
 
 The difference is:
@@ -355,9 +355,9 @@ The common feature of these objects is that they are **Hermitian** (fixed under 
 
 ## Summary
 
-The Hermitian subspace $\mathbb{M}_+$ is a four-dimensional real subspace of the biquaternion algebra, consisting of elements with real scalar part and imaginary vector part. Its norm form has signature $(1,3)$, the temporal direction being the single positive one. It contains the identity, the boost biquaternions, the idempotents $\tilde{P}_\pm(\hat{\boldsymbol\mu}) = \tfrac{1}{2}(e_0 \pm i\hat{\boldsymbol\mu})$, and the Hermitian forms $\tilde{Q}\tilde{Q}^\dagger$.
+The Hermitian subspace $\mathbb{M}_+$ is a four-dimensional real subspace of the biquaternion algebra, consisting of elements with real scalar part and imaginary vector part. Its biquaternion norm has signature $(1,3)$, the temporal direction being the single positive one. It contains the identity, the boost biquaternions, the idempotents $\tilde{P}_\pm(\hat{\boldsymbol\mu}) = \tfrac{1}{2}(e_0 \pm i\hat{\boldsymbol\mu})$, and the Hermitian forms $\tilde{Q}\tilde{Q}^\dagger$.
 
-The elements of $\mathbb{M}_+$ act on the material space $\mathbb{M}_-$ by conjugation: $\tilde{Q}_- \mapsto \tilde{Q}_+\tilde{Q}_-\,\tilde{Q}_+^\dagger$. The action is linear, preserves $\mathbb{M}_-$, and preserves the norm form when $\tilde{Q}_+$ has unit norm form. The natural dichotomy between unit-norm-form and idempotent elements corresponds to the dichotomy between reversible evolution and irreversible measurement.
+The elements of $\mathbb{M}_+$ act on the material space $\mathbb{M}_-$ by conjugation: $\tilde{Q}_- \mapsto \tilde{Q}_+\tilde{Q}_-\,\tilde{Q}_+^\dagger$. The action is linear, preserves $\mathbb{M}_-$, and preserves the biquaternion norm when $\tilde{Q}_+$ has unit norm. The natural dichotomy between unit-norm and idempotent elements corresponds to the dichotomy between reversible evolution and irreversible measurement.
 
 The mathematics of $\mathbb{M}_+$ is structurally identical to the mathematics of quantum information theory for a two-state system. The idempotents are pure-state density matrices, the Hermitian elements are observables, the unitary elements are gates, and the trace formula $\mathrm{Tr}(\tilde{P}\tilde{Q}) = 2\mathrm{Sc}(\tilde{P}\tilde{Q})$ is the Born rule. The structural correspondence is not an analogy: it is the same mathematics, expressed in the biquaternion algebra.
 
@@ -372,7 +372,7 @@ The **physical hypothesis** is that this mathematics reflects physics: that $\ma
 | $Q_\mu = q_\mu + iq'_\mu$ | Complex coefficient of $e_\mu$: $q_\mu$ its real part, $q'_\mu$ its imaginary part |
 | $\tilde{Q} = q_0e_0 + iq'_ke_k = (ct')\,e_0 + i\mathbf{x}'$ | Informational element, both writings; $q_0 = ct'$, $q'_k = x'_k$ |
 | $i$ | Scalar imaginary, $i^2 = -1$ |
-| $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$ | Norm form |
+| $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$ | Biquaternion norm |
 | $\tilde{\Lambda} \in \mathbb{B}$, $\tilde{\Lambda}\bar{\tilde{\Lambda}} = e_0$ | Lorentz rotor (unit-norm biquaternion) |
 | $\tilde{P}_\pm(\hat{\boldsymbol\mu}) = \tfrac{1}{2}(e_0 \pm i\hat{\boldsymbol\mu})$ | Idempotent (pure-state projector) of unit trace |
 | $\tilde{Q}$ | General Hermitian element (observable) |

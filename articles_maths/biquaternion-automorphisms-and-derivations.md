@@ -44,6 +44,16 @@ $$
 
 **Dimension.** Since $\mathbb{B}^{\times}$ has complex dimension $4$ and the central scalars have complex dimension $1$, $\dim_{\mathbb{C}} \mathrm{Aut}_{\mathbb{C}}(\mathbb{B}) = 4 - 1 = 3$. Equivalently, the group has real dimension $6$, and it is connected.
 
+**Corollary (the projective linear group).** Under the matrix model $\mathbb{B}\cong M_2(\mathbb{C})$ the units are $GL(2,\mathbb{C})$ and the nonzero central scalars are the scalar matrices, so
+$$
+\operatorname{Aut}_{\mathbb{C}}(\mathbb{B})\cong\mathbb{B}^{\times}/\mathbb{C}^{\times}\cong PGL(2,\mathbb{C}),
+$$
+the projective general linear group, of complex dimension three. This is the biquaternion form of the classical isomorphism $\operatorname{Aut}(M_n(k))\cong PGL(n,k)$.
+
+**Corollary (the norm).** Every $\mathbb{C}$-linear automorphism preserves the biquaternion norm, and every $\mathbb{R}$-linear automorphism preserves the real norm $r=\sqrt{|N|}$. For an inner automorphism the complex statement is multiplicativity, $N(g\tilde{Q}g^{-1})=N(g)N(\tilde{Q})N(g)^{-1}=N(\tilde{Q})$; complex conjugation reverses the sign of the imaginary part, $N(\tilde{Q}^{*})=N(\tilde{Q})^{*}$, and so preserves $|N|$ without preserving $N$ itself.
+
+**Remark (automorphisms against isometries).** The automorphism group is a proper subgroup of the full isometry group $O(N)$ of the real norm on $\mathbb{B}\cong\mathbb{R}^8$: $PGL(2,\mathbb{C})$ has real dimension $6$, whereas the isometry group of a non-degenerate form of signature $(4,4)$ on $\mathbb{R}^8$ has real dimension $\tfrac{8\cdot7}{2}=28$. The automorphisms are the isometries that also preserve the algebra; the further isometries are not algebra maps.
+
 **Example.** For $g = e_1$, with $e_1^{-1} = -e_1$, conjugation fixes $e_1$, $e_0$, $i$ and reverses the signs of $e_2$ and $e_3$: $\iota_{e_1}(e_1) = e_1$, $\iota_{e_1}(e_2) = -e_2$, $\iota_{e_1}(e_3) = -e_3$. Indeed $e_1 e_2 e_1^{-1} = -(e_1 e_2)e_1 = -e_3 e_1 = -e_2$, using $e_1 e_2 = e_3$ and $e_3 e_1 = e_2$.
 
 **Remark.** Quaternion conjugation satisfies $\overline{xy} = \bar{y}\,\bar{x}$ and is an **anti-automorphism**, not an automorphism, so it is not in $\mathrm{Aut}_{\mathbb{C}}(\mathbb{B})$; complex conjugation is an automorphism but is not $\mathbb{C}$-linear, so it is not in $\mathrm{Aut}_{\mathbb{C}}(\mathbb{B})$ either. It reappears over $\mathbb{R}$ below.
@@ -120,7 +130,7 @@ So $D$ restricts to a derivation $\mathbb{C}_{\mathbb{B}} \to \mathbb{C}_{\mathb
 
 There is no semilinear analogue for derivations: a derivation cannot conjugate a coefficient.
 
-**Dimension and structure.** Consequently the real derivation space has real dimension $6$, that is, complex dimension $3$, and $\mathrm{Der}_{\mathbb{R}}(\mathbb{B}) = \mathrm{Der}_{\mathbb{C}}(\mathbb{B})$, the realification of the complex derivation algebra. As a real Lie algebra this is the orthogonal Lie algebra $\mathfrak{so}(1,3)$ of the Lorentz group, equivalently the bivector subspace of $\mathrm{Cl}^{+}_{1,3}$ under the commutator. The derivations $D_1, D_2, D_3$ of the previous section span it over $\mathbb{C}$, and together with $iD_1, iD_2, iD_3$ over $\mathbb{R}$.
+**Dimension and structure.** Consequently the real derivation space has real dimension $6$, that is, complex dimension $3$, and $\mathrm{Der}_{\mathbb{R}}(\mathbb{B}) = \mathrm{Der}_{\mathbb{C}}(\mathbb{B})$, the realification of the complex derivation algebra. As a real Lie algebra this is the orthogonal Lie algebra $\mathrm{SO}(1,3)$ of the Lorentz group, equivalently the bivector subspace of $\mathrm{Cl}^{+}_{1,3}$ under the commutator. The derivations $D_1, D_2, D_3$ of the previous section span it over $\mathbb{C}$, and together with $iD_1, iD_2, iD_3$ over $\mathbb{R}$.
 
 **Summary of the asymmetry.** For **automorphisms**, the real group is strictly larger than the complex one, because complex conjugation supplies a second coset. For **derivations**, the real and complex spaces coincide, because the center is étale over $\mathbb{R}$ and admits no nonzero derivation. This is a ground-field distinction and not a convention.
 
@@ -149,7 +159,7 @@ The two ground fields give the following table; the field is stated explicitly i
 | Center | $\mathbb{C}_{\mathbb{B}} = \mathbb{C} e_0$, dimension $1$ over $\mathbb{C}$ | $\mathbb{C}_{\mathbb{B}} \cong \mathbb{C}$, dimension $2$ over $\mathbb{R}$ |
 | Central simple? | yes, central simple over $\mathbb{C}$ | no: simple, but center $\mathbb{C} \neq \mathbb{R}$ |
 | Automorphism group | $\mathbb{B}^{\times}/\mathbb{C}^{\times}$, complex dimension $3$ ($6$ over $\mathbb{R}$), connected | $\mathrm{Aut}_{\mathbb{C}}(\mathbb{B}) \rtimes \mathbb{Z}/2$, real dimension $6$, two components |
-| Derivation space (the Lie algebra of the automorphism group) | $\mathrm{Der}_{\mathbb{C}}(\mathbb{B}) \cong \mathbb{B}/\mathbb{C}_{\mathbb{B}}$, complex dimension $3$ ($6$ over $\mathbb{R}$); traceless part, complex pure-vector part, bivectors | $\mathrm{Der}_{\mathbb{R}}(\mathbb{B}) = \mathrm{Der}_{\mathbb{C}}(\mathbb{B})$, real dimension $6$, isomorphic to the Lorentz algebra $\mathfrak{so}(1,3)$ |
+| Derivation space (the Lie algebra of the automorphism group) | $\mathrm{Der}_{\mathbb{C}}(\mathbb{B}) \cong \mathbb{B}/\mathbb{C}_{\mathbb{B}}$, complex dimension $3$ ($6$ over $\mathbb{R}$); traceless part, complex pure-vector part, bivectors | $\mathrm{Der}_{\mathbb{R}}(\mathbb{B}) = \mathrm{Der}_{\mathbb{C}}(\mathbb{B})$, real dimension $6$, isomorphic to the Lorentz algebra $\mathrm{SO}(1,3)$ |
 
 In summary: over $\mathbb{C}$ the algebra is central simple, every automorphism is inner, and $\mathrm{Aut}_{\mathbb{C}}(\mathbb{B}) \cong \mathbb{B}^{\times}/\mathbb{C}^{\times}$; over $\mathbb{R}$ complex conjugation adds a second, conjugate-linear coset, so $\mathrm{Aut}_{\mathbb{R}}(\mathbb{B}) \cong \mathrm{Aut}_{\mathbb{C}}(\mathbb{B}) \rtimes \mathbb{Z}/2$ is strictly larger; and over either field the derivations are the inner derivations $x \mapsto [a,x]$ with $a$ traceless, forming $\mathbb{B}/\mathbb{C}_{\mathbb{B}}$, of dimension $3$ over $\mathbb{C}$ and $6$ over $\mathbb{R}$, identified with the bivector part of $\mathrm{Cl}^{+}_{1,3}$.
 
@@ -168,7 +178,7 @@ In summary: over $\mathbb{C}$ the algebra is central simple, every automorphism 
 | $\mathrm{Aut}_{\mathbb{C}}(\mathbb{B})$ | Algebra automorphisms over $\mathbb{C}$, $\cong \mathbb{B}^{\times}/\mathbb{C}^{\times}$ |
 | $\mathrm{Aut}_{\mathbb{R}}(\mathbb{B})$ | Algebra automorphisms over $\mathbb{R}$, $\cong \mathrm{Aut}_{\mathbb{C}}(\mathbb{B}) \rtimes \mathbb{Z}/2$ |
 | $\mathrm{Der}_{\mathbb{C}}(\mathbb{B})$ | Derivations over $\mathbb{C}$, $\cong \mathbb{B}/\mathbb{C}_{\mathbb{B}}$ |
-| $\mathrm{Der}_{\mathbb{R}}(\mathbb{B})$ | Derivations over $\mathbb{R}$, $\cong \mathfrak{so}(1,3)$ as a real Lie algebra |
+| $\mathrm{Der}_{\mathbb{R}}(\mathbb{B})$ | Derivations over $\mathbb{R}$, $\cong \mathrm{SO}(1,3)$ as a real Lie algebra |
 | $\mathrm{ad}_a(x) = [a,x]$ | Inner derivation by $a$ |
 | $D_k = \tfrac{1}{2}\mathrm{ad}_{e_k}$ | Basis of $\mathrm{Der}_{\mathbb{C}}(\mathbb{B})$, $[D_1,D_2] = D_3$ etc. |
 | $\mathrm{Cl}_{1,3}^{+}$ | Even Clifford algebra; isomorphic to $\mathbb{B}$ |

@@ -23,7 +23,7 @@ The rung has two uses. It isolates exactly what makes the gcd computable by an i
 
 **(c)** For all $a, b \in R$ the greatest common divisor $\gcd(a,b)$ exists and is a Bézout combination, $(a,b) = (\gcd(a,b))$.
 
-**Proof.** (a) $\Rightarrow$ (b) is immediate. (b) $\Rightarrow$ (c) is the proposition of *GCD Domains* identifying a gcd with the generator of a principal ideal $(a)+(b)$. (c) $\Rightarrow$ (a): if $I = (a_1, \ldots, a_n)$ is finitely generated, then $I = (a_1, \ldots, a_{n-1}) + (a_n)$ equals $(\gcd(a_1,\ldots,a_{n-1})) + (a_n) = (\gcd(\gcd(a_1,\ldots,a_{n-1}), a_n))$ by induction, once $\gcd$ is known to exist for $n - 1$ elements; the induction is on $n$ and starts at $n = 2$, so every finitely generated ideal of $R$ is principal. $\square$
+**Proof.** (a) $\Rightarrow$ (b) is immediate. (b) $\Rightarrow$ (c) is the proposition of *GCD Domains* identifying a gcd with the generator of a principal ideal $(a)+(b)$. (c) $\Rightarrow$ (a): if $I = (a_1, \ldots, a_n)$ is finitely generated, then $I = (a_1, \ldots, a_{n-1}) + (a_n)$ equals $(\gcd(a_1,\ldots,a_{n-1})) + (a_n) = (\gcd(\gcd(a_1,\ldots,a_{n-1}), a_n))$ by induction, once $\gcd$ is known to exist for $n - 1$ elements; the induction is on $n$ and starts at $n = 2$, so every finitely generated ideal of $R$ is principal.
 
 The induction in the proof needs the gcd of more than two elements to exist; that follows from the two-element case, since $(\gcd(a,b),c)$ is principal and its generator is a gcd of $a, b, c$. The definition is thus genuinely a two-element condition.
 
@@ -33,11 +33,11 @@ $$
 \gcd(a,b) = a x + b y .
 $$
 
-**Proof.** By the proposition, $(a, b)$ is principal, say $(a,b) = (d)$; the generator $d$ is a gcd by the ideal-theoretic characterisation of *GCD Domains*, and $d \in (a,b)$ means precisely that $d = ax + by$ for some $x, y$. $\square$
+**Proof.** By the proposition, $(a, b)$ is principal, say $(a,b) = (d)$; the generator $d$ is a gcd by the ideal-theoretic characterisation of *GCD Domains*, and $d \in (a,b)$ means precisely that $d = ax + by$ for some $x, y$.
 
 **Corollary.** Every principal ideal domain — the rung *Principal Ideal Domains*, below this article in this category — is a Bézout domain, and every Bézout domain is a GCD domain.
 
-**Proof.** In a principal ideal domain every ideal is principal, so every finitely generated ideal is; and a Bézout domain has $(a,b)$ principal for all pairs, so gcds exist as in (c) of the proposition. $\square$
+**Proof.** In a principal ideal domain every ideal is principal, so every finitely generated ideal is; and a Bézout domain has $(a,b)$ principal for all pairs, so gcds exist as in (c) of the proposition.
 
 ### The gcd in a Bézout Domain
 
@@ -49,7 +49,7 @@ $$
 
 **(c)** $a_1, \ldots, a_n$ are coprime, in the sense that their only common divisors are units, if and only if $(a_1,\ldots,a_n) = R$.
 
-**Proof.** (a) and (b) follow by the induction of the proposition above, the combination statement from $\gcd \in (a_1,\ldots,a_n)$. (c) The common divisors are the divisors of the gcd $d$; they are all units exactly when $d$ is a unit, that is, when $(d) = R$. $\square$
+**Proof.** (a) and (b) follow by the induction of the proposition above, the combination statement from $\gcd \in (a_1,\ldots,a_n)$. (c) The common divisors are the divisors of the gcd $d$; they are all units exactly when $d$ is a unit, that is, when $(d) = R$.
 
 **Remark.** The passage from divisibility to linear combinations is what makes the gcd *effective*: a common divisor $c$ of $a$ and $b$ divides $ax + by$, so any identity $ax + by = 1$ certifies that no non-unit common divisor exists, without any factorisation being exhibited. This is the form in which the gcd is used in the classical rings $\mathbb{Z}$ and $K[x]$, and it is the reason the rung is named after the identity rather than after the gcd.
 
@@ -63,7 +63,7 @@ The two rungs are related by one implication and by one counterexample.
 
 **Theorem.** Every Bézout domain is a GCD domain. The converse fails: the polynomial ring $\mathbb{Z}[x]$ is a GCD domain that is not a Bézout domain.
 
-**Proof.** The implication is the corollary above. For the failure, $\mathbb{Z}[x]$ is a unique factorisation domain and hence a GCD domain, by *GCD Domains*, above this article, and *Unique Factorisation Domains*, below it in this category; but the ideal $(2, x)$ is not principal. Indeed, if $(2,x) = (d)$ then $d \mid 2$ and $d \mid x$; a common divisor of the constant $2$ and the polynomial $x$ is a unit of $\mathbb{Z}[x]$, by the description of the units in *Integral Domains*, above, since a non-unit divisor of $2$ is an associate of $2$ and $2 \nmid x$ in $\mathbb{Z}[x]$. A unit generates all of $\mathbb{Z}[x]$, whereas $(2,x)$ is a proper ideal: the evaluation map $\mathbb{Z}[x] \to \mathbb{Z}/2\mathbb{Z}$, $f \mapsto f(0) \bmod 2$, vanishes on $2$ and on $x$ and is not the zero map, since it sends $1$ to $1$. Hence $(2,x)$ is not principal and $\mathbb{Z}[x]$ is not a Bézout domain. $\square$
+**Proof.** The implication is the corollary above. For the failure, $\mathbb{Z}[x]$ is a unique factorisation domain and hence a GCD domain, by *GCD Domains*, above this article, and *Unique Factorisation Domains*, below it in this category; but the ideal $(2, x)$ is not principal. Indeed, if $(2,x) = (d)$ then $d \mid 2$ and $d \mid x$; a common divisor of the constant $2$ and the polynomial $x$ is a unit of $\mathbb{Z}[x]$, by the description of the units in *Integral Domains*, above, since a non-unit divisor of $2$ is an associate of $2$ and $2 \nmid x$ in $\mathbb{Z}[x]$. A unit generates all of $\mathbb{Z}[x]$, whereas $(2,x)$ is a proper ideal: the evaluation map $\mathbb{Z}[x] \to \mathbb{Z}/2\mathbb{Z}$, $f \mapsto f(0) \bmod 2$, vanishes on $2$ and on $x$ and is not the zero map, since it sends $1$ to $1$. Hence $(2,x)$ is not principal and $\mathbb{Z}[x]$ is not a Bézout domain.
 
 **Example.** In $\mathbb{Z}$ and in $K[x]$, $K$ a field (the field axioms are those of *Fields*, later in this category), every ideal is principal, so both are Bézout domains; the identity of the previous section is the classical Bézout identity in the first case and the gcd of polynomials in the second. In $K[x,y]$ the ideal $(x,y)$ is not principal, so the ring is not a Bézout domain; it is nevertheless a unique factorisation domain.
 
@@ -75,7 +75,7 @@ $$
 a^n + c_{n-1}a^{n-1}b + \cdots + c_0 b^n = 0,
 $$
 
-so $b \mid a^n$; since $a$ and $b$ are coprime, $a^n$ and $b$ are coprime as well by the gcd calculus above, so $b \mid 1$ and $b$ is a unit. Hence $u = ab^{-1} \in R$. The fraction field is *Localization and the Fraction Field*, below this article in this category. $\square$
+so $b \mid a^n$; since $a$ and $b$ are coprime, $a^n$ and $b$ are coprime as well by the gcd calculus above, so $b \mid 1$ and $b$ is a unit. Hence $u = ab^{-1} \in R$. The fraction field is *Localization and the Fraction Field*, below this article in this category.
 
 ---
 
@@ -83,7 +83,7 @@ so $b \mid a^n$; since $a$ and $b$ are coprime, $a^n$ and $b$ are coprime as wel
 
 **Theorem.** Let $R$ be a Bézout domain. Then the set of associate classes of nonzero elements of $R$, ordered by divisibility, is a lattice: every pair has a meet and a join, namely $\gcd(a,b)$ and $\operatorname{lcm}(a,b)$.
 
-**Proof.** The gcd exists by the proposition above, and the lcm exists by the identity $\gcd(a,b)\operatorname{lcm}(a,b) \sim ab$ of *GCD Domains*, above. In the divisibility order on classes, $d$ is the meet of $a$ and $b$ exactly when $d \mid a$, $d \mid b$ and every common divisor of $a$ and $b$ divides $d$, which is the definition of the gcd; the lcm is the join by the dual definition. $\square$
+**Proof.** The gcd exists by the proposition above, and the lcm exists by the identity $\gcd(a,b)\operatorname{lcm}(a,b) \sim ab$ of *GCD Domains*, above. In the divisibility order on classes, $d$ is the meet of $a$ and $b$ exactly when $d \mid a$, $d \mid b$ and every common divisor of $a$ and $b$ divides $d$, which is the definition of the gcd; the lcm is the join by the dual definition.
 
 **Corollary.** In a Bézout domain the principal ideals form a lattice under $+$ and $\cap$: both $(a) + (b) = (\gcd(a,b))$ and $(a) \cap (b) = (\operatorname{lcm}(a,b))$ are principal. For finitely many nonzero elements,
 
@@ -91,7 +91,7 @@ $$
 (a_1) + \cdots + (a_n) = (\gcd(a_1,\ldots,a_n)), \qquad (a_1) \cap \cdots \cap (a_n) = (\operatorname{lcm}(a_1,\ldots,a_n)) .
 $$
 
-**Proof.** The first identity is the defining property of a Bézout domain; the second is the corollary of *GCD Domains*, above, identifying the intersection of two principal ideals with the principal ideal generated by the lcm; both extend to $n$ elements by induction, the $n$-element gcd being the gcd of a two-element gcd and the next element, and likewise for the lcm. $\square$
+**Proof.** The first identity is the defining property of a Bézout domain; the second is the corollary of *GCD Domains*, above, identifying the intersection of two principal ideals with the principal ideal generated by the lcm; both extend to $n$ elements by induction, the $n$-element gcd being the gcd of a two-element gcd and the next element, and likewise for the lcm.
 
 **Remark.** In a general integral domain the meet of two associate classes need not exist, as $\mathbb{Z}[\sqrt{-5}]$ shows in *GCD Domains*, above; in a Bézout domain it always does, and the join as well. The divisibility order of a Bézout domain is therefore a lattice, and the map $a \mapsto (a)$ is an order-isomorphism from that lattice onto the lattice of principal ideals ordered by reverse inclusion.
 
@@ -103,15 +103,15 @@ $$
 
 **Theorem.** An integral domain is a principal ideal domain if and only if it is a Bézout domain and is Noetherian.
 
-**Proof.** A principal ideal domain is Bézout by the corollary above, and it is Noetherian because every ideal is generated by one element, hence finitely generated. Conversely, in a Bézout domain every finitely generated ideal is principal; if in addition every ideal is finitely generated, then every ideal is principal, which is the definition of a principal ideal domain. $\square$
+**Proof.** A principal ideal domain is Bézout by the corollary above, and it is Noetherian because every ideal is generated by one element, hence finitely generated. Conversely, in a Bézout domain every finitely generated ideal is principal; if in addition every ideal is finitely generated, then every ideal is principal, which is the definition of a principal ideal domain.
 
 **Corollary.** A Bézout domain is Noetherian if and only if it contains no infinite strictly increasing chain of principal ideals.
 
-**Proof.** If $R$ is Noetherian then no chain of ideals is infinite and strictly increasing. Conversely, if $R$ is not Noetherian, let $I$ be an ideal that is not finitely generated and choose elements $a_1 \in I$ and recursively $a_{n+1} \in I \setminus (a_1, \ldots, a_n)$; the set subtracted is nonempty, since otherwise $I = (a_1,\ldots,a_n)$ would be finitely generated. In a Bézout domain each $(a_1, \ldots, a_n)$ is principal, say $(a_1, \ldots, a_n) = (d_n)$; then $(d_n) \subsetneq (d_{n+1})$ for every $n$, because $a_{n+1} \in (d_{n+1})$ while $a_{n+1} \notin (a_1, \ldots, a_n) = (d_n)$. So $(d_1) \subsetneq (d_2) \subsetneq (d_3) \subsetneq \cdots$ is an infinite strictly increasing chain of principal ideals. $\square$
+**Proof.** If $R$ is Noetherian then no chain of ideals is infinite and strictly increasing. Conversely, if $R$ is not Noetherian, let $I$ be an ideal that is not finitely generated and choose elements $a_1 \in I$ and recursively $a_{n+1} \in I \setminus (a_1, \ldots, a_n)$; the set subtracted is nonempty, since otherwise $I = (a_1,\ldots,a_n)$ would be finitely generated. In a Bézout domain each $(a_1, \ldots, a_n)$ is principal, say $(a_1, \ldots, a_n) = (d_n)$; then $(d_n) \subsetneq (d_{n+1})$ for every $n$, because $a_{n+1} \in (d_{n+1})$ while $a_{n+1} \notin (a_1, \ldots, a_n) = (d_n)$. So $(d_1) \subsetneq (d_2) \subsetneq (d_3) \subsetneq \cdots$ is an infinite strictly increasing chain of principal ideals.
 
 **Theorem.** Let $R$ be a Bézout domain. Then $R$ is a unique factorisation domain if and only if $R$ is a principal ideal domain.
 
-**Proof.** A principal ideal domain is a unique factorisation domain by *Unique Factorisation Domains*, below this article in this category. Conversely, if the Bézout domain $R$ is a unique factorisation domain, then every nonzero non-unit is a product of irreducibles, and an infinite strictly increasing chain of principal ideals $(a_1) \subsetneq (a_2) \subsetneq \cdots$ is impossible, since $(a_n) \subseteq (a_{n+1})$ gives $a_n = a_{n+1} b_{n+1}$ and hence a strictly shrinking multiset of prime factors of the fixed element $a_1$, which cannot occur infinitely often; this is the ascending chain condition on principal ideals, and it is stated in *Unique Factorisation Domains*, below this article in this category. By the corollary above, $R$ is Noetherian, hence a principal ideal domain by the theorem above. $\square$
+**Proof.** A principal ideal domain is a unique factorisation domain by *Unique Factorisation Domains*, below this article in this category. Conversely, if the Bézout domain $R$ is a unique factorisation domain, then every nonzero non-unit is a product of irreducibles, and an infinite strictly increasing chain of principal ideals $(a_1) \subsetneq (a_2) \subsetneq \cdots$ is impossible, since $(a_n) \subseteq (a_{n+1})$ gives $a_n = a_{n+1} b_{n+1}$ and hence a strictly shrinking multiset of prime factors of the fixed element $a_1$, which cannot occur infinitely often; this is the ascending chain condition on principal ideals, and it is stated in *Unique Factorisation Domains*, below this article in this category. By the corollary above, $R$ is Noetherian, hence a principal ideal domain by the theorem above.
 
 The hypothesis "Bézout" is essential to the last theorem: $\mathbb{Z}[x]$ is a unique factorisation domain that is not a principal ideal domain, and it is not Bézout.
 
@@ -131,7 +131,7 @@ The set of algebraic integers is written $\overline{\mathbb{Z}}$ and called the 
 
 **Proposition.** $\overline{\mathbb{Z}}$ is a subring of $\mathbb{C}$ containing $\mathbb{Z}$, and it is an integral domain.
 
-**Proof.** That $\overline{\mathbb{Z}}$ is closed under addition and multiplication is the standard stability of integral elements under the ring operations: if $\alpha$ and $\beta$ satisfy monic equations of degrees $m$ and $n$, then every element of the $\mathbb{Z}$-module generated by the $mn$ products $\alpha^i \beta^j$ with $0 \leq i < m$, $0 \leq j < n$ is a $\mathbb{Z}$-combination of them, so the module is preserved by multiplication by $\alpha$ and by $\beta$ and hence by any polynomial in them, and $\alpha \pm \beta$ and $\alpha\beta$ are integral; a proof belongs to *Integral Extensions and Krull Dimension*, below this article in this category. As a subring of the field $\mathbb{C}$ it is an integral domain. $\square$
+**Proof.** That $\overline{\mathbb{Z}}$ is closed under addition and multiplication is the standard stability of integral elements under the ring operations: if $\alpha$ and $\beta$ satisfy monic equations of degrees $m$ and $n$, then every element of the $\mathbb{Z}$-module generated by the $mn$ products $\alpha^i \beta^j$ with $0 \leq i < m$, $0 \leq j < n$ is a $\mathbb{Z}$-combination of them, so the module is preserved by multiplication by $\alpha$ and by $\beta$ and hence by any polynomial in them, and $\alpha \pm \beta$ and $\alpha\beta$ are integral; a proof belongs to *Integral Extensions and Krull Dimension*, below this article in this category. As a subring of the field $\mathbb{C}$ it is an integral domain.
 
 **Example.** $\sqrt{2}$ and $\sqrt{-5}$ are algebraic integers, roots of $x^2 - 2$ and $x^2 + 5$; so are $\tfrac{1+\sqrt{-19}}{2}$ (root of $x^2 - x + 5$) and every $n$-th root of an integer. The element $\tfrac12$ is not an algebraic integer: if it satisfied a monic equation $\alpha^n + a_{n-1}\alpha^{n-1} + \cdots + a_0 = 0$ with integer coefficients, then multiplying by $2^n$ would give $1 + 2(\text{integer}) = 0$, which is impossible. Hence $\overline{\mathbb{Z}} \cap \mathbb{Q} = \mathbb{Z}$.
 
@@ -139,7 +139,7 @@ The set of algebraic integers is written $\overline{\mathbb{Z}}$ and called the 
 
 **Theorem.** The ring $\overline{\mathbb{Z}}$ of all algebraic integers is a Bézout domain: every finitely generated ideal of $\overline{\mathbb{Z}}$ is principal.
 
-**Proof.** This is a standard theorem of the literature, cited here rather than reproduced; the argument uses the valuation theory of the algebraic integers, which lies beyond this rung. The companion example is the ring of analytic functions on a non-compact Riemann surface, which is a Bézout domain by Helmer's theorem. $\square$
+**Proof.** This is a standard theorem of the literature, cited here rather than reproduced; the argument uses the valuation theory of the algebraic integers, which lies beyond this rung. The companion example is the ring of analytic functions on a non-compact Riemann surface, which is a Bézout domain by Helmer's theorem.
 
 **Theorem.** $\overline{\mathbb{Z}}$ is not Noetherian, not a principal ideal domain and not a unique factorisation domain.
 
@@ -149,7 +149,7 @@ $$
 (2) \subsetneq (2^{1/2}) \subsetneq (2^{1/4}) \subsetneq (2^{1/8}) \subsetneq \cdots
 $$
 
-is a strictly increasing chain of principal ideals: $2 = (2^{1/2})^2$ gives $(2) \subseteq (2^{1/2})$, and in general $2^{1/2^n} = (2^{1/2^{n+1}})^2$ gives $(2^{1/2^n}) \subseteq (2^{1/2^{n+1}})$; the inclusion is strict, because equality would give $2^{1/2^n} = 2^{1/2^{n+1}} \cdot r$ with $r \in \overline{\mathbb{Z}}$, and cancelling the nonzero factor $2^{1/2^{n+1}}$ would exhibit $2^{1/2^{n+1}}$ as a unit of $\overline{\mathbb{Z}}$, whose inverse $2^{-1/2^{n+1}}$ is not in $\overline{\mathbb{Z}}$, since its $2^{n+1}$-st power $\tfrac12$ is not an algebraic integer. So there is an infinite strictly increasing chain of principal ideals, and $\overline{\mathbb{Z}}$ is not Noetherian. A principal ideal domain is Noetherian, and a unique factorisation domain satisfies the ascending chain condition on principal ideals by *Unique Factorisation Domains*, below this article in this category, so $\overline{\mathbb{Z}}$ is neither. $\square$
+is a strictly increasing chain of principal ideals: $2 = (2^{1/2})^2$ gives $(2) \subseteq (2^{1/2})$, and in general $2^{1/2^n} = (2^{1/2^{n+1}})^2$ gives $(2^{1/2^n}) \subseteq (2^{1/2^{n+1}})$; the inclusion is strict, because equality would give $2^{1/2^n} = 2^{1/2^{n+1}} \cdot r$ with $r \in \overline{\mathbb{Z}}$, and cancelling the nonzero factor $2^{1/2^{n+1}}$ would exhibit $2^{1/2^{n+1}}$ as a unit of $\overline{\mathbb{Z}}$, whose inverse $2^{-1/2^{n+1}}$ is not in $\overline{\mathbb{Z}}$, since its $2^{n+1}$-st power $\tfrac12$ is not an algebraic integer. So there is an infinite strictly increasing chain of principal ideals, and $\overline{\mathbb{Z}}$ is not Noetherian. A principal ideal domain is Noetherian, and a unique factorisation domain satisfies the ascending chain condition on principal ideals by *Unique Factorisation Domains*, below this article in this category, so $\overline{\mathbb{Z}}$ is neither.
 
 **Corollary.** The Bézout domain $\overline{\mathbb{Z}}$ is not a principal ideal domain, so a Bézout domain need not be Noetherian.
 

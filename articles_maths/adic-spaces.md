@@ -23,7 +23,7 @@ This article defines Huber rings, continuous valuations, the adic spectrum and i
 
 **Example (the ring of definition of $\mathbb{Z}_p$).** $\mathbb{Z}_p$ with the $p$-adic topology is Huber with $A_0 = \mathbb{Z}_p$, $I = (p)$; $\mathbb{Q}_p$ with the $p$-adic topology is Huber with ring of definition $\mathbb{Z}_p$ and $I = (p)$, and it is Tate because $p$ is a topologically nilpotent unit in $\mathbb{Q}_p$.
 
-**Definition.** A **continuous valuation** on a Huber ring $A$ is a map $\lvert \cdot \rvert : A \to \Gamma \cup \{0\}$, where $\Gamma$ is a totally ordered abelian group written multiplicatively, such that $\lvert 0 \rvert = 0$, $\lvert 1 \rvert = 1$, $\lvert ab \rvert = \lvert a \rvert \lvert b \rvert$, $\lvert a + b \rvert \leq \max(\lvert a \rvert, \lvert b \rvert)$, and $\lvert \cdot \rvert$ is continuous for the topology of $A$ and the order topology on $\Gamma$. Two valuations are **equivalent** if one is a power of the other with a positive exponent, that is, if there is an order isomorphism of their value groups making the two maps agree; equivalence classes are the points. The **support** of a valuation is the prime ideal $\mathfrak{p} = \{a : \lvert a \rvert = 0\}$; the valuation is **non-degenerate** if the support contains no open ideal, and **analytic** if in addition the topology of $A$ is the topology induced by the valuation.
+**Definition.** A **continuous valuation** on a Huber ring $A$ is a map $\lvert \cdot \rvert : A \to \Gamma \cup \{0\}$, where $\Gamma$ is a totally ordered abelian group written multiplicatively, such that $\lvert 0 \rvert = 0$, $\lvert 1 \rvert = 1$, $\lvert ab \rvert = \lvert a \rvert \lvert b \rvert$, $\lvert a + b \rvert \leq \max(\lvert a \rvert, \lvert b \rvert)$, and $\lvert \cdot \rvert$ is continuous for the topology of $A$ and the order topology on $\Gamma$. Two valuations are **equivalent** if one is a power of the other with a positive exponent, that is, if there is an order isomorphism of their value groups making the two maps agree; equivalence classes are the points. The **support** of a valuation is the prime ideal $\mathrm{P} = \{a : \lvert a \rvert = 0\}$; the valuation is **non-degenerate** if the support contains no open ideal, and **analytic** if in addition the topology of $A$ is the topology induced by the valuation.
 
 **Proposition.** Let $A$ be a Huber ring and $\lvert \cdot \rvert$ a continuous valuation with value group $\Gamma$. Then the sets
 
@@ -33,7 +33,7 @@ $$
 
 are an open subring and an open ideal of $A$ respectively, and the pair is a ring of definition. If $\lvert \cdot \rvert$ is continuous then it is bounded by a constant multiple of the norm of any fixed ring of definition, and its support is a prime ideal.
 
-**Proof.** Multiplicativity makes $A^\circ$ closed under multiplication, and the ultrametric inequality makes it closed under addition; continuity of the valuation at $0$ makes $A^\circ$ a neighbourhood of $0$, hence open, and it is a subring containing $1$. The set $A^{\circ\circ}$ is an ideal contained in $A^\circ$ by the same two properties and is open, and its complement in $A^\circ$ is the set of units of $A^\circ$ because an element of value $1$ has inverse of value $1$. The boundedness statement follows because a continuous homomorphism from a topological group to an ordered group with the order topology is bounded on a neighbourhood of $0$. $\square$
+**Proof.** Multiplicativity makes $A^\circ$ closed under multiplication, and the ultrametric inequality makes it closed under addition; continuity of the valuation at $0$ makes $A^\circ$ a neighbourhood of $0$, hence open, and it is a subring containing $1$. The set $A^{\circ\circ}$ is an ideal contained in $A^\circ$ by the same two properties and is open, and its complement in $A^\circ$ is the set of units of $A^\circ$ because an element of value $1$ has inverse of value $1$. The boundedness statement follows because a continuous homomorphism from a topological group to an ordered group with the order topology is bounded on a neighbourhood of $0$.
 
 ### The Adic Spectrum
 
@@ -57,7 +57,7 @@ which generate the analytic topology; that topology refines the spectral one, si
 
 **Theorem.** Let $(A, A^+)$ be a Huber pair with $A$ complete. Then $\operatorname{Spa}(A, A^+)$ with the spectral topology is compact and satisfies the following separation property: it is a spectral space in the sense of Hochster, that is, it is homeomorphic to the spectrum of a ring with the Zariski topology; in particular it is quasi-compact and sober. It is Hausdorff for the analytic topology when $A$ is strongly noetherian, and it is then a compact Hausdorff space on the rational subsets.
 
-**Proof.** The compactness of the spectral topology is Huber's theorem: a continuous valuation on a Huber ring is bounded on a ring of definition, so that the continuous valuations with $\lvert a\rvert \leq 1$ on $A^+$ embed as a closed subspace of a product of compact intervals attached to the rings of definition, and Tychonoff gives compactness; the spectral-space property is the statement that the topology has a basis of quasi-compact opens closed under finite intersections and that every irreducible closed subset has a generic point, both of which follow from the corresponding properties of the spectra of the rings of definition. Hausdorffness for the analytic topology in the strongly noetherian case is Huber's theorem, using the noetherian hypothesis to control the rational subsets. $\square$
+**Proof.** The compactness of the spectral topology is Huber's theorem: a continuous valuation on a Huber ring is bounded on a ring of definition, so that the continuous valuations with $\lvert a\rvert \leq 1$ on $A^+$ embed as a closed subspace of a product of compact intervals attached to the rings of definition, and Tychonoff gives compactness; the spectral-space property is the statement that the topology has a basis of quasi-compact opens closed under finite intersections and that every irreducible closed subset has a generic point, both of which follow from the corresponding properties of the spectra of the rings of definition. Hausdorffness for the analytic topology in the strongly noetherian case is Huber's theorem, using the noetherian hypothesis to control the rational subsets.
 
 ---
 
@@ -75,13 +75,13 @@ for the topology of the rational subset, namely the topology in which the denomi
 
 **Theorem (the sheaf property).** Let $(A, A^+)$ be a Huber pair with $A$ complete. Then the structure presheaf on $\operatorname{Spa}(A, A^+)$ is a sheaf for the analytic topology on the rational subsets: for every admissible covering by rational subsets and every compatible family of sections there is a unique global section. The stalks are the local rings $O_x$ with maximal ideal the functions of value $0$ at $x$, and the completion of the stalk at its maximal ideal is the **completed local ring** $\widehat{O_x}$, whose residue field is $\mathcal{H}(x)$, the completed residue field of the valuation.
 
-**Proof.** The sheaf property is Huber's theorem; it is proved by reducing to the case of a Tate ring, where the rational subsets generate the topology and the sections can be computed by a Mittag–Leffler argument on the completions, and then treating the general case by a noetherian approximation. The description of the stalks is standard. The proof is quoted as a standard theorem. $\square$
+**Proof.** The sheaf property is Huber's theorem; it is proved by reducing to the case of a Tate ring, where the rational subsets generate the topology and the sections can be computed by a Mittag–Leffler argument on the completions, and then treating the general case by a noetherian approximation. The description of the stalks is standard. The proof is quoted as a standard theorem.
 
 **Definition.** An **affinoid adic space** is a space of the form $\operatorname{Spa}(A, A^+)$ for a complete Huber pair, with the analytic topology and the structure sheaf. A **locally adic space** is a topologically ringed space locally isomorphic to an affinoid adic space. An **adic space** in Huber's sense is a locally adic space satisfying a further "noetherian-like" hypothesis, or, in the general sense used here, any locally adic space; the article adopts the general convention and calls them all adic spaces. The space is **analytic** if all its points are analytic valuations.
 
 **Proposition.** The affinoid adic spaces form a full subcategory of the category of adic spaces, and the structure sheaf of an affinoid space has global sections $A$ when $A$ is complete and the pair is of definition.
 
-**Proof.** The first statement is immediate from the definition of local isomorphism; the second is the sheaf property applied to the covering by the whole space, whose ring of sections is the completion of $A$ at the topology, which is $A$ by completeness. $\square$
+**Proof.** The first statement is immediate from the definition of local isomorphism; the second is the sheaf property applied to the covering by the whole space, whose ring of sections is the completion of $A$ at the topology, which is $A$ by completeness.
 
 ### Fibre Products and Morphisms
 
@@ -95,7 +95,7 @@ $$
 
 where $\widehat{\otimes}$ denotes the completion of the tensor product for the appropriate Huber topology.
 
-**Proof.** The completed tensor product is the coproduct in the category of complete Huber pairs, and the universal property of the adic spectrum then gives the fibre product. The existence of the general fibre product follows by gluing the affine pieces; the details are standard. $\square$
+**Proof.** The completed tensor product is the coproduct in the category of complete Huber pairs, and the universal property of the adic spectrum then gives the fibre product. The existence of the general fibre product follows by gluing the affine pieces; the details are standard.
 
 ---
 
@@ -111,21 +111,21 @@ $$
 
 in the quasi-compact and quasi-separated case, under which affinoid algebras correspond to complete Tate Huber rings of definition and the rigid G-topology corresponds to the analytic topology.
 
-**Proof.** The functor is constructed affine-locally: a $K$-affinoid algebra $A$ corresponds to the Huber pair $(A, A^\circ)$ with $A^\circ$ the unit ball, and the points of $\operatorname{Spa}(A, A^\circ)$ are the continuous multiplicative seminorms, with the classical points among them. The comparison of the sheaf theories is Huber's theorem, using Tate's acyclicity on the rigid side. It is quoted as standard. $\square$
+**Proof.** The functor is constructed affine-locally: a $K$-affinoid algebra $A$ corresponds to the Huber pair $(A, A^\circ)$ with $A^\circ$ the unit ball, and the points of $\operatorname{Spa}(A, A^\circ)$ are the continuous multiplicative seminorms, with the classical points among them. The comparison of the sheaf theories is Huber's theorem, using Tate's acyclicity on the rigid side. It is quoted as standard.
 
 ### Berkovich Spaces
 
 **Theorem (Berkovich spaces as adic spaces).** Let $K$ be a complete non-Archimedean field. The **Berkovich spectrum** $M(A)$ of a $K$-affinoid algebra $A$ is the set of points of $\operatorname{Spa}(A, A^\circ)$ whose valuation takes values in $\mathbb{R}_{\geq 0}$, that is, the points with value group a subgroup of $\mathbb{R}_{>0}$; the Berkovich topology agrees with the analytic topology on this subset, and the completed residue fields $\mathcal{H}(x)$ agree.
 
-**Proof.** A bounded multiplicative seminorm on $A$ is a continuous valuation whose value group may be taken to be a subgroup of $\mathbb{R}_{>0}$ after passing to an equivalent representative; the equivalence is the standard normalisation. The agreement of the topologies follows from the fact that the rational subsets are generated by the conditions $\lvert f \rvert \leq \lvert g \rvert$, which are exactly the conditions defining the Berkovich topology, and the agreement of the completed residue fields is immediate from the definitions. $\square$
+**Proof.** A bounded multiplicative seminorm on $A$ is a continuous valuation whose value group may be taken to be a subgroup of $\mathbb{R}_{>0}$ after passing to an equivalent representative; the equivalence is the standard normalisation. The agreement of the topologies follows from the fact that the rational subsets are generated by the conditions $\lvert f \rvert \leq \lvert g \rvert$, which are exactly the conditions defining the Berkovich topology, and the agreement of the completed residue fields is immediate from the definitions.
 
 **Remark.** The comparison shows exactly what is lost and gained in the passage from Berkovich to adic geometry: the adic spectrum contains points whose value groups are non-Archimedean and not embeddable in $\mathbb{R}_{>0}$, which are absent from the Berkovich space; and it contains the non-analytic points, which are the points coming from the formal geometry. Both are needed for the perfectoid theory.
 
 ### Formal Schemes
 
-**Theorem (the adic generic fibre).** Let $\mathfrak{X}$ be a formal scheme locally of finite type over $\operatorname{Spf} R$ for a complete adic ring $R$ with a topologically nilpotent unit (equivalently, $R$ Tate). Then there is an adic space $\mathfrak{X}^{\mathrm{ad}}$ with the same underlying set of points as the rigid generic fibre of *Formal Schemes*, obtained by taking the adic spectrum of the Huber pairs of the affinoid localisations and gluing; the analytic points of $\mathfrak{X}^{\mathrm{ad}}$ are exactly the points of the rigid generic fibre $\mathfrak{X}_K$.
+**Theorem (the adic generic fibre).** Let $\mathrm{X}$ be a formal scheme locally of finite type over $\operatorname{Spf} R$ for a complete adic ring $R$ with a topologically nilpotent unit (equivalently, $R$ Tate). Then there is an adic space $\mathrm{X}^{\mathrm{ad}}$ with the same underlying set of points as the rigid generic fibre of *Formal Schemes*, obtained by taking the adic spectrum of the Huber pairs of the affinoid localisations and gluing; the analytic points of $\mathrm{X}^{\mathrm{ad}}$ are exactly the points of the rigid generic fibre $\mathrm{X}_K$.
 
-**Proof.** This is the adic form of Raynaud's theorem; the formal affine pieces $\operatorname{Spf} A$ give the Huber pairs $(A \otimes_R K, A^\circ)$ and the gluing is compatible with the formal gluing. The identification of the analytic points follows from the comparison with the rigid theory. It is quoted as standard. $\square$
+**Proof.** This is the adic form of Raynaud's theorem; the formal affine pieces $\operatorname{Spf} A$ give the Huber pairs $(A \otimes_R K, A^\circ)$ and the gluing is compatible with the formal gluing. The identification of the analytic points follows from the comparison with the rigid theory. It is quoted as standard.
 
 **Remark.** The adic framework has a further advantage over both the rigid and the formal framework: it contains the analytic points and the non-analytic points in one object, and it has honest fibre products and a good theory of proper morphisms without the restriction to the quasi-compact case. This is why it is the language of perfectoid spaces.
 
@@ -167,13 +167,13 @@ The **structure sheaf** assigns to a rational subset the completion of the local
 | $\operatorname{Spa}(A, A^+)$ | The adic spectrum |
 | $\lvert \cdot \rvert$ | A continuous valuation |
 | $\Gamma$ | Value group of a valuation |
-| $\mathfrak{p}$ | Support $\{a : \lvert a \rvert = 0\}$ of a valuation |
+| $\mathrm{P}$ | Support $\{a : \lvert a \rvert = 0\}$ of a valuation |
 | $R(f_1, \dots, f_n/g)$ | Rational subset $\{\lvert f_i \rvert \leq \lvert g \rvert \neq 0\}$ |
 | $O_{\operatorname{Spa}(A, A^+)}$ | Structure sheaf of complete topological rings |
 | $\mathcal{H}(x)$ | Completed residue field at a point |
 | $\widehat{O_x}$ | Completed local ring at a point |
 | $\mathbb{D}^{\mathrm{ad}}$, $\mathbb{A}^{1,\mathrm{ad}}$ | The adic unit disc and the adic affine line |
-| $\mathcal{O}$, $\mathfrak{m}$, $k$ | Valuation ring, maximal ideal and residue field of $K$ |
+| $\mathcal{O}$, $\mathrm{M}$, $k$ | Valuation ring, maximal ideal and residue field of $K$ |
 | $A \widehat{\otimes}_B C$ | Completed tensor product of Huber rings |
 
 

@@ -20,7 +20,7 @@ The fourth conjugation, the reversal $\flat = -\dagger$, has the same eigenspace
 
 ## The Six Subspaces at a Glance
 
-| subspace | defining condition | real basis | $\dim_{\mathbb{R}}$ | subalgebra | norm form |
+| subspace | defining condition | real basis | $\dim_{\mathbb{R}}$ | subalgebra | norm |
 |---|---|---|---|---|---|
 | $\mathbb{C}_{\mathbb{B}}$ | $\bar{\tilde{Q}} = \tilde{Q}$ | $e_0, ie_0$ | $2$ | yes, $\cong \mathbb{C}$ | $Q_0^2$, complex, real signature $(1,1)$ |
 | $\mathrm{Vect}(\mathbb{B})$ | $\bar{\tilde{Q}} = -\tilde{Q}$ | $e_1,e_2,e_3,ie_1,ie_2,ie_3$ | $6$ | no, Lie | $Q_1^2+Q_2^2+Q_3^2$, complex, real signature $(3,3)$ |

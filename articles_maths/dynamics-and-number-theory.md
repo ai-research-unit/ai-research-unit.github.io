@@ -43,7 +43,7 @@ $$
 
 which for the branches $T|_{(\frac{1}{k+1},\frac1k]}(x)=\frac1x-k$ reduces to a telescoping sum.
 
-*Proof.* The preimage of $(y,1]$ under $T$ is the union of the intervals $(\frac{1}{k+y},\frac1k)$, $k \ge1$; summing the Gauss measure of these intervals gives the identity by the telescoping of $\log(1+\frac{1}{k})-\log(1+\frac{1}{k+y})$, and the identity is the stated invariance. The ergodicity follows from the exactness of $T$, or from the spectral gap of the Gauss–Kuzmin–Wirsing operator acting on the functions of bounded variation, which makes the invariant density unique; the uniqueness of the absolutely continuous invariant measure is then the standard consequence. $\square$
+*Proof.* The preimage of $(y,1]$ under $T$ is the union of the intervals $(\frac{1}{k+y},\frac1k)$, $k \ge1$; summing the Gauss measure of these intervals gives the identity by the telescoping of $\log(1+\frac{1}{k})-\log(1+\frac{1}{k+y})$, and the identity is the stated invariance. The ergodicity follows from the exactness of $T$, or from the spectral gap of the Gauss–Kuzmin–Wirsing operator acting on the functions of bounded variation, which makes the invariant density unique; the uniqueness of the absolutely continuous invariant measure is then the standard consequence.
 
 **Theorem (Gauss–Kuzmin).** For every interval $A \subseteq(0,1]$,
 
@@ -71,7 +71,7 @@ acting on the functions on $[0,1]$; the Gauss density $h(x)=\frac{1}{(1+x)\log2}
 
 **Theorem (spectral gap; Wirsing, Babenko, Mayer).** The operator $\mathcal P$ acting on a suitable Banach space of holomorphic functions on the disc $|z-1|<r$ with $r>\frac12$, or on the functions of bounded variation on $[0,1]$, has the eigenvalue $1$ with a simple eigenfunction the Gauss density, its remaining spectrum inside a disc of radius strictly less than $1$, and in particular an isolated second eigenvalue $\lambda_2=-0.303663\ldots$, the **Gauss–Kuzmin–Wirsing constant**; consequently the convergence in the Gauss–Kuzmin theorem is exponentially fast with rate $|\lambda_2|$ up to the logarithmic factor of the variation norm.
 
-*Proof (sketch).* One shows that $\mathcal P$ is a compact perturbation of a rank-one operator on the appropriate analytic space, using the analyticity of the branches and the decay of the coefficients, and that the eigenvalue $1$ is simple because the fixed point equation $\mathcal Pf=f$ has the unique analytic solution $h$ up to scalars; the compactness gives the discrete spectrum off the unit circle and the numerical value of $\lambda_2$ is computed from the integral equation of the operator. $\square$
+*Proof (sketch).* One shows that $\mathcal P$ is a compact perturbation of a rank-one operator on the appropriate analytic space, using the analyticity of the branches and the decay of the coefficients, and that the eigenvalue $1$ is simple because the fixed point equation $\mathcal Pf=f$ has the unique analytic solution $h$ up to scalars; the compactness gives the discrete spectrum off the unit circle and the numerical value of $\lambda_2$ is computed from the integral equation of the operator.
 
 ### The Natural Extension and Exactness
 
@@ -93,7 +93,7 @@ projects onto the Gauss map in the first coordinate and onto the backward contin
 
 **Theorem (exactness and decorrelation).** The Gauss map is exact: the tail $\sigma$-algebra $\bigcap_{n\ge0}T^{-n}\mathcal B$ is trivial, and consequently it is ergodic and mixing for the Gauss measure. The decay of correlations of Hölder functions is exponential, with the rate given by the spectral radius of the Gauss–Kuzmin–Wirsing operator on the complement of the eigenvalue $1$; the natural extension inherits the exponential mixing, and it is Bernoulli, so the continued fraction process is Bernoulli up to the natural extension. The mixing is the dynamical statement behind the convergence of the distributions in the Gauss–Kuzmin theorem and behind the limit theorems of the next section.
 
-*Proof (sketch).* The exactness is proved by showing that the transfer operator sends the functions of bounded variation into a space on which it is a strict contraction of the part with mean zero; the Bernoulli property follows from the very weak Bernoulli condition verified by the bounded distortion of the branches of $T^n$. $\square$
+*Proof (sketch).* The exactness is proved by showing that the transfer operator sends the functions of bounded variation into a space on which it is a strict contraction of the part with mean zero; the Bernoulli property follows from the very weak Bernoulli condition verified by the bounded distortion of the branches of $T^n$.
 
 ## Statistics, Equidistribution and Diophantine Approximation
 
@@ -107,7 +107,7 @@ $$
 
 so that $\mu(a_1=1)=\log_2\frac43=0.41504\ldots$ and the distribution of $a_n$ converges to the same law; the mean of $a_1$ is infinite, $\int a_1\,d\mu=\infty$, because the tail is $\mu(a_1=k)\sim\frac1{k^2\log2}$.
 
-*Proof.* The set $\{a_1=k\}$ is the interval $(\frac{1}{k+1},\frac1k]$, whose Gauss measure is $\frac{1}{\log2}\log\frac{1+1/k}{1+1/(k+1)}=\frac1{\log2}\log\frac{(k+1)^2}{k(k+2)}$; the distribution of $a_n$ converges to the law of $a_1$ by the Gauss–Kuzmin theorem, and the divergence of the mean is the divergence of the harmonic tail. $\square$
+*Proof.* The set $\{a_1=k\}$ is the interval $(\frac{1}{k+1},\frac1k]$, whose Gauss measure is $\frac{1}{\log2}\log\frac{1+1/k}{1+1/(k+1)}=\frac1{\log2}\log\frac{(k+1)^2}{k(k+2)}$; the distribution of $a_n$ converges to the law of $a_1$ by the Gauss–Kuzmin theorem, and the divergence of the mean is the divergence of the harmonic tail.
 
 **Theorem (law of large numbers and Lévy's constant).** For Lebesgue-almost every $x$,
 
@@ -123,7 +123,7 @@ $$
 \frac{\pi^2}{12\log2}=1.186569\ldots,
 $$
 
-which is exactly half the measure-theoretic entropy $h(T)=\frac{\pi^2}{6\log2}=2.373138\ldots$ of the Gauss map; the identity $L=\frac12h(T)$ between the Lévy constant and the entropy is the arithmetic form of the relation between the entropy and the mean return time of the modular flow, established in the next section. $\square$
+which is exactly half the measure-theoretic entropy $h(T)=\frac{\pi^2}{6\log2}=2.373138\ldots$ of the Gauss map; the identity $L=\frac12h(T)$ between the Lévy constant and the entropy is the arithmetic form of the relation between the entropy and the mean return time of the modular flow, established in the next section.
 
 **Theorem (Khinchin's theorem; the geometric mean).** For Lebesgue-almost every $x$,
 
@@ -161,7 +161,7 @@ has finitely many solutions in the rationals $\frac pq$ when $\sum_q\frac{\psi(q
 
 **Theorem (Artin; Series).** The geodesic flow on the modular surface is a cross-section-suspension of the Gauss map: the return map of the flow to the cross-section is conjugate to the Gauss map, the return time function is $2\log(1/x)$ up to an additive constant, and the natural extension of the Gauss map is the return map to the cross-section of the two-dimensional extension of the flow. Consequently the ergodicity of the modular flow, the mixing, and the equidistribution of its periodic orbits, are equivalent to the corresponding properties of the Gauss map. Since the mean of $\log(1/x)$ under $\mu$ is the Lévy constant $\frac{\pi^2}{12\log2}$, the mean return time is twice it, namely the entropy $\frac{\pi^2}{6\log2}$ of the Gauss map, and Abramov's formula $h_{\mathrm{flow}}=h(T)/\bar\tau$ shows that the entropy of the flow is $1$ in this normalisation.
 
-*Proof (sketch).* The strongly stable and strongly unstable manifolds of the modular flow are the horocycles; the cross-section is a set of horocycle arcs, and the return map is computed by the action of the modular group on the endpoints, which reproduces the recursion of the continued fraction algorithm. $\square$
+*Proof (sketch).* The strongly stable and strongly unstable manifolds of the modular flow are the horocycles; the cross-section is a set of horocycle arcs, and the return map is computed by the action of the modular group on the endpoints, which reproduces the recursion of the continued fraction algorithm.
 
 **Theorem (ergodicity and equidistribution of the modular flow).** The modular geodesic flow is ergodic and mixing with respect to the Liouville measure, its periodic orbits equidistribute, and its closed geodesics are in bijection with the conjugacy classes of hyperbolic elements of $SL(2,\mathbb{Z})$, hence with the periodic continued fractions; the distribution of the closed geodesics and the asymptotics of their counting function are governed by the equidistribution theory of *Homogeneous Dynamics*, *Ratner's Theorems* and *Equidistribution*, of which the modular case is the simplest instance. The ergodicity and the mixing of the geodesic flow of a hyperbolic surface are those, and the counting of the closed geodesics by the trace formula is the arithmetic input of the *Lattices in Lie Groups* and the analytic number theory of the corpus.
 

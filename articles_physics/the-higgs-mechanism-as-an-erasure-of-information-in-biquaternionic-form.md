@@ -229,14 +229,14 @@ One consequence is worth recording as a caution. If the phase were a *physical* 
 
 **Transcribed from standard physics.** The Higgs mechanism itself; the Goldstone theorem, the count of would-be Goldstone bosons, and the degree-of-freedom balance $2+2 = 1+3$; the unitary gauge; the Proca mass form; the identification of the longitudinal polarization; and Landauer's principle. The physics companion derives the mechanism; this article reads it.
 
-**Not supplied.** A non-abelian or electroweak Higgs mechanism: the framework's scalar is a singlet of the $\mathfrak{su}(2)$ factor and a central scalar cannot break $SU(2)$; there is no electroweak doublet, no hypercharge assignment, and no constructed Yukawa coupling to the chiral fermions. The mass of the radial mode depends on the potential's coefficient $\beta$, which the framework does not fix. And there is no empirical consequence distinguishing the reading from standard scalar electrodynamics. These gaps are the physics companion's, and they are inherited here unchanged.
+**Not supplied.** A non-abelian or electroweak Higgs mechanism: the framework's scalar is a singlet of the $\mathrm{SU}(2)$ factor and a central scalar cannot break $SU(2)$; there is no electroweak doublet, no hypercharge assignment, and no constructed Yukawa coupling to the chiral fermions. The mass of the radial mode depends on the potential's coefficient $\beta$, which the framework does not fix. And there is no empirical consequence distinguishing the reading from standard scalar electrodynamics. These gaps are the physics companion's, and they are inherited here unchanged.
 
 **Companion articles.** The construction rests on the following written articles of the series.
 
 - Companion article *The Higgs Mechanism in Biquaternionic Form*, for the physics of the mechanism, the potential, the Proca mass, the Goldstone count, and the non-abelian gap.
 - Companion article *The Gauge Principle in Biquaternionic Form*, for the central complex scalar, the local central phase, and the connection.
 - Companion article *The Covariant Derivative and Gauge Connection in Biquaternionic Form*, for the covariant derivative at the vacuum and the covariant square.
-- Companion article *Non-Abelian Gauge Fields in Biquaternionic Form*, for the $\mathfrak{su}(2)$ factor, the adjoint law, and the reality-condition gap.
+- Companion article *Non-Abelian Gauge Fields in Biquaternionic Form*, for the $\mathrm{SU}(2)$ factor, the adjoint law, and the reality-condition gap.
 - Companion article *Chiral Fermions in the Biquaternion Framework*, for the chirality selection rule and the unconstructed Yukawa coupling.
 - Companion article *Decoherence as Idempotent Projection*, for the idempotent-projection model of a stable preferred description.
 - Companion article *Relative Entropy and the Biquaternion Framework*, for the relative entropy and its invariance under unitary re-encoding.

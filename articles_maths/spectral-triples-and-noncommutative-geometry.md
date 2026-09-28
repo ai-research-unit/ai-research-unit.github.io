@@ -32,7 +32,7 @@ $$
 
 **Theorem.** The function $d$ is symmetric, satisfies the triangle inequality, and takes values in $[0,+\infty]$, so it is a pseudometric on the state space; two states satisfy $d(\varphi,\psi)=0$ exactly when they agree on the constraint set $C=\{a\in A:\|[D,\pi(a)]\|\leq1\}$, so $d$ is a metric exactly when $C$ separates the states. It is finite-valued when the constraint set is norm-bounded, in particular in the commutative case of the theorem below.
 
-**Proof.** Symmetry is immediate from the definition. For the triangle inequality, $|\varphi(a)-\psi(a)|\leq|\varphi(a)-\chi(a)|+|\chi(a)-\psi(a)|$ pointwise, and the supremum over the constraint set is subadditive. The vanishing statement is the definition: $d(\varphi,\psi)=0$ says that $\varphi$ and $\psi$ take the same value at every element of $C$. Norm-boundedness of $C$ bounds $d$, because $|\varphi(a)-\psi(a)|\leq2\|a\|$ for states of norm one. $\square$
+**Proof.** Symmetry is immediate from the definition. For the triangle inequality, $|\varphi(a)-\psi(a)|\leq|\varphi(a)-\chi(a)|+|\chi(a)-\psi(a)|$ pointwise, and the supremum over the constraint set is subadditive. The vanishing statement is the definition: $d(\varphi,\psi)=0$ says that $\varphi$ and $\psi$ take the same value at every element of $C$. Norm-boundedness of $C$ bounds $d$, because $|\varphi(a)-\psi(a)|\leq2\|a\|$ for states of norm one.
 
 **Theorem (commutative case).** Let $M$ be a closed spin Riemannian manifold, let $A=C^{\infty}(M)$ act on $H=L^{2}(M,S)$ by pointwise multiplication, and let $D$ be the Cauchy–Riemann operator of the spinor bundle. Then the pure states of $A$ are the points of $M$ and
 
@@ -46,7 +46,7 @@ $$
 d(x,y)=\sup\bigl\{|f(x)-f(y)|:\|\nabla f\|_{\infty}\leq1\bigr\}.
 $$
 
-The supremum is at most the geodesic distance, since $|f(x)-f(y)|\leq\|\nabla f\|_\infty\cdot(\text{length of a shortest geodesic})$. It is at least the geodesic distance: the function $f(z)=\min\{\rho(x,z),\rho(x,y)\}$ is $1$-Lipschitz, vanishes at $x$ and equals $\rho(x,y)$ at $y$, and a mollification in local charts produces smooth functions agreeing with it at $x$ and at $y$ up to an arbitrarily small error and having no larger Lipschitz constant, so the constraint $\|\nabla f\|_{\infty}\leq1$ is met and the value $\rho(x,y)$ is approached. Hence equality. $\square$
+The supremum is at most the geodesic distance, since $|f(x)-f(y)|\leq\|\nabla f\|_\infty\cdot(\text{length of a shortest geodesic})$. It is at least the geodesic distance: the function $f(z)=\min\{\rho(x,z),\rho(x,y)\}$ is $1$-Lipschitz, vanishes at $x$ and equals $\rho(x,y)$ at $y$, and a mollification in local charts produces smooth functions agreeing with it at $x$ and at $y$ up to an arbitrarily small error and having no larger Lipschitz constant, so the constraint $\|\nabla f\|_{\infty}\leq1$ is met and the value $\rho(x,y)$ is approached. Hence equality.
 
 **Remark.** The distance formula is the reason $D$ is called the metric datum: it is the operator, not a metric tensor, that encodes the geometry. The formula is manifestly algebraic — it uses only the representation and the commutators — so it makes sense for an arbitrary algebra, and it is the definition of the metric in the noncommutative case. In the finite example of the last section it computes the distance between the points of a two-point space, which is a noncommutative-geometric distance on a finite set.
 
@@ -79,7 +79,7 @@ The **KO-dimension** of the triple is the residue $n\bmod8$ determined by the si
 
 **Theorem.** The signs $(\varepsilon,\varepsilon',\varepsilon'')$ are the invariants of the real structure, and the KO-dimension is periodic of period eight. For the commutative spectral triple of a closed spin manifold of dimension $m$, the KO-dimension is $m\bmod8$.
 
-**Proof sketch.** The existence of $J$ with prescribed signs is the statement that the spinor bundle carries a charge conjugation compatible with the Clifford action, which is the eightfold periodic reality condition of the classification; the compatibility of the signs with the Clifford relations forces period eight, as in *Bott Periodicity and the Classification*. For the spin manifold the real structure is the charge conjugation on the spinor bundle, and a direct computation of its square and its commutation with the chirality gives the residue of the dimension. $\square$
+**Proof sketch.** The existence of $J$ with prescribed signs is the statement that the spinor bundle carries a charge conjugation compatible with the Clifford action, which is the eightfold periodic reality condition of the classification; the compatibility of the signs with the Clifford relations forces period eight, as in *Bott Periodicity and the Classification*. For the spin manifold the real structure is the charge conjugation on the spinor bundle, and a direct computation of its square and its commutation with the chirality gives the residue of the dimension.
 
 **Remark.** The KO-dimension is the spectral form of the eightfold way: it is the same period eight that appears in the real Clifford classification, in the reality types of *Real Spinors and Reality Conditions*, and in the real $KO$-theory of *The Atiyah–Singer Index Theorem and K-Theory*. The table records the two signs $\varepsilon$ and $\varepsilon''$ that the charge conjugation carries, arranged by the dimension modulo eight; the trichotomy of real, complex and quaternionic type appears in the commuting normalisation of the Clifford module, where the classes without a commuting conjugation are the complex ones. Its eightfold repetition is the reason the finite geometries of the applications fall into a finite list.
 
@@ -95,7 +95,7 @@ $$
 
 and the reconstruction is functorial.
 
-**Proof sketch.** The algebra $A$ is the algebra of smooth functions on the space of characters, a closed manifold $M$; the boundedness axiom makes $D$ a first-order differential operator and the compactness of the resolvent makes $M$ compact; the dimension axiom fixes the dimension of $M$; the orientation axiom identifies the Hochschild cycle with the volume form and gives the volume element; and the reality axiom produces the spin structure together with the spinor bundle whose charge conjugation is $J$. The identification of $D$ with the Cauchy–Riemann operator is the local computation of the symbol. $\square$
+**Proof sketch.** The algebra $A$ is the algebra of smooth functions on the space of characters, a closed manifold $M$; the boundedness axiom makes $D$ a first-order differential operator and the compactness of the resolvent makes $M$ compact; the dimension axiom fixes the dimension of $M$; the orientation axiom identifies the Hochschild cycle with the volume form and gives the volume element; and the reality axiom produces the spin structure together with the spinor bundle whose charge conjugation is $J$. The identification of $D$ with the Cauchy–Riemann operator is the local computation of the symbol.
 
 **Corollary.** A commutative spectral triple satisfying the axioms is exactly a closed spin manifold with its spinor geometry, up to isomorphism. The noncommutative theory therefore generalises rather than replaces the classical one: every spin manifold is a spectral triple, and the spectral triples that satisfy the axioms but whose algebra is not the algebra of functions on a manifold are the genuinely noncommutative geometries.
 
@@ -121,11 +121,11 @@ $$
 
 computed in the graded sense, and it depends only on the cyclic cohomology class of $\operatorname{ch}(D)$ and the $K$-theory class of $e$.
 
-**Proof sketch.** The compressed operator $eDe$ is essentially self-adjoint with compact resolvent; its grading splitting has finite-dimensional kernel and cokernel, and the McKean–Singer supertrace argument expresses the index as the trace of $\gamma e\,e^{-(eDe)^{2}}$, which expands into the cyclic expression defining the character. The pairing is well defined because a coboundary in cyclic cohomology pairs trivially with $K$-theory. $\square$
+**Proof sketch.** The compressed operator $eDe$ is essentially self-adjoint with compact resolvent; its grading splitting has finite-dimensional kernel and cokernel, and the McKean–Singer supertrace argument expresses the index as the trace of $\gamma e\,e^{-(eDe)^{2}}$, which expands into the cyclic expression defining the character. The pairing is well defined because a coboundary in cyclic cohomology pairs trivially with $K$-theory.
 
 **Theorem (Connes–Moscovici local index formula).** Let $(A,H,D)$ be a spectral triple with finite dimension spectrum. Then the Connes–Chern character is a sum of residues of zeta functions at the points of the dimension spectrum, each residue being a local expression in $D$ and the elements of $A$; in particular the character is computable from the small-time asymptotics of the heat kernel of $D$.
 
-**Proof sketch.** This is the local index theorem of Connes–Moscovici. The zeta functions $\zeta(s)=\operatorname{Tr}(P|D|^{-s})$ have meromorphic continuations whose poles form the dimension spectrum; the coefficients of the heat kernel expansion are the residues, and assembling them into a cyclic cocycle gives the character. $\square$
+**Proof sketch.** This is the local index theorem of Connes–Moscovici. The zeta functions $\zeta(s)=\operatorname{Tr}(P|D|^{-s})$ have meromorphic continuations whose poles form the dimension spectrum; the coefficients of the heat kernel expansion are the residues, and assembling them into a cyclic cocycle gives the character.
 
 **Remark.** The two theorems are the spectral analogues of the index theorem and its local form. The index pairing is the pairing of $K$-theory with cyclic cohomology that generalises the Chern character pairing of the manifold case, and the local index formula is the statement that the character is local, so that it can be computed from the asymptotics of $D$ rather than from global data. The reader will recognise in the local formula the spectral version of the heat-kernel proof of *The Atiyah–Singer Index Theorem and K-Theory*.
 
@@ -141,7 +141,7 @@ $$
 
 with locally computable coefficients, and the **Weyl law** for the counting function $N(\lambda)=\#\{n:|\lambda_n|\leq\lambda\}$ is $N(\lambda)\sim C\lambda^{p}$.
 
-**Proof sketch.** The heat kernel estimate follows from the parametrix construction for the operator $D^{2}$, whose symbol is $|\xi|^{2}$; the leading term is the volume of the manifold (in the commutative case) times $(4\pi t)^{-p/2}$, and the coefficients are integrals of local invariants. The Weyl law is the Abelian theorem relating the asymptotics of the heat trace as $t\to0$ to the counting function. $\square$
+**Proof sketch.** The heat kernel estimate follows from the parametrix construction for the operator $D^{2}$, whose symbol is $|\xi|^{2}$; the leading term is the volume of the manifold (in the commutative case) times $(4\pi t)^{-p/2}$, and the coefficients are integrals of local invariants. The Weyl law is the Abelian theorem relating the asymptotics of the heat trace as $t\to0$ to the counting function.
 
 **Corollary.** In the commutative case the spectral dimension is the dimension of the manifold and the leading heat coefficient is the volume; the metric dimension is recovered from the spectrum of $D$ alone. The dimension spectrum contains, in addition to the dimension, the smaller integers and half-integers at which the coefficients of the expansion occur, and in the noncommutative case it need not be a single point.
 

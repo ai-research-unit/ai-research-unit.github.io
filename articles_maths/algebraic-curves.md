@@ -26,7 +26,7 @@ Throughout, $K$ is a field, $\bar K$ an algebraic closure, $\mathbb{P}^2$ the pr
 
 **(c)** Two nonsingular projective curves over $K$ are isomorphic over $K$ if and only if their function fields are isomorphic over $K$; two irreducible curves are **birationally equivalent** if their function fields are isomorphic.
 
-**Proof sketch.** (a) is the theory of transcendence degree from *Field Extensions*; (b) is the theory of integrally closed domains of dimension $1$ from *Dedekind Domains and Ideal Class Groups* and *Integral Extensions and Krull Dimension*, applied to the coordinate ring; (c) is proved by reading off the points as the discrete valuation rings of $K(C)$ — the valuative dictionary, which is the content of *Valuation Theory and Henselian Rings* — and recovering the projective curve by comparing the coordinate rings of its affine models. $\square$
+**Proof sketch.** (a) is the theory of transcendence degree from *Field Extensions*; (b) is the theory of integrally closed domains of dimension $1$ from *Dedekind Domains and Ideal Class Groups* and *Integral Extensions and Krull Dimension*, applied to the coordinate ring; (c) is proved by reading off the points as the discrete valuation rings of $K(C)$ — the valuative dictionary, which is the content of *Valuation Theory and Henselian Rings* — and recovering the projective curve by comparing the coordinate rings of its affine models.
 
 **Example.** For the line $y = x$ the function field is $K(t)$ with $t = x$; for the conic $y^2 = x^2-1$ the function field is $K(\sqrt{x^2-1})$ with $x = t$; the two are not isomorphic over $K$, but over $K(i)$ the second becomes rational after the substitution $x = (u^2+1)/(2u)$, $y = (u^2-1)/(2u)$ and the curve is birational to the line. A curve birational to the line is called **rational**, and a nonsingular projective curve rational over $K$ has $K(C) \cong K(t)$, hence genus $0$.
 
@@ -40,7 +40,7 @@ $$
 \sum_{P \in C \cap D} I_P(C,D) = mn .
 $$
 
-**Proof sketch.** The intersection number is the degree of the resultant of the two defining forms with respect to one of the variables, and the resultant is a form of degree $mn$; the localised multiplicities are exactly the multiplicities of its roots. This is the classical proof, and it is made rigorous by the theory of resultants, whose algorithm is the elimination. $\square$
+**Proof sketch.** The intersection number is the degree of the resultant of the two defining forms with respect to one of the variables, and the resultant is a form of degree $mn$; the localised multiplicities are exactly the multiplicities of its roots. This is the classical proof, and it is made rigorous by the theory of resultants, whose algorithm is the elimination.
 
 **Corollary.** Two lines of $\mathbb{P}^2$ meet in exactly one point; a line and a conic meet in two points counted with multiplicity; two conics meet in four points counted with multiplicity — in each case a statement about the number of solutions of a system of polynomial equations in the projective plane.
 
@@ -56,7 +56,7 @@ $$
 g = \frac{(d-1)(d-2)}{2} .
 $$
 
-**Proof sketch.** One counts the dimension of the space of degree-$m$ forms modulo the multiples of the defining form of degree $d$, using that the restriction to a nonsingular curve is surjective and the adjunction computation below. The regular differentials are the forms $A\,\Omega/F$ with $A$ a form of degree $d-3$ and $\Omega$ the standard $3$-form $x\,\mathrm{d}y\wedge\mathrm{d}z - y\,\mathrm{d}x\wedge\mathrm{d}z + z\,\mathrm{d}x\wedge\mathrm{d}y$, and this space has dimension $\binom{d-1}{2} = (d-1)(d-2)/2$. $\square$
+**Proof sketch.** One counts the dimension of the space of degree-$m$ forms modulo the multiples of the defining form of degree $d$, using that the restriction to a nonsingular curve is surjective and the adjunction computation below. The regular differentials are the forms $A\,\Omega/F$ with $A$ a form of degree $d-3$ and $\Omega$ the standard $3$-form $x\,\mathrm{d}y\wedge\mathrm{d}z - y\,\mathrm{d}x\wedge\mathrm{d}z + z\,\mathrm{d}x\wedge\mathrm{d}y$, and this space has dimension $\binom{d-1}{2} = (d-1)(d-2)/2$.
 
 **Example.** $d = 1$: a line, $g = 0$. $d = 2$: a conic, $g = 0$. $d = 3$: a plane cubic, $g = 1$ — the elliptic curves of *Elliptic Curves*, in their Weierstrass and Legendre forms. $d = 4$: $g = 3$, the plane quartic. The Fermat curve $x^d+y^d+z^d = 0$ for $d$ prime to the characteristic is nonsingular of degree $d$, hence has genus $(d-1)(d-2)/2$: genus $0$ for $d = 1,2$, genus $1$ for $d = 3$, genus $3$ for $d = 4$, genus $6$ for $d = 5$.
 
@@ -114,7 +114,7 @@ $$
 
 has $P \in \mathbb{Z}[T]$ of degree $2g$ with $P(T) = \prod_{i=1}^{2g}(1-\alpha_iT)$ and $\lvert \alpha_i\rvert = \sqrt q$ for every $i$; the last statement is the Riemann hypothesis for curves, proved by Weil. The exponential is the formal one and the identity is of formal power series, so no convergence is involved; the values $\lvert \alpha_i\rvert = \sqrt q$ are real numbers and their appearance is the only analytic ingredient.
 
-**Proof sketch.** The functional equation $Z(C,1/qT) = q^{1-g}T^{2-2g}Z(C,T)$ and the rationality are proved by the Riemann–Roch theorem and the geometry of the Jacobian; the absolute values of the $\alpha_i$ follow from the positivity of the intersection numbers of divisors on the surface $C\times C$, and the full proof, which belongs to the intersection theory of the Part II agent's algebraic geometry, is deferred. That the bound implies $\lvert C(\mathbb{F}_q)\rvert$ grows like $q$ is the arithmetic content, and it gives $\lvert C(\mathbb{F}_q)\rvert > 0$ for $q$ large. $\square$
+**Proof sketch.** The functional equation $Z(C,1/qT) = q^{1-g}T^{2-2g}Z(C,T)$ and the rationality are proved by the Riemann–Roch theorem and the geometry of the Jacobian; the absolute values of the $\alpha_i$ follow from the positivity of the intersection numbers of divisors on the surface $C\times C$, and the full proof, which belongs to the intersection theory of the Part II agent's algebraic geometry, is deferred. That the bound implies $\lvert C(\mathbb{F}_q)\rvert$ grows like $q$ is the arithmetic content, and it gives $\lvert C(\mathbb{F}_q)\rvert > 0$ for $q$ large.
 
 **Example.** For $g = 0$: a nonsingular conic over $\mathbb{F}_q$ has exactly $q+1$ points, so the bound is attained; the projective line is the model. For $g = 1$: the bound reads $\lvert \lvert E(\mathbb{F}_q)\rvert-(q+1)\rvert \leq 2\sqrt q$, which is Hasse's theorem of *Elliptic Curves*, and the zeta function is the one computed there. For $q = 2$, $g = 1$: the point count is $2+1+a$ with $\lvert a\rvert \leq 2\sqrt2 \approx 2.83$, so $a \in \{-2,-1,0,1,2\}$ and the count is one of $1,2,3,4,5$; the curve $y^2+y = x^3+x$ over $\mathbb{F}_2$ has the points $O$, $(0,0)$, $(0,1)$, $(1,0)$, $(1,1)$ — five points, so $a = 2$, the largest value allowed by the inequality.
 
@@ -136,7 +136,7 @@ so the curve attains the bound; for $q = 2$ this is the curve $y^2+y = x^3$ over
 
 **Theorem (rational points on conics).** Let $C$ be a nonsingular conic over a field $K$. Then $C$ is rational over $K$ — that is, $C(K) \neq \emptyset$ and $C \cong \mathbb{P}^1$ over $K$ — if and only if $C(K) \neq \emptyset$; and over a finite field $K = \mathbb{F}_q$ every nonsingular conic has a rational point, hence $q+1$ of them.
 
-**Proof sketch.** For the first statement, projection from a rational point $P$ of the conic onto a line gives an explicit birational parametrisation with coefficients in $K$, invertible by the inverse of the projection. For the second, the count of points of a nonsingular conic over $\mathbb{F}_q$ is $q+1$ by the Weil bound for $g = 0$, and this count is positive. $\square$
+**Proof sketch.** For the first statement, projection from a rational point $P$ of the conic onto a line gives an explicit birational parametrisation with coefficients in $K$, invertible by the inverse of the projection. For the second, the count of points of a nonsingular conic over $\mathbb{F}_q$ is $q+1$ by the Weil bound for $g = 0$, and this count is positive.
 
 **Theorem (Hasse principle for conics, statement).** Let $C$ be a nonsingular conic over $\mathbb{Q}$. Then $C(\mathbb{Q}) \neq \emptyset$ if and only if $C(\mathbb{R}) \neq \emptyset$ and $C(\mathbb{Q}_p) \neq \emptyset$ for every prime $p$. The fields $\mathbb{Q}_p$ are the completions of $\mathbb{Q}$, which are constructed and in Part II; the theorem is recorded here for completeness, and its proof and its uses belong to the place where those fields exist.
 

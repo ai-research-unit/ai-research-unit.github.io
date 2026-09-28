@@ -7,7 +7,7 @@ This article is about the **polar representation** of a real number: the stateme
 
 The subject is elementary, and its place in this blog is that of the base case. The polar representation is developed here for the one-dimensional algebra $\mathbb{R}$, in the companion article *Complex Polar Representation* for the two-dimensional definite algebra $\mathbb{C}$, and in the companion articles on the polar representations of the split-complex, quaternion, split-quaternion, biquaternion and split-biquaternion algebras. The family decomposes every element of every one of these algebras into the same four **slots** — a scale, a central phase, a boost and a rotor — and which slots are occupied is a property of the algebra. In $\mathbb{R}$ exactly two slots are occupied, the scale and the compact slot, the latter filled by the discrete sign group, and the algebra is the smallest case of the pattern: no branch choice, no boost, no zero divisors, no boundary, and only one continuous parameter.
 
-The plan is as follows. The modulus and the sign factor are defined, and existence and uniqueness are proved. The sign factor is then described through the exponential, and the exponential is organised by the trichotomy $\nu^2 = -1$, $0$, $+1$ that governs every algebra of the family: the sign of the square of the exponent determines whether the exponential is trigonometric, parabolic or hyperbolic, and it is the same rule in $\mathbb{R}$, in $\mathbb{C}$ and in the biquaternion algebra. The two factors are then identified with two rows of that trichotomy, the absent slots are accounted for, and the group of units, the matrix picture and worked examples close the article. The conventions are those of *Real Algebra*: the basis is $e_0 = 1$, the sole involution is the identity, and the norm form is $N(x) = x\,x = x^2$. Every numerical value displayed below is exact.
+The plan is as follows. The modulus and the sign factor are defined, and existence and uniqueness are proved. The sign factor is then described through the exponential, and the exponential is organised by the trichotomy $\nu^2 = -1$, $0$, $+1$ that governs every algebra of the family: the sign of the square of the exponent determines whether the exponential is trigonometric, parabolic or hyperbolic, and it is the same rule in $\mathbb{R}$, in $\mathbb{C}$ and in the biquaternion algebra. The two factors are then identified with two rows of that trichotomy, the absent slots are accounted for, and the group of units, the matrix picture and worked examples close the article. The conventions are those of *Real Algebra*: the basis is $e_0 = 1$, the sole involution is the identity, and the norm is $N(x) = x\,x = x^2$. Every numerical value displayed below is exact.
 
 ## The Modulus and the Sign Factor
 
@@ -23,9 +23,9 @@ in which $r$ is the **modulus** of $x$ and $\sigma$ is its **sign factor**.
 
 The definition names the two factors before anything is proved about them, so that the propositions below have definite objects to be about. The modulus carries one real parameter. The sign factor is constrained by the equation $\sigma^2 = 1$, which is the two-point set $\{\pm1\}$, so it carries no continuous parameter. The counts add to the real dimension of the algebra, $1 + 0 = 1$, and this additivity is the pattern the whole family follows.
 
-### The Modulus from the Norm Form
+### The Modulus from the Norm
 
-The norm form of a real number is
+The norm of a real number is
 
 $$
 N(x) = x\,x = x^2.
@@ -37,9 +37,9 @@ $$
 r = \sqrt{N(x)} = |x|.
 $$
 
-Because the norm form is strictly positive off the origin, the square root is a strictly positive real number with no sign choice and no branch choice. The requirement $r > 0$ is therefore met automatically and the modulus is forced. In the companion articles the corresponding object is a square root of an indefinite real form or of a complex number, and there the sign and the branch both demand attention; in $\mathbb{R}$ neither does.
+Because the norm is strictly positive off the origin, the square root is a strictly positive real number with no sign choice and no branch choice. The requirement $r > 0$ is therefore met automatically and the modulus is forced. In the companion articles the corresponding object is a square root of an indefinite real form or of a complex number, and there the sign and the branch both demand attention; in $\mathbb{R}$ neither does.
 
-The modulus is multiplicative, because the norm form is: $r(xy) = r(x)r(y)$, and also $r(\lambda x) = |\lambda|\,r(x)$ for real $\lambda$.
+The modulus is multiplicative, because the norm is: $r(xy) = r(x)r(y)$, and also $r(\lambda x) = |\lambda|\,r(x)$ for real $\lambda$.
 
 ### The Sign Factor and the Two-Point Set
 
@@ -55,7 +55,7 @@ $$
 \{\pm1\} = \{\sigma \in \mathbb{R} : N(\sigma) = 1\},
 $$
 
-which is a group under multiplication, since $N(\sigma\tau) = N(\sigma)N(\tau) = 1$ and $N(\sigma^{-1}) = N(\sigma) = 1$ when $N(\sigma) = 1$, and which is compact, being a finite closed subset of $\mathbb{R}$. It is the **orthogonal group of the line**, written $O(1)$: the real $1\times1$ matrices of norm form one are exactly $[\pm1]$, because a $1\times1$ matrix $[g]$ preserves the form $N$ exactly when $g^2 = 1$. The group $O(1) \cong \mathbb{Z}/2$ has two elements, the identity $+1$ and the reflection $-1$.
+which is a group under multiplication, since $N(\sigma\tau) = N(\sigma)N(\tau) = 1$ and $N(\sigma^{-1}) = N(\sigma) = 1$ when $N(\sigma) = 1$, and which is compact, being a finite closed subset of $\mathbb{R}$. It is the **orthogonal group of the line**, written $O(1)$: the real $1\times1$ matrices of norm one are exactly $[\pm1]$, because a $1\times1$ matrix $[g]$ preserves the form $N$ exactly when $g^2 = 1$. The group $O(1) \cong \mathbb{Z}/2$ has two elements, the identity $+1$ and the reflection $-1$.
 
 The sign factor is the element that acts: multiplication by $-1$ is the reflection of the line through the origin, and multiplication by $+1$ is the identity. In the complex case the corresponding unit factor is the circle $U(1)$, which is connected; here the group $O(1)$ is discrete, and it is the component group of the unit group.
 
@@ -65,7 +65,7 @@ The sign factor is the element that acts: multiplication by $-1$ is the reflecti
 
 *Existence.* Put $r = \sqrt{N(x)}$ and $\sigma = x/r$. Since $N(x) > 0$, the number $r$ is positive, and $N(\sigma) = N(x)/r^2 = 1$ because $N(\lambda x) = \lambda^2N(x)$ for real $\lambda$. Hence $x = r\sigma$ with $r > 0$ and $\sigma^2 = 1$.
 
-*Uniqueness.* Suppose $x = r\sigma = r'\sigma'$ with $r, r' > 0$ and $\sigma^2 = (\sigma')^2 = 1$. Taking norm forms gives $r^2 = N(x) = (r')^2$, so $r = r'$ because both are positive, and then $\sigma = x/r = \sigma'$. $\square$
+*Uniqueness.* Suppose $x = r\sigma = r'\sigma'$ with $r, r' > 0$ and $\sigma^2 = (\sigma')^2 = 1$. Taking norms gives $r^2 = N(x) = (r')^2$, so $r = r'$ because both are positive, and then $\sigma = x/r = \sigma'$.
 
 The pair of factors is therefore unique, with no sign ambiguity and no branch ambiguity. What is *not* unique is a coordinate for the sign factor: the sign has no continuous coordinate at all, because the group is finite, and the discrete alternative is the whole of what the exponential can offer. This is the base case of the non-uniqueness of the exponential coordinate that appears from $\mathbb{C}$ onward, where the coordinate of the unit factor is a class modulo $2\pi$.
 
@@ -89,7 +89,7 @@ and the exponential of $\nu\theta$ is trigonometric, parabolic or hyperbolic acc
 | parabolic | $0$ | $e_0 + \nu\theta$ (the series truncates) | $1$ and a linear term |
 | hyperbolic | $+e_0$ | $\cosh\theta\,e_0 + \nu\sinh\theta$ | a hyperbolic cosine and a hyperbolic sine |
 
-*Proof.* The exponential is the series $\exp(\nu\theta) = \sum_{n\ge0}\nu^n\theta^n/n!$, and the hypothesis on $\nu^2$ makes the powers periodic, truncated or monotone. For $\nu^2 = -e_0$ the even powers alternate as $(-1)^k e_0$ and the odd powers as $(-1)^k\nu$, and the two partial series are the cosine and the sine. For $\nu^2 = 0$ every power from the second onward vanishes and the series is its first two terms. For $\nu^2 = +e_0$ the even powers are $e_0$ and the odd powers are $\nu$ without alternation, and the two series are the hyperbolic cosine and the hyperbolic sine. $\square$
+*Proof.* The exponential is the series $\exp(\nu\theta) = \sum_{n\ge0}\nu^n\theta^n/n!$, and the hypothesis on $\nu^2$ makes the powers periodic, truncated or monotone. For $\nu^2 = -e_0$ the even powers alternate as $(-1)^k e_0$ and the odd powers as $(-1)^k\nu$, and the two partial series are the cosine and the sine. For $\nu^2 = 0$ every power from the second onward vanishes and the series is its first two terms. For $\nu^2 = +e_0$ the even powers are $e_0$ and the odd powers are $\nu$ without alternation, and the two series are the hyperbolic cosine and the hyperbolic sine.
 
 The trichotomy is a statement about the *sign of the square of the exponent*, not about the algebra. Which of the three rows are non-empty is a statement about the algebra, and the answer is what distinguishes the members of the family from one another.
 
@@ -101,11 +101,11 @@ The trichotomy is a statement about the *sign of the square of the exponent*, no
 | $\nu^2 = 0$ | $\nu = 0$ only | $1$ | parabolic: degenerate, $\exp = e_0$ |
 | $\nu^2 = +e_0$ | $\nu = \pm 1$ | $2$ | hyperbolic: the real exponential |
 
-The table is the complete classification of the exponentials of $\mathbb{R}$. The two roots of $+1$ are the two points of the sign group, and in $\mathbb{R}$ every root of $+1$ has norm form one, because $N(x) = x^2$; these two points are the whole root set. The split-complex algebra, whose roots of $+1$ number four, is the first in the family where this set is larger than two points, and the biquaternion algebra is the first where they form a complex surface. The roots of $-1$ are absent here, and their absence is the statement that $\mathbb{R}$ has no continuous rotation, no continuous phase and no continuous rotor; the compact slot is filled by the discrete sign group alone.
+The table is the complete classification of the exponentials of $\mathbb{R}$. The two roots of $+1$ are the two points of the sign group, and in $\mathbb{R}$ every root of $+1$ has norm one, because $N(x) = x^2$; these two points are the whole root set. The split-complex algebra, whose roots of $+1$ number four, is the first in the family where this set is larger than two points, and the biquaternion algebra is the first where they form a complex surface. The roots of $-1$ are absent here, and their absence is the statement that $\mathbb{R}$ has no continuous rotation, no continuous phase and no continuous rotor; the compact slot is filled by the discrete sign group alone.
 
 ### The Sign Factor as an Exponential
 
-The sign factor $\sigma$ has norm form one, so its modulus is one. It therefore satisfies $\sigma = \pm1$, and the two cases are reached as follows.
+The sign factor $\sigma$ has norm one, so its modulus is one. It therefore satisfies $\sigma = \pm1$, and the two cases are reached as follows.
 
 - **The identity component.** The positive root $\nu = +1$ has signature $+1$, so the hyperbolic row gives $\exp(\theta) = \cosh\theta + \sinh\theta = e^{\theta} > 0$ for $\theta \in \mathbb{R}$; this is the positive scale. In particular $\exp(0) = +1 = \sigma$ for the identity sign.
 - **The nontrivial component.** The negative root $\nu = -1$ gives $\exp(-\theta) = e^{-\theta} > 0$, again a positive scale and not the element $-1$. The element $\sigma = -1$ is therefore **not** in the image of the exponential of the algebra: $\exp(\mathbb{R}) = \mathbb{R}_{>0}$ throughout.
@@ -147,7 +147,7 @@ The four slots of the family are the scale, the central phase, the boost and the
 
 ### No Boundary
 
-The polar representation of $\mathbb{R}$ has no boundary: it holds on $\mathbb{R}\setminus\{0\}$ and the only excluded element is the origin. The reason is the definiteness of the norm form. If $x \neq 0$ then $N(x) > 0$, so $r > 0$ and $\sigma = x/r$ is defined; there is no element with $N(x) = 0$ other than zero, and so there is no set on which the modulus vanishes while the element does not. The split-complex algebra is the first in the family where this fails, the first where a nonzero element can have a vanishing modulus, and the first where the polar representation must be restricted to a cone complement.
+The polar representation of $\mathbb{R}$ has no boundary: it holds on $\mathbb{R}\setminus\{0\}$ and the only excluded element is the origin. The reason is the definiteness of the norm. If $x \neq 0$ then $N(x) > 0$, so $r > 0$ and $\sigma = x/r$ is defined; there is no element with $N(x) = 0$ other than zero, and so there is no set on which the modulus vanishes while the element does not. The split-complex algebra is the first in the family where this fails, the first where a nonzero element can have a vanishing modulus, and the first where the polar representation must be restricted to a cone complement.
 
 **The parametrisation as a homeomorphism.** The parametrisation of the unit group by the two factors,
 
@@ -155,9 +155,9 @@ $$
 \Phi : \mathbb{R}_{>0} \times \{\pm1\} \longrightarrow \mathbb{R}^\times, \qquad \Phi(r, \sigma) = r\sigma,
 $$
 
-is a bijective local homeomorphism, and a homeomorphism onto $\mathbb{R}^\times$ because the sign coordinate is discrete and the map is continuous with continuous inverse $(|x|, \operatorname{sgn}x)$; its image is all of $\mathbb{R}^\times$. It fails to cover exactly the complement $\mathbb{R}\setminus\mathbb{R}^\times = \{0\}$, a single point rather than a hypersurface, and the sign group $\{\pm1\}$ is finite, so neither the scale variable nor the sign variable has a boundary. In the biquaternion algebra the same parametrisation fails on the null cone, a real algebraic variety of real dimension $6$, which is the genuine boundary of the polar representation and carries the link of the null cone; the real case has no such set, because the norm form is definite and the zero-divisor class is empty. The absent null cone and the absent link are the mathematical content of the definiteness of $\mathbb{R}$.
+is a bijective local homeomorphism, and a homeomorphism onto $\mathbb{R}^\times$ because the sign coordinate is discrete and the map is continuous with continuous inverse $(|x|, \operatorname{sgn}x)$; its image is all of $\mathbb{R}^\times$. It fails to cover exactly the complement $\mathbb{R}\setminus\mathbb{R}^\times = \{0\}$, a single point rather than a hypersurface, and the sign group $\{\pm1\}$ is finite, so neither the scale variable nor the sign variable has a boundary. In the biquaternion algebra the same parametrisation fails on the null cone, a real algebraic variety of real dimension $6$, which is the genuine boundary of the polar representation and carries the link of the null cone; the real case has no such set, because the norm is definite and the zero-divisor class is empty. The absent null cone and the absent link are the mathematical content of the definiteness of $\mathbb{R}$.
 
-**The boundary as ends.** The scale coordinate $r = |x|$ runs over $(0,\infty)$, whose two ends are $0$ and $+\infty$; the end at $0$ is the removed origin, and the end at $+\infty$ is one of the two ends of the line. The sign coordinate is finite, so it contributes no end. The only boundary of the polar representation is thus the single point at the end $r = 0$, where the norm form vanishes.
+**The boundary as ends.** The scale coordinate $r = |x|$ runs over $(0,\infty)$, whose two ends are $0$ and $+\infty$; the end at $0$ is the removed origin, and the end at $+\infty$ is one of the two ends of the line. The sign coordinate is finite, so it contributes no end. The only boundary of the polar representation is thus the single point at the end $r = 0$, where the norm vanishes.
 
 ## The Group of Units and the Sign Group
 
@@ -195,7 +195,7 @@ $$
 \det M_x = x, \qquad \operatorname{tr}M_x = x.
 $$
 
-The sign factor $\sigma = -1$ acts by the matrix $[-1]$, which is the **reflection** of the line through the origin; the sign factor $\sigma = +1$ acts by the identity $[1]$. The two matrices $\pm I$ are exactly the orthogonal group $O(1)$ of the line, and the norm form is their determinant squared: the reflection $[-1]$ has $\det[-1] = -1$ and $N(-1) = 1$. The group $O(1)$ is the set of $1\times1$ matrices preserving $N$, and it is the sign group; its identity component is $\{+1\} = SO(1)$, the special orthogonal group, and the quotient $O(1)/SO(1) \cong \{\pm1\}$ is the same two-element group.
+The sign factor $\sigma = -1$ acts by the matrix $[-1]$, which is the **reflection** of the line through the origin; the sign factor $\sigma = +1$ acts by the identity $[1]$. The two matrices $\pm I$ are exactly the orthogonal group $O(1)$ of the line, and the norm is their determinant squared: the reflection $[-1]$ has $\det[-1] = -1$ and $N(-1) = 1$. The group $O(1)$ is the set of $1\times1$ matrices preserving $N$, and it is the sign group; its identity component is $\{+1\} = SO(1)$, the special orthogonal group, and the quotient $O(1)/SO(1) \cong \{\pm1\}$ is the same two-element group.
 
 ### The Reading of Each Factor
 
@@ -244,7 +244,7 @@ so its kernel is $\{0\}$ and the continuous coordinate of a positive element is 
 
 ## Comparison with the Other Members of the Series
 
-| algebra | norm form | modulus | unit factor | occupied slots | unit group |
+| algebra | norm | modulus | unit factor | occupied slots | unit group |
 |---|---|---|---|---|---|
 | $\mathbb{R}$ | $x^2$, definite | $\sqrt{N} = \lvert x\rvert$, positive real | $\operatorname{sgn}x \in \{\pm1\}$ | scale, compact sign (rotor and phase together, discrete) | two components, $\mathbb{R}_{>0}\times O(1)$ |
 | $\mathbb{C}$ | $a^2+b^2$, definite | $\sqrt{N}$, positive real | $e^{i\theta}$, $\theta$ mod $2\pi$ | scale, circle (rotation and central phase together) | connected, $\mathbb{R}_{>0}\times U(1)$ |
@@ -258,7 +258,7 @@ The progression is the progression of the trichotomy. In $\mathbb{R}$ only the h
 
 Every nonzero real number has exactly one polar representation $x = r\sigma$, with modulus $r = \sqrt{N(x)} = |x| > 0$ and sign $\sigma = x/|x| \in \{\pm1\}$. The modulus is fixed and of signature $+1$ and carries one parameter; the sign is fixed, discrete and carries none; the counts add to the real dimension one. The sign group is $O(1) \cong \mathbb{Z}/2$, the orthogonal group of the line, and its two elements are the two components of $\mathbb{R}^\times = \mathbb{R}_{>0}\times\{\pm1\}$, which is why the real unit group is disconnected while the complex one is connected.
 
-The exponential of the real algebra is governed by the trichotomy $\nu^2 = -1, 0, +1$: the trigonometric row is empty, so there is no continuous rotor and no continuous phase; the parabolic row contains only $\nu = 0$, so it is degenerate; and the hyperbolic row contains $\nu = \pm1$, whose exponentials are the positive ray $\exp(\mathbb{R}) = \mathbb{R}_{>0}$. The nontrivial sign $\sigma = -1$ is therefore not an exponential, and the exponential form of the representation reads $x = \exp(t)\sigma$ with $t = \ln|x|$ and $\sigma \in O(1)$; the kernel of the exponential is trivial. Of the four slots of the family — scale, central phase, boost, rotor — exactly two are occupied, the scale and the compact slot, and the second is discrete. The norm form is definite, so there are no zero divisors and the polar representation has no boundary: the origin is the only excluded element. In the matrix picture the statement is the splitting of the signed similarity $[x]$ into the scalar $[r]$ and the reflection $[\sigma]$.
+The exponential of the real algebra is governed by the trichotomy $\nu^2 = -1, 0, +1$: the trigonometric row is empty, so there is no continuous rotor and no continuous phase; the parabolic row contains only $\nu = 0$, so it is degenerate; and the hyperbolic row contains $\nu = \pm1$, whose exponentials are the positive ray $\exp(\mathbb{R}) = \mathbb{R}_{>0}$. The nontrivial sign $\sigma = -1$ is therefore not an exponential, and the exponential form of the representation reads $x = \exp(t)\sigma$ with $t = \ln|x|$ and $\sigma \in O(1)$; the kernel of the exponential is trivial. Of the four slots of the family — scale, central phase, boost, rotor — exactly two are occupied, the scale and the compact slot, and the second is discrete. The norm is definite, so there are no zero divisors and the polar representation has no boundary: the origin is the only excluded element. In the matrix picture the statement is the splitting of the signed similarity $[x]$ into the scalar $[r]$ and the reflection $[\sigma]$.
 
 ## Summary of Notation
 
@@ -266,7 +266,7 @@ The exponential of the real algebra is governed by the trichotomy $\nu^2 = -1, 0
 |---|---|
 | $\mathbb{R}$ | the real algebra, basis $e_0 = 1$, sole involution the identity |
 | $x$ | a real number |
-| $N(x) = x^2$ | the norm form, positive definite |
+| $N(x) = x^2$ | the norm, positive definite |
 | $r = \sqrt{N(x)} = \lvert x\rvert$ | the modulus, a positive real |
 | $\sigma = \operatorname{sgn}x = x/\lvert x\rvert$ | the sign factor, an element of $\{\pm1\}$ |
 | $\{\pm1\} = O(1) \cong \mathbb{Z}/2$ | the sign group, the orthogonal group of the line |

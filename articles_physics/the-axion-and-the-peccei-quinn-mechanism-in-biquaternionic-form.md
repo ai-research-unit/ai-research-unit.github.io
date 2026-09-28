@@ -219,7 +219,7 @@ and $e^{i\Delta S} = 1$. The periodicity of the axion field is therefore **compa
 
 1. **Global or gauged?** The framework's center is gauged by the abelian gauge principle and would-be global for Peccei–Quinn. Whether the framework can distinguish a global central phase from the gauged one, or whether the Peccei–Quinn symmetry must be an independent global $U(1)$, is a modelling decision the series leaves open.
 
-2. **Does the framework fix $f_a$?** The decay constant sets the axion mass and the dark-matter window; whether the framework's trace or norm form fixes a preferred value, rather than leaving $f_a$ free, is not shown.
+2. **Does the framework fix $f_a$?** The decay constant sets the axion mass and the dark-matter window; whether the framework's trace or biquaternion norm fixes a preferred value, rather than leaving $f_a$ free, is not shown.
 
 3. **The anomaly coefficient and $E/N$.** The axion–photon coupling depends on the anomaly ratio of the Peccei–Quinn charges; whether the framework's matter content fixes it — and whether the framework can reproduce the anomaly at all — belongs to the unresolved anomaly problem of the spinor sector.
 

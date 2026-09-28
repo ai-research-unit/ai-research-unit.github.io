@@ -23,7 +23,7 @@ For a multi-index $\gamma = (\gamma_1,\dots,\gamma_n)$ the weak derivative $\par
 
 **Proposition (uniqueness).** The weak derivative, if it exists, is unique up to equality almost everywhere.
 
-*Proof.* If $w_1$ and $w_2$ both satisfy the definition, then $\int_\Omega(w_1-w_2)\varphi = 0$ for every test function $\varphi$; since the test functions are dense in $L^1_{\mathrm{loc}}$ in the appropriate sense, $w_1-w_2=0$ almost everywhere. $\square$
+*Proof.* If $w_1$ and $w_2$ both satisfy the definition, then $\int_\Omega(w_1-w_2)\varphi = 0$ for every test function $\varphi$; since the test functions are dense in $L^1_{\mathrm{loc}}$ in the appropriate sense, $w_1-w_2=0$ almost everywhere.
 
 **Example (a weak derivative that is not classical).** On $\Omega = (-1,1)$ let $u(x)=|x|$. Then $u$ is not differentiable at $0$, but
 
@@ -60,15 +60,15 @@ $$
 \langle u,v\rangle_{H^k} = \sum_{|\gamma|\le k}\int_\Omega \partial^\gamma u\,\partial^\gamma v\,dx .
 $$
 
-*Proof.* The map $u \mapsto (\partial^\gamma u)_{|\gamma|\le k}$ embeds $W^{k,p}$ isometrically as a closed subspace of the product of finitely many copies of $L^p(\Omega)$, which is a Banach space; a Cauchy sequence in $W^{k,p}$ therefore has a limit in each copy, the limits are the weak derivatives of the limit function, and completeness follows. Separability and reflexivity are inherited from $L^p$ for the stated ranges of $p$. $\square$
+*Proof.* The map $u \mapsto (\partial^\gamma u)_{|\gamma|\le k}$ embeds $W^{k,p}$ isometrically as a closed subspace of the product of finitely many copies of $L^p(\Omega)$, which is a Banach space; a Cauchy sequence in $W^{k,p}$ therefore has a limit in each copy, the limits are the weak derivatives of the limit function, and completeness follows. Separability and reflexivity are inherited from $L^p$ for the stated ranges of $p$.
 
 **Theorem (calculus).** If $u,v \in W^{k,p}(\Omega)\cap L^\infty(\Omega)$ then $uv \in W^{k,p}(\Omega)$ and the product rule holds; if $F \in C^k(\mathbb{R})$ with $F(0)=0$ and $F'$ bounded, then $F\circ u \in W^{k,p}(\Omega)$ for $u \in W^{k,p}(\Omega)$; and the chain rule holds for a $C^k$ diffeomorphism of the domain.
 
-*Proof.* The identities are proved first for smooth approximants and pass to the limit in $L^p$ by the density theorem below; the product rule $\partial_i(uv) = \partial_iu\cdot v + u\cdot\partial_iv$ holds almost everywhere for the approximants and its limit is the weak derivative of the product. $\square$
+*Proof.* The identities are proved first for smooth approximants and pass to the limit in $L^p$ by the density theorem below; the product rule $\partial_i(uv) = \partial_iu\cdot v + u\cdot\partial_iv$ holds almost everywhere for the approximants and its limit is the weak derivative of the product.
 
 **Theorem (density, Meyers–Serrin).** $C^\infty(\Omega)\cap W^{k,p}(\Omega)$ is dense in $W^{k,p}(\Omega)$ for every open $\Omega$; if $\Omega$ is bounded with Lipschitz boundary, then $C^\infty(\overline\Omega)$ is dense. Consequently the product and chain rules hold for all $u$ of the space, by approximation.
 
-*Proof.* Quoted as standard. The first statement is proved by localising with a partition of unity subordinate to a cover by balls contained in $\Omega$ and mollifying; the second adds a boundary-flattening argument using the Lipschitz condition, in which the reflected function is mollified and restricted. $\square$
+*Proof.* Quoted as standard. The first statement is proved by localising with a partition of unity subordinate to a cover by balls contained in $\Omega$ and mollifying; the second adds a boundary-flattening argument using the Lipschitz condition, in which the reflected function is mollified and restricted.
 
 **Remark (the role of $\Omega$).** The spaces and the interior results below require no regularity of $\partial\Omega$, because they are local. Every statement about traces, about the boundary values of a Sobolev function and about the density of $C^\infty(\overline\Omega)$ needs $\partial\Omega$ to be at least Lipschitz, and this is the hypothesis under which the theory of boundary-value problems is stated.
 
@@ -84,7 +84,7 @@ $$
 
 for every $u \in C_c^\infty(\mathbb{R}^n)$; consequently $W^{k,p}(\mathbb{R}^n) \hookrightarrow L^{p^*}(\mathbb{R}^n)$, the embedding being continuous. The exponent $p^*$ is the **Sobolev conjugate** of $p$ at order $k$, and it is the largest $q$ for which such an estimate can hold.
 
-*Proof.* Quoted as standard. For $k=1$ the inequality follows from the one-dimensional fundamental theorem of calculus applied in each coordinate and the Hölder and arithmetic–geometric inequalities; the case $k>1$ follows by iterating it. Sharpness is shown by testing the inequality on the family $u_\varepsilon(x) = \varepsilon^{-n/p^*}\eta(x/\varepsilon)$ for a fixed $\eta \in C_c^\infty$: all the norms on the left are then constant in $\varepsilon$ while the right-hand side stays bounded only for $q\le p^*$. $\square$
+*Proof.* Quoted as standard. For $k=1$ the inequality follows from the one-dimensional fundamental theorem of calculus applied in each coordinate and the Hölder and arithmetic–geometric inequalities; the case $k>1$ follows by iterating it. Sharpness is shown by testing the inequality on the family $u_\varepsilon(x) = \varepsilon^{-n/p^*}\eta(x/\varepsilon)$ for a fixed $\eta \in C_c^\infty$: all the norms on the left are then constant in $\varepsilon$ while the right-hand side stays bounded only for $q\le p^*$.
 
 **Theorem (Morrey, the case $kp>n$).** If $kp>n$, then there is a constant $C$ with
 
@@ -94,11 +94,11 @@ $$
 
 whenever $kp>n$ and $n/p$ is not an integer; the embedding is continuous, so $W^{k,p}$ embeds into a Hölder space and in particular into the continuous functions. In the limiting case $kp=n$, $W^{k,p}$ embeds into $L^q$ for every finite $q$, but not into $L^\infty$.
 
-*Proof.* Quoted as standard. The case $k=1$, $p>n$ is the Morrey inequality, proved by estimating $|u(x)-u(y)|$ by the integral of the derivative along a suitable path; the general case follows by applying it to the derivatives and iterating. $\square$
+*Proof.* Quoted as standard. The case $k=1$, $p>n$ is the Morrey inequality, proved by estimating $|u(x)-u(y)|$ by the integral of the derivative along a suitable path; the general case follows by applying it to the derivatives and iterating.
 
 **Theorem (Rellich–Kondrachov).** Let $\Omega$ be bounded with Lipschitz boundary and let $1\le p<n$. Then the embedding $W^{1,p}(\Omega)\hookrightarrow L^q(\Omega)$ is **compact** for every $q<p^*$, and the embedding $W^{1,p}_0(\Omega)\hookrightarrow L^p(\Omega)$ is compact.
 
-*Proof.* Quoted as standard. The proof approximates a bounded sequence in $W^{1,p}$ by mollifications, which are uniformly bounded and equicontinuous on compact subdomains, extracts a convergent subsequence by Arzelà–Ascoli, and estimates the boundary layer by the boundedness of the $W^{1,p}$ norm and the finiteness of the measure of the layer. $\square$
+*Proof.* Quoted as standard. The proof approximates a bounded sequence in $W^{1,p}$ by mollifications, which are uniformly bounded and equicontinuous on compact subdomains, extracts a convergent subsequence by Arzelà–Ascoli, and estimates the boundary layer by the boundedness of the $W^{1,p}$ norm and the finiteness of the measure of the layer.
 
 **Theorem (trace).** Let $\Omega$ be bounded with Lipschitz boundary and $1\le p<\infty$. There is a bounded linear map, the **trace**,
 
@@ -109,7 +109,7 @@ $$
 
 agreeing with the restriction for $u \in C(\overline\Omega)$, and its kernel is exactly $W^{1,p}_0(\Omega)$. For $p<n$ the trace actually maps into $L^q(\partial\Omega)$ for $q \le \frac{p(n-1)}{n-p}$.
 
-*Proof.* Quoted as standard (the trace theorem). The estimate is proved for smooth functions by a boundary-flattening change of variables and the fundamental theorem of calculus in the normal direction, and extended to $W^{1,p}$ by the density of $C^\infty(\overline\Omega)$. The identification of the kernel uses the same density: a function whose trace vanishes is a limit of smooth compactly supported functions. $\square$
+*Proof.* Quoted as standard (the trace theorem). The estimate is proved for smooth functions by a boundary-flattening change of variables and the fundamental theorem of calculus in the normal direction, and extended to $W^{1,p}$ by the density of $C^\infty(\overline\Omega)$. The identification of the kernel uses the same density: a function whose trace vanishes is a limit of smooth compactly supported functions.
 
 **Theorem (Poincaré and Friedrichs).** If $\Omega$ is bounded in one direction with width $L$, then for $u \in W^{1,p}_0(\Omega)$,
 
@@ -119,7 +119,7 @@ $$
 
 and for $u \in W^{1,p}(\Omega)$ with $\int_\Omega u = 0$ the same inequality holds with a constant depending only on $\Omega$. On the interval $(0,L)$ with $p=2$ the sharp constant is $L/\pi$.
 
-*Proof.* Extend $u$ by zero to a slab of width $L$ in which $\Omega$ lies and apply the fundamental theorem of calculus along the direction of the slab; the case of zero mean follows by subtracting the mean and using the same argument. On $(0,L)$ the function is expanded in the Dirichlet sine series, and comparing $\sum b_k^2(k\pi/L)^2 \ge (\pi/L)^2\sum b_k^2$ gives the sharp constant $L/\pi$. $\square$
+*Proof.* Extend $u$ by zero to a slab of width $L$ in which $\Omega$ lies and apply the fundamental theorem of calculus along the direction of the slab; the case of zero mean follows by subtracting the mean and using the same argument. On $(0,L)$ the function is expanded in the Dirichlet sine series, and comparing $\sum b_k^2(k\pi/L)^2 \ge (\pi/L)^2\sum b_k^2$ gives the sharp constant $L/\pi$.
 
 ### The Spaces $H^{-1}$ and the Weak Formulation
 
@@ -135,7 +135,7 @@ $$
 
 and $\|u\| \le m^{-1}\|F\|_{H^*}$.
 
-*Proof.* For each $u$ the functional $v \mapsto a(u,v)$ is bounded, so there is $Au \in H$ with $a(u,v) = \langle Au,v\rangle$; $A$ is bounded with $\|A\|\le M$ and coercive, $\langle Au,u\rangle \ge m\|u\|^2$, hence injective with closed range. The range is also dense: if $a(u,w)=0$ for every $u$, then taking $u=w$ gives $0=a(w,w)\ge m\|w\|^2$, so $w=0$. A closed dense subspace is all of $H$, so $A$ is bijective and $u = A^{-1}R^{-1}F$ with $R$ the Riesz map. The norm bound follows from coercivity applied to the equation with $v=u$. $\square$
+*Proof.* For each $u$ the functional $v \mapsto a(u,v)$ is bounded, so there is $Au \in H$ with $a(u,v) = \langle Au,v\rangle$; $A$ is bounded with $\|A\|\le M$ and coercive, $\langle Au,u\rangle \ge m\|u\|^2$, hence injective with closed range. The range is also dense: if $a(u,w)=0$ for every $u$, then taking $u=w$ gives $0=a(w,w)\ge m\|w\|^2$, so $w=0$. A closed dense subspace is all of $H$, so $A$ is bijective and $u = A^{-1}R^{-1}F$ with $R$ the Riesz map. The norm bound follows from coercivity applied to the equation with $v=u$.
 
 ## Weak Solutions of Elliptic Problems
 
@@ -167,7 +167,7 @@ $$
 
 where $C_P$ is the Poincaré constant of $\Omega$.
 
-*Proof.* The form $a$ is bounded with $M \le \Lambda + \|c\|_\infty$ by Cauchy–Schwarz, and coercive with $m = \lambda\min(1,C_P^{-2})$ after adding the positive term $cu$ if $c$ is not identically zero; the functional $v\mapsto\int fv$ is bounded on $H^1_0$ with norm at most $\|f\|_{L^2}$. Lax–Milgram gives a unique $u$, and the estimate is the coercivity inequality applied with $v=u$. $\square$
+*Proof.* The form $a$ is bounded with $M \le \Lambda + \|c\|_\infty$ by Cauchy–Schwarz, and coercive with $m = \lambda\min(1,C_P^{-2})$ after adding the positive term $cu$ if $c$ is not identically zero; the functional $v\mapsto\int fv$ is bounded on $H^1_0$ with norm at most $\|f\|_{L^2}$. Lax–Milgram gives a unique $u$, and the estimate is the coercivity inequality applied with $v=u$.
 
 **Example (the Laplacian on an interval).** For $-\Delta$ on $(0,L)$ with $f \in L^2$, the weak solution is $u(x) = \int_0^L G(x,s)f(s)ds$ with $G$ the Green function of the preceding article; the weak formulation, tested against $v \in H^1_0$, is the integrated form of the equation, and for $f$ continuous the solution is the classical one of class $C^2$. The example shows that the weak formulation contains the classical theory and extends it to data that is only square-integrable.
 
@@ -181,15 +181,15 @@ $$
 
 with $C$ depending on $\Omega'$, $\Omega$, the ellipticity constants and the bounds on the coefficients. If $f \in H^k(\Omega)$ for all $k$, then $u \in H^{k+2}_{\mathrm{loc}}(\Omega)$ and hence, by the embedding theorem, $u \in C^\infty(\Omega)$: **Weyl's lemma**, that a weak solution of an elliptic equation with smooth coefficients is smooth.
 
-*Proof.* Quoted as standard. One takes difference quotients of the weak formulation in a direction $e_i$, uses the ellipticity to bound the $L^2$ norms of the difference quotients of $\nabla u$ by the data, and concludes that $\partial_i\nabla u \in L^2_{\mathrm{loc}}$; iterating gives the higher derivatives, and the Morrey embedding gives continuity. $\square$
+*Proof.* Quoted as standard. One takes difference quotients of the weak formulation in a direction $e_i$, uses the ellipticity to bound the $L^2$ norms of the difference quotients of $\nabla u$ by the data, and concludes that $\partial_i\nabla u \in L^2_{\mathrm{loc}}$; iterating gives the higher derivatives, and the Morrey embedding gives continuity.
 
 **Theorem (boundary regularity).** If in addition $\Omega$ has $C^{k+2}$ boundary, $A \in C^{k+1}(\overline\Omega)$, $c\in C^k(\overline\Omega)$ and $f \in H^k(\Omega)$, then the weak solution with zero boundary values lies in $H^{k+2}(\Omega)\cap H^1_0(\Omega)$, with the corresponding estimate; in particular for $k=0$ and $\Omega$ of class $C^2$ the solution lies in $H^2(\Omega)$.
 
-*Proof.* Quoted as standard. The boundary is flattened by a $C^{k+2}$ diffeomorphism, the equation is transformed and the direction normal to the boundary is treated first, using the vanishing of the trace and the difference-quotient technique in the tangential directions; the normal derivative is then recovered from the equation itself. $\square$
+*Proof.* Quoted as standard. The boundary is flattened by a $C^{k+2}$ diffeomorphism, the equation is transformed and the direction normal to the boundary is treated first, using the vanishing of the trace and the difference-quotient technique in the tangential directions; the normal derivative is then recovered from the equation itself.
 
 **Corollary (Fredholm alternative for the elliptic problem).** For a bounded Lipschitz domain and bounded elliptic coefficients, the operator $u \mapsto -\nabla\cdot(A\nabla u)+cu$, considered from $H^1_0(\Omega)$ to $H^{-1}(\Omega)$, is a bounded linear operator whose range is closed with finite-dimensional cokernel; the equation $Lu=f$ has a solution for every $f$ if and only if the homogeneous equation $Lu=0$ has only the zero solution, and in that case the solution is unique.
 
-*Proof.* By the Riesz representation theorem the equation is equivalent to $Au=F$ with $A$ the bounded operator generated by $a$; the Rellich–Kondrachov theorem makes $A$ a compact perturbation of the coercive operator, so the standard Fredholm theory of compact operators on a Hilbert space applies and gives closed range, finite-dimensional kernel and cokernel, and the alternative. $\square$
+*Proof.* By the Riesz representation theorem the equation is equivalent to $Au=F$ with $A$ the bounded operator generated by $a$; the Rellich–Kondrachov theorem makes $A$ a compact perturbation of the coercive operator, so the standard Fredholm theory of compact operators on a Hilbert space applies and gives closed range, finite-dimensional kernel and cokernel, and the alternative.
 
 ## Parabolic and Hyperbolic Equations
 
@@ -217,7 +217,7 @@ $$
 
 holds for almost every $t$.
 
-*Proof.* Choose an orthonormal basis $(w_j)$ of $V$ and seek the finite-dimensional Galerkin approximations $u_m(t) = \sum_{j\le m}d_j(t)w_j$ solving the projected system, an ordinary linear system in $d_j$; the energy estimate, valid at each level and uniform in $m$, bounds the approximations in $L^\infty(0,T;H)\cap L^2(0,T;V)$. A weak-compactness argument (Banach–Alaoglu) extracts a limit $u$, and the limit satisfies the weak formulation after passage to the limit in each projection; uniqueness follows from the estimate applied to the difference of two solutions with $f=0$ and $u_0=0$. $\square$
+*Proof.* Choose an orthonormal basis $(w_j)$ of $V$ and seek the finite-dimensional Galerkin approximations $u_m(t) = \sum_{j\le m}d_j(t)w_j$ solving the projected system, an ordinary linear system in $d_j$; the energy estimate, valid at each level and uniform in $m$, bounds the approximations in $L^\infty(0,T;H)\cap L^2(0,T;V)$. A weak-compactness argument (Banach–Alaoglu) extracts a limit $u$, and the limit satisfies the weak formulation after passage to the limit in each projection; uniqueness follows from the estimate applied to the difference of two solutions with $f=0$ and $u_0=0$.
 
 **Example (the heat equation).** For $V = H^1_0(\Omega)$, $H = L^2(\Omega)$ and $a(u,v) = \int\nabla u\cdot\nabla v$, the parabolic theorem gives the weak solution of $u_t=\Delta u$ with $u(0)=u_0\in L^2(\Omega)$, which is unique and lies in $L^2(0,T;H^1_0)\cap C([0,T];L^2)$; the energy estimate is the decay $\|u(t)\|_{L^2}^2 + 2\int_0^t\|\nabla u\|^2 \le \|u_0\|^2$. For $u_0$ continuous and bounded this is the classical solution of the preceding article obtained by convolution.
 
@@ -239,7 +239,7 @@ $$
 
 Then $J$ is coercive and strictly convex, it attains its minimum at a unique $u \in H^1_0(\Omega)$, and $u$ is exactly the weak solution of $-\nabla\cdot(A\nabla u)=f$, $u|_{\partial\Omega}=0$.
 
-*Proof.* Coercivity follows from the ellipticity and the Poincaré inequality: $J(v) \ge \frac\lambda2\|\nabla v\|^2 - \|f\|\|v\| \ge \frac\lambda4\|\nabla v\|^2 - C\|f\|^2$, so $J$ tends to infinity at infinity and is bounded below. Strict convexity follows from the strict positivity of the quadratic part. A minimising sequence is bounded in $H^1_0$, hence has a weakly convergent subsequence by reflexivity, and $J$ is weakly lower semicontinuous because the quadratic part is; the limit $u$ minimises. At a minimiser, $J(u+tv)\ge J(u)$ for all $t$ gives $a(u,v)-\int fv=0$ on differentiating at $t=0$, and the symmetry of $A$ is used exactly here, to identify the derivative of the quadratic part. Conversely a weak solution minimises $J$ because $J(u+v)-J(u) = \frac12\int A\nabla v\cdot\nabla v\ge0$; uniqueness is strict convexity. $\square$
+*Proof.* Coercivity follows from the ellipticity and the Poincaré inequality: $J(v) \ge \frac\lambda2\|\nabla v\|^2 - \|f\|\|v\| \ge \frac\lambda4\|\nabla v\|^2 - C\|f\|^2$, so $J$ tends to infinity at infinity and is bounded below. Strict convexity follows from the strict positivity of the quadratic part. A minimising sequence is bounded in $H^1_0$, hence has a weakly convergent subsequence by reflexivity, and $J$ is weakly lower semicontinuous because the quadratic part is; the limit $u$ minimises. At a minimiser, $J(u+tv)\ge J(u)$ for all $t$ gives $a(u,v)-\int fv=0$ on differentiating at $t=0$, and the symmetry of $A$ is used exactly here, to identify the derivative of the quadratic part. Conversely a weak solution minimises $J$ because $J(u+v)-J(u) = \frac12\int A\nabla v\cdot\nabla v\ge0$; uniqueness is strict convexity.
 
 The Dirichlet principle is the origin of the subject and the reason for the name of the space: the weak solution is the minimiser of an energy, and the minimisation can be carried out in $H^1_0$ even when no classical minimiser exists. The general theory of minimisation problems of this kind — lower semicontinuity, convexity, the Euler–Lagrange equation, and the direct method of the calculus of variations in which a minimiser is found by compactness — is developed in the article of this Part on the calculus of variations, where the present theorem appears as the model case.
 

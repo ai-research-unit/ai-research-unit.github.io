@@ -45,7 +45,7 @@ $$
 \tilde{\nabla}\bar{\tilde{\nabla}} = \bar{\tilde{\nabla}}\tilde{\nabla} = \Box := \left(\partial_0^2 + \partial_1^2 + \partial_2^2 + \partial_3^2\right) e_0 .
 $$
 
-**Proof.** The units satisfy $e_\mu\bar{e}_\nu + e_\nu\bar{e}_\mu = 2\delta_{\mu\nu}e_0$, so the cross terms cancel in the product, leaving the sum of the second derivatives. $\square$
+**Proof.** The units satisfy $e_\mu\bar{e}_\nu + e_\nu\bar{e}_\mu = 2\delta_{\mu\nu}e_0$, so the cross terms cancel in the product, leaving the sum of the second derivatives.
 
 The operator $\tilde{\nabla}$ is the first-order operator whose fundamental solution is the Cauchy kernel; it must not be confused with $\tilde{\nabla}^2 = (\partial_0^2-\Delta) + 2\sum_k e_k\partial_0\partial_k$, which is split-biquaternion-valued and is not the d'Alembertian.
 
@@ -63,7 +63,7 @@ $$
 
 a system of four first-order equations coupling the scalar part $F_0$ to the vector part $\mathbf{F}$.
 
-**Proof.** Expanding $\tilde{\nabla}\tilde{F} = \sum_\mu\sum_\nu (\partial_\mu F_\nu)e_\mu e_\nu$ and separating the scalar and vector parts of the quaternion product gives the displayed system, the same computation as for the quaternions (see *Split-Biquaternion Analysis*). $\square$
+**Proof.** Expanding $\tilde{\nabla}\tilde{F} = \sum_\mu\sum_\nu (\partial_\mu F_\nu)e_\mu e_\nu$ and separating the scalar and vector parts of the quaternion product gives the displayed system, the same computation as for the quaternions (see *Split-Biquaternion Analysis*).
 
 On the quaternion subspace, where the coefficients are real, the principal symbol $s(\xi) = \sum_\mu \xi_\mu e_\mu$ satisfies $s(\xi)\bar{s}(\xi) = |\xi|^2 e_0$, so the system is elliptic and its regular functions are real-analytic. On an indefinite four-dimensional subspace, where the coordinate along the split direction enters the symbol with the opposite sign, the principal symbol degenerates on the null cone and the system is no longer elliptic.
 
@@ -93,7 +93,7 @@ $$
 \Box\tilde{F} = \bar{\tilde{\nabla}}\left(\tilde{\nabla}\tilde{F}\right) = 0 , \qquad \Box = \left(\partial_0^2 + \partial_1^2 + \partial_2^2 + \partial_3^2\right)e_0 .
 $$
 
-**Proof.** Apply $\bar{\tilde{\nabla}}$ to $\tilde{\nabla}\tilde{F} = 0$ and use the factorization. $\square$
+**Proof.** Apply $\bar{\tilde{\nabla}}$ to $\tilde{\nabla}\tilde{F} = 0$ and use the factorization.
 
 The converse fails: $x_0$ is harmonic but $\tilde{\nabla}x_0 = e_0 \neq 0$. On the quaternion subspace the d'Alembertian is the ordinary Laplacian in four real variables, so every regular function there is harmonic in the classical sense; on an indefinite subspace it is a wave operator, and the elliptic tools of the complex theory — the mean value property, the maximum principle and Liouville's theorem — are not available.
 
@@ -111,7 +111,7 @@ In the complex theory the variable ranges over a field and every nonzero element
 
 ## The Relation to the Biquaternion Case and to Clifford Analysis
 
-Restricting to real quaternion-valued functions on the quaternion subspace recovers Fueter's quaternionic analysis in full, since that subspace is a division algebra; the split biquaternion theory is the extension obtained by allowing the coefficients to run over $\mathbb{D}$. The biquaternion case replaces $\mathbb{D}$ by $\mathbb{C}$: the norm form there is complex, the zero divisors are the null quadric of an isotropic form and form a hypersurface, and the Cauchy kernel $\bar{\tilde{Q}}/\|\tilde{Q}\|_E^4$ is a genuine fundamental solution on the whole algebra off the origin. In the split biquaternion case the norm form is anisotropic and the zero divisors form the union of two linear subspaces, so the singular set of the naive inverse is a union of two four-dimensional subspaces rather than a quadric hypersurface. The regularity system, the harmonicity and the factorization of the d'Alembertian are formally identical in the two cases, since both rest on the same Clifford relation among $e_0,e_1,e_2,e_3$; what differs is the coefficient algebra and hence the invertibility.
+Restricting to real quaternion-valued functions on the quaternion subspace recovers Fueter's quaternionic analysis in full, since that subspace is a division algebra; the split biquaternion theory is the extension obtained by allowing the coefficients to run over $\mathbb{D}$. The biquaternion case replaces $\mathbb{D}$ by $\mathbb{C}$: the norm there is complex, the zero divisors are the null quadric of an isotropic form and form a hypersurface, and the Cauchy kernel $\bar{\tilde{Q}}/\|\tilde{Q}\|_E^4$ is a genuine fundamental solution on the whole algebra off the origin. In the split biquaternion case the split-biquaternion norm is anisotropic and the zero divisors form the union of two linear subspaces, so the singular set of the naive inverse is a union of two four-dimensional subspaces rather than a quadric hypersurface. The regularity system, the harmonicity and the factorization of the d'Alembertian are formally identical in the two cases, since both rest on the same Clifford relation among $e_0,e_1,e_2,e_3$; what differs is the coefficient algebra and hence the invertibility.
 
 The general setting is Clifford analysis. On the subsystem generated by $e_0,e_1,e_2,e_3$ with the negative definite relations, the regular functions are the monogenic functions of the Clifford algebra $\mathrm{Cl}_{0,3}$; allowing the coefficients to be split complex replaces the complex coefficient field by $\mathbb{D}$ and introduces the zero divisors. The bridge between the single-plane and the hypercomplex notions is the Fueter–Sce construction, in which the appropriate power of the Laplacian converts a slice-regular function of one complex variable into a monogenic function of four real variables; for the split biquaternion setting this is treated in *Fueter Theory for Split-Biquaternions*.
 

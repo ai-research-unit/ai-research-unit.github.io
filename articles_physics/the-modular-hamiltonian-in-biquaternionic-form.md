@@ -400,7 +400,7 @@ The one structural question the finite-dimensional model cannot settle is locali
 | $\mathbf a=-\tfrac12\log(\lambda_+/\lambda_-)\hat{\mathbf r}$ | Vector part of $\tilde K$ |
 | $\tilde K=\beta\tilde H+(\log Z)e_0$ | Gibbs-state modular Hamiltonian |
 | $G_1=ie_1\in\mathbb{M}_+$ | Boost generator ($=K_1$ in the Lorentz-group companion) |
-| $\tilde\Lambda(\psi)=\cosh\frac{\psi}{2}+i\sinh\frac{\psi}{2}e_1$ | Boost rotor (Hermitian, unit norm form) |
+| $\tilde\Lambda(\psi)=\cosh\frac{\psi}{2}+i\sinh\frac{\psi}{2}e_1$ | Boost rotor (Hermitian, unit norm) |
 | $\tilde K_W=2\pi G_1$ | Wedge modular Hamiltonian (Bisognano–Wichmann) |
 
 ## Further Reading

@@ -79,7 +79,7 @@ $$
 
 The derivation of this formula and its role in the Born rule are the subject of the companion article *The Born Rule as a Trace Formula*; here we only use it. Two features matter for the partition function. The formula is **bilinear and symmetric**, and it is **real** when both factors lie in $\mathbb{M}_+$. Note also that the product $\tilde P\tilde H$ need not itself lie in $\mathbb{M}_+$ — it acquires a real vector part $-\mathbf p\times\mathbf h$ in the quaternion product — and yet its scalar part, and therefore the trace, is still given by the formula above. The trace does not require the product to remain in $\mathbb{M}_+$; it requires only the factors to.
 
-A remark on the alternative. The trace is not the only natural scalar that can be extracted from an element of $\mathbb{M}_+$; the **norm form** $N(\tilde Q)=\tilde Q\bar{\tilde Q}$ is another. On $\tilde H=h_0e_0+i\mathbf h$ it gives $N(\tilde H)=h_0^2-|\mathbf h|^2$, of signature $(1,3)$, and it is the form whose future cone defines the state space. A later section shows that the norm form of the thermal operator is blind to the level splitting and so cannot serve as a partition function. The trace, not the norm, is the scalar that thermodynamics uses; the companion article *The Born Rule as a Trace Formula* makes the general case for why.
+A remark on the alternative. The trace is not the only natural scalar that can be extracted from an element of $\mathbb{M}_+$; the **biquaternion norm** $N(\tilde Q)=\tilde Q\bar{\tilde Q}$ is another. On $\tilde H=h_0e_0+i\mathbf h$ it gives $N(\tilde H)=h_0^2-|\mathbf h|^2$, of signature $(1,3)$, and it is the form whose future cone defines the state space. A later section shows that the biquaternion norm of the thermal operator is blind to the level splitting and so cannot serve as a partition function. The trace, not the norm, is the scalar that thermodynamics uses; the companion article *The Born Rule as a Trace Formula* makes the general case for why.
 
 ## The Thermal Operator and the Partition Function
 
@@ -103,7 +103,7 @@ e^{-\beta\tilde H}=e^{-\beta h_0}e^{-\beta i\mathbf h}
 \qquad \hat{\mathbf h}=\frac{\mathbf h}{|\mathbf h|}.
 $$
 
-This is the **thermal operator**. It is Hermitian, since $\tilde H^\dagger=\tilde H$ implies $(e^{-\beta\tilde H})^\dagger=e^{-\beta\tilde H}$, so it is an element of $\mathbb{M}_+$: its scalar part is real and its vector part is imaginary. Equivalently, it is $e^{-\beta h_0}$ times the unit-norm-form element $\tilde\Lambda=\cosh(\beta|\mathbf h|)e_0-i\sinh(\beta|\mathbf h|)\hat{\mathbf h}$, which is a **boost biquaternion** in $\mathbb{M}_+$ — the natural home of boosts, as the companion article on $\mathbb{M}_+$ records. The boost rapidity is $2\beta|\mathbf h|$ in the parametrization $\tilde\Lambda=\cosh(\psi/2)+i\sinh(\psi/2)\hat{\mathbf u}$, with $\hat{\mathbf u}=-\hat{\mathbf h}$.
+This is the **thermal operator**. It is Hermitian, since $\tilde H^\dagger=\tilde H$ implies $(e^{-\beta\tilde H})^\dagger=e^{-\beta\tilde H}$, so it is an element of $\mathbb{M}_+$: its scalar part is real and its vector part is imaginary. Equivalently, it is $e^{-\beta h_0}$ times the unit-norm element $\tilde\Lambda=\cosh(\beta|\mathbf h|)e_0-i\sinh(\beta|\mathbf h|)\hat{\mathbf h}$, which is a **boost biquaternion** in $\mathbb{M}_+$ — the natural home of boosts, as the companion article on $\mathbb{M}_+$ records. The boost rapidity is $2\beta|\mathbf h|$ in the parametrization $\tilde\Lambda=\cosh(\psi/2)+i\sinh(\psi/2)\hat{\mathbf u}$, with $\hat{\mathbf u}=-\hat{\mathbf h}$.
 
 Applying the trace formula with $\tilde P=e_0$ (the identity, which lies in $\mathbb{M}_+$) and using $e^{-\beta\tilde H}\in\mathbb{M}_+$,
 
@@ -181,13 +181,13 @@ We can now separate the two cases cleanly.
 
 **Hermitian Hamiltonian: no modification.** For $\tilde H\in\mathbb{M}_+$, the object $Z=\mathrm{Tr}(e^{-\beta\tilde H})=2\,\mathrm{Sc}(e^{-\beta\tilde H})$ is exactly the ordinary partition function. The algebra's contribution is a reading with three components: the trace is a scalar extraction, the thermal operator is a scalar Boltzmann weight times a boost biquaternion in $\mathbb{M}_+$, and $\beta$ measures a displacement along the imaginary-time axis of $\mathbb{M}_-$. No second partition function arises, and none is required. If the framework is to have content here beyond notation, it must be content of this interpretive kind; the algebra alone does not supply a new $Z$.
 
-It is worth confirming that the obvious rival scalar does not work. The norm form of the thermal operator is
+It is worth confirming that the obvious rival scalar does not work. The biquaternion norm of the thermal operator is
 
 $$
 N\big(e^{-\beta\tilde H}\big)=e^{-2\beta h_0}\Big(\cosh^2(\beta|\mathbf h|)-\sinh^2(\beta|\mathbf h|)\Big)e_0=e^{-2\beta h_0}e_0,
 $$
 
-which is **independent of $|\mathbf h|$**. The norm form sees only the trace part $h_0$ of the Hamiltonian and is blind to the level splitting $|\mathbf h|$; its logarithm is linear in $\beta$ and would give a free energy independent of $\beta$, with no thermal population of the excited level. The trace is the scalar that thermodynamics requires, and the norm form is not a candidate partition function.
+which is **independent of $|\mathbf h|$**. The biquaternion norm sees only the trace part $h_0$ of the Hamiltonian and is blind to the level splitting $|\mathbf h|$; its logarithm is linear in $\beta$ and would give a free energy independent of $\beta$, with no thermal population of the excited level. The trace is the scalar that thermodynamics requires, and the biquaternion norm is not a candidate partition function.
 
 **Non-Hermitian generator: a complex partition function.** The one place where the sector split changes the answer is if the generator is allowed to leave $\mathbb{M}_+$. Let
 
@@ -248,7 +248,7 @@ The algebra does not force a modification. A genuine modification appears only i
 | $\mathbf r=-\tanh(\beta|\mathbf h|)\hat{\mathbf h}$ | Bloch vector of the thermal state |
 | $F=-\beta^{-1}\log Z$, $U=-\partial_\beta\log Z$ | Free energy, internal energy |
 | $K=-\log\tilde\rho=\beta\tilde H+(\log Z)e_0$ | Modular Hamiltonian (in $\mathbb{M}_+$) |
-| $N(\tilde Q)=\tilde Q\bar{\tilde Q}$ | Norm form |
+| $N(\tilde Q)=\tilde Q\bar{\tilde Q}$ | Biquaternion norm |
 | $\beta=1/(k_BT)$ ($\hbar=1$) | Inverse temperature |
 
 ## Further Reading

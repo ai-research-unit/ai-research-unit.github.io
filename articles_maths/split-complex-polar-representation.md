@@ -3,15 +3,15 @@
 
 ## Introduction
 
-This article is about the **polar representation** of a split-complex number: the statement that every split-complex number whose norm form does not vanish is the product of a positive real scale and a unit split-complex number of norm form $\pm1$, and the description of the unit factor as an exponential.
+This article is about the **polar representation** of a split-complex number: the statement that every split-complex number whose norm does not vanish is the product of a positive real scale and a unit split-complex number of norm $\pm1$, and the description of the unit factor as an exponential.
 
-The algebra $\mathbb{D}$ is the two-dimensional *indefinite* algebra, and its polar representation is the companion of the definite case treated in *Complex Polar Representation*. The two algebras carry the same basis, the same conjugation and the same dimension, and differ in one sign, $j^2 = +1$ instead of $i^2 = -1$; the consequences for the polar representation are the three that organise this article. The norm form is indefinite, so the modulus is a square root of an absolute value and the sign of the norm form separates the algebra into two regimes with different unit factors. The unit factor is hyperbolic rather than trigonometric, so the unit group is not compact and its exponential is injective. And the norm form vanishes on a pair of lines, so the polar representation has a genuine boundary, the null cone, which is at the same time the zero-divisor set of the algebra.
+The algebra $\mathbb{D}$ is the two-dimensional *indefinite* algebra, and its polar representation is the companion of the definite case treated in *Complex Polar Representation*. The two algebras carry the same basis, the same conjugation and the same dimension, and differ in one sign, $j^2 = +1$ instead of $i^2 = -1$; the consequences for the polar representation are the three that organise this article. The norm is indefinite, so the modulus is a square root of an absolute value and the sign of the norm separates the algebra into two regimes with different unit factors. The unit factor is hyperbolic rather than trigonometric, so the unit group is not compact and its exponential is injective. And the norm vanishes on a pair of lines, so the polar representation has a genuine boundary, the null cone, which is at the same time the zero-divisor set of the algebra.
 
-The plan is as follows. The norm form and its three regions are recorded, the modulus and the unit set are defined, and existence and uniqueness are proved. The unit factor is then described as an exponential, and the exponential is organised by the same trichotomy $\nu^2 = -1$, $0$, $+1$ that governs the whole family, of which the split-complex algebra occupies exactly one row. The two regimes, the null cone, the group of units and the matrix picture follow, and worked examples close the article. The conventions are those of *Split-Complex Algebra*: the basis is $1$, $j$, the multiplication is $jj = +1$, the conjugate is $\bar{Z} = a - j b$, the norm form is $N(Z) = Z\bar{Z} = a^2 - b^2$, and the idempotent basis is $\Pi_1 = (1+j)/2$, $\Pi_2 = (1-j)/2$. The hyperbolic angle and the unit hyperbola are those of *Hyperbolic Rotations*, whose polar decomposition $Z = \rho u$ with $\rho > 0$ and $N(u) = \pm1$ this article reorganises into the slots of the family. Every numerical value displayed below was recomputed in double precision.
+The plan is as follows. The norm and its three regions are recorded, the modulus and the unit set are defined, and existence and uniqueness are proved. The unit factor is then described as an exponential, and the exponential is organised by the same trichotomy $\nu^2 = -1$, $0$, $+1$ that governs the whole family, of which the split-complex algebra occupies exactly one row. The two regimes, the null cone, the group of units and the matrix picture follow, and worked examples close the article. The conventions are those of *Split-Complex Algebra*: the basis is $1$, $j$, the multiplication is $jj = +1$, the conjugate is $\bar{Z} = a - j b$, the norm is $N(Z) = Z\bar{Z} = a^2 - b^2$, and the idempotent basis is $\Pi_1 = (1+j)/2$, $\Pi_2 = (1-j)/2$. The hyperbolic angle and the unit hyperbola are those of *Hyperbolic Rotations*, whose polar decomposition $Z = \rho u$ with $\rho > 0$ and $N(u) = \pm1$ this article reorganises into the slots of the family. Every numerical value displayed below was recomputed in double precision.
 
-## The Norm Form and Its Three Regions
+## The Norm and Its Three Regions
 
-The norm form of a split-complex number $Z = a + j b$ is
+The norm of a split-complex number $Z = a + j b$ is
 
 $$
 N(Z) = Z\bar{Z} = a^2 - b^2 .
@@ -39,11 +39,11 @@ $$
 
 in which $\rho$ is the **modulus** of $Z$ and $u$ is its **unit factor**.
 
-The modulus is a positive real, as in the complex case. The unit factor is constrained by $\lvert N(u)\rvert = 1$ rather than by $N(u) = 1$, and this is forced by the indefiniteness: a unit factor of norm form $-1$ exists, while a general element of negative norm form cannot be written with a unit factor of norm form $+1$. The constraint is one real equation, so the unit factor carries one parameter out of the two of a general element, and the counts $1+1$ add to the real dimension two.
+The modulus is a positive real, as in the complex case. The unit factor is constrained by $\lvert N(u)\rvert = 1$ rather than by $N(u) = 1$, and this is forced by the indefiniteness: a unit factor of norm $-1$ exists, while a general element of negative norm cannot be written with a unit factor of norm $+1$. The constraint is one real equation, so the unit factor carries one parameter out of the two of a general element, and the counts $1+1$ add to the real dimension two.
 
 ### The Modulus and the Regime
 
-Taking norm forms in $Z = \rho u$ gives $N(Z) = \rho^2N(u)$, so $\lvert N(Z)\rvert = \rho^2$ and
+Taking norms in $Z = \rho u$ gives $N(Z) = \rho^2N(u)$, so $\lvert N(Z)\rvert = \rho^2$ and
 
 $$
 \rho = \sqrt{\lvert N(Z)\rvert} .
@@ -55,7 +55,7 @@ $$
 \operatorname{sign}N(u) = \operatorname{sign}N(Z),
 $$
 
-so the two regimes of the norm form are the two regimes of the unit factor, and a single polar representation does not straddle them. In the idempotent coordinates $Z = Z_+\Pi_1 + Z_-\Pi_2$ the norm form is the product $N(Z) = Z_+Z_-$, so the modulus is the geometric mean
+so the two regimes of the norm are the two regimes of the unit factor, and a single polar representation does not straddle them. In the idempotent coordinates $Z = Z_+\Pi_1 + Z_-\Pi_2$ the norm is the product $N(Z) = Z_+Z_-$, so the modulus is the geometric mean
 
 $$
 \rho = \sqrt{\lvert Z_+Z_-\rvert},
@@ -69,7 +69,7 @@ which is the modulus of the companion article *Hyperbolic Rotations*, written th
 
 *Existence.* Put $\rho = \sqrt{\lvert N(Z)\rvert}$ and $u = Z/\rho$. Since $N(Z) \neq 0$, $\rho > 0$, and $\lvert N(u)\rvert = \lvert N(Z)\rvert/\rho^2 = 1$ because $N(\lambda Z) = \lambda^2N(Z)$ for real $\lambda$. Hence $Z = \rho u$ with $\rho > 0$ and $\lvert N(u)\rvert = 1$.
 
-*Uniqueness.* Suppose $Z = \rho u = \rho'u'$ with $\rho, \rho' > 0$ and $\lvert N(u)\rvert = \lvert N(u')\rvert = 1$. Taking absolute values of the norm form gives $\rho^2 = \lvert N(Z)\rvert = \rho'^2$, so $\rho = \rho'$ because both are positive, and then $u = Z/\rho = u'$. $\square$
+*Uniqueness.* Suppose $Z = \rho u = \rho'u'$ with $\rho, \rho' > 0$ and $\lvert N(u)\rvert = \lvert N(u')\rvert = 1$. Taking absolute values of the norm gives $\rho^2 = \lvert N(Z)\rvert = \rho'^2$, so $\rho = \rho'$ because both are positive, and then $u = Z/\rho = u'$.
 
 The pair is unique and the modulus is forced; the freedom that remains is in the coordinate of the unit factor, and it is larger than in the complex case, the unit set $\lvert N\rvert = 1$ having four connected components rather than one.
 
@@ -142,7 +142,7 @@ In $\mathbb{D}$ the generator $j$ is anti-Hermitian, $\bar{j} = -j$, and has squ
 
 ## The Null Cone: The Boundary of the Representation
 
-The polar representation is defined on the complement of the null cone and nowhere else. If $N(Z) = 0$ and $Z \neq 0$ then $\rho = 0$, the unit factor $u = Z/\rho$ does not exist, and no rescaling of $Z$ has norm form $\pm1$:
+The polar representation is defined on the complement of the null cone and nowhere else. If $N(Z) = 0$ and $Z \neq 0$ then $\rho = 0$, the unit factor $u = Z/\rho$ does not exist, and no rescaling of $Z$ has norm $\pm1$:
 
 $$
 Z = 1 + j = 2\Pi_1, \qquad N(Z) = 0, \qquad \Pi_1^2 = \Pi_1, \qquad \Pi_1\Pi_2 = 0 .
@@ -182,7 +182,7 @@ $$
 \det M_Z = a^2 - b^2 = N(Z), \qquad \operatorname{tr}M_Z = 2a,
 $$
 
-so the norm form is again the determinant, and the modulus is $\rho = \sqrt{\lvert\det M_Z\rvert}$. The polar representation becomes
+so the norm is again the determinant, and the modulus is $\rho = \sqrt{\lvert\det M_Z\rvert}$. The polar representation becomes
 
 $$
 M_Z = \rho\,M_u, \qquad M_u = \begin{pmatrix} \cosh\phi & \sinh\phi \\ \sinh\phi & \cosh\phi \end{pmatrix}, \qquad \det M_u = 1,
@@ -222,13 +222,13 @@ $$
 \rho = \sqrt{3} = 1.7320508075688772, \qquad \tanh\phi = \frac{a}{b} = \frac{1}{2}, \qquad \phi = \operatorname{arsinh}\frac{1}{\sqrt3} = 0.5493061443340549 ,
 $$
 
-and the unit factor is on the hyperbola of norm form minus one,
+and the unit factor is on the hyperbola of norm minus one,
 
 $$
 u = \frac{Z}{\rho} = 0.5773502691896258 + 1.1547005383792517\,j = \sinh\phi + j\cosh\phi = j\,e^{\phi j},
 $$
 
-with $\rho\sinh\phi = 1$ exactly and $\rho\cosh\phi = 2$ to one unit in the last place ($1.9999999999999998$). The same element written with a unit factor of norm form $+1$ does not exist, which is the statement $\operatorname{sign}N(u) = \operatorname{sign}N(Z)$ of the modulus section.
+with $\rho\sinh\phi = 1$ exactly and $\rho\cosh\phi = 2$ to one unit in the last place ($1.9999999999999998$). The same element written with a unit factor of norm $+1$ does not exist, which is the statement $\operatorname{sign}N(u) = \operatorname{sign}N(Z)$ of the modulus section.
 
 ### The Boundary and the Degenerate Shapes
 
@@ -240,7 +240,7 @@ with $\rho\sinh\phi = 1$ exactly and $\rho\cosh\phi = 2$ to one unit in the last
 | $1+j$ | $0$ | null | — | — | no polar form |
 | $\Pi_1$ | $0$ | null | — | — | no polar form |
 
-The first two lines are the spacelike axis, with unit factor $\pm1$ and vanishing angle; the third is the timelike axis, with unit factor $j$ and vanishing angle, on the hyperbola of norm form $-1$. The last two lines are the null cone: the modulus vanishes, the unit factor is undefined, and the two elements are the idempotent $\Pi_1$ and its double, which are zero divisors and not units.
+The first two lines are the spacelike axis, with unit factor $\pm1$ and vanishing angle; the third is the timelike axis, with unit factor $j$ and vanishing angle, on the hyperbola of norm $-1$. The last two lines are the null cone: the modulus vanishes, the unit factor is undefined, and the two elements are the idempotent $\Pi_1$ and its double, which are zero divisors and not units.
 
 ## Comparison with the Other Members of the Series
 
@@ -256,7 +256,7 @@ The progression from $\mathbb{C}$ to $\mathbb{D}$ is the exchange of one sign, a
 
 ## Summary
 
-Every split-complex number $Z$ with $N(Z) \neq 0$ has exactly one polar representation $Z = \rho u$, with modulus $\rho = \sqrt{\lvert N(Z)\rvert} > 0$ and unit factor $u = Z/\rho$ satisfying $\lvert N(u)\rvert = 1$. The sign of the norm form is a regime, forced by $\operatorname{sign}N(u) = \operatorname{sign}N(Z)$, and the unit set has four components: $u = \pm e^{\phi j}$ in the positive regime and $u = \pm je^{\phi j}$ in the negative one, with the hyperbolic angle $\phi$ a coordinate of the line. Of the three rows of the trichotomy $\nu^2 = -1$, $0$, $+1$, only the hyperbolic row is live in $\mathbb{D}$: there is no root of $-1$ and no nilpotent, so there is no trigonometric factor and no parabolic one, and the unit factor is an exponential of the anti-Hermitian direction $j$ of signature $+1$. That position and that signature together are what no definite algebra of the family can produce, and the split-complex algebra is the smallest in which a unit factor is hyperbolic. Every element is central, since $\mathbb{D}$ is commutative, so the factor may be transposed freely, unlike the biquaternion boost; the transpose is the same element. The unit group has four components and is not compact, and the exponential of the hyperbolic angle is injective, so the angle has no period. The polar representation is defined exactly on the complement of the null cone, which is the zero-divisor set, and the boundary is the first in the family to be non-empty: on it the modulus vanishes and the unit factor does not exist.
+Every split-complex number $Z$ with $N(Z) \neq 0$ has exactly one polar representation $Z = \rho u$, with modulus $\rho = \sqrt{\lvert N(Z)\rvert} > 0$ and unit factor $u = Z/\rho$ satisfying $\lvert N(u)\rvert = 1$. The sign of the norm is a regime, forced by $\operatorname{sign}N(u) = \operatorname{sign}N(Z)$, and the unit set has four components: $u = \pm e^{\phi j}$ in the positive regime and $u = \pm je^{\phi j}$ in the negative one, with the hyperbolic angle $\phi$ a coordinate of the line. Of the three rows of the trichotomy $\nu^2 = -1$, $0$, $+1$, only the hyperbolic row is live in $\mathbb{D}$: there is no root of $-1$ and no nilpotent, so there is no trigonometric factor and no parabolic one, and the unit factor is an exponential of the anti-Hermitian direction $j$ of signature $+1$. That position and that signature together are what no definite algebra of the family can produce, and the split-complex algebra is the smallest in which a unit factor is hyperbolic. Every element is central, since $\mathbb{D}$ is commutative, so the factor may be transposed freely, unlike the biquaternion boost; the transpose is the same element. The unit group has four components and is not compact, and the exponential of the hyperbolic angle is injective, so the angle has no period. The polar representation is defined exactly on the complement of the null cone, which is the zero-divisor set, and the boundary is the first in the family to be non-empty: on it the modulus vanishes and the unit factor does not exist.
 
 ## Summary of Notation
 
@@ -265,7 +265,7 @@ Every split-complex number $Z$ with $N(Z) \neq 0$ has exactly one polar represen
 | $\mathbb{D}$ | the split-complex algebra, basis $1$, $j$, $j^2 = +1$ |
 | $Z = a + j b$ | a split-complex number, $a$ and $b$ real |
 | $\bar{Z} = a - j b$ | the split-complex conjugate |
-| $N(Z) = Z\bar{Z} = a^2-b^2$ | the norm form, indefinite of signature $(1,1)$ |
+| $N(Z) = Z\bar{Z} = a^2-b^2$ | the norm, indefinite of signature $(1,1)$ |
 | $\Pi_\pm = (1\pm j)/2$ | the idempotent basis, $Z = Z_+\Pi_1 + Z_-\Pi_2$ |
 | $\rho = \sqrt{\lvert N(Z)\rvert} = \sqrt{\lvert Z_+Z_-\rvert}$ | the modulus, a positive real |
 | $u = Z/\rho$ | the unit factor, $\lvert N(u)\rvert = 1$ |
@@ -283,4 +283,4 @@ Every split-complex number $Z$ with $N(Z) \neq 0$ has exactly one polar represen
 - Felix Klein, *Vorlesungen über nicht-euklidische Geometrie* (Springer, 1928), for the hyperbolic plane, its isometries and the role of the asymptotic directions.
 - Vladimir V. Kisil, *Geometry of Möbius Transformations: Elliptic, Parabolic and Hyperbolic Actions of $SL(2,\mathbb{R})$* (Imperial College Press, 2012), for the three regimes of the hyperbolic parametrisation and their geometric meaning.
 - John G. Ratcliffe, *Foundations of Hyperbolic Manifolds* (Springer, Graduate Texts in Mathematics 149, 2nd ed. 2006), for hyperbolic geometry, its isometry groups and the parametrisation by rapidity.
-- F. Reese Harvey, *Spinors and Calibrations* (Academic Press, 1990), for norm forms of arbitrary signature and the connected components of their isometry groups.
+- F. Reese Harvey, *Spinors and Calibrations* (Academic Press, 1990), for norms of arbitrary signature and the connected components of their isometry groups.

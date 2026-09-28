@@ -2,7 +2,7 @@
 
 ## Introduction
 
-For a two-state system the biquaternion framework gives a complete geometric picture of the state space: the states are the positive, trace-one elements of the Hermitian subspace $\mathbb{M}_+$, and that set is the intersection of the trace-one hyperplane with the future light cone of the norm form. The companion article *The Bloch Ball as the Trace-One Slice of the Future Light Cone* establishes this as an exact statement: with
+For a two-state system the biquaternion framework gives a complete geometric picture of the state space: the states are the positive, trace-one elements of the Hermitian subspace $\mathbb{M}_+$, and that set is the intersection of the trace-one hyperplane with the future light cone of the biquaternion norm. The companion article *The Bloch Ball as the Trace-One Slice of the Future Light Cone* establishes this as an exact statement: with
 
 $$
 \tilde\rho=\tfrac{1}{2}\left(e_0+i\mathbf r\right),\qquad |\mathbf r|\le 1,
@@ -20,7 +20,7 @@ Throughout, $\hbar=1$ in the geometric formulae, so that the spin-$1$ matrices h
 
 ## The Qubit Bloch Ball as the Reference Point
 
-It is worth stating the reference result in the form that will be generalised. In $\mathbb{M}_+$, an element is written $\tilde H=h_0e_0+i\mathbf h$ with $h_0\in\mathbb{R}$ and $\mathbf h\in\mathbb{R}^3$; its norm form is
+It is worth stating the reference result in the form that will be generalised. In $\mathbb{M}_+$, an element is written $\tilde H=h_0e_0+i\mathbf h$ with $h_0\in\mathbb{R}$ and $\mathbf h\in\mathbb{R}^3$; its biquaternion norm is
 
 $$
 N(\tilde H)=h_0^2-|\mathbf h|^2 ,
@@ -37,8 +37,8 @@ with eigenvalues $\lambda_\pm=\tfrac12(1\pm|\mathbf r|)$. Purity is the boundary
 Three features of this account are the ones that must be examined for spin $1$:
 
 - the state space is a **slice of a cone** by an affine hyperplane;
-- the state space is a **ball**, in the Euclidean structure that (minus) the norm form induces on the slice;
-- purity is a **quadratic** condition, the vanishing of the norm form.
+- the state space is a **ball**, in the Euclidean structure that (minus) the biquaternion norm induces on the slice;
+- purity is a **quadratic** condition, the vanishing of the biquaternion norm.
 
 For spin $1$ the first fails because there is no relevant four-dimensional cone, the second fails because the state space is not a ball, and only the third survives in a weakened form: purity is still the vanishing of a determinant, but the determinant of a $3\times3$ matrix is a cubic, not a quadratic.
 
@@ -134,7 +134,7 @@ $$
 |\mathbf n|\le1\qquad\text{and}\qquad \det\rho\ge0 .
 $$
 
-*Proof.* Positivity is equivalent to the non-negativity of all three eigenvalues. If $|\mathbf n|\le1$ then $\mathrm{Tr}(\rho^2)\le1$. Suppose an eigenvalue $\lambda_1<0$; then $\det\rho\ge0$ forces $\lambda_2\lambda_3\le0$, and since $\lambda_1\le\lambda_2\le\lambda_3$ and $\lambda_1<0$ the only possibility is $\lambda_2\le0$, whence $\lambda_3=1-\lambda_1-\lambda_2\ge1$ and $\mathrm{Tr}(\rho^2)\ge\lambda_3^2>1$, contradicting $|\mathbf n|\le1$. Thus $\det\rho\ge0$ together with $|\mathbf n|\le1$ forces $\lambda_1\ge0$. The converse is immediate. $\square$
+*Proof.* Positivity is equivalent to the non-negativity of all three eigenvalues. If $|\mathbf n|\le1$ then $\mathrm{Tr}(\rho^2)\le1$. Suppose an eigenvalue $\lambda_1<0$; then $\det\rho\ge0$ forces $\lambda_2\lambda_3\le0$, and since $\lambda_1\le\lambda_2\le\lambda_3$ and $\lambda_1<0$ the only possibility is $\lambda_2\le0$, whence $\lambda_3=1-\lambda_1-\lambda_2\ge1$ and $\mathrm{Tr}(\rho^2)\ge\lambda_3^2>1$, contradicting $|\mathbf n|\le1$. Thus $\det\rho\ge0$ together with $|\mathbf n|\le1$ forces $\lambda_1\ge0$. The converse is immediate.
 
 The state space is therefore the intersection of the eight-dimensional unit ball with the region $\det\rho\ge0$, whose boundary is the cubic hypersurface $\det\rho=0$. A numerical scan confirms the structure: along the $\lambda_8$ axis the boundary is at $|\mathbf n|=\tfrac12$ exactly, and the states with $|\mathbf n|>1$ are excluded everywhere.
 
@@ -187,7 +187,7 @@ $$
 \operatorname{spec}\rho=\left\{\tfrac{1}{3}+\tfrac{t}{3},\ \tfrac{1}{3}+\tfrac{t}{3},\ \tfrac{1}{3}-\tfrac{2t}{3}\right\},
 $$
 
-whose least eigenvalue vanishes at $t=\tfrac12$ and is negative for $t>\tfrac12$. The direction $\lambda_8$ therefore reaches the boundary at radius exactly $\tfrac12$, and no ball of larger radius is contained in the state space. $\square$
+whose least eigenvalue vanishes at $t=\tfrac12$ and is negative for $t>\tfrac12$. The direction $\lambda_8$ therefore reaches the boundary at radius exactly $\tfrac12$, and no ball of larger radius is contained in the state space.
 
 The radius $r=\tfrac12$ is the standard value for a three-level system. In the normalisation in which the pure states have $|\mathbf n|=1$, the inscribed ball and the pure-state sphere stand in the ratio $\tfrac12$, which is the quantitative statement that the qutrit state space is far from a ball; in the standard normalisation the corresponding radii are $1/\sqrt3$ and $2/\sqrt3$, again in the ratio $\tfrac12$. A numerical search over two thousand random directions in the Bloch space found no boundary closer than $\tfrac12$, consistent with the proposition; the direction that attains it is the $\lambda_8$ direction, whose traceless part has the most eccentric spectrum.
 
@@ -233,9 +233,9 @@ The coherent states have three equivalent descriptions, and the equivalence is t
 
 - they are the orbit of the highest-weight idempotent under the adjoint action of the unit quaternions, $P\mapsto\tilde R P\tilde R^\dagger$;
 - they are the **symmetrised products of two fundamental idempotents**,
-  $$
+$$
   \rho_{\mathrm{coh}}(\hat n)=P_{\mathrm{sym}}\left(\tilde\Pi(\hat n)\otimes \tilde\Pi(\hat n)\right)P_{\mathrm{sym}},
-  $$
+$$
   with $\tilde\Pi(\hat n)=\tfrac12(e_0+i\hat n)$ the qubit idempotent of the companion article; the projection has unit trace and was verified to agree with the closed form for arbitrary directions;
 - they are the image of the degree-two Veronese embedding of the Bloch sphere in $\mathbb{CP}^2$.
 
@@ -264,7 +264,7 @@ For the qubit the two coincide, because the Bloch ball is at once the state spac
 
 **Supplies.** The spin-$1$ operators, as the adjoint action on the traceless part of $\mathbb{B}$ and equivalently as the symmetric combination of two fundamental factors. The sector in which the states live, namely the symmetric face of the two-qubit state space, selected by the projector $P_{\mathrm{sym}}$ of the two-spin problem. The coherent states, as the orbit of a fundamental idempotent, as symmetrised products of two fundamental idempotents, and as the Veronese image of the Bloch sphere. The Born rule, which reduces on the sector to the ordinary trace formula.
 
-**Does not supply.** A cone whose trace-one slice is the state space. The qubit state space was the slice of the future cone of the norm form on $\mathbb{M}_+$ by the hyperplane $\mathrm{Sc}=\tfrac12$; the spin-$1$ state space is eight-dimensional and the positive cone of $\mathbb{M}_+$ is four-dimensional, so no such description is available. Nor is there a single quadratic form whose positivity region is the state space: the determinant of a $3\times3$ matrix is a cubic, and the boundary of the state space is the union of a cubic hypersurface with part of the unit sphere. The qubit's coincidence of positivity, causality, and a quadratic norm form has no spin-$1$ analogue.
+**Does not supply.** A cone whose trace-one slice is the state space. The qubit state space was the slice of the future cone of the biquaternion norm on $\mathbb{M}_+$ by the hyperplane $\mathrm{Sc}=\tfrac12$; the spin-$1$ state space is eight-dimensional and the positive cone of $\mathbb{M}_+$ is four-dimensional, so no such description is available. Nor is there a single quadratic form whose positivity region is the state space: the determinant of a $3\times3$ matrix is a cubic, and the boundary of the state space is the union of a cubic hypersurface with part of the unit sphere. The qubit's coincidence of positivity, causality, and a quadratic biquaternion norm has no spin-$1$ analogue.
 
 **The reason.** This is not an accident of the algebra but a consequence of its module structure. The Hermitian subspace $\mathbb{M}_+$ is the state space of the fundamental module, and the framework's positivity cone is the cone of that module. A three-level system is not a module of $\mathbb{B}$; it is a sector of the tensor square of two fundamental modules, obtained by a projector. The geometry of a projector's range is not the geometry of the algebra's own cone, and the difference is exactly the loss of the ball.
 
@@ -290,7 +290,7 @@ The article established the following.
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
 | $\mathbb{M}_+$ | Hermitian subspace; positive cone $=$ future cone of $N$ |
-| $N(\tilde H)=h_0^2-\lvert\mathbf h\rvert^2$ | Norm form, signature $(1,3)$ |
+| $N(\tilde H)=h_0^2-\lvert\mathbf h\rvert^2$ | Biquaternion norm, signature $(1,3)$ |
 | $\tilde\rho=\tfrac12(e_0+i\mathbf r)$ | Qubit state, Bloch ball $\lvert\mathbf r\rvert\le1$ |
 | $P_{\mathrm{sym}},P_{\mathrm{asym}}$ | Triplet and singlet projectors of $\mathbb{B}\otimes\mathbb{B}$ |
 | $F_k$ | Spin-$1$ operators, $[F_i,F_j]=i\hbar\epsilon_{ijk}F_k$ |

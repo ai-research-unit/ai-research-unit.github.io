@@ -46,7 +46,7 @@ The **characteristic** of a unital ring $R$ is the least $n \geq 1$ with $n \cdo
 
 **Theorem.** The characteristic of a field is $0$ or a prime $p$.
 
-**Proof.** If $n = ab$ with $a, b > 1$ then $(a \cdot 1)(b \cdot 1) = n \cdot 1 = 0$, so one factor is $0$, contradicting the minimality of $n$. $\square$
+**Proof.** If $n = ab$ with $a, b > 1$ then $(a \cdot 1)(b \cdot 1) = n \cdot 1 = 0$, so one factor is $0$, contradicting the minimality of $n$.
 
 In characteristic $p$, each binomial coefficient $\binom{p}{k}$ with $0 < k < p$ is divisible by $p$, so the **freshman's dream** holds: $(x+y)^p = x^p + y^p$ and $(xy)^p = x^p y^p$, and likewise for $p^n$. Hence the **Frobenius map** $\varphi(x) = x^p$ is an injective field endomorphism, surjective exactly when every element of $F$ is a $p$-th power; a field with this property is **perfect** in characteristic $p$.
 
@@ -104,7 +104,7 @@ Let $K/F$ be an extension and $\alpha \in K$. Then $\alpha$ is **algebraic over 
 
 **Theorem.** For $\alpha \in K$ the following are equivalent: (a) $\alpha$ is algebraic over $F$; (b) $F[\alpha] = F(\alpha)$; (c) $[F(\alpha):F] < \infty$.
 
-**Proof.** Evaluation $\varepsilon : F[x] \to K$, $p \mapsto p(\alpha)$, has image $F[\alpha]$ and kernel $(m)$. If $\alpha$ is algebraic then $m \neq 0$; as $F[\alpha]$ is an integral domain inside the field $K$, $(m)$ is a nonzero prime ideal of the PID $F[x]$, hence maximal, so $F[\alpha] = F(\alpha)$ is a field, finite-dimensional over $F$. If $[F(\alpha):F] = n < \infty$, the $n+1$ powers $1, \alpha, \ldots, \alpha^n$ are dependent. If $\alpha$ is transcendental, $\varepsilon$ is injective, so $F[\alpha] \cong F[x]$ is not a field and $F(\alpha) \cong F(x)$ is infinite-dimensional. $\square$
+**Proof.** Evaluation $\varepsilon : F[x] \to K$, $p \mapsto p(\alpha)$, has image $F[\alpha]$ and kernel $(m)$. If $\alpha$ is algebraic then $m \neq 0$; as $F[\alpha]$ is an integral domain inside the field $K$, $(m)$ is a nonzero prime ideal of the PID $F[x]$, hence maximal, so $F[\alpha] = F(\alpha)$ is a field, finite-dimensional over $F$. If $[F(\alpha):F] = n < \infty$, the $n+1$ powers $1, \alpha, \ldots, \alpha^n$ are dependent. If $\alpha$ is transcendental, $\varepsilon$ is injective, so $F[\alpha] \cong F[x]$ is not a field and $F(\alpha) \cong F(x)$ is infinite-dimensional.
 
 Examples: $\sqrt2$, $\sqrt[3]{2}$, $i$, and every algebraic number are algebraic over $\mathbb{Q}$, as is every element of a finite extension. The numbers $e$ (Hermite, 1873) and $\pi$ (Lindemann, 1882) are transcendental over $\mathbb{Q}$, hence so is $\sqrt{\pi}$; since $\overline{\mathbb{Q}}$ is countable and $\mathbb{R}$ is not, there are uncountably many transcendental reals.
 
@@ -118,7 +118,7 @@ F(\alpha) \cong F[x]/(m), \qquad [F(\alpha):F] = n,
 $$
 and $\{1, \alpha, \ldots, \alpha^{n-1}\}$ is a basis of $F(\alpha)$ over $F$, so each element is uniquely $c_0 + c_1\alpha + \cdots + c_{n-1}\alpha^{n-1}$ with $c_i \in F$. If $m$ has $n$ distinct roots in a splitting field, they are the **conjugates** of $\alpha$.
 
-**Proof sketch.** The kernel of evaluation is $(m)$. If $m = gh$ with both factors of smaller degree, then $0 = m(\alpha) = g(\alpha)h(\alpha)$ forces one factor to vanish, contradicting the minimality of $\deg m$; so $m$ is irreducible. Divisibility follows from the kernel description, and the isomorphism and basis from the division algorithm in $F[x]$. $\square$
+**Proof sketch.** The kernel of evaluation is $(m)$. If $m = gh$ with both factors of smaller degree, then $0 = m(\alpha) = g(\alpha)h(\alpha)$ forces one factor to vanish, contradicting the minimality of $\deg m$; so $m$ is irreducible. Divisibility follows from the kernel description, and the isomorphism and basis from the division algorithm in $F[x]$.
 
 Examples over $\mathbb{Q}$: $m_{\sqrt2} = x^2 - 2$; $m_{\sqrt[3]{2}} = x^3 - 2$, irreducible by Eisenstein's criterion at $2$; for $\alpha = \sqrt2 + \sqrt3$ one has $\alpha^4 - 10\alpha^2 + 1 = 0$ and $\mathbb{Q}(\alpha) = \mathbb{Q}(\sqrt2, \sqrt3)$, of degree $4$, so that quartic is minimal. The minimal polynomial of a primitive $p$-th root of unity is $x^{p-1} + \cdots + x + 1$.
 
@@ -130,7 +130,7 @@ $$
 $$
 with an infinite factor making $[K:F]$ infinite.
 
-**Proof sketch.** If $\{e_i\}$ is a basis of $E$ over $F$ and $\{k_j\}$ a basis of $K$ over $E$, the products $e_i k_j$ form a basis of $K$ over $F$. $\square$
+**Proof sketch.** If $\{e_i\}$ is a basis of $E$ over $F$ and $\{k_j\}$ a basis of $K$ over $E$, the products $e_i k_j$ form a basis of $K$ over $F$.
 
 If $K/F$ is finite and $E$ is intermediate, both $[K:E]$ and $[E:F]$ divide $[K:F]$. Sums, differences, products, and quotients of algebraic elements are algebraic, since they lie in a finite extension $F(\alpha,\beta)$ with $[F(\alpha,\beta):F]\leq[F(\alpha):F][F(\beta):F]$; hence the elements of $K$ algebraic over $F$ form a subfield, the **algebraic closure of $F$ in $K$**. A finite extension is algebraic, since $1,\alpha,\ldots,\alpha^n$ are dependent. The converse fails: $\overline{\mathbb{Q}}/\mathbb{Q}$ and $\overline{\mathbb{F}_p}/\mathbb{F}_p$ are algebraic and infinite. A finitely generated algebraic extension is finite, and the tower law gives transitivity.
 
@@ -140,7 +140,7 @@ For nonconstant $f \in F[x]$, a **splitting field** over $F$ is a field $K \sups
 
 **Theorem.** Every nonconstant $f \in F[x]$ has a splitting field, and any two are isomorphic by an isomorphism fixing $F$. If $\deg f = n$ then $[K:F] \leq n!$, and $[K:F]$ divides $n!$ whenever $f$ has no repeated roots.
 
-**Proof sketch.** Adjoin roots of irreducible factors one at a time. Each root has degree at most that of the remaining polynomial, giving $[K:F] \leq n!$ by induction; if the roots are distinct, $K/F$ is Galois and its group acts faithfully on the $n$ roots, so $[K:F]$ divides $n!$. $\square$
+**Proof sketch.** Adjoin roots of irreducible factors one at a time. Each root has degree at most that of the remaining polynomial, giving $[K:F] \leq n!$ by induction; if the roots are distinct, $K/F$ is Galois and its group acts faithfully on the $n$ roots, so $[K:F]$ divides $n!$.
 
 Examples: the splitting field of $x^2 - 2$ over $\mathbb{Q}$ is $\mathbb{Q}(\sqrt2)$; of $x^2 + 1$ over $\mathbb{R}$ is $\mathbb{C}$; of $x^3 - 2$ over $\mathbb{Q}$ is $\mathbb{Q}(\sqrt[3]{2}, \zeta_3)$ of degree $6$; of $x^q - x$ over $\mathbb{F}_p$ is $\mathbb{F}_q$; of $x^n - 1$ over $\mathbb{Q}$ is $\mathbb{Q}(\zeta_n)$. An extension is **normal** if it is the splitting field of a family of polynomials; normal separable extensions are the Galois extensions of §16.
 
@@ -178,7 +178,7 @@ Thus every finite extension of a field of characteristic $0$, and every finite e
 
 **(c)** $F$ is the splitting field of $x^q - x$ over $\mathbb{F}_p$.
 
-**Proof sketch.** $F$ is an $n$-dimensional $\mathbb{F}_p$-vector space, so $|F| = p^n$. A finite subgroup of the multiplicative group of a field is cyclic, since two subgroups of order $d$ would give $x^d - 1$ more than $d$ roots. By Lagrange, $a^{q-1} = 1$ for $a \neq 0$, giving (b) and (c). $\square$
+**Proof sketch.** $F$ is an $n$-dimensional $\mathbb{F}_p$-vector space, so $|F| = p^n$. A finite subgroup of the multiplicative group of a field is cyclic, since two subgroups of order $d$ would give $x^d - 1$ more than $d$ roots. By Lagrange, $a^{q-1} = 1$ for $a \neq 0$, giving (b) and (c).
 
 The possible orders of finite fields are exactly the prime powers; there is no field with $6$ elements.
 
@@ -186,7 +186,7 @@ The possible orders of finite fields are exactly the prime powers; there is no f
 
 **Theorem.** For every prime power $q = p^n$ there is a field $\mathbb{F}_q$ with $q$ elements, and any two are isomorphic.
 
-**Proof sketch.** The roots of $x^q - x$ in a splitting field form a subfield with $q$ elements, since in characteristic $p$ the root set is closed under addition, multiplication, and inversion. Any field of order $q$ is a splitting field of $x^q - x$, giving uniqueness. $\square$
+**Proof sketch.** The roots of $x^q - x$ in a splitting field form a subfield with $q$ elements, since in characteristic $p$ the root set is closed under addition, multiplication, and inversion. Any field of order $q$ is a splitting field of $x^q - x$, giving uniqueness.
 
 **Construction.** For any monic irreducible $f \in \mathbb{F}_p[x]$ of degree $n$, the quotient $\mathbb{F}_p[x]/(f)$ is a field with $p^n$ elements; such an $f$ exists since $\mathbb{F}_{p^n}$ is simple over $\mathbb{F}_p$, generated by an element of degree $n$. The number of monic irreducible polynomials of degree $n$ over $\mathbb{F}_q$ is
 $$

@@ -38,7 +38,7 @@ It is a group under composition, and it acts on $K$ by $\sigma \cdot x = \sigma(
 
 (a) $\Leftrightarrow$ (c): a finite normal extension is the splitting field of a single polynomial by *Splitting Fields and Algebraic Closure*, and separability passes to that polynomial; conversely a splitting field of a separable polynomial is normal and separable.
 
-(c) $\Rightarrow$ (d): $K^{\operatorname{Gal}(K/F)}$ contains $F$; since $K$ splits a separable polynomial over $F$, the extension $K/K^{\operatorname{Gal}(K/F)}$ is separable and normal with Galois group $\operatorname{Gal}(K/F)$ by restriction, and the theorem below shows $[K:K^{\operatorname{Gal}(K/F)}] = \lvert \operatorname{Gal}(K/F) \rvert = [K:F]$, hence $K^{\operatorname{Gal}(K/F)} = F$ by the tower law. (d) $\Rightarrow$ (b): put $H = \operatorname{Gal}(K/F)$, a finite group, since the elements of $H$ are distinct $F$-embeddings of $K$ into $\overline{F}$ and there are at most $[K:F]$ of them. Artin's lemma gives $[K:K^H] \leq \lvert H \rvert$, while the elements of $H$ are distinct $K^H$-embeddings of $K$ into $\overline{F}$, so the counting theorem gives $\lvert H \rvert \leq [K:K^H]$; hence $[K:K^H] = \lvert H \rvert$, and when $K^H = F$ this reads $[K:F] = \lvert \operatorname{Gal}(K/F) \rvert$, which is (b). (b) $\Rightarrow$ (a) is the first equivalence. $\square$
+(c) $\Rightarrow$ (d): $K^{\operatorname{Gal}(K/F)}$ contains $F$; since $K$ splits a separable polynomial over $F$, the extension $K/K^{\operatorname{Gal}(K/F)}$ is separable and normal with Galois group $\operatorname{Gal}(K/F)$ by restriction, and the theorem below shows $[K:K^{\operatorname{Gal}(K/F)}] = \lvert \operatorname{Gal}(K/F) \rvert = [K:F]$, hence $K^{\operatorname{Gal}(K/F)} = F$ by the tower law. (d) $\Rightarrow$ (b): put $H = \operatorname{Gal}(K/F)$, a finite group, since the elements of $H$ are distinct $F$-embeddings of $K$ into $\overline{F}$ and there are at most $[K:F]$ of them. Artin's lemma gives $[K:K^H] \leq \lvert H \rvert$, while the elements of $H$ are distinct $K^H$-embeddings of $K$ into $\overline{F}$, so the counting theorem gives $\lvert H \rvert \leq [K:K^H]$; hence $[K:K^H] = \lvert H \rvert$, and when $K^H = F$ this reads $[K:F] = \lvert \operatorname{Gal}(K/F) \rvert$, which is (b). (b) $\Rightarrow$ (a) is the first equivalence.
 
 ### Examples
 
@@ -68,7 +68,7 @@ $$
 
 **Proposition.** $K^H$ is an intermediate field for every subgroup $H \leq G$.
 
-**Proof.** If $\sigma(x) = x$ and $\sigma(y) = y$ for all $\sigma \in H$, then $\sigma(x \pm y) = x \pm y$ and $\sigma(xy) = xy$, and if $x \neq 0$ then $\sigma(x^{-1}) = x^{-1}$. Also every $\sigma \in H$ fixes $F$ pointwise. $\square$
+**Proof.** If $\sigma(x) = x$ and $\sigma(y) = y$ for all $\sigma \in H$, then $\sigma(x \pm y) = x \pm y$ and $\sigma(xy) = xy$, and if $x \neq 0$ then $\sigma(x^{-1}) = x^{-1}$. Also every $\sigma \in H$ fixes $F$ pointwise.
 
 We need two facts, one group-theoretic and one field-theoretic.
 
@@ -84,7 +84,7 @@ $$
 \sum_{j=1}^{n+1} \sigma_i(x_j)\, y_j = 0, \qquad \sigma_1, \ldots, \sigma_n \in H,
 $$
 
-has $n$ equations in $n+1$ unknowns, so it has a nonzero solution $(y_j)$ in $K$; choosing one with the fewest nonzero entries and normalizing so that one entry is $1$ gives a contradiction with the linear independence of the $x_j$ over $K^H$ after applying an automorphism. This is the standard determinant argument. $\square$
+has $n$ equations in $n+1$ unknowns, so it has a nonzero solution $(y_j)$ in $K$; choosing one with the fewest nonzero entries and normalizing so that one entry is $1$ gives a contradiction with the linear independence of the $x_j$ over $K^H$ after applying an automorphism. This is the standard determinant argument.
 
 **Lemma (fixed-field theorem).** Let $K/F$ be a finite Galois extension with group $G$. Then $K^G = F$, and for every subgroup $H \leq G$ the extension $K/K^H$ is Galois with $\operatorname{Gal}(K/K^H) = H$. In particular $[K:K^H] = \lvert H \rvert$.
 
@@ -94,7 +94,7 @@ $$
 \lvert H \rvert \leq \lvert \operatorname{Gal}(K/K^H) \rvert = [K:K^H] \leq \lvert H \rvert,
 $$
 
-so equality holds throughout and $\operatorname{Gal}(K/K^H) = H$. Taking $H = G$ gives $[K:K^G] = \lvert G \rvert = [K:F]$, hence $K^G = F$ by the tower law. $\square$
+so equality holds throughout and $\operatorname{Gal}(K/K^H) = H$. Taking $H = G$ gives $[K:K^G] = \lvert G \rvert = [K:F]$, hence $K^G = F$ by the tower law.
 
 ### The Fundamental Theorem
 
@@ -122,7 +122,7 @@ $$
 
 (b) If $H \trianglelefteq G$, then for $\sigma \in G$ and $x \in E = K^H$ one has $h(\sigma x) = \sigma (\sigma^{-1} h \sigma) x = \sigma x$ for $h \in H$, using $\sigma^{-1} h\sigma \in H$; so $\sigma(E) = E$. Restriction therefore defines a homomorphism $G \to \operatorname{Gal}(E/F)$ with kernel $H$, and its image has order $[G:H] = [E:F]$; since $\lvert \operatorname{Gal}(E/F) \rvert \leq [E:F]$ with equality when $E/F$ is separable, and $E/F$ is separable, the image is all of $\operatorname{Gal}(E/F)$ and $G/H \cong \operatorname{Gal}(E/F)$. Conversely, if $E/F$ is normal, then for $\sigma \in G$ and $x \in E$ the element $\sigma x$ is the image of $x$ under an $F$-embedding and hence lies in $E$; so restriction is defined, $H$ is the kernel of a homomorphism, and $H \trianglelefteq G$.
 
-(c) Separability of $E/F$ follows from separability of $K/F$. The final statement is induced by the bijection applied to the Galois extension $K/E$ with group $H$. $\square$
+(c) Separability of $E/F$ follows from separability of $K/F$. The final statement is induced by the bijection applied to the Galois extension $K/E$ with group $H$.
 
 **Corollary (degree-index duality).** Intermediate fields $F \subseteq E_1 \subseteq E_2 \subseteq K$ correspond to subgroups $\operatorname{Gal}(K/E_2) \leq \operatorname{Gal}(K/E_1) \leq G$, and
 
@@ -146,7 +146,7 @@ considered up to conjugacy in the symmetric group on the roots.
 
 **Theorem.** Let $f$ be separable of degree $n$ with roots $\alpha_1, \ldots, \alpha_n$ in its splitting field $K$. Then $G_f$ acts faithfully on $\{\alpha_1, \ldots, \alpha_n\}$, so $G_f$ embeds in the symmetric group $S_n$; the embedding is determined once the roots are ordered.
 
-**Proof.** An automorphism $\sigma \in G_f$ permutes the roots, since it fixes the coefficients of $f$. If $\sigma$ fixes every root, then it fixes the subfield generated by the roots, which is $K$; so $\sigma = \mathrm{id}$ and the action is faithful. $\square$
+**Proof.** An automorphism $\sigma \in G_f$ permutes the roots, since it fixes the coefficients of $f$. If $\sigma$ fixes every root, then it fixes the subfield generated by the roots, which is $K$; so $\sigma = \mathrm{id}$ and the action is faithful.
 
 **Theorem (discriminant).** Let $F$ be a field with $\operatorname{char} F \neq 2$, and let $f \in F[x]$ be separable of degree $n$ with roots $\alpha_1, \ldots, \alpha_n$ and discriminant
 
@@ -156,7 +156,7 @@ $$
 
 Then $G_f \subseteq A_n$ if and only if $\Delta(f)$ is a square in $F$.
 
-**Proof.** The product $\delta = \prod_{i<j}(\alpha_i - \alpha_j)$ lies in the splitting field and satisfies $\delta^2 = \Delta(f)$. An automorphism $\sigma$ acts on $\delta$ by multiplication by the sign of the permutation it induces on the roots, and the two signs in $\{\pm 1\}$ are distinct in $F$ because $\operatorname{char} F \neq 2$; so $\sigma(\delta) = \delta$ for all $\sigma$ exactly when every permutation is even. Hence $\delta \in F$ if and only if $G_f \subseteq A_n$, and $\delta \in F$ if and only if $\delta^2 = \Delta(f)$ is a square in $F$. $\square$
+**Proof.** The product $\delta = \prod_{i<j}(\alpha_i - \alpha_j)$ lies in the splitting field and satisfies $\delta^2 = \Delta(f)$. An automorphism $\sigma$ acts on $\delta$ by multiplication by the sign of the permutation it induces on the roots, and the two signs in $\{\pm 1\}$ are distinct in $F$ because $\operatorname{char} F \neq 2$; so $\sigma(\delta) = \delta$ for all $\sigma$ exactly when every permutation is even. Hence $\delta \in F$ if and only if $G_f \subseteq A_n$, and $\delta \in F$ if and only if $\delta^2 = \Delta(f)$ is a square in $F$.
 
 ### Examples
 
@@ -196,7 +196,7 @@ such that $K_i = K_{i-1}(\alpha_i)$ with $\alpha_i^{n_i} \in K_{i-1}$ for some i
 
 **Theorem.** Let $F$ have characteristic $0$ and let $K/F$ be a finite Galois extension. If $K/F$ is radical, then $G = \operatorname{Gal}(K/F)$ is a solvable group.
 
-**Proof sketch.** Enlarge $F$ to a field containing enough roots of unity; this does not change the group-theoretic content of the argument. For a single step $K_{i-1} \subseteq K_i = K_{i-1}(\alpha_i)$ with $\alpha_i^{n} = a \in K_{i-1}$, the minimal polynomial of $\alpha_i$ divides $x^n - a$ whose roots are $\alpha_i \zeta$ for $\zeta^n = 1$; if the $n$-th roots of unity lie in $K_{i-1}$, this polynomial is separable and splits in $K_i$, so $K_i/K_{i-1}$ is Galois with a group embedding in $\mathbb{Z}/n\mathbb{Z}$ by $\alpha_i \mapsto \alpha_i \zeta$. Applying the tower and passing to the Galois closure of $K/F$ exhibits $G$ with a subnormal series whose factors are abelian, that is, $G$ is solvable. $\square$
+**Proof sketch.** Enlarge $F$ to a field containing enough roots of unity; this does not change the group-theoretic content of the argument. For a single step $K_{i-1} \subseteq K_i = K_{i-1}(\alpha_i)$ with $\alpha_i^{n} = a \in K_{i-1}$, the minimal polynomial of $\alpha_i$ divides $x^n - a$ whose roots are $\alpha_i \zeta$ for $\zeta^n = 1$; if the $n$-th roots of unity lie in $K_{i-1}$, this polynomial is separable and splits in $K_i$, so $K_i/K_{i-1}$ is Galois with a group embedding in $\mathbb{Z}/n\mathbb{Z}$ by $\alpha_i \mapsto \alpha_i \zeta$. Applying the tower and passing to the Galois closure of $K/F$ exhibits $G$ with a subnormal series whose factors are abelian, that is, $G$ is solvable.
 
 ### The Solvability Theorem
 
@@ -210,7 +210,7 @@ whose factors $G_{i}/G_{i-1}$ are all abelian; equivalently, the derived series 
 
 **Theorem (Galois).** Let $F$ be a field of characteristic $0$, or more generally a field containing all roots of unity of the orders occurring below, and let $f \in F[x]$ be nonconstant. Then $f$ is solvable by radicals over $F$ if and only if its Galois group $G_f$ is solvable.
 
-**Proof sketch.** If $G_f$ is solvable, let $K$ be the splitting field and $G = G_f$ with subnormal series $1 = G_0 \trianglelefteq \cdots \trianglelefteq G_r = G$ and abelian factors. Set $K_i = K^{G_{r-i}}$, so that $K_0 = K^G = F$ and $K_r = K^{G_0} = K$; the fundamental theorem applied to the pair $G_{r-i} \trianglelefteq G_{r-i+1}$ gives that $K_i/K_{i-1}$ is Galois with group $G_{r-i+1}/G_{r-i}$, abelian. To realize each abelian extension by radicals one adjoins roots of unity and uses the structure of finite abelian groups together with Kummer theory: an abelian Galois extension whose exponent divides $n$ is obtained by adjoining $n$-th roots, once the $n$-th roots of unity are present. Hence $K$ lies in a radical extension. The converse is the previous theorem. $\square$
+**Proof sketch.** If $G_f$ is solvable, let $K$ be the splitting field and $G = G_f$ with subnormal series $1 = G_0 \trianglelefteq \cdots \trianglelefteq G_r = G$ and abelian factors. Set $K_i = K^{G_{r-i}}$, so that $K_0 = K^G = F$ and $K_r = K^{G_0} = K$; the fundamental theorem applied to the pair $G_{r-i} \trianglelefteq G_{r-i+1}$ gives that $K_i/K_{i-1}$ is Galois with group $G_{r-i+1}/G_{r-i}$, abelian. To realize each abelian extension by radicals one adjoins roots of unity and uses the structure of finite abelian groups together with Kummer theory: an abelian Galois extension whose exponent divides $n$ is obtained by adjoining $n$-th roots, once the $n$-th roots of unity are present. Hence $K$ lies in a radical extension. The converse is the previous theorem.
 
 **Corollary (quadratic, cubic and quartic).** Every polynomial of degree at most $4$ over a field of characteristic $0$ is solvable by radicals, because $S_n$ is solvable for $n \leq 4$ and $G_f \leq S_n$.
 
@@ -224,7 +224,7 @@ $$
 f(x) = x^n - t_1 x^{n-1} + t_2 x^{n-2} - \cdots + (-1)^n t_n
 $$
 
-be the general polynomial, whose roots are algebraically independent over $\mathbb{C}$. The splitting field $K$ is obtained by adjoining all $n$ roots, and the symmetric group $S_n$ acts on $K$ by permuting the roots while fixing every coefficient, so that $F = K^{S_n}$; hence $G_f = S_n$. The group $S_n$ is not solvable for $n \geq 5$: its derived subgroup is $A_n$, and $A_n$ is simple nonabelian for $n \geq 5$, so the derived series is stationary at $A_n$ and never reaches the trivial group. By the solvability theorem, $f$ is not solvable by radicals. $\square$
+be the general polynomial, whose roots are algebraically independent over $\mathbb{C}$. The splitting field $K$ is obtained by adjoining all $n$ roots, and the symmetric group $S_n$ acts on $K$ by permuting the roots while fixing every coefficient, so that $F = K^{S_n}$; hence $G_f = S_n$. The group $S_n$ is not solvable for $n \geq 5$: its derived subgroup is $A_n$, and $A_n$ is simple nonabelian for $n \geq 5$, so the derived series is stationary at $A_n$ and never reaches the trivial group. By the solvability theorem, $f$ is not solvable by radicals.
 
 **Corollary (a specific quintic).** The polynomial $x^5 - x - 1$ is irreducible over $\mathbb{Q}$ and has Galois group $S_5$; consequently it is not solvable by radicals over $\mathbb{Q}$. This is the standard explicit witness; the irreducibility and the group computation are classical and are carried out in the references. The same conclusion holds for $x^5 - 4x + 2$, and here the group argument is short: the polynomial is irreducible by Eisenstein at $2$, so its Galois group is a transitive subgroup of $S_5$; it has exactly three real roots, since $f(-2) < 0 < f(-1)$, $f(0) > 0 > f(1)$, $f(1) < 0 < f(2)$ and the derivative $f'(x) = 5x^4 - 4$ has exactly two real zeros, so the remaining two roots form a complex conjugate pair. Complex conjugation therefore induces a transposition of those two roots, and a transitive subgroup of $S_5$ containing a transposition is all of $S_5$: a transitive group of prime degree is primitive, and a primitive group of degree $5$ containing a transposition contains $A_5$ by Jordan's theorem, while it is not contained in $A_5$ because a transposition is odd. Since $S_5$ is not solvable, $x^5 - 4x + 2$ is not solvable by radicals.
 

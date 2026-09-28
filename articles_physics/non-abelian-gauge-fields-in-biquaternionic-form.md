@@ -15,7 +15,7 @@ so a component of the field strength is *not* a number; it is an algebra element
 
 The division between what is established and what is interpretation is kept explicit.
 
-- **Established, and recomputed below.** The vector part of the material sector, $\mathrm{span}_\mathbb{R}\{e_1,e_2,e_3\}$, is a Lie subalgebra of $\mathbb{B}$ under the commutator, and it is $\mathfrak{su}(2)$ up to normalization; the center contributes the abelian factor. The non-abelian field strength $F_{\mu\nu} = \partial_\mu A_\nu - \partial_\nu A_\mu + i\kappa[A_\mu,A_\nu]$ transforms in the adjoint representation and is not invariant; it is the commutator of covariant derivatives, $[D_\mu,D_\nu] = i\kappa F_{\mu\nu}$; the Bianchi identity holds; and $\mathrm{Tr}(F_{\mu\nu}F^{\mu\nu})$ is a gauge-invariant density. All of these were recomputed exactly on $\mathfrak{su}(2)$, on generic non-commuting connections, and on at least two independent components (in fact on all six).
+- **Established, and recomputed below.** The vector part of the material sector, $\mathrm{span}_\mathbb{R}\{e_1,e_2,e_3\}$, is a Lie subalgebra of $\mathbb{B}$ under the commutator, and it is $\mathrm{SU}(2)$ up to normalization; the center contributes the abelian factor. The non-abelian field strength $F_{\mu\nu} = \partial_\mu A_\nu - \partial_\nu A_\mu + i\kappa[A_\mu,A_\nu]$ transforms in the adjoint representation and is not invariant; it is the commutator of covariant derivatives, $[D_\mu,D_\nu] = i\kappa F_{\mu\nu}$; the Bianchi identity holds; and $\mathrm{Tr}(F_{\mu\nu}F^{\mu\nu})$ is a gauge-invariant density. All of these were recomputed exactly on $\mathrm{SU}(2)$, on generic non-commuting connections, and on at least two independent components (in fact on all six).
 - **Defect in the parent, reported rather than inherited.** The parent's packaging of the curvature, $\tilde{F} = \mathrm{Vect}(\bar{\tilde{\nabla}}\tilde{A})$ and $\tilde{F} = \tfrac12\sum_{\mu\nu}F_{\mu\nu}\bar{e}_\mu e_\nu$, does **not** survive the non-abelian extension. The object $\mathrm{Vect}(\bar{\tilde{\nabla}}\tilde{A})$ is not even in the reality class of the field strength, and it is not the adjoint-covariant object. This is stated in its own section and the repair is given.
 - **Gap, left visible.** The reality condition on the *connection* that would make the non-abelian construction close inside a fixed Hermitian-conjugation eigenspace is obstructed in the time direction by the $ict$ derivative, $\partial_0 = \partial_{ict} = -i\partial_t$. The obstruction is sharp, is exhibited, and is not smoothed over.
 
@@ -23,7 +23,7 @@ The division between what is established and what is interpretation is kept expl
 
 ## The Gauge Algebra Inside the Material Sector
 
-The parent article identifies the abelian gauge group with the unitary part of the center $\mathbb{C}_{\mathbb{B}}$, and it records that the commutator algebra of $\mathbb{B}\cong M_2(\mathbb{C})$ is $\mathfrak{gl}(2,\mathbb{C})$, which is not compact. It is worth stating precisely what *is* available before any reality condition is imposed, because more is available than that remark suggests.
+The parent article identifies the abelian gauge group with the unitary part of the center $\mathbb{C}_{\mathbb{B}}$, and it records that the commutator algebra of $\mathbb{B}\cong M_2(\mathbb{C})$ is $\mathrm{GL}(2,\mathbb{C})$, which is not compact. It is worth stating precisely what *is* available before any reality condition is imposed, because more is available than that remark suggests.
 
 Under the commutator bracket, $\mathbb{B}$ is a real Lie algebra (every associative algebra is, *Lie Algebras: A General Introduction*). Three facts about it are elementary and were recomputed from the quaternion multiplication rule.
 
@@ -41,15 +41,15 @@ $$
 [e_a, e_b] = 2\,\varepsilon_{abc}\,e_c, \qquad a,b,c = 1,2,3,
 $$
 
-with every generator traceless and anti-Hermitian, $e_a^\dagger = -e_a$, $e_a \in \mathbb{M}_-$. This is $\mathfrak{su}(2)$ in a non-standard normalization; the conventionally normalized generators are $T_a = \tfrac12 e_a$, in terms of which $[T_a,T_b] = \varepsilon_{abc}T_c$ and $\mathrm{Tr}(T_aT_b) = -\tfrac12\delta_{ab}$. The sign of the trace is fixed by $e_k^2 = -e_0$; the positive-definite form $h_{ab} = -2\,\mathrm{Tr}(T_aT_b) = \delta_{ab}$ is the Killing form of this copy of $\mathfrak{su}(2)$.
+with every generator traceless and anti-Hermitian, $e_a^\dagger = -e_a$, $e_a \in \mathbb{M}_-$. This is $\mathrm{SU}(2)$ in a non-standard normalization; the conventionally normalized generators are $T_a = \tfrac12 e_a$, in terms of which $[T_a,T_b] = \varepsilon_{abc}T_c$ and $\mathrm{Tr}(T_aT_b) = -\tfrac12\delta_{ab}$. The sign of the trace is fixed by $e_k^2 = -e_0$; the positive-definite form $h_{ab} = -2\,\mathrm{Tr}(T_aT_b) = \delta_{ab}$ is the Killing form of this copy of $\mathrm{SU}(2)$.
 
 **3. The material sector splits as a Lie algebra.** Combining the two, and using that the vector part of $\mathbb{M}_-$ is exactly $\mathrm{span}_\mathbb{R}\{e_1,e_2,e_3\}$ and the scalar part is $\mathrm{span}_\mathbb{R}\{ie_0\}$,
 
 $$
-\mathbb{M}_- \;=\; \mathbb{R}(ie_0) \;\oplus\; \mathfrak{su}(2) \qquad \text{(direct sum of Lie algebras)} .
+\mathbb{M}_- \;=\; \mathbb{R}(ie_0) \;\oplus\; \mathrm{SU}(2) \qquad \text{(direct sum of Lie algebras)} .
 $$
 
-The abelian factor is the imaginary scalar; the non-abelian factor is the real vector part. This is the precise sense in which the algebra already contains a compact simple gauge algebra: the parent article is right that $\mathfrak{gl}(2,\mathbb{C})$ is not compact, but the *material sector* is not all of $\mathbb{B}$, and its vector part is $\mathfrak{su}(2)$. What is not yet settled is which reality class the *connection* occupies once it takes values in this algebra — a matter treated in its own section below, and the one place where the $ict$ convention bites.
+The abelian factor is the imaginary scalar; the non-abelian factor is the real vector part. This is the precise sense in which the algebra already contains a compact simple gauge algebra: the parent article is right that $\mathrm{GL}(2,\mathbb{C})$ is not compact, but the *material sector* is not all of $\mathbb{B}$, and its vector part is $\mathrm{SU}(2)$. What is not yet settled is which reality class the *connection* occupies once it takes values in this algebra — a matter treated in its own section below, and the one place where the $ict$ convention bites.
 
 The gauge group of this article is the group generated by the compact factor,
 
@@ -64,7 +64,7 @@ the unit-norm real quaternions. This is the group of rotors of pure spatial rota
 Let the connection be a one-form with values in this Lie algebra,
 
 $$
-\mathcal{A}_\mu(\tilde{Q}) = \mathcal{A}_\mu^{a}(\tilde{Q})\,e_a \;\in\; \mathfrak{su}(2), \qquad \mathcal{A} = \sum_{\mu=0}^{3}\mathcal{A}_\mu\,e_\mu ,
+\mathcal{A}_\mu(\tilde{Q}) = \mathcal{A}_\mu^{a}(\tilde{Q})\,e_a \;\in\; \mathrm{SU}(2), \qquad \mathcal{A} = \sum_{\mu=0}^{3}\mathcal{A}_\mu\,e_\mu ,
 $$
 
 with real coefficient functions $\mathcal{A}_\mu^{a}$. The parent's covariant derivative is generalized in the only way that keeps its form,
@@ -109,7 +109,7 @@ The covariance was verified numerically on a generic non-commuting connection: w
 The field strength is defined as the curvature of the connection. In component form, and in parallel with the parent's $F_{\mu\nu} = \partial_\mu A_\nu - \partial_\nu A_\mu$,
 
 $$
-F_{\mu\nu} = \partial_\mu \mathcal{A}_\nu - \partial_\nu \mathcal{A}_\mu + i\kappa\,[\mathcal{A}_\mu, \mathcal{A}_\nu] \;\in\; \mathfrak{su}(2)\oplus i\,\mathfrak{su}(2) = \mathfrak{sl}(2,\mathbb{C}),
+F_{\mu\nu} = \partial_\mu \mathcal{A}_\nu - \partial_\nu \mathcal{A}_\mu + i\kappa\,[\mathcal{A}_\mu, \mathcal{A}_\nu] \;\in\; \mathrm{SU}(2)\oplus i\,\mathrm{SU}(2) = \mathrm{SL}(2,\mathbb{C}),
 $$
 
 or as an algebra-valued two-form,
@@ -184,7 +184,7 @@ $$
 [\mathcal{A}_\lambda, [\mathcal{A}_\mu,\mathcal{A}_\nu]] + [\mathcal{A}_\mu, [\mathcal{A}_\nu,\mathcal{A}_\lambda]] + [\mathcal{A}_\nu, [\mathcal{A}_\lambda,\mathcal{A}_\mu]] = 0 .
 $$
 
-The second is the same identity that the general theory of Lie algebras singles out: in *Lie Algebras: A General Introduction* it is the identity that makes the adjoint action $\mathrm{ad}_u = [u,\cdot]$ a derivation of the bracket. It is that derivation property, $\mathrm{ad}_{\mathcal{A}_\lambda}([\mathcal{A}_\mu,\mathcal{A}_\nu]) = [\mathrm{ad}_{\mathcal{A}_\lambda}\mathcal{A}_\mu,\mathcal{A}_\nu] + [\mathcal{A}_\mu,\mathrm{ad}_{\mathcal{A}_\lambda}\mathcal{A}_\nu]$, that makes $D_\lambda$ act on a commutator by the Leibniz rule in the coordinate computation. The algebraic Jacobi identity was checked exactly on the three generators of $\mathfrak{su}(2)$, with residual identically zero.
+The second is the same identity that the general theory of Lie algebras singles out: in *Lie Algebras: A General Introduction* it is the identity that makes the adjoint action $\mathrm{ad}_u = [u,\cdot]$ a derivation of the bracket. It is that derivation property, $\mathrm{ad}_{\mathcal{A}_\lambda}([\mathcal{A}_\mu,\mathcal{A}_\nu]) = [\mathrm{ad}_{\mathcal{A}_\lambda}\mathcal{A}_\mu,\mathcal{A}_\nu] + [\mathcal{A}_\mu,\mathrm{ad}_{\mathcal{A}_\lambda}\mathcal{A}_\nu]$, that makes $D_\lambda$ act on a commutator by the Leibniz rule in the coordinate computation. The algebraic Jacobi identity was checked exactly on the three generators of $\mathrm{SU}(2)$, with residual identically zero.
 
 **Continuous formulation.** Contracting the Bianchi identity with the totally antisymmetric symbol gives the compact form
 
@@ -212,7 +212,7 @@ $$
 S_{\mathrm{YM}} = \int d^4x\;\mathcal{L},
 $$
 
-is gauge invariant. The invariance was recomputed on the generic non-commuting connection with residual of order $10^{-9}$ (limited by the finite-difference derivatives, not by the identity). The trace here is the matrix trace on $\mathbb{B}\cong M_2(\mathbb{C})$, restricted to the $\mathfrak{su}(2)$ factor; it is **not** the trace formula $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$, which pairs an element of the informational sector with a Hermitian element and is a different pairing on a different subspace. Conflating the two would be an error of the same kind the parent article warns against when it distinguishes the material from the informational sector.
+is gauge invariant. The invariance was recomputed on the generic non-commuting connection with residual of order $10^{-9}$ (limited by the finite-difference derivatives, not by the identity). The trace here is the matrix trace on $\mathbb{B}\cong M_2(\mathbb{C})$, restricted to the $\mathrm{SU}(2)$ factor; it is **not** the trace formula $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$, which pairs an element of the informational sector with a Hermitian element and is a different pairing on a different subspace. Conflating the two would be an error of the same kind the parent article warns against when it distinguishes the material from the informational sector.
 
 The sign and normalization of $\mathcal{L}$ are the standard ones when the generators are normalized so that the form $-2\,\mathrm{Tr}(T_aT_b) = \delta_{ab}$; the overall sign convention is fixed by the reality class of the connection, treated in the next section. Since the density is a total trace, its variation under a gauge transformation vanishes, and the field equations are the non-abelian Maxwell–Yang–Mills equations, obtained by varying $\mathcal{A}_\mu$: the source-free equation is $D_\mu F^{\mu\nu} = 0$, in place of the abelian $\partial_\mu F^{\mu\nu} = 0$. The covariant derivative is necessary, not decorative: the source term of a non-abelian gauge field is itself charged, so the field equation cannot be linear in $F$.
 
@@ -226,7 +226,7 @@ $$
 \tilde{F} = \frac{1}{2}\sum_{\mu,\nu=0}^{3}F_{\mu\nu}\,\bar{e}_\mu e_\nu ,
 $$
 
-and it states that the first identity — the expression of $\tilde{F}$ as $\mathrm{Vect}(\bar{\tilde{\nabla}}\tilde{A})$ — is "purely algebraic in the derivatives". Both formulas, and the invariance of $\tilde{F}$ asserted two paragraphs later ("The curvature is gauge invariant"), are theorems in the abelian case, and all three **fail** when the connection is $\mathfrak{su}(2)$-valued. This is a defect of the parent, not a defect of this article's construction, and it is reported here rather than quietly repaired.
+and it states that the first identity — the expression of $\tilde{F}$ as $\mathrm{Vect}(\bar{\tilde{\nabla}}\tilde{A})$ — is "purely algebraic in the derivatives". Both formulas, and the invariance of $\tilde{F}$ asserted two paragraphs later ("The curvature is gauge invariant"), are theorems in the abelian case, and all three **fail** when the connection is $\mathrm{SU}(2)$-valued. This is a defect of the parent, not a defect of this article's construction, and it is reported here rather than quietly repaired.
 
 To state the failure precisely, take the natural non-abelian generalization of the first formula, $\bar{\tilde{\nabla}}\mathcal{A} = \sum_{\mu\nu}\bar{e}_\mu(\partial_\mu\mathcal{A}_\nu)e_\nu$ with $\mathcal{A}_\nu$ now an algebra element, and let $\mathrm{Vect}$ be the trace-free projection used by the parent, $\mathrm{Vect}(\tilde{Q}) = \tilde{Q} - \mathrm{Sc}(\tilde{Q})$ with $\mathrm{Sc}(\tilde{Q}) = \tfrac12\mathrm{Tr}(\tilde{Q})e_0$. On the generic non-commuting connection:
 
@@ -248,7 +248,7 @@ It should be said in the parent's defence that its formulas are correct in its o
 
 ## The Reality Condition and the ict Direction
 
-The parent's outstanding gap is a "reality condition selecting a compact gauge algebra". The previous sections supply the algebra — $\mathfrak{su}(2)$ sits inside the material sector — but the reality of the *connection* under a gauge transformation is obstructed, and this is the honest gap of the present article.
+The parent's outstanding gap is a "reality condition selecting a compact gauge algebra". The previous sections supply the algebra — $\mathrm{SU}(2)$ sits inside the material sector — but the reality of the *connection* under a gauge transformation is obstructed, and this is the honest gap of the present article.
 
 The obstruction is visible in the inhomogeneous term of the transformation law. For a unitary $U$, differentiation of $UU^\dagger = e_0$ gives
 
@@ -286,9 +286,9 @@ Two things can be said, one verified and one open.
 
 - **Verified.** There is a consistent assignment, namely
 $$
-\mathcal{A}_0 \ \text{anti-Hermitian traceless (in } \mathfrak{su}(2)\subset\mathbb{M}_-\text{)},
+\mathcal{A}_0 \ \text{anti-Hermitian traceless (in } \mathrm{SU}(2)\subset\mathbb{M}_-\text{)},
 \qquad
-\mathcal{A}_k \ \text{Hermitian traceless (in } i\,\mathfrak{su}(2)\subset\mathbb{M}_+\text{)} ,
+\mathcal{A}_k \ \text{Hermitian traceless (in } i\,\mathrm{SU}(2)\subset\mathbb{M}_+\text{)} ,
 $$
 under which the transformed components close: $\mathcal{A}'_0$ is anti-Hermitian-traceless and $\mathcal{A}'_k$ is Hermitian-traceless, to $10^{-9}$ under a generic unitary $U$; and the adjoint transformation $F'_{\mu\nu} = UF_{\mu\nu}U^{-1}$ continues to hold for the mixed pairs. The time component sits in the material sector and the spatial components in the informational sector; the pattern is the one the $ict$ convention dictates for any four-vector ($x^0 = ict$ imaginary, $x^k$ real), and it mirrors the parent's abelian connection $\tilde{A} = i\phi/c\,e_0 + \mathbf{A}$ with its imaginary scalar and real vector coefficients.
 - **Open.** Whether this mixed assignment is the one the framework intends, or whether the time-like and space-like components should be combined into a single reality condition by a different placement of the factor $i$ in $D_\mu$, is not settled here. The obstruction is a property of the $ict$ derivative and not of the gauge algebra; changing the placement of $i$ relabels which components carry which reality but does not remove the mismatch. This is a genuine gap and is carried into the open questions.
@@ -297,11 +297,11 @@ under which the transformed components close: $\mathcal{A}'_0$ is anti-Hermitian
 
 1. **The reality class of the connection.** The obstruction above shows that no single Hermitian-conjugation eigenspace is gauge invariant across all four components under the $ict$ derivative. Is the mixed assignment $\mathcal{A}_0$ anti-Hermitian, $\mathcal{A}_k$ Hermitian the intended one, or is the factor $i$ in $D_\mu$ to be placed differently, and with what consequence for the physical identification of the connection with the parent's $\tilde{A} = i\phi/c\,e_0 + \mathbf{A}$?
 
-2. **Which compact algebra, and how many factors.** This article exhibits $\mathfrak{su}(2)$ inside the vector part of $\mathbb{M}_-$. The material sector decomposes as $\mathbb{R}(ie_0)\oplus\mathfrak{su}(2)$, so the algebra available is $\mathfrak{u}(1)\oplus\mathfrak{su}(2)$. Is a larger gauge algebra, such as $\mathfrak{su}(2)\times\mathfrak{su}(2)$ or a higher-rank algebra, available by using the full traceless subspace of $\mathbb{B}$ or by complexification, and does the framework select one?
+2. **Which compact algebra, and how many factors.** This article exhibits $\mathrm{SU}(2)$ inside the vector part of $\mathbb{M}_-$. The material sector decomposes as $\mathbb{R}(ie_0)\oplus\mathrm{SU}(2)$, so the algebra available is $\mathrm{U}(1)\oplus\mathrm{SU}(2)$. Is a larger gauge algebra, such as $\mathrm{SU}(2)\times\mathrm{SU}(2)$ or a higher-rank algebra, available by using the full traceless subspace of $\mathbb{B}$ or by complexification, and does the framework select one?
 
 3. **The matter representation.** The covariant derivative here acts by left multiplication, as in the parent. For a non-abelian connection the left and right actions differ, and the representation carried by the matter field must be specified. The chiral-fermion article poses this on the spinor module; the non-abelian version of its charge operator is not constructed here.
 
-4. **The biquaternion form of the field-strength invariants.** The abelian invariants $I_1 = \mathbf{E}^2 - c^2\mathbf{B}^2$ and $I_2 = \mathbf{E}\cdot\mathbf{B}$ are the real and imaginary parts of the norm form of $\tilde{F}$. For the non-abelian field strength the corresponding gauge-invariant objects are $\mathrm{Tr}(F_{\mu\nu}F^{\mu\nu})$ and $\mathrm{Tr}(F_{\mu\nu}\tilde{F}^{\mu\nu})$, with $\tilde{F}$ the dual. Is there a clean biquaternion form of the second, and does the corpus's norm-form apparatus extend to it?
+4. **The biquaternion form of the field-strength invariants.** The abelian invariants $I_1 = \mathbf{E}^2 - c^2\mathbf{B}^2$ and $I_2 = \mathbf{E}\cdot\mathbf{B}$ are the real and imaginary parts of the biquaternion norm of $\tilde{F}$. For the non-abelian field strength the corresponding gauge-invariant objects are $\mathrm{Tr}(F_{\mu\nu}F^{\mu\nu})$ and $\mathrm{Tr}(F_{\mu\nu}\tilde{F}^{\mu\nu})$, with $\tilde{F}$ the dual. Is there a clean biquaternion form of the second, and does the corpus's biquaternion-norm apparatus extend to it?
 
 5. **Instantons and topology.** The Bianchi identity and the invariant density are the ingredients of the topological charge $\int \mathrm{Tr}(F\wedge F)$. Does the biquaternion framework supply a preferred connection with finite action and nonzero charge, and does the zero-divisor structure of $\mathbb{M}_-$ play any role in it?
 
@@ -311,7 +311,7 @@ under which the transformed components close: $\mathcal{A}'_0$ is anti-Hermitian
 
 ## Summary
 
-The non-abelian gauge field in biquaternionic form is obtained by letting the connection of the parent article take values in the vector part of the material sector, $\mathrm{span}_\mathbb{R}\{e_1,e_2,e_3\} = \mathfrak{su}(2)$, rather than in the central line. The material sector itself decomposes as a Lie algebra, $\mathbb{M}_- = \mathbb{R}(ie_0)\oplus\mathfrak{su}(2)$: the imaginary scalar carries the abelian $U(1)$ of the parent, and the real vector part carries a compact simple factor. The gauge group is $SU(2)$, the unit real quaternions, and the connection transforms as
+The non-abelian gauge field in biquaternionic form is obtained by letting the connection of the parent article take values in the vector part of the material sector, $\mathrm{span}_\mathbb{R}\{e_1,e_2,e_3\} = \mathrm{SU}(2)$, rather than in the central line. The material sector itself decomposes as a Lie algebra, $\mathbb{M}_- = \mathbb{R}(ie_0)\oplus\mathrm{SU}(2)$: the imaginary scalar carries the abelian $U(1)$ of the parent, and the real vector part carries a compact simple factor. The gauge group is $SU(2)$, the unit real quaternions, and the connection transforms as
 
 $$
 \mathcal{A}'_\mu = U\,\mathcal{A}_\mu\,U^{-1} + \frac{i}{\kappa}\,(\partial_\mu U)\,U^{-1},
@@ -335,9 +335,9 @@ $$
 F'_{\mu\nu} = U\,F_{\mu\nu}\,U^{-1}.
 $$
 
-This is the essential difference from the abelian case, and it was verified on all six independent components on a generic non-commuting connection, with the transformation law holding to $10^{-11}$ and the change being of order unity. It satisfies the Bianchi identity $D_\lambda F_{\mu\nu} + D_\mu F_{\nu\lambda} + D_\nu F_{\lambda\mu} = 0$, verified on four independent triples, and the Jacobi identity enters both at the operator level, giving the Bianchi identity from $[D_\lambda,[D_\mu,D_\nu]] + \text{cyclic} = 0$, and at the level of the connection components, where it is the derivation property of the adjoint action that cancels the $\mathcal{A}\wedge\mathcal{A}$ terms. The Yang–Mills density $-\tfrac12\mathrm{Tr}(F_{\mu\nu}F^{\mu\nu})$ is gauge invariant, verified to $10^{-9}$, with the matrix trace on the $\mathfrak{su}(2)$ factor and not the informational trace formula.
+This is the essential difference from the abelian case, and it was verified on all six independent components on a generic non-commuting connection, with the transformation law holding to $10^{-11}$ and the change being of order unity. It satisfies the Bianchi identity $D_\lambda F_{\mu\nu} + D_\mu F_{\nu\lambda} + D_\nu F_{\lambda\mu} = 0$, verified on four independent triples, and the Jacobi identity enters both at the operator level, giving the Bianchi identity from $[D_\lambda,[D_\mu,D_\nu]] + \text{cyclic} = 0$, and at the level of the connection components, where it is the derivation property of the adjoint action that cancels the $\mathcal{A}\wedge\mathcal{A}$ terms. The Yang–Mills density $-\tfrac12\mathrm{Tr}(F_{\mu\nu}F^{\mu\nu})$ is gauge invariant, verified to $10^{-9}$, with the matrix trace on the $\mathrm{SU}(2)$ factor and not the informational trace formula.
 
-Two things are left visible. First, a **defect in the parent**: the curvature formulas $\tilde{F} = \mathrm{Vect}(\bar{\tilde{\nabla}}\tilde{A})$ and $\tilde{F} = \tfrac12\sum F_{\mu\nu}\bar{e}_\mu e_\nu$ do not survive; the non-abelian representative $\mathcal{F} = \tfrac12\sum F_{\mu\nu}\bar{e}_\mu e_\nu$ is a definition, and $\mathrm{Vect}(\bar{\tilde{\nabla}}\mathcal{A})$ is neither in the right reality class nor adjoint-covariant. Second, a **gap**: no single Hermitian-conjugation eigenspace is preserved by the gauge transformation across all four components, because $\partial_0 = -i\partial_t$ flips the conjugation behaviour of the Maurer–Cartan form in the time direction. A consistent mixed assignment exists — time in $\mathfrak{su}(2)\subset\mathbb{M}_-$, space in $i\,\mathfrak{su}(2)\subset\mathbb{M}_+$ — but whether it is the intended physical one is not settled here.
+Two things are left visible. First, a **defect in the parent**: the curvature formulas $\tilde{F} = \mathrm{Vect}(\bar{\tilde{\nabla}}\tilde{A})$ and $\tilde{F} = \tfrac12\sum F_{\mu\nu}\bar{e}_\mu e_\nu$ do not survive; the non-abelian representative $\mathcal{F} = \tfrac12\sum F_{\mu\nu}\bar{e}_\mu e_\nu$ is a definition, and $\mathrm{Vect}(\bar{\tilde{\nabla}}\mathcal{A})$ is neither in the right reality class nor adjoint-covariant. Second, a **gap**: no single Hermitian-conjugation eigenspace is preserved by the gauge transformation across all four components, because $\partial_0 = -i\partial_t$ flips the conjugation behaviour of the Maurer–Cartan form in the time direction. A consistent mixed assignment exists — time in $\mathrm{SU}(2)\subset\mathbb{M}_-$, space in $i\,\mathrm{SU}(2)\subset\mathbb{M}_+$ — but whether it is the intended physical one is not settled here.
 
 ## Summary of Notation
 
@@ -353,11 +353,11 @@ Two things are left visible. First, a **defect in the parent**: the curvature fo
 | $\bar{\tilde{\nabla}} = e_0\partial_{ict} - e_k\partial_k$ | Quaternion-conjugate gradient |
 | $\Box = \tilde{\nabla}\bar{\tilde{\nabla}} = \bar{\tilde{\nabla}}\tilde{\nabla}$ | d'Alembertian |
 | $[e_a,e_b] = 2\varepsilon_{abc}e_c$ | Commutator on the vector part of $\mathbb{M}_-$ |
-| $\mathfrak{su}(2) = \mathrm{span}_{\mathbb{R}}\{e_1,e_2,e_3\}$ | Compact gauge algebra inside $\mathbb{M}_-$ |
-| $\mathbb{M}_- = \mathbb{R}(ie_0)\oplus\mathfrak{su}(2)$ | Lie-algebra decomposition of the material sector |
+| $\mathrm{SU}(2) = \mathrm{span}_{\mathbb{R}}\{e_1,e_2,e_3\}$ | Compact gauge algebra inside $\mathbb{M}_-$ |
+| $\mathbb{M}_- = \mathbb{R}(ie_0)\oplus\mathrm{SU}(2)$ | Lie-algebra decomposition of the material sector |
 | $T_a = \tfrac12 e_a$ | Normalized generators, $[T_a,T_b]=\varepsilon_{abc}T_c$, $\mathrm{Tr}(T_aT_b)=-\tfrac12\delta_{ab}$ |
 | $U(\tilde{Q}) \in SU(2)$ | Unit real quaternion, $U^{-1}=\bar U=U^\dagger$ |
-| $\mathcal{A}_\mu = \mathcal{A}_\mu^a e_a \in \mathfrak{su}(2)$ | Non-abelian connection, $\mathcal{A}=\sum_\mu\mathcal{A}_\mu e_\mu$ |
+| $\mathcal{A}_\mu = \mathcal{A}_\mu^a e_a \in \mathrm{SU}(2)$ | Non-abelian connection, $\mathcal{A}=\sum_\mu\mathcal{A}_\mu e_\mu$ |
 | $\kappa = q/\hbar$ | Coupling |
 | $D_\mu = \partial_\mu + i\kappa\mathcal{A}_\mu$ | Covariant derivative, $D=\tilde{\nabla}+i\kappa\mathcal{A}$ |
 | $\mathcal{A}'_\mu = U\mathcal{A}_\mu U^{-1} + \frac{i}{\kappa}(\partial_\mu U)U^{-1}$ | Non-abelian transformation of the connection |
@@ -378,7 +378,7 @@ Two things are left visible. First, a **defect in the parent**: the curvature fo
 - *The Covariant Derivative and Gauge Connection in Biquaternionic Form* — the immediate parent; its abelian connection, its curvature-commutator identity, its gauge-orbit analysis, and the gap this article takes up.
 - *The Gauge Principle in Biquaternionic Form* — the origin of the connection and the abelian transformation law, and the preview $F_{\mu\nu} = \partial_\mu A_\nu - \partial_\nu A_\mu + \tfrac{iq}{\hbar}[A_\mu,A_\nu]$ that is made exact here.
 - *Maxwell's Equations in the Biquaternionic Form* — the abelian potential, field strength and gauge scalar that the non-abelian construction generalizes.
-- *The Field-Strength Biquaternion and Its Invariants* — the abelian invariants and the norm form, whose non-abelian extension is posed as an open question.
+- *The Field-Strength Biquaternion and Its Invariants* — the abelian invariants and the biquaternion norm, whose non-abelian extension is posed as an open question.
 - *Chiral Fermions in the Biquaternion Framework* — the covariant derivative on the spinor module and the charge operator $Q$, the setting for the matter-representation question.
 - *The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism* — the coupled Dirac equation and the left/right matter-representation issue.
 - *Canonical Quantization of the Biquaternion Maxwell Field* — the framework's inability to fix the gauge, which bounds the non-abelian orbit as well.

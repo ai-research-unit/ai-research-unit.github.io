@@ -77,7 +77,7 @@ The biquaternion action preserves this inner product when $\tilde{Q}$ is unitary
 
 ### Relation to the Representation Theory Article
 
-The spinor module is the defining module of the group of units: a biquaternion of unit norm acts on $\mathbb{C}^2$ by the same $2 \times 2$ matrices, so $SL(2,\mathbb{C})$ acts on spinors. The structure attached to that action — the weights $(\tfrac{1}{2}, 0)$ and $(0, \tfrac{1}{2})$ of the defining module and its conjugate, the vector representation as the tensor product of the spinor with its conjugate, the double covers of the rotation and Lorentz groups, the Clebsch--Gordan rule, and the unitary representations — is not treated here. The present section supplies the realization only: the algebra as operators on $\mathbb{C}^2$, and the module structure that the action defines. The module itself — its two chiral halves, its dual and its conjugate, the spinor contraction, the reality conditions on it, and the Clifford multiplication in the matrix model — is developed in *Spinors and the Biquaternion Spinor Module*, which is the dedicated article on the spinor module.
+The spinor module is the defining module of the group of units: a biquaternion of unit norm acts on $\mathbb{C}^2$ by the same $2 \times 2$ matrices, so $SL(2,\mathbb{C})$ acts on spinors. The structure attached to that action — the weights $(\tfrac{1}{2}, 0)$ and $(0, \tfrac{1}{2})$ of the defining module and its conjugate, the vector representation as the tensor product of the spinor with its conjugate, the double covers of the rotation and Lorentz groups, the Clebsch--Gordan rule, and the unitary representations — is not treated here. The present section supplies the realization only: the algebra as operators on $\mathbb{C}^2$, and the module structure that the action defines. The module itself — its two chiral halves, its dual and its conjugate, the spinor contraction, the reality conditions on it, and the Clifford multiplication in the matrix model — is developed in *Biquaternion Spin Geometry*, which is the dedicated article on the spinor module.
 
 ## The Clifford Algebra Representation
 
@@ -123,9 +123,9 @@ where $\omega = \gamma^0 \gamma^1 \gamma^2 \gamma^3$. This is the clean form the
 
 **Multiplication.** The Clifford product of two even elements is even, so the even subalgebra is closed under multiplication. Under the isomorphism, the Clifford product corresponds to the biquaternion product.
 
-**Norm.** The Clifford norm on the even subalgebra corresponds to the biquaternion norm form.
+**Biquaternion norm.** The Clifford norm on the even subalgebra corresponds to the biquaternion norm.
 
-**Relation to $M_2(\mathbb{C})$.** The even subalgebra $\mathrm{Cl}_{1,3}^+$ is isomorphic to $M_2(\mathbb{C})$ as a real algebra, which is the algebraic content of the isomorphism $\mathbb{B} \cong M_2(\mathbb{C})$ of *Biquaternion 2×2 Matrix Representation*. The full Clifford algebra $\mathrm{Cl}_{1,3}$ is isomorphic to $M_2(\mathbb{H})$, the $2\times 2$ matrices over the quaternions, as a real algebra (equivalently, $\mathrm{Cl}_{1,3} \otimes_{\mathbb{R}} \mathbb{C} \cong M_4(\mathbb{C})$), and its even subalgebra is the single copy of $M_2(\mathbb{C})$ on which the biquaternions are modeled. The opposite-sign algebra is the real matrix algebra, $\mathrm{Cl}_{3,1} \cong M_4(\mathbb{R})$; the two are distinct over $\mathbb{R}$ but share the even part. The same identification under the companion labelling, $\mathbb{B}\cong\mathrm{Cl}_{3,1}^+$, together with the volume element as central scalar, the outer product and the grades, the matrix model, the idempotents, the Peirce decomposition and the ideals, is developed in *The Biquaternion Algebra as a Clifford Algebra*, which is the dedicated article on the Clifford identification.
+**Relation to $M_2(\mathbb{C})$.** The even subalgebra $\mathrm{Cl}_{1,3}^+$ is isomorphic to $M_2(\mathbb{C})$ as a real algebra, which is the algebraic content of the isomorphism $\mathbb{B} \cong M_2(\mathbb{C})$ of *Biquaternion 2×2 Matrix Representation*. The full Clifford algebra $\mathrm{Cl}_{1,3}$ is isomorphic to $M_2(\mathbb{H})$, the $2\times 2$ matrices over the quaternions, as a real algebra (equivalently, $\mathrm{Cl}_{1,3} \otimes_{\mathbb{R}} \mathbb{C} \cong M_4(\mathbb{C})$), and its even subalgebra is the single copy of $M_2(\mathbb{C})$ on which the biquaternions are modeled. The opposite-sign algebra is the real matrix algebra, $\mathrm{Cl}_{3,1} \cong M_4(\mathbb{R})$; the two are distinct over $\mathbb{R}$ but share the even part. The same identification under the companion labelling, $\mathbb{B}\cong\mathrm{Cl}_{3,1}^+$, together with the volume element as central scalar, the outer product and the grades, the matrix model, the idempotents, the Peirce decomposition and the ideals, is developed in *The Clifford Structure of the Biquaternion Algebra*, which is the dedicated article on the Clifford identification.
 
 ### Why the Clifford Algebra Representation Is Useful
 
@@ -145,7 +145,7 @@ $$
 \operatorname{Ad}_{\tilde{Q}}(x) = \tilde{Q}\,x\,\tilde{Q}^{-1}, \qquad N(\tilde{Q}) \neq 0 .
 $$
 
-The two differ in what they require of the algebra. The inverse uses the product and the norm form alone, so $\operatorname{Ad}_{\tilde{Q}}$ is built from the algebra operations; the dagger needs the coefficient conjugation as well, and this is why $\operatorname{Ad}_{\lambda\tilde{Q}} = \operatorname{Ad}_{\tilde{Q}}$ for every nonzero central $\lambda$ while the sandwich is not invariant under that rescaling. The name is the standard one: $\operatorname{Ad}_{\tilde{Q}}$ is the **adjoint action** of the group of units on the algebra.
+The two differ in what they require of the algebra. The inverse uses the product and the biquaternion norm alone, so $\operatorname{Ad}_{\tilde{Q}}$ is built from the algebra operations; the dagger needs the coefficient conjugation as well, and this is why $\operatorname{Ad}_{\lambda\tilde{Q}} = \operatorname{Ad}_{\tilde{Q}}$ for every nonzero central $\lambda$ while the sandwich is not invariant under that rescaling. The name is the standard one: $\operatorname{Ad}_{\tilde{Q}}$ is the **adjoint action** of the group of units on the algebra.
 
 This is the realization that satisfies the technical definition of a representation in the strict sense: a homomorphism of the group of units into the automorphism group of $\mathbb{B}$, which is itself a group of linear maps of $\mathbb{B}$. It is the action the corpus calls the inner automorphisms, and it is the *reference and the contrast* of *Biquaternion Operator Representation*, where it is placed beside the dagger sandwich.
 
@@ -267,9 +267,9 @@ The biquaternion algebra admits three algebraic realizations that are not treate
 
 The first two columns are independent: the writing fixes an array, the reading fixes what is done with it, and the same matrix appears as an object and as an operator at once. The realization is a choice neither of size nor of role, which is why a four-vector, a $2\times2$ array and a $4\times4$ array can all carry the same object, and any of them can carry an action on it.
 
-In the Clifford realization the isomorphism is fixed by $e_1 \mapsto \gamma^2\gamma^3$, $e_2 \mapsto \gamma^3\gamma^1$, $e_3 \mapsto \gamma^1\gamma^2$ and $i \mapsto -\gamma^0\gamma^1\gamma^2\gamma^3$ under the mostly-minus form $g = \mathrm{diag}(+1,-1,-1,-1)$, so that all six bivectors correspond to the quaternion units with positive signs, and it carries the Clifford product to the biquaternion product and the Clifford norm to the norm form on the even part; the $1,3$ form is the one carried by the Hermitian subspace $\mathbb{M}_+$.
+In the Clifford realization the isomorphism is fixed by $e_1 \mapsto \gamma^2\gamma^3$, $e_2 \mapsto \gamma^3\gamma^1$, $e_3 \mapsto \gamma^1\gamma^2$ and $i \mapsto -\gamma^0\gamma^1\gamma^2\gamma^3$ under the mostly-minus form $g = \mathrm{diag}(+1,-1,-1,-1)$, so that all six bivectors correspond to the quaternion units with positive signs, and it carries the Clifford product to the biquaternion product and the Clifford norm to the biquaternion norm on the even part; the $1,3$ form is the one carried by the Hermitian subspace $\mathbb{M}_+$.
 
-The matrix, four-vector and regular realizations, the norm form read in each of them, and the explicit isomorphisms between them, are the subject of their own articles. Here only the three realizations above are derived, and the relations recorded are the ones they have with each other and with the realizations treated elsewhere.
+The matrix, four-vector and regular realizations, the biquaternion norm read in each of them, and the explicit isomorphisms between them, are the subject of their own articles. Here only the three realizations above are derived, and the relations recorded are the ones they have with each other and with the realizations treated elsewhere.
 
 ## Summary of Notation
 
@@ -280,7 +280,7 @@ The matrix, four-vector and regular realizations, the norm form read in each of 
 | $i$ | Central scalar imaginary |
 | $Q_\mu = q_\mu + i q'_\mu$ | Complex coefficients of $\tilde{Q} = \sum_\mu Q_\mu e_\mu$ |
 | $\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$ | Quaternion subspace and Hermitian subspace of $\mathbb{B}$ |
-| $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$ | Norm form |
+| $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$ | Biquaternion norm |
 | $\psi$ | Spinor, an element of $\mathbb{C}^2$ |
 | $\langle \psi, \phi \rangle = \psi_1^* \phi_1 + \psi_2^* \phi_2$ | Hermitian inner product on spinors |
 | $\mathrm{Cl}_{1,3}$ | Clifford algebra of signature $(1,3)$; $\mathbb{B} \cong \mathrm{Cl}_{1,3}^+$ |

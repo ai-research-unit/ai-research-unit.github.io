@@ -29,7 +29,7 @@ The matrix ring is the standard non-commutative ring: it is simple when the coef
 | $\mathbb{H}_{\mathbb{D}}$, the split-biquaternions | $\mathbb{D}$ | yes | isomorphic to $\mathbb{H} \oplus \mathbb{H}$ via the idempotents $e_{\pm}$ | *Split-Biquaternion Algebra* |
 | $\mathbb{O}$, the octonions | $\mathbb{R}$ | none | not a ring: the multiplication is not associative | *Octonion Algebra* |
 
-The three eight-dimensional relatives of $\mathbb{H}$ differ exactly in the sign of the norm form, and the sign decides whether a zero divisor exists. The biquaternions have the algebraically closed centre $\mathbb{C}$ and split as $M_2(\mathbb{C})$; the split-biquaternions have the split centre $\mathbb{D} = \mathbb{R}[j]/(j^2-1)$ and split as $\mathbb{H} \oplus \mathbb{H}$ through the idempotents $e_{\pm} = \tfrac{1}{2}(1 \pm j)$, which satisfy $\pi_+ \pi_- = 0$. The octonions are excluded from the list of rings by non-associativity and not by a zero divisor.
+The three eight-dimensional relatives of $\mathbb{H}$ differ exactly in the sign of the norm, and the sign decides whether a zero divisor exists. The biquaternions have the algebraically closed centre $\mathbb{C}$ and split as $M_2(\mathbb{C})$; the split-biquaternions have the split centre $\mathbb{D} = \mathbb{R}[j]/(j^2-1)$ and split as $\mathbb{H} \oplus \mathbb{H}$ through the idempotents $e_{\pm} = \tfrac{1}{2}(1 \pm j)$, which satisfy $\pi_+ \pi_- = 0$. The octonions are excluded from the list of rings by non-associativity and not by a zero divisor.
 
 ## The Group Rings
 

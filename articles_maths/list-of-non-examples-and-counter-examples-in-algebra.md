@@ -113,7 +113,7 @@ A **field** is a commutative division ring; the objects here are domains or divi
 |---|---|---|
 | The octonions $\mathbb{O}$ | not associative: $(e_1e_2)e_4 = e_7$ but $e_1(e_2e_4) = -e_7$; alternative and power-associative | *Octonion Algebra* |
 | The sedenions $\mathbb{S}$ | neither associative nor alternative, and not a division algebra | *Octonion Algebra* |
-| A Lie algebra $\mathfrak{g}$ | not associative and not commutative: $[x,y] = -[y,x]$ | *Lie Algebras* |
+| A Lie algebra $\mathrm{G}$ | not associative and not commutative: $[x,y] = -[y,x]$ | *Lie Algebras* |
 | A Jordan algebra | not associative: the Jordan identity replaces associativity | *Jordan Algebras* |
 | The free algebra $k\langle x_1,\dots,x_n\rangle$ | associative but not commutative for $n \geq 2$ | *Tensor Powers and the Free Algebra* |
 | The exterior algebra $\Lambda(V)$ | associative but graded-commutative, not commutative for $\dim V \geq 2$ | *The Exterior Algebra* |

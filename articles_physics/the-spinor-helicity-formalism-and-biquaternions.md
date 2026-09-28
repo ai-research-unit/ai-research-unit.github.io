@@ -18,7 +18,7 @@ $$
 
 Scattering amplitudes of massless particles are rational functions of these brackets. The simplest is the **Parke–Taylor** formula for the maximally helicity-violating gluon amplitude, a ratio of brackets whose little-group weights encode the helicities of the external particles [Parke and Taylor 1986; Elvang and Huang 2015; Dixon 2014]. The formalism is standard.
 
-This article places it inside the biquaternion framework $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ of the companion articles, and the claim is stronger than an analogy. The framework already contains a statement that is *equivalent* to the spinor-helicity factorisation: **a nonzero biquaternion whose norm form vanishes is a zero divisor, and under the isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$ it is exactly a rank-one matrix.** A rank-one $2\times2$ matrix is an outer product of two spinors. A massless momentum has vanishing norm form. Therefore a massless momentum *is* a rank-one biquaternion, and its rank-one factorisation *is* the spinor-helicity factorisation $p = \lambda\tilde\lambda$. The identification is not an analogy, and it needs no new postulate: both sides are the same statement about the same matrix.
+This article places it inside the biquaternion framework $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ of the companion articles, and the claim is stronger than an analogy. The framework already contains a statement that is *equivalent* to the spinor-helicity factorisation: **a nonzero biquaternion whose biquaternion norm vanishes is a zero divisor, and under the isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$ it is exactly a rank-one matrix.** A rank-one $2\times2$ matrix is an outer product of two spinors. A massless momentum has vanishing biquaternion norm. Therefore a massless momentum *is* a rank-one biquaternion, and its rank-one factorisation *is* the spinor-helicity factorisation $p = \lambda\tilde\lambda$. The identification is not an analogy, and it needs no new postulate: both sides are the same statement about the same matrix.
 
 The division between what is established, what is transcribed, and what is left open is stated at the outset and kept explicit.
 
@@ -40,11 +40,11 @@ Q_0 - iQ_3 & -iQ_1 - Q_2\\[2pt]
 \Phi(e_0)=I_2,\quad \Phi(e_k)=-i\sigma_k,\quad \Phi(i)=iI_2,
 $$
 
-satisfying $\Phi(\tilde Q\tilde R) = \Phi(\tilde Q)\Phi(\tilde R)$, $\det\Phi(\tilde Q) = N(\tilde Q) = \tilde Q\bar{\tilde Q} = \sum_\mu Q_\mu^2$, and $\Phi(\tilde Q^\dagger) = \Phi(\tilde Q)^\dagger$. The **spinor module** is $S = \mathbb{C}^2$, the unique simple left $\mathbb{B}$-module, with its conjugate module $\bar S$; the invariant symplectic pairing is $\varepsilon(\psi,\phi) = \psi^{T}\epsilon\,\phi$ with $\epsilon = \left(\begin{smallmatrix}0&1\\-1&0\end{smallmatrix}\right)$. The four-momentum is $\tilde P = iE/c\,e_0 + \mathbf p \in \mathbb{M}_-$, with norm form $N(\tilde P) = -E^2/c^2 + \mathbf p^2 = -m^2c^2$ on the mass shell, and $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium. The trace formula $\mathrm{Tr}(\tilde P\tilde H) = 2\,\mathrm{Sc}(\tilde P\tilde H)$ is inherited unchanged.
+satisfying $\Phi(\tilde Q\tilde R) = \Phi(\tilde Q)\Phi(\tilde R)$, $\det\Phi(\tilde Q) = N(\tilde Q) = \tilde Q\bar{\tilde Q} = \sum_\mu Q_\mu^2$, and $\Phi(\tilde Q^\dagger) = \Phi(\tilde Q)^\dagger$. The **spinor module** is $S = \mathbb{C}^2$, the unique simple left $\mathbb{B}$-module, with its conjugate module $\bar S$; the invariant symplectic pairing is $\varepsilon(\psi,\phi) = \psi^{T}\epsilon\,\phi$ with $\epsilon = \left(\begin{smallmatrix}0&1\\-1&0\end{smallmatrix}\right)$. The four-momentum is $\tilde P = iE/c\,e_0 + \mathbf p \in \mathbb{M}_-$, with biquaternion norm $N(\tilde P) = -E^2/c^2 + \mathbf p^2 = -m^2c^2$ on the mass shell, and $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium. The trace formula $\mathrm{Tr}(\tilde P\tilde H) = 2\,\mathrm{Sc}(\tilde P\tilde H)$ is inherited unchanged.
 
 ## The Massless Momentum as a Zero Divisor
 
-The zero divisors of $\mathbb{B}$ are characterized by the norm form: a nonzero biquaternion $\tilde Q$ is a zero divisor if and only if $N(\tilde Q) = 0$ (*Biquaternion Zero Divisors*). Equivalently, because the norm form is the determinant of the matrix realization, the nonzero zero divisors are exactly the rank-one elements of $M_2(\mathbb{C})$.
+The zero divisors of $\mathbb{B}$ are characterized by the biquaternion norm: a nonzero biquaternion $\tilde Q$ is a zero divisor if and only if $N(\tilde Q) = 0$ (*Biquaternion Zero Divisors*). Equivalently, because the biquaternion norm is the determinant of the matrix realization, the nonzero zero divisors are exactly the rank-one elements of $M_2(\mathbb{C})$.
 
 The four-momentum of a particle of mass $m$ is
 
@@ -52,7 +52,7 @@ $$
 \tilde P \;=\; \frac{iE}{c}\,e_0 + \mathbf p, \qquad \mathbf p = p_1 e_1 + p_2 e_2 + p_3 e_3,
 $$
 
-an element of $\mathbb{M}_-$: its scalar part is purely imaginary and its vector part is real. Its norm form is
+an element of $\mathbb{M}_-$: its scalar part is purely imaginary and its vector part is real. Its biquaternion norm is
 
 $$
 N(\tilde P) \;=\; \tilde P\bar{\tilde P} \;=\; -\frac{E^2}{c^2} + \mathbf p^2 \;=\; -m^2c^2 .
@@ -60,7 +60,7 @@ $$
 
 Two consequences follow immediately.
 
-**A massless momentum has vanishing norm form.** For $m = 0$ the dispersion relation is $E = c|\mathbf p|$, the four-momentum is null, and $N(\tilde P) = 0$. Since $\tilde P \neq 0$ whenever $E \neq 0$, the massless momentum is a **zero divisor** of $\mathbb{B}$. This is the exact algebraic image of the statement that a massless particle travels on the light cone: the light cone of $\mathbb{M}_-$ *is* the zero-divisor cone (*The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*).
+**A massless momentum has vanishing biquaternion norm.** For $m = 0$ the dispersion relation is $E = c|\mathbf p|$, the four-momentum is null, and $N(\tilde P) = 0$. Since $\tilde P \neq 0$ whenever $E \neq 0$, the massless momentum is a **zero divisor** of $\mathbb{B}$. This is the exact algebraic image of the statement that a massless particle travels on the light cone: the light cone of $\mathbb{M}_-$ *is* the zero-divisor cone (*The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*).
 
 **A massive momentum is invertible.** For $m \neq 0$ one has $N(\tilde P) = -m^2c^2 \neq 0$, so $\tilde P$ is invertible and is *not* a zero divisor. This is the structural asymmetry between the two cases, and it will reappear in the section on the singular massless limit: the rank of $\Phi(\tilde P)$ is one at $m=0$ and two at $m\neq0$.
 
@@ -98,7 +98,7 @@ $$
 
 The pair is determined up to the scaling $(\lambda,\tilde\lambda) \mapsto (t\lambda, t^{-1}\tilde\lambda)$, $t \in \mathbb{C}^\times$.
 
-*Proof.* If $M = \lambda\tilde\lambda^T$ with both factors nonzero, every column of $M$ is a multiple of $\lambda$, so the column space is one-dimensional and $\operatorname{rank} M = 1$. Conversely, if $\operatorname{rank} M = 1$, choose a nonzero column $\lambda$ of $M$; every other column is a multiple of it, and every row is a multiple of the row $\tilde\lambda^T$ read off any nonzero row of $M$ divided by the corresponding entry of $\lambda$. Then $M = \lambda\tilde\lambda^T$. The scaling is the elementary ambiguity: $(t\lambda)(t^{-1}\tilde\lambda)^T = \lambda\tilde\lambda^T$. $\square$
+*Proof.* If $M = \lambda\tilde\lambda^T$ with both factors nonzero, every column of $M$ is a multiple of $\lambda$, so the column space is one-dimensional and $\operatorname{rank} M = 1$. Conversely, if $\operatorname{rank} M = 1$, choose a nonzero column $\lambda$ of $M$; every other column is a multiple of it, and every row is a multiple of the row $\tilde\lambda^T$ read off any nonzero row of $M$ divided by the corresponding entry of $\lambda$. Then $M = \lambda\tilde\lambda^T$. The scaling is the elementary ambiguity: $(t\lambda)(t^{-1}\tilde\lambda)^T = \lambda\tilde\lambda^T$.
 
 Applying the lemma to the null momentum,
 
@@ -292,7 +292,7 @@ Two things are deliberately not claimed. The framework does not derive the Parke
 | $e_0=1,e_1,e_2,e_3$ | Quaternion basis, $e_k^2=-e_0$ |
 | $i$ | Scalar imaginary, $i^2=-1$ |
 | $\Phi(\tilde Q)$ | Matrix realization, $\mathbb{B}\cong M_2(\mathbb{C})$ |
-| $N(\tilde Q)=\tilde Q\bar{\tilde Q}=\sum_\mu Q_\mu^2=\det\Phi(\tilde Q)$ | Norm form |
+| $N(\tilde Q)=\tilde Q\bar{\tilde Q}=\sum_\mu Q_\mu^2=\det\Phi(\tilde Q)$ | Biquaternion norm |
 | $\mathbb{M}_-$ | Material (anti-Hermitian) subspace, four-vectors |
 | $\mathbb{M}_+$ | Informational (Hermitian) subspace |
 | $\mathbb{H}_{\mathbb{B}}$ | Real-quaternion subspace, rotation rotors |

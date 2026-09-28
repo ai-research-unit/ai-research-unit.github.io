@@ -19,7 +19,7 @@ $$
 $$
 and $(\mathbb{Q}_p, +)$ is unimodular, its left and right Haar measures coinciding because the group is abelian.
 
-**Proof.** Existence and uniqueness up to scalar are the Haar theorem of *Locally Compact Groups and Haar Measure*. The group is abelian, so left invariance equals right invariance and the modulus is $1$. For the volume formula, note that $\mathbb{Z}_p$ is a compact open subgroup and $p^n\mathbb{Z}_p$ is a subgroup of index $p^n$ for $n \geq 0$, so the additivity of $\mu$ gives $\mu(\mathbb{Z}_p) = p^n \mu(p^n\mathbb{Z}_p)$; for negative $n$ the same argument with $\mathbb{Z}_p \subseteq p^{-n}\mathbb{Z}_p$ gives the formula, and the cosets of $p^n\mathbb{Z}_p$ all have the same measure by translation invariance. $\square$
+**Proof.** Existence and uniqueness up to scalar are the Haar theorem of *Locally Compact Groups and Haar Measure*. The group is abelian, so left invariance equals right invariance and the modulus is $1$. For the volume formula, note that $\mathbb{Z}_p$ is a compact open subgroup and $p^n\mathbb{Z}_p$ is a subgroup of index $p^n$ for $n \geq 0$, so the additivity of $\mu$ gives $\mu(\mathbb{Z}_p) = p^n \mu(p^n\mathbb{Z}_p)$; for negative $n$ the same argument with $\mathbb{Z}_p \subseteq p^{-n}\mathbb{Z}_p$ gives the formula, and the cosets of $p^n\mathbb{Z}_p$ all have the same measure by translation invariance.
 
 **Definition.** The normalisation $\mu(\mathbb{Z}_p) = 1$ is fixed once and for all. It gives
 $$
@@ -31,7 +31,7 @@ $$
 \int_{\mathbb{Q}_p} f(ax) \, d\mu(x) = \lvert a \rvert_p^{-1} \int_{\mathbb{Q}_p} f(x) \, d\mu(x), \qquad \int_{\mathbb{Q}_p} f(x + b) \, d\mu(x) = \int_{\mathbb{Q}_p} f(x) \, d\mu(x).
 $$
 
-**Proof.** The second identity is the translation invariance of the Haar measure. For the first, the measure $\mu_a(A) = \mu(aA)$ is a translation-invariant Radon measure, hence equals $\mu_a(\mathbb{Z}_p)\mu$ by uniqueness; and $\mu_a(\mathbb{Z}_p) = \mu(a\mathbb{Z}_p) = \lvert a \rvert_p$ for $a \in \mathbb{Q}_p^\times$, by the volume formula for $a = p^n$ and the fact that $\lvert a \rvert_p = p^{-n}$. $\square$
+**Proof.** The second identity is the translation invariance of the Haar measure. For the first, the measure $\mu_a(A) = \mu(aA)$ is a translation-invariant Radon measure, hence equals $\mu_a(\mathbb{Z}_p)\mu$ by uniqueness; and $\mu_a(\mathbb{Z}_p) = \mu(a\mathbb{Z}_p) = \lvert a \rvert_p$ for $a \in \mathbb{Q}_p^\times$, by the volume formula for $a = p^n$ and the fact that $\lvert a \rvert_p = p^{-n}$.
 
 ### Riemann Sums and the Integral of a Continuous Function
 
@@ -41,7 +41,7 @@ S_n(f) = \frac{1}{p^n} \sum_{x=0}^{p^n-1} f(x)
 $$
 converge in $\mathbb{Q}_p$ as $n \to \infty$, and their limit is $\int_{\mathbb{Z}_p} f \, d\mu$.
 
-**Proof.** The points $0, 1, \dots, p^n-1$ are representatives of the cosets of $p^n\mathbb{Z}_p$ in $\mathbb{Z}_p$, each of measure $p^{-n}$, so $S_n(f)$ is the integral of the locally constant function that is constant on each coset with the value $f$ at its representative. The difference $\int f - S_n(f)$ is the integral of $f$ minus its coset-wise approximations, of absolute value at most the supremum of the oscillation of $f$ on the cosets. Since $\mathbb{Z}_p$ is compact and $f$ continuous, $f$ is uniformly continuous, so for $n$ large the oscillation of $f$ on every coset of $p^n\mathbb{Z}_p$ is at most $\epsilon$, and the non-Archimedean estimate gives $\lvert \int f - S_n(f) \rvert \leq \epsilon$ for those $n$. $\square$
+**Proof.** The points $0, 1, \dots, p^n-1$ are representatives of the cosets of $p^n\mathbb{Z}_p$ in $\mathbb{Z}_p$, each of measure $p^{-n}$, so $S_n(f)$ is the integral of the locally constant function that is constant on each coset with the value $f$ at its representative. The difference $\int f - S_n(f)$ is the integral of $f$ minus its coset-wise approximations, of absolute value at most the supremum of the oscillation of $f$ on the cosets. Since $\mathbb{Z}_p$ is compact and $f$ continuous, $f$ is uniformly continuous, so for $n$ large the oscillation of $f$ on every coset of $p^n\mathbb{Z}_p$ is at most $\epsilon$, and the non-Archimedean estimate gives $\lvert \int f - S_n(f) \rvert \leq \epsilon$ for those $n$.
 
 The theorem is the concrete form of the integral on the unit ball: the Haar integral is computed by sampling a continuous function at the representatives of the residue classes modulo $p^n$ and dividing by the number of classes. The resulting functional of $f$ is called the **Volkenborn integral** of $f$ over $\mathbb{Z}_p$, and for continuous $f$ it is the Haar integral; for functions that are not continuous the Riemann sums may fail to converge, and the Volkenborn integral is then a distinct notion, defined only for the function classes on which the limit exists.
 
@@ -59,7 +59,7 @@ $$
 S_m\Bigl(\binom{\cdot}{n}\Bigr) = \frac{1}{p^m}\binom{p^m}{n+1}
 = \frac{(p^m-1)(p^m-2)\cdots(p^m-n)}{(n+1)!},
 $$
-since $\binom{p^m}{n+1} = \frac{p^m(p^m-1)\cdots(p^m-n)}{(n+1)!}$ has exactly the factor $p^m$ in the numerator that the division removes. As $m \to \infty$ each factor $p^m - j$ tends to $-j$ in $\mathbb{Q}_p$, so the limit of the Riemann sums is $(-1)^n n!/(n+1)! = (-1)^n/(n+1)$, and it equals the integral by the Riemann-sum theorem. $\square$
+since $\binom{p^m}{n+1} = \frac{p^m(p^m-1)\cdots(p^m-n)}{(n+1)!}$ has exactly the factor $p^m$ in the numerator that the division removes. As $m \to \infty$ each factor $p^m - j$ tends to $-j$ in $\mathbb{Q}_p$, so the limit of the Riemann sums is $(-1)^n n!/(n+1)! = (-1)^n/(n+1)$, and it equals the integral by the Riemann-sum theorem.
 
 ### The Integral of a Monomial
 
@@ -73,7 +73,7 @@ the $n$-th Bernoulli number.
 $$
 \int_{\mathbb{Z}_p} x^n \, d\mu(x) = \sum_{k=0}^{n} \frac{(-1)^k k!\,S(n,k)}{k+1} = B_n,
 $$
-the last equality being the classical Stirling-number formula for the Bernoulli numbers. $\square$
+the last equality being the classical Stirling-number formula for the Bernoulli numbers.
 
 **Corollary (consistency of the two bases).** The two evaluations agree, as they must: the derivation of the monomial integral *uses* the binomial integral, and the resulting expression for $B_n$ is the standard one. Numerically, $B_0 = 1$, $B_1 = -\tfrac12$, $B_2 = \tfrac16$, $B_3 = 0$, $B_4 = -\tfrac{1}{30}$, and the first two values are checked directly below.
 
@@ -97,7 +97,7 @@ $$
 $$
 is a linear isomorphism of the space of $p$-adic distributions on $\mathbb{Z}_p$ onto the space $\ell^\infty$ of bounded sequences in $\mathbb{Q}_p$, and it carries the measures onto the sequences with values in $\mathbb{Z}_p$.
 
-**Proof.** Mahler's theorem of *p-adic Analysis* identifies $C(\mathbb{Z}_p,\mathbb{Q}_p)$ isometrically with $c_0$ by $f \mapsto (\Delta^n f(0))$, the binomial polynomials forming the corresponding basis; a continuous linear functional on $c_0$ is given by a bounded sequence, and the duality $\ell^\infty = (c_0)'$ in the non-Archimedean case is proved by the same argument as the classical one, with the ultrametric inequality replacing the triangle inequality. A functional has norm at most $1$ exactly when its coefficient sequence has all terms in $\mathbb{Z}_p$. $\square$
+**Proof.** Mahler's theorem of *p-adic Analysis* identifies $C(\mathbb{Z}_p,\mathbb{Q}_p)$ isometrically with $c_0$ by $f \mapsto (\Delta^n f(0))$, the binomial polynomials forming the corresponding basis; a continuous linear functional on $c_0$ is given by a bounded sequence, and the duality $\ell^\infty = (c_0)'$ in the non-Archimedean case is proved by the same argument as the classical one, with the ultrametric inequality replacing the triangle inequality. A functional has norm at most $1$ exactly when its coefficient sequence has all terms in $\mathbb{Z}_p$.
 
 **Theorem (Amice transform).** For a distribution $\lambda$ on $\mathbb{Z}_p$, define
 $$
@@ -105,11 +105,11 @@ A_\lambda(T) = \int_{\mathbb{Z}_p} (1+T)^x \, d\lambda(x) = \sum_{n \geq 0} \lam
 $$
 Then $\lambda \mapsto A_\lambda$ is a linear isomorphism of the space of distributions onto the ring of power series with bounded coefficients, and it restricts to a linear isomorphism of the space of measures onto $\mathbb{Z}_p[[T]]$.
 
-**Proof.** The expansion $(1+T)^x = \sum_n \binom{x}{n}T^n$ is Mahler's expansion of the function $x \mapsto (1+T)^x$ for a formal variable $T$, and the coefficients are $\binom{x}{n}$; applying $\lambda$ term by term and using continuity gives the stated power series, whose coefficients are the values of $\lambda$ on the binomial basis. The coefficient sequence is bounded for a distribution and lies in $\mathbb{Z}_p$ for a measure, by the preceding theorem. $\square$
+**Proof.** The expansion $(1+T)^x = \sum_n \binom{x}{n}T^n$ is Mahler's expansion of the function $x \mapsto (1+T)^x$ for a formal variable $T$, and the coefficients are $\binom{x}{n}$; applying $\lambda$ term by term and using continuity gives the stated power series, whose coefficients are the values of $\lambda$ on the binomial basis. The coefficient sequence is bounded for a distribution and lies in $\mathbb{Z}_p$ for a measure, by the preceding theorem.
 
 **Corollary (the Iwasawa algebra).** The convolution product of measures — $(\lambda * \nu)(f) = \int \int f(x+y) \, d\lambda(x) \, d\nu(y)$ — corresponds under the Amice transform to the product of power series, so that the algebra of $p$-adic measures on $\mathbb{Z}_p$ is isomorphic to the **Iwasawa algebra** $\Lambda = \mathbb{Z}_p[[T]]$; it is a complete local ring of dimension $2$ over $\mathbb{Z}_p$, and the group $\mathbb{Z}_p$ acts on it by $(1+T)^a$, corresponding to translation of measures by $a$.
 
-**Proof.** The binomial theorem gives $(1+T)^{x+y} = (1+T)^x(1+T)^y$, and the double integral factorises; the identification with $\mathbb{Z}_p[[T]]$ is the measure case of the Amice transform. The structural statements are standard: $\Lambda$ is the inverse limit of the group rings $\mathbb{Z}_p[\mathbb{Z}/p^n]$, hence complete and local, and the action is the formal substitution $T \mapsto (1+T)^a - 1$. $\square$
+**Proof.** The binomial theorem gives $(1+T)^{x+y} = (1+T)^x(1+T)^y$, and the double integral factorises; the identification with $\mathbb{Z}_p[[T]]$ is the measure case of the Amice transform. The structural statements are standard: $\Lambda$ is the inverse limit of the group rings $\mathbb{Z}_p[\mathbb{Z}/p^n]$, hence complete and local, and the action is the formal substitution $T \mapsto (1+T)^a - 1$.
 
 The Iwasawa algebra is the ring in which the arithmetic of $p$-adic $L$-functions is expressed: the Kubota–Leopoldt $p$-adic zeta function is obtained by integrating a suitable power of $x$ against the Bernoulli distribution, which is a distribution but not a measure, and the resulting analytic function of the Iwasawa algebra is not covered here. What this article supplies is the integration theory and the dual description of measures; what that theory integrates is taken up there.
 
@@ -132,7 +132,7 @@ $$
 \int_{\mathbb{Q}_p^\times} f \, d^\times x = \sum_{n \in \mathbb{Z}} \int_{\mathbb{Z}_p^\times} f(p^n u) \, d^\times u .
 $$
 
-**Proof.** Multiplicative invariance is the multiplicative invariance of $\mu$ combined with the transformation law $\lvert ax \rvert_p = \lvert a \rvert_p \lvert x \rvert_p$. For (a), $\mu(p^n\mathbb{Z}_p^\times) = \lvert p^n \rvert_p (1 - p^{-1}) = p^{-n}(1-p^{-1})$, so $d^\times$ gives $\frac{p}{p-1}\cdot p^{n}\cdot p^{-n}(1-p^{-1}) = 1$; and $1+p^n\mathbb{Z}_p$ lies in $\mathbb{Z}_p^\times$, on which $\lvert x \rvert_p = 1$, so $\mu^\times(1+p^n\mathbb{Z}_p) = \frac{p}{p-1}\mu(1+p^n\mathbb{Z}_p) = \frac{p}{p-1}p^{-n}(1-p^{-1}) = p^{-n}$. Part (b) is the countable additivity of the measure on the disjoint clopen pieces and the multiplication-invariance of $\lvert \cdot \rvert_p$ and $d^\times x$. $\square$
+**Proof.** Multiplicative invariance is the multiplicative invariance of $\mu$ combined with the transformation law $\lvert ax \rvert_p = \lvert a \rvert_p \lvert x \rvert_p$. For (a), $\mu(p^n\mathbb{Z}_p^\times) = \lvert p^n \rvert_p (1 - p^{-1}) = p^{-n}(1-p^{-1})$, so $d^\times$ gives $\frac{p}{p-1}\cdot p^{n}\cdot p^{-n}(1-p^{-1}) = 1$; and $1+p^n\mathbb{Z}_p$ lies in $\mathbb{Z}_p^\times$, on which $\lvert x \rvert_p = 1$, so $\mu^\times(1+p^n\mathbb{Z}_p) = \frac{p}{p-1}\mu(1+p^n\mathbb{Z}_p) = \frac{p}{p-1}p^{-n}(1-p^{-1}) = p^{-n}$. Part (b) is the countable additivity of the measure on the disjoint clopen pieces and the multiplication-invariance of $\lvert \cdot \rvert_p$ and $d^\times x$.
 
 ### The Local Zeta Integral
 
@@ -145,7 +145,7 @@ $$
 $$
 \int_{\mathbb{Q}_p^\times} \Phi(x)\,\lvert x \rvert_p^{s} \, d^\times x = \sum_{n \leq 0} p^{-ns} = \sum_{k \geq 0} p^{-ks},
 $$
-which converges exactly when $\lvert p^{-s} \rvert = p^{-\Re s} < 1$, that is when $\Re s > 0$, and then equals $1/(1-p^{-s})$. $\square$
+which converges exactly when $\lvert p^{-s} \rvert = p^{-\Re s} < 1$, that is when $\Re s > 0$, and then equals $1/(1-p^{-s})$.
 
 The integral is the **local zeta integral** at the place $p$, and its value is the local Euler factor of the Riemann zeta function. Its convergence half-plane and its meromorphic continuation to $s$ by the formula $1/(1-p^{-s})$ are the prototypes of the local computations, where the product of these factors over the places produces the global zeta function, and where the same integral with $\Phi$ replaced by a general test function defines the local functional equation.
 

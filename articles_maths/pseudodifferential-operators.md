@@ -39,7 +39,7 @@ The derivatives in $x$ are unrestricted, the derivatives in $\xi$ gain a power o
 
 **Proposition.** (i) $S^m \subseteq S^{m'}$ for $m \le m'$, and $S^{-\infty}=\bigcap_mS^m$. (ii) If $a \in S^m$ and $b \in S^{m'}$ then the pointwise product $ab \in S^{m+m'}$. (iii) $\partial_x^\beta a \in S^m$, $\partial_\xi^\alpha a \in S^{m-|\alpha|}$, and $S^m$ is a Fréchet space in the seminorms of the definition. (iv) If $a \in S^m$ and $a$ is a polynomial of degree $m$ in $\xi$ with coefficients in $C^\infty(\mathbb{R}^n)$ of at most polynomial growth, then $a$ is the symbol of a differential operator of order $m$.
 
-*Proof.* (i)–(iii) are immediate from the product rule and the definition; (iv) because a polynomial of degree $m$ in $\xi$ satisfies the estimates with $|\alpha|\le m$ and has zero $\xi$-derivatives of higher order. $\square$
+*Proof.* (i)–(iii) are immediate from the product rule and the definition; (iv) because a polynomial of degree $m$ in $\xi$ satisfies the estimates with $|\alpha|\le m$ and has zero $\xi$-derivatives of higher order.
 
 **Example.** (i) The monomial $\xi^\alpha$ lies in $S^{|\alpha|}$; the symbol of a differential operator $\sum_{|\alpha|\le m}a_\alpha\xi^\alpha$ with $a_\alpha \in C^\infty$ of polynomial growth lies in $S^m$.
 
@@ -67,7 +67,7 @@ $$
 a(x,\xi)=\sum_{j=0}^{\infty}\chi(t_j\xi)\,a_j(x,\xi)
 $$
 
-converges in $C^\infty$ on compact sets and satisfies the estimates of $S^{m_0}$; the rapid decrease of the tails (by the choice of $t_j$) gives $a-\sum_{j<N}a_j \in S^{m_N}$. The difference of two such sums is in $S^{m_N}$ for every $N$ and hence in $S^{-\infty}$. $\square$
+converges in $C^\infty$ on compact sets and satisfies the estimates of $S^{m_0}$; the rapid decrease of the tails (by the choice of $t_j$) gives $a-\sum_{j<N}a_j \in S^{m_N}$. The difference of two such sums is in $S^{m_N}$ for every $N$ and hence in $S^{-\infty}$.
 
 The theorem is what makes the calculus possible: every computation below produces a formal series of symbols, and the series is summed by this device, with the resulting ambiguity confined to the smoothing class, which is harmless for all statements of a local or asymptotic nature.
 
@@ -147,7 +147,7 @@ $$
 a(x,D)b(x,D)u(x)=\frac{1}{(2\pi)^{2n}}\int\int e^{ix\cdot\zeta}\,e^{ix\cdot\theta}\,a(x,\zeta+\theta)\,\hat b(\theta,\zeta)\,\hat u(\zeta)\,d\zeta\,d\theta .
 $$
 
-Taylor expansion of $a(x,\zeta+\theta)$ in $\theta$ about $\zeta$ contributes the terms $\frac{1}{\alpha!}\partial_\xi^\alpha a(x,\zeta)\theta^\alpha$, and the inverse Fourier transform in $\theta$ of $\theta^\alpha\hat b(\theta,\zeta)$ is $D_x^\alpha b(x,\zeta)$; the remainder after $N$ terms is in $S^{m+m'-N}$. $\square$
+Taylor expansion of $a(x,\zeta+\theta)$ in $\theta$ about $\zeta$ contributes the terms $\frac{1}{\alpha!}\partial_\xi^\alpha a(x,\zeta)\theta^\alpha$, and the inverse Fourier transform in $\theta$ of $\theta^\alpha\hat b(\theta,\zeta)$ is $D_x^\alpha b(x,\zeta)$; the remainder after $N$ terms is in $S^{m+m'-N}$.
 
 **Example.** For $a=\xi_j$ and $b=x_k$, the composition is $D_jM_{x_k}$, and
 
@@ -177,7 +177,7 @@ $$
 
 so that $a^* \in S^m$ and $a^* \equiv\overline a \bmod S^{m-1}$. In particular $a(x,D)$ is symmetric on $\mathcal S$ to leading order exactly when $a$ is real modulo $S^{m-1}$.
 
-*Proof (sketch).* The identity $\langle a(x,D)u,v\rangle=\langle u,a(x,D)^*v\rangle$ is integrated by parts in $x$ and $\xi$; the boundary terms vanish for Schwartz functions, and the resulting symbol is the displayed transpose, which is computed by the same Taylor expansion as the composition theorem applied to the kernel $\overline{K_a(y,x)}$. $\square$
+*Proof (sketch).* The identity $\langle a(x,D)u,v\rangle=\langle u,a(x,D)^*v\rangle$ is integrated by parts in $x$ and $\xi$; the boundary terms vanish for Schwartz functions, and the resulting symbol is the displayed transpose, which is computed by the same Taylor expansion as the composition theorem applied to the kernel $\overline{K_a(y,x)}$.
 
 **Corollary (the calculus is an algebra).** The operators of the form $a(x,D)$ with $a \in S^\infty$, modulo the smoothing operators $S^{-\infty}(x,D)$, form an algebra with involution under composition and adjoint, filtered by the order, with associated graded algebra the symbols modulo lower order; the principal-symbol map is an isomorphism of the graded pieces onto the homogeneous functions on $T^*\mathbb{R}^n$ of the appropriate degree.
 
@@ -205,7 +205,7 @@ $$
 ab_{N+1}=1+r_N-r_N(aa^{-1})=1+r_N-r_N(1+r_0)=1-r_Nr_0 \in 1+S^{-N-1},
 $$
 
-so the remainder improves by one order at each step. The recursion produces symbols $b_N$ with remainders in $S^{-N}$ for every $N$, and asymptotic summation gives $b \sim\sum_j(b_j-b_{j-1}) \in S^{-m}$ with $ab-1 \in S^{-\infty}$, which is the first identity. The second follows by the same argument on the other side, and the resulting left and right parametrices differ by a smoothing operator by associativity of composition. $\square$
+so the remainder improves by one order at each step. The recursion produces symbols $b_N$ with remainders in $S^{-N}$ for every $N$, and asymptotic summation gives $b \sim\sum_j(b_j-b_{j-1}) \in S^{-m}$ with $ab-1 \in S^{-\infty}$, which is the first identity. The second follows by the same argument on the other side, and the resulting left and right parametrices differ by a smoothing operator by associativity of composition.
 
 ### Elliptic Regularity
 
@@ -217,7 +217,7 @@ $$
 
 the implications holding locally and, with proper support, globally.
 
-*Proof.* The parametrix $b \in S^{-m}$ gives $u=b(au)+R_2u$; the first term is in $H^s_p$ because an operator of order at most $0$ whose symbol has bounded derivatives is bounded on $L^p$ for $1<p<\infty$ by the Calderón–Zygmund theory, and the $H^s_p$ norms are the $L^p$ norms of the Bessel potentials, so $b$ gains the $m$ orders of regularity; the second term is smoothing and lies in every $H^s_p$. $\square$
+*Proof.* The parametrix $b \in S^{-m}$ gives $u=b(au)+R_2u$; the first term is in $H^s_p$ because an operator of order at most $0$ whose symbol has bounded derivatives is bounded on $L^p$ for $1<p<\infty$ by the Calderón–Zygmund theory, and the $H^s_p$ norms are the $L^p$ norms of the Bessel potentials, so $b$ gains the $m$ orders of regularity; the second term is smoothing and lies in every $H^s_p$.
 
 **Corollary (Fredholm property).** An elliptic operator $a(x,D)$ of order $m$ on a closed manifold, acting between $H^s$ and $H^{s-m}$, is Fredholm, with a parametrix in the sense of *Fredholm Theory*; its index is invariant under perturbations in the smoothing class.
 
@@ -233,7 +233,7 @@ $$
 
 for a constant $C$ and an integer $N$ depending only on the dimension.
 
-*Proof (sketch).* Refine the symbol by a partition of the frequency space into dyadic annuli, write $a=\sum_ka_k$ with $a_k$ supported in $2^k\le|\xi|\le2^{k+1}$, and use the almost-orthogonality of the resulting frequency-localised pieces together with the Cotlar–Stein lemma; the estimates of the symbol class control the norms of the localised pieces and the overlaps. The detailed argument is the Calderón–Vaillancourt theorem quoted below. $\square$
+*Proof (sketch).* Refine the symbol by a partition of the frequency space into dyadic annuli, write $a=\sum_ka_k$ with $a_k$ supported in $2^k\le|\xi|\le2^{k+1}$, and use the almost-orthogonality of the resulting frequency-localised pieces together with the Cotlar–Stein lemma; the estimates of the symbol class control the norms of the localised pieces and the overlaps. The detailed argument is the Calderón–Vaillancourt theorem quoted below.
 
 **Theorem (continuity on Sobolev spaces).** Let $a \in S^m$. Then $a(x,D)$ maps $H^s_2$ continuously into $H^{s-m}_2$ for every $s \in \mathbb{R}$, and this follows from the $S^0$ boundedness applied to $a(x,D)\langle D\rangle^{-m}$ and the commutation of $\langle D\rangle^s$ with the calculus up to lower order. If in addition the derivatives of $a$ are bounded, $|\partial_\xi^\alpha\partial_x^\beta a|\le C_{\alpha\beta}$ for $|\alpha|+|\beta|\le N$, then the same continuity holds on $H^s_p$ for every $1<p<\infty$ and every $s$; the $L^2$ case is common to both hypotheses, and it is the case guaranteed by the preceding theorem for the full class $S^0$.
 
@@ -251,7 +251,7 @@ $$
 \operatorname{Re}\langle a(x,D)u,u\rangle \ge c'\|u\|_{H^{m/2}}^2-C\|u\|_{L^2}^2 .
 $$
 
-*Proof (sketch).* The sharp Gårding inequality is proved by writing $\operatorname{Re}a$ as a sum of squares modulo a symbol of order $0$, using a partition of the frequency space and a square-root argument for the positive homogeneous part; the elliptic case follows by applying the first to the order-one symbol $a(x,\xi)(1+|\xi|^2)^{-m/2}\langle\xi\rangle^{m}$ composed with a Bessel potential. The inequality is the analytic form of the positivity of an elliptic operator and it is the starting point of the existence theory for the Dirichlet problem, which belongs. $\square$
+*Proof (sketch).* The sharp Gårding inequality is proved by writing $\operatorname{Re}a$ as a sum of squares modulo a symbol of order $0$, using a partition of the frequency space and a square-root argument for the positive homogeneous part; the elliptic case follows by applying the first to the order-one symbol $a(x,\xi)(1+|\xi|^2)^{-m/2}\langle\xi\rangle^{m}$ composed with a Bessel potential. The inequality is the analytic form of the positivity of an elliptic operator and it is the starting point of the existence theory for the Dirichlet problem, which belongs.
 
 ## Invariance and Operators on Manifolds
 
@@ -267,7 +267,7 @@ $$
 
 the action of the cotangent lift of $\kappa$; that is, the principal symbol is a function on the cotangent bundle $T^*M$, and a pseudodifferential operator of order $m$ on a manifold is defined by requiring that in every coordinate chart it be given by a symbol in $S^m$ and that the principal symbols so obtained agree as a function on $T^*M$.
 
-*Proof (sketch).* The chain rule changes the differentiation operators by the Jacobian, and the frequency variable transforms by the inverse transpose of the differential; the lower-order terms depend on the second derivatives of $\kappa$ and illustrate why only the principal symbol is invariant. $\square$
+*Proof (sketch).* The chain rule changes the differentiation operators by the Jacobian, and the frequency variable transforms by the inverse transpose of the differential; the lower-order terms depend on the second derivatives of $\kappa$ and illustrate why only the principal symbol is invariant.
 
 ### Pseudodifferential Operators on a Manifold
 

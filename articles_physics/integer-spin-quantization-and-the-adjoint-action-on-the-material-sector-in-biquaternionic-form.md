@@ -59,7 +59,7 @@ $$
 J_3e_1=ie_2,\qquad J_3e_2=-ie_1,\qquad J_3e_3=0 .
 $$
 
-The computation is elementary and was checked in the companion file against the $2\times2$ complex representation $e_k=-i\sigma_k$, where the multiplication rule $e_je_k=\varepsilon_{jkl}e_l$ for $j\neq k$ (with $e_k^2=-e_0$) holds with residual zero. Three consequences follow at once: the vector part $V=\mathrm{span}_{\mathbb{C}}\{e_1,e_2,e_3\}$ is invariant under the adjoint action; the full material sector decomposes into invariant pieces,
+The computation is elementary and was checked against the $2\times2$ complex representation $e_k=-i\sigma_k$, where the multiplication rule $e_je_k=\varepsilon_{jkl}e_l$ for $j\neq k$ (with $e_k^2=-e_0$) holds with residual zero. Three consequences follow at once: the vector part $V=\mathrm{span}_{\mathbb{C}}\{e_1,e_2,e_3\}$ is invariant under the adjoint action; the full material sector decomposes into invariant pieces,
 
 $$
 \mathbb{M}_- = \mathrm{span}_{\mathbb{R}}\{ie_0\}\;\oplus\;V,

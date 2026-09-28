@@ -120,7 +120,7 @@ The article denotes its objects by name; the symbols appearing in the tables are
 | $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | biquaternions |
 | $i,j,k$ | quaternion units |
 | $e_0,\dots,e_7$ | octonion basis; $e_0,\dots,e_{15}$ the sedenion basis |
-| $N(x)$ | norm form |
+| $N(x)$ | norm |
 
 ## Further Reading
 

@@ -30,7 +30,7 @@ $$
 E_{ij} = M_{kl}^{-1}E_{ik}ME_{lj} \in I ,
 $$
 
-so $I$ contains every matrix unit and $I = M_2(\mathbb{C})$. $\square$
+so $I$ contains every matrix unit and $I = M_2(\mathbb{C})$.
 
 Consequences over $\mathbb{C}$:
 
@@ -99,7 +99,7 @@ $$
 
 together with $xp = qx = py = yq = 0$ and $x^2 = y^2 = 0$. This is the multiplication table of $M_2(\mathbb{C})$ in biquaternion coordinates.
 
-**Physical reading: the transition elements.** The off-diagonal elements $x$ and $y$ are the **ladder operators** of the algebra. They are not states and cannot be: each has vanishing norm form, $N(x) = N(y) = 0$, so each is a zero divisor and not invertible; neither is Hermitian; and each is nilpotent, $x^2 = y^2 = 0$, so neither is an idempotent and neither can be a projector. What they do is move between the two diagonal corners: $xy = p$ and $yx = q$, so the products of a raising and a lowering element are the two state projectors. A transition in the framework is therefore a **product of two off-diagonal Peirce elements**, which is the algebraic form of the statement that an observable's off-diagonal part is what makes two states interfere.
+**Physical reading: the transition elements.** The off-diagonal elements $x$ and $y$ are the **ladder operators** of the algebra. They are not states and cannot be: each has vanishing biquaternion norm, $N(x) = N(y) = 0$, so each is a zero divisor and not invertible; neither is Hermitian; and each is nilpotent, $x^2 = y^2 = 0$, so neither is an idempotent and neither can be a projector. What they do is move between the two diagonal corners: $xy = p$ and $yx = q$, so the products of a raising and a lowering element are the two state projectors. A transition in the framework is therefore a **product of two off-diagonal Peirce elements**, which is the algebraic form of the statement that an observable's off-diagonal part is what makes two states interfere.
 
 ## 6. The Peirce Decomposition
 

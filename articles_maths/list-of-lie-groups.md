@@ -52,17 +52,17 @@ A semisimple complex Lie algebra is a direct sum of simple algebras, and the sim
 
 | Type | Lie algebra | Rank | Dimension of the algebra | Compact group | Introduced in |
 |---|---|---|---|---|---|
-| $A_n$ | $\mathfrak{sl}(n+1,\mathbb{C}) = \mathfrak{su}(n+1)$ | $n$ | $n(n+2)$ | $SU(n+1)$ | *Root Systems and Classification*; *Lie Groups* |
-| $B_n$ | $\mathfrak{so}(2n+1,\mathbb{C})$ | $n$ | $n(2n+1)$ | $\operatorname{Spin}(2n+1)$ | *Root Systems and Classification*; *The Orthogonal Lie Algebra* |
-| $C_n$ | $\mathfrak{sp}(2n,\mathbb{C})$ | $n$ | $n(2n+1)$ | $Sp(n)$ | *Root Systems and Classification* |
-| $D_n$ | $\mathfrak{so}(2n,\mathbb{C})$ | $n$ | $n(2n-1)$ | $\operatorname{Spin}(2n)$ | *Root Systems and Classification*; *The Orthogonal Lie Algebra* |
-| $G_2$ | $\mathfrak{g}_2 = \operatorname{Der}(\mathbb{O})$ | $2$ | $14$ | $G_2 = \operatorname{Aut}(\mathbb{O})$ | *Root Systems and Classification*; *Octonions and the Exceptional Lie Groups* |
-| $F_4$ | $\mathfrak{f}_4$ | $4$ | $52$ | $F_4 = \operatorname{Aut}(\mathfrak{h}_3(\mathbb{O}))$ | *Root Systems and Classification*; *Octonions and the Exceptional Lie Groups* |
-| $E_6$ | $\mathfrak{e}_6$ | $6$ | $78$ | the simply connected compact $E_6$ | *Root Systems and Classification*; *Octonions and the Exceptional Lie Groups* |
-| $E_7$ | $\mathfrak{e}_7$ | $7$ | $133$ | the simply connected compact $E_7$ | *Root Systems and Classification*; *Octonions and the Exceptional Lie Groups* |
-| $E_8$ | $\mathfrak{e}_8$ | $8$ | $248$ | the simply connected compact $E_8$ | *Root Systems and Classification*; *Octonions and the Exceptional Lie Groups* |
+| $A_n$ | $\mathrm{SL}(n+1,\mathbb{C}) = \mathrm{SU}(n+1)$ | $n$ | $n(n+2)$ | $SU(n+1)$ | *Root Systems and Classification*; *Lie Groups* |
+| $B_n$ | $\mathrm{SO}(2n+1,\mathbb{C})$ | $n$ | $n(2n+1)$ | $\operatorname{Spin}(2n+1)$ | *Root Systems and Classification*; *The Orthogonal Lie Algebra* |
+| $C_n$ | $\mathrm{Sp}(2n,\mathbb{C})$ | $n$ | $n(2n+1)$ | $Sp(n)$ | *Root Systems and Classification* |
+| $D_n$ | $\mathrm{SO}(2n,\mathbb{C})$ | $n$ | $n(2n-1)$ | $\operatorname{Spin}(2n)$ | *Root Systems and Classification*; *The Orthogonal Lie Algebra* |
+| $G_2$ | $\mathrm{G}_2 = \operatorname{Der}(\mathbb{O})$ | $2$ | $14$ | $G_2 = \operatorname{Aut}(\mathbb{O})$ | *Root Systems and Classification*; *Octonions and the Exceptional Lie Groups* |
+| $F_4$ | $\mathrm{F}_4$ | $4$ | $52$ | $F_4 = \operatorname{Aut}(\mathrm{H}_3(\mathbb{O}))$ | *Root Systems and Classification*; *Octonions and the Exceptional Lie Groups* |
+| $E_6$ | $\mathrm{E}_6$ | $6$ | $78$ | the simply connected compact $E_6$ | *Root Systems and Classification*; *Octonions and the Exceptional Lie Groups* |
+| $E_7$ | $\mathrm{E}_7$ | $7$ | $133$ | the simply connected compact $E_7$ | *Root Systems and Classification*; *Octonions and the Exceptional Lie Groups* |
+| $E_8$ | $\mathrm{E}_8$ | $8$ | $248$ | the simply connected compact $E_8$ | *Root Systems and Classification*; *Octonions and the Exceptional Lie Groups* |
 
-The low-dimensional coincidences of the classification are recorded with it: $B_2 = C_2$ and $A_3 = D_3$, and $A_1 = B_1 = C_1$; on the group side, $Sp(1) \cong SU(2)$, $Sp(2,\mathbb{R}) \cong SL_2(\mathbb{R})$, and $\mathfrak{so}(3,1) \cong \mathfrak{sl}_2(\mathbb{C})$ as complex algebras.
+The low-dimensional coincidences of the classification are recorded with it: $B_2 = C_2$ and $A_3 = D_3$, and $A_1 = B_1 = C_1$; on the group side, $Sp(1) \cong SU(2)$, $Sp(2,\mathbb{R}) \cong SL_2(\mathbb{R})$, and $\mathrm{SO}(3,1) \cong \mathrm{SL}_2(\mathbb{C})$ as complex algebras.
 
 ## The Correspondence Between a Lie Group and Its Lie Algebra
 
@@ -70,16 +70,16 @@ The passage from the group to the algebra is a functor, and its failure to be an
 
 | Object or theorem | The statement or the structure | Introduced in |
 |---|---|---|
-| the Lie algebra $\mathfrak{g} = T_eG$ | the tangent space at the identity, with the bracket of left-invariant vector fields; $[X,Y] = XY - YX$ for a matrix group | *Lie Groups*; *The Lie Algebra and the Exponential Map* |
-| the exponential map $\exp : \mathfrak{g} \to G$ | the flow of a left-invariant field; a local diffeomorphism at $0$, natural in homomorphisms | *The Lie Algebra and the Exponential Map* |
+| the Lie algebra $\mathrm{G} = T_eG$ | the tangent space at the identity, with the bracket of left-invariant vector fields; $[X,Y] = XY - YX$ for a matrix group | *Lie Groups*; *The Lie Algebra and the Exponential Map* |
+| the exponential map $\exp : \mathrm{G} \to G$ | the flow of a left-invariant field; a local diffeomorphism at $0$, natural in homomorphisms | *The Lie Algebra and the Exponential Map* |
 | the Campbell–Baker–Hausdorff formula | $\exp(X)\exp(Y) = \exp(Z(X,Y))$ with $Z$ a Lie polynomial; the group law in exponential coordinates | *The Lie Algebra and the Exponential Map* |
 | the differential $d\varphi_e$ | the functor on homomorphisms; a Lie algebra homomorphism | *Lie Groups*; *The Lie Correspondence and the Adjoint Representation* |
 | Lie's third theorem | every finite-dimensional real Lie algebra is the Lie algebra of a simply connected Lie group | *The Lie Correspondence and the Adjoint Representation* |
-| the Lie correspondence | for simply connected $G$, $\varphi \mapsto d\varphi_e$ is a bijection from $\operatorname{Hom}(G,H)$ to $\operatorname{Hom}(\mathfrak{g},\mathfrak{h})$ | *The Lie Correspondence and the Adjoint Representation* |
+| the Lie correspondence | for simply connected $G$, $\varphi \mapsto d\varphi_e$ is a bijection from $\operatorname{Hom}(G,H)$ to $\operatorname{Hom}(\mathrm{G},\mathrm{H})$ | *The Lie Correspondence and the Adjoint Representation* |
 | the simply connected cover | $\pi : \tilde G \to G$ with discrete central kernel; the connected groups with a given algebra are the $\tilde G/D$ | *The Lie Correspondence and the Adjoint Representation*; *The Fundamental Group of a Lie Group* |
-| the adjoint representation | $\operatorname{Ad}(g) = d(c_g)_e$ on $\mathfrak{g}$ and $\operatorname{ad}_x(y) = [x,y]$, with $d(\operatorname{Ad})_e = \operatorname{ad}$ | *The Lie Correspondence and the Adjoint Representation* |
-| the centre | $\ker\operatorname{Ad} = Z(G)$ for connected $G$, and $\operatorname{Lie}(Z(G)) = \mathfrak{z}(\mathfrak{g})$ | *The Lie Correspondence and the Adjoint Representation* |
-| closed subgroups and quotients | Cartan's theorem makes a closed subgroup embedded; a closed normal $N$ gives $\operatorname{Lie}(G/N) = \mathfrak{g}/\mathfrak{n}$ | *Lie Groups* |
+| the adjoint representation | $\operatorname{Ad}(g) = d(c_g)_e$ on $\mathrm{G}$ and $\operatorname{ad}_x(y) = [x,y]$, with $d(\operatorname{Ad})_e = \operatorname{ad}$ | *The Lie Correspondence and the Adjoint Representation* |
+| the centre | $\ker\operatorname{Ad} = Z(G)$ for connected $G$, and $\operatorname{Lie}(Z(G)) = \mathrm{Z}(\mathrm{G})$ | *The Lie Correspondence and the Adjoint Representation* |
+| closed subgroups and quotients | Cartan's theorem makes a closed subgroup embedded; a closed normal $N$ gives $\operatorname{Lie}(G/N) = \mathrm{G}/\mathrm{N}$ | *Lie Groups* |
 | the structure theory of the algebra | radical, nilradical, Killing form, Cartan's criteria, Levi decomposition, Weyl's complete reducibility | *Structure of Lie Algebras* |
 | the highest-weight classification | the irreducible representations of a semisimple algebra by their highest weights | *Representations of Lie Algebras* |
 | the Peter–Weyl theorem | the decomposition of $L^2(K)$ for a compact group $K$ into finite-dimensional irreducible representations | *The Peter–Weyl Theorem* |
@@ -117,16 +117,16 @@ A catalogue denotes its objects by name rather than by symbol. The symbols that 
 | Symbol | Meaning |
 |---|---|
 | $G$, $H$, $\tilde G$ | a Lie group, a second Lie group, the simply connected cover |
-| $\mathfrak{g} = T_eG$, $\mathfrak{h}$ | the Lie algebra of $G$, the Lie algebra of $H$; lowercase fraktur throughout |
-| $\exp : \mathfrak{g} \to G$ | the exponential map |
+| $\mathrm{G} = T_eG$, $\mathrm{H}$ | the Lie algebra of $G$, the Lie algebra of $H$; lowercase fraktur throughout |
+| $\exp : \mathrm{G} \to G$ | the exponential map |
 | $[X,Y]$, $\operatorname{ad}_x$, $\operatorname{Ad}(g)$ | the bracket, the adjoint representation of the algebra, of the group |
 | $d\varphi_e$ | the differential of a homomorphism at the identity |
-| $\mathfrak{sl}_n$, $\mathfrak{so}_n$, $\mathfrak{sp}_n$, $\mathfrak{g}_2$, $\mathfrak{f}_4$, $\mathfrak{e}_6$, $\mathfrak{e}_7$, $\mathfrak{e}_8$ | the simple Lie algebras by type |
+| $\mathrm{SL}_n$, $\mathrm{SO}_n$, $\mathrm{Sp}_n$, $\mathrm{G}_2$, $\mathrm{F}_4$, $\mathrm{E}_6$, $\mathrm{E}_7$, $\mathrm{E}_8$ | the simple Lie algebras by type |
 | $A_n$, $B_n$, $C_n$, $D_n$, $G_2$, $F_4$, $E_6$, $E_7$, $E_8$ | the types of the classification, with $r$ the rank and $\Phi$ the root system |
 | $GL_n(\mathbb{K})$, $SL_n(\mathbb{K})$, $O(n)$, $SO(n)$, $U(n)$, $SU(n)$, $Sp(n)$, $Sp(2n,\mathbb{R})$ | the classical matrix groups |
 | $T^n = U(1)^n$ | the maximal torus of the compact examples |
 | $\operatorname{Spin}(n)$ | the universal cover of $SO(n)$ for $n \geq 3$ |
-| $Z(G)$, $\mathfrak{z}(\mathfrak{g})$ | the centre of a group and of an algebra |
+| $Z(G)$, $\mathrm{Z}(\mathrm{G})$ | the centre of a group and of an algebra |
 | $\kappa$ | the Killing form |
 
 ## Further Reading

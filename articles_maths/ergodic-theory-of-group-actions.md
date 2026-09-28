@@ -29,7 +29,7 @@ Because the family of invariant sets is a $\sigma$-algebra modulo null sets, the
 
 **Proposition (the ergodic dichotomy).** The action is ergodic if and only if for every $A, B \in \mathcal{B}$ of positive measure there is $g \in G$ with $\mu(gA \cap B) > 0$.
 
-**Proof.** If an invariant set $A$ has $0 < \mu(A) < 1$, take $B = X \setminus A$; then $gA = A$ up to null sets for every $g$, so $\mu(gA \cap B) = 0$. Conversely, if $\mu(gA \cap B) = 0$ for all $g$ and $A$ is invariant with positive measure, then $B = X \setminus A$ has $\mu(gA \cap B) = \mu(A \cap (X\setminus A)) = 0$, so $\mu(B) = 0$. $\square$
+**Proof.** If an invariant set $A$ has $0 < \mu(A) < 1$, take $B = X \setminus A$; then $gA = A$ up to null sets for every $g$, so $\mu(gA \cap B) = 0$. Conversely, if $\mu(gA \cap B) = 0$ for all $g$ and $A$ is invariant with positive measure, then $B = X \setminus A$ has $\mu(gA \cap B) = \mu(A \cap (X\setminus A)) = 0$, so $\mu(B) = 0$.
 
 The dichotomy says that an ergodic action cannot be split, and it is the reason ergodic theory is the right frame for statistical statements: only the trivial invariant events have probability in $(0,1)$, so every invariant random variable is deterministic.
 
@@ -49,7 +49,7 @@ $$
 L^2(X,\mu)^G = \{\text{constant functions}\} \cong \mathbb{C}.
 $$
 
-*Proof.* An invariant function $f \in L^2$ is measurable, and its level sets $\{f > c\}$ are invariant measurable sets. If the action is ergodic each such set has measure $0$ or $1$, so $f$ is constant a.e.; conversely a non-constant invariant vector produces an invariant set of intermediate measure by taking a level set. $\square$
+*Proof.* An invariant function $f \in L^2$ is measurable, and its level sets $\{f > c\}$ are invariant measurable sets. If the action is ergodic each such set has measure $0$ or $1$, so $f$ is constant a.e.; conversely a non-constant invariant vector produces an invariant set of intermediate measure by taking a level set.
 
 Thus ergodicity is a statement about a unitary representation, and the whole of the representation theory of Part II and the harmonic analysis of the first articles of this category becomes available. For $G = \mathbb{Z}$, for example, the Koopman operator $U_T$ is unitary, and the spectral theorem of standard functional analysis writes $U_T = \int_{S^1} z \, dE(z)$; the action is ergodic precisely when $E(\{1\})$ is the projection onto the constants, and it is mixing precisely when the spectral measure of every mean-zero vector is continuous at $1$.
 
@@ -73,7 +73,7 @@ $$
 \langle U_g f, h \rangle \longrightarrow 0 \qquad \text{as } g \to \infty.
 $$
 
-*Proof.* The indicators of measurable sets span a dense subspace of $L^2$, and both conditions are bilinear and continuous in $(f,h)$; on indicators the first condition is the second. $\square$
+*Proof.* The indicators of measurable sets span a dense subspace of $L^2$, and both conditions are bilinear and continuous in $(f,h)$; on indicators the first condition is the second.
 
 **Corollary.** If the Koopman representation contains no nonzero finite-dimensional subrepresentation other than the constants, then the action is ergodic; and if in addition every matrix coefficient of the representation on the mean-zero part vanishes at infinity, then the action is mixing.
 
@@ -85,7 +85,7 @@ Ergodicity is compatible with the presence of a discrete spectrum, so the decay 
 
 **Proposition.** The action is weakly mixing if and only if the product action on $(X \times X, \mu \otimes \mu)$ is ergodic.
 
-**Proof.** The product action is ergodic precisely when the only $L^2(\mu \otimes \mu)$-invariant functions are constant; expanding an invariant function in a basis of $L^2(\mu)$ shows that this holds exactly when $L^2_0(X,\mu)$ has no finite-dimensional invariant subspace, since a finite-dimensional invariant subspace supplies a finite-rank invariant integral kernel. $\square$
+**Proof.** The product action is ergodic precisely when the only $L^2(\mu \otimes \mu)$-invariant functions are constant; expanding an invariant function in a basis of $L^2(\mu)$ shows that this holds exactly when $L^2_0(X,\mu)$ has no finite-dimensional invariant subspace, since a finite-dimensional invariant subspace supplies a finite-rank invariant integral kernel.
 
 For a single ergodic measure-preserving transformation $T$, the classical criterion of Koopman and von Neumann is that weak mixing is equivalent to the Cesàro convergence
 
@@ -117,7 +117,7 @@ $$
 \frac{1}{n}\sum_{k=0}^{n-1} U_T^k f \longrightarrow P f \qquad \text{in } L^2(X,\mu).
 $$
 
-*Proof.* Since $U_T$ is unitary and $P$ is the projection onto $\ker(U_T - I)$, the space $L^2$ decomposes as $\ker(U_T - I) \oplus \overline{(U_T - I)L^2}$. On the kernel the average is $f = Pf$; on the image, $(U_T - I)h$ has average $n^{-1}(U_T^n h - h)$, whose norm is at most $2\|h\|/n \to 0$. Density extends the statement to the closure. $\square$
+*Proof.* Since $U_T$ is unitary and $P$ is the projection onto $\ker(U_T - I)$, the space $L^2$ decomposes as $\ker(U_T - I) \oplus \overline{(U_T - I)L^2}$. On the kernel the average is $f = Pf$; on the image, $(U_T - I)h$ has average $n^{-1}(U_T^n h - h)$, whose norm is at most $2\|h\|/n \to 0$. Density extends the statement to the closure.
 
 When the action is ergodic, $Pf = \int f \, d\mu \cdot \mathbf{1}$, so the theorem is the statement that the time averages converge to the space average in $L^2$. The proof uses only the unitary spectral decomposition and is therefore the model for every averaging theorem.
 
@@ -137,7 +137,7 @@ $$
 \frac{1}{\mu_G(F_n)}\int_{F_n} U_g f \, dg \longrightarrow P f \qquad \text{in } L^2(X,\mu).
 $$
 
-*Proof.* The operator $A_n f = \mu_G(F_n)^{-1}\int_{F_n} U_g f \, dg$ is a contraction of $L^2$ and commutes with the action, since $U_h A_n U_h^{-1}$ is the average over $hF_n$ and Følner convergence gives $\|A_n - U_h A_n U_h^{-1}\| \to 0$ for each $h$. On invariant vectors $A_n f = f$; on the closed span of $\{U_g f - f\}$ the average tends to $0$ by the Følner condition. The two pieces exhaust $L^2$ as in the abelian case, and a uniform bound plus density completes the argument. $\square$
+*Proof.* The operator $A_n f = \mu_G(F_n)^{-1}\int_{F_n} U_g f \, dg$ is a contraction of $L^2$ and commutes with the action, since $U_h A_n U_h^{-1}$ is the average over $hF_n$ and Følner convergence gives $\|A_n - U_h A_n U_h^{-1}\| \to 0$ for each $h$. On invariant vectors $A_n f = f$; on the closed span of $\{U_g f - f\}$ the average tends to $0$ by the Følner condition. The two pieces exhaust $L^2$ as in the abelian case, and a uniform bound plus density completes the argument.
 
 **Corollary (equidistribution of Følner averages).** If the action is ergodic, then for every $f \in L^1(X,\mu)$ the averages $\mu_G(F_n)^{-1}\int_{F_n} U_g f \, dg$ converge to $\int f \, d\mu$ in $L^1$; for a $\mathbb{Z}$-action with $F_n = \{0, 1, \dots, n-1\}$ this is the von Neumann theorem in $L^1$.
 
@@ -181,7 +181,7 @@ $$
 \|f \circ u_t - f\|_2^2 = \bigl\|(f \circ u_{e^{-\lambda s}t} - f) \circ a_s^{-1}\bigr\|_2^2 = \|f \circ u_{e^{-\lambda s} t} - f\|_2^2.
 $$
 
-As $s \to +\infty$ one has $e^{-\lambda s}t \to 0$, and the map $t \mapsto f \circ u_t$ is strongly continuous at $t = 0$ because a measurable measure-preserving flow acts strongly continuously on $L^2$; hence the right-hand side tends to $0$. Therefore $f \circ u_t = f$ a.e. for every $t$. $\square$
+As $s \to +\infty$ one has $e^{-\lambda s}t \to 0$, and the map $t \mapsto f \circ u_t$ is strongly continuous at $t = 0$ because a measurable measure-preserving flow acts strongly continuously on $L^2$; hence the right-hand side tends to $0$. Therefore $f \circ u_t = f$ a.e. for every $t$.
 
 **Corollary.** If the unipotent flow $u_t$ acts ergodically on $(X,\mu)$ and $a_s$ contracts $u_t$ as in the theorem, then the flow $a_s$ acts ergodically too: an invariant function of the diagonal flow is invariant under the unipotent flow, hence constant.
 
@@ -203,7 +203,7 @@ Ergodicity is strengthened to mixing by a quantitative decay of matrix coefficie
 
 **Corollary (mixing of homogeneous actions).** If the action of $G$ on $G/\Gamma$ is ergodic, then it is mixing.
 
-*Proof.* The Koopman representation on the mean-zero part has no invariant vectors by ergodicity, so Howe–Moore applies and the mixing criterion of the first section is satisfied. $\square$
+*Proof.* The Koopman representation on the mean-zero part has no invariant vectors by ergodicity, so Howe–Moore applies and the mixing criterion of the first section is satisfied.
 
 In particular the geodesic flow on a compact hyperbolic surface is mixing, and so is the $G$-action on $G/\Gamma$ for an irreducible lattice in a higher-rank semisimple group. The decay also yields the equidistribution of translates $g\Gamma$ as $g \to \infty$ and is the analytic input to the mixing of unipotent flows on quotients of semisimple groups.
 
@@ -233,7 +233,7 @@ Thus the $\mathbb{Z}$-action generated by a Bernoulli shift and the $\mathbb{Z}^
 
 **Theorem (Kac's lemma).** Let $T$ be an ergodic measure-preserving transformation of a probability space and let $A$ have $\mu(A) > 0$. Then the expected first return time to $A$ starting from a point of $A$ is $1/\mu(A)$.
 
-*Proof.* The sets $A_k = \{x \in A : T^k x \in A \text{ and } T^j x \notin A \text{ for } 0 < j < k\}$ are disjoint and their union is $A$ up to a null set, by ergodicity and recurrence; their $T$-translates partition the complement of the union of the far past, and the invariant measure computation gives $\sum_{k \geq 1} \mu(A_k) = \mu(A)$ while $\sum_{k\geq1} k\mu(A_k) = 1$. Hence the mean return time is $1/\mu(A)$. $\square$
+*Proof.* The sets $A_k = \{x \in A : T^k x \in A \text{ and } T^j x \notin A \text{ for } 0 < j < k\}$ are disjoint and their union is $A$ up to a null set, by ergodicity and recurrence; their $T$-translates partition the complement of the union of the far past, and the invariant measure computation gives $\sum_{k \geq 1} \mu(A_k) = \mu(A)$ while $\sum_{k\geq1} k\mu(A_k) = 1$. Hence the mean return time is $1/\mu(A)$.
 
 Kac's lemma is the quantitative form of Poincaré recurrence, and it is the seed of the return-time theory: the distribution of the rescaled return times converges under the induced map to an exponential law when the flow has a suitable mixing property, which is the basis of the orbit-equivalence constructions of Dye and Ornstein–Weiss.
 

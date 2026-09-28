@@ -389,7 +389,7 @@ $$
 \widehat{Rf(\theta, \cdot)}(\sigma) = \hat{f}(\sigma \cos\theta, \sigma \sin\theta).
 $$
 
-**Proof.** Write the definition of the Radon transform, take the Fourier transform in $t$, and change variables. $\square$
+**Proof.** Write the definition of the Radon transform, take the Fourier transform in $t$, and change variables.
 
 The Fourier slice theorem is the mathematical basis of computed tomography: it says that the Radon transform can be inverted by taking Fourier transforms along lines, and this is what the filtered back-projection algorithm does.
 

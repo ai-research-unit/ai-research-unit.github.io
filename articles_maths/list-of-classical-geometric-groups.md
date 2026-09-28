@@ -81,8 +81,8 @@ Over $\mathbb{C}$ the Lie algebras of the classical groups are the four infinite
 | $C_n$ | $Sp(2n,\mathbb{C})$, with compact form $Sp(n)$ | rank $n$, dimension $n(2n+1)$ | *The Unitary and Symplectic Groups*; *Root Systems and Classification* |
 | $D_n$ | $SO(2n,\mathbb{C})$, with compact form $SO(2n)$ | rank $n$, dimension $n(2n-1)$ | *The Unitary and Symplectic Groups*; *The Orthogonal Lie Algebra* |
 | the duality of $B$ and $C$ | equal dimension and rank, with dual root systems, long and short roots interchanged | — | *The Unitary and Symplectic Groups* |
-| the exception $D_2$ | $\mathfrak{so}(4) \cong \mathfrak{sl}(2) \oplus \mathfrak{sl}(2)$; $D_2$ is not simple, $D_n$ is simple for $n \geq 3$ | — | *The Unitary and Symplectic Groups* |
-| the coincidence $A_1 = B_1 = C_1$ | $SL(2)$, $SO(3)$ and $Sp(2)$ share the Lie algebra $\mathfrak{sl}(2)$ | — | *The Unitary and Symplectic Groups*; *The Orthogonal Lie Algebra* |
+| the exception $D_2$ | $\mathrm{SO}(4) \cong \mathrm{SL}(2) \oplus \mathrm{SL}(2)$; $D_2$ is not simple, $D_n$ is simple for $n \geq 3$ | — | *The Unitary and Symplectic Groups* |
+| the coincidence $A_1 = B_1 = C_1$ | $SL(2)$, $SO(3)$ and $Sp(2)$ share the Lie algebra $\mathrm{SL}(2)$ | — | *The Unitary and Symplectic Groups*; *The Orthogonal Lie Algebra* |
 | $SU(2)$ and the unit quaternions | $SU(2) \cong \mathbb{H}^1 = S^3 = Sp(1)$ | — | *Matrix Groups and Classical Groups* |
 | the double covers | $SU(2) \to SO(3)$ and $SU(2) \times SU(2) \to SO(4)$, with kernels $\{\pm1\}$ and $\{\pm(1,1)\}$ | — | *Matrix Groups and Classical Groups*; *Quaternion Rotations and Reflections* |
 

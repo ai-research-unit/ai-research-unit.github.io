@@ -6,9 +6,9 @@ The proton is the stable charged baryon: spin-$\tfrac{1}{2}$, electric charge $+
 
 The framework is a research programme, not a completed theory, and three of its existing results bear directly on any claim about the proton.
 
-- **It has a non-abelian gauge construction inside the algebra** — a connection, a curvature containing the commutator term, the adjoint transformation law, the Bianchi identity and a gauge-invariant Yang–Mills density — built on the compact factor $\mathrm{span}_\mathbb{R}\{e_1,e_2,e_3\}=\mathfrak{su}(2)$ of the material sector (*Non-Abelian Gauge Fields in Biquaternionic Form*).
+- **It has a non-abelian gauge construction inside the algebra** — a connection, a curvature containing the commutator term, the adjoint transformation law, the Bianchi identity and a gauge-invariant Yang–Mills density — built on the compact factor $\mathrm{span}_\mathbb{R}\{e_1,e_2,e_3\}=\mathrm{SU}(2)$ of the material sector (*Non-Abelian Gauge Fields in Biquaternionic Form*).
 - **It has a chirality structure on the Dirac module and a charge operator on that module**, $Q=q_LP_L+q_RP_R$, with the mass selection rule $q_L=q_R$: a massive Dirac field in the framework is vector-like (*Chiral Fermions in the Biquaternion Framework*).
-- **It has no colour group, no confinement mechanism, and no quark content.** The compact algebra available inside $\mathbb{B}$ is at most $\mathfrak{u}(2)$ of real dimension $4$; every $\mathbb{B}$-module has even complex dimension, so no three-dimensional colour module exists within the present construction; and nothing in the series derives $SU(3)$ or a confinement mechanism (*Quantum Chromodynamics under the Biquaternion Framework — A Research Agenda*).
+- **It has no colour group, no confinement mechanism, and no quark content.** The compact algebra available inside $\mathbb{B}$ is at most $\mathrm{U}(2)$ of real dimension $4$; every $\mathbb{B}$-module has even complex dimension, so no three-dimensional colour module exists within the present construction; and nothing in the series derives $SU(3)$ or a confinement mechanism (*Quantum Chromodynamics under the Biquaternion Framework — A Research Agenda*).
 
 The consequence for the proton is stated at the outset, because the article depends on it.
 
@@ -122,7 +122,7 @@ $$
 \text{eigenvalues } \pm \tfrac{i}{2}\ \ (\text{purely imaginary}).
 $$
 
-A charge operator is an observable: it must be Hermitian with real eigenvalues. The $T_a$ fail the first condition and have imaginary spectra, so no $\mathfrak{su}(2)$ generator in $\mathbb{M}_-$ can be the electric charge. Their Hermitian partners are the isospin-like generators $iT_a=\tfrac12 ie_a\in\mathbb{M}_+$, with
+A charge operator is an observable: it must be Hermitian with real eigenvalues. The $T_a$ fail the first condition and have imaginary spectra, so no $\mathrm{SU}(2)$ generator in $\mathbb{M}_-$ can be the electric charge. Their Hermitian partners are the isospin-like generators $iT_a=\tfrac12 ie_a\in\mathbb{M}_+$, with
 
 $$
 \Phi(iT_a)=\tfrac12\sigma_a,
@@ -130,19 +130,19 @@ $$
 \text{eigenvalues } \pm\tfrac12,
 $$
 
-which are Hermitian but have *half-integer* spectra; they cannot carry the proton's integer charge $+1$ either. All three $T_a$ and all three $iT_a$ were checked in the faithful representation. The conclusion is sharp: the proton's electric charge lives on the central $U(1)$, the $\mathfrak{su}(2)$ generators are a different set of quantum numbers, and identifying the two would be an error the framework's own spectrum forbids.
+which are Hermitian but have *half-integer* spectra; they cannot carry the proton's integer charge $+1$ either. All three $T_a$ and all three $iT_a$ were checked in the faithful representation. The conclusion is sharp: the proton's electric charge lives on the central $U(1)$, the $\mathrm{SU}(2)$ generators are a different set of quantum numbers, and identifying the two would be an error the framework's own spectrum forbids.
 
 Three further distinctions belong here, because the framework has several conserved-looking quantities and they are easy to conflate.
 
 - **Electric charge versus chirality.** The operator $Q$ is diagonal in the chiral basis and commutes with $\gamma_5$ for every $q_L,q_R$; the axial combination $q_R=-q_L$ is $Q=\tfrac{q_R-q_L}{2}\gamma_5$, proportional to the chirality operator. But $\gamma_5$ is a chirality label, not an electric charge, and the axial assignment is precisely one that fails the mass selection rule. For the massive proton only the vector-like specialization survives, and it is blind to chirality.
-- **Electric charge versus the $\mathfrak{su}(2)$ generators.** As above, these are real-spectrum (after multiplication by $i$) but half-integer-valued; they are isospin-like, not electric.
+- **Electric charge versus the $\mathrm{SU}(2)$ generators.** As above, these are real-spectrum (after multiplication by $i$) but half-integer-valued; they are isospin-like, not electric.
 - **Electric charge versus baryon number.** The framework supplies no baryon-number current, no conserved fermion number beyond the central phase, and no composite quantum number at all. The framework's own mass term is the linear chiral pair, through which the continuous central phase passes, so the proton's electric charge is conserved by the massive free equation; what remains open is a separate conjugate pairing built on the algebra's real structure $\flat$, the real-form question of the chiral-fermion article. The framework still does not supply baryon number, and that gap is inherited, not resolved here.
 
 ## What the Framework Does Not Supply: Compositeness and Colour
 
 The proton is not an elementary field in nature; it is a bound state. Nothing in the biquaternion framework represents that, and the omission is not a gap with a known route.
 
-**No colour group.** The compact algebra available inside $\mathbb{B}$ is the maximal compact subalgebra of $\mathfrak{gl}(2,\mathbb{C})$, namely $\mathfrak{u}(2)=\mathfrak{u}(1)\oplus\mathfrak{su}(2)$, of real dimension $4$; a $\mathfrak{su}(3)$ of dimension $8$ does not embed in it. The matter side has the matching ceiling: $\mathbb{B}\cong M_2(\mathbb{C})$ is simple, its unique simple module is $\mathbb{C}^2$, every $\mathbb{B}$-module is a direct sum of copies of it, and therefore every module has even complex dimension, so a three-dimensional colour module does not exist. (This was spot-checked: a minimal left ideal $\mathbb{B}p$ has complex dimension $2$, and the anti-Hermitian $2\times2$ matrices span a real four-dimensional space.) The framework has no colour triplet and no gluon octet.
+**No colour group.** The compact algebra available inside $\mathbb{B}$ is the maximal compact subalgebra of $\mathrm{GL}(2,\mathbb{C})$, namely $\mathrm{U}(2)=\mathrm{U}(1)\oplus\mathrm{SU}(2)$, of real dimension $4$; a $\mathrm{SU}(3)$ of dimension $8$ does not embed in it. The matter side has the matching ceiling: $\mathbb{B}\cong M_2(\mathbb{C})$ is simple, its unique simple module is $\mathbb{C}^2$, every $\mathbb{B}$-module is a direct sum of copies of it, and therefore every module has even complex dimension, so a three-dimensional colour module does not exist. (This was spot-checked: a minimal left ideal $\mathbb{B}p$ has complex dimension $2$, and the anti-Hermitian $2\times2$ matrices span a real four-dimensional space.) The framework has no colour triplet and no gluon octet.
 
 **No confinement.** There is no Wilson loop, no area law, no string tension, no mass gap, and no gauge-fixing principle in the series, and the QCD agenda classifies confinement as an obstacle with no route yet. The zero-divisor cone of $\mathbb{M}_-$ is not an area law.
 
@@ -169,7 +169,7 @@ The table sorts the proton's properties by the status they have in the framework
 | Mass term is off-diagonal in chirality; real structure acts $+1/-1$ on $\mathbb{M}_\mp$ | Derived | linear chiral pair; $\tilde{\Psi}^{\flat}=-\tilde{\Psi}_++\tilde{\Psi}_-$; Weyl decomposition |
 | Vector-like charge operator $Q=qI_4$ for a massive field | Derived | mass selection rule $q_L=q_R$ |
 | Conserved current $\tilde{J}\in\mathbb{M}_-$ | Derived | Dirac current $j^\mu=\bar{\psi}\gamma^\mu\psi$ |
-| Electric charge generator is the central $U(1)$ | Derived | $\mathbb{C}_{\mathbb{B}}$ central; $\mathfrak{su}(2)$ generators have imaginary/half-integer spectra |
+| Electric charge generator is the central $U(1)$ | Derived | $\mathbb{C}_{\mathbb{B}}$ central; $\mathrm{SU}(2)$ generators have imaginary/half-integer spectra |
 | Charge value $q_p=+1$ | Represented (parameter) | inserted coupling; not selected by the algebra |
 | $|q_p|=|q_e|$, opposite signs | Outside | no framework structure; independent parameters |
 | Charge quantisation (integrality) | Outside | not derived in the framework |
@@ -186,7 +186,7 @@ The table sorts the proton's properties by the status they have in the framework
 
 2. **Is there any relation between $q_p$ and $q_e$?** The measured equality $|q_p|=|q_e|$ and the opposite signs are not explained. In the framework the proton and electron are independent fields in the same module, with independent couplings; nothing ties them.
 
-3. **Which generator, in the end?** This article shows that the electric charge must be the central $U(1)$ generator, because the $\mathfrak{su}(2)$ generators and their Hermitian partners have imaginary and half-integer spectra. Is that identification forced, or could an enlarged carrier host a different Hermitian generator with integer spectrum that also plays the role of electric charge? The ceiling result of the QCD agenda suggests not within $\mathbb{B}$, but the enlarged-carrier question is open.
+3. **Which generator, in the end?** This article shows that the electric charge must be the central $U(1)$ generator, because the $\mathrm{SU}(2)$ generators and their Hermitian partners have imaginary and half-integer spectra. Is that identification forced, or could an enlarged carrier host a different Hermitian generator with integer spectrum that also plays the role of electric charge? The ceiling result of the QCD agenda suggests not within $\mathbb{B}$, but the enlarged-carrier question is open.
 
 4. **Can the framework host a bound state?** The proton's compositeness is entirely imported because the framework has no bound-state formalism and no colour. A biquaternionic bound-state construction — if one could be built on the carrier the QCD agenda says is missing — is the only route by which compositeness could enter. No route yet.
 
@@ -210,9 +210,9 @@ with the central $U(1)$ of $\mathbb{C}_{\mathbb{B}}$ as its generator.
 
 On the sharpest available test, the framework's charge operator gives $+1$ for the proton and $0$ for the neutron as exact eigenvalues: $Q_p=I_4$, spectrum $\{+1\}$, and $Q_n=0$, spectrum $\{0\}$, both Hermitian, both chirality-blind, both compatible with the mass selection rule. This was verified exactly in the faithful representation, together with the projector algebra and the selection rule on the vector-like and axial branches. But the *selection* of the values is not a framework result: $q$ is a free parameter, nothing fixes it to $+1$ or to an integer, nothing relates $q_p$ to the electron's charge, and the free equation contains no charge at all. The test is therefore passed as a statement about the operator's spectrum and failed as a derivation — a negative result, stated plainly.
 
-It was also shown that the electric charge cannot be carried by the non-abelian factor: the $\mathfrak{su}(2)$ generators $T_a=\tfrac12e_a$ have purely imaginary spectra $\pm\tfrac i2$, and their Hermitian partners $iT_a$ have half-integer spectra $\pm\tfrac12$, so neither can be the proton's integer electric charge. The charge lives on the central line $\mathbb{C}_{\mathbb{B}}$. This settles the "which generator" question within the present construction.
+It was also shown that the electric charge cannot be carried by the non-abelian factor: the $\mathrm{SU}(2)$ generators $T_a=\tfrac12e_a$ have purely imaginary spectra $\pm\tfrac i2$, and their Hermitian partners $iT_a$ have half-integer spectra $\pm\tfrac12$, so neither can be the proton's integer electric charge. The charge lives on the central line $\mathbb{C}_{\mathbb{B}}$. This settles the "which generator" question within the present construction.
 
-What the framework does not supply is everything that makes the proton a proton. There is no colour group — the compact algebra inside $\mathbb{B}$ is at most $\mathfrak{u}(2)$ of dimension $4$, and every $\mathbb{B}$-module has even complex dimension, so no colour triplet exists. There is no confinement mechanism, no colour representation, no quark content, no bound-state formalism, and no baryon number. The proton's mass $938.272$ MeV, its charge $+1$, the equality of its charge magnitude with the electron's, the integrality of that charge, its quark content, and its anomalous magnetic moment $g_p\approx5.586$ are all imports from standard physics. The framework represents an effective elementary proton; it does not derive one, and it cannot explain why the effective object exists.
+What the framework does not supply is everything that makes the proton a proton. There is no colour group — the compact algebra inside $\mathbb{B}$ is at most $\mathrm{U}(2)$ of dimension $4$, and every $\mathbb{B}$-module has even complex dimension, so no colour triplet exists. There is no confinement mechanism, no colour representation, no quark content, no bound-state formalism, and no baryon number. The proton's mass $938.272$ MeV, its charge $+1$, the equality of its charge magnitude with the electron's, the integrality of that charge, its quark content, and its anomalous magnetic moment $g_p\approx5.586$ are all imports from standard physics. The framework represents an effective elementary proton; it does not derive one, and it cannot explain why the effective object exists.
 
 ## Summary of Notation
 
@@ -238,7 +238,7 @@ What the framework does not supply is everything that makes the proton a proton.
 | $q_L, q_R$ | Chiral couplings (real parameters); massive field forces $q_L=q_R$ |
 | $q_p=+1$ | Proton charge eigenvalue (inserted, not derived) |
 | $q_L=q_R \Rightarrow Q=qI_4$ | Vector-like specialization forced by the mass selection rule |
-| $T_a=\tfrac12 e_a$ | Generators of $\mathfrak{su}(2)=\mathrm{span}_\mathbb{R}\{e_1,e_2,e_3\}\subset\mathbb{M}_-$ |
+| $T_a=\tfrac12 e_a$ | Generators of $\mathrm{SU}(2)=\mathrm{span}_\mathbb{R}\{e_1,e_2,e_3\}\subset\mathbb{M}_-$ |
 | $\Phi(T_a)=-\tfrac i2\sigma_a$, $\Phi(iT_a)=\tfrac12\sigma_a$ | Imaginary and half-integer spectra; neither is the electric charge |
 | $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ | Inherited informational trace formula |
 | $c=1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |
@@ -249,7 +249,7 @@ What the framework does not supply is everything that makes the proton a proton.
 
 - *The Dirac Equation in Biquaternionic Form* — the biquaternion Dirac equation in its linear chiral-pair form, the spinor module, the mass term, and the mass-shell relation used here.
 
-- *Non-Abelian Gauge Fields in Biquaternionic Form* — the $\mathfrak{su}(2)$ generators $T_a=\tfrac12e_a$, their spectra, and the compact factor of the material sector whose distinction from the charge generator this article checks.
+- *Non-Abelian Gauge Fields in Biquaternionic Form* — the $\mathrm{SU}(2)$ generators $T_a=\tfrac12e_a$, their spectra, and the compact factor of the material sector whose distinction from the charge generator this article checks.
 - *Quantum Chromodynamics under the Biquaternion Framework — A Research Agenda* — the ceiling on the compact gauge algebra, the absence of a colour triplet and of confinement, and the three-way classification of what the framework reaches and what it does not.
 - *The Electron in Biquaternionic Form* — the sibling accounting, in which charge and mass are likewise parameters, and the statement that nothing in the algebra fixes $|q_e|=|q_p|$.
 - *The Spin–Statistics Theorem in Biquaternionic Form* — half-integer representations as native to the module, and the sense in which the spin–statistics theorem is transcribed rather than derived.

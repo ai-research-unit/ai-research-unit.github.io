@@ -190,7 +190,7 @@ $$
 \mathbf{V}\cdot\mathbf{V} = \left(\mathbf{E}^2 - c^2\mathbf{B}^2\right) + 2ic\,\mathbf{E}\cdot\mathbf{B} = I_1 + 2ic\,I_2 ,
 $$
 
-and the norm form of the field-strength biquaternion vanishes exactly when the Riemann–Silberstein vector is null, which is the condition for a radiation field.
+and the biquaternion norm of the field-strength biquaternion vanishes exactly when the Riemann–Silberstein vector is null, which is the condition for a radiation field.
 
 ## The Multipole Tower and the Two Decompositions
 
@@ -400,7 +400,7 @@ The multipole series and the two decompositions act on different spaces. The dec
 | $\mathbf{V}^* = \mathbf{E}-ic\mathbf{B}$ | Anti-self-dual combination, $\mathbf{V}^* = \overline{\mathbf{V}}$ for a real field |
 | $\star$ | Hodge dual, $\star(\mathbf{E},\mathbf{B}) = (c\mathbf{B},-\mathbf{E}/c)$, $\star^2 = -1$ |
 | $I_1, I_2$ | Field invariants, $\mathbf{V}\cdot\mathbf{V} = I_1+2icI_2$ |
-| $N(\tilde{F}) = \tilde{F}\bar{\tilde{F}}$ | Norm form; $N(\tilde{F}) = 0$ for a radiation field |
+| $N(\tilde{F}) = \tilde{F}\bar{\tilde{F}}$ | Biquaternion norm; $N(\tilde{F}) = 0$ for a radiation field |
 | $D^{(l)}$ | Irreducible rotation representation of dimension $2l+1$ |
 | $L^2(S^2) = \bigoplus_l D^{(l)}$ | Angular function space (infinite-dimensional) |
 | $E_l$, $M_l$ | Electric and magnetic multiplets of order $l$ |

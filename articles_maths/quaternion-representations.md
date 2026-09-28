@@ -63,7 +63,7 @@ $$
 V \cong \mathbb{H}^{\oplus n}, \qquad \rho(\tilde q)(v_1, \dots, v_n) = (\tilde q v_1, \dots, \tilde q v_n).
 $$
 
-**Proof.** Let $V$ be a finite-dimensional representation. Since $\mathbb{H}$ is a division algebra and $\rho$ is non-zero (unless $V = 0$), the image $\rho(\mathbb{H})$ is isomorphic to $\mathbb{H}$. So $V$ is a module over the division algebra $\mathbb{H}$, and every module over a division algebra is free. Hence $V \cong \mathbb{H}^{\oplus n}$ for some $n$, and the action is by left multiplication. $\square$
+**Proof.** Let $V$ be a finite-dimensional representation. Since $\mathbb{H}$ is a division algebra and $\rho$ is non-zero (unless $V = 0$), the image $\rho(\mathbb{H})$ is isomorphic to $\mathbb{H}$. So $V$ is a module over the division algebra $\mathbb{H}$, and every module over a division algebra is free. Hence $V \cong \mathbb{H}^{\oplus n}$ for some $n$, and the action is by left multiplication.
 
 So the representation theory of $\mathbb{H}$ is the simplest possible: every representation is a direct sum of copies of the regular representation, and there is exactly one irreducible representation, up to isomorphism.
 
@@ -71,13 +71,13 @@ So the representation theory of $\mathbb{H}$ is the simplest possible: every rep
 
 **Theorem.** The regular representation is the unique irreducible representation of $\mathbb{H}$, up to isomorphism.
 
-**Proof.** Any irreducible representation is a quotient of the regular representation, hence isomorphic to it, since $\mathbb{H}$ is a division algebra and every non-zero $\mathbb{H}$-linear map $\mathbb{H} \to V$ is injective. $\square$
+**Proof.** Any irreducible representation is a quotient of the regular representation, hence isomorphic to it, since $\mathbb{H}$ is a division algebra and every non-zero $\mathbb{H}$-linear map $\mathbb{H} \to V$ is injective.
 
 ### Schur's Lemma
 
 **Theorem (Schur).** Every $\mathbb{H}$-linear endomorphism of an irreducible representation of $\mathbb{H}$ is a scalar multiple of the identity.
 
-**Proof.** Let $V$ be irreducible and let $T : V \to V$ be $\mathbb{H}$-linear. Then $\ker T$ and $\operatorname{im} T$ are subrepresentations. Since $V$ is irreducible, either $\ker T = 0$ and $\operatorname{im} T = V$ (so $T$ is an isomorphism), or $\ker T = V$ (so $T = 0$). In the first case, $T$ is an isomorphism, and since $V$ is one-dimensional over $\mathbb{H}$ (by the classification theorem), $T$ is multiplication by a non-zero scalar in $\mathbb{H}$. $\square$
+**Proof.** Let $V$ be irreducible and let $T : V \to V$ be $\mathbb{H}$-linear. Then $\ker T$ and $\operatorname{im} T$ are subrepresentations. Since $V$ is irreducible, either $\ker T = 0$ and $\operatorname{im} T = V$ (so $T$ is an isomorphism), or $\ker T = V$ (so $T = 0$). In the first case, $T$ is an isomorphism, and since $V$ is one-dimensional over $\mathbb{H}$ (by the classification theorem), $T$ is multiplication by a non-zero scalar in $\mathbb{H}$.
 
 **Corollary.** The endomorphism ring of the regular representation is $\mathbb{H}$ itself.
 
@@ -125,7 +125,7 @@ the ring of $n \times n$ matrices over $\mathbb{H}$. This is a simple ring, and 
 
 The quaternion algebra $\mathbb{H}$ is **simple**: it has no non-trivial two-sided ideals. The only two-sided ideals are $0$ and $\mathbb{H}$.
 
-**Proof.** Let $I$ be a non-zero two-sided ideal, and let $\tilde q \in I$ be non-zero. Since $\tilde q$ is invertible, $1 = \tilde q^{-1} \tilde q \in I$, so $I = \mathbb{H}$. $\square$
+**Proof.** Let $I$ be a non-zero two-sided ideal, and let $\tilde q \in I$ be non-zero. Since $\tilde q$ is invertible, $1 = \tilde q^{-1} \tilde q \in I$, so $I = \mathbb{H}$.
 
 So $\mathbb{H}$ is a central simple algebra over $F$ when $F$ is the center. The center of $\mathbb{H}$ is $F$ (the scalars), and $\mathbb{H}$ is four-dimensional over $F$, so it is a central simple algebra of degree two.
 
@@ -151,7 +151,7 @@ $$
 \mathbb{B} \cong M_2(\mathbb{C}).
 $$
 
-**Proof.** The complexification of $\mathbb{H}$ is a central simple algebra over $\mathbb{C}$. By the classification of central simple algebras over $\mathbb{C}$, every such algebra is a matrix algebra over $\mathbb{C}$. The dimension is four, so the matrix size is two. $\square$
+**Proof.** The complexification of $\mathbb{H}$ is a central simple algebra over $\mathbb{C}$. By the classification of central simple algebras over $\mathbb{C}$, every such algebra is a matrix algebra over $\mathbb{C}$. The dimension is four, so the matrix size is two.
 
 ### Representations of $\mathbb{B}$
 
@@ -211,7 +211,7 @@ A representation $V$ is **indecomposable** if it cannot be written as a direct s
 
 **Theorem.** Every finite-dimensional representation of $\mathbb{H}$ is a direct sum of indecomposable representations, and the indecomposable representations are exactly the regular representation.
 
-**Proof.** By the classification theorem, $V \cong \mathbb{H}^{\oplus n}$. Each summand is indecomposable because it is a free module of rank one over a division algebra, and any non-zero submodule is the whole thing. Conversely, any indecomposable representation is a single copy of the regular representation. $\square$
+**Proof.** By the classification theorem, $V \cong \mathbb{H}^{\oplus n}$. Each summand is indecomposable because it is a free module of rank one over a division algebra, and any non-zero submodule is the whole thing. Conversely, any indecomposable representation is a single copy of the regular representation.
 
 So $\mathbb{H}$ is a **semisimple** algebra: every representation is a direct sum of irreducibles, and the indecomposables coincide with the irreducibles. This is a general feature of simple algebras over fields, and it is the reason the representation theory is so simple.
 

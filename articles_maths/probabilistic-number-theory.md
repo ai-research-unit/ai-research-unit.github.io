@@ -72,7 +72,7 @@ $$
 
 convergence in distribution to the standard Gaussian.
 
-*Proof (sketch).* Write $\omega = \sum_{p\leq N}\mathbf{1}_{p\mid n}$, split the primes into the small ones $p \leq N^{1/\log\log N}$ and the large ones, and let $Y = \sum_{p\leq N^{1/\log\log N}}\mathbf{1}_{p\mid n}$ be the small-prime part. By the fundamental lemma the small-prime indicators behave as independent Bernoulli$(1/p)$ variables, so $Y$ is a sum of independent bounded variables with mean $\mu = \sum_{p\leq N^{1/\log\log N}}1/p = \log\log N + O(\log\log\log N)$ and variance $\mu - \sum1/p^2 = \log\log N + O(1)$; the Lindeberg–Feller central limit theorem of *Laws of Large Numbers and the Central Limit Theorem* applies, and $(Y - \log\log N)/\sqrt{\log\log N}$ is asymptotically Gaussian. The large-prime part $\omega - Y$ counts the primes $p > N^{1/\log\log N}$ dividing $n$: each contributes at most one, and the total number of such primes dividing $n$ is $O(\log\log\log N)$ for almost all $n$, so its variance is $o(\log\log N)$ and it is negligible after normalisation. $\square$
+*Proof (sketch).* Write $\omega = \sum_{p\leq N}\mathbf{1}_{p\mid n}$, split the primes into the small ones $p \leq N^{1/\log\log N}$ and the large ones, and let $Y = \sum_{p\leq N^{1/\log\log N}}\mathbf{1}_{p\mid n}$ be the small-prime part. By the fundamental lemma the small-prime indicators behave as independent Bernoulli$(1/p)$ variables, so $Y$ is a sum of independent bounded variables with mean $\mu = \sum_{p\leq N^{1/\log\log N}}1/p = \log\log N + O(\log\log\log N)$ and variance $\mu - \sum1/p^2 = \log\log N + O(1)$; the Lindeberg–Feller central limit theorem of *Laws of Large Numbers and the Central Limit Theorem* applies, and $(Y - \log\log N)/\sqrt{\log\log N}$ is asymptotically Gaussian. The large-prime part $\omega - Y$ counts the primes $p > N^{1/\log\log N}$ dividing $n$: each contributes at most one, and the total number of such primes dividing $n$ is $O(\log\log\log N)$ for almost all $n$, so its variance is $o(\log\log N)$ and it is negligible after normalisation.
 
 The theorem is the central limit theorem of number theory, and the shape of the statement — the mean and the variance both equal to $\log\log N$ — is the signature of the Poisson limit of rare events: the number of prime factors below $N^{1/\log\log N}$ is a sum of many independent indicators with small probabilities, and its limiting law is Gaussian rather than Poisson because the mean $\log\log N$ diverges. The theorem also holds for $\Omega(n)$ and, with the constants of the multiplicative model, for $\log d(n)$: the normal order of $\log d(n)$ is $(\log 2)\log\log n$ and the fluctuations are Gaussian of order $\sqrt{\log\log n}$.
 
@@ -86,7 +86,7 @@ $$
 \sum_{n\leq N}\left|f(n) - \sum_{p\leq N}\frac{f(p)}{p}\right|^2 \leq C\,N\sum_{p\leq N}\frac{|f(p)|^2}{p}.
 $$
 
-*Proof (sketch).* Write the averaged function $A_N = \sum_{p\leq N}f(p)/p$ and expand the square as a double sum over $n \leq N$. The diagonal $(p = q)$ contributes $\sum_{p\leq N}|f(p)|^2\sum_{n\leq N}\mathbf{1}_{p\mid n} \leq N\sum_p|f(p)|^2/p$, which is the right-hand side; the off-diagonal is estimated by the Chinese remainder theorem, $\sum_{n\leq N}\mathbf{1}_{p\mid n,q\mid n} = N/(pq) + O(1)$, with the summation grouped according to the size of $pq$, and the resulting error is absorbed in the constant $C$. The inequality is the standard one; the point of the sketch is that the main term is the sum of the variances of the prime contributions. $\square$
+*Proof (sketch).* Write the averaged function $A_N = \sum_{p\leq N}f(p)/p$ and expand the square as a double sum over $n \leq N$. The diagonal $(p = q)$ contributes $\sum_{p\leq N}|f(p)|^2\sum_{n\leq N}\mathbf{1}_{p\mid n} \leq N\sum_p|f(p)|^2/p$, which is the right-hand side; the off-diagonal is estimated by the Chinese remainder theorem, $\sum_{n\leq N}\mathbf{1}_{p\mid n,q\mid n} = N/(pq) + O(1)$, with the summation grouped according to the size of $pq$, and the resulting error is absorbed in the constant $C$. The inequality is the standard one; the point of the sketch is that the main term is the sum of the variances of the prime contributions.
 
 The inequality is the variance estimate of the subject: it says that the second moment of an additive function about its mean is controlled by the sum of the variances of the prime contributions, and it is the arithmetic form of the law of large numbers. Applied to $f = \omega$, it gives $\sum_{n\leq N}(\omega(n)-\log\log N)^2 = O(N\log\log N)$, which is the concentration behind the Hardy–Ramanujan theorem; applied to $f(n) = \sum_{p\mid n}f(p)$ for a general additive $f$, it reduces the problem of the distribution of $f$ to the distribution of the model sum $\sum_pf(p)X_p$, which is a sum of independent variables and falls under the Lindeberg–Feller criterion.
 
@@ -157,7 +157,7 @@ Under the model the prime number theorem holds with probability one, the maximal
 **Conjecture (Hardy–Littlewood).** For a finite admissible prime pattern $\mathcal{H} = \{h_1,\dots,h_k\}$ the number of $n\leq x$ with all of $n+h_i$ prime is asymptotic to
 
 $$
-\mathfrak{S}(\mathcal{H})\frac{x}{(\log x)^k}, \qquad \mathfrak{S}(\mathcal{H}) = \prod_p\left(1 - \frac{1}{p}\right)^{-k}\left(1 - \frac{\nu_{\mathcal{H}}(p)}{p}\right),
+\mathrm{S}(\mathcal{H})\frac{x}{(\log x)^k}, \qquad \mathrm{S}(\mathcal{H}) = \prod_p\left(1 - \frac{1}{p}\right)^{-k}\left(1 - \frac{\nu_{\mathcal{H}}(p)}{p}\right),
 $$
 
 where $\nu_{\mathcal{H}}(p)$ is the number of distinct residues of $\mathcal{H}$ modulo $p$ and the product is the **singular series**.
@@ -220,7 +220,7 @@ The distribution theory extends from $\omega$ to the local limit theorems, to th
 | Erdős–Wintner | limiting distribution iff $\sum_{\lvert f(p)\rvert\le1}\lvert f(p)\rvert/p$ and $\sum_{\lvert f(p)\rvert>1}f(p)^2/p$ converge |
 | $v(N)$, local limit | model variance; Gaussian density after smoothing |
 | Cramér model | independent indicators of density $1/\log n$ |
-| $\mathfrak{S}(\mathcal{H})$ | singular series of the pattern $\mathcal{H}$ |
+| $\mathrm{S}(\mathcal{H})$ | singular series of the pattern $\mathcal{H}$ |
 | Selberg CLT | $\log\lvert\zeta(1/2+it)\rvert/\sqrt{\frac12\log\log T}\Rightarrow N(0,1)$ |
 | $\mathcal{N}_{\mathbb{C}}$ | standard complex Gaussian |
 

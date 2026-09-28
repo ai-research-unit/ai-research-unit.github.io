@@ -32,7 +32,7 @@ $\mathbb{R}$ is the unique one-dimensional real algebra with $1 \neq 0$: the pro
 
 ### The Complex Numbers
 
-$\mathbb{C} = \mathbb{R}[x]/(x^2+1)$ is two-dimensional over $\mathbb{R}$, commutative, and a field; the generator $i$ satisfies $i^2 = -1$, and the norm form $N(z) = z z^* = x^2 + y^2$ vanishes only at $z = 0$, so every nonzero element is a unit. Its only ideals are $0$ and $\mathbb{C}$. Over a general field $k$, the algebra $k[x]/(f)$ is a field exactly when $f$ is irreducible, which for $f = x^2+1$ happens over $k = \mathbb{R}$ and fails over $k = \mathbb{C}$; this is the simplest instance of the dependence of the structure on the ground field.
+$\mathbb{C} = \mathbb{R}[x]/(x^2+1)$ is two-dimensional over $\mathbb{R}$, commutative, and a field; the generator $i$ satisfies $i^2 = -1$, and the only solution of $z z^* = 0$ is $z = 0$, so every nonzero element is a unit. Its only ideals are $0$ and $\mathbb{C}$. Over a general field $k$, the algebra $k[x]/(f)$ is a field exactly when $f$ is irreducible, which for $f = x^2+1$ happens over $k = \mathbb{R}$ and fails over $k = \mathbb{C}$; this is the simplest instance of the dependence of the structure on the ground field.
 
 ### The Split Complex Numbers
 
@@ -64,13 +64,7 @@ and every element of the maximal ideal $(\varepsilon)$ is nilpotent, hence a zer
 
 ### The Quaternions
 
-$\mathbb{H}$ is four-dimensional over $\mathbb{R}$, with basis $e_0 = 1$, $e_1, e_2, e_3$, $e_k^2 = -e_0$ and $e_1e_2 = e_3$ cyclically. The norm form is
-
-$$
-N(q) = q\bar q = q_0^2 + q_1^2 + q_2^2 + q_3^2,
-$$
-
-which vanishes only at $q = 0$; hence every nonzero quaternion is a unit and $\mathbb{H}$ is a division algebra. Its centre is $\mathbb{R}\cdot 1$, it has no nonzero zero divisors, and its only ideals are $0$ and $\mathbb{H}$: it is a division ring, hence simple. It is non-commutative, so it is the first example in the list that is neither a field nor commutative.
+$\mathbb{H}$ is four-dimensional over $\mathbb{R}$, with basis $e_0 = 1$, $e_1, e_2, e_3$, $e_k^2 = -e_0$ and $e_1e_2 = e_3$ cyclically. Every nonzero quaternion is a unit and $\mathbb{H}$ is a division algebra. Its centre is $\mathbb{R}\cdot 1$, it has no nonzero zero divisors, and its only ideals are $0$ and $\mathbb{H}$: it is a division ring, hence simple. It is non-commutative, so it is the first example in the list that is neither a field nor commutative.
 
 ### The Split Biquaternions
 
@@ -80,17 +74,13 @@ $$
 \mathbb{H}_{\mathbb{D}} \cong (\mathbb{R}\times\mathbb{R})\otimes_\mathbb{R}\mathbb{H} \cong \mathbb{H}\times\mathbb{H}.
 $$
 
-So $\mathbb{H}_{\mathbb{D}}$ is a product of two copies of $\mathbb{H}$: it is semisimple, it is not simple, its centre is $\mathbb{D}$, and it has zero divisors, beginning with $1+j$ and $1-j$, which are the images of $(2,0)$ and $(0,2)$ and multiply to zero. The unit criterion is $N(u) \in \mathbb{D}^\times$. This algebra is not the four-dimensional coquaternion algebra $M_2(\mathbb{R})$; the two are distinct, and the corpus's $\mathbb{H}_{\mathbb{D}}$ is the tensor product above.
+So $\mathbb{H}_{\mathbb{D}}$ is a product of two copies of $\mathbb{H}$: it is semisimple, it is not simple, its centre is $\mathbb{D}$, and it has zero divisors, beginning with $1+j$ and $1-j$, which are the images of $(2,0)$ and $(0,2)$ and multiply to zero. This algebra is not the four-dimensional coquaternion algebra $M_2(\mathbb{R})$; the two are distinct, and the corpus's $\mathbb{H}_{\mathbb{D}}$ is the tensor product above.
 
 ## The Biquaternion Algebra
 
-$\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ is four-dimensional over $\mathbb{C}$ and eight-dimensional over $\mathbb{R}$. Its centre is the copy of $\mathbb{C}$ spanned by $e_0$, its norm form is $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_{\mu=0}^{3} Q_\mu^2$, and
+$\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ is four-dimensional over $\mathbb{C}$ and eight-dimensional over $\mathbb{R}$. Its centre is the copy of $\mathbb{C}$ spanned by $e_0$.
 
-$$
-\tilde{Q} \text{ is a unit} \iff N(\tilde{Q}) \neq 0 .
-$$
-
-Unlike the quaternion case, the equation $Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2 = 0$ has nonzero complex solutions, for instance $Q_0 = i$, $Q_1 = 1$; hence $i e_0 + e_1$ is a zero divisor, $(i e_0 + e_1)(i e_0 - e_1) = -1 + 1 = 0$. Thus $\mathbb{B}$ has zero divisors and is not a division algebra. As a $\mathbb{C}$-algebra it is isomorphic to $M_2(\mathbb{C})$, so it is simple, with only the trivial two-sided ideals, and its centre is $\mathbb{C}$. It is the standard example of a simple algebra that is not a division algebra, and the two phenomena — simplicity and zero divisors — coexist because the ground field is $\mathbb{C}$ rather than $\mathbb{R}$.
+Unlike the quaternion case, the element $i e_0 + e_1$ is a zero divisor, $(i e_0 + e_1)(i e_0 - e_1) = -1 + 1 = 0$. Thus $\mathbb{B}$ has zero divisors and is not a division algebra. As a $\mathbb{C}$-algebra it is isomorphic to $M_2(\mathbb{C})$, so it is simple, with only the trivial two-sided ideals, and its centre is $\mathbb{C}$. It is the standard example of a simple algebra that is not a division algebra, and the two phenomena — simplicity and zero divisors — coexist because the ground field is $\mathbb{C}$ rather than $\mathbb{R}$.
 
 ## The General Framework
 
@@ -134,17 +124,17 @@ which on comparing the two sides forces $A_{ii} = A_{jj}$ for all $i,j$ and $A_{
 
 ## The Units Computed
 
-The unit group is determined by a norm form in each of the division-algebra-like cases, and the criterion is that the norm be invertible in the coefficient ring of the form: over $\mathbb{R}$ and over $\mathbb{C}$ this is the statement that the norm does not vanish, while for $\mathbb{H}_{\mathbb{D}}$ the norm takes values in $\mathbb{D}$ and must be a unit there.
+The unit group is determined in each of the division-algebra-like cases, and the criterion is that the relevant product be invertible in the coefficient ring: over $\mathbb{R}$ and over $\mathbb{C}$ this is the statement that it does not vanish, while for $\mathbb{H}_{\mathbb{D}}$ it takes values in $\mathbb{D}$ and must be a unit there.
 
-| Algebra | Norm form | Unit criterion | Example of a non-unit |
-|---|---|---|---|
-| $\mathbb{D}$ | $x^2 - y^2$ | $x^2 \neq y^2$ | $1 + j$ |
-| $\mathbb{D}'$ | $x^2$ | $x \neq 0$ | $\varepsilon$ |
-| $\mathbb{H}$ | $q_0^2+q_1^2+q_2^2+q_3^2$ | $q \neq 0$ | none |
-| $\mathbb{H}_{\mathbb{D}}$ | $\sum_\mu Q_\mu^2$, $Q_\mu = q_\mu + jq'_\mu \in \mathbb{D}$ | $N(u) \in \mathbb{D}^\times$ | $1 + j$ |
-| $\mathbb{B}$ | $Q_0^2+Q_1^2+Q_2^2+Q_3^2$ | $N(\tilde{Q}) \neq 0$ | $ie_0 + e_1$ |
+| Algebra | Unit criterion | Example of a non-unit |
+|---|---|---|
+| $\mathbb{D}$ | $(x+y)(x-y) \neq 0$ | $1 + j$ |
+| $\mathbb{D}'$ | $x \neq 0$ | $\varepsilon$ |
+| $\mathbb{H}$ | $q \neq 0$ | none |
+| $\mathbb{H}_{\mathbb{D}}$ | the relevant value is a unit of $\mathbb{D}$ | $1 + j$ |
+| $\mathbb{B}$ | the relevant value is nonzero | $ie_0 + e_1$ |
 
-In each case the inverse is the conjugate divided by the norm, and the criterion is that the division be legitimate. For $\mathbb{D}$, the elements on the two null lines have no inverse and are zero divisors; for $\mathbb{D}'$, the whole maximal ideal consists of non-units, all nilpotent; for $\mathbb{H}$, the norm form is positive definite, so there are no non-units besides $0$; for $\mathbb{B}$ the norm form takes values in the field $\mathbb{C}$, and its isotropic vectors are precisely the nonzero zero divisors. For $\mathbb{H}_{\mathbb{D}}$ the norm form takes values in $\mathbb{D}$, whose real part $\sum_\mu(q_\mu^2 + q'^2_\mu)$ is positive definite, so $N(u) = 0$ forces $u = 0$ and the norm form does not single out the zero divisors: a nonzero $u$ is a zero divisor exactly when $N(u)$ is a nonzero zero divisor of $\mathbb{D}$, as for $u = 1+j$, with $N(u) = 2 + 2j$.
+In each case the inverse is the conjugate divided by the relevant product, and the criterion is that the division be legitimate. For $\mathbb{D}$, the elements on the two null lines have no inverse and are zero divisors; for $\mathbb{D}'$, the whole maximal ideal consists of non-units, all nilpotent; for $\mathbb{H}$, there are no non-units besides $0$; for $\mathbb{B}$ the zero divisors are precisely the nonzero elements with vanishing conjugate product. For $\mathbb{H}_{\mathbb{D}}$ the relevant product takes values in $\mathbb{D}$ whose real part $\sum_\mu(q_\mu^2 + q'^2_\mu)$ is positive definite, so it vanishes only at $u = 0$ and does not single out the zero divisors: a nonzero $u$ is a zero divisor exactly when its value is a nonzero zero divisor of $\mathbb{D}$, as for $u = 1+j$, with value $2 + 2j$.
 
 ## Matrix Algebras
 
@@ -198,7 +188,6 @@ The table at the head of the article records the data for each algebra.
 | $k[G]$ | Group algebra of a finite group |
 | $Z(A)$ | Centre of $A$ |
 | $A^\times$ | Group of units of $A$ |
-| $N(u) = uu^*$ | Norm form, multiplicative |
 | $\pi$ | Augmentation map $k[G] \to k$ |
 
 

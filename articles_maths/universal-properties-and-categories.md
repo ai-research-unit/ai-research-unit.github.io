@@ -74,7 +74,7 @@ are equal: $G(f) \circ \eta_A = \eta_B \circ F(f)$. The transformation is a **na
 
 **Theorem.** A functor $F : \mathcal{C} \to \mathcal{D}$ is an equivalence if and only if it is **fully faithful** (each map $\mathcal{C}(A,B) \to \mathcal{D}(F(A),F(B))$, $f \mapsto F(f)$, is a bijection) and **essentially surjective** (every object of $\mathcal{D}$ is isomorphic to $F(A)$ for some $A$).
 
-**Proof sketch.** Given an equivalence, the full faithfulness follows from the natural isomorphism and the essential surjectivity from the counit. Conversely, choose for each object $D$ of $\mathcal{D}$ an object $G(D)$ of $\mathcal{C}$ and an isomorphism $\varepsilon_D : F(G(D)) \to D$, and define $G$ on morphisms by transporting along $\varepsilon$ and using full faithfulness. The natural transformations $\varepsilon$ and the analogous $\eta : \mathrm{id}_{\mathcal{C}} \Rightarrow G \circ F$ are then isomorphisms. $\square$
+**Proof sketch.** Given an equivalence, the full faithfulness follows from the natural isomorphism and the essential surjectivity from the counit. Conversely, choose for each object $D$ of $\mathcal{D}$ an object $G(D)$ of $\mathcal{C}$ and an isomorphism $\varepsilon_D : F(G(D)) \to D$, and define $G$ on morphisms by transporting along $\varepsilon$ and using full faithfulness. The natural transformations $\varepsilon$ and the analogous $\eta : \mathrm{id}_{\mathcal{C}} \Rightarrow G \circ F$ are then isomorphisms.
 
 ## Universal Properties
 
@@ -84,7 +84,7 @@ are equal: $G(f) \circ \eta_A = \eta_B \circ F(f)$. The transformation is a **na
 
 **Proposition.** Initial and terminal objects are unique up to isomorphism when they exist.
 
-**Proof.** If $I$ and $I'$ are initial, the unique morphisms $I \to I'$ and $I' \to I$ compose to the unique endomorphisms of $I$ and $I'$, which are the identities; hence they are inverse isomorphisms. The terminal case is dual. $\square$
+**Proof.** If $I$ and $I'$ are initial, the unique morphisms $I \to I'$ and $I' \to I$ compose to the unique endomorphisms of $I$ and $I'$, which are the identities; hence they are inverse isomorphisms. The terminal case is dual.
 
 **Example.** In $\mathbf{Set}$ the empty set is initial and every singleton is terminal. In the category attached to a poset, an initial object is a least element and a terminal object a greatest element. In the category of monoids, the one-element monoid is both initial and terminal, hence a zero object. In the category of types of the previous section, the empty type is initial and the unit type is terminal, in the reading of *Proof Theory and Type Theory*.
 
@@ -94,7 +94,7 @@ are equal: $G(f) \circ \eta_A = \eta_B \circ F(f)$. The transformation is a **na
 
 **Proposition.** Products and coproducts are unique up to isomorphism when they exist.
 
-**Proof.** If $(A\times B, \pi_1,\pi_2)$ and $(P, p_1, p_2)$ are both products, the universal property applied to $P$ gives a morphism $P \to A \times B$, and applied to $A\times B$ gives one back; the composites satisfy the universal property of the identity and hence equal $\mathrm{id}$ by uniqueness. $\square$
+**Proof.** If $(A\times B, \pi_1,\pi_2)$ and $(P, p_1, p_2)$ are both products, the universal property applied to $P$ gives a morphism $P \to A \times B$, and applied to $A\times B$ gives one back; the composites satisfy the universal property of the identity and hence equal $\mathrm{id}$ by uniqueness.
 
 **Example.** In $\mathbf{Set}$ the product is the Cartesian product with its coordinate projections, and the coproduct is the disjoint union with its inclusions. In the category attached to a poset, the product is the greatest lower bound and the coproduct the least upper bound, when they exist: the universal property of a product is exactly the property of a meet in *Order Theory and Lattices*. In the category of types, the product and coproduct are the product and sum types of *Proof Theory and Type Theory*, and the universal property is the typing of the pairing and case-splitting rules.
 
@@ -102,7 +102,7 @@ are equal: $G(f) \circ \eta_A = \eta_B \circ F(f)$. The transformation is a **na
 
 **Theorem.** The category of types of *Proof Theory and Type Theory* is cartesian closed, with the unit type as terminal object, the product types as products and the function types as exponentials.
 
-**Proof sketch.** The projections and pairing are the elimination rules of the product, and the evaluation and currying are the rules for the function type; the uniqueness clauses are the $\beta\eta$-equalities of the typed calculus, which hold by construction in the category of types modulo $\beta\eta$-conversion. $\square$
+**Proof sketch.** The projections and pairing are the elimination rules of the product, and the evaluation and currying are the rules for the function type; the uniqueness clauses are the $\beta\eta$-equalities of the typed calculus, which hold by construction in the category of types modulo $\beta\eta$-conversion.
 
 ### Universal Arrows and Free Objects
 
@@ -126,7 +126,7 @@ are equal: $G(f) \circ \eta_A = \eta_B \circ F(f)$. The transformation is a **na
 
 **Theorem.** A category is complete if and only if it has all small products and all equalisers. It is cocomplete if and only if it has all small coproducts and all coequalisers.
 
-**Proof sketch.** A limit of an arbitrary small diagram is built as the equaliser of two morphisms between products indexed by the objects and by the morphisms of the index category: one of the two maps uses the projections of the diagram and the other the action of the diagram's morphisms. The converse is immediate. $\square$
+**Proof sketch.** A limit of an arbitrary small diagram is built as the equaliser of two morphisms between products indexed by the objects and by the morphisms of the index category: one of the two maps uses the projections of the diagram and the other the action of the diagram's morphisms. The converse is immediate.
 
 **Example.** $\mathbf{Set}$ is complete and cocomplete: products, coproducts, equalisers and coequalisers are constructed as above, and the theorem gives all small limits and colimits. The category of types with sums and products is similarly complete and cocomplete for the limits and colimits generated by the type formers. The category attached to a poset is complete exactly when the poset has all meets of small subsets, and the completeness of a lattice in the sense of *Order Theory and Lattices* is this condition.
 
@@ -150,7 +150,7 @@ for all objects $C$ of $\mathcal{C}$ and $D$ of $\mathcal{D}$, natural in $C$ an
 
 **Proposition (uniqueness).** Left adjoints are unique up to natural isomorphism, and right adjoints are unique up to natural isomorphism.
 
-**Proof.** If $F$ and $F'$ are both left adjoint to $G$, the natural bijections give a natural bijection $\mathcal{D}(F(C), D) \cong \mathcal{D}(F'(C), D)$ for all $D$, and the Yoneda lemma below identifies $F(C)$ with $F'(C)$ naturally. $\square$
+**Proof.** If $F$ and $F'$ are both left adjoint to $G$, the natural bijections give a natural bijection $\mathcal{D}(F(C), D) \cong \mathcal{D}(F'(C), D)$ for all $D$, and the Yoneda lemma below identifies $F(C)$ with $F'(C)$ naturally.
 
 ### Unit and Counit
 
@@ -166,7 +166,7 @@ $$
 
 are the identities of $F$ and of $G$. Conversely, a pair of natural transformations $\eta : \mathrm{id}_{\mathcal{C}} \Rightarrow G \circ F$ and $\varepsilon : F \circ G \Rightarrow \mathrm{id}_{\mathcal{D}}$ satisfying the two identities makes $F$ left adjoint to $G$.
 
-**Proof sketch.** The first identity is checked on components using the naturality of $\varphi$: $(\varepsilon F)_C \circ (F\eta)_C = \varepsilon_{F(C)} \circ F(\eta_C)$, and under the adjunction bijection this is the identity of $F(C)$. The converse defines $\varphi$ by $\varphi(f) = G(f) \circ \eta_C$ and $\varphi^{-1}(g) = \varepsilon_D \circ F(g)$, and the triangular identities are what make the two inverse. $\square$
+**Proof sketch.** The first identity is checked on components using the naturality of $\varphi$: $(\varepsilon F)_C \circ (F\eta)_C = \varepsilon_{F(C)} \circ F(\eta_C)$, and under the adjunction bijection this is the identity of $F(C)$. The converse defines $\varphi$ by $\varphi(f) = G(f) \circ \eta_C$ and $\varphi^{-1}(g) = \varepsilon_D \circ F(g)$, and the triangular identities are what make the two inverse.
 
 The unit and counit are the useful form of an adjunction: the unit is the insertion of an object into its free algebra, and the counit is the evaluation of a free algebra on its generators. In the free-monoid example, $\eta_X : X \to U(X^*)$ is the insertion of letters and $\varepsilon_M : U(M)^* \to M$ is the multiplication of a word in $M$.
 
@@ -186,13 +186,13 @@ $$
 
 is a bijection, natural in $A$ and in $F$.
 
-**Proof.** Given $\eta : \mathcal{C}(-,A) \Rightarrow F$, the component $\eta_A$ sends $\mathrm{id}_A$ to an element of $F(A)$; this defines the map. In the other direction, an element $x \in F(A)$ determines $\eta_x$ by $\eta_x{}_B(f) = F(f)(x)$ for $f : B \to A$; naturality is the equation $F(g)(F(f)(x)) = F(f \circ g)(x)$ for $g : C \to B$, which holds because $F$ is a functor. The two assignments are inverse: from $x$ one recovers $x$ as $\eta_x{}_A(\mathrm{id}_A)$, and from $\eta$ one recovers $\eta$ because $\eta_B(f) = \eta_B(\mathcal{C}(-,A)(f)(\mathrm{id}_A)) = F(f)(\eta_A(\mathrm{id}_A))$ by naturality. Naturality in $A$ and $F$ is a diagram chase. $\square$
+**Proof.** Given $\eta : \mathcal{C}(-,A) \Rightarrow F$, the component $\eta_A$ sends $\mathrm{id}_A$ to an element of $F(A)$; this defines the map. In the other direction, an element $x \in F(A)$ determines $\eta_x$ by $\eta_x{}_B(f) = F(f)(x)$ for $f : B \to A$; naturality is the equation $F(g)(F(f)(x)) = F(f \circ g)(x)$ for $g : C \to B$, which holds because $F$ is a functor. The two assignments are inverse: from $x$ one recovers $x$ as $\eta_x{}_A(\mathrm{id}_A)$, and from $\eta$ one recovers $\eta$ because $\eta_B(f) = \eta_B(\mathcal{C}(-,A)(f)(\mathrm{id}_A)) = F(f)(\eta_A(\mathrm{id}_A))$ by naturality. Naturality in $A$ and $F$ is a diagram chase.
 
 ### Consequences
 
 **Corollary (Yoneda embedding is full and faithful).** The functor $Y$ is fully faithful: for all $A, B$ the map $\mathcal{C}(A,B) \to [\mathcal{C}^{\mathrm{op}},\mathbf{Set}](\mathcal{C}(-,A),\mathcal{C}(-,B))$ is a bijection.
 
-**Proof.** Apply the Yoneda lemma with $F = \mathcal{C}(-,B)$: the natural transformations $\mathcal{C}(-,A) \Rightarrow \mathcal{C}(-,B)$ correspond bijectively to the elements of $\mathcal{C}(A,B)$, and the correspondence is composition with $f$. $\square$
+**Proof.** Apply the Yoneda lemma with $F = \mathcal{C}(-,B)$: the natural transformations $\mathcal{C}(-,A) \Rightarrow \mathcal{C}(-,B)$ correspond bijectively to the elements of $\mathcal{C}(A,B)$, and the correspondence is composition with $f$.
 
 **Corollary (representing objects are unique).** If $\mathcal{C}(-,A) \cong \mathcal{C}(-,B)$ then $A \cong B$.
 
@@ -228,7 +228,7 @@ A **comonad** is the dual.
 
 **Theorem.** Every adjunction $F \dashv G$ between categories $\mathcal{C}$ and $\mathcal{D}$ gives rise to a monad on $\mathcal{C}$ with $T = G \circ F$, $\eta$ the unit of the adjunction and $\mu = G\varepsilon F$; dually it gives a comonad on $\mathcal{D}$. Conversely every monad arises from an adjunction, in fact from two: the **Kleisli** adjunction, whose category has the objects of $\mathcal{C}$ and whose morphisms $A \to B$ are the morphisms $A \to T(B)$ composed through $\mu$, and the Eilenberg–Moore adjunction, whose category is $\mathcal{C}^T$.
 
-**Proof sketch.** For the first statement, the triangular identities of the adjunction give the two monad laws, and the verification is a calculation with $\eta$ and $\varepsilon$. For the converse, the Kleisli category has the free algebras as its objects, and the Eilenberg–Moore category has all algebras; the two adjunctions induce the given monad because $G \circ F$ recovers $T$ on both. $\square$
+**Proof sketch.** For the first statement, the triangular identities of the adjunction give the two monad laws, and the verification is a calculation with $\eta$ and $\varepsilon$. For the converse, the Kleisli category has the free algebras as its objects, and the Eilenberg–Moore category has all algebras; the two adjunctions induce the given monad because $G \circ F$ recovers $T$ on both.
 
 **Remark.** The monadicity theorem of Beck gives a criterion for a right adjoint to be the Eilenberg–Moore comparison functor, hence for a category to be the category of algebras of a monad over another. The theory is the categorical form of universal algebra, and it is used in the corpus for the algebraic theories whose models are groups, rings and modules, whose constructions are in the corresponding articles.
 
@@ -250,7 +250,7 @@ The categories of *Proof Theory and Type Theory* assemble into a picture that th
 
 **Theorem.** The simply typed lambda calculus gives a cartesian closed category: the objects are the types, the morphisms $A \to B$ are the terms of type $B$ in a context containing a variable of type $A$, modulo $\beta\eta$-conversion, and the constructions of products and exponentials are the type formers with their introduction and elimination rules. Under the Curry–Howard correspondence, a term is a derivation, and the commutative diagrams of the category are the equations between derivations induced by $\beta\eta$-conversion.
 
-**Proof sketch.** Composition is substitution, which is associative by the substitution lemma; the identity is the variable; the terminal object is the unit type, the product is the product type with the pairing and projections, and the exponential is the function type with abstraction and evaluation. The universal properties are the typing rules, and uniqueness is the $\eta$-equation. $\square$
+**Proof sketch.** Composition is substitution, which is associative by the substitution lemma; the identity is the variable; the terminal object is the unit type, the product is the product type with the pairing and projections, and the exponential is the function type with abstraction and evaluation. The universal properties are the typing rules, and uniqueness is the $\eta$-equation.
 
 ## Summary
 

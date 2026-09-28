@@ -29,7 +29,7 @@ Throughout, $R$ is a ring; when the theory needs commutativity, unit, regularity
 
 **Theorem (existence and uniqueness).** For every based CW complex $X$ and normal subgroup $N \leq \pi_1(X)$, a plus construction exists, and it is unique up to homotopy equivalence under $X$; the map $q$ is the universal map to a space that kills $N$ and is a homology isomorphism over the coefficients above.
 
-*Proof sketch.* Attach $2$-cells along loops representing a generating set of $N$ and $3$-cells along the resulting relations, so that $N$ is killed without changing homology; then attach cells of dimension $\geq 3$ to make the new fundamental group exactly $\pi_1(X)/N$ and to kill the excess homology created in dimensions $\geq 3$, by an induction in which each stage corrects $\pi_1$ and $H_i$ for $i \geq 2$. The weak topology of *CW Complexes and Cellular Approximation* allows the transfinite construction. Uniqueness follows from the universal property. $\square$
+*Proof sketch.* Attach $2$-cells along loops representing a generating set of $N$ and $3$-cells along the resulting relations, so that $N$ is killed without changing homology; then attach cells of dimension $\geq 3$ to make the new fundamental group exactly $\pi_1(X)/N$ and to kill the excess homology created in dimensions $\geq 3$, by an induction in which each stage corrects $\pi_1$ and $H_i$ for $i \geq 2$. The weak topology of *CW Complexes and Cellular Approximation* allows the transfinite construction. Uniqueness follows from the universal property.
 
 **Definition.** For a ring $R$ and $n \geq 0$ the **higher algebraic $K$-groups** in Quillen's plus construction definition are
 
@@ -53,7 +53,7 @@ $$
 
 so that $K_1(R) \cong GL(R)^{\mathrm{ab}}$; the **Whitehead group** $Wh(\pi)$ of a group $\pi$ is $K_1(\mathbb{Z}[\pi])/(\pm\pi)$, and it is the obstruction group in the $s$-cobordism theorem of surgery theory.
 
-*Proof.* Functoriality is the functoriality of $BGL(-)$ and the universal property of the plus construction; the exact sequence is the definition of the plus construction's effect on $\pi_1$. $\square$
+*Proof.* Functoriality is the functoriality of $BGL(-)$ and the universal property of the plus construction; the exact sequence is the definition of the plus construction's effect on $\pi_1$.
 
 **Remark.** The plus construction is the precise sense in which algebraic $K$-theory is a homology theory of the general linear group: by the theorem, $H_*(BGL(R)^+) \cong H_*(BGL(R))$ with trivial coefficients, so the $K$-groups are computed by the homology of $BGL(R)$ in the range where the plus construction does not alter it, which is the route to the **Lichtenbaum–Quillen conjectures**.
 
@@ -71,7 +71,7 @@ $$
 
 with the loop space $\Omega BQ\mathcal{M}$ homotopy equivalent to $BGL(R)^+$ in the case $\mathcal{M} = \mathrm{Proj}(R)$.
 
-*Proof sketch.* The category $Q\mathcal{M}$ carries a composition law making $BQ\mathcal{M}$ a monoid up to homotopy, and the **group-completion theorem** of Quillen identifies its group completion with $\Omega BQ\mathcal{M}$; the comparison with the plus construction is obtained by exhibiting a homotopy equivalence $\Omega BQ\mathcal{M} \simeq BGL(R)^+$ through the action of $GL(R)$ on a suitable resolution of the objects of $\mathcal{M}$. $\square$
+*Proof sketch.* The category $Q\mathcal{M}$ carries a composition law making $BQ\mathcal{M}$ a monoid up to homotopy, and the **group-completion theorem** of Quillen identifies its group completion with $\Omega BQ\mathcal{M}$; the comparison with the plus construction is obtained by exhibiting a homotopy equivalence $\Omega BQ\mathcal{M} \simeq BGL(R)^+$ through the action of $GL(R)$ on a suitable resolution of the objects of $\mathcal{M}$.
 
 **Remark.** The $Q$-construction is the reason algebraic $K$-theory is computable in principle: it turns the $K$-groups into the homotopy groups of a space constructed from the category, and it makes the theory functorial for exact functors, not only for ring maps. In this form it applies to categories of modules, of coherent sheaves, of vector bundles, and to the stable $\infty$-category of perfect complexes below.
 
@@ -87,7 +87,7 @@ $$
 
 so that $K_n(\mathcal{M}) \cong \pi_n(\Omega|S_\bullet\mathcal{M}|) \cong \pi_{n+1}(|S_\bullet\mathcal{M}|)$; equivalently $K_n \cong \pi_n$ of the loop space of the realisation.
 
-*Proof sketch.* The simplicial object $S_\bullet\mathcal{M}$ and the $Q$-construction are related by a comparison of the two filtrations: $S_n\mathcal{M}$ has a filtration by the length of the flags, and the associated graded can be identified with $BQ\mathcal{M}$ iterated; the resulting weak equivalence $\Omega|S_\bullet| \xrightarrow{\sim}\Omega BQ\mathcal{M}$ is the **additivity theorem**'s consequence, and it is the form in which the theory generalises to Waldhausen categories. $\square$
+*Proof sketch.* The simplicial object $S_\bullet\mathcal{M}$ and the $Q$-construction are related by a comparison of the two filtrations: $S_n\mathcal{M}$ has a filtration by the length of the flags, and the associated graded can be identified with $BQ\mathcal{M}$ iterated; the resulting weak equivalence $\Omega|S_\bullet| \xrightarrow{\sim}\Omega BQ\mathcal{M}$ is the **additivity theorem**'s consequence, and it is the form in which the theory generalises to Waldhausen categories.
 
 **Remark.** The $S_\bullet$-construction is the one that generalises: for a **Waldhausen category** (a category with cofibrations and weak equivalences satisfying the gluing axioms) the same construction defines $K$-theory, and this is the form in which algebraic $K$-theory is applied to topological spaces (the $A$-theory of Waldhausen), to spectra, and to the stable homotopy theory of *Stable Homotopy Theory*.
 
@@ -125,7 +125,7 @@ $$
 \cdots \to K_n(\mathcal{B}) \to K_n(\mathcal{A}) \to K_n(\mathcal{A}/\mathcal{B}) \to K_{n-1}(\mathcal{B}) \to \cdots .
 $$
 
-*Proof sketch.* All three theorems are proved from the $S_\bullet$-construction and the additivity theorem: the localisation theorem uses the fibration sequence of Waldhausen categories associated to the quotient, and the long exact sequence is the homotopy long exact sequence of the fibration of spectra. $\square$
+*Proof sketch.* All three theorems are proved from the $S_\bullet$-construction and the additivity theorem: the localisation theorem uses the fibration sequence of Waldhausen categories associated to the quotient, and the long exact sequence is the homotopy long exact sequence of the fibration of spectra.
 
 **Remark.** These three theorems are the working tools of the subject. Localisation gives the $K$-theory of a scheme from that of its closed subschemes and open complements; devissage gives the $K$-theory of a noetherian abelian category from that of the semisimple pieces in a filtration; additivity is the mechanism that makes $K$-theory a homology theory of categories rather than a functor with no exactness.
 
@@ -177,7 +177,7 @@ organises the computation. In particular for $R = \mathbb{C}$ the comparison wit
 2. For rings $R$ and $S$ there is a product $K(R)\wedge K(S)\to K(R\otimes_{\mathbb{Z}}S)$, the **external product**, and the resulting multiplicative structure on the $K$-groups is the one used in the comparison theorems.
 3. The $K$-theory of a regular noetherian ring is **homotopy invariant**: $K_n(R[t]) \cong K_n(R)$ for all $n$, and more generally $K_n(R[t_1,\ldots,t_m]) \cong K_n(R)$; for a general ring the fundamental theorem gives $K_n(R[t,t^{-1}])\cong K_n(R)\oplus K_{n-1}(R)$ for $n\geq1$, with the two summands coming from the localisation sequence of the affine line at the origin and infinity.
 
-*Proof.* (1) the tensor product and the $\lambda$-operations are defined on the exact category of projective modules, they are compatible with the $S_\bullet$-construction, and the coherence is the standard one for the multiplicative structure of $K$-theory; the identification of $\pi_0$ is the Grothendieck construction of Part I's *$K$-Theory of Rings*. (2) is the tensor product of modules over the two rings. (3) is Quillen's resolution theorem applied to the comparison of the categories of projective modules over $R$ and over $R[t]$, the polynomial ring being flat and the theorem giving the equivalence of the $K$-theory spectra; the fundamental theorem is the localisation sequence for the pair $(\mathbb{A}^1,\mathbb{G}_m)$ over $R$. $\square$
+*Proof.* (1) the tensor product and the $\lambda$-operations are defined on the exact category of projective modules, they are compatible with the $S_\bullet$-construction, and the coherence is the standard one for the multiplicative structure of $K$-theory; the identification of $\pi_0$ is the Grothendieck construction of Part I's *$K$-Theory of Rings*. (2) is the tensor product of modules over the two rings. (3) is Quillen's resolution theorem applied to the comparison of the categories of projective modules over $R$ and over $R[t]$, the polynomial ring being flat and the theorem giving the equivalence of the $K$-theory spectra; the fundamental theorem is the localisation sequence for the pair $(\mathbb{A}^1,\mathbb{G}_m)$ over $R$.
 
 ### Waldhausen's Generalisation
 
@@ -189,7 +189,7 @@ organises the computation. In particular for $R = \mathbb{C}$ the comparison wit
 2. for a ring $R$ there is a natural map $K(R)\to A(BGL(R)^+)$, Waldhausen's **linear approximation**, which is an equivalence in a range of degrees, so that the algebraic $K$-theory of a ring is the linear part of the $K$-theory of its classifying space;
 3. the **Whitehead theorem** of Waldhausen identifies the diffeomorphism groups of high-dimensional manifolds with the $K$-theory of spaces up to a codimension-three range, which is the bridge from the present article to the surgery theory of *Cobordism and Surgery Theory*.
 
-*Proof.* (1) is the theorem of Barratt, Priddy and Quillen in its algebraic form, the group completion of the monoid of spheres; (2) is the comparison of the linear category of free modules with the category of retractive spaces over $BGL(R)^+$, which is a theorem of Waldhausen quoted as standard; (3) is Waldhausen's theorem on the relation of $A(X)$ to the pseudoisotopy space and hence to the diffeomorphism groups by the $h$- and $s$-cobordism theorems, stated in *Cobordism and Surgery Theory*. $\square$
+*Proof.* (1) is the theorem of Barratt, Priddy and Quillen in its algebraic form, the group completion of the monoid of spheres; (2) is the comparison of the linear category of free modules with the category of retractive spaces over $BGL(R)^+$, which is a theorem of Waldhausen quoted as standard; (3) is Waldhausen's theorem on the relation of $A(X)$ to the pseudoisotopy space and hence to the diffeomorphism groups by the $h$- and $s$-cobordism theorems, stated in *Cobordism and Surgery Theory*.
 
 **Remark (the additive structure of the arithmetic computations).** The computations quoted above acquire their shape from the general theory. For a finite field the Quillen spectral sequence degenerates in the fashion described, and $K_{2i-1}(\mathbb{F}_q)$ is cyclic of order $q^i-1$; for a number field the Borel computation determines the ranks through the values of the Riemann zeta function at negative integers, the regulator being the volume of the lattice of $K$-classes in the cohomology of the arithmetic group; and the torsion of $K_*(\mathbb{Z})$, such as $K_3(\mathbb{Z})\cong\mathbb{Z}/48$, is the arithmetic content of the torsion conjectures and of the $J$-homomorphism of *Stable Homotopy Theory*. The general theorems above — multiplicativity, homotopy invariance, the fundamental theorem — supply the structural frame, and the arithmetic supplies the deviations from it.
 

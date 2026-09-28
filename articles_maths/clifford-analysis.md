@@ -57,7 +57,7 @@ $$
 \sigma(\xi)^{-1} = \frac{\bar\sigma(\xi)}{|\xi|^2}, \qquad \bar\sigma(\xi) = \xi_0-\sum_{i=1}^{m}e_i\xi_i .
 $$
 
-*Proof.* The computation is the one of *Regularity and the Cauchy–Riemann Operator*: expanding $D\bar D$ gives $\partial_0^2-\sum_{i,j}e_ie_j\partial_i\partial_j$, the diagonal terms contribute $\sum_i\partial_i^2$ since $e_i^2=-1$, and the off-diagonal terms cancel pairwise by $e_ie_j=-e_je_i$. The symbol computation is identical: $\sigma(\xi)\bar\sigma(\xi) = \xi_0^2-\sum_{i,j}e_ie_j\xi_i\xi_j = \xi_0^2+\sum_i\xi_i^2 = |\xi|^2$, a positive real number, which is a unit of $A$; the same computation in the other order gives the same product, so $\sigma(\xi)$ is invertible. $\square$
+*Proof.* The computation is the one of *Regularity and the Cauchy–Riemann Operator*: expanding $D\bar D$ gives $\partial_0^2-\sum_{i,j}e_ie_j\partial_i\partial_j$, the diagonal terms contribute $\sum_i\partial_i^2$ since $e_i^2=-1$, and the off-diagonal terms cancel pairwise by $e_ie_j=-e_je_i$. The symbol computation is identical: $\sigma(\xi)\bar\sigma(\xi) = \xi_0^2-\sum_{i,j}e_ie_j\xi_i\xi_j = \xi_0^2+\sum_i\xi_i^2 = |\xi|^2$, a positive real number, which is a unit of $A$; the same computation in the other order gives the same product, so $\sigma(\xi)$ is invertible.
 
 The factorisation is the reason the Clifford case is the favourable one: the second-order operator that governs the theory is the ordinary Laplacian of the ambient space, so the harmonic tools of classical analysis apply to the components. The ellipticity is the reason the integral representation of the next section exists with a kernel of homogeneity $1-(m+1)$.
 
@@ -67,7 +67,7 @@ The factorisation is the reason the Clifford case is the favourable one: the sec
 
 **Proposition (linear structure and one-sided multiplication).** The left monogenic functions on $\Omega$ form a real vector space, closed under right multiplication by constants of $A$; if $a\in A$ is central then $af$ is monogenic whenever $f$ is. The class is not closed under multiplication of two monogenic functions, and this is the non-commutative obstruction of *Hypercomplex Analysis* in its Clifford form.
 
-*Proof.* Linearity of $D$ gives the vector space statement, and for a constant $a$ the Leibniz rule gives $D(fa) = \sum_\mu e_\mu(\partial_\mu f)a = (Df)a$ and $D(af) = \sum_\mu e_\mu a\partial_\mu f$, which vanishes for central $a$ because $e_\mu a = ae_\mu$. The failure of closure is exhibited by the monogenic function $x\mapsto x+ae_1$ of the next example and the monogenic function $x\mapsto x$ in the complex case; over $\mathbb{H}$ the product of two monogenic functions is in general not monogenic. $\square$
+*Proof.* Linearity of $D$ gives the vector space statement, and for a constant $a$ the Leibniz rule gives $D(fa) = \sum_\mu e_\mu(\partial_\mu f)a = (Df)a$ and $D(af) = \sum_\mu e_\mu a\partial_\mu f$, which vanishes for central $a$ because $e_\mu a = ae_\mu$. The failure of closure is exhibited by the monogenic function $x\mapsto x+ae_1$ of the next example and the monogenic function $x\mapsto x$ in the complex case; over $\mathbb{H}$ the product of two monogenic functions is in general not monogenic.
 
 **Example (the complex case).** For $m=1$ let $z = x_0+e_1x_1$. Then $Dz = \partial_0z+e_1\partial_1z = 1+e_1^2=0$, so $z$ is left monogenic, and more generally $D(z^k)=0$ for every $k\ge0$: $\partial_0z^k = kz^{k-1}$ and $\partial_1z^k = kz^{k-1}e_1$, so $D(z^k) = kz^{k-1}+e_1kz^{k-1}e_1 = kz^{k-1}(1+e_1^2)=0$. Thus the polynomials in one complex variable are monogenic, and with $A=\mathbb{C}$ the monogenic functions are the holomorphic ones.
 
@@ -83,7 +83,7 @@ The factorisation is the reason the Clifford case is the favourable one: the sec
 3. (**Liouville**) a monogenic function on all of $\mathbb{R}^{m+1}$ with bounded norm is constant;
 4. (**identity**) two monogenic functions on a domain that agree on a set with an accumulation point agree everywhere.
 
-*Proof.* If $Df=0$ then $\Delta f = \bar DDf = 0$, so each component of $f$ is harmonic; harmonic functions are real-analytic and satisfy the mean value property. The maximum principle follows because $\|f\|^2$ is a sum of squares of harmonic functions and hence subharmonic, and a subharmonic function attaining an interior maximum is constant; then $\Delta\|f\|^2=2\sum_\alpha|\nabla f^\alpha|^2=0$ forces the components to be constant. Liouville is the same argument applied on all of $\mathbb{R}^{m+1}$, and the identity theorem is real-analyticity on a connected set. $\square$
+*Proof.* If $Df=0$ then $\Delta f = \bar DDf = 0$, so each component of $f$ is harmonic; harmonic functions are real-analytic and satisfy the mean value property. The maximum principle follows because $\|f\|^2$ is a sum of squares of harmonic functions and hence subharmonic, and a subharmonic function attaining an interior maximum is constant; then $\Delta\|f\|^2=2\sum_\alpha|\nabla f^\alpha|^2=0$ forces the components to be constant. Liouville is the same argument applied on all of $\mathbb{R}^{m+1}$, and the identity theorem is real-analyticity on a connected set.
 
 ## The Cauchy Integral Formula
 
@@ -103,7 +103,7 @@ $$
 
 in the sense of distributions; consequently $E$ is a fundamental solution of $D$, and $E(x-y)$ is the **Cauchy kernel**.
 
-*Proof.* Let $\Phi$ be the fundamental solution of the Laplacian in $\mathbb{R}^{m+1}$, normalised so that $\Delta\Phi=\delta_0$; then $D\bar D = \Delta$ gives $D(\bar D\Phi) = \delta_0$, so $E = \bar D\Phi$ is a fundamental solution, and the computation of $\bar D\Phi$ for the radially symmetric $\Phi$ produces the displayed formula. In one dimension $E(x) = \frac{1}{2\pi}\frac{\bar x}{|x|^2}$, which is the classical kernel $1/(2\pi z)$; for $m=2$ the kernel is $\frac{1}{4\pi}\frac{\bar x}{|x|^3}$; and in general the homogeneity is $1-(m+1)$. $\square$
+*Proof.* Let $\Phi$ be the fundamental solution of the Laplacian in $\mathbb{R}^{m+1}$, normalised so that $\Delta\Phi=\delta_0$; then $D\bar D = \Delta$ gives $D(\bar D\Phi) = \delta_0$, so $E = \bar D\Phi$ is a fundamental solution, and the computation of $\bar D\Phi$ for the radially symmetric $\Phi$ produces the displayed formula. In one dimension $E(x) = \frac{1}{2\pi}\frac{\bar x}{|x|^2}$, which is the classical kernel $1/(2\pi z)$; for $m=2$ the kernel is $\frac{1}{4\pi}\frac{\bar x}{|x|^3}$; and in general the homogeneity is $1-(m+1)$.
 
 **Remark (verification in the quaternionic case).** The identity $DE=0$ off the origin is readily checked by direct computation for $m=2$: with the quaternion multiplication of $\mathrm{Cl}_{0,2}\cong\mathbb{H}$ and the finite-difference approximation of $D=\partial_0+e_1\partial_1+e_2\partial_2$, the quantity $DE$ at the points $(0.3,0.4,0.5)$, $(1,-0.7,0.2)$ and $(0.11,0.22,-0.31)$ is zero to machine precision, and $Dx=-1=1-m$ at the same points, as the general formula requires.
 
@@ -115,7 +115,7 @@ $$
 f(x) = \int_{\partial\Omega}E(x-y)\,\nu_B(y)\,f(y)\,dS(y)-\int_{\Omega}E(x-y)\,(Df)(y)\,dy .
 $$
 
-*Proof.* Quoted as standard; it is the Clifford instance of the general Cauchy–Pompeiu formula of *Hypercomplex Analysis*, and it is proved by cutting the singular point out of the domain, applying the divergence theorem to the smooth part and letting the excision radius shrink, the singular integral at the boundary contributing the value $f(x)$. $\square$
+*Proof.* Quoted as standard; it is the Clifford instance of the general Cauchy–Pompeiu formula of *Hypercomplex Analysis*, and it is proved by cutting the singular point out of the domain, applying the divergence theorem to the smooth part and letting the excision radius shrink, the singular integral at the boundary contributing the value $f(x)$.
 
 **Corollary (Cauchy integral formula).** If $f$ is left monogenic on a neighbourhood of $\bar\Omega$, then
 
@@ -131,7 +131,7 @@ $$
 
 so a monogenic function is controlled on a ball by its boundary values, and in particular $\|f(x)\|\le\sup_{\partial B(x,r)}\|f\|$.
 
-*Proof.* Insert the Cauchy formula and estimate the integral using $\|\bar x\|=|x|$ and $|E(x-y)|=\omega_m^{-1}|x-y|^{-m}$. $\square$
+*Proof.* Insert the Cauchy formula and estimate the integral using $\|\bar x\|=|x|$ and $|E(x-y)|=\omega_m^{-1}|x-y|^{-m}$.
 
 **Remark (the Cauchy transform and the Szegő projection).** The boundary integral defines the Cauchy transform $\mathcal{C}h(x)=\int_{\partial\Omega}E(x-y)\nu_B(y)h(y)dS(y)$, carrying a boundary datum $h$ to a function monogenic inside $\Omega$; the transform is the flat case of the general one, whose integration theory is not covered here. The **Hardy space** $H^2(\partial\Omega)$ of boundary values of monogenic functions is a closed subspace of $L^2(\partial\Omega;\mathcal{S})$, and the Cauchy transform restricted to it is the identity, while on its orthogonal complement it vanishes: the transform is the orthogonal projection of $L^2$ onto the Hardy space, and it is self-adjoint and idempotent. This is the Clifford form of the Szegő projection of complex analysis, and it is the analytic heart of the singular-integral theory of the subject.
 
@@ -141,7 +141,7 @@ so a monogenic function is controlled on a ball by its boundary values, and in p
 
 **Proposition.** For each $k$ the restriction map $P\mapsto P|_{S^m}$ is injective on $\mathcal{M}_k$, and the spaces $\mathcal{M}_k$ for distinct $k$ are pairwise orthogonal in $L^2(S^m;\mathcal{S})$ with respect to the surface measure.
 
-*Proof.* A homogeneous polynomial vanishing on the unit sphere vanishes identically by homogeneity. For the orthogonality, the Euclidean structure of the ambient space gives the spherical decomposition, and the monogenic polynomials of distinct degrees are eigenfunctions of the spherical Cauchy–Riemann operator for distinct eigenvalues; eigenfunctions of a self-adjoint operator for distinct eigenvalues are orthogonal. $\square$
+*Proof.* A homogeneous polynomial vanishing on the unit sphere vanishes identically by homogeneity. For the orthogonality, the Euclidean structure of the ambient space gives the spherical decomposition, and the monogenic polynomials of distinct degrees are eigenfunctions of the spherical Cauchy–Riemann operator for distinct eigenvalues; eigenfunctions of a self-adjoint operator for distinct eigenvalues are orthogonal.
 
 **Theorem (Fischer decomposition).** Let $\mathcal{P}_k$ be the space of $\mathcal{S}$-valued homogeneous polynomials of degree $k$ on $\mathbb{R}^{m+1}$. Then
 
@@ -151,7 +151,7 @@ $$
 
 a finite direct sum in which $\bar x^{\,j}$ denotes left multiplication by the $j$-th power of the conjugate variable $\bar x = x_0-\sum_{i=1}^{m}e_ix_i$.
 
-*Proof.* Quoted as standard. Multiplication by $\bar x$ raises the degree by one, and its interaction with $D$ differs from a scalar by terms of the same parity; the monogenic part of $\mathcal{P}_k$ is $\mathcal{M}_k$, the remainder is $\bar x$ times the polynomials of degree $k-1$, and the argument is an induction on the degree of the same triangular kind as the Fischer decomposition for the Laplacian, with $D$ in place of $\Delta$ and $\bar x$ in place of the radial factor. The decomposition is the Clifford analogue of the decomposition of harmonic polynomials into radial layers, with the solid harmonics replaced by the solid spherical monogenics. $\square$
+*Proof.* Quoted as standard. Multiplication by $\bar x$ raises the degree by one, and its interaction with $D$ differs from a scalar by terms of the same parity; the monogenic part of $\mathcal{P}_k$ is $\mathcal{M}_k$, the remainder is $\bar x$ times the polynomials of degree $k-1$, and the argument is an induction on the degree of the same triangular kind as the Fischer decomposition for the Laplacian, with $D$ in place of $\Delta$ and $\bar x$ in place of the radial factor. The decomposition is the Clifford analogue of the decomposition of harmonic polynomials into radial layers, with the solid harmonics replaced by the solid spherical monogenics.
 
 **Remark (the multiplier and the sign convention).** The operator that raises the degree in the decomposition is the conjugate variable $\bar x$, not $x$, and this is forced by the sign convention $D=\partial_0+\sum_{i\ge1}e_i\partial_i$ with $D\bar D=\Delta$: in the complex case $m=1$, where the monogenic polynomials of degree $d$ are the multiples of $z^d$, the piece $\bar x^{\,j}\mathcal{M}_{k-j}$ is the complex line spanned by $\bar z^{\,j}z^{k-j}$, and the $k+1$ lines of the decomposition are exactly the standard monomial basis of the homogeneous polynomials of degree $k$. The operator $\bar D=\partial_0-\sum_{i\ge1}e_i\partial_i$ plays the mirror role, and the decomposition can equally be written with $\bar D$ and the powers of $x$.
 
@@ -163,7 +163,7 @@ $$
 
 and the sum of the dimensions of the pieces equals $\dim\mathcal{S}\cdot\binom{m+k}{k}$, the dimension of $\mathcal{P}_k$. The explicit basis for a given $m$ is system-specific.
 
-*Proof.* Multiplication by $\bar x$ is injective on polynomials, because $\bar x$ is a unit of $A$ at every point where $x_0\neq0$ and a polynomial identity is determined by its values on a nonempty open set; hence each summand has dimension $\dim\mathcal{M}_{k-j}$ and the direct sum counts dimensions: $\dim\mathcal{P}_k=\sum_{i=0}^{k}\dim\mathcal{M}_i$. Subtracting the same identity with $k$ replaced by $k-1$ gives the recursion. $\square$
+*Proof.* Multiplication by $\bar x$ is injective on polynomials, because $\bar x$ is a unit of $A$ at every point where $x_0\neq0$ and a polynomial identity is determined by its values on a nonempty open set; hence each summand has dimension $\dim\mathcal{M}_{k-j}$ and the direct sum counts dimensions: $\dim\mathcal{P}_k=\sum_{i=0}^{k}\dim\mathcal{M}_i$. Subtracting the same identity with $k$ replaced by $k-1$ gives the recursion.
 
 **Example (the monogenic pieces in low dimension).** For $m=1$ and $\mathcal{S}=\mathbb{C}$, the monogenic polynomials of degree $d$ are the multiples of $z^d$, and the Fischer decomposition is the assertion that every homogeneous polynomial of degree $k$ in $z,\bar z$ has a unique expansion $\sum_{j=0}^{k}c_j\bar z^{\,j}z^{k-j}$ with $c_j\in\mathbb{C}$; this is the elementary identity $\mathcal{P}_k=\bigoplus_j\bar z^{\,j}\mathbb{C}z^{k-j}$. For $m\ge2$ the monogenic piece is larger, and the formula above computes its dimension from $\dim\mathcal{S}$; the classical tables of spherical monogenics give the explicit bases. The example shows the two features that the Clifford case adds to the complex one: several inequivalent monogenic polynomials of the same degree, and a dependence of the count on the value module.
 
@@ -183,7 +183,7 @@ $$
 f = \sum_{j=0}^{k-1}\bar x^{\,j}f_j .
 $$
 
-*Proof.* Quoted as standard (the Almansi theorem for the Cauchy–Riemann operator). The proof is an induction on $k$: the equation $D^kf=0$ is integrated along the rays from the origin, the primitive gained at each step being monogenic, and the representation is the result of iterating the step $k$ times; the star-shaped hypothesis is what makes the radial integration available, and the uniqueness of the decomposition follows from the Fischer decomposition on the homogeneous pieces. The representation is read with the conjugate variable, for the same sign reason as in that theorem: the solution $\bar z$ of $D^2f=0$ in the complex case has the representation $\bar z=0+\bar z\cdot1$ with monogenic data, and no representation of the form $f_0+zf_1$ with monogenic $f_0,f_1$, since $\bar z$ is not monogenic. $\square$
+*Proof.* Quoted as standard (the Almansi theorem for the Cauchy–Riemann operator). The proof is an induction on $k$: the equation $D^kf=0$ is integrated along the rays from the origin, the primitive gained at each step being monogenic, and the representation is the result of iterating the step $k$ times; the star-shaped hypothesis is what makes the radial integration available, and the uniqueness of the decomposition follows from the Fischer decomposition on the homogeneous pieces. The representation is read with the conjugate variable, for the same sign reason as in that theorem: the solution $\bar z$ of $D^2f=0$ in the complex case has the representation $\bar z=0+\bar z\cdot1$ with monogenic data, and no representation of the form $f_0+zf_1$ with monogenic $f_0,f_1$, since $\bar z$ is not monogenic.
 
 **Example (the polyharmonic parallel).** The classical Almansi theorem for the Laplacian states that a polyharmonic function of order $k$, $\Delta^kf=0$, has the representation $f=\sum_{j=0}^{k-1}|x|^{2j}h_j$ with $h_j$ harmonic. The Clifford theorem above is the same statement with the Laplacian replaced by $D$, the radial factor $|x|^{2j}$ replaced by $\bar x^{\,j}$, and the harmonic functions replaced by the monogenic ones; the factorisation $D\bar D=\Delta$ is what makes the two towers of equations comparable. The comparison is a clean instance of the general principle that a first-order elliptic operator whose square is the Laplacian carries the second-order theory inside it.
 

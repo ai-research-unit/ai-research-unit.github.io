@@ -65,7 +65,7 @@ $$
 
 where the $c_k$ are matrices and $y_{\mathrm{hom}}$ solves the homogeneous system; consequently the solution depends on the first $\nu-1$ derivatives of $q$, and the initial value $y(t_0)$ must satisfy $\nu-1$ consistency conditions for a solution to exist.
 
-*Proof.* Quoted as standard, and proved in the next section by the Kronecker form. The statement follows from the explicit representation $v = \sum_{k=0}^{\nu-1}(-N)^kq_2^{(k)}$ for the algebraic part; each differentiation of $q_2$ raises the order of the derivative appearing, and there are exactly $\nu-1$ terms because $N^\nu = 0$. $\square$
+*Proof.* Quoted as standard, and proved in the next section by the Kronecker form. The statement follows from the explicit representation $v = \sum_{k=0}^{\nu-1}(-N)^kq_2^{(k)}$ for the algebraic part; each differentiation of $q_2$ raises the order of the derivative appearing, and there are exactly $\nu-1$ terms because $N^\nu = 0$.
 
 ## The Linear Theory and the Kronecker Form
 
@@ -79,7 +79,7 @@ $$
 
 where $J$ is in Jordan form and $N$ is nilpotent with index $\nu$. This is the **Weierstrass–Kronecker form** of the pencil, and $\nu$ is the **index** of the pencil.
 
-*Proof.* Quoted as standard (the Weierstrass canonical form for regular matrix pencils). The proof is the classification of the modules over $\mathbb{K}[\lambda]$ given by the pencil, using the structure theorem of finitely generated modules over a principal ideal domain, in the form developed for the Jordan form in Part I; the nilpotent part $N$ is the obstruction to solving for $y'$. $\square$
+*Proof.* Quoted as standard (the Weierstrass canonical form for regular matrix pencils). The proof is the classification of the modules over $\mathbb{K}[\lambda]$ given by the pencil, using the structure theorem of finitely generated modules over a principal ideal domain, in the form developed for the Jordan form in Part I; the nilpotent part $N$ is the obstruction to solving for $y'$.
 
 **Theorem (solution of the linear system).** In the coordinates of the Weierstrass–Kronecker form, write $y = Q(u, v)$ and $q = P^{-1}(q_1, q_2)$. Then the system $Ey' + Ay = q$ is equivalent to the uncoupled system
 
@@ -101,11 +101,11 @@ $$
 v = \sum_{j=0}^{k-1}(-N)^jq_2^{(j)} + (-1)^kN^kv^{(k)} ,
 $$
 
-which is verified by substituting the case $k$ into $v = q_2 - Nv'$ to obtain the case $k+1$. At $k=\nu$ the last term vanishes because $N^\nu = 0$, giving the stated finite sum. $\square$
+which is verified by substituting the case $k$ into $v = q_2 - Nv'$ to obtain the case $k+1$. At $k=\nu$ the last term vanishes because $N^\nu = 0$, giving the stated finite sum.
 
 **Corollary (index of the constrained particle).** For the constrained particle with constraint $g(q)=0$ of rank $m$ and $G$ of full row rank, the differentiation index is $3$.
 
-*Proof.* Differentiating $g(q)=0$ once gives $Gv = 0$; differentiating again gives $Gv' + \dot Gv = 0$, and substituting $v' = f - G^{\mathrm{T}}\lambda$ gives $Gf - GG^{\mathrm{T}}\lambda + \dot Gv = 0$, which determines $\lambda$ because $GG^{\mathrm{T}}$ is invertible when $G$ has full row rank; differentiating a third time and eliminating $v''$ and $\dot v$ determines $\lambda'$ as a continuous function of $(q,v)$. Hence the constraint must be differentiated three times before the multiplier derivative is obtained, and the index is $3$. $\square$
+*Proof.* Differentiating $g(q)=0$ once gives $Gv = 0$; differentiating again gives $Gv' + \dot Gv = 0$, and substituting $v' = f - G^{\mathrm{T}}\lambda$ gives $Gf - GG^{\mathrm{T}}\lambda + \dot Gv = 0$, which determines $\lambda$ because $GG^{\mathrm{T}}$ is invertible when $G$ has full row rank; differentiating a third time and eliminating $v''$ and $\dot v$ determines $\lambda'$ as a continuous function of $(q,v)$. Hence the constraint must be differentiated three times before the multiplier derivative is obtained, and the index is $3$.
 
 ### Consistency and the Hidden Constraints
 
@@ -119,7 +119,7 @@ $$
 
 Hence through every consistent point with $y_2^0 = G(t_0,y_1^0)$ there passes a unique solution; the only consistency condition is the constraint itself.
 
-*Proof.* The implicit function theorem applied to $g$ in $y_2$ gives $G$ of class $C^1$ with $g(t,y_1,G(t,y_1))=0$; substituting into the differential equation gives an ordinary equation with a locally Lipschitz right-hand side, to which Picard–Lindelöf applies. Every solution of the original system satisfies this equation, and conversely a solution of the reduced equation with $y_2 = G(t,y_1)$ satisfies both the differential equation and the constraint. $\square$
+*Proof.* The implicit function theorem applied to $g$ in $y_2$ gives $G$ of class $C^1$ with $g(t,y_1,G(t,y_1))=0$; substituting into the differential equation gives an ordinary equation with a locally Lipschitz right-hand side, to which Picard–Lindelöf applies. Every solution of the original system satisfies this equation, and conversely a solution of the reduced equation with $y_2 = G(t,y_1)$ satisfies both the differential equation and the constraint.
 
 **Example (index one with a hidden constraint of a different kind).** The system $y_1' = y_2$, $0 = y_1 - t^2$ has the constraint $y_1 = t^2$ and the differential equation gives $y_2 = y_1' = 2t$, so the constraint itself already determines $y_2$ and there is no hidden constraint; the index is one. The initial value must satisfy $y_1(t_0) = t_0^2$ and $y_2(t_0) = 2t_0$, and then the solution $(y_1,y_2) = (t^2, 2t)$ is unique.
 
@@ -149,7 +149,7 @@ $$
 
 Thus a bound on the perturbation in the supremum norm alone does not bound the solution: the estimate requires control of the derivative of the perturbation.
 
-*Proof.* Substituting the perturbed constraint into the differentiated constraint $y_1' = -q_2' - \delta'$ and integrating gives $y_1$, and substituting into the original differential equation gives $y_2 = -y_1 - q_1 - q_2' - \delta'$. The estimate is the triangle inequality. $\square$
+*Proof.* Substituting the perturbed constraint into the differentiated constraint $y_1' = -q_2' - \delta'$ and integrating gives $y_1$, and substituting into the original differential equation gives $y_2 = -y_1 - q_1 - q_2' - \delta'$. The estimate is the triangle inequality.
 
 **Remark (why higher index is different from the ordinary theory).** For an ordinary equation a continuous right-hand side that is Lipschitz gives a solution as smooth as the equation permits, and a perturbation of size $\varepsilon$ in the equation gives an error of order $\varepsilon$ in the solution. For a differential-algebraic equation of index $\nu$, a solution requires the inhomogeneity to be $\nu-1$ times differentiable, and a perturbation of the constraint of size $\varepsilon$ can produce an error of order $\varepsilon$ in the solution only if the differentiated perturbations are also controlled. This is the sense in which the index measures the distance from the ordinary theory, and it is the reason the index rather than the dimension is the invariant that governs the qualitative behaviour.
 
@@ -165,7 +165,7 @@ $$
 
 has index two instead of three, and its solutions with $g(q(t_0))=0$ are exactly the solutions of the original system. Differentiating once more gives an index-one system.
 
-*Proof.* The differentiated constraint $Gv=0$ determines one relation among the variables; substituting it into the constraint $g=0$ and differentiating once more produces the multiplier equation, which determines $\lambda$; the index drops by one at each differentiation by definition. Solutions of the original system satisfy the differentiated constraints, and conversely a solution of the reduced system that begins on $g=0$ keeps $g=0$ because $\frac{d}{dt}g(q) = Gv = 0$. $\square$
+*Proof.* The differentiated constraint $Gv=0$ determines one relation among the variables; substituting it into the constraint $g=0$ and differentiating once more produces the multiplier equation, which determines $\lambda$; the index drops by one at each differentiation by definition. Solutions of the original system satisfy the differentiated constraints, and conversely a solution of the reduced system that begins on $g=0$ keeps $g=0$ because $\frac{d}{dt}g(q) = Gv = 0$.
 
 **Remark (the drift phenomenon).** A numerical method applied to the reduced system solves the differentiated constraint but not the original one, and the discrepancy, the **drift**, generally grows with time: the integration controls the equation that was imposed and leaves the discarded one to wander. This is why a differential-algebraic equation is not solved by a naive integration of a reduced ordinary system, and why the theory keeps the index as a property of the equation rather than of a reformulation.
 
@@ -181,7 +181,7 @@ $$
 
 are the stationarity equations of the action $\int \bigl(\tfrac12\|v\|^2 - V(q)\bigr)dt$ over the curves satisfying $g(q)=0$, the multiplier $\lambda$ being the Lagrange multiplier of the constraint. The stationarity conditions are a differential-algebraic system of index three.
 
-*Proof.* The Lagrange multiplier rule for the constrained variational problem gives $q'' = -V'(q) - G^{\mathrm{T}}\lambda$ together with $g(q)=0$; writing $v = q'$ gives the first-order form, and the computation of the index is the corollary above. $\square$
+*Proof.* The Lagrange multiplier rule for the constrained variational problem gives $q'' = -V'(q) - G^{\mathrm{T}}\lambda$ together with $g(q)=0$; writing $v = q'$ gives the first-order form, and the computation of the index is the corollary above.
 
 The full variational account — the Euler–Lagrange equations, the Legendre transform, the Hamiltonian form and the role of the multiplier — belongs to the articles of this Part on the calculus of variations and on Lagrangian and Hamiltonian systems, written in parallel. What matters here is that the differential-algebraic structure is not an artefact of a bad formulation: it is intrinsic to a variational problem with a holonomic constraint, and the index is the number of differentiations of the constraint needed to express the multiplier.
 

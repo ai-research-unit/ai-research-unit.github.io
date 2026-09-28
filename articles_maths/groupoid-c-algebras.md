@@ -73,7 +73,7 @@ $$
 ((f*g)*h)(x) = \sum_{r(y)=r(x)}\Bigl(\sum_{r(z)=r(y)}f(z)g(z^{-1}y)\Bigr)h(y^{-1}x) = \sum_{r(y)=r(x)}\sum_{r(z)=r(x)}f(z)g(z^{-1}y)h(y^{-1}x) = (f*(g*h))(x),
 $$
 
-since $r(z) = r(y) = r(x)$ in the composite sum and $z^{-1}y\cdot y^{-1}x = z^{-1}x$, the rearrangement of the finite double sum being legitimate by the compactness of the supports. The involution identities follow from $(x^{-1})^{-1} = x$, $(xy)^{-1} = y^{-1}x^{-1}$ and the groupoid axioms. $\square$
+since $r(z) = r(y) = r(x)$ in the composite sum and $z^{-1}y\cdot y^{-1}x = z^{-1}x$, the rearrangement of the finite double sum being legitimate by the compactness of the supports. The involution identities follow from $(x^{-1})^{-1} = x$, $(xy)^{-1} = y^{-1}x^{-1}$ and the groupoid axioms.
 
 **Example (the pair groupoid is matrix multiplication).** Let $G = X\times X$ be the pair groupoid of a finite set $X$ with $n$ elements, with the discrete topology. A function $f$ on $G$ is a matrix $F_{xy} = f(x,y)$, the convolution formula reads
 
@@ -113,7 +113,7 @@ $$
 
 which is an isomorphism when $G$ is amenable, and $C_c(G)$ is dense in both. If $G$ is a discrete group the two algebras are $C^*(G)$ and $C^*_r(G)$ of *Operator Algebras*, and if $G = X\rtimes H$ is a transformation groupoid of a discrete group $H$, then $C^*(G) \cong C_0(X)\rtimes H$ and $C^*_r(G) \cong C_0(X)\rtimes_r H$.
 
-**Proof.** Separability is the second countability and the density of $C_c$ by construction; the regular representation is a representation of $C_c(G)$ by the associativity of the convolution, so it induces the quotient map by the universal property. The identification with the crossed products is the standard correspondence between covariant representations of $(C_0(X),H)$ and representations of the transformation groupoid, in which a covariant pair corresponds to the representation of $C_c(X\rtimes H)$ whose value on a function of the form $f(g,x)$ is the sum $\sum_g\pi(f_g)u_g$. Amenability and the coincidence of the full and reduced algebras are treated below. $\square$
+**Proof.** Separability is the second countability and the density of $C_c$ by construction; the regular representation is a representation of $C_c(G)$ by the associativity of the convolution, so it induces the quotient map by the universal property. The identification with the crossed products is the standard correspondence between covariant representations of $(C_0(X),H)$ and representations of the transformation groupoid, in which a covariant pair corresponds to the representation of $C_c(X\rtimes H)$ whose value on a function of the form $f(g,x)$ is the sum $\sum_g\pi(f_g)u_g$. Amenability and the coincidence of the full and reduced algebras are treated below.
 
 ---
 
@@ -125,7 +125,7 @@ which is an isomorphism when $G$ is amenable, and $C_c(G)$ is dense in both. If 
 
 **Theorem (Renault).** Let $G$ be a second countable locally compact étale groupoid. If $G$ is amenable then the quotient map $C^*(G) \to C^*_r(G)$ is an isomorphism and $C^*_r(G)$ is nuclear. If $G$ is a group, amenability of the groupoid is amenability of the group, and the statement reduces to the equality $C^*(G) = C^*_r(G)$ and nuclearity of the group algebra.
 
-**Proof.** The sequence of the definition is used to construct a net of completely positive contractions from $C^*(G)$ to $C^*_r(G)$ that is asymptotically the quotient map in the point-norm topology, from which injectivity of the quotient map and nuclearity of the reduced algebra follow; this is Renault's theorem, quoted as standard. $\square$
+**Proof.** The sequence of the definition is used to construct a net of completely positive contractions from $C^*(G)$ to $C^*_r(G)$ that is asymptotically the quotient map in the point-norm topology, from which injectivity of the quotient map and nuclearity of the reduced algebra follow; this is Renault's theorem, quoted as standard.
 
 **Example (equivalence relations and hyperfiniteness).** A countable equivalence relation $R$ on a standard probability space is amenable as a groupoid exactly when it is hyperfinite in the sense of the Feldman–Moore theory, and for an amenable $R$ the reduced algebra $C^*_r(R)$ is the approximately finite-dimensional algebra of the relation. The full and reduced algebras of a non-amenable relation differ, and the difference is measured by the same kinds of invariants as for non-amenable groups.
 
@@ -133,11 +133,11 @@ which is an isomorphism when $G$ is amenable, and $C_c(G)$ is dense in both. If 
 
 **Theorem (simplicity; Renault).** Let $G$ be a second countable locally compact étale groupoid which is topologically principal. Then $C^*_r(G)$ is simple if and only if $G$ is minimal, that is, if and only if the only open subsets $U \subseteq G^{(0)}$ with $r^{-1}(U) = s^{-1}(U)$ are $\emptyset$ and $G^{(0)}$. If $G$ is effective, the same conclusion holds with effectiveness in place of topological principality.
 
-**Proof.** The ideal structure of $C^*_r(G)$ is controlled by the **open invariant subsets** of $G^{(0)}$: for each such $U$ the closure of $C_c(r^{-1}(U))$ is a closed two-sided ideal of $C^*_r(G)$, and for a topologically principal groupoid every ideal arises in this way (the ideal structure theorem of Renault). Minimality says that there are no nontrivial open invariant subsets, whence simplicity. The theorem is Renault's; it is quoted as standard. $\square$
+**Proof.** The ideal structure of $C^*_r(G)$ is controlled by the **open invariant subsets** of $G^{(0)}$: for each such $U$ the closure of $C_c(r^{-1}(U))$ is a closed two-sided ideal of $C^*_r(G)$, and for a topologically principal groupoid every ideal arises in this way (the ideal structure theorem of Renault). Minimality says that there are no nontrivial open invariant subsets, whence simplicity. The theorem is Renault's; it is quoted as standard.
 
 **Corollary.** For a countable row-finite graph $E$ with no sinks, the minimality of the graph groupoid is cofinality and the effectiveness is the exit condition (L); the simplicity criterion for $C^*(E)$ of *Graph C*-Algebras* is therefore the groupoid simplicity theorem in the case of $G_E$. Likewise, for a discrete group acting minimally and effectively on a locally compact space, the crossed product $C_0(X)\rtimes_r H$ is simple.
 
-**Proof.** The translation of the graph conditions into minimality and effectiveness of the graph groupoid is the standard dictionary; the group case is the classical theorem that the reduced crossed product of a minimal and topologically free action is simple. $\square$
+**Proof.** The translation of the graph conditions into minimality and effectiveness of the graph groupoid is the standard dictionary; the group case is the classical theorem that the reduced crossed product of a minimal and topologically free action is simple.
 
 ### Cartan Subalgebras and the Reconstruction Theorem
 
@@ -153,7 +153,7 @@ which is an isomorphism when $G$ is amenable, and $C_c(G)$ is dense in both. If 
 
 **Theorem (Renault's reconstruction).** Let $G$ be a second countable locally compact étale groupoid which is topologically principal. Then $C_0(G^{(0)})$ is a Cartan subalgebra of $C^*_r(G)$, and the normalizer of $C_0(G^{(0)})$ is the set of continuous sections of a twist $\Sigma$ over $G$. Conversely, every separable $\mathrm{C}^*$-algebra $A$ containing a Cartan subalgebra $B$ is isomorphic to $C^*_r(G,\Sigma)$ for a second countable locally compact étale groupoid $G$ and a twist $\Sigma$ over $G$ with unit space $G^{(0)}$ corresponding to $B$.
 
-**Proof.** The first statement is a direct computation: the functions supported on the unit space form a masa in $C^*_r(G)$ because the groupoid is topologically principal, they carry an approximate unit given by an approximate unit of $C_0(G^{(0)})$, the normalizer consists of the functions whose support meets every fibre in at most one point, and the conditional expectation is the restriction to the unit space, which is faithful. The converse is Renault's reconstruction theorem for Cartan subalgebras; the twist is a $\mathbb{T}$-groupoid extension of $G$ encoding the obstruction to the normalizer's forming a groupoid. It is quoted as standard. $\square$
+**Proof.** The first statement is a direct computation: the functions supported on the unit space form a masa in $C^*_r(G)$ because the groupoid is topologically principal, they carry an approximate unit given by an approximate unit of $C_0(G^{(0)})$, the normalizer consists of the functions whose support meets every fibre in at most one point, and the conditional expectation is the restriction to the unit space, which is faithful. The converse is Renault's reconstruction theorem for Cartan subalgebras; the twist is a $\mathbb{T}$-groupoid extension of $G$ encoding the obstruction to the normalizer's forming a groupoid. It is quoted as standard.
 
 **Remark.** The reconstruction theorem is the rigidity statement of the theory: a groupoid $\mathrm{C}^*$-algebra is by definition an algebra with a distinguished abelian subalgebra, and the theorem says that the Cartan subalgebra determines the groupoid up to the appropriate equivalence, so the algebra remembers the groupoid. It is the groupoid analogue of Gelfand duality, and it is the reason the groupoid model is used both to construct algebras and to classify them. The classification theory itself, and the invariants used, belong in this Part.
 
@@ -163,7 +163,7 @@ which is an isomorphism when $G$ is amenable, and $C_c(G)$ is dense in both. If 
 
 **Theorem (Muhly–Renault–Williams).** Equivalent second countable locally compact groupoids have Morita equivalent reduced $\mathrm{C}^*$-algebras: if $G$ and $H$ are equivalent, then $C^*_r(G)$ and $C^*_r(H)$ are Morita equivalent. In particular, a groupoid equivalent to a group bundle or to a transformation groupoid has an algebra Morita equivalent to the corresponding crossed product.
 
-**Proof.** A groupoid equivalence $Z$ carries a $C^*_r(G)$-$C^*_r(H)$-imprimitivity bimodule, whose construction is the groupoid form of the imprimitivity bimodule of Green's theorem; the axioms of a Morita equivalence are verified using the freeness and properness of the actions. It is quoted as standard. $\square$
+**Proof.** A groupoid equivalence $Z$ carries a $C^*_r(G)$-$C^*_r(H)$-imprimitivity bimodule, whose construction is the groupoid form of the imprimitivity bimodule of Green's theorem; the axioms of a Morita equivalence are verified using the freeness and properness of the actions. It is quoted as standard.
 
 ---
 

@@ -20,8 +20,8 @@ $$
 \qquad
 \mathcal{M}(\tilde k)=0 \iff \tilde k\bar{\tilde k}=-m^2 \iff E_{\mathbf p}^2=\mathbf p^2+m^2 ,
 $$
-with the wave biquaternion $\tilde k=iEe_0+\mathbf p$ and its quaternion conjugate $\bar{\tilde k}=iEe_0-\mathbf p$. The product is central, $\tilde k\bar{\tilde k}=(-E^2+\mathbf p^2)e_0=-p^2e_0$, so the mass shell is a **level set of the norm form**. Amputation is multiplication by the inverse propagator, the central mass-shell operator $\mathcal{M}(\tilde k)=\tilde k\bar{\tilde k}+m^2=m^2-p^2$, with $D_F=1/\mathcal{M}(\tilde k)$ up to the $i\epsilon$; it is therefore a central scalar operation for a scalar field, and it commutes with everything.
-- **Established (algebra).** The wave-function renormalization is the residue at the norm-form pole,
+with the wave biquaternion $\tilde k=iEe_0+\mathbf p$ and its quaternion conjugate $\bar{\tilde k}=iEe_0-\mathbf p$. The product is central, $\tilde k\bar{\tilde k}=(-E^2+\mathbf p^2)e_0=-p^2e_0$, so the mass shell is a **level set of the biquaternion norm**. Amputation is multiplication by the inverse propagator, the central mass-shell operator $\mathcal{M}(\tilde k)=\tilde k\bar{\tilde k}+m^2=m^2-p^2$, with $D_F=1/\mathcal{M}(\tilde k)$ up to the $i\epsilon$; it is therefore a central scalar operation for a scalar field, and it commutes with everything.
+- **Established (algebra).** The wave-function renormalization is the residue at the biquaternion-norm pole,
 $$
 Z = \lim_{p^2\to m^2}\big(m^2-p^2\big)\,D_F(p^2),
 $$
@@ -86,14 +86,14 @@ Multiplying a correlation function by $\mathcal{M}(\tilde k)$ on a leg is precis
 
 **Centrality and commutation.** Because $\mathcal{M}(\tilde k)$ is central — it is a complex number times $e_0$ — the amputation commutes with the algebra's left and right multiplications and does not disturb any internal index. For a scalar field this means the amputation acts identically on both sectors and on all components; the operator can be moved freely past vertex factors, and the reduction is commutative with the internal symmetry structure. This is the algebraic statement behind the factorized kinematics of the next-but-one section.
 
-**The pole set is a norm-form level set.** The mass shell $\mathcal{M}(\tilde k)=0$ is the statement $\tilde k\bar{\tilde k}=-m^2$, a level set of the norm form. For $m=0$ it is the zero set of the norm form, i.e. the zero-divisor cone, the light cone of *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*. The reduction formula thus places the external legs on a level set of the same norm form that determines the algebra's singular elements, the metric, and the zero-divisor cone; the mass shell and the light cone are the $m\ne0$ and $m=0$ members of one family.
+**The pole set is a biquaternion-norm level set.** The mass shell $\mathcal{M}(\tilde k)=0$ is the statement $\tilde k\bar{\tilde k}=-m^2$, a level set of the biquaternion norm. For $m=0$ it is the zero set of the biquaternion norm, i.e. the zero-divisor cone, the light cone of *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*. The reduction formula thus places the external legs on a level set of the same biquaternion norm that determines the algebra's singular elements, the metric, and the zero-divisor cone; the mass shell and the light cone are the $m\ne0$ and $m=0$ members of one family.
 
 **Verification.** With $m=0.7$, $\mathbf p=(0.3,-0.9,1.1)$ and $E_{\mathbf p}=\sqrt{\mathbf p^2+m^2}=1.6124515497$, the wave biquaternion gives
 $$
 \tilde k\bar{\tilde k} = -E^2+\mathbf p^2 = -0.490000
 = -m^2 ,
 $$
-agreeing with $-m^2=-0.49$ to machine precision. The on-shell condition and the norm-form statement are thus the same equation, checked on a momentum not used to construct any other result.
+agreeing with $-m^2=-0.49$ to machine precision. The on-shell condition and the biquaternion-norm statement are thus the same equation, checked on a momentum not used to construct any other result.
 
 ## The External Wavefunctions
 
@@ -117,7 +117,7 @@ which is unaffected by the algebra; it is a property of the Fourier transform. I
 
 ## Wave-Function Renormalization as a Residue
 
-The factor $Z$ that LSZ requires is the residue of the propagator at the norm-form pole, and the framework's account of it is the residue of a central scalar function.
+The factor $Z$ that LSZ requires is the residue of the propagator at the biquaternion-norm pole, and the framework's account of it is the residue of a central scalar function.
 
 **Definition.** Writing the momentum-space two-point function near the mass shell as
 $$
@@ -140,7 +140,7 @@ with $\mathcal{M}=m^2-p^2$, the residue was computed from both sides of the pole
 $$
 \lim_{\delta\to0^\pm}\big(\delta\big)\,D(\delta) = 2.3000004, \quad 2.2999996 ,
 $$
-approaching $Z=2.3$ as the step is refined. The residue is insensitive to the regular part and to the direction of approach, as it must be; the framework's contribution is that the pole is the norm-form condition and the residue is central.
+approaching $Z=2.3$ as the step is refined. The residue is insensitive to the regular part and to the direction of approach, as it must be; the framework's contribution is that the pole is the biquaternion-norm condition and the residue is central.
 
 **Sector splitting of $Z$.** For a scalar field whose self-energy is sector-diagonal, the two-point function is the sum of the sector two-point functions, $D_F=D_{F-}+D_{F+}$, since the cross terms vanish by the sector orthogonality of the real form; each sector carries its own residue, and the total residue is the sum $Z=Z_-+Z_+$. Each external leg then carries a $\sqrt{Z_\pm}$ from the sector it propagates in, and the amplitude's normalization is the product of those factors along the legs. For a non-central self-energy — a fermion loop coupling the chiralities — $Z$ does not split and the residue is a matrix in the internal space.
 
@@ -218,9 +218,9 @@ The residue of the pole is thus the one-particle weight, and the continuum's thr
 ## What Is Established and What Is Interpretation
 
 **Established (algebra).**
-- The mass shell is the norm-form level set $\tilde k\bar{\tilde k}=-m^2$, equivalently $\mathcal{M}(\tilde k)=\tilde k\bar{\tilde k}+m^2=0$; checked numerically ($-0.490000$ versus $-m^2=-0.49$).
+- The mass shell is the biquaternion-norm level set $\tilde k\bar{\tilde k}=-m^2$, equivalently $\mathcal{M}(\tilde k)=\tilde k\bar{\tilde k}+m^2=0$; checked numerically ($-0.490000$ versus $-m^2=-0.49$).
 - Amputation is multiplication by the central mass-shell operator $\mathcal{M}(\tilde k)$, the inverse of the propagator; on shell it vanishes.
-- The wave-function renormalization is the residue at the norm-form pole; checked for a model propagator ($Z=2.3$ recovered from both sides) and for the free field ($Z=1$, amputated two-point function $1$).
+- The wave-function renormalization is the residue at the biquaternion-norm pole; checked for a model propagator ($Z=2.3$ recovered from both sides) and for the free field ($Z=1$, amputated two-point function $1$).
 - For a scalar field the reduction's kinematics is block diagonal with respect to the sector split; for a spinor field it is not, because the amputation operator is not central.
 - The one-mode truncation gives the exact free result $Z=1$ with the correlation functions the minimal idempotents.
 
@@ -228,7 +228,7 @@ The residue of the pole is thus the one-particle weight, and the continuum's thr
 - The LSZ theorem itself: the asymptotic conditions, adiabatic switching, the derivation from the interpolating field, the $\sqrt Z$ factors, the momentum-conservation delta functions, and the spinor reduction formula.
 
 **Interpretation.**
-- Reading the mass shell as a level set of the norm form, so that the massless case is the zero-divisor cone, is the framework's own identification; it is consistent with the material-sector article.
+- Reading the mass shell as a level set of the biquaternion norm, so that the massless case is the zero-divisor cone, is the framework's own identification; it is consistent with the material-sector article.
 - The factorization in the scalar case is the LSZ counterpart of the functional-integral factorization; stated as such.
 
 **Open.**
@@ -237,7 +237,7 @@ The residue of the pole is thus the one-particle weight, and the continuum's thr
 
 ## Summary
 
-The LSZ reduction in biquaternionic form is the standard reduction with the framework's mass-shell symbol. The mass shell is the norm-form level set
+The LSZ reduction in biquaternionic form is the standard reduction with the framework's mass-shell symbol. The mass shell is the biquaternion-norm level set
 $$
 \tilde k\bar{\tilde k}=-m^2
 \qquad\Longleftrightarrow\qquad
@@ -245,7 +245,7 @@ $$
 \qquad
 \tilde k\bar{\tilde k}=(-E^2+\mathbf p^2)e_0=-p^2e_0 ,
 $$
-verified as $-0.490000=-m^2$ for $m=0.7$, $\mathbf p=(0.3,-0.9,1.1)$. Amputation is multiplication by the central mass-shell operator $\mathcal{M}(\tilde k)$, the inverse of the propagator $D_F=1/(\mathcal{M}-i\epsilon)$; the wave-function renormalization is the residue at the norm-form pole, checked to give $Z=2.3$ for a model propagator and $Z=1$ for the free field, where the amputated two-point function is exactly $1$. For a scalar biquaternion field the reduction's kinematics is block diagonal with respect to the sector split; for a spinor field the matrix amputation $\not p-m$ is non-central, the legs are the spinors $u^{(r)},v^{(r)}$ with $\sum_r u^{(r)}\bar u^{(r)}=\not p+m$, and the reduction does not factor.
+verified as $-0.490000=-m^2$ for $m=0.7$, $\mathbf p=(0.3,-0.9,1.1)$. Amputation is multiplication by the central mass-shell operator $\mathcal{M}(\tilde k)$, the inverse of the propagator $D_F=1/(\mathcal{M}-i\epsilon)$; the wave-function renormalization is the residue at the biquaternion-norm pole, checked to give $Z=2.3$ for a model propagator and $Z=1$ for the free field, where the amputated two-point function is exactly $1$. For a scalar biquaternion field the reduction's kinematics is block diagonal with respect to the sector split; for a spinor field the matrix amputation $\not p-m$ is non-central, the legs are the spinors $u^{(r)},v^{(r)}$ with $\sum_r u^{(r)}\bar u^{(r)}=\not p+m$, and the reduction does not factor.
 
 The reduction theorem itself — the asymptotic conditions, the adiabatic switching, the $\sqrt Z$ normalization — is standard and transcribed. The algebra supplies the mass-shell symbol, the central-phase plane waves, and the internal module; the field-level S-matrix and its reduction live on the Fock module and not in $\mathbb{B}$.
 
@@ -255,7 +255,7 @@ The reduction theorem itself — the asymptotic conditions, the adiabatic switch
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
 | $\tilde k=iEe_0+\mathbf p$, $\bar{\tilde k}=iEe_0-\mathbf p$ | Wave biquaternion and its quaternion conjugate |
-| $\tilde k\bar{\tilde k}=(-E^2+\mathbf p^2)e_0=-p^2e_0$ | Central norm form; $p^2=E^2-\mathbf p^2$ |
+| $\tilde k\bar{\tilde k}=(-E^2+\mathbf p^2)e_0=-p^2e_0$ | Central biquaternion norm; $p^2=E^2-\mathbf p^2$ |
 | $\mathcal{M}(\tilde k)=\tilde k\bar{\tilde k}+m^2=m^2-p^2$ | Mass-shell operator (vanishing defines the shell) |
 | $\mathcal{M}(\tilde k)=0\iff E_{\mathbf p}^2=\mathbf p^2+m^2$ | Mass shell |
 | $\Box=\tilde\nabla\bar{\tilde\nabla}=\partial_{ict}^2+\Delta$ | d'Alembertian, series convention |
@@ -282,4 +282,4 @@ The reduction theorem itself — the asymptotic conditions, the adiabatic switch
 - R. Haag, *Local Quantum Physics* (Springer, 1996), for the field-theoretic setting in which the asymptotic conditions are formulated.
 - J. Zinn-Justin, *Quantum Field Theory and Critical Phenomena* (Oxford, 2002), for the reduction and the residue of the propagator.
 - P. Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the spinor module on which the matrix amputation acts.
-- Companion articles: *The S-Matrix in Biquaternionic Form*, for the S-matrix and the external data whose reduction this article supplies; *The Feynman Propagator in Biquaternionic Form*, for the wave biquaternion, the mass shell, and the spinors; *Fock Space and Creation/Annihilation Operators in Biquaternionic Form*, for the one-particle states and the one-mode truncation; *The Functional Integral in Biquaternionic Form* and *The Generating Functional and the Effective Action in Biquaternionic Form*, for the correlation functions being reduced; *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*, for the norm form and the zero-divisor cone.
+- Companion articles: *The S-Matrix in Biquaternionic Form*, for the S-matrix and the external data whose reduction this article supplies; *The Feynman Propagator in Biquaternionic Form*, for the wave biquaternion, the mass shell, and the spinors; *Fock Space and Creation/Annihilation Operators in Biquaternionic Form*, for the one-particle states and the one-mode truncation; *The Functional Integral in Biquaternionic Form* and *The Generating Functional and the Effective Action in Biquaternionic Form*, for the correlation functions being reduced; *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*, for the biquaternion norm and the zero-divisor cone.

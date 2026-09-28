@@ -27,7 +27,7 @@ $$
 f(x) = ax + b, \qquad a, b \in \mathbb{H}.
 $$
 
-*Proof.* Writing the differential as left multiplication by $f'(x)$ and comparing with the Fréchet derivative of $f$ expressed in the four real coordinates, one obtains the quaternionic Cauchy–Riemann equations; these force every second partial derivative of every component to vanish. Hence each component is affine in the coordinates, and the multiplicative constraint then forces the matrix of the linear part to be left multiplication by a quaternion and the constant part to be an arbitrary quaternion. $\square$
+*Proof.* Writing the differential as left multiplication by $f'(x)$ and comparing with the Fréchet derivative of $f$ expressed in the four real coordinates, one obtains the quaternionic Cauchy–Riemann equations; these force every second partial derivative of every component to vanish. Hence each component is affine in the coordinates, and the multiplicative constraint then forces the matrix of the linear part to be left multiplication by a quaternion and the constant part to be an arbitrary quaternion.
 
 **Corollary.** Over $\mathbb{H}$ the requirement that the differential be left multiplication by an element of $A$ is too strong: the only such functions on a domain are the affine ones. The same collapse occurs over each real algebra for which the rigidity theorem holds. A theory rich enough to be useful must therefore weaken the differentiability requirement, and the weakening adopted in the subject is to require the vanishing of a fixed first-order operator.
 
@@ -59,7 +59,7 @@ $$
 f'(x) = \sum_{n \geq 1} n\,a_n (x - x_0)^{n-1}.
 $$
 
-*Proof.* Since $C$ is commutative, $(x_0 + h)^n - x_0^n = n x_0^{n-1}h + O(\|h\|^2)$ for $h \in C$, by the binomial theorem, and the terms of order $\geq 2$ contribute $O(\|h\|^2)$ in the norm by submultiplicativity. Uniform convergence on closed subballs of the differentiated series gives termwise differentiation, so the displayed series is the derivative. $\square$
+*Proof.* Since $C$ is commutative, $(x_0 + h)^n - x_0^n = n x_0^{n-1}h + O(\|h\|^2)$ for $h \in C$, by the binomial theorem, and the terms of order $\geq 2$ contribute $O(\|h\|^2)$ in the norm by submultiplicativity. Uniform convergence on closed subballs of the differentiated series gives termwise differentiation, so the displayed series is the derivative.
 
 **Example ($A = \mathbb{H}$, $C = \mathbb{R}[u] \cong \mathbb{C}$).** Let $u \in \mathbb{H}$ satisfy $u^2 = -1$, so that $C = \mathbb{R}[u]$ is isomorphic to $\mathbb{C}$; for instance $C = \mathbb{R}[e_1]$. Then the $C$-holomorphic functions with values in $\mathbb{H}$ are exactly the holomorphic functions of the complex variable $x \in C$ with coefficients in $\mathbb{H}$, they satisfy the Cauchy–Riemann equations in the two coordinates of $C$, they obey the classical Cauchy theorem for $\mathbb{H}$-valued integrals along curves in $C$, and they form a class as large as the holomorphic functions with values in $\mathbb{H} \otimes_\mathbb{R} \mathbb{C} \cong \mathbb{B} \cong M_2(\mathbb{C})$ (*Biquaternion Algebra ($\mathbb{B}$)*). This is the sense in which complex analysis survives verbatim inside a non-commutative algebra.
 
@@ -131,7 +131,7 @@ $$
 -\sum_{j,k} B_jB_k \partial_j\partial_k = -\sum_k B_k^2 \partial_k^2 - \sum_{j \neq k} B_jB_k \partial_j\partial_k,
 $$
 
-and since $B_k^2 = -1$ the first term is $+\sum_k \partial_k^2$, while the second cancels pairwise because $B_jB_k = -B_kB_j$. The computation for $\bar D D$ is identical. $\square$
+and since $B_k^2 = -1$ the first term is $+\sum_k \partial_k^2$, while the second cancels pairwise because $B_jB_k = -B_kB_j$. The computation for $\bar D D$ is identical.
 
 The relations $B_j B_k + B_k B_j = -2\delta_{jk}$ are exactly the defining relations of a Clifford algebra, so the factorisation of the Laplacian requires the coefficients of $D$ to generate a Clifford subalgebra of $A$. This is the structural input that hypercomplex analysis needs: a general finite-dimensional algebra need not contain one, and the systems of categories 26 to 29 are those built from Clifford algebras and their relatives.
 
@@ -162,7 +162,7 @@ $$
 D(fa) = \sum_\alpha B_\alpha (\partial_\alpha f) a = (Df)a = 0, \qquad D(af) = \sum_\alpha B_\alpha a\,\partial_\alpha f = a \sum_\alpha B_\alpha \partial_\alpha f = a\,Df = 0
 $$
 
-in the second line when $B_\alpha a = a B_\alpha$ for every $\alpha$. $\square$
+in the second line when $B_\alpha a = a B_\alpha$ for every $\alpha$.
 
 **Proposition (Leibniz rule; failure of closure under products).** For $C^1$ functions $f, g$ on $\Omega$,
 
@@ -172,7 +172,7 @@ $$
 
 since the pointwise product is a derivation in each variable. If the coefficients $B_\alpha$ are central, the second term is $f\,(Dg)$, so the product of two left regular functions is again left regular. If the coefficients are not central, $D(fg)$ need not vanish for left regular $f$ and $g$, and the left regular functions do not form an algebra.
 
-*Proof.* The derivative of a product of $A$-valued functions is the sum of the two one-sided products, $\partial_\alpha(fg) = (\partial_\alpha f)g + f(\partial_\alpha g)$, and $D$ is $A$-linear in the values. The first term is $(Df)g$ because $g$ does not depend on the summation index $\alpha$. For central coefficients, $\sum_\alpha B_\alpha f (\partial_\alpha g) = f \sum_\alpha B_\alpha \partial_\alpha g = f\,Dg$. $\square$
+*Proof.* The derivative of a product of $A$-valued functions is the sum of the two one-sided products, $\partial_\alpha(fg) = (\partial_\alpha f)g + f(\partial_\alpha g)$, and $D$ is $A$-linear in the values. The first term is $(Df)g$ because $g$ does not depend on the summation index $\alpha$. For central coefficients, $\sum_\alpha B_\alpha f (\partial_\alpha g) = f \sum_\alpha B_\alpha \partial_\alpha g = f\,Dg$.
 
 ## The Obstructions
 
@@ -223,19 +223,19 @@ $$
 \Delta f = \bar D D f = \bar D (0) = 0
 $$
 
-by the factorisation, and the Laplacian of an $A$-valued function is the $A$-valued function whose components are the Laplacians of the components. $\square$
+by the factorisation, and the Laplacian of an $A$-valued function is the $A$-valued function whose components are the Laplacians of the components.
 
 **Theorem (analyticity).** Every left regular function on $\Omega$ is real-analytic. Consequently, if two left regular functions on a domain $\Omega$ agree on a subset with an accumulation point in $\Omega$, they agree on all of $\Omega$ (the **identity theorem**).
 
-*Proof.* The operator $D$ is elliptic with smooth coefficients, so every solution of $Df = 0$ is smooth and, by analytic hypoellipticity of elliptic operators, real-analytic; the identity theorem for real-analytic functions then applies on the connected set $\Omega$. $\square$
+*Proof.* The operator $D$ is elliptic with smooth coefficients, so every solution of $Df = 0$ is smooth and, by analytic hypoellipticity of elliptic operators, real-analytic; the identity theorem for real-analytic functions then applies on the connected set $\Omega$.
 
 **Theorem (maximum principle).** If $f$ is left regular on a domain $\Omega$ and the Euclidean norm $\|f\|$ attains its maximum at an interior point of $\Omega$, then $f$ is constant.
 
-*Proof.* Each component of $f$ is harmonic by the previous theorem, so $\|f\|^2 = \sum_\alpha (f^\alpha)^2$ is a sum of squares of harmonic functions. A sum of squares of harmonic functions is subharmonic: for each squared term, $\Delta (u^2) = 2|\nabla u|^2 + 2u\Delta u = 2|\nabla u|^2 \geq 0$, and a sum of subharmonic functions is subharmonic. A subharmonic function that attains its maximum in the interior of a connected domain is constant, so $\|f\|^2$ is constant, and from $\Delta \|f\|^2 = 2\sum_\alpha |\nabla f^\alpha|^2 = 0$ each component is constant. $\square$
+*Proof.* Each component of $f$ is harmonic by the previous theorem, so $\|f\|^2 = \sum_\alpha (f^\alpha)^2$ is a sum of squares of harmonic functions. A sum of squares of harmonic functions is subharmonic: for each squared term, $\Delta (u^2) = 2|\nabla u|^2 + 2u\Delta u = 2|\nabla u|^2 \geq 0$, and a sum of subharmonic functions is subharmonic. A subharmonic function that attains its maximum in the interior of a connected domain is constant, so $\|f\|^2$ is constant, and from $\Delta \|f\|^2 = 2\sum_\alpha |\nabla f^\alpha|^2 = 0$ each component is constant.
 
 **Theorem (Liouville).** If $f$ is left regular on all of $A$ and $\|f\|$ is bounded, then $f$ is constant.
 
-*Proof.* Each component of $f$ is a bounded harmonic function on all of $\mathbb{R}^m$, hence constant by Liouville's theorem for harmonic functions. $\square$
+*Proof.* Each component of $f$ is a bounded harmonic function on all of $\mathbb{R}^m$, hence constant by Liouville's theorem for harmonic functions.
 
 Both proofs are the honest generalisation of the complex-analytic arguments: the maximum principle and Liouville follow for regular functions because regularity reduces to harmonicity of the components.
 
@@ -245,7 +245,7 @@ Both proofs are the honest generalisation of the complex-analytic arguments: the
 
 **Theorem (existence of a fundamental solution).** Every nonzero constant-coefficient differential operator on $\mathbb{R}^m$ has a fundamental solution. In particular every generalised Cauchy–Riemann operator $D$ has one, and the kernel depends on the coefficients $B_\alpha$.
 
-*Proof.* This is the Malgrange–Ehrenpreis theorem; the case at hand is the constant-coefficient case, where the fundamental solution may be taken as a finite combination of distributions of the form $P(\xi)^{-1}$ under the Fourier transform, with the singularities of the symbol handled by a suitable cut-off. $\square$
+*Proof.* This is the Malgrange–Ehrenpreis theorem; the case at hand is the constant-coefficient case, where the fundamental solution may be taken as a finite combination of distributions of the form $P(\xi)^{-1}$ under the Fourier transform, with the singularities of the symbol handled by a suitable cut-off.
 
 **Theorem (Cauchy–Pompeiu formula).** Let $\Omega \subseteq A$ be a bounded domain with smooth boundary $\partial\Omega$, oriented by the outward normal, and let $E$ be a Cauchy kernel for $D$. Then for $f$ of class $C^1$ on $\bar\Omega$ and $x \in \Omega$,
 
@@ -287,7 +287,7 @@ $$
 \sigma(Df)(x) = \sigma\Bigl(\sum_\alpha B_\alpha \partial_\alpha f(x)\Bigr) = \sum_\alpha \sigma(B_\alpha)\,\partial_\alpha(\sigma \circ f)(x) = ((\sigma\cdot D)(\sigma\circ f))(x),
 $$
 
-using $\partial_\alpha(\sigma\circ f) = \sigma(\partial_\alpha f)$ in the last step by linearity of $\sigma$. Hence $Df = 0$ if and only if $(\sigma\cdot D)(\sigma \circ f) = 0$. $\square$
+using $\partial_\alpha(\sigma\circ f) = \sigma(\partial_\alpha f)$ in the last step by linearity of $\sigma$. Hence $Df = 0$ if and only if $(\sigma\cdot D)(\sigma \circ f) = 0$.
 
 **Corollary.** The symmetry group of a hypercomplex system is the stabiliser
 

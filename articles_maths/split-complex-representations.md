@@ -129,19 +129,19 @@ $$
 Z \cdot v = (a - b) v, \qquad v \in V_-,
 $$
 
-so $V_-$ is a direct sum of copies of $\rho_-$. $\square$
+so $V_-$ is a direct sum of copies of $\rho_-$.
 
 ### Irreducible Representations
 
 **Theorem.** The irreducible real representations of $\mathbb{D}$ are exactly $\rho_+$ and $\rho_-$, up to isomorphism.
 
-**Proof.** Any irreducible representation is a quotient of the regular representation, hence a direct sum of copies of $\rho_+$ and $\rho_-$. Since it is irreducible, it must be a single copy of one of them. $\square$
+**Proof.** Any irreducible representation is a quotient of the regular representation, hence a direct sum of copies of $\rho_+$ and $\rho_-$. Since it is irreducible, it must be a single copy of one of them.
 
 ### Schur's Lemma
 
 **Theorem (Schur).** Every $\mathbb{D}$-linear endomorphism of an irreducible real representation of $\mathbb{D}$ is a scalar multiple of the identity.
 
-**Proof.** Let $V$ be irreducible and let $T : V \to V$ be $\mathbb{D}$-linear. Then $\ker T$ and $\operatorname{im} T$ are subrepresentations. Since $V$ is irreducible, either $\ker T = 0$ and $\operatorname{im} T = V$ (so $T$ is an isomorphism), or $\ker T = V$ (so $T = 0$). In the first case, $T$ is an isomorphism, and since $V$ is one-dimensional over $\mathbb{R}$, $T$ is multiplication by a non-zero scalar. $\square$
+**Proof.** Let $V$ be irreducible and let $T : V \to V$ be $\mathbb{D}$-linear. Then $\ker T$ and $\operatorname{im} T$ are subrepresentations. Since $V$ is irreducible, either $\ker T = 0$ and $\operatorname{im} T = V$ (so $T$ is an isomorphism), or $\ker T = V$ (so $T = 0$). In the first case, $T$ is an isomorphism, and since $V$ is one-dimensional over $\mathbb{R}$, $T$ is multiplication by a non-zero scalar.
 
 **Corollary.** The endomorphism ring of each irreducible representation is $\mathbb{R}$.
 
@@ -215,7 +215,7 @@ A representation $V$ is **indecomposable** if it cannot be written as a direct s
 
 **Theorem.** Every finite-dimensional representation of $\mathbb{D}$ is a direct sum of indecomposable representations, and the indecomposable representations are exactly $\rho_+$ and $\rho_-$.
 
-**Proof.** By the classification theorem, $V \cong \mathbb{R}^{\oplus p} \oplus \mathbb{R}^{\oplus q}$. Each summand is indecomposable because it is one-dimensional and any non-zero subrepresentation is the whole thing. Conversely, any indecomposable representation is a single copy of $\rho_+$ or $\rho_-$. $\square$
+**Proof.** By the classification theorem, $V \cong \mathbb{R}^{\oplus p} \oplus \mathbb{R}^{\oplus q}$. Each summand is indecomposable because it is one-dimensional and any non-zero subrepresentation is the whole thing. Conversely, any indecomposable representation is a single copy of $\rho_+$ or $\rho_-$.
 
 So $\mathbb{D}$ is a **semisimple** algebra: every representation is a direct sum of irreducibles, and the indecomposables coincide with the irreducibles. This is a special feature of the split complex algebra, and it is the reason its representation theory is so simple.
 
@@ -313,7 +313,7 @@ $$
 \dim \operatorname{Hom}_{\mathbb{D}}(V, W) = pr + qs.
 $$
 
-**Proof.** A homomorphism must preserve the idempotent decomposition, so it is determined by its action on each isotypic component. On $V_+ \cong \mathbb{R}^{\oplus p}$, a homomorphism to $W_+ \cong \mathbb{R}^{\oplus r}$ is an $r \times p$ real matrix, of dimension $pr$. Similarly for the minus components, of dimension $qs$. $\square$
+**Proof.** A homomorphism must preserve the idempotent decomposition, so it is determined by its action on each isotypic component. On $V_+ \cong \mathbb{R}^{\oplus p}$, a homomorphism to $W_+ \cong \mathbb{R}^{\oplus r}$ is an $r \times p$ real matrix, of dimension $pr$. Similarly for the minus components, of dimension $qs$.
 
 ### The Endomorphism Ring
 

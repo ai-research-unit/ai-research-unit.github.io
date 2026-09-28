@@ -5,7 +5,7 @@
 
 The complex algebra $\mathbb{C}$, regarded as a two-dimensional algebra over $\mathbb{R}$, carries exactly one nontrivial involution, complex conjugation, and beside it the identity. Each of the two involutions determines a fixed subspace and an anti-fixed subspace, and the algebra splits as their direct sum. The whole of this article is the analysis of those subspaces: their bases, their dimensions, their closure properties, the quadratic form they inherit, and the sense in which they are the one-dimensional analogue of the six-subspace lattice of the biquaternion algebra $\mathbb{B}$.
 
-The algebra and its conventions are those of the companion article *Complex Algebra*: the basis is $1$, $i$ with $i^2 = -1$, a general element is $Z = a + i b$, and the norm form is $N(Z) = Z\bar{Z} = a^2 + b^2$. The algebra is a field, so it has no proper ideals and no zero divisors; the biquaternion algebra $\mathbb{B}$ is the four-dimensional complex algebra whose six distinguished subspaces are the model this article is measured against, and the difference between the two lattices is the point. The two involutions are treated in the article *Complex Automorphisms and Derivations*, where they are the automorphism group of the algebra; here they are used only to cut the algebra into subspaces.
+The algebra and its conventions are those of the companion article *Complex Algebra*: the basis is $1$, $i$ with $i^2 = -1$, a general element is $Z = a + i b$, and the norm is $N(Z) = Z\bar{Z} = a^2 + b^2$. The algebra is a field, so it has no proper ideals and no zero divisors; the biquaternion algebra $\mathbb{B}$ is the four-dimensional complex algebra whose six distinguished subspaces are the model this article is measured against, and the difference between the two lattices is the point. The two involutions are treated in the article *Complex Automorphisms and Derivations*, where they are the automorphism group of the algebra; here they are used only to cut the algebra into subspaces.
 
 ## The Involutions and the Two Decompositions
 
@@ -28,7 +28,7 @@ $$
 Z = \tfrac{1}{2}\bigl(Z + \sigma(Z)\bigr) + \tfrac{1}{2}\bigl(Z - \sigma(Z)\bigr).
 $$
 
-**Proof.** The element $\tfrac{1}{2}(Z+\sigma Z)$ is fixed because $\sigma^2 = \operatorname{id}$, and $\tfrac{1}{2}(Z-\sigma Z)$ is anti-fixed, so the sum is $Z$ and the two subspaces span. If $Z$ lies in both then $Z = -Z$, hence $2Z = 0$ and $Z = 0$ because $\mathbb{R}$ has characteristic not $2$, so the sum is direct. Equivalently, the decomposition is the spectral decomposition of $\sigma$ into its eigenspaces for the eigenvalues $+1$ and $-1$. $\square$
+**Proof.** The element $\tfrac{1}{2}(Z+\sigma Z)$ is fixed because $\sigma^2 = \operatorname{id}$, and $\tfrac{1}{2}(Z-\sigma Z)$ is anti-fixed, so the sum is $Z$ and the two subspaces span. If $Z$ lies in both then $Z = -Z$, hence $2Z = 0$ and $Z = 0$ because $\mathbb{R}$ has characteristic not $2$, so the sum is direct. Equivalently, the decomposition is the spectral decomposition of $\sigma$ into its eigenspaces for the eigenvalues $+1$ and $-1$.
 
 The two involutions therefore give two decompositions of the algebra:
 
@@ -56,13 +56,13 @@ $$
 
 so each has real dimension $1$ and $\dim_{\mathbb{R}} \mathbb{C} = 1 + 1 = 2$.
 
-**Proof.** If $Z = a + i b$ is fixed by conjugation then $a - i b = a + i b$, so $b = 0$; if it is anti-fixed then $a - i b = -(a+i b)$, so $a = 0$. The two conditions define the two coordinate axes, of dimension one each. $\square$
+**Proof.** If $Z = a + i b$ is fixed by conjugation then $a - i b = a + i b$, so $b = 0$; if it is anti-fixed then $a - i b = -(a+i b)$, so $a = 0$. The two conditions define the two coordinate axes, of dimension one each.
 
 The two subspaces could hardly be more different in their multiplicative behaviour. The real subspace is closed under multiplication and is a field; the imaginary subspace is not closed at all.
 
 **Proposition (the real subspace is a subfield).** $\mathbb{R}_{\mathbb{C}}$ is a subalgebra of $\mathbb{C}$, and the map $a \mapsto a$ is an isomorphism of fields $\mathbb{R}_{\mathbb{C}} \cong \mathbb{R}$. It is an ordered field under the inherited order.
 
-**Proof.** The product of two fixed elements is fixed, since $\overline{ZW} = \bar{Z}\bar{W}$, and the multiplicative identity $1$ is fixed, so $\mathbb{R}_{\mathbb{C}}$ is a subalgebra. The map is a ring isomorphism onto $\mathbb{R}$ by the multiplication rule $(a)(b) = ab$, and the restriction of the ordering of $\mathbb{R}$ makes it ordered. $\square$
+**Proof.** The product of two fixed elements is fixed, since $\overline{ZW} = \bar{Z}\bar{W}$, and the multiplicative identity $1$ is fixed, so $\mathbb{R}_{\mathbb{C}}$ is a subalgebra. The map is a ring isomorphism onto $\mathbb{R}$ by the multiplication rule $(a)(b) = ab$, and the restriction of the ordering of $\mathbb{R}$ makes it ordered.
 
 **Proposition (the imaginary subspace is not closed).** $i\mathbb{R}_{\mathbb{C}}$ is not closed under multiplication. For $x, y \in i\mathbb{R}_{\mathbb{C}}$ neither $xy$ nor $x^2$ need lie in $i\mathbb{R}_{\mathbb{C}}$; in fact
 
@@ -72,14 +72,14 @@ $$
 
 so the product of two anti-fixed elements is fixed.
 
-**Proof.** The rule $i^2 = -1$ gives both displays directly; the right-hand sides are real and nonzero for $b$ and $c$ nonzero, so the product leaves the imaginary subspace. $\square$
+**Proof.** The rule $i^2 = -1$ gives both displays directly; the right-hand sides are real and nonzero for $b$ and $c$ nonzero, so the product leaves the imaginary subspace.
 
-| subspace | defining condition | real basis | $\dim_{\mathbb{R}}$ | subalgebra | norm form |
+| subspace | defining condition | real basis | $\dim_{\mathbb{R}}$ | subalgebra | norm |
 |---|---|---|---|---|---|
 | $\mathbb{R}_{\mathbb{C}}$ | $\bar{Z} = Z$ | $1$ | $1$ | yes, $\cong \mathbb{R}$, a field | $a^2$, definite positive |
 | $i\mathbb{R}_{\mathbb{C}}$ | $\bar{Z} = -Z$ | $i$ | $1$ | no | $b^2$, definite positive |
 
-The last column records that the norm form is positive on each subspace; this is the degeneracy of the definite two-dimensional case and is developed in the last section but one.
+The last column records that the norm is positive on each subspace; this is the degeneracy of the definite two-dimensional case and is developed in the last section but one.
 
 ## The Two Coordinate Blocks
 
@@ -104,7 +104,7 @@ The pairwise intersections of the two subspaces are read off from the blocks:
 
 **Proposition.** $\mathbb{R}_{\mathbb{C}} \cap i\mathbb{R}_{\mathbb{C}} = \{0\}$.
 
-**Proof.** An element of the intersection is both fixed and anti-fixed by conjugation, so $Z = -Z$ and $Z = 0$ in characteristic not $2$; alternatively the two subspaces are the coordinate lines $\langle 1 \rangle$ and $\langle i \rangle$, which are independent. $\square$
+**Proof.** An element of the intersection is both fixed and anti-fixed by conjugation, so $Z = -Z$ and $Z = 0$ in characteristic not $2$; alternatively the two subspaces are the coordinate lines $\langle 1 \rangle$ and $\langle i \rangle$, which are independent.
 
 The diagonal of the table carries the dimensions $1$ and $1$; the off-diagonal entry is $0$ because the two subspaces are the two members of a direct-sum decomposition. In the biquaternion lattice the analogous entry is also $0$ for the pairs of each decomposition, but there the off-diagonal entries can be $1$ or $3$ because subspaces assembled from several blocks can share a block.
 
@@ -117,7 +117,7 @@ The diagonal of the table carries the dimensions $1$ and $1$; the off-diagonal e
 
 **Proposition.** $\mathbb{R}_{\mathbb{C}} + i\mathbb{R}_{\mathbb{C}} = \mathbb{C}$.
 
-**Proof.** Every $Z = a + i b$ is the sum of $a \in \mathbb{R}_{\mathbb{C}}$ and $i b \in i\mathbb{R}_{\mathbb{C}}$, and the sum is direct by the previous proposition. $\square$
+**Proof.** Every $Z = a + i b$ is the sum of $a \in \mathbb{R}_{\mathbb{C}}$ and $i b \in i\mathbb{R}_{\mathbb{C}}$, and the sum is direct by the previous proposition.
 
 The single off-diagonal entry is $2 = \dim_{\mathbb{R}} \mathbb{C}$: the two subspaces together span the algebra, exactly as the members of each decomposition do in $\mathbb{B}$. There is no second distinct pair and hence no larger body of sum arithmetic.
 
@@ -153,7 +153,7 @@ The first identity says that the real axis is carried to the imaginary axis, the
 | $\mathbb{R}_{\mathbb{C}}$ | $\mathbb{R}_{\mathbb{C}}$ | $i\mathbb{R}_{\mathbb{C}}$ |
 | $i\mathbb{R}_{\mathbb{C}}$ | $i\mathbb{R}_{\mathbb{C}}$ | $\mathbb{R}_{\mathbb{C}}$ |
 
-**Proof.** The products $1\cdot 1 = 1$, $1\cdot i = i$, $i\cdot 1 = i$ and $i^2 = -1$ are the multiplication table of the basis. $\square$
+**Proof.** The products $1\cdot 1 = 1$, $1\cdot i = i$, $i\cdot 1 = i$ and $i^2 = -1$ are the multiplication table of the basis.
 
 Since $\mathbb{C}$ is commutative, every commutator vanishes:
 
@@ -172,7 +172,7 @@ Z_+ = \tfrac{1}{2}(Z + \bar{Z}) = 3 \in \mathbb{R}_{\mathbb{C}}, \qquad
 Z_- = \tfrac{1}{2}(Z - \bar{Z}) = 4i \in i\mathbb{R}_{\mathbb{C}},
 $$
 
-with $Z_+ + Z_- = 3 + 4i = Z$, and the norm form on the pieces is $N(Z_+) = 9$ and $N(Z_-) = 16$, whose sum $25 = N(Z)$ is the norm form of $Z$. The two blocks are the real coordinate $3$ and the imaginary coordinate $4$.
+with $Z_+ + Z_- = 3 + 4i = Z$, and the norm on the pieces is $N(Z_+) = 9$ and $N(Z_-) = 16$, whose sum $25 = N(Z)$ is the norm of $Z$. The two blocks are the real coordinate $3$ and the imaginary coordinate $4$.
 
 **A product that leaves a subspace.** For $Z_- = 4i$ and $W_- = 5i$, both in $i\mathbb{R}_{\mathbb{C}}$,
 
@@ -202,7 +202,7 @@ The lattice is the two-member shadow of the six-subspace lattice of the biquater
 | $\mathbb{C}^{\sigma}$, $\mathbb{C}^{-\sigma}$ | fixed and anti-fixed subspaces of an involution $\sigma$ |
 | $\mathbb{R}_{\mathbb{C}}$ | real subspace $\{Z : \bar{Z} = Z\} = \mathbb{R} 1$, real dimension $1$ |
 | $i\mathbb{R}_{\mathbb{C}}$ | imaginary subspace $\{Z : \bar{Z} = -Z\} = \mathbb{R} i$, real dimension $1$ |
-| $N(Z) = Z\bar{Z} = a^2 + b^2$ | the norm form |
+| $N(Z) = Z\bar{Z} = a^2 + b^2$ | the norm |
 | $i\,\cdot$ (multiplication by $i$) | exchanges the two subspaces: $\mathbb{R}_{\mathbb{C}} \to i\mathbb{R}_{\mathbb{C}}$, $i\mathbb{R}_{\mathbb{C}} \to \mathbb{R}_{\mathbb{C}}$ |
 
 ## Further Reading

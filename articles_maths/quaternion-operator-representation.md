@@ -3,13 +3,13 @@
 
 ## Introduction
 
-A quaternion can be read as an operator, rather than as a point, in three related ways: by left multiplication, by the adjoint action $x\mapsto qxq^{-1}$, and by the sandwich $x\mapsto qx\bar{\tilde q}$. The first is the operator of the regular representation; the second acts on the imaginary subspace as a rotation and is the source of the covering of the rotation group; the third agrees with the second on the unit sphere and carries the norm scale more generally. This article treats the three readings, their kernels and images, their action on the scalar and vector subspaces, and the double covers of $SO(3)$ and $SO(4)$ that the adjoint and the two-sided actions realise. It is the quaternion member of the family's operator-representation pair; its counterpart is the biquaternion operator representation, where the sandwich is taken with the Hermitian dagger and the operators are the similarity classes of $GL_2(\mathbb{C})$.
+A quaternion can be read as an operator, rather than as a point, in three related ways: by left multiplication, by the adjoint action $x\mapsto qxq^{-1}$, and by the sandwich $x\mapsto qx\bar{\tilde q}$. The first is the operator of the regular representation; the second acts on the imaginary subspace as a rotation and is the source of the covering of the rotation group; the third agrees with the second on the unit sphere and carries the quaternion norm scale more generally. This article treats the three readings, their kernels and images, their action on the scalar and vector subspaces, and the double covers of $SO(3)$ and $SO(4)$ that the adjoint and the two-sided actions realise. It is the quaternion member of the family's operator-representation pair; its counterpart is the biquaternion operator representation, where the sandwich is taken with the Hermitian dagger and the operators are the similarity classes of $GL_2(\mathbb{C})$.
 
-The article builds on *Quaternion Algebra* and *Quaternion Norm and Invertibility* for the algebra and the norm, on *The Scalar and Vector Subspaces of $\mathbb{H}$* for the decomposition on which the operators act, and on *Quaternion Rotations and Reflections* for the geometric interpretation of the adjoint action. The polar form of an element, which supplies the axis-angle reading of the operator, is from *Quaternion Polar Representation*.
+The article builds on *Quaternion Algebra* and *Quaternion Norm and Invertibility* for the algebra and the quaternion norm, on *The Scalar and Vector Subspaces of $\mathbb{H}$* for the decomposition on which the operators act, and on *Quaternion Rotations and Reflections* for the geometric interpretation of the adjoint action. The polar form of an element, which supplies the axis-angle reading of the operator, is from *Quaternion Polar Representation*.
 
 The corpus's default base is a commutative ring with identity, and the operator statements over units require only that the element be invertible; the rotation, orthogonal and topological statements are over $\mathbb{R}$, and the double-cover statements are the statements of compact Lie groups.
 
-Throughout, $\mathbb{H}$ is the quaternion algebra with basis $e_0 = 1, e_1, e_2, e_3$, $e_k^2 = -e_0$; a quaternion is $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ with conjugate $\bar{\tilde q} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$ and norm form $N(\tilde q) = \tilde q\bar{\tilde q}$; the unit group is $\mathbb{H}^{\times} = \mathbb{H}\setminus\{0\}$ and the unit sphere is $Sp(1) = \{\tilde q : N(\tilde q) = 1\}\cong S^3$. The left multiplication operator is $L_q(x) = qx$, the right multiplication operator $R_q(x) = xq$, the adjoint action $\operatorname{Ad}_q(x) = qxq^{-1}$, and the sandwich $S_q(x) = qx\bar{\tilde q}$.
+Throughout, $\mathbb{H}$ is the quaternion algebra with basis $e_0 = 1, e_1, e_2, e_3$, $e_k^2 = -e_0$; a quaternion is $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ with conjugate $\bar{\tilde q} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$ and norm $N(\tilde q) = \tilde q\bar{\tilde q}$; the unit group is $\mathbb{H}^{\times} = \mathbb{H}\setminus\{0\}$ and the unit sphere is $Sp(1) = \{\tilde q : N(\tilde q) = 1\}\cong S^3$. The left multiplication operator is $L_q(x) = qx$, the right multiplication operator $R_q(x) = xq$, the adjoint action $\operatorname{Ad}_q(x) = qxq^{-1}$, and the sandwich $S_q(x) = qx\bar{\tilde q}$.
 
 ## The Element as an Operator
 
@@ -23,11 +23,11 @@ $$
 
 An element $\tilde q$ is a unit exactly when $L_q$ (equivalently $R_q$) is invertible.
 
-*Proof.* The multiplicativity identities are associativity, and the commuting identity is $L_pR_q(x) = pxq = R_qL_p(x)$. The kernel of $L_q$ is $\{x : qx = 0\}$, which is zero exactly when $\tilde q$ has no one-sided zero divisor, that is, when $\tilde q$ is a unit, by *Quaternion Norm and Invertibility*; the same argument applies to $R_q$. $\square$
+*Proof.* The multiplicativity identities are associativity, and the commuting identity is $L_pR_q(x) = pxq = R_qL_p(x)$. The kernel of $L_q$ is $\{x : qx = 0\}$, which is zero exactly when $\tilde q$ has no one-sided zero divisor, that is, when $\tilde q$ is a unit, by *Quaternion Norm and Invertibility*; the same argument applies to $R_q$.
 
 **Proposition.** The operator $L_q$ is the sum of a scalar operator and a skew-adjoint operator on the Euclidean space $\mathbb{H}$: $L_q = q_0\,\mathrm{id} + L_{\mathbf{q}}$ with $L_{\mathbf{q}}$ skew-adjoint, and $L_q^{*} = L_{\bar{\tilde q}}$ for the Euclidean adjoint.
 
-*Proof.* The scalar part $q_0$ acts as the scalar operator $q_0\,\mathrm{id}$; the pure part gives the skew part, since $\langle x, \mathbf{q}y\rangle = \langle \bar{\mathbf{q}}x, y\rangle = -\langle \mathbf{q}x, y\rangle$. The adjoint identity is $\langle x, qy\rangle = \operatorname{Sc}(x\,\overline{qy}) = \operatorname{Sc}(\bar{\tilde q} x\bar y) = \langle \bar{\tilde q} x, y\rangle$. $\square$
+*Proof.* The scalar part $q_0$ acts as the scalar operator $q_0\,\mathrm{id}$; the pure part gives the skew part, since $\langle x, \mathbf{q}y\rangle = \langle \bar{\mathbf{q}}x, y\rangle = -\langle \mathbf{q}x, y\rangle$. The adjoint identity is $\langle x, qy\rangle = \mathrm{Sc}(x\,\overline{qy}) = \mathrm{Sc}(\bar{\tilde q} x\bar y) = \langle \bar{\tilde q} x, y\rangle$.
 
 ## The Adjoint Action
 
@@ -37,9 +37,9 @@ $$
 \operatorname{Ad}_q(x) = qxq^{-1} = qx\bar{\tilde q} .
 $$
 
-**Theorem.** The adjoint action is an algebra automorphism for every unit $\tilde q$, it is the identity on the centre, and it preserves the norm form and the decomposition $\mathbb{H} = \mathbb{R}_{\mathbb{H}}\oplus\operatorname{Im}\mathbb{H}$.
+**Theorem.** The adjoint action is an algebra automorphism for every unit $\tilde q$, it is the identity on the centre, and it preserves the quaternion norm and the decomposition $\mathbb{H} = \mathbb{R}_{\mathbb{H}}\oplus\operatorname{Im}\mathbb{H}$.
 
-*Proof.* For units $p,\tilde q$, $\operatorname{Ad}_p\operatorname{Ad}_q = \operatorname{Ad}_{pq}$ and $\operatorname{Ad}_q^{-1} = \operatorname{Ad}_{\tilde q^{-1}}$, so $\operatorname{Ad}_q$ is an automorphism; it fixes the centre because the centre is scalar and scalars commute. It preserves the norm form by $N(qxq^{-1}) = N(\tilde q)N(x)N(\tilde q)^{-1} = N(x)$; since it is an automorphism it fixes the scalar subspace pointwise and hence preserves the vector subspace. $\square$
+*Proof.* For units $p,\tilde q$, $\operatorname{Ad}_p\operatorname{Ad}_q = \operatorname{Ad}_{pq}$ and $\operatorname{Ad}_q^{-1} = \operatorname{Ad}_{\tilde q^{-1}}$, so $\operatorname{Ad}_q$ is an automorphism; it fixes the centre because the centre is scalar and scalars commute. It preserves the quaternion norm by $N(qxq^{-1}) = N(\tilde q)N(x)N(\tilde q)^{-1} = N(x)$; since it is an automorphism it fixes the scalar subspace pointwise and hence preserves the vector subspace.
 
 **Theorem.** On the imaginary subspace the adjoint action is the orthogonal map
 
@@ -55,11 +55,11 @@ $$
 
 the rotation by the axis $\mathbf{u}/|\mathbf{u}|$ and angle $2\arccos(u_0)$, with $u = u_0+\mathbf{u}$ a unit quaternion.
 
-*Proof.* Expand $qxq^{-1} = qx\bar{\tilde q}/N(\tilde q)$ with $x = \mathbf{x}$ pure, using $\mathbf{a}\mathbf{x} = -\langle\mathbf{a},\mathbf{x}\rangle+\mathbf{a}\times\mathbf{x}$; collecting the scalar and vector terms and dividing by $N(\tilde q)$ gives the displayed expression. Writing the unit $u$ with $u_0 = \cos\theta$ and $\mathbf{u} = \mu\sin\theta$ exhibits it as the rotation of axis $\mu$ and angle $2\theta$. $\square$
+*Proof.* Expand $qxq^{-1} = qx\bar{\tilde q}/N(\tilde q)$ with $x = \mathbf{x}$ pure, using $\mathbf{a}\mathbf{x} = -\langle\mathbf{a},\mathbf{x}\rangle+\mathbf{a}\times\mathbf{x}$; collecting the scalar and vector terms and dividing by $N(\tilde q)$ gives the displayed expression. Writing the unit $u$ with $u_0 = \cos\theta$ and $\mathbf{u} = \mu\sin\theta$ exhibits it as the rotation of axis $\mu$ and angle $2\theta$.
 
 **Proposition.** For a unit quaternion $u$ the adjoint action $\operatorname{Ad}_u$ is an orientation-preserving isometry of $\operatorname{Im}\mathbb{H}\cong\mathbb{R}^3$, the map $Sp(1)\to SO(3)$, $u\mapsto \operatorname{Ad}_u|_{\operatorname{Im}\mathbb{H}}$ is a surjective group homomorphism with kernel $\{\pm1\}$, and $\operatorname{Ad}_u = \operatorname{Ad}_{-u}$.
 
-*Proof.* The restriction is orthogonal because it preserves the norm form on a three-dimensional space, and it is orientation-preserving; it is a homomorphism by the automorphism property, its kernel is the set of units centralising the imaginary subspace, namely $\{\pm1\}$, and the surjectivity and the two-to-one property are from *Quaternion Rotations and Reflections*. $\square$
+*Proof.* The restriction is orthogonal because it preserves the quaternion norm on a three-dimensional space, and it is orientation-preserving; it is a homomorphism by the automorphism property, its kernel is the set of units centralising the imaginary subspace, namely $\{\pm1\}$, and the surjectivity and the two-to-one property are from *Quaternion Rotations and Reflections*.
 
 ## The Sandwich
 
@@ -75,27 +75,27 @@ $$
 S_q = N(\tilde q)\,\operatorname{Ad}_q,
 $$
 
-so that on the unit sphere $Sp(1)$ the sandwich and the adjoint action coincide; the sandwich scales the norm form by $N(\tilde q)^2$, its determinant on the four-dimensional space is $\det S_q = N(\tilde q)^4$, and it is invertible exactly when $\tilde q$ is.
+so that on the unit sphere $Sp(1)$ the sandwich and the adjoint action coincide; the sandwich scales the quaternion norm by $N(\tilde q)^2$, its determinant on the four-dimensional space is $\det S_q = N(\tilde q)^4$, and it is invertible exactly when $\tilde q$ is.
 
-*Proof.* Since $\bar{\tilde q} = N(\tilde q)\tilde q^{-1}$ for $\tilde q\neq0$, we have $qx\bar{\tilde q} = N(\tilde q)\,\tilde q x \tilde q^{-1} = N(\tilde q)\operatorname{Ad}_q(x)$. Hence the two agree when $N(\tilde q) = 1$. $\square$
+*Proof.* Since $\bar{\tilde q} = N(\tilde q)\tilde q^{-1}$ for $\tilde q\neq0$, we have $qx\bar{\tilde q} = N(\tilde q)\,\tilde q x \tilde q^{-1} = N(\tilde q)\operatorname{Ad}_q(x)$. Hence the two agree when $N(\tilde q) = 1$.
 
-**Theorem.** The sandwich preserves the norm form up to the square of $N(\tilde q)$: $N(S_q(x)) = N(\tilde q)^2N(x)$, and it maps the scalar subspace to itself and the vector subspace to itself.
+**Theorem.** The sandwich preserves the quaternion norm up to the square of $N(\tilde q)$: $N(S_q(x)) = N(\tilde q)^2N(x)$, and it maps the scalar subspace to itself and the vector subspace to itself.
 
-*Proof.* $N(qx\bar{\tilde q}) = N(\tilde q)N(x)N(\bar{\tilde q}) = N(\tilde q)^2N(x)$. For a scalar $s$ the element $S_q(s) = qs\bar{\tilde q} = s\,q\bar{\tilde q} = sN(\tilde q)$ is scalar, so $S_q$ preserves the scalar subspace; being invertible and preserving the norm form, it preserves its orthogonal complement, the vector subspace. $\square$
+*Proof.* $N(qx\bar{\tilde q}) = N(\tilde q)N(x)N(\bar{\tilde q}) = N(\tilde q)^2N(x)$. For a scalar $s$ the element $S_q(s) = qs\bar{\tilde q} = s\,q\bar{\tilde q} = sN(\tilde q)$ is scalar, so $S_q$ preserves the scalar subspace; being invertible and preserving the quaternion norm, it preserves its orthogonal complement, the vector subspace.
 
 **Proposition.** The unit-norm slice of the sandwich, $N(\tilde q) = 1$, is the adjoint action; on this slice the sandwich and the adjoint action are the same operator, and the scale $N(\tilde q)$ is the only difference away from it. The sandwich of a pure imaginary element $\mathbf{p}$ is $\mathbf{p}$ acting by $S_{\mathbf{p}}(x) = \mathbf{p}x\bar{\mathbf{p}} = N(\mathbf{p})\operatorname{Ad}_{\mathbf{p}}(x)$.
 
-*Proof.* The first statement is the relation above; for pure $\mathbf{p}$ we have $\bar{\mathbf{p}} = -\mathbf{p}$, so $S_{\mathbf{p}}(x) = -\mathbf{p}x\mathbf{p}$, and the general relation applies. $\square$
+*Proof.* The first statement is the relation above; for pure $\mathbf{p}$ we have $\bar{\mathbf{p}} = -\mathbf{p}$, so $S_{\mathbf{p}}(x) = -\mathbf{p}x\mathbf{p}$, and the general relation applies.
 
 ## Kernel and Image
 
 **Theorem.** For $\tilde q\neq0$ the operators $L_q$, $R_q$, $\operatorname{Ad}_q$ and $S_q$ are invertible, so each has kernel $0$ and image $\mathbb{H}$. For $\tilde q = 0$ all four are the zero operator.
 
-*Proof.* Invertibility of $L_q$ and $R_q$ is the unit criterion; $\operatorname{Ad}_q$ is invertible for units with inverse $\operatorname{Ad}_{\tilde q^{-1}}$, and $S_q = N(\tilde q)\operatorname{Ad}_q$ is invertible whenever $N(\tilde q)\neq0$. For $\tilde q = 0$ every product vanishes. $\square$
+*Proof.* Invertibility of $L_q$ and $R_q$ is the unit criterion; $\operatorname{Ad}_q$ is invertible for units with inverse $\operatorname{Ad}_{\tilde q^{-1}}$, and $S_q = N(\tilde q)\operatorname{Ad}_q$ is invertible whenever $N(\tilde q)\neq0$. For $\tilde q = 0$ every product vanishes.
 
 **Proposition.** The fixed subspace of the adjoint action $\operatorname{Ad}_q$ is the centraliser of $\tilde q$ in $\mathbb{H}$: it is $\mathbb{H}$ when $\tilde q$ is central (that is, real), and the two-dimensional subalgebra $\{a+bq : a,b\in F\}\cong F[\tilde q]$ otherwise. On the imaginary subspace the fixed directions are the axis of the rotation, namely the line $\mathbb{R}\mathbf{q}$.
 
-*Proof.* $qxq^{-1} = x$ iff $qx = xq$, so the fixed space is the centraliser. For real $\tilde q$ the centraliser is all of $\mathbb{H}$; for non-real $\tilde q$ it is the subalgebra generated by $\tilde q$ and $1$, of dimension two. On $\operatorname{Im}\mathbb{H}$ the fixed line is $\mathbb{R}\mathbf{q}$, the rotation axis, and the only nonzero fixed vectors of a rotation are along its axis. $\square$
+*Proof.* $qxq^{-1} = x$ iff $qx = xq$, so the fixed space is the centraliser. For real $\tilde q$ the centraliser is all of $\mathbb{H}$; for non-real $\tilde q$ it is the subalgebra generated by $\tilde q$ and $1$, of dimension two. On $\operatorname{Im}\mathbb{H}$ the fixed line is $\mathbb{R}\mathbf{q}$, the rotation axis, and the only nonzero fixed vectors of a rotation are along its axis.
 
 ## The Action on the Subspaces
 
@@ -110,11 +110,11 @@ so that on the unit sphere $Sp(1)$ the sandwich and the adjoint action coincide;
 
 **Proposition.** Left and right multiplication do not preserve the two subspaces individually — each sends the scalar line into the plane spanned by $1$ and the acting element — while the adjoint action and the sandwich do preserve the decomposition, acting as the identity (respectively the scale $N(\tilde q)$) on the scalar line and as a rotation (scaled) on the vector subspace.
 
-*Proof.* $L_q(s) = qs = sq$ lies in the span of $1$ and $\tilde q$, and $L_q(\mathbf{x})$ has the scalar part $-\langle\mathbf{q},\mathbf{x}\rangle$, so neither subspace is preserved in general. The adjoint action fixes every scalar and carries the vector subspace to itself by the theorem above, and the sandwich is $N(\tilde q)$ times it. $\square$
+*Proof.* $L_q(s) = qs = sq$ lies in the span of $1$ and $\tilde q$, and $L_q(\mathbf{x})$ has the scalar part $-\langle\mathbf{q},\mathbf{x}\rangle$, so neither subspace is preserved in general. The adjoint action fixes every scalar and carries the vector subspace to itself by the theorem above, and the sandwich is $N(\tilde q)$ times it.
 
 **Corollary.** The adjoint action of a unit is a rotation of the vector subspace, and it acts on the whole algebra as the direct sum of the identity on the scalar line and that rotation on the vector subspace; the two summands are the representations of dimensions one and three into which the four-dimensional operator decomposes.
 
-*Proof.* The decomposition $\mathbb{H} = \mathbb{R}_{\mathbb{H}}\oplus\operatorname{Im}\mathbb{H}$ is preserved, the first summand is fixed, and the second carries the rotation; the dimensions are as stated. $\square$
+*Proof.* The decomposition $\mathbb{H} = \mathbb{R}_{\mathbb{H}}\oplus\operatorname{Im}\mathbb{H}$ is preserved, the first summand is fixed, and the second carries the rotation; the dimensions are as stated.
 
 ## The Double Covers
 
@@ -126,7 +126,7 @@ $$
 
 so that $Sp(1)/\{\pm1\}\cong SO(3)$; the map is the universal double cover of the rotation group, and $Sp(1)\cong S^3$ is simply connected.
 
-*Proof.* The map is a surjective homomorphism with kernel $\{\pm1\}$, as shown above; it is a covering map because it is a surjective homomorphism of Lie groups with discrete kernel (a standard fact quoted as standard), and the double cover is universal because $S^3$ is simply connected. $\square$
+*Proof.* The map is a surjective homomorphism with kernel $\{\pm1\}$, as shown above; it is a covering map because it is a surjective homomorphism of Lie groups with discrete kernel (a standard fact quoted as standard), and the double cover is universal because $S^3$ is simply connected.
 
 **Theorem (double cover of $SO(4)$).** The two-sided action induces an exact sequence
 
@@ -136,30 +136,30 @@ $$
 
 where $\rho(u,v)(x) = ux\bar v$, so that $\bigl(Sp(1)\times Sp(1)\bigr)/\{\pm1\}\cong SO(4)$.
 
-*Proof.* The map $(u,v)\mapsto \rho(u,v)$ is a homomorphism into the isometries of the Euclidean space $\mathbb{H}\cong\mathbb{R}^4$ because $N(ux\bar v) = N(x)$, and its image lies in the identity component $SO(4)$ since $Sp(1)\times Sp(1)$ is connected. Its kernel is $\{(u,v) : ux\bar v = x\ \forall x\}$, which forces $u = v$ up to the central element and gives exactly $\{\pm(1,1)\}$; a dimension count $\dim(Sp(1)\times Sp(1)) = 6 = \dim SO(4)$ and the connectedness of $Sp(1)\times Sp(1)$ then give surjectivity. $\square$
+*Proof.* The map $(u,v)\mapsto \rho(u,v)$ is a homomorphism into the isometries of the Euclidean space $\mathbb{H}\cong\mathbb{R}^4$ because $N(ux\bar v) = N(x)$, and its image lies in the identity component $SO(4)$ since $Sp(1)\times Sp(1)$ is connected. Its kernel is $\{(u,v) : ux\bar v = x\ \forall x\}$, which forces $u = v$ up to the central element and gives exactly $\{\pm(1,1)\}$; a dimension count $\dim(Sp(1)\times Sp(1)) = 6 = \dim SO(4)$ and the connectedness of $Sp(1)\times Sp(1)$ then give surjectivity.
 
 ## Relation to the Polar Representation and to the Biquaternion Sandwich
 
 **Theorem.** Every non-zero quaternion has the polar form $\tilde q = |\tilde q|u$ with $u\in Sp(1)$, and the adjoint action depends only on the unit factor: $\operatorname{Ad}_q = \operatorname{Ad}_u$, while the sandwich is $S_q = |\tilde q|^2\operatorname{Ad}_u$. The axis and angle of the rotation $\operatorname{Ad}_u$ are those of the polar form, $\mu = \mathbf{q}/|\mathbf{q}|$ and $\cos(\theta/2) = q_0/|\tilde q|$.
 
-*Proof.* $\tilde q^{-1} = u^{-1}|\tilde q|^{-1}$ and $\tilde q = |\tilde q|u$ cancel the scale in $\operatorname{Ad}_q$; the sandwich scale is $N(\tilde q) = |\tilde q|^2$. The axis-angle identification is the polar form of *Quaternion Polar Representation*, where the half-angle is the angle of the unit factor. $\square$
+*Proof.* $\tilde q^{-1} = u^{-1}|\tilde q|^{-1}$ and $\tilde q = |\tilde q|u$ cancel the scale in $\operatorname{Ad}_q$; the sandwich scale is $N(\tilde q) = |\tilde q|^2$. The axis-angle identification is the polar form of *Quaternion Polar Representation*, where the half-angle is the angle of the unit factor.
 
-The biquaternion operator representation takes the sandwich with the Hermitian dagger, $x\mapsto \tilde Qx\tilde Q^{\dagger}$, because the biquaternion algebra carries the conjugation $\dagger$ that the real quaternion algebra does not; here the sandwich is taken with quaternion conjugation $\bar{\cdot}$, which is the only antiautomorphism available, and it agrees with the adjoint action on the unit slice. The biquaternion account is in *Biquaternion Operator Representation*, where the sandwich acts on $M_2(\mathbb{C})$ by similarity and realises the Lorentz group rather than the rotation group; no such indefinite operator occurs here, because the quaternion norm form is definite.
+The biquaternion operator representation takes the sandwich with the Hermitian dagger, $x\mapsto \tilde Qx\tilde Q^{\dagger}$, because the biquaternion algebra carries the conjugation $\dagger$ that the real quaternion algebra does not; here the sandwich is taken with quaternion conjugation $\bar{\cdot}$, which is the only antiautomorphism available, and it agrees with the adjoint action on the unit slice. The biquaternion account is in *Biquaternion Operator Representation*, where the sandwich acts on $M_2(\mathbb{C})$ by similarity and realises the Lorentz group rather than the rotation group; no such indefinite operator occurs here, because the quaternion norm is definite.
 
 ## Summary
 
-An element $\tilde q$ acts on the algebra by left and right multiplication $L_q$ and $R_q$, which commute and satisfy $L_pL_q = L_{pq}$ and $R_pR_q = R_{qp}$; $L_q = q_0\,\mathrm{id}+L_{\mathbf{q}}$ decomposes into a scalar and a skew-adjoint part. The adjoint action $\operatorname{Ad}_q(x) = qxq^{-1}$ is an algebra automorphism for every unit, it fixes the centre, preserves the norm form and the scalar–vector decomposition, and acts on the imaginary subspace as the rotation given by the Euler–Rodrigues formula; the sandwich $S_q(x) = qx\bar{\tilde q}$ equals $N(\tilde q)\operatorname{Ad}_q$, so it coincides with the adjoint action exactly on the unit slice $N(\tilde q) = 1$.
+An element $\tilde q$ acts on the algebra by left and right multiplication $L_q$ and $R_q$, which commute and satisfy $L_pL_q = L_{pq}$ and $R_pR_q = R_{qp}$; $L_q = q_0\,\mathrm{id}+L_{\mathbf{q}}$ decomposes into a scalar and a skew-adjoint part. The adjoint action $\operatorname{Ad}_q(x) = qxq^{-1}$ is an algebra automorphism for every unit, it fixes the centre, preserves the quaternion norm and the scalar–vector decomposition, and acts on the imaginary subspace as the rotation given by the Euler–Rodrigues formula; the sandwich $S_q(x) = qx\bar{\tilde q}$ equals $N(\tilde q)\operatorname{Ad}_q$, so it coincides with the adjoint action exactly on the unit slice $N(\tilde q) = 1$.
 
 For $\tilde q\neq0$ all four readings are invertible with kernel $0$ and image $\mathbb{H}$; the fixed subspace of the adjoint action is the centraliser of $\tilde q$, all of $\mathbb{H}$ for real $\tilde q$ and the two-dimensional subalgebra $F[\tilde q]$ otherwise, with the axis line as the fixed direction on the imaginary subspace. The action table separates the operators that preserve the scalar–vector decomposition — the adjoint action and the sandwich, acting as the identity or the scale on the scalar line and as a rotation or a scaled rotation on the vector subspace — from left and right multiplication, which do not.
 
-The adjoint action gives the double cover $Sp(1)\to SO(3)$ with kernel $\{\pm1\}$ and the two-sided action $Sp(1)\times Sp(1)\to SO(4)$ with kernel $\{\pm(1,1)\}$. The polar form separates the scale from the unit factor, and the adjoint action depends only on the latter while the sandwich carries the scale $|\tilde q|^2$; the biquaternion sandwich uses the Hermitian dagger and realises an indefinite group instead, a possibility closed here by the definiteness of the quaternion norm form.
+The adjoint action gives the double cover $Sp(1)\to SO(3)$ with kernel $\{\pm1\}$ and the two-sided action $Sp(1)\times Sp(1)\to SO(4)$ with kernel $\{\pm(1,1)\}$. The polar form separates the scale from the unit factor, and the adjoint action depends only on the latter while the sandwich carries the scale $|\tilde q|^2$; the biquaternion sandwich uses the Hermitian dagger and realises an indefinite group instead, a possibility closed here by the definiteness of the quaternion norm.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{H}$ | The quaternion algebra |
-| $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ | Quaternion, conjugate $\bar{\tilde q}$, norm form $N(\tilde q) = \tilde q\bar{\tilde q}$ |
+| $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ | Quaternion, conjugate $\bar{\tilde q}$, norm $N(\tilde q) = \tilde q\bar{\tilde q}$ |
 | $L_q(x) = qx$ | Left multiplication operator |
 | $R_q(x) = xq$ | Right multiplication operator |
 | $\operatorname{Ad}_q(x) = qxq^{-1} = qx\bar{\tilde q}$ | Adjoint action, an automorphism for a unit |

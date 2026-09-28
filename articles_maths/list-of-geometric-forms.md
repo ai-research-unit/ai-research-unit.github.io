@@ -7,7 +7,7 @@ This article lists the forms of the corpus — the bilinear, quadratic, sesquili
 
 Every entry points to the article that introduces the form or the invariant. The article introduces nothing and proves nothing: it records the classifying data the introducing article establishes, and it neither restates a definition nor gives a proof.
 
-The article records examples and non-examples side by side. Beside the forms that the classification separates it lists the cases in which the classification collapses or the correspondence fails: the quadratic forms and the symmetric bilinear forms, which are in bijection only when $2$ is invertible in the base ring; the alternating forms, which are not the skew-symmetric forms in characteristic $2$; the split octonions, whose norm form is isotropic although the octonion norm of the division algebra is not; and the forms over $\mathbb{Q}$ and over a number field, whose classification needs the local invariants and is not read from the signature alone, each with the failure named and the article that records it.
+The article records examples and non-examples side by side. Beside the forms that the classification separates it lists the cases in which the classification collapses or the correspondence fails: the quadratic forms and the symmetric bilinear forms, which are in bijection only when $2$ is invertible in the base ring; the alternating forms, which are not the skew-symmetric forms in characteristic $2$; the split octonions, whose norm is isotropic although the octonion norm of the division algebra is not; and the forms over $\mathbb{Q}$ and over a number field, whose classification needs the local invariants and is not read from the signature alone, each with the failure named and the article that records it.
 
 ## The Bilinear and Sesquilinear Forms
 
@@ -24,7 +24,7 @@ The bilinear form is the basic datum: a rule linear in each argument, represente
 | a Hermitian form $s(x,y)$ | $s(x,y) = \sigma(s(y,x))$; the diagonal $q(x) = s(x,x)$ is a quadratic form over the fixed ring | *Hermitian Forms and Involutions* |
 | the Hermitian Gram matrix $H$ | $H^\dagger = \sigma(H)^T = H$; the unitary group is its isometry group | *Hermitian Forms and Involutions*; *The Unitary and Symplectic Groups* |
 | the trace form $T(x,y) = \operatorname{Tr}(m_{xy})$ | the regular trace of a finite-dimensional algebra; the reduced trace form in the central simple case | *Hermitian Forms and Involutions* |
-| the reduced norm form $\operatorname{Nrd}$ | the norm of a central simple algebra of degree $d$; a form of dimension $d^2$ | *Hermitian Forms and Involutions* |
+| the reduced norm $\operatorname{Nrd}$ | the norm of a central simple algebra of degree $d$; a form of dimension $d^2$ | *Hermitian Forms and Involutions* |
 
 ## The Quadratic Forms
 
@@ -39,8 +39,8 @@ A quadratic form is homogeneous of degree two, and it is recovered from its pola
 | the signature $\sigma(q) = p - r$ and the rank $p + r$ | the real classification; the complex classification is the rank alone | *Quadratic Forms and Polarisation*; *Pseudo-Riemannian and Lorentzian Geometry* |
 | the discriminant $\Delta(q)$ | $a_1\cdots a_n \in F^\times/(F^\times)^2$; an invariant of the isometry class | *Quadratic Forms and Polarisation*; *Bilinear Forms* |
 | the hyperbolicity and the isotropic vectors | a form is isotropic when $q(v) = 0$ for some $v \neq 0$; the hyperbolic plane is the model | *Witt's Theorems* |
-| the norm forms of the algebras | $N(x) = x\bar x$ on $\mathbb{C}$, $\mathbb{H}$, $\mathbb{B}$ and $\mathbb{O}$; a composition law $N(xy) = N(x)N(y)$ only in dimensions $1$, $2$, $4$, $8$ | *Quadratic Forms over Algebras and Norm Forms* |
-| a Pfister form $\langle\!\langle a_1,\ldots,a_n\rangle\!\rangle$ | the norm form of a composition algebra of dimension $2^n$; the tensor product $\bigotimes_i\langle 1,-a_i\rangle$ | *Quadratic Forms over Algebras and Norm Forms*; *The Witt Group and the Grothendieck–Witt Ring* |
+| the norms of the algebras | $N(x) = x\bar x$ on $\mathbb{C}$, $\mathbb{H}$, $\mathbb{B}$ and $\mathbb{O}$; a composition law $N(xy) = N(x)N(y)$ only in dimensions $1$, $2$, $4$, $8$ | *Quadratic Forms over Algebras and Norms* |
+| a Pfister form $\langle\!\langle a_1,\ldots,a_n\rangle\!\rangle$ | the norm of a composition algebra of dimension $2^n$; the tensor product $\bigotimes_i\langle 1,-a_i\rangle$ | *Quadratic Forms over Algebras and Norms*; *The Witt Group and the Grothendieck–Witt Ring* |
 
 ## The Alternating and Symplectic Forms
 
@@ -75,17 +75,17 @@ The classification of quadratic forms over a field is governed by Witt's theorem
 
 ## The Forms on the Number Systems
 
-The norm forms of the number systems are the examples through which the general theory is read, and the Cayley–Dickson doubling produces them in dimensions one, two, four and eight.
+The norms of the number systems are the examples through which the general theory is read, and the Cayley–Dickson doubling produces them in dimensions one, two, four and eight.
 
 | Space and form | The form and its properties | Introduced in |
 |---|---|---|
-| $\mathbb{C}$ with $N(z) = z\bar z$ | the positive definite norm form of dimension $2$; a composition law | *Quadratic Forms over Algebras and Norm Forms*; *The Complex Numbers* |
-| $\mathbb{H}$ with $N(q) = q\bar q$ | the positive definite quaternion norm of dimension $4$; a composition law; anisotropic | *Quadratic Forms over Algebras and Norm Forms*; *Quaternion Algebra* |
-| $\mathbb{B}$ with $N(q) = q\bar q$ | the complex-valued biquaternion norm; the real part and imaginary part are forms of signature $(4,4)$ | *Quadratic Forms over Algebras and Norm Forms*; *The Biquaternion Algebra as a Clifford Algebra* |
-| the split biquaternions $\mathbb{H}_{\mathbb{D}}$ | a norm form that is isotropic; the split form of the quaternion norm | *Quadratic Forms over Algebras and Norm Forms*; *Split-Biquaternions and Hyperbolic Geometry* |
-| $\mathbb{O}$ with $N(x) = x\bar x$ | the octonion norm of dimension $8$; a composition law; anisotropic | *Quadratic Forms over Algebras and Norm Forms*; *Octonion Algebra* |
-| the split octonions | the isotropic norm form of dimension $8$; the $\mu = +1$ double of $\mathbb{H}_{\mathbb{D}}$ | *Quadratic Forms over Algebras and Norm Forms* |
-| the quadric $\mathcal{Q}(Q)$ | the projective quadric $\{[x] : Q(x) = 0\}$ of an $A$-valued form | *Quadratic Forms over Algebras and Norm Forms*; *Projective Geometry* |
+| $\mathbb{C}$ with $N(z) = z\bar z$ | the positive definite norm of dimension $2$; a composition law | *Quadratic Forms over Algebras and Norms*; *The Complex Numbers* |
+| $\mathbb{H}$ with $N(q) = q\bar q$ | the positive definite quaternion norm of dimension $4$; a composition law; anisotropic | *Quadratic Forms over Algebras and Norms*; *Quaternion Algebra* |
+| $\mathbb{B}$ with $N(q) = q\bar q$ | the complex-valued biquaternion norm; the real part and imaginary part are forms of signature $(4,4)$ | *Quadratic Forms over Algebras and Norms*; *The Clifford Structure of the Biquaternion Algebra* |
+| the split biquaternions $\mathbb{H}_{\mathbb{D}}$ | a norm that is isotropic; the split form of the quaternion norm | *Quadratic Forms over Algebras and Norms*; *Split-Biquaternions and Hyperbolic Geometry* |
+| $\mathbb{O}$ with $N(x) = x\bar x$ | the octonion norm of dimension $8$; a composition law; anisotropic | *Quadratic Forms over Algebras and Norms*; *Octonion Algebra* |
+| the split octonions | the isotropic norm of dimension $8$; the $\mu = +1$ double of $\mathbb{H}_{\mathbb{D}}$ | *Quadratic Forms over Algebras and Norms* |
+| the quadric $\mathcal{Q}(Q)$ | the projective quadric $\{[x] : Q(x) = 0\}$ of an $A$-valued form | *Quadratic Forms over Algebras and Norms*; *Projective Geometry* |
 
 ## Non-examples and Warnings
 
@@ -93,7 +93,7 @@ The norm forms of the number systems are the examples through which the general 
 |---|---|---|
 | a quadratic form over $\mathbb{F}_2$ | the polar form does not determine the quadratic form when $2$ is not invertible; the correspondence is an obstruction, not a bijection | *Quadratic Forms and Polarisation* |
 | an alternating form in characteristic $2$ | it is not the same as a skew-symmetric form; skew-symmetry with $\omega(u,u) = 0$ is the condition available over every ring | *The Determinant and Alternating Forms*; *Symplectic Forms and Poisson Brackets* |
-| the split octonions | their norm form is isotropic, unlike the norm of the division algebra $\mathbb{O}$; the two are different forms of the same dimension | *Quadratic Forms over Algebras and Norm Forms* |
+| the split octonions | their norm is isotropic, unlike the norm of the division algebra $\mathbb{O}$; the two are different forms of the same dimension | *Quadratic Forms over Algebras and Norms* |
 | the classification over $\mathbb{Q}$ | it is not read from the signature alone; the Hasse–Minkowski principle needs the local invariants at the completions | *Witt's Theorems* |
 | the Hermitian form over a non-commutative ring | the diagonal $q(x) = s(x,x)$ is a quadratic form over the fixed ring and not over the base; the transfer is part of the theory | *Hermitian Forms and Involutions* |
 | a degenerate form, $\langle 0\rangle$ | its matrix is not invertible and there is no discriminant in $F^\times/(F^\times)^2$; the radical is the whole space | *Bilinear Forms* |
@@ -111,7 +111,7 @@ Objects that a reader may expect in a list of geometric forms, and does not find
 
 ## Summary
 
-This article has listed the forms of the corpus: the bilinear forms with their Gram matrices, radicals and discriminants; the sesquilinear and Hermitian forms with an involution, their trace forms and reduced norms; the quadratic forms with their polar forms, diagonalisations, signatures and discriminants, and the norm forms of $\mathbb{C}$, $\mathbb{H}$, $\mathbb{B}$, the split biquaternions and $\mathbb{O}$; the alternating and symplectic forms with the Pfaffian, the Darboux normal form and the Lagrangians; and the classification theorems — Witt's extension, index and cancellation, Sylvester's law, the classifications over $\mathbb{C}$ and $\mathbb{F}_q$, the Hasse–Minkowski principle, and the Witt and Grothendieck–Witt rings with their invariants. Beside the examples stand the non-examples: the characteristic-$2$ failures of the polar correspondence and of alternation, the isotropic split octonion norm, the forms over $\mathbb{Q}$ that need their local invariants, and the degenerate forms without a discriminant. The list introduces and proves nothing; it is the index of the forms of the corpus.
+This article has listed the forms of the corpus: the bilinear forms with their Gram matrices, radicals and discriminants; the sesquilinear and Hermitian forms with an involution, their trace forms and reduced norms; the quadratic forms with their polar forms, diagonalisations, signatures and discriminants, and the norms of $\mathbb{C}$, $\mathbb{H}$, $\mathbb{B}$, the split biquaternions and $\mathbb{O}$; the alternating and symplectic forms with the Pfaffian, the Darboux normal form and the Lagrangians; and the classification theorems — Witt's extension, index and cancellation, Sylvester's law, the classifications over $\mathbb{C}$ and $\mathbb{F}_q$, the Hasse–Minkowski principle, and the Witt and Grothendieck–Witt rings with their invariants. Beside the examples stand the non-examples: the characteristic-$2$ failures of the polar correspondence and of alternation, the isotropic split octonion norm, the forms over $\mathbb{Q}$ that need their local invariants, and the degenerate forms without a discriminant. The list introduces and proves nothing; it is the index of the forms of the corpus.
 
 ## Summary of Notation
 
@@ -134,7 +134,7 @@ A catalogue denotes its objects by name rather than by symbol. The symbols that 
 | $Sp(V,\omega)$ | the symplectic group |
 | $W(F)$, $GW(F)$, $I$ | the Witt ring, the Grothendieck–Witt ring, the fundamental ideal |
 | $\langle\!\langle a_1,\ldots,a_n\rangle\!\rangle$ | a Pfister form |
-| $N$, $\operatorname{Nrd}$, $\operatorname{Tr}$, $\operatorname{Trd}$ | a norm form, the reduced norm, the trace and reduced trace |
+| $N$, $\operatorname{Nrd}$, $\operatorname{Tr}$, $\operatorname{Trd}$ | a norm, the reduced norm, the trace and reduced trace |
 | $s(x,y)$, $\sigma$, $A^\sigma$ | a sesquilinear form, an involution, its fixed ring |
 
 ## Further Reading

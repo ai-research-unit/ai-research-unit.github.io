@@ -40,10 +40,10 @@ A connection is a rule of parallel transport, given locally by a connection form
 | a connection $\nabla$ | a derivation of the sections, $\nabla(fs) = df\otimes s + f\nabla s$ | *Fibre Bundles, Connections and Curvature* |
 | the connection form in a frame $\omega = (\omega^i_{\ j})$ | $\nabla = d+\omega$, matrix-valued in the frame | *Fibre Bundles, Connections and Curvature* |
 | the change of frame $\omega' = g^{-1}\omega g + g^{-1}dg$ | the transformation of the connection, the gauge transformation rule | *Fibre Bundles, Connections and Curvature* |
-| a connection form on a principal bundle $\omega \in \Omega^1(P;\mathfrak{g})$ | $\omega(A^{\#}) = A$ and $R_g^*\omega = \operatorname{Ad}(g^{-1})\omega$ | *Fibre Bundles, Connections and Curvature* |
+| a connection form on a principal bundle $\omega \in \Omega^1(P;\mathrm{G})$ | $\omega(A^{\#}) = A$ and $R_g^*\omega = \operatorname{Ad}(g^{-1})\omega$ | *Fibre Bundles, Connections and Curvature* |
 | the horizontal subspace $H_pP = \ker\omega_p$ | the complement to the vertical, defining the transport | *Fibre Bundles, Connections and Curvature* |
 | the curvature $R = d\omega + \omega\wedge\omega$ | the $\operatorname{End}(E)$-valued $2$-form measuring noncommutation | *Fibre Bundles, Connections and Curvature* |
-| the curvature of a principal connection $\Omega = d\omega + \frac12[\omega,\omega]$ | the $\mathfrak{g}$-valued curvature form | *Fibre Bundles, Connections and Curvature* |
+| the curvature of a principal connection $\Omega = d\omega + \frac12[\omega,\omega]$ | the $\mathrm{G}$-valued curvature form | *Fibre Bundles, Connections and Curvature* |
 | the Bianchi identity $d^\nabla R = 0$ | the differential condition the curvature satisfies | *Fibre Bundles, Connections and Curvature* |
 | the holonomy group of a connection | the group of the parallel transports around loops | *Fibre Bundles, Connections and Curvature* |
 | a flat connection | the connection with $R = 0$, locally trivial or a Maurer–Cartan form | *Fibre Bundles, Connections and Curvature* |
@@ -58,7 +58,7 @@ The invariant polynomials of the curvature are closed and their de Rham classes 
 
 | Class | The property it measures | Introduced in |
 |---|---|---|
-| the Chern–Weil homomorphism | the map $S^\bullet(\mathfrak{g}^*)^G \to H^{\mathrm{ev}}_{dR}(M)$ from invariant polynomials to cohomology | *Fibre Bundles, Connections and Curvature* |
+| the Chern–Weil homomorphism | the map $S^\bullet(\mathrm{G}^*)^G \to H^{\mathrm{ev}}_{dR}(M)$ from invariant polynomials to cohomology | *Fibre Bundles, Connections and Curvature* |
 | the first Chern class $c_1(L)$ | the class of $\frac{i}{2\pi}\mathcal{F}$, the curvature of a line bundle | *Fibre Bundles, Connections and Curvature* |
 | the Euler class $e(E)$ | the class of a real oriented bundle of even rank, the obstruction to a nowhere-zero section | *Characteristic Classes* |
 | the Stiefel–Whitney classes $w_i(E) \in H^i(B;\mathbb{Z}/2)$ | the $\mathbb{Z}/2$ classes; $w_1$ is orientability and $w_2$ is the spin obstruction | *Characteristic Classes* |
@@ -137,7 +137,7 @@ A catalogue denotes its objects by name rather than by symbol. The symbols that 
 | $BO(n)$, $BU(n)$, $K^0(B)$ | Classifying spaces and K-theory |
 | $\langle\kappa(TM),[M]\rangle$ | Characteristic number |
 | $\mathbb{Z}$, $\mathbb{Q}$, $\mathbb{C}$ | The standard number systems of the corpus |
-| $\operatorname{Ad}$, $\operatorname{End}$ | Adjoint action of the structure group on $\mathfrak{g}$; endomorphism bundle of a vector bundle |
+| $\operatorname{Ad}$, $\operatorname{End}$ | Adjoint action of the structure group on $\mathrm{G}$; endomorphism bundle of a vector bundle |
 | $\mathbb{K}$ | The field of scalars of a bundle or of a classifying space |
 | $\mathcal{F}$, $\operatorname{sign}(M)$ | The curvature of a line bundle, $\frac{i}{2\pi}\mathcal{F} = c_1(L)$; the signature of a closed manifold of dimension $4k$ |
 

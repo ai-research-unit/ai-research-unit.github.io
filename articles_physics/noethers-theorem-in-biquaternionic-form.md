@@ -10,7 +10,7 @@ $$
 S = -mc\int\sqrt{-\,d\tilde{Q}\,\overline{d\tilde{Q}}},
 $$
 
-whose integrand is built from the norm form of the displacement biquaternion, and it gives the conservation of the four-current in the framework form $\mathrm{Sc}(\bar{\tilde{\nabla}}\tilde{J}) = 0$. This article joins the two ends: it derives the current from the symmetry of the action, for the two kinds of symmetry the framework contains.
+whose integrand is built from the biquaternion norm of the displacement biquaternion, and it gives the conservation of the four-current in the framework form $\mathrm{Sc}(\bar{\tilde{\nabla}}\tilde{J}) = 0$. This article joins the two ends: it derives the current from the symmetry of the action, for the two kinds of symmetry the framework contains.
 
 **Two kinds of symmetry.** A relativistic action has
 
@@ -165,7 +165,7 @@ $$
 \qquad (\tilde{U} = \gamma(ic\,e_0 + \mathbf{v})).
 $$
 
-The mass-shell relation $\tilde{P}\bar{\tilde{P}} = -m^2c^2$ follows. Translation invariance is thus the symmetry whose Noether charge is the four-momentum; the four-momentum is conserved for a free particle, $\dot{\tilde{P}} = 0$, because $L$ has no explicit $\tilde{Q}$-dependence. As an independent check, a particle with $m = c = 1$, $\mathbf{p} = (0.6,0,0)$ and $E = \sqrt{1.36}$ was boosted by the rotor $\tilde{\Lambda} = \cosh(\psi/2) + i\sinh(\psi/2)e_1$ with $\psi = 1.2$: the norm form is $-1$ in both frames, confirming that the Noether charge transforms as a four-vector.
+The mass-shell relation $\tilde{P}\bar{\tilde{P}} = -m^2c^2$ follows. Translation invariance is thus the symmetry whose Noether charge is the four-momentum; the four-momentum is conserved for a free particle, $\dot{\tilde{P}} = 0$, because $L$ has no explicit $\tilde{Q}$-dependence. As an independent check, a particle with $m = c = 1$, $\mathbf{p} = (0.6,0,0)$ and $E = \sqrt{1.36}$ was boosted by the rotor $\tilde{\Lambda} = \cosh(\psi/2) + i\sinh(\psi/2)e_1$ with $\psi = 1.2$: the biquaternion norm is $-1$ in both frames, confirming that the Noether charge transforms as a four-vector.
 
 **The conservation law for a system, stated correctly.** For an isolated system of bodies $a$ the conserved object is the **total** four-momentum, and the correct statement is
 

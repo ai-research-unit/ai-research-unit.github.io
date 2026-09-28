@@ -27,7 +27,7 @@ $$
 $$
 gives $\rho = 1$ for the doublet, $\rho > 1$ for a $T = 1$, $T_3 = 0$ triplet admixture and $\rho = \tfrac12$ for a $T = 1$, $T_3 = 1$ one; all of these were recomputed.
 - **Interpretation.** Identifying the custodial group with the diagonal of the framework's left–right multiplication, and the vacuum expectation value with a central element invariant under conjugation, is the interpretive link. The identification is exact at the level of the algebra and is labelled where the Standard Model's quantum numbers are involved.
-- **Gap, left visible.** The framework's scalar is central and hence a singlet; it cannot transform in a doublet and cannot break $SU(2)_L$. Moreover the framework's non-abelian action on matter is left multiplication, which is vector-like, so its $\mathfrak{su}(2)$ is not the weak isospin. Custodial symmetry is therefore present in the framework as an algebraic action on the real-quaternion space and is absent as a property of the framework's scalar sector; the doublet, the hypercharge and the weak mixing angle are imports, as the companion agendas record.
+- **Gap, left visible.** The framework's scalar is central and hence a singlet; it cannot transform in a doublet and cannot break $SU(2)_L$. Moreover the framework's non-abelian action on matter is left multiplication, which is vector-like, so its $\mathrm{SU}(2)$ is not the weak isospin. Custodial symmetry is therefore present in the framework as an algebraic action on the real-quaternion space and is absent as a property of the framework's scalar sector; the doublet, the hypercharge and the weak mixing angle are imports, as the companion agendas record.
 
 - Companion article *The Higgs Mechanism in Biquaternionic Form*, for the symmetry-breaking potential and the vacuum expectation value.
 - Companion article *Goldstone's Theorem in Biquaternionic Form*, for the Goldstone direction and the decay constant.
@@ -58,9 +58,9 @@ H \;\longmapsto\; e^{\,i\alpha^a T^a_L}\,H\,e^{\,i\beta T_3^{R}} ,
 T^a_L = \frac{\tau^a}{2},\quad T_3^R = \frac{\tau^3}{2} .
 $$
 
-The point of the arrangement is that the left action is the full $SU(2)_L$ and the right action is an $SU(2)_R$ whose $T_3^R$ is the hypercharge. With this normalisation the kinetic term is the framework's norm form of the derivative,
+The point of the arrangement is that the left action is the full $SU(2)_L$ and the right action is an $SU(2)_R$ whose $T_3^R$ is the hypercharge. With this normalisation the kinetic term is the framework's biquaternion norm of the derivative,
 
-<!-- CONVENTION — norm-form kinetic term: the contraction $\mathrm{Tr}(\partial_\mu H^\dagger\partial_\mu H)$ is summed over the four coordinate derivatives with both indices down, and the overall minus sign is what makes the kinetic energy positive. Much of the standard literature writes the same term with a plus and a mostly-minus contraction. Do not "fix" the minus sign. -->
+<!-- CONVENTION — biquaternion-norm kinetic term: the contraction $\mathrm{Tr}(\partial_\mu H^\dagger\partial_\mu H)$ is summed over the four coordinate derivatives with both indices down, and the overall minus sign is what makes the kinetic energy positive. Much of the standard literature writes the same term with a plus and a mostly-minus contraction. Do not "fix" the minus sign. -->
 
 $$
 -\,\frac12\,\mathrm{Tr}\!\left(\partial_\mu H^\dagger\,\partial_\mu H\right)
@@ -205,7 +205,7 @@ The construction above is the standard custodial mechanism written in the framew
 
 **The framework's scalar is central.** The scalar of *The Higgs Mechanism in Biquaternionic Form* is $\tilde\Phi = \varphi\,e_0\in\mathbb{C}_{\mathbb{B}}$, a central field carrying only the abelian central phase. It commutes with every element of $\mathbb{B}$ and is therefore a **singlet** of the compact $SU(2)\subset\mathbb{M}_-$: the left and right actions both act trivially on it, $g\,\tilde\Phi\,g^{-1} = \tilde\Phi$. A singlet cannot break a non-abelian symmetry, so the framework's scalar cannot be the doublet whose vacuum expectation value gives the $W$ and $Z$ their masses. The quaternion-valued field $\tilde H$ of the previous sections is a **different object** from the framework's scalar: it is the natural carrier of the custodial action, and it is not the field that the framework's scalar sector builds.
 
-**The non-abelian action is vector-like.** Even granting a quaternion-valued scalar, the framework's non-abelian gauge action on matter is left multiplication, and on the framework's spinor module left multiplication acts on both chiral halves with the same representation. The companion agendas show that this action is vector-like and that the $SU(2)$ doublet is pseudoreal, so the framework's $\mathfrak{su}(2)$ is not the chiral $SU(2)_L$: it cannot give the left-handed and right-handed fermions inequivalent representations. The custodial symmetry of the electroweak sector is a symmetry of a chiral gauge theory, and the framework's non-abelian structure does not reach the chiral gauge theory in the first place.
+**The non-abelian action is vector-like.** Even granting a quaternion-valued scalar, the framework's non-abelian gauge action on matter is left multiplication, and on the framework's spinor module left multiplication acts on both chiral halves with the same representation. The companion agendas show that this action is vector-like and that the $SU(2)$ doublet is pseudoreal, so the framework's $\mathrm{SU}(2)$ is not the chiral $SU(2)_L$: it cannot give the left-handed and right-handed fermions inequivalent representations. The custodial symmetry of the electroweak sector is a symmetry of a chiral gauge theory, and the framework's non-abelian structure does not reach the chiral gauge theory in the first place.
 
 **Hypercharge is not supplied.** The custodial group's right factor is broken to its $T_3^R$ subgroup by the hypercharge interaction, and the framework derives no hypercharge, no assignment of it, and no mixing angle. The $\rho$ parameter's custodial protection is a statement about the relative size of the charged and neutral mass matrices, and it presupposes an abelian factor whose charge assignment is fixed; the framework supplies the central abelian factor but not the assignment that makes it hypercharge.
 
@@ -255,7 +255,7 @@ with the diagonal $g_L = g_R$ the unbroken $SU(2)_V$ and the central vacuum $\la
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
 | $e_0 = 1, e_1, e_2, e_3$ | Quaternion basis, $e_k^2 = -e_0$, $e_ae_b = -\delta_{ab}e_0+\varepsilon_{abc}e_c$ |
 | $i$ | Central scalar imaginary, $i^2 = -1$ |
-| $\mathbb{M}_-, \mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
+| $\mathbb{M}_+, \mathbb{M}_-$ | Informational (Hermitian) and material (anti-Hermitian) sectors |
 | $\mathbb{H}_{\mathbb{B}}$, $\mathbb{H}^1_{\mathbb{B}}$ | Real quaternions; unit real quaternions $\cong SU(2)$ |
 | $\mathbb{C}_{\mathbb{B}}$ | Center; home of the central vacuum |
 | $T_a = \tfrac{i}{2}e_a$, $\mathrm{Tr}(T_aT_b) = \tfrac12\delta_{ab}$ | Standard Hermitian generators of the compact group |
@@ -264,7 +264,7 @@ with the diagonal $g_L = g_R$ the unbroken $SU(2)_V$ and the central vacuum $\la
 | $SU(2)_V = \{g_L = g_R\}$ | Custodial (diagonal) subgroup |
 | $\langle\tilde H\rangle = \frac{v}{\sqrt2}e_0$ | Central vacuum; custodial invariant |
 | $\tilde\Phi = \varphi\,e_0\in\mathbb{C}_{\mathbb{B}}$ | Framework's actual scalar; a singlet |
-| $-\frac12\mathrm{Tr}(\partial_\mu H^\dagger\partial_\mu H)$ | Custodial-invariant kinetic term of the doublet matrix $H$ (norm form of the derivative) |
+| $-\frac12\mathrm{Tr}(\partial_\mu H^\dagger\partial_\mu H)$ | Custodial-invariant kinetic term of the doublet matrix $H$ (biquaternion norm of the derivative) |
 | $M_W^2 = g^2v^2/4$ | Charged weak-boson mass (standard) |
 | $M_Z^2 = (g^2+g'^2)v^2/4$ | Neutral weak-boson mass (standard) |
 | $\cos^2\theta_W = g^2/(g^2+g'^2)$ | Weak mixing angle (standard) |

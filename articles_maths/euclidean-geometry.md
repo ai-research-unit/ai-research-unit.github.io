@@ -29,7 +29,7 @@ $$
 
 with equality if and only if $x$ and $y$ are linearly dependent.
 
-**Proof.** The quadratic $|x + ty|^2 = |x|^2 + 2t\langle x, y\rangle + t^2|y|^2$ is nonnegative for all real $t$; its discriminant is at most zero, which is the inequality, and equality forces a double root, hence dependence. $\square$
+**Proof.** The quadratic $|x + ty|^2 = |x|^2 + 2t\langle x, y\rangle + t^2|y|^2$ is nonnegative for all real $t$; its discriminant is at most zero, which is the inequality, and equality forces a double root, hence dependence.
 
 **Corollary.** The distance $d$ is a metric on $\mathbb{R}^n$, its metric topology is the standard topology, and the triangle inequality $|x + z| \leq |x| + |y| + |z - y|$ holds in the form $d(x, z) \leq d(x, y) + d(y, z)$.
 
@@ -53,13 +53,13 @@ $$
 
 and the representation is unique. Consequently $E(n)$ is the semidirect product $\mathbb{R}^n \rtimes O(n)$, with multiplication $(A, b)(A', b') = (AA', Ab' + b)$, and it is a Lie group of dimension $n(n+1)/2$; the subgroup of orientation-preserving isometries is $\mathbb{R}^n \rtimes SO(n)$.
 
-**Proof sketch.** An isometry fixes the origin after a translation, and an isometry fixing the origin preserves the norm, hence the inner product by polarisation, so its linear part lies in $O(n)$; conversely every such map is an isometry. The semidirect product structure is the composition law, and the Lie group structure is the manifold structure of the semidirect product of the manifold $\mathbb{R}^n$ with the Lie group $O(n)$ of *Matrix Groups and Classical Groups*. $\square$
+**Proof sketch.** An isometry fixes the origin after a translation, and an isometry fixing the origin preserves the norm, hence the inner product by polarisation, so its linear part lies in $O(n)$; conversely every such map is an isometry. The semidirect product structure is the composition law, and the Lie group structure is the manifold structure of the semidirect product of the manifold $\mathbb{R}^n$ with the Lie group $O(n)$ of *Matrix Groups and Classical Groups*.
 
 **Definition.** A **rigid motion** is an orientation-preserving isometry. An isometry $F(x) = Ax + b$ is a **translation** if $A = I$, a **rotation** if it has a fixed point and $A \in SO(n)$, a **reflection** if it has a fixed hyperplane and $A$ has determinant $-1$, and a **glide reflection** if it is the composition of a reflection and a translation parallel to its fixed hyperplane.
 
 **Theorem (classification of plane isometries).** Every isometry of the Euclidean plane is exactly one of: the identity; a translation; a rotation about a point; a reflection in a line; or a glide reflection.
 
-**Proof sketch.** Write $F(x) = Ax + b$. If $A = I$ the map is a translation or the identity. Otherwise $A \neq I$; if $A$ has a fixed vector, solving $x = Ax + b$ gives a fixed point and the map is a rotation or reflection according to the determinant; if $A$ has no fixed vector, which happens exactly when $A$ is a reflection matrix and $b$ is not orthogonal to the reflection axis, the map is a glide reflection. The cases exhaust the possibilities for the orthogonal part. $\square$
+**Proof sketch.** Write $F(x) = Ax + b$. If $A = I$ the map is a translation or the identity. Otherwise $A \neq I$; if $A$ has a fixed vector, solving $x = Ax + b$ gives a fixed point and the map is a rotation or reflection according to the determinant; if $A$ has no fixed vector, which happens exactly when $A$ is a reflection matrix and $b$ is not orthogonal to the reflection axis, the map is a glide reflection. The cases exhaust the possibilities for the orthogonal part.
 
 **Example (the three kinds of rotation).** In the plane the orientation-preserving isometries with a fixed point form the group $SO(2) = \{R_\theta\}$, whose generating rotations satisfy $R_\theta^2 = -1$ for $\theta = \pi/2$: this is the **elliptic** rotation, the geometry of the algebra $\mathbb{C}$. The parabolic and hyperbolic analogues — the transvections of $\mathbb{D}'$ and the boosts of $\mathbb{D}$ — are not Euclidean isometries, but they are the Euclidean and hyperbolic cases of the correspondence of *The Three Two-Dimensional Algebras and the Three Kinds of Rotation*: the parabolic rotations generate the translations of the Euclidean line, and the hyperbolic rotations generate the Lorentz boosts.
 
@@ -77,7 +77,7 @@ The synthetic theory begins with **points**, **lines** and the **incidence** rel
 
 **Theorem.** Euclid's fifth postulate and Playfair's axiom are equivalent, given the other incidence and congruence axioms.
 
-**Proof sketch.** Playfair implies Euclid: if the two lines did not meet, the line through the given point parallel to the first would make with the transversal the supplementary angle prescribed, and the angle sum would be two right angles, contradicting the hypothesis. Euclid implies Playfair: given a line and a point, construct the parallel by copying the angle, which exists by the congruence axioms, and a second parallel would meet the first by the fifth postulate applied to a suitable transversal. $\square$
+**Proof sketch.** Playfair implies Euclid: if the two lines did not meet, the line through the given point parallel to the first would make with the transversal the supplementary angle prescribed, and the angle sum would be two right angles, contradicting the hypothesis. Euclid implies Playfair: given a line and a point, construct the parallel by copying the angle, which exists by the congruence axioms, and a second parallel would meet the first by the fifth postulate applied to a suitable transversal.
 
 **Remark.** The parallel postulate is exactly what fails in spherical geometry, where any two great circles meet, and what holds in the opposite extreme in hyperbolic geometry, where infinitely many parallels pass through a point. The three geometries of constant curvature are therefore distinguished, at the level of the synthetic axioms, by the number of parallels: zero, one, or infinitely many.
 
@@ -85,7 +85,7 @@ The synthetic theory begins with **points**, **lines** and the **incidence** rel
 
 **Theorem (angle sum).** In Euclidean geometry the sum of the interior angles of a triangle is two right angles; more generally the sum of the interior angles of a convex $n$-gon is $(n-2)\pi$.
 
-**Proof sketch.** Draw through a vertex the unique parallel to the opposite side; the alternate interior angles are congruent to the two base angles, and the three angles at the vertex sum to a straight angle. The polygon case follows by triangulation from one vertex. $\square$
+**Proof sketch.** Draw through a vertex the unique parallel to the opposite side; the alternate interior angles are congruent to the two base angles, and the three angles at the vertex sum to a straight angle. The polygon case follows by triangulation from one vertex.
 
 **Theorem (exterior angle).** An exterior angle of a triangle is the sum of the two remote interior angles, and is greater than either of them.
 
@@ -98,7 +98,7 @@ $$
 **Proof.** Let the altitude from the right angle meet the hypotenuse at $D$, dividing it into segments of lengths $m$ and $n$, with $c = m + n$. The two smaller triangles are similar to the original, because they share an acute angle with it, so $a^2 = mc$ and $b^2 = nc$ by the similarity ratios. Adding,
 
 $$
-a^2 + b^2 = (m + n)c = c^2 . \qquad \square
+a^2 + b^2 = (m + n)c = c^2 .
 $$
 
 **Theorem (law of cosines).** In a triangle with sides $a, b, c$ and the angle $\gamma$ between the sides $a$ and $b$,
@@ -111,7 +111,7 @@ For $\gamma = \pi/2$ this is Pythagoras, and the law is the synthetic statement 
 
 **Theorem (Thales).** An angle inscribed in a semicircle is a right angle: if $A, B$ are the ends of a diameter of a circle and $C$ a point on the circle, then the angle at $C$ between $CA$ and $CB$ is a right angle.
 
-**Proof.** Let $O$ be the centre. The triangles $OAC$ and $OBC$ are isosceles with $OA = OC = OB = r$, so the angle at $A$ equals the angle at $C$ in the first and the angle at $B$ equals the angle at $C$ in the second; the three angles of the triangle $ABC$ sum to $\pi$, and the angle at $C$ is the sum of the two equal angles, which gives it $\pi/2$. $\square$
+**Proof.** Let $O$ be the centre. The triangles $OAC$ and $OBC$ are isosceles with $OA = OC = OB = r$, so the angle at $A$ equals the angle at $C$ in the first and the angle at $B$ equals the angle at $C$ in the second; the three angles of the triangle $ABC$ sum to $\pi$, and the angle at $C$ is the sum of the two equal angles, which gives it $\pi/2$.
 
 ## Coordinates and the Algebraic Model
 
@@ -121,7 +121,7 @@ For $\gamma = \pi/2$ this is Pythagoras, and the law is the synthetic statement 
 
 **Theorem (the analytic model).** The map from the synthetic Euclidean plane to $\mathbb{R}^2$ determined by a choice of Cartesian coordinates is a bijection carrying incidence, betweenness, congruence of segments and congruence of angles to the corresponding algebraic relations; consequently the synthetic theory is a model of the analytic one and conversely.
 
-**Proof sketch.** The correspondence is by construction: lines become the solution sets of linear equations, betweenness becomes the order of the affine parameter, segment congruence becomes equality of the norms of the difference vectors, and angle congruence becomes equality of the cosines. The verification of the axioms is a direct computation in each case, and the two theories prove the same theorems because they have the same models. $\square$
+**Proof sketch.** The correspondence is by construction: lines become the solution sets of linear equations, betweenness becomes the order of the affine parameter, segment congruence becomes equality of the norms of the difference vectors, and angle congruence becomes equality of the cosines. The verification of the axioms is a direct computation in each case, and the two theories prove the same theorems because they have the same models.
 
 **Remark.** The analytic model is the reason Euclidean geometry is the geometry of the standard inner product: every synthetic theorem becomes a computation with the positive definite form $\sum x_i^2$, and the failure of the parallel postulate in the other two geometries becomes a statement about the sign of the quadratic form that replaces it.
 
@@ -131,7 +131,7 @@ For $\gamma = \pi/2$ this is Pythagoras, and the law is the synthetic statement 
 
 **Theorem (congruence criteria).** Two triangles are congruent if they have (SSS) three pairs of equal sides, (SAS) two pairs of equal sides and the included angles equal, or (ASA) two pairs of equal angles and the included sides equal.
 
-**Proof sketch.** Place one triangle with a vertex at the origin and two sides along the axes. The SAS condition determines the images of the three vertices under an isometry, since an isometry is determined by the image of two points and the choice of side; the SSS condition determines the third vertex up to reflection across the side, and the reflection is an isometry; the ASA condition determines the two rays and hence their intersection. $\square$
+**Proof sketch.** Place one triangle with a vertex at the origin and two sides along the axes. The SAS condition determines the images of the three vertices under an isometry, since an isometry is determined by the image of two points and the choice of side; the SSS condition determines the third vertex up to reflection across the side, and the reflection is an isometry; the ASA condition determines the two rays and hence their intersection.
 
 **Remark.** The congruence criteria are the synthetic shadows of the statement that an isometry is determined by its action on an affine frame; in the analytic model, an isometry is $x \mapsto Ax + b$ and a triangle determines $A$ and $b$ up to the stabiliser of the frame. Similarity — the same shape up to scaling — is the corresponding statement for the group $\mathbb{R}^n \rtimes (\mathbb{R}_{>0} \times O(n))$.
 
@@ -145,7 +145,7 @@ For $\gamma = \pi/2$ this is Pythagoras, and the law is the synthetic statement 
 
 **Definition.** A **regular polyhedron** is a convex polyhedron whose faces are congruent regular polygons and whose vertex figures are congruent. In Euclidean three-space there are exactly five: the tetrahedron, the cube, the octahedron, the dodecahedron and the icosahedron, with faces of $3, 4, 3, 5, 3$ sides respectively.
 
-**Proof sketch.** At a vertex at least three faces must meet, and the angle sum of the faces at a vertex is less than $2\pi$. If the faces are regular $m$-gons, the condition is $k(1 - 2/m) < 2$, with $k \geq 3$; the integer solutions are $(m, k) = (3,3), (3,4), (3,5), (4,3), (5,3)$, the five solids of the statement. $\square$
+**Proof sketch.** At a vertex at least three faces must meet, and the angle sum of the faces at a vertex is less than $2\pi$. If the faces are regular $m$-gons, the condition is $k(1 - 2/m) < 2$, with $k \geq 3$; the integer solutions are $(m, k) = (3,3), (3,4), (3,5), (4,3), (5,3)$, the five solids of the statement.
 
 **Theorem.** The symmetry group of the tetrahedron is the alternating group $A_4$ of order $12$, of the cube and the octahedron the symmetric group $S_4$ of order $24$, and of the dodecahedron and the icosahedron the alternating group $A_5$ of order $60$; these are the finite rotation groups of the sphere, leading to the classification.
 
@@ -157,7 +157,7 @@ For $\gamma = \pi/2$ this is Pythagoras, and the law is the synthetic statement 
 
 **Theorem (crystallographic restriction).** If a finite-order rotation is a symmetry of a periodic plane tiling, its order is $2, 3, 4$ or $6$. Equivalently, a finite subgroup of the rotation group of a lattice in the plane is cyclic of order $1, 2, 3, 4$ or $6$.
 
-**Proof sketch.** Let $R$ be a rotation of order $m$ preserving a lattice $L = \mathbb{Z}u_1 \oplus \mathbb{Z}u_2$. In the lattice basis, $R$ has an integer matrix, so its trace $2\cos(2\pi/m)$ is an integer; since $\cos(2\pi/m) \in [-1, 1]$, the trace lies in $\{-2, -1, 0, 1, 2\}$, giving $m \in \{1, 2, 3, 4, 6\}$. $\square$
+**Proof sketch.** Let $R$ be a rotation of order $m$ preserving a lattice $L = \mathbb{Z}u_1 \oplus \mathbb{Z}u_2$. In the lattice basis, $R$ has an integer matrix, so its trace $2\cos(2\pi/m)$ is an integer; since $\cos(2\pi/m) \in [-1, 1]$, the trace lies in $\{-2, -1, 0, 1, 2\}$, giving $m \in \{1, 2, 3, 4, 6\}$.
 
 **Remark (boundary with the crystallographic groups).** The symmetry groups of periodic tilings , more generally, the discrete subgroups of the Euclidean group $E(n)$ that contain a full lattice of translations, are the **crystallographic groups**: the $17$ wallpaper groups in the plane and the $230$ space groups in three-space, or $219$ once the enantiomorphic pairs are identified. Their classification, their structure as extensions of a lattice by a point group, and the Bieberbach theorems belong, the application article of this category, and the crystallographic restriction proved here is the finiteness statement that the classification there takes as its starting point. What belongs to Euclidean geometry is the geometry of the Euclidean group and the regular configurations it acts on; what belongs to the other article is the group theory of the discrete subgroups.
 
@@ -171,11 +171,11 @@ $$
 |y - x| = \left|\int_a^b \gamma'(t)\,dt\right| \leq \int_a^b |\gamma'(t)|\,dt = L(\gamma),
 $$
 
-with equality exactly when $\gamma'$ is always a nonnegative multiple of the constant direction $y - x$, which is the straight segment. $\square$
+with equality exactly when $\gamma'$ is always a nonnegative multiple of the constant direction $y - x$, which is the straight segment.
 
 **Theorem.** The isometry group $E(n)$ is exactly the group of bijections of $\mathbb{R}^n$ preserving the Euclidean distance, and it is generated by reflections: every isometry is a product of at most $n + 1$ reflections in hyperplanes.
 
-**Proof sketch.** Reflections generate the orthogonal group of the linear part by the Cartan–Dieudonné theorem, and a reflection in an affine hyperplane supplies the translation part. $\square$
+**Proof sketch.** Reflections generate the orthogonal group of the linear part by the Cartan–Dieudonné theorem, and a reflection in an affine hyperplane supplies the translation part.
 
 **Remark (Euclidean geometry as a model of curvature zero).** The Euclidean space $\mathbb{R}^n$ with the standard metric is the complete simply connected Riemannian manifold of constant sectional curvature zero; its isometry group is $E(n)$, acting transitively on points and, through the stabiliser $O(n)$, on frames. Its geometry is the flat case of the trichotomy of *Curvature and Geodesics*, and the parallel postulate holds in it exactly because the curvature vanishes. The relation between the curvature and the parallel postulate is made precise by the Jacobi-field comparison of *Riemannian Geometry*: zero curvature is the boundary case in which the comparison field is linear.
 

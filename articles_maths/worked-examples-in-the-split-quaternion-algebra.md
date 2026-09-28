@@ -3,11 +3,11 @@
 
 ## Introduction
 
-This article collects explicit computations in the split-quaternion algebra $\mathbb{H}_{\mathrm{s}}$, in the order in which the theory is built: the basis products; the three involutions and their eigenspaces; the idempotents and the two minimal left ideals; explicit pairs of zero divisors; the unit criterion; and the action of the unit group on the vector subspace. Every number below is computed from the multiplication table of *Split-Quaternion Algebra*.
+This article collects explicit computations in the split-quaternion algebra $\mathbb{H}_{\mathrm{s}}$, in the order in which the theory is built: the basis products; the three involutions and their eigenspaces; the idempotents and the two minimal left ideals; explicit pairs of zero divisors; and the unit criterion. Every number below is computed from the multiplication table of *Split-Quaternion Algebra*.
 
 The article is a companion to the structural articles of the category. Its purpose is to put the abstract statements on concrete elements, so that the reader can carry each of them back to a computation. It introduces no new result; the statements it illustrates are those of *Split-Quaternion Algebra*, *Split-Quaternion Idempotents and Projections*, *Split-Quaternion Zero Divisors*, *Split-Quaternion Norm and Invertibility* and *Split-Quaternion Rotations and the Lorentz Group*.
 
-**Conventions.** A split-quaternion is $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$, with $q_0, q_1, q_2, q_3 \in \mathbb{R}$ and the products $e_1^2 = -1$, $e_2^2 = +1$, $e_3 = e_1 e_2$, $e_1 e_2 = -e_2 e_1$. Its conjugation is $\bar{\tilde q} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$, its norm form is $N(\tilde q) = \tilde q\bar{\tilde q} = q_0^2 + q_1^2 - q_2^2 - q_3^2$,  The elements $\tilde\pi_\pm = \tfrac{1}{2}(1 \pm e_2)$ are the standard idempotents.
+**Conventions.** A split-quaternion is $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$, with $q_0, q_1, q_2, q_3 \in \mathbb{R}$ and the products $e_1^2 = -1$, $e_2^2 = +1$, $e_3 = e_1 e_2$, $e_1 e_2 = -e_2 e_1$. Its conjugation is $\bar{\tilde q} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$ and its central product is $N(\tilde q) = \tilde q\bar{\tilde q} = q_0^2 + q_1^2 - q_2^2 - q_3^2$, formed and evaluated algebraically and read metrically in *Split-Quaternion Norm and Invertibility*. The elements $\tilde\pi_\pm = \tfrac{1}{2}(1 \pm e_2)$ are the standard idempotents.
 
 ## The Basis Products
 
@@ -139,7 +139,7 @@ $$
 
 so $e_1 + e_3$ is a nonzero nilpotent and the pair $(e_1+e_3, e_1+e_3)$ is a zero-divisor pair.
 
-Every nilpotent lies in the vector subspace $V$ and on the light cone $q_1^2 = q_2^2 + q_3^2$; the element $1 + e_2$ shows that the zero divisor set is strictly larger than the nilpotent set, since $(1+e_2)^2 = 2(1+e_2) \neq 0$.
+Every nilpotent lies in the vector subspace $V$ and on the level set $N = 0$, $q_1^2 = q_2^2 + q_3^2$; the element $1 + e_2$ shows that the zero divisor set is strictly larger than the nilpotent set, since $(1+e_2)^2 = 2(1+e_2) \neq 0$.
 
 **Example (a mixed pair).** The idempotent $\tilde\pi_-$ annihilates $1 + e_2$:
 
@@ -151,60 +151,32 @@ a pair in which neither factor is a nilpotent.
 
 ## The Unit Criterion Worked
 
-**Theorem (recalled).** A nonzero $\tilde q$ is invertible if and only if $N(\tilde q) \neq 0$, and then $\tilde q^{-1} = \bar{\tilde q}/N(\tilde q)$.
+**Criterion (from *Split-Quaternion Norm and Invertibility*).** A nonzero $\tilde q$ is invertible if and only if $N(\tilde q) \neq 0$, and then $\tilde q^{-1} = \bar{\tilde q}/N(\tilde q)$. It is recalled here only to be applied.
 
-**Example (a unit of positive norm).** For $\tilde q = 2 + e_1$, the norm is $N(\tilde q) = 4 + 1 = 5$, and
+**Example (a unit of positive norm).** For $\tilde q = 2 + e_1$, the split-quaternion norm is $N(\tilde q) = 4 + 1 = 5$, and
 
 $$
 \tilde q^{-1} = \frac{\bar{\tilde q}}{N(\tilde q)} = \frac{2 - e_1}{5}, \qquad
 (2 + e_1)\frac{2 - e_1}{5} = \frac{4 - e_1^2}{5} = \frac{5}{5} = 1 .
 $$
 
-**Example (a unit of norm one).** For $y = 1 + e_1 + e_2$, the norm is $N(y) = 1 + 1 - 1 = 1$, so $y^{-1} = \bar{y} = 1 - e_1 - e_2$; indeed $y\bar{y} = (1+e_1+e_2)(1-e_1-e_2) = 1$. Since $N(y) = 1$, the element is a unit split-quaternion.
+**Example (a unit of norm one).** For $y = 1 + e_1 + e_2$, the split-quaternion norm is $N(y) = 1 + 1 - 1 = 1$, so $y^{-1} = \bar{y} = 1 - e_1 - e_2$; indeed $y\bar{y} = (1+e_1+e_2)(1-e_1-e_2) = 1$. Since $N(y) = 1$, the element is a unit split-quaternion.
 
-**Example (a unit of negative norm).** For $z = e_2$, the norm is $N(z) = -1$, and $z^{-1} = \bar{z}/N(z) = (-e_2)/(-1) = e_2$, consistent with $e_2^2 = 1$. 
+**Example (a unit of negative norm).** For $z = e_2$, the split-quaternion norm is $N(z) = -1$, and $z^{-1} = \bar{z}/N(z) = (-e_2)/(-1) = e_2$, consistent with $e_2^2 = 1$. 
 
-**Example (a non-unit).** For $w = 1 + e_3$, the norm is $N(w) = 1 - 1 = 0$, so $w$ is not invertible; and indeed $(1+e_3)(1-e_3) = 0$. 
+**Example (a non-unit).** For $w = 1 + e_3$, the split-quaternion norm is $N(w) = 1 - 1 = 0$, so $w$ is not invertible; and indeed $(1+e_3)(1-e_3) = 0$. 
 
-The four examples realise the three-way classification of *Split-Quaternion Norm and Invertibility*: positive norm ($N > 0$), negative norm ($N < 0$), and zero norm ($N = 0$, the zero divisors).
+The four examples realise the three-way classification of *Split-Quaternion Norm and Invertibility* by the value of $N$: a positive value ($N = 5$ and $N = 1$), a negative value ($N = -1$), and the value zero ($N = 0$, the zero divisors).
 
-## The Lorentz Action on a Concrete Vector
+## The Action of the Unit Group
 
-A unit split-quaternion $g$ acts on the vector subspace $V$ by conjugation, $v \mapsto g v g^{-1}$, and this action preserves the restricted form $N|_V$ of signature $(2,1)$; it is the Lorentz action of *Split-Quaternion Rotations and the Lorentz Group*.
-
-**Example (an elliptic rotation).** For a real parameter $\theta$, put $g = \cos\theta + \sin\theta\, e_1 = e^{\theta e_1}$, a unit with $g^{-1} = \cos\theta - \sin\theta\, e_1$. Then
-
-$$
-g e_1 g^{-1} = e_1, \qquad
-g e_2 g^{-1} = \cos(2\theta)\, e_2 + \sin(2\theta)\, e_3, \qquad
-g e_3 g^{-1} = -\sin(2\theta)\, e_2 + \cos(2\theta)\, e_3 .
-$$
-
-So $g$ fixes the timelike direction $e_1$ and rotates the spacelike plane $\operatorname{span}\{e_2, e_3\}$ by the angle $2\theta$; the norm is preserved, $N(e_2) = N(e_3) = -1$. This is an elliptic (rotation) subgroup of the Lorentz group.
-
-**Example (a hyperbolic boost).** For a real parameter $s$, put $g = \cosh\tfrac{s}{2} + \sinh\tfrac{s}{2}\, e_2 = e^{s e_2/2}$, a unit with $g^{-1} = \cosh\tfrac{s}{2} - \sinh\tfrac{s}{2}\, e_2$. Then
-
-$$
-g e_2 g^{-1} = e_2, \qquad
-g e_1 g^{-1} = \cosh s\, e_1 - \sinh s\, e_3, \qquad
-g e_3 g^{-1} = -\sinh s\, e_1 + \cosh s\, e_3 .
-$$
-
-So $g$ fixes the spacelike direction $e_2$ and acts on the plane $\operatorname{span}\{e_1, e_3\}$ of signature $(1,1)$ as a hyperbolic rotation; the norm is preserved, $N(e_1) = 1$ and $N(e_3) = -1$. This is a hyperbolic (boost) subgroup of the Lorentz group.
-
-**Example (a concrete vector).** Take the timelike vector $v = e_1$ and the unit $g = e^{s e_2 / 2}$. Then
-
-$$
-v \longmapsto g v g^{-1} = \cosh s\, e_1 - \sinh s\, e_3,
-$$
-
-of norm $N = \cosh^2 s - \sinh^2 s = 1$, so the image is again a unit vector on the same sheet of the hyperboloid $N|_V = 1$. For $s = 0$ the image is $v$ itself; as $s$ grows the image moves along the hyperbola in the $(e_1, e_3)$-plane, which is the one-parameter orbit of the boost.
+The action of a unit on the vector subspace by conjugation, the elliptic and hyperbolic one-parameter subgroups it produces, and the classification of the vectors of $V$ by their orbits, use the multiplication table above and nothing else; they are computations of the Geometry group and are carried out in *Split-Quaternion Rotations and the Lorentz Group*. They are not repeated here, and the multiplication table of §*The Basis Products* is what they consume.
 
 ## Summary
 
 The basis products are collected in one table, and the multiplication table determines the algebra. The three involutions — conjugation, the principal involution $\alpha$ and the reversal $\rho$ — are diagonalisable; their individual eigenspaces and their common refinement $\mathbb{R}\cdot 1 \oplus \operatorname{span}\{e_1,e_2\} \oplus \mathbb{R} e_3$ are listed, and the plane $\operatorname{span}\{e_1,e_2\}$ does not split further.
 
-The idempotents $\tilde\pi_\pm$ are verified to be orthogonal, complete and of zero norm, and they give the two minimal left ideals $\mathbb{H}_{\mathrm{s}} \tilde\pi_\pm = \operatorname{span}\{\tilde\pi_\pm, e_1 \tilde\pi_\pm\}$. Explicit zero-divisor pairs are $(1+e_2)(1-e_2) = 0$, $(1+e_3)(1-e_3) = 0$, the nilpotent $(e_1+e_3)^2 = 0$, and the mixed pair $(1+e_2)\tilde\pi_- = 0$. The unit criterion is carried through on four elements: $2+e_1$ (positive norm), $1+e_1+e_2$ (norm one), $e_2$ (negative norm), and the non-unit $1+e_3$ (zero norm). Finally, the unit $e^{\theta e_1}$ acts on $V$ as a rotation of the plane $\operatorname{span}\{e_2,e_3\}$ by $2\theta$, and the unit $e^{s e_2/2}$ acts as a boost of the plane $\operatorname{span}\{e_1,e_3\}$ with parameter $s$, moving the timelike vector $e_1$ along its hyperbola.
+The idempotents $\tilde\pi_\pm$ are verified to be orthogonal, complete and of zero norm, and they give the two minimal left ideals $\mathbb{H}_{\mathrm{s}} \tilde\pi_\pm = \operatorname{span}\{\tilde\pi_\pm, e_1 \tilde\pi_\pm\}$. Explicit zero-divisor pairs are $(1+e_2)(1-e_2) = 0$, $(1+e_3)(1-e_3) = 0$, the nilpotent $(e_1+e_3)^2 = 0$, and the mixed pair $(1+e_2)\tilde\pi_- = 0$. The unit criterion is carried through on four elements: $2+e_1$ (positive norm), $1+e_1+e_2$ (norm one), $e_2$ (negative norm), and the non-unit $1+e_3$ (zero norm). The action of the unit group on the vector subspace is not worked here; it is the subject of *Split-Quaternion Rotations and the Lorentz Group*.
 
 ## Summary of Notation
 
@@ -215,10 +187,8 @@ The idempotents $\tilde\pi_\pm$ are verified to be orthogonal, complete and of z
 | $\bar{\cdot}$, $\alpha$, $\rho$ | conjugation, principal involution, reversal | *Split-Quaternion Algebra* |
 | $\tilde\pi_\pm = \tfrac{1}{2}(1\pm e_2)$ | the standard idempotents | *Split-Quaternion Idempotents and Projections* |
 | $\mathbb{H}_{\mathrm{s}} \tilde\pi_\pm$ | the two minimal left ideals | *Split-Quaternion Idempotents and Projections* |
-| $N(\tilde q) = q_0^2+q_1^2-q_2^2-q_3^2$ | the norm form, signature $(2,2)$ | *Split-Quaternion Norm and Invertibility* |
+| $N(\tilde q) = \tilde q\bar{\tilde q} = q_0^2+q_1^2-q_2^2-q_3^2$ | the central product, formed and evaluated algebraically | *Split-Quaternion Algebra* |
 | $\tilde q^{-1} = \bar{\tilde q}/N(\tilde q)$ | the inverse of a unit | *Split-Quaternion Norm and Invertibility* |
-| $g v g^{-1}$ | the adjoint action on $V$ | *Split-Quaternion Rotations and the Lorentz Group* |
-| $e^{\theta e_1}$, $e^{s e_2/2}$ | elliptic and hyperbolic one-parameter unit groups | *Split-Quaternion Rotations and the Lorentz Group* |
 
 ## Further Reading
 

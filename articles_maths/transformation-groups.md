@@ -25,11 +25,11 @@ and the identity map $\mathrm{id}_X$ satisfies $\mathrm{id}_X \circ f = f \circ 
 
 **Proposition.** A transformation is invertible if and only if it is bijective.
 
-**Proof.** If $f$ is invertible with inverse $g$, then $f(x) = f(y)$ gives $x = g(f(x)) = g(f(y)) = y$, so $f$ is injective, and for any $z$ one has $z = f(g(z))$, so $f$ is surjective. Conversely, if $f$ is bijective, define $g(z)$ to be the unique $x$ with $f(x) = z$; then $g \circ f = \mathrm{id}_X$ and $f \circ g = \mathrm{id}_X$. $\square$
+**Proof.** If $f$ is invertible with inverse $g$, then $f(x) = f(y)$ gives $x = g(f(x)) = g(f(y)) = y$, so $f$ is injective, and for any $z$ one has $z = f(g(z))$, so $f$ is surjective. Conversely, if $f$ is bijective, define $g(z)$ to be the unique $x$ with $f(x) = z$; then $g \circ f = \mathrm{id}_X$ and $f \circ g = \mathrm{id}_X$.
 
 **Proposition.** If $f$ and $g$ are invertible, then $(g \circ f)^{-1} = f^{-1} \circ g^{-1}$.
 
-**Proof.** $(f^{-1} \circ g^{-1}) \circ (g \circ f) = f^{-1} \circ (g^{-1} \circ g) \circ f = f^{-1} \circ f = \mathrm{id}_X$, and similarly on the other side. $\square$
+**Proof.** $(f^{-1} \circ g^{-1}) \circ (g \circ f) = f^{-1} \circ (g^{-1} \circ g) \circ f = f^{-1} \circ f = \mathrm{id}_X$, and similarly on the other side.
 
 The reversal of order is the reason a group of transformations acts on the left in one convention and on the right in another; the point is taken up again after the symmetric group is defined.
 
@@ -41,7 +41,7 @@ That $\operatorname{Sym}(X)$ is a group is the content of the propositions above
 
 **Proposition.** $\operatorname{Sym}(X)$ is abelian if and only if $|X| \leq 2$.
 
-**Proof.** If $|X| \leq 2$ there are at most two bijections and they commute. If $X$ contains three distinct elements $a, b, c$, let $f$ interchange $a$ and $b$ and fix $c$, and let $g$ interchange $b$ and $c$ and fix $a$. Then $g(f(a)) = g(b) = c$ while $f(g(a)) = f(a) = b$, so $f \circ g \neq g \circ f$. $\square$
+**Proof.** If $|X| \leq 2$ there are at most two bijections and they commute. If $X$ contains three distinct elements $a, b, c$, let $f$ interchange $a$ and $b$ and fix $c$, and let $g$ interchange $b$ and $c$ and fix $a$. Then $g(f(a)) = g(b) = c$ while $f(g(a)) = f(a) = b$, so $f \circ g \neq g \circ f$.
 
 **Remark.** The group $\operatorname{Sym}(X)$ depends only on the cardinality of $X$: a bijection $\varphi : X \to Y$ induces an isomorphism $\operatorname{Sym}(X) \to \operatorname{Sym}(Y)$, $f \mapsto \varphi \circ f \circ \varphi^{-1}$. Consequently the labelling of a finite set is a convention and carries no group-theoretic content, a fact used silently whenever one writes $S_n$.
 
@@ -101,7 +101,7 @@ such that $e \cdot x = x$ and $(a b) \cdot x = a \cdot (b \cdot x)$ for all $a, 
 
 **Proposition.** An action of $G$ on $X$ is the same thing as a homomorphism $\rho : G \to \operatorname{Sym}(X)$.
 
-**Proof.** Given an action, define $\rho(a)(x) = a \cdot x$. For fixed $a$, the map $\rho(a)$ is bijective with inverse $\rho(a^{-1})$, since $\rho(a^{-1})\rho(a)(x) = (a^{-1}a)\cdot x = x$ and likewise on the other side. The action axiom says exactly that $\rho(ab) = \rho(a) \circ \rho(b)$, so $\rho$ is a homomorphism. Conversely, given a homomorphism $\rho$, put $a \cdot x = \rho(a)(x)$; then $e \cdot x = \mathrm{id}_X(x) = x$ and $(ab)\cdot x = \rho(ab)(x) = \rho(a)(\rho(b)(x)) = a \cdot (b \cdot x)$. $\square$
+**Proof.** Given an action, define $\rho(a)(x) = a \cdot x$. For fixed $a$, the map $\rho(a)$ is bijective with inverse $\rho(a^{-1})$, since $\rho(a^{-1})\rho(a)(x) = (a^{-1}a)\cdot x = x$ and likewise on the other side. The action axiom says exactly that $\rho(ab) = \rho(a) \circ \rho(b)$, so $\rho$ is a homomorphism. Conversely, given a homomorphism $\rho$, put $a \cdot x = \rho(a)(x)$; then $e \cdot x = \mathrm{id}_X(x) = x$ and $(ab)\cdot x = \rho(ab)(x) = \rho(a)(\rho(b)(x)) = a \cdot (b \cdot x)$.
 
 The homomorphism $\rho$ is the **permutation representation** attached to the action, or the **transformation group** that the action realises. The image $\rho(G) \leq \operatorname{Sym}(X)$ is a group of transformations of $X$, and the action is precisely a way of presenting an abstract group as such a group; this is the sense in which every action is a concrete realisation.
 
@@ -159,7 +159,7 @@ The $G$-sets and their equivariant maps form a category, and the structural theo
 
 **Theorem (Cayley).** Every group $G$ is isomorphic to a subgroup of $\operatorname{Sym}(G)$. In particular, every finite group of order $n$ embeds in $S_n$.
 
-**Proof.** Let $\rho : G \to \operatorname{Sym}(G)$ be the left regular representation, $\rho(a)(x) = a x$. It is a homomorphism by associativity, and it is injective because $\rho(a) = \mathrm{id}$ forces $a = a e = e$. Hence $G \cong \rho(G) \leq \operatorname{Sym}(G)$. Labelling the $n$ elements of a finite $G$ gives $\operatorname{Sym}(G) \cong S_n$. $\square$
+**Proof.** Let $\rho : G \to \operatorname{Sym}(G)$ be the left regular representation, $\rho(a)(x) = a x$. It is a homomorphism by associativity, and it is injective because $\rho(a) = \mathrm{id}$ forces $a = a e = e$. Hence $G \cong \rho(G) \leq \operatorname{Sym}(G)$. Labelling the $n$ elements of a finite $G$ gives $\operatorname{Sym}(G) \cong S_n$.
 
 Cayley's theorem is the precise sense in which abstract groups and transformation groups are the same subject: the data of an abstract group is nothing more than the data of a set with a sharply transitive group of transformations, but the abstract axioms are what make the notion portable between different sets. The theorem also has a practical role: any statement about groups that can be phrased in terms of permutations may be proved by embedding the group in a symmetric group, the standard route to Cauchy's theorem and to the Sylow theorems.
 

@@ -3,17 +3,17 @@
 
 ## Introduction
 
-This article develops integration for functions of one dual variable. It follows *Dual-Numbers Analysis*, which fixed the dual plane, its Euclidean topology, dual differentiability and the dual Cauchy–Riemann equations, and it follows *Dual-Numbers Algebra* for the ring $\mathbb{D}'_R = R[\varepsilon]/(\varepsilon^2)$, the maximal ideal $\mathfrak{m} = (\varepsilon)$, the dual conjugation and the norm form $N(Z) = x^2$. The contour integral was introduced there as a definition; here it is developed as a subject in its own right, and the question addressed is exactly how much of the Cauchy theory survives when the coefficient ring has nilpotents and is not a field.
+This article develops integration for functions of one dual variable. It follows *Dual-Numbers Analysis*, which fixed the dual plane, its Euclidean topology, dual differentiability and the dual Cauchy–Riemann equations, and it follows *Dual-Numbers Algebra* for the ring $\mathbb{D}'_R = R[\varepsilon]/(\varepsilon^2)$, the maximal ideal $\mathrm{M} = (\varepsilon)$, the dual conjugation and the norm $N(Z) = x^2$. The contour integral was introduced there as a definition; here it is developed as a subject in its own right, and the question addressed is exactly how much of the Cauchy theory survives when the coefficient ring has nilpotents and is not a field.
 
 The algebraic statements below hold over any commutative ring $R$, but the integral itself is an analytic object and requires a complete ordered field of coefficients. Throughout, therefore, the base is $\mathbb{R}$ and the algebra is $\mathbb{D}' = \mathbb{D}'_{\mathbb{R}} = \mathbb{R}[\varepsilon]/(\varepsilon^2)$; the algebraic ingredients — the local structure, the group of units and the derivations — specialise to any such ring unchanged. The general shape of the integral theorems, and the place of the present theory among its companions for $\mathbb{C}$, $\mathbb{D}$, $\mathbb{H}$ and $\mathbb{B}$, is the subject of *Hypercomplex Integration*, and the closest neighbouring case, where the coefficient ring has zero divisors but no nilpotents, is *Split-Complex Integration*.
 
-Two algebraic facts govern everything that follows. First, $\mathbb{D}'$ is a **local ring**: it has the unique maximal ideal $\mathfrak{m} = \varepsilon\mathbb{R}$, which is nilpotent of index two, $\mathfrak{m}^2 = 0$, and the augmentation
+Two algebraic facts govern everything that follows. First, $\mathbb{D}'$ is a **local ring**: it has the unique maximal ideal $\mathrm{M} = \varepsilon\mathbb{R}$, which is nilpotent of index two, $\mathrm{M}^2 = 0$, and the augmentation
 
 $$
 \pi : \mathbb{D}' \to \mathbb{R}, \qquad \pi(x + y\varepsilon) = x,
 $$
 
-is a ring homomorphism whose kernel is $\mathfrak{m}$. The algebra is the trivial extension $\mathbb{D}' = \mathbb{R} \oplus \mathfrak{m}$ of the field $\mathbb{R}$ by the square-zero ideal $\mathfrak{m}$. Second, the norm form $N(Z) = Z\bar Z = x^2$ is **degenerate**: it vanishes on the whole of $\mathfrak{m}$, so it does not detect the infinitesimal part.
+is a ring homomorphism whose kernel is $\mathrm{M}$. The algebra is the trivial extension $\mathbb{D}' = \mathbb{R} \oplus \mathrm{M}$ of the field $\mathbb{R}$ by the square-zero ideal $\mathrm{M}$. Second, the norm $N(Z) = Z\bar Z = x^2$ is **degenerate**: it vanishes on the whole of $\mathrm{M}$, so it does not detect the infinitesimal part.
 
 These two facts divide the classical Cauchy theory cleanly. The **vanishing** statement — the integral of a dual differentiable function over a closed path is zero — survives, and it holds on every domain, with no simple-connectivity hypothesis. But it is *soft*: its hypothesis is the differentiability condition, which forces the function into a form in which a primitive can be written down explicitly, so the theorem excludes nothing and constrains no topology. The **reconstruction** statement — the Cauchy integral formula that recovers an interior value from a boundary integral, and with it the residue theorem, the Cauchy estimates, the mean value property and the Laurent expansion — does not survive, and the obstruction is exactly the nilpotent ideal. The Cauchy kernel $(\zeta - Z_0)^{-1}$ is defined only where $\zeta - Z_0$ is a unit, that is only off the fibre $\pi^{-1}(\pi(Z_0))$; no contour of non-zero winding about $Z_0$ avoids that fibre.
 
@@ -21,7 +21,7 @@ What replaces the reconstruction half is a **derived** statement. Because the in
 
 No physics is invoked. The dual plane is used as the two-dimensional real algebra fixed in *Dual-Numbers Algebra*, and the operator notation $\partial_Z, \partial_{\bar Z}$ is the one fixed in *Dual-Numbers Analysis*.
 
-Notation: $Z = x + y\varepsilon$ with $x, y \in \mathbb{R}$, $\bar Z = x - y\varepsilon$, $\operatorname{Re} Z = x$, $\operatorname{Inf} Z = y$, and $\|Z\|_E = \sqrt{x^2 + y^2}$. The maximal ideal is $\mathfrak{m} = \varepsilon\mathbb{R}$.
+Notation: $Z = x + y\varepsilon$ with $x, y \in \mathbb{R}$, $\bar Z = x - y\varepsilon$, $\operatorname{Re} Z = x$, $\operatorname{Inf} Z = y$, and $\|Z\|_E = \sqrt{x^2 + y^2}$. The maximal ideal is $\mathrm{M} = \varepsilon\mathbb{R}$.
 
 ## The Dual Integral
 
@@ -63,7 +63,7 @@ $$
 Z_k - Z_{k-1} = \int_{t_{k-1}}^{t_k} \gamma'(t)\,dt = \gamma'(\tau_k)(t_k - t_{k-1}) + \rho_k, \qquad \|\rho_k\|_E \leq \omega(\|\Delta\|)(t_k - t_{k-1}),
 $$
 
-with $\omega(\|\Delta\|) \to 0$ by uniform continuity of $\gamma'$ on the finitely many pieces. Hence $S$ differs from the Riemann sum of $t \mapsto f(\gamma(t))\gamma'(t)$ by a term bounded in norm by $\max_{\gamma^*}\|f\|_E \,\omega(\|\Delta\|)(b-a) \to 0$. $\square$
+with $\omega(\|\Delta\|) \to 0$ by uniform continuity of $\gamma'$ on the finitely many pieces. Hence $S$ differs from the Riemann sum of $t \mapsto f(\gamma(t))\gamma'(t)$ by a term bounded in norm by $\max_{\gamma^*}\|f\|_E \,\omega(\|\Delta\|)(b-a) \to 0$.
 
 The integral exists because $\mathbb{D}'$ is a complete normed space under $\|\cdot\|_E$, exactly as $\mathbb{C}$ is under the modulus. Completeness is what makes the limit of Riemann sums legitimate, and it is not affected by the nilpotence of $\varepsilon$.
 
@@ -95,7 +95,7 @@ $$
 \|ZW\|_E \leq \frac{2}{\sqrt3}\,\|Z\|_E\|W\|_E
 $$
 
-with equality, for instance, at $Z = W = \sqrt{2/3} + \sqrt{1/3}\,\varepsilon$. Applying this to $f(\gamma(t))\gamma'(t)$ and integrating gives the estimate. $\square$
+with equality, for instance, at $Z = W = \sqrt{2/3} + \sqrt{1/3}\,\varepsilon$. Applying this to $f(\gamma(t))\gamma'(t)$ and integrating gives the estimate.
 
 **Remark.** The Euclidean norm is **not** submultiplicative on $\mathbb{D}'$, and $2/\sqrt3$ is the best constant. In particular the naive estimate $\|\int_\gamma f\,dZ\|_E \leq M L(\gamma)$, obtained by bounding $\|f(\gamma(t))\gamma'(t)\|_E$ pointwise by $\|f\|_E\|\gamma'\|_E$, is not available, because that pointwise inequality is false; the factor $2/\sqrt3$ is exactly what replaces it. This is the first sign that the Euclidean metric and the nilpotent multiplication are not aligned. In $\mathbb{C}$ the modulus is multiplicative and the constant is $1$; in $\mathbb{D}$ the best constant is $\sqrt2$, attained on the null cone; in $\mathbb{D}'$ it is $2/\sqrt3$, which lies between them, and it is attained when $Z = W$ and $\operatorname{Re}(W)^2 = 2\operatorname{Inf}(W)^2$, so no element of the zero-divisor set is extremal. The constant is a feature of the algebra alone and has no counterpart in the complex theory.
 
@@ -103,13 +103,13 @@ with equality, for instance, at $Z = W = \sqrt{2/3} + \sqrt{1/3}\,\varepsilon$. 
 
 ### The Augmentation and Its Fibres
 
-The augmentation $\pi : \mathbb{D}' \to \mathbb{R}$ is the unique unital ring homomorphism onto $\mathbb{R}$, and its kernel is the maximal ideal $\mathfrak{m}$. Its **fibres** are the sets
+The augmentation $\pi : \mathbb{D}' \to \mathbb{R}$ is the unique unital ring homomorphism onto $\mathbb{R}$, and its kernel is the maximal ideal $\mathrm{M}$. Its **fibres** are the sets
 
 $$
-\pi^{-1}(x) = x + \mathfrak{m} = \{x + y\varepsilon : y \in \mathbb{R}\},
+\pi^{-1}(x) = x + \mathrm{M} = \{x + y\varepsilon : y \in \mathbb{R}\},
 $$
 
-which are the cosets of $\mathfrak{m}$ and the straight lines parallel to the nilpotent direction. Every fibre is a copy of $\mathbb{R}$, and the algebra is the disjoint union of its fibres over the points of $\mathbb{R}$. The projection $\pi$ is the algebraic content of the phrase "the real part": the fibre through $Z$ is the set of dual numbers indistinguishable from $Z$ by the norm form, since $N(x + y\varepsilon) = x^2$ is constant on it.
+which are the cosets of $\mathrm{M}$ and the straight lines parallel to the nilpotent direction. Every fibre is a copy of $\mathbb{R}$, and the algebra is the disjoint union of its fibres over the points of $\mathbb{R}$. The projection $\pi$ is the algebraic content of the phrase "the real part": the fibre through $Z$ is the set of dual numbers indistinguishable from $Z$ by the norm, since $N(x + y\varepsilon) = x^2$ is constant on it.
 
 ### Decomposition into Two Real Integrals
 
@@ -139,9 +139,9 @@ $$
 f(\gamma(t))\gamma'(t) = u\,x' + \bigl(u\,y' + v\,x'\bigr)\varepsilon,
 $$
 
-with $u, v$ evaluated at $\gamma(t)$. Each component is an ordinary real function of $t$, so the integral separates componentwise. $\square$
+with $u, v$ evaluated at $\gamma(t)$. Each component is an ordinary real function of $t$, so the integral separates componentwise.
 
-So a dual integral is exactly a pair of real line integrals, and — unlike the split complex case — the two are not independent: the infinitesimal part uses the real part $u$ as well as $v$. The decomposition is not into two copies of the algebra but into the real part and the nilpotent part, and this asymmetry is the analytic form of $\mathfrak{m}^2 = 0$.
+So a dual integral is exactly a pair of real line integrals, and — unlike the split complex case — the two are not independent: the infinitesimal part uses the real part $u$ as well as $v$. The decomposition is not into two copies of the algebra but into the real part and the nilpotent part, and this asymmetry is the analytic form of $\mathrm{M}^2 = 0$.
 
 **Corollary.** For a closed path $\gamma$ the real part of $\oint_\gamma f\,dZ$ is $\oint_\gamma u\,dx$, and if $u$ depends only on $x$ then $u\,dx$ is exact and this vanishes. In particular it vanishes for every dual differentiable $f$, for which the whole integral vanishes by the Cauchy–Goursat theorem below. For a differentiable integrand the infinitesimal component vanishes as well, so the algebra structure is invisible on the differentiable class; it is the infinitesimal component, built from the two real $1$-forms $u\,dy$ and $v\,dx$, that detects the failure of differentiability, and the area detector of the next section is the first instance.
 
@@ -157,7 +157,7 @@ $$
 
 If in addition $u$ does not depend on $y$ — in particular if $f$ is dual differentiable — this reduces to $(b_1 - b_0)\,u(x_0)\,\varepsilon = (b_1 - b_0)\,\operatorname{Re} f(x_0)\,\varepsilon$.
 
-**Proof.** Along $\sigma$ one has $x'(t) = 0$ and $y'(t) = 1$, so $f(\sigma(t))\sigma'(t) = (u(x_0,t) + v\varepsilon)\varepsilon = u(x_0,t)\,\varepsilon$, a purely infinitesimal quantity. The real part of the integrand is zero, and the infinitesimal part integrates to $\varepsilon\int_{b_0}^{b_1}u(x_0,t)\,dt$. $\square$
+**Proof.** Along $\sigma$ one has $x'(t) = 0$ and $y'(t) = 1$, so $f(\sigma(t))\sigma'(t) = (u(x_0,t) + v\varepsilon)\varepsilon = u(x_0,t)\,\varepsilon$, a purely infinitesimal quantity. The real part of the integrand is zero, and the infinitesimal part integrates to $\varepsilon\int_{b_0}^{b_1}u(x_0,t)\,dt$.
 
 Thus integration along a fibre is not a reconstruction but an **evaluation**: for a differentiable integrand it returns the real part of $f$ at the base point, multiplied by the length of the segment, and it is completely blind to the infinitesimal part. A single fibre therefore plays the role that a small circle plays in the complex Cauchy formula, but it probes one real number rather than the value of a holomorphic function.
 
@@ -183,7 +183,7 @@ $$
 \frac{\partial u}{\partial y} = 0, \qquad \frac{\partial v}{\partial y} = \frac{\partial u}{\partial x}.
 $$
 
-**Proof.** For a $\mathbb{D}'$-valued form $P\,dx + Q\,dy$ with $C^1$ coefficients, closedness is equivalent to $\partial_y P = \partial_x Q$; this is the two-variable real criterion applied to each of the two components. Here $\partial_y P = u_y + v_y\varepsilon$ and $\partial_x Q = u_x\varepsilon$, and the two agree exactly when the real parts agree, $u_y = 0$, and the coefficients of $\varepsilon$ agree, $v_y = u_x$. $\square$
+**Proof.** For a $\mathbb{D}'$-valued form $P\,dx + Q\,dy$ with $C^1$ coefficients, closedness is equivalent to $\partial_y P = \partial_x Q$; this is the two-variable real criterion applied to each of the two components. Here $\partial_y P = u_y + v_y\varepsilon$ and $\partial_x Q = u_x\varepsilon$, and the two agree exactly when the real parts agree, $u_y = 0$, and the coefficients of $\varepsilon$ agree, $v_y = u_x$.
 
 Equivalently, with the dual Wirtinger operator of *Dual-Numbers Analysis*,
 
@@ -201,7 +201,7 @@ one has $\partial_{\bar Z} f = u_y + (v_y - u_x)\varepsilon$, so the form $f\,dZ
 2. $\partial_{\bar Z} f = 0$ on $U$, that is $u_y = 0$ and $v_y = u_x$.
 3. The form $f\,dZ$ is closed on $U$.
 
-**Proof.** The equivalence of (1) and (2) is the dual Cauchy–Riemann theorem of *Dual-Numbers Analysis*. The equivalence of (2) and (3) is the computation just made. $\square$
+**Proof.** The equivalence of (1) and (2) is the dual Cauchy–Riemann theorem of *Dual-Numbers Analysis*. The equivalence of (2) and (3) is the computation just made.
 
 **Corollary (structure of a differentiable function).** A dual differentiable $f$ on $U$ has the form
 
@@ -227,7 +227,7 @@ $$
 F(x + y\varepsilon) = A(x) + \bigl(y\,u(x) + C(x)\bigr)\varepsilon.
 $$
 
-The real part $A(x)$ satisfies $\partial_y A = 0$, and the infinitesimal part $\phi = yu(x) + C(x)$ satisfies $\phi_y = u(x) = A'(x)$, so $F$ is dual differentiable and $F' = f$. Along a piecewise $C^1$ path, $\frac{d}{dt}F(\gamma(t)) = F'(\gamma(t))\gamma'(t) = f(\gamma(t))\gamma'(t)$, and the fundamental theorem of calculus gives $\int_\gamma f\,dZ = F(\gamma(b)) - F(\gamma(a))$, which vanishes for a closed path. $\square$
+The real part $A(x)$ satisfies $\partial_y A = 0$, and the infinitesimal part $\phi = yu(x) + C(x)$ satisfies $\phi_y = u(x) = A'(x)$, so $F$ is dual differentiable and $F' = f$. Along a piecewise $C^1$ path, $\frac{d}{dt}F(\gamma(t)) = F'(\gamma(t))\gamma'(t) = f(\gamma(t))\gamma'(t)$, and the fundamental theorem of calculus gives $\int_\gamma f\,dZ = F(\gamma(b)) - F(\gamma(a))$, which vanishes for a closed path.
 
 **Theorem (primitive).** Every dual differentiable function on a domain $U$ has a primitive on $U$, and the integral is given by the endpoint formula
 
@@ -235,7 +235,7 @@ $$
 \int_\gamma f(Z)\,dZ = F(\gamma(b)) - F(\gamma(a)).
 $$
 
-**Proof.** The function $F$ constructed above is defined on all of $U$, and its construction uses only that $u$ and $c$ are continuous functions of one real variable on the intervals that are the projections of $U$. $\square$
+**Proof.** The function $F$ constructed above is defined on all of $U$, and its construction uses only that $u$ and $c$ are continuous functions of one real variable on the intervals that are the projections of $U$.
 
 ### The Softness of the Theorem
 
@@ -258,7 +258,7 @@ The Cauchy–Goursat theorem has a partial converse, and in the dual case — as
 1. $\oint_{\partial R} f(Z)\,dZ = 0$ for every axis-parallel rectangle $R \subseteq U$.
 2. $f = F'$ for some dual differentiable $F$ on $U$; equivalently $f = A'(x) + (yA''(x) + C'(x))\varepsilon$, where $F = A(x) + (yA'(x) + C(x))\varepsilon$ is the structure form of $F$.
 
-**Proof.** If $f = F'$ with $F$ dual differentiable, then $\oint_{\partial R} f\,dZ = 0$ for every closed path by the primitive theorem. Conversely, integrate $f$ from a fixed base point along axis-parallel paths to define $F$; two such paths differ by the boundaries of the rectangles between them, so the rectangle hypothesis makes $F$ well defined. The standard difference-quotient computation along a horizontal and a vertical segment gives $\partial_x F = f$ and $\partial_y F = \varepsilon f$; taking real and infinitesimal parts, $(\operatorname{Re}F)_y = 0$ and $(\operatorname{Inf}F)_y = \operatorname{Re}f = (\operatorname{Re}F)_x$, so $F$ is dual differentiable and $F' = f$. The structure theorem applied to $F$ gives the second form of (2). $\square$
+**Proof.** If $f = F'$ with $F$ dual differentiable, then $\oint_{\partial R} f\,dZ = 0$ for every closed path by the primitive theorem. Conversely, integrate $f$ from a fixed base point along axis-parallel paths to define $F$; two such paths differ by the boundaries of the rectangles between them, so the rectangle hypothesis makes $F$ well defined. The standard difference-quotient computation along a horizontal and a vertical segment gives $\partial_x F = f$ and $\partial_y F = \varepsilon f$; taking real and infinitesimal parts, $(\operatorname{Re}F)_y = 0$ and $(\operatorname{Inf}F)_y = \operatorname{Re}f = (\operatorname{Re}F)_x$, so $F$ is dual differentiable and $F' = f$. The structure theorem applied to $F$ gives the second form of (2).
 
 **Remark (no regularity upgrade).** In $\mathbb{C}$ the rectangle hypothesis upgrades a merely continuous $f$ to a holomorphic one, because the primitive of a continuous function is holomorphic and the derivative of a holomorphic function is holomorphic. No such upgrade is available here, and the class of dual differentiable functions is not closed under differentiation. For the differentiable function
 
@@ -298,7 +298,7 @@ $$
 (\zeta - Z_0)^{-1} = \frac{1}{\operatorname{Re}(\zeta - Z_0)} - \frac{\operatorname{Inf}(\zeta - Z_0)}{\operatorname{Re}(\zeta - Z_0)^2}\,\varepsilon.
 $$
 
-**Proof.** Write $\zeta - Z_0 = a + \varepsilon b$ with $a = \operatorname{Re}(\zeta - Z_0)$, $b = \operatorname{Inf}(\zeta - Z_0)$. By *Dual-Numbers Algebra* this is a unit if and only if $a \neq 0$, with inverse $a^{-1} - a^{-2}\varepsilon b$. $\square$
+**Proof.** Write $\zeta - Z_0 = a + \varepsilon b$ with $a = \operatorname{Re}(\zeta - Z_0)$, $b = \operatorname{Inf}(\zeta - Z_0)$. By *Dual-Numbers Algebra* this is a unit if and only if $a \neq 0$, with inverse $a^{-1} - a^{-2}\varepsilon b$.
 
 So the set on which the Cauchy kernel is defined is not the punctured neighbourhood of $Z_0$ but its complement in the whole fibre
 
@@ -312,7 +312,7 @@ The kernel is undefined on an entire line through $Z_0$, not merely at $Z_0$.
 
 **Theorem (obstruction).** There is no Cauchy integral formula in $\mathbb{D}'$ that recovers $f(Z_0)$ from a contour integral of $f$ against the kernel $(\zeta - Z_0)^{-1}$ along a contour $\gamma$ winding once about $Z_0$.
 
-**Proof.** A closed contour with non-zero winding number about $Z_0$ meets both open half-planes $\{\operatorname{Re}\zeta > \operatorname{Re} Z_0\}$ and $\{\operatorname{Re}\zeta < \operatorname{Re} Z_0\}$; otherwise it would lie in a closed half-plane whose boundary contains $Z_0$, a convex set in which $Z_0$ has no interior, and a curve in such a set has winding number zero about $Z_0$. Hence the continuous real function $\operatorname{Re}\gamma(t) - \operatorname{Re} Z_0$ takes both signs, and by the intermediate value theorem there is a parameter at which it vanishes, that is a point at which $\gamma$ meets the fibre $L_{Z_0}$. At that point $\zeta - Z_0$ is not a unit, the kernel $(\zeta - Z_0)^{-1}$ is undefined, and the contour integral does not exist. $\square$
+**Proof.** A closed contour with non-zero winding number about $Z_0$ meets both open half-planes $\{\operatorname{Re}\zeta > \operatorname{Re} Z_0\}$ and $\{\operatorname{Re}\zeta < \operatorname{Re} Z_0\}$; otherwise it would lie in a closed half-plane whose boundary contains $Z_0$, a convex set in which $Z_0$ has no interior, and a curve in such a set has winding number zero about $Z_0$. Hence the continuous real function $\operatorname{Re}\gamma(t) - \operatorname{Re} Z_0$ takes both signs, and by the intermediate value theorem there is a parameter at which it vanishes, that is a point at which $\gamma$ meets the fibre $L_{Z_0}$. At that point $\zeta - Z_0$ is not a unit, the kernel $(\zeta - Z_0)^{-1}$ is undefined, and the contour integral does not exist.
 
 The obstruction is of the same kind as in the split complex case but simpler: there the non-invertible set was the union of two lines through $Z_0$, here it is the single fibre through $Z_0$. The complement of one line in the plane has two components, each convex, and a closed curve lying in one component is null-homotopic in the punctured plane and has winding number zero about $Z_0$.
 
@@ -369,7 +369,7 @@ $$
 \partial_y E_0 = \delta_0, \qquad \partial_y E_1 = \partial_x E_0.
 $$
 
-The first equation is solved by $E_0 = H(y)\delta(x)$, since $\partial_y H(y)\delta(x) = \delta(y)\delta(x) = \delta_0$. Then $\partial_x E_0 = H(y)\delta'(x)$, and since $\partial_y y_+ = H(y)$, the second equation is solved by $E_1 = y_+\delta'(x)$. Both $E_0$ and $E_1$ are supported on the closed half-line $x = 0$, $y \geq 0$. $\square$
+The first equation is solved by $E_0 = H(y)\delta(x)$, since $\partial_y H(y)\delta(x) = \delta(y)\delta(x) = \delta_0$. Then $\partial_x E_0 = H(y)\delta'(x)$, and since $\partial_y y_+ = H(y)$, the second equation is solved by $E_1 = y_+\delta'(x)$. Both $E_0$ and $E_1$ are supported on the closed half-line $x = 0$, $y \geq 0$.
 
 So the fundamental solution is carried by the fibre, not by a point. In $\mathbb{C}$ the fundamental solution of the Cauchy–Riemann operator is $1/(\pi Z)$, a locally integrable function singular at the origin, and a small circle is an adequate contour. Here the singular support is one-dimensional and lies in a fibre, and every contour winding about $Z_0$ meets that fibre, on which the kernel $(\zeta - Z_0)^{-1}$ is undefined; so the boundary integral that would represent an interior value is never defined.
 
@@ -391,7 +391,7 @@ $$
 f(x + y\varepsilon) = u(x) + \bigl(y\,u'(x) + c(x)\bigr)\varepsilon.
 $$
 
-**Proof.** This is the corollary of the Cauchy–Riemann theorem. $\square$
+**Proof.** This is the corollary of the Cauchy–Riemann theorem.
 
 The pair $(u, c)$ is exactly the restriction of $f$ to the real axis, $f(x) = u(x) + c(x)\varepsilon$, together with the derivative of its real part. So the real axis — a *screen* that meets every fibre in exactly one point — determines the whole function, and no contour integral is required to propagate the data off the screen.
 
@@ -399,13 +399,13 @@ The pair $(u, c)$ is exactly the restriction of $f$ to the real axis, $f(x) = u(
 
 Because the infinitesimal direction is nilpotent, the Taylor expansion of a differentiable function along it truncates exactly.
 
-**Theorem (exact expansion).** Let $f$ be dual differentiable on an open set $U$ and let $Z \in U$ and $h \in \mathfrak{m}$ with $Z + h \in U$. Then
+**Theorem (exact expansion).** Let $f$ be dual differentiable on an open set $U$ and let $Z \in U$ and $h \in \mathrm{M}$ with $Z + h \in U$. Then
 
 $$
 f(Z + h) = f(Z) + f'(Z)\,h.
 $$
 
-**Proof.** Write $Z = x + y\varepsilon$ and $h = s\varepsilon$. By the structure theorem, $f(Z + h) = u(x) + ((y+s)u'(x) + c(x))\varepsilon = f(Z) + s\,u'(x)\varepsilon$. Since $f'(Z) = u'(x) + (yu''(x) + c'(x))\varepsilon$ and $\varepsilon\cdot\varepsilon = 0$, one has $f'(Z)h = u'(x)s\varepsilon$, and the two expressions agree. There is no remainder term because $h^2 = 0$. $\square$
+**Proof.** Write $Z = x + y\varepsilon$ and $h = s\varepsilon$. By the structure theorem, $f(Z + h) = u(x) + ((y+s)u'(x) + c(x))\varepsilon = f(Z) + s\,u'(x)\varepsilon$. Since $f'(Z) = u'(x) + (yu''(x) + c'(x))\varepsilon$ and $\varepsilon\cdot\varepsilon = 0$, one has $f'(Z)h = u'(x)s\varepsilon$, and the two expressions agree. There is no remainder term because $h^2 = 0$.
 
 So the first-order expansion is exact in the nilpotent direction: the "second derivative along the derived direction" vanishes identically, and the Taylor series along a fibre is a polynomial of degree one.
 
@@ -417,7 +417,7 @@ $$
 \partial_\varepsilon(a + \varepsilon b) = \varepsilon b.
 $$
 
-It is the derivation determined by $\partial_\varepsilon(1) = 0$ and $\partial_\varepsilon(\varepsilon) = \varepsilon$; its kernel is the real submodule $\mathbb{R}$, and its image is the maximal ideal $\mathfrak{m}$. It is idempotent, $\partial_\varepsilon^2 = \partial_\varepsilon$, and it is **not** the formal derivative $d/\varepsilon d$ of the truncated polynomial ring: the formal derivative would send $\varepsilon$ to $1$, and the Leibniz rule would then force $0 = d(\varepsilon^2)/\varepsilon d = 2\varepsilon$, which fails. The only derivations of $\mathbb{D}'$ are the multiples $c\,\partial_\varepsilon$ of this one; $\partial_\varepsilon$ itself is idempotent rather than nilpotent, and $c\,\partial_\varepsilon$ is idempotent exactly for $c = 0$ and $c = 1$.
+It is the derivation determined by $\partial_\varepsilon(1) = 0$ and $\partial_\varepsilon(\varepsilon) = \varepsilon$; its kernel is the real submodule $\mathbb{R}$, and its image is the maximal ideal $\mathrm{M}$. It is idempotent, $\partial_\varepsilon^2 = \partial_\varepsilon$, and it is **not** the formal derivative $d/\varepsilon d$ of the truncated polynomial ring: the formal derivative would send $\varepsilon$ to $1$, and the Leibniz rule would then force $0 = d(\varepsilon^2)/\varepsilon d = 2\varepsilon$, which fails. The only derivations of $\mathbb{D}'$ are the multiples $c\,\partial_\varepsilon$ of this one; $\partial_\varepsilon$ itself is idempotent rather than nilpotent, and $c\,\partial_\varepsilon$ is idempotent exactly for $c = 0$ and $c = 1$.
 
 The relation between this derivation and the fibre integral is the following.
 
@@ -433,7 +433,7 @@ $$
 \operatorname{Inf} f(x + y\varepsilon) = y\,\frac{d}{dx}\operatorname{Re} f(x) + \operatorname{Inf} f(x).
 $$
 
-**Proof.** The first identity is the fibre-evaluation theorem. For the second, differentiate the structure formula. $\square$
+**Proof.** The first identity is the fibre-evaluation theorem. For the second, differentiate the structure formula.
 
 So the fibre integral returns the real part and the derivation recovers the infinitesimal part; together they recover the function. This is the exact sense in which "integration along the fibre" and "differentiation with respect to the nilpotent parameter" are the two halves of a substitute for the Cauchy integral formula: the integral evaluates, and the derivation differentiates, and between them they recover everything, without any boundary contour.
 
@@ -457,7 +457,7 @@ $$
 f(x + h) = \sum_{k=0}^{n} \frac{f^{(k)}(x)}{k!}\,h^k + \frac{h^{n+1}}{n!}\int_0^1 (1-t)^n f^{(n+1)}(x+th)\,dt,
 $$
 
-and the remainder vanishes because $h^{n+1} = 0$. $\square$
+and the remainder vanishes because $h^{n+1} = 0$.
 
 For $n = 1$ the same conclusion holds under the weaker hypothesis that $f$ be merely dual differentiable, as proved in the previous section; the iterated differentiability is needed only so that the ordinary Taylor formula along the fibre is available.
 
@@ -467,7 +467,7 @@ $$
 \ell_n(f) = \text{the coefficient of } \varepsilon^n \text{ in } f,
 $$
 
-plays the role of the residue in the derived variable: it is a linear functional of the jet rather than a contour integral, the reason being that $\oint_\gamma f\,dZ = 0$ for every differentiable $f$ and every closed path $\gamma$. The dual-number case is the first truncation, where the expansion reduces to $f(Z+h) = f(Z) + f'(Z)h$ for $h \in \mathfrak{m}$ and $\ell_1 = \operatorname{Inf}$.
+plays the role of the residue in the derived variable: it is a linear functional of the jet rather than a contour integral, the reason being that $\oint_\gamma f\,dZ = 0$ for every differentiable $f$ and every closed path $\gamma$. The dual-number case is the first truncation, where the expansion reduces to $f(Z+h) = f(Z) + f'(Z)h$ for $h \in \mathrm{M}$ and $\ell_1 = \operatorname{Inf}$.
 
 ## Comparison with Complex Integration
 
@@ -502,7 +502,7 @@ whose square $D\bar D = \bar D D$ is a Laplacian and whose fundamental solution 
 
 **Proposition.** There is no element $W \in \mathbb{D}'$ with $W^2 = -1$. Hence the dual system cannot be presented as an elliptic hypercomplex system in the sense of the general theory, and no choice of generators $B_k$ satisfies the general hypotheses.
 
-**Proof.** Write $W = a + \varepsilon b$. Then $W^2 = a^2 + 2ab\,\varepsilon$. The equation $W^2 = -1$ requires $a^2 = -1$, impossible for real $a$. $\square$
+**Proof.** Write $W = a + \varepsilon b$. Then $W^2 = a^2 + 2ab\,\varepsilon$. The equation $W^2 = -1$ requires $a^2 = -1$, impossible for real $a$.
 
 Equivalently, putting the dual operator in the general form $D = \partial_0 + B\,\partial_1$ with $\partial_0 = \partial_y$ and $B = -\varepsilon$, one has $B^2 = \varepsilon^2 = 0$ and, for $\bar D = \partial_0 - B\partial_1 = \partial_y + \varepsilon\partial_x$,
 
@@ -540,10 +540,10 @@ What replaces the reconstruction half is the **derived** statement. A dual diffe
 | $\mathbb{D}'_{R,n} = R[\varepsilon]/(\varepsilon^{n+1})$ | Truncated polynomial algebra |
 | $Z = x + y\varepsilon$ | General dual number, $x = \operatorname{Re} Z$, $y = \operatorname{Inf} Z$ |
 | $\bar Z = x - y\varepsilon$ | Dual conjugate |
-| $N(Z) = Z\bar Z = x^2$ | Degenerate norm form |
+| $N(Z) = Z\bar Z = x^2$ | Degenerate norm |
 | $\|Z\|_E = \sqrt{x^2+y^2}$ | Euclidean modulus |
-| $\mathfrak{m} = \varepsilon\mathbb{R}$ | Maximal ideal, nilpotent, $\mathfrak{m}^2 = 0$ |
-| $\pi : \mathbb{D}' \to \mathbb{R}$ | Augmentation, kernel $\mathfrak{m}$ |
+| $\mathrm{M} = \varepsilon\mathbb{R}$ | Maximal ideal, nilpotent, $\mathrm{M}^2 = 0$ |
+| $\pi : \mathbb{D}' \to \mathbb{R}$ | Augmentation, kernel $\mathrm{M}$ |
 | $\gamma : [a,b] \to \mathbb{D}'$ | Piecewise $C^1$ path |
 | $\gamma^*$, $-\gamma$, $\gamma_1+\gamma_2$ | Trace, opposite path, concatenation |
 | $L(\gamma) = \int_a^b \|\gamma'(t)\|_E\,dt$ | Euclidean length |
@@ -557,8 +557,6 @@ What replaces the reconstruction half is the **derived** statement. A dual diffe
 | $E = H(y)\delta(x) + y_+\delta'(x)\varepsilon$ | Fundamental solution of $D$, supported on a fibre ray |
 | $\operatorname{Area}(\gamma)$ | Signed area enclosed by a closed contour; $\oint_\gamma \bar Z\,dZ = 2\operatorname{Area}(\gamma)\varepsilon$ |
 | $\ell_n(f)$ | Coefficient of $\varepsilon^n$ in $f$, the residue functional of $\mathbb{D}'_{R,n}$ |
-
-
 
 ## Further Reading
 

@@ -28,7 +28,7 @@ The framework can verify two things exactly: the **boost generator** is the Herm
 
 The article proceeds as follows. The theorem is stated first, with its two hypotheses. Then its relation to the two parent articles is made explicit. Then the wedge is isolated, and the reason the theorem cannot be generalised is given. Then the boost generator is identified on the wedge. Then the modular flow is shown to be the boost with rapidity $2\pi$. Then the modular conjugation is shown to be the PCT/reflection operator, with the conjugation identities verified. Then the biquaternion boost rotor is compared with the modular generator, and the identification — and its limit — is recorded. It closes with the established/interpretation/gap split, the summary, and the notation.
 
-**Conventions.** Those of the companion articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, scalar imaginary $i$ with $i^2=-1$, and $\mathbb{B}\cong M_2(\mathbb{C})$. The material (anti-Hermitian) subspace is $\mathbb{M}_-$ and the informational (Hermitian) subspace is $\mathbb{M}_+$, with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm=\mathbb{M}_\mp$; $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace. The material coordinate is $\tilde{Q}=ict\,e_0+x\,e_1+y\,e_2+z\,e_3\in\mathbb{M}_-$, with norm form $N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}=-c^2t^2+x^2+y^2+z^2$. Rindler coordinates on the wedge are $x=\rho\cosh\eta$, $ct=\rho\sinh\eta$. The boost Killing vector is $\xi=x\partial_t+t\partial_x=\partial_\eta$; the boost rotor is $\tilde\Lambda(\psi)=\exp(\tfrac{\psi}{2}G_1)=\cosh\tfrac{\psi}{2}+i\sinh\tfrac{\psi}{2}e_1$ with $G_1=ie_1$, and it acts by rotor conjugation $\tilde{Q}\mapsto\tilde\Lambda\tilde{Q}\tilde\Lambda^\dagger$. The trace formula $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$, with $\mathrm{Tr}(e_0)=2$, is inherited unchanged. The modular data are those of the modular-theory companion: $S=J\Delta^{1/2}$, $\sigma_s(A)=\Delta^{is}A\Delta^{-is}$, $K=-\log\rho$ in finite dimension. Throughout, $c$ is the speed of light, and $\hbar$ and $k_B$ are the reduced Planck and Boltzmann constants.
+**Conventions.** Those of the companion articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, scalar imaginary $i$ with $i^2=-1$, and $\mathbb{B}\cong M_2(\mathbb{C})$. The material (anti-Hermitian) subspace is $\mathbb{M}_-$ and the informational (Hermitian) subspace is $\mathbb{M}_+$, with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm=\mathbb{M}_\mp$; $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace. The material coordinate is $\tilde{Q}=ict\,e_0+x\,e_1+y\,e_2+z\,e_3\in\mathbb{M}_-$, with biquaternion norm $N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}=-c^2t^2+x^2+y^2+z^2$. Rindler coordinates on the wedge are $x=\rho\cosh\eta$, $ct=\rho\sinh\eta$. The boost Killing vector is $\xi=x\partial_t+t\partial_x=\partial_\eta$; the boost rotor is $\tilde\Lambda(\psi)=\exp(\tfrac{\psi}{2}G_1)=\cosh\tfrac{\psi}{2}+i\sinh\tfrac{\psi}{2}e_1$ with $G_1=ie_1$, and it acts by rotor conjugation $\tilde{Q}\mapsto\tilde\Lambda\tilde{Q}\tilde\Lambda^\dagger$. The trace formula $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$, with $\mathrm{Tr}(e_0)=2$, is inherited unchanged. The modular data are those of the modular-theory companion: $S=J\Delta^{1/2}$, $\sigma_s(A)=\Delta^{is}A\Delta^{-is}$, $K=-\log\rho$ in finite dimension. Throughout, $c$ is the speed of light, and $\hbar$ and $k_B$ are the reduced Planck and Boltzmann constants.
 
 ## The Theorem
 
@@ -113,13 +113,13 @@ $$
 \tilde\Lambda(\psi)=\exp\!\Big(\frac{\psi}{2}G_1\Big)
 =\cosh\frac{\psi}{2}+i\sinh\frac{\psi}{2}\,e_1 \in\mathbb{M}_+,
 $$
-Hermitian and of unit norm form, $\tilde\Lambda\bar{\tilde\Lambda}=e_0$. On an element $\tilde{Q}=iq_0e_0+q_1e_1+q_2e_2+q_3e_3\in\mathbb{M}_-$ the rotor acts by **rotor conjugation** $\tilde{Q}\mapsto\tilde\Lambda(\psi)\tilde{Q}\tilde\Lambda(\psi)$ (the rotor is Hermitian, so $\tilde\Lambda^\dagger=\tilde\Lambda$), and a direct recomputation in the matrix representation gives
+Hermitian and of unit norm, $\tilde\Lambda\bar{\tilde\Lambda}=e_0$. On an element $\tilde{Q}=iq_0e_0+q_1e_1+q_2e_2+q_3e_3\in\mathbb{M}_-$ the rotor acts by **rotor conjugation** $\tilde{Q}\mapsto\tilde\Lambda(\psi)\tilde{Q}\tilde\Lambda(\psi)$ (the rotor is Hermitian, so $\tilde\Lambda^\dagger=\tilde\Lambda$), and a direct recomputation in the matrix representation gives
 $$
 q_0\longmapsto q_0\cosh\psi-q_1\sinh\psi,\qquad
 q_1\longmapsto q_1\cosh\psi-q_0\sinh\psi,\qquad
 q_2,q_3\ \text{unchanged},
 $$
-with the norm form preserved, $N(\tilde\Lambda\tilde{Q}\tilde\Lambda)=N(\tilde{Q})$. On the Rindler orbit $q_0=ct=\rho\sinh\eta$, $q_1=x=\rho\cosh\eta$, the same computation gives
+with the biquaternion norm preserved, $N(\tilde\Lambda\tilde{Q}\tilde\Lambda)=N(\tilde{Q})$. On the Rindler orbit $q_0=ct=\rho\sinh\eta$, $q_1=x=\rho\cosh\eta$, the same computation gives
 $$
 q_0\longmapsto\rho\sinh(\eta-\psi),\qquad q_1\longmapsto\rho\cosh(\eta-\psi),
 $$
@@ -232,7 +232,7 @@ which is proportional to the boost generator $G_1$ modulo the central term $(\lo
 
 **Established (algebra, recomputed above).**
 
-- $G_1=ie_1\in\mathbb{M}_+$ is the boost generator; $\tilde\Lambda(\psi)=\cosh\tfrac{\psi}{2}+i\sinh\tfrac{\psi}{2}e_1$ is Hermitian and of unit norm form, preserves $\mathbb{M}_-$ and the norm form, and shifts the Rindler time by $\eta\mapsto\eta-\psi$.
+- $G_1=ie_1\in\mathbb{M}_+$ is the boost generator; $\tilde\Lambda(\psi)=\cosh\tfrac{\psi}{2}+i\sinh\tfrac{\psi}{2}e_1$ is Hermitian and of unit norm, preserves $\mathbb{M}_-$ and the biquaternion norm, and shifts the Rindler time by $\eta\mapsto\eta-\psi$.
 - The rotor acts on $\mathbb{M}_-$ by the two-sided (anticommutator) generator; the commutator with $G_1$ vanishes on the boost plane.
 - The modular flow advances the rapidity by $2\pi$ per unit modular parameter; $\tilde\Lambda(-2\pi s)$ advances $\eta$ by $2\pi s$.
 - $J^2=1$, $J\,i\,J=-i$, $J\Delta J=\Delta^{-1}$, $J(\tilde\rho)=\tilde\rho$ in the finite-dimensional model, for two independently chosen faithful states.
@@ -270,12 +270,12 @@ The framework does **not** make the geometric boost an inner automorphism of the
 | $\mathbb{M}_-,\mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\mathbb{H}_{\mathbb{B}}$ | Real-quaternion subspace |
 | $\tilde{Q}=ict\,e_0+x\,e_1+y\,e_2+z\,e_3$ | Material-sector coordinate, $\in\mathbb{M}_-$ |
-| $N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}=-c^2t^2+x^2+y^2+z^2$ | Norm form |
+| $N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}=-c^2t^2+x^2+y^2+z^2$ | Biquaternion norm |
 | $W_R=\{x:x^1>|x^0|\}$, $W_L$ | Right wedge and its mirror (causal complement) |
 | $\rho,\eta$ | Rindler radius and time, $x=\rho\cosh\eta$, $ct=\rho\sinh\eta$ |
 | $\xi=x\partial_t+t\partial_x=\partial_\eta$ | Boost Killing vector |
 | $G_1=ie_1\in\mathbb{M}_+$ | Boost generator (Hermitian, $G_1^2=e_0$) |
-| $\tilde\Lambda(\psi)=\cosh\frac{\psi}{2}+i\sinh\frac{\psi}{2}e_1$ | Boost rotor (Hermitian, unit norm form) |
+| $\tilde\Lambda(\psi)=\cosh\frac{\psi}{2}+i\sinh\frac{\psi}{2}e_1$ | Boost rotor (Hermitian, unit norm) |
 | $\tilde{Q}\mapsto\tilde\Lambda\tilde{Q}\tilde\Lambda$ | Boost = rotor conjugation on $\mathbb{M}_-$ |
 | $K_{\mathrm{boost}}$ | Boost Hamiltonian; $\Delta=e^{-2\pi K_{\mathrm{boost}}}$ |
 | $\Delta=S^*S$, $S=J\Delta^{1/2}$ | Modular operator; Tomita operator |

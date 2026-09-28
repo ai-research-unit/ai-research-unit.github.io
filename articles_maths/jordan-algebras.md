@@ -78,7 +78,7 @@ $$
 
 The cyclic form at $z = x$ is the linearised identity, so it implies it over any commutative ring. Conversely, the linearised identity at $w = x$ reads $3\,[L_x, L_{x^2}] = 0$, so the three forms are equivalent whenever $2$ and $3$ are invertible in $R$.
 
-*Proof.* Commutativity identifies $L_x(y) = x \circ y$ and $L_{x^2}(y) = x^2 \circ y$, so the identity $x^2 \circ (y \circ x) = (x^2 \circ y) \circ x$ for all $y$ is exactly $[L_x, L_{x^2}] = 0$; this needs no hypothesis on $2$. For the polarised forms, work in $J \otimes_R R[t]$, which is a Jordan algebra by base change of the axioms. Since $(x + tw)^2 = x^2 + 2t\,(x \circ w) + t^2 w^2$ and $L_{x + tw} = L_x + tL_w$, the expansion of $[L_{x + tw}, L_{(x+tw)^2}] = 0$ has $t$-coefficient $[L_w, L_{x^2}] + 2\,[L_x, L_{x \circ w}]$, and a polynomial identity over $R[t]$ has vanishing coefficients. Similarly, expanding $[L_{x + sy + tz}, L_{(x+sy+tz)^2}] = 0$ shows that the coefficient of $st$ is twice the cyclic sum, so the cyclic form follows when $2$ is invertible. The specialisations $z = x$ and $w = x$ are immediate. $\square$
+*Proof.* Commutativity identifies $L_x(y) = x \circ y$ and $L_{x^2}(y) = x^2 \circ y$, so the identity $x^2 \circ (y \circ x) = (x^2 \circ y) \circ x$ for all $y$ is exactly $[L_x, L_{x^2}] = 0$; this needs no hypothesis on $2$. For the polarised forms, work in $J \otimes_R R[t]$, which is a Jordan algebra by base change of the axioms. Since $(x + tw)^2 = x^2 + 2t\,(x \circ w) + t^2 w^2$ and $L_{x + tw} = L_x + tL_w$, the expansion of $[L_{x + tw}, L_{(x+tw)^2}] = 0$ has $t$-coefficient $[L_w, L_{x^2}] + 2\,[L_x, L_{x \circ w}]$, and a polynomial identity over $R[t]$ has vanishing coefficients. Similarly, expanding $[L_{x + sy + tz}, L_{(x+sy+tz)^2}] = 0$ shows that the coefficient of $st$ is twice the cyclic sum, so the cyclic form follows when $2$ is invertible. The specialisations $z = x$ and $w = x$ are immediate.
 
 The content of the axiom is therefore: multiplication by $x$ and multiplication by $x^2$ commute, and this continues to hold after linearisation. Despite the absence of associativity, the operators $L_x$ and $L_{x^2}$ generate a commutative algebra of endomorphisms, which is what makes the powers of a single element manageable.
 
@@ -100,7 +100,7 @@ $$
 x^2 \circ (x \circ y) = x \circ (x^2 \circ y) \qquad \text{for all } y,
 $$
 
-to move two of the factors past one another: writing $x^{m+1} \circ x^n = x \circ (x^m \circ x^n)$ and using the induction hypothesis, together with the displayed identity to commute the powers of $x$, gives $x^{m+n+1}$. The induction is standard and is carried out in any of the references below. $\square$
+to move two of the factors past one another: writing $x^{m+1} \circ x^n = x \circ (x^m \circ x^n)$ and using the induction hypothesis, together with the displayed identity to commute the powers of $x$, gives $x^{m+n+1}$. The induction is standard and is carried out in any of the references below.
 
 **Corollary.** In a Jordan algebra every element generates a commutative associative subalgebra, spanned by its powers. In particular, for each $x$ in a unital Jordan algebra the substitution $t \mapsto x$ is a surjective algebra homomorphism $R[t] \to J$ onto that subalgebra.
 
@@ -130,7 +130,7 @@ $$
 (x^2 \circ y) \circ x = (2x^2y + 2yx^2)x + x(2x^2y + 2yx^2) = 2\bigl(x^2yx + yx^3 + x^3y + xyx^2\bigr).
 $$
 
-The two expressions are the same four monomials in a different order, so the identity holds over every commutative ring. With the halved product $x \circ y = \tfrac12(xy + yx)$ every coefficient is divided by $2$ and the same cancellation occurs, so the identity holds there too. $\square$
+The two expressions are the same four monomials in a different order, so the identity holds over every commutative ring. With the halved product $x \circ y = \tfrac12(xy + yx)$ every coefficient is divided by $2$ and the same cancellation occurs, so the identity holds there too.
 
 The construction $A \mapsto A^+$ is functorial: an algebra homomorphism $f: A \to B$ is a Jordan homomorphism $A^+ \to B^+$, because $f(xy + yx) = f(x)f(y) + f(y)f(x)$. A Jordan algebra isomorphic to a subalgebra of some $A^+$ is called **special**; one that is not is **exceptional**. The dichotomy is not covered here.
 
@@ -194,7 +194,7 @@ $$
 \operatorname{tr}\bigl([\delta, L_{x \circ y}]\bigr) = \operatorname{tr}\bigl(L_{\delta(x \circ y)}\bigr) = \operatorname{tr}\bigl(L_{\delta x \circ y} + L_{x \circ \delta y}\bigr) = T(\delta x, y) + T(x, \delta y),
 $$
 
-where the last equality is the definition of $T$ and the linearity of $L$ in its subscript. The left-hand side is the trace of a commutator and therefore vanishes. $\square$
+where the last equality is the definition of $T$ and the linearity of $L$ in its subscript. The left-hand side is the trace of a commutator and therefore vanishes.
 
 **Corollary.** The trace form is invariant under every one-parameter group of automorphisms generated by a derivation: for a derivation $\delta$, the bilinear form $T$ is annihilated by the infinitesimal action $\delta$, so any automorphism of the form $\exp(\delta)$ (when defined) preserves $T$.
 
@@ -246,7 +246,7 @@ $$
 L_e w - 3L_e^2 w + 2L_e^3 w = 0
 $$
 
-for every $w \in J$. Hence $2L_e^3 - 3L_e^2 + L_e = 0$, which factors as $L_e(L_e - 1)(2L_e - 1) = 0$. $\square$
+for every $w \in J$. Hence $2L_e^3 - 3L_e^2 + L_e = 0$, which factors as $L_e(L_e - 1)(2L_e - 1) = 0$.
 
 ### The Peirce Spaces
 

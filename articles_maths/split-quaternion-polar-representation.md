@@ -13,7 +13,7 @@ a positive real scale $r$, a unit boost $b$, and an orthogonal factor $u$ which 
 
 The mathematical engine of the article is the matrix model. The split-quaternion algebra is isomorphic to the algebra of real two-by-two matrices, and under that isomorphism the polar representation above is the polar decomposition of a matrix into a positive definite symmetric factor and an orthogonal factor. Everything else in the article is that statement translated back into the algebra, with the translation made explicit so that the algebraic form can be used without passing through the matrices.
 
-Two differences from the quaternion case govern the whole article, and both come from the norm form. The quaternion norm form is positive definite, so its square root is a positive real with no choice; the split-quaternion norm form has signature $(2,2)$ and takes both signs, so the modulus must be built from the absolute value $|N(\tilde q)|$ and the sign of $N(\tilde q)$ is transferred to the orthogonal factor. And the quaternion algebra is a division algebra, so every nonzero element has a polar representation; the split-quaternion algebra has a null cone, and the elements on it have none, so the theorem is stated on the invertible elements and the trichotomy of the corpus's *Split-Quaternion Norm and Invertibility* is carried along.
+Two differences from the quaternion case govern the whole article, and both come from the split-quaternion norm. The quaternion norm is positive definite, so its square root is a positive real with no choice; the split-quaternion norm has signature $(2,2)$ and takes both signs, so the modulus must be built from the absolute value $|N(\tilde q)|$ and the sign of $N(\tilde q)$ is transferred to the orthogonal factor. And the quaternion algebra is a division algebra, so every nonzero element has a polar representation; the split-quaternion algebra has a null cone, and the elements on it have none, so the theorem is stated on the invertible elements and the trichotomy of the corpus's *Split-Quaternion Norm and Invertibility* is carried along.
 
 The conventions are those of *Split-Quaternion Algebra*: the basis is $1, e_1, e_2, e_3$ with
 
@@ -21,7 +21,7 @@ $$
 e_1^2 = -1, \qquad e_2^2 = +1, \qquad e_3 = e_1e_2, \qquad e_1e_2 = -e_2e_1,
 $$
 
-a general element is $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$, the conjugate is $\bar{\tilde q} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$, the norm form is
+a general element is $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$, the conjugate is $\bar{\tilde q} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$, the split-quaternion norm is
 
 $$
 N(\tilde q) = \tilde q\bar{\tilde q} = q_0^2+q_1^2-q_2^2-q_3^2,
@@ -31,9 +31,9 @@ the identification with $\mathrm{Cl}_{1,1}$ and with $M_2(\mathbb{R})$ is the co
 
 ## The Algebra and Its Two Involutions
 
-### The Norm Form and the Three Classes
+### The Split-Quaternion Norm and the Three Classes
 
-The norm form of a split quaternion is the quadratic form $N(\tilde q) = q_0^2+q_1^2-q_2^2-q_3^2$ of signature $(2,2)$. It is not positive definite, and this single fact is the source of everything that distinguishes this article from the quaternion case.
+The split-quaternion norm is the quadratic form $N(\tilde q) = q_0^2+q_1^2-q_2^2-q_3^2$ of signature $(2,2)$. It is not positive definite, and this single fact is the source of everything that distinguishes this article from the quaternion case.
 
 The form vanishes on a cone. The element $\tilde q = 1+e_2$ is nonzero and satisfies
 
@@ -41,7 +41,7 @@ $$
 (1+e_2)(1-e_2) = 1 - e_2^2 = 0,
 $$
 
-so $1+e_2$ and $1-e_2$ are nonzero zero divisors and $N(1\pm e_2) = 1-1 = 0$. The corpus's classification of the nonzero elements by the sign of the norm form gives the sharp version: $\tilde q$ is invertible if and only if $N(\tilde q)\neq0$, and the invertible elements split into the two open components $N > 0$ and $N < 0$. In the language of the article on the norm and invertibility, the nonzero elements are timelike ($N>0$), spacelike ($N<0$) or lightlike ($N=0$), and only the lightlike ones fail to be invertible.
+so $1+e_2$ and $1-e_2$ are nonzero zero divisors and $N(1\pm e_2) = 1-1 = 0$. The corpus's classification of the nonzero elements by the sign of the split-quaternion norm gives the sharp version: $\tilde q$ is invertible if and only if $N(\tilde q)\neq0$, and the invertible elements split into the two open components $N > 0$ and $N < 0$. In the language of the article on the split-quaternion norm and invertibility, the nonzero elements are timelike ($N>0$), spacelike ($N<0$) or lightlike ($N=0$), and only the lightlike ones fail to be invertible.
 
 The polar representation is a statement about the two invertible classes, and the null cone is exactly its domain of failure. This is the first appearance in the series of a decomposition whose domain is not the whole of the nonzero elements, and it is worth noting that the failure here is the mildest one: it is a single cone, of codimension one, and on it the decomposition fails by degeneracy rather than by contradiction, since $\tilde q \tilde q^{\tau}$ becomes positive semidefinite instead of positive definite.
 
@@ -62,7 +62,7 @@ $$
 \Phi(\tilde q) = \begin{pmatrix} q_0-q_3 & -q_1+q_2 \\ q_1+q_2 & q_0+q_3 \end{pmatrix},
 $$
 
-and the determinant is the norm form,
+and the determinant is the split-quaternion norm,
 
 $$
 \det\Phi(\tilde q) = (q_0-q_3)(q_0+q_3) - (q_2-q_1)(q_1+q_2) = q_0^2+q_1^2-q_2^2-q_3^2 = N(\tilde q).
@@ -86,9 +86,9 @@ $$
 
 the three-dimensional subspace of symmetric matrix images, and its anti-fixed space is the line $\mathbb{R}e_1$ of antisymmetric images.
 
-The transpose involution is distinct from the norm-form conjugation $\bar{\cdot}$, which reads $\tilde q \mapsto q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$ and negates all three vector units. Both are anti-automorphisms and both fix the scalars; they differ in the sign they give $e_2$ and $e_3$, and this difference is what makes one of them usable here and the other not.
+The transpose involution is distinct from the conjugation that defines the split-quaternion norm, $\bar{\cdot}$, which reads $\tilde q \mapsto q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$ and negates all three vector units. Both are anti-automorphisms and both fix the scalars; they differ in the sign they give $e_2$ and $e_3$, and this difference is what makes one of them usable here and the other not.
 
-### Why the Norm-Form Conjugation Cannot Serve
+### Why the Conjugation That Defines the Split-Quaternion Norm Cannot Serve
 
 A polar representation needs a factor that is, in a definite sense, positive. In the matrix picture the positive factor is the symmetric positive definite square root of $XX^{T}$, and the form $XX^{T}$ is positive definite for every invertible $X$ by construction, since $v^{T}XX^{T}v = |X^{T}v|^2 > 0$ for $v \neq 0$ when $X$ is invertible.
 
@@ -152,7 +152,7 @@ $$
 b = \frac{P}{r}, \qquad \det b = \frac{\det P}{r^2} = \frac{|N(\tilde q)|}{|N(\tilde q)|} = 1 .
 $$
 
-It is symmetric, positive definite, and of determinant and norm form one, so it lies in the intersection of the symmetric subspace with $SL(2,\mathbb{R})$: the two conditions $b^{\tau} = b$ and $N(b) = 1$ of the definition are met. The set of such elements is the two-dimensional hyperbolic plane, the symmetric space of the algebra; it is the analogue of the Hermitian positive boosts of the biquaternion algebra, and it is what the quaternion algebra lacks.
+It is symmetric, positive definite, and of determinant and norm one, so it lies in the intersection of the symmetric subspace with $SL(2,\mathbb{R})$: the two conditions $b^{\tau} = b$ and $N(b) = 1$ of the definition are met. The set of such elements is the two-dimensional hyperbolic plane, the symmetric space of the algebra; it is the analogue of the Hermitian positive boosts of the biquaternion algebra, and it is what the quaternion algebra lacks.
 
 ### The Orthogonal Factor
 
@@ -174,7 +174,7 @@ $$
 \det u = \frac{\det \tilde q}{\det P} = \frac{N(\tilde q)}{|N(\tilde q)|} = \operatorname{sign} N(\tilde q) ,
 $$
 
-so the orthogonal factor lies in $SO(2)$ when $\tilde q$ is timelike and in the other component of $O(2)$ when $\tilde q$ is spacelike. The discarded sign of the norm form is exactly the determinant of $u$.
+so the orthogonal factor lies in $SO(2)$ when $\tilde q$ is timelike and in the other component of $O(2)$ when $\tilde q$ is spacelike. The discarded sign of the split-quaternion norm is exactly the determinant of $u$.
 
 ### Existence and Uniqueness
 
@@ -182,7 +182,7 @@ so the orthogonal factor lies in $SO(2)$ when $\tilde q$ is timelike and in the 
 
 *Existence.* For such $\tilde q$, the element $\Sigma = \tilde q\tilde q^{\tau}$ is symmetric positive definite, so it has a unique symmetric positive definite square root $P$, whose determinant is $|N(\tilde q)| > 0$. Setting $r = \sqrt{\det P}$, $b = P/r$ and $u = P^{-1}\tilde q$ gives $r>0$, $\det b = 1$ with $b$ symmetric positive definite, and $u^{\tau}u = 1$, while $rbu = r(P/r)(P^{-1}\tilde q) = \tilde q$.
 
-*Uniqueness.* Suppose $\tilde q = rbu = r'b'u'$ with both triples admissible. Then $\tilde q\tilde q^{\tau} = r^2 b^2 = r'^2 b'^2$. The element $r^2b^2$ is symmetric positive definite, and its symmetric positive definite square root is unique, so $rb = r'b'$. Taking norm forms gives $r^2 = r'^2$, whence $r = r'$ because both are positive, then $b = b'$, then $u = u'$. $\square$
+*Uniqueness.* Suppose $\tilde q = rbu = r'b'u'$ with both triples admissible. Then $\tilde q\tilde q^{\tau} = r^2 b^2 = r'^2 b'^2$. The element $r^2b^2$ is symmetric positive definite, and its symmetric positive definite square root is unique, so $rb = r'b'$. Taking norms gives $r^2 = r'^2$, whence $r = r'$ because both are positive, then $b = b'$, then $u = u'$.
 
 The uniqueness is without sign ambiguity, as in the quaternion case, and for the same reason: the modulus is required to be positive, and that requirement pins down the square root.
 
@@ -205,34 +205,34 @@ The lightlike class is the null cone, the zero divisors of *Split-Quaternion Zer
 The boost lies in $\operatorname{span}\{1,e_2,e_3\}$, the fixed space of $\tau$. Removing the scalar direction, which the normalisation $N(b) = 1$ separates, leaves the two-dimensional subspace
 
 $$
-\mathfrak{p} = \operatorname{span}\{e_2, e_3\},
+\mathrm{P} = \operatorname{span}\{e_2, e_3\},
 $$
 
-whose matrix image is the space of symmetric traceless two-by-two matrices, since $\Phi(e_2)$ and $\Phi(e_3)$ have vanishing trace and $\Phi(1)$ does not. The elements of $\mathfrak{p}$ are the algebra's hyperbolic directions, and they exponentiate into the boosts.
+whose matrix image is the space of symmetric traceless two-by-two matrices, since $\Phi(e_2)$ and $\Phi(e_3)$ have vanishing trace and $\Phi(1)$ does not. The elements of $\mathrm{P}$ are the algebra's hyperbolic directions, and they exponentiate into the boosts.
 
 ### The Logarithm and the Closed Form
 
 **Proposition.** Let $b$ be symmetric positive definite with $N(b) = 1$, and write $b = b_1 + b_2e_2 + b_3e_3$. Then $b_1 \ge 1$ and
 
 $$
-b = \exp(\sigma), \qquad \sigma = \frac{\operatorname{arccosh}(b_1)}{\sqrt{b_2^2+b_3^2}}\left(b_2e_2+b_3e_3\right) \in \mathfrak{p},
+b = \exp(\sigma), \qquad \sigma = \frac{\operatorname{arccosh}(b_1)}{\sqrt{b_2^2+b_3^2}}\left(b_2e_2+b_3e_3\right) \in \mathrm{P},
 $$
 
 with the convention that $\sigma = 0$ when $b_2 = b_3 = 0$, in which case $b = 1$.
 
-*Proof.* For $\sigma = t_2e_2+t_3e_3 \in \mathfrak{p}$, the cross terms cancel because $e_2e_3+e_3e_2 = 0$ and the squares are both $+1$, so
+*Proof.* For $\sigma = t_2e_2+t_3e_3 \in \mathrm{P}$, the cross terms cancel because $e_2e_3+e_3e_2 = 0$ and the squares are both $+1$, so
 
 $$
 \sigma^2 = t_2^2+t_3^2 + t_2t_3\left(e_2e_3+e_3e_2\right) = \left(t_2^2+t_3^2\right)\cdot 1 ,
 $$
 
-a positive multiple of the identity. The exponential of such an element is the hyperbolic cosine-sine pair, $\exp(\sigma) = \cosh d + \frac{\sinh d}{d}\sigma$ with $d = \sqrt{t_2^2+t_3^2}$, by the same power-series split as in the quaternion case with the signs exchanged. Comparing with $b$ gives $b_1 = \cosh d$, whence $d = \operatorname{arccosh}(b_1)$ and $(b_2,b_3) = \frac{\sinh d}{d}(t_2,t_3)$, which is the displayed formula. $\square$
+a positive multiple of the identity. The exponential of such an element is the hyperbolic cosine-sine pair, $\exp(\sigma) = \cosh d + \frac{\sinh d}{d}\sigma$ with $d = \sqrt{t_2^2+t_3^2}$, by the same power-series split as in the quaternion case with the signs exchanged. Comparing with $b$ gives $b_1 = \cosh d$, whence $d = \operatorname{arccosh}(b_1)$ and $(b_2,b_3) = \frac{\sinh d}{d}(t_2,t_3)$, which is the displayed formula.
 
 The positivity of $b$ enters only through $b_1 \ge 1$, which is the condition for the arccosine hyperbolic to be defined; it holds automatically, since $b$ has determinant one and trace $2b_1$, and $\det b = 1$ with $b$ positive definite forces $b_1 \ge 1$.
 
 ### The Two Parameters of a Boost
 
-The exponential map is a bijection from $\mathfrak{p}$ onto the boosts. It is injective because the formula above inverts it, and surjective by the proposition; and it is a diffeomorphism, since both the formula and its inverse are smooth away from the origin, where the coordinates degenerate but the element does not. The boost is therefore described by two real parameters $t_2,t_3$, and its rapidity, in the sense of the hyperbolic distance in the symmetric space, is $d = \sqrt{t_2^2+t_3^2}$.
+The exponential map is a bijection from $\mathrm{P}$ onto the boosts. It is injective because the formula above inverts it, and surjective by the proposition; and it is a diffeomorphism, since both the formula and its inverse are smooth away from the origin, where the coordinates degenerate but the element does not. The boost is therefore described by two real parameters $t_2,t_3$, and its rapidity, in the sense of the hyperbolic distance in the symmetric space, is $d = \sqrt{t_2^2+t_3^2}$.
 
 This is the structural difference from the biquaternion case of the companion article. There the boosts also form a three-dimensional hyperbolic space with a rapidity and an axis; here the boost space is two-dimensional because the algebra has one compact direction fewer, the missing direction being supplied by the third factor, or rather by the fact that the orthogonal factor here has only one continuous parameter. The counting is made precise in the comparison section below.
 
@@ -258,7 +258,7 @@ $$
 
 with the same angle convention. The element $e_2$ is the fixed reflection, and the factorisation is unique for the same reason the rotation form is: the angle is read off from the rotation part and the discrete factor is then determined. The reflection is therefore the discrete part of the orthogonal factor and the angle is its continuous part.
 
-The presence of two components is the sharpest contrast with the quaternion case, where the rotor lies in the connected group $\mathrm{Sp}(1)$. The reason is the group that the rotor occupies and not the norm form directly: here the rotor satisfies $u^{\tau}u = 1$, so it is an element of the full orthogonal group $O(2)$, whose two components are the rotations and the reflections and are separated by the determinant; there the rotor satisfies $N(u) = 1$ and is an element of the sphere $S^3$, which is connected. The indefiniteness of $N$ enters in a different place, by making spacelike elements available in the first place, and it is the spacelike elements that carry the reflection.
+The presence of two components is the sharpest contrast with the quaternion case, where the rotor lies in the connected group $\mathrm{Sp}(1)$. The reason is the group that the rotor occupies and not the split-quaternion norm directly: here the rotor satisfies $u^{\tau}u = 1$, so it is an element of the full orthogonal group $O(2)$, whose two components are the rotations and the reflections and are separated by the determinant; there the rotor satisfies $N(u) = 1$ and is an element of the sphere $S^3$, which is connected. The indefiniteness of $N$ enters in a different place, by making spacelike elements available in the first place, and it is the spacelike elements that carry the reflection.
 
 ## Worked Examples
 
@@ -332,7 +332,7 @@ The two decompositions differ in structure, and the difference is summarised by 
 
 Three points of the comparison are worth stating explicitly.
 
-**The modulus is still a real scale, but its formula is not.** In $\mathbb{H}$ the modulus is $\sqrt{N(q)}$ and needs no absolute value, because the norm form is definite. In $\mathbb{H}_{\mathrm{s}}$ it is $\sqrt{|N(\tilde q)|}$, and the absolute value is not a cosmetic convenience: it is the statement that the norm form takes both signs.
+**The modulus is still a real scale, but its formula is not.** In $\mathbb{H}$ the modulus is $\sqrt{N(q)}$ and needs no absolute value, because the quaternion norm is definite. In $\mathbb{H}_{\mathrm{s}}$ it is $\sqrt{|N(\tilde q)|}$, and the absolute value is not a cosmetic convenience: it is the statement that the split-quaternion norm takes both signs.
 
 **A boost appears, and a rotation direction disappears.** The quaternion algebra has three compact directions, the unit sphere $S^3$; the split-quaternion algebra has one, the circle generated by $e_1$. The two directions lost from the compact part are exactly the two directions gained by the boost, and the total remains four. In the biquaternion algebra of the companion article both a three-dimensional boost and a three-parameter rotor are present, and both survive because the algebra is eight-dimensional.
 
@@ -354,14 +354,14 @@ in which $b$ is the unique symmetric positive definite element with $b^{\tau} = 
 |---|---|
 | $\mathbb{H}_{\mathrm{s}}$ | the split-quaternion algebra, basis $1,e_1,e_2,e_3$, $e_1^2 = -1$, $e_2^2 = e_3^2 = +1$ |
 | $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ | a split quaternion |
-| $\bar{\tilde q} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$ | the norm-form conjugation |
+| $\bar{\tilde q} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$ | the conjugation that defines the split-quaternion norm |
 | $\tilde q^{\tau} = q_0 e_0 - q_1 e_1 + q_2 e_2 + q_3 e_3$ | the transpose involution, the image of the matrix transpose |
-| $N(\tilde q) = \tilde q\bar{\tilde q} = q_0^2+q_1^2-q_2^2-q_3^2$ | the norm form, of signature $(2,2)$ |
+| $N(\tilde q) = \tilde q\bar{\tilde q} = q_0^2+q_1^2-q_2^2-q_3^2$ | the split-quaternion norm, of signature $(2,2)$ |
 | $\Phi$ | the isomorphism $\mathbb{H}_{\mathrm{s}} \to M_2(\mathbb{R})$ |
 | $\Sigma = \tilde q\tilde q^{\tau}$, $P = \sqrt{\Sigma}$ | the positive element and its symmetric positive definite square root |
 | $r = \sqrt{|N(\tilde q)|}$ | the modulus |
 | $b = P/r$ | the unit boost, $b^{\tau} = b$, $N(b) = 1$ |
-| $\mathfrak{p} = \operatorname{span}\{e_2,e_3\}$ | the boost subspace, symmetric traceless images |
+| $\mathrm{P} = \operatorname{span}\{e_2,e_3\}$ | the boost subspace, symmetric traceless images |
 | $u = P^{-1}\tilde q$ | the orthogonal factor, $u^{\tau}u = 1$, $\det u = \operatorname{sign}N(\tilde q)$ |
 | timelike, spacelike, lightlike | $N > 0$, $N < 0$, $N = 0$ |
 

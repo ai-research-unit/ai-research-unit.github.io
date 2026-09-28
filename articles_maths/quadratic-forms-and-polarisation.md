@@ -39,7 +39,7 @@ $$
 q(u + v) - q(u) - q(v) = B(u, v) + B(v, u) = 2B(u, v),
 $$
 
-so the function defined in the definition is $B$ itself. $\square$
+so the function defined in the definition is $B$ itself.
 
 **Corollary (the correspondence).** Let $2$ be invertible in $R$. Then the assignments $B \mapsto q$ with $q(v) = B(v, v)$ and $q \mapsto B$ by the polar formula are mutually inverse bijections between symmetric bilinear forms on $M$ and quadratic forms on $M$.
 
@@ -49,7 +49,7 @@ $$
 B(v, v) = \tfrac{1}{2}\bigl(q(2v) - 2q(v)\bigr) = \tfrac{1}{2}\bigl(4q(v) - 2q(v)\bigr) = q(v),
 $$
 
-using $q(2v) = 4q(v)$ and additivity. So the two constructions are inverse. $\square$
+using $q(2v) = 4q(v)$ and additivity. So the two constructions are inverse.
 
 **Definition.** A quadratic form $q$ is **non-degenerate** if its polar form $B$ is non-degenerate in the sense of *Bilinear Forms*, that is, if $M \to M^*$, $u \mapsto B(u, -)$, is an isomorphism. Its **radical** is $\operatorname{rad}(q) = \operatorname{rad}(B)$.
 
@@ -81,13 +81,13 @@ $$
 q(u + v) = q(u) + q(v) + 2B(u, v), \qquad q(u - v) = q(u) + q(v) - 2B(u, v).
 $$
 
-Adding the two gives the parallelogram law and subtracting them gives the second identity. For the third, bilinearity and symmetry give $B(u + v, u - v) = B(u, u) - B(v, v) = q(u) - q(v)$. $\square$
+Adding the two gives the parallelogram law and subtracting them gives the second identity. For the third, bilinearity and symmetry give $B(u + v, u - v) = B(u, u) - B(v, v) = q(u) - q(v)$.
 
 The parallelogram law and the second identity recover $B$ from $q$ in the two ways that the diagonalisation below uses: the first computes the sum $q(u + v) + q(u - v)$, the second the difference $q(u + v) - q(u - v)$.
 
 **Corollary.** Let $2$ be invertible. If $q(u + v) = q(u) + q(v)$ for all $u, v$, then $q = 0$.
 
-**Proof.** The hypothesis says $2B(u, v) = 0$ for all $u, v$, so $B = 0$ because $2$ is invertible, and then $q(v) = B(v, v) = 0$. $\square$
+**Proof.** The hypothesis says $2B(u, v) = 0$ for all $u, v$, so $B = 0$ because $2$ is invertible, and then $q(v) = B(v, v) = 0$.
 
 The corollary fails as soon as $2$ is not invertible: over $\mathbb{F}_2$ the form $q(x) = x^2$ is additive and nonzero. The precise measure of the failure is the subject of the last section of this article.
 
@@ -107,7 +107,7 @@ $$
 
 is a quadratic form, and its polar form has Gram matrix $\operatorname{diag}(a_1, \ldots, a_n)$.
 
-**Example (the norm forms).** The norm $N(z) = z\bar{z}$ on the complex numbers is the quadratic form $a^2 + b^2$ on $\mathbb{R}^2$; its polar form is the Euclidean inner product. The norm $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$ on the quaternions is the form $x_0^2 + x_1^2 + x_2^2 + x_3^2$ on $\mathbb{R}^4$. These are the standard examples of positive-definite forms and are treated systematically.
+**Example (the norms).** The norm $N(z) = z\bar{z}$ on the complex numbers is the quadratic form $a^2 + b^2$ on $\mathbb{R}^2$; its polar form is the Euclidean inner product. The norm $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$ on the quaternions is the form $x_0^2 + x_1^2 + x_2^2 + x_3^2$ on $\mathbb{R}^4$. These are the standard examples of positive-definite forms and are treated systematically.
 
 **Example (the hyperbolic plane).** On $R^2$ the form
 
@@ -141,7 +141,7 @@ $$
 x^{T} G x = (Px')^{T} G (Px') = x'^{T} (P^{T} G P)\, x',
 $$
 
-and a quadratic form is determined by its matrix when $2$ is invertible. $\square$
+and a quadratic form is determined by its matrix when $2$ is invertible.
 
 Two symmetric matrices $G, G'$ with $G' = P^{T} G P$ for an invertible $P$ are **congruent**, so isometry classes of quadratic forms on a free module are congruence classes of symmetric matrices. Under congruence the rank of $G$ is unchanged, and $\det(P^{T} G P) = \det(P)^2 \det G$ shows that the determinant of the Gram matrix is well defined modulo squares; that residue is the discriminant of the diagonalising section below.
 
@@ -221,7 +221,7 @@ $$
 V = F e_1 \perp e_1^{\perp}, \qquad e_1^\perp = \{v : B(e_1, v) = 0\},
 $$
 
-because every $v$ decomposes as $v = \frac{B(v, e_1)}{q(e_1)} e_1 + \bigl(v - \frac{B(v, e_1)}{q(e_1)} e_1\bigr)$, and the second summand lies in $e_1^\perp$; the two subspaces meet in $0$ since $q(e_1) \neq 0$. The restriction of $q$ to $e_1^\perp$ is again a quadratic form on a space of dimension $n - 1$, and induction gives an orthogonal basis of $e_1^\perp$; adjoining $e_1$ finishes the proof. $\square$
+because every $v$ decomposes as $v = \frac{B(v, e_1)}{q(e_1)} e_1 + \bigl(v - \frac{B(v, e_1)}{q(e_1)} e_1\bigr)$, and the second summand lies in $e_1^\perp$; the two subspaces meet in $0$ since $q(e_1) \neq 0$. The restriction of $q$ to $e_1^\perp$ is again a quadratic form on a space of dimension $n - 1$, and induction gives an orthogonal basis of $e_1^\perp$; adjoining $e_1$ finishes the proof.
 
 **Corollary.** Over a field of characteristic not $2$, every quadratic form is isometric to a diagonal form. The diagonal entries are determined only up to two operations: permuting them, and replacing $a_i$ by $c^2 a_i$ with $c \in F^\times$, since $a_i x_i^2 = a_i (c x_i)^2$ after rescaling the basis vector.
 
@@ -257,13 +257,13 @@ When $2$ is invertible this is equivalent to $B'(Tx, Ty) = B(x, y)$ for all $x, 
 
 **Proposition.** Isometry of forms is an equivalence relation; the identity is an isometry, the inverse of an isometry is an isometry, and a composite of isometries is an isometry. Isometric forms have conjugate isometry groups.
 
-**Proof.** If $q' \circ T = q$ then $T^{-1}$ carries $q'$ to $q$, and if also $q'' \circ S = q'$ then $q'' \circ (S \circ T) = q$, so the relation is reflexive, symmetric and transitive. For the last statement, $S \mapsto TST^{-1}$ is an isomorphism $\operatorname{O}(M, q) \to \operatorname{O}(M', q')$. $\square$
+**Proof.** If $q' \circ T = q$ then $T^{-1}$ carries $q'$ to $q$, and if also $q'' \circ S = q'$ then $q'' \circ (S \circ T) = q$, so the relation is reflexive, symmetric and transitive. For the last statement, $S \mapsto TST^{-1}$ is an isomorphism $\operatorname{O}(M, q) \to \operatorname{O}(M', q')$.
 
 ### Invariants
 
 **Proposition.** Let $q \cong q'$ with $\dim M = \dim M' = n$. Then $q$ and $q'$ have the same rank and the same discriminant, and if both are real forms their indices and nullity agree, hence also their signatures.
 
-**Proof.** An isometry $T$ satisfies $B'(Tx, Ty) = B(x, y)$, so $Tx = 0$ implies $x \in \operatorname{rad}(q)$, and $x \in \operatorname{rad}(q)$ implies $B'(Tx, Ty) = 0$ for all $y$, that is $Tx \in \operatorname{rad}(q')$; since $T$ is bijective it carries $\operatorname{rad}(q)$ isomorphically onto $\operatorname{rad}(q')$, and the ranks agree. The Gram matrices in corresponding bases are congruent, so their determinants differ by a square. For real forms a subspace on which $q$ is positive definite is carried by $T$ to a subspace of the same dimension on which $q'$ is positive definite, so the positive indices satisfy $p(q) \leq p(q')$, and the reverse inequality follows by applying the same argument to $T^{-1}$; the same reasoning gives $r(q) = r(q')$ and hence $z(q) = z(q')$. $\square$
+**Proof.** An isometry $T$ satisfies $B'(Tx, Ty) = B(x, y)$, so $Tx = 0$ implies $x \in \operatorname{rad}(q)$, and $x \in \operatorname{rad}(q)$ implies $B'(Tx, Ty) = 0$ for all $y$, that is $Tx \in \operatorname{rad}(q')$; since $T$ is bijective it carries $\operatorname{rad}(q)$ isomorphically onto $\operatorname{rad}(q')$, and the ranks agree. The Gram matrices in corresponding bases are congruent, so their determinants differ by a square. For real forms a subspace on which $q$ is positive definite is carried by $T$ to a subspace of the same dimension on which $q'$ is positive definite, so the positive indices satisfy $p(q) \leq p(q')$, and the reverse inequality follows by applying the same argument to $T^{-1}$; the same reasoning gives $r(q) = r(q')$ and hence $z(q) = z(q')$.
 
 The proposition gives the invariants that the classification theorems of this category compute: dimension, rank, discriminant, and over $\mathbb{R}$ the signature. Each is unchanged by isometry, and each section below shows that on its class of forms the list is complete.
 
@@ -285,7 +285,7 @@ $$
 
 and for real forms the indices and the nullity add, so $\sigma(q \perp q') = \sigma(q) + \sigma(q')$.
 
-**Proof.** The map $(x, x') \mapsto (x', x)$ is an isometry $q \perp q' \to q' \perp q$, and $(M \oplus M') \oplus M'' \to M \oplus (M' \oplus M'')$ is an isometry for the two bracketings; the radical statement is the vanishing of $B(x,y) + B'(x',y')$ for all $y, y'$, which forces $x \in \operatorname{rad}(q)$ and $x' \in \operatorname{rad}(q')$. The Gram matrix of $q \perp q'$ in the union of orthogonal bases is block diagonal, so it is diagonalisable and the rank and discriminant are as claimed; for the indices, diagonalising both real forms gives a diagonal basis of the sum whose positive, negative and zero entries are the combined entries of the two forms, and by Sylvester's law below the index of a real form is the number of positive entries of any diagonal basis, so the indices and the nullity add. $\square$
+**Proof.** The map $(x, x') \mapsto (x', x)$ is an isometry $q \perp q' \to q' \perp q$, and $(M \oplus M') \oplus M'' \to M \oplus (M' \oplus M'')$ is an isometry for the two bracketings; the radical statement is the vanishing of $B(x,y) + B'(x',y')$ for all $y, y'$, which forces $x \in \operatorname{rad}(q)$ and $x' \in \operatorname{rad}(q')$. The Gram matrix of $q \perp q'$ in the union of orthogonal bases is block diagonal, so it is diagonalisable and the rank and discriminant are as claimed; for the indices, diagonalising both real forms gives a diagonal basis of the sum whose positive, negative and zero entries are the combined entries of the two forms, and by Sylvester's law below the index of a real form is the number of positive entries of any diagonal basis, so the indices and the nullity add.
 
 **Example.** With the diagonal notation, $\langle a \rangle \perp \langle b \rangle \cong \langle a, b\rangle$, and the hyperbolic plane of the example above is $\langle 1 \rangle \perp \langle -1\rangle$, written $\langle 1, -1\rangle$; it is the smallest non-degenerate isotropic real form, and it is the elementary block of the Witt theory.
 
@@ -303,7 +303,7 @@ $$
 
 The numbers $p$ and $r$ are the **positive** and **negative indices**, $z$ is the **nullity**, and $\operatorname{rank}(q) = p + r$.
 
-**Proof.** Diagonalise, $q \cong \langle a_1, \ldots, a_n\rangle$ with $a_i \in \mathbb{R}$. Replacing $a_i$ by $a_i/|a_i|$ when $a_i \neq 0$ gives the displayed normal form, so existence holds. For uniqueness, one of $p, r$ is the largest dimension of a subspace on which $q$ is positive definite, and the other the largest dimension on which it is negative definite. Indeed, on the span of the first $p$ basis vectors $q$ is positive definite, so the largest such dimension is at least $p$; if $W$ were a subspace of dimension exceeding $p$ on which $q$ is positive definite, then $W$ would meet the span of the last $r + z$ basis vectors (dimension $n - p$) in a nonzero vector $w$, and $q(w) \leq 0$, a contradiction. Hence the largest dimension is exactly $p$; the argument for $r$ is the same with $-q$. Both numbers being determined by $q$, the decomposition is unique. $\square$
+**Proof.** Diagonalise, $q \cong \langle a_1, \ldots, a_n\rangle$ with $a_i \in \mathbb{R}$. Replacing $a_i$ by $a_i/|a_i|$ when $a_i \neq 0$ gives the displayed normal form, so existence holds. For uniqueness, one of $p, r$ is the largest dimension of a subspace on which $q$ is positive definite, and the other the largest dimension on which it is negative definite. Indeed, on the span of the first $p$ basis vectors $q$ is positive definite, so the largest such dimension is at least $p$; if $W$ were a subspace of dimension exceeding $p$ on which $q$ is positive definite, then $W$ would meet the span of the last $r + z$ basis vectors (dimension $n - p$) in a nonzero vector $w$, and $q(w) \leq 0$, a contradiction. Hence the largest dimension is exactly $p$; the argument for $r$ is the same with $-q$. Both numbers being determined by $q$, the decomposition is unique.
 
 **Definition.** The **signature** of a real quadratic form is
 
@@ -319,11 +319,11 @@ Orthogonal direct sums add signatures, positive indices, negative indices and nu
 
 **Theorem (classification over $\mathbb{R}$).** Two real quadratic forms of the same dimension are isometric if and only if they have the same signature and the same rank, equivalently the same triple $(p, r, z)$.
 
-**Proof.** If they are isometric their indices agree by the characterisation of $p$ and $r$ in the proof of Sylvester's law as extremal dimensions, which is an isometry invariant. Conversely, two forms with the same $(p, r, z)$ are each isometric to the normal form determined by that triple. $\square$
+**Proof.** If they are isometric their indices agree by the characterisation of $p$ and $r$ in the proof of Sylvester's law as extremal dimensions, which is an isometry invariant. Conversely, two forms with the same $(p, r, z)$ are each isometric to the normal form determined by that triple.
 
 **Theorem (classification over $\mathbb{C}$).** Every non-degenerate complex quadratic form of dimension $n$ is isometric to $n\langle 1\rangle$. Hence two non-degenerate complex forms are isometric if and only if they have the same dimension, and in general two complex forms are isometric if and only if they have the same rank.
 
-**Proof.** In $\mathbb{C}$ every nonzero number is a square, so each diagonal entry $a_i \neq 0$ can be replaced by $1$; the diagonal form is then a block of ones and a block of zeros, determined by the number of nonzero entries, which is the rank. $\square$
+**Proof.** In $\mathbb{C}$ every nonzero number is a square, so each diagonal entry $a_i \neq 0$ can be replaced by $1$; the diagonal form is then a block of ones and a block of zeros, determined by the number of nonzero entries, which is the rank.
 
 **Remark.** The contrast is the reason the real theory is richer: over $\mathbb{C}$ there is one non-degenerate form in each dimension, while over $\mathbb{R}$ there are $n + 1$, indexed by the signature.
 
@@ -343,7 +343,7 @@ The positive definite forms are exactly the inner products of Euclidean geometry
 
 **Proposition.** A non-degenerate real form with $p, r > 0$ is isotropic, and a non-degenerate real form with $r = 0$ or $p = 0$ is anisotropic. A non-degenerate complex form of dimension at least $2$ is isotropic.
 
-**Proof.** If $p, r > 0$ choose $u$ with $q(u) = 1$ in the positive part and $w$ with $q(w) = -1$ in the negative part; then $q(u + w) = 1 - 1 = 0$ and $u + w \neq 0$. If $r = 0$ then $q$ is positive definite and vanishes only at $0$. For a complex form of dimension at least $2$, in a diagonal basis $a_1 x_1^2 + a_2 x_2^2$ with all $a_i \neq 0$, the vector with $x_1^2 = -a_2/a_1$, $x_2 = 1$ is isotropic. $\square$
+**Proof.** If $p, r > 0$ choose $u$ with $q(u) = 1$ in the positive part and $w$ with $q(w) = -1$ in the negative part; then $q(u + w) = 1 - 1 = 0$ and $u + w \neq 0$. If $r = 0$ then $q$ is positive definite and vanishes only at $0$. For a complex form of dimension at least $2$, in a diagonal basis $a_1 x_1^2 + a_2 x_2^2$ with all $a_i \neq 0$, the vector with $x_1^2 = -a_2/a_1$, $x_2 = 1$ is isotropic.
 
 The hyperbolic plane $q(x, y) = x^2 - y^2$ is the smallest isotropic non-degenerate real form. Its role as the elementary building block of Witt theory is not covered here.
 

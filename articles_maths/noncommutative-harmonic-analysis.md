@@ -23,7 +23,7 @@ The abelian dual is $G^\vee$ and the unitary dual — the set of equivalence cla
 
 **Theorem.** $L^1(G)$ is commutative if and only if $G$ is abelian, and if $G$ is non-abelian then $L^1(G)$ has no nonzero complex homomorphism into $\mathbb{C}$ unless $G$ has an abelian quotient of finite or infinite index — in particular, the Gelfand spectrum of $L^1(G)$ is the set of characters of $G$ and sees only the abelianisation $G/[G,G]$.
 
-**Proof.** If $G$ is abelian, the substitution $y \mapsto xy^{-1}$ gives $f*g = g*f$. If $G$ is non-abelian, choose $x, y \in G$ with $xy \neq yx$ and approximate the point masses at $x$, $y$; the corresponding functions do not commute. A complex homomorphism $h$ of $L^1(G)$ extends to a one-dimensional representation of $G$ through the correspondence of *The Convolution Algebra $L^1(G)$*, §Representations and Completions, and hence is a character; characters factor through the commutator subgroup, so the Gelfand spectrum is the character group of the abelianisation. $\square$
+**Proof.** If $G$ is abelian, the substitution $y \mapsto xy^{-1}$ gives $f*g = g*f$. If $G$ is non-abelian, choose $x, y \in G$ with $xy \neq yx$ and approximate the point masses at $x$, $y$; the corresponding functions do not commute. A complex homomorphism $h$ of $L^1(G)$ extends to a one-dimensional representation of $G$ through the correspondence of *The Convolution Algebra $L^1(G)$*, §Representations and Completions, and hence is a character; characters factor through the commutator subgroup, so the Gelfand spectrum is the character group of the abelianisation.
 
 For $G = S_3$ the Gelfand spectrum is the two-element group $S_3/[S_3,S_3] \cong \mathbb{Z}/2$, while the unitary dual has three elements, one of dimension $2$. The Gelfand transform therefore loses the representation of dimension $2$, and with it the whole of the non-abelian analysis; the operator-valued transform of the next section is what recovers it.
 
@@ -59,7 +59,7 @@ $$
 \widehat{f*h}(\pi) = \hat f(\pi)\,\hat h(\pi), \qquad \widehat{f^*}(\pi) = \hat f(\pi)^* .
 $$
 
-*Proof.* Same computation as in the abelian and compact cases: substitute $x = yz$ and use left invariance and multiplicativity. The involution statement uses the modular factor in $f^*$ and the unitarity of $\pi$. $\square$
+*Proof.* Same computation as in the abelian and compact cases: substitute $x = yz$ and use left invariance and multiplicativity. The involution statement uses the modular factor in $f^*$ and the unitarity of $\pi$.
 
 Thus the transform is a $*$-homomorphism of the Banach $*$-algebra $L^1(G)$ into the algebra of operator fields on the dual with pointwise multiplication, and it is exactly the integrated form of the representation correspondence of *The Convolution Algebra $L^1(G)$*, §Representations and Completions.
 
@@ -69,7 +69,7 @@ Thus the transform is a $*$-homomorphism of the Banach $*$-algebra $L^1(G)$ into
 
 **Theorem (Godement).** A continuous function $\varphi$ on $G$ is of positive type if and only if there is a unitary representation $\pi$ of $G$ and a vector $\xi \in \mathcal{H}_\pi$ with $\varphi(g) = c^\pi_{\xi,\xi}(g)$; the representation may be taken cyclic with $\xi$ cyclic, and then it is unique up to unitary equivalence (the GNS construction). Every matrix coefficient is a linear combination of four functions of positive type, and a function of positive type satisfies $\varphi(e) = \|\varphi\|_\infty$, $\varphi(g^{-1}) = \overline{\varphi(g)}$ and $\|\varphi\|_\infty = \|\varphi\|_{C^*}$.
 
-**Proof sketch.** Given $\varphi$ of positive type, the sesquilinear form on $C_c(G)$ given by $\langle f,h\rangle_\varphi = \int\int f(x)\overline{h(y)}\varphi(y^{-1}x)\,dx\,dy$ is positive semidefinite; completing and factoring gives a Hilbert space, the group acts unitarily by left translation because of the invariance of the kernel, and the class of an approximate identity concentrated near $e$ is the cyclic vector $\xi$ whose associated coefficient is $\varphi$. Conversely a diagonal coefficient is of positive type because $\sum c_i\overline{c_j}\langle\pi(x_j^{-1}x_i)\xi,\xi\rangle = \|\sum_i c_i\pi(x_i)\xi\|^2 \geq 0$. Uniqueness is the standard uniqueness in the GNS construction. This is the noncommutative form of Bochner's theorem; in the abelian case the cyclic representations are the characters and the theorem reduces to *Harmonic Analysis on Groups*, §Positive-Definite Functions and Bochner's Theorem. $\square$
+**Proof sketch.** Given $\varphi$ of positive type, the sesquilinear form on $C_c(G)$ given by $\langle f,h\rangle_\varphi = \int\int f(x)\overline{h(y)}\varphi(y^{-1}x)\,dx\,dy$ is positive semidefinite; completing and factoring gives a Hilbert space, the group acts unitarily by left translation because of the invariance of the kernel, and the class of an approximate identity concentrated near $e$ is the cyclic vector $\xi$ whose associated coefficient is $\varphi$. Conversely a diagonal coefficient is of positive type because $\sum c_i\overline{c_j}\langle\pi(x_j^{-1}x_i)\xi,\xi\rangle = \|\sum_i c_i\pi(x_i)\xi\|^2 \geq 0$. Uniqueness is the standard uniqueness in the GNS construction. This is the noncommutative form of Bochner's theorem; in the abelian case the cyclic representations are the characters and the theorem reduces to *Harmonic Analysis on Groups*, §Positive-Definite Functions and Bochner's Theorem.
 
 **Corollary (the noncommutative Bochner theorem).** The functions of positive type are the "noncommutative Fourier–Stieltjes transforms": each is the diagonal matrix coefficient of a cyclic unitary representation, and the correspondence is a bijection up to unitary equivalence. The measure of the abelian theorem has become the representation.
 
@@ -79,7 +79,7 @@ Thus the transform is a $*$-homomorphism of the Banach $*$-algebra $L^1(G)$ into
 
 **Theorem.** The coefficient space is an algebra under pointwise multiplication and under convolution, it is invariant under left and right translation and under the involution $f \mapsto f^*$, and it is dense in $C_0(G)$ in the uniform norm; for $G$ compact it is dense in $C(G)$ and its completion is the algebra of *Analysis on Compact Groups*. The transform identifies the completion of $L^1(G)$ acting on this space with the algebra of operator fields.
 
-**Proof.** Products of coefficients are coefficients of tensor products; conjugates are coefficients of contragredient representations; translation invariance and the convolution statement follow from the representation identities; density is the Stone–Weierstrass argument when $G$ is compact and the general analogue for $G$ of type I. $\square$
+**Proof.** Products of coefficients are coefficients of tensor products; conjugates are coefficients of contragredient representations; translation invariance and the convolution statement follow from the representation identities; density is the Stone–Weierstrass argument when $G$ is compact and the general analogue for $G$ of type I.
 
 ## The Decomposition of the Regular Representation
 
@@ -117,7 +117,7 @@ $$
 
 The representation $\lambda$ is the image of the identity field under this isomorphism, and the multiplicity $d_\pi$ of the irreducible $\pi$ in $\lambda$ is the dimension of the fibre $\mathcal{H}_\pi$; the integrand is zero only for $\pi$ outside the support of $\mu_P$.
 
-**Proof.** The commutant of the direct integral of the $\pi$ is the direct integral of the commutants, and each commutant is $\mathbb{C}1$ because $\pi$ is irreducible; hence the algebra generated is the whole direct integral of $B(\mathcal{H}_\pi)$, which is the identity $\lambda(G)' = \rho(G)''$ and hence, by taking commutants, $L(G) = \rho(G)' = \int^\oplus B(\mathcal{H}_\pi)d\mu_P$. The centre is the algebra of scalar fields, namely $L^\infty(\operatorname{Irr}(G),\mu_P)$, and the trace is the integral of the operator trace, finite for the integrable fields. $\square$
+**Proof.** The commutant of the direct integral of the $\pi$ is the direct integral of the commutants, and each commutant is $\mathbb{C}1$ because $\pi$ is irreducible; hence the algebra generated is the whole direct integral of $B(\mathcal{H}_\pi)$, which is the identity $\lambda(G)' = \rho(G)''$ and hence, by taking commutants, $L(G) = \rho(G)' = \int^\oplus B(\mathcal{H}_\pi)d\mu_P$. The centre is the algebra of scalar fields, namely $L^\infty(\operatorname{Irr}(G),\mu_P)$, and the trace is the integral of the operator trace, finite for the integrable fields.
 
 **Remark (the abelian and compact cases).** For abelian $G$, $d_\pi = 1$ for all $\pi$, $B(\mathcal{H}_\pi) = \mathbb{C}$, and the direct integral is the spectral representation of the algebra $L^\infty(G^\vee,\mu_P)$ with $\mu_P = d\chi$ the dual Haar measure; this is the Fourier transform of *Harmonic Analysis on Groups*. For compact $G$, the dual is discrete, the measure is the weighted counting measure $d\mu_P = d_\pi\,\#$, the direct sum is $\bigoplus_\pi\operatorname{End}(\mathcal{H}_\pi)$, and the theory is *The Peter–Weyl Theorem*, §Consequences.
 
@@ -141,7 +141,7 @@ the inclusion being an equality exactly in the amenable case. The Gelfand–Naim
 
 **Theorem (noncommutative Gelfand–Naimark).** A $\mathrm{C}^*$-algebra $A$ is commutative if and only if every irreducible representation is one-dimensional; in that case $A \cong C_0(\operatorname{Prim}(A))$. For general $A$, the map $A \to \bigoplus_{\pi\in\operatorname{Irr}(A)}\pi(A)$ is an isometric $*$-isomorphism onto its image, so $A$ is recovered from its spectrum. Consequently the harmonic analysis of $G$ is exactly the spectral theory of the $\mathrm{C}^*$-algebra $C^*(G)$.
 
-**Proof.** The first statement is Gelfand–Naimark and Schur's lemma: irreducibles of a commutative $\mathrm{C}^*$-algebra are the characters. The isometric embedding is the Gelfand–Naimark–Segal construction applied to the universal representation, which is faithful. $\square$
+**Proof.** The first statement is Gelfand–Naimark and Schur's lemma: irreducibles of a commutative $\mathrm{C}^*$-algebra are the characters. The isometric embedding is the Gelfand–Naimark–Segal construction applied to the universal representation, which is faithful.
 
 ### Weak Containment and Amenability
 
@@ -149,7 +149,7 @@ the inclusion being an equality exactly in the amenable case. The Gelfand–Naim
 
 **Theorem (Hulanicki).** A locally compact group $G$ is amenable if and only if the trivial representation is weakly contained in the regular representation, $\mathbf{1} \prec \lambda$.
 
-**Proof sketch.** If $\mathbf{1} \prec \lambda$, then the constant function $1$ is a limit of sums of coefficients of $\lambda$, and integrating against an invariant mean constructed from these coefficients gives amenability; the translation of the condition into Reiter's property $P_1$ is immediate. Conversely, amenability gives approximately invariant unit vectors $\xi_\alpha \in L^2(G)$ (the square roots of the Reiter functions of *The Convolution Algebra $L^1(G)$*, §Reiter's Property and Amenability), and the associated coefficient $\langle\lambda(g)\xi_\alpha,\xi_\alpha\rangle$ of $\lambda$ converges uniformly on compacta to $1$, which is the coefficient of the trivial representation. This is Hulanicki's theorem and is quoted. $\square$
+**Proof sketch.** If $\mathbf{1} \prec \lambda$, then the constant function $1$ is a limit of sums of coefficients of $\lambda$, and integrating against an invariant mean constructed from these coefficients gives amenability; the translation of the condition into Reiter's property $P_1$ is immediate. Conversely, amenability gives approximately invariant unit vectors $\xi_\alpha \in L^2(G)$ (the square roots of the Reiter functions of *The Convolution Algebra $L^1(G)$*, §Reiter's Property and Amenability), and the associated coefficient $\langle\lambda(g)\xi_\alpha,\xi_\alpha\rangle$ of $\lambda$ converges uniformly on compacta to $1$, which is the coefficient of the trivial representation. This is Hulanicki's theorem and is quoted.
 
 **Corollary (the spectral gap of a (T) group).** If $G$ has property (T), then $\mathbf{1}$ is not weakly contained in $\lambda$, and there is a neighbourhood $Q$ of $e$ and $\varepsilon > 0$ with $\sup_{g\in Q}\|\lambda(g)\xi - \xi\| \geq \varepsilon\|\xi\|$ for every $\xi \in L^2(G)$ orthogonal to the constants; equivalently $\|\lambda(f)\| < \|f\|_1$ for suitable $f$. This is the spectral gap used for expanders in *Property (T)* and for the ergodic theorems.
 

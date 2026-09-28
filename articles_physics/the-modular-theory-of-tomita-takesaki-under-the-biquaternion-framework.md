@@ -185,7 +185,7 @@ $$
 
 ### The Identities, Verified
 
-The identities $S_0=J\Delta^{1/2}$, $J^2=1$, $J\Delta J=\Delta^{-1}$, $J\,i\,J=-i$, the group law $\sigma_t\circ\sigma_s=\sigma_{t+s}$, the generator relation, and $JMJ=M'$ — with $M'$ the right multiplications $\tilde{B}\mapsto\tilde{B}\tilde{C}$ — were each verified in two independent ways: symbolically, and numerically to machine precision at a density chosen after the formulas rather than before them. They are recorded in the companion `.thinking` file. The finite-dimensional realization is therefore not an analogy: it is the theory, instantiated in the algebra the framework already uses.
+The identities $S_0=J\Delta^{1/2}$, $J^2=1$, $J\Delta J=\Delta^{-1}$, $J\,i\,J=-i$, the group law $\sigma_t\circ\sigma_s=\sigma_{t+s}$, the generator relation, and $JMJ=M'$ — with $M'$ the right multiplications $\tilde{B}\mapsto\tilde{B}\tilde{C}$ — were each verified in two independent ways: symbolically, and numerically to machine precision at a density chosen after the formulas rather than before them. The finite-dimensional realization is therefore not an analogy: it is the theory, instantiated in the algebra the framework already uses.
 
 ### An Explicit Case
 

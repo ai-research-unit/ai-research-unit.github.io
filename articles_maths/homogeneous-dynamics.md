@@ -13,7 +13,7 @@ This article develops the frame: the homogeneous space $G/\Gamma$ and its invari
 - The **ergodic theory** used is that of *Ergodic Theory of Group Actions*: ergodicity, mixing, the Koopman representation, the Følner mean ergodic theorem, the Mautner phenomenon, Moore's theorem and the Howe–Moore theorem. The present article applies them to homogeneous spaces rather than developing them.
 - The **Ratner classification** of orbit closures and invariant measures is not covered here, and the quantitative equidistribution of orbits is deferred to *Ratner's Theorems*. Where a statement belongs to those articles it is stated here only as a headline and the reader is directed there. No physics is invoked.
 
-Throughout, $G$ is a connected Lie group with Lie algebra $\mathfrak{g}$, $K$ a maximal compact subgroup, $\Gamma$ a discrete subgroup of $G$, and $X = G/\Gamma$ the homogeneous space of left cosets with the quotient topology; $e$ is the identity, $dx$ a $G$-invariant measure when it exists, and the action is by left translation, $g \cdot x\Gamma = gx\Gamma$. A **lattice** is a discrete subgroup $\Gamma$ for which $G/\Gamma$ carries a finite $G$-invariant measure; $\Gamma$ is **uniform** or cocompact when $G/\Gamma$ is compact. The Lie functor is that of *The Lie Algebra and the Exponential Map*, and $\operatorname{Ad}$ is the adjoint representation of *The Lie Correspondence and the Adjoint Representation*.
+Throughout, $G$ is a connected Lie group with Lie algebra $\mathrm{G}$, $K$ a maximal compact subgroup, $\Gamma$ a discrete subgroup of $G$, and $X = G/\Gamma$ the homogeneous space of left cosets with the quotient topology; $e$ is the identity, $dx$ a $G$-invariant measure when it exists, and the action is by left translation, $g \cdot x\Gamma = gx\Gamma$. A **lattice** is a discrete subgroup $\Gamma$ for which $G/\Gamma$ carries a finite $G$-invariant measure; $\Gamma$ is **uniform** or cocompact when $G/\Gamma$ is compact. The Lie functor is that of *The Lie Algebra and the Exponential Map*, and $\operatorname{Ad}$ is the adjoint representation of *The Lie Correspondence and the Adjoint Representation*.
 
 ## Homogeneous Spaces and Lattices
 
@@ -25,7 +25,7 @@ The action is transitive, which is the sense in which the space is homogeneous, 
 
 **Theorem (invariant measure).** Let $G$ be unimodular — for instance a connected nilpotent or semisimple Lie group — with Haar measure $dg$, and let $\Gamma$ be a lattice. Then there is a unique (up to scale) $G$-invariant Radon measure $\mu$ on $G/\Gamma$, obtained by integrating over a fundamental domain: $\int_{G/\Gamma} f \, d\mu = \int_{G} \tilde f(g)\, dg$ for a $\Gamma$-invariant lift $\tilde f$ of $f$.
 
-*Proof.* The function $g \mapsto \sum_{\gamma \in \Gamma}\tilde f(g\gamma)$ is left $\Gamma$-invariant and converges for $\tilde f$ of compact support because $\Gamma$ is discrete; the invariance of $dg$ under left translations gives the left invariance of the resulting functional, and the uniqueness of the Haar measure gives its uniqueness. The finiteness $\mu(G/\Gamma) = \operatorname{vol}(G/\Gamma) < \infty$ is the definition of a lattice. $\square$
+*Proof.* The function $g \mapsto \sum_{\gamma \in \Gamma}\tilde f(g\gamma)$ is left $\Gamma$-invariant and converges for $\tilde f$ of compact support because $\Gamma$ is discrete; the invariance of $dg$ under left translations gives the left invariance of the resulting functional, and the uniqueness of the Haar measure gives its uniqueness. The finiteness $\mu(G/\Gamma) = \operatorname{vol}(G/\Gamma) < \infty$ is the definition of a lattice.
 
 The **covolume** $\operatorname{vol}(G/\Gamma)$ is the common value; for a cocompact lattice the quotient is compact and the volume finite, and for an arithmetic lattice the volume can be computed by the formula of Weil. The existence of lattices is a theorem of Borel for semisimple groups: every connected semisimple Lie group without compact factors contains both uniform and non-uniform lattices.
 
@@ -72,7 +72,7 @@ Geometrically, the $A$-orbit of a unit tangent vector is the geodesic through it
 
 **Theorem (ergodicity of the geodesic flow).** Let $\Gamma \le PSL_2(\mathbb{R})$ be a lattice. The geodesic flow on $G/\Gamma$ is ergodic with respect to the invariant measure, and it is mixing.
 
-*Proof.* The horocycle flow is ergodic: its orbits are the leaves of the stable foliation, and a $U$-invariant function is constant by the classification of the ergodic measures of the horocycle flow together with the density of the horocycle orbit in the non-compact case. By the commutation relation above, $A$ contracts $U$, so the Mautner phenomenon of *Ergodic Theory of Group Actions* shows that every $A$-invariant function is $U$-invariant, hence constant. Ergodicity follows. Mixing is the Howe–Moore theorem applied to the Koopman representation on the mean-zero part, which has no invariant vectors by ergodicity. $\square$
+*Proof.* The horocycle flow is ergodic: its orbits are the leaves of the stable foliation, and a $U$-invariant function is constant by the classification of the ergodic measures of the horocycle flow together with the density of the horocycle orbit in the non-compact case. By the commutation relation above, $A$ contracts $U$, so the Mautner phenomenon of *Ergodic Theory of Group Actions* shows that every $A$-invariant function is $U$-invariant, hence constant. Ergodicity follows. Mixing is the Howe–Moore theorem applied to the Koopman representation on the mean-zero part, which has no invariant vectors by ergodicity.
 
 **Remark (the cusp).** For a non-uniform lattice the quotient is not compact, and the geodesic flow is not uniformly continuous in the sense of the flow being bounded away from the cusp; the ergodicity statement is the same, but the proof must control the visits of the orbit to the cusp. The horocycle flow, by contrast, is **minimal** — every orbit is dense — and **uniquely ergodic**, a theorem of Furstenberg; the geodesic flow is not minimal, and its orbit closures are the geodesics, which are either closed or dense.
 
@@ -100,7 +100,7 @@ Its Lie algebra is generated by $X, Y, Z$ with $[X,Y] = Z$ and $Z$ central. Ever
 
 Dani's theorem is the unipotent counterpart of Moore's theorem; it says that the unipotent flow cannot be trapped by an algebraic subgroup unless the orbit is confined to a smaller homogeneous subspace, and it is the local form of Ratner's classification. For $G = SL_2(\mathbb{R})$ it reduces to the ergodicity of the horocycle flow, which is Furstenberg's theorem, and for nilpotent groups the corresponding statement is unconditional.
 
-**Theorem (ergodicity on nilmanifolds).** Let $N$ be a connected simply connected nilpotent Lie group with a lattice $\Gamma$, and let $\{u_t\}$ be a one-parameter subgroup. Then the flow on $N/\Gamma$ is ergodic if and only if the image of the generator in the abelianisation $\mathfrak{n}/[\mathfrak{n},\mathfrak{n}]$ lies outside the union of the rational hyperplanes of the lattice $\Gamma$, and the flow is then uniquely ergodic with respect to the Haar measure.
+**Theorem (ergodicity on nilmanifolds).** Let $N$ be a connected simply connected nilpotent Lie group with a lattice $\Gamma$, and let $\{u_t\}$ be a one-parameter subgroup. Then the flow on $N/\Gamma$ is ergodic if and only if the image of the generator in the abelianisation $\mathrm{N}/[\mathrm{N},\mathrm{N}]$ lies outside the union of the rational hyperplanes of the lattice $\Gamma$, and the flow is then uniquely ergodic with respect to the Haar measure.
 
 The nilpotent case is the model: the flow is a translation on a nilmanifold, and the criterion is exactly the rational-independence criterion of the torus, transported to the abelianisation. The higher commutators supply the corrections that make the flow non-abelian but do not change the ergodicity criterion.
 
@@ -128,7 +128,7 @@ For a semisimple group $G$ of real rank at least two the diagonal subgroup $A$ i
 
 **Theorem (ergodicity of the Weyl chamber flow).** Let $G$ be a connected semisimple Lie group with finite centre and no compact factors, and let $\Gamma$ be an irreducible lattice. Then the action of $A$ on $G/\Gamma$ is ergodic, and it is mixing.
 
-*Proof.* Ergodicity is Moore's theorem applied to the factors: an $A$-invariant function that is not constant would define a nonzero invariant vector in a representation of a simple factor, contradicting the irreducibility of the lattice. Mixing is the Howe–Moore theorem, whose decay statement holds for the whole group $G$ and hence for $A$; the mean-zero part of $L^2$ has no invariant vectors by ergodicity. $\square$
+*Proof.* Ergodicity is Moore's theorem applied to the factors: an $A$-invariant function that is not constant would define a nonzero invariant vector in a representation of a simple factor, contradicting the irreducibility of the lattice. Mixing is the Howe–Moore theorem, whose decay statement holds for the whole group $G$ and hence for $A$; the mean-zero part of $L^2$ has no invariant vectors by ergodicity.
 
 **Example (the modular surface revisited by a higher-rank action).** For $G = SL_n(\mathbb{R})$, $n \geq 3$, and $\Gamma = SL_n(\mathbb{Z})$ the diagonal subgroup has rank $n-1$, and the Weyl chamber flow mixes. A single diagonal one-parameter subgroup is the horospherical flow of a rank-one subgroup, and its ergodicity follows from the Mautner phenomenon applied to the unipotent subgroup contracted by it; the passage from rank one to higher rank is exactly the passage from a single geodesic to the whole chamber, and it is what makes the higher-rank dynamics rigid.
 
@@ -174,7 +174,7 @@ In higher rank the diagonal subgroup is a chamber $\mathbb{R}^r$, the Weyl chamb
 
 | Symbol | Meaning |
 |---|---|
-| $G$, $\mathfrak{g}$, $\Gamma$ | Connected Lie group, its Lie algebra, a discrete subgroup |
+| $G$, $\mathrm{G}$, $\Gamma$ | Connected Lie group, its Lie algebra, a discrete subgroup |
 | $X = G/\Gamma$ | Homogeneous space of left cosets, with the quotient topology |
 | lattice, uniform | discrete $\Gamma$ with $G/\Gamma$ of finite invariant volume; cocompact case |
 | $\mu$, $\operatorname{vol}(G/\Gamma)$ | $G$-invariant measure and covolume |
@@ -185,7 +185,7 @@ In higher rank the diagonal subgroup is a chamber $\mathbb{R}^r$, the Weyl chamb
 | $a_su_ta_s^{-1}=u_{e^st}$ | Commutation relation; the contraction of the Mautner phenomenon |
 | unipotent | $\operatorname{Ad}(g)-I$ nilpotent; one-parameter flow with polynomial $\operatorname{Ad}(u_t)-I$ |
 | semisimple | $\operatorname{Ad}(g)$ diagonalisable over $\mathbb{C}$ |
-| $N$, $\mathfrak{n}$, $[\mathfrak{n},\mathfrak{n}]$ | Nilpotent group, its Lie algebra, the abelianisation |
+| $N$, $\mathrm{N}$, $[\mathrm{N},\mathrm{N}]$ | Nilpotent group, its Lie algebra, the abelianisation |
 | Heisenberg group | Upper unitriangular $3\times3$ matrices, $[X,Y]=Z$ central |
 | Weyl chamber flow | Action of the diagonal subgroup $A\cong\mathbb{R}^r$ in real rank $r$ |
 | Furstenberg | horocycle orbits are equidistributed for every point; the flow is uniquely ergodic |

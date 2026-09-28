@@ -13,7 +13,7 @@ Throughout, $k$ is a commutative ring with $1\neq0$ containing a field if a divi
 
 ### First-Order Deformations
 
-**Definition.** A **deformation** of $A$ over an Artinian local $k$-algebra $(S,\mathfrak{m})$ with $S/\mathfrak{m}\cong k$ is a flat $S$-algebra $A_S$ with an isomorphism $A_S\otimes_Sk\cong A$ of $k$-algebras. Two deformations are **equivalent** if there is an isomorphism of $S$-algebras inducing the identity on $A$ modulo $\mathfrak{m}$. The **deformation functor** is
+**Definition.** A **deformation** of $A$ over an Artinian local $k$-algebra $(S,\mathrm{M})$ with $S/\mathrm{M}\cong k$ is a flat $S$-algebra $A_S$ with an isomorphism $A_S\otimes_Sk\cong A$ of $k$-algebras. Two deformations are **equivalent** if there is an isomorphism of $S$-algebras inducing the identity on $A$ modulo $\mathrm{M}$. The **deformation functor** is
 
 $$
 \operatorname{Def}_A:R\longmapsto\frac{\{\text{deformations of }A\text{ over }R\}}{\text{equivalence}},
@@ -35,7 +35,7 @@ which is the cocycle condition for $HH^2(A,A)$ up to sign, and the associativity
 
 **Theorem.** The first-order deformations of $A$ up to equivalence are in natural bijection with $HH^2(A,A)$, the equivalence being the difference by a Hochschild coboundary. The trivial deformation $a*b=ab$ corresponds to the class $0$.
 
-*Proof.* For each $f$, the associativity of $*$ on $A\otimes\mathbb{D}'$ is equivalent to the cocycle condition on $f$ once the products of the three elements are expanded and the $\varepsilon$-linear terms collected. An equivalence between the deformation given by $f$ and the deformation given by $f'$ is an isomorphism of $\mathbb{D}'$-algebras that is the identity modulo $\varepsilon$, hence of the form $a+\varepsilon g(a)$ for a $k$-linear $g:A\to A$; conjugating the product by it changes $f$ to $f+\partial g$, where $\partial g(a,b)=ag(b)-g(ab)+g(a)b$ is the Hochschild coboundary. Hence the deformations modulo equivalence are the classes in $HH^2(A,A)$. $\square$
+*Proof.* For each $f$, the associativity of $*$ on $A\otimes\mathbb{D}'$ is equivalent to the cocycle condition on $f$ once the products of the three elements are expanded and the $\varepsilon$-linear terms collected. An equivalence between the deformation given by $f$ and the deformation given by $f'$ is an isomorphism of $\mathbb{D}'$-algebras that is the identity modulo $\varepsilon$, hence of the form $a+\varepsilon g(a)$ for a $k$-linear $g:A\to A$; conjugating the product by it changes $f$ to $f+\partial g$, where $\partial g(a,b)=ag(b)-g(ab)+g(a)b$ is the Hochschild coboundary. Hence the deformations modulo equivalence are the classes in $HH^2(A,A)$.
 
 **Example.** For the polynomial algebra $A=k[x_1,\dots,x_m]$ the second Hochschild cohomology is, by the Hochschild–Kostant–Rosenberg theorem, the direct sum $HH^2(A,A)\cong\bigoplus_{p+q=2}\Lambda^p\operatorname{Der}_k(A)\otimes_A\Omega^q_{A/k}=\Lambda^2\operatorname{Der}\oplus(\operatorname{Der}\otimes_A\Omega^1)\oplus\Omega^2$ of the bivectors, the derivations twisted by the one-forms, and the two-forms; every bivector $\sum_{i<j}c_{ij}\partial_i\wedge\partial_j$ with $c_{ij}\in A$ gives a first-order deformation by the product
 $$
@@ -61,7 +61,7 @@ $$
 
 where $m_0$ is the multiplication of $A$ and $\partial=[m_0,-]$ is the Hochschild coboundary, and where two solutions are equivalent when they differ by the gauge action of the degree-zero part of the differential graded Lie algebra. The first-order coefficient $m_1$ is a $2$-cocycle, the obstruction to extending a partial deformation to the next order is the class of $\tfrac{1}{2}[m_t,m_t]$ in $HH^3(A,A)$, and the deformation is unobstructed when this class vanishes at every stage.
 
-*Proof (in outline).* The associativity of $m_t$ is equivalent to the single equation $\tfrac{1}{2}[m_t,m_t]=0$ in the convolution algebra of cochains, where the bracket is the Gerstenhaber bracket of *Hochschild Homology*; the homotopy invariance of the bracket under the differential gives $\partial m_t+\tfrac12[m_t,m_t]=0$ once the linear term is separated. Expanding in powers of $t$, the coefficient of $t^n$ expresses $2\partial m_n$ in terms of the lower coefficients and their brackets; a partial deformation to order $n$ extends to order $n+1$ exactly when a certain $3$-cocycle is a coboundary, and this cocycle is $\sum_{i+j=n}[m_i,m_j]$. The gauge action is the action of the degree-zero cochains by the inner automorphisms of the differential graded Lie algebra, and it implements the change of variable $a\mapsto a+tg(a)+\cdots$ that leaves the multiplication equivalent. $\square$
+*Proof (in outline).* The associativity of $m_t$ is equivalent to the single equation $\tfrac{1}{2}[m_t,m_t]=0$ in the convolution algebra of cochains, where the bracket is the Gerstenhaber bracket of *Hochschild Homology*; the homotopy invariance of the bracket under the differential gives $\partial m_t+\tfrac12[m_t,m_t]=0$ once the linear term is separated. Expanding in powers of $t$, the coefficient of $t^n$ expresses $2\partial m_n$ in terms of the lower coefficients and their brackets; a partial deformation to order $n$ extends to order $n+1$ exactly when a certain $3$-cocycle is a coboundary, and this cocycle is $\sum_{i+j=n}[m_i,m_j]$. The gauge action is the action of the degree-zero cochains by the inner automorphisms of the differential graded Lie algebra, and it implements the change of variable $a\mapsto a+tg(a)+\cdots$ that leaves the multiplication equivalent.
 
 **Corollary (unobstructedness).** If $HH^3(A,A)=0$ then every first-order deformation of $A$ extends over $k[[t]]$, and the formal moduli space is smooth of dimension $\dim_kHH^2(A,A)$ in the sense of the algebraic tangent space.
 
@@ -83,7 +83,7 @@ with $\varphi:A\times M\to M$ satisfying $a\varphi(b,m)-\varphi(ab,m)+\varphi(a,
 
 **Theorem.** The first-order deformations of $M$ up to equivalence are in natural bijection with $\operatorname{Ext}^1_A(M,M)$, and the obstruction to extending a deformation of $M$ to the second order lies in $\operatorname{Ext}^2_A(M,M)$.
 
-*Proof.* The set of extensions $0\to M\to M_\varepsilon\to M\to0$ of $A_\varepsilon$-modules with $\varepsilon$ acting by the two-step filtration is the usual description of the deformations, and two deformations are equivalent when the corresponding extensions are isomorphic as $A$-module extensions of $M$ by $M$; the Yoneda description of $\operatorname{Ext}^1_A(M,M)$ as the classes of such extensions of *Ext and Tor* gives the bijection. The obstruction to lifting an extension across a square-zero extension of the parameter ring is the Yoneda product with the class of the extension, which lies in $\operatorname{Ext}^2_A(M,M)$. $\square$
+*Proof.* The set of extensions $0\to M\to M_\varepsilon\to M\to0$ of $A_\varepsilon$-modules with $\varepsilon$ acting by the two-step filtration is the usual description of the deformations, and two deformations are equivalent when the corresponding extensions are isomorphic as $A$-module extensions of $M$ by $M$; the Yoneda description of $\operatorname{Ext}^1_A(M,M)$ as the classes of such extensions of *Ext and Tor* gives the bijection. The obstruction to lifting an extension across a square-zero extension of the parameter ring is the Yoneda product with the class of the extension, which lies in $\operatorname{Ext}^2_A(M,M)$.
 
 **Example.** For $A=k[x]$ and $M=k[x]/(x)$ the module $M$ is simple and $\operatorname{Ext}^1_A(M,M)\cong k$: the resolution $0\to A\xrightarrow{\,x\,}A\to M\to0$ gives $\operatorname{Ext}^1\cong A/(x)\cong k$. The corresponding deformation is the $A\otimes_k\mathbb{D}'$-module $k[x]/(x-\varepsilon)\otimes_k\mathbb{D}'\cong\mathbb{D}'$ on which $x$ acts as multiplication by $\varepsilon$.
 
@@ -93,7 +93,7 @@ with $\varphi:A\times M\to M$ satisfying $a\varphi(b,m)-\varphi(ab,m)+\varphi(a,
 
 **Proposition.** Let $A_\varepsilon$ be a first-order deformation of $A$ with class $\alpha \in HH^2(A,A)$ and let $M_\varepsilon$ be a first-order deformation of an $A$-module $M$. Then $M$ admits a deformation over $A_\varepsilon$ if and only if the class $\alpha$ acts on $M$ and the resulting class in $\operatorname{Ext}^2_A(M,M)$ vanishes; the set of such deformations is a torsor under $\operatorname{Ext}^1_A(M,M)$ when it is nonempty.
 
-*Proof.* A deformation of $M$ over $A_\varepsilon$ is a module over $A_\varepsilon$ whose reduction modulo $\varepsilon$ is $M$; the action of the deformed multiplication on $M$ is an element of $\operatorname{Hom}_k(A\otimes M,M)$ whose failure to be a module structure is the product of the class of $\alpha$ with the class of the identity of $M$ in the Ext algebra; the exactness is the long exact sequence of the deformation. The torsor action is the addition of a $1$-cocycle to the action. $\square$
+*Proof.* A deformation of $M$ over $A_\varepsilon$ is a module over $A_\varepsilon$ whose reduction modulo $\varepsilon$ is $M$; the action of the deformed multiplication on $M$ is an element of $\operatorname{Hom}_k(A\otimes M,M)$ whose failure to be a module structure is the product of the class of $\alpha$ with the class of the identity of $M$ in the Ext algebra; the exactness is the long exact sequence of the deformation. The torsor action is the addition of a $1$-cocycle to the action.
 
 ## The Formal Moduli and Versal Deformations
 
@@ -109,7 +109,7 @@ $$
 
 given by the quadratic obstruction $\kappa(\alpha)=\tfrac12[\alpha,\alpha]$ is the only data needed to present the versal deformation as the zero locus of the Maurer–Cartan equation.
 
-*Proof (in outline).* Unobstructedness makes the deformation functor isomorphic to the functor of points of the power series ring on the dual of $HH^2$, by the theorem of the Maurer–Cartan equation; the Kuranishi map is the quadratic form induced by the bracket, and its vanishing locus is the image of the deformation functor in the tangent space. $\square$
+*Proof (in outline).* Unobstructedness makes the deformation functor isomorphic to the functor of points of the power series ring on the dual of $HH^2$, by the theorem of the Maurer–Cartan equation; the Kuranishi map is the quadratic form induced by the bracket, and its vanishing locus is the image of the deformation functor in the tangent space.
 
 **Remark.** This is the algebraic statement of the deformation-theoretic method: the moduli problem is linear in the tangent space and quadratic in the first obstruction. The corresponding geometric statement, in which the versal deformation is a family of varieties and the Kuranishi map is computed from a cotangent complex, requires the scheme-theoretic language of Part II and is not used here.
 
@@ -119,7 +119,7 @@ given by the quadratic obstruction $\kappa(\alpha)=\tfrac12[\alpha,\alpha]$ is t
 
 **Theorem (rigidity criterion).** If $HH^2(A,A)=0$ then $A$ is rigid; if in addition $HH^1(A,A)=0$ then every automorphism of a deformation is inner, and the deformation functor is a single point with trivial automorphisms. Conversely, if $A$ is rigid and $HH^2$ is finite-dimensional, then $HH^2(A,A)=0$.
 
-*Proof.* The first-order deformations are $HH^2$; if that group vanishes there are no nontrivial first-order deformations, and the Maurer–Cartan equation forces every formal deformation to be trivial by induction on the order. The converse follows by taking the first-order part. $\square$
+*Proof.* The first-order deformations are $HH^2$; if that group vanishes there are no nontrivial first-order deformations, and the Maurer–Cartan equation forces every formal deformation to be trivial by induction on the order. The converse follows by taking the first-order part.
 
 **Example.** A finite-dimensional semisimple $k$-algebra over a field $k$ of characteristic zero has $HH^n(A,A)=0$ for every $n\ge1$, so it is rigid; this covers the matrix algebras $M_n(k)$ and the split complex algebra $\mathbb{D}\cong\mathbb{R}\times\mathbb{R}$, and it is the algebraic form of the fact that a semisimple algebra admits no nontrivial formal deformations. The polynomial algebra $k[x_1,\dots,x_m]$ with $m\ge2$ is not rigid, its deformations being the Poisson brackets computed above.
 
@@ -132,12 +132,12 @@ given by the quadratic obstruction $\kappa(\alpha)=\tfrac12[\alpha,\alpha]$ is t
 **Theorem (Deligne, as formulated in the associative case).** The deformation functor $\operatorname{Def}_A$ is the **Maurer–Cartan functor** of the differential graded Lie algebra $C^{\bullet}(A,A)$:
 
 $$
-\operatorname{Def}_A(R)=\operatorname{MC}\bigl(C^{\bullet}(A,A)\otimes_k\mathfrak{m}_R\bigr)/\text{gauge},
+\operatorname{Def}_A(R)=\operatorname{MC}\bigl(C^{\bullet}(A,A)\otimes_k\mathrm{M}_R\bigr)/\text{gauge},
 $$
 
-where $\operatorname{MC}(\mathfrak{g}\otimes\mathfrak{m})=\{x \in \mathfrak{g}^1\otimes\mathfrak{m}:\partial x+\tfrac12[x,x]=0\}$ is the set of Maurer–Cartan elements and the gauge group is the degree-zero part of the differential graded Lie algebra acting by the exponential. In particular the tangent space of the deformation functor is $HH^2(A,A)$, the obstruction space is $HH^3(A,A)$, and the automorphism group of a deformation is computed by $HH^1$ and $HH^0$.
+where $\operatorname{MC}(\mathrm{G}\otimes\mathrm{M})=\{x \in \mathrm{G}^1\otimes\mathrm{M}:\partial x+\tfrac12[x,x]=0\}$ is the set of Maurer–Cartan elements and the gauge group is the degree-zero part of the differential graded Lie algebra acting by the exponential. In particular the tangent space of the deformation functor is $HH^2(A,A)$, the obstruction space is $HH^3(A,A)$, and the automorphism group of a deformation is computed by $HH^1$ and $HH^0$.
 
-*Proof (in outline).* The identification of the Maurer–Cartan elements with the associative products is the theorem of the Maurer–Cartan equation above; the gauge action is the action of the degree-zero cochains by conjugating the product, and its orbits are the equivalence classes. The tangent space of the functor at the trivial deformation is the space of $1$-cocycles modulo coboundaries by the standard computation in the differential graded Lie algebra, and the obstruction space is the next cohomology. $\square$
+*Proof (in outline).* The identification of the Maurer–Cartan elements with the associative products is the theorem of the Maurer–Cartan equation above; the gauge action is the action of the degree-zero cochains by conjugating the product, and its orbits are the equivalence classes. The tangent space of the functor at the trivial deformation is the space of $1$-cocycles modulo coboundaries by the standard computation in the differential graded Lie algebra, and the obstruction space is the next cohomology.
 
 **Example.** For $A=k[x_1,\dots,x_m]$ the differential graded Lie algebra is the Hochschild cochain complex, whose cohomology is $\Lambda^{\bullet}\operatorname{Der}_k(A,A)\otimes_A\Omega^{\bullet}_{A/k}$ by the Hochschild–Kostant–Rosenberg theorem; the Maurer–Cartan elements are the solutions of the Schouten equation, and the first-order part is $HH^2=\Lambda^2\operatorname{Der}\oplus(\operatorname{Der}\otimes_A\Omega^1)\oplus\Omega^2$.
 
@@ -162,7 +162,7 @@ For a module $M$ over $A$ the same picture holds with $\operatorname{Ext}$ in pl
 | $f(a,b)$, $m_t$ | deformation cocycle, formal multiplication |
 | $\partial=[m,-]$ | Hochschild coboundary in the dg Lie algebra |
 | $[,]$ | Gerstenhaber bracket |
-| $\operatorname{MC}(\mathfrak{g})$ | Maurer–Cartan elements of a differential graded Lie algebra |
+| $\operatorname{MC}(\mathrm{G})$ | Maurer–Cartan elements of a differential graded Lie algebra |
 | $HH^n(A,A)$ | Hochschild cohomology of $A$ |
 | $\operatorname{Ext}^n_A(M,M)$ | Ext of a module with itself |
 | $\kappa$ | Kuranishi map |

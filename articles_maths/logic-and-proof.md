@@ -56,7 +56,7 @@ The table defines each connective by the truth values it returns; a larger table
 2. $\varphi \equiv \psi$ if and only if $\varphi \to \psi$ and $\psi \to \varphi$ are both tautologies.
 3. $\varphi$ is a tautology if and only if $\neg \varphi$ is a contradiction.
 
-**Proof.** (1) $\varphi \leftrightarrow \psi$ is true exactly when $\varphi$ and $\psi$ have the same truth value, so the biconditional is a tautology exactly when the values agree under every assignment. (2) is (1) together with the definition of the biconditional, and (3) is the definition of the negation table. $\square$
+**Proof.** (1) $\varphi \leftrightarrow \psi$ is true exactly when $\varphi$ and $\psi$ have the same truth value, so the biconditional is a tautology exactly when the values agree under every assignment. (2) is (1) together with the definition of the biconditional, and (3) is the definition of the negation table.
 
 ### The Algebra of Propositions
 
@@ -94,7 +94,7 @@ Logical consequence is a relation on formulas, not a connective: $\models$ is a 
 
 **Theorem (deduction theorem, semantic form).** $\varphi_1, \ldots, \varphi_n \models \psi$ if and only if $\varphi_1 \wedge \cdots \wedge \varphi_n \to \psi$ is a tautology. In particular $\varphi \models \psi$ if and only if $\varphi \to \psi$ is a tautology.
 
-**Proof.** Both sides say that there is no assignment making every $\varphi_i$ true and $\psi$ false: the left says it by the definition of consequence, the right because a conditional fails exactly at an assignment that makes its antecedent true and its consequent false. $\square$
+**Proof.** Both sides say that there is no assignment making every $\varphi_i$ true and $\psi$ false: the left says it by the definition of consequence, the right because a conditional fails exactly at an assignment that makes its antecedent true and its consequent false.
 
 A set $\Gamma$ of formulas is **satisfiable** if some single assignment makes every formula in $\Gamma$ true. A finite set is satisfiable exactly when its conjunction is satisfiable. The **compactness** of propositional logic — that $\Gamma$ is satisfiable if every finite subset of $\Gamma$ is — follows from the finiteness of the truth tables and is stated, with its first-order analogue.
 
@@ -178,7 +178,7 @@ Direct proof also covers the proof of a universal statement: to prove $\forall x
 
 **Proposition.** $\varphi \to \psi$ and $\neg \psi \to \neg \varphi$ are logically equivalent.
 
-**Proof.** This is the contraposition law of the algebra of propositions, verified by the truth table. $\square$
+**Proof.** This is the contraposition law of the algebra of propositions, verified by the truth table.
 
 A **proof by contrapositive** of $\varphi \to \psi$ is a direct proof of $\neg \psi \to \neg \varphi$; the proposition above converts it into a proof of the original. The method is useful when the negation of the conclusion is a more pliable hypothesis than the hypothesis itself.
 
@@ -210,7 +210,7 @@ The natural numbers $\mathbb{N}$ are ordered by $\leq$, and every nonempty subse
 
 **Theorem (principle of induction).** Let $P$ be a property of natural numbers. If $P(0)$ holds and $P(n)$ implies $P(n+1)$ for every $n \in \mathbb{N}$, then $P(n)$ holds for every $n \in \mathbb{N}$.
 
-**Proof.** Suppose not, and let $S = \{n \in \mathbb{N} : P(n) \text{ fails}\}$ be nonempty. By well-ordering $S$ has a least element $m$. Since $P(0)$ holds, $m \neq 0$, so $m = k + 1$ for some $k$. By minimality of $m$ the property $P(k)$ holds, and the induction step then gives $P(k+1) = P(m)$, contradicting $m \in S$. $\square$
+**Proof.** Suppose not, and let $S = \{n \in \mathbb{N} : P(n) \text{ fails}\}$ be nonempty. By well-ordering $S$ has a least element $m$. Since $P(0)$ holds, $m \neq 0$, so $m = k + 1$ for some $k$. By minimality of $m$ the property $P(k)$ holds, and the induction step then gives $P(k+1) = P(m)$, contradicting $m \in S$.
 
 The proof shows that induction is a consequence of well-ordering. The conditions of the theorem are the **base case** $P(0)$ and the **induction step** $P(n) \Rightarrow P(n+1)$; in the step, the assumption $P(n)$ is the **induction hypothesis**.
 
@@ -238,7 +238,7 @@ Induction justifies not only proofs but **definitions** that specify a value at 
 
 **Theorem (recursion).** Let $A$ be a set, $a \in A$, and let $F : \mathbb{N} \times A \to A$ be a function. There is exactly one function $u : \mathbb{N} \to A$ with $u(0) = a$ and $u(n+1) = F(n, u(n))$ for all $n$.
 
-**Proof sketch.** Define $u$ to be the union of all finite functions $u_N$ on $\{0, \ldots, N\}$ satisfying the two conditions for $n < N$; each $u_N$ exists by induction on $N$ and is unique, and the $u_N$ agree on their common domains by induction. Their union is then a function on all of $\mathbb{N}$ with the required properties. Uniqueness of $u$ follows because two solutions agree at $0$ and, if they agree at $n$, at $n+1$. $\square$
+**Proof sketch.** Define $u$ to be the union of all finite functions $u_N$ on $\{0, \ldots, N\}$ satisfying the two conditions for $n < N$; each $u_N$ exists by induction on $N$ and is unique, and the $u_N$ agree on their common domains by induction. Their union is then a function on all of $\mathbb{N}$ with the required properties. Uniqueness of $u$ follows because two solutions agree at $0$ and, if they agree at $n$, at $n+1$.
 
 The theorem licenses the familiar definitions of $n!$, of $a^n$, of the Fibonacci sequence, and of any function given by a recurrence. Without it a "definition" by recurrence would be an assertion about an infinite object that had not been constructed.
 
@@ -248,7 +248,7 @@ The same principle applies to any set whose elements are generated by finitely m
 
 **Theorem (structural induction on formulas).** Let $P$ be a property of formulas of a language. If $P$ holds for every atomic formula, and $P(\varphi)$ and $P(\psi)$ together imply $P(\neg\varphi)$, $P(\varphi \wedge \psi)$, $P(\varphi \vee \psi)$ and $P(\varphi \to \psi)$, then $P$ holds for every formula.
 
-**Proof.** By the definition of formulas, every formula is built from atomic ones by a finite number of applications of the connectives, and the hypotheses of the theorem reproduce the closure conditions of that definition; a formula of least construction length for which $P$ fails would then be atomic, or built from formulas of smaller length satisfying $P$, either of which is impossible. $\square$
+**Proof.** By the definition of formulas, every formula is built from atomic ones by a finite number of applications of the connectives, and the hypotheses of the theorem reproduce the closure conditions of that definition; a formula of least construction length for which $P$ fails would then be atomic, or built from formulas of smaller length satisfying $P$, either of which is impossible.
 
 Structural induction is used throughout the article implicitly: the unique extension of a valuation to all formulas, the definition of substitution and the proof that capture-avoiding substitution preserves meaning are all arguments of this shape. The analogous principle for the terms of a type theory appears.
 

@@ -39,7 +39,7 @@ with cohomology $HH^n(A,A) = \ker\delta/\operatorname{im}\delta$. The complex is
 
 **Proposition.** $HH^0(A,A) = Z(A)$ is the centre of $A$, and $HH^1(A,A)$ is the space of derivations modulo the inner derivations, which is the quotient of the derivations of *Automorphisms and Derivations of Algebras* by the inner ones.
 
-*Proof.* A $0$-cochain is an element $f \in A$, and $\delta f(a) = af - fa$, so $\ker\delta = Z(A)$. A $1$-cochain is a linear map $f : A \to A$, and $(\delta f)(a,b) = af(b) - f(ab) + f(a)b$, so $\ker\delta$ is the space of derivations $\operatorname{Der}(A)$; the image of $\delta$ on $0$-cochains consists of the maps $a \mapsto af - fa$, that is, the inner derivations. $\square$
+*Proof.* A $0$-cochain is an element $f \in A$, and $\delta f(a) = af - fa$, so $\ker\delta = Z(A)$. A $1$-cochain is a linear map $f : A \to A$, and $(\delta f)(a,b) = af(b) - f(ab) + f(a)b$, so $\ker\delta$ is the space of derivations $\operatorname{Der}(A)$; the image of $\delta$ on $0$-cochains consists of the maps $a \mapsto af - fa$, that is, the inner derivations.
 
 ### The classification theorem
 
@@ -145,7 +145,7 @@ $$
 
 which says that the bilinear map $\{f,g\} = C_1(f,g) - C_1(g,f)$ satisfies the Leibniz rule and the Jacobi identity. Hence the first-order term of any associative deformation of a commutative algebra whose leading term is antisymmetric is a Poisson structure, and the classification of *first-order* quantisations is the classification of Poisson structures up to the appropriate equivalence.
 
-*Proof.* Expand the associativity identity and collect the coefficient of $h^2$; the three terms of the expansion give the displayed identity, which is the cocycle condition $\delta C_1 = 0$; antisymmetrising it in the three arguments gives the Jacobi identity for the antisymmetrisation, and the Leibniz rule follows from the same identity by taking $g = 1$. $\square$
+*Proof.* Expand the associativity identity and collect the coefficient of $h^2$; the three terms of the expansion give the displayed identity, which is the cocycle condition $\delta C_1 = 0$; antisymmetrising it in the three arguments gives the Jacobi identity for the antisymmetrisation, and the Leibniz rule follows from the same identity by taking $g = 1$.
 
 ### The Moyal star product
 
@@ -163,7 +163,7 @@ $$
 
 which is the formal form of the canonical commutation relation. The algebra $(k[x_1,x_2],*)$ is the Weyl algebra in its completed form, and it is the basic example in which the star product can be written by a closed formula.
 
-*Proof of associativity (sketch).* Writing $f*g = m\circ e^{\frac h2\omega(\partial,\partial')}(f\otimes g)$ with $m$ the multiplication, associativity follows from the fact that the exponential of a constant-coefficient bidifferential operator is the exponential of a derivation of the tensor algebra, and exponentials of commuting derivations compose by addition of their exponents. $\square$
+*Proof of associativity (sketch).* Writing $f*g = m\circ e^{\frac h2\omega(\partial,\partial')}(f\otimes g)$ with $m$ the multiplication, associativity follows from the fact that the exponential of a constant-coefficient bidifferential operator is the exponential of a derivation of the tensor algebra, and exponentials of commuting derivations compose by addition of their exponents.
 
 **Example (quantum plane as a quantisation).** For $A = k[x,y]$ with the Poisson bracket $\{y,x\} = xy$, the algebra $k_q[x,y]$ with $yx = qxy$ and $q = 1 + h$ is a star product to first order: the antisymmetrisation of $C_1$ is $\{y,x\} = xy$. The two deformations of $k[x,y]$ — the Moyal deformation by a constant bracket and the $q$-commuting deformation by $\{y,x\} = xy$ — are inequivalent as deformations, because their first-order terms are inequivalent Poisson structures. This is the standard illustration that the first-order term, and not the deformed algebra alone, is the invariant that the deformation quantisation records.
 
@@ -191,14 +191,14 @@ from the $L_\infty$-algebra of multivectors, which is the abelian structure with
 
 1. Every formal Poisson structure on a polynomial algebra $A = k[x_1,\dots,x_n]$, with $k$ a field of characteristic $0$, admits a star product: the Maurer–Cartan element $\pi$ of the multivector $L_\infty$-algebra with $[\pi,\pi] = 0$ transfers along $\mathcal{U}$ to a Maurer–Cartan element of the Hochschild complex, and such an element is exactly an associative deformation whose first-order term is the bracket of $\pi$. The resulting star product has the explicit graph-sum expansion
 
-    $$
+$$
     f * g = \sum_{n\geq0}\frac{h^n}{n!}\sum_{\Gamma\in G_n}w_\Gamma\,B_\Gamma(f,g),
-    $$
+$$
 
     where $G_n$ is the set of admissible graphs with $n$ internal vertices, $w_\Gamma$ is a weight obtained by integrating a form over a configuration space of points in the upper half-plane, and $B_\Gamma$ is the bidifferential operator determined by the edges of $\Gamma$ decorated by the Poisson tensor.
 2. The quasi-isomorphism $\mathcal{U}$ induces a bijection between Maurer–Cartan elements modulo gauge equivalence in the two $L_\infty$-algebras, hence a bijection between equivalence classes of formal Poisson structures and equivalence classes of star products. In particular the quantisation of a formal Poisson structure exists and is unique up to equivalence, and the two equivalence relations — of Poisson structures and of associative deformations — correspond exactly.
 
-*Proof (outline).* A quasi-isomorphism of $L_\infty$-algebras induces a bijection on Maurer–Cartan sets modulo the respective gauge actions; this is the standard homotopy-transfer statement for $L_\infty$-algebras, and it is the algebraic content of the theorem. The Jacobi identity for a Poisson bivector $\pi$ is the equation $[\pi,\pi] = 0$ in the Schouten–Nijenhuis bracket, so $\pi$ is a Maurer–Cartan element, and its image under $\mathcal{U}$ is a Maurer–Cartan element of the Hochschild complex with the Gerstenhaber bracket; unwinding that condition gives the associativity of the deformation. $\square$
+*Proof (outline).* A quasi-isomorphism of $L_\infty$-algebras induces a bijection on Maurer–Cartan sets modulo the respective gauge actions; this is the standard homotopy-transfer statement for $L_\infty$-algebras, and it is the algebraic content of the theorem. The Jacobi identity for a Poisson bivector $\pi$ is the equation $[\pi,\pi] = 0$ in the Schouten–Nijenhuis bracket, so $\pi$ is a Maurer–Cartan element, and its image under $\mathcal{U}$ is a Maurer–Cartan element of the Hochschild complex with the Gerstenhaber bracket; unwinding that condition gives the associativity of the deformation.
 
 The theorem is the structure theorem of the subject, and its proof is operadic and topological: it uses the configuration space of $n$ points in the upper half-plane, the formality of the operad of little $2$-disks, and the relation between the Hochschild complex and the operad $\mathcal{E}_2$. The operadic part is introduced in *Operads*, above this article; the topological and model-categorical formulations belong to Part II.
 
@@ -206,25 +206,25 @@ The theorem is the structure theorem of the subject, and its proof is operadic a
 
 The same formality machinery applies to the deformations of the enveloping algebra and to the Hopf-algebraic deformations of *Quantum Groups*. The relevant statements are:
 
-- the enveloping algebra $U(\mathfrak{g})$ of a Lie algebra is the quotient of a deformation of $\operatorname{Sym}(\mathfrak{g})$ by the linear Poisson bracket determined by the Lie bracket, by the symmetrisation map;
-- the deformation of $\operatorname{Sym}(\mathfrak{g})$ by that bracket, with the **campbell–Hausdorff**-type star product, gives a deformation whose associated graded is the symmetric algebra;
-- a deformation of a Hopf algebra is a deformation of the underlying algebra together with deformed coproduct and antipode, and the first-order term of the coproduct deformation is a **coboundary Poisson structure** on the Hopf algebra; Drinfeld's classification of deformations of $U(\mathfrak{g})$ and the theory of quantum groups at generic $q$ are the resulting statements, and they are treated in *Quantum Groups*.
+- the enveloping algebra $U(\mathrm{G})$ of a Lie algebra is the quotient of a deformation of $\operatorname{Sym}(\mathrm{G})$ by the linear Poisson bracket determined by the Lie bracket, by the symmetrisation map;
+- the deformation of $\operatorname{Sym}(\mathrm{G})$ by that bracket, with the **campbell–Hausdorff**-type star product, gives a deformation whose associated graded is the symmetric algebra;
+- a deformation of a Hopf algebra is a deformation of the underlying algebra together with deformed coproduct and antipode, and the first-order term of the coproduct deformation is a **coboundary Poisson structure** on the Hopf algebra; Drinfeld's classification of deformations of $U(\mathrm{G})$ and the theory of quantum groups at generic $q$ are the resulting statements, and they are treated in *Quantum Groups*.
 
-**Theorem (Drinfeld, standard).** The formal deformations of $U(\mathfrak{g})$ as a Hopf algebra over $k[[h]]$ are classified by the second cohomology of $\mathfrak{g}$ with coefficients in $\wedge^2\mathfrak{g}$, equivalently by the **quasi-Lie bialgebra** structures on $\mathfrak{g}$; for $\mathfrak{g}$ semisimple there is a unique nontrivial deformation up to equivalence and up to the choice of the symmetric invariant element used in the normalisation, and it is $U_h(\mathfrak{g})$.
+**Theorem (Drinfeld, standard).** The formal deformations of $U(\mathrm{G})$ as a Hopf algebra over $k[[h]]$ are classified by the second cohomology of $\mathrm{G}$ with coefficients in $\wedge^2\mathrm{G}$, equivalently by the **quasi-Lie bialgebra** structures on $\mathrm{G}$; for $\mathrm{G}$ semisimple there is a unique nontrivial deformation up to equivalence and up to the choice of the symmetric invariant element used in the normalisation, and it is $U_h(\mathrm{G})$.
 
-The cohomology that appears here is that of the **Chevalley--Eilenberg complex** of $\mathfrak{g}$. For a $\mathfrak{g}$-module $M$ the degree-$n$ cochains are the alternating multilinear maps $f:\mathfrak{g}^n\to M$, with differential
+The cohomology that appears here is that of the **Chevalley--Eilenberg complex** of $\mathrm{G}$. For a $\mathrm{G}$-module $M$ the degree-$n$ cochains are the alternating multilinear maps $f:\mathrm{G}^n\to M$, with differential
 
 $$
 (df)(x_1,\dots,x_{n+1}) = \sum_{i=1}^{n+1}(-1)^{i+1}x_i\cdot f(x_1,\dots,\widehat{x_i},\dots,x_{n+1}) + \sum_{i<j}(-1)^{i+j}f\bigl([x_i,x_j],x_1,\dots,\widehat{x_i},\dots,\widehat{x_j},\dots,x_{n+1}\bigr),
 $$
 
-the hats marking omitted arguments, and the coefficient module of the theorem is $\wedge^2\mathfrak{g}$ with the adjoint action $x\cdot(u\wedge v) = [x,u]\wedge v + u\wedge[x,v]$. The differential is built from the bracket and the action alone, so the cohomology is available here without a general theory of Lie algebra cohomology; the structure of the quasi-Lie bialgebra is the infinitesimal object that the quantum group deforms.
+the hats marking omitted arguments, and the coefficient module of the theorem is $\wedge^2\mathrm{G}$ with the adjoint action $x\cdot(u\wedge v) = [x,u]\wedge v + u\wedge[x,v]$. The differential is built from the bracket and the action alone, so the cohomology is available here without a general theory of Lie algebra cohomology; the structure of the quasi-Lie bialgebra is the infinitesimal object that the quantum group deforms.
 
 ## Summary
 
 A **formal deformation** of a $k$-algebra $A$ is a $k[[h]]$-algebra $A_h$ with $A_h \cong A[[h]]$ as a module and $A_h/hA_h \cong A$; two deformations are **equivalent** when they differ by an algebra isomorphism of the form $\mathrm{id} + h\varphi_1 + \cdots$. The first-order term of an associative deformation is a $2$-cocycle for the **Hochschild complex**, so infinitesimal deformations of $A$ are parametrised by $HH^2(A,A)$, with obstructions in $HH^3(A,A)$ and beyond computed by the **Gerstenhaber bracket** $[\mu_1,\mu_1]$; the Gerstenhaber bracket and the cup product make $HH^{\bullet+1}(A,A)$ a graded Lie algebra and $HH^\bullet(A,A)$ a **Gerstenhaber algebra**, which is an algebra over the homology of the little disks operad $\mathcal{E}_2$, and the operad of Hochschild cochains is formal.
 
-A **Poisson algebra** is a commutative associative algebra with a Lie bracket that is a derivation in each variable, and a **star product** on a Poisson algebra is an associative deformation $f*g = fg + \sum_{n\geq1}h^nC_n(f,g)$ whose first-order antisymmetrisation is the Poisson bracket; the associativity forces that antisymmetrisation to be a Poisson bracket. The **Moyal product** on $k[x_1,\dots,x_n]$ with a constant bracket $\omega$ is the closed-form example, with $x_1*x_2 - x_2*x_1 = h$ in the two-variable case, and the quantum plane $k_q[x,y]$ with $q = 1+h$ is the quantisation of the bracket $\{y,x\} = xy$; the two deformations are inequivalent because their first-order terms are. The **Kontsevich formality theorem** asserts an $L_\infty$-quasi-isomorphism from the multivector fields with the Schouten–Nijenhuis bracket to the Hochschild complex with the Gerstenhaber bracket, and it implies that every Poisson structure on a polynomial algebra admits a star product and that the correspondence between Poisson brackets and equivalence classes of star products is a bijection. Drinfeld's classification of the Hopf-algebraic deformations of $U(\mathfrak{g})$ is the same circle of ideas in the quantum-group setting. The geometric Poisson and symplectic structures, the manifold theory and the convergence of star products belong to Part II.
+A **Poisson algebra** is a commutative associative algebra with a Lie bracket that is a derivation in each variable, and a **star product** on a Poisson algebra is an associative deformation $f*g = fg + \sum_{n\geq1}h^nC_n(f,g)$ whose first-order antisymmetrisation is the Poisson bracket; the associativity forces that antisymmetrisation to be a Poisson bracket. The **Moyal product** on $k[x_1,\dots,x_n]$ with a constant bracket $\omega$ is the closed-form example, with $x_1*x_2 - x_2*x_1 = h$ in the two-variable case, and the quantum plane $k_q[x,y]$ with $q = 1+h$ is the quantisation of the bracket $\{y,x\} = xy$; the two deformations are inequivalent because their first-order terms are. The **Kontsevich formality theorem** asserts an $L_\infty$-quasi-isomorphism from the multivector fields with the Schouten–Nijenhuis bracket to the Hochschild complex with the Gerstenhaber bracket, and it implies that every Poisson structure on a polynomial algebra admits a star product and that the correspondence between Poisson brackets and equivalence classes of star products is a bijection. Drinfeld's classification of the Hopf-algebraic deformations of $U(\mathrm{G})$ is the same circle of ideas in the quantum-group setting. The geometric Poisson and symplectic structures, the manifold theory and the convergence of star products belong to Part II.
 
 ## Summary of Notation
 
@@ -248,7 +248,7 @@ A **Poisson algebra** is a commutative associative algebra with a Lie bracket th
 | $\ell_n$ | higher brackets of an $L_\infty$-algebra |
 | $T_{\mathrm{poly}}(A)$ | polynomial multivectors, Schouten–Nijenhuis bracket |
 | $\mathcal{U}$ | Kontsevich $L_\infty$-quasi-isomorphism |
-| $U_h(\mathfrak{g})$ | Hopf-algebraic deformation of $U(\mathfrak{g})$ |
+| $U_h(\mathrm{G})$ | Hopf-algebraic deformation of $U(\mathrm{G})$ |
 
 
 

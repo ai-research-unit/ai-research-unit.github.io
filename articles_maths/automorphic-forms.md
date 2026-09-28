@@ -13,7 +13,7 @@ Three boundaries are held.
 - The **representation theory of locally compact groups** — admissibility, the unitary dual, induced representations, the tensor product theorems — is Part II's, in *Representation Theory of Locally Compact Groups* and *Induced Representations of Locally Compact Groups*; this article uses it.
 - The **$L$-functions and zeta functions** in their general form are developed; this article states the automorphic $L$-function in line as standard mathematics and defers the general theory. The **Langlands correspondence** is not covered here. No physics is invoked.
 
-Throughout, $\mathbb{A} = \mathbb{A}_{\mathbb{Q}}$ is the ring of adeles of $\mathbb{Q}$ and $\mathbb{A}^\times$ the ideles; a **place** $v$ of $\mathbb{Q}$ is either the archimedean place $\infty$ with $\mathbb{Q}_\infty = \mathbb{R}$, or a prime $p$ with $\mathbb{Q}_p$ the $p$-adic field; $G$ is a connected reductive group over $\mathbb{Q}$, and for $G = GL_2$ one writes $G(\mathbb{A})$ for the adelic group. The quotient $G(\mathbb{Q})\backslash G(\mathbb{A})$ is the arithmetic quotient, and $\Gamma = G(\mathbb{Z})$ is the arithmetic lattice. The Haar measure, the modular character, the centre $Z$, and the algebra $\mathfrak{g}$ of the Lie group $G(\mathbb{R})$ are those of Part II; the differential operators are the elements of the centre $\mathfrak{z}$ of the universal enveloping algebra of $\mathfrak{g}$.
+Throughout, $\mathbb{A} = \mathbb{A}_{\mathbb{Q}}$ is the ring of adeles of $\mathbb{Q}$ and $\mathbb{A}^\times$ the ideles; a **place** $v$ of $\mathbb{Q}$ is either the archimedean place $\infty$ with $\mathbb{Q}_\infty = \mathbb{R}$, or a prime $p$ with $\mathbb{Q}_p$ the $p$-adic field; $G$ is a connected reductive group over $\mathbb{Q}$, and for $G = GL_2$ one writes $G(\mathbb{A})$ for the adelic group. The quotient $G(\mathbb{Q})\backslash G(\mathbb{A})$ is the arithmetic quotient, and $\Gamma = G(\mathbb{Z})$ is the arithmetic lattice. The Haar measure, the modular character, the centre $Z$, and the algebra $\mathrm{G}$ of the Lie group $G(\mathbb{R})$ are those of Part II; the differential operators are the elements of the centre $\mathrm{Z}$ of the universal enveloping algebra of $\mathrm{G}$.
 
 ## The Classical Picture
 
@@ -60,11 +60,11 @@ is the concrete form of the automorphic $L$-function, and the Ramanujan conjectu
 **Definition.** Let $G$ be a connected reductive group over $\mathbb{Q}$ and let $K \subseteq G(\mathbb{A})$ be a maximal compact subgroup. An **automorphic form** on $G$ is a function $f : G(\mathbb{Q})\backslash G(\mathbb{A}) \to \mathbb{C}$ satisfying
 
 1. $f$ is smooth on the archimedean part and locally constant on the non-archimedean part (so that the right translates $f(\cdot k)$ span a finite-dimensional space for every $k \in K$, i.e. $f$ is $K$-finite);
-2. $f$ is finite under the centre $\mathfrak{z}$ of the universal enveloping algebra of $\mathfrak{g}$, so that $f$ lies in a finite-dimensional space of eigenvectors of the Casimir-type operators;
+2. $f$ is finite under the centre $\mathrm{Z}$ of the universal enveloping algebra of $\mathrm{G}$, so that $f$ lies in a finite-dimensional space of eigenvectors of the Casimir-type operators;
 3. $f$ is of moderate growth: there is a constant $C$ and an exponent $M$ with $|f(g)| \leq C\|g\|^M$ for all $g$;
 4. when $G$ has a central character, $f$ transforms by a fixed character $\omega$ of $Z(\mathbb{Q})\backslash Z(\mathbb{A})$.
 
-The group $G(\mathbb{A})$ acts on the space $\mathcal{A}(G)$ of automorphic forms by right translation, $(R(g)f)(x) = f(xg)$, and an **automorphic representation** is an irreducible subquotient of this representation. When $G = GL_2$ and $f$ is $Z(\mathbb{A})$-finite of central character $\omega$ and $K$-finite, the four conditions reduce to the classical ones: the functions on $GL_2(\mathbb{Q})\backslash GL_2(\mathbb{A})$ of fixed central character correspond to functions on $\mathbb{H}$ with a transformation law, and the finiteness under $\mathfrak{z}$ is the weight condition. The correspondence is made explicit by strong approximation, which is the statement of *Adeles and Ideles*.
+The group $G(\mathbb{A})$ acts on the space $\mathcal{A}(G)$ of automorphic forms by right translation, $(R(g)f)(x) = f(xg)$, and an **automorphic representation** is an irreducible subquotient of this representation. When $G = GL_2$ and $f$ is $Z(\mathbb{A})$-finite of central character $\omega$ and $K$-finite, the four conditions reduce to the classical ones: the functions on $GL_2(\mathbb{Q})\backslash GL_2(\mathbb{A})$ of fixed central character correspond to functions on $\mathbb{H}$ with a transformation law, and the finiteness under $\mathrm{Z}$ is the weight condition. The correspondence is made explicit by strong approximation, which is the statement of *Adeles and Ideles*.
 
 **Definition.** An automorphic form $f$ is **cuspidal** if for every proper parabolic subgroup $P = MN$ of $G$ the constant term along $N$ vanishes:
 
@@ -208,7 +208,7 @@ The classical modular forms are the weight-and-level components of this picture,
 | $\mathcal{A}(G)$ | Space of automorphic forms |
 | $R(g)$ | Right regular action, $(R(g)f)(x)=f(xg)$ |
 | cuspidal | all constant terms $f_N$ vanish |
-| $\mathfrak{z}$, $\mathfrak{g}$ | Centre of the universal enveloping algebra, Lie algebra of $G(\mathbb{R})$ |
+| $\mathrm{Z}$, $\mathrm{G}$ | Centre of the universal enveloping algebra, Lie algebra of $G(\mathbb{R})$ |
 | $Z$, $\omega$ | Centre of $G$ and a central character |
 | $\pi = \otimes'_v \pi_v$ | Restricted tensor product of local representations |
 | unramified, spherical | has a nonzero $K_v$-fixed vector; the $K_v$-fixed subspace |

@@ -98,7 +98,7 @@ $$
 \left(\Box-\mu^2\right)\tilde{\Phi}=0 ,
 $$
 
-the biquaternionic Klein–Gordon equation of the companion article, here read as a **classical** wave equation. Its wave operator is the norm form of the gradient, $\Box=\tilde{\nabla}\bar{\tilde{\nabla}}$, which is the algebraic content the biquaternion writing makes visible. Because the equation is second order in time, the field and its time derivative are the two pieces of initial data, exactly as for any classical wave field.
+the biquaternionic Klein–Gordon equation of the companion article, here read as a **classical** wave equation. Its wave operator is the biquaternion norm of the gradient, $\Box=\tilde{\nabla}\bar{\tilde{\nabla}}$, which is the algebraic content the biquaternion writing makes visible. Because the equation is second order in time, the field and its time derivative are the two pieces of initial data, exactly as for any classical wave field.
 
 ## Plane Waves and the Range of the Field
 

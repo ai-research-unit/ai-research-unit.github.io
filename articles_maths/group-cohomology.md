@@ -51,7 +51,7 @@ the **cocycles** and **coboundaries** respectively. Homology is defined from the
 
 **Theorem.** $d^2 = 0$, so $H^n(G,M)$ is defined, and $H^0(G,M) = M^G$.
 
-**Proof.** For the first statement, each new face operation is the alternating sum of compositions of face maps, and the compositions cancel in pairs. For the second, $d\alpha$ for $\alpha \in C^0 = M$ is the function $(d\alpha)(g) = g\alpha - \alpha$, so $\ker d = M^G$. $\square$
+**Proof.** For the first statement, each new face operation is the alternating sum of compositions of face maps, and the compositions cancel in pairs. For the second, $d\alpha$ for $\alpha \in C^0 = M$ is the function $(d\alpha)(g) = g\alpha - \alpha$, so $\ker d = M^G$.
 
 **Remark.** The definition via the bar resolution is the classical one of Eilenberg and Mac Lane; the identification of $H^n(G,M)$ with the $n$-th right derived functor of the invariants functor, and with $\operatorname{Ext}^n_{\mathbb{Z}[G]}(\mathbb{Z}, M)$, is the derived-functor theorem of homological algebra and belongs, where the resolutions and the Ext functor are developed. The cochain-level definition is sufficient for everything in this article.
 
@@ -69,7 +69,7 @@ $$
 
 functorial in the exact sequence, with connecting maps $\delta$ natural; the sequence continues indefinitely to the right. Similarly there is a long exact homology sequence.
 
-**Proof sketch.** The bar complex is a complex of free $\mathbb{Z}[G]$-modules, and applying the functor $\operatorname{Hom}_{\mathbb{Z}[G]}(\mathbb{Z}[G^{n+1}],-)$ to a short exact sequence of coefficients gives a short exact sequence of cochain complexes because the modules $\mathbb{Z}[G^{n+1}]$ are free; the snake lemma applied to the resulting commuting diagram of cochain complexes produces the connecting maps and the exactness. The homology statement is the same argument with the tensor product. $\square$
+**Proof sketch.** The bar complex is a complex of free $\mathbb{Z}[G]$-modules, and applying the functor $\operatorname{Hom}_{\mathbb{Z}[G]}(\mathbb{Z}[G^{n+1}],-)$ to a short exact sequence of coefficients gives a short exact sequence of cochain complexes because the modules $\mathbb{Z}[G^{n+1}]$ are free; the snake lemma applied to the resulting commuting diagram of cochain complexes produces the connecting maps and the exactness. The homology statement is the same argument with the tensor product.
 
 ### Restriction, Corestriction and Shapiro's Lemma
 
@@ -83,11 +83,11 @@ $$
 H^n(G, \operatorname{Coind}_H^G N) \cong H^n(H,N).
 $$
 
-**Proof sketch.** On the cochain level, a cochain $\alpha : G^n \to \operatorname{Coind}_H^G N$ is a function $G^n \times G \to N$ with an $H$-equivariance in the last variable, equivalently a function $G^{n+1} \to N$ with an equivariance; the standard resolution of $G$ restricts to a resolution of $H$, and the two cochain complexes are isomorphic. $\square$
+**Proof sketch.** On the cochain level, a cochain $\alpha : G^n \to \operatorname{Coind}_H^G N$ is a function $G^n \times G \to N$ with an $H$-equivariance in the last variable, equivalently a function $G^{n+1} \to N$ with an equivariance; the standard resolution of $G$ restricts to a resolution of $H$, and the two cochain complexes are isomorphic.
 
 **Proposition (restriction–corestriction).** If $H \leq G$ has finite index $[G:H] = m$, then $\operatorname{Cor}^G_H \circ \operatorname{Res}^G_H$ is multiplication by $m$ on $H^n(G,M)$. Hence, for a finite group $G$, every cohomology group $H^n(G,M)$ is annihilated by $|G|$: taking $H = 1$ gives $\operatorname{Res}$ the zero map and multiplication by $|G|$ the zero map.
 
-**Proof sketch.** The composite is the transfer followed by restriction, which on cochain representatives is the sum over the $m$ coset representatives; the cocycle identity identifies the sum with $m$ times the original cocycle. $\square$
+**Proof sketch.** The composite is the transfer followed by restriction, which on cochain representatives is the sum over the $m$ coset representatives; the cocycle identity identifies the sum with $m$ times the original cocycle.
 
 **Theorem (inflation–restriction).** Let $N \trianglelefteq G$ and let $M$ be a $G$-module. There is an exact sequence
 
@@ -97,7 +97,7 @@ $$
 
 where $\operatorname{Inf}$ is induced by the quotient map $G \to G/N$ and $\delta$ is the connecting map of the long exact sequence of the extension.
 
-**Proof sketch.** One computes on the cochain complexes of $G$, $N$ and $G/N$ and applies the snake lemma to the natural sequence of complexes $0 \to C^\bullet(G/N, M^N) \to C^\bullet(G,M) \to C^\bullet(N,M)^{G/N}$; the kernels and images of the resulting long exact sequence are the displayed inflation, restriction and connecting maps. $\square$
+**Proof sketch.** One computes on the cochain complexes of $G$, $N$ and $G/N$ and applies the snake lemma to the natural sequence of complexes $0 \to C^\bullet(G/N, M^N) \to C^\bullet(G,M) \to C^\bullet(N,M)^{G/N}$; the kernels and images of the resulting long exact sequence are the displayed inflation, restriction and connecting maps.
 
 ## Low-Dimensional Cohomology
 
@@ -119,11 +119,11 @@ $$
 
 In particular, if the action of $G$ on $M$ is trivial, then $H^1(G,M) = \operatorname{Hom}(G,M)$.
 
-**Proof.** The cocycle identity for $n = 1$ is $g\alpha(h) - \alpha(gh) + \alpha(g) = 0$, which is $\alpha(gh) = \alpha(g) + g\alpha(h)$ after a sign, so the $1$-cocycles are the derivations. For $n = 0$ the coboundary of $m \in M$ is $(dm)(g) = gm - m$, giving the principal derivations. With a trivial action the derivations are the homomorphisms and the principal ones vanish. $\square$
+**Proof.** The cocycle identity for $n = 1$ is $g\alpha(h) - \alpha(gh) + \alpha(g) = 0$, which is $\alpha(gh) = \alpha(g) + g\alpha(h)$ after a sign, so the $1$-cocycles are the derivations. For $n = 0$ the coboundary of $m \in M$ is $(dm)(g) = gm - m$, giving the principal derivations. With a trivial action the derivations are the homomorphisms and the principal ones vanish.
 
 **Theorem (complements).** Let $M$ be a $G$-module and let $E = M \rtimes G$ be the semidirect product with the given action. There is a bijection between $H^1(G,M)$ and the set of $G$-conjugacy classes of complements to $M$ in $E$.
 
-**Proof sketch.** A complement is the graph of a function $\varphi : G \to M$, $\varphi(g) = (d(g), g)$; the condition that the graph be a subgroup is exactly the derivation identity for $d$, and two complements are conjugate under an element of $M$ exactly when the derivations differ by a principal one. $\square$
+**Proof sketch.** A complement is the graph of a function $\varphi : G \to M$, $\varphi(g) = (d(g), g)$; the condition that the graph be a subgroup is exactly the derivation identity for $d$, and two complements are conjugate under an element of $M$ exactly when the derivations differ by a principal one.
 
 ### $H^2$ and Extensions
 
@@ -143,7 +143,7 @@ $$
 
 in which the conjugation action of $E$ on the normal subgroup $M$ induces the given $G$-action: the equivalence classes of such extensions are in bijection with $H^2(G,M)$, the split extension corresponds to the zero element, and the Baer sum of extensions corresponds to addition in $H^2(G,M)$.
 
-**Proof sketch.** Given an extension, choose a set-theoretic section $s : G \to E$; then $s(g)s(h) = \alpha(g,h) s(gh)$ defines a function $\alpha : G\times G \to M$, and associativity in $E$ gives the cocycle identity. Changing the section changes $\alpha$ by a coboundary, and an isomorphism of extensions over $G$ gives the same cohomology class. Conversely, a cocycle defines a multiplication on $M \times G$ by $(m,g)(n,h) = (m + gn + \alpha(g,h), gh)$, which is associative exactly when $\alpha$ is a cocycle. $\square$
+**Proof sketch.** Given an extension, choose a set-theoretic section $s : G \to E$; then $s(g)s(h) = \alpha(g,h) s(gh)$ defines a function $\alpha : G\times G \to M$, and associativity in $E$ gives the cocycle identity. Changing the section changes $\alpha$ by a coboundary, and an isomorphism of extensions over $G$ gives the same cohomology class. Conversely, a cocycle defines a multiplication on $M \times G$ by $(m,g)(n,h) = (m + gn + \alpha(g,h), gh)$, which is associative exactly when $\alpha$ is a cocycle.
 
 **Corollary.** Let $M$ be a $G$-module with trivial action. The **central extensions** of $G$ by $M$ are classified by $H^2(G,M)$: when $G$ is finite and $M$ is finite, $H^2(G,M)$ is finite of exponent dividing $|G|$, and the number of central extensions is $|H^2(G,M)|$ up to equivalence.
 
@@ -155,7 +155,7 @@ in which the conjugation action of $E$ on the normal subgroup $M$ induces the gi
 
 **Theorem.** $H_0(G,M) = M_G$ and $H_1(G,\mathbb{Z}) = G^{\mathrm{ab}} = G/[G,G]$.
 
-**Proof sketch.** In degree $0$ the complex is $M \otimes_{\mathbb{Z}[G]} \mathbb{Z}[G] = M_G$, giving $H_0(G,M) = M_G$. In degree $1$ the coinvariants of $\mathbb{Z}[G^2]$ are identified with $\mathbb{Z}[G]$ through the second coordinate, the boundary $\partial_1(g,h) = h - gh$ becomes $g\cdot 1 - 1$ on the coinvariants, and for $M = \mathbb{Z}$ the quotient of $\mathbb{Z}[G]$ by the subgroup generated by the elements $g \cdot 1 - 1$ is exactly $G^{\mathrm{ab}}$. $\square$
+**Proof sketch.** In degree $0$ the complex is $M \otimes_{\mathbb{Z}[G]} \mathbb{Z}[G] = M_G$, giving $H_0(G,M) = M_G$. In degree $1$ the coinvariants of $\mathbb{Z}[G^2]$ are identified with $\mathbb{Z}[G]$ through the second coordinate, the boundary $\partial_1(g,h) = h - gh$ becomes $g\cdot 1 - 1$ on the coinvariants, and for $M = \mathbb{Z}$ the quotient of $\mathbb{Z}[G]$ by the subgroup generated by the elements $g \cdot 1 - 1$ is exactly $G^{\mathrm{ab}}$.
 
 **Definition.** The **Schur multiplier** of $G$ is $M(G) = H_2(G,\mathbb{Z})$. For a presentation $G = F/R$ with $F$ free, **Hopf's formula** gives
 
@@ -165,7 +165,7 @@ $$
 
 **Theorem (Schur).** If $G$ is finite then $H_n(G,\mathbb{Z})$ and $H^n(G,M)$ are finite for $n \geq 1$ and every finitely generated $G$-module $M$; the Schur multiplier $M(G)$ is finite.
 
-**Proof sketch.** For a finite group, the bar complex has finitely generated terms and the standard resolution can be truncated: $H_1(G,\mathbb{Z}) = G^{\mathrm{ab}}$ is finite, and the finiteness descends to the higher groups by induction on a normal series with cyclic factors, using the five-term exact sequence associated with the extension and the finiteness of the quotient and the kernel. $\square$
+**Proof sketch.** For a finite group, the bar complex has finitely generated terms and the standard resolution can be truncated: $H_1(G,\mathbb{Z}) = G^{\mathrm{ab}}$ is finite, and the finiteness descends to the higher groups by induction on a normal series with cyclic factors, using the five-term exact sequence associated with the extension and the finiteness of the quotient and the kernel.
 
 **Theorem (universal central extension).** A perfect group $G$ has a **universal central extension** $1 \to M(G) \to \hat G \to G \to 1$, through which every other central extension of $G$ factors uniquely; the kernel is $H_2(G,\mathbb{Z})$, and $\hat G$ is again perfect.
 
@@ -193,7 +193,7 @@ is a perfect pairing, so that cohomology with coefficients in $M$ and cohomology
 
 **Theorem (Schur–Zassenhaus).** If $G$ is finite and $M$ is a finite $G$-module whose order is coprime to $|G|$, then $H^n(G,M) = 0$ for all $n \geq 1$. Consequently every extension of $G$ by a normal subgroup $M$ of coprime order is split, and any two complements of $M$ are conjugate.
 
-**Proof sketch.** The vanishing follows from restriction–corestriction: multiplication by $|G|$ is the zero map on $H^n(G,M)$, while on a group of order coprime to $|G|$ the composite $\operatorname{Cor}\circ\operatorname{Res}$ is multiplication by $|G|$, which is an automorphism; hence $H^n(G,M) = 0$. The splitting of the extension is the case $n = 2$ of the vanishing, together with the classification of extensions by $H^2$; the conjugacy of complements follows from the vanishing in degree $1$ applied to the normaliser. $\square$
+**Proof sketch.** The vanishing follows from restriction–corestriction: multiplication by $|G|$ is the zero map on $H^n(G,M)$, while on a group of order coprime to $|G|$ the composite $\operatorname{Cor}\circ\operatorname{Res}$ is multiplication by $|G|$, which is an automorphism; hence $H^n(G,M) = 0$. The splitting of the extension is the case $n = 2$ of the vanishing, together with the classification of extensions by $H^2$; the conjugacy of complements follows from the vanishing in degree $1$ applied to the normaliser.
 
 **Theorem (cohomology of cyclic groups).** For $G = C_m$ cyclic of order $m$ generated by $g$, with the trivial action of $G$ on the coefficients,
 
@@ -207,7 +207,7 @@ $$
 \cdots \xrightarrow{\ g-1\ } \mathbb{Z}[C_m] \xrightarrow{\ N\ } \mathbb{Z}[C_m] \xrightarrow{\ g-1\ } \mathbb{Z}[C_m] \xrightarrow{\ \varepsilon\ } \mathbb{Z} \to 0,
 $$
 
-where $N = 1 + g + \cdots + g^{m-1}$. Applying $\operatorname{Hom}_{\mathbb{Z}[G]}(-,\mathbb{Z})$ gives multiplication by $0$ and by $m$ alternately, and the cohomology groups follow; applying $\operatorname{Hom}(-,\mathbb{Z}/m)$ gives zero maps throughout, so every cohomology group is $\mathbb{Z}/m$. The verification accompanying this article recomputes both families. $\square$
+where $N = 1 + g + \cdots + g^{m-1}$. Applying $\operatorname{Hom}_{\mathbb{Z}[G]}(-,\mathbb{Z})$ gives multiplication by $0$ and by $m$ alternately, and the cohomology groups follow; applying $\operatorname{Hom}(-,\mathbb{Z}/m)$ gives zero maps throughout, so every cohomology group is $\mathbb{Z}/m$. The verification accompanying this article recomputes both families.
 
 ## Cohomological Dimension
 
@@ -215,7 +215,7 @@ where $N = 1 + g + \cdots + g^{m-1}$. Applying $\operatorname{Hom}_{\mathbb{Z}[G
 
 **Theorem (Stallings–Swan).** A group has cohomological dimension at most $1$ if and only if it is free. Hence a torsion-free group of cohomological dimension $0$ is trivial, and the torsion-free groups of dimension $1$ are exactly the free groups.
 
-**Proof sketch.** A free group has the Nielsen–Schreier presentation and admits a two-term free resolution of $\mathbb{Z}$, so $\operatorname{cd} \leq 1$; conversely, if $\operatorname{cd}(G) \leq 1$ then the presentation complex of any presentation of $G$ has its two-cells eliminated one at a time by the Freiheitssatz for the associated HNN structure — expressed purely group-theoretically, the relations can be eliminated using the Nielsen–Schreier theorem of *Combinatorial Group Theory* — so $G$ is free. $\square$
+**Proof sketch.** A free group has the Nielsen–Schreier presentation and admits a two-term free resolution of $\mathbb{Z}$, so $\operatorname{cd} \leq 1$; conversely, if $\operatorname{cd}(G) \leq 1$ then the presentation complex of any presentation of $G$ has its two-cells eliminated one at a time by the Freiheitssatz for the associated HNN structure — expressed purely group-theoretically, the relations can be eliminated using the Nielsen–Schreier theorem of *Combinatorial Group Theory* — so $G$ is free.
 
 **Proposition.** A group has cohomological dimension $0$ if and only if it is trivial; a free abelian group $\mathbb{Z}^r$ has cohomological dimension $r$; a nontrivial finite group has infinite cohomological dimension, since $H^n(G,M)$ is nonzero for infinitely many $n$ for suitable $M$ when $G$ is finite.
 
@@ -229,7 +229,7 @@ $$
 H_1(G\times H) \cong H_1(G) \oplus H_1(H), \qquad H_2(G \times H) \cong H_2(G) \oplus H_2(H) \oplus \big(H_1(G) \otimes H_1(H)\big).
 $$
 
-**Proof sketch.** The bar resolution of $G \times H$ is the tensor product of the resolutions of $G$ and of $H$; the algebraic Künneth theorem for complexes computes the homology of the tensor product, and the low terms are the displayed ones, the torsion of the tensor product contributing to $H_2$. $\square$
+**Proof sketch.** The bar resolution of $G \times H$ is the tensor product of the resolutions of $G$ and of $H$; the algebraic Künneth theorem for complexes computes the homology of the tensor product, and the low terms are the displayed ones, the torsion of the tensor product contributing to $H_2$.
 
 **Example.** $H_2(C_2 \times C_2) = H_2(C_2) \oplus H_2(C_2) \oplus (H_1(C_2)\otimes H_1(C_2)) = 0 \oplus 0 \oplus \mathbb{Z}/2 = \mathbb{Z}/2$, which recovers the Schur multiplier of the Klein four group; more generally $H_2(C_m \times C_m) = \mathbb{Z}/m$.
 

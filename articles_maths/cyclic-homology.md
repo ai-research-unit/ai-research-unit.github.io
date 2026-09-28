@@ -39,7 +39,7 @@ $$
 
 and the cyclic operators $t_n(a_0\otimes\cdots\otimes a_n)=(-1)^n a_n\otimes a_0\otimes\cdots\otimes a_{n-1}$. The $k$-module $C_n(A)=A^{\otimes(n+1)}$ with the Hochschild boundary $b=\sum_i(-1)^i\partial_i$ is the **Hochschild complex**, and the operators $t_n$ satisfy $t_n^{n+1}=\operatorname{id}$ together with the compatibility relations with the face and degeneracy maps that define the cyclic category. This is the **cyclic nerve** of $A$, and the sign $(-1)^n$ in $t_n$ is the Koszul sign of moving $a_n$ past the $n$ preceding factors.
 
-*Proof.* The simplicial identities are the standard ones for the tensor algebra, verified by direct computation with the two cases of $\partial_i$. The compatibility relations of the cyclic category are checked from the definitions; the relation $t_n^{n+1}=\operatorname{id}$ is the statement that a cyclic permutation of $n+1$ factors returns to the start, with Koszul sign $(-1)^{n(n+1)}=1$. $\square$
+*Proof.* The simplicial identities are the standard ones for the tensor algebra, verified by direct computation with the two cases of $\partial_i$. The compatibility relations of the cyclic category are checked from the definitions; the relation $t_n^{n+1}=\operatorname{id}$ is the statement that a cyclic permutation of $n+1$ factors returns to the start, with Koszul sign $(-1)^{n(n+1)}=1$.
 
 ### The Cyclic and Periodic Complexes
 
@@ -61,7 +61,7 @@ where $s_0$ is the degeneracy inserting the unit and $N$ is the summation operat
 
 **Proposition.** The operators satisfy $b^2=0$, $B^2=0$ and $bB+Bb=0$ on $C_\bullet(A)$; hence $(C_\bullet(A),b,B)$ is a **mixed complex**, and the cyclic bicomplex is its associated double complex.
 
-*Proof.* $b^2=0$ is the simplicial identity. $B^2=0$ follows from the relations among $s_0$, $N$ and $t$, together with $t^{n+1}=\operatorname{id}$. The anticommutation $bB+Bb=0$ is the compatibility of the simplicial and cyclic structures, computed directly from the definitions. $\square$
+*Proof.* $b^2=0$ is the simplicial identity. $B^2=0$ follows from the relations among $s_0$, $N$ and $t$, together with $t^{n+1}=\operatorname{id}$. The anticommutation $bB+Bb=0$ is the compatibility of the simplicial and cyclic structures, computed directly from the definitions.
 
 **Definition.** The **periodic cyclic complex** is the product of infinitely many columns,
 
@@ -87,7 +87,7 @@ $$
 
 obtained by taking the inverse limit of the $S$ maps, and when the $S$ maps are eventually isomorphisms the periodic homology is the direct sum of two copies of the cyclic homology in the limit.
 
-*Proof (in outline).* The cyclic bicomplex has two spectral sequences, one filtering by columns and computing $HC$, the other filtering by rows and computing $HH$; the exact sequence of a double complex with a first-quadrant shape, together with the identification of the $E^2$-terms of the two filtrations, produces the $SBI$ sequence. The periodic sequence is the long exact sequence of the colimit of the cyclic complexes along $S$, and the final statement is the exactness of the resulting Milnor sequence. $\square$
+*Proof (in outline).* The cyclic bicomplex has two spectral sequences, one filtering by columns and computing $HC$, the other filtering by rows and computing $HH$; the exact sequence of a double complex with a first-quadrant shape, together with the identification of the $E^2$-terms of the two filtrations, produces the $SBI$ sequence. The periodic sequence is the long exact sequence of the colimit of the cyclic complexes along $S$, and the final statement is the exactness of the resulting Milnor sequence.
 
 **Example.** If $A$ is a field $k$, then $C_n(k)=k$ for all $n$, the cyclic operator in degree $n$ is multiplication by $(-1)^n$, and the Hochschild boundary in degree $n$ is multiplication by $1-1+1-\cdots+(-1)^n$, which is $1$ for $n$ even and $0$ for $n$ odd. Hence $HH_0(k)=k$ and $HH_n(k)=0$ for $n\ge1$. The $SBI$ sequence with these values gives, inductively from $HC_{-1}=HC_{-2}=0$,
 $$
@@ -113,7 +113,7 @@ $$
 
 In general the kernel of $S:HC_n\to HC_{n-2}$ is the image of $HH_n$ and the cokernel of $B:HH_n\to HC_{n+1}$ is the image of $S:HC_{n+1}\to HC_{n-1}$; the successive quotients of the filtration by the image of $S$ are the Hochschild homologies.
 
-*Proof.* The $SBI$ sequence in low degrees, with the known vanishing $HC_{-1}=HC_{-2}=0$, gives the displayed sequence; $HC_0\cong HH_0$ is the statement that the zeroth column of the cyclic bicomplex is the Hochschild complex, and the identification of $HC_1$ follows from the four-term sequence. $\square$
+*Proof.* The $SBI$ sequence in low degrees, with the known vanishing $HC_{-1}=HC_{-2}=0$, gives the displayed sequence; $HC_0\cong HH_0$ is the statement that the zeroth column of the cyclic bicomplex is the Hochschild complex, and the identification of $HC_1$ follows from the four-term sequence.
 
 **Corollary.** If the Connes boundary vanishes identically, $B=0$ on $HH_n(A)$ for all $n$, then the mixed complex splits and
 
@@ -133,7 +133,7 @@ $$
 
 where $H^p_{dR}(A)=H^p(\Omega^{\bullet}_{A/k},d)$ is the de Rham cohomology of the algebra, the sum being finite in each degree when $A$ has finite dimension, and the corresponding periodic cyclic homology is the product of the de Rham cohomologies of one parity: $HP_n(A)\cong\prod_{p\equiv n (2)}H^p_{dR}(A)$.
 
-*Proof (in outline).* Under the Hochschild–Kostant–Rosenberg theorem the Hochschild complex is the complex of differential forms with the de Rham differential, and the Connes boundary $B:\Omega^n_{A/k}\to\Omega^{n+1}_{A/k}$ corresponds to the exterior derivative $d$, so the $(b,B)$-bicomplex becomes the bicomplex whose columns are the de Rham complex, with $b=0$ and $B=d$; its spectral sequence has $E^1$-page the de Rham complex and $E^2$-page the de Rham cohomology, and its two filtrations give the displayed direct sum decomposition, the first summand being the cokernel of $d$ in degree $n$ and the further summands the de Rham cohomologies in degrees $n-2,n-4,\dots$. $\square$
+*Proof (in outline).* Under the Hochschild–Kostant–Rosenberg theorem the Hochschild complex is the complex of differential forms with the de Rham differential, and the Connes boundary $B:\Omega^n_{A/k}\to\Omega^{n+1}_{A/k}$ corresponds to the exterior derivative $d$, so the $(b,B)$-bicomplex becomes the bicomplex whose columns are the de Rham complex, with $b=0$ and $B=d$; its spectral sequence has $E^1$-page the de Rham complex and $E^2$-page the de Rham cohomology, and its two filtrations give the displayed direct sum decomposition, the first summand being the cokernel of $d$ in degree $n$ and the further summands the de Rham cohomologies in degrees $n-2,n-4,\dots$.
 
 **Example.** For $A=k[x_1,\dots,x_m]$ the de Rham cohomology is $k$ in degree zero and zero in positive degrees, and the map $d:\Omega^{n-1}\to\Omega^n$ has image the closed $n$-forms for $n\ge1$, so $\Omega^n/d\Omega^{n-1}=0$ for $n\ge1$ while $\Omega^0/d\Omega^{-1}=A$. The theorem therefore gives
 
@@ -157,7 +157,7 @@ from the algebraic K-theory of *K-Theory of Rings* to the Hochschild homology, w
 
 **Proposition.** The Dennis trace is Morita invariant. In degree zero it is the **Hattori–Stallings trace**, and for a commutative ring $R$ it identifies with the rank: the trace of an idempotent matrix over a connected commutative ring is a rank, an integer, and the class it defines in $R/[R,R]$ is that integer times the class of the identity.
 
-*Proof.* A Morita equivalence is realised by a finitely generated projective bimodule, and the trace of an endomorphism is unchanged by the equivalence because it is computed in the common module category; this gives the invariance. For the degree-zero statement, an idempotent $e$ in $M_n(R)$ has trace equal to the rank of the image of $e$, and the class of a scalar matrix in $R/[R,R]$ is the scalar times the class of $1$. $\square$
+*Proof.* A Morita equivalence is realised by a finitely generated projective bimodule, and the trace of an endomorphism is unchanged by the equivalence because it is computed in the common module category; this gives the invariance. For the degree-zero statement, an idempotent $e$ in $M_n(R)$ has trace equal to the rank of the image of $e$, and the class of a scalar matrix in $R/[R,R]$ is the scalar times the class of $1$.
 
 ### The Chern Character
 
@@ -169,7 +169,7 @@ $$
 
 which is a ring homomorphism for the tensor product on the left and the cup product on the right, and which is an isomorphism after tensoring with $\mathbb{Q}$ when $A$ is smooth and of finite type over a field of characteristic zero.
 
-*Proof (in outline).* The trace of an idempotent representing a projective module gives a cyclic cycle whose de Rham classes are the Chern classes; naturality and multiplicativity are checked on matrices, and the isomorphism statement is the rational comparison theorem, which uses the degeneration of the Atiyah–Hirzebruch-type spectral sequence of the mixed complex in the smooth case. $\square$
+*Proof (in outline).* The trace of an idempotent representing a projective module gives a cyclic cycle whose de Rham classes are the Chern classes; naturality and multiplicativity are checked on matrices, and the isomorphism statement is the rational comparison theorem, which uses the degeneration of the Atiyah–Hirzebruch-type spectral sequence of the mixed complex in the smooth case.
 
 **Remark.** The full statement of the comparison between algebraic K-theory and cyclic homology, and the corresponding rational isomorphism for the higher groups, is the subject of and the rational homotopy theory of the K-theory spaces; only the elementary trace and its low-degree form are used here. The topological Chern character, which takes values in the cohomology of a space, belongs to Part II, where it is treated.
 
@@ -177,13 +177,13 @@ which is a ring homomorphism for the tensor product on the left and the cup prod
 
 **Theorem.** Cyclic homology and periodic cyclic homology are Morita invariant: if $A$ and $A'$ are Morita equivalent $k$-algebras then $HC_{\bullet}(A)\cong HC_{\bullet}(A')$ and $HP_{\bullet}(A)\cong HP_{\bullet}(A')$, compatibly with the $SBI$ sequences.
 
-*Proof.* The Hochschild homology is Morita invariant by *Hochschild Homology*, and the $SBI$ sequence is natural; the functoriality of the sequence in the algebra then identifies the cyclic homologies inductively from the Hochschild ones, starting from $HC_0=HH_0$. The periodic version follows by the same induction on the periodic sequence. $\square$
+*Proof.* The Hochschild homology is Morita invariant by *Hochschild Homology*, and the $SBI$ sequence is natural; the functoriality of the sequence in the algebra then identifies the cyclic homologies inductively from the Hochschild ones, starting from $HC_0=HH_0$. The periodic version follows by the same induction on the periodic sequence.
 
 **Example.** For the matrix algebra $M_n(k)$ one has $HC_0\cong k$, $HC_n\cong k$ for $n$ even and $0$ for $n$ odd, agreeing with $HC_{\bullet}(k)$.
 
 **Proposition.** If $k\to k'$ is a flat commutative ring homomorphism and $A$ is flat over $k$, then $HC_n(A\otimes_kk')\cong HC_n(A)\otimes_kk'$ and $HP_n(A\otimes_kk')\cong HP_n(A)\otimes_kk'$, the isomorphisms respecting the operators $S$, $B$, $I$.
 
-*Proof.* The Hochschild complex is flat over $k$ in each degree, so the cyclic and periodic complexes commute with flat base change, and the homology of the base-changed complex is the base change of the homology because $k'$ is flat. $\square$
+*Proof.* The Hochschild complex is flat over $k$ in each degree, so the cyclic and periodic complexes commute with flat base change, and the homology of the base-changed complex is the base change of the homology because $k'$ is flat.
 
 ## Summary
 

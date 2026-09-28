@@ -3,13 +3,13 @@
 
 ## Introduction
 
-The split-complex algebra $\mathbb{D}$ is two-dimensional over $\mathbb{R}$, so a split-complex number is read off as its list of **two real coefficients**, $Z = a + j b \leftrightarrow (a, b)$. This article presents that **two-component realization** in full: the coefficient space, the column and the dual row, the component form of the product, the conjugation in coordinates, the two fixed-point subspaces as coordinate conditions, and the norm form with its two signs. It is the two-dimensional counterpart of *Biquaternion Four-Vector Representation*, and it is the last of the three Representation articles, after *Split-Complex Representations* and *Split-Complex Regular Representation*.
+The split-complex algebra $\mathbb{D}$ is two-dimensional over $\mathbb{R}$, so a split-complex number is read off as its list of **two real coefficients**, $Z = a + j b \leftrightarrow (a, b)$. This article presents that **two-component realization** in full: the coefficient space, the column and the dual row, the component form of the product, the conjugation in coordinates, the two fixed-point subspaces as coordinate conditions, and the norm with its two signs. It is the two-dimensional counterpart of *Biquaternion Four-Vector Representation*, and it is the last of the three Representation articles, after *Split-Complex Representations* and *Split-Complex Regular Representation*.
 
 The word *representation* is used here in the sense of a concrete realization of the algebra as computable objects, not in the technical sense of a vector space carrying an algebra homomorphism into its endomorphisms. The technical sense is the subject of *Split-Complex Representations*, and the matrix of the action on this coefficient space is the subject of *Split-Complex Regular Representation*; this article supplies the coordinate space on which that operator is written.
 
-The article owns the coefficient space $\mathbb{R}^2$, the column and the row, the component form of the product, the conjugation in coordinates, the two fixed-point subspaces and the norm form with its two real restrictions. It does not treat the matrix of multiplication on this space, which belongs to *Split-Complex Regular Representation*; it does not treat the polar forms, which belong to *Split-Complex Polar Representation*; and it introduces no physical vocabulary. The comparison throughout is with the complex field, whose two-component realization is the **definite** one and whose product rule differs from the present one in a single sign.
+The article owns the coefficient space $\mathbb{R}^2$, the column and the row, the component form of the product, the conjugation in coordinates, the two fixed-point subspaces and the norm with its two real restrictions. It does not treat the matrix of multiplication on this space, which belongs to *Split-Complex Regular Representation*; it does not treat the polar forms, which belong to *Split-Complex Polar Representation*; and it introduces no physical vocabulary. The comparison throughout is with the complex field, whose two-component realization is the **definite** one and whose product rule differs from the present one in a single sign.
 
-**Conventions.** The algebra is $\mathbb{D} = \mathbb{R}[x]/(x^2-1)$, basis $1$, $j$, $j^2 = +1$; general element $Z = a+j b$ with $a = \operatorname{Re}Z$, $b = \operatorname{Im}Z$; conjugate $\bar Z = a-j b$; idempotents $\Pi_\pm = \tfrac12(1\pm j)$; idempotent coordinates $Z_\pm = a\pm b$; norm form $N(Z) = a^2-b^2$.
+**Conventions.** The algebra is $\mathbb{D} = \mathbb{R}[x]/(x^2-1)$, basis $1$, $j$, $j^2 = +1$; general element $Z = a+j b$ with $a = \operatorname{Re}Z$, $b = \operatorname{Im}Z$; conjugate $\bar Z = a-j b$; idempotents $\Pi_\pm = \tfrac12(1\pm j)$; idempotent coordinates $Z_\pm = a\pm b$; norm $N(Z) = a^2-b^2$.
 
 ## The Coefficient Space
 
@@ -23,7 +23,7 @@ The coefficient of the unit is written $Z^0$ and the coefficient of $j$ is writt
 
 **Proposition.** The map $Z \mapsto Z^\mu$ is an $\mathbb{R}$-linear isomorphism from $\mathbb{D}$ onto $\mathbb{R}^2$. Consequently the coefficient space has real dimension $2$ and no other dimension: unlike a biquaternion, whose components are complex, a split-complex number is entirely real, so its coefficient space is $\mathbb{R}^2$ and there is no splitting of each coordinate into real and imaginary parts.
 
-**Proof.** The map sends the basis $1, j$ to the standard basis of $\mathbb{R}^2$ and is extended by linearity; it is bijective on bases. The algebra is a real vector space of dimension $2$, matched by the dimension of $\mathbb{R}^2$. $\square$
+**Proof.** The map sends the basis $1, j$ to the standard basis of $\mathbb{R}^2$ and is extended by linearity; it is bijective on bases. The algebra is a real vector space of dimension $2$, matched by the dimension of $\mathbb{R}^2$.
 
 The coefficient space $\mathbb{R}^2$ **is** the algebra itself, seen as a coordinate space, and it is also the simple module of $\mathbb{D}$: the algebra is two-dimensional, its two idempotent components are one-dimensional, and the regular module is the direct sum of the two one-dimensional simple modules. So the numbers $2$, $2$, $2$ appearing as the dimension of the algebra, the size of the regular matrix of *Split-Complex Regular Representation*, and the dimension of the coefficient space are the same number for the same reason, in contrast with the biquaternion case where the algebra dimension $4$ and the simple-module dimension $2$ are different objects.
 
@@ -81,7 +81,7 @@ $$
 ZW = (a c + b d) 1 + (a d + b c) j,
 $$
 
-which is the displayed pair. $\square$
+which is the displayed pair.
 
 **Comparison with the complex case.** For the complex number $Z = a+i b$ with the complex unit $i^2 = -1$, the product with $W = c+i d$ has components
 
@@ -89,7 +89,7 @@ $$
 (ZW)^0 = a c - b d, \qquad (ZW)^1 = a d + b c.
 $$
 
-The two product rules differ **only** in the sign of the $b d$ term in the first component: the split-complex product adds $b d$, the complex product subtracts it. This single sign is the whole difference between the two algebras at the level of components, and it is the reason the split-complex norm form is indefinite while the complex one is definite.
+The two product rules differ **only** in the sign of the $b d$ term in the first component: the split-complex product adds $b d$, the complex product subtracts it. This single sign is the whole difference between the two algebras at the level of components, and it is the reason the split-complex norm is indefinite while the complex one is definite.
 
 | product rule | first component | second component |
 |---|---|---|
@@ -161,11 +161,11 @@ $$
 a = \tfrac12(Z + \bar Z), \qquad b = \tfrac12 j^{-1}(Z - \bar Z).
 $$
 
-In the idempotent basis the same two lines appear as the diagonals $(t,t)$ and $(t,-t)$, and it is those two lines, rather than the coordinate axes, that carry the multiplicative structure: the coordinate axes carry the definite norm form, the diagonals the isotropic one.
+In the idempotent basis the same two lines appear as the diagonals $(t,t)$ and $(t,-t)$, and it is those two lines, rather than the coordinate axes, that carry the multiplicative structure: the coordinate axes carry the definite norm, the diagonals the isotropic one.
 
-## The Norm Form with Its Two Signs
+## The Norm with Its Two Signs
 
-The norm form of $Z = a+j b$ in coordinates is
+The norm of $Z = a+j b$ in coordinates is
 
 $$
 N(Z) = Z\bar Z = a^2 - b^2,
@@ -187,7 +187,7 @@ with matrix $\operatorname{diag}(1, -1)$ and signature $(1,1)$. So the coefficie
 
 ### The Two Real Restrictions
 
-Restricted to the two fixed-point subspaces the norm form is definite:
+Restricted to the two fixed-point subspaces the norm is definite:
 
 $$
 N\big|_{\mathbb{R}_{\mathbb{D}}}(a) = a^2 \quad (\text{positive definite}), \qquad N\big|_{j\mathbb{R}_{\mathbb{D}}}(b) = -b^2 \quad (\text{negative definite}),
@@ -195,7 +195,7 @@ $$
 
 so the real axis is positive definite and the split imaginary axis negative definite. This is the coordinate statement, made in *Split-Complex Norm and Invertibility*, that the null cone meets each eigenspace only at the origin. In the idempotent coordinates the same form is the product $N = Z_+Z_-$, which vanishes exactly when one coordinate vanishes.
 
-**Comparison with the complex case.** For $\mathbb{C}$ the norm form is
+**Comparison with the complex case.** For $\mathbb{C}$ the norm is
 
 $$
 N_{\mathbb{C}}(Z) = Z\bar Z = a^2 + b^2,
@@ -213,7 +213,7 @@ The complex field and the split-complex algebra are the two two-dimensional real
 | product rule | $(a c-b d, \, a d+b c)$ | $(a c+b d, \, a d+b c)$ |
 | conjugation in coordinates | $(a,-b)$ | $(a,-b)$ |
 | fixed / anti-fixed subspaces | $\mathbb{R}$ and $i\mathbb{R}$ | $\mathbb{R}_{\mathbb{D}}$ and $j\mathbb{R}_{\mathbb{D}}$ |
-| norm form | $a^2+b^2$, positive definite | $a^2-b^2$, signature $(1,1)$ |
+| norm | $a^2+b^2$, positive definite | $a^2-b^2$, signature $(1,1)$ |
 | isotropic set | $\{0\}$ | the two lines $a = \pm b$ |
 | zero divisors | none | the two idempotent lines |
 | idempotents beyond $0,1$ | none | $\Pi_\pm$ |
@@ -225,7 +225,7 @@ The two realizations share their coefficient space, their column and row, their 
 
 A split-complex number $Z = a+j b$ is realized as its two-component vector $(a, b)$ in $\mathbb{R}^2$, with column $\begin{pmatrix} a \\ b \end{pmatrix}$ and dual row $(a, b)$; the map to $\mathbb{R}^2$ is an isomorphism of real vector spaces, and the component space is the algebra itself as a coordinate space. The product in components is $(ZW)^0 = a c+b d$, $(ZW)^1 = a d+b c$, differing from the complex product rule in the single sign of the $b d$ term; the left multiplication operator is the regular matrix $\begin{pmatrix} a & b \\ b & a \end{pmatrix}$ of *Split-Complex Regular Representation*.
 
-The conjugation is the reflection $(a,b) \mapsto (a,-b)$, with fixed subspace the real axis and anti-fixed subspace the split imaginary axis. The norm form is $a^2-b^2$, indefinite of signature $(1,1)$ with isotropic set the two lines $a = \pm b$; restricted to the real axis it is positive definite and to the split imaginary axis negative definite. In the idempotent coordinates the same form is $Z_+Z_-$ and the conjugation swaps the two coordinates. The complex field shares the coefficient space, the conjugation, the column and row picture and the second component of the product, and differs only in the sign of the $b d$ term of the first component; that sign is the whole difference between the definite two-component algebra and the indefinite one, between a field and a ring with zero divisors.
+The conjugation is the reflection $(a,b) \mapsto (a,-b)$, with fixed subspace the real axis and anti-fixed subspace the split imaginary axis. The norm is $a^2-b^2$, indefinite of signature $(1,1)$ with isotropic set the two lines $a = \pm b$; restricted to the real axis it is positive definite and to the split imaginary axis negative definite. In the idempotent coordinates the same form is $Z_+Z_-$ and the conjugation swaps the two coordinates. The complex field shares the coefficient space, the conjugation, the column and row picture and the second component of the product, and differs only in the sign of the $b d$ term of the first component; that sign is the whole difference between the definite two-component algebra and the indefinite one, between a field and a ring with zero divisors.
 
 ## Summary of Notation
 
@@ -242,7 +242,7 @@ The conjugation is the reflection $(a,b) \mapsto (a,-b)$, with fixed subspace th
 | $C = \operatorname{diag}(1,-1)$ | Matrix of the conjugation |
 | $\mathbb{R}_{\mathbb{D}} = \{(a,0)\}$ | Fixed subspace, real axis |
 | $j\mathbb{R}_{\mathbb{D}} = \{(0,b)\}$ | Anti-fixed subspace, split imaginary axis |
-| $N(Z) = a^2-b^2$ | Norm form, signature $(1,1)$ |
+| $N(Z) = a^2-b^2$ | Norm, signature $(1,1)$ |
 | $g(Z,W) = a c-b d$ | Polarised form |
 | $(Z_+, Z_-) = (a+b, a-b)$ | Idempotent coordinates |
 

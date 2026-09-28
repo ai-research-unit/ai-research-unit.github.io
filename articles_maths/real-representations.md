@@ -57,19 +57,19 @@ $$
 a \cdot v = a(1 \cdot v) = a v
 $$
 
-for every $a \in \mathbb{R}$ and every $v \in V$, where the scalar $a$ on the right multiplies in $V$. So the action of the field element $a$ is already the scalar multiplication of $V$, and in any basis the matrix of $\rho(a)$ is diagonal with every entry equal to $a$. The representation is thus a direct sum of copies of the regular representation. $\square$
+for every $a \in \mathbb{R}$ and every $v \in V$, where the scalar $a$ on the right multiplies in $V$. So the action of the field element $a$ is already the scalar multiplication of $V$, and in any basis the matrix of $\rho(a)$ is diagonal with every entry equal to $a$. The representation is thus a direct sum of copies of the regular representation.
 
 ### Irreducible Representations
 
 **Theorem.** The regular representation is the unique irreducible real representation of $\mathbb{R}$, up to isomorphism.
 
-**Proof.** Any irreducible representation is a quotient of the regular representation, hence isomorphic to it, since $\mathbb{R}$ is a field and every non-zero $\mathbb{R}$-linear map $\mathbb{R} \to V$ is injective. $\square$
+**Proof.** Any irreducible representation is a quotient of the regular representation, hence isomorphic to it, since $\mathbb{R}$ is a field and every non-zero $\mathbb{R}$-linear map $\mathbb{R} \to V$ is injective.
 
 ### Schur's Lemma
 
 **Theorem (Schur).** Every $\mathbb{R}$-linear endomorphism of an irreducible real representation of $\mathbb{R}$ is a scalar multiple of the identity.
 
-**Proof.** Let $V$ be irreducible and let $T : V \to V$ be $\mathbb{R}$-linear and commuting with the action. Then $\ker T$ and $\operatorname{im} T$ are subrepresentations. Since $V$ is irreducible, either $\ker T = 0$ and $\operatorname{im} T = V$ (so $T$ is an isomorphism), or $\ker T = V$ (so $T = 0$). In the first case, $T$ is an isomorphism, and since $V$ is one-dimensional over $\mathbb{R}$ (by the classification theorem), $T$ is multiplication by a non-zero scalar. $\square$
+**Proof.** Let $V$ be irreducible and let $T : V \to V$ be $\mathbb{R}$-linear and commuting with the action. Then $\ker T$ and $\operatorname{im} T$ are subrepresentations. Since $V$ is irreducible, either $\ker T = 0$ and $\operatorname{im} T = V$ (so $T$ is an isomorphism), or $\ker T = V$ (so $T = 0$). In the first case, $T$ is an isomorphism, and since $V$ is one-dimensional over $\mathbb{R}$ (by the classification theorem), $T$ is multiplication by a non-zero scalar.
 
 **Corollary.** The endomorphism ring of the regular representation is $\mathbb{R}$ itself.
 
@@ -121,7 +121,7 @@ $$
 
 **Theorem.** Every finite-dimensional real representation of $\mathbb{R}$ admits a positive-definite invariant inner product.
 
-**Proof.** The representation is a direct sum of copies of the regular representation, and on the regular representation the standard inner product is invariant: $\langle a \cdot v, w \rangle = (av)w = v(aw) = \langle v, a \cdot w \rangle$. The orthogonal direct sum of the standard inner products on the summands is then an invariant positive-definite inner product on $V$. $\square$
+**Proof.** The representation is a direct sum of copies of the regular representation, and on the regular representation the standard inner product is invariant: $\langle a \cdot v, w \rangle = (av)w = v(aw) = \langle v, a \cdot w \rangle$. The orthogonal direct sum of the standard inner products on the summands is then an invariant positive-definite inner product on $V$.
 
 ### The Role of Completeness
 
@@ -129,7 +129,7 @@ Completeness does not in fact enter the representation theory, even for infinite
 
 **Theorem.** Every Banach representation of $\mathbb{R}$ is a direct sum of copies of the regular representation, in the sense that $V$ is a direct sum of closed invariant subspaces on each of which $\mathbb{R}$ acts by scalar multiplication.
 
-**Proof.** Since $\rho$ is an algebra homomorphism of real algebras it is $\mathbb{R}$-linear and unital, so $\rho(a) = \rho(a \cdot 1) = a\,\rho(1) = a\,\mathrm{id}$ for every $a \in \mathbb{R}$: the field $\mathbb{R}$ acts on $V$ by scalar multiplication. Neither continuity nor completeness is used, and the conclusion holds for every representation, finite- or infinite-dimensional, Banach or not. $\square$
+**Proof.** Since $\rho$ is an algebra homomorphism of real algebras it is $\mathbb{R}$-linear and unital, so $\rho(a) = \rho(a \cdot 1) = a\,\rho(1) = a\,\mathrm{id}$ for every $a \in \mathbb{R}$: the field $\mathbb{R}$ acts on $V$ by scalar multiplication. Neither continuity nor completeness is used, and the conclusion holds for every representation, finite- or infinite-dimensional, Banach or not.
 
 ## The Dual Representation
 
@@ -217,7 +217,7 @@ $$
 \dim_{\mathbb{R}} \operatorname{Hom}_{\mathbb{R}}(V, W) = pq.
 $$
 
-**Proof.** A homomorphism is a real-linear map between finite-dimensional real vector spaces, so it is determined by a $q \times p$ real matrix, of real dimension $pq$. $\square$
+**Proof.** A homomorphism is a real-linear map between finite-dimensional real vector spaces, so it is determined by a $q \times p$ real matrix, of real dimension $pq$.
 
 ### The Endomorphism Ring
 

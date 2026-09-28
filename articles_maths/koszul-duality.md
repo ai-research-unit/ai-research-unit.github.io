@@ -31,7 +31,7 @@ where $V^*\otimes_k V^*$ is identified with the dual of $V\otimes_k V$; equivale
 
 **Proposition.** The construction is involutive up to the natural identifications: $(A^!)^! \cong A$ when $V$ is finite-dimensional, and it reverses the inclusion of relation spaces, so that a quotient $A \to A'$ of quadratic algebras induces a map $A'^! \to A^!$ in the opposite direction.
 
-*Proof.* The orthogonal complement is an inclusion-reversing involution on subspaces of a finite-dimensional space with a non-degenerate pairing, and $R^{\perp\perp} = R$; the identification $(V^*)^* \cong V$ then gives the first statement. The second is immediate because $R \subseteq R'$ implies $R'^\perp \subseteq R^\perp$. $\square$
+*Proof.* The orthogonal complement is an inclusion-reversing involution on subspaces of a finite-dimensional space with a non-degenerate pairing, and $R^{\perp\perp} = R$; the identification $(V^*)^* \cong V$ then gives the first statement. The second is immediate because $R \subseteq R'$ implies $R'^\perp \subseteq R^\perp$.
 
 **Remark.** The dual is defined by the quadratic relations alone and depends on the presentation. Two algebras that are isomorphic as algebras need not have isomorphic duals unless the isomorphism respects the grading and the space of generators; the dual is an invariant of the quadratic algebra, that is, of the pair $(V,R)$, not of the underlying algebra.
 
@@ -94,7 +94,7 @@ $$
 d^2(a\otimes\xi) = \sum_{i,j} ax_ix_j\otimes(\xi\llcorner x^i\llcorner x^j) ,
 $$
 
-the contractions being taken in the first two slots of $\xi$. The first two slots of the coefficient of $a$ therefore give the tensor $\sum_{i,j}\xi_{ij}\,x_i\otimes x_j \in V\otimes_kV$, where $\xi_{ij} = \xi(x^i,x^j,\cdot)$; because $\xi$ annihilates $R^\perp$ in the first two slots, that tensor is annihilated by every element of $R^\perp$ and hence lies in $(R^\perp)^\perp = R$. Multiplication $V\otimes_kV\to A$ kills $R$ by the definition $A = T(V)/(R)$, so $d^2 = 0$. For the symmetric algebra, where $R = \Lambda^2V$ and $\xi$ is alternating, this is the classical cancellation of the symmetric product $x_ix_j$ against the alternating factor $\xi(x^i,x^j,\cdot)$. The degree-$0$ statement is that $A\otimes_k(A^!_0)^* = A$ maps onto $k$ by the augmentation $A \to A/A_{\geq1} = k$. $\square$
+the contractions being taken in the first two slots of $\xi$. The first two slots of the coefficient of $a$ therefore give the tensor $\sum_{i,j}\xi_{ij}\,x_i\otimes x_j \in V\otimes_kV$, where $\xi_{ij} = \xi(x^i,x^j,\cdot)$; because $\xi$ annihilates $R^\perp$ in the first two slots, that tensor is annihilated by every element of $R^\perp$ and hence lies in $(R^\perp)^\perp = R$. Multiplication $V\otimes_kV\to A$ kills $R$ by the definition $A = T(V)/(R)$, so $d^2 = 0$. For the symmetric algebra, where $R = \Lambda^2V$ and $\xi$ is alternating, this is the classical cancellation of the symmetric product $x_ix_j$ against the alternating factor $\xi(x^i,x^j,\cdot)$. The degree-$0$ statement is that $A\otimes_k(A^!_0)^* = A$ maps onto $k$ by the augmentation $A \to A/A_{\geq1} = k$.
 
 **Definition.** $A$ is **Koszul** if $K(A)$ is a resolution of the trivial module $k$ by free (or, in the graded sense, graded-free) $A$-modules; equivalently $H_n(K(A)) = 0$ for $n \geq 1$.
 
@@ -111,7 +111,7 @@ Since $K(A)$ is a complex of free $A$-modules with $K(A)_n$ generated in interna
 3. $\operatorname{Ext}^{i,j}_A(k,k) = 0$ for $i \neq j$;
 4. the Koszul dual $A^!$ is Koszul, and then $A^!$ is the algebra $\bigoplus_i\operatorname{Ext}^{i,i}_A(k,k)$ with the Yoneda product, up to the identification of $A^!_i$ with $\operatorname{Ext}^{i,i}_A(k,k)$.
 
-*Proof (outline).* The Koszul complex has, by construction, one generator in each bidegree $(i,i)$; it is a resolution exactly when no other bidegrees occur in a minimal resolution, which is the condition on $\operatorname{Tor}$ in degree $i\neq j$. The equivalence of the Tor and Ext statements is the duality between the two, valid because $A$ is graded with finite-dimensional graded pieces and $A_0 = k$. The last statement is the computation of the Ext algebra from the Koszul complex: since $K(A)$ is a complex of free modules, applying $\operatorname{Hom}_A(-,k)$ computes $\operatorname{Ext}^\bullet_A(k,k)$, and when $K(A)$ is a resolution the resulting complex has cohomology in each bidegree $(i,i)$ equal to $(A^!_i)^*$, so that $A^! \cong \operatorname{Ext}^{\bullet,\bullet}_A(k,k)$ as a graded algebra. Applying the same statement to $A^!$ gives the mutual character of Koszulity. $\square$
+*Proof (outline).* The Koszul complex has, by construction, one generator in each bidegree $(i,i)$; it is a resolution exactly when no other bidegrees occur in a minimal resolution, which is the condition on $\operatorname{Tor}$ in degree $i\neq j$. The equivalence of the Tor and Ext statements is the duality between the two, valid because $A$ is graded with finite-dimensional graded pieces and $A_0 = k$. The last statement is the computation of the Ext algebra from the Koszul complex: since $K(A)$ is a complex of free modules, applying $\operatorname{Hom}_A(-,k)$ computes $\operatorname{Ext}^\bullet_A(k,k)$, and when $K(A)$ is a resolution the resulting complex has cohomology in each bidegree $(i,i)$ equal to $(A^!_i)^*$, so that $A^! \cong \operatorname{Ext}^{\bullet,\bullet}_A(k,k)$ as a graded algebra. Applying the same statement to $A^!$ gives the mutual character of Koszulity.
 
 **Corollary.** If $A$ is Koszul then its Hilbert series $\mathrm{Hilb}_A(t) = \sum_n\dim_k(A_n)t^n$ and the Hilbert series of $A^!$ satisfy
 
@@ -119,7 +119,7 @@ $$
 \mathrm{Hilb}_A(t)\,\mathrm{Hilb}_{A^!}(-t) = 1 .
 $$
 
-*Proof.* The Euler characteristic of the Koszul complex, which is a resolution of $k$ when $A$ is Koszul, gives $\sum_n(-1)^n\dim_k(A\otimes_k(A^!_n)^*)\,t^n = \dim_k k = 1$ if the internal degree is tracked; substituting the Hilbert series evaluates the alternating sum. $\square$
+*Proof.* The Euler characteristic of the Koszul complex, which is a resolution of $k$ when $A$ is Koszul, gives $\sum_n(-1)^n\dim_k(A\otimes_k(A^!_n)^*)\,t^n = \dim_k k = 1$ if the internal degree is tracked; substituting the Hilbert series evaluates the alternating sum.
 
 **Example.** For $A = \operatorname{Sym}(V)$ with $\dim V = n$, $\mathrm{Hilb}_A(t) = (1-t)^{-n}$ and $\mathrm{Hilb}_{A^!}(t) = (1+t)^n$, so $\mathrm{Hilb}_A(t)\mathrm{Hilb}_{A^!}(-t) = (1-t)^{-n}(1-t)^n = 1$. For the quantum plane and its dual of the preceding example the same identity holds, with $(1-t)^{-2}$ and $(1-t)^{2}$. For $A = k[x]/(x^2)$ it reads $(1+t)\cdot(1+t)^{-1} = 1$, again true, and $A^! = k[x]$ in this case. The identity is a necessary condition for Koszulity and is the quickest numerical test; it is not sufficient in general, and the full criterion is the vanishing of $\operatorname{Tor}$ in the off-diagonal bidegrees.
 
@@ -157,7 +157,7 @@ $$
 
 implemented by the functors $\operatorname{RHom}_A(-,k)$ and $\operatorname{RHom}_{A^!}(-,-,k)$; equivalently, the Koszul complex $K(A)$ is a tilting object of the derived category of graded $A$-modules, and its endomorphism algebra is $A^!$. Under the equivalence the free module $A$ corresponds to $k$ (with a degree shift) and the simple module $k$ corresponds to $A^!$.
 
-*Proof (outline).* The Koszul complex $K(A)$ is a compact object of $D^{\mathrm{b}}(\operatorname{grmod}A)$ when $A$ is Koszul, and the natural map $A^! \to \operatorname{End}_{D(A)}(K(A))^{\mathrm{op}}$ is an isomorphism: this is the content of the resolution criterion, read in the derived category. Every finitely generated graded $A$-module has a finite resolution by direct sums of the $A$-modules underlying the terms of $K(A)$, because $K(A)$ generates the derived category as $k$ does; the general tilting theory then states that $\operatorname{RHom}(K(A),-)$ is an equivalence onto the derived category of modules over $\operatorname{End}(K(A))^{\mathrm{op}} = A^!$, with the opposite handedness recorded by the $\mathrm{op}$ in the statement. $\square$
+*Proof (outline).* The Koszul complex $K(A)$ is a compact object of $D^{\mathrm{b}}(\operatorname{grmod}A)$ when $A$ is Koszul, and the natural map $A^! \to \operatorname{End}_{D(A)}(K(A))^{\mathrm{op}}$ is an isomorphism: this is the content of the resolution criterion, read in the derived category. Every finitely generated graded $A$-module has a finite resolution by direct sums of the $A$-modules underlying the terms of $K(A)$, because $K(A)$ generates the derived category as $k$ does; the general tilting theory then states that $\operatorname{RHom}(K(A),-)$ is an equivalence onto the derived category of modules over $\operatorname{End}(K(A))^{\mathrm{op}} = A^!$, with the opposite handedness recorded by the $\mathrm{op}$ in the statement.
 
 **Corollary.** For a Koszul algebra the algebra $A$ is determined up to isomorphism by $A^!$ and conversely; in particular Koszul duality is an involution on the class of Koszul algebras.
 
@@ -187,7 +187,7 @@ The duality of the article is the algebraic statement that completes the pairing
 2. $\Lambda(V)$ is Koszul with $\Lambda(V)^! = \operatorname{Sym}(V^*)$;
 3. the divided power algebra $\Gamma(V)$ is Koszul with $\Gamma(V)^! = \Lambda(V^*)$ in the graded-complete setting, the divided powers being the graded-complete dual of the symmetric powers; the two algebras $\operatorname{Sym}(V)$ and $\Gamma(V)$ consequently share the same Koszul dual, which is the algebraic statement of the mutual duality of the symmetric and divided power algebras.
 
-*Proof.* Statements 1 and 2 are the model examples computed above. Statement 3 follows from the Hilbert-series identity on the graded pieces, $\dim_k\Gamma_n(V) = \dim_kS^n(V^*)$, together with the resolution criterion; it is the statement that the symmetric and divided power algebras are the two graded-complete forms of the Koszul resolution and have the exterior algebra as their common dual. $\square$
+*Proof.* Statements 1 and 2 are the model examples computed above. Statement 3 follows from the Hilbert-series identity on the graded pieces, $\dim_k\Gamma_n(V) = \dim_kS^n(V^*)$, together with the resolution criterion; it is the statement that the symmetric and divided power algebras are the two graded-complete forms of the Koszul resolution and have the exterior algebra as their common dual.
 
 ## Summary
 

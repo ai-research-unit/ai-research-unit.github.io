@@ -295,7 +295,7 @@ $$
 \tilde K=\frac{i\omega}{c}\,e_0+\mathbf k,\qquad \mathbf k=k_1e_1+k_2e_2+k_3e_3 .
 $$
 
-This is an element of the material sector $\mathbb M_-$: imaginary scalar part, real vector part. Since the norm form of $\mathbb B$ is $N(\tilde Q)=\tilde Q\bar{\tilde Q}=\sum_\mu Q_\mu^2$,
+This is an element of the material sector $\mathbb M_-$: imaginary scalar part, real vector part. Since the biquaternion norm of $\mathbb B$ is $N(\tilde Q)=\tilde Q\bar{\tilde Q}=\sum_\mu Q_\mu^2$,
 
 $$
 N(\tilde K)=\tilde K\bar{\tilde K}=\left(\frac{i\omega}{c}\right)^2+k_1^2+k_2^2+k_3^2=-\frac{\omega^2}{c^2}+\mathbf k^2 .
@@ -313,7 +313,7 @@ $$
 \boxed{\;\tilde k\bar{\tilde k}=-\frac{m^2c^2}{\hbar^2}.\;}
 $$
 
-Equivalently, with $E=\hbar\omega$ and $\mathbf p=\hbar\mathbf k$, the wave biquaternion is the four-momentum biquaternion divided by $\hbar$, $\tilde K=\tilde P/\hbar$; the norm form being quadratic, $N(\tilde K)=N(\tilde P)/\hbar^2=-m^2c^2/\hbar^2$, exactly as $N(\tilde P)=\tilde P\bar{\tilde P}=-m^2c^2$ in the companion kinematics. The mass-shell condition is therefore not a new postulate: it is the statement that the four-wavevector is a timelike vector of $\mathbb M_-$ with the same norm form as the four-momentum.
+Equivalently, with $E=\hbar\omega$ and $\mathbf p=\hbar\mathbf k$, the wave biquaternion is the four-momentum biquaternion divided by $\hbar$, $\tilde K=\tilde P/\hbar$; the biquaternion norm being quadratic, $N(\tilde K)=N(\tilde P)/\hbar^2=-m^2c^2/\hbar^2$, exactly as $N(\tilde P)=\tilde P\bar{\tilde P}=-m^2c^2$ in the companion kinematics. The mass-shell condition is therefore not a new postulate: it is the statement that the four-wavevector is a timelike vector of $\mathbb M_-$ with the same biquaternion norm as the four-momentum.
 
 The two roots of the dispersion relation, $\omega=\pm\sqrt{c^2\mathbf k^2+m^2c^4/\hbar^2}$, are the two frequency branches, and they are precisely the positive- and negative-frequency spinors $u$ and $v$ constructed above; the two spin labels within each branch give the four-dimensional complex solution space that the parent article quotes for the massive equation. As a numerical check, for an electron ($mc^2=0.510998950\ \mathrm{MeV}$) at $|\mathbf p|=1\ \mathrm{MeV}/c$, the dispersion relation gives $E=1.122996\ \mathrm{MeV}$ and $E^2-\mathbf p^2c^2=0.261120\ \mathrm{MeV}^2=(mc^2)^2$; the corresponding wave biquaternion has $N(\tilde K)=-6.706054\times10^{24}\ \mathrm{m}^{-2}$, agreeing with $-m^2c^2/\hbar^2$ to one part in $10^{15}$.
 
@@ -326,7 +326,7 @@ The six problems test the parent article's plane-wave solutions and confirm them
 3. **Spin sums.** The completeness relations $\sum_r u^{(r)}\bar u^{(r)}=\not p+m$ and $\sum_r v^{(r)}\bar v^{(r)}=\not p-m$ follow from the two-spinor completeness relation, and satisfy $(\not p+m)(\not p-m)=0$ on shell.
 4. **Massless limit.** In the chiral basis each helicity eigenstate becomes a single Weyl spinor, with positive helicity locking to right-handedness and negative helicity to left-handedness; the mass term is the only term coupling the two chiralities.
 5. **Basis change.** The chiral and Dirac representations obey the same Clifford algebra with $g=\mathrm{diag}(+1,-1,-1,-1)$; the unitary $U=\tfrac{1}{\sqrt2}\left(\begin{smallmatrix}I_2&I_2\\-I_2&I_2\end{smallmatrix}\right)$ interpolates between them, and the Lorentz generators transform by conjugation, rotations acting chirality-even and boosts chirality-odd.
-6. **Mass shell.** The biquaternionic condition $\tilde k\bar{\tilde k}=-m^2c^2/\hbar^2$ is the norm-form statement $\tilde K=\tilde P/\hbar$, and reproduces $E^2=\mathbf p^2c^2+m^2c^4$.
+6. **Mass shell.** The biquaternionic condition $\tilde k\bar{\tilde k}=-m^2c^2/\hbar^2$ is the biquaternion-norm statement $\tilde K=\tilde P/\hbar$, and reproduces $E^2=\mathbf p^2c^2+m^2c^4$.
 
 Two items needed in this exercise are not displayed in the parent article: the chiral negative-frequency spinors $v_\pm$ (constructed in Problem 4) and the explicit change-of-basis matrix $U$ (constructed in Problem 5). The parent states the existence of both but does not exhibit them; the constructions above are the ones that reproduce its stated results.
 

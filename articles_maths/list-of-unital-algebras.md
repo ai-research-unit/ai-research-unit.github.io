@@ -32,7 +32,7 @@ The examples are the algebras whose identity is part of the construction, and in
 |---|---|---|
 | $M_n(R)$, the matrix algebra | the identity matrix $I_n$; $M_n(R)^\times = \mathrm{GL}_n(R)$ | *Matrix Algebras* |
 | $k[G]$, the group algebra | the identity $1_G$ of the group, extended to the algebra | *Group Algebras* |
-| $U(\mathfrak{g})$, the universal enveloping algebra | the identity of the tensor algebra $T(\mathfrak{g})$ is preserved by the quotient; the universal property lands in associative algebras | *Universal Enveloping Algebras* |
+| $U(\mathrm{G})$, the universal enveloping algebra | the identity of the tensor algebra $T(\mathrm{G})$ is preserved by the quotient; the universal property lands in associative algebras | *Universal Enveloping Algebras* |
 | $T(V)$, the tensor algebra | the unit $1 \in V^{\otimes 0} = R$ | *Tensor Powers and the Free Algebra* |
 | $R[x_1,\dots,x_n]$, the polynomial algebra | the constant polynomial $1$; commutative | *Polynomial Algebras* |
 | $kQ$, the path algebra of a finite quiver | the sum $1 = \sum_{v \in Q_0} e_v$ of the length-zero paths is the identity, so the algebra is unital exactly when the vertex set is finite | *Quiver Representations and Representation Type* |
@@ -119,7 +119,7 @@ The approximate identity is the substitute for the identity in norm estimates an
 
 ## Summary
 
-This article has listed the unital algebras and rings of the corpus, together with the objects that fail to be unital. The identity $1_A$ is unique, it makes the algebra a ring with a unit group $A^\times$, and the canonical map $\eta : R \to A$, $\eta(r) = r1_A$, identifies a unital $R$-algebra with a ring carrying a homomorphism from $R$ into its centre. The unital examples are the matrix algebra $M_n(R)$, the group algebra $k[G]$, the universal enveloping algebra $U(\mathfrak{g})$, the tensor algebra $T(V)$, the polynomial algebra, the path algebra of a finite quiver, the division algebras, the augmentation ideal of $\mathbb{Z}/2$, and, on the operator side, $B(H)$ and $C(X)$ for compact $X$. The rings with identity are read as unital algebras over $\mathbb{Z}$ and over themselves, with the centre $Z(A)$ and the matrix ring $M_n(D)$ among them. The unitisation $A^+$ adjoins an identity, with $A$ a two-sided ideal of $A^+$ and $A^+/A \cong R$. The non-examples — $L^1(G)$ for non-discrete $G$, the compact operators on an infinite-dimensional space, $C_0(X)$ for non-compact $X$, the trace-class and Hilbert–Schmidt ideals, and a proper ideal of a unital algebra — each name the failure of the identity axiom, and the analytic ones among them carry an approximate identity in place of the unit.
+This article has listed the unital algebras and rings of the corpus, together with the objects that fail to be unital. The identity $1_A$ is unique, it makes the algebra a ring with a unit group $A^\times$, and the canonical map $\eta : R \to A$, $\eta(r) = r1_A$, identifies a unital $R$-algebra with a ring carrying a homomorphism from $R$ into its centre. The unital examples are the matrix algebra $M_n(R)$, the group algebra $k[G]$, the universal enveloping algebra $U(\mathrm{G})$, the tensor algebra $T(V)$, the polynomial algebra, the path algebra of a finite quiver, the division algebras, the augmentation ideal of $\mathbb{Z}/2$, and, on the operator side, $B(H)$ and $C(X)$ for compact $X$. The rings with identity are read as unital algebras over $\mathbb{Z}$ and over themselves, with the centre $Z(A)$ and the matrix ring $M_n(D)$ among them. The unitisation $A^+$ adjoins an identity, with $A$ a two-sided ideal of $A^+$ and $A^+/A \cong R$. The non-examples — $L^1(G)$ for non-discrete $G$, the compact operators on an infinite-dimensional space, $C_0(X)$ for non-compact $X$, the trace-class and Hilbert–Schmidt ideals, and a proper ideal of a unital algebra — each name the failure of the identity axiom, and the analytic ones among them carry an approximate identity in place of the unit.
 
 ## Summary of Notation
 
@@ -137,7 +137,7 @@ A catalogue denotes its objects by name rather than by symbol. The symbols that 
 | $I_n$, $\mathrm{GL}_n(R)$ | The identity matrix and the unit group of $M_n(R)$ |
 | $M_n(D)$, $\mathrm{GL}_n(D)$ | A matrix ring over a division ring and its units |
 | $k[G]$, $\pi$, $I(G)$ | Group algebra, augmentation map, augmentation ideal |
-| $U(\mathfrak{g})$, $T(V)$ | Universal enveloping algebra and tensor algebra |
+| $U(\mathrm{G})$, $T(V)$ | Universal enveloping algebra and tensor algebra |
 | $kQ$, $e_v$ | The path algebra of a quiver, and its length-zero paths |
 | $L^1(G)$, $\delta_e$, $(u_\alpha)$, $P_1$ | The convolution algebra, unital exactly for discrete $G$ with identity $\delta_e$; point mass at $e$, an approximate identity, Reiter's property |
 | $K(H)$, $C_0(X)$, $B(H)$ | The compact operators, non-unital for infinite-dimensional $H$ and simple; functions vanishing at infinity; the bounded operators |

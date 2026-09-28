@@ -14,10 +14,10 @@ $$
 $$
 holds at $\Delta = 1$ and fails at every other weight, and it was verified on a superposition of two smooth test fields to a relative accuracy of $10^{-16}$ at the correct weight, with a residual of order unity at the wrong one. Second, the **massless limit**. The mass enters the equation as the single scale in $\Box - \mu^2$, and the limit $\mu\to0$ is the limit in which the conformal weight exists; algebraically it is the limit in which the on-shell symbol becomes a **zero divisor** of the algebra, left multiplication by the on-shell momentum dropping from rank four to rank two. Third, the **breaking**. Improving the stress–energy tensor makes its trace proportional to the mass term, $\Theta^\mu{}_\mu \propto \mu^2\tilde{\Phi}^2$ on shell, the coefficient depending only on the normalisation of the kinetic term — so the trace is the local measure of the conformal symmetry's failure, and it vanishes exactly in the massless limit.
 
-The scope is relativistic and quantum, and one boundary matters. The biquaternion algebra carries the conformal **structure** — the norm form's zero set is the null cone, the algebra inverse composed with parity is the conformal inversion, and the dilations and special conformal transformations are built from it by composition — but it does not carry the conformal **group** as a group of its own multiplications: six of the fifteen generators are algebra elements, the dilation is a non-unit element, and the translations and special conformal transformations are not elements of $\mathbb{B}$ at all. The companion *The Conformal Group in Biquaternionic Form* establishes this boundary in detail, and this article uses its results rather than restating them. What is established here is the invariance of the *field equations and their solutions*, which is a statement about spacetime symmetry and does not require the group to sit inside the algebra. Twistor theory and the twistor realisation of the conformal group belong to the companion articles on twistors.
+The scope is relativistic and quantum, and one boundary matters. The biquaternion algebra carries the conformal **structure** — the biquaternion norm's zero set is the null cone, the algebra inverse composed with parity is the conformal inversion, and the dilations and special conformal transformations are built from it by composition — but it does not carry the conformal **group** as a group of its own multiplications: six of the fifteen generators are algebra elements, the dilation is a non-unit element, and the translations and special conformal transformations are not elements of $\mathbb{B}$ at all. The companion *The Conformal Group in Biquaternionic Form* establishes this boundary in detail, and this article uses its results rather than restating them. What is established here is the invariance of the *field equations and their solutions*, which is a statement about spacetime symmetry and does not require the group to sit inside the algebra. Twistor theory and the twistor realisation of the conformal group belong to the companion articles on twistors.
 
 - Companion article *The Conformal Group in Biquaternionic Form*, for the conformal algebra, the inversion, the special conformal transformations, and the boundary between the algebra and the group.
-- Companion article *Conventions in the Biquaternion Universe*, for the norm form, the d'Alembertian, the mass term, and the $ict$ conventions.
+- Companion article *Conventions in the Biquaternion Universe*, for the biquaternion norm, the d'Alembertian, the mass term, and the $ict$ conventions.
 - Companion article *The Klein–Gordon Equation in Biquaternionic Form*, for the massive equation whose massless limit is taken here.
 - Companion article *Maxwell's Equations in the Biquaternionic Formulation*, for the conformally invariant massless vector field.
 - Companion article *Canonical Quantization of the Biquaternion Maxwell Field*, for the quantised massless field and its trace-free stress tensor.
@@ -52,13 +52,13 @@ with $x^2 = \eta_{\rho\sigma}x^\rho x^\sigma$. The conformal group contains the 
 
 ### What the algebra carries, and what it does not
 
-Six of the fifteen generators — the Lorentz ones — are elements of $\mathbb{B}$: the rotations are $J_k = e_k$ and the boosts $K_k = ie_k$, and the Lorentz group acts by $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^\dagger$. The dilation is realised by a non-unit element $\sqrt{\lambda}\,e_0$, which scales the norm form without preserving it. The translations and the special conformal transformations are not elements of the algebra and are not linear on $\mathbb{M}_-$: the special conformal transformation is a fractional map obtained by sandwiching a translation between two inversions, and the inversion itself is the algebra inverse composed with parity,
+Six of the fifteen generators — the Lorentz ones — are elements of $\mathbb{B}$: the rotations are $J_k = e_k$ and the boosts $K_k = ie_k$, and the Lorentz group acts by $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^\dagger$. The dilation is realised by a non-unit element $\sqrt{\lambda}\,e_0$, which scales the biquaternion norm without preserving it. The translations and the special conformal transformations are not elements of the algebra and are not linear on $\mathbb{M}_-$: the special conformal transformation is a fractional map obtained by sandwiching a translation between two inversions, and the inversion itself is the algebra inverse composed with parity,
 $$
 I(\tilde{Q}) = \overline{\tilde{Q}}^{-1} = \frac{\bar{\tilde{Q}}}{N(\tilde{Q})} ,
 \qquad
 N\bigl(I(\tilde{Q})\bigr) = \frac{1}{N(\tilde{Q})} .
 $$
-The companion establishes the count precisely: six generators inside, one expressible, eight outside. The invariance derived below is therefore a statement about the field equations under conformal transformations of spacetime, not a statement that the conformal group is a subgroup of the algebra's own multiplication group, and the two must not be conflated. The reason the framework is nevertheless the natural setting is that the **invariant object** of the conformal group is native to the algebra: it is the zero set of the norm form, and the inversion is built from the norm form by division.
+The companion establishes the count precisely: six generators inside, one expressible, eight outside. The invariance derived below is therefore a statement about the field equations under conformal transformations of spacetime, not a statement that the conformal group is a subgroup of the algebra's own multiplication group, and the two must not be conflated. The reason the framework is nevertheless the natural setting is that the **invariant object** of the conformal group is native to the algebra: it is the zero set of the biquaternion norm, and the inversion is built from the biquaternion norm by division.
 
 ### Coordinates, signature, and the two norms
 
@@ -127,7 +127,7 @@ so that the conformal factor is the reciprocal of the finite map's denominator; 
 $$
 \mathcal{K}_\mu = 2x_\mu x^\nu\partial_\nu - x^2\partial_\mu ,
 $$
-the standard expression; the point for this article is that the four extra symmetries are generated by composition of the one algebraic operation the framework does carry, the inversion built from the norm form. The conformal structure is thus native to the algebra even though the group is not a subgroup of its multiplication group.
+the standard expression; the point for this article is that the four extra symmetries are generated by composition of the one algebraic operation the framework does carry, the inversion built from the biquaternion norm. The conformal structure is thus native to the algebra even though the group is not a subgroup of its multiplication group.
 
 ### The finite transformations and the compactification
 
@@ -165,7 +165,7 @@ because $\Box_{\tilde{Q}} = \lambda^{-2}\Box_{\lambda^{-1}\tilde{Q}}$ and the ma
 
 ### The symbol on the light cone and the rank drop
 
-On shell the four-momentum is a biquaternion $\tilde{K} = i(\omega/c)e_0 + \mathbf{k}$, and the symbol of the operator is its norm form,
+On shell the four-momentum is a biquaternion $\tilde{K} = i(\omega/c)e_0 + \mathbf{k}$, and the symbol of the operator is its biquaternion norm,
 $$
 \text{massive:}\quad N(\tilde{K}) = -\mu^2 \neq 0 ,
 \qquad\qquad
@@ -254,19 +254,19 @@ The symmetry statement has a worked consequence in the article that follows this
 
 ## The Biquaternion Structure of the Conformal Statement
 
-Collecting the algebraic content, the conformal statement of the framework has four parts, and each is a statement about the norm form.
+Collecting the algebraic content, the conformal statement of the framework has four parts, and each is a statement about the biquaternion norm.
 
-The **weight** is the exponent of the norm form in the transformation law: a field of weight $\Delta$ transforms by $N(\tilde{Q})^{-\Delta}$ under the inversion, and the massless scalar's weight is $\Delta = 1$, forced by the operator identity verified above. The weight is not a new datum; it is read off the behaviour of $\Box$ under division.
+The **weight** is the exponent of the biquaternion norm in the transformation law: a field of weight $\Delta$ transforms by $N(\tilde{Q})^{-\Delta}$ under the inversion, and the massless scalar's weight is $\Delta = 1$, forced by the operator identity verified above. The weight is not a new datum; it is read off the behaviour of $\Box$ under division.
 
-The **inversion** is the norm form's division, $I(\tilde{Q}) = \bar{\tilde{Q}}/N(\tilde{Q})$, with the parity correction that makes it the standard map. It is the one conformal operation that the algebra carries as an algebraic operation, and the dilation and the special conformal transformations are built from it by composition with the translation and the scaling.
+The **inversion** is the biquaternion norm's division, $I(\tilde{Q}) = \bar{\tilde{Q}}/N(\tilde{Q})$, with the parity correction that makes it the standard map. It is the one conformal operation that the algebra carries as an algebraic operation, and the dilation and the special conformal transformations are built from it by composition with the translation and the scaling.
 
-The **null cone** is the norm form's zero set. All conformal transformations preserve it and only it; it is the single invariant object of the group that is native to the algebra, and the massless limit is the limit in which the on-shell momentum lies on it and becomes a zero divisor.
+The **null cone** is the biquaternion norm's zero set. All conformal transformations preserve it and only it; it is the single invariant object of the group that is native to the algebra, and the massless limit is the limit in which the on-shell momentum lies on it and becomes a zero divisor.
 
-The **breaking** is the mass term, and it is measured by the trace, $\Theta^\mu{}_\mu = 2\mu^2\phi^2$ on shell in the framework's normalisation of the kinetic term. The mass is the norm form's value on the four-momentum, $N(\tilde{P}) = -m^2c^2$, and the same norm that the particle action normalises to $-c^2$ is the quantity whose nonvanishing breaks the symmetry. Conformal invariance and the mass shell are therefore two readings of one norm form: on the cone it is zero and the symmetry holds, off the cone it is the mass and the symmetry fails.
+The **breaking** is the mass term, and it is measured by the trace, $\Theta^\mu{}_\mu = 2\mu^2\phi^2$ on shell in the framework's normalisation of the kinetic term. The mass is the biquaternion norm's value on the four-momentum, $N(\tilde{P}) = -m^2c^2$, and the same norm that the particle action normalises to $-c^2$ is the quantity whose nonvanishing breaks the symmetry. Conformal invariance and the mass shell are therefore two readings of one biquaternion norm: on the cone it is zero and the symmetry holds, off the cone it is the mass and the symmetry fails.
 
 ## Summary
 
-The massless relativistic field of the framework has the conformal symmetry: the fifteen-parameter group $SO(2,4)$, double-covered by $SU(2,2)$, generated by the Lorentz generators, the translations, the dilation, and the special conformal generators $\mathcal{K}_\mu$, is a symmetry of the massless wave equation and of the massless Maxwell field, and is broken by the mass term alone. The algebra carries the conformal structure — the null cone as the norm form's zero set, the inversion as $I(\tilde{Q}) = \bar{\tilde{Q}}/N(\tilde{Q})$ — but not the group; six of the fifteen generators are algebra elements, and the companion article on the conformal group establishes the count.
+The massless relativistic field of the framework has the conformal symmetry: the fifteen-parameter group $SO(2,4)$, double-covered by $SU(2,2)$, generated by the Lorentz generators, the translations, the dilation, and the special conformal generators $\mathcal{K}_\mu$, is a symmetry of the massless wave equation and of the massless Maxwell field, and is broken by the mass term alone. The algebra carries the conformal structure — the null cone as the biquaternion norm's zero set, the inversion as $I(\tilde{Q}) = \bar{\tilde{Q}}/N(\tilde{Q})$ — but not the group; six of the fifteen generators are algebra elements, and the companion article on the conformal group establishes the count.
 
 The massless scalar field transforms with weight $\Delta = 1$,
 $$

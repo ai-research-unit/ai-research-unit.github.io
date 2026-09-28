@@ -37,7 +37,7 @@ $$
 
 with a constant depending on $k,n$ but not on $R$ or $f$; in particular the frequency localisation allows any derivative to be traded for a power of the frequency and any higher $L^r$ norm to be traded for the $L^p$ norm at the cost of $R^{n(1/p-1/r)}$.
 
-*Proof (sketch).* One writes $f=\phi*f$ for a suitable Schwartz function $\phi$ with $\hat\phi=1$ on the support of $\hat f$, applies the derivative to the convolution kernel and uses Young's inequality, together with the scaling estimate $\|\phi_R\|_{L^r}\le CR^{n(1/p-1/r)}\|\phi_R\|_{L^p}$ for the rescaled kernel $\phi_R$. $\square$
+*Proof (sketch).* One writes $f=\phi*f$ for a suitable Schwartz function $\phi$ with $\hat\phi=1$ on the support of $\hat f$, applies the derivative to the convolution kernel and uses Young's inequality, together with the scaling estimate $\|\phi_R\|_{L^r}\le CR^{n(1/p-1/r)}\|\phi_R\|_{L^p}$ for the rescaled kernel $\phi_R$.
 
 Bernstein's inequalities are the analytic engine of the whole theory: they convert the size of a frequency-localised piece into the size of its derivatives, and they show that the smoothness $s$ must be measured by the factor $2^{js}$ attached to the block at frequency $2^j$.
 
@@ -55,7 +55,7 @@ with the usual modification $\sup_j$ when $q=\infty$ and, in the $F$-case, the m
 
 **Theorem (independence of the partition).** The spaces $B^s_{p,q}$ and $F^s_{p,q}$ do not depend on the choice of the dyadic partition of unity, and the norms obtained from two different partitions are equivalent.
 
-*Proof (sketch).* If $(\psi_k)$ is another partition, then $\varphi_j(D)f=\sum_k\varphi_j(D)\psi_k(D)f$, and the sum is over the finitely many $k$ with $2^k$ comparable to $2^j$, by the support condition; the kernel of $\varphi_j(D)\psi_k(D)$ is a Schwartz function whose $L^1$ norm is controlled uniformly, so Young's inequality bounds each block of the first partition by the corresponding block of the second, and the two-sided estimate follows by symmetry and by the triangle inequality in the appropriate mixed norm. $\square$
+*Proof (sketch).* If $(\psi_k)$ is another partition, then $\varphi_j(D)f=\sum_k\varphi_j(D)\psi_k(D)f$, and the sum is over the finitely many $k$ with $2^k$ comparable to $2^j$, by the support condition; the kernel of $\varphi_j(D)\psi_k(D)$ is a Schwartz function whose $L^1$ norm is controlled uniformly, so Young's inequality bounds each block of the first partition by the corresponding block of the second, and the two-sided estimate follows by symmetry and by the triangle inequality in the appropriate mixed norm.
 
 **Proposition (elementary properties).** Let $s \in\mathbb{R}$ and $0<p,q\le\infty$.
 
@@ -75,7 +75,7 @@ so the Besov scale brackets the Triebel–Lizorkin scale and the two coincide at
 
 (v) The Schwartz class $\mathcal S$ is dense in $B^s_{p,q}$ and in $F^s_{p,q}$ when $p,q<\infty$, the dual of $B^s_{p,q}$ is $B^{-s}_{p',q'}$ for $1\le p,q<\infty$, and the dual of $F^s_{p,q}$ is $F^{-s}_{p',q'}$ for $1<p<\infty$ and $1\le q<\infty$, where $1/p+1/p'=1$ and $1/q+1/q'=1$.
 
-*Proof (sketch).* Completeness is the completeness of the mixed sequence and function spaces, the map $f\mapsto(\varphi_j(D)f)$ being an isometry into a closed subspace for the Besov scale; the continuous inclusions in (ii) and (iii) are consequences of the embeddings of the sequence spaces $\ell^{q_1}\hookrightarrow\ell^{q_2}$, Minkowski's integral inequality and the support condition; the lifting (iv) is the comparison of the multipliers $(1+|\xi|^2)^{-\sigma/2}$ with $2^{-j\sigma}$ on the support of $\varphi_j$; and (v) is the standard duality, obtained from the duality of the underlying sequence spaces and the density of $\mathcal S$. $\square$
+*Proof (sketch).* Completeness is the completeness of the mixed sequence and function spaces, the map $f\mapsto(\varphi_j(D)f)$ being an isometry into a closed subspace for the Besov scale; the continuous inclusions in (ii) and (iii) are consequences of the embeddings of the sequence spaces $\ell^{q_1}\hookrightarrow\ell^{q_2}$, Minkowski's integral inequality and the support condition; the lifting (iv) is the comparison of the multipliers $(1+|\xi|^2)^{-\sigma/2}$ with $2^{-j\sigma}$ on the support of $\varphi_j$; and (v) is the standard duality, obtained from the duality of the underlying sequence spaces and the density of $\mathcal S$.
 
 ## Comparison with the Classical Spaces
 
@@ -98,7 +98,7 @@ and for $k \in\mathbb{N}_0$ and $1\le p\le\infty$ the **Sobolev space** $W^{k,p}
 (v) $F^0_{1,2}=H^1_{\mathrm{Har}}$, the real Hardy space, and $F^0_{\infty,2}=\mathrm{BMO}$;
 (vi) $F^0_{p,2}=L^p$ for $1<p<\infty$.
 
-*Proof (sketch).* For (i) one uses the multiplier theorem of *Fourier Analysis on Euclidean Spaces* to compare the norm $\bigl\|(\sum_j|\varphi_j(D)f|^2)^{1/2}\bigr\|_{L^p}$ with $\|(1-\Delta)^{s/2}f\|_{L^p}$, the two multipliers being comparable on the support of each block; (ii) adds Bernstein's inequality to compare the $L^p$ norms of the derivatives; (iii) is the case $p=q=2$ of (i) and the Plancherel theorem; (iv) is the classical characterisation of the Hölder–Zygmund spaces by the decay of the Littlewood–Paley blocks; (v) is the atomic description of the Hardy space and the John–Nirenberg inequality for $\mathrm{BMO}$; and (vi) is the case $s=0$ of (i). These identifications are standard and are cited below. $\square$
+*Proof (sketch).* For (i) one uses the multiplier theorem of *Fourier Analysis on Euclidean Spaces* to compare the norm $\bigl\|(\sum_j|\varphi_j(D)f|^2)^{1/2}\bigr\|_{L^p}$ with $\|(1-\Delta)^{s/2}f\|_{L^p}$, the two multipliers being comparable on the support of each block; (ii) adds Bernstein's inequality to compare the $L^p$ norms of the derivatives; (iii) is the case $p=q=2$ of (i) and the Plancherel theorem; (iv) is the classical characterisation of the Hölder–Zygmund spaces by the decay of the Littlewood–Paley blocks; (v) is the atomic description of the Hardy space and the John–Nirenberg inequality for $\mathrm{BMO}$; and (vi) is the case $s=0$ of (i). These identifications are standard and are cited below.
 
 **Corollary (the classical scales as one-parameter families).** The Sobolev spaces, the Hölder–Zygmund spaces, the Hardy space and $\mathrm{BMO}$ are all members of the two scales, and the scales therefore carry the classical spaces with their interpolation and their embeddings as special cases; the spaces $W^{k,p}$ and $H^k$ are the cases $q=2$ of the Triebel–Lizorkin family, and the embeddings proved there follow from the general embeddings of the next section.
 
@@ -112,7 +112,7 @@ $$
 
 with the $\sup$ modification for $q=\infty$; the quantity is an equivalent quasi-norm. The classical Besov definition by the modulus of continuity is therefore the same scale, and for $p=q=\infty$ the characterisation reduces to the Hölder condition of order $s$.
 
-*Proof (sketch).* The equivalence of the difference and the frequency descriptions is the standard Littlewood–Paley–Stein argument: the difference $\Delta_h^k$ annihilates the frequencies below $|h|^{-1}$, so the integral over $t\approx2^{-j}$ sees exactly the block $\varphi_j(D)f$, and the two sides are comparable by Bernstein's inequality in both directions. $\square$
+*Proof (sketch).* The equivalence of the difference and the frequency descriptions is the standard Littlewood–Paley–Stein argument: the difference $\Delta_h^k$ annihilates the frequencies below $|h|^{-1}$, so the integral over $t\approx2^{-j}$ sees exactly the block $\varphi_j(D)f$, and the two sides are comparable by Bernstein's inequality in both directions.
 
 **Theorem (heat-kernel characterisation).** Let $s>0$ and let $e^{t\Delta}$ be the heat semigroup. Then $f \in B^s_{p,q}$ if and only if
 
@@ -136,7 +136,7 @@ The heat-kernel description is the form in which the scale is used for the regul
 
 (iii) On a bounded domain with the cone condition the strict inequality $s-\frac np>s'-\frac{n}{p'}$ gives a compact embedding $B^s_{p,q}(\Omega)\hookrightarrow B^{s'}_{p',q}(\Omega)$ (Rellich–Kondrachov), and the same holds when $s-\frac np=s'-\frac{n}{p'}$ with $p<p'$; the compactness fails on $\mathbb{R}^n$ itself, where the scaling of a fixed function makes the embedding non-compact. In particular, on a bounded domain $B^s_{p,q}\hookrightarrow\hookrightarrow B^{s'}_{p,q}$ for every $s>s'$ and every $q$, the gain $s-s'$ being strictly positive, and $B^s_{p,q}\hookrightarrow\hookrightarrow\Lambda^{s-n/p}$ for $s>\frac np$.
 
-*Proof (sketch).* By Bernstein's inequality each block $\varphi_j(D)f$ satisfies $\|\varphi_j(D)f\|_{L^{p'}}\le C2^{jn(1/p-1/p')}\|\varphi_j(D)f\|_{L^p}$, and the gain $2^{j(s-s')}$ in the embedding is exactly the factor $2^{jn(1/p-1/p')}$ when $s-\frac np=s'-\frac{n}{p'}$; the sum is then dominated by the Besov norm, giving (i), and (ii) is the case $p'=\infty$. For (iii) one splits the sum into the finitely many low frequencies, which are compact by the Arzelà–Ascoli theorem on a bounded domain, and the tail, whose norm is small uniformly on the unit ball, the strict gain in the smoothness making the tail small and the boundedness of the domain making the low frequencies compact. $\square$
+*Proof (sketch).* By Bernstein's inequality each block $\varphi_j(D)f$ satisfies $\|\varphi_j(D)f\|_{L^{p'}}\le C2^{jn(1/p-1/p')}\|\varphi_j(D)f\|_{L^p}$, and the gain $2^{j(s-s')}$ in the embedding is exactly the factor $2^{jn(1/p-1/p')}$ when $s-\frac np=s'-\frac{n}{p'}$; the sum is then dominated by the Besov norm, giving (i), and (ii) is the case $p'=\infty$. For (iii) one splits the sum into the finitely many low frequencies, which are compact by the Arzelà–Ascoli theorem on a bounded domain, and the tail, whose norm is small uniformly on the unit ball, the strict gain in the smoothness making the tail small and the boundedness of the domain making the low frequencies compact.
 
 **Corollary (comparison with the Sobolev embeddings).** For $1<p<\infty$ the embedding $W^{k,p}\hookrightarrow L^{p'}$ with $\frac1{p'}=\frac1p-\frac kn$, and its compact form when $p'<\infty$, are the case $q=2$ of the theorem, by the identification $W^{k,p}=F^k_{p,2}$; the embedding $W^{k,p}\hookrightarrow\Lambda^{k-n/p}$ into the Hölder–Zygmund class of exponent $k-n/p$ is the corresponding statement, in the Zygmund convention when $k-\frac np$ is an integer. These are the Sobolev and Rellich–Kondrachov theorems, recovered here from the scale.
 
@@ -150,7 +150,7 @@ $$
 
 and the maps are surjective, with a bounded right inverse (an extension operator) in each case; the loss $\frac1p$ is sharp.
 
-*Proof (sketch).* The Fourier description in the normal variable turns the trace into the restriction of a frequency-localised function, and the factor $2^{-j/p}$ lost in the normal variable is exactly the exponent shift; the extension is obtained by extending each block separately with a Schwartz cutoff. The sharpness is shown by testing on a function that concentrates at the boundary. $\square$
+*Proof (sketch).* The Fourier description in the normal variable turns the trace into the restriction of a frequency-localised function, and the factor $2^{-j/p}$ lost in the normal variable is exactly the exponent shift; the extension is obtained by extending each block separately with a Schwartz cutoff. The sharpness is shown by testing on a function that concentrates at the boundary.
 
 The theorem is the model of the trace theorems of the scale; it shows that the loss of $\frac1p$ derivatives is exactly the price of restriction to a hyperplane, and it is the analytical basis of the boundary-value problems in the scale, whose theory belongs to both. The spaces on a domain $\Omega$ are defined by restriction, $B^s_{p,q}(\Omega)=\{f|_\Omega:f \in B^s_{p,q}(\mathbb{R}^n)\}$ with the quotient norm, and the extension and trace theorems identify them with the intrinsic definitions for the smooth domains.
 
@@ -173,7 +173,7 @@ $$
 
 so that the Triebel–Lizorkin norm is the $L^p$ norm of the maximal function of the coefficients and the Besov norm is their mixed norm. The molecular decompositions hold with molecules in place of atoms and the same coefficient norms.
 
-*Proof (sketch).* The atoms are built from the Littlewood–Paley blocks: for a dyadic cube $Q$ of side $2^{-j}$ one takes the product of $\varphi_j(D)f$ with a cutoff adapted to $Q$ and corrects the moments, which is possible because $K>s$; the converse is the estimate of each atom in the scale by Bernstein's inequality and the cancellation (the cancellation is what makes the estimate sharp in $s$). The computations are the standard ones, cited below. $\square$
+*Proof (sketch).* The atoms are built from the Littlewood–Paley blocks: for a dyadic cube $Q$ of side $2^{-j}$ one takes the product of $\varphi_j(D)f$ with a cutoff adapted to $Q$ and corrects the moments, which is possible because $K>s$; the converse is the estimate of each atom in the scale by Bernstein's inequality and the cancellation (the cancellation is what makes the estimate sharp in $s$). The computations are the standard ones, cited below.
 
 The atomic decomposition is the bridge from the Fourier description to the real-variable description: it shows that membership in the scale is a condition on a single expansion in localised, oscillating pieces, and it is the form in which the spaces are used in harmonic analysis and in the theory of singular integrals of *Fourier Analysis on Euclidean Spaces*. The wavelet characterisations are the orthonormal version of the same expansion, with $\lambda_{j,\nu}=\langle f,\psi_{j,\nu}\rangle$ for a wavelet basis $\{\psi_{j,\nu}\}$, and the coefficient norm is then exactly the norm of the scale.
 
@@ -190,7 +190,7 @@ $$
 
 with equivalent quasi-norms, the real method being taken in the sense of *Interpolation Theory*; the real interpolation of the two scales is therefore the Besov scale, whatever the originating family.
 
-*Proof (sketch).* The $K$-functional of the pair is computed blockwise: the frequency blocks of the two spaces are Sobolev-type spaces of a single scale, and the $K$-functional of a piece $\varphi_j(D)f$ is comparable to $\min(2^{js_0},2^{js_1})$-weighted versions of its norm, so the $K$-functional of $f$ is equivalent to a mixed norm in the blocks; the $\theta,q$ norm then produces the Besov norm with exponent $q$, and the equality of the two families follows from the comparison of the scales. The details are the standard ones of the theory. $\square$
+*Proof (sketch).* The $K$-functional of the pair is computed blockwise: the frequency blocks of the two spaces are Sobolev-type spaces of a single scale, and the $K$-functional of a piece $\varphi_j(D)f$ is comparable to $\min(2^{js_0},2^{js_1})$-weighted versions of its norm, so the $K$-functional of $f$ is equivalent to a mixed norm in the blocks; the $\theta,q$ norm then produces the Besov norm with exponent $q$, and the equality of the two families follows from the comparison of the scales. The details are the standard ones of the theory.
 
 **Theorem (complex interpolation and the interpolation of the Sobolev scale).** Let $s_0 \neq s_1$, $0<p,q\le\infty$ and $\theta \in(0,1)$, and put $s=(1-\theta)s_0+\theta s_1$. Then
 
@@ -201,7 +201,7 @@ $$
 
 the complex method preserving the family and the fine index; in particular the complex interpolation of the Sobolev spaces $H^{s_0}_p$ and $H^{s_1}_p$ is $H^s_p$, the classical interpolation theorem of the Sobolev scale.
 
-*Proof (sketch).* The complex method is applied blockwise, and the $q$-summation is preserved because the interpolation of the sequence spaces $\ell^q$ with the same $q$ is again $\ell^q$; for the $F$-case one uses the description by the maximal function of the blocks and the interpolation of the mixed norm. $\square$
+*Proof (sketch).* The complex method is applied blockwise, and the $q$-summation is preserved because the interpolation of the sequence spaces $\ell^q$ with the same $q$ is again $\ell^q$; for the $F$-case one uses the description by the maximal function of the blocks and the interpolation of the mixed norm.
 
 The two theorems are the reason the scale is the natural one for interpolation: the real method moves among the Besov spaces and closes the Sobolev scale under interpolation, while the complex method preserves the fine index; the classic theorems of *Interpolation Theory* are the special cases $q=2$ of the pair.
 
@@ -226,7 +226,7 @@ $$
 
 and the same inequality holds for the Triebel–Lizorkin scale with $B$ replaced by $F$ throughout; for $s>\frac np$ the product is bounded in the space itself, which is then an algebra.
 
-*Proof (sketch).* The paraproduct is estimated term by term: in $T_fg$ the frequency of the product is that of $f$, so the derivative of order $s$ is carried by $f$ and $g$ enters only through its $L^{p_2}$ norm; in $R(f,g)$ the frequencies are comparable, so Bernstein's inequality distributes the smoothness; and the mixed norms are estimated by Hölder and Young. $\square$
+*Proof (sketch).* The paraproduct is estimated term by term: in $T_fg$ the frequency of the product is that of $f$, so the derivative of order $s$ is carried by $f$ and $g$ enters only through its $L^{p_2}$ norm; in $R(f,g)$ the frequencies are comparable, so Bernstein's inequality distributes the smoothness; and the mixed norms are estimated by Hölder and Young.
 
 The paraproduct is the standard tool of the nonlinear theory: the product estimates in the Besov scale are exactly what the fixed-point arguments for quasilinear and nonlinear equations need, and the borderline cases $s=\frac np$ are handled by the refined estimates of the same decomposition. The applications belong .
 

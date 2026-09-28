@@ -3,11 +3,11 @@
 
 ## Introduction
 
-This article studies the ideal structure of the dual-number algebra $\mathbb{D}'_R = R[\varepsilon]/(\varepsilon^2)$ and the decomposition of the algebra relative to its distinguished submodules. The base article *Dual-Numbers Algebra* fixed the algebra, its two conjugations, the maximal ideal $\mathfrak{m} = (\varepsilon)$ and the two submodules $R_{\mathbb{D}'}$ and $\varepsilon R_{\mathbb{D}'}$; the article *Dual-Numbers Norm and Invertibility* fixed the norm form and the group of units. The goal here is to determine the ideals, to explain why the algebra is local and not semisimple, and to describe the decomposition that stands in for the Peirce decomposition of a semisimple algebra.
+This article studies the ideal structure of the dual-number algebra $\mathbb{D}'_R = R[\varepsilon]/(\varepsilon^2)$ and the decomposition of the algebra relative to its distinguished submodules. The base article *Dual-Numbers Algebra* fixed the algebra, its two conjugations, the maximal ideal $\mathrm{M} = (\varepsilon)$ and the two submodules $R_{\mathbb{D}'}$ and $\varepsilon R_{\mathbb{D}'}$; the article *Dual-Numbers Norm and Invertibility* fixed the norm and the group of units. The goal here is to determine the ideals, to explain why the algebra is local and not semisimple, and to describe the decomposition that stands in for the Peirce decomposition of a semisimple algebra.
 
-The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. Throughout, $R$ is a commutative ring with identity in which $2$ is invertible, and the algebra is $\mathbb{D}'_R$. The classification of the ideals into the chain $0 \subset \mathfrak{m} \subset \mathbb{D}'$ is proved for a field $k$ and then extended to a general commutative ring by the pair description $I \oplus J\varepsilon$ with $I \subseteq J$; the geometric specialisation is $R = \mathbb{R}$. A general dual number is $Z = a + \varepsilon b$ with $a = \operatorname{Re} Z$ and $b = \operatorname{Inf} Z$, dual conjugation is $\bar{Z} = a - \varepsilon b$, the norm form is $N(Z) = a^2$, and $\mathfrak{m} = (\varepsilon)$ is the maximal ideal. The Biquaternions category is the structural model; its corresponding article is *Biquaternion Ideals and Peirce Decomposition*, and the comparison at the end records where the two structures diverge.
+The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. Throughout, $R$ is a commutative ring with identity in which $2$ is invertible, and the algebra is $\mathbb{D}'_R$. The classification of the ideals into the chain $0 \subset \mathrm{M} \subset \mathbb{D}'$ is proved for a field $k$ and then extended to a general commutative ring by the pair description $I \oplus J\varepsilon$ with $I \subseteq J$; the geometric specialisation is $R = \mathbb{R}$. A general dual number is $Z = a + \varepsilon b$ with $a = \operatorname{Re} Z$ and $b = \operatorname{Inf} Z$, dual conjugation is $\bar{Z} = a - \varepsilon b$, the norm $N$ of *Dual-Numbers Norm and Invertibility* reads $N(Z) = a^2$, and $\mathrm{M} = (\varepsilon)$ is the maximal ideal. The Biquaternions category is the structural model; its corresponding article is *Biquaternion Ideals and Peirce Decomposition*, and the comparison at the end records where the two structures diverge.
 
-The scope boundaries are these. This article owns the ideals and the Peirce-type decomposition. The norm form and the unit criterion belong to *Dual-Numbers Norm and Invertibility*. The classification of the zero divisors and their distribution belong to *Dual-Numbers Zero Divisors*; the maximal ideal appears in both articles, but here it is treated as an ideal and there as the zero-divisor set.
+The scope boundaries are these. This article owns the ideals and the Peirce-type decomposition. The norm and the unit criterion belong to *Dual-Numbers Norm and Invertibility*. The classification of the zero divisors and their distribution belong to *Dual-Numbers Zero Divisors*; the maximal ideal appears in both articles, but here it is treated as an ideal and there as the zero-divisor set.
 
 ## Ideals in a Ring
 
@@ -21,9 +21,9 @@ In a commutative ring the three notions coincide, and every ideal is two-sided. 
 
 **Proposition.** If $I$ is an ideal of a commutative ring $A$, the quotient $A/I$ carries a unique ring structure making the projection $A \to A/I$ a homomorphism, and $A/I$ is a field if and only if $I$ is maximal, a domain if and only if $I$ is prime.
 
-**Proof.** Standard; the operations on cosets are well defined precisely because $I$ absorbs multiplication. $\square$
+**Proof.** Standard; the operations on cosets are well defined precisely because $I$ absorbs multiplication.
 
-The quotient $\mathbb{D}'_R/\mathfrak{m}$ is the ring $R$ itself, since $\mathfrak{m} = (\varepsilon)$ and $R[\varepsilon]/(\varepsilon^2) / (\varepsilon) \cong R$.
+The quotient $\mathbb{D}'_R/\mathrm{M}$ is the ring $R$ itself, since $\mathrm{M} = (\varepsilon)$ and $R[\varepsilon]/(\varepsilon^2) / (\varepsilon) \cong R$.
 
 ### Ideals of a Unital Algebra and the Base Field
 
@@ -36,14 +36,14 @@ The quotient $\mathbb{D}'_R/\mathfrak{m}$ is the ring $R$ itself, since $\mathfr
 **Theorem.** Let $k$ be a field. The ideals of $\mathbb{D}'_k = k[\varepsilon]/(\varepsilon^2)$ are exactly
 
 $$
-0 \;\subset\; \mathfrak{m} = (\varepsilon) \;\subset\; \mathbb{D}'_k,
+0 \;\subset\; \mathrm{M} = (\varepsilon) \;\subset\; \mathbb{D}'_k,
 $$
 
-and there are no others. The maximal ideal $\mathfrak{m}$ is the unique nonzero proper ideal, hence simultaneously the unique maximal ideal and the unique minimal nonzero ideal.
+and there are no others. The maximal ideal $\mathrm{M}$ is the unique nonzero proper ideal, hence simultaneously the unique maximal ideal and the unique minimal nonzero ideal.
 
-**Proof.** Let $I \neq 0$ be an ideal and let $0 \neq Z = a + \varepsilon b \in I$. If $a \neq 0$ then $a$ is a unit of the field $k$, so $Z$ is a unit by the invertibility criterion of *Dual-Numbers Norm and Invertibility*, and $I = \mathbb{D}'_k$. If $a = 0$ then $Z = \varepsilon b$ with $b \neq 0$, and since $b$ is a unit the ideal generated by $Z$ is $(\varepsilon) = \mathfrak{m}$, so $I \supseteq \mathfrak{m}$. The ideal $\mathfrak{m}$ is maximal because $\mathbb{D}'_k/\mathfrak{m} \cong k$ is a field, so the only ideal containing $\mathfrak{m}$ is $\mathfrak{m}$ itself or the whole ring. Hence every nonzero proper ideal is $\mathfrak{m}$. $\square$
+**Proof.** Let $I \neq 0$ be an ideal and let $0 \neq Z = a + \varepsilon b \in I$. If $a \neq 0$ then $a$ is a unit of the field $k$, so $Z$ is a unit by the invertibility criterion of *Dual-Numbers Norm and Invertibility*, and $I = \mathbb{D}'_k$. If $a = 0$ then $Z = \varepsilon b$ with $b \neq 0$, and since $b$ is a unit the ideal generated by $Z$ is $(\varepsilon) = \mathrm{M}$, so $I \supseteq \mathrm{M}$. The ideal $\mathrm{M}$ is maximal because $\mathbb{D}'_k/\mathrm{M} \cong k$ is a field, so the only ideal containing $\mathrm{M}$ is $\mathrm{M}$ itself or the whole ring. Hence every nonzero proper ideal is $\mathrm{M}$.
 
-**Corollary.** Over a field, $\mathbb{D}'_k$ is a **local ring**: it has exactly one maximal ideal, namely $\mathfrak{m}$, and the residue field is $\mathbb{D}'_k/\mathfrak{m} \cong k$.
+**Corollary.** Over a field, $\mathbb{D}'_k$ is a **local ring**: it has exactly one maximal ideal, namely $\mathrm{M}$, and the residue field is $\mathbb{D}'_k/\mathrm{M} \cong k$.
 
 **Theorem (general base).** Let $R$ be a commutative ring. The ideals of $\mathbb{D}'_R = R[\varepsilon]/(\varepsilon^2)$ are exactly the pairs $I \subseteq J$ of ideals of $R$, realized as
 
@@ -51,25 +51,25 @@ $$
 I \oplus J\varepsilon = \{a + \varepsilon b : a \in I,\; b \in J\}.
 $$
 
-The ideal lattice of $\mathbb{D}'_R$ is therefore the three-element chain $0 \subset \mathfrak{m} \subset \mathbb{D}'_R$ if and only if $R$ is a field, and $\mathbb{D}'_R$ is local if and only if $R$ is local; in the local case the unique maximal ideal is $\mathfrak{p} \oplus R\varepsilon = \mathfrak{p} + \mathfrak{m}$ for the maximal ideal $\mathfrak{p}$ of $R$.
+The ideal lattice of $\mathbb{D}'_R$ is therefore the three-element chain $0 \subset \mathrm{M} \subset \mathbb{D}'_R$ if and only if $R$ is a field, and $\mathbb{D}'_R$ is local if and only if $R$ is local; in the local case the unique maximal ideal is $\mathrm{P} \oplus R\varepsilon = \mathrm{P} + \mathrm{M}$ for the maximal ideal $\mathrm{P}$ of $R$.
 
-**Proof.** An $R$-submodule of $\mathbb{D}'_R = R \oplus R\varepsilon$ has the form $I \oplus J\varepsilon$ for $R$-submodules $I, J$ of $R$. It is an ideal exactly when $(a + \varepsilon b)(x + y\varepsilon) = ax + (ay + bx)\varepsilon$ lies in $I \oplus J\varepsilon$ for all $a, b \in R$, $x \in I$, $y \in J$, that is, when $RI \subseteq I$, $RJ \subseteq J$ and $RI \subseteq J$: $I$ and $J$ are ideals of $R$ with $I \subseteq J$. For a field the only ideals of $k$ are $0$ and $k$, giving the three pairs $(0,0) = 0$, $(0,k) = \mathfrak{m}$ and $(k,k) = \mathbb{D}'_k$. A pair with $J = R$ and $I = \mathfrak{p}$ maximal has $\mathbb{D}'_R/(\mathfrak{p} \oplus R\varepsilon) \cong R/\mathfrak{p}$, a field, so it is maximal; conversely if $I \oplus J\varepsilon$ is maximal then $J = R$, since $J \neq R$ leaves the nonzero nilpotent $\varepsilon$-part in the quotient, and then $I$ is maximal because $R/I$ is a field. The maximal ideals of $\mathbb{D}'_R$ therefore correspond bijectively to those of $R$, which proves both the locality criterion and the field criterion. $\square$
+**Proof.** An $R$-submodule of $\mathbb{D}'_R = R \oplus R\varepsilon$ has the form $I \oplus J\varepsilon$ for $R$-submodules $I, J$ of $R$. It is an ideal exactly when $(a + \varepsilon b)(x + y\varepsilon) = ax + (ay + bx)\varepsilon$ lies in $I \oplus J\varepsilon$ for all $a, b \in R$, $x \in I$, $y \in J$, that is, when $RI \subseteq I$, $RJ \subseteq J$ and $RI \subseteq J$: $I$ and $J$ are ideals of $R$ with $I \subseteq J$. For a field the only ideals of $k$ are $0$ and $k$, giving the three pairs $(0,0) = 0$, $(0,k) = \mathrm{M}$ and $(k,k) = \mathbb{D}'_k$. A pair with $J = R$ and $I = \mathrm{P}$ maximal has $\mathbb{D}'_R/(\mathrm{P} \oplus R\varepsilon) \cong R/\mathrm{P}$, a field, so it is maximal; conversely if $I \oplus J\varepsilon$ is maximal then $J = R$, since $J \neq R$ leaves the nonzero nilpotent $\varepsilon$-part in the quotient, and then $I$ is maximal because $R/I$ is a field. The maximal ideals of $\mathbb{D}'_R$ therefore correspond bijectively to those of $R$, which proves both the locality criterion and the field criterion.
 
-**Remark.** When $R$ is a domain but not a field, the lattice is still larger than the three-element chain: for a nonzero nonunit $r$ the ideal generated by $r$ is $r\mathbb{D}'_R = (r) \oplus (r)\varepsilon$, distinct from $0$, $\mathfrak{m}$ and $\mathbb{D}'_R$. The three-element chain is thus a field phenomenon, and it is the hypothesis under which the classification above is sharp.
+**Remark.** When $R$ is a domain but not a field, the lattice is still larger than the three-element chain: for a nonzero nonunit $r$ the ideal generated by $r$ is $r\mathbb{D}'_R = (r) \oplus (r)\varepsilon$, distinct from $0$, $\mathrm{M}$ and $\mathbb{D}'_R$. The three-element chain is thus a field phenomenon, and it is the hypothesis under which the classification above is sharp.
 
 ### Nilpotence of the Maximal Ideal
 
 **Theorem.** The maximal ideal is nilpotent of index two:
 
 $$
-\mathfrak{m}^2 = 0, \qquad \mathfrak{m} \neq 0.
+\mathrm{M}^2 = 0, \qquad \mathrm{M} \neq 0.
 $$
 
-Equivalently, $\varepsilon^2 = 0$ and $\varepsilon \neq 0$, and every element of $\mathfrak{m}$ has square zero.
+Equivalently, $\varepsilon^2 = 0$ and $\varepsilon \neq 0$, and every element of $\mathrm{M}$ has square zero.
 
-**Proof.** $\mathfrak{m}^2$ is generated by products $\varepsilon \cdot \varepsilon = 0$, so $\mathfrak{m}^2 = 0$; and $\varepsilon \neq 0$ in $\mathbb{D}'_R$ because $R[\varepsilon]/(\varepsilon^2)$ has $\{1, \varepsilon\}$ as a free basis. For $Z = \varepsilon b$ one has $Z^2 = b^2\varepsilon^2 = 0$. $\square$
+**Proof.** $\mathrm{M}^2$ is generated by products $\varepsilon \cdot \varepsilon = 0$, so $\mathrm{M}^2 = 0$; and $\varepsilon \neq 0$ in $\mathbb{D}'_R$ because $R[\varepsilon]/(\varepsilon^2)$ has $\{1, \varepsilon\}$ as a free basis. For $Z = \varepsilon b$ one has $Z^2 = b^2\varepsilon^2 = 0$.
 
-**Corollary.** Every element of $\mathfrak{m}$ is a nilpotent, and $\mathfrak{m}$ is contained in the Jacobson radical of $\mathbb{D}'_R$.
+**Corollary.** Every element of $\mathrm{M}$ is a nilpotent, and $\mathrm{M}$ is contained in the Jacobson radical of $\mathbb{D}'_R$.
 
 ## Length, Artinianity and the Failure of Semisimplicity
 
@@ -80,12 +80,12 @@ Equivalently, $\varepsilon^2 = 0$ and $\varepsilon \neq 0$, and every element of
 **Proposition.** Over a field, the chain
 
 $$
-0 \;\subset\; \mathfrak{m} \;\subset\; \mathbb{D}'_k
+0 \;\subset\; \mathrm{M} \;\subset\; \mathbb{D}'_k
 $$
 
-is a composition series. Its two successive quotients are $\mathfrak{m}/\mathfrak{m}^2 = \mathfrak{m} \cong k$ and $\mathbb{D}'_k/\mathfrak{m} \cong k$, both one-dimensional over $k$ and hence simple. The **length of $\mathbb{D}'_k$ as a module over itself is two.**
+is a composition series. Its two successive quotients are $\mathrm{M}/\mathrm{M}^2 = \mathrm{M} \cong k$ and $\mathbb{D}'_k/\mathrm{M} \cong k$, both one-dimensional over $k$ and hence simple. The **length of $\mathbb{D}'_k$ as a module over itself is two.**
 
-**Proof.** The quotient $\mathfrak{m}/0 = \mathfrak{m}$ is a one-dimensional $k$-space because $\mathfrak{m} = k\varepsilon$, and its submodules are $0$ and $\mathfrak{m}$; likewise $\mathbb{D}'_k/\mathfrak{m} \cong k$. $\square$
+**Proof.** The quotient $\mathrm{M}/0 = \mathrm{M}$ is a one-dimensional $k$-space because $\mathrm{M} = k\varepsilon$, and its submodules are $0$ and $\mathrm{M}$; likewise $\mathbb{D}'_k/\mathrm{M} \cong k$.
 
 So the two simple composition factors are isomorphic, both equal to the residue field $k$. This is the algebra's version of the biquaternion fact that the simple left module $S = \mathbb{C}^2$ occurs twice in the regular module; here the simple module is one-dimensional and again occurs twice.
 
@@ -93,7 +93,7 @@ So the two simple composition factors are isomorphic, both equal to the residue 
 
 **Proposition.** Over a field the algebra $\mathbb{D}'_k$ is **artinian** on both sides: every descending chain of ideals stabilizes.
 
-**Proof.** The ideal lattice has three elements, so every chain stabilizes immediately. For a more general noetherian base, the two-dimensional module over $R$ is artinian exactly when $R$ is. $\square$
+**Proof.** The ideal lattice has three elements, so every chain stabilizes immediately. For a more general noetherian base, the two-dimensional module over $R$ is artinian exactly when $R$ is.
 
 ### The Failure of Semisimplicity
 
@@ -101,9 +101,9 @@ So the two simple composition factors are isomorphic, both equal to the residue 
 
 **Theorem.** Over a field, $\mathbb{D}'_k$ is **not** semisimple.
 
-**Proof.** The Jacobson radical of $\mathbb{D}'_k$ contains $\mathfrak{m}$, which is nonzero because $\varepsilon \neq 0$; hence the radical is nonzero and the Wedderburn–Artin criterion fails. Equivalently, a finite product of fields is reduced (has no nonzero nilpotent), while $\varepsilon$ is a nonzero nilpotent. $\square$
+**Proof.** The Jacobson radical of $\mathbb{D}'_k$ contains $\mathrm{M}$, which is nonzero because $\varepsilon \neq 0$; hence the radical is nonzero and the Wedderburn–Artin criterion fails. Equivalently, a finite product of fields is reduced (has no nonzero nilpotent), while $\varepsilon$ is a nonzero nilpotent.
 
-**Remark (the reason).** The obstruction is exactly the nilpotence of the maximal ideal. Semisimplicity would require the regular module to split as $\mathfrak{m} \oplus k$, that is, a decomposition into two ideals; but $\mathfrak{m}$ is the unique minimal ideal, so there is no complementary ideal, and the chain $0 \subset \mathfrak{m} \subset \mathbb{D}'_k$ cannot split. The extension $0 \to \mathfrak{m} \to \mathbb{D}'_k \to k \to 0$ is non-split, and, up to isomorphism, $\mathbb{D}'_k$ is the unique non-split extension of $k$ by $k$ in this category. The corresponding statement for $\mathbb{B}$ is the opposite: $\mathbb{B} \cong M_2(\mathbb{C})$ is simple and semisimple, and its ideal theory is a theory of one-sided ideals.
+**Remark (the reason).** The obstruction is exactly the nilpotence of the maximal ideal. Semisimplicity would require the regular module to split as $\mathrm{M} \oplus k$, that is, a decomposition into two ideals; but $\mathrm{M}$ is the unique minimal ideal, so there is no complementary ideal, and the chain $0 \subset \mathrm{M} \subset \mathbb{D}'_k$ cannot split. The extension $0 \to \mathrm{M} \to \mathbb{D}'_k \to k \to 0$ is non-split, and, up to isomorphism, $\mathbb{D}'_k$ is the unique non-split extension of $k$ by $k$ in this category. The corresponding statement for $\mathbb{B}$ is the opposite: $\mathbb{B} \cong M_2(\mathbb{C})$ is simple and semisimple, and its ideal theory is a theory of one-sided ideals.
 
 ## The Peirce-Type Decomposition
 
@@ -111,7 +111,7 @@ So the two simple composition factors are isomorphic, both equal to the residue 
 
 **Proposition.** Let $R$ be a connected commutative ring — for instance a field, an integral domain, or a local ring. Then the idempotents of $\mathbb{D}'_R$ are exactly $0$ and $1$.
 
-**Proof.** An idempotent $Z = a + \varepsilon b$ satisfies $Z^2 = Z$, that is $a^2 = a$ and $2a b = b$. Since $R$ is connected its only idempotents are $0$ and $1$, so $a = 0$ or $a = 1$. If $a = 0$ then $b = 2\cdot 0 \cdot b = 0$, giving $Z = 0$. If $a = 1$ then $b = 2b$ forces $b = 0$ because $2$ is invertible, giving $Z = 1$. Conversely $0$ and $1$ are idempotent; and if $R$ carried a nontrivial idempotent $a$, then $a + 0\varepsilon$ would be an idempotent of $\mathbb{D}'_R$ other than $0$ and $1$, which is why connectedness is needed. $\square$
+**Proof.** An idempotent $Z = a + \varepsilon b$ satisfies $Z^2 = Z$, that is $a^2 = a$ and $2a b = b$. Since $R$ is connected its only idempotents are $0$ and $1$, so $a = 0$ or $a = 1$. If $a = 0$ then $b = 2\cdot 0 \cdot b = 0$, giving $Z = 0$. If $a = 1$ then $b = 2b$ forces $b = 0$ because $2$ is invertible, giving $Z = 1$. Conversely $0$ and $1$ are idempotent; and if $R$ carried a nontrivial idempotent $a$, then $a + 0\varepsilon$ would be an idempotent of $\mathbb{D}'_R$ other than $0$ and $1$, which is why connectedness is needed.
 
 So over a connected base the algebra has no nontrivial idempotent. This is the algebraic expression of the fact that the algebra is *connected* as a ring, and it is the reason the Peirce machinery of a matrix algebra is unavailable here.
 
@@ -135,13 +135,13 @@ $$
 
 The two summands are the real submodule $R_{\mathbb{D}'} = \{Z : \bar{Z} = Z\}$ and the infinitesimal submodule $\varepsilon R_{\mathbb{D}'} = \{Z : \bar{Z} = -Z\}$, and both are rank-one $R$-modules whose direct sum is all of $\mathbb{D}'_R$. The two projections $Z \mapsto (Z \pm \bar{Z})/2$ are the analogues of the Peirce projections, but they are associated to the involution and not to an idempotent.
 
-**Remark (the two minimal submodules).** The two submodules $R_{\mathbb{D}'}$ and $\varepsilon R_{\mathbb{D}'}$ are the minimal nonzero $R$-submodules of $\mathbb{D}'_R$, of rank one each. Only the second is an ideal: $\varepsilon R_{\mathbb{D}'} = \mathfrak{m}$ is closed under multiplication by the whole algebra, whereas $R_{\mathbb{D}'} = R \cdot 1$ is not, because $\varepsilon \cdot 1 = \varepsilon \notin R_{\mathbb{D}'}$. So the two minimal submodules of the decomposition are distinct objects: one is the unique minimal ideal, the other is a subalgebra that is not an ideal. In the biquaternion algebra the corresponding two minimal one-sided ideals are the two columns, which are genuinely distinct ideals; the dual algebra, being idempotent-free, has only one minimal ideal and cannot split it.
+**Remark (the two minimal submodules).** The two submodules $R_{\mathbb{D}'}$ and $\varepsilon R_{\mathbb{D}'}$ are the minimal nonzero $R$-submodules of $\mathbb{D}'_R$, of rank one each. Only the second is an ideal: $\varepsilon R_{\mathbb{D}'} = \mathrm{M}$ is closed under multiplication by the whole algebra, whereas $R_{\mathbb{D}'} = R \cdot 1$ is not, because $\varepsilon \cdot 1 = \varepsilon \notin R_{\mathbb{D}'}$. So the two minimal submodules of the decomposition are distinct objects: one is the unique minimal ideal, the other is a subalgebra that is not an ideal. In the biquaternion algebra the corresponding two minimal one-sided ideals are the two columns, which are genuinely distinct ideals; the dual algebra, being idempotent-free, has only one minimal ideal and cannot split it.
 
 ### The Action of the Nilpotent on the Two Submodules
 
-**Proposition.** Let $E$ be multiplication by $\varepsilon$ on $\mathbb{D}'_R$. Then $\ker E = \mathfrak{m}$ and $\operatorname{im} E = \mathfrak{m}$, so $E$ has kernel and image the same rank-one submodule; the subalgebra $R_{\mathbb{D}'}$ meets neither.
+**Proposition.** Let $E$ be multiplication by $\varepsilon$ on $\mathbb{D}'_R$. Then $\ker E = \mathrm{M}$ and $\operatorname{im} E = \mathrm{M}$, so $E$ has kernel and image the same rank-one submodule; the subalgebra $R_{\mathbb{D}'}$ meets neither.
 
-**Proof.** $E(Z) = \varepsilon a$, which vanishes exactly when $a = 0$; and its image is $\varepsilon R_{\mathbb{D}'} = \mathfrak{m}$. $\square$
+**Proof.** $E(Z) = \varepsilon a$, which vanishes exactly when $a = 0$; and its image is $\varepsilon R_{\mathbb{D}'} = \mathrm{M}$.
 
 So multiplication by the nilpotent does not decompose the algebra; it crushes the real submodule onto the infinitesimal one. This is the sharpest way to see why the length-two chain does not split: the nilpotent moves the two eigenspaces into one another and strictly decreases the flag.
 
@@ -150,15 +150,15 @@ So multiplication by the nilpotent does not decompose the algebra; it crushes th
 Over a field $k$ the ideal lattice of $\mathbb{D}'_k$ has three elements,
 
 $$
-0 \;\subset\; \mathfrak{m} \;\subset\; \mathbb{D}'_k,
+0 \;\subset\; \mathrm{M} \;\subset\; \mathbb{D}'_k,
 $$
 
-a single chain: $\mathfrak{m}$ covers $0$ and is covered by $\mathbb{D}'_k$, and there are no incomparable elements. The lattice is a total order of length two.
+a single chain: $\mathrm{M}$ covers $0$ and is covered by $\mathbb{D}'_k$, and there are no incomparable elements. The lattice is a total order of length two.
 
-- $\mathfrak{m}$ is the unique maximal ideal, so $\mathbb{D}'_k$ is local.
-- $\mathfrak{m}$ is the unique minimal nonzero ideal, so $\mathbb{D}'_k$ is *connected* and has no nontrivial idempotent.
-- The unique prime ideal is $\mathfrak{m}$: the quotient by any other ideal is $0$ or $\mathbb{D}'_k$, and $\mathbb{D}'_k/\mathfrak{m} \cong k$ is a field.
-- The algebra is a principal ideal ring with socle $\mathfrak{m}$ and Jacobson radical $\mathfrak{m}$: the socle and the radical coincide, which is characteristic of local artinian rings with $\mathfrak{m}^2 = 0$.
+- $\mathrm{M}$ is the unique maximal ideal, so $\mathbb{D}'_k$ is local.
+- $\mathrm{M}$ is the unique minimal nonzero ideal, so $\mathbb{D}'_k$ is *connected* and has no nontrivial idempotent.
+- The unique prime ideal is $\mathrm{M}$: the quotient by any other ideal is $0$ or $\mathbb{D}'_k$, and $\mathbb{D}'_k/\mathrm{M} \cong k$ is a field.
+- The algebra is a principal ideal ring with socle $\mathrm{M}$ and Jacobson radical $\mathrm{M}$: the socle and the radical coincide, which is characteristic of local artinian rings with $\mathrm{M}^2 = 0$.
 
 ## Comparison with the Ideals of $\mathbb{B}$
 
@@ -166,9 +166,9 @@ The contrast with the biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_{\mat
 
 | | $\mathbb{D}'_k$ | $\mathbb{B}$ |
 |---|---|---|
-| Two-sided ideals | $0, \mathfrak{m}, \mathbb{D}'_k$ | $0, \mathbb{B}$ only (simple) |
-| Maximal ideal | unique, $\mathfrak{m} = (\varepsilon)$ | none (the algebra is semisimple) |
-| Radical | $\mathfrak{m} \neq 0$ | $0$ |
+| Two-sided ideals | $0, \mathrm{M}, \mathbb{D}'_k$ | $0, \mathbb{B}$ only (simple) |
+| Maximal ideal | unique, $\mathrm{M} = (\varepsilon)$ | none (the algebra is semisimple) |
+| Radical | $\mathrm{M} \neq 0$ | $0$ |
 | Semisimple | no | yes, $\mathbb{B} \cong M_2(\mathbb{C})$ |
 | Length | $2$ | $2$ |
 | Simple factors | $k$ twice | $S = \mathbb{C}^2$ twice |
@@ -183,10 +183,10 @@ Three structural points stand out. First, simplicity of $\mathbb{B}$ and localit
 Over a field $k$, the dual-number algebra $\mathbb{D}'_k = k[\varepsilon]/(\varepsilon^2)$ is a commutative local ring whose ideals are exactly
 
 $$
-0 \;\subset\; \mathfrak{m} = (\varepsilon) \;\subset\; \mathbb{D}'_k,
+0 \;\subset\; \mathrm{M} = (\varepsilon) \;\subset\; \mathbb{D}'_k,
 $$
 
-so $\mathfrak{m}$ is simultaneously the unique maximal ideal and the unique minimal nonzero ideal, and the residue field is $\mathbb{D}'_k/\mathfrak{m} \cong k$. Over a general commutative ring $R$ the lattice is larger: the ideals are the pairs $I \subseteq J$ of ideals of $R$, realized as $I \oplus J\varepsilon$, and the three-element chain occurs exactly when $R$ is a field. The maximal ideal is nilpotent of index two, $\mathfrak{m}^2 = 0$, and every element of $\mathfrak{m}$ squares to zero. Over a field the algebra is artinian of length two, with two isomorphic simple composition factors both equal to $k$, and it is **not** semisimple: the Jacobson radical is $\mathfrak{m} \neq 0$, or equivalently the non-split chain $0 \subset \mathfrak{m} \subset \mathbb{D}'_k$ cannot be refined into a direct sum. Over a field (or, more generally, a connected base) the algebra is idempotent-free — its only idempotents are $0$ and $1$ — so the Peirce decomposition is trivial; what replaces it is the eigenspace decomposition $R_{\mathbb{D}'} \oplus \varepsilon R_{\mathbb{D}'}$ of dual conjugation, whose two rank-one submodules are the minimal submodule and the subalgebra, of which only the first is an ideal. The biquaternion algebra $\mathbb{B}$ is the opposite case in every respect: simple and semisimple, with trivial two-sided ideal theory and a rich theory of one-sided ideals, a nonzero minimal idempotent set, and a nontrivial Peirce decomposition.
+so $\mathrm{M}$ is simultaneously the unique maximal ideal and the unique minimal nonzero ideal, and the residue field is $\mathbb{D}'_k/\mathrm{M} \cong k$. Over a general commutative ring $R$ the lattice is larger: the ideals are the pairs $I \subseteq J$ of ideals of $R$, realized as $I \oplus J\varepsilon$, and the three-element chain occurs exactly when $R$ is a field. The maximal ideal is nilpotent of index two, $\mathrm{M}^2 = 0$, and every element of $\mathrm{M}$ squares to zero. Over a field the algebra is artinian of length two, with two isomorphic simple composition factors both equal to $k$, and it is **not** semisimple: the Jacobson radical is $\mathrm{M} \neq 0$, or equivalently the non-split chain $0 \subset \mathrm{M} \subset \mathbb{D}'_k$ cannot be refined into a direct sum. Over a field (or, more generally, a connected base) the algebra is idempotent-free — its only idempotents are $0$ and $1$ — so the Peirce decomposition is trivial; what replaces it is the eigenspace decomposition $R_{\mathbb{D}'} \oplus \varepsilon R_{\mathbb{D}'}$ of dual conjugation, whose two rank-one submodules are the minimal submodule and the subalgebra, of which only the first is an ideal. The biquaternion algebra $\mathbb{B}$ is the opposite case in every respect: simple and semisimple, with trivial two-sided ideal theory and a rich theory of one-sided ideals, a nonzero minimal idempotent set, and a nontrivial Peirce decomposition.
 
 ## Summary of Notation
 
@@ -199,12 +199,11 @@ so $\mathfrak{m}$ is simultaneously the unique maximal ideal and the unique mini
 | $\bar{Z} = a - \varepsilon b$ | Dual conjugation, the unique nontrivial involution over a field |
 | $R_{\mathbb{D}'}$ | Real submodule, $+1$-eigenspace of $\bar{\cdot}$ |
 | $\varepsilon R_{\mathbb{D}'}$ | Infinitesimal submodule, $-1$-eigenspace of $\bar{\cdot}$ |
-| $\mathfrak{m} = (\varepsilon)$ | Maximal ideal, $\mathfrak{m}^2 = 0$; unique nonzero proper ideal over a field |
+| $\mathrm{M} = (\varepsilon)$ | Maximal ideal, $\mathrm{M}^2 = 0$; unique nonzero proper ideal over a field |
 | $I \oplus J\varepsilon$, $I \subseteq J$ | General ideals of $\mathbb{D}'_R$ over a general commutative ring $R$ |
-| $\mathbb{D}'_R/\mathfrak{m} \cong R$ | Residue ring |
-| $N(Z) = a^2$ | Norm form, kernel $\mathfrak{m}$ |
-| $\operatorname{Jac}(\mathbb{D}'_k) = \mathfrak{m}$ | Jacobson radical, over a field $k$ |
-| $1 + \mathfrak{m}$ | Shear group, units of real part one |
+| $\mathbb{D}'_R/\mathrm{M} \cong R$ | Residue ring |
+| $\operatorname{Jac}(\mathbb{D}'_k) = \mathrm{M}$ | Jacobson radical, over a field $k$ |
+| $1 + \mathrm{M}$ | Shear group, units of real part one |
 | $k$ | Base field in the specialisations |
 | $\mathbb{B}$ | Biquaternion algebra, the comparison model |
 

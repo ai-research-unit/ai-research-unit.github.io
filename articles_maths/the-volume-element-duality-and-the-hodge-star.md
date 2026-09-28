@@ -5,7 +5,7 @@
 
 The top grade of the Clifford algebra of an $n$-dimensional quadratic space is one-dimensional, spanned by the product of the elements of an orthogonal basis, and multiplication by that element is a bijection from each grade to the complementary grade. This article develops that operation. The element itself is the volume element; the map it induces is the **complement map**, a linear isomorphism $\mathrm{Cl}_k(V,q)\to\mathrm{Cl}_{n-k}(V,q)$ that carries a simple $k$-vector on a subspace to a simple $(n-k)$-vector on the orthogonal complement when the subspace is non-degenerate; normalised by the inverse of the volume element it is the **Hodge star**, whose square is a scalar determined by the metric. The star gives the cross product of three-dimensional space as the complement of a bivector, and in the biquaternion algebra it is the duality of the pseudoscalar that the physics articles write with the factor $-i$.
 
-The volume element, its square and its centrality are from *Clifford Algebras in Finite Dimensions*; the grade subspaces, the grade projection and the grade theorem are from *The Geometric Product and the Grade Decomposition*; the biquaternion algebra and its identification with $\mathrm{Cl}_{3,0}$, with the pseudoscalar acting as the central unit $i$, are from *The Biquaternion Algebra as a Clifford Algebra*. Nothing owned by those entries is re-derived. The base is a field $F$ of characteristic not $2$, with $q$ non-degenerate on the finite-dimensional space $V$ of dimension $n$ and $B$ its polar form; the convention is $v^2=q(v)\cdot1$.
+The volume element, its square and its centrality are from *Clifford Algebras in Finite Dimensions*; the grade subspaces, the grade projection and the grade theorem are from *The Geometric Product and the Grade Decomposition*; the biquaternion algebra and its identification with $\mathrm{Cl}_{3,0}$, with the pseudoscalar acting as the central unit $i$, are from *The Clifford Structure of the Biquaternion Algebra*. Nothing owned by those entries is re-derived. The base is a field $F$ of characteristic not $2$, with $q$ non-degenerate on the finite-dimensional space $V$ of dimension $n$ and $B$ its polar form; the convention is $v^2=q(v)\cdot1$.
 
 ## The Complement Map
 
@@ -33,17 +33,17 @@ $$
 A\omega\in\mathrm{Cl}_{n-k}(V,q), \qquad \omega A\in\mathrm{Cl}_{n-k}(V,q).
 $$
 
-**Proof.** By bilinearity it suffices to take a monomial $A=e_{i_1}\cdots e_{i_k}$ with increasing indices. The index set of $A$ is contained in the index set of $\omega$, so in the product $A\omega$ every index of $A$ occurs twice and every other index once. Moving the factors so that the repeated indices become adjacent and replacing each $e^2$ by the scalar $q(e)$ leaves a scalar multiple of the product of the $n-k$ distinct indices outside $A$; that product is an element of $\mathrm{Cl}_{n-k}(V,q)$. The same computation applies to $\omega A$, the repeated indices being the same. $\square$
+**Proof.** By bilinearity it suffices to take a monomial $A=e_{i_1}\cdots e_{i_k}$ with increasing indices. The index set of $A$ is contained in the index set of $\omega$, so in the product $A\omega$ every index of $A$ occurs twice and every other index once. Moving the factors so that the repeated indices become adjacent and replacing each $e^2$ by the scalar $q(e)$ leaves a scalar multiple of the product of the $n-k$ distinct indices outside $A$; that product is an element of $\mathrm{Cl}_{n-k}(V,q)$. The same computation applies to $\omega A$, the repeated indices being the same.
 
 The proof is the mechanism of the grade theorem of *The Geometric Product and the Grade Decomposition* in the case in which one factor is of top grade: of the grades $n-k,n-k+2,\ldots,n+k$ that the theorem permits, only the first occurs, because the second factor already contains every index.
 
 **Corollary.** Right multiplication by $\omega$ is a bijection $\mathrm{Cl}_k(V,q)\to\mathrm{Cl}_{n-k}(V,q)$, of inverse $A\mapsto A\omega^{-1}$; and left multiplication by $\omega$ is a bijection with the same target and the same inverse.
 
-**Proof.** Both maps are linear and their images lie in the stated grade. The map $A\mapsto A\omega$ is injective because $\omega$ is invertible in $\mathrm{Cl}(V,q)$, and both spaces have dimension $\binom{n}{k}=\binom{n}{n-k}$, so injectivity gives bijectivity. The inverse is right multiplication by $\omega^{-1}$, and the case of left multiplication is the same. $\square$
+**Proof.** Both maps are linear and their images lie in the stated grade. The map $A\mapsto A\omega$ is injective because $\omega$ is invertible in $\mathrm{Cl}(V,q)$, and both spaces have dimension $\binom{n}{k}=\binom{n}{n-k}$, so injectivity gives bijectivity. The inverse is right multiplication by $\omega^{-1}$, and the case of left multiplication is the same.
 
 **Corollary.** For $\omega$ central, that is for $n$ odd, the two complements coincide, $A\omega=\omega A$. For $n$ even they agree up to the sign of the grade, $\omega A=(-1)^kA\omega$ for $A\in\mathrm{Cl}_k(V,q)$.
 
-**Proof.** The volume element commutes with even elements and anticommutes with odd ones, so for $A$ homogeneous of grade $k$ the two products differ by $(-1)^k$. $\square$
+**Proof.** The volume element commutes with even elements and anticommutes with odd ones, so for $A$ homogeneous of grade $k$ the two products differ by $(-1)^k$.
 
 ### The Geometric Reading
 
@@ -55,7 +55,7 @@ $$
 
 so that the complement map carries the subspace spanned by the index set $I$ to its orthogonal complement in $V$.
 
-**Proof.** The computation of the theorem exhibits $e_I\omega$ as a scalar multiple of the product of the generators with indices outside $I$, and that scalar is a product of squares $q(e_i)$ and of signs. The indices outside $I$ index a basis of the orthogonal complement of the span of $e_I$. For an orthonormal basis, $q(e_i)=\pm1$, and the scalar is $\pm1$. $\square$
+**Proof.** The computation of the theorem exhibits $e_I\omega$ as a scalar multiple of the product of the generators with indices outside $I$, and that scalar is a product of squares $q(e_i)$ and of signs. The indices outside $I$ index a basis of the orthogonal complement of the span of $e_I$. For an orthonormal basis, $q(e_i)=\pm1$, and the scalar is $\pm1$.
 
 **Example.** In $\mathrm{Cl}_{3,0}$ with $\omega=e_1e_2e_3$ one has $e_1\omega=e_2e_3$, $e_2\omega=e_3e_1$, $e_3\omega=e_1e_2$, and $e_1e_2\omega=-e_3$, $e_2e_3\omega=-e_1$, $e_3e_1\omega=-e_2$. So the complement of a vector is a bivector on the perpendicular plane and the complement of a bivector is a vector, the two being related by the volume element and the sign.
 
@@ -83,11 +83,11 @@ $$
 
 so that $\star^2=(\omega^2)^{-1}\operatorname{id}$, and when $\omega^2=\pm1$ the star is an involution or a complex structure accordingly, $\star^2=\omega^2\operatorname{id}$.
 
-**Proof.** $\star\star A=(A\omega^{-1})\omega^{-1}=A\omega^{-2}$, and $\omega^{-2}=(\omega^2)^{-1}$ is a scalar because $\omega^2$ is a scalar, so the scalar commutes with $A$. If $\omega^2=\pm1$ then $(\omega^2)^{-1}=\omega^2$. $\square$
+**Proof.** $\star\star A=(A\omega^{-1})\omega^{-1}=A\omega^{-2}$, and $\omega^{-2}=(\omega^2)^{-1}$ is a scalar because $\omega^2$ is a scalar, so the scalar commutes with $A$. If $\omega^2=\pm1$ then $(\omega^2)^{-1}=\omega^2$.
 
 **Corollary (parity of the star).** If $n$ is even the star preserves the parity grading, because $k$ and $n-k$ have the same parity; if $n$ is odd it exchanges the two parity parts.
 
-**Proof.** The star maps $\mathrm{Cl}_k$ to $\mathrm{Cl}_{n-k}$, and $k$ and $n-k$ differ by $n$. If $n$ is even they have the same parity and the image of an even element is even; if $n$ is odd they have opposite parity. $\square$
+**Proof.** The star maps $\mathrm{Cl}_k$ to $\mathrm{Cl}_{n-k}$, and $k$ and $n-k$ differ by $n$. If $n$ is even they have the same parity and the image of an even element is even; if $n$ is odd they have opposite parity.
 
 ### The Low-Dimensional Cases
 
@@ -126,7 +126,7 @@ $$
 a\times b=(a_2b_3-a_3b_2)e_1+(a_3b_1-a_1b_3)e_2+(a_1b_2-a_2b_1)e_3,
 $$
 
-which is orthogonal to $a$ and to $b$ and vanishes exactly when the three $2\times2$ minors vanish, that is when $a$ and $b$ are linearly dependent. Its squared length, computed from the three coordinates, is the Lagrange identity $q(a)q(b)-B(a,b)^2$. $\square$
+which is orthogonal to $a$ and to $b$ and vanishes exactly when the three $2\times2$ minors vanish, that is when $a$ and $b$ are linearly dependent. Its squared length, computed from the three coordinates, is the Lagrange identity $q(a)q(b)-B(a,b)^2$.
 
 **Example.** In $\mathrm{Cl}_{3,0}$ one has $\omega^2=-1$, hence $\omega^{-1}=-\omega=-e_1e_2e_3$, and
 
@@ -150,8 +150,6 @@ $$
 a\cdot(b\times c)=\langle a(b\wedge c)\rangle_3\,\omega^{-1}=(a\wedge b\wedge c)\omega^{-1}.
 $$
 
-$\square$
-
 ## The Biquaternion Case
 
 The star is the operation that the applications of the category call the dual, and in the biquaternion algebra it has a one-line form.
@@ -164,9 +162,9 @@ $$
 
 and the star exchanges the vectors with the bivectors and the scalars with the pseudoscalar multiples of the identity.
 
-**Proof.** $\omega^2=-1$ gives $\omega^{-1}=\omega/\omega^2=-\omega=-i$, and the star is right multiplication by $\omega^{-1}$, which here equals left multiplication because $\omega$ is central. The grade exchange is the corollary on the parity of the star in the case $n=3$, and the two grades are those named. $\square$
+**Proof.** $\omega^2=-1$ gives $\omega^{-1}=\omega/\omega^2=-\omega=-i$, and the star is right multiplication by $\omega^{-1}$, which here equals left multiplication because $\omega$ is central. The grade exchange is the corollary on the parity of the star in the case $n=3$, and the two grades are those named.
 
-This is the sign convention of the physics articles, where the dual of a bivector $F$ is written $\tilde F_\star=-i\tilde F$; the identification of $\mathbb{B}$ with $\mathrm{Cl}_{3,0}$ and of the pseudoscalar with $i$ is from *The Biquaternion Algebra as a Clifford Algebra*, and the same operation appears there as the duality that maps a bivector to a vector and a scalar to a pseudoscalar.
+This is the sign convention of the physics articles, where the dual of a bivector $F$ is written $\tilde F_\star=-i\tilde F$; the identification of $\mathbb{B}$ with $\mathrm{Cl}_{3,0}$ and of the pseudoscalar with $i$ is from *The Clifford Structure of the Biquaternion Algebra*, and the same operation appears there as the duality that maps a bivector to a vector and a scalar to a pseudoscalar.
 
 **Remark (comparison with the star of the exterior algebra).** The Hodge star of the differential forms of the geometric layer performs the same exchange of a $k$-form with an $(n-k)$-form, and it is the present operation read through the symbol isomorphism $\sigma$ of *The Geometric Product and the Grade Decomposition*. The two differ by a sign on each grade, the sign depending on the grade and on the ordering convention chosen for the complementary basis; the signs displayed in this article are those of the Clifford normalisation, in which $\star\star A=(\omega^2)^{-1}A$ exactly and the cross product takes the form $(a\wedge b)\omega^{-1}$.
 

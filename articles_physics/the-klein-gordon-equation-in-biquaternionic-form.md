@@ -42,7 +42,7 @@ $$
 \tilde{\nabla}\bar{\tilde{\nabla}} = \bar{\tilde{\nabla}}\tilde{\nabla} = \Box ,
 $$
 
-which is a genuine algebraic statement: the d'Alembertian is the **norm form** of the gradient biquaternion, exactly as $\tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$ is the norm form of a biquaternion. The wave operator is the square of an element of the algebra, and the mass-shell condition below is the same norm form evaluated on the four-wavevector. That is the structural content the biquaternion writing makes visible.
+which is a genuine algebraic statement: the d'Alembertian is the **biquaternion norm** of the gradient biquaternion, exactly as $\tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$ is the biquaternion norm of a biquaternion. The wave operator is the square of an element of the algebra, and the mass-shell condition below is the same biquaternion norm evaluated on the four-wavevector. That is the structural content the biquaternion writing makes visible.
 
 ## Second Order in Time and the Conjugate Pair
 
@@ -117,7 +117,7 @@ $$
 = \left(\frac{\omega^2}{c^2} - \mathbf{k}^2\right)\tilde{\Phi}.
 $$
 
-The Klein–Gordon equation therefore requires $\omega^2/c^2 - \mathbf{k}^2 = m^2c^2/\hbar^2$. Since the norm form of the four-wavevector is $N(\tilde{K}) = \tilde{K}\bar{\tilde{K}} = -\omega^2/c^2 + \mathbf{k}^2$, this is exactly the mass-shell condition
+The Klein–Gordon equation therefore requires $\omega^2/c^2 - \mathbf{k}^2 = m^2c^2/\hbar^2$. Since the biquaternion norm of the four-wavevector is $N(\tilde{K}) = \tilde{K}\bar{\tilde{K}} = -\omega^2/c^2 + \mathbf{k}^2$, this is exactly the mass-shell condition
 
 $$
 N(\tilde{K}) = -\frac{m^2c^2}{\hbar^2}
@@ -131,7 +131,7 @@ $$
 \omega^2 = c^2\mathbf{k}^2 + \frac{m^2c^4}{\hbar^2}.
 $$
 
-This is the standard relativistic dispersion relation $E^2 = \mathbf{p}^2c^2 + m^2c^4$ under $E = \hbar\omega$, $\mathbf{p} = \hbar\mathbf{k}$, and in biquaternion language it is exactly the mass-shell condition $\tilde{K}\bar{\tilde{K}} = -m^2c^2/\hbar^2$ — the norm form of the four-wavevector fixed to a negative constant, the same statement as $\tilde{P}\bar{\tilde{P}} = -m^2c^2$ for the four-momentum. The two roots
+This is the standard relativistic dispersion relation $E^2 = \mathbf{p}^2c^2 + m^2c^4$ under $E = \hbar\omega$, $\mathbf{p} = \hbar\mathbf{k}$, and in biquaternion language it is exactly the mass-shell condition $\tilde{K}\bar{\tilde{K}} = -m^2c^2/\hbar^2$ — the biquaternion norm of the four-wavevector fixed to a negative constant, the same statement as $\tilde{P}\bar{\tilde{P}} = -m^2c^2$ for the four-momentum. The two roots
 
 $$
 \omega = \pm\sqrt{c^2\mathbf{k}^2 + m^2c^4/\hbar^2}
@@ -234,7 +234,7 @@ Stated plainly, the biquaternion form of the scalar Klein–Gordon equation is a
 
 Three things are genuinely rearranged rather than renamed.
 
-1. **The wave operator is a norm form.** $\Box = \tilde{\nabla}\bar{\tilde{\nabla}}$ is the norm form of the gradient biquaternion, and the mass-shell condition is the same norm form on the four-wavevector, $\tilde{K}\bar{\tilde{K}} = -m^2c^2/\hbar^2$. The equation and its on-shell condition are both statements about $N(\cdot)$.
+1. **The wave operator is a biquaternion norm.** $\Box = \tilde{\nabla}\bar{\tilde{\nabla}}$ is the biquaternion norm of the gradient biquaternion, and the mass-shell condition is the same biquaternion norm on the four-wavevector, $\tilde{K}\bar{\tilde{K}} = -m^2c^2/\hbar^2$. The equation and its on-shell condition are both statements about $N(\cdot)$.
 
 2. **The current's home is explicit.** The conserved four-current lies in $\mathbb{M}_-$, and conservation is $\mathrm{Sc}(\bar{\tilde{\nabla}}\tilde{J})=0$, the same scalar pairing that appears in the framework's $2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ trace formula. The continuity equation is a scalar projection of a stronger biquaternion equation.
 
@@ -288,7 +288,7 @@ The central structural question has a negative answer. The second-order structur
 | $\tilde{\Phi}$ | Biquaternion-valued Klein–Gordon field |
 | $\tilde{Q} = ict\,e_0 + \mathbf{x}$ | Four-position biquaternion |
 | $\tilde{K} = i\omega/c\,e_0 + \mathbf{k}$ | Four-wavevector biquaternion |
-| $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$ | Norm form |
+| $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$ | Biquaternion norm |
 | $\tilde{K}\bar{\tilde{K}} = -m^2c^2/\hbar^2$ | Mass-shell condition |
 | $\tilde{J} = ic\rho\,e_0 + \mathbf{j}$ | Conserved four-current |
 | $\mathrm{Sc}(\bar{\tilde{\nabla}}\tilde{J}) = 0$ | Conservation law |

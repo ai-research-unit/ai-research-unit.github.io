@@ -3,9 +3,9 @@
 
 ## Introduction
 
-The vector space $\mathbb{R}^2$ carries exactly three commutative unital algebra structures up to isomorphism, and the three have an interpretation in terms of rotations. Multiplication by an element of unit norm is a linear transformation of the plane; when the norm form is positive definite the transformation is an ordinary rotation, when it is indefinite it is a hyperbolic rotation, and when it is degenerate it is a parabolic rotation, a shear. The three cases are the complex numbers, the split complex numbers and the dual numbers, and the sign of the square of the generator — $-1$, $+1$ or $0$ — is what selects the geometry.
+The vector space $\mathbb{R}^2$ carries exactly three commutative unital algebra structures up to isomorphism, and the three have an interpretation in terms of rotations. Multiplication by an element of unit norm is a linear transformation of the plane; when the norm is positive definite the transformation is an ordinary rotation, when it is indefinite it is a hyperbolic rotation, and when it is degenerate it is a parabolic rotation, a shear. The three cases are the complex numbers, the split complex numbers and the dual numbers, and the sign of the square of the generator — $-1$, $+1$ or $0$ — is what selects the geometry.
 
-This article develops the three cases side by side: the algebra, its units, its norm form, the parametrisation of the group of norm-one units, the matrix of multiplication, the orbit of a point and the fixed lines. It then explains the two structural facts that make the picture what it is: multiplicative rotation belongs to dimension two because a multiplicative norm form on the plane has only the three possible signatures, and the same construction in dimension three forces one to give up commutativity, the smallest algebra that serves being the four-dimensional quaternions.
+This article develops the three cases side by side: the algebra, its units, its norm, the parametrisation of the group of norm-one units, the matrix of multiplication, the orbit of a point and the fixed lines. It then explains the two structural facts that make the picture what it is: multiplicative rotation belongs to dimension two because a multiplicative norm on the plane has only the three possible signatures, and the same construction in dimension three forces one to give up commutativity, the smallest algebra that serves being the four-dimensional quaternions.
 
 Throughout, the generator of the algebra is written $\omega$ with $\omega^2 = \sigma$, where $\sigma = -1$ for $\mathbb{C}$, $\sigma = +1$ for $\mathbb{D}$ and $\sigma = 0$ for $\mathbb{D}'$. A general element is $z = x + \omega y$ with $x, y \in \mathbb{R}$, and the three algebras are the quotient algebras
 
@@ -33,7 +33,7 @@ $$
 
 The assignment $u \mapsto M(u)$ is an injective algebra homomorphism $A \to M_2(\mathbb{R})$, so multiplication by units realises the unit group $A^\times$ as a subgroup of $\mathrm{GL}_2(\mathbb{R})$.
 
-**Definition.** The **norm form** of $A$ is
+**Definition.** The **norm** of $A$ is
 
 $$
 N(x + \omega y) = x^2 - \sigma y^2 =
@@ -60,7 +60,7 @@ So the three cases are the three signatures of a quadratic form in two variables
 
 ## The Elliptic Case: The Complex Numbers
 
-For $\sigma = -1$ the norm form is positive definite, $N = x^2 + y^2$, and it vanishes only at the origin; hence every nonzero complex number is a unit. The norm-one group is parametrised by the angle,
+For $\sigma = -1$ the norm is positive definite, $N = x^2 + y^2$, and it vanishes only at the origin; hence every nonzero complex number is a unit. The norm-one group is parametrised by the angle,
 
 $$
 u(\theta) = \cos\theta + i \sin\theta, \qquad N(u(\theta)) = \cos^2\theta + \sin^2\theta = 1,
@@ -78,7 +78,7 @@ since $a = \cos\theta$, $b = \sin\theta$ and $\det M = 1$. The map $\theta \maps
 
 ## The Hyperbolic Case: The Split Complex Numbers
 
-For $\sigma = +1$ the norm form is indefinite, $N = x^2 - y^2$, and it vanishes exactly on the two null lines $x = \pm y$; the elements on those lines, other than $0$, are the zero divisors of $\mathbb{D}$. The norm-one group is the hyperbola $x^2 - y^2 = 1$, which has two branches. On the branch $x > 0$ it is parametrised by the rapidity,
+For $\sigma = +1$ the norm is indefinite, $N = x^2 - y^2$, and it vanishes exactly on the two null lines $x = \pm y$; the elements on those lines, other than $0$, are the zero divisors of $\mathbb{D}$. The norm-one group is the hyperbola $x^2 - y^2 = 1$, which has two branches. On the branch $x > 0$ it is parametrised by the rapidity,
 
 $$
 u(t) = \cosh t + j \sinh t, \qquad N(u(t)) = \cosh^2 t - \sinh^2 t = 1,
@@ -103,7 +103,7 @@ satisfy $u(t)\pi_+ = e^{t}\pi_+$ and $u(t)\pi_- = e^{-t}\pi_-$, so the lines $\m
 
 ## The Parabolic Case: The Dual Numbers
 
-For $\sigma = 0$ the norm form is degenerate, $N = x^2$, and it vanishes on the whole line $x = 0$, which is the maximal ideal $(\varepsilon)$. The norm-one group consists of the elements with $x = \pm 1$, so it too has two branches, each a line. On the branch $x = 1$,
+For $\sigma = 0$ the norm is degenerate, $N = x^2$, and it vanishes on the whole line $x = 0$, which is the maximal ideal $(\varepsilon)$. The norm-one group consists of the elements with $x = \pm 1$, so it too has two branches, each a line. On the branch $x = 1$,
 
 $$
 u(t) = 1 + \varepsilon t, \qquad N(u(t)) = 1,
@@ -128,7 +128,7 @@ The three cases differ in every feature that the quadratic form controls.
 | | $\mathbb{C}$ | $\mathbb{D}$ | $\mathbb{D}'$ |
 |---|---|---|---|
 | generator square $\sigma$ | $-1$ | $+1$ | $0$ |
-| norm form $N$ | $x^2+y^2$ | $x^2-y^2$ | $x^2$ |
+| norm $N$ | $x^2+y^2$ | $x^2-y^2$ | $x^2$ |
 | signature | $(2,0)$ definite | $(1,1)$ indefinite | $(1,0)$ degenerate |
 | zero divisors | none | on $x=\pm y$ | on $x=0$ |
 | $G_A = \{u : N(u)=1\}$ | $U(1)\cong SO(2)$, connected | two branches; identity component $\cong SO(1,1)_0$ | two branches; identity component the transvections |
@@ -137,7 +137,7 @@ The three cases differ in every feature that the quadratic form controls.
 | fixed lines | none | two null lines | one null line |
 | group | compact | non-compact | non-compact, unipotent |
 
-The definite case gives a compact rotation group with no fixed direction and closed orbits; the indefinite case gives a non-compact group with two fixed null directions and open orbits; the degenerate case gives a unipotent group with one fixed null direction and orbits that are lines. In every case the fixed directions are the directions on which the norm form vanishes, and the rotation is norm-preserving by multiplicativity.
+The definite case gives a compact rotation group with no fixed direction and closed orbits; the indefinite case gives a non-compact group with two fixed null directions and open orbits; the degenerate case gives a unipotent group with one fixed null direction and orbits that are lines. In every case the fixed directions are the directions on which the norm vanishes, and the rotation is norm-preserving by multiplicativity.
 
 ## The Classification of the Two-Dimensional Algebras
 
@@ -151,7 +151,7 @@ $$
 A \cong \mathbb{R}[\omega]/(\omega^2+1) = \mathbb{C};
 $$
 
-if $p^2+4c > 0$ the polynomial has two distinct real roots and $A \cong \mathbb{R}\times\mathbb{R} \cong \mathbb{D}$; if $p^2 + 4c = 0$ the polynomial is a square, $(\omega - p/2)^2 = 0$ after completing the square, so $A \cong \mathbb{R}[\omega]/(\omega^2) = \mathbb{D}'$. $\square$
+if $p^2+4c > 0$ the polynomial has two distinct real roots and $A \cong \mathbb{R}\times\mathbb{R} \cong \mathbb{D}$; if $p^2 + 4c = 0$ the polynomial is a square, $(\omega - p/2)^2 = 0$ after completing the square, so $A \cong \mathbb{R}[\omega]/(\omega^2) = \mathbb{D}'$.
 
 The three kinds of rotation therefore exhaust the rotations implemented by multiplication in the plane, and the type of the rotation is the sign of the discriminant of the quadratic form: positive definite gives elliptic, indefinite gives hyperbolic, degenerate gives parabolic.
 
@@ -159,9 +159,9 @@ The three kinds of rotation therefore exhaust the rotations implemented by multi
 
 The plane admits three multiplicative rotation theories; the next dimension does not admit any commutative one.
 
-**Theorem (no commutative rotation theory in dimension three).** There is no three-dimensional commutative unital real division algebra. More generally, if $A$ is a finite-dimensional real algebra with a multiplicative norm form that is positive definite, then $\dim_\mathbb{R} A \in \{1, 2, 4, 8\}$, with the cases $\mathbb{R}, \mathbb{C}, \mathbb{H}, \mathbb{O}$ (Hurwitz).
+**Theorem (no commutative rotation theory in dimension three).** There is no three-dimensional commutative unital real division algebra. More generally, if $A$ is a finite-dimensional real algebra with a multiplicative norm that is positive definite, then $\dim_\mathbb{R} A \in \{1, 2, 4, 8\}$, with the cases $\mathbb{R}, \mathbb{C}, \mathbb{H}, \mathbb{O}$ (Hurwitz).
 
-*Proof.* A commutative unital real algebra that is a division algebra is a field extension of $\mathbb{R}$ of finite degree equal to its dimension. Every finite field extension of $\mathbb{R}$ has degree at most $2$, because every real polynomial of odd degree has a real root, so every element of the extension has minimal polynomial of degree $1$ or $2$ and the only irreducible polynomials are the linear ones and the quadratics with negative discriminant; hence the degree is at most $2$. The Hurwitz statement is the classical theorem on composition algebras, valid without commutativity; the only positive-dimensional real composition algebras are $\mathbb{R},\mathbb{C},\mathbb{H},\mathbb{O}$. $\square$
+*Proof.* A commutative unital real algebra that is a division algebra is a field extension of $\mathbb{R}$ of finite degree equal to its dimension. Every finite field extension of $\mathbb{R}$ has degree at most $2$, because every real polynomial of odd degree has a real root, so every element of the extension has minimal polynomial of degree $1$ or $2$ and the only irreducible polynomials are the linear ones and the quadratics with negative discriminant; hence the degree is at most $2$. The Hurwitz statement is the classical theorem on composition algebras, valid without commutativity; the only positive-dimensional real composition algebras are $\mathbb{R},\mathbb{C},\mathbb{H},\mathbb{O}$.
 
 So a commutative algebra cannot implement rotations in $\mathbb{R}^3$; the smallest algebra that can is the four-dimensional, non-commutative quaternion algebra $\mathbb{H}$. The rotations of $\mathbb{R}^3$ are obtained by letting the unit quaternions act on the imaginary subspace $\operatorname{Im}\mathbb{H} = \mathbb{R}^3$ by conjugation.
 
@@ -173,13 +173,13 @@ $$
 
 is a rotation of $\operatorname{Im}\mathbb{H} \cong \mathbb{R}^3$, and $q \mapsto \rho_q$ is a surjective group homomorphism $S^3 \to SO(3)$ with kernel $\{\pm 1\}$; hence $SO(3) \cong S^3/\{\pm 1\}$.
 
-*Proof.* Multiplication by a unit preserves the norm $N(p) = p\bar p$, so $\rho_q$ is norm-preserving; it fixes the real part, since it fixes the scalars, so it preserves $\operatorname{Im}\mathbb{H}$; and it is an isometry of a three-dimensional space, hence an orthogonal transformation. Its determinant is $+1$ because $q \mapsto \rho_q$ is continuous and $S^3$ is connected, the value at $q = 1$ being the identity. Surjectivity and the kernel are the standard facts of the quaternion representation of rotations. $\square$
+*Proof.* Multiplication by a unit preserves the norm $N(p) = p\bar p$, so $\rho_q$ is norm-preserving; it fixes the real part, since it fixes the scalars, so it preserves $\operatorname{Im}\mathbb{H}$; and it is an isometry of a three-dimensional space, hence an orthogonal transformation. Its determinant is $+1$ because $q \mapsto \rho_q$ is continuous and $S^3$ is connected, the value at $q = 1$ being the identity. Surjectivity and the kernel are the standard facts of the quaternion representation of rotations.
 
 The three two-dimensional theories thus sit at the bottom of a hierarchy: the commutative cases are exactly the two-dimensional composition algebras, and passing to three dimensions forces one to give up commutativity and to use the quaternion algebra, whose unit group double-covers the rotation group.
 
 ## Summary
 
-The three two-dimensional commutative unital real algebras are $\mathbb{C} = \mathbb{R}[\omega]/(\omega^2+1)$, $\mathbb{D} = \mathbb{R}[\omega]/(\omega^2-1)$ and $\mathbb{D}' = \mathbb{R}[\omega]/(\omega^2)$, and the sign of $\omega^2$ selects the geometry. Multiplication by a unit $u = a + \omega b$ is the linear map with matrix $\begin{pmatrix} a & \sigma b \\ b & a\end{pmatrix}$, of determinant $N(u) = a^2 - \sigma b^2$, and the **norm form** is multiplicative; the **rotation group** $G_A = \{u : N(u)=1\}$ is therefore a group of norm-preserving transformations. For $\mathbb{C}$ the form is definite, $G_A \cong U(1) \cong SO(2)$ with the elliptic matrix $\begin{pmatrix}\cos\theta & -\sin\theta \\ \sin\theta & \cos\theta\end{pmatrix}$, orbits circles and no fixed line. For $\mathbb{D}$ the form is indefinite of signature $(1,1)$, the identity component of $G_A$ is $\mathbb{R} \cong SO(1,1)_0$ with the hyperbolic matrix $\begin{pmatrix}\cosh t & \sinh t\\ \sinh t & \cosh t\end{pmatrix}$, orbits hyperbolas and the two null lines fixed. For $\mathbb{D}'$ the form is degenerate, the identity component of $G_A$ is $\mathbb{R}$ with the transvection $\begin{pmatrix}1&0\\t&1\end{pmatrix}$, the parabolic rotation, orbits horizontal lines and the single null line fixed. A two-dimensional commutative unital real algebra is one of the three, by the sign of the discriminant of its defining quadratic, so the three kinds of rotation are exhaustive.
+The three two-dimensional commutative unital real algebras are $\mathbb{C} = \mathbb{R}[\omega]/(\omega^2+1)$, $\mathbb{D} = \mathbb{R}[\omega]/(\omega^2-1)$ and $\mathbb{D}' = \mathbb{R}[\omega]/(\omega^2)$, and the sign of $\omega^2$ selects the geometry. Multiplication by a unit $u = a + \omega b$ is the linear map with matrix $\begin{pmatrix} a & \sigma b \\ b & a\end{pmatrix}$, of determinant $N(u) = a^2 - \sigma b^2$, and the **norm** is multiplicative; the **rotation group** $G_A = \{u : N(u)=1\}$ is therefore a group of norm-preserving transformations. For $\mathbb{C}$ the form is definite, $G_A \cong U(1) \cong SO(2)$ with the elliptic matrix $\begin{pmatrix}\cos\theta & -\sin\theta \\ \sin\theta & \cos\theta\end{pmatrix}$, orbits circles and no fixed line. For $\mathbb{D}$ the form is indefinite of signature $(1,1)$, the identity component of $G_A$ is $\mathbb{R} \cong SO(1,1)_0$ with the hyperbolic matrix $\begin{pmatrix}\cosh t & \sinh t\\ \sinh t & \cosh t\end{pmatrix}$, orbits hyperbolas and the two null lines fixed. For $\mathbb{D}'$ the form is degenerate, the identity component of $G_A$ is $\mathbb{R}$ with the transvection $\begin{pmatrix}1&0\\t&1\end{pmatrix}$, the parabolic rotation, orbits horizontal lines and the single null line fixed. A two-dimensional commutative unital real algebra is one of the three, by the sign of the discriminant of its defining quadratic, so the three kinds of rotation are exhaustive.
 
 Passing to dimension three is impossible in the commutative setting: there is no three-dimensional commutative real division algebra, and the Hurwitz theorem restricts positive-definite multiplicative norms to dimensions $1, 2, 4, 8$. The rotations of $\mathbb{R}^3$ are instead obtained from the non-commutative quaternions, acting by conjugation $\rho_q(p) = qpq^{-1}$ on the imaginary subspace, with $SO(3) \cong S^3/\{\pm 1\}$.
 
@@ -193,7 +193,7 @@ Passing to dimension three is impossible in the commutative setting: there is no
 | $z = x+\omega y$ | General element |
 | $L_u$ | Left multiplication by $u$ |
 | $M(u) = \begin{pmatrix} a & \sigma b\\ b & a\end{pmatrix}$ | Matrix of $L_u$ in the basis $(1,\omega)$ |
-| $N(x+\omega y) = x^2 - \sigma y^2$ | Norm form, multiplicative |
+| $N(x+\omega y) = x^2 - \sigma y^2$ | Norm, multiplicative |
 | $G_A = \{u : N(u)=1\}$ | Rotation group |
 | $u(\theta), u(t)$ | Parametrisations by angle and by rapidity |
 | $\pi_\pm = \tfrac{1}{2}(1\pm j)$ | Idempotents of $\mathbb{D}$, spanning the null lines |

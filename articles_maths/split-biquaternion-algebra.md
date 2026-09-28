@@ -1,3 +1,4 @@
+
 # __Split-Biquaternion Algebra__
 
 ## Introduction
@@ -18,7 +19,7 @@ $$
 \mathbb{H}_{\mathbb{D}} = \mathbb{D} \otimes_{\mathbb{R}} \mathbb{H},
 $$
 
-where $\mathbb{D}$ is the split complex algebra and $\mathbb{H}$ is the quaternion algebra.
+where $\mathbb{D}$ is the split complex algebra and $\mathbb{H}$ is the quaternion algebra. It is also met, in the form $\mathbb{H} \oplus \mathbb{H}$, as the algebra of the two quaternion halves.
 
 As a real vector space, $\mathbb{H}_{\mathbb{D}}$ has dimension $8$. As a split complex vector space, it has dimension $4$. A general split biquaternion is written in developed form as
 
@@ -306,28 +307,6 @@ where $j\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$ is the set of split biquaternions 
 
 This is the **quaternion decomposition** of a split biquaternion. It expresses $\tilde{Q}$ as a quaternion plus the split complex unit times another quaternion.
 
-## Hermitian Decomposition
-
-The Hermitian subspace $\mathbb{M}_+$ and the anti-Hermitian subspace $\mathbb{M}_-$ are the two eigenspaces of the Hermitian conjugation $\dagger$. Every split biquaternion decomposes uniquely as the sum of a Hermitian part and an anti-Hermitian part:
-
-$$
-\tilde{Q} = \tilde{Q}_{\mathrm{H}} + \tilde{Q}_{\mathrm{A}}, \qquad \tilde{Q}_{\mathrm{H}} \in \mathbb{M}_+, \quad \tilde{Q}_{\mathrm{A}} \in \mathbb{M}_-.
-$$
-
-The two components are obtained from the Hermitian conjugation:
-
-$$
-\tilde{Q}_{\mathrm{H}} = \frac{1}{2}(\tilde{Q} + \tilde{Q}^\dagger), \qquad \tilde{Q}_{\mathrm{A}} = \frac{1}{2}(\tilde{Q} - \tilde{Q}^\dagger).
-$$
-
-This gives the direct sum decomposition
-
-$$
-\mathbb{H}_{\mathbb{D}} = \mathbb{M}_+ \oplus \mathbb{M}_-,
-$$
-
-where $\mathbb{M}_+$ is the Hermitian subspace and $\mathbb{M}_-$ is the anti-Hermitian subspace. Both are real vector spaces of dimension 4.
-
 ## Idempotent Decomposition
 
 The idempotent decomposition is the second natural decomposition of $\mathbb{H}_{\mathbb{D}}$, and it is the key to the structure of the algebra.
@@ -356,83 +335,33 @@ $$
 
 is an algebra isomorphism, and it is the reason the algebra is semisimple.
 
+## Hermitian Decomposition
+
+The Hermitian subspace $\mathbb{M}_+$ and the anti-Hermitian subspace $\mathbb{M}_-$ are the two eigenspaces of the Hermitian conjugation $\dagger$. Every split biquaternion decomposes uniquely as the sum of a Hermitian part and an anti-Hermitian part:
+
+$$
+\tilde{Q} = \tilde{Q}_{\mathrm{H}} + \tilde{Q}_{\mathrm{A}}, \qquad \tilde{Q}_{\mathrm{H}} \in \mathbb{M}_+, \quad \tilde{Q}_{\mathrm{A}} \in \mathbb{M}_-.
+$$
+
+The two components are obtained from the Hermitian conjugation:
+
+$$
+\tilde{Q}_{\mathrm{H}} = \frac{1}{2}(\tilde{Q} + \tilde{Q}^\dagger), \qquad \tilde{Q}_{\mathrm{A}} = \frac{1}{2}(\tilde{Q} - \tilde{Q}^\dagger).
+$$
+
+This gives the direct sum decomposition
+
+$$
+\mathbb{H}_{\mathbb{D}} = \mathbb{M}_+ \oplus \mathbb{M}_-,
+$$
+
+where $\mathbb{M}_+$ is the Hermitian subspace and $\mathbb{M}_-$ is the anti-Hermitian subspace. Both are real vector spaces of dimension 4.
+
 ## Relation Between the Three Decompositions
 
 The quaternion decomposition $\mathbb{H}_{\mathbb{D}} = \mathbb{H}_{\mathbb{H}_{\mathbb{D}}} \oplus j \mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$ and the Hermitian decomposition $\mathbb{H}_{\mathbb{D}} = \mathbb{M}_+ \oplus \mathbb{M}_-$ are two different decompositions of the same eight-dimensional real vector space. They are associated with two different involutions: the quaternion decomposition is associated with the split complex conjugation ${}^*$, and the Hermitian decomposition is associated with the Hermitian conjugation $\dagger$.
 
 The two decompositions are related by multiplication by the split complex unit $j$, which maps $\mathbb{M}_+$ to $\mathbb{M}_-$ and vice versa. The idempotent decomposition is a third decomposition, associated with the idempotents $\tilde\Pi_\pm$, and it is the one that reveals the semisimple structure of the algebra.
-
-## Quadratic Forms and Inner Product
-
-### The Norm Form
-
-The **norm form** of a split biquaternion $\tilde{Q}$ is
-
-$$
-N(\tilde{Q}) = \tilde{Q} \bar{\tilde{Q}} = \sum_{\mu=0}^{3} Q_\mu^2,
-$$
-
-where $\bar{\tilde{Q}}$ is the quaternion conjugate. It is a split complex number in general:
-
-$$
-N(\tilde{Q}) = \sum_{\mu=0}^{3} (q_\mu^2 + q'^2_\mu) + 2j \sum_{\mu=0}^{3} q_\mu q'_\mu.
-$$
-
-Its real part is positive-definite, $\sum_\mu(q_\mu^2+q'^2_\mu)$, so $N(\tilde Q)=0$ forces $\tilde Q=0$: the norm form does **not** single out the zero divisors. Those are characterized instead by the vanishing of an idempotent component, $\tilde Q_+=0$ or $\tilde Q_-=0$, as the article on split biquaternion zero divisors shows.
-
-The norm form is **multiplicative**:
-
-$$
-N(\tilde{Q} \circ \tilde{R}) = N(\tilde{Q}) \, N(\tilde{R}).
-$$
-
-### The Hermitian Form
-
-The **Hermitian form** of a split biquaternion $\tilde{Q}$ is
-
-$$
-\tilde{Q} \tilde{Q}^\dagger,
-$$
-
-where $\tilde{Q}^\dagger$ is the Hermitian conjugate and $Q_\mu^* = q_\mu - j q'_\mu$ is the split complex conjugate. Its **scalar part** is $\sum_{\mu=0}^{3} Q_\mu Q_\mu^* = \sum_{\mu=0}^{3} (q_\mu^2 - q'^2_\mu)$, while its vector part need not vanish. That scalar part is a **real** form which is **not positive-definite**: it can be positive, negative, or zero. Its signature is $(4, 4)$ on the eight-dimensional real space $\mathbb{H}_{\mathbb{D}}$.
-
-So the Hermitian form does not define a Euclidean norm on $\mathbb{H}_{\mathbb{D}}$. It is an indefinite quadratic form of signature $(4, 4)$.
-
-### The Euclidean Norm
-
-The **Euclidean norm** on $\mathbb{H}_{\mathbb{D}} \cong \mathbb{R}^8$ is defined separately by
-
-$$
-\|\tilde{Q}\|_E = \sqrt{\sum_{\mu=0}^{3} (q_\mu^2 + q'^2_\mu)}.
-$$
-
-It is a genuine norm on the real vector space $\mathbb{H}_{\mathbb{D}}$: positive-definite, subadditive, and homogeneous of degree one. It is **not** the square root of the Hermitian form, because the Hermitian form is indefinite. It is the ordinary Euclidean norm on the underlying real vector space.
-
-### The Inner Product
-
-The **inner product** of two split biquaternions $\tilde P$ and $\tilde{Q}$ is
-
-$$
-\langle \tilde P, \tilde{Q} \rangle = \sum_{\mu=0}^{3} P_\mu^* Q_\mu,
-$$
-
-which is a split complex number in general:
-
-$$
-\langle \tilde P, \tilde{Q} \rangle = \sum_{\mu=0}^{3} (p_\mu q_\mu - p'_\mu q'_\mu) + j \sum_{\mu=0}^{3} (p_\mu q'_\mu - p'_\mu q_\mu).
-$$
-
-The real part is the indefinite form of signature $(4, 4)$, and the split part is the cross-term. The inner product is linear in the second argument and split-antilinear in the first, and it is Hermitian in the sense that $\langle \tilde P, \tilde{Q} \rangle^* = \langle \tilde{Q}, \tilde P \rangle$.
-
-### Relation Between the Three Forms
-
-The three quadratic objects are related as follows:
-
-- **Norm form:** $N(\tilde{Q}) = \tilde{Q} \bar{\tilde{Q}} = \sum_\mu Q_\mu^2$. Split complex-valued, vanishes only at $\tilde{Q}=0$, multiplicative.
-- **Hermitian form:** $\tilde{Q} \tilde{Q}^\dagger$, whose scalar part is $\sum_\mu (q_\mu^2 - q'^2_\mu)$. That scalar part is real, indefinite of signature $(4, 4)$, and vanishes on a quadric hypersurface of dimension $7$; the full product is not multiplicative.
-- **Inner product:** $\langle \tilde P, \tilde{Q} \rangle = \sum_\mu P_\mu^* Q_\mu$. Split complex-valued in general, Hermitian, linear in the second argument.
-
-The three are distinct, and each is useful in a different context. The norm form controls invertibility (through $\Delta$, its split complex invertibility). The zero divisors are not a norm-form condition; they are the vanishing of an idempotent component. The Hermitian form is indefinite and does not control the topological structure. The Euclidean norm, which is defined separately, provides the topological structure.
 
 ## The Lie Algebra Structure
 
@@ -442,7 +371,7 @@ $$
 [\tilde P, \tilde{Q}] = \tilde P \tilde{Q} - \tilde{Q} \tilde P.
 $$
 
-The Lie algebra structure of $\mathbb{H}_{\mathbb{D}}$ is the direct sum of two copies of the Lie algebra of $\mathbb{H}$, because the algebra is isomorphic to $\mathbb{H} \oplus \mathbb{H}$. In particular, the pure split biquaternions (with respect to the quaternion conjugation) form a Lie subalgebra isomorphic to $\mathfrak{so}(3) \oplus \mathfrak{so}(3)$, which is the Lie algebra of the group $SO(3) \times SO(3)$.
+The Lie algebra structure of $\mathbb{H}_{\mathbb{D}}$ is the direct sum of two copies of the Lie algebra of $\mathbb{H}$, because the algebra is isomorphic to $\mathbb{H} \oplus \mathbb{H}$. In particular, the pure split biquaternions (with respect to the quaternion conjugation) form a Lie subalgebra isomorphic to $\mathrm{SO}(3) \oplus \mathrm{SO}(3)$. The group this Lie algebra integrates to, and the motions it defines, are treated in Geometry, where the form is available.
 
 ## Summary
 
@@ -454,7 +383,7 @@ There are four natural conjugations: quaternion conjugation, split complex conju
 
 There are three natural decompositions of the algebra: the quaternion decomposition $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}} \oplus j \mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$, the idempotent decomposition $\mathbb{H} \tilde\Pi_+ \oplus \mathbb{H} \tilde\Pi_-$, and the Hermitian decomposition $\mathbb{M}_+ \oplus \mathbb{M}_-$.
 
-The norm form is split complex-valued and multiplicative. The scalar part of the Hermitian form is real and indefinite of signature $(4, 4)$. The Euclidean norm is defined separately and is positive-definite. The split biquaternion algebra is therefore not a normed algebra in the same sense as the quaternion algebra, where the norm form is positive-definite and multiplicative.
+The quadratic form, the inner product, the norm and the Euclidean norm are a form and a distance; they are developed in *Split-Biquaternion Norm and Invertibility*, where the invertibility criterion and the group of units are also established.
 
 ## Summary of Notation
 
@@ -476,9 +405,6 @@ The norm form is split complex-valued and multiplicative. The scalar part of the
 | $\tilde{Q}^* = Q_0^* e_0 + \mathbf{Q}^*$ | Split complex conjugate |
 | $\tilde{Q}^\dagger = Q_0^* e_0 - \mathbf{Q}^*$ | Hermitian conjugate |
 | $\tilde{Q}^\flat = -\tilde{Q}^\dagger$ | Anti-Hermitian conjugate |
-| $N(\tilde{Q}) = \tilde{Q} \bar{\tilde{Q}}$ | Norm form |
-| $\tilde{Q} \tilde{Q}^\dagger$, scalar part $\sum_\mu (q_\mu^2 - q'^2_\mu)$ | Hermitian form (indefinite) |
-| $\|\tilde{Q}\|_E = \sqrt{\sum_\mu (q_\mu^2 + q'^2_\mu)}$ | Euclidean norm |
 | $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$ | Split complex subspace |
 | $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$ | Quaternion subspace |
 | $\mathbb{M}_+$ | Hermitian subspace |
@@ -494,4 +420,3 @@ The norm form is split complex-valued and multiplicative. The scalar part of the
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the connection to Clifford algebras.
 - John H. Conway and Derek A. Smith, *On Quaternions and Octonions* (A K Peters, 2003), for the classification of real algebras.
 - F. Brackx, R. Delanghe, and F. Sommen, *Clifford Analysis* (Pitman, 1982), for the general Clifford analysis.
-

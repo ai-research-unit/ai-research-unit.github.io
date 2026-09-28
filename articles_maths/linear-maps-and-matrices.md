@@ -35,7 +35,7 @@ $$
 \dim_F V=\dim_F\ker T+\dim_F\operatorname{im}T, \qquad \text{that is} \qquad \dim_F V=\operatorname{null}T+\operatorname{rk}T .
 $$
 
-*Proof.* Let $u_1,\dots,u_k$ be a basis of $\ker T$. By the basis extension theorem it extends to a basis $u_1,\dots,u_k,v_1,\dots,v_r$ of $V$. The images $T(v_1),\dots,T(v_r)$ span $\operatorname{im}T$, because any $T(v)$ with $v=\sum a_i u_i+\sum b_j v_j$ equals $\sum b_j T(v_j)$. They are independent: if $\sum b_j T(v_j)=0$ then $T(\sum b_j v_j)=0$, so $\sum b_j v_j \in \ker T$ and hence is a combination of the $u_i$; independence of the full basis forces all $b_j=0$. Thus $T(v_1),\dots,T(v_r)$ is a basis of $\operatorname{im}T$, so $\operatorname{rk}T=r$ and $k+r=\dim_F V$. $\square$
+*Proof.* Let $u_1,\dots,u_k$ be a basis of $\ker T$. By the basis extension theorem it extends to a basis $u_1,\dots,u_k,v_1,\dots,v_r$ of $V$. The images $T(v_1),\dots,T(v_r)$ span $\operatorname{im}T$, because any $T(v)$ with $v=\sum a_i u_i+\sum b_j v_j$ equals $\sum b_j T(v_j)$. They are independent: if $\sum b_j T(v_j)=0$ then $T(\sum b_j v_j)=0$, so $\sum b_j v_j \in \ker T$ and hence is a combination of the $u_i$; independence of the full basis forces all $b_j=0$. Thus $T(v_1),\dots,T(v_r)$ is a basis of $\operatorname{im}T$, so $\operatorname{rk}T=r$ and $k+r=\dim_F V$.
 
 The theorem fails once $F$ is replaced by a ring, and the failure is structural: the proof extends a basis of $\ker T$ to a basis of $V$, which requires $\ker T$ to be a direct summand. Over $R=\mathbb{Z}$ the map $T:\mathbb{Z}\to\mathbb{Z}$, $T(x)=2x$, has kernel $0$ and image $2\mathbb{Z}\cong\mathbb{Z}$, and the numerical identity $1=0+1$ survives, but the subgroup $2\mathbb{Z}$ has no complement in $\mathbb{Z}$, so no basis of $\mathbb{Z}$ adapted to the kernel exists. Over a non-domain the very notion of dimension disappears; over $R=\mathbb{Z}/4\mathbb{Z}$ the map $x \mapsto 2x$ has kernel and image both equal to the two-element submodule $2R$, which is not free, so no rank is defined.
 
@@ -43,7 +43,7 @@ The theorem fails once $F$ is replaced by a ring, and the failure is structural:
 
 **Corollary.** For $T:V \to W$ with $\dim_F V=\dim_F W=n$, the following are equivalent: $T$ is injective; $T$ is surjective; $T$ is an isomorphism; $\operatorname{rk}T=n$.
 
-*Proof.* By rank–nullity, injectivity means $\dim\ker T=0$, hence $\operatorname{rk}T=n$, hence $\dim\operatorname{im}T=n$, hence $\operatorname{im}T=W$. The other implications are immediate. $\square$
+*Proof.* By rank–nullity, injectivity means $\dim\ker T=0$, hence $\operatorname{rk}T=n$, hence $\dim\operatorname{im}T=n$, hence $\operatorname{im}T=W$. The other implications are immediate.
 
 This is the finite-dimensional statement that fails in infinite dimension and over rings: the shift map on the space of sequences $(a_1,a_2,\dots)\mapsto(0,a_1,a_2,\dots)$ is injective and not surjective; and the multiplication-by-$2$ map on $\mathbb{Z}$ is injective and not surjective.
 
@@ -53,7 +53,7 @@ $$
 \operatorname{rk}S+\operatorname{rk}T-\dim_F V \le \operatorname{rk}(TS) .
 $$
 
-*Proof.* The image of $TS$ is contained in the image of $T$, so $\operatorname{rk}(TS) \le \operatorname{rk}T$; and $\operatorname{im}(TS)=T(\operatorname{im}S)$ is the image under $T$ of the subspace $\operatorname{im}S$, so $\operatorname{rk}(TS) \le \dim\operatorname{im}S=\operatorname{rk}S$. For the lower bound, the restriction of $T$ to $\operatorname{im}S$ has image $\operatorname{im}(TS)$ and kernel $\operatorname{im}S \cap \ker T$; rank–nullity applied to that restriction gives $\operatorname{rk}(TS)=\operatorname{rk}S-\dim(\operatorname{im}S\cap\ker T) \ge \operatorname{rk}S-\dim\ker T=\operatorname{rk}S+\operatorname{rk}T-\dim V$. $\square$
+*Proof.* The image of $TS$ is contained in the image of $T$, so $\operatorname{rk}(TS) \le \operatorname{rk}T$; and $\operatorname{im}(TS)=T(\operatorname{im}S)$ is the image under $T$ of the subspace $\operatorname{im}S$, so $\operatorname{rk}(TS) \le \dim\operatorname{im}S=\operatorname{rk}S$. For the lower bound, the restriction of $T$ to $\operatorname{im}S$ has image $\operatorname{im}(TS)$ and kernel $\operatorname{im}S \cap \ker T$; rank–nullity applied to that restriction gives $\operatorname{rk}(TS)=\operatorname{rk}S-\dim(\operatorname{im}S\cap\ker T) \ge \operatorname{rk}S-\dim\ker T=\operatorname{rk}S+\operatorname{rk}T-\dim V$.
 
 The second inequality is **Sylvester's rank inequality**; the first is the elementary bound. Both are used in the theory of canonical forms.
 
@@ -85,7 +85,7 @@ $$
 [T \circ S]_{\mathcal{A}}^{\mathcal{C}}=[T]_{\mathcal{B}}^{\mathcal{C}}\,[S]_{\mathcal{A}}^{\mathcal{B}} .
 $$
 
-*Proof.* Both sides have the same effect on every coordinate vector: $[T(S(u))]_{\mathcal{C}}=[T]_{\mathcal{B}}^{\mathcal{C}}[S(u)]_{\mathcal{B}}=[T]_{\mathcal{B}}^{\mathcal{C}}[S]_{\mathcal{A}}^{\mathcal{B}}[u]_{\mathcal{A}}$, and two matrices agreeing on all coordinate vectors are equal. $\square$
+*Proof.* Both sides have the same effect on every coordinate vector: $[T(S(u))]_{\mathcal{C}}=[T]_{\mathcal{B}}^{\mathcal{C}}[S(u)]_{\mathcal{B}}=[T]_{\mathcal{B}}^{\mathcal{C}}[S]_{\mathcal{A}}^{\mathcal{B}}[u]_{\mathcal{A}}$, and two matrices agreeing on all coordinate vectors are equal.
 
 So matrix multiplication is defined the way it is precisely so that it computes composition. The associativity of matrix multiplication is the associativity of composition, and the identity matrix is the matrix of the identity map in any basis.
 
@@ -99,7 +99,7 @@ $$
 [T]_{\mathcal{B}'}^{\mathcal{B}'}=P^{-1}[T]_{\mathcal{B}}^{\mathcal{B}}P .
 $$
 
-*Proof.* Compose the three maps: $\operatorname{id}_V$ from $\mathcal{B}'$ to $\mathcal{B}$, then $T$, then $\operatorname{id}_V$ from $\mathcal{B}$ to $\mathcal{B}'$. The matrix of a composition is the product of the matrices, giving $[\operatorname{id}]_{\mathcal{B}}^{\mathcal{B}'}[T]_{\mathcal{B}}^{\mathcal{B}}[\operatorname{id}]_{\mathcal{B}'}^{\mathcal{B}}=P^{-1}[T]_{\mathcal{B}}^{\mathcal{B}}P$. $\square$
+*Proof.* Compose the three maps: $\operatorname{id}_V$ from $\mathcal{B}'$ to $\mathcal{B}$, then $T$, then $\operatorname{id}_V$ from $\mathcal{B}$ to $\mathcal{B}'$. The matrix of a composition is the product of the matrices, giving $[\operatorname{id}]_{\mathcal{B}}^{\mathcal{B}'}[T]_{\mathcal{B}}^{\mathcal{B}}[\operatorname{id}]_{\mathcal{B}'}^{\mathcal{B}}=P^{-1}[T]_{\mathcal{B}}^{\mathcal{B}}P$.
 
 Two matrices $A,B$ related by $B=P^{-1}AP$ for some invertible $P$ are called **similar**, or **conjugate**; the proposition says precisely that similar matrices represent the same endomorphism in different bases. Similarity is an equivalence relation, and every invariant of an endomorphism — rank, trace, determinant, characteristic polynomial, minimal polynomial — is a similarity invariant. Deciding when two matrices are similar is the content of the theory of canonical forms, treated in the applications article of this category on the Jordan form.
 
@@ -128,7 +128,7 @@ with exactly $r$ ones on the diagonal, where $r=\operatorname{rk}T$. This normal
 *Proof.* Let $T:F^n \to F^m$ be the linear map with matrix $A$ in the standard bases, so that $\operatorname{im}T$ is the column space and $\operatorname{rk}A=\operatorname{rk}T$. The transpose $A^{\mathsf{T}}$ is the matrix of the linear map $T^*:F^m \to F^n$ given by $T^*(y)=A^{\mathsf{T}}y$, whose image is exactly the row space of $A$. Hence row rank $=\operatorname{rk}T^*$. Now $\ker T^*=(\operatorname{im}T)^{\perp}=\{y : y^{\mathsf{T}}Ax=0 \text{ for all } x \in F^n\}$, which has dimension $m-\dim\operatorname{im}T=m-\operatorname{rk}A$; applying rank–nullity to $T^*:F^m \to F^n$ gives
 
 $$
-\operatorname{rk}T^*=m-\dim\ker T^*=m-(m-\operatorname{rk}A)=\operatorname{rk}A . \qquad \square
+\operatorname{rk}T^*=m-\dim\ker T^*=m-(m-\operatorname{rk}A)=\operatorname{rk}A .
 $$
 
 Because the two ranks agree, one writes $\operatorname{rk}A$ without qualification. The rank is the number of pivots in any row-echelon form of $A$, equivalently the size of the largest invertible square submatrix — the last equivalence is proved next.
@@ -139,7 +139,7 @@ Because the two ranks agree, one writes $\operatorname{rk}A$ without qualificati
 
 **Theorem.** The linear rank equals the determinantal rank.
 
-*Proof.* If columns $j_1,\dots,j_k$ are linearly dependent, then some nontrivial combination of them is zero, so every $k \times k$ minor using those columns has dependent columns and vanishes. Conversely, if a set of $k$ columns is independent, they span a $k$-dimensional space and the $m \times k$ matrix formed from them has rank $k$; among its rows some $k$ are independent, and the corresponding $k \times k$ minor is nonzero. Hence the largest size of a nonzero minor equals the largest size of an independent set of columns. $\square$
+*Proof.* If columns $j_1,\dots,j_k$ are linearly dependent, then some nontrivial combination of them is zero, so every $k \times k$ minor using those columns has dependent columns and vanishes. Conversely, if a set of $k$ columns is independent, they span a $k$-dimensional space and the $m \times k$ matrix formed from them has rank $k$; among its rows some $k$ are independent, and the corresponding $k \times k$ minor is nonzero. Hence the largest size of a nonzero minor equals the largest size of an independent set of columns.
 
 Over a field this gives the practical criterion: $\operatorname{rk}A \ge k$ if and only if some $k \times k$ minor is nonzero, and $\operatorname{rk}A=k$ if and only if some $k \times k$ minor is nonzero and every $(k+1)\times(k+1)$ minor vanishes. Over a ring the minors still generate the determinantal ideals $D_k(A)$ of the modules-over-a-PID article, but they no longer determine the module: over $\mathbb{Z}$ the matrices $(2)$ and $(1)$ have the same rank $1$ and cokernels $\mathbb{Z}/2\mathbb{Z}$ and $0$, so the rank of a matrix over a ring does not decide the structure of the quotient it defines.
 
@@ -149,7 +149,7 @@ Rank has a characterisation by factorisation that is often the cleanest.
 
 **Proposition.** $\operatorname{rk}T=r$ if and only if $T=S \circ R$ where $R:V \to F^r$ is surjective and $S:F^r \to W$ is injective.
 
-*Proof.* If $\operatorname{rk}T=r$, choose a basis $w_1,\dots,w_r$ of $\operatorname{im}T$ and define $R(v)$ to be the coordinates of $T(v)$ in that basis, so that $R$ is surjective; define $S$ on the standard basis of $F^r$ by $e_i \mapsto w_i$, so that $S$ is injective and $T=SR$. Conversely, if $T=SR$ with $R$ surjective and $S$ injective, then $\operatorname{im}T=S(\operatorname{im}R)=S(F^r) \cong F^r$. $\square$
+*Proof.* If $\operatorname{rk}T=r$, choose a basis $w_1,\dots,w_r$ of $\operatorname{im}T$ and define $R(v)$ to be the coordinates of $T(v)$ in that basis, so that $R$ is surjective; define $S$ on the standard basis of $F^r$ by $e_i \mapsto w_i$, so that $S$ is injective and $T=SR$. Conversely, if $T=SR$ with $R$ surjective and $S$ injective, then $\operatorname{im}T=S(\operatorname{im}R)=S(F^r) \cong F^r$.
 
 ## The Dual Map and the Transpose
 
@@ -197,7 +197,7 @@ $$
 
 where $[A\mid b]$ is the augmented matrix.
 
-*Proof.* The column space of $[A\mid b]$ contains the column space of $A$ and is spanned by it together with $b$; the two have the same dimension exactly when $b$ lies in the column space of $A$, which is consistency. $\square$
+*Proof.* The column space of $[A\mid b]$ contains the column space of $A$ and is spanned by it together with $b$; the two have the same dimension exactly when $b$ lies in the column space of $A$, which is consistency.
 
 **Corollary.** If $m=n$ and $A$ is invertible, the system has a unique solution $x=A^{-1}b$. If $F$ is finite of order $q$ and $A$ is consistent with $\operatorname{null}A=k$, the system has $q^k$ solutions.
 
@@ -239,7 +239,7 @@ the sum running over the symmetric group $S_n$ and $\operatorname{sgn}$ being th
 
 **Proposition.** (i) $\operatorname{tr}(AB)=\operatorname{tr}(BA)$, hence $\operatorname{tr}(P^{-1}AP)=\operatorname{tr}A$. (ii) $\det(AB)=\det A \det B$, hence $\det(P^{-1}AP)=\det A$. (iii) $A$ is invertible if and only if $\det A \neq 0$, and then $\det(A^{-1})=(\det A)^{-1}$. (iv) $\operatorname{rk}A$ is the largest $r$ for which some $r \times r$ minor of $A$ is nonzero.
 
-*Proof.* (i) Both sides are $\sum_{i,j}a_{ij}b_{ji}$. (ii) is proved in the article of this category on the special linear group, where the determinant is characterised as the unique alternating multilinear function of the columns normalised to $\det I=1$. (iii) If $AB=I$ then $\det A \det B=1$, so $\det A \neq 0$; conversely a nonzero determinant admits the adjugate formula $A^{-1}=(\det A)^{-1}A^{\mathrm{adj}}$ with $A A^{\mathrm{adj}}=(\det A)I$. (iv) is the theorem on minors above. $\square$
+*Proof.* (i) Both sides are $\sum_{i,j}a_{ij}b_{ji}$. (ii) is proved in the article of this category on the special linear group, where the determinant is characterised as the unique alternating multilinear function of the columns normalised to $\det I=1$. (iii) If $AB=I$ then $\det A \det B=1$, so $\det A \neq 0$; conversely a nonzero determinant admits the adjugate formula $A^{-1}=(\det A)^{-1}A^{\mathrm{adj}}$ with $A A^{\mathrm{adj}}=(\det A)I$. (iv) is the theorem on minors above.
 
 Trace and determinant are therefore similarity invariants, unlike the individual matrix entries, and they are the first two coefficients of the characteristic polynomial $c_A(x)=\det(xI-A)=x^n-(\operatorname{tr}A)x^{n-1}+\cdots+(-1)^n\det A$. They are not complete invariants: the matrices $\operatorname{diag}(1,1)$ and $\operatorname{diag}(2,0)$ over $\mathbb{Q}$ have determinants $1$ and $0$ and are trivially different, while the Jordan block $\begin{pmatrix}\lambda&1\\0&\lambda\end{pmatrix}$ and the scalar $\lambda I_2$ have the same trace and determinant and are not similar. Similarity classification requires the full characteristic and minimal polynomials and is not covered here and its applications.
 

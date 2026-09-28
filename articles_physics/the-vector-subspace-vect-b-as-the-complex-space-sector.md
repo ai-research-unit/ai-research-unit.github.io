@@ -4,7 +4,7 @@
 
 This article is about the **vector subspace** $\mathrm{Vect}(\mathbb{B})$, the anti-fixed space of quaternion conjugation: the set of biquaternions with vanishing scalar part.
 
-$\mathrm{Vect}(\mathbb{B})$ is spanned by the three vector units $e_1, e_2, e_3$ with complex coefficients, so its elements are the pure-vector biquaternions. It is six-dimensional over the reals but **three-dimensional over the complex numbers**, because multiplication by the scalar imaginary carries it into itself: it is a complex vector space, and this is what the name "complex space sector" records. It is not a subalgebra — the square of a vector unit is a scalar — but it **is** a Lie algebra, and in fact it is the algebra's derived subspace, spanned by all commutators. Its norm form is the complex quadratic form $z_1^2 + z_2^2 + z_3^2$, and it therefore has a complex null cone rather than a real one.
+$\mathrm{Vect}(\mathbb{B})$ is spanned by the three vector units $e_1, e_2, e_3$ with complex coefficients, so its elements are the pure-vector biquaternions. It is six-dimensional over the reals but **three-dimensional over the complex numbers**, because multiplication by the scalar imaginary carries it into itself: it is a complex vector space, and this is what the name "complex space sector" records. It is not a subalgebra — the square of a vector unit is a scalar — but it **is** a Lie algebra, and in fact it is the algebra's derived subspace, spanned by all commutators. Its biquaternion norm is the complex quadratic form $z_1^2 + z_2^2 + z_3^2$, and it therefore has a complex null cone rather than a real one.
 
 The article describes the subspace on its own terms: its definition and basis, its algebraic properties, the reading that gives it its name, its Lie-algebraic structure, and the physical objects it carries.
 
@@ -101,7 +101,7 @@ $$
 
 which lies outside the subspace. More generally the product of two pure-vector biquaternions has a scalar part equal to $-\mathbf{u}\cdot\mathbf{w}$ (with signs fixed by the conventions), so the subspace is not closed under multiplication. It is closed under multiplication by $i$, and it is closed under the commutator, but not under the product.
 
-**Complex quadratic norm form.** Quaternion conjugation negates the vector part, so for a pure vector $\bar{\tilde{Q}} = -\tilde{Q}$ and the norm form is minus the square:
+**Complex quadratic biquaternion norm.** Quaternion conjugation negates the vector part, so for a pure vector $\bar{\tilde{Q}} = -\tilde{Q}$ and the biquaternion norm is minus the square:
 
 $$
 N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = -\tilde{Q}^2 = (z_1^2 + z_2^2 + z_3^2)\,e_0 .
@@ -121,7 +121,7 @@ $$
 
 so it is nilpotent, and a fortiori a zero divisor. The nilpotent directions of the subspace are precisely the null directions of the complex form.
 
-**No Hermitian structure.** Because the norm form is complex rather than Hermitian, the subspace carries no positive definite form of its own. Its directions are not divided into timelike and spacelike classes; instead they are divided into null and non-null with respect to a complex form, and the non-null directions have no ordering.
+**No Hermitian structure.** Because the biquaternion norm is complex rather than Hermitian, the subspace carries no positive definite form of its own. Its directions are not divided into timelike and spacelike classes; instead they are divided into null and non-null with respect to a complex form, and the non-null directions have no ordering.
 
 ## Physical Meaning
 
@@ -149,7 +149,7 @@ $$
 
 and in fact the two spaces coincide: the commutators of the basis elements span a space of real dimension $6$, which is the dimension of the subspace. So the vector subspace is exactly the derived subspace of $\mathbb{B}$ — the smallest subspace containing all commutators. This gives an intrinsic characterization of the subspace that does not mention the vector units at all: it is the set of elements that can be written as $[\tilde{Q},\tilde{Y}]$, equivalently the elements with vanishing scalar part.
 
-**The Lorentz algebra.** The six real dimensions of the subspace also carry the generators of the Lorentz group: the three real vector units $e_1, e_2, e_3$ generate rotations, and the three imaginary vector units $ie_1, ie_2, ie_3$ generate boosts. Their brackets, listed above, are the brackets of the Lorentz algebra $\mathfrak{so}(1,3)$, written in the complex form in which rotations and boosts are the two real three-dimensional parts of a single complex three-dimensional algebra. The same object — a complex three-vector — therefore carries both the field strength and the generators of the transformations that rotate it, which is the reason the field strength is naturally a representation of the Lorentz group of a kind that a four-vector is not.
+**The Lorentz algebra.** The six real dimensions of the subspace also carry the generators of the Lorentz group: the three real vector units $e_1, e_2, e_3$ generate rotations, and the three imaginary vector units $ie_1, ie_2, ie_3$ generate boosts. Their brackets, listed above, are the brackets of the Lorentz algebra $\mathrm{SO}(1,3)$, written in the complex form in which rotations and boosts are the two real three-dimensional parts of a single complex three-dimensional algebra. The same object — a complex three-vector — therefore carries both the field strength and the generators of the transformations that rotate it, which is the reason the field strength is naturally a representation of the Lorentz group of a kind that a four-vector is not.
 
 **The Hodge dual as the complex structure.** On the field-strength elements, the Hodge dual acts as multiplication by $-i$,
 
@@ -171,7 +171,7 @@ $$
 
 whose three components are complex. The corresponding biquaternion is a pure-vector element of $\mathrm{Vect}(\mathbb{B})$, so the field strength lives in the sector, not in the four-vector sector. The complex coefficients are not a convenience: they are the three complex dimensions of the subspace, and the electric and magnetic parts are the real and imaginary parts of one complex object.
 
-The complex null cone of the norm form has a physical reading in this picture. Its elements are the null field configurations, and the element $e_1 + ie_2$, whose square vanishes, is the algebraic prototype: the norm $\mathbf{V}\cdot\mathbf{V} = z_1^2 + z_2^2 + z_3^2$ is the complex combination of the two classical invariants of the electromagnetic field, $I_1 = \mathbf{E}^2 - c^2\mathbf{B}^2$ and $I_2 = c\,\mathbf{E}\cdot\mathbf{B}$, so the vanishing of the norm form is the joint vanishing of both field invariants. Because the form is complex, its zero set is four-real-dimensional, which is why the null configurations are not a single cone of directions but a richer structure.
+The complex null cone of the biquaternion norm has a physical reading in this picture. Its elements are the null field configurations, and the element $e_1 + ie_2$, whose square vanishes, is the algebraic prototype: the norm $\mathbf{V}\cdot\mathbf{V} = z_1^2 + z_2^2 + z_3^2$ is the complex combination of the two classical invariants of the electromagnetic field, $I_1 = \mathbf{E}^2 - c^2\mathbf{B}^2$ and $I_2 = c\,\mathbf{E}\cdot\mathbf{B}$, so the vanishing of the biquaternion norm is the joint vanishing of both field invariants. Because the form is complex, its zero set is four-real-dimensional, which is why the null configurations are not a single cone of directions but a richer structure.
 
 ## Summary
 
@@ -179,7 +179,7 @@ The vector subspace $\mathrm{Vect}(\mathbb{B})$ is the set of biquaternions with
 
 It is not a subalgebra — the square of a vector unit is $-e_0$ — but it is a Lie subalgebra under the commutator, and in fact it is exactly the derived subspace $[\mathbb{B},\mathbb{B}]$, equivalently the set of elements with vanishing scalar part.
 
-Its norm form is the complex quadratic form $z_1^2 + z_2^2 + z_3^2$, which is not Hermitian and not real-valued; it vanishes on a complex null cone of real dimension $4$, so the subspace contains zero divisors, the nilpotent element $e_1 + ie_2$ being the prototype. There is no positive definite or indefinite real form, and hence no timelike/spacelike division of directions.
+Its biquaternion norm is the complex quadratic form $z_1^2 + z_2^2 + z_3^2$, which is not Hermitian and not real-valued; it vanishes on a complex null cone of real dimension $4$, so the subspace contains zero divisors, the nilpotent element $e_1 + ie_2$ being the prototype. There is no positive definite or indefinite real form, and hence no timelike/spacelike division of directions.
 
 Physically the subspace carries the **field strength** — the Riemann–Silberstein complex three-vector $\mathbf{E} + ic\mathbf{B}$ — and the **Lorentz generators**, the three rotations $e_k$ and the three boosts $ie_k$. The complex structure is the Hodge dual and the electric–magnetic duality rotation.
 
@@ -195,7 +195,7 @@ Physically the subspace carries the **field strength** — the Riemann–Silbers
 | $e_k^2 = -e_0$ | Products leave the subspace: it is not a subalgebra |
 | $[e_1,e_2] = 2e_3$, $[e_1,ie_2] = 2ie_3$, $[ie_1,ie_2] = -2e_3$ | Brackets close: a Lie subalgebra |
 | $[\mathbb{B},\mathbb{B}] = \mathrm{Vect}(\mathbb{B})$ | The subspace is the derived subspace |
-| $N(\tilde{Q}) = (z_1^2+z_2^2+z_3^2)e_0$ | Complex quadratic norm form; not Hermitian |
+| $N(\tilde{Q}) = (z_1^2+z_2^2+z_3^2)e_0$ | Complex quadratic biquaternion norm; not Hermitian |
 | $z_1^2+z_2^2+z_3^2 = 0$ | Complex null cone; real dimension $4$; zero divisors |
 | $(e_1+ie_2)^2 = 0$ | Nilpotent element; prototype of the null cone |
 | $\mathbf{V} = \mathbf{E} + ic\,\mathbf{B}$ | Riemann–Silberstein vector; the field strength |
@@ -208,5 +208,5 @@ Physically the subspace carries the **field strength** — the Riemann–Silbers
 - Carsten A. Mead, *Collective Electrodynamics* (MIT, 2000), for a modern account of the Riemann–Silberstein vector.
 - *Conventions in the Biquaternion Universe* and *Relations Between Subspaces*, the companion articles, for the notation and for the place of $\mathrm{Vect}(\mathbb{B})$ among the six subspaces.
 - Chris Doran and Anthony Lasenby, *Geometric Algebra for Physicists* (Cambridge, 2003), for bivectors, the Hodge dual, and the Lorentz algebra in the spacetime algebra.
-- Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the complexification of $\mathfrak{su}(2)$.
+- Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the complexification of $\mathrm{SU}(2)$.
 - Roger Penrose and Wolfgang Rindler, *Spinors and Space-Time* (Cambridge, 1984), for the self-dual and anti-self-dual decomposition of the field strength.

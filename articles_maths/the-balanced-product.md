@@ -59,7 +59,7 @@ $$
 e_{(m+m',n)}-e_{(m,n)}-e_{(m',n)}, \qquad e_{(m,n+n')}-e_{(m,n)}-e_{(m,n')}, \qquad e_{(mr,n)}-e_{(m,rn)} .
 $$
 
-Put $M \otimes_R N=F/K$ and $m \otimes n=e_{(m,n)}+K$. By construction the map $(m,n) \mapsto m \otimes n$ is balanced and the elementary tensors generate $M \otimes_R N$, because the $e_{(m,n)}$ generate $F$. Given a balanced $f:M \times N \to P$, the universal property of $F$ gives a homomorphism $\tilde f:F \to P$ with $\tilde f(e_{(m,n)})=f(m,n)$; the three displayed relations are killed by the balanced condition, so $\tilde f$ factors through $K$, giving $\bar f$. Uniqueness of $\bar f$ follows because the $m \otimes n$ generate. For uniqueness of $T$, apply the property to the balanced map $\otimes':M \times N \to T'$ to obtain a map $T \to T'$ inverse to the map obtained symmetrically. $\square$
+Put $M \otimes_R N=F/K$ and $m \otimes n=e_{(m,n)}+K$. By construction the map $(m,n) \mapsto m \otimes n$ is balanced and the elementary tensors generate $M \otimes_R N$, because the $e_{(m,n)}$ generate $F$. Given a balanced $f:M \times N \to P$, the universal property of $F$ gives a homomorphism $\tilde f:F \to P$ with $\tilde f(e_{(m,n)})=f(m,n)$; the three displayed relations are killed by the balanced condition, so $\tilde f$ factors through $K$, giving $\bar f$. Uniqueness of $\bar f$ follows because the $m \otimes n$ generate. For uniqueness of $T$, apply the property to the balanced map $\otimes':M \times N \to T'$ to obtain a map $T \to T'$ inverse to the map obtained symmetrically.
 
 ### Elementary Tensors
 
@@ -75,7 +75,7 @@ Put $M \otimes_R N=F/K$ and $m \otimes n=e_{(m,n)}+K$. By construction the map $
 
 (iv) $r(m \otimes n)=(rm) \otimes n=m \otimes (rn)$ when $R$ is commutative.
 
-*Proof.* All are the defining relations in $F/K$, read in the quotient. For (iii): $0 \otimes n=(0+0) \otimes n=0 \otimes n+0 \otimes n$, so $0 \otimes n=0$ by cancellation in the abelian group; similarly for $m \otimes 0$. $\square$
+*Proof.* All are the defining relations in $F/K$, read in the quotient. For (iii): $0 \otimes n=(0+0) \otimes n=0 \otimes n+0 \otimes n$, so $0 \otimes n=0$ by cancellation in the abelian group; similarly for $m \otimes 0$.
 
 **Remark.** The relations are not a definition of $M \otimes_R N$ as a set of symbols: the scalars $r$ do not exist inside $F$, and the quotient imposes only the relations above. In particular distinct elementary tensors can coincide, as $m \otimes n=(mr) \otimes n'$ when $n=rn'$.
 
@@ -89,7 +89,7 @@ $$
 
 For a general ring $R$ with $M$ a right module and $N$ a left module, the same statement holds with $\operatorname{Bilin}_R$ replaced by $\operatorname{Bal}_R$ and $\operatorname{Hom}_R$ by $\operatorname{Hom}_{\mathbb{Z}}$.
 
-*Proof.* The map displayed is well defined because $m \otimes n$ depends on $(m,n)$ and is balanced. It is injective because the elementary tensors generate $M \otimes_R N$, so two maps agreeing on all of them agree. It is surjective by the universal property. Naturality is immediate from the definitions. $\square$
+*Proof.* The map displayed is well defined because $m \otimes n$ depends on $(m,n)$ and is balanced. It is injective because the elementary tensors generate $M \otimes_R N$, so two maps agreeing on all of them agree. It is surjective by the universal property. Naturality is immediate from the definitions.
 
 This adjunction-like statement is the working form of the universal property: it converts the construction of balanced maps into the construction of linear maps, and it is the source of every functoriality statement below.
 
@@ -103,11 +103,11 @@ $$
 
 Moreover $\operatorname{id}_M \otimes \operatorname{id}_N=\operatorname{id}_{M \otimes N}$ and $(\alpha' \otimes \beta')(\alpha \otimes \beta)=(\alpha'\alpha) \otimes (\beta'\beta)$ whenever the composites are defined. So the balanced product is a functor of two variables.
 
-*Proof.* Apply the universal property to the balanced map $(m,n) \mapsto \alpha(m) \otimes \beta(n)$ to obtain $\alpha \otimes \beta$, and the stated identities follow because both sides agree on elementary tensors, which generate. $\square$
+*Proof.* Apply the universal property to the balanced map $(m,n) \mapsto \alpha(m) \otimes \beta(n)$ to obtain $\alpha \otimes \beta$, and the stated identities follow because both sides agree on elementary tensors, which generate.
 
 **Proposition (additivity).** With $\alpha,\alpha':M \to M'$ and $\beta:N \to N'$, one has $(\alpha+\alpha') \otimes \beta=\alpha \otimes \beta+\alpha' \otimes \beta$ and $\alpha \otimes (\beta+\beta')=\alpha \otimes \beta+\alpha \otimes \beta'$. Hence $\alpha \otimes \beta$ depends $R$-linearly on each variable, and the functors $M \otimes_R -$ and $-\otimes_R N$ are additive functors.
 
-*Proof.* Both sides agree on elementary tensors: $((\alpha+\alpha') \otimes \beta)(m \otimes n)=(\alpha(m)+\alpha'(m)) \otimes \beta(n)$, which by bilinearity of $\otimes$ equals $\alpha(m) \otimes \beta(n)+\alpha'(m) \otimes \beta(n)$, the value of the sum on $m \otimes n$. $\square$
+*Proof.* Both sides agree on elementary tensors: $((\alpha+\alpha') \otimes \beta)(m \otimes n)=(\alpha(m)+\alpha'(m)) \otimes \beta(n)$, which by bilinearity of $\otimes$ equals $\alpha(m) \otimes \beta(n)+\alpha'(m) \otimes \beta(n)$, the value of the sum on $m \otimes n$.
 
 ## Symmetry and Associativity
 
@@ -121,7 +121,7 @@ $$
 
 with $\sigma^2=\operatorname{id}$.
 
-*Proof.* Both $(m,n) \mapsto n \otimes m$ and its inverse $(n,m) \mapsto m \otimes n$ are balanced, since $R$ is commutative; the universal property gives mutually inverse maps. $\square$
+*Proof.* Both $(m,n) \mapsto n \otimes m$ and its inverse $(n,m) \mapsto m \otimes n$ are balanced, since $R$ is commutative; the universal property gives mutually inverse maps.
 
 The commutativity hypothesis is necessary for symmetry in this form: for a general ring $M \otimes_R N$ and $N \otimes_R M$ can be very different, the first being a balanced product of a right and a left module and the second of a left and a right one.
 
@@ -133,7 +133,7 @@ $$
 (M \otimes_R N) \otimes_R P \;\cong\; M \otimes_R (N \otimes_R P), \qquad (m \otimes n) \otimes p \longmapsto m \otimes (n \otimes p).
 $$
 
-*Proof.* Fix $p \in P$. The map $(m,n) \mapsto m \otimes (n \otimes p)$ is balanced in $m,n$, so it induces $M \otimes_R N \to M \otimes_R(N \otimes_R P)$ sending $m \otimes n$ to $m \otimes(n \otimes p)$; this is additive in $p$, so the map $\Psi:(M \otimes_R N) \times P \to M \otimes_R(N \otimes_R P)$, $(t,p) \mapsto \Psi_p(t)$, is balanced and induces a map on $(M \otimes_R N) \otimes_R P$ sending $(m \otimes n) \otimes p$ to $m \otimes(n \otimes p)$. The same construction in the other order gives an inverse, since the two agree on the generating elementary tensors. $\square$
+*Proof.* Fix $p \in P$. The map $(m,n) \mapsto m \otimes (n \otimes p)$ is balanced in $m,n$, so it induces $M \otimes_R N \to M \otimes_R(N \otimes_R P)$ sending $m \otimes n$ to $m \otimes(n \otimes p)$; this is additive in $p$, so the map $\Psi:(M \otimes_R N) \times P \to M \otimes_R(N \otimes_R P)$, $(t,p) \mapsto \Psi_p(t)$, is balanced and induces a map on $(M \otimes_R N) \otimes_R P$ sending $(m \otimes n) \otimes p$ to $m \otimes(n \otimes p)$. The same construction in the other order gives an inverse, since the two agree on the generating elementary tensors.
 
 Associativity makes it meaningful to write $M_1 \otimes_R \cdots \otimes_R M_k$ without parentheses and to speak of the tensor product of a family; the general element is a sum of $k$-fold elementary tensors.
 
@@ -153,7 +153,7 @@ $$
 M \otimes_R N \cong R^{mn} .
 $$
 
-*Proof.* The map $R \times M \to M$, $(r,m) \mapsto rm$, is balanced and induces $R \otimes_R M \to M$ with $r \otimes m \mapsto rm$; the map $m \mapsto 1 \otimes m$ is its inverse because $r \otimes m=r(1 \otimes m)$ and $1 \otimes m$ recovers $m$. For the rank formula, if $e_1,\dots,e_m$ and $f_1,\dots,f_n$ are bases then the $mn$ elements $e_i \otimes f_j$ form a basis: they generate, since elementary tensors generate and $(\sum r_ie_i) \otimes (\sum s_jf_j)=\sum_{i,j}r_is_j\,e_i \otimes f_j$; and they are independent because the balanced map $\bigl(\sum_ir_ie_i,\sum_js_jf_j\bigr) \mapsto (r_is_j)_{i,j}$ from $R^m \times R^n$ to $R^{mn}$ induces a homomorphism $R^m \otimes_R R^n \to R^{mn}$ carrying $e_i \otimes f_j$ to the standard basis vector $E_{ij}$, so a relation $\sum_{i,j}c_{ij}\,e_i \otimes f_j=0$ would give $\sum_{i,j}c_{ij}E_{ij}=0$, hence $c_{ij}=0$ for all $i,j$. Hence $\operatorname{rank}_R(M \otimes_R N)=mn=\operatorname{rank}_R M \cdot \operatorname{rank}_R N$ for free modules. $\square$
+*Proof.* The map $R \times M \to M$, $(r,m) \mapsto rm$, is balanced and induces $R \otimes_R M \to M$ with $r \otimes m \mapsto rm$; the map $m \mapsto 1 \otimes m$ is its inverse because $r \otimes m=r(1 \otimes m)$ and $1 \otimes m$ recovers $m$. For the rank formula, if $e_1,\dots,e_m$ and $f_1,\dots,f_n$ are bases then the $mn$ elements $e_i \otimes f_j$ form a basis: they generate, since elementary tensors generate and $(\sum r_ie_i) \otimes (\sum s_jf_j)=\sum_{i,j}r_is_j\,e_i \otimes f_j$; and they are independent because the balanced map $\bigl(\sum_ir_ie_i,\sum_js_jf_j\bigr) \mapsto (r_is_j)_{i,j}$ from $R^m \times R^n$ to $R^{mn}$ induces a homomorphism $R^m \otimes_R R^n \to R^{mn}$ carrying $e_i \otimes f_j$ to the standard basis vector $E_{ij}$, so a relation $\sum_{i,j}c_{ij}\,e_i \otimes f_j=0$ would give $\sum_{i,j}c_{ij}E_{ij}=0$, hence $c_{ij}=0$ for all $i,j$. Hence $\operatorname{rank}_R(M \otimes_R N)=mn=\operatorname{rank}_R M \cdot \operatorname{rank}_R N$ for free modules.
 
 The rank formula requires $R$ to have the invariant basis number property, which is used in the companion article on direct sums, free modules and rank; over a commutative ring it holds, and the phrase $\operatorname{rank}_R$ is unambiguous.
 
@@ -167,7 +167,7 @@ $$
 
 This is the form in which the tensor product is computed in practice: it identifies the tensor product with a quotient ring as a quotient of $M$.
 
-*Proof.* The map $R/I \times M \to M/IM$, $(r+I,m) \mapsto rm+IM$, is balanced and surjective. The map $M/IM \to R/I \otimes_R M$, $m+IM \mapsto 1 \otimes m$, is well defined, since for $a \in I$ one has $1 \otimes am=a(1 \otimes m)=(a+I) \otimes m=0$. The two are inverse, because $r \otimes m=r(1 \otimes m) \mapsto rm+IM$ and $m+IM \mapsto 1 \otimes m \mapsto m+IM$. $\square$
+*Proof.* The map $R/I \times M \to M/IM$, $(r+I,m) \mapsto rm+IM$, is balanced and surjective. The map $M/IM \to R/I \otimes_R M$, $m+IM \mapsto 1 \otimes m$, is well defined, since for $a \in I$ one has $1 \otimes am=a(1 \otimes m)=(a+I) \otimes m=0$. The two are inverse, because $r \otimes m=r(1 \otimes m) \mapsto rm+IM$ and $m+IM \mapsto 1 \otimes m \mapsto m+IM$.
 
 ### Direct Sums
 
@@ -179,7 +179,7 @@ $$
 
 is an isomorphism, so the tensor product commutes with arbitrary direct sums in each variable.
 
-*Proof.* The displayed map is induced by the universal property from the balanced map $((m_i),n) \mapsto (m_i \otimes n)$, which is well defined because the families are finitely supported; it is surjective because the elementary tensors of the direct sum are images. The inclusions $\iota_i:M_i \to \bigoplus_iM_i$ give $\iota_i \otimes \operatorname{id}$, and the sum of these over finitely supported families is a homomorphism $\bigoplus_i(M_i \otimes_R N) \to (\bigoplus_iM_i) \otimes_R N$ inverse to it, the two agreeing on elementary tensors. $\square$
+*Proof.* The displayed map is induced by the universal property from the balanced map $((m_i),n) \mapsto (m_i \otimes n)$, which is well defined because the families are finitely supported; it is surjective because the elementary tensors of the direct sum are images. The inclusions $\iota_i:M_i \to \bigoplus_iM_i$ give $\iota_i \otimes \operatorname{id}$, and the sum of these over finitely supported families is a homomorphism $\bigoplus_i(M_i \otimes_R N) \to (\bigoplus_iM_i) \otimes_R N$ inverse to it, the two agreeing on elementary tensors.
 
 ### Torsion Examples
 
@@ -189,7 +189,7 @@ is an isomorphism, so the tensor product commutes with arbitrary direct sums in 
 
 (ii) $\mathbb{Q} \otimes_{\mathbb{Z}} \mathbb{Z}/n\mathbb{Z}=0$ for $n \ge 1$.
 
-*Proof.* (i) In the balanced product $1 \otimes 1$ generates, since $(k \bmod m) \otimes(\ell \bmod n)=k\ell(1 \otimes 1)$; and $m(1 \otimes 1)=m \cdot 1 \otimes 1=0$, $n(1 \otimes 1)=1 \otimes n\cdot 1=0$, so $d(1 \otimes 1)=0$ by Bézout, giving a surjection $\mathbb{Z}/d\mathbb{Z} \to \mathbb{Z}/m \otimes \mathbb{Z}/n$. For injectivity, the map $\mathbb{Z}/m \times \mathbb{Z}/n \to \mathbb{Z}/d$, $(k,\ell) \mapsto k\ell \bmod d$, is balanced and sends $(1,1)$ to $1$. (ii) Every $q \otimes(k \bmod n)$ equals $(q/n) \otimes (nk \bmod n)=(q/n) \otimes 0=0$, since $\mathbb{Q}$ is divisible and $n$ is invertible in it: writing $q=n(q/n)$ moves the scalar across. $\square$
+*Proof.* (i) In the balanced product $1 \otimes 1$ generates, since $(k \bmod m) \otimes(\ell \bmod n)=k\ell(1 \otimes 1)$; and $m(1 \otimes 1)=m \cdot 1 \otimes 1=0$, $n(1 \otimes 1)=1 \otimes n\cdot 1=0$, so $d(1 \otimes 1)=0$ by Bézout, giving a surjection $\mathbb{Z}/d\mathbb{Z} \to \mathbb{Z}/m \otimes \mathbb{Z}/n$. For injectivity, the map $\mathbb{Z}/m \times \mathbb{Z}/n \to \mathbb{Z}/d$, $(k,\ell) \mapsto k\ell \bmod d$, is balanced and sends $(1,1)$ to $1$. (ii) Every $q \otimes(k \bmod n)$ equals $(q/n) \otimes (nk \bmod n)=(q/n) \otimes 0=0$, since $\mathbb{Q}$ is divisible and $n$ is invertible in it: writing $q=n(q/n)$ moves the scalar across.
 
 **Example.** $\mathbb{Z}/2\mathbb{Z} \otimes_{\mathbb{Z}} \mathbb{Z}/3\mathbb{Z}=0$ is the case $d=1$: the tensor product of two finite abelian groups of coprime order vanishes, so the tensor product does not preserve the information contained in the factors. This is the first sign that the functor is not left exact, a phenomenon taken up in the companion article on flatness and exactness.
 

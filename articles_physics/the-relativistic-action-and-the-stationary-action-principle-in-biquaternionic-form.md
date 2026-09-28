@@ -4,13 +4,13 @@
 
 The equations of the relativistic framework can be reached in two ways. They can be written down, as the operator article writes the d'Alembertian and the spin articles write their wave equations, or they can be **derived** from a single scalar functional by the requirement that it be stationary. This article takes the second route: it fixes the biquaternionic action, states the stationary-action principle in the form the algebra requires, and derives from it the free-particle worldline, the coupling to an external potential, the second-order field equation, and the Maxwell and first-order actions. The result is the variational counterpart of the operator article: where that article establishes the operator and its kernels, this one shows that the operator is what stationarity produces.
 
-Two features of the framework shape the principle. First, an action must be a **real scalar**, and a biquaternion-valued Lagrangian is not a scalar until it is paired. The pairings available are the ones the involution lattice supplies — the real part of the scalar part, $\mathrm{Re}\,\mathrm{Sc}$, for a bilinear invariant, and the Hermitian form $\mathrm{Sc}(\tilde{\Phi}^\dagger\tilde{\Phi})$ for a complex field — and the choice of pairing is the choice of which equation the variation returns. Second, the free-particle action is built from the **norm form**, $S = -mc\int\sqrt{-N(d\tilde{Q})}$, so that the invariant interval, the four-velocity normalisation, and the mass shell are all statements about $N$. The field action is built from the same norm form with the gradient inserted, $\mathrm{Sc}[(\bar{\tilde{\nabla}}\tilde{\Phi}^\dagger)(\tilde{\nabla}\tilde{\Phi})]$, and this is why its Euler–Lagrange equation is the d'Alembertian equation of the operator article. The variational and the operator routes meet at the norm form.
+Two features of the framework shape the principle. First, an action must be a **real scalar**, and a biquaternion-valued Lagrangian is not a scalar until it is paired. The pairings available are the ones the involution lattice supplies — the real part of the scalar part, $\mathrm{Re}\,\mathrm{Sc}$, for a bilinear invariant, and the Hermitian form $\mathrm{Sc}(\tilde{\Phi}^\dagger\tilde{\Phi})$ for a complex field — and the choice of pairing is the choice of which equation the variation returns. Second, the free-particle action is built from the **biquaternion norm**, $S = -mc\int\sqrt{-N(d\tilde{Q})}$, so that the invariant interval, the four-velocity normalisation, and the mass shell are all statements about $N$. The field action is built from the same biquaternion norm with the gradient inserted, $\mathrm{Sc}[(\bar{\tilde{\nabla}}\tilde{\Phi}^\dagger)(\tilde{\nabla}\tilde{\Phi})]$, and this is why its Euler–Lagrange equation is the d'Alembertian equation of the operator article. The variational and the operator routes meet at the biquaternion norm.
 
-The scope is relativistic. The non-relativistic action belongs to the non-relativistic theory; the classical relativistic particle, its light cone, and the Lorentz group as norm-form automorphisms belong to the non-quantum relativistic theory; and the spin-specific equations belong to the spin articles. What is established here is the common functional apparatus: the free-particle action and its coupling, the real field Lagrangian, the biquaternionic Euler–Lagrange equation, and the symmetry statements. The conserved current and the stress–energy tensor that follow from the symmetries are developed in the companion article on Noether's theorem, which this article supplies the action for.
+The scope is relativistic. The non-relativistic action belongs to the non-relativistic theory; the classical relativistic particle, its light cone, and the Lorentz group as biquaternion-norm automorphisms belong to the non-quantum relativistic theory; and the spin-specific equations belong to the spin articles. What is established here is the common functional apparatus: the free-particle action and its coupling, the real field Lagrangian, the biquaternionic Euler–Lagrange equation, and the symmetry statements. The conserved current and the stress–energy tensor that follow from the symmetries are developed in the companion article on Noether's theorem, which this article supplies the action for.
 
 - Companion article *Relativistic Mechanics in Biquaternionic Form*, for the four-position, four-velocity, four-momentum, mass shell, and the free-particle action in the $ict$ convention.
 - Companion article *Noether's Theorem in Biquaternionic Form*, for the conserved current and the stress–energy tensor read off the Lagrangians fixed here.
-- Companion article *Conventions in the Biquaternion Universe*, for the norm form, the four conjugations, the mass term, and the Lagrangian sign convention.
+- Companion article *Conventions in the Biquaternion Universe*, for the biquaternion norm, the four conjugations, the mass term, and the Lagrangian sign convention.
 - Companion article *The Klein–Gordon Equation in Biquaternionic Form*, for the second-order field equation that the scalar Lagrangian varies to.
 - Companion article *Maxwell's Equations in the Biquaternionic Formulation*, for the field-strength biquaternion and the electromagnetic action.
 - Companion article *The Dirac Equation in Biquaternionic Form*, for the first-order action and the chirality-off-diagonal mass term.
@@ -41,7 +41,7 @@ $$
 \qquad
 \text{Hermitian invariant:}\quad \mathrm{Sc}\bigl(\tilde{A}^\dagger\tilde{B}\bigr) .
 $$
-The first is the norm form's polarisation and is what makes the free-particle action a Lorentz scalar; the second is positive definite and is what a complex field needs. The distinction is not academic: the bilinear pairing is indefinite, so a Lagrangian built from it alone has the wrong sign for the energy on the time-like part of the field, while the Hermitian pairing is definite and gives the standard positive kinetic terms.
+The first is the biquaternion norm's polarisation and is what makes the free-particle action a Lorentz scalar; the second is positive definite and is what a complex field needs. The distinction is not academic: the bilinear pairing is indefinite, so a Lagrangian built from it alone has the wrong sign for the energy on the time-like part of the field, while the Hermitian pairing is definite and gives the standard positive kinetic terms.
 
 ### The variation of the Hermitian norm
 
@@ -59,7 +59,7 @@ For a Lagrangian density $\mathcal{L}$ depending on $\tilde{\Phi}$ and its deriv
 $$
 \frac{\partial\mathcal{L}}{\partial\tilde{\Phi}} - \partial_\mu\frac{\partial\mathcal{L}}{\partial(\partial_\mu\tilde{\Phi})} = 0 ,
 $$
-where the derivatives are the components of the biquaternionic gradient of $\mathcal{L}$ with respect to the field components. When the Lagrangian is a function of the gradient only through the invariant $\mathrm{Sc}[(\bar{\tilde{\nabla}}\tilde{\Phi}^\dagger)(\tilde{\nabla}\tilde{\Phi})]$, the derivative term produces the d'Alembertian and the equation is the second-order wave equation of the operator article. This is the sense in which the stationary-action principle reconstructs the operator: the operator is the Euler–Lagrange operator of the norm-form Lagrangian.
+where the derivatives are the components of the biquaternionic gradient of $\mathcal{L}$ with respect to the field components. When the Lagrangian is a function of the gradient only through the invariant $\mathrm{Sc}[(\bar{\tilde{\nabla}}\tilde{\Phi}^\dagger)(\tilde{\nabla}\tilde{\Phi})]$, the derivative term produces the d'Alembertian and the equation is the second-order wave equation of the operator article. This is the sense in which the stationary-action principle reconstructs the operator: the operator is the Euler–Lagrange operator of the biquaternion-norm Lagrangian.
 
 ### The boundary term and the choice of Green's function
 
@@ -83,7 +83,7 @@ $$
 S = -mc^2\int\frac{dt}{\gamma} = \int L\,dt , \qquad
 L = -mc^2\sqrt{1 - \frac{\mathbf{v}^2}{c^2}} , \qquad \gamma = \frac{1}{\sqrt{1-\mathbf{v}^2/c^2}} ,
 $$
-as the companion *Relativistic Mechanics in Biquaternionic Form* records. The reduction from the invariant to the standard Lagrangian was checked at three velocities, the two expressions agreeing to six decimal places in each case. The integrand is built from the norm form of the displacement, which is what makes the action a Lorentz scalar: a rotor acts on $d\tilde{Q}$ and its conjugate in the same way, and $N(d\tilde{Q})$ is invariant.
+as the companion *Relativistic Mechanics in Biquaternionic Form* records. The reduction from the invariant to the standard Lagrangian was checked at three velocities, the two expressions agreeing to six decimal places in each case. The integrand is built from the biquaternion norm of the displacement, which is what makes the action a Lorentz scalar: a rotor acts on $d\tilde{Q}$ and its conjugate in the same way, and $N(d\tilde{Q})$ is invariant.
 
 ### The worldline and the four-velocity
 
@@ -93,7 +93,7 @@ $$
 \qquad
 N(\tilde{U}) = \gamma^2\bigl(-c^2 + \mathbf{v}^2\bigr) = -c^2 .
 $$
-The normalisation is the algebraic content of the free action: the worldline is the level set $N(\tilde{U}) = -c^2$, and the variation of the action is a variation of the norm form along that level set.
+The normalisation is the algebraic content of the free action: the worldline is the level set $N(\tilde{U}) = -c^2$, and the variation of the action is a variation of the biquaternion norm along that level set.
 
 ### The worldline Euler–Lagrange equation
 
@@ -110,7 +110,7 @@ and stationarity for arbitrary interior $\delta\tilde{Q}$ requires
 $$
 \frac{d\tilde{U}}{d\tau} = 0 \qquad\Longleftrightarrow\qquad \tilde{U} = \text{const} ,
 $$
-the straight worldline. A discrete check confirms it: stationarity of the discretised worldline action at an interior point gives a path deviating from the straight line by less than $10^{-9}$ of its length. Two features are worth extracting. The equation is **algebraically trivial** — the free particle is unaccelerated because the norm form is constant along the worldline — and it is the same computation, one power of the field lower, as the field variation of the next section: both are polarisations of the norm form, the bilinear identity $\delta N(\tilde{A}) = 2\,\mathrm{Sc}(\bar{\tilde{A}}\,\delta\tilde{A})$ governing the worldline and the sesquilinear identity $\delta\,\mathrm{Sc}(\tilde{\Phi}^\dagger\tilde{\Phi}) = 2\,\mathrm{Re}\,\mathrm{Sc}(\tilde{\Phi}^\dagger\delta\tilde{\Phi})$ governing the field. The framework's variational calculus is thus the polarisation of the norm form throughout, with the gradient inserted where the field is differentiated.
+the straight worldline. A discrete check confirms it: stationarity of the discretised worldline action at an interior point gives a path deviating from the straight line by less than $10^{-9}$ of its length. Two features are worth extracting. The equation is **algebraically trivial** — the free particle is unaccelerated because the biquaternion norm is constant along the worldline — and it is the same computation, one power of the field lower, as the field variation of the next section: both are polarisations of the biquaternion norm, the bilinear identity $\delta N(\tilde{A}) = 2\,\mathrm{Sc}(\bar{\tilde{A}}\,\delta\tilde{A})$ governing the worldline and the sesquilinear identity $\delta\,\mathrm{Sc}(\tilde{\Phi}^\dagger\tilde{\Phi}) = 2\,\mathrm{Re}\,\mathrm{Sc}(\tilde{\Phi}^\dagger\delta\tilde{\Phi})$ governing the field. The framework's variational calculus is thus the polarisation of the biquaternion norm throughout, with the gradient inserted where the field is differentiated.
 
 ### The coupling to an external potential
 
@@ -134,7 +134,7 @@ $$
 \qquad
 N(\tilde{P}) = \gamma^2\bigl(-m^2c^2 + m^2\mathbf{v}^2\bigr) = -m^2c^2 .
 $$
-The mass shell is the norm-form statement $N(\tilde{P}) = -m^2c^2$, which was verified on a random on-shell momentum to machine precision, and it is the particle counterpart of the field symbol condition of the operator article. The four-momentum lies in $\mathbb{M}_-$ and so does the four-force, both requiring the material sector of the involution lattice; the mass shell is the single scalar invariant the sector carries.
+The mass shell is the biquaternion-norm statement $N(\tilde{P}) = -m^2c^2$, which was verified on a random on-shell momentum to machine precision, and it is the particle counterpart of the field symbol condition of the operator article. The four-momentum lies in $\mathbb{M}_-$ and so does the four-force, both requiring the material sector of the involution lattice; the mass shell is the single scalar invariant the sector carries.
 
 ## The Relativistic Field
 
@@ -198,13 +198,13 @@ $$
 \qquad
 \omega^2 = c^2\mathbf{k}^2 + \mu^2c^2 ,
 $$
-the standard relativistic dispersion relation. The check was made on the symbol directly: acting with $\Box$ on the plane wave and dividing by the wave function returns $\omega^2/c^2 - \mathbf{k}^2$ to the accuracy of the difference scheme, and the mass shell is the level set $\mu^2$ of that symbol. In norm-form language the mass shell is the statement that the four-momentum's norm is $-m^2c^2$,
+the standard relativistic dispersion relation. The check was made on the symbol directly: acting with $\Box$ on the plane wave and dividing by the wave function returns $\omega^2/c^2 - \mathbf{k}^2$ to the accuracy of the difference scheme, and the mass shell is the level set $\mu^2$ of that symbol. In biquaternion-norm language the mass shell is the statement that the four-momentum's norm is $-m^2c^2$,
 $$
 N(\tilde{K}) = -\mu^2 , \qquad \tilde{K} = i\,\frac{\omega}{c}\,e_0 + \mathbf{k} ,
 $$
-which is the field-theoretic counterpart of the particle's $N(\tilde{P}) = -m^2c^2$ and was verified on a random on-shell momentum. The particle and the field therefore sit on the same norm-form shell, one for the four-momentum and one for the wave four-vector, and the action is what puts them there.
+which is the field-theoretic counterpart of the particle's $N(\tilde{P}) = -m^2c^2$ and was verified on a random on-shell momentum. The particle and the field therefore sit on the same biquaternion-norm shell, one for the four-momentum and one for the wave four-vector, and the action is what puts them there.
 
-Three features of the sign structure are worth extracting. The kinetic term enters with a minus sign, which is what makes the on-shell energy positive; the mass term enters with a minus sign and a plus in the equation, so that the mass shell is $\omega^2 = c^2\mathbf{k}^2 + \mu^2c^2$; and the whole Lagrangian is real, because $\mathcal{L}$ is built from the Hermitian pairing and the norm form. Changing the relative sign of the two terms would change the equation to $(\Box + \mu^2)\tilde{\Phi} = 0$, which is the sign collision recorded in the operator article; the two are the same equation only when the d'Alembertian convention is also flipped.
+Three features of the sign structure are worth extracting. The kinetic term enters with a minus sign, which is what makes the on-shell energy positive; the mass term enters with a minus sign and a plus in the equation, so that the mass shell is $\omega^2 = c^2\mathbf{k}^2 + \mu^2c^2$; and the whole Lagrangian is real, because $\mathcal{L}$ is built from the Hermitian pairing and the biquaternion norm. Changing the relative sign of the two terms would change the equation to $(\Box + \mu^2)\tilde{\Phi} = 0$, which is the sign collision recorded in the operator article; the two are the same equation only when the d'Alembertian convention is also flipped.
 
 ### The Maxwell action
 
@@ -212,7 +212,7 @@ For the electromagnetic field the action is the standard one,
 $$
 S_{\mathrm{Maxwell}} = -\frac14\int F_{\mu\nu}F^{\mu\nu}\,d^4x ,
 $$
-and in terms of the field-strength biquaternion $\tilde{F} = i\sqrt{\epsilon}\,\mathbf{E} - \sqrt{\mu}\,\mathbf{H}$ of the companion *Maxwell's Equations in the Biquaternionic Formulation* its Lagrangian density is the norm form
+and in terms of the field-strength biquaternion $\tilde{F} = i\sqrt{\epsilon}\,\mathbf{E} - \sqrt{\mu}\,\mathbf{H}$ of the companion *Maxwell's Equations in the Biquaternionic Formulation* its Lagrangian density is the biquaternion norm
 $$
 \mathcal{L}_{\mathrm{Maxwell}} = -\frac12\,\mathrm{Re}\,\mathrm{Sc}\!\left(N(\tilde{F})\right) ,
 \qquad
@@ -241,7 +241,7 @@ T^\mu{}_\nu = -(\partial^\mu\phi^*)\partial_\nu\phi - (\partial^\mu\phi)\partial
 $$
 whose time–time component is the energy density. The companion article records the caution that in the $ict$ convention the time index carries the sign the metric would carry, so the biquaternion packaging of $T$ must be read through the same convention as $\Box$; mixing the two produces the wrong sign on the time derivative. This is the same hazard as the d'Alembertian sign, in a different place.
 
-**Lorentz transformations.** The actions are invariant under the rotor action $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^\dagger$ because each is built from the norm form, which the rotor preserves; the conserved quantities are the six angular momenta. The verification and the consequences are the subject of the next section.
+**Lorentz transformations.** The actions are invariant under the rotor action $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^\dagger$ because each is built from the biquaternion norm, which the rotor preserves; the conserved quantities are the six angular momenta. The verification and the consequences are the subject of the next section.
 
 ## Invariance of the Action under the Rotor
 
@@ -251,11 +251,11 @@ $$
 \qquad
 \tilde{\Lambda}\,\bar{\tilde{\Lambda}} = e_0 ,
 $$
-the second statement being the unit-norm condition. Its dagger is the companion condition $\tilde{\Lambda}^\dagger\bar{\tilde{\Lambda}}^\dagger = e_0$, which is a separate statement and not the same one: for the boost rotor $\tilde{\Lambda} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\hat{\mathbf{u}}$ of the companion *The Lorentz Transformation as a Biquaternionic Rotation* one has $\tilde{\Lambda}^\dagger = \tilde{\Lambda}$ while $\bar{\tilde{\Lambda}} = \tilde{\Lambda}^{-1}$, so $\tilde{\Lambda}^\dagger\tilde{\Lambda} = \tilde{\Lambda}^2 = \gamma + i\gamma\mathbf{v}/c$ is **not** the identity. What is needed for the invariance is the pair of conditions, not the single one. The norm form is the invariant,
+the second statement being the unit-norm condition. Its dagger is the companion condition $\tilde{\Lambda}^\dagger\bar{\tilde{\Lambda}}^\dagger = e_0$, which is a separate statement and not the same one: for the boost rotor $\tilde{\Lambda} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\hat{\mathbf{u}}$ of the companion *The Lorentz Transformation as a Biquaternionic Rotation* one has $\tilde{\Lambda}^\dagger = \tilde{\Lambda}$ while $\bar{\tilde{\Lambda}} = \tilde{\Lambda}^{-1}$, so $\tilde{\Lambda}^\dagger\tilde{\Lambda} = \tilde{\Lambda}^2 = \gamma + i\gamma\mathbf{v}/c$ is **not** the identity. What is needed for the invariance is the pair of conditions, not the single one. The biquaternion norm is the invariant,
 $$
 N\bigl(\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^\dagger\bigr) = N(\tilde{Q}) ,
 $$
-which follows from its multiplicativity. The norm form of a product factorises,
+which follows from its multiplicativity. The biquaternion norm of a product factorises,
 $$
 N(\tilde{A}\tilde{B}) = \tilde{A}\tilde{B}\,\overline{\tilde{A}\tilde{B}} = \tilde{A}\tilde{B}\bar{\tilde{B}}\bar{\tilde{A}} = \tilde{A}\,N(\tilde{B})\,\bar{\tilde{A}} = N(\tilde{A})N(\tilde{B}) ,
 $$
@@ -271,17 +271,17 @@ S\bigl[\tilde{\Phi}\ \text{rotated}\bigr] = S\bigl[\tilde{\Phi}\bigr] ,
 $$
 and the conserved angular momenta follow by the Noether article. The transport law of the field itself — whether $\tilde{\Phi}\mapsto\tilde{\Lambda}\tilde{\Phi}\tilde{\Lambda}^\dagger$, or a one-sided action, or a spinor action on a module — depends on which representation the field carries and is fixed by the spin articles; the invariance of the action, however, holds for the appropriate transport automatically, because every term is assembled from the two invariants. This is the practical sense in which the framework makes Lorentz invariance manifest: one verifies $N(\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^\dagger) = N(\tilde{Q})$ once, and the invariance of any action built from $N$ and the Hermitian pairing is then a statement about the assembly rather than a separate computation.
 
-The two invariants the action uses are thus the two the group preserves, and they are the two the involution lattice supplies: the bilinear norm form $N(\tilde{A}) = \mathrm{Sc}(\bar{\tilde{A}}\tilde{A})$, which is indefinite, and the Hermitian pairing $\mathrm{Sc}(\tilde{A}^\dagger\tilde{A})$, which is positive definite. A Lagrangian is a real Lorentz scalar precisely when it is an invariant combination of these two, and the actions above are the simplest such combinations at zero, one, and two derivatives of the field.
+The two invariants the action uses are thus the two the group preserves, and they are the two the involution lattice supplies: the bilinear biquaternion norm $N(\tilde{A}) = \mathrm{Sc}(\bar{\tilde{A}}\tilde{A})$, which is indefinite, and the Hermitian pairing $\mathrm{Sc}(\tilde{A}^\dagger\tilde{A})$, which is positive definite. A Lagrangian is a real Lorentz scalar precisely when it is an invariant combination of these two, and the actions above are the simplest such combinations at zero, one, and two derivatives of the field.
 
 ## The Biquaternion Structure of the Action
 
 Collecting the algebraic content, five statements distinguish the biquaternionic action from its tensor form.
 
-First, **the action is the norm form's polarisation and the Hermitian form's diagonal**. The free particle's integrand is $\sqrt{-N(d\tilde{Q})}$, the free field's kinetic term is $\mathrm{Sc}[(\bar{\tilde{\nabla}}\tilde{\Phi}^\dagger)(\tilde{\nabla}\tilde{\Phi})]$, and the mass term is $\mathrm{Sc}(\tilde{\Phi}^\dagger\tilde{\Phi})$. Every ingredient is one of the lattice's two pairings applied to the field or its gradient, so the action is fixed once the lattice is fixed.
+First, **the action is the biquaternion norm's polarisation and the Hermitian form's diagonal**. The free particle's integrand is $\sqrt{-N(d\tilde{Q})}$, the free field's kinetic term is $\mathrm{Sc}[(\bar{\tilde{\nabla}}\tilde{\Phi}^\dagger)(\tilde{\nabla}\tilde{\Phi})]$, and the mass term is $\mathrm{Sc}(\tilde{\Phi}^\dagger\tilde{\Phi})$. Every ingredient is one of the lattice's two pairings applied to the field or its gradient, so the action is fixed once the lattice is fixed.
 
-Second, **the equations of motion are the operator's equations**. Varying the particle action gives the straight worldline and the mass shell $N(\tilde{P}) = -m^2c^2$; varying the field action gives $\Box\tilde{\Phi} - \mu^2\tilde{\Phi} = 0$, whose $\Box$ is the norm form of the gradient and whose adjoint is itself by the lattice. The variational route does not produce a different operator; it produces the same operator from a scalar, which is the strongest statement that the operator is the natural one.
+Second, **the equations of motion are the operator's equations**. Varying the particle action gives the straight worldline and the mass shell $N(\tilde{P}) = -m^2c^2$; varying the field action gives $\Box\tilde{\Phi} - \mu^2\tilde{\Phi} = 0$, whose $\Box$ is the biquaternion norm of the gradient and whose adjoint is itself by the lattice. The variational route does not produce a different operator; it produces the same operator from a scalar, which is the strongest statement that the operator is the natural one.
 
-Third, **the mass is a norm**. Both the particle mass shell and the field mass term are the norm form on the relevant object — on the four-momentum, and on the field. The companion *Conventions in the Biquaternion Universe* fixes the mass term as the linear chirality-off-diagonal coupling for the first-order field; for the second-order field it is the quadratic norm, and the two are the two faces of the same $N$.
+Third, **the mass is a norm**. Both the particle mass shell and the field mass term are the biquaternion norm on the relevant object — on the four-momentum, and on the field. The companion *Conventions in the Biquaternion Universe* fixes the mass term as the linear chirality-off-diagonal coupling for the first-order field; for the second-order field it is the quadratic norm, and the two are the two faces of the same $N$.
 
 Fourth, **the reality of the action is the involution lattice's reality**. A Lagrangian is a real scalar because it is built from $\mathrm{Sc}$ and $\mathrm{Re}$ on pairings that the involutions make, so the choice of the Hermitian rather than the bilinear pairing for complex fields is the choice of the positive-definite form. Every sign in the actions above — the minus on the kinetic term, the minus on the mass term, the plus in the equation — is fixed by that choice together with the series d'Alembertian convention, and the operator article's account of the sign collision applies verbatim.
 
@@ -305,9 +305,9 @@ $$
 S = \int\left\{-\,\mathrm{Sc}\!\left[\bigl(\bar{\tilde{\nabla}}\tilde{\Phi}^\dagger\bigr)\bigl(\tilde{\nabla}\tilde{\Phi}\bigr)\right] - \mu^2\,\mathrm{Sc}\!\left[\tilde{\Phi}^\dagger\tilde{\Phi}\right]\right\}d^4x ,
 \qquad \mu = \frac{mc}{\hbar} ,
 $$
-whose Euler–Lagrange equation is $(\Box - \mu^2)\tilde{\Phi} = 0$ with $\Box = \tilde{\nabla}\bar{\tilde{\nabla}}$; the variation was checked against $\int(\Box\phi - \mu^2\phi)\eta$ on a discrete grid. The Maxwell Lagrangian is the norm form of the field-strength biquaternion, $\mathcal{L}_{\mathrm{Maxwell}} = -\frac12\mathrm{Re}\,\mathrm{Sc}(N(\tilde{F}))$, whose one complex invariant carries both classical invariants, and the first-order Dirac and Maxwell actions are functionals of $\bar{\tilde{\nabla}}$ whose Euler–Lagrange operators are the first-order kernels of the operator article.
+whose Euler–Lagrange equation is $(\Box - \mu^2)\tilde{\Phi} = 0$ with $\Box = \tilde{\nabla}\bar{\tilde{\nabla}}$; the variation was checked against $\int(\Box\phi - \mu^2\phi)\eta$ on a discrete grid. The Maxwell Lagrangian is the biquaternion norm of the field-strength biquaternion, $\mathcal{L}_{\mathrm{Maxwell}} = -\frac12\mathrm{Re}\,\mathrm{Sc}(N(\tilde{F}))$, whose one complex invariant carries both classical invariants, and the first-order Dirac and Maxwell actions are functionals of $\bar{\tilde{\nabla}}$ whose Euler–Lagrange operators are the first-order kernels of the operator article.
 
-The symmetries of the action are the central phase, giving the material-sector conserved current, translation invariance, giving the stress–energy tensor, and the Lorentz rotor action, giving the angular momenta; all three hold because the action is assembled from the norm form and the Hermitian pairing, which are exactly the invariants the involution lattice and the Lorentz group preserve. The variational route thus reconstructs the operator of the first article, the sectors of the second, and the causal and mass-shell structure of both, from a single scalar.
+The symmetries of the action are the central phase, giving the material-sector conserved current, translation invariance, giving the stress–energy tensor, and the Lorentz rotor action, giving the angular momenta; all three hold because the action is assembled from the biquaternion norm and the Hermitian pairing, which are exactly the invariants the involution lattice and the Lorentz group preserve. The variational route thus reconstructs the operator of the first article, the sectors of the second, and the causal and mass-shell structure of both, from a single scalar.
 
 ## Summary of Notation
 
@@ -315,7 +315,7 @@ The symmetries of the action are the central phase, giving the material-sector c
 |---|---|
 | $S = \int\mathcal{L}\,d^4x$ | Action; a real Lorentz scalar |
 | $\delta S = 0$ | Stationary-action principle; variations vanish on the boundary |
-| $N(d\tilde{Q}) = d\tilde{Q}\,\overline{d\tilde{Q}}$ | Norm form of the displacement |
+| $N(d\tilde{Q}) = d\tilde{Q}\,\overline{d\tilde{Q}}$ | Biquaternion norm of the displacement |
 | $S = -mc\int\sqrt{-N(d\tilde{Q})}$ | Free relativistic particle action |
 | $L = -mc^2\sqrt{1-\mathbf{v}^2/c^2}$ | Standard relativistic Lagrangian |
 | $\tilde{U} = d\tilde{Q}/d\tau$, $N(\tilde{U}) = -c^2$ | Four-velocity and its normalisation |

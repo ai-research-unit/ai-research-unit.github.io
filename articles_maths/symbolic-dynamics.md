@@ -35,7 +35,7 @@ $$
 
 (iii) The topological entropy of $\sigma$ is $h_{\mathrm{top}}(\sigma)=\log d$, and the Bernoulli measure $\mu$ with weights $p_0,\dots,p_{d-1}$ is $\sigma$-invariant and ergodic, with measure-theoretic entropy $-\sum_ip_i\log p_i$; the measure of maximal entropy is the uniform Bernoulli measure.
 
-*Proof.* The space $\Sigma_d$ is a product of compact spaces, hence compact by the Tychonoff theorem, and the metric induces the product topology; the perfectness and the total disconnectedness are immediate from the definition of the cylinders, and the Cantor–Bendixson analysis of *Topological Spaces* gives the homeomorphism with the middle-third Cantor set. The shift conjugates the cylinders, hence is a homeomorphism, and its mixing follows from the fact that for words $u,v$ and $n$ exceeding the length of $u$, the cylinder $[u]$ meets $\sigma^{-n}[v]$ in a nonempty clopen set. The density of the periodic points is the fact that every cylinder $[w]$ contains the periodic sequence $\overline{w}$ of period $|w|$, and the entropy is computed by the count $d^n$ of the words of length $n$; the Bernoulli statements are those of *Ergodic Theory*. $\square$
+*Proof.* The space $\Sigma_d$ is a product of compact spaces, hence compact by the Tychonoff theorem, and the metric induces the product topology; the perfectness and the total disconnectedness are immediate from the definition of the cylinders, and the Cantor–Bendixson analysis of *Topological Spaces* gives the homeomorphism with the middle-third Cantor set. The shift conjugates the cylinders, hence is a homeomorphism, and its mixing follows from the fact that for words $u,v$ and $n$ exceeding the length of $u$, the cylinder $[u]$ meets $\sigma^{-n}[v]$ in a nonempty clopen set. The density of the periodic points is the fact that every cylinder $[w]$ contains the periodic sequence $\overline{w}$ of period $|w|$, and the entropy is computed by the count $d^n$ of the words of length $n$; the Bernoulli statements are those of *Ergodic Theory*.
 
 ### Subshifts and Languages
 
@@ -55,7 +55,7 @@ $$
 
 the exponential growth rate of the language.
 
-*Proof (sketch).* The language of the join of the covers by the cylinders gives exactly $|\mathcal L_n(X)|$, and the limit formula for the entropy of a subshift follows from the Morse–Hedlund theory of the complexity; the logarithm of the number of the words of length $n$ counts the orbits distinguishable at resolution $n$. $\square$
+*Proof (sketch).* The language of the join of the covers by the cylinders gives exactly $|\mathcal L_n(X)|$, and the limit formula for the entropy of a subshift follows from the Morse–Hedlund theory of the complexity; the logarithm of the number of the words of length $n$ counts the orbits distinguishable at resolution $n$.
 
 **Example (the golden-mean shift).** Let $X$ be the subshift of $\Sigma_2$ whose forbidden word is $11$, so that $X$ consists of the sequences with no two consecutive ones. Its language of length $n$ is the set of binary words with no $11$, of cardinality the Fibonacci number $F_{n+2}$; a direct count gives $|\mathcal L_n(X)|=2,3,5,8,13,21,\dots$ and
 
@@ -91,7 +91,7 @@ is rational, the identity being the formula of Bowen and Lanford;
 
 (iii) the entropy is positive exactly when $\rho(A)>1$; for a primitive $A$ the growth of the periodic points is $p_n=\operatorname{tr}(A^n)\sim\rho(A)^n$, while for an irreducible matrix that is periodic of period $m$ the maximal eigenvalues are $m$ distinct numbers of modulus $\rho(A)$ and $p_n$ carries a periodic factor, so that no single exponential asymptotic holds.
 
-*Proof.* The number of words of length $n$ of $X$ is the sum of the entries of $A^{n-1}$, so its growth rate is $\rho(A)$ by the Perron–Frobenius theorem, and (i) follows from the language formula for the entropy. The fixed points of $\sigma^n$ correspond to the closed paths of length $n$ in the graph of $A$, counted by $\operatorname{tr}(A^n)$, which gives (ii) after expanding the logarithm of the determinant as $\sum_n\frac{\operatorname{tr}(A^n)}{n}t^n$. The asymptotic in (iii) is the Perron–Frobenius asymptotics, which requires primitivity for a single exponential and otherwise gives the periodic factor described there. $\square$
+*Proof.* The number of words of length $n$ of $X$ is the sum of the entries of $A^{n-1}$, so its growth rate is $\rho(A)$ by the Perron–Frobenius theorem, and (i) follows from the language formula for the entropy. The fixed points of $\sigma^n$ correspond to the closed paths of length $n$ in the graph of $A$, counted by $\operatorname{tr}(A^n)$, which gives (ii) after expanding the logarithm of the determinant as $\sum_n\frac{\operatorname{tr}(A^n)}{n}t^n$. The asymptotic in (iii) is the Perron–Frobenius asymptotics, which requires primitivity for a single exponential and otherwise gives the periodic factor described there.
 
 **Example (the full shift and the golden-mean shift).** For the full $d$-shift the matrix is the $d\times d$ all-ones matrix, $\operatorname{tr}(A^n)=d^n$, and $\det(I-tA)=1-dt$, so $\zeta(t)=1/(1-dt)$ and the entropy is $\log d$. For the golden-mean shift the matrix is
 
@@ -121,7 +121,7 @@ and a **block code** is the one-sided analogue. A **conjugacy** is a bijective s
 
 **Theorem (Curtis–Hedlund–Lyndon).** A map $\phi:X\to Y$ between subshifts is continuous and commutes with the shifts, $\phi\circ\sigma=\sigma\circ\phi$, if and only if it is a sliding block code.
 
-*Proof.* If $\phi$ is a sliding block code, the continuity is clear because the $n$-th coordinate of the image depends only on finitely many coordinates of the input, and the commutation with the shift is the translation invariance of the block rule. Conversely, if $\phi$ is continuous and commutes with the shift, the compactness of $X$ gives a finite cylinder $[w]$ whose image lies in the cylinder $[\phi(x)_0]$ of the zeroth coordinate, and the commutation extends the rule to all the coordinates, producing the sliding block. $\square$
+*Proof.* If $\phi$ is a sliding block code, the continuity is clear because the $n$-th coordinate of the image depends only on finitely many coordinates of the input, and the commutation with the shift is the translation invariance of the block rule. Conversely, if $\phi$ is continuous and commutes with the shift, the compactness of $X$ gives a finite cylinder $[w]$ whose image lies in the cylinder $[\phi(x)_0]$ of the zeroth coordinate, and the commutation extends the rule to all the coordinates, producing the sliding block.
 
 ### Markov Partitions and the Coding of Hyperbolic Systems
 

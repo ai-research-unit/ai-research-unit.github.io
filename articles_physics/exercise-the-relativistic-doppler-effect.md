@@ -4,7 +4,7 @@
 
 This is one of the exercises in the relativity series. It is a set of worked problems in the relativistic Doppler effect, using the framework and the notation of the companion articles *Relativistic Mechanics in Biquaternionic Form* and *The Lorentz Transformation as a Biquaternionic Rotation*. Those two articles are the parents of this exercise: they set up the four-vectors of $\mathbb{M}_-$ and the boost rotor that acts on them, and what follows applies them to the light of a moving source. Nothing new is introduced, and every result below is obtained from the tools already defined there.
 
-**What is assumed.** The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_0 = 1, e_1, e_2, e_3$ satisfying $e_k^2 = -e_0$, and the scalar imaginary $i$ with $i^2 = -1$. The anti-Hermitian subspace $\mathbb{M}_-$ (imaginary scalar part, real vector part) and the Hermitian subspace $\mathbb{M}_+$. The norm form $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$ and the scalar projection $\mathrm{Sc}$. The four-wavevector $\tilde{K} = i\omega/c\,e_0 + \mathbf{k}$ from the table of four-vectors in *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*. The rotor conjugation $\tilde{Q} \mapsto \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^\dagger$ with $\tilde{\Lambda}\bar{\tilde{\Lambda}} = e_0$, and the boost biquaternion
+**What is assumed.** The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_0 = 1, e_1, e_2, e_3$ satisfying $e_k^2 = -e_0$, and the scalar imaginary $i$ with $i^2 = -1$. The anti-Hermitian subspace $\mathbb{M}_-$ (imaginary scalar part, real vector part) and the Hermitian subspace $\mathbb{M}_+$. The biquaternion norm $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$ and the scalar projection $\mathrm{Sc}$. The four-wavevector $\tilde{K} = i\omega/c\,e_0 + \mathbf{k}$ from the table of four-vectors in *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*. The rotor conjugation $\tilde{Q} \mapsto \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^\dagger$ with $\tilde{\Lambda}\bar{\tilde{\Lambda}} = e_0$, and the boost biquaternion
 $$
 \tilde{\Lambda} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\,\hat{\mathbf{u}},
 \qquad
@@ -16,7 +16,7 @@ $$
 $$
 Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ its vacuum value; the numerical instance is in vacuum, $c = c_0$.
 
-**What is to be shown.** The problems are: (1) the four-wavevector, its null norm form, its invariant phase, and an invariant expression for the frequency an observer measures; (2) the boost of the four-wavevector and the general Doppler formula; (3) the longitudinal case; (4) the transverse case — which is in fact *two* inequivalent cases; (5) aberration and the forward cone; (6) a numerical instance and the non-relativistic limit. Each problem is stated and then solved in full; the value of an exercise article is in the solutions.
+**What is to be shown.** The problems are: (1) the four-wavevector, its null biquaternion norm, its invariant phase, and an invariant expression for the frequency an observer measures; (2) the boost of the four-wavevector and the general Doppler formula; (3) the longitudinal case; (4) the transverse case — which is in fact *two* inequivalent cases; (5) aberration and the forward cone; (6) a numerical instance and the non-relativistic limit. Each problem is stated and then solved in full; the value of an exercise article is in the solutions.
 
 **Notation for the problem.** A **source** is at rest in the *source frame* and emits monochromatic plane light of angular frequency $\omega_0$ and wavevector $\mathbf{k}_0 = (\omega_0/c)\hat{\mathbf{k}}_0$. An **observer** is at rest in the *observer frame*, which moves with constant velocity $\mathbf{u}$ relative to the source frame; $u = |\mathbf{u}|$, $\beta = u/c$, $\gamma = (1-\beta^2)^{-1/2}$. The angle $\theta$ is measured **in the source frame** between $\mathbf{u}$ and the propagation direction $\hat{\mathbf{k}}_0$. Primed quantities refer to the observer frame. A receding observer has $\theta = 0$; an approaching one has $\theta = \pi$.
 
@@ -36,7 +36,7 @@ $$
 \qquad
 k = |\mathbf{k}| .
 $$
-Its norm form is
+Its biquaternion norm is
 $$
 N(\tilde{K}) = \tilde{K}\bar{\tilde{K}} = \left(\frac{i\omega}{c}\right)^2 + \mathbf{k}^2 = -\frac{\omega^2}{c^2} + k^2 .
 $$
@@ -44,7 +44,7 @@ For light in a medium of local speed $c = 1/\sqrt{\epsilon\mu}$ the dispersion r
 $$
 N(\tilde{K}) = 0 :
 $$
-the four-wavevector of light is a **null** element of $\mathbb{M}_-$, i.e. a zero divisor of the algebra, exactly as the light cone of Minkowski space is the zero-divisor cone (see *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector* and the mass-shell relation of *Relativistic Mechanics in Biquaternionic Form*). The contrast with matter is instructive: a massive de Broglie wave has $\tilde{K} = \tilde{P}/\hbar$ and hence $N(\tilde{K}) = -m^2c^2/\hbar^2$, a fixed negative norm form, whereas for light the norm form vanishes. The null condition is what makes the Doppler problem a one-parameter problem in each direction: the shift depends only on the direction of $\mathbf{k}$, through the angle $\theta$, and on $\beta$ — not on the magnitude $k$.
+the four-wavevector of light is a **null** element of $\mathbb{M}_-$, i.e. a zero divisor of the algebra, exactly as the light cone of Minkowski space is the zero-divisor cone (see *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector* and the mass-shell relation of *Relativistic Mechanics in Biquaternionic Form*). The contrast with matter is instructive: a massive de Broglie wave has $\tilde{K} = \tilde{P}/\hbar$ and hence $N(\tilde{K}) = -m^2c^2/\hbar^2$, a fixed negative biquaternion norm, whereas for light the biquaternion norm vanishes. The null condition is what makes the Doppler problem a one-parameter problem in each direction: the shift depends only on the direction of $\mathbf{k}$, through the angle $\theta$, and on $\beta$ — not on the magnitude $k$.
 
 **Solution (b).** Fix the plane-wave convention $\propto e^{i\Phi}$ with
 $$
@@ -149,7 +149,7 @@ k_\parallel' = \gamma\left(\frac{\omega_0}{c}\cos\theta - \beta\frac{\omega_0}{c
 $$
 In the longitudinal case $\theta = 0$ or $\pi$ the transverse part vanishes; in general a ray that is transverse in one frame acquires a longitudinal component in the other, which is the aberration of Problem 5.
 
-**Solution (c).** The norm form is preserved because $\tilde{\Lambda}\bar{\tilde{\Lambda}} = e_0$:
+**Solution (c).** The biquaternion norm is preserved because $\tilde{\Lambda}\bar{\tilde{\Lambda}} = e_0$:
 $$
 N(\tilde{K}') = \tilde{\Lambda}\tilde{K}\tilde{\Lambda}^\dagger\overline{\tilde{\Lambda}\tilde{K}\tilde{\Lambda}^\dagger}
 = \tilde{K}\bar{\tilde{K}} = 0 .
@@ -332,7 +332,7 @@ and find the angle that maximises it. (For $\beta = 0.99$ and $\Theta = 0.1$ rad
 | $e_0 = 1, e_1, e_2, e_3$ | Quaternion basis, $e_k^2 = -e_0$ |
 | $i$ | Scalar imaginary, $i^2 = -1$ |
 | $\mathrm{Sc}$ | Scalar projection of a biquaternion |
-| $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$ | Norm form |
+| $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$ | Biquaternion norm |
 | $c$, $c_0$ | Speed of light in the medium, and in vacuum |
 | $\tilde{Q} = ict\,e_0 + \mathbf{x}$ | Four-position |
 | $\tilde{K} = i\omega/c\,e_0 + \mathbf{k}$ | Four-wavevector, $N(\tilde{K}) = 0$ for light |

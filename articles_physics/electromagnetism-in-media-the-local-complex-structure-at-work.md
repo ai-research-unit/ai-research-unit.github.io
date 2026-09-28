@@ -93,7 +93,7 @@ F_k=i\sqrt{\epsilon}\,E_k-\sqrt{\mu}\,H_k,
 $$
 with $\mathrm{Sc}(\tilde{F})=0$. We use that definition without change. Two features of it are specific to the medium.
 
-**The normalisation.** The factors $\sqrt{\epsilon}$ and $\sqrt{\mu}$ are natural because $\epsilon\,\mathbf{E}^2$ and $\mu\,\mathbf{H}^2$ are both energy densities. Hence $\sqrt{\epsilon}\,\mathbf{E}$ and $\sqrt{\mu}\,\mathbf{H}$ have the common dimension of the square root of an energy density, the two halves of $\tilde{F}$ are dimensionally homogeneous, and the norm form $N(\tilde{F})$ has the dimension of an energy density. The normalisation is equivalent to the two medium parameters introduced above: since $\sqrt{\epsilon\mu}=1/c$ and $\sqrt{\mu/\epsilon}=Z$, the data $(\sqrt{\epsilon},\sqrt{\mu})$ and $(c,Z)$ determine each other. The medium therefore enters $\tilde{F}$ through the same two numbers that govern propagation.
+**The normalisation.** The factors $\sqrt{\epsilon}$ and $\sqrt{\mu}$ are natural because $\epsilon\,\mathbf{E}^2$ and $\mu\,\mathbf{H}^2$ are both energy densities. Hence $\sqrt{\epsilon}\,\mathbf{E}$ and $\sqrt{\mu}\,\mathbf{H}$ have the common dimension of the square root of an energy density, the two halves of $\tilde{F}$ are dimensionally homogeneous, and the biquaternion norm $N(\tilde{F})$ has the dimension of an energy density. The normalisation is equivalent to the two medium parameters introduced above: since $\sqrt{\epsilon\mu}=1/c$ and $\sqrt{\mu/\epsilon}=Z$, the data $(\sqrt{\epsilon},\sqrt{\mu})$ and $(c,Z)$ determine each other. The medium therefore enters $\tilde{F}$ through the same two numbers that govern propagation.
 
 The field strength is an overall constant multiple of the Riemann–Silberstein vector. Using $\mathbf{B}=\mu\mathbf{H}$ and $c=1/\sqrt{\epsilon\mu}$,
 $$
@@ -381,7 +381,7 @@ For a plane wave in the medium, the conventions fixed above are: complex amplitu
 | $\tilde{R}'=ic\rho+\mathbf{J}$ | Source biquaternion of the potential equation |
 | $\mathbf{V}=\mathbf{E}+ic\mathbf{B}$ | Riemann–Silberstein vector |
 | $I_1=\mathbf{E}^2-c^2\mathbf{B}^2,\ I_2=\mathbf{E}\cdot\mathbf{B}$ | Lorentz invariants of the field |
-| $N(\tilde{F})=\tilde{F}\bar{\tilde{F}}$ | Norm form (complex scalar) |
+| $N(\tilde{F})=\tilde{F}\bar{\tilde{F}}$ | Biquaternion norm (complex scalar) |
 | $W=\tfrac{1}{2}(\epsilon\mathbf{E}^2+\mu\mathbf{H}^2)$ | Electromagnetic energy density |
 | $\mathbf{S}=\mathbf{E}\times\mathbf{H}$ | Poynting vector |
 | $\mathbf{k},\omega$ | Wavevector and angular frequency |

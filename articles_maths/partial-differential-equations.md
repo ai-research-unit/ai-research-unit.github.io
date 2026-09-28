@@ -31,7 +31,7 @@ $$
 
 **Theorem (method of characteristics).** Let $u$ be a $C^1$ solution of the quasilinear equation and let $x(t)$ be a solution curve of $\dot x = a(x,u(x(t)))$; then along the curve $u$ solves $\dot u = c$, and the value of $u$ is constant along the curve when $c=0$. Hence a solution is determined by its values on a hypersurface that is transverse to the characteristic field, and the solution is constant along each characteristic curve.
 
-*Proof.* Along $t \mapsto u(x(t))$ one has $\frac{d}{dt}u = \sum_i\partial_iu\,\dot x_i = \sum_ia_i\partial_iu = c$ by the equation; the case $c=0$ gives constancy, and the reduction to the prescribed data on a transversal hypersurface is the statement that the map from data to characteristic curve is invertible when the transversality holds. $\square$
+*Proof.* Along $t \mapsto u(x(t))$ one has $\frac{d}{dt}u = \sum_i\partial_iu\,\dot x_i = \sum_ia_i\partial_iu = c$ by the equation; the case $c=0$ gives constancy, and the reduction to the prescribed data on a transversal hypersurface is the statement that the map from data to characteristic curve is invertible when the transversality holds.
 
 **Example (a linear transport equation).** For $u_t + b\,u_x = 0$ with $b$ constant, the characteristics are the lines $x = x_0 + bt$, and the solution with datum $u(x,0) = f(x)$ is $u(x,t) = f(x-bt)$: the initial profile is translated at speed $b$. The equation is hyperbolic and the solution exists and is unique for all time, with no smoothing and no decay.
 
@@ -65,7 +65,7 @@ $$
 
 respectively.
 
-*Proof.* Writing $\xi = \xi(x,y)$ and $\eta=\eta(x,y)$ transforms the coefficients by the chain rule, and the new principal part is the old form evaluated on $(\xi_x,\xi_y)$ and $(\eta_x,\eta_y)$; the equation for the level curves of $\xi,\eta$ is the ordinary differential equation $a_{11}(dy)^2 - 2a_{12}dx\,dy + a_{22}(dx)^2=0$, whose characteristic polynomial has discriminant $\Delta$ and hence two, one or no real families of solutions, giving the hyperbolic, parabolic and elliptic cases. A second change diagonalises the resulting form. $\square$
+*Proof.* Writing $\xi = \xi(x,y)$ and $\eta=\eta(x,y)$ transforms the coefficients by the chain rule, and the new principal part is the old form evaluated on $(\xi_x,\xi_y)$ and $(\eta_x,\eta_y)$; the equation for the level curves of $\xi,\eta$ is the ordinary differential equation $a_{11}(dy)^2 - 2a_{12}dx\,dy + a_{22}(dx)^2=0$, whose characteristic polynomial has discriminant $\Delta$ and hence two, one or no real families of solutions, giving the hyperbolic, parabolic and elliptic cases. A second change diagonalises the resulting form.
 
 **Remark.** The classification is invariant under a change of independent variables, because the transformation acts on $\xi$ by an invertible linear map and therefore preserves the signature of the symbol. It is a pointwise classification, so an equation can change type across a curve, as the Tricomi equation $y\,u_{xx} + u_{yy} = 0$ does across $y=0$.
 
@@ -83,15 +83,15 @@ $$
 
 where $\omega_{n-1}$ is the area of the unit sphere in $\mathbb{R}^n$. Conversely, a continuous function with the mean value property is harmonic.
 
-*Proof.* Let $\varphi(r) = \frac{1}{\omega_{n-1}r^{n-1}}\int_{\partial B(x,r)}u\,dS$. Differentiating with respect to $r$ and applying the divergence theorem gives $\varphi'(r) = \frac{1}{\omega_{n-1}r^{n-1}}\int_{B(x,r)}\Delta u\,dy = 0$, so $\varphi$ is constant, and its limit as $r\to0$ is $u(x)$ by continuity; this is the surface form, and integrating in $r$ gives the volume form. Conversely, a continuous function with the mean value property satisfies $\Delta u = 0$ in the distributional sense, and by elliptic regularity, established below by the representation formula, it is harmonic. $\square$
+*Proof.* Let $\varphi(r) = \frac{1}{\omega_{n-1}r^{n-1}}\int_{\partial B(x,r)}u\,dS$. Differentiating with respect to $r$ and applying the divergence theorem gives $\varphi'(r) = \frac{1}{\omega_{n-1}r^{n-1}}\int_{B(x,r)}\Delta u\,dy = 0$, so $\varphi$ is constant, and its limit as $r\to0$ is $u(x)$ by continuity; this is the surface form, and integrating in $r$ gives the volume form. Conversely, a continuous function with the mean value property satisfies $\Delta u = 0$ in the distributional sense, and by elliptic regularity, established below by the representation formula, it is harmonic.
 
 **Theorem (maximum principle).** A harmonic function on a connected open set attains its maximum and minimum only on the boundary, in the sense that if $\Omega$ is connected and bounded with $u$ continuous on $\overline\Omega$ and harmonic on $\Omega$, then $\sup_\Omega u = \sup_{\partial\Omega}u$ and $\inf_\Omega u = \inf_{\partial\Omega}u$; if the extremum is attained at an interior point the function is constant.
 
-*Proof.* If $u$ attained a strict interior maximum at $x_0$, then for small $r$ the mean value property would give $u(x_0)\le \max_{\partial B(x_0,r)}u$ with equality only if $u$ is constant on the sphere; iterating along a chain of balls from $x_0$ to any other point of $\Omega$ shows $u$ constant, contradicting the strict maximum unless $u$ is constant. Applying this to $-u$ gives the minimum. $\square$
+*Proof.* If $u$ attained a strict interior maximum at $x_0$, then for small $r$ the mean value property would give $u(x_0)\le \max_{\partial B(x_0,r)}u$ with equality only if $u$ is constant on the sphere; iterating along a chain of balls from $x_0$ to any other point of $\Omega$ shows $u$ constant, contradicting the strict maximum unless $u$ is constant. Applying this to $-u$ gives the minimum.
 
 **Corollary (uniqueness and stability of the Dirichlet problem).** The Dirichlet problem has at most one solution, and its solution depends monotonically and uniformly on the boundary datum: if $u_1,u_2$ solve it with data $g_1,g_2$, then $\|u_1-u_2\|_\infty \le \|g_1-g_2\|_\infty$.
 
-*Proof.* The difference $w=u_1-u_2$ is harmonic with boundary datum $g_1-g_2$, so by the maximum principle $\sup_\Omega|w| \le \sup_{\partial\Omega}|g_1-g_2|$. $\square$
+*Proof.* The difference $w=u_1-u_2$ is harmonic with boundary datum $g_1-g_2$, so by the maximum principle $\sup_\Omega|w| \le \sup_{\partial\Omega}|g_1-g_2|$.
 
 ### The Fundamental Solution and Green's Function
 
@@ -115,7 +115,7 @@ $$
 
 so a harmonic function is determined by its boundary values alone.
 
-*Proof.* The second Green identity applied to $u$ and $\Phi(x-\cdot)$ on $\Omega \setminus B(x,\varepsilon)$, together with the behaviour of $\Phi$ at $x$ as $\varepsilon\to0$, gives the representation formula; the corrector has the same boundary values as $\Phi(x-\cdot)$ and is harmonic, so subtracting it removes the normal-derivative term and gives the Green formula. $\square$
+*Proof.* The second Green identity applied to $u$ and $\Phi(x-\cdot)$ on $\Omega \setminus B(x,\varepsilon)$, together with the behaviour of $\Phi$ at $x$ as $\varepsilon\to0$, gives the representation formula; the corrector has the same boundary values as $\Phi(x-\cdot)$ and is harmonic, so subtracting it removes the normal-derivative term and gives the Green formula.
 
 **Theorem (Poisson kernel for the ball).** For the ball $B(0,R)$ in $\mathbb{R}^n$,
 
@@ -125,7 +125,7 @@ $$
 
 is the harmonic function in $B(0,R)$ with continuous boundary values $g$, and for $n=2$ this is the classical Poisson formula.
 
-*Proof.* The Poisson kernel $P(x,y) = \frac{R^2-|x|^2}{\omega_{n-1}R|x-y|^n}$ is obtained from the Green function of the ball, itself computed by the method of images for the sphere; the kernel is positive with total integral one, so the formula is the boundary-value problem solved by convolution with an approximate identity, and the limit $x\to\partial B$ is $g$. $\square$
+*Proof.* The Poisson kernel $P(x,y) = \frac{R^2-|x|^2}{\omega_{n-1}R|x-y|^n}$ is obtained from the Green function of the ball, itself computed by the method of images for the sphere; the kernel is positive with total integral one, so the formula is the boundary-value problem solved by convolution with an approximate identity, and the limit $x\to\partial B$ is $g$.
 
 **Example.** For a ball in $\mathbb{R}^2$ the value at the centre is the mean of the boundary values, $u(0) = \frac{1}{2\pi R}\int_{\partial B}g\,dS$, which is the mean value property; the formula is exact and follows from the kernel at $x=0$.
 
@@ -149,11 +149,11 @@ $$
 
 solves the Cauchy problem, and $\|u(\cdot,t)\|_\infty \le \|f\|_\infty$ with $u(\cdot,t)\to f$ uniformly on compact sets as $t\to0^+$.
 
-*Proof.* The kernel solves $K_t = \Delta K$ by direct differentiation, and differentiating under the integral gives $u_t = \Delta u$; the kernel is positive with total integral one, so it is an approximate identity as $t\to0^+$, giving the stated convergence and the sup bound. $\square$
+*Proof.* The kernel solves $K_t = \Delta K$ by direct differentiation, and differentiating under the integral gives $u_t = \Delta u$; the kernel is positive with total integral one, so it is an approximate identity as $t\to0^+$, giving the stated convergence and the sup bound.
 
 **Theorem (smoothing).** If $f$ is merely bounded and continuous, then $u(\cdot,t)$ is of class $C^\infty$ for every $t>0$, and all its derivatives are bounded on $\mathbb{R}^n\times[\varepsilon,\infty)$ for every $\varepsilon>0$. In particular no singularity of $f$ propagates, and the solution is analytic in $x$ for $t>0$.
 
-*Proof.* The kernel $K_t(x-y)$ is $C^\infty$ in $(x,t)$ for $t>0$, and every derivative is integrable against the bounded $f$, so differentiation under the integral is legitimate. $\square$
+*Proof.* The kernel $K_t(x-y)$ is $C^\infty$ in $(x,t)$ for $t>0$, and every derivative is integrable against the bounded $f$, so differentiation under the integral is legitimate.
 
 **Theorem (maximum principle).** If $u$ solves $u_t=\Delta u$ in a bounded cylinder $\Omega\times(0,T)$ and is continuous on its closure, then
 
@@ -163,11 +163,11 @@ $$
 
 with the same statement for the minimum; consequently the solution is unique and depends monotonically on its data.
 
-*Proof.* If $u$ attained an interior maximum at $(x_0,t_0)$ with $t_0>0$, then $u_t(x_0,t_0)\ge0$ and $\Delta u(x_0,t_0)\le0$, so $u_t-\Delta u \ge 0$ there; to exclude equality one applies the argument to $u-\varepsilon t$ and lets $\varepsilon\to0$. The uniqueness follows by applying the principle to the difference of two solutions. $\square$
+*Proof.* If $u$ attained an interior maximum at $(x_0,t_0)$ with $t_0>0$, then $u_t(x_0,t_0)\ge0$ and $\Delta u(x_0,t_0)\le0$, so $u_t-\Delta u \ge 0$ there; to exclude equality one applies the argument to $u-\varepsilon t$ and lets $\varepsilon\to0$. The uniqueness follows by applying the principle to the difference of two solutions.
 
 **Theorem (irreversibility).** The backward problem $u_t = \Delta u$ for $t<0$ with datum at $t=0$ is not well posed: the solution operator $K_t$ for $t>0$ has no bounded inverse on $L^2(\mathbb{R}^n)$, and its inverse amplifies high frequencies by the factor $e^{|\xi|^2|t|}$.
 
-*Proof.* The Fourier transform diagonalises the equation, $\hat u(\xi,t) = e^{-|\xi|^2t}\hat f(\xi)$; the multiplier $e^{-|\xi|^2t}$ is bounded for $t>0$ with norm $1$, but for the backward direction the multiplier is $e^{|\xi|^2|t|}$, which is unbounded, so arbitrarily small high-frequency data can be amplified beyond any bound. $\square$
+*Proof.* The Fourier transform diagonalises the equation, $\hat u(\xi,t) = e^{-|\xi|^2t}\hat f(\xi)$; the multiplier $e^{-|\xi|^2t}$ is bounded for $t>0$ with norm $1$, but for the backward direction the multiplier is $e^{|\xi|^2|t|}$, which is unbounded, so arbitrarily small high-frequency data can be amplified beyond any bound.
 
 ## The Wave Equation
 
@@ -181,7 +181,7 @@ $$
 u(x,t) = \frac{f(x-ct)+f(x+ct)}{2} + \frac{1}{2c}\int_{x-ct}^{x+ct}g(s)\,ds .
 $$
 
-*Proof.* Change to characteristic coordinates $\xi = x-ct$, $\eta = x+ct$, in which the equation becomes $u_{\xi\eta}=0$ with general solution $u = F(\xi)+G(\eta)$; the initial conditions determine $F$ and $G$ and give the displayed formula. $\square$
+*Proof.* Change to characteristic coordinates $\xi = x-ct$, $\eta = x+ct$, in which the equation becomes $u_{\xi\eta}=0$ with general solution $u = F(\xi)+G(\eta)$; the initial conditions determine $F$ and $G$ and give the displayed formula.
 
 **Theorem (finite propagation speed).** If $u$ solves the wave equation in $\mathbb{R}^n\times(0,\infty)$ and $u$ and $u_t$ vanish on the ball $B(x_0,r)$ at $t=0$, then $u$ vanishes on the cone $\{(x,t) : |x-x_0|\le r-ct,\ 0\le t\le r/c\}$. Consequently the value $u(x,t)$ depends only on the data in the ball $B(x,ct)$.
 
@@ -191,7 +191,7 @@ $$
 E(t) = \frac12\int_{B(x_0,r-ct)}\Bigl(u_t^2 + c^2|\nabla u|^2\Bigr)dx
 $$
 
-satisfies $E'(t) \le 0$, because differentiating in $t$ and applying the divergence theorem gives the flux across the boundary sphere, which is nonpositive by the sign of the cone; since $E(0)=0$ the energy vanishes and the solution is constant on the cone, hence zero. $\square$
+satisfies $E'(t) \le 0$, because differentiating in $t$ and applying the divergence theorem gives the flux across the boundary sphere, which is nonpositive by the sign of the cone; since $E(0)=0$ the energy vanishes and the solution is constant on the cone, hence zero.
 
 **Theorem (Kirchhoff, $n=3$).** For $f \in C^3$ and $g \in C^2$ on $\mathbb{R}^3$ the solution is
 
@@ -201,7 +201,7 @@ $$
 
 a formula involving only the data on the *sphere* of radius $ct$, which is Huygens' principle: in three dimensions a disturbance is transmitted as a sharp wave front and leaves no tail. In two dimensions the corresponding formula integrates over the *disc*, so a tail remains; the dimension is visible in the solution.
 
-*Proof.* Quoted as standard (the Kirchhoff and Poisson formulas). The sphere appears because $n=3$ is odd and the fundamental solution of the wave operator is a distribution supported on the light cone; the disc appears for the descent to $n=2$ by the method of descent, in which the data are extended independently of a third coordinate. $\square$
+*Proof.* Quoted as standard (the Kirchhoff and Poisson formulas). The sphere appears because $n=3$ is odd and the fundamental solution of the wave operator is a distribution supported on the light cone; the disc appears for the descent to $n=2$ by the method of descent, in which the data are extended independently of a third coordinate.
 
 ## Well-Posedness and Separation of Variables
 
@@ -217,7 +217,7 @@ $$
 
 which is small in $C^1$ on the real axis and arbitrarily large at any fixed $y>0$ as $n\to\infty$. Hence the Cauchy problem for an elliptic equation is ill posed.
 
-*Proof.* Both $u_n$ and its derivative at $y=0$ are $O(1/n)$ uniformly in $x$, while $\sinh(ny)$ grows exponentially at fixed $y$; so the data converge to zero in $C^1$ whereas the solutions do not converge to zero pointwise away from the axis. $\square$
+*Proof.* Both $u_n$ and its derivative at $y=0$ are $O(1/n)$ uniformly in $x$, while $\sinh(ny)$ grows exponentially at fixed $y$; so the data converge to zero in $C^1$ whereas the solutions do not converge to zero pointwise away from the axis.
 
 The example explains the classification in terms of the auxiliary data a type can accept: an elliptic equation needs boundary data on the whole boundary and is well posed as a Dirichlet problem; a parabolic equation needs data at one time and is well posed forward in time; a hyperbolic equation needs Cauchy data and is well posed for all time, with the oscillations of the data preserved rather than damped.
 
@@ -243,7 +243,7 @@ $$
 
 with $d_k$ the coefficients of $g$, and $u_t$ obtained by termwise differentiation.
 
-*Proof.* The eigenfunction problem is a Sturm–Liouville problem after separation of variables, and its spectral theory is that of *Ordinary Differential Equations*: the eigenvalues are positive because $-\Delta$ is a positive operator, they tend to infinity by the compactness of the resolvent, and the eigenfunctions are complete. Substituting the series into the equation and using the orthonormality of the $\varphi_k$ decouples the equation into ordinary equations in $t$ for each coefficient, solved by the displayed exponentials and trigonometric functions; the convergence of the series to a classical solution follows from the decay of the coefficients once the data are smooth enough. $\square$
+*Proof.* The eigenfunction problem is a Sturm–Liouville problem after separation of variables, and its spectral theory is that of *Ordinary Differential Equations*: the eigenvalues are positive because $-\Delta$ is a positive operator, they tend to infinity by the compactness of the resolvent, and the eigenfunctions are complete. Substituting the series into the equation and using the orthonormality of the $\varphi_k$ decouples the equation into ordinary equations in $t$ for each coefficient, solved by the displayed exponentials and trigonometric functions; the convergence of the series to a classical solution follows from the decay of the coefficients once the data are smooth enough.
 
 **Example (the vibrating string).** On $\Omega = (0,L)$ the eigenvalues are $\lambda_k = k^2\pi^2/L^2$ with $\varphi_k(x) = \sqrt{2/L}\sin(k\pi x/L)$; the solution of the wave equation is a superposition of standing waves with frequencies $ck\pi/L$, and the slowest mode dominates. The exhibited series is the Fourier sine series, and the general theory of such expansions on an interval is the classical theory of the Sturm–Liouville problem of *Ordinary Differential Equations*.
 

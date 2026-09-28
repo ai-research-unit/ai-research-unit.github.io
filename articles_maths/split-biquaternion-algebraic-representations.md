@@ -1,3 +1,4 @@
+
 # __Split-Biquaternion Algebraic Representations__
 
 ## Introduction
@@ -102,9 +103,9 @@ The four fixed-point subspaces have a simple characterization in the four-vector
 - **Hermitian subspace $\mathbb{M}_+$:** four-vectors of the form $Q^\mu = (q_0, j q'_1, j q'_2, j q'_3)$ with $q_0, q'_1, q'_2, q'_3 \in \mathbb{R}$. Real time component, purely split-imaginary spatial components.
 - **Anti-Hermitian subspace $\mathbb{M}_-$:** four-vectors of the form $Q^\mu = (j q'_0, q_1, q_2, q_3)$ with $q'_0, q_1, q_2, q_3 \in \mathbb{R}$. Purely split-imaginary time component, real spatial components.
 
-### The Norm Form in Four-Vector Form
+### The Split-Biquaternion Norm in Four-Vector Form
 
-The norm form $N(\tilde{Q}) = \tilde{Q} \bar{\tilde{Q}}$ is
+The split-biquaternion norm $N(\tilde{Q}) = \tilde{Q} \bar{\tilde{Q}}$ is
 
 $$
 N(\tilde{Q}) = (Q^0)^2 + (Q^1)^2 + (Q^2)^2 + (Q^3)^2,
@@ -116,7 +117,7 @@ $$
 N(\tilde{Q}) = \sum_{\mu=0}^{3} ((q^\mu)^2 + (q'^\mu)^2) + 2j \sum_{\mu=0}^{3} q^\mu q'^\mu.
 $$
 
-On the anti-Hermitian subspace $\mathbb{M}_-$, the norm form restricts to the real quadratic form
+On the anti-Hermitian subspace $\mathbb{M}_-$, the split-biquaternion norm restricts to the real quadratic form
 
 $$
 N(\tilde{Q}) = (q'_0)^2 + q_1^2 + q_2^2 + q_3^2,
@@ -217,7 +218,7 @@ $$
 
 The split complex conjugation is the map that swaps the two components. This is the algebraic content of the idempotent decomposition.
 
-**Norm form.** The norm form is
+**Split-Biquaternion norm.** The split-biquaternion norm is
 
 $$
 N(\tilde{Q}) = N_{\mathbb{H}}(\tilde{Q}_+) \tilde\Pi_+ + N_{\mathbb{H}}(\tilde{Q}_-) \tilde\Pi_-,
@@ -249,7 +250,7 @@ The idempotent representation plays the role in the split biquaternion algebra t
 
 **It reveals the structure.** The isomorphism $\mathbb{H}_{\mathbb{D}} \cong \mathbb{H} \oplus \mathbb{H}$ is the most important structural fact about the algebra: it shows that the algebra is semisimple, that it is the direct sum of two simple algebras, and that its representation theory is the representation theory of $\mathbb{H}$ taken twice.
 
-**It simplifies the norm form.** In the idempotent representation, the norm form is the pair of ordinary quaternion norms of the two components, which are non-negative real numbers. This is much simpler than the split complex expression in the standard basis.
+**It simplifies the split-biquaternion norm.** In the idempotent representation, the split-biquaternion norm is the pair of ordinary quaternion norms of the two components, which are non-negative real numbers. This is much simpler than the split complex expression in the standard basis.
 
 **It simplifies the invertibility criterion.** The invertibility criterion becomes the linear condition that both components are nonzero, in contrast to the quadratic condition in the biquaternion case.
 
@@ -319,7 +320,7 @@ because the generators satisfy $\gamma_k^2 = -1$ exactly as the quaternion units
 
 **Multiplication.** Under the isomorphism the Clifford product corresponds to the split biquaternion product, the generators multiplying as the quaternion units and the volume element commuting with them.
 
-**Norm.** The Euclidean norm of the Clifford algebra, the sum of squares of the eight real blade coordinates, is the real part $R(\tilde{Q}) = \sum_\mu(q_\mu^2 + q'^2_\mu)$ of the split biquaternion norm form. The full norm form $N(\tilde{Q}) = R + jI$ is $\mathbb{D}$-valued and is not the Clifford norm, which is real; it corresponds under the isomorphism to the Clifford product $\tilde{Q}\bar{\tilde{Q}}$.
+**Split-Biquaternion norm.** The Euclidean norm of the Clifford algebra, the sum of squares of the eight real blade coordinates, is the real part $R(\tilde{Q}) = \sum_\mu(q_\mu^2 + q'^2_\mu)$ of the split biquaternion norm. The full norm $N(\tilde{Q}) = R + jI$ is $\mathbb{D}$-valued and is not the Clifford norm, which is real; it corresponds under the isomorphism to the Clifford product $\tilde{Q}\bar{\tilde{Q}}$.
 
 ### Why the Clifford Algebra Representation Is Useful
 
@@ -387,7 +388,7 @@ This is a linear isomorphism $\mathbb{R}^8 \to \mathbb{H} \oplus \mathbb{H}$.
 
 **Idempotent and Clifford algebra.** The idempotent representation and the Clifford algebra representation are related by the isomorphism $\mathbb{H}_{\mathbb{D}} \cong \mathrm{Cl}_{0,3}$. The idempotents $\tilde\Pi_\pm$ correspond to the projectors onto the two summands of the Clifford algebra.
 
-**All four.** The four representations are different ways of presenting the same algebra. The idempotent representation is the primary one, because it reveals the semisimple structure and simplifies the norm form, the invertibility criterion, and the zero divisor analysis. The four-vector representation is the most familiar from the tensor formalism. The module and Clifford algebra representations place the algebra in the larger contexts of module theory and Clifford algebra theory.
+**All four.** The four representations are different ways of presenting the same algebra. The idempotent representation is the primary one, because it reveals the semisimple structure and simplifies the split-biquaternion norm, the invertibility criterion, and the zero divisor analysis. The four-vector representation is the most familiar from the tensor formalism. The module and Clifford algebra representations place the algebra in the larger contexts of module theory and Clifford algebra theory.
 
 ## The Role of Choices
 
@@ -405,7 +406,7 @@ Different choices give representations that are related by conjugation or by a c
 | Representation | Split biquaternion as | Useful for |
 |---|---|---|
 | Split complex four-vector | $Q^\mu = (Q^0, \mathbf{Q})$ | Tensor formalism, indefinite quadratic forms |
-| Idempotent | $(\tilde{Q}_+, \tilde{Q}_-) \in \mathbb{H} \oplus \mathbb{H}$ | Structure, norm form, invertibility, zero divisors |
+| Idempotent | $(\tilde{Q}_+, \tilde{Q}_-) \in \mathbb{H} \oplus \mathbb{H}$ | Structure, norm, invertibility, zero divisors |
 | Module | Operator on $\mathbb{H} \tilde\Pi_+ \oplus \mathbb{H} \tilde\Pi_-$ | Representation theory |
 | Clifford algebra | Element of $\mathrm{Cl}_{0,3} \cong \mathrm{Cl}_{1,2}$ | Clifford algebra classification, geometry |
 
@@ -432,7 +433,7 @@ Unlike the biquaternion algebra, the split biquaternion algebra does **not** hav
 | $\tilde{Q}^\dagger = \bar{\tilde{Q}}^*$ | Hermitian conjugate |
 | $\tilde{Q}^\flat = -\tilde{Q}^\dagger$ | Anti-Hermitian conjugate |
 | $\tilde{Q}_\pm = \tilde{Q} \tilde\Pi_\pm$ | Idempotent components, in $\mathbb{H}$ |
-| $N(\tilde{Q}) = \tilde{Q} \bar{\tilde{Q}}$ | Norm form |
+| $N(\tilde{Q}) = \tilde{Q} \bar{\tilde{Q}}$ | Split-Biquaternion norm |
 | $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}, \mathbb{H}_{\mathbb{H}_{\mathbb{D}}}, \mathbb{M}_+, \mathbb{M}_-$ | Split complex, quaternion, Hermitian, anti-Hermitian subspaces |
 | $\rho : A \to \mathrm{End}(V)$ | An algebra representation |
 | $\rho_\pm : \mathbb{H}_{\mathbb{D}} \to \mathrm{End}_{\mathbb{H}}(\mathbb{H} \tilde\Pi_\pm)$ | Module representation |

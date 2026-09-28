@@ -49,7 +49,7 @@ The operations of the earlier articles are derived from the axioms, and it is wo
 6. **Functions.** The graph of a function is a set, and the set $b^a$ of functions $a \to b$ exists.
 7. **Finite and countable sets.** The set $\omega$ of natural numbers exists, and so does $\omega \times \omega$.
 
-**Proof.** (1) Take any set $a$ (one exists by infinity) and form $\{z \in a : z \neq z\}$ by separation; uniqueness is extensionality. (2) Take $c \in a$ and form $\{z \in c : \forall y\,(y \in a \to z \in y)\}$, which is independent of $c$. (3) By pairing. (4) Since $(a,b) \in \mathcal{P}(\mathcal{P}(a \cup b))$, the product is a subset of a set and exists by separation. (5) The classes $[x]$ are subsets of $a$; the quotient is the image of $a$ under the definable function $x \mapsto [x]$, so replacement applies. (6) A function is a subset of $a \times b$, so separation applies within $\mathcal{P}(a \times b)$. (7) The set $\omega$ is the least set containing $\emptyset$ and closed under $z \mapsto z \cup \{z\}$, obtained from the set given by infinity by separation; the product is (4). $\square$
+**Proof.** (1) Take any set $a$ (one exists by infinity) and form $\{z \in a : z \neq z\}$ by separation; uniqueness is extensionality. (2) Take $c \in a$ and form $\{z \in c : \forall y\,(y \in a \to z \in y)\}$, which is independent of $c$. (3) By pairing. (4) Since $(a,b) \in \mathcal{P}(\mathcal{P}(a \cup b))$, the product is a subset of a set and exists by separation. (5) The classes $[x]$ are subsets of $a$; the quotient is the image of $a$ under the definable function $x \mapsto [x]$, so replacement applies. (6) A function is a subset of $a \times b$, so separation applies within $\mathcal{P}(a \times b)$. (7) The set $\omega$ is the least set containing $\emptyset$ and closed under $z \mapsto z \cup \{z\}$, obtained from the set given by infinity by separation; the product is (4).
 
 ## Ordinals
 
@@ -59,11 +59,11 @@ The operations of the earlier articles are derived from the axioms, and it is wo
 
 **Lemma.** Let $(a, <)$ be a well-ordering and let $f : a \to a$ be order-preserving, so that $x < y$ implies $f(x) < f(y)$. Then $f(x) \geq x$ for every $x \in a$. Consequently the only order isomorphism of a well-ordering with itself is the identity.
 
-**Proof.** Suppose not and let $m$ be the least element of $\{x \in a : f(x) < x\}$. Then $f(m) < m$, so by minimality of $m$ the inequality $f(f(m)) \geq f(m)$ holds; but order-preservation applied to $f(m) < m$ gives $f(f(m)) < f(m)$, a contradiction. For the consequence, an order isomorphism $f$ satisfies $f(x) \geq x$ and, applying the same to $f^{-1}$, also $x \geq f(x)$; hence $f(x) = x$. $\square$
+**Proof.** Suppose not and let $m$ be the least element of $\{x \in a : f(x) < x\}$. Then $f(m) < m$, so by minimality of $m$ the inequality $f(f(m)) \geq f(m)$ holds; but order-preservation applied to $f(m) < m$ gives $f(f(m)) < f(m)$, a contradiction. For the consequence, an order isomorphism $f$ satisfies $f(x) \geq x$ and, applying the same to $f^{-1}$, also $x \geq f(x)$; hence $f(x) = x$.
 
 **Theorem (comparability of well-orderings).** Any two well-orderings are isomorphic, or one is isomorphic to a proper initial segment of the other, and not both.
 
-**Proof sketch.** Let $(a,\leq)$ and $(b,\preceq)$ be well-orderings. By transfinite recursion, define a partial isomorphism $f$ from $a$ to $b$: put $f(x)$ equal to the least element of $b$ not yet in the range if such exists, and stop otherwise. The recursion is well defined because the range so far is a set; the condition that $b$ be exhausted or an element be left over is decided at the first $x$ where no unused element remains, and the initial segment so obtained is an initial segment of $a$. The three possible outcomes — $f$ defined on all of $a$, on a proper initial segment of $a$, or the process stopping with an element of $b$ unused — are the three alternatives of the statement. $\square$
+**Proof sketch.** Let $(a,\leq)$ and $(b,\preceq)$ be well-orderings. By transfinite recursion, define a partial isomorphism $f$ from $a$ to $b$: put $f(x)$ equal to the least element of $b$ not yet in the range if such exists, and stop otherwise. The recursion is well defined because the range so far is a set; the condition that $b$ be exhausted or an element be left over is decided at the first $x$ where no unused element remains, and the initial segment so obtained is an initial segment of $a$. The three possible outcomes — $f$ defined on all of $a$, on a proper initial segment of $a$, or the process stopping with an element of $b$ unused — are the three alternatives of the statement.
 
 ### Von Neumann Ordinals
 
@@ -79,11 +79,11 @@ The operations of the earlier articles are derived from the axioms, and it is wo
 4. For every ordinal $\alpha$ there is a least ordinal greater than $\alpha$, namely $\alpha \cup \{\alpha\}$, written $\alpha+1$; an ordinal of the form $\alpha+1$ is a **successor ordinal**, and an ordinal not of this form and not $0$ is a **limit ordinal**.
 5. Let $W$ be a well-ordered set. There is a unique ordinal $\alpha$ and a unique order isomorphism $W \to \alpha$; the ordinal is the **order type** of $W$.
 
-**Proof sketch.** (1) If $\alpha$ is an ordinal and $\beta \in \alpha$, then $\beta$ is a subset of $\alpha$, hence transitive and well-ordered by $\in$; so $\beta$ is an ordinal. The identity $\alpha = \{\beta : \beta < \alpha\}$ follows from transitivity. (2) Let $\alpha,\beta$ be ordinals and suppose they are incomparable; then by the comparability theorem for well-orderings one is isomorphic to a proper initial segment of the other, say $\alpha \cong \beta$ with $\beta < \alpha$; the isomorphism is then the identity on the ordinals and $\alpha \in \alpha$, contradicting foundation. (3) and (4) follow from (1) and (2). (5) The identity map on a well-ordered set is the order isomorphism with its order type; uniqueness uses the comparability theorem, and existence uses that the isomorphism to a proper initial segment composed with the identity forces the segment to be all of the ordinal, which contradicts foundation unless the segment is everything. $\square$
+**Proof sketch.** (1) If $\alpha$ is an ordinal and $\beta \in \alpha$, then $\beta$ is a subset of $\alpha$, hence transitive and well-ordered by $\in$; so $\beta$ is an ordinal. The identity $\alpha = \{\beta : \beta < \alpha\}$ follows from transitivity. (2) Let $\alpha,\beta$ be ordinals and suppose they are incomparable; then by the comparability theorem for well-orderings one is isomorphic to a proper initial segment of the other, say $\alpha \cong \beta$ with $\beta < \alpha$; the isomorphism is then the identity on the ordinals and $\alpha \in \alpha$, contradicting foundation. (3) and (4) follow from (1) and (2). (5) The identity map on a well-ordered set is the order isomorphism with its order type; uniqueness uses the comparability theorem, and existence uses that the isomorphism to a proper initial segment composed with the identity forces the segment to be all of the ordinal, which contradicts foundation unless the segment is everything.
 
 **Theorem (Burali–Forti).** There is no set of all ordinals; the class $\mathrm{On}$ is a proper class.
 
-**Proof.** If $\mathrm{On}$ were a set, it would be a transitive set well-ordered by $\in$, hence an ordinal, and so $\mathrm{On} \in \mathrm{On}$, contradicting foundation. $\square$
+**Proof.** If $\mathrm{On}$ were a set, it would be a transitive set well-ordered by $\in$, hence an ordinal, and so $\mathrm{On} \in \mathrm{On}$, contradicting foundation.
 
 The Burali–Forti paradox is the ordinal form of the Russell paradox, and it is the reason a cardinals-as-ordinals approach must take the cardinals to be the **initial ordinals** rather than the class of all ordinals of a given size.
 
@@ -91,7 +91,7 @@ The Burali–Forti paradox is the ordinal form of the Russell paradox, and it is
 
 **Theorem (transfinite induction).** Let $C$ be a class of ordinals such that, for every ordinal $\alpha$, if every $\beta < \alpha$ lies in $C$ then $\alpha \in C$. Then $C = \mathrm{On}$.
 
-**Proof.** Otherwise let $\alpha$ be the least ordinal not in $C$ (it exists because the ordinals are well-ordered by $\in$). Every $\beta < \alpha$ is then in $C$, so $\alpha \in C$ by the hypothesis, a contradiction. $\square$
+**Proof.** Otherwise let $\alpha$ be the least ordinal not in $C$ (it exists because the ordinals are well-ordered by $\in$). Every $\beta < \alpha$ is then in $C$, so $\alpha \in C$ by the hypothesis, a contradiction.
 
 The induction has three cases in practice: the base case $\alpha = 0$, the successor case $\alpha = \beta + 1$ assuming the statement at $\beta$, and the limit case $\alpha$ a limit ordinal assuming the statement at all $\beta < \alpha$. This trichotomy is the ordinal analogue of the weak/strong induction of *Logic and Proof*.
 
@@ -103,7 +103,7 @@ $$
 
 for every ordinal $\alpha$, where $F \restriction \alpha$ is the restriction of $F$ to the ordinals below $\alpha$.
 
-**Proof sketch.** Define $F(\alpha) = x$ to mean that there is a function $f$ with domain $\alpha$ such that $f(\beta) = G(f \restriction \beta)$ for all $\beta < \alpha$ and $x = G(f)$ (or $x = G(f\restriction\alpha)$ with $f$ of domain $\alpha$). The existence and uniqueness of $f$ for each $\alpha$ are proved by transfinite induction: $f$ for the successor $\alpha+1$ is obtained by adjoining to $f$ for $\alpha$ the value $G(f)$, and $f$ for a limit $\lambda$ is the union of the $f$ for $\beta<\lambda$. Uniqueness of $F$ follows because two candidate functions agree at $0$ and, if they agree below $\alpha$, at $\alpha$. The argument is the ordinal form of the recursion theorem of *Logic and Proof*, and it uses replacement to collect the values. $\square$
+**Proof sketch.** Define $F(\alpha) = x$ to mean that there is a function $f$ with domain $\alpha$ such that $f(\beta) = G(f \restriction \beta)$ for all $\beta < \alpha$ and $x = G(f)$ (or $x = G(f\restriction\alpha)$ with $f$ of domain $\alpha$). The existence and uniqueness of $f$ for each $\alpha$ are proved by transfinite induction: $f$ for the successor $\alpha+1$ is obtained by adjoining to $f$ for $\alpha$ the value $G(f)$, and $f$ for a limit $\lambda$ is the union of the $f$ for $\beta<\lambda$. Uniqueness of $F$ follows because two candidate functions agree at $0$ and, if they agree below $\alpha$, at $\alpha$. The argument is the ordinal form of the recursion theorem of *Logic and Proof*, and it uses replacement to collect the values.
 
 **Corollary (definition by transfinite recursion).** If $G$ is given by a formula, then so is $F$; in particular one may define $F(0) = a$, $F(\alpha+1) = G(F(\alpha))$ and $F(\lambda) = \bigcup_{\beta<\lambda} F(\beta)$ for limit $\lambda$, and the result is a definable class function.
 
@@ -143,13 +143,13 @@ The arithmetic of the ordinals is thus genuinely non-commutative, and it is the 
 
 **Theorem.** Every set can be put in bijection with a unique cardinal if and only if the axiom of choice holds.
 
-**Proof sketch.** If the axiom of choice holds then every set can be well-ordered by *Cardinality and the Axiom of Choice*, hence has an order type, and the least ordinal equipotent to it is a cardinal. Conversely, if every set has a cardinality, well-order $X$ by transporting the well-ordering of $|X|$ along the bijection. $\square$
+**Proof sketch.** If the axiom of choice holds then every set can be well-ordered by *Cardinality and the Axiom of Choice*, hence has an order type, and the least ordinal equipotent to it is a cardinal. Conversely, if every set has a cardinality, well-order $X$ by transporting the well-ordering of $|X|$ along the bijection.
 
 The alephs are then defined by transfinite recursion: $\aleph_0 = \omega$, and $\aleph_{\alpha+1}$ is the least cardinal strictly greater than $\aleph_\alpha$, with $\aleph_\lambda = \sup_{\beta<\lambda}\aleph_\beta$ for limit $\lambda$. The existence of $\aleph_{\alpha+1}$ uses Hartogs' theorem, which is stated below.
 
 **Theorem (Hartogs).** For every set $X$ there is an ordinal that does not inject into $X$; the least such ordinal is written $\mathrm{H}(X)$.
 
-**Proof sketch.** Consider the set $W$ of well-orderings of subsets of $X$ (which is a set, being a subset of $\mathcal{P}(X \times X)$), and let $\mathrm{H}(X)$ be the set of their order types. This set of ordinals is transitive and well-ordered by $\in$, hence an ordinal; if $\mathrm{H}(X)$ injected into $X$, it would be the order type of a well-ordering of a subset of $X$, hence a member of itself, contradicting foundation. $\square$
+**Proof sketch.** Consider the set $W$ of well-orderings of subsets of $X$ (which is a set, being a subset of $\mathcal{P}(X \times X)$), and let $\mathrm{H}(X)$ be the set of their order types. This set of ordinals is transitive and well-ordered by $\in$, hence an ordinal; if $\mathrm{H}(X)$ injected into $X$, it would be the order type of a well-ordering of a subset of $X$, hence a member of itself, contradicting foundation.
 
 Hartogs' theorem makes the aleph sequence definable and is the engine of Zermelo's proof that the well-ordering theorem follows from the axiom of choice; the proof of that implication in *Cardinality and the Axiom of Choice* used exactly this device in the guise of a maximal well-orderable subset.
 
@@ -185,7 +185,7 @@ and $V = \bigcup_{\alpha \in \mathrm{On}} V_\alpha$.
 4. $V_\alpha \cap \mathrm{On} = \alpha$, so the ordinals are recovered from the hierarchy.
 5. $V_\omega$ consists of the hereditarily finite sets, and every $V_\alpha$ is an element of $V_\beta$ for $\beta > \alpha$.
 
-**Proof sketch.** (1) and (2) are by transfinite induction, using that the power set of a set is a set. (3) is proved by $\in$-induction: assuming every element of $x$ lies in some $V_\alpha$, replacement collects the ranks of the elements into a set of ordinals with supremum $\beta$, and then $x \subseteq V_\beta$, so $x \in V_{\beta+1}$. The use of foundation is what forces the induction on the membership relation to be well founded. (4) is a transfinite induction: an ordinal $\alpha$ is a set of ordinals, each below it, so $\alpha \subseteq V_\alpha$ by (3), and no ordinal $\geq \alpha$ lies in $V_\alpha$ by induction. (5) is immediate from the definition and (4). $\square$
+**Proof sketch.** (1) and (2) are by transfinite induction, using that the power set of a set is a set. (3) is proved by $\in$-induction: assuming every element of $x$ lies in some $V_\alpha$, replacement collects the ranks of the elements into a set of ordinals with supremum $\beta$, and then $x \subseteq V_\beta$, so $x \in V_{\beta+1}$. The use of foundation is what forces the induction on the membership relation to be well founded. (4) is a transfinite induction: an ordinal $\alpha$ is a set of ordinals, each below it, so $\alpha \subseteq V_\alpha$ by (3), and no ordinal $\geq \alpha$ lies in $V_\alpha$ by induction. (5) is immediate from the definition and (4).
 
 The hierarchy is the picture of the set-theoretic universe that the corpus presupposes: every set is built from the empty set by iterated power sets and unions, with the ordinals as the stages of the construction. Nothing in the algebra of the corpus needs the picture, but it is the reason the recursion and induction principles of the previous sections are available for every set, not only for sets of a special form.
 
@@ -199,7 +199,7 @@ $$
 
 where $\varphi^{V_\beta}$ is $\varphi$ with every quantifier relativised to $V_\beta$.
 
-**Proof sketch.** The proof is a syntactic induction on $\varphi$, using the absoluteness of $\Delta_0$ formulas and the existence of a closure ordinal for each existential quantifier: for a formula $\exists y\,\psi(y,x_1,\ldots,x_n)$, one collects, for each tuple in a given $V_\beta$, a witness $y$ of smallest rank and takes the supremum of the ranks, iterating $\omega$ times to close under all subformulas. The argument is a theorem of ZFC and belongs to the metatheory of set theory; the arithmetisation of syntax and the metatheoretic techniques used to state it are developed and revisited. $\square$
+**Proof sketch.** The proof is a syntactic induction on $\varphi$, using the absoluteness of $\Delta_0$ formulas and the existence of a closure ordinal for each existential quantifier: for a formula $\exists y\,\psi(y,x_1,\ldots,x_n)$, one collects, for each tuple in a given $V_\beta$, a witness $y$ of smallest rank and takes the supremum of the ranks, iterating $\omega$ times to close under all subformulas. The argument is a theorem of ZFC and belongs to the metatheory of set theory; the arithmetisation of syntax and the metatheoretic techniques used to state it are developed and revisited.
 
 The reflection principle is the reason a set is a faithful miniature of the universe for any finite list of formulas, and it is the technical heart of the constructions of model theory. It is stated here because it is the bridge between this article and the logical layer that follows.
 
@@ -227,7 +227,7 @@ The method is **forcing**. One begins with a countable transitive model $M$ of a
 
 **Theorem (independence of CH).** If ZFC is consistent, then neither CH nor its negation is provable in ZFC.
 
-**Pro.** Gödel's theorem gives the consistency of CH, Cohen's the consistency of its negation; by the soundness and completeness of first-order logic, discussed, neither statement is a theorem of a consistent ZFC. $\square$
+**Pro.** Gödel's theorem gives the consistency of CH, Cohen's the consistency of its negation; by the soundness and completeness of first-order logic, discussed, neither statement is a theorem of a consistent ZFC.
 
 ## Large Cardinals in Outline
 
@@ -237,7 +237,7 @@ The method is **forcing**. One begins with a countable transitive model $M$ of a
 
 **Theorem.** The existence of a strongly inaccessible cardinal is not provable in ZFC, provided ZFC is consistent.
 
-**Proof sketch.** If $\kappa$ is strongly inaccessible then $V_\kappa$ is a set model of ZFC: the axioms of pairing, union, power set and separation hold because $\kappa$ is a limit cardinal closed under power sets; infinity holds because $\omega < \kappa$; replacement holds because $\kappa$ is regular; foundation holds in every transitive set. A model of ZFC cannot be proved to exist from ZFC by Gödel's second incompleteness theorem, quoted and developed. Hence the existence of $\kappa$ is unprovable. $\square$
+**Proof sketch.** If $\kappa$ is strongly inaccessible then $V_\kappa$ is a set model of ZFC: the axioms of pairing, union, power set and separation hold because $\kappa$ is a limit cardinal closed under power sets; infinity holds because $\omega < \kappa$; replacement holds because $\kappa$ is regular; foundation holds in every transitive set. A model of ZFC cannot be proved to exist from ZFC by Gödel's second incompleteness theorem, quoted and developed. Hence the existence of $\kappa$ is unprovable.
 
 ### Measurable Cardinals and Beyond
 

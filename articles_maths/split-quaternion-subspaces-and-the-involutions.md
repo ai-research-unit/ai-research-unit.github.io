@@ -3,11 +3,11 @@
 
 ## Introduction
 
-Three linear involutions act on the split-quaternion algebra $\mathbb{H}_{\mathrm{s}}$: the conjugation $\bar{\cdot}$, the principal involution $\alpha$, and the reversal $\rho$. Each cuts the algebra into its $+1$ and $-1$ eigenspaces, and the three decompositions together refine the algebra into the pieces on which the analysis of *Split-Quaternion Analysis on Subspaces* is carried out. This article studies the involutions, their individual eigenspaces, and their common eigenspaces — the finest decomposition they produce.
+Three linear involutions act on the split-quaternion algebra $\mathbb{H}_{\mathrm{s}}$: the conjugation $\bar{\cdot}$, the principal involution $\alpha$, and the reversal $\rho$. Each cuts the algebra into its $+1$ and $-1$ eigenspaces, and the three decompositions together refine the algebra into the pieces on which the analysis of *Split-Quaternion Analysis* is carried out. This article studies the involutions, their individual eigenspaces, and their common eigenspaces — the finest decomposition they produce.
 
 The article gives the three involutions and their general properties of linearity and (anti-)automorphism type; the two composition relations among them; the eigenspaces of each involution taken separately; the common eigenspaces of the commuting pair $(\alpha, \rho)$, which is the finest decomposition; the reason one two-dimensional piece of that decomposition does not split further; and the relation to the operators the analysis places on the pieces. The group that the three involutions generate, and the lattice of their fixed spaces, are the subject of the companion article *Split-Quaternion Involution Lattice*.
 
-**Conventions.** A split-quaternion is $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$, with $e_1^2 = -1$, $e_2^2 = +1$, $e_3 = e_1 e_2$, $e_1 e_2 = -e_2 e_1$; the norm form is $N(\tilde q) = q_0^2 + q_1^2 - q_2^2 - q_3^2$. The scalar and vector subspaces are $S = \mathbb{R}\cdot 1$ and $V = \operatorname{span}\{e_1,e_2,e_3\}$, and the split-complex subalgebras are $\mathbb{D}_2 = \operatorname{span}\{1,e_2\}$, $\mathbb{D}_3 = \operatorname{span}\{1,e_3\}$, as in *Split-Quaternion Scalar and Vector Subspaces* and *Split-Quaternion Split-Complex Subspaces*.
+**Conventions.** A split-quaternion is $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$, with $e_1^2 = -1$, $e_2^2 = +1$, $e_3 = e_1 e_2$, $e_1 e_2 = -e_2 e_1$; the split-quaternion norm is $N(\tilde q) = q_0^2 + q_1^2 - q_2^2 - q_3^2$. The scalar and vector subspaces are $S = \mathbb{R}\cdot 1$ and $V = \operatorname{span}\{e_1,e_2,e_3\}$, and the split-complex subalgebras are $\mathbb{D}_2 = \operatorname{span}\{1,e_2\}$, $\mathbb{D}_3 = \operatorname{span}\{1,e_3\}$, as in *Split-Quaternion Scalar and Vector Subspaces* and *Split-Quaternion Split-Complex Subspaces*.
 
 ## The Three Involutions
 
@@ -47,7 +47,7 @@ All three maps are $\mathbb{R}$-linear involutions: each fixes $\mathbb{R}$ poin
 - $\rho$ is an $\mathbb{R}$-**algebra anti-automorphism**: $\rho(\tilde q y) = \rho(y)\rho(\tilde q)$ and $\rho(1) = 1$.
 - $\bar{\cdot}$ is an $\mathbb{R}$-algebra anti-automorphism as well: $\overline{\tilde q y} = \bar{y}\,\bar{\tilde q}$ and $\bar{1} = 1$.
 
-**Proof.** For $\alpha$, it is defined on generators, where the relations are preserved: $\alpha(e_1)^2 = (-e_1)^2 = -1$, $\alpha(e_2)^2 = (-e_2)^2 = +1$, and $\alpha(e_3) = e_3 = e_1 e_2 = \alpha(e_1)\alpha(e_2)$, since $(-e_1)(-e_2) = e_1 e_2$; so $\alpha$ extends to an automorphism. For $\rho$, the products reverse: $\rho(e_1 e_2) = \rho(e_3) = -e_3$, while $\rho(e_2)\rho(e_1) = e_2 e_1 = -e_3$, and the other products are similar, so $\rho$ is an anti-automorphism. The conjugation is the composite $\bar{\tilde q} = \alpha(\rho(\tilde q)) = \rho(\alpha(\tilde q))$, computed below, and the composite of an automorphism with an anti-automorphism is an anti-automorphism. $\square$
+**Proof.** For $\alpha$, it is defined on generators, where the relations are preserved: $\alpha(e_1)^2 = (-e_1)^2 = -1$, $\alpha(e_2)^2 = (-e_2)^2 = +1$, and $\alpha(e_3) = e_3 = e_1 e_2 = \alpha(e_1)\alpha(e_2)$, since $(-e_1)(-e_2) = e_1 e_2$; so $\alpha$ extends to an automorphism. For $\rho$, the products reverse: $\rho(e_1 e_2) = \rho(e_3) = -e_3$, while $\rho(e_2)\rho(e_1) = e_2 e_1 = -e_3$, and the other products are similar, so $\rho$ is an anti-automorphism. The conjugation is the composite $\bar{\tilde q} = \alpha(\rho(\tilde q)) = \rho(\alpha(\tilde q))$, computed below, and the composite of an automorphism with an anti-automorphism is an anti-automorphism.
 
 In components $\tilde q = q_0 + q_1e_1 + q_2e_2 + q_3e_3$ the three involutions act by their sign patterns:
 
@@ -115,7 +115,7 @@ $$
 
 of dimensions $1, 2, 1$, on which the sign pair $(\alpha, \rho)$ takes the values $(+,+)$, $(-,+)$ and $(+,-)$ respectively. The sign pair $(-,-)$ does not occur.
 
-**Proof.** The common $(+,+)$ space is the intersection of the two fixed spaces $\mathbb{D}_3 \cap \operatorname{span}\{1,e_1,e_2\}$, which consists of elements $q_0 + q_3 e_3 = q_0' e_0 + q_1' e_1 + q_2' e_2$; linear independence forces $q_3 = 0$ and $q_1' = q_2' = 0$, giving $\mathbb{R}\cdot 1$. The $(-,+)$ space is $\operatorname{span}\{e_1,e_2\} \cap \operatorname{span}\{1,e_1,e_2\} = \operatorname{span}\{e_1,e_2\}$. The $(+,-)$ space is $\mathbb{D}_3 \cap \mathbb{R} e_3 = \mathbb{R} e_3$. The $(-,-)$ space is $\operatorname{span}\{e_1,e_2\} \cap \mathbb{R} e_3 = \{0\}$. The three nonzero summands have dimensions $1 + 2 + 1 = 4$, so they exhaust $\mathbb{H}_{\mathrm{s}}$. $\square$
+**Proof.** The common $(+,+)$ space is the intersection of the two fixed spaces $\mathbb{D}_3 \cap \operatorname{span}\{1,e_1,e_2\}$, which consists of elements $q_0 + q_3 e_3 = q_0' e_0 + q_1' e_1 + q_2' e_2$; linear independence forces $q_3 = 0$ and $q_1' = q_2' = 0$, giving $\mathbb{R}\cdot 1$. The $(-,+)$ space is $\operatorname{span}\{e_1,e_2\} \cap \operatorname{span}\{1,e_1,e_2\} = \operatorname{span}\{e_1,e_2\}$. The $(+,-)$ space is $\mathbb{D}_3 \cap \mathbb{R} e_3 = \mathbb{R} e_3$. The $(-,-)$ space is $\operatorname{span}\{e_1,e_2\} \cap \mathbb{R} e_3 = \{0\}$. The three nonzero summands have dimensions $1 + 2 + 1 = 4$, so they exhaust $\mathbb{H}_{\mathrm{s}}$.
 
 ### The Triple Sign Pattern
 
@@ -129,7 +129,7 @@ the entries being the signs of $(\bar{\cdot}, \alpha, \rho)$. The sign pattern $
 
 ### Why the Plane $\operatorname{span}\{e_1,e_2\}$ Does Not Split
 
-The plane $\operatorname{span}\{e_1,e_2\}$ is the largest piece of the common decomposition, of dimension $2$, and none of the three involutions splits it. The reason is that all three act on it by a single scalar: the conjugation acts as $-1$ on the whole of $V \supseteq \operatorname{span}\{e_1,e_2\}$; the principal involution acts as $-1$ because $\alpha(e_1) = -e_1$ and $\alpha(e_2) = -e_2$; and the reversal acts as $+1$ because $\rho(e_1) = e_1$ and $\rho(e_2) = e_2$. An eigenspace of a linear involution carries no further structure that the involution can detect — it acts by one number — so no combination of these involutions can separate $e_1$ from $e_2$. The two directions are distinguished only by structures external to the involution group: the sign of the norm form ($N(e_1) = +1$, $N(e_2) = -1$), which belongs to the geometry, and the split-complex subalgebra structure, since $1$ and $e_2$ span $\mathbb{D}_2$ while $e_1$ alone generates the definite plane $\mathbb{R}[e_1] \cong \mathbb{C}$. The involution group is blind to that distinction, and the plane is the irreducible piece for it.
+The plane $\operatorname{span}\{e_1,e_2\}$ is the largest piece of the common decomposition, of dimension $2$, and none of the three involutions splits it. The reason is that all three act on it by a single scalar: the conjugation acts as $-1$ on the whole of $V \supseteq \operatorname{span}\{e_1,e_2\}$; the principal involution acts as $-1$ because $\alpha(e_1) = -e_1$ and $\alpha(e_2) = -e_2$; and the reversal acts as $+1$ because $\rho(e_1) = e_1$ and $\rho(e_2) = e_2$. An eigenspace of a linear involution carries no further structure that the involution can detect — it acts by one number — so no combination of these involutions can separate $e_1$ from $e_2$. The two directions are distinguished only by structures external to the involution group: the sign of the split-quaternion norm ($N(e_1) = +1$, $N(e_2) = -1$), which belongs to the geometry, and the split-complex subalgebra structure, since $1$ and $e_2$ span $\mathbb{D}_2$ while $e_1$ alone generates the definite plane $\mathbb{R}[e_1] \cong \mathbb{C}$. The involution group is blind to that distinction, and the plane is the irreducible piece for it.
 
 ## The Reduction of the Labelled Spaces
 
@@ -148,7 +148,7 @@ The decomposition classifies each of the distinguished subspaces by the signs of
 
 The table shows the reduction: the lines $\mathbb{R} e_1$ and $\mathbb{R} e_2$ carry the same sign pattern $(-,-,+)$ as their span, which is why they cannot be separated by the involutions, while the line $\mathbb{R} e_3$ carries the distinct pattern $(-,+,-)$ and is thus the unique line isolated by the involutions.
 
-## The Relation to the Analysis on Subspaces
+## The Analysis on the Subspaces
 
 Each involution splits the algebra into a **Hermitian part** (the $+1$ eigenspace) and an **anti-Hermitian part** (the $-1$ eigenspace), and the analysis associates a first-order operator to each part, with the inherited form fixing the type of the operator.
 
@@ -158,7 +158,7 @@ Each involution splits the algebra into a **Hermitian part** (the $+1$ eigenspac
 
 **The reversal.** The split is $\operatorname{span}\{1,e_1,e_2\} \oplus \mathbb{R} e_3$. The Hermitian part has form $q_0^2 + q_1^2 - q_2^2$ of signature $(2,1)$ and carries a three-dimensional wave operator; the anti-Hermitian part is the line $\mathbb{R} e_3$ with the negative-definite form $-q_3^2$ and carries the single derivative $\partial_{q_3}$.
 
-The type of each operator — elliptic or hyperbolic — is determined by the signature of the form on the piece and by nothing else, and the characteristic variety of a hyperbolic operator is exactly the zero divisor set of the piece. The full development is in *Split-Quaternion Analysis on Subspaces*.
+The type of each operator — elliptic or hyperbolic — is determined by the signature of the form on the piece and by nothing else, and the characteristic variety of a hyperbolic operator is exactly the zero divisor set of the piece. The full development is in *Split-Quaternion Analysis*.
 
 ## Examples
 
@@ -180,7 +180,7 @@ $$
 \mathbb{H}_{\mathrm{s}} = \mathbb{R}\cdot 1 \oplus \operatorname{span}\{e_1,e_2\} \oplus \mathbb{R} e_3,
 $$
 
-with triple sign patterns $(\bar{\cdot},\alpha,\rho)$ equal to $(+,+,+)$, $(-,-,+)$ and $(-,+,-)$. The plane $\operatorname{span}\{e_1,e_2\}$ does not split, because all three involutions act on it by a single scalar; only the norm form and the subalgebra structure distinguish $e_1$ from $e_2$. Each eigenspace carries the operator of *Split-Quaternion Analysis on Subspaces*, of type fixed by the signature of the inherited form.
+with triple sign patterns $(\bar{\cdot},\alpha,\rho)$ equal to $(+,+,+)$, $(-,-,+)$ and $(-,+,-)$. The plane $\operatorname{span}\{e_1,e_2\}$ does not split, because all three involutions act on it by a single scalar; only the split-quaternion norm and the subalgebra structure distinguish $e_1$ from $e_2$. Each eigenspace carries the operator of *Split-Quaternion Analysis*, of type fixed by the signature of the inherited form.
 
 ## Summary of Notation
 
@@ -194,7 +194,7 @@ with triple sign patterns $(\bar{\cdot},\alpha,\rho)$ equal to $(+,+,+)$, $(-,-,
 | $V = \operatorname{span}\{e_1,e_2,e_3\}$ | the $-1$ eigenspace of the conjugation | *Split-Quaternion Scalar and Vector Subspaces* |
 | $\mathbb{D}_2, \mathbb{D}_3$ | the split-complex subspaces $\operatorname{span}\{1,e_2\}$, $\operatorname{span}\{1,e_3\}$ | *Split-Quaternion Split-Complex Subspaces* |
 | $\operatorname{span}\{e_1,e_2\}$ | the unsplittable common $(-,-,+)$ piece | this article |
-| $D = e_1\partial_{q_1} + e_2\partial_{q_2} + e_3\partial_{q_3}$ | the vector operator on $V$ | *Split-Quaternion Analysis on Subspaces* |
+| $D = e_1\partial_{q_1} + e_2\partial_{q_2} + e_3\partial_{q_3}$ | the vector operator on $V$ | *Split-Quaternion Analysis* |
 
 ## Further Reading
 

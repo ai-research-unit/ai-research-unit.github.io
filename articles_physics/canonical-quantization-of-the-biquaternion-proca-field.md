@@ -32,14 +32,14 @@ The Proca equation in biquaternionic form is the classical parent of this articl
 
 ### The Lagrangian and the Field Equation
 
-The Maxwell Lagrangian in the series convention is $\mathcal{L}_{\mathrm{M}}=-\tfrac14F_{\mu\nu}F^{\mu\nu}=\tfrac12(\mathbf{E}^2-\mathbf{B}^2)$, with the potential $\tilde{A}\in\mathbb{M}_-$ and $\mathbf{E}$, $\mathbf{B}$ the electric and magnetic fields. The Proca field adds the only invariant available at this order that contains no derivative and is quadratic in the field, the norm form of the potential:
+The Maxwell Lagrangian in the series convention is $\mathcal{L}_{\mathrm{M}}=-\tfrac14F_{\mu\nu}F^{\mu\nu}=\tfrac12(\mathbf{E}^2-\mathbf{B}^2)$, with the potential $\tilde{A}\in\mathbb{M}_-$ and $\mathbf{E}$, $\mathbf{B}$ the electric and magnetic fields. The Proca field adds the only invariant available at this order that contains no derivative and is quadratic in the field, the biquaternion norm of the potential:
 
 $$
 \mathcal{L} = -\tfrac14F_{\mu\nu}F^{\mu\nu} - \tfrac12\mu^2 A_\mu A^\mu
 = \tfrac12\left(\mathbf{E}^2-\mathbf{B}^2\right) + \tfrac12\mu^2\left(A_0^2-\mathbf{A}^2\right).
 $$
 
-The sign of the mass term is fixed by the requirement that the equation reduce, in the Lorenz gauge, to the same sign convention as the companion Klein–Gordon equation $(\Box-\mu^2)\tilde{\Phi}=0$. Because $A_\mu A^\mu=-A_0^2+\mathbf{A}^2$ in signature $(-,+,+,+)$, the invariant $\mathcal{L}_\mu=-\tfrac12\mu^2A_\mu A^\mu$ is $\tfrac12\mu^2(A_0^2-\mathbf{A}^2)$ in components. The mass term is a central real scalar times the norm form of the material four-vector: it commutes with every element of $\mathbb{B}$, and it is the same invariant the scalar field carries, evaluated on the material vector instead of on a central scalar.
+The sign of the mass term is fixed by the requirement that the equation reduce, in the Lorenz gauge, to the same sign convention as the companion Klein–Gordon equation $(\Box-\mu^2)\tilde{\Phi}=0$. Because $A_\mu A^\mu=-A_0^2+\mathbf{A}^2$ in signature $(-,+,+,+)$, the invariant $\mathcal{L}_\mu=-\tfrac12\mu^2A_\mu A^\mu$ is $\tfrac12\mu^2(A_0^2-\mathbf{A}^2)$ in components. The mass term is a central real scalar times the biquaternion norm of the material four-vector: it commutes with every element of $\mathbb{B}$, and it is the same invariant the scalar field carries, evaluated on the material vector instead of on a central scalar.
 
 The Euler–Lagrange equation is
 
@@ -56,7 +56,7 @@ $$
 
 whose massless case $\tilde{\nabla}\tilde{F}=0$ is the source-free Maxwell equation of the companion article. The right-hand side $\mu^2\tilde{A}$ lies in the material sector, as does the left-hand side, so the biquaternion equation is sector-consistent: the algebra does not mix $\mathbb{M}_-$ with $\mathbb{M}_+$.
 
-<!-- CONVENTION — Proca mass term and the field equation: the signs of this article are a matched chain in the series ict metric eta = diag(-1,+1,+1,+1) with Box = d_{ict}^2 + Delta = grad^2 - d_t^2. The Lagrangian is L = -(1/4) F F - (1/2) mu^2 A A, the field equation is d_mu F^{mu nu} - mu^2 A^nu = 0, its biquaternion form is nabla-tilde F-tilde = + mu^2 A-tilde, and in the Lorenz gauge it reduces to (Box - mu^2) A-tilde = 0, the same sign as the companion Klein–Gordon equation. The mass term is the central real scalar times the norm form of the material four-vector. Because the series ict Box is the negative of the mostly-minus Box, the same physics is written in a mostly-minus text with opposite signs on the mass term; do not "reconcile" the two forms, and check the local definition of Box before changing any sign here. -->
+<!-- CONVENTION — Proca mass term and the field equation: the signs of this article are a matched chain in the series ict metric eta = diag(-1,+1,+1,+1) with Box = d_{ict}^2 + Delta = grad^2 - d_t^2. The Lagrangian is L = -(1/4) F F - (1/2) mu^2 A A, the field equation is d_mu F^{mu nu} - mu^2 A^nu = 0, its biquaternion form is nabla-tilde F-tilde = + mu^2 A-tilde, and in the Lorenz gauge it reduces to (Box - mu^2) A-tilde = 0, the same sign as the companion Klein–Gordon equation. The mass term is the central real scalar times the biquaternion norm of the material four-vector. Because the series ict Box is the negative of the mostly-minus Box, the same physics is written in a mostly-minus text with opposite signs on the mass term; do not "reconcile" the two forms, and check the local definition of Box before changing any sign here. -->
 
 ### The Lorenz Condition Is a Consequence
 
@@ -104,7 +104,7 @@ A_\mu(x) = \varepsilon_\mu(\mathbf{p})\,e^{-ip\cdot x},
 \qquad p^\mu\varepsilon_\mu = 0,
 $$
 
-with $\omega_{\mathbf{p}}=\sqrt{\mathbf{p}^2+\mu^2}$ and the invariant phase $p_\mu x^\mu=\omega_{\mathbf{p}}t-\mathbf{p}\cdot\mathbf{x}$ of the series convention, the material four-wavevector being $\tilde{K}=i\omega_{\mathbf{p}}e_0+\mathbf{p}$, whose norm form is $N(\tilde{K})=(\mathbf{p}^2-\omega_{\mathbf{p}}^2)e_0$, so that $p^2=-N(\tilde{K})$ as in the scalar companion. The Lorenz condition is the transversality condition $p^\mu\varepsilon_\mu=0$ — the plain contraction $\omega_{\mathbf{p}}\varepsilon_0+\mathbf{p}\cdot\boldsymbol{\varepsilon}$ of the four components — one complex linear condition on the four components of $\varepsilon_\mu$, leaving three independent polarizations. These are the two transverse polarizations, with $\varepsilon_\mu=(0,\boldsymbol{\varepsilon}_T)$ and $\mathbf{p}\cdot\boldsymbol{\varepsilon}_T=0$, and the longitudinal one,
+with $\omega_{\mathbf{p}}=\sqrt{\mathbf{p}^2+\mu^2}$ and the invariant phase $p_\mu x^\mu=\omega_{\mathbf{p}}t-\mathbf{p}\cdot\mathbf{x}$ of the series convention, the material four-wavevector being $\tilde{K}=i\omega_{\mathbf{p}}e_0+\mathbf{p}$, whose biquaternion norm is $N(\tilde{K})=(\mathbf{p}^2-\omega_{\mathbf{p}}^2)e_0$, so that $p^2=-N(\tilde{K})$ as in the scalar companion. The Lorenz condition is the transversality condition $p^\mu\varepsilon_\mu=0$ — the plain contraction $\omega_{\mathbf{p}}\varepsilon_0+\mathbf{p}\cdot\boldsymbol{\varepsilon}$ of the four components — one complex linear condition on the four components of $\varepsilon_\mu$, leaving three independent polarizations. These are the two transverse polarizations, with $\varepsilon_\mu=(0,\boldsymbol{\varepsilon}_T)$ and $\mathbf{p}\cdot\boldsymbol{\varepsilon}_T=0$, and the longitudinal one,
 
 $$
 \varepsilon^{L}_\mu = \frac{1}{\mu}\left(-|\mathbf{p}|,\,0,\,0,\,\omega_{\mathbf{p}}\right)
@@ -122,7 +122,7 @@ $$
 = \eta_{\mu\nu} + \frac{p_\mu p_\nu}{\mu^2},
 $$
 
-and its right-hand side was checked directly in the companion file: it is idempotent, $P^2=P$, it has trace $3$, and it annihilates the momentum, $P_{\mu\nu}p^\nu=0$. The trace three is the statement that three polarizations are physical; the annihilation is the statement that $P$ projects onto the three-plane orthogonal to $p$, which for a massive vector is the full on-shell polarization space. At rest, $p^\mu=(\mu,\mathbf{0})$, the projector is $\mathrm{diag}(0,1,1,1)$, the three spatial directions, and the longitudinal polarization is the spatial direction of the momentum in the boosted frame. The three vectors were exhibited explicitly at $\mathbf{p}=0$, $p=1.5\,\hat{\mathbf{z}}$ and $p=-3\,\hat{\mathbf{z}}$, and the completeness relation was verified to machine precision at each, together with $p^\mu\varepsilon^r_\mu=0$.
+and its right-hand side was checked directly: it is idempotent, $P^2=P$, it has trace $3$, and it annihilates the momentum, $P_{\mu\nu}p^\nu=0$. The trace three is the statement that three polarizations are physical; the annihilation is the statement that $P$ projects onto the three-plane orthogonal to $p$, which for a massive vector is the full on-shell polarization space. At rest, $p^\mu=(\mu,\mathbf{0})$, the projector is $\mathrm{diag}(0,1,1,1)$, the three spatial directions, and the longitudinal polarization is the spatial direction of the momentum in the boosted frame. The three vectors were exhibited explicitly at $\mathbf{p}=0$, $p=1.5\,\hat{\mathbf{z}}$ and $p=-3\,\hat{\mathbf{z}}$, and the completeness relation was verified to machine precision at each, together with $p^\mu\varepsilon^r_\mu=0$.
 
 ## The Legendre Transform and the Constraint Structure
 
@@ -279,7 +279,7 @@ The longitudinal polarization makes the point concretely. At $\mu\neq0$ its norm
 
 ## What the Algebra Supplies and What It Imports
 
-**Supplied by the algebra, and recomputed here.** The material sector $\mathbb{M}_-$ as the value space of the potential; the field strength $\tilde{F}$ with vanishing scalar part and its gauge-invariant character; the d'Alembertian $\Box$ as a central real scalar operator, so that it acts componentwise and commutes with the sector decomposition; the divergence operation $\bar{\tilde{\nabla}}$ and its scalar part, which turn the biquaternion field equation into the Lorenz condition by the vanishing of $\mathrm{Sc}(\tilde{F})$; the norm form as the unique invariant mass term available at this order, so that the mass term is central and does not mix the sectors; the material basis and its metric, in which the polarization completeness relation and the projector take their stated form; and the trace formula, in which the positive-definite norm of the three-polarization Fock space is expressed.
+**Supplied by the algebra, and recomputed here.** The material sector $\mathbb{M}_-$ as the value space of the potential; the field strength $\tilde{F}$ with vanishing scalar part and its gauge-invariant character; the d'Alembertian $\Box$ as a central real scalar operator, so that it acts componentwise and commutes with the sector decomposition; the divergence operation $\bar{\tilde{\nabla}}$ and its scalar part, which turn the biquaternion field equation into the Lorenz condition by the vanishing of $\mathrm{Sc}(\tilde{F})$; the biquaternion norm as the unique invariant mass term available at this order, so that the mass term is central and does not mix the sectors; the material basis and its metric, in which the polarization completeness relation and the projector take their stated form; and the trace formula, in which the positive-definite norm of the three-polarization Fock space is expressed.
 
 **Interpretation, not derivation.** The reading of the three polarizations as the three states of a spin-one particle, and of the massless limit as the appearance of a gauge symmetry that removes one of them, is the standard reading of the Proca theory, and the framework is consistent with it. The algebra does not force the spin reading on its own; that comes from the adjoint action of the rotation group on the material sector, which the integer-spin construction of this subcategory develops from the same adjoint action.
 
@@ -287,7 +287,7 @@ The longitudinal polarization makes the point concretely. At $\mu\neq0$ its norm
 
 ## Open Questions
 
-1. **A biquaternion origin for the mass term.** The mass term is the norm form of the material vector times a parameter. Is there an algebraic reason for the norm form rather than some other central invariant — the trace pairing, the scalar part of a bilinear, a self-interaction term — or is the choice fixed only by the requirement that the equation be linear and second order? The same question arises for the Klein–Gordon field, and the two answers should be the same answer.
+1. **A biquaternion origin for the mass term.** The mass term is the biquaternion norm of the material vector times a parameter. Is there an algebraic reason for the biquaternion norm rather than some other central invariant — the trace pairing, the scalar part of a bilinear, a self-interaction term — or is the choice fixed only by the requirement that the equation be linear and second order? The same question arises for the Klein–Gordon field, and the two answers should be the same answer.
 
 2. **The second-class bracket in the algebra's own terms.** The Dirac bracket is standard, but it is defined by the constraint matrix $\Delta$ and is not written in the algebra's operations. Is there a biquaternionic construction — a projection, a trace, a scalar-part pairing — that produces the reduced three-dimensional phase space directly, in the way that $\mathrm{Sc}(\tilde{\pi})\approx0$ writes the primary constraint?
 
@@ -301,7 +301,7 @@ The longitudinal polarization makes the point concretely. At $\mu\neq0$ its norm
 
 ## Summary
 
-The Proca field in biquaternionic form is the massive vector field, a material-sector four-vector $\tilde{A}\in\mathbb{M}_-$ obeying $\tilde{\nabla}\tilde{F}=\mu^2\tilde{A}$, with the Lagrangian $-\tfrac14F_{\mu\nu}F^{\mu\nu}-\tfrac12\mu^2A_\mu A^\mu$ in the series $ict$ metric. The mass term is the central norm form of the potential, so it commutes with the algebra and does not mix the sectors, and its sign is fixed by the series convention of the Klein–Gordon equation.
+The Proca field in biquaternionic form is the massive vector field, a material-sector four-vector $\tilde{A}\in\mathbb{M}_-$ obeying $\tilde{\nabla}\tilde{F}=\mu^2\tilde{A}$, with the Lagrangian $-\tfrac14F_{\mu\nu}F^{\mu\nu}-\tfrac12\mu^2A_\mu A^\mu$ in the series $ict$ metric. The mass term is the central biquaternion norm of the potential, so it commutes with the algebra and does not mix the sectors, and its sign is fixed by the series convention of the Klein–Gordon equation.
 
 The Lorenz condition is a **consequence** of the massive field equation and not a gauge choice. Its algebra-level derivation is the identity $\mathrm{Sc}(\bar{\tilde{\nabla}}\tilde{\nabla}\tilde{F})=\Box\,\mathrm{Sc}(\tilde{F})=0$, which holds because the field strength has vanishing scalar part and the d'Alembertian is central, together with $\mathrm{Sc}(\bar{\tilde{\nabla}}(\mu^2\tilde{A}))=\mu^2S$; hence $\mu^2S=0$. In the Lorenz gauge the equation is the componentwise massive wave equation $(\Box-\mu^2)\tilde{A}=0$.
 
@@ -309,7 +309,7 @@ The Legendre transform leaves the momenta unchanged from Maxwell, $\pi^\mu=-F^{0
 
 The three on-shell polarizations satisfy $\sum_r\varepsilon^r_\mu\varepsilon^r_\nu=\eta_{\mu\nu}+p_\mu p_\nu/\mu^2$, an idempotent of trace three annihilating $p^\nu$, verified at several momenta. The same object is the numerator of the propagator $D_{\mu\nu}=i(\eta_{\mu\nu}+p_\mu p_\nu/\mu^2)/(p^2-\mu^2+i\epsilon)$, whose inverse property was verified off shell, so the propagator's residue is the three-polarization projector. The mode expansion carries three positive-norm modes with the standard bosonic commutators, and the normal-ordered Hamiltonian is the sum of three oscillator quanta per mode, the un-normal-ordered constant being three half-quanta per mode, one for each polarization.
 
-The massless limit is the limit in which the two constraints become first class, the gauge transformation $\tilde{A}\mapsto\tilde{A}-\tilde{\nabla}\Gamma$ reappears, and the count drops from three to two. The massless theory has two polarizations because a gauge symmetry identifies field directions, not because of any bookkeeping; the Proca theory is the control case in which no gauge fixing is needed and the fourth polarization is physical. What the algebra supplies is the carrier, the field strength, the operator that makes the Lorenz condition a consequence, and the central norm form that the mass term uses; what it does not supply is the mass itself, the ladder algebra, or any empirical content.
+The massless limit is the limit in which the two constraints become first class, the gauge transformation $\tilde{A}\mapsto\tilde{A}-\tilde{\nabla}\Gamma$ reappears, and the count drops from three to two. The massless theory has two polarizations because a gauge symmetry identifies field directions, not because of any bookkeeping; the Proca theory is the control case in which no gauge fixing is needed and the fourth polarization is physical. What the algebra supplies is the carrier, the field strength, the operator that makes the Lorenz condition a consequence, and the central biquaternion norm that the mass term uses; what it does not supply is the mass itself, the ladder algebra, or any empirical content.
 
 ## Summary of Notation
 
@@ -318,7 +318,7 @@ The massless limit is the limit in which the two constraints become first class,
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
 | $e_0=1,e_1,e_2,e_3$ | Quaternion basis, $e_k^2=-e_0$ |
 | $i$ | Central scalar imaginary, $i^2=-1$ |
-| $\mathbb{M}_-,\mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
+| $\mathbb{M}_+,\mathbb{M}_-$ | Informational (Hermitian) and material (anti-Hermitian) sectors |
 | $\tilde{A}=iA_0e_0+\mathbf{A}\in\mathbb{M}_-$ | Proca potential biquaternion |
 | $\tilde{F}=\bar{\tilde{\nabla}}\tilde{A}-\mathrm{Sc}(\bar{\tilde{\nabla}}\tilde{A})$ | Field-strength biquaternion, $\mathrm{Sc}(\tilde{F})=0$ |
 | $\tilde{\nabla},\bar{\tilde{\nabla}},\Box=\partial_{ict}^2+\Delta$ | Gradient, conjugate, d'Alembertian |

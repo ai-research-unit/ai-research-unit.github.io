@@ -43,7 +43,7 @@ $$
 
 so the sum of the eigenspaces is direct.
 
-*Proof.* Suppose $v_1+\cdots+v_k=0$ with $v_i \in V_{\lambda_i}$, and choose such a relation with the fewest nonzero terms; reindex so that $v_1,\dots,v_m \neq 0$. Applying $T$ gives $\lambda_1 v_1+\cdots+\lambda_m v_m=0$, and subtracting $\lambda_1$ times the original relation gives $(\lambda_2-\lambda_1)v_2+\cdots+(\lambda_m-\lambda_1)v_m=0$, a shorter relation with nonzero coefficients; this contradicts minimality unless $m=1$, in which case $v_1=0$, again a contradiction. Hence no nontrivial relation exists and the sum is direct. $\square$
+*Proof.* Suppose $v_1+\cdots+v_k=0$ with $v_i \in V_{\lambda_i}$, and choose such a relation with the fewest nonzero terms; reindex so that $v_1,\dots,v_m \neq 0$. Applying $T$ gives $\lambda_1 v_1+\cdots+\lambda_m v_m=0$, and subtracting $\lambda_1$ times the original relation gives $(\lambda_2-\lambda_1)v_2+\cdots+(\lambda_m-\lambda_1)v_m=0$, a shorter relation with nonzero coefficients; this contradicts minimality unless $m=1$, in which case $v_1=0$, again a contradiction. Hence no nontrivial relation exists and the sum is direct.
 
 A crucial point is that eigenvalues depend on the field. The real matrix $J=\begin{pmatrix}0&-1\\1&0\end{pmatrix}$ has no real eigenvalue, because $J(x,y)=(-y,x)$ rotates the plane and fixes no line; over $\mathbb{C}$ its eigenvalues are $i$ and $-i$, with eigenvectors $(1,-i)$ and $(1,i)$. The characteristic polynomial below makes this precise: it has real coefficients and its real roots are the real eigenvalues.
 
@@ -63,7 +63,7 @@ The definition is legitimate for $T$ because similar matrices have equal determi
 
 **Theorem.** $c_A(x)=x^n-(\operatorname{tr}A)x^{n-1}+\cdots+(-1)^n\det A$, a monic polynomial of degree $n$; and $\lambda \in F$ is an eigenvalue of $A$ if and only if $c_A(\lambda)=0$.
 
-*Proof.* The determinant is a sum over permutations, and the only permutations contributing to the coefficient of $x^{n-k}$ involve at least $n-k$ diagonal factors; expanding identifies the leading coefficient as $1$, the coefficient of $x^{n-1}$ as $-\sum_i a_{ii}$, and the constant term as $\det(-A)=(-1)^n\det A$. For the second statement, $\lambda$ is an eigenvalue exactly when $\ker(\lambda I-A) \neq 0$, which over a field is equivalent to $\det(\lambda I-A)=0$. $\square$
+*Proof.* The determinant is a sum over permutations, and the only permutations contributing to the coefficient of $x^{n-k}$ involve at least $n-k$ diagonal factors; expanding identifies the leading coefficient as $1$, the coefficient of $x^{n-1}$ as $-\sum_i a_{ii}$, and the constant term as $\det(-A)=(-1)^n\det A$. For the second statement, $\lambda$ is an eigenvalue exactly when $\ker(\lambda I-A) \neq 0$, which over a field is equivalent to $\det(\lambda I-A)=0$.
 
 **Definition.** The **algebraic multiplicity** of an eigenvalue $\lambda$ is its multiplicity as a root of $c_T$, and the **geometric multiplicity** is $\dim_F V_\lambda$.
 
@@ -75,7 +75,7 @@ $$
 \begin{pmatrix} \lambda I_g & * \\ 0 & B \end{pmatrix},
 $$
 
-so $c_T(x)=(x-\lambda)^g c_B(x)$ and $\lambda$ occurs to the power at least $g$. $\square$
+so $c_T(x)=(x-\lambda)^g c_B(x)$ and $\lambda$ occurs to the power at least $g$.
 
 The inequality can be strict, and the gap is exactly what prevents diagonalisation.
 
@@ -83,7 +83,7 @@ The inequality can be strict, and the gap is exactly what prevents diagonalisati
 
 **Proposition.** (i) The eigenvalues of an upper triangular matrix are its diagonal entries, and $c_A(x)=\prod_i(x-a_{ii})$. (ii) If $A$ is invertible with eigenvalues $\lambda_1,\dots,\lambda_n$ then $A^{-1}$ has eigenvalues $\lambda_i^{-1}$, and $A^k$ has eigenvalues $\lambda_i^k$. (iii) $A$ and $A^{\mathsf{T}}$ have the same characteristic polynomial.
 
-*Proof.* (i) $xI-A$ is upper triangular with diagonal $x-a_{ii}$, so its determinant is the product. (ii) $Av=\lambda v$ gives $A^{-1}v=\lambda^{-1}v$ for $\lambda \neq 0$, and $A^kv=\lambda^k v$ by induction. (iii) $\det(xI-A^{\mathsf{T}})=\det((xI-A)^{\mathsf{T}})=\det(xI-A)$. $\square$
+*Proof.* (i) $xI-A$ is upper triangular with diagonal $x-a_{ii}$, so its determinant is the product. (ii) $Av=\lambda v$ gives $A^{-1}v=\lambda^{-1}v$ for $\lambda \neq 0$, and $A^kv=\lambda^k v$ by induction. (iii) $\det(xI-A^{\mathsf{T}})=\det((xI-A)^{\mathsf{T}})=\det(xI-A)$.
 
 ## Diagonalisation
 
@@ -93,11 +93,11 @@ The inequality can be strict, and the gap is exactly what prevents diagonalisati
 
 **Theorem.** For a linear operator $T$ on an $n$-dimensional space the following are equivalent: (i) $T$ is diagonalisable; (ii) $V$ is the direct sum of the eigenspaces of $T$; (iii) the sum of the geometric multiplicities of the distinct eigenvalues equals $n$; (iv) the characteristic polynomial splits over $F$ and the geometric multiplicity equals the algebraic multiplicity for every eigenvalue.
 
-*Proof.* (i) $\Leftrightarrow$ (ii): a basis of eigenvectors is exactly a union of bases of the eigenspaces, and the union is a basis precisely when the sum of the eigenspaces is direct and equal to $V$. (ii) $\Leftrightarrow$ (iii): the sum of the eigenspaces is always direct, and it equals $V$ exactly when its dimension, the sum of the geometric multiplicities, is $n$. (iii) $\Leftrightarrow$ (iv): the sum of the algebraic multiplicities is $n$ when $c_T$ splits, and the sum of the geometric multiplicities is at most that sum with equality exactly when each geometric multiplicity equals the corresponding algebraic multiplicity; so a sum of geometric multiplicities equal to $n$ forces both conditions, and they clearly imply the sum is $n$. $\square$
+*Proof.* (i) $\Leftrightarrow$ (ii): a basis of eigenvectors is exactly a union of bases of the eigenspaces, and the union is a basis precisely when the sum of the eigenspaces is direct and equal to $V$. (ii) $\Leftrightarrow$ (iii): the sum of the eigenspaces is always direct, and it equals $V$ exactly when its dimension, the sum of the geometric multiplicities, is $n$. (iii) $\Leftrightarrow$ (iv): the sum of the algebraic multiplicities is $n$ when $c_T$ splits, and the sum of the geometric multiplicities is at most that sum with equality exactly when each geometric multiplicity equals the corresponding algebraic multiplicity; so a sum of geometric multiplicities equal to $n$ forces both conditions, and they clearly imply the sum is $n$.
 
 **Corollary.** If $T$ has $n$ distinct eigenvalues then $T$ is diagonalisable.
 
-*Proof.* Each eigenspace is nonzero and the sum is direct, so the sum has dimension at least the number of eigenvalues, which is $n$; hence the sum is $V$. $\square$
+*Proof.* Each eigenspace is nonzero and the sum is direct, so the sum has dimension at least the number of eigenvalues, which is $n$; hence the sum is $V$.
 
 The converse fails: the identity has a single eigenvalue and is diagonalisable. Distinctness of eigenvalues is sufficient, not necessary.
 
@@ -131,7 +131,7 @@ The generalised eigenspaces are the correct replacement for the eigenspaces when
 
 **Proposition.** If $V=W_1 \oplus \cdots \oplus W_k$ with each $W_i$ invariant under $T$, then in a basis adapted to the decomposition the matrix of $T$ is block diagonal, with blocks the matrices of the restrictions $T|_{W_i}$; consequently $c_T=\prod_i c_{T|_{W_i}}$.
 
-*Proof.* The image of $W_i$ lies in $W_i$, so the matrix has no components carrying $W_i$ into $W_j$ for $j \neq i$, and the determinant of a block diagonal matrix is the product of the determinants of its blocks. $\square$
+*Proof.* The image of $W_i$ lies in $W_i$, so the matrix has no components carrying $W_i$ into $W_j$ for $j \neq i$, and the determinant of a block diagonal matrix is the product of the determinants of its blocks.
 
 ### Triangularisation
 
@@ -139,7 +139,7 @@ The generalised eigenspaces are the correct replacement for the eigenspaces when
 
 **Theorem.** $T$ is triangularisable if and only if $c_T$ splits over $F$ into linear factors.
 
-*Proof.* If the matrix is upper triangular then $c_T$ is the product of the diagonal entries $x-a_{ii}$ by the proposition on triangular matrices, so it splits. Conversely, if $c_T$ splits, it has a root $\lambda_1 \in F$, hence an eigenvector $v_1$; the quotient $V/\langle v_1\rangle$ has dimension $n-1$ and the induced operator has characteristic polynomial $c_T(x)/(x-\lambda_1)$, which splits, so by induction the quotient has a basis of the required form, and lifting it gives a basis $v_1,\dots,v_n$ of $V$ in which the matrix is upper triangular with the roots on the diagonal. $\square$
+*Proof.* If the matrix is upper triangular then $c_T$ is the product of the diagonal entries $x-a_{ii}$ by the proposition on triangular matrices, so it splits. Conversely, if $c_T$ splits, it has a root $\lambda_1 \in F$, hence an eigenvector $v_1$; the quotient $V/\langle v_1\rangle$ has dimension $n-1$ and the induced operator has characteristic polynomial $c_T(x)/(x-\lambda_1)$, which splits, so by induction the quotient has a basis of the required form, and lifting it gives a basis $v_1,\dots,v_n$ of $V$ in which the matrix is upper triangular with the roots on the diagonal.
 
 Triangularisation is always available after extending scalars to a splitting field, and over $\mathbb{C}$ every matrix is triangularisable; diagonalisation is not, because the diagonal entries may repeat with a single eigenvector.
 
@@ -159,11 +159,11 @@ This is the standard Cayley–Hamilton theorem, proved by either of the usual ro
 
 **Theorem.** $T$ is diagonalisable over $F$ if and only if $m_T$ is a product of distinct linear factors in $F[x]$.
 
-*Proof.* If $T$ is diagonal, let $\mu_1,\dots,\mu_r$ be its **distinct** eigenvalues; then $\prod_{j=1}^{r}(x-\mu_j)$ annihilates $T$, since it vanishes at every diagonal entry, so $m_T$ divides it, hence $m_T$ is a product of distinct linear factors. Conversely, suppose $m_T=\prod_{i=1}^{k}(x-\lambda_i)$ with the $\lambda_i$ distinct. The polynomials $q_i=\prod_{j \neq i}(x-\lambda_j)$ have no common factor, so there exist $a_i \in F[x]$ with $\sum_i a_i q_i=1$ by Bézout. For $v \in V$, write $v=\sum_i a_i(T)q_i(T)v$, and $q_i(T)v \in \ker(T-\lambda_i\operatorname{id})$ because $(x-\lambda_i)q_i=m_T$ annihilates $T$. Hence $V$ is the sum of the eigenspaces, and it is a direct sum because eigenspaces for distinct eigenvalues are independent. $\square$
+*Proof.* If $T$ is diagonal, let $\mu_1,\dots,\mu_r$ be its **distinct** eigenvalues; then $\prod_{j=1}^{r}(x-\mu_j)$ annihilates $T$, since it vanishes at every diagonal entry, so $m_T$ divides it, hence $m_T$ is a product of distinct linear factors. Conversely, suppose $m_T=\prod_{i=1}^{k}(x-\lambda_i)$ with the $\lambda_i$ distinct. The polynomials $q_i=\prod_{j \neq i}(x-\lambda_j)$ have no common factor, so there exist $a_i \in F[x]$ with $\sum_i a_i q_i=1$ by Bézout. For $v \in V$, write $v=\sum_i a_i(T)q_i(T)v$, and $q_i(T)v \in \ker(T-\lambda_i\operatorname{id})$ because $(x-\lambda_i)q_i=m_T$ annihilates $T$. Hence $V$ is the sum of the eigenspaces, and it is a direct sum because eigenspaces for distinct eigenvalues are independent.
 
 **Theorem.** Let $K$ be a splitting field for $m_T$. The roots of $m_T$ in $K$ are exactly the eigenvalues of $T$ in $K$, and they coincide with the roots of $c_T$ in $K$.
 
-*Proof.* If $\lambda$ is an eigenvalue with eigenvector $v$, then $0=m_T(T)v=m_T(\lambda)v$ and $v \neq 0$, so $m_T(\lambda)=0$. Conversely, if $\mu$ is a root of $m_T$, write $m_T=(x-\mu)^k g$ with $g(\mu) \neq 0$ and $k \ge 1$. If $\mu$ were not an eigenvalue then $T-\mu\operatorname{id}$ would be invertible, hence so would $(T-\mu\operatorname{id})^k$, and multiplying $0=m_T(T)=(T-\mu\operatorname{id})^kg(T)$ by the inverse would give $g(T)=0$ with $\deg g<\deg m_T$, contradicting minimality. Hence $\mu$ is an eigenvalue. Since $m_T \mid c_T$ by Cayley–Hamilton, every root of $m_T$ is a root of $c_T$; and every root of $c_T$ is an eigenvalue, hence a root of $m_T$ by the first part. So the two polynomials have the same set of roots. $\square$
+*Proof.* If $\lambda$ is an eigenvalue with eigenvector $v$, then $0=m_T(T)v=m_T(\lambda)v$ and $v \neq 0$, so $m_T(\lambda)=0$. Conversely, if $\mu$ is a root of $m_T$, write $m_T=(x-\mu)^k g$ with $g(\mu) \neq 0$ and $k \ge 1$. If $\mu$ were not an eigenvalue then $T-\mu\operatorname{id}$ would be invertible, hence so would $(T-\mu\operatorname{id})^k$, and multiplying $0=m_T(T)=(T-\mu\operatorname{id})^kg(T)$ by the inverse would give $g(T)=0$ with $\deg g<\deg m_T$, contradicting minimality. Hence $\mu$ is an eigenvalue. Since $m_T \mid c_T$ by Cayley–Hamilton, every root of $m_T$ is a root of $c_T$; and every root of $c_T$ is an eigenvalue, hence a root of $m_T$ by the first part. So the two polynomials have the same set of roots.
 
 The minimal polynomial is a finer invariant than the characteristic polynomial and detects diagonalisability exactly. For the matrix $N=\begin{pmatrix}1&1\\0&1\end{pmatrix}$ one has $c_N=(x-1)^2$, and also $m_N=(x-1)^2$, since $N-I \neq 0$ but $(N-I)^2=0$; the repeated root occurs in both, so $N$ is not diagonalisable. For $A=\begin{pmatrix}2&1\\1&2\end{pmatrix}$ one has $c_A=(x-3)(x-1)=m_A$.
 
@@ -171,11 +171,9 @@ The minimal polynomial is a finer invariant than the characteristic polynomial a
 
 **Theorem.** Let $T_1,\dots,T_k$ be diagonalisable operators on $V$ that commute pairwise, and suppose each $T_i$ splits over $F$. Then there is a basis of $V$ in which every $T_i$ is diagonal.
 
-*Proof.* For $k=1$ this is the definition. Inductively, let $T_1$ be diagonalisable and decompose $V=\bigoplus_\lambda V_\lambda$ into its eigenspaces. Each $V_\lambda$ is invariant under every $T_i$, because if $v \in V_\lambda$ then $T_1T_i v=T_iT_1v=\lambda T_iv$, so $T_iv \in V_\lambda$. The restrictions $T_2|_{V_\lambda},\dots,T_k|_{V_\lambda}$ commute pairwise and remain diagonalisable with splitting characteristic polynomial on the invariant subspace $V_\lambda$; by induction they are simultaneously diagonal on $V_\lambda$. Combining bases over the finitely many $\lambda$ gives a basis of $V$ diagonal for all $T_i$. $\square$
+*Proof.* For $k=1$ this is the definition. Inductively, let $T_1$ be diagonalisable and decompose $V=\bigoplus_\lambda V_\lambda$ into its eigenspaces. Each $V_\lambda$ is invariant under every $T_i$, because if $v \in V_\lambda$ then $T_1T_i v=T_iT_1v=\lambda T_iv$, so $T_iv \in V_\lambda$. The restrictions $T_2|_{V_\lambda},\dots,T_k|_{V_\lambda}$ commute pairwise and remain diagonalisable with splitting characteristic polynomial on the invariant subspace $V_\lambda$; by induction they are simultaneously diagonal on $V_\lambda$. Combining bases over the finitely many $\lambda$ gives a basis of $V$ diagonal for all $T_i$.
 
 **Corollary.** Over an algebraically closed field the hypothesis that each $T_i$ splits is automatic, so every finite commuting family of diagonalisable operators is simultaneously diagonalisable. In particular a single diagonalisable operator lies in a maximal commutative subalgebra consisting entirely of simultaneously diagonalisable operators, namely the algebra of all operators that are diagonal in its eigenbasis; the algebra of polynomials in the operator and the scalars is the subalgebra of that one generated by the operator.
-
-The theorem is the finite-dimensional form of the compatibility of spectral decompositions, and it is used in the theory of commuting normal operators on a Hilbert space, where it reappears with the spectral theorem.
 
 ## Powers of an Operator
 
@@ -203,19 +201,9 @@ The characteristic polynomial is $c_M(x)=x^2-x-1$, with distinct real roots $\va
 
 **A Jordan block.** Let $N=\begin{pmatrix}1&1&0\\0&1&1\\0&0&1\end{pmatrix}$. Then $c_N(x)=(x-1)^3$ and $N-I$ has rank $2$, so $V_1$ has dimension $3-2=1$ and the geometric multiplicity is strictly less than the algebraic multiplicity. The minimal polynomial is $(x-1)^3$, the generalised eigenspace $V^{(1)}$ is all of $F^3$, and $N$ is not diagonalisable. This is the simplest matrix for which the generalised eigenspace is needed.
 
-## The Spectral Theorem in Finite Dimension
+## Orthogonal Diagonalisation Deferred to Part II
 
-When the space carries an inner product, diagonalisation can be made orthogonal, and the operators for which this is possible are characterised by a commutation condition with the adjoint.
-
-**Theorem.** Let $V$ be a finite-dimensional inner product space over $\mathbb{R}$ or $\mathbb{C}$ and let $T^*$ be the adjoint of $T$, characterised by $\langle T v,w\rangle=\langle v,T^*w\rangle$.
-
-(i) If $T=T^*$ is self-adjoint then every eigenvalue of $T$ is real and $V$ has an orthonormal basis of eigenvectors of $T$; equivalently the matrix of $T$ is symmetric in the real case and Hermitian in the complex case.
-
-(ii) Over $\mathbb{C}$, if $T$ is **normal**, $TT^*=T^*T$, then $V$ has an orthonormal basis of eigenvectors of $T$; conversely an operator with an orthonormal eigenbasis is normal.
-
-The proof in finite dimension is the standard argument: a self-adjoint operator has a real eigenvalue, and the orthogonal complement of an eigenvector is invariant under $T$, so induction applies; the normal case is reduced to the self-adjoint case by considering real and imaginary parts. The infinite-dimensional version, for bounded self-adjoint and normal operators on a Hilbert space, is not covered here; the finite-dimensional statement here is its matrix shadow.
-
-**Corollary.** A real matrix is orthogonally diagonalisable if and only if it is symmetric; a complex matrix is unitarily diagonalisable if and only if it is normal.
+Requiring the diagonalising basis to be orthogonal is a demand that uses more than the field and the linear structure, so it is not a purely algebraic question; that refinement of diagonalisation belongs to **Part II**, where it is treated after the geometric structure it needs has been introduced.
 
 ## The Spectrum and the Spectral Radius
 
@@ -224,16 +212,6 @@ The proof in finite dimension is the standard argument: a self-adjoint operator 
 $$
 \rho(T)=\max_{\lambda \in \sigma(T)}|\lambda| .
 $$
-
-**Proposition.** If $F \subseteq \mathbb{C}$ then for every submultiplicative matrix norm $\|\cdot\|$,
-
-$$
-\rho(T)=\lim_{k \to \infty}\|T^k\|^{1/k},
-$$
-
-and $\rho(T) \le \|T\|$ for every such norm. If $T$ is diagonalisable and the norm is the operator norm induced by an inner product in which the eigenvectors are orthogonal, then $\|T^k\|=\rho(T)^k$ for every $k$.
-
-The first statement is Gelfand's formula, quoted here as standard; it shows that the spectrum, which is defined algebraically, controls the growth of powers, and it is the finite-dimensional case of the spectral radius formula for bounded operators on a Banach space. The inequality $\rho(T) \le \|T\|$ follows from submultiplicativity, $\|T^k\| \le \|T\|^k$, together with Gelfand's formula.
 
 ## The Jordan Decomposition in General
 
@@ -251,7 +229,7 @@ An eigenvalue of $T:V \to V$ is a scalar $\lambda$ with $T(v)=\lambda v$ for som
 
 $T$ is diagonalisable when $V$ has a basis of eigenvectors, equivalently when $V$ is the direct sum of the eigenspaces, equivalently when the geometric multiplicities sum to $n$, equivalently when $c_T$ splits over $F$ and every geometric multiplicity equals the corresponding algebraic multiplicity. Distinct eigenvalues always suffice but are not necessary. The eigenspace dimensions are computed as $n-\operatorname{rk}(\lambda I-A)$, so diagonalisation is decided by rank computations on the matrices $\lambda I-A$.
 
-When diagonalisation fails one uses invariant subspaces: a generalised eigenspace collects the vectors killed by a power of $T-\lambda\operatorname{id}$, the space decomposes into generalised eigenspaces whenever $c_T$ splits, and triangularisation is available over any field over which $c_T$ splits. The minimal polynomial $m_T$ generates the ideal of polynomials annihilating $T$, divides $c_T$ by Cayley–Hamilton, has the same roots as $c_T$, and decides diagonalisability: $T$ is diagonalisable exactly when $m_T$ is a product of distinct linear factors. Commuting diagonalisable operators are simultaneously diagonalisable, because each preserves the eigenspaces of the others. On a diagonalisable operator every polynomial is evaluated eigenvalue by eigenvalue, $p(T)=S\operatorname{diag}(p(\lambda_1),\dots,p(\lambda_n))S^{-1}$; and when the space carries an inner product, the operators with an orthonormal eigenbasis are exactly the self-adjoint ones over $\mathbb{R}$ and the normal ones over $\mathbb{C}$.
+When diagonalisation fails one uses invariant subspaces: a generalised eigenspace collects the vectors killed by a power of $T-\lambda\operatorname{id}$, the space decomposes into generalised eigenspaces whenever $c_T$ splits, and triangularisation is available over any field over which $c_T$ splits. The minimal polynomial $m_T$ generates the ideal of polynomials annihilating $T$, divides $c_T$ by Cayley–Hamilton, has the same roots as $c_T$, and decides diagonalisability: $T$ is diagonalisable exactly when $m_T$ is a product of distinct linear factors. Commuting diagonalisable operators are simultaneously diagonalisable, because each preserves the eigenspaces of the others. On a diagonalisable operator every polynomial is evaluated eigenvalue by eigenvalue, $p(T)=S\operatorname{diag}(p(\lambda_1),\dots,p(\lambda_n))S^{-1}$.
 
 ## Summary of Notation
 
@@ -271,8 +249,6 @@ When diagonalisation fails one uses invariant subspaces: a generalised eigenspac
 | $\operatorname{id}$, $I$ | identity operator, identity matrix |
 | $P^{-1}AP$ | similar matrices |
 | $\operatorname{diag}(\lambda_1,\dots,\lambda_n)$ | diagonal matrix |
-| $T^*$ | adjoint, $\langle Tv,w\rangle=\langle v,T^*w\rangle$ |
-| $\langle \cdot,\cdot \rangle$ | inner product |
 | $\varphi,\psi$ | the roots $\tfrac12(1\pm\sqrt5)$ of $x^2-x-1$ |
 | $\omega$ | primitive cube root of unity $e^{2\pi i/3}$ |
 | $\sigma(T)$ | spectrum: eigenvalues of $T$, with algebraic multiplicities over a splitting field |

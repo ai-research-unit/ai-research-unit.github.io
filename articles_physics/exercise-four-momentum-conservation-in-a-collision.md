@@ -4,11 +4,11 @@
 
 This is one of the exercises in the relativity series. It is a set of worked problems in four-momentum conservation for a collision, using the framework and the notation of the companion article *Relativistic Mechanics in Biquaternionic Form*. That article is the parent of this exercise: it defines the four-velocity, the four-momentum, and the mass-shell relation, and what follows applies them. The frame transformations used below are those of *The Lorentz Transformation as a Biquaternionic Rotation*, and the frame-and-translation structure is that of *The Poincaré Group and the Biquaternion Frame*. Nothing new is introduced; every result below is obtained from the tools already defined in those articles.
 
-**What is assumed.** The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_0 = 1, e_1, e_2, e_3$ satisfying $e_k^2 = -e_0$ and $e_1e_2 = e_3$, and the scalar imaginary $i$ with $i^2 = -1$, commuting with every $e_k$. The anti-Hermitian subspace $\mathbb{M}_-$ (imaginary scalar part, real vector part, the material sector) and the Hermitian subspace $\mathbb{M}_+$ (real scalar part, imaginary vector part, the informational sector), with $\mathbb{B} = \mathbb{M}_- \oplus \mathbb{M}_+$; the real-quaternion subspace $\mathbb{H}_{\mathbb{B}}$; and the complex scalar subspace $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_0, ie_0\}$, the center of the algebra. The norm form $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$, and the invariant pairing on $\mathbb{M}_-$,
+**What is assumed.** The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_0 = 1, e_1, e_2, e_3$ satisfying $e_k^2 = -e_0$ and $e_1e_2 = e_3$, and the scalar imaginary $i$ with $i^2 = -1$, commuting with every $e_k$. The anti-Hermitian subspace $\mathbb{M}_-$ (imaginary scalar part, real vector part, the material sector) and the Hermitian subspace $\mathbb{M}_+$ (real scalar part, imaginary vector part, the informational sector), with $\mathbb{B} = \mathbb{M}_- \oplus \mathbb{M}_+$; the real-quaternion subspace $\mathbb{H}_{\mathbb{B}}$; and the complex scalar subspace $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_0, ie_0\}$, the center of the algebra. The biquaternion norm $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$, and the invariant pairing on $\mathbb{M}_-$,
 $$
 \langle \tilde{A}, \tilde{B}\rangle = \mathrm{Sc}\!\left(\tilde{A}\bar{\tilde{B}}\right),
 $$
-which is symmetric, real-valued on $\mathbb{M}_-$, and reproduces the norm form on the diagonal. The four-position $\tilde{Q} = ict\,e_0 + \mathbf{x}$, the four-velocity $\tilde{U} = \gamma(ic\,e_0 + \mathbf{v})$ with $N(\tilde{U}) = -c^2$, and the four-momentum
+which is symmetric, real-valued on $\mathbb{M}_-$, and reproduces the biquaternion norm on the diagonal. The four-position $\tilde{Q} = ict\,e_0 + \mathbf{x}$, the four-velocity $\tilde{U} = \gamma(ic\,e_0 + \mathbf{v})$ with $N(\tilde{U}) = -c^2$, and the four-momentum
 $$
 \tilde{P} = m\tilde{U} = i\frac{E}{c}\,e_0 + \mathbf{p},
 \qquad N(\tilde{P}) = -m^2c^2,
@@ -30,7 +30,7 @@ Starred quantities refer to the centre-of-momentum (COM) frame, the inertial fra
 
 ## Problem 1: The Conservation Law as a Single Biquaternion Equation
 
-**Statement.** (a) State the conservation law for an isolated collision as a single equation in $\mathbb{B}$ and show that it is equivalent to the separate conservation of total energy and total three-momentum. (b) Show that it is a *linear* equation, and that its consequence for the norm form is strictly weaker than the law itself. (c) Show that it is preserved by every Lorentz rotor and by every translation of the Poincaré frame. (d) Verify (a)–(c) on the two-body example of Problem 5, in the laboratory and in the COM frame.
+**Statement.** (a) State the conservation law for an isolated collision as a single equation in $\mathbb{B}$ and show that it is equivalent to the separate conservation of total energy and total three-momentum. (b) Show that it is a *linear* equation, and that its consequence for the biquaternion norm is strictly weaker than the law itself. (c) Show that it is preserved by every Lorentz rotor and by every translation of the Poincaré frame. (d) Verify (a)–(c) on the two-body example of Problem 5, in the laboratory and in the COM frame.
 
 **Solution (a).** The total four-momentum of the initial pair is
 $$
@@ -54,7 +54,7 @@ These are the conservation of total energy and of total three-momentum. The biqu
 
 **Remark on counting.** A reader may ask whether a single biquaternion equation can carry four real conditions. It can, because $\mathbb{B}$ is a four-dimensional *complex* algebra while the difference lies in the four-dimensional *real* subspace $\mathbb{M}_-$: the equation $\tilde{P}_{\rm in}-\tilde{P}_{\rm out}=0$ is one $\mathbb{M}_-$-valued equation, and since $\mathbb{M}_-$ has real dimension four ($\mathbb{B}$ itself has complex dimension four, i.e. real dimension eight), it is exactly four real equations. No information is lost, and none is smuggled in.
 
-**Solution (b).** The law is linear in the four-momenta: it equates sums, not products or norms. The norm form is not additive, and it does not commute with the sum. Applying $N$ to the law gives only
+**Solution (b).** The law is linear in the four-momenta: it equates sums, not products or norms. The biquaternion norm is not additive, and it does not commute with the sum. Applying $N$ to the law gives only
 $$
 N(\tilde{P}_1+\tilde{P}_2) = N(\tilde{P}_3+\dots+\tilde{P}_n),
 $$
@@ -164,7 +164,7 @@ s + t + u = 4m^2c^4 = 4E^{*2} - 4c^2p^{*2},
 $$
 which is $E^{*2} - p^{*2}c^2 = m^2c^4$ rearranged. For the example of Problem 1(d), $s = 8m^2$, $p^* = m$, and $\theta^* = 90^\circ$ give $t = u = -2m^2$, so $s+t+u = 4m^2$, in agreement with the four equal masses $m$.
 
-**Solution (e).** The definition $N(\tilde{P}) = -M^2c^2$ with real $M\ge0$ presupposes that $\tilde{P}$ is timelike (or null, for $M=0$). The total four-momentum of a physical initial state is future-directed timelike, so $s>0$ and $M_{\rm tot}$ is real. The crossed invariants $t$ and $u$, by contrast, are norms of *differences* of four-momenta and carry no such guarantee: for a $2\to2$ collision they can be negative, as they are in the example above ($t=u=-2m^2$). A negative $t$ or $u$ corresponds to a spacelike momentum transfer, and there is no real "mass" attached to it; the invariant is $t$ itself. The physically meaningful statements are $t\le0$ for elastic scattering with $m_1=m_3$ (from the boxed formula, since $1-\cos\theta^*\ge0$), and the sum rule of part (c). The parent's invariant-mass construction, stated for the total of a physical pair, does not extend to these crossed channels, and the exercise uses the norm form directly.
+**Solution (e).** The definition $N(\tilde{P}) = -M^2c^2$ with real $M\ge0$ presupposes that $\tilde{P}$ is timelike (or null, for $M=0$). The total four-momentum of a physical initial state is future-directed timelike, so $s>0$ and $M_{\rm tot}$ is real. The crossed invariants $t$ and $u$, by contrast, are norms of *differences* of four-momenta and carry no such guarantee: for a $2\to2$ collision they can be negative, as they are in the example above ($t=u=-2m^2$). A negative $t$ or $u$ corresponds to a spacelike momentum transfer, and there is no real "mass" attached to it; the invariant is $t$ itself. The physically meaningful statements are $t\le0$ for elastic scattering with $m_1=m_3$ (from the boxed formula, since $1-\cos\theta^*\ge0$), and the sum rule of part (c). The parent's invariant-mass construction, stated for the total of a physical pair, does not extend to these crossed channels, and the exercise uses the biquaternion norm directly.
 
 ## Problem 3: The Centre-of-Momentum Frame of a Collision
 
@@ -362,7 +362,7 @@ Two gaps were found while applying the parents. They are reported here, with the
 
 **Gap 1: the parent states no conservation law and no multi-body four-force.** *Relativistic Mechanics in Biquaternionic Form* defines the four-momentum and the mass-shell relation for a single particle, and it states the conservation of the four-*current*, $\mathrm{Sc}(\bar{\tilde{\nabla}}\tilde{J})=0$. It does not state the conservation of the total four-momentum of a system, and it defines the four-force by the proper-time derivative $\tilde{F}=d\tilde{P}/d\tau$, which cannot be summed across bodies without the factors $\gamma_a$ (Problem 1). The conservation law is therefore supplied by this exercise, not inherited. No derivation from the translation invariance of the Poincaré frame is attempted here: that belongs to the planned companion *Noether's Theorem in Biquaternionic Form*, and its absence is a scope boundary, not an error.
 
-**Gap 2: the parent's invariant-mass construction covers only the timelike total.** The parent (and the two-body companion) define the invariant mass by $N(\tilde{P}) = -M^2c^2$ with real $M\ge0$. Applied to the total four-momentum of a physical pair this is well founded, because the sum of future-directed timelike four-momenta is future-directed timelike. It does not extend to the crossed invariants $t$ and $u$ of a $2\to2$ collision, which are norms of differences and are spacelike (negative $t,u$ at $90^\circ$ in Problem 5). The exercise therefore uses the norm form directly and does not extract a real mass from $t$ or $u$; the parent's mass construction is silent on these.
+**Gap 2: the parent's invariant-mass construction covers only the timelike total.** The parent (and the two-body companion) define the invariant mass by $N(\tilde{P}) = -M^2c^2$ with real $M\ge0$. Applied to the total four-momentum of a physical pair this is well founded, because the sum of future-directed timelike four-momenta is future-directed timelike. It does not extend to the crossed invariants $t$ and $u$ of a $2\to2$ collision, which are norms of differences and are spacelike (negative $t,u$ at $90^\circ$ in Problem 5). The exercise therefore uses the biquaternion norm directly and does not extract a real mass from $t$ or $u$; the parent's mass construction is silent on these.
 
 **Inherited, and not re-reported.** The direction convention of the star-to-laboratory boost rotor in *The Lorentz Transformation as a Biquaternionic Rotation* (and in the two-body companion) is a known ambiguity: the rotor built with $+\hat{\mathbf{V}}$ carries the laboratory to the COM frame, so the COM-to-laboratory rotation is generated by the quaternion conjugate. This exercise adopts that physical convention and states it explicitly (Problem 3); it was already recorded by the exercise on the two-body decay and is not claimed here as a new finding.
 
@@ -393,7 +393,7 @@ We have worked four-momentum conservation for a collision as an application of t
 | $\mathbb{M}_+$ | Hermitian subspace (informational sector): real scalar, imaginary vector |
 | $\mathbb{H}_{\mathbb{B}}$ | Real-quaternion subspace |
 | $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_0,ie_0\}$ | Complex scalar subspace (center of the algebra) |
-| $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$ | Norm form |
+| $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$ | Biquaternion norm |
 | $\langle\tilde{A},\tilde{B}\rangle = \mathrm{Sc}(\tilde{A}\bar{\tilde{B}})$ | Invariant pairing on $\mathbb{M}_-$ |
 | $\tilde{P}_a = m_a\tilde{U}_a = iE_a/c\,e_0+\mathbf{p}_a$ | Four-momentum, $N(\tilde{P}_a)=-m_a^2c^2$ |
 | $\tilde{U}_a = \gamma_a(ic\,e_0+\mathbf{v}_a)$ | Four-velocity, $N(\tilde{U}_a)=-c^2$ |

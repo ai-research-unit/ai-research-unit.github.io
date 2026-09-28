@@ -4,19 +4,19 @@
 
 When polarized light is passed through a sequence of polarizers, the interference phase between the initial and final beams contains a part that is not accumulated by propagation. Pancharatnam showed in 1956 that for three polarizations the effect is a phase equal to minus one half of the solid angle of the spherical triangle they define on the **Poincaré sphere**, the sphere whose points are the polarization states of a monochromatic beam. This **Pancharatnam phase** is the optical geometric phase, and it is classical: it is observed by the shift of interference fringes, with no reference to photons or to a quantised field.
 
-The Poincaré sphere is a level set of the norm form of the biquaternion algebra. The polarization state of a beam is described by its coherence (Stokes) biquaternion, a Hermitian element of the algebra whose norm-form value measures the degree of polarization. The fully polarized states — the points of the Poincaré sphere — are exactly the **norm-form cone** of the Hermitian sector, the same cone that the companion article *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector* identifies with the idempotent states; the unpolarized state is the centre, and the partially polarized states fill the interior. The Pancharatnam phase is the **holonomy** of the natural connection on the cone, and its curvature is half the area form of the sphere:
+The Poincaré sphere is a level set of the biquaternion norm of the biquaternion algebra. The polarization state of a beam is described by its coherence (Stokes) biquaternion, a Hermitian element of the algebra whose biquaternion-norm value measures the degree of polarization. The fully polarized states — the points of the Poincaré sphere — are exactly the **biquaternion-norm cone** of the Hermitian sector, the same cone that the companion article *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector* identifies with the idempotent states; the unpolarized state is the centre, and the partially polarized states fill the interior. The Pancharatnam phase is the **holonomy** of the natural connection on the cone, and its curvature is half the area form of the sphere:
 
-1. The coherence biquaternion is $\tilde\rho=\frac12(S_0e_0+i\mathbf S\cdot\tilde e)\in\mathbb{M}_+$ with Stokes parameters $S_0,\mathbf S$; the norm form is $N(\tilde\rho)=\frac14(S_0^2-\mathbf S^2)$.
+1. The coherence biquaternion is $\tilde\rho=\frac12(S_0e_0+i\mathbf S\cdot\tilde e)\in\mathbb{M}_+$ with Stokes parameters $S_0,\mathbf S$; the biquaternion norm is $N(\tilde\rho)=\frac14(S_0^2-\mathbf S^2)$.
 2. The fully polarized (pure) states are $N(\tilde\rho)=0$, the cone; after normalisation they are the Poincaré sphere.
 3. Pancharatnam's in-phase criterion defines the natural connection on the ray space; its curvature is $-\frac12d\Omega$, half the area form, so the phase around a circuit is $-\frac12$ times the enclosed solid angle.
 4. The three-polarizer phase is the same statement for a spherical triangle, and Girard's theorem turns it into a sum of angles.
 
 The article is classical optics in the algebra. The "state" of a beam is its classical coherence matrix, the connection lives on the classical ray space, and the interference is classical. The companion article on the Berry phase develops the quantum two-level system, which shares the geometry; here the physics is a light beam, two polarizers, and an interferometer.
 
-The conventions are those of the read list. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, basis $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, $e_je_k=-\delta_{jk}e_0+\varepsilon_{jkl}e_l$; $i$ is central, $i^2=-1$; ${}^\dagger$ is Hermitian conjugation; $\mathbb{M}_+$ is the Hermitian sector, $\mathbb{M}_-$ the anti-Hermitian one; $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace. The norm form is $N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}$. The Poincaré sphere is parametrised by the unit Stokes vector $\hat{\mathbf n}=(\sin\theta\cos\phi,\sin\theta\sin\phi,\cos\theta)$.
+The conventions are those of the read list. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, basis $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, $e_je_k=-\delta_{jk}e_0+\varepsilon_{jkl}e_l$; $i$ is central, $i^2=-1$; ${}^\dagger$ is Hermitian conjugation; $\mathbb{M}_+$ is the Hermitian sector, $\mathbb{M}_-$ the anti-Hermitian one; $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace. The biquaternion norm is $N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}$. The Poincaré sphere is parametrised by the unit Stokes vector $\hat{\mathbf n}=(\sin\theta\cos\phi,\sin\theta\sin\phi,\cos\theta)$.
 
 The companion articles are:
-- Companion article *The Symplectic Form and the Biquaternion Norm-Form Cone*, for the norm-form cone and its role as a level set.
+- Companion article *The Symplectic Form and the Biquaternion Norm Cone*, for the biquaternion-norm cone and its role as a level set.
 - Companion article *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*, for the Hermitian sector, the idempotents, and the cone.
 - Companion article *Hannay's Angles and the Classical Geometric Phase in Biquaternionic Form*, for the classical dynamical counterpart, whose holonomy is the solid angle itself.
 - Companion article *The Berry Phase and Geometric Phases in Biquaternionic Form*, for the quantum two-level reading of the same connection.
@@ -68,9 +68,9 @@ $$
 
 The factor $i$ on the vector part is what makes the vector part Hermitian: the units $e_k$ are anti-Hermitian, so $ie_k$ is Hermitian, and the coefficients $S_k$ are real. The scalar part $S_0/2$ is real.
 
-### The Norm Form
+### The Biquaternion Norm
 
-The norm form of the coherence biquaternion is
+The biquaternion norm of the coherence biquaternion is
 
 $$
 N(\tilde\rho)=\tilde\rho\bar{\tilde\rho}
@@ -78,7 +78,7 @@ N(\tilde\rho)=\tilde\rho\bar{\tilde\rho}
 =\tfrac14\left(S_0^2-\mathbf S^2\right).
 $$
 
-This is the algebra's **indefinite** form on $\mathbb{M}_+$: with $\tilde{Q}=x_0e_0+i\mathbf x\cdot\tilde e$, the norm form is $N(\tilde{Q})=x_0^2-|\mathbf x|^2$, of signature $(1,3)$ on the four real parameters. The **degree of polarization** is read off it:
+This is the algebra's **indefinite** form on $\mathbb{M}_+$: with $\tilde{Q}=x_0e_0+i\mathbf x\cdot\tilde e$, the biquaternion norm is $N(\tilde{Q})=x_0^2-|\mathbf x|^2$, of signature $(1,3)$ on the four real parameters. The **degree of polarization** is read off it:
 
 $$
 P^2=1-\frac{4N(\tilde\rho)}{S_0^2}.
@@ -92,7 +92,7 @@ $$
 N(\tilde\rho)=0 .
 $$
 
-This is the **norm-form cone** of $\mathbb{M}_+$, and it is exactly the cone of idempotents: a rank-one projection satisfies $\tilde\rho^2=\tilde\rho$ and $N(\tilde\rho)=0$, and conversely a Hermitian element of the cone with unit trace is a pure state. Normalising $S_0=1$, the cone is
+This is the **biquaternion-norm cone** of $\mathbb{M}_+$, and it is exactly the cone of idempotents: a rank-one projection satisfies $\tilde\rho^2=\tilde\rho$ and $N(\tilde\rho)=0$, and conversely a Hermitian element of the cone with unit trace is a pure state. Normalising $S_0=1$, the cone is
 
 $$
 S_1^2+S_2^2+S_3^2=1 ,
@@ -101,7 +101,7 @@ $$
 which is the **Poincaré sphere**. The identification is therefore
 
 $$
-\boxed{\;\text{fully polarized states}=\text{the norm-form cone of }\mathbb{M}_+=\text{the Poincaré sphere}\;}
+\boxed{\;\text{fully polarized states}=\text{the biquaternion-norm cone of }\mathbb{M}_+=\text{the Poincaré sphere}\;}
 $$
 
 for the beam, and the same cone is the idempotent manifold of the sector. The unpolarized state $S_0\neq0$, $\mathbf S=0$ is the centre of the ball; the partially polarized states are the interior points $0<P<1$; and the closure of the interior is the ball of radius $S_0$, with the cone as its boundary. Depolarization moves the coherence biquaternion inward along a radius, and the cone is the extremal boundary where the coherence is complete.
@@ -236,9 +236,9 @@ and its phase is the Pancharatnam phase. Rotating one polarizer around the spher
 
 Three cases of the rule are worth recording. For **three linear polarizers equally spaced** in azimuth (axes at $0^\circ,60^\circ,120^\circ$) all three states lie on the equator, the circuit is degenerate, and the enclosed region is a hemisphere; the product $\langle A|B\rangle\langle B|C\rangle\langle C|A\rangle$ is real and negative, so the Pancharatnam phase is $\pi$, that is, $-\frac12$ of the hemisphere's solid angle $2\pi$. For **three polarizers whose axes return to the start**, the circuit is traversed out and back, the enclosed area vanishes, and the phase returns to zero modulo $2\pi$. For a circuit whose enclosed region is a **hemisphere** — for instance a circuit that lies on a great circle, or any circuit that splits the sphere into two halves of equal area — the phase reaches $\pi$ in magnitude, which is the largest value the half-solid-angle rule gives when the enclosed solid angle is taken as the smaller of the two regions (at most $2\pi$); the sign distinguishes the two senses of encirclement. The effect is classical and its magnitude is a pure number times the solid angle.
 
-## The Norm-Form Reading of the Phase
+## The Biquaternion-Norm Reading of the Phase
 
-The geometric phase has an algebraic reading in terms of the norm form. The circuit of polarization states is a circuit on the cone $N(\tilde\rho)=0$ of the Hermitian sector, and the connection's curvature, $-\frac12$ times the area form of the sphere, is a structure on that cone. The cone is the extremal boundary of the coherence ball, and the phase is an obstruction to flattening the boundary: it is the curvature of the natural connection on the cone. In the language of the preceding articles, the connection lives on the level set of the norm form, exactly as the Souriau form does on the coadjoint orbit and the Hannay connection does on the sphere of directions.
+The geometric phase has an algebraic reading in terms of the biquaternion norm. The circuit of polarization states is a circuit on the cone $N(\tilde\rho)=0$ of the Hermitian sector, and the connection's curvature, $-\frac12$ times the area form of the sphere, is a structure on that cone. The cone is the extremal boundary of the coherence ball, and the phase is an obstruction to flattening the boundary: it is the curvature of the natural connection on the cone. In the language of the preceding articles, the connection lives on the level set of the biquaternion norm, exactly as the Souriau form does on the coadjoint orbit and the Hannay connection does on the sphere of directions.
 
 The analogy with the dynamical case is exact at the level of the geometry. For the classical spin of the companion article the transported object is the vector $\tilde S$, and the holonomy of a circuit is the **full** solid angle $\Omega$. For the optical case the transported object is the **ray** $\mathbf J$ — the amplitude, not its Stokes vector — and the holonomy is half the solid angle, $-\Omega/2$. The factor of $2$ between the two is the double cover: the amplitude is the spinor whose bilinear is the Stokes vector, and the transport of the spinor is half as fast in phase as the transport of its bilinear. The two articles describe one geometry with two objects, the vector and the spinor, and the ratio of the phases is the ratio of their squares.
 
@@ -249,14 +249,14 @@ The analogy with the dynamical case is exact at the level of the geometry. For t
 **Structurally the algebra's.**
 
 1. The coherence matrix is an element of the Hermitian sector $\mathbb{M}_+$; written as a biquaternion, it is $\tilde\rho=\frac12(S_0e_0+i\mathbf S\cdot\tilde e)$.
-2. The norm form on $\mathbb{M}_+$ is indefinite, $N(\tilde\rho)=\frac14(S_0^2-\mathbf S^2)$, and the **degree of polarization** is $P^2=1-4N(\tilde\rho)/S_0^2$.
-3. The fully polarized states are the **norm-form cone** $N(\tilde\rho)=0$, which after normalisation is the Poincaré sphere; it is simultaneously the idempotent manifold of the sector. The unpolarized state is the centre, and the partially polarized states are the interior.
+2. The biquaternion norm on $\mathbb{M}_+$ is indefinite, $N(\tilde\rho)=\frac14(S_0^2-\mathbf S^2)$, and the **degree of polarization** is $P^2=1-4N(\tilde\rho)/S_0^2$.
+3. The fully polarized states are the **biquaternion-norm cone** $N(\tilde\rho)=0$, which after normalisation is the Poincaré sphere; it is simultaneously the idempotent manifold of the sector. The unpolarized state is the centre, and the partially polarized states are the interior.
 4. The Pancharatnam connection on the cone has curvature $-\frac12\,d\Omega$, half the area form, so the phase around a circuit is $-\frac12$ of the enclosed solid angle, and the three-polarizer rule and Girard's theorem follow.
 5. The half-strength curvature and the half-solid-angle rule are the double-cover factor: the amplitude is the spinor of the Stokes vector, and the dynamical counterpart of the same geometry gives the full solid angle.
 
 ## Summary
 
-Pancharatnam's phase is the classical optical geometric phase, and in the biquaternion algebra it is the holonomy of the natural connection on the norm-form cone of the Hermitian sector.
+Pancharatnam's phase is the classical optical geometric phase, and in the biquaternion algebra it is the holonomy of the natural connection on the biquaternion-norm cone of the Hermitian sector.
 
 - A beam's polarization is described by its coherence biquaternion $\tilde\rho=\frac12(S_0e_0+i\mathbf S\cdot\tilde e)\in\mathbb{M}_+$, with $N(\tilde\rho)=\frac14(S_0^2-\mathbf S^2)$ and degree of polarization $P^2=1-4N(\tilde\rho)/S_0^2$.
 - The fully polarized states are the cone $N(\tilde\rho)=0$, which is the Poincaré sphere after normalisation and the idempotent manifold of $\mathbb{M}_+$; the unpolarized state is the centre and the partially polarized states the interior.
@@ -274,7 +274,7 @@ The phase is classical: it is measured by the shift of interference fringes of a
 | $S_0,\mathbf S=(S_1,S_2,S_3)$ | Stokes parameters |
 | $P=\sqrt{\mathbf S^2}/S_0$ | Degree of polarization |
 | $\tilde\rho=\frac12(S_0e_0+i\mathbf S\cdot\tilde e)\in\mathbb{M}_+$ | Coherence biquaternion |
-| $N(\tilde\rho)=\frac14(S_0^2-\mathbf S^2)$ | Norm form; indefinite on $\mathbb{M}_+$ |
+| $N(\tilde\rho)=\frac14(S_0^2-\mathbf S^2)$ | Biquaternion norm; indefinite on $\mathbb{M}_+$ |
 | $N(\tilde\rho)=0$ | Cone: fully polarized states = Poincaré sphere = idempotents |
 | $\hat{\mathbf n}=(\sin\theta\cos\phi,\sin\theta\sin\phi,\cos\theta)$ | Unit Stokes vector on the Poincaré sphere |
 | $\mathbf J(\theta,\phi)=(\cos\frac\theta2,\sin\frac\theta2e^{i\phi})$ | Normalised Jones vector |

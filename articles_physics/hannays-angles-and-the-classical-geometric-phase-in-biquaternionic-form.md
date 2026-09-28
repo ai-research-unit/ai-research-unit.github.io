@@ -12,13 +12,13 @@ This article develops the subject in the biquaternion algebra $\mathbb{B}=\mathb
 
 The article is classical. The relation to the quantum Berry phase is used as the standard statement $-\partial\gamma/\partial I$ relating the two phases, and the Berry phase itself is not developed; the companion article on the Berry phase owns the quantum side. No state space, no measurement, and no commutator appear.
 
-The conventions are those of the read list. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, basis $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, $e_je_k=-\delta_{jk}e_0+\varepsilon_{jkl}e_l$; $i$ is central, $i^2=-1$; $\mathbb{M}_-$ and $\mathbb{M}_+$ are the anti-Hermitian and Hermitian sectors; $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace. The rotor is $\tilde R\in\mathbb{H}_{\mathbb{B}}$ with $N(\tilde R)=e_0$, acting by $\tilde{Q}\mapsto\tilde R\tilde{Q}\bar{\tilde R}$; the body-frame angular velocity is $\tilde\omega_b=+2\bar{\tilde R}\dot{\tilde R}$, the logarithmic derivative that makes the body axes turn by $d\tilde e_k/dt=\boldsymbol\omega\times\tilde e_k$ in the corpus rotation convention. The coadjoint orbit of the spin is the level set $N(\tilde S)=S^2$ of the norm form, with the Poisson bracket $\{S_i,S_j\}=\varepsilon_{ijk}S_k$.
+The conventions are those of the read list. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, basis $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, $e_je_k=-\delta_{jk}e_0+\varepsilon_{jkl}e_l$; $i$ is central, $i^2=-1$; $\mathbb{M}_-$ and $\mathbb{M}_+$ are the anti-Hermitian and Hermitian sectors; $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace. The rotor is $\tilde R\in\mathbb{H}_{\mathbb{B}}$ with $N(\tilde R)=e_0$, acting by $\tilde{Q}\mapsto\tilde R\tilde{Q}\bar{\tilde R}$; the body-frame angular velocity is $\tilde\omega_b=+2\bar{\tilde R}\dot{\tilde R}$, the logarithmic derivative that makes the body axes turn by $d\tilde e_k/dt=\boldsymbol\omega\times\tilde e_k$ in the corpus rotation convention. The coadjoint orbit of the spin is the level set $N(\tilde S)=S^2$ of the biquaternion norm, with the Poisson bracket $\{S_i,S_j\}=\varepsilon_{ijk}S_k$.
 
 The companion articles are:
 - Companion article *Rigid-Body Dynamics and the Biquaternion Rotor*, for the rotor, the angular velocity, and the Euler-angle parametrisation.
 - Companion article *Similitudes Between Biquaternion Rotors and Hamiltonian Flow*, for the rotor flow and the coadjoint orbit.
 - Companion article *The Berry Phase and Geometric Phases in Biquaternionic Form*, for the quantum counterpart and the connection on the state space.
-- Companion article *The Symplectic Form and the Biquaternion Norm-Form Cone*, for the orbit as a level set of the norm form and the Souriau form.
+- Companion article *The Symplectic Form and the Biquaternion Norm Cone*, for the orbit as a level set of the biquaternion norm and the Souriau form.
 
 ## The Adiabatic Theorem and Action-Angle Variables
 
@@ -260,15 +260,15 @@ $$
 
 For $S=\tfrac12$ the Berry phase is $-\Omega/2$, matching the companion article on the Berry phase, and the classical Hannay angle is the derivative that removes the $\tfrac12$: the classical spin knows the full solid angle, and the spinor knows half of it. This is the same factor of $2$ that appears in the rotor article as the sign $\tilde R\to-\tilde R$ at a $2\pi$ rotation.
 
-## Adiabatic Invariants and the Norm Form
+## Adiabatic Invariants and the Biquaternion Norm
 
-The adiabatic invariant of the spin is the norm form. The magnitude $S$ is
+The adiabatic invariant of the spin is the biquaternion norm. The magnitude $S$ is
 
 $$
 S=\sqrt{N(\tilde S)}=\sqrt{\mathbf S^2},
 $$
 
-and it is conserved not only in the adiabatic limit but exactly, because it is the Casimir of the bracket $\{S_i,S_j\}=\varepsilon_{ijk}S_k$ and is therefore a constant of motion for every Hamiltonian on the orbit. For a general action-angle system the adiabatic invariant $I_k$ is the action $\oint p_k\,dq_k$; for the spin on its orbit, the distinguished invariant is the norm form, and it is the action with respect to which the Hannay angle is differentiated. The statement "the Hannay angle is the derivative of the phase with respect to the action" therefore reads, in the algebra, "differentiate with respect to the square root of the norm form".
+and it is conserved not only in the adiabatic limit but exactly, because it is the Casimir of the bracket $\{S_i,S_j\}=\varepsilon_{ijk}S_k$ and is therefore a constant of motion for every Hamiltonian on the orbit. For a general action-angle system the adiabatic invariant $I_k$ is the action $\oint p_k\,dq_k$; for the spin on its orbit, the distinguished invariant is the biquaternion norm, and it is the action with respect to which the Hannay angle is differentiated. The statement "the Hannay angle is the derivative of the phase with respect to the action" therefore reads, in the algebra, "differentiate with respect to the square root of the biquaternion norm".
 
 For the adiabatic transport of a general rotor — a rigid body carried around a loop of orientations — the same structure holds: the transport is parallel with respect to a connection on the group, the holonomy is an element of $SU(2)$ (a rotor), and its rotation angle is the classical geometric phase. The Foucault pendulum is the standard mechanical instance; the falling-cat and bicycle-wheel problems are the standard instances of a rotor holonomy, in which a body is reoriented by internal motion with no net angular momentum. Their mechanical details are standard and are not developed here, and the algebraic content is the one developed here.
 
@@ -288,7 +288,7 @@ Hannay's angle is the classical geometric phase of an adiabatically cycled syste
 - Integrating the twist around a cycle of solid angle $\Omega$ gives Hannay's angle $\Delta\theta_{\mathrm{Hannay}}=\Omega$, the holonomy of the connection $\mathcal A=(1-\cos\theta)d\phi$ with curvature $\sin\theta\,d\theta\wedge d\phi$.
 - The exact rotating-frame solution of the uniformly precessing field gives the same $\Omega$.
 - The spinor phase is half the classical angle, $\gamma=-\Omega/2$ for spin-$\tfrac12$, the factor $2$ being the double cover $\tilde R\to-\tilde R$; the general relation is $\gamma=-S\Omega$ and $\Delta\theta=-\partial_S\gamma=\Omega$.
-- The adiabatic invariant is the norm form, $S=\sqrt{N(\tilde S)}$; the Hannay angle is the derivative of the phase with respect to it.
+- The adiabatic invariant is the biquaternion norm, $S=\sqrt{N(\tilde S)}$; the Hannay angle is the derivative of the phase with respect to it.
 
 The phase is classical: it is the holonomy of a transport on the space of directions, computed from the classical trajectory, and it needs no quantum postulate.
 

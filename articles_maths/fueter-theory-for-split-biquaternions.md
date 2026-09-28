@@ -23,7 +23,7 @@ acting on the left. Its **conjugate** is obtained by negating the vector part, $
 
 **Proposition.** On the quaternion subspace, $\tilde{\nabla}\bar{\tilde{\nabla}} = \bar{\tilde{\nabla}}\tilde{\nabla} = \Delta_4 e_0$, where $\Delta_4 = \sum_{\mu=0}^{3}\partial_\mu^2$.
 
-**Proof.** Expand $\tilde{\nabla}\bar{\tilde{\nabla}} = \sum_{\mu,\nu} e_\mu\bar{e}_\nu\partial_\mu\partial_\nu$ with $\bar{e}_0 = e_0$ and $\bar{e}_k = -e_k$. The diagonal term is $\sum_\mu e_\mu\bar{e}_\mu\partial_\mu^2 = \Delta_4 e_0$, since $e_k\bar{e}_k = -e_k^2 = e_0$; the off-diagonal coefficient $e_\mu\bar{e}_\nu + e_\nu\bar{e}_\mu$ vanishes by anticommutativity of the units. The same argument gives $\bar{\tilde{\nabla}}\tilde{\nabla}$. $\square$
+**Proof.** Expand $\tilde{\nabla}\bar{\tilde{\nabla}} = \sum_{\mu,\nu} e_\mu\bar{e}_\nu\partial_\mu\partial_\nu$ with $\bar{e}_0 = e_0$ and $\bar{e}_k = -e_k$. The diagonal term is $\sum_\mu e_\mu\bar{e}_\mu\partial_\mu^2 = \Delta_4 e_0$, since $e_k\bar{e}_k = -e_k^2 = e_0$; the off-diagonal coefficient $e_\mu\bar{e}_\nu + e_\nu\bar{e}_\mu$ vanishes by anticommutativity of the units. The same argument gives $\bar{\tilde{\nabla}}\tilde{\nabla}$.
 
 ### Relation to the Cauchy–Riemann Operator
 
@@ -61,7 +61,7 @@ the quaternionic Cauchy–Riemann–Fueter system, one algebra equation equivale
 
 **Proposition.** Every left- or right-regular function is harmonic for the four-dimensional Laplacian: $\Delta_4\tilde{F} = 0$ componentwise.
 
-**Proof.** If $\tilde{\nabla}\tilde{F} = 0$, then $\Delta_4\tilde{F} = \bar{\tilde{\nabla}}(\tilde{\nabla}\tilde{F}) = 0$; if $\tilde{F}\tilde{\nabla} = 0$, then $\Delta_4\tilde{F} = (\tilde{F}\tilde{\nabla})\bar{\tilde{\nabla}} = 0$ with the operators acting on the right. $\square$
+**Proof.** If $\tilde{\nabla}\tilde{F} = 0$, then $\Delta_4\tilde{F} = \bar{\tilde{\nabla}}(\tilde{\nabla}\tilde{F}) = 0$; if $\tilde{F}\tilde{\nabla} = 0$, then $\Delta_4\tilde{F} = (\tilde{F}\tilde{\nabla})\bar{\tilde{\nabla}} = 0$ with the operators acting on the right.
 
 Consequently every regular function is real-analytic and satisfies the maximum principle, Liouville's theorem, the identity theorem and the Cauchy estimates on the quaternion subspace, where the system is elliptic. Since each component is harmonic, the **mean value property** holds: for $\tilde{F}$ regular near the closed ball $\bar{B}(\tilde{Q}_0,r)$,
 
@@ -93,13 +93,13 @@ $$
 
 is defined and real-analytic on $B(0,R)$, by continuity at $\rho = 0$, and is both left- and right-Fueter-regular there.
 
-**Proof.** For $g = A(q_0,\rho) + \hat{\mathbf{q}}B(q_0,\rho)$ one has $\tilde{\nabla}g = g\tilde{\nabla} = (\partial_0A - \partial_\rho B - 2B/\rho) + \hat{\mathbf{q}}(\partial_0B + \partial_\rho A)$, using $\hat{\mathbf{q}}^2 = -1$ and $\sum_{j,k}(\partial_{q_k}\hat{q}_j)e_ke_j = (-3-\hat{\mathbf{q}}^2)/\rho = -2/\rho$; so $g$ is left-regular exactly when it is right-regular, and this holds when $\partial_0A = \partial_\rho B + 2B/\rho$ and $\partial_0B = -\partial_\rho A$. Applying $\Delta_4$ to the axial extension and using the radial Laplacian identity gives the two scalar coefficients $2u_\rho/\rho$ and $2(\rho v_\rho - v)/\rho^2$, whose Cauchy–Riemann relations are exactly the two conditions. $\square$
+**Proof.** For $g = A(q_0,\rho) + \hat{\mathbf{q}}B(q_0,\rho)$ one has $\tilde{\nabla}g = g\tilde{\nabla} = (\partial_0A - \partial_\rho B - 2B/\rho) + \hat{\mathbf{q}}(\partial_0B + \partial_\rho A)$, using $\hat{\mathbf{q}}^2 = -1$ and $\sum_{j,k}(\partial_{q_k}\hat{q}_j)e_ke_j = (-3-\hat{\mathbf{q}}^2)/\rho = -2/\rho$; so $g$ is left-regular exactly when it is right-regular, and this holds when $\partial_0A = \partial_\rho B + 2B/\rho$ and $\partial_0B = -\partial_\rho A$. Applying $\Delta_4$ to the axial extension and using the radial Laplacian identity gives the two scalar coefficients $2u_\rho/\rho$ and $2(\rho v_\rho - v)/\rho^2$, whose Cauchy–Riemann relations are exactly the two conditions.
 
 ### The Kernel and Injectivity
 
 **Proposition.** The map $\tau(f_0) = \Delta_4\tilde{f}_0$ vanishes if and only if $f_0$ is affine, $f_0(z) = az+b$ with $a,b \in \mathbb{C}$.
 
-**Proof.** $\tau(f_0) = 0$ forces $u_\rho = 0$ and $\rho v_\rho = v$, so $u = u(q_0)$ and $v = c(q_0)\rho$; then $c' = 0$ and $u = cq_0+d$ with $c,d \in \mathbb{R}$, and complex linearity gives all affine functions; conversely $\Delta_4$ annihilates affine functions. $\square$
+**Proof.** $\tau(f_0) = 0$ forces $u_\rho = 0$ and $\rho v_\rho = v$, so $u = u(q_0)$ and $v = c(q_0)\rho$; then $c' = 0$ and $u = cq_0+d$ with $c,d \in \mathbb{R}$, and complex linearity gives all affine functions; conversely $\Delta_4$ annihilates affine functions.
 
 So $\tau$ is injective exactly on the holomorphic functions whose Taylor coefficients vanish to order two.
 
@@ -147,7 +147,7 @@ On the full algebra the coefficient ring is the split complex algebra $\mathbb{D
 
 ## The Relation to the Biquaternion and Split Quaternion Theories
 
-The biquaternion Fueter theory is obtained by replacing $\mathbb{D}$ with $\mathbb{C}$: there the coefficient algebra is a field, the singular set of the full algebra is the null quadric of the complex norm form, of real dimension six, and the Fueter operator fails ellipticity over $\mathbb{C}$. In the split biquaternion case the coefficient algebra is the split complex algebra, the singular set is the union of two linear four-spaces, and the Fueter operator remains elliptic over the real coordinates of each four-dimensional subspace; the split biquaternion theory is thus the "indefinite coefficient" companion of the biquaternion theory, with the quadric hypersurface of singularities replaced by a union of subspaces.
+The biquaternion Fueter theory is obtained by replacing $\mathbb{D}$ with $\mathbb{C}$: there the coefficient algebra is a field, the singular set of the full algebra is the null quadric of the complex norm, of real dimension six, and the Fueter operator fails ellipticity over $\mathbb{C}$. In the split biquaternion case the coefficient algebra is the split complex algebra, the singular set is the union of two linear four-spaces, and the Fueter operator remains elliptic over the real coordinates of each four-dimensional subspace; the split biquaternion theory is thus the "indefinite coefficient" companion of the biquaternion theory, with the quadric hypersurface of singularities replaced by a union of subspaces.
 
 The split quaternion theory, by contrast, is the four-dimensional algebra $\mathbb{H}_{\mathrm{s}} \cong \mathrm{Cl}_{1,1} \cong M_2(\mathbb{R})$, whose Fueter theory has its own zero divisors and its own three-sphere structure; it is a *different system* and must not be identified with $\mathbb{H}_{\mathbb{D}}$. The two are related by the tensor factorisation: the split biquaternion algebra is the split complex extension of the quaternions, not the complexification of the split quaternions, and the Fueter theory of the present article is that of the quaternion algebra with split complex coefficients. On the quaternion subspace the three theories agree in their equations, differing only in the coefficient ring that decorates the solution space.
 

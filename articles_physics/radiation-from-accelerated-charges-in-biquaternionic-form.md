@@ -10,7 +10,7 @@ $$
 \tilde{F} = i\sqrt{\epsilon}\,\mathbf{E} - \sqrt{\mu}\,\mathbf{H}
 $$
 
-was shown to have a norm form $N(\tilde{F}) = \tilde{F}\bar{\tilde{F}}$ whose vanishing is exactly the condition that the field be null: $\mathbf{E}\perp\mathbf{B}$ and $|\mathbf{E}| = c|\mathbf{B}|$ pointwise. A null field strength is a **zero divisor** of the algebra $\mathbb{B}$. That null condition is the algebraic signature of a radiation field. The main result of this article is that it is realized, pointwise, by the acceleration part of the Liénard–Wiechert field: the radiation field is precisely the part of $\tilde{F}$ that squares to zero.
+was shown to have a biquaternion norm $N(\tilde{F}) = \tilde{F}\bar{\tilde{F}}$ whose vanishing is exactly the condition that the field be null: $\mathbf{E}\perp\mathbf{B}$ and $|\mathbf{E}| = c|\mathbf{B}|$ pointwise. A null field strength is a **zero divisor** of the algebra $\mathbb{B}$. That null condition is the algebraic signature of a radiation field. The main result of this article is that it is realized, pointwise, by the acceleration part of the Liénard–Wiechert field: the radiation field is precisely the part of $\tilde{F}$ that squares to zero.
 
 The conventions are those of the read-list articles throughout, and nothing in them is changed here. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_0 = 1, e_1, e_2, e_3$ satisfying $e_k^2 = -e_0$, and scalar imaginary $i$ commuting with the quaternion units. The subspaces are $\mathbb{M}_-$ (anti-Hermitian, imaginary scalar and real vector, the material sector), $\mathbb{M}_+$ (Hermitian, real scalar and imaginary vector, the informational sector), $\mathbb{H}_{\mathbb{B}}$ (real quaternions), and $\mathbb{C}_{\mathbb{B}}$ (scalars). The biquaternionic gradient is $\tilde{\nabla} = e_0\partial_{ict} + e_1\partial_x + e_2\partial_y + e_3\partial_z$, with $\Box = \tilde{\nabla}\bar{\tilde{\nabla}} = \partial_{ict}^2 + \Delta$, and the symbol $c = 1/\sqrt{\epsilon\mu}$ always denotes the speed of light in the medium, reducing to $c_0$ in vacuum. The charge whose field is being computed is written $q$, and its velocity is written $\mathbf{v}$ (the symbol $v$ is reserved for particle velocities, as in the companion articles).
 
@@ -87,7 +87,7 @@ $$
 \tilde{\mathcal{R}} = iR\,e_0 + \mathbf{R},
 $$
 
-which is an element of the material subspace $\mathbb{M}_-$: its scalar part is imaginary and its vector part real. Its norm form is
+which is an element of the material subspace $\mathbb{M}_-$: its scalar part is imaginary and its vector part real. Its biquaternion norm is
 
 $$
 N(\tilde{\mathcal{R}}) = \tilde{\mathcal{R}}\bar{\tilde{\mathcal{R}}} = (iR)^2 + |\mathbf{R}|^2 = -R^2 + R^2 = 0 .
@@ -101,7 +101,7 @@ $$
 \tilde{V} = ic\,e_0 + \mathbf{v}(t_r) = \frac{d\tilde{Q}_q}{dt}\bigg|_{\text{ret}} \in \mathbb{M}_-,
 $$
 
-whose norm form is
+whose biquaternion norm is
 
 $$
 N(\tilde{V}) = -c^2 + \mathbf{v}^2 = -c^2(1 - \beta^2) = -\frac{c^2}{\gamma^2},
@@ -222,7 +222,7 @@ I_{1,v} = \mathbf{E}_v^2 - c^2\mathbf{B}_v^2
 = \left(\frac{q}{4\pi\epsilon}\frac{1-\beta^2}{\kappa^2 R^2}\right)^{\!2} > 0 .
 $$
 
-The norm form of $\tilde{F}_v$ is therefore nonzero, $N(\tilde{F}_v) = -\epsilon(I_{1,v} + 2ic\,I_{2,v}) = -\epsilon I_{1,v} \neq 0$, and $\tilde{F}_v$ is not a zero divisor. In the classification of the invariants article it is a field of **electric type**: there is a frame (the rest frame of the charge) in which the magnetic field vanishes and the field is purely electric. This is the algebraic statement that the velocity field is bound to the charge: at any event it can be reduced to a purely electric Coulomb field by passing to the instantaneous rest frame of the charge.
+The biquaternion norm of $\tilde{F}_v$ is therefore nonzero, $N(\tilde{F}_v) = -\epsilon(I_{1,v} + 2ic\,I_{2,v}) = -\epsilon I_{1,v} \neq 0$, and $\tilde{F}_v$ is not a zero divisor. In the classification of the invariants article it is a field of **electric type**: there is a frame (the rest frame of the charge) in which the magnetic field vanishes and the field is purely electric. This is the algebraic statement that the velocity field is bound to the charge: at any event it can be reduced to a purely electric Coulomb field by passing to the instantaneous rest frame of the charge.
 
 Two special cases are worth recording, because they are exactly the content of the two downstream exercises. When the charge moves with constant velocity, $\dot{\boldsymbol{\beta}} = 0$ and $\tilde{F} = \tilde{F}_v$ alone: this is the field of a uniformly moving charge, the subject of *Exercise: The Electromagnetic Field of a Uniformly Moving Charge*. The result is the Heaviside ellipsoid field, obtained here either by specialising the Liénard–Wiechert formulas or, equivalently, by applying the boost rotor $\tilde{\Lambda}$ of the Maxwell article to the Coulomb field of the charge at rest. When the charge accelerates but the observation is made in the far zone, the $1/R^2$ velocity field is negligible compared with the $1/R$ acceleration field, and the radiation field alone survives.
 
@@ -250,13 +250,13 @@ I_{1,a} = \mathbf{E}_a^2 - c^2\mathbf{B}_a^2 = 0,
 I_{2,a} = \mathbf{E}_a\cdot\mathbf{B}_a = 0 .
 $$
 
-In the biquaternion framework this is the statement that the norm form of $\tilde{F}_a$ vanishes:
+In the biquaternion framework this is the statement that the biquaternion norm of $\tilde{F}_a$ vanishes:
 
 $$
 N(\tilde{F}_a) = \tilde{F}_a\bar{\tilde{F}}_a = -\epsilon\left(I_{1,a} + 2ic\,I_{2,a}\right) = 0 .
 $$
 
-A nonzero pure-vector biquaternion with vanishing norm form is a zero divisor and is nilpotent, since for a pure vector $\tilde{F}_a^2 = -\mathbf{F}_a\cdot\mathbf{F}_a = -N(\tilde{F}_a)$. Hence
+A nonzero pure-vector biquaternion with vanishing biquaternion norm is a zero divisor and is nilpotent, since for a pure vector $\tilde{F}_a^2 = -\mathbf{F}_a\cdot\mathbf{F}_a = -N(\tilde{F}_a)$. Hence
 
 $$
 \boxed{\ \tilde{F}_a^2 = 0\ }
@@ -278,7 +278,7 @@ $$
 = \mathbf{E}_a^2 - \mathbf{E}_a^2 + 0 = 0 .
 $$
 
-The Riemann–Silberstein vector of the radiation field is a **null complex vector**. The acceleration field is thus the pointwise realization of every one of the equivalent characterizations of a radiation field collected in the companion article: it is transverse, it is a null field, its norm form vanishes, its field-strength biquaternion is a zero divisor, and its Riemann–Silberstein vector is null.
+The Riemann–Silberstein vector of the radiation field is a **null complex vector**. The acceleration field is thus the pointwise realization of every one of the equivalent characterizations of a radiation field collected in the companion article: it is transverse, it is a null field, its biquaternion norm vanishes, its field-strength biquaternion is a zero divisor, and its Riemann–Silberstein vector is null.
 
 The energy carried by the acceleration field is correspondingly unambiguous. Since $\mathbf{E}_a\perp\hat{\mathbf{R}}$, the Poynting vector of the acceleration field is purely radial,
 
@@ -305,7 +305,7 @@ P = \frac{q^2}{6\pi\epsilon c^3}\,N\!\left(\frac{d\tilde{U}}{d\tau}\right)
 = \frac{q^2}{6\pi\epsilon c^3}\left(-\frac{du^\mu}{d\tau}\frac{du_\mu}{d\tau}\right),
 $$
 
-where in the second expression the index contraction uses the Minkowski metric. This is the **relativistic Larmor formula**, and the biquaternion statement is particularly clean: the radiated power is (up to a constant) the **norm form of the four-acceleration biquaternion**. The norm form is non-negative here because the four-acceleration is spacelike in the $(+,-,-,-)$ convention, and it vanishes precisely for unaccelerated motion, as it must.
+where in the second expression the index contraction uses the Minkowski metric. This is the **relativistic Larmor formula**, and the biquaternion statement is particularly clean: the radiated power is (up to a constant) the **biquaternion norm of the four-acceleration biquaternion**. The biquaternion norm is non-negative here because the four-acceleration is spacelike in the $(+,-,-,-)$ convention, and it vanishes precisely for unaccelerated motion, as it must.
 
 For comparison with the standard literature, the same power can be written in terms of the acceleration measured in the observer's time. With $\dot{\boldsymbol{\beta}} = d\boldsymbol{\beta}/dt$ taken this time with respect to $t$ (not $t_r$),
 
@@ -325,7 +325,7 @@ $$
 P_{\text{circ}} = \frac{q^2\gamma^4\dot{\beta}^2}{6\pi\epsilon c},
 $$
 
-a $\gamma^4$ enhancement, because for the same $|\dot{\boldsymbol{\beta}}|$ the radiated power from transverse acceleration is smaller than that from longitudinal acceleration by a factor of $\gamma^2$. Both follow from the invariant expression; no new physics is introduced by the biquaternion formulation, but the way the power is organized — one norm form instead of a three-vector combination — is the characteristic simplification of the algebraic language.
+a $\gamma^4$ enhancement, because for the same $|\dot{\boldsymbol{\beta}}|$ the radiated power from transverse acceleration is smaller than that from longitudinal acceleration by a factor of $\gamma^2$. Both follow from the invariant expression; no new physics is introduced by the biquaternion formulation, but the way the power is organized — one biquaternion norm instead of a three-vector combination — is the characteristic simplification of the algebraic language.
 
 ## The Angular Distribution
 
@@ -433,7 +433,7 @@ $$
 
 so that the radiation field is a **zero divisor and a nilpotent element** of $\mathbb{B}$. This is the concrete realization of the null-field characterization anticipated in the companion article on the field-strength invariants.
 
-The radiated power is the norm form of the four-acceleration biquaternion,
+The radiated power is the biquaternion norm of the four-acceleration biquaternion,
 
 $$
 P = \frac{q^2}{6\pi\epsilon c^3}\,N\!\left(\frac{d\tilde{U}}{d\tau}\right),
@@ -469,7 +469,7 @@ The construction is explicit enough that the two downstream exercises are direct
 | $\mathbf{E}_v, \mathbf{B}_v, \mathbf{H}_v$ | Velocity-part fields |
 | $\mathbf{E}_a, \mathbf{B}_a, \mathbf{H}_a$ | Acceleration-part (radiation) fields |
 | $I_1 = \mathbf{E}^2 - c^2\mathbf{B}^2$, $I_2 = \mathbf{E}\cdot\mathbf{B}$ | Field invariants |
-| $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$ | Norm form |
+| $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$ | Biquaternion norm |
 | $dP/d\Omega$ | Power per unit solid angle (per observer time) |
 | $\theta, \phi$ | Polar angle from $\boldsymbol{\beta}$, azimuthal angle |
 | $\epsilon, \mu$, $c = 1/\sqrt{\epsilon\mu}$ | Medium permittivity, permeability, speed of light |

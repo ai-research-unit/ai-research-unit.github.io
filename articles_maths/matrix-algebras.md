@@ -23,7 +23,7 @@ $$
 
 where $\delta_{jk}$ is $1$ if $j = k$ and $0$ otherwise.
 
-*Proof.* The matrix $E_{ij}E_{kl}$ has entry in position $(p,q)$ equal to $\sum_r (E_{ij})_{pr}(E_{kl})_{rq} = \sum_r \delta_{ip}\delta_{jr}\delta_{kr}\delta_{lq} = \delta_{jr}\delta_{kr}\delta_{ip}\delta_{lq}$. The sum over $r$ collapses to $\delta_{jk}$, so the entry is $\delta_{jk}\delta_{ip}\delta_{lq}$, which is the $(p,q)$-entry of $\delta_{jk}E_{il}$. $\square$
+*Proof.* The matrix $E_{ij}E_{kl}$ has entry in position $(p,q)$ equal to $\sum_r (E_{ij})_{pr}(E_{kl})_{rq} = \sum_r \delta_{ip}\delta_{jr}\delta_{kr}\delta_{lq} = \delta_{jr}\delta_{kr}\delta_{ip}\delta_{lq}$. The sum over $r$ collapses to $\delta_{jk}$, so the entry is $\delta_{jk}\delta_{ip}\delta_{lq}$, which is the $(p,q)$-entry of $\delta_{jk}E_{il}$.
 
 Two consequences are used constantly. First, $E_{ij}E_{jl} = E_{il}$, so any matrix unit is the product of two others; second, $E_{ij}E_{kl} = 0$ whenever $j \neq k$, so there are many zero-divisor pairs as soon as $n \geq 2$, and $M_n(R)$ is not a domain. The matrix units satisfy $E_{ij} = E_{ik}E_{kj}$ for every $k$, which is the identity that makes the ideal theory of $M_n(R)$ trivial.
 
@@ -60,11 +60,11 @@ Both are polynomial functions of the entries, so they are defined over any commu
 3. $\det(AB) = \det A \cdot \det B$ and $\det I_n = 1$;
 4. the characteristic polynomial $\chi_A(t) = \det(tI_n - A)$ has constant term $(-1)^n\det A$ and coefficient of $t^{n-1}$ equal to $-\operatorname{Tr}A$.
 
-*Proof.* The trace identities follow from the definitions, since $\operatorname{Tr}(AB) = \sum_{i,j}A_{ij}B_{ji} = \sum_{i,j}B_{ji}A_{ij} = \operatorname{Tr}(BA)$. The multiplicativity of the determinant is the classical theorem, proved by expanding both sides as sums over $S_n$ and reindexing; over a general commutative ring it follows from the universal polynomial identity over $\mathbb{Z}$, which is then evaluated in $R$. The two coefficients of $\chi_A$ are read off from the Leibniz formula. $\square$
+*Proof.* The trace identities follow from the definitions, since $\operatorname{Tr}(AB) = \sum_{i,j}A_{ij}B_{ji} = \sum_{i,j}B_{ji}A_{ij} = \operatorname{Tr}(BA)$. The multiplicativity of the determinant is the classical theorem, proved by expanding both sides as sums over $S_n$ and reindexing; over a general commutative ring it follows from the universal polynomial identity over $\mathbb{Z}$, which is then evaluated in $R$. The two coefficients of $\chi_A$ are read off from the Leibniz formula.
 
 **Theorem (unit criterion).** A matrix $A \in M_n(R)$ is a unit if and only if $\det A \in R^\times$.
 
-*Proof.* If $AB = I_n$ then $\det A \cdot \det B = \det I_n = 1$, so $\det A$ is a unit. Conversely, if $\det A$ is a unit, let $\operatorname{adj}(A)$ be the adjugate matrix, whose entries are the cofactors; the Laplace expansion gives $A\operatorname{adj}(A) = \operatorname{adj}(A)A = (\det A)I_n$. Hence $A^{-1} = (\det A)^{-1}\operatorname{adj}(A)$ is a two-sided inverse. $\square$
+*Proof.* If $AB = I_n$ then $\det A \cdot \det B = \det I_n = 1$, so $\det A$ is a unit. Conversely, if $\det A$ is a unit, let $\operatorname{adj}(A)$ be the adjugate matrix, whose entries are the cofactors; the Laplace expansion gives $A\operatorname{adj}(A) = \operatorname{adj}(A)A = (\det A)I_n$. Hence $A^{-1} = (\det A)^{-1}\operatorname{adj}(A)$ is a two-sided inverse.
 
 Over a field the criterion reads: $A$ is a unit if and only if $\det A \neq 0$, which is the usual statement that the units are $\mathrm{GL}_n(k)$. Over a general commutative ring the determinant can be a nonzero non-unit: the matrix $\operatorname{diag}(2,1) \in M_2(\mathbb{Z})$ has determinant $2$, so it is not invertible, and it is not a zero divisor either, since $2$ is not a zero divisor in $\mathbb{Z}$.
 
@@ -78,7 +78,7 @@ $$
 E_{pq} = \frac{1}{A_{ij}}\, E_{pi}\, A\, E_{jq} \in I,
 $$
 
-since $E_{pi}A E_{jq}$ has $(p,q)$-entry $A_{ij}$ and all other entries zero. As the matrix units span, $I = M_n(k)$. $\square$
+since $E_{pi}A E_{jq}$ has $(p,q)$-entry $A_{ij}$ and all other entries zero. As the matrix units span, $I = M_n(k)$.
 
 **Theorem (left ideals).** Let $k$ be a field. The left ideals of $M_n(k)$ are exactly the sets
 
@@ -88,13 +88,13 @@ $$
 
 where $V \subseteq k^n$ is a subspace and $\operatorname{col}(A)$ is the span of the columns of $A$.
 
-*Proof.* Each $I_V$ is a left ideal, because left multiplication replaces the columns by linear combinations of them. Conversely, if $I$ is a left ideal, let $V$ be the span of the columns of all matrices in $I$; then $I \subseteq I_V$. For the reverse inclusion, choose $A \in I$ whose columns span $V$. Every vector of $V$ is $Ay$ for some $y$, so every matrix $B$ with columns in $V$ has the form $B = AC$ for a suitable $C$; since $I$ is a left ideal, $AC \in I$ and hence $B \in I$. $\square$
+*Proof.* Each $I_V$ is a left ideal, because left multiplication replaces the columns by linear combinations of them. Conversely, if $I$ is a left ideal, let $V$ be the span of the columns of all matrices in $I$; then $I \subseteq I_V$. For the reverse inclusion, choose $A \in I$ whose columns span $V$. Every vector of $V$ is $Ay$ for some $y$, so every matrix $B$ with columns in $V$ has the form $B = AC$ for a suitable $C$; since $I$ is a left ideal, $AC \in I$ and hence $B \in I$.
 
 The left ideals are therefore in bijection with the subspaces of $k^n$, the two trivial ideals corresponding to $V = 0$ and $V = k^n$ and the others to the proper subspaces; over $\mathbb{R}$ and $n = 2$ the minimal ones form the projective line. The minimal left ideals are the $I_V$ with $\dim V = 1$, each isomorphic to $k^n$ as a left module. The right ideals are described by the rows in the same way, and the two-sided ideals are the two trivial ones, in agreement with simplicity.
 
 **Corollary (the centre).** For a commutative ring $R$, $Z(M_n(R)) = R I_n$, and $M_n(R)$ is a central $R$-algebra.
 
-*Proof.* If $A$ commutes with every matrix unit, then $AE_{ij} = E_{ij}A$ for all $i,j$. Comparing the $(k,l)$-entries gives $A_{ki}\delta_{jl} = \delta_{ik}A_{jl}$. Taking $j = l$ yields $A_{ki} = \delta_{ik}A_{jj}$ for all $i,k,j$: with $i = k$ this gives $A_{ii} = A_{jj}$, so all diagonal entries are equal, and with $i \neq k$ it gives $A_{ki} = 0$, so all off-diagonal entries vanish. Hence $A = \lambda I_n$ with $\lambda \in R$. $\square$
+*Proof.* If $A$ commutes with every matrix unit, then $AE_{ij} = E_{ij}A$ for all $i,j$. Comparing the $(k,l)$-entries gives $A_{ki}\delta_{jl} = \delta_{ik}A_{jl}$. Taking $j = l$ yields $A_{ki} = \delta_{ik}A_{jj}$ for all $i,k,j$: with $i = k$ this gives $A_{ii} = A_{jj}$, so all diagonal entries are equal, and with $i \neq k$ it gives $A_{ki} = 0$, so all off-diagonal entries vanish. Hence $A = \lambda I_n$ with $\lambda \in R$.
 
 ## Tensor Products of Matrix Algebras
 
@@ -118,7 +118,7 @@ $$
 = \delta_{ji'}\delta_{lk'}\, E_{(i,k),(j',l')},
 $$
 
-which is exactly the product $E_{(i,k),(j,l)}E_{(i',k'),(j',l')}$; and it sends $I_m\otimes I_n$ to $I_{mn}$. $\square$
+which is exactly the product $E_{(i,k),(j,l)}E_{(i',k'),(j',l')}$; and it sends $I_m\otimes I_n$ to $I_{mn}$.
 
 The formula is the algebraic statement that the tensor product of two matrix algebras is again a matrix algebra, of size the product of the sizes; the two factors embed as the subalgebras of matrices acting on the two tensor legs, and the two images commute. Iterating, $M_{n_1}(k)\otimes\dots\otimes M_{n_r}(k) \cong M_{n_1\cdots n_r}(k)$. The construction is the matrix case of the tensor product of algebras in *Tensor Products of Algebras*.
 
@@ -170,7 +170,7 @@ $$
 
 is symmetric, associative in the sense that $\langle AB, C\rangle = \langle A, BC\rangle$, and non-degenerate.
 
-*Proof.* Symmetry is $\operatorname{Tr}(AB) = \operatorname{Tr}(BA)$. Associativity is $\operatorname{Tr}((AB)C) = \operatorname{Tr}(A(BC))$. For non-degeneracy, suppose $\langle A, B\rangle = 0$ for all $B$; taking $B = E_{ji}$ gives $\operatorname{Tr}(AE_{ji}) = A_{ij} = 0$ for all $i,j$, hence $A = 0$. $\square$
+*Proof.* Symmetry is $\operatorname{Tr}(AB) = \operatorname{Tr}(BA)$. Associativity is $\operatorname{Tr}((AB)C) = \operatorname{Tr}(A(BC))$. For non-degeneracy, suppose $\langle A, B\rangle = 0$ for all $B$; taking $B = E_{ji}$ gives $\operatorname{Tr}(AE_{ji}) = A_{ij} = 0$ for all $i,j$, hence $A = 0$.
 
 The trace form is the concrete case of the non-degenerate associative form that makes $M_n(k)$ a **symmetric Frobenius algebra**, and it can be used in place of the matrix units in many arguments, for instance to identify the dual of $M_n(k)$ with itself.
 
@@ -186,7 +186,7 @@ $$
 \operatorname{Aut}_k(M_n(k)) \cong \mathrm{PGL}_n(k) = \mathrm{GL}_n(k)/k^\times.
 $$
 
-*Proof (sketch).* The algebra $M_n(k)$ has a unique simple left module $k^n$ up to isomorphism, and $\varphi$ transports the module structure to an isomorphic one; an isomorphism of the transported module with $k^n$ is a matrix $P$, and comparing the actions gives $\varphi(A) = PAP^{-1}$. The kernel of $P \mapsto (A\mapsto PAP^{-1})$ is $k^\times I_n$. $\square$
+*Proof (sketch).* The algebra $M_n(k)$ has a unique simple left module $k^n$ up to isomorphism, and $\varphi$ transports the module structure to an isomorphic one; an isomorphism of the transported module with $k^n$ is a matrix $P$, and comparing the actions gives $\varphi(A) = PAP^{-1}$. The kernel of $P \mapsto (A\mapsto PAP^{-1})$ is $k^\times I_n$.
 
 **Corollary (derivations).** Every $k$-derivation of $M_n(k)$ is inner, $\delta(A) = [H, A]$ for some $H \in M_n(k)$.
 

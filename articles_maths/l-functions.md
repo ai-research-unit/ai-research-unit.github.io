@@ -27,7 +27,7 @@ $$
 $$
 and the characters of $(\mathbb{Z}/q\mathbb{Z})^\times$ are exactly the characters of $\mathbb{Z}/q\mathbb{Z}$ whose value at a nonunit is $0$.
 
-**Proof.** The group $(\mathbb{Z}/q\mathbb{Z})^\times$ is finite abelian, hence a direct product of cyclic groups; over $\mathbb{C}$ a cyclic group of order $n$ has exactly $n$ characters, given by $g\mapsto\zeta_n^k$ for the $n$-th roots of unity, and the orthogonality relations are the standard orthogonality of the columns and rows of the character table. $\square$
+**Proof.** The group $(\mathbb{Z}/q\mathbb{Z})^\times$ is finite abelian, hence a direct product of cyclic groups; over $\mathbb{C}$ a cyclic group of order $n$ has exactly $n$ characters, given by $g\mapsto\zeta_n^k$ for the $n$-th roots of unity, and the orthogonality relations are the standard orthogonality of the columns and rows of the character table.
 
 ### Gauss Sums
 
@@ -43,7 +43,7 @@ $$
 
 **(c)** $\overline{\tau(\chi)} = \chi(-1)\,\tau(\bar\chi)$, and consequently $\tau(\chi) = \chi(-1)\,\overline{\tau(\bar\chi)}$.
 
-**Proof sketch.** For (a), compute $\lvert\tau(\chi)\rvert^2 = \sum_{a,b}\chi(a)\bar\chi(b)e^{2\pi i(a-b)/q}$ and substitute $a = bu$ for $u$ ranging over the units, using the primitivity to replace the sum over units by a sum over all residues in the resulting Ramanujan sum; the result is $\sum_{u}\chi(u)\sum_{c}e^{2\pi i uc/q} = q$. The identity (b) follows from (a) and the computation of $\tau(\chi)^2$ for the primitive case, and (c) is the substitution $a\mapsto a^{-1}$ in the defining sum. $\square$
+**Proof sketch.** For (a), compute $\lvert\tau(\chi)\rvert^2 = \sum_{a,b}\chi(a)\bar\chi(b)e^{2\pi i(a-b)/q}$ and substitute $a = bu$ for $u$ ranging over the units, using the primitivity to replace the sum over units by a sum over all residues in the resulting Ramanujan sum; the result is $\sum_{u}\chi(u)\sum_{c}e^{2\pi i uc/q} = q$. The identity (b) follows from (a) and the computation of $\tau(\chi)^2$ for the primitive case, and (c) is the substitution $a\mapsto a^{-1}$ in the defining sum.
 
 **Example.** For the nontrivial character modulo $3$, with $\chi(1)=1$ and $\chi(2)=-1$, the Gauss sum is $\tau = e^{2\pi i/3} - e^{4\pi i/3} = i\sqrt3$, of absolute value $\sqrt3 = \sqrt q$; the associated root number of the next section is $\tau/(i\sqrt3) = 1$. For the character modulo $4$ with $\chi(-1)=-1$, the Gauss sum is $\tau = e^{2\pi i/4} - e^{6\pi i/4} = 2i$, of absolute value $2 = \sqrt4$.
 
@@ -57,7 +57,7 @@ L(s,\chi) = \sum_{n\geq1}\frac{\chi(n)}{n^s} = \prod_{p}\frac{1}{1-\chi(p)p^{-s}
 $$
 **Theorem (elementary properties).** The series and the product converge absolutely and locally uniformly for $\Re s>1$, the product is the Euler product of the series, and if $\chi\neq\chi_0$ then the series converges conditionally, and the function is continuous, on the half-plane $\Re s>0$; if $\chi = \chi_0$, then $L(s,\chi_0) = \zeta(s)\prod_{p\mid q}(1-p^{-s})$ has the simple pole of $\zeta$ at $s=1$ and no other pole.
 
-**Proof.** Absolute convergence for $\sigma>1$ is the Euler product theorem. For a nonprincipal character the partial sums of the coefficients are bounded by $\varphi(q)$ because the character sums over complete residue systems vanish; summation by parts then gives the convergence for $\sigma>0$. The principal character factors out the finitely many primes dividing $q$. $\square$
+**Proof.** Absolute convergence for $\sigma>1$ is the Euler product theorem. For a nonprincipal character the partial sums of the coefficients are bounded by $\varphi(q)$ because the character sums over complete residue systems vanish; summation by parts then gives the convergence for $\sigma>0$. The principal character factors out the finitely many primes dividing $q$.
 
 ### Analytic Continuation and the Functional Equation
 
@@ -73,7 +73,7 @@ $$
 $$
 For a nonprimitive character the same statements hold after removing the finitely many Euler factors of the inducing modulus, and for the principal character the completed function has poles at $s=0$ and $s=1$ corresponding to the pole of $\zeta$.
 
-**Proof sketch (theta and Gauss sums).** One forms the twisted theta series $\theta_\chi(t) = \sum_{n\geq1}\chi(n)e^{-\pi n^2t/q}$, with the variant $\sum_n n\,\chi(n)e^{-\pi n^2t/q}$ when $\chi$ is odd; Poisson summation applied to the twisted Gauss sum produces the transformation law of $\theta_\chi$ under $t\mapsto1/t$, and the constant in that law is precisely the root number $\epsilon_\chi = \tau(\chi)/(i^a\sqrt q)$; the Mellin transform of the appropriate power of $t$ times $\theta_\chi$ is then the completed $L$-function $\Lambda(s,\chi)$, and the functional equation follows from the transformation law. The adelic proof is the one of *Adelic Analysis*: the character $\chi$ determines a Hecke character of the idele class group of $\mathbb{Q}$, and the completed $L$-function is the global zeta integral of that character, so the functional equation is Poisson summation. $\square$
+**Proof sketch (theta and Gauss sums).** One forms the twisted theta series $\theta_\chi(t) = \sum_{n\geq1}\chi(n)e^{-\pi n^2t/q}$, with the variant $\sum_n n\,\chi(n)e^{-\pi n^2t/q}$ when $\chi$ is odd; Poisson summation applied to the twisted Gauss sum produces the transformation law of $\theta_\chi$ under $t\mapsto1/t$, and the constant in that law is precisely the root number $\epsilon_\chi = \tau(\chi)/(i^a\sqrt q)$; the Mellin transform of the appropriate power of $t$ times $\theta_\chi$ is then the completed $L$-function $\Lambda(s,\chi)$, and the functional equation follows from the transformation law. The adelic proof is the one of *Adelic Analysis*: the character $\chi$ determines a Hecke character of the idele class group of $\mathbb{Q}$, and the completed $L$-function is the global zeta integral of that character, so the functional equation is Poisson summation.
 
 **Corollary (the zeros of a Dirichlet $L$-function).** A Dirichlet $L$-function with $\chi\neq\chi_0$ has no zero in $\Re s>1$, by the Euler product, and no zero at $s=1$, by the nonvanishing theorem below; its trivial zeros are the poles of the Gamma factor of its completed function, at $s=-1,-3,-5,\dots$ when $\chi$ is odd and at $s=0,-2,-4,\dots$ when $\chi$ is even, the point $s=0$ being a zero for every even character except the principal character modulo $1$, for which $L(0,\chi_0) = \zeta(0) = -\tfrac12$; hence all its nontrivial zeros lie in the critical strip $0\le\Re s\le1$. The analogue of the Riemann hypothesis asserts that they all satisfy $\Re s = \tfrac12$, and the generalised Riemann hypothesis is the statement for all the Dirichlet $L$-functions at once, treated.
 
@@ -87,7 +87,7 @@ whose Euler product has the logarithm
 $$
 \sum_{p}\sum_{k\geq1}\frac{1}{k}\bigl(2+\chi(p)^k+\bar\chi(p)^k\bigr)p^{-ks}, \qquad 2+\chi(p)^k+\bar\chi(p)^k = 2+2\operatorname{Re}\chi(p)^k \geq 0,
 $$
-so that the Dirichlet coefficients of $F$ are nonnegative and $F$ is not identically zero; moreover $F(s)\geq1$ for real $s>1$, since its logarithm has nonnegative coefficients. If $L(1,\chi)$ vanished then $L(1,\bar\chi)$ would vanish as well, since the two are conjugate; a zero of order $k$ of $L(s,\chi)$ at $s=1$ together with a zero of order $m$ of $L(s,\bar\chi)$ would leave a zero of order $k+m-2$ in $F$ at $s=1$, which the inequality $F(s)\geq1$ forbids unless $k+m = 2$, so the vanishing would be simple and $F$ would be holomorphic and nonzero at $s=1$; but the coefficient of $p^{-s}$ in the logarithm of $F$ is $2+2\operatorname{Re}\chi(p)$, whose sum over the primes diverges, because $\sum_p2/p$ diverges while $\sum_p(\chi(p)+\bar\chi(p))/p$ converges for a nonprincipal character by partial summation against bounded character sums; hence the Dirichlet series of $\log F$ has abscissa of convergence $1$ and is singular there by Landau's theorem, in contradiction with the regularity of $F$ at $s=1$. The stated asymptotic follows by writing the indicator of the progression $a \bmod q$ as an average of characters with the orthogonality relations. $\square$
+so that the Dirichlet coefficients of $F$ are nonnegative and $F$ is not identically zero; moreover $F(s)\geq1$ for real $s>1$, since its logarithm has nonnegative coefficients. If $L(1,\chi)$ vanished then $L(1,\bar\chi)$ would vanish as well, since the two are conjugate; a zero of order $k$ of $L(s,\chi)$ at $s=1$ together with a zero of order $m$ of $L(s,\bar\chi)$ would leave a zero of order $k+m-2$ in $F$ at $s=1$, which the inequality $F(s)\geq1$ forbids unless $k+m = 2$, so the vanishing would be simple and $F$ would be holomorphic and nonzero at $s=1$; but the coefficient of $p^{-s}$ in the logarithm of $F$ is $2+2\operatorname{Re}\chi(p)$, whose sum over the primes diverges, because $\sum_p2/p$ diverges while $\sum_p(\chi(p)+\bar\chi(p))/p$ converges for a nonprincipal character by partial summation against bounded character sums; hence the Dirichlet series of $\log F$ has abscissa of convergence $1$ and is singular there by Landau's theorem, in contradiction with the regularity of $F$ at $s=1$. The stated asymptotic follows by writing the indicator of the progression $a \bmod q$ as an average of characters with the orthogonality relations.
 
 ### Special Values
 
@@ -99,7 +99,7 @@ $$
 $$
 L(1-n,\chi) = -\frac{B_{n,\chi}}{n}, \qquad\text{in particular}\qquad L(0,\chi) = -\frac{1}{q}\sum_{a=1}^{q}a\,\chi(a) .
 $$
-**Proof sketch.** The generalised Bernoulli numbers generate the values by the same Mellin-transform argument as for the trivial character, with the twisted theta series replacing the theta function; the second formula is the case $n=1$ and is computed directly from the definition. $\square$
+**Proof sketch.** The generalised Bernoulli numbers generate the values by the same Mellin-transform argument as for the trivial character, with the twisted theta series replacing the theta function; the second formula is the case $n=1$ and is computed directly from the definition.
 
 **Theorem (values at $1$ and the class number formula).** For the primitive quadratic character $\chi_d$ of a quadratic field $K = \mathbb{Q}(\sqrt d)$ of discriminant $d$,
 $$
@@ -119,7 +119,7 @@ with $Q>0$ the **conductor**, $\kappa_j$ the **spectral parameters** and $\lvert
 
 **Proposition (uniqueness of the data).** The conductor, the degree, the spectral parameters and the root number are determined by the function; the product of two $L$-functions of degrees $d_1,d_2$ is an $L$-function of degree $d_1+d_2$; and $L(s)$ has no zero in $\Re s>1$, by the Euler product and the Ramanujan bound.
 
-**Proof.** The Euler product determines the local factors $p^{-s}\mapsto L_p$ and hence the degree; the functional equation then determines the Gamma factors up to the classification of the products of Gamma functions; multiplicativity of the degree is the multiplicativity of the local factors. Nonvanishing for $\Re s>1$ is the convergence of the logarithm of the Euler product. $\square$
+**Proof.** The Euler product determines the local factors $p^{-s}\mapsto L_p$ and hence the degree; the functional equation then determines the Gamma factors up to the classification of the products of Gamma functions; multiplicativity of the degree is the multiplicativity of the local factors. Nonvanishing for $\Re s>1$ is the convergence of the logarithm of the Euler product.
 
 ### Hecke $L$-Functions
 
@@ -131,7 +131,7 @@ with the Archimedean factors given by Gamma functions according to the infinity 
 
 **Theorem (Hecke; Tate).** For every Hecke character $\chi$ the product converges for $\Re s > 1$, extends meromorphically to $\mathbb{C}$ with a functional equation $\Lambda(s,\chi) = \epsilon(s,\chi)\Lambda(1-s,\chi^{-1})$, and is entire when $\chi$ is not a power of the norm character; for $\chi$ trivial it is the Dedekind zeta function of $K$.
 
-**Proof.** This is the main theorem of *Adelic Analysis*: the $L$-function is the normalised global zeta integral of $\chi$ against a factorisable Schwartz–Bruhat function, the Euler product is the product of the local integrals, and the functional equation is Poisson summation together with the local functional equations. The claims about the poles are read off from the local factors of the norm character. $\square$
+**Proof.** This is the main theorem of *Adelic Analysis*: the $L$-function is the normalised global zeta integral of $\chi$ against a factorisable Schwartz–Bruhat function, the Euler product is the product of the local integrals, and the functional equation is Poisson summation together with the local functional equations. The claims about the poles are read off from the local factors of the norm character.
 
 ### Artin $L$-Functions
 
@@ -143,7 +143,7 @@ $$
 $$
 so the Dedekind zeta function of the extension is the product of the Artin $L$-functions of the irreducible representations of the group.
 
-**Proof sketch.** The identity is the decomposition of the regular representation. Artin $L$-functions are multiplicative in induction: for a subgroup $H \subseteq G$ and a representation $\sigma$ of $H$ one has $L(s,\mathrm{Ind}_H^G\sigma,L/K) = L(s,\sigma,L/L^H)$, and taking $H = 1$ gives $L(s,\mathrm{Reg}_G,L/K) = L(s,1,L/L) = \zeta_L(s)$; on the other side $\mathrm{Reg}_G = \bigoplus_\rho\rho^{\oplus\dim\rho}$ for the irreducible complex representations of the finite group $G$, and Euler factors multiply, so $\zeta_L(s) = \prod_\rho L(s,\rho,L/K)^{\dim\rho}$. At a prime $v$ of $K$ unramified in $L$ both sides are $\det(1-\mathrm{Frob}_vN(v)^{-s}\mid\mathbb{C}[G])^{-1} = \prod_{\mathfrak{P}\mid v}(1-N(v)^{-f_{\mathfrak{P}}s})^{-1}$, the eigenvalues of the Frobenius on the regular representation being the values $\chi(\mathrm{Frob}_v)$ with the multiplicities $\dim\rho$. The ramified and Archimedean places are handled by the definitions of the local factors. $\square$
+**Proof sketch.** The identity is the decomposition of the regular representation. Artin $L$-functions are multiplicative in induction: for a subgroup $H \subseteq G$ and a representation $\sigma$ of $H$ one has $L(s,\mathrm{Ind}_H^G\sigma,L/K) = L(s,\sigma,L/L^H)$, and taking $H = 1$ gives $L(s,\mathrm{Reg}_G,L/K) = L(s,1,L/L) = \zeta_L(s)$; on the other side $\mathrm{Reg}_G = \bigoplus_\rho\rho^{\oplus\dim\rho}$ for the irreducible complex representations of the finite group $G$, and Euler factors multiply, so $\zeta_L(s) = \prod_\rho L(s,\rho,L/K)^{\dim\rho}$. At a prime $v$ of $K$ unramified in $L$ both sides are $\det(1-\mathrm{Frob}_vN(v)^{-s}\mid\mathbb{C}[G])^{-1} = \prod_{\mathrm{P}\mid v}(1-N(v)^{-f_{\mathrm{P}}s})^{-1}$, the eigenvalues of the Frobenius on the regular representation being the values $\chi(\mathrm{Frob}_v)$ with the multiplicities $\dim\rho$. The ramified and Archimedean places are handled by the definitions of the local factors.
 
 **Conjecture (Artin).** If $\rho$ is irreducible and nontrivial then $L(s,\rho,L/K)$ is entire. The conjecture is known for one-dimensional $\rho$, where the Artin $L$-function is a Hecke $L$-function by class field theory, and in the case of the two-dimensional representations of certain groups, where the modularity theorems give it; the general case is open and is one of the guiding problems of the theory. The comparison of the Artin and automorphic descriptions of an $L$-function is the reciprocity conjectures, whose analytic side is the subject of *Automorphic Forms* and whose classical modular case is not covered here.
 

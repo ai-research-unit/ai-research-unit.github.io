@@ -66,7 +66,7 @@ The ring $\mathbb{Z}[x]$, with dimension $2$ and units $\pm 1$, is the standard 
 | Ring | Dimension | Units | Zero divisors | Introduced in |
 |---|---|---|---|---|
 | $\mathbb{D}$ | $2$ over $\mathbb{R}$; Krull $0$ | $N(u) \neq 0$ | the null cone $\{N = 0\}$ | *Split-Complex Algebra* |
-| $\mathbb{D}'$ | $2$ over $\mathbb{R}$; Krull $0$ | $x \neq 0$ | the maximal ideal $\mathfrak{m} = (\varepsilon)$ | *Dual-Numbers Algebra* |
+| $\mathbb{D}'$ | $2$ over $\mathbb{R}$; Krull $0$ | $x \neq 0$ | the maximal ideal $\mathrm{M} = (\varepsilon)$ | *Dual-Numbers Algebra* |
 
 The two algebras are not isomorphic. The split-complex numbers are a product of two copies of $\mathbb{R}$ and are reduced; the dual numbers are local and not reduced. Their zero divisors are correspondingly different: the null cone of $\mathbb{D}$ consists of the elements with $N(u) = 0$, while the zero divisors of $\mathbb{D}'$ are exactly the elements of the maximal ideal, and $\varepsilon$ is nilpotent rather than idempotent.
 

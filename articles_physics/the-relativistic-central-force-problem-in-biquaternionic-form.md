@@ -28,7 +28,7 @@ The companion article *The Central Scalar Field: Classical Dynamics in the Biqua
 $$
 \mathbf{a}\mathbf{b}=-\mathbf{a}\cdot\mathbf{b}\,e_0+\mathbf{a}\times\mathbf{b}, \qquad [\mathbf{a},\mathbf{b}]=2\,\mathbf{a}\times\mathbf{b},
 $$
-so that the angular momentum is $\mathbf{L}=\mathbf{r}\times\mathbf{p}=\tfrac12[\mathbf{r},\mathbf{p}]$, the vector part of the quaternion product $\mathbf{r}\mathbf{p}$, and its magnitude is $L=|\mathbf{L}|=\sqrt{N(\mathbf{L})}$. The four-position is $\tilde{Q}=ict\,e_0+\mathbf{x}\in\mathbb{M}_-$ and the four-momentum is $\tilde{P}=iE/c\,e_0+\mathbf{p}$, whose norm form is the mass-shell relation. The biquaternionic gradient is $\tilde{\nabla}=e_0\partial_{ict}+e_1\partial_x+e_2\partial_y+e_3\partial_z$, with $\Box=\tilde{\nabla}\bar{\tilde{\nabla}}=\partial_{ict}^2+\Delta$. Throughout, $c=1/\sqrt{\epsilon\mu}$ is the **speed of light in the medium** and $c_0$ its vacuum value; the symbol $\mathbf{v}$ is reserved for particle and frame velocities. The coupling $\kappa$ is positive for an attractive inverse-square force; for gravity $\kappa=GMm$, and for the Coulomb problem $\kappa=-q_1q_2/(4\pi\epsilon_0)$, as fixed in the companion article on the classical Coulomb problem.
+so that the angular momentum is $\mathbf{L}=\mathbf{r}\times\mathbf{p}=\tfrac12[\mathbf{r},\mathbf{p}]$, the vector part of the quaternion product $\mathbf{r}\mathbf{p}$, and its magnitude is $L=|\mathbf{L}|=\sqrt{N(\mathbf{L})}$. The four-position is $\tilde{Q}=ict\,e_0+\mathbf{x}\in\mathbb{M}_-$ and the four-momentum is $\tilde{P}=iE/c\,e_0+\mathbf{p}$, whose biquaternion norm is the mass-shell relation. The biquaternionic gradient is $\tilde{\nabla}=e_0\partial_{ict}+e_1\partial_x+e_2\partial_y+e_3\partial_z$, with $\Box=\tilde{\nabla}\bar{\tilde{\nabla}}=\partial_{ict}^2+\Delta$. Throughout, $c=1/\sqrt{\epsilon\mu}$ is the **speed of light in the medium** and $c_0$ its vacuum value; the symbol $\mathbf{v}$ is reserved for particle and frame velocities. The coupling $\kappa$ is positive for an attractive inverse-square force; for gravity $\kappa=GMm$, and for the Coulomb problem $\kappa=-q_1q_2/(4\pi\epsilon_0)$, as fixed in the companion article on the classical Coulomb problem.
 
 ## The Relativistic Central Force
 
@@ -86,7 +86,7 @@ with the proper time or the coordinate time giving the same vanishing because th
 
 ### The Mass-Shell Relation and the Radial Momentum
 
-The relativistic content enters through the mass-shell relation for the four-momentum. With $\tilde{P}=iE/c\,e_0+\mathbf{p}$ and the norm form $N(\tilde{P})=\tilde{P}\bar{\tilde{P}}=-E^2/c^2+\mathbf{p}^2$, the on-shell condition with the potential included is
+The relativistic content enters through the mass-shell relation for the four-momentum. With $\tilde{P}=iE/c\,e_0+\mathbf{p}$ and the biquaternion norm $N(\tilde{P})=\tilde{P}\bar{\tilde{P}}=-E^2/c^2+\mathbf{p}^2$, the on-shell condition with the potential included is
 
 $$
 (E-V)^2=\mathbf{p}^2c^2+m^2c^4 .
@@ -98,7 +98,7 @@ $$
 (E-V)^2-m^2c^4 = c^2\left(p_r^2+\frac{L^2}{r^2}\right).
 $$
 
-The left-hand side is fixed by the state $(E,L)$ and the right-hand side is non-negative; this inequality is what bounds the motion, and it replaces the non-relativistic effective-potential discussion. It is the same norm-form identity that the companion article *The Relativistic Particle in Biquaternionic Form* uses for the free mass shell, now written with the potential shifted into the energy.
+The left-hand side is fixed by the state $(E,L)$ and the right-hand side is non-negative; this inequality is what bounds the motion, and it replaces the non-relativistic effective-potential discussion. It is the same biquaternion-norm identity that the companion article *The Relativistic Particle in Biquaternionic Form* uses for the free mass shell, now written with the potential shifted into the energy.
 
 ## The Relativistic Binet Equation
 
@@ -254,7 +254,7 @@ The existence of a stable circular orbit at every angular momentum above $\kappa
 
 The quadratic constraint makes the relativistic effect on the barrier explicit. Its value at $r=0^+$ is $\kappa^2-c^2L^2$, which is **negative** exactly when $L>\kappa/c$. A negative value at the origin means that the region near $r=0$ is forbidden and the allowed motion lies between the two positive roots: a genuine bound orbit with a periastron that keeps the particle away from the centre. When $L<\kappa/c$ the constraint is positive near the origin, the allowed region reaches $r=0$, and the particle falls into the centre however it is launched.
 
-This is a relativistic phenomenon with no non-relativistic counterpart. In the non-relativistic inverse-square problem the centrifugal term $L^2/(2mr^2)$ diverges at the origin for every $L>0$, so a barrier exists for every nonzero angular momentum. Relativistically the barrier competes with the growth of the relativistic mass near the centre, and the competition is lost below $L=\kappa/c$. The threshold is a ratio of a central scalar ($\kappa$) to the norm form of a material vector ($L$), and it is the framework's own norm form that produces it.
+This is a relativistic phenomenon with no non-relativistic counterpart. In the non-relativistic inverse-square problem the centrifugal term $L^2/(2mr^2)$ diverges at the origin for every $L>0$, so a barrier exists for every nonzero angular momentum. Relativistically the barrier competes with the growth of the relativistic mass near the centre, and the competition is lost below $L=\kappa/c$. The threshold is a ratio of a central scalar ($\kappa$) to the biquaternion norm of a material vector ($L$), and it is the framework's own biquaternion norm that produces it.
 
 ### Verification
 
@@ -290,13 +290,13 @@ which is one sixth of the general-relativistic perihelion advance $6\pi GM/(c^2a
 
 ## The Hidden Symmetry and What Becomes of the Runge–Lenz Vector
 
-The non-relativistic inverse-square problem conserves, besides $\mathbf{L}$, the Runge–Lenz vector $\mathbf{A}=\mathbf{p}\times\mathbf{L}-m\kappa\hat{\mathbf{r}}$, whose conservation is equivalent to the closure of the orbit and whose symmetry algebra is $\mathfrak{so}(4)$ for bound orbits. The relativistic problem is the test case for what survives.
+The non-relativistic inverse-square problem conserves, besides $\mathbf{L}$, the Runge–Lenz vector $\mathbf{A}=\mathbf{p}\times\mathbf{L}-m\kappa\hat{\mathbf{r}}$, whose conservation is equivalent to the closure of the orbit and whose symmetry algebra is $\mathrm{SO}(4)$ for bound orbits. The relativistic problem is the test case for what survives.
 
 The orbit remains a conic **in the rotating frame** $\varphi=\omega\theta$, so the shape of the orbit is preserved and the only relativistic effect on it is the uniform rotation of the apsidal line. Equivalently, the relativistic problem retains the same number of constants of motion as any planar central-force problem — the energy, the angular momentum and the orientation of the orbit — but the orientation is no longer fixed: the periapsis direction advances by $\Delta$ per revolution.
 
 A vector with the algebraic form of the Runge–Lenz vector is therefore **not conserved** in the relativistic problem, and the reason is visible in the equation of motion. For an ansatz $\mathbf{A}_{\text{rel}}=\mathbf{p}\times\mathbf{L}-\alpha\,\hat{\mathbf{r}}$ with constant $\alpha$, the time derivative contains a term $\mathbf{F}\times\mathbf{L}=\kappa L\,\hat{\boldsymbol{\varphi}}/r^2$ from the force and a term $\alpha\,\dot{\hat{\mathbf{r}}}=\alpha L\,\hat{\boldsymbol{\varphi}}/(\gamma mr^2)$ from the rotating unit vector, and the two cancel only if $\alpha=\gamma m\kappa=(E-V)\kappa/c^2$, which is not constant along the orbit. No choice of constant $\alpha$ removes both terms, and the deficit is exactly the precession.
 
-What survives is a rotating-frame quantity: the vector constructed from the conic in the $(r,\varphi)$ plane has a fixed direction in that plane, and in the physical plane it rotates by $\Delta$ per revolution. The hidden symmetry of the non-relativistic problem is thus not destroyed but **deformed**: the compact $\mathfrak{so}(4)$ of the bound Kepler problem becomes a symmetry whose generator acquires a state-dependent phase, and the parameter of the deformation is $\kappa^2/(c^2L^2)$, the same parameter that sets the precession.
+What survives is a rotating-frame quantity: the vector constructed from the conic in the $(r,\varphi)$ plane has a fixed direction in that plane, and in the physical plane it rotates by $\Delta$ per revolution. The hidden symmetry of the non-relativistic problem is thus not destroyed but **deformed**: the compact $\mathrm{SO}(4)$ of the bound Kepler problem becomes a symmetry whose generator acquires a state-dependent phase, and the parameter of the deformation is $\kappa^2/(c^2L^2)$, the same parameter that sets the precession.
 
 ## The Algebraic Reading
 
@@ -306,7 +306,7 @@ What survives is a rotating-frame quantity: the vector constructed from the coni
 
 **The angular momentum is a product.** The vector part of $\mathbf{r}\mathbf{p}$ is $\mathbf{L}$, and the algebra's single multiplication supplies the dot and cross products together.
 
-**The orbit equation is a norm-form identity.** The starting point of the derivation, $(E-V)^2-m^2c^4=c^2L^2(u'^2+u^2)$, is the mass-shell relation written with the radial decomposition, and the mass shell is the norm form of the four-momentum. The relativistic Binet equation is therefore a consequence of the norm form, and the frequency $\omega^2=1-\kappa^2/(c^2L^2)$ is a ratio of the squared coupling to the norm form of the angular momentum. Both are central scalars, and the algebra supplies them.
+**The orbit equation is a biquaternion-norm identity.** The starting point of the derivation, $(E-V)^2-m^2c^4=c^2L^2(u'^2+u^2)$, is the mass-shell relation written with the radial decomposition, and the mass shell is the biquaternion norm of the four-momentum. The relativistic Binet equation is therefore a consequence of the biquaternion norm, and the frequency $\omega^2=1-\kappa^2/(c^2L^2)$ is a ratio of the squared coupling to the biquaternion norm of the angular momentum. Both are central scalars, and the algebra supplies them.
 
 ### What the Algebra Does Not Contain
 
@@ -370,7 +370,7 @@ $$
 
 and is stable. Bound orbits require $L>\kappa/c$ and $mc^2\omega\leq E<mc^2$; the angular-momentum threshold is a relativistic centrifugal barrier with no non-relativistic counterpart, below which the particle falls into the centre.
 
-In the limit $c\to\infty$ the frequency tends to unity, the orbit becomes the conic of the non-relativistic companion articles, the precession vanishes, and the barrier condition becomes vacuous. The algebra supplies the central force, the product form of $\mathbf{L}$ and the norm-form content of the orbit equation; it does not supply the phase space, the reciprocal length, or the dynamical origin of $\kappa$. The hidden symmetry of the non-relativistic problem is deformed rather than broken: the orbit remains a conic in the rotating frame, the Runge–Lenz vector is replaced by a rotating-frame quantity whose direction advances by $\Delta$ per revolution, and the deformation parameter is the precession parameter $\kappa^2/(c^2L^2)$.
+In the limit $c\to\infty$ the frequency tends to unity, the orbit becomes the conic of the non-relativistic companion articles, the precession vanishes, and the barrier condition becomes vacuous. The algebra supplies the central force, the product form of $\mathbf{L}$ and the biquaternion-norm content of the orbit equation; it does not supply the phase space, the reciprocal length, or the dynamical origin of $\kappa$. The hidden symmetry of the non-relativistic problem is deformed rather than broken: the orbit remains a conic in the rotating frame, the Runge–Lenz vector is replaced by a rotating-frame quantity whose direction advances by $\Delta$ per revolution, and the deformation parameter is the precession parameter $\kappa^2/(c^2L^2)$.
 
 ## Summary of Notation
 
@@ -409,5 +409,5 @@ In the limit $c\to\infty$ the frequency tends to unity, the orbit becomes the co
 - E. T. Whittaker, *A Treatise on the Analytical Dynamics of Particles and Rigid Bodies* (Cambridge, 1937), for Binet's equation and the orbit integration.
 - V. Fock, "Zur Theorie des Wasserstoffatoms," *Zeitschrift für Physik* **98** (1935) 145–154, for the symmetry of the inverse-square problem and its relativistic deformation.
 - W. Lenz, "Über den Bewegungsverlauf und die Quantenzustände der gestörten Keplerbewegung," *Zeitschrift für Physik* **24** (1924) 197–207, for the conserved vector of the Kepler problem.
-- Chris Doran and Anthony Lasenby, *Geometric Algebra for Physicists* (Cambridge, 2003), for the rotor and norm-form treatment of relativistic central motion.
+- Chris Doran and Anthony Lasenby, *Geometric Algebra for Physicists* (Cambridge, 2003), for the rotor and biquaternion-norm treatment of relativistic central motion.
 - David Hestenes, *Space-Time Algebra* (Gordon and Breach, 1966), for the geometric-algebra formulation of relativistic orbital mechanics.

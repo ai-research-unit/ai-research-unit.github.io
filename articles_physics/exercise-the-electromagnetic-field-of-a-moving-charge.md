@@ -10,7 +10,7 @@ $$
 \qquad
 \bar{\tilde{\nabla}} = e_0\,\partial_{ict} - e_1\partial_x - e_2\partial_y - e_3\partial_z,
 $$
-with $\partial_{ict} = -\frac{i}{c}\partial_t$ and $\Box = \tilde{\nabla}\bar{\tilde{\nabla}} = \partial_{ict}^2 + \Delta$; the field-strength biquaternion $\tilde{F} = i\sqrt{\epsilon}\,\mathbf{E} - \sqrt{\mu}\,\mathbf{H}$ (pure vector), the potential $\tilde{A} = \frac{i\phi}{c}e_0 + \mathbf{A}$, and the source $\tilde{R} = \frac{i\rho}{\sqrt{\epsilon}}e_0 + \sqrt{\mu}\,\mathbf{J}$. The permittivity and permeability $\epsilon,\mu$ with $c = 1/\sqrt{\epsilon\mu}$ and vacuum value $c_0$, and $\mathbf{H} = \mathbf{B}/\mu$. The norm form $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$, the quaternion conjugate $\bar{\tilde{Q}}$, and the trace formula $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ of the shared notation. The charge $q$ moves on the worldline $\mathbf{x}_q(t)$, with coordinate velocity $\mathbf{v}(t) = d\mathbf{x}_q/dt$, $\boldsymbol{\beta} = \mathbf{v}/c$, and acceleration $\dot{\mathbf{v}} = d\mathbf{v}/dt$; all source quantities in the retarded formulas are evaluated at the retarded time. No object of the informational sector arises below, so $\mathbb{M}_+$, the rotors, and the trace formula are recorded but used only where the boost rotor is invoked in Problem 5.
+with $\partial_{ict} = -\frac{i}{c}\partial_t$ and $\Box = \tilde{\nabla}\bar{\tilde{\nabla}} = \partial_{ict}^2 + \Delta$; the field-strength biquaternion $\tilde{F} = i\sqrt{\epsilon}\,\mathbf{E} - \sqrt{\mu}\,\mathbf{H}$ (pure vector), the potential $\tilde{A} = \frac{i\phi}{c}e_0 + \mathbf{A}$, and the source $\tilde{R} = \frac{i\rho}{\sqrt{\epsilon}}e_0 + \sqrt{\mu}\,\mathbf{J}$. The permittivity and permeability $\epsilon,\mu$ with $c = 1/\sqrt{\epsilon\mu}$ and vacuum value $c_0$, and $\mathbf{H} = \mathbf{B}/\mu$. The biquaternion norm $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$, the quaternion conjugate $\bar{\tilde{Q}}$, and the trace formula $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ of the shared notation. The charge $q$ moves on the worldline $\mathbf{x}_q(t)$, with coordinate velocity $\mathbf{v}(t) = d\mathbf{x}_q/dt$, $\boldsymbol{\beta} = \mathbf{v}/c$, and acceleration $\dot{\mathbf{v}} = d\mathbf{v}/dt$; all source quantities in the retarded formulas are evaluated at the retarded time. No object of the informational sector arises below, so $\mathbb{M}_+$, the rotors, and the trace formula are recorded but used only where the boost rotor is invoked in Problem 5.
 
 **What is to be shown.** Problem 1 derives the retarded time and its two derivatives, distinguishes the field point from the source point at retarded time, and assembles the Liénard–Wiechert potential as a single biquaternion. Problem 2 performs the differentiation $\tilde{F} = \bar{\tilde{\nabla}}\tilde{A}$ and exhibits the exact split of the field into a part independent of $\dot{\boldsymbol{\beta}}$ and a part linear in $\dot{\boldsymbol{\beta}}$. Problem 3 treats the velocity field, Problem 4 the acceleration field, and each verifies its falloff law ($1/R^2$ and $1/R$) by recomputation rather than assertion. Problem 5 fixes the boost-rotor direction convention and establishes how the *field* transforms under a boost, which is not the four-vector rule. Problem 6 checks the retarded denominator $\kappa = 1-\hat{\mathbf{R}}\cdot\boldsymbol{\beta}$ and the charge sign on two independent cases, uniform motion and motion with nonzero acceleration.
 
@@ -231,7 +231,7 @@ I_{1,v} = \left(\frac{q}{4\pi\epsilon}\,\frac{1-\beta^2}{\kappa^2 R^2}\right)^{\
 \qquad
 I_{2,v} = \mathbf{E}_v\cdot\mathbf{B}_v = 0 .
 $$
-The velocity field is therefore of electric type, with a nonzero longitudinal component: it is *not* a radiation field. In the biquaternion norm form, $N(\tilde{F}_v) = -\epsilon\,I_{1,v} \ne 0$, so $\tilde{F}_v$ is not a zero divisor and $\tilde{F}_v^2 \ne 0$. Numerically, $I_{1,v}$ agreed with $(\hat{\mathbf{R}}\cdot\mathbf{E}_v)^2$ to $10^{-16}$ relative, $I_{2,v}$ vanished to $10^{-20}$, and $N(\tilde{F}_v) = -\epsilon I_{1,v}$ with positive $I_{1,v}$.
+The velocity field is therefore of electric type, with a nonzero longitudinal component: it is *not* a radiation field. In the biquaternion norm, $N(\tilde{F}_v) = -\epsilon\,I_{1,v} \ne 0$, so $\tilde{F}_v$ is not a zero divisor and $\tilde{F}_v^2 \ne 0$. Numerically, $I_{1,v}$ agreed with $(\hat{\mathbf{R}}\cdot\mathbf{E}_v)^2$ to $10^{-16}$ relative, $I_{2,v}$ vanished to $10^{-20}$, and $N(\tilde{F}_v) = -\epsilon I_{1,v}$ with positive $I_{1,v}$.
 
 **Solution (c).** At $\boldsymbol{\beta} = 0$ one has $\kappa = 1$, and
 $$
@@ -261,7 +261,7 @@ I_{1,a} = \mathbf{E}_a^2 - c^2\mathbf{B}_a^2 = 0,
 \qquad
 I_{2,a} = \mathbf{E}_a\cdot\mathbf{B}_a = 0 .
 $$
-The acceleration field is null. In the biquaternion norm form $N(\tilde{F}_a) = -\epsilon(I_{1,a}+2icI_{2,a}) = 0$, and for a pure vector with vanishing norm form $\tilde{F}_a^2 = -\mathbf{F}_a\cdot\mathbf{F}_a = -N(\tilde{F}_a)$, so
+The acceleration field is null. In the biquaternion norm $N(\tilde{F}_a) = -\epsilon(I_{1,a}+2icI_{2,a}) = 0$, and for a pure vector with vanishing biquaternion norm $\tilde{F}_a^2 = -\mathbf{F}_a\cdot\mathbf{F}_a = -N(\tilde{F}_a)$, so
 $$
 \tilde{F}_a^2 = 0 .
 $$
@@ -356,7 +356,7 @@ again with $|D-R\kappa| = 0$ and the field identity holding to $7\times10^{-12}$
 
 **4. The caustic and the superluminal case.** Determine the locus $\kappa = 0$ for a specified accelerated worldline, show that the retarded-time equation has a double root there, and describe what a point charge's field does as it is approached. Then ask what, if anything, the biquaternionic form can say about a putative superluminal source.
 
-**5. Radiation reaction and the far zone.** Starting from the far-zone field $\mathbf{E}\to\mathbf{E}_a$, evaluate the Poynting flux through a large sphere and recover the relativistic Larmor power of the parent as the norm form of the four-acceleration. State whether any step requires the velocity field to be neglected or only requires it to be subleading.
+**5. Radiation reaction and the far zone.** Starting from the far-zone field $\mathbf{E}\to\mathbf{E}_a$, evaluate the Poynting flux through a large sphere and recover the relativistic Larmor power of the parent as the biquaternion norm of the four-acceleration. State whether any step requires the velocity field to be neglected or only requires it to be subleading.
 
 **6. The sibling case.** Specialise every result to $\dot{\mathbf{v}} = 0$ and reconstruct the Heaviside ellipsoid field of *Exercise: The Electromagnetic Field of a Uniformly Moving Charge*, including the equivalence with the boosted Coulomb field of Problem 5. Compare the two routes for economy and for the transparency of the sign conventions.
 
@@ -406,7 +406,7 @@ The exercise confirms the parent's field formulas on accelerated worldlines and 
 | $\mathbf{E}_v, \mathbf{E}_a$ | Their electric components; $\mathbf{B} = \frac{1}{c}\hat{\mathbf{R}}\times\mathbf{E}$ |
 | $\tilde{\Lambda}_{\mathbf{u}} = \cosh\frac{\psi_u}{2}+i\sinh\frac{\psi_u}{2}\hat{\mathbf{u}}$ | Boost rotor; carries lab to the frame moving with $+\mathbf{u}$ |
 | $\tilde{F}' = \bar{\tilde{\Lambda}}\tilde{F}\tilde{\Lambda}$ | Boost transformation of the field (similarity, not conjugation) |
-| $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$ | Norm form |
+| $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$ | Biquaternion norm |
 | $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ | Trace formula |
 
 ## Further Reading
@@ -414,10 +414,10 @@ The exercise confirms the parent's field formulas on accelerated worldlines and 
 The further reading of this exercise is the parent and companion articles of this series, all present in `articles_physics/`; the standard textbook references for the Liénard–Wiechert field are listed in the Further Reading section of the parent article.
 
 - *Introduction to the Biquaternion Universe* — the algebra, the two sectors, and the local complex structure.
-- *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector* — the four-vectors, the norm form, and the zero-divisor cone on which the null retarded separation sits.
+- *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector* — the four-vectors, the biquaternion norm, and the zero-divisor cone on which the null retarded separation sits.
 - *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector* — the Hermitian subspace, the conjugation action, and the trace formula.
 - *Maxwell's Equations in the Biquaternionic Formulation* — the gradient, the field strength, the potential and source, and the retarded solution.
-- *The Field-Strength Biquaternion and Its Invariants* — the norm form, the invariants $I_1,I_2$, and the null/zero-divisor characterization of radiation.
+- *The Field-Strength Biquaternion and Its Invariants* — the biquaternion norm, the invariants $I_1,I_2$, and the null/zero-divisor characterization of radiation.
 - *Radiation from Accelerated Charges in Biquaternionic Form* — the direct parent: the Liénard–Wiechert potential, the field split, and the radiated power evaluated here.
 - *The Lorentz Transformation as a Biquaternionic Rotation* — the boost rotor, its direction convention, and the open question on higher-rank tensors used in Problem 5.
 - *Exercise: Boosting a Four-Velocity and Rapidity Composition* — the convention that the rotor with $+\mathbf{u}$ carries the lab to the moving frame.

@@ -83,7 +83,7 @@ A **localization** inverts a chosen set of elements and is universal among rings
 |---|---|---|
 | Localization $S^{-1}R$ | the universal ring in which every element of $S$ becomes a unit | *Localization and the Fraction Field* |
 | Fraction field $\operatorname{Frac}(R)$ | the initial field in which an integral domain embeds | *Localization and the Fraction Field* |
-| Local ring $R_\mathfrak{p}$ | the localization at a prime ideal, with a single maximal ideal | *Localization and the Fraction Field* |
+| Local ring $R_\mathrm{P}$ | the localization at a prime ideal, with a single maximal ideal | *Localization and the Fraction Field* |
 | Localization of a module $S^{-1}M$ | the universal module over $S^{-1}R$ receiving $M$ | *Localization and Completion of Modules* |
 | Total ring of fractions | the localization inverting the nonzero non-zero-divisors | *Localization and the Fraction Field* |
 | Division ring of fractions of an Ore domain | the non-commutative analogue of the fraction field | *Ore Domains and Division Rings of Fractions* |
@@ -98,7 +98,7 @@ A **completion** is the universal complete object into which the given object em
 |---|---|---|
 | $I$-adic completion $\hat A = \varprojlim A/I^k$ | the universal complete ring receiving $A$ | *Localization and Completion of Modules* |
 | Formal power series algebra $R[[x_1,\dots,x_n]]$ | the $I$-adic completion of the polynomial algebra | *Formal Power Series and Completion* |
-| Associated graded algebra $\operatorname{gr}_{\mathfrak m} A$ | the graded object attached to an $I$-adic filtration | *Formal Power Series and Completion* |
+| Associated graded algebra $\operatorname{gr}_{\mathrm{M}} A$ | the graded object attached to an $I$-adic filtration | *Formal Power Series and Completion* |
 | Metric completion | the universal complete metric space receiving a metric space | *Metric, Uniform and Complete Spaces* |
 | Profinite completion | the inverse limit of the finite quotients, universal among profinite groups | *Profinite Groups and the Krull Topology* |
 | Dedekind completion | the universal complete ordered field extension of an ordered field | *Real-Closed and Complete Ordered Fields* |
@@ -124,7 +124,7 @@ The article denotes its objects by name; the symbols appearing in the tables are
 | $A \sqcup B$, $A \otimes_C B$ | free product and pushout of algebras |
 | $S^{-1}R$, $S^{-1}M$ | localizations of a ring and of a module |
 | $\operatorname{Frac}(R)$ | fraction field |
-| $R_\mathfrak{p}$ | localization at a prime ideal |
+| $R_\mathrm{P}$ | localization at a prime ideal |
 | $\hat A = \varprojlim A/I^k$ | $I$-adic completion |
 | $R[[x_1,\dots,x_n]]$ | formal power series algebra |
 | $\bigoplus_i M_i$, $\prod_i M_i$ | direct sum and direct product |

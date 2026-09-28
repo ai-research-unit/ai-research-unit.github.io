@@ -23,21 +23,21 @@ $$
 (AaA)(AbA) \subseteq A(aAb)A ,
 $$
 
-so $aAb \neq 0$ and there is $x$ with $axb \neq 0$. Conversely, suppose the displayed property holds, let $I, J$ be nonzero ideals and choose $a \in I$, $b \in J$ nonzero. Then $axb \in IJ$ for every $x \in A$, and $axb \neq 0$ for some $x$, so $IJ \neq 0$. $\square$
+so $aAb \neq 0$ and there is $x$ with $axb \neq 0$. Conversely, suppose the displayed property holds, let $I, J$ be nonzero ideals and choose $a \in I$, $b \in J$ nonzero. Then $axb \in IJ$ for every $x \in A$, and $axb \neq 0$ for some $x$, so $IJ \neq 0$.
 
 **Corollary.** A ring in which a product of nonzero elements is nonzero is prime. In particular every ring with no zero divisors is prime, in the commutative and in the general case; the classes themselves are *Integral Domains*, above this article in this category, and *Non-Commutative Domains*, below it.
 
-**Proof.** If $ab \neq 0$ for all nonzero $a$ and $b$, take $x = 1$ in the criterion. $\square$
+**Proof.** If $ab \neq 0$ for all nonzero $a$ and $b$, take $x = 1$ in the criterion.
 
 **Theorem.** Every prime ring is semiprime.
 
-**Proof.** If $A$ is prime and $I \neq 0$ satisfies $I^2 = 0$, then the product of the two nonzero ideals $I$ and $I$ is zero, which contradicts primeness. $\square$
+**Proof.** If $A$ is prime and $I \neq 0$ satisfies $I^2 = 0$, then the product of the two nonzero ideals $I$ and $I$ is zero, which contradicts primeness.
 
 The converse fails, and the standard witness is a product of two rings.
 
 **Proposition.** A direct product $A_1 \times A_2$ of nonzero rings is not prime, while it is semiprime exactly when both factors are semiprime.
 
-**Proof.** The ideals $I = A_1 \times (0)$ and $J = (0) \times A_2$ are nonzero and $IJ = 0$, so the product is not prime. An ideal of a product has square zero exactly when both of its projections do, by the characterisation of the semiprime rings in *Semiprime Rings*, above. $\square$
+**Proof.** The ideals $I = A_1 \times (0)$ and $J = (0) \times A_2$ are nonzero and $IJ = 0$, so the product is not prime. An ideal of a product has square zero exactly when both of its projections do, by the characterisation of the semiprime rings in *Semiprime Rings*, above.
 
 **Example.** The ring $k \times k$ is semiprime and not prime, and the matrix ring $M_n(F)$ is prime and contains the nonzero nilpotent element $E_{12}$ for $n \geq 2$, so a prime ring need not be reduced; the two conditions of the pair are ordered as
 
@@ -55,21 +55,21 @@ and each implication is strict in the non-commutative case, the first witnessed 
 
 **Theorem.** Let $P \subsetneq A$ be two-sided. Then $P$ is prime if and only if the quotient ring $A/P$ is prime.
 
-**Proof.** By the correspondence theorem of *Rings*, above, the two-sided ideals of $A/P$ are exactly the $\pi(I)$ for ideals $I$ of $A$ containing $P$, and $\pi(I)\pi(J) = \pi(IJ)$. Hence $A/P$ has nonzero ideals with zero product exactly when there are ideals $I, J \not\subseteq P$ with $IJ \subseteq P$, that is, exactly when $P$ is not prime. $\square$
+**Proof.** By the correspondence theorem of *Rings*, above, the two-sided ideals of $A/P$ are exactly the $\pi(I)$ for ideals $I$ of $A$ containing $P$, and $\pi(I)\pi(J) = \pi(IJ)$. Hence $A/P$ has nonzero ideals with zero product exactly when there are ideals $I, J \not\subseteq P$ with $IJ \subseteq P$, that is, exactly when $P$ is not prime.
 
 **Theorem.** A proper two-sided ideal $P$ is prime if and only if for all $a, b \notin P$ there is $x \in A$ with $axb \notin P$.
 
-**Proof.** Apply the criterion for a prime ring to the quotient $A/P$: the elements outside $P$ are exactly the nonzero elements of the quotient. $\square$
+**Proof.** Apply the criterion for a prime ring to the quotient $A/P$: the elements outside $P$ are exactly the nonzero elements of the quotient.
 
 **Corollary.** The zero ideal $(0)$ is prime if and only if $A$ is prime; and a ring with no zero divisors has $(0)$ prime.
 
-**Proof.** The first statement is the definition with $P = (0)$; the second follows from the corollary of the criterion above. $\square$
+**Proof.** The first statement is the definition with $P = (0)$; the second follows from the corollary of the criterion above.
 
 **Remark.** The commutative case is the familiar one: if $A$ is commutative, $P$ is prime exactly when $ab \in P$ implies $a \in P$ or $b \in P$, and $A/P$ is then a domain, in the terminology of *Integral Domains*, above this article in this category. In the general case the second half of that statement is false, and the next section shows how.
 
 **Proposition.** Let $I \trianglelefteq A$. Then the prime ideals of $A/I$ are exactly the ideals $P/I$ with $P$ a prime ideal of $A$ containing $I$.
 
-**Proof.** The correspondence theorem of *Rings*, above, gives the bijection between the ideals of $A/I$ and the ideals of $A$ containing $I$, and it preserves products, so $P$ is prime exactly when $P/I$ is. The case $I = P$ gives the criterion for a ring to be prime in terms of its zero ideal. $\square$
+**Proof.** The correspondence theorem of *Rings*, above, gives the bijection between the ideals of $A/I$ and the ideals of $A$ containing $I$, and it preserves products, so $P$ is prime exactly when $P/I$ is. The case $I = P$ gives the criterion for a ring to be prime in terms of its zero ideal.
 
 ### Minimal Primes
 
@@ -79,17 +79,17 @@ and each implication is strict in the non-commutative case, the first witnessed 
 
 **Proof.** Let $P_{\lambda}$ be a chain of prime ideals under inclusion and let $I, J$ be two-sided ideals with $IJ \subseteq \bigcap_{\lambda} P_{\lambda}$, so that for every $\lambda$ we have $I \subseteq P_{\lambda}$ or $J \subseteq P_{\lambda}$. Suppose neither $I$ nor $J$ is contained in the intersection, and choose $\mu$ with $I \not\subseteq P_{\mu}$ and $\nu$ with $J \not\subseteq P_{\nu}$; then $J \subseteq P_{\mu}$ and $I \subseteq P_{\nu}$. Since the family is a chain, one of $P_{\mu}, P_{\nu}$ contains the other. If $P_{\mu} \subseteq P_{\nu}$ then $J \subseteq P_{\mu} \subseteq P_{\nu}$, contradicting $J \not\subseteq P_{\nu}$; if $P_{\nu} \subseteq P_{\mu}$ then $I \subseteq P_{\nu} \subseteq P_{\mu}$, contradicting $I \not\subseteq P_{\mu}$. Hence the intersection of a chain of prime ideals is prime.
 
-Zorn's lemma applied to the prime ideals *contained in* a given prime ideal, ordered by reverse inclusion, now produces one minimal among them: a chain in this order is a descending chain of primes, its intersection is prime by the argument just given, and it lies below the given prime. Hence every prime ideal contains a minimal prime. The intersection of the minimal primes is contained in every prime, hence in $\operatorname{Nil}_*(A)$; and it contains $\operatorname{Nil}_*(A)$, which lies in every prime ideal. The two intersections therefore coincide. $\square$
+Zorn's lemma applied to the prime ideals *contained in* a given prime ideal, ordered by reverse inclusion, now produces one minimal among them: a chain in this order is a descending chain of primes, its intersection is prime by the argument just given, and it lies below the given prime. Hence every prime ideal contains a minimal prime. The intersection of the minimal primes is contained in every prime, hence in $\operatorname{Nil}_*(A)$; and it contains $\operatorname{Nil}_*(A)$, which lies in every prime ideal. The two intersections therefore coincide.
 
 **Corollary.** $\operatorname{Nil}_*(A)$ is the intersection of the minimal prime ideals, and $A$ is semiprime exactly when its minimal primes intersect in zero.
 
-**Proof.** The first statement is the theorem; the second is the criterion $\operatorname{Nil}_*(A) = 0$ of *Semiprime Rings*, above. $\square$
+**Proof.** The first statement is the theorem; the second is the criterion $\operatorname{Nil}_*(A) = 0$ of *Semiprime Rings*, above.
 
 ### The Failure of the Commutative Correspondence
 
 **Theorem.** If $A/P$ has no zero divisors then $P$ is prime; the converse fails, and the failure is total: there are prime ideals whose quotients have as many zero divisors as a matrix ring.
 
-**Proof.** If $A/P$ has no zero divisors then it is prime, by the corollary above, hence $P$ is prime. For the failure, take $A = M_n(F)$ with $n \geq 2$ and $P = (0)$: the ring is prime, by the example below, while $E_{12} \neq 0$ and $E_{12}^2 = 0$ show that it has zero divisors. $\square$
+**Proof.** If $A/P$ has no zero divisors then it is prime, by the corollary above, hence $P$ is prime. For the failure, take $A = M_n(F)$ with $n \geq 2$ and $P = (0)$: the ring is prime, by the example below, while $E_{12} \neq 0$ and $E_{12}^2 = 0$ show that it has zero divisors.
 
 **Example ($M_n(F)$).** The only two-sided ideals of $M_n(F)$ are $(0)$ and the whole ring, by *Rings*, above. Hence the product of two nonzero ideals is the whole ring, which is nonzero, so $M_n(F)$ is prime for every $n \geq 1$, and for $n = 1$ it is the field $F$. For $n \geq 2$ it has zero divisors and nonzero nilpotent elements, so it is prime, semiprime and not reduced; and $(0)$ is its only proper prime ideal, so $\operatorname{Spec} M_n(F)$ has a single point.
 
@@ -97,11 +97,11 @@ Zorn's lemma applied to the prime ideals *contained in* a given prime ideal, ord
 
 **Theorem.** Let $S$ be a ring and $n \geq 1$. Then the matrix ring $M_n(S)$ is prime if and only if $S$ is prime.
 
-**Proof.** Every two-sided ideal of $M_n(S)$ has the form $M_n(I)$ for a two-sided ideal $I \trianglelefteq S$, and $M_n(I)M_n(J) = M_n(IJ)$: the containment $M_n(I)M_n(J) \subseteq M_n(IJ)$ is immediate from the definition of the matrix product, the entries of a product of a matrix over $I$ and a matrix over $J$ being sums of products $uv$ with $u \in I$ and $v \in J$, and the reverse containment follows from $E_{i1} M E_{1j}$ picking out the $(i,j)$ entry of a matrix $M$. Hence $M_n(I)M_n(J) = 0$ if and only if $IJ = 0$, so $M_n(S)$ has two nonzero ideals with zero product exactly when $S$ does. $\square$
+**Proof.** Every two-sided ideal of $M_n(S)$ has the form $M_n(I)$ for a two-sided ideal $I \trianglelefteq S$, and $M_n(I)M_n(J) = M_n(IJ)$: the containment $M_n(I)M_n(J) \subseteq M_n(IJ)$ is immediate from the definition of the matrix product, the entries of a product of a matrix over $I$ and a matrix over $J$ being sums of products $uv$ with $u \in I$ and $v \in J$, and the reverse containment follows from $E_{i1} M E_{1j}$ picking out the $(i,j)$ entry of a matrix $M$. Hence $M_n(I)M_n(J) = 0$ if and only if $IJ = 0$, so $M_n(S)$ has two nonzero ideals with zero product exactly when $S$ does.
 
 **Corollary.** $M_n(S)$ is semiprime if and only if $S$ is semiprime, and $M_n(S)$ has no zero divisors only when $n = 1$.
 
-**Proof.** The first statement repeats the proof above with $I = J$; the second is the computation $E_{12}E_{12} = 0$ for $n \geq 2$. $\square$
+**Proof.** The first statement repeats the proof above with $I = J$; the second is the computation $E_{12}E_{12} = 0$ for $n \geq 2$.
 
 **Remark.** Two further differences from the commutative case are worth recording. First, in the commutative case a proper ideal is maximal exactly when its quotient is a field, so that maximal ideals are prime; in the general case a maximal two-sided ideal is prime, by *Rings*, above, but its quotient only has no nonzero proper two-sided ideals, and $M_n(F)$ is the quotient of itself by $(0)$ and shows that this is weaker than being a field. Second, the intersection of the prime ideals is the lower nilradical of *Semiprime Rings*, above, whose computation in the non-commutative case uses the strong nilpotence of that article and not the elementwise nilpotence of the commutative case.
 
@@ -117,11 +117,11 @@ $$
 (AzA)(AwA) \subseteq A(zAw)A \subseteq AzwA = 0 .
 $$
 
-Since $A$ is prime, one of the two ideals is zero, and an ideal generated by a central element is zero only when that element is zero: hence $z = 0$ or $w = 0$. $\square$
+Since $A$ is prime, one of the two ideals is zero, and an ideal generated by a central element is zero only when that element is zero: hence $z = 0$ or $w = 0$.
 
 **Corollary.** If $A$ is prime then $Z(A)$ is an integral domain, and $A$ is an algebra over the field $Z(A)$ when $Z(A)$ is a field. The centre of a prime ring and the structure of a division ring over its centre are taken up in *Division Rings*, below this article in this category.
 
-**Proof.** The centre is a commutative ring with no zero divisors by the proposition, and it is a field exactly when every nonzero central element is invertible in $A$; the algebra structure is the multiplication by central elements. $\square$
+**Proof.** The centre is a commutative ring with no zero divisors by the proposition, and it is a field exactly when every nonzero central element is invertible in $A$; the algebra structure is the multiplication by central elements.
 
 **Example.** For $A = M_n(F)$ the centre is the ring of scalar matrices, isomorphic to $F$, and it is a field. For a commutative domain $R$, the centre is $R$ itself.
 

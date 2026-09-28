@@ -23,7 +23,7 @@ $$
 
 with the two classes represented by $\mathbb{R}$ and by $\mathbb{H}$. The class of $\mathbb{C}$ is not defined, because $\mathbb{C}$ is not central over $\mathbb{R}$.
 
-**Proof.** Associativity and the unit are those of the tensor product; the inverse of the class of $A=M_n(D)$ is the class of the opposite algebra $A^{\mathrm{op}}$, since $A\otimes A^{\mathrm{op}}\cong M_{n^2}(F)$ is Morita trivial. The classification over $\mathbb{R}$ is the Frobenius–Wedderburn theorem: the finite-dimensional real division algebras are $\mathbb{R}$, $\mathbb{C}$ and $\mathbb{H}$, and only $\mathbb{R}$ and $\mathbb{H}$ are central over $\mathbb{R}$. $\square$
+**Proof.** Associativity and the unit are those of the tensor product; the inverse of the class of $A=M_n(D)$ is the class of the opposite algebra $A^{\mathrm{op}}$, since $A\otimes A^{\mathrm{op}}\cong M_{n^2}(F)$ is Morita trivial. The classification over $\mathbb{R}$ is the Frobenius–Wedderburn theorem: the finite-dimensional real division algebras are $\mathbb{R}$, $\mathbb{C}$ and $\mathbb{H}$, and only $\mathbb{R}$ and $\mathbb{H}$ are central over $\mathbb{R}$.
 
 The Brauer group is the right home for the *ungraded* Clifford algebra: an even-dimensional non-degenerate Clifford algebra is central simple, and its Morita class depends on the discriminant and the Hasse invariant of the form. But it discards the $\mathbb{Z}/2$-grading, and the grading is what the spin representations use. Refining the Brauer group by the grading is therefore necessary.
 
@@ -41,7 +41,7 @@ A Clifford algebra is the model example: $\mathrm{Cl}(V,q)$ is graded central si
 
 **Proposition.** $\mathrm{BW}(F)$ is an abelian group, and it contains a copy of $\mathrm{Br}(F)$, namely the subgroup of classes of the trivially graded central simple algebras. The classes of the non-degenerate Clifford algebras are elements of $\mathrm{BW}(F)$.
 
-**Proof.** The graded tensor product is associative and commutative up to a canonical graded isomorphism — the sign in the product only affects the isomorphism, not the graded Morita class — and it has the unit $F$. Inverses exist by the graded analogue of the opposite-algebra argument. A trivially graded algebra is graded central simple exactly when it is central simple, and the graded tensor product of two trivially graded algebras is their ordinary tensor product, so the trivially graded classes form a subgroup isomorphic to $\mathrm{Br}(F)$. The Clifford class map is well defined on graded Morita classes because a non-degenerate Clifford algebra is graded central simple. $\square$
+**Proof.** The graded tensor product is associative and commutative up to a canonical graded isomorphism — the sign in the product only affects the isomorphism, not the graded Morita class — and it has the unit $F$. Inverses exist by the graded analogue of the opposite-algebra argument. A trivially graded algebra is graded central simple exactly when it is central simple, and the graded tensor product of two trivially graded algebras is their ordinary tensor product, so the trivially graded classes form a subgroup isomorphic to $\mathrm{Br}(F)$. The Clifford class map is well defined on graded Morita classes because a non-degenerate Clifford algebra is graded central simple.
 
 **Remark.** The difference between $\mathrm{Br}$ and $\mathrm{BW}$ is not merely bookkeeping. Neither $\mathbb{C}$ nor $\mathbb{D}$ is central simple over $\mathbb{R}$ — the center of $\mathbb{C}$ is $\mathbb{C}$ itself, and $\mathbb{D}=\mathbb{R}\times\mathbb{R}$ is a product of two fields — yet $\mathrm{Cl}_{0,1}=\mathbb{C}$ and $\mathrm{Cl}_{1,0}=\mathbb{D}$ are perfectly good graded central simple real algebras; the grading remembers the odd generator that the ungraded structure forgets. This is why the graded group is cyclic of order eight while the ungraded one is of order two.
 
@@ -57,13 +57,13 @@ $$
 
 from the Witt group of non-degenerate quadratic forms over $F$ to the Brauer–Wall group.
 
-**Proof.** Orthogonal sums of forms give graded tensor products of their Clifford algebras, so the assignment is additive; the hyperbolic plane has the form $\operatorname{diag}(+1,-1)$ and Clifford algebra $\mathrm{Cl}_{1,1}\cong M_2(F)$, which is graded Morita trivial since it is a full matrix algebra and the module category is unchanged. By Witt cancellation, any two forms that represent the same element of $W(F)$ differ by hyperbolic planes, and therefore have graded Morita equivalent Clifford algebras. $\square$
+**Proof.** Orthogonal sums of forms give graded tensor products of their Clifford algebras, so the assignment is additive; the hyperbolic plane has the form $\operatorname{diag}(+1,-1)$ and Clifford algebra $\mathrm{Cl}_{1,1}\cong M_2(F)$, which is graded Morita trivial since it is a full matrix algebra and the module category is unchanged. By Witt cancellation, any two forms that represent the same element of $W(F)$ differ by hyperbolic planes, and therefore have graded Morita equivalent Clifford algebras.
 
 So the classification of Clifford algebras is a specialisation of the classification of elements of $\mathrm{BW}(F)$, and the eightfold structure of the previous article is the structure of the subgroup generated by the one-dimensional forms.
 
 **Lemma.** Let $q$ be a one-dimensional non-degenerate form over a field $F$ of characteristic not two, $q(x)=ax^{2}$ with $a\in F^{\times}$, and let $\mathrm{Cl}(q)=F[t]/(t^{2}-a)$ be its Clifford algebra. The graded Morita class $[\mathrm{Cl}(q)]\in\mathrm{BW}(F)$ depends only on the square class $aF^{\times2}$.
 
-**Proof.** Two forms $ax^{2}$ and $bx^{2}$ with $b=ac^{2}$ are isometric by the linear substitution $x\mapsto cx$, hence have isomorphic Clifford algebras, and the graded Morita class depends only on the isomorphism class. $\square$
+**Proof.** Two forms $ax^{2}$ and $bx^{2}$ with $b=ac^{2}$ are isometric by the linear substitution $x\mapsto cx$, hence have isomorphic Clifford algebras, and the graded Morita class depends only on the isomorphism class.
 
 **Remark.** The assignment $\langle a\rangle\mapsto[\mathrm{Cl}(q_a)]$ is additive on the free abelian group generated by the square classes — the orthogonal sum $\langle a\rangle\perp\langle b\rangle$ has Clifford algebra the graded tensor product $\mathrm{Cl}(q_a)\hat\otimes\mathrm{Cl}(q_b)$, whose class is the sum — and it descends to the Witt group $W(F)$ because the relation $\langle a\rangle+\langle -a\rangle=0$ in $W(F)$ is matched by $[\mathrm{Cl}(q_a)]+[\mathrm{Cl}(q_{-a})]=0$ in $\mathrm{BW}(F)$; this is the content of the theorem above in the one-dimensional case. It is *not* a function of the product in $F^{\times}/F^{\times2}$: the one-dimensional forms generate $W(F)$ freely modulo the hyperbolic relations, and the product square class is a different quotient.
 
@@ -87,7 +87,7 @@ $$
 \mathrm{Cl}_{0,m}\,\hat{\otimes}\,\mathrm{Cl}_{0,n}\cong \mathrm{Cl}_{0,m+n},
 $$
 
-so the classes of the $\mathrm{Cl}_{0,n}$ form a cyclic group generated by the class of $\mathrm{Cl}_{0,1}=\mathbb{C}$. Finally $\mathrm{Cl}_{0,8}=M_{16}(\mathbb{R})$ is graded Morita trivial, since a full matrix algebra with its standard grading has the same graded module category as $F$ up to the two parity shifts; hence the group is exactly $\mathbb{Z}/8$. Over $\mathbb{C}$ every non-degenerate form is hyperbolic or of dimension one, and $\mathrm{Cl}_1(\mathbb{C})\cong\mathbb{C}\times\mathbb{C}$ has square the trivial class, so the group is $\mathbb{Z}/2$. $\square$
+so the classes of the $\mathrm{Cl}_{0,n}$ form a cyclic group generated by the class of $\mathrm{Cl}_{0,1}=\mathbb{C}$. Finally $\mathrm{Cl}_{0,8}=M_{16}(\mathbb{R})$ is graded Morita trivial, since a full matrix algebra with its standard grading has the same graded module category as $F$ up to the two parity shifts; hence the group is exactly $\mathbb{Z}/8$. Over $\mathbb{C}$ every non-degenerate form is hyperbolic or of dimension one, and $\mathrm{Cl}_1(\mathbb{C})\cong\mathbb{C}\times\mathbb{C}$ has square the trivial class, so the group is $\mathbb{Z}/2$.
 
 **Corollary.** The nine algebras $\mathrm{Cl}_{0,0},\dots,\mathrm{Cl}_{0,8}$ represent the eight classes in order, with $\mathrm{Cl}_{0,8}$ returning to the unit class; and the mixed algebras $\mathrm{Cl}_{p,q}$ represent the same eight classes with the class index $p-q$ modulo eight. The assignment
 
@@ -113,7 +113,7 @@ $$
 
 for $n=0,1,\dots,7$, and then repeat with period eight: $\varepsilon_{n+8}=\varepsilon_n$.
 
-**Proof.** Read the division algebra column from the table of $\mathrm{Cl}_{0,n}$: $\mathrm{Cl}_{0,0}=\mathbb{R}$, $\mathrm{Cl}_{0,1}=\mathbb{C}$, $\mathrm{Cl}_{0,2}=\mathbb{H}$, $\mathrm{Cl}_{0,3}=\mathbb{H}\times\mathbb{H}$, $\mathrm{Cl}_{0,4}=M_2(\mathbb{H})$, $\mathrm{Cl}_{0,5}=M_4(\mathbb{C})$, $\mathrm{Cl}_{0,6}=M_8(\mathbb{R})$, $\mathrm{Cl}_{0,7}=M_8(\mathbb{R})\times M_8(\mathbb{R})$. The type of each is respectively $\mathbb{R},\mathbb{C},\mathbb{H},\mathbb{H},\mathbb{H},\mathbb{C},\mathbb{R},\mathbb{R}$, and period eight is Bott periodicity, $\mathrm{Cl}_{0,n+8}\cong M_{16}(\mathrm{Cl}_{0,n})$, which does not change the division algebra. $\square$
+**Proof.** Read the division algebra column from the table of $\mathrm{Cl}_{0,n}$: $\mathrm{Cl}_{0,0}=\mathbb{R}$, $\mathrm{Cl}_{0,1}=\mathbb{C}$, $\mathrm{Cl}_{0,2}=\mathbb{H}$, $\mathrm{Cl}_{0,3}=\mathbb{H}\times\mathbb{H}$, $\mathrm{Cl}_{0,4}=M_2(\mathbb{H})$, $\mathrm{Cl}_{0,5}=M_4(\mathbb{C})$, $\mathrm{Cl}_{0,6}=M_8(\mathbb{R})$, $\mathrm{Cl}_{0,7}=M_8(\mathbb{R})\times M_8(\mathbb{R})$. The type of each is respectively $\mathbb{R},\mathbb{C},\mathbb{H},\mathbb{H},\mathbb{H},\mathbb{C},\mathbb{R},\mathbb{R}$, and period eight is Bott periodicity, $\mathrm{Cl}_{0,n+8}\cong M_{16}(\mathrm{Cl}_{0,n})$, which does not change the division algebra.
 
 The sequence is the precise form of the statement that spinors are real in dimensions $8k$, $8k+6$ and $8k+7$, complex in dimensions $8k+1$ and $8k+5$, and quaternionic in dimensions $8k+2,8k+3,8k+4$. The sequence for the family $\mathrm{Cl}_{n,0}$ is read from the same cyclic list in reverse, namely $\mathbb{R},\mathbb{R},\mathbb{R},\mathbb{C},\mathbb{H},\mathbb{H},\mathbb{H},\mathbb{C}$ for $n=0,\dots,7$; equivalently the type of $\mathrm{Cl}_{n,0}$ equals the type of $\mathrm{Cl}_{0,8-n}$, so the two definite families are interchanged by the reversal $d\mapsto-d\bmod8$ of the class index, which is the effect of replacing the form by its negative. The two sequences correspond to the same eightfold periodicity read from the two definite signs.
 
@@ -121,24 +121,24 @@ The sequence is the precise form of the statement that spinors are real in dimen
 
 The correspondence between Clifford modules and K-theory makes the eightfold way an instance of topological periodicity.
 
-**Definition.** Let $\mathfrak{M}_n$ denote the Grothendieck group of finite-dimensional $\mathbb{Z}/2$-graded left $\mathrm{Cl}_{0,n}$-modules: the free abelian group on the isomorphism classes of graded modules modulo the additivity relations $[M\oplus N]=[M]+[N]$ and the relation $[\Pi M]=-[M]$, where $\Pi M$ is the same module with the parity of the grading reversed. The direct sum makes $\mathfrak{M}_n$ an abelian group, and the parity shift acts on it by negation.
+**Definition.** Let $\mathrm{M}_n$ denote the Grothendieck group of finite-dimensional $\mathbb{Z}/2$-graded left $\mathrm{Cl}_{0,n}$-modules: the free abelian group on the isomorphism classes of graded modules modulo the additivity relations $[M\oplus N]=[M]+[N]$ and the relation $[\Pi M]=-[M]$, where $\Pi M$ is the same module with the parity of the grading reversed. The direct sum makes $\mathrm{M}_n$ an abelian group, and the parity shift acts on it by negation.
 
 **Theorem (Atiyah–Bott–Shapiro).** For each $n$ there is a natural isomorphism
 
 $$
-\mathfrak{M}_n\cong \mathrm{KO}^{-n}(\mathrm{pt}),
+\mathrm{M}_n\cong \mathrm{KO}^{-n}(\mathrm{pt}),
 $$
 
 and both sides are periodic of period eight:
 
 | $n \bmod 8$ | $0$ | $1$ | $2$ | $3$ | $4$ | $5$ | $6$ | $7$ |
 |---|---|---|---|---|---|---|---|---|
-| $\mathfrak{M}_n\cong\mathrm{KO}^{-n}(\mathrm{pt})$ | $\mathbb{Z}$ | $\mathbb{Z}/2$ | $\mathbb{Z}/2$ | $0$ | $\mathbb{Z}$ | $0$ | $0$ | $0$ |
+| $\mathrm{M}_n\cong\mathrm{KO}^{-n}(\mathrm{pt})$ | $\mathbb{Z}$ | $\mathbb{Z}/2$ | $\mathbb{Z}/2$ | $0$ | $\mathbb{Z}$ | $0$ | $0$ | $0$ |
 | type $\varepsilon_n$ | $\mathbb{R}$ | $\mathbb{C}$ | $\mathbb{H}$ | $\mathbb{H}$ | $\mathbb{H}$ | $\mathbb{C}$ | $\mathbb{R}$ | $\mathbb{R}$ |
 
-**Proof sketch.** The graded module categories of the eight algebras $\mathrm{Cl}_{0,n}$ are read from the eightfold table: the simple graded modules are those of the matrix factors $M_k(D)$ with a compatible grading, the parity shift acts by $[\Pi M]=-[M]$, and carrying out the computation in each of the eight cases gives the row displayed. The coincidence with $\mathrm{KO}^{-n}(\mathrm{pt})$ is the Atiyah–Bott–Shapiro periodicity theorem, which identifies a graded Clifford module with the algebraic model of a real vector bundle with Clifford multiplication over a point. $\square$
+**Proof sketch.** The graded module categories of the eight algebras $\mathrm{Cl}_{0,n}$ are read from the eightfold table: the simple graded modules are those of the matrix factors $M_k(D)$ with a compatible grading, the parity shift acts by $[\Pi M]=-[M]$, and carrying out the computation in each of the eight cases gives the row displayed. The coincidence with $\mathrm{KO}^{-n}(\mathrm{pt})$ is the Atiyah–Bott–Shapiro periodicity theorem, which identifies a graded Clifford module with the algebraic model of a real vector bundle with Clifford multiplication over a point.
 
-**Remark.** The group $\mathfrak{M}_n$ is the Grothendieck group of the graded module category of $\mathrm{Cl}_{0,n}$ with the parity relation $[\Pi M]=-[M]$, and its values are those of the row above: $\mathbb{Z}$ in dimensions $0$ and $4$, where one free generator survives, $\mathbb{Z}/2$ in dimensions $1$ and $2$, and zero in dimensions $3$, $5$, $6$ and $7$. The periodicity $\mathfrak{M}_{n+8}\cong\mathfrak{M}_n$ is Bott periodicity, and the vanishing and the torsion in the middle dimensions come from the extension relations of the graded module category together with the parity relation, read case by case from the eightfold table. The topological consequences — that the KO-groups of a point are of period eight, and that the index of a Clifford-linear elliptic operator is a KO-class — belong to the applications of the category.
+**Remark.** The group $\mathrm{M}_n$ is the Grothendieck group of the graded module category of $\mathrm{Cl}_{0,n}$ with the parity relation $[\Pi M]=-[M]$, and its values are those of the row above: $\mathbb{Z}$ in dimensions $0$ and $4$, where one free generator survives, $\mathbb{Z}/2$ in dimensions $1$ and $2$, and zero in dimensions $3$, $5$, $6$ and $7$. The periodicity $\mathrm{M}_{n+8}\cong\mathrm{M}_n$ is Bott periodicity, and the vanishing and the torsion in the middle dimensions come from the extension relations of the graded module category together with the parity relation, read case by case from the eightfold table. The topological consequences — that the KO-groups of a point are of period eight, and that the index of a Clifford-linear elliptic operator is a KO-class — belong to the applications of the category.
 
 ## Summary
 
@@ -162,7 +162,7 @@ Over $\mathbb{R}$ the Brauer–Wall group is cyclic of order eight, $\mathrm{BW}
 | $\mathrm{Cl}_{0,n}$ | Negative definite Clifford algebra, representatives of the eight classes over $\mathbb{R}$ |
 | $\mathrm{BW}(\mathbb{R})\cong\mathbb{Z}/8$, $\mathrm{BW}(\mathbb{C})\cong\mathbb{Z}/2$ | Wall's computation |
 | $\varepsilon_n$ | Type of the irreducible $\mathrm{Cl}_{0,n}$-module: $\mathbb{R}$, $\mathbb{C}$ or $\mathbb{H}$ |
-| $\mathfrak{M}_n$ | Grothendieck group of graded $\mathrm{Cl}_{0,n}$-modules |
+| $\mathrm{M}_n$ | Grothendieck group of graded $\mathrm{Cl}_{0,n}$-modules |
 | $\mathrm{KO}^{-n}(\mathrm{pt})$ | Real K-theory of a point, periodic of period eight |
 
 ## Further Reading

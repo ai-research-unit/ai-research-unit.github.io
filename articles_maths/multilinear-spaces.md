@@ -47,7 +47,7 @@ Over a ring, the behaviour of multilinear maps on free modules is as rigid as in
 
 **Proposition.** Let $L_j$ be free with basis $B_j$, and let $f:L_1 \times \cdots \times L_n \to P$ be $R$-multilinear. Then $f$ is determined by its values on the tuples $(b_1,\dots,b_n)$ with $b_j \in B_j$, and these values may be prescribed arbitrarily, subject only to the requirement that $f$ be $R$-multilinear.
 
-*Proof.* Every $x \in L_j$ is a finite sum $\sum_e a_e e$ with $a_e \in R$ and $e \in B_j$. Writing out each argument and using additivity and scalar homogeneity in each position expresses $f(x_1,\dots,x_n)$ as a finite sum of terms $a_{e_1}\cdots a_{e_n} f(e_1,\dots,e_n)$. Hence the values on the tuples of basis elements determine $f$. For the converse, given arbitrary elements $p_{(e_1,\dots,e_n)} \in P$, define $f$ by the same finite sum; the resulting map is additive and homogeneous in each variable because the basis expansions are. $\square$
+*Proof.* Every $x \in L_j$ is a finite sum $\sum_e a_e e$ with $a_e \in R$ and $e \in B_j$. Writing out each argument and using additivity and scalar homogeneity in each position expresses $f(x_1,\dots,x_n)$ as a finite sum of terms $a_{e_1}\cdots a_{e_n} f(e_1,\dots,e_n)$. Hence the values on the tuples of basis elements determine $f$. For the converse, given arbitrary elements $p_{(e_1,\dots,e_n)} \in P$, define $f$ by the same finite sum; the resulting map is additive and homogeneous in each variable because the basis expansions are.
 
 **Corollary.** If $L_1,\dots,L_n$ are free of ranks $r_1,\dots,r_n$ then $\operatorname{Mult}_R(L_1,\dots,L_n;P)$ is isomorphic to a direct product of $r_1\cdots r_n$ copies of $P$.
 
@@ -89,7 +89,7 @@ $$
 e_{(\dots,m_i+m_i',\dots)} - e_{(\dots,m_i,\dots)} - e_{(\dots,m_i',\dots)}, \qquad e_{(\dots,rm_i,\dots)} - r\,e_{(\dots,m_i,\dots)},
 $$
 
-for all positions $i$. Put $T=F/K$ and $m_1 \otimes \cdots \otimes m_n = e_{(m_1,\dots,m_n)}+K$. The defining relations say exactly that $\otimes$ is $R$-multilinear, and the elementary tensors generate $T$ because the $e_{(m_1,\dots,m_n)}$ generate $F$. Given a multilinear $f$, the universal property of $F$ gives a linear $\tilde f:F \to P$ with $\tilde f(e_{(m_1,\dots,m_n)})=f(m_1,\dots,m_n)$; each displayed generator of $K$ is killed by the multilinearity of $f$, so $\tilde f$ factors through $K$ and descends to $\bar f$. Uniqueness follows because the elementary tensors generate. For the uniqueness of $T$ up to isomorphism, apply the universal property of $T$ to the universal map of a second tensor product $T'$ and conversely; the two composites fix the elementary tensors and are therefore identities by the uniqueness part of the property. $\square$
+for all positions $i$. Put $T=F/K$ and $m_1 \otimes \cdots \otimes m_n = e_{(m_1,\dots,m_n)}+K$. The defining relations say exactly that $\otimes$ is $R$-multilinear, and the elementary tensors generate $T$ because the $e_{(m_1,\dots,m_n)}$ generate $F$. Given a multilinear $f$, the universal property of $F$ gives a linear $\tilde f:F \to P$ with $\tilde f(e_{(m_1,\dots,m_n)})=f(m_1,\dots,m_n)$; each displayed generator of $K$ is killed by the multilinearity of $f$, so $\tilde f$ factors through $K$ and descends to $\bar f$. Uniqueness follows because the elementary tensors generate. For the uniqueness of $T$ up to isomorphism, apply the universal property of $T$ to the universal map of a second tensor product $T'$ and conversely; the two composites fix the elementary tensors and are therefore identities by the uniqueness part of the property.
 
 The construction is a quotient of a free module, exactly as for the balanced product; the difference is only the number of arguments. In particular the tensor product of a finite family depends only on the modules, not on any choices, and it is functorial: linear maps $u_i:M_i \to N_i$ induce $u_1\otimes\cdots\otimes u_n$ by applying the universal property to the multilinear map $(m_1,\dots,m_n)\mapsto u_1(m_1)\otimes\cdots\otimes u_n(m_n)$.
 
@@ -109,7 +109,7 @@ $$
 
 and any factor zero makes the elementary tensor zero. Distinct elementary tensors may coincide, and a general element need not be an elementary tensor.
 
-*Proof.* These are the defining relations read in the quotient, together with the computation $0 \otimes x = (0+0)\otimes x = 0\otimes x + 0\otimes x$. The other two claims are visible already for $n=2$: $(r m)\otimes n = m \otimes (r n)$ can identify distinct pairs, and $\sum_i m_i \otimes n_i$ need not factor. $\square$
+*Proof.* These are the defining relations read in the quotient, together with the computation $0 \otimes x = (0+0)\otimes x = 0\otimes x + 0\otimes x$. The other two claims are visible already for $n=2$: $(r m)\otimes n = m \otimes (r n)$ can identify distinct pairs, and $\sum_i m_i \otimes n_i$ need not factor.
 
 ### The Case of Two Factors and the Relation to the Balanced Product
 
@@ -125,7 +125,7 @@ $$
 (M \otimes_R N) \otimes_R P \;\cong\; M \otimes_R (N \otimes_R P), \qquad M \otimes_R N \;\cong\; N \otimes_R M, \qquad R \otimes_R M \;\cong\; M .
 $$
 
-*Proof.* The map $((m,n),p) \mapsto m \otimes (n \otimes p)$ is well defined and trilinear in the appropriate sense and induces the first isomorphism, whose inverse is induced by $(m,(n,p))\mapsto (m \otimes n)\otimes p$. The second is induced by $m \otimes n \mapsto n \otimes m$, with inverse induced by $n \otimes m \mapsto m \otimes n$. The third is $r \otimes m \mapsto rm$, with inverse $m \mapsto 1 \otimes m$. Naturality in each module is immediate from the construction on elementary tensors. $\square$
+*Proof.* The map $((m,n),p) \mapsto m \otimes (n \otimes p)$ is well defined and trilinear in the appropriate sense and induces the first isomorphism, whose inverse is induced by $(m,(n,p))\mapsto (m \otimes n)\otimes p$. The second is induced by $m \otimes n \mapsto n \otimes m$, with inverse induced by $n \otimes m \mapsto m \otimes n$. The third is $r \otimes m \mapsto rm$, with inverse $m \mapsto 1 \otimes m$. Naturality in each module is immediate from the construction on elementary tensors.
 
 **Corollary.** For any partition of the indices into consecutive blocks there is a natural isomorphism
 
@@ -145,11 +145,11 @@ $$
 
 for an arbitrary index set $A$, and the same holds in every variable.
 
-*Proof.* The map sending $(\sum_\alpha m_\alpha, n)$ to the family $(m_\alpha \otimes n)_\alpha$ is bilinear and has image in the direct sum, since the sum is finite; it induces a homomorphism out of the tensor product. The inverse is induced by the coproduct of the maps $M_\alpha \otimes N \to (\bigoplus_\alpha M_\alpha)\otimes N$. The two are inverse on elementary tensors. $\square$
+*Proof.* The map sending $(\sum_\alpha m_\alpha, n)$ to the family $(m_\alpha \otimes n)_\alpha$ is bilinear and has image in the direct sum, since the sum is finite; it induces a homomorphism out of the tensor product. The inverse is induced by the coproduct of the maps $M_\alpha \otimes N \to (\bigoplus_\alpha M_\alpha)\otimes N$. The two are inverse on elementary tensors.
 
 **Corollary.** If $L_i$ are free of ranks $r_i$, then $L_1 \otimes_R \cdots \otimes_R L_n$ is free of rank $r_1 \cdots r_n$, with basis the elementary tensors $b_1 \otimes \cdots \otimes b_n$ over bases of the factors.
 
-*Proof.* Induction on $n$ using the case $n=2$ and distribution over direct sums: $R^{r}\otimes_R R^{s} \cong (R^{r})^{\oplus s}\cong R^{rs}$. $\square$
+*Proof.* Induction on $n$ using the case $n=2$ and distribution over direct sums: $R^{r}\otimes_R R^{s} \cong (R^{r})^{\oplus s}\cong R^{rs}$.
 
 **Example.** Over $R=\mathbb{Z}$ the formula gives $\mathbb{Z}^m \otimes_{\mathbb{Z}} \mathbb{Z}^n \cong \mathbb{Z}^{mn}$, and over a field $F$ it gives $\dim_F(V_1\otimes_F\cdots\otimes_F V_n)=\prod_i \dim_F V_i$. The elementary tensors of bases form a basis of the tensor product, and the coordinate functions of this basis are the entries of the multidimensional array attached to a tensor.
 
@@ -165,7 +165,7 @@ $$
 M_1'\otimes_R M_2\otimes_R\cdots\otimes_R M_n \longrightarrow M_1\otimes_R M_2\otimes_R\cdots\otimes_R M_n \longrightarrow M_1''\otimes_R M_2\otimes_R\cdots\otimes_R M_n \longrightarrow 0 .
 $$
 
-*Proof.* For $n=2$ this is the right exactness of the balanced product, proved in the companion article on flatness and exactness. For larger $n$, associate the tensor product so that the varying factor is the first argument of a two-factor product whose second factor is the tensor product of the remaining modules, and apply the case $n=2$. $\square$
+*Proof.* For $n=2$ this is the right exactness of the balanced product, proved in the companion article on flatness and exactness. For larger $n$, associate the tensor product so that the varying factor is the first argument of a two-factor product whose second factor is the tensor product of the remaining modules, and apply the case $n=2$.
 
 The general tensor product therefore inherits the asymmetry of the balanced product: in each variable it is a left adjoint, hence preserves colimits and is right exact. Exactness in the first variable holds when the tensor product of the remaining factors is flat, by the associativity of the construction and the two-factor case; this is the multilinear form of the flatness criterion of the companion article on flatness and exactness.
 
@@ -185,7 +185,7 @@ $$
 
 extends uniquely to an $R$-linear automorphism of $M^{\otimes n}$, and $\sigma \mapsto (\sigma \cdot)$ is a group homomorphism $S_n \to \operatorname{Aut}_R(M^{\otimes n})$. Thus $M^{\otimes n}$ is a left $R[S_n]$-module.
 
-*Proof.* The map $(m_1,\dots,m_n)\mapsto m_{\sigma^{-1}(1)}\otimes\cdots\otimes m_{\sigma^{-1}(n)}$ is multilinear, so the universal property gives the endomorphism; it has the endomorphism attached to $\sigma^{-1}$ as inverse, hence is an automorphism. The identity $\sigma\tau \cdot x = \sigma\cdot(\tau\cdot x)$ is checked on elementary tensors, where both sides reorder the arguments by $\sigma\tau$. $\square$
+*Proof.* The map $(m_1,\dots,m_n)\mapsto m_{\sigma^{-1}(1)}\otimes\cdots\otimes m_{\sigma^{-1}(n)}$ is multilinear, so the universal property gives the endomorphism; it has the endomorphism attached to $\sigma^{-1}$ as inverse, hence is an automorphism. The identity $\sigma\tau \cdot x = \sigma\cdot(\tau\cdot x)$ is checked on elementary tensors, where both sides reorder the arguments by $\sigma\tau$.
 
 ### Symmetric and Alternating Tensors
 
@@ -217,7 +217,7 @@ When $R$ is a field of characteristic zero, or more generally a ring in which $n
 $$
 0=f(\dots,x+y,\dots,x+y,\dots)=f(\dots,x,\dots,x,\dots)+f(\dots,x,\dots,y,\dots)+f(\dots,y,\dots,x,\dots)+f(\dots,y,\dots,y,\dots),
 $$
-and the two repeated-argument terms vanish while the left side does, so $f(\dots,x,\dots,y,\dots)=-f(\dots,y,\dots,x,\dots)$; a transposition therefore changes the sign, and $f$ is skew-symmetric. Conversely, if $f$ is skew-symmetric and two arguments are equal to $x$, interchanging them changes the sign while leaving $f$ unchanged, so $f=-f$; this gives $f=0$ when $2$ is invertible, and $f$ is alternating. $\square$
+and the two repeated-argument terms vanish while the left side does, so $f(\dots,x,\dots,y,\dots)=-f(\dots,y,\dots,x,\dots)$; a transposition therefore changes the sign, and $f$ is skew-symmetric. Conversely, if $f$ is skew-symmetric and two arguments are equal to $x$, interchanging them changes the sign while leaving $f$ unchanged, so $f=-f$; this gives $f=0$ when $2$ is invertible, and $f$ is alternating.
 
 The **universal symmetric multilinear map** and the **universal alternating multilinear map** are constructed by factoring the elementary tensors by the relations $m_1\otimes\cdots\otimes m_n = m_{\sigma(1)}\otimes\cdots\otimes m_{\sigma(n)}$ and $m_1\otimes\cdots\otimes m_n=\operatorname{sgn}(\sigma)m_{\sigma(1)}\otimes\cdots\otimes m_{\sigma(n)}$ respectively. The resulting modules are the **symmetric power** $S^nM$ and the **exterior power** $\Lambda^nM$, characterised by
 
@@ -259,7 +259,7 @@ Their structure, their universal properties among commutative and among graded-c
 
 **Proposition.** If $L$ is free with basis $B$ then $L^*$ is free with the dual basis $B^*=\{b^* : b \in B\}$ defined by $b^*(b')=\delta_{bb'}$, where $\delta$ is the Kronecker symbol. For finite free $L$ there is a natural isomorphism $L \cong L^{**}$, given by $x \mapsto (\text{evaluation at } x)$.
 
-*Proof.* A homomorphism out of a free module is determined by its values on $B$, and these may be prescribed arbitrarily; hence $B^*$ is a basis. For finite $B$, the map $x \mapsto \langle\cdot,x\rangle$ has the inverse sending $\xi \in L^{**}$ to $\sum_{b \in B}\xi(b^*)b$. $\square$
+*Proof.* A homomorphism out of a free module is determined by its values on $B$, and these may be prescribed arbitrarily; hence $B^*$ is a basis. For finite $B$, the map $x \mapsto \langle\cdot,x\rangle$ has the inverse sending $\xi \in L^{**}$ to $\sum_{b \in B}\xi(b^*)b$.
 
 For a general module the natural map $M \to M^{**}$ need not be injective or surjective; over a field it is an isomorphism exactly when $M$ is finite-dimensional.
 
@@ -275,7 +275,7 @@ $$
 
 natural in $M$; it is the **contraction** of the module with its dual.
 
-*Proof.* The evaluation pairing is bilinear, so the universal property of the tensor product gives a unique linear $c$ with $c(f\otimes m)=f(m)$; naturality is the identity $c(u^*(f)\otimes m)=c(f\otimes u(m))$, checked on elementary tensors. $\square$
+*Proof.* The evaluation pairing is bilinear, so the universal property of the tensor product gives a unique linear $c$ with $c(f\otimes m)=f(m)$; naturality is the identity $c(u^*(f)\otimes m)=c(f\otimes u(m))$, checked on elementary tensors.
 
 **Corollary (the trace as a contraction).** For a finitely generated projective module $P$ and $\varphi \in \operatorname{End}_R(P)$ the trace of the article on projective and injective modules equals the composite
 
@@ -297,11 +297,11 @@ $$
 S \otimes_R (M_1 \otimes_R \cdots \otimes_R M_n) \;\cong\; (S\otimes_R M_1)\otimes_S \cdots \otimes_S (S\otimes_R M_n).
 $$
 
-*Proof.* Both sides are universal for $S$-multilinear maps out of the product of the $S$-modules $S\otimes_RM_i$. On the left, an $S$-multilinear map out of the product of the $M_i$ is an $R$-multilinear map, and $S\otimes_R(-)$ is universal for $S$-linear maps out of an $R$-module; on the right, $S$-multilinearity is exactly the universal property of the tensor product over $S$. The two universal properties coincide, and uniqueness of the representing object gives the isomorphism. $\square$
+*Proof.* Both sides are universal for $S$-multilinear maps out of the product of the $S$-modules $S\otimes_RM_i$. On the left, an $S$-multilinear map out of the product of the $M_i$ is an $R$-multilinear map, and $S\otimes_R(-)$ is universal for $S$-linear maps out of an $R$-module; on the right, $S$-multilinearity is exactly the universal property of the tensor product over $S$. The two universal properties coincide, and uniqueness of the representing object gives the isomorphism.
 
 **Corollary.** Base change commutes with the tensor algebra, the symmetric powers and the exterior powers in the sense that $S\otimes_R T(M)\cong T(S\otimes_RM)$, $S\otimes_R S^nM\cong S^n(S\otimes_RM)$ and $S\otimes_R\Lambda^nM\cong\Lambda^n(S\otimes_RM)$.
 
-*Proof.* The first is the theorem applied degree by degree and extended linearly; the second and third follow because base change preserves the quotient defining each, being right exact and carrying the relations $m\otimes m'-m'\otimes m$ and $m\otimes m$ to the corresponding relations. $\square$
+*Proof.* The first is the theorem applied degree by degree and extended linearly; the second and third follow because base change preserves the quotient defining each, being right exact and carrying the relations $m\otimes m'-m'\otimes m$ and $m\otimes m$ to the corresponding relations.
 
 **Example (complexification of a tensor product).** For real vector spaces $V_1,\dots,V_n$, the complexification satisfies $(V_1\otimes_{\mathbb{R}}\cdots\otimes_{\mathbb{R}}V_n)_{\mathbb{C}}\cong (V_1)_{\mathbb{C}}\otimes_{\mathbb{C}}\cdots\otimes_{\mathbb{C}}(V_n)_{\mathbb{C}}$, and the dimension over $\mathbb{C}$ is $\prod_i\dim_{\mathbb{R}}V_i$, the same as the real dimension of the original tensor product, in agreement with the rule that complexification preserves dimension. This is the base-change statement of the companion article on extension of scalars, read for several factors.
 
@@ -315,7 +315,7 @@ $$
 \mathbb{Z}/m\mathbb{Z} \otimes_{\mathbb{Z}} \mathbb{Z}/n\mathbb{Z} \;\cong\; \mathbb{Z}/\gcd(m,n)\mathbb{Z}, \qquad \mathbb{Q}\otimes_{\mathbb{Z}}\mathbb{Z}/n\mathbb{Z}=0 .
 $$
 
-*Proof.* Both are the computations of the companion article on the balanced product; the first is the $n=2$ case of the general theory and the second follows because every element of $\mathbb{Z}/n\mathbb{Z}$ is $n$-torsion while multiplication by $n$ is invertible on $\mathbb{Q}$. $\square$
+*Proof.* Both are the computations of the companion article on the balanced product; the first is the $n=2$ case of the general theory and the second follows because every element of $\mathbb{Z}/n\mathbb{Z}$ is $n$-torsion while multiplication by $n$ is invertible on $\mathbb{Q}$.
 
 ### Polynomial and Multilinear Expressions
 
@@ -327,7 +327,7 @@ $$
 
 **Proposition.** If $M$ has rank $r$ and $N$ has rank $s$, in the sense of the maximal number of linearly independent elements, then $M\otimes_RN$ has rank at most $rs$; over a field the rank is the product, and over a principal ideal domain the rank of $M\otimes_RN$ is the product of the ranks of the torsion-free parts.
 
-*Proof.* Choose maximal independent families $x_1,\dots,x_r$ in $M$ and $y_1,\dots,y_s$ in $N$; the $rs$ elementary tensors $x_i\otimes y_j$ span a free submodule of rank $rs$, and every elementary tensor $m\otimes n$ lies in the span of the $x_i\otimes y_j$ together with torsion corrections that may be killed. Over a field the spanning family is independent by the basis theorem; over a principal ideal domain the rank of a tensor product of torsion-free modules is the product of the ranks, and torsion is annihilated by the tensor product against a torsion-free module only up to the appropriate divisibility, giving the stated bound. $\square$
+*Proof.* Choose maximal independent families $x_1,\dots,x_r$ in $M$ and $y_1,\dots,y_s$ in $N$; the $rs$ elementary tensors $x_i\otimes y_j$ span a free submodule of rank $rs$, and every elementary tensor $m\otimes n$ lies in the span of the $x_i\otimes y_j$ together with torsion corrections that may be killed. Over a field the spanning family is independent by the basis theorem; over a principal ideal domain the rank of a tensor product of torsion-free modules is the product of the ranks, and torsion is annihilated by the tensor product against a torsion-free module only up to the appropriate divisibility, giving the stated bound.
 
 The example $M=N=\mathbb{Z}/2\mathbb{Z}$ shows that the bound can be far from attained: both factors have rank zero, and the tensor product is $\mathbb{Z}/2\mathbb{Z}$, of rank zero but nonzero.
 

@@ -33,17 +33,17 @@ $$
 
 **Proposition.** The functors $R^nF$ and $L_nG$ are well defined up to natural isomorphism: they do not depend on the choice of resolution.
 
-*Proof.* Let $I^\bullet,J^\bullet$ be two injective resolutions of $A$. By the comparison theorem the identity of $A$ lifts to chain maps $\varphi:I^\bullet\to J^\bullet$ and $\psi:J^\bullet\to I^\bullet$, and $\psi\varphi$ and $\varphi\psi$ are homotopic to the identities. Applying the additive functor $F$ preserves the homotopies, so $F(\varphi)$ and $F(\psi)$ are mutually inverse up to homotopy, and homotopic maps induce the same map on homology. Hence $H^n(F(I^\bullet))\cong H^n(F(J^\bullet))$ canonically. The projective case is dual. $\square$
+*Proof.* Let $I^\bullet,J^\bullet$ be two injective resolutions of $A$. By the comparison theorem the identity of $A$ lifts to chain maps $\varphi:I^\bullet\to J^\bullet$ and $\psi:J^\bullet\to I^\bullet$, and $\psi\varphi$ and $\varphi\psi$ are homotopic to the identities. Applying the additive functor $F$ preserves the homotopies, so $F(\varphi)$ and $F(\psi)$ are mutually inverse up to homotopy, and homotopic maps induce the same map on homology. Hence $H^n(F(I^\bullet))\cong H^n(F(J^\bullet))$ canonically. The projective case is dual.
 
 **Proposition.** $R^0F\cong F$ when $F$ is left exact, and $L_0G\cong G$ when $G$ is right exact. In particular the derived functors extend the given functor.
 
-*Proof.* For a left exact $F$ the sequence $0\to A\to I^0\to I^1$ is exact, so applying $F$ gives the exact sequence $0\to F(A)\to F(I^0)\to F(I^1)$; therefore $H^0(F(I^\bullet))=\ker F(d^0)\cong F(A)$. Dually, right exactness of $G$ gives $G(P_1)\to G(P_0)\to G(A)\to0$ exact, so $H_0(G(P_\bullet))=G(P_0)/\operatorname{im}G(d_1)\cong G(A)$. $\square$
+*Proof.* For a left exact $F$ the sequence $0\to A\to I^0\to I^1$ is exact, so applying $F$ gives the exact sequence $0\to F(A)\to F(I^0)\to F(I^1)$; therefore $H^0(F(I^\bullet))=\ker F(d^0)\cong F(A)$. Dually, right exactness of $G$ gives $G(P_1)\to G(P_0)\to G(A)\to0$ exact, so $H_0(G(P_\bullet))=G(P_0)/\operatorname{im}G(d_1)\cong G(A)$.
 
 ### Functoriality and Additivity
 
 **Proposition.** A morphism $u:A\to A'$ induces morphisms $R^nu:R^nF(A)\to R^nF(A')$ for every $n$, making each $R^nF$ a functor; the functors are additive, and the assignment is compatible with composition. The same holds for $L_nG$.
 
-*Proof.* By the comparison theorem, $u$ lifts to a chain map between chosen resolutions, unique up to homotopy; applying $F$ and taking homology gives $R^nu$, independent of the lift by the same homotopy argument as above. Additivity of $R^nF$ follows from additivity of $F$ on hom complexes and of homology. $\square$
+*Proof.* By the comparison theorem, $u$ lifts to a chain map between chosen resolutions, unique up to homotopy; applying $F$ and taking homology gives $R^nu$, independent of the lift by the same homotopy argument as above. Additivity of $R^nF$ follows from additivity of $F$ on hom complexes and of homology.
 
 **Corollary.** The functors $R^nF$ and $L_nG$ preserve finite direct sums, $R^nF(A\oplus A')\cong R^nF(A)\oplus R^nF(A')$, since they are additive.
 
@@ -59,7 +59,7 @@ Injective and projective resolutions are not the only ones that compute the deri
 $$
 R^nF(A)\cong R^{n-1}F(K^1)\cong R^{n-2}F(K^2)\cong\cdots\cong R^0F(K^n)/\cdots,
 $$
-which identify $R^nF(A)$ with the $n$-th cohomology of $F(Q^\bullet)$. $\square$
+which identify $R^nF(A)$ with the $n$-th cohomology of $F(Q^\bullet)$.
 
 **Example.** Every injective object is $F$-acyclic for every left exact $F$, since an injective resolution of an injective object has length zero and shortens by the splitting of $0\to I\to I\to0\to\cdots$; this recovers the definition. The useful cases are the objects that are acyclic for a particular $F$ — for example, flat modules for the tensor product, or flasque sheaves for the global sections of a sheaf in Part II.
 
@@ -75,7 +75,7 @@ $$
 
 exact. Dually, a right exact $G$ with enough projectives gives a long exact sequence in $L_nG$, with connecting morphisms $L_nG(C)\to L_{n-1}G(A)$.
 
-*Proof.* Choose injective resolutions $I^\bullet\to A$ and $J^\bullet\to C$ and use the horseshoe lemma to build a resolution $K^\bullet=I^\bullet\oplus J^\bullet$ of $B$ together with a short exact sequence of complexes $0\to I^\bullet\to K^\bullet\to J^\bullet\to0$. The horseshoe construction splits in each degree, and every additive functor preserves a split exact sequence, so $0\to F(I^\bullet)\to F(K^\bullet)\to F(J^\bullet)\to0$ is again a short exact sequence of complexes. The long exact homology sequence of *Homological Algebra* applied to it is the displayed sequence, with connecting map the snake map transported through the horseshoe identifications; the left-exactness of $F$ is what identifies the degree-zero term $H^0(F(I^\bullet))$ with $F(A)$ so that the sequence begins at $F(A)$. Naturality is the naturality of the snake lemma. The dual statement follows by reversing all arrows. $\square$
+*Proof.* Choose injective resolutions $I^\bullet\to A$ and $J^\bullet\to C$ and use the horseshoe lemma to build a resolution $K^\bullet=I^\bullet\oplus J^\bullet$ of $B$ together with a short exact sequence of complexes $0\to I^\bullet\to K^\bullet\to J^\bullet\to0$. The horseshoe construction splits in each degree, and every additive functor preserves a split exact sequence, so $0\to F(I^\bullet)\to F(K^\bullet)\to F(J^\bullet)\to0$ is again a short exact sequence of complexes. The long exact homology sequence of *Homological Algebra* applied to it is the displayed sequence, with connecting map the snake map transported through the horseshoe identifications; the left-exactness of $F$ is what identifies the degree-zero term $H^0(F(I^\bullet))$ with $F(A)$ so that the sequence begins at $F(A)$. Naturality is the naturality of the snake lemma. The dual statement follows by reversing all arrows.
 
 **Corollary (naturality).** A map of short exact sequences induces a map of the two long exact sequences, commuting with all connecting morphisms.
 
@@ -97,7 +97,7 @@ so that $R^1F(A)\cong\operatorname{coker}(F(I)\to F(A'))$; dually, if $0\to A'\t
 $$
 R^nF(I)\to R^nF(A')\xrightarrow{\delta^n}R^{n+1}F(A)\to R^{n+1}F(I)
 $$
-becomes $0\to R^nF(A')\xrightarrow{\cong}R^{n+1}F(A)\to0$ for $n\ge1$. For $n=0$ the same vanishing of $R^1F(I)$ gives the segment $F(A)\to F(I)\to F(A')\xrightarrow{\delta^0}R^1F(A)\to R^1F(I)=0$, which is the displayed four-term exact sequence, and $R^1F(A)$ is the cokernel of $F(I)\to F(A')$ by the exactness at $F(A')$. The projective statement is dual: the segment $0\to L_1G(A)\to G(A')\to G(P)$ identifies $L_1G(A)$ with the kernel. $\square$
+becomes $0\to R^nF(A')\xrightarrow{\cong}R^{n+1}F(A)\to0$ for $n\ge1$. For $n=0$ the same vanishing of $R^1F(I)$ gives the segment $F(A)\to F(I)\to F(A')\xrightarrow{\delta^0}R^1F(A)\to R^1F(I)=0$, which is the displayed four-term exact sequence, and $R^1F(A)$ is the cokernel of $F(I)\to F(A')$ by the exactness at $F(A')$. The projective statement is dual: the segment $0\to L_1G(A)\to G(A')\to G(P)$ identifies $L_1G(A)$ with the kernel.
 
 **Corollary.** If $R^nF=0$ for one $n\ge1$ then $R^mF=0$ for all $m\ge n$: the vanishing of a derived functor in degree $n$ propagates upward. Dually, if $L_nG=0$ for one $n\ge1$ then $L_mG=0$ for all $m\ge n$.
 
@@ -117,7 +117,7 @@ The construction of the long exact sequence suggests an axiomatic description of
 
 **Theorem.** The right derived functors of a left exact functor $F$ form a universal effaceable cohomological delta-functor with $T^0=F$; conversely, any effaceable cohomological delta-functor with $T^0=F$ that vanishes on injectives and is defined on an abelian category with enough injectives is naturally isomorphic to the right derived functors of $F$.
 
-*Proof.* Effaceability in degree $n$ holds by embedding $A$ in an injective $M$, since $R^nF(M)=0$. For universality, let $\eta:T^\bullet\to U^\bullet$ be a morphism of delta-functors that is an isomorphism in degree $0$. One shows by induction on $n$ that $\eta$ is an isomorphism in degree $n$: embed $A$ in an injective $M$ and form $0\to A\to M\to A'\to0$; the two long exact sequences are connected by $\eta$, and the five lemma reduces the statement in degree $n$ for $A$ to the statement in degree $n-1$ for $A'$ and the known vanishing of $T^n(M)=U^n(M)=0$ for $n>0$. The converse follows because a universal delta-functor is determined by its degree-$0$ term, which is $F$. $\square$
+*Proof.* Effaceability in degree $n$ holds by embedding $A$ in an injective $M$, since $R^nF(M)=0$. For universality, let $\eta:T^\bullet\to U^\bullet$ be a morphism of delta-functors that is an isomorphism in degree $0$. One shows by induction on $n$ that $\eta$ is an isomorphism in degree $n$: embed $A$ in an injective $M$ and form $0\to A\to M\to A'\to0$; the two long exact sequences are connected by $\eta$, and the five lemma reduces the statement in degree $n$ for $A$ to the statement in degree $n-1$ for $A'$ and the known vanishing of $T^n(M)=U^n(M)=0$ for $n>0$. The converse follows because a universal delta-functor is determined by its degree-$0$ term, which is $F$.
 
 **Corollary.** Any construction that produces an effaceable delta-functor with $T^0=F$ computes the derived functors of $F$. This is the criterion by which the derived functors of the tensor product, the group cohomology functors and the sheaf cohomology functors are identified, and it is the reason resolutions by acyclic objects suffice.
 
@@ -131,7 +131,7 @@ $$
 R^n(GF)(A)\cong R^nG(FA), \qquad n\ge0 .
 $$
 
-*Proof.* Take an injective resolution $I^\bullet$ of $A$. By hypothesis each $F(I^n)$ is $G$-acyclic, so the resolution $F(I^\bullet)$ of $FA$ by $G$-acyclic objects computes $R^nG(FA)$ by the acyclic-resolution theorem. But $R^n(GF)(A)$ is by definition $H^n(GF(I^\bullet))=H^n(G(F(I^\bullet)))$, which is also $R^nG(FA)$. $\square$
+*Proof.* Take an injective resolution $I^\bullet$ of $A$. By hypothesis each $F(I^n)$ is $G$-acyclic, so the resolution $F(I^\bullet)$ of $FA$ by $G$-acyclic objects computes $R^nG(FA)$ by the acyclic-resolution theorem. But $R^n(GF)(A)$ is by definition $H^n(GF(I^\bullet))=H^n(G(F(I^\bullet)))$, which is also $R^nG(FA)$.
 
 **Remark.** When the hypothesis fails, the two sides are related by the Grothendieck spectral sequence $E_2^{p,q}=R^pG(R^qF(A))\Rightarrow R^{p+q}(GF)(A)$, developed. The elementary statement above is the case in which the spectral sequence collapses to its edge; the general statement is the reason the composition of derived functors is the main computational tool of the theory.
 
@@ -141,7 +141,7 @@ $$
 
 **Proposition.** Let $F$ be left exact with enough injectives. Then $F$ is exact if and only if $R^1F=0$, if and only if $R^nF=0$ for all $n\ge1$. Dually a right exact $G$ is exact if and only if $L_1G=0$.
 
-*Proof.* If $F$ is exact it preserves the exactness of an injective resolution, so the complex $F(I^\bullet)$ is exact in positive degrees and $R^nF=0$ for $n\ge1$. Conversely, if $R^1F=0$ then the dimension-shifting corollary gives $R^nF=0$ for all $n\ge1$, and the long exact sequence attached to a short exact sequence has $F$ exact in the middle by exactness of the sequence and the vanishing of $R^1F(A)$. The dual argument gives the statement for $G$. $\square$
+*Proof.* If $F$ is exact it preserves the exactness of an injective resolution, so the complex $F(I^\bullet)$ is exact in positive degrees and $R^nF=0$ for $n\ge1$. Conversely, if $R^1F=0$ then the dimension-shifting corollary gives $R^nF=0$ for all $n\ge1$, and the long exact sequence attached to a short exact sequence has $F$ exact in the middle by exactness of the sequence and the vanishing of $R^1F(A)$. The dual argument gives the statement for $G$.
 
 **Example.** $\operatorname{Hom}_R(M,-)$ is exact if $M$ is projective, so its derived functors vanish in positive degree for projective $M$; $\operatorname{Hom}_R(P,-)$ has zero right derived functors. Dually, $\operatorname{Hom}_R(-,I)$ is exact for injective $I$, so the left exact $\operatorname{Hom}_R(-,I)$ has vanishing right derived functors in positive degree. These observations are the module-level content of the vanishing of $\operatorname{Ext}$.
 
@@ -185,7 +185,7 @@ $$
 \operatorname{Tor}_n^S(S\otimes_RM,N)\cong\operatorname{Tor}_n^R(M,\operatorname{Res}N), \qquad n\ge0 .
 $$
 
-*Proof.* The adjunction between extension and restriction of scalars gives a natural isomorphism of functors $\operatorname{Hom}_S(S\otimes_RM,-)\cong\operatorname{Hom}_R(M,\operatorname{Res}-)$. Restriction of scalars is exact and carries injective $S$-modules to injective $R$-modules, so an injective resolution of $N$ over $S$ restricts to an injective resolution of $\operatorname{Res}N$ over $R$ and computes the right derived functors on both sides; this gives the first family. For the second, restriction along a flat $\varphi$ makes $S\otimes_R-$ exact, so it carries a projective resolution of $M$ to a projective resolution of $S\otimes_RM$; applying $-\otimes_SN$ and using $(S\otimes_RP)\otimes_SN\cong P\otimes_R\operatorname{Res}N$ gives the isomorphism on homology. Without flatness the two Tor families are related by a spectral sequence rather than by an isomorphism. $\square$
+*Proof.* The adjunction between extension and restriction of scalars gives a natural isomorphism of functors $\operatorname{Hom}_S(S\otimes_RM,-)\cong\operatorname{Hom}_R(M,\operatorname{Res}-)$. Restriction of scalars is exact and carries injective $S$-modules to injective $R$-modules, so an injective resolution of $N$ over $S$ restricts to an injective resolution of $\operatorname{Res}N$ over $R$ and computes the right derived functors on both sides; this gives the first family. For the second, restriction along a flat $\varphi$ makes $S\otimes_R-$ exact, so it carries a projective resolution of $M$ to a projective resolution of $S\otimes_RM$; applying $-\otimes_SN$ and using $(S\otimes_RP)\otimes_SN\cong P\otimes_R\operatorname{Res}N$ gives the isomorphism on homology. Without flatness the two Tor families are related by a spectral sequence rather than by an isomorphism.
 
 ## Summary
 

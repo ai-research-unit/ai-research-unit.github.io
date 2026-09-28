@@ -171,7 +171,7 @@ $$
 \widehat{f * g}(\xi) = \hat{f}(\xi) \hat{g}(\xi).
 $$
 
-**Proof.** Write the definition, apply Fubini, and change variables. $\square$
+**Proof.** Write the definition, apply Fubini, and change variables.
 
 ### The Idempotent Form
 
@@ -271,7 +271,7 @@ $$
 \|Mf\|_p \leq C_p \|f\|_p.
 $$
 
-**Proof.** The case $p = \infty$ is trivial. The case $1 < p < \infty$ follows from the weak $(1,1)$ estimate and the trivial $L^\infty$ estimate by interpolation. $\square$
+**Proof.** The case $p = \infty$ is trivial. The case $1 < p < \infty$ follows from the weak $(1,1)$ estimate and the trivial $L^\infty$ estimate by interpolation.
 
 ### The Idempotent Form
 
@@ -371,7 +371,7 @@ $$
 \widehat{Rf(\theta, \cdot)}(\sigma) = \hat{f}(\sigma \cosh\theta, \sigma \sinh\theta).
 $$
 
-**Proof.** Write the definition of the Radon transform, take the split complex Fourier transform in $t$, and change variables. $\square$
+**Proof.** Write the definition of the Radon transform, take the split complex Fourier transform in $t$, and change variables.
 
 The Fourier slice theorem is the mathematical basis of hyperbolic tomography, the analogue of computed tomography for the hyperbolic plane.
 

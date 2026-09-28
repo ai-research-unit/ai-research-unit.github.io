@@ -4,9 +4,9 @@
 
 This article introduces the biquaternion algebra as an algebraic structure. The goal is to define the algebra precisely, establish its basic properties, and describe the **six** distinguished real subspaces that arise from the natural conjugations: four of dimension four, together with the two-dimensional center and the six-dimensional vector subspace.
 
-The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. The anti-Hermitian subspace is defined algebraically.
+The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. The anti-Hermitian subspace is defined algebraically. The inner product is formed and evaluated here as an algebraic pairing — its scalar, its vanishing and its non-degeneracy. Nothing is measured with it: lengths, signs and orthogonal decompositions, and the theory of norms and forms, are in the Topology group (*Biquaternion Norm and Invertibility*).
 
-The quaternion algebra $\mathbb{H}$ is assumed from the article on quaternion algebra, together with its basis, its multiplication, its conjugation, and its norm. No facts about $\mathbb{H}$ are restated here.
+The quaternion algebra $\mathbb{H}$ is assumed from the article on quaternion algebra, together with its basis, its multiplication and its conjugation. No facts about $\mathbb{H}$ are restated here.
 
 ## Biquaternions
 
@@ -104,6 +104,18 @@ The symbols $(\mathbf{Q}, \mathbf{R})$ and $[\mathbf{Q}, \mathbf{R}]$ denote the
 
 This formula has the same structure as the quaternion product: scalar part, vector part, dot product, cross product. The only difference is that the coefficients are now complex.
 
+### The Outer Product and the Grades
+
+The antisymmetric part of the product is the **outer product**,
+$$
+p\wedge q:=\tfrac12\bigl(pq-qp\bigr)=V(p)\times V(q),
+$$
+the cross product of the vector parts: the scalar parts cancel in the commutator, and the identity holds for **all** pairs of biquaternions, not only for vector-like ones. In the notation of the multiplication formula, $pq-qp=2[\mathbf{P},\mathbf{Q}]$, whose right-hand side depends on the vector parts alone; the formula is the biquaternion shadow of the Clifford product and is developed as such in *The Clifford Structure of the Biquaternion Algebra*, where the four components are read as the four grades and the outer product records the grade of a product.
+
+**The four grades.** Read geometrically, the four components of a biquaternion carry four distinct grades: the grade-zero part is the real scalar $S(p)e_0$; the grade-one part is the imaginary pure quaternion $iV(p)$; the grade-two part is the real pure quaternion $V(p)$; and the grade-three part is the imaginary scalar $iS(p)e_0$, the pseudoscalar. The product of two vectors is a bivector and the product of a vector with a bivector is a vector, so the algebra fixes the grades of the product from those of the factors, and the outer product isolates the part contributed by the vector parts.
+
+**Remark (the naming).** The quaternion reading names the three units $e_1,e_2,e_3$ vectors, whereas the geometric reading names them areas of grade two; the geometric vectors are the imaginary quaternions $ie_k$. Sangwine, Ell and Le Bihan record that the axial and polar terminology of physics has added to the confusion, since the two terms suggest different types of vector for one algebraic object. This article keeps the quaternion names in the algebra and defers to *The Clifford Structure of the Biquaternion Algebra* for the grade names.
+
 ### Conjugations
 
 There are **four** natural conjugations on $\mathbb{B}$. The first three are obtained from the quaternion conjugation $\bar{\cdot}$ and the complex conjugation ${}^*$; the fourth is defined as the negative of Hermitian conjugation:
@@ -178,7 +190,7 @@ The three commuting involutions $\bar{\cdot}$, ${}^{*}$ and ${}^{\dagger}$ (with
 | $\mathbb{M}_+$ (Hermitian) | $\tilde{Q}^{\dagger} = \tilde{Q}$ | $e_0,\ ie_1,\ ie_2,\ ie_3$ | $4$ |
 | $\mathbb{M}_-$ (anti-Hermitian) | $\tilde{Q}^{\flat} = \tilde{Q}$ | $ie_0,\ e_1,\ e_2,\ e_3$ | $4$ |
 
-Each of the six has its own article in the **Subspaces** group of the series, where its basis and dimension, its algebra and module structure, its norm form, its behaviour under the four conjugations and its intersections with the other five are worked out in full:
+Each of the six has its own article in the **Focus on Subspaces** group of the series, where its basis and dimension, its algebra and module structure, its behaviour under the four conjugations and its intersections with the other five are worked out in full:
 
 | subspace | article |
 |---|---|
@@ -377,111 +389,60 @@ $$
 
 The complex conjugation ${}^*$ fixes $\mathbb{H}_{\mathbb{B}}$ and negates $i\mathbb{H}_{\mathbb{B}}$, while Hermitian conjugation $\dagger$ fixes $\mathbb{M}_+$ and negates $\mathbb{M}_-$. In particular, it is multiplication by $i$, not quaternion conjugation, that swaps $\mathbb{M}_+$ and $\mathbb{M}_-$; the center and the vector subspace are each stable under it.
 
-## Quadratic Forms and Inner Product
+## The Hermitian Form
 
-### The Norm Form
-
-The **norm form** of a biquaternion $\tilde{Q}$ is
-
-$$
-N(\tilde{Q}) = \tilde{Q} \bar{\tilde{Q}} = \sum_{\mu=0}^{3} Q_\mu^2,
-$$
-
-where $\bar{\tilde{Q}}$ is the quaternion conjugate. It is a complex number in general. It is not positive-definite, and it can vanish for a nonzero biquaternion. The vanishing of the norm form and the structure of the elements on which it vanishes are the subject of the divisibility article.
-
-The norm form is **multiplicative**:
-
-$$
-N(\tilde{Q} \circ \tilde{R}) = N(\tilde{Q}) \, N(\tilde{R}).
-$$
-
-### The Hermitian Form
+### Definition
 
 The **Hermitian form** of a biquaternion $\tilde{Q}$ is the biquaternion
 
 $$
-\tilde{Q} \tilde{Q}^\dagger =
-\Big( \sum_{\mu=0}^{3} |Q_\mu|^2 \Big) e_0
-+ \Big( Q_0^* \mathbf{Q} - Q_0 \mathbf{Q}^* - [\mathbf{Q}, \mathbf{Q}^*] \Big),
+\tilde{Q} \tilde{Q}^\dagger,
 $$
 
-where $\tilde{Q}^\dagger$ is the Hermitian conjugate, $\mathbf{Q} = \sum_{k=1}^{3} Q_k e_k$ is the vector part of $\tilde{Q}$, $\mathbf{Q}^* = \sum_{k=1}^{3} Q_k^* e_k$ is its coefficient-wise conjugate, and $[\mathbf{Q}, \mathbf{Q}^*]$ is the complex bilinear cross product of the product formula above. In terms of the real and imaginary coefficient vectors, $Q_\mu = q_\mu + i q'_\mu$, $\mathbf{q} = \sum_k q_k e_k$, $\mathbf{q}' = \sum_k q'_k e_k$, this is
+where $\tilde{Q}^\dagger = \bar{\tilde{Q}}^*$ is the Hermitian conjugate.
+
+**Basic properties.**
+
+- $\tilde{Q} \tilde{Q}^\dagger$ is a **biquaternion**, not a real scalar in general. Its **scalar part** is
 
 $$
-\tilde{Q} \tilde{Q}^\dagger =
-\Big( \sum_{\mu=0}^{3} |Q_\mu|^2 \Big) e_0
-+ 2i\Big( q_0 \mathbf{q}' - q'_0 \mathbf{q} + [\mathbf{q}, \mathbf{q}'] \Big),
+\mathrm{Sc}\!\left(\tilde{Q} \tilde{Q}^\dagger\right) = \sum_{\mu=0}^{3} |Q_\mu|^2 = \sum_{\mu=0}^{3} (q_\mu^2 + q'^2_\mu),
 $$
 
-with $[\mathbf{q}, \mathbf{q}']$ the ordinary cross product, since $[\mathbf{Q}, \mathbf{Q}^*] = -2i[\mathbf{q}, \mathbf{q}']$ and $Q_0^* \mathbf{Q} - Q_0 \mathbf{Q}^* = 2i(q_0 \mathbf{q}' - q'_0 \mathbf{q})$.
-
-So the **vector terms** are not arbitrary: they are the vector part of the product, built from the two vectors $\mathbf{Q}$ and $\mathbf{Q}^*$ and the scalar $Q_0$. This is generally a **biquaternion**, not a real scalar, and it is Hermitian: $\tilde{Q}\tilde{Q}^\dagger$ is fixed by $\dagger$, hence lies in the Hermitian subspace $\mathbb{M}_+ = \mathrm{span}_{\mathbb{R}}\{e_0, ie_1, ie_2, ie_3\}$ of the Hermitian decomposition below. Its scalar part is $\sum_\mu |Q_\mu|^2$; its vector part vanishes exactly when the four coefficients $Q_\mu$ are all real multiples of one complex number, $Q_\mu = \lambda r_\mu$ with $\lambda \in \mathbb{C}$ and $r_\mu \in \mathbb{R}$ — equivalently, when every ratio $Q_\mu/Q_\nu$ of nonzero coefficients is real. For example, for $\tilde{Q} = e_0 + ie_1$ the coefficients are $Q_0 = 1$ and $Q_1 = i$, not real multiples of one another, so the vector part does not vanish: $\tilde{Q}^\dagger = e_0 + ie_1$ and
+with $Q_\mu = q_\mu + i q'_\mu$. This scalar part is non-negative and vanishes if and only if $\tilde{Q} = 0$. The vector part of $\tilde{Q} \tilde{Q}^\dagger$ does not in general vanish: for example, for $\tilde{Q} = e_0 + ie_1$, one has $\tilde{Q}^\dagger = e_0 + ie_1$ and
 
 $$
-\tilde{Q}\tilde{Q}^\dagger = (e_0 + ie_1)^2 = 2e_0 + 2ie_1,
+\tilde{Q} \tilde{Q}^\dagger = (e_0 + ie_1)^2 = 2e_0 + 2ie_1,
 $$
 
-which has a nonzero vector part. The scalar part of the Hermitian form is the quantity that is non-negative:
+which has a nonzero vector part $2ie_1$.
+
+- The Hermitian form is **not** multiplicative with respect to the biquaternion product, and its scalar part does not in general equal the biquaternion norm $N(\tilde{Q}) = \sum_\mu Q_\mu^2$.
+- The Hermitian form is **Hermitian** in the sense that $(\tilde{Q} \tilde{Q}^\dagger)^\dagger = \tilde{Q} \tilde{Q}^\dagger$: the Hermitian form of any biquaternion is a Hermitian element of $\mathbb{B}$.
+
+## The Inner Product
+
+The **inner product** of two biquaternions is the complex scalar
 
 $$
-\mathrm{Sc}\!\left(\tilde{Q} \tilde{Q}^\dagger\right) = \sum_{\mu=0}^{3} |Q_\mu|^2 = \sum_{\mu=0}^{3} (q_\mu^2 + q'^2_\mu).
+\langle \tilde{P}, \tilde{Q} \rangle = \sum_{\mu=0}^{3} P_\mu^* Q_\mu
+= \sum_{\mu=0}^{3} (p_\mu q_\mu + p'_\mu q'_\mu) + i \sum_{\mu=0}^{3} (p_\mu q'_\mu - p'_\mu q_\mu),
 $$
 
-The scalar part is non-negative, and it vanishes if and only if $\tilde{Q} = 0$. It is the natural "length squared" of $\tilde{Q}$ in the underlying real vector space of dimension 8.
-
-The corresponding **Euclidean norm** is
+with $Q_\mu = q_\mu + i q'_\mu$. It is **sesquilinear**, linear in the second argument and conjugate-linear in the first,
 
 $$
-\|\tilde{Q}\|_E = \sqrt{\mathrm{Sc}\!\left(\tilde{Q} \tilde{Q}^\dagger\right)} = \sqrt{\sum_{\mu=0}^{3} |Q_\mu|^2}.
+\langle \lambda \tilde{P}, \tilde{Q} \rangle = \lambda^* \langle \tilde{P}, \tilde{Q} \rangle, \qquad
+\langle \tilde{P}, \lambda \tilde{Q} \rangle = \lambda \langle \tilde{P}, \tilde{Q} \rangle, \qquad \lambda \in \mathbb{C},
 $$
 
-It is a genuine norm on the real vector space $\mathbb{B} \cong \mathbb{R}^8$: positive-definite, subadditive, and homogeneous of degree one. It is **not** multiplicative with respect to the biquaternion product.
+and **Hermitian**, $\langle \tilde{P}, \tilde{Q} \rangle^* = \langle \tilde{Q}, \tilde{P} \rangle$. It is **non-degenerate**: if $\langle \tilde{P}, \tilde{Q} \rangle = 0$ for every $\tilde{Q}$, then $\tilde{P} = 0$, since testing against the units gives $P_\mu^* = 0$.
 
-### The Inner Product
-
-The **inner product** of two biquaternions $\tilde{P}$ and $\tilde{Q}$ is the complex scalar
-
+The inner product pairs the algebra with its conjugate and is complex-valued in general. Forming it, evaluating it to a scalar, and asking when it vanishes is all that is done with it here; its diagonal value
 $$
-\langle \tilde{P}, \tilde{Q} \rangle = \sum_{\mu=0}^{3} P_\mu^* Q_\mu = \sum_{\mu=0}^{3} (p_\mu q_\mu + p'_\mu q'_\mu) + i \sum_{\mu=0}^{3} (p_\mu q'_\mu - p'_\mu q_\mu).
+\langle \tilde{Q}, \tilde{Q} \rangle = \sum_{\mu=0}^{3} |Q_\mu|^2 = \mathrm{Sc}\!\left(\tilde{Q} \tilde{Q}^\dagger\right)
 $$
-
-In general this is a **complex number**, not a real one. This is a genuinely biquaternionic feature: the inner product of two biquaternions is complex, and its imaginary part measures the "phase" between them.
-
-The inner product is linear in the second argument and anti-linear in the first:
-
-$$
-\langle \lambda \tilde{P}, \tilde{Q} \rangle = \lambda^* \langle \tilde{P}, \tilde{Q} \rangle, \qquad \langle \tilde{P}, \lambda \tilde{Q} \rangle = \lambda \langle \tilde{P}, \tilde{Q} \rangle, \qquad \lambda \in \mathbb{C}.
-$$
-
-It is **Hermitian** in the sense that
-
-$$
-\langle \tilde{P}, \tilde{Q} \rangle^* = \langle \tilde{Q}, \tilde{P} \rangle,
-$$
-
-which follows from the definition.
-
-The inner product of a biquaternion with itself is
-
-$$
-\langle \tilde{Q}, \tilde{Q} \rangle = \sum_{\mu=0}^{3} |Q_\mu|^2,
-$$
-
-which is real and non-negative, and vanishes if and only if $\tilde{Q} = 0$. This is the scalar part of the Hermitian form:
-
-$$
-\langle \tilde{Q}, \tilde{Q} \rangle = \mathrm{Sc}\!\left(\tilde{Q} \tilde{Q}^\dagger\right).
-$$
-
-### Relation Between the Three Forms
-
-The three quadratic objects are related as follows:
-
-- **Norm form:** $N(\tilde{Q}) = \tilde{Q} \bar{\tilde{Q}} = \sum_\mu Q_\mu^2$. Complex-valued in general, can vanish for nonzero $\tilde{Q}$, multiplicative.
-- **Hermitian form:** $\tilde{Q} \tilde{Q}^\dagger$, a biquaternion whose scalar part is $\sum_\mu |Q_\mu|^2$ and whose vector part does not in general vanish. Not multiplicative.
-- **Inner product:** $\langle \tilde{P}, \tilde{Q} \rangle = \sum_\mu P_\mu^* Q_\mu$, a complex scalar in general, Hermitian, linear in the second argument. Its diagonal value $\langle \tilde{Q}, \tilde{Q} \rangle = \sum_\mu |Q_\mu|^2$ equals the scalar part of the Hermitian form.
-
-The three are distinct, and each is useful in a different context. The norm form controls the multiplicative structure. The scalar part of the Hermitian form (equivalently, the diagonal value of the inner product) controls the topological structure: continuity, completeness, the Euclidean topology. The full inner product combines the Hermitian pairing on the complex coefficient space with a phase.
+vanishes only at $\tilde{Q} = 0$.
 
 ## Summary
 
@@ -497,8 +458,6 @@ It carries four natural conjugations, $\bar{\cdot}$, ${}^{*}$, ${}^{\dagger}$ an
 - the **anti-Hermitian subspace** $\mathbb{M}_-$, of dimension 4, fixed by $\flat$.
 
 The three involutions give three direct-sum decompositions, $\mathbb{B} = \mathbb{H}_{\mathbb{B}} \oplus i\mathbb{H}_{\mathbb{B}}$, $\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-$ and $\mathbb{B} = \mathbb{C}_{\mathbb{B}} \oplus \mathrm{Vect}(\mathbb{B})$. They are the three pairings of the four coordinate blocks $\mathbb{R}e_0$, $\mathbb{R}(ie_0)$, $\operatorname{span}_\mathbb{R}\{e_1,e_2,e_3\}$, $\operatorname{span}_\mathbb{R}\{ie_1,ie_2,ie_3\}$, so there is no fourth. Each of the four four-dimensional subspaces is one scalar block plus one vector block; two distinct subspaces meet in dimension $0$, $1$ or $3$, the dimension $0$ occurring exactly for the three complementary pairs.
-
-On the algebra sit three quadratic objects, kept apart throughout: the **norm form** $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$, multiplicative and capable of vanishing for nonzero $\tilde{Q}$; the **Hermitian form** $\tilde{Q}\tilde{Q}^\dagger$, a biquaternion whose scalar part is $\sum_\mu |Q_\mu|^2$; and the complex **inner product** $\langle \tilde{P}, \tilde{Q}\rangle = \sum_\mu P_\mu^* Q_\mu$, whose diagonal value equals that scalar part and which defines the Euclidean norm on $\mathbb{B} \cong \mathbb{R}^8$.
 
 ## Summary of Notation
 
@@ -517,10 +476,9 @@ On the algebra sit three quadratic objects, kept apart throughout: the **norm fo
 | $\tilde{Q}^* = Q_0^* e_0 + \mathbf{Q}^*$ | Complex conjugate |
 | $\tilde{Q}^\dagger = Q_0^* e_0 - \mathbf{Q}^*$ | Hermitian conjugate |
 | $\tilde{Q}^\flat = -\bar{\tilde{Q}}^* = -\tilde{Q}^\dagger$ | Anti-Hermitian conjugate |
-| $N(\tilde{Q}) = \tilde{Q} \bar{\tilde{Q}}$ | Norm form |
+| $\tilde{Q} \tilde{Q}^\dagger$ | Hermitian form; a Hermitian biquaternion, defined before the inner product |
 | $\mathrm{Sc}(\tilde{Q} \tilde{Q}^\dagger) = \sum_\mu |Q_\mu|^2$ | Scalar part of the Hermitian form |
-| $\langle \tilde{P}, \tilde{Q} \rangle = \sum_\mu P_\mu^* Q_\mu$ | Inner product |
-| $\|\tilde{Q}\|_E = \sqrt{\mathrm{Sc}(\tilde{Q}\tilde{Q}^\dagger)}$ | Euclidean norm |
+| $\langle \tilde{P}, \tilde{Q} \rangle = \sum_\mu P_\mu^* Q_\mu$ | Inner product; a complex scalar, formed and evaluated algebraically |
 | $\mathbb{C}_{\mathbb{B}}$ | Center (complex subspace), fixed-point set of $\bar{\cdot}$; basis $e_0, ie_0$ |
 | $\mathrm{Vect}(\mathbb{B})$ | Vector subspace, anti-fixed-point set of $\bar{\cdot}$; $\{\tilde{Q} : \mathrm{Sc}(\tilde{Q}) = 0\} = [\mathbb{B}, \mathbb{B}]$; basis $e_1, e_2, e_3, ie_1, ie_2, ie_3$ |
 | $\mathbb{H}_{\mathbb{B}}$ | Quaternion subspace, fixed-point set of ${}^{*}$; basis $e_0, e_1, e_2, e_3$ |

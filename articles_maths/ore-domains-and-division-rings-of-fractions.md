@@ -21,7 +21,7 @@ The equation $xa = yb$ is the **oriented form** of the left condition: it exhibi
 
 **Theorem (Ore, standard).** A domain satisfies the left Ore condition if and only if it satisfies the right Ore condition. Hence every left Ore domain is a right Ore domain, and conversely.
 
-**Proof.** This is the left–right symmetry theorem of Ore, cited here from the literature rather than re-derived. It is what licenses the single name above: the construction of the next section writes left fractions and uses the left-handed form of the condition, and by the theorem the same construction can be read in right fractions. $\square$
+**Proof.** This is the left–right symmetry theorem of Ore, cited here from the literature rather than re-derived. It is what licenses the single name above: the construction of the next section writes left fractions and uses the left-handed form of the condition, and by the theorem the same construction can be read in right fractions.
 
 **Remark.** The symmetry theorem is not a triviality of definitions: the left condition constrains intersections of left ideals and the right condition intersections of right ideals, and neither inclusion $Aa \cap Ab \neq 0$ nor $aA \cap bA \neq 0$ implies the other by a one-line manipulation. The theorem is used below only to pass from one to the other within a single domain.
 
@@ -29,7 +29,7 @@ The equation $xa = yb$ is the **oriented form** of the left condition: it exhibi
 
 **Theorem (Goldie, standard).** A Noetherian domain, left or right, is an Ore domain.
 
-**Proof.** This is the standard consequence of the ascending chain condition for one-sided ideals, due to Goldie and cited from the literature rather than reproduced here. The argument exhibits, from two nonzero elements with no nonzero common left multiple, a strictly increasing chain of left ideals, which the Noetherian hypothesis forbids. $\square$
+**Proof.** This is the standard consequence of the ascending chain condition for one-sided ideals, due to Goldie and cited from the literature rather than reproduced here. The argument exhibits, from two nonzero elements with no nonzero common left multiple, a strictly increasing chain of left ideals, which the Noetherian hypothesis forbids.
 
 **Corollary.** The Weyl algebra $A_1(k)$ over a field $k$ of characteristic zero is an Ore domain, being a Noetherian domain.
 
@@ -61,11 +61,11 @@ This is again well defined, and the ring axioms follow from the ring axioms of $
 
 *The embedding.* The map $A \to D$ sending $b$ to $1^{-1}b$ is a ring homomorphism, and it is injective by the cancellation criterion of *Non-Commutative Domains*, above: if $1^{-1}b = 0 = 1^{-1}0$ then $(1, b) \sim (1, 0)$ gives nonzero $x, y$ with $x = y$ and $xb = 0$, hence $b = 0$.
 
-*Units.* Let $a^{-1}b \neq 0$, so $b \neq 0$. Taking $c = b$ and $d = a$ in the multiplication formula with $x = y = 1$ gives $(a^{-1}b)(b^{-1}a) = a^{-1}a = 1$, and the symmetric computation gives $1$ on the other side. Hence every nonzero element of $D$ is a unit and $D$ is a division ring. Uniqueness follows from the universal property. $\square$
+*Units.* Let $a^{-1}b \neq 0$, so $b \neq 0$. Taking $c = b$ and $d = a$ in the multiplication formula with $x = y = 1$ gives $(a^{-1}b)(b^{-1}a) = a^{-1}a = 1$, and the symmetric computation gives $1$ on the other side. Hence every nonzero element of $D$ is a unit and $D$ is a division ring. Uniqueness follows from the universal property.
 
 **Theorem (universal property).** Let $A$ be an Ore domain, let $D$ be a division ring and let $\varphi : A \to D$ be a homomorphism with $\varphi(a) \neq 0$ whenever $a \neq 0$. Then $\varphi$ extends uniquely to a homomorphism $\operatorname{Frac}(A) \to D$.
 
-**Proof.** An extension must send $a^{-1}b$ to $\varphi(a)^{-1}\varphi(b)$, so there is at most one. For existence, the formula is well defined on classes: if $xa = yc$ and $xb = yd$ in $A$ with $x, y$ nonzero, then applying $\varphi$ gives $\varphi(x)\varphi(a) = \varphi(y)\varphi(c)$ and $\varphi(x)\varphi(b) = \varphi(y)\varphi(d)$ in $D$, whence $\varphi(a)^{-1}\varphi(b) = \varphi(c)^{-1}\varphi(d)$ by inversion of the nonzero elements. Preservation of sums and products is the two identities used in the construction. Hence there is one extension. $\square$
+**Proof.** An extension must send $a^{-1}b$ to $\varphi(a)^{-1}\varphi(b)$, so there is at most one. For existence, the formula is well defined on classes: if $xa = yc$ and $xb = yd$ in $A$ with $x, y$ nonzero, then applying $\varphi$ gives $\varphi(x)\varphi(a) = \varphi(y)\varphi(c)$ and $\varphi(x)\varphi(b) = \varphi(y)\varphi(d)$ in $D$, whence $\varphi(a)^{-1}\varphi(b) = \varphi(c)^{-1}\varphi(d)$ by inversion of the nonzero elements. Preservation of sums and products is the two identities used in the construction. Hence there is one extension.
 
 **Corollary.** If $A$ is a commutative domain then $\operatorname{Frac}(A)$ is the fraction field of *Localization and the Fraction Field*, above, and the construction above specialises to it; the Ore domains are exactly the domains for which the fraction construction can be carried out with left and right fractions interchanged freely.
 
@@ -103,7 +103,7 @@ $$
 
 the series being a Malcev–Neumann series.
 
-**Proof.** All three statements are the standard combinatorial lemmas of the construction, cited from Malcev and from B. H. Neumann. The first holds because a pair $(u, v)$ with $uv = g$ is determined by $u$, the equation giving $v = u^{-1}g$, so the admissible $u$ form a subset of the well-ordered set $\operatorname{supp}(f)$ and the corresponding $v$ form a subset of $\operatorname{supp}(h)$. If there were infinitely many, then the $u$, being an infinite subset of a well-ordered set, would contain an infinite strictly increasing sequence $u_1 < u_2 < \cdots$, and then $v_i = u_i^{-1}g$ would be an infinite strictly decreasing sequence in $\operatorname{supp}(h)$, which its well-ordering forbids. The second follows from the first and the same well-ordering argument applied to the set of products $uv$. The third is the telescoping identity, which reduces to the first statement applied to the powers of $h$; the support of a power of an element with support above the identity stays above the identity, since the elements above the identity form a subsemigroup. $\square$
+**Proof.** All three statements are the standard combinatorial lemmas of the construction, cited from Malcev and from B. H. Neumann. The first holds because a pair $(u, v)$ with $uv = g$ is determined by $u$, the equation giving $v = u^{-1}g$, so the admissible $u$ form a subset of the well-ordered set $\operatorname{supp}(f)$ and the corresponding $v$ form a subset of $\operatorname{supp}(h)$. If there were infinitely many, then the $u$, being an infinite subset of a well-ordered set, would contain an infinite strictly increasing sequence $u_1 < u_2 < \cdots$, and then $v_i = u_i^{-1}g$ would be an infinite strictly decreasing sequence in $\operatorname{supp}(h)$, which its well-ordering forbids. The second follows from the first and the same well-ordering argument applied to the set of products $uv$. The third is the telescoping identity, which reduces to the first statement applied to the powers of $h$; the support of a power of an element with support above the identity stays above the identity, since the elements above the identity form a subsemigroup.
 
 **Theorem (Malcev–Neumann).** Let $k$ be a field and $G$ an ordered group. Then $k((G))$ is a division ring, and the finitely supported series form a subring isomorphic to the group ring $k[G]$.
 
@@ -125,11 +125,11 @@ $$
 f = f \cdot 1 = f(gh) = (fg)h = h ,
 $$
 
-so $gf = gh = 1$ as well and $g$ is a two-sided inverse. Hence every nonzero element of $k((G))$ is a unit. $\square$
+so $gf = gh = 1$ as well and $g$ is a two-sided inverse. Hence every nonzero element of $k((G))$ is a unit.
 
 **Corollary.** Let $G$ be an ordered group. Then $k[G]$ is an Ore domain, and the inclusion $k[G] \to k((G))$ extends by the universal property to an embedding $\operatorname{Frac}(k[G]) \to k((G))$ of division rings over $k[G]$.
 
-**Proof.** The group ring is the subring of finitely supported series; it has no zero divisors by *Non-Commutative Domains*, above, and that it satisfies the Ore condition is the standard fact that the group ring of an orderable group is an Ore domain, cited from the literature. Hence $\operatorname{Frac}(k[G])$ exists, and the inclusion of $k[G]$ into the division ring $k((G))$ is injective, so the universal property of $\operatorname{Frac}(k[G])$ provides the embedding. $\square$
+**Proof.** The group ring is the subring of finitely supported series; it has no zero divisors by *Non-Commutative Domains*, above, and that it satisfies the Ore condition is the standard fact that the group ring of an orderable group is an Ore domain, cited from the literature. Hence $\operatorname{Frac}(k[G])$ exists, and the inclusion of $k[G]$ into the division ring $k((G))$ is injective, so the universal property of $\operatorname{Frac}(k[G])$ provides the embedding.
 
 **Remark.** The embedding is proper in general, and it need not be an isomorphism: the division ring of fractions of a group ring is the smallest division ring containing it, whereas $k((G))$ also contains series that are not fractions of finitely supported ones. The case $G = \mathbb{Z}$ below exhibits the two rings explicitly. What the construction supplies for the purpose of this chain is not an identification of $k((G))$ with a fraction ring, but a division ring into which an Ore domain embeds, and the two examples of the rung are of that kind.
 
@@ -143,7 +143,7 @@ so $gf = gh = 1$ as well and $g$ is a two-sided inverse. Hence every nonzero ele
 
 **Theorem.** The Weyl algebra $A_1(k)$ over a field $k$ of characteristic zero is a Noetherian domain, hence an Ore domain, and its division ring of fractions is written $D_1(k)$ and called the **first Weyl field**.
 
-**Proof.** The algebra $A_1(k)$ is the skew polynomial ring $k[x][y; \delta]$ with the derivation $\delta(x) = -1$, which is to say $yx - xy = \delta(x) = -1$; the Hilbert basis theorem for skew polynomial rings gives that it is left and right Noetherian, cited here as standard, and it is a domain by *Non-Commutative Domains*, above. By the Noetherian criterion of the first section it is an Ore domain, so Ore's theorem applies and $D_1(k) = \operatorname{Frac}(A_1(k))$ exists. The field $D_1(k)$ is infinite-dimensional over its centre, which is $k$: the standard computation of the centre of the Weyl algebra gives $Z(A_1(k)) = k$, and the powers of $y$ are linearly independent over $k$ inside $A_1(k) \subseteq D_1(k)$. $\square$
+**Proof.** The algebra $A_1(k)$ is the skew polynomial ring $k[x][y; \delta]$ with the derivation $\delta(x) = -1$, which is to say $yx - xy = \delta(x) = -1$; the Hilbert basis theorem for skew polynomial rings gives that it is left and right Noetherian, cited here as standard, and it is a domain by *Non-Commutative Domains*, above. By the Noetherian criterion of the first section it is an Ore domain, so Ore's theorem applies and $D_1(k) = \operatorname{Frac}(A_1(k))$ exists. The field $D_1(k)$ is infinite-dimensional over its centre, which is $k$: the standard computation of the centre of the Weyl algebra gives $Z(A_1(k)) = k$, and the powers of $y$ are linearly independent over $k$ inside $A_1(k) \subseteq D_1(k)$.
 
 **Example.** The first Weyl field is the standard division ring that is infinite-dimensional over its centre, and $A_1(k)$ is the standard Ore domain that is not a group ring and not commutative. It is one of the two kinds of example of *Division Rings*, below this article in this category, the other being finite-dimensional over its centre.
 
@@ -155,7 +155,7 @@ so $gf = gh = 1$ as well and $g$ is a two-sided inverse. Hence every nonzero ele
 
 **Theorem.** The free algebra $k\langle x_1, x_2\rangle$ satisfies neither the left nor the right Ore condition: $Ax_1 \cap Ax_2 = 0$ and $x_1A \cap x_2A = 0$.
 
-**Proof.** An element of $Ax_1$ is a $k$-linear combination of words ending in $x_1$, and an element of $Ax_2$ is a combination of words ending in $x_2$, as noted in *Non-Commutative Domains*, above, where the free algebra is defined and shown to be a domain. No word ends in both letters, so a combination lying in both ideals is zero; the right-handed statement is the same argument read from the other end. $\square$
+**Proof.** An element of $Ax_1$ is a $k$-linear combination of words ending in $x_1$, and an element of $Ax_2$ is a combination of words ending in $x_2$, as noted in *Non-Commutative Domains*, above, where the free algebra is defined and shown to be a domain. No word ends in both letters, so a combination lying in both ideals is zero; the right-handed statement is the same argument read from the other end.
 
 **Corollary.** The free algebra has no division ring of fractions, and the failure is witnessed by the two generators: they have no nonzero common left multiple and no nonzero common right multiple.
 

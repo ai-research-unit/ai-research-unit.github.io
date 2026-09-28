@@ -29,7 +29,7 @@ The name *contact* records the opposite of tangency: the planes are not tangent 
 $$
 (\alpha\wedge\beta)(u,v,w) = \alpha(u)\,\beta(v,w) - \alpha(v)\,\beta(u,w) + \alpha(w)\,\beta(u,v),
 $$
-applied with $\beta = d\alpha$ and with $u, v \in \xi$, gives $\alpha(w)\,d\alpha(u,v) = 0$ for every $w$, and choosing $w$ with $\alpha(w)\neq0$ gives $d\alpha(u,v)=0$; so $\xi$ is integrable by Frobenius. Finally, if $\alpha\wedge(d\alpha)^{\wedge n} \neq 0$ then $d\alpha$ is nondegenerate on $\xi_x$: a vector $u \in \xi_x$ with $d\alpha(u, v) = 0$ for all $v \in \xi_x$ could be used to contract the volume form to zero, contradicting the nonvanishing. Hence the maximal isotropic subspaces of the symplectic space $(\xi_x, d\alpha_x)$ have dimension $n$, and a submanifold tangent to $\xi$ has tangent spaces isotropic for $d\alpha$, so its dimension is at most $n$. $\square$
+applied with $\beta = d\alpha$ and with $u, v \in \xi$, gives $\alpha(w)\,d\alpha(u,v) = 0$ for every $w$, and choosing $w$ with $\alpha(w)\neq0$ gives $d\alpha(u,v)=0$; so $\xi$ is integrable by Frobenius. Finally, if $\alpha\wedge(d\alpha)^{\wedge n} \neq 0$ then $d\alpha$ is nondegenerate on $\xi_x$: a vector $u \in \xi_x$ with $d\alpha(u, v) = 0$ for all $v \in \xi_x$ could be used to contract the volume form to zero, contradicting the nonvanishing. Hence the maximal isotropic subspaces of the symplectic space $(\xi_x, d\alpha_x)$ have dimension $n$, and a submanifold tangent to $\xi$ has tangent spaces isotropic for $d\alpha$, so its dimension is at most $n$.
 
 **Proposition.** Let $\alpha$ be a contact form and let $f \in C^\infty(M)$ be nowhere vanishing. Then $f\alpha$ is a contact form, and
 
@@ -45,7 +45,7 @@ $$
 (d(f\alpha))^{\wedge n} = f^{\,n}(d\alpha)^{\wedge n} + n\,f^{\,n-1}\,(d\alpha)^{\wedge(n-1)}\wedge df\wedge\alpha,
 $$
 
-all other terms containing a repeated factor $\alpha\wedge\alpha$ or $df\wedge df$, and both vanish. Multiplying by $f\alpha$ kills the second term, since it contains $\alpha\wedge\alpha$, and leaves $f^{\,n+1}\alpha\wedge(d\alpha)^{\wedge n}$. $\square$
+all other terms containing a repeated factor $\alpha\wedge\alpha$ or $df\wedge df$, and both vanish. Multiplying by $f\alpha$ kills the second term, since it contains $\alpha\wedge\alpha$, and leaves $f^{\,n+1}\alpha\wedge(d\alpha)^{\wedge n}$.
 
 **Remark.** The contact structure is therefore a **geometric** object, the hyperplane field, and the contact form is an auxiliary choice; a contact form is a **coorientation** of the field, and a contact structure is **coorientable** when a global defining form exists. A cooriented contact manifold is oriented by the volume form $\alpha\wedge(d\alpha)^{\wedge n}$, so the contact condition is a condition of maximal non-degeneracy in both the odd direction and the contact planes. The factor $f^{\,n+1}$ in the transformation law is the contact analogue of the conformal ambiguity of a symplectic form on a fixed hyperplane field.
 
@@ -97,11 +97,11 @@ $$
 \iota_{X_t}d\alpha_t + \dot\alpha_t + d\bigl(\alpha_t(X_t)\bigr) = \mu_t\,\alpha_t ,
 $$
 
-one solves it by looking for $X_t$ with $\alpha_t(X_t) = 0$, that is with $X_t$ tangent to the contact planes. Then the left-hand side has vanishing contraction with the Reeb field of $\alpha_t$, and the contact-plane component of the equation reads $\iota_{X_t}d\alpha_t = -\dot\alpha_t$ on $\ker\alpha_t$, which determines $X_t$ uniquely because $d\alpha_t$ is nondegenerate on $\ker\alpha_t$. With $X_t$ so chosen the difference $\iota_{X_t}d\alpha_t + \dot\alpha_t$ vanishes on the contact planes, hence is a multiple $\mu_t\alpha_t$ of the contact form, since the contact planes are the kernel of $\alpha_t$. The flow of $X_t$ at time $1$ is then the required contactomorphism. $\square$
+one solves it by looking for $X_t$ with $\alpha_t(X_t) = 0$, that is with $X_t$ tangent to the contact planes. Then the left-hand side has vanishing contraction with the Reeb field of $\alpha_t$, and the contact-plane component of the equation reads $\iota_{X_t}d\alpha_t = -\dot\alpha_t$ on $\ker\alpha_t$, which determines $X_t$ uniquely because $d\alpha_t$ is nondegenerate on $\ker\alpha_t$. With $X_t$ so chosen the difference $\iota_{X_t}d\alpha_t + \dot\alpha_t$ vanishes on the contact planes, hence is a multiple $\mu_t\alpha_t$ of the contact form, since the contact planes are the kernel of $\alpha_t$. The flow of $X_t$ at time $1$ is then the required contactomorphism.
 
 **Theorem (Gray).** Let $\alpha_t$, $t \in [0,1]$, be a smooth family of contact forms on a closed manifold. Then there is an isotopy $\varphi_t$ with $\varphi_t^*\alpha_t = f_t\alpha_0$ for nowhere vanishing functions $f_t$; in particular all the contact structures $\ker\alpha_t$ are contactomorphic.
 
-**Proof sketch.** The argument is the one above, with the deformation replaced by the given family; the Moser equation is solvable at each time because the contact condition is open and the manifold is closed, so the flow exists for all $t \in [0,1]$. $\square$
+**Proof sketch.** The argument is the one above, with the deformation replaced by the given family; the Moser equation is solvable at each time because the contact condition is open and the manifold is closed, so the flow exists for all $t \in [0,1]$.
 
 **Corollary.** A contact structure has no local invariants: in a neighbourhood of every point it is the standard one, and a contact invariant of a manifold is global. This is the contact counterpart of the Darboux theorem for symplectic forms, and it is why the subject is a topology rather than a local geometry.
 
@@ -115,7 +115,7 @@ $$
 
 **Proposition.** The Reeb vector field exists and is unique. It is transverse to the contact structure, and it is nowhere vanishing.
 
-**Proof.** Uniqueness and transversality: if $R$ satisfies the two conditions, then $\alpha(R) = 1$ fixes its component along the contact direction, and $d\alpha(R, v) = 0$ for $v \in \ker\alpha$ fixes its contact-plane component, since $d\alpha$ is nondegenerate on $\ker\alpha$. For existence, pick any vector field $V$ with $\alpha(V) = 1$ and subtract the unique $W \in \ker\alpha$ solving $\iota_W d\alpha = -\iota_V d\alpha$ on $\ker\alpha$; then $R_\alpha = V + W$ satisfies both conditions. $\square$
+**Proof.** Uniqueness and transversality: if $R$ satisfies the two conditions, then $\alpha(R) = 1$ fixes its component along the contact direction, and $d\alpha(R, v) = 0$ for $v \in \ker\alpha$ fixes its contact-plane component, since $d\alpha$ is nondegenerate on $\ker\alpha$. For existence, pick any vector field $V$ with $\alpha(V) = 1$ and subtract the unique $W \in \ker\alpha$ solving $\iota_W d\alpha = -\iota_V d\alpha$ on $\ker\alpha$; then $R_\alpha = V + W$ satisfies both conditions.
 
 **Remark.** The Reeb field is a transverse vector field, and together with the contact structure it decomposes the tangent bundle as $TM = \xi\oplus\mathbb{R}R_\alpha$. The **contact form is invariant under a contactomorphism only after a conformal factor**, so the Reeb field is not determined by the contact structure alone; it changes when the defining form is multiplied by a function. The flow of the Reeb field, the **Reeb flow**, is a dynamical system, and its periodic orbits, its return map and its asymptotic behaviour are studied in Part III. The contact-geometric input to that study is the field $R_\alpha$ itself; the analysis of its flow is not part of this article.
 
@@ -127,7 +127,7 @@ $$
 
 **Proposition.** An isotropic submanifold of a contact manifold of dimension $2n+1$ has dimension at most $n$, and a Legendrian submanifold has dimension exactly $n$; the tangent space of a Legendrian at each point is a Lagrangian subspace of the symplectic space $(\xi_x, d\alpha_x)$.
 
-**Proof.** For $x \in L$ the tangent space $T_xL$ is isotropic for $d\alpha_x$, which is a nondegenerate alternating form on the $2n$-dimensional space $\xi_x$; the dimension bound and the equality $\dim T_xL = n$ for the maximal case are those of the isotropic subspaces of a symplectic vector space, as in *Symplectic Forms and Poisson Brackets*. $\square$
+**Proof.** For $x \in L$ the tangent space $T_xL$ is isotropic for $d\alpha_x$, which is a nondegenerate alternating form on the $2n$-dimensional space $\xi_x$; the dimension bound and the equality $\dim T_xL = n$ for the maximal case are those of the isotropic subspaces of a symplectic vector space, as in *Symplectic Forms and Poisson Brackets*.
 
 **Example.** In the standard contact $\mathbb{R}^3$ with $\alpha = dz - y\,dx$, a Legendrian curve is a curve $\gamma(t) = (x(t), y(t), z(t))$ with $\dot z = y\dot x$; the Legendrian condition is a first-order equation on the curve, and it can always be integrated locally. In the standard contact $S^3$ the fibres of the Hopf fibration are the orbits of the Reeb field, hence transverse circles, while the standard Legendrians are the curves tangent to the contact planes; the classification of both families is part of *Symplectic and Contact Topology*.
 
@@ -151,7 +151,7 @@ $$
 \omega^{\wedge(n+1)} = e^{(n+1)t}\,(dt\wedge\alpha + d\alpha)^{\wedge(n+1)} = (n+1)\,e^{(n+1)t}\,dt\wedge\alpha\wedge(d\alpha)^{\wedge n},
 $$
 
-where all terms containing a repeated factor among $dt$, $\alpha$ and $d\alpha$ vanish except the displayed one: the only surviving term is the one with one factor $dt\wedge\alpha$ and $n$ factors of $d\alpha$, whose coefficient is $\binom{n+1}{1} = n+1$, and $\alpha\wedge(d\alpha)^{\wedge n}\neq 0$ by the contact condition. Hence the top power is nowhere vanishing and $\omega$ is nondegenerate. $\square$
+where all terms containing a repeated factor among $dt$, $\alpha$ and $d\alpha$ vanish except the displayed one: the only surviving term is the one with one factor $dt\wedge\alpha$ and $n$ factors of $d\alpha$, whose coefficient is $\binom{n+1}{1} = n+1$, and $\alpha\wedge(d\alpha)^{\wedge n}\neq 0$ by the contact condition. Hence the top power is nowhere vanishing and $\omega$ is nondegenerate.
 
 **Remark.** The symplectisation is the precise sense in which a contact manifold is the boundary at infinity of a symplectic manifold: the level sets $M\times\{t\}$ are contact-type hypersurfaces, the restriction of $\omega$ to each is $e^t d\alpha$, and the contact form is recovered as the contraction of $\omega$ with a suitable transverse field. Conversely, a hypersurface in a symplectic manifold along which the symplectic form has this shape is said to be of **contact type**, and the contact geometry is the study of the boundary. Legendrian submanifolds of $M$ lift to **Lagrangian** submanifolds of the symplectisation by $L \mapsto L\times\mathbb{R}$, which is the geometric content of the correspondence: $\omega$ restricts to zero on $L\times\mathbb{R}$ because it restricts to zero on $L$ and $dt$ pairs with $\alpha$ only through the transverse direction.
 
@@ -163,7 +163,7 @@ where all terms containing a repeated factor among $dt$, $\alpha$ and $d\alpha$ 
 
 **Proposition.** The complex tangent space of a hypersurface in a complex manifold is a hyperplane field of real codimension one, and a strictly pseudoconvex hypersurface carries a natural contact form: the restriction to $\Sigma$ of $\alpha = -d^c\rho$, where $d^c$ is the twisted differential. The resulting contact structure has $T\Sigma\cap i\,T\Sigma$ as its contact planes.
 
-**Proof sketch.** The complex tangent bundle $T\Sigma\cap i\,T\Sigma$ has real dimension $2n$ in $\Sigma$ of dimension $2n+1$, so it is a hyperplane field. The Levi form is, up to a factor, the restriction of $d\alpha$ to the complex tangent space, and strict pseudoconvexity is the statement that this restriction is definite, hence nondegenerate; the contact condition follows. $\square$
+**Proof sketch.** The complex tangent bundle $T\Sigma\cap i\,T\Sigma$ has real dimension $2n$ in $\Sigma$ of dimension $2n+1$, so it is a hyperplane field. The Levi form is, up to a factor, the restriction of $d\alpha$ to the complex tangent space, and strict pseudoconvexity is the statement that this restriction is definite, hence nondegenerate; the contact condition follows.
 
 **Example.** The unit sphere $S^{2n+1}$ in $\mathbb{C}^{n+1}$ is the regular level set of $\rho(z) = |z|^2 - 1$, and it is strictly pseudoconvex; the induced contact structure is the standard one of the examples above. The general construction produces a contact structure on the boundary of every strictly pseudoconvex doma, and in dimension three the boundaries of the domains in $\mathbb{C}^2$ are the standard source of contact $3$-manifolds. The complex and Kähler structures used here are those andbeing; a contact metric structure compatible with the contact form in this way is a **Sasakian structure**, and the Sasakian manifolds form the odd-dimensional companion family to the Kähler manifolds.
 

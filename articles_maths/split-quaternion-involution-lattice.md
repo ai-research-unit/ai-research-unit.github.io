@@ -37,7 +37,7 @@ $$
 \alpha(\tilde q y) = \alpha(\tilde q)\alpha(y), \qquad \rho(\tilde q y) = \rho(y)\rho(\tilde q), \qquad \overline{\tilde q y} = \bar{y}\,\bar{\tilde q}.
 $$
 
-**Proof.** It suffices to check the generators, using $e_3 = e_1 e_2$. For $\alpha$: $\alpha(e_1)\alpha(e_2) = (-e_1)(-e_2) = e_1 e_2 = e_3 = \alpha(e_3)$, and the squares are preserved. For $\rho$: $\rho(e_2)\rho(e_1) = e_2 e_1 = -e_3 = \rho(e_3)$. For the conjugation: $\bar{e_2}\bar{e_1} = (-e_2)(-e_1) = e_2 e_1 = -e_3 = \bar{e_3}$. $\square$
+**Proof.** It suffices to check the generators, using $e_3 = e_1 e_2$. For $\alpha$: $\alpha(e_1)\alpha(e_2) = (-e_1)(-e_2) = e_1 e_2 = e_3 = \alpha(e_3)$, and the squares are preserved. For $\rho$: $\rho(e_2)\rho(e_1) = e_2 e_1 = -e_3 = \rho(e_3)$. For the conjugation: $\bar{e_2}\bar{e_1} = (-e_2)(-e_1) = e_2 e_1 = -e_3 = \bar{e_3}$.
 
 ## The Group They Generate
 
@@ -53,7 +53,7 @@ so that any two of them determine the third. Equivalent forms are $\bar{\cdot}\,
 
 **Theorem.** The set $G = \{\operatorname{id}, \alpha, \rho, \bar{\cdot}\}$ is closed under composition and is a group, isomorphic to the **Klein four-group** $\mathbb{Z}/2 \times \mathbb{Z}/2$. Every non-identity element is an involution.
 
-**Proof.** Closure follows from the rules above: the product of two distinct involutions is the third, and the square of each is the identity; the identity is included. Associativity is inherited from the composition of functions. Hence $G$ is a group of order $4$ in which every element has order $2$, which is $\mathbb{Z}/2 \times \mathbb{Z}/2$. $\square$
+**Proof.** Closure follows from the rules above: the product of two distinct involutions is the third, and the square of each is the identity; the identity is included. Associativity is inherited from the composition of functions. Hence $G$ is a group of order $4$ in which every element has order $2$, which is $\mathbb{Z}/2 \times \mathbb{Z}/2$.
 
 ### Composition Table
 
@@ -128,7 +128,7 @@ with $\tilde q$ repeated exactly when $G$ does not act freely at $\tilde q$. The
 | $2$ | $\{\operatorname{id}, \alpha\}$ | $q_1 = q_2 = 0$, $q_3 \neq 0$ |
 | $1$ | $G$ | $q_1 = q_2 = q_3 = 0$, i.e. $\tilde q \in S$ |
 
-**Proof.** For generic $\tilde q$ with $q_1,q_2,q_3 \neq 0$, the four images are distinct, so $|\operatorname{Orb}(\tilde q)| = 4$ and the stabiliser is trivial. If $q_3 = 0$ but $(q_1,q_2) \neq (0,0)$, the images of $\tilde q$ and $\rho(\tilde q)$ coincide, since $\rho$ fixes $e_1$ and $e_2$, and $\bar{\tilde q}, \alpha(\tilde q)$ coincide for the same reason; the orbit has size $2$ and the stabiliser is $\{\operatorname{id},\rho\}$. If $q_1 = q_2 = 0$ and $q_3 \neq 0$, then $\alpha$ fixes $\tilde q$ while $\bar{\cdot}$ and $\rho$ coincide, giving size $2$ and stabiliser $\{\operatorname{id},\alpha\}$. If $\tilde q \in S$ then every element of $G$ fixes $\tilde q$, giving the singleton orbit and stabiliser $G$. $\square$
+**Proof.** For generic $\tilde q$ with $q_1,q_2,q_3 \neq 0$, the four images are distinct, so $|\operatorname{Orb}(\tilde q)| = 4$ and the stabiliser is trivial. If $q_3 = 0$ but $(q_1,q_2) \neq (0,0)$, the images of $\tilde q$ and $\rho(\tilde q)$ coincide, since $\rho$ fixes $e_1$ and $e_2$, and $\bar{\tilde q}, \alpha(\tilde q)$ coincide for the same reason; the orbit has size $2$ and the stabiliser is $\{\operatorname{id},\rho\}$. If $q_1 = q_2 = 0$ and $q_3 \neq 0$, then $\alpha$ fixes $\tilde q$ while $\bar{\cdot}$ and $\rho$ coincide, giving size $2$ and stabiliser $\{\operatorname{id},\alpha\}$. If $\tilde q \in S$ then every element of $G$ fixes $\tilde q$, giving the singleton orbit and stabiliser $G$.
 
 The count is exact because $G$ acts in the $(q_1,q_2,q_3)$-coordinates through the subgroup
 

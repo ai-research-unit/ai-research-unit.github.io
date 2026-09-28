@@ -19,7 +19,7 @@ Throughout, $R$ is a ring; where a statement needs commutativity that hypothesis
 
 **Definition.** A morphism $f:A\to B$ is a **monomorphism** if $fg=fh$ implies $g=h$, an **epimorphism** if $gf=hf$ implies $g=h$, and an **isomorphism** if it has a two-sided inverse. In $R\text{-}\mathbf{Mod}$ the monomorphisms are exactly the injective maps and the epimorphisms exactly the surjective maps.
 
-*Proof of the last claim.* Injectivity is clearly sufficient for being a monomorphism, and conversely if $f$ is not injective, the inclusion $0\to\ker f$ and the zero map $\ker f\to A$ are distinct maps with the same composite with $f$. The argument for epimorphisms is dual, using the projection $B\to B/\operatorname{im}f$ and the zero map. $\square$
+*Proof of the last claim.* Injectivity is clearly sufficient for being a monomorphism, and conversely if $f$ is not injective, the inclusion $0\to\ker f$ and the zero map $\ker f\to A$ are distinct maps with the same composite with $f$. The argument for epimorphisms is dual, using the projection $B\to B/\operatorname{im}f$ and the zero map.
 
 ### Functors
 
@@ -67,7 +67,7 @@ The assignment $(M,N)\mapsto\operatorname{Hom}_R(M,N)$ is a functor of two varia
 
 **Proposition.** $R\text{-}\mathbf{Mod}$ has a zero object, the zero module, and every finite family of modules has a biproduct, the direct sum, which is at the same time the direct product.
 
-*Proof.* The only linear map $0\to M$ and the only linear map $M\to0$ are the zero maps, so $0$ is initial and terminal. The direct sum $\bigoplus_{i}M_i$ with inclusions $\iota_i$ satisfies the universal property of the coproduct: a family of maps $f_i:M_i\to P$ extends uniquely to $\bigoplus_iM_i$. The direct product $\prod_iM_i$ with projections satisfies the universal property of the product. For a finite family the two objects coincide as constructed in *Direct Sums, Free Modules and Rank*, and the four identities of a biproduct hold. $\square$
+*Proof.* The only linear map $0\to M$ and the only linear map $M\to0$ are the zero maps, so $0$ is initial and terminal. The direct sum $\bigoplus_{i}M_i$ with inclusions $\iota_i$ satisfies the universal property of the coproduct: a family of maps $f_i:M_i\to P$ extends uniquely to $\bigoplus_iM_i$. The direct product $\prod_iM_i$ with projections satisfies the universal property of the product. For a finite family the two objects coincide as constructed in *Direct Sums, Free Modules and Rank*, and the four identities of a biproduct hold.
 
 The coincidence of finite products and finite coproducts is a strong structural feature. A category with a zero object and biproducts, in which every hom set is an abelian group and composition is bilinear, is called **additive**; $R\text{-}\mathbf{Mod}$ is the basic example, and the axioms and consequences of additivity are not covered here.
 
@@ -77,11 +77,11 @@ The coincidence of finite products and finite coproducts is a strong structural 
 
 **Proposition.** $R\text{-}\mathbf{Mod}$ has all kernels and cokernels: $\ker f$ is the submodule $\{a:f(a)=0\}$ with its inclusion, and $\operatorname{coker}f$ is the quotient $B/\operatorname{im}f$ with the projection.
 
-*Proof.* A linear map $g:X\to A$ with $fg=0$ has image in $\{a:f(a)=0\}$, and the induced map $X\to\ker f$ is the unique one whose composite with the inclusion is $g$. The cokernel statement is dual, using that a linear map $h:B\to Y$ with $hf=0$ vanishes on $\operatorname{im}f$ and therefore factors uniquely through $B/\operatorname{im}f$. $\square$
+*Proof.* A linear map $g:X\to A$ with $fg=0$ has image in $\{a:f(a)=0\}$, and the induced map $X\to\ker f$ is the unique one whose composite with the inclusion is $g$. The cokernel statement is dual, using that a linear map $h:B\to Y$ with $hf=0$ vanishes on $\operatorname{im}f$ and therefore factors uniquely through $B/\operatorname{im}f$.
 
 **Proposition.** The canonical map $\operatorname{coim}f=\operatorname{coker}(\ker f\to A)\to\ker(B\to\operatorname{coker}f)=\operatorname{im}f$ is an isomorphism; it is the first isomorphism theorem in categorical form.
 
-*Proof.* The map is the one induced on the quotient $A/\ker f$ by $f$, and the first isomorphism theorem identifies $A/\ker f$ with $\operatorname{im}f$. $\square$
+*Proof.* The map is the one induced on the quotient $A/\ker f$ by $f$, and the first isomorphism theorem identifies $A/\ker f$ with $\operatorname{im}f$.
 
 A category with a zero object, biproducts, and kernels and cokernels in which every such canonical map is an isomorphism is called **abelian**. The category $R\text{-}\mathbf{Mod}$ is abelian; the abstract definition, its consequences and its generalisations are not covered here.
 
@@ -93,7 +93,7 @@ A category with a zero object, biproducts, and kernels and cokernels in which ev
 
 **Theorem.** For every $R$-module $M$ the functors $\operatorname{Hom}_R(M,-)$ and $\operatorname{Hom}_R(-,M)$ are additive and left exact, and $-\otimes_RM$ is additive and right exact; over a commutative ring all three are additive.
 
-*Proof.* Additivity is immediate. Left exactness of $\operatorname{Hom}_R(M,-)$ in the second variable and of $\operatorname{Hom}_R(-,M)$ in the first, together with right exactness of $-\otimes_RM$, are the theorems of the articles on exact sequences and flatness and exactness. $\square$
+*Proof.* Additivity is immediate. Left exactness of $\operatorname{Hom}_R(M,-)$ in the second variable and of $\operatorname{Hom}_R(-,M)$ in the first, together with right exactness of $-\otimes_RM$, are the theorems of the articles on exact sequences and flatness and exactness.
 
 ### Exact Sequences as Categorical Data
 
@@ -105,7 +105,7 @@ The representability of the functors attached to a module is what makes the clas
 
 **Proposition.** (i) $P$ is projective if and only if $\operatorname{Hom}_R(P,-)$ is exact. (ii) $I$ is injective if and only if $\operatorname{Hom}_R(-,I)$ is exact. (iii) $N$ is flat if and only if $-\otimes_RN$ is exact.
 
-*Proof.* These are the theorems of the articles on projective and injective modules and on flatness and exactness, restated as exactness of the corresponding functors. $\square$
+*Proof.* These are the theorems of the articles on projective and injective modules and on flatness and exactness, restated as exactness of the corresponding functors.
 
 **Remark.** Projectivity and injectivity are therefore properties of the functors $\operatorname{Hom}_R(P,-)$ and $\operatorname{Hom}_R(-,I)$, and flatness a property of $-\otimes_RN$. The categories over which every module is projective are exactly the semisimple rings; over a field, for instance, every module is free and hence projective. The categorified statements — enough projectives, enough injectives, the derived functors — measure the failure of these functors to be exact.
 
@@ -123,7 +123,7 @@ for all objects $A$ of $\mathcal{C}$ and $B$ of $\mathcal{D}$. Then $F$ is the *
 
 **Theorem.** The free-module functor $F:\mathbf{Set}\to R\text{-}\mathbf{Mod}$ that sends a set $X$ to the free module $R^{(X)}$ on $X$ is left adjoint to the forgetful functor $U:R\text{-}\mathbf{Mod}\to\mathbf{Set}$: for every set $X$ and every module $M$ there is a natural bijection $\operatorname{Hom}_R(R^{(X)},M)\cong\operatorname{Hom}_{\mathbf{Set}}(X,UM)$.
 
-*Proof.* A linear map out of the free module on $X$ is determined by its values on the basis $X$, and these may be prescribed arbitrarily; the correspondence between a linear map and the restriction of its underlying function to $X$ is the required bijection. Naturality is immediate. $\square$
+*Proof.* A linear map out of the free module on $X$ is determined by its values on the basis $X$, and these may be prescribed arbitrarily; the correspondence between a linear map and the restriction of its underlying function to $X$ is the required bijection. Naturality is immediate.
 
 **Corollary.** Left adjoints preserve colimits and right adjoints preserve limits. In particular the free functor preserves coproducts — the free module on a disjoint union is the direct sum — and $R\text{-}\mathbf{Mod}$ has all colimits, and all limits, because $\mathbf{Set}$ does and the functors transfer them.
 
@@ -137,7 +137,7 @@ $$
 
 so that $- \otimes_RN$ is left adjoint to $\operatorname{Hom}_R(N,-)$.
 
-*Proof.* This is the tensor–hom adjunction of the articles on the balanced product and on flatness and exactness: the map on the left is sent to $m\mapsto(n\mapsto\varphi(m\otimes n))$, and the two constructions are inverse and natural. $\square$
+*Proof.* This is the tensor–hom adjunction of the articles on the balanced product and on flatness and exactness: the map on the left is sent to $m\mapsto(n\mapsto\varphi(m\otimes n))$, and the two constructions are inverse and natural.
 
 **Corollary.** $-\otimes_RN$ preserves all colimits, hence is right exact and distributes over direct sums and cokernels; $\operatorname{Hom}_R(N,-)$ preserves all limits, hence is left exact.
 
@@ -151,7 +151,7 @@ The adjunction is the structural explanation of the asymmetry recorded in *Exact
 
 **Proposition.** The regular module $R$ is a **generator** of $R\text{-}\mathbf{Mod}$: for every module $M$ there is a set $X$ and a surjection $R^{(X)}\to M$; equivalently, every module is a quotient of a free module.
 
-*Proof.* Choose a generating set $X$ of $M$, which exists by taking $X=M$; the linear map $R^{(X)}\to M$ sending the basis element $x$ to $x$ is surjective. $\square$
+*Proof.* Choose a generating set $X$ of $M$, which exists by taking $X=M$; the linear map $R^{(X)}\to M$ sending the basis element $x$ to $x$ is surjective.
 
 **Proposition.** The functor $\operatorname{Hom}_R(R,-)$ is naturally isomorphic to the identity functor of $R\text{-}\mathbf{Mod}$: a linear map $R\to M$ is determined by the image of $1$, and every element of $M$ occurs. Dually $\operatorname{Hom}_R(-,R)$ is the dual-module functor on the side on which $R$ acts.
 
@@ -163,7 +163,7 @@ The regular module is the object through which the ring is recovered from its ca
 
 **Lemma (Yoneda).** For every functor $F:\mathcal{C}^{\mathrm{op}}\to\mathbf{Set}$ and every object $A$ there is a bijection $\operatorname{Nat}(\mathcal{C}(-,A),F)\cong F(A)$; consequently the functor $A\mapsto\mathcal{C}(-,A)$ is a full embedding $\mathcal{C}^{\mathrm{op}}\hookrightarrow[\mathcal{C},\mathbf{Set}]$.
 
-*Proof.* A natural transformation $\eta:\mathcal{C}(-,A)\to F$ is determined by $\eta_A(\operatorname{id}_A)\in F(A)$, by naturality applied to the maps into $A$; conversely an element $u\in F(A)$ defines $\eta$ by $\eta_B(f)=F(f)(u)$. The two assignments are inverse. Fullness and faithfulness follow by applying the bijection to representable functors. $\square$
+*Proof.* A natural transformation $\eta:\mathcal{C}(-,A)\to F$ is determined by $\eta_A(\operatorname{id}_A)\in F(A)$, by naturality applied to the maps into $A$; conversely an element $u\in F(A)$ defines $\eta$ by $\eta_B(f)=F(f)(u)$. The two assignments are inverse. Fullness and faithfulness follow by applying the bijection to representable functors.
 
 **Corollary.** The universal properties used throughout the corpus are representability statements. The tensor product represents the multilinear maps, the direct sum represents the families of maps, the kernel represents the maps killed by $f$, and the localisation represents the maps inverting a set. In every case the object is determined up to a unique isomorphism by the property.
 
@@ -177,7 +177,7 @@ The regular module is the object through which the ring is recovered from its ca
 
 **Theorem.** A right exact additive functor $F:R\text{-}\mathbf{Mod}\to S\text{-}\mathbf{Mod}$ that preserves direct sums is naturally isomorphic to $F(R)\otimes_R-$, and it is an equivalence exactly when the right $R$-module $F(R)$ is a finitely generated projective generator of $R\text{-}\mathbf{Mod}$. Equivalently, the equivalences are the functors $P\otimes_R-$ for an $(S,R)$-bimodule $P$ that is a finitely generated projective generator as a right $R$-module; the bimodule is then the endomorphism ring in the sense that the left action of $S$ on $P$ identifies $S\cong\operatorname{End}_R(P)$, an anti-isomorphism being unnecessary because $P$ is a right module.
 
-*Proof.* This is the Eilenberg–Watts theorem. The forward direction is the construction of the bimodule $P=F(R)$ and the natural isomorphism $F(M)\cong F(R)\otimes_RM$ for a right exact additive functor preserving direct sums. The converse is the Morita theorem, which identifies the inverse as $\operatorname{Hom}_S(P,-)$. $\square$
+*Proof.* This is the Eilenberg–Watts theorem. The forward direction is the construction of the bimodule $P=F(R)$ and the natural isomorphism $F(M)\cong F(R)\otimes_RM$ for a right exact additive functor preserving direct sums. The converse is the Morita theorem, which identifies the inverse as $\operatorname{Hom}_S(P,-)$.
 
 **Example.** The matrix ring $M_n(R)$ is Morita equivalent to $R$: the functor $R\text{-}\mathbf{Mod}\to M_n(R)\text{-}\mathbf{Mod}$ sending a module $M$ to the column module $M^n$, with $M_n(R)$ acting on the left by matrix multiplication, is an equivalence, with inverse $N\mapsto e_{11}N$; the progenerator is the left module $R^n$, and $\operatorname{End}_R(R^n)\cong M_n(R)$. Two rings $R$ and $S$ are Morita equivalent if and only if $S\cong\operatorname{End}_R(P)^{\mathrm{op}}$ for a finitely generated projective generator $P$ of $R\text{-}\mathbf{Mod}$; for a right $R$-module progenerator the anti-isomorphism is not needed and $S\cong\operatorname{End}_R(P)$, which is the form in which the Eilenberg–Watts theorem above produces it.
 
@@ -187,7 +187,7 @@ The regular module is the object through which the ring is recovered from its ca
 
 **Proposition.** If $R$ and $S$ are Morita equivalent then their centres are isomorphic as rings. Consequently two commutative rings are Morita equivalent if and only if they are isomorphic.
 
-*Proof.* The centre of $R$ is the ring of natural endomorphisms of the identity functor of $R\text{-}\mathbf{Mod}$, namely the endomorphisms of the regular module that commute with all endomorphisms; an equivalence of categories induces a ring isomorphism between the rings of natural endomorphisms of the two identity functors. If $R$ is commutative and $S$ is Morita equivalent to $R$, then $S\cong Z(S)\cong Z(R)\cong R$ as rings, so the two rings are isomorphic. $\square$
+*Proof.* The centre of $R$ is the ring of natural endomorphisms of the identity functor of $R\text{-}\mathbf{Mod}$, namely the endomorphisms of the regular module that commute with all endomorphisms; an equivalence of categories induces a ring isomorphism between the rings of natural endomorphisms of the two identity functors. If $R$ is commutative and $S$ is Morita equivalent to $R$, then $S\cong Z(S)\cong Z(R)\cong R$ as rings, so the two rings are isomorphic.
 
 ### Left and Right Modules
 
@@ -201,7 +201,7 @@ For a ring $R$ the categories $R\text{-}\mathbf{Mod}$ and $\mathbf{Mod}\text{-}R
 
 **Theorem.** The category $R\text{-}\mathbf{Mod}$ is complete and cocomplete: every small diagram has a limit and a colimit.
 
-*Proof.* The forgetful functor to $\mathbf{Set}$ has a left adjoint, hence preserves limits, and it creates them: a limit cone in $\mathbf{Set}$ over the underlying diagram carries a unique module structure making it a limit cone in $R\text{-}\mathbf{Mod}$, the operations being defined componentwise and the universal property being that of the underlying sets. For colimits, take the quotient of the direct sum of the objects of the diagram by the relations imposed by the arrows, the filtered case being the direct limit of the articles on modules. $\square$
+*Proof.* The forgetful functor to $\mathbf{Set}$ has a left adjoint, hence preserves limits, and it creates them: a limit cone in $\mathbf{Set}$ over the underlying diagram carries a unique module structure making it a limit cone in $R\text{-}\mathbf{Mod}$, the operations being defined componentwise and the universal property being that of the underlying sets. For colimits, take the quotient of the direct sum of the objects of the diagram by the relations imposed by the arrows, the filtered case being the direct limit of the articles on modules.
 
 **Examples.** The kernel of $f$ is the limit of the diagram $\bullet\rightrightarrows\bullet$ built from $f$ and the zero map; the cokernel is the colimit. The equaliser of $f,g:M\to N$ is $\{m:f(m)=g(m)\}$, a limit, and the coequaliser is $N/\operatorname{im}(f-g)$, a colimit. The pushout of $B\leftarrow A\to C$ is $(B\oplus C)/\{(a,-a)\}$, and the pullback of $B\to D\leftarrow C$ is $\{(b,c):f(b)=g(c)\}\subseteq B\oplus C$.
 
@@ -211,7 +211,7 @@ For a ring $R$ the categories $R\text{-}\mathbf{Mod}$ and $\mathbf{Mod}\text{-}R
 
 **Proposition.** Filtered colimits in $R\text{-}\mathbf{Mod}$ commute with finite limits, and in particular with finite direct sums, kernels and tensor products. The functor $\varinjlim$ over a filtered index category is exact.
 
-*Proof.* An element of a filtered colimit of modules is represented by an element of one of the modules and two representatives agree when they become equal at a later stage; this description implies that finite limits and finite colimits commute, and exactness follows. $\square$
+*Proof.* An element of a filtered colimit of modules is represented by an element of one of the modules and two representatives agree when they become equal at a later stage; this description implies that finite limits and finite colimits commute, and exactness follows.
 
 **Example.** Every module is the filtered colimit of its finitely generated submodules; this is the finiteness reduction used by the ideal criterion of the article on flatness and exactness, and it is the reason Lazard's theorem can be phrased as "flat means a filtered colimit of free modules".
 

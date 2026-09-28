@@ -146,7 +146,7 @@ The phrase "the state space is $\mathbb{M}_+$" invites the reading that $\mathbb
 - **$\mathbb{M}_+$ is not a complex vector space.** Multiplication by $i$ exchanges the sectors, $i\mathbb{M}_+=\mathbb{M}_-$, so $\mathbb{M}_+$ has no complex structure inherited from $\mathbb{B}$. It is a real vector space of dimension four.
 - **$\mathbb{M}_+$ is not closed under multiplication.** $(ie_1)(ie_2)=-e_3\in\mathbb{M}_-$ is the standard counterexample. The product of two Hermitian elements is Hermitian only if they commute; the symmetrized product $\tfrac12(\tilde P\tilde H+\tilde H\tilde P)$ does remain in $\mathbb{M}_+$, which is the sense in which $\mathbb{M}_+$ is a Jordan (not associative) algebra.
 - **$\mathbb{M}_+$ is a real Hilbert space under the trace pairing.** On the basis $\{e_0,ie_1,ie_2,ie_3\}$ one has $\mathrm{Tr}(ie_j\,ie_k)=2\delta_{jk}$ and $\mathrm{Tr}(e_0\,ie_k)=0$, so the pairing $\langle\tilde P,\tilde H\rangle=\tfrac12\mathrm{Tr}(\tilde P\tilde H)=\mathrm{Sc}(\tilde P\tilde H)$ is the standard Euclidean inner product in the four real coordinates $(p_0,p_1,p_2,p_3)$, hence positive definite. In this sense $\mathbb{M}_+$ is a four-dimensional real Hilbert space, and $\Phi$ identifies it with the Hermitian $2\times2$ matrices with the Hilbert–Schmidt product.
-- **$\mathbb{M}_+$ is not a Hilbert space under the norm form.** The norm form $N(\tilde Q)=\tilde Q\bar{\tilde Q}$ restricts to $N(h_0e_0+i\mathbf h)=h_0^2-|\mathbf h|^2$, of signature $(1,3)$; it is indefinite, and it vanishes on the cone $h_0^2=|\mathbf h|^2$. The positivity condition on states is the norm-form (light-cone) condition, not the trace-pairing one, so the two natural forms on $\mathbb{M}_+$ do different work.
+- **$\mathbb{M}_+$ is not a Hilbert space under the biquaternion norm.** The biquaternion norm $N(\tilde Q)=\tilde Q\bar{\tilde Q}$ restricts to $N(h_0e_0+i\mathbf h)=h_0^2-|\mathbf h|^2$, of signature $(1,3)$; it is indefinite, and it vanishes on the cone $h_0^2=|\mathbf h|^2$. The positivity condition on states is the biquaternion-norm (light-cone) condition, not the trace-pairing one, so the two natural forms on $\mathbb{M}_+$ do different work.
 
 The correct statement is therefore: $\mathbb{M}_+$ is a four-dimensional **real** Hilbert space under the Hilbert–Schmidt (trace) pairing, whose elements are the Hermitian operators on the two-dimensional module; the density matrices of one fermionic mode form a three-dimensional subset of it; and it is not the module itself, which is a complex two-dimensional space of state vectors. The qualification "in the sense of the trace pairing" is not optional, because under the other natural form the space is not even positive definite.
 
@@ -209,7 +209,7 @@ An excitation and a mode function are different objects and the biquaternion fra
 
 The mode function is not in $\mathbb{M}_+$: the solution space meets the sector in the single real ray $\mathbb{B}p\cap\mathbb{M}_+=\mathbb{R}p$, so away from the projector a definite solution is not Hermitian. The definite solution is on the configuration side and the occupation is on the informational side, which is exactly the division the words express.
 
-$\mathbb{M}_+$ is a four-dimensional real Hilbert space under the trace pairing and not a complex vector space, not an associative subalgebra, and not a Hilbert space under the norm form, which is indefinite of signature $(1,3)$. The degrees of freedom close for exactly one fermionic mode — four real dimensions of operators, three of states — and fail beyond it: two fermionic modes require sixteen dimensions and a bosonic mode infinitely many. The sector is the home of the state of one fermionic mode, precisely and verifiably, and the mismatch for more is left visible as the bound on that home rather than absorbed into the prose.
+$\mathbb{M}_+$ is a four-dimensional real Hilbert space under the trace pairing and not a complex vector space, not an associative subalgebra, and not a Hilbert space under the biquaternion norm, which is indefinite of signature $(1,3)$. The degrees of freedom close for exactly one fermionic mode — four real dimensions of operators, three of states — and fail beyond it: two fermionic modes require sixteen dimensions and a bosonic mode infinitely many. The sector is the home of the state of one fermionic mode, precisely and verifiably, and the mismatch for more is left visible as the bound on that home rather than absorbed into the prose.
 
 ## Summary of Notation
 
@@ -230,7 +230,7 @@ $\mathbb{M}_+$ is a four-dimensional real Hilbert space under the trace pairing 
 | $\tilde a=x$, $\tilde a^\dagger=y$ | One-mode ladder operators in $\mathbb{B}$ |
 | $\tilde N=\tilde a^\dagger\tilde a=\tfrac12(e_0-i\mu)$ | Occupation-number operator (idempotent, in $\mathbb{M}_+$) |
 | $\tilde\rho=\tfrac12(e_0+i\mathbf r)$, $|\mathbf r|\leq1$ | Density matrix of one mode (Bloch ball $\subset\mathbb{M}_+$) |
-| $N(\tilde Q)=\tilde Q\bar{\tilde Q}$ | Norm form; signature $(1,3)$ on $\mathbb{M}_+$ |
+| $N(\tilde Q)=\tilde Q\bar{\tilde Q}$ | Biquaternion norm; signature $(1,3)$ on $\mathbb{M}_+$ |
 | $\mathrm{Sc}(\tilde P\tilde H)$ | Hilbert–Schmidt pairing on $\mathbb{M}_+$ (positive definite) |
 
 ## Further Reading

@@ -35,7 +35,7 @@ $$
 
 and bounded quantification over primitive recursive relations yields primitive recursive relations.
 
-**Proof.** Each bounded operation is defined by primitive recursion on $n$, and bounded quantification is the bounded sum or product of the characteristic function; the closure of the class under composition and primitive recursion then gives the result. $\square$
+**Proof.** Each bounded operation is defined by primitive recursion on $n$, and bounded quantification is the bounded sum or product of the characteristic function; the closure of the class under composition and primitive recursion then gives the result.
 
 **Example.** Addition, multiplication, exponentiation, the factorial, the binomial coefficients, the prime-counting function, the $n$-th prime $p_n$ and the decoding functions of a Gödel numbering are primitive recursive. The pairing function $\langle m, n\rangle = \tfrac12 (m+n)(m+n+1) + m$ and its two inverses are primitive recursive, so finite sequences of natural numbers can be coded by single natural numbers within the class.
 
@@ -47,7 +47,7 @@ $$
 
 Then $A$ is total and computable but not primitive recursive.
 
-**Proof.** Totality and computability are by nested recursion. If $A$ were primitive recursive, then so would be the diagonal function $d(n) = A(n,n)$, and one shows by induction on the definition that every primitive recursive function is eventually dominated by $A(m, \cdot)$ for some fixed $m$; but $d$ is not dominated by any $A(m,\cdot)$, since $d(n) = A(n,n) > A(m,n)$ for $n > m$ by the monotonicity of $A$ in its first variable. The domination proof is a routine induction on the clauses defining the primitive recursive functions. $\square$
+**Proof.** Totality and computability are by nested recursion. If $A$ were primitive recursive, then so would be the diagonal function $d(n) = A(n,n)$, and one shows by induction on the definition that every primitive recursive function is eventually dominated by $A(m, \cdot)$ for some fixed $m$; but $d$ is not dominated by any $A(m,\cdot)$, since $d(n) = A(n,n) > A(m,n)$ for $n > m$ by the monotonicity of $A$ in its first variable. The domination proof is a routine induction on the clauses defining the primitive recursive functions.
 
 ### Partial Recursion and the Church–Turing Thesis
 
@@ -61,7 +61,7 @@ the least $n$ with $g(\bar x, n) = 0$, is partial recursive; the search diverges
 
 **Theorem (Church–Turing).** A partial function $\mathbb{N}^k \to \mathbb{N}$ is partial recursive if and only if it is computable by a Turing machine. This identification is the **Church–Turing thesis**; it is a thesis because it identifies a formal class with an informal notion.
 
-**Proof.** The direction from machines to functions is a simulation of a machine by primitive recursion on its configurations, with unbounded search for the halting time; the other direction is the encoding of the recursion scheme by a machine. Both simulations are carried out in *Formal Logic and Computability*. $\square$
+**Proof.** The direction from machines to functions is a simulation of a machine by primitive recursion on its configurations, with unbounded search for the halting time; the other direction is the encoding of the recursion scheme by a machine. Both simulations are carried out in *Formal Logic and Computability*.
 
 **Theorem (Kleene normal form).** There is a primitive recursive predicate $T(e, x, s)$ and a primitive recursive function $U$ such that
 
@@ -71,7 +71,7 @@ $$
 
 where $\simeq$ means equality of partial functions and the search diverges exactly when $\varphi_e(x)$ diverges. In particular the enumeration $\varphi_e$ is itself partial recursive, the universal function $\Phi(e,x) = \varphi_e(x)$ being partial recursive and not total.
 
-**Proof.** $T(e,x,s)$ asserts that $s$ codes a halting computation of the $e$-th machine on input $x$, and $U$ extracts the output; both are primitive recursive by the arithmetisation of *Formal Logic and Computability*, and the definition of $\varphi_e$ is the displayed search. The universal function is partial recursive because it is defined by this formula, and not total because of the existence of a halting problem. $\square$
+**Proof.** $T(e,x,s)$ asserts that $s$ codes a halting computation of the $e$-th machine on input $x$, and $U$ extracts the output; both are primitive recursive by the arithmetisation of *Formal Logic and Computability*, and the definition of $\varphi_e$ is the displayed search. The universal function is partial recursive because it is defined by this formula, and not total because of the existence of a halting problem.
 
 ### The Recursion Theorem
 
@@ -87,7 +87,7 @@ $$
 \varphi_{e_0}(x) = \varphi_{s(v)}(x) = \varphi_v(v,x) = h(v) = f(s(v)) = f(e_0),
 $$
 
-so $\varphi_{e_0} = \varphi_{f(e_0)}$. The computation is Kleene's and uses only the $s$-$m$-$n$ theorem and the totality of $f$. $\square$
+so $\varphi_{e_0} = \varphi_{f(e_0)}$. The computation is Kleene's and uses only the $s$-$m$-$n$ theorem and the totality of $f$.
 
 **Corollary (self-reference).** There is an index $e$ with $\varphi_e$ the function that prints $e$, that is, the constant function with value $e$; more generally, every computable transformation of programs has a fixed point in the sense of the theorem. This is the precise form of the diagonal construction that underlies the incompleteness theorems.
 
@@ -99,7 +99,7 @@ so $\varphi_{e_0} = \varphi_{f(e_0)}$. The computation is Kleene's and uses only
 
 **Theorem.** A set $A$ is c.e. if and only if it is empty or it is the range of a total computable function. A set is decidable if and only if it and its complement are both c.e.
 
-**Proof.** If $W_e$ is nonempty, choose $a \in W_e$ and enumerate pairs $(n,s)$ by a primitive recursive bijection; the machine simulates the $e$-th machine for $s$ steps on $n$ and outputs $n$ when it halts, and outputs $a$ otherwise. This gives a total computable function with range $W_e$, and the converse is immediate. For the second statement, if $A$ and its complement are c.e. one decides $A$ by running the two enumerations in parallel; the converse is clear. $\square$
+**Proof.** If $W_e$ is nonempty, choose $a \in W_e$ and enumerate pairs $(n,s)$ by a primitive recursive bijection; the machine simulates the $e$-th machine for $s$ steps on $n$ and outputs $n$ when it halts, and outputs $a$ otherwise. This gives a total computable function with range $W_e$, and the converse is immediate. For the second statement, if $A$ and its complement are c.e. one decides $A$ by running the two enumerations in parallel; the converse is clear.
 
 **Theorem (halting problem).** The set $K = \{e : \varphi_e(e)\!\downarrow\}$ is c.e. but not decidable, and there is no total computable function deciding, for given $e$ and $x$, whether $\varphi_e(x)$ converges.
 
@@ -109,11 +109,11 @@ $$
 g(e) = \begin{cases} \varphi_e(e) + 1, & k(e) = 1, \\ 0, & k(e) = 0 \end{cases}
 $$
 
-would be total computable, and for an index $e_0$ of $g$ one has $g = \varphi_{e_0}$. If $k(e_0) = 1$ then $\varphi_{e_0}(e_0)$ converges and $g(e_0) = \varphi_{e_0}(e_0) + 1 \neq \varphi_{e_0}(e_0)$, a contradiction; if $k(e_0) = 0$ then $\varphi_{e_0}(e_0)$ diverges while $g(e_0) = 0$ is defined, again a contradiction. The uniform statement follows by a parametrised version of the argument. $\square$
+would be total computable, and for an index $e_0$ of $g$ one has $g = \varphi_{e_0}$. If $k(e_0) = 1$ then $\varphi_{e_0}(e_0)$ converges and $g(e_0) = \varphi_{e_0}(e_0) + 1 \neq \varphi_{e_0}(e_0)$, a contradiction; if $k(e_0) = 0$ then $\varphi_{e_0}(e_0)$ diverges while $g(e_0) = 0$ is defined, again a contradiction. The uniform statement follows by a parametrised version of the argument.
 
 **Theorem (Rice).** Let $\mathcal{C}$ be a class of partial recursive functions containing some but not all of them. Then the index set $\{e : \varphi_e \in \mathcal{C}\}$ is undecidable.
 
-**Proof.** If the index set were decidable one could decide whether $\varphi_e$ is the everywhere undefined function, contradicting the halting problem; the reduction is the standard one and is in *Formal Logic and Computability*. $\square$
+**Proof.** If the index set were decidable one could decide whether $\varphi_e$ is the everywhere undefined function, contradicting the halting problem; the reduction is the standard one and is in *Formal Logic and Computability*.
 
 ### m-Completeness
 
@@ -121,11 +121,11 @@ would be total computable, and for an index $e_0$ of $g$ one has $g = \varphi_{e
 
 **Theorem.** The halting set $K$ is m-complete for the c.e. sets, and every m-complete set is undecidable. The c.e. sets are exactly the sets that are empty or the range of a total computable function, and they form a lattice under union and intersection.
 
-**Proof.** Given a c.e. set $A = W_e$, the reduction $n \mapsto \langle e, n\rangle$ (with $\langle e,n\rangle$ coded so that the machine for $\langle e,n\rangle$ simulates the $e$-th machine on $n$) witnesses $A \leq_m K$; the undecidability follows from that of $K$. Closure under union and intersection is by the parallel simulation of the two enumerations. $\square$
+**Proof.** Given a c.e. set $A = W_e$, the reduction $n \mapsto \langle e, n\rangle$ (with $\langle e,n\rangle$ coded so that the machine for $\langle e,n\rangle$ simulates the $e$-th machine on $n$) witnesses $A \leq_m K$; the undecidability follows from that of $K$. Closure under union and intersection is by the parallel simulation of the two enumerations.
 
 **Theorem (Myhill).** If $A \equiv_m B$ then $A$ and $B$ are isomorphic by a total computable bijection.
 
-**Proof.** The isomorphism is built by a back-and-forth construction in which each step uses the two reductions to match the least unmatched element of one set with an unmatched element of the other; the construction is effective because the reductions are total computable. The details are Myhill's. $\square$
+**Proof.** The isomorphism is built by a back-and-forth construction in which each step uses the two reductions to match the least unmatched element of one set with an unmatched element of the other; the construction is effective because the reductions are total computable. The details are Myhill's.
 
 ## The Arithmetical Hierarchy and the Turing Degrees
 
@@ -135,15 +135,15 @@ would be total computable, and for an index $e_0$ of $g$ one has $g = \varphi_{e
 
 **Theorem.** $\Sigma_1$ and $\Pi_1$ are the c.e. sets and their complements, and $\Delta_1$ is the class of decidable sets. For every $n$, $\Sigma_n \cup \Pi_n \subseteq \Delta_{n+1}$, and the inclusions are strict: there are sets that are $\Sigma_{n+1}$ but not $\Pi_{n+1}$.
 
-**Proof.** The first statement is the normal form of Kleene together with the definition of the arithmetical hierarchy in *Peano Arithmetic and Model Theory*. The inclusions follow by adding a vacuous quantifier, and strictness is witnessed by the $n$-th Turing jump $\emptyset^{(n)}$, which is $\Sigma_n$-complete and not $\Pi_n$ by the relativised halting argument. $\square$
+**Proof.** The first statement is the normal form of Kleene together with the definition of the arithmetical hierarchy in *Peano Arithmetic and Model Theory*. The inclusions follow by adding a vacuous quantifier, and strictness is witnessed by the $n$-th Turing jump $\emptyset^{(n)}$, which is $\Sigma_n$-complete and not $\Pi_n$ by the relativised halting argument.
 
 **Theorem (Post).** For every set $A$, a set $B$ is $\Sigma_{n+1}$ in $A$ if and only if $B$ is c.e. in the jump $A'$. In particular $B$ is $\Sigma_{n+1}$ if and only if $B$ is c.e. in $\emptyset^{(n)}$, and $\emptyset^{(n)}$ is $\Sigma_n$-complete.
 
-**Proof.** The relativised normal form expresses $B$ by a $\Sigma_1$ formula over $A'$; the converse is the relativised halting problem. The argument is Post's and is standard. $\square$
+**Proof.** The relativised normal form expresses $B$ by a $\Sigma_1$ formula over $A'$; the converse is the relativised halting problem. The argument is Post's and is standard.
 
 **Theorem (Shoenfield limit lemma).** A set $A$ is $\Delta_2$, that is, both $\Sigma_2$ and $\Pi_2$, if and only if there is a total computable function $g(e, n)$ such that $\lim_e g(e,n)$ exists and equals the characteristic function of $A$ at $n$; equivalently, $A \leq_T \emptyset'$.
 
-**Proof.** A $\Delta_2$ definition gives a limit of computable approximations, and conversely a computable approximation with a limit can be expressed in $\Sigma_2$ form. The equivalence with $\leq_T \emptyset'$ follows from Post's theorem at $n = 1$. $\square$
+**Proof.** A $\Delta_2$ definition gives a limit of computable approximations, and conversely a computable approximation with a limit can be expressed in $\Sigma_2$ form. The equivalence with $\leq_T \emptyset'$ follows from Post's theorem at $n = 1$.
 
 ### Turing Reducibility and Degrees
 
@@ -151,11 +151,11 @@ would be total computable, and for an index $e_0$ of $g$ one has $g = \varphi_{e
 
 **Theorem.** $\mathcal{D}$ is an upper semilattice with least element $\mathbf{0}$, the degree of the decidable sets, and the jump is strictly increasing and monotone: $A <_T A'$ and $A \leq_T B$ implies $A' \leq_T B'$. The jump operation satisfies $\emptyset^{(n+1)} = (\emptyset^{(n)})'$ and gives an increasing sequence of degrees.
 
-**Proof.** The upper semilattice laws are by coding of finite sets of oracle queries; strictness of the jump is the relativised halting problem, and monotonicity is because a machine with oracle $B$ can simulate one with oracle $A$. The iteration of the jump is immediate from the definition. $\square$
+**Proof.** The upper semilattice laws are by coding of finite sets of oracle queries; strictness of the jump is the relativised halting problem, and monotonicity is because a machine with oracle $B$ can simulate one with oracle $A$. The iteration of the jump is immediate from the definition.
 
 **Theorem (Post's problem; Friedberg–Muchnik).** There exist c.e. sets $A$ and $B$ with $A \not\leq_T B$ and $B \not\leq_T A$; that is, the c.e. degrees are not linearly ordered by $\leq_T$. The c.e. degrees are dense, and they are not a lattice.
 
-**Proof.** The construction builds $A$ and $B$ by a priority argument with requirements $A \neq \varphi_e^B$ and $B \neq \varphi_e^A$, meeting each requirement on a finite initial segment and preserving the finitely many restraints imposed by earlier requirements. The priority method is Friedberg's and Muchnik's; the density and non-lattice results are later refinements of the same method. $\square$
+**Proof.** The construction builds $A$ and $B$ by a priority argument with requirements $A \neq \varphi_e^B$ and $B \neq \varphi_e^A$, meeting each requirement on a finite initial segment and preserving the finitely many restraints imposed by earlier requirements. The priority method is Friedberg's and Muchnik's; the density and non-lattice results are later refinements of the same method.
 
 ### Diophantine Sets
 
@@ -165,7 +165,7 @@ $$
 n \in A \iff \exists y_1 \cdots \exists y_k \in \mathbb{N}\ P(n, y_1, \dots, y_k) = 0 .
 $$
 
-**Proof.** A Diophantine set is c.e. by searching for the witnesses. The converse, the MRDP theorem, is proved by showing that every c.e. set is Diophantine and then eliminating the bounded universal quantifier by a coding trick of Davis–Putnam–Robinson; the argument is in the references. $\square$
+**Proof.** A Diophantine set is c.e. by searching for the witnesses. The converse, the MRDP theorem, is proved by showing that every c.e. set is Diophantine and then eliminating the bounded universal quantifier by a coding trick of Davis–Putnam–Robinson; the argument is in the references.
 
 **Corollary (Hilbert's tenth problem).** There is no algorithm deciding, for an arbitrary polynomial with integer coefficients, whether it has a solution in natural numbers; more generally the decision problem for Diophantine equations is undecidable, and this is the effective counterpart of the incompleteness phenomena of *Peano Arithmetic and Model Theory*.
 
@@ -183,11 +183,11 @@ the length of the shortest program that prints $x$ and halts, and the **conditio
 
 **Theorem (invariance).** The definition is machine-independent up to an additive constant: if $U$ and $V$ are universal prefix-free machines, then there is $c$ with $\lvert K_U(x) - K_V(x)\rvert \leq c$ for all $x$. Consequently one writes $K(x)$ and treats the choice of the universal machine as fixed.
 
-**Proof.** The universality of $U$ means that some program $p_0$ simulates $V$; prefixing $p_0$ to a shortest $V$-program for $x$ gives a $U$-program for $x$ whose length exceeds the bound by the constant $\lvert p_0\rvert$, and the symmetry of the argument gives the reverse inequality. $\square$
+**Proof.** The universality of $U$ means that some program $p_0$ simulates $V$; prefixing $p_0$ to a shortest $V$-program for $x$ gives a $U$-program for $x$ whose length exceeds the bound by the constant $\lvert p_0\rvert$, and the symmetry of the argument gives the reverse inequality.
 
 **Theorem.** There is a constant $c$ such that for every $n$ all but at most $2^{n-c}$ of the $2^n$ strings of length $n$ satisfy $K(x) \geq n - c$. No partial recursive function computes $K$. In fact the set $\{x : K(x) \geq n\}$ is not decidable uniformly in $n$, and $K$ is not bounded below by any computable function on all strings.
 
-**Proof.** There are $2^n$ strings of length $n$ but fewer than $2^{n-c}$ programs of length less than $n-c$, so most strings are incompressible. A computable bound on $K$ would compute the halting problem, since $K(x)$ large for a suitably designed $x$ rules out a halting computation of bounded length; the undecidability follows from the halting problem. $\square$
+**Proof.** There are $2^n$ strings of length $n$ but fewer than $2^{n-c}$ programs of length less than $n-c$, so most strings are incompressible. A computable bound on $K$ would compute the halting problem, since $K(x)$ large for a suitably designed $x$ rules out a halting computation of bounded length; the undecidability follows from the halting problem.
 
 ### Algorithmic Randomness
 
@@ -201,13 +201,13 @@ the measure of the set of programs on which $U$ halts.
 
 **Theorem (Chaitin).** $\Omega$ is left-computably enumerable, $\Omega \in (0,1)$, and the halting problem is Turing reducible to $\Omega$: a program $p$ halts if and only if it appears in the computable enumeration of the halting programs once $\Omega$ is known to sufficient precision, and conversely the halting problem enumerates the terms of the series. Consequently $\Omega$ is not computable, and $\Omega \equiv_T \emptyset'$.
 
-**Proof.** The sum is the limit of a recursive increasing sequence of rationals because the halting programs are enumerable; knowing $\Omega$ to sufficient precision decides halting, and conversely the halting problem enumerates the terms, giving the Turing equivalence with the halting set. The argument is in the references. $\square$
+**Proof.** The sum is the limit of a recursive increasing sequence of rationals because the halting programs are enumerable; knowing $\Omega$ to sufficient precision decides halting, and conversely the halting problem enumerates the terms, giving the Turing equivalence with the halting set. The argument is in the references.
 
 **Definition (Martin-Löf).** A sequence $X \in 2^{\mathbb{N}}$ is **Martin-Löf random** if it is not contained in any effective null set: for every uniformly recursively enumerable sequence of open sets $U_n \subseteq 2^{\mathbb{N}}$ with measure at most $2^{-n}$, the sequence lies outside $\bigcap_n U_n$.
 
 **Theorem (Schnorr; Levin).** A sequence $X$ is Martin-Löf random if and only if there is $c$ such that $K(X_1 X_2 \cdots X_n) \geq n - c$ for every $n$: the random sequences are exactly those whose initial segments are incompressible. Moreover $\Omega$ is Martin-Löf random, no Martin-Löf random sequence is computable, and the set of Martin-Löf random sequences has measure $1$.
 
-**Proof.** An effective null set gives a computable way of compressing the initial segments of its elements, and conversely a short description of a long initial segment defines an effective null set containing $X$; the randomness of $\Omega$ is Chaitin's theorem. The details are in the references. $\square$
+**Proof.** An effective null set gives a computable way of compressing the initial segments of its elements, and conversely a short description of a long initial segment defines an effective null set containing $X$; the randomness of $\Omega$ is Chaitin's theorem. The details are in the references.
 
 **Remark.** Kolmogorov complexity is the measure of information content of a finite object, and it gives a definition of randomness that is purely mathematical: a sequence is random when it has no short description. It is the computability-theoretic counterpart of the measure-theoretic probability of Part III, and it is the sharpest form of the statement that almost every sequence is incompressible, since the failure of compressibility is exactly the failure of the sequence to be computable or to lie in an effective null set.
 

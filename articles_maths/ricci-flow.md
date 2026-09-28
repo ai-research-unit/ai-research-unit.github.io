@@ -31,7 +31,7 @@ $$
 \frac{\partial g_{ij}}{\partial t} = -2R_{ij} + \nabla_iW_j+\nabla_jW_i ,
 $$
 
-which has a strictly parabolic principal symbol of quasilinear type. The parabolic existence theorem gives a solution for short time, and one undoes the gauge by solving the flow of the time-dependent vector field $W$ and pulling the solution back; the diffeomorphism invariance of the Ricci tensor makes the pulled-back solution a Ricci flow. Uniqueness follows from the uniqueness for the parabolic equation in the fixed gauge. $\square$
+which has a strictly parabolic principal symbol of quasilinear type. The parabolic existence theorem gives a solution for short time, and one undoes the gauge by solving the flow of the time-dependent vector field $W$ and pulling the solution back; the diffeomorphism invariance of the Ricci tensor makes the pulled-back solution a Ricci flow. Uniqueness follows from the uniqueness for the parabolic equation in the fixed gauge.
 
 **Remark (the weakly parabolic character).** The degeneracy of the symbol is not a defect to be removed but the expression of the invariance: the flow is defined only up to the action of the diffeomorphism group, and to prove a theorem about the metric one must either fix the gauge as above or work with a quantity invariant under the group. The curvature evolution below is of the second kind: the curvature is already invariant, and its equation is parabolic.
 
@@ -43,7 +43,7 @@ $$
 
 so the volume decreases when the scalar curvature is positive and increases when it is negative.
 
-*Proof.* The derivative of the volume form is $\frac{\partial}{\partial t}dV = \frac12g^{ij}\frac{\partial g_{ij}}{\partial t}dV = -g^{ij}R_{ij}dV = -R\,dV$, the middle identity being the identity $\frac{\partial}{\partial t}\log\det g = g^{ij}\partial_tg_{ij}$; integrating gives the formula. $\square$
+*Proof.* The derivative of the volume form is $\frac{\partial}{\partial t}dV = \frac12g^{ij}\frac{\partial g_{ij}}{\partial t}dV = -g^{ij}R_{ij}dV = -R\,dV$, the middle identity being the identity $\frac{\partial}{\partial t}\log\det g = g^{ij}\partial_tg_{ij}$; integrating gives the formula.
 
 ## The Evolution of Curvature
 
@@ -55,7 +55,7 @@ $$
 
 where $\Delta$ is the Laplace–Beltrami operator of $g(t)$ and $|R_{ij}|^2 = R_{ij}R^{ij}$.
 
-*Proof.* Quoted as standard. The computation differentiates the twice-contracted Bianchi identity and the definition $R=g^{ij}R_{ij}$; the derivative of the inverse metric contributes $-2R^{ij}$ contracting the Ricci tensor and the derivative of the Ricci tensor contributes its own evolution, and the result is the displayed reaction-diffusion equation, the reaction term being the square of the Ricci tensor. $\square$
+*Proof.* Quoted as standard. The computation differentiates the twice-contracted Bianchi identity and the definition $R=g^{ij}R_{ij}$; the derivative of the inverse metric contributes $-2R^{ij}$ contracting the Ricci tensor and the derivative of the Ricci tensor contributes its own evolution, and the result is the displayed reaction-diffusion equation, the reaction term being the square of the Ricci tensor.
 
 **Theorem (evolution of the Ricci tensor).** Along a Ricci flow,
 
@@ -65,7 +65,7 @@ $$
 
 where the operator $\Delta_L$ is the **Lichnerowicz Laplacian** acting on symmetric $2$-tensors, $\Delta$ the rough (connection) Laplacian and $R_{ikjl}$ the Riemann tensor.
 
-*Proof.* Quoted as standard. The derivative of the Ricci tensor is computed from the derivative of the connection, itself a difference of Christoffel symbols; the result is the displayed operator, in which the zeroth-order terms are quadratic in the curvature, as they must be by scaling. $\square$
+*Proof.* Quoted as standard. The derivative of the Ricci tensor is computed from the derivative of the connection, itself a difference of Christoffel symbols; the result is the displayed operator, in which the zeroth-order terms are quadratic in the curvature, as they must be by scaling.
 
 **Theorem (evolution of the Riemann tensor).** Along a Ricci flow,
 
@@ -75,7 +75,7 @@ $$
 
 where $\mathrm{Rm}*\mathrm{Rm}$ denotes a universal bilinear combination of the curvature tensor with itself.
 
-*Proof.* Quoted as standard. The computation is the tensor analogue of the preceding one and its result is commonly summarised in the schematic form displayed, the exact coefficients being irrelevant for the maximum-principle arguments that use only the positivity of the quadratic terms in a suitable sense. $\square$
+*Proof.* Quoted as standard. The computation is the tensor analogue of the preceding one and its result is commonly summarised in the schematic form displayed, the exact coefficients being irrelevant for the maximum-principle arguments that use only the positivity of the quadratic terms in a suitable sense.
 
 **Corollary (the maximum principle for the scalar curvature).** Along a Ricci flow on a compact manifold,
 
@@ -85,7 +85,7 @@ $$
 
 and if $R(\cdot,0)\ge0$ then $R(\cdot,t)\ge0$ for all $t$; more generally a lower bound $R\ge-c$ is preserved.
 
-*Proof.* The evolution equation gives $\partial_tR\ge\Delta R$, a differential inequality of parabolic type. Given $\varepsilon>0$, the function $R_\varepsilon = R+\varepsilon t$ satisfies $\partial_tR_\varepsilon\ge\Delta R_\varepsilon+\varepsilon$, so its minimum over $M\times[0,T']$ cannot be attained in the interior: at an interior minimum, $\partial_tR_\varepsilon\le0$ and $\Delta R_\varepsilon\ge0$, whereas the inequality gives $\partial_tR_\varepsilon\ge\varepsilon>0$. Hence the minimum is attained on the parabolic boundary, and letting $\varepsilon\to0$ gives the claim; the preservation of a lower bound $-c$ follows by applying the same argument to $R+c$. $\square$
+*Proof.* The evolution equation gives $\partial_tR\ge\Delta R$, a differential inequality of parabolic type. Given $\varepsilon>0$, the function $R_\varepsilon = R+\varepsilon t$ satisfies $\partial_tR_\varepsilon\ge\Delta R_\varepsilon+\varepsilon$, so its minimum over $M\times[0,T']$ cannot be attained in the interior: at an interior minimum, $\partial_tR_\varepsilon\le0$ and $\Delta R_\varepsilon\ge0$, whereas the inequality gives $\partial_tR_\varepsilon\ge\varepsilon>0$. Hence the minimum is attained on the parabolic boundary, and letting $\varepsilon\to0$ gives the claim; the preservation of a lower bound $-c$ follows by applying the same argument to $R+c$.
 
 **Remark (the maximum principle for systems).** The maximum principle for a scalar quantity is immediate; for the full curvature tensor it requires a **pinching** condition, because the reaction term $\mathrm{Rm}*\mathrm{Rm}$ does not preserve an arbitrary positivity cone. The Hamilton–Ivey estimate, which bounds the curvature of a three-dimensional Ricci flow below by $-C/(t_0-t)$ for a curvature singularity at $t_0$, is the sharp example: the reaction term is controlled by a positivity cone chosen so that the quadratic terms act in the favourable direction.
 
@@ -119,7 +119,7 @@ $$
 
 for a constant $C$ depending only on the initial metric; consequently the curvature is bounded below in the blow-up scale, and a blow-up limit of the singularity has nonnegative curvature operator or is a steady soliton.
 
-*Proof.* Quoted as standard (Hamilton–Ivey). The proof applies the maximum principle to the evolution of the minimum sectional curvature, whose evolution is governed by a reaction term that is favourable once the curvature is sufficiently negative; the resulting bound on the reaction term controls the possible blow-up. $\square$
+*Proof.* Quoted as standard (Hamilton–Ivey). The proof applies the maximum principle to the evolution of the minimum sectional curvature, whose evolution is governed by a reaction term that is favourable once the curvature is sufficiently negative; the resulting bound on the reaction term controls the possible blow-up.
 
 **Theorem (Perelman's monotonicity).** The **entropy** functionals
 
@@ -130,11 +130,11 @@ $$
 
 are monotone along the coupled flow $\partial_tg=-2R_{ij}$, $\partial_tf=-\Delta f+|\nabla f|^2-R$ (and $\partial_t\tau=-1$ for $\mathcal{W}$): $\frac{d}{dt}\mathcal{F}\ge0$ and $\frac{d}{dt}\mathcal{W}\ge0$, with equality only for the corresponding solitons.
 
-*Proof.* Quoted as standard (Perelman). The computation is a long integration by parts in which the evolution equations for $g$ and $f$ are substituted into the derivative of the functional, and the result is a sum of squares: $\frac{d}{dt}\mathcal{W} = 2\tau\int\bigl|R_{ij}+\nabla_i\nabla_jf-\frac{1}{2\tau}g_{ij}\bigr|^2(4\pi\tau)^{-n/2}e^{-f}dV$, which is nonnegative and vanishes exactly on a shrinking soliton. $\square$
+*Proof.* Quoted as standard (Perelman). The computation is a long integration by parts in which the evolution equations for $g$ and $f$ are substituted into the derivative of the functional, and the result is a sum of squares: $\frac{d}{dt}\mathcal{W} = 2\tau\int\bigl|R_{ij}+\nabla_i\nabla_jf-\frac{1}{2\tau}g_{ij}\bigr|^2(4\pi\tau)^{-n/2}e^{-f}dV$, which is nonnegative and vanishes exactly on a shrinking soliton.
 
 **Theorem (no local collapsing).** For a Ricci flow on a compact manifold with a curvature bound on a parabolic ball and a lower bound on the injectivity radius at the base point, the solution is $\kappa$-noncollapsed at scale $r$ for a constant $\kappa>0$ depending on the bounds; consequently a region of bounded curvature cannot collapse to lower dimension, and the blow-up limits of a singularity are nonflat.
 
-*Proof.* Quoted as standard (Perelman). The monotonicity of the reduced volume — a localised version of the entropy, defined by a path integral over backwards geodesics — supplies a lower bound for the volume of a parabolic ball in terms of its radius and the curvature bound; the noncollapsing is what rules out the formation of lower-dimensional singular sets and makes the blow-up analysis possible. $\square$
+*Proof.* Quoted as standard (Perelman). The monotonicity of the reduced volume — a localised version of the entropy, defined by a path integral over backwards geodesics — supplies a lower bound for the volume of a parabolic ball in terms of its radius and the curvature bound; the noncollapsing is what rules out the formation of lower-dimensional singular sets and makes the blow-up analysis possible.
 
 **Remark (surgery and long-time behaviour).** The local structure of a three-dimensional singularity is that of a neck, a cap or a compact positively curved component, and the **Ricci flow with surgery** cuts the necks and caps the resulting boundaries, continuing the flow on the modified manifold; the monotonicity and noncollapsing theorems supply the estimates that make the surgery possible finitely many times in each compact time interval. This is the analysis that underlies the classification of three-manifolds by the flow; the statement of the classification and the topology it produces belong to the surrounding theory, and the part of it that is pure geometry of three-manifolds is the concern of Part II. What belongs to this article is the analytic content: the parabolic well-posedness, the curvature evolution, the maximum principles, the monotone quantities and the compactness derived from them.
 
@@ -142,11 +142,11 @@ are monotone along the coupled flow $\partial_tg=-2R_{ij}$, $\partial_tf=-\Delta
 
 **Theorem (Hamilton's convergence theorem).** Let $M$ be a compact three-manifold with a Riemannian metric $g_0$ of positive Ricci curvature. Then the normalised Ricci flow starting at $g_0$ exists for all time and converges, after normalisation, to a metric of constant positive sectional curvature; consequently $M$ admits a spherical space form structure.
 
-*Proof.* Quoted as standard (Hamilton 1982). The curvature pinching improves along the flow: the maximum principle applied to the evolution of the curvature and of the traceless Ricci tensor shows that the eigenvalues of the curvature operator become close to one another, the flow does not develop a singularity before the normalised time, and the limit is Einstein; in dimension three an Einstein metric of positive scalar curvature is of constant sectional curvature. $\square$
+*Proof.* Quoted as standard (Hamilton 1982). The curvature pinching improves along the flow: the maximum principle applied to the evolution of the curvature and of the traceless Ricci tensor shows that the eigenvalues of the curvature operator become close to one another, the flow does not develop a singularity before the normalised time, and the limit is Einstein; in dimension three an Einstein metric of positive scalar curvature is of constant sectional curvature.
 
 **Theorem (compactness and convergence of noncollapsed flows).** The class of pointed solutions of the Ricci flow with a uniform curvature bound on a parabolic ball and a uniform lower bound on the injectivity radius is compact in the pointed Cheeger–Gromov sense; consequently every blow-up limit of a singularity exists and is itself a complete ancient solution of the flow.
 
-*Proof.* Quoted as standard (Hamilton's compactness theorem, in the form given by Perelman). The curvature bounds give local derivative bounds by the parabolic regularity theory, the injectivity-radius bound prevents collapse, and the Arzelà–Ascoli diagonal argument in a sequence of balls gives a smooth limit after passing to a subsequence; the limit solves the flow because the equation is closed under smooth convergence. $\square$
+*Proof.* Quoted as standard (Hamilton's compactness theorem, in the form given by Perelman). The curvature bounds give local derivative bounds by the parabolic regularity theory, the injectivity-radius bound prevents collapse, and the Arzelà–Ascoli diagonal argument in a sequence of balls gives a smooth limit after passing to a subsequence; the limit solves the flow because the equation is closed under smooth convergence.
 
 **Remark (solitons as singularity models).** The blow-up limits of the preceding theorem are ancient solutions — solutions defined for all negative time with a curvature bound — and the classification of ancient solutions in low dimension yields solitons as models. In dimension three the shrinking solitons are the round sphere, the shrinking cylinder and their quotients, and the singularity models are their blow-ups; the monotonicity of the entropy identifies the solitons as the equality cases, so that the analytic criterion and the geometric classification agree.
 

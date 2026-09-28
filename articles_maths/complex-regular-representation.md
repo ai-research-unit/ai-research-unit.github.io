@@ -5,7 +5,7 @@
 
 The complex algebra $\mathbb{C}$ is two-dimensional over $\mathbb{R}$ and one-dimensional over itself. This article presents its **regular representation**, the algebra acting on itself on the left, and the $2 \times 2$ real matrix of that action in the basis $1$, $i$. The matrix is the Cayley matrix of complex multiplication, and its image is the algebra of conformal $2 \times 2$ real matrices, the matrices of the shape $aI + bJ$. The article is the base case of the representation group of the tensor family: it sits below the $2 \times 2$ representation of the quaternions $\mathbb{H}$ and the $4 \times 4$ regular representation of the biquaternions $\mathbb{B}$, which is assembled from it by a tensor product.
 
-The conventions are those of *Complex Algebra*: basis $1$, $i$ with $i^2 = -1$, a general element $Z = a + i b$, norm form $N(Z) = Z\bar{Z} = a^2+b^2$, and complex conjugation $\bar{Z}$. The word *representation* is used in both senses, as in the biquaternion companion: the concrete realization of the algebra by matrices, and the technical action of the algebra on a vector space. The article owns the left matrix, its multiplicativity, the identification with the conformal matrices, the determinant and the trace, and the relation to the quaternion and biquaternion regular representations; the complex-linear one-dimensional representation and the classification of the modules over a field are the subject of *Complex Representations* and are cited once.
+The conventions are those of *Complex Algebra*: basis $1$, $i$ with $i^2 = -1$, a general element $Z = a + i b$, norm $N(Z) = Z\bar{Z} = a^2+b^2$, and complex conjugation $\bar{Z}$. The word *representation* is used in both senses, as in the biquaternion companion: the concrete realization of the algebra by matrices, and the technical action of the algebra on a vector space. The article owns the left matrix, its multiplicativity, the identification with the conformal matrices, the determinant and the trace, and the relation to the quaternion and biquaternion regular representations; the complex-linear one-dimensional representation and the classification of the modules over a field are the subject of *Complex Representations* and are cited once.
 
 ## The Left Regular Representation
 
@@ -23,7 +23,7 @@ $$
 \rho_L(Z) = \begin{pmatrix} a & -b \\ b & a \end{pmatrix} = a I + b J, \qquad J = \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}, \qquad J^2 = -I .
 $$
 
-**Proof.** The columns are the images $\rho_L(Z)(e_m) = Z e_m$ expressed in the basis. For $m = 0$, $Z\cdot 1 = Z = a + i b$, giving the first column $(a, b)^{\mathsf{T}}$. For $m = 1$, $Z i = (a+i b) i = a i + i^2 b = -b + i a$, giving the second column $(-b, a)^{\mathsf{T}}$. The basis element $i$ therefore acts by $J$, and $J^2 = -I$ is the matrix form of $i^2 = -1$. $\square$
+**Proof.** The columns are the images $\rho_L(Z)(e_m) = Z e_m$ expressed in the basis. For $m = 0$, $Z\cdot 1 = Z = a + i b$, giving the first column $(a, b)^{\mathsf{T}}$. For $m = 1$, $Z i = (a+i b) i = a i + i^2 b = -b + i a$, giving the second column $(-b, a)^{\mathsf{T}}$. The basis element $i$ therefore acts by $J$, and $J^2 = -I$ is the matrix form of $i^2 = -1$.
 
 The matrix has only two independent entries, the two real coordinates of $Z$; it is the **Cayley matrix** of complex multiplication. The identity matrix is $\rho_L(1)$, and multiplication by $i$ is $\rho_L(i) = J$, the **complex structure** of the plane.
 
@@ -70,7 +70,7 @@ $$
 \rho_L(Z)\bigl(\rho_L(W)(e_m)\bigr) = Z(W e_m) = (ZW) e_m = \rho_L(ZW)(e_m),
 $$
 
-so the two matrices agree on a basis. $\square$
+so the two matrices agree on a basis.
 
 **Example (a concrete check).** For $Z = 3+4i$ and $W = 1-2i$ the product is $ZW = 11-2i$, and
 
@@ -90,7 +90,7 @@ $$
 
 **Proposition.** $\rho_R = \rho_L$.
 
-**Proof.** The algebra is commutative, so $WZ = ZW$ for all $W$, hence the two endomorphisms agree on every element. $\square$
+**Proof.** The algebra is commutative, so $WZ = ZW$ for all $W$, hence the two endomorphisms agree on every element.
 
 The right regular representation therefore carries no information beyond the left one, and it is not a second realization. This is the first place where the commutative base case differs structurally from the biquaternion algebra: there the left and right regular representations are distinct, the right one is an anti-homomorphism, the naive identity $\rho_R(\tilde{Q}) = \rho_L(\tilde{Q})^{\mathsf{T}}$ is false, and the difference vanishes exactly on the centre. None of that apparatus exists here. The slot is empty because the algebra is commutative, and the emptiness is the statement.
 
@@ -104,7 +104,7 @@ $$
 
 where the transpose is taken in the basis $1, i$.
 
-**Proof.** Transposing $\rho_L(Z) = \begin{pmatrix} a & -b \\ b & a \end{pmatrix}$ gives $\begin{pmatrix} a & b \\ -b & a \end{pmatrix}$, which is $\rho_L(a - i b) = \rho_L(\bar{Z})$. $\square$
+**Proof.** Transposing $\rho_L(Z) = \begin{pmatrix} a & -b \\ b & a \end{pmatrix}$ gives $\begin{pmatrix} a & b \\ -b & a \end{pmatrix}$, which is $\rho_L(a - i b) = \rho_L(\bar{Z})$.
 
 Transposition is therefore complex conjugation in the matrix picture: it is the matrix form of the involution, and the antisymmetric matrix $\rho_L(Z) - \rho_L(\bar{Z})$ changes sign under it. This is the placement, in the two-dimensional case, of the biquaternion identity $\rho_L(\tilde{Q})^{\mathsf{T}} = \rho_L(\bar{\tilde{Q}})$, where the transpose corresponds to quaternion conjugation; the same theorem holds here with the single involution of the field.
 
@@ -114,7 +114,7 @@ The regular representation is the algebra acting on itself, and over $\mathbb{C}
 
 **Proposition.** The regular module is **simple** (irreducible), and the regular representation has no proper nonzero invariant subspace.
 
-**Proof.** A submodule is a left ideal of the field $\mathbb{C}$, and a field has no proper nonzero ideals. Equivalently, $\rho_L(W)$ spans the whole module for every nonzero $W$. $\square$
+**Proof.** A submodule is a left ideal of the field $\mathbb{C}$, and a field has no proper nonzero ideals. Equivalently, $\rho_L(W)$ spans the whole module for every nonzero $W$.
 
 This is the largest structural difference from the biquaternion algebra. There the regular module is $\mathbb{B} = I_1 \oplus I_2$, the direct sum of two minimal left ideals, and the regular representation is reducible, $\rho_L \cong V \oplus V$ with $V = \mathbb{C}^2$ the simple module. Here the algebra is a field, its regular module is simple, and there is no Peirce decomposition, no idempotent splitting and no centralizer larger than the image itself. The endomorphism algebra of the regular module is $\operatorname{End}_{\mathbb{C}}(\mathbb{C}) = \mathbb{C}$, the image of $\rho_L$, which is the commutative shadow of the double-centralizer statement $\operatorname{End}_{\mathbb{B}}(\mathbb{B}) = \rho_R(\mathbb{B})$ of the biquaternion article.
 
@@ -126,9 +126,9 @@ $$
 \det \rho_L(Z) = a^2 + b^2 = N(Z), \qquad \operatorname{tr}\rho_L(Z) = 2a = 2 \operatorname{Re} Z .
 $$
 
-**Proof.** $\det\rho_L(Z) = a\cdot a - (-b)\cdot b = a^2 + b^2$, and $\operatorname{tr}\rho_L(Z) = a + a = 2a$. $\square$
+**Proof.** $\det\rho_L(Z) = a\cdot a - (-b)\cdot b = a^2 + b^2$, and $\operatorname{tr}\rho_L(Z) = a + a = 2a$.
 
-The determinant is the norm form, and the trace is twice the real part, which is also the algebra trace $\operatorname{Tr}(Z)$ of $\mathbb{C}$ over $\mathbb{R}$. This is a genuine difference from the biquaternion regular representation, where the determinant is the **square** of the norm form, $\det\rho_L(\tilde{Q}) = N(\tilde{Q})^2$. The square appears there because the biquaternion regular module is the direct sum of two copies of the simple module, so its determinant is the product of two norm forms; here the regular module is one-dimensional over $\mathbb{C}$ and the determinant is the norm form itself. The determinant also shows that $\rho_L(Z)$ is invertible exactly when $Z \neq 0$, matching the invertibility criterion of *Complex Norm and Invertibility*.
+The determinant is the norm, and the trace is twice the real part, which is also the algebra trace $\operatorname{Tr}(Z)$ of $\mathbb{C}$ over $\mathbb{R}$. This is a genuine difference from the biquaternion regular representation, where the determinant is the **square** of the norm, $\det\rho_L(\tilde{Q}) = N(\tilde{Q})^2$. The square appears there because the biquaternion regular module is the direct sum of two copies of the simple module, so its determinant is the product of two norms; here the regular module is one-dimensional over $\mathbb{C}$ and the determinant is the norm itself. The determinant also shows that $\rho_L(Z)$ is invertible exactly when $Z \neq 0$, matching the invertibility criterion of *Complex Norm and Invertibility*.
 
 **Corollary.** $\rho_L(Z)$ is orientation-preserving for $Z \neq 0$, since $\det\rho_L(Z) = N(Z) > 0$.
 
@@ -161,7 +161,7 @@ $$
 \rho_L(Z) = r \begin{pmatrix} \cos\theta & -\sin\theta \\ \sin\theta & \cos\theta \end{pmatrix},
 $$
 
-a positive scalar times an element of $SO(2)$; that is, a similarity of ratio $r$ and angle $\theta$. $\square$
+a positive scalar times an element of $SO(2)$; that is, a similarity of ratio $r$ and angle $\theta$.
 
 The image $\rho_L(\mathbb{C})$ is the field of conformal matrices, and its group of nonzero elements is the group of orientation-preserving similarities of the plane fixing the origin; it is isomorphic to $\mathbb{C}^\times \cong \mathbb{R}_{>0} \times SO(2)$. The determinant is the square of the ratio and the trace is twice the real part of the complex number, so the polar decomposition $Z = ru$ is the polar decomposition of the conformal matrix into a scalar and a rotation, as developed in *Complex Polar Representation* and *Rotations and Reflections in the Complex Plane*.
 
@@ -175,7 +175,7 @@ $$
 
 and $R_\theta$ is orthogonal, $R_\theta^{\mathsf{T}}R_\theta = I$, with determinant $+1$. The map $u \mapsto \rho_L(u)$ is an isomorphism of Lie groups $U(1) \to SO(2)$.
 
-**Proof.** Substituting $Z = e^{i\theta}$ into $\rho_L(Z) = aI+bJ$ with $a = \cos\theta$, $b = \sin\theta$ gives the display, and orthogonality with determinant $+1$ is immediate from it. The map is a homomorphism by multiplicativity, $\rho_L(uv) = \rho_L(u)\rho_L(v)$, it is injective by faithfulness, and it is surjective because every element of $SO(2)$ is such a matrix for exactly one $\theta \in \mathbb{R}/2\pi\mathbb{Z}$. $\square$
+**Proof.** Substituting $Z = e^{i\theta}$ into $\rho_L(Z) = aI+bJ$ with $a = \cos\theta$, $b = \sin\theta$ gives the display, and orthogonality with determinant $+1$ is immediate from it. The map is a homomorphism by multiplicativity, $\rho_L(uv) = \rho_L(u)\rho_L(v)$, it is injective by faithfulness, and it is surjective because every element of $SO(2)$ is such a matrix for exactly one $\theta \in \mathbb{R}/2\pi\mathbb{Z}$.
 
 The rotation matrix is therefore the matrix form of multiplication by a unit, and the product rule $R_\theta R_\varphi = R_{\theta+\varphi}$ is multiplicativity read on the circle. Because $\rho_L(i) = J$, the regular representation carries the exponential of the algebra to the exponential of matrices,
 
@@ -183,7 +183,7 @@ $$
 \exp(\theta J) = \sum_{n \ge 0} \frac{\theta^n J^n}{n!} = \cos\theta\, I + \sin\theta\, J = R_\theta,
 $$
 
-so the skew-symmetric matrices $\theta J$ form the one-dimensional abelian Lie algebra $\mathfrak{so}(2) \cong \mathbb{R}$ and $\exp : \mathfrak{so}(2) \to SO(2)$ is surjective with kernel $2\pi\mathbb{Z}$. The determinant of a rotation is $N(u) = 1$ and its trace is $2\operatorname{Re} u$, the specialisation of the determinant and trace formulas to the unit circle.
+so the skew-symmetric matrices $\theta J$ form the one-dimensional abelian Lie algebra $\mathrm{SO}(2) \cong \mathbb{R}$ and $\exp : \mathrm{SO}(2) \to SO(2)$ is surjective with kernel $2\pi\mathbb{Z}$. The determinant of a rotation is $N(u) = 1$ and its trace is $2\operatorname{Re} u$, the specialisation of the determinant and trace formulas to the unit circle.
 
 The reflections are the other coset. Since $\rho_L(Z)^{\mathsf{T}} = \rho_L(\bar{Z})$, the transpose realises the involution, and the matrix of the reflection $S_u(z) = u\bar{z}$ in the basis $\{1, i\}$ is the product $\rho_L(u)E$ with $E = \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix}$ the matrix of complex conjugation; with $u = e^{2i\alpha}$ it is
 
@@ -233,7 +233,7 @@ $$
 \rho_L(Z) = \begin{pmatrix} a & -b \\ b & a \end{pmatrix} = aI + bJ, \qquad J^2 = -I .
 $$
 
-It is a faithful $\mathbb{R}$-algebra homomorphism, $\rho_L(Z)\rho_L(W) = \rho_L(ZW)$; its transpose is the matrix of the conjugate, $\rho_L(Z)^{\mathsf{T}} = \rho_L(\bar{Z})$; its determinant is the norm form and its trace is twice the real part. The image is the field of conformal $2 \times 2$ real matrices, the nonzero elements of which are the orientation-preserving similarities of the plane, and the polar decomposition of $Z$ is the decomposition of its matrix into a scalar and a rotation. On the distinguished subspaces the image is the line of scalar matrices for $\mathbb{R}_{\mathbb{C}}$ and the line of skew-symmetric matrices for $i\mathbb{R}_{\mathbb{C}}$, and on the unit circle it is the rotation group: $\rho_L$ carries $U(1)$ isomorphically onto $SO(2)$, $u = e^{i\theta}$ to the rotation matrix $R_\theta$, and the reflections $S_u(z) = u\bar{z}$ to the coset $\rho_L(U(1))E$ of $SO(2)$ in $O(2)$.
+It is a faithful $\mathbb{R}$-algebra homomorphism, $\rho_L(Z)\rho_L(W) = \rho_L(ZW)$; its transpose is the matrix of the conjugate, $\rho_L(Z)^{\mathsf{T}} = \rho_L(\bar{Z})$; its determinant is the norm and its trace is twice the real part. The image is the field of conformal $2 \times 2$ real matrices, the nonzero elements of which are the orientation-preserving similarities of the plane, and the polar decomposition of $Z$ is the decomposition of its matrix into a scalar and a rotation. On the distinguished subspaces the image is the line of scalar matrices for $\mathbb{R}_{\mathbb{C}}$ and the line of skew-symmetric matrices for $i\mathbb{R}_{\mathbb{C}}$, and on the unit circle it is the rotation group: $\rho_L$ carries $U(1)$ isomorphically onto $SO(2)$, $u = e^{i\theta}$ to the rotation matrix $R_\theta$, and the reflections $S_u(z) = u\bar{z}$ to the coset $\rho_L(U(1))E$ of $SO(2)$ in $O(2)$.
 
 Because the algebra is commutative, the right regular representation coincides with the left and the left-right apparatus of the biquaternion case is empty. Because the algebra is a field, the regular module is simple: the biquaternion reduction $\rho_L \cong V \oplus V$ into two minimal left ideals, the determinant $N^2$, and the nontrivial centralizer all have no analogue here, and their absence is the commutativity and the divisibility of $\mathbb{C}$. The complex regular representation is the tensor factor of the biquaternion one, $\rho_L^{\mathbb{B}} = \rho_L^{\mathbb{C}} \otimes_{\mathbb{R}} \rho_L^{\mathbb{H}}$, and the base of the chain whose other members are the $2 \times 2$ complex representation of $\mathbb{H}$ and the reducible $4 \times 4$ complex representation of $\mathbb{B}$.
 
@@ -247,7 +247,7 @@ Because the algebra is commutative, the right regular representation coincides w
 | $\rho_R(Z)(W) = WZ$ | the right regular representation, equal to $\rho_L$ |
 | $\rho_L(Z) = aI + bJ$ | the Cayley matrix of $Z$ |
 | $J = \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}$ | the complex structure, $J^2 = -I$ |
-| $N(Z) = a^2+b^2$ | the norm form, $\det\rho_L(Z) = N(Z)$ |
+| $N(Z) = a^2+b^2$ | the norm, $\det\rho_L(Z) = N(Z)$ |
 | $\operatorname{tr}\rho_L(Z) = 2\operatorname{Re}Z$ | the trace of the regular matrix |
 | $\rho_L(\mathbb{C})$ | the image, the field of conformal matrices $\cong \mathbb{C}$ |
 | $\mathbb{R}_{\mathbb{C}}, i\mathbb{R}_{\mathbb{C}}$ | the distinguished subspaces, imaged as the scalar and the skew-symmetric matrices |
@@ -257,7 +257,7 @@ Because the algebra is commutative, the right regular representation coincides w
 | $SO(2)$ | the rotation factor of the conformal group |
 | $S_u(z) = u\bar{z}$, $u \in U(1)$ | a reflection of the plane, matrix $\rho_L(u)E$ |
 | $O(2) = \rho_L(U(1)) \cup \rho_L(U(1))E$ | the orthogonal group, rotations and reflections |
-| $\mathfrak{so}(2) \cong \mathbb{R}$ | the skew-symmetric matrices $\theta J$, the Lie algebra of $SO(2)$ |
+| $\mathrm{SO}(2) \cong \mathbb{R}$ | the skew-symmetric matrices $\theta J$, the Lie algebra of $SO(2)$ |
 | $\rho_L^{\mathbb{C}} \otimes_{\mathbb{R}} \rho_L^{\mathbb{H}}$ | the biquaternion regular representation as a tensor product |
 
 ## Further Reading

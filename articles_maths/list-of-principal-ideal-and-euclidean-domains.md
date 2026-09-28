@@ -59,7 +59,7 @@ The Gaussian integers are the standard worked example: the ring is Euclidean for
 | $\mathbb{Z}[(1+\sqrt{-19})/2]$ | the trivial class number of $\mathbb{Q}(\sqrt{-19})$ | no | *Euclidean Domains* |
 | a field, for instance $\mathbb{Q}$, $\mathbb{R}$, $\mathbb{C}$ | the only ideals are $(0)$ and $(1)$ | yes, $N = 1$ | *Fields* |
 
-The principal ideal domains that are not Euclidean are the reason the first inclusion above is strict, and $\mathbb{Z}[(1+\sqrt{-19})/2]$ is the standard example, recorded in *Euclidean Domains*. The discrete valuation rings are the local examples of principal ideal domains, and they are Euclidean with the valuation as Euclidean degree: their ideals form the single chain $\mathcal{O} \supsetneq \mathfrak{m} \supsetneq \mathfrak{m}^2 \supsetneq \cdots$, so every ideal is principal, and in each step of the division the remainder is either zero or of smaller value.
+The principal ideal domains that are not Euclidean are the reason the first inclusion above is strict, and $\mathbb{Z}[(1+\sqrt{-19})/2]$ is the standard example, recorded in *Euclidean Domains*. The discrete valuation rings are the local examples of principal ideal domains, and they are Euclidean with the valuation as Euclidean degree: their ideals form the single chain $\mathcal{O} \supsetneq \mathrm{M} \supsetneq \mathrm{M}^2 \supsetneq \cdots$, so every ideal is principal, and in each step of the division the remainder is either zero or of smaller value.
 
 ## The Bézout Domains
 
@@ -111,7 +111,7 @@ A catalogue denotes its objects by name rather than by symbol. The symbols that 
 | $\overline{\mathbb{Z}}$, $\mathcal{O}_K$ | All algebraic integers, ring of integers |
 | $k[x]$, $\mathbb{F}_q[x]$, $R[x]$ | Polynomial rings |
 | $k[t]_{(t)}$, $k[[x]]$, $\mathbb{Z}_{(p)}$, $\mathbb{Z}_p$ | Localisations, power series, $p$-adic integers |
-| $\mathfrak{m}$ | The maximal ideal of a local ring |
+| $\mathrm{M}$ | The maximal ideal of a local ring |
 
 ## Further Reading
 

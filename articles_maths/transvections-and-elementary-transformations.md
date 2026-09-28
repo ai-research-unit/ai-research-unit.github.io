@@ -37,7 +37,7 @@ $$
 
 (v) $\det\tau=1$, so $\tau \in \operatorname{SL}(V)$.
 
-*Proof.* (i) Linearity is clear. If $\tau(x)=x$ then $f(x)v=0$ and $v \neq 0$, so $f(x)=0$; conversely $f(x)=0$ gives $\tau(x)=x$. The functional $f$ is nonzero, so $\ker f$ is a hyperplane. (ii) Immediate. (iii) Using $f(v)=0$ twice, $\tau(x-f(x)v)=x-f(x)v+f(x-f(x)v)v=x-f(x)v+f(x)v=x$. (iv) $(\tau-\operatorname{id})(x)=f(x)v$ has image $\langle v\rangle$, of dimension $1$; and $(\tau-\operatorname{id})^2(x)=f(x)(\tau-\operatorname{id})(v)=f(x)\cdot f(v)v=0$. (v) $\tau$ is unipotent with $\tau-\operatorname{id}$ nilpotent of rank $1$, so its only eigenvalue is $1$ and its determinant is a product of eigenvalues, hence $1$. $\square$
+*Proof.* (i) Linearity is clear. If $\tau(x)=x$ then $f(x)v=0$ and $v \neq 0$, so $f(x)=0$; conversely $f(x)=0$ gives $\tau(x)=x$. The functional $f$ is nonzero, so $\ker f$ is a hyperplane. (ii) Immediate. (iii) Using $f(v)=0$ twice, $\tau(x-f(x)v)=x-f(x)v+f(x-f(x)v)v=x-f(x)v+f(x)v=x$. (iv) $(\tau-\operatorname{id})(x)=f(x)v$ has image $\langle v\rangle$, of dimension $1$; and $(\tau-\operatorname{id})^2(x)=f(x)(\tau-\operatorname{id})(v)=f(x)\cdot f(v)v=0$. (v) $\tau$ is unipotent with $\tau-\operatorname{id}$ nilpotent of rank $1$, so its only eigenvalue is $1$ and its determinant is a product of eigenvalues, hence $1$.
 
 Property (iv) says that a transvection is exactly a transformation of the form $\operatorname{id}+N$ with $N^2=0$ and $\operatorname{rk}N=1$: the rank-one condition is not automatic, but every rank-one square-zero endomorphism with $\operatorname{im}N \subseteq \ker N$ and $N \neq 0$ is of the form $x\mapsto f(x)v$ with $f(v)=0$.
 
@@ -45,13 +45,13 @@ Property (iv) says that a transvection is exactly a transformation of the form $
 
 **Proposition.** Let $\tau(x)=x+f(x)v$ be a transvection. Choose $v_1 \in V$ with $f(v_1)=1$, and let $v_2,\dots,v_n$ be a basis of $\ker f$ chosen so that $v_2=v$. Then $(v_1,v_2,\dots,v_n)$ is a basis of $V$, in which $[\tau]=E_{21}(1)$.
 
-*Proof.* The vector $v_1$ is not in $\ker f$, so $v_1,v_2,\dots,v_n$ is a basis. For $j \ge 2$, $f(v_j)=0$ and hence $\tau(v_j)=v_j$. For $v_1$, $\tau(v_1)=v_1+f(v_1)v=v_1+v_2$. So the first column of the matrix is $(1,1,0,\dots,0)^{\mathsf{T}}$ and all other columns are standard basis vectors, that is, the matrix is $I+e_{21}=E_{21}(1)$. $\square$
+*Proof.* The vector $v_1$ is not in $\ker f$, so $v_1,v_2,\dots,v_n$ is a basis. For $j \ge 2$, $f(v_j)=0$ and hence $\tau(v_j)=v_j$. For $v_1$, $\tau(v_1)=v_1+f(v_1)v=v_1+v_2$. So the first column of the matrix is $(1,1,0,\dots,0)^{\mathsf{T}}$ and all other columns are standard basis vectors, that is, the matrix is $I+e_{21}=E_{21}(1)$.
 
 Note that the direction vector $v$ in the formula is fixed by $\tau$, because $f(v)=0$; the vectors that are moved are those $x$ with $f(x) \neq 0$, and each is moved parallel to $v$ by the amount $f(x)$. The hyperplane $\ker f$ is fixed pointwise, and the line $\langle v\rangle$ lies inside it and is the image of $\tau-\operatorname{id}$.
 
 **Corollary.** Every transvection is conjugate in $\operatorname{GL}(V)$ to every other: for each $n$, all transvections lie in a single conjugacy class, represented by $E_{21}(1)$.
 
-*Proof.* The normal form is independent of $\tau$ and of the field. $\square$
+*Proof.* The normal form is independent of $\tau$ and of the field.
 
 This is in sharp contrast with the orthogonal and symplectic cases, where the transvections present are constrained by the form and split into several classes.
 
@@ -63,7 +63,7 @@ This is in sharp contrast with the orthogonal and symplectic cases, where the tr
 
 **Proposition.** In the standard basis of $F^n$, the matrix $E_{ij}(\lambda)$ is the transvection $x \mapsto x+\lambda x_j e_i$, where $x_j$ is the $j$-th coordinate functional and $e_i$ the $i$-th basis vector. It satisfies $E_{ij}(\lambda)E_{ij}(\mu)=E_{ij}(\lambda+\mu)$ and $E_{ij}(\lambda)^{-1}=E_{ij}(-\lambda)$, so the matrices $E_{ij}(\lambda)$, $\lambda \in F$, form a subgroup isomorphic to the additive group $(F,+)$.
 
-*Proof.* The matrix $e_{ij}$ sends $x$ to $x_je_i$, so $(I+\lambda e_{ij})x=x+\lambda x_je_i$. The functional $f(x)=\lambda x_j$ and the vector $v=e_i$ satisfy $f(v)=\lambda \cdot 0=0$ for $i \neq j$. Products: $(I+\lambda e_{ij})(I+\mu e_{ij})=I+(\lambda+\mu)e_{ij}$, since $e_{ij}^2=0$. $\square$
+*Proof.* The matrix $e_{ij}$ sends $x$ to $x_je_i$, so $(I+\lambda e_{ij})x=x+\lambda x_je_i$. The functional $f(x)=\lambda x_j$ and the vector $v=e_i$ satisfy $f(v)=\lambda \cdot 0=0$ for $i \neq j$. Products: $(I+\lambda e_{ij})(I+\mu e_{ij})=I+(\lambda+\mu)e_{ij}$, since $e_{ij}^2=0$.
 
 The **elementary column operations** are the same matrices applied on the right, $A \mapsto AE_{ij}(\lambda)$; they replace column $j$ by column $j$ plus $\lambda$ times column $i$. The **row operations** are the left multiplications $A \mapsto E_{ij}(\lambda)A$, which replace row $i$ by row $i$ plus $\lambda$ times row $j$. Row and column operations generate the same groups of matrices, but acting on the two sides of a matrix; and for an operator on $V$, a change of basis realises these operations as conjugation.
 
@@ -81,7 +81,7 @@ $$
 D E_{ij}(\lambda) D^{-1}=E_{ij}(t^2\lambda), \qquad D E_{ji}(\lambda) D^{-1}=E_{ji}(t^{-2}\lambda).
 $$
 
-*Proof.* The first is the standard elementary computation $[E_{ij}(\lambda),E_{jk}(\mu)]=E_{ik}(\lambda\mu)$ for $i,j,k$ distinct, obtained by multiplying out $2 \times 2$ blocks. The second is conjugation of the matrix with a single off-diagonal entry, which scales that entry by $t\cdot t$ when it lies above the diagonal and by $t^{-1}\cdot t^{-1}$ when it lies below it. $\square$
+*Proof.* The first is the standard elementary computation $[E_{ij}(\lambda),E_{jk}(\mu)]=E_{ik}(\lambda\mu)$ for $i,j,k$ distinct, obtained by multiplying out $2 \times 2$ blocks. The second is conjugation of the matrix with a single off-diagonal entry, which scales that entry by $t\cdot t$ when it lies above the diagonal and by $t^{-1}\cdot t^{-1}$ when it lies below it.
 
 These identities are exactly what the commutator theorems of the preceding article use: the first produces an elementary matrix of a new index from two of the others, and the second rescales the parameter.
 
@@ -93,7 +93,7 @@ These identities are exactly what the commutator theorems of the preceding artic
 
 **Theorem (Gaussian elimination).** Every matrix over a field can be brought to reduced row-echelon form by finitely many elementary row operations. If the leading principal minors of $A$ are all nonzero, the operations can be taken to be additions of multiples of rows to later rows, and the result is the $LU$ factorisation $A=LU$ with $L$ unit lower triangular and $U$ upper triangular.
 
-*Proof.* The elimination step clears the entries below a pivot by subtracting a multiple of the pivot row from each later row; each such step is left multiplication by a lower elementary matrix. The pivot at stage $k$ is the $k$-th leading principal minor of the partially reduced matrix divided by its predecessor, so it is nonzero exactly when the corresponding leading principal minor of $A$ is nonzero. Collecting the inverse elementary matrices gives $L$; the reduced matrix is $U$. $\square$
+*Proof.* The elimination step clears the entries below a pivot by subtracting a multiple of the pivot row from each later row; each such step is left multiplication by a lower elementary matrix. The pivot at stage $k$ is the $k$-th leading principal minor of the partially reduced matrix divided by its predecessor, so it is nonzero exactly when the corresponding leading principal minor of $A$ is nonzero. Collecting the inverse elementary matrices gives $L$; the reduced matrix is $U$.
 
 With row interchanges allowed, every invertible matrix has a factorisation $PA=LU$ with $P$ a permutation matrix, obtained by partial pivoting. This is the standard computational form.
 
@@ -113,11 +113,11 @@ The same contrast appears in the menu of generation statements: the elementary m
 
 **Theorem.** For $n \ge 2$ and any field $F$, $\operatorname{SL}_n(F)$ is generated by the elementary matrices $E_{ij}(\lambda)$.
 
-*Proof (standard).* This is the classical generation theorem of the theory of the linear groups, quoted here as standard; its two verifiable ends are recorded. Since $\det A=1$ the first column of $A$ is nonzero, and if its first entry vanishes then adding a suitable multiple of a row with nonzero first-column entry to the first row makes the pivot nonzero. The row transvections $E_{k1}(\lambda)$ with $\lambda=-a_{k1}/a_{11}$ then clear the first column below the pivot, and the column transvections $E_{1j}(\mu)$ with $\mu=-a_{1j}/a_{11}$ clear the first row to its right, leaving a matrix $\operatorname{diag}(c,A'')$ with $c\det A''=1$. The subgroup generated by the elementary matrices is normal in $\operatorname{SL}_n(F)$, and the classical theorem of Dieudonné identifies it with $\operatorname{SL}_n(F)$; the ingredients are that $\operatorname{diag}(c,c^{-1},1,\dots,1) \in E$ for $n \ge 3$, together with the identities $E_{ij}(\lambda)=[E_{ik}(\lambda),E_{kj}(1)]$ for distinct $i,j,k$ and $DE_{12}(\lambda)D^{-1}=E_{12}(t^2\lambda)$, proved above, which handle $n \ge 3$ and $n=2$ with $|F|>3$ respectively. The two small fields are settled by direct enumeration of the six and the twenty-four elements: $E_{12}(1)$ and $E_{21}(1)$ generate $\operatorname{SL}_2(\mathbb{F}_2)\cong S_3$ and $\operatorname{SL}_2(\mathbb{F}_3)$. $\square$
+*Proof (standard).* This is the classical generation theorem of the theory of the linear groups, quoted here as standard; its two verifiable ends are recorded. Since $\det A=1$ the first column of $A$ is nonzero, and if its first entry vanishes then adding a suitable multiple of a row with nonzero first-column entry to the first row makes the pivot nonzero. The row transvections $E_{k1}(\lambda)$ with $\lambda=-a_{k1}/a_{11}$ then clear the first column below the pivot, and the column transvections $E_{1j}(\mu)$ with $\mu=-a_{1j}/a_{11}$ clear the first row to its right, leaving a matrix $\operatorname{diag}(c,A'')$ with $c\det A''=1$. The subgroup generated by the elementary matrices is normal in $\operatorname{SL}_n(F)$, and the classical theorem of Dieudonné identifies it with $\operatorname{SL}_n(F)$; the ingredients are that $\operatorname{diag}(c,c^{-1},1,\dots,1) \in E$ for $n \ge 3$, together with the identities $E_{ij}(\lambda)=[E_{ik}(\lambda),E_{kj}(1)]$ for distinct $i,j,k$ and $DE_{12}(\lambda)D^{-1}=E_{12}(t^2\lambda)$, proved above, which handle $n \ge 3$ and $n=2$ with $|F|>3$ respectively. The two small fields are settled by direct enumeration of the six and the twenty-four elements: $E_{12}(1)$ and $E_{21}(1)$ generate $\operatorname{SL}_2(\mathbb{F}_2)\cong S_3$ and $\operatorname{SL}_2(\mathbb{F}_3)$.
 
 **Corollary.** $\operatorname{GL}_n(F)$ is generated by the elementary matrices together with the diagonal matrices.
 
-*Proof.* Every invertible matrix can be reduced to a diagonal matrix by row operations, by the elimination theorem; the elementary operations are elementary matrices and interchanges, and an interchange is a product of elementary matrices and a diagonal sign change over a field. $\square$
+*Proof.* Every invertible matrix can be reduced to a diagonal matrix by row operations, by the elimination theorem; the elementary operations are elementary matrices and interchanges, and an interchange is a product of elementary matrices and a diagonal sign change over a field.
 
 ## Unipotent Transformations
 
@@ -127,19 +127,19 @@ The same contrast appears in the menu of generation statements: the elementary m
 
 **Proposition.** (i) A unipotent map is invertible, with $u^{-1}=\operatorname{id}-N+N^2-\cdots$ (a finite sum), and $\det u=1$. (ii) If $u$ is unipotent and $S$ is any invertible map then $SuS^{-1}$ is unipotent with nilpotent part $SNS^{-1}$. (iii) The product of commuting unipotent maps is unipotent. (iv) A transvection is unipotent with $N^2=0$ and $\operatorname{rk}N=1$.
 
-*Proof.* (i) The displayed sum telescopes with $\operatorname{id}+N$ because $N$ is nilpotent; the determinant is the product of the eigenvalues, all equal to $1$. (ii) $S(\operatorname{id}+N)S^{-1}=\operatorname{id}+SNS^{-1}$ and nilpotence is preserved by conjugation. (iii) $(\operatorname{id}+N)(\operatorname{id}+M)=\operatorname{id}+(N+M+NM)$ and $N+M+NM$ is nilpotent if $N,M$ commute, since then $N+M$ and $NM$ are commuting nilpotent elements and their sum is nilpotent. (iv) is the computation of the transvection section. $\square$
+*Proof.* (i) The displayed sum telescopes with $\operatorname{id}+N$ because $N$ is nilpotent; the determinant is the product of the eigenvalues, all equal to $1$. (ii) $S(\operatorname{id}+N)S^{-1}=\operatorname{id}+SNS^{-1}$ and nilpotence is preserved by conjugation. (iii) $(\operatorname{id}+N)(\operatorname{id}+M)=\operatorname{id}+(N+M+NM)$ and $N+M+NM$ is nilpotent if $N,M$ commute, since then $N+M$ and $NM$ are commuting nilpotent elements and their sum is nilpotent. (iv) is the computation of the transvection section.
 
 ### Jordan Decomposition of a Unipotent Map
 
 **Theorem.** Let $u$ be unipotent and suppose $c_u$ splits, which is automatic when $F$ is algebraically closed. Then $u$ is similar, over $F$, to a direct sum of Jordan blocks $J_e(1)=\operatorname{id}_e+N_e$ with $N_e$ the superdiagonal shift, and the multiset of block sizes is determined by $u$. In particular $u$ is a transvection exactly when it has a single Jordan block of size $2$ and all other blocks of size $1$.
 
-*Proof.* This is the Jordan decomposition applied to the unique eigenvalue $1$; the rank-one condition forces exactly one block of size $2$. $\square$
+*Proof.* This is the Jordan decomposition applied to the unique eigenvalue $1$; the rank-one condition forces exactly one block of size $2$.
 
 A unipotent map with $N^2=0$ but $\operatorname{rk}N=r \ge 2$ is a product of commuting transvections in suitable coordinates: $N$ is then a sum of $r$ rank-one square-zero pieces with disjoint images and kernels, and each piece is a transvection, the pieces commuting. This is the sense in which transvections are the elementary unipotents.
 
 **Proposition (orders).** In characteristic $0$ a nontrivial unipotent map has infinite order. In characteristic $p>0$, if $N$ is nilpotent then $(\operatorname{id}+N)^p=\operatorname{id}+N^p$ by the binomial theorem, because the intermediate binomial coefficients vanish in characteristic $p$; consequently $\operatorname{id}+N$ has order a power of $p$. For a transvection, $N^2=0$, and $\operatorname{id}+N$ has order dividing $p$: the order is exactly $p$ when $p$ is odd, and is $2$ when $p=2$, since then $(\operatorname{id}+N)^2=\operatorname{id}$.
 
-*Proof.* The characteristic $p$ identity is the binomial theorem, and if $N^e=0$ then $(\operatorname{id}+N)^{p^m}=\operatorname{id}+N^{p^m}=\operatorname{id}$ for $p^m \ge e$, so the order divides $p^m$ and is a power of $p$. For a transvection, $N^2=0$ and $(\operatorname{id}+N)^k=\operatorname{id}+kN$ for $0 \le k \le p-1$, which is $\operatorname{id}$ only for $k=0$ when $p$ is odd, so the order is $p$; for $p=2$ the order is $2$. In characteristic $0$ the same formula $(\operatorname{id}+N)^k=\operatorname{id}+kN+\cdots$ has the nonzero term $kN$, so no positive power is the identity. $\square$
+*Proof.* The characteristic $p$ identity is the binomial theorem, and if $N^e=0$ then $(\operatorname{id}+N)^{p^m}=\operatorname{id}+N^{p^m}=\operatorname{id}$ for $p^m \ge e$, so the order divides $p^m$ and is a power of $p$. For a transvection, $N^2=0$ and $(\operatorname{id}+N)^k=\operatorname{id}+kN$ for $0 \le k \le p-1$, which is $\operatorname{id}$ only for $k=0$ when $p$ is odd, so the order is $p$; for $p=2$ the order is $2$. In characteristic $0$ the same formula $(\operatorname{id}+N)^k=\operatorname{id}+kN+\cdots$ has the nonzero term $kN$, so no positive power is the identity.
 
 ## Dilatations and the Centre
 
@@ -147,11 +147,11 @@ A unipotent map with $N^2=0$ but $\operatorname{rk}N=r \ge 2$ is a product of co
 
 **Proposition.** Each dilatation lies in $\operatorname{GL}(V)$, its determinant is $\lambda$, and the homotheties are exactly the dilatations whose fixed hyperplane can be chosen arbitrarily and whose scalar is independent of $H$.
 
-*Proof.* In a basis adapted to the decomposition $V=H \oplus \langle v\rangle$ the matrix is diagonal with one entry $\lambda$ and the rest $1$, so it is invertible with determinant $\lambda$. A scalar map $\lambda\operatorname{id}$ fixes every hyperplane; conversely if a map fixes every hyperplane pointwise it fixes every vector, and if it fixes a hyperplane $H$ pointwise and acts on a complementary line by $\lambda$, its fixed hyperplane is exactly $H$ unless $\lambda=1$. $\square$
+*Proof.* In a basis adapted to the decomposition $V=H \oplus \langle v\rangle$ the matrix is diagonal with one entry $\lambda$ and the rest $1$, so it is invertible with determinant $\lambda$. A scalar map $\lambda\operatorname{id}$ fixes every hyperplane; conversely if a map fixes every hyperplane pointwise it fixes every vector, and if it fixes a hyperplane $H$ pointwise and acts on a complementary line by $\lambda$, its fixed hyperplane is exactly $H$ unless $\lambda=1$.
 
 **Theorem.** Over any field, $\operatorname{GL}(V)$ is generated by transvections and dilatations.
 
-*Proof.* By Gaussian elimination, $\operatorname{GL}(V)$ is generated by the elementary matrices and the diagonal matrices in any basis. Each elementary matrix $E_{ij}(\lambda)$ is a transvection in that basis. A diagonal matrix $\operatorname{diag}(d_1,\dots,d_n)$ is the product over $i$ of the dilatations that fix the coordinate hyperplane $\{x_i=0\}$ and scale the coordinate line $\langle e_i\rangle$ by $d_i$; each factor is a dilatation with fixed hyperplane the complementary coordinate hyperplane. Hence the transvections and dilatations generate $\operatorname{GL}(V)$. $\square$
+*Proof.* By Gaussian elimination, $\operatorname{GL}(V)$ is generated by the elementary matrices and the diagonal matrices in any basis. Each elementary matrix $E_{ij}(\lambda)$ is a transvection in that basis. A diagonal matrix $\operatorname{diag}(d_1,\dots,d_n)$ is the product over $i$ of the dilatations that fix the coordinate hyperplane $\{x_i=0\}$ and scale the coordinate line $\langle e_i\rangle$ by $d_i$; each factor is a dilatation with fixed hyperplane the complementary coordinate hyperplane. Hence the transvections and dilatations generate $\operatorname{GL}(V)$.
 
 **Example.** The identity
 

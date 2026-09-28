@@ -34,7 +34,7 @@ Throughout, $(X,\mathcal{B},\mu)$ is a probability space, $T : X\to X$ is a meas
 
 **Theorem (Poincaré recurrence).** Let $T$ be measure-preserving and let $A \in \mathcal{B}$ with $\mu(A) > 0$. Then for a.e. $x \in A$ there are infinitely many $n \geq 1$ with $T^nx \in A$.
 
-*Proof.* Let $N = \{x \in A : T^nx \notin A \text{ for all } n \geq 1\}$ be the set of points that never return. The sets $N, T^{-1}N, T^{-2}N, \dots$ are pairwise disjoint: if $T^{-i}N\cap T^{-j}N\neq\varnothing$ with $i<j$, then a point of $N$ is sent by $T^{j-i}$ into $N\subseteq A$, contradicting the definition of $N$. Since $T$ preserves the measure, all the sets $T^{-k}N$ have the same measure, and pairwise disjointness forces $\mu(N) = 0$. Hence a.e. point of $A$ returns at least once; applying the same argument to the measure-preserving system restricted to the return times gives infinitely many returns. $\square$
+*Proof.* Let $N = \{x \in A : T^nx \notin A \text{ for all } n \geq 1\}$ be the set of points that never return. The sets $N, T^{-1}N, T^{-2}N, \dots$ are pairwise disjoint: if $T^{-i}N\cap T^{-j}N\neq\varnothing$ with $i<j$, then a point of $N$ is sent by $T^{j-i}$ into $N\subseteq A$, contradicting the definition of $N$. Since $T$ preserves the measure, all the sets $T^{-k}N$ have the same measure, and pairwise disjointness forces $\mu(N) = 0$. Hence a.e. point of $A$ returns at least once; applying the same argument to the measure-preserving system restricted to the return times gives infinitely many returns.
 
 The recurrence theorem is the first indication that measure-preserving dynamics is recurrent: a positive-measure set is visited infinitely often by almost every orbit that meets it. It is also the reason the asymptotic statements below are meaningful, and its quantitative form is Kac's theorem at the end of the next section.
 
@@ -50,7 +50,7 @@ If $T$ is invertible then $U_T$ is unitary, and $U_T$ is the representation of $
 
 **Proposition.** If $T$ is invertible then $U_T$ is unitary and $U_T^{-1} = U_{T^{-1}}$; the constant functions span the **fixed space** $\ker(U_T - I)$, and the orthogonal complement of the fixed space is the closed span of the **coboundaries** $\{f\circ T - f : f \in L^2\}$.
 
-*Proof.* The unitarity follows from the change of variables, since $T$ preserves $\mu$: $\langle U_Tf, U_Tg\rangle = \int f(Tx)\overline{g(Tx)}\,d\mu(x) = \int f\bar g\,d\mu$ by the measure-preserving property. The identification of the coboundaries is the standard orthogonal decomposition $L^2 = \ker(U-I)\oplus\overline{\operatorname{Im}(U-I)}$ for a unitary operator, valid because the two spaces are orthogonal — $\langle f\circ T - f, h\rangle = 0$ for $h$ fixed — and because the orthogonal complement of the image is the kernel for a normal operator. $\square$
+*Proof.* The unitarity follows from the change of variables, since $T$ preserves $\mu$: $\langle U_Tf, U_Tg\rangle = \int f(Tx)\overline{g(Tx)}\,d\mu(x) = \int f\bar g\,d\mu$ by the measure-preserving property. The identification of the coboundaries is the standard orthogonal decomposition $L^2 = \ker(U-I)\oplus\overline{\operatorname{Im}(U-I)}$ for a unitary operator, valid because the two spaces are orthogonal — $\langle f\circ T - f, h\rangle = 0$ for $h$ fixed — and because the orthogonal complement of the image is the kernel for a normal operator.
 
 The coboundary decomposition is the operator-theoretic form of the ergodic theorems: the orthogonal projection onto the fixed space is the limit of the averages of the powers of $U_T$, and the coboundary part averages to zero. The same decomposition in the unitary representation of a group is the subject of *Ergodic Theory of Group Actions* and of the spectral theory of *Noncommutative Harmonic Analysis*.
 
@@ -66,7 +66,7 @@ The coboundary decomposition is the operator-theoretic form of the ergodic theor
 4. for every $A, B \in \mathcal{B}$ of positive measure there is $n \in \mathbb{Z}$ with $\mu(T^nA \cap B) > 0$;
 5. for all $A,B \in \mathcal{B}$, $\frac{1}{n}\sum_{k=0}^{n-1}\mu(T^{-k}A\cap B) \to \mu(A)\mu(B)$.
 
-*Proof.* The equivalence of 1, 2 and 3 is immediate from the definitions: an invariant function is a limit of invariant simple functions, and the invariant sets generate the invariant functions. The equivalence with 4 is the argument used for the group-action dichotomy: if $\mu(T^nA\cap B) = 0$ for all $n$ and $A$ is invariant with $0 < \mu(A) < 1$, take $B = X\setminus A$. The equivalence with 5 is the mean ergodic theorem applied to the indicator functions, since the average of the correlations is the inner product of the averages. $\square$
+*Proof.* The equivalence of 1, 2 and 3 is immediate from the definitions: an invariant function is a limit of invariant simple functions, and the invariant sets generate the invariant functions. The equivalence with 4 is the argument used for the group-action dichotomy: if $\mu(T^nA\cap B) = 0$ for all $n$ and $A$ is invariant with $0 < \mu(A) < 1$, take $B = X\setminus A$. The equivalence with 5 is the mean ergodic theorem applied to the indicator functions, since the average of the correlations is the inner product of the averages.
 
 The criterion 5 is the form in which ergodicity is checked in practice, and it is the first appearance of the mixing hierarchy: ergodicity is the convergence of the **Cesàro** averages of the correlations, and the stronger property asks for the convergence of the correlations themselves.
 
@@ -86,7 +86,7 @@ it is **weakly mixing** if the Cesàro averages of the correlations converge as 
 2. $T$ is weakly mixing if and only if $1$ is the only eigenvalue of $U_T$, that is, the system has discrete spectrum $1$ alone;
 3. $T$ is mixing if and only if $\langle U_T^nf,g\rangle \to \langle Pf, \mathbf{1}\rangle\langle \mathbf{1},g\rangle$ for all $f,g \in L^2$, where $P$ is the projection onto the constants.
 
-*Proof (sketch).* The first statement is a restatement of criterion 3 above. For the second, the correlation $n\mapsto\langle U_T^nf,g\rangle$ is a positive-definite sequence; a positive-definite sequence whose Cesàro absolute means vanish must have vanishing Fourier coefficients at nonzero frequencies, so no eigenvalue other than $1$ can occur, and conversely a nonconstant eigenfunction produces a correlation whose average does not vanish. The third statement is the definition rewritten with $f = \mathbf{1}_A$, $g = \mathbf{1}_B$ and the density of the indicators in $L^2$; the limit is the announced one. $\square$
+*Proof (sketch).* The first statement is a restatement of criterion 3 above. For the second, the correlation $n\mapsto\langle U_T^nf,g\rangle$ is a positive-definite sequence; a positive-definite sequence whose Cesàro absolute means vanish must have vanishing Fourier coefficients at nonzero frequencies, so no eigenvalue other than $1$ can occur, and conversely a nonconstant eigenfunction produces a correlation whose average does not vanish. The third statement is the definition rewritten with $f = \mathbf{1}_A$, $g = \mathbf{1}_B$ and the density of the indicators in $L^2$; the limit is the announced one.
 
 The classification shows that the ergodic hierarchy is a hierarchy of the spectrum of the Koopman operator: ergodicity says the fixed space is one-dimensional, weak mixing that the point spectrum is trivial on the orthogonal complement of the constants, and mixing that the correlations decay in the mean. Weak mixing is also characterised by the ergodicity of the product system $T\times T$, and mixing implies weak mixing which implies ergodicity, with the circle rotation showing that ergodicity does not imply weak mixing, and the weakly mixing but non-mixing systems of rank-one constructions showing that weak mixing does not imply mixing.
 
@@ -108,7 +108,7 @@ $$
 \frac{1}{n}\sum_{k=0}^{n-1}U^k(g\circ T - g) = \frac{1}{n}\bigl(U^ng - g\bigr),
 $$
 
-whose norm is at most $2\|g\|_2/n\to0$; the general element of the closure of the image is handled by approximation. $\square$
+whose norm is at most $2\|g\|_2/n\to0$; the general element of the closure of the image is handled by approximation.
 
 The theorem is the ergodic theorem in the mean, and it is a statement about the operator $U$ alone: it holds for every contraction of a Hilbert space (the **von Neumann ergodic theorem** for isometries), with the projection onto the fixed space as the limit. If $T$ is ergodic then $Pf = \int f\,d\mu$ is the constant function of the mean, and the theorem is the convergence of the averages to the space average. The theorem does not require the pointwise convergence, which is the content of the next result.
 
@@ -123,7 +123,7 @@ $$
 $$
 
 *Proof.* Decompose the set where the maximum is positive according to the first time $k \leq N$ at which $S_kf > 0$, and use the translation invariance of the measure: on the piece where the first positive partial sum occurs at $k$, the sum $S_kf$ is at least the later increments, so
-$\int_{\{M_Nf>0\}}f\,d\mu = \sum_{k=0}^{N}\int_{\{\text{first positive at }k\}}f\,d\mu \geq 0$. $\square$
+$\int_{\{M_Nf>0\}}f\,d\mu = \sum_{k=0}^{N}\int_{\{\text{first positive at }k\}}f\,d\mu \geq 0$.
 
 **Theorem (Birkhoff pointwise ergodic theorem).** Let $T$ be measure-preserving and let $f \in L^1(X,\mu)$. Then the averages converge a.e. and in $L^1$:
 
@@ -133,7 +133,7 @@ $$
 
 If $T$ is ergodic then $f^* = \int f\,d\mu$ a.e.
 
-*Proof (sketch).* The Hopf maximal inequality applied to $\pm(f - g)$ for a bounded invariant $g$ controls the set where the averages differ from a constant by more than $\varepsilon$; the maximal inequality of Hopf and the density of the bounded functions in $L^1$ show that the set of points where $\limsup$ and $\liminf$ of the averages differ has measure zero. The limit $f^*$ is invariant because the averages are and the limit is measurable with respect to the invariant $\sigma$-algebra; the identity $\int f^* = \int f$ follows from the mean ergodic theorem, which identifies the $L^1$ limit of the averages with the conditional expectation $\mathbb{E}[f\mid\mathcal{I}]$. $\square$
+*Proof (sketch).* The Hopf maximal inequality applied to $\pm(f - g)$ for a bounded invariant $g$ controls the set where the averages differ from a constant by more than $\varepsilon$; the maximal inequality of Hopf and the density of the bounded functions in $L^1$ show that the set of points where $\limsup$ and $\liminf$ of the averages differ has measure zero. The limit $f^*$ is invariant because the averages are and the limit is measurable with respect to the invariant $\sigma$-algebra; the identity $\int f^* = \int f$ follows from the mean ergodic theorem, which identifies the $L^1$ limit of the averages with the conditional expectation $\mathbb{E}[f\mid\mathcal{I}]$.
 
 The theorem is the pointwise form of the law of large numbers: for the Bernoulli shift the invariant $\sigma$-algebra is trivial, and the conclusion is the classical strong law of *Laws of Large Numbers and the Central Limit Theorem*. In general the limit is the conditional expectation onto the invariant sets, $\mathbb{E}[f\mid\mathcal{I}]$, and this is the sharp statement: the time average converges to the space average along the ergodic components, and the decomposition into ergodic components is the subject of the section after the next.
 
@@ -141,7 +141,7 @@ The theorem is the pointwise form of the law of large numbers: for the Bernoulli
 
 **Theorem (Kac).** Let $T$ be ergodic and measure-preserving on a probability space, let $A \in \mathcal{B}$ with $\mu(A) > 0$, and let $\tau_A(x) = \inf\{n \geq 1 : T^nx \in A\}$ be the first return time. Then $\int_A\tau_A\,d\mu = 1$.
 
-*Proof.* Apply the ergodic theorem to the ergodic system induced on $A$ by the first-return map, or equivalently apply the ergodic theorem to $\mathbf{1}_A$ and count the visits: the proportion of time spent in $A$ is $\mu(A)$, and the average return time is the reciprocal of the frequency of visits, which gives the identity after the normalisation by $\mu(A)$. The precise derivation uses the Kac formula $\int_A\tau_A\,d\mu = 1$ for a probability measure, which is the ergodic theorem for the induced transformation. $\square$
+*Proof.* Apply the ergodic theorem to the ergodic system induced on $A$ by the first-return map, or equivalently apply the ergodic theorem to $\mathbf{1}_A$ and count the visits: the proportion of time spent in $A$ is $\mu(A)$, and the average return time is the reciprocal of the frequency of visits, which gives the identity after the normalisation by $\mu(A)$. The precise derivation uses the Kac formula $\int_A\tau_A\,d\mu = 1$ for a probability measure, which is the ergodic theorem for the induced transformation.
 
 Kac's theorem quantifies Poincaré recurrence: the mean return time to $A$ is $1/\mu(A)$, so a small set is revisited only after a long time. It is the prototype of the return-time statements used in the theory of the continued fraction map and in the recurrence of the homogeneous flows of *Ergodic Theory of Group Actions*.
 

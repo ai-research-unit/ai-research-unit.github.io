@@ -154,7 +154,7 @@ with $\eta^{(r)\dagger}\eta^{(s)} = \delta^{rs}$; at rest $v^{(r)}(0) = \sqrt{2m
 
 The plane-wave ansatz of the companion article, $\tilde{\Psi} = \tilde{\Psi}_0\exp\!\left(i\,\mathrm{Sc}(\tilde{k}\bar{\tilde{Q}})\right)$, carries the wave biquaternion $\tilde{k}$.
 
-With the four-wavevector of the companion article written as $\tilde{K} = i\omega/c\,e_0 + \mathbf{k}$, the norm form is
+With the four-wavevector of the companion article written as $\tilde{K} = i\omega/c\,e_0 + \mathbf{k}$, the biquaternion norm is
 
 $$
 N(\tilde{K}) = \tilde{K}\bar{\tilde{K}} = \left(\frac{i\omega}{c}\right)^2 + \mathbf{k}^2 = -\frac{\omega^2}{c^2} + \mathbf{k}^2 .

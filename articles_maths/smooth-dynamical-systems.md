@@ -15,9 +15,9 @@ No physics is invoked.
 
 ### Integral Curves and the Flow
 
-**Definition.** Let $M$ be a smooth manifold and let $\mathfrak X(M)$ be the space of smooth vector fields on $M$. An **integral curve** of $X \in\mathfrak X(M)$ through $p \in M$ is a smooth curve $\gamma:I\to M$ on an interval $I \ni0$ with $\gamma(0)=p$ and $\gamma'(t)=X(\gamma(t))$; the **local flow** of $X$ is the map $\varphi:\mathcal D\to M$, $\mathcal D$ an open neighbourhood of $\{0\}\times M$ in $\mathbb{R}\times M$, defined by $\varphi(t,p)=\gamma_p(t)$ for the maximal integral curve $\gamma_p$ through $p$. The vector field is **complete** if $\mathcal D=\mathbb{R}\times M$, and then $\varphi_t=\varphi(t,\cdot)$ is a one-parameter group of diffeomorphisms: $\varphi_0=\mathrm{id}$, $\varphi_{s+t}=\varphi_s\circ\varphi_t$, and each $\varphi_t$ is a diffeomorphism of $M$ with inverse $\varphi_{-t}$.
+**Definition.** Let $M$ be a smooth manifold and let $\mathrm{X}(M)$ be the space of smooth vector fields on $M$. An **integral curve** of $X \in\mathrm{X}(M)$ through $p \in M$ is a smooth curve $\gamma:I\to M$ on an interval $I \ni0$ with $\gamma(0)=p$ and $\gamma'(t)=X(\gamma(t))$; the **local flow** of $X$ is the map $\varphi:\mathcal D\to M$, $\mathcal D$ an open neighbourhood of $\{0\}\times M$ in $\mathbb{R}\times M$, defined by $\varphi(t,p)=\gamma_p(t)$ for the maximal integral curve $\gamma_p$ through $p$. The vector field is **complete** if $\mathcal D=\mathbb{R}\times M$, and then $\varphi_t=\varphi(t,\cdot)$ is a one-parameter group of diffeomorphisms: $\varphi_0=\mathrm{id}$, $\varphi_{s+t}=\varphi_s\circ\varphi_t$, and each $\varphi_t$ is a diffeomorphism of $M$ with inverse $\varphi_{-t}$.
 
-**Theorem (existence, uniqueness and smooth dependence).** Let $M$ be a smooth manifold and $X \in\mathfrak X(M)$. Then for every $p \in M$ there is a unique maximal integral curve through $p$, the domain $\mathcal D$ of the flow is open, the flow $\varphi:\mathcal D\to M$ is smooth, and for every $(t,p) \in\mathcal D$ the derivative $D_p\varphi_t$ is the fundamental matrix of the **variational equation**
+**Theorem (existence, uniqueness and smooth dependence).** Let $M$ be a smooth manifold and $X \in\mathrm{X}(M)$. Then for every $p \in M$ there is a unique maximal integral curve through $p$, the domain $\mathcal D$ of the flow is open, the flow $\varphi:\mathcal D\to M$ is smooth, and for every $(t,p) \in\mathcal D$ the derivative $D_p\varphi_t$ is the fundamental matrix of the **variational equation**
 
 $$
 \dot\Phi(t)=DX(\varphi_t(p))\,\Phi(t), \qquad \Phi(0)=\mathrm{id},
@@ -25,7 +25,7 @@ $$
 
 so the derivative of the flow solves the linearised equation along the orbit. If $M$ is compact, every vector field is complete.
 
-*Proof.* In a coordinate chart the equation $\dot x=X(x)$ is a first-order system with a smooth right-hand side, and the existence, uniqueness and smooth dependence on the initial condition are the standard theorems of *Ordinary Differential Equations*; the openness of $\mathcal D$ and the maximality of the curves are the continuation properties of the solutions. For the compact case one covers $M$ by finitely many charts and uses the local existence time, which is bounded below by the compactness. $\square$
+*Proof.* In a coordinate chart the equation $\dot x=X(x)$ is a first-order system with a smooth right-hand side, and the existence, uniqueness and smooth dependence on the initial condition are the standard theorems of *Ordinary Differential Equations*; the openness of $\mathcal D$ and the maximality of the curves are the continuation properties of the solutions. For the compact case one covers $M$ by finitely many charts and uses the local existence time, which is bounded below by the compactness.
 
 **Example (linear and rotational flows).** (i) On $\mathbb{R}^n$ the constant vector field $X(x)=Ax$ has the complete flow $\varphi_t(x)=e^{tA}x$, and the flow is a group of linear maps; the orbit structure is governed by the Jordan form of $A$.
 
@@ -33,9 +33,9 @@ so the derivative of the flow solves the linearised equation along the orbit. If
 
 (iii) On the torus $\mathbb{T}^2$ the constant vector field $X(\theta_1,\theta_2)=(1,\alpha)$ has the flow $\varphi_t(\theta_1,\theta_2)=(\theta_1+t,\theta_2+\alpha t)$; the orbits are dense when $\alpha$ is irrational and periodic when $\alpha$ is rational, which is the Kronecker flow of *Topological Dynamics*.
 
-**Theorem (straightening lemma).** Let $X \in\mathfrak X(M)$ and let $p \in M$ with $X(p)\neq0$. Then there are coordinates $(x_1,\dots,x_n)$ on a neighbourhood of $p$ in which $X=\partial/\partial x_1$, and the flow is the translation $x\mapsto(x_1+t,x_2,\dots,x_n)$.
+**Theorem (straightening lemma).** Let $X \in\mathrm{X}(M)$ and let $p \in M$ with $X(p)\neq0$. Then there are coordinates $(x_1,\dots,x_n)$ on a neighbourhood of $p$ in which $X=\partial/\partial x_1$, and the flow is the translation $x\mapsto(x_1+t,x_2,\dots,x_n)$.
 
-*Proof.* Choose a hypersurface $N$ through $p$ transverse to $X(p)$ and coordinates $y_2,\dots,y_n$ on $N$; the map $(t,y_2,\dots,y_n)\mapsto\varphi_t(0,y_2,\dots,y_n)$ is a local diffeomorphism at the origin by the inverse function theorem, because its derivative at $p$ is invertible with $X(p)$ as the first column; in these coordinates the flow is the translation in $t$ and the vector field is the first coordinate field. $\square$
+*Proof.* Choose a hypersurface $N$ through $p$ transverse to $X(p)$ and coordinates $y_2,\dots,y_n$ on $N$; the map $(t,y_2,\dots,y_n)\mapsto\varphi_t(0,y_2,\dots,y_n)$ is a local diffeomorphism at the origin by the inverse function theorem, because its derivative at $p$ is invertible with $X(p)$ as the first column; in these coordinates the flow is the translation in $t$ and the vector field is the first coordinate field.
 
 ### Invariant Sets and Limit Sets
 
@@ -47,9 +47,9 @@ $$
 
 and the $\alpha$-limit set is defined with $t\to-\infty$.
 
-**Proposition.** Let $M$ be compact and $X \in\mathfrak X(M)$. Then $\omega(p)$ is nonempty, compact, connected and invariant, and it consists of the points that are limits of $\varphi(t_k,p)$ for a sequence $t_k\to+\infty$; if $H$ is a first integral, then $H$ is constant on $\omega(p)$.
+**Proposition.** Let $M$ be compact and $X \in\mathrm{X}(M)$. Then $\omega(p)$ is nonempty, compact, connected and invariant, and it consists of the points that are limits of $\varphi(t_k,p)$ for a sequence $t_k\to+\infty$; if $H$ is a first integral, then $H$ is constant on $\omega(p)$.
 
-*Proof.* The sets $\overline{\varphi([t,\infty)\times\{p\})}$ form a decreasing family of nonempty compact connected sets, so their intersection is nonempty, compact and connected; the invariance follows from the continuity of the flow and the group property; the constancy of a first integral on the limit set follows by continuity along the orbit. $\square$
+*Proof.* The sets $\overline{\varphi([t,\infty)\times\{p\})}$ form a decreasing family of nonempty compact connected sets, so their intersection is nonempty, compact and connected; the invariance follows from the continuity of the flow and the group property; the constancy of a first integral on the limit set follows by continuity along the orbit.
 
 ## Fixed Points, Periodic Orbits and Linearisation
 
@@ -65,9 +65,9 @@ $$
 
 and the **centre subspace** $E^c$ collects the eigenvalues on the imaginary axis.
 
-**Theorem (Hartman–Grobman).** Let $p$ be a hyperbolic fixed point of $X \in\mathfrak X(M)$. Then there is a homeomorphism taking a neighbourhood of $p$ to a neighbourhood of the origin in $T_pM$ that carries the flow of $X$ to the flow of the linear field $y\mapsto Ay$ with $A=DX(p)$; in particular the local topological structure of the flow at a hyperbolic fixed point is that of its linearisation.
+**Theorem (Hartman–Grobman).** Let $p$ be a hyperbolic fixed point of $X \in\mathrm{X}(M)$. Then there is a homeomorphism taking a neighbourhood of $p$ to a neighbourhood of the origin in $T_pM$ that carries the flow of $X$ to the flow of the linear field $y\mapsto Ay$ with $A=DX(p)$; in particular the local topological structure of the flow at a hyperbolic fixed point is that of its linearisation.
 
-*Proof (sketch).* One writes the equation as $\dot x=Ax+g(x)$ with $g=O(\|x\|^2)$ and constructs the homeomorphism as a limit of conjugacies between the nonlinear flow truncated at large frequency and the linear flow, using the hyperbolicity to invert $A$ on the complement of the neutral spectrum and a fixed point argument in the Banach space of bounded maps. The details are the standard proof, cited below; the refinement to a $C^1$ linearisation fails in general, and the obstruction is the resonance of the eigenvalues. $\square$
+*Proof (sketch).* One writes the equation as $\dot x=Ax+g(x)$ with $g=O(\|x\|^2)$ and constructs the homeomorphism as a limit of conjugacies between the nonlinear flow truncated at large frequency and the linear flow, using the hyperbolicity to invert $A$ on the complement of the neutral spectrum and a fixed point argument in the Banach space of bounded maps. The details are the standard proof, cited below; the refinement to a $C^1$ linearisation fails in general, and the obstruction is the resonance of the eigenvalues.
 
 **Theorem (stable manifold theorem).** Let $p$ be a hyperbolic fixed point of $X$ with $A=DX(p)$ and decomposition $T_pM=E^s\oplus E^u$. Then there are smooth *immersed* submanifolds $W^s(p)$ and $W^u(p)$, tangent at $p$ to $E^s$ and $E^u$, with
 
@@ -85,7 +85,7 @@ of the same dimensions as $E^s$ and $E^u$; they are invariant and their tangent 
 
 **Theorem (Poincaré section).** Let $\Sigma \subseteq M$ be a codimension-one submanifold transverse to a complete flow $\varphi_t$ on $M$. Then the return map $P$ is defined on the set of points of $\Sigma$ whose forward orbit meets $\Sigma$ again, and the qualitative behaviour of the flow near $\Sigma$ is determined by that of $P$: periodic orbits of the flow crossing $\Sigma$ correspond to periodic points of $P$, invariant sets correspond to invariant sets, and the stability of a periodic orbit is that of the corresponding fixed point of $P$.
 
-*Proof.* The existence and smoothness of the return time $\tau(q)$ follow from the transversality of $\Sigma$ to $X$ and the implicit function theorem applied to the equation $h(\varphi_\tau(q))=0$, where $h$ is a local defining function of $\Sigma$ with $dh\neq0$, which is solvable near the return time because $\frac{\partial}{\partial\tau}h(\varphi_\tau(q))=dh(X)\neq0$ by transversality; the correspondence of the invariant sets is by definition of the return map, and the derivative computation is the chain rule. $\square$
+*Proof.* The existence and smoothness of the return time $\tau(q)$ follow from the transversality of $\Sigma$ to $X$ and the implicit function theorem applied to the equation $h(\varphi_\tau(q))=0$, where $h$ is a local defining function of $\Sigma$ with $dh\neq0$, which is solvable near the return time because $\frac{\partial}{\partial\tau}h(\varphi_\tau(q))=dh(X)\neq0$ by transversality; the correspondence of the invariant sets is by definition of the return map, and the derivative computation is the chain rule.
 
 **Example (the linear flow on the torus and the rotation).** The constant flow on $\mathbb{T}^2$ with vector field $(1,\alpha)$ has the cross-section $\{\theta_1=0\}=\mathbb{T}$ and the return map the rotation $R_\alpha$ of the circle; the periodic orbits correspond to the periodic points of $R_\alpha$, and the topological structure of the flow is that of the suspension of $R_\alpha$, as constructed below.
 
@@ -97,19 +97,19 @@ of the same dimensions as $E^s$ and $E^u$; they are invariant and their tangent 
 
 **Theorem (linear stability).** Let $p$ be a fixed point of $X$ and $A=DX(p)$. If every eigenvalue of $A$ has negative real part, then $p$ is exponentially stable; if some eigenvalue has positive real part, then $p$ is unstable; if eigenvalues lie on the imaginary axis the linearisation decides nothing, and the stability depends on the nonlinear terms.
 
-*Proof.* In coordinates the equation is $\dot x=Ax+g(x)$ with $g=O(\|x\|^2)$. If the spectrum lies in the open left half-plane, there is an inner product whose quadratic form $x\mapsto\langle x,x\rangle$ satisfies $\frac{d}{dt}\langle x,x\rangle\le-\lambda\|x\|^2$ for small $\|x\|$, which gives the exponential decay; a positive eigenvalue produces growth along the corresponding unstable manifold, whence instability. The neutral case is decided by the higher-order terms: the systems $\dot x=x^2$ and $\dot x=-x^3$ on the line have the same linearisation at the origin and different stability. $\square$
+*Proof.* In coordinates the equation is $\dot x=Ax+g(x)$ with $g=O(\|x\|^2)$. If the spectrum lies in the open left half-plane, there is an inner product whose quadratic form $x\mapsto\langle x,x\rangle$ satisfies $\frac{d}{dt}\langle x,x\rangle\le-\lambda\|x\|^2$ for small $\|x\|$, which gives the exponential decay; a positive eigenvalue produces growth along the corresponding unstable manifold, whence instability. The neutral case is decided by the higher-order terms: the systems $\dot x=x^2$ and $\dot x=-x^3$ on the line have the same linearisation at the origin and different stability.
 
 **Theorem (Lyapunov functions).** Let $p$ be a fixed point and let $V:U\to[0,\infty)$ be a smooth function on a neighbourhood $U$ of $p$ with $V(p)=0$, $V(q)>0$ for $q \neq p$, and $\dot V(q)=\langle\nabla V(q),X(q)\rangle\le0$. Then $p$ is Lyapunov stable. If in addition $\dot V<0$ off $p$, then $p$ is asymptotically stable.
 
-*Proof.* The function $V$ is nonincreasing along orbits, so the sublevel sets $\{V\le\alpha\}$ are invariant; for each $\epsilon$ choose $\alpha$ with $\{V\le\alpha\}\subseteq B(p,\epsilon)$, which is possible by the continuity of $V$ and the fact that $p$ is the strict minimum, and this gives stability. The strict decrease in the second case forces every orbit in a small sublevel set to converge to $p$ by a compactness argument. $\square$
+*Proof.* The function $V$ is nonincreasing along orbits, so the sublevel sets $\{V\le\alpha\}$ are invariant; for each $\epsilon$ choose $\alpha$ with $\{V\le\alpha\}\subseteq B(p,\epsilon)$, which is possible by the continuity of $V$ and the fact that $p$ is the strict minimum, and this gives stability. The strict decrease in the second case forces every orbit in a small sublevel set to converge to $p$ by a compactness argument.
 
 **Theorem (LaSalle invariance principle).** Let $V$ be a smooth function on a neighbourhood of a compact invariant set $K$ with $\dot V\le0$ on $K$, and let $E=\{q \in K:\dot V(q)=0\}$; let $M$ be the largest invariant subset of $E$. Then every orbit in $K$ converges to $M$ as $t\to+\infty$.
 
-*Proof.* The function $V$ is nonincreasing and bounded below, so it converges along an orbit to a limit $c$; the $\omega$-limit set is nonempty, compact, invariant and contained in $V^{-1}(c)$, and on it $\dot V=0$ because $V$ is constant; hence $\omega$-limit sets are contained in $M$, which is the assertion. $\square$
+*Proof.* The function $V$ is nonincreasing and bounded below, so it converges along an orbit to a limit $c$; the $\omega$-limit set is nonempty, compact, invariant and contained in $V^{-1}(c)$, and on it $\dot V=0$ because $V$ is constant; hence $\omega$-limit sets are contained in $M$, which is the assertion.
 
 **Theorem (converse of Lyapunov).** Let $p$ be an exponentially stable fixed point of $X$ and let $A=DX(p)$ have its spectrum in the open left half-plane. Then for every symmetric positive definite matrix $Q$ there is a unique symmetric positive definite $P$ with $A^{\mathsf T}P+PA=-Q$, and $V(x)=x^{\mathsf T}Px$ is a Lyapunov function with $\dot V\le-\lambda\|x\|^2$ on a neighbourhood of $p$.
 
-*Proof.* The Lyapunov equation has the solution $P=\int_0^\infty e^{tA^{\mathsf T}}Qe^{tA}\,dt$, convergent because the spectrum is in the left half-plane, and the stated inequality follows by differentiating $V$ along the linearised field and then using the smoothness of $X$ to absorb the nonlinear terms in a small neighbourhood. $\square$
+*Proof.* The Lyapunov equation has the solution $P=\int_0^\infty e^{tA^{\mathsf T}}Qe^{tA}\,dt$, convergent because the spectrum is in the left half-plane, and the stated inequality follows by differentiating $V$ along the linearised field and then using the smoothness of $X$ to absorb the nonlinear terms in a small neighbourhood.
 
 ## The Poincaré–Bendixson Theory in the Plane
 
@@ -131,11 +131,11 @@ $$
 
 **Corollary (trichotomy of limit sets).** For a planar flow, every compact $\omega$-limit set either contains a fixed point, or is a periodic orbit, or consists of fixed points together with orbits connecting them.
 
-*Proof (sketch).* The limit set is compact, connected and invariant. If it contains no fixed point, take $q \in\omega(p)$; the orbit of $q$ is contained in $\omega(p)$ and meets a small transverse segment $\Sigma$ at $q$. The orbit returns to $\Sigma$ infinitely often, and the monotonicity of the sequence of intersections along $\Sigma$ — a consequence of the Jordan curve theorem in the plane — forces the intersections to converge to $q$; hence the orbit is periodic, and the whole limit set is that periodic orbit. The corollary follows by applying the argument to a limit set that contains a fixed point and otherwise choosing a point whose orbit returns to a transverse segment. $\square$
+*Proof (sketch).* The limit set is compact, connected and invariant. If it contains no fixed point, take $q \in\omega(p)$; the orbit of $q$ is contained in $\omega(p)$ and meets a small transverse segment $\Sigma$ at $q$. The orbit returns to $\Sigma$ infinitely often, and the monotonicity of the sequence of intersections along $\Sigma$ — a consequence of the Jordan curve theorem in the plane — forces the intersections to converge to $q$; hence the orbit is periodic, and the whole limit set is that periodic orbit. The corollary follows by applying the argument to a limit set that contains a fixed point and otherwise choosing a point whose orbit returns to a transverse segment.
 
 **Theorem (Dulac's criterion).** Let $X$ be a smooth vector field on a simply connected open set $U \subseteq\mathbb{R}^2$. If there is a smooth positive function $g$ on $U$ with $\operatorname{div}(gX)$ of one sign and not identically zero on $U$, then $X$ has no periodic orbit in $U$.
 
-*Proof.* A periodic orbit bounds a disc $D$ in $U$ by the Jordan curve theorem; the divergence theorem gives $\int_D\operatorname{div}(gX)\,dx=0$ because the boundary integral of $gX$ along the periodic orbit vanishes, contradicting the strict one-signedness of the divergence. $\square$
+*Proof.* A periodic orbit bounds a disc $D$ in $U$ by the Jordan curve theorem; the divergence theorem gives $\int_D\operatorname{div}(gX)\,dx=0$ because the boundary integral of $gX$ along the periodic orbit vanishes, contradicting the strict one-signedness of the divergence.
 
 **Example (limit cycle).** The vector field in polar coordinates $\dot r=r(1-r)$, $\dot\theta=1$ has the unit circle $r=1$ as a periodic orbit, and every orbit with $r>0$ converges to it as $t\to+\infty$; the circle is a **limit cycle**, that is, a periodic orbit that is the $\omega$-limit set of a point outside it. The linearisation of the return map around the circle has multiplier $e^{-2\pi}<1$, so the cycles attract, and the example is the standard model of a stable limit cycle.
 
@@ -143,11 +143,11 @@ $$
 
 ### The Whitney Topology and Structural Stability
 
-**Definition.** For $r \in\mathbb{N}_0\cup\{\infty\}$ the **Whitney $C^r$ topology** on the space $\mathfrak X^r(M)$ of $C^r$ vector fields is the topology generated by the sets $\{Y:\|Y-X\|_{C^r}<\epsilon\}$ with respect to a finite atlas and the norms of the derivatives up to order $r$; the space of $C^r$ diffeomorphisms carries the induced $C^r$ topology. A vector field $X$ is **structurally stable** if there is a neighbourhood $\mathcal U$ of $X$ in the $C^1$ topology such that every $Y \in\mathcal U$ is topologically conjugate to $X$, that is, there is a homeomorphism $h$ with $h\circ\varphi^X_t=\varphi^Y_t\circ h$ for all $t$; the diffeomorphism version is defined with conjugacy of the maps.
+**Definition.** For $r \in\mathbb{N}_0\cup\{\infty\}$ the **Whitney $C^r$ topology** on the space $\mathrm{X}^r(M)$ of $C^r$ vector fields is the topology generated by the sets $\{Y:\|Y-X\|_{C^r}<\epsilon\}$ with respect to a finite atlas and the norms of the derivatives up to order $r$; the space of $C^r$ diffeomorphisms carries the induced $C^r$ topology. A vector field $X$ is **structurally stable** if there is a neighbourhood $\mathcal U$ of $X$ in the $C^1$ topology such that every $Y \in\mathcal U$ is topologically conjugate to $X$, that is, there is a homeomorphism $h$ with $h\circ\varphi^X_t=\varphi^Y_t\circ h$ for all $t$; the diffeomorphism version is defined with conjugacy of the maps.
 
-**Theorem (Kupka–Smale).** For $r \ge1$ there is a residual (dense $G_\delta$) subset of $\mathfrak X^r(M)$ consisting of vector fields all of whose fixed points and periodic orbits are hyperbolic and whose stable and unstable manifolds intersect transversely; such a field is called **Kupka–Smale**. The proof uses the jet transversality theorem of *Differential Topology*: hyperbolicity of the periodic orbits is generated by small perturbations of the derivatives along the orbits, and the transversality of the invariant manifolds by the Sard and Thom transversality theorems applied to the evaluation maps.
+**Theorem (Kupka–Smale).** For $r \ge1$ there is a residual (dense $G_\delta$) subset of $\mathrm{X}^r(M)$ consisting of vector fields all of whose fixed points and periodic orbits are hyperbolic and whose stable and unstable manifolds intersect transversely; such a field is called **Kupka–Smale**. The proof uses the jet transversality theorem of *Differential Topology*: hyperbolicity of the periodic orbits is generated by small perturbations of the derivatives along the orbits, and the transversality of the invariant manifolds by the Sard and Thom transversality theorems applied to the evaluation maps.
 
-**Theorem (the closing lemma; Pugh).** Let $p$ be a point that is recurrent for $X$ in the sense that it lies in its own $\omega$-limit set, and let $r \ge1$. Then arbitrarily $C^1$-close to $X$ there is a vector field $Y$ having a periodic orbit through $p$. Consequently, for a residual subset of $\mathfrak X^1(M)$, the periodic orbits are dense in the non-wandering set, which is the general density theorem.
+**Theorem (the closing lemma; Pugh).** Let $p$ be a point that is recurrent for $X$ in the sense that it lies in its own $\omega$-limit set, and let $r \ge1$. Then arbitrarily $C^1$-close to $X$ there is a vector field $Y$ having a periodic orbit through $p$. Consequently, for a residual subset of $\mathrm{X}^1(M)$, the periodic orbits are dense in the non-wandering set, which is the general density theorem.
 
 The closing lemma is the tool by which genericity statements about periodic orbits are proved; its proof is delicate and is cited below. The corresponding statements for diffeomorphisms are the closing lemma of Pugh and the $C^1$-generic theory of the dynamics.
 
@@ -163,7 +163,7 @@ The closing lemma is the tool by which genericity statements about periodic orbi
 
 **Theorem (suspension and return map).** The suspension of $(f,\tau)$ is a smooth flow whose return map to the section $N\times\{0\}$ is $f$, and whose periods are the sums $\sum_{k}\tau(f^kx)$ over the periodic orbits of $f$. Conversely, if $X$ is a complete flow on $M$ and $\Sigma \subseteq M$ is a closed hypersurface transverse to $X$ meeting every orbit, then the return map $P$ of $\Sigma$ is a diffeomorphism and the flow is the suspension of $P$ with the return time as roof. The two constructions are inverse to one another up to conjugacy, and they identify the dynamics of a flow with that of the discrete system of its return map.
 
-*Proof.* The quotient is a smooth manifold because $f$ is a diffeomorphism and $\tau$ is smooth; the flow is constructed from the translation in $s$, and the identification produces a smooth vector field transverse to the section, whose return map is manifestly $f$. The converse is the content of the Poincaré section theorem together with the smoothness of the return time. $\square$
+*Proof.* The quotient is a smooth manifold because $f$ is a diffeomorphism and $\tau$ is smooth; the flow is constructed from the translation in $s$, and the identification produces a smooth vector field transverse to the section, whose return map is manifestly $f$. The converse is the content of the Poincaré section theorem together with the smoothness of the return time.
 
 **Corollary (transfer of properties).** The suspension of a hyperbolic diffeomorphism is a hyperbolic flow, the suspension of an Anosov diffeomorphism is an Anosov flow, and the entropy of the suspension of $(P,\tau)$ with respect to an invariant measure $m$ of $P$ is $h_m(P)/\int\tau\,dm$ by Abramov's formula, so that the entropy per unit time is the entropy of the return map divided by its mean return time whenever the roof is constant; consequently the discrete and the continuous theories have the same catalogue of examples, and many results stated for a diffeomorphism have a flow version obtained by suspension. The precise statements about hyperbolicity, the Anosov property and the entropy belong and *Ergodic Theory*.
 
@@ -180,7 +180,7 @@ Structural stability in the **Whitney $C^1$ topology** means conjugacy with all 
 | Symbol | Meaning |
 |---|---|
 | $M$ | smooth manifold |
-| $\mathfrak X(M)$, $\mathfrak X^r(M)$ | smooth and $C^r$ vector fields |
+| $\mathrm{X}(M)$, $\mathrm{X}^r(M)$ | smooth and $C^r$ vector fields |
 | $X$, $A=DX(p)$ | vector field and its linearisation |
 | $\varphi_t$, $\varphi(t,p)$ | flow of $X$ |
 | $\mathcal D$ | domain of the local flow |

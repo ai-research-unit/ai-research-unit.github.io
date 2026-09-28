@@ -7,7 +7,7 @@ A split-quaternion acts on the algebra in several ways: by left multiplication, 
 
 The article owns the operator realizations: the left and right multiplication operators, the adjoint operator and its automorphism property, its kernel, the Lorentz action on $V$, the double cover of the Lorentz group by the norm-one slice, the table of the action on the distinguished subspaces, and the relation to the polar representation. It relies on *Split-Quaternion Rotations and the Lorentz Group* for the group-theoretic facts it quotes and on *Split-Quaternion Polar Representation* for the polar form.
 
-**Conventions.** The algebra is $\mathbb{H}_{\mathrm{s}}$, with basis $1, e_1, e_2, e_3$, norm form $N(\tilde q) = q_0^2 + q_1^2 - q_2^2 - q_3^2$, inverse $\tilde q^{-1} = \bar{\tilde q}/N(\tilde q)$ for $N(\tilde q) \neq 0$, and the matrix model $\Phi : \mathbb{H}_{\mathrm{s}} \to M_2(\mathbb{R})$. The vector subspace is $V = \operatorname{span}\{e_1,e_2,e_3\}$ with the restricted form $N|_V = q_1^2 - q_2^2 - q_3^2$ of signature $(2,1)$, and the distinguished subspaces $S, \mathbb{D}_2, \mathbb{D}_3$ are as in *Split-Quaternion Relations Between Subspaces*. All endomorphisms below are $\mathbb{R}$-linear.
+**Conventions.** The algebra is $\mathbb{H}_{\mathrm{s}}$, with basis $1, e_1, e_2, e_3$, norm $N(\tilde q) = q_0^2 + q_1^2 - q_2^2 - q_3^2$, inverse $\tilde q^{-1} = \bar{\tilde q}/N(\tilde q)$ for $N(\tilde q) \neq 0$, and the matrix model $\Phi : \mathbb{H}_{\mathrm{s}} \to M_2(\mathbb{R})$. The vector subspace is $V = \operatorname{span}\{e_1,e_2,e_3\}$ with the restricted form $N|_V = q_1^2 - q_2^2 - q_3^2$ of signature $(2,1)$, and the distinguished subspaces $S, \mathbb{D}_2, \mathbb{D}_3$ are as in *Split-Quaternion Relations Between Subspaces*. All endomorphisms below are $\mathbb{R}$-linear.
 
 ## The Element as an Operator on the Algebra
 
@@ -21,7 +21,7 @@ Both are $\mathbb{R}$-linear endomorphisms of the four-dimensional space $\mathb
 
 **Proposition.** Both $L_{\tilde q}$ and $R_{\tilde q}$ have trace $4 \operatorname{Sc}(\tilde q) = 4q_0$ and determinant $N(\tilde q)^2$, and $L_{\tilde q}$ is invertible if and only if $\tilde q$ is a unit, i.e. if and only if $N(\tilde q) \neq 0$.
 
-**Proof.** Under the matrix model, left multiplication by $\tilde q$ on $\mathbb{H}_{\mathrm{s}}$ corresponds to left multiplication by the matrix $\Phi(\tilde q)$ on $M_2(\mathbb{R}) \cong \mathbb{R}^4$, whose eigenvalues are the two eigenvalues $\lambda_1, \lambda_2$ of $\Phi(\tilde q)$, each with multiplicity two. Hence $\operatorname{tr} L_{\tilde q} = 2(\lambda_1 + \lambda_2) = 2\operatorname{tr}\Phi(\tilde q) = 4q_0$ and $\det L_{\tilde q} = (\lambda_1\lambda_2)^2 = \det\Phi(\tilde q)^2 = N(\tilde q)^2$. The eigenvalues satisfy $\lambda^2 - 2q_0\lambda + N(\tilde q) = 0$, so their sum is $2q_0$ and their product is $N(\tilde q)$. Finally $L_{\tilde q}$ is invertible if and only if $\tilde q$ is not a zero divisor (since $L_{\tilde q}(y) = \tilde q y$ and the algebra has no nonzero $\tilde q$ with $\tilde q y = 0$ for all $y$), which holds if and only if $N(\tilde q) \neq 0$. $\square$
+**Proof.** Under the matrix model, left multiplication by $\tilde q$ on $\mathbb{H}_{\mathrm{s}}$ corresponds to left multiplication by the matrix $\Phi(\tilde q)$ on $M_2(\mathbb{R}) \cong \mathbb{R}^4$, whose eigenvalues are the two eigenvalues $\lambda_1, \lambda_2$ of $\Phi(\tilde q)$, each with multiplicity two. Hence $\operatorname{tr} L_{\tilde q} = 2(\lambda_1 + \lambda_2) = 2\operatorname{tr}\Phi(\tilde q) = 4q_0$ and $\det L_{\tilde q} = (\lambda_1\lambda_2)^2 = \det\Phi(\tilde q)^2 = N(\tilde q)^2$. The eigenvalues satisfy $\lambda^2 - 2q_0\lambda + N(\tilde q) = 0$, so their sum is $2q_0$ and their product is $N(\tilde q)$. Finally $L_{\tilde q}$ is invertible if and only if $\tilde q$ is not a zero divisor (since $L_{\tilde q}(y) = \tilde q y$ and the algebra has no nonzero $\tilde q$ with $\tilde q y = 0$ for all $y$), which holds if and only if $N(\tilde q) \neq 0$.
 
 **Remark.** The factor $N(\tilde q)^2$ and the doubled eigenvalues are the operator form of the double cover: left multiplication by $\tilde q$ and by $-\tilde q$ have the same determinant and, below, the same adjoint action on $V$.
 
@@ -37,7 +37,7 @@ Since $g^{-1} = \bar{g}/N(g)$, the operator is $\operatorname{Ad}_g(\tilde q) = 
 
 **Theorem.** For every unit $g$, the adjoint operator $\operatorname{Ad}_g$ is an $\mathbb{R}$-**algebra automorphism** of $\mathbb{H}_{\mathrm{s}}$. The map $g \mapsto \operatorname{Ad}_g$ is a group homomorphism from the group of units $\mathbb{H}_{\mathrm{s}}^\times$ onto the inner automorphism group $\operatorname{Inn}(\mathbb{H}_{\mathrm{s}}) \cong \mathrm{PGL}_2(\mathbb{R})$.
 
-**Proof.** It is linear (being a composite of linear maps), multiplicative, $\operatorname{Ad}_g(\tilde q y) = g \tilde q y g^{-1} = (g\tilde q g^{-1})(g y g^{-1})$, unital, and invertible with inverse $\operatorname{Ad}_{g^{-1}}$, so it is an automorphism. The homomorphism property $\operatorname{Ad}_{gh} = \operatorname{Ad}_g \operatorname{Ad}_h$ is immediate, and the image is by definition the inner automorphism group, computed under $\Phi$ as the conjugations of $M_2(\mathbb{R})$, which is $\mathrm{PGL}_2(\mathbb{R})$. $\square$
+**Proof.** It is linear (being a composite of linear maps), multiplicative, $\operatorname{Ad}_g(\tilde q y) = g \tilde q y g^{-1} = (g\tilde q g^{-1})(g y g^{-1})$, unital, and invertible with inverse $\operatorname{Ad}_{g^{-1}}$, so it is an automorphism. The homomorphism property $\operatorname{Ad}_{gh} = \operatorname{Ad}_g \operatorname{Ad}_h$ is immediate, and the image is by definition the inner automorphism group, computed under $\Phi$ as the conjugations of $M_2(\mathbb{R})$, which is $\mathrm{PGL}_2(\mathbb{R})$.
 
 ### Comparison With Left Multiplication
 
@@ -47,7 +47,7 @@ Left multiplication $L_g$ is **not** an algebra automorphism: it does not send $
 
 **Proposition.** The kernel of the homomorphism $g \mapsto \operatorname{Ad}_g$ on the group of units is the centre $\mathbb{R}^\times \cdot 1$, consisting of the nonzero scalars.
 
-**Proof.** $\operatorname{Ad}_g = \operatorname{id}$ means $g\tilde q = \tilde q g$ for all $\tilde q$, i.e. $g \in Z(\mathbb{H}_{\mathrm{s}}) = S = \mathbb{R}\cdot 1$. A scalar is a unit exactly when it is nonzero. $\square$
+**Proof.** $\operatorname{Ad}_g = \operatorname{id}$ means $g\tilde q = \tilde q g$ for all $\tilde q$, i.e. $g \in Z(\mathbb{H}_{\mathrm{s}}) = S = \mathbb{R}\cdot 1$. A scalar is a unit exactly when it is nonzero.
 
 Consequently the inner automorphism group is $\mathbb{H}_{\mathrm{s}}^\times / \mathbb{R}^\times \cong \mathrm{PGL}_2(\mathbb{R})$, of dimension $3$ over $\mathbb{R}$. Two units induce the same automorphism exactly when they differ by a nonzero scalar, $g' = \lambda g$, so the automorphism sees only the class $[g] \in \mathrm{PGL}_2(\mathbb{R})$. In particular $g$ and $-g$ induce the same automorphism.
 
@@ -63,7 +63,7 @@ $$
 
 is a group homomorphism with kernel $\mathbb{R}^\times$ whose image is $SO(2,1)$, and it is surjective onto $SO(2,1)$; on the norm-one slice it is surjective onto the identity component $\mathrm{SO}^{+}(2,1)$.
 
-**Proof.** The norm form is multiplicative and $\operatorname{Ad}_g$ is an automorphism, so $N(g\tilde q g^{-1}) = N(g)N(\tilde q)N(g^{-1}) = N(\tilde q)$; since $\operatorname{Ad}_g$ preserves $V$, the restricted form is preserved, giving the map to $O(2,1)$. For a unit $g$ the inner automorphism $\operatorname{Ad}_g$ of $M_2(\mathbb{R})$ has determinant $+1$ as a transformation of $\mathfrak{sl}_2(\mathbb{R})$, so the image lies in $SO(2,1)$; the group of units has two components, $\{N>0\}$ and $\{N<0\}$, and the image is the union of their images, which is all of $SO(2,1)$ because $SO(2,1)$ has exactly two components and the image meets both. Restricting to the connected norm-one group $U = \{N=1\}$ gives a connected image containing the identity, hence the identity component $\mathrm{SO}^{+}(2,1)$, as computed in *Split-Quaternion Rotations and the Lorentz Group*. $\square$
+**Proof.** The split-quaternion norm is multiplicative and $\operatorname{Ad}_g$ is an automorphism, so $N(g\tilde q g^{-1}) = N(g)N(\tilde q)N(g^{-1}) = N(\tilde q)$; since $\operatorname{Ad}_g$ preserves $V$, the restricted form is preserved, giving the map to $O(2,1)$. For a unit $g$ the inner automorphism $\operatorname{Ad}_g$ of $M_2(\mathbb{R})$ has determinant $+1$ as a transformation of $\mathrm{SL}_2(\mathbb{R})$, so the image lies in $SO(2,1)$; the group of units has two components, $\{N>0\}$ and $\{N<0\}$, and the image is the union of their images, which is all of $SO(2,1)$ because $SO(2,1)$ has exactly two components and the image meets both. Restricting to the connected norm-one group $U = \{N=1\}$ gives a connected image containing the identity, hence the identity component $\mathrm{SO}^{+}(2,1)$, as computed in *Split-Quaternion Rotations and the Lorentz Group*.
 
 The generated transformations are the rotations and boosts computed in *Split-Quaternion Rotations and the Lorentz Group*: the elliptic subgroup from $\mathbb{R}[e_1]$ acts as rotations of the plane $\operatorname{span}\{e_2,e_3\}$ by the doubled angle, and the hyperbolic subgroups from $\mathbb{D}_2, \mathbb{D}_3$ act as boosts of the planes $\operatorname{span}\{e_1,e_3\}$ and $\operatorname{span}\{e_1,e_2\}$.
 
@@ -85,7 +85,7 @@ $$
 
 is a **double cover** of the identity component of the Lorentz group. The nontrivial deck transformation is $g \mapsto -g$.
 
-**Proof.** On the slice the kernel is $(\mathbb{R}^\times\cdot1) \cap \mathrm{SL}_2(\mathbb{R}) = \{\lambda : \lambda^2 = 1\} = \{\pm 1\}$. Surjectivity onto $\mathrm{SO}^{+}(2,1)$ is the previous theorem restricted to the slice, which is the connected component of the identity in the group of units and maps onto the connected component $\mathrm{SO}^{+}(2,1)$ of $SO(2,1)$. $\square$
+**Proof.** On the slice the kernel is $(\mathbb{R}^\times\cdot1) \cap \mathrm{SL}_2(\mathbb{R}) = \{\lambda : \lambda^2 = 1\} = \{\pm 1\}$. Surjectivity onto $\mathrm{SO}^{+}(2,1)$ is the previous theorem restricted to the slice, which is the connected component of the identity in the group of units and maps onto the connected component $\mathrm{SO}^{+}(2,1)$ of $SO(2,1)$.
 
 The element $-1$ is the unique nontrivial unit of norm $1$ acting trivially on $V$; it represents a full turn of the "rotor" and is the reason the parametrisation by angles is at the doubled angle. In physical language this is the spin double cover, but here it is a statement about $M_2(\mathbb{R})$.
 
@@ -97,7 +97,7 @@ The adjoint operator acts on the distinguished subspaces as follows.
 |---|---|---|---|
 | $S = \mathbb{R}\cdot 1$ | $S$ | yes, pointwise | the centre is fixed |
 | $V = \operatorname{span}\{e_1,e_2,e_3\}$ | $V$ | yes | the Lorentz action of signature $(2,1)$ |
-| a line $\mathbb{R} v \subset V$ | a line $\mathbb{R}\,\operatorname{Ad}_g(v)$ | yes as a class | the norm sign of $v$ is preserved |
+| a line $\mathbb{R} v \subset V$ | a line $\mathbb{R}\,\operatorname{Ad}_g(v)$ | yes as a class | the split-quaternion norm sign of $v$ is preserved |
 | $\mathbb{D}_2 = \operatorname{span}\{1,e_2\}$ | a conjugate split-complex plane | only if $g$ normalises it | automorphisms permute the split-complex planes |
 | $\mathbb{D}_3 = \operatorname{span}\{1,e_3\}$ | a conjugate split-complex plane | only if $g$ normalises it | as above |
 | $\mathbb{H}_{\mathrm{s}} \tilde\pi_\pm$ | a minimal left ideal | only if $g$ normalises it | idempotents map to idempotents |
@@ -106,13 +106,13 @@ The first two rows are the content of the previous section. The remaining rows r
 
 ## Orbits and Invariants
 
-The adjoint action on $V$ has the invariants of the Lorentz action: the norm form $N|_V$ itself, and no others in general position. The adjoint action of the group of units has image the full Lorentz group $\mathrm{SO}(2,1)$, not only its identity component: a negative-norm unit such as $e_2$ acts on $V$ as $\operatorname{diag}(-1,1,-1)$, which has determinant $+1$ and reverses the sheets. The orbits on $V \setminus \{0\}$ are therefore the three **orbit types**
+The adjoint action on $V$ has the invariants of the Lorentz action: the split-quaternion norm $N|_V$ itself, and no others in general position. The adjoint action of the group of units has image the full Lorentz group $\mathrm{SO}(2,1)$, not only its identity component: a negative-norm unit such as $e_2$ acts on $V$ as $\operatorname{diag}(-1,1,-1)$, which has determinant $+1$ and reverses the sheets. The orbits on $V \setminus \{0\}$ are therefore the three **orbit types**
 
 $$
 \{v : N(v) > 0\}, \qquad \{v : N(v) = 0\} \setminus \{0\}, \qquad \{v : N(v) < 0\},
 $$
 
-the two-sheeted timelike hyperboloid, the light cone minus its vertex, and the spacelike one-sheeted hyperboloid; under the identity component $\mathrm{SO}^{+}(2,1)$, which preserves the sign of the time coordinate $q_1$, the first two sets split into their two sheets and their two nappes, giving five orbits. On the full algebra the invariants of $\operatorname{Ad}_g$ are the scalar part $q_0$ and the norm form $N(\tilde q)$, since the scalar part is fixed by every adjoint operator; the adjoint action therefore acts trivially on $S$ and by the Lorentz action on $V$, with no mixing between the two, because it preserves each.
+the two-sheeted timelike hyperboloid, the light cone minus its vertex, and the spacelike one-sheeted hyperboloid; under the identity component $\mathrm{SO}^{+}(2,1)$, which preserves the sign of the time coordinate $q_1$, the first two sets split into their two sheets and their two nappes, giving five orbits. On the full algebra the invariants of $\operatorname{Ad}_g$ are the scalar part $q_0$ and the split-quaternion norm $N(\tilde q)$, since the scalar part is fixed by every adjoint operator; the adjoint action therefore acts trivially on $S$ and by the Lorentz action on $V$, with no mixing between the two, because it preserves each.
 
 ## The Relation to the Polar Representation
 

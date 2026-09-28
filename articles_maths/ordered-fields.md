@@ -34,7 +34,7 @@ The order is **translation invariant** by (O1) and **multiplication by nonnegati
 
 **(d)** $0 \leq a \leq b$ implies $a^2 \leq b^2$ and $a^2 \leq ab$.
 
-**Proof.** (a) Apply (O1) twice. (b) If $c \geq 0$ then $bc - ac = (b-a)c \geq 0$ by (O2). If $c \leq 0$ then $-c \geq 0$ and $(b-a)(-c) \geq 0$, so $ac \geq bc$. (c) Translate by $-a$. (d) Multiply $a \leq b$ by $a \geq 0$ to get $a^2 \leq ab$, and by $b \geq 0$ to get $ab \leq b^2$. $\square$
+**Proof.** (a) Apply (O1) twice. (b) If $c \geq 0$ then $bc - ac = (b-a)c \geq 0$ by (O2). If $c \leq 0$ then $-c \geq 0$ and $(b-a)(-c) \geq 0$, so $ac \geq bc$. (c) Translate by $-a$. (d) Multiply $a \leq b$ by $a \geq 0$ to get $a^2 \leq ab$, and by $b \geq 0$ to get $ab \leq b^2$.
 
 ### Basic Rules
 
@@ -58,13 +58,13 @@ The order is **translation invariant** by (O1) and **multiplication by nonnegati
 
 (d) $2 = 1 + 1 > 0$, so $2^{-1} > 0$ by (c), and $a = \tfrac{a+a}{2} < \tfrac{a+b}{2} < \tfrac{b+b}{2} = b$.
 
-(e) If $-1 = \sum_i a_i^2$ then the right side is a sum of nonnegative elements, hence $\geq 0$; so $-1 \geq 0$, whence $1 \leq 0$, contradicting (a). $\square$
+(e) If $-1 = \sum_i a_i^2$ then the right side is a sum of nonnegative elements, hence $\geq 0$; so $-1 \geq 0$, whence $1 \leq 0$, contradicting (a).
 
 **Remark (the boundary of the theory).** Property (e) is what makes the orderable fields a special class among the fields of characteristic $0$: a field that is not formally real admits no ordering at all, since a sum of squares can never be negative in an ordered field. Conversely, every formally real field is orderable, so the two classes coincide.
 
 **Theorem (Artin–Schreier).** A field $F$ admits an ordering if and only if it is formally real.
 
-**Proof sketch.** An ordered field is formally real by (e). Conversely, suppose $-1$ is not a sum of squares, and let $\mathcal{T}$ be the collection of subsets $T \subseteq F$ that contain every square, are closed under addition and under multiplication, and satisfy $-1 \notin T$. It is nonempty, because the set of sums of squares lies in it, and it is closed under unions of chains, so Zorn's lemma gives a maximal $T$. Maximality forces $F = T \cup (-T)$: if $a \notin T \cup (-T)$, the set $T + aT = \{x + ay : x, y \in T\}$ contains $T$, contains every square because $T$ does, and is closed under addition and under multiplication because $a^2 \in T$; since it contains $a = 0 + a\cdot 1$, it contains $T$ properly, so by maximality $-1 \in T + aT$, and the same argument with $-a$ in place of $a$ gives $-1 \in T - aT$. Writing $-1 = x_1 + ay_1 = x_2 - ay_2$ with $x_i, y_i \in T$ and $y_i \neq 0$, multiply the first equation by $y_2^2$ and the second by $y_1^2$: the first becomes $a y_1 y_2^2 = -(y_2^2 + x_1 y_2^2) \in -T$, and the second becomes $a y_1^2 y_2 = y_1^2 + x_2 y_1^2 \in T$. Multiplying the first of these by $y_1^2 y_2 \in T$ and the second by $y_1 y_2^2 \in T$ gives the same element $t = a\, y_1^3 y_2^3$, which is therefore nonzero and lies in both $T$ and $-T$. Then $-1 = (-t^2)(t^{-1})^2 \in T$, because $T$ contains every square and is closed under multiplication, a contradiction. Hence $F = T \cup (-T)$, and $T \cap (-T) = \{0\}$ by the same computation applied to an element of the intersection. Therefore $P = T \setminus \{0\}$ satisfies (C1), (C2) and (C3) of the next section, and the theorem proved there produces an ordering of $F$ with positive cone $P$. $\square$
+**Proof sketch.** An ordered field is formally real by (e). Conversely, suppose $-1$ is not a sum of squares, and let $\mathcal{T}$ be the collection of subsets $T \subseteq F$ that contain every square, are closed under addition and under multiplication, and satisfy $-1 \notin T$. It is nonempty, because the set of sums of squares lies in it, and it is closed under unions of chains, so Zorn's lemma gives a maximal $T$. Maximality forces $F = T \cup (-T)$: if $a \notin T \cup (-T)$, the set $T + aT = \{x + ay : x, y \in T\}$ contains $T$, contains every square because $T$ does, and is closed under addition and under multiplication because $a^2 \in T$; since it contains $a = 0 + a\cdot 1$, it contains $T$ properly, so by maximality $-1 \in T + aT$, and the same argument with $-a$ in place of $a$ gives $-1 \in T - aT$. Writing $-1 = x_1 + ay_1 = x_2 - ay_2$ with $x_i, y_i \in T$ and $y_i \neq 0$, multiply the first equation by $y_2^2$ and the second by $y_1^2$: the first becomes $a y_1 y_2^2 = -(y_2^2 + x_1 y_2^2) \in -T$, and the second becomes $a y_1^2 y_2 = y_1^2 + x_2 y_1^2 \in T$. Multiplying the first of these by $y_1^2 y_2 \in T$ and the second by $y_1 y_2^2 \in T$ gives the same element $t = a\, y_1^3 y_2^3$, which is therefore nonzero and lies in both $T$ and $-T$. Then $-1 = (-t^2)(t^{-1})^2 \in T$, because $T$ contains every square and is closed under multiplication, a contradiction. Hence $F = T \cup (-T)$, and $T \cap (-T) = \{0\}$ by the same computation applied to an element of the intersection. Therefore $P = T \setminus \{0\}$ satisfies (C1), (C2) and (C3) of the next section, and the theorem proved there produces an ordering of $F$ with positive cone $P$.
 
 ---
 
@@ -94,7 +94,7 @@ $$
 
 is a total order making $F$ an ordered field with positive cone $P$.
 
-**Proof.** (C1): if $a > 0$ and $b > 0$ then $a + b > a > 0$ by (O1). (C2) is (O2). (C3) is trichotomy for a total order. Conversely, $\leq_P$ is total and antisymmetric by (C3), and transitive because $P \cup \{0\}$ is closed under addition by (C1). Translation invariance: $b - a = (b+c)-(a+c)$. Multiplicativity (O2): if $b - a \in P \cup \{0\}$ and $c \in P \cup \{0\}$ then $(b-a)c \in P \cup \{0\}$ by (C1) and (C2). Hence $\leq_P$ satisfies (O1) and (O2), with positive cone exactly $P$ by (C3). $\square$
+**Proof.** (C1): if $a > 0$ and $b > 0$ then $a + b > a > 0$ by (O1). (C2) is (O2). (C3) is trichotomy for a total order. Conversely, $\leq_P$ is total and antisymmetric by (C3), and transitive because $P \cup \{0\}$ is closed under addition by (C1). Translation invariance: $b - a = (b+c)-(a+c)$. Multiplicativity (O2): if $b - a \in P \cup \{0\}$ and $c \in P \cup \{0\}$ then $(b-a)c \in P \cup \{0\}$ by (C1) and (C2). Hence $\leq_P$ satisfies (O1) and (O2), with positive cone exactly $P$ by (C3).
 
 **Corollary.** An ordering of a field is equivalent to the choice of a subset $P$ satisfying (C1), (C2), (C3). The notions "$F$ is orderable", "there is a total order compatible with the field structure", and "there is a positive cone in $F$" coincide.
 
@@ -112,7 +112,7 @@ $$
 x = \left(\frac{x+1}{2}\right)^2 - \left(\frac{x-1}{2}\right)^2 .
 $$
 
-(c) If $x = a^2 \neq 0$ then $x > 0$, and the converse holds by hypothesis; for the rationals, $2 = 1^2 + 1^2$ is positive and is not a square, so the inclusion of nonzero squares in $P$ is strict there. $\square$
+(c) If $x = a^2 \neq 0$ then $x > 0$, and the converse holds by hypothesis; for the rationals, $2 = 1^2 + 1^2$ is positive and is not a square, so the inclusion of nonzero squares in $P$ is strict there.
 
 **Remark.** Positivity is a cone condition, not a square condition: in $\mathbb{Q}$ the positive element $2$ is not a square, although it is a sum of squares. The equality $P = \{$nonzero squares$\}$ is a genuine strengthening of the ordered-field axioms; a real-closed field satisfies it.
 
@@ -138,7 +138,7 @@ and the **rays** are $(a,\infty)=\{x : x>a\}$ and $(-\infty,a)=\{x:x<a\}$.
 
 **(c)** $x \in (a,b)$ if and only if $a < x < b$; an interval is order-convex, and it is nonempty exactly when $a < b$, since it then contains $(a+b)/2$.
 
-*Proof.* (a) and (b) restate (O1) and the proposition of §*Ordered Rings and Fields*; (c) is the definition together with (d) of the basic-rules theorem. $\square$
+*Proof.* (a) and (b) restate (O1) and the proposition of §*Ordered Rings and Fields*; (c) is the definition together with (d) of the basic-rules theorem.
 
 No distance, no metric and no topology is used here: the topology generated by these intervals, its interaction with the field operations, and the metric and uniform structure it carries belong to *Topological Rings and Fields*, and the completeness of an ordered field belongs to *Real-Closed and Complete Ordered Fields*. The statements above are read off the order alone.
 
@@ -170,11 +170,11 @@ Equivalently, the set $\{n \cdot 1 : n \geq 1\}$ is unbounded above in $F$.
 
 (b) $\Rightarrow$ (c): given $a < b$, first choose $n$ with $1/n < b - a$; then the multiples $k/n$ form a chain of step $1/n < b-a$, so some $k$ has $k/n \leq a < (k+1)/n \leq a + 1/n < b$, and $(k+1)/n \in \mathbb{Q}$ lies in $(a,b)$.
 
-(c) $\Rightarrow$ (b): if $\mathbb{Q}$ is order-dense and $\epsilon > 0$, the interval $(0,\epsilon)$ contains a rational $q$ with $q > 0$; writing $q = m/n$ with $m \geq 1$ gives $1/n \leq m/n = q < \epsilon$. $\square$
+(c) $\Rightarrow$ (b): if $\mathbb{Q}$ is order-dense and $\epsilon > 0$, the interval $(0,\epsilon)$ contains a rational $q$ with $q > 0$; writing $q = m/n$ with $m \geq 1$ gives $1/n \leq m/n = q < \epsilon$.
 
 **Corollary.** Every Archimedean ordered field contains $\mathbb{Q}$ as an ordered subfield, and in an Archimedean ordered field every element is the supremum of the rationals below it and the infimum of the rationals above it.
 
-**Proof.** Containment of $\mathbb{Q}$ is the basic-rules theorem; order-density is (c); the last statement is the definition of order-density together with the order. $\square$
+**Proof.** Containment of $\mathbb{Q}$ is the basic-rules theorem; order-density is (c); the last statement is the definition of order-density together with the order.
 
 ### Non-Archimedean Examples
 
@@ -204,11 +204,11 @@ is ordered lexicographically by the lowest-degree nonzero coefficient: $\sum a_k
 
 **Theorem.** Every ordered field $F$ contains a unique subfield isomorphic to $\mathbb{Q}$, and the order induced on it is the usual order of $\mathbb{Q}$. Consequently $\mathbb{Q}$ is, up to isomorphism of ordered fields, the smallest ordered field.
 
-**Proof.** By the basic-rules theorem, $\operatorname{char} F = 0$, so the map $\mathbb{Z} \to F$, $n \mapsto n \cdot 1$, is injective and extends to an embedding $\mathbb{Q} \to F$ by the universal property of the fraction field. Since $n \cdot 1 > 0$ for $n \geq 1$ and inverses of positive elements are positive, the embedding carries positive rationals to positive elements and negatives to negatives; hence it is order-preserving and its image is the prime field. Uniqueness: any subfield isomorphic to $\mathbb{Q}$ contains the prime field, which is exactly the image of this embedding. $\square$
+**Proof.** By the basic-rules theorem, $\operatorname{char} F = 0$, so the map $\mathbb{Z} \to F$, $n \mapsto n \cdot 1$, is injective and extends to an embedding $\mathbb{Q} \to F$ by the universal property of the fraction field. Since $n \cdot 1 > 0$ for $n \geq 1$ and inverses of positive elements are positive, the embedding carries positive rationals to positive elements and negatives to negatives; hence it is order-preserving and its image is the prime field. Uniqueness: any subfield isomorphic to $\mathbb{Q}$ contains the prime field, which is exactly the image of this embedding.
 
 **Theorem.** $\mathbb{Q}$ has exactly one ordering, and relative to it $\mathbb{Q}$ is Archimedean.
 
-**Proof.** In any ordering of $\mathbb{Q}$, the element $1 > 0$ by the basic-rules theorem, so $n > 0$ for all positive integers $n$, and the order on $\mathbb{Q}$ is determined by the positive cone, which is then forced: a rational $m/n$ is positive exactly when $mn > 0$ in the usual sense. Hence the ordering is unique. It is Archimedean: for a rational $x$, choose an integer $k > \lvert x \rvert$, which exists by the well-ordering of $\mathbb{N}$, and then $k \cdot 1 = k > x$. $\square$
+**Proof.** In any ordering of $\mathbb{Q}$, the element $1 > 0$ by the basic-rules theorem, so $n > 0$ for all positive integers $n$, and the order on $\mathbb{Q}$ is determined by the positive cone, which is then forced: a rational $m/n$ is positive exactly when $mn > 0$ in the usual sense. Hence the ordering is unique. It is Archimedean: for a rational $x$, choose an integer $k > \lvert x \rvert$, which exists by the well-ordering of $\mathbb{N}$, and then $k \cdot 1 = k > x$.
 
 **Remark.** The uniqueness of the ordering of $\mathbb{Q}$ contrasts with the general case: $\mathbb{Q}(\sqrt2)$ has two orderings and $\mathbb{Q}(t)$ has many, one for each way of specifying the sign of $t$ together with a location for $t$ relative to the rationals. The orderings of a field are the points of a compact space, the real spectrum, whose theory belongs to real algebraic geometry.
 
@@ -222,7 +222,7 @@ is ordered lexicographically by the lowest-degree nonzero coefficient: $\sum a_k
 
 **Proposition.** Let $F$ and $K$ be ordered fields and let $\sigma : F \to K$ be a field homomorphism such that $x > 0$ in $F$ implies $\sigma(x) > 0$ in $K$. Then $\sigma$ is strictly order-preserving and injective. In particular, the embedding of the prime field $\mathbb{Q}$ into any ordered field is order-preserving.
 
-**Proof.** If $x < y$ then $y - x > 0$, so $\sigma(y) - \sigma(x) = \sigma(y-x) > 0$ and $\sigma(x) < \sigma(y)$; hence $\sigma$ is strictly order-preserving. If $\sigma(x) = \sigma(y)$ with $x \neq y$, then either $x < y$, giving $\sigma(x) < \sigma(y)$, or $x > y$, giving $\sigma(x) > \sigma(y)$, a contradiction; so $\sigma$ is injective. On the prime field, $\sigma(n \cdot 1) = n \cdot 1 > 0$ for $n \geq 1$ and $\sigma(1/n) = \sigma(n)^{-1} > 0$, so positive rationals go to positive elements. $\square$
+**Proof.** If $x < y$ then $y - x > 0$, so $\sigma(y) - \sigma(x) = \sigma(y-x) > 0$ and $\sigma(x) < \sigma(y)$; hence $\sigma$ is strictly order-preserving. If $\sigma(x) = \sigma(y)$ with $x \neq y$, then either $x < y$, giving $\sigma(x) < \sigma(y)$, or $x > y$, giving $\sigma(x) > \sigma(y)$, a contradiction; so $\sigma$ is injective. On the prime field, $\sigma(n \cdot 1) = n \cdot 1 > 0$ for $n \geq 1$ and $\sigma(1/n) = \sigma(n)^{-1} > 0$, so positive rationals go to positive elements.
 
 **Remark.** A field homomorphism between ordered fields need not be order-preserving. The nontrivial automorphism of $\mathbb{Q}(\sqrt2)$, namely $\sqrt2 \mapsto -\sqrt2$, with the ordering $\sqrt2 > 0$, sends the positive element $\sqrt2$ to the negative element $-\sqrt2$; it is an automorphism of the field but not of the ordered structure. The automorphisms of an ordered field, meaning order-preserving automorphisms, form a subgroup of $\operatorname{Aut}(F)$; for $\mathbb{Q}$ and for $\mathbb{R}$ this subgroup is trivial.
 
@@ -236,11 +236,11 @@ $$
 
 is an injective order-preserving field homomorphism; hence $F$ is isomorphic, as an ordered field, to a subfield of $\mathbb{R}$.
 
-**Proof sketch.** The set on the right is a nonempty bounded-above subset of $\mathbb{Q}$ because $F$ is Archimedean, and it defines a real number; the map is order-preserving by construction, additive and multiplicative by the arithmetic of suprema of bounded sets of rationals, and its kernel is $0$ because $\Phi(x) = 0$ forces $\{q : q < x\}$ to be the nonpositive rationals, so $x = 0$. $\square$
+**Proof sketch.** The set on the right is a nonempty bounded-above subset of $\mathbb{Q}$ because $F$ is Archimedean, and it defines a real number; the map is order-preserving by construction, additive and multiplicative by the arithmetic of suprema of bounded sets of rationals, and its kernel is $0$ because $\Phi(x) = 0$ forces $\{q : q < x\}$ to be the nonpositive rationals, so $x = 0$.
 
 **Corollary.** Up to ordering-preserving isomorphism, the Archimedean ordered fields are exactly the subfields of $\mathbb{R}$, and $\mathbb{Q}$ is the smallest and $\mathbb{R}$ the largest: every Archimedean ordered field embeds as an ordered subfield of $\mathbb{R}$, and every ordered subfield of $\mathbb{R}$ is Archimedean.
 
-**Proof.** The second statement is that $\mathbb{R}$ is Archimedean, which follows from its construction and is proved in *The Real Numbers*; the first is the theorem. $\square$
+**Proof.** The second statement is that $\mathbb{R}$ is Archimedean, which follows from its construction and is proved in *The Real Numbers*; the first is the theorem.
 
 **Remark.** The theorem separates the two questions of this article and the next. Whether a field embeds in $\mathbb{R}$ is the Archimedean condition; whether it *is* $\mathbb{R}$ is a completeness condition, and completeness is treated. The rationals are Archimedean but not complete; the real numbers are Archimedean and complete; and $F(t)$ is neither.
 

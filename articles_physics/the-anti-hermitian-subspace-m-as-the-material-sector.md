@@ -104,7 +104,7 @@ $$
 
 The subspace $\mathbb{M}_-$ has the following algebraic properties, established in the basic algebra article.
 
-**Quadratic form.** The biquaternion **norm form** restricts to a real quadratic form on $\mathbb{M}_-$:
+**Quadratic form.** The biquaternion **biquaternion norm** restricts to a real quadratic form on $\mathbb{M}_-$:
 
 $$
 N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = (iq'_0)^2 + q_1^2 + q_2^2 + q_3^2 = -q'^2_0 + q_1^2 + q_2^2 + q_3^2 = -c^2t^2 + x^2 + y^2 + z^2.
@@ -112,7 +112,7 @@ $$
 
 This is a real quadratic form of **signature** $(3,1)$: three positive directions (the spatial components $q_1, q_2, q_3$) and one negative direction (the temporal one, whose coordinate is $ict$). This is the Minkowski signature, expressed algebraically as a consequence of $i^2 = -1$.
 
-**Zero divisors.** The norm form vanishes on the **light cone**
+**Zero divisors.** The biquaternion norm vanishes on the **light cone**
 
 $$
 q'^2_0 = q_1^2 + q_2^2 + q_3^2, \qquad \text{that is} \qquad c^2t^2 = x^2 + y^2 + z^2,
@@ -136,7 +136,7 @@ $$
 ds^2 = N(d\tilde{Q}) = d\tilde{Q} \, \overline{d\tilde{Q}} = -(dq'_0)^2 + dq_1^2 + dq_2^2 + dq_3^2 = (ic\,dt)^2 + dx^2 + dy^2 + dz^2 = -c^2\,dt^2 + d\mathbf{x}^2.
 $$
 
-This is the biquaternion expression of the Minkowski interval, and it is the norm form, in agreement with the expression for $N$ obtained above. The interval is *not* the square $d\tilde{Q} \, d\tilde{Q}$: for $\tilde{Q} = iq'_0e_0 + \mathbf{q}$ one has $\tilde{Q} \, \tilde{Q} = -(q'^2_0 + |\mathbf{q}|^2) + 2iq'_0\mathbf{q}$, which is a biquaternion rather than a scalar. The square therefore carries a vector part and is not the interval.
+This is the biquaternion expression of the Minkowski interval, and it is the biquaternion norm, in agreement with the expression for $N$ obtained above. The interval is *not* the square $d\tilde{Q} \, d\tilde{Q}$: for $\tilde{Q} = iq'_0e_0 + \mathbf{q}$ one has $\tilde{Q} \, \tilde{Q} = -(q'^2_0 + |\mathbf{q}|^2) + 2iq'_0\mathbf{q}$, which is a biquaternion rather than a scalar. The square therefore carries a vector part and is not the interval.
 
 The Lorentzian signature of the interval is not postulated: it arises algebraically from $i^2 = -1$ in the time component. This is the content of the $ict$ convention (see the companion article on the $ict$ convention). The biquaternion formulation makes explicit that the Lorentzian structure of spacetime is a **consequence of a complex structure** on the time coordinate, not an independent axiom.
 
@@ -150,7 +150,7 @@ The null interval is the **light cone**, which is the zero divisor set of $\math
 
 ### The Light Cone and the Zero Divisors
 
-The **light cone** is the set of four-vectors $\tilde{Q} \in \mathbb{M}_-$ with vanishing norm form:
+The **light cone** is the set of four-vectors $\tilde{Q} \in \mathbb{M}_-$ with vanishing biquaternion norm:
 
 $$
 N(\tilde{Q}) = 0 \quad \Longleftrightarrow \quad q'^2_0 = q_1^2 + q_2^2 + q_3^2 \quad \Longleftrightarrow \quad c^2t^2 = x^2 + y^2 + z^2,
@@ -214,11 +214,11 @@ $$
 
 The rotor $\tilde{\Lambda}$ is a unit-norm biquaternion, i.e. an element of the group $SL(2,\mathbb{C}) \subset \mathbb{B}$. The group lives in the full algebra $\mathbb{B}$, not in any single subspace (since $\mathbb{M}_-$ and $\mathbb{M}_+$ are not closed under multiplication). The different types of Lorentz transformation have rotors in different subspaces: **pure boosts** have rotors in $\mathbb{M}_+$ (they are Hermitian), **pure spatial rotations** have rotors in $\mathbb{H}_{\mathbb{B}}$ (they are real quaternions), and **general Lorentz transformations** have rotors in the full algebra $\mathbb{B}$.
 
-**4. Invariant norm.** Each four-vector has an invariant norm under the Lorentz group, equal to the norm form $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$ evaluated on the four-vector. This is the biquaternion expression of the relativistic invariants: the interval for the four-position, $-c^2$ for the four-velocity, $-m^2 c^2$ for the four-momentum, and $0$ for the four-wavevector of light. The four-potential and the four-current are different in kind: the invariant statements associated with them are the gauge condition $\partial_\mu A^\mu = 0$ and the conservation law $\partial_\mu J^\mu = 0$, which constrain the divergence of the four-vector, not its norm form. The norm form $\tilde{A}\bar{\tilde{A}}$ vanishes only for a radiation field in the null gauge, and $\tilde{J}\bar{\tilde{J}}$ vanishes only for a null current, $|\mathbf{j}| = c\rho$.
+**4. Invariant norm.** Each four-vector has an invariant norm under the Lorentz group, equal to the biquaternion norm $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$ evaluated on the four-vector. This is the biquaternion expression of the relativistic invariants: the interval for the four-position, $-c^2$ for the four-velocity, $-m^2 c^2$ for the four-momentum, and $0$ for the four-wavevector of light. The four-potential and the four-current are different in kind: the invariant statements associated with them are the gauge condition $\partial_\mu A^\mu = 0$ and the conservation law $\partial_\mu J^\mu = 0$, which constrain the divergence of the four-vector, not its biquaternion norm. The biquaternion norm $\tilde{A}\bar{\tilde{A}}$ vanishes only for a radiation field in the null gauge, and $\tilde{J}\bar{\tilde{J}}$ vanishes only for a null current, $|\mathbf{j}| = c\rho$.
 
 ## Summary
 
-The anti-Hermitian subspace $\mathbb{M}_-$ is a four-dimensional real subspace of the biquaternion algebra, consisting of elements with imaginary scalar part and real vector part. Its norm form has signature $(3,1)$, matching the Minkowski metric in the $ict$ convention. The Lorentzian signature is not postulated: it arises algebraically from $i^2 = -1$ in the imaginary scalar part.
+The anti-Hermitian subspace $\mathbb{M}_-$ is a four-dimensional real subspace of the biquaternion algebra, consisting of elements with imaginary scalar part and real vector part. Its biquaternion norm has signature $(3,1)$, matching the Minkowski metric in the $ict$ convention. The Lorentzian signature is not postulated: it arises algebraically from $i^2 = -1$ in the imaginary scalar part.
 
 The subspace $\mathbb{M}_-$ is the natural home of the four-vectors of relativistic physics:
 
@@ -247,7 +247,7 @@ The subspace $\mathbb{M}_-$ is specifically the **representation** of the Lorent
 | $i$ | Scalar imaginary, $i^2 = -1$ |
 | $c = 1/\sqrt{\epsilon\mu}$ | Speed of light in the medium |
 | $c_0 = 1/\sqrt{\epsilon_0\mu_0}$ | Speed of light in vacuum |
-| $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$ | Norm form |
+| $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$ | Biquaternion norm |
 | $s^2 = N(d\tilde{Q}) = d\tilde{Q}\,\overline{d\tilde{Q}}$ | Invariant interval |
 | $\tilde{\Lambda} \in \mathbb{B}$, $\tilde{\Lambda}\bar{\tilde{\Lambda}} = e_0$ | Lorentz rotor (unit-norm biquaternion) |
 | $\tilde{Q}' = \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^\dagger$ | Rotor conjugation |

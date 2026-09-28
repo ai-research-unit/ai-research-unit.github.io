@@ -217,7 +217,7 @@ $$
 B(x, y) = \frac{\Gamma(x) \Gamma(y)}{\Gamma(x + y)}.
 $$
 
-**Proof.** Substitute $t = u/(1+u)$ in the beta integral, then use the gamma integral representation for each factor. $\square$
+**Proof.** Substitute $t = u/(1+u)$ in the beta integral, then use the gamma integral representation for each factor.
 
 It is symmetric: $B(x, y) = B(y, x)$.
 

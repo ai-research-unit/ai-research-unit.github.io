@@ -35,7 +35,7 @@ Condition on intersections is what prevents two simplices from meeting in a part
 
 **Proposition.** If $K$ is a simplicial complex, then $|K|$ is a CW complex with one cell for each simplex of $K$, and the weak topology of the CW structure agrees with the subspace topology of $|K|$ inside $\mathbb{R}^N$.
 
-*Proof.* A simplex is homeomorphic to a disc, and its faces are its boundary; the intersection condition ensures that the attaching maps agree on overlaps, and the subspace topology is the weak topology because a closed subset of a finite union of simplices is closed in each. $\square$
+*Proof.* A simplex is homeomorphic to a disc, and its faces are its boundary; the intersection condition ensures that the attaching maps agree on overlaps, and the subspace topology is the weak topology because a closed subset of a finite union of simplices is closed in each.
 
 ### Oriented Simplices and the Boundary
 
@@ -51,7 +51,7 @@ where the hat omits the vertex; for $n = 0$ the boundary is $0$.
 
 **Lemma.** $\partial \partial = 0$ on oriented simplices.
 
-*Proof.* The terms of $\partial\partial[v_0,\ldots,v_n]$ are indexed by ordered pairs $i < j$; omitting $v_i$ then $v_j$ gives sign $(-1)^i(-1)^j$ and omitting $v_j$ then $v_i$ gives sign $(-1)^{j-1}(-1)^i$, and the two terms are the same oriented simplex with opposite signs, so they cancel. $\square$
+*Proof.* The terms of $\partial\partial[v_0,\ldots,v_n]$ are indexed by ordered pairs $i < j$; omitting $v_i$ then $v_j$ gives sign $(-1)^i(-1)^j$ and omitting $v_j$ then $v_i$ gives sign $(-1)^{j-1}(-1)^i$, and the two terms are the same oriented simplex with opposite signs, so they cancel.
 
 This is the single computation that makes homology a functor; it is the simplicial instance of the general fact that a chain complex is a differential graded module, treated in the planned *Differential Graded Algebras* of Part I.
 
@@ -93,7 +93,7 @@ extended $R$-linearly, and $\partial_0 = 0$.
 
 **Lemma.** $\partial_{n-1} \circ \partial_n = 0$.
 
-*Proof.* The composite is the sum over pairs $i,j$ of $(-1)^{i+j}\sigma \circ \delta^i \circ \delta^j$. The identities $\delta^i \delta^j = \delta^j \delta^{i-1}$ for $j < i$ pair the terms with $j < i$ against those with $j > i$, and the signs are opposite; the terms with $i = j$ do not occur since $\delta^i \delta^i$ is not defined. $\square$
+*Proof.* The composite is the sum over pairs $i,j$ of $(-1)^{i+j}\sigma \circ \delta^i \circ \delta^j$. The identities $\delta^i \delta^j = \delta^j \delta^{i-1}$ for $j < i$ pair the terms with $j < i$ against those with $j > i$, and the signs are opposite; the terms with $i = j$ do not occur since $\delta^i \delta^i$ is not defined.
 
 **Definition.** The **singular chain complex** is the pair $(C_*(X;R), \partial_*)$; the **singular homology** is
 
@@ -109,13 +109,13 @@ A space $X$ with $H_n(X;R) = 0$ for all $n \geq 1$ and $H_0(X;R) \cong R$ is **a
 
 **Theorem.** A continuous map $f : X \to Y$ induces a chain map $f_\# : C_*(X;R) \to C_*(Y;R)$ by $f_\#(\sigma) = f \circ \sigma$, and hence homomorphisms $f_* : H_n(X;R) \to H_n(Y;R)$. The assignments satisfy $(g \circ f)_* = g_* f_*$ and $(\mathrm{id}_X)_* = \mathrm{id}$, so $H_n(-;R)$ is a functor from topological spaces to $R$-modules.
 
-*Proof.* The chain map property is $f_\# \partial(\sigma) = \sum_i (-1)^i f \sigma \delta^i = \partial f_\#(\sigma)$, an identity of maps; a chain map induces a map on homology because it carries cycles to cycles and boundaries to boundaries. The functorial identities are immediate from associativity of composition. $\square$
+*Proof.* The chain map property is $f_\# \partial(\sigma) = \sum_i (-1)^i f \sigma \delta^i = \partial f_\#(\sigma)$, an identity of maps; a chain map induces a map on homology because it carries cycles to cycles and boundaries to boundaries. The functorial identities are immediate from associativity of composition.
 
 **Definition.** A **chain homotopy** between chain maps $\varphi, \psi : C_* \to D_*$ is a family of maps $P_n : C_n \to D_{n+1}$ with $\psi_n - \varphi_n = \partial^D_{n+1} P_n + P_{n-1}\partial^C_n$. Chain-homotopic chain maps induce the same map on homology, since $P$ carries cycles to boundaries.
 
 **Theorem (homotopy invariance).** If $f, g : X \to Y$ are homotopic then the induced chain maps are chain homotopic, so $f_* = g_*$; consequently a homotopy equivalence induces an isomorphism on homology.
 
-*Proof.* Let $F : X \times I \to Y$ be the homotopy. For a singular $n$-simplex $\sigma$, the maps $\Delta_n \to X \times I$, $x \mapsto (\sigma(x), 0)$ and $x \mapsto (\sigma(x),1)$, and the prism $\Delta_n \times I$ is triangulated into $(n+1)$-simplices; the standard subdivision determines $P_n(\sigma)$ as the alternating sum of the restrictions of $F \circ (\sigma \times \mathrm{id})$, and the identity $\partial P + P \partial = g_\# - f_\#$ is checked simplex by simplex. $\square$
+*Proof.* Let $F : X \times I \to Y$ be the homotopy. For a singular $n$-simplex $\sigma$, the maps $\Delta_n \to X \times I$, $x \mapsto (\sigma(x), 0)$ and $x \mapsto (\sigma(x),1)$, and the prism $\Delta_n \times I$ is triangulated into $(n+1)$-simplices; the standard subdivision determines $P_n(\sigma)$ as the alternating sum of the restrictions of $F \circ (\sigma \times \mathrm{id})$, and the identity $\partial P + P \partial = g_\# - f_\#$ is checked simplex by simplex.
 
 **Remark.** Homotopy invariance is what makes homology an invariant of the homotopy type, as the fundamental group is; the two are related by the Hurewicz theorem.
 
@@ -149,7 +149,7 @@ $$
 
 for all $n$.
 
-*Proof sketch.* Every relative cycle in $H_n(X,A;R)$ is represented by a chain whose simplices are small in the sense that each is contained in $X \setminus Z$ or in $A$: subdivide by iterated barycentric subdivision, using that each singular simplex is a compact subset of $X$ and that the interiors of the sets in the cover $\{X \setminus Z, \operatorname{int}(A)\}$ cover $X$, together with the Lebesgue number lemma. Chains of this form are chains in $C_*(X\setminus Z, A \setminus Z)$, so the inclusion is surjective on homology; the same argument on chains bounding shows injectivity. $\square$
+*Proof sketch.* Every relative cycle in $H_n(X,A;R)$ is represented by a chain whose simplices are small in the sense that each is contained in $X \setminus Z$ or in $A$: subdivide by iterated barycentric subdivision, using that each singular simplex is a compact subset of $X$ and that the interiors of the sets in the cover $\{X \setminus Z, \operatorname{int}(A)\}$ cover $X$, together with the Lebesgue number lemma. Chains of this form are chains in $C_*(X\setminus Z, A \setminus Z)$, so the inclusion is surjective on homology; the same argument on chains bounding shows injectivity.
 
 **Corollary (excision, symmetric form).** If $A, B$ are subspaces with $X = \operatorname{int}(A) \cup \operatorname{int}(B)$ then the inclusion $(B, A \cap B) \hookrightarrow (X,A)$ induces isomorphisms in homology.
 
@@ -171,7 +171,7 @@ $$
 
 with coefficients suppressed and the connecting map $\partial$ defined from the snake lemma applied to the short exact sequence of complexes $0 \to C_*(A \cap B) \to C_*(A)\oplus C_*(B) \to C_*(A+B) \to 0$, where $C_*(A+B)$ denotes chains that are sums of chains in $A$ and in $B$; excision identifies $H_*(A+B)$ with $H_*(X)$.
 
-*Proof.* The given sequence of complexes is exact by the definition of the maps, and the identification $C_*(A)+C_*(B) = C_*(X)$ follows from the subdivision argument of excision. The snake lemma then produces the sequence. $\square$
+*Proof.* The given sequence of complexes is exact by the definition of the maps, and the identification $C_*(A)+C_*(B) = C_*(X)$ follows from the subdivision argument of excision. The snake lemma then produces the sequence.
 
 **Example.** The sphere $S^n$ for $n \geq 1$ is the union of two open discs whose intersection deformation retracts to $S^{n-1}$. Induction with the Mayer–Vietoris sequence gives $H_k(S^n;R) \cong R$ for $k = 0, n$ and $0$ otherwise.
 
@@ -181,7 +181,7 @@ with coefficients suppressed and the connecting map $\partial$ defined from the 
 
 **Theorem.** For $n \geq 0$, $H_k(S^n;R) \cong R$ for $k = 0$ and $k = n$, and $H_k(S^n;R) = 0$ otherwise; in reduced homology, $\tilde H_k(S^n;R) \cong R$ for $k = n$ and $0$ otherwise.
 
-*Proof.* The case $n = 0$ is $S^0$, two points, with $H_0$ free of rank two and nothing else. For $n \geq 1$ use the Mayer–Vietoris sequence of the two hemispheres, whose intersection is a neighbourhood of the equator, deformation retracting to $S^{n-1}$. The sequence reads $\tilde H_k(S^{n-1}) \to \tilde H_k(S^n) \to 0$ for $k \geq 1$ and $0 \to \tilde H_n(S^n)\to \tilde H_{n-1}(S^{n-1}) \to 0$ in degree $n$, giving the result by induction. $\square$
+*Proof.* The case $n = 0$ is $S^0$, two points, with $H_0$ free of rank two and nothing else. For $n \geq 1$ use the Mayer–Vietoris sequence of the two hemispheres, whose intersection is a neighbourhood of the equator, deformation retracting to $S^{n-1}$. The sequence reads $\tilde H_k(S^{n-1}) \to \tilde H_k(S^n) \to 0$ for $k \geq 1$ and $0 \to \tilde H_n(S^n)\to \tilde H_{n-1}(S^{n-1}) \to 0$ in degree $n$, giving the result by induction.
 
 **Corollary.** The degree of a self-map of $S^n$ is well defined by $f_* = \deg(f)\cdot \mathrm{id}$ on $H_n(S^n) \cong \mathbb{Z}$, and the properties quoted in *CW Complexes and Cellular Approximation* hold by functoriality.
 
@@ -191,7 +191,7 @@ with coefficients suppressed and the connecting map $\partial$ defined from the 
 
 **Theorem.** For a connected graph $X$, $H_0(X;R) \cong R$, $H_1(X;R)$ is free of rank $E - V + 1$, and $H_n(X;R) = 0$ for $n \geq 2$.
 
-*Proof.* The cellular chain complex is $0 \to R^{E} \xrightarrow{\partial_1} R^{V} \to 0$. The map $\partial_1$ sends an edge $e$ from $v$ to $w$ to $w - v$, so its image is the submodule of tuples with coordinate sum zero, of rank $V-1$; hence $H_0 \cong R$ and $H_1 \cong \ker\partial_1$ has rank $E - (V-1)$. $\square$
+*Proof.* The cellular chain complex is $0 \to R^{E} \xrightarrow{\partial_1} R^{V} \to 0$. The map $\partial_1$ sends an edge $e$ from $v$ to $w$ to $w - v$, so its image is the submodule of tuples with coordinate sum zero, of rank $V-1$; hence $H_0 \cong R$ and $H_1 \cong \ker\partial_1$ has rank $E - (V-1)$.
 
 **Corollary.** The rank $E - V + 1$ equals the rank of the free group $\pi_1(X)$, by the Hurewicz theorem; the case of a wedge of circles was computed directly there by van Kampen.
 
@@ -205,7 +205,7 @@ $$
 
 for all $n$.
 
-*Proof sketch.* Both theories are computed by the same chain complex after subdivision. A **simplicial map** $K \to L$ is a map of underlying spaces linear on each simplex; a map $f : |K| \to |L|$ between finite complexes is homotopic to a simplicial map after sufficiently fine subdivision, by the **simplicial approximation theorem**, and the simplicial chain map it induces agrees with the singular chain map up to chain homotopy. Applying this with $L = \Delta_n$ identifies the singular chains of $|K|$ with the simplicial chains of a subdivision, which have isomorphic homology. $\square$
+*Proof sketch.* Both theories are computed by the same chain complex after subdivision. A **simplicial map** $K \to L$ is a map of underlying spaces linear on each simplex; a map $f : |K| \to |L|$ between finite complexes is homotopic to a simplicial map after sufficiently fine subdivision, by the **simplicial approximation theorem**, and the simplicial chain map it induces agrees with the singular chain map up to chain homotopy. Applying this with $L = \Delta_n$ identifies the singular chains of $|K|$ with the simplicial chains of a subdivision, which have isomorphic homology.
 
 **Remark.** This is the theorem that makes simplicial homology a topological invariant; it also shows that the cellular homology of the previous article agrees with both, since a CW complex with a simplicial structure carries the three chain complexes, linked by subdivision and by the collapse isomorphisms.
 

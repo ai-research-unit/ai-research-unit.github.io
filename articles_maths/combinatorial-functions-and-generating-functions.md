@@ -21,7 +21,7 @@ $$
 
 **Theorem.** With these operations $R[[x]]$ is a commutative ring with identity $1$, the polynomial ring $R[x]$ is a subring, and a series $\sum a_n x^n$ is a unit in $R[[x]]$ if and only if $a_0$ is a unit of $R$. The map $R \to R[[x]]$, $a \mapsto a$, is an injective ring homomorphism.
 
-**Proof.** The ring axioms are those of $R$ applied componentwise; associativity of the product is the associativity of the convolution $\sum_{k} a_k b_{n-k}$, which is finite for each $n$. If $a_0$ is a unit then the coefficients of the inverse are determined recursively by $b_0 = a_0^{-1}$ and $b_n = -a_0^{-1}\sum_{k=1}^n a_k b_{n-k}$, and conversely a unit must have invertible constant term because the constant term of a product is the product of the constant terms. The last statement is clear. $\square$
+**Proof.** The ring axioms are those of $R$ applied componentwise; associativity of the product is the associativity of the convolution $\sum_{k} a_k b_{n-k}$, which is finite for each $n$. If $a_0$ is a unit then the coefficients of the inverse are determined recursively by $b_0 = a_0^{-1}$ and $b_n = -a_0^{-1}\sum_{k=1}^n a_k b_{n-k}$, and conversely a unit must have invertible constant term because the constant term of a product is the product of the constant terms. The last statement is clear.
 
 **Definition.** For a formal power series $A = \sum a_n x^n$ one writes
 
@@ -39,7 +39,7 @@ $$
 
 satisfy $\exp(\log(1-x)) = 1-x$ and the usual identity $\exp(A + B) = \exp(A)\exp(B)$ whenever $A$ and $B$ have zero constant term.
 
-**Proof.** The derivation is linear and satisfies $A' B + A B' = (AB)'$ by differentiating the convolution. For the logarithm and exponential, all the displayed coefficients require the division by $n$ and by $n!$, which is where the hypothesis that $R$ be a $\mathbb{Q}$-algebra enters; the identities then follow by the formal computation of the coefficients. $\square$
+**Proof.** The derivation is linear and satisfies $A' B + A B' = (AB)'$ by differentiating the convolution. For the logarithm and exponential, all the displayed coefficients require the division by $n$ and by $n!$, which is where the hypothesis that $R$ be a $\mathbb{Q}$-algebra enters; the identities then follow by the formal computation of the coefficients.
 
 **Remark.** The hypothesis that $R$ be a $\mathbb{Q}$-algebra is genuinely needed for the exponential: in characteristic $p$ the coefficient $1/p!$ does not exist. Over a field of characteristic $p$ the exponential series has no meaning as a formal power series, although the truncated versions $\exp(x) \bmod x^{p}$ do. The generating functions of the next sections that use $n!$ or $1/n$ carry this hypothesis; those that only use integers do not.
 
@@ -53,7 +53,7 @@ $$
 
 and if $B$ has zero constant term, the composition $A(B(x))$ is a well-defined formal power series whose $x^n$-coefficient depends on finitely many coefficients of $A$; the substitution $x \mapsto x^k$ multiplies the coefficient sequence by the indicator of the multiples of $k$.
 
-**Proof.** The first identity is the Cauchy product. The second follows from the first with $b_n = 1$, and the third is the geometric series computed from $(1-x)(1+x+x^2+\cdots) = 1$. Composition is well defined because in degree $n$ only the terms $a_0, \dots, a_n$ and powers of $B$ of order at least $1$ contribute. $\square$
+**Proof.** The first identity is the Cauchy product. The second follows from the first with $b_n = 1$, and the third is the geometric series computed from $(1-x)(1+x+x^2+\cdots) = 1$. Composition is well defined because in degree $n$ only the terms $a_0, \dots, a_n$ and powers of $B$ of order at least $1$ contribute.
 
 **Corollary.** Generating functions convert the sum of sequences, the convolution and the partial-sum operator into the ring operations on $R[[x]]$ and the multiplication by $(1-x)^{-1}$; the map $(a_n) \mapsto A(x)$ is a ring isomorphism from the ring of sequences with convolution onto $R[[x]]$, by the dictionary of *Formal Power Series and Completion*.
 
@@ -75,11 +75,11 @@ $$
 \sum_{n \geq k} \binom{n}{k} x^n = \frac{x^k}{(1-x)^{k+1}} .
 $$
 
-**Proof.** The binomial theorem is an induction on $n$ using Pascal's identity, which is the identity $\binom{n+1}{k+1} = \binom{n}{k} + \binom{n}{k+1}$. The generating function follows from $(1-x)^{-k-1} = \sum_{m \geq 0}\binom{m+k}{k} x^m$, itself the binomial theorem with negative exponent or an induction on $k$. $\square$
+**Proof.** The binomial theorem is an induction on $n$ using Pascal's identity, which is the identity $\binom{n+1}{k+1} = \binom{n}{k} + \binom{n}{k+1}$. The generating function follows from $(1-x)^{-k-1} = \sum_{m \geq 0}\binom{m+k}{k} x^m$, itself the binomial theorem with negative exponent or an induction on $k$.
 
 **Corollary (Vandermonde).** $\binom{m+n}{k} = \sum_{j} \binom{m}{j}\binom{n}{k-j}$.
 
-**Proof.** Compare coefficients in $(1+x)^{m+n} = (1+x)^m (1+x)^n$. $\square$
+**Proof.** Compare coefficients in $(1+x)^{m+n} = (1+x)^m (1+x)^n$.
 
 ### Stirling, Bell and Catalan Numbers
 
@@ -99,7 +99,7 @@ $$
 
 The Bell numbers have exponential generating function $\sum_{n \geq 0} B_n x^n / n! = \exp(e^x - 1)$.
 
-**Proof.** The recurrence is by the position of the block containing a fixed element: either it is a singleton, giving $S(n,k-1)$, or it joins one of the $k$ blocks of a partition of the remaining $n$ elements, giving $k S(n,k)$. The exponential generating function is obtained by observing that a partition into $k$ blocks is an unordered set of $k$ nonempty sets, and the exponential generating function of nonempty sets is $e^x - 1$; the ordinary generating function follows from the partial fraction expansion of the product. For the Bell numbers, sum over $k$ and use $\exp$. $\square$
+**Proof.** The recurrence is by the position of the block containing a fixed element: either it is a singleton, giving $S(n,k-1)$, or it joins one of the $k$ blocks of a partition of the remaining $n$ elements, giving $k S(n,k)$. The exponential generating function is obtained by observing that a partition into $k$ blocks is an unordered set of $k$ nonempty sets, and the exponential generating function of nonempty sets is $e^x - 1$; the ordinary generating function follows from the partial fraction expansion of the product. For the Bell numbers, sum over $k$ and use $\exp$.
 
 **Theorem (Catalan).** The Catalan numbers satisfy $C_0 = 1$ and
 
@@ -113,7 +113,7 @@ $$
 C(x) = \frac{1 - \sqrt{1 - 4x}}{2x}, \qquad C_n = \frac{1}{n+1}\binom{2n}{n}.
 $$
 
-**Proof.** The recurrence is the standard decomposition of a Catalan object into two smaller ones, and it translates into $C = 1 + xC^2$ by the convolution dictionary; solving the quadratic over $\mathbb{Q}[[x]]$ and choosing the branch with constant term $1$ gives the closed form. The coefficient formula follows by the binomial expansion of $\sqrt{1-4x}$; the computation is standard. $\square$
+**Proof.** The recurrence is the standard decomposition of a Catalan object into two smaller ones, and it translates into $C = 1 + xC^2$ by the convolution dictionary; solving the quadratic over $\mathbb{Q}[[x]]$ and choosing the branch with constant term $1$ gives the closed form. The coefficient formula follows by the binomial expansion of $\sqrt{1-4x}$; the computation is standard.
 
 ### Partitions and the Pentagonal Theorem
 
@@ -131,7 +131,7 @@ $$
 \phi(x) = \prod_{k \geq 1}(1 - x^k) = \sum_{j \in \mathbb{Z}} (-1)^j x^{j(3j-1)/2} .
 $$
 
-**Proof.** The first identity is the expansion of each factor as a geometric series $1 + x^k + x^{2k} + \cdots$ and the collection of the contributions to $x^n$, each partition of $n$ contributing once. The pentagonal theorem is Euler's; the standard proof multiplies out the product and observes that the surviving terms are those in which the parts form a strictly decreasing then strictly decreasing-by-one pattern, giving the pentagonal exponents $j(3j\pm1)/2$ with signs $(-1)^j$. $\square$
+**Proof.** The first identity is the expansion of each factor as a geometric series $1 + x^k + x^{2k} + \cdots$ and the collection of the contributions to $x^n$, each partition of $n$ contributing once. The pentagonal theorem is Euler's; the standard proof multiplies out the product and observes that the surviving terms are those in which the parts form a strictly decreasing then strictly decreasing-by-one pattern, giving the pentagonal exponents $j(3j\pm1)/2$ with signs $(-1)^j$.
 
 **Corollary (Euler's recurrence).** The pentagonal theorem gives $p(n)$ by the recurrence $p(n) = \sum_{j \neq 0} (-1)^{j+1} p(n - j(3j-1)/2)$ with $p(0) = 1$ and $p(n) = 0$ for $n < 0$.
 
@@ -147,7 +147,7 @@ $$
 
 **Theorem.** The exponential generating function converts the labelled product into multiplication, the disjoint union into addition, and the formation of nonempty sets into the exponential: if a structure is an unordered set of its connected components and the components have exponential generating function $\hat A$, then the whole structure has exponential generating function $\exp(\hat A(x))$. The class of permutations has $\sum n!\,x^n/n! = (1-x)^{-1}$, and the class of cyclic permutations has $-\log(1-x)$.
 
-**Proof.** The binomial convolution is the coefficientwise form of the product; the composition with $\exp$ is the standard exponential formula for sets of components, whose coefficients are the Bell-type sums. The two examples follow from the geometric series and the formal logarithm. $\square$
+**Proof.** The binomial convolution is the coefficientwise form of the product; the composition with $\exp$ is the standard exponential formula for sets of components, whose coefficients are the Bell-type sums. The two examples follow from the geometric series and the formal logarithm.
 
 ### Dirichlet Series and Arithmetic Functions
 
@@ -165,11 +165,11 @@ $$
 g(n) = \sum_{d \mid n} f(d) \iff f(n) = \sum_{d \mid n} \mu(n/d) g(d).
 $$
 
-**Proof.** Associativity and commutativity of the convolution follow from the reindexing of the divisors of a product; the identity is $\varepsilon$. The identity $\mu * \zeta = \varepsilon$ is verified at $n$ by grouping the divisors of $n$ according to their squarefree part, the alternating sum over the subsets of the primes dividing $n$ being $(1-1)^k = 0$ for $n > 1$. Möbius inversion is the statement that $\mu$ is the inverse of $\zeta$ in the convolution ring. $\square$
+**Proof.** Associativity and commutativity of the convolution follow from the reindexing of the divisors of a product; the identity is $\varepsilon$. The identity $\mu * \zeta = \varepsilon$ is verified at $n$ by grouping the divisors of $n$ according to their squarefree part, the alternating sum over the subsets of the primes dividing $n$ being $(1-1)^k = 0$ for $n > 1$. Möbius inversion is the statement that $\mu$ is the inverse of $\zeta$ in the convolution ring.
 
 **Theorem.** **Euler's totient function** $\varphi(n)$ satisfies $\sum_{d\mid n}\varphi(d) = n$ and $\sum_{n\geq 1} \varphi(n) n^{-s} = \zeta(s-1)/\zeta(s)$; the divisor function $\tau$, the sum-of-divisors function $\sigma$ and the Liouville function have the Dirichlet series $\zeta(s)^2$, $\zeta(s)\zeta(s-1)$ and $\zeta(2s)/\zeta(s)$ respectively.
 
-**Proof.** The divisor identity for $\varphi$ counts the elements of a cyclic group by their order; the Dirichlet series follow from the multiplicativity of the functions and the Euler product $\zeta(s) = \prod_p (1 - p^{-s})^{-1}$. The computations are in *Analytic Number Theory*. $\square$
+**Proof.** The divisor identity for $\varphi$ counts the elements of a cyclic group by their order; the Dirichlet series follow from the multiplicativity of the functions and the Euler product $\zeta(s) = \prod_p (1 - p^{-s})^{-1}$. The computations are in *Analytic Number Theory*.
 
 ## Lagrange Inversion and Applications
 
@@ -189,7 +189,7 @@ $$
 [x^n]\, H(\bar w(x)) = \frac{1}{n} [x^{n-1}]\, H'(x) \left( \frac{x}{w(x)} \right)^{n} .
 $$
 
-**Proof.** The formula is the Lagrange–Bürmann inversion theorem, proved by the residue calculus of formal power series: the substitution $x = w(t)$ turns the coefficient extraction into the evaluation of a residue, and the change-of-variables formula for residues gives the displayed expression. The argument is standard and is in *Formal Power Series and Completion*. $\square$
+**Proof.** The formula is the Lagrange–Bürmann inversion theorem, proved by the residue calculus of formal power series: the substitution $x = w(t)$ turns the coefficient extraction into the evaluation of a residue, and the change-of-variables formula for residues gives the displayed expression. The argument is standard and is in *Formal Power Series and Completion*.
 
 ### Cayley's Tree Formula
 
@@ -201,7 +201,7 @@ $$
 [x^n] T(x) = \frac{1}{n}[x^{n-1}] e^{nx} = \frac{n^{n-1}}{n!},
 $$
 
-so the coefficient of $x^n/n!$ is $n^{n-1}$, as claimed; dividing by $n$ to forget the root gives $n^{n-2}$. $\square$
+so the coefficient of $x^n/n!$ is $n^{n-1}$, as claimed; dividing by $n$ to forget the root gives $n^{n-2}$.
 
 ## Asymptotics
 
@@ -215,7 +215,7 @@ $$
 
 so that $\log(n!) = n\log n - n + \tfrac12 \log(2\pi n) + O(1/n)$.
 
-**Proof.** The estimate is obtained by comparing $\log(n!) = \sum_{k=1}^n \log k$ with the integral $\int_1^n \log t\, dt$ and refining the Euler–Maclaurin expansion; the argument belongs to real analysis and is quoted from the standard literature. $\square$
+**Proof.** The estimate is obtained by comparing $\log(n!) = \sum_{k=1}^n \log k$ with the integral $\int_1^n \log t\, dt$ and refining the Euler–Maclaurin expansion; the argument belongs to real analysis and is quoted from the standard literature.
 
 **Corollary.** The two conventions have different analytic behaviour. The ordinary generating function $\sum_{n \geq 0} n!\,x^n$ has zero radius of convergence, since the coefficients grow like $n!$ and outrun every geometric series; the exponential generating function $\sum_{n\geq 0} x^n/n!$ of the elementary functions converges everywhere, and this is the reason the exponential convention is the natural one for the labelled structures above. The ordinary generating function of the Catalan numbers has radius $1/4$, because $C_n \sim 4^n/(n^{3/2}\sqrt{\pi})$.
 
@@ -227,7 +227,7 @@ $$
 p(n) \sim \frac{1}{4n\sqrt{3}} \exp\left( \pi \sqrt{\frac{2n}{3}} \right).
 $$
 
-**Proof.** The estimate is obtained by the circle method, applied to the generating function $\prod_k (1-x^k)^{-1}$ near the unit circle; the theorem of Hardy and Ramanujan, later refined by Rademacher to an exact series, is quoted. $\square$
+**Proof.** The estimate is obtained by the circle method, applied to the generating function $\prod_k (1-x^k)^{-1}$ near the unit circle; the theorem of Hardy and Ramanujan, later refined by Rademacher to an exact series, is quoted.
 
 **Remark.** The two theorems show the two uses of generating functions: the algebraic use, in which the coefficients are computed exactly from the functional equation or the recurrence, and the analytic use, in which the growth of the coefficients is read off from the singularities of the generating function. The first is the content of the present article for the system $\mathbb{N}$; the second is the analytic theory of the special functions of the later systems of the ladder.
 
@@ -247,7 +247,7 @@ $$
 \lvert X/G\rvert = \frac{1}{\lvert G\rvert}\sum_{g\in G}\lvert X^g\rvert = Z_G(1,1,\dots,1) .
 $$
 
-**Proof.** Counting the pairs $(g,x)$ with $gx = x$ in the two possible orders gives $\sum_g \lvert X^g\rvert = \sum_{x}\lvert G_x\rvert$, and the orbit–stabiliser theorem turns the right-hand side into $\lvert G\rvert$ times the number of orbits. $\square$
+**Proof.** Counting the pairs $(g,x)$ with $gx = x$ in the two possible orders gives $\sum_g \lvert X^g\rvert = \sum_{x}\lvert G_x\rvert$, and the orbit–stabiliser theorem turns the right-hand side into $\lvert G\rvert$ times the number of orbits.
 
 ### Pólya's Theorem
 
@@ -257,7 +257,7 @@ $$
 \sum_{\text{orbits } O} \prod_{x \in O} \text{weight}(x) = Z_G(p_1, p_2, \dots) .
 $$
 
-**Proof.** The number of colourings fixed by $g$ is $\prod_k p_k^{c_k(g)}$, because a colouring is fixed exactly when it is constant on the cycles of $g$, and the orbit counting of Burnside applied weight by weight gives the substitution. $\square$
+**Proof.** The number of colourings fixed by $g$ is $\prod_k p_k^{c_k(g)}$, because a colouring is fixed exactly when it is constant on the cycles of $g$, and the orbit counting of Burnside applied weight by weight gives the substitution.
 
 **Corollary (necklaces).** The number of necklaces with $n$ beads and $k$ colours is
 
@@ -267,7 +267,7 @@ $$
 
 and the number of bracelets is obtained by adding the reversal to the group and applying the same formula to the dihedral group.
 
-**Proof.** The cyclic group $C_n$ acts on the $n$ positions; the rotations with $n/d$ cycles of length $d$ are counted by $\varphi(d)$, and Pólya's theorem with $k$ colours of weight $1$ gives the formula. $\square$
+**Proof.** The cyclic group $C_n$ acts on the $n$ positions; the rotations with $n/d$ cycles of length $d$ are counted by $\varphi(d)$, and Pólya's theorem with $k$ colours of weight $1$ gives the formula.
 
 **Example.** With $n = 4$ and $k = 2$ the formula gives $\tfrac14(2^4 + 2^2 + 0 + 2^2) = 6$ necklaces, namely $0000$, $0001$, $0011$, $0101$, $0111$, $1111$; with the reversal included the bracelets still number $6$, because the reversal maps each of the six necklaces to a rotation of itself.
 

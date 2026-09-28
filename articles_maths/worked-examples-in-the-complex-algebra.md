@@ -3,7 +3,7 @@
 
 ## Introduction
 
-This article is the computed companion to the structural articles of the complex algebra. Where *Complex Algebra* states the definitions and proves the general properties, and *Complex Subspaces*, *Complex Norm and Invertibility*, *Complex Polar Representation* and *Complex Automorphisms and Derivations* develop them, the present article exhibits every one of those structures on explicit elements, so that the general statements can be read against a concrete computation.
+This article is the computed companion to the structural articles of the complex algebra. Where *Complex Algebra* states the definitions and proves the general properties, and *Complex Subspaces*, *Complex Norm and Invertibility*, *Complex Polar Representation*, *Complex Regular Representation* and *Complex Automorphisms and Derivations* develop them, the present article exhibits every one of those structures on explicit elements, so that the general statements can be read against a concrete computation.
 
 The elements used throughout are
 
@@ -11,7 +11,7 @@ $$
 Z = 3 + 4i, \qquad W = 1 - 2i,
 $$
 
-chosen because their arithmetic is exact and their norm forms are small squares and small integers: $N(Z) = 25$ and $N(W) = 5$, so that the inverse, the polar decomposition and the Galois action all display rational data. Where a statement needs a degenerate example, the element $0$ and the real and imaginary points of the previous articles are used. The conventions are those of *Complex Algebra*: basis $1$, $i$, $i^2 = -1$, involution $\bar{Z} = a - bi$, norm form $N(Z) = Z\bar{Z} = a^2+b^2$.
+chosen because their arithmetic is exact and their norms are small squares and small integers: $N(Z) = 25$ and $N(W) = 5$, so that the inverse and the Galois action both display rational data. Where a statement needs a degenerate example, the element $0$ and the real and imaginary points of the previous articles are used. The conventions are those of *Complex Algebra*: basis $1$, $i$, $i^2 = -1$, involution $\bar{Z} = a - bi$, norm $N(Z) = Z\bar{Z} = a^2+b^2$.
 
 Every numerical value below is recomputed exactly; where a trigonometric value is not rational it is given to the stated number of decimals and the exact replacement is indicated.
 
@@ -49,7 +49,7 @@ $$
 N(Z^2) = (-7)^2 + 24^2 = 49 + 576 = 625 = 25^2 = N(Z)^2,
 $$
 
-the multiplicativity of the norm form on a single element. In the same way $N(ZW) = N(11-2i) = 121+4 = 125 = 25 \cdot 5 = N(Z) N(W)$.
+the multiplicativity of the norm on a single element. In the same way $N(ZW) = N(11-2i) = 121+4 = 125 = 25 \cdot 5 = N(Z) N(W)$.
 
 **Associativity and distributivity** are illustrated by the two products above agreeing and by $(Z+W)^2 = Z^2 + 2ZW + W^2$, which is a computation of the same rules and needs no separate display.
 
@@ -71,7 +71,7 @@ $$
 \overline{Z W} = \overline{11-2i} = 11+2i, \qquad \bar{Z}\,\bar{W} = (3-4i)(1+2i) = 3 + 6i - 4i - 8i^2 = 11 + 2i,
 $$
 
-the two values agreeing. In particular the norm form is invariant: $N(\bar{Z}) = 3^2 + (-4)^2 = 25 = N(Z)$.
+the two values agreeing. In particular the norm is invariant: $N(\bar{Z}) = 3^2 + (-4)^2 = 25 = N(Z)$.
 
 | element | $\operatorname{id}$ | $\bar{\cdot}$ | $\bar{\cdot}$ applied twice |
 |---|---|---|---|
@@ -121,7 +121,7 @@ $$
 
 with $Z_+ + Z_- = 3+4i = Z$. For $W$ the same computation gives $W_+ = 1$ and $W_- = -2i$, again summing to $W$. The two subspaces meet only in $0$: the element $Z_+ = 3$ is not a multiple of $i$ unless $3 = 0$.
 
-**The norm form on the pieces.** $N(Z_+) = 3^2 = 9$ and $N(Z_-) = 4^2 = 16$, and
+**The norm on the pieces.** $N(Z_+) = 3^2 = 9$ and $N(Z_-) = 4^2 = 16$, and
 
 $$
 N(Z_+) + N(Z_-) = 9 + 16 = 25 = N(Z),
@@ -129,71 +129,37 @@ $$
 
 the Pythagorean instance of the definite decomposition; for $W$, $N(W_+) + N(W_-) = 1 + 4 = 5 = N(W)$.
 
-## The Norm Criterion for a Unit, Worked
+## The Matrix Model, Worked
 
-**A unit.** The norm form of $Z$ is $N(Z) = 3^2 + 4^2 = 25 \neq 0$, so $Z$ is a unit, and the inverse formula gives
-
-$$
-Z^{-1} = \frac{\bar{Z}}{N(Z)} = \frac{3-4i}{25} = 0.12 - 0.16 i .
-$$
-
-The verification is exact:
+Multiplication by an element is an $\mathbb{R}$-linear endomorphism of $\mathbb{C}$, and in the basis $1$, $i$ it is the Cayley matrix of *Complex Regular Representation*. The matrices of the two worked elements are
 
 $$
-Z Z^{-1} = (3+4i)\left(\frac{3}{25} - \frac{4}{25} i\right) = \frac{(3+4i)(3-4i)}{25} = \frac{25}{25} = 1 .
+\rho_L(Z) = \begin{pmatrix} 3 & -4 \\ 4 & 3 \end{pmatrix}, \qquad \rho_L(W) = \begin{pmatrix} 1 & 2 \\ -2 & 1 \end{pmatrix}.
 $$
 
-**A second unit.** $N(W) = 1^2 + (-2)^2 = 5 \neq 0$, so $W$ is a unit, and
+**Multiplicativity.** The product of the two matrices reproduces the product computed in components,
 
 $$
-W^{-1} = \frac{\bar{W}}{N(W)} = \frac{1+2i}{5} = 0.2 + 0.4 i, \qquad W W^{-1} = \frac{(1-2i)(1+2i)}{5} = \frac{5}{5} = 1 .
+\rho_L(Z)\rho_L(W) = \begin{pmatrix} 3 & -4 \\ 4 & 3 \end{pmatrix}\begin{pmatrix} 1 & 2 \\ -2 & 1 \end{pmatrix} = \begin{pmatrix} 11 & 2 \\ -2 & 11 \end{pmatrix} = \rho_L(ZW),
 $$
 
-**The criterion in the product.** The product $ZW = 11-2i$ has $N(ZW) = 125 \neq 0$ and is a unit, consistent with the general fact that the product of two units is a unit. Its inverse is computed in the two ways and the results agree:
+the matrix of $ZW = 11-2i$.
+
+**The determinant is the norm.** Each matrix has determinant equal to the norm of its element,
 
 $$
-(ZW)^{-1} = W^{-1} Z^{-1} = (0.2+0.4i)(0.12-0.16i) = (0.024+0.064) + (0.048-0.032)i = 0.088 + 0.016 i,
+\det \rho_L(Z) = 3\cdot 3 - (-4)\cdot 4 = 25 = N(Z), \qquad \det \rho_L(W) = 1\cdot 1 - 2\cdot(-2) = 5 = N(W),
 $$
 
-$$
-(ZW)^{-1} = \frac{\overline{ZW}}{N(ZW)} = \frac{11+2i}{125} = 0.088 + 0.016 i .
-$$
+so multiplicativity of the determinant is the multiplicativity $N(ZW) = N(Z)N(W)$ on the worked pair.
 
-**The non-units.** The only element of vanishing norm form is $0$, since $a^2+b^2 = 0$ forces $a = b = 0$. The zero-divisor class is empty, and there is no nonzero worked example of it.
-
-## The Polar Decomposition, Worked
-
-**The element $Z$.** The modulus is $r = \sqrt{N(Z)} = 5$ and the unit factor is
+**Transposition is conjugation.** The transpose of the matrix of $Z$ is the matrix of $\bar{Z}$:
 
 $$
-u = \frac{Z}{r} = \frac{3+4i}{5} = 0.6 + 0.8 i, \qquad N(u) = \frac{N(Z)}{r^2} = \frac{25}{25} = 1,
+\rho_L(Z)^{\mathsf{T}} = \begin{pmatrix} 3 & 4 \\ -4 & 3 \end{pmatrix} = \rho_L(3-4i) = \rho_L(\bar{Z}),
 $$
 
-so $u$ lies on the unit circle. Its argument is
-
-$$
-\theta = \arg Z = \arctan\frac{4}{3} = 0.9272952180 \ \text{rad} = 53.13010235^\circ,
-$$
-
-and the reconstruction $u = \cos\theta + i\sin\theta$ gives $0.6 + 0.8 i$ to machine precision. The polar form is therefore $Z = 5(0.6+0.8i) = 5 e^{i\theta}$.
-
-**The doubling of the angle.** Squaring the unit factor,
-
-$$
-u^2 = (0.6+0.8i)^2 = 0.36 + 0.96 i + 0.64 i^2 = -0.28 + 0.96 i,
-$$
-
-which is $e^{2i\theta} = \cos 2\theta + i\sin 2\theta$ with $2\theta = 1.8545904360$ rad, since $\cos 2\theta = -0.28$ and $\sin 2\theta = 0.96$.
-
-**The element $W$.** Here $r = \sqrt{N(W)} = \sqrt{5}$ and
-
-$$
-u = \frac{1-2i}{\sqrt{5}} = 0.4472135955 - 0.8944271910 i, \qquad \theta = \arg W = \arctan(-2) = -1.1071487178 \ \text{rad},
-$$
-
-with $u = \cos\theta + i\sin\theta$ and $\theta$ on the principal branch $(-\pi,\pi]$. Squaring gives $u^2 = -0.6 - 0.8i$, which is $e^{2i\theta}$ at $2\theta = -2.2142974356$ rad.
-
-**Uniqueness.** The modulus is unique and positive, and the unit factor is unique; only the angle is a class, in $\mathbb{R}/2\pi\mathbb{Z}$.
+and likewise $\rho_L(W)^{\mathsf{T}} = \rho_L(\bar{W})$.
 
 ## The Galois Action, Worked
 
@@ -209,13 +175,13 @@ $$
 \sigma(Z)\sigma(W) = (3-4i)(1+2i) = 3+6i-4i-8i^2 = 11+2i = \sigma(ZW),
 $$
 
-and the norm form is preserved, $N(\sigma(Z)) = 25 = N(Z)$. The fixed points are exactly the real axis: $\sigma(Z) = Z$ would require $4 = 0$, so $Z$ is moved; $\sigma(3) = 3$ and $\sigma$ fixes every real number. The action is not $\mathbb{C}$-linear: $\sigma(i\cdot 1) = -i$ while $i\,\sigma(1) = i$, so $\sigma$ conjugates the scalar $i$, which is the concrete form of the conjugate-linearity of complex conjugation over $\mathbb{C}$.
+and the norm is preserved, $N(\sigma(Z)) = 25 = N(Z)$. The fixed points are exactly the real axis: $\sigma(Z) = Z$ would require $4 = 0$, so $Z$ is moved; $\sigma(3) = 3$ and $\sigma$ fixes every real number. The action is not $\mathbb{C}$-linear: $\sigma(i\cdot 1) = -i$ while $i\,\sigma(1) = i$, so $\sigma$ conjugates the scalar $i$, which is the concrete form of the conjugate-linearity of complex conjugation over $\mathbb{C}$.
 
 ## Summary
 
-The article exhibits the structures of the complex algebra on the elements $Z = 3+4i$ and $W = 1-2i$. Their product is $ZW = 11-2i$ and their square norms are $N(Z) = 25$, $N(W) = 5$, $N(ZW) = 125$, so the norm form is multiplicative on the worked pair. The identity and complex conjugation are the two involutions; conjugation sends $Z$ to $3-4i$ and $W$ to $1+2i$, is an involution and an algebra automorphism, and fixes exactly the real axis while negating the imaginary axis.
+The article exhibits the structures of the complex algebra on the elements $Z = 3+4i$ and $W = 1-2i$. Their product is $ZW = 11-2i$ and their square norms are $N(Z) = 25$, $N(W) = 5$, $N(ZW) = 125$, so the norm is multiplicative on the worked pair. The identity and complex conjugation are the two involutions; conjugation sends $Z$ to $3-4i$ and $W$ to $1+2i$, is an involution and an algebra automorphism, and fixes exactly the real axis while negating the imaginary axis.
 
-The eigencomponents of conjugation are $Z_+ = 3 \in \mathbb{R}_{\mathbb{C}}$ and $Z_- = 4i \in i\mathbb{R}_{\mathbb{C}}$, with $N(Z_+)+N(Z_-) = N(Z)$; the product $(4i)(-2i) = 8$ is real and shows that the imaginary subspace is not closed. Both worked elements are units, with inverses $Z^{-1} = (3-4i)/25$ and $W^{-1} = (1+2i)/5$, and $(ZW)^{-1} = \overline{ZW}/125 = (11+2i)/125$; there is no nonzero non-unit because the norm form is definite. The polar decompositions are $Z = 5(0.6+0.8i)$ at $\theta = \arctan(4/3)$ and $W = \sqrt{5}(0.4472-0.8944i)$ at $\theta = \arctan(-2)$, and the doubling $u^2 = e^{2i\theta}$ was checked in both cases. The Galois action $\sigma = \bar{\cdot}$ preserves the product and the norm form on the worked elements and is conjugate-linear over $\mathbb{C}$.
+The eigencomponents of conjugation are $Z_+ = 3 \in \mathbb{R}_{\mathbb{C}}$ and $Z_- = 4i \in i\mathbb{R}_{\mathbb{C}}$, with $N(Z_+)+N(Z_-) = N(Z)$; the product $(4i)(-2i) = 8$ is real and shows that the imaginary subspace is not closed. The unit criterion and the inverse formula belong to the topology layer and are developed, with the worked instances, in the companion article *Complex Norm and Invertibility*. The matrix model carries the same data: $\rho_L(Z) = \begin{pmatrix} 3 & -4 \\ 4 & 3 \end{pmatrix}$ and $\rho_L(W) = \begin{pmatrix} 1 & 2 \\ -2 & 1 \end{pmatrix}$ multiply to $\rho_L(ZW)$, their determinants $25$ and $5$ are the norms of the elements, and $\rho_L(Z)^{\mathsf{T}} = \rho_L(\bar{Z})$ is the transpose relation. The Galois action $\sigma = \bar{\cdot}$ preserves the product and the norm on the worked elements and is conjugate-linear over $\mathbb{C}$.
 
 ## Summary of Notation
 
@@ -227,14 +193,12 @@ The eigencomponents of conjugation are $Z_+ = 3 \in \mathbb{R}_{\mathbb{C}}$ and
 | $\sigma = \bar{\cdot}$ | the nontrivial $\mathbb{R}$-automorphism, the Galois action |
 | $Z_\pm = \tfrac12(Z \pm \bar{Z})$ | the eigencomponents of conjugation |
 | $\mathbb{R}_{\mathbb{C}}, i\mathbb{R}_{\mathbb{C}}$ | the real and imaginary subspaces |
-| $N(Z) = Z\bar{Z} = a^2+b^2$ | the norm form |
-| $Z^{-1} = \bar{Z}/N(Z)$ | the inverse of a nonzero element |
-| $r = \sqrt{N(Z)}$, $u = Z/r$, $\theta = \arg Z$ | the polar data, $Z = ru = re^{i\theta}$ |
+| $N(Z) = Z\bar{Z} = a^2+b^2$ | the norm |
+| $\rho_L(Z) = aI + bJ$ | the Cayley matrix of multiplication by $Z$, the $2\times2$ matrix model |
 
 ## Further Reading
 
 - Carl Friedrich Gauss, *Theoria residuorum biquadraticorum, Commentatio secunda* (Göttingen, 1831), for the geometry of the plane and worked computational examples.
 - William Rowan Hamilton, *Lectures on Quaternions* (Hodges and Smith, Dublin, 1853), for the origin of the worked multiplication rules.
 - Israel Nathan Herstein, *Topics in Algebra*, 2nd edition (Wiley, 1975), for elementary computational practice with complex numbers and field automorphisms.
-- Tristan Needham, *Visual Complex Analysis* (Oxford University Press, 1997), for the polar decomposition and the rotation interpretation of multiplication.
-- Walter Rudin, *Real and Complex Analysis*, 3rd edition (McGraw-Hill, 1987), for the norm, the modulus and the polar form.
+- Walter Rudin, *Real and Complex Analysis*, 3rd edition (McGraw-Hill, 1987), for the norm and its multiplicativity.

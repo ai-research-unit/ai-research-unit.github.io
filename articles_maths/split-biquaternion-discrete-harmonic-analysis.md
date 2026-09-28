@@ -1,3 +1,4 @@
+
 # __Split-Biquaternion Discrete Harmonic Analysis__
 
 ## Introduction
@@ -16,7 +17,7 @@ $$
 \tilde{Q} = Q_0 e_0 + Q_1 e_1 + Q_2 e_2 + Q_3 e_3, \qquad Q_\mu = q_\mu + j q'_\mu, \quad q_\mu, q'_\mu \in \mathbb{R}.
 $$
 
-The split complex unit is $j$, with $j^2 = +1$, and it commutes with the quaternion units. The quaternion conjugate is $\bar{\tilde{Q}} = Q_0 e_0 - \mathbf{Q}$. The norm form is $N(\tilde{Q}) = \tilde{Q} \bar{\tilde{Q}}$.
+The split complex unit is $j$, with $j^2 = +1$, and it commutes with the quaternion units. The quaternion conjugate is $\bar{\tilde{Q}} = Q_0 e_0 - \mathbf{Q}$. The split-biquaternion norm is $N(\tilde{Q}) = \tilde{Q} \bar{\tilde{Q}}$.
 
 The **idempotent components** of $\tilde{Q}$ are the real quaternions
 
@@ -144,7 +145,7 @@ The invertibility of the transform depends on the properties of the kernel and o
 
 **The signal may have vanishing norm.** A sample $f[n]$ with $N(f[n]) = 0$ is a zero divisor, and it is not necessarily recoverable from the transform. The zero divisor set is the union of the two four-dimensional linear subspaces $Z_+$ and $Z_-$, described in the article on split biquaternion zero divisors.
 
-**Theorem (invertibility).** If every sample $f[n]$ has non-vanishing norm form, then the transform is invertible: the inverse formula reproduces $f[n]$ for every $n$.
+**Theorem (invertibility).** If every sample $f[n]$ has non-vanishing norm, then the transform is invertible: the inverse formula reproduces $f[n]$ for every $n$.
 
 **Proof.** Under the hypothesis, each $f[n]$ is invertible. The transform is a finite sum of products of invertible elements, and the inverse formula is verified by direct computation:
 
@@ -158,7 +159,7 @@ $$
 \sum_{u=0}^{N-1} \overline{W_N(n, u)} W_N(m, u) = \begin{cases} N e_0 & \text{if } n = m, \\ 0 & \text{if } n \neq m, \end{cases}
 $$
 
-which holds because the kernel is the ordinary complex kernel in the direction $\rho$, and the orthogonality is the standard one. So the double sum reduces to $f[n]$. $\square$
+which holds because the kernel is the ordinary complex kernel in the direction $\rho$, and the orthogonality is the standard one. So the double sum reduces to $f[n]$.
 
 **The transform is not invertible on signals containing zero-divisor samples.** If some $f[n]$ is a zero divisor, the inverse may not reproduce it. The precise condition under which the transform is invertible on a signal with zero-divisor samples is not known; it depends on the cancellations in the sum.
 
@@ -189,8 +190,6 @@ which follows from the closed form of the kernel and the parity of the cosine an
 $$
 F[N-u] = \sum_{n=0}^{N-1} W_N(n, N-u) f[n] = \sum_{n=0}^{N-1} \overline{W_N(n, u)} \overline{f[n]} = \overline{\sum_{n=0}^{N-1} W_N(n, u) f[n]} = \overline{F[u]}.
 $$
-
-$\square$
 
 The symmetry is the split biquaternion analogue of the Hermitian symmetry $F[-u] = F[u]^*$ of the ordinary Fourier transform of a real signal. It is the basis for reconstructing a real signal from half of its spectrum.
 
@@ -302,8 +301,6 @@ $$
 \mathcal{F}[f * g][u] = \sum_{m=0}^{N-1} \sum_{k=0}^{N-1} W_N(m, u) f[m] W_N(k, u) g[k] = \left(\sum_{m=0}^{N-1} W_N(m, u) f[m]\right) \left(\sum_{k=0}^{N-1} W_N(k, u) g[k]\right) = \mathcal{F}[f][u] \cdot \mathcal{F}[g][u].
 $$
 
-$\square$
-
 **Corollary (right-kernel case).** For the transform with the kernel on the right,
 
 $$
@@ -336,7 +333,7 @@ where $*$ on the right is the quaternion convolution. So the split biquaternion 
 
 A sample $f[n]$ with $N(f[n]) = 0$ is a zero divisor. Such samples have the property that they cannot necessarily be recovered from the transform.
 
-In the idempotent basis, a sample $f[n] = f_+[n] \tilde\Pi_+ + f_-[n] \tilde\Pi_-$ has vanishing norm form if and only if $f_+[n] = 0$ or $f_-[n] = 0$. So the vanishing-norm samples are exactly the samples with a vanishing idempotent component.
+In the idempotent basis, a sample $f[n] = f_+[n] \tilde\Pi_+ + f_-[n] \tilde\Pi_-$ has vanishing norm if and only if $f_+[n] = 0$ or $f_-[n] = 0$. So the vanishing-norm samples are exactly the samples with a vanishing idempotent component.
 
 ### Consequences for the Transform
 
@@ -349,7 +346,7 @@ The precise condition under which the transform is invertible on a signal with z
 
 The vanishing-norm issue is a genuinely split biquaternion feature. It does not arise in the quaternion Fourier transform, because the quaternion algebra is a division algebra. It arises in the biquaternion case as well, but the zero divisor structure is different: in the split biquaternion case, the zero divisor set is the union of two four-dimensional linear subspaces, while in the biquaternion case, it is a complex cone of complex dimension $3$ (real dimension $6$).
 
-The issue can be avoided by restricting the signals to a subspace where the norm form is nonzero, such as the quaternion subspace $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$. On the quaternion subspace, every nonzero sample is invertible, and the transform is invertible on all signals.
+The issue can be avoided by restricting the signals to a subspace where the split-biquaternion norm is nonzero, such as the quaternion subspace $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$. On the quaternion subspace, every nonzero sample is invertible, and the transform is invertible on all signals.
 
 ## The Two-Dimensional Transform
 
@@ -423,7 +420,7 @@ The discrete transform is the discrete analogue of the continuous transform of t
 | $\tilde\Pi_\pm = \tfrac{1}{2}(1 \pm j)$ | Idempotents of $\mathbb{D}$ |
 | $\tilde{Q} = \sum_{\mu=0}^{3} Q_\mu e_\mu$, $Q_\mu = q_\mu + j q'_\mu$ | General split biquaternion |
 | $\tilde{Q}_\pm = \tilde{Q} \tilde\Pi_\pm$ | Idempotent components |
-| $N(\tilde{Q}) = \tilde{Q} \bar{\tilde{Q}}$ | Norm form |
+| $N(\tilde{Q}) = \tilde{Q} \bar{\tilde{Q}}$ | Split-Biquaternion norm |
 | $\rho$ | A root of $-1$ in $\mathbb{H}$, $\rho^2 = -1$ |
 | $K_\rho(\mathbf{x})$ | Split biquaternion Fourier kernel |
 | $\hat{f}$ | Discrete split-biquaternion Fourier transform |

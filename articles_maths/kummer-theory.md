@@ -64,7 +64,7 @@ $$
 \beta^n = a_r \prod_{i=1}^{r-1} a_i^{-m_i n} \in a_r \cdot (K^\times)^n .
 $$
 
-Since $\beta^n \in (K^\times)^n$ and $\beta^n = a_r \cdot c^n$ for some $c \in K^\times$, we get $a_r = (\beta/c)^n \in (K^\times)^n$; equivalently $a_r \prod_{i} a_i^{0} \in (K^\times)^n$ with all exponents except that of $a_r$ equal to $0$ and $m_r = 1$ not divisible by $n$, contradicting the independence hypothesis. Hence $\alpha_r \notin L$ and $[L(\alpha_r):L] = n$. $\square$
+Since $\beta^n \in (K^\times)^n$ and $\beta^n = a_r \cdot c^n$ for some $c \in K^\times$, we get $a_r = (\beta/c)^n \in (K^\times)^n$; equivalently $a_r \prod_{i} a_i^{0} \in (K^\times)^n$ with all exponents except that of $a_r$ equal to $0$ and $m_r = 1$ not divisible by $n$, contradicting the independence hypothesis. Hence $\alpha_r \notin L$ and $[L(\alpha_r):L] = n$.
 
 **Theorem (Kummer, first form).** Let $\zeta \in K$ be primitive of order $n$, let $\Delta \subseteq K^\times$ be a subgroup containing $(K^\times)^n$, and let
 
@@ -74,7 +74,7 @@ $$
 
 Then $L/K$ is abelian of exponent dividing $n$, and if $\Delta/(K^\times)^n$ is finite of order $n^r$ then $[L:K] = n^r = \lvert \Delta/(K^\times)^n\rvert$.
 
-**Proof.** Choose representatives $a_1, \ldots, a_r$ of a basis of the finite group $\Delta/(K^\times)^n$; then $\Delta/(K^\times)^n$ is the direct sum of the classes of the $a_i$ and every element of $\Delta$ differs from a product $\prod a_i^{m_i}$ by an $n$-th power, so $L = K(\alpha_1, \ldots, \alpha_r)$ with $\alpha_i^n = a_i$. The independence hypothesis of the lemma holds by the definition of a direct sum in $K^\times/(K^\times)^n$, so $[L:K] = n^r$. The field $L$ is the splitting field of $\prod_i (x^n - a_i)$, hence normal over $K$ and separable since $\operatorname{char} K \nmid n$; each $\sigma \in \operatorname{Gal}(L/K)$ is determined by the tuple $(j_1(\sigma), \ldots, j_r(\sigma)) \in (\mathbb{Z}/n\mathbb{Z})^r$ with $\sigma(\alpha_i) = \zeta^{j_i(\sigma)}\alpha_i$, and the resulting map $\operatorname{Gal}(L/K) \hookrightarrow (\mathbb{Z}/n\mathbb{Z})^r$ is injective because the $\alpha_i$ generate $L$. Comparing orders, $[L:K] = \lvert\operatorname{Gal}(L/K)\rvert \leq n^r = [L:K]$, so the inclusion is an isomorphism and $\operatorname{Gal}(L/K) \cong (\mathbb{Z}/n\mathbb{Z})^r$; in particular the extension is abelian of exponent dividing $n$. $\square$
+**Proof.** Choose representatives $a_1, \ldots, a_r$ of a basis of the finite group $\Delta/(K^\times)^n$; then $\Delta/(K^\times)^n$ is the direct sum of the classes of the $a_i$ and every element of $\Delta$ differs from a product $\prod a_i^{m_i}$ by an $n$-th power, so $L = K(\alpha_1, \ldots, \alpha_r)$ with $\alpha_i^n = a_i$. The independence hypothesis of the lemma holds by the definition of a direct sum in $K^\times/(K^\times)^n$, so $[L:K] = n^r$. The field $L$ is the splitting field of $\prod_i (x^n - a_i)$, hence normal over $K$ and separable since $\operatorname{char} K \nmid n$; each $\sigma \in \operatorname{Gal}(L/K)$ is determined by the tuple $(j_1(\sigma), \ldots, j_r(\sigma)) \in (\mathbb{Z}/n\mathbb{Z})^r$ with $\sigma(\alpha_i) = \zeta^{j_i(\sigma)}\alpha_i$, and the resulting map $\operatorname{Gal}(L/K) \hookrightarrow (\mathbb{Z}/n\mathbb{Z})^r$ is injective because the $\alpha_i$ generate $L$. Comparing orders, $[L:K] = \lvert\operatorname{Gal}(L/K)\rvert \leq n^r = [L:K]$, so the inclusion is an isomorphism and $\operatorname{Gal}(L/K) \cong (\mathbb{Z}/n\mathbb{Z})^r$; in particular the extension is abelian of exponent dividing $n$.
 
 **Example.** $n = 2$ and any field $K$ of characteristic $\neq 2$: $\zeta = -1 \in K$ always, so the Kummer condition is automatic and the theory of exponent $2$ applies to every field of characteristic not $2$. The extensions are the multiquadratic ones $K(\sqrt{a_1}, \ldots, \sqrt{a_r})$, and $\operatorname{Gal}(L/K) \cong (\mathbb{Z}/2\mathbb{Z})^r$.
 
@@ -126,7 +126,7 @@ which is an isomorphism of finite abelian groups of exponent dividing $n$.
 
 **Step 4: non-degeneracy in the first variable.** Let $a \in \Delta$ and suppose $\sigma(\alpha)/\alpha = 1$ for every $\sigma$, where $\alpha^n = a$. Then $\alpha$ is fixed by $\operatorname{Gal}(L/K)$, so $\alpha \in L^{\operatorname{Gal}(L/K)} = K$ by the fundamental theorem of Galois theory applied to the Galois extension $L/K$; hence $a = \alpha^n \in (K^\times)^n$, so the class of $a$ is trivial in $\Delta/(K^\times)^n$.
 
-**Step 5: the induced map is an isomorphism.** By Steps 3 and 4 the pairing is non-degenerate, so it induces injections $\Delta/(K^\times)^n \hookrightarrow \operatorname{Hom}(\operatorname{Gal}(L/K),\mu_n)$ and $\operatorname{Gal}(L/K) \hookrightarrow \operatorname{Hom}(\Delta/(K^\times)^n, \mu_n)$, the second of which is the displayed isomorphism once the two sides have the same order. If $\Delta/(K^\times)^n$ has order $n^r$ then $\operatorname{Gal}(L/K) \cong (\mathbb{Z}/n\mathbb{Z})^r$ by the first form of the theorem, and $\operatorname{Hom}((\mathbb{Z}/n\mathbb{Z})^r, \mu_n)$ has order $n^r$, so the injection is an isomorphism. $\square$
+**Step 5: the induced map is an isomorphism.** By Steps 3 and 4 the pairing is non-degenerate, so it induces injections $\Delta/(K^\times)^n \hookrightarrow \operatorname{Hom}(\operatorname{Gal}(L/K),\mu_n)$ and $\operatorname{Gal}(L/K) \hookrightarrow \operatorname{Hom}(\Delta/(K^\times)^n, \mu_n)$, the second of which is the displayed isomorphism once the two sides have the same order. If $\Delta/(K^\times)^n$ has order $n^r$ then $\operatorname{Gal}(L/K) \cong (\mathbb{Z}/n\mathbb{Z})^r$ by the first form of the theorem, and $\operatorname{Hom}((\mathbb{Z}/n\mathbb{Z})^r, \mu_n)$ has order $n^r$, so the injection is an isomorphism.
 
 **Step 6: the two maps are inverse.** Let $L/K$ be finite abelian of exponent dividing $n$ and put $\Delta = (L^\times)^n \cap K^\times$. Then $(K^\times)^n \subseteq \Delta$ and $M = K(\Delta^{1/n})$ is a subfield of $L$, so $M = L^H$ for some subgroup $H$ of $G = \operatorname{Gal}(L/K)$. Now let $\sigma \in H$ and $a \in \Delta$; choose $\alpha \in L^\times$ with $\alpha^n = a$. Since $a \in \Delta = (L^\times)^n \cap K^\times$ and $\Delta \subseteq (M^\times)^n$ by the definition of $M$, we may choose $\alpha \in M^\times$, so $\sigma(\alpha) = \alpha$ and the Kummer pairing pairs $(a,\sigma)$ to $1$. Thus $\sigma$ pairs trivially with every element of $\Delta$; by Step 3, $\sigma$ fixes every generator of $K(\Delta^{1/n})$, so $\sigma = 1$. Hence $H = 1$ and $M = L$. Conversely, let $L = K(\Delta^{1/n})$ for some subgroup $\Delta$ with $(K^\times)^n \subseteq \Delta \subseteq K^\times$ and $\Delta/(K^\times)^n$ finite of order $n^r$. Then $\Delta \subseteq (L^\times)^n\cap K^\times = \Delta_L$, and $K(\Delta_L^{1/n}) = L$ by the first part of this step, so
 
@@ -134,7 +134,7 @@ $$
 n^r = [L:K] = \bigl[K(\Delta_L^{1/n}):K\bigr] = \lvert\Delta_L/(K^\times)^n\rvert \geq \lvert\Delta/(K^\times)^n\rvert = n^r,
 $$
 
-and the inclusion $\Delta \subseteq \Delta_L$ is therefore an equality. $\square$
+and the inclusion $\Delta \subseteq \Delta_L$ is therefore an equality.
 
 ### Consequences
 
@@ -209,7 +209,7 @@ $$
 
 in which each $M_i/M_{i-1}$ is a Kummer extension of prime exponent $\ell_i$ dividing $n$.
 
-**Proof sketch.** Since $G$ is solvable, it has a composition series with cyclic factors of prime order $\ell_i \mid n$. The corresponding tower of fixed fields consists of Galois extensions of prime degree $\ell_i$; after extending scalars from $K$ to $K'$, which contains the $\ell_i$-th roots of unity, each step of the tower is a Galois extension of prime degree $\ell_i$, and by the first form of the main theorem such an extension, being abelian of exponent $\ell_i$, is a Kummer extension $M_i = M_{i-1}(\sqrt[\ell_i]{a_i})$. $\square$
+**Proof sketch.** Since $G$ is solvable, it has a composition series with cyclic factors of prime order $\ell_i \mid n$. The corresponding tower of fixed fields consists of Galois extensions of prime degree $\ell_i$; after extending scalars from $K$ to $K'$, which contains the $\ell_i$-th roots of unity, each step of the tower is a Galois extension of prime degree $\ell_i$, and by the first form of the main theorem such an extension, being abelian of exponent $\ell_i$, is a Kummer extension $M_i = M_{i-1}(\sqrt[\ell_i]{a_i})$.
 
 **Corollary.** Every solvable extension of a field of characteristic zero is contained in a radical extension; the converse — that a radical extension has solvable Galois group — is proved by adjoining the necessary roots of unity and applying the theorem to each Kummer step, so that the two statements together give the theorem of Galois.
 

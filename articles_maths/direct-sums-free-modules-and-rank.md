@@ -45,7 +45,7 @@ The product and the sum are the categorical product and coproduct, and it is the
 
 **Proposition (sum).** For every module $N$ and every family of homomorphisms $g_i : M_i \to N$ there is a unique $g : \bigoplus_i M_i \to N$ with $g \circ \iota_i=g_i$ for all $i$.
 
-*Proof.* For the product take $f(n)=(f_i(n))$. For the sum take $g((m_i))=\sum_i g_i(m_i)$, a finite sum because $(m_i)$ is finitely supported; uniqueness follows on the summands. $\square$
+*Proof.* For the product take $f(n)=(f_i(n))$. For the sum take $g((m_i))=\sum_i g_i(m_i)$, a finite sum because $(m_i)$ is finitely supported; uniqueness follows on the summands.
 
 Neither universal property restricts the family of maps, and the finiteness in the second statement lies in the *elements* of $\bigoplus_i M_i$, not in the maps out of it. The asymmetry between the two constructions appears when $I$ is infinite, and it is an asymmetry between the elements: $\bigoplus_i M_i$ is the submodule of $\prod_i M_i$ consisting of the finitely supported families, the inclusion is injective and not surjective, and the direct sum is therefore a coproduct but not a product, while the product is a product but not a coproduct. When $I$ is finite the two objects coincide, and the two universal properties make $\bigoplus_i M_i$ both a product and a coproduct; such an object is a **biproduct**. In the finite case the injections and projections satisfy the relations $\pi_j\iota_j=\operatorname{id}$, $\pi_j\iota_k=0$ for $j\neq k$, $\sum_j \iota_j\pi_j=\operatorname{id}$, and every element of the biproduct is recovered from them by $m=\iota_1\pi_1(m)+\iota_2\pi_2(m)$.
 
@@ -61,7 +61,7 @@ $$
 N_i \cap \Bigl(\sum_{j \neq i} N_j\Bigr)=0 \qquad \text{for every } i.
 $$
 
-*Proof.* Uniqueness fails exactly when two expressions differ, and their difference is a nonzero element of one $N_i$ lying in the sum of the others, with signs absorbed. $\square$
+*Proof.* Uniqueness fails exactly when two expressions differ, and their difference is a nonzero element of one $N_i$ lying in the sum of the others, with signs absorbed.
 
 For two submodules the condition reduces to $M=N_1+N_2$ and $N_1\cap N_2=0$. The external sum and the internal sum are identified by sending $(n_i)$ to $\sum_i \iota_i(n_i)$, so no distinction is needed once the summands are submodules of a common module.
 
@@ -75,7 +75,7 @@ The module-theoretic content of a direct summand is an idempotent endomorphism.
 
 **Proposition.** $N$ is a direct summand of $M$ if and only if $N=e(M)$ for an idempotent $e \in \operatorname{End}_R(M)$, that is $e^2=e$.
 
-*Proof.* If $M=N\oplus N'$, let $e$ be the projection onto $N$ along $N'$; it is $R$-linear, $e(M)=N$ and $e^2=e$. Conversely, given $e^2=e$, put $N=e(M)$; then $\operatorname{id}-e$ is idempotent with image $\ker e$, and every $m=e(m)+(\operatorname{id}-e)(m)$ with $e(m) \in N$ and $m-e(m) \in \ker e$, so $M=N+\ker e$. If $m \in N \cap \ker e$ then $m=e(m')$ and $0=e(m)=e^2(m')=e(m')=m$, so the sum is direct. $\square$
+*Proof.* If $M=N\oplus N'$, let $e$ be the projection onto $N$ along $N'$; it is $R$-linear, $e(M)=N$ and $e^2=e$. Conversely, given $e^2=e$, put $N=e(M)$; then $\operatorname{id}-e$ is idempotent with image $\ker e$, and every $m=e(m)+(\operatorname{id}-e)(m)$ with $e(m) \in N$ and $m-e(m) \in \ker e$, so $M=N+\ker e$. If $m \in N \cap \ker e$ then $m=e(m')$ and $0=e(m)=e^2(m')=e(m')=m$, so the sum is direct.
 
 The complement of $N=e(M)$ is $\ker e$, and the correspondence is with the set of idempotents of $\operatorname{End}_R(M)$. Idempotents are thus the algebraic encoding of projections; they reappear for projective modules and, over a commutative ring, in the decomposition of $R$ itself as a product of rings. When the idempotent is taken in the ring rather than in its endomorphism ring, $e\in R$, the same computation gives $M=eM\oplus(1-e)M$ together with $R=Re\oplus R(1-e)$, the **Peirce decomposition** of the module and of the ring with respect to $e$.
 
@@ -99,7 +99,7 @@ with $r_b \in R$ and all but finitely many $r_b$ zero. The uniqueness of the coe
 
 **Theorem (universal property of a free module).** Let $B$ be a basis of the free module $L$ and let $M$ be any $R$-module. Every function $\varphi : B \to M$ extends uniquely to an $R$-linear map $f : L \to M$ with $f|_B=\varphi$.
 
-*Proof.* Existence: define $f\bigl(\sum_b r_b b\bigr)=\sum_b r_b \varphi(b)$, a finite sum and well defined because the coordinates $r_b$ are unique. Linearity is immediate. Uniqueness: any two extensions agree on a basis, and a basis generates. $\square$
+*Proof.* Existence: define $f\bigl(\sum_b r_b b\bigr)=\sum_b r_b \varphi(b)$, a finite sum and well defined because the coordinates $r_b$ are unique. Linearity is immediate. Uniqueness: any two extensions agree on a basis, and a basis generates.
 
 The universal property is the working form of freeness and is equivalent to it: if $L$ has a generating set $B$ with this extension property, applying it with $\varphi$ the inclusion $B \hookrightarrow L$ gives a splitting of the canonical map from the free module on $B$, so $B$ is a basis. It is also the reason that a linear map may be specified on a basis and nowhere else.
 
@@ -107,7 +107,7 @@ The universal property is the working form of freeness and is equivalent to it: 
 
 **Proposition.** $L$ is free with basis $B$ if and only if $L \cong \bigoplus_{b \in B} R$, the direct sum of one copy of the regular module for each basis element.
 
-*Proof.* If $B$ is a basis, the map $\bigoplus_{b \in B} R \to L$, $(r_b) \mapsto \sum_b r_b b$, is well defined because only finitely many $r_b$ are nonzero, and it is bijective by uniqueness of coordinates. Conversely a direct sum of copies of $R$ has as basis the images of the units $1$ in the summands. $\square$
+*Proof.* If $B$ is a basis, the map $\bigoplus_{b \in B} R \to L$, $(r_b) \mapsto \sum_b r_b b$, is well defined because only finitely many $r_b$ are nonzero, and it is bijective by uniqueness of coordinates. Conversely a direct sum of copies of $R$ has as basis the images of the units $1$ in the summands.
 
 So free modules are exactly the direct sums of copies of $R$, and the rank, when it is defined, is the number of summands. Write
 
@@ -121,7 +121,7 @@ for the free module on a basis indexed by $I$; in particular $R^{(n)}=R^n$ and $
 
 **Theorem.** Every $R$-module $M$ is a quotient of a free module.
 
-*Proof.* Let $B$ be a generating set of $M$, for instance $B=M$ itself. The universal property extends the inclusion $B \hookrightarrow M$ to a surjection $R^{(B)} \to M$, whose kernel is a submodule $K$. The first isomorphism theorem gives $M \cong R^{(B)}/K$. $\square$
+*Proof.* Let $B$ be a generating set of $M$, for instance $B=M$ itself. The universal property extends the inclusion $B \hookrightarrow M$ to a surjection $R^{(B)} \to M$, whose kernel is a submodule $K$. The first isomorphism theorem gives $M \cong R^{(B)}/K$.
 
 A surjection $L \twoheadrightarrow M$ with $L$ free is a **presentation** of $M$, and $K=\ker(L \to M)$ is the **relation module**. This is the input to the structure theory and to the theory of exact sequences developed: a module is controlled by the way it is a quotient of a free module. Over a field every relation module is again free and can be made trivial by a change of basis of $L$, which is Gaussian elimination; over $\mathbb{Z}$ the relation module is free but the quotient need not be.
 
@@ -137,7 +137,7 @@ For a free module with basis $B$, one wants to call $|B|$ its **rank**. This pre
 
 **Theorem.** Every commutative ring with $1 \neq 0$ has invariant basis number.
 
-*Proof.* Suppose $R^m \cong R^n$, and let $\mathfrak{m}$ be a maximal ideal, which exists by Zorn's lemma. The field $k=R/\mathfrak{m}$ is an $R$-module via $r\cdot \bar{s}=\overline{rs}$, and $k \otimes_R R^j \cong k^j$ for every $j$ because $k \otimes_R R \cong k$ and tensor products distribute over finite direct sums. Applying the functor $k \otimes_R -$ to the isomorphism $R^m \cong R^n$ gives an isomorphism $k^m \cong k^n$ of $k$-vector spaces, so $m=n$ by the field case. $\square$
+*Proof.* Suppose $R^m \cong R^n$, and let $\mathrm{M}$ be a maximal ideal, which exists by Zorn's lemma. The field $k=R/\mathrm{M}$ is an $R$-module via $r\cdot \bar{s}=\overline{rs}$, and $k \otimes_R R^j \cong k^j$ for every $j$ because $k \otimes_R R \cong k$ and tensor products distribute over finite direct sums. Applying the functor $k \otimes_R -$ to the isomorphism $R^m \cong R^n$ gives an isomorphism $k^m \cong k^n$ of $k$-vector spaces, so $m=n$ by the field case.
 
 The proof uses only that $-\otimes_R k$ is a functor, not that it is exact; this is why it applies without flatness hypotheses. Two consequences are worth naming. First, rank is additive over direct sums: if $L$ and $L'$ are free then so is $L \oplus L'$, with basis the disjoint union, and
 
@@ -165,7 +165,7 @@ Rank is the smallest number of generators of a *free* module, but it is not the 
 
 **Proposition.** If $M$ is a quotient of $R^n$ and $N$ is a quotient of $R^m$ then $M \oplus N$ is a quotient of $R^{n+m}$; and a submodule of a finitely generated module over a Noetherian ring is finitely generated.
 
-*Proof.* Compose the two surjections with the injections into the direct sum. For the second statement, the submodule is a quotient of a submodule of $R^n$; over a Noetherian ring every submodule of $R^n$ is finitely generated, by induction on $n$ and the definition of Noetherian. $\square$
+*Proof.* Compose the two surjections with the injections into the direct sum. For the second statement, the submodule is a quotient of a submodule of $R^n$; over a Noetherian ring every submodule of $R^n$ is finitely generated, by induction on $n$ and the definition of Noetherian.
 
 ## Finitely Generated Modules
 
@@ -175,7 +175,7 @@ Rank is the smallest number of generators of a *free* module, but it is not the 
 
 **Proposition.** $M$ is finitely generated if and only if there is a surjection $R^k \twoheadrightarrow M$ for some $k \ge 0$.
 
-*Proof.* Given generators, send the standard basis to them and extend by the universal property of $R^k$; given a surjection, the images of the standard basis generate. $\square$
+*Proof.* Given generators, send the standard basis to them and extend by the universal property of $R^k$; given a surjection, the images of the standard basis generate.
 
 Over a field the finitely generated modules are the finite-dimensional vector spaces, and all of them are free; over $\mathbb{Z}$ they are the finitely generated abelian groups, and $\mathbb{Z}/n\mathbb{Z}$ is finitely generated but not free. Finite generation is preserved by quotients, by finite direct sums, and by extension of scalars, and it is *not* preserved by passing to submodules without a Noetherian hypothesis. This is one of the few places where a commutative ring behaves visibly worse than a field.
 
@@ -191,9 +191,9 @@ $$
 (1-a_k)m_k=\sum_{i<k} a_i m_i.
 $$
 
-Since $a_k \in J(R)$, the element $1-a_k$ is a unit, so $m_k$ lies in the span of $m_1,\dots,m_{k-1}$, contradicting minimality. The second statement applies the first to $M/N$. $\square$
+Since $a_k \in J(R)$, the element $1-a_k$ is a unit, so $m_k$ lies in the span of $m_1,\dots,m_{k-1}$, contradicting minimality. The second statement applies the first to $M/N$.
 
-For a local ring $(R,\mathfrak{m})$ one takes $I=\mathfrak{m}$, and Nakayama then says that a finitely generated module over a local ring has a minimal generating set of exactly $\dim_{k}(M/\mathfrak{m}M)$ elements, where $k=R/\mathfrak{m}$; this number is the **minimal number of generators**. Nakayama is used in the structure theory and in the theory of projective modules.
+For a local ring $(R,\mathrm{M})$ one takes $I=\mathrm{M}$, and Nakayama then says that a finitely generated module over a local ring has a minimal generating set of exactly $\dim_{k}(M/\mathrm{M}M)$ elements, where $k=R/\mathrm{M}$; this number is the **minimal number of generators**. Nakayama is used in the structure theory and in the theory of projective modules.
 
 ### Noetherian Rings
 
@@ -201,7 +201,7 @@ For a local ring $(R,\mathfrak{m})$ one takes $I=\mathfrak{m}$, and Nakayama the
 
 **Theorem.** The following are equivalent for a commutative ring $R$: (i) $R$ is Noetherian; (ii) every submodule of a finitely generated $R$-module is finitely generated; (iii) every submodule of $R^n$ is finitely generated for every $n$.
 
-*Proof.* (ii) $\Rightarrow$ (iii) is immediate with $M=R^n$; (iii) $\Rightarrow$ (i) is the case $n=1$; (i) $\Rightarrow$ (ii) is proved by induction on the number of generators, using that an extension of two finitely generated modules is finitely generated and that $R$ Noetherian makes every ideal, hence every submodule of $R$, finitely generated. $\square$
+*Proof.* (ii) $\Rightarrow$ (iii) is immediate with $M=R^n$; (iii) $\Rightarrow$ (i) is the case $n=1$; (i) $\Rightarrow$ (ii) is proved by induction on the number of generators, using that an extension of two finitely generated modules is finitely generated and that $R$ Noetherian makes every ideal, hence every submodule of $R$, finitely generated.
 
 Principal ideal domains are Noetherian, and so is every finitely generated algebra over a field; both facts are used later. What Noetherianity buys here is exactly the statement that a relation module is finitely generated, which is what makes a finite presentation available and what makes the structure theorem for finitely generated modules over a PID provable. In a non-Noetherian ring a finitely generated module can have submodules that are not finitely generated, and the structure theory has no analogue.
 

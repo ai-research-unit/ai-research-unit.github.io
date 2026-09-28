@@ -2,7 +2,7 @@
 
 ## Introduction
 
-A **biquaternion rotor** is a biquaternion $R$ of unit norm form, $N(R) = R\bar{R} = e_0$, which acts on the algebra by the **rotor conjugation**
+A **biquaternion rotor** is a biquaternion $R$ of unit norm, $N(R) = R\bar{R} = e_0$, which acts on the algebra by the **rotor conjugation**
 
 $$
 \tilde{Q} \;\longmapsto\; R\,\tilde{Q}\,R^\dagger ,
@@ -38,7 +38,7 @@ $$
 \rho(R)(\tilde{Q}) \;=\; R\,\tilde{Q}\,R^\dagger , \qquad N(R) = e_0 .
 $$
 
-This is a **group action**: $\rho(R_1)\rho(R_2) = \rho(R_1 R_2)$, because $R_2^\dagger R_1^\dagger = (R_1 R_2)^\dagger$. It preserves $\mathbb{M}_-$ and the norm form $N(\tilde{Q}) = \tilde{Q}\bar{X}$.
+This is a **group action**: $\rho(R_1)\rho(R_2) = \rho(R_1 R_2)$, because $R_2^\dagger R_1^\dagger = (R_1 R_2)^\dagger$. It preserves $\mathbb{M}_-$ and the biquaternion norm $N(\tilde{Q}) = \tilde{Q}\bar{X}$.
 
 **The action is an inner automorphism only in the unitary sector.** If $R$ is unitary in the matrix sense, $R R^\dagger = e_0$, then $R^\dagger = R^{-1}$ and $\rho(R) = \mathrm{Ad}_R$ is conjugation, an algebra automorphism. A boost rotor, however, is **Hermitian**, $\Lambda^\dagger = \Lambda$, with $\Lambda^2 = \cosh\psi + i\sinh\psi\,\hat{\mathbf{u}} \neq e_0$, so $\rho(\Lambda)(XY) = \Lambda XY\Lambda$ while $\rho(\Lambda)(\tilde{Q})\rho(\Lambda)(Y) = \Lambda \tilde{Q} \Lambda^2 Y \Lambda$; the two differ whenever $\Lambda^2 \neq e_0$. Verified numerically: the automorphism defect $|\rho(\Lambda)(XY) - \rho(\Lambda)(\tilde{Q})\rho(\Lambda)(Y)|$ is $0.62$ for a boost of rapidity $0.8$, against $7.9\times10^{-17}$ for a spatial rotation rotor. So the rotor is a group action on the algebra in every case, but it is an action by **algebra automorphisms** only in the unitary subgroup, which for unit-norm biquaternions is exactly the rotation group $SU(2)$.
 
@@ -48,10 +48,10 @@ $$
 \xi_G(\tilde{Q}) \;=\; \left.\frac{d}{dt}\right|_{0} R(t)\,\tilde{Q}\,R(t)^\dagger \;=\; G\,\tilde{Q} + \tilde{Q}\,G^\dagger .
 $$
 
-The normalisation $N(R(t)) = e_0$ for all $t$ is equivalent to the generator being **traceless** (vanishing scalar part): a generator $G = \alpha\,e_0 + \dots$ gives $N(\exp(tG)) = e^{2\alpha t} e_0 \neq e_0$ unless $\alpha = 0$. Verified numerically: for random traceless generators the residual $|N(\exp(tG)) - e_0|$ is at the $10^{-16}$ level over random $t$, while for $G = 0.4\,e_0$ and $t = 0.7$ the norm form is $e^{0.56} = 1.7506725$, matching $e^{2\alpha t}$ exactly. The traceless part of $\mathbb{B}$ is the Lie algebra $\mathfrak{sl}(2,\mathbb{C})$ of the rotor group, six real dimensional, and it splits as
+The normalisation $N(R(t)) = e_0$ for all $t$ is equivalent to the generator being **traceless** (vanishing scalar part): a generator $G = \alpha\,e_0 + \dots$ gives $N(\exp(tG)) = e^{2\alpha t} e_0 \neq e_0$ unless $\alpha = 0$. Verified numerically: for random traceless generators the residual $|N(\exp(tG)) - e_0|$ is at the $10^{-16}$ level over random $t$, while for $G = 0.4\,e_0$ and $t = 0.7$ the biquaternion norm is $e^{0.56} = 1.7506725$, matching $e^{2\alpha t}$ exactly. The traceless part of $\mathbb{B}$ is the Lie algebra $\mathrm{SL}(2,\mathbb{C})$ of the rotor group, six real dimensional, and it splits as
 
 $$
-\mathfrak{sl}(2,\mathbb{C}) \;=\; \big(\mathbb{M}_- \cap \mathfrak{sl}(2,\mathbb{C})\big) \;\oplus\; \big(\mathbb{M}_+ \cap \mathfrak{sl}(2,\mathbb{C})\big),
+\mathrm{SL}(2,\mathbb{C}) \;=\; \big(\mathbb{M}_- \cap \mathrm{SL}(2,\mathbb{C})\big) \;\oplus\; \big(\mathbb{M}_+ \cap \mathrm{SL}(2,\mathbb{C})\big),
 $$
 
 the first summand containing the rotations (the traceless real pure quaternions), the second the boosts (the traceless imaginary pure quaternions). In the language of the companion article on quantum mechanics, the Lie algebra of the unitary group is $\mathbb{M}_-$; the traceless part of $\mathbb{M}_-$ gives the compact rotations, the traceless part of $\mathbb{M}_+$ the non-compact boosts. The scalar generator $i\alpha e_0$ lies in $\mathbb{M}_-$ but is not traceless: it generates the unitary phase $e^{i\alpha t}e_0$, which has $N = e^{2i\alpha t}e_0 \neq e_0$ and is therefore unitary but not a unit-norm rotor. The rotor group is the traceless part, not all of $\mathbb{M}_-$.
@@ -94,7 +94,7 @@ Both constructions now present the same **shape**: a generator that is a derivat
 
 | | Rotor | Hamiltonian flow |
 |---|---|---|
-| Generating object | $G \in \mathfrak{sl}(2,\mathbb{C})$ | $H \in C^\infty(P)$ |
+| Generating object | $G \in \mathrm{SL}(2,\mathbb{C})$ | $H \in C^\infty(P)$ |
 | Generator (derivation) | $\xi_G = [G,\cdot]$ on $\mathbb{B}$ (unitary sector) | $D_H = \{\cdot, H\}$ on $C^\infty(P)$ |
 | Exponential | $R = \exp(tG)$ | flow $\phi^H_t$ |
 | Finite transformation | $\tilde{Q} \mapsto R \tilde{Q} R^\dagger$ | $x \mapsto \phi^H_t(x)$ |
@@ -121,7 +121,7 @@ $$
 which is precession of $\mathbf{S}$ about $\hat{\mathbf{n}}$ at angular velocity $\omega$. On the other side, the rotor
 
 $$
-R(t) \;=\; \exp(tG), \qquad G \;=\; \frac{\omega}{2}\,\hat{\mathbf{n}} \;\in\; \mathfrak{sl}(2,\mathbb{C}),
+R(t) \;=\; \exp(tG), \qquad G \;=\; \frac{\omega}{2}\,\hat{\mathbf{n}} \;\in\; \mathrm{SL}(2,\mathbb{C}),
 $$
 
 has $N(R(t)) = e_0$ (the generator is traceless), and acts on $\mathbf{S}$ by
@@ -152,19 +152,19 @@ $$
 
 **Verification.** The generator identity $[G,\mathbf{S}] = \{\mathbf{S}, H\}$ was checked on three axes — $\hat{\mathbf{n}} = e_3$, $\hat{\mathbf{n}} = e_2$, and $\hat{\mathbf{n}} = (e_1+e_2+e_3)/\sqrt3$ — with worst residual $2.2\times10^{-16}$. The flow identity $\rho(e^{tG})(\mathbf{S}) = \phi^{H_G}_t(\mathbf{S})$ was checked by integrating $d\mathbf{S}/dt = \omega\,\hat{\mathbf{n}}\times\mathbf{S}$ and comparing with the rotor orbit, on the same three axes and out to $t = 2$, with worst residual $7.9\times10^{-15}$. The rotor normalisation $N(R(t)) = e_0$ was checked simultaneously. Two independent Hamiltonians — $H_1 = \omega_3 S_3$ and $H_2 = \omega_1 S_1$ (together with the oblique combination) — were used; neither is the case that suggested the correspondence.
 
-So: **on the coadjoint orbit, the rotor group action and the Hamiltonian flow of the corresponding linear Hamiltonian are the same one-parameter group.** The map $G \mapsto H_G$ is a linear isomorphism from the compact Lie algebra $\mathfrak{su}(2)$ (the traceless real pure quaternions) onto the space of linear functions $\mathrm{span}\{S_1, S_2, S_3\}$ on the orbit, and it intertwines the exponential map of the rotor group with the Hamiltonian flow. This is the exact sense of the similitude.
+So: **on the coadjoint orbit, the rotor group action and the Hamiltonian flow of the corresponding linear Hamiltonian are the same one-parameter group.** The map $G \mapsto H_G$ is a linear isomorphism from the compact Lie algebra $\mathrm{SU}(2)$ (the traceless real pure quaternions) onto the space of linear functions $\mathrm{span}\{S_1, S_2, S_3\}$ on the orbit, and it intertwines the exponential map of the rotor group with the Hamiltonian flow. This is the exact sense of the similitude.
 
 Read in the other direction, this is the free rotor's geodesic flow seen on the orbit. The one-parameter subgroups $\tilde R(t)=\tilde R(0)\exp(+\tfrac12\tilde\omega_bt)$ that the companion article *The Action Principle and the Classical Limit as Stationary Phase in Biquaternionic Form* obtains by extremising the rotor action are the integral curves of $H_G$, which is **linear** in the orbit coordinate $\mathbf S$. The generator is not the Legendre transform of the kinetic energy: that is the quadratic Casimir $\tfrac12\mathbf S\cdot\mathbf S$, which has vanishing bracket with every $S_i$ and therefore generates no flow at all — it is a constant of the motion, not a generator. That article's free particle is the other extreme, an abelian carrier whose Hamiltonian is quadratic in the momentum, $H=N(\tilde p)/2m$. The geodesic flow is Hamiltonian at both ends; what differs between the ends is the carrier.
 
 ## The Rotor Normalisation and Its Counterpart
 
-The rotor is required to have unit **norm form**, $N(R) = R\bar{R} = e_0$, and this is what makes the conjugation preserve $N(\tilde{Q}) = \tilde{Q}\bar{X}$ and the subspace $\mathbb{M}_-$; it is also what selects the traceless generators, as shown above. It is important to keep this condition distinct from **unitarity**, $R R^\dagger = e_0$, which is a different equation. The two coincide for real quaternions (rotations) but not in general: a boost rotor is unit-norm-form and Hermitian, hence not unitary; while the evolution operator of quantum mechanics, $\tilde{U}(t) = \exp(-i\tilde{H}t/\hbar)$ with a Hamiltonian $\tilde{H} = h_0 e_0 + i\mathbf{h}$ that has a trace part, is unitary but has
+The rotor is required to have unit **biquaternion norm**, $N(R) = R\bar{R} = e_0$, and this is what makes the conjugation preserve $N(\tilde{Q}) = \tilde{Q}\bar{X}$ and the subspace $\mathbb{M}_-$; it is also what selects the traceless generators, as shown above. It is important to keep this condition distinct from **unitarity**, $R R^\dagger = e_0$, which is a different equation. The two coincide for real quaternions (rotations) but not in general: a boost rotor is unit-norm and Hermitian, hence not unitary; while the evolution operator of quantum mechanics, $\tilde{U}(t) = \exp(-i\tilde{H}t/\hbar)$ with a Hamiltonian $\tilde{H} = h_0 e_0 + i\mathbf{h}$ that has a trace part, is unitary but has
 
 $$
 N\big(\tilde{U}(t)\big) = \tilde{U}(t)\,\bar{\tilde{U}}(t) = e^{-2ih_0 t/\hbar} e_0 \neq e_0 .
 $$
 
-So "unit modulus" is a constraint on the **norm form**, and it is the constraint that defines the rotor group; the companion literature is careful to distinguish it from matrix unitarity, and the same care is needed here.
+So "unit modulus" is a constraint on the **biquaternion norm**, and it is the constraint that defines the rotor group; the companion literature is careful to distinguish it from matrix unitarity, and the same care is needed here.
 
 On the **flow side there is no counterpart to this constraint**. Every function $H$ generates a canonical flow; there is no equation that $H$ must satisfy, and no equation that the flow must satisfy — preservation of the Poisson structure is automatic. The analogue of "the generator is traceless" would be "the Hamiltonian preserves the symplectic form", which every Hamiltonian does. So the normalisation that carves the rotor group out of the algebra has no analogue carving anything out of the Hamiltonians: the rotor group is a **constrained** object, the flow group is not. This asymmetry is one reason the resemblance is not an isomorphism.
 
@@ -208,9 +208,9 @@ $$
 \Lambda \;=\; \exp\!\left(+\frac{\psi}{2}\,i\hat{\mathbf{u}}\right) \;=\; \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\,\hat{\mathbf{u}} ,
 $$
 
-which satisfies $N(\Lambda) = e_0$ and is Hermitian, $\Lambda^\dagger = \Lambda$. Acting on the laboratory four-velocity $\tilde{U}_{\mathrm{lab}} = \gamma(ic\,e_0 + \mathbf{v})$ with $\hat{\mathbf{u}} = \hat{\mathbf{v}}$, it gives the rest-frame four-velocity, $\Lambda\,\tilde{U}_{\mathrm{lab}}\,\Lambda^\dagger = ic\,e_0$; verified at $v/c = 0.3$ and $v/c = 0.6$ (the transformed time component is $3.000i = ic$ with $c = 3$, and the spatial part vanishes at the $10^{-16}$ level). The rotor conjugation by a boost also preserves $\mathbb{M}_-$ and the norm form, as it must.
+which satisfies $N(\Lambda) = e_0$ and is Hermitian, $\Lambda^\dagger = \Lambda$. Acting on the laboratory four-velocity $\tilde{U}_{\mathrm{lab}} = \gamma(ic\,e_0 + \mathbf{v})$ with $\hat{\mathbf{u}} = \hat{\mathbf{v}}$, it gives the rest-frame four-velocity, $\Lambda\,\tilde{U}_{\mathrm{lab}}\,\Lambda^\dagger = ic\,e_0$; verified at $v/c = 0.3$ and $v/c = 0.6$ (the transformed time component is $3.000i = ic$ with $c = 3$, and the spatial part vanishes at the $10^{-16}$ level). The rotor conjugation by a boost also preserves $\mathbb{M}_-$ and the biquaternion norm, as it must.
 
-The generator of this rotor is $G = \tfrac{1}{2} i\hat{\mathbf{u}}$ (so that $\Lambda = \exp(\psi G)$), which lies in the **traceless part of $\mathbb{M}_+$**, not in $\mathbb{M}_-$. Its action on the algebra is the anticommutator $\xi_G(\tilde{Q}) = GX + XG$, which, as computed above, is **not a derivation** of $\mathbb{B}$: the Leibniz defect is $0.51$ on a representative case, and the finite map $\rho(\Lambda)$ is not an algebra automorphism (defect $0.62$). So in the boost sector the rotor is still a group action on the algebra and still preserves the norm form, but it is an action by linear maps that are **not algebra automorphisms**, generated by a linear map that is **not a derivation**.
+The generator of this rotor is $G = \tfrac{1}{2} i\hat{\mathbf{u}}$ (so that $\Lambda = \exp(\psi G)$), which lies in the **traceless part of $\mathbb{M}_+$**, not in $\mathbb{M}_-$. Its action on the algebra is the anticommutator $\xi_G(\tilde{Q}) = GX + XG$, which, as computed above, is **not a derivation** of $\mathbb{B}$: the Leibniz defect is $0.51$ on a representative case, and the finite map $\rho(\Lambda)$ is not an algebra automorphism (defect $0.62$). So in the boost sector the rotor is still a group action on the algebra and still preserves the biquaternion norm, but it is an action by linear maps that are **not algebra automorphisms**, generated by a linear map that is **not a derivation**.
 
 The generator-level correspondence with Hamiltonian flow is **lost** in the boost sector, and for a sharper reason than a change of character: the infinitesimal boost is not a vector field on the spin orbit at all. For $G = \tfrac12 i\hat{\mathbf{u}}$ and $\mathbf{S}$ a point of the orbit,
 
@@ -230,7 +230,7 @@ $$
 (q, p) \;\longmapsto\; \left(q + \frac{p}{m}t,\; p\right),
 $$
 
-which translates by an amount proportional to the momentum. Represent a material four-vector as $\tilde{Q} = ic\,e_0 + q\,e_1$, with norm form $N(\tilde{Q}) = -c^2 + q^2$. The shear changes $q$, hence changes $N$: with $c = 3$, $q = 1$, $p/m = 0.7$, the norm form moves from $-8.0000$ at $t = 0$ to $-7.1775$ at $t = 0.5$ and $-6.1100$ at $t = 1.0$. A rotor conjugation preserves the norm form, so this flow is **not** any rotor conjugation — not a rotor flow, and not even a norm-preserving map.
+which translates by an amount proportional to the momentum. Represent a material four-vector as $\tilde{Q} = ic\,e_0 + q\,e_1$, with biquaternion norm $N(\tilde{Q}) = -c^2 + q^2$. The shear changes $q$, hence changes $N$: with $c = 3$, $q = 1$, $p/m = 0.7$, the biquaternion norm moves from $-8.0000$ at $t = 0$ to $-7.1775$ at $t = 0.5$ and $-6.1100$ at $t = 1.0$. A rotor conjugation preserves the biquaternion norm, so this flow is **not** any rotor conjugation — not a rotor flow, and not even a norm-preserving map.
 
 The obstruction is the one identified in the companion article on the Poincaré group: a rotor conjugation is linear in $\tilde{Q}$ and fixes the origin, $\Lambda\,0\,\Lambda^\dagger = 0$, while a translation is affine and moves the origin. No unit-norm biquaternion generates a shift, and the dimension count settles it as well: the restricted Poincaré group has ten real dimensions and the rotor group six. Correspondingly, the generator of a translation, $\partial_\mu$, is a derivation of the algebra of functions but is **not an inner derivation** of $\mathbb{B}$ — the same failure as in the non-linear example, in a sharper form: there the generator was the inner derivation of a point-dependent element of the algebra, here it is not the inner derivation of any element at all. The free-particle Hamiltonian flow is thus a canonical flow with no rotor behind it: the two constructions, which coincide on the compact orbit for linear Hamiltonians, part company already at the level of the simplest free system.
 
@@ -246,8 +246,8 @@ The negative statement is equally definite, and it is what the word similitude m
 2. **Different sizes.** The rotor group is finite dimensional (six real dimensions); the Hamiltonian flows form an infinite-dimensional group. What the orbit realizes is the **rotation** subgroup $SU(2)$ (three real dimensions), and the agreement is an inclusion of that subgroup in the infinite-dimensional group, not an identification.
 3. **Only linear Hamiltonians.** A non-linear Hamiltonian on the same orbit — $H = \lambda S_3^2$ is the verified example — generates a canonical flow whose generator is a field-dependent inner derivation, so it is not the flow of any rotor.
 4. **The derivation characterisation is sector-dependent.** The rotor generator is an inner derivation of the algebra only in the unitary sector; in the boost sector it is an anticommutator, not a derivation, and the rotor is a group action but not by algebra automorphisms.
-5. **The normalisation has no counterpart.** Unit norm form is a constraint selecting the rotor group; every Hamiltonian generates a canonical flow, with no analogous constraint.
-6. **Free motion is already outside.** The free-particle flow is a shear that does not preserve the norm form; translations are not rotors, and their generators are not inner derivations.
+5. **The normalisation has no counterpart.** Unit norm is a constraint selecting the rotor group; every Hamiltonian generates a canonical flow, with no analogous constraint.
+6. **Free motion is already outside.** The free-particle flow is a shear that does not preserve the biquaternion norm; translations are not rotors, and their generators are not inner derivations.
 
 So the resemblance is real, exact on a definite island, and not an isomorphism. It is a similitude in the strict sense: a likeness that repays being stated, and that must be stated together with its boundary.
 
@@ -255,7 +255,7 @@ So the resemblance is real, exact on a definite island, and not an isomorphism. 
 
 A biquaternion rotor $\rho(R)(\tilde{Q}) = R \tilde{Q} R^\dagger$, with $N(R) = e_0$, and a Hamiltonian flow $x' = \{x, H\}$ share a shape: each is the exponential of a derivation, the inner derivation $\mathrm{ad}_G = [G,\cdot]$ for the rotor (in its unitary sector), the Poisson derivation $\{\cdot,H\}$ for the flow. On the coadjoint orbit, and for the linear Hamiltonians $H_G = 2G\cdot\mathbf{S}$, the two are the **same one-parameter group**: the generator identity $[G,\mathbf{S}] = \{\mathbf{S}, H_G\}$ was verified to $2\times10^{-16}$ on three independent axes, and the flow identity $\rho(e^{tG}) = \phi^{H_G}_t$ to $8\times10^{-15}$ out to $t = 2$, with the rotor normalisation $N(R) = e_0$ respected throughout. The generator correspondence was checked on two independent Hamiltonians, $\omega_3 S_3$ and $\omega_1 S_1$.
 
-The resemblance is not an isomorphism, and each of its failures was verified. The rotor group is finite dimensional and acts on a finite-dimensional algebra; the Hamiltonian flows form an infinite-dimensional group acting on functions. A non-linear Hamiltonian such as $\lambda S_3^2$ has a field-dependent generator $G(\mathbf{S}) = \lambda S_3\hat{\mathbf{e}}_3$ and is not the flow of any rotor; its angular velocity depends on latitude. In the boost sector the rotor generator is an anticommutator, not a derivation (Leibniz defect $0.51$), and the boost rotor is not an algebra automorphism (defect $0.62$), though it is unit-norm-form, Hermitian, and carries the laboratory frame to the moving frame in the positive-rapidity convention. A free-particle flow is a shear that does not preserve the norm form and is therefore not a rotor conjugation; translations are affine, and their generators are not inner derivations.
+The resemblance is not an isomorphism, and each of its failures was verified. The rotor group is finite dimensional and acts on a finite-dimensional algebra; the Hamiltonian flows form an infinite-dimensional group acting on functions. A non-linear Hamiltonian such as $\lambda S_3^2$ has a field-dependent generator $G(\mathbf{S}) = \lambda S_3\hat{\mathbf{e}}_3$ and is not the flow of any rotor; its angular velocity depends on latitude. In the boost sector the rotor generator is an anticommutator, not a derivation (Leibniz defect $0.51$), and the boost rotor is not an algebra automorphism (defect $0.62$), though it is unit-norm, Hermitian, and carries the laboratory frame to the moving frame in the positive-rapidity convention. A free-particle flow is a shear that does not preserve the biquaternion norm and is therefore not a rotor conjugation; translations are affine, and their generators are not inner derivations.
 
 The similitude is exact on the coadjoint orbit for the linear Hamiltonians, and it fails off that island. Stated that way — with the island named and the boundary drawn — it is a genuine structural statement about the biquaternion rotor and the Hamiltonian flow, and it is not an identity. On the island the flow admits a second reading: those one-parameter subgroups are the geodesics of the free rotor action, so the rotor's geodesic flow is the Hamiltonian flow of $H_G$ as well — the group case of the statement that a geodesic flow is a Hamiltonian flow.
 
@@ -268,8 +268,8 @@ The similitude is exact on the coadjoint orbit for the linear Hamiltonians, and 
 | $i$ | Scalar imaginary, $i^2 = -1$ |
 | $\mathbb{M}_-$, $\mathbb{M}_+$ | Anti-Hermitian (material) and Hermitian (informational) subspaces |
 | $\mathbb{H}_{\mathbb{B}}$, $\mathbb{C}_{\mathbb{B}}$ | Real quaternion subspace; center (complex scalars) |
-| $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$ | Norm form |
-| $R$, $N(R) = e_0$ | Rotor (unit-norm-form biquaternion) |
+| $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$ | Biquaternion norm |
+| $R$, $N(R) = e_0$ | Rotor (unit-norm biquaternion) |
 | $R^\dagger = \bar{R}^{\,*}$, $R \tilde{Q} R^\dagger$ | Hermitian conjugate; rotor conjugation (the title map $R\,x\,\tilde{R}$) |
 | $\rho(R)$ | Rotor action $\tilde{Q} \mapsto R \tilde{Q} R^\dagger$ |
 | $G$, $R = \exp(tG)$ | Generator, one-parameter rotor |
@@ -286,12 +286,12 @@ The similitude is exact on the coadjoint orbit for the linear Hamiltonians, and 
 ## Further Reading
 
 - *Introduction to the Biquaternion Universe*, for the algebra, the two sectors, and the rotor group $SL(2,\mathbb{C})$.
-- *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*, for the four-vectors, the norm form, and the rotor conjugation on $\mathbb{M}_-$.
+- *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*, for the four-vectors, the biquaternion norm, and the rotor conjugation on $\mathbb{M}_-$.
 - *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*, for the Hermitian subspace and the conjugation action of its elements.
 - *Relativistic Mechanics in Biquaternionic Form*, for the four-velocity, four-momentum, and the action principle behind the free-particle Hamiltonian.
 - *The Lorentz Transformation as a Biquaternionic Rotation*, for the boost rotor, the unit-norm condition, and the relation $N(R) = e_0$.
 - *The Poincaré Group and the Biquaternion Frame*, for the statement that translations are not rotations and that their generators are derivations, not inner derivations, of $\mathbb{B}$.
-- *Quantum Mechanics in Biquaternionic Form*, for the evolution operator $U(t) = \exp(-iHt/\hbar)$, the Lie algebra $\mathbb{M}_-$, and the distinction between unitarity and the norm form.
+- *Quantum Mechanics in Biquaternionic Form*, for the evolution operator $U(t) = \exp(-iHt/\hbar)$, the Lie algebra $\mathbb{M}_-$, and the distinction between unitarity and the biquaternion norm.
 - *Angular Momentum and Spin in Biquaternionic Form*, for the rotation generators $g_k = -\tfrac12 e_k$ and the half-angle exponential that produces the factor $2$ of the double cover.
 - *Exercise: Spin Precession in a Magnetic Field*, for the Hamiltonian of a spin in a field and the precession it generates.
 - *The Harmonic Oscillator in Biquaternionic Form*, for the phase plane, the squeezing-as-boost correspondence, and the caution that identifying the phase plane with a plane of $\mathbb{M}_-$ is an additional step.

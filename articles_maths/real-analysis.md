@@ -105,7 +105,7 @@ A sequence $(a_n)$ is **monotone increasing** if $a_{n+1} \geq a_n$ for all $n$.
 
 **Theorem (Monotone Convergence).** Every bounded monotone sequence converges.
 
-**Proof.** Suppose $(a_n)$ is monotone increasing and bounded above. Let $L = \sup \{a_n\}$. For $\epsilon > 0$, $L - \epsilon$ is not an upper bound, so there exists $N$ with $a_N > L - \epsilon$. By monotonicity, $n \geq N$ implies $L - \epsilon < a_n \leq L$. Hence $a_n \to L$. $\square$
+**Proof.** Suppose $(a_n)$ is monotone increasing and bounded above. Let $L = \sup \{a_n\}$. For $\epsilon > 0$, $L - \epsilon$ is not an upper bound, so there exists $N$ with $a_N > L - \epsilon$. By monotonicity, $n \geq N$ implies $L - \epsilon < a_n \leq L$. Hence $a_n \to L$.
 
 ### Subsequences and Limit Points
 
@@ -205,7 +205,7 @@ $$
 S = \{x \in [a, b] : f(x) \leq y\}.
 $$
 
-$S$ is non-empty ($a \in S$) and bounded above (by $b$), so $c = \sup S$ exists. By continuity, $f(c) \leq y$. If $f(c) < y$, then for $x$ slightly greater than $c$, $f(x) < y$, contradicting the definition of $c$. Hence $f(c) = y$. $\square$
+$S$ is non-empty ($a \in S$) and bounded above (by $b$), so $c = \sup S$ exists. By continuity, $f(c) \leq y$. If $f(c) < y$, then for $x$ slightly greater than $c$, $f(x) < y$, contradicting the definition of $c$. Hence $f(c) = y$.
 
 **Corollary.** If $f$ is continuous on $[a, b]$ and $f(a) f(b) < 0$, then $f$ has a root in $(a, b)$.
 
@@ -213,7 +213,7 @@ $S$ is non-empty ($a \in S$) and bounded above (by $b$), so $c = \sup S$ exists.
 
 **Theorem (EVT).** If $f : [a, b] \to \mathbb{R}$ is continuous, then $f$ is bounded and attains its maximum and minimum.
 
-**Proof.** $[a, b]$ is compact. Continuous images of compact sets are compact. A compact subset of $\mathbb{R}$ is closed and bounded, hence contains its supremum and infimum. $\square$
+**Proof.** $[a, b]$ is compact. Continuous images of compact sets are compact. A compact subset of $\mathbb{R}$ is closed and bounded, hence contains its supremum and infimum.
 
 ### Uniform Continuity
 
@@ -263,7 +263,7 @@ $$
 
 **Theorem (Rolle).** If $f$ is continuous on $[a, b]$, differentiable on $(a, b)$, and $f(a) = f(b)$, then there exists $c \in (a, b)$ with $f'(c) = 0$.
 
-**Proof.** If $f$ is constant, any $c$ works. Otherwise, $f$ attains a maximum or minimum in $(a, b)$ by the EVT, and at an interior extremum the derivative vanishes. $\square$
+**Proof.** If $f$ is constant, any $c$ works. Otherwise, $f$ attains a maximum or minimum in $(a, b)$ by the EVT, and at an interior extremum the derivative vanishes.
 
 **Theorem (Mean Value Theorem).** If $f$ is continuous on $[a, b]$ and differentiable on $(a, b)$, then there exists $c \in (a, b)$ with
 
@@ -271,7 +271,7 @@ $$
 f'(c) = \frac{f(b) - f(a)}{b - a}.
 $$
 
-**Proof.** Apply Rolle to $g(x) = f(x) - \frac{f(b) - f(a)}{b - a}(x - a)$. $\square$
+**Proof.** Apply Rolle to $g(x) = f(x) - \frac{f(b) - f(a)}{b - a}(x - a)$.
 
 **Corollary.** If $f' = 0$ on an interval, $f$ is constant there.
 

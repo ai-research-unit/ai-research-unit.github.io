@@ -2,7 +2,7 @@
 
 ## Introduction
 
-*Instantons and Solitons in Biquaternionic Form* exhibited the BPST instanton as an explicit solution of the self-duality equation inside the compact factor $\mathfrak{su}(2)=\mathrm{span}_{\mathbb R}\{e_1,e_2,e_3\}\subset\mathbb M_-$, fixed its charge and action, and recorded its moduli. *The Index Theorem and the Zero-Mode Count in Biquaternionic Form* counted the fermion zero modes that the instanton supports. Neither article says where the instanton's **data** comes from, or why a first-order self-duality equation should have any solutions at all beyond the one written down by hand. This article supplies that missing layer: the Atiyah–Drinfeld–Hitchin–Manin (ADHM) construction, which parametrises *all* self-dual connections on the Euclidean slice by a finite set of matrices satisfying two algebraic equations.
+*Instantons and Solitons in Biquaternionic Form* exhibited the BPST instanton as an explicit solution of the self-duality equation inside the compact factor $\mathrm{SU}(2)=\mathrm{span}_{\mathbb R}\{e_1,e_2,e_3\}\subset\mathbb M_-$, fixed its charge and action, and recorded its moduli. *The Index Theorem and the Zero-Mode Count in Biquaternionic Form* counted the fermion zero modes that the instanton supports. Neither article says where the instanton's **data** comes from, or why a first-order self-duality equation should have any solutions at all beyond the one written down by hand. This article supplies that missing layer: the Atiyah–Drinfeld–Hitchin–Manin (ADHM) construction, which parametrises *all* self-dual connections on the Euclidean slice by a finite set of matrices satisfying two algebraic equations.
 
 The ADHM construction is unusual among the results of gauge theory in that its natural language is already the language of the framework. The self-duality equation on $\mathbb R^4$ is a *quaternionic* equation: $\mathbb R^4$ is identified with the real-quaternion subspace $\mathbb H_{\mathbb B}$, the four-dimensional rotation group is $SU(2)\times SU(2)$ acting by left and right quaternion multiplication, and a self-dual curvature is one whose components are holomorphic with respect to the quaternionic structure. The ADHM theorem states that the moduli space of self-dual connections on $\mathbb R^4$ is a quotient of a finite-dimensional quaternionic vector space by a unitary group, and the equations that define the quotient are the vanishing of the three components of a quaternionic moment map. This is the one place in the topological programme where the biquaternion algebra is not a convenient packaging of a complex construction but the construction's native field.
 
@@ -59,7 +59,7 @@ so that $B_1,B_2$ are $k\times k$ complex matrices, $I$ is $k\times N$, and $J$ 
 
 $$
 \boxed{\;\mu_{\mathbb R}=[B_1,B_1^\dagger]+[B_2,B_2^\dagger]+I I^\dagger - J^\dagger J = 0\;}
-\qquad\text{in }\mathfrak u(k),
+\qquad\text{in }\mathrm{U}(k),
 $$
 
 $$
@@ -81,7 +81,7 @@ $$
 \mu=(\mu_{\mathbb R},\mu_{\mathbb C}) .
 $$
 
-The three real components of $\mu_{\mathbb R}$ and the complex equation $\mu_{\mathbb C}$ together have $k^2+2k^2=3k^2$ real components, which is the real dimension of $\mathfrak u(k)\otimes\mathrm{Im}\,\mathbb H$; this is why $\mu$ is the **quaternionic moment map** of the data. The quotient by the $U(k)$ action that preserves $\mu=0$ is the hyperkähler quotient, and it is the statement that the four equations are the components of one quaternionic equation that gives the construction its structure.
+The three real components of $\mu_{\mathbb R}$ and the complex equation $\mu_{\mathbb C}$ together have $k^2+2k^2=3k^2$ real components, which is the real dimension of $\mathrm{U}(k)\otimes\mathrm{Im}\,\mathbb H$; this is why $\mu$ is the **quaternionic moment map** of the data. The quotient by the $U(k)$ action that preserves $\mu=0$ is the hyperkähler quotient, and it is the statement that the four equations are the components of one quaternionic equation that gives the construction its structure.
 
 **The instanton data from the equations.** The theorem of Atiyah, Drinfeld, Hitchin and Manin is that there is a bijection
 
@@ -109,7 +109,7 @@ $$
 \dim_{\mathbb R}\bigl(\text{data}\bigr)=4k^2+4kN .
 $$
 
-**Constraints.** The complex equation $\mu_{\mathbb C}=0$ has $k^2$ complex components, or $2k^2$ real; the real equation $\mu_{\mathbb R}=0$ is an anti-Hermitian $\mathfrak u(k)$-valued condition with $k^2$ real components. The constraint surface therefore has real dimension
+**Constraints.** The complex equation $\mu_{\mathbb C}=0$ has $k^2$ complex components, or $2k^2$ real; the real equation $\mu_{\mathbb R}=0$ is an anti-Hermitian $\mathrm{U}(k)$-valued condition with $k^2$ real components. The constraint surface therefore has real dimension
 
 $$
 \dim_{\mathbb R}\mu^{-1}(0)=4k^2+4kN-3k^2 = k^2+4kN .
@@ -190,15 +190,15 @@ Two features make the construction *native* to the framework's algebra. First, t
 
 The ADHM construction uses three structures, and all three are the framework's.
 
-- **The quaternionic line.** The identification $\mathbb R^4\cong\mathbb H_{\mathbb B}$ is the framework's Euclidean slice; the two complex coordinates $z_1,z_2$ are the two components of the defining module $S\cong\mathbb C^2$ of $\mathbb B\cong M_2(\mathbb C)$, and the quaternion units act on $S$ by right multiplication. The self-duality equation is the statement that the curvature is quaternionic-holomorphic, and the three self-dual components form the triplet $\mathfrak{su}(2)\subset\mathbb M_-$.
-- **The moment map.** The ADHM equations are the vanishing of a moment map for the quaternionic action, with values in $\mathfrak u(k)\otimes\mathrm{Im}\,\mathbb H_{\mathbb B}$. The imaginary quaternions are the pure-imaginary, anti-Hermitian part of $\mathbb H_{\mathbb B}$, i.e. exactly $\mathfrak{su}(2)\subset\mathbb M_-$ in the framework's decomposition $\mathbb M_-=\mathbb R(ie_0)\oplus\mathfrak{su}(2)$. The three real ADHM equations are therefore $\mathfrak{su}(2)$-valued, and the complex one is the complexified combination.
+- **The quaternionic line.** The identification $\mathbb R^4\cong\mathbb H_{\mathbb B}$ is the framework's Euclidean slice; the two complex coordinates $z_1,z_2$ are the two components of the defining module $S\cong\mathbb C^2$ of $\mathbb B\cong M_2(\mathbb C)$, and the quaternion units act on $S$ by right multiplication. The self-duality equation is the statement that the curvature is quaternionic-holomorphic, and the three self-dual components form the triplet $\mathrm{SU}(2)\subset\mathbb M_-$.
+- **The moment map.** The ADHM equations are the vanishing of a moment map for the quaternionic action, with values in $\mathrm{U}(k)\otimes\mathrm{Im}\,\mathbb H_{\mathbb B}$. The imaginary quaternions are the pure-imaginary, anti-Hermitian part of $\mathbb H_{\mathbb B}$, i.e. exactly $\mathrm{SU}(2)\subset\mathbb M_-$ in the framework's decomposition $\mathbb M_-=\mathbb R(ie_0)\oplus\mathrm{SU}(2)$. The three real ADHM equations are therefore $\mathrm{SU}(2)$-valued, and the complex one is the complexified combination.
 - **The quotient.** The hyperkähler quotient by $U(k)$ is the quotient by the compact group that the framework identifies as the maximal compact subgroup of the algebra of $k\times k$ biquaternion matrices. For $k=1$ this is the $U(1)$ of the centre; for $k>1$ it is the unitary group of the enlarged carrier.
 
 What is standard and imported is equally clear. The ADHM theorem itself — existence and completeness, the bijection between the quotient and the self-dual connections, the freeness of the $U(k)$ action on irreducible data, and the smoothness of the moduli space away from the reducible locus — is a theorem of analysis and algebraic geometry, cited here and not re-derived. The explicit form of the matrix $\Delta(x)$ and the proof that the reconstructed connection is self-dual are likewise standard. The physical identification of the instanton number with a tunnelling amplitude, and the semiclassical use of the moduli, belong to *The Semiclassical Expansion and the Instanton Gas in Biquaternionic Form*. The framework's contribution is that the equation and its solution space are quaternionic-linear, and that the quaternion algebra of the construction is the real-quaternion subspace of $\mathbb B$ rather than an auxiliary device.
 
 ## Summary
 
-The self-duality equation $F=\star F$ on the Euclidean slice is a quaternionic equation: with $\mathbb R^4\cong\mathbb H_{\mathbb B}$ and $SU(2)\times SU(2)$ acting by left and right quaternion multiplication, a self-dual curvature is quaternionic-holomorphic and its three independent components carry the adjoint of the compact factor $\mathfrak{su}(2)\subset\mathbb M_-$. The ADHM construction parametrises all self-dual connections of charge $k$ by matrices $B_1,B_2\in M_k(\mathbb C)$, $I\in M_{k\times N}(\mathbb C)$, $J\in M_{N\times k}(\mathbb C)$ satisfying the real and complex equations
+The self-duality equation $F=\star F$ on the Euclidean slice is a quaternionic equation: with $\mathbb R^4\cong\mathbb H_{\mathbb B}$ and $SU(2)\times SU(2)$ acting by left and right quaternion multiplication, a self-dual curvature is quaternionic-holomorphic and its three independent components carry the adjoint of the compact factor $\mathrm{SU}(2)\subset\mathbb M_-$. The ADHM construction parametrises all self-dual connections of charge $k$ by matrices $B_1,B_2\in M_k(\mathbb C)$, $I\in M_{k\times N}(\mathbb C)$, $J\in M_{N\times k}(\mathbb C)$ satisfying the real and complex equations
 
 $$
 \mu_{\mathbb R}=[B_1,B_1^\dagger]+[B_2,B_2^\dagger]+II^\dagger-J^\dagger J=0 ,

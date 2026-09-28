@@ -33,7 +33,7 @@ By convention $e_0 = h_0 = p_0 = 1$ and $e_k = h_k = 0$ for $k < 0$.
 
 **Proposition.** The sets $\{m_\lambda\}$, $\{e_\lambda\}$, $\{h_\lambda\}$ and $\{p_\lambda\}$, indexed by partitions of the degree, are each a $\mathbb{Z}$-basis of the symmetric functions of that degree; over $\mathbb{Q}$, so is $\{p_\lambda\}$.
 
-**Proof.** A symmetric function of degree $d$ is determined by its coefficients on the monomial symmetric functions $m_\lambda$ with $\lambda \vdash d$, and $m_\lambda$ has coefficient $1$ on the monomial $x^\lambda$ and $0$ on $x^\mu$ for partitions $\mu$ dominating $\lambda$ with $\mu \neq \lambda$; hence the $m_\lambda$ are independent and span. That $\{e_\lambda\}$ and $\{h_\lambda\}$ are bases follows from the triangular relations below, and that $\{p_\lambda\}$ is a basis over $\mathbb{Q}$ from Newton's identities, which express the $e_k$ rationally in the $p_i$. $\square$
+**Proof.** A symmetric function of degree $d$ is determined by its coefficients on the monomial symmetric functions $m_\lambda$ with $\lambda \vdash d$, and $m_\lambda$ has coefficient $1$ on the monomial $x^\lambda$ and $0$ on $x^\mu$ for partitions $\mu$ dominating $\lambda$ with $\mu \neq \lambda$; hence the $m_\lambda$ are independent and span. That $\{e_\lambda\}$ and $\{h_\lambda\}$ are bases follows from the triangular relations below, and that $\{p_\lambda\}$ is a basis over $\mathbb{Q}$ from Newton's identities, which express the $e_k$ rationally in the $p_i$.
 
 **Theorem (fundamental theorem of symmetric polynomials).** The symmetric polynomials in $n$ variables form a polynomial ring,
 
@@ -49,7 +49,7 @@ $$
 
 the coefficient of $t^d$ being the number of partitions of $d$ into at most $n$ parts.
 
-**Proof.** For the first statement, order monomials lexicographically and let $f$ be symmetric of degree $d$ with leading monomial $x_1^{a_1}\cdots x_n^{a_n}$; subtracting a suitable multiple of $e_1^{a_1-a_2}e_2^{a_2-a_3}\cdots e_n^{a_n}$ cancels the leading monomial while leaving the polynomial symmetric, and induction on the lexicographic order terminates. This is the initial-monomial argument of the Gröbner basis theory of *Gröbner Bases and Elimination Theory*, and it also shows that the monomials $e_1^{b_1}\cdots e_n^{b_n}$ span the symmetric polynomials; algebraic independence follows because the $e_i$ are algebraically independent in the limit ring, which is the polynomial ring on the generators $e_i$ by construction. The Hilbert series is then a consequence of the degrees $\deg e_i = i$. $\square$
+**Proof.** For the first statement, order monomials lexicographically and let $f$ be symmetric of degree $d$ with leading monomial $x_1^{a_1}\cdots x_n^{a_n}$; subtracting a suitable multiple of $e_1^{a_1-a_2}e_2^{a_2-a_3}\cdots e_n^{a_n}$ cancels the leading monomial while leaving the polynomial symmetric, and induction on the lexicographic order terminates. This is the initial-monomial argument of the Gröbner basis theory of *Gröbner Bases and Elimination Theory*, and it also shows that the monomials $e_1^{b_1}\cdots e_n^{b_n}$ span the symmetric polynomials; algebraic independence follows because the $e_i$ are algebraically independent in the limit ring, which is the polynomial ring on the generators $e_i$ by construction. The Hilbert series is then a consequence of the degrees $\deg e_i = i$.
 
 **Example.** In two variables $e_1 = x+y$, $e_2 = xy$, and $\Lambda_2 = K[e_1,e_2]$, with Hilbert series $1/((1-t)(1-t^2))$: the coefficient of $t^d$ is $\lfloor d/2\rfloor+1$, the number of partitions of $d$ into parts at most $2$. This is the Molien series computed in *Invariant Theory* for the swap action.
 
@@ -63,7 +63,7 @@ $$
 
 and consequently $\Lambda \otimes_{\mathbb{Z}}\mathbb{Q} = \mathbb{Q}[p_1,p_2,\ldots]$ with the $p_i$ algebraically independent.
 
-**Proof sketch.** Differentiate the generating function $\sum_{k\geq0}e_kt^k = \prod_i(1+x_it)$ logarithmically with respect to $t$: the derivative of the logarithm is $\sum_i\frac{x_i}{1+x_it} = \sum_{i\geq1}(-1)^{i-1}p_it^{i-1}$, and comparing coefficients gives the first identity; the same computation with $\prod_i(1-x_it)^{-1}$ in place of $\prod_i(1+x_it)$ gives the second. $\square$
+**Proof sketch.** Differentiate the generating function $\sum_{k\geq0}e_kt^k = \prod_i(1+x_it)$ logarithmically with respect to $t$: the derivative of the logarithm is $\sum_i\frac{x_i}{1+x_it} = \sum_{i\geq1}(-1)^{i-1}p_it^{i-1}$, and comparing coefficients gives the first identity; the same computation with $\prod_i(1-x_it)^{-1}$ in place of $\prod_i(1+x_it)$ gives the second.
 
 **Example.** $k = 1$: $e_1 = p_1$ and $h_1 = p_1$. $k = 2$: $2e_2 = e_1p_1 - p_2 = p_1^2-p_2$, so $e_2 = (p_1^2-p_2)/2$, and $2h_2 = h_1p_1+p_2$, so $h_2 = (p_1^2+p_2)/2$. In two variables: $p_1 = x+y$, $p_2 = x^2+y^2$, and $(p_1^2-p_2)/2 = ((x+y)^2-x^2-y^2)/2 = xy = e_2$; $(p_1^2+p_2)/2 = (x^2+2xy+y^2+x^2+y^2)/2 = x^2+xy+y^2 = h_2$.
 
@@ -110,7 +110,7 @@ $$
 
 and dually $s_\lambda = \det(e_{\lambda'_i-i+j})$.
 
-**Proof sketch.** The Lindström–Gessel–Viennot involution shows that the determinant counts the families of nonintersecting lattice paths that correspond to semistandard tableaux of shape $\lambda$, the sign of a permuted family being exactly the determinant's sign. $\square$
+**Proof sketch.** The Lindström–Gessel–Viennot involution shows that the determinant counts the families of nonintersecting lattice paths that correspond to semistandard tableaux of shape $\lambda$, the sign of a permuted family being exactly the determinant's sign.
 
 **Example.** For $\lambda = (2,1)$: $s_{(2,1)} = \det\begin{pmatrix}h_2 & h_3\\ h_0 & h_1\end{pmatrix} = h_2h_1-h_3$. In two variables $h_2h_1 = (x^2+xy+y^2)(x+y) = x^3+2x^2y+2xy^2+y^3$ and $h_3 = x^3+x^2y+xy^2+y^3$, so the difference is $x^2y+xy^2$, the sum of the two semistandard tableaux of shape $(2,1)$ in two variables.
 
@@ -122,7 +122,7 @@ $$
 
 the quotient of two alternating polynomials; the denominator is the Vandermonde determinant $\prod_{i<j}(x_i-x_j)$, and the numerator is divisible by it because it is alternating.
 
-**Proof sketch.** Both sides are symmetric, and both are alternating up to a sign when the $x_i$ are permuted; expanding the numerator as an alternating sum and dividing by the Vandermonde determinant expresses $s_\lambda$ as a sum over permutations of monomials, in which the nonzero terms are exactly the monomials of the semistandard tableaux. $\square$
+**Proof sketch.** Both sides are symmetric, and both are alternating up to a sign when the $x_i$ are permuted; expanding the numerator as an alternating sum and dividing by the Vandermonde determinant expresses $s_\lambda$ as a sum over permutations of monomials, in which the nonzero terms are exactly the monomials of the semistandard tableaux.
 
 **Example.** For $\lambda = (2,1)$ and $n = 2$: the numerator is $\det\begin{pmatrix}x_1^3 & x_1\\ x_2^3 & x_2\end{pmatrix} = x_1^3x_2-x_1x_2^3 = x_1x_2(x_1^2-x_2^2)$ and the denominator is $x_1-x_2$, so the quotient is $x_1x_2(x_1+x_2) = x_1^2x_2+x_1x_2^2$, agreeing with the tableau count.
 
@@ -142,7 +142,7 @@ $$
 
 $m_i(\lambda)$ being the number of parts of $\lambda$ equal to $i$.
 
-**Proof sketch.** The orthogonality of the power sums is a computation of the pairing of two power sums in the monomial basis, where the only contribution comes from $\lambda = \mu$ and equals the order of the centraliser of a permutation of cycle type $\lambda$, which is $z_\lambda$. $\square$
+**Proof sketch.** The orthogonality of the power sums is a computation of the pairing of two power sums in the monomial basis, where the only contribution comes from $\lambda = \mu$ and equals the order of the centraliser of a permutation of cycle type $\lambda$, which is $z_\lambda$.
 
 **Example.** In degree $2$: the bases are $s_{(2)} = h_2 = m_{(2)}+m_{(1,1)}$, $s_{(1,1)} = e_2 = m_{(1,1)}$, $p_1^2 = m_{(2)}+2m_{(1,1)}$, $p_2 = m_{(2)}$; and $\langle p_2,p_2\rangle = z_{(2)} = 2$, $\langle p_1^2,p_1^2\rangle = z_{(1,1)} = 2$, as one checks from $\langle h_{(2)},m_{(2)}\rangle = 1$ and direct expansion.
 
@@ -166,7 +166,7 @@ $$
 \prod_{i,j}\frac{1}{1-x_iy_j} = \sum_{\alpha}\prod_{i,j}x_i^{\alpha_{ij}}y_j^{\alpha_{ij}},
 $$
 
-the sum over all matrices $\alpha$ of nonnegative integers; writing $x^\alpha = \prod_{i,j}x_i^{\alpha_{ij}}$ and $y^\alpha = \prod_{i,j}y_j^{\alpha_{ij}}$, each matrix contributes a monomial in $x$ and a monomial in $y$. The RSK correspondence puts the matrices with nonnegative integer entries in bijection with the pairs $(P,Q)$ of semistandard tableaux of a common shape $\lambda$, in such a way that the column sums of $\alpha$ give the weight of $P$ and the row sums the weight of $Q$; summing the contributions of all matrices with a fixed shape therefore gives $s_\lambda(x)s_\lambda(y)$, and summing over shapes gives the identity. The dual identity is obtained by replacing the second family by its negation within the geometric expansion, or by applying the involution $\omega$ to the factors. $\square$
+the sum over all matrices $\alpha$ of nonnegative integers; writing $x^\alpha = \prod_{i,j}x_i^{\alpha_{ij}}$ and $y^\alpha = \prod_{i,j}y_j^{\alpha_{ij}}$, each matrix contributes a monomial in $x$ and a monomial in $y$. The RSK correspondence puts the matrices with nonnegative integer entries in bijection with the pairs $(P,Q)$ of semistandard tableaux of a common shape $\lambda$, in such a way that the column sums of $\alpha$ give the weight of $P$ and the row sums the weight of $Q$; summing the contributions of all matrices with a fixed shape therefore gives $s_\lambda(x)s_\lambda(y)$, and summing over shapes gives the identity. The dual identity is obtained by replacing the second family by its negation within the geometric expansion, or by applying the involution $\omega$ to the factors.
 
 **Example.** For one variable each, $s_\lambda(x) = x^{|\lambda|}$ and the left side is $\sum_{d\geq0}x^dy^d = (1-xy)^{-1}$, the right side. For $x$ two variables and $y$ one variable, the right side is $\prod_{i=1}^2(1-x_iy)^{-1} = \sum_{d\geq0}h_d(x_1,x_2)y^d$, and the left side is $\sum_{\lambda:\ \ell(\lambda)\leq2}s_\lambda(x_1,x_2)y^{|\lambda|}$; the identity is therefore the statement that the two-row Schur polynomials generate the $h_d$, which follows from Jacobi–Trudi in the form $s_{(a,b)}(x_1,x_2) = h_ah_b - h_{a+1}h_{b-1}$ for $a \geq b \geq 0$, applied term by term and telescoping.
 
@@ -178,7 +178,7 @@ the sum over all matrices $\alpha$ of nonnegative integers; writing $x^\alpha = 
 
 **(c)** $s_\lambda(x_1,\ldots,x_n)$ is, for $\lambda$ with at most $n$ rows, the character of the irreducible polynomial representation of $GL_n$ of highest weight $\lambda$, evaluated on the diagonal matrix with entries $x_i$ — the Weyl character formula.
 
-**Proof sketch.** (a) is the bialternant formula evaluated at $1^n$ together with the evaluation of the Vandermonde determinant $\prod_{i<j}(j-i)$, and the padding by zeros is what makes $\lambda_j = 0$ for $j > \ell(\lambda)$; (b) is the rewritten form of (a) obtained by grouping the numerator factors by cell, since $\prod_{i<j}(\lambda_i-\lambda_j+j-i)$ is a product over cells of $n+c(u)$ divided by the hooks; (c) is Weyl's formula, whose statement here is a forward reference. $\square$
+**Proof sketch.** (a) is the bialternant formula evaluated at $1^n$ together with the evaluation of the Vandermonde determinant $\prod_{i<j}(j-i)$, and the padding by zeros is what makes $\lambda_j = 0$ for $j > \ell(\lambda)$; (b) is the rewritten form of (a) obtained by grouping the numerator factors by cell, since $\prod_{i<j}(\lambda_i-\lambda_j+j-i)$ is a product over cells of $n+c(u)$ divided by the hooks; (c) is Weyl's formula, whose statement here is a forward reference.
 
 **Example.** For $\lambda = (2,1)$ and $n = 3$: (a) with the padding $(2,1,0)$ gives $\frac{2-1+1}{1}\cdot\frac{2-0+2}{2}\cdot\frac{1-0+1}{1} = 2\cdot2\cdot2 = 8$; (b) the cells have $(c,h)$ equal to $(0,3)$, $(1,1)$, $(-1,1)$, so the product is $\frac33\cdot\frac41\cdot\frac21 = 8$. Both agree with the eight tableaux listed above. The values of $s_\lambda(1^n)$ for small partitions, computed by all three methods and found to agree, are:
 
@@ -198,7 +198,7 @@ $$
 
 the sum over all partitions; the specialised generating function of the number of partitions is $\sum_{\lambda}t^{|\lambda|} = \prod_{i\geq1}(1-t^i)^{-1}$.
 
-**Proof sketch.** Set all the $y_j$ equal to $1$ in the Cauchy identity and use that the constant term of $\prod_{i,j}(1-x_iy_j)^{-1}$ in $y$, after specialising $y_j = 1$ for $j \leq m$ and letting $m$ grow, contributes $\prod_i(1-x_i)^{-1}\prod_{i<j}(1-x_ix_j)^{-1}$; the limit over $m$ is the algebraic inverse limit defining $\Lambda$, so the identity holds in the completion. The second statement is the same computation in one variable and is the classical Euler identity for partitions. $\square$
+**Proof sketch.** Set all the $y_j$ equal to $1$ in the Cauchy identity and use that the constant term of $\prod_{i,j}(1-x_iy_j)^{-1}$ in $y$, after specialising $y_j = 1$ for $j \leq m$ and letting $m$ grow, contributes $\prod_i(1-x_i)^{-1}\prod_{i<j}(1-x_ix_j)^{-1}$; the limit over $m$ is the algebraic inverse limit defining $\Lambda$, so the identity holds in the completion. The second statement is the same computation in one variable and is the classical Euler identity for partitions.
 
 ---
 
@@ -214,7 +214,7 @@ $$
 
 is an isometric isomorphism of $\mathbb{Z}$-modules from the character ring of $S_n$ to $\Lambda_n$, sending the irreducible character $\chi^\lambda$ to the Schur function $s_\lambda$; consequently the irreducible characters of $S_n$ are indexed by the partitions of $n$, and the dimension of the irreducible representation with character $\chi^\lambda$ is $\chi^\lambda(1) = n!/\prod_{u\in\lambda}h(u)$, the number of standard Young tableaux of shape $\lambda$.
 
-**Proof sketch.** That $\operatorname{ch}$ is an isometry onto the symmetric functions follows from the orthogonality of characters on one side and the orthogonality of the power sums $\langle p_\lambda,p_\mu\rangle = z_\lambda\delta_{\lambda\mu}$ together with $\sum_{\sigma\in C_\lambda}\lvert C_\lambda\rvert = n!$ on the other; the identification of the image of $\chi^\lambda$ with $s_\lambda$ is the computation of the character of the permutation module on the Young diagram and its decomposition, which is the content. The hook length formula for $\chi^\lambda(1)$ is the specialisation of the hook content formula at $n$ variables in the limit, or equivalently the count of standard tableaux. $\square$
+**Proof sketch.** That $\operatorname{ch}$ is an isometry onto the symmetric functions follows from the orthogonality of characters on one side and the orthogonality of the power sums $\langle p_\lambda,p_\mu\rangle = z_\lambda\delta_{\lambda\mu}$ together with $\sum_{\sigma\in C_\lambda}\lvert C_\lambda\rvert = n!$ on the other; the identification of the image of $\chi^\lambda$ with $s_\lambda$ is the computation of the character of the permutation module on the Young diagram and its decomposition, which is the content. The hook length formula for $\chi^\lambda(1)$ is the specialisation of the hook content formula at $n$ variables in the limit, or equivalently the count of standard tableaux.
 
 **Example.** For $n = 3$: the hook length formula gives $\chi^{(3)}(1) = 6/(3\cdot2\cdot1) = 1$, $\chi^{(2,1)}(1) = 6/(3\cdot1\cdot1) = 2$, $\chi^{(1,1,1)}(1) = 6/(3\cdot2\cdot1) = 1$, and $1^2+2^2+1^2 = 6 = \lvert S_3\rvert$, so the three irreducible representations exhaust the group. The Frobenius characteristic sends $\chi^{(2,1)}$ to $s_{(2,1)}$, and the involution $\omega$ corresponds to tensoring with the sign character, $\chi^{\lambda'}\otimes\varepsilon$ having characteristic $\omega(s_\lambda) = s_{\lambda'}$.
 

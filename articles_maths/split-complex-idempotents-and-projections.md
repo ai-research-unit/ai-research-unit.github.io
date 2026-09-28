@@ -11,9 +11,9 @@ Idempotents are the algebraic form of a projection, and in $\mathbb{D}$ they do 
 2. they characterise the zero divisors, each of which is a real multiple of $\Pi_1$ or of $\Pi_2$;
 3. they exhibit the algebra isomorphism $\mathbb{D} \cong \mathbb{R}\oplus\mathbb{R}$ as the indicator-function decomposition of a two-point set.
 
-**Placement.** The article is third in the Algebra group, after *Split-Complex Algebra* and *Split-Complex Norm and Invertibility*, and before *Split-Complex Ideals and Peirce Decomposition*, *Split-Complex Zero Divisors* and *Worked Examples in the Split-Complex Algebra*, all of which use the idempotents. Its proofs use only the algebra article.
+**Placement.** The article is second in the Algebra group, after *Split-Complex Algebra* and before *Split-Complex Ideals and Peirce Decomposition*, *Split-Complex Zero Divisors* and *Worked Examples in the Split-Complex Algebra*, all of which use the idempotents. Its proofs use only the algebra article; the norm and the invertibility criterion belong to *Split-Complex Norm and Invertibility* in the Topology group.
 
-**Conventions.** The algebra is $\mathbb{D} = \mathbb{R}[x]/(x^2-1)$, with basis $1$, $j$, $j^2 = +1$. A general element is $Z = a+j b$ with $a, b \in \mathbb{R}$, the conjugate is $\bar Z = a-j b$, the norm form is $N(Z) = Z\bar Z = a^2-b^2$, and the idempotents are $\Pi_\pm = \tfrac12(1\pm j)$, with $Z = Z_+\Pi_1 + Z_-\Pi_2$ and $Z_\pm = a\pm b$. The base field is $\mathbb{R}$, so $2$ is invertible.
+**Conventions.** The algebra is $\mathbb{D} = \mathbb{R}[x]/(x^2-1)$, with basis $1$, $j$, $j^2 = +1$. A general element is $Z = a+j b$ with $a, b \in \mathbb{R}$, the conjugate is $\bar Z = a-j b$, and the idempotents are $\Pi_\pm = \tfrac12(1\pm j)$, with $Z = Z_+\Pi_1 + Z_-\Pi_2$ and $Z_\pm = a\pm b$. The base field is $\mathbb{R}$, so $2$ is invertible.
 
 ## Idempotents in an Algebra
 
@@ -94,9 +94,9 @@ $$
 The second factors as $b(2a-1) = 0$:
 
 - If $b = 0$, the first becomes $a^2 = a$, so $a = 0$ or $a = 1$: the idempotents $0$ and $1$.
-- If $b \neq 0$, then $a = 1/2$, and the first becomes $\tfrac14 + b^2 = \tfrac12$, so $b^2 = \tfrac14$ and $b = \pm\tfrac12$: the idempotents $\Pi_1$ and $\Pi_2$. $\square$
+- If $b \neq 0$, then $a = 1/2$, and the first becomes $\tfrac14 + b^2 = \tfrac12$, so $b^2 = \tfrac14$ and $b = \pm\tfrac12$: the idempotents $\Pi_1$ and $\Pi_2$.
 
-There are no others. The set of idempotents is finite, of four elements, and in particular there is no continuous family. This is the exact opposite of the biquaternion situation, and its cause is visible in the proof: there the idempotent equation forces the scalar part to be $1/2$ and reduces to the equation $\xi^2 = -1$ on the vector part, which has a two-sphere of real solutions and a four-real-dimensional family of complex ones; here the same reduction produces $b^2 = +1/4$, whose solution set is the two points $b = \pm 1/2$, because $\mathbb{D}$ has no root of $-1$ and no vector part to vary independently.
+There are no others. The set of idempotents is finite, of four elements, and in particular there is no positive-dimensional family. This is the exact opposite of the biquaternion situation, and its cause is visible in the proof: there the idempotent equation forces the scalar part to be $1/2$ and reduces to the equation $\xi^2 = -1$ on the vector part, which has a two-sphere of real solutions and a four-real-dimensional family of complex ones; here the same reduction produces $b^2 = +1/4$, whose solution set is the two points $b = \pm 1/2$, because $\mathbb{D}$ has no root of $-1$ and no vector part to vary independently.
 
 ## The Idempotents as Indicator Functions
 
@@ -164,7 +164,7 @@ and symmetrically for $\Pi_2$. Conversely, every zero divisor of $\mathbb{D}$ is
 
 **Theorem.** A nonzero element $Z$ is a zero divisor if and only if $Z = \lambda \Pi_1$ or $Z = \lambda \Pi_2$ for some $\lambda \in \mathbb{R}^\times$.
 
-**Proof.** If $Z = \lambda \Pi_1$ then $Z \Pi_2 = 0$ with $\Pi_2 \neq 0$, so $Z$ is a zero divisor, and similarly for $\Pi_2$. Conversely, if $ZW = 0$ with $Z, W \neq 0$, then $N(Z)N(W) = N(ZW) = 0$, so $N(Z) = Z_+Z_- = 0$; hence $Z_+ = 0$ or $Z_- = 0$, that is, $Z \in \mathbb{R}\Pi_1$ or $Z \in \mathbb{R}\Pi_2$. $\square$
+**Proof.** If $Z = \lambda \Pi_1$ then $Z \Pi_2 = 0$ with $\Pi_2 \neq 0$, so $Z$ is a zero divisor, and similarly for $\Pi_2$. Conversely, if $ZW = 0$ with $Z, W \neq 0$, write both in the idempotent basis; then $ZW = Z_+W_+\Pi_1 + Z_-W_-\Pi_2 = 0$ gives $Z_+W_+ = 0$ and $Z_-W_- = 0$. Since $W \neq 0$ at least one of $W_+, W_-$ is nonzero, and the corresponding coordinate of $Z$ vanishes; hence $Z \in \mathbb{R}\Pi_1$ or $Z \in \mathbb{R}\Pi_2$.
 
 In the idempotent coordinates this is the statement that the zero divisors are the elements lying on the coordinate axes of the decomposition $\mathbb{D} = \mathbb{R}\Pi_1\oplus\mathbb{R}\Pi_2$: an element $Z = Z_+\Pi_1 + Z_-\Pi_2$ is a zero divisor exactly when one of the two coordinates vanishes, and it is then supported on the corresponding idempotent. The classification of the null cone and the form of the zero-divisor set are the subject of *Split-Complex Zero Divisors*; the present statement is the piece of it that belongs to the idempotents.
 
@@ -184,19 +184,19 @@ $$
 
 as a direct sum of ideals, the two summands being the two copies of $\mathbb{R}$.
 
-**Proof.** Every $Z$ satisfies $Z = Z(\Pi_1 + \Pi_2) = Z\Pi_1 + Z\Pi_2$, so the two ideals span; their intersection is zero because $\Pi_1\Pi_2 = 0$: if $Z\Pi_1 = W\Pi_2$ then multiplying by $\Pi_1$ gives $Z\Pi_1 = 0$. Each has real dimension $1$. For minimality, a nonzero ideal contained in $\mathbb{D}\Pi_1$ contains some $\lambda \Pi_1$ with $\lambda \neq 0$, hence contains $\Pi_1$ and equals $\mathbb{R}\Pi_1$; so each is minimal. $\square$
+**Proof.** Every $Z$ satisfies $Z = Z(\Pi_1 + \Pi_2) = Z\Pi_1 + Z\Pi_2$, so the two ideals span; their intersection is zero because $\Pi_1\Pi_2 = 0$: if $Z\Pi_1 = W\Pi_2$ then multiplying by $\Pi_1$ gives $Z\Pi_1 = 0$. Each has real dimension $1$. For minimality, a nonzero ideal contained in $\mathbb{D}\Pi_1$ contains some $\lambda \Pi_1$ with $\lambda \neq 0$, hence contains $\Pi_1$ and equals $\mathbb{R}\Pi_1$; so each is minimal.
 
 The two ideals are also the two **minimal ideals** in the sense of the lattice of all ideals, and they are the images of the two projection idempotents. The lattice of the ideals of $\mathbb{D}$, the Peirce decomposition of the algebra with respect to an idempotent, and the failure of simplicity that these two minimal ideals express are developed in *Split-Complex Ideals and Peirce Decomposition*.
 
 ## The Set of Idempotents
 
-The set of idempotents of $\mathbb{D}$ has four elements and, as a subset of the topological space $\mathbb{D}\cong\mathbb{R}^2$, it is the discrete set
+The set of idempotents of $\mathbb{D}$ has four elements, with coordinates in the basis $1, j$
 
 $$
-\left\{ (0,0), \; (1,0), \; \tfrac12(1,1), \; \tfrac12(1,-1) \right\}.
+0 = (0,0), \quad 1 = (1,0), \quad \Pi_1 = \tfrac12(1,1), \quad \Pi_2 = \tfrac12(1,-1).
 $$
 
-It is compact and totally disconnected, of topological dimension $0$. This is again the opposite of the biquaternion case, where the set of idempotents is a four-real-dimensional stratified space; here the parametrising set is finite, so the whole set is finite. The two nontrivial idempotents $\Pi_\pm$ lie on the null cone, since $N(\Pi_\pm) = 0$, and so does $0$, since $N(0) = 0$; of the four idempotents only $1$ lies off the null cone, and it is the only one that is a unit. Among the four, exactly three — $0, \Pi_1, \Pi_2$ — fail to be units, and of those the two nontrivial ones are the zero divisors.
+It is a finite set, and its parametrisation by the subsets of $\{+,-\}$ makes the finiteness structural rather than accidental. This is again the opposite of the biquaternion case, where the idempotents form a positive-dimensional family in bijection with the roots of $-1$; here the parametrising set is the two-point set, so the whole set is finite. Of the four idempotents only $1$ is a unit: each of $0, \Pi_1, \Pi_2$ has a vanishing idempotent coordinate, so each is a non-unit, and the two nontrivial ones are the zero divisors.
 
 ## The Two-Dimensional Analogue of the Idempotent Theory of $\mathbb{B}$
 
@@ -232,7 +232,6 @@ The idempotents are projections: $Z = Z_+\Pi_1 + Z_-\Pi_2$, with $Z_\pm = Z\Pi_\
 | $P_+, P_-$ | Projections $Z \mapsto Z_+$, $Z \mapsto Z_-$; $P_+ + P_- = \mathrm{id}$ |
 | $\mathbb{D}\Pi_1, \mathbb{D}\Pi_2$ | The two minimal ideals, $\cong \mathbb{R}$ |
 | $\varphi(a+j b) = (a+b, a-b)$ | Isomorphism $\mathbb{D}\cong\mathbb{R}\oplus\mathbb{R}$ |
-| $N(Z) = a^2-b^2$ | Norm form, vanishing on $\Pi_\pm$ |
 | $\mathbb{R}\Pi_1, \mathbb{R}\Pi_2$ | The two null lines of zero divisors |
 
 ## Further Reading

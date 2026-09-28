@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This article studies the zero divisors of the biquaternion algebra $\mathbb{B}$. It follows the article on biquaternion norm and invertibility, which established the criterion for invertibility and the three-way classification of the elements of $\mathbb{B}$. The goal here is to characterize the zero divisors, to split them into two families, and to describe their structure.
+This article studies the zero divisors of the biquaternion algebra $\mathbb{B}$. It follows *Biquaternion Norm and Invertibility*, which established the criterion for invertibility and the three-way classification of the elements of $\mathbb{B}$. The goal here is to characterize the zero divisors, to split them into two families, and to describe their structure.
 
 The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. No examples are given. The quaternion algebra $\mathbb{H}$ is assumed from the article on quaternion algebra. The biquaternion algebra $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ is assumed from the article on biquaternion algebra, together with its four conjugations and its six distinguished subspaces. The invertibility criterion is assumed from the article on biquaternion norm and invertibility. The classification of the roots of $-1$ is assumed from the article on biquaternion roots of minus one. The idempotent classification that depends on it is the subject of *Biquaternion Idempotents and Projections*, and the roots themselves are not restated here.
 
@@ -12,7 +12,7 @@ $$
 \tilde{Q} = Q_0 e_0 + Q_1 e_1 + Q_2 e_2 + Q_3 e_3, \qquad Q_\mu \in \mathbb{C}.
 $$
 
-The quaternion conjugate is denoted $\bar{\tilde{Q}}$, the complex conjugate is denoted $\tilde{Q}^*$, the Hermitian conjugate is denoted $\tilde{Q}^\dagger = \bar{\tilde{Q}}^*$, and the anti-Hermitian conjugate is denoted $\tilde{Q}^\flat = -\tilde{Q}^\dagger$. The norm form is $N(\tilde{Q}) = \tilde{Q} \bar{\tilde{Q}} = \sum_\mu Q_\mu^2$.
+The quaternion conjugate is denoted $\bar{\tilde{Q}}$, the complex conjugate is denoted $\tilde{Q}^*$, the Hermitian conjugate is denoted $\tilde{Q}^\dagger = \bar{\tilde{Q}}^*$, and the anti-Hermitian conjugate is denoted $\tilde{Q}^\flat = -\tilde{Q}^\dagger$. The product $\tilde{Q}\bar{\tilde{Q}}$ lies in the scalar line $\mathbb{C}_{\mathbb{B}}$; its vanishing is the algebraic condition that decides the zero divisors, and it is never read here as a length.
 
 ## Definition and Criterion
 
@@ -28,27 +28,27 @@ The requirement that both $\tilde{Q}$ and $\tilde{R}$ be nonzero is essential. I
 
 ### Criterion
 
-**Theorem.** A nonzero biquaternion $\tilde{Q}$ is a zero divisor if and only if its norm form vanishes:
+**Theorem.** A nonzero biquaternion $\tilde{Q}$ is a zero divisor if and only if the product $\tilde{Q}\bar{\tilde{Q}}$ vanishes:
 
 $$
-N(\tilde{Q}) = 0.
+\tilde{Q}\bar{\tilde{Q}} = 0.
 $$
 
-**Proof.** Suppose $\tilde{Q} \neq 0$ and $N(\tilde{Q}) = 0$. Then $\tilde{Q} \bar{\tilde{Q}} = 0$. Since $\tilde{Q} \neq 0$, we also have $\bar{\tilde{Q}} \neq 0$. So $\tilde{R} = \bar{\tilde{Q}}$ is a nonzero biquaternion with $\tilde{Q} \circ \tilde{R} = 0$. Hence $\tilde{Q}$ is a zero divisor.
+**Proof.** Suppose $\tilde{Q} \neq 0$ and $\tilde{Q}\bar{\tilde{Q}} = 0$. Then $\tilde{Q} \bar{\tilde{Q}} = 0$. Since $\tilde{Q} \neq 0$, we also have $\bar{\tilde{Q}} \neq 0$. So $\tilde{R} = \bar{\tilde{Q}}$ is a nonzero biquaternion with $\tilde{Q} \circ \tilde{R} = 0$. Hence $\tilde{Q}$ is a zero divisor.
 
-Conversely, suppose $\tilde{Q}$ is a zero divisor: there exists $\tilde{R} \neq 0$ with $\tilde{Q} \circ \tilde{R} = 0$. If $N(\tilde{Q}) \neq 0$, then $\tilde{Q}$ is invertible by the invertibility criterion, and multiplying $\tilde{Q} \circ \tilde{R} = 0$ on the left by $\tilde{Q}^{-1}$ gives $\tilde{R} = 0$, contradicting $\tilde{R} \neq 0$. So $N(\tilde{Q}) = 0$. $\square$
+Conversely, suppose $\tilde{Q}$ is a zero divisor: there exists $\tilde{R} \neq 0$ with $\tilde{Q} \circ \tilde{R} = 0$. If $\tilde{Q}\bar{\tilde{Q}} \neq 0$, then $\tilde{Q}$ is invertible by the invertibility criterion, and multiplying $\tilde{Q} \circ \tilde{R} = 0$ on the left by $\tilde{Q}^{-1}$ gives $\tilde{R} = 0$, contradicting $\tilde{R} \neq 0$. So $\tilde{Q}\bar{\tilde{Q}} = 0$.
 
 ### The Three-Way Classification
 
 Combining the criterion for invertibility from the preceding article with the criterion for zero divisors, the elements of $\mathbb{B}$ are partitioned into three classes:
 
-| Condition on $N(\tilde{Q})$ | Condition on $\tilde{Q}$ | Conclusion |
+| Condition on $\tilde{Q}\bar{\tilde{Q}}$ | Condition on $\tilde{Q}$ | Conclusion |
 |---|---|---|
-| $N(\tilde{Q}) \neq 0$ | (automatically $\tilde{Q} \neq 0$) | $\tilde{Q}$ is invertible |
-| $N(\tilde{Q}) = 0$ | $\tilde{Q} = 0$ | $\tilde{Q}$ is the zero element |
-| $N(\tilde{Q}) = 0$ | $\tilde{Q} \neq 0$ | $\tilde{Q}$ is a zero divisor |
+| $\tilde{Q}\bar{\tilde{Q}} \neq 0$ | (automatically $\tilde{Q} \neq 0$) | $\tilde{Q}$ is invertible |
+| $\tilde{Q}\bar{\tilde{Q}} = 0$ | $\tilde{Q} = 0$ | $\tilde{Q}$ is the zero element |
+| $\tilde{Q}\bar{\tilde{Q}} = 0$ | $\tilde{Q} \neq 0$ | $\tilde{Q}$ is a zero divisor |
 
-The zero divisors are exactly the nonzero elements on which the norm form vanishes.
+The zero divisors are exactly the nonzero elements on which $\tilde{Q}\bar{\tilde{Q}}$ vanishes.
 
 ### The Algebra Is Not a Division Algebra
 
@@ -84,18 +84,18 @@ The non-pure case is studied in the section on non-pure zero divisors below.
 
 The scalar part is the natural invariant because the scalar imaginary $i$ is central in $\mathbb{B}$: the scalar part is the component of the element in the central direction, and the vector part is the component perpendicular to it. The two cases of zero divisors — pure and non-pure — are distinguished by whether this central component vanishes.
 
-In the **pure case**, the norm form reduces to
+In the **pure case**, the product $\tilde{Q}\bar{\tilde{Q}}$ reduces to
 
 $$
-N(\tilde{Q}) = (\mathbf{Q}, \mathbf{Q}) = Q_1^2 + Q_2^2 + Q_3^2,
+\tilde{Q}\bar{\tilde{Q}} = (\mathbf{Q}, \mathbf{Q}) = Q_1^2 + Q_2^2 + Q_3^2,
 $$
 
-a complex scalar. The vanishing of the norm form is the condition $(\mathbf{Q}, \mathbf{Q}) = 0$, which has nontrivial complex solutions (the nilpotents).
+a complex scalar. The vanishing of $\tilde{Q}\bar{\tilde{Q}}$ is the condition $(\mathbf{Q}, \mathbf{Q}) = 0$, which has nontrivial complex solutions (the nilpotents).
 
-In the **non-pure case**, the norm form contains the scalar contribution $Q_0^2$ in addition to the vector contribution:
+In the **non-pure case**, the product $\tilde{Q}\bar{\tilde{Q}}$ contains the scalar contribution $Q_0^2$ in addition to the vector contribution:
 
 $$
-N(\tilde{Q}) = Q_0^2 + (\mathbf{Q}, \mathbf{Q}),
+\tilde{Q}\bar{\tilde{Q}} = Q_0^2 + (\mathbf{Q}, \mathbf{Q}),
 $$
 
 and the vanishing condition allows the scalar and vector contributions to cancel. The resulting solutions are the complex multiples of the idempotents.
@@ -121,7 +121,7 @@ $$
 The vector part vanishes, because $\epsilon_{jkl}$ is antisymmetric in $j, k$ while $Q_j Q_k$ is symmetric. Therefore
 
 $$
-\tilde{Q}^2 = -(Q_1^2 + Q_2^2 + Q_3^2) e_0 = -N(\tilde{Q}) e_0.
+\tilde{Q}^2 = -(Q_1^2 + Q_2^2 + Q_3^2) e_0 = -\tilde{Q}\bar{\tilde{Q}} e_0.
 $$
 
 ### The Criterion
@@ -129,10 +129,10 @@ $$
 **Theorem.** The following three conditions on a nonzero pure biquaternion $\tilde{Q}$ are equivalent:
 
 1. $\tilde{Q}$ is a zero divisor.
-2. $N(\tilde{Q}) = 0$, i.e. $Q_1^2 + Q_2^2 + Q_3^2 = 0$.
+2. $\tilde{Q}\bar{\tilde{Q}} = 0$, i.e. $Q_1^2 + Q_2^2 + Q_3^2 = 0$.
 3. $\tilde{Q}^2 = 0$.
 
-**Proof.** The equivalence of (1) and (2) is the general criterion for zero divisors. The equivalence of (2) and (3) follows from the computation of the square above: $\tilde{Q}^2 = -N(\tilde{Q}) e_0$ vanishes if and only if $N(\tilde{Q}) = 0$. $\square$
+**Proof.** The equivalence of (1) and (2) is the general criterion for zero divisors. The equivalence of (2) and (3) follows from the computation of the square above: $\tilde{Q}^2 = -\tilde{Q}\bar{\tilde{Q}} e_0$ vanishes if and only if $\tilde{Q}\bar{\tilde{Q}} = 0$.
 
 A biquaternion satisfying $\tilde{Q}^2 = 0$ is called a **nilpotent**, so in the pure case, the zero divisors are exactly the nonzero nilpotents.
 
@@ -156,15 +156,15 @@ $$
 
 where $(\mathbf{Q}, \mathbf{Q}) = Q_1^2 + Q_2^2 + Q_3^2$.
 
-### The Relation to the Norm Form
+### The Relation to the Scalar Part
 
-The norm form of $\tilde{Q}$ is
+The product $\tilde{Q}\bar{\tilde{Q}}$ is
 
 $$
-N(\tilde{Q}) = Q_0^2 + (\mathbf{Q}, \mathbf{Q}).
+\tilde{Q}\bar{\tilde{Q}} = Q_0^2 + (\mathbf{Q}, \mathbf{Q}).
 $$
 
-So the condition $N(\tilde{Q}) = 0$ is equivalent to
+So the condition $\tilde{Q}\bar{\tilde{Q}} = 0$ is equivalent to
 
 $$
 (\mathbf{Q}, \mathbf{Q}) = -Q_0^2.
@@ -217,105 +217,9 @@ The non-pure zero divisors are complex multiples of idempotents, and the idempot
 
 ## Distribution of the Zero Divisors
 
-We now examine how the zero divisors are distributed among the six distinguished subspaces of $\mathbb{B}$ defined in the basic algebra article.
+A zero divisor is an element on which $\tilde{Q}\bar{\tilde{Q}}$ vanishes, so which subspaces contain zero divisors is the algebraic question of where that polynomial vanishes. Algebraically: $\mathbb{C}_{\mathbb{B}}$ and $\mathbb{H}_{\mathbb{B}}$ contain none, since $\tilde{Q}\bar{\tilde{Q}}$ is a sum of squares of real coefficients there and vanishes only at $\tilde{Q}=0$; $\mathrm{Vect}(\mathbb{B})$ and $i\mathbb{H}_{\mathbb{B}}$ contain the nilpotents, on which it vanishes for nonzero $\tilde{Q}$; and $\mathbb{M}_+$ and $\mathbb{M}_-$ contain the null set of the Lorentzian form.
 
-### The Complex Subspace $\mathbb{C}_{\mathbb{B}}$
-
-An element of $\mathbb{C}_{\mathbb{B}}$ has the form $\tilde{Q} = Q_0 e_0$ with $Q_0 \in \mathbb{C}$. The norm form is $N(\tilde{Q}) = Q_0^2$, which vanishes only at $\tilde{Q} = 0$. So $\mathbb{C}_{\mathbb{B}}$ contains no zero divisors. This reflects the fact that $\mathbb{C}_{\mathbb{B}}$ is a copy of the field $\mathbb{C}$.
-
-### The Vector Subspace $\mathrm{Vect}(\mathbb{B})$
-
-An element of $\mathrm{Vect}(\mathbb{B})$ has vanishing scalar part, $\tilde{Q} = Q_1 e_1 + Q_2 e_2 + Q_3 e_3$. Its norm form $N(\tilde{Q}) = Q_1^2 + Q_2^2 + Q_3^2$ is complex-valued, and it vanishes for the nonzero elements satisfying
-
-$$
-Q_1^2 + Q_2^2 + Q_3^2 = 0.
-$$
-
-This is a complex cone of complex dimension $2$ in $\mathrm{Vect}(\mathbb{B}) \cong \mathbb{C}^3$, that is, a real cone of real dimension $4$ in a real space of dimension $6$. Its nonzero elements are exactly the **pure zero divisors**: they have vanishing scalar part and square to zero, so they are the nilpotents of $\mathbb{B}$. The zero divisor set inside $\mathrm{Vect}(\mathbb{B})$ is thus a cone of real codimension $2$, and not a codimension-one double cone as in $\mathbb{M}_\pm$.
-
-The elements of $\mathrm{Vect}(\mathbb{B})$ outside this cone have $N(\tilde{Q}) \neq 0$ and are invertible; the complement of the cone is connected.
-
-### The Quaternion Subspace $\mathbb{H}_{\mathbb{B}}$
-
-An element of $\mathbb{H}_{\mathbb{B}}$ has real coefficients, and its norm form is a sum of squares of real numbers, which vanishes only at $\tilde{Q} = 0$. So $\mathbb{H}_{\mathbb{B}}$ contains no zero divisors. This reflects the Frobenius theorem: $\mathbb{H}_{\mathbb{B}}$ is a copy of the division algebra $\mathbb{H}$.
-
-### The Anti-Quaternion Subspace $i\mathbb{H}_{\mathbb{B}}$
-
-An element of $i\mathbb{H}_{\mathbb{B}}$ is $i\tilde{P}$ with $\tilde{P} \in \mathbb{H}_{\mathbb{B}}$, and its norm form is
-
-$$
-N(i\tilde{P}) = -\left(p_0^2 + p_1^2 + p_2^2 + p_3^2\right),
-$$
-
-which is negative-definite and vanishes only at the origin. So $i\mathbb{H}_{\mathbb{B}}$ contains no zero divisors, even though it is not a subalgebra of $\mathbb{B}$.
-
-### The Hermitian Subspace $\mathbb{M}_+$
-
-An element of $\mathbb{M}_+$ has the form
-
-$$
-\tilde{Q} = q_0 e_0 + i q'_1 e_1 + i q'_2 e_2 + i q'_3 e_3, \qquad q_0, q'_1, q'_2, q'_3 \in \mathbb{R}.
-$$
-
-The norm form is
-
-$$
-N(\tilde{Q}) = q_0^2 - (q'_1)^2 - (q'_2)^2 - (q'_3)^2.
-$$
-
-This vanishes for the nonzero elements satisfying
-
-$$
-q_0^2 = (q'_1)^2 + (q'_2)^2 + (q'_3)^2.
-$$
-
-This is the equation of a **double cone** in the four-dimensional real space $\mathbb{M}_+$, with apex at the origin. The nonzero elements of this cone are zero divisors. The set of zero divisors in $\mathbb{M}_+$ is therefore a three-dimensional submanifold of $\mathbb{M}_+$.
-
-The elements of $\mathbb{M}_+$ **outside** the cone have $N(\tilde{Q}) \neq 0$ and are invertible. The set of invertible elements of $\mathbb{M}_+$ is the complement of the cone, which has **three** connected components:
-
-- The **future timelike region** $q_0 > 0$ and $q_0^2 > (q'_1)^2 + (q'_2)^2 + (q'_3)^2$, on which $N(\tilde{Q}) > 0$.
-- The **past timelike region** $q_0 < 0$ and $q_0^2 > (q'_1)^2 + (q'_2)^2 + (q'_3)^2$, on which $N(\tilde{Q}) > 0$.
-- The **spacelike region** $q_0^2 < (q'_1)^2 + (q'_2)^2 + (q'_3)^2$, on which $N(\tilde{Q}) < 0$.
-
-### The Anti-Hermitian Subspace $\mathbb{M}_-$
-
-An element of $\mathbb{M}_-$ has the form
-
-$$
-\tilde{Q} = i q'_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3, \qquad q'_0, q_1, q_2, q_3 \in \mathbb{R}.
-$$
-
-The norm form is
-
-$$
-N(\tilde{Q}) = -(q'_0)^2 + q_1^2 + q_2^2 + q_3^2.
-$$
-
-This vanishes for the nonzero elements satisfying
-
-$$
-(q'_0)^2 = q_1^2 + q_2^2 + q_3^2.
-$$
-
-This is again the equation of a **double cone** in the four-dimensional real space $\mathbb{M}_-$, with apex at the origin. The nonzero elements of this cone are zero divisors. The set of zero divisors in $\mathbb{M}_-$ is therefore a three-dimensional submanifold of $\mathbb{M}_-$.
-
-The elements of $\mathbb{M}_-$ **outside** the cone have $N(\tilde{Q}) \neq 0$ and are invertible. The set of invertible elements of $\mathbb{M}_-$ is the complement of the cone, which has **three** connected components:
-
-- The **spacelike region** $q_1^2 + q_2^2 + q_3^2 > (q'_0)^2$, on which $N(\tilde{Q}) > 0$.
-- The **future timelike region** $q'_0 > 0$ and $(q'_0)^2 > q_1^2 + q_2^2 + q_3^2$, on which $N(\tilde{Q}) < 0$.
-- The **past timelike region** $q'_0 < 0$ and $(q'_0)^2 > q_1^2 + q_2^2 + q_3^2$, on which $N(\tilde{Q}) < 0$.
-
-### Summary of the Distribution
-
-Of the six distinguished subspaces of $\mathbb{B}$:
-
-- $\mathbb{C}_{\mathbb{B}}$, $\mathbb{H}_{\mathbb{B}}$ and $i\mathbb{H}_{\mathbb{B}}$ contain no zero divisors. The first two are the subalgebras among the six that are division algebras; $i\mathbb{H}_{\mathbb{B}}$ is an $\mathbb{H}_{\mathbb{B}}$-module whose norm form is negative-definite.
-- $\mathbb{M}_+$ and $\mathbb{M}_-$ contain a three-dimensional double cone of zero divisors, all of them non-pure. The nonzero elements outside the cone are invertible, and the zero divisors form the cone itself (minus the origin).
-- $\mathrm{Vect}(\mathbb{B})$ contains the pure zero divisors: the nilpotent cone, of real dimension $4$. The complement of the cone is connected.
-
-The two cones in $\mathbb{M}_+$ and $\mathbb{M}_-$ have the same structure: in each case, the equation is that the square of one real coordinate equals the sum of the squares of the other three. In $\mathbb{M}_+$ the special coordinate is $q_0$ (the real scalar part); in $\mathbb{M}_-$ it is $q'_0$ (the imaginary scalar part).
-
-The three cones just described do **not** exhaust the zero divisor set. A generic zero divisor has nonzero scalar part and a vector part that is neither purely real nor purely imaginary, so it lies in none of the six subspaces: the zero divisors that do lie in one of them form a thin subset of the full cone $\mathcal{Z}$. The distinction explains the two dimensions that occur — the light cones in $\mathbb{M}_\pm$ have real codimension $1$ in their four-dimensional spaces, while the nilpotent cone in $\mathrm{Vect}(\mathbb{B})$ has real codimension $2$ in its six-dimensional space — and it is the reason the distribution above is stated subspace by subspace rather than as a partition of $\mathcal{Z}$.
+The finer description — the sign of $\tilde{Q}\bar{\tilde{Q}}$ off the null set, the connected components of the invertible elements, the future and past timelike and the spacelike regions — reads a form as a form and is in *Biquaternion Norm and Invertibility*, §*Distribution of the Invertible Elements*.
 
 ## Structure of the Zero Divisors
 
@@ -333,7 +237,7 @@ and in that case $\tilde{Q}^2 = 0$. So the pure zero divisors are exactly the no
 
 ### The Non-Pure Case
 
-A non-pure biquaternion $\tilde{Q} = Q_0 e_0 + Q_1 e_1 + Q_2 e_2 + Q_3 e_3$ with $Q_0 \neq 0$ is a zero divisor if and only if $N(\tilde{Q}) = 0$, and in that case
+A non-pure biquaternion $\tilde{Q} = Q_0 e_0 + Q_1 e_1 + Q_2 e_2 + Q_3 e_3$ with $Q_0 \neq 0$ is a zero divisor if and only if $\tilde{Q}\bar{\tilde{Q}} = 0$, and in that case
 
 $$
 \tilde{Q}^2 = 2 Q_0 \tilde{Q}.
@@ -368,7 +272,7 @@ The two families have different dimensions as complex cones:
 The zero divisor set $\mathcal{Z} \subset \mathbb{B}$ is
 
 $$
-\mathcal{Z} = \{\tilde{Q} \in \mathbb{B} : \tilde{Q} \neq 0, \; N(\tilde{Q}) = 0\}.
+\mathcal{Z} = \{\tilde{Q} \in \mathbb{B} : \tilde{Q} \neq 0, \; \tilde{Q}\bar{\tilde{Q}} = 0\}.
 $$
 
 It is the complement of the invertible elements in the complement of the zero element:
@@ -379,16 +283,16 @@ $$
 
 **Basic properties.**
 
-- The closed cone $\{N(\tilde{Q}) = 0\}$ is the zero-set of the continuous (indeed polynomial) map $N : \mathbb{B} \to \mathbb{C}$; it is therefore a closed subset of $\mathbb{B}$. The set $\mathcal{Z}$ itself is this closed cone with the origin removed, and is therefore **not closed**: it is a closed cone minus its apex.
-- $\mathcal{Z}$ is a cone away from the origin: if $\tilde{Q} \in \mathcal{Z}$ and $\alpha \in \mathbb{C} \setminus \{0\}$, then $\alpha \tilde{Q} \in \mathcal{Z}$, because $N(\alpha \tilde{Q}) = \alpha^2 N(\tilde{Q}) = 0$.
+- That the zero set $\{\tilde{Q}\bar{\tilde{Q}} = 0\}$ is closed, and that $\mathcal{Z}$ is that set with the origin removed and therefore not closed, are topological statements and are in *Biquaternion Norm and Invertibility*. What is used here is only that $\mathcal{Z}$ is a cone away from the origin, next.
+- $\mathcal{Z}$ is a cone away from the origin: if $\tilde{Q} \in \mathcal{Z}$ and $\alpha \in \mathbb{C} \setminus \{0\}$, then $\alpha \tilde{Q} \in \mathcal{Z}$, because $(\alpha \tilde{Q})\overline{(\alpha \tilde{Q})} = \alpha^2 \tilde{Q}\bar{\tilde{Q}} = 0$.
 
-**Dimension.** The zero divisor set has **real dimension $6$** (equivalently, **complex dimension $3$** as a complex algebraic cone in $\mathbb{C}^4$). The reasoning is the following. The norm form $N : \mathbb{B} \to \mathbb{C}$ is a single complex-valued polynomial equation in the four complex coefficients $(Q_0, Q_1, Q_2, Q_3)$, or equivalently two real equations in the eight real coordinates. The solution set of $N(\tilde{Q}) = 0$ is therefore a **complex hypersurface** in $\mathbb{C}^4$ of complex dimension $4 - 1 = 3$, hence real dimension $2 \cdot 3 = 6$.
+**Dimension.** The zero divisor set has **real dimension $6$** (equivalently, **complex dimension $3$** as a complex algebraic cone in $\mathbb{C}^4$). The reasoning is the following. The vanishing $\tilde{Q}\bar{\tilde{Q}} = 0$ is a single complex-valued polynomial equation in the four complex coefficients $(Q_0, Q_1, Q_2, Q_3)$, or equivalently two real equations in the eight real coordinates. The solution set of $\tilde{Q}\bar{\tilde{Q}} = 0$ is therefore a **complex hypersurface** in $\mathbb{C}^4$ of complex dimension $4 - 1 = 3$, hence real dimension $2 \cdot 3 = 6$.
 
-The two real equations are independent at every nonzero point of the zero set, so the zero set is a smooth real $6$-manifold away from the origin. (The two real equations are $N_r = 0$ and $N_i = 0$, with gradients $\nabla N_r$ and $\nabla N_i$ proportional only when $(q_0, q_1, q_2, q_3, q'_0, q'_1, q'_2, q'_3) = (0, \dots, 0)$; since the origin is excluded from $\mathcal{Z}$, the gradients are linearly independent everywhere on $\mathcal{Z}$.)
+That the set is smooth away from the origin, and its differential structure, are analytic and topological statements and are in *Biquaternion Topology* and *Biquaternion Analysis*. Only the dimension count, which is algebraic, is used here.
 
 ## Summary
 
-The zero divisors of the biquaternion algebra are the nonzero elements on which the norm form vanishes. They split into two families:
+The zero divisors of the biquaternion algebra are the nonzero elements on which $\tilde{Q}\bar{\tilde{Q}}$ vanishes. They split into two families:
 
 - The **pure zero divisors**, which have vanishing scalar part and satisfy $Q_1^2 + Q_2^2 + Q_3^2 = 0$. These are exactly the nonzero nilpotents: their square is zero, and their annihilator contains themselves. They form a complex cone of real dimension $4$.
 - The **non-pure zero divisors**, which have nonzero scalar part and satisfy $Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2 = 0$. These are exactly the nonzero complex multiples of the nontrivial idempotents of $\mathbb{B}$: their square is $2 Q_0 \tilde{Q}$, and their annihilator contains $\tilde{Q} - 2 Q_0 e_0$. They form an open dense subset of the full zero divisor cone.
@@ -406,7 +310,7 @@ The zero divisor set is a complex cone of complex dimension $3$ (real dimension 
 | $\mathbb{B}$ | Biquaternion algebra |
 | $\tilde{Q} = \sum_\mu Q_\mu e_\mu$ | General biquaternion |
 | $Q_\mu = q_\mu + i q'_\mu$ | Complex coefficient |
-| $N(\tilde{Q}) = \tilde{Q} \bar{\tilde{Q}}$ | Norm form |
+| $$\tilde{Q}\bar{\tilde{Q}} = 0$$ | Algebraic criterion for a zero divisor |
 | $\mathcal{Z}$ | Zero divisor set |
 | $\tilde\Pi^2 = \tilde\Pi$ | Idempotent equation |
 | $\tilde{Q}^2 = 0$ | Nilpotent equation |
@@ -420,6 +324,6 @@ The zero divisor set is a complex cone of complex dimension $3$ (real dimension 
 - William Rowan Hamilton, *Lectures on Quaternions* (Hodges and Smith, Dublin, 1853), for the original discovery of the zero divisors and the nilpotents.
 - S. J. Sangwine and D. Alfsmann, "Determination of the biquaternion divisors of zero, including the idempotents and nilpotents", *Advances in Applied Clifford Algebras* **20** (2010) 401–416, for the classification of the zero divisors.
 - S. J. Sangwine, "Biquaternion (complexified quaternion) roots of $-1$", *Advances in Applied Clifford Algebras* **16** (2006) 63–68, for the classification of the roots of $-1$.
-- J. P. Ward, *Quaternions and Cayley Numbers: Algebra and Applications* (Kluwer, Dordrecht, 1997), for the semi-norm and the algebraic properties of the biquaternions.
+- J. P. Ward, *Quaternions and Cayley Numbers: Algebra and Applications* (Kluwer, Dordrecht, 1997), for the algebraic properties of the biquaternions.
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the connection to Clifford algebras.
 

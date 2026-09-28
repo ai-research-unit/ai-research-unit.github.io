@@ -14,7 +14,7 @@ The companion articles have assembled every ingredient this article needs. *Cano
 
 This article asks what "the S-matrix in biquaternionic form" names. The finding is stated at the outset.
 
-- **Established, and recomputed below.** Conditional on the one-mode identification of the Fock article, the S-matrix of a single fermionic mode is a **matrix-unitary** element of $\mathbb{B}$. Matrix unitarity, $\tilde{S}\tilde{S}^\dagger = e_0$, is *not* the norm-form condition $\tilde{S}\bar{\tilde{S}} = e_0$ that the framework uses to define its Lorentz rotors. The two conditions define different groups, $U(2)$ and $SL(2,\mathbb{C})$, and they intersect in the spin rotations $SU(2)$; the S-matrix belongs to the first, not the second. Every matrix-unitary biquaternion factors as $\tilde{S} = e^{i\theta}\tilde{R}$ with $\tilde{R}$ a unit real quaternion, and a parity-conserving one-mode S-matrix is $\tilde{S} = e^{i\theta_0}\tilde\Pi_1 + e^{i\theta_1}\tilde\Pi_2$, whose norm form is the phase $e^{i(\theta_0+\theta_1)}$, generally not $e_0$. Its transition probabilities are given by the trace formula $2\,\mathrm{Sc}(\tilde{P}_f\,\tilde{S}\tilde{\rho}_i\,\tilde{S}^\dagger)$.
+- **Established, and recomputed below.** Conditional on the one-mode identification of the Fock article, the S-matrix of a single fermionic mode is a **matrix-unitary** element of $\mathbb{B}$. Matrix unitarity, $\tilde{S}\tilde{S}^\dagger = e_0$, is *not* the biquaternion-norm condition $\tilde{S}\bar{\tilde{S}} = e_0$ that the framework uses to define its Lorentz rotors. The two conditions define different groups, $U(2)$ and $SL(2,\mathbb{C})$, and they intersect in the spin rotations $SU(2)$; the S-matrix belongs to the first, not the second. Every matrix-unitary biquaternion factors as $\tilde{S} = e^{i\theta}\tilde{R}$ with $\tilde{R}$ a unit real quaternion, and a parity-conserving one-mode S-matrix is $\tilde{S} = e^{i\theta_0}\tilde\Pi_1 + e^{i\theta_1}\tilde\Pi_2$, whose biquaternion norm is the phase $e^{i(\theta_0+\theta_1)}$, generally not $e_0$. Its transition probabilities are given by the trace formula $2\,\mathrm{Sc}(\tilde{P}_f\,\tilde{S}\tilde{\rho}_i\,\tilde{S}^\dagger)$.
 - **Standard, and transcribed.** The interaction picture, the Dyson series, the unitarity relation $S = 1+iT$, the finite-dimensional identity $2\,\mathrm{Im}\,T = T^\dagger T$, the optical theorem, and the contraction of the Dyson series into Feynman propagators by Wick's theorem. None of this depends on the biquaternion structure beyond the kinematical conventions already fixed by the read-list articles.
 - **Gap, left visible.** The S-matrix of the *field* is an operator on an infinite-dimensional Fock space and is **not** an element of $\mathbb{B}$; the algebra hosts at most the one-mode truncation. And the algebra does not select the boundary condition — the $i\epsilon$ orientation, equivalently the in/out splitting — that makes the time-ordered exponential a well-defined distributional object. That gap is inherited from the propagator article and is not closed here.
 
@@ -75,7 +75,7 @@ where $\mathrm{Im}\,T := (T-T^\dagger)/(2i)$. This is the exact unitarity relati
 
 The word "unitary" has two inequivalent readings inside $\mathbb{B}$, and the S-matrix forces the distinction. This is the section where a formula can be right and its interpretation wrong.
 
-The framework's own usage is the **norm form**. The introduction defines the Lorentz rotor group as the unit-norm biquaternions,
+The framework's own usage is the **biquaternion norm**. The introduction defines the Lorentz rotor group as the unit-norm biquaternions,
 
 $$
 \tilde\Lambda\bar{\tilde\Lambda} = e_0
@@ -83,7 +83,7 @@ $$
 N(\tilde\Lambda) := \tilde\Lambda\bar{\tilde\Lambda} = e_0,
 $$
 
-where $N(\tilde{Q}) = \sum_\mu Q_\mu^2$ is the norm form, and identifies this group with $SL(2,\mathbb{C})$. In the matrix representation $N$ is the determinant: for $\tilde S = a\,e_0 + b\,e_1 + c\,e_2 + d\,e_3$,
+where $N(\tilde{Q}) = \sum_\mu Q_\mu^2$ is the biquaternion norm, and identifies this group with $SL(2,\mathbb{C})$. In the matrix representation $N$ is the determinant: for $\tilde S = a\,e_0 + b\,e_1 + c\,e_2 + d\,e_3$,
 
 $$
 \Phi(\tilde S) = aI_2 - i(b\sigma_1+c\sigma_2+d\sigma_3),
@@ -105,7 +105,7 @@ The two conditions are inequivalent, and neither contains the other.
 
 | Condition | Biquaternion form | Matrix form | Group | Real dimension |
 |---|---|---|---|---|
-| Unit norm form | $\tilde S\bar{\tilde S} = e_0$ | $\det\Phi(\tilde S)=1$ | $SL(2,\mathbb{C})$ | 6 (non-compact) |
+| Unit norm | $\tilde S\bar{\tilde S} = e_0$ | $\det\Phi(\tilde S)=1$ | $SL(2,\mathbb{C})$ | 6 (non-compact) |
 | Matrix unitary | $\tilde S\tilde S^\dagger = e_0$ | $\Phi(\tilde S)^\dagger\Phi(\tilde S)=I_2$ | $U(2)$ | 4 (compact) |
 
 **Neither membership implies the other.** A boost biquaternion
@@ -115,9 +115,9 @@ $$
 \qquad \hat{\mathbf{u}}^2 = -e_0,
 $$
 
-has $N(\tilde\Lambda) = 1$ and so lies in $SL(2,\mathbb{C})$, but $\tilde\Lambda\tilde\Lambda^\dagger = \tilde\Lambda^2 = \cosh\psi + i\sinh\psi\,\hat{\mathbf{u}} \neq e_0$; its square is not the identity, so it is not matrix-unitary. Conversely, a matrix-unitary biquaternion is generally not of unit norm form: the central phase $\tilde S = e^{i\theta}e_0$ is unitary for every real $\theta$, but $N(e^{i\theta}e_0) = e^{2i\theta}$, which equals $1$ only for $\theta \in \pi\mathbb{Z}$.
+has $N(\tilde\Lambda) = 1$ and so lies in $SL(2,\mathbb{C})$, but $\tilde\Lambda\tilde\Lambda^\dagger = \tilde\Lambda^2 = \cosh\psi + i\sinh\psi\,\hat{\mathbf{u}} \neq e_0$; its square is not the identity, so it is not matrix-unitary. Conversely, a matrix-unitary biquaternion is generally not of unit norm: the central phase $\tilde S = e^{i\theta}e_0$ is unitary for every real $\theta$, but $N(e^{i\theta}e_0) = e^{2i\theta}$, which equals $1$ only for $\theta \in \pi\mathbb{Z}$.
 
-This distinction is exactly the one the informational-space article draws when it warns that "only the rotation rotors are unitary in the matrix sense", and it is the reason the phrase "unit-norm biquaternion" must not be silently read as "unitary operator". A Lorentz rotor of unit norm form that is not a pure rotation is *not* a unitary operator, and a physical S-matrix is *not* in general a unit-norm biquaternion.
+This distinction is exactly the one the informational-space article draws when it warns that "only the rotation rotors are unitary in the matrix sense", and it is the reason the phrase "unit-norm biquaternion" must not be silently read as "unitary operator". A Lorentz rotor of unit norm that is not a pure rotation is *not* a unitary operator, and a physical S-matrix is *not* in general a unit-norm biquaternion.
 
 **The intersection is the spin rotations.** The elements that satisfy both conditions are the real unit quaternions
 
@@ -155,13 +155,13 @@ $$
 
 because unitarity forces the two eigenvalues to lie on the unit circle. This is the one-mode S-matrix in its physical form: a phase on the vacuum and a phase on the occupied mode, which is what "no particle creation or annihilation in the asymptotic region" means at this level.
 
-**Its norm form is a phase, not one.** The quaternion conjugate of $\tilde\Pi_{1,2}$ is $\tilde\Pi_{2,1}$, so
+**Its biquaternion norm is a phase, not one.** The quaternion conjugate of $\tilde\Pi_{1,2}$ is $\tilde\Pi_{2,1}$, so
 
 $$
 \tilde S\bar{\tilde S} = e^{i(\theta_0+\theta_1)}(\tilde\Pi_1 + \tilde\Pi_2) = e^{i(\theta_0+\theta_1)}\,e_0 .
 $$
 
-The parity-conserving one-mode S-matrix is unit norm form only when $\theta_0+\theta_1 \in 2\pi\mathbb{Z}$. This is the concrete form of the previous section's warning: a physically unitary S-matrix is generally not in $SL(2,\mathbb{C})$, and one should not assign it to the Lorentz rotor group on the strength of the word "unitarity". Computed for three parameter pairs with $\theta_0,\theta_1$ at generic values, the matrix unitarity held, $\tilde S$ commuted with $ie_3$, and $N(\tilde S)$ matched $e^{i(\theta_0+\theta_1)}$ to machine precision — none of the three had $N = 1$.
+The parity-conserving one-mode S-matrix is unit norm only when $\theta_0+\theta_1 \in 2\pi\mathbb{Z}$. This is the concrete form of the previous section's warning: a physically unitary S-matrix is generally not in $SL(2,\mathbb{C})$, and one should not assign it to the Lorentz rotor group on the strength of the word "unitarity". Computed for three parameter pairs with $\theta_0,\theta_1$ at generic values, the matrix unitarity held, $\tilde S$ commuted with $ie_3$, and $N(\tilde S)$ matched $e^{i(\theta_0+\theta_1)}$ to machine precision — none of the three had $N = 1$.
 
 **The S-matrix generated by a biquaternion Hamiltonian.** The finite-dimensional S-matrix also has a generator form. If the one-mode dynamics over an interval of duration $\tau$ is generated by a Hermitian biquaternion $\tilde H \in \mathbb{M}_+$, then
 
@@ -169,13 +169,13 @@ $$
 \tilde S = e^{-i\tilde H\tau},
 $$
 
-and $\tilde H^\dagger = \tilde H$ with $i$ central gives $\tilde S^\dagger = e^{+i\tilde H\tau} = \tilde S^{-1}$, so $\tilde S$ is matrix-unitary, as it must be. What the norm form computes here is instructive. Since $\det\Phi(\tilde S) = \exp(\mathrm{tr}\,\Phi(-i\tilde H\tau))$ and the trace pairing gives $\mathrm{Tr}(\tilde H) = 2\,\mathrm{Sc}(\tilde H)$,
+and $\tilde H^\dagger = \tilde H$ with $i$ central gives $\tilde S^\dagger = e^{+i\tilde H\tau} = \tilde S^{-1}$, so $\tilde S$ is matrix-unitary, as it must be. What the biquaternion norm computes here is instructive. Since $\det\Phi(\tilde S) = \exp(\mathrm{tr}\,\Phi(-i\tilde H\tau))$ and the trace pairing gives $\mathrm{Tr}(\tilde H) = 2\,\mathrm{Sc}(\tilde H)$,
 
 $$
 N(\tilde S) = \det\Phi(\tilde S) = \exp\!\left(-2i\tau\,\mathrm{Sc}(\tilde H)\right).
 $$
 
-So the norm form of the one-mode S-matrix is the exponential of the trace of its generator, and it equals $e_0$ whenever the generator is traceless, $\mathrm{Sc}(\tilde H) = 0$. For a generic duration $\tau$ that is the only way it returns to $e_0$; at the special durations with $2\tau\,\mathrm{Sc}(\tilde H)\in 2\pi\mathbb{Z}$ it returns to $e_0$ with a nonzero trace as well — $\tilde H=\pi e_0$ at $\tau=1$ gives $\tilde S=-e_0$, which is matrix-unitary with $N(\tilde S)=1$ — so the "precisely" is meant generically in $\tau$. This was verified numerically for a Hermitian generator with and without a scalar part: for $\mathrm{Sc}(\tilde H)=0$ the norm form was $1$ to $10^{-10}$; for $\mathrm{Sc}(\tilde H)=0.8$ it matched $e^{-2i\tau\,\mathrm{Sc}(\tilde H)}$ at both $\tau = 0.6$ and $\tau = 1.7$; and matrix unitarity held in every case. The norm form is thus not a unitarity condition at all: it measures the *trace* of the generator, and unitarity is blind to it.
+So the biquaternion norm of the one-mode S-matrix is the exponential of the trace of its generator, and it equals $e_0$ whenever the generator is traceless, $\mathrm{Sc}(\tilde H) = 0$. For a generic duration $\tau$ that is the only way it returns to $e_0$; at the special durations with $2\tau\,\mathrm{Sc}(\tilde H)\in 2\pi\mathbb{Z}$ it returns to $e_0$ with a nonzero trace as well — $\tilde H=\pi e_0$ at $\tau=1$ gives $\tilde S=-e_0$, which is matrix-unitary with $N(\tilde S)=1$ — so the "precisely" is meant generically in $\tau$. This was verified numerically for a Hermitian generator with and without a scalar part: for $\mathrm{Sc}(\tilde H)=0$ the biquaternion norm was $1$ to $10^{-10}$; for $\mathrm{Sc}(\tilde H)=0.8$ it matched $e^{-2i\tau\,\mathrm{Sc}(\tilde H)}$ at both $\tau = 0.6$ and $\tau = 1.7$; and matrix unitarity held in every case. The biquaternion norm is thus not a unitarity condition at all: it measures the *trace* of the generator, and unitarity is blind to it.
 
 **Then the algebra stops.** A second mode already needs the two-mode operator algebra $M_4(\mathbb{C})$, of complex dimension sixteen, which does not embed in the four-dimensional $\mathbb{B}$; this is the Fock article's capacity count, and the S-matrix inherits it. Consequently the S-matrix of a spin-flip between two modes, or of any genuinely multi-mode process, is not an element of $\mathbb{B}$ on any reading. The finite-dimensional S-matrix is not a truncation of the field S-matrix to a subalgebra; it is the field S-matrix's action on the single module the algebra happens to carry.
 
@@ -228,7 +228,7 @@ The identity was checked on elements not used to state it. For four independentl
 
 The physical content is the **optical theorem**: the diagonal element $\langle i|2\,\mathrm{Im}\,T|i\rangle = \langle i|T^\dagger T|i\rangle$ is positive and equals the summed transition probability out of the initial state, so it is the total rate, and in a field theory with a continuum of final states it becomes the usual relation between the forward scattering amplitude and the total cross-section. The optical theorem is the statement that the operator $S$ is unitary; the algebra does not weaken or strengthen it, and in the one-mode truncation it is the exact identity above.
 
-One should not oversell what was checked. The identity $2\,\mathrm{Im}\,T = T^\dagger T$ is a consequence of matrix unitarity alone; it is true for any unitary matrix and hence for any matrix-unitary biquaternion, and the numerical check confirms the algebra implements it correctly rather than testing a biquaternion-specific claim. The genuinely biquaternion statements are the two of the preceding sections: that matrix unitarity is the right condition and not norm-form unitarity, and that the one-mode truncation is the whole of the algebra's reach.
+One should not oversell what was checked. The identity $2\,\mathrm{Im}\,T = T^\dagger T$ is a consequence of matrix unitarity alone; it is true for any unitary matrix and hence for any matrix-unitary biquaternion, and the numerical check confirms the algebra implements it correctly rather than testing a biquaternion-specific claim. The genuinely biquaternion statements are the two of the preceding sections: that matrix unitarity is the right condition and not biquaternion-norm unitarity, and that the one-mode truncation is the whole of the algebra's reach.
 
 ## The Dyson Series, the Propagator, and the Contour
 
@@ -249,9 +249,9 @@ The gap is therefore the propagator's gap, seen from the S-matrix side: the alge
 **What the algebra supplies.**
 
 - *A finite-dimensional S-matrix.* Conditional on the Fock article's one-mode identification, the S-matrix of the single mode is a matrix-unitary biquaternion, and matrix unitarity is an exact condition inside $\mathbb{B}$.
-- *The right unitarity group.* The algebra distinguishes $U(2)$, the physical one, from $SL(2,\mathbb{C})$, the norm-form group of the Lorentz rotors; the intersection is the spin rotations $SU(2)$. The S-matrix's overall phase is the central $U(1)$ and its spin part is a real unit quaternion.
+- *The right unitarity group.* The algebra distinguishes $U(2)$, the physical one, from $SL(2,\mathbb{C})$, the biquaternion-norm group of the Lorentz rotors; the intersection is the spin rotations $SU(2)$. The S-matrix's overall phase is the central $U(1)$ and its spin part is a real unit quaternion.
 - *The Born rule for the process.* The transition probability is the trace pairing $2\,\mathrm{Sc}(\tilde P_f\tilde S\tilde\rho_i\tilde S^\dagger)$, an element-level formula using only the informational sector.
-- *The generator's meaning.* When the one-mode S-matrix is generated by a Hermitian $\tilde H \in \mathbb{M}_+$, its norm form is $\exp(-2i\tau\,\mathrm{Sc}(\tilde H))$: the norm form measures the trace of the generator, and unitarity is independent of it.
+- *The generator's meaning.* When the one-mode S-matrix is generated by a Hermitian $\tilde H \in \mathbb{M}_+$, its biquaternion norm is $\exp(-2i\tau\,\mathrm{Sc}(\tilde H))$: the biquaternion norm measures the trace of the generator, and unitarity is independent of it.
 
 **What it only transcribes.**
 
@@ -274,7 +274,7 @@ The gap is therefore the propagator's gap, seen from the S-matrix side: the alge
 
 2. **Can the algebra select the contour?** We have argued it cannot, on the ground that Feynman, retarded, and advanced differ only by a boundary condition. A derivation of the $i\epsilon$ orientation from an algebraic property of $\mathbb{B}$ would contradict that argument; no candidate is offered, and the contrary possibility is recorded.
 
-3. **Is there a biquaternion unitarity relation that is more than matrix unitarity?** The norm form of the S-matrix is the exponential of the trace of its generator, which is unitarity-blind. Whether the norm form carries independent physical content for scattering — a relation between the trace of the Hamiltonian and an observable phase — is not established.
+3. **Is there a biquaternion unitarity relation that is more than matrix unitarity?** The biquaternion norm of the S-matrix is the exponential of the trace of its generator, which is unitarity-blind. Whether the biquaternion norm carries independent physical content for scattering — a relation between the trace of the Hamiltonian and an observable phase — is not established.
 
 4. **The interaction vertex in biquaternion form.** The Dyson series here is interaction-agnostic. The biquaternion form of a specific vertex, and whether the algebra supplies any selection principle for it, belongs to the gauge-principle article and its planned companions.
 
@@ -292,19 +292,19 @@ $$
 \tilde S\tilde S^\dagger = e_0,
 $$
 
-and matrix unitarity is *not* the norm-form condition $\tilde S\bar{\tilde S} = e_0$: the first defines $U(2)$, the second $SL(2,\mathbb{C})$, and they intersect in the spin rotations $SU(2)$. Every matrix-unitary biquaternion is $e^{i\theta}\tilde R$ with $\tilde R$ a unit real quaternion, and a parity-conserving one-mode S-matrix is
+and matrix unitarity is *not* the biquaternion-norm condition $\tilde S\bar{\tilde S} = e_0$: the first defines $U(2)$, the second $SL(2,\mathbb{C})$, and they intersect in the spin rotations $SU(2)$. Every matrix-unitary biquaternion is $e^{i\theta}\tilde R$ with $\tilde R$ a unit real quaternion, and a parity-conserving one-mode S-matrix is
 
 $$
 \tilde S = e^{i\theta_0}\tilde\Pi_1 + e^{i\theta_1}\tilde\Pi_2, \qquad \tilde\Pi_{1,2} = \tfrac12(e_0\pm ie_3),
 $$
 
-whose norm form is the phase $e^{i(\theta_0+\theta_1)}$, generally not $e_0$. When the one-mode S-matrix is generated by a Hermitian $\tilde H \in \mathbb{M}_+$, $\tilde S = e^{-i\tilde H\tau}$ and
+whose biquaternion norm is the phase $e^{i(\theta_0+\theta_1)}$, generally not $e_0$. When the one-mode S-matrix is generated by a Hermitian $\tilde H \in \mathbb{M}_+$, $\tilde S = e^{-i\tilde H\tau}$ and
 
 $$
 N(\tilde S) = \exp\!\left(-2i\tau\,\mathrm{Sc}(\tilde H)\right),
 $$
 
-so the norm form measures the trace of the generator while unitarity is independent of it. The transition probability is the Born rule applied to the unitary channel,
+so the biquaternion norm measures the trace of the generator while unitarity is independent of it. The transition probability is the Born rule applied to the unitary channel,
 
 $$
 P_{i\to f} = \mathrm{Tr}\!\left(\tilde P_f\tilde S\tilde\rho_i\tilde S^\dagger\right) = 2\,\mathrm{Sc}\!\left(\tilde P_f\tilde S\tilde\rho_i\tilde S^\dagger\right),
@@ -329,7 +329,7 @@ Two gaps remain. The field S-matrix is an operator on an infinite-dimensional Fo
 | $\tilde{\nabla}=e_0\partial_{ict}+e_k\partial_k$ | Biquaternionic gradient |
 | $\Box=\tilde{\nabla}\bar{\tilde{\nabla}}$ | d'Alembertian |
 | $\Phi(e_k)=-i\sigma_k$, $\Phi(i)=iI_2$ | Isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$ |
-| $N(\tilde S)=\tilde S\bar{\tilde S}=\sum_\mu S_\mu^2=\det\Phi(\tilde S)$ | Norm form; unit-norm (Lorentz-rotor) condition $N=e_0$ |
+| $N(\tilde S)=\tilde S\bar{\tilde S}=\sum_\mu S_\mu^2=\det\Phi(\tilde S)$ | Biquaternion norm; unit-norm (Lorentz-rotor) condition $N=e_0$ |
 | $\tilde S\bar{\tilde S}=e_0$ | Unit-norm biquaternion $\Leftrightarrow SL(2,\mathbb{C})$ |
 | $\tilde S\tilde S^\dagger=e_0$ | Matrix-unitary biquaternion $\Leftrightarrow U(2)$ |
 | $\tilde R\in\mathbb{H}_{\mathbb{B}}$, $\tilde R\bar{\tilde R}=e_0$ | Unit real quaternion $\Leftrightarrow SU(2)$; spin rotation |

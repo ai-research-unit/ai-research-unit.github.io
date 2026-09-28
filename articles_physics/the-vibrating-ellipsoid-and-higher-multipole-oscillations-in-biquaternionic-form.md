@@ -28,7 +28,7 @@ $$
 \tilde{\Lambda}(\theta,\hat{\mathbf{n}}) = \cos\frac{\theta}{2} + \sin\frac{\theta}{2}\,\hat{\mathbf{n}} \in \mathbb{H}_{\mathbb{B}} ,
 $$
 
-a real quaternion of unit norm form,
+a real quaternion of unit norm,
 
 $$
 \tilde{\Lambda}\bar{\tilde{\Lambda}} = \cos^2\frac{\theta}{2} - \sin^2\frac{\theta}{2}\,\hat{\mathbf{n}}^2 = e_0 .

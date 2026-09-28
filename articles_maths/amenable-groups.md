@@ -33,7 +33,7 @@ where $1_G$ denotes the constant function $1$. The group $G$ is **amenable** if 
 
 **(c)** If $N \trianglelefteq G$ is closed and both $N$ and $G/N$ are amenable, then $G$ is amenable, and more generally an extension of an amenable group by an amenable group is amenable.
 
-**Proof sketch.** (a) A mean on $C_b(G)$ restricts to a mean on $C_b(H)$ after choosing a Bruhat-type extension of functions; since $H$ is closed, a bounded continuous function on $H$ extends to a bounded continuous function on $G$ with the same bounds (by the Tietze extension theorem applied locally and a partition argument), and the restriction of the mean is invariant because $H$ acts on the extended functions correctly. (b) A mean on $C_b(G)$ descends to a mean on $C_b(G/N)$, which is the subspace of $C_b(G)$ of functions constant on cosets, and invariance under $G$ gives invariance under $G/N$. (c) Averaging in two stages: for a bounded function $f$ on $G$, the function $x \mapsto m_N(f(x\cdot))$ on $G/N$ is bounded and continuous, and applying $m_{G/N}$ to it gives a mean on $G$; the invariance uses the invariance of $m_N$ and of $m_{G/N}$. The details are Day's and are quoted from the literature. $\square$
+**Proof sketch.** (a) A mean on $C_b(G)$ restricts to a mean on $C_b(H)$ after choosing a Bruhat-type extension of functions; since $H$ is closed, a bounded continuous function on $H$ extends to a bounded continuous function on $G$ with the same bounds (by the Tietze extension theorem applied locally and a partition argument), and the restriction of the mean is invariant because $H$ acts on the extended functions correctly. (b) A mean on $C_b(G)$ descends to a mean on $C_b(G/N)$, which is the subspace of $C_b(G)$ of functions constant on cosets, and invariance under $G$ gives invariance under $G/N$. (c) Averaging in two stages: for a bounded function $f$ on $G$, the function $x \mapsto m_N(f(x\cdot))$ on $G/N$ is bounded and continuous, and applying $m_{G/N}$ to it gives a mean on $G$; the invariance uses the invariance of $m_N$ and of $m_{G/N}$. The details are Day's and are quoted from the literature.
 
 **Remark.** The invariance of the mean is the same property as the existence of a fixed point for the natural action of $G$ on the convex set of means: a group is amenable exactly when every compact convex $G$-space on which $G$ acts affinely and continuously has a fixed point. This is the **fixed-point characterisation**, and it is the form in which amenability is used in the rigidity theory; it is also the reason amenability contradicts property (T), since a group with (T) may fail to fix a point in a compact convex set, as in *Property (T)*.
 
@@ -55,7 +55,7 @@ $$
 1 = \mu(G) = \sum_i \mu(g_iA_i) = \sum_i \mu(A_i) , \qquad 1 = \mu(G) = \sum_j \mu(h_jB_j) = \sum_j \mu(B_j) ,
 $$
 
-whence $\sum_i\mu(A_i)+\sum_j\mu(B_j) = 2$, in contradiction with the disjoint partition $G = \bigsqcup_iA_i\sqcup\bigsqcup_jB_j$, which gives the same sum equal to $\mu(G) = 1$. Conversely, if no invariant mean exists one considers the family of finitely additive invariant set functions of total mass at most $1$ and shows, by a compactness argument on the finite subsets, that the failure of the mean is witnessed by finitely many sets; these produce the two families $A_i$ and $B_j$ of a paradoxical decomposition. The theorem is Tarski's and is quoted from the literature. $\square$
+whence $\sum_i\mu(A_i)+\sum_j\mu(B_j) = 2$, in contradiction with the disjoint partition $G = \bigsqcup_iA_i\sqcup\bigsqcup_jB_j$, which gives the same sum equal to $\mu(G) = 1$. Conversely, if no invariant mean exists one considers the family of finitely additive invariant set functions of total mass at most $1$ and shows, by a compactness argument on the finite subsets, that the failure of the mean is witnessed by finitely many sets; these produce the two families $A_i$ and $B_j$ of a paradoxical decomposition. The theorem is Tarski's and is quoted from the literature.
 
 ### The Free Group is not Amenable
 
@@ -97,7 +97,7 @@ $$
 2 = m(X_1)+m(X_2)+m(Y_1)+m(Y_2) = m(F_2 \smallsetminus \{e\}) = 1 - m(\{e\}) \leq 1 ,
 $$
 
-a contradiction. Hence no invariant mean exists and $F_2$ is not amenable. $\square$
+a contradiction. Hence no invariant mean exists and $F_2$ is not amenable.
 
 **Corollary.** Every group containing a subgroup isomorphic to $F_2$ is not amenable, by the heredity under subgroups. In particular the free groups $F_n$ with $n \geq 2$, the group $SL_2(\mathbb{Z})$ and the group $GL_n(\mathbb{Z})$ for $n \geq 2$ are not amenable; a free product $G_1 * G_2$ of two nontrivial groups is not amenable except when $G_1 \cong G_2 \cong \mathbb{Z}/2$, in which case it is the infinite dihedral group, virtually $\mathbb{Z}$ and hence amenable.
 
@@ -117,7 +117,7 @@ A group is **Følner** if it has such a sequence, or more generally if for every
 
 **Theorem (Følner).** A discrete group $G$ is amenable if and only if it satisfies the Følner condition: for every finite $F\subseteq G$ and every $\varepsilon>0$ there is a finite non-empty $A\subseteq G$ with $|FA\smallsetminus A|\leq\varepsilon|A|$.
 
-**Proof sketch.** If a Følner set $A$ exists, the normalised counting measure of $A$, viewed as a mean defined on finitely supported functions by $m(f) = |A|^{-1}\sum_{x\in A}f(x)$, is approximately invariant under the finitely many translations in $F$; a compactness argument — taking a limit point of the family of these means with respect to increasingly large Følner sets — produces a genuine invariant mean, the limit being taken in the weak sense of pointwise convergence on the bounded functions. Conversely, if $G$ is amenable and no Følner set existed for some finite $F$ and $\varepsilon$, then one shows that $G$ admits a paradoxical decomposition with respect to $F$, contradicting Tarski's theorem; the equivalence of the approximate invariance with amenability is a theorem of Følner and is quoted from the literature. $\square$
+**Proof sketch.** If a Følner set $A$ exists, the normalised counting measure of $A$, viewed as a mean defined on finitely supported functions by $m(f) = |A|^{-1}\sum_{x\in A}f(x)$, is approximately invariant under the finitely many translations in $F$; a compactness argument — taking a limit point of the family of these means with respect to increasingly large Følner sets — produces a genuine invariant mean, the limit being taken in the weak sense of pointwise convergence on the bounded functions. Conversely, if $G$ is amenable and no Følner set existed for some finite $F$ and $\varepsilon$, then one shows that $G$ admits a paradoxical decomposition with respect to $F$, contradicting Tarski's theorem; the equivalence of the approximate invariance with amenability is a theorem of Følner and is quoted from the literature.
 
 **Example.** A finite group is Følner with $A = G$. The group $\mathbb{Z}^n$ is Følner with $A_n$ the ball of radius $n$: the boundary has measure growing like $n^{n-1}$ against the volume $n^n$. A group of subexponential growth is Følner with $A_n$ a ball of suitable radius, since the ratio of the boundary to the volume tends to zero by subexponentiality. The free group $F_2$ is not Følner: in the $4$-regular Cayley tree the subgraph induced by a finite set $A$ is a forest and so has at most $|A|-1$ internal edges, so at least $2|A|+2$ edges leave $A$; passing from edges to the set $SA\smallsetminus A$ divides by at most $4$, so the boundary-to-size ratio is bounded below by $\tfrac{1}{2}$, which recovers the failure of amenability from the geometry.
 
@@ -133,7 +133,7 @@ where $\mu$ is the left Haar measure of *Locally Compact Groups and Haar Measure
 
 **Theorem.** A locally compact group $G$ is amenable if and only if it is Følner, with $K$ ranging over compact sets and $\mu$ the Haar measure. In particular a compact group is amenable with $A = G$, and the normalised Haar measure of a compact group is the unique invariant mean.
 
-**Proof sketch.** The proof is the same as in the discrete case: the normalised Haar measures of the Følner sets give approximately invariant linear functionals on $C_b(G)$, and a weak limit point gives the mean; conversely the failure of the Følner condition produces a paradoxical decomposition in the sense of the measurable $G$-space $G$, contradicting the existence of a mean. The details are standard and are quoted from the literature. $\square$
+**Proof sketch.** The proof is the same as in the discrete case: the normalised Haar measures of the Følner sets give approximately invariant linear functionals on $C_b(G)$, and a weak limit point gives the mean; conversely the failure of the Følner condition produces a paradoxical decomposition in the sense of the measurable $G$-space $G$, contradicting the existence of a mean. The details are standard and are quoted from the literature.
 
 **Remark.** The invariant mean of an amenable locally compact group is closely related to the Haar measure, and for a compact group it is exactly the normalised Haar measure. For a non-compact amenable group no invariant probability measure exists, and the mean is a purely finitely additive object; the analytic approximation of the mean by absolutely continuous objects is Reiter's property, whose formulation uses the convolution algebra $L^1(G)$ and therefore belongs to Part III.
 
@@ -151,11 +151,11 @@ where $\mu$ is the left Haar measure of *Locally Compact Groups and Haar Measure
 
 **(d)** finite direct products and finite direct sums.
 
-**Proof sketch.** (a) and (b) are the closure properties proved above. (c) A mean on $G$ is obtained as a limit of means on the subgroups of the directed family, using the compactness of the set of means in the topology of pointwise convergence; the family is directed and each function is supported on some subgroup, so the limit is well defined and invariant. (d) follows from (b) by induction. The theorem is Day's and is quoted from the literature. $\square$
+**Proof sketch.** (a) and (b) are the closure properties proved above. (c) A mean on $G$ is obtained as a limit of means on the subgroups of the directed family, using the compactness of the set of means in the topology of pointwise convergence; the family is directed and each function is supported on some subgroup, so the limit is well defined and invariant. (d) follows from (b) by induction. The theorem is Day's and is quoted from the literature.
 
 **Corollary (examples).** Every abelian group is amenable; every nilpotent group is amenable, by iterating the extension property along the lower central series with abelian quotients; every solvable group is amenable, by iterating along the derived series; every compact group is amenable, by the Haar measure; every finite group is amenable; and every group of subexponential growth is amenable.
 
-**Proof.** Abelian groups: for a finitely generated abelian group the Følner sets are balls in the lattice, and the general case is a directed union of finitely generated subgroups. Nilpotent and solvable: the quotients in the central and derived series are abelian, so the extension property applies inductively. Compact: the normalised Haar measure is an invariant mean. Finite: a special case of compact. Subexponential growth: the Følner condition is satisfied by balls, as above. $\square$
+**Proof.** Abelian groups: for a finitely generated abelian group the Følner sets are balls in the lattice, and the general case is a directed union of finitely generated subgroups. Nilpotent and solvable: the quotients in the central and derived series are abelian, so the extension property applies inductively. Compact: the normalised Haar measure is an invariant mean. Finite: a special case of compact. Subexponential growth: the Følner condition is satisfied by balls, as above.
 
 ### Elementary Amenable Groups
 
@@ -163,7 +163,7 @@ where $\mu$ is the left Haar measure of *Locally Compact Groups and Haar Measure
 
 **Theorem (Grigorchuk).** The Grigorchuk group of intermediate growth is amenable but not elementary amenable. Consequently the class of amenable groups is strictly larger than the elementary class, and amenability is not generated by the elementary constructions from the finite and abelian groups.
 
-**Proof sketch.** Amenability of the Grigorchuk group follows from its intermediate growth, since a group of subexponential growth satisfies the Følner condition. The failure of elementary amenability is proved by a careful analysis of the self-similar action: an elementary amenable group has a finite series with elementary amenable factors satisfying a growth restriction, and the growth of the Grigorchuk group is too close to exponential to admit such a series. The result is Grigorchuk's and is quoted from the literature. $\square$
+**Proof sketch.** Amenability of the Grigorchuk group follows from its intermediate growth, since a group of subexponential growth satisfies the Følner condition. The failure of elementary amenability is proved by a careful analysis of the self-similar action: an elementary amenable group has a finite series with elementary amenable factors satisfying a growth restriction, and the growth of the Grigorchuk group is too close to exponential to admit such a series. The result is Grigorchuk's and is quoted from the literature.
 
 ## Examples and the Growth Connection
 
@@ -183,13 +183,13 @@ where $\mu$ is the left Haar measure of *Locally Compact Groups and Haar Measure
 
 **(c)** A finitely generated group with infinitely many ends is not amenable.
 
-**Proof sketch.** (a) Balls of radius $n$ in the Cayley graph satisfy $|S A_n \smallsetminus A_n|/|A_n| \to 0$ exactly when the growth is subexponential, because the boundary of a ball is contained in the difference of the balls of radius $n+1$ and $n-1$; the Følner condition follows. (b) A group with infinitely many ends splits over a finite subgroup by the Stallings theorem, and a nontrivial splitting over a finite subgroup with an infinite vertex group produces a free subgroup of rank two, which is not amenable; hence only $0$, $1$ or $2$ ends are possible, and the two-ended case is virtually $\mathbb{Z}$ by the theorem of Hopf. (c) is the contrapositive of (b). $\square$
+**Proof sketch.** (a) Balls of radius $n$ in the Cayley graph satisfy $|S A_n \smallsetminus A_n|/|A_n| \to 0$ exactly when the growth is subexponential, because the boundary of a ball is contained in the difference of the balls of radius $n+1$ and $n-1$; the Følner condition follows. (b) A group with infinitely many ends splits over a finite subgroup by the Stallings theorem, and a nontrivial splitting over a finite subgroup with an infinite vertex group produces a free subgroup of rank two, which is not amenable; hence only $0$, $1$ or $2$ ends are possible, and the two-ended case is virtually $\mathbb{Z}$ by the theorem of Hopf. (c) is the contrapositive of (b).
 
 ### Quasi-Isometry Invariance
 
 **Theorem (Rosenblatt).** Amenability of finitely generated groups is a quasi-isometry invariant: if $G$ and $H$ are quasi-isometric finitely generated groups, then $G$ is amenable if and only if $H$ is.
 
-**Proof sketch.** The Følner condition is a statement about the existence of finite sets with small relative boundary in the Cayley graph, and a quasi-isometry carries a ball of radius $n$ to a set at finite Hausdorff distance from a ball of radius $\lambda n + C$, so the Følner property is preserved; the converse uses the quasi-inverse. The invariance is the theorem of Rosenblatt and is quoted from the literature; it also follows from the characterisation of amenability by the existence of a mean invariant under the action on the boundary at infinity, framed in *Geometric Group Theory*. $\square$
+**Proof sketch.** The Følner condition is a statement about the existence of finite sets with small relative boundary in the Cayley graph, and a quasi-isometry carries a ball of radius $n$ to a set at finite Hausdorff distance from a ball of radius $\lambda n + C$, so the Følner property is preserved; the converse uses the quasi-inverse. The invariance is the theorem of Rosenblatt and is quoted from the literature; it also follows from the characterisation of amenability by the existence of a mean invariant under the action on the boundary at infinity, framed in *Geometric Group Theory*.
 
 ## Amenability, Property (T) and Rigidity
 
@@ -197,7 +197,7 @@ where $\mu$ is the left Haar measure of *Locally Compact Groups and Haar Measure
 
 **Theorem.** Let $G$ be a locally compact group that is amenable and has property (T). Then $G$ is compact. Consequently an infinite discrete amenable group never has property (T), and a lattice in a higher-rank semisimple Lie group is not amenable.
 
-**Proof sketch.** By the Delorme–Guichardet form of (T), an amenable group with (T) has the trivial representation isolated but also weakly contained in the regular representation, by the Følner condition; a representation that is simultaneously weakly contained in and isolated from the trivial representation contains an invariant vector, and the resulting invariant vector for the regular representation forces $G$ to be compact. The result is standard and is quoted from the literature; it is recorded in *Property (T)* from the other side. $\square$
+**Proof sketch.** By the Delorme–Guichardet form of (T), an amenable group with (T) has the trivial representation isolated but also weakly contained in the regular representation, by the Følner condition; a representation that is simultaneously weakly contained in and isolated from the trivial representation contains an invariant vector, and the resulting invariant vector for the regular representation forces $G$ to be compact. The result is standard and is quoted from the literature; it is recorded in *Property (T)* from the other side.
 
 **Corollary.** The class of (T) groups and the class of amenable groups meet exactly in the compact groups; an infinite discrete group is amenable only if it does not have (T), and a group with (T) and no compact factor is not amenable. In particular $SL_n(\mathbb{Z})$ for $n \geq 3$ is not amenable, although its subgroups that are virtually solvable are.
 
@@ -209,11 +209,11 @@ where $\mu$ is the left Haar measure of *Locally Compact Groups and Haar Measure
 
 **Theorem (Tits alternative).** Let $\Gamma$ be a finitely generated subgroup of $GL_n(F)$ for a field $F$. Then either $\Gamma$ is virtually solvable, or $\Gamma$ contains a free subgroup of rank two.
 
-**Proof sketch.** The theorem is Tits's and is proved by considering the action of $\Gamma$ on the projective space over the algebraic closure of $F$: if the action is "far from compact" in the appropriate sense, the ping-pong lemma on the projective line, or on a suitable tree when the field is non-archimedean, produces two elements generating a free subgroup; otherwise the group preserves an invariant structure and is virtually solvable. The theorem is stated in *Infinite Groups* in Part I, and the details are quoted from the literature. $\square$
+**Proof sketch.** The theorem is Tits's and is proved by considering the action of $\Gamma$ on the projective space over the algebraic closure of $F$: if the action is "far from compact" in the appropriate sense, the ping-pong lemma on the projective line, or on a suitable tree when the field is non-archimedean, produces two elements generating a free subgroup; otherwise the group preserves an invariant structure and is virtually solvable. The theorem is stated in *Infinite Groups* in Part I, and the details are quoted from the literature.
 
 **Corollary.** Let $\Gamma$ be a finitely generated linear group over a field. Then $\Gamma$ is amenable if and only if $\Gamma$ is virtually solvable. In particular a finitely generated amenable group that is linear is virtually solvable, and no finitely generated linear group is a counterexample to the equivalence of amenability with virtual solvability.
 
-**Proof.** A virtually solvable group is amenable by Day's theorem and the heredity for finite-index subgroups. Conversely, if $\Gamma$ is amenable it cannot contain $F_2$, by the non-amenability of the free group and heredity; the Tits alternative then forces $\Gamma$ to be virtually solvable. $\square$
+**Proof.** A virtually solvable group is amenable by Day's theorem and the heredity for finite-index subgroups. Conversely, if $\Gamma$ is amenable it cannot contain $F_2$, by the non-amenability of the free group and heredity; the Tits alternative then forces $\Gamma$ to be virtually solvable.
 
 ## The Boundary with Analysis
 

@@ -6,7 +6,7 @@ The **vacuum state** $|0\rangle$ is the no-particle state of a quantized field, 
 
 The subject has a well-known trap, and this article is built around it. The naive mode sum for the Casimir energy **diverges** — quartically, as the fourth power of an imposed cutoff — and the familiar finite answer does not follow from the divergent sum by any rearrangement. The finite part appears only after a regularisation that must be justified rather than asserted. This article therefore does not present the number first and the justification afterwards. It exhibits the divergent sum, shows exactly where the divergence sits and how it is removed, and verifies the final force on two independent routes. Where the justification of a step is incomplete, that is said plainly.
 
-A second trap is a factor of two. The bookkeeping of polarisations in the covariant quantisation of the Maxwell field is notoriously easy to get wrong, and the framework has something precise to say about it: the indefinite metric of the covariant treatment is the norm form of the material sector $\mathbb{M}_-$, and the sum of its signs fixes the effective number of polarisations. The article is explicit about which modes are counted.
+A second trap is a factor of two. The bookkeeping of polarisations in the covariant quantisation of the Maxwell field is notoriously easy to get wrong, and the framework has something precise to say about it: the indefinite metric of the covariant treatment is the biquaternion norm of the material sector $\mathbb{M}_-$, and the sum of its signs fixes the effective number of polarisations. The article is explicit about which modes are counted.
 
 The division between what is established and what is interpretation is stated here and kept throughout.
 
@@ -15,7 +15,7 @@ $$
 \frac{E_{\mathrm{EM}}}{A}=-\frac{\pi^{2}\hbar c}{720\,a^{3}},\qquad
 \frac{F_{\mathrm{EM}}}{A}=-\frac{\pi^{2}\hbar c}{240\,a^{4}},
 $$
-with the force **attractive**. The factor of two between the electromagnetic result and the Dirichlet-scalar result is fixed by the two physical transverse polarisations, whose sum reproduces the norm form of $\mathbb{M}_-$.
+with the force **attractive**. The factor of two between the electromagnetic result and the Dirichlet-scalar result is fixed by the two physical transverse polarisations, whose sum reproduces the biquaternion norm of $\mathbb{M}_-$.
 - **Interpretation.** Reading the vacuum energy as the trace part, or scalar part, of the field Hamiltonian, and reading the framework's local complex structure as a possible home for boundaries, are readings of algebraic facts. The first is precise and is developed below; the second is a suggestion, flagged as such.
 - **Gaps, left visible.** There is no bosonic ladder in $\mathbb{B}$, so the photon's Fock vacuum is a standard construction on an imported module rather than an object of the algebra. The perfectly conducting plates and their boundary conditions have no native description in the framework. The algebra does not select a regularisation. And the framework reproduces the standard Casimir result rather than modifying it, so it supplies no empirical discriminator here.
 
@@ -26,7 +26,7 @@ $$
 \mathbb{M}_-=\{\tilde Q:\tilde Q^{\dagger}=-\tilde Q\}=\mathrm{span}_{\mathbb{R}}\{ie_0,e_1,e_2,e_3\},\qquad
 \mathbb{M}_+=\{\tilde Q:\tilde Q^{\dagger}=\tilde Q\}=\mathrm{span}_{\mathbb{R}}\{e_0,ie_1,ie_2,ie_3\},
 $$
-with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm=\mathbb{M}_\mp$. The trace formula is $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$, normalised so that $\mathrm{Tr}(e_0)=2$ in the matrix representation $\mathbb{B}\cong M_2(\mathbb{C})$. The biquaternionic gradient is $\tilde\nabla=e_0\partial_{ict}+e_1\partial_x+e_2\partial_y+e_3\partial_z$, the potential and field strength are $\tilde A=i\phi/c\,e_0+\mathbf{A}$ and $\tilde F=i\sqrt{\epsilon}\,\mathbf{E}-\sqrt{\mu}\,\mathbf{H}$, and the single Maxwell equation is $\tilde\nabla\tilde F=-\tilde R$. For the free field we set $\epsilon=\epsilon_0$, $\mu=\mu_0$ and use natural units $\hbar=c=1$ where only the algebra is at issue; the dimensionful factors are restored in every displayed physical result. The spacetime metric of the $ict$ sector is $\eta=\mathrm{diag}(-1,+1,+1,+1)$, the norm form of $\mathbb{M}_-$; the indefinite metric of the covariant quantisation is $\zeta=(-1,+1,+1,+1)$, which is the same object.
+with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm=\mathbb{M}_\mp$. The trace formula is $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$, normalised so that $\mathrm{Tr}(e_0)=2$ in the matrix representation $\mathbb{B}\cong M_2(\mathbb{C})$. The biquaternionic gradient is $\tilde\nabla=e_0\partial_{ict}+e_1\partial_x+e_2\partial_y+e_3\partial_z$, the potential and field strength are $\tilde A=i\phi/c\,e_0+\mathbf{A}$ and $\tilde F=i\sqrt{\epsilon}\,\mathbf{E}-\sqrt{\mu}\,\mathbf{H}$, and the single Maxwell equation is $\tilde\nabla\tilde F=-\tilde R$. For the free field we set $\epsilon=\epsilon_0$, $\mu=\mu_0$ and use natural units $\hbar=c=1$ where only the algebra is at issue; the dimensionful factors are restored in every displayed physical result. The spacetime metric of the $ict$ sector is $\eta=\mathrm{diag}(-1,+1,+1,+1)$, the biquaternion norm of $\mathbb{M}_-$; the indefinite metric of the covariant quantisation is $\zeta=(-1,+1,+1,+1)$, which is the same object.
 
 ## The Vacuum State in the Framework
 
@@ -129,7 +129,7 @@ in which the continuum integral $2\,\frac{a}{\pi}\int_0^\infty dq\,(\cdots)$ is 
 
 It has to be said clearly that this subtracted expression is still not an evaluable expression term by term. The two terms separately diverge; only their difference is finite, and it must be defined by a regularisation. The rest of the article evaluates that difference by two routes, and this is where the well-known trap lies.
 
-**The Euler–Maclaurin route does not close the problem by itself.** A natural attempt is to expand the sum in this subtracted expression by the Euler–Maclaurin formula. That expansion correctly exhibits the divergence structure — the cutoff powers $\Lambda^{4},\Lambda^{2}$ and the surface terms — and the companion records the expansion explicitly. But for the summand
+**The Euler–Maclaurin route does not close the problem by itself.** A natural attempt is to expand the sum in this subtracted expression by the Euler–Maclaurin formula. That expansion correctly exhibits the divergence structure — the cutoff powers $\Lambda^{4},\Lambda^{2}$ and the surface terms. But for the summand
 $$
 g(x)=\sqrt{\mathbf{k}_\perp^{2}+\Big(\frac{\pi x}{a}\Big)^{2}},
 $$
@@ -230,7 +230,7 @@ $$
 
 **From the indefinite metric.** In the covariant mode algebra the four polarisations carry the metric $\zeta=(-1,+1,+1,+1)$, and the zero-point constant is $\sum_r\zeta_r\,\tfrac12\hbar\omega=2\cdot\tfrac12\hbar\omega$. The timelike mode's negative sign is essential: summing four polarisations with a positive sign would give $4\cdot\tfrac12\hbar\omega$, **double** the correct zero-point energy. The indefinite metric is not a technicality of the covariant gauge; it is what makes the mode count come out right.
 
-**From the algebra.** Both descriptions have the same home in the framework. The four polarization directions of the covariant treatment are the four directions $\{ie_0,e_1,e_2,e_3\}$ of the material sector, and the metric $\zeta$ is the norm form $N(\tilde{Q})=|\mathbf{q}|^{2}-q_0^{2}$ of $\mathbb{M}_-$, as *The Photon in Biquaternionic Form* establishes. The **two physical polarisations** are the plane in the vector part of $\mathbb{M}_-$ orthogonal to the propagation direction $\hat{\mathbf{k}}$, with projector $P_{ij}=\delta_{ij}-\hat k_i\hat k_j$. The factor of two is thus native: it is the dimension of the transverse plane fixed by the algebra's own norm form. What is **not** native is the **removal** of the timelike and longitudinal directions: the algebra supplies the indefinite metric and the transverse plane, but the subsidiary condition that discards the unphysical directions is imported, exactly as the canonical-quantisation article records.
+**From the algebra.** Both descriptions have the same home in the framework. The four polarization directions of the covariant treatment are the four directions $\{ie_0,e_1,e_2,e_3\}$ of the material sector, and the metric $\zeta$ is the biquaternion norm $N(\tilde{Q})=|\mathbf{q}|^{2}-q_0^{2}$ of $\mathbb{M}_-$, as *The Photon in Biquaternionic Form* establishes. The **two physical polarisations** are the plane in the vector part of $\mathbb{M}_-$ orthogonal to the propagation direction $\hat{\mathbf{k}}$, with projector $P_{ij}=\delta_{ij}-\hat k_i\hat k_j$. The factor of two is thus native: it is the dimension of the transverse plane fixed by the algebra's own biquaternion norm. What is **not** native is the **removal** of the timelike and longitudinal directions: the algebra supplies the indefinite metric and the transverse plane, but the subsidiary condition that discards the unphysical directions is imported, exactly as the canonical-quantisation article records.
 
 The three descriptions agree, and the agreement is the check on the factor of two: the mode count gives $2$; the indefinite metric gives $\sum_r\zeta_r=2$; the algebra gives the two-dimensional transverse plane. A reader who counts four polarisations with positive weight, or who forgets that the TEM mode is $a$-independent, will be wrong by a factor of two or by an additive constant, and neither error is visible in the final number without this bookkeeping.
 
@@ -269,7 +269,7 @@ Both routes give $-\pi^{2}\hbar c/(240a^{4})$, and both were recomputed symbolic
 | Fermion parity of the vacuum | Native | $(-1)^F=ie_3$ |
 | Zero-point energy as a central scalar | Native (reading) | trace part of $\tilde H$; commutes |
 | Two physical transverse polarisations | Native | $\hat{\mathbf{k}}$-orthogonal plane in $\mathrm{Vect}(\mathbb{M}_-)$ |
-| Indefinite metric $\zeta=(-1,+1,+1,+1)$ | Native | norm form of $\mathbb{M}_-$ |
+| Indefinite metric $\zeta=(-1,+1,+1,+1)$ | Native | biquaternion norm of $\mathbb{M}_-$ |
 | Factor of two (EM vs Dirichlet scalar) | Native | $\sum_r\zeta_r=2$; two transverse polarisations |
 | Photon Fock vacuum | Imported | no bosonic ladder in $\mathbb{B}$ |
 | Field mode algebra and Fock space | Imported | standard quantisation on a module |
@@ -312,7 +312,7 @@ The **zero-point energy** of the free Maxwell field is a central scalar — the 
 
 That remainder was obtained by two independent regularisations. The **spectral zeta function** route continues $\zeta_3(s)$ from $s>\tfrac32$ through the pole of $\zeta(2s-2)$ at $s=\tfrac32$ to $s=-\tfrac12$, and gives, for one Dirichlet-type scalar degree of freedom, $-{\pi^{2}\hbar c}/({1440\,a^{3}})$. The **heat-kernel** route uses the Jacobi modular relation to write the exact difference between the bounded and free heat kernels, isolates the Casimir part as the exponentially small "winding" sum, and integrates it to the same value using $\zeta(4)=\pi^{4}/90$. The two routes use different special values and different manipulations; they agree.
 
-The **electromagnetic** result is twice the Dirichlet-scalar result, $E_{\mathrm{EM}}/A=-{\pi^{2}\hbar c}/({720\,a^{3}})$, because the $a$-dependent mode count is the TE and TM families with one polarization each. Equivalently, the indefinite metric $\zeta=(-1,+1,+1,+1)$ of the covariant quantisation sums to $2$; and the framework identifies $\zeta$ with the norm form of the material sector $\mathbb{M}_-$ and the two physical polarisations with the transverse plane in its vector part. The factor of two is native; the gauge removal of the timelike and longitudinal directions is imported.
+The **electromagnetic** result is twice the Dirichlet-scalar result, $E_{\mathrm{EM}}/A=-{\pi^{2}\hbar c}/({720\,a^{3}})$, because the $a$-dependent mode count is the TE and TM families with one polarization each. Equivalently, the indefinite metric $\zeta=(-1,+1,+1,+1)$ of the covariant quantisation sums to $2$; and the framework identifies $\zeta$ with the biquaternion norm of the material sector $\mathbb{M}_-$ and the two physical polarisations with the transverse plane in its vector part. The factor of two is native; the gauge removal of the timelike and longitudinal directions is imported.
 
 The **force** per unit area, with the convention $F/A=-\partial_a(E/A)$, is
 $$
@@ -338,7 +338,7 @@ Two gaps are left visible. The algebra has no native bosonic ladder, so the phot
 | $(-1)^F=ie_3$ | Fermion parity (single mode) |
 | $\vert 0\rangle$ | Field vacuum, degree-zero term of the Fock space |
 | $\hat a_r,\hat a_r^\dagger$, $\epsilon^{(r)}_\mu$ | Covariant mode operators and polarization vectors |
-| $\zeta=(-1,+1,+1,+1)$ | Indefinite metric; norm form $N(\tilde{Q})=\lvert\mathbf{q}\rvert^2-q_0^2$ of $\mathbb{M}_-$ |
+| $\zeta=(-1,+1,+1,+1)$ | Indefinite metric; biquaternion norm $N(\tilde{Q})=\lvert\mathbf{q}\rvert^2-q_0^2$ of $\mathbb{M}_-$ |
 | $\hat{\mathbf{k}}$ | Propagation direction; transverse plane $P_{ij}=\delta_{ij}-\hat k_i\hat k_j$ |
 | $a$, $A$ | Plate separation and area |
 | $a,n,k_3=\pi n/a$ | Plate separation; mode index; quantized longitudinal wavevector |

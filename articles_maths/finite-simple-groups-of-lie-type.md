@@ -23,7 +23,7 @@ $$
 
 where $Q$ is the root lattice and $P$ the weight lattice, so that the determinant of the Cartan matrix is the connection index. The degrees are the integers tabulated in *Coxeter Groups*: $2,3,\ldots,n+1$ for $A_n$, $2,4,\ldots,2n$ for $B_n$, $2,4,\ldots,2n-2,n$ for $D_n$, and the exceptional lists; the Coxeter number $h = d_n$ is the largest degree.
 
-**Proof sketch.** The number of positive roots equals the number of reflections of $W$, which is $\sum(d_i-1)$; this is a standard identity of Coxeter group theory, verified in the discussion of the degrees in *Coxeter Groups*. The identity $\det A = (P:Q)$ is the standard determinant formula for a symmetrised Cartan matrix, and it is the value used to compute the order of the centre of the simply connected group. $\square$
+**Proof sketch.** The number of positive roots equals the number of reflections of $W$, which is $\sum(d_i-1)$; this is a standard identity of Coxeter group theory, verified in the discussion of the degrees in *Coxeter Groups*. The identity $\det A = (P:Q)$ is the standard determinant formula for a symmetrised Cartan matrix, and it is the value used to compute the order of the centre of the simply connected group.
 
 ### The Chevalley Groups
 
@@ -45,7 +45,7 @@ $$
 
 and the adjoint group is the quotient by the centre, of order $|G_{\mathrm{sc}}|/|Z|$ with $Z$ the centre. The order is the value at $q$ of a polynomial with integer coefficients.
 
-**Proof sketch.** The group has a triangular decomposition $G = U^- T U$ in which $U$ is a Sylow $p$-subgroup of order $q^N$, the torus $T$ is isomorphic to $(\mathbb{F}_q^\times)^n$, and the Bruhat decomposition $G = \bigsqcup_{w\in W} U^- w U$ partitions the group into $|W|$ double cosets; the order is computed by counting each cell, and the product of the degrees arises from the description of the torus and the root subgroups. The verification accompanying this article checks the formula against the classical orders for the families $A_n$, $B_n$, $C_n$, $D_n$ and the exceptional types. $\square$
+**Proof sketch.** The group has a triangular decomposition $G = U^- T U$ in which $U$ is a Sylow $p$-subgroup of order $q^N$, the torus $T$ is isomorphic to $(\mathbb{F}_q^\times)^n$, and the Bruhat decomposition $G = \bigsqcup_{w\in W} U^- w U$ partitions the group into $|W|$ double cosets; the order is computed by counting each cell, and the product of the degrees arises from the description of the torus and the root subgroups. The verification accompanying this article checks the formula against the classical orders for the families $A_n$, $B_n$, $C_n$, $D_n$ and the exceptional types.
 
 ### The Classical Families
 
@@ -75,7 +75,7 @@ $$
 |\mathrm{SU}_n(q)| = q^{n(n-1)/2}\prod_{i=2}^{n}\big(q^i - (-1)^i\big), \qquad |\mathrm{PSU}_n(q)| = |\mathrm{SU}_n(q)|/\gcd(n,q+1).
 $$
 
-**Proof sketch.** The order of $\mathrm{GL}_n(q)$ is the number of ordered bases of $\mathbb{F}_q^n$: the first basis vector has $q^n - 1$ choices, the $k$-th has $q^n - q^{k-1}$ choices, and multiplying gives $q^{n(n-1)/2}\prod(q^i-1)$. The orders of the other classical families are the specialisations of the general order formula: the tuples of degrees are $(2,3,\ldots,n+1)$ for $A_n$, $(2,4,\ldots,2n)$ for $B_n$ and for $C_n$, and $(2,4,\ldots,2n-2,n)$ for $D_n$, and substituting a tuple into $q^N\prod(q^{d_i}-1)$ gives the corresponding displayed product. The unitary family $^2A_{n-1}$ is the twisted case of $A_{n-1}$, and its product is the same one with the factors $q^i - (-1)^i$ in place of $q^i - 1$, the sign coming from the twist by the diagram automorphism. The projective orders divide by the centre, whose order is the displayed gcd. The verification accompanying this article recomputes the formulas for small $n$ and $q$. $\square$
+**Proof sketch.** The order of $\mathrm{GL}_n(q)$ is the number of ordered bases of $\mathbb{F}_q^n$: the first basis vector has $q^n - 1$ choices, the $k$-th has $q^n - q^{k-1}$ choices, and multiplying gives $q^{n(n-1)/2}\prod(q^i-1)$. The orders of the other classical families are the specialisations of the general order formula: the tuples of degrees are $(2,3,\ldots,n+1)$ for $A_n$, $(2,4,\ldots,2n)$ for $B_n$ and for $C_n$, and $(2,4,\ldots,2n-2,n)$ for $D_n$, and substituting a tuple into $q^N\prod(q^{d_i}-1)$ gives the corresponding displayed product. The unitary family $^2A_{n-1}$ is the twisted case of $A_{n-1}$, and its product is the same one with the factors $q^i - (-1)^i$ in place of $q^i - 1$, the sign coming from the twist by the diagram automorphism. The projective orders divide by the centre, whose order is the displayed gcd. The verification accompanying this article recomputes the formulas for small $n$ and $q$.
 
 **Example.** $|\mathrm{PSL}_2(q)| = q(q^2-1)/\gcd(2,q-1)$ is $60$ for $q = 4$ and $q = 5$ (so $\mathrm{PSL}_2(4)\cong\mathrm{PSL}_2(5)$), $168$ for $q = 7$, $360$ for $q = 9$, and $6$ and $12$ for $q = 2,3$; the last two are the non-simple cases $\mathrm{PSL}_2(2)\cong S_3$ and $\mathrm{PSL}_2(3) \cong A_4$.
 
@@ -109,7 +109,7 @@ $$
 
 **Proposition.** For an irreducible root system of rank $n$ with $N$ positive roots, the order of the simply connected group is a polynomial in $q$ of degree $2N+n$, equal to the number of roots plus the rank, that is, the dimension of the associated semisimple Lie algebra; the Coxeter number $h$ is the largest degree and appears as the largest factor $q^h - 1$.
 
-**Proof.** The degree is $N + \sum_i d_i$; since $\sum_i(d_i-1) = N$ by the proposition above, $\sum_i d_i = N + n$, and the degree is $N + N + n = 2N + n$. The number of roots is $2N$, and the Lie algebra has dimension $2N + n$; the identification of that dimension with the sum is standard. For $E_8$ the degree is $240 + 8 = 248$, matching the dimension of the exceptional Lie algebra of type $E_8$; for $G_2$ it is $12 + 2 = 14$, and for $F_4$ it is $48 + 4 = 52$. $\square$
+**Proof.** The degree is $N + \sum_i d_i$; since $\sum_i(d_i-1) = N$ by the proposition above, $\sum_i d_i = N + n$, and the degree is $N + N + n = 2N + n$. The number of roots is $2N$, and the Lie algebra has dimension $2N + n$; the identification of that dimension with the sum is standard. For $E_8$ the degree is $240 + 8 = 248$, matching the dimension of the exceptional Lie algebra of type $E_8$; for $G_2$ it is $12 + 2 = 14$, and for $F_4$ it is $48 + 4 = 52$.
 
 ### The Sixteen Families
 
@@ -168,7 +168,7 @@ $$
 
 **Theorem (simplicity of the groups of Lie type).** Let $G$ be a group of Lie type, simple in the sense that the underlying root system is simple and the group is the adjoint or simply connected group modulo its centre. Then $G$ is simple, with the following exceptions: $\mathrm{PSL}_2(2) \cong S_3$ and $\mathrm{PSL}_2(3) \cong A_4$ are not simple; $\mathrm{PSU}_3(2)$ is solvable of order $72$; $\mathrm{Sp}_4(2) \cong S_6$ has a simple derived subgroup $\mathrm{Sp}_4(2)' \cong A_6$; $G_2(2)$ has a simple derived subgroup $G_2(2)' \cong \mathrm{PSU}_3(3)$; ${}^2G_2(3)$ has a simple derived subgroup ${}^2G_2(3)' \cong \mathrm{PSL}_2(8)$; and ${}^2F_4(2)$ has a simple derived subgroup of index $2$, the Tits group ${}^2F_4(2)'$.
 
-**Proof sketch.** The centre of the simply connected group is computed from the lattice of the root system: it is $\operatorname{Hom}(P/Q, \mathbb{F}_q^\times)$, where $Q \subseteq P$ are the root and weight lattices, so its order is the connection index $\det A$. Simplicity is then proved by showing that a normal subgroup containing a root subgroup is everything, and that a nontrivial normal subgroup must contain a root subgroup; the exceptional small cases are checked directly. $\square$
+**Proof sketch.** The centre of the simply connected group is computed from the lattice of the root system: it is $\operatorname{Hom}(P/Q, \mathbb{F}_q^\times)$, where $Q \subseteq P$ are the root and weight lattices, so its order is the connection index $\det A$. Simplicity is then proved by showing that a normal subgroup containing a root subgroup is everything, and that a nontrivial normal subgroup must contain a root subgroup; the exceptional small cases are checked directly.
 
 **Theorem (classification of the finite simple groups of Lie type).** The finite simple groups of Lie type are exactly the adjoint groups $G(\Phi,q)$ for $\Phi$ simple, together with the twisted groups listed above, with the small exceptions in the simplicity theorem replaced by their simple derived subgroups. The complete list of isomorphisms and coincidences among them is finite and known:
 
@@ -186,7 +186,7 @@ together with $B_n(q)\cong C_n(q)$ for $q$ even, $\Omega_{2n+1}(q)\cong\mathrm{S
 
 **Proposition.** The groups of type $A_1$ are $\mathrm{PSL}_2(q)$, of order $q(q^2-1)/\gcd(2,q-1)$; they are simple for $q \geq 4$, with the exceptions $q = 2,3$ giving $S_3$ and $A_4$.
 
-**Proof sketch.** The root system $A_1$ has $N = 1$ and Weyl group $W = S_2$ of degrees $2$; the order formula gives $q^1(q^2-1) = q(q^2-1)$ for the simply connected group, which is $\mathrm{SL}_2(q)$, and the centre has order $\gcd(2,q-1)$, giving the projective order. Simplicity for $q \geq 4$ is the classical simplicity of $\mathrm{PSL}_2(q)$, proved by its doubly transitive action on the projective line; the linear-algebraic construction of that action belongs, and the argument itself is standard: the conjugates of a nonidentity unipotent element generate the group when $q \geq 4$, while the small cases $q = 2,3$ have no such element. $\square$
+**Proof sketch.** The root system $A_1$ has $N = 1$ and Weyl group $W = S_2$ of degrees $2$; the order formula gives $q^1(q^2-1) = q(q^2-1)$ for the simply connected group, which is $\mathrm{SL}_2(q)$, and the centre has order $\gcd(2,q-1)$, giving the projective order. Simplicity for $q \geq 4$ is the classical simplicity of $\mathrm{PSL}_2(q)$, proved by its doubly transitive action on the projective line; the linear-algebraic construction of that action belongs, and the argument itself is standard: the conjugates of a nonidentity unipotent element generate the group when $q \geq 4$, while the small cases $q = 2,3$ have no such element.
 
 **Example (the smallest simple group).** $\mathrm{PSL}_2(4) \cong \mathrm{PSL}_2(5)\cong A_5$ has order $60$; $\mathrm{PSL}_2(7)$ has order $168$ and is the second smallest nonabelian simple group; $\mathrm{PSL}_2(9) \cong A_6$ has order $360$; and $\mathrm{PSL}_2(11)$ has order $660$. The orders $60, 168, 360, 504, 660$ are the beginning of the list of orders of nonabelian simple groups.
 
@@ -200,7 +200,7 @@ $$
 
 More generally $B_n(q) \cong C_n(q)$ for every $n$ when $q$ is even, and $\Omega_{2n+1}(q) \cong \mathrm{Sp}_{2n}(q)$ for every $n$ when $q$ is odd; these **dualities** are the reason the classical families are counted as four rather than five.
 
-**Proof sketch.** The isomorphisms among the small groups are proved by exhibiting explicit actions: $\mathrm{Sp}_4(2)$ has a doubly transitive action on six points with image all of $S_6$, and the other coincidences are checked by comparing orders and generating sets. The duality $B_n(q)\cong C_n(q)$ for even $q$ holds because the symplectic form and the orthogonal form in odd dimension coincide in characteristic $2$. $\square$
+**Proof sketch.** The isomorphisms among the small groups are proved by exhibiting explicit actions: $\mathrm{Sp}_4(2)$ has a doubly transitive action on six points with image all of $S_6$, and the other coincidences are checked by comparing orders and generating sets. The duality $B_n(q)\cong C_n(q)$ for even $q$ holds because the symplectic form and the orthogonal form in odd dimension coincide in characteristic $2$.
 
 **Example.** The group $\mathrm{Sp}_4(2) \cong S_6$ of order $720$ is the largest of the small coincidences: the smallest symplectic group that is not alternating is $\mathrm{PSp}_4(3) \cong \mathrm{PSU}_4(2)$ of order $25920$, and the smallest Suzuki group $\mathrm{Sz}(8)$ has order $29120$, just larger.
 

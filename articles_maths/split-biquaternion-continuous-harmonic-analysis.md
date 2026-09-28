@@ -1,3 +1,4 @@
+
 # __Split-Biquaternion Continuous Harmonic Analysis__
 
 ## Introduction
@@ -14,7 +15,7 @@ $$
 \tilde{Q} = Q_0 e_0 + Q_1 e_1 + Q_2 e_2 + Q_3 e_3, \qquad Q_\mu = q_\mu + j q'_\mu, \quad q_\mu, q'_\mu \in \mathbb{R}.
 $$
 
-The split complex unit is $j$, with $j^2 = +1$, and it commutes with the quaternion units. The quaternion conjugate is $\bar{\tilde{Q}} = Q_0 e_0 - \mathbf{Q}$. The norm form is $N(\tilde{Q}) = \tilde{Q} \bar{\tilde{Q}}$.
+The split complex unit is $j$, with $j^2 = +1$, and it commutes with the quaternion units. The quaternion conjugate is $\bar{\tilde{Q}} = Q_0 e_0 - \mathbf{Q}$. The split-biquaternion norm is $N(\tilde{Q}) = \tilde{Q} \bar{\tilde{Q}}$.
 
 The **idempotent components** of $\tilde{Q}$ are the real quaternions
 
@@ -134,7 +135,7 @@ $$
 \lim_{|\omega| \to \infty} \|F(\omega)\|_E = 0.
 $$
 
-**Proof.** The kernel is bounded and the integrand is integrable. The standard proof for the complex Fourier transform applies component-wise, and the result follows from the component-wise statement. $\square$
+**Proof.** The kernel is bounded and the integrand is integrable. The standard proof for the complex Fourier transform applies component-wise, and the result follows from the component-wise statement.
 
 ### The Inversion Theorem
 
@@ -144,7 +145,7 @@ $$
 f(t) = \int_{-\infty}^{\infty} \overline{W(t, \omega)} F(\omega) \, d\omega.
 $$
 
-**Proof.** The proof follows the standard proof of the inversion theorem for the complex Fourier transform, applied component-wise in the idempotent basis. The key step is the approximation of the identity by a sequence of Gaussian kernels, and the result follows from the corresponding statement for the quaternion transform in each component. $\square$
+**Proof.** The proof follows the standard proof of the inversion theorem for the complex Fourier transform, applied component-wise in the idempotent basis. The key step is the approximation of the identity by a sequence of Gaussian kernels, and the result follows from the corresponding statement for the quaternion transform in each component.
 
 ### The Plancherel Theorem
 
@@ -154,7 +155,7 @@ $$
 \int_{-\infty}^{\infty} \|f(t)\|_E^2 \, dt = \int_{-\infty}^{\infty} \|F(\omega)\|_E^2 \, d\omega.
 $$
 
-**Proof.** The proof follows the standard proof of the Plancherel theorem, using the factorization into quaternion transforms established below. Since the factorization is an isometry on each quaternion component, and the idempotent decomposition is a linear isomorphism that scales the Euclidean norm by the same factor $\sqrt{2}$ on the signal and on the transform (from $\|\tilde{Q}\|_E^2 = \frac12(\|\tilde{Q}_+\|_E^2 + \|\tilde{Q}_-\|_E^2)$, so that the factor cancels between the two sides), the total norm is preserved. $\square$
+**Proof.** The proof follows the standard proof of the Plancherel theorem, using the factorization into quaternion transforms established below. Since the factorization is an isometry on each quaternion component, and the idempotent decomposition is a linear isomorphism that scales the Euclidean norm by the same factor $\sqrt{2}$ on the signal and on the transform (from $\|\tilde{Q}\|_E^2 = \frac12(\|\tilde{Q}_+\|_E^2 + \|\tilde{Q}_-\|_E^2)$, so that the factor cancels between the two sides), the total norm is preserved.
 
 **Corollary (Parseval).** For $f, g \in L^2(\mathbb{R}, \mathbb{H}_{\mathbb{D}})$,
 
@@ -264,8 +265,6 @@ $$
 \mathcal{F}[f * g](\omega) = \int_{-\infty}^{\infty} W(\tau, \omega) f(\tau) \, d\tau \cdot \int_{-\infty}^{\infty} W(s, \omega) g(s) \, ds = \mathcal{F}[f](\omega) \cdot \mathcal{F}[g](\omega).
 $$
 
-$\square$
-
 **Corollary (right-kernel case).** For the transform with the kernel on the right,
 
 $$
@@ -316,13 +315,13 @@ $$
 \mathcal{F}[\Box \tilde{F}](\omega) = \left((2\pi \omega_0)^2 - (2\pi)^2 (\omega_1^2 + \omega_2^2 + \omega_3^2)\right) \mathcal{F}[\tilde{F}](\omega) = -4\pi^2 (\omega_0^2 - \omega_1^2 - \omega_2^2 - \omega_3^2) \mathcal{F}[\tilde{F}](\omega).
 $$
 
-The multiplier is a scalar (times $e_0$), and it vanishes on the **light cone**
+The multiplier is a scalar (times $e_0$), and it vanishes on the **null cone**
 
 $$
 \omega_0^2 = \omega_1^2 + \omega_2^2 + \omega_3^2.
 $$
 
-So the Fourier transform of a solution of $\Box \tilde{F} = 0$ is supported on the light cone.
+So the Fourier transform of a solution of $\Box \tilde{F} = 0$ is supported on the null cone.
 
 ### The Square of the Gradient
 
@@ -362,7 +361,7 @@ where $\tilde{\nabla}$ on the right is the quaternion gradient acting on each co
 
 ### Functions of Vanishing Norm
 
-A function $f : \mathbb{R} \to \mathbb{H}_{\mathbb{D}}$ may take values of vanishing norm form on a set of positive measure. In the idempotent basis, such values are exactly those with a vanishing idempotent component: $f_+(t) = 0$ or $f_-(t) = 0$.
+A function $f : \mathbb{R} \to \mathbb{H}_{\mathbb{D}}$ may take values of vanishing norm on a set of positive measure. In the idempotent basis, such values are exactly those with a vanishing idempotent component: $f_+(t) = 0$ or $f_-(t) = 0$.
 
 ### Consequences for the Transform
 
@@ -375,7 +374,7 @@ The precise condition under which the transform is invertible on a function with
 
 The vanishing-norm issue is a genuinely split biquaternion feature. It does not arise in the quaternion Fourier transform, because the quaternion algebra is a division algebra. It arises in the biquaternion case as well, but the zero divisor structure is different: in the split biquaternion case, the zero divisor set is the union of two four-dimensional linear subspaces, while in the biquaternion case, it is a complex cone of complex dimension $3$ (real dimension $6$).
 
-The issue can be avoided by restricting to functions whose values lie in a subspace where the norm form is nonzero, such as the quaternion subspace $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$. On the quaternion subspace, every nonzero value is invertible, and the transform is invertible on all functions.
+The issue can be avoided by restricting to functions whose values lie in a subspace where the split-biquaternion norm is nonzero, such as the quaternion subspace $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$. On the quaternion subspace, every nonzero value is invertible, and the transform is invertible on all functions.
 
 ## The Relation to the Discrete Transform
 
@@ -426,7 +425,7 @@ The continuous split-biquaternion Fourier transform is defined by the kernel $W(
 
 The transform is invertible on functions where both idempotent components are nonzero almost everywhere, and it satisfies the Riemann–Lebesgue lemma, the inversion theorem, and the Plancherel theorem. It factorizes into eight complex Fourier transforms for a general split-biquaternion-valued function, four for a quaternion-valued function, and two for a split-complex-valued function. The convolution theorem holds, with the non-commutativity inherited from the quaternion case.
 
-The transform diagonalizes the constant-coefficient differential operators of the analysis article: the gradient becomes a split-biquaternion-valued multiplier, the d'Alembertian becomes a scalar multiplier vanishing on the light cone, and the convective derivative becomes a split-biquaternion-valued multiplier depending on the velocity. In the idempotent basis, the operators act componentwise, and the transform diagonalizes them in each quaternion component.
+The transform diagonalizes the constant-coefficient differential operators of the analysis article: the gradient becomes a split-biquaternion-valued multiplier, the d'Alembertian becomes a scalar multiplier vanishing on the null cone, and the convective derivative becomes a split-biquaternion-valued multiplier depending on the velocity. In the idempotent basis, the operators act componentwise, and the transform diagonalizes them in each quaternion component.
 
 The vanishing-norm issue is a genuinely split biquaternion feature: functions that take zero-divisor values on a set of positive measure are not necessarily recoverable from their transform, and the precise invertibility condition is not known.
 
@@ -444,7 +443,7 @@ The key simplification relative to the biquaternion case is the **idempotent dec
 | $\tilde\Pi_\pm = \tfrac{1}{2}(1 \pm j)$ | Idempotents of $\mathbb{D}$ |
 | $\tilde{Q} = \sum_{\mu=0}^{3} Q_\mu e_\mu$, $Q_\mu = q_\mu + j q'_\mu$ | General split biquaternion |
 | $\tilde{Q}_\pm = \tilde{Q} \tilde\Pi_\pm$ | Idempotent components |
-| $N(\tilde{Q}) = \tilde{Q} \bar{\tilde{Q}}$ | Norm form |
+| $N(\tilde{Q}) = \tilde{Q} \bar{\tilde{Q}}$ | Split-Biquaternion norm |
 | $\rho$ | A root of $-1$ in $\mathbb{H}$, $\rho^2 = -1$ |
 | $K_\rho(\mathbf{x})$ | Split biquaternion Fourier kernel |
 | $\hat{f}(\xi)$ | Continuous split-biquaternion Fourier transform |

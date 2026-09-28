@@ -228,7 +228,7 @@ Verified for the two codes: the images of the four group-algebra idempotents of 
 
 ## Open Questions
 
-**1. The stabilizer group and the norm form.** The code is the image of an idempotent of $\mathbb{M}_+^{\otimes n}$. The norm form of a tensor product factors, $N(\tilde{g}\otimes\tilde{h}) = N(\tilde{g})N(\tilde{h})$, and the stabilizer elements are involutions with $N(\tilde{g}) = e_0$. Does the norm form give a criterion for the existence of codes, or a measure of the "distance" of a code, in the algebra?
+**1. The stabilizer group and the biquaternion norm.** The code is the image of an idempotent of $\mathbb{M}_+^{\otimes n}$. The biquaternion norm of a tensor product factors, $N(\tilde{g}\otimes\tilde{h}) = N(\tilde{g})N(\tilde{h})$, and the stabilizer elements are involutions with $N(\tilde{g}) = e_0$. Does the biquaternion norm give a criterion for the existence of codes, or a measure of the "distance" of a code, in the algebra?
 
 **2. Codes and the two sectors.** The algebra splits into $\mathbb{M}_-$ and $\mathbb{M}_+$; error correction lives in $\mathbb{M}_+$. Is there an algebraic role for the material sector in the channel that produces the errors, given that the material sector is the classical one?
 

@@ -221,7 +221,7 @@ $$
 (e_nu)(e_nv)+(e_nv)(e_nu)=e_nu e_nv+e_nv e_nu=-e_n^2(uv+vu)=-(uv+vu)=0,
 $$
 
-where the middle step uses that $u$ and $v$ both anticommute with $e_n$ and $e_n^2=-1$. The products $e_ne_i$ therefore satisfy the Clifford relations of the form $q$ restricted to $e_n^\perp$, and by the universal property they generate a quotient of $\mathrm{Cl}(e_n^\perp,q)$. Both sides have dimension $2^{n-1}$, so the map is an isomorphism. $\square$
+where the middle step uses that $u$ and $v$ both anticommute with $e_n$ and $e_n^2=-1$. The products $e_ne_i$ therefore satisfy the Clifford relations of the form $q$ restricted to $e_n^\perp$, and by the universal property they generate a quotient of $\mathrm{Cl}(e_n^\perp,q)$. Both sides have dimension $2^{n-1}$, so the map is an isomorphism.
 
 **Low-dimensional instances.** For $\mathrm{Cl}_{0,2}$ one has $\mathrm{Cl}^0_{0,2}=\operatorname{span}\{1,e_1e_2\}\cong\mathbb{C}$; for $\mathrm{Cl}_{3,0}$ one has $\mathrm{Cl}^0_{3,0}\cong\mathbb{H}$, as computed above; and for $\mathrm{Cl}_{1,3}$ the recursion applied to a generator of square $-1$ gives $\mathrm{Cl}^0_{1,3}\cong\mathrm{Cl}_{1,2}$, which is $M_2(\mathbb{C})$ by the identification of the next section, the same algebra that is used in the biquaternion articles. The recursion holds whenever a generator of square $-1$ exists; when a generator of square $+1$ is used instead, the same computation returns $-q$ in place of $q$, which is why the sign of the form matters and why the recursion alternates between the two definite families.
 
@@ -237,7 +237,7 @@ $$
 
 the complex Clifford algebra of the complexified form, and the complexification depends only on $n=\dim V$, not on the signature.
 
-**Proof.** The complexification of the tensor algebra is $T(V)\otimes_{\mathbb{R}}\mathbb{C}\cong T(V\otimes_{\mathbb{R}}\mathbb{C})$, and the ideal of the Clifford relations is carried to the ideal of the relations $v^2=q(v)1$ over $\mathbb{C}$; the quotient is $\mathbb{C}\mathrm{l}(V\otimes_{\mathbb{R}}\mathbb{C})$. For the second statement, over $\mathbb{C}$ every non-degenerate form can be put in the form $z_1^2+\cdots+z_n^2$ by a linear change of coordinates, since $\pm1$ are both squares over $\mathbb{C}$; hence the complex Clifford algebra depends only on $n$. $\square$
+**Proof.** The complexification of the tensor algebra is $T(V)\otimes_{\mathbb{R}}\mathbb{C}\cong T(V\otimes_{\mathbb{R}}\mathbb{C})$, and the ideal of the Clifford relations is carried to the ideal of the relations $v^2=q(v)1$ over $\mathbb{C}$; the quotient is $\mathbb{C}\mathrm{l}(V\otimes_{\mathbb{R}}\mathbb{C})$. For the second statement, over $\mathbb{C}$ every non-degenerate form can be put in the form $z_1^2+\cdots+z_n^2$ by a linear change of coordinates, since $\pm1$ are both squares over $\mathbb{C}$; hence the complex Clifford algebra depends only on $n$.
 
 **The complex classification.** Writing $\mathbb{C}\mathrm{l}_n$ for the complex Clifford algebra of an $n$-dimensional non-degenerate form, the complex case is periodic of period two:
 

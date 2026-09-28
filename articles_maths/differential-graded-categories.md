@@ -18,9 +18,9 @@ Throughout, $k$ is a commutative ring with identity, later a field; a complex of
 1. a class of objects $\operatorname{Ob}\mathcal{A}$;
 2. for each pair $x,y$ of objects a complex of $k$-modules $\operatorname{Hom}_{\mathcal{A}}(x,y)$ whose elements are the **morphisms of degree $n$** in degree $n$;
 3. for each triple $x,y,z$ a morphism of complexes $\circ : \operatorname{Hom}_{\mathcal{A}}(y,z)\otimes_k\operatorname{Hom}_{\mathcal{A}}(x,y) \to \operatorname{Hom}_{\mathcal{A}}(x,z)$, the **composition**, satisfying
-   $$
+$$
    (f\circ g)\circ h = f\circ(g\circ h) ;
-   $$
+$$
 4. for each object $x$ a degree-$0$ cycle $1_x \in \operatorname{Hom}_{\mathcal{A}}(x,x)$ with $1_x\circ f = f$ and $g\circ1_x = g$.
 
 The composition being a morphism of complexes means $d(f\circ g) = (df)\circ g + (-1)^{\lvert f\rvert}f\circ dg$, the graded Leibniz rule; the objects and the cycles of degree $0$ together with homotopy classes of morphisms will be seen to form the **homotopy category**.
@@ -49,7 +49,7 @@ with differential $(df)(m) = d_Nf(m) - (-1)^{\lvert f\rvert}f(d_Mm)$ and composi
 
 **Proposition.** Let $\mathcal{A}$ be a DG category and $x,y\in\operatorname{Ob}\mathcal{A}$. Then $\operatorname{Hom}_{\mathcal{A}}(x,x)$ is a DGA, the **endomorphism DGA** of $x$, and $\operatorname{Hom}_{\mathcal{A}}(x,y)$ is a DG left module over $\operatorname{Hom}(y,y)$ and a DG right module over $\operatorname{Hom}(x,x)$, so that it is a DG bimodule.
 
-*Proof.* The composition restricts to $\operatorname{Hom}(x,x)\otimes\operatorname{Hom}(x,x)\to\operatorname{Hom}(x,x)$, which is associative with the unit $1_x$ and compatible with the differential; the graded Leibniz rule is inherited from the composition being a chain map. The module structures are the two restrictions of the composition, and their compatibility is the associativity of $\circ$. $\square$
+*Proof.* The composition restricts to $\operatorname{Hom}(x,x)\otimes\operatorname{Hom}(x,x)\to\operatorname{Hom}(x,x)$, which is associative with the unit $1_x$ and compatible with the differential; the graded Leibniz rule is inherited from the composition being a chain map. The module structures are the two restrictions of the composition, and their compatibility is the associativity of $\circ$.
 
 ## Modules over a Differential Graded Category
 
@@ -65,7 +65,7 @@ with differential $(df)(m) = d_Nf(m) - (-1)^{\lvert f\rvert}f(d_Mm)$ and composi
 2. The compact DG modules are exactly the DG modules that are homotopy equivalent to a direct summand of a finite semi-free module, and they form a DG category $\mathrm{perf}(\mathcal{A})$ closed under the operations of shift and cone.
 3. The representable modules $\mathbf{h}_x$ are compact when $\mathcal{A}$ has finite-dimensional Hom complexes, and the Yoneda embedding $\mathcal{A}\to\mathrm{perf}(\mathcal{A})$, $x\mapsto\mathbf{h}_x$, is a quasi-fully faithful DG functor.
 
-*Proof (outline).* Statement 1 is the generator-by-generator construction of the previous article carried out over the many objects of $\mathcal{A}$; statement 2 is the identification of the compact objects of a category of DG modules with the finite semi-free ones, which is the same argument as the corresponding statement for modules over a ring, applied to the free modules on the representables. Statement 3 follows from the Yoneda lemma: $\operatorname{Hom}(\mathbf{h}_x,N)\cong N(x)$, so $\operatorname{Hom}(\mathbf{h}_x,-)$ commutes with direct sums, and the finite-dimensionality of the Hom complexes of $\mathcal{A}$ makes the direct sum of finitely many representables compact. $\square$
+*Proof (outline).* Statement 1 is the generator-by-generator construction of the previous article carried out over the many objects of $\mathcal{A}$; statement 2 is the identification of the compact objects of a category of DG modules with the finite semi-free ones, which is the same argument as the corresponding statement for modules over a ring, applied to the free modules on the representables. Statement 3 follows from the Yoneda lemma: $\operatorname{Hom}(\mathbf{h}_x,N)\cong N(x)$, so $\operatorname{Hom}(\mathbf{h}_x,-)$ commutes with direct sums, and the finite-dimensionality of the Hom complexes of $\mathcal{A}$ makes the direct sum of finitely many representables compact.
 
 ## The Derived Category of a DG Category
 
@@ -77,12 +77,12 @@ with differential $(df)(m) = d_Nf(m) - (-1)^{\lvert f\rvert}f(d_Mm)$ and composi
 2. The compact objects of $D(\mathcal{A})$ are the objects of $H^0(\mathrm{perf}(\mathcal{A}))$, and $D(\mathcal{A})$ is compactly generated when $\mathcal{A}$ has finitely many objects and finite-dimensional Hom complexes.
 3. A DG functor $F : \mathcal{A}\to\mathcal{B}$ induces a triangulated functor $D(\mathcal{A})\to D(\mathcal{B})$; $F$ is a quasi-equivalence if and only if $F$ is fully faithful on $H^0$ and essentially surjective, and then $D(\mathcal{A})\simeq D(\mathcal{B})$.
 4. Every quasi-equivalence of DG categories induces an equivalence of derived categories, and the **derived Morita theory** states the converse: two small DG categories have equivalent derived categories if and only if their DG categories of compact modules are quasi-equivalent,
-   $$
+$$
    D(\mathcal{A})\simeq D(\mathcal{B}) \iff \mathrm{perf}(\mathcal{A})\simeq_{\mathrm{qe}}\mathrm{perf}(\mathcal{B}) ,
-   $$
+$$
    where $\simeq_{\mathrm{qe}}$ denotes quasi-equivalence. In that case $\mathcal{A}$ and $\mathcal{B}$ are **derived Morita equivalent**.
 
-*Proof (outline).* Statement 1: the shift and the cone are given by the corresponding operations on complexes, and the axioms of a triangulated category are verified on the level of cones; statement 2 is the compactness criterion for the semi-free modules; statement 3 is the Yoneda embedding applied to $\mathcal{B}$-modules restricted along $F$. Statement 4 is the many-object form of the tilting theory: a quasi-equivalence $\mathrm{perf}(\mathcal{A})\to\mathrm{perf}(\mathcal{B})$ induces an equivalence of the DG categories of all modules and hence of the derived categories, while an equivalence of derived categories preserves the compact objects and restricts to a quasi-equivalence of the compact DG categories. $\square$
+*Proof (outline).* Statement 1: the shift and the cone are given by the corresponding operations on complexes, and the axioms of a triangulated category are verified on the level of cones; statement 2 is the compactness criterion for the semi-free modules; statement 3 is the Yoneda embedding applied to $\mathcal{B}$-modules restricted along $F$. Statement 4 is the many-object form of the tilting theory: a quasi-equivalence $\mathrm{perf}(\mathcal{A})\to\mathrm{perf}(\mathcal{B})$ induces an equivalence of the DG categories of all modules and hence of the derived categories, while an equivalence of derived categories preserves the compact objects and restricts to a quasi-equivalence of the compact DG categories.
 
 **Example (Morita equivalence of algebras as a special case).** Let $A$ and $B$ be $k$-algebras, regarded as DG categories with one object, concentrated in degree $0$. Then $D(\mathcal{A})\simeq D(\mathcal{B})$ if and only if $A$ and $B$ are Morita equivalent in the classical sense: the equivalence of derived categories of DG modules restricts to an equivalence of the categories of modules, because the objects in degree $0$ are the only ones present. The derived Morita theory of the theorem is therefore a genuine generalisation of the Morita equivalence of algebras, in which a DG category can have several objects and a nontrivial cohomological grading, and it is the reason the theory is the natural home of tilting theory.
 
@@ -108,7 +108,7 @@ The categories $D(\mathcal{A})$ of the previous section are triangulated, and th
 
 **Proposition.** A DG category is pretriangulated if and only if $H^0(\mathcal{A})$ can be equipped with a triangulation for which the shift functor is induced by the shift of the Hom complexes; every DG category has a pretriangulated hull, and the construction is functorial and universal.
 
-*Proof.* If the cones exist, the octahedral and rotation axioms for the triangles canonically induced by cones follow from the corresponding identities for mapping cones of complexes, which hold in any DG category by the same computations as in the category of complexes. Conversely a triangulation determines the cones up to isomorphism, and the morphisms between cones are the morphisms induced on $H^0$. The pretriangulated hull is constructed by adjoining the shifts and the cones formally, that is, by taking the smallest pretriangulated DG subcategory of the DG module category containing the image of the Yoneda embedding. $\square$
+*Proof.* If the cones exist, the octahedral and rotation axioms for the triangles canonically induced by cones follow from the corresponding identities for mapping cones of complexes, which hold in any DG category by the same computations as in the category of complexes. Conversely a triangulation determines the cones up to isomorphism, and the morphisms between cones are the morphisms induced on $H^0$. The pretriangulated hull is constructed by adjoining the shifts and the cones formally, that is, by taking the smallest pretriangulated DG subcategory of the DG module category containing the image of the Yoneda embedding.
 
 **Definition.** Let $\mathcal{A}$ be a pretriangulated DG category and let $\mathcal{B}$ be a full DG subcategory that is pretriangulated. The **DG quotient** $\mathcal{A}/\mathcal{B}$ is the DG category with the same objects as $\mathcal{A}$ and Hom complexes obtained from those of $\mathcal{A}$ by adjoining formal inverses to the morphisms whose cone lies in $\mathcal{B}$; its $H^0$ is the Verdier quotient of triangulated categories, $H^0(\mathcal{A}/\mathcal{B}) = H^0(\mathcal{A})/H^0(\mathcal{B})$.
 

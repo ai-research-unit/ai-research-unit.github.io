@@ -10,11 +10,11 @@ Its question is the one the Dirac and Maxwell companion articles asked for their
 - **The structural finding.** The scalar field takes values in the **center** $\mathbb{C}_{\mathbb{B}}$ of the algebra, and the algebra supplies no bosonic ladder of its own. The companion article *Fock Space and Creation/Annihilation Operators in Biquaternionic Form* proves that no pair $\tilde a,\tilde a^\dagger\in\mathbb{B}$ satisfies $[\tilde a,\tilde a^\dagger]=e_0$: the trace of a commutator vanishes while $\mathrm{Tr}(e_0)=2$. The mode algebra of the quantized scalar field is therefore the Weyl algebra of an imported module, not an object of $\mathbb{B}$. Where the Dirac field needed a $\mathbb{Z}/2$ grading that the algebra does not contain, and the Maxwell field needed a gauge-fixing principle that the algebra does not supply, the scalar field needs nothing from the algebra at all — and that is itself the finding.
 - **The open part.** The $\mathbb{B}$-intrinsic operator field, the intrinsic Lagrangian and conjugate momentum, the biquaternion Fock space, and the regularization of the vacuum energy are not settled here, exactly as in the two parent quantizations.
 
-The article is organised as follows. The next section fixes the classical field, its action and its conjugate momentum, and records why the Legendre transform is regular here — unlike both the Dirac and the Maxwell cases. The following section reads the field as a central-valued object and fixes the mass shell as a level set of the norm form. The next section states the equal-time commutation relations and the reasons they are commutators. The section after that carries out the expansion in the plane waves of the parent equation. The next section derives the mode algebra and the Fock space, and states the bosonic obstruction. A section gives the Hamiltonian, the four-momentum and the charge. The following section treats the commutator function and microcausality. The article closes with an explicit accounting of what is standard and what is open.
+The article is organised as follows. The next section fixes the classical field, its action and its conjugate momentum, and records why the Legendre transform is regular here — unlike both the Dirac and the Maxwell cases. The following section reads the field as a central-valued object and fixes the mass shell as a level set of the biquaternion norm. The next section states the equal-time commutation relations and the reasons they are commutators. The section after that carries out the expansion in the plane waves of the parent equation. The next section derives the mode algebra and the Fock space, and states the bosonic obstruction. A section gives the Hamiltonian, the four-momentum and the charge. The following section treats the commutator function and microcausality. The article closes with an explicit accounting of what is standard and what is open.
 
 - Companion article *The Klein–Gordon Equation in Biquaternionic Form*, for the field equation, its two frequency branches, the mass-shell condition, and the conserved current.
 - Companion article *Noether's Theorem in Biquaternionic Form*, for the scalar Lagrangian, its central scalar form, the $U(1)$ current $\tilde J\in\mathbb{M}_-$, and the energy–momentum tensor.
-- Companion article *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*, for the material four-wavevector, the norm form, and the $ict$ coordinate.
+- Companion article *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*, for the material four-wavevector, the biquaternion norm, and the $ict$ coordinate.
 - Companion article *Fock Space and Creation/Annihilation Operators in Biquaternionic Form*, for the trace argument against a bosonic mode in $\mathbb{B}$, and for the exterior and symmetric algebras as the fermionic and bosonic Fock spaces.
 - Companion article *The Spin–Statistics Theorem in Biquaternionic Form*, for the connection between spin and the choice of bracket.
 - Companion article *Canonical Quantization of the Biquaternion Dirac Field*, for the contrasting constrained quantization and the grading the algebra does not supply.
@@ -73,7 +73,7 @@ $$
 
 with $\phi_1,\phi_2$ the two real scalar fields of the sector in the normalization in which the kinetic term is $\frac12[(\partial\phi_1)^2+(\partial\phi_2)^2]$ — the component normalization that the companion articles on the quantized field and on symmetry breaking use throughout — and the complex structure that makes the two into a single complex field is the central scalar imaginary $i$. The scalar field is, in this precise sense, the field of the center; the spinor module on which the Dirac field lives is not involved.
 
-The quadratic form of the theory is the norm form. The material four-wavevector is
+The quadratic form of the theory is the biquaternion norm. The material four-wavevector is
 
 $$
 \tilde{K}=i\frac{\omega}{c}\,e_0+\mathbf{k}\in\mathbb{M}_-,
@@ -89,7 +89,7 @@ $$
 N(\tilde{K})=\tilde{K}\bar{\tilde{K}}=-\frac{m^2c^2}{\hbar^2}\,e_0 .
 $$
 
-**Verification.** For $\mu=0.7$ and the three on-shell wavevectors $(1.3,0.2,-0.5)$, $(-0.9,0.4,0.1)$, $(0.6,0.6,-0.3)$, the direct biquaternion product gave $\tilde{K}\bar{\tilde{K}}=-0.49\,e_0$ to twelve decimal places in every case, with the vector part vanishing to machine precision, and the phase identity $\mathrm{Sc}(\tilde{K}\bar{\tilde{Q}})=\mathbf{k}\cdot\mathbf{x}-\omega t$ was reproduced exactly on an independent four-vector. The mass shell is a level set of the norm form, in the sense recorded by the parent article.
+**Verification.** For $\mu=0.7$ and the three on-shell wavevectors $(1.3,0.2,-0.5)$, $(-0.9,0.4,0.1)$, $(0.6,0.6,-0.3)$, the direct biquaternion product gave $\tilde{K}\bar{\tilde{K}}=-0.49\,e_0$ to twelve decimal places in every case, with the vector part vanishing to machine precision, and the phase identity $\mathrm{Sc}(\tilde{K}\bar{\tilde{Q}})=\mathbf{k}\cdot\mathbf{x}-\omega t$ was reproduced exactly on an independent four-vector. The mass shell is a level set of the biquaternion norm, in the sense recorded by the parent article.
 
 ## Equal-Time Commutation Relations
 
@@ -178,7 +178,7 @@ $$
 \mathcal{H}_1=L^2\!\left(\mathbb{R}^3,\frac{d^3p}{(2\pi)^3\,2E_{\mathbf{p}}}\right),
 $$
 
-with the occupation basis $|n_{\mathbf{p}_1},n_{\mathbf{p}_2},\dots\rangle$ and the vacuum $|0\rangle$ annihilated by every $\hat a_{\mathbf{p}}$ and $\hat b_{\mathbf{p}}$. The symmetric projection is the standard bosonic construction and is carried by the commutator, exactly as the companion article *Fock Space and Creation/Annihilation Operators in Biquaternionic Form* records. The scalar Fock space is standard and imported; the biquaternion framework contributes the central phase and the norm-form reading of the dispersion, and nothing algebraic.
+with the occupation basis $|n_{\mathbf{p}_1},n_{\mathbf{p}_2},\dots\rangle$ and the vacuum $|0\rangle$ annihilated by every $\hat a_{\mathbf{p}}$ and $\hat b_{\mathbf{p}}$. The symmetric projection is the standard bosonic construction and is carried by the commutator, exactly as the companion article *Fock Space and Creation/Annihilation Operators in Biquaternionic Form* records. The scalar Fock space is standard and imported; the biquaternion framework contributes the central phase and the biquaternion-norm reading of the dispersion, and nothing algebraic.
 
 The obstruction to anything more is worth stating precisely, because it distinguishes the scalar case from the Dirac case. The mode operators $\hat a_{\mathbf{p}},\hat a_{\mathbf{p}}^\dagger$ are **not** elements of $\mathbb{B}$. They are elements of the Weyl algebra of the one-particle space, which is infinite-dimensional, and no finite-dimensional algebra can contain them: if $[\tilde a,\tilde a^\dagger]=c\,e_0$ held for $\tilde a,\tilde a^\dagger\in\mathbb{B}$, the trace would give $0=\mathrm{Tr}([\tilde a,\tilde a^\dagger])=c\,\mathrm{Tr}(e_0)=2c$, hence $c=0$. The companion article *Fock Space and Creation/Annihilation Operators in Biquaternionic Form* draws the consequence for the algebra: $\mathbb{B}\cong M_2(\mathbb{C})$ hosts exactly one **fermionic** mode and no bosonic mode at all. The scalar field, being bosonic, has no native one-mode core in $\mathbb{B}$; its ladder is a construction on an imported module. The contrast with the Dirac quantization is exact: there the algebra at least carried the one-mode anticommutator and the fermion-parity grading; here it carries neither the commutator nor any scalar analog of the grading.
 
@@ -281,7 +281,7 @@ $$
 
 the phases being central unitaries $e^{\pm i\,\mathrm{Sc}(\tilde{K}\bar{\tilde{Q}})}$ built from the material four-wavevector $\tilde{K}=iE_{\mathbf{p}}e_0+\mathbf{p}$; the mode commutators are $[\hat a_{\mathbf{p}},\hat a_{\mathbf{q}}^\dagger]=[\hat b_{\mathbf{p}},\hat b_{\mathbf{q}}^\dagger]=(2\pi)^3\delta^{(3)}(\mathbf{p}-\mathbf{q})$ and all others zero, and they reproduce the equal-time relation. The Fock space is the symmetric algebra of the one-particle space. The Hamiltonian is $:\!\hat H\!:=\int\frac{d^3p}{(2\pi)^3}E_{\mathbf{p}}(\hat a^\dagger\hat a+\hat b^\dagger\hat b)$ after normal ordering, and the normal-ordered charge has particles and antiparticles of opposite sign.
 
-The field's value space is the center $\mathbb{C}_{\mathbb{B}}$, and the algebra supplies no ladder for it: no pair in $\mathbb{B}$ satisfies $[\tilde a,\tilde a^\dagger]=e_0$, since the trace of a commutator vanishes while $\mathrm{Tr}(e_0)=2$. The scalar mode algebra is thus the Weyl algebra of an imported module. The quantization is a transcription of standard canonical quantization into the framework's notation; its distinctive content is the central-valuedness of the field, the norm-form reading of the mass shell, and the explicit determination that this sector, alone among the three, receives nothing algebraic from $\mathbb{B}$.
+The field's value space is the center $\mathbb{C}_{\mathbb{B}}$, and the algebra supplies no ladder for it: no pair in $\mathbb{B}$ satisfies $[\tilde a,\tilde a^\dagger]=e_0$, since the trace of a commutator vanishes while $\mathrm{Tr}(e_0)=2$. The scalar mode algebra is thus the Weyl algebra of an imported module. The quantization is a transcription of standard canonical quantization into the framework's notation; its distinctive content is the central-valuedness of the field, the biquaternion-norm reading of the mass shell, and the explicit determination that this sector, alone among the three, receives nothing algebraic from $\mathbb{B}$.
 
 ## Summary of Notation
 
@@ -290,16 +290,16 @@ The field's value space is the center $\mathbb{C}_{\mathbb{B}}$, and the algebra
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
 | $e_0=1,e_1,e_2,e_3$ | Quaternion basis, $e_k^2=-e_0$, $e_je_k=-\delta_{jk}e_0+\varepsilon_{jkl}e_l$ |
 | $i$ | Central scalar imaginary, $i^2=-1$ |
-| $\mathbb{M}_-,\mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
+| $\mathbb{M}_+,\mathbb{M}_-$ | Informational (Hermitian) and material (anti-Hermitian) sectors |
 | $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_0,ie_0\}$ | Center; the scalar field's value space |
-| $\tilde{Q}=ict\,e_0+\mathbf{x}$, $N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}$ | Material coordinate, $\in\mathbb{M}_-$, and its norm form; spacelike means $N>0$ |
+| $\tilde{Q}=ict\,e_0+\mathbf{x}$, $N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}$ | Material coordinate, $\in\mathbb{M}_-$, and its biquaternion norm; spacelike means $N>0$ |
 | $\tilde{\nabla}=e_0\partial_{ict}+\sum_k e_k\partial_k$ | Biquaternionic gradient |
 | $\Box=\tilde{\nabla}\bar{\tilde{\nabla}}=\bar{\tilde{\nabla}}\tilde{\nabla}=\partial_{ict}^2+\Delta$ | d'Alembertian |
 | $\tilde{\Phi}=\phi\,e_0$, $\phi=(\phi_1+i\phi_2)/\sqrt2$ | Scalar field, valued in the center; real components |
 | $\mathcal{L}=-\,\mathrm{Sc}[(\bar{\tilde{\nabla}}\tilde{\Phi}^\dagger)(\tilde{\nabla}\tilde{\Phi})]-\mu^2\mathrm{Sc}[\tilde{\Phi}^\dagger\tilde{\Phi}]$ | Scalar Lagrangian density |
 | $\mu=mc/\hbar$ | Mass parameter |
 | $\pi=c^{-2}\dot{\phi}^{\,*}$, $\pi^\dagger=c^{-2}\dot{\phi}$ | Conjugate momenta; Legendre transform regular |
-| $\tilde{K}=i\omega/c\,e_0+\mathbf{k}$, $N(\tilde{K})=\tilde{K}\bar{\tilde{K}}$ | Material four-wavevector and norm form |
+| $\tilde{K}=i\omega/c\,e_0+\mathbf{k}$, $N(\tilde{K})=\tilde{K}\bar{\tilde{K}}$ | Material four-wavevector and biquaternion norm |
 | $N(\tilde{K})=-m^2c^2/\hbar^2\,e_0$ | Mass-shell condition |
 | $E_{\mathbf{p}}=\sqrt{\mathbf{p}^2+\mu^2}$, $p\cdot x=E_{\mathbf{p}}t-\mathbf{p}\cdot\mathbf{x}$ | On-shell energy and phase (natural units) |
 | $\hat a_{\mathbf{p}},\hat b_{\mathbf{p}}$ | Particle and antiparticle annihilation operators |

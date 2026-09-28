@@ -7,7 +7,7 @@ A **central simple algebra** over a field $F$ is a finite-dimensional $F$-algebr
 
 The article develops the theory from the definition of a central simple algebra. The facts used are stated as standard: that a finite-dimensional algebra over a field without zero divisors is a division algebra; that the tensor product of central simple algebras is central simple; Frobenius' theorem; Wedderburn's little theorem; and the Skolem–Noether theorem. What this article adds is the systematic theory: the structure and dimension of a central simple algebra, the index and the exponent, splitting fields, the crossed-product description of the classes, and the computation of the Brauer group for the standard fields. The generalisation from a field to a commutative ring is not developed here.
 
-Everything is algebraic. The norm form of a quaternion algebra, the composition of quadratic forms, and the cohomological interpretation of the relative Brauer group over a local or global field are named where they belong and deferred to the articles that own them; in particular, the class-field-theoretic identifications belong to the Part I article *Class Field Theory*, in the category *Rings and Fields*.
+Everything is algebraic. The finer arithmetic of the Brauer group and its cohomological interpretation of the relative Brauer group over a local or global field are named where they belong and deferred to the articles that own them; in particular, the class-field-theoretic identifications belong to the Part I article *Class Field Theory*, in the category *Rings and Fields*.
 
 ## Central Simple Algebras
 
@@ -23,7 +23,7 @@ Throughout this article $F$ is a field and $A$, $B$ are finite-dimensional unita
 2. Every nonzero two-sided ideal of $A \otimes_F L$ meets $A$ trivially, for every field extension $L/F$; equivalently $A \otimes_F L$ is simple.
 3. The centre of $A \otimes_F L$ is $L \cdot 1$, so $A \otimes_F L$ is central simple over $L$.
 
-*Proof.* Statement 1 is the standard finite-dimensional criterion. For 2 and 3, the centre statement is standard: it is proved by extending scalars to an algebraic closure, where the algebra becomes a matrix algebra; the simplicity is the standard argument that a nonzero ideal of $A \otimes_F \bar F$ intersects $M_n(\bar F)$ in a nonzero ideal, hence contains a matrix unit, and the matrix units generate. $\square$
+*Proof.* Statement 1 is the standard finite-dimensional criterion. For 2 and 3, the centre statement is standard: it is proved by extending scalars to an algebraic closure, where the algebra becomes a matrix algebra; the simplicity is the standard argument that a nonzero ideal of $A \otimes_F \bar F$ intersects $M_n(\bar F)$ in a nonzero ideal, hence contains a matrix unit, and the matrix units generate.
 
 Thus centrality and simplicity are preserved by **base change**, which is the technical heart of the theory: an $F$-algebra is central simple exactly when it becomes a matrix algebra over a suitable extension, in a sense made precise by the notion of a splitting field below.
 
@@ -49,7 +49,7 @@ It is central: $u, v, w$ each anticommute with one another and the only central 
 
 **Theorem.** Let $A$ be central simple over $F$ of finite dimension $n = \dim_F A$. Then $A \otimes_F \bar F \cong M_d(\bar F)$ where $\bar F$ is an algebraic closure of $F$, and $n = d^2$.
 
-*Proof.* By the proposition above, $A \otimes_F \bar F$ is central simple over the algebraically closed field $\bar F$. Over an algebraically closed field the only finite-dimensional division algebra is the field itself; and Wedderburn's structure theorem writes a central simple algebra over $\bar F$ as $M_d(\bar F)$. Comparing dimensions, $n = d^2$. $\square$
+*Proof.* By the proposition above, $A \otimes_F \bar F$ is central simple over the algebraically closed field $\bar F$. Over an algebraically closed field the only finite-dimensional division algebra is the field itself; and Wedderburn's structure theorem writes a central simple algebra over $\bar F$ as $M_d(\bar F)$. Comparing dimensions, $n = d^2$.
 
 The integer $d$ is the **degree** of $A$, written $\deg(A)$. It is a numerical invariant of $A$ and not of a presentation: the dimension of a central simple algebra is always a perfect square. The theorem also shows that simplicity is a property detectable after base change, since the matrix algebra $M_d(\bar F)$ is visibly central simple.
 
@@ -59,7 +59,7 @@ The integer $d$ is the **degree** of $A$, written $\deg(A)$. It is a numerical i
 
 **Theorem (Wedderburn, standard).** Every finite-dimensional central simple $F$-algebra $A$ is isomorphic to a matrix algebra $M_n(D)$ over a central $F$-division algebra $D$, with $n \geq 1$ and $D$ determined up to isomorphism. Equivalently, writing $A = \operatorname{End}_D(V)$ for the unique simple $A$-module $V = D^n$, the division algebra is $D = \operatorname{End}_A(V)^{\mathrm{op}}$.
 
-*Pro.* The algebra $A$ is simple and finite-dimensional, so by the Wedderburn–Artin theorem it is $M_n(D)$ for a division algebra $D$; the centre of $M_n(D)$ is the centre of $D$, computed, so centrality of $A$ makes $D$ central over $F$. Uniqueness follows because $D$ is recovered as $\operatorname{End}_A(V)^{\mathrm{op}}$ for the unique simple module $V$, and the simple module is unique because $A$ is simple. $\square$
+*Pro.* The algebra $A$ is simple and finite-dimensional, so by the Wedderburn–Artin theorem it is $M_n(D)$ for a division algebra $D$; the centre of $M_n(D)$ is the centre of $D$, computed, so centrality of $A$ makes $D$ central over $F$. Uniqueness follows because $D$ is recovered as $\operatorname{End}_A(V)^{\mathrm{op}}$ for the unique simple module $V$, and the simple module is unique because $A$ is simple.
 
 The theorem reduces the classification of central simple algebras to the classification of central division algebras together with the integer $n$. The division algebra $D$ is called the **division algebra part** of $A$, and
 
@@ -87,7 +87,7 @@ $$
 
 In particular two matrix algebras $M_n(D)$ and $M_m(D')$ over division algebras are isomorphic if and only if $n = m$ and $D \cong D'$, and the embeddings of a separable subfield of $A$ into $A$ are conjugate.
 
-**Example (the real quaternions, and the commutative boundary).** For $A = \mathbb{H}$ over $\mathbb{R}$ the corollary gives $\operatorname{Aut}_{\mathbb{R}}(\mathbb{H}) \cong \mathbb{H}^\times/\mathbb{R}^\times$: every $\mathbb{R}$-automorphism of $\mathbb{H}$ is conjugation by a unit, the kernel of $\mathbb{H}^\times \to \operatorname{Inn}(\mathbb{H})$ being the centre $\mathbb{R}^\times$, and each such automorphism preserves the norm form $N(Q) = Q\bar Q$. The same computation is carried out in *Division Algebras*. In the commutative case the statement is empty, because $\operatorname{Inn}(A)$ is trivial there; for example $\mathbb{C}$ is simple over $\mathbb{R}$ but not central, and complex conjugation is an $\mathbb{R}$-automorphism of $\mathbb{C}$ that is not inner. Centrality is exactly what the theorem needs and cannot be dropped.
+**Example (the real quaternions, and the commutative boundary).** For $A = \mathbb{H}$ over $\mathbb{R}$ the corollary gives $\operatorname{Aut}_{\mathbb{R}}(\mathbb{H}) \cong \mathbb{H}^\times/\mathbb{R}^\times$: every $\mathbb{R}$-automorphism of $\mathbb{H}$ is conjugation by a unit, the kernel of $\mathbb{H}^\times \to \operatorname{Inn}(\mathbb{H})$ being the centre $\mathbb{R}^\times$. The same computation is carried out in *Division Algebras*. In the commutative case the statement is empty, because $\operatorname{Inn}(A)$ is trivial there; for example $\mathbb{C}$ is simple over $\mathbb{R}$ but not central, and complex conjugation is an $\mathbb{R}$-automorphism of $\mathbb{C}$ that is not inner. Centrality is exactly what the theorem needs and cannot be dropped.
 
 **Corollary (the double centralizer theorem).** Let $B$ be a simple $F$-subalgebra of $A$ with centre $L$. Then the centralizer $C_A(B)$ is simple, $B \otimes_L C_A(B) \cong A$ as $L$-algebras, and
 
@@ -95,17 +95,17 @@ $$
 \dim_F A = \dim_F B \cdot \dim_F C_A(B) .
 $$
 
-*Proof.* The centralizer is an $L$-algebra containing $L$, and the map $B \otimes_L C_A(B) \to A$, $b \otimes c \mapsto bc$, is an injective homomorphism of $L$-algebras; since $A$ is simple and $B \otimes_L C_A(B)$ is a tensor product of central simple $L$-algebras by the tensor product theorem below, the map is an isomorphism. Taking dimensions gives the formula. $\square$
+*Proof.* The centralizer is an $L$-algebra containing $L$, and the map $B \otimes_L C_A(B) \to A$, $b \otimes c \mapsto bc$, is an injective homomorphism of $L$-algebras; since $A$ is simple and $B \otimes_L C_A(B)$ is a tensor product of central simple $L$-algebras by the tensor product theorem below, the map is an isomorphism. Taking dimensions gives the formula.
 
 ### The reduced trace and the opposite algebra
 
-For a central simple algebra $A$ of degree $d$, choose a splitting field $L$ with $A \otimes_F L \cong M_d(L)$ and define the **reduced trace** and **reduced norm**
+For a central simple algebra $A$ of degree $d$, choose a splitting field $L$ with $A \otimes_F L \cong M_d(L)$ and define the **reduced trace** and **reduced determinant**
 
 $$
 \operatorname{Trd} : A \to F, \qquad \operatorname{Nrd} : A \to F
 $$
 
-so that after base change they become the matrix trace and determinant. Both take values in $F$ and are independent of the splitting field chosen; the reduced trace is $F$-linear, $\operatorname{Trd}(ab) = \operatorname{Trd}(ba)$, and the reduced norm is multiplicative, $\operatorname{Nrd}(ab) = \operatorname{Nrd}(a)\operatorname{Nrd}(b)$. The **opposite algebra** $A^{\mathrm{op}}$ has the same underlying $F$-vector space and product $a \cdot_{\mathrm{op}} b = ba$. It is central simple, of the same degree as $A$, and it is anti-isomorphic to $A$; the transpose map on a matrix algebra identifies $M_n(F)^{\mathrm{op}} \cong M_n(F)$, and quaternion conjugation identifies $\mathbb{H}^{\mathrm{op}} \cong \mathbb{H}$.
+so that after base change they become the matrix trace and determinant. Both take values in $F$ and are independent of the splitting field chosen; the reduced trace is $F$-linear, $\operatorname{Trd}(ab) = \operatorname{Trd}(ba)$, and the reduced determinant is multiplicative, $\operatorname{Nrd}(ab) = \operatorname{Nrd}(a)\operatorname{Nrd}(b)$. The **opposite algebra** $A^{\mathrm{op}}$ has the same underlying $F$-vector space and product $a \cdot_{\mathrm{op}} b = ba$. It is central simple, of the same degree as $A$, and it is anti-isomorphic to $A$; the transpose map on a matrix algebra identifies $M_n(F)^{\mathrm{op}} \cong M_n(F)$, and quaternion conjugation identifies $\mathbb{H}^{\mathrm{op}} \cong \mathbb{H}$.
 
 The opposite algebra is the reason the Brauer group has inverses. For every central simple $A$ of degree $d$ there is an isomorphism
 
@@ -141,7 +141,7 @@ $$
 (A \otimes M_m(F)) \otimes (B \otimes M_n(F)) \;\cong\; (A \otimes B) \otimes (M_m(F) \otimes M_n(F)) \;\cong\; (A\otimes B)\otimes M_{mn}(F)
 $$
 
-and the tensor products in the statement may be replaced one factor at a time. But $A \otimes_F M_m(F) \cong M_m(A)$, which is a matrix algebra over $A$, hence similar to $A$ by definition. $\square$
+and the tensor products in the statement may be replaced one factor at a time. But $A \otimes_F M_m(F) \cong M_m(A)$, which is a matrix algebra over $A$, hence similar to $A$ by definition.
 
 ### The group law
 
@@ -153,7 +153,7 @@ $$
 
 and identity the class of $F$, is an abelian group, the **Brauer group** $\operatorname{Br}(F)$. The inverse of $[A]$ is $[A^{\mathrm{op}}]$, and every element has finite order.
 
-*Proof.* The product is well defined by the lemma, associative and commutative because the tensor product of algebras is associative and commutative up to canonical isomorphism, and unital because $A \otimes_F F \cong A$. The class of $A^{\mathrm{op}}$ is inverse to that of $A$ by the isomorphism $A \otimes_F A^{\mathrm{op}} \cong M_{d^2}(F)$ above. Finiteness of the order is the theorem of the next subsection: the order of $[A]$ is the exponent, and it divides the index, which is finite. $\square$
+*Proof.* The product is well defined by the lemma, associative and commutative because the tensor product of algebras is associative and commutative up to canonical isomorphism, and unital because $A \otimes_F F \cong A$. The class of $A^{\mathrm{op}}$ is inverse to that of $A$ by the isomorphism $A \otimes_F A^{\mathrm{op}} \cong M_{d^2}(F)$ above. Finiteness of the order is the theorem of the next subsection: the order of $[A]$ is the exponent, and it divides the index, which is finite.
 
 The group is abelian but generally not finite: over $\mathbb{Q}$ and over every number field it is infinite, by the theorem of Hasse, Brauer and Noether recalled below.
 
@@ -174,7 +174,7 @@ Every central simple algebra has a splitting field: an algebraic closure of $F$ 
 3. There is a splitting field of degree $e$ over $F$, namely any maximal subfield of $D$; consequently the index divides the degree of every splitting field, and in particular $e \mid d = \deg(A)$.
 4. The **exponent** $\exp(A)$, the order of $[A]$ in $\operatorname{Br}(F)$, divides the index $e$.
 
-*Proof.* Statements 1 and 2 are the standard theory of maximal subfields of a division algebra; the dimension count $\dim_F D = e^2$ and the double centralizer theorem give that a maximal subfield has degree $e$. For 3, a maximal subfield $L$ of $D$ has $D \otimes_F L \cong M_e(L)$ because $D$ becomes split over its own maximal subfield, the centralizer of $L$ in $D$ being $L$ itself; and every splitting field has degree divisible by $e$ by the same argument applied to $D \otimes_F L$. For 4, the exponent divides the index: if $K$ is a maximal subfield of $D$, then $[D]$ lies in $\operatorname{Br}(K/F)$, and the restriction–corestriction identity of the cohomological theory gives $[D]^{[K:F]} = [D]^{e} = 0$ in $\operatorname{Br}(F)$, since restriction to $K$ kills the class; alternatively the same conclusion follows from the reduced norm and the theory of the reduced characteristic polynomial. Either argument is the standard one, and both are recorded in the references. $\square$
+*Proof.* Statements 1 and 2 are the standard theory of maximal subfields of a division algebra; the dimension count $\dim_F D = e^2$ and the double centralizer theorem give that a maximal subfield has degree $e$. For 3, a maximal subfield $L$ of $D$ has $D \otimes_F L \cong M_e(L)$ because $D$ becomes split over its own maximal subfield, the centralizer of $L$ in $D$ being $L$ itself; and every splitting field has degree divisible by $e$ by the same argument applied to $D \otimes_F L$. For 4, the exponent divides the index: if $K$ is a maximal subfield of $D$, then $[D]$ lies in $\operatorname{Br}(K/F)$, and the restriction–corestriction identity of the cohomological theory gives $[D]^{[K:F]} = [D]^{e} = 0$ in $\operatorname{Br}(F)$, since restriction to $K$ kills the class; alternatively the same conclusion follows from the reduced determinant and the theory of the reduced characteristic polynomial. Either argument is the standard one, and both are recorded in the references.
 
 The two invariants are related by the theorem: every central simple algebra is a crossed product with respect to a splitting field, and the resulting cohomological description of the Brauer group makes the exponent the order of a cohomology class.
 
@@ -210,13 +210,13 @@ $$
 (\chi, a) = L \oplus Lz \oplus \cdots \oplus Lz^{n-1}, \qquad z^n = a, \qquad z\ell = \sigma(\ell) z \quad (\ell \in L).
 $$
 
-It is central simple of degree $n$, and its class lies in $\operatorname{Br}(L/F)$. The construction is a special case of the crossed product, with factor set determined by the class of $a$ modulo norms from $L^\times$; the isomorphism classes of such algebras are parametrised by $F^\times/\operatorname{N}_{L/F}(L^\times)$, and the cyclic algebra is split exactly when $a$ is a norm from $L$. In the smallest case $n = 2$, with $L = F(\sqrt a)$ and $\sigma$ the nontrivial automorphism, the cyclic algebra $(\chi, b)$ is the quaternion algebra
+It is central simple of degree $n$, and its class lies in $\operatorname{Br}(L/F)$. The construction is a special case of the crossed product, with factor set determined by the class of $a$ modulo the subgroup $\operatorname{N}_{L/F}(L^\times)$; the isomorphism classes of such algebras are parametrised by the quotient $F^\times/\operatorname{N}_{L/F}(L^\times)$, and the cyclic algebra is split exactly when $a$ lies in that subgroup. In the smallest case $n = 2$, with $L = F(\sqrt a)$ and $\sigma$ the nontrivial automorphism, the cyclic algebra $(\chi, b)$ is the quaternion algebra
 
 $$
 (a, b)_F = F(\sqrt a) \oplus F(\sqrt a) z, \qquad z^2 = b, \qquad z \sqrt a = -\sqrt a\, z ,
 $$
 
-which is the doubled description of the four-dimensional algebra of the first section. The algebra is a division algebra when $b$ is not a norm from $F(\sqrt a)$ and $M_2(F)$ otherwise.
+which is the doubled description of the four-dimensional algebra of the first section. The algebra is a division algebra when $b$ is not in the image of $\operatorname{N}_{F(\sqrt a)/F}$ and $M_2(F)$ otherwise.
 
 ### The crossed-product description
 
@@ -236,11 +236,11 @@ The theorem is the content, where the crossed product $L \rtimes_c G$ is defined
 
 **Theorem.** If $F$ is algebraically closed, then $\operatorname{Br}(F) = 0$.
 
-*Proof.* Over an algebraically closed field the only finite-dimensional division algebra is $F$ itself, so every central simple algebra is $M_n(F)$ and is similar to $F$. $\square$
+*Proof.* Over an algebraically closed field the only finite-dimensional division algebra is $F$ itself, so every central simple algebra is $M_n(F)$ and is similar to $F$.
 
 **Theorem (Wedderburn).** If $F$ is a finite field, then $\operatorname{Br}(F) = 0$.
 
-*Proof.* By Wedderburn's little theorem every finite division ring is a field, so the only finite-dimensional central division algebra over $\mathbb{F}_q$ is $\mathbb{F}_q$ itself. Wedderburn's structure theorem then makes every central simple $\mathbb{F}_q$-algebra a matrix algebra over $\mathbb{F}_q$, hence split. $\square$
+*Proof.* By Wedderburn's little theorem every finite division ring is a field, so the only finite-dimensional central division algebra over $\mathbb{F}_q$ is $\mathbb{F}_q$ itself. Wedderburn's structure theorem then makes every central simple $\mathbb{F}_q$-algebra a matrix algebra over $\mathbb{F}_q$, hence split.
 
 The two results say that the Brauer group measures how far a field is from being algebraically closed or finite, and that the interesting cases are the number fields, the local fields and the function fields.
 
@@ -300,7 +300,7 @@ A splitting field of $A$ is a field extension $L/F$ with $A \otimes_F L \cong M_
 | $A \sim B$ | similarity: $A \otimes M_m(F) \cong B \otimes M_n(F)$ for some $m,n$ |
 | $\operatorname{Br}(F)$ | Brauer group: similarity classes under $\otimes_F$ |
 | $\operatorname{Br}(L/F)$ | relative Brauer group, classes split by $L$ |
-| $\operatorname{Trd}, \operatorname{Nrd}$ | reduced trace and reduced norm |
+| $\operatorname{Trd}, \operatorname{Nrd}$ | reduced trace and reduced determinant |
 | $C_A(B)$ | centralizer of $B$ in $A$ |
 | $\operatorname{Aut}_F(A) \cong A^\times/F^\times$ | automorphisms, all inner (Skolem–Noether) |
 | $(\chi, a)$ or $(L/F, \sigma, a)$ | cyclic algebra, $z^n = a$, $z\ell = \sigma(\ell)z$ |

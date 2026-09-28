@@ -4,23 +4,23 @@
 
 A **coarse-graining** is a description that discards fine-grained distinctions. The state of a physical system is replaced by a record of which cell of a partition it occupies, and the information the record carries is measured by the entropy of the induced cell distribution. Coarse-graining is the operation that makes entropy increase: the fine-grained descriptions of classical mechanics are conserved by the reversible flow, while the coarse-grained ones are not, and the difference between the two is the content of the second law.
 
-This article develops the coarse-grained entropy functional of the informational sector $\mathbb{M}_+$ of the biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$. The two ingredients are both already in the framework. The **states** of the sector are the positive trace-one elements $\tilde{\rho} = \tfrac{1}{2}(e_0 + i\mathbf{r})$ of $\mathbb{M}_+$, the Bloch ball; its **pure states** are the idempotents, and they sit on the null cone of the norm form, which is the zero-divisor cone of the algebra. The **coarse-grainings** are the conditional expectations of the sector: the completely positive, trace-preserving, idempotent maps onto a commutative subalgebra, of which the fully dephasing channel of the companion article *Quantum Channels and the Reversible/Irreversible Dichotomy* is the canonical example. The entropy functional is the algebra's own logarithm applied to a state and paired with it through the trace:
+This article develops the coarse-grained entropy functional of the informational sector $\mathbb{M}_+$ of the biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$. The two ingredients are both already in the framework. The **states** of the sector are the positive trace-one elements $\tilde{\rho} = \tfrac{1}{2}(e_0 + i\mathbf{r})$ of $\mathbb{M}_+$, the Bloch ball; its **pure states** are the idempotents, and they sit on the null cone of the biquaternion norm, which is the zero-divisor cone of the algebra. The **coarse-grainings** are the conditional expectations of the sector: the completely positive, trace-preserving, idempotent maps onto a commutative subalgebra, of which the fully dephasing channel of the companion article *Quantum Channels and the Reversible/Irreversible Dichotomy* is the canonical example. The entropy functional is the algebra's own logarithm applied to a state and paired with it through the trace:
 
 $$
 \mathcal{S}(\tilde{\rho}) = -2\,\mathrm{Sc}\!\left(\tilde{\rho}\log\tilde{\rho}\right).
 $$
 
-The article's central result is that this functional depends on the state **only through its norm form**. With $N(\tilde{\rho}) = \tilde{\rho}\bar{\tilde{\rho}} = \tfrac{1}{4}(1-|\mathbf{r}|^2)e_0$, one has $|\mathbf{r}| = \sqrt{1 - 4\,\mathrm{Sc}\,N(\tilde{\rho})}$, and therefore
+The article's central result is that this functional depends on the state **only through its biquaternion norm**. With $N(\tilde{\rho}) = \tilde{\rho}\bar{\tilde{\rho}} = \tfrac{1}{4}(1-|\mathbf{r}|^2)e_0$, one has $|\mathbf{r}| = \sqrt{1 - 4\,\mathrm{Sc}\,N(\tilde{\rho})}$, and therefore
 
 $$
 \mathcal{S}(\tilde{\rho}) = h\!\left(\sqrt{1 - 4\,\mathrm{Sc}\,N(\tilde{\rho})}\right),
 $$
 
-where $h$ is the binary entropy function. The entropy vanishes exactly on the null cone, that is, exactly on the zero divisors; it is maximal at the maximally mixed state; and it measures the depth of the state inside the future cone of the norm form. The functional and the norm form are thus the same information, read as a number and as a quadratic form.
+where $h$ is the binary entropy function. The entropy vanishes exactly on the null cone, that is, exactly on the zero divisors; it is maximal at the maximally mixed state; and it measures the depth of the state inside the future cone of the biquaternion norm. The functional and the biquaternion norm are thus the same information, read as a number and as a quadratic form.
 
 Two functionals appear below and must be kept apart, because the whole subject turns on the difference. The **spectral** value $\mathcal{S}(\tilde{\rho})$ is a property of the state and is invariant under reversible rotor flow; it is the fine-grained reference. The **coarse-grained** value $\mathcal{S}(\Phi(\tilde{\rho}))$ is the entropy of the image of the state under a coarse-graining $\Phi$, and it is this second number that increases under a coarse-graining. The second law, in this language, is the statement that a coarse-graining is a contraction of the Bloch ball, so that the entropy of the image is never less than the entropy of the state. The two are reconciled by the fact that the fine-grained value is the *minimum* over all preparations of the state, and hence the least coarse description the state admits.
 
-The treatment is **classical**. The entropy here is the Shannon entropy of a coarse description, and the functional is the classical one throughout. The functional $\mathcal{S}$ coincides numerically, on the matrix representative of $\tilde{\rho}$, with the von Neumann entropy of that $2\times 2$ density matrix, and the reader should not be misled by the coincidence: the von Neumann entropy as such, and the entropies attached to POVMs and to entanglement, belong to the informational subcategory of the sibling quantum category, where the companion article *Von Neumann Entropy and the Biquaternion Norm Form* develops them, and they are not developed here. Where the quantum reading is used, it is used as a bound, and it is identified as such.
+The treatment is **classical**. The entropy here is the Shannon entropy of a coarse description, and the functional is the classical one throughout. The functional $\mathcal{S}$ coincides numerically, on the matrix representative of $\tilde{\rho}$, with the von Neumann entropy of that $2\times 2$ density matrix, and the reader should not be misled by the coincidence: the von Neumann entropy as such, and the entropies attached to POVMs and to entanglement, belong to the informational subcategory of the sibling quantum category, where the companion article *Von Neumann Entropy and the Biquaternion Norm* develops them, and they are not developed here. Where the quantum reading is used, it is used as a bound, and it is identified as such.
 
 The probabilities the functional is built from are themselves trace pairings. The weights $\lambda_\pm$ of the spectral decomposition are $\lambda_\pm = \mathrm{Tr}(\tilde{P}_\pm(\hat{\mathbf{r}})\tilde{\rho})$, and the companion article *The Born Rule as a Trace Formula — Derivation and Comparison* derives the form of that pairing and fixes the objects it relates; this article takes the form as given and uses it only to read the state's own two-outcome distribution.
 
@@ -54,15 +54,15 @@ $$
 
 and conversely every idempotent of $\mathbb{M}_+$ has this form. The complementary idempotents are orthogonal and complete, $\tilde{P}_+\tilde{P}_- = 0$ and $\tilde{P}_+ + \tilde{P}_- = e_0$.
 
-### The Norm Form of a State
+### The Biquaternion Norm of a State
 
-The norm form of the algebra is $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$. On the state it evaluates to a scalar multiple of the identity:
+The biquaternion norm of the algebra is $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$. On the state it evaluates to a scalar multiple of the identity:
 
 $$
 N(\tilde{\rho}) = \tilde{\rho}\bar{\tilde{\rho}} = \left(\tfrac{1}{2}\right)^2 + \left(\tfrac{i r_1}{2}\right)^2 + \left(\tfrac{i r_2}{2}\right)^2 + \left(\tfrac{i r_3}{2}\right)^2 = \tfrac{1}{4}\left(1 - |\mathbf{r}|^2\right)e_0 .
 $$
 
-This single identity carries the geometry of the state space. The norm form is **positive** in the interior of the Bloch ball, **zero** on its boundary, and **negative** outside it, so that the state space is exactly the trace-one slice of the future cone of the norm form. The boundary of the state space is the **zero-divisor cone**: the pure states are the elements of $\mathbb{M}_+$ that fail to be invertible. The norm form therefore measures how far inside the cone a state lies, and its vanishing is the algebraic statement of purity.
+This single identity carries the geometry of the state space. The biquaternion norm is **positive** in the interior of the Bloch ball, **zero** on its boundary, and **negative** outside it, so that the state space is exactly the trace-one slice of the future cone of the biquaternion norm. The boundary of the state space is the **zero-divisor cone**: the pure states are the elements of $\mathbb{M}_+$ that fail to be invertible. The biquaternion norm therefore measures how far inside the cone a state lies, and its vanishing is the algebraic statement of purity.
 
 Two further identities follow from the multiplication table and are used throughout. Squaring the state gives
 
@@ -82,7 +82,7 @@ $$
 \mathrm{Tr}\!\left(\tilde{\rho}^2\right) = \tfrac{1}{2}\left(1 + |\mathbf{r}|^2\right),
 $$
 
-so that purity and idempotency are the same condition, and the norm form, the deviation from idempotency, and the purity are three readings of the single number $|\mathbf{r}|^2$.
+so that purity and idempotency are the same condition, and the biquaternion norm, the deviation from idempotency, and the purity are three readings of the single number $|\mathbf{r}|^2$.
 
 ## The Entropy Functional
 
@@ -168,9 +168,9 @@ a mixture being never less entropic than the average of its constituents. This i
 
 The functional is measured in nats. Multiplying by the Boltzmann constant, $\mathcal{S}_{\rm th} = k_B\,\mathcal{S}$, gives a thermodynamic entropy; the algebra supplies the dimensionless information content, and the unit is a convention of thermodynamics rather than of the algebra.
 
-## The Entropy Is a Function of the Norm Form
+## The Entropy Is a Function of the Biquaternion Norm
 
-The norm form of the state and the entropy of the state are not independent quantities. The norm form gives $|\mathbf{r}|$ directly, and the entropy is a function of $|\mathbf{r}|$; composing the two eliminates the Bloch vector and leaves a function of the norm form alone.
+The biquaternion norm of the state and the entropy of the state are not independent quantities. The biquaternion norm gives $|\mathbf{r}|$ directly, and the entropy is a function of $|\mathbf{r}|$; composing the two eliminates the Bloch vector and leaves a function of the biquaternion norm alone.
 
 Inverting $N(\tilde{\rho}) = \tfrac{1}{4}(1-|\mathbf{r}|^2)e_0$ gives
 
@@ -184,13 +184,13 @@ $$
 \boxed{\;\mathcal{S}(\tilde{\rho}) = h\!\left(\sqrt{1 - 4\,\mathrm{Sc}\,N(\tilde{\rho})}\right).\;}
 $$
 
-The identity says that **the entropy of a state of the informational sector is a function of its norm form and of nothing else**. The norm form is the quantitatively meaningful invariant of the algebra; the entropy is a monotone reparametrisation of it. Three consequences are immediate, and they are the reason the identity is worth isolating.
+The identity says that **the entropy of a state of the informational sector is a function of its biquaternion norm and of nothing else**. The biquaternion norm is the quantitatively meaningful invariant of the algebra; the entropy is a monotone reparametrisation of it. Three consequences are immediate, and they are the reason the identity is worth isolating.
 
-First, the entropy vanishes exactly where the norm form vanishes. The condition $\mathcal{S}(\tilde{\rho}) = 0$ is $|\mathbf{r}| = 1$, which is $N(\tilde{\rho}) = 0$, which is the statement that $\tilde{\rho}$ is a zero divisor. **Zero entropy and the zero-divisor cone are the same locus.** The pure states are the informationless states, and the algebraic reason is that they are the non-invertible ones.
+First, the entropy vanishes exactly where the biquaternion norm vanishes. The condition $\mathcal{S}(\tilde{\rho}) = 0$ is $|\mathbf{r}| = 1$, which is $N(\tilde{\rho}) = 0$, which is the statement that $\tilde{\rho}$ is a zero divisor. **Zero entropy and the zero-divisor cone are the same locus.** The pure states are the informationless states, and the algebraic reason is that they are the non-invertible ones.
 
-Second, the entropy is a strictly increasing function of the norm form on the positive cone. As the state moves inward from the boundary, $|\mathbf{r}|$ falls, $N$ rises from zero to its maximum $\tfrac{1}{4}e_0$ at the centre, and the entropy rises from zero to $\log 2$. Differentiating the boxed identity confirms the direction, $\partial\mathcal{S}/\partial\,\mathrm{Sc}\,N = 2\,\mathrm{artanh}\,|\mathbf{r}|/|\mathbf{r}| > 0$. The norm form is therefore a measure of **depth inside the cone**, and the entropy is that depth expressed in information units.
+Second, the entropy is a strictly increasing function of the biquaternion norm on the positive cone. As the state moves inward from the boundary, $|\mathbf{r}|$ falls, $N$ rises from zero to its maximum $\tfrac{1}{4}e_0$ at the centre, and the entropy rises from zero to $\log 2$. Differentiating the boxed identity confirms the direction, $\partial\mathcal{S}/\partial\,\mathrm{Sc}\,N = 2\,\mathrm{artanh}\,|\mathbf{r}|/|\mathbf{r}| > 0$. The biquaternion norm is therefore a measure of **depth inside the cone**, and the entropy is that depth expressed in information units.
 
-Third, the entropy is invariant under every operation that preserves the norm form. In particular, it is invariant under the rotor conjugation of a reversible flow, which is the subject of a later section.
+Third, the entropy is invariant under every operation that preserves the biquaternion norm. In particular, it is invariant under the rotor conjugation of a reversible flow, which is the subject of a later section.
 
 The same identity holds for a coarse-grained state, since a coarse-grained state is a state. If $\Phi$ is a coarse-graining and $\tilde{\rho}_\Phi = \Phi(\tilde{\rho})$ is its image, then
 
@@ -198,7 +198,7 @@ $$
 \mathcal{S}(\tilde{\rho}_\Phi) = h\!\left(\sqrt{1 - 4\,\mathrm{Sc}\,N(\tilde{\rho}_\Phi)}\right),
 $$
 
-so the whole information content of the coarse description is likewise carried by one scalar read from the norm form. This is what makes the coarse-grained entropy tractable: the second law for the sector reduces to a statement about the norm form of the image.
+so the whole information content of the coarse description is likewise carried by one scalar read from the biquaternion norm. This is what makes the coarse-grained entropy tractable: the second law for the sector reduces to a statement about the biquaternion norm of the image.
 
 ## Coarse-Graining on the Informational Sector
 
@@ -345,7 +345,7 @@ $$
 \mathcal{S}\!\left(\tilde{\rho}(t)\right) = \mathcal{S}\!\left(\tilde{\rho}(0)\right),
 $$
 
-and the norm form is likewise invariant. This is the biquaternion form of **Liouville's theorem**: the fine-grained description carries a constant amount of information, and the reversible flow merely permutes it. The companion article *Similitudes Between Biquaternion Rotors and Hamiltonian Flow* develops the generator-level correspondence between the rotor and the Hamiltonian flow; the conservation of the norm form is the invariant that the correspondence preserves.
+and the biquaternion norm is likewise invariant. This is the biquaternion form of **Liouville's theorem**: the fine-grained description carries a constant amount of information, and the reversible flow merely permutes it. The companion article *Similitudes Between Biquaternion Rotors and Hamiltonian Flow* develops the generator-level correspondence between the rotor and the Hamiltonian flow; the conservation of the biquaternion norm is the invariant that the correspondence preserves.
 
 **Coarse-graining produces the increase.** If a fixed coarse-graining $\Phi$ is applied to the state of a reversible flow $\tilde{\rho}(t) = \tilde{U}(t)\tilde{\rho}(0)\tilde{U}(t)^\dagger$, the entropy of the coarse description,
 
@@ -385,7 +385,7 @@ The framework's own coarse-grainings sit in this picture as the conditional expe
 
 ## What Is Derived and What Is Imported
 
-**Derived from the algebra.** The entropy functional $\mathcal{S}(\tilde{\rho}) = -2\,\mathrm{Sc}(\tilde{\rho}\log\tilde{\rho})$ itself, its evaluation in the spectral decomposition, and its identification with the classical entropy of the two-outcome pointer distribution; the existence of the logarithm on the interior of the Bloch ball and its failure on the pure states; the identity $\mathcal{S} = h(\sqrt{1 - 4\,\mathrm{Sc}\,N})$, which makes the entropy a function of the norm form and locates the zero-entropy states exactly on the zero-divisor cone; the invariance of the functional under reversible rotor flow; the form of the coarse-grained conditional expectation and its action $\mathbf{r}\mapsto(\hat{\mathbf{n}}\cdot\mathbf{r})\hat{\mathbf{n}}$; and the entropy production rate of continuous dephasing. Each of these is an identity of the algebra, checked by expanding in the basis and, where numerical, on an interior superposition rather than a single pure state.
+**Derived from the algebra.** The entropy functional $\mathcal{S}(\tilde{\rho}) = -2\,\mathrm{Sc}(\tilde{\rho}\log\tilde{\rho})$ itself, its evaluation in the spectral decomposition, and its identification with the classical entropy of the two-outcome pointer distribution; the existence of the logarithm on the interior of the Bloch ball and its failure on the pure states; the identity $\mathcal{S} = h(\sqrt{1 - 4\,\mathrm{Sc}\,N})$, which makes the entropy a function of the biquaternion norm and locates the zero-entropy states exactly on the zero-divisor cone; the invariance of the functional under reversible rotor flow; the form of the coarse-grained conditional expectation and its action $\mathbf{r}\mapsto(\hat{\mathbf{n}}\cdot\mathbf{r})\hat{\mathbf{n}}$; and the entropy production rate of continuous dephasing. Each of these is an identity of the algebra, checked by expanding in the basis and, where numerical, on an interior superposition rather than a single pure state.
 
 **Imported from standard physics and standard mathematics.** The Kadison–Schwarz contraction of unital completely positive maps, and hence the monotonicity of the entropy under a coarse-graining; the classification of conditional expectations onto commutative subalgebras; the minimum-ensemble theorem $\mathcal{S}(\tilde{\rho}) = \min_w H(w)$; and the identification of the dimensionless functional with the physical thermodynamic entropy through the factor $k_B$. None of these is re-derived here; they are transcribed, and they are the same theorems that give the Gibbs and Boltzmann entropies their classical meaning.
 
@@ -405,7 +405,7 @@ $$
 
 with $0 \le \mathcal{S} \le \log 2$. It is computed from the algebra's logarithm, which exists exactly on the group of units, that is, on the interior of the Bloch ball: the pure states are the zero divisors, and the entropy is singular there and vanishes there.
 
-The functional depends on the state only through its norm form. With $N(\tilde{\rho}) = \tfrac{1}{4}(1-|\mathbf{r}|^2)e_0$,
+The functional depends on the state only through its biquaternion norm. With $N(\tilde{\rho}) = \tfrac{1}{4}(1-|\mathbf{r}|^2)e_0$,
 
 $$
 \mathcal{S}(\tilde{\rho}) = h\!\left(\sqrt{1 - 4\,\mathrm{Sc}\,N(\tilde{\rho})}\right),
@@ -429,14 +429,14 @@ The fine-grained value is also the minimum over all preparations of the state, $
 | $\tilde{P}_\pm(\hat{\boldsymbol{\mu}}) = \tfrac{1}{2}(e_0 \pm i\hat{\boldsymbol{\mu}})$ | Idempotent (pure state, rank-one projector) |
 | $\lambda_\pm = \tfrac{1}{2}(1\pm|\mathbf{r}|)$ | Eigenvalues (pointer probabilities) of the state |
 | $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$, $\mathrm{Tr}(e_0)=2$ | Trace |
-| $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$ | Norm form |
-| $N(\tilde{\rho}) = \tfrac{1}{4}(1-|\mathbf{r}|^2)e_0$ | Norm form of a state |
+| $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$ | Biquaternion norm |
+| $N(\tilde{\rho}) = \tfrac{1}{4}(1-|\mathbf{r}|^2)e_0$ | Biquaternion norm of a state |
 | $\tilde{\rho}^2 - \tilde{\rho} = \tfrac{1}{4}(|\mathbf{r}|^2-1)e_0$ | Deviation from idempotency (mixedness) |
 | $\mathrm{Tr}(\tilde{\rho}^2) = \tfrac{1}{2}(1+|\mathbf{r}|^2)$ | Purity |
 | $\log\tilde{\rho} = (\log\lambda_+)\tilde{P}_+(\hat{\mathbf{r}}) + (\log\lambda_-)\tilde{P}_-(\hat{\mathbf{r}})$ | Logarithm of a state, $|\mathbf{r}|<1$ |
 | $\mathcal{S}(\tilde{\rho}) = -2\,\mathrm{Sc}(\tilde{\rho}\log\tilde{\rho}) = h(|\mathbf{r}|)$ | Biquaternion entropy functional |
 | $h(x) = -\tfrac{1+x}{2}\log\tfrac{1+x}{2} - \tfrac{1-x}{2}\log\tfrac{1-x}{2}$ | Binary entropy function |
-| $\mathcal{S} = h\!\left(\sqrt{1-4\,\mathrm{Sc}\,N(\tilde{\rho})}\right)$ | Entropy as a function of the norm form |
+| $\mathcal{S} = h\!\left(\sqrt{1-4\,\mathrm{Sc}\,N(\tilde{\rho})}\right)$ | Entropy as a function of the biquaternion norm |
 | $\Phi$ | Coarse-graining (conditional expectation) |
 | $\Phi_{\hat{\mathbf{n}}}(\tilde{\rho}) = \tilde{P}_+\tilde{\rho}\tilde{P}_+ + \tilde{P}_-\tilde{\rho}\tilde{P}_-$ | Pointer coarse-graining along $\hat{\mathbf{n}}$ |
 | $\mathbf{r}\mapsto(\hat{\mathbf{n}}\cdot\mathbf{r})\hat{\mathbf{n}}$ | Action of the pointer coarse-graining |

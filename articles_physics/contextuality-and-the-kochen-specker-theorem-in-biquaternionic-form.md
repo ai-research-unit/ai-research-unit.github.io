@@ -125,7 +125,7 @@ The value assignments of the parity argument use multiplicativity within each ro
 
 **Lemma.** Let $\tilde{A}_1,\dots,\tilde{A}_m$ be mutually commuting Hermitian elements of $\mathbb{M}_+^{\otimes n}$ with common idempotent basis $\{\tilde{Q}_\alpha\}$, $\sum_\alpha \tilde{Q}_\alpha = e_0^{\otimes n}$, on which $\tilde{A}_i\tilde{Q}_\alpha = a_i^{(\alpha)}\tilde{Q}_\alpha$. Then the product $\tilde{A}_1\cdots\tilde{A}_m$ has eigenvalues $a^{(\alpha)}_1\cdots a^{(\alpha)}_m$ on the same idempotents.
 
-*Proof.* Multiplying the eigenvalue equations gives $\tilde{A}_1\cdots\tilde{A}_m\tilde{Q}_\alpha = a^{(\alpha)}_1\cdots a^{(\alpha)}_m\tilde{Q}_\alpha$. $\square$
+*Proof.* Multiplying the eigenvalue equations gives $\tilde{A}_1\cdots\tilde{A}_m\tilde{Q}_\alpha = a^{(\alpha)}_1\cdots a^{(\alpha)}_m\tilde{Q}_\alpha$.
 
 For the magic square each generator has spectrum $\{\pm1\}$, so on each joint eigen-idempotent the product relation reads as a product of signs. Applying the lemma to row $1$, whose joint idempotents are built from $\tilde{P}_\pm(\hat{e}_1)$ on both factors, the identity $\tilde{Q}\otimes\tilde{Q} = (\tilde{Q}\otimes e_0)(e_0\otimes\tilde{Q})$ forces the third entry's value to be the product of the first two on every joint eigen-idempotent, so the row product relation holds automatically. The same argument applies to each row and column. The parity contradiction then needs only the two evaluations of the product of all nine values, one from the rows and one from the columns.
 
@@ -188,7 +188,7 @@ The Kochen–Specker theorem says that for a module of dimension at least three 
 
 ### The magic square in this language
 
-Each row and column of the magic square is a context: its entries generate a finite abelian group of commuting involutions — of order four for the rows and the first two columns, where the third entry is the product of the first two, and of order eight for the third column, where the sign in the product relation makes the three entries independent — and the joint spectral resolution on the four-dimensional module has four idempotents, one for each character that occurs. A noncontextual model would select one character per row and per column, agreeing on the entries that a row and a column share. The parity argument shows that the product of the selected values over the nine entries is forced to be $+1$ by the rows and $-1$ by the columns. Equivalently: no selection of characters is simultaneously consistent with the row and column group structures. The contradiction is entirely about the characters, and it uses neither the norm form nor the state cone.
+Each row and column of the magic square is a context: its entries generate a finite abelian group of commuting involutions — of order four for the rows and the first two columns, where the third entry is the product of the first two, and of order eight for the third column, where the sign in the product relation makes the three entries independent — and the joint spectral resolution on the four-dimensional module has four idempotents, one for each character that occurs. A noncontextual model would select one character per row and per column, agreeing on the entries that a row and a column share. The parity argument shows that the product of the selected values over the nine entries is forced to be $+1$ by the rows and $-1$ by the columns. Equivalently: no selection of characters is simultaneously consistent with the row and column group structures. The contradiction is entirely about the characters, and it uses neither the biquaternion norm nor the state cone.
 
 ## State-Dependent and State-Independent Contextuality
 
@@ -196,7 +196,7 @@ The Kochen–Specker theorem is **state-independent**: it obstructs a noncontext
 
 The two forms sit differently in the framework.
 
-- **State-independent contextuality** is a property of the algebra of observables alone, here $\mathbb{B}\otimes\mathbb{B}$; the magic square is an algebraic identity and requires no state, no norm form, and no cone. This is the sense in which the Kochen–Specker theorem is a statement about the structure of $\mathbb{M}_+^{\otimes2}$.
+- **State-independent contextuality** is a property of the algebra of observables alone, here $\mathbb{B}\otimes\mathbb{B}$; the magic square is an algebraic identity and requires no state, no biquaternion norm, and no cone. This is the sense in which the Kochen–Specker theorem is a statement about the structure of $\mathbb{M}_+^{\otimes2}$.
 - **State-dependent contextuality** is a property of a state together with a set of observables. The companion article *Exercise: The CHSH Inequality and Tsirelson's Bound* computes the correlation function $E(\hat{a},\hat{b}) = -\hat{a}\cdot\hat{b}$ for the singlet and the Tsirelson bound $2\sqrt2$, and the companion article *Entangled Subsystems in the Biquaternion Framework* shows that the correlation function is the trace pairing between the state idempotent and a tensor-product observable. Violation of a Bell inequality is state-dependent contextuality, and the framework locates it in the pairing of a particular state with a particular context.
 
 The two are related but not identical. The magic square is the stronger statement, because it needs no state; the Bell inequalities are the more operational statement, because they are tested by counting coincidences. Both are consequences of the same algebraic structure: the noncommutativity of the observables and the noncommutativity of the idempotent bases.
@@ -223,7 +223,7 @@ The two are related but not identical. The magic square is the stronger statemen
 
 **2. The minimal obstruction in the framework.** The smallest Hilbert-space dimension for a Kochen–Specker proof is three. The framework's native module is two-dimensional and the smallest composite is four-dimensional. Is there an obstruction intrinsic to a *three*-dimensional module that the framework can express without leaving the qubit's two factors, for instance via a three-outcome measurement?
 
-**3. Contextuality and the norm form.** The magic square uses only the algebra and its involutions; the norm form and the positive cone play no role. Is there a version of the obstruction that is sensitive to the state cone, and does it distinguish pure from mixed states in a way the state-independent proof cannot?
+**3. Contextuality and the biquaternion norm.** The magic square uses only the algebra and its involutions; the biquaternion norm and the positive cone play no role. Is there a version of the obstruction that is sensitive to the state cone, and does it distinguish pure from mixed states in a way the state-independent proof cannot?
 
 **4. Many-qubit contextuality.** For $n>2$ qubits the Mermin–Ardehali–Belinskii–Klyshko inequalities generalize the magic square. What is their biquaternion form, and does the tensor-product structure of $\mathbb{B}^{\otimes n}$ organize them?
 

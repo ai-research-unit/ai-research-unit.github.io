@@ -6,7 +6,7 @@ A valuation on a field is a homomorphism from its multiplicative group to an ord
 
 The second half of the article concerns **Henselian rings**, the local rings in which a factorisation of a polynomial modulo the maximal ideal lifts to a factorisation over the ring. Hensel's lemma, in the form stated for complete non-Archimedean fields, is the model; the general definition does not require completeness, and every local ring has a best Henselian approximation, its **henselization**. Henselian rings are the local rings in which the extension theory of valuations is unambiguous, and the property is what makes the ramification theory of an algebraic number field or of an algebraic curve work.
 
-This article develops general valuations and their rings, the correspondence between prime ideals and convex subgroups, the existence of extensions of a valuation and the fundamental inequality, the approximation theorem, and the theory of Henselian local rings with their henselizations. Throughout, $K$ is a field, $v : K \to \Gamma \cup \{\infty\}$ is a valuation with value group $\Gamma$, ordered additively, and $\mathcal{O}_v$, $\mathfrak{m}_v$, $k(v)$ are its valuation ring, maximal ideal and residue field. Integrality and integral closure are from *Integral Extensions and Krull Dimension*, Dedekind domains and localisation from *Dedekind Domains and Ideal Class Groups* and *Localization and the Fraction Field*, and the rank-one case, with completions and the fields $\mathbb{Q}_p$, is not developed here. Nothing in the article depends on a metric or a completion.
+This article develops general valuations and their rings, the correspondence between prime ideals and convex subgroups, the existence of extensions of a valuation and the fundamental inequality, the approximation theorem, and the theory of Henselian local rings with their henselizations. Throughout, $K$ is a field, $v : K \to \Gamma \cup \{\infty\}$ is a valuation with value group $\Gamma$, ordered additively, and $\mathcal{O}_v$, $\mathrm{M}_v$, $k(v)$ are its valuation ring, maximal ideal and residue field. Integrality and integral closure are from *Integral Extensions and Krull Dimension*, Dedekind domains and localisation from *Dedekind Domains and Ideal Class Groups* and *Localization and the Fraction Field*, and the rank-one case, with completions and the fields $\mathbb{Q}_p$, is not developed here. Nothing in the article depends on a metric or a completion.
 
 ---
 
@@ -42,17 +42,17 @@ with the conventions $\gamma + \infty = \infty$ and $\gamma < \infty$ for all $\
 
 **(b)** If $v(x) \neq v(y)$ then $v(x + y) = \min\{v(x), v(y)\}$; the values are "all triangles isosceles".
 
-**(c)** The set $\mathcal{O}_v = \{x \in K : v(x) \geq 0\}$ is a subring of $K$, the **valuation ring**, and $\mathfrak{m}_v = \{x : v(x) > 0\}$ is its unique maximal ideal. Its fraction field is $K$.
+**(c)** The set $\mathcal{O}_v = \{x \in K : v(x) \geq 0\}$ is a subring of $K$, the **valuation ring**, and $\mathrm{M}_v = \{x : v(x) > 0\}$ is its unique maximal ideal. Its fraction field is $K$.
 
-**(d)** $k(v) = \mathcal{O}_v/\mathfrak{m}_v$ is a field, the **residue field**, and $k(v) = \mathcal{O}_v/\mathfrak{m}_v$ is the image of the elements of value $0$.
+**(d)** $k(v) = \mathcal{O}_v/\mathrm{M}_v$ is a field, the **residue field**, and $k(v) = \mathcal{O}_v/\mathrm{M}_v$ is the image of the elements of value $0$.
 
-**Proof.** (a) From $v(1) = v(1) + v(1)$; from $v(-1) + v(-1) = v(1) = 0$ and the only solutions of $2\gamma = 0$ in an ordered group are $\gamma = 0$; and from $v(x) + v(x^{-1}) = v(1) = 0$. (b) If $v(x) < v(y)$ then $v(x) = v((x+y) - y) \geq \min\{v(x+y), v(y)\}$ forces $v(x+y) \leq v(x)$, while (V3) gives $v(x+y) \geq v(x)$. (c) Closure under addition and multiplication is (V3) and (V2); an element of value $0$ has inverse of value $0$, so it is a unit, and every element of positive value is a non-unit, so $\mathfrak{m}_v$ is exactly the set of non-units, which is then the unique maximal ideal. (d) The kernel of the restriction of the residue map to the value-zero subgroup is $\{0\}$, since $v(x) = 0$ means $x$ is a unit, and the residue field is the quotient by $\mathfrak{m}_v$. $\square$
+**Proof.** (a) From $v(1) = v(1) + v(1)$; from $v(-1) + v(-1) = v(1) = 0$ and the only solutions of $2\gamma = 0$ in an ordered group are $\gamma = 0$; and from $v(x) + v(x^{-1}) = v(1) = 0$. (b) If $v(x) < v(y)$ then $v(x) = v((x+y) - y) \geq \min\{v(x+y), v(y)\}$ forces $v(x+y) \leq v(x)$, while (V3) gives $v(x+y) \geq v(x)$. (c) Closure under addition and multiplication is (V3) and (V2); an element of value $0$ has inverse of value $0$, so it is a unit, and every element of positive value is a non-unit, so $\mathrm{M}_v$ is exactly the set of non-units, which is then the unique maximal ideal. (d) The kernel of the restriction of the residue map to the value-zero subgroup is $\{0\}$, since $v(x) = 0$ means $x$ is a unit, and the residue field is the quotient by $\mathrm{M}_v$.
 
 **Definition.** Two valuations $v, w$ on $K$ are **equivalent** if their valuation rings agree. For rank one this is the usual notion of equivalence of absolute values, and the correspondence between non-Archimedean absolute values and rank-one valuations is the reason the two languages agree in that case.
 
 ### Examples
 
-**Example ($p$-adic).** On $\mathbb{Q}$ the $p$-adic valuation $v_p$ has value group $\mathbb{Z}$, so it is discrete of rank one, with $\mathcal{O} = \mathbb{Z}_{(p)}$, $\mathfrak{m} = p\mathbb{Z}_{(p)}$ and residue field $\mathbb{F}_p$.
+**Example ($p$-adic).** On $\mathbb{Q}$ the $p$-adic valuation $v_p$ has value group $\mathbb{Z}$, so it is discrete of rank one, with $\mathcal{O} = \mathbb{Z}_{(p)}$, $\mathrm{M} = p\mathbb{Z}_{(p)}$ and residue field $\mathbb{F}_p$.
 
 **Example (order of vanishing).** On the rational function field $k(x)$ and on its subring $k[x]$, the order of vanishing at the irreducible polynomial $p(x)$ gives a discrete rank-one valuation with residue field $k[x]/(p(x))$. The point at infinity gives a further valuation, of the same form after the change of variable $x \mapsto 1/x$.
 
@@ -70,25 +70,25 @@ where the group $\mathbb{Z} \oplus \mathbb{Z}$ carries the **lexicographic** ord
 
 **Theorem.** Let $V$ be an integral domain with fraction field $K$. Then $V$ is a valuation ring of $K$ — that is, $V = \mathcal{O}_v$ for some valuation $v$ of $K$ — if and only if for every $0 \neq x \in K$ at least one of $x, x^{-1}$ lies in $V$. When this holds, the ideals of $V$ are totally ordered by inclusion, and $V$ is a local ring whose maximal ideal is the set of non-units.
 
-**Proof.** If $V = \mathcal{O}_v$, then $v(x) \geq 0$ or $v(x) \leq 0$, that is, $x \in V$ or $x^{-1} \in V$. Conversely, suppose $V$ has the property, and define $\Gamma = K^\times/V^\times$ with the order $x V^\times \leq y V^\times \iff x y^{-1} \in V$. The order is total by the hypothesis, and compatible with multiplication; the quotient map $v : K^\times \to \Gamma$ extends by $v(0) = \infty$ and satisfies (V2). For (V3), if $v(x) \geq v(y)$ then $x/y \in V$, and $x + y = y(x/y + 1)$ with $x/y + 1 \in V$, so $v(x+y) \geq v(y) = \min$. Hence $V$ is the valuation ring of $v$. If $I, J$ are ideals and $I \not\subseteq J$, choose $x \in I \setminus J$; for $y \in J$, $y/x \notin V$ (else $y \in I$), so $x/y \in V$, giving $x \in (y) \subseteq J$, a contradiction; hence $J \subseteq I$. The maximal ideal is the union of the proper ideals, which is the set of non-units, and it is the unique maximal ideal. $\square$
+**Proof.** If $V = \mathcal{O}_v$, then $v(x) \geq 0$ or $v(x) \leq 0$, that is, $x \in V$ or $x^{-1} \in V$. Conversely, suppose $V$ has the property, and define $\Gamma = K^\times/V^\times$ with the order $x V^\times \leq y V^\times \iff x y^{-1} \in V$. The order is total by the hypothesis, and compatible with multiplication; the quotient map $v : K^\times \to \Gamma$ extends by $v(0) = \infty$ and satisfies (V2). For (V3), if $v(x) \geq v(y)$ then $x/y \in V$, and $x + y = y(x/y + 1)$ with $x/y + 1 \in V$, so $v(x+y) \geq v(y) = \min$. Hence $V$ is the valuation ring of $v$. If $I, J$ are ideals and $I \not\subseteq J$, choose $x \in I \setminus J$; for $y \in J$, $y/x \notin V$ (else $y \in I$), so $x/y \in V$, giving $x \in (y) \subseteq J$, a contradiction; hence $J \subseteq I$. The maximal ideal is the union of the proper ideals, which is the set of non-units, and it is the unique maximal ideal.
 
 **Theorem.** A valuation ring is integrally closed in its fraction field. Conversely, every integrally closed domain is an intersection of valuation rings of its fraction field. A valuation ring is Noetherian if and only if it is a discrete valuation ring; equivalently, if and only if its value group is $\mathbb{Z}$ up to equivalence.
 
-**Proof sketch.** If $x$ is integral over $V$ with $x \notin V$, then $x^{-1} \in V$ and $x^{-1}$ is a non-unit; a monic equation $x^n + a_{n-1}x^{n-1} + \cdots = 0$ multiplied by $x^{-n}$ exhibits $1$ as an element of the maximal ideal, a contradiction. For the converse, the intersection of all valuation rings containing a given integrally closed domain is proved in the next section. The final statement is the theorem of Krull: a Noetherian valuation ring has a principal maximal ideal, hence value group $\mathbb{Z}$. $\square$
+**Proof sketch.** If $x$ is integral over $V$ with $x \notin V$, then $x^{-1} \in V$ and $x^{-1}$ is a non-unit; a monic equation $x^n + a_{n-1}x^{n-1} + \cdots = 0$ multiplied by $x^{-n}$ exhibits $1$ as an element of the maximal ideal, a contradiction. For the converse, the intersection of all valuation rings containing a given integrally closed domain is proved in the next section. The final statement is the theorem of Krull: a Noetherian valuation ring has a principal maximal ideal, hence value group $\mathbb{Z}$.
 
 **Theorem (primes and convex subgroups).** Let $v$ be a valuation on $K$ with value group $\Gamma$. The prime ideals of $\mathcal{O}_v$ correspond bijectively to the convex subgroups $\Delta \subseteq \Gamma$, by
 
 $$
-\mathfrak{p}_\Delta = \{x \in K : v(x) > \Delta\},
+\mathrm{P}_\Delta = \{x \in K : v(x) > \Delta\},
 $$
 
-with the convention that $\mathfrak{p}_0 = \mathfrak{m}_v$ and $\mathfrak{p}_\Gamma = (0)$. The correspondence reverses inclusions, and
+with the convention that $\mathrm{P}_0 = \mathrm{M}_v$ and $\mathrm{P}_\Gamma = (0)$. The correspondence reverses inclusions, and
 
 $$
 \dim \mathcal{O}_v = \operatorname{rank} \Gamma .
 $$
 
-**Proof sketch.** A subset $\Delta \subseteq \Gamma$ is convex if $\gamma \leq \delta \leq \varepsilon$ with $\gamma, \varepsilon \in \Delta$ forces $\delta \in \Delta$. The set $\mathfrak{p}_\Delta$ defined above is an ideal, and it is prime exactly when $\Delta$ is convex; conversely every prime arises this way from its set of values. The chain of primes is then in bijection with the chain of convex subgroups. $\square$
+**Proof sketch.** A subset $\Delta \subseteq \Gamma$ is convex if $\gamma \leq \delta \leq \varepsilon$ with $\gamma, \varepsilon \in \Delta$ forces $\delta \in \Delta$. The set $\mathrm{P}_\Delta$ defined above is an ideal, and it is prime exactly when $\Delta$ is convex; conversely every prime arises this way from its set of values. The chain of primes is then in bijection with the chain of convex subgroups.
 
 **Corollary.** A valuation ring has dimension $1$ exactly when its value group is rank one. A valuation ring has dimension $0$ exactly when it is a field, that is, when the valuation is trivial.
 
@@ -98,9 +98,9 @@ $$
 
 ### Existence of Extensions
 
-**Theorem (Chevalley).** Let $R$ be a subring of a field $K$ and let $\mathfrak{p}$ be a prime ideal of $R$. Then there is a valuation ring $V$ of $K$ with $R \subseteq V$ and $\mathfrak{m}_V \cap R = \mathfrak{p}$.
+**Theorem (Chevalley).** Let $R$ be a subring of a field $K$ and let $\mathrm{P}$ be a prime ideal of $R$. Then there is a valuation ring $V$ of $K$ with $R \subseteq V$ and $\mathrm{M}_V \cap R = \mathrm{P}$.
 
-**Proof sketch.** Consider the set of pairs $(A, \mathfrak{q})$ where $A$ is a subring of $K$ containing $R$ and $\mathfrak{q}$ is a prime of $A$ with $\mathfrak{q} \cap R = \mathfrak{p}$. The set is nonempty, contains $(\mathfrak{p}$-localisation of $R, \mathfrak{p})$, and is partially ordered by extension; every chain has an upper bound given by the union, which is a subring and whose union of primes is prime. By Zorn's lemma there is a maximal such pair $(V, \mathfrak{m})$. Maximality forces $\mathfrak{m}$ to be the set of non-units of $V$: any element outside $\mathfrak{m}$ can be inverted without disturbing the prime. Hence $V$ is a local ring whose non-units form an ideal, and the criterion of the preceding section — its proof shows that a local ring with this property is a valuation ring — gives that $V$ is a valuation ring of $K$ with the required prime. $\square$
+**Proof sketch.** Consider the set of pairs $(A, \mathrm{Q})$ where $A$ is a subring of $K$ containing $R$ and $\mathrm{Q}$ is a prime of $A$ with $\mathrm{Q} \cap R = \mathrm{P}$. The set is nonempty, contains $(\mathrm{P}$-localisation of $R, \mathrm{P})$, and is partially ordered by extension; every chain has an upper bound given by the union, which is a subring and whose union of primes is prime. By Zorn's lemma there is a maximal such pair $(V, \mathrm{M})$. Maximality forces $\mathrm{M}$ to be the set of non-units of $V$: any element outside $\mathrm{M}$ can be inverted without disturbing the prime. Hence $V$ is a local ring whose non-units form an ideal, and the criterion of the preceding section — its proof shows that a local ring with this property is a valuation ring — gives that $V$ is a valuation ring of $K$ with the required prime.
 
 **Theorem (integral closure as an intersection).** Let $R$ be an integral domain with fraction field $K$. The integral closure of $R$ in $K$ is the intersection of all valuation rings $V$ of $K$ with $R \subseteq V$:
 
@@ -108,12 +108,12 @@ $$
 \overline{R} = \bigcap_{V \supseteq R} V .
 $$
 
-**Proof.** An element of $\overline{R}$ lies in every valuation ring containing $R$, since valuation rings are integrally closed; this gives one inclusion. Conversely, suppose $x \in K$ is not integral over $R$. Then the ideal $x^{-1} R[x^{-1}]$ of the ring $R[x^{-1}]$ is proper: if it were the whole ring, then $1 = x^{-1} a$ for some $a \in R[x^{-1}]$, whence $x = a$ is a polynomial $\sum r_i x^{-i}$ in $x^{-1}$, and multiplying by a power $x^n$ gives a monic equation for $x$ over $R$. So $x^{-1}R[x^{-1}]$ lies in a maximal ideal $\mathfrak{m}$ of $R[x^{-1}]$, and by Chevalley there is a valuation ring $V$ of $K$ with $R[x^{-1}] \subseteq V$ and $\mathfrak{m}_V \cap R[x^{-1}] = \mathfrak{m}$. Then $x^{-1} \in \mathfrak{m}_V$, so $v(x^{-1}) > 0$ and $v(x) < 0$, hence $x \notin V$. Thus a non-integral element is missed by some valuation ring containing $R$, and the intersection is exactly $\overline{R}$. $\square$
+**Proof.** An element of $\overline{R}$ lies in every valuation ring containing $R$, since valuation rings are integrally closed; this gives one inclusion. Conversely, suppose $x \in K$ is not integral over $R$. Then the ideal $x^{-1} R[x^{-1}]$ of the ring $R[x^{-1}]$ is proper: if it were the whole ring, then $1 = x^{-1} a$ for some $a \in R[x^{-1}]$, whence $x = a$ is a polynomial $\sum r_i x^{-i}$ in $x^{-1}$, and multiplying by a power $x^n$ gives a monic equation for $x$ over $R$. So $x^{-1}R[x^{-1}]$ lies in a maximal ideal $\mathrm{M}$ of $R[x^{-1}]$, and by Chevalley there is a valuation ring $V$ of $K$ with $R[x^{-1}] \subseteq V$ and $\mathrm{M}_V \cap R[x^{-1}] = \mathrm{M}$. Then $x^{-1} \in \mathrm{M}_V$, so $v(x^{-1}) > 0$ and $v(x) < 0$, hence $x \notin V$. Thus a non-integral element is missed by some valuation ring containing $R$, and the intersection is exactly $\overline{R}$.
 
 **Corollary.** An integral domain $R$ with fraction field $K$ is integrally closed if and only if it is the intersection of the valuation rings of $K$ that contain it. In particular every Dedekind domain is an intersection of discrete valuation rings, and
 
 $$
-R = \bigcap_{\mathfrak{m}} R_\mathfrak{m}, \qquad \mathfrak{m} \text{ ranging over the maximal ideals.}
+R = \bigcap_{\mathrm{M}} R_\mathrm{M}, \qquad \mathrm{M} \text{ ranging over the maximal ideals.}
 $$
 
 This recovers the local characterisation of Dedekind domains of *Dedekind Domains and Ideal Class Groups*: the localisations there are exactly the valuation rings occurring in the intersection.
@@ -122,7 +122,7 @@ This recovers the local characterisation of Dedekind domains of *Dedekind Domain
 
 **Theorem.** Let $v$ be a valuation of $K$ and let $L/K$ be an algebraic extension. Then $v$ extends to a valuation of $L$; that is, there is a valuation $w$ of $L$ with $w\vert_K = v$.
 
-**Proof sketch.** One first extends to a simple extension $K(\alpha)$ by taking a maximal element, under Zorn's lemma, among the pairs consisting of a subring $A \supseteq \mathcal{O}_v$ of $K(\alpha)$ and a prime $\mathfrak{q}$ of $A$ contracting to $\mathfrak{m}_v$; Chevalley's maximality argument produces a valuation ring $W$ with $W \cap K = \mathcal{O}_v$, and a valuation ring with that intersection restriction gives a valuation extending $v$. The general case follows by another Zorn argument on the set of partial extensions, ordered by extension of the domain. $\square$
+**Proof sketch.** One first extends to a simple extension $K(\alpha)$ by taking a maximal element, under Zorn's lemma, among the pairs consisting of a subring $A \supseteq \mathcal{O}_v$ of $K(\alpha)$ and a prime $\mathrm{Q}$ of $A$ contracting to $\mathrm{M}_v$; Chevalley's maximality argument produces a valuation ring $W$ with $W \cap K = \mathcal{O}_v$, and a valuation ring with that intersection restriction gives a valuation extending $v$. The general case follows by another Zorn argument on the set of partial extensions, ordered by extension of the domain.
 
 **Definition.** Let $L/K$ be finite and let $w$ be an extension of $v$ to $L$. The **ramification index** and **residue degree** are
 
@@ -138,7 +138,7 @@ $$
 
 If $v$ is Henselian, in the sense defined below, then there is exactly one extension and equality holds, $e f = n$. If moreover $L/K$ is separable, equality holds for arbitrary $v$; this is the separable case of the fundamental equality, proved by passing to the completion and quoted here as a standard theorem of valuation theory from the literature.
 
-**Proof sketch.** Reduce to the case of a normal extension by passing to a normal closure; the extensions of $v$ are permuted transitively by the Galois group, so all the products $e f$ are equal, and it suffices to bound $[L:K]$ below by $g \cdot e f$. Choose for each $i$ a uniformiser and a residue field basis; the standard norm argument, using a residue field basis and the fact that the $\Gamma_w$-components are comparable only through $\Gamma_v$, shows that the resulting set of $e f$ elements is linearly independent over $K$, giving the inequality. $\square$
+**Proof sketch.** Reduce to the case of a normal extension by passing to a normal closure; the extensions of $v$ are permuted transitively by the Galois group, so all the products $e f$ are equal, and it suffices to bound $[L:K]$ below by $g \cdot e f$. Choose for each $i$ a uniformiser and a residue field basis; the standard norm argument, using a residue field basis and the fact that the $\Gamma_w$-components are comparable only through $\Gamma_v$, shows that the resulting set of $e f$ elements is linearly independent over $K$, giving the inequality.
 
 ### Independence and Approximation
 
@@ -150,11 +150,11 @@ $$
 v_i(x - a_i) > \gamma_i \qquad \text{for } i = 1, \ldots, n.
 $$
 
-**Proof sketch.** It suffices to treat the case $a_1 = 1$ and $a_2 = \cdots = a_n = 0$, since the general case is obtained by adding the $a_i$ afterwards and enlarging the $\gamma_i$. Independence supplies, for each $i$, an element $u_i$ with $v_i(u_i)$ large and $v_j(u_i)$ small for $j \neq i$, and the required element is $x = u_1 (u_1 + \cdots + u_n)^{-1}$, whose value at each $v_i$ is close to $1$ at $i = 1$ and close to $0$ at $i \neq 1$, in the precise sense of the inequalities. $\square$
+**Proof sketch.** It suffices to treat the case $a_1 = 1$ and $a_2 = \cdots = a_n = 0$, since the general case is obtained by adding the $a_i$ afterwards and enlarging the $\gamma_i$. Independence supplies, for each $i$, an element $u_i$ with $v_i(u_i)$ large and $v_j(u_i)$ small for $j \neq i$, and the required element is $x = u_1 (u_1 + \cdots + u_n)^{-1}$, whose value at each $v_i$ is close to $1$ at $i = 1$ and close to $0$ at $i \neq 1$, in the precise sense of the inequalities.
 
-**Corollary (weak approximation).** If $v_1, \ldots, v_n$ are independent nontrivial valuations with valuation rings $\mathcal{O}_i$ and maximal ideals $\mathfrak{m}_i$, then for prescribed $a_i \in K$ and exponents $N_i$ there is $x \in K$ with $x \equiv a_i \bmod \mathfrak{m}_i^{N_i}$ for all $i$. When the $v_i$ are the $p$-adic valuations of $\mathbb{Q}$ this is the Chinese remainder theorem for the ideals $p_i^{N_i}\mathbb{Z}$.
+**Corollary (weak approximation).** If $v_1, \ldots, v_n$ are independent nontrivial valuations with valuation rings $\mathcal{O}_i$ and maximal ideals $\mathrm{M}_i$, then for prescribed $a_i \in K$ and exponents $N_i$ there is $x \in K$ with $x \equiv a_i \bmod \mathrm{M}_i^{N_i}$ for all $i$. When the $v_i$ are the $p$-adic valuations of $\mathbb{Q}$ this is the Chinese remainder theorem for the ideals $p_i^{N_i}\mathbb{Z}$.
 
-**Corollary.** Let $R$ be a Dedekind domain with fraction field $K$. The set of nontrivial valuations $v$ of $K$ with $\mathcal{O}_v \supseteq R$ is in bijection with the set of maximal ideals of $R$, by $v \leftrightarrow \mathfrak{m}$, where $v$ is the discrete valuation of the localisation $R_\mathfrak{m}$. These valuations are pairwise independent, and the approximation theorem for them is the ideal-theoretic approximation statement of *Dedekind Domains and Ideal Class Groups*.
+**Corollary.** Let $R$ be a Dedekind domain with fraction field $K$. The set of nontrivial valuations $v$ of $K$ with $\mathcal{O}_v \supseteq R$ is in bijection with the set of maximal ideals of $R$, by $v \leftrightarrow \mathrm{M}$, where $v$ is the discrete valuation of the localisation $R_\mathrm{M}$. These valuations are pairwise independent, and the approximation theorem for them is the ideal-theoretic approximation statement of *Dedekind Domains and Ideal Class Groups*.
 
 ---
 
@@ -162,25 +162,25 @@ $$
 
 ### The Henselian Property
 
-**Definition.** A local ring $(R, \mathfrak{m}, k)$ is **Henselian** if for every monic polynomial $f \in R[x]$ whose image $\bar f \in k[x]$ factors as $\bar f = \bar g \, \bar h$ with $\bar g, \bar h$ monic and coprime, there exist monic $g, h \in R[x]$ with $f = gh$ and $\bar g, \bar h$ the respective images. This is the **Henselian property**.
+**Definition.** A local ring $(R, \mathrm{M}, k)$ is **Henselian** if for every monic polynomial $f \in R[x]$ whose image $\bar f \in k[x]$ factors as $\bar f = \bar g \, \bar h$ with $\bar g, \bar h$ monic and coprime, there exist monic $g, h \in R[x]$ with $f = gh$ and $\bar g, \bar h$ the respective images. This is the **Henselian property**.
 
 The definition is the general form of the lifting statement for complete non-Archimedean fields; there the hypothesis of completeness supplies a metric iteration, whereas here the property is required of the ring directly.
 
-**Theorem (equivalent conditions).** For a local ring $(R, \mathfrak{m}, k)$ the following are equivalent.
+**Theorem (equivalent conditions).** For a local ring $(R, \mathrm{M}, k)$ the following are equivalent.
 
 **(a)** $R$ is Henselian.
 
-**(b)** For every $f \in R[x]$ and every $a \in R$ with $\bar f(\bar a) = 0$ and $\bar f'(\bar a) \neq 0$ in $k$, there is $b \in R$ with $f(b) = 0$ and $\bar b = \bar a$; a simple root modulo $\mathfrak{m}$ lifts to a root in $R$.
+**(b)** For every $f \in R[x]$ and every $a \in R$ with $\bar f(\bar a) = 0$ and $\bar f'(\bar a) \neq 0$ in $k$, there is $b \in R$ with $f(b) = 0$ and $\bar b = \bar a$; a simple root modulo $\mathrm{M}$ lifts to a root in $R$.
 
-**(c)** Every finite $R$-algebra that is a product of copies of the residue field after reduction modulo $\mathfrak{m}$ is itself a product of copies of $R$.
+**(c)** Every finite $R$-algebra that is a product of copies of the residue field after reduction modulo $\mathrm{M}$ is itself a product of copies of $R$.
 
-**(d)** Every idempotent of $R/\mathfrak{m}$ [respectively of a finite $R$-algebra modulo $\mathfrak{m}$] lifts to $R$.
+**(d)** Every idempotent of $R/\mathrm{M}$ [respectively of a finite $R$-algebra modulo $\mathrm{M}$] lifts to $R$.
 
-**Proof sketch.** (a) $\Rightarrow$ (b): the polynomial $f$ modulo $\mathfrak{m}$ is divisible by $x - \bar a$ with complementary factor coprime to $x - \bar a$, since $\bar f'(\bar a) \neq 0$; lifting the factorisation gives a linear factor $x - b$. (b) $\Rightarrow$ (a): given $\bar f = \bar g \bar h$ coprime, the resultant-type construction produces a root modulo $\mathfrak{m}$ of a polynomial whose derivative is a unit, and (b) lifts it; induction on the degree gives the full factorisation. The equivalence of (c) and (d) with (a) is the same lifting read through idempotents: an idempotent of the reduction corresponds to a splitting of a finite ring extension into two factors. $\square$
+**Proof sketch.** (a) $\Rightarrow$ (b): the polynomial $f$ modulo $\mathrm{M}$ is divisible by $x - \bar a$ with complementary factor coprime to $x - \bar a$, since $\bar f'(\bar a) \neq 0$; lifting the factorisation gives a linear factor $x - b$. (b) $\Rightarrow$ (a): given $\bar f = \bar g \bar h$ coprime, the resultant-type construction produces a root modulo $\mathrm{M}$ of a polynomial whose derivative is a unit, and (b) lifts it; induction on the degree gives the full factorisation. The equivalence of (c) and (d) with (a) is the same lifting read through idempotents: an idempotent of the reduction corresponds to a splitting of a finite ring extension into two factors.
 
 **Theorem (valuations and Hensel).** Let $v$ be a valuation of a field $K$. Then $v$ is Henselian — meaning that its valuation ring is a Henselian local ring — if and only if $v$ extends uniquely to every algebraic extension of $K$.
 
-**Proof sketch.** If $v$ extends uniquely to an algebraic extension $L$, then the valuation ring of $L$ is the unique one over $\mathcal{O}_v$, which forces the factorisation of a polynomial to be rigid; conversely if $v$ is Henselian and $w_1, w_2$ are two extensions, the fundamental inequality applied to a finite normal subextension shows $g = 1$, and a Henselian valuation ring is integrally closed so that the uniqueness propagates. This equivalence is the valuation-theoretic content of the definition. $\square$
+**Proof sketch.** If $v$ extends uniquely to an algebraic extension $L$, then the valuation ring of $L$ is the unique one over $\mathcal{O}_v$, which forces the factorisation of a polynomial to be rigid; conversely if $v$ is Henselian and $w_1, w_2$ are two extensions, the fundamental inequality applied to a finite normal subextension shows $g = 1$, and a Henselian valuation ring is integrally closed so that the uniqueness propagates. This equivalence is the valuation-theoretic content of the definition.
 
 ### Examples and the Henselization
 
@@ -192,15 +192,15 @@ The definition is the general form of the lifting statement for complete non-Arc
 
 **Example (the $p$-adics and their algebraic extensions).** The valuation of $\mathbb{Q}_p$ is Henselian and extends uniquely to $\mathbb{Q}_{p^n}$ and to the maximal unramified extension; the ramification theory of these extensions is the arithmetic content of Hensel's lemma, with $e$ and $f$ of the fundamental inequality satisfying $ef = n$.
 
-**Theorem (henselization).** Every local ring $(R, \mathfrak{m})$ has a **henselization** $R^h$: a Henselian local ring with a local homomorphism $R \to R^h$ that is initial among local homomorphisms from $R$ to Henselian local rings. It satisfies
+**Theorem (henselization).** Every local ring $(R, \mathrm{M})$ has a **henselization** $R^h$: a Henselian local ring with a local homomorphism $R \to R^h$ that is initial among local homomorphisms from $R$ to Henselian local rings. It satisfies
 
-**(a)** the induced map on residue fields $R/\mathfrak{m} \to R^h/\mathfrak{m}R^h$ is an isomorphism, and $\mathfrak{m}R^h$ is the maximal ideal of $R^h$;
+**(a)** the induced map on residue fields $R/\mathrm{M} \to R^h/\mathrm{M}R^h$ is an isomorphism, and $\mathrm{M}R^h$ is the maximal ideal of $R^h$;
 
-**(b)** $R^h$ is the filtered colimit of the local rings $S_{\mathfrak{n}}$, over the finite $R$-algebras $S$ such that every idempotent of $S/\mathfrak{m}S$ lifts to $S$, with $\mathfrak{n}$ a maximal ideal lying over $\mathfrak{m}$;
+**(b)** $R^h$ is the filtered colimit of the local rings $S_{\mathrm{N}}$, over the finite $R$-algebras $S$ such that every idempotent of $S/\mathrm{M}S$ lifts to $S$, with $\mathrm{N}$ a maximal ideal lying over $\mathrm{M}$;
 
 **(c)** if $R$ is a field, $R^h$ is the subfield of an algebraic closure fixed by the inertia group of a chosen extension of the valuation, so that the henselization of $K$ consists of the elements whose minimal polynomial has a simple root reduction.
 
-**Proof sketch.** The filtered colimit in (b) exists, is local with residue field $k$, and is Henselian because every coprime factorisation modulo $\mathfrak{m}$ lifts through one of the finite algebras $S$ by construction; the universal property follows from the lifting property of those algebras, which is exactly what a map to a Henselian local ring can absorb. Part (c) is the description for a valued field: the inertia group fixes precisely the elements whose minimal polynomial reduces to a polynomial with a simple root, and the fixed field is Henselian by the unique extension property. The henselization sits inside the completion, $R^h \subseteq \widehat{R}$ for a valuation ring $R$, with equality exactly when $R$ is already Henselian; the completion is the metric object, and it is used here only for this comparison. $\square$
+**Proof sketch.** The filtered colimit in (b) exists, is local with residue field $k$, and is Henselian because every coprime factorisation modulo $\mathrm{M}$ lifts through one of the finite algebras $S$ by construction; the universal property follows from the lifting property of those algebras, which is exactly what a map to a Henselian local ring can absorb. Part (c) is the description for a valued field: the inertia group fixes precisely the elements whose minimal polynomial reduces to a polynomial with a simple root, and the fixed field is Henselian by the unique extension property. The henselization sits inside the completion, $R^h \subseteq \widehat{R}$ for a valuation ring $R$, with equality exactly when $R$ is already Henselian; the completion is the metric object, and it is used here only for this comparison.
 
 **Corollary.** Every local ring has a Henselian closure that is the smallest Henselian local ring through which every map to a Henselian local ring factors; for a discrete valuation ring the henselization is the ring of elements of the completion whose minimal polynomial over the fraction field has a simple root reduction modulo the maximal ideal. In particular, a discrete valuation ring with separably closed residue field is Henselian.
 
@@ -225,15 +225,15 @@ A local ring is Henselian when a coprime factorisation modulo the maximal ideal 
 | $\Gamma$, $\Gamma_v$ | Value group, additively written ordered abelian group |
 | $\operatorname{rank} v$ | Order rank of $\Gamma_v$ |
 | $\mathcal{O}$, $\mathcal{O}_v$ | Valuation ring $\{x : v(x) \geq 0\}$ |
-| $\mathfrak{m}$, $\mathfrak{m}_v$ | Maximal ideal $\{x : v(x) > 0\}$ |
-| $k(v)$ | Residue field $\mathcal{O}_v/\mathfrak{m}_v$ |
-| $\mathfrak{p}_\Delta$ | Prime ideal of $\mathcal{O}_v$ attached to a convex subgroup $\Delta$ |
+| $\mathrm{M}$, $\mathrm{M}_v$ | Maximal ideal $\{x : v(x) > 0\}$ |
+| $k(v)$ | Residue field $\mathcal{O}_v/\mathrm{M}_v$ |
+| $\mathrm{P}_\Delta$ | Prime ideal of $\mathcal{O}_v$ attached to a convex subgroup $\Delta$ |
 | $(m, n)$ in $\mathbb{Z} \oplus \mathbb{Z}$ | Lexicographic coordinates of a rank-two valuation |
 | $e(w/v)$, $f(w/v)$ | Ramification index, residue degree |
 | $v_1, \ldots, v_n$ independent | Approximation with prescribed values possible |
-| $(R, \mathfrak{m}, k)$ | Local ring with maximal ideal and residue field |
+| $(R, \mathrm{M}, k)$ | Local ring with maximal ideal and residue field |
 | $R^h$ | Henselization of $R$ |
-| Henselian property | Coprime factorisation modulo $\mathfrak{m}$ lifts |
+| Henselian property | Coprime factorisation modulo $\mathrm{M}$ lifts |
 | $\widehat{R}$ | Completion of a valued field |
 | $\mathbb{Q}_p$, $\mathbb{Z}_p$, $\mathbb{C}_p$ | Non-Archimedean fields, cited from the companion article |
 | $\overline{R}$ | Integral closure of $R$ in its fraction field |

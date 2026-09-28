@@ -39,7 +39,7 @@ Three short exact pieces carry all the information.
 
 **Proposition.** (i) $0 \to A \xrightarrow{f} B$ is exact if and only if $f$ is injective. (ii) $B \xrightarrow{g} C \to 0$ is exact if and only if $g$ is surjective. (iii) $0 \to A \xrightarrow{f} B \xrightarrow{g} C \to 0$ is exact if and only if $f$ is injective, $\operatorname{im} f=\ker g$, and $g$ is surjective; then $C \cong B/f(A)$.
 
-*Proof.* The map $0 \to A$ has image $0$, and $\ker f=0$ is injectivity; the map $C \to 0$ has kernel $C$, and $\operatorname{im} g=C$ is surjectivity. For (iii), exactness at $A$ and $C$ gives (i) and (ii) and exactness at $B$ gives the middle condition; the first isomorphism theorem gives $C \cong B/\ker g=B/f(A)$. $\square$
+*Proof.* The map $0 \to A$ has image $0$, and $\ker f=0$ is injectivity; the map $C \to 0$ has kernel $C$, and $\operatorname{im} g=C$ is surjectivity. For (iii), exactness at $A$ and $C$ gives (i) and (ii) and exactness at $B$ gives the middle condition; the first isomorphism theorem gives $C \cong B/\ker g=B/f(A)$.
 
 The notation $0$ stands for the zero module, and a map from or to it is the only one that exists.
 
@@ -115,7 +115,7 @@ Exactness at $\ker c$: that $\partial$ vanishes on the image of $\ker b$ is the 
 
 Exactness at $\operatorname{coker} a$: the composite $\partial$ followed by the map induced by $f'$ sends $c_0$ to $f'(a_0')=b(b_0)$, which is zero in $\operatorname{coker} b$ because it lies in $\operatorname{im} b$. Conversely, if the class of $a_0'$ in $\operatorname{coker} a$ dies in $\operatorname{coker} b$, then $f'(a_0')=b(b_1)$ for some $b_1 \in B$, and $g'(b(b_1))=g'(f'(a_0'))=0$ forces $0=c(g(b_1))$, so $g(b_1) \in \ker c$; the construction applied to $g(b_1)$ with lift $b_1$ returns the class of $a_0'$. Hence the kernel of $\operatorname{coker} a \to \operatorname{coker} b$ is contained in the image of $\partial$.
 
-Exactness at $\operatorname{coker} b$: the composite of the maps induced by $f'$ and $g'$ is induced by $g'f'=0$. Conversely, suppose the class of $b_0'$ in $\operatorname{coker} b$ maps to zero in $\operatorname{coker} c$, that is $g'(b_0') \in \operatorname{im} c$, say $g'(b_0')=c(c_0)$ for some $c_0 \in C$. Since $g$ is surjective, $c_0=g(b_0)$ for some $b_0 \in B$; then $g'(b_0'-b(b_0))=c(c_0)-c(g(b_0))=0$, so $b_0'-b(b_0) \in \ker g'=\operatorname{im} f'$, say $b_0'-b(b_0)=f'(a_0')$. Hence the class of $b_0'$ in $\operatorname{coker} b$ equals the class of $f'(a_0')$, which is the image of the class of $a_0'$ in $\operatorname{coker} a$. The two extra terms of the long sequence are obtained from the corresponding statements for $f$ injective and $g'$ surjective by the same argument at the ends. $\square$
+Exactness at $\operatorname{coker} b$: the composite of the maps induced by $f'$ and $g'$ is induced by $g'f'=0$. Conversely, suppose the class of $b_0'$ in $\operatorname{coker} b$ maps to zero in $\operatorname{coker} c$, that is $g'(b_0') \in \operatorname{im} c$, say $g'(b_0')=c(c_0)$ for some $c_0 \in C$. Since $g$ is surjective, $c_0=g(b_0)$ for some $b_0 \in B$; then $g'(b_0'-b(b_0))=c(c_0)-c(g(b_0))=0$, so $b_0'-b(b_0) \in \ker g'=\operatorname{im} f'$, say $b_0'-b(b_0)=f'(a_0')$. Hence the class of $b_0'$ in $\operatorname{coker} b$ equals the class of $f'(a_0')$, which is the image of the class of $a_0'$ in $\operatorname{coker} a$. The two extra terms of the long sequence are obtained from the corresponding statements for $f$ injective and $g'$ surjective by the same argument at the ends.
 
 ### The Long Exact Sequence in Practice
 
@@ -139,7 +139,7 @@ and maps $\alpha_i:A_i \to B_i$ making the two rows into a commutative ladder.
 
 Injectivity. Suppose $\alpha_2,\alpha_4$ injective and $\alpha_1$ surjective. Let $a_3 \in A_3$ with $\alpha_3(a_3)=0$. Then $\alpha_4\beta_3(a_3)=\beta_3'\alpha_3(a_3)=0$, so $\beta_3(a_3)=0$ by injectivity of $\alpha_4$, and exactness gives $a_3=\beta_2(a_2)$ for some $a_2 \in A_2$. Now $\beta_2'\alpha_2(a_2)=\alpha_3\beta_2(a_2)=\alpha_3(a_3)=0$, so $\alpha_2(a_2) \in \ker\beta_2'=\operatorname{im}\beta_1'$, say $\alpha_2(a_2)=\beta_1'(b_1)$. By surjectivity of $\alpha_1$ write $b_1=\alpha_1(a_1)$; then $\alpha_2(a_2)=\beta_1'\alpha_1(a_1)=\alpha_2\beta_1(a_1)$, so $a_2=\beta_1(a_1)$ by injectivity of $\alpha_2$, and $a_3=\beta_2\beta_1(a_1)=0$ by exactness. Hence $\alpha_3$ is injective.
 
-Surjectivity. Suppose $\alpha_2,\alpha_4$ surjective and $\alpha_5$ injective. Let $b_3 \in B_3$. Since $\alpha_4$ is surjective there is $a_4 \in A_4$ with $\beta_3'(b_3)=\alpha_4(a_4)$. Then $\alpha_5\beta_4(a_4)=\beta_4'\alpha_4(a_4)=\beta_4'\beta_3'(b_3)=0$, so $\beta_4(a_4)=0$ by injectivity of $\alpha_5$, and exactness gives $a_4=\beta_3(a_3')$ for some $a_3' \in A_3$. Now $\beta_3'(b_3-\alpha_3(a_3'))=\beta_3'(b_3)-\beta_3'\alpha_3(a_3')=\alpha_4(a_4)-\alpha_4\beta_3(a_3')=0$, so $b_3-\alpha_3(a_3') \in \ker\beta_3'=\operatorname{im}\beta_2'$, say $b_3-\alpha_3(a_3')=\beta_2'(b_2)$. By surjectivity of $\alpha_2$ write $b_2=\alpha_2(a_2)$; then $b_3-\alpha_3(a_3')=\beta_2'\alpha_2(a_2)=\alpha_3\beta_2(a_2)$, so $b_3=\alpha_3(a_3'+\beta_2(a_2))$. Hence $\alpha_3$ is surjective. $\square$
+Surjectivity. Suppose $\alpha_2,\alpha_4$ surjective and $\alpha_5$ injective. Let $b_3 \in B_3$. Since $\alpha_4$ is surjective there is $a_4 \in A_4$ with $\beta_3'(b_3)=\alpha_4(a_4)$. Then $\alpha_5\beta_4(a_4)=\beta_4'\alpha_4(a_4)=\beta_4'\beta_3'(b_3)=0$, so $\beta_4(a_4)=0$ by injectivity of $\alpha_5$, and exactness gives $a_4=\beta_3(a_3')$ for some $a_3' \in A_3$. Now $\beta_3'(b_3-\alpha_3(a_3'))=\beta_3'(b_3)-\beta_3'\alpha_3(a_3')=\alpha_4(a_4)-\alpha_4\beta_3(a_3')=0$, so $b_3-\alpha_3(a_3') \in \ker\beta_3'=\operatorname{im}\beta_2'$, say $b_3-\alpha_3(a_3')=\beta_2'(b_2)$. By surjectivity of $\alpha_2$ write $b_2=\alpha_2(a_2)$; then $b_3-\alpha_3(a_3')=\beta_2'\alpha_2(a_2)=\alpha_3\beta_2(a_2)$, so $b_3=\alpha_3(a_3'+\beta_2(a_2))$. Hence $\alpha_3$ is surjective.
 
 ### The Short Five Lemma
 
@@ -153,7 +153,7 @@ $$
 
 be short exact sequences, with maps $\alpha:A \to A'$, $\beta:B \to B'$ and $\gamma:C \to C'$ commuting with them. If $\alpha$ and $\gamma$ are isomorphisms then $\beta$ is an isomorphism; and if $\alpha$ is injective and $\gamma$ is surjective then $\beta$ is injective, while if $\alpha$ is surjective and $\gamma$ is injective then $\beta$ is surjective.
 
-*Proof.* This is the five lemma with the outer terms zero: the two extra entries of a five-term row are the zero modules, whose maps are isomorphisms. $\square$
+*Proof.* This is the five lemma with the outer terms zero: the two extra entries of a five-term row are the zero modules, whose maps are isomorphisms.
 
 The short five lemma is the precise sense in which a short exact sequence determines its middle term up to isomorphism from its two ends, once the inclusions and projections are fixed. It does *not* say that the middle term is determined by the ends alone; the sequence $0 \to \mathbb{Z} \xrightarrow{\cdot 2} \mathbb{Z} \to \mathbb{Z}/2\mathbb{Z} \to 0$ shows otherwise.
 
@@ -173,7 +173,7 @@ A section is a choice, for each element of $C$, of a lift in $B$ depending linea
 
 **Lemma (splitting).** For a short exact sequence $0 \to A \xrightarrow{i} B \xrightarrow{q} C \to 0$ the following are equivalent: (i) there is a section $s$; (ii) there is a retraction $r$; (iii) $B \cong A \oplus C$ with $i$ the inclusion of the first summand and $q$ the projection onto the second.
 
-*Proof.* (i) $\Rightarrow$ (iii): define $\varphi:A \oplus C \to B$ by $\varphi(a,c)=i(a)+s(c)$. It is $R$-linear. If $\varphi(a,c)=0$, applying $q$ gives $c=0$, and then $i(a)=0$ gives $a=0$; so $\varphi$ is injective. For surjectivity, given $b \in B$, put $c=q(b)$ and $b'=b-s(c)$; then $q(b')=0$, so $b'=i(a)$ for a unique $a \in A$, and $b=\varphi(a,c)$. Thus $\varphi$ is an isomorphism. (iii) $\Rightarrow$ (i) and (iii) $\Rightarrow$ (ii): in the direct sum the map $c \mapsto (0,c)$ is a section and $(a,c)\mapsto a$ is a retraction. (ii) $\Rightarrow$ (iii): define $\psi:B \to A\oplus C$ by $\psi(b)=(r(b),q(b))$ and check injectivity and surjectivity by the same computation as above with the roles exchanged. $\square$
+*Proof.* (i) $\Rightarrow$ (iii): define $\varphi:A \oplus C \to B$ by $\varphi(a,c)=i(a)+s(c)$. It is $R$-linear. If $\varphi(a,c)=0$, applying $q$ gives $c=0$, and then $i(a)=0$ gives $a=0$; so $\varphi$ is injective. For surjectivity, given $b \in B$, put $c=q(b)$ and $b'=b-s(c)$; then $q(b')=0$, so $b'=i(a)$ for a unique $a \in A$, and $b=\varphi(a,c)$. Thus $\varphi$ is an isomorphism. (iii) $\Rightarrow$ (i) and (iii) $\Rightarrow$ (ii): in the direct sum the map $c \mapsto (0,c)$ is a section and $(a,c)\mapsto a$ is a retraction. (ii) $\Rightarrow$ (iii): define $\psi:B \to A\oplus C$ by $\psi(b)=(r(b),q(b))$ and check injectivity and surjectivity by the same computation as above with the roles exchanged.
 
 The splitting of the sequence is equivalent to the existence of an idempotent endomorphism of $B$ with image $i(A)$, namely $i \circ r$ or $\operatorname{id}_B-s\circ q$; this is the idempotent criterion for a direct summand met in the first article of the category.
 
@@ -193,7 +193,7 @@ $$
 
 is exact.
 
-*Proof.* If $f_*(h)=0$ then $f \circ h=0$; since $f$ is injective, $h=0$, so $f_*$ is injective. Next, $g_* f_*=(g \circ f)_*=0$, so $\operatorname{im} f_* \subseteq \ker g_*$. Conversely, let $h \in \operatorname{Hom}_R(M,B)$ with $g \circ h=0$. Then $\operatorname{im} h \subseteq \ker g=\operatorname{im} f$, and since $f$ is injective the map $f^{-1}:\operatorname{im} f \to A$ is a well-defined homomorphism; the composite $f^{-1} \circ h$ is an element of $\operatorname{Hom}_R(M,A)$ with $f_*(f^{-1}h)=h$. So $\ker g_* \subseteq \operatorname{im} f_*$. $\square$
+*Proof.* If $f_*(h)=0$ then $f \circ h=0$; since $f$ is injective, $h=0$, so $f_*$ is injective. Next, $g_* f_*=(g \circ f)_*=0$, so $\operatorname{im} f_* \subseteq \ker g_*$. Conversely, let $h \in \operatorname{Hom}_R(M,B)$ with $g \circ h=0$. Then $\operatorname{im} h \subseteq \ker g=\operatorname{im} f$, and since $f$ is injective the map $f^{-1}:\operatorname{im} f \to A$ is a well-defined homomorphism; the composite $f^{-1} \circ h$ is an element of $\operatorname{Hom}_R(M,A)$ with $f_*(f^{-1}h)=h$. So $\ker g_* \subseteq \operatorname{im} f_*$.
 
 Left exactness here is exactly the statement that $\operatorname{Hom}_R(M,-)$ preserves kernels. It does not in general preserve cokernels: applying it to $0 \to \mathbb{Z} \xrightarrow{\cdot 2} \mathbb{Z} \to \mathbb{Z}/2\mathbb{Z} \to 0$ with $M=\mathbb{Z}/2\mathbb{Z}$ gives
 
@@ -215,7 +215,7 @@ $$
 
 is exact.
 
-*Proof.* Here $g^*(h)=h \circ g$ and $f^*(h)=h \circ f$. Injectivity of $g^*$ uses that $g$ is surjective: if $h \circ g=0$ then $h$ vanishes on $\operatorname{im} g=C$. The vanishing of $f^*g^*$ uses $gf=0$. For the reverse inclusion, let $h \in \operatorname{Hom}_R(B,N)$ with $h \circ f=0$; then $h$ factors through $B/\operatorname{im} f=B/\ker g \cong \operatorname{im} g=C$, so there is a well-defined $\bar h:C \to N$ with $\bar h \circ g=h$, that is $g^*(\bar h)=h$. $\square$
+*Proof.* Here $g^*(h)=h \circ g$ and $f^*(h)=h \circ f$. Injectivity of $g^*$ uses that $g$ is surjective: if $h \circ g=0$ then $h$ vanishes on $\operatorname{im} g=C$. The vanishing of $f^*g^*$ uses $gf=0$. For the reverse inclusion, let $h \in \operatorname{Hom}_R(B,N)$ with $h \circ f=0$; then $h$ factors through $B/\operatorname{im} f=B/\ker g \cong \operatorname{im} g=C$, so there is a well-defined $\bar h:C \to N$ with $\bar h \circ g=h$, that is $g^*(\bar h)=h$.
 
 Combining the two variables, $\operatorname{Hom}_R(-,-)$ is left exact as a functor of either argument, and in a short exact sequence it produces the four-term exact sequence of the two statements. Exactness of $\operatorname{Hom}$ in both variables, without the loss of surjectivity, is the defining property of a projective first argument or an injective second argument.
 
@@ -231,7 +231,7 @@ $$
 
 is exact. It is not in general left exact.
 
-*Proof.* This is proved in the article of this category on flatness and exactness, where the construction of the tensor product by generators and relations is available. $\square$
+*Proof.* This is proved in the article of this category on flatness and exactness, where the construction of the tensor product by generators and relations is available.
 
 So $\operatorname{Hom}$ loses surjectivity and tensor loses injectivity, and the modules for which the loss does not occur are the injective and projective modules on one side and the flat modules on the other. The example $\mathbb{Z}/2\mathbb{Z} \otimes_{\mathbb{Z}} \mathbb{Z} \xrightarrow{\ \cdot 2\ } \mathbb{Z}/2\mathbb{Z} \otimes_{\mathbb{Z}} \mathbb{Z}$ is the zero map on $\mathbb{Z}/2\mathbb{Z}$, so tensoring the non-split sequence $0 \to \mathbb{Z} \xrightarrow{\cdot 2} \mathbb{Z} \to \mathbb{Z}/2\mathbb{Z} \to 0$ with $\mathbb{Z}/2\mathbb{Z}$ destroys injectivity.
 

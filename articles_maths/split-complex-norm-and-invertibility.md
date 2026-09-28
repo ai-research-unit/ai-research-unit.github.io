@@ -3,17 +3,17 @@
 
 ## Introduction
 
-This article treats the multiplicative size of a split-complex number: the **norm form** $N(Z) = Z\bar{Z} = a^2-b^2$, its multiplicativity, the region on which it vanishes, and the invertibility criterion it supplies. It is the two-dimensional member of the family of norm-form articles, and its counterpart is *Biquaternion Norm and Invertibility*; the four-dimensional case has a complex-valued norm form that can vanish on a large cone, while here the form is real and indefinite of signature $(1,1)$, and its vanishing set is a pair of lines.
+This article treats the multiplicative size of a split-complex number: the **norm** $N(Z) = Z\bar{Z} = a^2-b^2$, its multiplicativity, the region on which it vanishes, and the invertibility criterion it supplies. It is the two-dimensional member of the family of articles on the norm, and its counterpart is *Biquaternion Norm and Invertibility*; the four-dimensional case has a complex-valued norm that can vanish on a large cone, while here the form is real and indefinite of signature $(1,1)$, and its vanishing set is a pair of lines.
 
-The organisation follows the biquaternion article. The norm form is defined and shown multiplicative; it is shown **not** to be definite, and its square root $|N|^{1/2}$ is shown to be a modulus only up to a sign, which produces the two regimes that recur throughout the category. The Euclidean form is then separated from the norm form, as in the four-dimensional case, and the invertibility of an element is reduced to the non-vanishing of the norm form. The group of units, its four components and its non-compactness are established, the elements are classified in three ways, and the distribution of the invertible elements among the distinguished subspaces is tabulated.
+The organisation follows the biquaternion article. The norm is defined and shown multiplicative; it is shown **not** to be definite, and its square root $|N|^{1/2}$ is shown to be a modulus only up to a sign, which produces the two regimes that recur throughout the category. The Euclidean form is then separated from the norm, as in the four-dimensional case, and the invertibility of an element is reduced to the non-vanishing of the norm. The group of units, its four components and its non-compactness are established, the elements are classified in three ways, and the distribution of the invertible elements among the distinguished subspaces is tabulated.
 
 The conventions are those of *Split-Complex Algebra*: the basis is $1$, $j$, with $j^2 = +1$, a general element is $Z = a + j b$ with $a = \operatorname{Re}Z$ and $b = \operatorname{Im}Z$, the conjugate is $\bar{Z} = a-j b$, and the idempotent basis is $\Pi_\pm = \tfrac12(1\pm j)$ with $Z = Z_+\Pi_1 + Z_-\Pi_2$, $Z_\pm = a\pm b$. The modulus $\rho = \sqrt{|N(Z)|}$ is defined in this article as the positive scale carried by the polar factorisation. Every numerical claim below was recomputed in double precision.
 
-## The Norm Form
+## The Norm
 
 ### Definition
 
-The **norm form** of a split-complex number $Z = a + j b$ is
+The **norm** of a split-complex number $Z = a + j b$ is
 
 $$
 N(Z) = Z \bar{Z} = (a+j b)(a-j b) = a^2 - b^2.
@@ -25,17 +25,17 @@ $$
 g(Z, W) = \frac{1}{2}\big(N(Z+W) - N(Z) - N(W)\big) = a c - b d, \qquad Z = a+j b, \; W = c+j d,
 $$
 
-whose matrix in the basis $\{1, j\}$ is $\operatorname{diag}(1, -1)$ and whose signature is $(1,1)$. In the idempotent coordinates the norm form is the product
+whose matrix in the basis $\{1, j\}$ is $\operatorname{diag}(1, -1)$ and whose signature is $(1,1)$. In the idempotent coordinates the norm is the product
 
 $$
 N(Z) = Z_+ Z_-,
 $$
 
-which is the reason the norm form vanishes exactly when one idempotent coordinate vanishes.
+which is the reason the norm vanishes exactly when one idempotent coordinate vanishes.
 
 ### Multiplicativity
 
-**Theorem.** The norm form is multiplicative:
+**Theorem.** The norm is multiplicative:
 
 $$
 N(Z W) = N(Z) N(W), \qquad Z, W \in \mathbb{D}.
@@ -47,7 +47,7 @@ $$
 N(ZW) = (a c+b d)^2 - (a d+b c)^2 = a^2c^2 + 2abcd + b^2d^2 - a^2d^2 - 2abcd - b^2c^2 = (a^2-b^2)(c^2-d^2),
 $$
 
-which is $N(Z)N(W)$. Equivalently, in the idempotent basis multiplication is componentwise, so $N(ZW) = (Z_+W_+)(Z_-W_-) = (Z_+Z_-)(W_+W_-)$. $\square$
+which is $N(Z)N(W)$. Equivalently, in the idempotent basis multiplication is componentwise, so $N(ZW) = (Z_+W_+)(Z_-W_-) = (Z_+Z_-)(W_+W_-)$.
 
 The identity $(a^2-b^2)(c^2-d^2) = (a c+b d)^2 - (a d+b c)^2$ is the hyperbolic form of the two-dimensional Brahmagupta–Fibonacci identity. Multiplicativity makes $N$ a group homomorphism on the units,
 
@@ -57,7 +57,7 @@ $$
 
 a fact used repeatedly below.
 
-### The Norm Form Is Not Definite
+### The Norm Is Not Definite
 
 The form $N$ takes both signs and vanishes on a pair of lines. Its sign partitions $\mathbb{D}$ into three regions, which are the three regions of the Lorentzian plane:
 
@@ -74,6 +74,22 @@ $$
 $$
 
 the union of the two null lines through the origin. Since $N$ is a nonzero quadratic form that vanishes on a nonzero vector, it is not definite, not semidefinite, and not anisotropic; its square root $\sqrt{N}$ is therefore not a norm, and even $|N|^{1/2}$ fails to be a norm because it vanishes on the nonzero elements of $\mathcal{N}$. The form $N$ is therefore indefinite, and neither $N$ nor $|N|^{1/2}$ is a norm on $\mathbb{D}$.
+
+### The Associated Clifford Algebra
+
+The quadratic space $(\mathbb{D},N)$ has Clifford algebra $\mathrm{Cl}(1,1)$, generated by an orthonormal pair $u, v$ with $u^2=+1$ and $v^2=-1$; in the basis $\{1,j\}$ one may take $u=1$ and $v=j$. Writing $\omega=uv$ for the volume element,
+
+$$
+\omega^2=uvuv=-u^2v^2=-(1)(-1)=+1,
+$$
+
+so the **even part** is generated by $1$ and $\omega$ with $\omega^2=+1$:
+
+$$
+\mathrm{Cl}^+(1,1)=\langle 1,\omega\rangle\cong\mathbb{R}\oplus\mathbb{R}\cong\mathbb{D}, \qquad \mathrm{Cl}(1,1)\cong M_2(\mathbb{R}).
+$$
+
+So the split-complex algebra is the even Clifford algebra of its own norm, and the full Clifford algebra is the algebra of real $2\times2$ matrices. The two isotropic lines are the two eigenspaces of $\omega$, and the idempotents $\Pi_\pm$ are its spectral projections.
 
 ### The Modulus and the Two Regimes
 
@@ -137,7 +153,7 @@ $$
 
 It is a genuine norm on the real vector space $\mathbb{D} \cong \mathbb{R}^2$: positive-definite, subadditive, homogeneous of degree one. It is the norm that turns $\mathbb{D}$ into a topological algebra and that underlies the analysis of *Split Complex Analysis*; the modulus $\rho$ is a different object, multiplicative but not subadditive and not positive-definite.
 
-### Relation Between the Norm Form and the Euclidean Form
+### Relation Between the Norm and the Euclidean Form
 
 The two forms are related by
 
@@ -151,7 +167,17 @@ $$
 Z_+^2 + Z_-^2 = (a+b)^2 + (a-b)^2 = 2(a^2+b^2) = 2\|Z\|_E^2.
 $$
 
-So the Euclidean form is the sum of the norm form and twice the square of the imaginary part, and the idempotent form is exactly twice the Euclidean norm squared. The biquaternion article separates its norm form from its Hermitian form in the same spirit: there the Hermitian form is a biquaternion whose scalar part is the Euclidean norm squared; here there is no Hermitian form, only the Euclidean one, and the two are related by the diagonal display above.
+So the Euclidean form is the sum of the norm and twice the square of the imaginary part, and the idempotent form is exactly twice the Euclidean norm squared. The biquaternion article separates its norm from its Hermitian form in the same spirit: there the Hermitian form is a biquaternion whose scalar part is the Euclidean norm squared; here there is no Hermitian form, only the Euclidean one, and the two are related by the diagonal display above.
+
+### The Absence of a Positive-Definite Hermitian Form
+
+There is no positive-definite **Hermitian form** on $\mathbb{D}$ analogous to the one on $\mathbb{C}$, because the conjugation group is too small. The single non-trivial involution $\bar{\cdot}$ produces the sesquilinear expression
+
+$$
+Z\bar W = (a c - b d) + (b c - a d)j, \qquad Z = a+j b, \; W = c+j d,
+$$
+
+whose real part is $g(Z,W) = a c - b d$, the polarisation of $N$, and is therefore indefinite of signature $(1,1)$; neither this form nor its negative is definite. The biquaternion article has a genuine Hermitian form $\tilde Q\tilde Q^\dagger$, because its conjugation group is the Klein four-group and supplies a positive-definite combination; here that slot is empty, and the positive-definite substitute is the Euclidean form $\langle Z,W\rangle = a c + b d$ of the preceding section, which does not depend on the algebra structure.
 
 ## Invertibility
 
@@ -175,7 +201,7 @@ $$
 Z \cdot \frac{\bar{Z}}{N(Z)} = \frac{Z\bar{Z}}{N(Z)} = \frac{N(Z)}{N(Z)} = 1,
 $$
 
-so $Z$ is a unit with the inverse displayed in the next paragraph. Conversely, if $ZW = 1$, then taking norm forms gives $N(Z)N(W) = N(1) = 1$, so $N(Z) \neq 0$. $\square$
+so $Z$ is a unit with the inverse displayed in the next paragraph. Conversely, if $ZW = 1$, then taking norms gives $N(Z)N(W) = N(1) = 1$, so $N(Z) \neq 0$.
 
 In idempotent coordinates the criterion reads: $Z = Z_+\Pi_1 + Z_-\Pi_2$ is a unit iff $Z_+ \neq 0$ and $Z_- \neq 0$, since $N(Z) = Z_+Z_-$. So the non-units are exactly the elements supported on a single idempotent, that is, the nonzero elements of $\mathbb{R}\Pi_1 \cup \mathbb{R}\Pi_2$; these are the zero divisors of *Split-Complex Zero Divisors*.
 
@@ -187,7 +213,7 @@ $$
 Z^{-1} = \frac{\bar{Z}}{N(Z)} = \frac{a - j b}{a^2-b^2}.
 $$
 
-**Proof.** The product $Z\bar Z = N(Z)$ is a nonzero real scalar, so $Z(\bar Z/N(Z)) = 1$; uniqueness of the inverse in a unital associative algebra gives the formula. $\square$
+**Proof.** The product $Z\bar Z = N(Z)$ is a nonzero real scalar, so $Z(\bar Z/N(Z)) = 1$; uniqueness of the inverse in a unital associative algebra gives the formula.
 
 In idempotent coordinates the inverse is componentwise,
 
@@ -222,17 +248,17 @@ $$
 \{Z : Z_+ < 0, \; Z_- > 0\}, \qquad \{Z : Z_+ < 0, \; Z_- < 0\}.
 $$
 
-**Proof.** The map $Z \mapsto (Z_+, Z_-)$ is a homeomorphism of $\mathbb{D}^\times$ onto $\mathbb{R}^\times \times \mathbb{R}^\times$, and $\mathbb{R}^\times$ has two components; a product of two spaces with two components each has four. $\square$
+**Proof.** The map $Z \mapsto (Z_+, Z_-)$ is a homeomorphism of $\mathbb{D}^\times$ onto $\mathbb{R}^\times \times \mathbb{R}^\times$, and $\mathbb{R}^\times$ has two components; a product of two spaces with two components each has four.
 
 The identity component is $\mathbb{D}^\times_0 = \{Z : Z_+>0, Z_->0\} = \{N(Z)>0, \operatorname{Re}Z>0\}$, the connected component of the identity, and it is isomorphic as a Lie group to $\mathbb{R}^2$; it is the image of the exponential map, treated in *Split-Complex Exponential and Lie Group Structure*.
 
 ### Non-Compactness
 
-The group $\mathbb{D}^\times$ is **not compact**: the real units $Z = t$ with $t \geq 1$ form an unbounded subset of $\mathbb{D}^\times$ in the Euclidean norm. Equivalently, the unit hyperbola $\{N = 1\}$ is unbounded, in contrast with the compact unit circle of $\mathbb{C}$. This is the first appearance in the family of a non-compact group of units, and it is forced by the indefiniteness of the norm form.
+The group $\mathbb{D}^\times$ is **not compact**: the real units $Z = t$ with $t \geq 1$ form an unbounded subset of $\mathbb{D}^\times$ in the Euclidean norm. Equivalently, the unit hyperbola $\{N = 1\}$ is unbounded, in contrast with the compact unit circle of $\mathbb{C}$. This is the first appearance in the family of a non-compact group of units, and it is forced by the indefiniteness of the norm.
 
 ### The Three-Way Classification
 
-Every element falls into exactly one of the three classes of the norm form:
+Every element falls into exactly one of the three classes of the norm:
 
 | class | condition | unit? | inverse location |
 |---|---|---|---|
@@ -246,15 +272,15 @@ The classification is preserved by multiplication, since $N(ZW) = N(Z)N(W)$: the
 
 ## Distribution of the Invertible Elements
 
-The two distinguished one-dimensional subspaces of $\mathbb{D}$ are the eigenspaces of the conjugation, $\mathbb{R}_{\mathbb{D}}$ and $j\mathbb{R}_{\mathbb{D}}$. On each the restricted norm form is definite, so the null cone meets each only at the origin.
+The two distinguished one-dimensional subspaces of $\mathbb{D}$ are the eigenspaces of the conjugation, $\mathbb{R}_{\mathbb{D}}$ and $j\mathbb{R}_{\mathbb{D}}$. On each the restricted norm is definite, so the null cone meets each only at the origin.
 
 ### The Real Subspace $\mathbb{R}_{\mathbb{D}}$
 
-On $\mathbb{R}_{\mathbb{D}}$ the norm form is $N(a) = a^2$, positive definite and vanishing only at $a=0$. Every nonzero real number is a spacelike unit, with $N>0$; the units of $\mathbb{R}_{\mathbb{D}}$ are $\mathbb{R}^\times$, the two open rays. There are no zero divisors on $\mathbb{R}_{\mathbb{D}}$.
+On $\mathbb{R}_{\mathbb{D}}$ the norm is $N(a) = a^2$, positive definite and vanishing only at $a=0$. Every nonzero real number is a spacelike unit, with $N>0$; the units of $\mathbb{R}_{\mathbb{D}}$ are $\mathbb{R}^\times$, the two open rays. There are no zero divisors on $\mathbb{R}_{\mathbb{D}}$.
 
 ### The Split Imaginary Subspace $j\mathbb{R}_{\mathbb{D}}$
 
-On $j\mathbb{R}_{\mathbb{D}}$ the norm form is $N(j b) = -b^2$, negative definite and vanishing only at $b=0$. Every nonzero element $j b$ is a timelike unit: $N(j b) = -b^2$ and $\overline{j b} = -j b$, so
+On $j\mathbb{R}_{\mathbb{D}}$ the norm is $N(j b) = -b^2$, negative definite and vanishing only at $b=0$. Every nonzero element $j b$ is a timelike unit: $N(j b) = -b^2$ and $\overline{j b} = -j b$, so
 
 $$
 (j b)^{-1} = \frac{\overline{j b}}{N(j b)} = \frac{-j b}{-b^2} = \frac{j}{b},
@@ -291,23 +317,23 @@ $$
 Z \longmapsto (Z_+, Z_-), \qquad \mathbb{D}^\times \longmapsto \mathbb{R}^\times\times\mathbb{R}^\times,
 $$
 
-and an element is a unit exactly when both idempotent coordinates are nonzero. The inverse is the componentwise inverse, and the norm form is the product of the two coordinates. The group of units is thus the direct product of the two copies of $\mathbb{R}^\times$, and its four components are the four sign combinations of the two coordinates. This is the two-dimensional analogue of the biquaternion relation between the norm form and the Hermitian decomposition: there the units form $GL(2,\mathbb{C})$; here they form $\mathbb{R}^\times\times\mathbb{R}^\times$, the maximal torus of the four-dimensional case in the real picture.
+and an element is a unit exactly when both idempotent coordinates are nonzero. The inverse is the componentwise inverse, and the norm is the product of the two coordinates. The group of units is thus the direct product of the two copies of $\mathbb{R}^\times$, and its four components are the four sign combinations of the two coordinates. This is the two-dimensional analogue of the biquaternion relation between the norm and the Hermitian decomposition: there the units form $GL(2,\mathbb{C})$; here they form $\mathbb{R}^\times\times\mathbb{R}^\times$, the maximal torus of the four-dimensional case in the real picture.
 
 ## Comparison with the Complex and Biquaternion Cases
 
-| algebra | norm form | definite? | units | components |
+| algebra | norm | definite? | units | components |
 |---|---|---|---|---|
 | $\mathbb{C}$ | $a^2+b^2$, real | yes, positive | all nonzero | $1$ (connected) |
 | $\mathbb{D}$ | $a^2-b^2$, real | no, signature $(1,1)$ | $N \neq 0$ | $4$ |
 | $\mathbb{B}$ | $\sum_\mu Q_\mu^2$, complex | no | $N \neq 0$, $\mathbb{B}^\times \cong GL(2,\mathbb{C})$ | $1$ (connected) |
 
-The complex case is the definite one: its norm form is positive-definite, every nonzero element is a unit, and the unit group is connected. The split-complex case is the indefinite two-dimensional one: the norm form is real of signature $(1,1)$, its zero set is the pair of null lines, and the unit group has four components and is non-compact. The biquaternion case is the indefinite four-dimensional complexification: its norm form is complex-valued, its zero set is a six-real-dimensional cone, and its unit group is the connected $GL(2,\mathbb{C})$, with compact retract $U(2)$; the details are in *Biquaternion Norm and Invertibility*. The split-complex algebra is the smallest member of the family in which the norm form is indefinite and the unit group disconnected, and it exhibits both phenomena without the non-commutativity of the four-dimensional algebra.
+The complex case is the definite one: its norm is positive-definite, every nonzero element is a unit, and the unit group is connected. The split-complex case is the indefinite two-dimensional one: the norm is real of signature $(1,1)$, its zero set is the pair of null lines, and the unit group has four components and is non-compact. The biquaternion case is the indefinite four-dimensional complexification: its norm is complex-valued, its zero set is a six-real-dimensional cone, and its unit group is the connected $GL(2,\mathbb{C})$, with compact retract $U(2)$; the details are in *Biquaternion Norm and Invertibility*. The split-complex algebra is the smallest member of the family in which the norm is indefinite and the unit group disconnected, and it exhibits both phenomena without the non-commutativity of the four-dimensional algebra.
 
 ## Summary
 
-The norm form of a split-complex number is $N(Z) = Z\bar{Z} = a^2-b^2$, a non-degenerate quadratic form of signature $(1,1)$, multiplicative under multiplication of the algebra. It is not definite: it vanishes on the isotropic cone $\mathcal{N} = \mathbb{R}\Pi_1\cup\mathbb{R}\Pi_2$, the union of the two null lines. Its absolute-value square root $\rho = \sqrt{|N(Z)|} = \sqrt{|Z_+Z_-|}$ is multiplicative and absolutely homogeneous, positive exactly on the units, and it splits the algebra into the two regimes $N>0$ (spacelike) and $N<0$ (timelike).
+The norm of a split-complex number is $N(Z) = Z\bar{Z} = a^2-b^2$, a non-degenerate quadratic form of signature $(1,1)$, multiplicative under multiplication of the algebra. It is not definite: it vanishes on the isotropic cone $\mathcal{N} = \mathbb{R}\Pi_1\cup\mathbb{R}\Pi_2$, the union of the two null lines. Its absolute-value square root $\rho = \sqrt{|N(Z)|} = \sqrt{|Z_+Z_-|}$ is multiplicative and absolutely homogeneous, positive exactly on the units, and it splits the algebra into the two regimes $N>0$ (spacelike) and $N<0$ (timelike).
 
-An element is a unit exactly when its norm form does not vanish, and then $Z^{-1} = \bar Z/N(Z) = Z_+^{-1}\Pi_1 + Z_-^{-1}\Pi_2$. The group of units is $\mathbb{D}^\times = \{N \neq 0\} \cong \mathbb{R}^\times\times\mathbb{R}^\times$, an abelian group with four connected components and non-compact, in contrast with the compact connected unit circle of $\mathbb{C}$ and with the connected $GL(2,\mathbb{C})$ of $\mathbb{B}$. The elements are classified as spacelike, null or timelike by the sign of the norm form, the classification being multiplicative; the null class consists of the zero divisors together with the origin. On the two eigenspaces of the conjugation the restricted norm form is definite, so the null cone meets each of them only at the origin; all zero divisors lie on the two null lines.
+An element is a unit exactly when its norm does not vanish, and then $Z^{-1} = \bar Z/N(Z) = Z_+^{-1}\Pi_1 + Z_-^{-1}\Pi_2$. The group of units is $\mathbb{D}^\times = \{N \neq 0\} \cong \mathbb{R}^\times\times\mathbb{R}^\times$, an abelian group with four connected components and non-compact, in contrast with the compact connected unit circle of $\mathbb{C}$ and with the connected $GL(2,\mathbb{C})$ of $\mathbb{B}$. The elements are classified as spacelike, null or timelike by the sign of the norm, the classification being multiplicative; the null class consists of the zero divisors together with the origin. On the two eigenspaces of the conjugation the restricted norm is definite, so the null cone meets each of them only at the origin; all zero divisors lie on the two null lines.
 
 ## Summary of Notation
 
@@ -316,21 +342,23 @@ An element is a unit exactly when its norm form does not vanish, and then $Z^{-1
 | $\mathbb{D}$ | Split complex algebra |
 | $Z = a + j b$ | General split complex number |
 | $\bar{Z} = a - j b$ | Split complex conjugate |
-| $N(Z) = Z\bar{Z} = a^2-b^2$ | Norm form, signature $(1,1)$ |
+| $N(Z) = Z\bar{Z} = a^2-b^2$ | Norm, signature $(1,1)$ |
 | $g(Z,W) = a c-b d$ | Polarisation of $N$, the split bilinear form |
+| $\mathrm{Cl}(1,1)\cong M_2(\mathbb{R})$, $\mathrm{Cl}^+(1,1)\cong\mathbb{D}$ | Clifford algebra of the form and its even part |
 | $Z_\pm = a\pm b$ | Idempotent coordinates, $Z = Z_+\Pi_1 + Z_-\Pi_2$ |
 | $\Pi_\pm = (1\pm j)/2$ | Idempotents |
 | $\mathcal{N} = \{N=0\}$ | Isotropic cone, the two null lines $\mathbb{R}\Pi_\pm$ |
 | $\rho = \sqrt{|N(Z)|} = \sqrt{|Z_+Z_-|}$ | Modulus, multiplicative and absolutely homogeneous |
 | $\|Z\|_E = \sqrt{a^2+b^2}$ | Euclidean norm |
 | $\langle Z,W\rangle = a c+b d$ | Euclidean inner product |
+| $Z\bar W = (a c-b d)+(b c-a d)j$ | Sesquilinear form; its real part is $g$, indefinite |
 | $\mathbb{D}^\times = \{N \neq 0\}$ | Group of units |
 | $\mathbb{D}^\times_0$ | Identity component, $\{Z_+>0, Z_->0\}$ |
 
 ## Further Reading
 
-- Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge University Press, 2nd ed. 2001), for the split complex numbers as a Clifford algebra and their norm form.
+- Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge University Press, 2nd ed. 2001), for the split complex numbers as a Clifford algebra and their norm.
 - John H. Conway and Derek A. Smith, *On Quaternions and Octonions* (A K Peters, 2003), for the classification of real composition and division algebras.
 - T. Y. Lam, *Introduction to Quadratic Forms over Fields* (American Mathematical Society, 2005), for the signature, the isotropic cone and the theory of indefinite quadratic forms.
 - Benson Farb and R. Keith Dennis, *Noncommutative Algebra* (Springer, 1993), for invertibility, zero divisors and the group of units in a finite-dimensional algebra.
-- Isaak Yaglom, *Complex Numbers in Geometry* (Academic Press, 1968), for the geometric reading of the norm form and the null lines.
+- Isaak Yaglom, *Complex Numbers in Geometry* (Academic Press, 1968), for the geometric reading of the norm and the null lines.

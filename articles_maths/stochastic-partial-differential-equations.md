@@ -55,7 +55,7 @@ $$
 
 and it is a continuous $H$-valued martingale with $\mathbb{E}\int_0^T\Phi_s\,dW^Q_s=0$.
 
-*Proof.* The construction follows the finite-dimensional one: for $\Phi=\sum_i\Phi_i\mathbf{1}_{(t_i,t_{i+1}]}$ with $\Phi_i$ taking finitely many values in $L_2(Q^{1/2}U,H)$ the sum $\sum_i\Phi_i(W^Q_{t_{i+1}}-W^Q_{t_i})$ is well defined, and the isometry is verified from the covariance of the increments; the extension to the general class is by the isometry and the completeness of $L^2(\Omega;H)$. $\square$
+*Proof.* The construction follows the finite-dimensional one: for $\Phi=\sum_i\Phi_i\mathbf{1}_{(t_i,t_{i+1}]}$ with $\Phi_i$ taking finitely many values in $L_2(Q^{1/2}U,H)$ the sum $\sum_i\Phi_i(W^Q_{t_{i+1}}-W^Q_{t_i})$ is well defined, and the isometry is verified from the covariance of the increments; the extension to the general class is by the isometry and the completeness of $L^2(\Omega;H)$.
 
 **Proposition (the cylindrical case).** Let $Q=I$ and let $(e_k)$ be an orthonormal basis. For an $L_2(H,H)$-valued integrand $\Phi$, the integral against the cylindrical process is defined by
 
@@ -95,11 +95,11 @@ $$
 
 it satisfies $\sup_{t\le T}\mathbb{E}\|W_A(t)\|_H^2 = \sup_{t\le T}\operatorname{tr}Q_t<\infty$.
 
-*Proof.* For a fixed $t$, the isometry gives $\mathbb{E}\|W_A(t)\|^2=\int_0^t\|S(t-s)\Phi_sQ^{1/2}\|_{\mathrm{HS}}^2ds=\operatorname{tr}Q_t$, which is finite by the hypothesis and the boundedness of the semigroup on compact time intervals. The continuity of the paths is Kolmogorov's continuity criterion applied to the increments, using the Gaussian moments of the stochastic integral; the covariance is computed from the isometry and the polarisation identity. $\square$
+*Proof.* For a fixed $t$, the isometry gives $\mathbb{E}\|W_A(t)\|^2=\int_0^t\|S(t-s)\Phi_sQ^{1/2}\|_{\mathrm{HS}}^2ds=\operatorname{tr}Q_t$, which is finite by the hypothesis and the boundedness of the semigroup on compact time intervals. The continuity of the paths is Kolmogorov's continuity criterion applied to the increments, using the Gaussian moments of the stochastic integral; the covariance is computed from the isometry and the polarisation identity.
 
 **Theorem (existence and uniqueness for Lipschitz coefficients).** Let $F$ and $B$ satisfy a Lipschitz condition in the state variable, $\|F(x)-F(y)\|+\|B(x)-B(y)\|_{\mathrm{HS}}\le C\|x-y\|$, and suppose $X_0\in L^2(\Omega;H)$ and $\sup_{t\le T}\|S(t)\|<\infty$. Then the stochastic evolution equation has a unique mild solution on $[0,T]$ with $\sup_{t\le T}\mathbb{E}\|X_t\|^2<\infty$.
 
-*Proof.* Quoted as standard (Da Prato–Zabczyk). The Picard iteration of the preceding article is repeated with the stochastic convolution in place of the deterministic integral; the isometry controls the stochastic term, the Lipschitz condition controls the difference of two iterates, and a Gronwall argument in $L^2(\Omega;H)$ gives convergence of the iteration and uniqueness. $\square$
+*Proof.* Quoted as standard (Da Prato–Zabczyk). The Picard iteration of the preceding article is repeated with the stochastic convolution in place of the deterministic integral; the isometry controls the stochastic term, the Lipschitz condition controls the difference of two iterates, and a Gronwall argument in $L^2(\Omega;H)$ gives convergence of the iteration and uniqueness.
 
 **Remark (strong, mild and weak solutions).** A mild solution need not be a strong solution when $A$ is unbounded: the stochastic convolution gains regularity from the smoothing of the semigroup only in the parabolic case, and for a hyperbolic or a merely strongly continuous $A$ the convolution may take values outside $D(A)$. The three notions — strong, mild and weak — coincide under additional regularity hypotheses, and the mild formulation is the one that is well posed under the weakest assumptions. This is the exact parallel of the deterministic theory of the semigroup article, where the mild solution is the general solution of the abstract Cauchy problem and the classical one requires the initial datum in the domain.
 
@@ -111,7 +111,7 @@ $$
 f(t,X_t) = f(0,X_0)+\int_0^t\Bigl(\partial_sf+\langle\partial_xf,AX_s+F(X_s)\rangle_H+\tfrac12\operatorname{Tr}\bigl(B(X_s)QB(X_s)^*\partial_x^2f\bigr)\Bigr)ds+\int_0^t\langle\partial_xf,B(X_s)\,dW^Q_s\rangle_H .
 $$
 
-*Proof.* Quoted as standard. The finite-dimensional Itô formula is applied to the projection of $X$ onto each finite-dimensional subspace spanned by the first $N$ basis vectors, and the resulting identities are passed to the limit $N\to\infty$; the trace term arises as the limit of the finite-dimensional traces $\sum_{k\le N}\langle\partial_x^2f\,B e_kQ^{1/2},Be_kQ^{1/2}\rangle$, which converges by the Hilbert–Schmidt hypothesis, and the convergence of the stochastic integrals in $L^2(\Omega)$ is the isometry. $\square$
+*Proof.* Quoted as standard. The finite-dimensional Itô formula is applied to the projection of $X$ onto each finite-dimensional subspace spanned by the first $N$ basis vectors, and the resulting identities are passed to the limit $N\to\infty$; the trace term arises as the limit of the finite-dimensional traces $\sum_{k\le N}\langle\partial_x^2f\,B e_kQ^{1/2},Be_kQ^{1/2}\rangle$, which converges by the Hilbert–Schmidt hypothesis, and the convergence of the stochastic integrals in $L^2(\Omega)$ is the isometry.
 
 **Definition.** For an $H$-valued diffusion with drift $F$ and noise coefficient $B$, the **Kolmogorov operator** is
 
@@ -123,11 +123,11 @@ with domain the twice Fréchet differentiable functions with bounded derivatives
 
 **Corollary (backward Kolmogorov equation and the semigroup).** If $u(t,x)=\mathbb{E}_x[f(X_t)]$ with $f$ bounded and continuous, then $u$ solves $\partial_tu=\mathcal{L}u$ in the weak sense, $\mathcal{L}$ is the generator of the transition semigroup $P_tf(x)=\mathbb{E}_x[f(X_t)]$ on the space of bounded continuous functions, and the semigroup is strongly continuous on the space of functions that are uniformly continuous on bounded sets.
 
-*Proof.* Apply the Itô formula to $f(X_t)$ and take expectations; the martingale term vanishes and the identity $\partial_tu=\mathcal{L}u$ follows in the integral form, which is the weak formulation. The semigroup property and the continuity are proved from the Markov property, as in the finite-dimensional case. $\square$
+*Proof.* Apply the Itô formula to $f(X_t)$ and take expectations; the martingale term vanishes and the identity $\partial_tu=\mathcal{L}u$ follows in the integral form, which is the weak formulation. The semigroup property and the continuity are proved from the Markov property, as in the finite-dimensional case.
 
 **Theorem (Wong–Zakai).** Let $W^\varepsilon$ be a smooth approximation of the cylindrical Wiener process, obtained by convolution in time with an approximate identity, and let $X^\varepsilon$ solve the equation driven by $W^\varepsilon$ with the **Stratonovich** interpretation of the noise term. Then $X^\varepsilon\to X$ in probability in $C([0,T];H)$ as $\varepsilon\to0$, where $X$ solves the equation in the Stratonovich sense; if the equation is rewritten in the Itô form, the Itô drift acquires the correction $\frac12\sum_k(\partial_xB)(Be_kQ^{1/2})(Be_kQ^{1/2})$.
 
-*Proof.* Quoted as standard (Wong–Zakai). The difference between the Stratonovich and the Itô equation is the joint quadratic variation of the noise coefficient with the Wiener process; for the approximation by smooth processes the corrections converge to the trace term $\frac12\operatorname{Tr}((\partial_xB)BQB^*)$, and the convergence of the solutions is by the standard stability estimate for the mild formulation. $\square$
+*Proof.* Quoted as standard (Wong–Zakai). The difference between the Stratonovich and the Itô equation is the joint quadratic variation of the noise coefficient with the Wiener process; for the approximation by smooth processes the corrections converge to the trace term $\frac12\operatorname{Tr}((\partial_xB)BQB^*)$, and the convergence of the solutions is by the standard stability estimate for the mild formulation.
 
 ## The Stochastic Heat Equation and the Ornstein–Uhlenbeck Process
 
@@ -159,7 +159,7 @@ $$
 
 which is the unique solution of the Lyapunov equation $AQ_\infty+Q_\infty A^*+Q=0$; the measure is invariant for the transition semigroup, and the process is the infinite-dimensional **Ornstein–Uhlenbeck process**.
 
-*Proof.* The solution is $X_t=S(t)X_0+\int_0^tS(t-s)dW^Q_s$; the first term tends to $0$ in $L^2(\Omega;H)$ by the exponential stability, and the second is Gaussian with covariance $\int_0^tS(t-s)QS(t-s)^*ds$, which increases to $Q_\infty$ by the trace-class and stability hypotheses. For invariance, if $X_0\sim\mathcal{N}(0,Q_\infty)$ then $X_t$ is Gaussian with covariance $S(t)Q_\infty S(t)^*+\int_0^tS(t-s)QS(t-s)^*ds = Q_\infty$, the identity following from $Q_\infty=\int_0^\infty S(r)QS(r)^*dr$ and the semigroup law; differentiating that identity at $t=0$ gives the Lyapunov equation. $\square$
+*Proof.* The solution is $X_t=S(t)X_0+\int_0^tS(t-s)dW^Q_s$; the first term tends to $0$ in $L^2(\Omega;H)$ by the exponential stability, and the second is Gaussian with covariance $\int_0^tS(t-s)QS(t-s)^*ds$, which increases to $Q_\infty$ by the trace-class and stability hypotheses. For invariance, if $X_0\sim\mathcal{N}(0,Q_\infty)$ then $X_t$ is Gaussian with covariance $S(t)Q_\infty S(t)^*+\int_0^tS(t-s)QS(t-s)^*ds = Q_\infty$, the identity following from $Q_\infty=\int_0^\infty S(r)QS(r)^*dr$ and the semigroup law; differentiating that identity at $t=0$ gives the Lyapunov equation.
 
 **Example (the stochastic heat equation continued).** For the interval with $Q=I$ the invariant measure is Gaussian with covariance $Q_\infty$ diagonal in the sine basis with eigenvalues $\frac1{2\lambda_n}$, $\lambda_n=n^2\pi^2$; the invariant measure is thus the law of the Gaussian field with inverse covariance $(-2\Delta)$, formally $\exp\bigl(-\frac12\int|\nabla u|^2dx\bigr)$ up to normalisation, a Gaussian measure supported on $H^{1/2-\varepsilon}(\mathcal{O})$ for every $\varepsilon>0$ and not on $H^{1/2}$. The computation of the eigenvalues follows from the Lyapunov equation in the eigenbasis.
 

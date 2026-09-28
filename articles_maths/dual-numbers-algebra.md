@@ -13,133 +13,57 @@ Throughout this article, the algebra of dual numbers is denoted $\mathbb{D}'$, a
 
 ### Definition
 
-Let $R$ be a commutative ring. The **dual number algebra** $\mathbb{D}'_R$ is the two-dimensional free $R$-module with basis
+Let $R$ be a commutative ring with identity in which $2$ is invertible. The **dual number algebra** $\mathbb{D}'_R$ is the quotient ring
 
 $$
-e_0 = 1, \qquad e_1 = \varepsilon,
+\mathbb{D}'_R = R[\varepsilon]/(\varepsilon^2),
 $$
 
-and multiplication rules
+equivalently the two-dimensional free $R$-module with basis $1, \varepsilon$ and the single multiplication rule $\varepsilon^2 = 0$. A general dual number is written as
 
 $$
-\varepsilon^2 = 0.
+Z = a + \varepsilon b, \qquad a, b \in R,
 $$
 
-A general dual number is written in developed form as
+and the product of two dual numbers is
 
 $$
-Z = a\,e_0 + b\,e_1, \qquad a, b \in R,
+Z W = (a + \varepsilon b)(c + \varepsilon d) = a c + (a d + b c)\,\varepsilon.
 $$
 
-or, more compactly, as
-
-$$
-Z = a + \varepsilon b, \qquad a, b \in R.
-$$
-
-The element $a$ is the **real part**, and $b$ is the **infinitesimal part**. We write
+The element $a$ is the **real part** and $b$ the **infinitesimal part**, written
 
 $$
 a = \operatorname{Re} Z, \qquad b = \operatorname{Inf} Z.
 $$
 
-When $R = \mathbb{R}$, we write $\mathbb{D}'$ for $\mathbb{D}'_{\mathbb{R}}$. The notation $\varepsilon$ is chosen deliberately. In some of the older literature, the nilpotent unit is written $i$ or $j$, which collides with the imaginary unit of the complex numbers or with the hyperbolic unit of the split complex numbers. This collision is a persistent source of confusion. Using $\varepsilon$ for the nilpotent unit and reserving $i$ and $j$ for the other two cases avoids the collision entirely.
+The notation $\varepsilon$ is chosen deliberately. In some of the older literature the nilpotent unit is written $i$ or $j$, which collides with the imaginary unit of the complex numbers or with the hyperbolic unit of the split complex numbers; using $\varepsilon$ for the nilpotent unit and reserving $i$ and $j$ for those two cases avoids the collision. The split complex algebra is written $\mathbb{D}$ throughout, so that it does not collide with $\mathbb{D}'$. When $R = \mathbb{R}$ we write $\mathbb{D}'$ for $\mathbb{D}'_{\mathbb{R}}$.
 
 ### Basic Properties
 
-**Commutative.** Dual multiplication is commutative: $Z W = W Z$.
+**Commutative.** Dual multiplication is commutative, $ZW = WZ$.
 
-**Associative.** Dual multiplication is associative: $(Z W) u = Z (W u)$.
+**Associative.** Dual multiplication is associative, $(ZW)u = Z(Wu)$.
 
-**Not a division algebra.** The dual algebra has zero divisors. The element $\varepsilon$ is non-zero, but
+**Unit and rank.** The identity is $1$, and $\mathbb{D}'_R$ is a free $R$-module of rank $2$.
 
-$$
-\varepsilon^2 = 0.
-$$
+**Not a division algebra.** The element $\varepsilon$ is non-zero and satisfies $\varepsilon^2 = 0$, so $\varepsilon$ is a zero divisor. A division algebra is precisely an algebra in which every non-zero element is invertible, so the non-zero nilpotent $\varepsilon$ shows that $\mathbb{D}'_R$ is neither a field nor a division algebra. This is the source of everything that distinguishes it from $\mathbb{C}$.
 
-So $\mathbb{D}'$ is not a field, and not a division algebra. This is the fundamental difference from $\mathbb{C}$, and it is the source of everything that distinguishes the two theories.
+**Not semisimple.** The ideal $(\varepsilon)$ is nilpotent of index two, $\varepsilon^2 = 0$ with $\varepsilon \neq 0$. Over a field the algebra is local with unique maximal ideal $(\varepsilon)$, and the presence of this non-zero nilpotent ideal makes the algebra not semisimple; the ideal theory is developed in *Dual-Numbers Ideals and the Maximal Ideal*.
 
-**Not semisimple.** The ideal $(\varepsilon)$ is nilpotent of index two, $\varepsilon^2 = 0$ with $\varepsilon \neq 0$. Over a field the algebra is local with unique maximal ideal $(\varepsilon)$, and the presence of this nonzero nilpotent ideal makes the algebra not semisimple.
-
-**Frobenius theorem.** The dual algebra is not one of the three finite-dimensional associative real division algebras. Those are $\mathbb{R}$, $\mathbb{C}$, and $\mathbb{H}$. The dual algebra is a commutative associative real algebra of dimension two, but it is not a division algebra.
-
-### The Isomorphism with $R[\varepsilon]/(\varepsilon^2)$
-
-The dual algebra $\mathbb{D}'_R$ is isomorphic to the quotient ring
-
-$$
-\mathbb{D}'_R \cong R[\varepsilon]/(\varepsilon^2),
-$$
-
-the ring of polynomials in $\varepsilon$ modulo $\varepsilon^2$. The ideal $(\varepsilon)$ is nilpotent of index two and the quotient by it is $R$. Over a field $k$ this is the simplest example of a local ring that is not a field: $\mathbb{D}'_k$ has the unique maximal ideal $(\varepsilon)$; over a general commutative ring the maximal ideals of $\mathbb{D}'_R$ correspond to those of $R$, as recorded in *Dual-Numbers Ideals and the Maximal Ideal*.
-
-### The Relation to the Truncated Polynomial Algebra
-
-For $n \geq 1$, the **truncated polynomial algebra** is
-
-$$
-\mathbb{D}'_{R, n} = R[\varepsilon]/(\varepsilon^{n+1}),
-$$
-
-the ring of polynomials in $\varepsilon$ modulo $\varepsilon^{n+1}$. The case $n = 1$ recovers the dual numbers. The case $n = 0$ gives $R$ itself. The truncated polynomial algebras are the algebraic model for higher-order infinitesimals.
-
-## Dual Numbers Algebra
-
-### Definition
-
-The **dual numbers algebra** is the algebra $\mathbb{D}'_R$ considered as a two-dimensional free $R$-module equipped with its multiplication. As an $R$-module, $\mathbb{D}'_R$ has rank $2$. As a ring, it is a commutative local ring with nilpotent maximal ideal. A general element is written in developed form as
-
-$$
-Z = a\,e_0 + b\,e_1, \qquad a, b \in R,
-$$
-
-or, more compactly, as
-
-$$
-Z = a + \varepsilon b, \qquad a, b \in R.
-$$
-
-We write
-
-$$
-Z = a + \varepsilon b,
-$$
-
-where $a$ is the **real part** and $b$ is the **infinitesimal part**.
-
-### Multiplication
-
-The product of two dual numbers is defined by extending the ring multiplication bilinearly:
-
-$$
-Z W = (a + \varepsilon b)(c + \varepsilon d) = a c + (a d + b c) \varepsilon.
-$$
-
-In developed form,
-
-$$
-Z W = \sum_{\mu=0}^{1} \sum_{\nu=0}^{1} Z_\mu W_\nu \, e_\mu e_\nu,
-$$
-
-where the products $e_\mu e_\nu$ are those of the dual algebra.
+**Frobenius theorem.** The dual algebra is not one of the three finite-dimensional associative real division algebras $\mathbb{R}$, $\mathbb{C}$ and $\mathbb{H}$: it is a commutative associative two-dimensional real algebra, and it is not a division algebra.
 
 ### Conjugations
 
 There are **two** natural conjugations on $\mathbb{D}'_R$:
 
-**Dual conjugation** $\bar{Z}$:
+**Dual conjugation** $\bar{Z} = a - \varepsilon b$ and **identity conjugation** $\operatorname{id}(Z) = Z$. Each is an involution, and each has a fixed-point set, an $R$-submodule of $\mathbb{D}'_R$, described in the next section.
 
-$$
-\bar{Z} = a - \varepsilon b.
-$$
+### The Isomorphism with $R[\varepsilon]/(\varepsilon^2)$
 
-**Identity conjugation** $\operatorname{id}$:
+The definition presents the algebra as the quotient ring $\mathbb{D}'_R \cong R[\varepsilon]/(\varepsilon^2)$, the ring of polynomials in $\varepsilon$ modulo $\varepsilon^2$. The ideal $(\varepsilon)$ is nilpotent of index two and the quotient by it is $R$. Over a field $k$ this is the simplest example of a local ring that is not a field: $\mathbb{D}'_k$ has the unique maximal ideal $(\varepsilon)$. Over a general commutative ring the maximal ideals of $\mathbb{D}'_R$ correspond to those of $R$, as recorded in *Dual-Numbers Ideals and the Maximal Ideal*.
 
-$$
-\operatorname{id}(Z) = Z.
-$$
-
-Each conjugation is an involution: applying it twice returns the original dual number. Each has a fixed-point set, which is an $R$-submodule of $\mathbb{D}'_R$. The two submodules are described in the following sections.
+**Remark.** For $n \geq 1$ the ring $R[\varepsilon]/(\varepsilon^{n+1})$ is the **truncated polynomial algebra** of order $n$, the ring of polynomials in $\varepsilon$ modulo $\varepsilon^{n+1}$; the case $n = 1$ recovers the dual numbers and the case $n = 0$ gives $R$ itself. The higher cases are used in *Dual-Numbers Integration*.
 
 ## The Two Fixed-Point Submodules
 
@@ -222,102 +146,26 @@ $$
 
 This is the same decomposition as above, written in terms of the eigenspaces of the conjugation.
 
-## Quadratic Forms and Inner Product
-
-### The Norm Form
-
-**Definition.** The **norm form** of a dual number $Z$ is
-
-$$
-N(Z) = Z \bar{Z} = (a + \varepsilon b)(a - \varepsilon b) = a^2.
-$$
-
-It is an element of $R$, and it vanishes if and only if $a = 0$, i.e. if and only if $Z$ lies in the maximal ideal. It is a **degenerate** quadratic form: it does not detect the infinitesimal part at all, and it is not positive-definite in general.
-
-**Theorem.** The norm form is **multiplicative**:
-
-$$
-N(Z W) = N(Z) N(W).
-$$
-
-This is the statement that $(a c)^2 = a^2 c^2$, which is true in any commutative ring.
-
-### The Degeneracy of the Norm Form
-
-The norm form is degenerate in the following sense: there exist non-zero elements $Z$ with $N(Z) = 0$. These are precisely the elements of the maximal ideal, i.e. the elements of the form $\varepsilon b$ with $b \neq 0$. So the norm form does not distinguish between the zero element and the non-zero infinitesimals.
-
-This is the algebraic content of the nilpotence of $\varepsilon$: the infinitesimal part is invisible to the norm form, because the product $\varepsilon \cdot \varepsilon = 0$ annihilates it.
-
-### The Hermitian Form
-
-**Proposition.** There is no **positive-definite Hermitian form** on $\mathbb{D}'_R$ analogous to the one on $\mathbb{C}$, because the norm form is degenerate. The closest analogue is the **real form**
-
-$$
-Z \mapsto a^2 + b^2,
-$$
-
-which is the Euclidean norm squared on the underlying $R$-module $\mathbb{D}'_R \cong R^2$. It is positive-definite when $R$ is an ordered ring, and it is not multiplicative. It is the natural "length squared" of $Z$ as a point in the plane.
-
-The corresponding **Euclidean norm** is
-
-$$
-\|Z\|_E = \sqrt{a^2 + b^2}.
-$$
-
-It is a genuine norm on the real vector space $\mathbb{D}' \cong \mathbb{R}^2$ when $R = \mathbb{R}$: positive-definite, subadditive, and homogeneous of degree one. It is **not** multiplicative with respect to the dual product, because the dual product does not preserve the Euclidean norm.
-
-### The Inner Product
-
-**Definition.** The **inner product** of two dual numbers $Z = a + \varepsilon b$ and $W = c + \varepsilon d$ is
-
-$$
-\langle Z, W \rangle = a c + b d.
-$$
-
-It is the ordinary Euclidean inner product on $R^2$, written in dual notation. It is real-valued, symmetric, and bilinear.
-
-The inner product of a dual number with itself is
-
-$$
-\langle Z, Z \rangle = a^2 + b^2,
-$$
-
-which is the Euclidean norm squared. So the Euclidean norm is the restriction of the inner product to the diagonal.
-
-Note that this inner product is **not** the same as the real part of $Z \bar{W}$. Indeed,
-
-$$
-Z \bar{W} = (a + \varepsilon b)(c - \varepsilon d) = a c + (b c - a d) \varepsilon,
-$$
-
-so
-
-$$
-\operatorname{Re}(Z \bar{W}) = a c,
-$$
-
-which is the degenerate form, not the Euclidean one. The distinction between the two forms is the distinction between the degenerate and the Euclidean structures on $R^2$.
-
 ## The Maximal Ideal
 
 The ideal $(\varepsilon)$ of $\mathbb{D}'_R$ is
 
 $$
-\mathfrak{m} = (\varepsilon) = \{\varepsilon b : b \in R\}.
+\mathrm{M} = (\varepsilon) = \{\varepsilon b : b \in R\}.
 $$
 
 It is the set of elements with vanishing real part. It is nilpotent of index two:
 
 $$
-\mathfrak{m}^2 = 0.
+\mathrm{M}^2 = 0.
 $$
 
 **Theorem (basic properties of the maximal ideal).**
 
-- $\mathfrak{m} = (\varepsilon)$ is a nilpotent ideal of index two, and $\mathfrak{m}^2 = 0$.
-- The quotient $\mathbb{D}'_R / \mathfrak{m}$ is isomorphic to $R$.
-- Over a field $k$, $\mathfrak{m}$ is the **unique** maximal ideal of $\mathbb{D}'_k$, so $\mathbb{D}'_k$ is local with residue field $k$. Over a general commutative ring $R$ the maximal ideals of $\mathbb{D}'_R$ are the ideals $\mathfrak{p} + \mathfrak{m} = \mathfrak{p} \oplus R\varepsilon$ for $\mathfrak{p}$ maximal in $R$; hence $\mathbb{D}'_R$ is local if and only if $R$ is local.
-- The element $a + \varepsilon b$ is invertible if and only if $a \in R^\times$ (see the group of units below); over a field this says: every element not in $\mathfrak{m}$ is invertible.
+- $\mathrm{M} = (\varepsilon)$ is a nilpotent ideal of index two, and $\mathrm{M}^2 = 0$.
+- The quotient $\mathbb{D}'_R / \mathrm{M}$ is isomorphic to $R$.
+- Over a field $k$, $\mathrm{M}$ is the **unique** maximal ideal of $\mathbb{D}'_k$, so $\mathbb{D}'_k$ is local with residue field $k$. Over a general commutative ring $R$ the maximal ideals of $\mathbb{D}'_R$ are the ideals $\mathrm{P} + \mathrm{M} = \mathrm{P} \oplus R\varepsilon$ for $\mathrm{P}$ maximal in $R$; hence $\mathbb{D}'_R$ is local if and only if $R$ is local.
+- The element $a + \varepsilon b$ is invertible if and only if $a \in R^\times$ (see the group of units below); over a field this says: every element not in $\mathrm{M}$ is invertible.
 
 The maximal ideal is the obstruction to the algebra being a field, and it is the source of the nilpotence in the algebra.
 
@@ -347,7 +195,7 @@ $$
 1 \to R \to (\mathbb{D}'_R)^\times \to R^\times \to 1,
 $$
 
-where the kernel is the maximal ideal $\mathfrak{m} \cong R$ and the quotient is $R^\times$.
+where the kernel is the maximal ideal $\mathrm{M} \cong R$ and the quotient is $R^\times$.
 
 ## The Lie Algebra Structure
 
@@ -379,21 +227,9 @@ $$
 D(a + \varepsilon b) = D(a) + D(b) \varepsilon + b D(\varepsilon) = b \varepsilon c.
 $$
 
-So every derivation is of the stated form. $\square$
+So every derivation is of the stated form.
 
 The module of derivations is isomorphic to $R$, and it is generated by the derivation $\partial_\varepsilon$ that sends $a + \varepsilon b$ to $\varepsilon b$. This derivation is the algebraic content of the derivative: it sends each element to $\varepsilon$ times its infinitesimal part.
-
-## The Tensor Product Decomposition
-
-The dual algebra of a direct sum of two free modules with nilpotent structures is the tensor product of the dual algebras of the summands. More precisely, if $R$ is a commutative ring and $\mathbb{D}'_R$ is the dual algebra, then
-
-$$
-\mathbb{D}'_R \otimes_R \mathbb{D}'_R \cong R[\varepsilon_1, \varepsilon_2]/(\varepsilon_1^2, \varepsilon_2^2),
-$$
-
-the algebra of polynomials in two commuting nilpotent variables. This is four-dimensional over $R$, with basis $1, \varepsilon_1, \varepsilon_2, \varepsilon_1 \varepsilon_2$, and the generators satisfy $\varepsilon_1^2 = \varepsilon_2^2 = 0$ and $\varepsilon_1 \varepsilon_2 = \varepsilon_2 \varepsilon_1$.
-
-The tensor product is **not** the truncated polynomial algebra $R[\varepsilon]/(\varepsilon^3)$, because the two nilpotents are independent. The truncated polynomial algebra has a single nilpotent of index three, while the tensor product has two commuting nilpotents of index two. The two are not isomorphic.
 
 ## Summary
 
@@ -401,30 +237,25 @@ The dual number algebra $\mathbb{D}'_R$ is the two-dimensional free $R$-module w
 
 Dual conjugation is the involution sending $a + \varepsilon b$ to $a - \varepsilon b$. Its fixed points form the real submodule $R_{\mathbb{D}'}$ and its anti-fixed points the infinitesimal submodule $\varepsilon R_{\mathbb{D}'}$; these are the eigenspaces for the eigenvalues $+1$ and $-1$, and every dual number decomposes uniquely both as a real part plus an infinitesimal part and as the sum of the two eigencomponents.
 
-The algebra is characterised by its ideal $(\varepsilon)$. The ideal $\mathfrak{m} = (\varepsilon)$ is the set of elements of vanishing real part; it is nilpotent of index two, $\mathfrak{m}^2 = 0$, and the quotient $\mathbb{D}'_R/\mathfrak{m}$ is $R$. Over a field it is the unique maximal ideal, so $\mathbb{D}'_k$ is local; over a general commutative ring the maximal ideals of $\mathbb{D}'_R$ correspond to those of $R$, and the algebra is local exactly when the base ring is. The norm form $N(Z) = Z\bar{Z} = a^2$ depends only on the real part and controls invertibility: an element is a unit exactly when its real part is a unit of $R$. Because the algebra is commutative the commutator vanishes identically and the Lie algebra structure is abelian; the article closes with the tensor product decomposition, in which the dual algebra of a direct sum is the tensor product of the dual algebras of the summands.
+The algebra is characterised by its ideal $(\varepsilon)$. The ideal $\mathrm{M} = (\varepsilon)$ is the set of elements of vanishing real part; it is nilpotent of index two, $\mathrm{M}^2 = 0$, and the quotient $\mathbb{D}'_R/\mathrm{M}$ is $R$. Over a field it is the unique maximal ideal, so $\mathbb{D}'_k$ is local; over a general commutative ring the maximal ideals of $\mathbb{D}'_R$ correspond to those of $R$, and the algebra is local exactly when the base ring is. The element $a + \varepsilon b$ is a unit exactly when its real part $a$ is a unit of $R$, so the group of units is $\{a + \varepsilon b : a \in R^\times\}$; the scale and the norm that measure this are a distance and are developed in *Dual-Numbers Norm and Invertibility*. Because the algebra is commutative the commutator vanishes identically and the Lie algebra structure is abelian, while the derivations form a free $R$-module of rank one.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $\mathbb{D}'$ | Dual number algebra |
+| $\mathbb{D}'$ | Dual number algebra over $\mathbb{R}$ |
 | $\mathbb{D}'_R$ | Dual number algebra over $R$ |
-| $\mathbb{D}'_{R, n}$ | Truncated polynomial algebra |
 | $1$ | Identity |
 | $\varepsilon$ | Dual unit, $\varepsilon^2 = 0$ |
-| $e_0 = 1$, $e_1 = \varepsilon$ | Basis, $Z = \sum_{k=0}^{1} Z_k e_k$ |
+| $1$, $\varepsilon$ | The $R$-basis of $\mathbb{D}'_R$ |
 | $Z = a + \varepsilon b$ | General dual number |
 | $a = \operatorname{Re} Z$ | Real part |
 | $b = \operatorname{Inf} Z$ | Infinitesimal part |
 | $\bar{Z} = a - \varepsilon b$ | Dual conjugation |
 | $\operatorname{id}(Z) = Z$ | Identity conjugation |
-| $N(Z) = a^2$ | Norm form (degenerate) |
-| $a^2 + b^2$ | Euclidean norm squared |
-| $\langle Z, W \rangle = a c + b d$ | Euclidean inner product |
-| $\|Z\|_E = \sqrt{a^2 + b^2}$ | Euclidean norm |
 | $R_{\mathbb{D}'}$ | Real submodule, fixed-point set of $\bar{\cdot}$ |
 | $\varepsilon R_{\mathbb{D}'}$ | Infinitesimal submodule, maximal ideal |
-| $\mathfrak{m} = (\varepsilon)$ | The nilpotent ideal $(\varepsilon)$, $\mathfrak{m}^2 = 0$; the unique maximal ideal over a field |
+| $\mathrm{M} = (\varepsilon)$ | The nilpotent ideal $(\varepsilon)$, $\mathrm{M}^2 = 0$; the unique maximal ideal over a field |
 | $\partial_\varepsilon(a + \varepsilon b) = \varepsilon b$ | The derivation, $\operatorname{Der}_R(\mathbb{D}'_R) \cong R$ |
 | $[Z, W] = ZW - WZ$ | Lie bracket, identically zero |
 | $(\mathbb{D}'_R)^\times = \{a + \varepsilon b : a \in R^\times\}$ | Group of units |
@@ -434,6 +265,6 @@ The algebra is characterised by its ideal $(\varepsilon)$. The ideal $\mathfrak{
 - William Kingdon Clifford, "Preliminary Sketch of Biquaternions" (1873), for the origin of the dual numbers in the biquaternion program.
 - Eduard Study, *Geometrie der Dynamen* (1903), for the geometry of dual numbers.
 - John H. Conway and Derek A. Smith, *On Quaternions and Octonions* (A K Peters, 2003), for the classification of real algebras.
-- Max-Albert Knus, *Quadratic and Hermitian Forms over Rings* (Springer, 1991), for the theory of algebras over commutative rings.
-- T. Y. Lam, *Introduction to Quadratic Forms over Fields* (AMS, 2005), for the general theory of quadratic forms.
+- Michael F. Atiyah and Ian G. Macdonald, *Introduction to Commutative Algebra* (Addison-Wesley, Reading, 1969), for local rings, nilpotent ideals and the maximal ideal.
+- Serge Lang, *Algebra*, 3rd ed. (Springer, New York, 2002), for the structure of algebras over a commutative ring and their ideals.
 

@@ -30,7 +30,7 @@ The dimension is never $0$ for a field extension, since $1 \neq 0$ spans a one-d
 
 **Proposition.** Let $F \subseteq K$ be fields and let $E$ be an intermediate field, $F \subseteq E \subseteq K$. Then $E$ is an $F$-subspace of $K$.
 
-**Proof.** $E$ is closed under addition and under multiplication by elements of $F \subseteq E$. $\square$
+**Proof.** $E$ is closed under addition and under multiplication by elements of $F \subseteq E$.
 
 ### The Evaluation Homomorphism
 
@@ -48,7 +48,7 @@ $$
 
 the smallest subring of $K$ containing $F$ and $\alpha$.
 
-**Proof.** Evaluation is additive and multiplicative by the ring axioms, and $\varepsilon_\alpha(1) = 1$. The image consists exactly of the polynomial expressions in $\alpha$ with coefficients in $F$. $\square$
+**Proof.** Evaluation is additive and multiplicative by the ring axioms, and $\varepsilon_\alpha(1) = 1$. The image consists exactly of the polynomial expressions in $\alpha$ with coefficients in $F$.
 
 Since $F[x]$ is a Euclidean domain, hence a PID, its ideals are principal, and the kernel of $\varepsilon_\alpha$ is an ideal. This single observation organises the whole theory: there are exactly two possibilities, whether that kernel is zero or not.
 
@@ -86,13 +86,13 @@ The subring $F[\alpha_1, \ldots, \alpha_n]$ is defined analogously, as the small
 
 (c) $\Rightarrow$ (a): if $[F(\alpha):F] = n < \infty$, then the $n+1$ elements $1, \alpha, \ldots, \alpha^n$ are linearly dependent over $F$, giving a nonzero polynomial of degree at most $n$ vanishing at $\alpha$.
 
-(a) $\Rightarrow$ (d): every element of the field $F(\alpha) = F[\alpha]$ is a polynomial in $\alpha$; such an element lies in the finite extension $F(\alpha)$, so it is algebraic over $F$ by (c) $\Rightarrow$ (a). (d) $\Rightarrow$ (a) is the definition applied to $\alpha$ itself. $\square$
+(a) $\Rightarrow$ (d): every element of the field $F(\alpha) = F[\alpha]$ is a polynomial in $\alpha$; such an element lies in the finite extension $F(\alpha)$, so it is algebraic over $F$ by (c) $\Rightarrow$ (a). (d) $\Rightarrow$ (a) is the definition applied to $\alpha$ itself.
 
 ### Transcendental Elements
 
 **Theorem.** For $\alpha \in K$, the following are equivalent: (a) $\alpha$ is transcendental over $F$; (b) $\varepsilon_\alpha$ is injective; (c) $F[\alpha] \cong F[x]$ and $F(\alpha) \cong F(x)$; (d) no two distinct polynomials over $F$ take the same value at $\alpha$.
 
-**Proof.** (a) $\Leftrightarrow$ (b) is the definition of the kernel, and (b) $\Leftrightarrow$ (d) is the definition of injectivity. Under (b), $\varepsilon_\alpha$ is an isomorphism onto $F[\alpha]$. Then $F[\alpha]$ is an integral domain that is not a field, since $x$ is not invertible in $F[x]$ and this property is preserved by isomorphism, so $F[\alpha] \subsetneq F(\alpha)$; the field of fractions of $F[\alpha] \cong F[x]$ is $F(x)$ by *Localization and the Fraction Field*, and it is the smallest field containing $F[\alpha]$, hence equals $F(\alpha)$. $\square$
+**Proof.** (a) $\Leftrightarrow$ (b) is the definition of the kernel, and (b) $\Leftrightarrow$ (d) is the definition of injectivity. Under (b), $\varepsilon_\alpha$ is an isomorphism onto $F[\alpha]$. Then $F[\alpha]$ is an integral domain that is not a field, since $x$ is not invertible in $F[x]$ and this property is preserved by isomorphism, so $F[\alpha] \subsetneq F(\alpha)$; the field of fractions of $F[\alpha] \cong F[x]$ is $F(x)$ by *Localization and the Fraction Field*, and it is the smallest field containing $F[\alpha]$, hence equals $F(\alpha)$.
 
 **Examples.** The numbers $e$ and $\pi$ are transcendental over $\mathbb{Q}$, by theorems of Hermite (1873) and Lindemann (1882); a real number that is transcendental over $\mathbb{Q}$ is called a **transcendental number**, and since $\overline{\mathbb{Q}}$ is countable while $\mathbb{R}$ is not, most real numbers are transcendental. The element $x$ is transcendental over $F$ in the rational function field $F(x)$, by construction. The formal power series $e^{x} = \sum_{n \geq 0} x^n/n!$ is transcendental over $\mathbb{C}(x)$, so it generates a simple transcendental extension of $\mathbb{C}(x)$ inside $\mathbb{C}((x))$.
 
@@ -116,7 +116,7 @@ The subring $F[\alpha_1, \ldots, \alpha_n]$ is defined analogously, as the small
 
 **(d)** Every element of $F(\alpha)$ is uniquely of the form $c_0 + c_1 \alpha + \cdots + c_{n-1}\alpha^{n-1}$ with $c_i \in F$.
 
-**Proof.** Uniqueness: two monic polynomials of least degree vanishing at $\alpha$ have a difference of smaller degree vanishing at $\alpha$, hence the difference is $0$. Irreducibility: if $m = gh$ with both factors of positive degree, then $0 = m(\alpha) = g(\alpha) h(\alpha)$ and $K$ is a field, so one factor vanishes at $\alpha$, contradicting the minimality of $\deg m$. For (b), the kernel is a nonzero ideal of $F[x]$, say $(g)$; minimality of degree forces $g$ and $m$ to be associates, and monicity forces $g = m$. Statement (c) follows from the division algorithm: for $p \in F[x]$, $p = qm + r$ with $\deg r < n$, so $p(\alpha) = r(\alpha)$, and $r(\alpha) = 0$ forces $r = 0$. Uniqueness of the coefficients in (d) is linear independence of the powers, which follows because a nontrivial dependence would give a nonzero polynomial of degree less than $n$ vanishing at $\alpha$. $\square$
+**Proof.** Uniqueness: two monic polynomials of least degree vanishing at $\alpha$ have a difference of smaller degree vanishing at $\alpha$, hence the difference is $0$. Irreducibility: if $m = gh$ with both factors of positive degree, then $0 = m(\alpha) = g(\alpha) h(\alpha)$ and $K$ is a field, so one factor vanishes at $\alpha$, contradicting the minimality of $\deg m$. For (b), the kernel is a nonzero ideal of $F[x]$, say $(g)$; minimality of degree forces $g$ and $m$ to be associates, and monicity forces $g = m$. Statement (c) follows from the division algorithm: for $p \in F[x]$, $p = qm + r$ with $\deg r < n$, so $p(\alpha) = r(\alpha)$, and $r(\alpha) = 0$ forces $r = 0$. Uniqueness of the coefficients in (d) is linear independence of the powers, which follows because a nontrivial dependence would give a nonzero polynomial of degree less than $n$ vanishing at $\alpha$.
 
 **Remark.** The irreducibility of $m_\alpha$ makes the construction of extensions concrete: for any irreducible $m \in F[x]$, the quotient $F[x]/(m)$ is a field, and the class $\bar x$ is an element algebraic over $F$ with minimal polynomial $m$. Every finite extension is generated by elements obtained this way.
 
@@ -146,7 +146,7 @@ so $\alpha$ satisfies $x^4 - 10x^2 + 1$; this polynomial is irreducible over $\m
 
 **Proposition.** The conjugates of $\alpha$ are exactly the elements $\sigma(\alpha)$ as $\sigma$ ranges over the $F$-embeddings $F(\alpha) \to L$; if $m_\alpha$ has distinct roots then there are $\deg m_\alpha$ of them.
 
-**Proof.** If $\sigma$ is an $F$-embedding then $m_\alpha(\sigma(\alpha)) = \sigma(m_\alpha(\alpha)) = 0$, so $\sigma(\alpha)$ is a conjugate. Conversely every root $\beta$ of $m_\alpha$ admits an $F$-embedding $F(\alpha) \to L$ sending $\alpha$ to $\beta$, because $F(\alpha) \cong F[x]/(m_\alpha)$ and evaluation of $x$ at $\beta$ factors through this quotient. $\square$
+**Proof.** If $\sigma$ is an $F$-embedding then $m_\alpha(\sigma(\alpha)) = \sigma(m_\alpha(\alpha)) = 0$, so $\sigma(\alpha)$ is a conjugate. Conversely every root $\beta$ of $m_\alpha$ admits an $F$-embedding $F(\alpha) \to L$ sending $\alpha$ to $\beta$, because $F(\alpha) \cong F[x]/(m_\alpha)$ and evaluation of $x$ at $\beta$ factors through this quotient.
 
 Thus the number of conjugates of $\alpha$ equals $\deg m_\alpha$ exactly when $m_\alpha$ is separable, which is the case in characteristic $0$ , more generally, for every **perfect** field; the inseparable case is treated. In $\mathbb{C}$ the conjugates of $\sqrt2$ over $\mathbb{Q}$ are $\pm\sqrt2$, and the conjugates of a primitive $n$-th root of unity $\zeta_n$ over $\mathbb{Q}$ are the $\zeta_n^{k}$ with $\gcd(k,n) = 1$.
 
@@ -168,7 +168,7 @@ with the convention that the product is infinite if either factor is infinite.
 
 **(a) Spanning.** Given $x \in K$, write $x = \sum_j a_j k_j$ with $a_j \in E$. Each $a_j$ is a finite $F$-linear combination of the $e_i$, so $x$ is a finite $F$-linear combination of the $e_i k_j$.
 
-**(b) Independence.** Suppose $\sum_{i,j} c_{ij} e_i k_j = 0$ with $c_{ij} \in F$ and only finitely many nonzero. Collect the terms by $j$: $\sum_j \left(\sum_i c_{ij} e_i\right) k_j = 0$, and each coefficient $\sum_i c_{ij} e_i$ lies in $E$. Since the $k_j$ are $E$-independent, $\sum_i c_{ij} e_i = 0$ for every $j$, and since the $e_i$ are $F$-independent, $c_{ij} = 0$ for every $i, j$. $\square$
+**(b) Independence.** Suppose $\sum_{i,j} c_{ij} e_i k_j = 0$ with $c_{ij} \in F$ and only finitely many nonzero. Collect the terms by $j$: $\sum_j \left(\sum_i c_{ij} e_i\right) k_j = 0$, and each coefficient $\sum_i c_{ij} e_i$ lies in $E$. Since the $k_j$ are $E$-independent, $\sum_i c_{ij} e_i = 0$ for every $j$, and since the $e_i$ are $F$-independent, $c_{ij} = 0$ for every $i, j$.
 
 **Note on infinite degrees.** The same argument shows that the set of products is a basis when either index set is infinite, and then the cardinal arithmetic gives $[K:F] = [K:E]\,[E:F]$. In particular $[\mathbb{R}:\mathbb{Q}]$ is infinite, since $\mathbb{R}$ is uncountable while a finite-dimensional $\mathbb{Q}$-vector space is countable.
 
@@ -176,15 +176,15 @@ with the convention that the product is infinite if either factor is infinite.
 
 **Corollary (divisibility).** If $K/F$ is finite and $E$ is intermediate, then $[E:F]$ and $[K:E]$ both divide $[K:F]$, and if $[K:F]$ is prime then the only intermediate fields are $F$ and $K$.
 
-**Proof.** Both degrees are positive integers whose product is $[K:F]$. If $[K:F]$ is prime and $E \neq K$, then $[K:E] > 1$ and $[E:F] = [K:F]/[K:E] < [K:F]$, so $[E:F] = 1$ and $E = F$. $\square$
+**Proof.** Both degrees are positive integers whose product is $[K:F]$. If $[K:F]$ is prime and $E \neq K$, then $[K:E] > 1$ and $[E:F] = [K:F]/[K:E] < [K:F]$, so $[E:F] = 1$ and $E = F$.
 
 **Corollary (finite implies algebraic).** If $[K:F] < \infty$ then $K/F$ is algebraic.
 
-**Proof.** For $\alpha \in K$ the subfield $F(\alpha)$ is intermediate, so $[F(\alpha):F] \le [K:F] < \infty$, and $\alpha$ is algebraic by the theorem above. $\square$
+**Proof.** For $\alpha \in K$ the subfield $F(\alpha)$ is intermediate, so $[F(\alpha):F] \le [K:F] < \infty$, and $\alpha$ is algebraic by the theorem above.
 
 **Corollary (transitivity).** For $F \subseteq E \subseteq K$, the extension $K/F$ is algebraic if and only if both $K/E$ and $E/F$ are algebraic. If both are finite then $K/F$ is finite.
 
-**Proof.** If $K/F$ is algebraic then $K/E$ is algebraic (fewer equations are available) and $E/F$ is algebraic. Conversely, let $\alpha \in K$ be algebraic over $E$, with minimal polynomial $m \in E[x]$ of degree $n$ and coefficients $c_0, \ldots, c_{n-1} \in E$, which are algebraic over $F$ and therefore generate a finite extension $E' = F(c_0, \ldots, c_{n-1})$ of $F$, by the corollary on finitely generated algebraic extensions below; then $F(\alpha)$ lies in $E'(\alpha)$, whose degree over $E'$ is at most $n$, so $\alpha$ is algebraic over $F$ by the tower law. The finite statement is the tower law. $\square$
+**Proof.** If $K/F$ is algebraic then $K/E$ is algebraic (fewer equations are available) and $E/F$ is algebraic. Conversely, let $\alpha \in K$ be algebraic over $E$, with minimal polynomial $m \in E[x]$ of degree $n$ and coefficients $c_0, \ldots, c_{n-1} \in E$, which are algebraic over $F$ and therefore generate a finite extension $E' = F(c_0, \ldots, c_{n-1})$ of $F$, by the corollary on finitely generated algebraic extensions below; then $F(\alpha)$ lies in $E'(\alpha)$, whose degree over $E'$ is at most $n$, so $\alpha$ is algebraic over $F$ by the tower law. The finite statement is the tower law.
 
 ### Composites and an Inequality
 
@@ -200,7 +200,7 @@ $$
 $$
 (e_i l_j)(e_{i'} l_{j'}) = (e_i e_{i'})\,(l_j l_{j'}),
 $$
-where $e_i e_{i'}$ is an $F$-linear combination of the $e$'s and $l_j l_{j'}$ is one of the $l$'s. So $S$ is a subring of the field $K$, of dimension at most $mn$ over $F$. A finite-dimensional domain over a field is a field: multiplication by a nonzero element is an injective $F$-linear endomorphism of $S$, hence surjective, so the element is invertible. Therefore $S$ is a field containing $E$ and $L$, so $EL \subseteq S$, whence $S = EL$ and $[EL:F] = \dim_F EL = \dim_F S \le mn = [E:F]\,[L:F]$. $\square$
+where $e_i e_{i'}$ is an $F$-linear combination of the $e$'s and $l_j l_{j'}$ is one of the $l$'s. So $S$ is a subring of the field $K$, of dimension at most $mn$ over $F$. A finite-dimensional domain over a field is a field: multiplication by a nonzero element is an injective $F$-linear endomorphism of $S$, hence surjective, so the element is invertible. Therefore $S$ is a field containing $E$ and $L$, so $EL \subseteq S$, whence $S = EL$ and $[EL:F] = \dim_F EL = \dim_F S \le mn = [E:F]\,[L:F]$.
 
 **Example.** $E = \mathbb{Q}(\sqrt2)$, $L = \mathbb{Q}(\sqrt3)$. Then $[E:\mathbb{Q}] = [L:\mathbb{Q}] = 2$, and the inequality gives $[EL:\mathbb{Q}] \le 4$. It is exactly $4$: the field $EL = \mathbb{Q}(\sqrt2, \sqrt3)$ contains $\sqrt2 \sqrt3 = \sqrt6$, and $\mathbb{Q}(\sqrt6)$ is a subfield of degree $2$ over $\mathbb{Q}$ distinct from both $E$ and $L$, since $\sqrt6 \notin \mathbb{Q}(\sqrt2)$ (if $\sqrt6 = a + b\sqrt2$ then $6 = a^2 + 2b^2 + 2ab\sqrt2$, so $ab = 0$, and neither alternative is consistent with $a, b \in \mathbb{Q}$). Hence $EL \supsetneq E$, so $[EL:E] = 2$ and $[EL:\mathbb{Q}] = 4$. The element $\sqrt2 + \sqrt3$ has $\mathbb{Q}(\sqrt2 + \sqrt3) = \mathbb{Q}(\sqrt2, \sqrt3)$: indeed $(\sqrt2+\sqrt3)^3 = 11\sqrt2 + 9\sqrt3$, so $\sqrt2$ and $\sqrt3$ are rational combinations of $\alpha = \sqrt2+\sqrt3$ and $\alpha^3$, and $\alpha$ generates the compositum. This is the computation behind the minimal polynomial $x^4 - 10x^2 + 1$ of the table.
 
@@ -220,11 +220,11 @@ $$
 
 and each factor is the degree of the minimal polynomial of $\alpha_i$ over $K_{i-1}$.
 
-**Proof.** Immediate from the tower law and the description of a simple algebraic extension. $\square$
+**Proof.** Immediate from the tower law and the description of a simple algebraic extension.
 
 **Corollary.** A finitely generated algebraic extension is finite. In particular, if $\alpha_1, \ldots, \alpha_n$ are algebraic over $F$, then $[F(\alpha_1, \ldots, \alpha_n):F] \le \prod_i [F(\alpha_i):F]$, and an algebraic extension is finitely generated if and only if it is finite.
 
-**Proof.** Each $[K_i:K_{i-1}] \le [F(\alpha_i):F]$, because the minimal polynomial of $\alpha_i$ over $F$ also annihilates $\alpha_i$ over $K_{i-1}$. The last statement is the finite case, together with the observation that a finite extension is generated by a finite basis. $\square$
+**Proof.** Each $[K_i:K_{i-1}] \le [F(\alpha_i):F]$, because the minimal polynomial of $\alpha_i$ over $F$ also annihilates $\alpha_i$ over $K_{i-1}$. The last statement is the finite case, together with the observation that a finite extension is generated by a finite basis.
 
 ### The Algebraic Elements Form a Subfield
 
@@ -236,7 +236,7 @@ $$
 
 is a subfield of $K$, called the **algebraic closure of $F$ in $K$**.
 
-**Proof.** Let $\alpha, \beta \in E$. Then $F(\alpha)$ and $F(\beta)$ are finite over $F$, so the compositum $F(\alpha, \beta)$ is finite over $F$ by the theorem on composites, hence algebraic over $F$. It contains $\alpha \pm \beta$, $\alpha \beta$, and, when $\beta \neq 0$, the element $\alpha/\beta$. Hence these lie in $E$, and $E$ is a field. $\square$
+**Proof.** Let $\alpha, \beta \in E$. Then $F(\alpha)$ and $F(\beta)$ are finite over $F$, so the compositum $F(\alpha, \beta)$ is finite over $F$ by the theorem on composites, hence algebraic over $F$. It contains $\alpha \pm \beta$, $\alpha \beta$, and, when $\beta \neq 0$, the element $\alpha/\beta$. Hence these lie in $E$, and $E$ is a field.
 
 **Corollary.** Every element of a finite extension is algebraic over the base field, and the algebraic closure of $F$ in $K$ equals $K$ precisely when $K/F$ is algebraic.
 

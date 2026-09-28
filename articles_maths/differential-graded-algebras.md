@@ -33,7 +33,7 @@ This sign is not a convention of convenience: it is forced by the requirement th
 
 **Proposition.** Let $A$ be a graded algebra. Then the tensor product $A\otimes_k A^{\mathrm{op}}$ with the multiplication $(a\otimes b)(a'\otimes b') = (-1)^{\lvert b\rvert\lvert a'\rvert}aa'\otimes bb'$ is a graded algebra, the enveloping algebra of the graded setting, and graded left $A\otimes_kA^{\mathrm{op}}$-modules are the graded $A$-bimodules.
 
-*Proof.* The associativity is a direct computation in which each crossing of a pair of factors contributes one sign; the signs cancel in exactly the four ways needed. $\square$
+*Proof.* The associativity is a direct computation in which each crossing of a pair of factors contributes one sign; the signs cancel in exactly the four ways needed.
 
 ## Differential Graded Algebras
 
@@ -65,13 +65,13 @@ $$
 
 The Hochschild differential $\delta$ has degree $+1$ and the cup product is associative, so $C^\bullet(A,A)$ with the cohomological grading $C^n$ in degree $-n$ is a DGA, and the Gerstenhaber bracket of the same article is the additional structure of degree $-1$ that makes it a Gerstenhaber algebra. The **cohomology** $HH^\bullet(A,A)$ is its homology. The Hochschild complex is the standard noncommutative instance of a DGA and the basic example of the layer.
 
-**Example (the Chevalley–Eilenberg complex).** Let $\mathfrak{g}$ be a Lie algebra over $k$, with $k$ of characteristic $0$, and let $\wedge^\bullet\mathfrak{g}^*$ be the exterior algebra on the dual, placed in degrees $\geq0$. The **Chevalley–Eilenberg differential**
+**Example (the Chevalley–Eilenberg complex).** Let $\mathrm{G}$ be a Lie algebra over $k$, with $k$ of characteristic $0$, and let $\wedge^\bullet\mathrm{G}^*$ be the exterior algebra on the dual, placed in degrees $\geq0$. The **Chevalley–Eilenberg differential**
 
 $$
 (d\alpha)(x_1,\dots,x_{n+1}) = \sum_{i<j}(-1)^{i+j}\,\alpha\bigl(x_1,\dots,x_{i-1},[x_i,x_j],x_{i+1},\dots,\widehat{x_j},\dots,x_{n+1}\bigr),
 $$
 
-in which $[x_i,x_j]$ occupies the $i$-th slot and $x_j$ is omitted, satisfies $d^2 = 0$ exactly because of the Jacobi identity of $\mathfrak{g}$, and turns $\wedge^\bullet\mathfrak{g}^*$ into a commutative DGA; the sign convention is the standard one, in which $d\alpha(x,y) = -\alpha([x,y])$ on $1$-cochains, and the alternative conventions differ by the signs of the individual terms. Its homology is the Lie algebra cohomology in the anti-symmetric category, where the construction and its interpretation are developed; it is recorded here because it is the prototype of a commutative DGA whose differential is a bracket.
+in which $[x_i,x_j]$ occupies the $i$-th slot and $x_j$ is omitted, satisfies $d^2 = 0$ exactly because of the Jacobi identity of $\mathrm{G}$, and turns $\wedge^\bullet\mathrm{G}^*$ into a commutative DGA; the sign convention is the standard one, in which $d\alpha(x,y) = -\alpha([x,y])$ on $1$-cochains, and the alternative conventions differ by the signs of the individual terms. Its homology is the Lie algebra cohomology in the anti-symmetric category, where the construction and its interpretation are developed; it is recorded here because it is the prototype of a commutative DGA whose differential is a bracket.
 
 **Example (the trivial extension).** Let $A$ be a DGA, let $a \in A$ be a central cycle of even degree $\lvert a\rvert$, and let $A\langle x\rangle/(x^2)$ be the graded algebra obtained by adjoining an odd generator $x$ of degree $\lvert a\rvert+1$ with $x^2 = 0$. There is a unique differential extending $d$ with $dx = a$, and it is well defined: $d(x^2) = (dx)x - x(dx) = ax - xa = 0$ by centrality, the sign being that of the graded Leibniz rule for an odd generator. Thus every central cycle of even degree produces a new DGA that is free over the old one, and the construction is the elementary step of the semi-free resolutions of the next section.
 
@@ -93,7 +93,7 @@ $$
 0 \longrightarrow \mathbb{Z} \xrightarrow{\ 2\ } \mathbb{Z} \longrightarrow \mathbb{Z}/2\mathbb{Z} \longrightarrow 0 ,
 $$
 
-which is not contractible: a contracting homotopy would in particular provide $h : \mathbb{Z}\to\mathbb{Z}$ with $2h = \mathrm{id}_{\mathbb{Z}}$, and multiplication by $2$ is not invertible. Hence the map from this complex to the zero complex is a quasi-isomorphism that is not a homotopy equivalence. $\square$
+which is not contractible: a contracting homotopy would in particular provide $h : \mathbb{Z}\to\mathbb{Z}$ with $2h = \mathrm{id}_{\mathbb{Z}}$, and multiplication by $2$ is not invertible. Hence the map from this complex to the zero complex is a quasi-isomorphism that is not a homotopy equivalence.
 
 **Definition.** A DG $A$-module $M$ is **semi-free** if it is the union of a chain $M^{(0)} \subseteq M^{(1)}\subseteq\cdots$ of DG submodules with $M^{(0)}$ free and every $M^{(n+1)}/M^{(n)}$ free on generators whose differentials lie in $M^{(n)}$; equivalently, $M$ is built from free modules by the trivial extensions of the preceding section, transfinitely. A DGA $A$ is **semi-free** if it is semi-free as a DG module over itself.
 
@@ -103,7 +103,7 @@ which is not contractible: a contracting homotopy would in particular provide $h
 2. If $f : P \to Q$ is a quasi-isomorphism between semi-free DG $A$-modules that are bounded below, then $f$ is a homotopy equivalence; consequently semi-free resolutions are unique up to homotopy equivalence.
 3. A morphism $P\to N$ from a semi-free module to an arbitrary module exists and is unique up to homotopy whenever $H_\bullet(P) \to H_\bullet(N)$ is prescribed compatibly, so $\operatorname{Hom}_{K(A)}(P,N)$ computes the derived homomorphisms.
 
-*Proof (outline).* Statement 1 is the small-object argument applied one generator at a time: the construction of the preceding section adjoins a generator to kill a cycle or to kill a homology class, and transfinite iteration produces $P$ together with a quasi-isomorphism. Statement 2 is proved by lifting the identity along $f$: since $P$ is semi-free, a map $P\to Q$ can be constructed by induction over the filtration, and the resulting map is homotopic to the inverse of $f$ because the difference has zero homology and $P$ is semi-free. Statement 3 is the same lifting induction, and the uniqueness up to homotopy is the statement that any two lifts differ by a homotopy constructed in the same way. The argument is the algebraic shadow of the small-object and lifting arguments of homotopy theory; the model-categorical formulation belongs to Part II. $\square$
+*Proof (outline).* Statement 1 is the small-object argument applied one generator at a time: the construction of the preceding section adjoins a generator to kill a cycle or to kill a homology class, and transfinite iteration produces $P$ together with a quasi-isomorphism. Statement 2 is proved by lifting the identity along $f$: since $P$ is semi-free, a map $P\to Q$ can be constructed by induction over the filtration, and the resulting map is homotopic to the inverse of $f$ because the difference has zero homology and $P$ is semi-free. Statement 3 is the same lifting induction, and the uniqueness up to homotopy is the statement that any two lifts differ by a homotopy constructed in the same way. The argument is the algebraic shadow of the small-object and lifting arguments of homotopy theory; the model-categorical formulation belongs to Part II.
 
 **Definition.** The **derived category** $D(A)$ of a DGA $A$ is the localisation of the homotopy category $K(A)$ at the quasi-isomorphisms: the category obtained by formally adjoining inverses to all quasi-isomorphisms. Its existence and its identification with the homotopy category of semi-free modules are proved by the standard methods of homological algebra, and the model structure that produces it belongs to Part II.
 
@@ -145,7 +145,7 @@ $$
 
 for the convolution product $\star$ on $\operatorname{Hom}_k(C,A)$, and they are in natural bijection with the DGA morphisms $\Omega(C)\to A$ and with the DG coalgebra morphisms $C \to B(A)$.
 
-*Proof (outline).* A map $\Omega(C)\to A$ is determined by its restriction to the generators $\bar C$, that is, by a degree $-1$ map $\tau : C\to A$; the requirement that the map be a morphism of DGAs is exactly $d\tau + \tau\star\tau = 0$, since the differential on the tensor algebra is the concatenation and the differentials. The bijection with coalgebra maps $C\to B(A)$ is the identical computation read in the opposite category. $\square$
+*Proof (outline).* A map $\Omega(C)\to A$ is determined by its restriction to the generators $\bar C$, that is, by a degree $-1$ map $\tau : C\to A$; the requirement that the map be a morphism of DGAs is exactly $d\tau + \tau\star\tau = 0$, since the differential on the tensor algebra is the concatenation and the differentials. The bijection with coalgebra maps $C\to B(A)$ is the identical computation read in the opposite category.
 
 **Theorem (Koszul duality via the cobar construction, standard).** Let $A$ be a Koszul algebra over a field, with Koszul dual $A^!$ regarded as a graded coalgebra by dualising the multiplication. Then there is a quasi-isomorphism of DGAs
 
@@ -163,7 +163,7 @@ This is the precise sense in which the two constructions of the previous article
 
 **Proposition.** Let $A$ be a Koszul algebra over a field. Then the Koszul complex computing $\operatorname{Ext}^\bullet_A(k,k)$ is formal, and $\operatorname{Ext}^\bullet_A(k,k) \cong A^!$ as a graded algebra; more generally a DGA whose homology is concentrated in degrees of a single parity, in the appropriate sense, is formal because the higher operations must land in degrees that are not represented.
 
-*Proof.* For a Koszul algebra the Koszul complex is a semi-free resolution of $k$ with generators in bidegrees $(i,i)$, so the comparison of the complex $\operatorname{End}_A(K(A))$ with its homology $A^!$ is a quasi-isomorphism of DGAs by the dimension count in each bidegree; no room remains for a nontrivial Massey product, and the formality follows. $\square$
+*Proof.* For a Koszul algebra the Koszul complex is a semi-free resolution of $k$ with generators in bidegrees $(i,i)$, so the comparison of the complex $\operatorname{End}_A(K(A))$ with its homology $A^!$ is a quasi-isomorphism of DGAs by the dimension count in each bidegree; no room remains for a nontrivial Massey product, and the formality follows.
 
 **Theorem (Kontsevich formality; statement of the DGA form).** Let $A = k[x_1,\dots,x_n]$ and let $C^\bullet(A,A)$ be its Hochschild complex as a DGA; let $T_{\mathrm{poly}}(A)$ be the graded algebra of polynomial multivectors with the zero differential and the wedge product. Then there is a quasi-isomorphism of DGAs (indeed of $L_\infty$-algebras, as in *Deformation Quantization* and)
 

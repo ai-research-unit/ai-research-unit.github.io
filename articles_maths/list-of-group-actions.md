@@ -47,7 +47,7 @@ An action of $G$ on a vector space by linear maps is a **representation** of $G$
 | Regular representation of $G$ on $F[G]$ | $G$ acts on the group algebra; the character is $\chi_{\mathrm{reg}}(e) = |G|$ | *Group Algebras* |
 | Permutation representation of a $G$-set | the linearisation of an action on a set; the character counts fixed points | *Representations of Groups* |
 | Tensor, dual, symmetric and exterior powers | the representations $V \otimes W$, $V^*$, $\operatorname{Sym}^n V$ and $\Lambda^n V$ | *Representations of Groups* |
-| Adjoint action of a Lie algebra on itself | orbits the coadjoint orbits; the representation $\operatorname{ad} : \mathfrak{g} \to \mathfrak{gl}(\mathfrak{g})$ | *Lie Algebras* |
+| Adjoint action of a Lie algebra on itself | orbits the coadjoint orbits; the representation $\operatorname{ad} : \mathrm{G} \to \mathrm{GL}(\mathrm{G})$ | *Lie Algebras* |
 | Weight decomposition | the action of a Cartan subalgebra; the weights and the highest weight | *Representations of Lie Algebras* |
 | Schur–Weyl action of $S_n \times GL(V)$ on $V^{\otimes n}$ | orbits and stabilisers described by Young diagrams; the decomposition into Schur functors | *Schur–Weyl Duality* |
 | Non-example: a non-faithful representation | fails faithfulness: the kernel is a nontrivial normal subgroup | *Representations of Groups* |

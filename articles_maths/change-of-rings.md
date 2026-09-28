@@ -37,7 +37,7 @@ The inclusion can be strict: $B$-linear maps are $A$-linear, since $f(\varphi(a)
 
 **Proposition.** Restriction of scalars is exact: every short exact sequence in $\operatorname{Mod}(B)$ remains short exact in $\operatorname{Mod}(A)$.
 
-*Proof.* The underlying groups and maps are unchanged, and exactness is a property of the underlying groups and maps alone. $\square$
+*Proof.* The underlying groups and maps are unchanged, and exactness is a property of the underlying groups and maps alone.
 
 Restriction also preserves direct sums, products and limits, since these are computed on the underlying modules. It does not in general preserve free modules or projective modules: the $A$-module $\operatorname{Res}_\varphi B$ is $B$ with the $A$-action through $\varphi$, and this is projective over $A$ only when $B$ happens to be projective as a left $A$-module. For the quotient homomorphism $A \to A/I$ it is $A/I$, which is projective over $A$ only when $I$ is a direct summand. Restriction preserves injective modules exactly when extension of scalars is exact, that is, when $B$ is flat as a right $A$-module: for an injective $B$-module $I$ the functor $\operatorname{Hom}_B(-,I)$ is exact, and $\operatorname{Hom}_A(-,\operatorname{Res}_\varphi I)\cong\operatorname{Hom}_B(B\otimes_A-,I)$, so it is exact whenever $B\otimes_A-$ is; dually, restriction preserves projectives exactly when $B$ is projective as a left $A$-module, the condition that the right adjoint $\operatorname{Hom}_A(B,-)$ be exact. If $A$ is semisimple then every $A$-module is projective and flat, so both conditions hold automatically.
 
@@ -75,7 +75,7 @@ $$
 
 It preserves projective modules, and it carries the regular module ${}_A A$ to the regular module ${}_B B$.
 
-*Proof.* Right exactness and preservation of direct sums are the corresponding properties of the balanced product from *The Balanced Product over an Algebra*. For free modules, $B\otimes_A A^n\cong (B\otimes_A A)^n\cong B^n$ by the unit isomorphism $B\otimes_A A\cong B$. A projective $A$-module is a direct summand of a free $A$-module $A^n$; applying the right exact functor $B\otimes_A-$ to the split sequence gives a split sequence exhibiting $B\otimes_A P$ as a direct summand of $B^n$, hence projective. $\square$
+*Proof.* Right exactness and preservation of direct sums are the corresponding properties of the balanced product from *The Balanced Product over an Algebra*. For free modules, $B\otimes_A A^n\cong (B\otimes_A A)^n\cong B^n$ by the unit isomorphism $B\otimes_A A\cong B$. A projective $A$-module is a direct summand of a free $A$-module $A^n$; applying the right exact functor $B\otimes_A-$ to the split sequence gives a split sequence exhibiting $B\otimes_A P$ as a direct summand of $B^n$, hence projective.
 
 In general $B\otimes_A-$ is not left exact, and it is exact precisely when $B$ is flat as a right $A$-module, which is the subject of §Flatness and Change of Rings.
 
@@ -133,7 +133,7 @@ $$
 \varphi_! \dashv \operatorname{Res}_\varphi \dashv \varphi_*.
 $$
 
-*Proof.* The first isomorphism is the tensor–hom adjunction applied to the $(B,A)$-bimodule $B$, with $\operatorname{Hom}_B(B,N)\cong \operatorname{Res}_\varphi N$. The second is the same adjunction applied to the $(A,B)$-bimodule $B$, giving $\operatorname{Hom}_B(N',\operatorname{Hom}_A(B,N))\cong\operatorname{Hom}_A(B\otimes_B N',N)\cong\operatorname{Hom}_A(\operatorname{Res}_\varphi N',N)$. Both are natural in all variables. $\square$
+*Proof.* The first isomorphism is the tensor–hom adjunction applied to the $(B,A)$-bimodule $B$, with $\operatorname{Hom}_B(B,N)\cong \operatorname{Res}_\varphi N$. The second is the same adjunction applied to the $(A,B)$-bimodule $B$, giving $\operatorname{Hom}_B(N',\operatorname{Hom}_A(B,N))\cong\operatorname{Hom}_A(B\otimes_B N',N)\cong\operatorname{Hom}_A(\operatorname{Res}_\varphi N',N)$. Both are natural in all variables.
 
 **Corollary (Frobenius reciprocity).** With $M \in \operatorname{Mod}(A)$ and $N \in \operatorname{Mod}(B)$,
 
@@ -193,7 +193,7 @@ is exact. Equivalently, $\operatorname{Tor}_1^A(M,N)=0$ for every left $A$-modul
 
 **Theorem.** Every projective module is flat. Consequently every free module is flat.
 
-*Proof.* Free modules are flat because $A\otimes_A-\cong\mathrm{id}$ is exact, and a direct sum of flat modules is flat because $-\otimes_A-$ commutes with direct sums. A projective module is a direct summand of a free module, and a direct summand of a flat module is flat: if $M=P\oplus Q$ is flat and $L\to L'$ is injective, then $L\otimes_A P\to L'\otimes_A P$ is a direct summand of the injective map $L\otimes_A M\to L'\otimes_A M$, and a direct summand of an injective map is injective. $\square$
+*Proof.* Free modules are flat because $A\otimes_A-\cong\mathrm{id}$ is exact, and a direct sum of flat modules is flat because $-\otimes_A-$ commutes with direct sums. A projective module is a direct summand of a free module, and a direct summand of a flat module is flat: if $M=P\oplus Q$ is flat and $L\to L'$ is injective, then $L\otimes_A P\to L'\otimes_A P$ is a direct summand of the injective map $L\otimes_A M\to L'\otimes_A M$, and a direct summand of an injective map is injective.
 
 The converse is false in general: over a commutative ring the flat module $\mathbb{Q}$ over $\mathbb{Z}$ is not projective, and over a noncommutative ring flatness is again weaker than projectivity. Over a left perfect ring, and in particular over a finite-dimensional algebra, flat left modules are projective; this is a standard theorem of Bass and is cited rather than proved here.
 
@@ -214,7 +214,7 @@ The central result of the article is that flatness of the bimodule ${}_B B_A$ is
 1. Extension of scalars $B\otimes_A-$ is exact.
 2. $B$ is flat as a right $A$-module.
 
-*Proof.* Extension is the functor $B\otimes_A-$ applied to left $A$-modules, which is exact precisely when the right $A$-module $B$ is flat, by the definition of flatness. $\square$
+*Proof.* Extension is the functor $B\otimes_A-$ applied to left $A$-modules, which is exact precisely when the right $A$-module $B$ is flat, by the definition of flatness.
 
 **Theorem.** Let $\varphi: A\to B$ be a unital algebra homomorphism such that $B$ is flat as a right $A$-module, and let $N$ be a flat left $B$-module. Then $\operatorname{Res}_\varphi N$ is a flat left $A$-module.
 
@@ -224,7 +224,7 @@ $$
 X\otimes_A \operatorname{Res}_\varphi N \cong (X\otimes_A B)\otimes_B N.
 $$
 
-The functor $X\mapsto X\otimes_A B$ is exact on right $A$-modules because $B$ is flat as a right $A$-module, and $-\otimes_B N$ is exact because $N$ is a flat left $B$-module; the composite is exact, so $\operatorname{Res}_\varphi N$ is flat. $\square$
+The functor $X\mapsto X\otimes_A B$ is exact on right $A$-modules because $B$ is flat as a right $A$-module, and $-\otimes_B N$ is exact because $N$ is a flat left $B$-module; the composite is exact, so $\operatorname{Res}_\varphi N$ is flat.
 
 Two further compatibility facts are immediate from the adjoint triple.
 

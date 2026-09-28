@@ -19,13 +19,13 @@ A sequence is a function on the directed set $\mathbb{N}$; replacing $\mathbb{N}
 
 **Proposition (uniqueness).** If $X$ is Hausdorff, a sequence has at most one limit.
 
-**Proof.** If $x \neq y$, choose disjoint neighbourhoods $U$ of $x$ and $V$ of $y$; a sequence converging to both lies eventually in each, hence eventually in $U \cap V = \emptyset$, a contradiction. $\square$
+**Proof.** If $x \neq y$, choose disjoint neighbourhoods $U$ of $x$ and $V$ of $y$; a sequence converging to both lies eventually in each, hence eventually in $U \cap V = \emptyset$, a contradiction.
 
 In a non-Hausdorff space a sequence may have several limits, and the notation $x_n \to x$ then asserts only that $x$ is one of them. Every space in this Part is Hausdorff, and the qualification is not repeated.
 
 **Theorem (convergence and continuity).** A map $f : X \to Y$ of topological spaces is continuous at $x$ if and only if $f(x_\lambda) \to f(x)$ for every net $x_\lambda \to x$. For first-countable $X$ it suffices to test sequences.
 
-**Proof.** If $f$ is continuous at $x$ and $V$ is a neighbourhood of $f(x)$, then $f^{-1}(V)$ is a neighbourhood of $x$, so $x_\lambda$ lies eventually in it and $f(x_\lambda)$ lies eventually in $V$. Conversely, if $f$ is not continuous at $x$, there is a neighbourhood $V$ of $f(x)$ with $f^{-1}(V)$ not a neighbourhood of $x$; the neighbourhoods of $x$ are directed by reverse inclusion, and choosing $x_U \in U \setminus f^{-1}(V)$ gives a net $x_U \to x$ with $f(x_U) \notin V$. $\square$
+**Proof.** If $f$ is continuous at $x$ and $V$ is a neighbourhood of $f(x)$, then $f^{-1}(V)$ is a neighbourhood of $x$, so $x_\lambda$ lies eventually in it and $f(x_\lambda)$ lies eventually in $V$. Conversely, if $f$ is not continuous at $x$, there is a neighbourhood $V$ of $f(x)$ with $f^{-1}(V)$ not a neighbourhood of $x$; the neighbourhoods of $x$ are directed by reverse inclusion, and choosing $x_U \in U \setminus f^{-1}(V)$ gives a net $x_U \to x$ with $f(x_U) \notin V$.
 
 ### Cauchy Sequences, Completeness and Compactness
 
@@ -79,11 +79,11 @@ $$
 \sup_{x \in X} \|f_m(x) - f_n(x)\| \longrightarrow 0 \qquad (m, n \to \infty).
 $$
 
-**Proof.** Uniform convergence implies the Cauchy condition by the triangle inequality. Conversely, if the condition holds, then for each $x$ the sequence $(f_n(x))$ is Cauchy in the complete space $Y$, so it has a limit $f(x)$; given $\epsilon > 0$, choose $N$ with $\sup_x \|f_m(x) - f_n(x)\| < \epsilon$ for $m, n \geq N$ and let $m \to \infty$ in the estimate $\|f_m(x) - f_n(x)\| < \epsilon$ to get $\|f(x) - f_n(x)\| \leq \epsilon$ for all $x$ and $n \geq N$. $\square$
+**Proof.** Uniform convergence implies the Cauchy condition by the triangle inequality. Conversely, if the condition holds, then for each $x$ the sequence $(f_n(x))$ is Cauchy in the complete space $Y$, so it has a limit $f(x)$; given $\epsilon > 0$, choose $N$ with $\sup_x \|f_m(x) - f_n(x)\| < \epsilon$ for $m, n \geq N$ and let $m \to \infty$ in the estimate $\|f_m(x) - f_n(x)\| < \epsilon$ to get $\|f(x) - f_n(x)\| \leq \epsilon$ for all $x$ and $n \geq N$.
 
 **Theorem.** $B(X, Y)$ with the supremum norm is a Banach space when $Y$ is a Banach space; the subspace $C_b(X,Y)$ of bounded continuous functions is closed in it, hence itself a Banach space, and a uniform limit of continuous functions is continuous.
 
-**Proof.** The norm axioms are immediate from those of $Y$. Completeness is the uniform Cauchy criterion. If $f_n \in C_b(X,Y)$ and $f_n \rightrightarrows f$, let $x_0 \in X$ and $\epsilon > 0$; choose $n$ with $\|f_n - f\|_\infty < \epsilon/3$ and a neighbourhood $U$ of $x_0$ with $\|f_n(x) - f_n(x_0)\| < \epsilon/3$ on $U$, then $\|f(x) - f(x_0)\| \leq \epsilon$ on $U$ by the triangle inequality. $\square$
+**Proof.** The norm axioms are immediate from those of $Y$. Completeness is the uniform Cauchy criterion. If $f_n \in C_b(X,Y)$ and $f_n \rightrightarrows f$, let $x_0 \in X$ and $\epsilon > 0$; choose $n$ with $\|f_n - f\|_\infty < \epsilon/3$ and a neighbourhood $U$ of $x_0$ with $\|f_n(x) - f_n(x_0)\| < \epsilon/3$ on $U$, then $\|f(x) - f(x_0)\| \leq \epsilon$ on $U$ by the triangle inequality.
 
 Uniform convergence is therefore the mode that is adapted to continuity: the limit of a uniformly convergent sequence of continuous functions is continuous, with the same modulus of continuity estimate, and the argument uses only the triangle inequality.
 
@@ -95,13 +95,13 @@ Uniform convergence implies locally uniform convergence, which implies pointwise
 
 **Theorem (Dini).** Let $X$ be compact, $f_n : X \to \mathbb{R}$ continuous and $f_n(x) \downarrow f(x)$ for every $x$, with $f$ continuous. Then $f_n \rightrightarrows f$.
 
-**Proof.** Put $g_n = f_n - f \geq 0$, continuous and decreasing to $0$ pointwise. Given $\epsilon > 0$, the sets $U_n = \{x : g_n(x) < \epsilon\}$ are open, increase with $n$ and cover $X$; by compactness finitely many cover $X$, and since they increase, $U_N = X$ for some $N$. Hence $0 \leq g_n \leq \epsilon$ on $X$ for $n \geq N$. $\square$
+**Proof.** Put $g_n = f_n - f \geq 0$, continuous and decreasing to $0$ pointwise. Given $\epsilon > 0$, the sets $U_n = \{x : g_n(x) < \epsilon\}$ are open, increase with $n$ and cover $X$; by compactness finitely many cover $X$, and since they increase, $U_N = X$ for some $N$. Hence $0 \leq g_n \leq \epsilon$ on $X$ for $n \geq N$.
 
 Monotonicity is essential: on $[0,1]$ the functions $f_n(x) = \max(0, 1 - \lvert nx - 1\rvert)$ converge pointwise to $0$, the sequence is not monotone in $n$ at any point, and the convergence is not uniform, since $\|f_n\|_\infty = 1$ for every $n$. Dini's theorem is the standard device for upgrading a pointwise convergence that is monotone on a compact set.
 
 **Theorem (Weierstrass $M$-test).** Let $f_n : X \to Y$, $Y$ a Banach space, satisfy $\|f_n\|_\infty \leq M_n$ with $\sum_n M_n < \infty$. Then $\sum_n f_n$ converges uniformly and absolutely, and its sum is continuous if the $f_n$ are continuous.
 
-**Proof.** The partial sums form a Cauchy sequence for the supremum norm, since $\|\sum_{n=p}^{q} f_n\|_\infty \leq \sum_{n=p}^q M_n$, and $B(X,Y)$ is complete; continuity is the preceding theorem. $\square$
+**Proof.** The partial sums form a Cauchy sequence for the supremum norm, since $\|\sum_{n=p}^{q} f_n\|_\infty \leq \sum_{n=p}^q M_n$, and $B(X,Y)$ is complete; continuity is the preceding theorem.
 
 ## Almost Everywhere and in Measure
 
@@ -133,7 +133,7 @@ $$
 
 defines a metric on the measurable functions, and $f_n \xrightarrow{\mu} f$ if and only if $d_\mu(f_n, f) \to 0$. The metric is complete, so the measurable functions modulo a.e. equality form a complete metric space under it.
 
-**Proof sketch.** The triangle inequality uses the union bound: if $\|f - g\| \leq \epsilon$ off a set of measure $\leq \epsilon$ and $\|g - h\| \leq \delta$ off a set of measure $\leq \delta$, then $\|f - h\| \leq \epsilon + \delta$ off the union, of measure $\leq \epsilon + \delta$. The stated equivalence follows from the definitions, and completeness is proved by extracting a subsequence that converges a.e. and applying the Cauchy condition to its differences. $\square$
+**Proof sketch.** The triangle inequality uses the union bound: if $\|f - g\| \leq \epsilon$ off a set of measure $\leq \epsilon$ and $\|g - h\| \leq \delta$ off a set of measure $\leq \delta$, then $\|f - h\| \leq \epsilon + \delta$ off the union, of measure $\leq \epsilon + \delta$. The stated equivalence follows from the definitions, and completeness is proved by extracting a subsequence that converges a.e. and applying the Cauchy condition to its differences.
 
 The metric $d_\mu$ is a device of convenience; the defining statement is the measure estimate. On a finite measure space one may use $d_\mu(f,g) = \int \min(1, \|f - g\|) \, d\mu$ instead, whose convergence to zero is equivalent to convergence in measure.
 
@@ -141,15 +141,15 @@ The metric $d_\mu$ is a device of convenience; the defining statement is the mea
 
 **Theorem (Egorov).** Let $\mu(X) < \infty$ and $f_n \to f$ a.e., with the $f_n$ measurable. Then for every $\epsilon > 0$ there is a measurable set $E$ with $\mu(E) < \epsilon$ such that $f_n \rightrightarrows f$ on $X \setminus E$: the convergence is **almost uniform**. In particular $f_n \xrightarrow{\mu} f$.
 
-**Proof.** For fixed $k$ the sets $E_{n,k} = \bigcup_{m \geq n} \{\|f_m - f\| > 1/k\}$ decrease as $n$ increases and, by a.e. convergence, have intersection null; finiteness of the measure gives $\mu(E_{n,k}) \to 0$ as $n \to \infty$. Choose $n_k$ with $\mu(E_{n_k,k}) < \epsilon/2^k$ and put $E = \bigcup_k E_{n_k,k}$, of measure $< \epsilon$. On $X \setminus E$ one has $\|f_m - f\| \leq 1/k$ for $m \geq n_k$, since a point outside $E$ lies outside every $E_{n_k,k}$, so the convergence is uniform. $\square$
+**Proof.** For fixed $k$ the sets $E_{n,k} = \bigcup_{m \geq n} \{\|f_m - f\| > 1/k\}$ decrease as $n$ increases and, by a.e. convergence, have intersection null; finiteness of the measure gives $\mu(E_{n,k}) \to 0$ as $n \to \infty$. Choose $n_k$ with $\mu(E_{n_k,k}) < \epsilon/2^k$ and put $E = \bigcup_k E_{n_k,k}$, of measure $< \epsilon$. On $X \setminus E$ one has $\|f_m - f\| \leq 1/k$ for $m \geq n_k$, since a point outside $E$ lies outside every $E_{n_k,k}$, so the convergence is uniform.
 
 **Theorem (Riesz).** If $f_n \xrightarrow{\mu} f$ then some subsequence converges to $f$ a.e.
 
-**Proof.** Choose $n_1 < n_2 < \cdots$ with $\mu(\{\|f_{n_k} - f\| > 2^{-k}\}) \leq 2^{-k}$; the Borel–Cantelli lemma makes the limsup of these sets null, and off it $\|f_{n_k} - f\| \leq 2^{-k}$ for all large $k$. $\square$
+**Proof.** Choose $n_1 < n_2 < \cdots$ with $\mu(\{\|f_{n_k} - f\| > 2^{-k}\}) \leq 2^{-k}$; the Borel–Cantelli lemma makes the limsup of these sets null, and off it $\|f_{n_k} - f\| \leq 2^{-k}$ for all large $k$.
 
 **Theorem (convergence a.e. versus in measure).** If $\mu(X) < \infty$, convergence a.e. implies convergence in measure. The converse fails: on $[0,1]$ the indicator functions of the dyadic intervals $\bigl[k/2^m, (k+1)/2^m\bigr)$, enumerated with $m$ increasing and $k = 0, \dots, 2^m - 1$ for each $m$, converge to $0$ in measure and have no pointwise limit at any point of $[0,1)$.
 
-**Proof.** The forward implication is Egorov's theorem. For the example, the $n$-th function in the enumeration has support of length $2^{-m}$, so it converges to $0$ in measure; but for every $x \in [0,1)$ the value $1$ occurs for one $k$ at each level $m$ with $k \leq 2^m x < k+1$, hence infinitely often, so the sequence does not converge at $x$. $\square$
+**Proof.** The forward implication is Egorov's theorem. For the example, the $n$-th function in the enumeration has support of length $2^{-m}$, so it converges to $0$ in measure; but for every $x \in [0,1)$ the value $1$ occurs for one $k$ at each level $m$ with $k \leq 2^m x < k+1$, hence infinitely often, so the sequence does not converge at $x$.
 
 The exact relation is therefore: a.e. convergence and convergence in measure do not imply one another on a general space, on a finite measure space a.e. convergence implies convergence in measure, and in measure convergence implies a.e. convergence along a subsequence. Both are implied by almost uniform convergence, which on a finite measure space is equivalent to a.e. convergence by Egorov. The four modes and their implications are tabulated in the closing section.
 
@@ -193,7 +193,7 @@ On a finite measure space this is equivalent to the conjunction of boundedness i
 
 **Theorem (Vitali convergence theorem).** Let $\mu(X) < \infty$, let $f_n \to f$ in measure and suppose the family $\{f_n\}$ is uniformly integrable and $f \in L^1$. Then $f_n \to f$ in $L^1$.
 
-**Proof sketch.** Given $\epsilon > 0$, uniform integrability gives $c$ with $\sup_n \int_{\{|f_n| > c\}} |f_n| < \epsilon$; Fatou's lemma applied to a subsequence gives the same estimate for $f$. Split $|f_n - f| \leq 2c$ on the set where both are bounded by $c$ and use convergence in measure to make the integral of the bounded part small, and the tail estimate for the rest. $\square$
+**Proof sketch.** Given $\epsilon > 0$, uniform integrability gives $c$ with $\sup_n \int_{\{|f_n| > c\}} |f_n| < \epsilon$; Fatou's lemma applied to a subsequence gives the same estimate for $f$. Split $|f_n - f| \leq 2c$ on the set where both are bounded by $c$ and use convergence in measure to make the integral of the bounded part small, and the tail estimate for the rest.
 
 **Corollary (the dominated convergence theorem).** If $f_n \to f$ a.e. and $|f_n| \leq g$ with $g \in L^1$, then the family is uniformly integrable and $f_n \to f$ in $L^1$.
 
@@ -217,7 +217,7 @@ Let $X$ be a normed space over $\mathbb{K}$ with dual $X'$, the Banach space of 
 
 **(d)** (Mazur) Every norm-closed convex subset of $X$ is weakly closed, and the weak closure of a convex set is its norm closure; equivalently, every weak limit is a norm limit of convex combinations.
 
-**Proof sketch.** (a) A weakly convergent sequence is pointwise bounded on $X'$, hence bounded by the uniform boundedness principle, a consequence of Baire's theorem for the complete space $X'$; in a Hilbert space it follows alternatively from the uniform boundedness principle applied to the functionals $x \mapsto \langle x_n, x \rangle$. Lower semicontinuity of the norm is the estimate $\|\varphi(x)\| \leq \liminf \|\varphi(x_n)\| \leq \|\varphi\| \liminf \|x_n\|$ followed by the Hahn–Banach theorem. (c) Expanding $\|x_n - x\|^2 = \|x_n\|^2 - 2\operatorname{Re}\langle x_n, x\rangle + \|x\|^2$ in a Hilbert space. (d) The second dual statement is the Hahn–Banach separation theorem, from *Duality Theory*. $\square$
+**Proof sketch.** (a) A weakly convergent sequence is pointwise bounded on $X'$, hence bounded by the uniform boundedness principle, a consequence of Baire's theorem for the complete space $X'$; in a Hilbert space it follows alternatively from the uniform boundedness principle applied to the functionals $x \mapsto \langle x_n, x \rangle$. Lower semicontinuity of the norm is the estimate $\|\varphi(x)\| \leq \liminf \|\varphi(x_n)\| \leq \|\varphi\| \liminf \|x_n\|$ followed by the Hahn–Banach theorem. (c) Expanding $\|x_n - x\|^2 = \|x_n\|^2 - 2\operatorname{Re}\langle x_n, x\rangle + \|x\|^2$ in a Hilbert space. (d) The second dual statement is the Hahn–Banach separation theorem, from *Duality Theory*.
 
 ### Weak-$\ast$ Convergence
 
@@ -265,7 +265,7 @@ $$
 \frac{d}{dx} \lim_{n} f_n = \lim_n \frac{d}{dx} f_n .
 $$
 
-**Proof sketch.** For $x \in (a,b)$ the mean value theorem gives $\|f_m(x) - f_n(x) - (f_m(x_0) - f_n(x_0))\| \leq \|f_m' - f_n'\|_\infty \, |x - x_0|$; the uniform Cauchy hypothesis for the derivatives and the convergence at $x_0$ therefore imply the uniform Cauchy condition for the $f_n$, so there is a uniform limit $f$. Passing to the limit in the difference quotient, the same estimate shows that $f$ is differentiable with derivative $g$. $\square$
+**Proof sketch.** For $x \in (a,b)$ the mean value theorem gives $\|f_m(x) - f_n(x) - (f_m(x_0) - f_n(x_0))\| \leq \|f_m' - f_n'\|_\infty \, |x - x_0|$; the uniform Cauchy hypothesis for the derivatives and the convergence at $x_0$ therefore imply the uniform Cauchy condition for the $f_n$, so there is a uniform limit $f$. Passing to the limit in the difference quotient, the same estimate shows that $f$ is differentiable with derivative $g$.
 
 The theorem uses the mean value theorem and hence the order of $\mathbb{R}$; it has no general form in a non-Archimedean field, where the mean value theorem fails, and the appropriate substitute in that setting is discussed. Pointwise convergence of the derivatives does not suffice: the functions $f_n(x) = x^n/n$ on $[0,1]$ converge uniformly to $0$, their derivatives $x^{n-1}$ converge pointwise to $0$ on $[0,1)$ and to $1$ at $1$, and the limit of the derivatives is not the derivative of the limit at $1$.
 

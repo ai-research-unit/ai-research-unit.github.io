@@ -8,7 +8,7 @@ $$
 \mathbb{B} \cong M_2(\mathbb{C}),
 $$
 
-and the isomorphism is written $\Phi : \mathbb{B} \to M_2(\mathbb{C})$ throughout. A biquaternion and a $2 \times 2$ complex matrix are the same object written twice, and this is the form in which every statement about the algebra becomes an arithmetic check: the trace reads off the scalar part, the determinant **is** the norm form, invertibility becomes non-vanishing determinant, the Hermitian subspace becomes the Hermitian matrices, and the minimal left ideals become the matrix columns.
+and the isomorphism is written $\Phi : \mathbb{B} \to M_2(\mathbb{C})$ throughout. A biquaternion and a $2 \times 2$ complex matrix are the same object written twice, and this is the form in which every statement about the algebra becomes an arithmetic check: the trace reads off the scalar part, the determinant **is** the biquaternion norm, invertibility becomes non-vanishing determinant, the Hermitian subspace becomes the Hermitian matrices, and the minimal left ideals become the matrix columns.
 
 The article supplies the $2 \times 2$ matrices that carry a single chirality, that is, the simple module $S = \mathbb{C}^2$ on which the algebra acts irreducibly. Its coefficient space is that of *The Four-Vector Representation of Biquaternions*, the left multiplication written on that space is that of *The 4×4 Regular Matrix Representation of Biquaternions*, and that representation is the direct sum $S \oplus S$ of two copies of the simple module treated here. The article states the assignment, checks that the four basis matrices multiply as the four units do, notes why the signs cannot be chosen differently, and reads off the invariants, the six subspaces, the two ideals as columns, the conjugations, and the spin and qubit structures.
 
@@ -115,7 +115,7 @@ which is exactly the image of $e_3$. So the assignment asserted above passes the
 
 The physical reading of the sign is the one recorded in the remark above. The Hermitian quaternion units $ie_k$ are Hermitian elements, and their images $\Phi(ie_k) = i\,\Phi(e_k)$ are the Hermitian matrices; the imaginary quaternion units themselves are not, since $\Phi(e_k)^\dagger = -\Phi(e_k)$ in the three vector cases. The assignment is thus the one under which the Hermitian elements of the algebra become the Hermitian matrices, and that is what makes it an algebra of observables. It is why the sign is a consequence of the algebra rather than a convention that could have gone either way.
 
-## Trace, Determinant and the Norm Form
+## Trace, Determinant and the Biquaternion Norm
 
 **The trace is twice the scalar part.** The trace is taken in this representation, with $\mathrm{Tr}(e_0) = 2$ as it comes from $\Phi(e_0) = I_2$. From the general matrix,
 
@@ -133,16 +133,16 @@ $$
 
 where $\mathrm{Tr}(\tilde{Q}_1\tilde{Q}_2)$ is the trace of the product of the matrices, $\mathrm{Tr}(\Phi(\tilde{Q}_1)\Phi(\tilde{Q}_2))$. This follows from $\mathrm{Tr}\,\Phi(\tilde{Q}) = 2Q_0$, the $\mathbb{C}$-linearity of $\Phi$ and the multiplicativity of the trace; the pairs drawn from $\mathbb{M}_+$ are the case in which the pairing is real. It is the form in which the operator articles use the identity, and in the quantum-information articles it is the Born rule, $p = \mathrm{Tr}(\tilde{P}\tilde{\rho})$.
 
-**The determinant is the norm form.** Expanding,
+**The determinant is the biquaternion norm.** Expanding,
 
 $$
 \det(\tilde{Q}) = (Q_0 - iQ_3)(Q_0 + iQ_3) - (-iQ_1 - Q_2)(-iQ_1 + Q_2)
 = (Q_0^2 + Q_3^2) - \big[(-iQ_1)^2 - Q_2^2\big] = Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2 = N(\tilde{Q}).
 $$
 
-This is the central fact of the representation. The norm form, defined algebraically as $\tilde{Q}\bar{\tilde{Q}}$, is the determinant of the corresponding matrix — not merely similar to it, but equal to it. Three consequences follow at once.
+This is the central fact of the representation. The biquaternion norm, defined algebraically as $\tilde{Q}\bar{\tilde{Q}}$, is the determinant of the corresponding matrix — not merely similar to it, but equal to it. Three consequences follow at once.
 
-**Invertibility.** A biquaternion is invertible exactly when its norm form is nonzero, because a matrix is invertible exactly when its determinant is. The algebraic inverse $\tilde{Q}^{-1} = \bar{\tilde{Q}}/N(\tilde{Q})$ is the matrix inverse, since for a $2\times 2$ matrix the adjugate is $\det(M)\,M^{-1}$.
+**Invertibility.** A biquaternion is invertible exactly when its biquaternion norm is nonzero, because a matrix is invertible exactly when its determinant is. The algebraic inverse $\tilde{Q}^{-1} = \bar{\tilde{Q}}/N(\tilde{Q})$ is the matrix inverse, since for a $2\times 2$ matrix the adjugate is $\det(M)\,M^{-1}$.
 
 **Multiplicativity.** $N(\tilde{Q}\tilde{R}) = N(\tilde{Q})N(\tilde{R})$ holds because the determinant is multiplicative. The algebraic proof of this identity is a computation in eight real components; in the matrix form it is one line, and this is the clearest illustration of what the representation buys.
 
@@ -205,13 +205,13 @@ $$
 = \begin{pmatrix} -i(z + iz') & -i(x + ix') - (y + iy') \\ -i(x + ix') + (y + iy') & i(z + iz') \end{pmatrix}, \qquad \mathrm{Tr}\,\Phi = 0 .
 $$
 
-Its image is exactly $\mathfrak{sl}(2,\mathbb{C})$, the traceless complex matrices, so the third split $\mathbb{B} = \mathbb{C}_{\mathbb{B}} \oplus \mathrm{Vect}(\mathbb{B})$ of the relations article reads here as the trace decomposition $M_2(\mathbb{C}) = \mathbb{C}\Phi(e_0) \oplus \mathfrak{sl}(2,\mathbb{C})$: scalar part against traceless part. It is the **anti-fixed space** of quaternion conjugation, the elements with $\bar{\tilde{Q}} = -\tilde{Q}$, whose fixed space is the center subspace above; equivalently it is the kernel of the scalar part. It is the only one of the six that is six-dimensional, being three-dimensional over $\mathbb{C}$. Under the commutator it is closed, $[\mathfrak{sl}_2,\mathfrak{sl}_2] \subseteq \mathfrak{sl}_2$, and indeed it is the derived subspace $[\mathbb{B},\mathbb{B}]$; under multiplication it is not — the product of two traceless matrices need not be traceless, since $\mathrm{Tr}(M^2) = -2\det M$. Its six real parameters are the two spatial blocks together,
+Its image is exactly $\mathrm{SL}(2,\mathbb{C})$, the traceless complex matrices, so the third split $\mathbb{B} = \mathbb{C}_{\mathbb{B}} \oplus \mathrm{Vect}(\mathbb{B})$ of the relations article reads here as the trace decomposition $M_2(\mathbb{C}) = \mathbb{C}\Phi(e_0) \oplus \mathrm{SL}(2,\mathbb{C})$: scalar part against traceless part. It is the **anti-fixed space** of quaternion conjugation, the elements with $\bar{\tilde{Q}} = -\tilde{Q}$, whose fixed space is the center subspace above; equivalently it is the kernel of the scalar part. It is the only one of the six that is six-dimensional, being three-dimensional over $\mathbb{C}$. Under the commutator it is closed, $[\mathrm{SL}_2,\mathrm{SL}_2] \subseteq \mathrm{SL}_2$, and indeed it is the derived subspace $[\mathbb{B},\mathbb{B}]$; under multiplication it is not — the product of two traceless matrices need not be traceless, since $\mathrm{Tr}(M^2) = -2\det M$. Its six real parameters are the two spatial blocks together,
 
 $$
 \tilde{Q} = q_1e_1 + q_2e_2 + q_3e_3 + q'_1(ie_1) + q'_2(ie_2) + q'_3(ie_3) = \mathbf{x} + i\mathbf{x}' ,
 $$
 
-so its real and imaginary parts are the material and the informational space block, $\mathrm{Vect}(\mathbb{B}) = X_{\mathrm{m}} \oplus X_{\mathrm{i}}$: it takes one spatial block from $\mathbb{M}_+$ and one from $\mathbb{M}_-$, the spatial counterpart of the center subspace's two temporal blocks. Reading its entries back off the traceless matrix returns the three complex coefficients $Q_k = q_k + iq'_k$, whose real and imaginary parts are the two spatial vectors. Its determinant is the norm form with the scalar term dropped, $\det = Q_1^2 + Q_2^2 + Q_3^2$.
+so its real and imaginary parts are the material and the informational space block, $\mathrm{Vect}(\mathbb{B}) = X_{\mathrm{m}} \oplus X_{\mathrm{i}}$: it takes one spatial block from $\mathbb{M}_+$ and one from $\mathbb{M}_-$, the spatial counterpart of the center subspace's two temporal blocks. Reading its entries back off the traceless matrix returns the three complex coefficients $Q_k = q_k + iq'_k$, whose real and imaginary parts are the two spatial vectors. Its determinant is the biquaternion norm with the scalar term dropped, $\det = Q_1^2 + Q_2^2 + Q_3^2$.
 
 ### The Quaternion Subspace $\mathbb{H}_{\mathbb{B}}$
 
@@ -243,7 +243,7 @@ $$
 \det = |z|^2 + |w|^2 = q_0^2 + q_1^2 + q_2^2 + q_3^2 ,
 $$
 
-a sum of squares, which vanishes only at the zero element. This is a four-**real**-dimensional set, not the four-dimensional complex space of all matrices with $z, w \in \mathbb{C}$, and on it the determinant is **definite** — which is the matrix reason $\mathbb{H}$ is a division algebra while $\mathbb{B}$ is not. Removing the complex coefficients from the algebra makes the norm form positive definite, and that is all that separates the two cases.
+a sum of squares, which vanishes only at the zero element. This is a four-**real**-dimensional set, not the four-dimensional complex space of all matrices with $z, w \in \mathbb{C}$, and on it the determinant is **definite** — which is the matrix reason $\mathbb{H}$ is a division algebra while $\mathbb{B}$ is not. Removing the complex coefficients from the algebra makes the biquaternion norm positive definite, and that is all that separates the two cases.
 
 ### The Antiquaternion Subspace $i\mathbb{H}_{\mathbb{B}}$
 
@@ -426,7 +426,7 @@ $$
 = \tfrac{1}{2}\big(\Phi(e_0) + \Phi(ie_1)\big)
 $$
 
-satisfies $\tilde{P}^2 = \tilde{P}$, has trace $1$ and determinant $0$: it is a rank-one projector, hence a pure state. Its complement $\tilde{P}_-(\hat{\mathbf{e}}_1) = \tfrac12(e_0 - ie_1)$ is the orthogonal projector, and $\tilde{P}_+(\hat{\mathbf{e}}_1) + \tilde{P}_-(\hat{\mathbf{e}}_1) = e_0$ is $\Phi(e_0)$. Both have vanishing norm form, which is the matrix way of saying that the rank-one idempotents of $\mathbb{M}_+$ live on the null cone: a pure state is a null element of the algebra. Note that not every idempotent of $\mathbb{M}_+$ is a state: the unit $e_0$ is idempotent, and its matrix $\Phi(e_0)$ has trace $2$ and determinant $1$, so it is the full-rank projector and does not lie on the null cone. This is the representation-theoretic content of *The Biquaternion Vacuum as a Minimal Idempotent*.
+satisfies $\tilde{P}^2 = \tilde{P}$, has trace $1$ and determinant $0$: it is a rank-one projector, hence a pure state. Its complement $\tilde{P}_-(\hat{\mathbf{e}}_1) = \tfrac12(e_0 - ie_1)$ is the orthogonal projector, and $\tilde{P}_+(\hat{\mathbf{e}}_1) + \tilde{P}_-(\hat{\mathbf{e}}_1) = e_0$ is $\Phi(e_0)$. Both have vanishing biquaternion norm, which is the matrix way of saying that the rank-one idempotents of $\mathbb{M}_+$ live on the null cone: a pure state is a null element of the algebra. Note that not every idempotent of $\mathbb{M}_+$ is a state: the unit $e_0$ is idempotent, and its matrix $\Phi(e_0)$ has trace $2$ and determinant $1$, so it is the full-rank projector and does not lie on the null cone. This is the representation-theoretic content of *The Biquaternion Vacuum as a Minimal Idempotent*.
 
 **The density matrix.** A general mixed state is
 
@@ -444,7 +444,7 @@ verified for all three components. The purity condition $\mathrm{Tr}(\rho^2) = 1
 
 ## The Groups
 
-The multiplicative group of the algebra has a matrix image with a standard name. An element of unit norm form, $N(\tilde{Q}) = e_0$, has
+The multiplicative group of the algebra has a matrix image with a standard name. An element of unit norm, $N(\tilde{Q}) = e_0$, has
 
 $$
 \det\Phi(\tilde{Q}) = 1,
@@ -464,13 +464,13 @@ $$
 
 and the boost rotors are the Hermitian unit-norm elements, which map to the Hermitian $\mathrm{SL}(2,\mathbb{C})$ matrices. The two cases are distinguished in the matrix form by Hermiticity, exactly as they are distinguished in the algebra by the split $\mathbb{M}_+ \oplus \mathbb{M}_-$.
 
-The advantage of the matrix form here is not computational but structural: writing a general unit-norm element as a rotation times a boost is the polar decomposition of its $\mathrm{SL}(2,\mathbb{C})$ matrix into a unitary factor and a positive Hermitian one, and the double cover $SU(2) \to SO(3)$ is the statement that $\pm M$ give the same rotation. In the algebra the double cover has to be argued from the norm form; in the matrix form it is visible, because $-\Phi(e_0)$ is a unit-norm element acting trivially on the material subspace.
+The advantage of the matrix form here is not computational but structural: writing a general unit-norm element as a rotation times a boost is the polar decomposition of its $\mathrm{SL}(2,\mathbb{C})$ matrix into a unitary factor and a positive Hermitian one, and the double cover $SU(2) \to SO(3)$ is the statement that $\pm M$ give the same rotation. In the algebra the double cover has to be argued from the biquaternion norm; in the matrix form it is visible, because $-\Phi(e_0)$ is a unit-norm element acting trivially on the material subspace.
 
 The identification is structural, and it is not the cheaper route to the numbers. Sangwine & Hitzer note that $\Phi(\tilde{Q})$ carries a four-fold redundancy — the $4\times4$ complex representation of a biquaternion is one of a special form, not an arbitrary complex matrix, and a general numerical polar decomposition of an arbitrary matrix need not preserve that form accurately over a series of computational steps — so the biquaternion algorithm needs less memory and fewer operations. Their algorithm also obtains the hyperbolic factor by dividing out the trigonometric factor, which is cheaper than forming the square root $\sqrt{\tilde{Q}\tilde{Q}^\dagger}$ used above to exhibit the identity and the Hermiticity: the square root is the proof that the factor exists, and the division is how it is computed.
 
 ## What the Matrix Form Makes Visible
 
-The representation is a change of coordinates, and its value is what the new coordinates make obvious. Collected: the scalar part is a trace; the norm form is a determinant; invertibility is nonzero determinant; the informational and material subspaces are the Hermitian and anti-Hermitian matrices; the observables are the Hermitian matrices generated by the images of the Hermitian units; the pure states are rank-one projectors on the null cone; the unit-norm group is $\mathrm{SL}(2,\mathbb{C})$; and the zero divisors are the singular matrices. Each of these is a theorem in the algebra and an inspection in the matrix form.
+The representation is a change of coordinates, and its value is what the new coordinates make obvious. Collected: the scalar part is a trace; the biquaternion norm is a determinant; invertibility is nonzero determinant; the informational and material subspaces are the Hermitian and anti-Hermitian matrices; the observables are the Hermitian matrices generated by the images of the Hermitian units; the pure states are rank-one projectors on the null cone; the unit-norm group is $\mathrm{SL}(2,\mathbb{C})$; and the zero divisors are the singular matrices. Each of these is a theorem in the algebra and an inspection in the matrix form.
 
 The limitation is equally clear. The matrix form is a representation of the **complexified** algebra: it uses $i$ in its entries, so it identifies $\mathbb{B}$ with $M_2(\mathbb{C})$ and does not, by itself, display the real structure that distinguishes the material subspace from the informational one. That structure — the choice of $\flat$, and the physical statement that $\mathbb{M}_-$ is the subspace where mass lives — is a choice of real form, and it is visible in the algebra and in the Hermitian/anti-Hermitian split, but not in the identification $\mathbb{B} \cong M_2(\mathbb{C})$ alone. The matrix form is the computational face of the algebra, not the whole of it.
 
@@ -479,12 +479,12 @@ The limitation is equally clear. The matrix form is a representation of the **co
 The matrix representation of the biquaternion algebra is the isomorphism $\Phi : \mathbb{B} \to M_2(\mathbb{C})$ given by $\Phi(e_0) = I_2$ and the three basis matrices asserted above, with $\Phi(i) = i\,\Phi(e_0)$ on the central scalar. The images of the Hermitian units, $\Phi(ie_k) = i\,\Phi(e_k)$, are the three Hermitian basis matrices named in the remark above.
 
 - The signs are forced: $e_k^2 = -e_0$ requires the factor $i$, and $e_1e_2 = +e_3$ requires the minus sign. Both are checked by multiplying the four basis matrices. The equivalent statement, that the images of the Hermitian elements are Hermitian, is why the Hermitian elements of the algebra are its observables.
-- The trace is twice the scalar part, $\mathrm{Tr}(\tilde{Q}) = 2Q_0$, and the determinant **is** the norm form, $\det(\tilde{Q}) = N(\tilde{Q}) = Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2$. Invertibility, multiplicativity of the norm, and the zero divisors as singular matrices all follow.
-- The subspaces of the algebra are the center subspace $\mathbb{C}_{\mathbb{B}}$, $Q_0e_0 \mapsto Q_0\Phi(e_0)$, the only one of the six of real dimension two; the vector subspace $\mathrm{Vect}(\mathbb{B})$, the traceless part, $Q_1e_1 + Q_2e_2 + Q_3e_3 \mapsto \mathfrak{sl}(2,\mathbb{C})$, the anti-fixed space of quaternion conjugation; the real-quaternion subspace $\mathbb{H}_{\mathbb{B}}$ (the matrices $\begin{pmatrix} z & w \\ -\bar{w} & \bar{z}\end{pmatrix}$ with $z = q_0 - iq_3$, $w = -iq_1 - q_2$, determinant $q_0^2 + q_1^2 + q_2^2 + q_3^2$ definite); the antiquaternion subspace $i\mathbb{H}_{\mathbb{B}}$ ($i$ times the quaternion matrices, determinant $-q'^2_0 - q'^2_1 - q'^2_2 - q'^2_3$, negative definite); the Hermitian subspace $\mathbb{M}_+$ (the informational subspace, $q_0e_0 + iq'_ke_k$ mapped to a Hermitian matrix, $\det = q_0^2 - q'^2_1 - q'^2_2 - q'^2_3 = c^2t'^2 - \mathbf{x}'^2$); and the anti-Hermitian subspace $\mathbb{M}_-$ (the material subspace, $iq'_0e_0 + q_ke_k$ mapped to $i$ times a Hermitian matrix, $\det = -q'^2_0 + q_1^2 + q_2^2 + q_3^2 = -c^2t^2 + \mathbf{x}^2$, the $ict$ interval). Every element splits into a Hermitian plus an anti-Hermitian part, $\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-$, with $\mathbb{M}_- = i\mathbb{M}_+$.
+- The trace is twice the scalar part, $\mathrm{Tr}(\tilde{Q}) = 2Q_0$, and the determinant **is** the biquaternion norm, $\det(\tilde{Q}) = N(\tilde{Q}) = Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2$. Invertibility, multiplicativity of the norm, and the zero divisors as singular matrices all follow.
+- The subspaces of the algebra are the center subspace $\mathbb{C}_{\mathbb{B}}$, $Q_0e_0 \mapsto Q_0\Phi(e_0)$, the only one of the six of real dimension two; the vector subspace $\mathrm{Vect}(\mathbb{B})$, the traceless part, $Q_1e_1 + Q_2e_2 + Q_3e_3 \mapsto \mathrm{SL}(2,\mathbb{C})$, the anti-fixed space of quaternion conjugation; the real-quaternion subspace $\mathbb{H}_{\mathbb{B}}$ (the matrices $\begin{pmatrix} z & w \\ -\bar{w} & \bar{z}\end{pmatrix}$ with $z = q_0 - iq_3$, $w = -iq_1 - q_2$, determinant $q_0^2 + q_1^2 + q_2^2 + q_3^2$ definite); the antiquaternion subspace $i\mathbb{H}_{\mathbb{B}}$ ($i$ times the quaternion matrices, determinant $-q'^2_0 - q'^2_1 - q'^2_2 - q'^2_3$, negative definite); the Hermitian subspace $\mathbb{M}_+$ (the informational subspace, $q_0e_0 + iq'_ke_k$ mapped to a Hermitian matrix, $\det = q_0^2 - q'^2_1 - q'^2_2 - q'^2_3 = c^2t'^2 - \mathbf{x}'^2$); and the anti-Hermitian subspace $\mathbb{M}_-$ (the material subspace, $iq'_0e_0 + q_ke_k$ mapped to $i$ times a Hermitian matrix, $\det = -q'^2_0 + q_1^2 + q_2^2 + q_3^2 = -c^2t^2 + \mathbf{x}^2$, the $ict$ interval). Every element splits into a Hermitian plus an anti-Hermitian part, $\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-$, with $\mathbb{M}_- = i\mathbb{M}_+$.
 - The minimal left ideals are the matrix **columns**: $\tilde\Pi_{1,2} = \tfrac12(e_0 \pm ie_3)$ map to $E_{11}$ and $E_{22}$, and $\mathbb{B} = \mathbb{B}\tilde\Pi_1 \oplus \mathbb{B}\tilde\Pi_2$ is the split into the two chiralities. Left multiplication preserves each column, while right multiplication by $\tilde{a}_{\mathrm{tr}} = \tfrac12(ie_1 - e_2) \mapsto E_{12}$ carries the first column onto the second — it annihilates the second — and that is why the mass term of the Dirac equation is a right multiplication. The algebra is simple, so these ideals are one-sided, not two-sided.
 - Quaternion conjugation is the adjugate $\epsilon M^{\mathsf T}\epsilon^{-1}$ and complex conjugation is $\epsilon\overline{M}\epsilon^{-1}$; both are dressed by the antisymmetric form $\epsilon = \Phi(-e_2)$. Hermitian conjugation is the conjugate transpose and $\flat = -\dagger$ is its negative, neither of them dressed. Entrywise conjugation of $M$ on its own is not the image of any involution of the algebra.
 - The physics is read off the matrices: $\tilde{S}_k = \tfrac{\hbar}{2}ie_k \mapsto \tfrac{\hbar}{2}\Phi(ie_k)$; the pure states are the rank-one projectors $\tilde{P}_\pm(\hat{\boldsymbol\mu})$ and are the null elements $N(\tilde{P}) = 0$; the density matrix $\rho = \tfrac12\big(\Phi(e_0) + r_k\Phi(ie_k)\big)$ has $r_k = \mathrm{Tr}\big(\rho\,\Phi(ie_k)\big)$ on the Bloch ball.
-- Unit norm form is unit determinant, so the unit-norm biquaternions are $\mathrm{SL}(2,\mathbb{C})$, with the rotations unitary and the boosts Hermitian.
+- Unit norm is unit determinant, so the unit-norm biquaternions are $\mathrm{SL}(2,\mathbb{C})$, with the rotations unitary and the boosts Hermitian.
 
 ## Summary of Notation
 
@@ -497,19 +497,19 @@ The matrix representation of the biquaternion algebra is the isomorphism $\Phi :
 | $\Phi(ie_k) = i\,\Phi(e_k)$ | Images of the Hermitian units: the three Hermitian basis matrices of the remark in *The Representation*, with $\Phi(ie_k)^2 = \Phi(e_0)$ |
 | $\tilde{Q} \mapsto \begin{pmatrix} Q_0 - iQ_3 & -iQ_1 - Q_2 \\ -iQ_1 + Q_2 & Q_0 + iQ_3\end{pmatrix}$ | Image of a general biquaternion |
 | $\mathrm{Tr}(\tilde{Q}) = 2Q_0$ | Trace is twice the scalar part |
-| $\det(\tilde{Q}) = N(\tilde{Q})$ | Determinant is the norm form |
+| $\det(\tilde{Q}) = N(\tilde{Q})$ | Determinant is the biquaternion norm |
 | $\bar{\tilde{Q}} \mapsto \mathrm{adj}\,M = \epsilon M^{\mathsf T}\epsilon^{-1}$ | Quaternion conjugation is the adjugate |
 | $\tilde{Q}^* \mapsto \epsilon\overline{M}\epsilon^{-1}$ | Complex conjugation, dressed by $\epsilon$ |
 | $\epsilon = \Phi(-e_2)$ | The antisymmetric form dressing bar and star |
 | $\tilde{Q}^\dagger \mapsto M^\dagger$ | Hermitian conjugation is the conjugate transpose |
 | $\tilde{Q}^\flat \mapsto -M^\dagger$ | Anti-Hermitian conjugation; the real structure |
 | $\mathbb{C}_{\mathbb{B}}$ | The center subspace: $Q_0e_0 \mapsto Q_0\Phi(e_0)$, the scalar matrices; parameters $q_0, q'_0$ with $q_0 = ct'$ and $q'_0 = ct$ |
-| $\mathrm{Vect}(\mathbb{B})$ | The vector subspace, the complement of the center subspace: $Q_1e_1 + Q_2e_2 + Q_3e_3 \mapsto \begin{pmatrix} -iQ_3 & -iQ_1-Q_2 \\ -iQ_1+Q_2 & iQ_3\end{pmatrix}$, the traceless matrices $\mathfrak{sl}(2,\mathbb{C})$; the anti-fixed space of quaternion conjugation, closed under the commutator and equal to the derived subspace $[\mathbb{B},\mathbb{B}]$ |
+| $\mathrm{Vect}(\mathbb{B})$ | The vector subspace, the complement of the center subspace: $Q_1e_1 + Q_2e_2 + Q_3e_3 \mapsto \begin{pmatrix} -iQ_3 & -iQ_1-Q_2 \\ -iQ_1+Q_2 & iQ_3\end{pmatrix}$, the traceless matrices $\mathrm{SL}(2,\mathbb{C})$; the anti-fixed space of quaternion conjugation, closed under the commutator and equal to the derived subspace $[\mathbb{B},\mathbb{B}]$ |
 | $\mathbb{H}_{\mathbb{B}}$ | The real-quaternion subspace: $q_0e_0 + \cdots + q_3e_3 \mapsto \begin{pmatrix} z & w \\ -\bar{w} & \bar{z}\end{pmatrix}$, $z = q_0 - iq_3$, $w = -iq_1 - q_2$, determinant $q_0^2 + q_1^2 + q_2^2 + q_3^2$ |
 | $i\mathbb{H}_{\mathbb{B}}$ | The antiquaternion subspace, the anti-fixed space of complex conjugation: $i$ times the real-quaternion image, $\begin{pmatrix} iz & iw \\ -i\bar{w} & i\bar{z}\end{pmatrix}$, determinant **negative** definite. With $\mathbb{H}_{\mathbb{B}}$ it gives $\mathbb{B} = \mathbb{H}_{\mathbb{B}} \oplus i\mathbb{H}_{\mathbb{B}}$, a split crossing the $\mathbb{M}_\pm$ split |
 | $\mathbb{M}_+$ | The informational subspace, the Hermitian one: $q_0e_0 + iq'_ke_k = (ct')\,e_0 + i\mathbf{x}'$, mapped to a Hermitian matrix, $\det = q_0^2 - q'^2_1 - q'^2_2 - q'^2_3 = c^2t'^2 - \mathbf{x}'^2$; parameters $q_0, q'_1, q'_2, q'_3$, with $q_0 = ct'$ |
 | $\mathbb{M}_-$ | The material subspace, the anti-Hermitian one: $iq'_0e_0 + q_ke_k = ict\,e_0 + \mathbf{x}$, mapped to $i$ times a Hermitian matrix, $\det = -q'^2_0 + q_1^2 + q_2^2 + q_3^2 = -c^2t^2 + \mathbf{x}^2$; parameters $q'_0, q_1, q_2, q_3$, with $q'_0 = ct$ |
-| $\mathbb{B} = \mathbb{C}_{\mathbb{B}} \oplus \mathrm{Vect}(\mathbb{B})$ | The trace decomposition $M_2(\mathbb{C}) = \mathbb{C}\Phi(e_0) \oplus \mathfrak{sl}(2,\mathbb{C})$: scalar part against traceless part |
+| $\mathbb{B} = \mathbb{C}_{\mathbb{B}} \oplus \mathrm{Vect}(\mathbb{B})$ | The trace decomposition $M_2(\mathbb{C}) = \mathbb{C}\Phi(e_0) \oplus \mathrm{SL}(2,\mathbb{C})$: scalar part against traceless part |
 | $\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-$ | Every element is a Hermitian part plus an anti-Hermitian part; $\mathbb{M}_- = i\mathbb{M}_+$ |
 | $\tilde\Pi_{1,2} = \tfrac12(e_0 \pm ie_3) = \tilde{P}_\pm(\hat{\mathbf{e}}_3)$ | Idempotents generating the two minimal left ideals; $\Phi(\tilde\Pi_{1,2}) = E_{11}, E_{22}$; the spinor-module articles write them $p$, $q$ |
 | $\tilde{P}_\pm(\hat{\boldsymbol\mu}) = \tfrac12(e_0 \pm i\hat{\boldsymbol\mu})$ | The rank-one idempotents of $\mathbb{M}_+$, i.e. the pure-state projectors: the idempotents with $N(\tilde{P}) = 0$ |
@@ -527,5 +527,5 @@ The matrix representation of the biquaternion algebra is the isomorphism $\Phi :
 - S. J. Sangwine, T. A. Ell, and N. Le Bihan, "Fundamental representations and algebraic properties of biquaternions or complexified quaternions," *Advances in Applied Clifford Algebras* **21** (2011) 607–636, for the representation theory and the conventions in use in applied work.
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the Pauli algebra, the relation $ie_k \leftrightarrow \sigma_k$, and the $\mathrm{SL}(2,\mathbb{C})$ description of the Lorentz group.
 - Bertfried Fauser, "On the equivalence of Daviau's space Clifford algebraic and Hestenes' geometric algebra formulations of physics," arXiv:hep-th/9908200, for the identification chain that places $\mathbb{H}\oplus\mathbb{H}$, the Pauli algebra and the biquaternions in the same isomorphism class.
-- *Relations Between Subspaces* (`articles_physics/relations-between-subspaces.md`), companion article, for the relations among the subspaces whose matrices are listed here — their coordinate blocks, intersections, spans, gradings and norm forms.
+- *Relations Between Subspaces* (`articles_physics/relations-between-subspaces.md`), companion article, for the relations among the subspaces whose matrices are listed here — their coordinate blocks, intersections, spans, gradings and biquaternion norms.
 - S. J. Sangwine and E. Hitzer, "Polar decomposition of complexified quaternions and octonions", *Advances in Applied Clifford Algebras* (2020), DOI 10.1007/s00006-020-1048-y; technical report CES-535, University of Essex (2019), for the identification of the biquaternion polar decomposition with the matrix polar decomposition of $M_2(\mathbb{C})$, and for the cost comparison in the section on the groups.

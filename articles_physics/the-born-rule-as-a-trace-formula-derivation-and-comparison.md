@@ -34,23 +34,23 @@ obtained from $\tilde{H}\tilde{K}=(h_0k_0+\mathbf{h}\cdot\mathbf{k})e_0+i(h_0\ma
 
 Two immediate consequences will be used repeatedly. First, the pairing is bilinear and symmetric: $\mathrm{Tr}(\tilde{H}\tilde{K})=\mathrm{Tr}(\tilde{K}\tilde{H})$, and expansion in the basis gives $\mathrm{Tr}((\alpha\tilde{H}+\beta\tilde{K})\tilde{L})=\alpha\,\mathrm{Tr}(\tilde{H}\tilde{L})+\beta\,\mathrm{Tr}(\tilde{K}\tilde{L})$. Second, it is positive definite, since $\mathrm{Tr}(\tilde{H}^2)=2(h_0^2+|\mathbf{h}|^2)\geq0$ with equality only for $\tilde{H}=0$; the trace pairing is therefore an inner product, not merely a symmetric form.
 
-Three properties single it out. **Invariance:** under unitary conjugation $\tilde{H}\mapsto\tilde{U}\tilde{H}\tilde{U}^\dagger$ the pairing is invariant; since the unit quaternions rotate $\mathbf{h}$ and fix $h_0$, an invariant symmetric bilinear form must be $\mathfrak{b}=A h_0k_0+B\,\mathbf{h}\cdot\mathbf{k}$, so invariance alone leaves two parameters. **Traciality:** requiring the pairing to come from the algebra's product, $\mathfrak{b}(\tilde{H},\tilde{K})=f(\tilde{H}\tilde{K})$ with $f$ tracial, forces $f$ to be a multiple of $\mathrm{Tr}$ and hence $A=B$; this is the condition that pins the form down. **Positivity:** $A,B>0$ makes the form positive-definite, capable of producing non-negative probabilities; the scale is fixed by $\mathrm{Tr}(e_0)=2$, though the scale cancels in probabilities, which are ratios. Thus the trace pairing is the unique symmetric pairing compatible with the associative product and positive — but traciality is a genuine assumption, not a consequence of symmetry.
+Three properties single it out. **Invariance:** under unitary conjugation $\tilde{H}\mapsto\tilde{U}\tilde{H}\tilde{U}^\dagger$ the pairing is invariant; since the unit quaternions rotate $\mathbf{h}$ and fix $h_0$, an invariant symmetric bilinear form must be $\mathrm{B}=A h_0k_0+B\,\mathbf{h}\cdot\mathbf{k}$, so invariance alone leaves two parameters. **Traciality:** requiring the pairing to come from the algebra's product, $\mathrm{B}(\tilde{H},\tilde{K})=f(\tilde{H}\tilde{K})$ with $f$ tracial, forces $f$ to be a multiple of $\mathrm{Tr}$ and hence $A=B$; this is the condition that pins the form down. **Positivity:** $A,B>0$ makes the form positive-definite, capable of producing non-negative probabilities; the scale is fixed by $\mathrm{Tr}(e_0)=2$, though the scale cancels in probabilities, which are ratios. Thus the trace pairing is the unique symmetric pairing compatible with the associative product and positive — but traciality is a genuine assumption, not a consequence of symmetry.
 
-### It Is Not the Norm Form
+### It Is Not the Biquaternion Norm
 
-The other natural quadratic form on $\mathbb{M}_+$ is the **norm form**
+The other natural quadratic form on $\mathbb{M}_+$ is the **biquaternion norm**
 
 $$
 N(\tilde{H})=\tilde{H}\bar{\tilde{H}}=(h_0^2-|\mathbf{h}|^2)e_0,
 $$
 
-of signature $(1,3)$, whose future light cone is the positivity cone. The state space is the trace-one slice of that cone; the Born rule is a statement about the trace pairing. Positivity of a state is a norm-form condition, while Born probabilities are trace-pairing quantities. The Born rule therefore does not follow from the light-cone structure of $\mathbb{M}_+$; it follows from the Euclidean trace pairing, a different form on the same space.
+of signature $(1,3)$, whose future light cone is the positivity cone. The state space is the trace-one slice of that cone; the Born rule is a statement about the trace pairing. Positivity of a state is a biquaternion-norm condition, while Born probabilities are trace-pairing quantities. The Born rule therefore does not follow from the light-cone structure of $\mathbb{M}_+$; it follows from the Euclidean trace pairing, a different form on the same space.
 
-The two forms are complementary, and the idempotents show it clearly. For $\tilde{P}_\pm(\hat{\boldsymbol{\mu}})$ one has $h_0=\tfrac12$ and $|\mathbf{h}|=\tfrac12$, so the norm form vanishes,
+The two forms are complementary, and the idempotents show it clearly. For $\tilde{P}_\pm(\hat{\boldsymbol{\mu}})$ one has $h_0=\tfrac12$ and $|\mathbf{h}|=\tfrac12$, so the biquaternion norm vanishes,
 $$
 N(\tilde{P}_\pm)=\tilde{P}_\pm\bar{\tilde{P}}_\pm=(h_0^2-|\mathbf{h}|^2)e_0=0,
 $$
-placing the idempotents on the boundary of the light cone, while the trace pairing gives $\mathrm{Tr}(\tilde{P}_\pm)=1$ and $\mathrm{Tr}(\tilde{P}_\pm^2)=1$. The idempotents are null for the norm form and unit for the trace pairing; probabilities are read from the second, not the first.
+placing the idempotents on the boundary of the light cone, while the trace pairing gives $\mathrm{Tr}(\tilde{P}_\pm)=1$ and $\mathrm{Tr}(\tilde{P}_\pm^2)=1$. The idempotents are null for the biquaternion norm and unit for the trace pairing; probabilities are read from the second, not the first.
 
 ## Idempotents as Projectors
 
@@ -124,7 +124,7 @@ so
 $$
 \langle\tilde{H}^2\rangle_{\tilde{\rho}}-\langle\tilde{H}\rangle_{\tilde{\rho}}^2=|\mathbf{h}|^2-(\mathbf{r}\cdot\mathbf{h})^2=|\mathbf{h}|^2\bigl(1-(\mathbf{r}\cdot\hat{\mathbf{h}})^2\bigr)\geq0,
 $$
-vanishing precisely when $\mathbf{r}=\pm\hat{\mathbf{h}}$, i.e. when the state is an eigenstate of the observable. This is a nontrivial check that the statistical content is carried by the trace pairing and not by the norm form.
+vanishing precisely when $\mathbf{r}=\pm\hat{\mathbf{h}}$, i.e. when the state is an eigenstate of the observable. This is a nontrivial check that the statistical content is carried by the trace pairing and not by the biquaternion norm.
 
 Three algebraic properties make the pairing a probability assignment. **Reality:** for $\tilde{H},\tilde{K}\in\mathbb{M}_+$, $\mathrm{Sc}(\tilde{H}\tilde{K})=h_0k_0+\mathbf{h}\cdot\mathbf{k}\in\mathbb{R}$, so the pairing is real without conjugation. **Positivity:** if $\tilde{P}\geq0$ and $\tilde{\rho}\geq0$ then $\mathrm{Tr}(\tilde{P}\tilde{\rho})\geq0$, since under $\varphi$ this is $A,B\geq0\Rightarrow\mathrm{tr}(AB)=\mathrm{tr}(\sqrt{A}B\sqrt{A})\geq0$; with $|\mathbf{r}|\leq1$ it also gives $p_+\leq1$. **Normalization:** by completeness and traciality,
 
@@ -193,12 +193,12 @@ The comparison is for a single qubit, $\mathbb{B}\cong M_2(\mathbb{C})$. The ext
 
 ## Non-Uniqueness of the Trace
 
-On $M_n(\mathbb{C})$ the functionals satisfying $f(XY)=f(YX)$ form a one-dimensional space spanned by the trace. Hence on $\mathbb{B}\cong M_2(\mathbb{C})$ every tracial functional is $f=\lambda\mathrm{Tr}$, and every symmetric pairing $\mathfrak{b}(\tilde{H},\tilde{K})=f(\tilde{H}\tilde{K})$ with $f$ tracial is a multiple of the trace pairing. The normalization $\mathrm{Tr}(e_0)=2$ fixes $\lambda=1$; the normalized alternative $\tfrac12\mathrm{Tr}=\mathrm{Sc}$ sends $e_0\mapsto1$. Either gives the same probabilities, since the scale cancels in $p_i=\mathrm{Tr}(\tilde{E}_i\tilde{\rho})/\mathrm{Tr}(\tilde{\rho})$ with $\mathrm{Tr}(\tilde{\rho})=1$.
+On $M_n(\mathbb{C})$ the functionals satisfying $f(XY)=f(YX)$ form a one-dimensional space spanned by the trace. Hence on $\mathbb{B}\cong M_2(\mathbb{C})$ every tracial functional is $f=\lambda\mathrm{Tr}$, and every symmetric pairing $\mathrm{B}(\tilde{H},\tilde{K})=f(\tilde{H}\tilde{K})$ with $f$ tracial is a multiple of the trace pairing. The normalization $\mathrm{Tr}(e_0)=2$ fixes $\lambda=1$; the normalized alternative $\tfrac12\mathrm{Tr}=\mathrm{Sc}$ sends $e_0\mapsto1$. Either gives the same probabilities, since the scale cancels in $p_i=\mathrm{Tr}(\tilde{E}_i\tilde{\rho})/\mathrm{Tr}(\tilde{\rho})$ with $\mathrm{Tr}(\tilde{\rho})=1$.
 
 Uniqueness fails as soon as traciality is dropped. Keeping symmetry, invariance, and positivity leaves
 
 $$
-\mathfrak{b}(\tilde{H},\tilde{K})=A\,h_0k_0+B\,\mathbf{h}\cdot\mathbf{k},\qquad A,B>0,
+\mathrm{B}(\tilde{H},\tilde{K})=A\,h_0k_0+B\,\mathbf{h}\cdot\mathbf{k},\qquad A,B>0,
 $$
 
 a genuine two-parameter family; traciality is the extra condition $A=B$. Keeping positivity and normalization but dropping traciality, the normalized positive functionals on $\mathbb{M}_+$ are exactly the states: for every $\mathbf{u}\in\mathbb{R}^3$ with $|\mathbf{u}|\leq1$,
@@ -221,7 +221,7 @@ There is a further uniqueness question: is the trace form the only probability m
 
 ## Summary
 
-The Born rule in the biquaternion framework is the trace formula $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$. On $\mathbb{M}_+$ the trace pairing $\mathrm{Tr}(\tilde{H}\tilde{K})=2(h_0k_0+\mathbf{h}\cdot\mathbf{k})$ is the Euclidean positive-definite pairing of signature $(4,0)$, distinct from the Lorentzian norm form $N(\tilde{H})=h_0^2-|\mathbf{h}|^2$ whose future cone cuts out the state space. It is natural because it is the product's trace: among symmetric invariant positive pairings it is the tracial one.
+The Born rule in the biquaternion framework is the trace formula $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$. On $\mathbb{M}_+$ the trace pairing $\mathrm{Tr}(\tilde{H}\tilde{K})=2(h_0k_0+\mathbf{h}\cdot\mathbf{k})$ is the Euclidean positive-definite pairing of signature $(4,0)$, distinct from the Lorentzian biquaternion norm $N(\tilde{H})=h_0^2-|\mathbf{h}|^2$ whose future cone cuts out the state space. It is natural because it is the product's trace: among symmetric invariant positive pairings it is the tracial one.
 
 Under $\varphi:\mathbb{B}\to M_2(\mathbb{C})$ the idempotents map to rank-one projectors, states to density matrices, and $\mathrm{tr}\circ\varphi=\mathrm{Tr}$. The probability $p_+=\mathrm{Tr}(\tilde{P}_+(\hat{\mathbf{h}})\tilde{\rho})=\tfrac12(1+\hat{\mathbf{h}}\cdot\mathbf{r})$ is real, in $[0,1]$, and normalized, all as consequences of the algebra. General measurements are effects $\tilde{E}=ae_0+i\mathbf{w}$ with $|\mathbf{w}|\leq\min(a,1-a)$; POVMs are families of effects summing to $e_0$; the probabilities are $a_i+\mathbf{w}_i\cdot\mathbf{r}$, as the unsharp and trine examples show.
 
@@ -239,7 +239,7 @@ The comparison with the standard statement is exact, because $\mathbb{B}\cong M_
 | $\tilde{H} = h_0 e_0 + i\mathbf{h}$ | General Hermitian element |
 | $\mathrm{Tr}(\tilde{H}) = 2\,\mathrm{Sc}(\tilde{H}) = 2h_0$ | Trace |
 | $\mathrm{Tr}(\tilde{H}\tilde{K}) = 2(h_0k_0 + \mathbf{h}\cdot\mathbf{k})$ | Trace pairing, signature $(4,0)$ |
-| $N(\tilde{H}) = \tilde{H}\bar{\tilde{H}} = (h_0^2 - |\mathbf{h}|^2)e_0$ | Norm form, signature $(1,3)$ |
+| $N(\tilde{H}) = \tilde{H}\bar{\tilde{H}} = (h_0^2 - |\mathbf{h}|^2)e_0$ | Biquaternion norm, signature $(1,3)$ |
 | $\tilde{\rho} = \tfrac{1}{2}(e_0 + i\mathbf{r})$, $|\mathbf{r}|\leq 1$ | State; Bloch vector $\mathbf{r}$ |
 | $\tilde{P}_\pm(\hat{\boldsymbol{\mu}}) = \tfrac{1}{2}(e_0 \pm i\hat{\boldsymbol{\mu}})$, $|\hat{\boldsymbol{\mu}}|=1$ | Idempotent (pure state, rank-one projector) |
 | $\tilde{E} = a e_0 + i\mathbf{w}$, $|\mathbf{w}|\leq\min(a,1-a)$ | Effect |

@@ -20,7 +20,7 @@ $$
 \tilde{Q} = Q_0 e_0 + \mathbf{Q}, \qquad \mathbf{Q} = Q_1 e_1 + Q_2 e_2 + Q_3 e_3.
 $$
 
-The scalar imaginary is $i$, which commutes with the quaternion units. The quaternion conjugate is $\bar{\tilde{Q}} = Q_0 e_0 - \mathbf{Q}$, and the norm form is $N(\tilde{Q}) = \tilde{Q} \bar{\tilde{Q}}$.
+The scalar imaginary is $i$, which commutes with the quaternion units. The quaternion conjugate is $\bar{\tilde{Q}} = Q_0 e_0 - \mathbf{Q}$, and the biquaternion norm is $N(\tilde{Q}) = \tilde{Q} \bar{\tilde{Q}}$.
 
 **Notation.** To avoid collision with the standard basis $\{e_0, e_1, e_2, e_3\}$ and with the scalar imaginary $i$, the root of $-1$ used in the Fourier kernel is denoted $\rho$ throughout. This is a local convention; the roots themselves are the objects classified in the division theory article.
 
@@ -126,7 +126,7 @@ $$
 \lim_{|\omega| \to \infty} \|F(\omega)\|_E = 0.
 $$
 
-**Proof.** The kernel is bounded and the integrand is integrable. The standard proof for the complex Fourier transform applies component-wise, and the result follows from the component-wise statement. $\square$
+**Proof.** The kernel is bounded and the integrand is integrable. The standard proof for the complex Fourier transform applies component-wise, and the result follows from the component-wise statement.
 
 ### The Inversion Theorem
 
@@ -136,7 +136,7 @@ $$
 f(t) = \int_{-\infty}^{\infty} \overline{W(t, \omega)} F(\omega) \, d\omega.
 $$
 
-**Proof.** The proof follows the standard proof of the inversion theorem for the complex Fourier transform, applied component-wise in the basis $\{e_0, \rho, \nu, \xi\}$ introduced below. The key step is the approximation of the identity by a sequence of Gaussian kernels, and the result follows from the corresponding statement for the complex transform. $\square$
+**Proof.** The proof follows the standard proof of the inversion theorem for the complex Fourier transform, applied component-wise in the basis $\{e_0, \rho, \nu, \xi\}$ introduced below. The key step is the approximation of the identity by a sequence of Gaussian kernels, and the result follows from the corresponding statement for the complex transform.
 
 ### The Plancherel Theorem
 
@@ -146,7 +146,7 @@ $$
 \int_{-\infty}^{\infty} \|f(t)\|_E^2 \, dt = \int_{-\infty}^{\infty} \|F(\omega)\|_E^2 \, d\omega.
 $$
 
-**Proof.** The proof follows the standard proof of the Plancherel theorem, using the factorization into complex transforms established below. Since the factorization is an isometry on each complex component, the total norm is preserved. $\square$
+**Proof.** The proof follows the standard proof of the Plancherel theorem, using the factorization into complex transforms established below. Since the factorization is an isometry on each complex component, the total norm is preserved.
 
 **Corollary (Parseval).** For $f, g \in L^2(\mathbb{R}, \mathbb{B})$,
 
@@ -294,8 +294,6 @@ $$
 \mathcal{F}[f * g](\omega) = \int_{-\infty}^{\infty} W(\tau, \omega) f(\tau) \, d\tau \cdot \int_{-\infty}^{\infty} W(s, \omega) g(s) \, ds = \mathcal{F}[f](\omega) \cdot \mathcal{F}[g](\omega).
 $$
 
-$\square$
-
 **Corollary (right-kernel case).** For the transform with the kernel on the right,
 
 $$
@@ -374,7 +372,7 @@ This is the same principle as in the complex and quaternion cases, and it is the
 
 ### Functions of Vanishing Norm
 
-A function $f : \mathbb{R} \to \mathbb{B}$ may take values of vanishing norm form on a set of positive measure. On such a set, the values are zero divisors, and the transform may not be invertible.
+A function $f : \mathbb{R} \to \mathbb{B}$ may take values of vanishing norm on a set of positive measure. On such a set, the values are zero divisors, and the transform may not be invertible.
 
 More precisely, if $f(t)$ is a zero divisor for some $t$, then there exists a nonzero biquaternion $\tilde{Z}(t)$ with $f(t) \circ \tilde{Z}(t) = 0$ or $\tilde{Z}(t) \circ f(t) = 0$. The kernel is invertible, so the product $W(t, \omega) f(t)$ is also a zero divisor, and the integral over $t$ may or may not preserve the information of $f(t)$.
 
@@ -387,11 +385,11 @@ More precisely, if $f(t)$ is a zero divisor for some $t$, then there exists a no
 
 The vanishing-norm issue is a genuinely biquaternionic feature. It does not arise in the complex or quaternion Fourier transforms, because the complex and quaternion algebras are division algebras. The biquaternion algebra is not a division algebra, and this is reflected in the harmonic analysis.
 
-The issue can be avoided by restricting to functions whose values lie in a subspace where the norm form is nonzero, such as the quaternion subspace $\mathbb{H}_{\mathbb{B}}$. On $\mathbb{H}_{\mathbb{B}}$, every nonzero value is invertible, and the transform is invertible on all functions. On the anti-Hermitian subspace $\mathbb{M}_-$, the functions with vanishing norm lie on a cone, and the transform is invertible only for functions whose values lie off the cone.
+The issue can be avoided by restricting to functions whose values lie in a subspace where the biquaternion norm is nonzero, such as the quaternion subspace $\mathbb{H}_{\mathbb{B}}$. On $\mathbb{H}_{\mathbb{B}}$, every nonzero value is invertible, and the transform is invertible on all functions. On the anti-Hermitian subspace $\mathbb{M}_-$, the functions with vanishing norm lie on a cone, and the transform is invertible only for functions whose values lie off the cone.
 
 ### The Open Question
 
-The precise condition under which the transform is invertible on a function that takes zero-divisor values on a set of positive measure is not known. It depends on the cancellations in the integral $\int W(t, \omega) f(t) \, dt$, and it is not determined by the norms of the values alone. This is one of the open questions listed below.
+The precise condition under which the transform is invertible on a function that takes zero-divisor values on a set of positive measure is not known. It depends on the cancellations in the integral $\int W(t, \omega) f(t) \, dt$, and it is not determined by the biquaternion norms of the values alone. This is one of the open questions listed below.
 
 ## The Relation to the Discrete Transform
 
@@ -433,7 +431,6 @@ where the sinc function is the ordinary real sinc, and the convergence is in the
 
 6. **The Clifford algebra framework.** How does the biquaternion continuous Fourier transform fit into the general theory of Clifford algebra Fourier transforms?
 
-
 ## Summary
 
 The continuous biquaternion Fourier transform is defined by the kernel $W(t, \omega) = \exp(-2\pi \rho \omega t)$, where $\rho$ is a root of $-1$ in $\mathbb{B}$. The choice of root determines the nature of the transform: the scalar imaginary gives the ordinary complex transform, the unit pure real quaternions give the quaternion transform, and the non-trivial roots give genuinely biquaternionic transforms.
@@ -457,7 +454,7 @@ The continuous transform is the limit of the discrete transform as the sampling 
 | $\rho$ | Root of $-1$ in $\mathbb{B}$ fixing the transform; a local notation, not the scalar imaginary $i$ |
 | $\omega$ | Frequency variable, $\omega \in \mathbb{R}$ |
 | $\mathbf{Q} = Q_1 e_1 + Q_2 e_2 + Q_3 e_3$ | Vector part of a biquaternion |
-| $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$ | Norm form; it vanishes on the zero divisors |
+| $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$ | Biquaternion norm; it vanishes on the zero divisors |
 | $\tilde{\nabla}$ | Biquaternionic gradient on a four-dimensional subspace |
 | $\Box = \partial_0^2 + \Delta$ | d'Alembertian, the scalar part of $\tilde{\nabla}\bar{\tilde{\nabla}}$ |
 | $\tilde{D} = \bar{\tilde{U}}\tilde{\nabla}$ | Convective derivative with velocity $\tilde{U}$ |

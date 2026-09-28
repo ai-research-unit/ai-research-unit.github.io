@@ -91,7 +91,7 @@ The geometries of constant curvature are the models of the comparison, and the E
 | Euclidean space $\mathbb{R}^n$ | constant curvature $0$, the flat model | *Curvature and Geodesics*; *Euclidean Geometry* |
 | hyperbolic space $\mathbf{H}^n_r$ | constant curvature $-1/r^2$, the negative model | *Curvature and Geodesics*; *Hyperbolic Geometry* |
 | a space form | a complete connected manifold of constant curvature, a quotient of a model | *Riemannian Geometry* |
-| a homogeneous metric | a $G$-invariant metric on $G/H$, determined on $\mathfrak{m}$ | *Homogeneous Spaces* |
+| a homogeneous metric | a $G$-invariant metric on $G/H$, determined on $\mathrm{M}$ | *Homogeneous Spaces* |
 | a normal homogeneous space | a homogeneous metric from the Killing form, with Nomizu's curvature formula | *Homogeneous Spaces* |
 | a symmetric space with its invariant metric | the metric with $\nabla R = 0$ | *Symmetric Spaces* |
 | an Einstein metric | $\operatorname{Ric} = \lambda g$, with $\lambda = S/n$ | *Riemannian Geometry* |
@@ -134,7 +134,7 @@ A catalogue denotes its objects by name rather than by symbol. The symbols that 
 | $J$, $\operatorname{Hol}_p$ | Jacobi field, holonomy group |
 | $S^n_r$, $\mathbf{H}^n_r$, $\mathbb{R}^n$ | Model spaces of constant curvature |
 | $\operatorname{Isom}(M,g)$ | Isometry group, a Lie group by Myers–Steenrod |
-| $\mathfrak{m}$ | The isotropy complement of $\mathfrak{h}$ in $\mathfrak{g}$ |
+| $\mathrm{M}$ | The isotropy complement of $\mathrm{H}$ in $\mathrm{G}$ |
 
 ## Further Reading
 

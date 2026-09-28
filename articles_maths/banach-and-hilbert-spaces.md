@@ -55,11 +55,11 @@ $$
 \|x\|^2=|\alpha|^2\|y\|^2+\|z\|^2 \ge |\alpha|^2\|y\|^2=\frac{|\langle x,y\rangle|^2}{\|y\|^2},
 $$
 
-which is the inequality; equality forces $z=0$, so $x=\alpha y$. $\square$
+which is the inequality; equality forces $z=0$, so $x=\alpha y$.
 
 **Corollary.** The induced norm satisfies the triangle inequality, so $\|\cdot\|$ is a norm, and the inner product is continuous in each argument with respect to it.
 
-*Proof.* $\|x+y\|^2=\|x\|^2+2\operatorname{Re}\langle x,y\rangle+\|y\|^2 \le \|x\|^2+2\|x\|\|y\|+\|y\|^2=(\|x\|+\|y\|)^2$. $\square$
+*Proof.* $\|x+y\|^2=\|x\|^2+2\operatorname{Re}\langle x,y\rangle+\|y\|^2 \le \|x\|^2+2\|x\|\|y\|+\|y\|^2=(\|x\|+\|y\|)^2$.
 
 ### The Parallelogram Law
 
@@ -69,11 +69,11 @@ $$
 \|x+y\|^2+\|x-y\|^2=2\|x\|^2+2\|y\|^2 .
 $$
 
-*Proof.* Expand both squares and add: the cross terms cancel. $\square$
+*Proof.* Expand both squares and add: the cross terms cancel.
 
 **Theorem (Jordan–von Neumann).** A norm $\|\cdot\|$ on a $\mathbb{K}$-vector space arises from an inner product if and only if it satisfies the parallelogram law; the inner product is then given by the polarisation identity.
 
-*Proof.* Necessity is the proposition. For sufficiency, define $\langle x,y\rangle$ by the polarisation identity and verify additivity and homogeneity; the parallelogram law is exactly the identity needed to prove $\langle x,y+z\rangle=\langle x,y\rangle+\langle x,z\rangle$, and the remaining properties follow from the norm axioms. $\square$
+*Proof.* Necessity is the proposition. For sufficiency, define $\langle x,y\rangle$ by the polarisation identity and verify additivity and homogeneity; the parallelogram law is exactly the identity needed to prove $\langle x,y+z\rangle=\langle x,y\rangle+\langle x,z\rangle$, and the remaining properties follow from the norm axioms.
 
 The parallelogram law therefore characterises the inner-product norms among all norms, and this is the source of many non-Hilbert Banach spaces: $\ell^p$ for $p \neq 2$ and $C(K)$ for $K$ with more than one point fail the law, so they carry no inner product inducing their norms.
 
@@ -105,7 +105,7 @@ $$
 \|c_m-c_n\|^2=2\|x-c_m\|^2+2\|x-c_n\|^2-4\|x-\tfrac12(c_m+c_n)\|^2 \le 2\|x-c_m\|^2+2\|x-c_n\|^2-4d^2,
 $$
 
-and the right-hand side tends to $0$, so $c_n$ is Cauchy; completeness gives a limit $p \in C$, which is a nearest point, and uniqueness follows from the same inequality. For a subspace $M$, if $p$ is the nearest point of $M$ to $x$ and $m \in M$, then minimising $t \mapsto \|x-p-tm\|^2$ over $t$ gives $\operatorname{Re}\langle x-p,m\rangle=0$ and, replacing $m$ by $im$ over $\mathbb{C}$, $\langle x-p,m\rangle=0$. So $q=x-p \perp M$, and $H=M+M^{\perp}$ with $M \cap M^{\perp}=0$. $\square$
+and the right-hand side tends to $0$, so $c_n$ is Cauchy; completeness gives a limit $p \in C$, which is a nearest point, and uniqueness follows from the same inequality. For a subspace $M$, if $p$ is the nearest point of $M$ to $x$ and $m \in M$, then minimising $t \mapsto \|x-p-tm\|^2$ over $t$ gives $\operatorname{Re}\langle x-p,m\rangle=0$ and, replacing $m$ by $im$ over $\mathbb{C}$, $\langle x-p,m\rangle=0$. So $q=x-p \perp M$, and $H=M+M^{\perp}$ with $M \cap M^{\perp}=0$.
 
 **Corollary.** $(M^{\perp})^{\perp}=\overline{M}$ for any subspace $M$, and $M$ is dense in $H$ if and only if $M^{\perp}=0$.
 
@@ -121,11 +121,11 @@ $$
 
 and only countably many terms are nonzero.
 
-*Proof.* Every finite subfamily gives $\|x-\sum\langle x,e_\alpha\rangle e_\alpha\|^2=\|x\|^2-\sum|\langle x,e_\alpha\rangle|^2 \ge 0$, using orthonormality; the general case follows by taking suprema. For the countability, if the set $\{\alpha:|\langle x,e_\alpha\rangle|>1/n\}$ were infinite for some $n$, a finite subfamily of it would already make the sum of squares exceed $\|x\|^2$; each such set is therefore finite, and their union over $n \ge 1$ is the countable set of indices with $\langle x,e_\alpha\rangle \neq 0$. $\square$
+*Proof.* Every finite subfamily gives $\|x-\sum\langle x,e_\alpha\rangle e_\alpha\|^2=\|x\|^2-\sum|\langle x,e_\alpha\rangle|^2 \ge 0$, using orthonormality; the general case follows by taking suprema. For the countability, if the set $\{\alpha:|\langle x,e_\alpha\rangle|>1/n\}$ were infinite for some $n$, a finite subfamily of it would already make the sum of squares exceed $\|x\|^2$; each such set is therefore finite, and their union over $n \ge 1$ is the countable set of indices with $\langle x,e_\alpha\rangle \neq 0$.
 
 **Theorem (Parseval and bases).** For an orthonormal set $\{e_\alpha\}$ the following are equivalent: (i) it is complete; (ii) $x=\sum_\alpha\langle x,e_\alpha\rangle e_\alpha$ for every $x$; (iii) $\|x\|^2=\sum_\alpha|\langle x,e_\alpha\rangle|^2$ for every $x$. Every Hilbert space has an orthonormal basis, and it is separable if and only if it has a countable one, in which case the basis is a Schauder basis and every orthonormal basis is countably infinite or finite.
 
-*Proof.* The equivalence is the finite-subfamily identity in the limit, since (ii) and (iii) are its two sides in the sense of convergence. Existence: Zorn's lemma applied to the orthonormal sets ordered by inclusion gives a maximal one; a maximal orthonormal set is complete, because a vector orthogonal to all of it can be normalised and added. Separability follows from the density of the rational finite linear combinations of a countable basis. $\square$
+*Proof.* The equivalence is the finite-subfamily identity in the limit, since (ii) and (iii) are its two sides in the sense of convergence. Existence: Zorn's lemma applied to the orthonormal sets ordered by inclusion gives a maximal one; a maximal orthonormal set is complete, because a vector orthogonal to all of it can be normalised and added. Separability follows from the density of the rational finite linear combinations of a countable basis.
 
 ### The Classification of Separable Hilbert Spaces
 
@@ -133,7 +133,7 @@ Orthonormal bases make the Hilbert-space axioms concrete: the coordinates in a b
 
 **Theorem (Riesz–Fischer).** For a set $A$ let $\ell^2(A)=\{(x_\alpha)_{\alpha \in A}:\sum_\alpha|x_\alpha|^2<\infty\}$, with $\langle x,y\rangle=\sum_\alpha x_\alpha\overline{y_\alpha}$. Then $\ell^2(A)$ is a Hilbert space.
 
-*Proof.* The sum defining the inner product converges absolutely by Cauchy–Schwarz applied to finite partial sums, so the form is defined and the norm axioms hold. For completeness, let $(x^{(n)})$ be Cauchy. Each coordinate converges, since $|x^{(n)}_\alpha-x^{(m)}_\alpha| \le \|x^{(n)}-x^{(m)}\|$, giving $x=(x_\alpha)$; for a finite set $F \subseteq A$ one has $\sum_{\alpha \in F}|x_\alpha|^2=\lim_n\sum_{\alpha \in F}|x^{(n)}_\alpha|^2 \le \sup_n\|x^{(n)}\|^2<\infty$, so $x \in \ell^2(A)$, and letting $F$ grow and $n,m$ tend to infinity in $\sum_{\alpha \in F}|x^{(n)}_\alpha-x^{(m)}_\alpha|^2 \le \varepsilon^2$ gives $\|x-x^{(n)}\| \to 0$. $\square$
+*Proof.* The sum defining the inner product converges absolutely by Cauchy–Schwarz applied to finite partial sums, so the form is defined and the norm axioms hold. For completeness, let $(x^{(n)})$ be Cauchy. Each coordinate converges, since $|x^{(n)}_\alpha-x^{(m)}_\alpha| \le \|x^{(n)}-x^{(m)}\|$, giving $x=(x_\alpha)$; for a finite set $F \subseteq A$ one has $\sum_{\alpha \in F}|x_\alpha|^2=\lim_n\sum_{\alpha \in F}|x^{(n)}_\alpha|^2 \le \sup_n\|x^{(n)}\|^2<\infty$, so $x \in \ell^2(A)$, and letting $F$ grow and $n,m$ tend to infinity in $\sum_{\alpha \in F}|x^{(n)}_\alpha-x^{(m)}_\alpha|^2 \le \varepsilon^2$ gives $\|x-x^{(n)}\| \to 0$.
 
 **Theorem.** For an orthonormal set $\{e_\alpha\}_{\alpha \in A}$ in a Hilbert space $H$ the map
 
@@ -143,11 +143,11 @@ $$
 
 is a linear isometry onto the closed span of $\{e_\alpha\}$; it is onto $H$ exactly when the set is an orthonormal basis.
 
-*Proof.* The finite partial sums of $\sum_\alpha x_\alpha e_\alpha$ satisfy $\|\sum_{\alpha \in F}x_\alpha e_\alpha\|^2=\sum_{\alpha \in F}|x_\alpha|^2$ by orthonormality, so they are Cauchy and $\Lambda$ is defined, linear and isometric by the completeness of $\ell^2(A)$; being isometric it is injective, and its image is closed and contains every $e_\alpha$, hence contains the closed span. If the set is complete then the closed span is $H$; conversely if $\Lambda$ is onto and $x \perp e_\alpha$ for every $\alpha$, then $x=\Lambda(y)$ with $\langle y,\delta_\beta\rangle=\langle x,e_\beta\rangle=0$ for every $\beta$, so $y=0$ and $x=0$. $\square$
+*Proof.* The finite partial sums of $\sum_\alpha x_\alpha e_\alpha$ satisfy $\|\sum_{\alpha \in F}x_\alpha e_\alpha\|^2=\sum_{\alpha \in F}|x_\alpha|^2$ by orthonormality, so they are Cauchy and $\Lambda$ is defined, linear and isometric by the completeness of $\ell^2(A)$; being isometric it is injective, and its image is closed and contains every $e_\alpha$, hence contains the closed span. If the set is complete then the closed span is $H$; conversely if $\Lambda$ is onto and $x \perp e_\alpha$ for every $\alpha$, then $x=\Lambda(y)$ with $\langle y,\delta_\beta\rangle=\langle x,e_\beta\rangle=0$ for every $\beta$, so $y=0$ and $x=0$.
 
 **Theorem (classification).** Two Hilbert spaces are isometrically isomorphic if and only if they have orthonormal bases of the same cardinality. In particular every separable infinite-dimensional Hilbert space is isometrically isomorphic to $\ell^2$, and every $n$-dimensional one to $\mathbb{K}^n$.
 
-*Proof.* An isometry carries an orthonormal basis to an orthonormal basis and preserves cardinality. Conversely, if $\{e_\alpha\}_{\alpha \in A}$ and $\{f_\alpha\}_{\alpha \in A}$ are orthonormal bases indexed by the same set, the maps $\Lambda$ and $\Lambda'$ of the previous theorem are isometries onto the two spaces, and $\Lambda' \circ \Lambda^{-1}$ is an isometric isomorphism. A separable space has a countable orthonormal basis, which is finite, giving $\mathbb{K}^n$, or countably infinite, giving $\ell^2=\ell^2(\mathbb{N})$. $\square$
+*Proof.* An isometry carries an orthonormal basis to an orthonormal basis and preserves cardinality. Conversely, if $\{e_\alpha\}_{\alpha \in A}$ and $\{f_\alpha\}_{\alpha \in A}$ are orthonormal bases indexed by the same set, the maps $\Lambda$ and $\Lambda'$ of the previous theorem are isometries onto the two spaces, and $\Lambda' \circ \Lambda^{-1}$ is an isometric isomorphism. A separable space has a countable orthonormal basis, which is finite, giving $\mathbb{K}^n$, or countably infinite, giving $\ell^2=\ell^2(\mathbb{N})$.
 
 The cardinality of an orthonormal basis is therefore a complete invariant of a Hilbert space, called its **Hilbert dimension**; for a separable space it is finite or $\aleph_0$ and no other invariant is needed, so every Hilbert space is $\ell^2(A)$ for a suitable $A$ up to isometric isomorphism.
 
@@ -161,7 +161,7 @@ $$
 
 **Proposition.** The adjoint exists, is bounded with $\|T^*\|=\|T\|$, and $(T+S)^*=T^*+S^*$, $(\lambda T)^*=\bar\lambda T^*$, $(TS)^*=S^*T^*$, $T^{**}=T$.
 
-*Proof.* For fixed $y$ the map $x \mapsto \langle Tx,y\rangle$ is a bounded linear functional, so by the Riesz representation theorem below there is a unique $T^*y$ with $\langle Tx,y\rangle=\langle x,T^*y\rangle$; the map $y \mapsto T^*y$ is linear and $\|T^*y\|=\sup_{\|x\|\le1}|\langle Tx,y\rangle| \le \|T\|\|y\|$, so $\|T^*\|\le\|T\|$, and applying this to $T^*$ with $T^{**}=T$ gives equality. The algebraic identities are direct from the defining relation. $\square$
+*Proof.* For fixed $y$ the map $x \mapsto \langle Tx,y\rangle$ is a bounded linear functional, so by the Riesz representation theorem below there is a unique $T^*y$ with $\langle Tx,y\rangle=\langle x,T^*y\rangle$; the map $y \mapsto T^*y$ is linear and $\|T^*y\|=\sup_{\|x\|\le1}|\langle Tx,y\rangle| \le \|T\|\|y\|$, so $\|T^*\|\le\|T\|$, and applying this to $T^*$ with $T^{**}=T$ gives equality. The algebraic identities are direct from the defining relation.
 
 **Definition.** $T$ is **self-adjoint** if $T^*=T$, **normal** if $TT^*=T^*T$, **unitary** if $T^*T=TT^*=I$, and a **projection** if $T^2=T=T^*$. The **resolvent set** of $T$ is the set of $\lambda$ with $T-\lambda I$ invertible with bounded inverse, the **spectrum** $\sigma(T)$ its complement, and the **spectral radius** is $\rho(T)=\sup_{\lambda \in \sigma(T)}|\lambda|=\lim\|T^n\|^{1/n}$.
 
@@ -175,7 +175,7 @@ $$
 |\operatorname{Im}\lambda|\,\|x\|^2 \le |\langle(T-\lambda)x,x\rangle| \le \|(T-\lambda)x\|\,\|x\| , \qquad \text{so} \qquad |\operatorname{Im}\lambda|\,\|x\| \le \|(T-\lambda)x\| .
 $$
 
-If $\operatorname{Im}\lambda \neq 0$ then $T-\lambda I$ is injective with closed range, and its adjoint $T-\bar\lambda I$ satisfies the same estimate with $\operatorname{Im}\bar\lambda=-\operatorname{Im}\lambda \neq 0$, so $\ker(T-\bar\lambda I)=0$ and the range of $T-\lambda I$, being the orthogonal complement of that kernel, is dense as well; hence $T-\lambda I$ is invertible with bounded inverse and $\lambda \notin \sigma(T)$. Therefore $\sigma(T) \subseteq \mathbb{R}$. The norm formula and the positivity criterion for self-adjoint operators are standard consequences of the spectral theorem below. $\square$
+If $\operatorname{Im}\lambda \neq 0$ then $T-\lambda I$ is injective with closed range, and its adjoint $T-\bar\lambda I$ satisfies the same estimate with $\operatorname{Im}\bar\lambda=-\operatorname{Im}\lambda \neq 0$, so $\ker(T-\bar\lambda I)=0$ and the range of $T-\lambda I$, being the orthogonal complement of that kernel, is dense as well; hence $T-\lambda I$ is invertible with bounded inverse and $\lambda \notin \sigma(T)$. Therefore $\sigma(T) \subseteq \mathbb{R}$. The norm formula and the positivity criterion for self-adjoint operators are standard consequences of the spectral theorem below.
 
 ## The Riesz Representation Theorem
 
@@ -185,7 +185,7 @@ $$
 \varphi(x)=\langle x,y\rangle \quad \text{for all } x \in H, \qquad \text{and then} \qquad \|\varphi\|=\|y\| .
 $$
 
-*Proof.* If $\varphi=0$ take $y=0$. Otherwise $M=\ker\varphi$ is a closed subspace of codimension $1$, so $M^{\perp}$ is one-dimensional, spanned by a unit vector $e$. Then $\varphi(e) \neq 0$, and $y=\overline{\varphi(e)}\,e$ satisfies $\varphi(x)=\langle x,y\rangle$ for all $x$: both sides vanish on $M$ and agree on $e$. Uniqueness: $\langle x,y-y'\rangle=0$ for all $x$ forces $y=y'$. The norm identity follows from Cauchy–Schwarz with equality. $\square$
+*Proof.* If $\varphi=0$ take $y=0$. Otherwise $M=\ker\varphi$ is a closed subspace of codimension $1$, so $M^{\perp}$ is one-dimensional, spanned by a unit vector $e$. Then $\varphi(e) \neq 0$, and $y=\overline{\varphi(e)}\,e$ satisfies $\varphi(x)=\langle x,y\rangle$ for all $x$: both sides vanish on $M$ and agree on $e$. Uniqueness: $\langle x,y-y'\rangle=0$ for all $x$ forces $y=y'$. The norm identity follows from Cauchy–Schwarz with equality.
 
 **Corollary.** The map $y \mapsto \langle\cdot,y\rangle$ is a conjugate-linear isometric bijection $H \to H^*$, so $H$ is reflexive and $H^*$ is again a Hilbert space with $\langle \varphi,\psi\rangle=\langle y_\varphi,y_\psi\rangle$. In particular a Hilbert space is its own dual up to the conjugate-linear identification, a property false for a general Banach space.
 
@@ -203,7 +203,7 @@ and for every bounded measurable function $f$ on $\sigma(T)$ the operator $f(T)=
 
 **Theorem (spectral theorem, normal case).** A bounded operator $T$ on a complex Hilbert space is normal if and only if there is a spectral measure $E$ supported on the compact subset $\sigma(T) \subseteq \mathbb{C}$ with $T=\int \lambda\,dE(\lambda)$. Equivalently, $T$ is unitarily equivalent to multiplication by the identity function on a direct sum of spaces $L^2(\sigma(T),\mu_j)$.
 
-*Proof.* Both theorems are quoted as standard. The self-adjoint case follows from the continuous functional calculus, built by approximating continuous functions on $\sigma(T)$ by polynomials in $T$ and completing; the normal case reduces to the self-adjoint case through the real and imaginary parts and the *commuting* operators $T+T^*$ and $(T-T^*)/i$. $\square$
+*Proof.* Both theorems are quoted as standard. The self-adjoint case follows from the continuous functional calculus, built by approximating continuous functions on $\sigma(T)$ by polynomials in $T$ and completing; the normal case reduces to the self-adjoint case through the real and imaginary parts and the *commuting* operators $T+T^*$ and $(T-T^*)/i$.
 
 **Corollary (finite-dimensional case).** In finite dimension the spectral measure is atomic, its atoms are the eigenspaces, and the theorem is the statement that a self-adjoint operator has an orthonormal basis of eigenvectors with real eigenvalues, and a normal operator one with complex eigenvalues. This is the orthogonal diagonalisation of the article on eigenvalues and diagonalisation, and the spectral theorem is its infinite-dimensional extension.
 
@@ -225,7 +225,7 @@ $$
 
 the series converging in operator norm; the nonzero eigenvalues have no accumulation point except $0$.
 
-*Proof.* Quoted as standard. The key point is that a nonzero spectral value must be an eigenvalue by the spectral theorem and the compactness, which forbids a continuous part of the spectrum away from $0$. $\square$
+*Proof.* Quoted as standard. The key point is that a nonzero spectral value must be an eigenvalue by the spectral theorem and the compactness, which forbids a continuous part of the spectrum away from $0$.
 
 **Theorem (Fredholm alternative).** Let $K$ be compact and consider the equation $x-Kx=y$. Then:
 
@@ -235,7 +235,7 @@ the series converging in operator norm; the nonzero eigenvalues have no accumula
 
 (iii) if $\ker(I-K)=0$ then $I-K$ is invertible with bounded inverse.
 
-*Proof.* Quoted as standard; it is the Riesz–Schauder theory, and the self-adjoint case follows from the spectral theorem above by expanding in the orthonormal eigenbasis. $\square$
+*Proof.* Quoted as standard; it is the Riesz–Schauder theory, and the self-adjoint case follows from the spectral theorem above by expanding in the orthonormal eigenbasis.
 
 **Example.** Integral operators with square-integrable kernel on $L^2[0,1]$ are compact, so the Fredholm alternative applies to integral equations $f(x)-\int_0^1k(x,t)f(t)\,dt=g(x)$; in contrast the identity on an infinite-dimensional Hilbert space is bounded and not compact, and its spectrum is the single eigenvalue $1$ of infinite multiplicity, so the finite-multiplicity conclusion of the compact theory fails for it.
 

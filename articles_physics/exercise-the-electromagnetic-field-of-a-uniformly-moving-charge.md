@@ -10,7 +10,7 @@ $$
 \qquad
 \bar{\tilde{\nabla}} = e_0\,\partial_{ict} - e_1\partial_x - e_2\partial_y - e_3\partial_z,
 $$
-with $\partial_{ict} = -\frac{i}{c}\partial_t$ and $\Box = \tilde{\nabla}\bar{\tilde{\nabla}} = \partial_{ict}^2 + \Delta$; the field-strength biquaternion $\tilde{F} = i\sqrt{\epsilon}\,\mathbf{E} - \sqrt{\mu}\,\mathbf{H}$ (pure vector), the potential $\tilde{A} = \frac{i\phi}{c}e_0 + \mathbf{A}$, and the source $\tilde{R} = \frac{i\rho}{\sqrt{\epsilon}}e_0 + \sqrt{\mu}\,\mathbf{J}$ (here $\rho$ is the charge density, not a distance). The permittivity and permeability $\epsilon,\mu$ with $c = 1/\sqrt{\epsilon\mu}$, and $\mathbf{H} = \mathbf{B}/\mu$. The norm form $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$, the quaternion conjugate $\bar{\tilde{Q}}$, and the trace formula $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ of the shared notation. No object of the informational sector arises below, so $\mathbb{M}_+$, the rotors, and the trace formula are recorded but the trace formula is not used; the boost rotor is invoked only in Problem 5.
+with $\partial_{ict} = -\frac{i}{c}\partial_t$ and $\Box = \tilde{\nabla}\bar{\tilde{\nabla}} = \partial_{ict}^2 + \Delta$; the field-strength biquaternion $\tilde{F} = i\sqrt{\epsilon}\,\mathbf{E} - \sqrt{\mu}\,\mathbf{H}$ (pure vector), the potential $\tilde{A} = \frac{i\phi}{c}e_0 + \mathbf{A}$, and the source $\tilde{R} = \frac{i\rho}{\sqrt{\epsilon}}e_0 + \sqrt{\mu}\,\mathbf{J}$ (here $\rho$ is the charge density, not a distance). The permittivity and permeability $\epsilon,\mu$ with $c = 1/\sqrt{\epsilon\mu}$, and $\mathbf{H} = \mathbf{B}/\mu$. The biquaternion norm $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$, the quaternion conjugate $\bar{\tilde{Q}}$, and the trace formula $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ of the shared notation. No object of the informational sector arises below, so $\mathbb{M}_+$, the rotors, and the trace formula are recorded but the trace formula is not used; the boost rotor is invoked only in Problem 5.
 
 **What is inherited from the parent.** The charge $q$ moves on the worldline $\mathbf{x}_q(t)$ with coordinate velocity $\mathbf{v}(t)$ and $\boldsymbol{\beta} = \mathbf{v}/c$. The retarded time is defined implicitly by
 $$
@@ -328,7 +328,7 @@ which is exactly the closed form of Problem 2. The magnetic field carried back b
 
 ## Problem 6: Independent Checks, the Present-Position Fallacy, and the Invariants
 
-**Statement.** (a) Verify the closed form on two independent cases. (b) Quantify the present-position fallacy by comparing the true field with the Coulomb field of the present position and with the Coulomb field of the retarded position. (c) Evaluate the invariants $I_1, I_2$, the norm form, and $\tilde{F}^2$, and state what they imply about radiation.
+**Statement.** (a) Verify the closed form on two independent cases. (b) Quantify the present-position fallacy by comparing the true field with the Coulomb field of the present position and with the Coulomb field of the retarded position. (c) Evaluate the invariants $I_1, I_2$, the biquaternion norm, and $\tilde{F}^2$, and state what they imply about radiation.
 
 **Solution (a).** The two cases of Problems 3 and 4 are logically independent. The non-relativistic limit returns Coulomb with an $O(\beta^2)$ anisotropic correction and is insensitive to the $\gamma$-dependent factor that dominates at high speed; the ultrarelativistic transverse-plane value $|\mathbf{E}| = \gamma q/(4\pi\epsilon d_\perp^2)$ is not accessible from the static theory by any limit and does not follow from Problem 3. Both are reproduced by the closed form exactly, and a third independent check — the rotor boost of Problem 5, which uses the biquaternion algebra rather than the Liénard–Wiechert formula — agrees as well. None of the checks is the configuration that suggested the formula: the closed form was obtained by eliminating $\mathbf{R}$ from the parent's formula, a route that could have produced the wrong present-position dependence while still passing the Coulomb limit.
 
@@ -423,7 +423,7 @@ Two things are recorded rather than closed. The first is a clarification: "purel
 | $I_1 = \mathbf{E}^2-c^2\mathbf{B}^2$, $I_2 = \mathbf{E}\cdot\mathbf{B}$ | Field invariants |
 | $\tilde{\Lambda}_{\mathbf{u}} = \cosh\frac{\psi_u}{2}+i\sinh\frac{\psi_u}{2}\hat{\mathbf{u}}$, $\tanh\psi_u = u/c$ | Boost rotor; carries the lab to the frame moving with $+\mathbf{u}$ |
 | $\tilde{F}' = \bar{\tilde{\Lambda}}_{\mathbf{u}}\tilde{F}\tilde{\Lambda}_{\mathbf{u}}$ | Boost of the field (similarity, not rotor conjugation) |
-| $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$ | Norm form |
+| $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$ | Biquaternion norm |
 | $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ | Trace formula (recorded, not used) |
 
 ## Further Reading
@@ -431,7 +431,7 @@ Two things are recorded rather than closed. The first is a clarification: "purel
 The further reading of this exercise is the parent and companion articles of this series, all present in `articles_physics/`; the standard textbook references for the Liénard–Wiechert field and its uniform-motion specialization are listed in the Further Reading sections of the parent and the theory article.
 
 - *Introduction to the Biquaternion Universe* — the algebra, the two sectors, and the local complex structure.
-- *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector* — the four-vectors, the norm form, and the zero-divisor cone on which the retarded separation sits.
+- *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector* — the four-vectors, the biquaternion norm, and the zero-divisor cone on which the retarded separation sits.
 - *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector* — the Hermitian sector, the conjugation action, and the trace formula.
 - *Maxwell's Equations in the Biquaternionic Formulation* — the gradient, the field strength, the potential and source, and the retarded solution.
 - *The Field-Strength Biquaternion and Its Invariants* — the invariants $I_1,I_2$ and the null/zero-divisor characterization of radiation used in Problem 6.

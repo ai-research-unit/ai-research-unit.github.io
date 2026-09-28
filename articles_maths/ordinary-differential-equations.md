@@ -35,7 +35,7 @@ $$
 y(t) = y_0 + \int_{t_0}^{t} f(s, y(s))\, ds \qquad (t \in J).
 $$
 
-*Proof.* If $y$ solves the initial-value problem, the fundamental theorem of calculus applied to each side gives the integral equation, the integral of a continuous $X$-valued map being defined by the Bochner integral of *Measure Theory and Integration*, or componentwise in the finite-dimensional case. Conversely, if the integral equation holds, the right side is differentiable with derivative $f(t,y(t))$ by continuity of $f$ and of $y$, and the value at $t_0$ is $y_0$. $\square$
+*Proof.* If $y$ solves the initial-value problem, the fundamental theorem of calculus applied to each side gives the integral equation, the integral of a continuous $X$-valued map being defined by the Bochner integral of *Measure Theory and Integration*, or componentwise in the finite-dimensional case. Conversely, if the integral equation holds, the right side is differentiable with derivative $f(t,y(t))$ by continuity of $f$ and of $y$, and the value at $t_0$ is $y_0$.
 
 The proposition is the reason the existence theorem is a fixed-point theorem: it replaces differentiation, which loses information on a merely continuous map, by integration, which improves it.
 
@@ -63,7 +63,7 @@ $$
 \|T(y)(t) - T(z)(t)\| \le \Bigl|\int_{t_0}^{t}\|f(s,y(s)) - f(s,z(s))\|\,ds\Bigr| \le L|t-t_0|\,\|y-z\|_\infty \le \tfrac12\|y-z\|_\infty ,
 $$
 
-so $T$ is a contraction of constant $\tfrac12$. By the contraction mapping principle $T$ has a unique fixed point in $\mathcal{C}$, and by the integral equation this fixed point is exactly the solution. $\square$
+so $T$ is a contraction of constant $\tfrac12$. By the contraction mapping principle $T$ has a unique fixed point in $\mathcal{C}$, and by the integral equation this fixed point is exactly the solution.
 
 The contraction mapping principle is quoted here as the standard completeness argument of the theory of metric and complete spaces; it is the same statement as the one used for the inverse function theorem in the differential calculus on normed spaces.
 
@@ -71,7 +71,7 @@ The contraction mapping principle is quoted here as the standard completeness ar
 
 **Theorem (Peano).** If $f$ is continuous on a neighbourhood of $(t_0,y_0)$ and bounded there, the initial-value problem has at least one solution on some interval about $t_0$. The Lipschitz hypothesis is not needed for existence, only for uniqueness.
 
-*Proof.* Quoted as standard (Peano's theorem). The proof uses the Arzelà–Ascoli theorem: the Euler polygons are an equicontinuous family taking values in a compact set, so a subsequence converges uniformly, and the limit solves the integral equation. $\square$
+*Proof.* Quoted as standard (Peano's theorem). The proof uses the Arzelà–Ascoli theorem: the Euler polygons are an equicontinuous family taking values in a compact set, so a subsequence converges uniformly, and the limit solves the integral equation.
 
 **Example (non-uniqueness).** For $y' = \sqrt{|y|}$ with $y(0) = 0$ the map $f(y) = \sqrt{|y|}$ is continuous and not Lipschitz at $0$. Besides $y \equiv 0$, the family
 
@@ -87,11 +87,11 @@ solves the problem for every $c \ge 0$, so the solution is not unique; this is p
 
 **Theorem (maximal interval).** Let $f : I \times X \to X$ be continuous and locally Lipschitz in its second variable. Then every initial-value problem has a maximal solution, its maximal interval $J$ is open, and if $J = (\alpha, \beta)$ is a proper subinterval of $I$ then $y(t)$ leaves every compact subset of $X$ as $t \to \alpha^+$ or $t \to \beta^-$.
 
-*Proof.* The solutions form a directed family under extension and their union over a chain is a solution, so Zorn's lemma produces a maximal one; alternatively the union of the local solutions constructed at successive points of the interval is a solution, and the maximal interval is open because local existence holds at every interior point. If a compact $K \subseteq X$ contained $y(t_n)$ for a sequence $t_n \to \beta^-$, then by compactness a subsequence would converge to some $y^*$; the local solution through $(\beta, y^*)$ would extend the solution past $\beta$, contradicting maximality. $\square$
+*Proof.* The solutions form a directed family under extension and their union over a chain is a solution, so Zorn's lemma produces a maximal one; alternatively the union of the local solutions constructed at successive points of the interval is a solution, and the maximal interval is open because local existence holds at every interior point. If a compact $K \subseteq X$ contained $y(t_n)$ for a sequence $t_n \to \beta^-$, then by compactness a subsequence would converge to some $y^*$; the local solution through $(\beta, y^*)$ would extend the solution past $\beta$, contradicting maximality.
 
 **Corollary.** If the maximal interval is bounded above by $\beta < \infty$ and yet $y$ is bounded on $[t_0,\beta)$, then $f$ cannot be bounded and uniformly Lipschitz on the strip $[t_0,\beta)\times X$, and the solution has no limit in $X$ at $\beta$: it **blows up** in finite time.
 
-*Proof.* If $\|y\|\le R$ on $[t_0,\beta)$ and $f$ is bounded by $M$ and Lipschitz with constant $L$ on the strip, the argument of Picard–Lindelöf with a uniform step size extends the solution beyond $\beta$, a contradiction. Blow-up rather than escape to the boundary of $X$ is therefore the only possibility when $X$ is finite-dimensional. $\square$
+*Proof.* If $\|y\|\le R$ on $[t_0,\beta)$ and $f$ is bounded by $M$ and Lipschitz with constant $L$ on the strip, the argument of Picard–Lindelöf with a uniform step size extends the solution beyond $\beta$, a contradiction. Blow-up rather than escape to the boundary of $X$ is therefore the only possibility when $X$ is finite-dimensional.
 
 **Example.** For $y' = y^2$ with $y(0) = 1$ the solution is $y(t) = 1/(1-t)$ on $(-\infty,1)$, whose maximal interval is bounded above by $1$, and $|y(t)| \to \infty$ as $t \to 1^-$.
 
@@ -109,7 +109,7 @@ $$
 u(t) \le a\,\exp\Bigl(\int_{t_0}^{t}\beta(s)\,ds\Bigr) .
 $$
 
-*Proof.* Put $v(t) = a + \int_{t_0}^t \beta u$; then $v \ge u \ge 0$ and $v'(t) = \beta(t)u(t) \le \beta(t)v(t)$, so $(v(t)e^{-\int_{t_0}^{t}\beta})' \le 0$, and integrating gives $v(t) \le v(t_0)e^{\int_{t_0}^{t}\beta} = a\,e^{\int_{t_0}^{t}\beta}$. $\square$
+*Proof.* Put $v(t) = a + \int_{t_0}^t \beta u$; then $v \ge u \ge 0$ and $v'(t) = \beta(t)u(t) \le \beta(t)v(t)$, so $(v(t)e^{-\int_{t_0}^{t}\beta})' \le 0$, and integrating gives $v(t) \le v(t_0)e^{\int_{t_0}^{t}\beta} = a\,e^{\int_{t_0}^{t}\beta}$.
 
 **Theorem (continuous dependence).** Let $f : I \times X \to X$ be continuous and Lipschitz with constant $L$ in its second variable, and let $y, z$ be solutions of $y' = f(t,y)$ with $y(t_0) = y_0$, $z(t_0) = z_0$ on a common interval $[t_0,t_1]$. Then
 
@@ -117,7 +117,7 @@ $$
 \|y(t) - z(t)\| \le \|y_0 - z_0\|\,e^{L(t-t_0)} \qquad (t \in [t_0,t_1]).
 $$
 
-*Proof.* Subtracting the integral equations and applying the Lipschitz condition gives $u(t) \le \|y_0-z_0\| + L\int_{t_0}^t u(s)\,ds$ for $u = \|y-z\|$; Gronwall gives the estimate. $\square$
+*Proof.* Subtracting the integral equations and applying the Lipschitz condition gives $u(t) \le \|y_0-z_0\| + L\int_{t_0}^t u(s)\,ds$ for $u = \|y-z\|$; Gronwall gives the estimate.
 
 **Corollary (uniqueness).** Two solutions with the same initial datum agree on the intersection of their intervals, so the maximal solution is unique. In particular the **flow** $\varphi_t(y_0) = y(t)$ of an autonomous equation is well defined wherever it exists, and $\varphi_{t+s} = \varphi_t \circ \varphi_s$ on the common domain of definition.
 
@@ -133,7 +133,7 @@ $$
 
 on the Banach space $X^n$, under the correspondence $Y = (y, y', \dots, y^{(n-1)})$.
 
-*Proof.* If $y$ is $n$ times differentiable then $Y$ is differentiable with the displayed derivative; conversely a solution $Y$ of the system has $Y_k = Y_{k-1}'$ for $k \ge 1$, so $Y_0$ is $n$ times differentiable and satisfies the equation. $\square$
+*Proof.* If $y$ is $n$ times differentiable then $Y$ is differentiable with the displayed derivative; conversely a solution $Y$ of the system has $Y_k = Y_{k-1}'$ for $k \ge 1$, so $Y_0$ is $n$ times differentiable and satisfies the equation.
 
 Consequently the existence, uniqueness, maximal-interval and continuous-dependence theorems proved for the first-order equation apply to the order-$n$ equation with no change; only the norm on $X^n$ has to be chosen, and any of the usual equivalent product norms serves.
 
@@ -165,7 +165,7 @@ The convergence and the algebraic properties used below are those of the exponen
 
 **(d)** $\|e^{tA}\| \le e^{|t|\,\|A\|}$, and $\|e^{tA} - I\| \le |t|\|A\|e^{|t|\|A\|}$.
 
-*Proof.* (a) and (b) are the elementary properties of the exponential series in a Banach algebra. For (c), the difference quotient for the series term by term gives $\frac{1}{h}(e^{(t+h)A} - e^{tA}) = e^{tA}\frac{1}{h}(e^{hA}-I)$, and $\frac{1}{h}(e^{hA}-I) \to A$ as $h \to 0$ by the estimate in (d). (d) is the triangle inequality applied to the series. $\square$
+*Proof.* (a) and (b) are the elementary properties of the exponential series in a Banach algebra. For (c), the difference quotient for the series term by term gives $\frac{1}{h}(e^{(t+h)A} - e^{tA}) = e^{tA}\frac{1}{h}(e^{hA}-I)$, and $\frac{1}{h}(e^{hA}-I) \to A$ as $h \to 0$ by the estimate in (d). (d) is the triangle inequality applied to the series.
 
 ### The Fundamental Matrix and Variation of Constants
 
@@ -177,7 +177,7 @@ $$
 
 **Theorem.** For every $t_0 \in I$ the fundamental matrix exists on all of $I$, is unique, and is invertible for every $t$; when $A$ is constant, $\Phi(t) = e^{(t-t_0)A}$ and $\Phi$ is a one-parameter group.
 
-*Proof.* The columns of $\Phi$ are the solutions of the initial-value problems with initial data a basis of $X$, and the Picard–Lindelöf theorem gives them locally; the operator $\Phi(t)$ is invertible because $\Phi(t)\Phi(t)^{-1}$ solves the same linear equation as the identity, so if a solution of $y'=A(t)y$ vanished at one point it would vanish identically, and $\det\Phi \neq 0$ follows in finite dimension; equivalently $\Psi(t) = \Phi(t)^{-1}$ solves $\Psi' = -\Psi A(t)$ and a solution with $\Psi(t_0)=I$ exists on all of $I$ by the same theorem. The invertibility in general follows from the identity $\det \Phi(t) = \exp(\int_{t_0}^t \operatorname{tr}A(s)\,ds)$ in finite dimension, and from the group property when $A$ is constant. $\square$
+*Proof.* The columns of $\Phi$ are the solutions of the initial-value problems with initial data a basis of $X$, and the Picard–Lindelöf theorem gives them locally; the operator $\Phi(t)$ is invertible because $\Phi(t)\Phi(t)^{-1}$ solves the same linear equation as the identity, so if a solution of $y'=A(t)y$ vanished at one point it would vanish identically, and $\det\Phi \neq 0$ follows in finite dimension; equivalently $\Psi(t) = \Phi(t)^{-1}$ solves $\Psi' = -\Psi A(t)$ and a solution with $\Psi(t_0)=I$ exists on all of $I$ by the same theorem. The invertibility in general follows from the identity $\det \Phi(t) = \exp(\int_{t_0}^t \operatorname{tr}A(s)\,ds)$ in finite dimension, and from the group property when $A$ is constant.
 
 **Theorem (variation of constants).** The solution of the inhomogeneous linear system $y' = A(t)y + b(t)$ with $y(t_0) = y_0$ is
 
@@ -185,7 +185,7 @@ $$
 y(t) = \Phi(t)y_0 + \int_{t_0}^{t}\Phi(t)\Phi(s)^{-1}b(s)\,ds .
 $$
 
-*Proof.* Write $y(t) = \Phi(t)u(t)$; the product rule and $\Phi' = A\Phi$ give $\Phi u' = b$, so $u' = \Phi^{-1}b$ and $u(t) = y_0 + \int_{t_0}^t \Phi(s)^{-1}b(s)\,ds$. $\square$
+*Proof.* Write $y(t) = \Phi(t)u(t)$; the product rule and $\Phi' = A\Phi$ give $\Phi u' = b$, so $u' = \Phi^{-1}b$ and $u(t) = y_0 + \int_{t_0}^t \Phi(s)^{-1}b(s)\,ds$.
 
 When $A$ is constant the formula reads $y(t) = e^{(t-t_0)A}y_0 + \int_{t_0}^{t}e^{(t-s)A}b(s)\,ds$, the second term being the superposition of the responses to impulses at times $s$, which is the interpretation of the exponential as the kernel of the solution operator.
 
@@ -203,11 +203,11 @@ $$
 
 so every entry of $e^{tA}$ is a finite sum of terms $t^k e^{\lambda t}$ with $\lambda$ an eigenvalue and $0 \le k < n$.
 
-*Proof.* Since $\lambda I$ and $N$ commute, $e^{tJ} = e^{\lambda t I}e^{tN}$, and the second factor is the finite sum because $N^m=0$. $\square$
+*Proof.* Since $\lambda I$ and $N$ commute, $e^{tJ} = e^{\lambda t I}e^{tN}$, and the second factor is the finite sum because $N^m=0$.
 
 **Corollary (scalar equation).** For the scalar equation $y^{(n)} + a_{n-1}y^{(n-1)} + \cdots + a_0 y = 0$ with characteristic polynomial $p(\lambda) = \lambda^n + a_{n-1}\lambda^{n-1} + \cdots + a_0$, the solution space is $n$-dimensional and spanned by the functions $t^k e^{\lambda t}$ over the roots $\lambda$ of $p$ and the powers $0 \le k < $ multiplicity of $\lambda$. The solution is stable — bounded for all $t \ge 0$ — exactly when every root has $\operatorname{Re}\lambda \le 0$ and every root with $\operatorname{Re}\lambda = 0$ is simple.
 
-*Proof.* The reduction to a first-order system has companion matrix whose characteristic polynomial is $p$, and the previous theorem describes $e^{tA}$; boundedness follows from the display, and the converse from the occurrence of $t^k$ with $k \ge 1$ at a repeated eigenvalue on the imaginary axis. $\square$
+*Proof.* The reduction to a first-order system has companion matrix whose characteristic polynomial is $p$, and the previous theorem describes $e^{tA}$; boundedness follows from the display, and the converse from the occurrence of $t^k$ with $k \ge 1$ at a repeated eigenvalue on the imaginary axis.
 
 **Example.** For $y'' + y = 0$ the roots of $\lambda^2+1$ are $\pm i$, and the solutions are $c_1\cos t + c_2\sin t$. For $y'' - y = 0$ the roots are $\pm1$ and the solutions are $c_1e^{t}+c_2e^{-t}$; the first is stable and the second is not, which the eigenvalues already show.
 
@@ -229,7 +229,7 @@ $$
 
 with $P$ $T$-periodic and invertible and $B$ a constant matrix, the **monodromy logarithm**; $B$ is determined by $\Phi(T) = e^{TB}$ up to the choice of a branch of the logarithm, and the solutions are bounded for all $t$ exactly when the eigenvalues of $\Phi(T)$ have modulus at most $1$, those of modulus $1$ being simple.
 
-*Proof.* Quoted as standard. The matrix $C = \Phi(T)$ is invertible, so it has a logarithm $B$ with $e^{TB}=C$; the product $P(t) = \Phi(t)e^{-tB}$ satisfies $P(t+T) = \Phi(t)\Phi(T)e^{-(t+T)B} = \Phi(t)e^{-tB} = P(t)$, since $\Phi(t+T) = \Phi(t)\Phi(T)$. $\square$
+*Proof.* Quoted as standard. The matrix $C = \Phi(T)$ is invertible, so it has a logarithm $B$ with $e^{TB}=C$; the product $P(t) = \Phi(t)e^{-tB}$ satisfies $P(t+T) = \Phi(t)\Phi(T)e^{-(t+T)B} = \Phi(t)e^{-tB} = P(t)$, since $\Phi(t+T) = \Phi(t)\Phi(T)$.
 
 ## Boundary-Value Problems and Green's Functions
 
@@ -249,7 +249,7 @@ $$
 
 where $a_n$ is the leading coefficient of $L$.
 
-*Proof.* Construct $G$ from a basis of solutions of $Ly=0$ adjusted to the boundary conditions, as the standard variation-of-parameters construction; the jump condition makes $L_x$ of the integral return $f$, and the boundary conditions are satisfied because each factor does, since the integral in $s$ commutes with the boundary conditions in $x$. Uniqueness follows from the uniqueness of the solution of the boundary-value problem. $\square$
+*Proof.* Construct $G$ from a basis of solutions of $Ly=0$ adjusted to the boundary conditions, as the standard variation-of-parameters construction; the jump condition makes $L_x$ of the integral return $f$, and the boundary conditions are satisfied because each factor does, since the integral in $s$ commutes with the boundary conditions in $x$. Uniqueness follows from the uniqueness of the solution of the boundary-value problem.
 
 **Example.** For $-y'' = f$ on $(0,1)$ with $y(0)=y(1)=0$ the Green's function is
 
@@ -295,7 +295,7 @@ $$
 \int_a^b \bigl(-(py')' + qy\bigr)\bar z\,dx = \bigl[-py'\bar z + py\bar z'\bigr]_a^b + \int_a^b y\,\overline{-(pz')' + qz}\,dx ,
 $$
 
-and the boundary term vanishes because both $y$ and $z$ satisfy the separated conditions; the self-adjointness of the closure is the standard Weyl–Stone result for limit-point endpoints. $\square$
+and the boundary term vanishes because both $y$ and $z$ satisfy the separated conditions; the self-adjointness of the closure is the standard Weyl–Stone result for limit-point endpoints.
 
 ### The Eigenvalue Expansion
 
@@ -319,7 +319,7 @@ $$
 R(y) = \frac{\int_a^b\bigl(p|y'|^2 + q|y|^2\bigr)dx}{\int_a^b|y|^2 w\,dx}
 $$
 
-stationarises exactly at the eigenfunctions; the minimum of $R$ over the functions orthogonal to the first $n-1$ eigenfunctions is $\lambda_n$, which is the variational characterisation and shows that the $\lambda_n$ increase and tend to infinity. The simplicity and the asymptotic law are the classical Sturm–Liouville theorems, proved by Sturm's oscillation comparison. $\square$
+stationarises exactly at the eigenfunctions; the minimum of $R$ over the functions orthogonal to the first $n-1$ eigenfunctions is $\lambda_n$, which is the variational characterisation and shows that the $\lambda_n$ increase and tend to infinity. The simplicity and the asymptotic law are the classical Sturm–Liouville theorems, proved by Sturm's oscillation comparison.
 
 The expansion is the one-dimensional case of the spectral theorem for self-adjoint operators: the differential operator has compact resolvent and discrete spectrum, exactly as for a compact self-adjoint operator on a Hilbert space, and the orthonormal eigenbasis is the one supplied by the spectral theorem of *Banach and Hilbert Spaces*.
 
@@ -341,7 +341,7 @@ The expansion is the one-dimensional case of the spectral theorem for self-adjoi
 
 **(c)** if the eigenvalues of $A$ all have nonpositive real part and some have real part $0$, the linearisation does not decide stability, and the nonlinear terms decide.
 
-*Proof.* The solution is $y(t) = y_* + z(t)$ with $z' = Az + r(z)$, $\|r(z)\| = o(\|z\|)$. If the spectrum of $A$ lies in $\{\operatorname{Re} < 0\}$ then $\|e^{tA}\| \le Ce^{-\gamma t}$ for some $C, \gamma > 0$, and the variation-of-constants formula and Gronwall give decay of $z$ for small $z(0)$; if some eigenvalue has positive real part, the unstable manifold theorem produces solutions leaving every neighbourhood. Statement (c) is the content of the examples below. $\square$
+*Proof.* The solution is $y(t) = y_* + z(t)$ with $z' = Az + r(z)$, $\|r(z)\| = o(\|z\|)$. If the spectrum of $A$ lies in $\{\operatorname{Re} < 0\}$ then $\|e^{tA}\| \le Ce^{-\gamma t}$ for some $C, \gamma > 0$, and the variation-of-constants formula and Gronwall give decay of $z$ for small $z(0)$; if some eigenvalue has positive real part, the unstable manifold theorem produces solutions leaving every neighbourhood. Statement (c) is the content of the examples below.
 
 ### The Planar Case
 
@@ -358,7 +358,7 @@ For a planar autonomous system $x' = P(x,y)$, $y' = Q(x,y)$ with equilibrium at 
 | $\delta > 0$, $\tau^2 - 4\delta < 0$, $\tau > 0$ | complex, $\operatorname{Re} > 0$ | unstable spiral | unstable |
 | $\delta > 0$, $\tau = 0$ | purely imaginary, $\pm i\omega$ | centre | depends on nonlinear terms |
 
-*Proof.* The classification follows from the form of the real solution $e^{tA}$: real distinct eigenvalues give motion along the eigenvectors, a saddle when the signs differ; a repeated eigenvalue gives a node with possibly a Jordan factor contributing a factor $t$; complex eigenvalues $\alpha \pm i\beta$ give a spiral whose stability is the sign of $\alpha$, the direction of winding being that of the imaginary part. The centre case has eigenvalues purely imaginary and the linear solutions are periodic; a nonlinear perturbation can turn them into a stable or unstable spiral, and the centre is genuinely undecided by the linearisation. $\square$
+*Proof.* The classification follows from the form of the real solution $e^{tA}$: real distinct eigenvalues give motion along the eigenvectors, a saddle when the signs differ; a repeated eigenvalue gives a node with possibly a Jordan factor contributing a factor $t$; complex eigenvalues $\alpha \pm i\beta$ give a spiral whose stability is the sign of $\alpha$, the direction of winding being that of the imaginary part. The centre case has eigenvalues purely imaginary and the linear solutions are periodic; a nonlinear perturbation can turn them into a stable or unstable spiral, and the centre is genuinely undecided by the linearisation.
 
 **Example (a stable spiral).** For $x' = -x - y$, $y' = x - y$ the matrix is $\begin{pmatrix}-1&-1\\1&-1\end{pmatrix}$ with trace $-2$, determinant $2$ and eigenvalues $-1\pm i$; the origin is an asymptotically stable spiral, and solutions spiral inward with rotation period $2\pi$ and radial decay $e^{-t}$.
 

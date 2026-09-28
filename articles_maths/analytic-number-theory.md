@@ -25,13 +25,13 @@ $$
 $$
 and the corresponding Euler products converge absolutely and locally uniformly in the half-plane.
 
-**Proof.** The second and third identities are the multiplicative convolutions $\mu * 1 = \varepsilon$ and $\varphi * 1 = \mathrm{id}$, expanded as Dirichlet series; the first is obtained by taking the logarithmic derivative of the Euler product, term by term. $\square$
+**Proof.** The second and third identities are the multiplicative convolutions $\mu * 1 = \varepsilon$ and $\varphi * 1 = \mathrm{id}$, expanded as Dirichlet series; the first is obtained by taking the logarithmic derivative of the Euler product, term by term.
 
 **Theorem (Abel summation).** Let $a_n$ be a sequence and $A(x) = \sum_{n\leq x}a_n$. For a continuously differentiable $f$ on $[1,x]$,
 $$
 \sum_{n\leq x}a_nf(n) = A(x)f(x) - \int_1^x A(t)f'(t)\,dt .
 $$
-**Proof.** Integration by parts on the Stieltjes integral $\int_{1^-}^x f(t)\,dA(t)$, or summation by parts. $\square$
+**Proof.** Integration by parts on the Stieltjes integral $\int_{1^-}^x f(t)\,dA(t)$, or summation by parts.
 
 **Theorem (Mertens).** As $x\to\infty$,
 $$
@@ -39,7 +39,7 @@ $$
 $$
 where $\gamma$ is Euler's constant and $M$ is the Mertens constant.
 
-**Proof sketch.** The first estimate is Abel summation applied to the Chebyshev bounds for $\psi$ of the next section; the second is the logarithm of the product, expressed as $-\sum_p\log(1-1/p) = \sum_p1/p + O(1)$, combined with the first and with the divergence of $\sum 1/p$; the third refines the same computation with one further term, and the constant is the limit of $\sum_{p\le x}1/p - \log\log x$. $\square$
+**Proof sketch.** The first estimate is Abel summation applied to the Chebyshev bounds for $\psi$ of the next section; the second is the logarithm of the product, expressed as $-\sum_p\log(1-1/p) = \sum_p1/p + O(1)$, combined with the first and with the divergence of $\sum 1/p$; the third refines the same computation with one further term, and the constant is the limit of $\sum_{p\le x}1/p - \log\log x$.
 
 ### Equivalent Forms of the Prime Number Theorem
 
@@ -59,7 +59,7 @@ where $\gamma$ is Euler's constant and $M$ is the Mertens constant.
 $$
 \theta(x) = \pi(x)\log x - \int_2^x\frac{\pi(t)}{t}\,dt, \qquad \pi(x) = \frac{\theta(x)}{\log x} + \int_2^x\frac{\theta(t)}{t\log^2t}\,dt ;
 $$
-if $\pi(x)\sim x/\log x$ then the integral in the first is $(1+o(1))x/\log x$, so $\theta(x)\sim x$; if $\theta(x)\sim x$ then the integral in the second is $o(x/\log x)$, so $\pi(x)\sim x/\log x$. The equivalence with (d) is the substitution $x = p_n$, since $\pi(p_n) = n$. $\square$
+if $\pi(x)\sim x/\log x$ then the integral in the first is $(1+o(1))x/\log x$, so $\theta(x)\sim x$; if $\theta(x)\sim x$ then the integral in the second is $o(x/\log x)$, so $\pi(x)\sim x/\log x$. The equivalence with (d) is the substitution $x = p_n$, since $\pi(p_n) = n$.
 
 **Theorem (Chebyshev's bounds; Bertrand's postulate).** There are constants $0<c_1<c_2$ with
 $$
@@ -67,7 +67,7 @@ c_1x \leq \psi(x) \leq c_2 x \qquad (x \geq 2),
 $$
 and consequently for every $n$ there is a prime between $n$ and $2n$.
 
-**Proof sketch.** The upper bound follows by writing $\log\lfloor x\rfloor!$ in two ways and comparing the multiplicities of $p$ in $\binom{2n}{n}$, which gives $\theta(x)\ll x$; the lower bound uses the central binomial coefficient to show that the product of the primes between $n$ and $2n$ is large, whence a prime occurs in each dyadic interval. $\square$
+**Proof sketch.** The upper bound follows by writing $\log\lfloor x\rfloor!$ in two ways and comparing the multiplicities of $p$ in $\binom{2n}{n}$, which gives $\theta(x)\ll x$; the lower bound uses the central binomial coefficient to show that the product of the primes between $n$ and $2n$ is large, whence a prime occurs in each dyadic interval.
 
 ## Perron's Formula and the Explicit Formula
 
@@ -79,7 +79,7 @@ $$
 $$
 the integral taken over the vertical line and interpreted as the limit of the integrals over the segments $\lvert t\rvert\leq T$. If $x$ is an integer, the right side is the sum with the last term halved.
 
-**Proof sketch.** The integral converges absolutely by the (trivial) boundedness of $F$ on the line $\Re s = c$; interchanging the integral and the sum, the inner integral $\frac{1}{2\pi i}\int x^s n^{-s}ds/s$ is the inverse Mellin transform of $s^{-1}$, equal to $1$ if $n<x$ and $0$ if $n>x$ (with the value $\tfrac12$ at $n=x$). The interchange is justified by absolute convergence, and the truncation is controlled by the tail estimate for the Dirichlet kernel. $\square$
+**Proof sketch.** The integral converges absolutely by the (trivial) boundedness of $F$ on the line $\Re s = c$; interchanging the integral and the sum, the inner integral $\frac{1}{2\pi i}\int x^s n^{-s}ds/s$ is the inverse Mellin transform of $s^{-1}$, equal to $1$ if $n<x$ and $0$ if $n>x$ (with the value $\tfrac12$ at $n=x$). The interchange is justified by absolute convergence, and the truncation is controlled by the tail estimate for the Dirichlet kernel.
 
 **Corollary (the truncated Perron formula).** With the notation above, for $x\geq2$ and $T\geq1$ the difference between the sum and the truncated integral is $O\bigl(\sum_n\lvert a_n\rvert n^{-c}\min(1,\frac{n}{T\lvert x-n\rvert})\bigr) + O(\lvert a_x\rvert/T)$, so that the error depends only on the size of the coefficients near $x$.
 
@@ -91,7 +91,7 @@ $$
 $$
 the sum being taken over the nontrivial zeros of $\zeta$ in the sense of the symmetric limit $\lim_{T\to\infty}\sum_{\lvert\gamma\rvert\leq T}$, which converges.
 
-**Proof sketch.** Apply Perron's formula to $-\zeta'/\zeta$ for $c>1$, and shift the contour to the line $\Re s = -\tfrac12$, picking up the residue at the pole $s=1$ (giving $x$), the residues at the nontrivial zeros $\rho$ (giving $-x^\rho/\rho$), the pole at $s=0$ from the factor $1/s$ together with the value of $\zeta'/\zeta$ there (giving $-\log2\pi$), and the trivial zeros at the negative even integers (giving the logarithmic term). The shift is justified by the standard bounds for $\zeta'/\zeta$ in the critical strip. $\square$
+**Proof sketch.** Apply Perron's formula to $-\zeta'/\zeta$ for $c>1$, and shift the contour to the line $\Re s = -\tfrac12$, picking up the residue at the pole $s=1$ (giving $x$), the residues at the nontrivial zeros $\rho$ (giving $-x^\rho/\rho$), the pole at $s=0$ from the factor $1/s$ together with the value of $\zeta'/\zeta$ there (giving $-\log2\pi$), and the trivial zeros at the negative even integers (giving the logarithmic term). The shift is justified by the standard bounds for $\zeta'/\zeta$ in the critical strip.
 
 **Theorem (Riemann–von Mangoldt).** The number of nontrivial zeros with $0<\gamma\leq T$ satisfies
 $$
@@ -99,7 +99,7 @@ N(T) = \frac{T}{2\pi}\log\frac{T}{2\pi e} + O(\log T),
 $$
 so the zeros have density $\frac{1}{2\pi}\log\frac{T}{2\pi}$ near height $T$; in particular infinitely many nontrivial zeros exist, and $\sum_\rho1/\lvert\rho\rvert^{1+\epsilon}$ converges for every $\epsilon>0$ while $\sum_\rho1/\lvert\rho\rvert$ diverges.
 
-**Proof sketch.** The argument principle applied to $\xi$, the completed zeta function of *Zeta Functions* which is entire of order $1$ and real on the critical line, expresses $N(T)$ as the variation of the argument of $\xi$ along the boundary of the rectangle; the variation along the horizontal sides is $O(\log T)$ by the functional equation and the Stirling estimate for the Gamma factor, and the vertical sides contribute the main term. The convergence statement is the standard consequence of the density. $\square$
+**Proof sketch.** The argument principle applied to $\xi$, the completed zeta function of *Zeta Functions* which is entire of order $1$ and real on the critical line, expresses $N(T)$ as the variation of the argument of $\xi$ along the boundary of the rectangle; the variation along the horizontal sides is $O(\log T)$ by the functional equation and the Stirling estimate for the Gamma factor, and the vertical sides contribute the main term. The convergence statement is the standard consequence of the density.
 
 ### The Zero-Free Region
 
@@ -113,7 +113,7 @@ $$
 $$
 for a positive constant $c'$; in particular $\pi(x)\sim x/\log x$.
 
-**Proof sketch.** The nonvanishing is deduced from the inequality $3 + 4\cos\theta + \cos2\theta\geq0$ applied to the logarithm of $\zeta$ on the line $\Re s = 1+\epsilon$: with $s = \sigma+it$, $\log\lvert\zeta(\sigma)\rvert + 4\log\lvert\zeta(\sigma+it)\rvert + \log\lvert\zeta(\sigma+2it)\rvert \geq 0$ for $\sigma>1$, and the pole of $\zeta$ at $1$ bounds $\log\lvert\zeta(\sigma)\rvert$ from below by $-\log(\sigma-1)+O(1)$; a zero at $\beta+i\gamma$ with $\beta$ too close to $1$ would make the middle term too negative. The error term follows by inserting the region into the explicit formula and estimating the sum over the zeros; the final statement is the prime number theorem, and the full proof of that theorem is not covered here. $\square$
+**Proof sketch.** The nonvanishing is deduced from the inequality $3 + 4\cos\theta + \cos2\theta\geq0$ applied to the logarithm of $\zeta$ on the line $\Re s = 1+\epsilon$: with $s = \sigma+it$, $\log\lvert\zeta(\sigma)\rvert + 4\log\lvert\zeta(\sigma+it)\rvert + \log\lvert\zeta(\sigma+2it)\rvert \geq 0$ for $\sigma>1$, and the pole of $\zeta$ at $1$ bounds $\log\lvert\zeta(\sigma)\rvert$ from below by $-\log(\sigma-1)+O(1)$; a zero at $\beta+i\gamma$ with $\beta$ too close to $1$ would make the middle term too negative. The error term follows by inserting the region into the explicit formula and estimating the sum over the zeros; the final statement is the prime number theorem, and the full proof of that theorem is not covered here.
 
 ## Primes in Arithmetic Progressions
 
@@ -123,7 +123,7 @@ for a positive constant $c'$; in particular $\pi(x)\sim x/\log x$.
 $$
 \pi(x;q,a) \sim \frac{1}{\varphi(q)}\frac{x}{\log x} \qquad (x\to\infty,\ q \text{ fixed}).
 $$
-**Proof sketch.** The first statement is the nonvanishing $L(1,\chi)\neq0$ of *L-Functions* together with the orthogonality relations, which write the sum over the primes in the progression as an average of the logarithmic derivatives of the $L$-functions $L(s,\chi)$; the asymptotic follows by the same argument with the residue of the pole at $s=1$ of the principal term, which is $\frac1{\varphi(q)}$ times the residue of $\zeta$. $\square$
+**Proof sketch.** The first statement is the nonvanishing $L(1,\chi)\neq0$ of *L-Functions* together with the orthogonality relations, which write the sum over the primes in the progression as an average of the logarithmic derivatives of the $L$-functions $L(s,\chi)$; the asymptotic follows by the same argument with the residue of the pole at $s=1$ of the principal term, which is $\frac1{\varphi(q)}$ times the residue of $\zeta$.
 
 **Theorem (Siegel–Walfisz).** For every $A>0$ there is a constant $c_A>0$, ineffective because it depends on a possible exceptional zero, such that
 $$
@@ -149,7 +149,7 @@ so that the Siegel–Walfisz approximation holds on average for moduli up to $x^
 $$
 \sum_{\substack{p \\ p+2 \text{ prime}}} \frac1p < \infty .
 $$
-**Proof sketch.** The Brun sieve bounds from above the number of integers $\leq x$ all of whose prime factors exceed a parameter $z$ by an expression in the counting function of the residue classes modulo the product of the small primes; applying it twice, once to $n$ and once to $n+2$, gives a bound of the shape $O(x(\log\log x)^2/\log^2x)$ for the number of twin primes up to $x$, which is enough for the convergence since the count has density $O(1/\log^2x)$. $\square$
+**Proof sketch.** The Brun sieve bounds from above the number of integers $\leq x$ all of whose prime factors exceed a parameter $z$ by an expression in the counting function of the residue classes modulo the product of the small primes; applying it twice, once to $n$ and once to $n+2$, gives a bound of the shape $O(x(\log\log x)^2/\log^2x)$ for the number of twin primes up to $x$, which is enough for the convergence since the count has density $O(1/\log^2x)$.
 
 **Remark (the parity phenomenon).** The sieve methods, in the form of Brun and of Selberg, cannot distinguish an integer with an even number of prime factors from one with an odd number, the obstruction known as the parity problem; consequently the sieve alone cannot prove the prime number theorem, nor Goldbach's conjecture, nor the infinitude of the twin primes, without an additional input of a different kind. The modern approximations to those conjectures — Chen's theorem that every sufficiently large even number is a prime plus a number with at most two prime factors, and the theorem of Zhang and Maynard that there are bounded gaps between consecutive primes — are obtained by combining the sieve with information about the distribution of the primes in arithmetic progressions of the Bombieri–Vinogradov type.
 
@@ -163,7 +163,7 @@ and analyses the integral by decomposing the circle into the arcs near rational 
 
 **Theorem (Waring's problem; Hilbert, Hardy–Littlewood, Vinogradov).** For every $k\geq2$ there is a number $G(k)$ such that every sufficiently large integer is a sum of $G(k)$ $k$-th powers, and $G(k) \leq k(3\log k + 5.2)$ for large $k$; Vinogradov's method gives the sharper bounds and the three-primes theorem, that every sufficiently large odd integer is a sum of three primes.
 
-**Proof sketch.** The major arcs contribute a singular series and a singular integral, whose main term is $\mathfrak{S}(n)\Gamma(1+1/k)^s/\Gamma(s/k)n^{s/k-1}$; the minor arcs contribute an error term controlled by Vinogradov's mean value estimates. The singular series is positive under the congruence conditions, and the integral is positive, so the count is positive for large $n$. $\square$
+**Proof sketch.** The major arcs contribute a singular series and a singular integral, whose main term is $\mathrm{S}(n)\Gamma(1+1/k)^s/\Gamma(s/k)n^{s/k-1}$; the minor arcs contribute an error term controlled by Vinogradov's mean value estimates. The singular series is positive under the congruence conditions, and the integral is positive, so the count is positive for large $n$.
 
 ## Summary
 
@@ -187,7 +187,7 @@ The two formulas that organise the subject are Perron's formula, which recovers 
 | $\mathrm{Li}(x)$ | Logarithmic integral $\int_2^x dt/\log t$ |
 | $\gamma$, $M$ | Euler's constant, Mertens constant |
 | $G(k)$ | Least $s$ with every large integer a sum of $s$ $k$-th powers |
-| $\mathfrak{S}(n)$ | Singular series of the circle method |
+| $\mathrm{S}(n)$ | Singular series of the circle method |
 
 
 

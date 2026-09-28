@@ -27,17 +27,17 @@ and that $Ae$ is a minimal left ideal exactly when $e$ is primitive.
 
 **Theorem.** The proper nonzero two-sided ideals of $\mathbb{H}_{\mathbb{D}}$ are exactly $\mathbb{H} \tilde\Pi_+$ and $\mathbb{H} \tilde\Pi_-$. Consequently $\mathbb{H}_{\mathbb{D}}$ is not simple.
 
-**Proof.** Let $I$ be a two-sided ideal. In the idempotent basis $I = I_+ \tilde\Pi_+ \oplus I_- \tilde\Pi_-$ with $I_\pm \subseteq \mathbb{H}$. Because $\tilde\Pi_\pm$ is central, $I$ being an ideal is equivalent to each $I_\pm$ being an ideal of the quaternion algebra $\mathbb{H}$. But $\mathbb{H}$ is a division algebra and has no proper nonzero ideal: if $q \neq 0$ lies in an ideal $J$ of $\mathbb{H}$, then $1 = q^{-1} q \in J$, so $J = \mathbb{H}$. Hence for each sign either $I_\pm = 0$ or $I_\pm = \mathbb{H}$. The proper nonzero possibilities are therefore $I = \mathbb{H} \tilde\Pi_+$ and $I = \mathbb{H} \tilde\Pi_-$. Since these are proper and nonzero, $\mathbb{H}_{\mathbb{D}}$ is not simple. $\square$
+**Proof.** Let $I$ be a two-sided ideal. In the idempotent basis $I = I_+ \tilde\Pi_+ \oplus I_- \tilde\Pi_-$ with $I_\pm \subseteq \mathbb{H}$. Because $\tilde\Pi_\pm$ is central, $I$ being an ideal is equivalent to each $I_\pm$ being an ideal of the quaternion algebra $\mathbb{H}$. But $\mathbb{H}$ is a division algebra and has no proper nonzero ideal: if $q \neq 0$ lies in an ideal $J$ of $\mathbb{H}$, then $1 = q^{-1} q \in J$, so $J = \mathbb{H}$. Hence for each sign either $I_\pm = 0$ or $I_\pm = \mathbb{H}$. The proper nonzero possibilities are therefore $I = \mathbb{H} \tilde\Pi_+$ and $I = \mathbb{H} \tilde\Pi_-$. Since these are proper and nonzero, $\mathbb{H}_{\mathbb{D}}$ is not simple.
 
 **Corollary.** $\mathbb{H}_{\mathbb{D}} = \mathbb{H} \tilde\Pi_+ \oplus \mathbb{H} \tilde\Pi_-$ is the unique decomposition of $\mathbb{H}_{\mathbb{D}}$ as a direct sum of two proper nonzero two-sided ideals, and the two summands are isomorphic to $\mathbb{H}$.
 
-**Proof.** The decomposition follows from $\tilde\Pi_+ + \tilde\Pi_- = 1$; uniqueness from the theorem, since any decomposition into two nonzero two-sided ideals must consist of the two listed ideals. Each summand $\mathbb{H} \tilde\Pi_\pm$ is identified with $\mathbb{H}$ by the projection $\tilde{Q} \mapsto \tilde{Q}_\pm$. $\square$
+**Proof.** The decomposition follows from $\tilde\Pi_+ + \tilde\Pi_- = 1$; uniqueness from the theorem, since any decomposition into two nonzero two-sided ideals must consist of the two listed ideals. Each summand $\mathbb{H} \tilde\Pi_\pm$ is identified with $\mathbb{H}$ by the projection $\tilde{Q} \mapsto \tilde{Q}_\pm$.
 
 ## The Algebra Is Semisimple
 
 **Proposition.** The Jacobson radical of $\mathbb{H}_{\mathbb{D}}$ is zero, so $\mathbb{H}_{\mathbb{D}}$ is semisimple.
 
-**Proof.** By the theorem, the only proper nonzero two-sided ideals are $\mathbb{H} \tilde\Pi_+$ and $\mathbb{H} \tilde\Pi_-$; their intersection is $\mathbb{H} \tilde\Pi_+ \cap \mathbb{H} \tilde\Pi_- = 0$, so the radical, being the intersection of the maximal two-sided ideals, is zero. $\square$
+**Proof.** By the theorem, the only proper nonzero two-sided ideals are $\mathbb{H} \tilde\Pi_+$ and $\mathbb{H} \tilde\Pi_-$; their intersection is $\mathbb{H} \tilde\Pi_+ \cap \mathbb{H} \tilde\Pi_- = 0$, so the radical, being the intersection of the maximal two-sided ideals, is zero.
 
 The algebra is thus semisimple but not simple, and its two simple components are both the same division algebra $\mathbb{H}$. This is the algebraic content of the isomorphism $\mathbb{H}_{\mathbb{D}} \cong \mathbb{H} \oplus \mathbb{H}$: the right-hand side is a product of two division algebras.
 
@@ -73,7 +73,7 @@ $$
 \tilde\Pi_+ \mathbb{H}_{\mathbb{D}} \tilde\Pi_+ = \mathbb{H}_{\mathbb{D}} \tilde\Pi_+ = \mathbb{H} \tilde\Pi_+, \qquad \tilde\Pi_+ \mathbb{H}_{\mathbb{D}} \tilde\Pi_- = \mathbb{H}_{\mathbb{D}} \tilde\Pi_+ \tilde\Pi_- = 0,
 $$
 
-and similarly $(1 - \tilde\Pi_+) \mathbb{H}_{\mathbb{D}} (1 - \tilde\Pi_+) = \mathbb{H} \tilde\Pi_-$ and the other off-diagonal space vanishes. The direct sum is the whole algebra because $\tilde\Pi_+ + \tilde\Pi_- = 1$. $\square$
+and similarly $(1 - \tilde\Pi_+) \mathbb{H}_{\mathbb{D}} (1 - \tilde\Pi_+) = \mathbb{H} \tilde\Pi_-$ and the other off-diagonal space vanishes. The direct sum is the whole algebra because $\tilde\Pi_+ + \tilde\Pi_- = 1$.
 
 The vanishing of the off-diagonal Peirce spaces is the algebraic statement that the two halves of $\mathbb{H}_{\mathbb{D}}$ do not mix: no element of one half acts on the other. This is the sharpest contrast with the biquaternion algebra, where the Peirce spaces relative to a noncentral primitive idempotent have nonzero off-diagonal parts and carry off-diagonal elements $E_{12}$, $E_{21}$.
 
@@ -89,7 +89,7 @@ and each summand is a **minimal** two-sided ideal, equivalently a minimal left i
 
 **Proposition.** $\mathbb{H}_{\mathbb{D}}$ is the direct sum of its two minimal ideals $\mathbb{H} \tilde\Pi_+$ and $\mathbb{H} \tilde\Pi_-$, and every minimal left ideal of $\mathbb{H}_{\mathbb{D}}$ is one of these two.
 
-**Proof.** The direct-sum statement is the corollary above. For the second statement, let $L$ be a minimal left ideal. If $L$ contains an element with a nonzero $\tilde\Pi_+$-component, then that component lies in $L \cap \mathbb{H} \tilde\Pi_+$, a nonzero left ideal contained in the minimal ideal $\mathbb{H} \tilde\Pi_+$, hence equal to it; otherwise $L \subseteq \mathbb{H} \tilde\Pi_-$. Minimality then forces $L$ to equal $\mathbb{H} \tilde\Pi_+$ or $\mathbb{H} \tilde\Pi_-$. $\square$
+**Proof.** The direct-sum statement is the corollary above. For the second statement, let $L$ be a minimal left ideal. If $L$ contains an element with a nonzero $\tilde\Pi_+$-component, then that component lies in $L \cap \mathbb{H} \tilde\Pi_+$, a nonzero left ideal contained in the minimal ideal $\mathbb{H} \tilde\Pi_+$, hence equal to it; otherwise $L \subseteq \mathbb{H} \tilde\Pi_-$. Minimality then forces $L$ to equal $\mathbb{H} \tilde\Pi_+$ or $\mathbb{H} \tilde\Pi_-$.
 
 ## Minimal Left and Right Ideals
 
@@ -113,7 +113,7 @@ $$
 
 They form a lattice that is the diamond: $0$ is contained in $\mathbb{H} \tilde\Pi_\pm$, each of these is contained in $\mathbb{H}_{\mathbb{D}}$, and $\mathbb{H} \tilde\Pi_+$, $\mathbb{H} \tilde\Pi_-$ are incomparable. The same description holds for the right ideals and for the two-sided ideals.
 
-**Proof.** A left ideal $L$ is contained in $\mathbb{H} \tilde\Pi_+ \oplus \mathbb{H} \tilde\Pi_-$. Its intersections $L \cap \mathbb{H} \tilde\Pi_+$ and $L \cap \mathbb{H} \tilde\Pi_-$ are each either $0$ or the whole summand, since each summand is minimal. The four combinations give the four listed ideals, and no second idempotent pair occurs, so there are no further left ideals. $\square$
+**Proof.** A left ideal $L$ is contained in $\mathbb{H} \tilde\Pi_+ \oplus \mathbb{H} \tilde\Pi_-$. Its intersections $L \cap \mathbb{H} \tilde\Pi_+$ and $L \cap \mathbb{H} \tilde\Pi_-$ are each either $0$ or the whole summand, since each summand is minimal. The four combinations give the four listed ideals, and no second idempotent pair occurs, so there are no further left ideals.
 
 **Corollary.** Every left ideal of $\mathbb{H}_{\mathbb{D}}$ is two-sided, and $\mathbb{H}_{\mathbb{D}}$ has exactly two maximal left ideals, $\mathbb{H} \tilde\Pi_+$ and $\mathbb{H} \tilde\Pi_-$.
 
@@ -125,7 +125,7 @@ The **Jacobson radical** $J(A)$ of a finite-dimensional algebra $A$ is the inter
 
 **Proposition.** $J(\mathbb{H}_{\mathbb{D}}) = 0$. Moreover $J(\mathbb{H}_{\mathbb{D}}) = \mathbb{H} \tilde\Pi_+ \cap \mathbb{H} \tilde\Pi_-$.
 
-**Proof.** The maximal left ideals are $\mathbb{H} \tilde\Pi_+$ and $\mathbb{H} \tilde\Pi_-$ by the corollary above, and their intersection is $0$ because $\tilde\Pi_+ \tilde\Pi_- = 0$ and the two ideals are complementary summands. $\square$
+**Proof.** The maximal left ideals are $\mathbb{H} \tilde\Pi_+$ and $\mathbb{H} \tilde\Pi_-$ by the corollary above, and their intersection is $0$ because $\tilde\Pi_+ \tilde\Pi_- = 0$ and the two ideals are complementary summands.
 
 So $\mathbb{H}_{\mathbb{D}}$ is semisimple in the strongest sense: its radical vanishes. This is one of the senses in which $\mathbb{H}_{\mathbb{D}}$ is *smaller* and better behaved than a general associative algebra — it is a product of two division algebras, and products of division algebras have vanishing radical and only finitely many ideals.
 

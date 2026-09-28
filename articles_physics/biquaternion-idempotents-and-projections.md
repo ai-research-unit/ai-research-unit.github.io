@@ -15,7 +15,7 @@ Physically, those four jobs are one subject read four ways. An idempotent is a *
 
 The material here was previously distributed over the articles on ideals, on zero divisors, on the roots of $-1$ and over worked examples; it is collected here because the four statements above are one subject. Its proofs use only the algebra and norm articles: the roots of $-1$ enter as a parameter set whose classification is quoted from *Biquaternion Roots of Minus One*, and the relations to the zero divisors and to the ideals are forward pointers.
 
-**Conventions.** $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_0 = 1, e_1, e_2, e_3$ and $e_1e_2 = e_3$, central scalar imaginary $i$, and $\tilde{Q} = \sum_{\mu=0}^{3}Q_\mu e_\mu$ with $Q_\mu \in \mathbb{C}$. The scalar part is $Q_0$; a pure element is written $\mathbf{B} = B_1e_1+B_2e_2+B_3e_3$, and on pure elements the bilinear form is $(\mathbf{A},\mathbf{B}) = \sum_{k=1}^{3}A_kB_k$, so that $\mathbf{B}^2 = -(\mathbf{B},\mathbf{B})e_0$. The norm form is $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$ and decides invertibility; the material coordinate is $ict\,e_0+\mathbf{x}$ and the informational coordinate is $ct'\,e_0+i\mathbf{x}'$.
+**Conventions.** $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_0 = 1, e_1, e_2, e_3$ and $e_1e_2 = e_3$, central scalar imaginary $i$, and $\tilde{Q} = \sum_{\mu=0}^{3}Q_\mu e_\mu$ with $Q_\mu \in \mathbb{C}$. The scalar part is $Q_0$; a pure element is written $\mathbf{B} = B_1e_1+B_2e_2+B_3e_3$, and on pure elements the bilinear form is $(\mathbf{A},\mathbf{B}) = \sum_{k=1}^{3}A_kB_k$, so that $\mathbf{B}^2 = -(\mathbf{B},\mathbf{B})e_0$. The biquaternion norm is $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$ and decides invertibility; the material coordinate is $ict\,e_0+\mathbf{x}$ and the informational coordinate is $ct'\,e_0+i\mathbf{x}'$.
 
 ## 1. Idempotents in an Algebra
 
@@ -93,7 +93,7 @@ $$
 (\xi,\xi) = \sum_{k=1}^{3}(-2iB_k)^2 = -4\sum_{k=1}^{3}B_k^2 = -4(\mathbf{B},\mathbf{B}) = 1 ,
 $$
 
-so $\xi^2 = -(\xi,\xi) = -1$ and $\mathbf{B} = \xi\cdot(i/2)$, giving $\tilde\Pi = \tfrac{1}{2}e_0+\tfrac{1}{2}\xi i$. The sign choice arises from replacing $\xi$ by $-\xi$, itself a root of $-1$. $\square$
+so $\xi^2 = -(\xi,\xi) = -1$ and $\mathbf{B} = \xi\cdot(i/2)$, giving $\tilde\Pi = \tfrac{1}{2}e_0+\tfrac{1}{2}\xi i$. The sign choice arises from replacing $\xi$ by $-\xi$, itself a root of $-1$.
 
 The trivial idempotents correspond to the degenerate roots $\xi = \pm i$: with $\xi = i$, $\tilde\Pi_1 = \tfrac12 e_0+\tfrac12 i\cdot i = 0$; with $\xi = -i$, $\tilde\Pi_1 = \tfrac12 e_0-\tfrac12 i\cdot i = e_0$.
 
@@ -117,7 +117,7 @@ $$
 \tilde\Pi(\xi)^2 = \tfrac14(e_0+\xi i)^2 = \tfrac14\left(e_0+2\xi i+\xi^2i^2\right) = \tfrac14(e_0+2\xi i+1) = \tilde\Pi(\xi).
 $$
 
-*Injective:* $\tilde\Pi(\xi) = \tilde\Pi(\xi')$ gives $\xi i = \xi' i$, hence $\xi = \xi'$. *Surjective:* the classification says every idempotent is $\tfrac12e_0\pm\tfrac12\xi i$, and $\tilde\Pi(-\xi) = \tfrac12(e_0-\xi i)$ with $-\xi$ again a root. $\square$
+*Injective:* $\tilde\Pi(\xi) = \tilde\Pi(\xi')$ gives $\xi i = \xi' i$, hence $\xi = \xi'$. *Surjective:* the classification says every idempotent is $\tfrac12e_0\pm\tfrac12\xi i$, and $\tilde\Pi(-\xi) = \tfrac12(e_0-\xi i)$ with $-\xi$ again a root.
 
 Consequently the **complementary pairs** $\{\tilde\Pi, e_0-\tilde\Pi\}$ are in bijection with the roots modulo the sign identification $\xi\sim-\xi$, since $\tilde\Pi(-\xi) = e_0-\tilde\Pi(\xi)$: the two members of a pair correspond to the class $\{\xi,-\xi\}$.
 
@@ -125,9 +125,9 @@ Substituting the three families of roots:
 
 - **Trivial roots** $\xi = \pm i$: $\tilde\Pi = 0$ or $\tilde\Pi = e_0$, the trivial idempotents. Physically these are the degenerate projectors: no state and everything.
 - **Real roots** $\xi = \pm\mu$ with $\mu$ a unit pure real quaternion: $\tilde\Pi = \tfrac12e_0\pm\tfrac12\mu i$. Since $\mu i$ is Hermitian when $\mu$ is, $(\mu i)^\dagger = \mu i$, these are the **Hermitian idempotents**. They lie in the informational sector $\mathbb{M}_+$ and are the **rank-one projectors**: the pure states of a qubit, and the one-mode vacua. The family is parametrised by the unit sphere of pure real quaternions, that is by $\hat{\boldsymbol\mu}\in S^2$,
-  $$
+$$
   \tilde\Pi(\hat{\boldsymbol\mu}) = \tfrac{1}{2}\left(e_0+i\hat{\boldsymbol\mu}\right),
-  $$
+$$
   which is the **Bloch sphere** of the state space, and the orbit of one vacuum under the rotations is the vacuum manifold. See *The Biquaternion Vacuum as a Minimal Idempotent* and *Quantum Mechanics in Biquaternionic Form*.
 - **Non-trivial roots** $\xi = b\mu+d\nu i$: $\tilde\Pi = \tfrac12e_0\pm\tfrac12(b\mu i-d\nu)$, idempotents combining a real scalar part, a real vector part in the direction of $\nu$ and an imaginary vector part in the direction of $\mu$. Their vector part mixes a real and an imaginary direction, so they lie in none of the four four-dimensional subspaces, and they are **not** Hermitian: they are idempotents of the algebra but not orthogonal projections, hence not pure states in the sense the quantum articles use. They are the projectors that appear in the Peirce decomposition.
 
@@ -169,11 +169,11 @@ The derivation, from the square relation $\tilde{Q}^2 = 2Q_0\tilde{Q}$ that the 
 
 **Proposition.** The left ideals $\mathbb{B}\tilde\Pi_1$ and $\mathbb{B}\tilde\Pi_2$ satisfy $\mathbb{B} = \mathbb{B}\tilde\Pi_1\oplus\mathbb{B}\tilde\Pi_2$ as left $\mathbb{B}$-modules, and each has dimension 2 over $\mathbb{C}$ and 4 over $\mathbb{R}$ and is a minimal left ideal.
 
-**Proof.** Every $\tilde{Q}$ satisfies $\tilde{Q} = \tilde{Q}(\tilde\Pi_1+\tilde\Pi_2) = \tilde{Q}\tilde\Pi_1+\tilde{Q}\tilde\Pi_2$, and the intersection is zero because $\tilde\Pi_1\tilde\Pi_2 = 0$: if $\tilde{Q}\tilde\Pi_1 = \tilde\Pi\tilde\Pi_2$ then multiplying on the right by $\tilde\Pi_1$ gives $\tilde{Q}\tilde\Pi_1 = 0$. For the dimension, the relations $e_3\tilde\Pi_1 = -i\tilde\Pi_1$ and $e_2\tilde\Pi_1 = ie_1\tilde\Pi_1$ reduce the products $e_\mu \tilde\Pi_1$ to $\tilde\Pi_1$ and $e_1\tilde\Pi_1$, which are independent over $\mathbb{C}$, so $\mathbb{B}\tilde\Pi_1 = \mathbb{C}\tilde\Pi_1\oplus\mathbb{C}e_1\tilde\Pi_1$ has $\mathbb{C}$-dimension 2 and $\mathbb{R}$-dimension 4; the two ideals then span $4+4 = 8 = \dim_{\mathbb{R}}\mathbb{B}$. Minimality is read in the matrix model: $\Phi(\tilde\Pi_1) = E_{11}$ and $\Phi(\tilde\Pi_2) = E_{22}$, so $\mathbb{B}\tilde\Pi_1$ corresponds to the matrices whose only nonzero column is the first, a minimal left ideal of $M_2(\mathbb{C})$. $\square$
+**Proof.** Every $\tilde{Q}$ satisfies $\tilde{Q} = \tilde{Q}(\tilde\Pi_1+\tilde\Pi_2) = \tilde{Q}\tilde\Pi_1+\tilde{Q}\tilde\Pi_2$, and the intersection is zero because $\tilde\Pi_1\tilde\Pi_2 = 0$: if $\tilde{Q}\tilde\Pi_1 = \tilde\Pi\tilde\Pi_2$ then multiplying on the right by $\tilde\Pi_1$ gives $\tilde{Q}\tilde\Pi_1 = 0$. For the dimension, the relations $e_3\tilde\Pi_1 = -i\tilde\Pi_1$ and $e_2\tilde\Pi_1 = ie_1\tilde\Pi_1$ reduce the products $e_\mu \tilde\Pi_1$ to $\tilde\Pi_1$ and $e_1\tilde\Pi_1$, which are independent over $\mathbb{C}$, so $\mathbb{B}\tilde\Pi_1 = \mathbb{C}\tilde\Pi_1\oplus\mathbb{C}e_1\tilde\Pi_1$ has $\mathbb{C}$-dimension 2 and $\mathbb{R}$-dimension 4; the two ideals then span $4+4 = 8 = \dim_{\mathbb{R}}\mathbb{B}$. Minimality is read in the matrix model: $\Phi(\tilde\Pi_1) = E_{11}$ and $\Phi(\tilde\Pi_2) = E_{22}$, so $\mathbb{B}\tilde\Pi_1$ corresponds to the matrices whose only nonzero column is the first, a minimal left ideal of $M_2(\mathbb{C})$.
 
 **Proposition.** The minimal left ideal $\mathbb{B}\tilde\Pi_1$ is isomorphic to $\mathbb{C}^2$ as a left $\mathbb{B}$-module, and the central element $i$ acts on it as multiplication by $i$.
 
-**Proof.** Every element of $\mathbb{B}\tilde\Pi_1$ is uniquely $\alpha \tilde\Pi_1+\beta e_1\tilde\Pi_1$ with $\alpha,\beta\in\mathbb{C}$, so $\alpha \tilde\Pi_1+\beta e_1\tilde\Pi_1\mapsto(\alpha,\beta)$ is a bijection onto $\mathbb{C}^2$; left multiplication by $\tilde{Q}'$ sends $\tilde{Q}\tilde\Pi_1$ to $(\tilde{Q}'\tilde{Q})\tilde\Pi_1$, again in $\mathbb{B}\tilde\Pi_1$ and linear in the coordinates, so the assignment is an isomorphism of left $\mathbb{B}$-modules; and since $i$ is central, $i(\alpha \tilde\Pi_1+\beta e_1\tilde\Pi_1) = (i\alpha)\tilde\Pi_1+(i\beta)e_1\tilde\Pi_1$. $\square$
+**Proof.** Every element of $\mathbb{B}\tilde\Pi_1$ is uniquely $\alpha \tilde\Pi_1+\beta e_1\tilde\Pi_1$ with $\alpha,\beta\in\mathbb{C}$, so $\alpha \tilde\Pi_1+\beta e_1\tilde\Pi_1\mapsto(\alpha,\beta)$ is a bijection onto $\mathbb{C}^2$; left multiplication by $\tilde{Q}'$ sends $\tilde{Q}\tilde\Pi_1$ to $(\tilde{Q}'\tilde{Q})\tilde\Pi_1$, again in $\mathbb{B}\tilde\Pi_1$ and linear in the coordinates, so the assignment is an isomorphism of left $\mathbb{B}$-modules; and since $i$ is central, $i(\alpha \tilde\Pi_1+\beta e_1\tilde\Pi_1) = (i\alpha)\tilde\Pi_1+(i\beta)e_1\tilde\Pi_1$.
 
 **Corollary.** $\mathbb{B}$ is a free left module of rank one over itself, $\mathbb{B} = \mathbb{B}\tilde\Pi_1\oplus\mathbb{B}\tilde\Pi_2$; each summand is a simple left $\mathbb{B}$-module isomorphic to $\mathbb{C}^2$, and since $M_2(\mathbb{C})$ is simple the two summands are isomorphic and correspond to the two columns.
 
@@ -218,7 +218,7 @@ Physically, the Hermitian idempotents are the pure states: the rank-one projecto
 | $(\mathbf{A},\mathbf{B}) = \sum_kA_kB_k$ | Bilinear form on the pure part, $\mathbf{B}^2 = -(\mathbf{B},\mathbf{B})e_0$ |
 | $\mathbb{M}_+$ | Informational sector, containing the Hermitian idempotents |
 | $\mathbb{M}_-$ | Material sector |
-| $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$ | Norm form; $N(\tilde\Pi) = 0$ for every nontrivial idempotent |
+| $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$ | Biquaternion norm; $N(\tilde\Pi) = 0$ for every nontrivial idempotent |
 
 ## Further Reading
 

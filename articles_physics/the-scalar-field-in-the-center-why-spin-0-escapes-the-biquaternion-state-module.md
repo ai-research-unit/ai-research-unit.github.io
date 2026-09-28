@@ -24,7 +24,7 @@ The conventions are those of the companion articles. The biquaternion algebra is
 - Companion article *The Schrödinger Equation in Biquaternionic Form*, for the state module and the central Hamiltonian.
 - Companion article *The Spinor Module in Biquaternionic Form and Its Lorentz Action*, for the minimal left ideal, the two chiral halves, the Lorentz action, and the bilinear pairings.
 - Companion article *The Dirac Equation in Biquaternionic Form*, for the module-valued Dirac field and its scalar bilinears.
-- Companion article *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*, for the material sector, the four-vectors, and the norm form.
+- Companion article *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*, for the material sector, the four-vectors, and the biquaternion norm.
 - Companion article *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*, for the Hermitian sector, the idempotents, and the trace formula.
 
 ## The State Module and the Spin It Carries
@@ -273,7 +273,7 @@ $$
 =\phi_0\,e^{\,i(\mathbf{k}\cdot\mathbf{x}-\omega t)}\,e_0 .
 $$
 
-The exponential is central. The mass-shell condition is the norm form of the four-wavevector fixed to a negative constant,
+The exponential is central. The mass-shell condition is the biquaternion norm of the four-wavevector fixed to a negative constant,
 
 $$
 N(\tilde{K})=\tilde{K}\bar{\tilde{K}}=-\frac{\omega^2}{c^2}+\mathbf{k}^2=-\frac{m^2c^2}{\hbar^2}
@@ -281,7 +281,7 @@ N(\tilde{K})=\tilde{K}\bar{\tilde{K}}=-\frac{\omega^2}{c^2}+\mathbf{k}^2=-\frac{
 \omega^2=c^2\mathbf{k}^2+\frac{m^2c^4}{\hbar^2} ,
 $$
 
-which is the standard relativistic dispersion relation and is reproduced here only to record that the scalar field's entire algebraic content is the norm form of a four-vector, not a module structure. The conserved current $\tilde{J}=ic\rho\,e_0+\mathbf{j}$ lies in $\mathbb{M}_-$, its scalar component being the imaginary scalar direction, exactly as for the four-current of relativistic mechanics.
+which is the standard relativistic dispersion relation and is reproduced here only to record that the scalar field's entire algebraic content is the biquaternion norm of a four-vector, not a module structure. The conserved current $\tilde{J}=ic\rho\,e_0+\mathbf{j}$ lies in $\mathbb{M}_-$, its scalar component being the imaginary scalar direction, exactly as for the four-current of relativistic mechanics.
 
 One structural remark belongs with the equation. The first-order operators of the framework, $\tilde{\nabla}$ and the module action by $\tilde{\Lambda}$, are module-theoretic or vectorial: they act on spinors or on four-vectors and change their representation content. The scalar field has neither. The only operator the scalar equation uses is the central scalar $\Box$, whose square-root structure — the spinor factorisation $\Box=\tilde{\nabla}\bar{\tilde{\nabla}}$ — is a statement about the *operator*, not about the field it acts on. A scalar field is annihilated by a composite of spinor operators without ever being a spinor; it is the algebra's trivial representation appearing in the composition, not a state in the module.
 
@@ -367,7 +367,7 @@ For the sector split, the center meets each sector in one real direction: the re
 | $SL(2,\mathbb{C})=\{\tilde{\Lambda}:\tilde{\Lambda}\bar{\tilde{\Lambda}}=e_0\}$ | Unit-norm biquaternions; Lorentz group |
 | $\tilde{Q}=ict\,e_0+\mathbf{x}$ | Four-position biquaternion, $\in\mathbb{M}_-$ |
 | $\tilde{K}=i\omega/c\,e_0+\mathbf{k}$ | Four-wavevector, $\in\mathbb{M}_-$ |
-| $N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}$ | Norm form |
+| $N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}$ | Biquaternion norm |
 | $\tilde{\nabla}=e_0\partial_{ict}+\sum_k e_k\partial_k$ | Biquaternionic gradient |
 | $\Box=\tilde{\nabla}\bar{\tilde{\nabla}}=\partial_{ict}^2+\Delta$ | d'Alembertian, central and scalar |
 | $\tilde{\Phi}=\phi e_0$ | Scalar (spin-$0$) field, valued in the center |

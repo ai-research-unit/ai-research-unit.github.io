@@ -3,7 +3,7 @@
 
 ## Introduction
 
-This article develops the polar representation of the dual-number algebra $\mathbb{D}'_R = R[\varepsilon]/(\varepsilon^2)$. It follows *Dual-Numbers Algebra* for the conventions, *Dual-Numbers Norm and Invertibility* for the norm form and the real size function on the units, *Shears and Parabolic Rotations* for the group of units and the shear, and *Dual-Numbers Exponential and Lie Group Structure* for the exponential. Its structural model is *Biquaternion Polar Representation*.
+This article develops the polar representation of the dual-number algebra $\mathbb{D}'_R = R[\varepsilon]/(\varepsilon^2)$. It follows *Dual-Numbers Algebra* for the conventions, *Dual-Numbers Norm and Invertibility* for the norm and the real size function on the units, *Shears and Parabolic Rotations* for the group of units and the shear, and *Dual-Numbers Exponential and Lie Group Structure* for the exponential. Its structural model is *Biquaternion Polar Representation*.
 
 The polar representation of the dual numbers is the **third and last row of the exponential trichotomy** and the **missing link of the polar series**. The trichotomy is the classification of a generator $\nu$ of a one-parameter group by the sign of $\nu^2$: for $\nu^2 = -1$ the exponential winds, giving the elliptic case; for $\nu^2 = +1$ it boosts, giving the hyperbolic case; for $\nu^2 = 0$ it shears, giving the parabolic case. The dual-number generator $\varepsilon$ has $\varepsilon^2 = 0$, and its row of the trichotomy is the parabolic one. The polar series of the family of number systems — complex, split complex, dual, quaternion, split quaternion, biquaternion, split biquaternion — is completed by this row; the dual case is the only one whose polar form has a nilpotent factor and no compact phase, and it is the link between the two-dimensional and higher-dimensional forms.
 
@@ -13,7 +13,7 @@ $$
 Z = a + \varepsilon b, \qquad a, b \in R,
 $$
 
-with $a = \operatorname{Re} Z$, $b = \operatorname{Inf} Z$, dual conjugation $\bar{Z} = a - \varepsilon b$, norm form $N(Z) = Z\bar{Z} = a^2$, maximal ideal $\mathfrak{m} = (\varepsilon)$, real submodule $R_{\mathbb{D}'}$ and infinitesimal submodule $\varepsilon R_{\mathbb{D}'}$.
+with $a = \operatorname{Re} Z$, $b = \operatorname{Inf} Z$, dual conjugation $\bar{Z} = a - \varepsilon b$, norm $N(Z) = Z\bar{Z} = a^2$, maximal ideal $\mathrm{M} = (\varepsilon)$, real submodule $R_{\mathbb{D}'}$ and infinitesimal submodule $\varepsilon R_{\mathbb{D}'}$.
 
 ## Why a Single Scale and a Single Nilpotent Factor
 
@@ -37,7 +37,7 @@ So there is one positive scale, one discrete sign, and one real angle, and the a
 
 ### The Absence of a Compact Phase
 
-In the complex case the unit group contains the circle $U(1)$, whose parameter is an angle modulo $2\pi$; in the split-complex case it contains a hyperbola, whose parameter is an unbounded rapidity; in the dual case the non-scalar factor is the shear group $1 + \mathfrak{m} \cong (\mathbb{R}, +)$, a line. There is no compact one-parameter subgroup of $(\mathbb{D}')^\times$ other than the central $\{\pm 1\}$, so the polar form has no angle modulo anything: it has a single real parabolic angle, globally defined and without period. This is why *the exponential trichotomy ends in a straight line rather than a circle*.
+In the complex case the unit group contains the circle $U(1)$, whose parameter is an angle modulo $2\pi$; in the split-complex case it contains a hyperbola, whose parameter is an unbounded rapidity; in the dual case the non-scalar factor is the shear group $1 + \mathrm{M} \cong (\mathbb{R}, +)$, a line. There is no compact one-parameter subgroup of $(\mathbb{D}')^\times$ other than the central $\{\pm 1\}$, so the polar form has no angle modulo anything: it has a single real parabolic angle, globally defined and without period. This is why *the exponential trichotomy ends in a straight line rather than a circle*.
 
 ### The Centrality of the Nilpotent
 
@@ -55,9 +55,9 @@ The trichotomy is exhaustive for a generator of square $\sigma\,\mathrm{id}$ wit
 
 ## The Modulus
 
-### The Norm Form
+### The Norm
 
-The norm form is $N(Z) = Z\bar{Z} = a^2$, multiplicative and degenerate, with vanishing locus the maximal ideal $\mathfrak{m}$; this is established in *Dual-Numbers Norm and Invertibility*. On a unit it is a nonzero element of $R$, and over $\mathbb{R}$ it is a positive real number.
+The norm is $N(Z) = Z\bar{Z} = a^2$, multiplicative and degenerate, with vanishing locus the maximal ideal $\mathrm{M}$; this is established in *Dual-Numbers Norm and Invertibility*. On a unit it is a nonzero element of $R$, and over $\mathbb{R}$ it is a positive real number.
 
 ### The Square Root and the Branch
 
@@ -86,16 +86,16 @@ It is the discrete part of the real scale, and it distinguishes the two connecte
 **Definition.** The **unit shear** attached to a real number $s$ is
 
 $$
-e^{s\varepsilon} := \exp(s\varepsilon) = 1 + s\varepsilon \in 1 + \mathfrak{m}.
+e^{s\varepsilon} := \exp(s\varepsilon) = 1 + s\varepsilon \in 1 + \mathrm{M}.
 $$
 
 The exponential is polynomial because $(s\varepsilon)^2 = 0$; the series terminates after its second term.
 
 ### The Closed Form of the Shear
 
-**Proposition.** The map $s \mapsto e^{s\varepsilon}$ is an isomorphism of groups $(\mathbb{R},+) \to 1 + \mathfrak{m}$, and it is a homeomorphism onto the shear group.
+**Proposition.** The map $s \mapsto e^{s\varepsilon}$ is an isomorphism of groups $(\mathbb{R},+) \to 1 + \mathrm{M}$, and it is a homeomorphism onto the shear group.
 
-**Proof.** $e^{s\varepsilon}e^{t\varepsilon} = (1 + s\varepsilon)(1 + t\varepsilon) = 1 + (s+t)\varepsilon = e^{(s+t)\varepsilon}$, and the inverse is $s \mapsto s\varepsilon$ under the dual logarithm. $\square$
+**Proof.** $e^{s\varepsilon}e^{t\varepsilon} = (1 + s\varepsilon)(1 + t\varepsilon) = 1 + (s+t)\varepsilon = e^{(s+t)\varepsilon}$, and the inverse is $s \mapsto s\varepsilon$ under the dual logarithm.
 
 ### The Parabolic Angle
 
@@ -135,7 +135,7 @@ Suppose $r\,u\,e^{s\varepsilon} = r'\,u'\,e^{s'\varepsilon}$ with $r, r' > 0$ an
 
 ### The Domain and the Boundary
 
-The domain of the polar representation is the set of units, $\mathbb{D}' \setminus \mathfrak{m}$, an open dense subset with two connected components, distinguished by the sign $u$. Its boundary is the maximal ideal $\mathfrak{m}$, on which the representation fails. The polar data are the two coordinates $(r, s)$ on each component together with the discrete sign: a cylinder-like pair of half-planes, the exact degeneration of the disc-like parametrisation of the complex case.
+The domain of the polar representation is the set of units, $\mathbb{D}' \setminus \mathrm{M}$, an open dense subset with two connected components, distinguished by the sign $u$. Its boundary is the maximal ideal $\mathrm{M}$, on which the representation fails. The polar data are the two coordinates $(r, s)$ on each component together with the discrete sign: a cylinder-like pair of half-planes, the exact degeneration of the disc-like parametrisation of the complex case.
 
 ## The Algorithm
 
@@ -167,7 +167,7 @@ Take $Z = -4 + \varepsilon$.
 4. $s = 1/(-4) = -\tfrac{1}{4}$.
 5. $Z = 4\cdot(-1)\cdot(1 - \tfrac{1}{4}\varepsilon) = -4 + \varepsilon$.
 
-Take $Z = 3\varepsilon$. Then $a = 0$, no modulus is defined, and the polar representation fails: the element lies on the boundary $\mathfrak{m}$ and is a zero divisor.
+Take $Z = 3\varepsilon$. Then $a = 0$, no modulus is defined, and the polar representation fails: the element lies on the boundary $\mathrm{M}$ and is a zero divisor.
 
 ## The Factors and Their Meanings
 
@@ -175,14 +175,14 @@ Take $Z = 3\varepsilon$. Then $a = 0$, no modulus is defined, and the polar repr
 |---|---|---|---|
 | Scale | $r = |a|$ | $\mathbb{R}_{>0}$ | the unique real modulus |
 | Sign | $u = \operatorname{sgn}(a)$ | $\{\pm 1\}$ | the component of the unit group |
-| Shear | $e^{s\varepsilon}$ | $1 + \mathfrak{m}$ | the nilpotent central factor |
+| Shear | $e^{s\varepsilon}$ | $1 + \mathrm{M}$ | the nilpotent central factor |
 | Parabolic angle | $s = b/a$ | $\mathbb{R}$ | the additive shear parameter |
 
 The scale and the sign give the real factor $a = ru$; the shear gives the nilpotent factor $e^{s\varepsilon}$. The two are independent, and their product is the whole unit.
 
 ### The Scale
 
-The scale $r = |a|$ is the continuous multiplicative real size on the units normalised by $|\lambda|$ on the scalars and invariant under the shear; it is the degeneration of the complex modulus $\sqrt{a^2 + b^2}$ and of the split-complex modulus $\sqrt{|a^2 - b^2|}$. In the dual case the modulus loses its dependence on the second coordinate entirely, which is the analytic face of the degeneracy of the norm form.
+The scale $r = |a|$ is the continuous multiplicative real size on the units normalised by $|\lambda|$ on the scalars and invariant under the shear; it is the degeneration of the complex modulus $\sqrt{a^2 + b^2}$ and of the split-complex modulus $\sqrt{|a^2 - b^2|}$. In the dual case the modulus loses its dependence on the second coordinate entirely, which is the analytic face of the degeneracy of the norm.
 
 ### The Central Factor
 
@@ -220,7 +220,7 @@ The two transcendental functions $\theta$ and $\psi$ collapse to the rational fu
 
 The polar representations of the number systems of the corpus form a series, of which the dual case is one member.
 
-| Algebra | Norm form | Modulus | Phase factor | Kind |
+| Algebra | Norm | Modulus | Phase factor | Kind |
 |---|---|---|---|---|
 | $\mathbb{C}$ | $a^2 + b^2$ | $\sqrt{a^2+b^2}$ | $e^{i\theta}$ | elliptic |
 | $\mathbb{D} = \mathbb{R}[j]$ | $a^2 - b^2$ | $\sqrt{|a^2-b^2|}$ | $e^{\psi j}$ | hyperbolic |
@@ -230,7 +230,7 @@ The polar representations of the number systems of the corpus form a series, of 
 | $\mathbb{B}$ | $Q_0^2 + \|\vec Q\|^2$ (complex) | $\sqrt{|N|}$ | $U(1)\times SU(2)$ | elliptic–spherical |
 | $\mathbb{H}_{\mathbb{D}}$ | split signature | $\sqrt{|\cdot|}$ | $SL(2,\mathbb{R})$-type | mixed |
 
-The dual row is the missing link between the two-dimensional cases and the quaternionic cases: it is the two-dimensional case whose norm form is degenerate, and it is the only member of the series whose polar phase factor is nilpotent. Reading down the column of phase factors, one passes from a compact circle, to a hyperbola, to a line, then to a three-sphere and its indefinite analogues; the dual line is the unique entry with no compact part and no period, and the whole series is exhaustive for the algebras of the corpus in the same way that the trichotomy is exhaustive for a generator of a one-parameter group.
+The dual row is the missing link between the two-dimensional cases and the quaternionic cases: it is the two-dimensional case whose norm is degenerate, and it is the only member of the series whose polar phase factor is nilpotent. Reading down the column of phase factors, one passes from a compact circle, to a hyperbola, to a line, then to a three-sphere and its indefinite analogues; the dual line is the unique entry with no compact part and no period, and the whole series is exhaustive for the algebras of the corpus in the same way that the trichotomy is exhaustive for a generator of a one-parameter group.
 
 ## Summary
 
@@ -240,7 +240,7 @@ $$
 Z = r\,u\,\exp(s\varepsilon), \qquad r = |a| > 0, \quad u = \operatorname{sgn}(a) \in \{\pm 1\}, \quad s = \frac{b}{a},
 $$
 
-for every dual number $Z = a + \varepsilon b$ with $a \neq 0$. It has a single positive scale $r = |a|$, the continuous multiplicative real size on the units normalised on the scalars and invariant under the shear; a discrete sign $u$; and a single **nilpotent central factor** $e^{s\varepsilon} = 1 + s\varepsilon$ whose parameter is the **parabolic angle** $s = b/a$, additive, globally defined and without period. Because the algebra is commutative the factor is central, and because the generator is nilpotent the exponential is polynomial and the factor is a shear rather than a rotation. The representation exists and is unique for every element with invertible real part; its domain is the set of units and its boundary is the maximal ideal $\mathfrak{m}$, where the modulus tends to zero and the representation degenerates. The dual case is the third and last row of the exponential trichotomy — elliptic, hyperbolic, parabolic — and the missing link of the polar series: it is the two-dimensional row with a degenerate norm form and no compact phase, the common degeneration of the complex and split-complex polar forms, and the transitional two-dimensional member of the series that continues with the quaternion, split-quaternion, biquaternion and split-biquaternion forms.
+for every dual number $Z = a + \varepsilon b$ with $a \neq 0$. It has a single positive scale $r = |a|$, the continuous multiplicative real size on the units normalised on the scalars and invariant under the shear; a discrete sign $u$; and a single **nilpotent central factor** $e^{s\varepsilon} = 1 + s\varepsilon$ whose parameter is the **parabolic angle** $s = b/a$, additive, globally defined and without period. Because the algebra is commutative the factor is central, and because the generator is nilpotent the exponential is polynomial and the factor is a shear rather than a rotation. The representation exists and is unique for every element with invertible real part; its domain is the set of units and its boundary is the maximal ideal $\mathrm{M}$, where the modulus tends to zero and the representation degenerates. The dual case is the third and last row of the exponential trichotomy — elliptic, hyperbolic, parabolic — and the missing link of the polar series: it is the two-dimensional row with a degenerate norm and no compact phase, the common degeneration of the complex and split-complex polar forms, and the transitional two-dimensional member of the series that continues with the quaternion, split-quaternion, biquaternion and split-biquaternion forms.
 
 ## Summary of Notation
 
@@ -252,11 +252,11 @@ for every dual number $Z = a + \varepsilon b$ with $a \neq 0$. It has a single p
 | $Z = a + \varepsilon b$ | General dual number |
 | $a = \operatorname{Re} Z$, $b = \operatorname{Inf} Z$ | Real and infinitesimal parts |
 | $\bar{Z} = a - \varepsilon b$ | Dual conjugation |
-| $N(Z) = Z\bar{Z} = a^2$ | Norm form |
+| $N(Z) = Z\bar{Z} = a^2$ | Norm |
 | $r = |a|$ | Modulus, real size on the units (shear-invariant) |
 | $u = \operatorname{sgn}(a)$ | Sign, component of the unit group |
-| $\mathfrak{m} = (\varepsilon)$ | Maximal ideal, boundary of the polar domain |
-| $1 + \mathfrak{m}$ | Shear group, image of $s \mapsto e^{s\varepsilon}$ |
+| $\mathrm{M} = (\varepsilon)$ | Maximal ideal, boundary of the polar domain |
+| $1 + \mathrm{M}$ | Shear group, image of $s \mapsto e^{s\varepsilon}$ |
 | $e^{s\varepsilon} = 1 + s\varepsilon$ | Nilpotent central factor |
 | $s = a^{-1}b$ | Parabolic angle |
 | $\mathbb{B}$ | Biquaternion algebra, the model of the polar series |
@@ -268,5 +268,5 @@ for every dual number $Z = a + \varepsilon b$ with $a \neq 0$. It has a single p
 - Vladimir V. Kisil, *Geometry of Möbius Transformations: Elliptic, Parabolic and Hyperbolic Actions of $SL(2,\mathbb{R})$* (Imperial College Press, London, 2012), for the elliptic–parabolic–hyperbolic trichotomy of one-parameter subgroups.
 - Erdal Inönü and Eugene P. Wigner, "On the contraction of groups and their representations", *Proceedings of the National Academy of Sciences of the USA* **39** (1953) 510–524, for the contraction that produces the parabolic case as a limit of the elliptic and hyperbolic cases.
 - Eduard Study, *Geometrie der Dynamen* (Teubner, Leipzig, 1903), for the classical parametrisation of the dual numbers.
-- John H. Conway and Derek A. Smith, *On Quaternions and Octonions* (A K Peters, Natick, 2003), for the parallel analysis of the norm forms and unit groups across the number systems.
+- John H. Conway and Derek A. Smith, *On Quaternions and Octonions* (A K Peters, Natick, 2003), for the parallel analysis of the norms and unit groups across the number systems.
 - S. J. Sangwine, T. A. Ell and N. Le Bihan, "Fundamental representations and algebraic properties of biquaternions or complexified quaternions", *Advances in Applied Clifford Algebras* **21** (2011) 607–636, for the four-factor polar representation of the biquaternion case.

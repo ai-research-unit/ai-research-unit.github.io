@@ -13,7 +13,7 @@ is the $k[G]$-module obtained from $W$ by extending the scalars along the inclus
 
 The article is the twenty-second of the corpus, in the category *Linear Spaces over Linear Algebras*, and it follows *Morita Equivalence*, *The Balanced Product over an Algebra* and *Change of Rings* immediately above it; the definition of the induced module is the **balanced product** of *The Balanced Product over an Algebra* with the group algebra of *Group Algebras*, and the adjunction of Frobenius reciprocity is the tensor-hom adjunction of *Change of Rings*. The article develops induction and coinduction and their coincidence for finite groups, the reciprocity and its consequences for the character theory of *Character Theory*, the explicit formula for the character of an induced module together with its verification on $S_3$, the theorem of Mackey on the restriction of an induced module with the double coset decomposition and the resulting irreducibility criterion, the theorem of Clifford on the restriction of an irreducible module to a normal subgroup and the reduction of the classification to the projective representations of an inertia quotient, and the permutation and monomial modules with the induction theorems of Artin and Brauer.
 
-Two boundaries are kept. The first is with the modular theory: the induction is defined for any field, but the results quoted here on the characters and on the multiplicities are formulated for the semisimple case, that is with $\lvert G\rvert$ invertible in $k$; the modular theory and the Brauer characters are not covered here, and the integral form of the induction theorems over a discrete valuation ring belongs to Part III. The second is with the analytic theory: the induced representations of a locally compact group, the Hilbert space of the induction and the measure-theoretic forms of the theorems need Part III, and the present article treats finite groups, in which case the induction is a purely algebraic balanced product.
+Two boundaries are kept. The first is with the modular theory: the induction is defined for any field, but the results quoted here on the characters and on the multiplicities are formulated for the semisimple case, that is with $\lvert G\rvert$ invertible in $k$; the modular theory and the Brauer characters are not covered here, and the integral form of the induction theorems over a discrete valuation ring belongs to Part III. The second is with the analytic theory: the induced representations of a locally compact group and the measure-theoretic forms of the theorems need Part III, and the present article treats finite groups, in which case the induction is a purely algebraic balanced product.
 
 Throughout, $G$ is a finite group and $H,K\leq G$ are subgroups, $k$ is a field with $\lvert G\rvert$ invertible, $W$ is a $k[H]$-module and $V$ a $k[G]$-module, $\operatorname{Ind}_H^GW = k[G]\otimes_{k[H]}W$ and $\operatorname{Res}_H^GV$ are the induced and the restricted modules, $\operatorname{Coind}_H^GW = \operatorname{Hom}_{k[H]}(k[G],W)$, $G = \bigsqcup_{x}HxK$ is a double coset decomposition, $\mathbf{1}_H$ is the trivial $k[H]$-module, and $k[G/H]$ is the permutation module of the action on the cosets.
 
@@ -29,7 +29,7 @@ $$
 
 where $T$ is a set of left coset representatives of $H$ in $G$; for finite $G$ the induced and the coinduced module are isomorphic, $\operatorname{Ind}_H^GW\cong\operatorname{Coind}_H^GW$.
 
-*Proof.* The induced module is a free right $k[H]$-module $k[G]$ tensored with $W$, and $k[G] = \bigoplus_{g\in T}gk[H]$ as a right $k[H]$-module, giving the first isomorphism; for finite $G$ the $k[G]$-module $k[G]$ is finitely generated and free over $k[H]$, and the duality between the tensor product over $k[H]$ and the hom functor, applied to the finite free module $k[G]$, identifies the induced and the coinduced module. $\square$
+*Proof.* The induced module is a free right $k[H]$-module $k[G]$ tensored with $W$, and $k[G] = \bigoplus_{g\in T}gk[H]$ as a right $k[H]$-module, giving the first isomorphism; for finite $G$ the $k[G]$-module $k[G]$ is finitely generated and free over $k[H]$, and the duality between the tensor product over $k[H]$ and the hom functor, applied to the finite free module $k[G]$, identifies the induced and the coinduced module.
 
 **Definition (the function model).** A $k[G]$-module structure on the $k$-module of functions $f:G\to W$ with the **equivariance condition**
 
@@ -49,7 +49,7 @@ $$
 
 the **transitivity of the induction**, and $\operatorname{Res}_H^G$ is transitive in the other direction, $\operatorname{Res}_K^H\operatorname{Res}_H^GV = \operatorname{Res}_K^GV$.
 
-*Proof.* Both sides are $k[G]\otimes_{k[K]}W$ up to the canonical isomorphism $k[G]\otimes_{k[H]}(k[H]\otimes_{k[K]}W)\cong k[G]\otimes_{k[K]}W$, which is the associativity of the balanced product of *The Balanced Product over an Algebra*; the restriction is transitive because the inclusion of modules of the group algebras is. $\square$
+*Proof.* Both sides are $k[G]\otimes_{k[K]}W$ up to the canonical isomorphism $k[G]\otimes_{k[H]}(k[H]\otimes_{k[K]}W)\cong k[G]\otimes_{k[K]}W$, which is the associativity of the balanced product of *The Balanced Product over an Algebra*; the restriction is transitive because the inclusion of modules of the group algebras is.
 
 ## Frobenius Reciprocity
 
@@ -61,7 +61,7 @@ $$
 
 the **adjunction** between the induction and the restriction of scalars.
 
-*Proof.* This is the tensor-hom adjunction of *Change of Rings* for the ring homomorphism $k[H]\to k[G]$: the extension of scalars along a ring map is left adjoint to the restriction, and the tensor product over $k[H]$ with $k[G]$ is the extension functor. $\square$
+*Proof.* This is the tensor-hom adjunction of *Change of Rings* for the ring homomorphism $k[H]\to k[G]$: the extension of scalars along a ring map is left adjoint to the restriction, and the tensor product over $k[H]$ with $k[G]$ is the extension functor.
 
 **Corollary (the character form).** Let $k$ be a splitting field of characteristic zero with $\lvert G\rvert$ invertible, let $\chi$ be the character of $W$ and $\psi$ the character of $V$. Then
 
@@ -71,11 +71,11 @@ $$
 
 the inner products being those of *Character Theory* taken in the respective groups; consequently the multiplicity of the simple $k[G]$-module $V$ in $\operatorname{Ind}_H^GW$ equals the multiplicity of $W$ in $\operatorname{Res}_H^GV$, and $\operatorname{Ind}_H^G\chi = \sum_jd_j\psi_j$ with $d_j = \langle\chi,\operatorname{Res}\psi_j\rangle_H$.
 
-*Proof.* The reciprocity of the theorem is an isomorphism of Hom spaces; taking dimensions over $k$ and dividing by the orders, the left side counts the multiplicity of $V$ in the induced module and the right side the multiplicity of $W$ in the restricted module, and the character pairing is the dimension of the Hom space by Schur's lemma. $\square$
+*Proof.* The reciprocity of the theorem is an isomorphism of Hom spaces; taking dimensions over $k$ and dividing by the orders, the left side counts the multiplicity of $V$ in the induced module and the right side the multiplicity of $W$ in the restricted module, and the character pairing is the dimension of the Hom space by Schur's lemma.
 
 **Corollary (the induction of the trivial character).** For any $H\leq G$ the induced module $\operatorname{Ind}_H^G\mathbf{1}_H$ contains a unique copy of the trivial $k[G]$-module, corresponding to the constant functions in the function model, and $\langle\operatorname{Ind}_H^G\mathbf{1},\mathbf{1}\rangle_G = 1$; the multiplicities of the other simple modules in the permutation module are the multiplicities with which the trivial module of $H$ occurs in their restrictions.
 
-*Proof.* $\langle\operatorname{Ind}_H^G\mathbf{1},\mathbf{1}\rangle_G = \langle\mathbf{1},\operatorname{Res}_H^G\mathbf{1}\rangle_H = 1$ by the reciprocity, and the Hom space of the invariants of the permutation module is one-dimensional, spanned by the constant function. $\square$
+*Proof.* $\langle\operatorname{Ind}_H^G\mathbf{1},\mathbf{1}\rangle_G = \langle\mathbf{1},\operatorname{Res}_H^G\mathbf{1}\rangle_H = 1$ by the reciprocity, and the Hom space of the invariants of the permutation module is one-dimensional, spanned by the constant function.
 
 ## The Character Formula
 
@@ -87,7 +87,7 @@ $$
 
 the second sum being taken over a set $T$ of left coset representatives of $H$ in $G$; in particular $\widetilde\chi(g) = 0$ unless $g$ is conjugate to an element of $H$, and $\widetilde\chi(1) = [G:H]\chi(1)$.
 
-*Proof.* The module $k[G]\otimes_{k[H]}W$ has the $k$-basis $x\otimes w$ with $x\in T$ running over a transversal, and the trace of $g$ on this module is the sum over the $x$ for which $g$ maps the summand $x\otimes W$ to itself; the condition for that is $x^{-1}gx\in H$, and on such a summand the action of $g$ on $x\otimes W$ corresponds to the action of $x^{-1}gx$ on $W$, whose trace is $\chi(x^{-1}gx)$. This gives the second display, and the first follows since each $h\in H$ with $x^{-1}gx\in H$ contributes the same term over the $\lvert H\rvert$ elements of the coset. $\square$
+*Proof.* The module $k[G]\otimes_{k[H]}W$ has the $k$-basis $x\otimes w$ with $x\in T$ running over a transversal, and the trace of $g$ on this module is the sum over the $x$ for which $g$ maps the summand $x\otimes W$ to itself; the condition for that is $x^{-1}gx\in H$, and on such a summand the action of $g$ on $x\otimes W$ corresponds to the action of $x^{-1}gx$ on $W$, whose trace is $\chi(x^{-1}gx)$. This gives the second display, and the first follows since each $h\in H$ with $x^{-1}gx\in H$ contributes the same term over the $\lvert H\rvert$ elements of the coset.
 
 **Corollary (permutation characters).** For the trivial module $W = \mathbf{1}_H$ the formula gives the number of fixed points: $\widetilde{\mathbf{1}}(g) = \frac{1}{\lvert H\rvert}\lvert\{x\in G : x^{-1}gx\in H\}\rvert$, the number of left cosets fixed by $g$, and $\widetilde{\mathbf{1}}(g) = \lvert\{x\in T : x^{-1}gx\in H\}\rvert$.
 
@@ -111,7 +111,7 @@ $$
 
 the sum being over a set of double coset representatives of $H\backslash G/K$.
 
-*Proof (outline).* The double coset decomposition refines the coset decomposition of $k[G]$ as a right $k[H]$-module, and the summand $k[HxK]\otimes_{k[H]}W$ is a $k[K]$-module induced from the stabiliser of the coset: the elements of $k[HxK]$ are the $hxk$, and the action of $K$ on the right leads to the intersection group $H\cap xKx^{-1}$ with the twisted module $W^x$. The details are the standard proof and are recorded in the references. $\square$
+*Proof (outline).* The double coset decomposition refines the coset decomposition of $k[G]$ as a right $k[H]$-module, and the summand $k[HxK]\otimes_{k[H]}W$ is a $k[K]$-module induced from the stabiliser of the coset: the elements of $k[HxK]$ are the $hxk$, and the action of $K$ on the right leads to the intersection group $H\cap xKx^{-1}$ with the twisted module $W^x$. The details are the standard proof and are recorded in the references.
 
 **Corollary (the intertwining number formula).** For finite $G$ the dimension of the space of $k[K]$-homomorphisms between the restrictions of induced modules is
 
@@ -121,7 +121,7 @@ $$
 
 and the **irreducibility criterion** of Mackey: for $H = K$ and $W$ irreducible, $\operatorname{Ind}_H^GW$ is irreducible if and only if no double coset $HxH$ with $x\notin H$ contributes to the endomorphism ring, that is if and only if $W$ has no irreducible constituent in common with its conjugate $W^x$ under restriction to $H\cap xHx^{-1}$ for any $x\in G\smallsetminus H$.
 
-*Proof.* The formula is the dimension count of the theorem applied with the reciprocity; the criterion follows by counting the endomorphisms of $\operatorname{Ind}_H^GW$, of dimension $\sum_{x\in S}\langle\operatorname{Res}_{H\cap xHx^{-1}}W^x,\operatorname{Res}W\rangle$, the inner products being taken in $H\cap xHx^{-1}$, which equals one exactly when the only non-zero term is the one of $x = 1$. $\square$
+*Proof.* The formula is the dimension count of the theorem applied with the reciprocity; the criterion follows by counting the endomorphisms of $\operatorname{Ind}_H^GW$, of dimension $\sum_{x\in S}\langle\operatorname{Res}_{H\cap xHx^{-1}}W^x,\operatorname{Res}W\rangle$, the inner products being taken in $H\cap xHx^{-1}$, which equals one exactly when the only non-zero term is the one of $x = 1$.
 
 **Example (the tensor product of two permutation modules).** For $H,K\leq G$ and the trivial modules there is an isomorphism
 
@@ -149,7 +149,7 @@ the stabiliser of $\theta$ under the conjugation action of $G$ on the irreducibl
 
 the last correspondence is not covered here, and the case of a trivial cocycle recovers the ordinary representations of $I/N$.
 
-*Proof (outline).* The set of irreducible constituents of $\operatorname{Res}_N^GV$ is permuted by $G$ because $N$ is normal, and the trace argument shows that the conjugates are the constituents and occur with equal multiplicity; the induction from the inertia group produces the modules lying over $\theta$, and the exact sequence $1\to N\to I\to I/N\to1$ turns the lifting problem into a problem of projective representations, the cocycle being the failure of a fixed module over $\theta$ to extend to $I$. The proof is the standard one of Clifford's theory, recorded in the references. $\square$
+*Proof (outline).* The set of irreducible constituents of $\operatorname{Res}_N^GV$ is permuted by $G$ because $N$ is normal, and the trace argument shows that the conjugates are the constituents and occur with equal multiplicity; the induction from the inertia group produces the modules lying over $\theta$, and the exact sequence $1\to N\to I\to I/N\to1$ turns the lifting problem into a problem of projective representations, the cocycle being the failure of a fixed module over $\theta$ to extend to $I$. The proof is the standard one of Clifford's theory, recorded in the references.
 
 **Corollary.** If $\theta$ extends to a representation of $I = I_G(\theta)$, then the irreducible modules of $G$ lying over $\theta$ are the inductions of the twists of the extension by the irreducible representations of $I/N$; in particular if $G = N\rtimes Q$ is a semidirect product and $\theta$ extends to its stabiliser, the classification is by the ordinary irreducible representations of $Q$, and no projective representation intervenes.
 
@@ -167,7 +167,7 @@ so that the rational representation ring is generated by the inductions from the
 
 **Theorem (Brauer's induction theorem, standard).** Let $G$ be a finite group. Then every character of $G$ is a $\mathbb{Z}$-linear combination of characters induced from the one-dimensional characters of the elementary subgroups of $G$, that is of the subgroups which are the direct product of a cyclic group and a $p$-group; consequently every character is a $\mathbb{Z}$-linear combination of monomial characters.
 
-*Proof (outline).* Artin's theorem is proved by comparing the values on the cyclic subgroups and using the arithmetic of the cyclotomic fields, and Brauer's theorem by reducing to the $p$-elementary subgroups and using the induction from the one-dimensional characters of these, the theory of the Brauer characters supplying the stepping stone between the two. The proofs are standard and are recorded in the references. $\square$
+*Proof (outline).* Artin's theorem is proved by comparing the values on the cyclic subgroups and using the arithmetic of the cyclotomic fields, and Brauer's theorem by reducing to the $p$-elementary subgroups and using the induction from the one-dimensional characters of these, the theory of the Brauer characters supplying the stepping stone between the two. The proofs are standard and are recorded in the references.
 
 **Remark.** The two induction theorems are the sense in which the representations of a finite group are controlled by its subgroups of restricted type: the cyclic subgroups for the rational theory and the elementary subgroups for the integral theory. They are the engine of the applications of the character theory to the arithmetic of the group rings and to the conjectures relating the group algebra to the representations, and their modular forms — the induction over a discrete valuation ring, with the lattices — are the subject of the final article of this category.
 

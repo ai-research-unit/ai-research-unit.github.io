@@ -76,11 +76,11 @@ The universal enveloping algebra is the associative algebra attached to a non-as
 
 | Object | The property it has | Introduced in |
 |---|---|---|
-| $U(\mathfrak{g})$, the universal enveloping algebra | the associative $R$-algebra $T(\mathfrak{g})$ modulo $x \otimes y - y \otimes x - [x,y]$ | *Universal Enveloping Algebras* |
-| The universal property of $U(\mathfrak{g})$ | every $R$-linear $\varphi : \mathfrak{g} \to A$ into an associative $R$-algebra with $\varphi([x,y]) = \varphi(x)\varphi(y) - \varphi(y)\varphi(x)$ factors uniquely through $\mathfrak{g} \to U(\mathfrak{g})$ | *Universal Enveloping Algebras* |
+| $U(\mathrm{G})$, the universal enveloping algebra | the associative $R$-algebra $T(\mathrm{G})$ modulo $x \otimes y - y \otimes x - [x,y]$ | *Universal Enveloping Algebras* |
+| The universal property of $U(\mathrm{G})$ | every $R$-linear $\varphi : \mathrm{G} \to A$ into an associative $R$-algebra with $\varphi([x,y]) = \varphi(x)\varphi(y) - \varphi(y)\varphi(x)$ factors uniquely through $\mathrm{G} \to U(\mathrm{G})$ | *Universal Enveloping Algebras* |
 | The commutator algebra $A_{\mathrm{Lie}}$ | the Lie algebra with bracket $[a,b] = ab - ba$ attached to an associative algebra $A$; not associative | *Universal Enveloping Algebras* |
 | The adjunction | $U$ is the left adjoint of the functor attaching to an associative algebra its commutator Lie algebra $A_{\mathrm{Lie}}$ | *Universal Enveloping Algebras* |
-| The Poincaré–Birkhoff–Witt theorem | the ordered monomials in a basis of $\mathfrak{g}$ form a basis of $U(\mathfrak{g})$, and $\mathrm{gr}\,U(\mathfrak{g}) \cong \operatorname{Sym}(\mathfrak{g})$ | *Universal Enveloping Algebras* |
+| The Poincaré–Birkhoff–Witt theorem | the ordered monomials in a basis of $\mathrm{G}$ form a basis of $U(\mathrm{G})$, and $\mathrm{gr}\,U(\mathrm{G}) \cong \operatorname{Sym}(\mathrm{G})$ | *Universal Enveloping Algebras* |
 
 The enveloping algebra is associative by construction, and it is the reason a representation of a Lie algebra is a module over an associative algebra. The Lie algebra itself is the canonical non-example, and it is recorded in the last section with the other algebras that fail associativity.
 
@@ -103,7 +103,7 @@ The following objects are the ones a reader might expect among the associative a
 |---|---|---|
 | $\mathbb{O}$, the octonions | the associator is nonzero, $[e_1,e_2,e_4] = 2e_7$; alternative, flexible and power-associative | *Octonion Algebra* |
 | $\mathbb{S}$, the sedenions | the doubling loses the multiplicative norm: it has zero divisors and is not a division algebra, and it is neither associative nor alternative | *Division Algebras* |
-| A Lie algebra $\mathfrak{g}$ | the bracket is anticommutative and satisfies the Jacobi identity; associativity is replaced | *Lie Algebras* |
+| A Lie algebra $\mathrm{G}$ | the bracket is anticommutative and satisfies the Jacobi identity; associativity is replaced | *Lie Algebras* |
 | A Jordan algebra | the product is commutative and satisfies the Jordan identity in place of associativity | *Jordan Algebras* |
 | The cross product on $\mathbb{R}^3$ | fails associativity: it is antisymmetric and satisfies the Jacobi identity | *Algebras* |
 | The commutator algebra $A_{\mathrm{Lie}}$ | the bracket of an associative algebra is not associative | *Universal Enveloping Algebras* |
@@ -119,7 +119,7 @@ The octonions are the standard witness: they are the first algebra of the Cayley
 
 ## Summary
 
-This article has listed the associative algebras of the corpus. The property that gathers them is the vanishing of the associator $[x,y,z] = (xy)z - x(yz)$, a polynomial identity and a linear condition in each argument; power-associativity, alternativity, flexibility and the Moufang identities are the weaker identities implied by it, and the corpus's algebras $A$ and $B$ show that the ladder is strict. The free associative algebras are the tensor algebra $T(V)$ and the free algebra, with the universal property that makes every presented algebra a quotient; the symmetric, exterior and Clifford algebras, the Weyl algebra, the group algebra and the polynomial algebra remain associative because they are quotients of $T(V)$ or are defined by an associative product. The model is the matrix algebra $M_n(R)$ and its endomorphism algebra $\operatorname{End}_A(M)$, the simple finite-dimensional case being $M_n(D)$ over a division ring. The universal enveloping algebra $U(\mathfrak{g})$ is the associative algebra attached to the Lie algebra $\mathfrak{g}$ by a quotient of $T(\mathfrak{g})$. The non-examples — the octonions, the sedenions, the Lie algebras, the Jordan algebras, the cross product on $\mathbb{R}^3$ and the commutator algebra $A_{\mathrm{Lie}}$ — each name the failure of associativity.
+This article has listed the associative algebras of the corpus. The property that gathers them is the vanishing of the associator $[x,y,z] = (xy)z - x(yz)$, a polynomial identity and a linear condition in each argument; power-associativity, alternativity, flexibility and the Moufang identities are the weaker identities implied by it, and the corpus's algebras $A$ and $B$ show that the ladder is strict. The free associative algebras are the tensor algebra $T(V)$ and the free algebra, with the universal property that makes every presented algebra a quotient; the symmetric, exterior and Clifford algebras, the Weyl algebra, the group algebra and the polynomial algebra remain associative because they are quotients of $T(V)$ or are defined by an associative product. The model is the matrix algebra $M_n(R)$ and its endomorphism algebra $\operatorname{End}_A(M)$, the simple finite-dimensional case being $M_n(D)$ over a division ring. The universal enveloping algebra $U(\mathrm{G})$ is the associative algebra attached to the Lie algebra $\mathrm{G}$ by a quotient of $T(\mathrm{G})$. The non-examples — the octonions, the sedenions, the Lie algebras, the Jordan algebras, the cross product on $\mathbb{R}^3$ and the commutator algebra $A_{\mathrm{Lie}}$ — each name the failure of associativity.
 
 ## Summary of Notation
 
@@ -135,7 +135,7 @@ A catalogue denotes its objects by name rather than by symbol. The symbols that 
 | $M_n(R)$, $E_{ij}$, $I_n$ | The matrix algebra, its matrix units and identity matrix |
 | $\operatorname{End}_A(M)$, $\operatorname{End}_R(R^n)$ | Endomorphism ring of a module, and of $R^n$ |
 | $M_n(D)$ | The matrix ring over a division ring |
-| $U(\mathfrak{g})$, $A_{\mathrm{Lie}}$ | The universal enveloping algebra, and the commutator Lie algebra of an associative algebra |
+| $U(\mathrm{G})$, $A_{\mathrm{Lie}}$ | The universal enveloping algebra, and the commutator Lie algebra of an associative algebra |
 | $\mathbb{O}$, $\mathbb{S}$ | The octonions and the sedenions |
 | $x \circ y = \tfrac{1}{2}(xy + yx)$ | The symmetrised product |
 

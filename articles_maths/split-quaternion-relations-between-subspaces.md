@@ -7,7 +7,7 @@ The four distinguished subspaces of $\mathbb{H}_{\mathrm{s}}$ — the scalar lin
 
 Every number below — dimensions of intersections, of sums, and the entries of the tables — is derived from the definitions by comparison of coefficients, so the article doubles as an index of the four subspaces and of the coordinate blocks.
 
-**Conventions.** The algebra is $\mathbb{H}_{\mathrm{s}}$, with basis $1, e_1, e_2, e_3$, the relations $e_1^2 = -1$, $e_2^2 = e_3^2 = +1$, $e_3 = e_1 e_2$, $e_1 e_2 = -e_2 e_1$, and a general element $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$. The conjugation $\bar{\cdot}$, the principal involution $\alpha$ and the reversal $\rho$ are as in *Split-Quaternion Subspaces and the Involutions*, and $N$, $B$ are the norm form and its polarisation.
+**Conventions.** The algebra is $\mathbb{H}_{\mathrm{s}}$, with basis $1, e_1, e_2, e_3$, the relations $e_1^2 = -1$, $e_2^2 = e_3^2 = +1$, $e_3 = e_1 e_2$, $e_1 e_2 = -e_2 e_1$, and a general element $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$. The conjugation $\bar{\cdot}$, the principal involution $\alpha$ and the reversal $\rho$ are as in *Split-Quaternion Subspaces and the Involutions*, and $N$, $B$ are the split-quaternion norm and its polarisation.
 
 ## The Three Decompositions
 
@@ -23,14 +23,14 @@ The three decompositions are the **scalar–vector** decomposition, and the two 
 
 ## The Four Subspaces at a Glance
 
-| subspace | defining condition | real basis | $\dim_{\mathbb{R}}$ | subalgebra | norm form |
+| subspace | defining condition | real basis | $\dim_{\mathbb{R}}$ | subalgebra | norm |
 |---|---|---|---|---|---|
 | $S$ | $\bar{\tilde q} = \tilde q$ | $1$ | $1$ | yes, $\cong \mathbb{R}$ | $q_0^2$, positive definite |
 | $V$ | $\bar{\tilde q} = -\tilde q$ | $e_1,e_2,e_3$ | $3$ | no (Lie) | $q_1^2-q_2^2-q_3^2$, signature $(2,1)$ |
 | $\mathbb{D}_2$ | closed under products of $1, e_2$ | $1,e_2$ | $2$ | yes, $\cong \mathbb{D}$ | $q_0^2-q_2^2$, signature $(1,1)$ |
 | $\mathbb{D}_3$ | $\alpha(\tilde q) = \tilde q$ | $1,e_3$ | $2$ | yes, $\cong \mathbb{D}$ | $q_0^2-q_3^2$, signature $(1,1)$ |
 
-Only three of the four are closed under multiplication: the scalar line and the two split-complex planes. The vector subspace is not a subalgebra but is closed under the commutator, and it is the only one of the four that carries a nonzero bracket — the other three are commutative. The norm forms are the restrictions of $N$; all four are non-degenerate, the first definite and the other three indefinite.
+Only three of the four are closed under multiplication: the scalar line and the two split-complex planes. The vector subspace is not a subalgebra but is closed under the commutator, and it is the only one of the four that carries a nonzero bracket — the other three are commutative. The norms are the restrictions of $N$; all four are non-degenerate, the first definite and the other three indefinite.
 
 ## The Four Coordinate Blocks
 
@@ -124,7 +124,7 @@ $$
 [e_1,e_2] = 2 e_3, \qquad [e_2,e_3] = -2 e_1, \qquad [e_3,e_1] = 2 e_2,
 $$
 
-so $[V,V] \subseteq V$ and $V \cong \mathfrak{sl}_2(\mathbb{R})$. The bracket is alternating and satisfies the Jacobi identity. It is the antisymmetrisation of the product on the vector subspace.
+so $[V,V] \subseteq V$ and $V \cong \mathrm{SL}_2(\mathbb{R})$. The bracket is alternating and satisfies the Jacobi identity. It is the antisymmetrisation of the product on the vector subspace.
 
 ### The Split-Complex Planes
 
@@ -159,7 +159,7 @@ The biquaternion article *Biquaternion Relations Between Subspaces* performs the
 
 The four distinguished subspaces of $\mathbb{H}_{\mathrm{s}}$ are the scalar line $S = \langle 1\rangle$, the vector subspace $V = \langle e_1,e_2,e_3\rangle$, and the two split-complex planes $\mathbb{D}_2 = \langle 1,e_2\rangle$ and $\mathbb{D}_3 = \langle 1,e_3\rangle$. They are the eigenspaces of the involutions, with $\bar{\cdot}$ giving $S \oplus V$, $\alpha$ giving $\mathbb{D}_3 \oplus \operatorname{span}\{e_1,e_2\}$, and $\rho$ giving $\operatorname{span}\{1,e_1,e_2\} \oplus \mathbb{R} e_3$; the finest common decomposition is the coordinate-block decomposition $\mathbb{H}_{\mathrm{s}} = \langle 1\rangle \oplus \langle e_1\rangle \oplus \langle e_2\rangle \oplus \langle e_3\rangle$.
 
-The intersections are $S \cap V = 0$, $V \cap \mathbb{D}_k = \mathbb{R} e_k$, and $\mathbb{D}_2 \cap \mathbb{D}_3 = S$, with $S$ inside both planes. The sums show that $V$ together with either split-complex plane spans the algebra, while the two planes together span only $\operatorname{span}\{1,e_2,e_3\}$. The involutions act on each subspace by the sign patterns tabulated above, and the composition rule $\bar{\cdot} = \alpha\rho$ composes the multiplicities by symmetric difference. The product is closed on $S, \mathbb{D}_2, \mathbb{D}_3$, sends $V \cdot V$ into $S \oplus V$, and sends the products across the split-complex planes into the whole algebra; the commutator vanishes on the commutative pieces and makes $V$ the Lie algebra $\mathfrak{sl}_2(\mathbb{R})$.
+The intersections are $S \cap V = 0$, $V \cap \mathbb{D}_k = \mathbb{R} e_k$, and $\mathbb{D}_2 \cap \mathbb{D}_3 = S$, with $S$ inside both planes. The sums show that $V$ together with either split-complex plane spans the algebra, while the two planes together span only $\operatorname{span}\{1,e_2,e_3\}$. The involutions act on each subspace by the sign patterns tabulated above, and the composition rule $\bar{\cdot} = \alpha\rho$ composes the multiplicities by symmetric difference. The product is closed on $S, \mathbb{D}_2, \mathbb{D}_3$, sends $V \cdot V$ into $S \oplus V$, and sends the products across the split-complex planes into the whole algebra; the commutator vanishes on the commutative pieces and makes $V$ the Lie algebra $\mathrm{SL}_2(\mathbb{R})$.
 
 ## Summary of Notation
 
@@ -171,7 +171,7 @@ The intersections are $S \cap V = 0$, $V \cap \mathbb{D}_k = \mathbb{R} e_k$, an
 | $\mathbb{D}_2 = \langle 1,e_2\rangle$, $\mathbb{D}_3 = \langle 1,e_3\rangle$ | the split-complex planes | *Split-Quaternion Split-Complex Subspaces* |
 | $\langle \cdot \rangle$ | real span of the displayed elements | this article |
 | $\bar{\cdot}$, $\alpha$, $\rho$ | conjugation, principal involution, reversal | *Split-Quaternion Subspaces and the Involutions* |
-| $B$, $N$ | the polarised form and the norm form | *Split-Quaternion Norm and Invertibility* |
+| $B$, $N$ | the polarised form and the split-quaternion norm | *Split-Quaternion Norm and Invertibility* |
 | $[\tilde q,y] = \tilde q y-y\tilde q$ | the commutator | *Split-Quaternion Scalar and Vector Subspaces* |
 
 ## Further Reading

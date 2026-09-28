@@ -25,7 +25,7 @@ Throughout, $\infty$-category means $(\infty,1)$-category: all $k$-morphisms for
 
 **Theorem (Bergner).** The category of simplicial categories has a model structure in which the weak equivalences are the **Dwyer–Kan equivalences** — the simplicial functors that are essentially surjective and induce weak homotopy equivalences on all mapping spaces — the fibrant objects are the locally Kan simplicial categories, and the homotopy category is the homotopy category of $\infty$-categories.
 
-*Proof sketch.* The model structure is transferred along the adjunction with bisimplicial sets and the weak equivalences are characterised as above. $\square$
+*Proof sketch.* The model structure is transferred along the adjunction with bisimplicial sets and the weak equivalences are characterised as above.
 
 ### Complete Segal Spaces
 
@@ -41,13 +41,13 @@ are weak equivalences of simplicial sets for $n \geq 2$, the fibre products bein
 
 **Theorem (Rezk).** There is a model structure on bisimplicial sets whose fibrant objects are the complete Segal spaces, and whose homotopy category is equivalent to the homotopy category of simplicial categories and hence to the homotopy category of $\infty$-categories.
 
-*Proof sketch.* The model structure is the **Rezk model structure**, in which the cofibrations are the monomorphisms and the weak equivalences are detected by the **complete Segal space** condition on a fibrant replacement; the equivalence with simplicial categories is a Quillen equivalence. $\square$
+*Proof sketch.* The model structure is the **Rezk model structure**, in which the cofibrations are the monomorphisms and the weak equivalences are detected by the **complete Segal space** condition on a fibrant replacement; the equivalence with simplicial categories is a Quillen equivalence.
 
 **Definition.** A **quasi-category** is a simplicial set in which every **inner horn** $\Lambda^n_k \hookrightarrow \Delta_n$, with $0 < k < n$, admits a filler; that is, the weak Kan condition holds. Its objects are the $0$-simplices, its morphisms the $1$-simplices, and its $n$-morphisms the $n$-simplices; composition is defined only up to coherent choice of fillers.
 
 **Theorem (Joyal, Lurie).** The category of simplicial sets carries a model structure — the **Joyal model structure** — whose fibrant objects are the quasi-categories and whose weak equivalences are the **categorical equivalences**; its homotopy category is equivalent to the homotopy category of complete Segal spaces and to that of simplicial categories.
 
-*Proof sketch.* The model structure is constructed by transfer from the Rezk structure using the equivalence between simplicial sets and bisimplicial sets that are constant in one direction; the identification of the fibrant objects with quasi-categories is the **Joyal extension theorem**, a horn-filling characterisation. $\square$
+*Proof sketch.* The model structure is constructed by transfer from the Rezk structure using the equivalence between simplicial sets and bisimplicial sets that are constant in one direction; the identification of the fibrant objects with quasi-categories is the **Joyal extension theorem**, a horn-filling characterisation.
 
 **Remark.** The three models — simplicial categories, complete Segal spaces, quasi-categories — present the same homotopy theory; the passage between them is an equivalence of $\infty$-categories, and in practice one chooses whichever makes the construction at hand easiest. The quasi-category model is the one usually taken as the definition, and the complete Segal model is the one that generalises most directly to $(\infty,n)$-categories, where the Segal condition is imposed iteratively in $n$ simplicial directions.
 
@@ -101,13 +101,13 @@ satisfying the associativity, equivariance and unit axioms. The algebraic theory
 
 **Theorem (rectification).** Let $R$ be a commutative ring with $1 \neq 0$. The $\infty$-operad associated to a differential graded operad and the algebras over it in the $\infty$-category of chain complexes are equivalent to the differential graded algebras over the operad, computed by the projective model structure on chain complexes. In particular the $\infty$-categorical and the differential graded constructions present the same homotopy theory.
 
-*Proof sketch.* The model structure on differential graded operads and on their algebras is transferred from the projective model structure on chain complexes, and the comparison with the $\infty$-operadic definition is a Quillen equivalence; the algebraic details are those of *Operads* and *Differential Graded Categories* of Part I. $\square$
+*Proof sketch.* The model structure on differential graded operads and on their algebras is transferred from the projective model structure on chain complexes, and the comparison with the $\infty$-operadic definition is a Quillen equivalence; the algebraic details are those of *Operads* and *Differential Graded Categories* of Part I.
 
 **Example (the operads $A_\infty$ and $E_n$).** The **associative** $\infty$-operad $\mathrm{Ass}$ has $\mathrm{Ass}(n)$ a point with the trivial $\Sigma_n$-action; its algebras are the $A_\infty$-algebras, and in the stable setting they are the ring spectra. The **little $n$-discs** $\infty$-operad $E_n$ has as its $k$-th space the configuration space of $k$ disjoint discs in the unit disc of $\mathbb{R}^n$; $\mathrm{Alg}_{E_1}$ is the $\infty$-category of $A_\infty$-algebras, and $\mathrm{Alg}_{E_\infty}$ is the $\infty$-category of $E_\infty$-algebras, whose homotopy categories are the commutative monoids when the coefficient ring contains $\mathbb{Q}$.
 
 **Theorem (May, recognition principle).** A pointed space $X$ is weakly equivalent to a loop space $\Omega^n Y$ for some $Y$ if and only if $X$ is grouplike with respect to an $E_n$-algebra structure; for $n = \infty$ the group-like $E_\infty$-spaces are the infinite loop spaces, and their spectra are the connective spectra. This is the recognition principle.
 
-*Proof sketch.* The little discs operad acts on $\Omega^n Y$ by the "configuration of discs" multiplication, and conversely the action of $E_n$ on a grouplike space $X$ allows the construction of a classifying space $BX$ by a bar construction, using the operadic action to define a monad; iterating $n$ times yields $Y$ with $\Omega^n Y \simeq X$. $\square$
+*Proof sketch.* The little discs operad acts on $\Omega^n Y$ by the "configuration of discs" multiplication, and conversely the action of $E_n$ on a grouplike space $X$ allows the construction of a classifying space $BX$ by a bar construction, using the operadic action to define a monad; iterating $n$ times yields $Y$ with $\Omega^n Y \simeq X$.
 
 **Remark.** The recognition principle is the reason $\infty$-operads are needed in the stable theory: the multiplication on a loop space is not associative on the nose but only up to coherent homotopy, and the operadic structure is precisely the bookkeeping of that coherence. The classical form of the theory, with operads in topological spaces rather than in $\infty$-categories, is that of *Operads* in Part I.
 
@@ -117,7 +117,7 @@ satisfying the associativity, equivariance and unit axioms. The algebraic theory
 
 **Theorem (bar and cobar constructions).** For an $\infty$-operad $\mathcal{O}$, an $\mathcal{O}$-algebra $A$ in $\mathcal{C}$ and a left $A$-module $M$, there is a **bar construction** $B(A,M)$ and a **cobar construction** $\Omega(A,M)$ forming an adjunction between suitably connective modules and coalgebras; the adjunction is an equivalence in the range of a spectral sequence whose $E^2$ page is $\operatorname{Tor}$ of the associated graded.
 
-*Proof sketch.* The construction is the two-sided simplicial bar resolution, whose geometric realisation computes the homotopy quotient; the spectral sequence is the one of *The Leray–Serre Spectral Sequence* applied to the resulting simplicial object. $\square$
+*Proof sketch.* The construction is the two-sided simplicial bar resolution, whose geometric realisation computes the homotopy quotient; the spectral sequence is the one of *The Leray–Serre Spectral Sequence* applied to the resulting simplicial object.
 
 **Example.** For a ring spectrum $R$ the $\infty$-category of $R$-modules is stable and symmetric monoidal, with a dualisable theory of perfect modules; this is the framework of **algebraic $K$-theory**, where the $K$-theory of $R$ is defined as the $K$-theory of the $\infty$-category of perfect $R$-modules.
 
@@ -133,7 +133,7 @@ satisfying the associativity, equivariance and unit axioms. The algebraic theory
 2. $\mathcal{C}$ is additive and every square that is a pushout is also a pullback; the fibre and cofibre sequences coincide.
 3. The homotopy category is an abelian category if and only if $\mathcal{C}$ is equivalent to the derived category of an abelian category in a bounded range.
 
-*Proof sketch.* The identification of pushouts and pullbacks in the stable setting follows from the invertibility of $\Sigma$ and $\Omega$; the triangulated structure is defined by the cofibre sequences and the octahedral axiom is verified from the higher coherence, which is the standard argument of Lurie's *Higher Algebra*. $\square$
+*Proof sketch.* The identification of pushouts and pullbacks in the stable setting follows from the invertibility of $\Sigma$ and $\Omega$; the triangulated structure is defined by the cofibre sequences and the octahedral axiom is verified from the higher coherence, which is the standard argument of Lurie's *Higher Algebra*.
 
 **Example.** The stable homotopy category of spectra is the homotopy category of the stable $\infty$-category of spectra; the derived category of a ring is the homotopy category of the stable $\infty$-category of chain complexes localised at quasi-isomorphisms, whose trivially fibrant replacement is the **dg-nerve** of the differential graded category. The identification is the theorem relating the two constructions, and it is quoted from *Derived Categories* of Part I.
 
@@ -145,7 +145,7 @@ satisfying the associativity, equivariance and unit axioms. The algebraic theory
 
 **Theorem.** The $\infty$-category of spectra is stable, symmetric monoidal under the smash product $\wedge$ with unit $\mathbb{S}$, and the initial object is the zero object; the suspension spectrum functor $\Sigma^\infty : \mathcal{S} \to \mathrm{Sp}$ from spaces is left adjoint to the zero-space functor $\Omega^\infty$, and $\Omega^\infty\Sigma^\infty X$ is the group completion of $X$ as an $E_\infty$-space.
 
-*Proof sketch.* Stability is the statement that $\Sigma$ is an equivalence on spectra, which holds because a spectrum is, by definition, a sequence of spaces in which the shifted structure maps are equivalences in the colimit; the symmetric monoidal structure is the smash product with unit $\mathbb{S}$, constructed on a suitable model. $\square$
+*Proof sketch.* Stability is the statement that $\Sigma$ is an equivalence on spectra, which holds because a spectrum is, by definition, a sequence of spaces in which the shifted structure maps are equivalences in the colimit; the symmetric monoidal structure is the smash product with unit $\mathbb{S}$, constructed on a suitable model.
 
 **Example.** The **Eilenberg–MacLane spectrum** $H\pi$ for an abelian group $\pi$ has $\pi_0 \cong \pi$ and all other homotopy groups zero, and its associated infinite loop space is $K(\pi,0)$; the general $K(\pi,n)$ of *Classifying Spaces and Cohomology Operations*, is the $n$-fold delooping of $H\pi$ and corresponds to the spectrum $\Sigma^{-n}H\pi$. The representability of cohomology by spectra is not covered here.
 

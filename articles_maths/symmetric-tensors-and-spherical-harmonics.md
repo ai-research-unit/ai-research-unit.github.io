@@ -26,7 +26,7 @@ $$
 \dim \operatorname{Sym}^k(V^*) = \binom{n+k-1}{k}.
 $$
 
-*Proof.* The monomials in the $e^i$ of degree $k$ span the symmetric power under the multiplication $\operatorname{Sym}^i\times\operatorname{Sym}^j\to\operatorname{Sym}^{i+j}$, and the commutative law identifies all orderings of the factors; the nondecreasing multi-indices parametrise the distinct monomials. Independence follows by evaluating on the symmetric tensors $e_{i_1}\cdots e_{i_k}$, whose coordinates are $\delta$-symbols. $\square$
+*Proof.* The monomials in the $e^i$ of degree $k$ span the symmetric power under the multiplication $\operatorname{Sym}^i\times\operatorname{Sym}^j\to\operatorname{Sym}^{i+j}$, and the commutative law identifies all orderings of the factors; the nondecreasing multi-indices parametrise the distinct monomials. Independence follows by evaluating on the symmetric tensors $e_{i_1}\cdots e_{i_k}$, whose coordinates are $\delta$-symbols.
 
 **Example.** $\operatorname{Sym}^2(V^*)$ has dimension $\binom{n+1}{2}$ and is the space of quadratic forms; its basis is $e^ie^j$ for $i\leq j$. The space $\operatorname{Sym}^k(V^*)$ is canonically the space $P_k$ of homogeneous polynomials of degree $k$ in the coordinate functions, and this identification is used throughout.
 
@@ -72,7 +72,7 @@ $$
 \Delta(r^2 h) = 4\,x\cdot\nabla h + 2n\,h + r^2\,\Delta h .
 $$
 
-*Proof.* The product rule gives $\Delta(r^2 h) = (\Delta r^2)h + 2\nabla r^2 \cdot \nabla h + r^2 \Delta h$, and $\nabla r^2 = 2x$, $\Delta r^2 = 2n$, so $2\nabla r^2\cdot\nabla h = 4\,x\cdot\nabla h$. $\square$
+*Proof.* The product rule gives $\Delta(r^2 h) = (\Delta r^2)h + 2\nabla r^2 \cdot \nabla h + r^2 \Delta h$, and $\nabla r^2 = 2x$, $\Delta r^2 = 2n$, so $2\nabla r^2\cdot\nabla h = 4\,x\cdot\nabla h$.
 
 If $h$ is homogeneous of degree $k - 2$, then $x \cdot \nabla h = (k-2)h$ by Euler's relation, and the lemma reads
 
@@ -110,7 +110,7 @@ $$
 \Delta\bigl(r^2 P_{k-2}\bigr) = P_{k-2}
 $$
 
-and $\Delta : P_k \to P_{k-2}$ is surjective; therefore $\dim\mathcal{H}_k = \dim P_k - \dim P_{k-2}$. The intersection $r^2P_{k-2}\cap\mathcal{H}_k$ is zero, because $r^2h\in\mathcal{H}_k$ means $T(h) = \Delta(r^2h) = 0$, and $T$ is invertible. Hence the sum $\mathcal{H}_k + r^2P_{k-2}$ is direct of dimension $\dim P_k$, so it equals $P_k$. Iterating the identity gives the second formula. $\square$
+and $\Delta : P_k \to P_{k-2}$ is surjective; therefore $\dim\mathcal{H}_k = \dim P_k - \dim P_{k-2}$. The intersection $r^2P_{k-2}\cap\mathcal{H}_k$ is zero, because $r^2h\in\mathcal{H}_k$ means $T(h) = \Delta(r^2h) = 0$, and $T$ is invertible. Hence the sum $\mathcal{H}_k + r^2P_{k-2}$ is direct of dimension $\dim P_k$, so it equals $P_k$. Iterating the identity gives the second formula.
 
 **Remark.** The first graded diagonal is $\beta_0 = c_k$, recovering the lemma; the later ones differ from it, since $\Delta$ does not respect the decomposition by harmonic degree but only the filtration by powers of $r^2$.
 
@@ -124,7 +124,7 @@ Let $S^{n-1} = \{x \in \mathbb{R}^n : r^2 = 1\}$ be the unit sphere with surface
 
 **Theorem.** The restriction map $\mathcal{H}_k \to C^{\infty}(S^{n-1})$, $f \mapsto f|_{S^{n-1}}$, is injective.
 
-*Proof.* Suppose $f \in \mathcal{H}_k$ vanishes on the sphere. Since $f$ is homogeneous of degree $k$, the identity $f(x) = r^k f(x/r)$ holds for $x \neq 0$, and the right hand side vanishes whenever $r = 1$; by homogeneity $f$ vanishes on every sphere $r = \rho$, hence on all of $\mathbb{R}^n$ except possibly the origin, and by continuity everywhere. $\square$
+*Proof.* Suppose $f \in \mathcal{H}_k$ vanishes on the sphere. Since $f$ is homogeneous of degree $k$, the identity $f(x) = r^k f(x/r)$ holds for $x \neq 0$, and the right hand side vanishes whenever $r = 1$; by homogeneity $f$ vanishes on every sphere $r = \rho$, hence on all of $\mathbb{R}^n$ except possibly the origin, and by continuity everywhere.
 
 The images of the layers are the **spherical harmonics**. The elements of $\mathcal{H}_k|_{S^{n-1}}$ are eigenfunctions of the spherical Laplacian.
 
@@ -140,7 +140,7 @@ $$
 0 = \Delta f = r^{k-2}\Bigl(k(k-1) + (n-1)k\Bigr)\tilde f + r^{k-2}\Delta_S \tilde f ,
 $$
 
-and $\Delta_S\tilde f = -k(k-1) - (n-1)k\,\tilde f = -k(k+n-2)\tilde f$. $\square$
+and $\Delta_S\tilde f = -k(k-1) - (n-1)k\,\tilde f = -k(k+n-2)\tilde f$.
 
 **Example.** For $n = 3$ the eigenvalue is $-k(k+1)$, so the spherical harmonics of degrees $0, 1, 2$ have eigenvalues $0, -2, -6$. The polynomial $f = x^2 - y^2$ restricts to the sphere as $\sin^2\theta\cos2\varphi$, and a direct computation of $\Delta_{S^2}$ gives $\Delta_{S^2} f = -6f$, in agreement with the theorem.
 
@@ -166,7 +166,7 @@ $$
 0 = (j - k)\int_{S^{n-1}} f h\,d\sigma ,
 $$
 
-and $j \neq k$ gives the orthogonality. $\square$
+and $j \neq k$ gives the orthogonality.
 
 **Corollary.** The restrictions of distinct harmonic layers are orthogonal on the sphere, and within each layer the $O(n)$-action is irreducible; the spaces $\mathcal{H}_k$ are the irreducible components of the natural action of $O(n)$ on the polynomial algebra.
 
@@ -202,7 +202,7 @@ $$
 
 while $\dim\mathcal{H}_0 = 1$ and $\dim\mathcal{H}_1 = n$.
 
-*Proof.* The first equality is the corollary of the decomposition theorem, and the second is the algebraic simplification of the difference of the two binomial coefficients, using $\binom{n+k-3}{k-2} = \frac{(n+k-3)!}{(k-2)!\,(n-1)!}$. $\square$
+*Proof.* The first equality is the corollary of the decomposition theorem, and the second is the algebraic simplification of the difference of the two binomial coefficients, using $\binom{n+k-3}{k-2} = \frac{(n+k-3)!}{(k-2)!\,(n-1)!}$.
 
 **Example.** For $n = 3$, $\dim\mathcal{H}_k = 2k+1$, the classical dimension of the degree-$k$ spherical harmonics on the two-sphere. For $n = 4$, $\dim\mathcal{H}_k = (k+1)^2$. For $n = 2$, $\dim\mathcal{H}_k = 2$ for every $k \geq 1$: the harmonic homogeneous polynomials of degree $k$ in two variables are spanned by the real and imaginary parts of $z^k$. The dimensions for small $n$ and $k$ are
 
@@ -228,7 +228,7 @@ The harmonic layers and the trace-free symmetric tensors are the same object, re
 
 **Theorem.** Under the identification of $P_k$ with $\operatorname{Sym}^k(V^*)$, the harmonic polynomials of degree $k$ correspond exactly to the symmetric tensors of rank $k$ that are trace-free with respect to $g$, and the trace-free symmetric tensors of rank $k$ form a subspace of dimension $\dim\mathcal{H}_k$.
 
-*Proof.* The Laplacian on polynomials corresponds to the metric contraction on symmetric tensors: with the standard form, $\Delta$ is the contraction of two indices by $\delta^{ij}$, so $\Delta f = 0$ is exactly the trace-free condition. The dimensions agree by the formula above. $\square$
+*Proof.* The Laplacian on polynomials corresponds to the metric contraction on symmetric tensors: with the standard form, $\Delta$ is the contraction of two indices by $\delta^{ij}$, so $\Delta f = 0$ is exactly the trace-free condition. The dimensions agree by the formula above.
 
 **Corollary.** The dimension of the space of quadratic forms on $\mathbb{R}^n$ is $\binom{n+1}{2} = \tfrac{n(n+1)}{2}$, and the trace-free part has dimension $\binom{n+1}{2} - 1 = \tfrac{n(n+1)}{2} - 1$, which for $n = 3$ is $5$, the number of independent harmonic quadratics. The decomposition $P_2 = \mathcal{H}_2 \oplus r^2 P_0$ separates the quadratic form into its trace part $\tfrac{\operatorname{tr} Q}{n}r^2$ and its trace-free part, and this is the spectral decomposition of a quadratic form into its mean and its traceless component.
 

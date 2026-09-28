@@ -3,7 +3,7 @@
 
 ## Introduction
 
-This article lists the rings of the corpus together with their zero divisors, the annihilator $\operatorname{Ann}(a)$ of an element, and the associated primes in which those zero divisors lie. Every entry points to the article that introduces the object, and the theorem $Z(R) = \bigcup_{\mathfrak{p} \in \operatorname{Ass}(R)} \mathfrak{p}$ is the statement the list is built to illustrate.
+This article lists the rings of the corpus together with their zero divisors, the annihilator $\operatorname{Ann}(a)$ of an element, and the associated primes in which those zero divisors lie. Every entry points to the article that introduces the object, and the theorem $Z(R) = \bigcup_{\mathrm{P} \in \operatorname{Ass}(R)} \mathrm{P}$ is the statement the list is built to illustrate.
 
 The zero divisors of a Noetherian ring are a finite union of prime ideals, so they carry an ideal-theoretic description even though they are not themselves an ideal; the annihilator of an element is an ideal, and the associated primes are exactly the maximal elements among the ideals of the form $\operatorname{Ann}(a)$. The list records each ring with its zero divisor set, its associated primes, and the idempotents that generate direct summands.
 
@@ -34,12 +34,12 @@ The annihilator $\operatorname{Ann}(a) = \{r : ra = 0\}$ is an ideal, and it con
 | $\mathbb{Z}/6\mathbb{Z}$ | $(2) \cup (3)$ | $(2)$ and $(3)$ | *Modular Arithmetic and the Ring of Residues* |
 | $\mathbb{Z}/12\mathbb{Z}$ | $(2) \cup (3)$ | $(2)$ and $(3)$ | *Modular Arithmetic and the Ring of Residues* |
 | $k[x,y]/(x^2,xy)$ | $(x,y)$ | $(x)$ and $(x,y)$ | *Primary Decomposition* |
-| an Artinian local ring with maximal ideal $\mathfrak{m}$ | $\mathfrak{m}$, the maximal ideal | $\mathfrak{m}$ | *Noetherian and Artinian Rings* |
+| an Artinian local ring with maximal ideal $\mathrm{M}$ | $\mathrm{M}$, the maximal ideal | $\mathrm{M}$ | *Noetherian and Artinian Rings* |
 | a Dedekind domain | $\{0\}$ | the single prime $(0)$, although every nonunit lies in some maximal ideal | *Dedekind Domains and Ideal Class Groups* |
 | a product $R \times S$ | $(Z(R) \times S) \cup (R \times Z(S))$ | $\operatorname{Ass}(R) \cup \operatorname{Ass}(S)$ | *Examples of Rings and Fields* |
 | a Boolean ring | every element except $0$ and $1$ | the maximal ideals | *Von Neumann Regular Rings* |
 
-The theorem is that the two middle columns agree: for a Noetherian ring, the zero divisors are the union of the associated primes, $\bigcup_{x \neq 0} \operatorname{Ann}(x) = \bigcup_{\mathfrak{p} \in \operatorname{Ass}(R)} \mathfrak{p}$, and this is stated and proved in *Primary Decomposition*. The theorem gives the zero divisors a finite description even when they are not an ideal, and it is the reason the row for an Artinian local ring is a single prime: its maximal ideal is nilpotent, hence consists of zero divisors, and it is the one associated prime.
+The theorem is that the two middle columns agree: for a Noetherian ring, the zero divisors are the union of the associated primes, $\bigcup_{x \neq 0} \operatorname{Ann}(x) = \bigcup_{\mathrm{P} \in \operatorname{Ass}(R)} \mathrm{P}$, and this is stated and proved in *Primary Decomposition*. The theorem gives the zero divisors a finite description even when they are not an ideal, and it is the reason the row for an Artinian local ring is a single prime: its maximal ideal is nilpotent, hence consists of zero divisors, and it is the one associated prime.
 
 ## Why the Zero Divisors Are Not an Ideal
 
@@ -48,7 +48,7 @@ The theorem is that the two middle columns agree: for a Noetherian ring, the zer
 | $\mathbb{Z}/6\mathbb{Z}$ | $2, 3, 4$ | $2 + 3 = 5$, a unit | $Z(R)$ is not closed under addition | *Modular Arithmetic and the Ring of Residues* |
 | $\mathbb{Z}$ | $0$ alone | $0 + 0 = 0$ | $Z(R) = (0)$ happens to be an ideal | *The Integers* |
 | $\mathbb{Z}/4\mathbb{Z}$ | $0, 2$ | $2 + 2 = 0$ | $Z(R) = (2)$, an ideal by accident of the nilpotent | *Reduced Rings and the Nilradical* |
-| $k[x,y]/(x^2,xy)$ | $\mathfrak{m} = (x,y)$, the union of $(x)$ and $(x,y)$ | $x + y$, again a zero divisor | $Z(R)$ is the maximal ideal, so the failure is absent | *Primary Decomposition* |
+| $k[x,y]/(x^2,xy)$ | $\mathrm{M} = (x,y)$, the union of $(x)$ and $(x,y)$ | $x + y$, again a zero divisor | $Z(R)$ is the maximal ideal, so the failure is absent | *Primary Decomposition* |
 | $\mathbb{R} \times \mathbb{R}$ | $(a,0)$ and $(0,b)$ | $(1,0) + (0,1) = (1,1)$, a unit | $Z(R)$ is not closed under addition | *Examples of Rings and Fields* |
 | $M_2(\mathbb{R})$ | the singular matrices | $E_{11} + (I - E_{11})$ is a unit | $Z(R)$ is not an ideal | *Matrix Algebras* |
 
@@ -111,7 +111,7 @@ A catalogue denotes its objects by name rather than by symbol. The symbols that 
 | $(I : x)$ | The colon ideal $\{r : rx \in I\}$ |
 | $\operatorname{Ass}(R)$ | The associated primes of $R$, that is $\operatorname{Ass}((0))$ |
 | $\operatorname{Ass}(I)$ | The associated primes of the ideal $I$ |
-| $\mathfrak{p}, \mathfrak{m}$ | Prime ideal, maximal ideal |
+| $\mathrm{P}, \mathrm{M}$ | Prime ideal, maximal ideal |
 | $e$, $e_{\pm}$ | Idempotents; $e_+ = \tfrac{1}{2}(1+j)$, $e_- = \tfrac{1}{2}(1-j)$ |
 | $k[x,y]/(x^2,xy)$ | The quotient with associated primes $(x)$ and $(x,y)$ |
 

@@ -190,7 +190,7 @@ At finite temperature the time-ordered two-point function is not given by a vacu
 
 **What remains open in the framework.**
 
-- **The intrinsic operator.** Whether a genuinely $\mathbb{B}$-valued two-point function $\langle 0|T\tilde{\Psi}(\tilde{Q})\tilde{\Psi}^\flat(\tilde{Q}')|0\rangle$, paired with the trace $2\,\mathrm{Sc}(\cdot)$ or the norm form, exists and reproduces the spinor-module $S_F$. The companion quantization article leaves the intrinsic field open; this article inherits that gap.
+- **The intrinsic operator.** Whether a genuinely $\mathbb{B}$-valued two-point function $\langle 0|T\tilde{\Psi}(\tilde{Q})\tilde{\Psi}^\flat(\tilde{Q}')|0\rangle$, paired with the trace $2\,\mathrm{Sc}(\cdot)$ or the biquaternion norm, exists and reproduces the spinor-module $S_F$. The companion quantization article leaves the intrinsic field open; this article inherits that gap.
 - **Whether the algebra can *select* the contour.** We have argued that it cannot, on the ground that Feynman, retarded, and advanced differ only by boundary condition. A derivation of the Feynman prescription from an algebraic property of $\mathbb{B}$ alone would contradict that argument; we record the contrary as a possibility but do not claim it, and we have found no candidate.
 - **The meaning of the $\mathbb{M}_-$ location.** That the deformation lies along the $ict$ direction may be a genuine structural fact — the same direction as the KMS strip — or an artifact of writing $\epsilon$ as a scalar. We have not distinguished the two.
 - **Empirical content.** As with the rest of the framework, whether any of this yields a prediction distinguishing it from standard quantum field theory is open, and the present article changes nothing about it.

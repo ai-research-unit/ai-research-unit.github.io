@@ -159,7 +159,7 @@ $$
 \operatorname{Hom}_A(A,M) \cong M.
 $$
 
-*Proof.* For $b \in A$, $A$-linearity gives $f(b)=f(b1_A)=bf(1_A)=bm$, so $f$ is determined by $m=f(1_A)$. Conversely, for any $m \in M$ the map $f(b)=bm$ is $A$-linear: $f(b b')=b b' m=b (b'm)=b f(b')$. The two constructions are inverse, and both are additive in $f$ and in $m$. $\square$
+*Proof.* For $b \in A$, $A$-linearity gives $f(b)=f(b1_A)=bf(1_A)=bm$, so $f$ is determined by $m=f(1_A)$. Conversely, for any $m \in M$ the map $f(b)=bm$ is $A$-linear: $f(b b')=b b' m=b (b'm)=b f(b')$. The two constructions are inverse, and both are additive in $f$ and in $m$.
 
 ## The Regular Module and Its Endomorphisms
 
@@ -171,7 +171,7 @@ $$
 A^{\mathrm{op}} \xrightarrow{\ \sim\ } \operatorname{End}_A({}_A A), \qquad a \longmapsto (b \mapsto b a).
 $$
 
-*Proof.* For $a \in A$, the map $R_a(b)=ba$ is $A$-linear because $R_a(c b)=(c b)a=c(ba)=c R_a(b)$. It is additive, and $R_a \circ R_{a'}=R_{a'a}$, so $a \mapsto R_a$ is a ring homomorphism $A^{\mathrm{op}}\to\operatorname{End}_A(A)$. It is injective, since $R_a(1_A)=a$; and it is surjective, since for any $f \in \operatorname{End}_A(A)$ and $b \in A$ one has $f(b)=f(b 1_A)=b f(1_A)=R_{f(1_A)}(b)$. $\square$
+*Proof.* For $a \in A$, the map $R_a(b)=ba$ is $A$-linear because $R_a(c b)=(c b)a=c(ba)=c R_a(b)$. It is additive, and $R_a \circ R_{a'}=R_{a'a}$, so $a \mapsto R_a$ is a ring homomorphism $A^{\mathrm{op}}\to\operatorname{End}_A(A)$. It is injective, since $R_a(1_A)=a$; and it is surjective, since for any $f \in \operatorname{End}_A(A)$ and $b \in A$ one has $f(b)=f(b 1_A)=b f(1_A)=R_{f(1_A)}(b)$.
 
 Taking units gives $\operatorname{Aut}_A({}_A A) \cong (A^{\mathrm{op}})^{\times} \cong A^{\times}$, the group of units of $A$, under the same map; the inverse of $R_a$ is $R_{a^{-1}}$. Thus the automorphisms of the left regular module are exactly the right multiplications by units, a fact that is invisible over a commutative base ring and is the first sign of the asymmetry of the noncommutative case.
 
@@ -197,7 +197,7 @@ $$
 A/\operatorname{Ann}_A(m) \cong Am.
 $$
 
-*Proof.* The map is $A$-linear by associativity and has image $Am$ and kernel $\operatorname{Ann}_A(m)$; apply the first isomorphism theorem. $\square$
+*Proof.* The map is $A$-linear by associativity and has image $Am$ and kernel $\operatorname{Ann}_A(m)$; apply the first isomorphism theorem.
 
 Consequently the cyclic left $A$-modules are exactly the quotients $A/L$ by left ideals $L$, the correspondence being $L \mapsto A/L$ and $M \mapsto \operatorname{Ann}_A(m)$ for a chosen generator $m$. Passing to $A/L$ from $L$ recovers $L$, and the submodules of $A/L$ correspond to the left ideals between $L$ and $A$.
 
@@ -209,7 +209,7 @@ $$
 
 In particular $\operatorname{Aut}_A(S)=\operatorname{End}_A(S)^{\times}$ is the multiplicative group of that division ring. The lemma is developed and applied in .
 
-A nonzero module is simple if and only if it is isomorphic to $A/\mathfrak{m}$ for a **maximal left ideal** $\mathfrak{m}$: simplicity of $S$ corresponds under the proposition to the absence of left ideals strictly between $\operatorname{Ann}_A(m)$ and $A$ for a nonzero $m$. If $A$ is commutative, the maximal left ideals are the maximal ideals, and this recovers the familiar description of simple modules over a commutative ring.
+A nonzero module is simple if and only if it is isomorphic to $A/\mathrm{M}$ for a **maximal left ideal** $\mathrm{M}$: simplicity of $S$ corresponds under the proposition to the absence of left ideals strictly between $\operatorname{Ann}_A(m)$ and $A$ for a nonzero $m$. If $A$ is commutative, the maximal left ideals are the maximal ideals, and this recovers the familiar description of simple modules over a commutative ring.
 
 ## Free, Projective and the Rigidity of the Algebra
 
@@ -221,7 +221,7 @@ A left $A$-module $P$ is **projective** if every diagram of $A$-linear maps with
 - Over the biquaternion algebra $\mathbb{B} \cong M_2(\mathbb{C})$, the same description holds with $n=2$ and $F=\mathbb{C}$: the defining module $S=\mathbb{C}^2$ is projective but not free, and a finitely generated $\mathbb{B}$-module is free precisely when its complex dimension is divisible by $4$.
 - Over a division algebra, and in particular over $\mathbb{H}$, every module is free, so projectivity is automatic.
 
-The contrast between $\mathbb{H}$ and $\mathbb{B}$ is the theme of: the first is a division algebra, the second a matrix algebra, and freeness of modules distinguishes them. Over a division ring the rank of a free module is well defined, by the invariant basis number property of *Modules* §19; over a general algebra the rank of a free module exists whenever $A$ has invariant basis number, which holds when $A$ is commutative by *Modules* §10 and when $A$ has a maximal two-sided ideal $\mathfrak{m}$ with $A/\mathfrak{m}$ left artinian — then $A/\mathfrak{m}$ is a matrix ring over a division ring and has invariant basis number, and tensoring $A^{(I)}\cong A^{(J)}$ with $A/\mathfrak{m}$ over $A$ gives $(A/\mathfrak{m})^{(I)}\cong(A/\mathfrak{m})^{(J)}$, hence $|I|=|J|$ — in particular when $A$ is a finite-dimensional algebra over a field.
+The contrast between $\mathbb{H}$ and $\mathbb{B}$ is the theme of: the first is a division algebra, the second a matrix algebra, and freeness of modules distinguishes them. Over a division ring the rank of a free module is well defined, by the invariant basis number property of *Modules* §19; over a general algebra the rank of a free module exists whenever $A$ has invariant basis number, which holds when $A$ is commutative by *Modules* §10 and when $A$ has a maximal two-sided ideal $\mathrm{M}$ with $A/\mathrm{M}$ left artinian — then $A/\mathrm{M}$ is a matrix ring over a division ring and has invariant basis number, and tensoring $A^{(I)}\cong A^{(J)}$ with $A/\mathrm{M}$ over $A$ gives $(A/\mathrm{M})^{(I)}\cong(A/\mathrm{M})^{(J)}$, hence $|I|=|J|$ — in particular when $A$ is a finite-dimensional algebra over a field.
 
 ## Direct Sums, Products and Idempotents
 
@@ -231,7 +231,7 @@ For submodules $N_1,\dots,N_k \subseteq M$, the internal direct sum $M=N_1\oplus
 
 **Proposition.** A submodule $N \subseteq M$ is a direct summand if and only if $N=\operatorname{im} e$ for an idempotent $e \in \operatorname{End}_A(M)$.
 
-*Proof.* If $M=N \oplus N'$, let $e$ be the projection onto $N$ along $N'$; it is $A$-linear, idempotent, and has image $N$. Conversely, if $e^2=e$, then $\operatorname{im} e=\{m : e(m)=m\}$ and $\ker e$ are submodules, and for every $m$ one has $m=e(m)+(m-e(m))$ with $e(m) \in \operatorname{im} e$ and $m-e(m) \in \ker e$; hence $M=\operatorname{im} e \oplus \ker e$. $\square$
+*Proof.* If $M=N \oplus N'$, let $e$ be the projection onto $N$ along $N'$; it is $A$-linear, idempotent, and has image $N$. Conversely, if $e^2=e$, then $\operatorname{im} e=\{m : e(m)=m\}$ and $\ker e$ are submodules, and for every $m$ one has $m=e(m)+(m-e(m))$ with $e(m) \in \operatorname{im} e$ and $m-e(m) \in \ker e$; hence $M=\operatorname{im} e \oplus \ker e$.
 
 Applying the proposition to the regular module, an idempotent $e \in A$ gives the decomposition ${}_A A = Ae \oplus A(1_A-e)$, so the left ideal $Ae$ is a projective left $A$-module. Idempotents in the algebra thus manufacture projective modules, and in a matrix algebra they manufacture all direct summands.
 
@@ -247,7 +247,7 @@ $$
 (1_A-a_k)m_k=\sum_{i<k}a_i m_i.
 $$
 
-The element $1_A-a_k$ is invertible because $a_k \in J(A)$: if $1-a$ is not left-invertible then $A(1-a)$ is a proper left ideal, so it lies in a maximal left ideal, which contains $J(A)$ and hence $a$, giving $1=(1-a)+a$ in that ideal, a contradiction. Thus there is $u$ with $u(1_A-a_k)=1_A$, and $1_A-u=-ua_k \in J(A)$ since $J(A)$ is a two-sided ideal, so the same argument applied to $1_A-(1_A-u)$ shows that $u$ is left-invertible as well; then $u(1_A-a_k)=1_A$ and $vu=1_A$ force $1_A-a_k=v\bigl(u(1_A-a_k)\bigr)=v$, so $1_A-a_k$ has the two-sided inverse $u$. Multiplying by this inverse expresses $m_k$ in terms of $m_1,\dots,m_{k-1}$, contradicting minimality unless $k=0$. $\square$
+The element $1_A-a_k$ is invertible because $a_k \in J(A)$: if $1-a$ is not left-invertible then $A(1-a)$ is a proper left ideal, so it lies in a maximal left ideal, which contains $J(A)$ and hence $a$, giving $1=(1-a)+a$ in that ideal, a contradiction. Thus there is $u$ with $u(1_A-a_k)=1_A$, and $1_A-u=-ua_k \in J(A)$ since $J(A)$ is a two-sided ideal, so the same argument applied to $1_A-(1_A-u)$ shows that $u$ is left-invertible as well; then $u(1_A-a_k)=1_A$ and $vu=1_A$ force $1_A-a_k=v\bigl(u(1_A-a_k)\bigr)=v$, so $1_A-a_k$ has the two-sided inverse $u$. Multiplying by this inverse expresses $m_k$ in terms of $m_1,\dots,m_{k-1}$, contradicting minimality unless $k=0$.
 
 The commutativity of the base ring plays no role, and it is the two-sidedness of $I$ and the containment $I \subseteq J(A)$ that replace it.
 
@@ -259,7 +259,7 @@ Two algebras $A$ and $B$ are **Morita equivalent** when their module categories 
 
 ## Summary
 
-Fix a commutative ring $R$ and a unital associative $R$-algebra $A$. A left $A$-module is an abelian group with an action of $A$ satisfying the four axioms, equivalently a unital ring homomorphism $A \to \operatorname{End}_{\mathbb{Z}}(M)$; a left module is automatically an $R$-module because $R$ acts through the unit. Left, right and bimodules are distinguished when $A$ is noncommutative, and passing to $A^{\mathrm{op}}$ converts one side into the other. Submodules, quotient modules and $A$-linear maps are defined by the same clauses as for a commutative ring, and the three isomorphism theorems hold; the submodules of the regular module ${}_A A$ are the left ideals, so cyclic modules are the quotients $A/L$, and simple modules are the quotients $A/\mathfrak{m}$ by maximal left ideals.
+Fix a commutative ring $R$ and a unital associative $R$-algebra $A$. A left $A$-module is an abelian group with an action of $A$ satisfying the four axioms, equivalently a unital ring homomorphism $A \to \operatorname{End}_{\mathbb{Z}}(M)$; a left module is automatically an $R$-module because $R$ acts through the unit. Left, right and bimodules are distinguished when $A$ is noncommutative, and passing to $A^{\mathrm{op}}$ converts one side into the other. Submodules, quotient modules and $A$-linear maps are defined by the same clauses as for a commutative ring, and the three isomorphism theorems hold; the submodules of the regular module ${}_A A$ are the left ideals, so cyclic modules are the quotients $A/L$, and simple modules are the quotients $A/\mathrm{M}$ by maximal left ideals.
 
 The endomorphism ring $\operatorname{End}_A(M)$ is an $R$-algebra but not in general an $A$-module, only a module over the center; the regular module has $\operatorname{End}_A({}_A A)\cong A^{\mathrm{op}}$ and $\operatorname{Aut}_A({}_A A)\cong A^{\times}$ by right multiplication. Schur's lemma makes $\operatorname{End}_A(S)$ a division ring for a simple $S$. Free modules are direct sums of ${}_A A$, projective modules are their direct summands, and the idempotents of $A$ produce projective modules $Ae$; over a division algebra every module is free, while over the matrix algebra $M_n(F)$ the simple module $S=F^n$ is projective and not free. Nakayama's lemma holds over noncommutative rings for ideals inside the Jacobson radical. The modules form an abelian $R$-linear category $\operatorname{Mod}(A)$, and the guiding equivalence relation on algebras is Morita equivalence, under which $A$ and $M_n(A)$ have the same module theory.
 
@@ -283,7 +283,7 @@ The endomorphism ring $\operatorname{End}_A(M)$ is an $R$-algebra but not in gen
 | $\operatorname{End}_A(M)$ | endomorphism ring of $M$ |
 | $\operatorname{Aut}_A(M)$ | automorphism group of $M$ |
 | $\operatorname{Ann}_A(m)$, $\operatorname{Ann}_A(M)$ | annihilator of an element, of the module |
-| $\mathfrak{m}$ | maximal left ideal |
+| $\mathrm{M}$ | maximal left ideal |
 | $S$ | simple (irreducible) module |
 | $J(A)$ | Jacobson radical of $A$ |
 | $\operatorname{Mod}(A)$ | category of left $A$-modules |

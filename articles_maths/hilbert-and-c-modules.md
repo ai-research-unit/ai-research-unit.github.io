@@ -74,7 +74,7 @@ $$
 0 \leq \langle xa+y, xa+y\rangle=a^*\langle x,x\rangle a+a^*\langle x,y\rangle+\langle y,x\rangle a+\langle y,y\rangle.
 $$
 
-Choose $a=-\langle x,x\rangle^{-1}\langle x,y\rangle$ when $\langle x,x\rangle$ is invertible, which cancels the two linear terms of the expansion, and approximate in general; the resulting inequality is the first statement. Taking norms and using the $C^*$-identity $\|a^*a\|=\|a\|^2$ and the inequality $\|u^* v\|\le\|u\|\|v\|$ gives $\|\langle x,y\rangle\|^2\leq\|x\|^2\|y\|^2$, whence the second. $\square$
+Choose $a=-\langle x,x\rangle^{-1}\langle x,y\rangle$ when $\langle x,x\rangle$ is invertible, which cancels the two linear terms of the expansion, and approximate in general; the resulting inequality is the first statement. Taking norms and using the $C^*$-identity $\|a^*a\|=\|a\|^2$ and the inequality $\|u^* v\|\le\|u\|\|v\|$ gives $\|\langle x,y\rangle\|^2\leq\|x\|^2\|y\|^2$, whence the second.
 
 **Theorem.** The $A$-valued norm $\|x\|=\|\langle x,x\rangle\|^{1/2}$ is a norm on $E$. It satisfies the parallelogram law
 
@@ -90,9 +90,9 @@ $$
 \|x+y\|^2=\|\langle x,x\rangle+\langle x,y\rangle+\langle y,x\rangle+\langle y,y\rangle\| \leq (\|x\|+\|y\|)^2.
 $$
 
-The parallelogram law fails in general because the cross terms need not cancel. For $A=\mathbb{C}^2$ and $E=A$ the elements $x=(1,0)$ and $y=(0,1)$ have $\|x\|=\|y\|=\|x+y\|=\|x-y\|=1$, so the left side is $2$ while the right side is $4$; for $A=C([0,1])$ and $E=A$ the elements $x=1$ and $y=t$ give $\|x\|^2=\|y\|^2=1$, $\|x+y\|^2=\|(1+t)^2\|=4$ and $\|x-y\|^2=\|(1-t)^2\|=1$, so the left side is $5$ while the right side is $4$, the norm of an element of $C([0,1])$ being its supremum. The law holds when the inner product is scalar-valued, and it can fail as soon as $A$ is larger than $\mathbb{C}$. $\square$
+The parallelogram law fails in general because the cross terms need not cancel. For $A=\mathbb{C}^2$ and $E=A$ the elements $x=(1,0)$ and $y=(0,1)$ have $\|x\|=\|y\|=\|x+y\|=\|x-y\|=1$, so the left side is $2$ while the right side is $4$; for $A=C([0,1])$ and $E=A$ the elements $x=1$ and $y=t$ give $\|x\|^2=\|y\|^2=1$, $\|x+y\|^2=\|(1+t)^2\|=4$ and $\|x-y\|^2=\|(1-t)^2\|=1$, so the left side is $5$ while the right side is $4$, the norm of an element of $C([0,1])$ being its supremum. The law holds when the inner product is scalar-valued, and it can fail as soon as $A$ is larger than $\mathbb{C}$.
 
-Completeness makes $E$ a Banach space over $\mathbb{C}$ and gives the norm its analytic content. In the finite-dimensional examples of §Examples and §The Defining Module of the Biquaternion Algebra completeness is automatic.
+Completeness makes $E$ a Banach space over $\mathbb{C}$ and gives the norm its analytic content. In the finite-dimensional examples of §Examples and §The Defining Module as an Imprimitivity Bimodule completeness is automatic.
 
 ## Examples
 
@@ -110,7 +110,7 @@ is a right Hilbert $A$-module. Axiom 1 is associativity, axiom 2 is $(a^*b)^*=b^
 
 **(d) Continuous fields.** For a compact Hausdorff space $X$ and $A=C(X)$, a finitely generated projective Hilbert $C(X)$-module corresponds to a continuous field of finite-dimensional Hilbert spaces on $X$; this is the $C^*$-algebraic form of the Serre–Swan theorem and is the standard source of non-complemented submodules, as in §Submodules and Complements. It is mentioned here only to record that the theory is not exhausted by the free modules of example (a).
 
-**(e) The defining module.** For the biquaternion algebra $\mathbb{B}\cong M_2(\mathbb{C})$ and $S=\mathbb{C}^2$, the scalar-valued form $\langle u,v\rangle_{\mathbb{C}}=u^*v$ makes $S$ a right Hilbert $\mathbb{C}$-module, that is, a Hilbert space, and the $\mathbb{B}$-valued form ${}_{\mathbb{B}}\langle u,v\rangle=uv^*$ makes $S$ a left Hilbert $\mathbb{B}$-module; the conjugate transpose written ${}^*$ here is the Hermitian conjugation written ${}^\dagger$ in the quaternionic articles. Both forms are used in §The Defining Module of the Biquaternion Algebra.
+**(e) The defining module.** For the biquaternion algebra $\mathbb{B}\cong M_2(\mathbb{C})$ and $S=\mathbb{C}^2$, the scalar-valued form $\langle u,v\rangle_{\mathbb{C}}=u^*v$ makes $S$ a right Hilbert $\mathbb{C}$-module, that is, a Hilbert space, and the $\mathbb{B}$-valued form ${}_{\mathbb{B}}\langle u,v\rangle=uv^*$ makes $S$ a left Hilbert $\mathbb{B}$-module; the conjugate transpose written ${}^*$ here is the Hermitian conjugation written ${}^\dagger$ in the quaternionic articles. Both forms are used in §The Defining Module as an Imprimitivity Bimodule.
 
 ## Operators
 
@@ -128,7 +128,7 @@ The adjointable maps form a category closed under composition, but adjointabilit
 
 **Proposition.** A bounded $A$-linear map between Hilbert $A$-modules need not be adjointable, and a closed submodule of a Hilbert $A$-module need not be a direct summand.
 
-*Proof sketch.* Take $A=C([0,1])$ and $E=A$ with $\langle a,b\rangle=a^*b$, and let $N=\{a \in A : a(t)=0 \text{ for } t \in [0,\tfrac12]\}$. Then $N$ is a closed $A$-submodule, and $N^\perp=\{a\in A : a(t)=0 \text{ for } t>\tfrac12\}$, so $N+N^\perp$ is contained in the proper closed submodule $\{a : a(\tfrac12)=0\}$ and $E=N\oplus N^\perp$ fails. If the inclusion $\iota: N\hookrightarrow E$, which is bounded and $A$-linear, had an adjoint $\iota^*$, then $\iota^*(y)$ would be an element of $N$ with $y-\iota^*(y) \in N^\perp$ for every $y$; summing such a decomposition would give $E=N+N^\perp$, a contradiction. So a bounded $A$-linear map need not be adjointable, and a closed submodule need not be a direct summand. $\square$
+*Proof sketch.* Take $A=C([0,1])$ and $E=A$ with $\langle a,b\rangle=a^*b$, and let $N=\{a \in A : a(t)=0 \text{ for } t \in [0,\tfrac12]\}$. Then $N$ is a closed $A$-submodule, and $N^\perp=\{a\in A : a(t)=0 \text{ for } t>\tfrac12\}$, so $N+N^\perp$ is contained in the proper closed submodule $\{a : a(\tfrac12)=0\}$ and $E=N\oplus N^\perp$ fails. If the inclusion $\iota: N\hookrightarrow E$, which is bounded and $A$-linear, had an adjoint $\iota^*$, then $\iota^*(y)$ would be an element of $N$ with $y-\iota^*(y) \in N^\perp$ for every $y$; summing such a decomposition would give $E=N+N^\perp$, a contradiction. So a bounded $A$-linear map need not be adjointable, and a closed submodule need not be a direct summand.
 
 The obstruction disappears for the finitely generated projective modules, which are exactly the self-dual modules of §Submodules and Complements, and in that case the operator theory is the matrix theory of the algebraic articles.
 
@@ -207,7 +207,7 @@ $$
 
 and $\prod_i M_{n_i}(\mathbb{C})$ is Morita equivalent, as a $C^*$-algebra, to the commutative algebra $\mathbb{C}^r$: the imprimitivity bimodule is $\bigoplus_i \mathbb{C}^{n_i}$, with $\mathbb{C}^{n_i}$ carrying the $M_{n_i}(\mathbb{C})$-$\mathbb{C}$-bimodule structure of §Examples (e). Hence every finite-dimensional $C^*$-algebra is Morita equivalent to a commutative one, namely the algebra of functions on its finite spectrum. This is the $C^*$-algebraic form of the reduction of a semisimple algebra to its basic algebra in *Morita Equivalence*, and it is sharp: the Morita class records only the number $r$ of simple summands, not the sizes $n_i$.
 
-## The Defining Module of the Biquaternion Algebra
+## The Defining Module as an Imprimitivity Bimodule
 
 Let $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}\cong M_2(\mathbb{C})$ and let
 
@@ -221,7 +221,7 @@ $$
 \langle u,v\rangle_{\mathbb{C}}=u^*v \in \mathbb{C}, \qquad {}_{\mathbb{B}}\langle u,v\rangle=uv^* \in \mathbb{B},
 $$
 
-writing vectors as columns and $u^*=\bar{u}^{\mathsf{T}}$ for the conjugate transpose. The first is the standard $\mathbb{C}$-valued inner product making $S$ a right Hilbert $\mathbb{C}$-module, equivalently a Hilbert space; it is the Hermitian form $u^{\dagger}v$ of *The Defining Module of the Biquaternion Algebra*, written here with the $C^*$-involution ${}^*$ of this article in place of the symbol ${}^\dagger$ of the quaternionic articles, which denotes the same conjugate transpose. The second is its $\mathbb{B}$-valued companion $uv^{\dagger}$, the form that makes $S$ a left Hilbert $\mathbb{B}$-module. The invariant bilinear form $u^{\mathsf T}\epsilon v$ of that article is a different form, alternating rather than Hermitian, and is not an inner product.
+writing vectors as columns and $u^*=\bar{u}^{\mathsf{T}}$ for the conjugate transpose. The first is the standard $\mathbb{C}$-valued inner product making $S$ a right Hilbert $\mathbb{C}$-module, equivalently a Hilbert space; it is the Hermitian form $u^{\dagger}v$ of the defining module, written here with the $C^*$-involution ${}^*$ of this article in place of the symbol ${}^\dagger$ of the quaternionic articles, which denotes the same conjugate transpose. The second is its $\mathbb{B}$-valued companion $uv^{\dagger}$, the form that makes $S$ a left Hilbert $\mathbb{B}$-module. The invariant alternating form $u^{\mathsf T}\epsilon v$ of the quaternion articles is a different form and is not an inner product.
 
 The following properties are verified directly.
 

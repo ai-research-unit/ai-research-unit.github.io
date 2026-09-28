@@ -25,7 +25,7 @@ The Clifford algebra is the universal solution of the relation $v^2 = q(v)$, and
 | the volume element $\omega = e_1\cdots e_n$ | $\omega^2 = (-1)^{n(n-1)/2}\prod_i q(e_i)$; it decides the centre in odd dimension | *Clifford Algebras in Finite Dimensions*; *Bott Periodicity and the Classification* |
 | the exterior algebra as the case $q = 0$ | $\Lambda(V) = \mathrm{Cl}(V,0)$; the Clifford algebra is a deformation of it | *The Clifford Algebra* |
 | the degenerate case | a degenerate $q$ gives a Clifford algebra whose radical is an ideal; the non-degenerate factor and the nilpotent factor are separated | *Clifford Algebras in Finite Dimensions*; *Degenerate Clifford Algebras and the Radical* |
-| the bivectors and the Lie algebra | $\mathfrak{so}(V,q) \cong \Lambda^2V$ inside the Clifford algebra; the bivectors form a Lie algebra under the commutator | *The Clifford Algebra as a Lie Algebra* |
+| the bivectors and the Lie algebra | $\mathrm{SO}(V,q) \cong \Lambda^2V$ inside the Clifford algebra; the bivectors form a Lie algebra under the commutator | *The Clifford Algebra as a Lie Algebra* |
 | the trace and the centre | the centre is $F$, $F(\sqrt\delta)$ or $F \times F$ according to the parity of $n$ and the class of $\delta = \omega^2$ | *Bott Periodicity and the Classification* |
 | the spin factor | the Jordan algebra $JSpin(V) = R\cdot1 \oplus V$; its Clifford envelope | *Spin Factors and the Clifford Envelope* |
 
@@ -84,9 +84,9 @@ A Clifford module is a module over the Clifford algebra, and the spinor module i
 | the spinor module from a maximal isotropic subspace | $\Delta = \Lambda^\bullet W$ for $V = W \oplus W'$; the Clifford action $c(w + w') = \varepsilon(w) + \iota(w')$ | *Spin Representations and Clifford Modules* |
 | the dimension of $\Delta$ | $2^m$ over $\mathbb{C}$ for $n = 2m$ or $2m+1$; the module is $D^k$ in the real cases | *Spin Representations and Clifford Modules*; *Bott Periodicity and the Classification* |
 | chirality and the half-spin representations | in even dimension $\Delta = \Delta_+ \oplus \Delta_-$ by the volume element; the half-spin representations $\rho_\pm$ | *Spin Representations and Clifford Modules* |
-| the infinitesimal spin representation | $d\rho(v \wedge w) = \tfrac14[c(v),c(w)]$ on $\mathfrak{so}(V,q) \cong \Lambda^2V$ | *Spin Representations and Clifford Modules* |
+| the infinitesimal spin representation | $d\rho(v \wedge w) = \tfrac14[c(v),c(w)]$ on $\mathrm{SO}(V,q) \cong \Lambda^2V$ | *Spin Representations and Clifford Modules* |
 | the real, complex and quaternionic spinors | the reality structures by $d \bmod 8$; Majorana, Weyl and Majorana–Weyl spinors | *Real Spinors and Reality Conditions* |
-| the biquaternion spinor module | the spinor module of the biquaternion algebra $\mathbb{B} \cong M_2(\mathbb{C})$; its defining module is of complex type | *Spinors and the Biquaternion Spinor Module*; *The Biquaternion Algebra as a Clifford Algebra* |
+| the biquaternion spinor module | the spinor module of the biquaternion algebra $\mathbb{B} \cong M_2(\mathbb{C})$; its defining module is of complex type | *Biquaternion Spin Geometry*; *The Clifford Structure of the Biquaternion Algebra* |
 | the spinor bundle and the Dirac operator | the geometric realisation of a Clifford module over a manifold | *Spin Geometry*; *Dirac Operators* |
 
 ## Non-examples and Warnings
@@ -98,7 +98,7 @@ A Clifford module is a module over the Clifford algebra, and the spinor module i
 | the Pin group | it double covers $O(V,q)$, which is disconnected; the connected component is covered by Spin | *The Clifford, Pin and Spin Groups* |
 | the spin representation of $SO(n)$ | it is a representation of $\mathrm{Spin}(n)$ and not of $SO(n)$: $\rho(-1) = -\mathrm{id}_S$, so the sign of the double cover survives; a half-spin representation can have a larger kernel, as $\mathrm{Spin}(4) \cong Sp(1)\times Sp(1)$ on $\Delta_+$ with kernel $\{1\}\times Sp(1)$ | *Spin Representations and Clifford Modules* |
 | the identification $\mathrm{Spin}(n) \cong SO(n)$ | it fails for every $n \geq 3$; the covering is two-to-one and non-trivial | *The Clifford, Pin and Spin Groups*; *Matrix Groups and Classical Groups* |
-| the biquaternion algebra as a division algebra | $\mathbb{B} \cong M_2(\mathbb{C})$ is not a division algebra; it is a Clifford algebra of complex type | *The Biquaternion Algebra as a Clifford Algebra*; *List of Division Algebras* |
+| the biquaternion algebra as a division algebra | $\mathbb{B} \cong M_2(\mathbb{C})$ is not a division algebra; it is a Clifford algebra of complex type | *The Clifford Structure of the Biquaternion Algebra*; *List of Division Algebras* |
 | the odd-dimensional Clifford algebra | for $n$ odd and $\delta$ a square it is a product $A \times A$ with two distinct irreducible modules, so the spinor module is not unique; the volume element exchanges the two | *Bott Periodicity and the Classification* |
 | a spin structure on a manifold | it is a bundle-theoretic datum, a principal $\mathrm{Spin}(n)$-bundle lifting the frame bundle, and not a Clifford algebra | *Spin Geometry* |
 
@@ -108,13 +108,13 @@ Objects that a reader may expect in a list of Clifford algebras and spin groups,
 |---|---|---|
 | the orthogonal group $O(V,q)$ | it is the group that Pin covers and is catalogued with the classical geometric groups | *List of Classical Geometric Groups* |
 | the projective orthogonal group $PO(V,q)$ | it is the quotient by the centre and is catalogued with the projective groups | *List of Projective Geometric Groups* |
-| the octonions and the exceptional groups | the octonion algebra is not a Clifford algebra of the standard kind and is recorded with the norm forms and the exceptional Lie groups; $G_2 = \operatorname{Aut}(\mathbb{O})$ | *Quadratic Forms over Algebras and Norm Forms*; *Octonions and the Exceptional Lie Groups* |
+| the octonions and the exceptional groups | the octonion algebra is not a Clifford algebra of the standard kind and is recorded with the norms and the exceptional Lie groups; $G_2 = \operatorname{Aut}(\mathbb{O})$ | *Quadratic Forms over Algebras and Norms*; *Octonions and the Exceptional Lie Groups* |
 | the Dirac and Weyl operators | they are differential operators on a spin manifold, catalogued with the differential operators | *Dirac Operators*; *Spin Geometry* |
 | the infinite-dimensional Clifford algebras and CAR | they carry a topology and a $C^*$-algebraic structure, outside the finite-dimensional classification | *Infinite-Dimensional Clifford Algebras and CAR* |
 
 ## Summary
 
-This article has listed the Clifford algebras and spin groups of the corpus: the algebra $\mathrm{Cl}(V,q)$ with its universal property, parity grading, grade involution, the two anti-involutions and the graded tensor product, the volume element and the bivectors that form $\mathfrak{so}(V,q)$; the classification by complex period two and real period eight, with the rank-eight algebra $M_{16}(F)$ and the eightfold table of real, complex and quaternionic spinors; the Clifford, Pin and Spin groups with the twisted adjoint action, the double covers of the orthogonal groups and the low-dimensional identifications $\mathrm{Spin}(3) \cong Sp(1)$, $\mathrm{Spin}(4) \cong Sp(1) \times Sp(1)$, $\mathrm{Spin}(5) \cong Sp(2)$, $\mathrm{Spin}(6) \cong SU(4)$; and the spinor modules with their chirality splitting and reality conditions. Beside the examples stand the non-examples: the split algebra $F\times F$ with its zero divisors, the degenerate case with its nilpotent radical, the disconnected Pin group, the spin representation that belongs to $\mathrm{Spin}$ and not to $SO$, and the odd-dimensional algebra with two distinct irreducible modules. The list introduces and proves nothing; it is the index of the Clifford layer of the corpus.
+This article has listed the Clifford algebras and spin groups of the corpus: the algebra $\mathrm{Cl}(V,q)$ with its universal property, parity grading, grade involution, the two anti-involutions and the graded tensor product, the volume element and the bivectors that form $\mathrm{SO}(V,q)$; the classification by complex period two and real period eight, with the rank-eight algebra $M_{16}(F)$ and the eightfold table of real, complex and quaternionic spinors; the Clifford, Pin and Spin groups with the twisted adjoint action, the double covers of the orthogonal groups and the low-dimensional identifications $\mathrm{Spin}(3) \cong Sp(1)$, $\mathrm{Spin}(4) \cong Sp(1) \times Sp(1)$, $\mathrm{Spin}(5) \cong Sp(2)$, $\mathrm{Spin}(6) \cong SU(4)$; and the spinor modules with their chirality splitting and reality conditions. Beside the examples stand the non-examples: the split algebra $F\times F$ with its zero divisors, the degenerate case with its nilpotent radical, the disconnected Pin group, the spin representation that belongs to $\mathrm{Spin}$ and not to $SO$, and the odd-dimensional algebra with two distinct irreducible modules. The list introduces and proves nothing; it is the index of the Clifford layer of the corpus.
 
 ## Summary of Notation
 

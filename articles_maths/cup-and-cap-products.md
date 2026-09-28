@@ -37,7 +37,7 @@ $$
 \smile : H^k(X;R) \times H^l(X;R) \longrightarrow H^{k+l}(X;R).
 $$
 
-*Proof.* Evaluate both sides on a singular $(k+l+1)$-simplex $\sigma$. The left side is a signed sum over the facets of $\sigma$ of products of the front and back evaluations; the right side expands by the boundary formula, and the terms with the omitted vertex in the interior of $[v_0,\ldots,v_k]$ regroup into the first summand, those with the omitted vertex in the interior of $[v_k,\ldots,v_{k+l}]$ into the second with the sign $(-1)^k$ emerging from the index shift, and the two terms at the shared vertex $v_k$ cancel between the two summands. $\square$
+*Proof.* Evaluate both sides on a singular $(k+l+1)$-simplex $\sigma$. The left side is a signed sum over the facets of $\sigma$ of products of the front and back evaluations; the right side expands by the boundary formula, and the terms with the omitted vertex in the interior of $[v_0,\ldots,v_k]$ regroup into the first summand, those with the omitted vertex in the interior of $[v_k,\ldots,v_{k+l}]$ into the second with the sign $(-1)^k$ emerging from the index shift, and the two terms at the shared vertex $v_k$ cancel between the two summands.
 
 ### Properties
 
@@ -48,7 +48,7 @@ $$
 3. $\varphi \smile \psi = (-1)^{|\varphi||\psi|}\, \psi \smile \varphi$;
 4. for a continuous map $f : X \to Y$, $f^*(\varphi \smile \psi) = f^*\varphi \smile f^*\psi$.
 
-*Proof.* Associativity is the identity of the front and back face decompositions of a simplex into three consecutive blocks: both sides evaluate a triple $(\varphi,\psi,\theta)$ at the three blocks $[v_0..v_k]$, $[v_k..v_{k+l}]$, $[v_{k+l}..v_{k+l+m}]$ of a simplex, the only difference being the order in which the restrictions are taken, and the face maps commute. Unitality is the observation that the front $0$-face of any simplex is its initial vertex. Graded commutativity is proved by a chain homotopy: the **shuffle map** $\rho : C_{k+l}(X) \to C_{k+l}(X)$ sending a simplex to the alternating sum of the $(k,l)$-shuffles satisfies $\rho \simeq (-1)^{kl}\mathrm{id}$, and comparing $\varphi \smile \psi$ with $\psi \smile \varphi$ precomposed with $\rho$ gives the sign. Naturality is immediate from $f_\#(\sigma) = f \circ \sigma$ and the definition. $\square$
+*Proof.* Associativity is the identity of the front and back face decompositions of a simplex into three consecutive blocks: both sides evaluate a triple $(\varphi,\psi,\theta)$ at the three blocks $[v_0..v_k]$, $[v_k..v_{k+l}]$, $[v_{k+l}..v_{k+l+m}]$ of a simplex, the only difference being the order in which the restrictions are taken, and the face maps commute. Unitality is the observation that the front $0$-face of any simplex is its initial vertex. Graded commutativity is proved by a chain homotopy: the **shuffle map** $\rho : C_{k+l}(X) \to C_{k+l}(X)$ sending a simplex to the alternating sum of the $(k,l)$-shuffles satisfies $\rho \simeq (-1)^{kl}\mathrm{id}$, and comparing $\varphi \smile \psi$ with $\psi \smile \varphi$ precomposed with $\rho$ gives the sign. Naturality is immediate from $f_\#(\sigma) = f \circ \sigma$ and the definition.
 
 **Corollary.** $H^*(X;R)$ is an associative graded ring with unit, and the cup product makes it a graded-commutative algebra: for classes $x$ of even degree, $x \smile y = y \smile x$, and for $x$ of odd degree, $x \smile x = -x \smile x$, so $2(x \smile x) = 0$ and $x \smile x = 0$ when $R$ has no $2$-torsion.
 
@@ -90,7 +90,7 @@ $$
 
 which is well defined because a cycle capped with a cocycle is a cycle and a boundary capped with a cocycle, or a cycle capped with a coboundary, is a boundary.
 
-*Proof.* Evaluate the boundary of the chain $c \frown \varphi$ on the facets of a simplex. The facets not containing the block $[v_0..v_k]$ reassemble into $(\partial c) \frown \varphi$, and those meeting the block into $c \frown \delta\varphi$; the signs collected from the boundary formula give $(-1)^k$ and the stated difference. $\square$
+*Proof.* Evaluate the boundary of the chain $c \frown \varphi$ on the facets of a simplex. The facets not containing the block $[v_0..v_k]$ reassemble into $(\partial c) \frown \varphi$, and those meeting the block into $c \frown \delta\varphi$; the signs collected from the boundary formula give $(-1)^k$ and the stated difference.
 
 ### Properties
 
@@ -102,7 +102,7 @@ which is well defined because a cycle capped with a cocycle is a cycle and a bou
 3. **Projection formula:** $f_*(f^*(c') \frown \varphi) = c' \frown f_*\varphi$ for $c' \in H_*(Y;R)$;
 4. the unit acts trivially: $c \frown 1 = c$.
 
-*Proof.* All four are verified at the cochain level by the same face-decomposition computation as the Leibniz rule; the second and third are the statements that $f_\#$ is a module map over the cochain pullback $f^\#$ for the cap pairing, which follows from $f_\#(\sigma \frown f^\#\psi) = f_\#(\sigma) \frown \psi$ applied simplex by simplex. $\square$
+*Proof.* All four are verified at the cochain level by the same face-decomposition computation as the Leibniz rule; the second and third are the statements that $f_\#$ is a module map over the cochain pullback $f^\#$ for the cap pairing, which follows from $f_\#(\sigma \frown f^\#\psi) = f_\#(\sigma) \frown \psi$ applied simplex by simplex.
 
 **Corollary.** For each $k$, the cap product makes $H_*(X;R)$ a graded module over the graded ring $H^*(X;R)$: the assignment $(c,\varphi) \mapsto c \frown \varphi$ is a graded bilinear pairing with $c \frown (\varphi \smile \psi) = (c \frown \varphi) \frown \psi$. This module structure is the algebraic object whose properties Poincaré duality describes.
 
@@ -148,7 +148,7 @@ $$
 
 is non-natural. The functor $\operatorname{Tor}_1^R$ is the one of Part I's *Ext and Tor*, written in parallel.
 
-*Proof sketch.* For each $n$ the Eilenberg–Zilber map gives a natural map $\bigoplus_{i+j=n}H_i(X)\otimes H_j(Y) \to H_n(X\times Y)$, and the cokernel is the Tor term; the argument is the algebraic Künneth theorem for chain complexes of free modules over a principal ideal domain, applied to $C_*(X;R)\otimes_R C_*(Y;R) \to C_*(X\times Y;R)$. $\square$
+*Proof sketch.* For each $n$ the Eilenberg–Zilber map gives a natural map $\bigoplus_{i+j=n}H_i(X)\otimes H_j(Y) \to H_n(X\times Y)$, and the cokernel is the Tor term; the argument is the algebraic Künneth theorem for chain complexes of free modules over a principal ideal domain, applied to $C_*(X;R)\otimes_R C_*(Y;R) \to C_*(X\times Y;R)$.
 
 **Corollary (field coefficients).** If $R = F$ is a field then $\operatorname{Tor}_1^F = 0$, so the cross product is an isomorphism
 
@@ -184,7 +184,7 @@ $$
 
 a truncated polynomial algebra on an odd generator over $\mathbb{Z}/2$; integrally the cohomology is $\mathbb{Z}$ in degrees $0$ and $n$ (the latter for $n$ odd) and $\mathbb{Z}/2$ in the odd degrees below $n$.
 
-*Proof.* The cell structure of *CW Complexes and Cellular Approximation* has one cell in each even degree up to $2n$ for $\mathbb{CP}^n$ and one in each degree up to $n$ for $\mathbb{RP}^n$, with all cellular coboundaries zero for $\mathbb{CP}^n$ and the duals of multiplication by $1+(-1)^k$ for $\mathbb{RP}^n$; hence the additive groups are as stated. The ring structure is determined by the fact that the generator $x$ in degree $2$ (respectively degree $1$) has nonzero $k$-th power in degree $2k \leq 2n$ (respectively $k \leq n$), because the top class is the dual of the top cell and is a product of lower classes; the nonvanishing is computed by evaluating $x^k$ on the fundamental class of the appropriate $\mathbb{CP}^k \subseteq \mathbb{CP}^n$. $\square$
+*Proof.* The cell structure of *CW Complexes and Cellular Approximation* has one cell in each even degree up to $2n$ for $\mathbb{CP}^n$ and one in each degree up to $n$ for $\mathbb{RP}^n$, with all cellular coboundaries zero for $\mathbb{CP}^n$ and the duals of multiplication by $1+(-1)^k$ for $\mathbb{RP}^n$; hence the additive groups are as stated. The ring structure is determined by the fact that the generator $x$ in degree $2$ (respectively degree $1$) has nonzero $k$-th power in degree $2k \leq 2n$ (respectively $k \leq n$), because the top class is the dual of the top cell and is a product of lower classes; the nonvanishing is computed by evaluating $x^k$ on the fundamental class of the appropriate $\mathbb{CP}^k \subseteq \mathbb{CP}^n$.
 
 **Remark.** The cup product therefore distinguishes $\mathbb{CP}^2$ from $S^2 \vee S^4$: both have $\mathbb{Z}$ in degrees $0,2,4$ and zero elsewhere, but in the cohomology ring of $\mathbb{CP}^2$ the degree-two generator squares to the degree-four generator while in the wedge the product of the two generators is zero. The ring is a strictly finer invariant than the graded group.
 

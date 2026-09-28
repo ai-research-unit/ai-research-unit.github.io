@@ -8,7 +8,7 @@ The corpus is a single edifice rather than a collection of subjects. One family 
 
 Three consequences explain most of the decisions recorded below, and they are worth stating at once.
 
-- **An article never uses a structure that the corpus has not yet introduced.** The reader is never asked to know a distance while reading the algebra.
+- **An article never uses a structure that the corpus has not yet introduced.** The reader is never asked to know a distance while reading the algebra; a **norm** and a **form** are distances, so neither is met in Part I either.
 - **When a new structure is introduced, every earlier object re-read through it belongs to the new category.** The article on topological groups is a topology article, not a group-theory article.
 - **An article depends on nothing.** Within a category the articles are mutually dependent, and a use of something the category introduces further on is stated in line and marked; across a category boundary the dependency is excluded.
 
@@ -20,7 +20,7 @@ These rules are stated precisely in *The Three Rules of the Ordering* below.
 
 Algebra builds the objects themselves, and nothing else. It begins with sets, functions and relations, with the logic of proof, with cardinality and the axiom of choice, and with universal properties; it then adds structure in successive layers — a group law, a second operation making a ring and then a field, an action of scalars making a linear space, and finally a multiplication turning that space into a linear algebra. Symmetric linear algebras, anti-symmetric linear algebras and the linear spaces over a linear algebra complete the part.
 
-Nothing in Part I refers to a distance, a norm, a limit, a form or a manifold. This is the meaning of the statement that **algebra is clean**: the part is developed without topology, and every concept that would require it is deferred to Part II.
+Nothing in Part I refers to a distance, a norm, a limit, a form or a manifold. **A norm is a distance, and a form is the distance its norm reads off**; both are therefore topological, and neither is algebraic. This is the meaning of the statement that **algebra is clean**: the part is developed without topology, and every concept that would require it is deferred to Part II.
 
 ### Part II : Topology
 
@@ -109,7 +109,7 @@ Above *Linear Algebras* the ladder has no further object rung: a distance and a 
 
 ### Rule 1 — No part may use a structure it has not yet introduced
 
-An article may use the language of its own part and of the parts below it, and nothing else. This is a constraint on the *writing*, not merely on the placement: an article of Part I may not name a distance, a norm, a completion taken as a limit, a form, a manifold, an orthogonal or special orthogonal group, or a rotation. Where such a concept is genuinely needed, the article states the result in the language it has and **defers the enriched statement** to the category that owns the structure, with an explicit forward reference of the form *"this is treated in Part II, where the form and the distance are available"*.
+An article may use the language of its own part and of the parts below it, and nothing else. This is a constraint on the *writing*, not merely on the placement: an article of Part I may not name a distance, a norm (a norm is a distance), a form (a form is the distance its norm reads off), a completion taken as a limit, a manifold, an orthogonal or special orthogonal group, or a rotation. Where such a concept is genuinely needed, the article states the result in the language it has and **defers the enriched statement** to the category that owns the structure, with an explicit forward reference of the form *"this is treated in Part II, where the form and the distance are available"*.
 
 The rule is applied to the articles' descriptions in the menu as well as to the articles. A description that mentions a structure belonging to a later part is corrected, not tolerated. The consequence is that a reader can read Part I from beginning to end without ever meeting an undefined distance.
 
@@ -187,6 +187,13 @@ The whole ordering turns on one concept. **Distance is the boundary.** Algebra i
 
 The line runs through single objects, so each case is settled on its own. $GL$ and $SL$ are algebra, since they need no distance; the continuity of a linear map is topology. A determinant is algebra; an operator norm is topology. An inverse limit of rings is algebra, because its limit is an order-theoretic construction and not a topological one. A distance can be defined on a bare set, so the theory of distance needs no algebra beyond sets and the reals; a norm cannot, since it is defined by scaling, so the theory of normed spaces sits in the linear-spaces slot of Part II.
 
+**A norm, and the form that defines it, are distances.** The two words conceal their topological nature, so the ruling is stated flatly.
+
+- A **norm** is a distance in the literal sense: $\lVert x-y\rVert$ is a metric on the space, and the open balls it defines are the topology the norm induces. A norm is a distance written on a linear space.
+- A **form** is a distance as well. Its squared length is the quadratic form $Q(x)=B(x,x)$ — in an algebra, the **norm** $N$ — and a form is a distance-like pairing in exactly that sense. A form is a distance structure, not an algebraic one.
+
+A norm and the form that defines it therefore belong to **Part II : Topology**, and never to Part I : Algebra. A norm sits in the linear-spaces slot, *Topology on Linear Spaces*; a form sits in the further subject *Forms, Clifford Algebras and Spinors*. An article of Part I may name a norm or a form only as a forward reference; it may not define one, prove anything with one, or read a length, a signature or a unit sphere off one. In particular the **norm** of an algebra, even though its formula is written with the algebra's product, is a distance and is owned by Topology.
+
 ### Topology and Analysis: the derivative and the measure
 
 Topology is the theory of the distance and of the limit as a topological notion. Analysis begins when the distance is used **quantitatively** — when a quantity is differentiated or averaged. The two limits of analysis are the derivative, which needs a norm, and the integral, which needs a measure, and neither is supplied by a topology alone. This line also runs through single subjects. A derivative belongs to Analysis, and so does the smooth manifold, a smooth structure being a differentiable one; the local existence and uniqueness of an ordinary differential equation belongs to Analysis with the rest of the calculus. Integration, the $L^p$ spaces, the analytic functions, the distributions, the spectral theory and the ergodic theory belong to Analysis, each because its definition uses a measure or an integral. The same rule settles the measure a **group** carries. A locally compact group is a topological object, so the group is Part II's; but its **Haar measure** is a measure, and no topology supplies one, so the measure — its existence, uniqueness and invariance, the modular function and the homogeneous-space measure — is Analysis, and so is everything built on it. The article *Locally Compact Groups and Haar Measure*, once the last structural article of *Topology on Groups*, therefore opens *Analysis on Groups* in Part III.
@@ -209,15 +216,19 @@ The tests govern what a part may **reason with**, not what it may **name**. An a
 
 A statement belongs to Algebra only if its definition and its proof can be written without any of the following. If one of them is needed, the subject belongs to a later part, and the bracket names where.
 
-> **nothing topological** — distance, metric, norm, uniform structure, ball, open set, closed set, neighbourhood, continuity, convergence, limit, completeness, compactness, *and the forms* [Part II];
+> **nothing topological** — distance, metric, **norm (a norm is a distance)**, uniform structure, ball, open set, closed set, neighbourhood, continuity, convergence, limit, completeness, compactness, *and the forms (a form is the distance its norm reads off)* [Part II];
 > **nothing analytic** — derivative, differentiability, smooth structure, atlas, tangent space, smooth manifold, differential form, measure, integral, $L^p$ space, probability [Part III];
 > **nothing geometric** — a chosen distance or form read as an object: curvature, geodesic, isometry, rotation, angle, orientation, figure [Part IV].
 
-The test is what the article *Automorphisms and Derivations of Algebras* states in its own words: an algebra automorphism preserves no length, angle or norm, because none is available at that layer, and the identification of $\operatorname{Inn}(\mathbb{H})$ with a rotation group is made in Part IV.
+**A norm is a distance, and a form is the distance its norm reads off.** Neither may appear in Algebra: a Part I article may not define a norm or name one, read a length or a signature off a form, or prove anything with one. The norm and the form are both **Part II**, the norm in *Topology on Linear Spaces* and the form in *Forms, Clifford Algebras and Spinors*.
+
+The same boundary governs the **inner product**. In Part I an inner product may be formed and evaluated to a scalar — $\langle x,y\rangle$, its vanishing, its nondegeneracy — but nothing may be measured with it: no length, no sign, no orthogonal or orthonormal decomposition.
+
+The test is what the article *Automorphisms and Derivations of Algebras* states in its own words: an algebra automorphism preserves no length, angle or volume, because none is available at that layer, and the identification of $\operatorname{Inn}(\mathbb{H})$ with a rotation group is made in Part IV.
 
 ### The test for Part II : Topology
 
-Topology is the layer of the distance, so it may use the distance, the topology the distance generates, and every notion defined by them — balls, open and closed sets, neighbourhoods, continuity, convergence, limits, completeness, compactness, uniform structures, and the forms a distance-like pairing makes possible. What it may not use is everything above.
+Topology is the layer of the distance, so it may use the distance — and therefore the **norm**, a norm being a distance, and the **form**, a form being the distance its norm reads off — the topology the distance generates, and every notion defined by them — balls, open and closed sets, neighbourhoods, continuity, convergence, limits, completeness, compactness, uniform structures, and the forms a distance-like pairing makes possible. What it may not use is everything above.
 
 > **nothing analytic** — derivative, differentiability, smooth structure, atlas, tangent space, smooth manifold, differential form, measure, integral, $L^p$ space, probability [Part III];
 > **nothing geometric** — a chosen distance or form read as an object: its curvature, its geodesics, its isometries, its rotations, its figures [Part IV].
@@ -242,6 +253,8 @@ Geometry has the reverse test. A statement belongs to Geometry only if it depend
 
 A theorem about all topological spaces is topology; a theorem about the geometry of one metric is geometry. The forms and the classical groups they define are the test at its sharpest: a form is a Part II structure, while the isometries the form defines are the motions of the space it defines, and the motions belong to Geometry.
 
+For the same reason the *Automorphisms and Derivations* article of a system sits in that system's Geometry slot: the automorphism group and its derivation space are read as the symmetries of the algebra — its motions — which is the geometric intent even when only algebraic tools are used, so the placement stands for the real system too, where both invariants are trivial, the triviality being a result and not a change of subject.
+
 ### The tests for Parts V and VI
 
 The last two parts are not layers, and their tests are different in kind.
@@ -254,7 +267,7 @@ The last two parts are not layers, and their tests are different in kind.
 | If the candidate needs | It belongs to |
 |---|---|
 | nothing beyond sets, groups, rings, fields, linear spaces and algebras | Part I : Algebra |
-| a distance, a topology or a form, and nothing above | Part II : Topology |
+| a distance, a norm or a form — a norm and its form being distances — and nothing above | Part II : Topology |
 | the derivative, the smooth structure, a measure or an integral | Part III : Analysis |
 | a chosen distance or form read as an object — its shape, its motions or its figures | Part IV : Geometry |
 | nothing of its own; names and pointers only | Part V : Catalogues |
@@ -361,14 +374,14 @@ The conventions below are those used throughout the corpus. They are stated once
 | $\mathbb{H}_{\mathrm{s}}$ | the split-quaternions, $\mathrm{Cl}_{1,1} \cong M_2(\mathbb{R})$ |
 | $\mathbb{O}$ | the octonions |
 | $G$ | a group; $R$ a ring; $k$, $F$ a field; $V$ a vector space; $M$ a module; $A$ an algebra |
-| $\mathfrak{g}, \mathfrak{h}, \mathfrak{sl}_n$ | Lie algebras, in Fraktur |
-| $\mathfrak{m}, \mathfrak{p}$ | ideals and prime ideals, in Fraktur |
+| $\mathrm{G}, \mathrm{H}, \mathrm{SL}_n$ | Lie algebras, in Fraktur |
+| $\mathrm{M}, \mathrm{P}$ | ideals and prime ideals, in Fraktur |
 | $\operatorname{Sym}(X), \operatorname{Aut}(X)$ | symmetric group of a set; automorphism group of a structure |
 | $\operatorname{End}(V), \operatorname{Der}(A), \operatorname{Inn}(A), \operatorname{Out}(A)$ | endomorphisms, derivations, inner and outer automorphisms |
 | $GL, SL, PGL, O, SO, U, SU, Sp$ | the classical groups |
 | $T(V), S(V), \Lambda(V), Cl(V,Q)$ | tensor, symmetric, exterior and Clifford algebras |
 | $V^{\otimes n}, S^n V, \Lambda^n V$ | tensor, symmetric and exterior powers |
-| $B(v,w), Q(v), N(x)$ | bilinear form, quadratic form, norm form |
+| $B(v,w), Q(v), N(x)$ | bilinear form, quadratic form, norm |
 | $\bar{\cdot}, {}^{*}, {}^{\dagger}, {}^{\flat}$ | the conjugations of an algebra with involution |
 
 ### Groups, rings and operations
@@ -377,7 +390,7 @@ A group is written multiplicatively by default, with unit $e$ and inverse $x^{-1
 
 ### Numbers of the corpus
 
-The four conjugations of the biquaternions are $\bar{\cdot}$ (quaternion conjugation), ${}^{*}$ (complex conjugation), ${}^{\dagger} = \bar{\cdot}{}^{*}$ (Hermitian conjugation) and ${}^{\flat} = -\bar{\cdot}{}^{*} = -{}^{\dagger}$ (anti-Hermitian conjugation). The two subspaces $\mathbb{M}_{-}$ and $\mathbb{M}_{+}$ are the anti-Hermitian and Hermitian parts, and the norm form is $N(x) = \sum_\mu x_\mu^2$, which vanishes on the zero divisors. The same symbol denotes the same object across the whole corpus: $\mathbb{B}$ is always the biquaternion algebra and $\mathbb{H}$ always the real quaternions.
+The four conjugations of the biquaternions are $\bar{\cdot}$ (quaternion conjugation), ${}^{*}$ (complex conjugation), ${}^{\dagger} = \bar{\cdot}{}^{*}$ (Hermitian conjugation) and ${}^{\flat} = -\bar{\cdot}{}^{*} = -{}^{\dagger}$ (anti-Hermitian conjugation). The two subspaces $\mathbb{M}_{-}$ and $\mathbb{M}_{+}$ are the anti-Hermitian and Hermitian parts, and the norm is $N(x) = \sum_\mu x_\mu^2$, which vanishes on the zero divisors. The same symbol denotes the same object across the whole corpus: $\mathbb{B}$ is always the biquaternion algebra and $\mathbb{H}$ always the real quaternions.
 
 ### Case and tildes: the number systems
 
@@ -417,7 +430,7 @@ The corpus has a small number of working conventions that are not mathematical.
 
 **The category names and numbers.** The menu numbers its categories, and an article elsewhere in the corpus may address one by number rather than by name: *category n* means the n-th category of the mathematical menu, read in order. This article refers to categories by **name** throughout, because the names are the stable thing and the numbers shift whenever a category is inserted or split. A reader who meets a bare number in another article can resolve it in the menu.
 
-**The article files.** The corpus is split into two collections, each with its own folder: a mathematical article is a file `articles_maths/<slug>.md` and a physical article is a file `articles_physics/<slug>.md`, where the slug is the title in lower case with hyphens in place of spaces and punctuation. The folder and the menu agree — an article lies in the folder whose menu lists it, and no article lies in both. Each article has a companion `<slug>.thinking` beside it in the same folder, recording the sources consulted and the authoring decisions taken; the companion is not part of the published corpus and is inert for the build.
+**The article files.** The corpus is split into two collections, each with its own folder: a mathematical article is a file `articles_maths/<slug>.md` and a physical article is a file `articles_physics/<slug>.md`, where the slug is the title in lower case with hyphens in place of spaces and punctuation. The folder and the menu agree — an article lies in the folder whose menu lists it, and no article lies in both.
 
 **The article skeleton.** Every article opens with its title as the first heading, followed by an *Introduction* that states what the article does and what it assumes, then the thematic sections, and closes with three sections in this order: *Summary*, *Summary of Notation*, and *Further Reading*. The introduction states the article's boundaries — what it deliberately does not cover, and where the reader will find it.
 
@@ -425,7 +438,7 @@ The corpus has a small number of working conventions that are not mathematical.
 
 ## Summary
 
-The mathematical corpus is organised in six parts. Part I, Algebra, builds the objects — sets, groups, rings and fields, linear spaces, linear algebras — and uses nothing but those objects. Part II, Topology, places a distance on each of them in turn, and owns the forms, the Clifford algebras and the spinors that the distance makes possible, together with the algebraic topology, the sheaves and the algebraic geometry built on its cohomology. Part III, Analysis, uses the derivative and the measure that the distance supplies — the differential calculus, the smooth manifolds and the differential topology, the Lie groups, the integration, the analytic functions, the spectral theory, the differential equations, and the probability, the ergodic theory and the dynamical systems that only a limit can define. Part IV, Geometry, reads the distance as an object rather than as a tool: its shape, its motions, its figures and its settings, and its synthesis with analysis in Hodge theory, the index theorem and the geometric flows. Part V, Catalogues, gathers the objects of Parts I to IV into transversal lists, one kind of object per article, naming each object and pointing to the articles that introduce it without introducing or proving anything. Part VI, Synthetic Studies, re-traverses the whole ladder one system at a time, from the Booleans to the octonions.
+The mathematical corpus is organised in six parts. Part I, Algebra, builds the objects — sets, groups, rings and fields, linear spaces, linear algebras — and uses nothing but those objects: no distance, and therefore no norm and no form, a norm and a form being distances. Part II, Topology, places a distance on each of them in turn — the norm and the form that defines it among the distances — and owns the forms, the Clifford algebras and the spinors that the distance makes possible, together with the algebraic topology, the sheaves and the algebraic geometry built on its cohomology. Part III, Analysis, uses the derivative and the measure that the distance supplies — the differential calculus, the smooth manifolds and the differential topology, the Lie groups, the integration, the analytic functions, the spectral theory, the differential equations, and the probability, the ergodic theory and the dynamical systems that only a limit can define. Part IV, Geometry, reads the distance as an object rather than as a tool: its shape, its motions, its figures and its settings, and its synthesis with analysis in Hodge theory, the index theorem and the geometric flows. Part V, Catalogues, gathers the objects of Parts I to IV into transversal lists, one kind of object per article, naming each object and pointing to the articles that introduce it without introducing or proving anything. Part VI, Synthetic Studies, re-traverses the whole ladder one system at a time, from the Booleans to the octonions.
 
 Parts I to III share one five-slot spine — Foundations, Groups, Rings and Fields, Linear Spaces, Linear Algebras — and each part adds its own further subjects after them. The spine follows the object ladder, in which each layer adds exactly one structure to the layer above. Geometry is not a layer and adds no structure, but the distance can be placed on the object of every rung, so geometry is read at every rung and its categories follow the same slots in the same order — *Foundations of Geometry*, *Geometry on Groups*, *Geometry on Rings and Fields*, *Geometry on Linear Spaces*, *Geometry on Linear Algebras* — closing with its further subject, *Synthesis of Geometry and Analysis*.
 

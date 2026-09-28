@@ -29,7 +29,7 @@ Condition (i) says that $V$ acts on $\mathbb{A}$; condition (ii) says the action
 
 (iii) $a+(b-a)=b$.
 
-*Proof.* All three are immediate from the uniqueness in the definition: the element $c-a$ is the unique $v$ with $a+v=c$, and evaluating the left-hand sides at $a$ gives $c$. $\square$
+*Proof.* All three are immediate from the uniqueness in the definition: the element $c-a$ is the unique $v$ with $a+v=c$, and evaluating the left-hand sides at $a$ gives $c$.
 
 ### Choosing an Origin
 
@@ -47,7 +47,7 @@ $$
 
 so the two identifications of $\mathbb{A}$ with $V$ differ by the translation $v \mapsto v-(o'-o)$. Consequently any statement about $\mathbb{A}$ that is to be intrinsic must be invariant under the translations of $V$.
 
-*Proof.* The map is a bijection because for each $v$ there is a unique $a=o+v$ with $a-o=v$. The relation $\varphi_{o'}(a)=a-o'=(a-o)-(o'-o)$ gives the second statement. $\square$
+*Proof.* The map is a bijection because for each $v$ there is a unique $a=o+v$ with $a-o=v$. The relation $\varphi_{o'}(a)=a-o'=(a-o)-(o'-o)$ gives the second statement.
 
 The content of the definition is thus that an affine space is a vector space **together with a forgotten origin**, and the choice of an origin converts it into a vector space in a way that is canonical only up to translation. This is why statements in affine geometry come in two forms: an intrinsic form using differences of points, and a coordinate form after an origin is chosen.
 
@@ -69,7 +69,7 @@ $$
 
 (iii) No translation $t_v$ with $v \neq 0$ is linear, for any choice of origin making $\mathbb{A}=V$: in that identification $t_v(x)=x+v$ and $t_v(0)=v \neq 0$.
 
-*Proof.* (i) is the action axiom. (ii) $t_v(a)=a$ means $a+v=a$, hence $v=0$ by freeness. (iii) A linear map sends $0$ to $0$, and $t_v(0)=v \neq 0$. $\square$
+*Proof.* (i) is the action axiom. (ii) $t_v(a)=a$ means $a+v=a$, hence $v=0$ by freeness. (iii) A linear map sends $0$ to $0$, and $t_v(0)=v \neq 0$.
 
 Part (iii) is the precise sense in which translations are not linear maps but **affine** maps: they preserve the affine structure and not the linear structure. The failure is exactly the displacement of the origin, and it is not repaired by a change of origin, since changing the origin leaves a translation unchanged; conjugation by a general affine map $(T,b)$ carries $t_v$ to $t_{Tv}$, so the translations form a normal subgroup isomorphic to $V$.
 
@@ -77,7 +77,7 @@ Part (iii) is the precise sense in which translations are not linear maps but **
 
 **Proposition.** The translation group acts simply transitively on $\mathbb{A}$. Consequently, after the choice of any point $o$, the map $t_v \mapsto o+v$ is a bijection $T(\mathbb{A}) \to \mathbb{A}$.
 
-*Proof.* Transitivity is axiom (ii): for any $a,b$ there is $v$ with $b=a+v=t_v(a)$. Freeness is (ii) as well: if $t_v(a)=a$ then $v=0$. $\square$
+*Proof.* Transitivity is axiom (ii): for any $a,b$ there is $v$ with $b=a+v=t_v(a)$. Freeness is (ii) as well: if $t_v(a)=a$ then $v=0$.
 
 ## The Affine Group
 
@@ -99,7 +99,7 @@ $$
 (x \mapsto T_1x+b_1)\circ(x \mapsto T_2x+b_2)=(x \mapsto T_1T_2x+T_1b_2+b_1),
 $$
 
-which is the multiplication law $(T_1,b_1)(T_2,b_2)=(T_1T_2,\,T_1b_2+b_1)$ of the semidirect product $V \rtimes \operatorname{GL}(V)$ with $\operatorname{GL}(V)$ acting on $V$ in the standard way. Changing the origin conjugates the pair by a translation from the translation subgroup $V$, so the decomposition is intrinsic. $\square$
+which is the multiplication law $(T_1,b_1)(T_2,b_2)=(T_1T_2,\,T_1b_2+b_1)$ of the semidirect product $V \rtimes \operatorname{GL}(V)$ with $\operatorname{GL}(V)$ acting on $V$ in the standard way. Changing the origin conjugates the pair by a translation from the translation subgroup $V$, so the decomposition is intrinsic.
 
 In the notation $(T,b)$ for the map $x \mapsto Tx+b$, the exact sequence
 
@@ -113,7 +113,7 @@ is split by $T \mapsto (T,0)$, and the action of $\operatorname{GL}(V)$ on the n
 
 **Proposition.** $\operatorname{Aff}(V)$ acts transitively on $\mathbb{A}$, and the stabiliser of a point $o$ is the subgroup $\{(T,0)\} \cong \operatorname{GL}(V)$ of linear maps fixing $o$. The action is $2$-transitive for $n \ge 1$: it is transitive on ordered pairs of distinct points.
 
-*Proof.* Transitivity: $(0,b)$ sends $o$ to $o+b$, so the translations already act transitively. The stabiliser of $o$ consists of the maps $x \mapsto Tx$ with $b=0$, a copy of $\operatorname{GL}(V)$. For $2$-transitivity, given distinct $a,b$ and distinct $a',b'$, choose $T \in \operatorname{GL}(V)$ with $T(b-a)=b'-a'$, and then a translation correcting the images of $a$. $\square$
+*Proof.* Transitivity: $(0,b)$ sends $o$ to $o+b$, so the translations already act transitively. The stabiliser of $o$ consists of the maps $x \mapsto Tx$ with $b=0$, a copy of $\operatorname{GL}(V)$. For $2$-transitivity, given distinct $a,b$ and distinct $a',b'$, choose $T \in \operatorname{GL}(V)$ with $T(b-a)=b'-a'$, and then a translation correcting the images of $a$.
 
 ## Affine Combinations and Independence
 
@@ -135,7 +135,7 @@ $$
 o'+\sum_i\lambda_i(a_i-o')=o+\sum_i\lambda_i(a_i-o)+(o'-o)\Bigl(1-\sum_i\lambda_i\Bigr)=o+\sum_i\lambda_i(a_i-o),
 $$
 
-using $\sum_i\lambda_i=1$. The characterisation is immediate from the definition. $\square$
+using $\sum_i\lambda_i=1$. The characterisation is immediate from the definition.
 
 The requirement $\sum\lambda_i=1$ is what replaces the condition for a linear combination to be well defined without a chosen zero; a linear combination of points has no intrinsic meaning. Over a field of characteristic $p$ and a set of $p$ points, the barycentre with weights $1/p$ does not exist, and one uses instead any weights summing to $1$ that avoid the characteristic.
 
@@ -151,7 +151,7 @@ $$
 
 the **barycentric coordinates** $(\alpha_0,\dots,\alpha_n)$ of $b$ with respect to the basis.
 
-*Proof.* Translating by $a_0$ turns the vectors $a_i-a_0$ into a basis of $V$, and $b-a_0$ has a unique expression in that basis; the coefficients together with $\alpha_0=1-\sum_{i\ge1}\alpha_i$ give the statement. $\square$
+*Proof.* Translating by $a_0$ turns the vectors $a_i-a_0$ into a basis of $V$, and $b-a_0$ has a unique expression in that basis; the coefficients together with $\alpha_0=1-\sum_{i\ge1}\alpha_i$ give the statement.
 
 ## Affine Subspaces
 
@@ -167,7 +167,7 @@ for a point $a$ and a linear subspace $W \subseteq V$, called the **direction** 
 
 **Proposition.** (i) The direction of a nonempty affine subspace is determined by the set: $W=\{b-c : b,c \in B\}$. (ii) If $B=a+W$ and $C=b+U$ then $B \subseteq C$ if and only if $W \subseteq U$ and $a-b \in U$. (iii) Two affine subspaces with the same direction are either equal or disjoint. (iv) The intersection of two affine subspaces is either empty or an affine subspace with direction $W \cap U$. Two affine subspaces are **parallel** when $W \subseteq U$ or $U \subseteq W$; disjointness alone does not force parallelism, since the skew lines of a three-dimensional space are disjoint and neither direction contains the other.
 
-*Proof.* (i) The differences of elements of $a+W$ are exactly the elements of $W$. (ii) If $B\subseteq C$ then $a \in C$, so $a-b \in U$, and for $w \in W$ one has $a+w \in C$, whence $w=(a+w)-a \in U$ and $W \subseteq U$; conversely $W \subseteq U$ and $a-b \in U$ give $a+W \subseteq b+U$. (iii) If $a+W$ and $b+W$ meet, then $a-b \in W$ by (ii) applied both ways, and the two are equal. (iv) If $c \in B \cap C$ then $B=c+W$, $C=c+U$, and $B \cap C=c+(W \cap U)$. $\square$
+*Proof.* (i) The differences of elements of $a+W$ are exactly the elements of $W$. (ii) If $B\subseteq C$ then $a \in C$, so $a-b \in U$, and for $w \in W$ one has $a+w \in C$, whence $w=(a+w)-a \in U$ and $W \subseteq U$; conversely $W \subseteq U$ and $a-b \in U$ give $a+W \subseteq b+U$. (iii) If $a+W$ and $b+W$ meet, then $a-b \in W$ by (ii) applied both ways, and the two are equal. (iv) If $c \in B \cap C$ then $B=c+W$, $C=c+U$, and $B \cap C=c+(W \cap U)$.
 
 For $n=1$ an affine subspace of dimension $1$ is the whole of $\mathbb{A}$, and of dimension $0$ a single point: over a one-dimensional direction space there is nothing else. For $n=2$ the subspaces of dimension $1$ are the **lines**, for $n=3$ the subspaces of dimension $1$ and $2$ are the **lines** and **planes**, and in general a **hyperplane** is an affine subspace of dimension $n-1$, of the form $\{a: \varphi(a-o)=\lambda\}$ for a nonzero linear functional $\varphi$. Two distinct lines in a plane meet in a point or are disjoint and parallel, and this is the intersection statement (iv) with $\dim W=\dim U=1$: either $W=U$ (parallel or equal) or $W \cap U=0$ and the intersection is a single point.
 
@@ -177,7 +177,7 @@ For $n=1$ an affine subspace of dimension $1$ is the whole of $\mathbb{A}$, and 
 
 **Proposition.** Affine maps are exactly the maps $f(a)=o'+L(a-o)$ for some origins $o,o'$; they form a set $\operatorname{Aff}(\mathbb{A},\mathbb{A}')=\operatorname{Hom}_F(V,V') \times V'$ under the correspondence $(L,b) \leftrightarrow (x \mapsto Lx+b)$ after origins are chosen, and composition is composition of maps. Affine automorphisms are the case $L$ invertible.
 
-*Proof.* The computation is the one already done in coordinates for $\operatorname{Aff}(V)$: composing $x \mapsto L_1x+b_1$ with $x \mapsto L_2x+b_2$ gives $x \mapsto L_1L_2x+L_1b_2+b_1$. $\square$
+*Proof.* The computation is the one already done in coordinates for $\operatorname{Aff}(V)$: composing $x \mapsto L_1x+b_1$ with $x \mapsto L_2x+b_2$ gives $x \mapsto L_1L_2x+L_1b_2+b_1$.
 
 An affine map with linear part zero is constant; an affine map with $L=\operatorname{id}$ is a translation; an affine map fixing a point $o$ and with $L$ invertible is linear in the coordinates centred at $o$.
 

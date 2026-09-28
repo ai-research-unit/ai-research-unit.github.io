@@ -57,7 +57,7 @@ $$
 
 as $t\to\pm\infty$, uniformly on compact sets after the waves have separated; the amplitude and the speed of each wave are the same in the two limits, and only the centres $\delta_n^\pm$ differ. The difference $\delta_n^+-\delta_n^-$ is the **phase shift** of the $n$-th soliton, and it is nonzero whenever more than one soliton is present.
 
-*Proof.* Quoted as standard; the determinantal formula of the preceding article is expanded asymptotically in the two time limits, and the off-diagonal entries of the matrix, which express the interaction, become negligible in the two limits and contribute only to the constant in the exponent. $\square$
+*Proof.* Quoted as standard; the determinantal formula of the preceding article is expanded asymptotically in the two time limits, and the off-diagonal entries of the matrix, which express the interaction, become negligible in the two limits and contribute only to the constant in the exponent.
 
 **Example (the two-soliton collision).** For $N=2$ and $\kappa_1>\kappa_2$, the faster taller soliton approaches from the left of the slower shorter one, the two overlap in a single hump of double height, and they separate with unchanged shapes and speeds; the taller acquires a positive phase shift and the shorter a negative one, both proportional to
 
@@ -77,13 +77,13 @@ $$
 
 where $I_1=\int u\,dx$, $I_2=\int u^2dx$ and $I_3=\int(u^3+\frac12u_x^2)dx$; the general $I_k$ is a sum of the odd powers $\kappa_n^{2k-1}$. Each integral is evaluated on the one-soliton by elementary integration — for instance $\int u\,dx = -2\kappa^2\int\operatorname{sech}^2(\kappa x)dx = -4\kappa$ — and the additivity over separated solitons, together with the conservation of $I_k$, transports the value to the $N$-soliton. The conservation of each $I_k$ during a collision is therefore the statement that the amplitudes and speeds of the individual waves are unchanged, and the interaction can only redistribute the phases among them.
 
-*Proof.* Quoted as standard; the integrals of powers of a reflectionless potential are computed from the scattering data by the trace identities, which express $I_k$ as a polynomial in the $\kappa_n$. $\square$
+*Proof.* Quoted as standard; the integrals of powers of a reflectionless potential are computed from the scattering data by the trace identities, which express $I_k$ as a polynomial in the $\kappa_n$.
 
 **Remark (the particle picture and its limits).** The trace identities make precise the heuristic that the solitons behave as $N$ independent particles whose conserved energies are functions of the $\kappa_n$: the collision of two such particles conserves each energy and changes only the positions. The picture fails for the radiation, which is carried by the continuous spectrum and is not described by finitely many particles; and it fails for a non-integrable perturbation of the equation, where the collision transfers energy to radiation and the amplitudes slowly change. Both limits are part of the theory of soliton stability treated below.
 
 **Theorem (asymptotic resolution for KdV).** For every sufficiently smooth, rapidly decaying initial datum, the solution of KdV decomposes as $t\to\infty$ into a sum of $N$ solitons, corresponding to the negative eigenvalues of the associated Schrödinger operator, plus a decaying dispersive part; $N$ is the number of bound states of the initial datum.
 
-*Proof.* Quoted as standard. The scattering data evolve by the linear law of the preceding article; the reflection coefficient contributes the dispersive part, whose decay is by the stationary phase method for the oscillatory integral defining it, and the bound states contribute the solitons. $\square$
+*Proof.* Quoted as standard. The scattering data evolve by the linear law of the preceding article; the reflection coefficient contributes the dispersive part, whose decay is by the stationary phase method for the oscillatory integral defining it, and the bound states contribute the solitons.
 
 ## Kinks, Breathers and Other Solitons
 
@@ -97,7 +97,7 @@ $$
 
 is an exact solution for every $|v|<1$; its limits are $0$ and $2\pi$, so its degree is $1$ and its topological charge is $2\pi$, and its width contracts by the factor $\sqrt{1-v^2}$ as the parameter increases. The equation is invariant under the linear transformations $(t,x)\mapsto(\gamma(t-vx),\gamma(x-vt))$, $\gamma=(1-v^2)^{-1/2}$, which preserve the quadratic form $t^2-x^2$ — the pseudo-Euclidean isometries of the plane — and the kink family is the orbit of the stationary kink under them; the parameter is confined to $|v|<1$ by the definiteness of the form, and the limiting value is not attained.
 
-*Proof.* Substitute the ansatz. With $\gamma = (1-v^2)^{-1/2}$ and $\xi=\gamma(x-vt)$ one has $u_{tt}-u_{xx}=(v^2-1)\gamma^2u''(\xi) = -u''(\xi)$, because $v^2-1 = -\gamma^{-2}$. For $u(\xi)=4\arctan e^\xi$ one computes $u'(\xi)=2\operatorname{sech}\xi$ and $u''(\xi) = -2\operatorname{sech}\xi\tanh\xi$; on the other hand $\sin(4\arctan e^\xi) = \frac{4e^\xi(1-e^{2\xi})}{(1+e^{2\xi})^2} = -2\operatorname{sech}\xi\tanh\xi$, so $u''=\sin u$. Hence $u_{tt}-u_{xx}+\sin u = -u''+\sin u = 0$. The computation is verified directly. $\square$
+*Proof.* Substitute the ansatz. With $\gamma = (1-v^2)^{-1/2}$ and $\xi=\gamma(x-vt)$ one has $u_{tt}-u_{xx}=(v^2-1)\gamma^2u''(\xi) = -u''(\xi)$, because $v^2-1 = -\gamma^{-2}$. For $u(\xi)=4\arctan e^\xi$ one computes $u'(\xi)=2\operatorname{sech}\xi$ and $u''(\xi) = -2\operatorname{sech}\xi\tanh\xi$; on the other hand $\sin(4\arctan e^\xi) = \frac{4e^\xi(1-e^{2\xi})}{(1+e^{2\xi})^2} = -2\operatorname{sech}\xi\tanh\xi$, so $u''=\sin u$. Hence $u_{tt}-u_{xx}+\sin u = -u''+\sin u = 0$. The computation is verified directly.
 
 **Example (the sine-Gordon breather).** The exact solution
 
@@ -123,11 +123,11 @@ has the **peakon** solution $u(x,t) = c\,e^{-|x-ct|}$ for $c\neq0$: a travelling
 
 **Theorem (orbital stability of the NLS soliton).** For the focusing nonlinear Schrödinger equation with a power nonlinearity $i\psi_t+\psi_{xx}+|\psi|^{p-1}\psi=0$ in the $L^2$-subcritical range $1<p<5$, the ground-state solitary wave is orbitally stable in $H^1$; for the supercritical range it is unstable, and the instability is by blow-up or by dispersion.
 
-*Proof.* Quoted as standard (Weinstein, Cazenave–Lions). The proof combines the variational characterisation of the solitary wave as the minimiser of the energy at fixed $L^2$ mass, the coercivity of the second variation on the orthogonal complement of the orbit, and a Gronwall argument that controls the growth of the deviation; the critical exponent is the one at which the second variation loses its coercivity. $\square$
+*Proof.* Quoted as standard (Weinstein, Cazenave–Lions). The proof combines the variational characterisation of the solitary wave as the minimiser of the energy at fixed $L^2$ mass, the coercivity of the second variation on the orthogonal complement of the orbit, and a Gronwall argument that controls the growth of the deviation; the critical exponent is the one at which the second variation loses its coercivity.
 
 **Theorem (stability of the KdV soliton).** In the convention $u_t-6uu_x+u_{xxx}=0$, the one-soliton is orbitally stable in $H^1$, and every solution with initial datum sufficiently close to a soliton converges asymptotically to a soliton plus radiation (Martel–Merle).
 
-*Proof.* Quoted as standard. The orbital stability is variational, as for NLS; the asymptotic statement is proved by the method of the nonlinear steepest descent applied to the inverse scattering transform, which linearises the perturbation problem and controls the radiation by the decay of an oscillatory integral. $\square$
+*Proof.* Quoted as standard. The orbital stability is variational, as for NLS; the asymptotic statement is proved by the method of the nonlinear steepest descent applied to the inverse scattering transform, which linearises the perturbation problem and controls the radiation by the decay of an oscillatory integral.
 
 **Remark (transverse instability and multidimensional solitons).** A line soliton of the Kadomtsev–Petviashvili equation of the "wrong" signature is transversely unstable: a perturbation periodic in the direction along the line grows, so the one-dimensional soliton is destroyed by a two-dimensional disturbance. The lump solutions of Davey–Stewartson are, by contrast, stable in a suitable sense. The comparison shows that the stability of a soliton is not a consequence of the elastic interaction alone but depends on the dimension and on the sign of the dispersion, and it is one of the places where the one-dimensional integrable theory does not extend without change.
 

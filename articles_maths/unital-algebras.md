@@ -23,7 +23,7 @@ for every $x \in A$. The algebra is **unital** if it has an identity, and $A$ is
 
 **Proposition (uniqueness).** A unital algebra has exactly one identity.
 
-*Proof.* If $1$ and $1'$ are identities then $1 = 1\,1' = 1'$, since $1'$ is an identity for the first product and $1$ for the second. $\square$
+*Proof.* If $1$ and $1'$ are identities then $1 = 1\,1' = 1'$, since $1'$ is an identity for the first product and $1$ for the second.
 
 **Definition.** Let $A$ be a unital $R$-algebra. The **canonical map** is
 
@@ -45,7 +45,7 @@ $$
 (r1_A)(s1_A) = r\bigl(1_A(s1_A)\bigr) = r\bigl(s(1_A1_A)\bigr) = rs\,1_A = \eta(rs),
 $$
 
-and $\eta(1_R) = 1_R1_A = 1_A$. (2) For $a \in A$ the first $R$-linearity axiom and the identity give $(r1_A)a = r(1_Aa) = ra$, and the second gives $a(r1_A) = r(a1_A) = ra$; hence $(r1_A)a = a(r1_A)$ and $r1_A \in Z(A)$. (3) A unital $R$-subalgebra contains $1_A$, hence contains $r1_A$ for every $r$, so it contains $R\cdot1_A$; and that set is closed under the operations because $\eta$ is a ring homomorphism and the product is $R$-bilinear. A unital homomorphism $\varphi : R \to A$ has $\varphi(r) = \varphi(r1_R) = r\varphi(1_R) = r1_A = \eta(r)$ by $R$-linearity and unitality, so it is $\eta$. $\square$
+and $\eta(1_R) = 1_R1_A = 1_A$. (2) For $a \in A$ the first $R$-linearity axiom and the identity give $(r1_A)a = r(1_Aa) = ra$, and the second gives $a(r1_A) = r(a1_A) = ra$; hence $(r1_A)a = a(r1_A)$ and $r1_A \in Z(A)$. (3) A unital $R$-subalgebra contains $1_A$, hence contains $r1_A$ for every $r$, so it contains $R\cdot1_A$; and that set is closed under the operations because $\eta$ is a ring homomorphism and the product is $R$-bilinear. A unital homomorphism $\varphi : R \to A$ has $\varphi(r) = \varphi(r1_R) = r\varphi(1_R) = r1_A = \eta(r)$ by $R$-linearity and unitality, so it is $\eta$.
 
 The centrality in statement (2) is not a technicality: it is exactly what makes the multiplication by scalars compatible with the multiplication of $A$ in both variables.
 
@@ -80,7 +80,7 @@ $$
 a(r \cdot b) = a\bigl(\eta(r)b\bigr) = \bigl(a\eta(r)\bigr)b = \bigl(\eta(r)a\bigr)b = r \cdot (ab),
 $$
 
-where the middle equality uses $\eta(r) \in Z(A)$. Hence $A$ is an $R$-algebra with identity $1_A$. The two passages are mutually inverse: the canonical map of the algebra constructed from $\eta$ is $r \mapsto r\cdot1_A = \eta(r)1_A = \eta(r)$, and the ring structure of an algebra is the one it started with. A unital algebra homomorphism is a ring homomorphism commuting with the algebra action, which is the condition that it intertwines the canonical maps. $\square$
+where the middle equality uses $\eta(r) \in Z(A)$. Hence $A$ is an $R$-algebra with identity $1_A$. The two passages are mutually inverse: the canonical map of the algebra constructed from $\eta$ is $r \mapsto r\cdot1_A = \eta(r)1_A = \eta(r)$, and the ring structure of an algebra is the one it started with. A unital algebra homomorphism is a ring homomorphism commuting with the algebra action, which is the condition that it intertwines the canonical maps.
 
 **Corollary (rings as algebras).** Every associative ring with identity is a unital $\mathbb{Z}$-algebra in exactly one way, the canonical map being $n \mapsto n1_A$; the category of such rings is the category of unital $\mathbb{Z}$-algebras. More generally a ring $A$ with identity carries a unital $R$-algebra structure exactly when a unital ring homomorphism $R \to Z(A)$ is given, so a ring may carry several distinct $R$-algebra structures with the same product.
 
@@ -92,7 +92,7 @@ where the middle equality uses $\eta(r) \in Z(A)$. Hence $A$ is an $R$-algebra w
 
 **Theorem.** In a unital algebra $A$, if $1 = 0$ then $A = \{0\}$.
 
-*Proof.* For every $a \in A$, $a = a1 = a0 = 0$. $\square$
+*Proof.* For every $a \in A$, $a = a1 = a0 = 0$.
 
 **Corollary.** A nonzero unital algebra has $1 \neq 0$. The zero algebra is the only algebra in which the identity equals the zero element, and in it $0$ is a unit, $0 \cdot 0 = 0 = 1$, with unit group $A^\times = \{0\}$ the trivial group.
 
@@ -112,7 +112,7 @@ That $A^\times$ is a group under the multiplication of $A$, that the inverse is 
    $M_n(R)^\times = \mathrm{GL}_n(R) = \{A : \det A \in R^\times\}$; over a field this is the general linear group (*Matrix Algebras*).
 2. In the group algebra $k[G]$ over a field $k$ the group $G$ and the scalars $k^\times$ lie in $k[G]^\times$, so $k^\times G \subseteq k[G]^\times$, and the inclusion is strict in general (*Group Algebras*, §*Units and Zero Divisors*).
 3. In the polynomial algebra $k[x]$ the units are the nonzero constants, $k[x]^\times = k^\times$; the proof is the degree function, and it is in *Polynomial Algebras*.
-4. In a division algebra $A \neq 0$, $A^\times = A \setminus \{0\}$; this characterises the division algebras among the unital algebras, and it is the criterion of *Centre, Units, Zero Divisors and Division Algebras*, §*The Regular Module and Division Algebras*. Over $\mathbb{R}$ the examples are $\mathbb{R}$, $\mathbb{C}$ and $\mathbb{H}$, with the last computed from the norm form in *Centre, Units, Zero Divisors and Division Algebras*.
+4. In a division algebra $A \neq 0$, $A^\times = A \setminus \{0\}$; this characterises the division algebras among the unital algebras, and it is the criterion of *Centre, Units, Zero Divisors and Division Algebras*, §*The Regular Module and Division Algebras*. Over $\mathbb{R}$ the examples are $\mathbb{R}$, $\mathbb{C}$ and $\mathbb{H}$, with the last computed from the norm in *Centre, Units, Zero Divisors and Division Algebras*.
 **Remark.** The unit group is a functor on unital algebras, by the theorem of §*Homomorphisms and the Identity*, and it is the group through which the multiplicative structure of an algebra is visible: for a group algebra $k[G]$ it contains $G$, and the representation theory of *Group Algebras* is the representation theory of the algebra through it. The division algebras are exactly the unital algebras for which $A^\times$ is as large as it can be, $A^\times = A \setminus \{0\}$.
 
 ## The Unitisation
@@ -150,7 +150,7 @@ $$
 (a,r)\bigl((b,s)(c,t)\bigr) = (a,r)(bc + sc + tb,\, st) = \bigl(a(bc + sc + tb) + r(bc + sc + tb) + st\,a,\, rst\bigr),
 $$
 
-and the two differ by the difference of $a(bc)$ and $(ab)c$, which is zero exactly when $A$ is associative, all other terms agreeing. $\square$
+and the two differ by the difference of $a(bc)$ and $(ab)c$, which is zero exactly when $A$ is associative, all other terms agreeing.
 
 **Theorem (universal property).** Let $A$ be an $R$-algebra and let $B$ be a unital associative $R$-algebra. Then every $R$-algebra homomorphism $\varphi : A \to B$ extends uniquely to a unital $R$-algebra homomorphism $\varphi^+ : A^+ \to B$, given by
 
@@ -172,7 +172,7 @@ $$
 \varphi^+(a,r)\varphi^+(b,s) = \bigl(\varphi(a) + r1_B\bigr)\bigl(\varphi(b) + s1_B\bigr) = \varphi(a)\varphi(b) + s\varphi(a) + r\varphi(b) + rs\,1_B ,
 $$
 
-the two being equal, the middle two terms differing only in their order. It is unital because $\varphi^+(0,1) = 1_B$. If $\psi : A^+ \to B$ is a unital homomorphism that restricts to $\varphi$ on $A$, then $\psi(0,1) = 1_B$ and hence $\psi(a,r) = \psi(a,0) + \psi(0,r) = \varphi(a) + r\,1_B$ by linearity, which is $\varphi^+$; so the extension is unique. Naturality is the identity $\varphi^+(f^+(a,r)) = (\varphi f)^+(a,r)$ for a homomorphism $f : A \to A'$, immediate from the definitions. $\square$
+the two being equal, the middle two terms differing only in their order. It is unital because $\varphi^+(0,1) = 1_B$. If $\psi : A^+ \to B$ is a unital homomorphism that restricts to $\varphi$ on $A$, then $\psi(0,1) = 1_B$ and hence $\psi(a,r) = \psi(a,0) + \psi(0,r) = \varphi(a) + r\,1_B$ by linearity, which is $\varphi^+$; so the extension is unique. Naturality is the identity $\varphi^+(f^+(a,r)) = (\varphi f)^+(a,r)$ for a homomorphism $f : A \to A'$, immediate from the definitions.
 
 **Corollary (functoriality).** For an $R$-algebra homomorphism $f : A \to A'$, the assignment $f^+(a,r) = (f(a), r)$ is a unital $R$-algebra homomorphism $A^+ \to A'^+$, and the unitisation is a functor. The unitisation of a unital algebra gains nothing and loses nothing: for unital $A$ the map
 
@@ -188,7 +188,7 @@ $$
 \theta\bigl((a,r)(b,s)\bigr) = \bigl(ab + rb + sa + rs\,1_A,\, rs\bigr) = \bigl((a + r1_A)(b + s1_A),\, rs\bigr) = \theta(a,r)\,\theta(b,s),
 $$
 
-the middle equality being the expansion of the product in the unital algebra $A$. $\square$
+the middle equality being the expansion of the product in the unital algebra $A$.
 
 **Remark.** The unitisation is the smallest unital algebra through which every homomorphism from $A$ to a unital algebra factors: it is initial among the unital algebras receiving an $R$-algebra homomorphism from $A$, and every such algebra receives a unique unital homomorphism from $A^+$ extending it. Applied to an algebra that already has an identity it adjoins a new one rather than preserving the old, by the corollary, so $A^+$ is not $A$ when $A$ is unital; what the corollary says is that $A^+$ is then the direct product of $A$ with the base ring. The construction is used without comment in Part II, where the proof of the Gelfand–Naimark theorem applies the GNS construction of *Operator Algebras*, §*The Gelfand–Naimark Theorems*, to $A^+$ when $A$ has no identity, and in Part III, where *K-Theory of Operator Algebras* records that $A \to A^+$ is an isomorphism on $K_1$ and that $K_0(A) = \ker\bigl(K_0(A^+) \to K_0(\mathbb{C})\bigr)$; the universal property is stated here because it is a Part I statement.
 
@@ -204,7 +204,7 @@ This is the definition used in *Ideals and Quotients of Algebras*, and it is not
 2. If $\varphi$ is unital then $\varphi(A^\times) \subseteq B^\times$, and $\varphi$ restricts to a group homomorphism $A^\times \to B^\times$, $u \mapsto \varphi(u)$, with $\varphi(u^{-1}) = \varphi(u)^{-1}$.
 3. Conversely, if $\varphi$ maps some unit of $A$ to a unit of $B$, then $\varphi$ is unital.
 
-*Proof.* (1) $\varphi(1_A)^2 = \varphi(1_A1_A) = \varphi(1_A)$, so the image of the identity is idempotent; it equals $1_B$ exactly when $\varphi$ is unital. (2) If $u \in A^\times$ then $\varphi(u)\varphi(u^{-1}) = \varphi(uu^{-1}) = \varphi(1_A) = 1_B$ and likewise on the other side, so $\varphi(u) \in B^\times$ with inverse $\varphi(u^{-1})$. (3) Suppose $u \in A^\times$ and $\varphi(u) \in B^\times$, and let $e = \varphi(1_A)$. Since $\varphi(u1_A) = \varphi(u)e$ and $\varphi(u1_A) = \varphi(u)$, the idempotent $e$ satisfies $\varphi(u)e = \varphi(u)$; multiplying this on the left by the inverse of $\varphi(u)$ gives $e = 1_B$, so $\varphi$ is unital. $\square$
+*Proof.* (1) $\varphi(1_A)^2 = \varphi(1_A1_A) = \varphi(1_A)$, so the image of the identity is idempotent; it equals $1_B$ exactly when $\varphi$ is unital. (2) If $u \in A^\times$ then $\varphi(u)\varphi(u^{-1}) = \varphi(uu^{-1}) = \varphi(1_A) = 1_B$ and likewise on the other side, so $\varphi(u) \in B^\times$ with inverse $\varphi(u^{-1})$. (3) Suppose $u \in A^\times$ and $\varphi(u) \in B^\times$, and let $e = \varphi(1_A)$. Since $\varphi(u1_A) = \varphi(u)e$ and $\varphi(u1_A) = \varphi(u)$, the idempotent $e$ satisfies $\varphi(u)e = \varphi(u)$; multiplying this on the left by the inverse of $\varphi(u)$ gives $e = 1_B$, so $\varphi$ is unital.
 
 **Example (homomorphisms that do not preserve the identity).** The zero homomorphism $A \to B$ between nonzero unital algebras is not unital; it sends $1_A$ to the idempotent $0$. For an associative unital algebra $A$ and a central idempotent $e \in Z(A)$ the map $\varphi(a) = eae$ is an algebra homomorphism, since
 
@@ -242,7 +242,7 @@ $$
 
 The corners $eAe$ and $fAf$ are subalgebras with identities $e$ and $f$ respectively; the off-diagonal spaces $eAf$ and $fAe$ are not subalgebras, but each is a bimodule over the two corners.
 
-*Proof.* Since $1_A = e + f$ acts as an identity, $a = (e+f)a(e+f) = eae + eaf + fae + faf$. The element $f$ is idempotent because $f^2 = (1-e)^2 = 1 - 2e + e^2 = 1 - e = f$, and $ef = e(1-e) = 0 = (1-e)e = fe$. For the directness, suppose $x_{11} + x_{12} + x_{21} + x_{22} = 0$ with $x_{ij} \in e_i A e_j$. Multiplying the relation on the left by $e_1 = e$ and on the right by $e_1$ annihilates the three terms carrying a factor $e_2 = f$, leaving $x_{11} = 0$; the same computation with $e_1$ on the left and $e_2$ on the right leaves $x_{12} = 0$, and symmetrically $x_{21} = x_{22} = 0$. The product rule follows from $e_je_k = \delta_{jk}e_j$, which gives $e_iAe_j \cdot e_kAe_l = e_iA(e_je_k)Ae_l \subseteq \delta_{jk}e_iAe_l$. In particular $eAe \cdot eAe \subseteq e^2Ae^2 = eAe$, and $e \cdot eae \cdot e = eae$, so $eAe$ is a subalgebra with identity $e$; the same argument applies to $f$. $\square$
+*Proof.* Since $1_A = e + f$ acts as an identity, $a = (e+f)a(e+f) = eae + eaf + fae + faf$. The element $f$ is idempotent because $f^2 = (1-e)^2 = 1 - 2e + e^2 = 1 - e = f$, and $ef = e(1-e) = 0 = (1-e)e = fe$. For the directness, suppose $x_{11} + x_{12} + x_{21} + x_{22} = 0$ with $x_{ij} \in e_i A e_j$. Multiplying the relation on the left by $e_1 = e$ and on the right by $e_1$ annihilates the three terms carrying a factor $e_2 = f$, leaving $x_{11} = 0$; the same computation with $e_1$ on the left and $e_2$ on the right leaves $x_{12} = 0$, and symmetrically $x_{21} = x_{22} = 0$. The product rule follows from $e_je_k = \delta_{jk}e_j$, which gives $e_iAe_j \cdot e_kAe_l = e_iA(e_je_k)Ae_l \subseteq \delta_{jk}e_iAe_l$. In particular $eAe \cdot eAe \subseteq e^2Ae^2 = eAe$, and $e \cdot eae \cdot e = eae$, so $eAe$ is a subalgebra with identity $e$; the same argument applies to $f$.
 
 **Corollary (a central idempotent splits the algebra).** If $e$ is central then $eAf = Aef = 0$ and $fAe = Afe = 0$, the Peirce decomposition reduces to
 
@@ -258,7 +258,7 @@ $$
 
 onto the product of $Ae$ and $Af$ with the identity $e$ and $1_A - e$ respectively.
 
-*Proof.* If $e \in Z(A)$ then $eAf = (eA)f = (Ae)f = A(ef) = 0$, and similarly $fAe = 0$, so the four-corner sum collapses to the two diagonal corners; also $a \mapsto ae$ is $R$-linear, and $a(xe) = (ax)e$ and $(xe)a = (xa)e$ show that $Ae$ is an ideal, likewise $Af$. The map $\varphi(a) = (ae, af)$ is additive and multiplicative, since $(ae)(be) = aebe = ab e^2 = abe$ using the centrality of $e$, and the same for $f$; the cross terms never occur because $\varphi(ab) = (abe, abf)$ already has the two components separate. It is unital, $\varphi(1_A) = (e, f)$, which is the identity of the product. It is injective because $ae = 0$ and $af = 0$ give $a = a(e+f) = 0$, and surjective because an element of $Ae \times Af$ is $(xe, yf)$ and is the image of $xe + yf$, with $\varphi(xe+yf) = (xe, yf)$ since $fe = 0$ and $ef = 0$. $\square$
+*Proof.* If $e \in Z(A)$ then $eAf = (eA)f = (Ae)f = A(ef) = 0$, and similarly $fAe = 0$, so the four-corner sum collapses to the two diagonal corners; also $a \mapsto ae$ is $R$-linear, and $a(xe) = (ax)e$ and $(xe)a = (xa)e$ show that $Ae$ is an ideal, likewise $Af$. The map $\varphi(a) = (ae, af)$ is additive and multiplicative, since $(ae)(be) = aebe = ab e^2 = abe$ using the centrality of $e$, and the same for $f$; the cross terms never occur because $\varphi(ab) = (abe, abf)$ already has the two components separate. It is unital, $\varphi(1_A) = (e, f)$, which is the identity of the product. It is injective because $ae = 0$ and $af = 0$ give $a = a(e+f) = 0$, and surjective because an element of $Ae \times Af$ is $(xe, yf)$ and is the image of $xe + yf$, with $\varphi(xe+yf) = (xe, yf)$ since $fe = 0$ and $ef = 0$.
 
 **Remark (why centrality is needed).** Without it the Peirce pieces are not ideals and no product decomposition follows, so the Peirce decomposition is strictly finer than the decomposition by central idempotents. For $A = M_2(k)$ the idempotent $E_{11}$ does not commute with $E_{12}$ and so is not central, and the decomposition is $M_2(k) = kE_{11} \oplus kE_{12} \oplus kE_{21} \oplus kE_{22}$, four one-dimensional Peirce spaces none of which is two-sided; $M_2(k)$ is simple, so its only two-sided ideals are $0$ and $M_2(k)$, and no product decomposition exists (*Matrix Algebras*, §*Ideals and Simplicity*). The Peirce spaces of $E_{11}$ are the matrix units, the observations $E_{11}M_2E_{22} = kE_{12}$ and $E_{22}M_2E_{11} = kE_{21}$ being the two off-diagonal corners of *Matrix Algebras*, §*Matrix Units*. The endomorphism ring of a module gives the same corners in the general form $M = eM \oplus (1-e)M$ (*Direct Sums, Free Modules and Rank*, §*Direct Summands and Idempotents*).
 

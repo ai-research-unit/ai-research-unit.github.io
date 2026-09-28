@@ -16,11 +16,11 @@ $$
 \tilde{A} = a\,e_0 = x\,e_0 + i\,\frac{p}{m\omega}\,e_0 \in \mathbb{C}_{\mathbb{B}} = \operatorname{span}_\mathbb{R}\{e_0, ie_0\} .
 $$
 
-The centre $\mathbb{C}_{\mathbb{B}}$ is the intersection of the algebra with the complex numbers, it is two-real-dimensional, and its two real directions $e_0$ and $ie_0$ lie **one in each sector**: $e_0$ is Hermitian and belongs to $\mathbb{M}_+$, while $ie_0$ is anti-Hermitian and belongs to $\mathbb{M}_-$. The two conjugate quadratures of the oscillator therefore occupy the two sectors, and the oscillator's phase advance is the **sector exchange restricted to the centre** — the rotation that multiplication by $i$ performs. The energy is the Hermitian form of the amplitude, $\tfrac12 m\omega^2|a|^2$, which is positive definite, in contrast with the indefinite norm form.
+The centre $\mathbb{C}_{\mathbb{B}}$ is the intersection of the algebra with the complex numbers, it is two-real-dimensional, and its two real directions $e_0$ and $ie_0$ lie **one in each sector**: $e_0$ is Hermitian and belongs to $\mathbb{M}_+$, while $ie_0$ is anti-Hermitian and belongs to $\mathbb{M}_-$. The two conjugate quadratures of the oscillator therefore occupy the two sectors, and the oscillator's phase advance is the **sector exchange restricted to the centre** — the rotation that multiplication by $i$ performs. The energy is the Hermitian form of the amplitude, $\tfrac12 m\omega^2|a|^2$, which is positive definite, in contrast with the indefinite biquaternion norm.
 
 This is a genuinely classical statement and it is deliberately different from the quantum one. In the quantum oscillator the two quadratures are Hermitian operators and both lie in $\mathbb{M}_+$; the companion article *The Harmonic Oscillator in Biquaternionic Form* shows that the canonical commutator cannot be realized by two elements of $\mathbb{M}_+$ and treats the sector structure accordingly. Here there is no commutator and no operator: a classical real number is not an element of a sector until one chooses where to place it, and the placement that makes the oscillator's phase a rotation places the two quadratures in the two sectors. The two treatments agree that the phase is the sector exchange; they differ in what carries the quadratures, because operators and classical numbers are different objects.
 
-The article is organized as follows. The oscillator is first written in the material sector, where its trajectory and its restoring force live. The complex amplitude is then constructed and decomposed into its two sector parts. The phase advance is identified with the sector exchange, and its generator with the timelike direction of the material sector. The energy is identified with the Hermitian form, and its positivity is contrasted with the signature of the norm form. The article closes by asking the quantum companion's question — whether the complexification makes the two sectors two oscillators — and answering it in the classical case.
+The article is organized as follows. The oscillator is first written in the material sector, where its trajectory and its restoring force live. The complex amplitude is then constructed and decomposed into its two sector parts. The phase advance is identified with the sector exchange, and its generator with the timelike direction of the material sector. The energy is identified with the Hermitian form, and its positivity is contrasted with the signature of the biquaternion norm. The article closes by asking the quantum companion's question — whether the complexification makes the two sectors two oscillators — and answering it in the classical case.
 
 **Conventions.** The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; the basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$ and $e_je_k = \epsilon_{jkl}e_l$ for $j \neq k$; the scalar imaginary $i$ is central with $i^2 = -e_0$. The anti-Hermitian subspace $\mathbb{M}_-$ is the material sector, the Hermitian subspace $\mathbb{M}_+$ the informational sector, and $\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-$ with $i\mathbb{M}_\pm = \mathbb{M}_\mp$. The real-quaternion subalgebra is $\mathbb{H}_{\mathbb{B}}$ and the centre is $\mathbb{C}_{\mathbb{B}} = \operatorname{span}_\mathbb{R}\{e_0, ie_0\}$. The trace is normalized so that $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ for $\tilde{P}, \tilde{H} \in \mathbb{M}_+$, and the real part of a biquaternion is written $\mathrm{Sc}$. The classical phase-space bracket is the Poisson bracket of the companion article *Similitudes Between the Poisson Bracket and the Quantum Commutator*; the quantum treatment of the same system, which is not used here, is that of *The Harmonic Oscillator in Biquaternionic Form*.
 
@@ -202,15 +202,15 @@ $$
 
 The energy is therefore the **Hermitian form** of the amplitude, and it is positive definite: $\tilde{A}\tilde{A}^\dagger = 0$ if and only if $\tilde{A} = 0$. This is what makes the oscillator bounded — the orbit in the centre is a circle and the energy is the squared radius. The positivity of the energy and the compactness of the orbit are the same fact.
 
-### The Norm Form Instead of the Hermitian Form
+### The Biquaternion Norm Instead of the Hermitian Form
 
-The contrast with the **norm form** is instructive. The norm form of the central element is not the squared modulus but the complex square,
+The contrast with the **biquaternion norm** is instructive. The biquaternion norm of the central element is not the squared modulus but the complex square,
 
 $$
 N(\tilde{A}) = \tilde{A}\,\overline{\tilde{A}} = a^2\,e_0 = \left(x^2 - \varpi^2\right)e_0 + 2ix\varpi\,e_0 ,
 $$
 
-which is indefinite: it vanishes on the pair of lines $x = \pm\varpi$ and is negative for $|\varpi| > |x|$. A "energy" built from the norm form would be unbounded below on the centre, and the orbit would be a hyperbola rather than a circle. The oscillator's stability is precisely the statement that its energy is the Hermitian form and not the norm form. This is the same distinction that separates the two sectors: $N$ restricted to $\mathbb{M}_-$ has the Lorentzian signature $(3,1)$ and restricted to $\mathbb{M}_+$ has the signature $(1,3)$, while the Hermitian form $\tilde{Q}\tilde{Q}^\dagger$ is positive definite on the centre.
+which is indefinite: it vanishes on the pair of lines $x = \pm\varpi$ and is negative for $|\varpi| > |x|$. A "energy" built from the biquaternion norm would be unbounded below on the centre, and the orbit would be a hyperbola rather than a circle. The oscillator's stability is precisely the statement that its energy is the Hermitian form and not the biquaternion norm. This is the same distinction that separates the two sectors: $N$ restricted to $\mathbb{M}_-$ has the Lorentzian signature $(3,1)$ and restricted to $\mathbb{M}_+$ has the signature $(1,3)$, while the Hermitian form $\tilde{Q}\tilde{Q}^\dagger$ is positive definite on the centre.
 
 The two forms coincide only on the real axis: for $\tilde{A} = x\,e_0$, $N(\tilde{A}) = \tilde{A}\tilde{A}^\dagger = x^2e_0$. The discrepancy grows with the imaginary (momentum) quadrature, which is exactly the quadrature that the sector decomposition places in $\mathbb{M}_-$.
 
@@ -229,7 +229,7 @@ The bracket shows how the sector split interacts with the flow. The energy is a 
 
 ### Numerical Checks
 
-The structural claims of this section were verified by explicit computation with complex-coefficient quaternions. The Hermitian and anti-Hermitian parts of the central amplitude were computed and found to be $x\,e_0$ and $i(p/m\omega)e_0$ respectively; the phase rotation $a\mapsto e^{-i\omega t}a$ was found to reproduce the standard oscillator solution for the displacement and the momentum to twelve decimal places; the energy was found to equal $\tfrac12 m\omega^2|a|^2$ and to equal the scalar part of $\tilde{A}\tilde{A}^\dagger$; and the norm form was found to be $a^2e_0$, indefinite. Separately, the commutator of two Hermitian biquaternions was computed and found to be the pure real quaternion $-2\,\mathbf{h}\times\mathbf{k}$ with a vanishing scalar part, which is the fact that prevents the canonical commutator from being realized in $\mathbb{M}_+$.
+The structural claims of this section were verified by explicit computation with complex-coefficient quaternions. The Hermitian and anti-Hermitian parts of the central amplitude were computed and found to be $x\,e_0$ and $i(p/m\omega)e_0$ respectively; the phase rotation $a\mapsto e^{-i\omega t}a$ was found to reproduce the standard oscillator solution for the displacement and the momentum to twelve decimal places; the energy was found to equal $\tfrac12 m\omega^2|a|^2$ and to equal the scalar part of $\tilde{A}\tilde{A}^\dagger$; and the biquaternion norm was found to be $a^2e_0$, indefinite. Separately, the commutator of two Hermitian biquaternions was computed and found to be the pure real quaternion $-2\,\mathbf{h}\times\mathbf{k}$ with a vanishing scalar part, which is the fact that prevents the canonical commutator from being realized in $\mathbb{M}_+$.
 
 ## One Oscillator or Two?
 
@@ -263,7 +263,7 @@ $$
 E = \frac{1}{2}m\omega^2|a|^2 = \frac{1}{2}m\omega^2\,\mathrm{Sc}\!\left(\tilde{A}\tilde{A}^\dagger\right),
 $$
 
-positive definite and bounded below, whereas the norm form $N(\tilde{A}) = a^2e_0$ is indefinite. The oscillator is one oscillator, not two: its two sectors carry the two quadratures of a single complex amplitude, coupled by the phase rotation, and a genuine two-oscillator structure would require a second complex dimension that the centre does not have.
+positive definite and bounded below, whereas the biquaternion norm $N(\tilde{A}) = a^2e_0$ is indefinite. The oscillator is one oscillator, not two: its two sectors carry the two quadratures of a single complex amplitude, coupled by the phase rotation, and a genuine two-oscillator structure would require a second complex dimension that the centre does not have.
 
 ## Summary of Notation
 
@@ -288,7 +288,7 @@ positive definite and bounded below, whereas the norm form $N(\tilde{A}) = a^2e_
 | $e^{-i\omega t}$ | Phase rotation; sector exchange on the centre |
 | $E = \tfrac12 m\omega^2|a|^2$ | Energy; the Hermitian form of the amplitude |
 | $\tilde{A}\tilde{A}^\dagger = |a|^2e_0$ | Hermitian form (positive definite) |
-| $N(\tilde{A}) = a^2e_0$ | Norm form (indefinite) |
+| $N(\tilde{A}) = a^2e_0$ | Biquaternion norm (indefinite) |
 | $J = i|_{\mathbb{C}_{\mathbb{B}}}$ | Complex structure of the phase plane; swaps the two sectors |
 | $\{x, p\} = 1$ | Poisson bracket; bracket conventions of the companion article |
 

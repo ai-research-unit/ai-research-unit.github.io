@@ -68,7 +68,7 @@ The tensor algebra $T(V)$ is the free associative algebra on a vector space, and
 | Symmetric algebra $\operatorname{Sym}(V)$ | the polynomial algebra on $\dim V$ generators; centre the whole algebra | *The Symmetric Algebra* |
 | Exterior algebra $\Lambda(V)$ | dimension $2^{\dim V}$; graded-commutative; not commutative for $\dim V \geq 2$ | *The Exterior Algebra* |
 | Clifford algebra $\mathrm{Cl}(V,q)$ | dimension $2^{\dim V}$; centre computed from the volume element; a $\mathbb{Z}/2$-grading | *The Clifford Algebra* |
-| Universal enveloping algebra $U(\mathfrak{g})$ | infinite-dimensional; centre the Casimir-type elements; by PBW a filtered deformation of $\operatorname{Sym}(\mathfrak{g})$ | *Representations of Lie Algebras* |
+| Universal enveloping algebra $U(\mathrm{G})$ | infinite-dimensional; centre the Casimir-type elements; by PBW a filtered deformation of $\operatorname{Sym}(\mathrm{G})$ | *Representations of Lie Algebras* |
 | Weyl algebra $A_1$ | infinite-dimensional; centre $k$; the algebra of polynomial differential operators, with $yx - xy = 1$ | *Quotients of the Tensor Algebra* |
 | Quotients giving the number systems | $\mathbb{R}$, $\mathbb{C}$, $\mathbb{D}$ and $\mathbb{H}$ as quotients of $T(V)$ | *Quotients of the Tensor Algebra* |
 | Clifford algebras in finite dimensions | the real Clifford algebras of dimension $2^n$, with their centre and periodicity | *Clifford Algebras in Finite Dimensions* |
@@ -85,7 +85,7 @@ The number systems give the corpus its chain of non-associative algebras: $\math
 | $\mathbb{R}$, $\mathbb{C}$, $\mathbb{H}$ | dimensions $1$, $2$, $4$; centres $\mathbb{R}$, $\mathbb{C}$, $\mathbb{R}$; associative division algebras | *Division Algebras* |
 | Octonions $\mathbb{O}$ | dimension $8$; centre $\mathbb{R}$; a non-associative division algebra | *Octonion Algebra* |
 | Split biquaternions $\mathbb{H}_{\mathbb{D}} = \mathbb{D}\otimes_{\mathbb{R}}\mathbb{H}$ | dimension $8$; centre $\mathbb{D}$; associative with zero divisors, isomorphic to $\mathbb{H}\oplus\mathbb{H}$; not a division algebra | *Split-Biquaternion Algebra* |
-| Lie algebra $\mathfrak{gl}_n(k)$ | dimension $n^2$; centre the scalar matrices; non-associative, with the bracket | *Lie Algebras* |
+| Lie algebra $\mathrm{GL}_n(k)$ | dimension $n^2$; centre the scalar matrices; non-associative, with the bracket | *Lie Algebras* |
 | Jordan algebra | commutative and non-associative, with the Jordan identity; the spin factors as examples | *Jordan Algebras* |
 | The number systems as Clifford algebras | the realisation of $\mathbb{C}$, $\mathbb{H}$ and $\mathbb{O}$ inside Clifford algebras of a form | *The Number Systems as Clifford Algebras* |
 | Non-example: the octonions as associative | fails associativity: the associator is nonzero | *Octonion Algebra* |
@@ -103,7 +103,7 @@ The article denotes its objects by name; the symbols appearing in the tables are
 |---|---|
 | $T(V)$, $\operatorname{Sym}(V)$, $\Lambda(V)$ | tensor, symmetric and exterior algebras |
 | $\mathrm{Cl}(V,q)$ | Clifford algebra of a quadratic form |
-| $U(\mathfrak{g})$ | universal enveloping algebra of a Lie algebra |
+| $U(\mathrm{G})$ | universal enveloping algebra of a Lie algebra |
 | $A_1$ | the Weyl algebra, $yx - xy = 1$ |
 | $M_n(k)$ | matrix algebra |
 | $Z(A)$ | centre of an algebra |

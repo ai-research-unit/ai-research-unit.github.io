@@ -5,9 +5,9 @@
 
 This article develops the integration theory of quaternion-valued functions of a quaternion variable. It follows *Quaternion Analysis*, where the quaternion space, its metric, the limits and continuity of quaternion-valued functions, and the two notions of differentiability were set up: the naive difference quotient, which forces the function to be affine, and the Cauchy–Riemann operator, whose kernel is the class of regular functions. Here the integral is constructed and the integral theorems of that class are proved.
 
-The treatment is mathematical throughout. The independent variable is a quaternion, the values are quaternions, and no physical object is introduced. The quaternion algebra, its basis, its conjugation and its norm form are taken from *Quaternion Algebra*; the topology of $\mathbb{H}$, the modulus, the Cauchy–Riemann operator and the class of regular functions are taken from *Quaternion Analysis*. Where a statement is the quaternionic instance of a general theorem of Clifford analysis, the general result is cited and the quaternionic constants are computed; the general shape of the integral theorems is that of *Hypercomplex Integration* and *Regularity and the Cauchy–Riemann Operator*.
+The treatment is mathematical throughout. The independent variable is a quaternion, the values are quaternions, and no physical object is introduced. The quaternion algebra, its basis, its conjugation and its quaternion norm are taken from *Quaternion Algebra*; the topology of $\mathbb{H}$, the modulus, the Cauchy–Riemann operator and the class of regular functions are taken from *Quaternion Analysis*. Where a statement is the quaternionic instance of a general theorem of Clifford analysis, the general result is cited and the quaternionic constants are computed; the general shape of the integral theorems is that of *Hypercomplex Integration* and *Regularity and the Cauchy–Riemann Operator*.
 
-Throughout, $\mathbb{H}$ is the quaternion algebra with basis $e_0 = 1, e_1, e_2, e_3$ and $e_k^2 = -e_0$. A general quaternion is written $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$, with quaternion conjugate $\bar{\tilde q} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$ and norm form $N(\tilde q) = \tilde q\bar{\tilde q} = |\tilde q|^2 = \sum_\mu q_\mu^2$. The coordinates of a point are also written $x_0, x_1, x_2, x_3$, so that $\tilde q = x_0 e_0 + x_1 e_1 + x_2 e_2 + x_3 e_3$, and $\partial_\mu = \partial/\partial x_\mu$. The **Cauchy–Riemann operator** is
+Throughout, $\mathbb{H}$ is the quaternion algebra with basis $e_0 = 1, e_1, e_2, e_3$ and $e_k^2 = -e_0$. A general quaternion is written $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$, with quaternion conjugate $\bar{\tilde q} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$ and norm $N(\tilde q) = \tilde q\bar{\tilde q} = |\tilde q|^2 = \sum_\mu q_\mu^2$. The coordinates of a point are also written $x_0, x_1, x_2, x_3$, so that $\tilde q = x_0 e_0 + x_1 e_1 + x_2 e_2 + x_3 e_3$, and $\partial_\mu = \partial/\partial x_\mu$. The **Cauchy–Riemann operator** is
 
 $$
 D = \partial_0 + e_1 \partial_1 + e_2 \partial_2 + e_3 \partial_3,
@@ -41,7 +41,7 @@ $$
 \int_\Omega (a f + g b) \, dV = a \int_\Omega f \, dV + \left(\int_\Omega g \, dV\right) b .
 $$
 
-**Proof.** Multiplication by a constant quaternion is a real-linear map of $\mathbb{H}$, and it is applied after the componentwise integration. The left multiple $af$ has components given by the real matrix of left multiplication by $a$ acting on the components of $f$, and integration is linear in these; the same holds on the right for $b$. $\square$
+**Proof.** Multiplication by a constant quaternion is a real-linear map of $\mathbb{H}$, and it is applied after the componentwise integration. The left multiple $af$ has components given by the real matrix of left multiplication by $a$ acting on the components of $f$, and integration is linear in these; the same holds on the right for $b$.
 
 **Theorem (additivity).** If $\Omega = \Omega_1 \cup \Omega_2$ with $\Omega_1 \cap \Omega_2$ of measure zero, then
 
@@ -49,7 +49,7 @@ $$
 \int_\Omega f \, dV = \int_{\Omega_1} f \, dV + \int_{\Omega_2} f \, dV .
 $$
 
-**Proof.** Apply the additivity of the Lebesgue integral to each component. $\square$
+**Proof.** Apply the additivity of the Lebesgue integral to each component.
 
 **Theorem (fundamental estimate).** If $|f(\tilde q)| \leq M$ on $\Omega$ and $\operatorname{vol}(\Omega)$ is the volume of $\Omega$, then
 
@@ -57,11 +57,11 @@ $$
 \left| \int_\Omega f \, dV \right| \leq M \, \operatorname{vol}(\Omega).
 $$
 
-**Proof.** The triangle inequality for the vector integral gives $\left|\int_\Omega f\,dV\right| \leq \int_\Omega |f|\,dV$, and $|f| \leq M$ bounds the last integral by $M\operatorname{vol}(\Omega)$. $\square$
+**Proof.** The triangle inequality for the vector integral gives $\left|\int_\Omega f\,dV\right| \leq \int_\Omega |f|\,dV$, and $|f| \leq M$ bounds the last integral by $M\operatorname{vol}(\Omega)$.
 
 **Theorem (integrability).** A continuous quaternion-valued function on a compact domain is integrable.
 
-**Proof.** Each component is a continuous real-valued function on a compact subset of $\mathbb{R}^4$, hence bounded and Lebesgue integrable. $\square$
+**Proof.** Each component is a continuous real-valued function on a compact subset of $\mathbb{R}^4$, hence bounded and Lebesgue integrable.
 
 ### Path Integrals
 
@@ -81,7 +81,7 @@ $$
 
 where $L(\gamma) = \int_a^b |\gamma'(t)| \, dt$ is the length of $\gamma$. If $f$ is the constant $c$ then $\int_\gamma c \, dq = c(\gamma(b) - \gamma(a))$ and $\int_\gamma dq \, c = (\gamma(b) - \gamma(a))c$.
 
-**Proof.** The integral is a limit of Riemann sums $\sum_i f(\gamma(t_i))(\gamma(t_{i+1}) - \gamma(t_i))$; submultiplicativity of the modulus bounds each sum by $\sup_\gamma|f|\sum_i|\gamma(t_{i+1})-\gamma(t_i)|$, which tends to $\sup_\gamma|f|\,L(\gamma)$, and the modulus is continuous. The remaining statements are immediate from the definition. $\square$
+**Proof.** The integral is a limit of Riemann sums $\sum_i f(\gamma(t_i))(\gamma(t_{i+1}) - \gamma(t_i))$; submultiplicativity of the modulus bounds each sum by $\sup_\gamma|f|\sum_i|\gamma(t_{i+1})-\gamma(t_i)|$, which tends to $\sup_\gamma|f|\,L(\gamma)$, and the modulus is continuous. The remaining statements are immediate from the definition.
 
 For a commutative algebra the two orders coincide; here they do not, and the order of the factors is part of the notation. The **contour integral** of *Quaternion Analysis* is the left path integral.
 
@@ -125,11 +125,11 @@ $$
 
 the Laplacian of $\mathbb{R}^4$.
 
-**Proof.** Expand $D\bar{D} = \sum_{\mu,\nu} e_\mu \bar{e}_\nu \partial_\mu\partial_\nu$. The mixed second derivatives commute, so only the symmetric part of $e_\mu\bar{e}_\nu$ contributes. Since $e_\mu\bar{e}_\nu + e_\nu\bar{e}_\mu = 2\delta_{\mu\nu}$ (checking the four cases $\mu = \nu$, and $\mu = 0$ with $\nu = k$, and $\mu = k$, $\nu = l$ distinct imaginary), the sum reduces to $\sum_\mu \partial_\mu^2$. The same computation applies to $\bar{D}D$. $\square$
+**Proof.** Expand $D\bar{D} = \sum_{\mu,\nu} e_\mu \bar{e}_\nu \partial_\mu\partial_\nu$. The mixed second derivatives commute, so only the symmetric part of $e_\mu\bar{e}_\nu$ contributes. Since $e_\mu\bar{e}_\nu + e_\nu\bar{e}_\mu = 2\delta_{\mu\nu}$ (checking the four cases $\mu = \nu$, and $\mu = 0$ with $\nu = k$, and $\mu = k$, $\nu = l$ distinct imaginary), the sum reduces to $\sum_\mu \partial_\mu^2$. The same computation applies to $\bar{D}D$.
 
 **Corollary.** If $f$ is left regular or right regular then $\Delta f = 0$: a regular function is harmonic, and each of its four components is a harmonic function of four real variables.
 
-**Proof.** If $Df = 0$ then $\Delta f = \bar{D}Df = 0$; if $fD = 0$ then $\Delta f = (f\bar{D})D = 0$. $\square$
+**Proof.** If $Df = 0$ then $\Delta f = \bar{D}Df = 0$; if $fD = 0$ then $\Delta f = (f\bar{D})D = 0$.
 
 ### Ellipticity
 
@@ -143,7 +143,7 @@ The operator is **elliptic** if $\sigma_D(\xi)$ is invertible for every $\xi \ne
 
 **Theorem.** $D$ is elliptic, with $\sigma_D(\xi)^{-1} = \overline{\sigma_D(\xi)}/|\xi|^2$ for $\xi \neq 0$.
 
-**Proof.** The element $\xi_0 + \sum_k \xi_k e_k$ has norm form $\sum_\mu \xi_\mu^2 = |\xi|^2 \neq 0$; since $\mathbb{H}$ is a division algebra it has the inverse $\overline{\sigma_D(\xi)}/|\xi|^2$. $\square$
+**Proof.** The element $\xi_0 + \sum_k \xi_k e_k$ has norm $\sum_\mu \xi_\mu^2 = |\xi|^2 \neq 0$; since $\mathbb{H}$ is a division algebra it has the inverse $\overline{\sigma_D(\xi)}/|\xi|^2$.
 
 Ellipticity is the analytic reason the regular functions are smooth and the Cauchy theory has the shape it has; the elliptic regularity and its consequences are developed in *Regularity and the Cauchy–Riemann Operator*.
 
@@ -175,7 +175,7 @@ So $e_1\bar{\tilde q}$ lies in the left-regular class and not in the right-regul
 
 **Theorem (closure under constant multiplication).** If $f$ is left regular and $b\in\mathbb{H}$ is constant, then $fb$ is left regular. If $f$ is right regular and $a\in\mathbb{H}$ is constant, then $af$ is right regular. In particular a real scalar multiple of a regular function is regular, in the same sense.
 
-**Proof.** Since $b$ is constant, the Leibniz rule gives $D(fb) = \sum_\mu e_\mu(\partial_\mu f)b = (Df)b$, so $Df = 0$ implies $D(fb) = 0$. Similarly $(af)D = \sum_\mu a(\partial_\mu f)e_\mu = a(fD)$. $\square$
+**Proof.** Since $b$ is constant, the Leibniz rule gives $D(fb) = \sum_\mu e_\mu(\partial_\mu f)b = (Df)b$, so $Df = 0$ implies $D(fb) = 0$. Similarly $(af)D = \sum_\mu a(\partial_\mu f)e_\mu = a(fD)$.
 
 **Remark.** The two closures are on opposite sides, and neither extends to a general constant on the other side: $D(af) = \sum_\mu e_\mu a\partial_\mu f$ equals $a(Df)$ only when $a$ commutes with each $e_\mu$, that is, only for a real scalar $a$. So the left-regular functions form a right module over $\mathbb{H}$ and a left module over the centre $\mathbb{R}$, and the right-regular functions the mirror image.
 
@@ -205,7 +205,7 @@ $$
 Df = \sum_{\mu=0}^{3} \partial_\mu (e_\mu f), \qquad fD = \sum_{\mu=0}^{3} \partial_\mu (f e_\mu).
 $$
 
-**Proof.** For the left form, the Leibniz rule gives $\partial_\mu(e_\mu f) = e_\mu \partial_\mu f$ because $e_\mu$ is constant; summing over $\mu$ gives $Df$. The right form is identical with the constant factor placed after $f$. $\square$
+**Proof.** For the left form, the Leibniz rule gives $\partial_\mu(e_\mu f) = e_\mu \partial_\mu f$ because $e_\mu$ is constant; summing over $\mu$ gives $Df$. The right form is identical with the constant factor placed after $f$.
 
 Thus $D$ is the divergence of the quaternion-valued field with components $e_\mu f$, and the divergence theorem of $\mathbb{R}^4$ applies to it directly.
 
@@ -217,7 +217,7 @@ $$
 \int_\Omega Df \, dV = \int_{\partial\Omega} \nu f \, dS, \qquad \int_\Omega fD \, dV = \int_{\partial\Omega} f \nu \, dS .
 $$
 
-**Proof.** For each real component, the ordinary divergence theorem in $\mathbb{R}^4$ applied to the field with components $e_\mu f$ gives $\int_\Omega \sum_\mu \partial_\mu(e_\mu f)\,dV = \int_{\partial\Omega}\sum_\mu n_\mu e_\mu f\,dS$. The left side is $\int_\Omega Df\,dV$ by the divergence form, and the right side is $\int_{\partial\Omega}\nu f\,dS$ by the definition of the conormal element. The right-handed identity is the same computation for the field with components $f e_\mu$. $\square$
+**Proof.** For each real component, the ordinary divergence theorem in $\mathbb{R}^4$ applied to the field with components $e_\mu f$ gives $\int_\Omega \sum_\mu \partial_\mu(e_\mu f)\,dV = \int_{\partial\Omega}\sum_\mu n_\mu e_\mu f\,dS$. The left side is $\int_\Omega Df\,dV$ by the divergence form, and the right side is $\int_{\partial\Omega}\nu f\,dS$ by the definition of the conormal element. The right-handed identity is the same computation for the field with components $f e_\mu$.
 
 **Corollary (conjugate divergence theorem).** Under the same hypotheses,
 
@@ -225,7 +225,7 @@ $$
 \int_\Omega \bar{D} f \, dV = \int_{\partial\Omega} \bar{\nu} f \, dS, \qquad \int_\Omega f \bar{D} \, dV = \int_{\partial\Omega} f \bar{\nu} \, dS .
 $$
 
-**Proof.** Replace $e_\mu$ by $\bar{e}_\mu$ throughout the preceding proof. $\square$
+**Proof.** Replace $e_\mu$ by $\bar{e}_\mu$ throughout the preceding proof.
 
 ### Integration by Parts
 
@@ -237,7 +237,7 @@ $$
 
 Equivalently, $\int_\Omega (D\phi) f \, dV = \int_{\partial\Omega}\nu\phi f\,dS - \int_\Omega \phi\,(Df)\,dV$.
 
-**Proof.** A real scalar $\phi$ commutes with every $e_\mu$, so the Leibniz rule for $D$ gives $D(\phi f) = \sum_\mu e_\mu\partial_\mu(\phi f) = \sum_\mu e_\mu(\partial_\mu\phi) f + \sum_\mu e_\mu\phi\partial_\mu f = (D\phi)f + \phi\,Df$. The divergence theorem applied to $\phi f$ gives the displayed identity. $\square$
+**Proof.** A real scalar $\phi$ commutes with every $e_\mu$, so the Leibniz rule for $D$ gives $D(\phi f) = \sum_\mu e_\mu\partial_\mu(\phi f) = \sum_\mu e_\mu(\partial_\mu\phi) f + \sum_\mu e_\mu\phi\partial_\mu f = (D\phi)f + \phi\,Df$. The divergence theorem applied to $\phi f$ gives the displayed identity.
 
 **Corollary (scalar Green identity).** Let $u, v$ be real-valued $C^2$ functions on $\bar{\Omega}$. Then
 
@@ -247,7 +247,7 @@ $$
 
 where $\Delta$ is the Laplacian of $\mathbb{R}^4$ and $\partial/\partial n$ is the outward normal derivative.
 
-**Proof.** This is the classical Green identity for the Laplacian of $\mathbb{R}^4$ applied to two real-valued functions; it is the scalar case of the integration-by-parts identity, in which all factors commute. $\square$
+**Proof.** This is the classical Green identity for the Laplacian of $\mathbb{R}^4$ applied to two real-valued functions; it is the scalar case of the integration-by-parts identity, in which all factors commute.
 
 ### The Cauchy–Goursat Theorem
 
@@ -257,7 +257,7 @@ $$
 \int_{\partial\Omega} \nu f \, dS = 0 .
 $$
 
-**Proof.** By the divergence theorem, $\int_{\partial\Omega}\nu f\,dS = \int_\Omega Df\,dV = 0$ because $f$ is left regular. $\square$
+**Proof.** By the divergence theorem, $\int_{\partial\Omega}\nu f\,dS = \int_\Omega Df\,dV = 0$ because $f$ is left regular.
 
 **Corollary.** If $f$ is right regular and $C^1$ then $\int_{\partial\Omega} f\nu\,dS = 0$.
 
@@ -283,7 +283,7 @@ $$
 DE = \sum_{\mu=0}^{3} e_\mu \partial_\mu E = \Bigl(\sum_\mu e_\mu \bar{e}_\mu\Bigr)|\tilde q|^{-4} - 4|\tilde q|^{-6}\Bigl(\sum_\mu x_\mu e_\mu\Bigr)\bar{\tilde q} = 4|\tilde q|^{-4} - 4|\tilde q|^{-6}\tilde q\bar{\tilde q},
 $$
 
-using $\sum_\mu e_\mu\bar{e}_\mu = 4$; since $\tilde q\bar{\tilde q} = |\tilde q|^2$ the two terms cancel and $DE = 0$. The computation of $ED$ is identical with $\bar{e}_\mu e_\mu$ in place of $e_\mu\bar{e}_\mu$ and $\bar{\tilde q}\tilde q$ in place of $\tilde q\bar{\tilde q}$, and also gives $0$. $\square$
+using $\sum_\mu e_\mu\bar{e}_\mu = 4$; since $\tilde q\bar{\tilde q} = |\tilde q|^2$ the two terms cancel and $DE = 0$. The computation of $ED$ is identical with $\bar{e}_\mu e_\mu$ in place of $e_\mu\bar{e}_\mu$ and $\bar{\tilde q}\tilde q$ in place of $\tilde q\bar{\tilde q}$, and also gives $0$.
 
 The conjugate kernel is the fundamental solution of the conjugate operator: with
 
@@ -309,7 +309,7 @@ $$
 \int_{|\tilde q| = 1} \nu E \, dS = \int_{|\tilde q| = \varepsilon} \nu E \, dS,
 $$
 
-where on each sphere $\nu = \tilde q/|\tilde q|$ is the normal pointing away from the origin; the inner sphere carries the negative sign in the boundary of the annulus, which is why the two fluxes are equal rather than opposite. On a sphere of radius $s$ one has $E = \bar{\tilde q}/s^4$ and $\nu = \tilde q/s$, so $\nu E = \tilde q\bar{\tilde q}/s^5 = 1/s^3$, and the flux is $\int_{|\tilde q| = s} dS/s^3 = 2\pi^2 s^3/s^3 = 2\pi^2$, independent of $s$. The flux through the shrinking sphere is therefore $2\pi^2$, and this is the mass of the distribution at the origin. The computation of $ED$ is the same with the right-handed divergence theorem, and conjugation gives the two conjugate identities. $\square$
+where on each sphere $\nu = \tilde q/|\tilde q|$ is the normal pointing away from the origin; the inner sphere carries the negative sign in the boundary of the annulus, which is why the two fluxes are equal rather than opposite. On a sphere of radius $s$ one has $E = \bar{\tilde q}/s^4$ and $\nu = \tilde q/s$, so $\nu E = \tilde q\bar{\tilde q}/s^5 = 1/s^3$, and the flux is $\int_{|\tilde q| = s} dS/s^3 = 2\pi^2 s^3/s^3 = 2\pi^2$, independent of $s$. The flux through the shrinking sphere is therefore $2\pi^2$, and this is the mass of the distribution at the origin. The computation of $ED$ is the same with the right-handed divergence theorem, and conjugation gives the two conjugate identities.
 
 The constant $2\pi^2$ is the four-dimensional analogue of the factor $2\pi$ of complex analysis: it is the surface area $\omega_4 = 2\pi^{4/2}/\Gamma(2)$ of $S^3$, and it is the reciprocal of the normalisation constant of the Cauchy kernel below. The function $E$ is therefore the **Cauchy kernel** of the theory, up to the factor $2\pi^2$.
 
@@ -333,7 +333,7 @@ $$
 E(w - y)\nu(w) = \frac{\overline{(w - y)}\,(w - y)}{|w - y|^5} = \frac{|w - y|^2}{|w - y|^5} = \frac{1}{|w - y|^3},
 $$
 
-and the opposite order gives the same scalar because $(w - y)\overline{(w - y)} = \overline{(w - y)}(w - y) = |w - y|^2$. $\square$
+and the opposite order gives the same scalar because $(w - y)\overline{(w - y)} = \overline{(w - y)}(w - y) = |w - y|^2$.
 
 The collapse of the product to a scalar is special to the quaternion case, where $z\bar{z} = \bar{z}z$ is central, and it is the reason the boundary integrals below can be read as weighted averages of $f$ over the boundary.
 
@@ -357,7 +357,7 @@ $$
 \int_{\Omega_\varepsilon} E(w-y)\,(Df)(w)\,dV = \int_{\partial\Omega} E(w-y)\,\nu(w)\,f(w)\,dS - \int_{\partial B(y,\varepsilon)} E(w-y)\,\nu(w)\,f(w)\,dS .
 $$
 
-On the small sphere the kernel–normal product is the scalar $1/\varepsilon^3$, so by continuity of $f$ the last integral tends to $2\pi^2 f(y)$ as $\varepsilon \to 0$, while the left side tends to $\int_\Omega E(w-y)(Df)(w)\,dV$; the identity follows. $\square$
+On the small sphere the kernel–normal product is the scalar $1/\varepsilon^3$, so by continuity of $f$ the last integral tends to $2\pi^2 f(y)$ as $\varepsilon \to 0$, while the left side tends to $\int_\Omega E(w-y)(Df)(w)\,dV$; the identity follows.
 
 The representation is the quaternionic instance of the general Cauchy–Pompeiu formula of *Hypercomplex Integration*: the boundary term reproduces $f$ when $f$ is regular, and the volume term corrects for the failure of regularity through $Df$. The kernel depends on the system only through the fundamental solution of its operator.
 
@@ -369,7 +369,7 @@ $$
 f(\tilde q) = \frac{1}{2\pi^2} \int_{\partial B(y, r)} \frac{\overline{w - \tilde q}}{|w - \tilde q|^4} \, \nu(w) \, f(w) \, dS(w).
 $$
 
-**Proof.** Apply the Cauchy–Pompeiu representation with $\Omega = B(y,r)$; since $Df = 0$ throughout $\Omega$, the volume term vanishes and only the boundary term remains. The kernel is $E(w-\tilde q) = \overline{(w-\tilde q)}/|w-\tilde q|^4$ with the normalisation $1/(2\pi^2)$ fixed by the distributional identity $DE = 2\pi^2\delta_0$. $\square$
+**Proof.** Apply the Cauchy–Pompeiu representation with $\Omega = B(y,r)$; since $Df = 0$ throughout $\Omega$, the volume term vanishes and only the boundary term remains. The kernel is $E(w-\tilde q) = \overline{(w-\tilde q)}/|w-\tilde q|^4$ with the normalisation $1/(2\pi^2)$ fixed by the distributional identity $DE = 2\pi^2\delta_0$.
 
 For a ball centred at the point of evaluation, $\tilde q = y$, the kernel–normal product is the scalar $1/r^3$, and the formula becomes the **mean value property**
 
@@ -387,7 +387,7 @@ $$
 f(\tilde q) = \frac{1}{2\pi^2} \int_{\partial B(y, r)} f(w) \, \nu(w) \, \frac{\overline{w - \tilde q}}{|w - \tilde q|^4} \, dS(w).
 $$
 
-**Proof.** Let $f$ be right $D$-regular, so that $\bar{f}$ is left $\bar{D}$-regular. The left-handed formula for the conjugate operator $\bar{D}$ reads $\bar{f}(\tilde q) = \frac{1}{2\pi^2}\int_{\partial B}\bar{E}(w-\tilde q)\,\bar{\nu}(w)\,\bar{f}(w)\,dS(w)$, with kernel $\bar{E}$ and conormal element $\bar{\nu}$. Conjugating this identity reverses the order of the factors and uses $\overline{\bar{E}} = E$ and $\overline{\bar{\nu}} = \nu$, giving the displayed formula for $f$; the constant $2\pi^2$ is unchanged. $\square$
+**Proof.** Let $f$ be right $D$-regular, so that $\bar{f}$ is left $\bar{D}$-regular. The left-handed formula for the conjugate operator $\bar{D}$ reads $\bar{f}(\tilde q) = \frac{1}{2\pi^2}\int_{\partial B}\bar{E}(w-\tilde q)\,\bar{\nu}(w)\,\bar{f}(w)\,dS(w)$, with kernel $\bar{E}$ and conormal element $\bar{\nu}$. Conjugating this identity reverses the order of the factors and uses $\overline{\bar{E}} = E$ and $\overline{\bar{\nu}} = \nu$, giving the displayed formula for $f$; the constant $2\pi^2$ is unchanged.
 
 ### The Two-Sided Cauchy Integral Formula
 
@@ -399,7 +399,7 @@ $$
 f(\tilde q) = \frac{1}{2\pi^2} \int_{\partial B(y, r)} \frac{\overline{w - \tilde q}}{|w - \tilde q|^4} \, \nu(w) \, f(w) \, dS(w) = \frac{1}{2\pi^2} \int_{\partial B(y, r)} f(w) \, \nu(w) \, \frac{\overline{w - \tilde q}}{|w - \tilde q|^4} \, dS(w).
 $$
 
-**Proof.** A two-sided regular function is left regular and right regular, so both theorems apply: the first integral equals $f(\tilde q)$ by the left-regular formula and the second equals $f(\tilde q)$ by the right-regular formula, whence the two are equal. The equality is not termwise: when $\tilde q \neq y$ the product $E(w-\tilde q)\nu(w)$ has a non-zero vector part, and only for $\tilde q = y$ does the kernel–normal theorem make it the scalar $1/r^3$. $\square$
+**Proof.** A two-sided regular function is left regular and right regular, so both theorems apply: the first integral equals $f(\tilde q)$ by the left-regular formula and the second equals $f(\tilde q)$ by the right-regular formula, whence the two are equal. The equality is not termwise: when $\tilde q \neq y$ the product $E(w-\tilde q)\nu(w)$ has a non-zero vector part, and only for $\tilde q = y$ does the kernel–normal theorem make it the scalar $1/r^3$.
 
 **Remark.** The kernel $E$ is itself two-sided regular by the theorem of the preceding section, so the two-sided formula can be read as the statement that both the function and the kernel are regular from both sides. In the complex case, where the algebra is commutative, the distinction between the two orders disappears and the two-sided formula reduces to the single classical formula. In the quaternion case the two integrands are genuinely different functions of $w$ for $\tilde q \neq y$; the kernel–normal collapse, and with it the coincidence of the two orders, takes place only at $\tilde q = y$, where the formula becomes the mean value property.
 
@@ -413,19 +413,19 @@ $$
 f(y) = \frac{1}{2\pi^2 r^3} \int_{\partial B(y, r)} f(w) \, dS(w) = \frac{2}{\pi^2 r^4} \int_{B(y, r)} f(w) \, dV(w).
 $$
 
-**Proof.** The surface form was obtained above from the Cauchy formula at $\tilde q = y$. For the volume form, integrate the surface form over the radius: the volume of the ball is $\int_0^r 2\pi^2 s^3\,ds = \frac{\pi^2}{2}r^4$, so the average of $f$ over the ball of radius $r$ equals the common value $f(y)$. $\square$
+**Proof.** The surface form was obtained above from the Cauchy formula at $\tilde q = y$. For the volume form, integrate the surface form over the radius: the volume of the ball is $\int_0^r 2\pi^2 s^3\,ds = \frac{\pi^2}{2}r^4$, so the average of $f$ over the ball of radius $r$ equals the common value $f(y)$.
 
 ### The Maximum Principle
 
 **Theorem (maximum modulus principle).** If $f$ is left regular on a domain $\Omega$ and $|f|$ attains a maximum at an interior point of $\Omega$, then $f$ is constant on $\Omega$.
 
-**Proof.** Suppose $|f|$ attains its maximum $M$ at $y \in \Omega$. The mean value property bounds $|f(y)|$ by the average of $|f|$ over a small sphere, which is at most $M$; equality forces $|f| = M$ on that sphere. Extending along a connected chain of spheres, $|f| = M$ on $\Omega$, and a regular function of constant modulus is constant because $0 = \Delta|f|^2 = 2\sum_\mu|\partial_\mu f|^2$. $\square$
+**Proof.** Suppose $|f|$ attains its maximum $M$ at $y \in \Omega$. The mean value property bounds $|f(y)|$ by the average of $|f|$ over a small sphere, which is at most $M$; equality forces $|f| = M$ on that sphere. Extending along a connected chain of spheres, $|f| = M$ on $\Omega$, and a regular function of constant modulus is constant because $0 = \Delta|f|^2 = 2\sum_\mu|\partial_\mu f|^2$.
 
 ### Liouville's Theorem
 
 **Theorem (Liouville).** Every bounded left regular function on all of $\mathbb{H}$ is constant.
 
-**Proof.** Let $|f| \leq M$ and fix $y$. The Cauchy integral formula on the sphere $\partial B(y, r)$ expresses $f(y)$ as $\frac{1}{2\pi^2}\int_{\partial B(y,r)}K(y,w)\,dS(w)$ with kernel $K(\tilde q,w) = E(w-\tilde q)\nu(w)f(w)$. Differentiating under the integral sign, $\partial_k f(y) = \frac{1}{2\pi^2}\int_{\partial B(y,r)}\partial_k K(y,w)\,dS(w)$, and $\partial_k K = -\partial_{w_k}E(w-\tilde q)\big|_{\tilde q=y}\nu f$. On the sphere $|w - y| = r$, the derivative of $E$ is bounded by a constant times $r^{-4}$, so $|\partial_k K| \leq C M r^{-4}$; the surface area is $2\pi^2 r^3$, and therefore $|\partial_k f(y)| \leq C M r^{-1}$. Letting $r \to \infty$ gives $\partial_k f(y) = 0$ for every $k$; since $y$ was arbitrary, $f$ is constant. $\square$
+**Proof.** Let $|f| \leq M$ and fix $y$. The Cauchy integral formula on the sphere $\partial B(y, r)$ expresses $f(y)$ as $\frac{1}{2\pi^2}\int_{\partial B(y,r)}K(y,w)\,dS(w)$ with kernel $K(\tilde q,w) = E(w-\tilde q)\nu(w)f(w)$. Differentiating under the integral sign, $\partial_k f(y) = \frac{1}{2\pi^2}\int_{\partial B(y,r)}\partial_k K(y,w)\,dS(w)$, and $\partial_k K = -\partial_{w_k}E(w-\tilde q)\big|_{\tilde q=y}\nu f$. On the sphere $|w - y| = r$, the derivative of $E$ is bounded by a constant times $r^{-4}$, so $|\partial_k K| \leq C M r^{-4}$; the surface area is $2\pi^2 r^3$, and therefore $|\partial_k f(y)| \leq C M r^{-1}$. Letting $r \to \infty$ gives $\partial_k f(y) = 0$ for every $k$; since $y$ was arbitrary, $f$ is constant.
 
 ### The Cauchy Estimates
 
@@ -435,7 +435,7 @@ $$
 \left| \partial^\alpha f(y) \right| \leq \frac{C_\alpha M}{R^{|\alpha|}} .
 $$
 
-**Proof.** Differentiate the Cauchy integral formula $|\alpha|$ times with respect to $\tilde q$ under the integral sign. Each differentiation increases the order of the singularity of the kernel by one, so the integrand is bounded by a constant times $R^{-3-|\alpha|}$, and the surface area contributes $2\pi^2 R^3$. $\square$
+**Proof.** Differentiate the Cauchy integral formula $|\alpha|$ times with respect to $\tilde q$ under the integral sign. Each differentiation increases the order of the singularity of the kernel by one, so the integrand is bounded by a constant times $R^{-3-|\alpha|}$, and the surface area contributes $2\pi^2 R^3$.
 
 **Corollary (Liouville, second proof).** A regular function bounded on $\mathbb{H}$ has all derivatives zero at every point and is constant.
 
@@ -443,7 +443,7 @@ $$
 
 **Theorem (identity theorem).** If two left regular functions on a connected domain $\Omega$ agree on a set with an accumulation point in $\Omega$, then they agree on all of $\Omega$.
 
-**Proof.** The difference $h = f - g$ is left regular and vanishes on a set $S$ with an accumulation point $p \in \Omega$. A left regular function is real-analytic: its four real components are harmonic, and the Cauchy integral formula represents $h$ near $p$ by a power series that converges to $h$ on a ball about $p$ contained in $\Omega$. A real-analytic function on a connected open set that vanishes on a set having an accumulation point in that set is identically zero. Hence $h = 0$ on a neighbourhood of $p$, and by connectedness on all of $\Omega$. $\square$
+**Proof.** The difference $h = f - g$ is left regular and vanishes on a set $S$ with an accumulation point $p \in \Omega$. A left regular function is real-analytic: its four real components are harmonic, and the Cauchy integral formula represents $h$ near $p$ by a power series that converges to $h$ on a ball about $p$ contained in $\Omega$. A real-analytic function on a connected open set that vanishes on a set having an accumulation point in that set is identically zero. Hence $h = 0$ on a neighbourhood of $p$, and by connectedness on all of $\Omega$.
 
 ## Relation to the General Hypercomplex Integration
 
@@ -461,7 +461,7 @@ The dictionary for the quaternion case is:
 | Cauchy–Goursat | $\int_{\partial\Omega}\nu f\,dS = 0$ for left regular $f$ |
 | Cauchy integral formula | $f(\tilde q) = \frac{1}{2\pi^2}\int_{\partial B}\frac{\overline{w-\tilde q}}{\lvert w-\tilde q\rvert^4}\nu(w)f(w)\,dS$ |
 
-In the general theory the boundary of a domain is a hypersurface and the Cauchy–Goursat theorem is a hypersurface statement; the quaternion case is the case of dimension four. The two properties that the general theory isolates and that are special to the quaternion algebra are the multiplicativity of the norm form, which makes $\mathbb{H}$ a division algebra and makes the symbol invertible, and the centrality of $z\bar{z}$, which makes the kernel–normal product scalar. Both are needed for the statements above in their sharp form; the biquaternion algebra of category 30, which is $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ and is not a division algebra, is treated separately.
+In the general theory the boundary of a domain is a hypersurface and the Cauchy–Goursat theorem is a hypersurface statement; the quaternion case is the case of dimension four. The two properties that the general theory isolates and that are special to the quaternion algebra are the multiplicativity of the quaternion norm, which makes $\mathbb{H}$ a division algebra and makes the symbol invertible, and the centrality of $z\bar{z}$, which makes the kernel–normal product scalar. Both are needed for the statements above in their sharp form; the biquaternion algebra of category 30, which is $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ and is not a division algebra, is treated separately.
 
 ## Summary
 
@@ -485,7 +485,7 @@ holds for left regular $f$, its mirror image with the kernel on the right holds 
 | $e_0 = 1, e_1, e_2, e_3$ | Quaternion basis, $e_k^2 = -e_0$ |
 | $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3 = \sum_\mu q_\mu e_\mu$ | General quaternion, scalar part $q_0$, vector part $\mathbf{q}$ |
 | $\bar{\tilde q} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$ | Quaternion conjugate |
-| $N(\tilde q) = \tilde q\bar{\tilde q} = \lvert \tilde q\rvert^2$ | Norm form and modulus |
+| $N(\tilde q) = \tilde q\bar{\tilde q} = \lvert \tilde q\rvert^2$ | Quaternion norm and modulus |
 | $\partial_\mu = \partial/\partial x_\mu$ | Coordinate derivatives, $\tilde q = x_0 e_0 + x_1 e_1 + x_2 e_2 + x_3 e_3$ |
 | $D = \partial_0 + e_1\partial_1 + e_2\partial_2 + e_3\partial_3$ | Cauchy–Riemann operator |
 | $\bar{D} = \partial_0 - e_1\partial_1 - e_2\partial_2 - e_3\partial_3$ | Conjugate operator |
@@ -513,4 +513,4 @@ holds for left regular $f$, its mirror image with the kernel on the right holds 
 - R. Delanghe, F. Sommen, and V. Souček, *Clifford Algebra and Spinor-Valued Functions* (Kluwer, 1992), for spinor-valued function theory, its kernels and its function-theoretic invariants.
 - A. Sudbery, "Quaternionic analysis", *Mathematical Proceedings of the Cambridge Philosophical Society* **85** (1979) 199–225, for the quaternionic Cauchy integral formula and its normalisation.
 - John Ryan, *Clifford Algebras in Analysis and Related Topics* (CRC Press, 1996), for the analytic theory and the boundary-value problems.
-- Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge University Press, 2nd ed. 2001), for the identification of $\mathbb{H}$ with a Clifford algebra and the role of the norm form.
+- Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge University Press, 2nd ed. 2001), for the identification of $\mathbb{H}$ with a Clifford algebra and the role of the quaternion norm.

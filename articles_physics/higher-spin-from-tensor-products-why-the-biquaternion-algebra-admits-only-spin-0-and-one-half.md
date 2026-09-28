@@ -62,7 +62,7 @@ $$
 M \;\cong\; S^{\oplus k}, \qquad k = \dim_\mathbb{C}\mathrm{Hom}_\mathbb{B}(S,M).
 $$
 
-**Proof sketch.** The algebra is semisimple — a matrix algebra over a field is — so by the Artin–Wedderburn theorem every finite-dimensional module is a direct sum of simple modules. Since $\mathbb{B}$ is simple, it has exactly one simple module up to isomorphism, namely $S$. Hence $M\cong S^{\oplus k}$, and the multiplicity $k$ is the dimension of the space of module maps from $S$ to $M$, by Schur's lemma applied to each summand. $\square$
+**Proof sketch.** The algebra is semisimple — a matrix algebra over a field is — so by the Artin–Wedderburn theorem every finite-dimensional module is a direct sum of simple modules. Since $\mathbb{B}$ is simple, it has exactly one simple module up to isomorphism, namely $S$. Hence $M\cong S^{\oplus k}$, and the multiplicity $k$ is the dimension of the space of module maps from $S$ to $M$, by Schur's lemma applied to each summand.
 
 Two consequences are immediate and both matter. The multiplicity space $\mathrm{Hom}_\mathbb{B}(S,M)$ is a complex vector space, so the decomposition is a Morita equivalence between the modules of $\mathbb{B}$ and complex vector spaces: a module is a complex vector space $V$ dressed as $S\otimes_\mathbb{C}V$, and nothing else. And $S$ is the only irreducible object, so it is the only source of any representation the algebra's modules can carry.
 
@@ -222,7 +222,7 @@ $$
 \text{its defining module} \;\cong\; S^{\otimes n}, \qquad \dim_\mathbb{C}\left(S^{\otimes n}\right) = 2^n .
 $$
 
-**Proof sketch.** The algebra is $M_2(\mathbb{C}) = \mathrm{End}_\mathbb{C}(S)$, and the tensor product of endomorphism algebras is the endomorphism algebra of the tensor product of the modules, $\mathrm{End}(S)\otimes_\mathbb{C}\mathrm{End}(S) \cong \mathrm{End}(S\otimes_\mathbb{C}S)$; iterating gives the statement. $\square$
+**Proof sketch.** The algebra is $M_2(\mathbb{C}) = \mathrm{End}_\mathbb{C}(S)$, and the tensor product of endomorphism algebras is the endomorphism algebra of the tensor product of the modules, $\mathrm{End}(S)\otimes_\mathbb{C}\mathrm{End}(S) \cong \mathrm{End}(S\otimes_\mathbb{C}S)$; iterating gives the statement.
 
 The claim says that the operator that carries spin $j$ is available in the algebra's $2j$-th tensor power, whose defining module is $S^{\otimes 2j}$ and contains $\mathrm{Sym}^{2j}(S)$ as the pure spin-$j$ carrier. The base algebra itself, which is the first tensor power, contains only the spin-$\tfrac12$ module; the second tensor power contains the four-vector and the two-form; the fourth contains the spin-two carrier. Higher spin is thus not a property of the biquaternion algebra but a property of its tensor powers, and each power is a larger matrix algebra with a correspondingly larger category of modules.
 

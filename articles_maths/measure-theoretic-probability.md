@@ -31,7 +31,7 @@ The normalisation turns the measure-theoretic statements into statistical ones: 
 
 **Proposition.** A random variable $Y : \Omega \to \mathbb{R}$ is $\sigma(X)$-measurable if and only if there is a measurable function $f : \mathbb{R}^d \to \mathbb{R}$ with $Y = f(X)$.
 
-*Proof.* If $Y = f(X)$ the measurability is clear. Conversely, if $Y$ is $\sigma(X)$-measurable, approximate $Y$ by simple $\sigma(X)$-measurable functions, write each as a finite linear combination of indicators of sets $X^{-1}(B)$, and pass to the limit; the resulting function of $X$ is the required $f$. $\square$
+*Proof.* If $Y = f(X)$ the measurability is clear. Conversely, if $Y$ is $\sigma(X)$-measurable, approximate $Y$ by simple $\sigma(X)$-measurable functions, write each as a finite linear combination of indicators of sets $X^{-1}(B)$, and pass to the limit; the resulting function of $X$ is the required $f$.
 
 The proposition is the measure-theoretic form of the statement that the information carried by $X$ is exactly the information of its $\sigma$-algebra, and it is the first instance of the general principle that conditioning on $X$ is conditioning on $\sigma(X)$. The same statement with $Y$ vector-valued and $f$ measurable is proved by applying the real case coordinatewise.
 
@@ -65,7 +65,7 @@ $$
 \mathbb{P}\bigl(F^{-1}(U) \leq x\bigr) = \mathbb{P}\bigl(U \leq F(x)\bigr) = F(x),
 $$
 
-using the uniformity of $U$ and the fact that $F(x)$ lies in $[0,1]$. $\square$
+using the uniformity of $U$ and the fact that $F(x)$ lies in $[0,1]$.
 
 The theorem is the concrete form of the statement that the uniform distribution on $[0,1]$ is universal, and it is the basis of the simulation of a distribution from uniform variates. It also shows that the arithmetic of a probability space can be reduced to the arithmetic of $[0,1]$, which is the classical construction of a probability space carrying a sequence of independent random variables of prescribed distributions.
 
@@ -134,7 +134,7 @@ The Cauchy–Schwarz inequality makes $L^2$ an inner product space and is the re
 
 **Theorem (the relations).** Convergence almost sure and convergence in $L^p$ each imply convergence in probability, which implies convergence in distribution. None of the implications reverses. If $X_n \xrightarrow{d} X$ and $X$ is a.s. constant, then $X_n \xrightarrow{\mathbb{P}} X$; if $X_n \xrightarrow{\mathbb{P}} X$ then a subsequence converges a.s.; and $X_n \xrightarrow{d} X$ if and only if $X_n \xrightarrow{\mathbb{P}} X$ together with the uniform integrability of an appropriate family, by the theorem of Vitali.
 
-*Proof.* Almost sure convergence implies convergence in probability by the continuity from above of the measure; convergence in probability implies convergence in distribution by the portmanteau theorem below and the boundedness of $f$; the strictly decreasing chain is witnessed by the standard examples. The remaining statements are the standard measure-theoretic arguments. $\square$
+*Proof.* Almost sure convergence implies convergence in probability by the continuity from above of the measure; convergence in probability implies convergence in distribution by the portmanteau theorem below and the boundedness of $f$; the strictly decreasing chain is witnessed by the standard examples. The remaining statements are the standard measure-theoretic arguments.
 
 **Example (the implications are strict).** The **typewriter sequence** $X_n = \mathbf{1}_{[k/2^m, (k+1)/2^m]}$ on $[0,1]$, $n = 2^m + k$, converges in probability and in $L^1$ to $0$ but converges a.s. at no point. The sequence $X_n = 2^n\mathbf{1}_{[0,1/n]}$ converges to $0$ a.s. and in probability but not in $L^1$. And a sequence converging in distribution to a random limit need not converge in probability, as the example $X_n$ uniform on $\{0,1\}$ and $X = 1 - X_n$ shows.
 
@@ -162,7 +162,7 @@ the Fourier transform of the distribution $\mu_X$.
 
 **Theorem (basic properties).** The characteristic function satisfies $\varphi_X(0) = 1$, $|\varphi_X(t)| \leq 1$, $\varphi_X(-t) = \overline{\varphi_X(t)}$, and $\varphi_X$ is uniformly continuous on $\mathbb{R}^d$. It is positive definite in the sense that $\sum_{j,k} c_j\overline{c_k}\varphi_X(t_j - t_k) \geq 0$ for all finite families $t_j \in \mathbb{R}^d$ and $c_j \in \mathbb{C}$; conversely, by Bochner's theorem, every continuous positive definite function with $\varphi(0) = 1$ is the characteristic function of a unique probability measure.
 
-*Proof.* The first four properties are immediate from the definition and the dominated convergence theorem; uniform continuity follows from $\left|\varphi(t+h) - \varphi(t)\right| \leq \mathbb{E}\left|e^{i\langle h,X\rangle} - 1\right|$, whose right-hand side is independent of $t$ and tends to $0$ as $h \to 0$ by dominated convergence. Positive definiteness is the computation $\sum_{j,k}c_j\overline{c_k}\varphi(t_j-t_k) = \mathbb{E}\left|\sum_j c_j e^{i\langle t_j,X\rangle}\right|^2 \geq 0$. The converse is Bochner's theorem, whose proof is the inversion formula of *Fourier Analysis on Euclidean Spaces*. $\square$
+*Proof.* The first four properties are immediate from the definition and the dominated convergence theorem; uniform continuity follows from $\left|\varphi(t+h) - \varphi(t)\right| \leq \mathbb{E}\left|e^{i\langle h,X\rangle} - 1\right|$, whose right-hand side is independent of $t$ and tends to $0$ as $h \to 0$ by dominated convergence. Positive definiteness is the computation $\sum_{j,k}c_j\overline{c_k}\varphi(t_j-t_k) = \mathbb{E}\left|\sum_j c_j e^{i\langle t_j,X\rangle}\right|^2 \geq 0$. The converse is Bochner's theorem, whose proof is the inversion formula of *Fourier Analysis on Euclidean Spaces*.
 
 **Theorem (uniqueness and inversion).** The characteristic function determines the distribution: if $\varphi_X = \varphi_Y$ then $\mu_X = \mu_Y$. More precisely, if $\varphi$ is integrable then $\mu_X$ has the continuous density
 

@@ -23,7 +23,7 @@ $$
 \int_K f(k^{-1})\,dk = \int_K f(k)\,dk .
 $$
 
-**Proof.** The measure $d\tilde k$ defined by $\tilde k = k^{-1}$ is a right Haar measure; unimodularity makes it equal to a left Haar measure, hence to $dk$ times a positive constant, and the constant is $1$ because both measures are probabilities. $\square$
+**Proof.** The measure $d\tilde k$ defined by $\tilde k = k^{-1}$ is a right Haar measure; unimodularity makes it equal to a left Haar measure, hence to $dk$ times a positive constant, and the constant is $1$ because both measures are probabilities.
 
 **Example (the classical compact groups).** For $K = S^1 = \mathbb{R}/\mathbb{Z}$ the normalised Haar measure is $d\theta$ of total mass $1$. For $K = T^n$ it is the product measure. For $K = SU(2)$ the normalised Haar measure is fixed by the **Weyl integration formula**
 
@@ -39,7 +39,7 @@ For $1 \leq p < \infty$ the space $L^p(K)$ is with respect to $dk$; since $dk$ i
 
 **Theorem (unitarity).** The left regular representation is a continuous unitary representation of $K$ on $L^2(K)$: for every $f \in L^2(K)$ the map $k \mapsto \lambda(k)f$ is continuous, and $\|\lambda(k)f\|_2 = \|f\|_2$.
 
-**Proof.** Unitarity is the left-invariance of $dk$. Continuity follows by density of $C(K)$ in $L^2(K)$ and the uniform continuity of a continuous function on the compact group: for $f \in C(K)$, $\|\lambda(k)f - f\|_\infty \to 0$ as $k \to e$. $\square$
+**Proof.** Unitarity is the left-invariance of $dk$. Continuity follows by density of $C(K)$ in $L^2(K)$ and the uniform continuity of a continuous function on the compact group: for $f \in C(K)$, $\|\lambda(k)f - f\|_\infty \to 0$ as $k \to e$.
 
 ### Convolution and the Banach Algebra $L^1(K)$
 
@@ -49,7 +49,7 @@ Because $K$ is unimodular and $dy$ is a probability measure, $L^1(K)$ is a Banac
 
 **Proposition.** $L^1(K)$ is a commutative Banach algebra if and only if $K$ is abelian, and it is a Banach $*$-algebra for the involution $f^*(k) = \overline{f(k^{-1})}$, with $\|f^*\|_1 = \|f\|_1$ and $(f*g)^* = g^* * f^*$.
 
-**Proof.** The norm identity is unimodularity and the invariance of $dk$ under inversion; the involution identity is a change of variable. Commutativity fails for a non-abelian $K$ by the two-element computation of *Harmonic Analysis on Groups*, §Convolution and the Convolution Theorem. $\square$
+**Proof.** The norm identity is unimodularity and the invariance of $dk$ under inversion; the involution identity is a change of variable. Commutativity fails for a non-abelian $K$ by the two-element computation of *Harmonic Analysis on Groups*, §Convolution and the Convolution Theorem.
 
 **Example (convolution on a finite group).** If $K$ is finite with the normalised counting measure, $L^1(K)$ is the group algebra $\mathbb{C}[K]$ with the multiplication of the group algebra scaled by $|K|^{-1}$, and the transform of the next section is the Wedderburn decomposition of $\mathbb{C}[K]$ into full matrix algebras. For $K = S_3$ this is $\mathbb{C}[S_3] \cong \mathbb{C}\oplus\mathbb{C}\oplus M_2(\mathbb{C})$, of dimension $1+1+4=6$.
 
@@ -79,7 +79,7 @@ $$
 \lambda_\pi(f) = \frac{1}{d_\pi}\int_K f(k)\,\chi_\pi(k)\,dk .
 $$
 
-**Proof.** (a) is the triangle inequality and the finite-dimensional bound $\|\pi(k)\|_{\mathrm{HS}} = \sqrt{d_\pi}$. (b) is the change of variable $k \mapsto x^{-1}k$, respectively $k\mapsto kx^{-1}$, and the multiplicativity of $\pi$. (c) is $(f*g)^*$ with $\pi(k)^* = \pi(k)^{-1} = \pi(k^{-1})$. For (d): for every $x \in K$, $\pi(x)^{-1}\hat f(\pi)\pi(x) = \int f(k)\pi(x^{-1}kx)\,dk = \int f(xkx^{-1})\pi(k)\,dk = \hat f(\pi)$, since $f$ is a class function and $dk$ is invariant; so $\hat f(\pi)$ commutes with every $\pi(x)$, and since $\pi$ is irreducible Schur's lemma gives $\hat f(\pi) = \lambda I$ for some scalar. Taking traces, $\operatorname{Tr}\hat f(\pi) = \int f\operatorname{Tr}\pi = \int f\chi_\pi$ and also $=\lambda d_\pi$, whence $\lambda = d_\pi^{-1}\int f\chi_\pi$. $\square$
+**Proof.** (a) is the triangle inequality and the finite-dimensional bound $\|\pi(k)\|_{\mathrm{HS}} = \sqrt{d_\pi}$. (b) is the change of variable $k \mapsto x^{-1}k$, respectively $k\mapsto kx^{-1}$, and the multiplicativity of $\pi$. (c) is $(f*g)^*$ with $\pi(k)^* = \pi(k)^{-1} = \pi(k^{-1})$. For (d): for every $x \in K$, $\pi(x)^{-1}\hat f(\pi)\pi(x) = \int f(k)\pi(x^{-1}kx)\,dk = \int f(xkx^{-1})\pi(k)\,dk = \hat f(\pi)$, since $f$ is a class function and $dk$ is invariant; so $\hat f(\pi)$ commutes with every $\pi(x)$, and since $\pi$ is irreducible Schur's lemma gives $\hat f(\pi) = \lambda I$ for some scalar. Taking traces, $\operatorname{Tr}\hat f(\pi) = \int f\operatorname{Tr}\pi = \int f\chi_\pi$ and also $=\lambda d_\pi$, whence $\lambda = d_\pi^{-1}\int f\chi_\pi$.
 
 **Remark ($\hat f$ is compact).** For $f \in L^2(K)$ the operator $\hat f(\pi)$ is determined and the map $f \mapsto (\hat f(\pi))$ is a Hilbert–Schmidt transform; the compactness of the integral operator $T_f : L^2(K) \to L^2(K)$, $T_f h = f * h$, follows from the finite-dimensionality of the constituents, and it is the mechanism of the Peter–Weyl proof. The operator algebra generated by the transforms is the direct sum of the full matrix algebras $\operatorname{End}(\mathcal{H}_\pi)$, and its weak completion is the group von Neumann algebra $L(K),$ which for compact $K$ is a direct sum of type I factors (see *Operator Algebras* and *Type I Groups*).
 
@@ -94,7 +94,7 @@ $$
 *Proof.* As in the abelian case, substituting $x = yz$ and using the left-invariance of $dz$ and the multiplicativity of $\pi$,
 
 $$
-\widehat{f*g}(\pi) = \int_K\int_K f(y)g(z)\,\pi(yz)\,dz\,dy = \left(\int_K f(y)\pi(y)\,dy\right)\left(\int_K g(z)\pi(z)\,dz\right) = \hat f(\pi)\hat g(\pi). \qquad \square
+\widehat{f*g}(\pi) = \int_K\int_K f(y)g(z)\,\pi(yz)\,dz\,dy = \left(\int_K f(y)\pi(y)\,dy\right)\left(\int_K g(z)\pi(z)\,dz\right) = \hat f(\pi)\hat g(\pi).
 $$
 
 Thus the transform is a homomorphism of the Banach algebra $L^1(K)$ into the algebra of operator fields on the dual with pointwise multiplication, and convolution is diagonalised by the transform exactly as in the abelian case, with the scalar product replaced by operator multiplication.
@@ -105,7 +105,7 @@ Thus the transform is a homomorphism of the Banach algebra $L^1(K)$ into the alg
 
 **Proposition.** The character satisfies $\chi_\pi(e) = d_\pi$, $\chi_\pi(k^{-1}) = \overline{\chi_\pi(k)}$, $|\chi_\pi(k)| \leq d_\pi$, and $\chi_{\pi\oplus\sigma} = \chi_\pi + \chi_\sigma$, $\chi_{\pi\otimes\sigma} = \chi_\pi\chi_\sigma$. The map $\pi \mapsto \chi_\pi$ is injective: two irreducible representations with the same character are equivalent.
 
-**Proof.** The first three statements are the trace, unitarity and the spectral bound; the tensor product formula is multiplicativity of the trace; injectivity is the standard fact that the character determines the representation up to equivalence, proved from the orthogonality relations below together with the decomposition of the tensor product into irreducibles. $\square$
+**Proof.** The first three statements are the trace, unitarity and the spectral bound; the tensor product formula is multiplicativity of the trace; injectivity is the standard fact that the character determines the representation up to equivalence, proved from the orthogonality relations below together with the decomposition of the tensor product into irreducibles.
 
 ## The Orthogonality Relations
 
@@ -121,7 +121,7 @@ $$
 
 where $\delta_{\pi\sigma} = 1$ if $\pi \cong \sigma$ and $0$ otherwise.
 
-**Proof sketch.** The proof is an application of Schur's lemma to the operator $A = \int_K \sigma(k)^{-1}B\pi(k)\,dk$ for $B \in \operatorname{Hom}(\mathcal{H}_\pi, \mathcal{H}_\sigma)$: the invariance $A\pi(x) = \sigma(x)A$ forces $A = 0$ when $\pi\not\cong\sigma$ and $A = \lambda I$ when $\pi = \sigma$, and taking $B$ a matrix unit and traces gives the display. The computation is the standard one; the representation-theoretic input (Schur's lemma, complete reducibility) is Part II's, and the explicit constant $d_\pi^{-1}$ follows from the normalisation $\int_K dk = 1$ by evaluating at $\pi = \sigma$, $i = l$, $j = m$ and summing over $i,j$ against $\chi_\pi(e) = d_\pi$. $\square$
+**Proof sketch.** The proof is an application of Schur's lemma to the operator $A = \int_K \sigma(k)^{-1}B\pi(k)\,dk$ for $B \in \operatorname{Hom}(\mathcal{H}_\pi, \mathcal{H}_\sigma)$: the invariance $A\pi(x) = \sigma(x)A$ forces $A = 0$ when $\pi\not\cong\sigma$ and $A = \lambda I$ when $\pi = \sigma$, and taking $B$ a matrix unit and traces gives the display. The computation is the standard one; the representation-theoretic input (Schur's lemma, complete reducibility) is Part II's, and the explicit constant $d_\pi^{-1}$ follows from the normalisation $\int_K dk = 1$ by evaluating at $\pi = \sigma$, $i = l$, $j = m$ and summing over $i,j$ against $\chi_\pi(e) = d_\pi$.
 
 **Corollary (orthonormal basis).** The functions $e^\pi_{ij} = \sqrt{d_\pi}\,\pi_{ij}$, for $\pi \in \operatorname{Irr}(K)$ and $1 \leq i,j \leq d_\pi$, form an orthonormal family in $L^2(K)$. They form an orthonormal **basis** of $L^2(K)$, and this is the Peter–Weyl theorem; consequently
 
@@ -151,7 +151,7 @@ $$
 
 where $\bar\sigma$ is the contragredient of $\sigma$. In particular the characters form an orthonormal family in $L^2(K)$, and they form an orthonormal basis of the subspace $L^2(K)^K$ of class functions.
 
-**Proof.** The first identity is the orthogonality of matrix coefficients summed over $i = l$ and $j = m$. For the second, $\overline{\chi_\sigma(k)} = \chi_{\bar\sigma}(k)$ because the eigenvalues of $\sigma(k)$ are inverted under conjugation of the representation; the first identity applied to $\pi$ and $\bar\sigma$ gives the display. The characters span the class functions: a class function orthogonal to every $\chi_\pi$ is orthogonal to every matrix coefficient, since averaging over conjugacy classes expresses the projection onto class functions as a combination of characters, so it vanishes by the completeness of the coefficients. $\square$
+**Proof.** The first identity is the orthogonality of matrix coefficients summed over $i = l$ and $j = m$. For the second, $\overline{\chi_\sigma(k)} = \chi_{\bar\sigma}(k)$ because the eigenvalues of $\sigma(k)$ are inverted under conjugation of the representation; the first identity applied to $\pi$ and $\bar\sigma$ gives the display. The characters span the class functions: a class function orthogonal to every $\chi_\pi$ is orthogonal to every matrix coefficient, since averaging over conjugacy classes expresses the projection onto class functions as a combination of characters, so it vanishes by the completeness of the coefficients.
 
 **Corollary (the character transform).** For a class function $f \in L^2(K)$ the expansion is diagonal,
 
@@ -161,7 +161,7 @@ $$
 
 and the Plancherel identity for class functions reads $\|f\|_2^2 = \sum_\pi |\lambda_\pi(f)|^2$. For $f = \chi_\pi$ one has $\lambda_\rho(\chi_\pi) = \delta_{\rho\bar\pi}$.
 
-**Proof.** Combine the scalar form of the transform for class functions with the character orthogonality. $\square$
+**Proof.** Combine the scalar form of the transform for class functions with the character orthogonality.
 
 ### The Convolution of Characters and the Coefficient Algebra
 
@@ -173,7 +173,7 @@ $$
 
 where $m^\tau_{\pi\sigma}$ is the multiplicity of $\tau$ in the tensor product $\pi\otimes\sigma$. In particular $\chi_\pi * \chi_\sigma = 0$ if and only if the tensor product contains no irreducible constituent, and the coefficient algebra below is closed under convolution.
 
-**Proof.** By the convolution theorem, $\widehat{\chi_\pi * \chi_\sigma}(\tau) = \hat\chi_\pi(\tau)\hat\chi_\sigma(\tau)$; for the class functions $\chi_\pi$, $\chi_\sigma$ these transforms are scalars, and the computation of $\hat\chi_\pi(\tau)$ from the orthogonality relations gives the display, the multiplicities entering through the decomposition of $\pi\otimes\sigma$. The statement is the compact form of the algebra structure of the representation ring, treated in Part II's representation theory. $\square$
+**Proof.** By the convolution theorem, $\widehat{\chi_\pi * \chi_\sigma}(\tau) = \hat\chi_\pi(\tau)\hat\chi_\sigma(\tau)$; for the class functions $\chi_\pi$, $\chi_\sigma$ these transforms are scalars, and the computation of $\hat\chi_\pi(\tau)$ from the orthogonality relations gives the display, the multiplicities entering through the decomposition of $\pi\otimes\sigma$. The statement is the compact form of the algebra structure of the representation ring, treated in Part II's representation theory.
 
 **Definition.** The **representative-function algebra** (or coefficient algebra) $A(K)$ is the linear span of all matrix coefficients of the finite-dimensional continuous representations of $K$.
 
@@ -185,7 +185,7 @@ $$
 
 is a Banach $*$-algebra isomorphic to the algebraic direct sum $\bigoplus_{\pi}\operatorname{End}(\mathcal{H}_\pi)$ completed appropriately; in particular $A(K)$ is closed under convolution and the convolution theorem holds inside it without convergence problems.
 
-**Proof.** The set of matrix coefficients is closed under products because $\pi_{ij}\sigma_{lm} = (\pi\otimes\sigma)_{ij,lm}$ is a matrix coefficient of the tensor product, and closed under conjugation because $\overline{\pi_{ij}}$ is a coefficient of the contragredient. Invariance under translation is (b) of the elementary properties. Density in $C(K)$ is the Stone–Weierstrass theorem: $A(K)$ is an algebra containing the constants and closed under conjugation, and it separates points of $K$ because for $x \neq y$ some matrix coefficient of the regular representation separates them. Density in $L^p$ follows from density in $C(K)$ and the finiteness of the measure. $\square$
+**Proof.** The set of matrix coefficients is closed under products because $\pi_{ij}\sigma_{lm} = (\pi\otimes\sigma)_{ij,lm}$ is a matrix coefficient of the tensor product, and closed under conjugation because $\overline{\pi_{ij}}$ is a coefficient of the contragredient. Invariance under translation is (b) of the elementary properties. Density in $C(K)$ is the Stone–Weierstrass theorem: $A(K)$ is an algebra containing the constants and closed under conjugation, and it separates points of $K$ because for $x \neq y$ some matrix coefficient of the regular representation separates them. Density in $L^p$ follows from density in $C(K)$ and the finiteness of the measure.
 
 ## The Inversion and Plancherel Formulas
 
@@ -199,7 +199,7 @@ $$
 
 the sum being finite. For $f \in L^2(K)$ the same series converges to $f$ in $L^2(K)$.
 
-**Proof.** For $f$ a matrix coefficient $\pi_{ij}$ one verifies directly from the orthogonality relations; the general case follows by linearity, and the $L^2$ statement by continuity of the transform and the density of $A(K)$ in $L^2(K)$. The finite sum is exact because only finitely many matrix coefficients occur. $\square$
+**Proof.** For $f$ a matrix coefficient $\pi_{ij}$ one verifies directly from the orthogonality relations; the general case follows by linearity, and the $L^2$ statement by continuity of the transform and the density of $A(K)$ in $L^2(K)$. The finite sum is exact because only finitely many matrix coefficients occur.
 
 **Corollary (inversion for characters).** For a class function $f = \sum_\pi \lambda_\pi\chi_\pi$ in $A(K)\cap L^2(K)^K$ one has $f(k) = \sum_\pi \lambda_\pi\chi_\pi(k)$, and the transform is scalar; the "Fourier coefficients" of a class function are the numbers $\lambda_\pi = \int_K f\overline{\chi_\pi}\,dk$.
 
@@ -219,7 +219,7 @@ $$
 
 where the direct summand $\mathcal{H}_\pi\otimes\mathcal{H}_\pi^*$ carries the Hilbert–Schmidt inner product.
 
-**Proof.** The expansion of $f$ in the orthonormal basis $e^\pi_{ij} = \sqrt{d_\pi}\pi_{ij}$ gives $\|f\|_2^2 = \sum_{\pi, i, j} |\langle f, e^\pi_{ij}\rangle|^2$. On the other hand $\langle f, e^\pi_{ij}\rangle = \sqrt{d_\pi}\,\overline{\hat f(\pi)_{ij}}$ from the definition of $\hat f$ and the unitarity of $\pi$, so $\sum_{i,j}|\langle f, e^\pi_{ij}\rangle|^2 = d_\pi\sum_{i,j}|\hat f(\pi)_{ij}|^2 = d_\pi\|\hat f(\pi)\|_{\mathrm{HS}}^2$. Summing over $\pi$ gives the identity; the unitarity statement is its polarised form. $\square$
+**Proof.** The expansion of $f$ in the orthonormal basis $e^\pi_{ij} = \sqrt{d_\pi}\pi_{ij}$ gives $\|f\|_2^2 = \sum_{\pi, i, j} |\langle f, e^\pi_{ij}\rangle|^2$. On the other hand $\langle f, e^\pi_{ij}\rangle = \sqrt{d_\pi}\,\overline{\hat f(\pi)_{ij}}$ from the definition of $\hat f$ and the unitarity of $\pi$, so $\sum_{i,j}|\langle f, e^\pi_{ij}\rangle|^2 = d_\pi\sum_{i,j}|\hat f(\pi)_{ij}|^2 = d_\pi\|\hat f(\pi)\|_{\mathrm{HS}}^2$. Summing over $\pi$ gives the identity; the unitarity statement is its polarised form.
 
 **Corollary (multiplicity of the regular representation).** In the decomposition of the left regular representation on $L^2(K)$, the irreducible $\pi$ occurs with multiplicity $\dim\mathcal{H}_\pi = d_\pi$, on the span of the coefficients $\pi_{ij}$ for fixed $\pi$; hence $\lambda \cong \bigoplus_{\pi\in\operatorname{Irr}(K)} \pi^{\oplus d_\pi}$.
 
@@ -231,7 +231,7 @@ where the direct summand $\mathcal{H}_\pi\otimes\mathcal{H}_\pi^*$ carries the H
 
 **Theorem.** For a compact group $K$ the unitary dual $\operatorname{Irr}(K)$ is a discrete set in the Fell topology, every irreducible representation is finite-dimensional, and the group von Neumann algebra $L(K) = \lambda(K)''$ is a direct sum of the matrix algebras $\operatorname{End}(\mathcal{H}_\pi)$ over $\pi \in \operatorname{Irr}(K)$. In particular compact groups are of type I.
 
-**Proof.** Finite-dimensionality and complete reducibility are Peter–Weyl; discreteness of the dual is the isolation of each finite-dimensional irreducible in the Fell topology, since a small perturbation of a finite-dimensional representation retains an irreducible subrepresentation by the character orthogonality; the description of $L(K)$ follows because the coefficients of distinct irreducibles are mutually orthogonal in $L^2$ and each irreducible contributes a full matrix algebra of operators on the corresponding summand. The type-I statement is then Part II's *Type I Groups*, §Examples and Non-Examples. $\square$
+**Proof.** Finite-dimensionality and complete reducibility are Peter–Weyl; discreteness of the dual is the isolation of each finite-dimensional irreducible in the Fell topology, since a small perturbation of a finite-dimensional representation retains an irreducible subrepresentation by the character orthogonality; the description of $L(K)$ follows because the coefficients of distinct irreducibles are mutually orthogonal in $L^2$ and each irreducible contributes a full matrix algebra of operators on the corresponding summand. The type-I statement is then Part II's *Type I Groups*, §Examples and Non-Examples.
 
 **Example (compact abelian).** If $K$ is compact abelian, every irreducible is one-dimensional, $d_\pi = 1$, $\operatorname{Irr}(K) = K^\vee$ is a discrete abelian group, and the formulas above reduce to the abelian inversion and Plancherel of *Harmonic Analysis on Groups*. The circle is the model: $\operatorname{Irr}(S^1) = \mathbb{Z}$ with $\chi_n(\theta) = e^{2\pi i n\theta}$ and $L^2(S^1) \cong \bigoplus_{n\in\mathbb{Z}}\mathbb{C}\chi_n$.
 

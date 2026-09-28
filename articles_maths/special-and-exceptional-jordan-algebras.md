@@ -48,13 +48,13 @@ where $G$ is a homogeneous polynomial of degree $8$, an alternating sum of monom
 
 ### Conjugation and Hermitian Matrices
 
-Let $D$ be a composition algebra over $R$: a unital $R$-algebra with a quadratic **norm** $N : D \to R$ and a conjugation $u \mapsto \bar u$ satisfying
+Let $D$ be a composition algebra over $R$: a unital $R$-algebra with a conjugation $u \mapsto \bar u$ such that
 
 $$
-u\bar u = \bar u u = N(u) \cdot 1, \qquad N(uv) = N(u) N(v),
+u\bar u = \bar u u \in R, \qquad (uv)\overline{uv} = (u\bar u)(v\bar v),
 $$
 
-with $u + \bar u \in R$ and $u\bar u \in R$ for all $u$. The classical examples are $\mathbb{R}$, $\mathbb{C}$, $\mathbb{H}$ and $\mathbb{O}$; the first three are associative and $\mathbb{O}$ is not. For a matrix $x$ over $D$, let $x^*$ denote the conjugate transpose. The **Hermitian matrices** are
+with $u + \bar u \in R$ for all $u$. The classical examples are $\mathbb{R}$, $\mathbb{C}$, $\mathbb{H}$ and $\mathbb{O}$; the first three are associative and $\mathbb{O}$ is not. For a matrix $x$ over $D$, let $x^*$ denote the conjugate transpose. The **Hermitian matrices** are
 
 $$
 H_n(D) = \{x \in M_n(D) : x^* = x\},
@@ -72,7 +72,7 @@ so the product is again Hermitian. Thus $H_n(D)$ is a Jordan subalgebra of $M_n(
 
 **Theorem.** For $D$ associative and $2$ invertible, $H_n(D)$ is a Jordan algebra. In particular $H_n(\mathbb{R})$, $H_n(\mathbb{C})$ and $H_n(\mathbb{H})$ are Jordan algebras for every $n \geq 1$.
 
-*Proof.* $H_n(D)$ is a submodule of $M_n(D)$ closed under $\circ$, and a subalgebra of a Jordan algebra is a Jordan algebra, since the identity is verified in the larger algebra. The ambient $M_n(D)^+$ is a Jordan algebra by the theorem of *Jordan Algebras* on $A^+$. $\square$
+*Proof.* $H_n(D)$ is a submodule of $M_n(D)$ closed under $\circ$, and a subalgebra of a Jordan algebra is a Jordan algebra, since the identity is verified in the larger algebra. The ambient $M_n(D)^+$ is a Jordan algebra by the theorem of *Jordan Algebras* on $A^+$.
 
 **Remark.** Closure under $\circ$ uses only that conjugation is an anti-automorphism, so it does not need associativity. For $D = \mathbb{O}$ conjugation is still an anti-automorphism and closure still holds; what fails is the associativity of $M_n(\mathbb{O})$ used in the proof of the Jordan identity for $A^+$. The case $n = 3$ survives, and that is the Albert algebra.
 
@@ -120,21 +120,15 @@ $$
 
 The relation $\ell x = \bar x\ell$, which follows from the product, says that $\ell$ anticommutes with the imaginary quaternions $e_1, e_2, e_3$; because $\mathbb{O}$ is not associative, the product is not an associative expansion of the notation $a + b\ell$.
 
-The conjugation is $\overline{a + b\ell} = \bar a - b\ell$ and the norm is $N(u) = u\bar u = N(a) + N(b) \in \mathbb{R}$. The eight elements $1, e_1, e_2, e_3, \ell, e_1\ell, e_2\ell, e_3\ell$ form a basis, so $\dim_{\mathbb{R}} \mathbb{O} = 8$.
+The conjugation is $\overline{a + b\ell} = \bar a - b\ell$, so $u\bar u = a\bar a + b\bar b \in \mathbb{R}$. The eight elements $1, e_1, e_2, e_3, \ell, e_1\ell, e_2\ell, e_3\ell$ form a basis, so $\dim_{\mathbb{R}} \mathbb{O} = 8$.
 
-**Theorem.** $\mathbb{O}$ is a composition algebra: $N(uv) = N(u)N(v)$ and $(uv)\bar v = u N(v)$ for all $u, v$. It is **alternative**, satisfying $u(uv) = (uu)v$ and $(vu)u = v(uu)$, and it is not associative.
+**Theorem.** $\mathbb{O}$ is a composition algebra: $(uv)\overline{uv} = (u\bar u)(v\bar v)$ and $(uv)\bar v = u(v\bar v)$ for all $u, v$. It is **alternative**, satisfying $u(uv) = (uu)v$ and $(vu)u = v(uu)$, and it is not associative.
 
 The verification is a direct computation in the eight basis elements; the model above is the one used throughout. Non-associativity is the property that makes the Albert algebra exceptional, and alternativity is the property that keeps it a Jordan algebra.
 
 ### Coordinates
 
-An octonion is written $u = u_0 + \sum_{i=1}^{7} u_i \iota_i$ with $u_i \in \mathbb{R}$ and $\iota_i$ the seven imaginary basis elements $\iota_1 = e_1$, $\iota_2 = e_2$, $\iota_3 = e_3$, $\iota_4 = \ell$, $\iota_5 = e_1\ell$, $\iota_6 = e_2\ell$, $\iota_7 = e_3\ell$. Conjugation negates the imaginary part, $\bar u = u_0 - \sum_i u_i\iota_i$, and $N(u) = \sum_{i=0}^{7} u_i^2$. The real part is $\operatorname{Re}(u) = \tfrac{1}{2}(u + \bar u) = u_0$, and the bilinear form associated with the norm is
-
-$$
-\langle u, v \rangle = \operatorname{Re}(u\bar v) = \operatorname{Re}(\bar u v),
-$$
-
-a positive definite inner product; the imaginary part is $\operatorname{Im}(u) = \tfrac{1}{2}(u - \bar u)$.
+An octonion is written $u = u_0 + \sum_{i=1}^{7} u_i \iota_i$ with $u_i \in \mathbb{R}$ and $\iota_i$ the seven imaginary basis elements $\iota_1 = e_1$, $\iota_2 = e_2$, $\iota_3 = e_3$, $\iota_4 = \ell$, $\iota_5 = e_1\ell$, $\iota_6 = e_2\ell$, $\iota_7 = e_3\ell$. Conjugation negates the imaginary part, $\bar u = u_0 - \sum_i u_i\iota_i$, and $u\bar u = \sum_{i=0}^{7} u_i^2$. The real part is $\operatorname{Re}(u) = \tfrac{1}{2}(u + \bar u) = u_0$, and the imaginary part is $\operatorname{Im}(u) = \tfrac{1}{2}(u - \bar u)$.
 
 ## The Albert Algebra
 
@@ -160,41 +154,9 @@ This is the value quoted in *Jordan Algebras*, and the algebra is the unique exc
 
 **Theorem (Albert).** $H_3(\mathbb{O})$ with the symmetrised product is a Jordan algebra.
 
-*Proof (sketch).* Let $x = \sum_{i,j} x_{ij} \otimes E_{ij}$ be a generic Hermitian matrix, with $x_{ii} \in \mathbb{R}$ and $x_{ji} = \bar x_{ij}$. The product $x \circ y = \tfrac{1}{2}(xy + yx)$ is again Hermitian, by the anti-automorphism property of the octonion conjugation, so $\circ$ is a commutative product on $H_3(\mathbb{O})$. The Jordan identity $[L_x, L_{x^2}] = 0$ becomes, after expanding both sides over the eight basis octonions, a polynomial identity of degree four in the entries $x_{ij}$. The reduction uses the alternative laws $u(uv) = (uu)v$ and $(vu)u = v(uu)$, the vanishing of the real part of the associator, $\operatorname{Re}[u,v,w] = 0$, and the composition law $N(uv) = N(u)N(v)$ with $u\bar u = N(u)$, which together bring the two sides to the same normal form. This is the classical theorem of Albert; the finite ingredient is the multiplication table of the eight basis units. $\square$
+*Proof (sketch).* Let $x = \sum_{i,j} x_{ij} \otimes E_{ij}$ be a generic Hermitian matrix, with $x_{ii} \in \mathbb{R}$ and $x_{ji} = \bar x_{ij}$. The product $x \circ y = \tfrac{1}{2}(xy + yx)$ is again Hermitian, by the anti-automorphism property of the octonion conjugation, so $\circ$ is a commutative product on $H_3(\mathbb{O})$. The Jordan identity $[L_x, L_{x^2}] = 0$ becomes, after expanding both sides over the eight basis octonions, a polynomial identity of degree four in the entries $x_{ij}$. The reduction uses the alternative laws $u(uv) = (uu)v$ and $(vu)u = v(uu)$, the vanishing of the real part of the associator, $\operatorname{Re}[u,v,w] = 0$, and the composition law $(uv)\overline{uv} = (u\bar u)(v\bar v)$ with $u\bar u$ real, which together bring the two sides to the same normal form. This is the classical theorem of Albert; the finite ingredient is the multiplication table of the eight basis units.
 
 **Remark.** The same computation fails for $n \geq 4$: the symmetrised product on $H_n(\mathbb{O})$ is not a Jordan product for $n \geq 4$. The reason is that the proof of the Jordan identity for $A^+$ uses the associativity of the entries, which an associative composition algebra ($\mathbb{R}$, $\mathbb{C}$, $\mathbb{H}$) supplies and which the octonions supply only up to the alternative laws. The case $n = 3$ escapes because the Hermitian condition pairs every entry with its conjugate transpose, and the associator of octonions has vanishing real part, so the alternative laws suffice for the products that occur; from $n = 4$ onwards the identity contains a product of three off-diagonal octonions whose bracketing matters.
-
-### The Cubic Norm
-
-The algebra $H_3(\mathbb{O})$ has **degree three**: for every $x$ the powers $1, x, x^2, x^3$ are linearly dependent, and the relation is the characteristic polynomial
-
-$$
-x^3 - T(x)\, x^2 + S(x)\, x - N(x)\, 1 = 0 ,
-$$
-
-with $T(x) = \operatorname{tr}(x) = \alpha_1 + \alpha_2 + \alpha_3$ the **trace**, where $\alpha_i = x_{ii} \in \mathbb{R}$, and with
-
-$$
-S(x) = \alpha_1\alpha_2 + \alpha_2\alpha_3 + \alpha_3\alpha_1 - N(x_{12}) - N(x_{13}) - N(x_{23}),
-$$
-
-$$
-N(x) = \alpha_1\alpha_2\alpha_3 - \alpha_1 N(x_{23}) - \alpha_2 N(x_{13}) - \alpha_3 N(x_{12}) + 2\operatorname{Re}\bigl((x_{12}\,x_{23})\,\bar x_{13}\bigr).
-$$
-
-Here $x_{12}, x_{13}, x_{23}$ are the upper-triangular entries and $N(x_{ij}) = x_{ij}\bar x_{ij}$; the three-factor real part is the term in which non-associativity of $\mathbb{O}$ becomes visible, since replacing $(x_{12}x_{23})$ by the other bracketing changes nothing for the real part used here but does change the octonion product itself. The cubic form $N$ is the **determinant** or **cubic norm**. The trace form of *Jordan Algebras* is the polarisation of the quadratic form $x \mapsto \operatorname{tr}(L_{x^2})$ on $H_3(\mathbb{O})$. The **quadratic adjoint** is
-
-$$
-x^{\#} = x^2 - T(x)\,x + S(x)\, 1 ,
-$$
-
-and the identities
-
-$$
-x \circ x^{\#} = N(x)\,1, \qquad N(x^{\#}) = N(x)^2
-$$
-
-hold; the second expresses the multiplicativity of the cubic norm under the structure group. The degree-three relation, the two displayed formulas and the multiplicativity of $N$ are the standard Freudenthal formulas for the Albert algebra, and they are equivalent over $\mathbb{R}$ to the structure of the cubic norm; the characteristic relation and the identities below are the whole degree-three calculus.
 
 ### Idempotents
 
@@ -218,7 +180,7 @@ with $J_1(e_1) = \mathbb{R}e_1$ of dimension $1$, $J_0(e_1) = H_2(\mathbb{O})$ o
 
 **Theorem (Albert).** The Albert algebra $H_3(\mathbb{O})$ is exceptional: there is no associative algebra $A$ and no injective Jordan homomorphism $H_3(\mathbb{O}) \hookrightarrow A^+$.
 
-*Proof (idea).* Every special Jordan algebra satisfies Glennie's identity of degree $8$. One evaluates the Glennie polynomial on the general element of $H_3(\mathbb{O})$, expressed in the basis of the $27$ matrix units together with the eight octonion coordinates, and finds a nonzero result; a concrete choice of three elements suffices, and the evaluation is finite, involving only the multiplication table of $\mathbb{O}$. Hence $H_3(\mathbb{O})$ satisfies no such identity and cannot be special. The statement is classical; the modern form of the argument identifies the symmetric bilinear trace form and the cubic norm as the obstructions, and shows that a special algebra of degree three with a cubic norm admitting composition cannot exist. $\square$
+*Proof (idea).* Every special Jordan algebra satisfies Glennie's identity of degree $8$. One evaluates the Glennie polynomial on the general element of $H_3(\mathbb{O})$, expressed in the basis of the $27$ matrix units together with the eight octonion coordinates, and finds a nonzero result; a concrete choice of three elements suffices, and the evaluation is finite, involving only the multiplication table of $\mathbb{O}$. Hence $H_3(\mathbb{O})$ satisfies no such identity and cannot be special. The statement is classical; the modern form of the argument identifies the symmetric bilinear trace form and the cubic invariant as the obstructions, and shows that a special algebra of degree three with such an invariant admitting composition cannot exist.
 
 **Remark.** The exceptionality is not a rare accident. In the classification over $\mathbb{R}$ the Albert algebra is the unique exceptional simple algebra, and it is exactly the case in which the composition algebra of coefficients is the non-associative one, with a matrix size of three; the algebras $H_n(\mathbb{O})$ are defined for every $n$, but the symmetrised product is a Jordan product only for $n \leq 3$.
 
@@ -230,7 +192,7 @@ $$
 \operatorname{Aut}(H_3(\mathbb{O})) \cong F_4 ,
 $$
 
-of dimension $52$; its Lie algebra is the derivation algebra $\operatorname{Der}(H_3(\mathbb{O})) \cong \mathfrak{f}_4$, also of dimension $52$. The derivations are exactly the Jordan derivations of the previous article, $\operatorname{Der}(H_3(\mathbb{O})) = \{\delta: \delta(x\circ y) = \delta x \circ y + x \circ \delta y\}$; the trace form is invariant under them by the theorem of *Jordan Algebras*. The group $F_4$ acts transitively on the idempotents of rank one and preserves the cubic norm; the larger structure group, which rescales the norm, is generated by the norm-preserving group $E_6$ of dimension $78$ together with the dilations $x \mapsto \lambda x$, whose multipliers $\lambda^3$ fill $\mathbb{R}^{\times}$, and it has dimension $79$. The determination of the automorphism group by the cubic norm form is the standard route, and connects the Jordan theory to the exceptional Lie algebras.
+of dimension $52$; its Lie algebra is the derivation algebra $\operatorname{Der}(H_3(\mathbb{O})) \cong \mathrm{F}_4$, also of dimension $52$. The derivations are exactly the Jordan derivations of the previous article, $\operatorname{Der}(H_3(\mathbb{O})) = \{\delta: \delta(x\circ y) = \delta x \circ y + x \circ \delta y\}$; the trace form is invariant under them by the theorem of *Jordan Algebras*. The group $F_4$ acts transitively on the idempotents of rank one; the larger structure group is generated by $E_6$ of dimension $78$ together with the dilations $x \mapsto \lambda x$, whose multipliers $\lambda^3$ fill $\mathbb{R}^{\times}$, and it has dimension $79$.
 
 ## The Tits–Kantor–Koecher Construction
 
@@ -238,27 +200,27 @@ of dimension $52$; its Lie algebra is the derivation algebra $\operatorname{Der}
 
 The derivation algebra $\operatorname{Der}(J)$ of a Jordan algebra is a Lie algebra, but it is not the only one attached to $J$. The **Tits–Kantor–Koecher (TKK) construction** produces a Lie algebra from $J$ itself, and it does so functorially.
 
-**Theorem (Tits, Kantor, Koecher).** To each Jordan algebra $J$ over a ring in which $2$ is invertible there is assigned functorially a Lie algebra $\mathfrak{g}(J)$ admitting a three-term grading
+**Theorem (Tits, Kantor, Koecher).** To each Jordan algebra $J$ over a ring in which $2$ is invertible there is assigned functorially a Lie algebra $\mathrm{G}(J)$ admitting a three-term grading
 
 $$
-\mathfrak{g}(J) = J^- \oplus \mathfrak{g}_0 \oplus J^+ ,
+\mathrm{G}(J) = J^- \oplus \mathrm{G}_0 \oplus J^+ ,
 $$
 
-in which $J^+$ and $J^-$ are two copies of the module $J$ and are abelian, the middle piece $\mathfrak{g}_0$ is generated by the multiplication operators $L_x$ and the inner derivations $[L_x, L_y]$, and the bracket is determined by the action of $\mathfrak{g}_0$ on $J^\pm$ together with the rule for $[x^+, y^-]$ derived from the Jordan product. The algebra $\mathfrak{g}(J)$ carries an involution exchanging $J^+$ and $J^-$, and the construction is natural in $J$.
+in which $J^+$ and $J^-$ are two copies of the module $J$ and are abelian, the middle piece $\mathrm{G}_0$ is generated by the multiplication operators $L_x$ and the inner derivations $[L_x, L_y]$, and the bracket is determined by the action of $\mathrm{G}_0$ on $J^\pm$ together with the rule for $[x^+, y^-]$ derived from the Jordan product. The algebra $\mathrm{G}(J)$ carries an involution exchanging $J^+$ and $J^-$, and the construction is natural in $J$.
 
 The explicit bracket and the verification of the Jacobi identity are in the standard references. For the special algebras $J = H_n(D)$ the construction recovers the classical simple Lie algebras of the corresponding matrix groups; for the Albert algebra it gives the exceptional Lie algebra
 
 $$
-\mathfrak{g}(H_3(\mathbb{O})) \cong \mathfrak{e}_7 ,
+\mathrm{G}(H_3(\mathbb{O})) \cong \mathrm{E}_7 ,
 $$
 
 of dimension $133$, while
 
 $$
-\operatorname{Der}(H_3(\mathbb{O})) \cong \mathfrak{f}_4, \qquad \mathfrak{str}(H_3(\mathbb{O})) \cong \mathfrak{e}_6 \oplus \mathbb{R} ,
+\operatorname{Der}(H_3(\mathbb{O})) \cong \mathrm{F}_4, \qquad \mathrm{STR}(H_3(\mathbb{O})) \cong \mathrm{E}_6 \oplus \mathbb{R} ,
 $$
 
-where $\mathfrak{str}(J) = \operatorname{Der}(J) \oplus L(J)$ is the structure algebra, the Lie algebra of the structure group $\operatorname{Str}(J)$ of dimension $79$; its centre is spanned by $L_1$, which generates the dilations, its derived algebra is the norm-preserving $\mathfrak{e}_6$ of dimension $78$, and the graded pieces of $\mathfrak{g}(J)$ add to $27 + 79 + 27 = 133$, as the dimension of $\mathfrak{e}_7$ requires. The TKK construction is the cleanest bridge between the Jordan theory of this category and the Lie theory, and it shows that the exceptional Jordan algebra is not an isolated curiosity but the entry point to the exceptional series.
+where $\mathrm{STR}(J) = \operatorname{Der}(J) \oplus L(J)$ is the structure algebra, the Lie algebra of the structure group $\operatorname{Str}(J)$ of dimension $79$; its centre is spanned by $L_1$, which generates the dilations, its derived algebra is the invariant-preserving $\mathrm{E}_6$ of dimension $78$, and the graded pieces of $\mathrm{G}(J)$ add to $27 + 79 + 27 = 133$, as the dimension of $\mathrm{E}_7$ requires. The TKK construction is the cleanest bridge between the Jordan theory of this category and the Lie theory, and it shows that the exceptional Jordan algebra is not an isolated curiosity but the entry point to the exceptional series.
 
 ### The Simple Algebras and Their Invariants
 
@@ -267,13 +229,13 @@ The simple formally real algebras of the classification are tabulated below with
 | $J$ | degree | $\dim_{\mathbb{R}} J$ | $\operatorname{Der}(J)$ |
 |---|---|---|---|
 | $\mathbb{R} = JSpin_0$ | $1$ | $1$ | $0$ |
-| $JSpin_n$, $n \geq 2$ | $2$ | $n + 1$ | $\mathfrak{so}(n)$ |
-| $H_n(\mathbb{R})$, $n \geq 3$ | $n$ | $\tfrac{n(n+1)}{2}$ | $\mathfrak{so}(n)$ |
-| $H_n(\mathbb{C})$, $n \geq 3$ | $n$ | $n^2$ | $\mathfrak{su}(n)$ |
-| $H_n(\mathbb{H})$, $n \geq 3$ | $n$ | $n(2n-1)$ | $\mathfrak{sp}(n)$ |
-| $H_3(\mathbb{O})$ | $3$ | $27$ | $\mathfrak{f}_4$ |
+| $JSpin_n$, $n \geq 2$ | $2$ | $n + 1$ | $\mathrm{SO}(n)$ |
+| $H_n(\mathbb{R})$, $n \geq 3$ | $n$ | $\tfrac{n(n+1)}{2}$ | $\mathrm{SO}(n)$ |
+| $H_n(\mathbb{C})$, $n \geq 3$ | $n$ | $n^2$ | $\mathrm{SU}(n)$ |
+| $H_n(\mathbb{H})$, $n \geq 3$ | $n$ | $n(2n-1)$ | $\mathrm{Sp}(n)$ |
+| $H_3(\mathbb{O})$ | $3$ | $27$ | $\mathrm{F}_4$ |
 
-The degree of a simple Jordan algebra is the number of orthogonal idempotents in a maximal Jordan frame; it is the invariant that separates the spin factors from the matrix algebras, and it is the size of the matrix algebra in the matrix family. The derivation algebras are the classical skew algebras for the matrix family and the exceptional algebra $\mathfrak{f}_4$ for the Albert algebra; the table is the precise form of the classification statement of *Jordan Algebras*.
+The degree of a simple Jordan algebra is the number of orthogonal idempotents in a maximal Jordan frame; it is the invariant that separates the spin factors from the matrix algebras, and it is the size of the matrix algebra in the matrix family. The derivation algebras are the classical skew algebras for the matrix family and the exceptional algebra $\mathrm{F}_4$ for the Albert algebra; the table is the precise form of the classification statement of *Jordan Algebras*.
 
 ## Summary
 
@@ -289,20 +251,19 @@ A Jordan algebra is **special** if it embeds in the symmetrisation $A^+$ of an a
 | $s$-identity | Polynomial identity valid in every $A^+$ |
 | $\operatorname{J}(X)$, $\operatorname{SJ}(X)$ | Free Jordan algebra, free special Jordan algebra on $X$ |
 | $D$ | Composition algebra: $\mathbb{R}$, $\mathbb{C}$, $\mathbb{H}$, $\mathbb{O}$ |
-| $N(u) = u\bar u$ | Norm form of a composition algebra $D$ |
 | $u \mapsto \bar u$, $x \mapsto x^*$ | Conjugation, conjugate transpose |
 | $H_n(D)$ | Hermitian $n \times n$ matrices over $D$ |
 | $\mathbb{O} = \mathbb{H}\oplus\mathbb{H}\ell$ | Octonions by Cayley–Dickson doubling, $\ell^2 = -1$ |
 | $\iota_1, \ldots, \iota_7$ | Imaginary octonion basis units |
-| $T(x)$, $S(x)$, $N(x)$ | Trace, quadratic and cubic norms on $H_3(\mathbb{O})$ (the symbol $N$ is overloaded with the norm form of $D$) |
+| $T(x)$, $S(x)$, $N(x)$ | Trace and the quadratic and cubic invariants on $H_3(\mathbb{O})$ |
 | $x^{\#} = x^2 - T(x)x + S(x)1$ | Quadratic adjoint of $x$ |
 | $e_1, e_2, e_3$ | Jordan frame of $H_3(\mathbb{O})$ |
 | $\delta$ | A derivation, $\delta(x\circ y) = \delta x \circ y + x \circ \delta y$ |
-| $F_4$, $\mathfrak{f}_4$ | Automorphism group and derivation algebra of $H_3(\mathbb{O})$ |
-| $\mathfrak{g}(J)$ | Tits–Kantor–Koecher Lie algebra of $J$ |
-| $\mathfrak{str}(H_3(\mathbb{O})) \cong \mathfrak{e}_6 \oplus \mathbb{R}$ | Structure algebra, $\operatorname{Der}(H_3(\mathbb{O})) \oplus L(H_3(\mathbb{O}))$ |
-| $\operatorname{Str}(H_3(\mathbb{O}))$ | Structure group of the Albert algebra, norm similitudes of dimension $79$; the dilations $x \mapsto \lambda x$ extend the norm-preserving $E_6$ of dimension $78$ |
-| $\mathfrak{g}(H_3(\mathbb{O})) \cong \mathfrak{e}_7$ | Tits–Kantor–Koecher algebra of $H_3(\mathbb{O})$ |
+| $F_4$, $\mathrm{F}_4$ | Automorphism group and derivation algebra of $H_3(\mathbb{O})$ |
+| $\mathrm{G}(J)$ | Tits–Kantor–Koecher Lie algebra of $J$ |
+| $\mathrm{STR}(H_3(\mathbb{O})) \cong \mathrm{E}_6 \oplus \mathbb{R}$ | Structure algebra, $\operatorname{Der}(H_3(\mathbb{O})) \oplus L(H_3(\mathbb{O}))$ |
+| $\operatorname{Str}(H_3(\mathbb{O}))$ | Structure group of the Albert algebra, of dimension $79$; the dilations $x \mapsto \lambda x$ extend the invariant-preserving $E_6$ of dimension $78$ |
+| $\mathrm{G}(H_3(\mathbb{O})) \cong \mathrm{E}_7$ | Tits–Kantor–Koecher algebra of $H_3(\mathbb{O})$ |
 
 
 
@@ -313,4 +274,4 @@ A Jordan algebra is **special** if it embeds in the symmetrisation $A^+$ of an a
 - Kevin McCrimmon, *A Taste of Jordan Algebras* (Springer, 2004), for the special/exceptional dichotomy and Glennie's identity.
 - Charles M. Glennie, "Some identities valid in special Jordan algebras but not valid in all Jordan algebras", *Pacific Journal of Mathematics* 16 (1966), 47–59, for the degree-eight $s$-identity.
 - Richard D. Schafer, *An Introduction to Nonassociative Algebras* (Academic Press, 1966), for the Cayley–Dickson construction and the alternative laws.
-- John R. Faulkner, "A construction of Lie algebras from a class of ternary algebras", *Transactions of the American Mathematical Society* 155 (1971), 397–408, for the relationship with the exceptional Lie algebra $\mathfrak{f}_4$.
+- John R. Faulkner, "A construction of Lie algebras from a class of ternary algebras", *Transactions of the American Mathematical Society* 155 (1971), 397–408, for the relationship with the exceptional Lie algebra $\mathrm{F}_4$.

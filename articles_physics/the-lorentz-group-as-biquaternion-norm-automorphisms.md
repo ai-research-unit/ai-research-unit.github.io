@@ -1,10 +1,10 @@
-# __The Lorentz Group as Biquaternion Norm-Form Automorphisms__
+# __The Lorentz Group as Biquaternion Norm Automorphisms__
 
 ## Introduction
 
-The group that acts on the material sector of the biquaternion framework has so far been introduced in two ways: as the group of unit-norm biquaternions, and as the group of rotor conjugations they generate. Both descriptions take the group as given and derive its action. This article takes the opposite route. It asks what group the algebra *forces* when the norm form is regarded as the structure to be preserved, and shows that the answer is the Lorentz group, with the rotor description recovered as the coordinate form of the automorphisms.
+The group that acts on the material sector of the biquaternion framework has so far been introduced in two ways: as the group of unit-norm biquaternions, and as the group of rotor conjugations they generate. Both descriptions take the group as given and derive its action. This article takes the opposite route. It asks what group the algebra *forces* when the biquaternion norm is regarded as the structure to be preserved, and shows that the answer is the Lorentz group, with the rotor description recovered as the coordinate form of the automorphisms.
 
-The point of the automorphism reading is that the norm form is not an extra structure laid on the algebra. It is the algebra's own multiplicative quadratic form,
+The point of the automorphism reading is that the biquaternion norm is not an extra structure laid on the algebra. It is the algebra's own multiplicative quadratic form,
 
 $$
 N(\tilde{Q}) = \tilde{Q}\overline{\tilde{Q}} = \sum_{\mu=0}^{3}Q_\mu^2,
@@ -26,11 +26,11 @@ Three statements organize the article, and they are the three levels at which th
 
 **Boundaries.** This is a group-theoretic and geometric article. The spinor module, its one-sided action, and the representation theory of the group belong to the sibling category on relativistic quantum theory and to the companion article *The Spinor Module in Biquaternionic Form and Its Lorentz Action*; they are not developed here. The topology of the cover, and the composition law of boosts in detail, belong to the companion article *The Two-Sheeted Cover and the Topology of Boosts in Biquaternionic Form*. The structure and the finite-dimensional representations of the group as such are treated in *The Lorentz Group in Biquaternionic Form — Structure and Representations*; this article's subject is the characterization of the group by the form.
 
-**Conventions.** We use those of the read list unchanged. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_0 = 1, e_1, e_2, e_3$, $e_k^2 = -e_0$ and $e_je_k = -\delta_{jk}e_0 + \varepsilon_{jkl}e_l$, and central scalar imaginary $i$. The subspaces are $\mathbb{M}_-$ (anti-Hermitian: imaginary scalar, real vector — the material sector), $\mathbb{M}_+$ (Hermitian: real scalar, imaginary vector — the informational sector), $\mathbb{H}_{\mathbb{B}}$ (real quaternions) and $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_\mathbb{R}\{e_0, ie_0\}$ (the center). The conjugations are $\bar{\cdot}$ (quaternion), ${}^*$ (complex), ${}^\dagger = \bar{\cdot}^{\,*}$ (Hermitian) and ${}^\flat = -\dagger$ (anti-Hermitian). The norm form is $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$ — level 1, the identity $\mathrm{diag}(+1,+1,+1,+1)$ on $\mathbb{C}$ — and its restriction to the real material slice is the level-2 form $\eta = \mathrm{diag}(-1,+1,+1,+1)$. The matrix realization is $\Phi:\mathbb{B}\to M_2(\mathbb{C})$ with $\Phi(e_0) = I_2$, $\Phi(e_k) = -i\sigma_k$, $\Phi(i) = iI_2$. The material coordinate is $\tilde{Q} = ict\,e_0 + \mathbf{x}$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ its vacuum value. The trace formula is $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$.
+**Conventions.** We use those of the read list unchanged. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_0 = 1, e_1, e_2, e_3$, $e_k^2 = -e_0$ and $e_je_k = -\delta_{jk}e_0 + \varepsilon_{jkl}e_l$, and central scalar imaginary $i$. The subspaces are $\mathbb{M}_-$ (anti-Hermitian: imaginary scalar, real vector — the material sector), $\mathbb{M}_+$ (Hermitian: real scalar, imaginary vector — the informational sector), $\mathbb{H}_{\mathbb{B}}$ (real quaternions) and $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_\mathbb{R}\{e_0, ie_0\}$ (the center). The conjugations are $\bar{\cdot}$ (quaternion), ${}^*$ (complex), ${}^\dagger = \bar{\cdot}^{\,*}$ (Hermitian) and ${}^\flat = -\dagger$ (anti-Hermitian). The biquaternion norm is $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$ — level 1, the identity $\mathrm{diag}(+1,+1,+1,+1)$ on $\mathbb{C}$ — and its restriction to the real material slice is the level-2 form $\eta = \mathrm{diag}(-1,+1,+1,+1)$. The matrix realization is $\Phi:\mathbb{B}\to M_2(\mathbb{C})$ with $\Phi(e_0) = I_2$, $\Phi(e_k) = -i\sigma_k$, $\Phi(i) = iI_2$. The material coordinate is $\tilde{Q} = ict\,e_0 + \mathbf{x}$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ its vacuum value. The trace formula is $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$.
 
-## The Norm Form as a Quadratic Form
+## The Biquaternion Norm as a Quadratic Form
 
-The norm form is the quadratic map
+The biquaternion norm is the quadratic map
 
 $$
 N:\ \mathbb{B}\longrightarrow\mathbb{C},
@@ -68,7 +68,7 @@ N(\tilde{Q}\tilde{R})
 = N(\tilde{Q})\,N(\tilde{R}),
 $$
 
-where the fourth equality uses that $N(\tilde{R})$ is a complex scalar and therefore central in $\mathbb{B}$. The norm form is a **homomorphism of multiplicative monoids** from $(\mathbb{B},\cdot)$ to $(\mathbb{C},\cdot)$.
+where the fourth equality uses that $N(\tilde{R})$ is a complex scalar and therefore central in $\mathbb{B}$. The biquaternion norm is a **homomorphism of multiplicative monoids** from $(\mathbb{B},\cdot)$ to $(\mathbb{C},\cdot)$.
 
 **Compatibility with the real structure.** The conjugations act on the form by
 
@@ -109,7 +109,7 @@ Q_0 - iQ_3 & -iQ_1 - Q_2\\
 \det\Phi(\tilde{Q}) = Q_0^2+Q_1^2+Q_2^2+Q_3^2 = N(\tilde{Q}).
 $$
 
-The norm form **is the determinant**, and $\Phi$ is an isomorphism of $\mathbb{C}$-algebras. The verification of the determinant identity is a direct expansion; it was also checked numerically on random biquaternions, with $\det\Phi(\tilde{Q})$ and $N(\tilde{Q})$ agreeing to machine precision.
+The biquaternion norm **is the determinant**, and $\Phi$ is an isomorphism of $\mathbb{C}$-algebras. The verification of the determinant identity is a direct expansion; it was also checked numerically on random biquaternions, with $\det\Phi(\tilde{Q})$ and $N(\tilde{Q})$ agreeing to machine precision.
 
 The determinant is a quadratic form on the four-dimensional space $M_2(\mathbb{C})$, and its automorphism group is classical. Consider the map
 
@@ -145,7 +145,7 @@ $$
 \text{(complex dimension 3 + 3 = 6).}
 $$
 
-The two factors are the two chiral halves of the complexified rotation group; in the algebra they correspond to left and right multiplication. This is the complex group of the norm form. It is not the Lorentz group: it acts on the complexified four-vector space, and its two $SL(2,\mathbb{C})$ factors are independent.
+The two factors are the two chiral halves of the complexified rotation group; in the algebra they correspond to left and right multiplication. This is the complex group of the biquaternion norm. It is not the Lorentz group: it acts on the complexified four-vector space, and its two $SL(2,\mathbb{C})$ factors are independent.
 
 ## The Real Slice and the Minkowski Form
 
@@ -162,7 +162,7 @@ $$
 \qquad x_\mu\in\mathbb{R},
 $$
 
-the norm form is real and indefinite:
+the biquaternion norm is real and indefinite:
 
 $$
 N(\tilde{Q}) = (ix_0)^2 + x_1^2 + x_2^2 + x_3^2 = -x_0^2 + \mathbf{x}^2 .
@@ -207,7 +207,7 @@ $$
 \mathcal{G} \;\cong\; O(1,3),
 $$
 
-the full Lorentz group including the discrete reflections and the time-reversal and parity components. The connected component of the identity is the **restricted Lorentz group** $SO^+(1,3)$: the transformations that are proper (determinant $+1$) and orthochronous (preserve the time direction). This is the group the algebra supplies at the real level: the automorphisms of the norm form that respect the material slice.
+the full Lorentz group including the discrete reflections and the time-reversal and parity components. The connected component of the identity is the **restricted Lorentz group** $SO^+(1,3)$: the transformations that are proper (determinant $+1$) and orthochronous (preserve the time direction). This is the group the algebra supplies at the real level: the automorphisms of the biquaternion norm that respect the material slice.
 
 The discrete components are automorphisms of the form and are not rotor conjugations; they include spatial reflection and time reversal, which are outer with respect to the rotor group. The rotor group covers only the identity component, which is why a spinor or a rotor is not by itself sensitive to orientation-reversing transformations.
 
@@ -284,7 +284,7 @@ A word on the relation between the complex and the real descriptions is in order
 
 ## The Infinitesimal Automorphisms: the Lie Algebra
 
-Differentiating the unit-norm condition gives the Lie algebra of infinitesimal norm-form automorphisms. Let
+Differentiating the unit-norm condition gives the Lie algebra of infinitesimal biquaternion-norm automorphisms. Let
 
 $$
 \tilde{\Lambda} = e_0 + \varepsilon\,\tilde{Q},
@@ -302,13 +302,13 @@ $$
 so the tangent space at the identity is
 
 $$
-\mathfrak{sl}(2,\mathbb{C}) = \{\tilde{Q}\in\mathbb{B} : \mathrm{Sc}(\tilde{Q}) = 0\},
+\mathrm{SL}(2,\mathbb{C}) = \{\tilde{Q}\in\mathbb{B} : \mathrm{Sc}(\tilde{Q}) = 0\},
 $$
 
 the six-**real**-dimensional space spanned by the three real units and the three imaginary units,
 
 $$
-\mathfrak{sl}(2,\mathbb{C}) = \mathrm{span}_\mathbb{R}\{\,e_1,e_2,e_3,\ ie_1,ie_2,ie_3\,\}.
+\mathrm{SL}(2,\mathbb{C}) = \mathrm{span}_\mathbb{R}\{\,e_1,e_2,e_3,\ ie_1,ie_2,ie_3\,\}.
 $$
 
 This is the Lie algebra of the automorphism group, and it splits into **rotation** generators $\mathcal{J}_k = e_k$ (real quaternion directions) and **boost** generators $\mathcal{K}_k = ie_k$ (imaginary vector directions). Their brackets are computed directly from the quaternion multiplication rule; the commutator is $[A,B] = AB-BA$, and
@@ -323,7 +323,7 @@ $$
 
 The first two say that the rotations close and that the boosts transform as a vector under them; the third, with its minus sign, is the algebraic statement that two boosts do not close into a boost but into a rotation plus a boost. This is the infinitesimal form of the Thomas–Wigner rotation, and the sign is the one that makes the boost directions a vector and the rotation directions an axial vector.
 
-**Verification.** The three bracket families above were checked exactly, as identities in the quaternion algebra, for all $j,k\in\{1,2,3\}$: they reproduce the standard Lorentz algebra $\mathfrak{so}(1,3)$ up to the conventional factor two. For example $[\mathcal{J}_1,\mathcal{J}_2] = 2e_3$ and $[\mathcal{K}_1,\mathcal{K}_2] = -2e_3$, both confirmed.
+**Verification.** The three bracket families above were checked exactly, as identities in the quaternion algebra, for all $j,k\in\{1,2,3\}$: they reproduce the standard Lorentz algebra $\mathrm{SO}(1,3)$ up to the conventional factor two. For example $[\mathcal{J}_1,\mathcal{J}_2] = 2e_3$ and $[\mathcal{K}_1,\mathcal{K}_2] = -2e_3$, both confirmed.
 
 **The complexification and the two factors.** Complexifying the real Lie algebra and forming
 
@@ -349,31 +349,31 @@ $$
 (\mathrm{i} i)^2 = \mathrm{i}^2 i^2 = +e_0 .
 $$
 
-This is what makes each combination close on itself with the same structure constants, and what makes the two commute: $\left(1 + \mathrm{i} i\right)\left(1 - \mathrm{i} i\right) = 1 - (\mathrm{i} i)^2 = 0$. For $[\mathcal{N}^{+}_j,\mathcal{N}^{+}_k]$ the central factor contributes $(1+\mathrm{i} i)^2 = 2(1+\mathrm{i} i)$ and the quaternion commutator contributes $[e_j,e_k] = 2\varepsilon_{jkl}e_l$, so the product is $4\varepsilon_{jkl}\left(1+\mathrm{i} i\right)e_l/16 = \varepsilon_{jkl}\mathcal{N}^{+}_l$, as displayed. The combinations are the ones that diagonalize the adjoint action of the complexified boost generator. This is the Lie-algebra shadow of the group isomorphism $SO(4,\mathbb{C})\cong(SL(2,\mathbb{C})\times SL(2,\mathbb{C}))/\mathbb{Z}_2$ of the complex section: the two factors are the two commuting $\mathfrak{su}(2)$ algebras. The care needed here is that $\mathrm{i}$ is the complexification unit and not the algebra's scalar imaginary; the latter already appears in $\mathcal{K}_k = ie_k$, and conflating the two would be a notational error. The distinction is the same one that separates the real form $\mathfrak{so}(1,3)$ from its complexification.
+This is what makes each combination close on itself with the same structure constants, and what makes the two commute: $\left(1 + \mathrm{i} i\right)\left(1 - \mathrm{i} i\right) = 1 - (\mathrm{i} i)^2 = 0$. For $[\mathcal{N}^{+}_j,\mathcal{N}^{+}_k]$ the central factor contributes $(1+\mathrm{i} i)^2 = 2(1+\mathrm{i} i)$ and the quaternion commutator contributes $[e_j,e_k] = 2\varepsilon_{jkl}e_l$, so the product is $4\varepsilon_{jkl}\left(1+\mathrm{i} i\right)e_l/16 = \varepsilon_{jkl}\mathcal{N}^{+}_l$, as displayed. The combinations are the ones that diagonalize the adjoint action of the complexified boost generator. This is the Lie-algebra shadow of the group isomorphism $SO(4,\mathbb{C})\cong(SL(2,\mathbb{C})\times SL(2,\mathbb{C}))/\mathbb{Z}_2$ of the complex section: the two factors are the two commuting $\mathrm{SU}(2)$ algebras. The care needed here is that $\mathrm{i}$ is the complexification unit and not the algebra's scalar imaginary; the latter already appears in $\mathcal{K}_k = ie_k$, and conflating the two would be a notational error. The distinction is the same one that separates the real form $\mathrm{SO}(1,3)$ from its complexification.
 
 ## What the Algebra Supplies and What Is Standard
 
-**Supplied by the algebra.** The fact that the norm form is multiplicative, and therefore that it is the algebra's own quadratic structure; the determinant realization $N = \det$, which turns the automorphism problem into a problem about $M_2(\mathbb{C})$; the restriction of the complex form to the real slices, with the signature table; the identification of the automorphisms preserving the material slice with $O(1,3)$, and of the identity component with the rotor conjugations; and the infinitesimal algebra with its rotation-boost split and its minus sign on the boost-boost bracket.
+**Supplied by the algebra.** The fact that the biquaternion norm is multiplicative, and therefore that it is the algebra's own quadratic structure; the determinant realization $N = \det$, which turns the automorphism problem into a problem about $M_2(\mathbb{C})$; the restriction of the complex form to the real slices, with the signature table; the identification of the automorphisms preserving the material slice with $O(1,3)$, and of the identity component with the rotor conjugations; and the infinitesimal algebra with its rotation-boost split and its minus sign on the boost-boost bracket.
 
-**Standard mathematics transcribed.** The classification of nondegenerate complex quadratic forms, the isomorphism $SO(4,\mathbb{C})\cong(SL(2,\mathbb{C})\times SL(2,\mathbb{C}))/\mathbb{Z}_2$, the double cover $SL(2,\mathbb{C})\to SO^+(1,3)$, and the real forms of $\mathfrak{so}(4,\mathbb{C})$ are standard Lie theory. The surjectivity of the rotor map is the standard covering theorem and is cited, not re-derived; what is derived here is the algebraic form of the action and its kernel.
+**Standard mathematics transcribed.** The classification of nondegenerate complex quadratic forms, the isomorphism $SO(4,\mathbb{C})\cong(SL(2,\mathbb{C})\times SL(2,\mathbb{C}))/\mathbb{Z}_2$, the double cover $SL(2,\mathbb{C})\to SO^+(1,3)$, and the real forms of $\mathrm{SO}(4,\mathbb{C})$ are standard Lie theory. The surjectivity of the rotor map is the standard covering theorem and is cited, not re-derived; what is derived here is the algebraic form of the action and its kernel.
 
-**Interpretation.** The reading of the material slice as physical spacetime, and of its norm-form automorphisms as the Lorentz group, is the framework's structural hypothesis. The group-theoretic content is exact; the physical assignment is the hypothesis, and it is the same hypothesis that the foundational articles *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector* and *Introduction to the Biquaternion Universe* state.
+**Interpretation.** The reading of the material slice as physical spacetime, and of its biquaternion-norm automorphisms as the Lorentz group, is the framework's structural hypothesis. The group-theoretic content is exact; the physical assignment is the hypothesis, and it is the same hypothesis that the foundational articles *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector* and *Introduction to the Biquaternion Universe* state.
 
 ## Open Questions
 
-1. **Automorphisms of the full algebra.** The maps considered here preserve the norm form and, at the real level, the material slice. The $\mathbb{C}$-algebra automorphisms of $\mathbb{B}\cong M_2(\mathbb{C})$ are the inner automorphisms, $\tilde{Q}\mapsto\tilde{A}\tilde{Q}\tilde{A}^{-1}$, a subgroup of the form automorphisms. Does the framework assign a physical role to the difference between algebra automorphisms and form automorphisms?
+1. **Automorphisms of the full algebra.** The maps considered here preserve the biquaternion norm and, at the real level, the material slice. The $\mathbb{C}$-algebra automorphisms of $\mathbb{B}\cong M_2(\mathbb{C})$ are the inner automorphisms, $\tilde{Q}\mapsto\tilde{A}\tilde{Q}\tilde{A}^{-1}$, a subgroup of the form automorphisms. Does the framework assign a physical role to the difference between algebra automorphisms and form automorphisms?
 
 2. **The discrete components.** $O(1,3)$ has four components; the rotor group covers only $SO^+(1,3)$. Parity and time reversal are form automorphisms outside the rotor group. Whether the framework can represent them by an operation on biquaternion fields — rather than on four-vectors — without leaving the algebra is not settled here.
 
 3. **Real forms and the two sectors.** Both $\mathbb{M}_-$ and $\mathbb{M}_+$ restrict the form to a Lorentzian signature — $(3,1)$ on the material slice and $(1,3)$ on the informational one — and $\mathbb{H}_{\mathbb{B}}$ to $(4,0)$. The Euclidean real form is thus available. Is the Euclidean form, and the compact group it defines, the home of the informational sector's own symmetries? The question connects this article to *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*.
 
-4. **The norm form and curved spacetime.** The automorphism characterization is pointwise and flat. Whether it globalizes to a bundle of algebra automorphisms over a curved base, and what plays the role of the form there, is the same open question the foundational articles record for the whole framework.
+4. **The biquaternion norm and curved spacetime.** The automorphism characterization is pointwise and flat. Whether it globalizes to a bundle of algebra automorphisms over a curved base, and what plays the role of the form there, is the same open question the foundational articles record for the whole framework.
 
 5. **Uniqueness of the physical group.** The form determines $O(4,\mathbb{C})$ uniquely; the real structure then determines its real forms. Could a different real structure on $\mathbb{B}$ select a different physical group, and does the algebra rule out such a choice?
 
 The conventions of the construction are those of the following companion articles:
 
-- Companion article *Introduction to the Biquaternion Universe*, for the notation, the norm form and the sector structure.
+- Companion article *Introduction to the Biquaternion Universe*, for the notation, the biquaternion norm and the sector structure.
 - Companion article *Conventions in the Biquaternion Universe*, for the algebra and basis, the conjugations, the real subspaces and the metric at its three levels.
 - Companion article *The Lorentz Group in Biquaternionic Form — Structure and Representations*, for the Lie algebra, the real forms and the representation theory.
 - Companion article *The Spinor Module in Biquaternionic Form and Its Lorentz Action*, for the defining module and the action of the group on it.
@@ -382,7 +382,7 @@ The conventions of the construction are those of the following companion article
 
 ## Summary
 
-The norm form $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$ is a nondegenerate multiplicative quadratic form on $\mathbb{B}\cong\mathbb{C}^4$, with polarization matrix the identity and with
+The biquaternion norm $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$ is a nondegenerate multiplicative quadratic form on $\mathbb{B}\cong\mathbb{C}^4$, with polarization matrix the identity and with
 
 $$
 N(\tilde{Q}\tilde{R}) = N(\tilde{Q})N(\tilde{R}),
@@ -414,7 +414,7 @@ SO^+(1,3)\cong SL(2,\mathbb{C})/\{\pm e_0\},
 N(\tilde{\Lambda})=1,
 $$
 
-the map being two-to-one with kernel $\{\pm e_0\}$. Infinitesimally, the algebra is $\mathfrak{sl}(2,\mathbb{C}) = \{X : \mathrm{Sc}(\tilde{Q})=0\}$, spanned by the rotation generators $\mathcal{J}_k = e_k$ and the boost generators $\mathcal{K}_k = ie_k$, with
+the map being two-to-one with kernel $\{\pm e_0\}$. Infinitesimally, the algebra is $\mathrm{SL}(2,\mathbb{C}) = \{X : \mathrm{Sc}(\tilde{Q})=0\}$, spanned by the rotation generators $\mathcal{J}_k = e_k$ and the boost generators $\mathcal{K}_k = ie_k$, with
 
 $$
 [\mathcal{J}_j,\mathcal{J}_k] = 2\varepsilon_{jkl}\mathcal{J}_l,
@@ -424,7 +424,7 @@ $$
 [\mathcal{K}_j,\mathcal{K}_k] = -2\varepsilon_{jkl}\mathcal{J}_l,
 $$
 
-whose complexification splits into two commuting rotation algebras. The Lorentz group, in this reading, is what the norm form's automorphisms become when they are required to respect the algebra's real structure.
+whose complexification splits into two commuting rotation algebras. The Lorentz group, in this reading, is what the biquaternion norm's automorphisms become when they are required to respect the algebra's real structure.
 
 ## Summary of Notation
 
@@ -432,10 +432,10 @@ whose complexification splits into two commuting rotation algebras. The Lorentz 
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
 | $e_0=1,e_1,e_2,e_3$; $i$ | Quaternion basis ($e_k^2=-e_0$); central scalar imaginary |
-| $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$ | Norm form; level-1 identity on $\mathbb{C}$ |
+| $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$ | Biquaternion norm; level-1 identity on $\mathbb{C}$ |
 | $B(\tilde{Q},\tilde{R}) = \sum_\mu Q_\mu R_\mu$ | Polar (symmetric bilinear) form, matrix $G=I_4$ |
 | $O(4,\mathbb{C}),\ SO(4,\mathbb{C})$ | Complex automorphism group of $N$; its identity component |
-| $\Phi:\mathbb{B}\to M_2(\mathbb{C})$, $\Phi(e_k)=-i\sigma_k$, $N=\det\Phi$ | Matrix realization; norm form is the determinant |
+| $\Phi:\mathbb{B}\to M_2(\mathbb{C})$, $\Phi(e_k)=-i\sigma_k$, $N=\det\Phi$ | Matrix realization; biquaternion norm is the determinant |
 | $T_{\tilde{A},\tilde{B}}:\tilde{Q}\mapsto\tilde{A}\tilde{Q}\tilde{B}^{-1}$ | General norm-preserving complex map |
 | $SO(4,\mathbb{C})\cong(SL(2,\mathbb{C})\times SL(2,\mathbb{C}))/\{\pm(e_0,e_0)\}$ | Complex group |
 | $\mathbb{M}_-$, $\mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) slices |
@@ -445,7 +445,7 @@ whose complexification splits into two commuting rotation algebras. The Lorentz 
 | $\tilde{\Lambda}$, $N(\tilde{\Lambda})=1$ | Unit-norm biquaternion (Lorentz rotor) |
 | $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^\dagger$ | Rotor conjugation; the automorphism of the slice |
 | $\pi:SL(2,\mathbb{C})\to SO^+(1,3)$, $\ker\pi=\{\pm e_0\}$ | Two-to-one covering homomorphism |
-| $\mathfrak{sl}(2,\mathbb{C}) = \{X:\mathrm{Sc}(\tilde{Q})=0\}$ | Lie algebra; $\mathcal{J}_k=e_k$ (rotations), $\mathcal{K}_k=ie_k$ (boosts) |
+| $\mathrm{SL}(2,\mathbb{C}) = \{X:\mathrm{Sc}(\tilde{Q})=0\}$ | Lie algebra; $\mathcal{J}_k=e_k$ (rotations), $\mathcal{K}_k=ie_k$ (boosts) |
 | $[\mathcal{K}_j,\mathcal{K}_k]=-2\varepsilon_{jkl}\mathcal{J}_l$ | Boosts do not close; infinitesimal Wigner rotation |
 | $c = 1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |
 

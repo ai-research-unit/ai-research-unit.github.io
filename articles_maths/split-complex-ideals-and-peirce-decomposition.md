@@ -7,9 +7,9 @@ This article treats the ideal theory of the split-complex algebra $\mathbb{D}$ a
 
 The article records the definition of an ideal in a commutative algebra, determines the two-sided ideals, exhibits the two minimal ideals $\mathbb{R}\Pi_\pm$, writes the Peirce decomposition of $\mathbb{D}$ with respect to an idempotent, computes the lattice of ideals, and identifies the radical. The failure of simplicity is stated with its reason, and compared throughout with the simplicity of $\mathbb{B}$ over $\mathbb{C}$.
 
-**Placement.** The article is fourth in the Algebra group, after *Split-Complex Algebra*, *Split-Complex Norm and Invertibility* and *Split-Complex Idempotents and Projections*, and before *Split-Complex Zero Divisors* and *Worked Examples in the Split-Complex Algebra*. It uses the idempotents of the third article and the invertibility criterion of the second.
+**Placement.** The article is third in the Algebra group, after *Split-Complex Algebra* and *Split-Complex Idempotents and Projections*, and before *Split-Complex Zero Divisors* and *Worked Examples in the Split-Complex Algebra*. It uses the idempotents of the second article; the norm and the invertibility criterion belong to *Split-Complex Norm and Invertibility* in the Topology group.
 
-**Conventions.** The algebra is $\mathbb{D} = \mathbb{R}[x]/(x^2-1)$, with basis $1$, $j$, $j^2 = +1$, general element $Z = a+j b$, conjugate $\bar Z = a-j b$, norm form $N(Z) = Z\bar Z = a^2-b^2$, idempotents $\Pi_\pm = \tfrac12(1\pm j)$ and idempotent coordinates $Z = Z_+\Pi_1 + Z_-\Pi_2$. The base is the field $\mathbb{R}$; the algebra is commutative, so no distinction between left, right and two-sided ideals arises for the ambient ring.
+**Conventions.** The algebra is $\mathbb{D} = \mathbb{R}[x]/(x^2-1)$, with basis $1$, $j$, $j^2 = +1$, general element $Z = a+j b$, conjugate $\bar Z = a-j b$, idempotents $\Pi_\pm = \tfrac12(1\pm j)$ and idempotent coordinates $Z = Z_+\Pi_1 + Z_-\Pi_2$. The base is the field $\mathbb{R}$; the algebra is commutative, so no distinction between left, right and two-sided ideals arises for the ambient ring.
 
 ## Ideals in an Algebra
 
@@ -33,7 +33,7 @@ $$
 \{0\}, \qquad \mathbb{R}\Pi_1 = \mathbb{D}\Pi_1, \qquad \mathbb{R}\Pi_2 = \mathbb{D}\Pi_2, \qquad \mathbb{D}.
 $$
 
-**Proof.** Each of the three nontrivial sets listed is an ideal: $\mathbb{R}\Pi_1$ is closed under addition, and $Z(\lambda \Pi_1) = \lambda Z \Pi_1 = \lambda Z_+ \Pi_1 \in \mathbb{R}\Pi_1$ for every $Z$, so it is an ideal; the same argument gives $\mathbb{R}\Pi_2$; and $\mathbb{D}$ is trivially an ideal. Conversely, let $I \neq \{0\}$ be an ideal and choose $x \in I$ nonzero. If $N(x) \neq 0$ then $x$ is a unit by *Split-Complex Norm and Invertibility*, so $1 = x^{-1}x \in I$ and $I = \mathbb{D}$. If $N(x) = 0$, then $x$ is a nonzero multiple of $\Pi_1$ or of $\Pi_2$ by the idempotent classification; say $x = \lambda \Pi_1$ with $\lambda \neq 0$, so that $\Pi_1 = \lambda^{-1}x \in I$. Now take any $y \in I$. If there is such a $y$ with $y_- \neq 0$, then $y\Pi_2 = y_-\Pi_2 \in I$, so $\Pi_2 = y_-^{-1}y\Pi_2 \in I$, and then $1 = \Pi_1 + \Pi_2 \in I$, giving $I = \mathbb{D}$. If on the other hand every $y \in I$ has $y_- = 0$, then $I \subseteq \mathbb{R}\Pi_1$; since $I \neq 0$ and $\Pi_1 \in I$, we get $I = \mathbb{R}\Pi_1$. The case $x = \lambda \Pi_2$ is the same with the roles of $+$ and $-$ exchanged and gives $I = \mathbb{R}\Pi_2$ or $I = \mathbb{D}$. So the list is complete. $\square$
+**Proof.** Each of the three nontrivial sets listed is an ideal: $\mathbb{R}\Pi_1$ is closed under addition, and $Z(\lambda \Pi_1) = \lambda Z \Pi_1 = \lambda Z_+ \Pi_1 \in \mathbb{R}\Pi_1$ for every $Z$, so it is an ideal; the same argument gives $\mathbb{R}\Pi_2$; and $\mathbb{D}$ is trivially an ideal. Conversely, let $I \neq \{0\}$ be an ideal and choose $x \in I$ nonzero. If both idempotent coordinates of $x$ are nonzero then $x$ is a unit by *Split-Complex Algebra*, so $1 = x^{-1}x \in I$ and $I = \mathbb{D}$. Otherwise one coordinate of $x$ vanishes, and $x$ is a nonzero multiple of $\Pi_1$ or of $\Pi_2$ by the idempotent classification; say $x = \lambda \Pi_1$ with $\lambda \neq 0$, so that $\Pi_1 = \lambda^{-1}x \in I$. Now take any $y \in I$. If there is such a $y$ with $y_- \neq 0$, then $y\Pi_2 = y_-\Pi_2 \in I$, so $\Pi_2 = y_-^{-1}y\Pi_2 \in I$, and then $1 = \Pi_1 + \Pi_2 \in I$, giving $I = \mathbb{D}$. If on the other hand every $y \in I$ has $y_- = 0$, then $I \subseteq \mathbb{R}\Pi_1$; since $I \neq 0$ and $\Pi_1 \in I$, we get $I = \mathbb{R}\Pi_1$. The case $x = \lambda \Pi_2$ is the same with the roles of $+$ and $-$ exchanged and gives $I = \mathbb{R}\Pi_2$ or $I = \mathbb{D}$. So the list is complete.
 
 **Corollary (failure of simplicity).** $\mathbb{D}$ is **not simple**: it has exactly two nontrivial proper ideals, both minimal and both maximal. The algebra is the direct product of the two fields
 
@@ -51,7 +51,7 @@ Since $\mathbb{D}$ is finite-dimensional over the field $\mathbb{R}$, it is **Ar
 
 **Proposition.** $\mathbb{D}$ is **semisimple** in the sense of having zero Jacobson radical, and it is the product of the two simple algebras $\mathbb{R}\Pi_1$ and $\mathbb{R}\Pi_2$.
 
-**Proof.** The Jacobson radical of a product of fields is zero, since a field has no nonzero nilpotent elements and is its own maximal ideal; and $\mathbb{D}\cong\mathbb{R}\times\mathbb{R}$ via the idempotent decomposition. $\square$
+**Proof.** The Jacobson radical of a product of fields is zero, since a field has no nonzero nilpotent elements and is its own maximal ideal; and $\mathbb{D}\cong\mathbb{R}\times\mathbb{R}$ via the idempotent decomposition.
 
 **Proposition (length).** As a module over itself, $\mathbb{D}$ has **length two**, with composition series
 
@@ -59,7 +59,7 @@ $$
 \{0\} \subset \mathbb{R}\Pi_1 \subset \mathbb{D}, \qquad \mathbb{R}\Pi_1 \cong \mathbb{R}, \qquad \mathbb{D}/\mathbb{R}\Pi_1 \cong \mathbb{R}\Pi_2 \cong \mathbb{R}.
 $$
 
-**Proof.** The inclusion is proper at each step, $\mathbb{R}\Pi_1$ is simple as a module because it is a field summand, and the quotient $\mathbb{D}/\mathbb{R}\Pi_1$ is isomorphic to $\mathbb{R}\Pi_2$ through $Z \mapsto Z\Pi_2$, again simple. No shorter or longer chain is possible because the dimension is $2$ and every nonzero proper ideal is one-dimensional. $\square$
+**Proof.** The inclusion is proper at each step, $\mathbb{R}\Pi_1$ is simple as a module because it is a field summand, and the quotient $\mathbb{D}/\mathbb{R}\Pi_1$ is isomorphic to $\mathbb{R}\Pi_2$ through $Z \mapsto Z\Pi_2$, again simple. No shorter or longer chain is possible because the dimension is $2$ and every nonzero proper ideal is one-dimensional.
 
 So $\mathbb{D}$ has the same module length as a two-dimensional vector space, in contrast with $\mathbb{B}$, whose regular module has length two with simple constituents of complex dimension two. Both algebras are semisimple of length two; they differ in that the constituents of $\mathbb{D}$ are one-dimensional real, in keeping with its smaller dimension.
 
@@ -95,6 +95,22 @@ of total dimension $1+1+0+0 = 2$. With respect to the idempotent $0$ or $1$ the 
 
 **Definition.** The Peirce components are the four blocks of the multiplication table of $\mathbb{D}$ under the splitting $1 = \Pi_1 + \Pi_2$; the vanishing of the off-diagonal blocks is the statement that the splitting is a direct product decomposition.
 
+### The Idempotents as Matrix Units
+
+In the idempotent basis $\{\Pi_1, \Pi_2\}$ the standard idempotents are the two diagonal matrix units
+
+$$
+\Pi_1 = \begin{pmatrix} 1 & 0 \\ 0 & 0 \end{pmatrix}, \qquad \Pi_2 = \begin{pmatrix} 0 & 0 \\ 0 & 1 \end{pmatrix},
+$$
+
+acting on the column $\begin{pmatrix} Z_+ \\ Z_- \end{pmatrix}$ of idempotent coordinates, and they satisfy the matrix-unit relations
+
+$$
+\Pi_1^2 = \Pi_1, \qquad \Pi_2^2 = \Pi_2, \qquad \Pi_1\Pi_2 = \Pi_2\Pi_1 = 0, \qquad \Pi_1 + \Pi_2 = I.
+$$
+
+These are the defining relations of the diagonal matrix units of a $2\times 2$ matrix algebra. Because $\mathbb{D}$ is commutative, the two off-diagonal units $E_{12}$ and $E_{21}$ are absent, and the algebra is not a full matrix algebra; the four Peirce components are the four blocks of this basis, and the vanishing of the off-diagonal blocks is exactly the statement that the matrix picture is diagonal. This is the structural contrast with $\mathbb{B}\cong M_2(\mathbb{C})$, whose idempotents are general rank-one projections with off-diagonal units present.
+
 ## The Lattice of Ideals
 
 The four ideals of $\mathbb{D}$ are $\{0\}$, $\mathbb{R}\Pi_1$, $\mathbb{R}\Pi_2$, $\mathbb{D}$, with the inclusions
@@ -117,7 +133,7 @@ $$
 \mathrm{Id}(\mathbb{D}) \cong \mathcal{P}(\{+,-\}), \qquad \{0\} \leftrightarrow \varnothing, \quad \mathbb{R}\Pi_1 \leftrightarrow \{+\}, \quad \mathbb{R}\Pi_2 \leftrightarrow \{-\}, \quad \mathbb{D} \leftrightarrow \{+,-\}.
 $$
 
-**Proof.** The map is the ideal generated by the indicator subset under the isomorphism $\mathbb{D}\cong\mathbb{R}\oplus\mathbb{R}$: the ideal of $\mathbb{R}\oplus\mathbb{R}$ generated by the indicator vector of a subset $S$ is the set of pairs supported on $S$, and these four sets are exactly the ideals. Under this identification the complement of the ideal associated with $S$ is the ideal associated with the complementary subset $S^{\mathrm{c}}$, meets are intersections and joins are unions, so the lattice is the power-set lattice $\mathcal{P}(\{+,-\})$, which is Boolean. $\square$
+**Proof.** The map is the ideal generated by the indicator subset under the isomorphism $\mathbb{D}\cong\mathbb{R}\oplus\mathbb{R}$: the ideal of $\mathbb{R}\oplus\mathbb{R}$ generated by the indicator vector of a subset $S$ is the set of pairs supported on $S$, and these four sets are exactly the ideals. Under this identification the complement of the ideal associated with $S$ is the ideal associated with the complementary subset $S^{\mathrm{c}}$, meets are intersections and joins are unions, so the lattice is the power-set lattice $\mathcal{P}(\{+,-\})$, which is Boolean.
 
 The lattice is finite, distributive and complemented. This is a further contrast with $\mathbb{B}$, whose two-sided ideal lattice is the two-element chain $\{0\}\subset\mathbb{B}$ (simplicity), while its one-sided ideal lattice is a projective line over $\mathbb{C}$; in $\mathbb{D}$ the left, right and two-sided ideals coincide, so there is a single finite lattice, and it is the Boolean one above.
 
@@ -125,7 +141,7 @@ The lattice is finite, distributive and complemented. This is a further contrast
 
 **Proposition.** The Jacobson radical, the nilradical and the prime radical of $\mathbb{D}$ all vanish.
 
-**Proof.** The nilradical is the set of nilpotent elements. If $Z^n = 0$ then $N(Z)^n = N(Z^n) = 0$, so $N(Z) = 0$; but a nonzero null element is a multiple of $\Pi_1$ or $\Pi_2$, and $(\lambda \Pi_1)^n = \lambda^n \Pi_1 \neq 0$ for $\lambda \neq 0$, so no nonzero null element is nilpotent. Hence the nilradical is $\{0\}$. The Jacobson radical of the product of fields $\mathbb{R}\times\mathbb{R}$ is zero, since the maximal ideals are the two coordinate ideals and their intersection is zero. $\square$
+**Proof.** The nilradical is the set of nilpotent elements. If $Z^n = 0$, write $Z = Z_+\Pi_1 + Z_-\Pi_2$; then $Z^n = Z_+^n\Pi_1 + Z_-^n\Pi_2 = 0$, so $Z_+^n = 0$ and $Z_-^n = 0$ in $\mathbb{R}$, whence $Z_+ = Z_- = 0$ and $Z = 0$. Hence the nilradical is $\{0\}$. The Jacobson radical of the product of fields $\mathbb{R}\times\mathbb{R}$ is zero, since the maximal ideals are the two coordinate ideals and their intersection is zero.
 
 So $\mathbb{D}$ is **reduced** (no nonzero nilpotent) and **semiprime**. This is the opposite of the dual-number algebra $\mathbb{D}' = \mathbb{R}[\varepsilon]/(\varepsilon^2)$, whose maximal ideal is nonzero and nilpotent, and it is the reason $\mathbb{D}$ is much closer in behaviour to a product of fields than to a local ring.
 
@@ -171,7 +187,6 @@ With respect to an idempotent $e$, the Peirce decomposition splits $\mathbb{D}$ 
 | $\mathbb{D}_{22} = \Pi_2\mathbb{D}\Pi_2$ | Peirce component, $= \mathbb{R}\Pi_2$ |
 | $\mathbb{D}_{12}, \mathbb{D}_{21}$ | Off-diagonal Peirce components, both $0$ |
 | $f = 1-e$ | Complement of an idempotent |
-| $N(Z) = a^2-b^2$ | Norm form |
 | $\operatorname{rad}(\mathbb{D})$ | Jacobson radical of $\mathbb{D}$, $= 0$; the nilradical and prime radical vanish as well |
 
 ## Further Reading

@@ -37,7 +37,7 @@ $$
 
 in which the left vertical map is the inclusion of the boundary and the upper horizontal map is the restriction of the attaching maps, is a pushout in the category of topological spaces: $X^n$ is the quotient of the disjoint union $X^{n-1} \sqcup \coprod_\alpha D^n$ by the identification $x \sim \varphi_\alpha(x)$ for $x \in S^{n-1}$, and the topology is the quotient topology.
 
-*Proof.* The quotient description is a restatement of the construction; the quotient topology is the weak topology because a set is closed in the quotient exactly when its preimage in each $D^n$ and in $X^{n-1}$ is closed. $\square$
+*Proof.* The quotient description is a restatement of the construction; the quotient topology is the weak topology because a set is closed in the quotient exactly when its preimage in each $D^n$ and in $X^{n-1}$ is closed.
 
 **Definition.** A CW complex is a **subcomplex** of $(X,\mathcal{E})$ if it is a union of cells whose closures are contained in it; a subcomplex is a closed subspace and is itself a CW complex with the induced cells. The **$k$-skeleton** $X^k$ is the basic example.
 
@@ -63,13 +63,13 @@ in which the left vertical map is the inclusion of the boundary and the upper ho
 
 **Theorem.** A CW pair $(X,A)$ has the homotopy extension property.
 
-*Proof sketch.* It suffices to construct a retraction of $X \times I$ onto $X \times \{0\} \cup A \times I$; the extension is then obtained by composition. For a single cell, $D^n \times I$ retracts onto $D^n \times \{0\} \cup S^{n-1} \times I$ by radial projection from a point outside, and the retractions for the cells assemble, using the weak topology, into a retraction for the pair. $\square$
+*Proof sketch.* It suffices to construct a retraction of $X \times I$ onto $X \times \{0\} \cup A \times I$; the extension is then obtained by composition. For a single cell, $D^n \times I$ retracts onto $D^n \times \{0\} \cup S^{n-1} \times I$ by radial projection from a point outside, and the retractions for the cells assemble, using the weak topology, into a retraction for the pair.
 
 **Definition.** A pair with the HEP is a **cofibration**; a map $A \hookrightarrow X$ is a cofibration exactly when it has the HEP. Cofibrations are, up to homotopy, the inclusions one may quotient by and attach along without changing the homotopy type.
 
 **Corollary.** If $(X,A)$ has the HEP then the quotient map $X \to X/A$ induces an isomorphism on homology and cohomology of the pair in the sense of the excision statement recorded: the pair $(X,A)$ and the pair $(X/A, \ast)$ have isomorphic relative invariants. Consequently $H_n(X,A) \cong \tilde H_n(X/A)$.
 
-*Proof.* By the HEP the inclusion $A \subseteq X$ is a cofibration and the collapse $X \to X/A$ is a homotopy equivalence of pairs. $\square$
+*Proof.* By the HEP the inclusion $A \subseteq X$ is a cofibration and the collapse $X \to X/A$ is a homotopy equivalence of pairs.
 
 ### Cellular Approximation
 
@@ -77,7 +77,7 @@ in which the left vertical map is the inclusion of the boundary and the upper ho
 
 **Theorem (cellular approximation).** Every map $f : X \to Y$ of CW complexes is homotopic to a cellular map; if $f$ is already cellular on a subcomplex $A \subseteq X$, the homotopy may be taken relative to $A$.
 
-*Proof sketch.* Induct on the skeleta. Suppose $f(X^{n-1}) \subseteq Y^{n-1}$ after a homotopy relative to $A$; the obstruction to pushing $f(X^n)$ into $Y^n$ lies in the cells of $Y$ of dimension $> n$. For a single $n$-cell, the image $f(D^n)$ meets the interior of a $Y$-cell of dimension $k > n$, and by a general position argument in the interior of a disc of dimension $k$ the image can be pushed off the interior by a homotopy relative to the boundary, because a map $D^n \to D^k$ with $k > n$ is homotopic rel boundary to a map into the boundary $S^{k-1}$ — the complement of the image of a disc in a higher-dimensional disc is path-connected and the tube around the image can be pushed out. Since cells are attached by the weak topology, the local homotopies assemble. $\square$
+*Proof sketch.* Induct on the skeleta. Suppose $f(X^{n-1}) \subseteq Y^{n-1}$ after a homotopy relative to $A$; the obstruction to pushing $f(X^n)$ into $Y^n$ lies in the cells of $Y$ of dimension $> n$. For a single $n$-cell, the image $f(D^n)$ meets the interior of a $Y$-cell of dimension $k > n$, and by a general position argument in the interior of a disc of dimension $k$ the image can be pushed off the interior by a homotopy relative to the boundary, because a map $D^n \to D^k$ with $k > n$ is homotopic rel boundary to a map into the boundary $S^{k-1}$ — the complement of the image of a disc in a higher-dimensional disc is path-connected and the tube around the image can be pushed out. Since cells are attached by the weak topology, the local homotopies assemble.
 
 **Corollary (connectivity of skeleta).** If a connected CW complex $X$ has no cells of dimension $1, \ldots, n$, then $X^n$ is a single point and the pair $(X, X^n)$ has $\pi_k(X, X^n) = 0$ for $k \leq n$; more generally the pair $(X^n, X^{n-1})$ has vanishing homotopy groups in degrees below $n$ and $\pi_n$ free on the $n$-cells.
 
@@ -113,7 +113,7 @@ $$
 H_n^{\mathrm{CW}}(X) = \ker \partial_n / \operatorname{im} \partial_{n+1} \cong H_n(X).
 $$
 
-*Proof sketch.* The composite vanishes because it computes the degree of a map $S^{n-1} \to S^{n-1}$ factoring through the contractible space $D^{n-1}$ after accounting for the two collapses, and a map factoring through a contractible space has degree $0$ when $n-1 \geq 1$. The identification with singular homology is by comparing both with the homology of the pair $(X^n, X^{n-1})$; the boundary above is by construction the connecting map of that pair, and the comparison uses the five lemma on the diagram of skeleta. $\square$
+*Proof sketch.* The composite vanishes because it computes the degree of a map $S^{n-1} \to S^{n-1}$ factoring through the contractible space $D^{n-1}$ after accounting for the two collapses, and a map factoring through a contractible space has degree $0$ when $n-1 \geq 1$. The identification with singular homology is by comparing both with the homology of the pair $(X^n, X^{n-1})$; the boundary above is by construction the connecting map of that pair, and the comparison uses the five lemma on the diagram of skeleta.
 
 ### The Boundary Formula
 
@@ -155,7 +155,7 @@ $$
 
 and the number is independent of the CW structure.
 
-*Proof.* The alternating sum of the ranks of the terms of a finite chain complex of free abelian groups equals the alternating sum of the ranks of its homology, by the rank–nullity theorem applied to each $\partial_n$. Independence of the structure follows because the right-hand side depends only on $X$. $\square$
+*Proof.* The alternating sum of the ranks of the terms of a finite chain complex of free abelian groups equals the alternating sum of the ranks of its homology, by the rank–nullity theorem applied to each $\partial_n$. Independence of the structure follows because the right-hand side depends only on $X$.
 
 **Example.** For the torus the cell count gives $\chi = 1 - 2 + 1 = 0$; from homology, $\operatorname{rk}H_0 - \operatorname{rk}H_1 + \operatorname{rk}H_2 = 1 - 2 + 1 = 0$. For the sphere $S^n$, $\chi = 1 + (-1)^n$. For $\mathbb{RP}^2$, $\chi = 1 - 1 + 1 = 1$, matching $1 - 0 + 0$ from the ranks of $H_*(\mathbb{RP}^2) = (\mathbb{Z}, \mathbb{Z}/2, 0)$: a $\mathbb{Z}/2$ contributes rank $0$.
 
@@ -170,7 +170,7 @@ and the number is independent of the CW structure.
 3. The smash product $X\wedge Y = (X\times Y)/(X\vee Y)$, the mapping cylinder of a cellular map, the mapping cone and the reduced suspension $\Sigma X = S^1\wedge X$ are CW complexes, and the reduced suspension is the based suspension restricted to complexes.
 4. If $p : Y\to X$ is a covering map of a path-connected CW complex, then $Y$ carries a CW structure whose cells are the cells of $X$ lifted along the covering, and the cellular chain complex of $Y$ is the chain complex of $X$ tensored with the free module on the fibre, with the local system of *The Fundamental Group and Covering Spaces* twisting the differentials; in particular $Y$ has the same dimension as $X$.
 
-*Proof.* (1) The characteristic maps of the cells not in $A$ compose with the quotient, and the boundary of the collapsed image inherits a cell structure from the filtration. (2) The weak topology on the product is the standard one making the product of CW complexes a CW complex; that it agrees with the product topology when one factor is locally compact is the usual theorem, and the difference in general is repaired by the homotopy equivalence of the two topologies. (3) Each construction is given its cells by the description of the maps involved, and the reduced suspension is the case $Y = S^1$. (4) The cells of $X$ lift to cells of $Y$ after a subdivision or a cellular approximation of the attaching maps, and the identification of the chain complexes is the standard computation of the cellular chains of a covering space. $\square$
+*Proof.* (1) The characteristic maps of the cells not in $A$ compose with the quotient, and the boundary of the collapsed image inherits a cell structure from the filtration. (2) The weak topology on the product is the standard one making the product of CW complexes a CW complex; that it agrees with the product topology when one factor is locally compact is the usual theorem, and the difference in general is repaired by the homotopy equivalence of the two topologies. (3) Each construction is given its cells by the description of the maps involved, and the reduced suspension is the case $Y = S^1$. (4) The cells of $X$ lift to cells of $Y$ after a subdivision or a cellular approximation of the attaching maps, and the identification of the chain complexes is the standard computation of the cellular chains of a covering space.
 
 **Example.** The quotient $D^n/S^{n-1}\cong S^n$ exhibits the sphere as the quotient of a disc by a subcomplex whose image is one point; the product $S^p\times S^q$ has four cells by (2), which gives the homology of a product directly in the cellular picture; and the universal cover of a graph is the tree whose $0$-cells are the vertices of a chosen lifting, which is the cellular form of the correspondence between free groups and trees used in *The Fundamental Group and Covering Spaces*.
 

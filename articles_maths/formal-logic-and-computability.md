@@ -29,11 +29,11 @@ The three notions are independent, and the incompleteness theorem is a statement
 
 **Theorem (soundness).** Let $T$ be a theory. If $T \vdash \varphi$ then every model of $T$ satisfies $\varphi$; in particular, if $\vdash \varphi$ then $\varphi$ is valid.
 
-**Proof.** Induction on the length of the derivation. Each logical axiom is valid — the propositional tautologies, the equality axioms and the quantifier axioms are checked directly — and each inference rule preserves the property of being satisfied in a model: if $\mathcal{M} \models \varphi$ and $\mathcal{M} \models \varphi \to \psi$ then $\mathcal{M} \models \psi$ by the satisfaction clause for the conditional; universal generalisation is sound because the variable generalised is not free in the hypotheses; and the remaining rules are checked the same way. Hence every formula in the derivation is satisfied by every model of $T$, and the conclusion is. $\square$
+**Proof.** Induction on the length of the derivation. Each logical axiom is valid — the propositional tautologies, the equality axioms and the quantifier axioms are checked directly — and each inference rule preserves the property of being satisfied in a model: if $\mathcal{M} \models \varphi$ and $\mathcal{M} \models \varphi \to \psi$ then $\mathcal{M} \models \psi$ by the satisfaction clause for the conditional; universal generalisation is sound because the variable generalised is not free in the hypotheses; and the remaining rules are checked the same way. Hence every formula in the derivation is satisfied by every model of $T$, and the conclusion is.
 
 **Corollary.** If $T$ has a model then $T$ is consistent.
 
-**Proof.** If $T \vdash \varphi$ and $T \vdash \neg\varphi$ then every model of $T$ satisfies both, which is impossible. $\square$
+**Proof.** If $T \vdash \varphi$ and $T \vdash \neg\varphi$ then every model of $T$ satisfies both, which is impossible.
 
 Soundness is the easy half of the correspondence between $\vdash$ and $\models$; the hard half is completeness, and it is the subject of the next section.
 
@@ -43,7 +43,7 @@ Soundness is the easy half of the correspondence between $\vdash$ and $\models$;
 
 **Theorem (Gödel completeness).** Let $T$ be a theory in a countable first-order language and let $\varphi$ be a sentence. If $T \models \varphi$ then $T \vdash \varphi$. Equivalently, if $T$ is consistent then $T$ has a model.
 
-**Proof sketch (Henkin construction).** It suffices to prove the second form. Extend the language by countably many new constant symbols $c_0, c_1, \ldots$, one for each formula, and enumerate all formulas of the enlarged language. Build a maximal consistent theory $T^* \supseteq T$ in the enlarged language by going through the enumeration and adding, at each stage, either $\varphi$ or $\neg\varphi$, whichever keeps the theory consistent; such a choice is always possible, since if both choices were inconsistent then $T$ would prove $\neg\varphi$ and $\varphi$. When the formula added at a stage is $\exists x\,\psi(x)$, add also $\psi(c_i)$ for a constant $c_i$ that has not yet appeared, which is the **witness** of the existential statement; consistency is preserved because the constant is fresh. The resulting $T^*$ is maximal, consistent, and has witnesses. Form the **term model** whose elements are the closed terms of the enlarged language modulo the equivalence $t \sim s$ iff $T^* \vdash t = s$, and interpret the symbols in the evident way. Satisfaction is proved by induction on formulas using the maximality and the witnesses, so that $\mathcal{M} \models T^*$ and hence $\mathcal{M} \models T$. $\square$
+**Proof sketch (Henkin construction).** It suffices to prove the second form. Extend the language by countably many new constant symbols $c_0, c_1, \ldots$, one for each formula, and enumerate all formulas of the enlarged language. Build a maximal consistent theory $T^* \supseteq T$ in the enlarged language by going through the enumeration and adding, at each stage, either $\varphi$ or $\neg\varphi$, whichever keeps the theory consistent; such a choice is always possible, since if both choices were inconsistent then $T$ would prove $\neg\varphi$ and $\varphi$. When the formula added at a stage is $\exists x\,\psi(x)$, add also $\psi(c_i)$ for a constant $c_i$ that has not yet appeared, which is the **witness** of the existential statement; consistency is preserved because the constant is fresh. The resulting $T^*$ is maximal, consistent, and has witnesses. Form the **term model** whose elements are the closed terms of the enlarged language modulo the equivalence $t \sim s$ iff $T^* \vdash t = s$, and interpret the symbols in the evident way. Satisfaction is proved by induction on formulas using the maximality and the witnesses, so that $\mathcal{M} \models T^*$ and hence $\mathcal{M} \models T$.
 
 The completeness theorem has a sharp form: if $T$ is recursively axiomatised, a derivation can be found **effectively** from a proof of unsatisfiability, and the set of valid sentences of a countable language is a computably enumerable set. This is the point at which logic meets computability, and it is the reason the undecidability results below are stated as statements about enumerable sets.
 
@@ -51,7 +51,7 @@ The completeness theorem has a sharp form: if $T$ is recursively axiomatised, a 
 
 **Theorem (compactness).** Let $T$ be a theory. If every finite subset of $T$ has a model then $T$ has a model. Equivalently, if $T \models \varphi$ then $\Delta \models \varphi$ for some finite $\Delta \subseteq T$.
 
-**Proof.** Assume every finite subset of $T$ has a model. Then every finite subset of $T$ is consistent, by soundness. A derivation is finite and uses only finitely many nonlogical axioms, so $T$ itself is consistent; by completeness $T$ has a model. The second form is the contrapositive of the first applied to $T \cup \{\neg\varphi\}$. $\square$
+**Proof.** Assume every finite subset of $T$ has a model. Then every finite subset of $T$ is consistent, by soundness. A derivation is finite and uses only finitely many nonlogical axioms, so $T$ itself is consistent; by completeness $T$ has a model. The second form is the contrapositive of the first applied to $T \cup \{\neg\varphi\}$.
 
 Compactness is the most used theorem of model theory, and the corpus uses it in the form of the existence of nonstandard models: the theory of arithmetic together with the sentences $c > 0, c > 1, c > 2, \ldots$ for a new constant $c$ is finitely satisfiable, hence satisfiable, giving a model of arithmetic containing an element larger than every numeral.
 
@@ -59,11 +59,11 @@ Compactness is the most used theorem of model theory, and the corpus uses it in 
 
 **Theorem (downward Löwenheim–Skolem).** Let $T$ be a theory in a countable language and suppose $T$ has a model. Then $T$ has a countable model. More generally, if $\kappa$ is an infinite cardinal at least the cardinality of the language and $T$ has a model, then $T$ has a model of cardinality at most $\kappa$.
 
-**Proof sketch.** Given a model $\mathcal{M}$, take any subset $A \subseteq M$ of cardinality at most $\kappa$ and close it under the functions and constants of the language and under the choice of witnesses for the existential formulas satisfied in $\mathcal{M}$; the closure is of cardinality at most $\kappa$, and the substructure with domain the closure satisfies the same sentences with parameters from $A$, by the Tarski–Vaught criterion for elementary substructures. $\square$
+**Proof sketch.** Given a model $\mathcal{M}$, take any subset $A \subseteq M$ of cardinality at most $\kappa$ and close it under the functions and constants of the language and under the choice of witnesses for the existential formulas satisfied in $\mathcal{M}$; the closure is of cardinality at most $\kappa$, and the substructure with domain the closure satisfies the same sentences with parameters from $A$, by the Tarski–Vaught criterion for elementary substructures.
 
 **Theorem (upward Löwenheim–Skolem).** Let $T$ be a theory in a language of cardinality $\kappa$ and suppose $T$ has an infinite model. Then $T$ has a model of every cardinality $\lambda \geq \kappa$.
 
-**Proof sketch.** Add $\lambda$ new constant symbols and the sentences $c_\alpha \neq c_\beta$ for $\alpha \neq \beta$; every finite subset of the resulting theory is satisfiable in the given infinite model, so by compactness the whole theory is satisfiable, and any model has cardinality at least $\lambda$; the downward theorem then gives one of cardinality exactly $\lambda$. $\square$
+**Proof sketch.** Add $\lambda$ new constant symbols and the sentences $c_\alpha \neq c_\beta$ for $\alpha \neq \beta$; every finite subset of the resulting theory is satisfiable in the given infinite model, so by compactness the whole theory is satisfiable, and any model has cardinality at least $\lambda$; the downward theorem then gives one of cardinality exactly $\lambda$.
 
 The two theorems together give the **Löwenheim–Skolem paradox**: a first-order theory with an infinite model has models of every infinite cardinality, so no first-order theory can characterise an infinite structure up to isomorphism, and a theory with an infinite model has countable models. The paradox is not a contradiction: a countable model is countable *in the metatheory*, while a statement such as "every bounded subset has a least upper bound" is interpreted internally, over the subsets of the model that the model can see, of which there may be only countably many.
 
@@ -71,7 +71,7 @@ The two theorems together give the **Löwenheim–Skolem paradox**: a first-orde
 
 ### Turing Machines
 
-**Definition.** A **Turing machine** consists of a finite set $Q$ of **states** containing a distinguished **initial state** $q_0$ and a **halting state** $q_{\mathrm{h}}$; a finite **tape alphabet** $\Gamma$ containing a distinguished **blank symbol** $\square$ and a distinguished **input symbol** $1$; and a **transition function**
+**Definition.** A **Turing machine** consists of a finite set $Q$ of **states** containing a distinguished **initial state** $q_0$ and a **halting state** $q_{\mathrm{h}}$; a finite **tape alphabet** $\Gamma$ containing a distinguished **blank symbol** and a distinguished **input symbol** $1$; and a **transition function**
 
 $$
 \delta : (Q \setminus \{q_{\mathrm{h}}\}) \times \Gamma \to Q \times \Gamma \times \{L, R\}.
@@ -81,19 +81,19 @@ The machine operates on a **tape**, a function $\mathbb{Z} \to \Gamma$ that is b
 
 The input is written on the tape as a block of $1$s with the head at its left end, and the machine is started in $q_0$. A partial function $f : \mathbb{N}^k \dashrightarrow \mathbb{N}$ is **Turing-computable** if there is a machine which, started on the input written in unary with the arguments separated by blanks, halts with the value of $f$ written in unary precisely when $f$ is defined at that input.
 
-**Example (successor).** Let $Q = \{q_0, q_{\mathrm{h}}\}$, $\Gamma = \{\square, 1\}$, and let $\delta(q_0, 1) = (q_0, 1, R)$, $\delta(q_0, \square) = (q_{\mathrm{h}}, 1, R)$. Started on $1^n$, the machine moves right across the block of $n$ ones, writes a $1$ in the blank cell to its right, and halts; the tape holds $1^{n+1}$. The machine computes the successor function.
+**Example (successor).** Let $Q = \{q_0, q_{\mathrm{h}}\}$, $\Gamma = \{, 1\}$, and let $\delta(q_0, 1) = (q_0, 1, R)$, $\delta(q_0,) = (q_{\mathrm{h}}, 1, R)$. Started on $1^n$, the machine moves right across the block of $n$ ones, writes a $1$ in the blank cell to its right, and halts; the tape holds $1^{n+1}$. The machine computes the successor function.
 
-**Example (addition).** Let $Q = \{q_0, q_1, q_2, q_{\mathrm{h}}\}$ and $\Gamma = \{\square, 1\}$, with
-
-$$
-\delta(q_0,1)=(q_0,1,R), \quad \delta(q_0,\square)=(q_1,1,R), \quad \delta(q_1,1)=(q_1,1,R),
-$$
+**Example (addition).** Let $Q = \{q_0, q_1, q_2, q_{\mathrm{h}}\}$ and $\Gamma = \{, 1\}$, with
 
 $$
-\delta(q_1,\square)=(q_2,\square,L), \quad \delta(q_2,1)=(q_{\mathrm{h}},\square,R).
+\delta(q_0,1)=(q_0,1,R), \quad \delta(q_0,)=(q_1,1,R), \quad \delta(q_1,1)=(q_1,1,R),
 $$
 
-Started on $1^n\square 1^m$ with the head at the left end, the machine scans the first block in $q_0$, replaces the separating blank by a $1$, scans the second block in $q_1$, steps left onto the last $1$, and erases it in $q_2$. The tape then holds $1^n\,1\,1^{m-1} = 1^{n+m}$, and the cases $n = 0$ and $m = 0$ are read from the same instructions, a block of length $0$ being simply absent. Thus the machine computes addition.
+$$
+\delta(q_1,)=(q_2,,L), \quad \delta(q_2,1)=(q_{\mathrm{h}},,R).
+$$
+
+Started on $1^n 1^m$ with the head at the left end, the machine scans the first block in $q_0$, replaces the separating blank by a $1$, scans the second block in $q_1$, steps left onto the last $1$, and erases it in $q_2$. The tape then holds $1^n\,1\,1^{m-1} = 1^{n+m}$, and the cases $n = 0$ and $m = 0$ are read from the same instructions, a block of length $0$ being simply absent. Thus the machine computes addition.
 
 ### Recursive Functions
 
@@ -117,7 +117,7 @@ The theorem is proved by arithmetising the configurations of a Turing machine: a
 
 **Proposition.** Every decidable set is computably enumerable, and the class of decidable sets is closed under complement, finite union and finite intersection; the class of c.e. sets is closed under finite union and intersection but not under complement.
 
-**Proof sketch.** If $A$ is decidable and nonempty, fix $a \in A$ and enumerate the range of a machine that scans $n = 0, 1, 2, \ldots$ and prints $n$ when $\chi_A(n) = 1$ and prints $a$ otherwise; the numbers printed are exactly the elements of $A$. Complement and Boolean combinations are computed by combining the machines. That the c.e. sets are not closed under complement is the content of the undecidability of the halting problem, below. $\square$
+**Proof sketch.** If $A$ is decidable and nonempty, fix $a \in A$ and enumerate the range of a machine that scans $n = 0, 1, 2, \ldots$ and prints $n$ when $\chi_A(n) = 1$ and prints $a$ otherwise; the numbers printed are exactly the elements of $A$. Complement and Boolean combinations are computed by combining the machines. That the c.e. sets are not closed under complement is the content of the undecidability of the halting problem, below.
 
 The standard **dovetailing** construction — running computations on all inputs in parallel, one step at a time — is the technique behind every closure property of the c.e. sets, and it is used without comment in the proofs below.
 
@@ -139,7 +139,7 @@ $$
 D \text{ halts on } \langle M \rangle \iff M \text{ does not halt on } \langle M \rangle.
 $$
 
-Taking $M = D$ gives $D$ halts on $\langle D\rangle$ precisely when $D$ does not halt on $\langle D\rangle$, a contradiction. Hence no such $H$ exists and $K$ is undecidable. $\square$
+Taking $M = D$ gives $D$ halts on $\langle D\rangle$ precisely when $D$ does not halt on $\langle D\rangle$, a contradiction. Hence no such $H$ exists and $K$ is undecidable.
 
 The argument is the diagonal argument in the setting of computations: the machine $D$ is built so as to disagree with each $M$ at the input $\langle M\rangle$, exactly as Cantor's set $D$ disagrees with each $h(x)$ at $x$.
 
@@ -156,7 +156,7 @@ The argument is the diagonal argument in the setting of computations: the machin
 3. **The Post correspondence problem**: whether a finite list of pairs of words over a finite alphabet admits a finite matching sequence; a matching sequence is verified by a computation, and the search for one simulates a machine.
 4. **The Entscheidungsproblem**: whether a given first-order sentence is valid.
 
-**Proof sketch.** (1) is the theorem above. (2) reduces the halting problem to the uniform one by a machine that runs a fixed input. (3) is proved by an explicit reduction from the halting problem, exhibiting for each machine a finite list of word pairs whose matching sequences encode the halting computations. (4) follows from the completeness theorem and the arithmetisation of the halting problem: the assertion that a machine halts on an input is an arithmetic sentence, and a machine for deciding validity would decide the halting problem. $\square$
+**Proof sketch.** (1) is the theorem above. (2) reduces the halting problem to the uniform one by a machine that runs a fixed input. (3) is proved by an explicit reduction from the halting problem, exhibiting for each machine a finite list of word pairs whose matching sequences encode the halting computations. (4) follows from the completeness theorem and the arithmetisation of the halting problem: the assertion that a machine halts on an input is an arithmetic sentence, and a machine for deciding validity would decide the halting problem.
 
 **Remark.** The situation for fragments of first-order logic is delicate. The validity problem for a language with a single binary predicate and no function symbols is undecidable, but for languages with only unary predicates and no function symbols it is decidable, and the decidability of a theory is often the content of a quantifier-elimination theorem. This is the substance, where the decidability of the theories of algebraically closed fields and of real-closed fields is proved by exactly that route.
 
@@ -174,7 +174,7 @@ The theory PA is recursively axiomatised, since the induction schema is a decida
 
 **Theorem (arithmetisation).** With each formula $\varphi$ and each derivation one can associate, by a computable procedure, a natural number (its **Gödel number**) in such a way that the syntactic properties of formulas and derivations — being a formula, being an axiom of PA, being a derivation of $\varphi$ from PA — become primitive recursive predicates of their Gödel numbers.
 
-**Proof sketch.** Assign numbers to symbols by an explicit coding, to strings by coding the sequence of symbol numbers (for instance by the prime factorisation of a product of prime powers, or by the Cantor pairing of *Cardinality and the Axiom of Choice*), and to sequences of strings recursively. Being a well-formed formula is then a primitive recursive predicate, because it is defined by a finite grammar with bounded recursion; the property of being an instance of an axiom schema is primitive recursive because the schema has finitely many patterns and the induction schema is indexed by formulas. $\square$
+**Proof sketch.** Assign numbers to symbols by an explicit coding, to strings by coding the sequence of symbol numbers (for instance by the prime factorisation of a product of prime powers, or by the Cantor pairing of *Cardinality and the Axiom of Choice*), and to sequences of strings recursively. Being a well-formed formula is then a primitive recursive predicate, because it is defined by a finite grammar with bounded recursion; the property of being an instance of an axiom schema is primitive recursive because the schema has finitely many patterns and the induction schema is indexed by formulas.
 
 **Definition.** A theory $T$ is **$\Sigma_1$-complete** if it proves every true $\Sigma_1$ sentence, that is, every true statement of the form "there exists $n$ with $P(n)$" for a primitive recursive $P$. Peano arithmetic is $\Sigma_1$-complete, because a terminating computation can be verified step by step inside it.
 
@@ -198,7 +198,7 @@ $$
 T \vdash G \leftrightarrow \neg \mathrm{Prov}_T(\# G).
 $$
 
-If $T \vdash G$, then $T$ proves that $G$ is provable, that is, $T \vdash \mathrm{Prov}_T(\# G)$, and then $T \vdash \neg G$ by the equivalence, contradicting consistency. If $T \vdash \neg G$, then $T \vdash \mathrm{Prov}_T(\# G)$, so that a derivation of $G$ exists by $\Sigma_1$-completeness, and $T \vdash G$, again contradicting consistency. Hence neither, and $T$ is incomplete. $\square$
+If $T \vdash G$, then $T$ proves that $G$ is provable, that is, $T \vdash \mathrm{Prov}_T(\# G)$, and then $T \vdash \neg G$ by the equivalence, contradicting consistency. If $T \vdash \neg G$, then $T \vdash \mathrm{Prov}_T(\# G)$, so that a derivation of $G$ exists by $\Sigma_1$-completeness, and $T \vdash G$, again contradicting consistency. Hence neither, and $T$ is incomplete.
 
 The sentence $G$ is a **Gödel sentence**: it asserts its own unprovability. It is true in the standard model $\mathbb{N}$ — because it is indeed unprovable — and hence not provable; this is the sense in which PA is incomplete rather than merely unable to decide a question.
 
@@ -218,13 +218,13 @@ $$
 T \vdash \mathrm{Con}_T \to G,
 $$
 
-where $G$ is the Gödel sentence. If $T \vdash \mathrm{Con}_T$ then $T \vdash G$, contradicting the first theorem. Hence $T$ does not prove its own consistency. $\square$
+where $G$ is the Gödel sentence. If $T \vdash \mathrm{Con}_T$ then $T \vdash G$, contradicting the first theorem. Hence $T$ does not prove its own consistency.
 
 The second theorem is the reason consistency cannot be established by elementary means inside the theory: a consistency proof must use principles stronger than the theory, and the **consistency strength** of a theory is measured by which such principles are needed. It is consistent with the theorem that the consistency of PA is provable in ZFC, or in PA together with the assertion that a certain well-ordering is well founded; what is impossible is a proof that can be formalised in PA itself.
 
 **Theorem (Tarski).** The set of Gödel numbers of the sentences true in $(\mathbb{N}, +, \cdot)$ is not definable in $(\mathbb{N}, +, \cdot)$.
 
-**Proof sketch.** If a formula $\mathrm{Tr}(x)$ defined truth, the diagonal lemma applied to $\neg\mathrm{Tr}(x)$ would give a sentence $\lambda$ with $\lambda \leftrightarrow \neg\mathrm{Tr}(\#\lambda)$, which is the liar paradox in formal dress, and it is unsatisfiable. $\square$
+**Proof sketch.** If a formula $\mathrm{Tr}(x)$ defined truth, the diagonal lemma applied to $\neg\mathrm{Tr}(x)$ would give a sentence $\lambda$ with $\lambda \leftrightarrow \neg\mathrm{Tr}(\#\lambda)$, which is the liar paradox in formal dress, and it is unsatisfiable.
 
 ## Summary
 
@@ -246,7 +246,7 @@ Peano arithmetic is the recursively axiomatised theory of the natural numbers. I
 | $T$, $\Delta$ | Theory (set of sentences); finite subtheory |
 | $\mathrm{Con}_T$ | Arithmetised consistency of $T$: $\neg\mathrm{Prov}_T(\# 0=1)$ |
 | $Q$, $\Gamma$, $\delta$ | States, tape alphabet, transition function of a Turing machine |
-| $q_0$, $q_{\mathrm{h}}$, $\square$ | Initial state, halting state, blank symbol |
+| $q_0$, $q_{\mathrm{h}}$, | Initial state, halting state, blank symbol |
 | $L$, $R$ | Head moves left and right |
 | $\langle M, x\rangle$, $\langle M\rangle$ | Codes of a machine with input, and of a machine |
 | $K$ | Halting set: $\{\langle M,x\rangle : M \text{ halts on } x\}$ |

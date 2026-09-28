@@ -21,7 +21,7 @@ The article is the indefinite analogue of *Riemannian Geometry* and assumes *Smo
 
 **Theorem.** A smooth manifold carries a pseudo-Riemannian metric of signature $(p, q)$ if and only if its tangent bundle admits a subbundle of rank $p$ on which a Riemannian metric exists, equivalently if and only if the structure group of $TM$ reduces to $O(p, q)$. In the Lorentzian case, a closed connected manifold carries a Lorentzian metric if and only if its Euler characteristic vanishes.
 
-**Proof sketch.** Given such a subbundle, choose a Riemannian metric $h$ and put $g = h|_{E} \oplus (-h)|_{E^\perp}$ on the decomposition $TM = E \oplus E^\perp$; the converse is the definition. For the Lorentzian statement, a Lorentzian metric produces a timelike, hence nowhere-zero, vector field, and a closed manifold admits a nowhere-zero vector field exactly when its Euler characteristic vanishes, by the Poincaré–Hopf theorem; conversely a nowhere-zero vector field $X$ gives the splitting $TM = \mathbb{R}X \oplus X^\perp$ and one defines $g = -h|_{X} \oplus h|_{X^\perp}$ for a Riemannian $h$. The Poincaré–Hopf theorem is a consequence of the degree theory of *Differential Topology*, applied to the zero set of a generic vector field. $\square$
+**Proof sketch.** Given such a subbundle, choose a Riemannian metric $h$ and put $g = h|_{E} \oplus (-h)|_{E^\perp}$ on the decomposition $TM = E \oplus E^\perp$; the converse is the definition. For the Lorentzian statement, a Lorentzian metric produces a timelike, hence nowhere-zero, vector field, and a closed manifold admits a nowhere-zero vector field exactly when its Euler characteristic vanishes, by the Poincaré–Hopf theorem; conversely a nowhere-zero vector field $X$ gives the splitting $TM = \mathbb{R}X \oplus X^\perp$ and one defines $g = -h|_{X} \oplus h|_{X^\perp}$ for a Riemannian $h$. The Poincaré–Hopf theorem is a consequence of the degree theory of *Differential Topology*, applied to the zero set of a generic vector field.
 
 ### Causal Character of Vectors and Curves
 
@@ -31,7 +31,7 @@ The article is the indefinite analogue of *Riemannian Geometry* and assumes *Smo
 
 **Proposition.** A connected Lorentzian manifold is either time-orientable or has a time-orientable double cover.
 
-**Proof.** The set of time orientations at the points is a two-sheeted covering space of $M$; if it is disconnected the manifold is time-orientable, and if it is connected the covering is the double cover. $\square$
+**Proof.** The set of time orientations at the points is a two-sheeted covering space of $M$; if it is disconnected the manifold is time-orientable, and if it is connected the covering is the double cover.
 
 ### The Flat Model
 
@@ -75,7 +75,7 @@ $$
 \Gamma^k_{ij} = \frac{1}{2}\sum_l g^{kl}\bigl(\partial_{x^i}g_{jl} + \partial_{x^j}g_{il} - \partial_{x^l}g_{ij}\bigr).
 $$
 
-**Proof.** The proof of the Riemannian case used only the nondegeneracy of $g$: the right-hand side of the Koszul formula is a tensor, and since the pairing $g(\,\cdot\,, \,\cdot\,)$ is nondegenerate, a vector field is determined by its pairings with all $Z$. Metricity and torsion-freeness follow by substitution exactly as before. $\square$
+**Proof.** The proof of the Riemannian case used only the nondegeneracy of $g$: the right-hand side of the Koszul formula is a tensor, and since the pairing $g(\,\cdot\,, \,\cdot\,)$ is nondegenerate, a vector field is determined by its pairings with all $Z$. Metricity and torsion-freeness follow by substitution exactly as before.
 
 **Remark.** Everything in this section and the next carries over verbatim from the Riemannian case, and no new phenomenon appears. Parallel transport is an isometry of tangent spaces, $\nabla_{\gamma'}\gamma' = 0$ is the geodesic equation, the exponential map is a local diffeomorphism at the origin of each tangent space, and normal coordinates put the metric into the form $g_{ij} = \eta_{ij} - \frac{1}{3}\sum_{kl}R_{ikjl}x^kx^l + O(|x|^3)$. The exponential map is defined by the same differential equation, whose solvability is the theory of Part III.
 
@@ -93,7 +93,7 @@ $$
 
 and the first Bianchi identity $R(X, Y, Z, W) + R(Y, Z, X, W) + R(Z, X, Y, W) = 0$; the second Bianchi identity $(\nabla_XR)(Y, Z) + (\nabla_YR)(Z, X) + (\nabla_ZR)(X, Y) = 0$ holds as an operator identity.
 
-**Proof.** The proofs use only the metricity, the torsion-freeness and the Jacobi identity, none of which refers to the signature. $\square$
+**Proof.** The proofs use only the metricity, the torsion-freeness and the Jacobi identity, none of which refers to the signature.
 
 **Definition.** Let $\sigma$ be a two-dimensional subspace of $T_pM$. It is **nondegenerate** if $g|_{\sigma \times \sigma}$ is nondegenerate, and if it is nondegenerate the **sectional curvature** of $\sigma$ is
 
@@ -127,7 +127,7 @@ for a basis $v, w$ of $\sigma$; the number is independent of the basis. If $\sig
 
 **Proposition.** The sets $I^+(p)$ and $I^-(p)$ are open, and the map $p \mapsto I^+(p)$ is a homeomorphism onto its image in the hyperspace of open sets; consequently the causal structure determines the topology of a Lorentzian manifold.
 
-**Proof sketch.** The chronological future is open because the timelike condition is open and the flow of a timelike field moves backwards in time; the second statement follows by taking the intersections of the futures with a small sphere and identifying the point as the unique one whose future has the given germ. $\square$
+**Proof sketch.** The chronological future is open because the timelike condition is open and the flow of a timelike field moves backwards in time; the second statement follows by taking the intersections of the futures with a small sphere and identifying the point as the unique one whose future has the given germ.
 
 ## The Classification of Pseudo-Riemannian Space Forms
 
@@ -145,7 +145,7 @@ for a basis $v, w$ of $\sigma$; the number is independent of the basis. If $\sig
 
 In each case the isometry group is the orthogonal group of the ambient form — $O(p+1, q)$ for the pseudo-sphere and $O(p, q+1)$ for the pseudo-hyperboloid — or a subgroup of it, acting transitively, and the manifold is a homogeneous space.
 
-**Proof sketch.** The quadrics are nondegenerate because the normal vector is non-null at every point of the quadric, so the induced metric is nondegenerate; the orthogonal group of the ambient form acts transitively by isometries, and the stabiliser of a point is $O(p, q)$, giving a homogeneous space. The curvature is computed from the second fundamental form and the Gauss equation, and it is the constant $k$; conversely, Cartan's theorem for indefinite metrics, proved as in the Riemannian case, identifies a complete simply connected constant-curvature manifold with the model. $\square$
+**Proof sketch.** The quadrics are nondegenerate because the normal vector is non-null at every point of the quadric, so the induced metric is nondegenerate; the orthogonal group of the ambient form acts transitively by isometries, and the stabiliser of a point is $O(p, q)$, giving a homogeneous space. The curvature is computed from the second fundamental form and the Gauss equation, and it is the constant $k$; conversely, Cartan's theorem for indefinite metrics, proved as in the Riemannian case, identifies a complete simply connected constant-curvature manifold with the model.
 
 | Family | Model | Ambient form | Isometry group | Stabiliser |
 |---|---|---|---|---|
@@ -165,7 +165,7 @@ In each case the isometry group is the orthogonal group of the ambient form — 
 
 **Theorem (Nash, indefinite case).** Every pseudo-Riemannian manifold of signature $(p, q)$ and dimension $n$ admits an isometric embedding into the flat pseudo-Riemannian space $\mathbb{R}^{p', q'}$ for some $p' \geq p$, $q' \geq q$ with $p' + q'$ finite, and the embedding may be taken proper; consequently every pseudo-Riemannian metric is the pullback of a flat metric along an embedding.
 
-**Proof sketch.** The proof follows the Nash iteration for Riemannian embeddings, with the metric replaced by its nondegenerate indefinite version; the crucial point is that the formal solution of the isometric embedding equation has a solution depending on the same data, and the quadratic correction step uses the fact that the flat space has enough dimensions to absorb the error. The iteration is an analytic construction using the implicit function theorem and the convergence of a sequence, and it belongs to Part III; the theorem is quoted here as standard. $\square$
+**Proof sketch.** The proof follows the Nash iteration for Riemannian embeddings, with the metric replaced by its nondegenerate indefinite version; the crucial point is that the formal solution of the isometric embedding equation has a solution depending on the same data, and the quadratic correction step uses the fact that the flat space has enough dimensions to absorb the error. The iteration is an analytic construction using the implicit function theorem and the convergence of a sequence, and it belongs to Part III; the theorem is quoted here as standard.
 
 **Corollary.** The classification of pseudo-Riemannian manifolds up to isometry is the classification of the submanifolds of the flat spaces with nondegenerate induced metric; this is the analogue of the Whitney embedding theorem for the metric category, and it shows that the theory of *Riemannian Geometry* has a metric analogue for every signature.
 

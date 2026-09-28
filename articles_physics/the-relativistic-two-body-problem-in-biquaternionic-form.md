@@ -2,19 +2,19 @@
 
 ## Introduction
 
-The companion article *Relativistic Mechanics in Biquaternionic Form* established the biquaternion dictionary for a single relativistic particle. The four-position, four-velocity, four-momentum, four-force, and four-current are elements of the anti-Hermitian subspace $\mathbb{M}_-$ of the biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$; the mass-shell relation is the norm-form condition $\tilde{P}\bar{\tilde{P}} = -m^2c^2$; and the Lorentz transformation acts on four-vectors by rotor conjugation $\tilde{Q} \mapsto \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^\dagger$, with $\tilde{\Lambda}$ a unit-norm biquaternion. The companion article *The Lorentz Transformation as a Biquaternionic Rotation* supplied the boost biquaternion and its relation to the four-velocity.
+The companion article *Relativistic Mechanics in Biquaternionic Form* established the biquaternion dictionary for a single relativistic particle. The four-position, four-velocity, four-momentum, four-force, and four-current are elements of the anti-Hermitian subspace $\mathbb{M}_-$ of the biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$; the mass-shell relation is the biquaternion-norm condition $\tilde{P}\bar{\tilde{P}} = -m^2c^2$; and the Lorentz transformation acts on four-vectors by rotor conjugation $\tilde{Q} \mapsto \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^\dagger$, with $\tilde{\Lambda}$ a unit-norm biquaternion. The companion article *The Lorentz Transformation as a Biquaternionic Rotation* supplied the boost biquaternion and its relation to the four-velocity.
 
 This article extends that dictionary to the simplest system of more than one body: **two relativistic bodies**. The two bodies carry four-momenta $\tilde{P}_1, \tilde{P}_2 \in \mathbb{M}_-$; their interaction is left unspecified, because the two-body problem at the level analysed here is a question of kinematics, and that is exactly the level at which it is a question about the algebra. Three features make the biquaternion formulation natural:
 
 1. **The four-momenta add inside $\mathbb{M}_-$.** Since $\mathbb{M}_-$ is a real vector space, $\tilde{P} = \tilde{P}_1 + \tilde{P}_2$ is again an element of $\mathbb{M}_-$; its scalar–vector split is the split into total energy and total momentum.
 
-2. **The pair's invariant mass is a norm form.** The mass of a single body is fixed by $N(\tilde{P}) = -m^2c^2$; the mass of the pair by the same operation applied to the sum, $N(\tilde{P}_1+\tilde{P}_2) = -M^2c^2$. No new primitive is needed.
+2. **The pair's invariant mass is a biquaternion norm.** The mass of a single body is fixed by $N(\tilde{P}) = -m^2c^2$; the mass of the pair by the same operation applied to the sum, $N(\tilde{P}_1+\tilde{P}_2) = -M^2c^2$. No new primitive is needed.
 
 3. **The centre-of-momentum frame is a rotor.** The frame in which the total three-momentum vanishes is reached by a single boost biquaternion built from $\tilde{P}_1+\tilde{P}_2$, exactly as the rest frame of a single particle is reached from its four-velocity.
 
 The article is the foundation for the later exercise on the relativistic kinematics of a two-body decay, so the kinematics are worked out explicitly: the centre-of-momentum energies and momentum, the relative rapidity, the invariant mass, the boost to an arbitrary frame, and the reduction to an effective one-body problem. A decay is the special case in which the total four-momentum is that of a single body at rest.
 
-The conventions are those of the companion articles: the algebra $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with quaternion basis $e_0 = 1, e_1, e_2, e_3$ and $e_k^2 = -e_0$; the scalar imaginary $i$ with $i^2 = -1$; the anti-Hermitian subspace $\mathbb{M}_-$ (imaginary scalar part, real vector part) and the Hermitian subspace $\mathbb{M}_+$; the real-quaternion subspace $\mathbb{H}_{\mathbb{B}}$ and the complex subspace $\mathbb{C}_{\mathbb{B}}$; the norm form $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$; and the rotor conjugation $\tilde{Q} \mapsto \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^\dagger$ with $\tilde{\Lambda}\bar{\tilde{\Lambda}} = e_0$, which implements the Lorentz transformation. Throughout, $c$ is the speed of light in the medium, $c = 1/\sqrt{\epsilon\mu}$, and $c_0$ the vacuum value; $\mathbf{v}$ denotes particle velocities.
+The conventions are those of the companion articles: the algebra $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with quaternion basis $e_0 = 1, e_1, e_2, e_3$ and $e_k^2 = -e_0$; the scalar imaginary $i$ with $i^2 = -1$; the anti-Hermitian subspace $\mathbb{M}_-$ (imaginary scalar part, real vector part) and the Hermitian subspace $\mathbb{M}_+$; the real-quaternion subspace $\mathbb{H}_{\mathbb{B}}$ and the complex subspace $\mathbb{C}_{\mathbb{B}}$; the biquaternion norm $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$; and the rotor conjugation $\tilde{Q} \mapsto \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^\dagger$ with $\tilde{\Lambda}\bar{\tilde{\Lambda}} = e_0$, which implements the Lorentz transformation. Throughout, $c$ is the speed of light in the medium, $c = 1/\sqrt{\epsilon\mu}$, and $c_0$ the vacuum value; $\mathbf{v}$ denotes particle velocities.
 
 ## The Two Four-Momenta in the Material Sector
 
@@ -61,13 +61,13 @@ $$
 \langle \tilde{A},\tilde{B}\rangle = (i\alpha)(i\beta) + \mathbf{a}\cdot\mathbf{b} = -\alpha\beta + \mathbf{a}\cdot\mathbf{b}.
 $$
 
-The pairing is symmetric, bilinear, and non-degenerate, and it reproduces the norm form on the diagonal:
+The pairing is symmetric, bilinear, and non-degenerate, and it reproduces the biquaternion norm on the diagonal:
 
 $$
 \langle \tilde{A}, \tilde{A}\rangle = N(\tilde{A}).
 $$
 
-Its signature is $(3,1)$ in the basis $\{ie_0, e_1, e_2, e_3\}$: the temporal direction contributes $-1$ and the three spatial directions contribute $+1$. This is the same signature as the norm form of $\mathbb{M}_-$.
+Its signature is $(3,1)$ in the basis $\{ie_0, e_1, e_2, e_3\}$: the temporal direction contributes $-1$ and the three spatial directions contribute $+1$. This is the same signature as the biquaternion norm of $\mathbb{M}_-$.
 
 For the four-momenta the pairing reads
 
@@ -93,7 +93,7 @@ $$
 
 Because $\mathbb{M}_-$ is a real vector space, $\tilde{P} \in \mathbb{M}_-$: the total energy is $E_1+E_2$, the total momentum $\mathbf{p}_1+\mathbf{p}_2$. In the biquaternion formulation this is the statement that $\mathbb{M}_-$ is closed under addition.
 
-The norm form is multiplicative on $\mathbb{B}$ but **not additive**. For any $\tilde{A}, \tilde{B} \in \mathbb{B}$,
+The biquaternion norm is multiplicative on $\mathbb{B}$ but **not additive**. For any $\tilde{A}, \tilde{B} \in \mathbb{B}$,
 
 $$
 N(\tilde{A}+\tilde{B}) = (\tilde{A}+\tilde{B})(\bar{\tilde{A}}+\bar{\tilde{B}})
@@ -110,7 +110,7 @@ The mixed term is the whole content of the two-body problem: it is the invariant
 
 ### The Invariant Mass of the Pair
 
-The **invariant mass** $M$ of the pair is defined, exactly as for a single body, by the norm form of the total four-momentum:
+The **invariant mass** $M$ of the pair is defined, exactly as for a single body, by the biquaternion norm of the total four-momentum:
 
 $$
 N(\tilde{P}) = \tilde{P}\bar{\tilde{P}} = -M^2c^2, \qquad M \ge 0.
@@ -298,7 +298,7 @@ $$
 M^2c^4 = m_1^2c^4 + m_2^2c^4 + 2m_2E_1c^2,
 $$
 
-where $E_1 = \gamma_1 m_1c^2$ is the energy of the incident body. This is the standard fixed-target invariant mass, expressed through the pairing as $\langle \tilde{P}_1, \tilde{P}_2\rangle = -E_1m_2c^2$. Both follow from the same norm-form identity.
+where $E_1 = \gamma_1 m_1c^2$ is the energy of the incident body. This is the standard fixed-target invariant mass, expressed through the pairing as $\langle \tilde{P}_1, \tilde{P}_2\rangle = -E_1m_2c^2$. Both follow from the same biquaternion-norm identity.
 
 ## Two-Body Kinematics: The Decay Configuration
 
@@ -310,7 +310,7 @@ A \;\longrightarrow\; 1 + 2,
 \tilde{P}_A = \tilde{P}_1 + \tilde{P}_2.
 $$
 
-In the rest frame of $A$ the parent four-momentum is $\tilde{P}_A = iMc\,e_0$, so the rest frame of the parent **is** the COM frame of the two daughters, and the results above apply unchanged. The conservation law is the biquaternion equation $\tilde{P}_A = \tilde{P}_1+\tilde{P}_2$; its scalar and vector parts are energy and three-momentum conservation, and its norm form is $N(\tilde{P}_A) = -M^2c^2 = N(\tilde{P}_1+\tilde{P}_2)$.
+In the rest frame of $A$ the parent four-momentum is $\tilde{P}_A = iMc\,e_0$, so the rest frame of the parent **is** the COM frame of the two daughters, and the results above apply unchanged. The conservation law is the biquaternion equation $\tilde{P}_A = \tilde{P}_1+\tilde{P}_2$; its scalar and vector parts are energy and three-momentum conservation, and its biquaternion norm is $N(\tilde{P}_A) = -M^2c^2 = N(\tilde{P}_1+\tilde{P}_2)$.
 
 The daughter quantities in the parent rest frame are therefore
 
@@ -439,7 +439,7 @@ the light daughter carrying the larger share. The conservation law $\tilde{P}_A 
 
 ## Summary
 
-The relativistic two-body problem in the biquaternion framework is expressed entirely through the three operations of the algebra restricted to the material sector $\mathbb{M}_-$: addition, the norm form, and the rotor conjugation. The two four-momenta $\tilde{P}_1, \tilde{P}_2$ are elements of $\mathbb{M}_-$; their sum $\tilde{P} = \tilde{P}_1+\tilde{P}_2$ is again in $\mathbb{M}_-$, with norm $N(\tilde{P}) = -M^2c^2$, which defines the invariant mass $M$ of the pair. Conservation of four-momentum is the single equation $\tilde{P}_1+\tilde{P}_2 = \text{constant}$, whose scalar and vector parts are energy and momentum conservation.
+The relativistic two-body problem in the biquaternion framework is expressed entirely through the three operations of the algebra restricted to the material sector $\mathbb{M}_-$: addition, the biquaternion norm, and the rotor conjugation. The two four-momenta $\tilde{P}_1, \tilde{P}_2$ are elements of $\mathbb{M}_-$; their sum $\tilde{P} = \tilde{P}_1+\tilde{P}_2$ is again in $\mathbb{M}_-$, with norm $N(\tilde{P}) = -M^2c^2$, which defines the invariant mass $M$ of the pair. Conservation of four-momentum is the single equation $\tilde{P}_1+\tilde{P}_2 = \text{constant}$, whose scalar and vector parts are energy and momentum conservation.
 
 The centre-of-momentum frame is reached by the boost biquaternion $\tilde{\Lambda}_{\rm CM} = \sqrt{-i\bar{\tilde{P}}/(Mc)}$, which rotates the total four-momentum to $iMc\,e_0$; in that frame the pair has back-to-back momenta and energies $E_1^*$ and $E_2^*$ fixed by the masses. The relative motion is characterised by the relative rapidity $\psi_{\rm rel}$, defined by $\cosh\psi_{\rm rel} = -\langle\tilde{u}_1,\tilde{u}_2\rangle$; the invariant mass satisfies $M^2c^4 = m_1^2c^4+m_2^2c^4+2m_1m_2c^4\cosh\psi_{\rm rel}$. The kinematic reduction to an effective one-body problem is the exact dispersion relation $Mc^2 = \sqrt{m_1^2c^4+p^{*2}c^2}+\sqrt{m_2^2c^4+p^{*2}c^2}$, whose non-relativistic limit is the reduced-mass kinetic energy.
 
@@ -447,7 +447,7 @@ A two-body decay is the special case in which the total four-momentum is $\tilde
 
 ## Open Questions
 
-1. **Many-body systems.** The total four-momentum of $n$ bodies is again in $\mathbb{M}_-$, and the norm-form construction defines an $n$-body invariant mass. Whether the COM reduction extends usefully beyond $n=2$ is not developed here.
+1. **Many-body systems.** The total four-momentum of $n$ bodies is again in $\mathbb{M}_-$, and the biquaternion-norm construction defines an $n$-body invariant mass. Whether the COM reduction extends usefully beyond $n=2$ is not developed here.
 
 2. **Massless constituents and null totals.** If the total four-momentum is null — massless constituents, or collinear momenta — no COM frame exists in the sense used here and $\tilde{\Lambda}_{\rm CM}$ is undefined; such degenerate pairs (for instance two collinear photons) need separate treatment.
 
@@ -467,7 +467,7 @@ A two-body decay is the special case in which the total four-momentum is $\tilde
 | $\mathbb{M}_-$ | Anti-Hermitian subspace (material sector): imaginary scalar, real vector |
 | $\mathbb{M}_+$ | Hermitian subspace (informational sector) |
 | $\mathbb{H}_{\mathbb{B}}$ | Real-quaternion subspace |
-| $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$ | Norm form |
+| $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$ | Biquaternion norm |
 | $\langle\tilde{A},\tilde{B}\rangle = \mathrm{Sc}(\tilde{A}\bar{\tilde{B}})$ | Invariant pairing on $\mathbb{M}_-$ |
 | $\tilde{P}_a = m_a\tilde{U}_a = iE_a/c\,e_0+\mathbf{p}_a$ | Four-momentum of body $a$ |
 | $\tilde{u}_a = \tilde{U}_a/c$ | Unit four-velocity, $N(\tilde{u}_a) = -1$ |

@@ -83,7 +83,7 @@ $$
 
 with the $x$-derivatives even and the $\xi$-derivatives odd, and the derivatives with respect to the odd coordinates are the left derivatives of *Grassmann Variables and Berezin Integration*. Hence a supermanifold is **smooth** in the graded sense, and every vector field is locally $X = \sum_i f_i\,\partial_{x_i} + \sum_j g_j\,\partial_{\xi_j}$ with the appropriate parities.
 
-**Proof sketch.** The chain rule in the super setting gives the transformation of the frame under a change of supercoordinates, and the invertibility of the transformation matrix on the even part (the Jacobian of the body diffeomorphism, which is invertible) together with the triangular form of the odd-odd block shows that the frame is a basis of the module of derivations; the local freeness follows. $\square$
+**Proof sketch.** The chain rule in the super setting gives the transformation of the frame under a change of supercoordinates, and the invertibility of the transformation matrix on the even part (the Jacobian of the body diffeomorphism, which is invertible) together with the triangular form of the odd-odd block shows that the frame is a basis of the module of derivations; the local freeness follows.
 
 **Theorem (the Lie superalgebra of vector fields).** The tangent sheaf with the **superbracket**
 
@@ -93,7 +93,7 @@ $$
 
 is a sheaf of Lie superalgebras: the bracket is super anticommutative, $[X,Y] = -(-1)^{|X||Y|}[Y,X]$, and satisfies the super Jacobi identity. On a supermanifold of dimension $(p \mid q)$ the bracket of two odd fields is even and may be nonzero, in contrast with the commuting case.
 
-**Proof sketch.** The bracket of two derivations of an associative superalgebra is a derivation, and the verification of the super Jacobi identity is the graded form of the ordinary computation; the statement is that of *Superalgebras and Graded Structures* applied to the sheaf of superalgebras. $\square$
+**Proof sketch.** The bracket of two derivations of an associative superalgebra is a derivation, and the verification of the super Jacobi identity is the graded form of the ordinary computation; the statement is that of *Superalgebras and Graded Structures* applied to the sheaf of superalgebras.
 
 **Example (odd vector fields and the de Rham differential).** Let $M$ be a smooth manifold of dimension $p$ and let $\Pi TM$ be its **odd tangent bundle**, the supermanifold of dimension $(p \mid p)$ whose odd coordinates are the differentials $dx_i$ of the even coordinates. The functions on $\Pi TM$ are the differential forms on $M$,
 
@@ -123,7 +123,7 @@ characterised by $d^2 = 0$, the super Leibniz rule and $d(f) = df$ on functions;
 
 **Theorem (functoriality).** The assignment $M \mapsto \Omega^\bullet(M)$ is a functor to the category of differential graded superalgebras: a morphism of supermanifolds pulls back forms, $d$ commutes with the pullback, and the super Leibniz rule holds with the Koszul sign. The degree-zero part is the structure sheaf, and the degree-one part the cotangent sheaf; the complex $(\Omega^\bullet(M), d)$ is the graded version of the de Rham complex of *Differential Forms and Stokes' Theorem*, and its cohomology is the de Rham cohomology of the supermanifold.
 
-**Proof sketch.** The pullback of a derivation is a derivation with the opposite variance, the dual sheaf is functorial, and the compatibility of $d$ with pullback is the chain rule in the super setting; the differential graded structure is the one of *Superalgebras and Graded Structures*. $\square$
+**Proof sketch.** The pullback of a derivation is a derivation with the opposite variance, the dual sheaf is functorial, and the compatibility of $d$ with pullback is the chain rule in the super setting; the differential graded structure is the one of *Superalgebras and Graded Structures*.
 
 ### The Berezinian and Integration
 
@@ -155,7 +155,7 @@ $$
 
 the inverse Berezinian appearing, exactly as the inverse determinant appears in the purely odd change of variables of *Grassmann Variables and Berezin Integration* and the inverse Jacobian in the ordinary change of variables of the even part. The integral is a finite algebraic operation — the extraction of a top coefficient — and agrees with the Berezin integral on each chart.
 
-**Proof sketch.** The transformation of the odd part is the change-of-variables formula of the odd calculus, and the even part contributes the ordinary Jacobian determinant, the two combining into the Berezinian; the independence of the chart is the multiplicativity of the Berezinian, $\operatorname{Ber}(XY) = \operatorname{Ber}(X)\operatorname{Ber}(Y)$, on the overlaps of the atlas; the agreement with the Berezin integral is the computation of the top coefficient in the odd variables. $\square$
+**Proof sketch.** The transformation of the odd part is the change-of-variables formula of the odd calculus, and the even part contributes the ordinary Jacobian determinant, the two combining into the Berezinian; the independence of the chart is the multiplicativity of the Berezinian, $\operatorname{Ber}(XY) = \operatorname{Ber}(X)\operatorname{Ber}(Y)$, on the overlaps of the atlas; the agreement with the Berezin integral is the computation of the top coefficient in the odd variables.
 
 **Example (the integration of a super form).** On $\mathbb{R}^{1\mid 1}$ with the coordinates $(x, \xi)$ a section of the Berezinian is $f(x) + g(x)\xi$ times $dx\,d\xi$, and
 
@@ -171,7 +171,7 @@ the even part of the coefficient; this is the shape of every superspace integral
 
 **Theorem (the odd tangent bundle).** For a smooth manifold $M$ of dimension $p$, the odd tangent bundle $\Pi TM$ is a supermanifold of dimension $(p \mid p)$ whose algebra of functions is the algebra of differential forms, $\mathcal{O}_{\Pi TM} = \Omega^\bullet(M)$; each differential form on $M$ is a function on $\Pi TM$, and the exterior derivative is an odd vector field $Q$ with $[Q, Q] = 0$. The same construction for a vector bundle $E$ of rank $r$ gives a supermanifold $\Pi E$ of dimension $(p \mid r)$ whose functions are the sections of $\Lambda E^*$, and the Berezinian line bundle of $\Pi E$ is computed from the determinant lines of $E$ and of the body.
 
-**Proof sketch.** A function on $\Pi TM$ is locally a polynomial in the odd coordinates $dx_i$ with coefficients functions on $M$, which is a differential form, and the parity of $dx_i$ is odd; the odd vector field $Q = \sum_i dx_i\,\partial_{x_i}$ realises the exterior derivative, and $Q^2 = 0$ as an operator is $d^2 = 0$, equivalently $[Q,Q] = 0$ since $Q$ is odd. For the bundle case the same computation is applied fibrewise, and the Berezinian follows from the rank count of the cotangent sheaf of $\Pi E$, of rank $(p\mid r)$. $\square$
+**Proof sketch.** A function on $\Pi TM$ is locally a polynomial in the odd coordinates $dx_i$ with coefficients functions on $M$, which is a differential form, and the parity of $dx_i$ is odd; the odd vector field $Q = \sum_i dx_i\,\partial_{x_i}$ realises the exterior derivative, and $Q^2 = 0$ as an operator is $d^2 = 0$, equivalently $[Q,Q] = 0$ since $Q$ is odd. For the bundle case the same computation is applied fibrewise, and the Berezinian follows from the rank count of the cotangent sheaf of $\Pi E$, of rank $(p\mid r)$.
 
 **Example (the odd total space and the classical structure).** For $E = TM$ the manifold $\Pi E$ is $\Pi TM$ and the functions are the forms; for $E$ the trivial bundle of rank $r$ over a point, $\Pi E = \mathbb{R}^{0\mid r}$ is the odd affine space. The construction $\Pi$ is the identity on the underlying body and reverses the parity of the fibres, so $\Pi\Pi E = E$ up to the canonical identification; the odd bundles are the objects on which the odd vector fields of the theory naturally live, and the Berezinian line bundle of $\Pi E$ is the determinant line bundle of $E$ raised to the appropriate power.
 

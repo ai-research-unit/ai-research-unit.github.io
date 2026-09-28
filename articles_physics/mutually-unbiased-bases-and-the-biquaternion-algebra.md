@@ -243,7 +243,7 @@ not $\tfrac14$. For example $|\langle\Phi^+|\psi\rangle\otimes|\psi\rangle|^2 = 
 
 **1. MUBs from the algebra in higher dimensions.** The qubit's three MUBs come from the three imaginary units of $\mathbb{H}$. Is there an algebraic construction of the five MUBs of $\mathbb{B}\otimes\mathbb{B}$ from the idempotent structure of the tensor-product algebra, rather than from the general theory of complex Hadamard matrices?
 
-**2. Unbiasedness and the norm form.** The mutual-unbiasedness condition is a condition on the trace pairing, not on the norm form. Is there a norm-form criterion for unbiasedness, and does it select the same bases?
+**2. Unbiasedness and the biquaternion norm.** The mutual-unbiasedness condition is a condition on the trace pairing, not on the biquaternion norm. Is there a biquaternion-norm criterion for unbiasedness, and does it select the same bases?
 
 **3. Maximal entanglement versus unbiasedness.** The Bell basis is maximally entangled and maximally biased relative to the product basis. Is there a general trade-off, in the algebra, between the entanglement of a basis and its unbiasedness relative to a product basis?
 

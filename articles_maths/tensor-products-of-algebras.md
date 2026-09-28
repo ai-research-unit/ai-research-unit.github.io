@@ -35,7 +35,7 @@ $$
 A \times B \to A \otimes_R B, \qquad (a', b') \mapsto L_{a',b'}(x) = \sum_i a_i a' \otimes b_i b'.
 $$
 
-This is again $R$-bilinear, so it induces an $R$-linear map $R_{x} : A \otimes B \to A \otimes B$ with $R_x(a' \otimes b') = \sum_i a_i a' \otimes b_i b'$. Setting $x \cdot y = R_x(y)$ gives a product, well defined because $R_x$ depends only on $x$ and not on its expression as a sum, and bilinear because $R_{x + x'} = R_x + R_{x'}$ and $R_{rx} = r R_x$. $\square$
+This is again $R$-bilinear, so it induces an $R$-linear map $R_{x} : A \otimes B \to A \otimes B$ with $R_x(a' \otimes b') = \sum_i a_i a' \otimes b_i b'$. Setting $x \cdot y = R_x(y)$ gives a product, well defined because $R_x$ depends only on $x$ and not on its expression as a sum, and bilinear because $R_{x + x'} = R_x + R_{x'}$ and $R_{rx} = r R_x$.
 
 **Proposition (algebra axioms).** The tensor product $A \otimes_R B$ inherits the following properties:
 
@@ -44,7 +44,7 @@ This is again $R$-bilinear, so it induces an $R$-linear map $R_{x} : A \otimes B
 3. if $A$ and $B$ are commutative, then so is $A \otimes_R B$;
 4. the products of $A$ and $B$ are recovered on the images of $A$ and $B$: $a \otimes 1_B$ and $1_A \otimes b$.
 
-*Proof.* Associativity on elementary tensors is $(aa')a'' \otimes (bb')b'' = a(a'a'') \otimes b(b'b'')$, and both sides extend by bilinearity. Unitality is $(a \otimes b)(1 \otimes 1) = a \otimes b = (1 \otimes 1)(a \otimes b)$. Commutativity is $(a \otimes b)(a' \otimes b') = aa' \otimes bb' = a'a \otimes b'b = (a' \otimes b')(a \otimes b)$. The last statement is the case $b' = 1_B$ or $a' = 1_A$ of the product formula. $\square$
+*Proof.* Associativity on elementary tensors is $(aa')a'' \otimes (bb')b'' = a(a'a'') \otimes b(b'b'')$, and both sides extend by bilinearity. Unitality is $(a \otimes b)(1 \otimes 1) = a \otimes b = (1 \otimes 1)(a \otimes b)$. Commutativity is $(a \otimes b)(a' \otimes b') = aa' \otimes bb' = a'a \otimes b'b = (a' \otimes b')(a \otimes b)$. The last statement is the case $b' = 1_B$ or $a' = 1_A$ of the product formula.
 
 **Proposition (centre).** For unital associative $A$ and $B$, the inclusion
 
@@ -54,7 +54,7 @@ $$
 
 realises $Z(A) \otimes_R Z(B)$ as a subalgebra of the centre of the tensor product.
 
-*Proof.* This is the computation $(z \otimes w)(a \otimes b) = za \otimes wb = az \otimes bw = (a\otimes b)(z\otimes w)$, extended bilinearly. $\square$
+*Proof.* This is the computation $(z \otimes w)(a \otimes b) = za \otimes wb = az \otimes bw = (a\otimes b)(z\otimes w)$, extended bilinearly.
 
 Over a field the inclusion is an equality.
 
@@ -64,7 +64,7 @@ $$
 Z(A \otimes_k B) = Z(A) \otimes_k Z(B).
 $$
 
-*Proof.* The inclusion $\supseteq$ is the proposition above. For the reverse, let $z = \sum_{i=1}^{n} a_i \otimes b_i$ be an expression with $n$ minimal; then $\{a_i\}$ and $\{b_i\}$ are each linearly independent over $k$. Commuting $z$ with $a \otimes 1_B$ gives $\sum_i (a_i a - a a_i) \otimes b_i = 0$, so $a_i a = a a_i$ for every $i$ by linear independence of the $b_i$; hence each $a_i \in Z(A)$. Commuting $z$ with $1_A \otimes b$ then gives $\sum_i a_i \otimes (b_i b - b b_i) = 0$, so $b_i b = b b_i$ for every $i$ by linear independence of the $a_i$; hence each $b_i \in Z(B)$. Therefore $z \in Z(A)\otimes_k Z(B)$. $\square$
+*Proof.* The inclusion $\supseteq$ is the proposition above. For the reverse, let $z = \sum_{i=1}^{n} a_i \otimes b_i$ be an expression with $n$ minimal; then $\{a_i\}$ and $\{b_i\}$ are each linearly independent over $k$. Commuting $z$ with $a \otimes 1_B$ gives $\sum_i (a_i a - a a_i) \otimes b_i = 0$, so $a_i a = a a_i$ for every $i$ by linear independence of the $b_i$; hence each $a_i \in Z(A)$. Commuting $z$ with $1_A \otimes b$ then gives $\sum_i a_i \otimes (b_i b - b b_i) = 0$, so $b_i b = b b_i$ for every $i$ by linear independence of the $a_i$; hence each $b_i \in Z(B)$. Therefore $z \in Z(A)\otimes_k Z(B)$.
 
 Over a general commutative ring only the inclusion is asserted here, because the minimal expression need not have linearly independent coefficients.
 
@@ -83,7 +83,7 @@ $$
 \Phi\bigl((a\otimes b)(a'\otimes b')\bigr) = f(aa')g(bb') = f(a)f(a')g(b)g(b') = f(a)g(b)f(a')g(b') = \Phi(a\otimes b)\Phi(a'\otimes b'),
 $$
 
-where the third equality uses that the images of $f$ and $g$ commute; unitality is $\Phi(1 \otimes 1) = 1_C$. The two constructions are inverse. $\square$
+where the third equality uses that the images of $f$ and $g$ commute; unitality is $\Phi(1 \otimes 1) = 1_C$. The two constructions are inverse.
 
 **Corollary (coproduct of commutative algebras).** If $A$, $B$, $C$ are commutative, the commuting condition is automatic, and the theorem reads
 
@@ -103,7 +103,7 @@ $$
 
 the quotient in which every element of $A$ is forced to commute with every element of $B$.
 
-*Proof.* The free product satisfies the universal property of pairs of homomorphisms with no commuting condition, and imposing the relations $ab = ba$ adds exactly that condition; the universal property of the quotient then matches the theorem above. $\square$
+*Proof.* The free product satisfies the universal property of pairs of homomorphisms with no commuting condition, and imposing the relations $ab = ba$ adds exactly that condition; the universal property of the quotient then matches the theorem above.
 
 The distinction between the tensor product and the free product is the distinction between allowing and forbidding commutativity between the two factors; it parallels the distinction between the polynomial algebra and the free algebra in *Tensor Powers and the Free Algebra*.
 
@@ -195,7 +195,7 @@ $$
 (A/I) \otimes_R S \;\cong\; (A \otimes_R S)\big/\operatorname{im}\bigl(I \otimes_R S \to A \otimes_R S\bigr).
 $$
 
-*Proof.* The tensor product is right exact in each variable (*Modules*, §13), so the quotient exact sequence $0 \to I \to A \to A/I \to 0$ yields an exact sequence $I \otimes_R S \to A \otimes_R S \to (A/I)\otimes_R S \to 0$; the kernel of the second map is therefore the image of the first, which is a two-sided ideal because $I$ is two-sided and $S$ is central. $\square$
+*Proof.* The tensor product is right exact in each variable (*Modules*, §13), so the quotient exact sequence $0 \to I \to A \to A/I \to 0$ yields an exact sequence $I \otimes_R S \to A \otimes_R S \to (A/I)\otimes_R S \to 0$; the kernel of the second map is therefore the image of the first, which is a two-sided ideal because $I$ is two-sided and $S$ is central.
 
 The image is written $I\cdot(A\otimes_R S)$ when one wants to emphasise that it need not be isomorphic to $I \otimes_R S$, since the map $I\otimes_R S \to A\otimes_R S$ need not be injective. For $R = \mathbb{Z}$, $A = \mathbb{Z}$, $I = 2\mathbb{Z}$ and $S = \mathbb{Z}/2\mathbb{Z}$: the source $I\otimes_R S = 2\mathbb{Z}\otimes_\mathbb{Z}\mathbb{Z}/2\mathbb{Z} \cong \mathbb{Z}/2\mathbb{Z}$ is spanned by $2 \otimes \bar 1$, and $2\otimes\bar 1 $ maps to $2\otimes\bar 1 = 1\otimes 2\bar 1 = 0$ in $A \otimes_R S = \mathbb{Z}\otimes_\mathbb{Z}\mathbb{Z}/2\mathbb{Z}$, so the image is $0$ and the displayed quotient is $\mathbb{Z}/2\mathbb{Z}$, equal to $(A/I)\otimes_R S$. Thus the ideal is genuinely the image of $I \otimes_R S$ and not $I\otimes_R S$ itself.
 
@@ -207,7 +207,7 @@ $$
 (A \otimes_R B)\big/\bigl(\bar I + \bar J\bigr) \;\cong\; (A/I) \otimes_R (B/J).
 $$
 
-*Proof.* The quotient maps $A \to A/I$ and $B \to B/J$ induce a surjection $A \otimes B \to (A/I) \otimes (B/J)$, and its kernel is spanned by the tensors with a factor in $I$ or in $J$; that span is $\bar I + \bar J$, since $\bar I$ is spanned by the tensors with first factor in $I$ and $\bar J$ by those with second factor in $J$. Each of $\bar I$ and $\bar J$ is a two-sided ideal, being the image of a two-sided ideal under an algebra homomorphism, so their sum is a two-sided ideal and the first isomorphism theorem applies. $\square$
+*Proof.* The quotient maps $A \to A/I$ and $B \to B/J$ induce a surjection $A \otimes B \to (A/I) \otimes (B/J)$, and its kernel is spanned by the tensors with a factor in $I$ or in $J$; that span is $\bar I + \bar J$, since $\bar I$ is spanned by the tensors with first factor in $I$ and $\bar J$ by those with second factor in $J$. Each of $\bar I$ and $\bar J$ is a two-sided ideal, being the image of a two-sided ideal under an algebra homomorphism, so their sum is a two-sided ideal and the first isomorphism theorem applies.
 
 **Corollary.** If $I$ is a two-sided ideal of $A$ with image $\bar I$ in $A \otimes_R B$, then $(A/I) \otimes_R B \cong (A \otimes_R B)/\bar I$.
 
@@ -225,7 +225,7 @@ recovering the computation of the example above.
 
 **Theorem (tensor product of central simple algebras).** Let $A$ and $B$ be finite-dimensional central simple $F$-algebras. Then $A \otimes_F B$ is central simple, with $\dim_F (A \otimes_F B) = (\dim_F A)(\dim_F B)$.
 
-*Proof (sketch).* The centre is computed by the proposition on centres: extending scalars to an algebraic closure, where $A$ and $B$ become matrix algebras, the tensor product becomes a matrix algebra and is central simple. Descent along the finite Galois extension then gives the result in general. $\square$
+*Proof (sketch).* The centre is computed by the proposition on centres: extending scalars to an algebraic closure, where $A$ and $B$ become matrix algebras, the tensor product becomes a matrix algebra and is central simple. Descent along the finite Galois extension then gives the result in general.
 
 **Wedderburn's structure theorem.** Every finite-dimensional central simple $F$-algebra is isomorphic to $M_n(D)$ for a unique positive integer $n$ and a unique central $F$-division algebra $D$.
 

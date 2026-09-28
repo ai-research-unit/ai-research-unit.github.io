@@ -27,17 +27,17 @@ $$
 (a + b)^n = \sum_{k=0}^{n} \binom{n}{k} a^k b^{\,n-k} .
 $$
 
-**Proof.** Expand the product of $n$ factors, each $a + b$. Distributivity expresses $(a+b)^n$ as the sum of all $2^n$ words in the letters $a, b$. By the commutative law a word with $k$ copies of $a$ and $n-k$ copies of $b$ equals $a^k b^{n-k}$, so the words group into $n+1$ classes according to $k$; the class with $k$ copies of $a$ is in bijection with the $k$-element subsets of $\{1, \ldots, n\}$, of which there are $\binom{n}{k}$. $\square$
+**Proof.** Expand the product of $n$ factors, each $a + b$. Distributivity expresses $(a+b)^n$ as the sum of all $2^n$ words in the letters $a, b$. By the commutative law a word with $k$ copies of $a$ and $n-k$ copies of $b$ equals $a^k b^{n-k}$, so the words group into $n+1$ classes according to $k$; the class with $k$ copies of $a$ is in bijection with the $k$-element subsets of $\{1, \ldots, n\}$, of which there are $\binom{n}{k}$.
 
 The proof uses only that $a$ and $b$ commute: an arbitrary word in $a$ and $b$ reduces to $a^k b^{n-k}$ exactly when the two letters commute. In a general ring $(a+b)^2 = a^2 + ab + ba + b^2$ already carries the correction term $ab + ba$.
 
 **Corollary.** If $a$ and $b$ commute then $a - b$ divides $a^n - b^n$ for every $n \geq 1$.
 
-**Proof.** $a^n - b^n = (a-b)(a^{n-1} + a^{n-2}b + \cdots + b^{n-1})$, all factors inside the second bracket commuting with one another. $\square$
+**Proof.** $a^n - b^n = (a-b)(a^{n-1} + a^{n-2}b + \cdots + b^{n-1})$, all factors inside the second bracket commuting with one another.
 
 **Corollary (Frobenius after $p$ copies).** Let $R$ be a commutative ring of characteristic $p$, a prime. Then $(a+b)^p = a^p + b^p$ for all $a, b \in R$.
 
-**Proof.** Every intermediate coefficient $\binom{p}{k}$ with $0 < k < p$ is divisible by $p$ and vanishes in $R$. $\square$
+**Proof.** Every intermediate coefficient $\binom{p}{k}$ with $0 < k < p$ is divisible by $p$ and vanishes in $R$.
 
 The full theory of the characteristic belongs to *Integral Domains*, below this article in this category; the corollary needs only that $p \cdot 1 = 0$.
 
@@ -51,11 +51,11 @@ $$
 
 the sum over all $m$-tuples of non-negative integers $(k_1, \ldots, k_m)$ with $k_1 + \cdots + k_m = n$.
 
-**Proof.** Expanding the product of $n$ factors $a_1 + \cdots + a_m$ gives a sum over words of length $n$ in the alphabet $\{1, \ldots, m\}$. In a commutative ring the value of a word depends only on the multiplicities $k_1, \ldots, k_m$ of its letters, and the number of words with prescribed multiplicities is the multinomial coefficient, the number of ways of choosing the positions of each letter. $\square$
+**Proof.** Expanding the product of $n$ factors $a_1 + \cdots + a_m$ gives a sum over words of length $n$ in the alphabet $\{1, \ldots, m\}$. In a commutative ring the value of a word depends only on the multiplicities $k_1, \ldots, k_m$ of its letters, and the number of words with prescribed multiplicities is the multinomial coefficient, the number of ways of choosing the positions of each letter.
 
 **Corollary.** If $a_1, \ldots, a_m$ are idempotent and $a_i a_j = 0$ for $i \neq j$, then $(a_1 + \cdots + a_m)^n = a_1 + \cdots + a_m$ for every $n \geq 1$.
 
-**Proof.** A term of the expansion is indexed by multiplicities $k_1, \ldots, k_m$ with $k_1 + \cdots + k_m = n$. If some $k_i \geq 2$ and some other $k_j \geq 1$, the term contains the factor $a_i a_j = 0$ and vanishes; if some $k_i \geq 2$ with all other $k_j = 0$ then $k_i = n$ and the term is $a_i^{\,n} = a_i$. If instead every $k_i \leq 1$, the term is a product of $n$ distinct idempotents, which vanishes unless $n = 1$. So the sum reduces to $a_1 + \cdots + a_m$. $\square$
+**Proof.** A term of the expansion is indexed by multiplicities $k_1, \ldots, k_m$ with $k_1 + \cdots + k_m = n$. If some $k_i \geq 2$ and some other $k_j \geq 1$, the term contains the factor $a_i a_j = 0$ and vanishes; if some $k_i \geq 2$ with all other $k_j = 0$ then $k_i = n$ and the term is $a_i^{\,n} = a_i$. If instead every $k_i \leq 1$, the term is a product of $n$ distinct idempotents, which vanishes unless $n = 1$. So the sum reduces to $a_1 + \cdots + a_m$.
 
 This is the computation that makes orthogonal idempotents behave as the identities of their summands; product decompositions are treated in *Localization and the Fraction Field*, below this article in this category.
 
@@ -93,7 +93,7 @@ All three are ideals. Sums and intersections are ideals in any ring; the product
 
 (c) A generator $ab$ of $IJ$ equals $ba$, a generator of $JI$; hence the same generators. Induct on $n$.
 
-(d) If $a \in I$, $b \in J$ then $ab \in I$ and $ab \in J$. An element of $(I \cap J) + (I \cap K)$ lies in $I$ and in $J + K$. $\square$
+(d) If $a \in I$, $b \in J$ then $ab \in I$ and $ab \in J$. An element of $(I \cap J) + (I \cap K)$ lies in $I$ and in $J + K$.
 
 ### The Radical of an Ideal
 
@@ -115,29 +115,29 @@ All three are ideals. Sums and intersections are ideals in any ring; the product
 
 (c) $r$ has a power in $I$ exactly when a power of $r$ has a power in $I$. And $I^2 \subseteq I$ gives $\sqrt{I^2} \subseteq \sqrt{I}$, while $r^n \in I$ gives $r^{2n} \in I^2$; induct.
 
-(d) From $IJ \subseteq I \cap J$ we get $\sqrt{IJ} \subseteq \sqrt{I \cap J}$, and $\sqrt{I \cap J} \subseteq \sqrt{I} \cap \sqrt{J}$ is immediate. Finally if $r^m \in I$ and $r^n \in J$ then $r^{m+n} \in IJ$. $\square$
+(d) From $IJ \subseteq I \cap J$ we get $\sqrt{IJ} \subseteq \sqrt{I \cap J}$, and $\sqrt{I \cap J} \subseteq \sqrt{I} \cap \sqrt{J}$ is immediate. Finally if $r^m \in I$ and $r^n \in J$ then $r^{m+n} \in IJ$.
 
 **Proposition.** The radical of $I$ is the inverse image of the nilradical of the quotient under $\pi : R \to R/I$, that is $\sqrt{I} = \pi^{-1}(\operatorname{nil}(R/I))$.
 
-**Proof.** The class $r + I$ is nilpotent exactly when $r^n \in I$ for some $n \geq 1$. $\square$
+**Proof.** The class $r + I$ is nilpotent exactly when $r^n \in I$ for some $n \geq 1$.
 
 **Corollary.** An ideal is radical exactly when its quotient is reduced, in the sense of *Reduced Rings and the Nilradical*, below this article in this category.
 
 **Lemma (prime ideals from multiplicative sets).** Let $S \subseteq R$ be multiplicatively closed with $1 \in S$ and $0 \notin S$, and let $J$ be an ideal maximal among the ideals disjoint from $S$. Then $J$ is prime.
 
-**Proof.** Suppose $ab \in J$ with $a, b \notin J$. Then $J + (a)$ and $J + (b)$ strictly contain $J$, so by maximality each meets $S$; choose $s = j + xa$ and $t = k + yb$ with $j, k \in J$. Then $st = (j+xa)(k+yb) \in J + (ab) = J$, since $ab \in J$, while $st \in S$ because $S$ is multiplicatively closed and $s, t \in S$. This contradicts $J \cap S = \emptyset$. $\square$
+**Proof.** Suppose $ab \in J$ with $a, b \notin J$. Then $J + (a)$ and $J + (b)$ strictly contain $J$, so by maximality each meets $S$; choose $s = j + xa$ and $t = k + yb$ with $j, k \in J$. Then $st = (j+xa)(k+yb) \in J + (ab) = J$, since $ab \in J$, while $st \in S$ because $S$ is multiplicatively closed and $s, t \in S$. This contradicts $J \cap S = \emptyset$.
 
 The ideal $J$ exists by Zorn's lemma applied to the set of ideals disjoint from $S$, which is nonempty because $(0)$ is disjoint from $S$ when $0 \notin S$.
 
 **Theorem (Krull).** Let $I$ be an ideal of the commutative ring $R$. Then the radical of $I$ is the intersection of the prime ideals containing $I$:
 
 $$
-\sqrt{I} = \bigcap_{\mathfrak{p} \supseteq I} \mathfrak{p} .
+\sqrt{I} = \bigcap_{\mathrm{P} \supseteq I} \mathrm{P} .
 $$
 
-In particular the nilradical is the intersection of all the prime ideals, $\operatorname{nil}(R) = \bigcap_{\mathfrak{p} \in \operatorname{Spec} R} \mathfrak{p}$.
+In particular the nilradical is the intersection of all the prime ideals, $\operatorname{nil}(R) = \bigcap_{\mathrm{P} \in \operatorname{Spec} R} \mathrm{P}$.
 
-**Proof.** If $r \in \sqrt{I}$ and $\mathfrak{p} \supseteq I$, then $r^n \in I \subseteq \mathfrak{p}$ for some $n \geq 1$, so $r \in \mathfrak{p}$ since $\mathfrak{p}$ is prime; this is one inclusion. For the other, $\sqrt{I}$ is the preimage of the nilradical of $R/I$ by the proposition above, so it suffices to show that a non-nilpotent element $s$ of $R$ lies outside some prime ideal. The set $S = \{s^n : n \geq 0\}$ is multiplicatively closed, contains $1$ and not $0$; by the lemma there is an ideal $\mathfrak{p}$ maximal among those disjoint from $S$, hence prime, and $s \notin \mathfrak{p}$. $\square$
+**Proof.** If $r \in \sqrt{I}$ and $\mathrm{P} \supseteq I$, then $r^n \in I \subseteq \mathrm{P}$ for some $n \geq 1$, so $r \in \mathrm{P}$ since $\mathrm{P}$ is prime; this is one inclusion. For the other, $\sqrt{I}$ is the preimage of the nilradical of $R/I$ by the proposition above, so it suffices to show that a non-nilpotent element $s$ of $R$ lies outside some prime ideal. The set $S = \{s^n : n \geq 0\}$ is multiplicatively closed, contains $1$ and not $0$; by the lemma there is an ideal $\mathrm{P}$ maximal among those disjoint from $S$, hence prime, and $s \notin \mathrm{P}$.
 
 The intersection of radical ideals is radical, by (d) and its analogue for an arbitrary family; the sum of two radical ideals need not be radical.
 
@@ -157,7 +157,7 @@ The intersection of radical ideals is radical, by (d) and its analogue for an ar
 
 **(c)** If $I$ is coprime to $J$ and to $K$ then $I$ is coprime to $JK$; hence to $J^n$ for every $n \geq 1$.
 
-**Proof.** (a) $I+J = R$ means $1 \in I+J$. (b) If $1 = a+b$ with $a \in I$, $b \in J$ and $x \in I \cap J$, then $x = xa + xb \in IJ$ since $xa \in IJ$ (as $x \in J$, $a \in I$) and $xb \in IJ$ (as $x \in I$, $b \in J$). (c) From $a+b=1$ with $a\in I$, $b\in J$ and $a'+c=1$ with $a'\in I$, $c\in K$ we get $1 = (a+b)(a'+c) = aa' + ac + ba' + bc \in I + JK$; iterate. $\square$
+**Proof.** (a) $I+J = R$ means $1 \in I+J$. (b) If $1 = a+b$ with $a \in I$, $b \in J$ and $x \in I \cap J$, then $x = xa + xb \in IJ$ since $xa \in IJ$ (as $x \in J$, $a \in I$) and $xb \in IJ$ (as $x \in I$, $b \in J$). (c) From $a+b=1$ with $a\in I$, $b\in J$ and $a'+c=1$ with $a'\in I$, $c\in K$ we get $1 = (a+b)(a'+c) = aa' + ac + ba' + bc \in I + JK$; iterate.
 
 **Theorem (Chinese remainder theorem).** Let $I_1, \ldots, I_n$ be pairwise coprime ideals of the commutative ring $R$. Then
 
@@ -171,7 +171,7 @@ $$
 R/(I_1 I_2 \cdots I_n) \cong R/I_1 \times R/I_2 \times \cdots \times R/I_n .
 $$
 
-**Proof.** $\varphi$ is a homomorphism with kernel the intersection. For $n=2$, choose $a_1 \in I_1$, $a_2 \in I_2$ with $a_1 + a_2 = 1$; then $a_2 \equiv 1 \pmod{I_1}$, $a_2 \equiv 0 \pmod{I_2}$, and dually for $a_1$, so $x_1 a_2 + x_2 a_1$ maps to $(x_1 + I_1, x_2 + I_2)$. Iterate for $n \geq 3$, using that a product of ideals coprime to a given ideal is coprime to it. The intersection equals the product by the proposition, iterated. $\square$
+**Proof.** $\varphi$ is a homomorphism with kernel the intersection. For $n=2$, choose $a_1 \in I_1$, $a_2 \in I_2$ with $a_1 + a_2 = 1$; then $a_2 \equiv 1 \pmod{I_1}$, $a_2 \equiv 0 \pmod{I_2}$, and dually for $a_1$, so $x_1 a_2 + x_2 a_1$ maps to $(x_1 + I_1, x_2 + I_2)$. Iterate for $n \geq 3$, using that a product of ideals coprime to a given ideal is coprime to it. The intersection equals the product by the proposition, iterated.
 
 **Corollary.** For $n = p_1^{e_1} \cdots p_r^{e_r}$ a factorisation into prime powers, $\mathbb{Z}/n\mathbb{Z} \cong \mathbb{Z}/p_1^{e_1}\mathbb{Z} \times \cdots \times \mathbb{Z}/p_r^{e_r}\mathbb{Z}$.
 
@@ -183,7 +183,7 @@ $$
 
 ### Definitions and Quotient Characterisations
 
-**Definition.** A proper ideal $\mathfrak{p} \subsetneq R$ is **prime** if $ab \in \mathfrak{p}$ implies $a \in \mathfrak{p}$ or $b \in \mathfrak{p}$. A proper ideal $\mathfrak{m} \subsetneq R$ is **maximal** if there is no ideal $I$ with $\mathfrak{m} \subsetneq I \subsetneq R$.
+**Definition.** A proper ideal $\mathrm{P} \subsetneq R$ is **prime** if $ab \in \mathrm{P}$ implies $a \in \mathrm{P}$ or $b \in \mathrm{P}$. A proper ideal $\mathrm{M} \subsetneq R$ is **maximal** if there is no ideal $I$ with $\mathrm{M} \subsetneq I \subsetneq R$.
 
 **Theorem (quotient characterisations).** Let $I$ be a proper ideal of the commutative ring $R$.
 
@@ -193,49 +193,49 @@ $$
 
 **Proof.** (a) $a + I$ is a zero divisor in $R/I$ exactly when there is $b \notin I$ with $ab \in I$ and $a \notin I$; this is the negation of primeness.
 
-(b) The ideals of $R/I$ correspond to the ideals of $R$ containing $I$, preserving inclusion, by the correspondence theorem of *Rings*, §Quotient Rings. $\square$
+(b) The ideals of $R/I$ correspond to the ideals of $R$ containing $I$, preserving inclusion, by the correspondence theorem of *Rings*, §Quotient Rings.
 
 **Corollary.** Let $R$ be a commutative ring with $1 \neq 0$.
 
-**(a)** $\mathfrak{p}$ is prime if and only if $R/\mathfrak{p}$ is an integral domain, in the sense of *Integral Domains*, below this article in this category.
+**(a)** $\mathrm{P}$ is prime if and only if $R/\mathrm{P}$ is an integral domain, in the sense of *Integral Domains*, below this article in this category.
 
-**(b)** $\mathfrak{m}$ is maximal if and only if $R/\mathfrak{m}$ is a field, in the sense of *Fields*, later in this category.
+**(b)** $\mathrm{M}$ is maximal if and only if $R/\mathrm{M}$ is a field, in the sense of *Fields*, later in this category.
 
 The two notions are distinguished by what the quotient is asked to satisfy: the first asks that there be no zero divisors, the second that every nonzero class be a unit.
 
-**Proposition.** Every maximal ideal is prime; and if $\mathfrak{m}$ is maximal then the only ideals containing $\mathfrak{m}$ are $\mathfrak{m}$ and $R$.
+**Proposition.** Every maximal ideal is prime; and if $\mathrm{M}$ is maximal then the only ideals containing $\mathrm{M}$ are $\mathrm{M}$ and $R$.
 
-**Proof.** Let $\mathfrak{m}$ be maximal. By the correspondence theorem of *Rings*, §Quotient Rings the ideals of $R/\mathfrak{m}$ correspond to the ideals of $R$ containing $\mathfrak{m}$, so the only ideals of $R/\mathfrak{m}$ are $(0)$ and $R/\mathfrak{m}$. Hence for $a \notin \mathfrak{m}$ the ideal $(a + \mathfrak{m})$ of $R/\mathfrak{m}$ is nonzero, therefore all of $R/\mathfrak{m}$, and there is $x \in R$ with $xa \equiv 1 \pmod{\mathfrak{m}}$; so every nonzero class of $R/\mathfrak{m}$ is a unit. A unit is not a zero divisor, since $uv = 0$ gives $v = u^{-1}uv = 0$, so $R/\mathfrak{m}$ has no zero divisors and $\mathfrak{m}$ is prime by the theorem above. The second statement is the definition read through the correspondence theorem. $\square$
+**Proof.** Let $\mathrm{M}$ be maximal. By the correspondence theorem of *Rings*, §Quotient Rings the ideals of $R/\mathrm{M}$ correspond to the ideals of $R$ containing $\mathrm{M}$, so the only ideals of $R/\mathrm{M}$ are $(0)$ and $R/\mathrm{M}$. Hence for $a \notin \mathrm{M}$ the ideal $(a + \mathrm{M})$ of $R/\mathrm{M}$ is nonzero, therefore all of $R/\mathrm{M}$, and there is $x \in R$ with $xa \equiv 1 \pmod{\mathrm{M}}$; so every nonzero class of $R/\mathrm{M}$ is a unit. A unit is not a zero divisor, since $uv = 0$ gives $v = u^{-1}uv = 0$, so $R/\mathrm{M}$ has no zero divisors and $\mathrm{M}$ is prime by the theorem above. The second statement is the definition read through the correspondence theorem.
 
 **Theorem (existence of maximal ideals).** Let $I \subsetneq R$ be a proper ideal of the commutative ring $R$. Then $I$ is contained in a maximal ideal.
 
-**Proof.** Let $\Sigma$ be the set of proper ideals containing $I$, ordered by inclusion. It is nonempty, and the union of a chain in $\Sigma$ is a proper ideal containing $I$, since $1$ lies in no member of the chain. By Zorn's lemma, of *Cardinality and the Axiom of Choice*, $\Sigma$ has a maximal element. $\square$
+**Proof.** Let $\Sigma$ be the set of proper ideals containing $I$, ordered by inclusion. It is nonempty, and the union of a chain in $\Sigma$ is a proper ideal containing $I$, since $1$ lies in no member of the chain. By Zorn's lemma, of *Cardinality and the Axiom of Choice*, $\Sigma$ has a maximal element.
 
 This is the first use of a choice principle in the category, and it cannot be removed: over the remaining axioms of set theory, the statement that every nonzero commutative ring has a maximal ideal is equivalent to the theorem on prime ideals in Boolean algebras, a choice principle strictly weaker than the axiom of choice.
 
 ### Primality and Maximality Compared
 
-**Proposition.** Let $\mathfrak{p}$ be a prime ideal of $R$ and $S = R \setminus \mathfrak{p}$.
+**Proposition.** Let $\mathrm{P}$ be a prime ideal of $R$ and $S = R \setminus \mathrm{P}$.
 
 **(a)** $S$ is multiplicatively closed and contains $1$.
 
-**(b)** $\mathfrak{p}$ is maximal among the ideals disjoint from $S$.
+**(b)** $\mathrm{P}$ is maximal among the ideals disjoint from $S$.
 
-**Proof.** (a) If $s, t \notin \mathfrak{p}$ but $st \in \mathfrak{p}$ then primeness puts $s$ or $t$ in $\mathfrak{p}$; so $st \notin \mathfrak{p}$. And $1 \notin \mathfrak{p}$.
+**Proof.** (a) If $s, t \notin \mathrm{P}$ but $st \in \mathrm{P}$ then primeness puts $s$ or $t$ in $\mathrm{P}$; so $st \notin \mathrm{P}$. And $1 \notin \mathrm{P}$.
 
-(b) An ideal disjoint from $S$ is contained in $\mathfrak{p}$ by the definition of $S$, so $\mathfrak{p}$ is the largest such ideal. $\square$
+(b) An ideal disjoint from $S$ is contained in $\mathrm{P}$ by the definition of $S$, so $\mathrm{P}$ is the largest such ideal.
 
-**Remark.** The set $S = R \setminus \mathfrak{p}$ is precisely the set inverted in the localization of $R$ at $\mathfrak{p}$; localization is the subject of *Localization and the Fraction Field*, below this article in this category.
+**Remark.** The set $S = R \setminus \mathrm{P}$ is precisely the set inverted in the localization of $R$ at $\mathrm{P}$; localization is the subject of *Localization and the Fraction Field*, below this article in this category.
 
 ---
 
 ## The Prime Spectrum
 
-**Definition.** The **prime spectrum** of $R$ is the set $\operatorname{Spec} R = \{\mathfrak{p} \subsetneq R : \mathfrak{p} \text{ prime}\}$ partially ordered by inclusion. Its maximal elements are the maximal ideals and its minimal elements are the **minimal primes**.
+**Definition.** The **prime spectrum** of $R$ is the set $\operatorname{Spec} R = \{\mathrm{P} \subsetneq R : \mathrm{P} \text{ prime}\}$ partially ordered by inclusion. Its maximal elements are the maximal ideals and its minimal elements are the **minimal primes**.
 
 **Proposition.** Let $I$ be an ideal of the commutative ring $R$.
 
-**(a)** $\{\mathfrak{p} \in \operatorname{Spec} R : I \subseteq \mathfrak{p}\}$ is order-isomorphic to $\operatorname{Spec}(R/I)$ by $\mathfrak{p} \mapsto \mathfrak{p}/I$.
+**(a)** $\{\mathrm{P} \in \operatorname{Spec} R : I \subseteq \mathrm{P}\}$ is order-isomorphic to $\operatorname{Spec}(R/I)$ by $\mathrm{P} \mapsto \mathrm{P}/I$.
 
 **(b)** $(0)$ is a prime ideal exactly when $R$ is an integral domain, and then it is the least element of $\operatorname{Spec} R$; for every nonzero $R$, $\operatorname{Spec} R$ is nonempty, and it may have a least element that is not $(0)$, as $R = k[x]/(x^2)$ with the single prime $(x)$ shows.
 
@@ -245,15 +245,15 @@ This is the first use of a choice principle in the category, and it cannot be re
 
 (b) $(0)$ is prime exactly when $ab = 0$ forces $a = 0$ or $b = 0$, that is exactly when $R$ has no zero divisors; and if $(0)$ is prime it is contained in every prime, so it is least. A nonzero ring has a maximal ideal by the existence theorem, and that ideal is prime by the proposition above; and in $k[x]/(x^2)$ the nilpotent class $x$ lies in every prime, so $(x)$ is the only prime and is least.
 
-(c) A maximal element of the poset lies in no other proper ideal; the rest is the existence theorem. $\square$
+(c) A maximal element of the poset lies in no other proper ideal; the rest is the existence theorem.
 
-**Definition.** The **Krull dimension** $\dim R$ of $R$ is the supremum of the lengths $n$ of chains $\mathfrak{p}_0 \subsetneq \mathfrak{p}_1 \subsetneq \cdots \subsetneq \mathfrak{p}_n$ in $\operatorname{Spec} R$, equal to $\infty$ when the lengths are unbounded. It is developed in *Integral Extensions and Krull Dimension*, below this article in this category.
+**Definition.** The **Krull dimension** $\dim R$ of $R$ is the supremum of the lengths $n$ of chains $\mathrm{P}_0 \subsetneq \mathrm{P}_1 \subsetneq \cdots \subsetneq \mathrm{P}_n$ in $\operatorname{Spec} R$, equal to $\infty$ when the lengths are unbounded. It is developed in *Integral Extensions and Krull Dimension*, below this article in this category.
 
 **Example.** $\operatorname{Spec} \mathbb{Z} = \{(0)\} \cup \{(p) : p \text{ prime}\}$ with $(0)$ below every $(p)$ and the $(p)$ pairwise incomparable, so $\dim \mathbb{Z} = 1$. For a field $F$, $\operatorname{Spec} F$ is the single point $(0)$, of dimension $0$.
 
-**Proposition.** A ring homomorphism $\varphi : R \to S$ and a prime $\mathfrak{q} \subseteq S$ give a prime $\varphi^{-1}(\mathfrak{q}) \subseteq R$, and the map $\varphi^{*}(\mathfrak{q}) = \varphi^{-1}(\mathfrak{q})$ is order-preserving, so that $\operatorname{Spec}$ is a contravariant functor to posets.
+**Proposition.** A ring homomorphism $\varphi : R \to S$ and a prime $\mathrm{Q} \subseteq S$ give a prime $\varphi^{-1}(\mathrm{Q}) \subseteq R$, and the map $\varphi^{*}(\mathrm{Q}) = \varphi^{-1}(\mathrm{Q})$ is order-preserving, so that $\operatorname{Spec}$ is a contravariant functor to posets.
 
-**Proof.** The preimage of an ideal is an ideal, and if $ab \in \varphi^{-1}(\mathfrak{q})$ then $\varphi(a)\varphi(b) \in \mathfrak{q}$, so $a$ or $b$ lies in $\varphi^{-1}(\mathfrak{q})$. Inclusion is preserved under preimage. $\square$
+**Proof.** The preimage of an ideal is an ideal, and if $ab \in \varphi^{-1}(\mathrm{Q})$ then $\varphi(a)\varphi(b) \in \mathrm{Q}$, so $a$ or $b$ lies in $\varphi^{-1}(\mathrm{Q})$. Inclusion is preserved under preimage.
 
 The **Zariski topology** on $\operatorname{Spec} R$, its structure sheaf and the schemes they define belong to Part II and to *Schemes*; here only the order structure is used.
 
@@ -271,7 +271,7 @@ Each statement below fails in a general ring; the non-commutative chain of this 
 
 **D. Prime ideals.** The elementwise condition defines a **completely prime** ideal, which is not the right notion in general; the two-sided definition replaces elements by ideals, and the theory is built in *Semiprime Rings* and *Prime Rings*, later in this category.
 
-**E. The prime spectrum.** The spectrum $\operatorname{Spec} R$ is a poset because primes are the kernels of the homomorphisms from $R$ to integral domains, and it is the elementwise condition that makes the quotient $R/\mathfrak{p}$ a domain; in the non-commutative chain below the set of prime ideals is still written $\operatorname{Spec} A$ in *Prime Rings*, but a prime quotient there is a prime ring and has zero divisors in general, and no geometric structure on the set is used.
+**E. The prime spectrum.** The spectrum $\operatorname{Spec} R$ is a poset because primes are the kernels of the homomorphisms from $R$ to integral domains, and it is the elementwise condition that makes the quotient $R/\mathrm{P}$ a domain; in the non-commutative chain below the set of prime ideals is still written $\operatorname{Spec} A$ in *Prime Rings*, but a prime quotient there is a prime ring and has zero divisors in general, and no geometric structure on the set is used.
 
 **F. Fractions and localization.** The fraction field inverts the nonzero elements of a domain and uses the symmetry of $rs' = r's$; the non-commutative analogue needs the Ore condition and is treated in *Ore Domains and Division Rings of Fractions*, later in this category.
 
@@ -281,7 +281,7 @@ Each statement below fails in a general ring; the non-commutative chain of this 
 
 Commutativity makes the order of factors irrelevant, powers unambiguous, and the binomial and multinomial expansions valid. For ideals it makes the product generated by the products of generators, distributive over sums and independent of the order of the factors. The radical $\sqrt{I}$ is the set of elements some power of which lies in $I$; it is an ideal, idempotent as an operation, multiplicative on intersections and products, and the preimage of the nilradical of $R/I$; by Krull's theorem it is the intersection of the prime ideals containing $I$, so that the nilradical is the intersection of all the prime ideals. Coprime ideals satisfy $IJ = I \cap J$, and the Chinese remainder theorem decomposes $R/(I_1 \cdots I_n)$ as the product of the quotients, which gives the prime power decomposition of $\mathbb{Z}/n\mathbb{Z}$.
 
-An ideal is prime when $ab \in \mathfrak{p}$ forces a factor into it, equivalently when $R/\mathfrak{p}$ has no zero divisors, and maximal when maximal under inclusion, equivalently when $R/\mathfrak{m}$ has no proper nonzero ideal. Every maximal ideal is prime, every proper ideal lies in a maximal one by Zorn's lemma, and the primes form the poset $\operatorname{Spec} R$, order-isomorphic to the primes containing $I$ when one passes to $R/I$. Each statement has a recorded failure without commutativity.
+An ideal is prime when $ab \in \mathrm{P}$ forces a factor into it, equivalently when $R/\mathrm{P}$ has no zero divisors, and maximal when maximal under inclusion, equivalently when $R/\mathrm{M}$ has no proper nonzero ideal. Every maximal ideal is prime, every proper ideal lies in a maximal one by Zorn's lemma, and the primes form the poset $\operatorname{Spec} R$, order-isomorphic to the primes containing $I$ when one passes to $R/I$. Each statement has a recorded failure without commutativity.
 
 ## Summary of Notation
 
@@ -297,12 +297,12 @@ An ideal is prime when $ab \in \mathfrak{p}$ forces a factor into it, equivalent
 | $\sqrt{I}$ | Radical of $I$, $\{r : r^n \in I \text{ for some } n \geq 1\}$ |
 | $\operatorname{nil}(R)$ | Nilradical $\sqrt{(0)}$; *Reduced Rings and the Nilradical* |
 | $I + J = R$ | Coprime (comaximal) ideals |
-| $\mathfrak{p}$ | Prime ideal |
-| $\mathfrak{m}$ | Maximal ideal |
+| $\mathrm{P}$ | Prime ideal |
+| $\mathrm{M}$ | Maximal ideal |
 | $\operatorname{Spec} R$ | Prime spectrum, the poset of primes under inclusion |
 | $\dim R$ | Krull dimension; *Integral Extensions and Krull Dimension* |
 | $\operatorname{char} R$ | Characteristic of $R$ |
-| $\varphi^{*}(\mathfrak{q})$ | Contraction $\varphi^{-1}(\mathfrak{q})$ of a prime along a ring homomorphism |
+| $\varphi^{*}(\mathrm{Q})$ | Contraction $\varphi^{-1}(\mathrm{Q})$ of a prime along a ring homomorphism |
 
 ## Further Reading
 

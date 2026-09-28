@@ -17,7 +17,7 @@ The article develops the combinatorial and algebraic theory in order: the diagra
 
 **Theorem (Reidemeister).** Two diagrams represent equivalent knots if and only if they are related by a finite sequence of ambient isotopies of the plane and the three **Reidemeister moves**: the twist move $R_1$, the poke move $R_2$ and the slide move $R_3$. Consequently every knot invariant that is computable from a diagram and unchanged by the three moves is an invariant of the knot.
 
-**Proof sketch.** The two diagrams are the projections of two polygonal representatives; putting the two representatives in general position in $S^3$, the images of the crossings sweep out a finite set of elementary events — a crossing moving past another crossing, or a crossing appearing and disappearing, or a strand passing over a vertex — and each event corresponds to one of the three moves or to an isotopy of the plane. $\square$
+**Proof sketch.** The two diagrams are the projections of two polygonal representatives; putting the two representatives in general position in $S^3$, the images of the crossings sweep out a finite set of elementary events — a crossing moving past another crossing, or a crossing appearing and disappearing, or a strand passing over a vertex — and each event corresponds to one of the three moves or to an isotopy of the plane.
 
 **Definition.** The **crossing number** $c(K)$ is the minimal number of crossings in a diagram of $K$; the **unknotting number** $u(K)$ is the minimal number of crossing changes needed to turn a diagram of $K$ into one of the unknot; the **bridge number** and the **braid index** are defined analogously from the diagrams and from the braid representatives.
 
@@ -31,7 +31,7 @@ The article develops the combinatorial and algebraic theory in order: the diagra
 
 **Theorem (Gordon–Luecke).** Knots are determined by their complements: if $S^3\setminus K_1$ and $S^3\setminus K_2$ are homeomorphic, then $K_1$ and $K_2$ are equivalent. Consequently the knot group, and every invariant of the complement, is a complete invariant of the knot up to equivalence.
 
-**Proof sketch.** The proof uses the theory of the characteristic submanifold of the complement, together with the fact that the boundary torus is the unique incompressible torus up to isotopy in the generic case; the detailed argument is that of the low-dimensional topology of *Low-Dimensional Topology*. $\square$
+**Proof sketch.** The proof uses the theory of the characteristic submanifold of the complement, together with the fact that the boundary torus is the unique incompressible torus up to isotopy in the generic case; the detailed argument is that of the low-dimensional topology of *Low-Dimensional Topology*.
 
 **Definition.** A **Seifert surface** for a knot $K$ is a compact oriented surface $F\subseteq S^3$ with $\partial F = K$; such a surface exists by the Seifert algorithm applied to any diagram, which produces one of genus equal to the genus of the diagram. The **genus** $g(K)$ is the minimal genus of a Seifert surface, and the **Seifert matrix** $V$ of a Seifert surface is the matrix of the linking form $V_{ij} = \mathrm{lk}(a_i, a_j^+)$ of a basis of $H_1(F;\mathbb{Z})$ with the positive push-off $a_j^+$ in a normal direction.
 
@@ -43,7 +43,7 @@ $$
 
 up to multiplication by a unit $\pm t^{k}$, where $\Delta_K$ is the **Alexander polynomial**; it satisfies $\Delta_K(t)\doteq\Delta_K(t^{-1})$ and $\Delta_K(1) = \pm1$, and the determinant of the knot is $|\Delta_K(-1)|$. The **signature** $\sigma(K)$ is the signature of the symmetric matrix $V + V^{\mathsf{T}}$, an even integer, and it is a concordance invariant.
 
-**Proof sketch.** The Alexander polynomial is computed from a presentation of the Alexander module $H_1$ of the infinite cyclic cover of the complement, obtained from a Seifert surface by the Fox calculus; the Seifert matrix computes the linking form on the surface, and the determinant formula for the Alexander polynomial is the resulting statement. The symmetry and the value at $1$ are formal properties of the determinant. $\square$
+**Proof sketch.** The Alexander polynomial is computed from a presentation of the Alexander module $H_1$ of the infinite cyclic cover of the complement, obtained from a Seifert surface by the Fox calculus; the Seifert matrix computes the linking form on the surface, and the determinant formula for the Alexander polynomial is the resulting statement. The symmetry and the value at $1$ are formal properties of the determinant.
 
 **Example.** The torus knot $T(p,q)$ with $p,q$ coprime has Alexander polynomial
 
@@ -55,7 +55,7 @@ so that $\Delta_{3_1}(t) = t^2-t+1$, $\Delta_{5_1}(t) = t^4-t^3+t^2-t+1$, and $|
 
 **Theorem (fibered knots).** A knot $K$ is **fibered** if its complement fibres over the circle with the Seifert surface as fibre; equivalently $S^3\setminus K$ is a surface bundle over $S^1$ with fibre a once-punctured surface. Then the monodromy of the bundle is a diffeomorphism of the fibre, well defined up to isotopy and conjugation, and the Alexander polynomial is the characteristic polynomial of the induced map on the homology of the fibre; the pseudo-Anosov monodromies give the hyperbolic fibered knots, whose geometry is that of the mapping torus of *Mapping Class Groups*.
 
-**Proof sketch.** The fibration is obtained from a Seifert surface that is incompressible and whose complement in $S^3\setminus K$ is an open interval bundle; the monodromy is the return map of the flow transverse to the surface, and its homology action computes the Alexander polynomial. The classification of the monodromies is that of the mapping class group of the fibre, treated in the final article of this half. $\square$
+**Proof sketch.** The fibration is obtained from a Seifert surface that is incompressible and whose complement in $S^3\setminus K$ is an open interval bundle; the monodromy is the return map of the flow transverse to the surface, and its homology action computes the Alexander polynomial. The classification of the monodromies is that of the mapping class group of the fibre, treated in the final article of this half.
 
 ## The Jones, HOMFLY and Kauffman Invariants
 
@@ -81,7 +81,7 @@ $$
 
 with $w(D)$ the writhe of the diagram, is invariant under all three moves, and it is the Jones polynomial.
 
-**Proof sketch.** The state sum is computed by an induction on the crossings, and the invariance under $R_2$ and $R_3$ is a direct check of the state sums; the failure of the invariance under $R_1$ is exactly measured by the writhe, so that the normalised quantity is invariant. The identification with the skein-theoretic Jones polynomial is the skein relation satisfied by the bracket. $\square$
+**Proof sketch.** The state sum is computed by an induction on the crossings, and the invariance under $R_2$ and $R_3$ is a direct check of the state sums; the failure of the invariance under $R_1$ is exactly measured by the writhe, so that the normalised quantity is invariant. The identification with the skein-theoretic Jones polynomial is the skein relation satisfied by the bracket.
 
 **Example.** The Jones polynomial of the trefoil and of the figure-eight knot are
 
@@ -99,7 +99,7 @@ for the right-handed orientation of the trefoil; the mirror image of the trefoil
 
 **(c)** the crossing number of $D$ is the span of the Kauffman bracket and, after the change of variable, the span of the Jones polynomial, where the span is the difference between the maximal and the minimal degree.
 
-**Proof sketch.** All three statements are proved by the analysis of the Kauffman bracket state sum at the two extreme states: the maximum and minimum degrees of the bracket are attained by the two constant states, and the difference of the degrees is the number of crossings for a reduced alternating diagram. The first statement then follows from the invariance of the bracket up to the writhe, together with the fact that no diagram of a link can have fewer crossings than the span of its bracket. $\square$
+**Proof sketch.** All three statements are proved by the analysis of the Kauffman bracket state sum at the two extreme states: the maximum and minimum degrees of the bracket are attained by the two constant states, and the difference of the degrees is the number of crossings for a reduced alternating diagram. The first statement then follows from the invariance of the bracket up to the writhe, together with the fact that no diagram of a link can have fewer crossings than the span of its bracket.
 
 **Example.** The span of the Jones polynomial of the trefoil is $-1-(-4) = 3$, equal to its crossing number; the span for the figure-eight is $2-(-2)=4$, equal to its crossing number; and the cinquefoil $5_1=T(2,5)$ has Jones polynomial
 
@@ -109,7 +109,7 @@ $$
 
 whose span is $-2-(-7) = 5$, equal to its crossing number. In each case the Tait conjecture computes the crossing number from the Jones polynomial, and the identities $V_{5_1}(1)=1$ and $V_{5_1}''(1) = -6a_2 = -18$ hold, with $a_2=3$ the coefficient of $z^2$ in the Conway polynomial $\nabla_{5_1}(z) = z^4+3z^2+1$.
 
-**Remark (the structural explanation).** The Jones polynomial is not merely a skein-theoretic curiosity: it is the invariant of the quantum group $U_q(\mathfrak{sl}_2)$ at a root of unity, obtained from the representation theory of the quantum deformation by the Reshetikhin–Turaev construction, and the HOMFLY polynomial arises from $U_q(\mathfrak{gl}_n)$ in the same way. The Temperley–Lieb algebra, the Hecke algebra and their representations are the algebraic home of the bracket and the skein relations, and the braid group representations thereby obtained are the source of the quantum invariants; the braid groups and their representations are treated in *Mapping Class Groups*, and the Lie-theoretic background in Part I.
+**Remark (the structural explanation).** The Jones polynomial is not merely a skein-theoretic curiosity: it is the invariant of the quantum group $U_q(\mathrm{SL}_2)$ at a root of unity, obtained from the representation theory of the quantum deformation by the Reshetikhin–Turaev construction, and the HOMFLY polynomial arises from $U_q(\mathrm{GL}_n)$ in the same way. The Temperley–Lieb algebra, the Hecke algebra and their representations are the algebraic home of the bracket and the skein relations, and the braid group representations thereby obtained are the source of the quantum invariants; the braid groups and their representations are treated in *Mapping Class Groups*, and the Lie-theoretic background in Part I.
 
 ## Categorification and the Detection Theorems
 
@@ -121,7 +121,7 @@ $$
 
 Knot Floer homology detects the Seifert genus, the fibredness and the unknot: $g(K)$ is the maximal $j$ with $\widehat{HFK}(K,j)\neq0$, the knot is fibered if and only if the top grading has rank one, and $K$ is the unknot if and only if $\widehat{HFK}(K)$ has rank one. The construction is the Lagrangian Floer theory of the symmetric product of a Heegaard surface, in the sense of *Floer Homology*.
 
-**Proof sketch.** The knot Floer complex is constructed from a Heegaard diagram adapted to the knot, with the knot traced on the Heegaard surface as an extra curve; the Euler characteristic computation is the theorem of Ozsváth–Szabó identifying the Euler characteristic of the complex with the Alexander polynomial, and the detection statements are proved by the adjunction inequalities of the theory and the surgery exact triangle. $\square$
+**Proof sketch.** The knot Floer complex is constructed from a Heegaard diagram adapted to the knot, with the knot traced on the Heegaard surface as an extra curve; the Euler characteristic computation is the theorem of Ozsváth–Szabó identifying the Euler characteristic of the complex with the Alexander polynomial, and the detection statements are proved by the adjunction inequalities of the theory and the surgery exact triangle.
 
 **Theorem (Khovanov; Lee; Rasmussen).** To a link diagram one attaches a bigraded chain complex whose homology $\mathrm{Kh}(L)$ — the **Khovanov homology** — is an invariant of the link, categorifies the Jones polynomial, in the sense that its graded Euler characteristic is
 
@@ -137,7 +137,7 @@ $$
 
 for the **smooth slice genus** $g_4(K)$, the minimal genus of a smoothly embedded oriented surface in the four-ball with boundary $K$. Consequently $s$ and the knot Floer invariant $\tau$ of *Floer Homology* give lower bounds for the slice genus, and $s$ is a homomorphism from the concordance group to $\mathbb{Z}$.
 
-**Proof sketch.** The Khovanov complex is built from the Kauffman bracket by replacing each state sum with a chain group and each smoothing with a map; the invariance under the Reidemeister moves is a chain-homotopy computation, and the graded Euler characteristic is the bracket by construction. The Lee deformation introduces a filtered differential whose homology is computed explicitly, and the Rasmussen invariant is its evaluation on the generator; the slice-genus inequality follows from the functoriality applied to a slice surface for $K$, whose induced map must respect the filtration. $\square$
+**Proof sketch.** The Khovanov complex is built from the Kauffman bracket by replacing each state sum with a chain group and each smoothing with a map; the invariance under the Reidemeister moves is a chain-homotopy computation, and the graded Euler characteristic is the bracket by construction. The Lee deformation introduces a filtered differential whose homology is computed explicitly, and the Rasmussen invariant is its evaluation on the generator; the slice-genus inequality follows from the functoriality applied to a slice surface for $K$, whose induced map must respect the filtration.
 
 **Theorem (Milnor conjecture; Kronheimer–Mrowka; Rasmussen).** For the torus knot $T(p,q)$ the Seifert genus equals the smooth slice genus,
 
@@ -147,7 +147,7 @@ $$
 
 and the unknotting number is $u(T(p,q)) = \frac{(p-1)(q-1)}{2}$. The equality of the Seifert genus and the smooth slice genus, and the unknotting number formula, were proved by Kronheimer and Mrowka by gauge theory, using the analysis of the moduli spaces of the Seiberg–Witten equations of Part III; Rasmussen gave a second proof of the slice-genus statement by the $s$-invariant of Khovanov homology.
 
-**Proof sketch.** The lower bound for the slice genus is supplied by the Rasmussen invariant, which evaluates to $s(T(p,q)) = (p-1)(q-1)$ for the standard orientation, so that $g_4\geq(p-1)(q-1)/2$; the Seifert surface of the torus knot realises the genus, so the bound is sharp, and the same argument applied to the unknotting inequality gives the unknotting number. The gauge-theoretic proof of Kronheimer–Mrowka uses the property that the Seiberg–Witten invariant of the knot complement detects the minimal genus of a surface representing a given class. $\square$
+**Proof sketch.** The lower bound for the slice genus is supplied by the Rasmussen invariant, which evaluates to $s(T(p,q)) = (p-1)(q-1)$ for the standard orientation, so that $g_4\geq(p-1)(q-1)/2$; the Seifert surface of the torus knot realises the genus, so the bound is sharp, and the same argument applied to the unknotting inequality gives the unknotting number. The gauge-theoretic proof of Kronheimer–Mrowka uses the property that the Seiberg–Witten invariant of the knot complement detects the minimal genus of a surface representing a given class.
 
 **Remark.** The two categorifications are not independent: the Khovanov homology categorifies the Jones polynomial and the knot Floer homology categorifies the Alexander polynomial, and there is a spectral sequence from the Khovanov homology to the knot Floer homology, constructed by Ozsváth–Szabó and by Rasmussen; the spectral sequence is the structural bridge between the quantum and the Floer-theoretic invariants. The detection theorems at the two ends are the sharpest known applications of the categorified invariants: the unknot detection and the genus detection at the Floer end, the slice-genus bound and the smooth four-ball genus at the Khovanov end.
 
@@ -161,7 +161,7 @@ and the unknotting number is $u(T(p,q)) = \frac{(p-1)(q-1)}{2}$. The equality of
 
 **(c)** a **hyperbolic knot** if and only if $M_K$ is hyperbolic of finite volume, and then the hyperbolic structure is unique by Mostow rigidity.
 
-**Proof sketch.** The decomposition is the Jaco–Shalen–Johannson theorem applied to the knot complement, whose torus boundary is the peripheral torus; the Seifert fibred case is classified by the Seifert invariants, and the hyperbolic case is the subject of *Low-Dimensional Topology* and *Hyperbolic Geometry*. $\square$
+**Proof sketch.** The decomposition is the Jaco–Shalen–Johannson theorem applied to the knot complement, whose torus boundary is the peripheral torus; the Seifert fibred case is classified by the Seifert invariants, and the hyperbolic case is the subject of *Low-Dimensional Topology* and *Hyperbolic Geometry*.
 
 **Example.** The figure-eight knot $4_1$ is the simplest hyperbolic knot: its complement is the union of two regular ideal tetrahedra and has volume $2.0298832\ldots$, and it is the orientable cusped hyperbolic three-manifold with one cusp of minimal volume. The trefoil and the cinquefoil are torus knots and their complements are Seifert fibred; a satellite or composite knot is exactly a knot whose complement contains an essential torus that is not boundary-parallel; so by the torus decomposition the complement of a knot is Seifert fibred, or hyperbolic, or contains an essential torus, according as the knot is a torus knot, a hyperbolic knot, or a satellite or composite knot. The list of hyperbolic knots begins with $4_1$, $5_2$, $6_1$, $6_2$, $6_3$, and the tabulation of the hyperbolic volume against the crossing number is one of the standard computations of the low-dimensional theory.
 
@@ -173,11 +173,11 @@ and the unknotting number is $u(T(p,q)) = \frac{(p-1)(q-1)}{2}$. The equality of
 
 **Theorem (concordance invariants).** The map $K\mapsto\sigma(K)$ is a homomorphism $\mathcal{C}\to\mathbb{Z}$; the Alexander polynomial satisfies $\Delta_{K_1\#K_2} = \Delta_{K_1}\Delta_{K_2}$; the Fox–Milnor condition $\Delta_K(t)\doteq f(t)f(t^{-1})$ is necessary for $K$ to be slice; and the invariants $\tau$ of knot Floer homology and $s$ of Khovanov homology are concordance homomorphisms giving the bounds $|\tau(K)|\leq g_4(K)$ and $|s(K)|\leq 2g_4(K)$.
 
-**Proof sketch.** The additivity of the signature and of the Alexander polynomial under connected sum is a Seifert-matrix computation; the Fox–Milnor condition follows from the fact that a slice disc has a complement with the homology of a circle, so that the infinite cyclic cover of the slice-disc complement gives a factorisation of the Alexander polynomial; the bounds from $\tau$ and $s$ are the slice-genus inequalities of the categorified invariants, applied to a slice surface. $\square$
+**Proof sketch.** The additivity of the signature and of the Alexander polynomial under connected sum is a Seifert-matrix computation; the Fox–Milnor condition follows from the fact that a slice disc has a complement with the homology of a circle, so that the infinite cyclic cover of the slice-disc complement gives a factorisation of the Alexander polynomial; the bounds from $\tau$ and $s$ are the slice-genus inequalities of the categorified invariants, applied to a slice surface.
 
 **Theorem (the slice-ribbon conjecture; open).** Every slice knot bounds a ribbon disc, that is, a smoothly embedded disc whose singularities are of the simplest possible type — a self-transverse immersed disc with only ribbon singularities. The conjecture is open in general; it has been verified for large families, in particular for all the knots of up to a substantial number of crossings and for the two-bridge and the alternating families with the appropriate hypotheses.
 
-**Proof sketch.** The known cases are obtained by the classification of the slice discs in the relevant families and by the computation of the concordance invariants; the general statement remains one of the central open problems of the concordance theory, and its failure would produce a slice knot with no ribbon representative. $\square$
+**Proof sketch.** The known cases are obtained by the classification of the slice discs in the relevant families and by the computation of the concordance invariants; the general statement remains one of the central open problems of the concordance theory, and its failure would produce a slice knot with no ribbon representative.
 
 ## Summary
 

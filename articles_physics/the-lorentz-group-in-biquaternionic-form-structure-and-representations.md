@@ -8,7 +8,7 @@ Three questions organize the discussion.
 
 **Composition.** A pure rotation and a pure boost are both unit-norm biquaternions, but only the rotations close under multiplication. The product of two boosts is, in general, a boost together with a rotation. The angle of that rotation is the **Thomas–Wigner rotation**, and it is the group-theoretic root of the non-commutativity of the boosts. This is the content of the composition law.
 
-**Infinitesimal structure.** The Lie algebra of the group of unit-norm biquaternions is the real Lie algebra $\mathfrak{sl}(2,\mathbb{C})$ of traceless $2\times2$ complex matrices. Its complexification splits into two commuting copies of $\mathfrak{su}(2)$. The rotation generators and the boost generators sit in the real algebra in a definite way, and the failure of the boosts to close is visible in the bracket of two boost generators.
+**Infinitesimal structure.** The Lie algebra of the group of unit-norm biquaternions is the real Lie algebra $\mathrm{SL}(2,\mathbb{C})$ of traceless $2\times2$ complex matrices. Its complexification splits into two commuting copies of $\mathrm{SU}(2)$. The rotation generators and the boost generators sit in the real algebra in a definite way, and the failure of the boosts to close is visible in the bracket of two boost generators.
 
 **Representations.** The finite-dimensional irreducible representations are labelled by a pair $(m,n)$ of half-integers, of dimension $(2m+1)(2n+1)$. The biquaternion algebra itself carries the four-dimensional vector representation $(\tfrac12,\tfrac12)$; the two Weyl spinors are $(\tfrac12,0)$ and $(0,\tfrac12)$. The two-to-one cover of the Lorentz group by $SL(2,\mathbb{C})$ determines which of these representations descend to the Lorentz group and which are genuine spin representations.
 
@@ -21,7 +21,7 @@ and $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace, the fixed-point s
 
 ## Rotors, Boosts, and Rotations
 
-A **Lorentz rotor** is a biquaternion of unit norm form,
+A **Lorentz rotor** is a biquaternion of unit norm,
 $$
 \tilde{\Lambda}\in\mathbb{B},\qquad \tilde{\Lambda}\bar{\tilde{\Lambda}}=e_0,
 $$
@@ -34,7 +34,7 @@ $$
 SL(2,\mathbb{C})=\{\tilde{\Lambda}\in\mathbb{B}:\tilde{\Lambda}\bar{\tilde{\Lambda}}=e_0\}
 \;\cong\;\{g\in M_2(\mathbb{C}):\det g=1\},
 $$
-because the norm form is the determinant, $N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}=\det\Phi(\tilde{Q})$ (see the companion article on the biquaternion algebra and its matrix representation).
+because the biquaternion norm is the determinant, $N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}=\det\Phi(\tilde{Q})$ (see the companion article on the biquaternion algebra and its matrix representation).
 
 Two families of rotors have a direct geometric meaning.
 
@@ -63,7 +63,7 @@ are the boosts and the rotations. The parametrisation of a single transformation
 
 This section collects the group-theoretic facts that do not depend on the detailed parametrisation.
 
-**Group law.** The product of two unit-norm biquaternions is again of unit norm, because the norm form is multiplicative:
+**Group law.** The product of two unit-norm biquaternions is again of unit norm, because the biquaternion norm is multiplicative:
 $$
 N(\tilde{\Lambda}_1\tilde{\Lambda}_2)=N(\tilde{\Lambda}_1)N(\tilde{\Lambda}_2)=e_0 .
 $$
@@ -71,7 +71,7 @@ The identity is $e_0$, and the inverse is the quaternion conjugate,
 $$
 \tilde{\Lambda}^{-1}=\bar{\tilde{\Lambda}},
 $$
-since $\tilde{\Lambda}\bar{\tilde{\Lambda}}=\bar{\tilde{\Lambda}}\tilde{\Lambda}=N(\tilde{\Lambda})=e_0$; the norm form of a biquaternion is central, so the two-sided inverse is the quaternion conjugate. For a boost this gives $\tilde{\Lambda}(\hat{\mathbf u},\psi)^{-1}=\tilde{\Lambda}(\hat{\mathbf u},-\psi)=\bar{\tilde{\Lambda}}$, and for a rotation $\tilde{R}(\hat{\mathbf n},\theta)^{-1}=\tilde{R}(\hat{\mathbf n},-\theta)$.
+since $\tilde{\Lambda}\bar{\tilde{\Lambda}}=\bar{\tilde{\Lambda}}\tilde{\Lambda}=N(\tilde{\Lambda})=e_0$; the biquaternion norm of a biquaternion is central, so the two-sided inverse is the quaternion conjugate. For a boost this gives $\tilde{\Lambda}(\hat{\mathbf u},\psi)^{-1}=\tilde{\Lambda}(\hat{\mathbf u},-\psi)=\bar{\tilde{\Lambda}}$, and for a rotation $\tilde{R}(\hat{\mathbf n},\theta)^{-1}=\tilde{R}(\hat{\mathbf n},-\theta)$.
 
 **Dimension and topology.** As a real Lie group, $SL(2,\mathbb{C})$ has real dimension $6$ (complex dimension $3$); its maximal compact subgroup is $SU(2)$, the rotation group. It is connected and simply connected. These facts belong to the companion articles on the exponential and on biquaternion topology; the relevant consequence is used below.
 
@@ -80,7 +80,7 @@ $$
 \mathrm{Ad}:\ SL(2,\mathbb{C})\longrightarrow SO^+(1,3),\qquad
 \mathrm{Ad}(\tilde{\Lambda}):\ \tilde{Q}\longmapsto \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^\dagger ,
 $$
-into the restricted (proper orthochronous) Lorentz group. It is well defined because the conjugate of an anti-Hermitian element is anti-Hermitian, it preserves the norm form, and it is a group homomorphism:
+into the restricted (proper orthochronous) Lorentz group. It is well defined because the conjugate of an anti-Hermitian element is anti-Hermitian, it preserves the biquaternion norm, and it is a group homomorphism:
 $$
 \mathrm{Ad}(\tilde{\Lambda}_2\tilde{\Lambda}_1)=\mathrm{Ad}(\tilde{\Lambda}_2)\circ\mathrm{Ad}(\tilde{\Lambda}_1),
 $$
@@ -168,12 +168,12 @@ The composition law of a boost $\tilde B$ and a rotation $\tilde R$ is immediate
 
 The Lie algebra of $SL(2,\mathbb{C})$, viewed as a **real** Lie algebra, is the space of traceless $2\times2$ complex matrices,
 $$
-\mathfrak{g}=\mathfrak{sl}(2,\mathbb{C})_{\mathbb{R}}
+\mathrm{G}=\mathrm{SL}(2,\mathbb{C})_{\mathbb{R}}
 =\{M\in M_2(\mathbb{C}):\operatorname{tr}M=0\},
 $$
 of real dimension $6$. In the biquaternion basis it is
 $$
-\mathfrak{g}=\operatorname{span}_{\mathbb{R}}\{e_1,e_2,e_3\}\ \oplus\ \operatorname{span}_{\mathbb{R}}\{ie_1,ie_2,ie_3\},
+\mathrm{G}=\operatorname{span}_{\mathbb{R}}\{e_1,e_2,e_3\}\ \oplus\ \operatorname{span}_{\mathbb{R}}\{ie_1,ie_2,ie_3\},
 $$
 the first summand being the **rotation generators** (anti-Hermitian, in $\mathbb{H}_{\mathbb{B}}$) and the second the **boost generators** (Hermitian, in $\mathbb{M}_+$). Write
 $$
@@ -185,9 +185,9 @@ $$
 [J_j,K_k]=2\varepsilon_{jkl}K_l,\qquad
 [K_j,K_k]=-2\varepsilon_{jkl}J_l .
 $$
-The first two say that the rotations form a subalgebra $\mathfrak{su}(2)\cong\mathfrak{so}(3)$ (the compact part) and that the boosts transform as a vector under it. The third is the infinitesimal statement that **the boosts do not close**: the bracket of two boost generators is a rotation generator. This is the Lie-algebraic origin of the Thomas–Wigner rotation and of the non-closure of the preceding section.
+The first two say that the rotations form a subalgebra $\mathrm{SU}(2)\cong\mathrm{SO}(3)$ (the compact part) and that the boosts transform as a vector under it. The third is the infinitesimal statement that **the boosts do not close**: the bracket of two boost generators is a rotation generator. This is the Lie-algebraic origin of the Thomas–Wigner rotation and of the non-closure of the preceding section.
 
-**Relation to $\mathfrak{so}(1,3)$ and to $\mathfrak{sl}(2,\mathbb{C})$.** The real Lie algebra $\mathfrak{g}$ is isomorphic to the Lie algebra $\mathfrak{so}(1,3)$ of the Lorentz group, the isomorphism being the infinitesimal form of $\mathrm{Ad}$. It is also, by definition, the real Lie algebra underlying the complex Lie algebra $\mathfrak{sl}(2,\mathbb{C})$. The exponential map $\exp:\mathfrak{g}\to SL(2,\mathbb{C})$ is neither injective nor surjective. It is not injective: an element $M$ maps to $e_0$ exactly when it is diagonalisable with eigenvalues in $2\pi i\mathbb{Z}$, so the preimage of $e_0$ is nonzero — indeed a union of conjugacy classes, not a discrete set. It is not surjective either: for example, a matrix with a nontrivial Jordan block and eigenvalue $-1$ is not the exponential of any traceless matrix. What is true is that every unit-norm biquaternion is a **product** of exponentials, because the group is connected and $\exp$ is a local diffeomorphism at the identity. The Cartan decomposition makes this explicit: a boost is the exponential of a boost generator and a rotation is the exponential of a rotation generator, so every rotor is
+**Relation to $\mathrm{SO}(1,3)$ and to $\mathrm{SL}(2,\mathbb{C})$.** The real Lie algebra $\mathrm{G}$ is isomorphic to the Lie algebra $\mathrm{SO}(1,3)$ of the Lorentz group, the isomorphism being the infinitesimal form of $\mathrm{Ad}$. It is also, by definition, the real Lie algebra underlying the complex Lie algebra $\mathrm{SL}(2,\mathbb{C})$. The exponential map $\exp:\mathrm{G}\to SL(2,\mathbb{C})$ is neither injective nor surjective. It is not injective: an element $M$ maps to $e_0$ exactly when it is diagonalisable with eigenvalues in $2\pi i\mathbb{Z}$, so the preimage of $e_0$ is nonzero — indeed a union of conjugacy classes, not a discrete set. It is not surjective either: for example, a matrix with a nontrivial Jordan block and eigenvalue $-1$ is not the exponential of any traceless matrix. What is true is that every unit-norm biquaternion is a **product** of exponentials, because the group is connected and $\exp$ is a local diffeomorphism at the identity. The Cartan decomposition makes this explicit: a boost is the exponential of a boost generator and a rotation is the exponential of a rotation generator, so every rotor is
 $$
 \tilde{\Lambda}=\exp(M)\exp(N),\qquad
 M\in\operatorname{span}_{\mathbb{R}}\{K_1,K_2,K_3\},\quad
@@ -203,9 +203,9 @@ B(J_j,K_k)=0,
 $$
 (computed from $B(M,N)=\operatorname{tr}(\operatorname{ad}M\,\operatorname{ad}N)$ in this algebra). Its signature is therefore $(3,3)$: negative definite on the compact rotation subalgebra and positive definite on the complementary boost directions. The indefiniteness is the Lie-algebraic expression of the non-compactness of $SL(2,\mathbb{C})$ and of the Lorentz group.
 
-## The Two $\mathfrak{su}(2)$ Halves
+## The Two $\mathrm{SU}(2)$ Halves
 
-The complexification of the real Lie algebra $\mathfrak{g}$ splits. Let $\mathsf{i}$ denote the **complexification unit**, which is a formal scalar and is not the scalar imaginary $i\in\mathbb{B}$. Define
+The complexification of the real Lie algebra $\mathrm{G}$ splits. Let $\mathsf{i}$ denote the **complexification unit**, which is a formal scalar and is not the scalar imaginary $i\in\mathbb{B}$. Define
 $$
 N_k^{\pm}=\frac{1}{2}\bigl(J_k\pm \mathsf{i}\,K_k\bigr)
 =\frac{1}{2}\bigl(e_k\pm \mathsf{i}\,(i e_k)\bigr),\qquad k=1,2,3 .
@@ -216,11 +216,11 @@ $$
 [N_j^-,N_k^-]=2\varepsilon_{jkl}N_l^-,\qquad
 [N_j^+,N_k^-]=0 .
 $$
-Thus the complexified algebra is a direct sum of two commuting three-dimensional complex Lie algebras, each isomorphic to the complexification of $\mathfrak{su}(2)$:
+Thus the complexified algebra is a direct sum of two commuting three-dimensional complex Lie algebras, each isomorphic to the complexification of $\mathrm{SU}(2)$:
 $$
-\mathfrak{g}\otimes_{\mathbb{R}}\mathbb{C}
-\;\cong\;\mathfrak{sl}(2,\mathbb{C})\oplus\mathfrak{sl}(2,\mathbb{C})
-\;\cong\;\mathfrak{su}(2)_{\mathbb{C}}\oplus\mathfrak{su}(2)_{\mathbb{C}} .
+\mathrm{G}\otimes_{\mathbb{R}}\mathbb{C}
+\;\cong\;\mathrm{SL}(2,\mathbb{C})\oplus\mathrm{SL}(2,\mathbb{C})
+\;\cong\;\mathrm{SU}(2)_{\mathbb{C}}\oplus\mathrm{SU}(2)_{\mathbb{C}} .
 $$
 The two summands are the **self-dual** and **anti-self-dual** halves of the complexified Lorentz algebra. The rotation generators are the diagonal combination,
 $$
@@ -230,11 +230,11 @@ and the boost generators are the off-diagonal combination,
 $$
 K_k=\frac{1}{\mathsf{i}}\bigl(N_k^+-N_k^-\bigr).
 $$
-So a rotation is a simultaneous equal rotation in the two $\mathfrak{su}(2)$ factors, while a boost is a rotation in one factor and an opposite rotation in the other. This is the algebraic reason why the spatial rotation group is compact and the boosts are not: rotations act in the same sense in both factors, boosts in opposite senses.
+So a rotation is a simultaneous equal rotation in the two $\mathrm{SU}(2)$ factors, while a boost is a rotation in one factor and an opposite rotation in the other. This is the algebraic reason why the spatial rotation group is compact and the boosts are not: rotations act in the same sense in both factors, boosts in opposite senses.
 
 Two remarks belong here.
 
-**Complexification, not the algebra itself.** Unlike a real form such as $\mathfrak{su}(2)\oplus\mathfrak{su}(2)$, the real algebra $\mathfrak{g}$ is simple: it is not itself a sum of two ideals. The splitting occurs only after complexification. Concretely, an element of $\mathfrak{g}\otimes_{\mathbb{R}}\mathbb{C}$ is a formal combination of $e_k$ and $i e_k$ with complex coefficients, and the combinations $N_k^\pm$ require the formal unit $\mathsf{i}$, which must be distinguished from the scalar imaginary $i$ already present in $\mathbb{B}$ and in the boost generators $K_k=ie_k$.
+**Complexification, not the algebra itself.** Unlike a real form such as $\mathrm{SU}(2)\oplus\mathrm{SU}(2)$, the real algebra $\mathrm{G}$ is simple: it is not itself a sum of two ideals. The splitting occurs only after complexification. Concretely, an element of $\mathrm{G}\otimes_{\mathbb{R}}\mathbb{C}$ is a formal combination of $e_k$ and $i e_k$ with complex coefficients, and the combinations $N_k^\pm$ require the formal unit $\mathsf{i}$, which must be distinguished from the scalar imaginary $i$ already present in $\mathbb{B}$ and in the boost generators $K_k=ie_k$.
 
 **Parity.** The two factors are exchanged by parity, $N_k^+\leftrightarrow N_k^-$, which is an outer automorphism of the Lorentz group and not an element of $SO^+(1,3)$. Correspondingly, a representation labelled $(m,n)$ is sent to $(n,m)$ by parity. This is the algebraic origin of the chirality of the Weyl spinors.
 
@@ -242,13 +242,13 @@ Two remarks belong here.
 
 A finite-dimensional representation of the Lorentz group is a continuous homomorphism $SO^+(1,3)\to GL(V)$, or equivalently — because every such representation lifts — a representation of the double cover $SL(2,\mathbb{C})$ that is trivial on $\{\pm e_0\}$ (see the next section). Complex representations of the compact subgroup $SU(2)$ are completely reducible, and the same holds for $SL(2,\mathbb{C})$; so it suffices to describe the irreducible ones.
 
-**The label $(m,n)$.** Let $V_j$ denote the irreducible $\mathfrak{su}(2)$-module of dimension $2j+1$, $j\in\tfrac12\mathbb{Z}_{\geq0}$, i.e. the symmetric power $\operatorname{Sym}^{2j}(\mathbb{C}^2)$ in the matrix realisation. The finite-dimensional irreducible representations of $SL(2,\mathbb{C})$ are the outer tensor products
+**The label $(m,n)$.** Let $V_j$ denote the irreducible $\mathrm{SU}(2)$-module of dimension $2j+1$, $j\in\tfrac12\mathbb{Z}_{\geq0}$, i.e. the symmetric power $\operatorname{Sym}^{2j}(\mathbb{C}^2)$ in the matrix realisation. The finite-dimensional irreducible representations of $SL(2,\mathbb{C})$ are the outer tensor products
 $$
 (m,n)=V_m\boxtimes V_n,\qquad m,n\in\tfrac12\mathbb{Z}_{\geq0},
 \qquad
 \dim_{\mathbb{C}}(m,n)=(2m+1)(2n+1).
 $$
-Equivalently, writing $m=j_1$, $n=j_2$, the labels $(j_1,j_2)$ are the highest weights of the two $\mathfrak{su}(2)$ halves of the preceding section. The first index refers to the holomorphic (self-dual) half and the second to the antiholomorphic (anti-self-dual) half.
+Equivalently, writing $m=j_1$, $n=j_2$, the labels $(j_1,j_2)$ are the highest weights of the two $\mathrm{SU}(2)$ halves of the preceding section. The first index refers to the holomorphic (self-dual) half and the second to the antiholomorphic (anti-self-dual) half.
 
 **Dictionary.** The low-lying representations have direct interpretations in the biquaternion framework.
 
@@ -269,13 +269,13 @@ The Dirac spinor is the direct sum $(\tfrac12,0)\oplus(0,\tfrac12)$, of dimensio
 $$
 (m,n)\big|_{SU(2)}\;\cong\;V_m\otimes V_n ,
 $$
-which decomposes by the Clebsch–Gordan rule into $\mathfrak{su}(2)$-irreps. For example,
+which decomposes by the Clebsch–Gordan rule into $\mathrm{SU}(2)$-irreps. For example,
 $$
 (\tfrac12,\tfrac12)\big|_{SU(2)}\cong V_{\tfrac12}\otimes V_{\tfrac12}\cong V_1\oplus V_0,
 $$
 i.e. $3\oplus1$: under spatial rotations the four-vector splits into a spatial vector (three components) and a scalar (the time component). This is the representation-theoretic statement that rotations do not mix time with space. The Clebsch–Gordan rule and the tensor products of the $(m,n)$ are developed in the companion article on biquaternion representation theory.
 
-**Complete reducibility and tensor products.** Every finite-dimensional representation is a direct sum of irreducibles, and the tensor product of two irreducibles decomposes by the product of the two $\mathfrak{su}(2)$ Clebsch–Gordan rules:
+**Complete reducibility and tensor products.** Every finite-dimensional representation is a direct sum of irreducibles, and the tensor product of two irreducibles decomposes by the product of the two $\mathrm{SU}(2)$ Clebsch–Gordan rules:
 $$
 (m,n)\otimes(m',n')\;\cong\;\bigoplus_{k=0}^{2\min(m,m')}\ \bigoplus_{k'=0}^{2\min(n,n')}\bigl(m+m'-k,\,n+n'-k'\bigr),
 $$
@@ -347,7 +347,7 @@ $$
 $$
 about the axis $\hat{\mathbf u}_1\times\hat{\mathbf u}_2$; the boost factor has the composite rapidity $\cosh\psi_{\mathrm c}=\cosh\psi_1\cosh\psi_2+\sinh\psi_1\sinh\psi_2\cos\theta$. Every unit-norm biquaternion has a unique polar decomposition $\tilde\Lambda=\tilde B\tilde R$ into a boost and a rotation.
 
-The real Lie algebra is $\mathfrak{sl}(2,\mathbb{C})_{\mathbb{R}}$, spanned by rotations $J_k=e_k$ and boosts $K_k=ie_k$, with $[K_j,K_k]=-2\varepsilon_{jkl}J_l$; its complexification splits into two commuting $\mathfrak{su}(2)$'s, the self-dual and anti-self-dual halves. The finite-dimensional irreducibles are the $(m,n)$, $m,n\in\tfrac12\mathbb{Z}_{\geq0}$, of dimension $(2m+1)(2n+1)$; the biquaternion algebra carries $(\tfrac12,\tfrac12)$ under conjugation. Representations with $m+n\in\mathbb{Z}$ descend to $SO^+(1,3)$; those with $m+n\in\tfrac12+\mathbb{Z}$ are genuine spin representations of the double cover.
+The real Lie algebra is $\mathrm{SL}(2,\mathbb{C})_{\mathbb{R}}$, spanned by rotations $J_k=e_k$ and boosts $K_k=ie_k$, with $[K_j,K_k]=-2\varepsilon_{jkl}J_l$; its complexification splits into two commuting $\mathrm{SU}(2)$'s, the self-dual and anti-self-dual halves. The finite-dimensional irreducibles are the $(m,n)$, $m,n\in\tfrac12\mathbb{Z}_{\geq0}$, of dimension $(2m+1)(2n+1)$; the biquaternion algebra carries $(\tfrac12,\tfrac12)$ under conjugation. Representations with $m+n\in\mathbb{Z}$ descend to $SO^+(1,3)$; those with $m+n\in\tfrac12+\mathbb{Z}$ are genuine spin representations of the double cover.
 
 ## Summary of Notation
 
@@ -359,7 +359,7 @@ The real Lie algebra is $\mathfrak{sl}(2,\mathbb{C})_{\mathbb{R}}$, spanned by r
 | $\mathbb{M}_-$ | Anti-Hermitian subspace (material sector), home of four-vectors |
 | $\mathbb{M}_+$ | Hermitian subspace (informational sector), home of boost rotors |
 | $\mathbb{H}_{\mathbb{B}}$ | Real-quaternion subspace, home of rotation rotors |
-| $N(\tilde Q)=\tilde Q\bar{\tilde Q}$ | Norm form |
+| $N(\tilde Q)=\tilde Q\bar{\tilde Q}$ | Biquaternion norm |
 | $\tilde\Lambda\in SL(2,\mathbb{C})$ | Unit-norm biquaternion (Lorentz rotor) |
 | $\tilde{Q}\mapsto\tilde\Lambda\tilde{Q}\tilde\Lambda^\dagger$ | Rotor conjugation (four-vector action) |
 | $\mathrm{Ad}:SL(2,\mathbb{C})\to SO^+(1,3)$ | Two-to-one covering homomorphism, kernel $\{\pm e_0\}$ |
@@ -370,7 +370,7 @@ The real Lie algebra is $\mathfrak{sl}(2,\mathbb{C})_{\mathbb{R}}$, spanned by r
 | $\tilde\Lambda=\tilde B\tilde R$ | Cartan (polar) decomposition: boost times rotation |
 | $J_k=e_k$, $K_k=ie_k$ | Rotation and boost generators |
 | $[J_j,J_k]=2\varepsilon_{jkl}J_l$, $[J_j,K_k]=2\varepsilon_{jkl}K_l$, $[K_j,K_k]=-2\varepsilon_{jkl}J_l$ | Lie brackets |
-| $N_k^\pm=\frac12(e_k\pm\mathsf{i}(ie_k))$ | Generators of the two $\mathfrak{su}(2)$ halves |
+| $N_k^\pm=\frac12(e_k\pm\mathsf{i}(ie_k))$ | Generators of the two $\mathrm{SU}(2)$ halves |
 | $(m,n)=V_m\boxtimes V_n$ | Irreducible representation, $\dim=(2m+1)(2n+1)$ |
 | $(\tfrac12,0)$, $(0,\tfrac12)$ | Left- and right-handed Weyl spinors |
 | $(\tfrac12,\tfrac12)$ | Four-vector (biquaternion algebra as module) |
@@ -380,8 +380,8 @@ The real Lie algebra is $\mathfrak{sl}(2,\mathbb{C})_{\mathbb{R}}$, spanned by r
 
 - Steven Weinberg, *The Quantum Theory of Fields*, Vol. 1 (Cambridge, 1995), for the Lorentz group, its Lie algebra, and the construction of the representations from two Weyl spinors.
 - Wu-Ki Tung, *Group Theory in Physics* (World Scientific, 1985), for the finite-dimensional representation theory of the Lorentz group and the $(m,n)$ labelling.
-- I. M. Gel'fand, R. A. Minlos, and Z. Ya. Shapiro, *Representations of the Rotation and Lorentz Groups and Their Applications* (Pergamon, 1963), for the classical treatment of the Lorentz group representations and the two $\mathfrak{su}(2)$ decomposition.
-- William Fulton and Joe Harris, *Representation Theory: A First Course* (Springer, 1991), for $\mathfrak{sl}(2,\mathbb{C})$ representations, the Clebsch–Gordan rule, and the highest-weight classification.
+- I. M. Gel'fand, R. A. Minlos, and Z. Ya. Shapiro, *Representations of the Rotation and Lorentz Groups and Their Applications* (Pergamon, 1963), for the classical treatment of the Lorentz group representations and the two $\mathrm{SU}(2)$ decomposition.
+- William Fulton and Joe Harris, *Representation Theory: A First Course* (Springer, 1991), for $\mathrm{SL}(2,\mathbb{C})$ representations, the Clebsch–Gordan rule, and the highest-weight classification.
 - Brian C. Hall, *Lie Groups, Lie Algebras, and Representations* (Springer, 2015), for the Lie-algebra structure, the Killing form, and the complexification.
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the Clifford-algebra origin of the spin group and the double cover of the Lorentz group.
 - Roger Penrose and Wolfgang Rindler, *Spinors and Space-Time*, Vol. 1 (Cambridge, 1984), for the two-component spinor calculus and the self-dual/anti-self-dual decomposition.

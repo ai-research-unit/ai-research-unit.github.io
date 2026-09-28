@@ -15,17 +15,17 @@ Throughout, $k$ is a field, $\bar k$ an algebraic closure of $k$ and $k^s$ the s
 
 ### The Zariski Topology on Affine Space
 
-**Definition.** Affine $n$-space over $k$ is the set $\mathbb{A}^n_k = k^n$ with coordinate ring $k[x_1,\ldots,x_n]$. For an ideal $\mathfrak{a} \subseteq k[x_1,\ldots,x_n]$ the **zero set** is
+**Definition.** Affine $n$-space over $k$ is the set $\mathbb{A}^n_k = k^n$ with coordinate ring $k[x_1,\ldots,x_n]$. For an ideal $\mathrm{A} \subseteq k[x_1,\ldots,x_n]$ the **zero set** is
 
 $$
-V(\mathfrak{a}) = \{a \in \mathbb{A}^n_k : f(a) = 0 \text{ for all } f \in \mathfrak{a}\},
+V(\mathrm{A}) = \{a \in \mathbb{A}^n_k : f(a) = 0 \text{ for all } f \in \mathrm{A}\},
 $$
 
-and the **Zariski topology** on $\mathbb{A}^n_k$ has these sets as its closed sets; equivalently, a set is closed if it is the zero set of an arbitrary family of polynomials, since $\bigcap_i V(\mathfrak{a}_i) = V(\sum_i\mathfrak{a}_i)$ and $V(\mathfrak{a})\cup V(\mathfrak{b}) = V(\mathfrak{ab})$. A **principal open set** is $D(f) = \mathbb{A}^n_k \setminus V(f)$ for $f \neq 0$, and these form a basis of the topology. The Zariski topology is the topology of the prime spectrum of *Commutative Algebras*, read on the maximal ideals $k[x_1,\ldots,x_n]/\mathfrak{m} \cong k$ when $k$ is algebraically closed.
+and the **Zariski topology** on $\mathbb{A}^n_k$ has these sets as its closed sets; equivalently, a set is closed if it is the zero set of an arbitrary family of polynomials, since $\bigcap_i V(\mathrm{A}_i) = V(\sum_i\mathrm{A}_i)$ and $V(\mathrm{A})\cup V(\mathrm{B}) = V(\mathrm{AB})$. A **principal open set** is $D(f) = \mathbb{A}^n_k \setminus V(f)$ for $f \neq 0$, and these form a basis of the topology. The Zariski topology is the topology of the prime spectrum of *Commutative Algebras*, read on the maximal ideals $k[x_1,\ldots,x_n]/\mathrm{M} \cong k$ when $k$ is algebraically closed.
 
 **Proposition.** The Zariski topology on $\mathbb{A}^n_k$ is Noetherian: every descending chain of closed sets stabilises, every closed set is a finite union of irreducible closed sets, and the irreducible components are unique. In particular $\mathbb{A}^n_k$ is quasicompact. For infinite $k$ the space is $T_1$ but not Hausdorff, and it is not metrisable.
 
-*Proof.* The polynomial ring is Noetherian by *Noetherian and Artinian Rings* of Part I, so a descending chain $V(\mathfrak{a}_1) \supseteq V(\mathfrak{a}_2) \supseteq \cdots$ corresponds to an ascending chain of radical ideals, which stabilises; the decomposition into irreducibles follows from the descending chain condition on closed sets, and uniqueness from the definition of an irreducible component. The space is $T_1$ because points are closed, $V(x-a) = \{a\}$; it is not Hausdorff because for infinite $k$ any two nonempty open sets meet, so two distinct points have no disjoint neighbourhoods. The failure of metrisability is the example of *Metrisation and Separation Axioms*. $\square$
+*Proof.* The polynomial ring is Noetherian by *Noetherian and Artinian Rings* of Part I, so a descending chain $V(\mathrm{A}_1) \supseteq V(\mathrm{A}_2) \supseteq \cdots$ corresponds to an ascending chain of radical ideals, which stabilises; the decomposition into irreducibles follows from the descending chain condition on closed sets, and uniqueness from the definition of an irreducible component. The space is $T_1$ because points are closed, $V(x-a) = \{a\}$; it is not Hausdorff because for infinite $k$ any two nonempty open sets meet, so two distinct points have no disjoint neighbourhoods. The failure of metrisability is the example of *Metrisation and Separation Axioms*.
 
 **Definition.** A subset $X \subseteq \mathbb{A}^n_k$ is **irreducible** if it is nonempty and cannot be written as the union of two proper closed subsets; a closed irreducible subset is an **affine variety**, and its **coordinate ring** is $k[X] = k[x_1,\ldots,x_n]/I(X)$ with $I(X)$ the ideal of polynomials vanishing on $X$. The **dimension** of $X$ is the Krull dimension of its coordinate ring, and $X$ is **reduced** because $I(X)$ is a radical ideal.
 
@@ -43,7 +43,7 @@ with coordinate ring $k[GL_n] = k[x_{ij}, d^{-1}]$ where $d = \det(x_{ij})$ is t
 
 **Theorem.** $GL_n$ is a linear algebraic group: $k[GL_n]$ is a reduced finitely generated $k$-algebra of dimension $n^2$, the multiplication $GL_n \times GL_n \to GL_n$ and the inversion $GL_n \to GL_n$ are polynomial maps, hence morphisms of affine varieties, and therefore the group operations are continuous for the Zariski topology.
 
-*Proof.* The coordinate ring is a localisation of the polynomial ring, hence reduced and finitely generated; its dimension is $n^2$ because a localisation of a domain by a nonzero element has the same fraction field and the same dimension as the domain, by the dimension theory of *Integral Extensions and Krull Dimension*. The entries of a product $AB$ are the polynomials $\sum_r x_{ir}y_{rj}$ in the entries of $A$ and $B$, so multiplication is polynomial. Inversion is given by Cramer's rule, $A^{-1} = d(A)^{-1}\operatorname{adj}(A)$, whose entries are polynomials in the $x_{ij}$ and in $d^{-1}$, so inversion is polynomial on $D(\det)$. Continuity of the operations for a topology whose closed sets are polynomial zero sets is then immediate: the preimage of a closed set under a polynomial map is closed. $\square$
+*Proof.* The coordinate ring is a localisation of the polynomial ring, hence reduced and finitely generated; its dimension is $n^2$ because a localisation of a domain by a nonzero element has the same fraction field and the same dimension as the domain, by the dimension theory of *Integral Extensions and Krull Dimension*. The entries of a product $AB$ are the polynomials $\sum_r x_{ir}y_{rj}$ in the entries of $A$ and $B$, so multiplication is polynomial. Inversion is given by Cramer's rule, $A^{-1} = d(A)^{-1}\operatorname{adj}(A)$, whose entries are polynomials in the $x_{ij}$ and in $d^{-1}$, so inversion is polynomial on $D(\det)$. Continuity of the operations for a topology whose closed sets are polynomial zero sets is then immediate: the preimage of a closed set under a polynomial map is closed.
 
 **Remark.** The last sentence is the reason the Zariski topology is the right one: it is defined by the polynomials, and the group law is polynomial, so the group is a **topological group** in the sense of *Topological Groups*. This is the only property of the operations used in this article, and it is the sense in which a linear algebraic group is a topological group whose topology happens to be determined by a ring of functions.
 
@@ -72,7 +72,7 @@ The dimensions follow from the definitions in the sections below: $GL_n$ has dim
 
 **Theorem.** For a connected linear algebraic group $G$ and a closed subgroup $H$, $\dim G = \dim H + \dim G/H$; in particular a closed subgroup of the same dimension as a connected $G$ equals $G$.
 
-*Proof sketch.* The quotient $G/H$ is a homogeneous variety of dimension $\dim G - \dim H$, and the fibres of $G \to G/H$ are the cosets of $H$, all translates of $H$; the dimension formula is the standard one for a morphism whose fibres all have the same dimension, quoted from the dimension theory of Part I together with the construction of the quotient. If $\dim H = \dim G$ then $G/H$ has dimension zero, hence is finite or a point for connected $G$, and a closed subgroup of finite index in a connected group is the whole group. $\square$
+*Proof sketch.* The quotient $G/H$ is a homogeneous variety of dimension $\dim G - \dim H$, and the fibres of $G \to G/H$ are the cosets of $H$, all translates of $H$; the dimension formula is the standard one for a morphism whose fibres all have the same dimension, quoted from the dimension theory of Part I together with the construction of the quotient. If $\dim H = \dim G$ then $G/H$ has dimension zero, hence is finite or a point for connected $G$, and a closed subgroup of finite index in a connected group is the whole group.
 
 **Remark (the deferral).** The quotient $G/H$ and the structure of a variety are used here only through the dimension formula and through the topological facts stated above. The intrinsic construction of the variety, the structure sheaf, the group scheme and the cohomology with coefficients in a $G$-module are the subject , below this category in the menu andand this article does not reason with them. In particular the $k$-forms of a group — the groups over $k$ that become isomorphic to a given group over $\bar k$ — are classified by a cohomology set whose construction belongs to those articles, and only the resulting vocabulary of split and anisotropic forms is used below, with the classification quoted as standard.
 
@@ -82,7 +82,7 @@ The dimensions follow from the definitions in the sections below: $GL_n$ has dim
 
 **Theorem.** Let $G$ be a linear algebraic group. The identity component $G^\circ$ — the connected component of $G$ containing the identity — is a closed, connected, normal subgroup of finite index, the connected components of $G$ are the cosets $gG^\circ$, and the **component group** $G/G^\circ$ is finite. Moreover $G$ is connected if and only if $G$ is irreducible.
 
-*Proof.* The components are finite in number because $G$ is a Noetherian topological space, and each is clopen, so a component is both closed and open. For $g \in G$ the left translation $x \mapsto gx$ is a homeomorphism carrying $G^\circ$ to the component of $g$, so the components are the cosets $gG^\circ$ and there are finitely many of them. If $x, y \in G^\circ$ then $xyG^\circ = x(yG^\circ) = xG^\circ = G^\circ$, so $G^\circ$ is closed under multiplication, and $xG^\circ = G^\circ$ gives $G^\circ = x^{-1}G^\circ$, so $x^{-1} \in G^\circ$. For normality, $x \mapsto gxg^{-1}$ is a homeomorphism fixing the identity, so it preserves $G^\circ$. Finally, a linear algebraic group is a disjoint union of finitely many irreducible closed sets, and the group acts transitively on the set of these irreducible components by translation, exactly as for the connected components; hence there is one irreducible component exactly when there is one connected component, and $G$ is irreducible if and only if it is connected. $\square$
+*Proof.* The components are finite in number because $G$ is a Noetherian topological space, and each is clopen, so a component is both closed and open. For $g \in G$ the left translation $x \mapsto gx$ is a homeomorphism carrying $G^\circ$ to the component of $g$, so the components are the cosets $gG^\circ$ and there are finitely many of them. If $x, y \in G^\circ$ then $xyG^\circ = x(yG^\circ) = xG^\circ = G^\circ$, so $G^\circ$ is closed under multiplication, and $xG^\circ = G^\circ$ gives $G^\circ = x^{-1}G^\circ$, so $x^{-1} \in G^\circ$. For normality, $x \mapsto gxg^{-1}$ is a homeomorphism fixing the identity, so it preserves $G^\circ$. Finally, a linear algebraic group is a disjoint union of finitely many irreducible closed sets, and the group acts transitively on the set of these irreducible components by translation, exactly as for the connected components; hence there is one irreducible component exactly when there is one connected component, and $G$ is irreducible if and only if it is connected.
 
 **Corollary.** A linear algebraic group is connected if and only if it has exactly one irreducible component, and then its coordinate ring is a domain. The component group $G/G^\circ$ is a finite group, and $G$ is the disjoint union of the cosets of $G^\circ$.
 
@@ -104,7 +104,7 @@ The dimensions follow from the definitions in the sections below: $GL_n$ has dim
 
 **Theorem.** Every one-dimensional connected linear algebraic group is isomorphic to $\mathbb{G}_a$ or to $\mathbb{G}_m$.
 
-*Proof sketch.* A connected one-dimensional algebraic group is either unipotent or a torus: the unipotent part is normal and connected, and if it is trivial the group is diagonalisable by the structure theorem for diagonalisable groups below. A connected unipotent group of dimension one is $\mathbb{G}_a$ by the classification of unipotent groups, and a one-dimensional torus over $\bar k$ is $\mathbb{G}_m$. $\square$
+*Proof sketch.* A connected one-dimensional algebraic group is either unipotent or a torus: the unipotent part is normal and connected, and if it is trivial the group is diagonalisable by the structure theorem for diagonalisable groups below. A connected unipotent group of dimension one is $\mathbb{G}_a$ by the classification of unipotent groups, and a one-dimensional torus over $\bar k$ is $\mathbb{G}_m$.
 
 **Remark.** The dichotomy is the algebraic shadow of the two one-dimensional real Lie groups $\mathbb{R}$ and $SO(2)$: $\mathbb{G}_a(\mathbb{R}) = \mathbb{R}$ and the anisotropic torus of the next paragraph has real points the circle. The two are not isomorphic over any field, and their characters and cocharacters are as different as the two group laws.
 
@@ -120,7 +120,7 @@ The dimensions follow from the definitions in the sections below: $GL_n$ has dim
 
 **Theorem.** $B_n = T_n \ltimes U_n$, with $\dim T_n = n$, $\dim B_n = n(n+1)/2$ and $\dim U_n = n(n-1)/2$. The group $T_n$ is a torus, $U_n$ is a connected unipotent group, and $B_n$ is connected solvable.
 
-*Proof.* Every invertible upper triangular matrix factors uniquely as a diagonal matrix times an upper unitriangular one, and the diagonal part is normalised by $U_n$, so the product is semidirect. The dimensions are the numbers of free matrix entries: $n$ on the diagonal, $n(n+1)/2$ in the upper triangle, and $n(n-1)/2$ strictly above the diagonal. The group $U_n$ is generated by the elementary matrices $I + aE_{ij}$ with $i<j$, each of which is unipotent and lies in the image of a morphism from $\mathbb{G}_a$, so $U_n$ is connected unipotent; the solvable series of $B_n$ is the one by the diagonals of increasing distance from the main diagonal. $\square$
+*Proof.* Every invertible upper triangular matrix factors uniquely as a diagonal matrix times an upper unitriangular one, and the diagonal part is normalised by $U_n$, so the product is semidirect. The dimensions are the numbers of free matrix entries: $n$ on the diagonal, $n(n+1)/2$ in the upper triangle, and $n(n-1)/2$ strictly above the diagonal. The group $U_n$ is generated by the elementary matrices $I + aE_{ij}$ with $i<j$, each of which is unipotent and lies in the image of a morphism from $\mathbb{G}_a$, so $U_n$ is connected unipotent; the solvable series of $B_n$ is the one by the diagonals of increasing distance from the main diagonal.
 
 ## Unipotent and Solvable Groups
 
@@ -130,7 +130,7 @@ The dimensions follow from the definitions in the sections below: $GL_n$ has dim
 
 **Theorem (Kolchin).** Let $k$ be algebraically closed. Every unipotent subgroup of $GL_n(k)$ is conjugate to a subgroup of $U_n$; consequently every unipotent linear algebraic group is nilpotent, and a connected unipotent group is a successive extension of copies of $\mathbb{G}_a$.
 
-*Proof sketch.* The two statements are proved together, by induction on $n$ and on the dimension of the group. A connected unipotent group $G$ has a central series $1 = G_0 \triangleleft \cdots \triangleleft G_m = G$ with successive quotients isomorphic to $\mathbb{G}_a$, and each quotient acts on the nonzero fixed space of its predecessor by a unipotent operator; over the algebraically closed field $k$ such an operator has the eigenvalue $1$, so the fixed space grows at each stage and there is a nonzero vector fixed by all of $G$. Induction on the quotient of $k^n$ by the line spanned by that vector then exhibits $G$ as conjugate to a subgroup of $U_n$. An arbitrary unipotent subgroup is an extension of a connected unipotent group by a finite unipotent group, and a finite unipotent group acting on a nonzero space over $k$ has a nonzero fixed vector, since its operators are unipotent; the same induction therefore applies to it. A subgroup of $U_n$ is nilpotent because $U_n$ is, and the subgroups generated by the $E_{ij}$ with $j-i \geq d$ exhibit $U_n$ as a successive extension of copies of $\mathbb{G}_a$. $\square$
+*Proof sketch.* The two statements are proved together, by induction on $n$ and on the dimension of the group. A connected unipotent group $G$ has a central series $1 = G_0 \triangleleft \cdots \triangleleft G_m = G$ with successive quotients isomorphic to $\mathbb{G}_a$, and each quotient acts on the nonzero fixed space of its predecessor by a unipotent operator; over the algebraically closed field $k$ such an operator has the eigenvalue $1$, so the fixed space grows at each stage and there is a nonzero vector fixed by all of $G$. Induction on the quotient of $k^n$ by the line spanned by that vector then exhibits $G$ as conjugate to a subgroup of $U_n$. An arbitrary unipotent subgroup is an extension of a connected unipotent group by a finite unipotent group, and a finite unipotent group acting on a nonzero space over $k$ has a nonzero fixed vector, since its operators are unipotent; the same induction therefore applies to it. A subgroup of $U_n$ is nilpotent because $U_n$ is, and the subgroups generated by the $E_{ij}$ with $j-i \geq d$ exhibit $U_n$ as a successive extension of copies of $\mathbb{G}_a$.
 
 **Example.** $\mathbb{G}_a \cong U_2$ is unipotent; $U_n$ has dimension $n(n-1)/2$ and its centre consists of the matrices $1 + aE_{1n}$, so for $n \geq 3$ it is a non-abelian nilpotent group. The additive group is the only one-dimensional connected unipotent group.
 
@@ -138,17 +138,17 @@ The dimensions follow from the definitions in the sections below: $GL_n$ has dim
 
 **Theorem (Lie–Kolchin).** Let $k$ be algebraically closed. Every connected solvable subgroup of $GL_n(k)$ is conjugate to a subgroup of $B_n$; equivalently, it fixes a complete flag of subspaces, and it has a common eigenvector.
 
-*Proof sketch.* Induct on $\dim G$ and on $n$. If $G \neq 1$ then the derived subgroup $[G,G]$ is a connected solvable group of smaller dimension, because a nontrivial solvable group is not perfect: the last nontrivial term of its derived series would otherwise equal its own derived subgroup. By induction $[G,G]$ fixes a nonzero vector, and its fixed space $V$ is nonzero and $G$-stable because $[G,G]$ is normal. The quotient $G/[G,G]$ is connected abelian, hence a product of a torus and a unipotent group: the torus is diagonalisable, so $V$ decomposes into weight spaces for it, and on each weight space the connected unipotent part acts by unipotent operators, so Kolchin gives a common nonzero fixed vector. A nonzero vector fixed by $G$ therefore exists, and induction on the quotient of $k^n$ by the line it spans produces a complete $G$-stable flag, so that $G$ is conjugate to a subgroup of $B_n$. $\square$
+*Proof sketch.* Induct on $\dim G$ and on $n$. If $G \neq 1$ then the derived subgroup $[G,G]$ is a connected solvable group of smaller dimension, because a nontrivial solvable group is not perfect: the last nontrivial term of its derived series would otherwise equal its own derived subgroup. By induction $[G,G]$ fixes a nonzero vector, and its fixed space $V$ is nonzero and $G$-stable because $[G,G]$ is normal. The quotient $G/[G,G]$ is connected abelian, hence a product of a torus and a unipotent group: the torus is diagonalisable, so $V$ decomposes into weight spaces for it, and on each weight space the connected unipotent part acts by unipotent operators, so Kolchin gives a common nonzero fixed vector. A nonzero vector fixed by $G$ therefore exists, and induction on the quotient of $k^n$ by the line it spans produces a complete $G$-stable flag, so that $G$ is conjugate to a subgroup of $B_n$.
 
 **Corollary.** A connected solvable linear algebraic group is the semidirect product of a torus and a connected unipotent group.
 
-*Proof sketch.* Take a maximal torus $T$ of $G$, which is connected, and the unipotent radical $R_u(G)$; the product $T \cdot R_u(G)$ is a connected solvable subgroup, and by Lie–Kolchin and the conjugacy of maximal tori it is all of $G$. The intersection is trivial, since $T$ contains no nonidentity unipotent element, and $R_u(G)$ is normal. $\square$
+*Proof sketch.* Take a maximal torus $T$ of $G$, which is connected, and the unipotent radical $R_u(G)$; the product $T \cdot R_u(G)$ is a connected solvable subgroup, and by Lie–Kolchin and the conjugacy of maximal tori it is all of $G$. The intersection is trivial, since $T$ contains no nonidentity unipotent element, and $R_u(G)$ is normal.
 
 **Definition.** A **Borel subgroup** of $G$ is a maximal connected solvable subgroup, and a **parabolic subgroup** is a closed subgroup containing a Borel subgroup. Over an algebraically closed field a closed subgroup is parabolic exactly when it contains a Borel.
 
 **Theorem.** Let $k$ be algebraically closed and $G$ connected. Every Borel subgroup of $G$ is connected and solvable and is the semidirect product $T \ltimes R_u(B)$ of a maximal torus and a maximal connected unipotent subgroup, and every connected solvable subgroup of $G$ lies in a Borel subgroup.
 
-*Proof sketch.* The factorisation $B = T \ltimes R_u(B)$ is the corollary above. The containment of a connected solvable subgroup in a Borel subgroup is Borel's theorem, and it is proved from the fixed point theorem in the section on Borel subgroups below, where the conjugacy of the Borel subgroups and of the maximal tori is stated as well. $\square$
+*Proof sketch.* The factorisation $B = T \ltimes R_u(B)$ is the corollary above. The containment of a connected solvable subgroup in a Borel subgroup is Borel's theorem, and it is proved from the fixed point theorem in the section on Borel subgroups below, where the conjugacy of the Borel subgroups and of the maximal tori is stated as well.
 
 ## Tori, Characters and Cocharacters
 
@@ -158,7 +158,7 @@ The dimensions follow from the definitions in the sections below: $GL_n$ has dim
 
 **Theorem.** A diagonalisable group over an algebraically closed field is a direct product $\mathbb{G}_m^r \times A$ with $A$ a finite abelian group whose order is coprime to $\operatorname{char} k$; consequently $r = \dim T$ for the connected ones, and $T \cong \mathbb{G}_m^r$ with $r = \dim T$.
 
-*Proof sketch.* Diagonalisable groups are classified by their character group, which is a finitely generated abelian group; the free part of rank $r$ gives the torus factor and the torsion part gives the finite factor, and the condition on the order is what makes the corresponding equations separable. $\square$
+*Proof sketch.* Diagonalisable groups are classified by their character group, which is a finitely generated abelian group; the free part of rank $r$ gives the torus factor and the torsion part gives the finite factor, and the condition on the order is what makes the corresponding equations separable.
 
 ### Characters, Cocharacters, and the Duality
 
@@ -173,7 +173,7 @@ $$
 
 which is perfect when $T$ is split over $k$; for a general $k$ the induced map $X_*(T) \to \operatorname{Hom}_{\mathbb{Z}}(X^*(T),\mathbb{Z})$ is injective with finite cokernel, and is an isomorphism after tensoring with $\mathbb{Q}$.
 
-*Proof.* A split torus is $\mathbb{G}_m^r$, and a homomorphism $\mathbb{G}_m \to \mathbb{G}_m$ is $t \mapsto t^m$ for a unique $m \in \mathbb{Z}$; hence $X^*(\mathbb{G}_m^r) \cong \mathbb{Z}^r$ and $X_*(\mathbb{G}_m^r) \cong \mathbb{Z}^r$ with the standard dual bases, and the pairing is the standard duality. Over a general $k$ a torus becomes split over a finite separable extension, and the character and cocharacter lattices are the Galois-invariant parts of the corresponding lattices over that extension; the pairing between them is then the standard one, and the cokernel of the comparison map with the dual is finite by the theory of diagonalisable groups, quoted from the literature. $\square$
+*Proof.* A split torus is $\mathbb{G}_m^r$, and a homomorphism $\mathbb{G}_m \to \mathbb{G}_m$ is $t \mapsto t^m$ for a unique $m \in \mathbb{Z}$; hence $X^*(\mathbb{G}_m^r) \cong \mathbb{Z}^r$ and $X_*(\mathbb{G}_m^r) \cong \mathbb{Z}^r$ with the standard dual bases, and the pairing is the standard duality. Over a general $k$ a torus becomes split over a finite separable extension, and the character and cocharacter lattices are the Galois-invariant parts of the corresponding lattices over that extension; the pairing between them is then the standard one, and the cokernel of the comparison map with the dual is finite by the theory of diagonalisable groups, quoted from the literature.
 
 ### Weights
 
@@ -207,7 +207,7 @@ $$
 
 and it acts faithfully on $X^*(T)$ preserving $\Phi$.
 
-*Proof sketch.* The finite-dimensionality and the axioms of a root system are proved by transporting the root-space decomposition of the reductive Lie algebra, but they can also be read off directly from the commutator relations of the root subgroups: the classification input is that the $\mathbb{Z}$-span of the roots and coroots carries the axioms of a reduced root system, which is the content of the theory of *Root Systems and Classification*, and it is quoted from there. The group generated by the $s_\alpha$ is independent of the choices and equals $N_G(T)/T$ by the conjugacy of maximal tori and the Bruhat decomposition below. $\square$
+*Proof sketch.* The finite-dimensionality and the axioms of a root system are proved by transporting the root-space decomposition of the reductive Lie algebra, but they can also be read off directly from the commutator relations of the root subgroups: the classification input is that the $\mathbb{Z}$-span of the roots and coroots carries the axioms of a reduced root system, which is the content of the theory of *Root Systems and Classification*, and it is quoted from there. The group generated by the $s_\alpha$ is independent of the choices and equals $N_G(T)/T$ by the conjugacy of maximal tori and the Bruhat decomposition below.
 
 ### The Root Datum and the Weyl Group
 
@@ -215,7 +215,7 @@ and it acts faithfully on $X^*(T)$ preserving $\Phi$.
 
 **Theorem (classification by root data; Chevalley).** Over an algebraically closed field, the map sending a connected reductive group with a chosen maximal torus to its root datum is a bijection between isomorphism classes of connected reductive groups and isomorphism classes of reduced root data. A connected reductive group is semisimple exactly when the root datum is **semisimple**, that is, when $\Phi$ spans $X^* \otimes \mathbb{Q}$; it is a torus exactly when $\Phi$ is empty.
 
-*Proof sketch.* The construction in one direction is the theorem above. In the other, the root datum determines the root system $\Phi$, hence a Dynkin diagram, and Chevalley's construction produces the group by generators and relations from the root datum, with the commutator relations of the root subgroups as the relations; the isogeny classification is the comparison of the lattices $X^*$ and $X_*$ for a fixed root system. The theorem is quoted from the literature of *Root Systems and Classification* and of Borel's and Springer's treatments. $\square$
+*Proof sketch.* The construction in one direction is the theorem above. In the other, the root datum determines the root system $\Phi$, hence a Dynkin diagram, and Chevalley's construction produces the group by generators and relations from the root datum, with the commutator relations of the root subgroups as the relations; the isogeny classification is the comparison of the lattices $X^*$ and $X_*$ for a fixed root system. The theorem is quoted from the literature of *Root Systems and Classification* and of Borel's and Springer's treatments.
 
 ### The Worked Cases of $GL_n$ and $SL_n$
 
@@ -241,11 +241,11 @@ which is the dimension of $GL_n$ computed above, and the sum of the dimensions o
 
 **Theorem (Borel fixed point theorem).** Let $k$ be algebraically closed and let a connected solvable linear algebraic group $G$ act on a nonempty complete variety $X$. Then $G$ has a fixed point.
 
-*Proof sketch.* This is the standard theorem of Borel, quoted from the structure theory. The case $G = \mathbb{G}_m$ is read off from the weight decomposition of a torus action, and the case $G = \mathbb{G}_a$ is the statement that an orbit of $\mathbb{G}_a$ in a complete variety is a point, since the orbit is the image of an affine line; the general connected solvable group is built from these two by successive extensions, so induction on $\dim G$ gives the theorem. Completeness is the one property of the variety theory that is used, and it is part of the theory named in the deferral in the Introduction. $\square$
+*Proof sketch.* This is the standard theorem of Borel, quoted from the structure theory. The case $G = \mathbb{G}_m$ is read off from the weight decomposition of a torus action, and the case $G = \mathbb{G}_a$ is the statement that an orbit of $\mathbb{G}_a$ in a complete variety is a point, since the orbit is the image of an affine line; the general connected solvable group is built from these two by successive extensions, so induction on $\dim G$ gives the theorem. Completeness is the one property of the variety theory that is used, and it is part of the theory named in the deferral in the Introduction.
 
 **Corollary (conjugacy theorems; Borel).** Let $k$ be algebraically closed and $G$ connected. All Borel subgroups of $G$ are conjugate, all maximal tori of $G$ are conjugate, every maximal torus lies in a Borel subgroup, and every connected solvable subgroup of $G$ lies in a Borel subgroup.
 
-*Proof sketch.* Apply the fixed point theorem to the action of a connected solvable subgroup $S$ of $G$ on the complete flag variety $G/B$: a fixed point is a coset $gB$ with $S \subseteq gBg^{-1}$. For $S = B'$ a Borel subgroup this is the conjugacy of the Borel subgroups; for $S$ a maximal torus $T$ it produces a Borel containing $T$. Every Borel contains a maximal torus, by the factorisation $B = T \ltimes R_u(B)$, and any two maximal tori of a fixed Borel $B$ are conjugate, being complements to the unipotent radical; the three statements are the conjugacy theorems of the structure theory and are quoted as standard. $\square$
+*Proof sketch.* Apply the fixed point theorem to the action of a connected solvable subgroup $S$ of $G$ on the complete flag variety $G/B$: a fixed point is a coset $gB$ with $S \subseteq gBg^{-1}$. For $S = B'$ a Borel subgroup this is the conjugacy of the Borel subgroups; for $S$ a maximal torus $T$ it produces a Borel containing $T$. Every Borel contains a maximal torus, by the factorisation $B = T \ltimes R_u(B)$, and any two maximal tori of a fixed Borel $B$ are conjugate, being complements to the unipotent radical; the three statements are the conjugacy theorems of the structure theory and are quoted as standard.
 
 ### Parabolic Subgroups and the Levi Decomposition
 
@@ -259,11 +259,11 @@ $$
 
 of its unipotent radical $R_u(G)$ and a maximal reductive subgroup $L$, called a **Levi factor**; the Levi factor is unique up to conjugacy by an element of $R_u(G)$, and $G/R_u(G) \cong L$ is reductive. For a parabolic subgroup $P$, the same statement reads $P = R_u(P) \rtimes L$ with $L$ reductive.
 
-*Proof sketch.* The quotient $G/R_u(G)$ is reductive because the unipotent radical is the largest connected normal unipotent subgroup. The existence of a complement is Levi's theorem, Mostow's in characteristic zero: the rational representations of a reductive group are completely reducible, which produces an $R_u(G)$-stable complement to the extension, and the conjugacy of the complements is the standard uniqueness statement. In characteristic $p$ the splitting requires the separability of the quotient, which holds over a perfect field for reduced groups. $\square$
+*Proof sketch.* The quotient $G/R_u(G)$ is reductive because the unipotent radical is the largest connected normal unipotent subgroup. The existence of a complement is Levi's theorem, Mostow's in characteristic zero: the rational representations of a reductive group are completely reducible, which produces an $R_u(G)$-stable complement to the extension, and the conjugacy of the complements is the standard uniqueness statement. In characteristic $p$ the splitting requires the separability of the quotient, which holds over a perfect field for reduced groups.
 
 **Theorem.** For a connected reductive group $G$ over an algebraically closed field, the parabolic subgroups containing a fixed Borel $B$ correspond bijectively to the subsets of the set of simple roots: the parabolic $P_J$ attached to $J$ is generated by $B$ and the root subgroups $U_{-\alpha}$ with $\alpha \in J$, and $P_J$ is a proper subgroup exactly when $J \neq S$. The maximal proper parabolics are the $P_{S \setminus \{\alpha\}}$, one for each simple root.
 
-*Proof sketch.* A parabolic contains $B$, hence is determined by the root subgroups it contains together with $B$; the closed subgroups containing $B$ are exactly the $P_J$, by the classification of the subgroups containing a Borel and the generation of $G$ by the $U_{\pm\alpha}$, and the correspondence with the subsets of the simple roots is the standard one. $\square$
+*Proof sketch.* A parabolic contains $B$, hence is determined by the root subgroups it contains together with $B$; the closed subgroups containing $B$ are exactly the $P_J$, by the classification of the subgroups containing a Borel and the generation of $G$ by the $U_{\pm\alpha}$, and the correspondence with the subsets of the simple roots is the standard one.
 
 ### The Bruhat Decomposition
 
@@ -281,7 +281,7 @@ $$
 
 where $\leq$ is the Bruhat order on $W$ determined by the length and the reflections.
 
-*Proof sketch.* The inclusion $BwB \subseteq BWB$ and the double coset decomposition follow from the generation of $G$ by $B$ and the root subgroups $U_\alpha$: every element is a product of elements of $B$ and the $U_\alpha$, and the relations of the rank-one subgroups $SL_2$ move the resulting word into a normal form indexed by $W$, which is the content of the exchange condition for Coxeter groups quoted from *Coxeter Groups*. The dimension statement is computed from the root subgroups not in $B$ together with the one-dimensional groups $U_\alpha$ with $\alpha$ a negative root not in the stabiliser of $w$; the count of these is exactly $\ell(w)$, and the closure statement is the standard cell closure for the resulting cell decomposition. $\square$
+*Proof sketch.* The inclusion $BwB \subseteq BWB$ and the double coset decomposition follow from the generation of $G$ by $B$ and the root subgroups $U_\alpha$: every element is a product of elements of $B$ and the $U_\alpha$, and the relations of the rank-one subgroups $SL_2$ move the resulting word into a normal form indexed by $W$, which is the content of the exchange condition for Coxeter groups quoted from *Coxeter Groups*. The dimension statement is computed from the root subgroups not in $B$ together with the one-dimensional groups $U_\alpha$ with $\alpha$ a negative root not in the stabiliser of $w$; the count of these is exactly $\ell(w)$, and the closure statement is the standard cell closure for the resulting cell decomposition.
 
 **Corollary.** The quotient $G/B$ is the disjoint union of the cells $BwB/B$ of dimension $\ell(w)$, so it has a cell decomposition with one cell for each element of $W$, and $\sum_{w\in W} t^{\ell(w)}$ is its Poincaré polynomial in the sense of the count of cells by dimension. The number of cells is $|W|$, which for $G = GL_n$ is $n!$.
 
@@ -301,7 +301,7 @@ $$
 
 with $Z(G)^\circ \cap [G,G]$ finite, and $\dim G = \dim Z(G)^\circ + \dim [G,G]$.
 
-*Proof sketch.* The centre of a reductive group is diagonalisable because its action on the faithful representation is a direct sum of characters; the derived subgroup is semisimple because it is connected and reductive with finite centre, and the product statement is the standard decomposition of a reductive group into its central torus and its semisimple part. $\square$
+*Proof sketch.* The centre of a reductive group is diagonalisable because its action on the faithful representation is a direct sum of characters; the derived subgroup is semisimple because it is connected and reductive with finite centre, and the product statement is the standard decomposition of a reductive group into its central torus and its semisimple part.
 
 **Example.** $GL_n$ is reductive with centre $\mathbb{G}_m$ (scalar matrices), derived subgroup $SL_n$, and $\dim GL_n = 1 + (n^2-1) = n^2$. The group $B_n$ is not reductive for $n \geq 2$ because $U_n$ is a nontrivial connected normal unipotent subgroup. A finite group is reductive, with trivial unipotent radical and trivial radical; it is not semisimple when it is nontrivial, because a semisimple group is connected by convention and the identity component of a nontrivial finite group is trivial.
 
@@ -309,7 +309,7 @@ with $Z(G)^\circ \cap [G,G]$ finite, and $\dim G = \dim Z(G)^\circ + \dim [G,G]$
 
 **Theorem (classification of reductive groups).** Over an algebraically closed field, connected reductive groups are classified up to isomorphism by their reduced root data; the semisimple ones correspond to the semisimple root data, that is, to the root systems of *Root Systems and Classification*, and the simple ones to the connected Dynkin diagrams $A_n, B_n, C_n, D_n, E_6, E_7, E_8, F_4, G_2$. For a fixed root system, the simply connected group and the adjoint group are the two extreme members of the isogeny class, and the intermediate members correspond to the subgroups of the centre of the simply connected group containing the kernel of the simply connected to adjoint isogeny.
 
-*Proof sketch.* The classification is Chevalley's theorem quoted above; the determination of the isogeny class by the lattices $X^* \supseteq \mathbb{Z}\Phi$ and $X_* \supseteq \mathbb{Z}\Phi^\vee$ is the lattice-theoretic part, and the correspondence with the subgroups of the centre is the standard computation of the fundamental group of a semisimple group. $\square$
+*Proof sketch.* The classification is Chevalley's theorem quoted above; the determination of the isogeny class by the lattices $X^* \supseteq \mathbb{Z}\Phi$ and $X_* \supseteq \mathbb{Z}\Phi^\vee$ is the lattice-theoretic part, and the correspondence with the subgroups of the centre is the standard computation of the fundamental group of a semisimple group.
 
 **Example.** For the root system $A_{n-1}$ the simply connected group is $SL_n$ and the adjoint group is $PGL_n = GL_n/\mathbb{G}_m$, with centre $\mathbb{Z}/n\mathbb{Z}$ in the simply connected case; the intermediate groups are $SL_n/\mu_d$ for divisors $d$ of $n$, one for each subgroup of $\mathbb{Z}/n\mathbb{Z}$. This is the combinatorial origin of the finite groups of Lie type, whose abstract-group theory is that of *Finite Simple Groups of Lie Type* of Part I.
 
@@ -329,7 +329,7 @@ with $\bar z$ the complex conjugate, is a one-dimensional torus over $\mathbb{R}
 
 **Theorem (Weyl).** A connected reductive group over $\mathbb{R}$ is anisotropic if and only if its group of real points is compact.
 
-*Proof sketch.* If $G(\mathbb{R})$ is compact then it contains no subgroup isomorphic to $\mathbb{R}^\times$, which is the group of real points of a split torus, so the $\mathbb{R}$-rank is zero. Conversely, an anisotropic reductive group has a compact real form, by the classification of the real forms of a complex reductive group; the statement is quoted as standard. $\square$
+*Proof sketch.* If $G(\mathbb{R})$ is compact then it contains no subgroup isomorphic to $\mathbb{R}^\times$, which is the group of real points of a split torus, so the $\mathbb{R}$-rank is zero. Conversely, an anisotropic reductive group has a compact real form, by the classification of the real forms of a complex reductive group; the statement is quoted as standard.
 
 ### The Galois Action on the Root Datum
 
@@ -337,7 +337,7 @@ with $\bar z$ the complex conjugate, is a one-dimensional torus over $\mathbb{R}
 
 **Theorem (Tits).** Over $k$, connected reductive groups with a given geometric root datum are classified up to isomorphism by the continuous actions of $\Gamma_k$ on that root datum, together with the splitting data of the isogeny type; a group is **split** exactly when the action is trivial, and **quasisplit** exactly when the action fixes a Borel subgroup. The $k$-forms of a fixed split group are classified by a Galois cohomology set $H^1$, whose construction is the subject, below this category.
 
-*Proof sketch.* The action of $\Gamma_k$ on the root datum is functorial, and the reconstruction of the group from the action is the Galois descent of the split form: the group over $k^s$ with its $\Gamma_k$-equivariant structure descends to $k$, and the descent data are the action. The classification statement is Tits' theorem, quoted from the literature; the cohomological interpretation of the forms is the standard identification of descent data with a cocycle class. $\square$
+*Proof sketch.* The action of $\Gamma_k$ on the root datum is functorial, and the reconstruction of the group from the action is the Galois descent of the split form: the group over $k^s$ with its $\Gamma_k$-equivariant structure descends to $k$, and the descent data are the action. The classification statement is Tits' theorem, quoted from the literature; the cohomological interpretation of the forms is the standard identification of descent data with a cocycle class.
 
 ### The $k$-Rank and the $k$-Parabolics
 
@@ -345,7 +345,7 @@ with $\bar z$ the complex conjugate, is a one-dimensional torus over $\mathbb{R}
 
 **Theorem.** Let $G$ be a connected reductive group over $k$. Then $G$ has a $k$-Borel if and only if $G$ is quasisplit, and $G$ has a proper $k$-parabolic subgroup if and only if $k\text{-rank}(G) > 0$, equivalently if and only if $G$ is not anisotropic.
 
-*Proof sketch.* A $k$-parabolic contains a maximal $k$-split torus, and a nontrivial $k$-split torus produces a proper $k$-parabolic by the standard construction from the root system: the subgroup generated by the centraliser of the split torus and the root subgroups with positive value of some character is defined over $k$ and proper. Conversely, if $G$ is anisotropic it has no nontrivial split torus, and a proper $k$-parabolic would produce one, since the unipotent radical direction is acted on nontrivially by a split torus. The statement is the theorem of Borel and Tits, quoted as standard. $\square$
+*Proof sketch.* A $k$-parabolic contains a maximal $k$-split torus, and a nontrivial $k$-split torus produces a proper $k$-parabolic by the standard construction from the root system: the subgroup generated by the centraliser of the split torus and the root subgroups with positive value of some character is defined over $k$ and proper. Conversely, if $G$ is anisotropic it has no nontrivial split torus, and a proper $k$-parabolic would produce one, since the unipotent radical direction is acted on nontrivially by a split torus. The statement is the theorem of Borel and Tits, quoted as standard.
 
 **Example.** For $k = \mathbb{R}$ the group $SL_2(\mathbb{R})$ is split with $\mathbb{R}$-rank one and has the upper triangular subgroup as a proper $\mathbb{R}$-parabolic; the anisotropic torus $U(1)$ has rank zero and no proper $\mathbb{R}$-parabolic. For $k = \mathbb{Q}$ the group $SU(q)$ of a positive definite Hermitian form over an imaginary quadratic field is anisotropic and has no proper $\mathbb{Q}$-parabolic; the $\mathbb{Q}$-rank is the parameter that measures the cusps of the arithmetic quotients.
 
@@ -359,7 +359,7 @@ A linear algebraic group over $k$ is a closed subgroup of $GL_n$ defined by poly
 |---|---|
 | $k$, $\bar k$, $k^s$ | Base field, its algebraic closure, its separable closure |
 | $\mathbb{A}^n_k$ | Affine $n$-space over $k$ |
-| $V(\mathfrak{a})$, $D(f)$ | Zero set of an ideal, principal open set |
+| $V(\mathrm{A})$, $D(f)$ | Zero set of an ideal, principal open set |
 | $k[X]$ | Coordinate ring of an affine variety $X$ |
 | $GL_n(k)$, $SL_n(k)$ | General and special linear groups over $k$ |
 | $\mathbb{G}_a$, $\mathbb{G}_m$ | Additive group $(k,+)$ and multiplicative group $(k^\times,\cdot)$ |
