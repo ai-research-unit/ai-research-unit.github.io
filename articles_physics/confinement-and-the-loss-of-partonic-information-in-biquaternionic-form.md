@@ -55,7 +55,7 @@ is the behaviour of a confining theory: a flux tube forms, the cost is proportio
 The rectangular loop of spatial width $L$ and temporal extent $T$ connects the law to the static potential. For large $T$ the loop exponentiates the energy of the pair of sources it creates,
 
 $$
-\langle W(_{L\times T})\rangle \sim e^{-iT\,V(L)},
+\langle W(\Box_{L\times T})\rangle \sim e^{-iT\,V(L)},
 $$
 
 so that an area law corresponds to $V(L) = \sigma L$, a linearly rising potential, and a perimeter law to a potential that flattens at large $L$. These statements are standard, proved on the lattice by the strong-coupling expansion, and cited rather than reproduced; the framework's relation to them is the subject of the ledger below.
@@ -81,7 +81,7 @@ $$
 and the two are distinguished not by the size of $I$ but by its **scaling**: the first grows with the length of the loop, the second with the region it encloses. For the rectangular loop,
 
 $$
-I(_{L\times T}) \simeq
+I(\Box_{L\times T}) \simeq
 \begin{cases}
 2\mu_{\mathrm{per}}(L+T), & \text{perimeter},\\[2pt]
 \sigma\,LT, & \text{area},
@@ -91,7 +91,7 @@ $$
 so that the quantity $I/T$ at large $T$ is a constant for the perimeter law and grows linearly in $L$ for the area law:
 
 $$
-\lim_{T\to\infty}\frac{I(_{L\times T})}{T}
+\lim_{T\to\infty}\frac{I(\Box_{L\times T})}{T}
 =
 \begin{cases}
 2\mu_{\mathrm{per}}, & \text{perimeter},\\[2pt]

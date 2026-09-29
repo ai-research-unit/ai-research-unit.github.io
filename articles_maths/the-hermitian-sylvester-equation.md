@@ -1,4 +1,4 @@
-# __The Hermitian Sylvester Equation on the Biquaternion Algebra with Hermitian Adjoint__
+# __The Hermitian Sylvester Equation__
 
 ## Introduction
 

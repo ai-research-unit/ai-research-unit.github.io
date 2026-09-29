@@ -1,8 +1,8 @@
-# __The Hermitian Sylvester Equation on the Biquaternion Algebra with Hermitian Adjoint__
+# __The Hermitian Sylvester Equation__
 
 ## Introduction
 
-This is the physics companion of *The Hermitian Sylvester Equation on the Biquaternion Algebra with Hermitian Adjoint* (`articles_maths/the-hermitian-sylvester-equation-on-the-biquaternion-algebra-with-hermitian-adjoint.md`). The operator is the same, $S_{\tilde A,\tilde B}=L_{\tilde A}+R_{\tilde B}$, with the equation $\tilde AX+X\tilde B=c$; the reading is the physics of a **relaxation**. The three statements that carry the article are:
+This is the physics companion of *The Hermitian Sylvester Equation* (`articles_maths/the-hermitian-sylvester-equation.md`). The operator is the same, $S_{\tilde A,\tilde B}=L_{\tilde A}+R_{\tilde B}$, with the equation $\tilde AX+X\tilde B=c$; the reading is the physics of a **relaxation**. The three statements that carry the article are:
 
 1. the **anticommutator** $\tilde AX+X\tilde A$ is the self-adjoint operator of a **Hermitian** parameter, hence the framework's energy/observable equation;
 2. the **commutator** $\tilde AX-X\tilde A=[\tilde A,X]$ is the **skew-adjoint** operator of an **anti-Hermitian** parameter, hence the framework's rotation generator, and it is the derivation that carries the internal weights;
@@ -75,7 +75,7 @@ The Sylvester equation $\tilde AX+X\tilde B=c$ is the framework's **relaxation e
 
 ## Further Reading
 
-- *The Hermitian Sylvester Equation on the Biquaternion Algebra with Hermitian Adjoint* (`articles_maths/the-hermitian-sylvester-equation-on-the-biquaternion-algebra-with-hermitian-adjoint.md`), the mathematical companion.
+- *The Hermitian Sylvester Equation* (`articles_maths/the-hermitian-sylvester-equation.md`), the mathematical companion.
 - *Biquaternion Automorphisms and Derivations* (`articles_physics/biquaternion-automorphisms-and-derivations.md`), for the derivations, the weights and the exponential.
 - *Biquaternion Lie Algebra* (`articles_physics/biquaternion-lie-algebra.md`), for the commutator, the roots and the Lie structure.
 - *The Spectra of the Operators on the Biquaternion Algebra with Hermitian Adjoint* (`articles_physics/the-spectra-of-the-operators-on-the-biquaternion-algebra-with-hermitian-adjoint.md`), for the spectral rules used here.

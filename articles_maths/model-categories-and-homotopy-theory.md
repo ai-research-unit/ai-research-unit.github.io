@@ -124,7 +124,7 @@ and $\operatorname{Sing}$ carries the CW complexes to the Kan complexes.
 
 ### Monoidal and Enriched Structure
 
-**Definition.** A **monoidal model category** is a model category with a symmetric monoidal structure, a unit, and the **pushout-product axiom**: for a cofibration $i$ and a cofibration $j$ the induced map $i j$ on the pushout-product is a cofibration, acyclic if either $i$ or $j$ is. A **simplicial model category** is a model category enriched over simplicial sets with a compatible action, so that the mapping objects $\operatorname{Map}(X,Y)$ are simplicial sets and the axioms of Quillen's homotopical algebra hold.
+**Definition.** A **monoidal model category** is a model category with a symmetric monoidal structure, a unit, and the **pushout-product axiom**: for a cofibration $i$ and a cofibration $j$ the induced map $i\Box j$ on the pushout-product is a cofibration, acyclic if either $i$ or $j$ is. A **simplicial model category** is a model category enriched over simplicial sets with a compatible action, so that the mapping objects $\operatorname{Map}(X,Y)$ are simplicial sets and the axioms of Quillen's homotopical algebra hold.
 
 **Theorem.** Let $\mathcal{C}$ be a monoidal model category.
 
@@ -160,7 +160,7 @@ Homotopy colimits and limits are the derived functors of colimit and limit; they
 | Dold–Kan | Equivalence simplicial $R$-modules $\leftrightarrow$ chain complexes |
 | $L_S\mathcal{C}$ | Left Bousfield localisation at a set of morphisms $S$ |
 | $\operatorname{Map}(X,Y)$ | Function complex in a simplicial model category; $\pi_0\operatorname{Map}(X,Y) = \operatorname{Ho}(\mathcal{C})(X,Y)$ |
-| Pushout-product $i j$ | Axiom making the monoidal structure homotopy invariant |
+| Pushout-product $i\Box j$ | Axiom making the monoidal structure homotopy invariant |
 | Dwyer–Kan localisation | Simplicial localisation presenting an $\infty$-category |
 | $R$ | Commutative ring with identity $1 \neq 0$ |
 

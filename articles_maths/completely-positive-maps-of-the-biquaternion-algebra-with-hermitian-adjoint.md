@@ -129,7 +129,7 @@ The completely positive maps of the biquaternion algebra are exactly the sums of
 - *Two-Sided Operators on the Biquaternion Algebra with Hermitian Adjoint* (`articles_maths/two-sided-operators-on-the-biquaternion-algebra-with-hermitian-adjoint.md`), for the sandwich as an operator, its positivity and its cone.
 - *The Spectra of the Operators on the Biquaternion Algebra with Hermitian Adjoint* (`articles_maths/the-spectra-of-the-operators-on-the-biquaternion-algebra-with-hermitian-adjoint.md`), for the positivity criteria in terms of the spectrum of the sandwich.
 - *Positivity and the Hermitian Cone of a Clifford Algebra with Hermitian Adjoint* (`articles_maths/positivity-and-the-hermitian-cone-of-a-clifford-algebra-with-hermitian-adjoint.md`), for the cone and the positive involution.
-- *The Hermitian Sylvester Equation on the Biquaternion Algebra with Hermitian Adjoint* (`articles_maths/the-hermitian-sylvester-equation-on-the-biquaternion-algebra-with-hermitian-adjoint.md`), for the fixed-point operator of a completely positive map.
+- *The Hermitian Sylvester Equation* (`articles_maths/the-hermitian-sylvester-equation.md`), for the fixed-point operator of a completely positive map.
 - *Bilinear Operators on a Clifford Module with Hermitian Adjoint* (`articles_maths/bilinear-operators-on-a-clifford-module-with-hermitian-adjoint.md`), for the operators built from two spinors, which are the rank-one elements behind the Kraus sums.
 - *Hermitian Clifford Modules with Hermitian Adjoint* (`articles_maths/hermitian-clifford-modules-with-hermitian-adjoint.md`), for the module picture of the positive cone.
 - *Biquaternion Hermitian Subspace* (`articles_maths/biquaternion-hermitian-subspace.md`), for the cone, the idempotents and the trace-one slice.

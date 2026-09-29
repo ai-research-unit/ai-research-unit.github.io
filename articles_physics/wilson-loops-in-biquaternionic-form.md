@@ -178,7 +178,7 @@ is the behaviour of a confining phase, where a flux tube forms and the coefficie
 The most common loop is the rectangle of spatial width $L$ and temporal extent $T$, with $T\gg L$. For large $T$ the expectation value exponentiates the energy of the state that the loop creates,
 
 $$
-\langle W(_{L\times T})\rangle \;\sim\; e^{-iT\,V(L)} ,
+\langle W(\Box_{L\times T})\rangle \;\sim\; e^{-iT\,V(L)} ,
 $$
 
 so that the loop is the worldline of a pair of static sources separated by $L$ and the exponent is the potential between them. An area law $e^{-\sigma LT}$ corresponds to $V(L)=\sigma L$, a linearly rising potential, which is confinement; a perimeter law corresponds to a potential that flattens at large $L$, which is screening. In the abelian free theory the evaluation of the previous sections gives the Coulomb potential $V(L)\sim g^2/L$ with the perimeter divergence removed, and the biquaternion reading is that the loop's Gaussian average is the self-interaction of the material line current through the material propagator. The potential is therefore the quantity that the loop expectation value encodes, and the confinement question is the question of whether the exponent grows with $L$ or with the perimeter.

@@ -94,7 +94,7 @@ where $\lambda_{i}$ are the eigenvalues of $\Phi(\tilde C)$ and $\mu_{j}$ those 
 
 *Proof.* Immediate from $L_{\tilde C}+R_{\tilde D}=\Phi(\tilde C)\otimes I+I\otimes\Phi(\tilde D)^{T}$ and the additivity of the spectrum under Kronecker sums for the first factor terms; verified on random pairs, together with the determinant formula.
 
-**Corollary (the self-adjoint Sylvester operator).** $(L_{\tilde C}+R_{\tilde D})^{*}=L_{\tilde C^{\dagger}}+R_{\tilde D^{\dagger}}$, so $L_{\tilde C}+R_{\tilde D}$ is self-adjoint exactly when both parameters are Hermitian, and the Lyapunov operator $L_{\tilde C}+R_{\tilde C^{\dagger}}$ is self-adjoint exactly when $\tilde C$ is Hermitian, with the real spectrum $\{\lambda_{i}+\overline{\lambda_{j}}\}=\{\lambda_{i}+\lambda_{j}\}$ for $\lambda_{i}$ real. Verified numerically. This is the operator side of the Hermitian Sylvester equation, developed in *The Hermitian Sylvester Equation on the Biquaternion Algebra with Hermitian Adjoint*.
+**Corollary (the self-adjoint Sylvester operator).** $(L_{\tilde C}+R_{\tilde D})^{*}=L_{\tilde C^{\dagger}}+R_{\tilde D^{\dagger}}$, so $L_{\tilde C}+R_{\tilde D}$ is self-adjoint exactly when both parameters are Hermitian, and the Lyapunov operator $L_{\tilde C}+R_{\tilde C^{\dagger}}$ is self-adjoint exactly when $\tilde C$ is Hermitian, with the real spectrum $\{\lambda_{i}+\overline{\lambda_{j}}\}=\{\lambda_{i}+\lambda_{j}\}$ for $\lambda_{i}$ real. Verified numerically. This is the operator side of the Hermitian Sylvester equation, developed in *The Hermitian Sylvester Equation*.
 
 ## Worked Examples
 
@@ -138,7 +138,7 @@ On the Hermitian space of the biquaternion algebra, the operators of the corpus 
 - *Biquaternion Spectral Theory* (`articles_maths/biquaternion-spectral-theory.md`), for the spectra of **elements**: the element-level theory that this article uses and does not repeat.
 - *Self-Adjoint and Skew Operators with Hermitian Adjoint* (`articles_maths/self-adjoint-and-skew-operators-with-hermitian-adjoint.md`), for the general operator-level theory of the adjoint.
 - *One-Sided Operators on the Biquaternion Algebra with Hermitian Adjoint* (`articles_maths/one-sided-operators-on-the-biquaternion-algebra-with-hermitian-adjoint.md`) and *Two-Sided Operators on the Biquaternion Algebra with Hermitian Adjoint* (`articles_maths/two-sided-operators-on-the-biquaternion-algebra-with-hermitian-adjoint.md`), for the definitions, the type criteria and the composition laws.
-- *The Hermitian Sylvester Equation on the Biquaternion Algebra with Hermitian Adjoint* (`articles_maths/the-hermitian-sylvester-equation-on-the-biquaternion-algebra-with-hermitian-adjoint.md`), for the solvability and the solution of $\tilde CX+X\tilde D=c$.
+- *The Hermitian Sylvester Equation* (`articles_maths/the-hermitian-sylvester-equation.md`), for the solvability and the solution of $\tilde CX+X\tilde D=c$.
 - *Completely Positive Maps of the Biquaternion Algebra with Hermitian Adjoint* (`articles_maths/completely-positive-maps-of-the-biquaternion-algebra-with-hermitian-adjoint.md`), for the positivity statements at the level of maps.
 - *Biquaternion Automorphisms and Derivations* (`articles_maths/biquaternion-automorphisms-and-derivations.md`), for the derivations and their weights.
 - *Biquaternion Hermitian Subspace* (`articles_maths/biquaternion-hermitian-subspace.md`) and *Biquaternion Spectral Theory* (`articles_maths/biquaternion-spectral-theory.md`), for the inertia, the cone and the element spectra.

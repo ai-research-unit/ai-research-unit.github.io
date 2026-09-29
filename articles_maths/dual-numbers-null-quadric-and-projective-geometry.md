@@ -3,7 +3,7 @@
 
 ## Introduction
 
-The norm $N(a + \varepsilon b) = a^2$ decides invertibility in the dual-number algebra and vanishes exactly on the zero divisors together with the origin. Both statements are algebraic: the criterion is in *Dual-Numbers Norm and Invertibility* and the zero-divisor classification in *Dual-Numbers Zero Divisors*. This article treats the form geometrically, following the structural model *Biquaternion Null Quadric and Projective Geometry*, where the norm of the biquaternions defines the Segre quadric in $\mathbb{P}^3$. Here the algebra is two-dimensional and the form has rank one, so the quadric degenerates to a single point of multiplicity two and the whole projective picture collapses.
+The norm $N(a + \varepsilon b) = a^2$ decides invertibility in the dual-number algebra and vanishes exactly on the zero divisors together with the origin. Both statements are algebraic: the criterion is in *Dual-Numbers Norm and Invertibility* and the zero-divisor classification in *Dual-Numbers Zero Divisors*. This article treats the form geometrically, following the structural model *Biquaternion Topology*, where the norm of the biquaternions defines the Segre quadric in $\mathbb{P}^3$. Here the algebra is two-dimensional and the form has rank one, so the quadric degenerates to a single point of multiplicity two and the whole projective picture collapses.
 
 The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. Throughout the algebra is $\mathbb{D}' = \mathbb{R}[\varepsilon]/(\varepsilon^2)$, a general dual number is
 

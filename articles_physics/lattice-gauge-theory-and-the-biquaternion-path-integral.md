@@ -187,7 +187,7 @@ $$
 $$
 where $N=2$ for the framework's group and the $O(1)$ denotes the perimeter and tiling corrections. The special case $N=2$, in which the fundamental representation is real, replaces $2N^2$ by $N^2$ at leading order: the one-plaquette average is
 $$
-\frac{1}{2}\big\langle \mathrm{Tr}\,U_\big\rangle
+\frac{1}{2}\big\langle \mathrm{Tr}\,U_\Box\big\rangle
 =\frac{I_2(\beta)}{I_1(\beta)}
 =\frac{\beta}{4}+O(\beta^3),
 $$
@@ -281,7 +281,7 @@ with the $N=2$ one-plaquette average beginning at $\beta/4$; this is confinement
 | $W(C)=\tfrac1N\mathrm{Tr}\prod_{l\in C}U_l$ | Lattice Wilson loop |
 | $\langle W(C)\rangle\sim e^{-\sigma A}$ | Area law; $\sigma$ the string tension |
 | $\sigma a^2=-\ln(\beta/2N^2)+O(1)$ | Leading strong-coupling string tension |
-| $\tfrac12\langle\mathrm{Tr}U_\rangle=I_2(\beta)/I_1(\beta)=\beta/4+O(\beta^3)$ | $SU(2)$ one-plaquette average |
+| $\tfrac12\langle\mathrm{Tr}U_\Box\rangle=I_2(\beta)/I_1(\beta)=\beta/4+O(\beta^3)$ | $SU(2)$ one-plaquette average |
 | $b_0=\tfrac{11}{3}C_2(G)=\tfrac{22}{3}$ | One-loop coefficient for pure $SU(2)$ |
 | $\eta=\mathrm{diag}(-1,+1,+1,+1)$ | $ict$ metric (level 2) |
 | $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ | Informational trace formula, distinct from the matrix trace |

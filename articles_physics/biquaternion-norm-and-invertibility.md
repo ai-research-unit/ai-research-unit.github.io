@@ -62,7 +62,7 @@ $$
 B(e_\mu,e_\nu)=\delta_{\mu\nu}.
 $$
 
-So $(\mathbb{B},N)$ is the standard non-degenerate quadratic space of dimension $4$ over $\mathbb{C}$. The form $B$ is complex-bilinear: it is **not** the Hermitian form $\tilde{P}\tilde{Q}^\dagger$ of the next section, and the two must not be conflated. Geometrically $B$ is the form whose vanishing locus is the null cone, the object the quadric of *Biquaternion Null Quadric and Projective Geometry* is built from.
+So $(\mathbb{B},N)$ is the standard non-degenerate quadratic space of dimension $4$ over $\mathbb{C}$. The form $B$ is complex-bilinear: it is **not** the Hermitian form $\tilde{P}\tilde{Q}^\dagger$ of the next section, and the two must not be conflated. Geometrically $B$ is the form whose vanishing locus is the null cone, the object the quadric of *Biquaternion Topology* is built from.
 
 ### Multiplicativity
 
@@ -390,13 +390,13 @@ Hence the realification $\operatorname{Re}N$ on $\mathbb{R}^8$ is non-degenerate
 | $\mathbb{M}_+$ | $q_0^2-(q'_1)^2-(q'_2)^2-(q'_3)^2$ | $(1,3)$ |
 | $\mathbb{M}_-$ | $-(q'_0)^2+q_1^2+q_2^2+q_3^2$ | $(3,1)$ |
 
-Each is a real slice whose complexification is $(\mathbb{B},N)$; the definite forms are $(4,0)$ and $(0,4)$, the indefinite ones $(1,3)$ and $(3,1)$, the neutral ones $(1,1)$ and $(3,3)$. The sign is the choice of geometry, the datum the geometry of *Biquaternion Geometry* is organised by.
+Each is a real slice whose complexification is $(\mathbb{B},N)$; the definite forms are $(4,0)$ and $(0,4)$, the indefinite ones $(1,3)$ and $(3,1)$, the neutral ones $(1,1)$ and $(3,3)$. The sign is the choice of geometry, the datum the geometry of *Biquaternion Lorentzian and Conformal Geometry* is organised by.
 
 Beyond the six distinguished subspaces, a mixed real subspace carries a signature of its own. The one the geometry uses is the **split form of signature $(2,2)$**,
 $$
 W=\operatorname{span}_{\mathbb{R}}\{e_0,e_1,ie_2,ie_3\},\qquad N|_W=a^2+b^2-c^2-d^2 \quad \text{for } a e_0+b e_1+ci e_2+di e_3,
 $$
-of real dimension $4$ and matrix $\operatorname{diag}(1,1,-1,-1)$; its complexification is $(\mathbb{B},N)$, and its projective quadric is the doubly ruled real surface $S^1\times S^1$ (*Biquaternion Null Quadric and Projective Geometry*, *Biquaternion Lorentzian and Conformal Geometry*).
+of real dimension $4$ and matrix $\operatorname{diag}(1,1,-1,-1)$; its complexification is $(\mathbb{B},N)$, and its projective quadric is the doubly ruled real surface $S^1\times S^1$ (*Biquaternion Topology*, *Biquaternion Lorentzian and Conformal Geometry*).
 
 ## The Relation to the Hermitian Decomposition
 

@@ -100,7 +100,7 @@ $$
 
 a Hermitian element of rank one, since $\Phi(\tilde{Q})=\mathrm{diag}(2,0)$ in the matrix model. The operator maps the algebra onto a rank-one corner and is neither unitary nor an automorphism.
 
-**Physical reading.** A two-sided operator built from a **null** element loses one internal direction: it is the degenerate limit of the transformation, and its rank collapses exactly when the norm vanishes. The corpus meets the same cone in the polar representation, which fails on the null cone, and in the null quadric (*Biquaternion Polar Element Representation*, *Biquaternion Null Quadric and Projective Geometry*): the interior of the cone $\{\tilde{Q}\tilde{Q}^{\dagger}\}$ is the image of the invertible elements, and the boundary is the image of the zero divisors. The two statements are one.
+**Physical reading.** A two-sided operator built from a **null** element loses one internal direction: it is the degenerate limit of the transformation, and its rank collapses exactly when the norm vanishes. The corpus meets the same cone in the polar representation, which fails on the null cone, and in the null quadric (*Biquaternion Polar Element Representation*, *Biquaternion Topology*): the interior of the cone $\{\tilde{Q}\tilde{Q}^{\dagger}\}$ is the image of the invertible elements, and the boundary is the image of the zero divisors. The two statements are one.
 
 ## Congruence, Unitary Equivalence and the Two Frame Changes
 

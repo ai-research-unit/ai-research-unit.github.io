@@ -81,16 +81,16 @@ The machine operates on a **tape**, a function $\mathbb{Z} \to \Gamma$ that is b
 
 The input is written on the tape as a block of $1$s with the head at its left end, and the machine is started in $q_0$. A partial function $f : \mathbb{N}^k \dashrightarrow \mathbb{N}$ is **Turing-computable** if there is a machine which, started on the input written in unary with the arguments separated by blanks, halts with the value of $f$ written in unary precisely when $f$ is defined at that input.
 
-**Example (successor).** Let $Q = \{q_0, q_{\mathrm{h}}\}$, $\Gamma = \{, 1\}$, and let $\delta(q_0, 1) = (q_0, 1, R)$, $\delta(q_0,) = (q_{\mathrm{h}}, 1, R)$. Started on $1^n$, the machine moves right across the block of $n$ ones, writes a $1$ in the blank cell to its right, and halts; the tape holds $1^{n+1}$. The machine computes the successor function.
+**Example (successor).** Let $Q = \{q_0, q_{\mathrm{h}}\}$, $\Gamma = \{\Box, 1\}$, and let $\delta(q_0, 1) = (q_0, 1, R)$, $\delta(q_0, \Box) = (q_{\mathrm{h}}, 1, R)$. Started on $1^n$, the machine moves right across the block of $n$ ones, writes a $1$ in the blank cell to its right, and halts; the tape holds $1^{n+1}$. The machine computes the successor function.
 
-**Example (addition).** Let $Q = \{q_0, q_1, q_2, q_{\mathrm{h}}\}$ and $\Gamma = \{, 1\}$, with
-
-$$
-\delta(q_0,1)=(q_0,1,R), \quad \delta(q_0,)=(q_1,1,R), \quad \delta(q_1,1)=(q_1,1,R),
-$$
+**Example (addition).** Let $Q = \{q_0, q_1, q_2, q_{\mathrm{h}}\}$ and $\Gamma = \{\Box, 1\}$, with
 
 $$
-\delta(q_1,)=(q_2,,L), \quad \delta(q_2,1)=(q_{\mathrm{h}},,R).
+\delta(q_0,1)=(q_0,1,R), \quad \delta(q_0,\Box)=(q_1,1,R), \quad \delta(q_1,1)=(q_1,1,R),
+$$
+
+$$
+\delta(q_1,\Box)=(q_2,\Box,L), \quad \delta(q_2,1)=(q_{\mathrm{h}},\Box,R).
 $$
 
 Started on $1^n 1^m$ with the head at the left end, the machine scans the first block in $q_0$, replaces the separating blank by a $1$, scans the second block in $q_1$, steps left onto the last $1$, and erases it in $q_2$. The tape then holds $1^n\,1\,1^{m-1} = 1^{n+m}$, and the cases $n = 0$ and $m = 0$ are read from the same instructions, a block of length $0$ being simply absent. Thus the machine computes addition.

@@ -97,7 +97,7 @@ $$
 
 so the scalar form of the dagger is the standard Hermitian form of $\mathbb{C}^{4}$ and the blade form is the coefficient form twisted by the signature of the quaternion units, as in *The Blade Form and the Hilbert Structure with Hermitian Adjoint*.
 
-**Corollary (the cone in coordinates).** The Hermitian cone of $\mathbb{B}$ is the image of $x \mapsto x^{\dagger}x$; over the positive involution it is the cone of the $C^{*}$-algebra $M_2(\mathbb{C})$, whose scalar part is $\sum_\mu|Q_\mu|^{2}$ and whose boundary elements are the singular matrices; its restriction to the Hermitian subspace has the Lorentzian cone of $\mathbb{M}_+$ on its diagonal, which is the null cone of *Biquaternion Null Quadric and Projective Geometry*.
+**Corollary (the cone in coordinates).** The Hermitian cone of $\mathbb{B}$ is the image of $x \mapsto x^{\dagger}x$; over the positive involution it is the cone of the $C^{*}$-algebra $M_2(\mathbb{C})$, whose scalar part is $\sum_\mu|Q_\mu|^{2}$ and whose boundary elements are the singular matrices; its restriction to the Hermitian subspace has the Lorentzian cone of $\mathbb{M}_+$ on its diagonal, which is the null cone of *Biquaternion Topology*.
 
 ## Summary
 
@@ -118,7 +118,7 @@ The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes\mathbb{H}$, with Hermit
 
 ## Further Reading
 
-- The corpus articles *Biquaternion Algebra*, *Biquaternion Involution Lattice*, *Biquaternion Hermitian Subspace*, *Biquaternion Anti-Hermitian Subspace*, *Biquaternion Versors and the Orthogonal Group*, *Biquaternion Rotations and Lorentz Transformations* and *Biquaternion Null Quadric and Projective Geometry*, for the coordinate and geometric background used here.
+- The corpus articles *Biquaternion Algebra*, *Biquaternion Involution Lattice*, *Biquaternion Hermitian Subspace*, *Biquaternion Anti-Hermitian Subspace*, *Biquaternion Versors and the Orthogonal Group*, *Biquaternion Rotations and Lorentz Transformations* and *Biquaternion Topology*, for the coordinate and geometric background used here.
 - Ian R. Porteous, *Clifford Algebras and the Classical Groups*, Cambridge Studies in Advanced Mathematics 50 (Cambridge University Press, 1995), for the identification of the complexified quaternions with $M_2(\mathbb{C})$ and the Lorentz group.
 - Pertti Lounesto, *Clifford Algebras and Spinors*, London Mathematical Society Lecture Note Series 286 (Cambridge University Press, 2nd ed. 2001), for the complexified quaternion algebra and its involutions.
 - Roger Penrose and Wolfgang Rindler, *Spinors and Space-Time*, Vol. 1 (Cambridge University Press, 1984), for the Hermitian-matrix model of Minkowski space and the $SL(2,\mathbb{C})$ action.

@@ -114,7 +114,7 @@ $$
 p_{\alpha\dot\beta} \;=\; \lambda_\alpha\,\tilde\lambda_{\dot\beta},
 $$
 
-with $\lambda$ in the spinor module $S$ — the left-handed Weyl module $(\tfrac12,0)$ — and $\tilde\lambda$ transforming in the conjugate (right-handed) Weyl module $(0,\tfrac12)$. This is exactly the factorization $\phi_\alpha\pi^{\dot\beta}$ of the null quadric's mixed spinor $A_\alpha{}^{\dot\beta}$ (*Biquaternion Null Quadric and Projective Geometry*), and it is the statement that a null bispinor is a point of the Segre quadric $\mathbb{P}^1\times\mathbb{P}^1$: the two factors are the two rulings.
+with $\lambda$ in the spinor module $S$ — the left-handed Weyl module $(\tfrac12,0)$ — and $\tilde\lambda$ transforming in the conjugate (right-handed) Weyl module $(0,\tfrac12)$. This is exactly the factorization $\phi_\alpha\pi^{\dot\beta}$ of the null quadric's mixed spinor $A_\alpha{}^{\dot\beta}$ (*Biquaternion Topology*), and it is the statement that a null bispinor is a point of the Segre quadric $\mathbb{P}^1\times\mathbb{P}^1$: the two factors are the two rulings.
 
 **Reality and the two Weyl spinors.** For a real momentum, $\tilde P \in \mathbb{M}_-$ is anti-Hermitian, so $\Phi(\tilde P)$ is anti-Hermitian. An anti-Hermitian rank-one matrix is $i$ times a Hermitian rank-one matrix, and a positive-semidefinite Hermitian rank-one matrix is $u u^\dagger$ for a single spinor $u$; consequently the two factors in $\Phi(\tilde P) = \lambda\tilde\lambda^T$ are conjugate up to a phase,
 
@@ -318,7 +318,7 @@ Two things are deliberately not claimed. The framework does not derive the Parke
 - Roger Penrose and Wolfgang Rindler, *Spinors and Space-Time*, Vol. 1: *Two-Spinor Calculus and Relativistic Fields* (Cambridge University Press, 1984), for the two-component spinor calculus and the reality condition on the momentum bispinor.
 - Steven Weinberg, *The Quantum Theory of Fields*, Vol. 1 (Cambridge University Press, 1995), for the little group of a massless particle and helicity as the weight of its compact subgroup.
 - Companion article *Biquaternion Zero Divisors*, for the criterion $N(\tilde Q)=0$, the pure and non-pure families, and the rank-one statement.
-- Companion article *Biquaternion Null Quadric and Projective Geometry*, for the Segre quadric, the two rulings, and the mixed-spinor factorisation $A_\alpha{}^{\dot\beta}=\phi_\alpha\pi^{\dot\beta}$.
+- Companion article *Biquaternion Topology*, for the Segre quadric, the two rulings, and the mixed-spinor factorisation $A_\alpha{}^{\dot\beta}=\phi_\alpha\pi^{\dot\beta}$.
 - Companion article *The Spinor Module in Biquaternionic Form and Its Lorentz Action*, for the module $S$, the conjugate module, the symplectic form $\varepsilon$, and the Lorentz action.
 - Companion article *Exercise: Chirality and the Weyl Spinors*, for the chirality projectors, the conjugate defining representation in the $\varepsilon$ convention.
 - Companion article *The Lorentz Group in Biquaternionic Form — Structure and Representations*, for the $(m,n)$ classification containing $(\tfrac12,0)$ and $(0,\tfrac12)$.
