@@ -3,7 +3,7 @@
 ### <a href="articles_maths/introduction-and-mathematical-conventions.html">Introduction and Mathematical Conventions</a>
 <!-- the entry point to the corpus: what the six parts are and what each does; the five-slot spine Foundations, Groups, Rings and Fields, Linear Spaces and Linear Algebras shared by Parts I to III, and the further subjects each part adds after it, with geometry read along the same slots; the object ladder; the three rules of the ordering and the category rule of the reading unit; distance as the boundary between algebra and topology, the derivative and the measure as the boundary between topology and analysis, and geometry as the second intent of the same structure; the boundary tests that state what each part may not use; the synthetic progression of Part VI; the method of successive paths by which the corpus is learnt, a cycle through the six parts at one depth and then again one rung deeper; the transversal catalogues of Part V; the exclusion of physics; the notational and corpus conventions. -->
 
-# Part I : Algebra
+## PART I : ALGEBRA
 
 ## Foundations of Algebra
 
@@ -587,7 +587,7 @@
 ### <a href="articles_maths/representations-of-algebras.html">Representations of Algebras</a>
 <!-- irreducible representations, Schur's lemma, modules over matrix algebras, the structure of group algebras. -->
 
-# Part II : Topology
+## PART II : TOPOLOGY
 
 ## Foundations of Topology
 
@@ -1144,7 +1144,7 @@
 ###<a href="articles_maths/floer-homology.html">Floer Homology</a>
 <!-- Floer homology and its properties; the relation to the symplectic topology of this part and to the algebraic topology of this part. -->
 
-# Part III : Analysis
+## PART III : ANALYSIS
 
 ## Foundations of Analysis
 
@@ -1531,7 +1531,7 @@
 ###<a href="articles_maths/dynamics-and-number-theory.html">Dynamics and Number Theory</a>
 <!-- the dynamics of arithmetic origin; the Gauss map and continued fractions; the relation to the homogeneous dynamics of this part. -->
 
-# Part IV : Geometry
+## PART IV : GEOMETRY
 
 ## Foundations of Geometry
 
@@ -1689,7 +1689,7 @@
 ### <a href="articles_maths/spectral-triples-and-noncommutative-geometry.html">Spectral Triples and Noncommutative Geometry</a>
 <!-- a spectral triple $(A,H,D)$ and its axioms; the operator $D$ as the metric datum and the distance formula it defines; the real structure and the KO-dimension; the commutative case, where a spin manifold is recovered from its algebra of functions; the local index formula; the spectral dimension and the heat kernel asymptotics; the finite-dimensional examples. -->
 
-# Part V : Catalogues
+## PART V : CATALOGUES
 
 ## Catalogue of Algebra
 
@@ -1948,7 +1948,7 @@
 ### <a href="articles_maths/list-of-non-examples-in-geometry.html">List of Non-Examples in Geometry</a>
 <!-- the objects that fail one geometric property: the Alexander horned sphere (not a manifold), the Whitehead manifold of *Wild and Exotic Manifolds* (contractible but not homeomorphic to $\mathbb{R}^3$), the exotic spheres (homeomorphic but not diffeomorphic to $S^7$), and the non-orientable surfaces, with the property each one breaks. -->
 
-# Part VI : Synthetic Studies
+## PART VI : SYNTHETIC STUDIES
 
 ## Booleans
 
