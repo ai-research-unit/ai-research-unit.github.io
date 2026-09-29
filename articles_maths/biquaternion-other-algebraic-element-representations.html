@@ -52,9 +52,8 @@
       <div class="article-body">
         <h1 id="biquaternion-other-algebraic-element-representations"><strong>Biquaternion Other Algebraic Element Representations</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>The algebra article defined the biquaternion algebra $\mathbb{B}$, its conjugations, and its six distinguished real subspaces $\mathbb{C}_{\mathbb{B}}$, $\mathrm{Vect}(\mathbb{B})$, $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$ and $\mathbb{M}_-$. This article describes the three <strong>algebraic realizations</strong> of $\mathbb{B}$ that are not the subject of a dedicated article of their own:</p>
+<p>The algebra article defined the biquaternion algebra $\mathbb{B}$, its conjugations, and its six distinguished real subspaces $\mathbb{C}_{\mathbb{B}}$, $\mathrm{Vect}(\mathbb{B})$, $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$ and $\mathbb{M}_-$. This article describes the two <strong>algebraic realizations</strong> of $\mathbb{B}$ that are not the subject of a dedicated article of their own:</p>
 <ol>
-<li><strong>Spinor representation.</strong> A biquaternion written on two-component spinors, its $2\times2$ image acting by matrix multiplication on a column.</li>
 <li><strong>Clifford algebra representation.</strong> A biquaternion as an element of the even Clifford algebra $\mathrm{Cl}_{1,3}^+$.</li>
 <li><strong>Conjugation action.</strong> A biquaternion as an inner automorphism $\tilde T \mapsto \tilde{Q}\tilde T\tilde{Q}^{-1}$ of the algebra.</li>
 </ol>
@@ -81,8 +80,9 @@
 </tr>
 </tbody>
 </table></div>
-<p>and the polar realizations, which use the exponential and the roots of $-1$, of <em>Biquaternion Polar Element Representation</em> and <em>Biquaternion Partial Polar Element Representations</em>. Each of those articles owns its realization, its derivation and its relations with the others; this article records only the relations that involve the three realizations studied here.</p>
-<p>The word "representation" is used throughout in the sense of "a concrete realization of the algebra as a collection of computable objects." It is not used in the technical sense of algebra representation theory, in which a representation of an algebra $A$ is a vector space $V$ together with an algebra homomorphism $\rho : A \to \mathrm{End}(V)$. The two uses are related — the spinor representation below is a representation in both senses — but they are not the same. We use the word in the first sense.</p>
+<p>and the polar realizations, which use the exponential and the roots of $-1$, of <em>Biquaternion Polar Element Representation</em> and <em>Biquaternion Partial Polar Element Representations</em>. Each of those articles owns its realization, its derivation and its relations with the others; this article records only the relations that involve the two realizations studied here.</p>
+<p>The spinor module, and the action of the algebra on two-component spinors, are not a realization of this article: they are developed in <em>Biquaternion Spin Geometry</em>, with the operator theory in <em>Biquaternion Twisted Spinor Operator Representation</em>.</p>
+<p>The word "representation" is used throughout in the sense of "a concrete realization of the algebra as a collection of computable objects." It is not used in the technical sense of algebra representation theory, in which a representation of an algebra $A$ is a vector space $V$ together with an algebra homomorphism $\rho : A \to \mathrm{End}(V)$. The two uses are related — the conjugation action below is a representation in both senses — but they are not the same. We use the word in the first sense.</p>
 <p>The word "algebraic" is used to contrast with "polar," not with "matrix." The realizations in this article use only the algebra operations, the scalar imaginary, and the underlying complex vector space structure. They do not use the exponential, the roots of $-1$, or any analytic construction.</p>
 <p><strong>Objects and operators.</strong> A realization writes the element as an array and decides nothing about how the array is used. The same $2\times2$ matrix $\Phi(\tilde{Q})$ is the biquaternion written as an <strong>object</strong> — an array whose entries are its coordinates — and, as soon as a column is placed beside it, the <strong>operator</strong> acting on that column. Neither reading is a property of the size of the array, and neither is a property of the realization: a four-component object built from the algebra (the coefficient four-vector; an element of the algebra read as a vector of the underlying eight-dimensional real space) has an image in the four-vector, the $2\times2$ and the $4\times4$ realization alike, and none of those three images is an operator by itself. An operator appears exactly where an action on a carrier is specified, and the carrier may be $\mathbb{C}^2$, a space of four-component objects, or the algebra itself. The two maps met in this article and in <em>Biquaternion Rotations and Lorentz Transformations</em>, the conjugation and the dagger sandwich, are therefore not more operator-like than a matrix array: they are maps of the algebra to itself, which is a different carrier, not a different kind of array. The objects of the corpus are written in these realizations and are not operators; an object acts only once an action has been attached to it, and one matrix realization can carry both the object and the action on it.</p>
 <p>Throughout, we use the notation of the algebra article: a biquaternion is written</p>
@@ -94,31 +94,8 @@ $$</p>
 \tilde{Q} = \sum_{\mu=0}^{3} Q_\mu e_\mu, \qquad Q_\mu \in \mathbb{C},
 $$</p>
 <p>with $e_0 = 1$ and $e_1, e_2, e_3$ the quaternion units. The scalar imaginary is $i$, which commutes with the quaternion units. Each complex coefficient is written $Q_\mu = q_\mu + i q'_\mu$ with $q_\mu, q'_\mu \in \mathbb{R}$.</p>
-<h2 id="the-spinor-representation">The Spinor Representation</h2>
-<h3 id="definition">Definition</h3>
-<p>A <strong>spinor</strong> is an element of the two-dimensional complex vector space $\mathbb{C}^2$, written as a column vector</p>
-<p>$$
-\psi = \begin{pmatrix} \psi_1 \\ \psi_2 \end{pmatrix}, \qquad \psi_1, \psi_2 \in \mathbb{C}.
-$$</p>
-<p>A biquaternion $\tilde{Q}$ acts on a spinor by matrix multiplication, via the isomorphism $\mathbb{B} \cong M_2(\mathbb{C})$ of <em>Biquaternion 2×2 Matrix Element Representation</em>:</p>
-<p>$$
-\psi \mapsto \tilde{Q} \psi = \begin{pmatrix} (Q_0 - i Q_3)\psi_1 + (-i Q_1 - Q_2)\psi_2 \\ (-i Q_1 + Q_2)\psi_1 + (Q_0 + i Q_3)\psi_2 \end{pmatrix}.
-$$</p>
-<p>This is the <strong>spinor representation</strong> of the biquaternion algebra: the biquaternion acts as a linear operator on the space of spinors.</p>
-<p>A spinor is not a biquaternion, and it should be distinguished clearly from the biquaternion that acts on it. The biquaternion is an algebra element; the spinor is an element of the module on which the algebra acts. The relation between them is the module structure.</p>
-<h3 id="properties">Properties</h3>
-<p><strong>Linearity.</strong> The action is complex-linear in $\psi$: $\tilde{Q}(\lambda \psi + \mu \phi) = \lambda \tilde{Q}\psi + \mu \tilde{Q}\phi$ for $\lambda, \mu \in \mathbb{C}$.</p>
-<p><strong>Composition.</strong> The action is compatible with multiplication: $\tilde{Q}(\tilde{R}\psi) = (\tilde{Q} \circ \tilde{R})\psi$. This is the module structure, and it is the reason the spinor representation is a representation in both senses of the word.</p>
-<p><strong>Hermitian inner product.</strong> The space of spinors carries a natural Hermitian inner product</p>
-<p>$$
-\langle \psi, \phi \rangle = \psi_1^* \phi_1 + \psi_2^* \phi_2.
-$$</p>
-<p>The biquaternion action preserves this inner product when $\tilde{Q}$ is unitary, i.e., when $\tilde{Q}^\dagger \tilde{Q} = 1$. The unitary biquaternions form the group $U(2)$.</p>
-<p><strong>Determinant.</strong> The subgroup of $U(2)$ consisting of elements with determinant $1$ is $SU(2)$. This is the group of unit quaternions, and it is the double cover of the rotation group $SO(3)$.</p>
-<h3 id="relation-to-the-representation-theory-article">Relation to the Representation Theory Article</h3>
-<p>The spinor module is the defining module of the group of units: a biquaternion of unit norm acts on $\mathbb{C}^2$ by the same $2 \times 2$ matrices, so $SL(2,\mathbb{C})$ acts on spinors. The structure attached to that action — the weights $(\tfrac{1}{2}, 0)$ and $(0, \tfrac{1}{2})$ of the defining module and its conjugate, the vector representation as the tensor product of the spinor with its conjugate, the double covers of the rotation and Lorentz groups, the Clebsch--Gordan rule, and the unitary representations — is not treated here. The present section supplies the realization only: the algebra as operators on $\mathbb{C}^2$, and the module structure that the action defines. The module itself — its two chiral halves, its dual and its conjugate, the spinor contraction, the reality conditions on it, and the Clifford multiplication in the matrix model — is developed in <em>Biquaternion Spin Geometry</em>, which is the dedicated article on the spinor module.</p>
 <h2 id="the-clifford-algebra-representation">The Clifford Algebra Representation</h2>
-<h3 id="definition_1">Definition</h3>
+<h3 id="definition">Definition</h3>
 <p>The Clifford algebra $\mathrm{Cl}_{1,3}(\mathbb{R})$ is generated by four elements $\gamma^0, \gamma^1, \gamma^2, \gamma^3$ satisfying the anticommutation relations</p>
 <p>$$
 \gamma^\mu \gamma^\nu + \gamma^\nu \gamma^\mu = 2 g^{\mu\nu} I,
@@ -142,19 +119,19 @@ $$</p>
 <p>where $\omega = \gamma^0 \gamma^1 \gamma^2 \gamma^3$. This is the clean form the mostly-minus convention allows: all six bivectors correspond to the quaternion units with positive signs, and the single sign is carried by $i$ itself. Under the opposite sign of the generators the correspondence has to be $e_3 \mapsto \gamma^2\gamma^1$, and the timelike signs then come out mixed; no choice of the sign of $i$ makes all three positive there.</p>
 <p><strong>Verification.</strong> Each spacelike bivector squares to $-1$: $(\gamma^j \gamma^k)^2 = \gamma^j \gamma^k \gamma^j \gamma^k = -\gamma^j \gamma^j \gamma^k \gamma^k = -(-1)(-1) = -1$ for $j \neq k$ in $\{1, 2, 3\}$, since $(\gamma^j)^2 = -1$ in signature $(1,3)$. The pseudoscalar also squares to $-1$: $(\gamma^0 \gamma^1 \gamma^2 \gamma^3)^2 = -1$. The products reproduce the quaternion relations: for example, $e_1 e_2 \mapsto (\gamma^2 \gamma^3)(\gamma^3 \gamma^1) = \gamma^2 (\gamma^3)^2 \gamma^1 = -\gamma^2 \gamma^1 = \gamma^1 \gamma^2$, matching $e_1 e_2 = e_3$ in the quaternion algebra.</p>
 <p><strong>Equality of the containment.</strong> The three spacelike bivectors generate a copy of $\mathbb{H}$ inside $\mathrm{Cl}_{1,3}^+$, and the pseudoscalar $\omega = \gamma^0\gamma^1\gamma^2\gamma^3$ is central in $\mathrm{Cl}_{1,3}^+$ with $\omega^2 = -1$, so it generates a central copy of $\mathbb{C}$ commuting with that copy. Hence $\mathbb{R}[\omega]\otimes_{\mathbb{R}}\mathbb{H} \cong \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H} = \mathbb{B}$ embeds in $\mathrm{Cl}_{1,3}^+$. Both sides have real dimension $8$, so the embedding is surjective; this is what makes the identification an equality of algebras rather than an identification of $\mathbb{B}$ with a proper subalgebra.</p>
-<h3 id="properties_1">Properties</h3>
+<h3 id="properties">Properties</h3>
 <p><strong>Multiplication.</strong> The Clifford product of two even elements is even, so the even subalgebra is closed under multiplication. Under the isomorphism, the Clifford product corresponds to the biquaternion product.</p>
 <p><strong>Biquaternion norm.</strong> The Clifford norm on the even subalgebra corresponds to the biquaternion norm.</p>
 <p><strong>Relation to $M_2(\mathbb{C})$.</strong> The even subalgebra $\mathrm{Cl}_{1,3}^+$ is isomorphic to $M_2(\mathbb{C})$ as a real algebra, which is the algebraic content of the isomorphism $\mathbb{B} \cong M_2(\mathbb{C})$ of <em>Biquaternion 2×2 Matrix Element Representation</em>. The full Clifford algebra $\mathrm{Cl}_{1,3}$ is isomorphic to $M_2(\mathbb{H})$, the $2\times 2$ matrices over the quaternions, as a real algebra (equivalently, $\mathrm{Cl}_{1,3} \otimes_{\mathbb{R}} \mathbb{C} \cong M_4(\mathbb{C})$), and its even subalgebra is the single copy of $M_2(\mathbb{C})$ on which the biquaternions are modeled. The opposite-sign algebra is the real matrix algebra, $\mathrm{Cl}_{3,1} \cong M_4(\mathbb{R})$; the two are distinct over $\mathbb{R}$ but share the even part. The same identification under the companion labelling, $\mathbb{B}\cong\mathrm{Cl}_{3,1}^+$, together with the volume element as central scalar, the outer product and the grades, the matrix model, the idempotents, the Peirce decomposition and the ideals, is developed in <em>The Clifford Structure of the Biquaternion Algebra</em>, which is the dedicated article on the Clifford identification.</p>
 <h3 id="why-the-clifford-algebra-representation-is-useful">Why the Clifford Algebra Representation Is Useful</h3>
 <p>The Clifford algebra representation is useful because:</p>
 <ol>
-<li><strong>It connects the algebra to the Clifford algebra of the underlying form.</strong> The biquaternion algebra is the even part of $\mathrm{Cl}_{1,3}$, and the even part is what acts on spinors.</li>
+<li><strong>It connects the algebra to the Clifford algebra of the underlying form.</strong> The biquaternion algebra is the even part of $\mathrm{Cl}_{1,3}$.</li>
 <li><strong>It makes the geometry explicit.</strong> The Clifford algebra is the natural algebraic structure on a vector space with a quadratic form. In the case of $\mathrm{Cl}_{1,3}$, that form has signature $(1,3)$: one generator squares to $+1$ and three to $-1$.</li>
 <li><strong>It generalizes.</strong> The Clifford algebra construction works in any dimension and any signature. The biquaternion algebra is the specific case of dimension $4$ and signature $(1,3)$ — the Hermitian form of the algebra, since the Clifford vectors correspond to the Hermitian subspace $\mathbb{M}_+$ — and the general theory places it in a broader context.</li>
 </ol>
 <h2 id="the-conjugation-action">The Conjugation Action</h2>
-<h3 id="definition_2">Definition</h3>
+<h3 id="definition_1">Definition</h3>
 <p>The third two-sided action of a unit on the algebra replaces the Hermitian conjugate of the sandwich by the inverse:</p>
 <p>$$
 \operatorname{Ad}_{\tilde{Q}}(\tilde T) = \tilde{Q}\,\tilde T\,\tilde{Q}^{-1}, \qquad N(\tilde{Q}) \neq 0 .
@@ -224,17 +201,16 @@ $$</p>
 (ie_1)\,\tilde\Pi_1\,(ie_1)^{-1} = 1 - \tilde\Pi_1 ,
 $$</p>
 <p>and for a generic unit the image is a third idempotent, neither $\tilde\Pi_1$ nor $1-\tilde\Pi_1$: the exchange of the two halves is the special case, not the rule. The units that leave the halving untouched are exactly those commuting with $\tilde\Pi_1$, that is, the elements of $\mathrm{span}_{\mathbb{C}}\{e_0, e_3\}$; being unitary is not sufficient for that, since $e_1$ is unitary and does not commute with $\tilde\Pi_1$.</p>
-<p>The dagger sandwich exchanges them as well, $\operatorname{H}_{ie_1}(\tilde\Pi_1) = 1 - \tilde\Pi_1$. Neither action is a map of left modules over the algebra — $\operatorname{H}_{\tilde{Q}}(\tilde B\tilde T) \neq \tilde B\operatorname{H}_{\tilde{Q}}(\tilde T)$ in general, and the same is true of $\operatorname{Ad}_{\tilde{Q}}$ — but only the automorphism is multiplicative, and it is multiplicativity that makes the exchange of the halves a statement about the algebra rather than about one element. Since the spinor module of this article is one of the two halves, the two-sided actions either preserve the spinor module or exchange it with its opposite; this is the algebraic origin of the conjugate spinor, the second of the two chiral components.</p>
+<p>The dagger sandwich exchanges them as well, $\operatorname{H}_{ie_1}(\tilde\Pi_1) = 1 - \tilde\Pi_1$. Neither action is a map of left modules over the algebra — $\operatorname{H}_{\tilde{Q}}(\tilde B\tilde T) \neq \tilde B\operatorname{H}_{\tilde{Q}}(\tilde T)$ in general, and the same is true of $\operatorname{Ad}_{\tilde{Q}}$ — but only the automorphism is multiplicative, and it is multiplicativity that makes the exchange of the halves a statement about the algebra rather than about one element.</p>
 <h2 id="relations-between-the-representations">Relations Between the Representations</h2>
-<p><strong>Spinor and Clifford.</strong> The two realizations of this article meet at the matrix algebra. The even subalgebra $\mathrm{Cl}_{1,3}^+$ is isomorphic to $M_2(\mathbb{C})$ as a real algebra, and the matrix algebra is exactly the algebra of complex-linear operators on the spinor space $\mathbb{C}^2$. Under the dictionary of the Clifford section the six bivectors are the matrices of the quaternion units and of the imaginary quaternion units, so the spinor realization is the module of the Clifford realization: the bivectors act on a spinor, and the action is the matrix multiplication. The algebra and its module belong together in the Clifford description, which is the reason that description is the one in which the spinor module is usually met.</p>
-<p><strong>Spinor and the regular realization.</strong> The left regular representation of <em>Biquaternion 4×4 Regular Matrix Element Representation</em> is not a third action but the spinor action taken twice. Since $\Phi(\tilde{Q}\tilde T) = \Phi(\tilde{Q})\Phi(\tilde T)$, reading the four entries of $\Phi(\tilde T)$ column by column exhibits an isomorphism of left $\mathbb{B}$-modules</p>
+<p><strong>The minimal left ideals and the regular realization.</strong> The left regular representation of <em>Biquaternion 4×4 Regular Matrix Element Representation</em> is not a third action but the left action on the two minimal left ideals taken twice. Since $\Phi(\tilde{Q}\tilde T) = \Phi(\tilde{Q})\Phi(\tilde T)$, reading the four entries of $\Phi(\tilde T)$ column by column exhibits an isomorphism of left $\mathbb{B}$-modules</p>
 <p>$$
 \mathbb{B} \longrightarrow \mathbb{C}^2 \oplus \mathbb{C}^2, \qquad
 \tilde T \longmapsto \bigl(\text{first column of } \Phi(\tilde T),\ \text{second column of } \Phi(\tilde T)\bigr),
 $$</p>
 <p>on which $\tilde{Q}$ acts on each copy as $\Phi(\tilde{Q})$. The two copies are the two minimal left ideals of the section above, $\mathbb{B}\tilde\Pi_1$ and $\mathbb{B}(1-\tilde\Pi_1)$, each of real dimension $4$, and in the $\Phi$ picture they are the two column spaces. In a basis of $\mathbb{B}$ made of a basis of $\mathbb{B}\tilde\Pi_1$ followed by a basis of $\mathbb{B}(1-\tilde\Pi_1)$, the left-regular $4\times4$ matrix of $\tilde{Q}$ is therefore block diagonal with $\Phi(\tilde{Q})$ in both diagonal blocks. This is why the $2\times2$ and $4\times4$ accounts of the same algebra cannot disagree about the isomorphism $\Phi$: the second contains the first twice.</p>
 <p><strong>Conjugation and the sandwich.</strong> The conjugation action is the multiplicative core of the dagger sandwich: the two coincide exactly on the unitary elements, $\operatorname{H}_{\tilde{Q}} = \operatorname{Ad}_{\tilde{Q}}$ for $\tilde{Q}^{\dagger}\tilde{Q} = e_0$, and in general $\operatorname{H}_{\lambda\tilde{U}} = |\lambda|^2\operatorname{Ad}_{\tilde{U}}$ for $\tilde{Q} = \lambda\tilde{U}$ with central $\lambda$ and unitary $\tilde{U}$. <em>Biquaternion Rotations and Lorentz Transformations</em> reads the sandwich against this reference, and the two differ in exactly two respects: the sandwich is not multiplicative off the unitary slice, and it is not invariant under a rescaling of $\tilde{Q}$ by a central element, so that it distinguishes the class of $\tilde{Q}$ from $\tilde{Q}$ itself.</p>
-<p><strong>Conjugation and the spinor module.</strong> Because it is an automorphism, the conjugation action permutes the two minimal left ideals, and it exchanges them for any unit not commuting with $\tilde\Pi_1$, for instance $ie_1$. The spinor realization of this article is one of the two; a two-sided action either leaves the halving alone, when the acting unit commutes with $\tilde\Pi_1$, or carries the spinor module to another minimal left ideal, which is its opposite in the special case of $ie_1$ and a third module in general. This is the algebraic origin of the conjugate spinor.</p>
+<p><strong>Conjugation and the minimal left ideals.</strong> Because it is an automorphism, the conjugation action permutes the two minimal left ideals, and it exchanges them for any unit not commuting with $\tilde\Pi_1$, for instance $ie_1$. A two-sided action either leaves the halving alone, when the acting unit commutes with $\tilde\Pi_1$, or carries $\mathbb{B}\tilde\Pi_1$ to another minimal left ideal, which is its opposite in the special case of $ie_1$ and a third ideal in general.</p>
 <p><strong>With the realizations treated elsewhere.</strong> The remaining relations are recorded in the articles that own those realizations:</p>
 <ul>
 <li>the four-vector realization and the $2\times2$ matrix realization are related by the explicit isomorphism that reads the components $Q_\mu$ off the matrix entries;</li>
@@ -247,13 +223,12 @@ $$</p>
 <h2 id="the-role-of-choices">The Role of Choices</h2>
 <p>Each representation involves a choice, and different choices give equivalent but not identical representations.</p>
 <ul>
-<li><strong>Spinor representation:</strong> the choice of the basis of $\mathbb{C}^2$, which is determined by the choice of the matrix realization.</li>
 <li><strong>Clifford algebra representation:</strong> the choice of the gamma matrices, which is determined by the choice of the bilinear form and the basis of the underlying vector space.</li>
 <li><strong>Conjugation action:</strong> the choice of the unit $\tilde{Q}$, which is redundant, since $\operatorname{Ad}_{\lambda\tilde{Q}} = \operatorname{Ad}_{\tilde{Q}}$ for every nonzero central $\lambda$; the action depends on $\tilde{Q}$ only through its class in $\mathbb{B}^{\times}/\mathbb{C}_{\mathbb{B}}^{\times}$.</li>
 </ul>
 <p>The choices belonging to the other realizations are recorded in their own articles. Different choices give representations that are related by conjugation, and the algebraic structure of the biquaternion algebra is the same in all of them. The choices are a matter of convention and convenience, not of content.</p>
 <h2 id="summary">Summary</h2>
-<p>The biquaternion algebra admits three algebraic realizations that are not treated in dedicated articles of this series:</p>
+<p>The biquaternion algebra admits two algebraic realizations that are not treated in dedicated articles of this series:</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -265,12 +240,6 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>Spinor</td>
-<td>the $2\times2$ matrix $\Phi(\tilde{Q})$</td>
-<td>object, and operator on a column $\begin{pmatrix} \psi_1 \\ \psi_2 \end{pmatrix}$</td>
-<td>Module structure, the group of unit-norm elements, the Clifford multiplication</td>
-</tr>
-<tr>
 <td>Clifford algebra</td>
 <td>an element of $\mathrm{Cl}_{1,3}^+$</td>
 <td>object</td>
@@ -280,13 +249,13 @@ $$</p>
 <td>Conjugation action</td>
 <td>the map $\tilde T \mapsto \tilde{Q}\tilde T\tilde{Q}^{-1}$</td>
 <td>operator on the algebra</td>
-<td>The automorphism group, the chiral halves, the reference for the dagger sandwich</td>
+<td>The automorphism group, the minimal left ideals, the reference for the dagger sandwich</td>
 </tr>
 </tbody>
 </table></div>
 <p>The first two columns are independent: the writing fixes an array, the reading fixes what is done with it, and the same matrix appears as an object and as an operator at once. The realization is a choice neither of size nor of role, which is why a four-vector, a $2\times2$ array and a $4\times4$ array can all carry the same object, and any of them can carry an action on it.</p>
 <p>In the Clifford realization the isomorphism is fixed by $e_1 \mapsto \gamma^2\gamma^3$, $e_2 \mapsto \gamma^3\gamma^1$, $e_3 \mapsto \gamma^1\gamma^2$ and $i \mapsto -\gamma^0\gamma^1\gamma^2\gamma^3$ under the mostly-minus form $g = \mathrm{diag}(+1,-1,-1,-1)$, so that all six bivectors correspond to the quaternion units with positive signs, and it carries the Clifford product to the biquaternion product and the Clifford norm to the biquaternion norm on the even part; the $1,3$ form is the one carried by the Hermitian subspace $\mathbb{M}_+$.</p>
-<p>The matrix, four-vector and regular realizations, the biquaternion norm read in each of them, and the explicit isomorphisms between them, are the subject of their own articles. Here only the three realizations above are derived, and the relations recorded are the ones they have with each other and with the realizations treated elsewhere.</p>
+<p>The matrix, four-vector and regular realizations, the biquaternion norm read in each of them, and the explicit isomorphisms between them, are the subject of their own articles. Here only the two realizations above are derived, and the relations recorded are the ones they have with each other and with the realizations treated elsewhere.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -319,14 +288,6 @@ $$</p>
 <tr>
 <td>$N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$</td>
 <td>Biquaternion norm</td>
-</tr>
-<tr>
-<td>$\psi$</td>
-<td>Spinor, an element of $\mathbb{C}^2$</td>
-</tr>
-<tr>
-<td>$\langle \psi, \phi \rangle = \psi_1^* \phi_1 + \psi_2^* \phi_2$</td>
-<td>Hermitian inner product on spinors</td>
 </tr>
 <tr>
 <td>$\mathrm{Cl}_{1,3}$</td>
