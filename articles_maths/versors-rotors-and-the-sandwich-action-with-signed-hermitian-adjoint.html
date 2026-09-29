@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Versors, Rotors and the Sandwich Action with Signed Hermitian Adjoint — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="versors-rotors-and-the-sandwich-action-with-signed-hermitian-adjoint"><strong>Versors, Rotors and the Sandwich Action with Signed Hermitian Adjoint</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A versor is a product of invertible vectors, and a rotor is an even versor of unit norm. The geometric content of the Clifford algebra is that a versor acts on the quadratic space by an isometry, through the <strong>sandwich</strong>, and that a rotor acts by a rotation. In the inverse formulation the sandwich is the signed inner conjugation $v\mapsto\alpha(x)vx^{-1}$, and the theory is <em>Versors, Rotors and the Sandwich Action with Signed Inner Conjugation</em>.</p>
+<p>This article is the Hermitian reading of the same geometry. The sandwich is now</p>
+<p>$$
+v\ \longmapsto\ \Theta^{\alpha}_x(v)=\alpha(x)\,v\,x^{\dagger},
+$$</p>
+<p>and its form on a versor is computed once and for all by the identity</p>
+<p>$$
+\Theta^{\alpha}_x=\varepsilon_x\,\sigma\bigl(N(x)\bigr)\;\sigma\text{-conjugation by }x,
+\qquad
+\Theta^{\alpha}_x(v)=\varepsilon_x\,\sigma\bigl(N(x)\bigr)\,x\,v\,\sigma(x)^{-1},
+\qquad x\in\Gamma(V,q),
+$$</p>
+<p>with $\varepsilon_x=(-1)^{|x|}$ the parity sign and $\sigma$ the involution of the base. Three features are Hermitian and have no counterpart in the inverse formulation. The first is that the dagger of a versor is again a versor, of the same length and parity, so the Hermitian sandwich is a sandwich in a versor on <strong>both</strong> sides. The second is the extra factor $\sigma(x)^{-1}$: the right factor of the operator is the dagger, which on the Clifford group is $\sigma(N(x))\sigma(x)^{-1}$, and the coefficient involution therefore appears in the geometry. The third is that the two sides of a rotor sandwich agree only when the rotor is <strong>$\sigma$-real</strong> and of norm one, and otherwise the operator is a similarity: the unitary slice is exactly the condition that makes the Hermitian sandwich a rotation.</p>
+<p>The theory of versors, of the Lipschitz group, of the rotor group and of the double cover is <em>Versors, Rotors and the Sandwich Action with Signed Inner Conjugation</em>; the dagger, the slice and the compact real form are <em>The Unitary Slice and the Compact Real Form with Hermitian Adjoint</em>; the operator and its action on $V$ are <em>Two-Sided Operators on a Clifford Algebra with Signed Hermitian Adjoint</em>; the Hermitian module and the adjoint of the Clifford action are <em>The Adjoint of the One-Sided Action with Hermitian Adjoint</em>; the biquaternion dictionary is <em>Biquaternion Versors and the Orthogonal Group</em> in the physics corpus. Nothing owned by those entries is reproved.</p>
+<p><strong>Conventions.</strong> The coefficient involution $\sigma$ is assumed <strong>compatible</strong> with the form, $\sigma(q(v))=q(\sigma(v))$, so that it preserves the subspace $V$ and the quadratic form, as in the Hermitian theory of <em>Involutive Clifford Algebras</em>. $N(x)=x\bar x$ is the Clifford norm, $\Gamma(V,q)$ the Clifford group, $U$ the unitary slice, $\varepsilon_x=(-1)^{|x|}$, and $x^{\dagger}=\sigma(\alpha(x^{r}))$.</p>
+<h2 id="versors-and-the-hermitian-adjoint">Versors and the Hermitian Adjoint</h2>
+<p><strong>Definition.</strong> A <strong>versor</strong> is an element of $\mathrm{Cl}(V,q)$ of the form</p>
+<p>$$
+x=v_1v_2\cdots v_k,\qquad q(v_i)\neq0\ \text{ for every }i,
+$$</p>
+<p>a product of non-isotropic, hence invertible, vectors. Its parity is the parity of $k$.</p>
+<p><strong>Proposition (the dagger of a versor is a versor).</strong> For a vector $v$ one has $v^{\dagger}=-\sigma(v)$, a non-isotropic vector, and for a versor</p>
+<p>$$
+(v_1v_2\cdots v_k)^{\dagger}=(-1)^{k}\,\sigma(v_k)\cdots\sigma(v_2)\sigma(v_1),
+$$</p>
+<p>a versor of the same length and parity. Hence the set of versors is stable under the dagger up to the scalar $(-1)^{k}$ and up to $\sigma$, and the Hermitian sandwich $\Theta^{\alpha}_x$ of a versor has versors on both sides.</p>
+<p><em>Proof.</em> For $v\in V$ one has $v^{r}=v$ and $\alpha(v)=-v$, so $v^{\dagger}=\sigma(\alpha(v))=-\sigma(v)$; by compatibility of $\sigma$ with $q$, $\sigma(v)$ is a non-isotropic vector, and by compatibility with the Clifford relations $\sigma$ is a ring automorphism of the algebra, so the product formula holds. The scalar $(-1)^{k}$ is a versor of length two, as recorded in the inverse article.</p>
+<p><strong>Proposition (the form of the sandwich on a versor).</strong> Every versor lies in the Clifford group $\Gamma(V,q)$, and for a versor $x$</p>
+<p>$$
+\Theta^{\alpha}_x=\varepsilon_x\,\sigma\bigl(N(x)\bigr)\,x\,(\ )\,\sigma(x)^{-1},
+\qquad
+\Theta^{\alpha}_x(v)=\varepsilon_x\,\sigma\bigl(N(x)\bigr)\,x\,v\,\sigma(x)^{-1},\quad v\in V .
+$$</p>
+<p>On the unitary slice this is the signed inner conjugation, $\Theta^{\alpha}_x=\varepsilon_x x\,(\ )\,x^{-1}=\mathrm{Ad}^{\alpha}_x$; on the $\sigma$-real part of the slice with $\sigma(N(x))=1$ it is the plain sandwich $x\,(\ )\,x^{-1}$.</p>
+<p><em>Proof.</em> The Lipschitz group, generated by the non-isotropic vectors, is $\Gamma(V,q)$, so a versor lies in $\Gamma$ and its norm is a scalar. On $\Gamma$ one has $x^{\dagger}=\sigma(N(x))\sigma(x)^{-1}$, by the Clifford-group identity of <em>The Hermitian Sandwich on a Clifford Algebra with Hermitian Adjoint</em>; substituting into $\Theta^{\alpha}_x(v)=\alpha(x)vx^{\dagger}$ and using $\alpha(x)=\varepsilon_x x$ gives the displayed form. On the slice $x^{\dagger}=x^{-1}$, so $\Theta^{\alpha}_x=\alpha(x)(\ )x^{-1}=\mathrm{Ad}^{\alpha}_x$; if in addition $\sigma(x)=x$ and $\sigma(N(x))=1$ the scalar is $1$ and the sandwich is the plain one.</p>
+<p><strong>Corollary (the value at the unit and the norm).</strong> For a versor $x$,</p>
+<p>$$
+\Theta^{\alpha}_x(1)=\alpha(x)\,x^{\dagger}=\varepsilon_x\,\sigma\bigl(N(x)\bigr)\,x\,\sigma(x)^{-1},
+$$</p>
+<p>which is the identity on $1$ exactly for an even, $\sigma$-real versor of norm with $\sigma(N(x))=1$.</p>
+<p><em>Proof.</em> Immediate from the proposition at $v=1$.</p>
+<p><strong>Remark (why the slice is the geometric locus).</strong> The three corrections to the plain sandwich are the parity sign, the norm factor and the coefficient involution. All three are scalars or are trivial on the $\sigma$-real slice: the parity sign is $\pm1$, the norm factor is $\sigma(N(x))$, and $\sigma(x)^{-1}$ is $x^{-1}$ for $\sigma$-real $x$. So the Hermitian sandwich is the inverse sandwich <strong>up to scalars</strong> off the slice and exactly the inverse sandwich on it, and the geometry — rotors rotating, reflections reflecting — is the geometry of the slice.</p>
+<h2 id="rotors">Rotors</h2>
+<p><strong>Definition.</strong> A <strong>rotor</strong> is an even versor $R$ with $\sigma(N(R))=1$ and $\sigma(R)=R$. For such an $R$ the Hermitian sandwich acts as the plain sandwich and produces a rotation,</p>
+<p>$$
+\Theta^{\alpha}_R(v)=\varepsilon_R\,\sigma\bigl(N(R)\bigr)\,R\,v\,\sigma(R)^{-1}=R\,v\,R^{-1},\qquad \varepsilon_R=+1 .
+$$</p>
+<p>The <strong>rotor group</strong> is the group of all even versors of norm with $\sigma(N(R))=1$; over the reals with $\sigma=\mathrm{id}$ it is the even part of $\mathrm{Pin}$, that is $\mathrm{Spin}(V,q)$.</p>
+<p><strong>Proposition.</strong> The rotors form a subgroup of the unitary slice and of the Hermitian Clifford group, and the map $R\mapsto\Theta^{\alpha}_R$ is a homomorphism into $SO(V,q)$ with kernel $\{\pm1\}$ under the hypotheses on the field of <em>The Clifford, Pin and Spin Groups with Signed Hermitian Adjoint</em>.</p>
+<p><em>Proof.</em> A rotor is even, so $\Theta^{\alpha}_R=\Theta_R$; on a norm-one versor the dagger is inverse on the slice, so $R\in U$; and $\sigma(N(R))=1$ is the isometry condition, so $R\in\Gamma_{\dagger}$. The group statements are those of the inverse article, transported along the slice identity.</p>
+<p><strong>Example (the rotational rotor).</strong> Let $B$ be a bivector with $B^{2}=-1$ in the definite algebra $\mathrm{Cl}_{0,m}(\mathbb{R})$, $\sigma=\mathrm{id}$, and put</p>
+<p>$$
+R=\exp\Bigl(-\tfrac{\theta}{2}B\Bigr)=\cos\tfrac{\theta}{2}-B\sin\tfrac{\theta}{2}.
+$$</p>
+<p>Then $R$ is even and $\bar R=\cos\tfrac{\theta}{2}+B\sin\tfrac{\theta}{2}=R^{-1}$, so $N(R)=1$, $R$ is real and the Hermitian sandwich is the plain sandwich $R\,v\,R^{-1}$, the rotation through $\theta$. The dagger is the inverse here, $R^{\dagger}=R^{-1}$, and the same rotation is obtained from $\Theta_R$ and from $\Theta^{\alpha}_R$, which agree because $R$ is even.</p>
+<p><strong>Example (the hyperbolic rotor).</strong> Let $B$ be a bivector with $B^{2}=+1$, as for a boost in $\mathrm{Cl}_{1,3}$, and put $R=\exp\bigl(-\tfrac{\eta}{2}B\bigr)=\cosh\tfrac{\eta}{2}-B\sinh\tfrac{\eta}{2}$, with $\eta$ the rapidity. Then $\bar R=\cosh\tfrac{\eta}{2}+B\sinh\tfrac{\eta}{2}=R^{-1}$, $N(R)=1$, and the Hermitian sandwich is the Lorentz boost $R\,v\,R^{-1}$. The example is the biquaternion one in the physics corpus, where the sandwich is written $\tilde Q\,x\,\tilde Q^{\dagger}$; the Hermitian sandwich of this article is exactly that object, and the signed member is its parity-signed version.</p>
+<h2 id="the-two-actions">The Two Actions</h2>
+<p><strong>The sandwich on the vectors.</strong> For a versor $x$ the Hermitian sandwich maps $V$ to $V$ and is given by the formula of the second proposition; it is an isometry exactly when $\sigma(N(x))^{2}=1$ and otherwise a similarity of ratio $\sigma(N(x))^{2}$, and its value on the vectors is a scalar multiple of the sandwich of the inverse member. For a rotor it is the rotation, and the parameter inside the rotor is the half angle while the rotation is through the full angle.</p>
+<p><strong>The left action on spinors.</strong> Let $S$ be a Hermitian Clifford module over $\mathrm{Cl}(V,q)$, with the Hermitian form for which the Clifford action is self-adjoint, $(x\cdot s,t)=(s,x^{\dagger}\cdot t)$, of <em>Hermitian Clifford Modules with Hermitian Adjoint</em>. The <strong>spinor action</strong> of the rotors is left multiplication $\psi\mapsto R\psi$, the restriction to the rotors of the left action of the even subalgebra; the signed member of the family acts on the module as the scalar $\varepsilon_R$ times that action.</p>
+<p><strong>Proposition (the two actions and the double cover).</strong> Left multiplication by a rotor is a representation of the rotor group on $S$ with kernel $\{\pm1\}$ on an irreducible module, while the sandwich acts on $V$ with the same kernel; a full turn, $\theta=2\pi$, is the identity on $V$ and $-\mathrm{id}_S$ on the module. The two actions are the two halves of the double cover of $SO(V,q)$, in the Hermitian formulation.</p>
+<p><em>Proof.</em> The kernel statement and the full-turn statement are those of the inverse article and depend only on the group, not on the right factor; they are transported along the slice identity $\Theta^{\alpha}_x=\mathrm{Ad}^{\alpha}_x$, and the identification of the module action with the spin representation is <em>Spin Representations and Clifford Modules with Inner Conjugation</em>.</p>
+<p><strong>Remark (the Hermitian specificity in the module statement).</strong> The dagger enters the module side not in the rotation but in the <strong>adjointness</strong>: the form on $S$ is chosen so that the Clifford action satisfies $(x\cdot s,t)=(s,x^{\dagger}\cdot t)$, and it is this axiom that makes the Hermitian sandwich the adjoint of its parameter and the left action self-adjoint for the elements of the slice. The unsigned Hermitian sandwich is the adjoint of the Clifford action; the signed one is the same up to the parity sign. The analytic consequences are <em>Dirac Operators with Hermitian Adjoint</em> and are not part of this article.</p>
+<h2 id="off-the-slice-the-similarity">Off the Slice: the Similarity</h2>
+<p><strong>Proposition.</strong> Let $x\in\Gamma$ be a versor with $\sigma(N(x))^{2}\neq1$. Then $\Theta^{\alpha}_x$ preserves $V$, acts on it by a similarity of ratio $\sigma(N(x))^{2}$, and is not an isometry; the signed and the unsigned members differ only by the sign $\varepsilon_x$.</p>
+<p><em>Proof.</em> The action proposition of the companion article gives $\Theta^{\alpha}_x|_V=\varepsilon_x\sigma(N(x))\chi(x)$ with $\chi(x)\in O(V,q)$, and a scalar multiple of an orthogonal map by $\lambda$ scales $q$ by $\lambda^{2}$.</p>
+<p><strong>Remark (the split and biquaternion cases).</strong> In $\mathrm{Cl}_{1,1}$ the even element $x=2+3e_1e_2$ has $N(x)=-5$ and the Hermitian sandwich is a similarity of ratio $25$, as computed in <em>The Hermitian Sandwich on a Clifford Algebra with Hermitian Adjoint</em>; the signed member is the negative of it. In the biquaternion algebra the corpus sandwich $\tilde Q\,x\,\tilde Q^{\dagger}$ is an isometry exactly on the slice, which is the Lorentz group there, and a similarity off it; that is the geometric form of the statement that the Hermitian sandwich needs the unitary condition to produce a transformation of the physical slices. The dictionary is <em>Biquaternion Versors and the Orthogonal Group</em>, and the slice itself is <em>The Unitary Slice and the Compact Real Form with Hermitian Adjoint</em>.</p>
+<h2 id="worked-cases">Worked Cases</h2>
+<h3 id="the-plane-rotor">The Plane Rotor</h3>
+<p>In $\mathrm{Cl}_{0,2}(\mathbb{R})$, $e_1^{2}=e_2^{2}=-1$, $\sigma=\mathrm{id}$, let $B=e_1e_2$, $B^{2}=-1$, and $R=\cos\tfrac{\theta}{2}-B\sin\tfrac{\theta}{2}$. Then $R^{\dagger}=R^{-1}$ and</p>
+<p>$$
+\Theta^{\alpha}_R(e_1)=R\,e_1\,R^{-1}=\cos\theta\,e_1+\sin\theta\,e_2,
+\qquad
+\Theta^{\alpha}_R(e_2)=-\sin\theta\,e_1+\cos\theta\,e_2 ,
+$$</p>
+<p>the rotation through $\theta$. The operator is even and its determinant is $+1$; the unsigned member gives the same, since $R$ is even.</p>
+<h3 id="the-reflection-read-unevenly">The Reflection Read Unevenly</h3>
+<p>In $\mathrm{Cl}_{0,3}(\mathbb{R})$ let $u=e_1$, an odd versor of length one. Then $\Theta^{\alpha}_u(v)=e_1ve_1$ and $\Theta^{\alpha}_u=\rho_{e_1}$, while $\Theta_u=-\rho_{e_1}$: the odd versor gives the reflection for the signed member and the negative for the unsigned one. The dagger of the versor is $e_1^{\dagger}=-e_1$, again a versor of length one and the same parity.</p>
+<h3 id="a-similarity-in-the-split-algebra">A Similarity in the Split Algebra</h3>
+<p>In $\mathrm{Cl}_{1,1}(\mathbb{R})$, $e_1^{2}=1$, $e_2^{2}=-1$, let $x=e_1e_2$, an even versor with $N(x)=-1$ and $\sigma(N(x))^{2}=1$. Then $\Theta^{\alpha}_x=\Theta_x=\mathrm{Ad}_x$ is an isometry, not a similarity, even though $N(x)=-1$: the isometry condition is on the <strong>square</strong> of the norm, as in the companion article, and the sign of the norm is not the obstruction. For $x=2+3e_1e_2$ the norm is $-5$, its square is $25$, and the operator is the similarity of ratio $25$.</p>
+<h2 id="summary">Summary</h2>
+<p>A versor is a product of invertible vectors, and the Hermitian sandwich of a versor has versors on both sides, because the dagger of a versor is again a versor of the same length and parity. On the Clifford group the operator has the explicit form</p>
+<p>$$
+\Theta^{\alpha}_x=\varepsilon_x\,\sigma\bigl(N(x)\bigr)\,x\,(\ )\,\sigma(x)^{-1},
+\qquad x\in\Gamma(V,q),
+$$</p>
+<p>with the parity sign $\varepsilon_x$, the norm factor $\sigma(N(x))$ and the coefficient involution $\sigma(x)^{-1}$ as the three corrections to the plain sandwich. A <strong>rotor</strong> is an even, $\sigma$-real versor of norm with $\sigma(N(R))=1$, and for it the sandwich is the plain one, $R\,v\,R^{-1}$, a rotation; the rotor group is the even part of the Hermitian Clifford group, it lies in the unitary slice, and it double-covers $SO(V,q)$ with kernel $\{\pm1\}$. The two actions are the sandwich on the vectors, where a full turn is the identity, and the left multiplication on a Hermitian Clifford module, where a full turn is $-\mathrm{id}$; the dagger enters the module side through the adjointness axiom $(x\cdot s,t)=(s,x^{\dagger}\cdot t)$, which is what makes the Hermitian sandwich the adjoint of its parameter. Off the slice the operator is a similarity of ratio $\sigma(N(x))^{2}$ and the signed member is the negative of the unsigned one; the geometry of rotations, reflections and boosts is the geometry of the slice, where the two formulations coincide.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$x=v_1\cdots v_k$, $q(v_i)\neq0$</td>
+<td>Versor, $k$ its length, $k\bmod2$ its parity</td>
+</tr>
+<tr>
+<td>$v^{\dagger}=-\sigma(v)$</td>
+<td>The dagger of a vector, again a non-isotropic vector</td>
+</tr>
+<tr>
+<td>$\Theta^{\alpha}_x=\varepsilon_x\sigma(N(x))\,x(\ )\sigma(x)^{-1}$</td>
+<td>The sandwich on a versor, $x\in\Gamma$</td>
+</tr>
+<tr>
+<td>$\Theta^{\alpha}_x=\mathrm{Ad}^{\alpha}_x$ on $U$</td>
+<td>Slice reduction</td>
+</tr>
+<tr>
+<td>Rotor: even, $\sigma$-real, $\sigma(N(R))=1$</td>
+<td>Rotor; $\Theta^{\alpha}_R=R\,v\,R^{-1}$</td>
+</tr>
+<tr>
+<td>$R=\exp(-\tfrac\theta2B)$</td>
+<td>Rotational rotor ($B^{2}=-1$) and hyperbolic rotor ($B^{2}=+1$)</td>
+</tr>
+<tr>
+<td>$(x\cdot s,t)=(s,x^{\dagger}\cdot t)$</td>
+<td>Hermitian Clifford module, self-adjointness</td>
+</tr>
+<tr>
+<td>$\Theta^{\alpha}_x|_V=\varepsilon_x\sigma(N(x))\chi(x)$, $\chi\in O$</td>
+<td>Similarity off the slice</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em> (Cambridge University Press, 2nd ed. 2001), for versors, rotors, the sandwich and the half angle.</li>
+<li>Chris Doran and Anthony Lasenby, <em>Geometric Algebra for Physicists</em> (Cambridge University Press, 2003), for the rotor calculus and the Lorentz boosts in the geometric algebra of spacetime.</li>
+<li>Ian R. Porteous, <em>Clifford Algebras and the Classical Groups</em>, Cambridge Studies in Advanced Mathematics 50 (Cambridge University Press, 1995), for the Lipschitz group and the two actions.</li>
+<li>H. Blaine Lawson and Marie-Louise Michelsohn, <em>Spin Geometry</em> (Princeton University Press, 1989), for the Hermitian structure on a Clifford module and the self-adjointness of the Clifford action.</li>
+<li>Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, <em>The Book of Involutions</em>, Colloquium Publications 44 (American Mathematical Society, 1998), for the unitary group and the $\sigma$-real elements.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

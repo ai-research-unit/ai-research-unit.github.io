@@ -98,21 +98,21 @@ $$</p>
 <p>We now solve the equation $(\mathbf{Q}, \mathbf{Q}) = 1$ for the pure biquaternion $\mathbf{Q} = Q_1 e_1 + Q_2 e_2 + Q_3 e_3$.</p>
 <p>Write each complex coefficient as $Q_k = q_k + i q'_k$ with $q_k, q'_k \in \mathbb{R}$. Then</p>
 <p>$$
-(\mathbf{Q}, \mathbf{Q}) = \sum_{k=1}^{3} Q_k^2 = \sum_{k=1}^{3} (q_k + i q'_k)^2 = \sum_{k=1}^{3} (q_k^2 - q'^2_k) + 2i \sum_{k=1}^{3} q_k q'_k.
+(\mathbf{Q}, \mathbf{Q}) = \sum_{k=1}^{3} Q_k^2 = \sum_{k=1}^{3} (q_k + i q'_k)^2 = \sum_{k=1}^{3} (q_k^2 - (q'_k)^2) + 2i \sum_{k=1}^{3} q_k q'_k.
 $$</p>
 <p>Equating the real and imaginary parts to $1$ and $0$:</p>
 <p>$$
-\sum_{k=1}^{3} q_k^2 - \sum_{k=1}^{3} q'^2_k = 1, \qquad \sum_{k=1}^{3} q_k q'_k = 0.
+\sum_{k=1}^{3} q_k^2 - \sum_{k=1}^{3} (q'_k)^2 = 1, \qquad \sum_{k=1}^{3} q_k q'_k = 0.
 $$</p>
-<p>The first equation gives $\sum_k q_k^2 = 1 + \sum_k q'^2_k \geq 1 > 0$, so the triple $(q_1, q_2, q_3)$ is nonzero.</p>
+<p>The first equation gives $\sum_k q_k^2 = 1 + \sum_k (q'_k)^2 \geq 1 > 0$, so the triple $(q_1, q_2, q_3)$ is nonzero.</p>
 <p><strong>Sub-case 2a: $\mathbf{q}' = 0$.</strong> Then $\sum_k q_k^2 = 1$. Let $\mu = q_1 e_1 + q_2 e_2 + q_3 e_3$, a pure real quaternion with</p>
 <p>$$
 \mu^2 = -\Bigl(\sum_{k=1}^{3} q_k^2\Bigr) e_0 = -1,
 $$</p>
 <p>and $\mathbf{Q} = \mu$, so $\xi = \mu$. These are the <strong>real roots</strong>. The family is invariant under $\mu \mapsto -\mu$, so it may also be written in the redundant form $\xi = \pm \mu$.</p>
-<p><strong>Sub-case 2b: $\mathbf{q}' \neq 0$.</strong> Then $\sum_k q_k^2 \geq 1 > 0$ and $\sum_k q'^2_k > 0$. Put</p>
+<p><strong>Sub-case 2b: $\mathbf{q}' \neq 0$.</strong> Then $\sum_k q_k^2 \geq 1 > 0$ and $\sum_k (q'_k)^2 > 0$. Put</p>
 <p>$$
-b = \Bigl(\sum_{k=1}^{3} q_k^2\Bigr)^{1/2} > 0, \qquad d = \Bigl(\sum_{k=1}^{3} q'^2_k\Bigr)^{1/2} > 0,
+b = \Bigl(\sum_{k=1}^{3} q_k^2\Bigr)^{1/2} > 0, \qquad d = \Bigl(\sum_{k=1}^{3} (q'_k)^2\Bigr)^{1/2} > 0,
 $$</p>
 <p>and define the pure real quaternions</p>
 <p>$$

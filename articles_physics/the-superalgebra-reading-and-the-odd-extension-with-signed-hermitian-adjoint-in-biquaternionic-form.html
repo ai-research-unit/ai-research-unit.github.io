@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Superalgebra Reading and the Odd Extension with Signed Hermitian Adjoint in Biquaternionic Form — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-superalgebra-reading-and-the-odd-extension-with-signed-hermitian-adjoint-in-biquaternionic-form"><strong>The Superalgebra Reading and the Odd Extension with Signed Hermitian Adjoint in Biquaternionic Form</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The biquaternion algebra is the even part of the graded Clifford algebra, $\mathbb{B}=\mathrm{Cl}^0_{1,3}$, and the graded commutator $[a,b]_{\mathrm{gr}}=ab-(-1)^{\lvert a\rvert\lvert b\rvert}ba$ makes the ambient algebra a Lie superalgebra whose even part is the algebra of the series. That structure is built from the product and the parity, and it is what <em>The Superalgebra Reading and the Odd Extension with Signed Inner Conjugation in Biquaternionic Form</em> develops, together with the supercharge, the Grassmann envelope and the boundary of what the algebra supplies and what it imports.</p>
+<p>This article is the <strong>Hermitian reading</strong> of the same structure. A superalgebra used by physics does not carry only a bracket; it carries an <strong>adjoint</strong>, the operation that turns a state into a dual state and an operator into its Hermitian conjugate, and it is the adjoint that makes the Hamiltonian Hermitian and the probability real. In the inverse reading the odd sector is reached through the inverse of a parameter, which belongs to the group of units; here it is reached through the Hermitian adjoint $X^{\dagger}$, the adjoint of the spinor form of the framework. The object of the article is the interaction of the two: a $\mathbb{Z}/2$-graded algebra with a parity-preserving anti-involution, and the sign it puts on the graded bracket.</p>
+<p>Three statements carry the reading. The first is that the dagger is an <strong>even anti-involution</strong> of the superalgebra, $(ab)^{\dagger}=b^{\dagger}a^{\dagger}$ with $\lvert a^{\dagger}\rvert=\lvert a\rvert$; it is the structure the corpus's own physics uses, since the biquaternionic supercharge is paired with its adjoint, $\{Q,Q^{\dagger}\}=H$, in <em>Supersymmetric Quantum Mechanics in the Biquaternion Framework</em>. The second is that the adjoint <strong>reverses the graded bracket</strong> up to the parity sign,</p>
+<p>$$
+\bigl([a,b]_{\mathrm{gr}}\bigr)^{\dagger}=-(-1)^{\lvert a\rvert\lvert b\rvert}\,\bigl[a^{\dagger},b^{\dagger}\bigr]_{\mathrm{gr}},
+$$</p>
+<p>so it reverses a commutator and preserves an anticommutator, the reason being that it reverses the order of the factors and the two graded signs then contribute in opposite directions. The third is that this is a statement about the <em>convention</em>: the Koszul-signed rule of a super-* would make the adjoint an anti-automorphism of the bracket without the extra sign, and the corpus's dagger does not obey that rule; the two conventions are distinguished by a check on two generators, and the article records which one the physics uses.</p>
+<p>The graded bracket, the parity table, the Lie-superalgebra statement and the odd extension are the ones of the inverse article and are restated only where the Hermitian structure changes them; the parity reading of the ambient algebra and the sectors are <em>The Graded Algebra, Fermion Parity and the Two Sectors with Signed Hermitian Adjoint in Biquaternionic Form</em>; the supercharge pair and the chirality grading are <em>Supersymmetric Quantum Mechanics in the Biquaternion Framework</em>; the Grassmann envelope is <em>Grassmann Coherent States in Biquaternionic Form</em> and <em>BRST Symmetry in Biquaternionic Form</em>; the commutator bracket and the trace-free part are <em>Biquaternion Lie Algebra</em>; the one-mode parity is <em>Fock Space and Creation/Annihilation Operators in Biquaternionic Form</em>. Nothing owned by those articles is re-derived.</p>
+<p><strong>Conventions.</strong> $\mathrm{Cl}_{1,3}$ is the ambient Clifford algebra of Minkowski space in the mostly-minus convention, $\mathbb{B}=\mathrm{Cl}^0_{1,3}$ its even part, $\gamma^\mu$ the odd generators; the grading is by parity, $\lvert a\rvert\in\{0,1\}$; the graded commutator is $[a,b]_{\mathrm{gr}}=ab-(-1)^{\lvert a\rvert\lvert b\rvert}ba$, the commutator for even or mixed pairs and the anticommutator for two odd elements; the dagger is the Hermitian adjoint of the algebra, extended to the envelope by $X^{\dagger}=\sigma(\alpha(X^{r}))$ as in the companion article, so that $(ab)^{\dagger}=b^{\dagger}a^{\dagger}$ and $\lvert a^{\dagger}\rvert=\lvert a\rvert$.</p>
+<h2 id="the-graded-commutator">The Graded Commutator</h2>
+<p><strong>Definition.</strong> On a $\mathbb{Z}/2$-graded algebra $A=A^0\oplus A^1$ the <strong>graded commutator</strong> is</p>
+<p>$$
+[a,b]_{\mathrm{gr}}=ab-(-1)^{\lvert a\rvert\lvert b\rvert}ba ,
+$$</p>
+<p>the two parities read modulo two. It is the commutator on an even or a mixed pair and the anticommutator on two odd elements, and it satisfies the graded Jacobi identity, making a Lie superalgebra of the graded algebra with the graded commutator as bracket.</p>
+<p><strong>Proposition (the parity of the bracket).</strong> For homogeneous $a,b$ the bracket is even,</p>
+<p>$$
+\bigl\lvert[a,b]_{\mathrm{gr}}\bigr\rvert=\lvert a\rvert+\lvert b\rvert \pmod 2 ,
+$$</p>
+<p>so the bracket of two odd elements is even, the bracket of an even and an odd element is odd, and the bracket of two even elements is even. On the ambient Clifford algebra,</p>
+<p>$$
+[\mathbb{B},\mathbb{B}]\subseteq\mathbb{B},\qquad
+[\mathbb{B},\mathrm{Cl}^1]\subseteq\mathrm{Cl}^1,\qquad
+\{\mathrm{Cl}^1,\mathrm{Cl}^1\}\subseteq\mathbb{B}.
+$$</p>
+<p><strong>Proof.</strong> These are the inclusions $\mathrm{Cl}^i\mathrm{Cl}^j\subseteq\mathrm{Cl}^{i+j}$ of the grading, read with the parity of the exponent, together with the fact that the graded commutator of two elements of the same parity is their commutator and of two of opposite parity is also their commutator, while that of two odd elements is their anticommutator.</p>
+<p><strong>Remark (the even part is the Lie algebra of the framework).</strong> The restriction of the graded bracket to $\mathbb{B}$ is the ordinary commutator, that is the Lie algebra of <em>Biquaternion Lie Algebra</em>, whose trace-free part is the Lorentz algebra. The odd slot is a module over the even part and not a second Lie algebra: the bracket of two odd elements is even, exactly as the bracket of two reflections is a rotation.</p>
+<h2 id="the-adjoint-of-the-graded-bracket">The Adjoint of the Graded Bracket</h2>
+<p><strong>Proposition (the dagger is an even anti-involution of the superalgebra).</strong> The Hermitian adjoint satisfies</p>
+<p>$$
+(ab)^{\dagger}=b^{\dagger}a^{\dagger},\qquad (a^{\dagger})^{\dagger}=a,\qquad
+\lvert a^{\dagger}\rvert=\lvert a\rvert ,
+$$</p>
+<p>so it is an anti-automorphism of the graded algebra and it preserves the grading; it is $\mathbb{C}$-antilinear in each factor.</p>
+<p><em>Proof.</em> The reversion reverses the order of the factors, the grade involution acts on the degree and not on the order, and the coefficient conjugation is a $\mathbb{C}$-antilinear automorphism acting on the coefficients only; the composite therefore reverses the order and preserves the degree, so it is an anti-automorphism, involutive and even. On the algebra this is the Hermitian conjugation $\tilde{Q}^{\dagger}=\bar{\tilde{Q}}^{*}$ of the corpus.</p>
+<p><strong>Proposition (the adjoint reverses a commutator and preserves an anticommutator).</strong> For homogeneous $a,b$,</p>
+<p>$$
+\bigl([a,b]_{\mathrm{gr}}\bigr)^{\dagger}=-(-1)^{\lvert a\rvert\lvert b\rvert}\,\bigl[a^{\dagger},b^{\dagger}\bigr]_{\mathrm{gr}},
+$$</p>
+<p>that is</p>
+<p>$$
+\bigl([a,b]_{\mathrm{gr}}\bigr)^{\dagger}=
+\begin{cases}
+-\,\bigl[a^{\dagger},b^{\dagger}\bigr]_{\mathrm{gr}}, & a,b\ \text{not both odd},\\[2pt]
++\,\bigl[a^{\dagger},b^{\dagger}\bigr]_{\mathrm{gr}}, & a,b\ \text{both odd}.
+\end{cases}
+$$</p>
+<p><em>Proof.</em> Apply the anti-automorphism to the definition: $\bigl([a,b]_{\mathrm{gr}}\bigr)^{\dagger}=(ab)^{\dagger}-(-1)^{\lvert a\rvert\lvert b\rvert}(ba)^{\dagger}=b^{\dagger}a^{\dagger}-(-1)^{\lvert a\rvert\lvert b\rvert}a^{\dagger}b^{\dagger}$. Since $\lvert a^{\dagger}\rvert=\lvert a\rvert$ and $\lvert b^{\dagger}\rvert=\lvert b\rvert$, the same exponent occurs in $\bigl[a^{\dagger},b^{\dagger}\bigr]_{\mathrm{gr}}=a^{\dagger}b^{\dagger}-(-1)^{\lvert a\rvert\lvert b\rvert}b^{\dagger}a^{\dagger}$, and the two expressions differ by the factor $-(-1)^{\lvert a\rvert\lvert b\rvert}$; for $a,b$ both odd the factor is $+1$, and otherwise it is $-1$. The identity was checked on the generators $\gamma^{\mu}$ and on products of two of them, for all four parity pairs.</p>
+<p><strong>Remark (why the two behave differently).</strong> The adjoint reverses the order of the two factors, and the graded bracket distinguishes the two orders by the sign $(-1)^{\lvert a\rvert\lvert b\rvert}$ exactly in the odd-odd case, where the bracket is symmetric: a symmetric bracket is preserved by the reversal, an antisymmetric one is negated. The statement is therefore not an accident of the Clifford algebra but the interaction of two signs, the order reversal of the adjoint and the Koszul sign of the bracket. On the even part, where the bracket is the Lie bracket of the framework, the rule reads $\bigl([a,b]\bigr)^{\dagger}=-\bigl[a^{\dagger},b^{\dagger}\bigr]$, so the bracket of two anti-Hermitian elements is anti-Hermitian: the anti-Hermitian part is a Lie subalgebra, the compact form of the framework, while the Hermitian generators enter it with the conventional factor $i$.</p>
+<p><strong>Remark (the Koszul-signed convention and what the dagger is not).</strong> A superalgebra is often equipped with a super-<em> satisfying the Koszul-signed rule $(ab)^{*}=(-1)^{\lvert a\rvert\lvert b\rvert}b^{*}a^{*}$. For such a structure the bracket-adjoint identity reads $\bigl([a,b]_{\mathrm{gr}}\bigr)^{*}=-\bigl[a^{*},b^{*}\bigr]_{\mathrm{gr}}$ without the extra parity sign. The dagger of the corpus is </em><em>not</em><em> of that kind: on two generators $\gamma^0,\gamma^1$, both odd, one has $(\gamma^0\gamma^1)^{\dagger}=\gamma^1\gamma^0=-\gamma^0\gamma^1$, while the Koszul-signed expression would be $(-1)^{1\cdot1}\gamma^1\gamma^0=+\gamma^0\gamma^1$. The corpus's dagger is the plain anti-involution, and the factor $(-1)^{\lvert a\rvert\lvert b\rvert}$ in the bracket identity is the price of it. A reader importing the super-</em> convention from the supersymmetry literature must choose which of the two signs his own dagger obeys, and the two are not the same map.</p>
+<h2 id="supercharges-the-adjoint-and-the-odd-generators">Supercharges, the Adjoint and the Odd Generators</h2>
+<p><strong>Definition.</strong> A <strong>supercharge</strong> is an odd element $Q$ of a Lie superalgebra whose graded square is even,</p>
+<p>$$
+\{Q,Q\}=2H,\qquad [Q,H]_{\mathrm{gr}}=0 ,
+$$</p>
+<p>so that the anticommutator of the supercharge with itself is a bosonic operator commuting with it. In the Hermitian reading the pairing used by the physics is the one with the <strong>adjoint</strong> rather than with the element itself,</p>
+<p>$$
+\{Q,Q^{\dagger}\}=2H ,
+$$</p>
+<p>which is the convention of <em>Supersymmetric Quantum Mechanics in the Biquaternion Framework</em>, $\{Q,Q^{\dagger}\}=H$, $Q^{2}=(Q^{\dagger})^{2}=0$ in the nilpotent realisation of the flat theory. The two displays coincide in the real forms in which $Q^{\dagger}$ is identified with $Q$, and the numerical factor between the two conventions is a normalisation.</p>
+<p><strong>Proposition (the adjoint pairing is Hermitian and even).</strong> If $Q$ is odd then $Q^{\dagger}$ is odd and</p>
+<p>$$
+\{Q,Q^{\dagger}\}=QQ^{\dagger}+Q^{\dagger}Q
+$$</p>
+<p>is even and Hermitian, $\{Q,Q^{\dagger}\}^{\dagger}=\{Q,Q^{\dagger}\}$; a supercharge is never an element of $\mathbb{B}$.</p>
+<p><em>Proof.</em> The dagger preserves the parity, so $Q^{\dagger}$ is odd and the product of two odd elements is even; the anticommutator of two elements and the adjoint of a product give $\{Q,Q^{\dagger}\}^{\dagger}=(QQ^{\dagger}+Q^{\dagger}Q)^{\dagger}=QQ^{\dagger}+Q^{\dagger}Q$ by the anti-automorphism property. Since $\mathbb{B}=\mathrm{Cl}^0$ contains no odd element, no supercharge is an element of the algebra.</p>
+<p><strong>Remark (why the adjoint and not the inverse).</strong> The Hamiltonian of the framework must be Hermitian, and its spectrum real, and the pairing $\{Q,Q^{\dagger}\}$ is Hermitian automatically because the adjoint is an adjoint; a pairing built with the inverse, $\{Q,Q^{-1}\}$, has no reason to be. This is the physical content of the Hermitian reading of the odd sector: the operator that pairs the two chiralities is the adjoint of the supercharge and not its inverse, and the corpus's own supersymmetric realisation of the mass pair is written with the dagger for that reason. The difference between the two pairings is a norm, $X^{\dagger}=\sigma(N(X))\sigma(X)^{-1}$, so on the unit slice of the real quaternions they coincide and elsewhere they differ by a scalar; the commutator structure below is insensitive to it, which is the honest scope of the distinction.</p>
+<p><strong>Remark (the supercharge in the module).</strong> The odd slot is the rank-one module $\mathrm{Cl}^1=\mathbb{B}\gamma$, so an odd element is $Q=s\gamma$ with $s$ even. By the anti-automorphism property its adjoint is</p>
+<p>$$
+Q^{\dagger}=(s\gamma)^{\dagger}=\gamma^{\dagger}s^{\dagger}=-\gamma\,s^{\dagger},
+$$</p>
+<p>an odd element again, and</p>
+<p>$$
+Q\,Q^{\dagger}=-q(\gamma)\,s\,s^{\dagger},
+$$</p>
+<p>an even element whose Hermitian part is the pairing of the supercharge with its adjoint. When the even element $s$ is built from the generators orthogonal to $\gamma$ — so that $\gamma$ commutes with it — the anticommutator is the symmetric expression $\{Q,Q^{\dagger}\}=-q(\gamma)(ss^{\dagger}+s^{\dagger}s)$, which is the form the Hamiltonian takes in the one-mode case. The general anticommutator is even and Hermitian by the previous proposition; the symmetric formula is not claimed beyond the case in which the commutation holds, because a generator need not commute with an even element.</p>
+<h2 id="what-must-be-adjoined">What Must Be Adjoined</h2>
+<p>Two constructions in the series adjoin the missing odd sector, and in the Hermitian reading each has to be compatible with the adjoint.</p>
+<p><strong>The Grassmann envelope.</strong> The odd generators can be made to carry anticommuting coefficients by tensoring with a Grassmann algebra, the construction of <em>Grassmann Coherent States in Biquaternionic Form</em>; <em>BRST Symmetry in Biquaternionic Form</em> uses the same envelope for the ghosts and records as an <strong>open question</strong> whether a biquaternionic envelope can be found that is natural rather than imported. In the Hermitian reading the question acquires a second clause: the envelope must carry an involution compatible with the dagger of the algebra, since a Berezin integral and a Hilbert structure must be defined on the same object. The Grassmann algebra does carry one — the coefficient conjugation extended to the odd coefficients — and that is the envelope the physics uses; what is open is its naturality, not its existence.</p>
+<p><strong>One fermionic mode, natively.</strong> The one piece of the odd sector that the algebra does host is a single fermionic mode: the creation and annihilation operators of one mode are elements of the algebra, the parity is the element $(-1)^F=ie_3$ of the informational sector, and the algebra's own graded structure therefore carries the finite one-mode case without any extension. The parity operator is Hermitian, $(-1)^F\in\mathbb{M}_+$, as a parity operator of a unitary theory must be; the parity of a field, $\prod_{\text{modes}}ie_3^{(\text{mode})}$, is not an element of the algebra.</p>
+<p><strong>Remark (the count of what is adjoined).</strong> One odd generator, and its products with the even elements, exhaust the odd slot: the extension is not "one more algebra" but one more generator, and the rule odd $\times$ odd $=$ even that it brings with it.</p>
+<h2 id="one-graded-algebra-not-two">One Graded Algebra, Not Two</h2>
+<p><strong>Proposition.</strong> With one odd unit $\gamma$ one has $\mathrm{Cl}_{1,3}=\mathbb{B}\oplus\mathbb{B}\gamma$, every supercharge is a $\mathbb{B}$-multiple of $\gamma$, and the odd slot carries the Hermitian form induced by the module structure, $\langle s\gamma,t\gamma\rangle=-q(\gamma)\langle s,t\rangle$ with $\langle s,t\rangle=\mathrm{Sc}(s^{\dagger}t)$ and $\langle s,t\gamma\rangle=0$ for even $s,t$.</p>
+<p><strong>Proof.</strong> The decomposition is the rank-two module statement of <em>The Graded Algebra, Fermion Parity and the Two Sectors with Signed Hermitian Adjoint in Biquaternionic Form</em>, and an odd element is $\gamma s$ with $s$ even. For the form, $\gamma^{\dagger}=-\gamma$, so $(s\gamma)^{\dagger}(t\gamma)=-\gamma s^{\dagger}t\gamma$ and the scalar part of $\gamma w\gamma$ for even $w$ is $q(\gamma)\mathrm{Sc}(w)$, which was checked on the four generators and on even samples; the orthogonality is the vanishing of the scalar part of an odd element. The elementwise identity without the scalar part is false — a generator need not commute with an even element — and the claim is made only for the form.</p>
+<p><strong>Remark (why this is the answer to the "two copies" question).</strong> A superalgebra needs an even part, an odd part, the graded bracket between them and the adjoint; it does not need two algebras. The pair $(\mathbb{B},\mathbb{B})$ of two independent copies has no bracket $\{\cdot,\cdot\}\to\mathbb{B}$ between the copies, no grading and no adjoint pairing across them, so it is not a superalgebra. The single graded algebra $\mathrm{Cl}_{1,3}=\mathbb{B}\oplus\mathbb{B}\gamma$ has all of them, and the biquaternion algebra is its even part.</p>
+<h2 id="honest-limits">Honest Limits</h2>
+<ul>
+<li><strong>The algebra is not a superalgebra by itself.</strong> With the Clifford parity the algebra is entirely even; with the chirality $L/R$ splitting the two minimal left ideals give a $\mathbb{Z}/2$ of the module structure and not of the algebra. The statement that "the biquaternion algebra is a superalgebra" needs the ambient algebra or an explicit further grading, and this article does not make it.</li>
+<li><strong>The supercharge is imported.</strong> The odd generator is not an element of $\mathbb{B}$; the Grassmann envelope or the odd slot of the Clifford algebra is required, and the naturality of that envelope is open in the BRST article.</li>
+<li><strong>The parity of a field is external.</strong> $(-1)^F$ is an element of the algebra for one mode and a product over modes, hence outside it, for a field.</li>
+<li><strong>The dagger of the envelope is a convention.</strong> The corpus defines the Hermitian dagger on the algebra; the extension used here, $X^{\dagger}=\sigma(\alpha(X^{r}))$, is the one of the maths corpus and agrees with the algebra's dagger on the even part. The reversion is the other natural anti-involution of the envelope, and the bracket-adjoint identity holds for it as well, because it is a property of any parity-preserving anti-involution; only the identification of the involution with the physical adjoint depends on the choice, and the reversion is not the adjoint of the spinor form.</li>
+<li><strong>Nothing here is a measure or an integral.</strong> The Grassmann and Berezin constructions are cited from their articles and are not used; the article is algebra, grading and adjointness.</li>
+<li><strong>No supersymmetry algebra is claimed to be contained in $\mathbb{B}$.</strong> The super-Poincaré algebra, if it is to be written, is written on an extension; the corpus's supersymmetry article states which superalgebra its construction realizes, and this article adds the general boundary and the Hermitian structure, not a second claim.</li>
+</ul>
+<h2 id="summary">Summary</h2>
+<p>A <strong>superalgebra</strong> is a $\mathbb{Z}/2$-graded algebra with the grading as part of its structure, and on it the graded commutator $[a,b]_{\mathrm{gr}}=ab-(-1)^{\lvert a\rvert\lvert b\rvert}ba$ is the commutator for even or mixed pairs and the anticommutator for two odd elements. The biquaternion algebra is the <strong>even part</strong> of the graded Clifford algebra, $\mathbb{B}=\mathrm{Cl}^0_{1,3}$, so it is not by itself a superalgebra, and it must not be conflated with the chirality grading of the supersymmetry article or with the sector splitting by the dagger.</p>
+<p>Read with the <strong>Hermitian adjoint</strong>, the superalgebra carries an even anti-involution, $(ab)^{\dagger}=b^{\dagger}a^{\dagger}$ with $\lvert a^{\dagger}\rvert=\lvert a\rvert$, and the adjoint of the graded bracket is</p>
+<p>$$
+\bigl([a,b]_{\mathrm{gr}}\bigr)^{\dagger}=-(-1)^{\lvert a\rvert\lvert b\rvert}\bigl[a^{\dagger},b^{\dagger}\bigr]_{\mathrm{gr}},
+$$</p>
+<p>so it reverses a commutator and preserves an anticommutator: the adjoint reverses the order of the factors, and only the odd-odd, symmetric case is even under the reversal. The Koszul-signed super-* convention would give the cleaner rule without the parity sign, and the corpus's dagger is not of that convention; the two are distinguished on two generators.</p>
+<p>A <strong>supercharge</strong> is an odd element; it is paired with its <strong>adjoint</strong>, $\{Q,Q^{\dagger}\}=2H$, which is Hermitian and even because the adjoint is an adjoint, this being the pairing of the corpus's supersymmetric quantum mechanics and the reason the Hamiltonian is real. In the module $\mathrm{Cl}^1=\mathbb{B}\gamma$ a supercharge is $Q=s\gamma$ with adjoint $Q^{\dagger}=-\gamma s^{\dagger}$ and $QQ^{\dagger}=-q(\gamma)ss^{\dagger}$, an even element; the symmetric form of the self-pairing is claimed only when the generator commutes with $s$. The odd extension is one generator, not a second algebra, and the odd slot carries the algebra's own Hermitian form.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$A=A^0\oplus A^1$</td>
+<td>A $\mathbb{Z}/2$-graded algebra, a superalgebra</td>
+</tr>
+<tr>
+<td>$\lvert a\rvert\in\{0,1\}$</td>
+<td>The parity of a homogeneous element</td>
+</tr>
+<tr>
+<td>$[a,b]_{\mathrm{gr}}=ab-(-1)^{\lvert a\rvert\lvert b\rvert}ba$</td>
+<td>Graded commutator; anticommutator for two odd elements</td>
+</tr>
+<tr>
+<td>graded Jacobi identity</td>
+<td>The super-Jacobi identity of a Lie superalgebra</td>
+</tr>
+<tr>
+<td>$\mathrm{Cl}_{1,3}=\mathbb{B}\oplus\mathrm{Cl}^1$</td>
+<td>Lie superalgebra, even part the biquaternion algebra</td>
+</tr>
+<tr>
+<td>$\{\mathrm{Cl}^1,\mathrm{Cl}^1\}\subseteq\mathbb{B}$</td>
+<td>Two fermionic steps are bosonic</td>
+</tr>
+<tr>
+<td>$X^{\dagger}=\sigma(\alpha(X^{r}))$</td>
+<td>The Hermitian adjoint; even anti-involution of the superalgebra</td>
+</tr>
+<tr>
+<td>$\bigl([a,b]_{\mathrm{gr}}\bigr)^{\dagger}=-(-1)^{\lvert a\rvert\lvert b\rvert}[a^{\dagger},b^{\dagger}]_{\mathrm{gr}}$</td>
+<td>The adjoint reverses a commutator, preserves an anticommutator</td>
+</tr>
+<tr>
+<td>$(ab)^{*}=(-1)^{\lvert a\rvert\lvert b\rvert}b^{*}a^{*}$</td>
+<td>The Koszul-signed super-<em>; </em><em>not</em>* the dagger of the corpus</td>
+</tr>
+<tr>
+<td>$\{Q,Q^{\dagger}\}=2H$</td>
+<td>Supercharge paired with its adjoint; Hermitian and even</td>
+</tr>
+<tr>
+<td>$Q=s\gamma$, $Q^{\dagger}=-\gamma s^{\dagger}$, $QQ^{\dagger}=-q(\gamma)ss^{\dagger}$</td>
+<td>The supercharge in the module $\mathrm{Cl}^1=\mathbb{B}\gamma$</td>
+</tr>
+<tr>
+<td>$\langle s\gamma,t\gamma\rangle=-q(\gamma)\langle s,t\rangle$, $\langle s,t\gamma\rangle=0$</td>
+<td>The Hermitian form on the odd slot ($\langle s,t\rangle=\mathrm{Sc}(s^{\dagger}t)$)</td>
+</tr>
+<tr>
+<td>$(-1)^F=ie_3\in\mathbb{M}_+$</td>
+<td>The one fermionic mode the algebra hosts natively</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Manfred Scheunert, <em>The Theory of Lie Superalgebras</em>, Lecture Notes in Mathematics 716 (Springer, 1979), for the graded bracket, the super-Jacobi identity and the structure theory.</li>
+<li>Julius Wess and Jonathan Bagger, <em>Supersymmetry and Supergravity</em> (Princeton University Press, 2nd ed. 1992), for the super-Poincaré algebra and the supercharge conventions.</li>
+<li>Bryce S. DeWitt, <em>Supermanifolds</em> (Cambridge University Press, 2nd ed. 1992), for the Grassmann envelope, the Berezin integral and the functorial view of the odd coordinates.</li>
+<li>Felix A. Berezin, <em>Introduction to Superanalysis</em> (Reidel, 1987), for the anticommuting coefficients and the algebra of the odd extension.</li>
+<li>Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, <em>The Book of Involutions</em>, Colloquium Publications 44 (American Mathematical Society, 1998), for the involutions of a Clifford algebra, the adjoint of an anti-automorphism and the unitary groups they define.</li>
+<li>Ian R. Porteous, <em>Clifford Algebras and the Classical Groups</em>, Cambridge Studies in Advanced Mathematics 50 (Cambridge University Press, 1995), for the graded Clifford algebra, its even part and the parity of its elements.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

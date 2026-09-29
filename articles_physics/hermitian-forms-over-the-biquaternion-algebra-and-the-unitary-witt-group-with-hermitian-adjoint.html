@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hermitian Forms over the Biquaternion Algebra and the Unitary Witt Group with Hermitian Adjoint — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="hermitian-forms-over-the-biquaternion-algebra-and-the-unitary-witt-group-with-hermitian-adjoint"><strong>Hermitian Forms over the Biquaternion Algebra and the Unitary Witt Group with Hermitian Adjoint</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This is the physics companion of <em>Hermitian Forms over the Biquaternion Algebra and the Unitary Witt Group with Hermitian Adjoint</em> (<code>articles_maths/hermitian-forms-over-the-biquaternion-algebra-and-the-unitary-witt-group-with-hermitian-adjoint.md</code>). The forms and their classification are the same; what changes is the reading. In the framework of these articles the <strong>Hermitian forms of the dagger are the internal forms</strong> — the forms that live on the informational sector and whose positive cone is the set of states — while the <strong>quaternion norm $N$ is the interval</strong>, the form that lives on the material sector and whose cone is the light cone. The mathematics has one classification theorem; the physics has two forms of different type, and the first task of this article is to keep them apart.</p>
+<p>The physical statements are: the internal form is positive definite and its cone is the Bloch ball; the isometry group of the internal form is the internal unitary group $U(2)$; the interval is indefinite and its isometry group is the Lorentz group; and the classification invariant of the <strong>states</strong> is the inertia, with the signature playing the role of the causal label. The Witt group statement is the framework's version of "there is only one invariant": the internal form has a single non-degenerate class up to hyperbolic splitting.</p>
+<h2 id="the-two-forms-and-the-two-sectors">The Two Forms and the Two Sectors</h2>
+<p><strong>The internal form.</strong> On the informational sector the relevant form is</p>
+<p>$$
+h(\tilde R,\tilde T) = \tilde R^{\dagger}\tilde T,\qquad (\tilde R,\tilde T)=\mathrm{Sc}(\tilde R^{\dagger}\tilde T)=R_{0}^{*}T_{0}+R_{1}^{*}T_{1}+R_{2}^{*}T_{2}+R_{3}^{*}T_{3},
+$$</p>
+<p>positive definite on the whole algebra, with the unit matrix as its Gram matrix. Its positive cone is the set of positive semidefinite elements, which is the state space: the trace-one slice is the <strong>Bloch ball</strong> of <em>The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector</em> and the rank-one boundary is the pure states. The form is the framework's inner product of amplitudes.</p>
+<p><strong>The interval.</strong> On the material sector the relevant form is the <strong>quaternion norm</strong></p>
+<p>$$
+N(\tilde R)=R_{0}^{2}+R_{1}^{2}+R_{2}^{2}+R_{3}^{2},
+$$</p>
+<p>complex-valued on the complexified algebra, indefinite and isotropic on the null cone $\{N=0\}$; it is the form of the interval, and it is <strong>not</strong> a form of the dagger, so it is not in the classification of the mathematics article at all. The reader who puts $N$ and $(\cdot,\cdot)$ in the same table will compute wrong inertias: the first has signature $(1,3)$-type (mostly minus after the standard sign convention) and the second is $(4,0)$.</p>
+<p><strong>Proposition (the two isometry groups).</strong> The isometry group of the internal form is the unitary slice $U(e_{0})=U(2)$, compact, of real dimension four; the isometry group of the interval (up to the phase ambiguity of the double cover) is the Lorentz group, non-compact, of real dimension six. The two groups act on the two sectors and are not subgroups of one another.</p>
+<p><em>Proof.</em> $S^{\dagger}S=e_{0}$ for the first; $N(S\tilde R)=N(\tilde R)$ for the second, with $S$ of norm one, is the similarity of the interval of <em>Biquaternion Rotations and Lorentz Transformations</em>. Verified in the matrix model.</p>
+<h2 id="inertia-as-the-causal-label">Inertia as the Causal Label</h2>
+<p><strong>The physical reading of the inertia.</strong> For a Hermitian element $H$ of the informational sector the inertia $(p,q,r)$ of the mathematics article is the triple of the dimensions of the positive, negative and null directions of the internal form restricted to the state space of $H$. In the physics the positive directions of a <strong>state</strong> are its populations and the negative directions of a Hermitian <strong>operator</strong> are the "negative populations" of the indefinite cases; the trace-one slice remembers the sum, not the signs, and the <strong>signature $\sigma=p-q$ is the physical label that the trace forgets</strong>.</p>
+<p><strong>Proposition (the causal classification of an internal form).</strong> A non-degenerate Hermitian element of the informational sector is</p>
+<ul>
+<li><strong>positive definite</strong> (inertia $(2,0)$): a proper internal state, all directions positive;</li>
+<li><strong>indefinite</strong> (inertia $(1,1)$): a hyperbolic internal form, with one positive and one negative direction;</li>
+<li><strong>null</strong> (rank one): a pure state direction plus a null direction, as for the lightlike element $e_{0}+ie_{3}$ of <em>Two-Sided Operators on the Biquaternion Algebra with Hermitian Adjoint</em>.</li>
+</ul>
+<p>The parallel with the causal classification of an interval-like vector is exact in form and different in content: there the cone is the light cone of the material sector, here it is the state cone of the informational sector, and the framework keeps the two cones apart.</p>
+<p><strong>Proposition (the states and the hyperbolic form).</strong> The reader must not read the hyperbolic case as "unphysical". The hyperbolic plane $\mathrm{diag}(1,-1)$ is the internal form of a <strong>signed state</strong> — a state with one positive and one negative internal direction — and it is exactly the form that appears in the signed and mixed two-sided operators of <em>Mixed Inner Conjugation and Hermitian Adjoint</em> and in the <strong>fermion parity</strong> sector of the graded articles. The negativity is not an inconsistency; it is the signature of a genuinely two-sector object.</p>
+<h2 id="the-isometry-group-and-the-internal-symmetries">The Isometry Group and the Internal Symmetries</h2>
+<p><strong>Proposition (the internal group is the isometry group of the internal form).</strong> The internal symmetries of the framework, the maps preserving the internal form $(\cdot,\cdot)$, are exactly the elements of $U(2)=U(e_{0})$, and they act on the algebra by the unitary sandwiches $\Theta_{\tilde{Q}}$, $\tilde{Q}\in U$. The Lorentz symmetries, which are the isometries of the <strong>interval</strong>, are not isometries of the internal form except on the compact part: a boost changes $(\cdot,\cdot)$ and preserves $N$.</p>
+<p><em>Proof.</em> The first statement is the mathematics article; the second is the comparison of the two invariants, $S^{\dagger}S=e_{0}$ against $N\circ S=N$. Verified: a boost of the corpus satisfies the second and not the first.</p>
+<p><strong>Physical consequence, stated as the article's warning.</strong> Every place where the framework says "the internal group is $U(2)$" is a statement about the isometry group of the <strong>unit form</strong>; every place where it says "the Lorentz group" is a statement about the isometry group of the <strong>norm</strong>. Replacing one by the other changes the theory, and the two forms have different signatures, so no theorem of one passes to the other.</p>
+<h2 id="the-witt-group-one-invariant-is-enough">The Witt Group: One Invariant is Enough</h2>
+<p><strong>The physical reading of the classification.</strong> The mathematics article proves that the non-degenerate Hermitian forms of the algebra modulo the hyperbolic ones form $\mathbb{Z}$, generated by the unit form and computed by the signature. The physical reading is the following. <strong>The internal form of the framework has a single classification invariant, the signature, and the hyperbolic forms carry no internal information</strong>: a hyperbolic form, whatever its rank, is equivalent to the trivial form once the hyperbolic summands are dropped. Two internal forms with the same signature are the same form up to a change of the internal basis (up to congruence), and the congruence is exactly the two-sided operator on the form matrix, which is the framework's <strong>change of the internal frame</strong>.</p>
+<p><strong>Physical consequence (the state is the class).</strong> The positive definite class is the class of the unit form and is the class of a <strong>proper state</strong>; the hyperbolic class is the class of a <strong>signed state</strong> and is trivial in the Witt group; the negative classes are the negatives of the positive ones, i.e. the orientation-reversed internal frames. The signature, not the full form, is the observable, and this is the same statement as in the interval sector, where the signature of the metric is the physical content and the metric's coordinate form is not.</p>
+<h2 id="worked-examples">Worked Examples</h2>
+<p><strong>A proper state and a signed state.</strong> The unit form $\mathrm{diag}(1,1)$ is the internal form of a proper state; the form $\mathrm{diag}(1,-1)$ is the internal form of a signed state and is the hyperbolic plane. Their signatures $2$ and $0$ distinguish them, and the trace-like normalisations do not: the two have the same rank.</p>
+<p><strong>The collapse under a null frame.</strong> The congruence by the null element $S=e_{0}+ie_{3}$ gives $\mathrm{rank}$-one forms: the internal form degenerates, the state cone collapses onto the null direction, and the rank drop is the algebraic trace of the lightlike degeneracy of the framework. The same computation is in the mathematics article and in <em>Two-Sided Operators on the Biquaternion Algebra with Hermitian Adjoint</em>.</p>
+<p><strong>A boost against an internal rotation.</strong> A boost $S$ with $N(S)=1$ and $S\notin U$ changes the interval label of an element and leaves the internal form alone in the sense of the congruence class only after the appropriate renormalisation; an internal rotation $S\in U$ preserves both. This is the operational difference between the two groups, and it is the reason the framework never identifies them.</p>
+<p><strong>The Witt class of a superposed state.</strong> A state built as the orthogonal sum of a positive and a negative internal direction has signature zero, i.e. it is hyperbolically equivalent to nothing: the "cancellation" is the algebraic form of a pair of internal sectors cancelling in the invariant, and it is the reason the framework's superalgebra articles can speak of a <strong>graded</strong> internal structure whose total signature is zero while the two sectors are individually non-trivial.</p>
+<h2 id="summary">Summary</h2>
+<p>The Hermitian forms of the dagger are the <strong>internal forms</strong>, positive definite, with the unit form as the reference and the Bloch ball as the positive cone; the quaternion norm is the <strong>interval</strong>, indefinite and of a different type, and the two must not be placed in the same classification. The isometry group of the internal form is the internal unitary group $U(2)$; the isometry group of the interval is the Lorentz group; the congruence $H\mapsto S^{\dagger}HS$ is the change of the internal frame and is exactly a two-sided operator of the corpus. The classification invariant of an internal form is the <strong>inertia</strong> and its signature, the hyperbolic forms are internally trivial, and the non-degenerate internal forms modulo the hyperbolic ones form the group $\mathbb{Z}$ generated by the unit form. The causal, hyperbolic and null cases of the classification are the proper, signed and lightlike internal states, and the cancellation of signatures is the algebraic form of the graded internal structure of the framework.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$(\tilde R,\tilde T)=\mathrm{Sc}(\tilde R^{\dagger}\tilde T)$</td>
+<td>The internal form; positive definite; cone the Bloch ball</td>
+</tr>
+<tr>
+<td>$N(\tilde R)=\sum_{\mu}R_{\mu}^{2}$</td>
+<td>The interval; indefinite; <strong>not</strong> a form of the dagger</td>
+</tr>
+<tr>
+<td>$U(e_{0})=U(2)$</td>
+<td>Isometry group of the internal form; the internal group</td>
+</tr>
+<tr>
+<td>Lorentz group</td>
+<td>Isometry group of the interval; not of the internal form</td>
+</tr>
+<tr>
+<td>$(p,q,r)$, $\sigma=p-q$</td>
+<td>Inertia and signature; the physical label of an internal form</td>
+</tr>
+<tr>
+<td>$\mathrm{Hyp}=\mathrm{diag}(1,-1)$</td>
+<td>The hyperbolic plane; the signed state; Witt class $0$</td>
+</tr>
+<tr>
+<td>$H\mapsto S^{\dagger}HS$</td>
+<td>The change of internal frame; a two-sided operator</td>
+</tr>
+<tr>
+<td>$W\cong\mathbb{Z}$</td>
+<td>Internal forms up to hyperbolic splitting; generated by the unit form</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>Hermitian Forms over the Biquaternion Algebra and the Unitary Witt Group with Hermitian Adjoint</em> (<code>articles_maths/hermitian-forms-over-the-biquaternion-algebra-and-the-unitary-witt-group-with-hermitian-adjoint.md</code>), the mathematical companion.</li>
+<li><em>The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector</em> (<code>articles_physics/the-hermitian-subspace-m-plus-as-the-informational-sector.md</code>), for the cone, the states and the trace-one slice.</li>
+<li><em>Biquaternion Norm and Invertibility</em> (<code>articles_physics/biquaternion-norm-and-invertibility.md</code>), for the interval, its isotropy and the null cone.</li>
+<li><em>Biquaternion Versors and the Orthogonal Group</em> (<code>articles_physics/biquaternion-versors-and-the-orthogonal-group.md</code>), for the isometry group of the interval and the double cover.</li>
+<li><em>Biquaternion Rotations and Lorentz Transformations</em> (<code>articles_physics/biquaternion-rotations-and-lorentz-transformations.md</code>), for the rotations and boosts used in the examples of the two groups.</li>
+<li><em>Biquaternion Lorentzian and Conformal Geometry</em> (<code>articles_physics/biquaternion-lorentzian-and-conformal-geometry.md</code>), for the light cone and the conformal structure of the interval sector.</li>
+<li><em>The Sandwich Action in Subspaces</em> (<code>articles_physics/the-sandwich-action-in-subspaces.md</code>), for the action of the congruences on the subspaces of the algebra.</li>
+<li><em>The Material/Informational Split as a Superselection Structure in Biquaternionic Form</em> (<code>articles_physics/the-material-informational-split-as-a-superselection-structure-in-biquaternionic-form.md</code>), for the two-sector reading of the two forms.</li>
+<li><em>Mixed Inner Conjugation and Hermitian Adjoint</em> (<code>articles_maths/mixed-inner-conjugation-and-hermitian-adjoint.md</code>), for the signed and mixed forms of the internal structure.</li>
+<li><em>Biquaternion Spectral Theory</em> (<code>articles_physics/biquaternion-spectral-theory.md</code>), for the element spectra entering the inertia.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

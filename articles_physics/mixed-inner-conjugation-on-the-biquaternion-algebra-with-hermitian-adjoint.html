@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mixed Inner Conjugation on the Biquaternion Algebra with Hermitian Adjoint — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="mixed-inner-conjugation-on-the-biquaternion-algebra-with-hermitian-adjoint"><strong>Mixed Inner Conjugation on the Biquaternion Algebra with Hermitian Adjoint</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>An internal observable is an element of the algebra, and an internal amplitude acts on it in one of four ways, according to two independent binary choices: whether the left factor is conjugated by the real structure and whether the right factor is inverted or dagged. Writing $\Phi^{\theta,\rho}_{\tilde{Q}}(\tilde T)=\theta(\tilde{Q})\tilde T\rho(\tilde{Q})$ with $\theta$ equal to the identity or to the coefficient conjugation ${}^{*}$ and $\rho$ equal to the inverse or the Hermitian conjugation ${}^{\dagger}$, the four operators are the inner conjugation, the signed inner conjugation, the Hermitian sandwich and the signed Hermitian sandwich. The mathematics is <em>Mixed Inner Conjugation on the Biquaternion Algebra with Hermitian Adjoint</em>; the unsigned members, their composition, kernel, image and cone, are <em>Two-Sided Operators on the Biquaternion Algebra with Hermitian Adjoint</em>, and the rotation reading of the inner conjugation is <em>Biquaternion Versors and the Orthogonal Group</em>. Nothing owned by those articles is re-derived.</p>
+<p>The physical identification of the twist is the corpus's: <strong>the coefficient conjugation ${}^{*}$ is the charge-conjugation real structure</strong>, the only conjugate-linear automorphism of the algebra, with fixed points the real quaternions $\mathbb{H}_{\mathbb{B}}$ and with the property that it exchanges the defining module $S$ and its conjugate $\bar{S}$ (<em>The Neutrino and Majorana Fermions in Biquaternionic Form</em>, <em>Biquaternion Ideals and Peirce Decomposition</em>). So the family is: conjugate an operator by an amplitude, with or without the charge-conjugation twist, and with the amplitude inverted or undone by the dagger. The two facts that the article carries are then physical statements about $\mathbb{B}$.</p>
+<p>The first is that <strong>the dagger sandwich differs from the conjugation by the state that the amplitude prepares</strong>: the exact identity $\Phi^{\theta,{}^{\dagger}}_{\tilde{Q}}=R_{\tilde{Q}\tilde{Q}^{\dagger}}\circ\Phi^{\theta,\mathrm{inv}}_{\tilde{Q}}$ says that passing from the conjugating description to the Hermitian one is the right multiplication by the cone element $\tilde{Q}\tilde{Q}^{\dagger}$, the positive semidefinite Hermitian element of <em>Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint</em>, which is the density matrix of the state the amplitude prepares.</p>
+<p>The second, and the reason the instance is worth separating from the general theory, is that <strong>the charge-conjugation twist is invisible on the internal rotations and detected by the global phase</strong>. On the unitary slice $U(2)$ the four operators collapse in two steps: the untwisted pair becomes the inner conjugation $\mathrm{Ad}_{\tilde{Q}}$ on all of $U(2)$, and the charge-conjugation-twisted pair joins it exactly on the rotation group $SU(2)=U(2)\cap\mathbb{H}_{\mathbb{B}}$. The phase, which is the quotient $U(1)$, is exactly what the twist detects. This is the operator-level form of the statement that charge conjugation acts trivially on the rotation subgroup and flips the phase, and it sharpens the general collapse theorem of the mathematical source, which absorbs the twist into a sign.</p>
+<h2 id="the-four-operators-as-descriptions-of-one-action">The Four Operators as Descriptions of One Action</h2>
+<p><strong>The inner conjugation</strong> $\tilde{Q}\mapsto\tilde{Q}\tilde T\tilde{Q}^{-1}$ is the internal rotation of the observable. <strong>The Hermitian sandwich</strong> $\tilde{Q}\mapsto\tilde{Q}\tilde T\tilde{Q}^{\dagger}$ is the same action written with the dagger, and it is the channel operator of <em>Completely Positive Maps of the Biquaternion Algebra with Hermitian Adjoint</em>; it is the description in which an observable is transported by an amplitude rather than conjugated by a group element. <strong>The signed inner conjugation</strong> $\Phi^{{}^{*},\mathrm{inv}}_{\tilde{Q}}(\tilde T)=\tilde{Q}^{*}\tilde T\tilde{Q}^{-1}$ is the rotation followed by the charge-conjugation twist on the left. <strong>The signed Hermitian sandwich</strong> $\Phi^{{}^{*},{}^{\dagger}}_{\tilde{Q}}(\tilde T)=\tilde{Q}^{*}\tilde T\tilde{Q}^{\dagger}$ is the twisted channel.</p>
+<p><strong>Proposition (the twist acts on the amplitude, not on the observable).</strong> All four operators are $\mathbb{C}$-linear in the observable $\tilde T$; the twist conjugates the amplitude. In physical terms the twist is a property of the transformation, not of the quantity transformed.</p>
+<p><em>Proof.</em> The complex scalars are central and pass through both the conjugation and the product; the twist is $\mathbb{C}$-antilinear in the amplitude alone. Verified in the matrix model.</p>
+<p><strong>Remark (the four coincide on the real quaternions).</strong> For an amplitude in $\mathbb{H}_{\mathbb{B}}$ — a rotation — the twist is inert, ${}^{*}(\tilde{Q})=\tilde{Q}$, and the signed members are the unsigned ones. The real-quaternion subspace is the natural home of the untwisted theory, and $SU(2)$ is its unitary part.</p>
+<h2 id="the-two-defects">The Two Defects</h2>
+<p><strong>Theorem (the horizontal defect).</strong> For every $\theta$ and invertible $\tilde{Q}$, the dagger sandwich is the conjugation followed by the right multiplication by the prepared state,</p>
+<p>$$
+\Phi^{\theta,{}^{\dagger}}_{\tilde{Q}}=R_{\tilde{Q}\tilde{Q}^{\dagger}}\circ\Phi^{\theta,\mathrm{inv}}_{\tilde{Q}} .
+$$</p>
+<p><strong>Physical reading.</strong> The element $\tilde{Q}\tilde{Q}^{\dagger}$ is the prepared state; the identity says that the difference between the two right factors of the family is exactly that state, acting by multiplication on the right. On the slice $\tilde{Q}\tilde{Q}^{\dagger}=e_0$ and the two descriptions coincide; off it, the offset is the density matrix of <em>The Bloch Ball as the Trace-One Slice of the Future Light Cone</em>. A boost, which lies outside the slice, is the case in which the offset is a genuine state and not the identity: this is the same amplification that appears in the covariance of the internal bilinears in <em>Bilinear Operators on the Biquaternion Algebra with Hermitian Adjoint</em>.</p>
+<p><strong>Theorem (the vertical defect).</strong> For every $\rho$ the twist is one left factor,</p>
+<p>$$
+\Phi^{{}^{*},\rho}_{\tilde{Q}}=L_{{}^{*}(\tilde{Q})\tilde{Q}^{-1}}\circ\Phi^{\mathrm{id},\rho}_{\tilde{Q}} .
+$$</p>
+<p><strong>Physical reading.</strong> The <strong>charge-conjugation defect</strong> ${}^{*}(\tilde{Q})\tilde{Q}^{-1}$ is the element that measures how strongly the amplitude is not its own charge conjugate. It is $e_0$ exactly on the real quaternions, so it vanishes on every internal rotation; it is the scalar $\pm e_0$ on the homogeneous elements, so on a bosonic amplitude it is a sign; and on a central unit it is the inverse-square phase, so the twist detects the global phase. Charge conjugation is thus invisible on the rotation group and visible exactly on the phase.</p>
+<h2 id="the-collapse-the-rotations-and-the-phase">The Collapse: The Rotations and the Phase</h2>
+<p><strong>Theorem (the collapse).</strong> For $\tilde{Q}\in U(2)$ the four operators form two pairs, and each pair is a single operator:</p>
+<p>$$
+\Phi^{\mathrm{id},\mathrm{inv}}_{\tilde{Q}}=\Phi^{\mathrm{id},{}^{\dagger}}_{\tilde{Q}}=\mathrm{Ad}_{\tilde{Q}},
+\qquad
+\Phi^{{}^{*},\mathrm{inv}}_{\tilde{Q}}=\Phi^{{}^{*},{}^{\dagger}}_{\tilde{Q}}=L_{{}^{*}(\tilde{Q})\tilde{Q}^{-1}}\circ\mathrm{Ad}_{\tilde{Q}} ,
+$$</p>
+<p>and the two pairs agree exactly on the rotation group,</p>
+<p>$$
+\Phi^{{}^{*},\rho}_{\tilde{Q}}=\Phi^{\mathrm{id},\rho}_{\tilde{Q}} \iff \tilde{Q}\in U(2)\cap\mathbb{H}_{\mathbb{B}}=SU(2) .
+$$</p>
+<p><em>Proof.</em> On the slice the dagger is the inverse, the horizontal defect trivialises and each pair collapses; the two pairs are separated by the charge-conjugation defect, which vanishes exactly on $\mathbb{H}_{\mathbb{B}}$. Verified over random slice elements and their phase-twisted products: the collapse held on $SU(2)$ and failed at the central phase $ie_0$, which is in $U(2)$ but not in $SU(2)$.</p>
+<p><strong>Physical reading (the twist is blind to the rotation and sensitive to the phase).</strong> The two collapse loci are the two subgroups the physics uses, and their quotient is the phase:</p>
+<p>$$
+U(2)/SU(2)\cong U(1),\qquad \text{the central phase} .
+$$</p>
+<p>So the charge-conjugation twist commutes with every internal rotation and is detected exactly by the global phase. The phase of an amplitude is invisible to the internal rotation and to the untwisted channel — the inner conjugation is blind to a central scalar — but it is precisely what the twist sees, since the defect of a central unit of phase $\omega$ is $\overline{\omega}^{2}e_0$. The same asymmetry is what makes $C$ a non-trivial real structure on the module while it acts trivially on the internal rotation group (<em>The Neutrino and Majorana Fermions in Biquaternionic Form</em>). The phase is thus the internal quantity conjugate to the charge conjugation, which is the operator statement behind the use of ${}^{*}$ as the charge-conjugation real structure.</p>
+<p><strong>Remark (the charge conjugate of an amplitude).</strong> On the slice the charge conjugate of an amplitude differs from the amplitude by a unit scalar alone: writing $\tilde{Q}=\omega q$ with $q$ a rotation and $\lvert\omega\rvert=1$, one has $\tilde{Q}^{*}=\overline{\omega}^{2}\tilde{Q}$, and the charge-conjugation defect is the central unit $\overline{\omega}^{2}e_0$. So the charge conjugate of an amplitude induces the <strong>same</strong> inner conjugation and the <strong>same</strong> untwisted channel, because the inner conjugation is blind to the central phase, while the twisted members are the untwisted ones multiplied by $\overline{\omega}^{2}$. The pair identity $\Phi^{{}^{*},\rho}_{\tilde{Q}}=\Phi^{\mathrm{id},\rho}_{\tilde{Q}}$ therefore holds exactly when $\overline{\omega}^{2}=1$, that is exactly when $\det\tilde{Q}=\omega^{2}=1$, which is the rotation group $SU(2)$: the same locus as in the collapse theorem, here read as the statement that the charge conjugate of an amplitude reproduces the amplitude itself only on the rotations.</p>
+<h2 id="worked-examples">Worked Examples</h2>
+<p><strong>A central phase.</strong> For $\tilde{Q}=\omega e_0$ with $\lvert\omega\rvert=1$ the inner conjugation is the identity and the signed family is the scalar $\overline{\omega}^{2}$:</p>
+<p>$$
+\Phi^{\mathrm{id},\rho}_{\omega e_0}=\mathrm{id},\qquad \Phi^{{}^{*},\rho}_{\omega e_0}=\overline{\omega}^{2}\mathrm{id},\qquad \rho\in\{\mathrm{inv},{}^{\dagger}\}.
+$$</p>
+<p>The whole of $U(1)=U(2)/SU(2)$ is of this form, so the example exhibits the failure of the collapse at the first non-trivial phase, and shows that the phase enters the twisted family as the unit $\overline{\omega}^{2}$.</p>
+<p><strong>A rotation, and a rotation with a phase.</strong> For $\tilde{Q}=e_1$ the twist is inert and the four operators are the rotation $\mathrm{Ad}_{e_1}$ through $\pi$ about the $e_1$ axis, the exact case of the collapse. For $\tilde{Q}=ie_1$ the twist element is $-e_0$ and every member of the signed pair is the negative of that rotation. The two amplitudes $e_1$ and $ie_1$ differ by the phase $i$, give the <strong>same</strong> inner conjugation — the rotation — and the <strong>opposite</strong> signed inner conjugation. The phase is exactly what separates them, and it is the phase that the rotation cannot see.</p>
+<p><strong>A boost.</strong> For a boost the amplitude lies outside $U(2)$, both defects are non-trivial, and no member of the family is an internal symmetry: the horizontal defect is the prepared state and the vertical defect is a genuine unit. This is the operator face of the fact that the Lorentz group does not act unitarily on the internal space, only its compact subgroup $SU(2)$ does.</p>
+<h2 id="honest-limits">Honest Limits</h2>
+<p>Two limits must be stated, and they are the content of the article as much as the theorem is. First, <strong>the twist of this article is not the parity twist of the framework</strong>. Parity is the grading of the ambient $\mathrm{Cl}_{1,3}$, and its grade involution is the identity on the even part, which is $\mathbb{B}$ itself: on the algebra parity does nothing, and its carrier is the odd slot that a theory written only in $\mathbb{B}$ does not contain (<em>The Graded Algebra, Fermion Parity and the Two Sectors with Signed Inner Conjugation in Biquaternionic Form</em>). The twist ${}^{*}$ used here is the grading of the other Clifford structure, $\mathbb{B}\cong\mathrm{Cl}_{3,0}$, and it is nontrivial on $\mathbb{B}$. The two gradings of one algebra give the two different collapse theorems, and conflating them is the error the article is written to prevent. Second, the physical identification of ${}^{*}$ with charge conjugation is the corpus's real-structure reading of <em>The Neutrino and Majorana Fermions in Biquaternionic Form</em>, not a derivation of a charge-conjugation symmetry of any particular dynamics; the article proves the operator identities and states the reading, and it does not claim that the internal theory contains a physical $C$ that is conserved.</p>
+<h2 id="summary">Summary</h2>
+<p>The internal amplitude acts on an observable by the mixed inner conjugation $\Phi^{\theta,\rho}_{\tilde{Q}}(\tilde T)=\theta(\tilde{Q})\tilde T\rho(\tilde{Q})$, with the twist $\theta$ equal to the identity or to the charge-conjugation real structure ${}^{*}$; the four members are the inner conjugation (the rotation), the Hermitian sandwich (the channel), and the two charge-conjugation-twisted versions. The twist acts on the amplitude and not on the observable, and it is inert on the real quaternions, hence on every rotation. Two exact defects govern the family: the <strong>horizontal</strong> defect, which says that the Hermitian description differs from the conjugating one by the right multiplication by the prepared state $\tilde{Q}\tilde{Q}^{\dagger}$, trivial exactly on the unitary slice; and the <strong>vertical</strong> defect ${}^{*}(\tilde{Q})\tilde{Q}^{-1}$, the charge-conjugation defect, trivial exactly on the real quaternions and equal to the inverse-square phase on a central unit. On the slice $U(2)$ the family <strong>collapses in two steps</strong>: the untwisted pair is the inner conjugation $\mathrm{Ad}_{\tilde{Q}}$ on all of $U(2)$, and the twisted pair joins it exactly on the rotation group $SU(2)$, so the phase $U(2)/SU(2)=U(1)$ is exactly the quantity the charge conjugation detects. Charge conjugation is thus blind to the internal rotations and sensitive to the global phase, which is the operator statement of its role as the real structure that exchanges the defining module and its conjugate. The twist of this article must not be confused with the parity twist, which is trivial on the algebra and lives on the odd slot.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\Phi^{\mathrm{id},\mathrm{inv}}_{\tilde{Q}}=\mathrm{Ad}_{\tilde{Q}}$</td>
+<td>Inner conjugation; the internal rotation</td>
+</tr>
+<tr>
+<td>$\Phi^{\mathrm{id},{}^{\dagger}}_{\tilde{Q}}$</td>
+<td>Hermitian sandwich; the internal channel</td>
+</tr>
+<tr>
+<td>$\Phi^{{}^{*},\mathrm{inv}}_{\tilde{Q}},\ \Phi^{{}^{*},{}^{\dagger}}_{\tilde{Q}}$</td>
+<td>The charge-conjugation-twisted rotation and channel</td>
+</tr>
+<tr>
+<td>$\tilde{Q}\tilde{Q}^{\dagger}$</td>
+<td>Horizontal defect; the prepared state, a cone element</td>
+</tr>
+<tr>
+<td>${}^{*}(\tilde{Q})\tilde{Q}^{-1}$</td>
+<td>Vertical defect; the charge-conjugation defect</td>
+</tr>
+<tr>
+<td>$U(2)/SU(2)\cong U(1)$</td>
+<td>The phase, exactly what the twist detects</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Michael A. Nielsen and Isaac L. Chuang, <em>Quantum Computation and Quantum Information</em> (Cambridge University Press, 10th anniversary ed. 2010), for the phase as the ambiguity of a state and the Pauli transfer matrix of a channel.</li>
+<li>Claude Cohen-Tannoudji, Bernard Diu and Franck Laloë, <em>Quantum Mechanics</em>, Vol. 1 (Wiley, 1977), for the rotation group, its representation on observables and the inner automorphism.</li>
+<li>Claude Itzykson and Jean-Bernard Zuber, <em>Quantum Field Theory</em> (McGraw-Hill, 1980), for charge conjugation as a conjugate-linear real structure on the Dirac module and the exchange of the two chiralities.</li>
+<li>Ian R. Porteous, <em>Clifford Algebras and the Classical Groups</em>, Cambridge Studies in Advanced Mathematics 50 (Cambridge University Press, 1995), for the grading involution and the inner automorphism group of a Clifford algebra.</li>
+<li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em>, London Mathematical Society Lecture Note Series 286 (Cambridge University Press, 2nd ed. 2001), for the conjugation anti-involutions and their fixed subspaces.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

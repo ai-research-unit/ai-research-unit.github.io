@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spinors as Minimal Left Ideals with Signed Hermitian Adjoint — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="spinors-as-minimal-left-ideals-with-signed-hermitian-adjoint"><strong>Spinors as Minimal Left Ideals with Signed Hermitian Adjoint</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A spinor can be taken to be an element of a minimal left ideal $I=\mathrm{Cl}(V,q)\pi$ of the Clifford algebra, the algebra acting on it by left multiplication; this is <em>Spinors as Minimal Left Ideals with Inner Conjugation</em>, and it is the description that makes the whole pin group, and not only its even part, act on spinors. The present article reads the same ideal with the signed Hermitian sandwich as the operator, and the Hermitian form as the structure on the ideal.</p>
+<p>The ideal is a left ideal, so left multiplication by <strong>every</strong> element of the algebra carries it into itself, and the pin action on it is defined for all of $\mathrm{Pin}(V,q)$. The ideal is not homogeneous, $I=I^0\oplus I^1$ with $I^i=\mathrm{Cl}^i\pi$, and an odd element interchanges the two summands while an even element preserves them, so a spinor of the ideal has a parity decomposition and the odd part of the group swaps the components.</p>
+<p>The signed Hermitian sandwich is realised on the ideal by a conjugation of the Clifford multiplication with <strong>two left multiplications</strong>,</p>
+<p>$$
+\Theta^{\alpha}_x(v)\,\psi=\alpha(x)\,v\,x^{\dagger}\,\psi
+=\rho(\alpha(x))\,\rho(v)\,\rho(x^{\dagger})\,\psi
+=\rho(\alpha(x))\,\rho(v)\,\rho(x)^{*}\,\psi,
+\qquad v\in V,\ \psi\in I,
+$$</p>
+<p>where the last equality is the adjoint identity $\rho(x)^{*}=\rho(x^{\dagger})$ of <em>Pin Representations and Clifford Modules with Signed Hermitian Adjoint</em>, valid for the Hermitian form of the ideal. So the left factor of the two-sided operator appears as the signed left multiplication $\Lambda^{\alpha}_x$, and the right factor appears as the <strong>adjoint</strong> of the left multiplication by $x$, not as its inverse. This is the Hermitian specificity of the ideal picture: on the slice the adjoint is the inverse and the two factors are $\rho(\alpha(x))$ and $\rho(x)^{-1}$, which is exactly the inverse formulation; off the slice the second factor is the adjoint, and the defect $\rho(x)\rho(x)^{*}=\rho(xx^{\dagger})$ measures the failure of the ideal to be a unitary module under the action of $x$.</p>
+<p>The Clifford algebra, its parity grading and the intrinsic involutions are <em>Clifford Algebras</em> and <em>Clifford Algebras in Finite Dimensions</em>; the idempotents, the minimal left ideals, the bridge to the Chevalley module, the even-multivector picture and the two actions on the ideal are <em>Spinors as Minimal Left Ideals with Inner Conjugation</em>, and nothing of that theory is re-derived; the Hermitian form on the ideal and the adjoint of the left action are <em>The Adjoint of the One-Sided Action with Hermitian Adjoint</em> and <em>Hermitian Clifford Modules with Hermitian Adjoint</em>; the Clifford modules and the pin representation are <em>Pin Representations and Clifford Modules with Signed Hermitian Adjoint</em>; the groups are <em>The Clifford, Pin and Spin Groups with Signed Hermitian Adjoint</em>; and the two-sided operator with its one-sided factors is <em>Two-Sided Operators on a Clifford Algebra with Signed Hermitian Adjoint</em> and <em>One-Sided Operators on a Clifford Algebra with Signed Hermitian Adjoint</em>. The base is a commutative ring $A$ with involution $\sigma$, $F$ the field of scalars of characteristic not two, $q$ non-degenerate on $V$, $B$ its polar form.</p>
+<h2 id="the-ideal-as-a-pin-module">The Ideal as a Pin Module</h2>
+<p><strong>Proposition (the left action).</strong> Let $I=\mathrm{Cl}(V,q)\pi$ be a left ideal. For every $a\in\mathrm{Cl}(V,q)$ the left multiplication $L_a$ carries $I$ into itself, $L_a(I)\subseteq I$, and $I$ is a Clifford module. Consequently the assignment</p>
+<p>$$
+\rho(x)\psi=x\,\psi,\qquad x\in\mathrm{Pin}(V,q),\ \psi\in I,
+$$</p>
+<p>is the restriction of the algebra action to the group, that is, the pin representation on the Hermitian module $I$.</p>
+<p><em>Proof.</em> If $y=b\pi$ then $ay=(ab)\pi\in I$; the action is associative and restricts to the units. The Hermitian form on $I$ is the restriction of the module form, and the self-adjointness axiom holds because it holds on the whole algebra.</p>
+<p><strong>Proposition (faithfulness on the ideal).</strong> If $\mathrm{Cl}(V,q)$ is simple and $I\neq0$ the action on $I$ has trivial kernel, and if $\mathrm{Cl}(V,q)\cong A'\times A'$ with $I$ the minimal ideal of the first factor, the kernel is $\mathrm{Pin}(V,q)\cap(\{1\}\times A')$.</p>
+<p><em>Proof.</em> The annihilator of the ideal is a proper two-sided ideal; it vanishes over a simple algebra and over a product the ideal of one factor is annihilated by the other. This is the kernel computation of the pin-representation article read on the ideal.</p>
+<p><strong>Remark.</strong> The left action is why the ideal description is available for the whole pin group; the right action does not preserve a minimal left ideal, and the dual representation is realised on a minimal right ideal instead. The Hermitian form does not change this: it is a form on the ideal as a left module, and the adjoint of a left multiplication is again a left multiplication, by the dagger of the element.</p>
+<h2 id="the-parity-of-the-ideal">The Parity of the Ideal</h2>
+<p><strong>Proposition (the splitting).</strong> The ideal splits according to the grading,</p>
+<p>$$
+I=I^0\oplus I^1,\qquad I^i=\mathrm{Cl}^i(V,q)\,\pi,
+$$</p>
+<p>and left multiplication by an even element preserves the two summands while left multiplication by an odd element interchanges them.</p>
+<p><em>Proof.</em> An element of the algebra is the sum of its even and its odd part, giving the splitting; and $\mathrm{Cl}^i\mathrm{Cl}^j\subseteq\mathrm{Cl}^{i+j}$ gives $L_a(I^j)\subseteq I^{i+j}$ for $a\in\mathrm{Cl}^i$, the exponent read modulo two.</p>
+<p><strong>Corollary (pinors and the halves).</strong> An odd element of $\mathrm{Pin}(V,q)$ maps $I^0$ onto $I^1$ and $I^1$ onto $I^0$; an even element, in particular every element of $\mathrm{Spin}(V,q)$, preserves each summand. On a minimal left ideal the two summands play the role of the two half-spin spaces of the module theory, and the odd part of the group exchanges them.</p>
+<p><em>Proof.</em> Immediate from the splitting and the parity of the left multiplication.</p>
+<p><strong>Remark (the Hermitian pairing of the halves).</strong> The Hermitian form of the ideal pairs only elements of the same parity, so $I^0$ and $I^1$ are orthogonal for it; the two summands are orthogonal chiral halves, and the Hermitian form restricts to each of them. This is the ideal-theoretic form of the orthogonality of the chiral summands of a Hermitian Clifford module, recorded in <em>The Blade Form and the Hilbert Structure with Hermitian Adjoint</em>.</p>
+<h2 id="the-signed-hermitian-sandwich-on-the-ideal">The Signed Hermitian Sandwich on the Ideal</h2>
+<p><strong>Proposition (the operator realised by left multiplications).</strong> For $x\in\mathrm{Cl}(V,q)$, $v\in V$ and $\psi\in I$,</p>
+<p>$$
+\Theta^{\alpha}_x(v)\,\psi=\alpha(x)\,v\,x^{\dagger}\,\psi
+=\rho(\alpha(x))\,\rho(v)\,\rho(x)^{*}\,\psi .
+$$</p>
+<p>So the signed Hermitian sandwich is realised on the ideal as the conjugation of the Clifford multiplication by the left multiplication of $\alpha(x)$ and the <strong>adjoint</strong> of the left multiplication of $x$: the left factor is the signed left multiplication $\Lambda^{\alpha}_x$ and the right factor is the dagger right multiplication, read on the ideal as the adjoint operator $\rho(x)^{*}=\rho(x^{\dagger})$. On the unitary slice the adjoint is the inverse and the formula is that of the inverse formulation.</p>
+<p><em>Proof.</em> Both sides are the same product of three factors in the algebra, applied to $\psi$; the first factor is $\rho(\alpha(x))=\Lambda^{\alpha}_x$ and the third is $\rho(x^{\dagger})=\rho(x)^{*}$ by the adjoint proposition of the pin-representation article, since the ideal is a Hermitian Clifford module. On the slice $x^{\dagger}=x^{-1}$ and $\rho(x)^{*}=\rho(x)^{-1}$.</p>
+<p><strong>Corollary (the reflection, on and off the slice).</strong> Let $u\in V$ with $q(u)\neq0$ and let $\rho_u$ be the reflection in $u^{\perp}$. Then for all $v\in V$ and $\psi\in I$,</p>
+<p>$$
+\Theta^{\alpha}_u(v)\,\psi=-q(u)\,\rho_u(v)\,\psi,\qquad
+\rho(u)\,\rho(v)\,\rho(u)^{*}\,\psi=-q(u)\,\rho_u(v)\,\psi ,
+$$</p>
+<p>and on the unitary slice, $q(u)=-1$, both reduce to $\rho_u(v)\psi$; the unsigned sandwich is the negative of this on the slice. So on the ideal the sandwich with a slice-normalised vector is the reflection, and the sign that the two-sided operator removes is $-q(u)$, which is $+1$ exactly on the slice.</p>
+<p><em>Proof.</em> The first identity is the previous proposition with $x=u$ and the vector formula $\Theta^{\alpha}_u=-q(u)\rho_u$; the second is the corollary of the pin-representation article.</p>
+<p><strong>Remark (the defect off the slice).</strong> Off the slice the third factor of the operator is the adjoint, and the two-sided operator is not the conjugation by a unit: the element $x$ satisfies $\rho(x)\rho(x)^{*}=\rho(xx^{\dagger})$, which is the identity only when $xx^{\dagger}=1$, that is on the slice. So the ideal conjugation by a general element realises the Hermitian sandwich but not by a unitary operator, and that is the precise sense in which the Hermitian formulation needs the slice to produce unitarily the geometric operators.</p>
+<h2 id="worked-cases">Worked Cases</h2>
+<h3 id="the-ideal-of-the-three-dimensional-definite-algebra">The Ideal of the Three-Dimensional Definite Algebra</h3>
+<p>In $\mathrm{Cl}_{0,3}(\mathbb{R})$ with $e_j^{2}=-1$ and $\sigma=\mathrm{id}$, let $\pi=\tfrac12(1+e_3)$. Then $\pi^{2}=\pi$, $\pi$ is primitive, $e_3\pi=\pi$, and</p>
+<p>$$
+I=\mathrm{Cl}_{0,3}\,\pi=\mathrm{span}_{\mathbb{R}}\{\pi,\ e_1\pi,\ e_2\pi,\ e_1e_2\pi\},
+$$</p>
+<p>of real dimension four, with the volume element $\omega=e_1e_2e_3$ acting by $\omega\pi=e_1e_2\pi$ and the splitting $I^0=\mathrm{span}\{\pi,e_1e_2\pi\}$, $I^1=\mathrm{span}\{e_1\pi,e_2\pi\}$. The dagger is $\sigma=\mathrm{id}$ and $\alpha$ on the generators, so $e_1^{\dagger}=-e_1$, $e_2^{\dagger}=-e_2$; the element $e_1$ is on the slice and</p>
+<p>$$
+\Theta^{\alpha}_{e_1}(v)\psi=e_1\,v\,e_1\psi=\rho_{e_1}(v)\psi
+$$</p>
+<p>for $v\in V$, the reflection, while $\rho(e_1)\rho(v)\rho(e_1)^{-1}\psi=-e_1ve_1\psi=-\rho_{e_1}(v)\psi$. The odd idempotent-supported element $e_1$ acts on the ideal by interchanging $I^0$ and $I^1$, as in the inverse formulation.</p>
+<h3 id="the-reflection-read-on-the-ideal">The Reflection Read on the Ideal</h3>
+<p>Take $u=e_1$, $v=e_2$, $\psi=\pi$. Then $\rho_{e_1}$ fixes $e_2$, since $B(e_1,e_2)=0$, and</p>
+<p>$$
+\Theta^{\alpha}_{e_1}(e_2)\pi=e_1e_2e_1\pi,\qquad
+\rho(e_1)\rho(e_2)\rho(e_1)^{*}\pi=e_1e_2e_1\pi,
+$$</p>
+<p>the same three factors: on the slice the adjoint is the inverse and the signed operator is the conjugation. The unsigned sandwich is the negative of this, $-e_1e_2e_1\pi$, and the parity sign is the only difference between the two computations, exactly as in the inverse formulation; the Hermitian reading adds that the third factor is $\rho(e_1)^{*}$ and that this is $\rho(e_1)^{-1}$ on the slice.</p>
+<h3 id="the-volume-element">The Volume Element</h3>
+<p>The volume element $\omega=e_1e_2e_3$ of the odd-dimensional algebra is odd, central and satisfies $\omega^{2}=-1$, so it is on the slice, and its Hermitian sandwich is the signed inner conjugation: $\Theta^{\alpha}_\omega=\mathrm{Ad}^{\alpha}_\omega=-\mathrm{id}$ while $\Theta_\omega=\mathrm{id}$. On the ideal, left multiplication by $\omega$ sends $I^0$ to $I^1$ and $I^1$ to $I^0$, and the signed Hermitian sandwich by $\omega$ acts as $-\mathrm{id}$ on the ideal, separating a spinor from its negative; the unsigned one is invisible. The adjoint of $\rho(\omega)$ is $\rho(\omega)^{*}=\rho(\omega^{\dagger})=\rho(\omega)$; on an odd number of skew-adjoint generators the two reversals cancel, so $\rho(\omega)$ is self-adjoint, and it is not the inverse, since $\omega^{\dagger}=\omega$ while $\omega^{-1}=-\omega$: the volume element is <strong>not</strong> on the slice, $\omega^{\dagger}\omega=\omega^{2}=-1$. The self-adjointness is nevertheless consistent with the sandwich acting as $-\mathrm{id}$, because the sandwich is the two-sided operator and not the one-sided factor.</p>
+<h3 id="the-biquaternion-ideal">The Biquaternion Ideal</h3>
+<p>For $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ the same construction gives an ideal whose elements are the biquaternion spinors, with the two summands playing the role of the two chiralities and the odd elements of the pin group exchanging them. In the physics corpus the sandwich is written $\tilde Q\,x\,\tilde Q^{\dagger}$, which is the Hermitian sandwich of this article read in the biquaternion algebra, and it is an isometry on the slice, the Lorentz group there; the compatibility of the ideal with the Lorentz action is the subject of the applications layer and nothing of it is used here.</p>
+<h2 id="summary">Summary</h2>
+<p>A <strong>minimal left ideal</strong> $I=\mathrm{Cl}(V,q)\pi$ is a left ideal and hence a Clifford module on which left multiplication by every element of the algebra is defined; the whole <strong>pin group</strong> acts on it by left multiplication, spinors are the elements of $I$, and on a simple algebra the action is faithful, with kernel $\mathrm{Pin}\cap(\{1\}\times A')$ over a product. The ideal is not homogeneous: it splits as $I=I^0\oplus I^1$ with $I^i=\mathrm{Cl}^i\pi$, the even elements preserve the two summands and the odd elements interchange them, and the Hermitian form of the ideal pairs only equal parities, so the two chiral halves are Hermitian-orthogonal. The signed Hermitian sandwich is realised on the ideal by conjugating the Clifford multiplication with two left multiplications,</p>
+<p>$$
+\Theta^{\alpha}_x(v)\psi=\rho(\alpha(x))\,\rho(v)\,\rho(x)^{*}\psi
+=\rho(\alpha(x))\,\rho(v)\,\rho(x^{\dagger})\psi ,
+$$</p>
+<p>the left factor being the <strong>signed left multiplication</strong> $\Lambda^{\alpha}_x$ and the right factor being the <strong>adjoint</strong> of the left multiplication of $x$, the Hermitian specificity of the picture; on the unitary slice the adjoint is the inverse and the formula coincides with the inverse formulation, off the slice the defect $\rho(xx^{\dagger})$ measures the failure of the conjugation to be by a unitary. For a slice-normalised vector $u$ the sandwich on the ideal is the reflection, $\Theta^{\alpha}_u(v)\psi=\rho_u(v)\psi$, while the unsigned sandwich is its negative; the central volume element of an odd-dimensional algebra acts on the ideal by exchanging the two chiral summands, and the signed Hermitian sandwich by it acts as $-\mathrm{id}$ where the unsigned one is invisible.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$I=\mathrm{Cl}(V,q)\pi$</td>
+<td>Minimal left ideal, the spinor module</td>
+</tr>
+<tr>
+<td>$\mathrm{Pin}$ acts by $\rho(x)\psi=x\psi$</td>
+<td>Pin action, one-sided, defined for all of $\mathrm{Pin}$</td>
+</tr>
+<tr>
+<td>$I=I^0\oplus I^1$, $I^i=\mathrm{Cl}^i\pi$</td>
+<td>Parity splitting; odd elements exchange the summands</td>
+</tr>
+<tr>
+<td>$\langle I^0,I^1\rangle=0$</td>
+<td>Hermitian orthogonality of the chiral halves</td>
+</tr>
+<tr>
+<td>$\Theta^{\alpha}_x(v)\psi=\rho(\alpha(x))\rho(v)\rho(x)^{*}\psi$</td>
+<td>Signed Hermitian sandwich on the ideal</td>
+</tr>
+<tr>
+<td>$\rho(x)^{*}=\rho(x^{\dagger})=\rho(x)^{-1}$ on $U$</td>
+<td>Adjoint is the inverse on the slice</td>
+</tr>
+<tr>
+<td>$\rho(xx^{\dagger})$, the defect</td>
+<td>Failure of the conjugation to be unitary off the slice</td>
+</tr>
+<tr>
+<td>$\Theta^{\alpha}_u(v)\psi=\rho_u(v)\psi$, $q(u)=-1$</td>
+<td>Reflection on the ideal, on the slice</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em> (Cambridge University Press, 2nd ed. 2001), for minimal left ideals, idempotents and the spinor spaces.</li>
+<li>H. Blaine Lawson and Marie-Louise Michelsohn, <em>Spin Geometry</em> (Princeton University Press, 1989), for the Hermitian structure of the spinor module and the adjoint of the Clifford action.</li>
+<li>Ian R. Porteous, <em>Clifford Algebras and the Classical Groups</em>, Cambridge Studies in Advanced Mathematics 50 (Cambridge University Press, 1995), for the ideal picture and the pin group.</li>
+<li>Richard S. Pierce, <em>Associative Algebras</em>, Graduate Texts in Mathematics 88 (Springer, 1982), for minimal left ideals, the density theorem and the kernel of the action.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

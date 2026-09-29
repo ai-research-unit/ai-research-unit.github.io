@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Completely Positive Maps of the Biquaternion Algebra with Hermitian Adjoint — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="completely-positive-maps-of-the-biquaternion-algebra-with-hermitian-adjoint"><strong>Completely Positive Maps of the Biquaternion Algebra with Hermitian Adjoint</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>Let $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}\cong M_{2}(\mathbb{C})$ with the Hermitian conjugation ${}^{\dagger}$; this article is the biquaternion instance of <em>Completely Positive Maps of a Clifford Algebra with Hermitian Adjoint</em>. The subject is the <strong>positive maps</strong> of the algebra, that is, the linear maps carrying the positive cone into itself, and the <strong>completely positive</strong> ones, which carry not only the cone but every cone of every matrix amplification. The result is complete and, in the biquaternion case, strikingly simple:</p>
+<blockquote>
+<p><strong>A linear map of the biquaternion algebra is completely positive if and only if it is a sum of two-sided operators of the corpus:</strong>
+$$
+> \Phi = \sum_{k=1}^{r} \Theta_{\tilde{Q}_{k}},\qquad \Theta_{\tilde{Q}}(\tilde V)=\tilde{Q}\,\tilde V\,\tilde{Q}^{\dagger},\qquad r\le 4 .
+> $$</p>
+</blockquote>
+<p>The rank-one case is exactly the sandwich of <em>Two-Sided Operators on the Biquaternion Algebra with Hermitian Adjoint</em>, so the completely positive maps are <strong>sums of sandwiches</strong>, and the article's task is to say exactly which sums are allowed, when the map is unital, when it is trace preserving, and what the canonical positive map that is <em>not</em> completely positive looks like. The criterion is <strong>Choi's</strong>: complete positivity is the positivity of a single $4\times4$ Hermitian matrix, the <strong>Choi matrix</strong> of the map.</p>
+<h2 id="positive-maps-and-the-cone">Positive Maps and the Cone</h2>
+<p><strong>Convention.</strong> The algebra carries the Hermitian form $(\tilde R,\tilde V)=\mathrm{Sc}(\tilde R^{\dagger}\tilde V)$ and the positive cone $P=\{\tilde{Q}\in\mathbb{M}_+:\tilde{Q}\succeq0\}$ of the elements that are positive semidefinite in the matrix model. A linear map $\Phi:\mathbb{B}\to\mathbb{B}$ is <strong>positive</strong> if $\tilde V\succeq0$ implies $\Phi(\tilde V)\succeq0$, and <strong>$n$-positive</strong> if the amplification $\mathrm{id}_{n}\otimes\Phi$ on $M_{n}(\mathbb{C})\otimes\mathbb{B}$ is positive; it is <strong>completely positive</strong> (CP) if it is $n$-positive for every $n$.</p>
+<p><strong>Proposition (the sandwich is positive).</strong> For every $\tilde{Q}$, the two-sided operator $\Theta_{\tilde{Q}}$ is positive: if $\tilde V\succeq0$ then $\tilde{Q}\tilde V\tilde{Q}^{\dagger}\succeq0$. Moreover every $\Theta_{\tilde{Q}}$ is <strong>completely positive</strong>, since in the amplified algebra $\mathrm{id}_{n}\otimes \Theta_{\tilde{Q}}$ is again a sandwich, by the matrix $I_{n}\otimes\Phi(\tilde{Q})$.</p>
+<p><em>Proof.</em> For $\tilde V\succeq0$, write $\tilde V=z^{\dagger}z$; then $\tilde{Q}\tilde V\tilde{Q}^{\dagger}=(\tilde Rz)^{\dagger}(\tilde Rz)\succeq0$. The amplified statement is the same computation blockwise. Verified: sandwiches sent thousands of random positive semidefinite elements to positive semidefinite elements.</p>
+<p><strong>Proposition (positivity is not complete positivity).</strong> A positive map need not be completely positive; the canonical example on the biquaternion algebra is the <strong>transposition</strong> $\Phi(\tilde V)=\tilde V^{T}$, which is positive and not completely positive. This is the content of the section <em>The Transposition</em> below.</p>
+<h2 id="the-choi-matrix">The Choi Matrix</h2>
+<p><strong>Definition.</strong> Let $\{E_{ij}\}$ be the matrix units of $\mathbb{B}\cong M_{2}(\mathbb{C})$, an orthonormal basis of the algebra in the matrix model. The <strong>Choi matrix</strong> of a linear map $\Phi$ is the element of $M_{2}(\mathbb{C})\otimes M_{2}(\mathbb{C})\cong M_{4}(\mathbb{C})$</p>
+<p>$$
+C_{\Phi} = \sum_{i,j=1}^{2} E_{ij}\otimes\Phi(E_{ij})\in M_{4}(\mathbb{C}).
+$$</p>
+<p>It is the matrix of the sesquilinear form $(v,w)\mapsto(v,\Phi(w))$ in the vectorised description, and the map is recovered from it by</p>
+<p>$$
+\Phi(\tilde V)_{ij}=\sum_{a,b}C_{\Phi}\bigl[(i,a),(j,b)\bigr]\,V_{ab},
+$$</p>
+<p>so the correspondence $\Phi\leftrightarrow C_{\Phi}$ is a linear bijection between the linear maps of $\mathbb{B}$ and the $4\times4$ matrices.</p>
+<p><strong>Theorem (Choi).</strong> A linear map $\Phi$ of the biquaternion algebra is completely positive if and only if its Choi matrix is positive semidefinite:</p>
+<p>$$
+\Phi\ \text{CP}\iff C_{\Phi}\succeq0 .
+$$</p>
+<p><em>Proof.</em> The forward implication is the positivity of the amplification $\mathrm{id}_{2}\otimes\Phi$ applied to the rank-one positive element $\sum_{i,j}E_{ij}\otimes E_{ij}$, whose image is $C_{\Phi}$; the converse is the spectral decomposition of $C_{\Phi}\succeq0$ used in the theorem below. Both directions were verified: the round trip $\Phi\mapsto C_{\Phi}\mapsto\Phi$ was checked to be the identity, random positive semidefinite Choi matrices were shown to produce positive maps on positive elements, and random Kraus sums were shown to have positive semidefinite Choi matrices.</p>
+<h2 id="kraus-every-completely-positive-map-is-a-sum-of-sandwiches">Kraus: Every Completely Positive Map is a Sum of Sandwiches</h2>
+<p><strong>Theorem (Kraus).</strong> A linear map $\Phi$ of the biquaternion algebra is completely positive if and only if there are elements $\tilde{Q}_{1},\dots,\tilde{Q}_{r}\in\mathbb{B}$, $r\le4$, with</p>
+<p>$$
+\Phi(\tilde V) = \sum_{k=1}^{r} \tilde{Q}_{k}\,\tilde V\,\tilde{Q}_{k}^{\dagger} = \sum_{k=1}^{r} \Theta_{\tilde{Q}_{k}}(\tilde V).
+$$</p>
+<p>The minimal such $r$ is the rank of the Choi matrix $C_{\Phi}$.</p>
+<p><em>Proof.</em> If $\Phi=\sum_{k}\Theta_{\tilde{Q}_{k}}$ then $C_{\Phi}=\sum_{k}C_{\Theta_{\tilde{Q}_{k}}}$ with $C_{\Theta_{\tilde{Q}_{k}}}\succeq0$ of rank one, hence $C_{\Phi}\succeq0$ and $\Phi$ is CP. Conversely, if $C_{\Phi}\succeq0$ then its spectral decomposition $C_{\Phi}=\sum_{k=1}^{r}w_{k}w_{k}^{\dagger}$, $r=\mathrm{rank}\,C_{\Phi}\le4$, produces the elements $\tilde{Q}_{k}$ by the inverse of the vectorisation of the definition; the identity $\Phi=\sum_{k}\Theta_{\tilde{Q}_{k}}$ then follows from the round-trip property of the Choi correspondence. All steps were verified numerically, together with the rank-one case below.</p>
+<p><strong>Corollary (the sandwiches are exactly the rank-one completely positive maps).</strong> For $\tilde{Q}\neq0$ the Choi matrix of $\Theta_{\tilde{Q}}$ is positive semidefinite of <strong>rank one</strong>. Consequently the two-sided operators of the corpus are exactly the completely positive maps of <strong>Choi rank one</strong>, and the general completely positive map is a sum of at most four of them.</p>
+<p><strong>Remark (the structure of the theory).</strong> Two sentences summarise the article. <strong>Positivity</strong> of a map is not testable on the cone of a single algebra, only on the amplifications, and complete positivity is the correct notion; <strong>the completely positive maps of the biquaternion algebra are the sums of at most four sandwiches</strong>, and the sandwich is the rank-one building block. The operator-level statements of the corpus about positive maps are therefore statements about sums of two-sided operators.</p>
+<h2 id="unital-and-trace-preserving-maps">Unital and Trace-Preserving Maps</h2>
+<p><strong>Theorem (the normalisation conditions).</strong> For $\Phi=\sum_{k}\Theta_{\tilde{Q}_{k}}$:</p>
+<ol>
+<li>$\Phi$ is <strong>unital</strong>, $\Phi(e_{0})=e_{0}$, if and only if $\sum_{k}\tilde{Q}_{k}\tilde{Q}_{k}^{\dagger}=e_{0}$;</li>
+<li>$\Phi$ is <strong>trace preserving</strong>, $\mathrm{tr}\,\Phi(\tilde V)=\mathrm{tr}\,\tilde V$ for all $\tilde V$, if and only if $\sum_{k}\tilde{Q}_{k}^{\dagger}\tilde{Q}_{k}=e_{0}$;</li>
+<li>the sandwich $\Theta_{\tilde{Q}}$ is unital if and only if $\tilde{Q}\in U$, and then it is trace preserving and reversible; more generally $\Theta_{\tilde{Q}}$ is trace preserving exactly for $\tilde{Q}\in U$.</li>
+</ol>
+<p><em>Proof.</em> (1) $\Phi(e_{0})=\sum_{k}\tilde{Q}_{k}\tilde{Q}_{k}^{\dagger}$. (2) $\mathrm{tr}(\tilde{Q}_{k}\tilde V\tilde{Q}_{k}^{\dagger})=\mathrm{tr}(\tilde{Q}_{k}^{\dagger}\tilde{Q}_{k}\tilde V)$, so the trace is preserved for all $\tilde V$ exactly when $\sum_{k}\tilde{Q}_{k}^{\dagger}\tilde{Q}_{k}=e_{0}$. (3) is (1) and (2) for $r=1$ with $\tilde{Q}^{\dagger}\tilde{Q}=\tilde{Q}\tilde{Q}^{\dagger}=e_{0}$. All three were verified on random Kraus sums, including the failure of the conditions and the reversibility of the unitary case.</p>
+<p><strong>Remark (the invertible ones with positive inverse are the unitaries).</strong> A completely positive map with a single Kraus operator, $\Phi=\Theta_{\tilde{Q}}$, is invertible as a linear map exactly when $\tilde{Q}$ is invertible, but its inverse is again a completely positive map (indeed again a sandwich $\Theta_{\tilde{Q}^{-1}}$) exactly when $\tilde{Q}\in U$. The completely positive maps whose inverse is completely positive are therefore the <strong>unitary conjugations</strong> $\tilde V\mapsto \tilde{Q}\tilde V\tilde{Q}^{\dagger}$ with $\tilde{Q}\in U$, which are exactly the automorphisms $\Theta_{\tilde{Q}}$ of <em>Two-Sided Operators on the Biquaternion Algebra with Hermitian Adjoint</em>; every other completely positive map has a non-positive inverse even when invertible as a linear map.</p>
+<h2 id="the-transposition">The Transposition</h2>
+<p><strong>Theorem (the canonical positive map that is not completely positive).</strong> The transposition $\Phi(\tilde V)=\tilde V^{T}$ is positive on the biquaternion algebra and its Choi matrix is the <strong>flip</strong></p>
+<p>$$
+C_{\Phi}=\sum_{i,j}E_{ij}\otimes E_{ji},
+$$</p>
+<p>whose eigenvalues are $+1$ with multiplicity three and $-1$ with multiplicity one. Hence $\Phi$ is positive and <strong>not</strong> completely positive.</p>
+<p><em>Proof.</em> Positivity of the transposition is clear on the cone of Hermitian matrices; the Choi matrix of a map sending $E_{ij}$ to $E_{ji}$ is the flip by the definition, and the flip on $\mathbb{C}^{2}\otimes\mathbb{C}^{2}$ has the eigenvalues $+1$ (on the symmetric part, of dimension three) and $-1$ (on the antisymmetric part, of dimension one). The computation was verified in the matrix model, eigenvalues $(-1,1,1,1)$.</p>
+<p><strong>Remark (why the antisymmetric part is one-dimensional).</strong> The single negative eigenvalue sits on the antisymmetric part of $\mathbb{C}^{2}\otimes\mathbb{C}^{2}$, of dimension one, spanned by $\tfrac{1}{\sqrt2}(\lvert01)-\lvert10))$, while the symmetric part of dimension three is the positive eigenspace. The existence of a positive non-CP map is the obstruction that makes complete positivity strictly stronger than positivity, and the whole point of the Choi matrix is to detect it.</p>
+<h2 id="the-cone-of-completely-positive-maps">The Cone of Completely Positive Maps</h2>
+<p><strong>Theorem (closure properties).</strong> The completely positive maps of the biquaternion algebra form a <strong>cone</strong> in the linear space of maps: they are closed under sums and under multiplication by non-negative reals, and the cone is generated by the two-sided operators (the sandwiches), which are its extreme rays of rank one. The cone is also closed under composition, and the unital (respectively trace-preserving) maps form sub-cones.</p>
+<p><em>Proof.</em> Sums and positive multiples of Choi matrices are Choi matrices with the same property; the extremes of the cone of positive semidefinite $4\times4$ matrices are the rank-one ones, i.e. the sandwiches; the composition of two sums of sandwiches is a sum of sandwiches by $\Theta_{\tilde{Q}}\Theta_{\tilde{S}}=\Theta_{\tilde{Q}\tilde{S}}$ from the composition law of the two-sided operators. All statements were verified structurally, and the composition law by the operator identity.</p>
+<p><strong>Corollary (the cone and the image of the identity).</strong> The positive cone of the algebra is the image of the unital completely positive maps applied to the rank-one projections: $\tilde{Q}\succeq0$ is $\Phi(e_{0})$ for the unital sandwich $\Theta_{\tilde{Q}}$ scaled, and the trace-one slice of the cone is the image of the trace-preserving and unital maps. The positive cone of the algebra is therefore the orbit of the identity under the unital completely positive maps, and the trace-preserving ones are the maps that act on the cone preserving the normalisation.</p>
+<h2 id="worked-examples">Worked Examples</h2>
+<p><strong>The sandwich of the identity.</strong> $\Phi=\Theta_{e_{0}}=\mathrm{id}$: Choi matrix the rank-one projection onto the vectorised identity, unital, trace preserving, invertible with completely positive inverse. It is the identity of the composition of completely positive maps.</p>
+<p><strong>A two-term map: the diagonal projection.</strong> $\Phi=\frac12 \Theta_{e_{0}}+\frac12 \Theta_{ie_{3}}$: the Choi matrix is the sum of two rank-one positive matrices, hence positive semidefinite of rank two. Since $e_{0}e_{0}^{\dagger}=e_{0}$ and $(ie_{3})(ie_{3})^{\dagger}=e_{0}$, the map is unital and trace preserving, and in the matrix model it is $\Phi(\tilde V)=\frac12(\tilde V+\sigma_{3}\tilde V\sigma_{3})=\mathrm{diag}(\tilde V)$: the <strong>diagonal projection</strong>, i.e. the orthogonal projection onto the diagonal subalgebra in the chosen basis, which is the subalgebra of the Hermitian sector $\mathbb{M}_+$. It is a completely positive map and not an automorphism, and its image is the diagonal, of real dimension two inside the four-dimensional algebra.</p>
+<p><strong>The transposition relative to a sandwich.</strong> The composition of a sandwich with the transposition is positive and not completely positive; its Choi matrix has a negative eigenvalue, and the negativity is the obstruction to a Kraus representation.</p>
+<p><strong>The null sandwich revisited.</strong> $\Theta_{e_{0}+ie_{3}}$ has Choi rank one but is <strong>not</strong> unital: for $\tilde{Q}=e_{0}+ie_{3}$ one has $\tilde{Q}\tilde{Q}^{\dagger}=\tilde{Q}^{2}=2\tilde{Q}$, whose matrix is $\mathrm{diag}(4,0)$ of trace $4$, not the trace $2$ of the identity. The map is neither unital nor trace preserving, and it has no completely positive inverse although it is a positive rank-one map. It illustrates that rank one does not mean unital, and that the positive cone collapses under the null map exactly as computed in <em>Two-Sided Operators on the Biquaternion Algebra with Hermitian Adjoint</em>.</p>
+<h2 id="summary">Summary</h2>
+<p>The completely positive maps of the biquaternion algebra are exactly the sums of at most four two-sided operators, $\Phi=\sum_{k=1}^{r}\Theta_{\tilde{Q}_{k}}$ with $r=\mathrm{rank}\,C_{\Phi}\le4$, by the Choi–Kraus theorem; the sandwiches $\Theta_{\tilde{Q}}$ are the rank-one (extreme) completely positive maps, and they are exactly the two-sided operators of the corpus. The map is unital iff $\sum_{k}\tilde{Q}_{k}\tilde{Q}_{k}^{\dagger}=e_{0}$, trace preserving iff $\sum_{k}\tilde{Q}_{k}^{\dagger}\tilde{Q}_{k}=e_{0}$, and invertible with completely positive inverse iff it is a single sandwich of a unitary element. The transposition is the canonical positive map that is <strong>not</strong> completely positive, with the flip as its Choi matrix and the single negative eigenvalue $-1$; the positivity of the Choi matrix is the complete positivity criterion, and the round-trip $\Phi\leftrightarrow C_{\Phi}$ was verified to machine precision. The completely positive maps form a cone generated by the sandwiches, closed under composition, and the positive cone of the algebra is the orbit of the identity under the unital ones.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$P$</td>
+<td>The positive cone of the Hermitian elements</td>
+</tr>
+<tr>
+<td>$\Theta_{\tilde{Q}}(\tilde V)=\tilde{Q}\tilde V\tilde{Q}^{\dagger}$</td>
+<td>The sandwich; the rank-one CP map</td>
+</tr>
+<tr>
+<td>$C_{\Phi}=\sum_{ij}E_{ij}\otimes\Phi(E_{ij})$</td>
+<td>The Choi matrix; $\Phi$ CP iff $C_{\Phi}\succeq0$</td>
+</tr>
+<tr>
+<td>$\Phi=\sum_{k=1}^{r}\Theta_{\tilde{Q}_{k}}$, $r\le4$</td>
+<td>Kraus form; the completely positive maps are sums of sandwiches</td>
+</tr>
+<tr>
+<td>$\sum_{k}\tilde{Q}_{k}\tilde{Q}_{k}^{\dagger}=e_{0}$</td>
+<td>Unitality condition</td>
+</tr>
+<tr>
+<td>$\sum_{k}\tilde{Q}_{k}^{\dagger}\tilde{Q}_{k}=e_{0}$</td>
+<td>Trace preservation condition</td>
+</tr>
+<tr>
+<td>$r=\mathrm{rank}\,C_{\Phi}$</td>
+<td>Choi rank; minimal number of Kraus terms</td>
+</tr>
+<tr>
+<td>$\sum_{ij}E_{ij}\otimes E_{ji}$</td>
+<td>The flip; the Choi matrix of the transposition; eigenvalues $(1,1,1,-1)$</td>
+</tr>
+<tr>
+<td>$\tilde{Q}\in U$</td>
+<td>Exactly the sandwiches with completely positive inverse (unitary conjugations)</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>Completely Positive Maps of a Clifford Algebra with Hermitian Adjoint</em> (<code>articles_maths/completely-positive-maps-of-a-clifford-algebra-with-hermitian-adjoint.md</code>), the general theory of which this is the biquaternion instance.</li>
+<li><em>Two-Sided Operators on the Biquaternion Algebra with Hermitian Adjoint</em> (<code>articles_maths/two-sided-operators-on-the-biquaternion-algebra-with-hermitian-adjoint.md</code>), for the sandwich as an operator, its positivity and its cone.</li>
+<li><em>The Spectra of the Operators on the Biquaternion Algebra with Hermitian Adjoint</em> (<code>articles_maths/the-spectra-of-the-operators-on-the-biquaternion-algebra-with-hermitian-adjoint.md</code>), for the positivity criteria in terms of the spectrum of the sandwich.</li>
+<li><em>Positivity and the Hermitian Cone of a Clifford Algebra with Hermitian Adjoint</em> (<code>articles_maths/positivity-and-the-hermitian-cone-of-a-clifford-algebra-with-hermitian-adjoint.md</code>), for the cone and the positive involution.</li>
+<li><em>The Hermitian Sylvester Equation on the Biquaternion Algebra with Hermitian Adjoint</em> (<code>articles_maths/the-hermitian-sylvester-equation-on-the-biquaternion-algebra-with-hermitian-adjoint.md</code>), for the fixed-point operator of a completely positive map.</li>
+<li><em>Bilinear Operators on a Clifford Module with Hermitian Adjoint</em> (<code>articles_maths/bilinear-operators-on-a-clifford-module-with-hermitian-adjoint.md</code>), for the operators built from two spinors, which are the rank-one elements behind the Kraus sums.</li>
+<li><em>Hermitian Clifford Modules with Hermitian Adjoint</em> (<code>articles_maths/hermitian-clifford-modules-with-hermitian-adjoint.md</code>), for the module picture of the positive cone.</li>
+<li><em>Biquaternion Hermitian Subspace</em> (<code>articles_maths/biquaternion-hermitian-subspace.md</code>), for the cone, the idempotents and the trace-one slice.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

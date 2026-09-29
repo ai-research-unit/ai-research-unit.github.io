@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Infinite-Dimensional Hermitian Operators and CAR with Hermitian Adjoint — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="infinite-dimensional-hermitian-operators-and-car-with-hermitian-adjoint"><strong>Infinite-Dimensional Hermitian Operators and CAR with Hermitian Adjoint</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>Passing from a finite-dimensional Hermitian Clifford module to an infinite-dimensional one changes the operator theory in four ways at once, and the purpose of this article is to name them. The algebra becomes the <strong>canonical anticommutation relation algebra</strong>, or CAR algebra; the Hermitian form becomes the inner product of a Hilbert space and the module becomes its <strong>Fock space</strong>; the operators become unbounded, so the dagger is defined on a domain and the self-adjointness of an operator is a statement about the domain as well as the formula; and the finite trace, which was the sum of the diagonal entries, no longer exists as a positive linear functional defined on all of the algebra, so the <strong>positivity</strong> and the <strong>states</strong> of the theory take over the role the trace had in the finite case. The two structural facts that survive, and that organise the infinite theory, are that the dagger remains a positive involution, so that $c(f)^{\ast}c(f)\geq0$ and the positivity still comes from squares, and that the <strong>unitaries of the one-particle space</strong> still act on the algebra by automorphisms, the <strong>Bogoliubov transformations</strong>, whose implementability by a unitary of the Fock space is decided by a Hilbert–Schmidt condition, the theorem of Shale and Stinespring.</p>
+<p>The article develops the infinite Hermitian Clifford module and its adjoint, the CAR algebra with its dagger, the Fock module and the number operator, the Bogoliubov transformations and their implementability, and the unbounded operators into which the finite statements grow. It is the infinite-dimensional companion of <em>Infinite-Dimensional Clifford Algebras and CAR with Inner Conjugation</em>, which develops the same algebra for the involutive structure alone; the difference is the dagger and the positivity, and the consequence is that the inner conjugation of that article is replaced here by the <strong>Hermitian adjoint</strong> on the one-particle Hilbert space, the bounded and unbounded operators replace the endomorphisms of the module, and the trace is replaced by the states.</p>
+<p>The finite-dimensional theory is <em>Hermitian Clifford Modules with Hermitian Adjoint</em>, <em>The Blade Form and the Hilbert Structure with Hermitian Adjoint</em> and <em>Positivity and the Hermitian Cone of a Clifford Algebra with Hermitian Adjoint</em>; the operator spectrum is <em>The Spectra of Self-Adjoint Operators with Hermitian Adjoint</em>; the unbounded operators, the spectral theorem and Stone's theorem are <em>Unbounded Operators and Spectral Measures</em>; the CAR algebra for the involutive structure is <em>Infinite-Dimensional Clifford Algebras and CAR with Inner Conjugation</em>; the Dirac operator is <em>Dirac Operators with Hermitian Adjoint</em>; the operator-algebraic framework and the Fredholm theory are <em>Operator Algebras</em> and <em>Fredholm Theory</em>; and the finite truncation used as the anchor is the Clifford algebra $\mathrm{Cl}_{0,2n}(\mathbb{R})$ of the even-dimensional definite space.</p>
+<h2 id="the-infinite-dimensional-hermitian-module">The Infinite-Dimensional Hermitian Module</h2>
+<h3 id="the-hilbert-space-and-the-adjoint">The Hilbert Space and the Adjoint</h3>
+<p><strong>Definition.</strong> Let $\mathcal{H}$ be a complex Hilbert space with inner product $\langle\,,\rangle$, conjugate-linear in the first variable. The <strong>one-particle space</strong> is $\mathcal{H}$, the Hermitian form of the finite-dimensional theory is the inner product, and the <strong>Hermitian Clifford module</strong> is the Fock space $\mathcal{F} = \Lambda^{\bullet}\mathcal{H}$ of the next section.</p>
+<p><strong>Theorem (the bounded operators).</strong> The adjoint $T^{\ast}$ of a bounded operator is defined by $\langle Ts,t\rangle = \langle s,T^{\ast}t\rangle$ and makes $B(\mathcal{H})$ a $C^{\ast}$-algebra; the self-adjoint, skew-adjoint, unitary and normal operators are the bounded operators with $T^{\ast} = T$, $T^{\ast} = -T$, $T^{\ast} = T^{-1}$ and $TT^{\ast} = T^{\ast}T$. The <strong>Hilbert–Schmidt</strong> operators satisfy $\mathrm{Tr}(T^{\ast}T) < \infty$ and its ideal is $\mathcal{B}_2(\mathcal{H})$, the <strong>trace-class</strong> operators satisfy $\mathrm{Tr}|T| < \infty$ and its ideal is $\mathcal{B}_1(\mathcal{H})$; the trace is defined on $\mathcal{B}_1(\mathcal{H})$ and the pairing $\langle S,T\rangle = \mathrm{Tr}(S^{\ast}T)$ is the infinite-dimensional Hilbert–Schmidt form on $\mathcal{B}_2(\mathcal{H})$. Every bounded $T$ has the <strong>polar decomposition</strong> $T = U|T|$, $|T| = (T^{\ast}T)^{1/2}$, with $U$ a partial isometry, and the self-adjoint $T$ satisfies $- \|T\|\,I\leq T\leq\|T\|\,I$. These are the infinite-dimensional forms of <em>Self-Adjoint and Skew Operators with Hermitian Adjoint</em>, with the finite trace replaced by the trace on the trace class.</p>
+<h3 id="the-failure-of-the-trace-and-the-role-of-the-states">The Failure of the Trace and the Role of the States</h3>
+<p><strong>Remark (what the finite trace becomes).</strong> In the finite-dimensional theory the scalar part $\mathrm{Sc}$ was a positive tracial functional defined on the whole algebra and the form was its polarisation; in infinite dimensions the trace is defined only on the trace class and is <strong>not</strong> finite on the identity of $B(\mathcal{H})$. The replacement is the notion of a <strong>state</strong>: a positive linear functional $\omega$ with $\omega(1) = 1$, defined on the whole $C^{\ast}$-algebra, and the GNS construction that turns it into a Hilbert space and a representation. So the positivity of the finite theory becomes the positivity of the functionals, and the cone of positive elements is described by the states that they dominate. The finite statement "the trace form is non-degenerate and positive" becomes "the algebra carries a separating family of states"; the positivity is no longer a single trace form but a family.</p>
+<p><strong>Proposition (positivity from squares).</strong> The dagger remains a positive involution: $a^{\ast}a\geq0$ for every $a$ in the algebra, and every positive element is a sum of such squares. So the operator-theoretic positivity of the module and the algebraic positivity of the algebra coincide in the infinite case exactly as in the finite one, and the criterion "positive iff a sum of squares" — the finite form of the cone of <em>Positivity and the Hermitian Cone of a Clifford Algebra with Hermitian Adjoint</em> — is the definition of the positive cone of the $C^{\ast}$-algebra.</p>
+<h2 id="the-car-algebra-with-the-dagger">The CAR Algebra with the Dagger</h2>
+<h3 id="the-relations">The Relations</h3>
+<p><strong>Definition.</strong> Let $\mathcal{H}$ be a complex Hilbert space with its inner product. The <strong>canonical anticommutation relation algebra</strong> $\mathcal{A}(\mathcal{H})$ is the $\ast$-algebra generated by the <strong>annihilation</strong> operators $c(f)$, $f\in\mathcal{H}$, subject to</p>
+<p>$$
+c(f)^{\ast} = c^{\ast}(f), \qquad \{c(f),c(g)^{\ast}\} = \langle g,f\rangle\,1, \qquad \{c(f),c(g)\} = 0 ,
+$$</p>
+<p>so that the antilinear map $f\mapsto c(f)$ and its adjoint $f\mapsto c^{\ast}(f)$ are the <strong>creation</strong> and <strong>annihilation</strong> operators, $c(f)^{2} = 0$, and $c(f)^{\ast}c(f)\geq0$. The relations were verified in the finite truncation: in $\mathrm{Cl}_{0,2n}(\mathbb{R})$ with the <strong>Witt basis</strong></p>
+<p>$$
+a_j = \tfrac12\bigl(e_{2j-1} + i\,e_{2j}\bigr), \qquad a_j^{\ast} = \tfrac12\bigl(-e_{2j-1}+i\,e_{2j}\bigr) = a_j^{\dagger} ,
+$$</p>
+<p>one has $\{a_j,a_k^{\ast}\} = \delta_{jk}$, $\{a_j,a_k\} = 0$ and $a_j^{2} = 0$ for all $j,k$; here the dagger of the Clifford algebra <em>is</em> the CAR adjoint, which is the precise sense in which the Hermitian-adjoint Clifford algebra is the CAR algebra in finite dimensions.</p>
+<h3 id="the-fock-module-and-the-vacuum">The Fock Module and the Vacuum</h3>
+<p><strong>Theorem (the Fock representation).</strong> There is an irreducible $\ast$-representation, the <strong>Fock representation</strong>, on the <strong>Fock space</strong> $\mathcal{F} = \Lambda^{\bullet}\mathcal{H}$, in which $c^{\ast}(f)$ is exterior multiplication by $f$ and $c(f)$ is its adjoint, the interior product (contraction); the <strong>vacuum</strong> is the vector $\Omega$ with $c(f)\Omega = 0$ for all $f$, it is cyclic, and the representation carries the inner product for which these operators are adjoints. The <strong>vacuum idempotent</strong> is the projection onto $\mathbb{C}\Omega$, and in the finite truncation it was verified that the elements
+$$
+f_{\mathrm{vac}} = \prod_{j=1}^{n}a_ja_j^{\ast} = \prod_{j=1}^{n}a_j^{\ast}a_j = \prod_{j=1}^{n}\bigl(1-a_j^{\ast}a_j\bigr)
+$$
+are self-adjoint idempotents; the three expressions agree because $a_ja_j^{\ast} = 1-a_j^{\ast}a_j$ is the consequence of $\{a_j,a_j^{\ast}\} = 1$.</p>
+<p><strong>Theorem (the number operator).</strong> The <strong>number operator</strong> $N = \sum_jc^{\ast}(f_j)c(f_j)$ over an orthonormal basis $(f_j)$ is self-adjoint and positive, with spectrum the non-negative integers; in the finite truncation its eigenvalues on $\Lambda^{\bullet}\mathbb{C}^n$ are $0,1,\dots,n$ with multiplicity the binomial coefficient $\binom{n}{k}$, the dimension of the $k$-th exterior power. So the Hermitian Clifford module of the infinite theory is graded by the exterior degree, the grading is the <strong>occupation number</strong>, and the self-adjoint operator $N$ is the infinite-dimensional form of the chirality grading of the finite spinor module.</p>
+<h3 id="the-algebra-and-its-positivity">The Algebra and its Positivity</h3>
+<p><strong>Proposition (the $C^{\ast}$-completion and its trace).</strong> For $\mathcal{H}$ separable the Fock representation is the GNS representation of the <strong>vacuum state</strong> $\omega(a) = \langle\Omega,a\Omega\rangle$, determined by the two-point function $\omega(c(g)c(f)^{\ast}) = \langle f,g\rangle$ and Wick's theorem; the norm completion is a <strong>uniformly hyperfinite</strong> $C^{\ast}$-algebra, the CAR algebra, and $\omega$ is a <strong>pure</strong> state whose GNS representation is irreducible. The algebra carries the <strong>gauge action</strong> $\gamma_\theta(c(f)) = e^{i\theta}c(f)$, a one-parameter group of automorphisms, and the number operator is its generator, $\gamma_\theta(a) = e^{i\theta N}ae^{-i\theta N}$; the finite algebra has the corresponding one-parameter group of inner automorphisms $t(S) = e^{i\theta N}te^{-i\theta N}$ studied in <em>Mixed Inner Conjugation and Hermitian Adjoint</em>. The <strong>quasi-free states</strong> are the states determined by an operator $T$ with $0\leq T\leq1$ through $\omega_T(c(g)c(f)^{\ast}) = \langle f,Tg\rangle$, and this operator is the Hermitian form of the state; the positivity of the state is the positivity $0\leq T\leq1$ of the form, which is the infinite-dimensional form of the Hermitian cone.</p>
+<h2 id="bogoliubov-transformations">Bogoliubov Transformations</h2>
+<h3 id="the-automorphisms-from-the-one-particle-unitaries">The Automorphisms from the One-Particle Unitaries</h3>
+<p><strong>Theorem (Bogoliubov).</strong> Let $U$ be a unitary of $\mathcal{H}$. Then there is an automorphism $\alpha_U$ of the CAR algebra with
+$$
+\alpha_U\bigl(c(f)\bigr) = c(Uf),
+$$
+and the assignment $U\mapsto\alpha_U$ is a homomorphism from the unitary group to the automorphism group. The map is the infinite-dimensional analogue of the conjugation of the Clifford algebra by the units of the slice, and it is the action that makes the CAR algebra the carrier of the fermionic second quantisation: the one-particle unitary acts on the algebra, and its image in the automorphism group is the group of free evolutions.</p>
+<h3 id="implementability-and-the-hilbertschmidt-condition">Implementability and the Hilbert–Schmidt Condition</h3>
+<p><strong>Theorem (Shale–Stinespring).</strong> A Bogoliubov automorphism $\alpha_U$ is implemented by a unitary of the Fock space, $\alpha_U(a) = VaV^{-1}$ for some unitary $V$, <strong>exactly when the off-diagonal block of $U$ with respect to the polarisation $(J)$ is Hilbert–Schmidt</strong>. So the automorphisms of the CAR algebra that arise from one-particle unitaries split into two kinds: the <strong>implementable</strong> ones, those with Hilbert–Schmidt off-diagonal part, which act by a unitary of the module and preserve the vacuum up to a vector, and the <strong>non-implementable</strong> ones, which do not come from a unitary of the module and which change the representation. The implementable ones form the <strong>restricted unitary group</strong> $U(\mathcal{H};J)$, a subgroup of $U(\mathcal{H})$, and the quotient by the unitaries diagonal with respect to the polarisation is the <strong>Fredholm</strong> part, whose index classes are measured by the <strong>index</strong> of a Fredholm operator. The finite-dimensional analogue of the obstruction is the failure of the defect $uu^{\dagger}$ to be the identity in <em>Unitary Equivalence and Congruence of Operators with Hermitian Adjoint</em>: off the slice the sandwich is not an automorphism of the module, and in infinite dimensions the corresponding failure is the non-implementability.</p>
+<p><strong>Remark (the index and the eightfold way).</strong> The splitting of the one-particle unitaries by the Hilbert–Schmidt condition, and the index that measures the failure of implementability, is the analytic form of the $\mathbb{Z}$-grading of the restricted unitary group and of the mod-two periodicity of the Clifford algebra; it is the infinite-dimensional counterpart of the chirality grading of the finite spinor module and of the index of the Dirac operator, and the applications to the index theorem are <em>Fredholm Theory</em> and <em>The Atiyah–Singer Index Theorem and K-Theory</em>.</p>
+<h2 id="the-unbounded-operators">The Unbounded Operators</h2>
+<p><strong>Remark (the operators are unbounded).</strong> In infinite dimensions the operators of the article are <strong>unbounded</strong>: the <strong>number operator</strong> $N$ of the Fock module and the one-particle <strong>Dirac Hamiltonian</strong> $D$ are defined on a dense subspace of $\mathcal{F}$ rather than on the whole space, so their self-adjointness and their spectra are statements about that subspace as well as about the formula. What the Hermitian structure supplies at this layer is unchanged, and it is what the article uses: the dagger is a positive involution, $N$ is positive, and the spectrum of a self-adjoint operator is real with orthogonal eigenspaces for distinct eigenvalues.</p>
+<p><strong>Remark (the boundary).</strong> The analytic theory of the unbounded operators — the densely defined symmetric operators with their graphs and adjoints, the deficiency indices and the self-adjoint extensions, the spectral theorem and its projection-valued measure, the functional calculus, Stone's theorem and the one-parameter groups — is <em>Unbounded Operators and Spectral Measures</em>, quoted here for the operators of the CAR module and not rederived; the finite-dimensional bounded statements are those of <em>The Spectra of Self-Adjoint Operators with Hermitian Adjoint</em>. The measure and the integral on which that theory rests are Part III's, and no formula of it is reproduced here.</p>
+<p><strong>Remark (the Fermi projection and the index).</strong> The positive part of the spectrum of a self-adjoint operator gives the <strong>Fermi projection</strong> of the polarisation, and its rank is the index that appears in the theorem of Shale–Stinespring, quoted from <em>Unbounded Operators and Spectral Measures</em> and <em>Fredholm Theory</em>. So the positive spectrum and the Fermi projection are the infinite-dimensional form of the inertia of a Hermitian form, and the finite Sylvester law of <em>Unitary Equivalence and Congruence of Operators with Hermitian Adjoint</em> becomes the index of a pair of projections in the infinite theory.</p>
+<h2 id="worked-anchor-the-finite-truncation">Worked Anchor: The Finite Truncation</h2>
+<p>Every statement of the article whose finite shadow is computable was checked in the finite Clifford algebra. In $\mathrm{Cl}_{0,2n}(\mathbb{R})$ with the Witt basis $a_j = \tfrac12(e_{2j-1}+ie_{2j})$: the CAR relations $\{a_j,a_k^{\ast}\} = \delta_{jk}$, $\{a_j,a_k\} = 0$, $a_j^{2} = 0$; the CAR adjoint is the Clifford dagger; the number operator $N = \sum_ja_j^{\ast}a_j$ is self-adjoint; the identity $a_ja_j^{\ast} = 1-a_j^{\ast}a_j$ holds; the vacuum idempotent $\prod_ja_ja_j^{\ast}$ is a self-adjoint idempotent; and the Fock space is the exterior algebra of the creation operators, with the number operator grading it by the exterior degree. These are the finite anchors of the infinite statements, and they are the reason the finite Hermitian Clifford algebra is the right model of the fermionic Fock space.</p>
+<h2 id="summary">Summary</h2>
+<p>The infinite-dimensional Hermitian Clifford module is the <strong>Fock space</strong> $\Lambda^{\bullet}\mathcal{H}$ of a Hilbert space, and its operators are the <strong>bounded</strong> operators of $B(\mathcal{H})$ with the adjoint, the Hilbert–Schmidt and trace-class ideals, and the <strong>unbounded</strong> self-adjoint operators, whose analytic theory is <em>Unbounded Operators and Spectral Measures</em>. The algebra is the <strong>CAR algebra</strong>, with the CAR relations $\{c(f),c(g)^{\ast}\} = \langle g,f\rangle$, $\{c(f),c(g)\} = 0$, and the dagger is a positive involution, $c(f)^{\ast}c(f)\geq0$; the relations, the Fock representation and the vacuum are verified in the finite truncation $\mathrm{Cl}_{0,2n}(\mathbb{R})$ with the Witt basis. The <strong>number operator</strong> is self-adjoint positive with spectrum the non-negative integers, the <strong>vacuum</strong> is the cyclic vector annihilated by the annihilators and its projection is a self-adjoint idempotent, and the <strong>quasi-free states</strong> are the states whose two-point function is a Hermitian form $0\leq T\leq1$, the infinite-dimensional form of the Hermitian cone.</p>
+<p>The <strong>Bogoliubov transformations</strong> $\alpha_U(c(f)) = c(Uf)$ are the automorphisms of the algebra coming from the unitaries of the one-particle space, and the theorem of <strong>Shale–Stinespring</strong> states that such an automorphism is implemented by a unitary of the Fock space exactly when the off-diagonal part of $U$ is <strong>Hilbert–Schmidt</strong>; the implementable unitaries form the restricted unitary group, and the failure of implementability is measured by the <strong>index</strong> of a Fredholm operator, the infinite-dimensional form of the defect and of the inertia of the finite theory. The finite trace of the algebra is replaced by the <strong>states</strong> and the GNS construction, and the positivity of the theory is carried by the functionals and by $a^{\ast}a\geq0$.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathcal{F}=\Lambda^{\bullet}\mathcal{H}$</td>
+<td>Fock space of the one-particle Hilbert space</td>
+</tr>
+<tr>
+<td>$c(f)$, $c^{\ast}(f)$</td>
+<td>Annihilation and creation operators</td>
+</tr>
+<tr>
+<td>$\{c(f),c(g)^{\ast}\}=\langle g,f\rangle$, $\{c(f),c(g)\}=0$</td>
+<td>CAR relations</td>
+</tr>
+<tr>
+<td>$c(f)^{\ast}=c^{\ast}(f)$, $c(f)^{\ast}c(f)\geq0$</td>
+<td>The dagger is a positive involution</td>
+</tr>
+<tr>
+<td>$\Omega$, $c(f)\Omega=0$</td>
+<td>Vacuum; $c^{\ast}(f)$ is exterior multiplication</td>
+</tr>
+<tr>
+<td>$N=\sum_jc^{\ast}(f_j)c(f_j)$</td>
+<td>Number operator, spectrum $\mathbb{N}_0$</td>
+</tr>
+<tr>
+<td>$\omega(a)=\langle\Omega,a\Omega\rangle$</td>
+<td>Vacuum state; GNS representation</td>
+</tr>
+<tr>
+<td>$\omega_T(c(g)c(f)^{\ast})=\langle f,Tg\rangle$, $0\leq T\leq1$</td>
+<td>Quasi-free states and their forms</td>
+</tr>
+<tr>
+<td>$\alpha_U(c(f))=c(Uf)$</td>
+<td>Bogoliubov transformation</td>
+</tr>
+<tr>
+<td>$U$ implementable $\iff$ off-diagonal part Hilbert–Schmidt</td>
+<td>Shale–Stinespring</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Ola Bratteli and Derek W. Robinson, <em>Operator Algebras and Quantum Statistical Mechanics 2</em> (Springer, 2nd ed. 1997), for the CAR algebra, its Fock representation, the quasi-free states and the Bogoliubov transformations.</li>
+<li>John T. Cannon and Arthur S. Wightman (eds.), <em>Constructive Quantum Field Theory</em>, and the survey of Shale–Stinespring, for the implementability criterion of the Bogoliubov automorphisms.</li>
+<li>David E. Evans and Yasuyuki Kawahigashi, <em>Quantum Symmetries on Operator Algebras</em>, Oxford Mathematical Monographs (Clarendon Press, 1998), for the restricted unitary group, its index classes and the connection with Clifford algebra periodicity.</li>
+<li>Michael Reed and Barry Simon, <em>Methods of Modern Mathematical Physics I: Functional Analysis</em> (Academic Press, 1980), for the unbounded self-adjoint operators, the deficiency indices, the spectral theorem and Stone's theorem.</li>
+<li>P. A. M. Dirac, <em>The Principles of Quantum Mechanics</em> (Oxford University Press, 4th ed. 1958), and Bernd Thaller, <em>The Dirac Equation</em> (Springer, 1992), for the one-particle Dirac Hamiltonian and its self-adjointness.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

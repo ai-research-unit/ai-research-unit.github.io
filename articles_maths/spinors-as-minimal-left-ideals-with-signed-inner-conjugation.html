@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spinors as Minimal Left Ideals with Signed Inner Conjugation — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="spinors-as-minimal-left-ideals-with-signed-inner-conjugation"><strong>Spinors as Minimal Left Ideals with Signed Inner Conjugation</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The spinor module of <em>Spin Representations and Clifford Modules with Inner Conjugation</em> is a Clifford module, and by <em>Spinors as Minimal Left Ideals with Inner Conjugation</em> it can be taken to be a minimal left ideal $I=\mathrm{Cl}(V,q)\pi$ of the algebra itself: the elements of $I$ are the spinors, and the Clifford algebra acts on them by left multiplication. That description was used there for the even part of the group, because the spin group lies in $\mathrm{Cl}^0$ and its action on a spinor is left multiplication by a rotor. The present article reads the same ideal with the whole Pin group acting on it.</p>
+<p>Two things change, and neither requires a new construction. The first is that a minimal left ideal is a left ideal, so left multiplication by <strong>every</strong> element of the algebra carries it into itself; the action of the unit group on $I$ is therefore defined for all of $\mathrm{Pin}(V,q)$ and not only for its even part. The second is that the ideal is not homogeneous: it splits as $I=I^0\oplus I^1$ with $I^{i}=\mathrm{Cl}^{i}\pi$, and an odd element of the algebra interchanges the two summands while an even element preserves them. A spinor of the ideal therefore has a well-defined parity decomposition, and the odd part of Pin acts on it by swapping the two components.</p>
+<p>The sign of the two-sided operator is visible here in a form that the algebra-level article does not show. On the ideal, left multiplication by $x$ realises the one-sided action, and the signed inner conjugation is realised by conjugating the Clifford multiplication by the two one-sided actions of $x$ and $\alpha(x)$:</p>
+<p>$$
+\mathrm{Ad}^{\alpha}_x(v)\,\psi=\alpha(x)\,v\,x^{-1}\psi=\rho(\alpha(x))\,\rho(v)\,\rho(x)^{-1}\psi .
+$$</p>
+<p>The two factors of the two-sided operator are thus the left multiplication by $\alpha(x)$ and the inverse left multiplication by $x$, and on the ideal their conjugation is exactly the module statement that the odd part returns the negative of the reflection.</p>
+<p>The Clifford algebra, the parity grading and the intrinsic involutions are from <em>Clifford Algebras</em> and <em>Clifford Algebras in Finite Dimensions</em>; the idempotents, the minimal left ideals, the bridge to the Chevalley module, the even-multivector picture and the two actions on the ideal are <em>Spinors as Minimal Left Ideals with Inner Conjugation</em>, and nothing of that theory is re-derived; the Clifford modules and the pin representation are <em>Pin Representations and Clifford Modules with Signed Inner Conjugation</em>; the groups are <em>The Clifford, Pin and Spin Groups with Signed Inner Conjugation</em>; and the two-sided operator and its one-sided factors are <em>Two-Sided Operators on a Clifford Algebra with Signed Inner Conjugation</em> and <em>One-Sided Operators on a Clifford Algebra with Signed Inner Conjugation</em>. The base is a field $F$ of characteristic not $2$, with $q$ non-degenerate on the finite-dimensional space $V$ and $B$ its polar form.</p>
+<h2 id="the-ideal-as-a-pin-module">The Ideal as a Pin Module</h2>
+<p><strong>Proposition (the left action).</strong> Let $I=\mathrm{Cl}(V,q)\pi$ be a left ideal. For every $a\in\mathrm{Cl}(V,q)$ the left multiplication $L_a$ carries $I$ into itself, $L_a(I)\subseteq I$, and $I$ is a Clifford module. Consequently the assignment</p>
+<p>$$
+\rho(x)\psi=x\,\psi,\qquad x\in\mathrm{Pin}(V,q),\ \psi\in I,
+$$</p>
+<p>is the restriction of the algebra action to the group, that is, the pin representation of <em>Pin Representations and Clifford Modules with Signed Inner Conjugation</em>.</p>
+<p><em>Proof.</em> If $y=b\pi$ then $ay=(ab)\pi\in I$, since $ab$ is an element of the algebra; the action is associative and restricts to the units. </p>
+<p><strong>Remark.</strong> The left action is the reason the ideal description is available for the whole Pin group. The right action does not share this property: right multiplication by a rotor does not preserve a minimal left ideal in general, and the dual representation is realised on a minimal right ideal instead; both statements are from <em>Spinors as Minimal Left Ideals with Inner Conjugation</em>. So the ideal is the natural home of the <em>pinor</em> rather than of a pair of spinors, and no pairing of one-sided operators is needed to define the group action on it.</p>
+<p><strong>Proposition (faithfulness on the ideal).</strong> If $\mathrm{Cl}(V,q)$ is simple and $I\neq0$, the action on $I$ has trivial kernel, and if $\mathrm{Cl}(V,q)\cong A\times A$ with $I$ the minimal ideal of the first factor, the kernel is $\mathrm{Pin}(V,q)\cap(\{1\}\times A)$.</p>
+<p><em>Proof.</em> The annihilator of the ideal is a two-sided ideal, proper because $\pi\in I$ and $\pi^{2}=\pi\neq0$, so it vanishes over a simple algebra; over a product, the ideal of one factor is annihilated by the other. This is the kernel computation of <em>Pin Representations and Clifford Modules with Signed Inner Conjugation</em>, read on the ideal.</p>
+<h2 id="the-parity-of-the-ideal">The Parity of the Ideal</h2>
+<p><strong>Proposition (the splitting).</strong> The ideal splits according to the grading,</p>
+<p>$$
+I=I^0\oplus I^1,\qquad I^{i}=\mathrm{Cl}^{i}(V,q)\,\pi=\{\,a\pi : a\in\mathrm{Cl}^{i}(V,q)\,\},
+$$</p>
+<p>and left multiplication by an even element preserves the two summands while left multiplication by an odd element interchanges them.</p>
+<p><em>Proof.</em> An element of the algebra is the sum of its even and its odd part, giving the splitting; and $\mathrm{Cl}^{i}\mathrm{Cl}^{j}\subseteq\mathrm{Cl}^{i+j}$ gives $L_a(I^{j})\subseteq I^{i+j}$ for $a\in\mathrm{Cl}^{i}$, the exponent read modulo two. </p>
+<p><strong>Corollary (pinors and the halves).</strong> An odd element of $\mathrm{Pin}(V,q)$ maps $I^0$ onto $I^1$ and $I^1$ onto $I^0$; an even element, in particular every element of $\mathrm{Spin}(V,q)$, preserves each of the two summands. On a minimal left ideal the two summands play the role that the two half-spin spaces $\Delta_\pm$ play on the module of <em>Spin Representations and Clifford Modules with Inner Conjugation</em>, and the odd part of the group exchanges them.</p>
+<p><strong>Remark.</strong> The exchange is the ideal-theoretic form of the chirality statement of the pin representation: a spinor of the ideal has two components, the even part $I^0$ and the odd part $I^1$ of the ideal, the spin group acts on each of them separately, and the remaining odd elements of Pin swap them. In an odd-dimensional algebra the two summands have the same dimension, since multiplication by a fixed odd element is a bijection of $I$ carrying one onto the other; in the low-dimensional cases for which the ideal is identified with the even subalgebra, the representative of a spinor is an even multivector and the odd elements move it out of that representative.</p>
+<h2 id="the-signed-conjugation-on-the-ideal">The Signed Conjugation on the Ideal</h2>
+<p><strong>Proposition (the operator realised by left multiplications).</strong> For $x\in\mathrm{Cl}(V,q)^{\times}$, $v\in V$ and $\psi\in I$,</p>
+<p>$$
+\mathrm{Ad}^{\alpha}_x(v)\,\psi=\alpha(x)\,v\,x^{-1}\,\psi=\rho(\alpha(x))\,\rho(v)\,\rho(x)^{-1}\,\psi .
+$$</p>
+<p>So the signed inner conjugation is realised on the ideal as the conjugation of the Clifford multiplication by the left multiplications of $\alpha(x)$ and $x$: the left factor is the signed left multiplication $\Lambda^{\alpha}_x$ and the right factor is the inverse left multiplication, the two ingredients of <em>One-Sided Operators on a Clifford Algebra with Signed Inner Conjugation</em>.</p>
+<p><em>Proof.</em> Both sides are the same product of three factors in the algebra, applied to $\psi$; the first and the third factor are $\rho(\alpha(x))=\Lambda^{\alpha}_x$ and $\rho(x)^{-1}=\rho(x^{-1})$, since $\rho$ is a representation of the group of units. The module is one-sided, so both factors of the two-sided operator act on $\psi$ as left multiplications by elements of the algebra; the inverse right multiplication $R_{x^{-1}}$ of <em>One-Sided Operators on a Clifford Algebra with Signed Inner Conjugation</em> is the right factor on the algebra, and on the ideal its work is done by the left multiplication by $x^{-1}$.</p>
+<p><strong>Corollary (the reflection, with and without the sign).</strong> Let $u\in V$ with $q(u)\neq0$ and let $\rho_u$ be the reflection in $u^{\perp}$. Then for all $v\in V$ and $\psi\in I$,</p>
+<p>$$
+\rho(\mathrm{Ad}^{\alpha}_u(v))\,\psi=\rho_u(v)\,\psi,\qquad \rho(u)\,\rho(v)\,\rho(u)^{-1}\,\psi=-\rho_u(v)\,\psi .
+$$</p>
+<p>So on the ideal the sandwich with a vector returns the negative of the reflection, and the signed inner conjugation is what removes the sign; the parity sign $\varepsilon_x=(-1)^{k}$ of <em>Two-Sided Operators on a Clifford Algebra with Signed Inner Conjugation</em> is the only difference between the two computations.</p>
+<p><em>Proof.</em> The first identity is the previous proposition with $x=u$ and $\mathrm{Ad}^{\alpha}_u=\rho_u$; the second is $\rho(u)\rho(v)\rho(u)^{-1}=\rho(\mathrm{Ad}_u(v))=-\rho(\rho_u(v))$, the corollary of <em>Pin Representations and Clifford Modules with Signed Inner Conjugation</em>.</p>
+<h2 id="worked-cases">Worked Cases</h2>
+<h3 id="the-ideal-of-the-three-dimensional-definite-algebra">The Ideal of the Three-Dimensional Definite Algebra</h3>
+<p>In $\mathrm{Cl}_{3,0}(\mathbb{R})$ with $e_j^{2}=+1$, let $\pi=\tfrac12(1+e_3)$. Then $\pi^{2}=\pi$ and $\pi$ is primitive, and the minimal left ideal is</p>
+<p>$$
+I=\mathrm{Cl}_{3,0}\,\pi=\mathrm{span}_{\mathbb{R}}\{\,\pi,\ e_1\pi,\ e_2\pi,\ e_1e_2\pi\,\},
+$$</p>
+<p>of real dimension four, with the reductions $e_3\pi=\pi$, $e_1e_3\pi=e_1\pi$, $e_2e_3\pi=e_2\pi$ and $\omega\pi=e_1e_2\pi$ for the volume element $\omega=e_1e_2e_3$. The splitting is $I^0=\mathrm{span}\{\pi,e_1e_2\pi\}$ and $I^1=\mathrm{span}\{e_1\pi,e_2\pi\}$, and the odd element $e_1$ acts by</p>
+<p>$$
+e_1\pi=e_1\pi\in I^1,\qquad e_1(e_1\pi)=\pi\in I^0,\qquad e_1(e_2\pi)=e_1e_2\pi\in I^0,\qquad e_1(e_1e_2\pi)=e_2\pi\in I^1 ,
+$$</p>
+<p>so it interchanges the two summands, while the even element $e_1e_2$ acts by $e_1e_2\pi\in I^0$, $e_1e_2(e_1\pi)=-e_2\pi\in I^1$ and preserves them.</p>
+<h3 id="the-reflection-read-on-the-ideal">The Reflection Read on the Ideal</h3>
+<p>In the same algebra take $u=e_1$, $v=e_2$ and $\psi=\pi$. Then $\rho_{e_1}$ fixes $e_2$, since $B(e_1,e_2)=0$, and the two computations are</p>
+<p>$$
+\mathrm{Ad}^{\alpha}_{e_1}(e_2)\,\pi=-e_1e_2e_1\,\pi=e_2\,\pi,\qquad \rho(e_1)\rho(e_2)\rho(e_1)^{-1}\,\pi=e_1e_2e_1\,\pi=-e_2\,\pi ,
+$$</p>
+<p>because $e_1e_2e_1=-e_2e_1e_1=-e_2$, and the reflection of $e_2$ in $e_1^{\perp}$ is $e_2$ itself. The two computations differ exactly by the sign: the same three factors, with the left one carrying $\alpha$, give $e_2\pi$, and without it give $-e_2\pi$.</p>
+<h3 id="the-volume-element">The Volume Element</h3>
+<p>The volume element $\omega=e_1e_2e_3$ is odd, central and satisfies $\omega^{2}=-1$, and its action on the ideal is left multiplication by $\omega$, which is the map $\psi\mapsto\omega\psi$ sending $I^{0}$ to $I^{1}$ and $I^{1}$ to $I^{0}$. By the corollary of <em>Two-Sided Operators on a Clifford Algebra with Signed Inner Conjugation</em>, $\mathrm{Ad}^{\alpha}_\omega=-\mathrm{id}$ while $\mathrm{Ad}_\omega=\mathrm{id}$, so on the ideal the signed conjugation by $\omega$ acts as $-\mathrm{id}$, that is, it separates a spinor from its negative and is not the identity; the inner conjugation by the same central element is invisible on the ideal.</p>
+<h3 id="the-biquaternion-ideal">The Biquaternion Ideal</h3>
+<p>For $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ the same construction gives an ideal whose elements are the biquaternion spinors of the applications layer, with the two summands of the splitting playing the role of the two chiralities and the odd elements of $\mathrm{Pin}(1,3)$ exchanging them; the compatibility of the ideal with the Lorentz action is the subject of the applications layer and nothing of it is used here.</p>
+<h2 id="summary">Summary</h2>
+<p>A <strong>minimal left ideal</strong> $I=\mathrm{Cl}(V,q)\pi$ is a left ideal, hence a Clifford module on which the left multiplication by <em>every</em> element of the algebra is defined; the whole <strong>Pin group</strong> therefore acts on it by left multiplication, and the ideal carries the pinor representation, with spinors understood as the elements of $I$. If the algebra is simple and $I\neq0$ the action is faithful, and over a product the kernel is $\mathrm{Pin}\cap(\{1\}\times A)$.</p>
+<p>The ideal is not homogeneous: it splits as $I=I^0\oplus I^1$ with $I^{i}=\mathrm{Cl}^{i}\pi$, the even elements of the algebra, hence all of $\mathrm{Spin}$, preserve the two summands, and the odd elements of $\mathrm{Pin}$ interchange them. The two summands are the ideal-theoretic counterparts of the two chiral halves of an even-dimensional Clifford module. The signed inner conjugation is realised on the ideal by conjugating the Clifford multiplication with two left multiplications, $\mathrm{Ad}^{\alpha}_x(v)\psi=\rho(\alpha(x))\rho(v)\rho(x)^{-1}\psi$, so the left factor of the two-sided operator appears as the <strong>signed left multiplication</strong> $\Lambda^{\alpha}_x$ and the right factor as the inverse left multiplication; for a vector the plain sandwich gives $-\rho_u(v)\psi$ and the signed one $\rho_u(v)\psi$, which is the sign that the pin theory needs and that the spin theory, confined to the even part, never meets. The central volume element of an odd-dimensional algebra acts on the ideal by the exchange of the two summands, and the signed conjugation by it acts as $-\mathrm{id}$ where the inner conjugation acts as the identity.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$I=\mathrm{Cl}(V,q)\pi$</td>
+<td>Minimal left ideal, a Clifford module; $\pi$ a primitive idempotent</td>
+</tr>
+<tr>
+<td>$\rho(x)\psi=x\psi$</td>
+<td>Left action of the algebra, restricted to Pin</td>
+</tr>
+<tr>
+<td>$I=I^0\oplus I^1$, $I^{i}=\mathrm{Cl}^{i}\pi$</td>
+<td>The parity splitting of the ideal</td>
+</tr>
+<tr>
+<td>$\mathrm{Cl}^0$ preserves, $\mathrm{Cl}^1$ interchanges</td>
+<td>Even and odd elements on the summands</td>
+</tr>
+<tr>
+<td>$\mathrm{Ad}^{\alpha}_x(v)\psi=\rho(\alpha(x))\rho(v)\rho(x)^{-1}\psi$</td>
+<td>The signed conjugation on the ideal</td>
+</tr>
+<tr>
+<td>$\Lambda^{\alpha}_x=\rho(\alpha(x))$, $L_{x^{-1}}=\rho(x)^{-1}$</td>
+<td>The one-sided factors, both as left multiplications on the ideal</td>
+</tr>
+<tr>
+<td>$\rho(\mathrm{Ad}^{\alpha}_u(v))\psi=\rho_u(v)\psi$</td>
+<td>The reflection on the ideal</td>
+</tr>
+<tr>
+<td>$\rho(u)\rho(v)\rho(u)^{-1}\psi=-\rho_u(v)\psi$</td>
+<td>The same, without the sign</td>
+</tr>
+<tr>
+<td>$\mathrm{Ad}^{\alpha}_\omega=-\mathrm{id}$, $\mathrm{Ad}_\omega=\mathrm{id}$</td>
+<td>The central volume element, odd dimension</td>
+</tr>
+<tr>
+<td>$\ker\rho=\mathrm{Pin}\cap(\{1\}\times A)$</td>
+<td>Kernel over a product of simple algebras</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em> (Cambridge University Press, 2nd ed. 2001), for the realisation of spinors as elements of a minimal left ideal and the parity of the ideal.</li>
+<li>H. Blaine Lawson and Marie-Louise Michelsohn, <em>Spin Geometry</em> (Princeton University Press, 1989), for the Clifford action on an ideal, the chirality splitting and the action of the odd part.</li>
+<li>Ian R. Porteous, <em>Clifford Algebras and the Classical Groups</em>, Cambridge Studies in Advanced Mathematics 50 (Cambridge University Press, 1995), for idempotents, minimal ideals and the pin and spin actions upon them.</li>
+<li>Claude Chevalley, <em>The Algebraic Theory of Spinors and Clifford Algebras</em>, Collected Works vol. 2 (Springer, 1997), for the original ideal-theoretic construction of the spinors.</li>
+<li>Richard S. Pierce, <em>Associative Algebras</em>, Graduate Texts in Mathematics 88 (Springer, 1982), for primitive idempotents, minimal left ideals and the action of an algebra on them.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

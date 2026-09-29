@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Completely Positive Maps of the Biquaternion Algebra with Hermitian Adjoint — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="completely-positive-maps-of-the-biquaternion-algebra-with-hermitian-adjoint"><strong>Completely Positive Maps of the Biquaternion Algebra with Hermitian Adjoint</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This is the physics companion of <em>Completely Positive Maps of the Biquaternion Algebra with Hermitian Adjoint</em> (<code>articles_maths/completely-positive-maps-of-the-biquaternion-algebra-with-hermitian-adjoint.md</code>). The mathematics has one theorem: <strong>the completely positive maps of the biquaternion algebra are exactly the sums of at most four two-sided operators</strong>, $\Phi=\sum_{k=1}^{r}\Theta_{\tilde{Q}_{k}}$, $r=\mathrm{rank}\,C_{\Phi}\le4$, by Choi and Kraus. In the physics this is the framework's statement about <strong>channels</strong>: a channel is a sum of <strong>sandwiches</strong>, and a single sandwich is the rank-one channel that prepares the state of an amplitude. The article's business is to read the Kraus theorem physically, to identify the reversible channels with the unitary conjugations, and to explain why the transposition — positive on the cone — is <strong>not</strong> a physical process.</p>
+<p>The four physical points are:</p>
+<ol>
+<li>the sandwich $\Theta_{\tilde{Q}}$ is the map $\tilde R\mapsto \tilde{Q}\tilde R\tilde{Q}^{\dagger}$, i.e. the <strong>amplitude-to-state</strong> map; the Born rule is its diagonal;</li>
+<li>a general channel is a sum of sandwiches, so <strong>noise is a sum of amplitude preparations</strong>;</li>
+<li>the <strong>reversible</strong> channels are exactly the sandwiches of unitary elements, i.e. the automorphisms of the framework; every other channel is irreversible even when invertible as a linear map;</li>
+<li><strong>positivity of the map on the cone is not enough</strong>: the transposition is positive and not completely positive, and complete positivity is the physical criterion.</li>
+</ol>
+<h2 id="the-sandwich-as-the-amplitude-to-state-channel">The Sandwich as the Amplitude-to-State Channel</h2>
+<p><strong>The physical reading of $\Theta_{\tilde{Q}}$.</strong> The sandwich is the map</p>
+<p>$$
+\tilde R\longmapsto \tilde{Q}\,\tilde R\,\tilde{Q}^{\dagger},
+$$</p>
+<p>and it is the framework's <strong>state preparation</strong>: applied to the identity it returns $\tilde{Q}\tilde{Q}^{\dagger}$, the positive element of the amplitude $\tilde{Q}$, and its normalised trace-one version is the state. Its Choi matrix is positive semidefinite of <strong>rank one</strong>: the sandwich is a channel of rank one, and the rank-one channels are the "pure" ones, with no mixture. The positivity of the sandwich on the cone is the statement that <strong>state preparation carries states to states</strong>, and the complete positivity is the statement that it does so also when the channel is applied to one half of an entangled pair — the physical content of the amplification.</p>
+<p><strong>Remark (the Born rule).</strong> The diagonal of $\Theta_{\tilde{Q}}(e_{0})=\tilde{Q}\tilde{Q}^{\dagger}$ is the Hermitian squares of the amplitudes: the Born rule. The off-diagonal entries of the same element are the coherences of <em>The Spectra of the Operators on the Biquaternion Algebra with Hermitian Adjoint</em>, and the whole matrix is the density matrix prepared by the amplitude, up to the trace normalisation. The map $\tilde{Q}\mapsto \tilde{Q}\tilde{Q}^{\dagger}$ is precisely the sandwich, and the whole Kraus theory is the statement that a channel is a <strong>convex mixture of such preparations</strong>.</p>
+<h2 id="a-channel-is-a-sum-of-sandwiches">A Channel is a Sum of Sandwiches</h2>
+<p><strong>Proposition (the physical form of the Kraus theorem).</strong> A channel of the framework, i.e. a completely positive trace-preserving map, is</p>
+<p>$$
+\Phi(\tilde R)=\sum_{k=1}^{r}\tilde{Q}_{k}\,\tilde R\,\tilde{Q}_{k}^{\dagger},\qquad r\le4,
+$$</p>
+<p>with the <strong>trace preservation</strong> condition $\sum_{k}\tilde{Q}_{k}^{\dagger}\tilde{Q}_{k}=e_{0}$ and the <strong>unitality</strong> condition $\sum_{k}\tilde{Q}_{k}\tilde{Q}_{k}^{\dagger}=e_{0}$. The elements $\tilde{Q}_{k}$ are the framework's <strong>Kraus amplitudes</strong>, and the Choi rank $r$ is the number of independent amplitudes in the mixture.</p>
+<p><strong>Physical reading.</strong> The trace preservation is the statement that the channel preserves the normalisation of a state, i.e. it is a <strong>physical evolution</strong>; unitality is the statement that it preserves the identity, i.e. it does not change the "unpolarised" state, and a channel that is both is a <strong>bistochastic</strong> channel of the framework, preserving the state space as a set. A single amplitude gives a <strong>pure</strong> channel (rank one), two amplitudes give the dephasing-like channels, and the generic channel is a mixture.</p>
+<p><strong>Example (dephasing).</strong> $\Phi=\frac12 \Theta_{e_{0}}+\frac12 \Theta_{ie_{3}}$ is unital and trace preserving, and in the matrix model it is $\Phi(\tilde R)=\frac12(\tilde R+\sigma_{3}\tilde R\sigma_{3})=\mathrm{diag}(\tilde R)$: the <strong>dephasing channel</strong> in the basis of the Hermitian sector $\mathbb{M}_+$, which kills the coherences and keeps the populations. It is the reference channel of <em>Exercise: Quantum Channels and Dephasing in M+</em>, and it is exactly the framework's statement that a measurement in the $\mathbb{M}_+$ basis is a channel that is not an automorphism.</p>
+<h2 id="reversible-and-irreversible-channels">Reversible and Irreversible Channels</h2>
+<p><strong>Theorem (the reversible channels are the unitary conjugations).</strong> A channel of a single amplitude, $\Phi=\Theta_{\tilde{Q}}$, is <strong>reversible</strong> — its inverse is again a channel — exactly when $\tilde{Q}\in U$, i.e. exactly when the amplitude is a unitary of the framework. Then the channel is the <strong>conjugation</strong> $\tilde R\mapsto \tilde{Q}\tilde R\tilde{Q}^{\dagger}$, an automorphism of the algebra, and its inverse is $\Theta_{\tilde{Q}^{\dagger}}$. For an invertible amplitude $\tilde{Q}\notin U$ the map is invertible as a linear map but its inverse is <strong>not</strong> a channel: the evolution is irreversible.</p>
+<p><strong>Physical reading.</strong> This is the precise algebraic form of the <strong>reversible/irreversible dichotomy</strong> of <em>Quantum Channels and the Reversible/Irreversible Dichotomy</em>: the reversible evolutions are the unitary conjugations, which are exactly the framework's automorphisms (the internal rotations and the symmetric presentations of the Lorentz transformations), and every other channel loses information. The distinction is not "invertible or not" but "the inverse is a physical operation or not"; the mathematics article's criterion $\tilde{Q}\in U$ is the exact dividing line.</p>
+<p><strong>Proof of the theorem.</strong> The mathematics companion: $\Theta_{\tilde{Q}}$ has the inverse $\Theta_{\tilde{Q}^{-1}}$, and $\Theta_{\tilde{Q}^{-1}}$ is a channel (indeed a single-sandwich channel) exactly when $\tilde{Q}^{-1}$ exists in the slice $U$, i.e. exactly when $\tilde{Q}\in U$, since $\Theta_{\tilde{Q}}$ is unital and trace preserving exactly for $\tilde{Q}\in U$.</p>
+<h2 id="positivity-is-not-enough-the-transposition">Positivity is Not Enough: The Transposition</h2>
+<p><strong>Proposition (the transposition is the canonical non-physical map).</strong> The transposition $\Phi(\tilde R)=\tilde R^{T}$ is <strong>positive</strong> — it carries the positive cone into itself — and it is <strong>not completely positive</strong>: its Choi matrix is the flip, with the eigenvalues $(1,1,1,-1)$ and the single negative eigenvalue on the antisymmetric part. Consequently the transposition is not a physical process of the framework.</p>
+<p><strong>Physical reading.</strong> The physical content of complete positivity is that a channel must be <strong>extendable to an entangled partner</strong>: acting on one half of an entangled pair it must still be positive. The transposition passes the test of positivity on a single algebra and fails the test of the amplification; the single negative eigenvalue of the flip is the obstruction. Complete positivity, not positivity, is the framework's criterion for a physical process, and the Choi matrix is the object that decides it. This is the operator-level statement of the framework's insistence that its channels are the <strong>completely</strong> positive ones.</p>
+<h2 id="the-cone-of-channels-and-the-state-space">The Cone of Channels and the State Space</h2>
+<p><strong>Proposition (the cone, the state space and the flow).</strong> The completely positive maps form a cone generated by the sandwiches; the channel cone is its unital-plus-trace-preserving subcone; and the state space of the framework — the Bloch ball of the trace-one slice of the positive cone — is the <strong>orbit of the identity under the unital channels</strong>: $\Phi(e_{0})=\sum_{k}\tilde{Q}_{k}\tilde{Q}_{k}^{\dagger}\succeq0$. The trace-preserving channels are the <strong>evolutions</strong> of the state space, and the unital ones are the <strong>symmetries</strong> of the reference state.</p>
+<p><strong>Physical reading.</strong> One sentence contains the article: <strong>the states are the images of the identity under the amplitude sums, the evolutions are the trace-preserving sums, and the symmetries are the unital ones</strong>. The framework's entire channel picture is the statement that these three words mean the same three conditions of the mathematics companion.</p>
+<h2 id="worked-examples">Worked Examples</h2>
+<p><strong>The identity channel.</strong> $\Theta_{e_{0}}=\mathrm{id}$: the trivial preparation, unital and trace preserving, reversible, the identity of the composition of channels.</p>
+<p><strong>A pure channel that is not normalised.</strong> $\Theta_{e_{0}+ie_{3}}$: Choi rank one, but $\tilde{Q}\tilde{Q}^{\dagger}=\tilde{Q}^{2}=2\tilde{Q}$ has trace four times the amplitude trace, so the map is neither unital nor trace preserving; it is the framework's example that <strong>a rank-one channel need not be a state channel</strong> — the normalisation is an independent condition, and the null amplitude collapses the cone.</p>
+<p><strong>A mixture.</strong> $\frac12\Theta_{e_{0}}+\frac12\Theta_{e_{3}}$ is unital and trace preserving, hence a channel, with Choi rank two: it is the framework's two-amplitude channel, and its image is a two-dimensional subspace of the state space. Physically it is a <strong>noisy</strong> channel whose Choi rank counts the independent noise amplitudes.</p>
+<p><strong>The transposition composed with a preparation.</strong> The map $\tilde R\mapsto (\tilde{Q}\tilde R\tilde{Q}^{\dagger})^{T}$ is positive and not completely positive; its Choi matrix has the negative eigenvalue of the flip transported by the sandwich, and it is the framework's example that <strong>composing a physical preparation with the transposition gives a non-physical map</strong> — the obstruction lives in the transposition and not in the preparation.</p>
+<h2 id="summary">Summary</h2>
+<p>The completely positive maps of the biquaternion algebra are the sums of at most four sandwiches, $\Phi=\sum_{k=1}^{r}\Theta_{\tilde{Q}_{k}}$, $r\le4$; physically a channel is a mixture of amplitude preparations, with the Kraus amplitudes $\tilde{Q}_{k}$, and the trace preservation and unitality are $\sum_{k}\tilde{Q}_{k}^{\dagger}\tilde{Q}_{k}=e_{0}$ and $\sum_{k}\tilde{Q}_{k}\tilde{Q}_{k}^{\dagger}=e_{0}$. A single sandwich is the rank-one channel $\tilde R\mapsto \tilde{Q}\tilde R\tilde{Q}^{\dagger}$ preparing the state $\tilde{Q}\tilde{Q}^{\dagger}$, i.e. the Born rule as a map; the reversible channels are exactly the unitary conjugations $\tilde{Q}\in U$, which are the framework's automorphisms, and every other channel is irreversible. The transposition is positive on the cone and not completely positive, with the flip and its single negative eigenvalue, and complete positivity — the positivity of the Choi matrix — is the physical criterion. The state space is the orbit of the identity under the unital channels, the evolutions are the trace-preserving ones, and the symmetries are the automorphisms.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Physical reading</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\Theta_{\tilde{Q}}(\tilde R)=\tilde{Q}\tilde R\tilde{Q}^{\dagger}$</td>
+<td>Amplitude-to-state channel; the Born rule as a map</td>
+</tr>
+<tr>
+<td>$\Phi=\sum_{k=1}^{r}\Theta_{\tilde{Q}_{k}}$</td>
+<td>A channel; $r$ independent Kraus amplitudes; $r\le4$</td>
+</tr>
+<tr>
+<td>$C_{\Phi}\succeq0$</td>
+<td>Choi criterion; the physical (CP) condition</td>
+</tr>
+<tr>
+<td>$\sum_{k}\tilde{Q}_{k}^{\dagger}\tilde{Q}_{k}=e_{0}$</td>
+<td>Trace preservation; the evolution of a normalised state</td>
+</tr>
+<tr>
+<td>$\sum_{k}\tilde{Q}_{k}\tilde{Q}_{k}^{\dagger}=e_{0}$</td>
+<td>Unitality; the symmetry of the reference state</td>
+</tr>
+<tr>
+<td>$\tilde{Q}\in U$</td>
+<td>Reversible channel; a unitary conjugation; an automorphism</td>
+</tr>
+<tr>
+<td>$\Phi(\tilde R)=\tilde R^{T}$</td>
+<td>The transposition; positive, not CP, not physical</td>
+</tr>
+<tr>
+<td>$\sum_{ij}E_{ij}\otimes E_{ji}$</td>
+<td>The flip; eigenvalues $(1,1,1,-1)$; the obstruction</td>
+</tr>
+<tr>
+<td>$\Phi(e_{0})=\sum_{k}\tilde{Q}_{k}\tilde{Q}_{k}^{\dagger}$</td>
+<td>The image of the identity; a state of the Bloch ball</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>Completely Positive Maps of the Biquaternion Algebra with Hermitian Adjoint</em> (<code>articles_maths/completely-positive-maps-of-the-biquaternion-algebra-with-hermitian-adjoint.md</code>), the mathematical companion.</li>
+<li><em>Quantum Channels and the Reversible/Irreversible Dichotomy</em> (<code>articles_physics/quantum-channels-and-the-reversible-irreversible-dichotomy.md</code>), for the physical dichotomy whose algebraic form this article gives.</li>
+<li><em>Exercise: Quantum Channels and Dephasing in M+</em> (<code>articles_physics/exercise-quantum-channels-and-dephasing-in-m.md</code>), for the dephasing channel and its computations.</li>
+<li><em>The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector</em> (<code>articles_physics/the-hermitian-subspace-m-plus-as-the-informational-sector.md</code>), for the state cone, the Bloch ball and the trace-one slice.</li>
+<li><em>Two-Sided Operators on the Biquaternion Algebra with Hermitian Adjoint</em> (<code>articles_physics/two-sided-operators-on-the-biquaternion-algebra-with-hermitian-adjoint.md</code>), for the sandwich as the framework's transformation and its phase blindness.</li>
+<li><em>The Spectra of the Operators on the Biquaternion Algebra with Hermitian Adjoint</em> (<code>articles_physics/the-spectra-of-the-operators-on-the-biquaternion-algebra-with-hermitian-adjoint.md</code>), for the populations, the coherences and the contraction of the Bloch ball.</li>
+<li><em>The Material/Informational Split as a Superselection Structure in Biquaternionic Form</em> (<code>articles_physics/the-material-informational-split-as-a-superselection-structure-in-biquaternionic-form.md</code>), for the two-sector reading of the channels.</li>
+<li><em>Landauer's Principle and the Material–Informational Exchange in Biquaternionic Form</em> (<code>articles_physics/landauers-principle-and-the-material-informational-exchange-in-biquaternionic-form.md</code>), for the information-theoretic side of the irreversible channels.</li>
+<li><em>Maxwell's Demon and the Informational Sector in Biquaternionic Form</em> (<code>articles_physics/maxwells-demon-and-the-informational-sector-in-biquaternionic-form.md</code>), for a physical instance of an information-processing channel.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

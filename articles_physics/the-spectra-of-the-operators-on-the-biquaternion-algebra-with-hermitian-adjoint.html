@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Spectra of the Operators on the Biquaternion Algebra with Hermitian Adjoint — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-spectra-of-the-operators-on-the-biquaternion-algebra-with-hermitian-adjoint"><strong>The Spectra of the Operators on the Biquaternion Algebra with Hermitian Adjoint</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This is the physics companion of <em>The Spectra of the Operators on the Biquaternion Algebra with Hermitian Adjoint</em> (<code>articles_maths/the-spectra-of-the-operators-on-the-biquaternion-algebra-with-hermitian-adjoint.md</code>). The spectra are the same four rules; the reading is physical. The four rules are:</p>
+<ul>
+<li>the left multiplication $L_{\tilde A}$ has the spectrum of $\tilde A$, each eigenvalue twice;</li>
+<li>the inner derivation $\mathrm{ad}_{\tilde A}=[\tilde A,\cdot\,]$ has the pairwise differences $\lambda_{i}-\lambda_{j}$: the <strong>charges</strong>;</li>
+<li>the sandwich $\Theta_{\tilde{Q}}$ has the pairwise products $\lambda_{i}\overline{\lambda_{j}}$: the <strong>populations and the coherences</strong>;</li>
+<li>the Sylvester operator $L_{\tilde A}+R_{\tilde B}$ has the pairwise sums $\lambda_{i}+\mu_{j}$: the <strong>energies of the coupled pair</strong>.</li>
+</ul>
+<p>The element-level spectral theory of the framework is <em>Biquaternion Spectral Theory</em>; this article is the operator-level theory, and the physics is stated in the language of states, amplitudes, populations and coherences. The one sentence that carries the article: <strong>the sandwich of an amplitude is the density matrices it prepares, and its spectrum is the Born rule together with the coherences.</strong></p>
+<h2 id="the-sandwich-as-the-preparation-of-a-state">The Sandwich as the Preparation of a State</h2>
+<p><strong>The Born rule as a spectrum.</strong> Let $\tilde{Q}$ be an amplitude, $\Phi(\tilde{Q})$ its matrix model with eigenvalues $\lambda_{1},\lambda_{2}$. The sandwich $\Theta_{\tilde{Q}}$ has the four eigenvalues</p>
+<p>$$
+\lvert\lambda_{1}\rvert^{2},\quad \lambda_{1}\overline{\lambda_{2}},\quad \lambda_{2}\overline{\lambda_{1}},\quad \lvert\lambda_{2}\rvert^{2},
+$$</p>
+<p>which are exactly the matrix elements of the <strong>density matrix of the pure state prepared by $\tilde{Q}$</strong>: the two <strong>populations</strong> $\lvert\lambda_{i}\rvert^{2}$ and the two <strong>coherences</strong> $\lambda_{i}\overline{\lambda_{j}}$. The Born rule is the statement that the populations are the Hermitian squares of the amplitudes; the off-diagonal coherences are the interference terms; and the trace of the sandwich is $\lvert\operatorname{tr}\Phi(\tilde{Q})\rvert^{2}$ while its rank is $(\mathrm{rank}\,\Phi(\tilde{Q}))^{2}$, so a classical (rank-one, singular) amplitude prepares a rank-one state.</p>
+<p><strong>Remark (why the phase does not show in the state).</strong> $\Theta_{\omega\tilde{Q}}=\Theta_{\tilde{Q}}$ for every phase $\omega$; the phase of the amplitude is the standard gauge redundancy of state preparation, and the physics of the framework says it in one line: <strong>the two-sided operator sees the state and not the amplitude</strong>, which is why the sandwich is the physically natural, and the only phase-blind, operator of the pair with the one-sided article.</p>
+<p><strong>Remark (the amplitude is not a state).</strong> The element $\tilde{Q}$ is not Hermitian in general, and the sandwich is not self-adjoint for general $\tilde{Q}$: the spectrum is not real. The physical diagnostic is the one derived in the mathematics article: $\Theta_{\tilde{Q}}$ is self-adjoint exactly when $\tilde{Q}$ is Hermitian up to a central phase, that is, exactly when the amplitude is <strong>parallel to a Hermitian element</strong>; and only then do the four eigenvalues become the real entries of a Hermitian density matrix in the two-level reading.</p>
+<h2 id="the-one-sided-spectrum-and-the-internal-charges">The One-Sided Spectrum and the Internal Charges</h2>
+<p><strong>The left multiplication as a charge operator.</strong> $L_{\tilde A}$ has the spectrum of $\tilde A$ twice. If $\tilde A$ is the generator of an internal rotation, $\tilde A\in\mathbb{M}_-$, its spectrum is purely imaginary and $L_{\tilde A}$ is skew-adjoint: the spectrum on the imaginary axis is the <strong>list of internal charges</strong> of the module, each charge occurring twice because the algebra as a module is two copies of the standard spinor module, as in <em>One-Sided Operators on the Biquaternion Algebra with Hermitian Adjoint</em>.</p>
+<p><strong>The inner derivation as the charge differences.</strong> The derivation $\mathrm{ad}_{\tilde A}=L_{\tilde A}-R_{\tilde A}$ has the pairwise differences $\lambda_{i}-\lambda_{j}$: the <strong>differences of the charges</strong> are the weights by which the derivation acts, which is the framework's operator-level version of the <strong>selection rules</strong>. For the internal rotation generators $e_{k}\in\mathbb{M}_-$ the weights are $\pm2i$, the quantised half-angle, and the exponentiated derivation has period $\pi$: the factor two of the half-angle spinor representation appears here as the difference of the eigenvalues.</p>
+<p><strong>Proposition (the charge pairing).</strong> For a Hermitian element $\tilde A$, the derivation $\mathrm{ad}_{\tilde A}$ is self-adjoint with real spectrum; for an anti-Hermitian element it is skew-adjoint with imaginary spectrum. In the physics the two cases are the <strong>observable</strong> (Hermitian generator, self-adjoint, real charges) and the <strong>rotation generator</strong> (anti-Hermitian, skew-adjoint, imaginary exponential). The framework's internal group uses the second and its observables the first, and the two are related by multiplication by $i$.</p>
+<h2 id="the-sandwich-as-a-positive-semidefinite-operator">The Sandwich as a Positive Semidefinite Operator</h2>
+<p><strong>Proposition (the positivity criteria in physical terms).</strong> For $\tilde{Q}$ Hermitian up to a central phase, the sandwich is self-adjoint and its spectrum is real; for $\tilde{Q}$ <strong>positive semidefinite</strong> the sandwich is positive semidefinite; for $\tilde{Q}$ <strong>definite</strong> the sandwich is positive definite. If $\tilde{Q}$ has inertia $(p,q)$, the signature of the sandwich is $(p^{2}+q^{2},2pq)$: a <strong>definite</strong> amplitude gives a definite state and an <strong>indefinite</strong> Hermitian amplitude (inertia $(1,1)$) gives a sandwich with two positive and two negative eigenvalues.</p>
+<p><strong>Remark (a sandwich is never negative).</strong> For any nonzero Hermitian $\tilde{Q}$ the two populations $\lvert\lambda_{i}\rvert^{2}$ are positive, so the sandwich is never negative semidefinite. In the physics this is the statement that <strong>state preparation cannot produce an anti-state</strong>: the positivity of the populations is structural, and the "negative populations" of the indefinite cases come only in pairs with positive ones, which is the signature $(2,2)$ and the reason the framework's signed and graded structures are balanced.</p>
+<p><strong>Remark (the operator norm and the contraction).</strong> The norm of the sandwich is the square of the norm of the amplitude, $\lVert \Theta_{\tilde{Q}}\rVert=\lVert\Phi(\tilde{Q})\rVert^{2}$; a channel of a single amplitude therefore contracts the algebra by the square of its norm and preserves it only for the unitaries. This is the spectral statement behind the <strong>contraction of the Bloch ball</strong> under the noisy channels of the CP-maps article and of <em>Quantum Channels and the Reversible/Irreversible Dichotomy</em>.</p>
+<h2 id="the-sylvester-spectrum-and-the-coupled-energies">The Sylvester Spectrum and the Coupled Energies</h2>
+<p><strong>The pairwise sums.</strong> The Sylvester operator $L_{\tilde A}+R_{\tilde B}$ has the spectrum $\{\lambda_{i}+\mu_{j}\}$: in the physics this is the <strong>energy of a pair</strong> whose free energies are the two spectra, and the singularity of the operator — an eigenvalue of $\tilde A$ equal to the negative of an eigenvalue of $\tilde B$ — is the <strong>resonance</strong> of the pair. The framework's double-well and coupled-mode problems are this operator, and the resonance condition is exactly the failure of unique solvability of the mathematics article.</p>
+<p><strong>Proposition (the Hermitian case is the physical one).</strong> For Hermitian $\tilde A,\tilde B$ the spectrum is real and the operator is self-adjoint; for anti-Hermitian parameters it is skew-adjoint with imaginary spectrum. The physical reading: the Sylvester operator of Hermitian parameters is an <strong>observable</strong> (the anticommutator, the energy), while the Sylvester operator of anti-Hermitian parameters is a <strong>rotation generator</strong> (the commutator, the derivation). The framework's Heisenberg-type equations use the first, its internal rotations the second.</p>
+<h2 id="worked-examples">Worked Examples</h2>
+<p><strong>A two-level amplitude.</strong> $\tilde{Q}=e_{0}+e_{1}$ has the matrix $I-i\sigma_{1}$ with eigenvalues $\{1+i,1-i\}$, so the sandwich has the spectrum $\{2,2i,-2i,2\}$: not real, because the amplitude is not Hermitian up to phase, and the imaginary pair is the coherence. The example is the framework's warning that <strong>a real-looking amplitude need not prepare a real state</strong>.</p>
+<p><strong>A pure state.</strong> $\tilde{Q}=e_{0}+ie_{3}$ is Hermitian with eigenvalues $\{2,0\}$: the sandwich has the spectrum $\{4,0,0,0\}$, positive semidefinite of rank one, and it is <strong>not</strong> normalised: it is a pure direction blown up by the trace. The normalised state is the trace-one multiple, and the null eigenvalue is the lightlike direction lost by the preparation.</p>
+<p><strong>An internal rotation.</strong> For $\tilde A=e_{3}\in\mathbb{M}_-$, $L_{e_{3}}$ has the spectrum $\{i,-i,i,-i\}$ (purely imaginary, the charges) and $\mathrm{ad}_{e_{3}}$ has the spectrum $\{0,2i,-2i,0\}$ (the weights on the off-diagonal entries, the selection rules of the internal rotation). The exponentials are the rotations of <em>The Reflection and the Rotation in Biquaternionic Form</em>, of period $\pi$.</p>
+<p><strong>The identity.</strong> $L_{e_{0}}=\mathrm{id}$ has the spectrum $\{1,1,1,1\}$ and $\mathrm{ad}_{e_{0}}=0$: the identity has no charges and generates no internal rotation.</p>
+<h2 id="summary">Summary</h2>
+<p>The spectra of the operators of the framework have direct physical content: the sandwich $\Theta_{\tilde{Q}}$ has the spectrum of the density matrix prepared by the amplitude $\tilde{Q}$, with the populations $\lvert\lambda_{i}\rvert^{2}$ and the coherences $\lambda_{i}\overline{\lambda_{j}}$, and it is phase-blind, so the phase of the amplitude is a gauge redundancy; the left multiplication has the spectrum of the element twice, the internal charges of the two copies of the spinor module; the inner derivation has the differences of the charges, i.e. the selection rules and the half-angle factor of the internal rotations; the Sylvester operator has the sums, i.e. the energies and the resonances of a coupled pair. The sandwich is self-adjoint exactly for the amplitudes Hermitian up to phase and positive semidefinite exactly for the positive semidefinite ones; it is never negative, its norm is the square of the norm of the amplitude, and it is trace preserving exactly for the unitaries. All statements are proved and verified in the mathematics companion.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Physical reading</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\Theta_{\tilde{Q}}$</td>
+<td>The state prepared by the amplitude $\tilde{Q}$; populations and coherences</td>
+</tr>
+<tr>
+<td>$\lvert\lambda_{i}\rvert^{2}$</td>
+<td>Born rule; the populations</td>
+</tr>
+<tr>
+<td>$\lambda_{i}\overline{\lambda_{j}}$</td>
+<td>The coherences; the interference terms</td>
+</tr>
+<tr>
+<td>$L_{\tilde A}$</td>
+<td>Charge operator; the spectrum of $\tilde A$ twice</td>
+</tr>
+<tr>
+<td>$\mathrm{ad}_{\tilde A}=L_{\tilde A}-R_{\tilde A}$</td>
+<td>Selection rules; the differences of the charges</td>
+</tr>
+<tr>
+<td>$L_{\tilde A}+R_{\tilde B}$</td>
+<td>Coupled energies; the sums of the spectra; the resonance</td>
+</tr>
+<tr>
+<td>$\tilde{Q}^{\dagger}=\omega\tilde{Q}$</td>
+<td>Hermitian up to phase; the self-adjoint case</td>
+</tr>
+<tr>
+<td>$\lVert \Theta_{\tilde{Q}}\rVert=\lVert\Phi(\tilde{Q})\rVert^{2}$</td>
+<td>Contraction of the Bloch ball by the amplitude norm</td>
+</tr>
+<tr>
+<td>$\tilde{Q}\in U$</td>
+<td>Unitary; the trace-preserving and reversible case</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>The Spectra of the Operators on the Biquaternion Algebra with Hermitian Adjoint</em> (<code>articles_maths/the-spectra-of-the-operators-on-the-biquaternion-algebra-with-hermitian-adjoint.md</code>), the mathematical companion.</li>
+<li><em>Biquaternion Spectral Theory</em> (<code>articles_physics/biquaternion-spectral-theory.md</code>), for the element spectra that enter here.</li>
+<li><em>The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector</em> (<code>articles_physics/the-hermitian-subspace-m-plus-as-the-informational-sector.md</code>), for the Bloch ball, the states and the trace-one slice.</li>
+<li><em>The Spinor Module in Biquaternionic Form and Its Lorentz Action</em> (<code>articles_physics/the-spinor-module-in-biquaternionic-form-and-its-lorentz-action.md</code>), for the two copies of the spinor module behind the doubled one-sided spectrum.</li>
+<li><em>Angular Momentum and Spin in Biquaternionic Form</em> (<code>articles_physics/angular-momentum-and-spin-in-biquaternionic-form.md</code>), for the internal generators and their half-angle.</li>
+<li><em>Quantum Channels and the Reversible/Irreversible Dichotomy</em> (<code>articles_physics/quantum-channels-and-the-reversible-irreversible-dichotomy.md</code>), for the contraction of the Bloch ball and the channels.</li>
+<li><em>Biquaternion Spin Geometry</em> (<code>articles_physics/biquaternion-spin-geometry.md</code>), for the spinor operators and their spectra.</li>
+<li><em>The Reflection and the Rotation in Biquaternionic Form</em> (<code>articles_physics/the-reflection-and-the-rotation-in-biquaternionic-form.md</code>), for the exponentials of the internal generators.</li>
+<li><em>Biquaternion Rotations and Lorentz Transformations</em> (<code>articles_physics/biquaternion-rotations-and-lorentz-transformations.md</code>), for the geometry of the generators.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

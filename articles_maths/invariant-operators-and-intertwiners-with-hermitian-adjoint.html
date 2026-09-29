@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Invariant Operators and Intertwiners with Hermitian Adjoint — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="invariant-operators-and-intertwiners-with-hermitian-adjoint"><strong>Invariant Operators and Intertwiners with Hermitian Adjoint</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>An operator that commutes with the Clifford action is an operator that cannot see the Clifford structure: it is an endomorphism of the module <strong>over</strong> the Clifford algebra, and it is the same as an intertwiner of the module with itself. The invariant operators form the <strong>commutant</strong> of the action, and on an irreducible module they form a division algebra by Schur's lemma; on the regular module they are exactly the right multiplications, so the commutant is a copy of the Clifford algebra itself. The purpose of this article is to assemble that circle of statements with the Hermitian adjoint carried along: the adjoint of an intertwiner is an intertwiner between the adjoint modules, the adjoint of a self-intertwiner is again one, and the self-adjoint invariant operators on the regular module are the right multiplications by the symmetric elements.</p>
+<p>The adjoint structure is what makes the circle useful. An invariant operator is the object that a symmetry cannot move; its adjoint is invariant too; the unitary invariant operators are the intersections of the commutant with the slice, and they are the operators that implement the symmetry without changing the Hermitian form. The bicommutant — the operators invariant under all the invariant operators — recovers the Clifford algebra on the regular module, which is the double centraliser theorem in the Clifford setting and is the reason the regular module is balanced.</p>
+<p>The Clifford action and the module form are <em>Hermitian Clifford Modules with Hermitian Adjoint</em>; the adjoint of the action is <em>The Adjoint of the One-Sided Action with Hermitian Adjoint</em>; the right multiplications, the two-sided operators and their adjoints are <em>Two-Sided Operators on a Clifford Algebra</em>; the covariants and the endomorphism algebra are <em>Bilinear Operators on a Clifford Module with Hermitian Adjoint</em>; the slice is <em>The Unitary Slice and the Compact Real Form with Hermitian Adjoint</em>; the spinor module is <em>Spinors as Minimal Left Ideals with Inner Conjugation</em>; and the Schur and bicommutant statements for a simple algebra are the standard material of <em>Hermitian Clifford Modules with Hermitian Adjoint</em> and <em>Completely Positive Maps of a Clifford Algebra with Hermitian Adjoint</em>.</p>
+<h2 id="intertwiners">Intertwiners</h2>
+<h3 id="the-category-of-clifford-modules-and-the-adjoint-functor">The Category of Clifford Modules and the Adjoint Functor</h3>
+<p><strong>Definition.</strong> Let $S$ be a right/left Clifford module with action $\rho$ and $S'$ one with action $\rho'$. An <strong>intertwiner</strong> (a <strong>Clifford-linear map</strong>) is an $A$-linear map $T : S\to S'$ with</p>
+<p>$$
+T\,\rho(x) = \rho'(x)\,T \qquad \text{for all } x\in\mathrm{Cl}(V,q).
+$$</p>
+<p>The intertwiners are the morphisms of the category of Clifford modules; the identity is an intertwiner and a composite of intertwiners is an intertwiner, so the modules and intertwiners form an $A$-linear category.</p>
+<p><strong>Proposition (the adjoint of an intertwiner interwines the adjoint actions).</strong> Let the modules carry Hermitian forms with spinor adjoints $J, J'$ of <em>Spinor Adjoints and the Dirac Adjoint with Hermitian Adjoint</em>, and let $T : S\to S'$ be an intertwiner with adjoint $T^{*} : S'\to S$ for those forms. Then</p>
+<p>$$
+T^{*}\,\rho'(x)^{*} = \rho(x)^{*}\,T^{*} \qquad \text{for all } x,
+$$</p>
+<p>so $T^{*}$ intertwines the adjoint action of $\rho'$ with the adjoint action of $\rho$.</p>
+<p><strong>Proof.</strong> Adjoint the identity $T\rho(x) = \rho'(x)T$: $\rho(x)^{*}T^{*} = T^{*}\rho'(x)^{*}$, and use $\rho(x)^{*} = \rho(x^{\dagger})$ of <em>The Adjoint of the One-Sided Action with Hermitian Adjoint</em> to read it as an intertwining between the adjoint actions.</p>
+<p><strong>Corollary (the adjoint is a contravariant functor; unitarity).</strong> The assignment $T\mapsto T^{*}$ reverses the arrows and is compatible with the forms, so it is a contravariant endofunctor of the category of Hermitian Clifford modules with adjoints; its fixed points are the <strong>self-intertwiners</strong> $T^{*} = T$, and the invertible intertwiners with $T^{*}T = \mathrm{id}$ are the <strong>unitary</strong> ones, forming a groupoid. A unitary self-intertwiner is a unitary invariant operator, and the unitary slice of the algebra acts by unitary intertwiners on every module.</p>
+<h3 id="invariant-operators-and-the-commutant">Invariant Operators and the Commutant</h3>
+<p><strong>Definition.</strong> An <strong>invariant operator</strong> on a Clifford module $S$ is an endomorphism commuting with the action, $T\rho(x) = \rho(x)T$ for all $x$; the space of invariant operators is the <strong>commutant</strong> $\mathrm{End}_{\mathrm{Cl}}(S) = \mathrm{End}_A(S)^{\mathrm{Cl}}$.</p>
+<p><strong>Theorem (Schur).</strong> If $S$ is irreducible then the commutant $\mathrm{End}_{\mathrm{Cl}}(S)$ is a division algebra; over an algebraically closed field it is the scalars, and over $\mathbb{R}$ it is $\mathbb{R}$, $\mathbb{C}$ or $\mathbb{H}$. Every invariant operator on an irreducible module is invertible or zero, so the group of invertible invariant operators is the group of units of the division algebra. The proof and the full statement are those of <em>Hermitian Clifford Modules with Hermitian Adjoint</em>.</p>
+<p><strong>Theorem (the commutant of the regular module is the opposite algebra).</strong> On the regular module $S = \mathrm{Cl}(V,q)$ the invariant operators are exactly the <strong>right multiplications</strong> $R_b$, $b\in\mathrm{Cl}(V,q)$, and the map $b\mapsto R_b$ is an algebra anti-isomorphism of $\mathrm{Cl}(V,q)$ onto the commutant; hence the commutant has dimension $2^n$, equal to $\dim\mathrm{Cl}(V,q)$. This was checked for $\mathrm{Cl}_{2,0}(\mathbb{C})$, $\mathrm{Cl}_{0,3}(\mathbb{R})$ and $\mathrm{Cl}_{1,3}(\mathbb{R})$: the centraliser of the left regular representation has dimension $\dim\mathrm{Cl}$ in each case.</p>
+<p><strong>Proof.</strong> The left regular representation is the action of $\mathrm{Cl}$ on itself by left multiplication, and an operator commuting with it is the right multiplication by $b = T(1)$, since $T(x) = T(L_x1) = L_xT(1) = x\,T(1) = R_{T(1)}(x)$; the map is additive and reverses the order, $R_bR_c = R_{cb}$, and it is injective and of the same dimension as the algebra, hence onto the commutant. The computation of the centraliser confirms the dimension.</p>
+<p><strong>Corollary (the bicommutant).</strong> The operators invariant under all right multiplications are the left multiplications, so the bicommutant of the action is the whole Clifford algebra acting on the regular module: $\mathrm{End}_{\mathrm{Cl}}(S)' = \rho(\mathrm{Cl}(V,q))$. The regular module is <strong>balanced</strong>, and the double centraliser theorem holds in the Clifford setting; on an irreducible module the same computation gives the double commutant as the full endomorphism algebra when the base field is algebraically closed.</p>
+<h2 id="the-hermitian-structure-on-the-commutant">The Hermitian Structure on the Commutant</h2>
+<h3 id="the-adjoint-of-an-invariant-operator">The Adjoint of an Invariant Operator</h3>
+<p><strong>Proposition.</strong> The commutant is stable under the adjoint: if $T$ is invariant then $T^{*}$ is invariant. Consequently the commutant is a $*$-subalgebra of $\mathrm{End}_A(S)$, with symmetric part the <strong>self-adjoint invariant operators</strong> and skew part the <strong>skew-adjoint invariant operators</strong>, and the two are the eigenspaces of the involution $T\mapsto T^{*}$ on the commutant.</p>
+<p><strong>Proof.</strong> Adjoint the invariance $T\rho(x) = \rho(x)T$ to get $T^{*}\rho(x)^{*} = \rho(x)^{*}T^{*}$, that is $T^{*}\rho(x^{\dagger}) = \rho(x^{\dagger})T^{*}$ by $\rho(x)^{*} = \rho(x^{\dagger})$. Since $x\mapsto x^{\dagger}$ is a bijection of the algebra, every $y$ is $x^{\dagger}$ for some $x$, so $T^{*}\rho(y) = \rho(y)T^{*}$ for all $y$: the adjoint is invariant.</p>
+<p><strong>Corollary (the self-adjoint invariants on the regular module).</strong> On the regular module the invariant operator is $R_b$, and $R_b^{*} = R_{b^{\dagger}}$ by <em>Two-Sided Operators on a Clifford Algebra</em>; hence $R_b$ is self-adjoint iff $b^{\dagger} = b$ and skew-adjoint iff $b^{\dagger} = -b$. So the self-adjoint invariant operators on the regular module are the right multiplications by the <strong>symmetric elements</strong> $A^{+}$, and the skew-adjoint ones are the right multiplications by the <strong>skew elements</strong> $A^{-}$; the decomposition of the commutant into symmetric and skew parts is the decomposition $A = A^{+}\oplus A^{-}$ of the algebra, transported by $b\mapsto R_b$.</p>
+<h3 id="the-unitary-invariant-operators-and-the-slice">The Unitary Invariant Operators and the Slice</h3>
+<p><strong>Theorem (unitary invariants).</strong> An invariant operator $T$ is <strong>unitary</strong> (that is, $T^{*}T = TT^{*} = \mathrm{id}$) iff the invariant endomorphism it defines is an isometry of the module form. On the regular module $R_b$ is unitary iff $b$ lies in the unitary slice $U$ of <em>The Unitary Slice and the Compact Real Form with Hermitian Adjoint</em>:</p>
+<p>$$
+R_b^{*}R_b = R_{b^{\dagger}b} = \mathrm{id} \iff b^{\dagger}b = 1 \iff b\in U .
+$$</p>
+<p>So the group of unitary invariant operators on the regular module is a copy of the unitary slice $U$, and it acts on the module by the right regular representation; the map $b\mapsto R_b$ is a group anti-isomorphism of $U$ onto it.</p>
+<p><strong>Proof.</strong> $R_b^{*}R_b = R_{b^{\dagger}}R_b = R_{bb^{\dagger}}$, and also $= R_{b^{\dagger}b}$; each equals $\mathrm{id}$ iff the corresponding product in $A$ is $1$, which is the definition of the slice.</p>
+<p><strong>Corollary (the slice acts by invariants of the adjoint action).</strong> The operators $\rho(u)$ and $R_u$ commute with the action for $u\in U$, and the two-sided operators $\Phi_{u}(T) = \rho(u)T\rho(u)^{-1}$ of <em>Two-Sided Operators on a Clifford Algebra</em> map invariant operators to invariant operators and unitary invariants to unitary invariants; this is the action of the slice on the commutant, and its orbits are the conjugacy classes in the commutant.</p>
+<h2 id="worked-cases">Worked Cases</h2>
+<h3 id="the-irreducible-module">The Irreducible Module</h3>
+<p>Let $S$ be irreducible over $\mathbb{C}$. Then $\mathrm{End}_{\mathrm{Cl}}(S) = \mathbb{C}\cdot\mathrm{id}$ by Schur; the only invariant operators are the scalars, the only self-adjoint invariant operators are the real scalars, the only skew-adjoint ones are the purely imaginary scalars, and the only unitary invariant operator is the identity up to a phase. The commutant is one-dimensional and carries the adjoint as complex conjugation; the example is the extreme case in which "invariant" is as rigid as possible.</p>
+<h3 id="the-regular-module-and-the-bicommutant">The Regular Module and the Bicommutant</h3>
+<p>Let $S = \mathrm{Cl}_{0,3}(\mathbb{R})$, of dimension $8$. The commutant is the eight-dimensional space of right multiplications $\{R_b\}$, verified to be the centraliser of the left regular action. Its self-adjoint part is $\{R_b: b^{\dagger} = b\} = \mathrm{span}\{R_1, R_\omega\}$ with $\omega = e_1e_2e_3$ the volume element, two-dimensional, because the self-adjoint blades in $\mathrm{Cl}_{0,3}(\mathbb{R})$ are exactly the scalar $1$ and the volume element $\omega$ (degree $0$ and degree $3$); the skew-adjoint part is six-dimensional, spanned by the $R_{e_i}$ and the $R_{e_ie_j}$. The unitary invariants are the $R_b$ with $b$ in the unitary slice, which contains every unit vector because $v^{\dagger}v = -v^{2} = 1$ and every bivector exponential $R_{\exp(\theta e_ie_j)}$; they are the right-regular image of the slice, and the identification of the slice with the Pin group of the form is <em>The Unitary Slice and the Compact Real Form with Hermitian Adjoint</em>. The bicommutant is the whole left action, so the regular module is balanced: the operators commuting with the right multiplications are precisely the left multiplications, and the example realises the double centraliser theorem on a module where every object can be written down.</p>
+<h3 id="the-quaternion-commutant">The Quaternion Commutant</h3>
+<p>Let $\mathrm{Cl}_{0,2}(\mathbb{R}) = \mathbb{H}$ acting on itself by left multiplication. The commutant is the set of right multiplications, isomorphic to $\mathbb{H}^{\mathrm{op}}\cong\mathbb{H}$, a four-dimensional division algebra; its self-adjoint part is $\{R_b : b^{\dagger} = b\} = \mathbb{R}\oplus\mathbb{R}e_1e_2$ (the scalar and the bivector, the self-adjoint blades of $\mathrm{Cl}_{0,2}(\mathbb{R})$), and its skew part is $\mathbb{R}e_1\oplus\mathbb{R}e_2$. The unitary invariants are the $R_b$ with $b$ in the slice, which contains the unit vectors and the unit bivector $e_1e_2$; the identification of the slice is <em>The Unitary Slice and the Compact Real Form with Hermitian Adjoint</em>. The example shows that the commutant is a division algebra, as Schur's lemma requires for an irreducible module over $\mathbb{H}$, and that the self-adjoint and skew parts of a division algebra can be read off from the dagger.</p>
+<h2 id="summary">Summary</h2>
+<p>An <strong>intertwiner</strong> is a Clifford-linear map $T\rho(x) = \rho'(x)T$; the intertwiners form the morphisms of the category of Clifford modules, and the adjoint of an intertwiner is an intertwiner between the adjoint actions, so $T\mapsto T^{*}$ is a contravariant functor whose unitary part is a groupoid. An <strong>invariant operator</strong> is an endomorphism commuting with the action, that is, an element of the commutant $\mathrm{End}_{\mathrm{Cl}}(S)$; by <strong>Schur's lemma</strong> the commutant of an irreducible module is a division algebra, and on the <strong>regular module</strong> the commutant consists exactly of the right multiplications $R_b$ and is anti-isomorphic to the Clifford algebra, with dimension $2^n$ — checked for $\mathrm{Cl}_{2,0}(\mathbb{C})$, $\mathrm{Cl}_{0,3}(\mathbb{R})$ and $\mathrm{Cl}_{1,3}(\mathbb{R})$.</p>
+<p>The commutant is stable under the adjoint, so it is a $*$-subalgebra; its self-adjoint and skew-adjoint parts are the eigenspaces of $T\mapsto T^{*}$, and on the regular module they are the right multiplications by the symmetric and the skew elements, $A^{+}$ and $A^{-}$. The <strong>unitary invariants</strong> are the $R_b$ with $b$ in the unitary slice, so the slice $U$ is anti-isomorphic to the group of unitary invariant operators on the regular module; the slice conjugates the commutant to itself by conjugation. The <strong>bicommutant</strong> of the action on the regular module is the whole left action, so the regular module is balanced, and the double centraliser theorem holds: the operators invariant under all the invariant operators are exactly the Clifford algebra.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$T\rho(x) = \rho'(x)T$</td>
+<td>Intertwiner (Clifford-linear map)</td>
+</tr>
+<tr>
+<td>$T^{*}\rho'(x)^{*} = \rho(x)^{*}T^{*}$</td>
+<td>Adjoint of an intertwiner</td>
+</tr>
+<tr>
+<td>$\mathrm{End}_{\mathrm{Cl}}(S)$</td>
+<td>Commutant (invariant operators)</td>
+</tr>
+<tr>
+<td>Schur: irreducible $\Rightarrow$ commutant is a division algebra</td>
+<td>Schur's lemma</td>
+</tr>
+<tr>
+<td>$\{R_b\}$, $R_bR_c = R_{cb}$</td>
+<td>Commutant of the regular module</td>
+</tr>
+<tr>
+<td>$R_b^{*} = R_{b^{\dagger}}$</td>
+<td>Adjoint of a right multiplication</td>
+</tr>
+<tr>
+<td>$R_b$ unitary $\iff b\in U$</td>
+<td>Unitary invariants and the slice</td>
+</tr>
+<tr>
+<td>$\mathrm{End}_{\mathrm{Cl}}(S)' = \rho(\mathrm{Cl})$</td>
+<td>Bicommutant, balanced module</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Richard S. Pierce, <em>Associative Algebras</em>, Graduate Texts in Mathematics 88 (Springer, 1982), for the commutant and bicommutant of a module over a simple algebra, Schur's lemma and the double centraliser theorem.</li>
+<li>H. Blaine Lawson and Marie-Louise Michelsohn, <em>Spin Geometry</em> (Princeton University Press, 1989), for the category of Clifford modules, the intertwiners and the invariant forms.</li>
+<li>Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, <em>The Book of Involutions</em>, Colloquium Publications 44 (American Mathematical Society, 1998), for the commutant as a division algebra with involution, the symmetric and skew parts and the unitary group.</li>
+<li>Israel Nathan Herstein, <em>Noncommutative Rings</em>, Carus Mathematical Monographs 15 (Mathematical Association of America, 1968), for Schur's lemma and the structure of the commutant of an irreducible module.</li>
+<li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em>, London Mathematical Society Lecture Note Series 286 (Cambridge University Press, 2nd ed. 2001), for the right multiplications, the two-sided operators and their adjoints in low dimensions.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

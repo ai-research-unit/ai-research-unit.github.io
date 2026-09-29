@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hermitian Forms over an Involution Ring and the Unitary Witt Group with Hermitian Adjoint — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="hermitian-forms-over-an-involution-ring-and-the-unitary-witt-group-with-hermitian-adjoint"><strong>Hermitian Forms over an Involution Ring and the Unitary Witt Group with Hermitian Adjoint</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>Over a field of characteristic not two, a non-degenerate symmetric bilinear form is classified up to congruence by its dimension, its determinant and its Hasse invariant, and the forms are added by orthogonal sum to build the Witt group. When the field is replaced by a ring with an involution, the correct objects are <strong>Hermitian forms</strong> and the correct group is the <strong>unitary Witt group</strong>, whose classification is harder and whose invariants include the discriminant and, for the forms over a central simple algebra with involution, the <strong>Wall group</strong>. A Clifford algebra is a ring with three involutions, and the Hermitian forms it carries — the forms of <em>Hermitian Forms on a Clifford Algebra with Hermitian Adjoint</em> — therefore live in a unitary Witt group rather than in an orthogonal one.</p>
+<p>This article sets out the general theory in the amount the Clifford case needs, and then reads the three forms of the algebra in it. The two structural facts are that the three forms are Hermitian over the algebra with respect to their own anti-involutions, hence represent classes in the corresponding unitary Witt groups, and that their <strong>isometry groups</strong> — the unitary slice for the dagger and the Pin group for Clifford conjugation — preserve the Witt classes, so that the slice and Pin act on the Witt groups by isometries of the forms rather than by arbitrary automorphisms. The classification theory of the algebra-valued quadratic forms, the Clifford invariant and the eightfold way belong to <em>Quadratic Forms over Algebras and Norms</em>, <em>The Brauer–Wall Group and the Eightfold Way</em> and <em>The Witt Group and the Grothendieck–Witt Ring</em>; the classical orthogonal theory is <em>Bilinear Forms</em> and <em>Quadratic Forms and Polarisation</em>; and the extension and cancellation theorems are <em>Witt's Theorems</em>.</p>
+<h2 id="hermitian-forms-over-a-ring-with-involution">Hermitian Forms over a Ring with Involution</h2>
+<p><strong>Definition.</strong> Let $R$ be a ring with an anti-involution $c$ and let $\varepsilon \in R$ be central with $c(\varepsilon) = \varepsilon$ and $\varepsilon\bar\varepsilon = 1$, where $\bar\varepsilon$ is the image of $\varepsilon$ under $c$. A <strong>$\varepsilon$-Hermitian form</strong> on a right $R$-module $M$ is a biadditive map $h : M \times M \to R$ with</p>
+<p>$$
+h(xa, yb) = c(a)\,h(x,y)\,b, \qquad h(y,x) = \varepsilon\,c\bigl(h(x,y)\bigr),
+$$</p>
+<p>for all $x, y \in M$ and $a, b \in R$. The case $\varepsilon = 1$ is a <strong>Hermitian</strong> form and $\varepsilon = -1$ a <strong>skew-Hermitian</strong> or <strong>symplectic</strong> form.</p>
+<p><strong>Remark (the Clifford forms).</strong> For $R = \mathrm{Cl}(V,q)$ the definition is exactly the structure of <em>Hermitian Forms on a Clifford Algebra with Hermitian Adjoint</em>: with $c = {}^{\dagger}$ and $\varepsilon = 1$ one gets $h_{\dagger}(x,y) = x^{\dagger}y$; with $c = \bar\cdot$ one gets $h_{\bar\cdot}(x,y) = \bar xy$; with $c = {}^{r}$ one gets $h_r(x,y) = x^{r}y$. The three forms satisfy their own Hermitian conditions and are therefore $\varepsilon$-Hermitian forms over the algebra with the respective involution.</p>
+<p><strong>Definition.</strong> The <strong>radical</strong> of a Hermitian form is $M^{\perp} = \{x : h(x,y) = 0 \ \forall y\}$, and the form is <strong>non-degenerate</strong> if $M^{\perp} = 0$ and <strong>nonsingular</strong> if moreover the induced map $M \to M^{*}$ is an isomorphism; over a division ring, or over a field, the two conditions coincide. The <strong>discriminant</strong> is the class of $\det H$ in the appropriate quotient of the units, and the <strong>unitary group</strong> is $\mathrm{U}(h) = \{s : h(sx,sy) = h(x,y)\}$.</p>
+<p><strong>Theorem (Dieudonné, extension and cancellation).</strong> Let $h$ be a nonsingular Hermitian form over a division ring with involution, and let $U \subseteq M$ be a subspace with $M = U\oplus U^{\perp}$. Then every isometry $U \to M$ extends to an isometry of $M$; and if $M = U\oplus U^{\perp}$ for another decomposition with $U' \cong U$, then the two orthogonal complements are isometric (<strong>Witt cancellation</strong>). The statements hold with the usual exceptions in characteristic two.</p>
+<p><strong>Corollary (the Clifford groups).</strong> For $h_{\dagger}$ the unitary group is the unitary slice $U$ and for $h_{\bar\cdot}$ it is the Pin group, by the proposition of <em>The Unitary Slice and the Compact Real Form with Hermitian Adjoint</em> and the identification of <em>Hermitian Forms on a Clifford Algebra with Hermitian Adjoint</em>. So the Clifford and spin structures are exactly the unitary groups of the Hermitian forms of the algebra, and the extension and cancellation theorems apply to them.</p>
+<h2 id="the-witt-group">The Witt Group</h2>
+<h3 id="hyperbolic-and-metabolic-forms">Hyperbolic and Metabolic Forms</h3>
+<p><strong>Definition.</strong> The <strong>hyperbolic</strong> $\varepsilon$-Hermitian form on $M \oplus M^{*}$ is $h\bigl((x,\phi),(y,\psi)\bigr) = \phi(y) + \varepsilon\,c(\psi(x))$, and a form is <strong>metabolic</strong> if it has a submodule $N$ with $N = N^{\perp}$. The <strong>orthogonal sum</strong> $h_1\perp h_2$ is the form on $M_1\oplus M_2$ vanishing across the summands.</p>
+<p><strong>Definition.</strong> The <strong>even Witt group</strong> $W^{\varepsilon}(R,c)$ of a ring with involution is the Grothendieck group of the monoid of nonsingular $\varepsilon$-Hermitian forms under orthogonal sum, modulo the subgroup of metabolic forms; the <strong>Grothendieck–Witt group</strong> $GW^{\varepsilon}(R,c)$ is the corresponding group before the metabolic forms are divided out, so that $GW \to W$ is the quotient by the hyperbolic subgroup. The classical theory is in <em>The Witt Group and the Grothendieck–Witt Ring</em>.</p>
+<p><strong>Proposition.</strong> Each of the three Clifford forms has a class in the Witt group of its own involution,</p>
+<p>$$
+[h_{\dagger}] \in W^{1}\bigl(\mathrm{Cl}(V,q), {}^{\dagger}\bigr), \qquad
+[h_{\bar\cdot}] \in W^{1}\bigl(\mathrm{Cl}(V,q), \bar\cdot\bigr), \qquad
+[h_{r}] \in W^{1}\bigl(\mathrm{Cl}(V,q), {}^{r}\bigr),
+$$</p>
+<p>over a field of characteristic not two, since each is non-degenerate by <em>Hermitian Forms on a Clifford Algebra with Hermitian Adjoint</em> and nonsingularity follows from non-degeneracy over the algebra when the algebra is a product of matrix algebras over a field.</p>
+<p><strong>Remark (the $\varepsilon = -1$ companion).</strong> The $\varepsilon$-conjugates $h_{\dagger}(x,y) - h_{\dagger}(y,x)$ and the alternating forms on the algebra give classes in $W^{-1}$, the symplectic Witt group; the two Witt groups together are the data of the Grothendieck–Witt ring, and the reader is referred to <em>The Witt Group and the Grothendieck–Witt Ring</em> for the ring structure.</p>
+<h3 id="the-clifford-algebra-as-a-hermitian-form">The Clifford Algebra as a Hermitian Form</h3>
+<p><strong>Definition.</strong> The <strong>unit form</strong> of the algebra with respect to the anti-involution $c$ is the Hermitian form $h_c(x,y) = c(x)y$ on the algebra regarded as a right module over itself. It is the form whose matrix in an $R$-basis is the identity.</p>
+<p><strong>Proposition (invariance of the class).</strong> The isometry groups of the three forms act on the forms by isometries, hence fix their Witt classes:</p>
+<p>$$
+s \in U \ \Longrightarrow \ [h_{\dagger}(s\,\cdot\,, s\,\cdot\,)] = [h_{\dagger}], \qquad
+s \in \mathrm{Pin}(V,q) \ \Longrightarrow \ [h_{\bar\cdot}(s\,\cdot\,,s\,\cdot\,)] = [h_{\bar\cdot}] ,
+$$</p>
+<p>and similarly for $h_r$ with the group $\{s : s^{r}s = 1\}$. So the unit form is not merely non-degenerate: it is <strong>fixed as a Witt class</strong> by the whole unitary slice and the whole Pin group, and the orbits of the Clifford groups in the Witt group are trivial on the unit form.</p>
+<p><strong>Proof.</strong> Immediate from the isometry-group proposition of <em>Hermitian Forms on a Clifford Algebra with Hermitian Adjoint</em>: an isometry is by definition a substitution under which the form is unchanged, so its class is unchanged.</p>
+<p><strong>Remark (discriminant and signature).</strong> The discriminant of the unit form is the class of $1$, and the scalar reductions of <em>The Blade Form and the Hilbert Structure with Hermitian Adjoint</em> give the signature; over $\mathbb{R}$ the signature is the invariant of the form, positive definite exactly for the negative definite quadratic form in the dagger case, and the inertia is the one computed there.</p>
+<h2 id="the-unitary-witt-group-of-a-clifford-algebra">The Unitary Witt Group of a Clifford Algebra</h2>
+<p><strong>Definition.</strong> The <strong>unitary Witt group of a Clifford algebra</strong> with respect to an involution $\sigma$ of the base is the even Witt group $W^{\varepsilon}(\mathrm{Cl}(V,q), {}^{\dagger})$ of the algebra with the dagger; its elements are the Witt classes of nonsingular $\varepsilon$-Hermitian forms over $\mathrm{Cl}(V,q)$ with respect to the dagger.</p>
+<p><strong>Proposition.</strong> The map which sends a Hermitian form over the base to the form on the same module regarded over the Clifford algebra, $g \mapsto g\otimes_{\!A}\mathrm{Cl}(V,q)$ with the diagonal involution, induces a homomorphism of Witt groups</p>
+<p>$$
+W^{\varepsilon}(A,\sigma) \longrightarrow W^{\varepsilon}\bigl(\mathrm{Cl}(V,q), {}^{\dagger}\bigr),
+$$</p>
+<p>the <strong>Clifford invariant</strong> or <strong>unitary Clifford map</strong>, and its image is the subgroup of forms that are the scalar extension of a form over the base.</p>
+<p><strong>Proof.</strong> The scalar extension of a nonsingular Hermitian form under a flat base change is nonsingular Hermitian, and the orthogonal sum and the metabolic forms are preserved, so the assignment is a well-defined homomorphism on the Grothendieck groups; the image description is the definition of the image.</p>
+<p><strong>Remark (the two invariants of the theory).</strong> The homomorphism above is the entry point of the classification: the cokernel of the Clifford map measures the forms that are genuinely over the algebra and not over the base, and it is the Clifford algebra side of the invariants computed in <em>Quadratic Forms over Algebras and Norms</em>. The Clifford groups act on the cokernel as well, and the two-invariant description of the orthogonal case is replaced in the unitary case by the discriminant together with the <strong>Wall group</strong> of the algebra with involution, which is the home of the obstruction and is treated in <em>Quadratic Forms over Algebras and Norms</em> and <em>The Brauer–Wall Group and the Eightfold Way</em>. Over a local ring with involution the Wall group is computable and reduces to the classical invariants; over a general base it does not, and this is the difference between the orthogonal and the unitary classification.</p>
+<p><strong>Proposition (the two named classes).</strong> Over $\mathbb{R}$ with $\sigma = \mathrm{id}$ the unitary Witt group of $\mathrm{Cl}_{0,n}$ with the dagger is the Witt group of $\mathbb{R}$-valued Hermitian forms on the spinor module, of dimension $2^{m}$, and the class of $h_{\dagger}$ is the class of the positive definite form; it is the class of $1$ in $W(\mathbb{R}) \cong \mathbb{Z}$, so the Clifford Hermitian form is <strong>Witt-trivial</strong> in the definite case and its invariant is carried by the signature alone.</p>
+<p><strong>Proof.</strong> In the definite case the form $\mathrm{Sc}(x^{\dagger}y)$ has diagonal $+1$ on the blades, so it is isometric to the standard hyperbolic-free form of dimension $2^{m}$ over $\mathbb{R}$, whose Witt class is $1 \in \mathbb{Z}$; a positive definite form over $\mathbb{R}$ has signature equal to its dimension and represents the positive generator.</p>
+<h2 id="summary">Summary</h2>
+<p>Over a ring with an anti-involution $c$ the correct forms are the <strong>$\varepsilon$-Hermitian forms</strong> $h(xa,yb) = c(a)h(x,y)b$, $h(y,x) = \varepsilon c(h(x,y))$, and the correct groups are the even Witt group $W^{\varepsilon}(R,c)$ and the Grothendieck–Witt group $GW^{\varepsilon}(R,c)$, obtained from the monoid of nonsingular forms by dividing out the metabolic forms; the classical extension and cancellation theorems of Dieudonné hold over a division ring with the usual characteristic-two exceptions. The three forms of a Clifford algebra — $h_{\dagger}(x,y) = x^{\dagger}y$, $h_{\bar\cdot}(x,y) = \bar xy$ and $h_r(x,y) = x^{r}y$ — are Hermitian over the algebra with respect to their own involutions and are non-degenerate, hence represent classes in the three Witt groups; the <strong>unit form</strong> $h_c(x,y) = c(x)y$ has the identity matrix, discriminant $1$, and its Witt class is fixed by the isometry group, so the unitary slice and Pin act trivially on the class. The <strong>unitary Witt group of a Clifford algebra</strong> is $W^{\varepsilon}(\mathrm{Cl}(V,q),{}^{\dagger})$, and the scalar extension homomorphism $W^{\varepsilon}(A,\sigma) \to W^{\varepsilon}(\mathrm{Cl}(V,q),{}^{\dagger})$ is the Clifford invariant of the unitary theory; its cokernel contains the forms genuinely over the algebra, whose obstruction is measured by the Wall group rather than by the discriminant alone. Over $\mathbb{R}$ with the identity involution the form $h_{\dagger}$ is positive definite, so its class is the positive generator and the Clifford Hermitian form is Witt-trivial, the invariant being the signature.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\varepsilon$-Hermitian form</td>
+<td>$h(y,x)=\varepsilon c(h(x,y))$, $h(xa,yb)=c(a)h(x,y)b$</td>
+</tr>
+<tr>
+<td>$M^{\perp}$</td>
+<td>Radical, $M^{\perp}=\{x:h(x,y)=0\ \forall y\}$</td>
+</tr>
+<tr>
+<td>$\mathrm{U}(h)$</td>
+<td>Unitary group of $h$</td>
+</tr>
+<tr>
+<td>$h_1\perp h_2$</td>
+<td>Orthogonal sum</td>
+</tr>
+<tr>
+<td>$W^{\varepsilon}(R,c)$, $GW^{\varepsilon}(R,c)$</td>
+<td>Witt and Grothendieck–Witt groups</td>
+</tr>
+<tr>
+<td>$[h]$</td>
+<td>Witt class of a form</td>
+</tr>
+<tr>
+<td>$h_c(x,y) = c(x)y$</td>
+<td>Unit form of the algebra</td>
+</tr>
+<tr>
+<td>$W^{\varepsilon}(\mathrm{Cl}(V,q),{}^{\dagger})$</td>
+<td>Unitary Witt group of the Clifford algebra</td>
+</tr>
+<tr>
+<td>Clifford map</td>
+<td>Scalar extension $W^{\varepsilon}(A,\sigma) \to W^{\varepsilon}(\mathrm{Cl}(V,q),{}^{\dagger})$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Max-Albert Knus, <em>Quadratic and Hermitian Forms over Rings</em>, Grundlehren der mathematischen Wissenschaften 294 (Springer, 1991), for $\varepsilon$-Hermitian forms over rings with involution, the Witt and Grothendieck–Witt groups and the Wall group.</li>
+<li>Winfried Scharlau, <em>Quadratic and Hermitian Forms</em>, Grundlehren der mathematischen Wissenschaften 270 (Springer, 1985), for the classical Witt theory and the extension and cancellation theorems.</li>
+<li>Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, <em>The Book of Involutions</em>, Colloquium Publications 44 (American Mathematical Society, 1998), for algebras with involution, Hermitian forms over them and the unitary invariants.</li>
+<li>C. T. C. Wall, "On the Classification of Hermitian Forms", <em>Inventiones Mathematicae</em> 18 (1972), 119–141, for the Wall group of a ring with involution.</li>
+<li>T. Y. Lam, <em>Introduction to Quadratic Forms over Fields</em>, Graduate Studies in Mathematics 67 (American Mathematical Society, 2005), for the comparison between the bilinear, quadratic and Hermitian settings.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

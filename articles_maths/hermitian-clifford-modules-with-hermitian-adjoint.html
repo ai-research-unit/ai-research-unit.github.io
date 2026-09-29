@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hermitian Clifford Modules with Hermitian Adjoint — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="hermitian-clifford-modules-with-hermitian-adjoint"><strong>Hermitian Clifford Modules with Hermitian Adjoint</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A Clifford module is a module over a Clifford algebra, and the spinor module of <em>Spin Representations and Clifford Modules with Inner Conjugation</em> and <em>Spinors as Minimal Left Ideals with Inner Conjugation</em> is the archetype. When the algebra carries a dagger, a module can carry the corresponding Hermitian structure, and the two are tied together by a single axiom: the Clifford action must be <strong>self-adjoint</strong> with respect to the form, in the sense that</p>
+<p>$$
+(x\cdot s, t) = (s, x^{\dagger}\cdot t)
+$$</p>
+<p>for every $x$ in the algebra and every pair $s, t$ of elements of the module. This is the module-level form of the operator identity of <em>The Blade Form and the Hilbert Structure with Hermitian Adjoint</em>, and it is the condition that makes the Dirac operator formally self-adjoint, the condition that makes the Clifford action a representation by skew-adjoint operators on the vectors, and the condition under which the unitary slice acts by unitaries.</p>
+<p>This article treats the definition, the fundamental example of the algebra as a module over itself, the adjoint condition and the unitarity of the slice, the uniqueness of the invariant form on an irreducible module, and the criterion for positivity. The last point carries a correction that is easy to get wrong and is stated with an example: the naive restriction of the scalar form $\mathrm{Sc}(s^{\dagger}t)$ to a minimal left ideal is <strong>invariant</strong> but is <strong>totally isotropic</strong> in the split signatures, so the Hermitian structure on a general spinor module requires a spinor adjoint and not merely the restriction of the scalar form.</p>
+<p>The algebra and its dagger are <em>Involutive Clifford Algebras</em>; the operator on the algebra and the correction of its parameter rule are <em>The Hermitian Sandwich on a Clifford Algebra with Hermitian Adjoint</em>; the forms on the algebra and their non-degeneracy are <em>Hermitian Forms on a Clifford Algebra with Hermitian Adjoint</em>; the scalar forms and the adjoint of multiplication are <em>The Blade Form and the Hilbert Structure with Hermitian Adjoint</em>; positivity is <em>Positivity and the Hermitian Cone of a Clifford Algebra with Hermitian Adjoint</em>; the slice is <em>The Unitary Slice and the Compact Real Form with Hermitian Adjoint</em>; the spinor module and its minimal-ideal description are <em>Spin Representations and Clifford Modules with Inner Conjugation</em> and <em>Spinors as Minimal Left Ideals with Inner Conjugation</em>; the operators built from the module are <em>Dirac Differential Operators</em>, <em>The Adjoint of the One-Sided Action with Hermitian Adjoint</em> and <em>Spinor Adjoints and the Dirac Adjoint with Hermitian Adjoint</em>; and the biquaternion model is <em>Modules over the Biquaternion Algebra</em>.</p>
+<h2 id="hermitian-clifford-modules">Hermitian Clifford Modules</h2>
+<h3 id="the-definition">The Definition</h3>
+<p><strong>Definition.</strong> Let $(S, +, \cdot)$ be a left module over $\mathrm{Cl}(V,q)$, with scalar field $A$ carrying an involution $\sigma$. A <strong>Hermitian form</strong> on $S$ is a map $(\cdot,\cdot) : S\times S \to A$ with</p>
+<p>$$
+(s, ta) = (s,t)a, \qquad (sa, t) = \sigma(a)(s,t) \quad \text{when } S \text{ is a right module}, \qquad (t,s) = \sigma\bigl((s,t)\bigr),
+$$</p>
+<p>and which is $A$-linear in the second argument and $\sigma$-semilinear in the first, in the convention of <em>Hermitian Forms on a Clifford Algebra with Hermitian Adjoint</em>. A <strong>Hermitian Clifford module</strong> is a Clifford module $S$ with a Hermitian form such that</p>
+<p>$$
+(x\cdot s, t) = (s, x^{\dagger}\cdot t) \qquad \text{for all } x \in \mathrm{Cl}(V,q), \ s, t \in S .
+$$</p>
+<p><strong>Proposition (equivalence with skew-adjointness of the vectors).</strong> The condition above is equivalent to the statement that every vector acts by a skew-adjoint operator:</p>
+<p>$$
+(v\cdot s, t) = -(s, v\cdot t) \qquad \text{for all } v \in V,
+$$</p>
+<p>and dually $(s, v\cdot t) = -(v\cdot s, t)$.</p>
+<p><strong>Proof.</strong> The dagger negates the vectors, $v^{\dagger} = -v$, so the general condition reads $(v\cdot s,t) = (s,-v\cdot t)$, which is the displayed identity; conversely the identity for all $v$ gives the general condition on the subalgebra generated by $V$, which is the whole algebra.</p>
+<p><strong>Corollary (the representation is a $*$-representation).</strong> The action map $\rho : \mathrm{Cl}(V,q) \to \mathrm{End}_A(S)$ satisfies $\rho(x^{\dagger}) = \rho(x)^{*}$, where ${}^{*}$ is the adjoint in $\mathrm{End}_A(S)$ with respect to the form. So a Hermitian Clifford module is exactly a <strong>$*$-representation</strong> of the daggered algebra on a Hermitian space, and the structure theory of $*$-representations applies.</p>
+<p><strong>Remark (where the dagger is used).</strong> The involution on the <em>base</em> enters only through the semilinearity of the form, and the dagger enters through the adjointness condition. Over a field with $\sigma = \mathrm{id}$ the form is bilinear and the conditions reduce to the symmetric case; the whole article is written so that setting $\sigma = \mathrm{id}$ recovers the orthogonal statement.</p>
+<h3 id="the-regular-module-the-algebra-over-itself">The Regular Module: the Algebra over Itself</h3>
+<p><strong>Theorem.</strong> The algebra $\mathrm{Cl}(V,q)$ with itself as left module and the form</p>
+<p>$$
+(x,y) = \mathrm{Sc}\bigl(x^{\dagger}y\bigr)
+$$</p>
+<p>is a Hermitian Clifford module. The form is $\sigma$-sesquilinear and Hermitian, it is non-degenerate, and it is positive definite exactly when the dagger is a positive involution, that is when the quadratic form is negative definite.</p>
+<p><strong>Proof.</strong> The form is Hermitian by the proposition of <em>Hermitian Forms on a Clifford Algebra with Hermitian Adjoint</em>. For the adjointness, left multiplication by $z$ gives</p>
+<p>$$
+(z\cdot x, y) = \mathrm{Sc}\bigl((zx)^{\dagger}y\bigr) = \mathrm{Sc}\bigl(x^{\dagger}z^{\dagger}y\bigr) = \bigl(x, z^{\dagger}\cdot y\bigr),
+$$</p>
+<p>using that the dagger is an anti-involution and the cyclicity of the scalar part. Non-degeneracy and the positivity criterion are those of <em>The Blade Form and the Hilbert Structure with Hermitian Adjoint</em>.</p>
+<p><strong>Corollary (the vectors are skew-adjoint in the regular module).</strong> For $v \in V$, $(v\cdot x, y) = -(x, v\cdot y)$; the identity is the reason the vector action is skew-adjoint and the reason the Clifford algebra of a definite form is the standard example of a $*$-algebra acting on a Hilbert space.</p>
+<p><strong>Remark (the regular module is not irreducible).</strong> For a simple algebra $\mathrm{Cl}(V,q)\cong M_k(D)$ the regular module is the sum of $k$ copies of the simple module, so it is Hermitian Clifford module of "multiplicity $k$"; the irreducible cases are the minimal left ideals, treated below.</p>
+<h2 id="the-adjoint-condition-and-the-unitary-slice">The Adjoint Condition and the Unitary Slice</h2>
+<p><strong>Theorem (the slice acts unitarily).</strong> If $S$ is a Hermitian Clifford module and $u$ lies in the unitary slice $U$, then left multiplication by $u$ is a unitary operator on $S$:</p>
+<p>$$
+(u\cdot s, u\cdot t) = (s,t) \qquad \text{for all } s, t \in S .
+$$</p>
+<p><strong>Proof.</strong> $(u\cdot s, u\cdot t) = (s, u^{\dagger}\cdot(u\cdot t)) = (s, (u^{\dagger}u)\cdot t) = (s,t)$ for $u^{\dagger}u = 1$.</p>
+<p><strong>Corollary (the module-level scope of the slice).</strong> The unitary slice acts on every Hermitian Clifford module by unitaries, and the map $u\mapsto \rho(u)$ is a unitary representation of $U$ on $S$; restricted to the spin group it is the spin representation of <em>Spin Representations and Clifford Modules with Inner Conjugation</em>, now with a Hermitian structure that the spin group preserves. This is the module-level form of the statement that the slice acts by operators and not by isometries of the quadratic space.</p>
+<p><strong>Proposition (the adjoint of the one-sided action).</strong> The adjoint of left multiplication by $x$ with respect to a module form is left multiplication by $x^{\dagger}$,</p>
+<p>$$
+L_x^{*} = L_{x^{\dagger}} ,
+$$</p>
+<p>and on the regular module this is the statement $\langle L_xy,z\rangle = \langle y, L_{x^{\dagger}}z\rangle$ of <em>The Blade Form and the Hilbert Structure with Hermitian Adjoint</em>. The general theory of one-sided actions and their adjoints, the Dirac operators built from them, and the spinor adjoint are <em>The Adjoint of the One-Sided Action with Hermitian Adjoint</em>, <em>Dirac Differential Operators</em> and <em>Spinor Adjoints and the Dirac Adjoint with Hermitian Adjoint</em>.</p>
+<h2 id="existence-uniqueness-and-positivity">Existence, Uniqueness and Positivity</h2>
+<h3 id="uniqueness-on-an-irreducible-module">Uniqueness on an Irreducible Module</h3>
+<p><strong>Theorem (Schur uniqueness).</strong> Let $S$ be an irreducible Clifford module over an algebra $\mathrm{Cl}(V,q)$ that is simple, and suppose $S$ carries a Hermitian form making it a Hermitian Clifford module. Then the space of Hermitian forms on $S$ satisfying the adjointness condition is one-dimensional over the fixed field $A^{\sigma}$, so the form is unique up to a scalar in $A^{\sigma}$; in particular its positivity is a question of the sign of that scalar and not of the choice of form.</p>
+<p><strong>Proof.</strong> Let $(\cdot,\cdot)_1$ and $(\cdot,\cdot)_2$ be two such forms. For each $s$ the map $t\mapsto (s,t)_1$ is an $A$-linear functional on $S$, which is $A$-linearly represented by a uniquely determined element $\phi(s)$ with $(s,t)_1 = (\phi(s), t)_2$. The adjointness of both forms makes $\phi$ commute with the action of the algebra, so $\phi \in \mathrm{End}_{\mathrm{Cl}}(S)$; by Schur's lemma and the irreducibility, $\mathrm{End}_{\mathrm{Cl}}(S)$ is a division algebra, and over a simple algebra of the form $M_k(D)$ it is $D$ itself, so $\phi$ is multiplication by an element of the division algebra; requiring both forms Hermitian restricts $\phi$ to an element of $A^{\sigma}$, giving the one-dimensional space.</p>
+<p><strong>Remark.</strong> The theorem is the module-level analogue of the proposition that the diagonal and the form on the algebra are fixed up to a scalar, and it is the reason a "spinor inner product" is well defined without further choices once the module is irreducible. Its failure for the regular module is exactly the multiplicity $k$ of the previous remark.</p>
+<h3 id="positivity">Positivity</h3>
+<p><strong>Theorem (existence of a positive form).</strong> Let the base be $\mathbb{R}$ with $\sigma = \mathrm{id}$ and let the quadratic form be negative definite, so the dagger is positive. Then the Clifford algebra is a full matrix algebra over $\mathbb{R}$, $\mathbb{C}$ or $\mathbb{H}$, its simple module is a Hermitian vector space over that division algebra, and the spinor module carries a <strong>positive definite</strong> invariant Hermitian form, unique up to a positive scalar.</p>
+<p><strong>Proof.</strong> In the definite case the regular module form $\mathrm{Sc}(x^{\dagger}y)$ is positive definite by <em>The Blade Form and the Hilbert Structure with Hermitian Adjoint</em>; restricting to any submodule gives a positive semidefinite form, and the simple module, being a subquotient, receives a positive definite form on its nonzero elements; the uniqueness is the Schur theorem above.</p>
+<p><strong>Remark (the complexified case).</strong> Over $\mathbb{C}$ with coefficient conjugation, $\mathrm{Cl}(V,q)\otimes\mathbb{C}\cong M_{2^m}(\mathbb{C})$ and the simple module is $\mathbb{C}^{2^m}$ with the standard positive definite Hermitian form; the Clifford generators act by the spinor matrices, and each is skew-adjoint under the convention in which the generators of the algebra are skew-adjoint. This is the standard Hermitian spinor module of <em>Dirac Differential Operators</em>.</p>
+<h3 id="the-isotropic-ideal-a-warning">The Isotropic Ideal: a Warning</h3>
+<p><strong>Proposition (the naive restriction is invariant but may be isotropic).</strong> Let $\pi = \tfrac12(1+e)$ be the idempotent of a vector $e$ with $q(e) = 1$ and let $I = \mathrm{Cl}(V,q)\pi$ be the left ideal it generates; then the restriction of the form $\mathrm{Sc}(s^{\dagger}t)$ to $I$ satisfies the adjointness condition, so it is an invariant form, but it is <strong>totally isotropic</strong> on $I$ whenever $\pi^{\dagger}\pi = 0$.</p>
+<p><strong>Proof.</strong> Invariance is the computation of the regular module: for $s, t \in I$ and any $x$, $\mathrm{Sc}((xs)^{\dagger}t) = \mathrm{Sc}(s^{\dagger}x^{\dagger}t)$, so the restriction is invariant. For the isotropy, the dagger negates the vectors, so $e^{\dagger} = -e$ and $\pi^{\dagger} = \tfrac12(1 - e) = \pi'$, the complementary idempotent; then $\pi^{\dagger}\pi = \pi'\pi = 0$ by the orthogonality of the two idempotents in <em>Spinors as Minimal Left Ideals with Inner Conjugation</em>. Since the scalar form is built from products of the form $s^{\dagger}t$ with $s, t \in I = \mathrm{Cl}\pi$, each $s^{\dagger}t$ has a factor $\pi$ on the right and a factor $\pi^{\dagger}$ on the left of the scalar, so all its scalar parts vanish.</p>
+<p><strong>Example (computed, $\mathrm{Cl}_{1,1}(\mathbb{R})$).</strong> In the split algebra with $e_1^{2} = 1$, $e_2^{2} = -1$, let $\pi = \tfrac12(1+e_1)$; the ideal $\mathrm{Cl}\pi$ is two-dimensional with basis $\pi$ and $\tfrac12(e_2 - e_1e_2)$, and the Gram matrix of $\mathrm{Sc}(s^{\dagger}t)$ on it is the zero matrix. So the restriction is invariant and identically zero, and it is <strong>not</strong> the Hermitian structure of the module, even though the module is the correct spinor module.</p>
+<p><strong>Corollary (the spinor adjoint is needed).</strong> The Hermitian structure on a spinor module is not obtained by restricting the scalar form to a minimal left ideal; it is obtained by choosing a <strong>self-adjoint idempotent</strong> or, equivalently, a spinor adjoint, producing a form whose Gram matrix is non-degenerate. In the convention in which the dagger negates the vectors, a self-adjoint idempotent of the form $\tfrac12(1+e)$ requires $e^{\dagger} = e$, hence $q(e) = -1$ after the sign, which is the definite sign where no idempotent exists; the resolution is to pass to a module over $M_k(D)$ with the adjoint involution, where the idempotents are the matrix units and their adjoints are themselves. The construction and the resulting Dirac adjoint are carried out in <em>Spinor Adjoints and the Dirac Adjoint with Hermitian Adjoint</em>.</p>
+<h2 id="summary">Summary</h2>
+<p>A <strong>Hermitian Clifford module</strong> is a Clifford module $S$ with a Hermitian form satisfying the single adjointness axiom $(x\cdot s,t) = (s,x^{\dagger}\cdot t)$, equivalently $(v\cdot s,t) = -(s,v\cdot t)$ for every vector; so the action is a $*$-representation of the daggered algebra and each vector acts by a skew-adjoint operator. The <strong>regular module</strong> $\mathrm{Cl}(V,q)$ over itself with the form $\mathrm{Sc}(x^{\dagger}y)$ is the fundamental example: the axiom holds by cyclicity of the scalar part, the form is non-degenerate, and it is positive definite exactly when the dagger is positive, that is for a negative definite quadratic form. The <strong>unitary slice</strong> acts on every Hermitian module by unitaries, $u\mapsto\rho(u)$ being a unitary representation extending the spin representation, and the adjoint of left multiplication is $L_x^{*} = L_{x^{\dagger}}$.</p>
+<p>On an <strong>irreducible</strong> module over a simple algebra the invariant Hermitian form is <strong>unique up to a scalar</strong> by Schur's lemma, so a spinor inner product is well defined without further choices; the form is positive definite, and the module is the standard Hermitian spinor module, in the definite case. For the <strong>regular module</strong> the uniqueness fails, the space of invariant forms having the dimension of the multiplicity. Finally, the restriction of the scalar form $\mathrm{Sc}(s^{\dagger}t)$ to a minimal left ideal $\mathrm{Cl}\pi$ is invariant but is <strong>totally isotropic</strong> when $\pi^{\dagger}\pi = 0$, as computed in $\mathrm{Cl}_{1,1}(\mathbb{R})$ where the Gram matrix on the ideal is zero; the Hermitian structure of a spinor module therefore requires a spinor adjoint and a self-adjoint idempotent, and it is constructed in <em>Spinor Adjoints and the Dirac Adjoint with Hermitian Adjoint</em>.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$(S,\cdot)$</td>
+<td>Left Clifford module</td>
+</tr>
+<tr>
+<td>$(\cdot,\cdot)$</td>
+<td>Hermitian form, $A$-linear in the second argument</td>
+</tr>
+<tr>
+<td>$(x\cdot s,t) = (s,x^{\dagger}\cdot t)$</td>
+<td>Adjointness axiom, equivalently $L_x^{*}=L_{x^{\dagger}}$</td>
+</tr>
+<tr>
+<td>$(v\cdot s,t) = -(s,v\cdot t)$</td>
+<td>Vectors act by skew-adjoint operators</td>
+</tr>
+<tr>
+<td>$\rho(x^{\dagger}) = \rho(x)^{*}$</td>
+<td>Action is a $*$-representation</td>
+</tr>
+<tr>
+<td>$(x,y) = \mathrm{Sc}(x^{\dagger}y)$</td>
+<td>Form of the regular module</td>
+</tr>
+<tr>
+<td>$U$</td>
+<td>Unitary slice, acting by unitaries on $S$</td>
+</tr>
+<tr>
+<td>$\pi = \tfrac12(1+e)$, $I = \mathrm{Cl}\pi$</td>
+<td>Idempotent and minimal left ideal; $\mathrm{Sc}(s^{\dagger}t)$ may be isotropic on $I$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>H. Blaine Lawson and Marie-Louise Michelsohn, <em>Spin Geometry</em> (Princeton University Press, 1989), for Clifford modules, the Hermitian structure on the spinor bundle and the self-adjointness of the Dirac operator.</li>
+<li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em>, London Mathematical Society Lecture Note Series 286 (Cambridge University Press, 2nd ed. 2001), for modules over Clifford algebras, the minimal left ideals and the spinor inner products.</li>
+<li>Nicole Berline, Ezra Getzler and Michèle Vergne, <em>Heat Kernels and Dirac Operators</em>, Grundlehren der mathematischen Wissenschaften 298 (Springer, 1992), for the Hermitian Clifford module as the data of a Dirac operator.</li>
+<li>Richard V. Kadison and John R. Ringrose, <em>Fundamentals of the Theory of Operator Algebras I</em>, Graduate Studies in Mathematics 15 (American Mathematical Society, 1997), for $*$-representations, adjoints and the structure of simple algebras with involution.</li>
+<li>Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, <em>The Book of Involutions</em>, Colloquium Publications 44 (American Mathematical Society, 1998), for algebras with involution, their modules and the Hermitian forms on them.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

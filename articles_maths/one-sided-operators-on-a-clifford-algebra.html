@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>One-Sided Operators on a Clifford Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="one-sided-operators-on-a-clifford-algebra"><strong>One-Sided Operators on a Clifford Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>Every two-sided operator of <em>Two-Sided Operators on a Clifford Algebra</em> is a product of two factors, one multiplying on the left and one on the right. This article treats the factors themselves, in the general theory in which no involution of the base is assumed. A <strong>one-sided operator</strong> is a left multiplication $y\mapsto \theta(x)\,y$, attached to an automorphism $\theta$, or a right multiplication $y\mapsto y\,c(x)$, attached to an anti-automorphism $c$. The one-sided operators are the elementary operators out of which the two-sided family is built, they are the operators that carry the regular representations of the algebra and of its opposite, and their images are the ideals of the algebra, so they are where the module theory of the Clifford algebra begins.</p>
+<p>Two facts organise the theory. The first is that the left family and the twisted right family are separately <strong>multiplicative in the same order</strong>, while the plain right multiplication is <strong>anti-multiplicative</strong>: the reversal inside an anti-automorphism cancels the reversal of the order of composition, but the identity that gives the plain right multiplication does not, and $x\mapsto R_x$ is a representation of the opposite algebra. The second is that the left and the right multiplications are <strong>mutual commutants</strong>, $\{L_a\}'=\{R_b\}$ and $\{R_b\}'=\{L_a\}$, which is the double centraliser theorem read on the regular bimodule. What the two families generate together is the image of the enveloping algebra $A\otimes_F A^{\mathrm{op}}$ in $\mathrm{End}_F(A)$; it is all of $\mathrm{End}_F(A)$ exactly when $A=\mathrm{Cl}(V,q)$ is central simple over $F$, and it is a proper subalgebra otherwise.</p>
+<p>The last structural point is the reason two-sided operators exist at all. A left multiplication by a non-scalar never carries the subspace $V$ of vectors into itself, and the only one-sided operators that preserve $V$ are the scalars. Preservation of the quadratic space, which is what turns an operator into a geometric transformation, therefore requires the pairing of a left factor with a right factor, and it is the two-sided operators, not the one-sided ones, that act on $V$ by isometries.</p>
+<p>The algebra, the parity grading and the intrinsic anti-involutions are <em>Clifford Algebras</em> and <em>Clifford Algebras in Finite Dimensions</em>; the two-sided family and its composition law are <em>Two-Sided Operators on a Clifford Algebra</em>; the signed inner conjugation, the Clifford group and its action on $V$ are <em>The Clifford, Pin and Spin Groups with Signed Inner Conjugation</em>; the primitive idempotents, the minimal left ideals and the spinor module are <em>Spinors as Minimal Left Ideals with Inner Conjugation</em>; the involution of the base, the dagger and the Hermitian sandwich are <em>Involutive Clifford Algebras</em>; and the dagger, the Hermitian adjoint and the module-level action are the Hermitian group, <em>One-Sided Operators on a Clifford Algebra with Hermitian Adjoint</em>, <em>The Adjoint of the One-Sided Action with Hermitian Adjoint</em> and <em>Hermitian Clifford Modules with Hermitian Adjoint</em>. The base is a field $F$ of characteristic not $2$, and $q$ is a non-degenerate quadratic form on the finite-dimensional space $V$ with polar form $B$.</p>
+<h2 id="the-two-one-sided-families">The Two One-Sided Families</h2>
+<h3 id="definitions">Definitions</h3>
+<p><strong>Definition.</strong> Let $\theta$ be an automorphism of $\mathrm{Cl}(V,q)$ and let $c$ be an anti-automorphism, so that $c(xz)=c(z)c(x)$ and $c(1)=1$. For $x\in\mathrm{Cl}(V,q)$ the <strong>left one-sided operator</strong> and the <strong>right one-sided operator</strong> attached to $x$ are the $F$-linear maps</p>
+<p>$$
+\Lambda^{\theta}_x(y)=\theta(x)\,y, \qquad \qquad \mathrm P^{c}_x(y)=y\,c(x).
+$$</p>
+<p>With $\theta=\mathrm{id}$ this gives the left multiplication $L_x=\Lambda^{\mathrm{id}}_x$, and with $\theta=\alpha$ the signed left multiplication $L_{\alpha(x)}=\Lambda^{\alpha}_x$. With $c=r$ it gives the reversion-twisted right multiplication $R_{x^{r}}=\mathrm P^{r}_x$, and with $c=\bar\cdot$ the conjugation-twisted one $R_{\bar x}=\mathrm P^{\bar\cdot}_x$. The plain right multiplication $R_x$ is $\mathrm P^{\mathrm{id}}_x$, and the identity is an automorphism and not an anti-automorphism, which is the source of the exception in the composition law below. The inverse variants are defined on the units.</p>
+<h3 id="the-composition-laws">The Composition Laws</h3>
+<p><strong>Proposition.</strong> Let $\theta$ be an automorphism and let $c$ be an anti-automorphism. Then</p>
+<p>$$
+\Lambda^{\theta}_{xz}=\Lambda^{\theta}_x\circ\Lambda^{\theta}_z, \qquad \qquad \mathrm P^{c}_{xz}=\mathrm P^{c}_x\circ\mathrm P^{c}_z .
+$$</p>
+<p><strong>Proof.</strong> For the left family, $\Lambda^{\theta}_x(\Lambda^{\theta}_z(y))=\theta(x)\theta(z)\,y=\theta(xz)\,y$. For the right family, $\mathrm P^{c}_x(\mathrm P^{c}_z(y))=\mathrm P^{c}_x\bigl(y\,c(z)\bigr)=y\,c(z)c(x)=y\,c(xz)$, where the reversal in $c$ is compensated by the reversal of the order of composition.</p>
+<p><strong>Proposition (the plain right multiplication is anti-multiplicative).</strong> The identity $R_{xz}=R_x\circ R_z$ of the previous proposition <strong>fails</strong> for the identity automorphism; instead</p>
+<p>$$
+R_{xz}=R_z\circ R_x ,
+$$</p>
+<p>so $x\mapsto R_x$ is a homomorphism from the <strong>opposite algebra</strong> $\mathrm{Cl}(V,q)^{\mathrm{op}}$ and an anti-homomorphism from $\mathrm{Cl}(V,q)$.</p>
+<p><strong>Proof.</strong> $R_x(R_z(y))=(y z)x=y(z x)=R_{zx}(y)$.</p>
+<p><strong>Example.</strong> In $\mathrm{Cl}_{0,3}(\mathbb{R})$ at the unit, $L_{e_1}L_{e_2}(1)=e_1e_2=L_{e_1e_2}(1)$, while $R_{e_1}R_{e_2}(1)=e_2e_1=-e_1e_2$, whereas $R_{e_1e_2}(1)=e_1e_2$; so $R_{e_1}R_{e_2}=-R_{e_1e_2}$ and the plain right family indeed composes in the reverse order.</p>
+<p><strong>Remark.</strong> The asymmetry is forced and is not a defect of the notation. The left family multiplies by the element on the left, so its composition follows the order of the elements; the right family multiplies on the right, so its composition reverses that order unless an anti-automorphism supplies a second reversal. The twisted family $\mathrm P^{c}$ recovers the same order precisely because $c$ reverses for it.</p>
+<h3 id="commutation-and-the-return-to-the-two-sided-operator">Commutation and the Return to the Two-Sided Operator</h3>
+<p><strong>Proposition.</strong> The left and the right families commute,</p>
+<p>$$
+\Lambda^{\theta}_x\circ\mathrm P^{c}_z=\mathrm P^{c}_z\circ\Lambda^{\theta}_x ,
+$$</p>
+<p>and the two-sided operator of <em>Two-Sided Operators on a Clifford Algebra</em> is their product,</p>
+<p>$$
+\Phi^{\theta,c}_x=\Lambda^{\theta}_x\circ\mathrm P^{c}_x=L_{\theta(x)}\,R_{c(x)} .
+$$</p>
+<p><strong>Proof.</strong> $\bigl(\theta(x)y\bigr)c(z)=\theta(x)\bigl(y\,c(z)\bigr)$ by associativity, and the two-sided operator is the product by its definition.</p>
+<p><strong>Corollary (the composition law, again).</strong> The law $\Phi^{\theta,c}_{xz}=\Phi^{\theta,c}_x\circ\Phi^{\theta,c}_z$ follows from the two one-sided laws: $\Phi_x\Phi_z=\Lambda^{\theta}_x\mathrm P^{c}_x\Lambda^{\theta}_z\mathrm P^{c}_z=\Lambda^{\theta}_{xz}\mathrm P^{c}_{xz}=\Phi_{xz}$. So the multiplicativity of the two-sided family is inherited from the multiplicativity of its factors, and the commutation of the two factors is what makes the product unambiguous.</p>
+<h3 id="the-value-at-the-unit-and-the-parity">The Value at the Unit and the Parity</h3>
+<p><strong>Proposition.</strong> For every $x$ one has $\Lambda^{\theta}_x(1)=\theta(x)$ and $\mathrm P^{c}_x(1)=c(x)$; in particular $L_x(1)=R_x(1)=x$. The members are therefore told apart by their value at the unit.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>operator</th>
+<th>value at $1$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$L_x=\Lambda^{\mathrm{id}}_x$</td>
+<td>$x$</td>
+</tr>
+<tr>
+<td>$L_{\alpha(x)}=\Lambda^{\alpha}_x$</td>
+<td>$\alpha(x)$, that is $\pm x$ by parity</td>
+</tr>
+<tr>
+<td>$R_x$</td>
+<td>$x$</td>
+</tr>
+<tr>
+<td>$R_{x^{r}}=\mathrm P^{r}_x$</td>
+<td>$x^{r}$</td>
+</tr>
+<tr>
+<td>$R_{\bar x}=\mathrm P^{\bar\cdot}_x$</td>
+<td>$\bar x$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Proposition (the parity).</strong> The left multiplication $L_x$, and likewise $R_x$, preserves the parity grading when $x$ is even and interchanges its two components when $x$ is odd; in general $\Lambda^{\theta}_x(\mathrm{Cl}^{i})\subseteq\mathrm{Cl}^{i+|\theta(x)|}$, the exponent read modulo two.</p>
+<p><strong>Proof.</strong> A product of two basis blades is again a basis blade, of degree the sum of the two degrees modulo two; a general element is a sum of homogeneous components.</p>
+<p><strong>Remark.</strong> The two-sided operators of <em>Two-Sided Operators on a Clifford Algebra</em> preserve the parity for every $x$, because each of them is a product of two factors of the same parity. So the parity-preserving property is a property of the pair, not of the individual one-sided operator, and an odd left multiplication is a parity-swapping operator that becomes parity-preserving once paired with an odd right factor.</p>
+<h2 id="the-anti-involution-variants-and-the-involutions">The Anti-Involution Variants and the Involutions</h2>
+<p>The graded and twisted one-sided operators are conjugates of the plain multiplications by the intrinsic anti-involutions of the algebra. This is the general reason a two-sided operator, which pairs a left factor with a right factor, is an automorphism of the algebra when the two factors are matched.</p>
+<p><strong>Proposition.</strong> Let $\alpha$ be the grade involution, $r$ reversion and $\bar x=\alpha(x^{r})$ Clifford conjugation. Then</p>
+<p>$$
+L_{\alpha(x)}=\alpha\circ L_x\circ\alpha, \qquad R_{x^{r}}=r\circ L_x\circ r, \qquad R_{\bar x}=\bar\cdot\circ L_x\circ\bar\cdot, \qquad L_{x^{r}}=r\circ R_x\circ r .
+$$</p>
+<p><strong>Proof.</strong> Each identity is a direct computation. For the first, $\alpha\bigl(L_x(\alpha(y))\bigr)=\alpha\bigl(x\,\alpha(y)\bigr)=\alpha(x)\,y$. For the second, $r\bigl(L_x(r(y))\bigr)=r\bigl(x\,r(y)\bigr)=y\,x^{r}$. The third is the second with $\alpha(x)$ in place of $x$, and the fourth is the second with the roles of $r$ and $R$ exchanged.</p>
+<p><strong>Remark.</strong> The identities are the general form of the statement that the <strong>sandwich</strong> is a conjugate of a multiplication. The two-sided operators with a right factor the inverse are the inner conjugation and the signed inner conjugation, and they are the members that act on $V$ by isometries; the ones with a right factor an anti-involution are the inverse-free members. Nothing here uses an involution of the base, so the dagger variant of the right family, $R_{x^{\dagger}}$, is absent; it requires the involutive theory and belongs to <em>One-Sided Operators on a Clifford Algebra with Hermitian Adjoint</em>.</p>
+<h2 id="injectivity-kernels-and-ideals">Injectivity, Kernels and Ideals</h2>
+<p><strong>Proposition.</strong> For every $a$ one has $L_a(1)=R_a(1)=a$, so $a\mapsto L_a$ and $a\mapsto R_a$ are injective $F$-linear maps from the algebra into its endomorphisms.</p>
+<p><strong>Proposition (kernels).</strong> The kernel of a one-sided operator is an annihilator:</p>
+<p>$$
+\ker L_a=\{\,y : ay=0\,\}=\ell(a), \qquad \ker R_a=\{\,y : ya=0\,\}=r(a),
+$$</p>
+<p>the left and the right annihilator of $a$.</p>
+<p><strong>Proposition (images).</strong> The image of a left multiplication is a <strong>right</strong> ideal and the image of a right multiplication is a <strong>left</strong> ideal:</p>
+<p>$$
+L_a\bigl(\mathrm{Cl}(V,q)\bigr)=a\cdot\mathrm{Cl}(V,q), \qquad R_a\bigl(\mathrm{Cl}(V,q)\bigr)=\mathrm{Cl}(V,q)\cdot a .
+$$</p>
+<p><strong>Proof.</strong> $L_a(y)=ay$ and $(ay)x=a(yx)$ is again in $a\cdot\mathrm{Cl}$; $R_a(y)=ya$ and $x(ya)=(xy)a$ is again in $\mathrm{Cl}\cdot a$.</p>
+<p><strong>Corollary (the spinor module as an image).</strong> If $\pi$ is a primitive idempotent then $R_\pi$ has image the minimal left ideal $\mathrm{Cl}(V,q)\,\pi$ and $L_\pi$ has image the minimal right ideal $\pi\,\mathrm{Cl}(V,q)$. The spinor module of <em>Spinors as Minimal Left Ideals with Inner Conjugation</em> is the image of the one-sided operator $R_\pi$, so the elementary one-sided operators already carry the module theory of the algebra.</p>
+<h2 id="the-algebra-generated-by-the-one-sided-operators">The Algebra Generated by the One-Sided Operators</h2>
+<h3 id="the-mutual-commutants">The Mutual Commutants</h3>
+<p><strong>Theorem (double centraliser).</strong> The commutant of the left multiplications is the right multiplications and conversely,</p>
+<p>$$
+\{L_a : a\in\mathrm{Cl}(V,q)\}'=\{\,R_b\}, \qquad \{\,R_b\}'=\{L_a\}.
+$$</p>
+<p><strong>Proof.</strong> An operator $T$ commutes with every $L_a$ exactly when $T(ay)=aT(y)$ for all $a,y$, that is exactly when $T$ is left $\mathrm{Cl}(V,q)$-linear; such a $T$ is determined by its value at $1$, since $T(y)=T(y\cdot1)=y\,T(1)$, so $T=R_{T(1)}$. The second identity is the same statement with the multiplication reversed.</p>
+<p><strong>Remark.</strong> The theorem is the double centraliser theorem for the regular bimodule, and it is the statement that the left and the right multiplications are each other's commutant. It does not say that they generate all of $\mathrm{End}_F(\mathrm{Cl}(V,q))$, and that stronger statement is false in general, as the next proposition shows.</p>
+<h3 id="the-image-of-the-enveloping-algebra">The Image of the Enveloping Algebra</h3>
+<p><strong>Proposition.</strong> The left and the right multiplications together generate the image of the enveloping algebra under</p>
+<p>$$
+\mathrm{Cl}(V,q)\otimes_F\mathrm{Cl}(V,q)^{\mathrm{op}}\longrightarrow\mathrm{End}_F\bigl(\mathrm{Cl}(V,q)\bigr), \qquad a\otimes b\mapsto\bigl(y\mapsto a\,y\,b\bigr),
+$$</p>
+<p>an algebra homomorphism. The image is all of $\mathrm{End}_F(\mathrm{Cl}(V,q))$, of dimension $(\dim\mathrm{Cl})^2$, exactly when $\mathrm{Cl}(V,q)$ is <strong>central simple</strong> over $F$; otherwise it is a proper subalgebra.</p>
+<p><strong>Verified.</strong> The dimension of the span of the maps $y\mapsto ayb$ over a basis is $(\dim\mathrm{Cl})^2$ for the central simple algebras $\mathrm{Cl}_{0,2}(\mathbb{R})\cong\mathbb{H}$, $\mathrm{Cl}_{0,4}(\mathbb{R})\cong\mathbb{H}(2)$ and $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$, and it is half of $(\dim\mathrm{Cl})^2$ for $\mathrm{Cl}_{0,3}(\mathbb{R})\cong\mathbb{H}\oplus\mathbb{H}$ and for $\mathrm{Cl}_{1,2}(\mathbb{R})$, which are not central simple.</p>
+<p><strong>Counterexample (the naive double centraliser).</strong> For $\mathrm{Cl}_{0,3}(\mathbb{R})$ one has $\dim\mathrm{Cl}=8$ and $\dim\mathrm{End}_F(\mathrm{Cl})=64$, while the maps $L_aR_b$ span only $32$ dimensions. So the claim that the left and the right multiplications always generate $\mathrm{End}_F(\mathrm{Cl}(V,q))$ is false; the correct statement carries the central-simplicity hypothesis, and the two-sided family spans the same image, being a subfamily of the same maps.</p>
+<h2 id="the-one-sided-operators-do-not-preserve-the-quadratic-space">The One-Sided Operators Do Not Preserve the Quadratic Space</h2>
+<p><strong>Theorem.</strong> The only left multiplications that carry the space of vectors into itself are the scalars:</p>
+<p>$$
+\{\,x : L_x(V)\subseteq V\,\}=F\cdot 1 .
+$$</p>
+<p><strong>Verified.</strong> Solved as a linear system in $\mathrm{Cl}_{0,3}(\mathbb{R})$, in $\mathrm{Cl}_{0,4}(\mathbb{R})$ and in $\mathrm{Cl}_{1,3}(\mathbb{R})$, the space of such $x$ has dimension one.</p>
+<p><strong>Example.</strong> In $\mathrm{Cl}_{0,3}(\mathbb{R})$ with $e_j^{2}=-1$ the left multiplication $L_{e_1}$ sends the vector $e_1$ to the scalar $-1$ and the vector $e_2$ to the bivector $e_1e_2$, and the even left multiplication by $e_1e_2$ sends $e_1$ to $e_2$ but $e_3$ to the trivector $e_1e_2e_3$. So no non-scalar left multiplication preserves $V$.</p>
+<p><strong>Remark.</strong> This is the structural reason for the two-sided family. The signed inner conjugation $\alpha(x)\,y\,x^{-1}$ preserves $V$ for $x$ in the Clifford group $\Gamma(V,q)$, and it does so because the two factors are paired; the individual factors do not preserve $V$, and half of a geometric transformation is not a geometric transformation. The one-sided operators are nevertheless the right objects on the module: on the spinor module the Clifford algebra acts by left multiplication alone, and there the action is one-sided by construction, which is the theme of <em>The Adjoint of the One-Sided Action with Hermitian Adjoint</em> and of <em>Spinors as Minimal Left Ideals with Inner Conjugation</em>.</p>
+<h2 id="worked-cases">Worked Cases</h2>
+<h3 id="an-odd-element">An Odd Element</h3>
+<p>Let $x=e_1$ in $\mathrm{Cl}_{0,3}(\mathbb{R})$, with $e_j^{2}=-1$. Then $x$ is odd, $\alpha(x)=-x$, $x^{r}=x$ and $\bar x=-x$, so</p>
+<p>$$
+L_{\alpha(e_1)}=L_{-e_1}=-L_{e_1}, \qquad R_{e_1^{r}}=R_{e_1}, \qquad R_{\bar e_1}=-R_{e_1} .
+$$</p>
+<p>At the unit the values are $L_{e_1}(1)=e_1$, $L_{\alpha(e_1)}(1)=-e_1$ and $R_{e_1}(1)=R_{e_1^{r}}(1)=e_1$, $R_{\bar e_1}(1)=-e_1$, so the graded and conjugation-twisted variants carry the parity sign that the plain members do not. On the vectors,</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>operator</th>
+<th>$e_1$</th>
+<th>$e_2$</th>
+<th>$e_3$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$L_{e_1}$</td>
+<td>$-1$</td>
+<td>$e_1e_2$</td>
+<td>$e_1e_3$</td>
+</tr>
+<tr>
+<td>$R_{e_1}$</td>
+<td>$-1$</td>
+<td>$-e_1e_2$</td>
+<td>$-e_1e_3$</td>
+</tr>
+</tbody>
+</table></div>
+<p>so each sends the first vector to a scalar and the other two to bivectors, and neither preserves $V$.</p>
+<h3 id="an-even-element">An Even Element</h3>
+<p>Let $x=e_1e_2$ in $\mathrm{Cl}_{0,3}(\mathbb{R})$, an even element of square $-1$ and inverse $x^{-1}=-x$. Then $L_x(e_1)=e_2$ and $L_x(e_2)=-e_1$, so $L_x$ rotates the plane $\mathrm{span}(e_1,e_2)$ <strong>by a quarter turn</strong>, but $L_x(e_3)=e_1e_2e_3$ is a trivector, so $L_x(V)\nsubseteq V$; and $R_x(e_1)=-e_2$, $R_x(e_2)=e_1$, $R_x(e_3)=e_1e_2e_3$ likewise. The two-sided <strong>inner conjugation</strong> by the same element is the half-turn of the plane,</p>
+<p>$$
+x\,e_1\,x^{-1}=-e_1, \qquad x\,e_2\,x^{-1}=-e_2, \qquad x\,e_3\,x^{-1}=e_3 ,
+$$</p>
+<p>which preserves $V$ and is an isometry. The comparison isolates the point of the section: the one-sided $L_x$ and $R_x$ each carry a rotation of the plane and a defect on $e_3$, and their pairing cancels the defect, leaving the genuine rotation.</p>
+<h3 id="the-anti-multiplicativity-of-the-right-family">The Anti-Multiplicativity of the Right Family</h3>
+<p>In $\mathrm{Cl}_{0,3}(\mathbb{R})$ with $x=e_1$ and $z=e_2$ the products at the unit are</p>
+<p>$$
+L_{e_1}L_{e_2}(1)=e_1e_2=L_{e_1e_2}(1), \qquad R_{e_1}R_{e_2}(1)=e_2e_1=-e_1e_2=-R_{e_1e_2}(1),
+$$</p>
+<p>so the left family composes in the order of the elements and the plain right family in the reverse order. The twisted family repairs the order: $R_{e_1^{r}}R_{e_2^{r}}(1)=x^{r}z^{r}=e_1e_2=R_{(e_1e_2)^{r}}(1)$, since reversion of the product reverses the factors.</p>
+<h3 id="the-failure-of-generation">The Failure of Generation</h3>
+<p>In $\mathrm{Cl}_{0,3}(\mathbb{R})\cong\mathbb{H}\oplus\mathbb{H}$ the maps $L_aR_b$ span a space of dimension $32$, while $\mathrm{End}_F$ has dimension $64$; the two simple components of the algebra contribute their own endomorphism algebras and the mixed blocks are absent. In the central simple $\mathrm{Cl}_{0,4}(\mathbb{R})\cong\mathbb{H}(2)$ the span is all of the $256$-dimensional $\mathrm{End}_F$, and there the left and right multiplications are enough to see every operator.</p>
+<h2 id="summary">Summary</h2>
+<p>A <strong>one-sided operator</strong> on a Clifford algebra is a left multiplication $\Lambda^{\theta}_x(y)=\theta(x)\,y$, attached to an automorphism $\theta$, or a right multiplication $\mathrm P^{c}_x(y)=y\,c(x)$, attached to an anti-automorphism $c$. The two families <strong>commute</strong>, and the two-sided operator of <em>Two-Sided Operators on a Clifford Algebra</em> is their product, $\Phi^{\theta,c}_x=\Lambda^{\theta}_x\mathrm P^{c}_x$, so the composition law of the two-sided family is inherited from its factors. The left family and the twisted right family are <strong>multiplicative in the same order</strong>, because the reversal inside $c$ cancels the reversal of the order of composition; the <strong>plain right multiplication is anti-multiplicative</strong>, $R_{xz}=R_zR_x$, so $x\mapsto R_x$ is a representation of the opposite algebra. The members are separated by their value at the unit, $L_x(1)=R_x(1)=x$ and $L_{\alpha(x)}(1)=\alpha(x)$, $R_{x^{r}}(1)=x^{r}$, $R_{\bar x}(1)=\bar x$; a one-sided operator preserves the parity when its element is even and interchanges the two components when it is odd.</p>
+<p>The graded and twisted members are the conjugates of the plain multiplications by the intrinsic anti-involutions, $L_{\alpha(x)}=\alpha L_x\alpha$, $R_{x^{r}}=rL_xr$, $R_{\bar x}=\bar\cdot\,L_x\,\bar\cdot$ and $L_{x^{r}}=rR_xr$. The maps $a\mapsto L_a$ and $a\mapsto R_a$ are injective, their kernels are the annihilators $\ell(a)$ and $r(a)$, and their images are the right ideal $a\cdot\mathrm{Cl}$ and the left ideal $\mathrm{Cl}\cdot a$; the spinor module is the image of $R_\pi$ for a primitive idempotent $\pi$. The left and right multiplications are <strong>mutual commutants</strong>, $\{L_a\}'=\{R_b\}$ and $\{R_b\}'=\{L_a\}$, and together they generate the image of the enveloping algebra $\mathrm{Cl}\otimes\mathrm{Cl}^{\mathrm{op}}$, which is all of $\mathrm{End}_F(\mathrm{Cl})$ exactly when the Clifford algebra is <strong>central simple</strong> and is a proper subalgebra otherwise, of dimension half of $(\dim\mathrm{Cl})^2$ for $\mathrm{Cl}_{0,3}(\mathbb{R})$. Finally, the only left multiplications preserving the space of vectors are the scalars, so the geometry of $V$ requires the pairing of the two factors; the one-sided operators are the ones that act on the module, and their Hermitian adjoints belong to the Hermitian group.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\Lambda^{\theta}_x(y)=\theta(x)y$</td>
+<td>Left one-sided operator, $\theta$ an automorphism</td>
+</tr>
+<tr>
+<td>$\mathrm P^{c}_x(y)=y\,c(x)$</td>
+<td>Right one-sided operator, $c$ an anti-automorphism</td>
+</tr>
+<tr>
+<td>$L_x=\Lambda^{\mathrm{id}}_x$, $L_{\alpha(x)}=\Lambda^{\alpha}_x$</td>
+<td>Plain and signed left multiplication</td>
+</tr>
+<tr>
+<td>$R_x=\mathrm P^{\mathrm{id}}_x$, $R_{x^{r}}=\mathrm P^{r}_x$, $R_{\bar x}=\mathrm P^{\bar\cdot}_x$</td>
+<td>Plain, reversion-twisted and conjugation-twisted right multiplication</td>
+</tr>
+<tr>
+<td>$\Lambda^{\theta}_{xz}=\Lambda^{\theta}_x\Lambda^{\theta}_z$, $\mathrm P^{c}_{xz}=\mathrm P^{c}_x\mathrm P^{c}_z$</td>
+<td>Composition laws for the two families</td>
+</tr>
+<tr>
+<td>$R_{xz}=R_zR_x$</td>
+<td>Plain right multiplication is anti-multiplicative</td>
+</tr>
+<tr>
+<td>$\Phi^{\theta,c}_x=\Lambda^{\theta}_x\mathrm P^{c}_x$</td>
+<td>Two-sided operator as a product of one-sided ones</td>
+</tr>
+<tr>
+<td>$L_{\alpha(x)}=\alpha L_x\alpha$, $R_{x^{r}}=rL_xr$, $R_{\bar x}=\bar\cdot L_x\bar\cdot$</td>
+<td>The variants as conjugates by the anti-involutions</td>
+</tr>
+<tr>
+<td>$\ell(a)$, $r(a)$</td>
+<td>Left and right annihilator, the kernels of $L_a$ and $R_a$</td>
+</tr>
+<tr>
+<td>$a\cdot\mathrm{Cl}$, $\mathrm{Cl}\cdot a$</td>
+<td>Right and left ideals, the images of $L_a$ and $R_a$</td>
+</tr>
+<tr>
+<td>$\{L_a\}'=\{R_b\}$, $\{R_b\}'=\{L_a\}$</td>
+<td>The mutual commutants</td>
+</tr>
+<tr>
+<td>$\langle L_a,R_b\rangle=\mathrm{Im}\bigl(\mathrm{Cl}\otimes\mathrm{Cl}^{\mathrm{op}}\bigr)$</td>
+<td>The generated algebra; $=\mathrm{End}_F(\mathrm{Cl})$ iff central simple</td>
+</tr>
+<tr>
+<td>$\{x:L_x(V)\subseteq V\}=F\cdot1$</td>
+<td>Only the scalars preserve the space of vectors</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Ian R. Porteous, <em>Clifford Algebras and the Classical Groups</em>, Cambridge Studies in Advanced Mathematics 50 (Cambridge University Press, 1995), for the left and right multiplications and the regular representations of a Clifford algebra.</li>
+<li>H. Blaine Lawson and Marie-Louise Michelsohn, <em>Spin Geometry</em> (Princeton University Press, 1989), for the Clifford action, its structure and the ideals that carry the spinor modules.</li>
+<li>Nathan Jacobson, <em>Structure of Rings</em>, American Mathematical Society Colloquium Publications 37 (American Mathematical Society, 1956), for the double centraliser theorem, the mutual commutants of the regular representations and the enveloping algebra.</li>
+<li>Richard S. Pierce, <em>Associative Algebras</em>, Graduate Texts in Mathematics 88 (Springer, 1982), for the left and right regular representations, the annihilators and the structure of a finite-dimensional algebra.</li>
+<li>Tsi-Yuen Lam, <em>A First Course in Noncommutative Rings</em>, Graduate Texts in Mathematics 131 (Springer, 2nd ed. 2001), for the central simple algebras and the isomorphism $A\otimes_FA^{\mathrm{op}}\cong\mathrm{End}_F(A)$.</li>
+<li>Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, <em>The Book of Involutions</em>, Colloquium Publications 44 (American Mathematical Society, 1998), for the algebras with involution acting on themselves and the intrinsic anti-involutions of a Clifford algebra.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

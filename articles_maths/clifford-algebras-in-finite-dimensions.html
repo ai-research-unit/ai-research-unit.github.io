@@ -267,13 +267,13 @@ $$</p>
 <h2 id="20-reversion">20. Reversion</h2>
 <p>The <strong>reversion</strong> anti-involution is the map</p>
 <p>$$
-x \mapsto x^\dagger
+x \mapsto x^{r}
 $$</p>
 <p>that reverses the order of the factors in a multivector. On a product of generators, it acts as</p>
 <p>$$
 e_{i_1} e_{i_2} \cdots e_{i_k} \mapsto e_{i_k} \cdots e_{i_2} e_{i_1}.
 $$</p>
-<p>Reversion is an anti-involution: it satisfies $(xy)^\dagger = y^\dagger x^\dagger$ and $(x^\dagger)^\dagger = x$.</p>
+<p>Reversion is an anti-involution: it satisfies $(xy)^{r} = y^{r}x^{r}$ and $(x^{r})^{r} = x$.</p>
 <h2 id="21-clifford-conjugation">21. Clifford Conjugation</h2>
 <p>The <strong>Clifford conjugation</strong> anti-involution is the map</p>
 <p>$$
@@ -287,14 +287,14 @@ $$</p>
 <h2 id="22-the-grade-involution">22. The Grade Involution</h2>
 <p>By composing reversion and Clifford conjugation, we get the <strong>grade involution</strong>:</p>
 <p>$$
-x \mapsto x^* = \bar{x}^\dagger.
+x \mapsto \alpha(x) = \overline{x^{r}}.
 $$</p>
 <p>On a product of generators, it acts as</p>
 <p>$$
 e_{i_1} e_{i_2} \cdots e_{i_k} \mapsto (-1)^k e_{i_1} e_{i_2} \cdots e_{i_k}.
 $$</p>
 <p>So the grade involution multiplies an element of grade $k$ by $(-1)^k$. It fixes elements of even grade and changes the sign of elements of odd grade.</p>
-<p>The grade involution is an involution, not an anti-involution: it satisfies $(xy)^* = x^* y^*$ and $(x^*)^* = x$.</p>
+<p>The grade involution is an involution, not an anti-involution: it satisfies $\alpha(xy) = \alpha(x)\alpha(y)$ and $\alpha(\alpha(x)) = x$.</p>
 <h2 id="23-the-behavior-on-each-grade">23. The Behavior on Each Grade</h2>
 <p>The behavior of the three maps depends on the grade of the element. For an element of grade $k$:</p>
 <ul>

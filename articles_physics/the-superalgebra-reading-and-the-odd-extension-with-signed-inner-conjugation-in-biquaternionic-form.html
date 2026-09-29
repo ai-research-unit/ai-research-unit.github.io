@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Superalgebra Reading and the Odd Extension with Signed Inner Conjugation in Biquaternionic Form — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-superalgebra-reading-and-the-odd-extension-with-signed-inner-conjugation-in-biquaternionic-form"><strong>The Superalgebra Reading and the Odd Extension with Signed Inner Conjugation in Biquaternionic Form</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A $\mathbb{Z}/2$-graded algebra is called a <strong>superalgebra</strong>, and the graded structure is part of the structure, not a decoration: it fixes the bracket, the derivation rule and the sign of every product. The physics series uses this framework in three places — the graded bracket of the Lie algebra, the fermion parity of the field, and the supercharge of supersymmetric quantum mechanics — and the purpose of this article is to state the framework once, to say exactly which part of it the biquaternion algebra supplies and which part must be adjoined, and to keep the several $\mathbb{Z}/2$'s of the corpus apart.</p>
+<p>The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, which is the even part of the Clifford algebra of Minkowski space, $\mathbb{B}\cong\mathrm{Cl}^{+}_{1,3}$; the grading, the two slots and the parity reading are <em>The Graded Algebra, Fermion Parity and the Two Sectors with Signed Inner Conjugation in Biquaternionic Form</em>. The commutator bracket of the algebra, the trace form and the identification of the trace-free part with the Lorentz algebra are <em>Biquaternion Lie Algebra</em> and <em>Biquaternion Lie Group and Exponential</em>. The supercharge pair of the massive Dirac operator, the chirality grading of the two minimal left ideals and the warning that the supersymmetric grading is not the frame grading are <em>Supersymmetric Quantum Mechanics in the Biquaternion Framework</em>. The Grassmann algebra as the odd extension is <em>Grassmann Coherent States in Biquaternionic Form</em>, the ghost sector and its open question about a biquaternionic Grassmann envelope are <em>BRST Symmetry in Biquaternionic Form</em>, and the one fermionic mode that the algebra hosts natively, together with the three gradings warning, is <em>Fock Space and Creation/Annihilation Operators in Biquaternionic Form</em>. Nothing owned by those articles is re-derived; this article states the structure they share and the boundary of what the algebra carries.</p>
+<h2 id="the-graded-commutator">The Graded Commutator</h2>
+<p><strong>Definition.</strong> A <strong>$\mathbb{Z}/2$-graded algebra</strong> is an algebra $A=A^0\oplus A^1$ with $A^iA^j\subseteq A^{i+j}$, written $\lvert a\rvert\in\{0,1\}$ for the parity of a homogeneous element. On it the <strong>graded commutator</strong> is</p>
+<p>$$
+[a,b]_{\mathrm{gr}}=ab-(-1)^{\lvert a\rvert\lvert b\rvert}\,ba .
+$$</p>
+<p>For two even elements it is the ordinary commutator; for one even and one odd element it is also the ordinary commutator; for two odd elements it is the <strong>anticommutator</strong> $\{a,b\}=ab+ba$. The single formula carries the whole fermionic sign convention: "bosons commute, fermions anticommute, and a boson and a fermion commute" is the parity of the exponent $(-1)^{\lvert a\rvert\lvert b\rvert}$ read three times.</p>
+<p><strong>Proposition (the super-Jacobi identity).</strong> On a graded algebra the graded commutator satisfies</p>
+<p>$$
+(-1)^{\lvert a\rvert\lvert c\rvert}[a,[b,c]_{\mathrm{gr}}]_{\mathrm{gr}}
++(-1)^{\lvert b\rvert\lvert a\rvert}[b,[c,a]_{\mathrm{gr}}]_{\mathrm{gr}}
++(-1)^{\lvert c\rvert\lvert b\rvert}[c,[a,b]_{\mathrm{gr}}]_{\mathrm{gr}}=0 ,
+$$</p>
+<p>the <strong>graded Jacobi identity</strong>, which is the ordinary Jacobi identity when all three elements are even and the identity of the anticommutator for three odd elements.</p>
+<p><strong>Definition.</strong> A <strong>Lie superalgebra</strong> is a graded algebra with a graded bracket that is graded antisymmetric, $[a,b]_{\mathrm{gr}}=-(-1)^{\lvert a\rvert\lvert b\rvert}[b,a]_{\mathrm{gr}}$, and satisfies the graded Jacobi identity. Its even part is a Lie algebra, its odd part is a module over the even part, and the bracket of two odd elements is even.</p>
+<p><strong>Remark (a graded derivation).</strong> The odd element that mixes the two components does so by a graded rule: a <strong>graded derivation</strong> $D$ of parity $\lvert D\rvert$ satisfies the graded Leibniz rule</p>
+<p>$$
+D(ab)=D(a)b+(-1)^{\lvert D\rvert\lvert a\rvert}a\,D(b),
+$$</p>
+<p>so an odd derivation differentiates with a sign that depends on the parity of the element it acts on. This is the rule a supercharge obeys, and it is the reason a supercharge cannot be written as an element of the even part alone.</p>
+<h2 id="what-is-a-grading-of-the-biquaternion-algebra">What Is a Grading of the Biquaternion Algebra?</h2>
+<p>The algebra is graded as a vector space by the Clifford grade, $\mathbb{B}=\mathbb{B}_0\oplus\mathbb{B}_1\oplus\mathbb{B}_2\oplus\mathbb{B}_3$ in the identification $\mathbb{B}\cong\mathrm{Cl}_{3,0}$, and under $\mathbb{B}\cong\mathrm{Cl}^{+}_{1,3}$ that grade is the bivector degree of the ambient algebra. The parity grading of the previous article is <strong>not</strong> the parity of that grade: it is the grading of the ambient algebra $\mathrm{Cl}_{1,3}$, on which the whole algebra $\mathbb{B}$ sits in the even slot.</p>
+<p><strong>Proposition (the parity grading is trivial on the algebra).</strong> The restriction of the parity grading of $\mathrm{Cl}_{1,3}$ to $\mathbb{B}=\mathrm{Cl}^0$ is the trivial grading: every element of the algebra is even. Consequently a $\mathbb{Z}/2$-grading of the algebra in which the familiar splitting plays the role of the parity is not supplied by the Clifford structure; the algebra alone carries no distinguished fermionic sector.</p>
+<p><strong>Proof.</strong> By definition $\mathrm{Cl}^0=\mathbb{B}$ and $\mathrm{Cl}^0\cap\mathrm{Cl}^1=\{0\}$, so the odd slot contains no element of the algebra.</p>
+<p><strong>Remark (the gradings of the corpus do not coincide).</strong> Three separate structures are called gradings in the series and they must not be conflated, as <em>Fock Space and Creation/Annihilation Operators in Biquaternionic Form</em> records: the sector splitting $\mathbb{M}_+\oplus\mathbb{M}_-$ by the Hermitian dagger, which grades the symmetrized product but is <strong>not</strong> an algebra grading, the counterexample being $(ie_1)(ie_2)=-e_3$; the number grading of the Fock space by total particle number, a grading of the state space; and the parity grading, an algebra grading of the ambient Clifford algebra. A fourth, the chirality $L/R$ grading of the two minimal left ideals, is the one the supersymmetry article uses, and the frame grading by $\beta$ is a fifth that must not be confused with it.</p>
+<h2 id="the-graded-bracket-with-the-algebra-as-even-part">The Graded Bracket with the Algebra as Even Part</h2>
+<p><strong>Proposition.</strong> On $\mathrm{Cl}_{1,3}=\mathbb{B}\oplus\mathrm{Cl}^1$ the graded commutator satisfies</p>
+<p>$$
+[\mathbb{B},\mathbb{B}]_{\mathrm{gr}}\subseteq\mathbb{B},\qquad
+[\mathbb{B},\mathrm{Cl}^1]_{\mathrm{gr}}\subseteq\mathrm{Cl}^1,\qquad
+\{\mathrm{Cl}^1,\mathrm{Cl}^1\}\subseteq\mathbb{B},
+$$</p>
+<p>so the ambient algebra is a Lie superalgebra whose even part is $\mathbb{B}$ and whose odd part is a left and right module over it.</p>
+<p><strong>Proof.</strong> These are the inclusions $\mathrm{Cl}^i\mathrm{Cl}^j\subseteq\mathrm{Cl}^{i+j}$ of the grading, read with the parity of the exponent, together with the fact that the graded commutator of two elements of the same parity is their commutator and of two of opposite parity is also their commutator, while that of two odd elements is their anticommutator.</p>
+<p><strong>Remark (the even part is the Lie algebra of the framework).</strong> The restriction of the graded bracket to $\mathbb{B}$ is the ordinary commutator, that is the Lie algebra of <em>Biquaternion Lie Algebra</em>, whose trace-free part is the Lorentz algebra; the bivectors of the ambient algebra are its elements, and the identification with $\mathfrak{so}(1,3)$ and its spin representation is the one carried by the Clifford articles of the maths corpus. The odd slot is a module over the even part and not a second Lie algebra: the bracket of two odd elements is even, exactly as the bracket of two reflections is a rotation.</p>
+<p><strong>Remark (the bracket of the two slots).</strong> In the language of the previous article, the inclusion $[\mathbb{B},\mathrm{Cl}^1]\subseteq\mathrm{Cl}^1$ says that the bosonic sector acts on the fermionic one, and $\{\mathrm{Cl}^1,\mathrm{Cl}^1\}\subseteq\mathbb{B}$ says that two fermionic steps give a bosonic element. The graded bracket is therefore the abstract form of the composition table of the signed inner conjugation: the same table, read as a bracket instead of as a product.</p>
+<h2 id="supercharges-and-the-odd-generators">Supercharges and the Odd Generators</h2>
+<p><strong>Definition.</strong> A <strong>supercharge</strong> is an odd element $Q$ of a Lie superalgebra whose graded square is even,</p>
+<p>$$
+\{Q,Q\}=2H,\qquad [Q,H]_{\mathrm{gr}}=0 ,
+$$</p>
+<p>so that the anticommutator of the supercharge with itself is a bosonic operator commuting with it. This is the structural content of supersymmetry: the symmetry is generated by an odd element, and the Hamiltonian is its square.</p>
+<p><strong>Proposition (a supercharge is never an element of the algebra).</strong> Since $\mathbb{B}=\mathrm{Cl}^0$ contains no odd element, no supercharge is an element of $\mathbb{B}$; every supercharge is an element of the odd slot of an ambient graded algebra, and the odd slot is isomorphic to $\mathbb{B}$ as a module but is not a subalgebra.</p>
+<p><strong>Proof.</strong> The odd slot is $\mathrm{Cl}^1$ and $\mathbb{B}=\mathrm{Cl}^0$, and the slots are disjoint by the grading; the module isomorphism is the one of the previous article.</p>
+<p><strong>Remark (what the framework supplies and what it imports).</strong> The corpus's supersymmetric quantum mechanics realizes a supercharge pair from the first-order biquaternion gradient $(\tilde{\nabla},\bar{\tilde{\nabla}})$ and identifies the superalgebra with the mass pair; that construction is owned by <em>Supersymmetric Quantum Mechanics in the Biquaternion Framework</em>, together with the chirality grading of the two minimal left ideals under which the gradient is odd and the d'Alembertian even. What this article records is the general boundary: <strong>the supercharge is fermionic, and fermionic elements are not in the algebra.</strong> Whatever the algebra supplies for the pairing, the odd generator itself is an element of the Clifford slot that the algebra does not contain.</p>
+<h2 id="what-must-be-adjoined">What Must Be Adjoined</h2>
+<p>Two constructions in the series adjoin the missing odd sector, and both are honest about it.</p>
+<p><strong>The Grassmann envelope.</strong> The odd generators can be made to carry anticommuting coefficients by tensoring with a Grassmann algebra, which is exactly the construction of <em>Grassmann Coherent States in Biquaternionic Form</em>: the Grassmann algebra is the odd extension of the coefficient ring, and the Berezin integral is its integration. The resulting object is a superalgebra whose even part contains the algebra. <em>BRST Symmetry in Biquaternionic Form</em> uses the same envelope for the ghosts and records as an <strong>open question</strong> whether a biquaternionic Grassmann envelope can be found that is natural rather than imported; the question is open precisely because $\mathbb{B}$ supplies no odd elements of its own.</p>
+<p><strong>One fermionic mode, natively.</strong> The one piece of the odd sector that the algebra does host is a single fermionic mode: the creation and annihilation operators of one mode are elements of the algebra, the parity is the element $(-1)^F=ie_3$ of the informational sector, and the algebra's own graded structure therefore carries the finite one-mode case without any extension. This is the sharpest form of the boundary: the algebra hosts the parity of one mode and must import the parity of a field, for which the product $\prod_{\text{modes}}ie_3^{(\text{mode})}$ is not an element of $\mathbb{B}$.</p>
+<p><strong>Remark (the count of what is adjoined).</strong> One odd generator, and its products with the even elements, exhaust the odd slot: the odd part is the rank-one copy $\mathbb{B}\gamma$ of the algebra, generated over $\mathbb{B}$ by a single odd element $\gamma$. So the extension is not "one more algebra" but one more generator; two independent copies of the algebra are never needed, because the missing piece is a single module generator and the rule odd $\times$ odd $=$ even that it brings with it.</p>
+<h2 id="one-graded-algebra-not-two">One Graded Algebra, Not Two</h2>
+<p><strong>Proposition.</strong> With one odd unit $\gamma$ one has $\mathrm{Cl}_{1,3}=\mathbb{B}\oplus\mathbb{B}\gamma$, and every supercharge is a $\mathbb{B}$-multiple of $\gamma$; the odd sector is a single module generator, not a second algebra.</p>
+<p><strong>Proof.</strong> The decomposition is the rank-two module statement of <em>The Graded Algebra, Fermion Parity and the Two Sectors with Signed Inner Conjugation in Biquaternionic Form</em>, and an odd element is $\gamma s$ with $s$ even, hence a $\mathbb{B}$-multiple of $\gamma$.</p>
+<p><strong>Remark (why this is the answer to the "two copies" question).</strong> A superalgebra needs an even part, an odd part and the graded bracket between them; it does not need two algebras. The pair $(\mathbb{B},\mathbb{B})$ of two independent copies has no bracket $\{\cdot,\cdot\}\to\mathbb{B}$ between the copies and no grading, so it is not a superalgebra. The single graded algebra $\mathrm{Cl}_{1,3}=\mathbb{B}\oplus\mathbb{B}\gamma$ has all three, and the biquaternion algebra is its even part.</p>
+<h2 id="honest-limits">Honest Limits</h2>
+<ul>
+<li><strong>The algebra is not a superalgebra by itself.</strong> With the Clifford parity, the algebra is entirely even; with the chirality $L/R$ splitting, the two minimal left ideals give a $\mathbb{Z}/2$ of the module structure and not of the algebra. A statement that "the biquaternion algebra is a superalgebra" needs the ambient algebra or an explicit further grading, and this article does not make it.</li>
+<li><strong>The supercharge is imported.</strong> The odd generator is not an element of $\mathbb{B}$; the Grassmann envelope or the odd slot of the Clifford algebra is required, and the naturality of that envelope is open in the BRST article.</li>
+<li><strong>The parity of a field is external.</strong> $(-1)^F$ is an element of the algebra for one mode and a product over modes, hence outside it, for a field.</li>
+<li><strong>Nothing here is a measure or an integral.</strong> The Grassmann and Berezin constructions are cited from their articles and are not used; the article is algebra and grading.</li>
+<li><strong>No supersymmetry algebra is claimed to be contained in $\mathbb{B}$.</strong> The super-Poincaré algebra, if it is to be written, is written on an extension; the corpus's supersymmetry article states which superalgebra its construction realizes and this article adds the general boundary, not a second claim.</li>
+</ul>
+<h2 id="summary">Summary</h2>
+<p>A <strong>superalgebra</strong> is a $\mathbb{Z}/2$-graded algebra with the grading as part of its structure. On it the graded commutator $[a,b]_{\mathrm{gr}}=ab-(-1)^{\lvert a\rvert\lvert b\rvert}ba$ is the commutator for even or mixed pairs and the anticommutator for two odd elements, it satisfies the graded Jacobi identity, and a graded derivation obeys the graded Leibniz rule; that formula is the whole fermionic sign convention of the framework in one line. A Lie superalgebra has a Lie algebra as its even part, a module as its odd part, and the bracket of two odd elements in the even part.</p>
+<p>The biquaternion algebra is the <strong>even part</strong> of the graded Clifford algebra, $\mathbb{B}=\mathrm{Cl}^0_{1,3}$, so the parity grading is trivial on it, and $\mathbb{B}$ is not by itself a superalgebra; the grading that the series calls parity is a grading of the ambient algebra, and it must not be conflated with the sector splitting by the dagger, which is not an algebra grading, with the chirality $L/R$ grading of the supersymmetry article, or with the number and frame gradings. The graded bracket makes the ambient algebra a Lie superalgebra with even part $\mathbb{B}$, whose even bracket is the Lie bracket of <em>Biquaternion Lie Algebra</em>, and the odd slot is a module generated by one odd element.</p>
+<p>A <strong>supercharge</strong> is an odd element with $\{Q,Q\}=2H$, and it is therefore never an element of $\mathbb{B}$: the fermionic generator is an element of the odd slot, and the odd slot is the rank-one copy $\mathbb{B}\gamma$ of the algebra. The Grassmann envelope of the coherent-states and BRST articles adjoins the anticommuting coefficients, the naturality of that envelope being the open item those articles record; the algebra's own odd sector hosts one fermionic mode, $(-1)^F=ie_3$, and no more. One graded algebra with one extra odd generator suffices; two independent copies of the algebra would be a structure with no bracket between the copies and no grading, and are not what the physics needs.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$A=A^0\oplus A^1$</td>
+<td>A $\mathbb{Z}/2$-graded algebra, a superalgebra</td>
+</tr>
+<tr>
+<td>$\lvert a\rvert\in\{0,1\}$</td>
+<td>The parity of a homogeneous element</td>
+</tr>
+<tr>
+<td>$[a,b]_{\mathrm{gr}}=ab-(-1)^{\lvert a\rvert\lvert b\rvert}ba$</td>
+<td>Graded commutator; anticommutator for two odd elements</td>
+</tr>
+<tr>
+<td>graded Jacobi identity</td>
+<td>The super-Jacobi identity of a Lie superalgebra</td>
+</tr>
+<tr>
+<td>$D(ab)=D(a)b+(-1)^{\lvert D\rvert\lvert a\rvert}aD(b)$</td>
+<td>Graded Leibniz rule of a graded derivation</td>
+</tr>
+<tr>
+<td>$\mathrm{Cl}_{1,3}=\mathbb{B}\oplus\mathrm{Cl}^1$</td>
+<td>Lie superalgebra, even part the biquaternion algebra</td>
+</tr>
+<tr>
+<td>$\{\mathrm{Cl}^1,\mathrm{Cl}^1\}\subseteq\mathbb{B}$</td>
+<td>Two fermionic steps are bosonic</td>
+</tr>
+<tr>
+<td>$\{Q,Q\}=2H$</td>
+<td>Supercharge; $Q$ odd, $H$ even</td>
+</tr>
+<tr>
+<td>$\mathrm{Cl}^1=\mathbb{B}\gamma$</td>
+<td>One odd generator over the algebra, not a second algebra</td>
+</tr>
+<tr>
+<td>$(-1)^F=ie_3$</td>
+<td>The one fermionic mode the algebra hosts natively</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Manfred Scheunert, <em>The Theory of Lie Superalgebras</em>, Lecture Notes in Mathematics 716 (Springer, 1979), for the graded bracket, the super-Jacobi identity and the structure theory.</li>
+<li>Julius Wess and Jonathan Bagger, <em>Supersymmetry and Supergravity</em> (Princeton University Press, 2nd ed. 1992), for the super-Poincaré algebra and the supercharge conventions.</li>
+<li>Bryce S. DeWitt, <em>Supermanifolds</em> (Cambridge University Press, 2nd ed. 1992), for the Grassmann envelope, the Berezin integral and the functorial view of the odd coordinates.</li>
+<li>Felix A. Berezin, <em>Introduction to Superanalysis</em> (Reidel, 1987), for the anticommuting coefficients and the algebra of the odd extension.</li>
+<li>Ian R. Porteous, <em>Clifford Algebras and the Classical Groups</em>, Cambridge Studies in Advanced Mathematics 50 (Cambridge University Press, 1995), for the graded Clifford algebra, its even part and the parity of its elements.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

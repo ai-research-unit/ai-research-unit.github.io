@@ -278,9 +278,9 @@ $$</p>
 \det\rho_L(\tilde{Q}) = (11+2i)^2 = 117 + 44i, \qquad \operatorname{Tr}\rho_L(\tilde{Q}) = 4(2+i) = 8 + 4i,
 $$</p>
 <p>in agreement with the two blocks $A_+(\tilde{Q}) = \begin{pmatrix} 3+i & -1+4i \\ 1+2i & 1+i \end{pmatrix}$ and $A_-(\tilde{Q}) = \begin{pmatrix} 1+i & -1-2i \\ 1-4i & 3+i \end{pmatrix}$ on this element, each of trace $4+2i$ and determinant $11+2i$.</p>
-<p><strong>For a material four-vector.</strong> With $\tilde{Q} = iq'_0e_0 + \mathbf{q} \in \mathbb{M}_-$ the biquaternion norm is real, $N(\tilde{Q}) = -q'^2_0 + \mathbf{q}^2$, so</p>
+<p><strong>For a material four-vector.</strong> With $\tilde{Q} = iq'_0e_0 + \mathbf{q} \in \mathbb{M}_-$ the biquaternion norm is real, $N(\tilde{Q}) = -(q'_0)^2 + \mathbf{q}^2$, so</p>
 <p>$$
-\det\rho_L(\tilde{Q}) = \bigl( -q'^2_0 + \mathbf{q}^2 \bigr)^2, \qquad \operatorname{Tr}\rho_L(\tilde{Q}) = 4iq'_0 .
+\det\rho_L(\tilde{Q}) = \bigl( -(q'_0)^2 + \mathbf{q}^2 \bigr)^2, \qquad \operatorname{Tr}\rho_L(\tilde{Q}) = 4iq'_0 .
 $$</p>
 <p>For the four-position, with $q'_0 = ct$ and $\mathbf{q} = \mathbf{x}$, the determinant of the regular matrix is the <strong>square of the interval</strong>: for $ct = 2$ and $\mathbf{x} = (1, \tfrac12, \tfrac12)$ the interval is the rational number $-4 + 1 + \tfrac14 + \tfrac14 = -\tfrac52$, and the regular matrix has determinant $\tfrac{25}{4}$, real and positive. For the four-momentum the on-shell biquaternion norm is $-m^2c^2$, so the regular matrix has determinant $m^4c^4$.</p>
 <p><strong>The regular matrix is singular exactly on the light cone.</strong> Since $\det\rho_L(\tilde{Q}) = N(\tilde{Q})^2$, the regular matrix of an element fails to be invertible exactly when $N(\tilde{Q}) = 0$, that is, exactly on the zero-divisor cone. For a material four-vector that is the light cone $-c^2t^2 + \mathbf{x}^2 = 0$; for the four-momentum it is the massless case $m = 0$. The physical statement and the algebraic one are the same: a four-vector is a zero divisor of the algebra exactly when it is null, and the determinant of the regular representation is the test. Moreover the determinant is a <strong>square</strong>, and the square has a physical reading: the four-vector is the direct sum of two chiral copies, and each copy carries one factor of the biquaternion norm.</p>
@@ -289,7 +289,7 @@ $$</p>
 <p>The general results above, read on the material sector, give the four-vector a $4 \times 4$ matrix of its own, and that matrix is the object the operator articles multiply by.</p>
 <p><strong>Proposition.</strong> For $\tilde{Q} = iq'_0e_0 + q_1e_1 + q_2e_2 + q_3e_3 \in \mathbb{M}_-$ with real components, the left regular matrix is the matrix displayed at the end of the first section, with</p>
 <p>$$
-\operatorname{Tr}\rho_L(\tilde{Q}) = 4iq'_0, \qquad \det\rho_L(\tilde{Q}) = \bigl( -q'^2_0 + (q_1)^2 + (q_2)^2 + (q_3)^2 \bigr)^2 .
+\operatorname{Tr}\rho_L(\tilde{Q}) = 4iq'_0, \qquad \det\rho_L(\tilde{Q}) = \bigl( -(q'_0)^2 + (q_1)^2 + (q_2)^2 + (q_3)^2 \bigr)^2 .
 $$</p>
 <p><strong>Proof.</strong> Substitute $Q_0 = iq'_0$ and $Q_k = q_k$ into the corollary of the preceding section.</p>
 <p><strong>Four-vectors of physics.</strong> Four cases are worth recording, with constants rather than with units.</p>
@@ -383,7 +383,7 @@ $$</p>
 = \begin{pmatrix} q_0 & -q_1 & -q_2 & -q_3 \\ q_1 & q_0 & -q_3 & q_2 \\ q_2 & q_3 & q_0 & -q_1 \\ q_3 & -q_2 & q_1 & q_0 \end{pmatrix}
 = \begin{pmatrix} ct' & -x & -y & -z \\ x & ct' & -z & y \\ y & z & ct' & -x \\ z & -y & x & ct' \end{pmatrix},
 $$</p>
-<p>the real Cayley matrix, with $\operatorname{Tr}\rho_L = 4ct'$ and $\det\rho_L = \big( c^2t'^2 + \mathbf{x}^2 \big)^2$.</p>
+<p>the real Cayley matrix, with $\operatorname{Tr}\rho_L = 4ct'$ and $\det\rho_L = \big( c^2(t')^2 + \mathbf{x}^2 \big)^2$.</p>
 <p>Its entries are real and its determinant is the square of a sum of four squares, so it is invertible for every nonzero element: this is the real $4 \times 4$ left regular representation of the quaternions, and the absence of zero divisors in $\mathbb{H}$ is the invertibility of this matrix.</p>
 <p><strong>The antiquaternion subspace $i\mathbb{H}_{\mathbb{B}}$.</strong> All four coefficients purely imaginary, $Q_\mu = iq'_\mu$, so the matrix is $i$ times the quaternion subspace's and the chain is the quaternion one under the factor $i$:</p>
 <p>$$
@@ -391,14 +391,14 @@ $$</p>
 = i\begin{pmatrix} q'_0 & -q'_1 & -q'_2 & -q'_3 \\ q'_1 & q'_0 & -q'_3 & q'_2 \\ q'_2 & q'_3 & q'_0 & -q'_1 \\ q'_3 & -q'_2 & q'_1 & q'_0 \end{pmatrix}
 = i\begin{pmatrix} ct & -x' & -y' & -z' \\ x' & ct & -z' & y' \\ y' & z' & ct & -x' \\ z' & -y' & x' & ct \end{pmatrix},
 $$</p>
-<p>with $q'_0 = ct$ and $q'_k = x'_k$ real, $\operatorname{Tr}\rho_L = 4ict$ and $\det\rho_L = \big( c^2t^2 + \mathbf{x}'^2 \big)^2$. The assignment of the two times and the two spaces is the one the real sector does not take. The determinant is again the square of a sum of four squares, so this subspace too is a division algebra, a copy of $\mathbb{H}$.</p>
+<p>with $q'_0 = ct$ and $q'_k = x'_k$ real, $\operatorname{Tr}\rho_L = 4ict$ and $\det\rho_L = \big( c^2t^2 + (\mathbf{x}')^2 \big)^2$. The assignment of the two times and the two spaces is the one the real sector does not take. The determinant is again the square of a sum of four squares, so this subspace too is a division algebra, a copy of $\mathbb{H}$.</p>
 <p><strong>The informational subspace $\mathbb{M}_+$.</strong> The scalar coefficient is real and the three spatial ones are purely imaginary, $Q_0 = q_0$ and $Q_k = iq'_k$: a real diagonal and a purely imaginary spatial block, reached by the same three-step chain,</p>
 <p>$$
 \rho_L(\tilde{Q}) = \begin{pmatrix} Q_0 & -Q_1 & -Q_2 & -Q_3 \\ Q_1 & Q_0 & -Q_3 & Q_2 \\ Q_2 & Q_3 & Q_0 & -Q_1 \\ Q_3 & -Q_2 & Q_1 & Q_0 \end{pmatrix}
 = \begin{pmatrix} q_0 & -iq'_1 & -iq'_2 & -iq'_3 \\ iq'_1 & q_0 & -iq'_3 & iq'_2 \\ iq'_2 & iq'_3 & q_0 & -iq'_1 \\ iq'_3 & -iq'_2 & iq'_1 & q_0 \end{pmatrix}
 = \begin{pmatrix} ct' & -ix' & -iy' & -iz' \\ ix' & ct' & -iz' & iy' \\ iy' & iz' & ct' & -ix' \\ iz' & -iy' & ix' & ct' \end{pmatrix},
 $$</p>
-<p>with $q_0 = ct'$ and $q'_k = x'_k$ real, $\operatorname{Tr}\rho_L = 4ct'$ and $\det\rho_L = \big( c^2t'^2 - \mathbf{x}'^2 \big)^2$. It is the mirror of the material case, of signature $(1,3)$. It is <strong>Hermitian</strong>, and its determinant is the square of the informational interval, so it is singular exactly on the informational null cone $ct' = \pm|\mathbf{x}'|$.</p>
+<p>with $q_0 = ct'$ and $q'_k = x'_k$ real, $\operatorname{Tr}\rho_L = 4ct'$ and $\det\rho_L = \big( c^2(t')^2 - (\mathbf{x}')^2 \big)^2$. It is the mirror of the material case, of signature $(1,3)$. It is <strong>Hermitian</strong>, and its determinant is the square of the informational interval, so it is singular exactly on the informational null cone $ct' = \pm|\mathbf{x}'|$.</p>
 <p><strong>The material subspace $\mathbb{M}_-$.</strong> The scalar coefficient is purely imaginary and the three spatial ones are real, $Q_0 = iq'_0$ and $Q_k = q_k$: a purely imaginary diagonal and a real spatial block, and the chain carries the material four-vector from the complex coefficients through their real parameters to the physical coordinates $ict, x, y, z$,</p>
 <p>$$
 \rho_L(\tilde{Q}) = \begin{pmatrix} Q_0 & -Q_1 & -Q_2 & -Q_3 \\ Q_1 & Q_0 & -Q_3 & Q_2 \\ Q_2 & Q_3 & Q_0 & -Q_1 \\ Q_3 & -Q_2 & Q_1 & Q_0 \end{pmatrix}
@@ -431,7 +431,7 @@ $$</p>
 <p><strong>Proof.</strong> The real matrix is the realification of the complex-linear endomorphism $\rho_L(\tilde{Q})$. A complex-linear endomorphism with eigenvalues $\lambda_1, \ldots, \lambda_4$ has realification with eigenvalues $\lambda_1, \bar\lambda_1, \ldots, \lambda_4, \bar\lambda_4$, so its determinant is $|\lambda_1\cdots\lambda_4|^2 = |\det\rho_L(\tilde{Q})|^2 = |N(\tilde{Q})^2|^2 = |N(\tilde{Q})|^4$ and its trace is $2\operatorname{Re}(\lambda_1 + \cdots + \lambda_4) = 2\operatorname{Re}(4Q_0) = 8\operatorname{Re}(Q_0)$.</p>
 <p><strong>For a material four-vector.</strong> With $\tilde{Q} \in \mathbb{M}_-$ the scalar part is $Q_0 = iq'_0$, whose real part vanishes, so</p>
 <p>$$
-\operatorname{Tr}\rho_L^{\mathbb{R}}(\tilde{Q}) = 0, \qquad \det\rho_L^{\mathbb{R}}(\tilde{Q}) = \bigl( -q'^2_0 + \mathbf{q}^2 \bigr)^4 ,
+\operatorname{Tr}\rho_L^{\mathbb{R}}(\tilde{Q}) = 0, \qquad \det\rho_L^{\mathbb{R}}(\tilde{Q}) = \bigl( -(q'_0)^2 + \mathbf{q}^2 \bigr)^4 ,
 $$</p>
 <p>the biquaternion norm being real on the material sector. The real regular matrix of a material four-vector is therefore <strong>traceless</strong>, and this is the sense in which the trace of a four-vector is zero: not over $\mathbb{C}$, where it is $4iq'_0$, but over the real eight-dimensional space, where the trace is twice the real part of the complex trace. The tracelessness is a property of the material sector alone, whose scalar part is purely imaginary; on the informational sector the scalar part is real and the real trace is $8q_0 = 8ct'$, generally nonzero. On the quaternion subalgebra $\mathbb{H}_{\mathbb{B}}$ and read on $\mathbb{H}_{\mathbb{B}}$ itself the construction is the $4 \times 4$ real regular representation of the quaternions.</p>
 <h2 id="the-two-sided-action">The Two-Sided Action</h2>
@@ -591,7 +591,7 @@ $$</p>
 </tr>
 <tr>
 <td>$q'_0, q_1, q_2, q_3$</td>
-<td>Real parameters of a material four-vector, $\tilde{Q} = iq'_0e_0 + q_1e_1 + q_2e_2 + q_3e_3$, $\mathbf{q} = q_1e_1+q_2e_2+q_3e_3$; $q'_0 = ct$, $(q_1,q_2,q_3) = (x,y,z)$; $\operatorname{Tr}\rho_L = 4iq'_0$, $\det\rho_L = (-q'^2_0 + \mathbf{q}^2)^2$</td>
+<td>Real parameters of a material four-vector, $\tilde{Q} = iq'_0e_0 + q_1e_1 + q_2e_2 + q_3e_3$, $\mathbf{q} = q_1e_1+q_2e_2+q_3e_3$; $q'_0 = ct$, $(q_1,q_2,q_3) = (x,y,z)$; $\operatorname{Tr}\rho_L = 4iq'_0$, $\det\rho_L = (-(q'_0)^2 + \mathbf{q}^2)^2$</td>
 </tr>
 <tr>
 <td>$\rho_L^{\mathbb{R}}(\tilde{Q})$ for $\tilde{Q} \in \mathbb{M}_-$</td>

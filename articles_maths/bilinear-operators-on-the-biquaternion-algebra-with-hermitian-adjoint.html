@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bilinear Operators on the Biquaternion Algebra with Hermitian Adjoint — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="bilinear-operators-on-the-biquaternion-algebra-with-hermitian-adjoint"><strong>Bilinear Operators on the Biquaternion Algebra with Hermitian Adjoint</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>Let $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ be the biquaternion algebra with its Hermitian conjugation ${}^{\dagger}$ and the positive definite form $(\tilde V,\tilde W)=\mathrm{Sc}(\tilde V^{\dagger}\tilde W)$. The <strong>spinor module</strong> is the minimal left ideal $S=\mathbb{B}\tilde\Pi_1=\mathbb{C}\{\tilde\Pi_1,\tilde W\}$, the unique simple left $\mathbb{B}$-module, on which the algebra acts by the left multiplication $L_{\tilde B}(s)=\tilde B\,s$; in the matrix model $\Phi(\mathbb{B})=M_2(\mathbb{C})$ and $S=\mathbb{C}^2$, and the module form is $(s,t)=\mathrm{Sc}(s^{\dagger}t)$ with Gram matrix $\frac12 I_2$ in the basis $(\tilde\Pi_1,\tilde W)$ and $s^{\dagger}t$ in the standard column basis (<em>Hermitian Modules over the Biquaternion Algebra with Hermitian Adjoint</em>, <em>Biquaternion Ideals and Peirce Decomposition</em>, <em>One-Sided Operators on the Biquaternion Algebra with Hermitian Adjoint</em>).</p>
+<p>A <strong>bilinear operator</strong> is the operator $s\mapsto b(s,\cdot)$ induced by a bilinear form $b$ on the spinor module. The general theory of these operators is <em>Bilinear Operators on a Clifford Module with Hermitian Adjoint</em>: the form is <strong>Clifford-equivariant</strong> exactly when it satisfies the adjointness axiom of the module, the action of the algebra on the module is <strong>complete</strong> — the Fierz identity — so that the $2^n$ bilinear covariants $(s,\Gamma_A t)$ span the space of forms, and the covariants are classified by the grade of the blade. This article is the biquaternion instance of that theory.</p>
+<p>The instance is exact and degenerate in one helpful way. The biquaternion algebra is a full matrix algebra, $\mathbb{B}\cong M_2(\mathbb{C})$, so the action is not merely injective but <strong>onto</strong> the endomorphisms of the spinor module, and the general completeness theorem is an isomorphism rather than a spanning statement: <strong>every endomorphism of the spinor module is a biquaternion</strong>. The four blade operators are a basis of $\mathrm{End}_{\mathbb{C}}(S)$, the four covariants are a basis of the space of forms, and the covariant expansion of a form is computed by the orthogonality of the blades for the trace form; this is the Fierz rearrangement, and in the biquaternion algebra it is a change of basis in a four-dimensional space. The second consequence is the classification: the dagger is the reversion of the positive definite Clifford structure $\mathbb{B}\cong\mathrm{Cl}_{3,0}$ whose vectors are $ie_k$, so the blades split into one Hermitian covariant — the scalar, which is the module form itself — and three skew-Hermitian ones, and the <strong>space of Hermitian forms is four-dimensional</strong>, isomorphic to the Hermitian sector $\mathbb{M}_+=H_2(\mathbb{C})$ with the interval form and the cone of <em>Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint</em>.</p>
+<p>Nothing owned by the companion articles is re-derived. The correspondence between bilinear forms and matrices, the module form and its Gram matrix, the Peirce basis and the matrix model are <em>Biquaternion 2×2 Matrix Element Representation</em>, <em>Hermitian Modules over the Biquaternion Algebra with Hermitian Adjoint</em> and <em>Biquaternion Ideals and Peirce Decomposition</em>; the adjoint of the action and the two-sided operator are <em>One-Sided Operators on the Biquaternion Algebra with Hermitian Adjoint</em> and <em>Two-Sided Operators on the Biquaternion Algebra with Hermitian Adjoint</em>; the positivity and the cone are <em>Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint</em>; the slice, the compact form and the internal group $U(2)$ are <em>Biquaternion Versors and the Orthogonal Group</em> and <em>Biquaternion Lie Group and Exponential Structure</em>.</p>
+<h2 id="forms-operators-and-the-matrix-model">Forms, Operators and the Matrix Model</h2>
+<p><strong>Definition.</strong> A <strong>form</strong> on the spinor module is a map $b:S\times S\to\mathbb{C}$ conjugate-linear in the first argument and linear in the second; the <strong>adjoint form</strong> is $b^{*}(s,t)=\overline{b(t,s)}$, and $b$ is <strong>Hermitian</strong> when $b^{*}=b$. The <strong>bilinear operator</strong> of $b$ is $T_b:S\to S^{*}$, $s\mapsto b(s,\cdot)$, and the two descriptions carry the same data.</p>
+<p><strong>Proposition (the matrix model).</strong> Every form is $b_M(s,t)=s^{\dagger}Mt$ for a unique element $M$ of $\mathbb{B}$, and</p>
+<p>$$
+b_M \text{ is Hermitian} \iff M \text{ is Hermitian} \iff T_b \text{ is self-adjoint};
+$$</p>
+<p>a form is alternating exactly when its operator is skew-adjoint, and the Hermitian forms are the fixed points of $b\mapsto b^{*}$.</p>
+<p><em>Proof.</em> The assignment $M\mapsto b_M$ is a $\mathbb{C}$-linear isomorphism of the $4$-dimensional algebra onto the space of forms, since $s^{\dagger}Mt$ determines $M$. Conjugating, $\overline{b_M(t,s)}=\overline{t^{\dagger}Ms}=s^{\dagger}M^{\dagger}t=b_{M^{\dagger}}(s,t)$, so $b_M$ is Hermitian exactly when $M^{\dagger}=M$. Under the identification $S^{*}\cong S$ by the module form, $T_b$ is the operator of the matrix $M^{\dagger}$ and its adjoint is $M$, so $(T_b)^{*}=T_{b^{*}}$; a form is Hermitian exactly when its operator is self-adjoint, and alternating exactly when the operator is skew-adjoint.</p>
+<p><strong>Proposition (the equivariant form is the module form).</strong> A form is <strong>Clifford-equivariant</strong>, $b(\tilde V\cdot s,t)=b(s,\tilde V^{\dagger}\cdot t)$ for all $\tilde V\in\mathbb{B}$, exactly when $M$ commutes with $\mathbb{B}$:</p>
+<p>$$
+b \text{ equivariant} \iff \Phi(M)\in \mathbb{B}'=\mathbb{C}\cdot\mathrm{id} .
+$$</p>
+<p><em>Proof.</em> $\Phi(M)$ commutes with $\Phi(\tilde V)$ for all $\tilde V$ exactly when $M$ is a scalar matrix, and $(\tilde V s)^{\dagger}M t=s^{\dagger}\tilde V^{\dagger}Mt=b(s,\tilde V^{\dagger}t)$ for all $s,t$ is exactly that. The scalar is real for $b$ Hermitian.</p>
+<p><strong>Remark.</strong> So on the biquaternion spinor module the equivariant Hermitian forms are the multiples of the module form, $\mathbb{R}_{>0}$ up to a phase, which is the Schur uniqueness of the module form read as a commutant statement: the commutant of a full matrix algebra acting on its simple module is the scalars. The general theory's warning about an isotropic spinor form has no instance here, for the reason recorded in <em>Hermitian Modules over the Biquaternion Algebra with Hermitian Adjoint</em>.</p>
+<h2 id="the-completeness-of-the-action-the-fierz-identity">The Completeness of the Action: the Fierz Identity</h2>
+<p><strong>Definition.</strong> The <strong>blades</strong> are the four basis elements $e_0,e_1,e_2,e_3$ of $\mathbb{B}$, and the <strong>bilinear covariants</strong> of the module are</p>
+<p>$$
+b_{\mu}(s,t)=\bigl(s,\,L_{e_{\mu}}t\bigr)=s^{\dagger}\Phi(e_{\mu})\,t ,\qquad \mu=0,1,2,3 .
+$$</p>
+<p><strong>Theorem (completeness, the Fierz identity).</strong> The action $L:\mathbb{B}\to\mathrm{End}_{\mathbb{C}}(S)$ is an isomorphism, the four blade operators $L_{e_{\mu}}$ are a basis of $\mathrm{End}_{\mathbb{C}}(S)$, and the four covariants $b_{\mu}$ are a basis of the space of forms on $S$.</p>
+<p><em>Proof.</em> The algebra is a full matrix algebra, $\Phi(\mathbb{B})=M_2(\mathbb{C})$, acting faithfully on $S=\mathbb{C}^2$; hence $L$ is injective and $\dim L(\mathbb{B})=\dim\mathbb{B}=4=\dim\mathrm{End}_{\mathbb{C}}(S)$, so $L$ is an isomorphism and carries the basis $\{e_{\mu}\}$ to a basis. The bilinear statement is the same isomorphism read in the dual basis, by the adjunction of forms and operators. The independence was checked in the matrix model: $\Phi(e_0)=I$, $\Phi(e_k)=-i\sigma_k$, and $\{I,\sigma_1,\sigma_2,\sigma_3\}$ is the standard basis of $M_2(\mathbb{C})$, of rank $4$.</p>
+<p><strong>Corollary (the covariant expansion).</strong> Every form $b_M$ is a unique combination of the covariants,</p>
+<p>$$
+M=\sum_{\mu=0}^{3}c_{\mu}\,\Phi(e_{\mu}),\qquad c_{\mu}=\tfrac12\mathrm{Tr}\bigl(\Phi(e_{\mu})^{\dagger}M\bigr),
+$$</p>
+<p>because the blades are <strong>orthogonal for the trace form</strong> of the algebra, $\mathrm{Tr}(e_{\mu}^{\dagger}e_{\nu})=2\delta_{\mu\nu}$. The coefficients $c_{\mu}$ are the <strong>Fierz coefficients</strong> of the form, and the expansion is the Fierz rearrangement: a change of basis between the four blades and the four matrix units.</p>
+<p><em>Proof.</em> $\mathrm{Tr}(\Phi(e_0)^{\dagger}\Phi(e_0))=\mathrm{Tr}(I)=2$ and $\mathrm{Tr}(\Phi(e_j)^{\dagger}\Phi(e_k))=\mathrm{Tr}(\sigma_j\sigma_k)=2\delta_{jk}$, so the corrected trace pairing is the standard pairing on the orthogonal basis $\{I,\sigma_1,\sigma_2,\sigma_3\}$; the coefficients follow. The reconstruction was verified on random matrices to machine precision, with no mismatch.</p>
+<p><strong>Remark (completeness as the double centraliser).</strong> The Fierz identity and the double centraliser theorem are two readings of one fact. On the spinor module the action is onto, $L(\mathbb{B})=\mathrm{End}_{\mathbb{C}}(S)$, which is the statement that $\mathbb{B}$ is its own bicommutant there; on the regular module $\mathbb{B}$ the left multiplications have the right multiplications as commutant, as <em>One-Sided Operators on the Biquaternion Algebra with Hermitian Adjoint</em> records. The endomorphisms of $\mathbb{B}$ used in the two-sided operators are the module-level operators of this article with the parameter running over the algebra.</p>
+<h2 id="the-covariants-by-grade">The Covariants by Grade</h2>
+<p><strong>Theorem (the dagger classification).</strong> The dagger of $\mathbb{B}$ is the reversion of the positive definite Clifford structure $\mathbb{B}\cong\mathrm{Cl}_{3,0}$ whose vectors are the $ie_k$; a blade of degree $d$ in that structure satisfies $e_A^{\dagger}=(-1)^{d(d-1)/2}e_A$. In the biquaternion algebra $e_0$ is the identity and the three $e_k$ are, up to sign, the bivectors of that structure, $e_3=-\gamma_1\gamma_2$ with $\gamma_k=ie_k$, so</p>
+<p>$$
+e_0^{\dagger}=e_0,\qquad e_k^{\dagger}=-e_k ,\qquad \text{the covariant } b_{\mu} \text{ is Hermitian} \iff \mu=0 .
+$$</p>
+<p>Hence the four covariants split as <strong>one Hermitian and three skew-Hermitian</strong>:</p>
+<p>$$
+b_0(s,t)=s^{\dagger}t \ \text{(the module form)},\qquad b_k(s,t)=-i\,s^{\dagger}\sigma_k t .
+$$</p>
+<p><em>Proof.</em> Reversion reverses the order of a product, so it acts on a degree-$d$ blade by $(-1)^{d(d-1)/2}$: the identity (degree $0$) and the bivectors are fixed and negated respectively. On the basis $e_0=1$ and $e_k=-\gamma_j\gamma_i$ with $\gamma_k=ie_k$ of square $+1$, reversion fixes the $\gamma$'s and negates the bivectors, so $e_0^{\dagger}=e_0$ and $e_k^{\dagger}=-e_k$. The covariant inherits the type from the blade, $b_{\mu}^{*}=b_{\mu^{\dagger}}$, by the corollary of the completeness theorem. Verified on the generators: $b_0(t,s)=\overline{b_0(s,t)}$ and $b_k(t,s)=-\overline{b_k(s,t)}$.</p>
+<p><strong>Remark (the grade rule and its stability).</strong> The general theory states the classification by the grade of the blade, Hermitian for $|A|\equiv0,3$ and skew-Hermitian for $|A|\equiv1,2\pmod 4$. The biquaternion algebra carries two Clifford structures and the rule is stable across them: in the structure $\mathbb{B}\cong\mathrm{Cl}(\mathbb{C}^2)$ of the generators $e_1,e_2$ with $e_3=e_1e_2$ the degrees are $0,1,1,2$, while in $\mathbb{B}\cong\mathrm{Cl}_{3,0}$ the three $e_k$ are all bivectors of degree $2$; in both, $e_0$ is Hermitian and the three $e_k$ are skew-Hermitian, and the three degrees $1,1,2$ and $2,2,2$ all satisfy $|A|\not\equiv0,3$. The classification is therefore a property of the blade and the dagger, not of the chosen Clifford presentation.</p>
+<p><strong>Theorem (the Hermitian forms are the Hermitian sector).</strong> The space of Hermitian forms on the spinor module is the real four-dimensional space</p>
+<p>$$
+\mathrm{Bil}_{\mathrm{herm}}(S)=\mathbb{R}\{b_0,\,ib_1,\,ib_2,\,ib_3\}\cong\mathbb{M}_+ = H_2(\mathbb{C}),
+$$</p>
+<p>with the covariant coefficients of a Hermitian form real in the scalar slot and <strong>purely imaginary</strong> in the three skew slots; under the matrix model the Hermitian forms are the Hermitian matrices, and the interval form and the cone of $\mathbb{M}_+$ are those of <em>Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint</em>.</p>
+<p><em>Proof.</em> A Hermitian matrix has the expansion $a_0I+a_k\sigma_k$ with $a_0\in\mathbb{R}$ and $a_k\in\mathbb{R}$; in the blade basis $\sigma_k=i\Phi(e_k)$ this reads $a_0\Phi(e_0)+i\sum_k a_k\Phi(e_k)$, so the coefficients of $b_0$ are real and those of $b_k$ purely imaginary. Conversely a form with real scalar coefficient and imaginary skew coefficients is a real combination of $b_0$ and the $ib_k$, hence Hermitian. Checked over random Hermitian matrices: the scalar coefficient had vanishing imaginary part and the three skew coefficients vanishing real part in every trial.</p>
+<p><strong>Remark (the $1+3$ splitting).</strong> The splitting of the Hermitian forms into the scalar covariant and the three skew covariants is the splitting $\mathbb{M}_+=\mathbb{R}e_0\oplus i\mathbb{R}\{e_1,e_2,e_3\}$ of the Hermitian sector into its centre and its vector part. It is the covariant form of the decomposition $H_2(\mathbb{C})=\mathbb{R}\cdot\mathrm{id}\oplus\mathfrak{su}(2)$ used everywhere in the series for the density matrix, and the positivity of the form — the cone — is the condition on the pair, not on either summand: the Hermitian form $a_0b_0+\sum_k a_k\,ib_k$ is <strong>positive semidefinite</strong> exactly when $a_0\ge\sqrt{\sum_k a_k^2}$.</p>
+<h2 id="invariance-under-the-unitary-slice">Invariance Under the Unitary Slice</h2>
+<p><strong>Theorem (the slice permutes the covariants).</strong> For $\tilde C$ in the unitary slice $U=U(2)$ and every $\mu$,</p>
+<p>$$
+b_{\mu}(\tilde C\cdot s,\tilde C\cdot t)=b_{\,\tilde C^{\dagger}e_{\mu}\tilde C}(s,t),
+$$</p>
+<p>so the slice acts on the covariants by the conjugation $\Gamma\mapsto \tilde C^{\dagger}\Gamma \tilde C$ of the algebra; the scalar covariant $b_0$ is <strong>invariant</strong>, and the three skew covariants transform among themselves as a triplet.</p>
+<p><em>Proof.</em> $b_{\mu}(\tilde Cs,\tilde Ct)=(\tilde Cs)^{\dagger}\Phi(e_{\mu})\tilde Ct=s^{\dagger}\tilde C^{\dagger}\Phi(e_{\mu})\tilde Ct=b_{\tilde C^{\dagger}e_{\mu}\tilde C}(s,t)$ by the adjointness of the action, $\tilde C^{\dagger}\Phi(e_{\mu})\tilde C=\Phi(\tilde C^{\dagger}e_{\mu}\tilde C)$. For $\mu=0$ the inserted element is $\tilde C^{\dagger}\tilde C=e_0$. For the triplet, $\tilde C^{\dagger}\Phi(e_k)\tilde C=-i\tilde C^{\dagger}\sigma_k \tilde C=-iR_{kl}\sigma_l=\Phi(R_{kl}e_l)$ with $R\in SO(3)$, the adjoint representation of $U(2)$ on $\mathfrak{su}(2)$. Checked on random slice elements for all four covariants, and for the invariance of $b_0$.</p>
+<p><strong>Corollary (the invariants).</strong> The invariants of the slice in the space of Hermitian forms are the multiples of the module form, so the trace pairing and the positivity of the Hermitian forms are slice invariants.</p>
+<p><em>Proof.</em> $b_0$ is invariant; a Hermitian form $a_0b_0+\sum_k a_k\,ib_k$ is invariant exactly when the triplet $(a_1,a_2,a_3)$ is fixed by every $R\in SO(3)$, hence is zero, since the adjoint representation of $SO(3)$ on $\mathbb{R}^3$ has no nonzero invariant vector.</p>
+<p><strong>Remark (off the slice).</strong> For an invertible $\tilde{Q}$ outside the slice the transformation of the covariants is the two-sided operator $\Theta_{\tilde{Q}}$ of <em>Two-Sided Operators on the Biquaternion Algebra with Hermitian Adjoint</em>, and the failure of isometry is the horizontal defect of <em>Mixed Inner Conjugation and Hermitian Adjoint</em>: the covariant transforms by the two-sided operator and the form by the right multiplication by $\tilde{Q}\tilde{Q}^{\dagger}$, so the slice is the exact locus on which the covariants are permuted by a conjugation and the forms are preserved.</p>
+<h2 id="worked-examples">Worked Examples</h2>
+<p><strong>The scalar covariant is the Born form.</strong> $b_0(s,t)=s^{\dagger}t$ is the module form: positive definite, Hermitian, and invariant under the whole slice. Its diagonal $b_0(s,s)=\lvert s\rvert^2$ is the norm of the spinor, the quantity normalised to one in the Born rule; the classification theorem places it alone among the Hermitian covariants.</p>
+<p><strong>The triplet of a pure state.</strong> For a spinor $s$ the three numbers $V_k=i\,b_k(s,s)=s^{\dagger}\sigma_k s$ are real, and for a normalised $s$ they form the unit vector $\tilde V=s^{\dagger}\boldsymbol{\sigma}s$ of the Bloch sphere; the density matrix of the state is $\rho=\tfrac12\bigl(e_0+i\,V_k e_k\bigr)$, Hermitian of trace one, and its three skew covariant coefficients are the coordinates of the polarisation. The three skew covariants of the spinor are the components of its Bloch vector.</p>
+<p><strong>A maximally mixed state.</strong> $\rho=\frac12 e_0$ has all three skew coefficients zero: the only Hermitian form with vanishing triplet is the centre of $\mathbb{M}_+$, and it is the state of maximal entropy of <em>The Bloch Ball as the Trace-One Slice of the Future Light Cone</em>.</p>
+<p><strong>A null spinor.</strong> A nonzero spinor of vanishing biquaternion norm $N$ — a zero divisor of the algebra — has a <strong>nonzero</strong> scalar covariant, $b_0(s,s)=s^{\dagger}s>0$. The covariants of this article are built from the positive definite module form and not from the interval form $N$, which is the distinction between the two forms of <em>Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint</em>; a spinor is null for the module form only when it vanishes, and the null cone of the algebra lives in the vector part of $\mathbb{M}_+$ and not on the spinor.</p>
+<h2 id="summary">Summary</h2>
+<p>A <strong>form</strong> on the biquaternion spinor module is given by a $2\times2$ matrix, $b_M(s,t)=s^{\dagger}Mt$, and is Hermitian exactly when the matrix is; the <strong>bilinear operator</strong> $s\mapsto b(s,\cdot)$ has the adjoint form as its adjoint, so the Hermitian forms are the self-adjoint operators, and the <strong>Clifford-equivariant</strong> Hermitian forms are the multiples of the module form by the commutant theorem. The action of the algebra on the spinor module is an <strong>isomorphism</strong> $L:\mathbb{B}\to\mathrm{End}_{\mathbb{C}}(S)$ — the Fierz identity, exact because the biquaternion algebra is a full matrix algebra — so the four blades are a basis of the endomorphisms, the four <strong>bilinear covariants</strong> $b_{\mu}=(s,e_{\mu}t)$ are a basis of the space of forms, and every form is a combination with the <strong>Fierz coefficients</strong> $c_{\mu}=\frac12\mathrm{Tr}(e_{\mu}^{\dagger}M)$, computed by the orthogonality $\mathrm{Tr}(e_{\mu}^{\dagger}e_{\nu})=2\delta_{\mu\nu}$ of the blades. The dagger is the reversion of the positive definite structure $\mathbb{B}\cong\mathrm{Cl}_{3,0}$ at the vectors $ie_k$, so the classification by grade gives $e_0$ Hermitian and $e_1,e_2,e_3$ skew-Hermitian: <strong>one Hermitian covariant, the module form, and three skew-Hermitian covariant ones</strong>, a rule stable across the two Clifford structures the algebra carries. The Hermitian forms are the real four-dimensional space $\mathbb{R}\{b_0,ib_1,ib_2,ib_3\}\cong\mathbb{M}_+=H_2(\mathbb{C})$, with the positivity of $\mathbb{M}_+$ as its cone and the scalar-plus-triplet splitting as its centre-vector splitting. The <strong>unitary slice</strong> $U(2)$ permutes the covariants by $\Gamma\mapsto \tilde C^{\dagger}\Gamma \tilde C$, fixes the scalar covariant, and rotates the three skew covariants by the adjoint representation of $SO(3)$, so the invariants are the multiples of the module form; off the slice the permutation is the two-sided operator and its defect.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$S=\mathbb{B}\tilde\Pi_1=\mathbb{C}\{\tilde\Pi_1,\tilde W\}$</td>
+<td>The spinor module, the unique simple left ideal</td>
+</tr>
+<tr>
+<td>$(s,t)=\mathrm{Sc}(s^{\dagger}t)$</td>
+<td>The module form; Hermitian, positive definite</td>
+</tr>
+<tr>
+<td>$b_M(s,t)=s^{\dagger}Mt$</td>
+<td>A form; Hermitian iff $M$ Hermitian</td>
+</tr>
+<tr>
+<td>$T_b:S\to S^{*}$, $s\mapsto b(s,\cdot)$</td>
+<td>The bilinear operator of $b$</td>
+</tr>
+<tr>
+<td>$b^{*}(s,t)=\overline{b(t,s)}$</td>
+<td>The adjoint form; $(T_b)^{*}=T_{b^{*}}$</td>
+</tr>
+<tr>
+<td>$L:\mathbb{B}\to\mathrm{End}_{\mathbb{C}}(S)$</td>
+<td>The action; an isomorphism (the Fierz identity)</td>
+</tr>
+<tr>
+<td>$b_{\mu}(s,t)=(s,e_{\mu}t)$</td>
+<td>The four bilinear covariants</td>
+</tr>
+<tr>
+<td>$\mathrm{Tr}(e_{\mu}^{\dagger}e_{\nu})=2\delta_{\mu\nu}$</td>
+<td>Orthogonality of the blades for the trace form</td>
+</tr>
+<tr>
+<td>$c_{\mu}=\frac12\mathrm{Tr}(e_{\mu}^{\dagger}M)$</td>
+<td>The Fierz coefficients of a form</td>
+</tr>
+<tr>
+<td>$e_0^{\dagger}=e_0$, $e_k^{\dagger}=-e_k$</td>
+<td>One Hermitian and three skew-Hermitian covariants</td>
+</tr>
+<tr>
+<td>$\mathbb{R}\{b_0,ib_1,ib_2,ib_3\}\cong\mathbb{M}_+$</td>
+<td>The Hermitian forms; the cone is positivity</td>
+</tr>
+<tr>
+<td>$b_{\mu}(\tilde Cs,\tilde Ct)=b_{\tilde C^{\dagger}e_{\mu}\tilde C}(s,t)$</td>
+<td>Slice covariance; $b_0$ invariant, triplet by $SO(3)$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Ian R. Porteous, <em>Clifford Algebras and the Classical Groups</em>, Cambridge Studies in Advanced Mathematics 50 (Cambridge University Press, 1995), for the completeness of the Clifford action, the spinor module and the trace form.</li>
+<li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em>, London Mathematical Society Lecture Note Series 286 (Cambridge University Press, 2nd ed. 2001), for the Fierz identity, the bilinear covariants and the classification by grade.</li>
+<li>Richard S. Pierce, <em>Associative Algebras</em>, Graduate Texts in Mathematics 88 (Springer, 1982), for the double centraliser theorem and the commutant of a full matrix algebra on its simple module.</li>
+<li>F. J. Ynduráin, <em>Relativistic Quantum Mechanics and Introduction to Field Theory</em> (Springer, 1996), for the Fierz rearrangement of the Dirac bilinears and the completeness of the sixteen covariants in four dimensions.</li>
+<li>H. Blaine Lawson and Marie-Louise Michelsohn, <em>Spin Geometry</em> (Princeton University Press, 1989), for the spinor module, the invariant forms and the role of the Clifford action on the endomorphisms.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

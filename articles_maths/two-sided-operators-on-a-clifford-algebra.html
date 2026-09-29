@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Two-Sided Operators on a Clifford Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="two-sided-operators-on-a-clifford-algebra"><strong>Two-Sided Operators on a Clifford Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>Every operator used in the geometric layer of a Clifford algebra dresses an element of the algebra between two factors built from a single element, one on the left and one on the right. The reflection and the rotation of <em>The Clifford, Pin and Spin Groups with Signed Inner Conjugation</em> are the members of that family in which the right factor is the inverse. The other members are used elsewhere in the corpus, so the family is set up here once, with the properties that hold for all of its members, before any single member is singled out.</p>
+<p>The family has five members, indexed by the right factor: the <strong>inner conjugation</strong> $x\,y\,x^{-1}$ and the <strong>signed inner conjugation</strong> $\alpha(x)\,y\,x^{-1}$, both defined on the units; the <strong>reversion sandwich</strong> $x\,y\,x^{r}$ and the <strong>conjugation sandwich</strong> $x\,y\,\bar x$, both defined on the whole algebra; and the <strong>Hermitian sandwich</strong> $x\,y\,x^{\dagger}$, defined when the base carries an involution. The first two are the members used by the groups, the middle two need no invertibility, and the last belongs to the involutive theory.</p>
+<p>The Clifford algebra, the fundamental relation and the parity grading are from <em>Clifford Algebras</em>; the grade involution $\alpha$, reversion $x^{r}$ and Clifford conjugation $\bar x=\alpha(x^{r})$ are from the same entry and from <em>Clifford Algebras in Finite Dimensions</em>; the Clifford group $\Gamma(V,q)$, the Clifford norm $N(x)=x\bar x$ and the signed inner conjugation action are from <em>The Clifford, Pin and Spin Groups with Signed Inner Conjugation</em>; the dagger, its involution of the base and the Hermitian sandwich are from <em>Involutive Clifford Algebras</em>. Nothing owned by those entries is re-derived. The base is a field $F$ of characteristic not $2$, with $q$ a non-degenerate quadratic form on the finite-dimensional space $V$ and $B$ its polar form.</p>
+<h2 id="the-general-operator">The General Operator</h2>
+<h3 id="definition">Definition</h3>
+<p><strong>Definition.</strong> Let $\theta$ be an automorphism of $\mathrm{Cl}(V,q)$ and let $c$ be an anti-automorphism, so that $c(xz)=c(z)c(x)$ and $c(1)=1$. For $x\in\mathrm{Cl}(V,q)$ the <strong>two-sided operator</strong> attached to the pair $(\theta,c)$ is the map</p>
+<p>$$
+\Phi^{\theta,c}_x:\mathrm{Cl}(V,q)\longrightarrow\mathrm{Cl}(V,q),\qquad \Phi^{\theta,c}_x(y)=\theta(x)\,y\,c(x).
+$$</p>
+<p>The left factor carries the element and the right factor carries its conjugate. The pairing of the two factors is what makes the family closed under composition.</p>
+<p><strong>Remark.</strong> Let $L_a(y)=ay$ and $R_b(y)=yb$ be left and right multiplication. These commute, and</p>
+<p>$$
+\Phi^{\theta,c}_x=L_{\theta(x)}\circ R_{c(x)}.
+$$</p>
+<p>Every member of the family is thus the product of a left translation and a right translation, and each is an $F$-linear endomorphism of the algebra.</p>
+<h3 id="multiplicativity">Multiplicativity</h3>
+<p><strong>Proposition.</strong> Let $\theta$ be an automorphism and $c$ an anti-automorphism. Then $\Phi^{\theta,c}_{xz}=\Phi^{\theta,c}_x\circ\Phi^{\theta,c}_z$ for all $x,z\in\mathrm{Cl}(V,q)$.</p>
+<p><strong>Proof.</strong> Evaluating the composition on $y$ and using the two defining properties of the pair,</p>
+<p>$$
+\Phi^{\theta,c}_x\bigl(\Phi^{\theta,c}_z(y)\bigr)=\theta(x)\bigl(\theta(z)\,y\,c(z)\bigr)c(x)=\theta(xz)\,y\,\bigl(c(z)c(x)\bigr)=\theta(xz)\,y\,c(xz).
+$$</p>
+<p><strong>Remark.</strong> The assignment $x\mapsto\Phi^{\theta,c}_x$ is a homomorphism from the multiplicative monoid of $\mathrm{Cl}(V,q)$ to the endomorphisms of $\mathrm{Cl}(V,q)$. When the right factor is the inverse the assignment is defined on the units and is a homomorphism of the unit group. It is the multiplicativity that lets a composite of two operators be read off from the product of the two elements: it is why the product of two reflections is computed from the product of the two reflecting vectors, and why the image of the unit group is a group of isometries.</p>
+<h3 id="the-value-at-the-unit">The Value at the Unit</h3>
+<p>The members are told apart by their value on the algebra unit and by their behaviour on the parity.</p>
+<p><strong>Proposition.</strong> For every $x$ one has $\Phi^{\theta,c}_x(1)=\theta(x)\,c(x)$. In particular, for the members of the family,</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>member</th>
+<th>$\Phi_x(1)$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>inner conjugation</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>signed inner conjugation</td>
+<td>$+1$ on $\mathrm{Cl}^0$, $-1$ on $\mathrm{Cl}^1$</td>
+</tr>
+<tr>
+<td>reversion sandwich</td>
+<td>$x\,x^{r}$</td>
+</tr>
+<tr>
+<td>conjugation sandwich</td>
+<td>$x\,\bar x=N(x)$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Proof.</strong> Immediate from the definition, since $1$ is the identity and $c(1)=1$; for the signed inner conjugation $\alpha(x)x^{-1}$ equals $x\,x^{-1}=1$ when $x$ is even and $-x\,x^{-1}=-1$ when $x$ is odd; for the conjugation sandwich $x\,\bar x$ is the Clifford norm.</p>
+<p><strong>Remark.</strong> The inner conjugation is the only member that fixes the unit identically. The signed inner conjugation fixes it on the even part and negates it on the odd part, which is the same parity sign that distinguishes the two actions of <em>Versors, Rotors and the Sandwich Action with Signed Inner Conjugation</em>. The anti-involution sandwiches return an element that measures the size of $x$: reversion returns $x\,x^{r}$ and Clifford conjugation returns the Clifford norm.</p>
+<h3 id="the-parity">The Parity</h3>
+<p><strong>Proposition.</strong> Each member of the family preserves the parity grading: $\Phi^{\theta,c}_x(\mathrm{Cl}^0)\subseteq\mathrm{Cl}^0$ and $\Phi^{\theta,c}_x(\mathrm{Cl}^1)\subseteq\mathrm{Cl}^1$.</p>
+<p><strong>Proof.</strong> The maps $\mathrm{id}$ and $\alpha$ preserve the grading, and so do the anti-involutions $r$ and $\bar\cdot$ because their signs on a blade depend only on the degree. A product of two factors of the same parity is even.</p>
+<h2 id="the-members-of-the-family">The Members of the Family</h2>
+<h3 id="the-table">The Table</h3>
+<p>The family is indexed by the right factor, the left factor being the element itself except in the graded case, where it is its image under the grade involution.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>name</th>
+<th>left factor</th>
+<th>right factor</th>
+<th>operator</th>
+<th>defined for</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>inner conjugation</td>
+<td>$x$</td>
+<td>$x^{-1}$</td>
+<td>$x\,y\,x^{-1}$</td>
+<td>the units</td>
+</tr>
+<tr>
+<td>signed inner conjugation</td>
+<td>$\alpha(x)$</td>
+<td>$x^{-1}$</td>
+<td>$\alpha(x)\,y\,x^{-1}$</td>
+<td>the units</td>
+</tr>
+<tr>
+<td>reversion sandwich</td>
+<td>$x$</td>
+<td>$x^{r}$</td>
+<td>$x\,y\,x^{r}$</td>
+<td>every $x$</td>
+</tr>
+<tr>
+<td>conjugation sandwich</td>
+<td>$x$</td>
+<td>$\bar x$</td>
+<td>$x\,y\,\bar x$</td>
+<td>every $x$</td>
+</tr>
+<tr>
+<td>Hermitian sandwich</td>
+<td>$x$</td>
+<td>$x^{\dagger}$</td>
+<td>$x\,y\,x^{\dagger}$</td>
+<td>every $x$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The right factors of the last three rows are the standard anti-involutions of the Clifford algebra, and the table carries the first structural fact: invertibility is required by the inverse alone. The first two operators are defined only where the inverse exists, that is on the unit group; the other three are defined on the whole algebra.</p>
+<h3 id="the-inverse-sandwiches">The Inverse Sandwiches</h3>
+<p>The two members with the inverse to the right are the ones that act on the quadratic space by isometries.</p>
+<p>The <strong>inner conjugation</strong> $y\mapsto x\,y\,x^{-1}$ is defined on the unit group and is the conjugation by $x$. On the even units it acts on the vectors as a rotation, and on the whole algebra it is the inner automorphism attached to $x$.</p>
+<p>The <strong>signed inner conjugation</strong> $y\mapsto \alpha(x)\,y\,x^{-1}$ is defined on the unit group and differs from the inner conjugation by the grade involution in the left factor. On a vector $u$ with $q(u)\neq0$ it reproduces the reflection $\rho_u(v)=v-2B(v,u)q(u)^{-1}u=-uvu^{-1}$, and the elements $x$ for which it preserves the space of vectors are by definition the elements of the Clifford group $\Gamma(V,q)$.</p>
+<p><strong>Remark.</strong> The two differ exactly on the odd part: for even $x$ the factors $\alpha(x)$ and $x$ coincide, and the two operators agree. This is why a rotation, carried by an even element, is described by either one, while a reflection, carried by an odd element, requires the graded form.</p>
+<p><strong>Remark (the general automorphism and the name).</strong> The definition of the family allows an arbitrary automorphism $\theta$ as the left factor's map, and with the inverse to the right the general member is</p>
+<p>$$
+y\longmapsto \theta(x)\,y\,x^{-1},
+$$</p>
+<p>the <strong>graded inner conjugation</strong>. The inner conjugation is the case $\theta=\mathrm{id}$ and the signed inner conjugation is the case $\theta=\alpha$; the name <em>signed</em> records that $\alpha$ is the sign character, equal to $-1$ on the odd part, and it is precisely that minus that makes an odd element give the reflection $\rho_u$ instead of its negative. The general member with an arbitrary $\theta$ is not used by the geometric layer, and the two cases above are the ones the corpus carries; the specialisation to $\theta=\alpha$ is the subject of <em>Two-Sided Operators on a Clifford Algebra with Signed Inner Conjugation</em>.</p>
+<h3 id="the-anti-involution-sandwiches">The Anti-Involution Sandwiches</h3>
+<p>The two members with an anti-involution to the right are the ones that need no invertibility.</p>
+<p>The <strong>reversion sandwich</strong> $y\mapsto x\,y\,x^{r}$ is defined for every $x$, because reversion is defined on the whole algebra. It fixes the vectors: on $u\in V$ one has $u^{r}=u$. It is the member whose right factor is the identity on $V$.</p>
+<p>The <strong>conjugation sandwich</strong> $y\mapsto x\,y\,\bar x$ is defined for every $x$. It negates the vectors, since $\bar u=-u$ for $u\in V$, and its value on the unit is the Clifford norm, $\Phi(1)=x\bar x=N(x)$.</p>
+<p><strong>Proposition.</strong> The reversion sandwich and the conjugation sandwich agree on the even part of the algebra and differ on the odd part by a sign. On the elements of the Clifford group the conjugation sandwich is the inner conjugation scaled by the norm.</p>
+<p><strong>Proof.</strong> For the first statement, $\bar x=\alpha(x^{r})$ and $\alpha$ is the identity on $\mathrm{Cl}^0$; on an odd element $\alpha$ contributes the sign $-1$. The second statement is the scaling proposition of the next section.</p>
+<h3 id="the-involutive-member">The Involutive Member</h3>
+<p>The <strong>Hermitian sandwich</strong> $y\mapsto x\,y\,x^{\dagger}$ has the dagger to the right. This is the one member that is not available in the general theory: the dagger requires an involution of the base, which is a structure the base need not carry. The member, its definition, its Hermitian forms and the unitary slice on which the dagger is the inverse are treated in <em>Involutive Clifford Algebras</em>, and nothing of that theory is used here; with the trivial involution the member reduces to the conjugation sandwich.</p>
+<h2 id="preservation-of-the-quadratic-space">Preservation of the Quadratic Space</h2>
+<h3 id="the-condition">The Condition</h3>
+<p>A two-sided operator acts on the whole algebra, and the ones that carry geometric information are those that send the subspace of vectors into itself,</p>
+<p>$$
+\Phi^{\theta,c}_x(V)\subseteq V.
+$$</p>
+<p>For the signed inner conjugation this condition is the definition of the Clifford group, and once it holds the restriction to $V$ is an isometry up to the scale that the Clifford norm measures.</p>
+<h3 id="the-scaling-by-the-norm">The Scaling by the Norm</h3>
+<p><strong>Proposition.</strong> Let $x\in\Gamma(V,q)$ and let $N(x)=x\bar x$ be its Clifford norm. Then $\bar x=N(x)\,x^{-1}$ and</p>
+<p>$$
+x\,y\,\bar x=N(x)\,\bigl(x\,y\,x^{-1}\bigr)
+$$</p>
+<p>for every $y\in\mathrm{Cl}(V,q)$. The conjugation sandwich on $\Gamma$ is thus the inner conjugation scaled by the norm.</p>
+<p><strong>Proof.</strong> The norm of an element of $\Gamma$ is a scalar, so $x\bar x=N(x)$, and multiplication on the right by $x^{-1}$ gives $\bar x=N(x)\,x^{-1}$. Substituting this expression for $\bar x$ and moving the scalar $N(x)$ to the front gives the identity.</p>
+<p><strong>Remark.</strong> The scale separates two facts that the inverse sandwich carries at once. On the elements of $\Gamma$ with $N(x)=\pm1$ the conjugation sandwich and the inner conjugation coincide, the restriction to $V$ is an isometry, and the odd and the even elements give the reflections and the rotations. That is the content of <em>The Clifford, Pin and Spin Groups with Signed Inner Conjugation</em>.</p>
+<h3 id="the-scale-must-be-a-scalar">The Scale Must Be a Scalar</h3>
+<p>Preservation of $V$ does not follow from the weaker requirement that the scale be central.</p>
+<p><strong>Example.</strong> In $\mathrm{Cl}_{3,0}$ the volume element $\omega=e_1e_2e_3$ is central, and for $x=1+\omega$ one has</p>
+<p>$$
+x\bar x=2\omega,
+$$</p>
+<p>which is central and not a scalar, while $x\,e_1\,\bar x=2e_2e_3$ is a bivector. Such an $x$ does not preserve $V$ and is not in the Clifford group. The scale must therefore be tested for being a scalar, and the scalar hypothesis on $N(x)$ for $x\in\Gamma$ is not a convenience.</p>
+<h2 id="worked-cases">Worked Cases</h2>
+<h3 id="an-odd-element">An Odd Element</h3>
+<p>Let $x=e_1+e_2$ in $\mathrm{Cl}_{3,0}$. Then $x$ is odd, $x^{r}=x$, $\bar x=-x$, and</p>
+<p>$$
+N(x)=x\bar x=-2, \qquad x^{-1}=\tfrac{1}{2}(e_1+e_2).
+$$</p>
+<p>The four defined members act on the vector $e_1$ as follows.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>member</th>
+<th>$x\,e_1\,c(x)$</th>
+<th>$\Phi_x(1)$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>inner conjugation</td>
+<td>$e_2$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>signed inner conjugation</td>
+<td>$-e_2$</td>
+<td>$-1$</td>
+</tr>
+<tr>
+<td>reversion sandwich</td>
+<td>$2e_2$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>conjugation sandwich</td>
+<td>$-2e_2$</td>
+<td>$-2$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The two inverse sandwiches send $e_1$ to $\pm e_2$, which is the reflection in the line $x^{\perp}$ up to the sign that the twist supplies; the two anti-involution sandwiches send it to the same vector scaled by $\pm N(x)=\mp2$, in agreement with the scaling proposition. The value at the unit separates the two inverse members ($1$ and $-1$, the parity sign of the odd element) and the two anti-involution members ($2$ and $-2$, that is $x\,x^{r}$ and the norm).</p>
+<h3 id="an-even-element">An Even Element</h3>
+<p>For the unit rotor $R=e_1e_2$ one has $N(R)=1$, so the norm-one slice applies: the inner conjugation, the reversion sandwich and the conjugation sandwich send $e_1$ to $-e_1$, all three agreeing, because $R^{r}=\bar R=R^{-1}$ on a norm-one even element. For the volume element $\omega=e_1e_2e_3$, which is even but has $N(\omega)=-1$, the reversion sandwich sends $e_1$ to $e_1$ while the conjugation sandwich sends it to $-e_1$; the two differ by the sign of the grade involution, as the proposition states.</p>
+<h2 id="summary">Summary</h2>
+<p>A <strong>two-sided operator</strong> on a Clifford algebra is the map $\Phi^{\theta,c}_x(y)=\theta(x)\,y\,c(x)$ attached to an automorphism $\theta$ and an anti-automorphism $c$. It is the product of a left translation and a right translation, it is $F$-linear in $y$, and it satisfies the composition law $\Phi_{xz}=\Phi_x\circ\Phi_z$, so that $x\mapsto\Phi_x$ is a homomorphism of the multiplicative monoid on the algebra and of the unit group on the units. Each member preserves the parity grading.</p>
+<p>The family has five members, indexed by the right factor. The <strong>inner conjugation</strong> $x\,y\,x^{-1}$ and the <strong>signed inner conjugation</strong> $\alpha(x)\,y\,x^{-1}$ are defined on the units and are the members that act on the quadratic space by isometries; they agree on the even part and differ on the odd part, which is why a reflection needs the graded form while a rotation does not. The <strong>reversion sandwich</strong> $x\,y\,x^{r}$ and the <strong>conjugation sandwich</strong> $x\,y\,\bar x$ are defined on the whole algebra, need no invertibility, fix and negate the vectors respectively, and agree on the even part; the value of the conjugation sandwich at the unit is the Clifford norm. The <strong>Hermitian sandwich</strong> $x\,y\,x^{\dagger}$ requires an involution of the base and belongs to <em>Involutive Clifford Algebras</em>.</p>
+<p>The members differ at the unit by a parity sign and a norm: the inner conjugation fixes $1$, the signed inner conjugation gives $\pm1$ according to parity, the reversion sandwich gives $x\,x^{r}$, and the conjugation sandwich gives $N(x)$. The operators that carry geometry are those with $\Phi_x(V)\subseteq V$, which for the signed inner conjugation is the defining condition of the Clifford group. On $\Gamma$ the conjugation sandwich is the inner conjugation scaled by the norm, $x\,y\,\bar x=N(x)\,(x\,y\,x^{-1})$, so on the slice $N(x)=\pm1$ the two coincide and the odd and even elements give the reflections and the rotations. The scale must be a scalar and not merely central: in $\mathrm{Cl}_{3,0}$ the element $x=1+\omega$ has $x\bar x=2\omega$ central and sends $e_1$ to the bivector $2e_2e_3$, so it is not in the Clifford group.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\theta$</td>
+<td>Automorphism of $\mathrm{Cl}(V,q)$, the left factor's map</td>
+</tr>
+<tr>
+<td>$c$</td>
+<td>Anti-automorphism, $c(xz)=c(z)c(x)$, $c(1)=1$</td>
+</tr>
+<tr>
+<td>$\Phi^{\theta,c}_x(y)=\theta(x)\,y\,c(x)$</td>
+<td>Two-sided operator</td>
+</tr>
+<tr>
+<td>$L_a$, $R_b$</td>
+<td>Left and right translation, $\Phi^{\theta,c}_x=L_{\theta(x)}R_{c(x)}$</td>
+</tr>
+<tr>
+<td>$x\,y\,x^{-1}$</td>
+<td>Inner conjugation, defined on the units</td>
+</tr>
+<tr>
+<td>$\alpha(x)\,y\,x^{-1}$</td>
+<td>Signed inner conjugation, defined on the units</td>
+</tr>
+<tr>
+<td>$x\,y\,x^{r}$</td>
+<td>Reversion sandwich, defined for every $x$</td>
+</tr>
+<tr>
+<td>$x\,y\,\bar x$</td>
+<td>Conjugation sandwich, defined for every $x$</td>
+</tr>
+<tr>
+<td>$x\,y\,x^{\dagger}$</td>
+<td>Hermitian sandwich, needs an involution of the base</td>
+</tr>
+<tr>
+<td>$\Gamma(V,q)$</td>
+<td>Clifford group, the $x$ with $\Phi_x(V)\subseteq V$</td>
+</tr>
+<tr>
+<td>$N(x)=x\bar x$</td>
+<td>Clifford norm, the value of the conjugation sandwich at $1$</td>
+</tr>
+<tr>
+<td>$\rho_u$</td>
+<td>Reflection in $u^{\perp}$, a value of the signed inner conjugation</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em> (Cambridge University Press, 2nd ed. 2001), for the sandwich operators and their action on vectors.</li>
+<li>Ian R. Porteous, <em>Clifford Algebras and the Classical Groups</em> (Cambridge University Press, 1995), for the signed inner conjugation and the generation of the orthogonal group.</li>
+<li>Claude Chevalley, <em>The Algebraic Theory of Spinors and Clifford Algebras</em>, Collected Works vol. 2 (Springer, 1997), for the original algebraic construction of the graded action.</li>
+<li>H. Blaine Lawson and Marie-Louise Michelsohn, <em>Spin Geometry</em> (Princeton University Press, 1989), for the signed inner conjugation action and the Clifford group in the geometric setting.</li>
+<li>Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, <em>The Book of Involutions</em>, Colloquium Publications 44 (American Mathematical Society, 1998), for the anti-involutions of a Clifford algebra and the Hermitian member.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

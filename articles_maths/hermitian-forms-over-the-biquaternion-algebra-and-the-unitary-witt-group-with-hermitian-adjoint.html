@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hermitian Forms over the Biquaternion Algebra and the Unitary Witt Group with Hermitian Adjoint — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="hermitian-forms-over-the-biquaternion-algebra-and-the-unitary-witt-group-with-hermitian-adjoint"><strong>Hermitian Forms over the Biquaternion Algebra and the Unitary Witt Group with Hermitian Adjoint</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>Let $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}\cong M_{2}(\mathbb{C})$ be the biquaternion algebra with the Hermitian conjugation ${}^{\dagger}$, fixed space $\mathbb{M}_+$ and anti-fixed space $\mathbb{M}_-$. This article is the biquaternion instance of <em>Hermitian Forms over an Involution Ring and the Unitary Witt Group with Hermitian Adjoint</em>, and the companion of <em>The Hermitian Sandwich in the Biquaternion Algebra with Hermitian Adjoint</em>: that article studies the operator $\tilde R\mapsto \tilde R\tilde Y\tilde R^{\dagger}$ on the algebra, this one studies the <strong>forms</strong> on which the congruence $H\mapsto S^{\dagger}HS$ acts, that is, the objects the two-sided operators are made to transform.</p>
+<p>The results are the classical ones of a positive involution, made explicit in the matrix model: a Hermitian form on the algebra is a Hermitian matrix, congruence is the dagger congruence, <strong>the invariant is the inertia</strong> (Sylvester's law), every form is congruent to its normal form $\mathrm{diag}(1_{p},-1_{q},0_{r})$, the isometry group of the unit form is the unitary slice $U=U(2)$, and the forms modulo the hyperbolic ones form the <strong>unitary Witt group</strong> $W\cong\mathbb{Z}$, the invariant being the signature. Four facts of the algebra enter and none is special: the algebra is simple, the involution is positive, the centre is $\mathbb{C}$, and the rank-one module over the algebra is $\mathbb{C}^{2}$ in the matrix model.</p>
+<h2 id="hermitian-forms-on-the-algebra">Hermitian Forms on the Algebra</h2>
+<p><strong>Definition.</strong> Let $M$ be a right $\mathbb{B}$-module and let $h:M\times M\to\mathbb{B}$ be sesquilinear, $h(\tilde R\lambda+\tilde Y\mu,z)=\lambda^{\dagger}h(\tilde R,z)+\mu^{\dagger}h(\tilde Y,z)$ and $h(\tilde R,\tilde Y\lambda)=h(\tilde R,\tilde Y)\lambda$. The form is <strong>Hermitian</strong> if in addition</p>
+<p>$$
+h(\tilde Y,\tilde R) = h(\tilde R,\tilde Y)^{\dagger}.
+$$</p>
+<p>The form is <strong>non-degenerate</strong> if $h(\tilde R,\tilde Y)=0$ for all $\tilde Y$ implies $\tilde R=0$, and <strong>positive definite</strong> if $h(\tilde R,\tilde R)\in\mathbb{M}_+$ for $\tilde R\neq0$, that is, if its values are positive in the sense of the Hermitian cone (<em>Positivity and the Hermitian Cone of a Clifford Algebra with Hermitian Adjoint</em>).</p>
+<p><strong>Proposition (the forms of the rank-one module).</strong> Let $M=\mathbb{B}$ with the right action of the algebra on itself. Every Hermitian form on $M$ is</p>
+<p>$$
+h_{H}(\tilde R,\tilde Y) = \tilde R^{\dagger}H\,\tilde Y\qquad\text{with } H\in\mathbb{M}_+,
+$$</p>
+<p>and the map $H\mapsto h_{H}$ is an isomorphism of the Hermitian elements onto the Hermitian forms. In the matrix model $\Phi(H)$ is a Hermitian $2\times2$ matrix and $h_{H}(\tilde R,\tilde Y)=\Phi(\tilde R)^{\dagger}\Phi(H)\Phi(\tilde Y)$.</p>
+<p><em>Proof.</em> Sesquilinearity and the Hermitian symmetry give $h(\tilde R,\tilde Y)=\tilde R^{\dagger}h(e_{0},\tilde Y)=\tilde R^{\dagger}h(e_{0},e_{0})\tilde Y$, with $H=h(e_{0},e_{0})\in\mathbb{M}_+$ by the symmetry, and conversely every such $h_{H}$ is a Hermitian form.</p>
+<p><strong>Example (the unit form).</strong> $H=e_{0}$ gives $h_{e_{0}}(\tilde R,\tilde Y)=\tilde R^{\dagger}\tilde Y$, of scalar part $\mathrm{Sc}(\tilde R^{\dagger}\tilde Y)=\sum_{\mu}R_{\mu}^{*}Y_{\mu}$: the <strong>unit form</strong>, positive definite, the form of the Hermitian structure of the algebra and the trace form of the dagger. Its matrix in the basis $e_{\mu}$ is the identity.</p>
+<p><strong>Example (the norm form, and why it is not here).</strong> The quaternion norm $N(\tilde R)=\sum_{\mu}R_{\mu}^{2}$ is a quadratic form of the algebra but it is <strong>not</strong> Hermitian for the dagger: $N$ is complex-valued, indefinite and isotropic on the null cone. It is a form of the complex bilinear type, not a form of the dagger, and the two must not be placed in the same classification (<em>Biquaternion Norm and Invertibility</em>).</p>
+<h2 id="congruence-and-the-isometry-group">Congruence and the Isometry Group</h2>
+<p><strong>Definition.</strong> Two Hermitian forms $h_{H},h_{H'}$ on the rank-one module are <strong>congruent</strong> if there is an invertible $S\in\mathbb{B}^{\times}$ with</p>
+<p>$$
+H' = S^{\dagger}H\,S .
+$$</p>
+<p>Congruence is an equivalence relation, and the map $H\mapsto S^{\dagger}HS$ is precisely the <strong>two-sided operator</strong> $\Theta_{S}$ of <em>Two-Sided Operators on the Biquaternion Algebra with Hermitian Adjoint</em> applied to the form matrix. The invariants of congruence are the invariants of the two-sided operators seen on the Hermitian elements.</p>
+<p><strong>Definition.</strong> The <strong>isometry group</strong> of $h_{H}$ is $U(H)=\{\,S\in\mathbb{B}^{\times} : S^{\dagger}HS=H\,\}$. For the unit form,</p>
+<p>$$
+U(e_{0}) = \{\,S : S^{\dagger}S=e_{0}\,\} = U ,
+$$</p>
+<p>the <strong>unitary slice</strong>, of real dimension four, with determinant-one part $\mathrm{SU}(2)$ (<em>The Unitary Slice and the Compact Real Form with Hermitian Adjoint</em>).</p>
+<p><strong>Proposition (the slice acts by isometries and by congruence-preserving maps).</strong> For $S\in U$ the operator $\Theta_{S}$ is unitary, an algebra automorphism and, on the Hermitian elements, a congruence that preserves the unit form; more generally $U(H)$ is a subgroup of $\mathbb{B}^{\times}$ conjugate to $U(e_{0})$ by any $S$ with $S^{\dagger}H S$ the normal form of $H$.</p>
+<p><em>Proof.</em> The automorphism and unitarity statements are the theorems of the two-sided operators; for the last, if $T^{\dagger}HT$ is the normal form of $H$ then $U(H)=T^{-1}U(e_{0})T$ up to the null directions, since $S^{\dagger}HS=H$ is equivalent to $(TST^{-1})^{\dagger}(T^{\dagger}HT)(TST^{-1})=T^{\dagger}HT$.</p>
+<p><strong>Remark.</strong> The three groups must not be confused: $U(e_{0})=U(2)$ is the isometry group of the <strong>unit</strong> form; the isometry group of the <strong>norm</strong> form is the Lorentz-type group $\{|N|=1\}/\pm1=SO^{+}(1,3)$ up to phase; and the two are different because the two forms are different. This is the same contrast as in <em>Biquaternion Versors and the Orthogonal Group</em>.</p>
+<h2 id="sylvesters-law-of-inertia">Sylvester's Law of Inertia</h2>
+<p><strong>Definition.</strong> For $H\in\mathbb{M}_+$ the <strong>inertia</strong> is the triple $(p,q,r)$ of the numbers of positive, negative and zero eigenvalues of the matrix $\Phi(H)$, that is of the positive, negative and null dimensions of the form $h_{H}$.</p>
+<p><strong>Theorem (Sylvester's law of inertia).</strong> Congruence preserves the inertia:</p>
+<p>$$
+H' = S^{\dagger}HS,\ S\in\mathbb{B}^{\times}\quad\Longrightarrow\quad \mathrm{inertia}(H')=\mathrm{inertia}(H).
+$$</p>
+<p>Moreover every Hermitian $H$ is congruent to the <strong>normal form</strong></p>
+<p>$$
+H \sim \mathrm{diag}\bigl(1_{p},\,-1_{q},\,0_{r}\bigr),\qquad (p,q,r)=\mathrm{inertia}(H).
+$$</p>
+<p><em>Proof.</em> In the matrix model, $H$ is Hermitian, so there is a unitary $V$ with $V^{\dagger}HV=\mathrm{diag}(\lambda_{1},\lambda_{2})$, $\lambda_{i}\in\mathbb{R}$; the scalings $1/\sqrt{|\lambda_{i}|}$ on the nonzero directions give the normal form, and $S^{\dagger}HS$ is Hermitian with the same signature by the inertia theorem for Hermitian matrices. The statement was verified on random Hermitian pairs with random invertible $S$, and the normal form was constructed explicitly from the eigenbasis.</p>
+<p><strong>Corollary (additivity and the rank).</strong> The signature $\sigma(H)=p-q$ and the rank $p+q$ are additive under the orthogonal sum,</p>
+<p>$$
+\sigma(H\oplus H')=\sigma(H)+\sigma(H'),\qquad \mathrm{rank}(H\oplus H')=\mathrm{rank}(H)+\mathrm{rank}(H'),
+$$</p>
+<p>and the inertia of the orthogonal sum is the sum of the inertias. This was verified on random pairs in the four-dimensional model.</p>
+<h2 id="the-classification-and-the-unitary-witt-group">The Classification and the Unitary Witt Group</h2>
+<p><strong>Theorem (the classification on the rank-one module).</strong> The congruence classes of the Hermitian forms on the rank-one module over $\mathbb{B}$ are exactly the inertias with $p+q+r=2$:</p>
+<p>$$
+(2,0,0),\quad(1,1,0),\quad(0,2,0),\quad(1,0,1),\quad(0,1,1),\quad(0,0,2).
+$$</p>
+<p><em>Proof.</em> The normal form is determined by its inertia and the inertia is invariant, so two forms with the same inertia are congruent and two with different inertias are not.</p>
+<p><strong>Definition (the hyperbolic plane).</strong> The form of inertia $(1,1,0)$,</p>
+<p>$$
+\mathrm{Hyp} = \mathrm{diag}(1,-1),
+$$</p>
+<p>is the <strong>hyperbolic plane</strong>; the forms of inertia $(p+k,q+k,r)$ that are orthogonal sums of a form with the hyperbolic plane are <strong>hyperbolic</strong>. A non-degenerate form with $p=q$ is hyperbolic.</p>
+<p><strong>Definition (the unitary Witt group).</strong> On the non-degenerate Hermitian forms, call two forms <strong>Witt equivalent</strong> if they become isometric after adding hyperbolic planes to each. The classes form the <strong>unitary Witt group</strong> $W(\mathbb{B},{}^{\dagger})$ under the orthogonal sum, the inverse of a class being given by the negation of the form.</p>
+<p><strong>Theorem (the Witt group of the biquaternion algebra is $\mathbb{Z}$).</strong> The signature is a complete invariant of the Witt class, and</p>
+<p>$$
+W(\mathbb{B},{}^{\dagger}) \;\cong\; \mathbb{Z},\qquad \text{generated by the class of the unit form } h_{e_{0}} .
+$$</p>
+<p><em>Proof.</em> The signature is additive, vanishes on the hyperbolic plane and changes sign under the negation, so it descends to a group homomorphism $W\to\mathbb{Z}$. It is injective because a form with signature zero has $p=q$, hence is hyperbolic, hence is the zero class; and it is surjective because the class of the unit form has signature $2$, so its multiples realise every even integer, while the class of the form $\mathrm{diag}(1,-1,-1,-1)$ has signature $-2$ and realises the negative ones. In the rank-two module the same argument applies with the signature of a $4\times4$ Hermitian matrix.</p>
+<p><strong>Remark (what the group is not).</strong> Over the complex numbers the signature classification collapses, since scaling by $i$ exchanges the signs and there is only one class up to congruence: the interesting group is the one of the <strong>real</strong> involution, which is the one used here since $\mathbb{M}_+$ is a real form. The Witt group is therefore $\mathbb{Z}$ and not $\mathbb{Z}/2$, and the invariant is the full signature, not only the parity of the rank.</p>
+<h2 id="math99-hermitian-forms-and-the-signed-involution">$\varepsilon$-Hermitian Forms and the Signed Involution</h2>
+<p><strong>Definition.</strong> Let $\theta$ be an involution of $\mathbb{B}$ and let $\varepsilon=\pm1$. A form is <strong>$\varepsilon$-Hermitian</strong> for $\theta$ if $h(\tilde Y,\tilde R)=\varepsilon\,\theta(h(\tilde R,\tilde Y))$. The case $\varepsilon=+1$ is the Hermitian case of the article; the case $\varepsilon=-1$ is the <strong>skew-Hermitian</strong> case, and for $\theta=\mathrm{id}$ the two cases are the symmetric and the alternating bilinear forms, whose classification over a field of characteristic not two is again by congruence but with the alternating forms contributing the hyperbolic class.</p>
+<p><strong>Remark (the four combinations of the corpus).</strong> The corpus's four two-sided operators are the four combinations of the left twist, identity or signed, and the right factor, inverse or dagger: $\Theta_{\tilde R}$ for the twisted cases and $\mathrm{H}_{\tilde R}$ for the Hermitian ones (<em>Mixed Inner Conjugation and Hermitian Adjoint</em>). Each of them acts on the forms of the corresponding type: the congruence $H\mapsto S^{\dagger}HS$ is the Hermitian case, the congruence $H\mapsto S^{\dagger}HS$ with the twist $\alpha$ is the signed case, and the two have the same inertia theory because the twist is an isomorphism of $\mathbb{M}_+$.</p>
+<h2 id="worked-examples">Worked Examples</h2>
+<p><strong>The unit form and the norm form.</strong> The unit form has inertia $(2,0,0)$ and signature $2$; the form $\mathrm{diag}(1,-1)$ has inertia $(1,1,0)$ and signature $0$ and is the hyperbolic plane; the form $\mathrm{diag}(1,0)$ has inertia $(1,0,1)$ and rank one. The norm form $N$ is not in the classification at all.</p>
+<p><strong>The congruence by a two-sided operator.</strong> For $S=e_{0}+e_{1}$, of determinant two and invertible, and $H=\mathrm{diag}(1,-1)$, the congruent form $S^{\dagger}HS$ has the same inertia $(1,1,0)$. For $S$ a null element, $N(S)=0$, $S$ is not invertible and the congruence is not an equivalence: the form $\mathrm{diag}(1,0)$ is reached, and the rank drops. This is the algebraic content of the collapse worked in <em>Two-Sided Operators on the Biquaternion Algebra with Hermitian Adjoint</em>.</p>
+<p><strong>The isometry group of the unit form.</strong> $U(e_{0})=U(2)$: the maps $S$ with $S^{\dagger}S=e_{0}$, exactly the unitary slice, of real dimension four. The isometry group of the hyperbolic plane $\mathrm{diag}(1,-1)$ is $U(1,1)$, indefinite, of real dimension four as well but non-compact: the two forms have the same dimension of the isometry group and different topology, which is the group-level shadow of the difference of the signatures.</p>
+<p><strong>The Witt class of a sum.</strong> $\mathrm{diag}(1,1)\oplus\mathrm{diag}(-1,-1)$ has signature zero, hence is hyperbolic, hence is the zero Witt class, even though each summand is non-degenerate: this is the collapse that the Witt group performs and the inertia does not.</p>
+<h2 id="summary">Summary</h2>
+<p>A Hermitian form on the rank-one module over the biquaternion algebra is a Hermitian matrix $H$, $h_{H}(\tilde R,\tilde Y)=\tilde R^{\dagger}H\tilde Y$; congruence $H\mapsto S^{\dagger}HS$ is the two-sided operator of the corpus applied to the form, and its equivalence classes are the <strong>inertias</strong> $(p,q,r)$ with $p+q+r=2$, by <strong>Sylvester's law</strong>, with normal form $\mathrm{diag}(1_{p},-1_{q},0_{r})$. The signature $\sigma=p-q$ and the rank are additive under the orthogonal sum. The isometry group of the unit form $h_{e_{0}}(\tilde R,\tilde Y)=\tilde R^{\dagger}\tilde Y$ is the unitary slice $U=U(2)$, and the isometry group of the quaternion norm is a different, non-compact group, because the two forms are of different types. The hyperbolic plane $\mathrm{diag}(1,-1)$ is the null form of the Witt theory, and the non-degenerate forms modulo the hyperbolic ones form the <strong>unitary Witt group $W(\mathbb{B},{}^{\dagger})\cong\mathbb{Z}$</strong>, generated by the unit form and computed by the signature. The $\varepsilon$-Hermitian case is the signed analogue, with the same inertia theory because the twist is an isomorphism of the Hermitian cone.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$h_{H}(\tilde R,\tilde Y)=\tilde R^{\dagger}H\tilde Y$</td>
+<td>Hermitian form of the rank-one module, $H\in\mathbb{M}_+$</td>
+</tr>
+<tr>
+<td>$h_{e_{0}}(\tilde R,\tilde Y)=\tilde R^{\dagger}\tilde Y$</td>
+<td>The unit form; positive definite; trace form of the dagger</td>
+</tr>
+<tr>
+<td>$N(\tilde R)=\sum_{\mu}R_{\mu}^{2}$</td>
+<td>The quaternion norm; <strong>not</strong> a Hermitian form of the dagger</td>
+</tr>
+<tr>
+<td>$H'\sim H \iff H'=S^{\dagger}HS$</td>
+<td>Congruence; the two-sided operator on the form matrix</td>
+</tr>
+<tr>
+<td>$(p,q,r)$</td>
+<td>Inertia: positive, negative and null dimensions</td>
+</tr>
+<tr>
+<td>$\mathrm{diag}(1_{p},-1_{q},0_{r})$</td>
+<td>Sylvester normal form</td>
+</tr>
+<tr>
+<td>$\mathrm{Hyp}=\mathrm{diag}(1,-1)$</td>
+<td>The hyperbolic plane; signature $0$, Witt class $0$</td>
+</tr>
+<tr>
+<td>$U(H)=\{S:S^{\dagger}HS=H\}$</td>
+<td>Isometry group; $U(e_{0})=U(2)$</td>
+</tr>
+<tr>
+<td>$\sigma=p-q$</td>
+<td>Signature; complete invariant of the Witt class</td>
+</tr>
+<tr>
+<td>$W(\mathbb{B},{}^{\dagger})\cong\mathbb{Z}$</td>
+<td>The unitary Witt group, generated by the unit form</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>Hermitian Forms over an Involution Ring and the Unitary Witt Group with Hermitian Adjoint</em> (<code>articles_maths/hermitian-forms-over-an-involution-ring-and-the-unitary-witt-group-with-hermitian-adjoint.md</code>), the general theory of which this is the biquaternion instance.</li>
+<li><em>Hermitian Forms on a Clifford Algebra with Hermitian Adjoint</em> (<code>articles_maths/hermitian-forms-on-a-clifford-algebra-with-hermitian-adjoint.md</code>), for the forms of an anti-involution and the canonical Hermitian form.</li>
+<li><em>The Hermitian Sandwich in the Biquaternion Algebra with Hermitian Adjoint</em> (<code>articles_maths/the-hermitian-sandwich-in-the-biquaternion-algebra-with-hermitian-adjoint.md</code>), for the same objects in coordinates: the forms, positivity, the cone and the slice.</li>
+<li><em>Biquaternion Hermitian Subspace</em> (<code>articles_maths/biquaternion-hermitian-subspace.md</code>), for the Hermitian elements, the positive cone and the real form.</li>
+<li><em>Two-Sided Operators on the Biquaternion Algebra with Hermitian Adjoint</em> (<code>articles_maths/two-sided-operators-on-the-biquaternion-algebra-with-hermitian-adjoint.md</code>), for the congruence as an operator, its invariants and its degenerate cases.</li>
+<li><em>Positivity and the Hermitian Cone of a Clifford Algebra with Hermitian Adjoint</em> (<code>articles_maths/positivity-and-the-hermitian-cone-of-a-clifford-algebra-with-hermitian-adjoint.md</code>), for the positive cone in which the signature lives.</li>
+<li><em>The Unitary Slice and the Compact Real Form with Hermitian Adjoint</em> (<code>articles_maths/the-unitary-slice-and-the-compact-real-form-with-hermitian-adjoint.md</code>), for the isometry group of the unit form.</li>
+<li><em>Biquaternion Norm and Invertibility</em> (<code>articles_maths/biquaternion-norm-and-invertibility.md</code>), for the norm, its isotropy and the group of units.</li>
+<li><em>Biquaternion Versors and the Orthogonal Group</em> (<code>articles_maths/biquaternion-versors-and-the-orthogonal-group.md</code>), for the isometry group of the norm and the contrast with the slice.</li>
+<li><em>Mixed Inner Conjugation and Hermitian Adjoint</em> (<code>articles_maths/mixed-inner-conjugation-and-hermitian-adjoint.md</code>), for the four two-sided operators and the signed congruence.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

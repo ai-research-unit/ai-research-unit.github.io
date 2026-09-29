@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="positivity-and-the-hermitian-cone-of-the-biquaternion-algebra-with-hermitian-adjoint"><strong>Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The physics of the framework is written with one operator and one cone. The operator is the dagger sandwich $\Theta_{\tilde{Q}}(\tilde T)=\tilde{Q}\tilde T\tilde{Q}^{\dagger}$, and its value at the identity, $\Theta_{\tilde{Q}}(e_0)=\tilde{Q}\tilde{Q}^{\dagger}$, is the <strong>state</strong> prepared by the amplitude $\tilde{Q}$: the density matrix of the Born rule (<em>Two-Sided Operators on the Biquaternion Algebra with Hermitian Adjoint</em>, <em>Completely Positive Maps of the Biquaternion Algebra with Hermitian Adjoint</em>). The cone is the set of those states, the positive semidefinite Hermitian elements of the informational sector, over which the channels are defined and inside which the Bloch ball sits (<em>The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector</em>, <em>The Bloch Ball as the Trace-One Slice of the Future Light Cone</em>).</p>
+<p>This article is the physics companion of <em>Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint</em> of the mathematical series, where the positivity of the involution, the cone, the polar decomposition and the Cartan involution are proved with their algebra. Here the same objects are read physically: the involution is the Hilbert-space structure of the internal space, the cone is the state cone, the polar decomposition is the amplitude split into modulus and phase, and the Cartan involution is the internal conjugation whose fixed set is the internal symmetry group. The result that makes the reading possible, and the one trap it must not fall into, are stated first.</p>
+<h2 id="positivity-is-the-hilbert-space-structure">Positivity is the Hilbert-Space Structure</h2>
+<p><strong>Theorem (the dagger is positive).</strong> For every biquaternion $\tilde{Q}$,</p>
+<p>$$
+\mathrm{Sc}\bigl(\tilde{Q}^{\dagger}\tilde{Q}\bigr)=\sum_{\mu=0}^{3}\lvert Q_\mu\rvert^{2}\ \ge0 ,
+$$</p>
+<p>with equality only at $\tilde{Q}=0$; so the dagger is a positive involution and the scalar form $(\tilde R,\tilde T)=\mathrm{Sc}(\tilde R^{\dagger}\tilde T)$ is positive definite.</p>
+<p><strong>Physical reading.</strong> The internal space has a positive definite inner product, hence a Hilbert-space structure, and the positivity is the statement that no amplitude has negative norm. The quantity $\mathrm{Sc}(\tilde{Q}^{\dagger}\tilde{Q})$ is the squared Hilbert–Schmidt length of the amplitude, and the pairing $(H,K)=\mathrm{Sc}(HK)$ between two Hermitian elements is the <strong>trace pairing of observables and states</strong>: the expectation value of the observable $H$ in the state $K$, up to the trace. This is the internal form of the framework, and every statement of positivity, of the state cone and of the Bloch ball is a statement about it.</p>
+<p><strong>The trap: positivity does not require a definite norm.</strong> The biquaternion norm $N(\tilde{Q})=\sum_\mu Q_\mu^{2}$ is complex and indefinite, and its vanishing on the null cone is the light cone of the material sector (<em>Biquaternion Norm and Invertibility</em>, <em>The Clifford Structure of the Biquaternion Algebra</em>). It is tempting to conclude that the framework cannot be a quantum theory because its norm is not positive. The conclusion is wrong, and the reason is exact: $N$ and the scalar form belong to two different structures on the one algebra. The dagger of $\mathbb{B}$ is not the Clifford conjugation of the Minkowski structure but the <strong>reversion</strong> of the positive definite structure $\mathbb{B}\cong\mathrm{Cl}_{3,0}$, and a positive definite Clifford form gives its cone through reversion, not through conjugation — the exchange of sides recorded in <em>Positivity and the Hermitian Cone of a Clifford Algebra with Hermitian Adjoint</em>. Positivity of the internal form and indefiniteness of the interval are therefore compatible statements about the same algebra, and using either one where the other belongs is the standard error of the framework.</p>
+<h2 id="the-state-cone">The State Cone</h2>
+<p><strong>Theorem (the cone).</strong> The set of squares</p>
+<p>$$
+P=\bigl\{\tilde{Q}^{\dagger}\tilde{Q}:\tilde{Q}\in\mathbb{B}\bigr\}=\bigl\{\tilde{Q}\tilde{Q}^{\dagger}:\tilde{Q}\in\mathbb{B}\bigr\}
+$$</p>
+<p>is the cone of positive semidefinite Hermitian elements, the <strong>state cone</strong> of the informational sector. It is a closed convex cone of real dimension four, pointed, generating the sector, and self-dual for the trace pairing.</p>
+<p><strong>Physical reading.</strong> The elements of $P$ are exactly the (unnormalised) <strong>states</strong>: positive semidefinite Hermitian operators, of real dimension four as a cone, whose trace-one slice is the Bloch ball of the two-state system. The square root in the identity $H=H^{1/2}(H^{1/2})^{\dagger}$ says that every state is prepared by an amplitude, which is the Born rule read backwards: the map $\tilde{Q}\mapsto\tilde{Q}\tilde{Q}^{\dagger}$ is onto the state cone. Self-duality is the statement that an observable is positive exactly when it has non-negative expectation in every state — the operational definition of a positive observable.</p>
+<p><strong>Corollary (interior, boundary and pure states).</strong> The interior of the cone is the set of positive definite elements,</p>
+<p>$$
+P^{\circ}=\bigl\{\tilde{Q}\tilde{Q}^{\dagger}:N(\tilde{Q})\neq0\bigr\}=\bigl\{\tilde{Q}\tilde{Q}^{\dagger}:\tilde{Q}\ \text{invertible}\bigr\},
+$$</p>
+<p>the <strong>faithful</strong> (full-rank) states, prepared by the amplitudes that are not null; the boundary consists of the rank-one states prepared by the null amplitudes, which are the <strong>pure</strong> states.</p>
+<p><strong>Physical reading.</strong> The causal structure of the state space is the cone: a state is faithful iff its amplitude is invertible, iff it lies off the null cone, iff it is prepared by a non-null amplitude. The boundary states are the pure states; in the matrix model they are the outer products $vv^{\dagger}$ of a spinor and its conjugate, parametrised up to a complex scalar by the projective line $\mathbb{P}^{1}(\mathbb{C})$, which is the Bloch sphere of the two-state system and the celestial sphere of the material sector at once (<em>Biquaternion Null Quadric and Projective Geometry</em>, <em>Exercise: the Bloch Ball and the Geometry of Mixed States</em>). The cone's extreme rays are those pure states, so the convex geometry of the state space is the geometry of the pure states it generates.</p>
+<p><strong>Remark (the two cones, again).</strong> The cone of this article is the <strong>future light cone</strong> of the interval form on the informational sector: writing $H=te_0+i\mathbf{u}$ with real $t$ and $\mathbf{u}$, the condition is $t\ge\lvert\mathbf{u}\rvert$, of which the trace-one slice is the Bloch ball (<em>The Bloch Ball as the Trace-One Slice of the Future Light Cone</em>). The <em>isotropic cone</em> of the sector — the null set $t^{2}=\lvert\mathbf{u}\rvert^{2}$ — is the boundary of that cone together with its reflection, and it is the set of pure states read without the sign of the time component. The state cone is one half of the light cone of the informational sector, closed up at the apex; it is not the light cone of the material sector, which is a cone in a different subspace.</p>
+<h2 id="the-amplitude-its-modulus-and-its-phase">The Amplitude, Its Modulus and Its Phase</h2>
+<p><strong>Theorem (the polar decomposition).</strong> Every amplitude factorises as</p>
+<p>$$
+\tilde{Q}=U\lvert\tilde{Q}\rvert,
+\qquad
+\lvert\tilde{Q}\rvert=\bigl(\tilde{Q}^{\dagger}\tilde{Q}\bigr)^{1/2}\in P,
+\qquad
+U^{\dagger}U=e_0,
+$$</p>
+<p>with $\lvert\tilde{Q}\rvert$ a positive Hermitian element and $U$ unitary; the factorisation is unique exactly when $N(\tilde{Q})\neq0$, that is off the null cone.</p>
+<p><strong>Physical reading.</strong> The amplitude splits into a <strong>modulus</strong>, which is a state — modulo the normalisation, the state the amplitude prepares — and a <strong>phase</strong>, which is a unitary. The identity $N(\lvert\tilde{Q}\rvert)=\lvert N(\tilde{Q})\rvert\ge0$ makes the point exactly: the modulus is a positive element of the informational sector, and its norm there is the absolute value of the interval. Off the null cone the split is unambiguous and the phase is a well-defined unitary; on the null cone the modulus is a rank-one state and the phase is not defined, which is the operator form of the statement that a null amplitude prepares a pure state and carries no invariant phase. The polar element representation of the corpus separates the same amplitude into scale, central phase, boost and rotor (<em>Biquaternion Polar Element Representation</em>); the two factorisations exist on the same set — the algebra with the null cone removed — and differ in which unitaries the phase is allowed to be, the dagger decomposition allowing the whole internal group $U(2)$.</p>
+<h2 id="the-internal-conjugation">The Internal Conjugation</h2>
+<p><strong>Definition.</strong> The <strong>Cartan involution</strong> of the group of units is</p>
+<p>$$
+\theta(\tilde{Q})=\bigl(\tilde{Q}^{\dagger}\bigr)^{-1}.
+$$</p>
+<p><strong>Proposition (definition and fixed set).</strong> $\theta$ is an automorphism of order two of $\mathbb{B}^{\times}=GL(2,\mathbb{C})$, its fixed set is exactly the internal symmetry group of the module,</p>
+<p>$$
+\theta(\tilde{Q})=\tilde{Q}\iff\tilde{Q}\in U=U(2),
+$$</p>
+<p>and its differential is $-{}^{\dagger}$, positive on the generators (the material sector) and negative on the observables (the informational sector).</p>
+<p><strong>Physical reading.</strong> The internal conjugation is the operation that inverts an amplitude and conjugates it, and the group it fixes is the internal symmetry group: an amplitude is its own internal conjugate exactly when it is a symmetry. The Lie-theoretic form is the Cartan decomposition</p>
+<p>$$
+\mathfrak{gl}(2,\mathbb{C})=u(2)\oplus H_2(\mathbb{C}),
+\qquad
+[\mathbb{M}_-,\mathbb{M}_-]\subseteq\mathbb{M}_-,\quad
+[\mathbb{M}_-,\mathbb{M}_+]\subseteq\mathbb{M}_+,\quad
+[\mathbb{M}_+,\mathbb{M}_+]\subseteq\mathbb{M}_- :
+$$</p>
+<p>the generators close on themselves, the observables are rotated by the generators, and the commutator of two observables is a generator. At the group level every invertible amplitude is a symmetry times the exponential of an observable, $\mathbb{B}^{\times}=U(2)\cdot\exp(\mathbb{M}_+)$, and the quotient is the space of faithful states, $\mathbb{B}^{\times}/U(2)\cong P^{\circ}$. The internal conjugation is the symmetry that makes the state space a symmetric space, with the faithful states as its points and the internal group as its isometries.</p>
+<p><strong>Remark (the trap of the real-quaternion slice).</strong> On the real-quaternion slice the dagger is the quaternion conjugation, so $\tilde{Q}^{\dagger}\tilde{Q}=N(\tilde{Q})e_0$ is a real scalar and the modulus is a multiple of the identity: the state prepared by such an amplitude is proportional to the identity, that is unpolarised. The slice meets the state cone in the single ray $\mathbb{R}_{\ge0}e_0$, and on it the Cartan involution is $\tilde{Q}\mapsto\tilde{Q}/N(\tilde{Q})$, not the conjugation of the quaternions. Neither the state cone nor the internal conjugation restricts to the slice as it stands: they are operations of the full complexification, and a reader who fixes the real-quaternion slice first will misread both.</p>
+<h2 id="summary">Summary</h2>
+<p>The dagger of the biquaternion algebra is a <strong>positive involution</strong>: $\mathrm{Sc}(\tilde{Q}^{\dagger}\tilde{Q})=\sum_\mu\lvert Q_\mu\rvert^{2}$ is strictly positive off zero, so the internal space is a Hilbert space and $(H,K)=\mathrm{Sc}(HK)$ is the trace pairing of observables and states. This is compatible with the indefiniteness of the <strong>interval</strong> $N$, which belongs to the Minkowski structure and not to the internal one: the dagger is the reversion of the positive definite Clifford structure $\mathbb{B}\cong\mathrm{Cl}_{3,0}$, and the exchange of sides is exactly what makes positivity hold. The <strong>state cone</strong> $P=\{\tilde{Q}^{\dagger}\tilde{Q}\}=\{\tilde{Q}\tilde{Q}^{\dagger}\}$ is the positive semidefinite Hermitian cone, the cone of unnormalised states, of real dimension four, self-dual for the trace pairing, with the <strong>faithful</strong> states as interior and the <strong>pure</strong> states — the rank-one outer products $vv^{\dagger}$, parametrised by $\mathbb{P}^{1}(\mathbb{C})$ — as boundary. In the interval form of the informational sector it is the forward light cone $t\ge\lvert\mathbf{u}\rvert$, whose trace-one slice is the Bloch ball; it is not the isotropic cone, which is its boundary together with its reflection.</p>
+<p>Every amplitude factorises as $\tilde{Q}=U\lvert\tilde{Q}\rvert$, a <strong>phase</strong> times a <strong>modulus</strong>, the modulus positive and of norm $\lvert N(\tilde{Q})\rvert$, the decomposition unique exactly off the null cone; a null amplitude prepares a pure state and carries no invariant phase. The <strong>internal conjugation</strong> $\theta(\tilde{Q})=(\tilde{Q}^{\dagger})^{-1}$ is an automorphism of order two of the group of units with fixed set the internal symmetry group $U(2)$ and differential $-{}^{\dagger}$, and its eigen-decomposition is the Cartan decomposition $\mathfrak{gl}(2,\mathbb{C})=u(2)\oplus H_2(\mathbb{C})$ with the three bracket inclusions; at the group level $\mathbb{B}^{\times}=U(2)\cdot\exp(\mathbb{M}_+)$ and $\mathbb{B}^{\times}/U(2)\cong P^{\circ}$, the faithful states. The real-quaternion slice is the exceptional case for both constructions: there the modulus is a scalar and the conjugation is not the quaternionic one.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{M}_+,\mathbb{M}_-$</td>
+<td>Informational (observables) and material (generators) sectors</td>
+</tr>
+<tr>
+<td>$\mathrm{Sc}(\tilde{Q}^{\dagger}\tilde{Q})=\sum_\mu\lvert Q_\mu\rvert^{2}$</td>
+<td>Positivity; the internal Hilbert-space form</td>
+</tr>
+<tr>
+<td>$(H,K)=\mathrm{Sc}(HK)$</td>
+<td>Trace pairing of observables and states</td>
+</tr>
+<tr>
+<td>$P=\{\tilde{Q}^{\dagger}\tilde{Q}\}=\{\tilde{Q}\tilde{Q}^{\dagger}\}$</td>
+<td>State cone; positive semidefinite Hermitian elements</td>
+</tr>
+<tr>
+<td>$P^{\circ}=\{N(\tilde{Q})\neq0\}$</td>
+<td>Faithful states; prepared by invertible amplitudes</td>
+</tr>
+<tr>
+<td>$vv^{\dagger}$ up to scalar</td>
+<td>Pure states; $\mathbb{P}^{1}(\mathbb{C})$; Bloch sphere</td>
+</tr>
+<tr>
+<td>$t\ge\lvert\mathbf{u}\rvert$</td>
+<td>The state cone as the forward light cone; Bloch ball at trace one</td>
+</tr>
+<tr>
+<td>$\tilde{Q}=U\lvert\tilde{Q}\rvert$</td>
+<td>Amplitude as phase times modulus; unique off the null cone</td>
+</tr>
+<tr>
+<td>$\theta(\tilde{Q})=(\tilde{Q}^{\dagger})^{-1}$</td>
+<td>Internal conjugation; fixed set $U(2)$</td>
+</tr>
+<tr>
+<td>$\mathbb{B}^{\times}=U(2)\cdot\exp(\mathbb{M}_+)$</td>
+<td>Symmetry times observable; faithful states as the quotient</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint</em> (<code>articles_maths/positivity-and-the-hermitian-cone-of-the-biquaternion-algebra-with-hermitian-adjoint.md</code>), the mathematical companion, for the positivity of the involution, the cone, the polar decomposition and the Cartan involution.</li>
+<li><em>The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector</em> (<code>articles_physics/the-hermitian-subspace-m-plus-as-the-informational-sector.md</code>), for the observables, the state cone and the trace-one slice.</li>
+<li><em>The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector</em> (<code>articles_physics/the-anti-hermitian-subspace-m-as-the-material-sector.md</code>), for the four-vectors, the generators and the interval.</li>
+<li><em>The Bloch Ball as the Trace-One Slice of the Future Light Cone</em> (<code>articles_physics/the-bloch-ball-as-the-trace-one-slice-of-the-future-light-cone.md</code>), for the state space, its pure points and its geometry.</li>
+<li><em>Exercise: the Bloch Ball and the Geometry of Mixed States</em> (<code>articles_physics/exercise-the-bloch-ball-and-the-geometry-of-mixed-states.md</code>), for the worked geometry of the state cone.</li>
+<li><em>Two-Sided Operators on the Biquaternion Algebra with Hermitian Adjoint</em> (<code>articles_physics/two-sided-operators-on-the-biquaternion-algebra-with-hermitian-adjoint.md</code>), for the sandwich, the amplitude-to-state map and the observables.</li>
+<li><em>Completely Positive Maps of the Biquaternion Algebra with Hermitian Adjoint</em> (<code>articles_physics/completely-positive-maps-of-the-biquaternion-algebra-with-hermitian-adjoint.md</code>), for the channels defined over the state cone.</li>
+<li><em>Biquaternion Polar Element Representation</em> (<code>articles_maths/biquaternion-polar-element-representation.md</code>), for the other factorisation of an amplitude.</li>
+<li><em>Biquaternion Norm and Invertibility</em> (<code>articles_maths/biquaternion-norm-and-invertibility.md</code>), for the interval, the null cone and the invertibility criterion.</li>
+<li><em>The Clifford Structure of the Biquaternion Algebra</em> (<code>articles_physics/biquaternion-clifford-structure.md</code>), for the two Clifford structures and the identification of the dagger with the Euclidean reversion.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

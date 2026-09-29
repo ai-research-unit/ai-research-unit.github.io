@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Self-Adjoint and Skew Operators with Hermitian Adjoint — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="self-adjoint-and-skew-operators-with-hermitian-adjoint"><strong>Self-Adjoint and Skew Operators with Hermitian Adjoint</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The adjoint $\ast$ turns the algebra $\mathrm{End}_A(S)$ of operators on a Hermitian Clifford module into a <strong>$\ast$-algebra</strong>, and a $\ast$-algebra is cut into two halves by its involution. The operators fixed by the adjoint, $T^{\ast} = T$, are <strong>self-adjoint</strong>; the operators negated by it, $T^{\ast} = -T$, are <strong>skew-adjoint</strong>; and every operator is the sum of a self-adjoint and a skew-adjoint part, $T = \tfrac12(T+T^{\ast}) + \tfrac12(T-T^{\ast})$, whenever $2$ is invertible. The two halves carry the two algebraic structures of the theory: the skew-adjoint operators close under the commutator and form the <strong>Lie algebra</strong> of the unitary group of the form, and the self-adjoint operators close under the anticommutator (the circle product) and form the <strong>Jordan algebra</strong> that describes the symmetric space of the theory.</p>
+<p>The article assembles this structure for the form $\langle s,t\rangle = \mathrm{Sc}(s^{\dagger}t)$ of <em>Hermitian Clifford Modules with Hermitian Adjoint</em> and for the same form on the algebra, and it computes its two characteristic instances: the left and right regular representations, where self-adjointness of the operator is equivalent to self-adjointness of the element, and the Lie algebra of the unitary slice, where the skew-adjoint operators are exactly the inner derivations. The three product relations of the $\ast$-algebra — the commutator of two self-adjoint operators is skew-adjoint, the commutator of a self-adjoint and a skew-adjoint operator is self-adjoint, and the anticommutator of two self-adjoint operators is self-adjoint — are the algebraic form of the three-fold decomposition of the unitary group, whose geometric reading as a flag manifold is Part IV's, and they are the reason the adjoint theory is exhaustive: because the involution is the only structure that the module form imposes on the operators, the whole theory — the group, the symmetric space on which the self-adjoint half acts, and the spectra — is encoded in the one splitting.</p>
+<p>The adjoint is <em>The Adjoint of the One-Sided Action with Hermitian Adjoint</em>; the module and its form are <em>Hermitian Clifford Modules with Hermitian Adjoint</em>; the two-sided operators are <em>Two-Sided Operators on a Clifford Algebra</em> and <em>Mixed Inner Conjugation and Hermitian Adjoint</em>; the Hermitian sandwich is <em>The Hermitian Sandwich on a Clifford Algebra with Hermitian Adjoint</em>; the unitary slice, the compact real form and the Lie algebra are <em>The Unitary Slice and the Compact Real Form with Hermitian Adjoint</em>; the positivity and the cone are <em>Positivity and the Hermitian Cone of a Clifford Algebra with Hermitian Adjoint</em>; the spectral theory of the self-adjoint operators is <em>The Spectra of Self-Adjoint Operators with Hermitian Adjoint</em>; the bilinear and Dirac operators are <em>Bilinear Operators on a Clifford Module with Hermitian Adjoint</em>, <em>Dirac Operators with Hermitian Adjoint</em> and <em>Spinor Adjoints and the Dirac Adjoint with Hermitian Adjoint</em>; and the application to the orthogonal group is <em>The Spinor Norm and the Structure of the Orthogonal Group with Inner Conjugation</em>.</p>
+<h2 id="the-math10-algebra-of-operators">The $\ast$-Algebra of Operators</h2>
+<h3 id="the-adjoint">The Adjoint</h3>
+<p><strong>Definition.</strong> Let $(S,\langle\,,\rangle)$ be a Hermitian Clifford module with sesquilinear form $\langle s,t\rangle = \mathrm{Sc}(s^{\dagger}t)$, conjugate-linear in $s$ and linear in $t$. For $T\in\mathrm{End}_A(S)$ the <strong>adjoint</strong> $T^{\ast}$ is the operator with</p>
+<p>$$
+\langle Ts,t\rangle = \langle s,T^{\ast}t\rangle \qquad (s,t\in S),
+$$</p>
+<p>which exists and is unique because the form is non-degenerate.</p>
+<p><strong>Proposition (the involution).</strong> The adjoint satisfies</p>
+<p>$$
+(S+T)^{\ast} = S^{\ast}+T^{\ast}, \qquad (ST)^{\ast} = T^{\ast}S^{\ast}, \qquad (T^{\ast})^{\ast} = T, \qquad (\lambda T)^{\ast} = \bar\lambda\,T^{\ast},
+$$</p>
+<p>so that $\mathrm{End}_A(S)$ is a $\ast$-algebra. The adjoint is <strong>contravariant</strong> for the product, that is, it is an anti-automorphism of order two; this was checked on the two-sided operators of the regular module, where $(TU)^{\ast} = U^{\ast}T^{\ast}$ for general $T,U$.</p>
+<h3 id="self-adjoint-skew-adjoint-and-the-decomposition">Self-Adjoint, Skew-Adjoint and the Decomposition</h3>
+<p><strong>Definition.</strong> An operator is <strong>self-adjoint</strong> if $T^{\ast} = T$, <strong>skew-adjoint</strong> if $T^{\ast} = -T$, and <strong>normal</strong> if it commutes with its adjoint, $TT^{\ast} = T^{\ast}T$.</p>
+<p><strong>Theorem (the decomposition).</strong> If $2$ is invertible in the ground ring, every operator is the sum of its <strong>self-adjoint part</strong> and its <strong>skew-adjoint part</strong>,</p>
+<p>$$
+T = H(T) + K(T), \qquad H(T) = \tfrac12(T+T^{\ast}), \qquad K(T) = \tfrac12(T-T^{\ast}),
+$$</p>
+<p>with $H(T)^{\ast} = H(T)$ and $K(T)^{\ast} = -K(T)$; the parts are unique, and $T$ is self-adjoint iff $K(T) = 0$ and skew-adjoint iff $H(T) = 0$. So</p>
+<p>$$
+\mathrm{End}_A(S) = \mathrm{Herm}_A(S)\oplus\mathrm{Skew}_A(S)
+$$</p>
+<p>as vector spaces, with $\mathrm{Herm}_A(S)$ the self-adjoint operators and $\mathrm{Skew}_A(S)$ the skew-adjoint operators. This was checked for the two-sided operators of the regular module: $H(T)$ self-adjoint, $K(T)$ skew-adjoint, and $H(T)+K(T) = T$.</p>
+<p><strong>Remark (the reality conditions).</strong> Over a real form the self-adjoint and the skew-adjoint operators are the <strong>symmetric</strong> and the <strong>skew-symmetric</strong> operators for the bilinear form; over the complex algebra they are the Hermitian and the anti-Hermitian operators. The involution is the same algebraic object in both cases, and its sign is the only thing the reality condition changes.</p>
+<h2 id="the-two-structures">The Two Structures</h2>
+<h3 id="the-skew-adjoint-part-is-a-lie-algebra">The Skew-Adjoint Part is a Lie Algebra</h3>
+<p><strong>Theorem (the commutator).</strong> The commutator of two operators satisfies</p>
+<p>$$
+[S,T]^{\ast} = [T^{\ast},S^{\ast}],
+$$</p>
+<p>verified on the regular module. Consequently</p>
+<p>$$
+[\mathrm{Herm},\mathrm{Herm}]\subseteq\mathrm{Skew}, \qquad [\mathrm{Herm},\mathrm{Skew}]\subseteq\mathrm{Herm}, \qquad [\mathrm{Skew},\mathrm{Skew}]\subseteq\mathrm{Skew},
+$$</p>
+<p>so the skew-adjoint part is closed under the commutator and is a <strong>Lie algebra</strong>, while the commutator couples the two parts with the signs of a <strong>graded Lie algebra</strong>. All three inclusions were checked: with generic self-adjoint operators $H_1,H_2$ and generic skew-adjoint $K_1,K_2$ the commutators $[H_1,H_2]$, $[H_1,K_2]$, $[K_1,K_2]$ landed in $\mathrm{Skew}$, $\mathrm{Herm}$, $\mathrm{Skew}$ respectively.</p>
+<p><strong>Corollary (the Lie algebra of the unitary group).</strong> The skew-adjoint operators form the Lie algebra of the group $U$ of form-preserving operators, the bracket being the commutator, and the exponential $\exp(tK)$ of a skew-adjoint $K$ is a one-parameter family of form-preserving operators. This is the operator form of <em>The Unitary Slice and the Compact Real Form with Hermitian Adjoint</em>, where the same family is described by the algebraic condition $u^{\dagger}u = 1$.</p>
+<h3 id="the-self-adjoint-part-is-a-jordan-algebra">The Self-Adjoint Part is a Jordan Algebra</h3>
+<p><strong>Theorem (the circle product).</strong> The <strong>circle product</strong> (the anticommutator) $H\circ H' = \tfrac12(HH'+H'H)$ of two self-adjoint operators is self-adjoint,</p>
+<p>$$
+H^{\ast} = H,\ H'^{\ast} = H' \ \Longrightarrow \ (H\circ H')^{\ast} = H\circ H' ,
+$$</p>
+<p>and it is commutative and satisfies the Jordan identity, so the self-adjoint part is a <strong>Jordan algebra</strong>. This was checked: $H\circ H'$ landed in $\mathrm{Herm}$ for generic self-adjoint $H,H'$.</p>
+<p><strong>Proof.</strong> $(HH'+H'H)^{\ast} = H'^{\ast}H^{\ast}+H^{\ast}H'^{\ast} = H'H+HH'$, the same operator.</p>
+<p><strong>Remark (the two halves of the Cartan decomposition).</strong> The splitting $\mathrm{End}_A(S) = \mathrm{Herm}\oplus\mathrm{Skew}$ is the algebraic Cartan decomposition of the $\ast$-algebra: the skew part is the Lie algebra of the group of form-preserving operators, the self-adjoint part is closed under the circle product and is a Jordan algebra, and the commutator couples the two halves with the signs of a graded Lie algebra. The positive part of the self-adjoint half is the Hermitian cone of <em>Positivity and the Hermitian Cone of a Clifford Algebra with Hermitian Adjoint</em>. The geometric reading — the self-adjoint half as the tangent space of a symmetric space, the group as its motion group — is made in Part IV, where a tangent space is available.</p>
+<h3 id="orthogonality-and-the-hilbert-structure">Orthogonality and the Hilbert Structure</h3>
+<p><strong>Theorem (the two parts are orthogonal).</strong> With respect to the <strong>Hilbert–Schmidt form</strong> $\langle S,T\rangle_{HS} = \mathrm{Sc}(S^{\ast}T)$ on the operators, the real part of the product of a self-adjoint and a skew-adjoint operator vanishes,</p>
+<p>$$
+\mathrm{Re}\,\langle H,K\rangle_{HS} = 0 \qquad (H^{\ast} = H,\ K^{\ast} = -K),
+$$</p>
+<p>verified on the regular module. So the splitting $\mathrm{End} = \mathrm{Herm}\oplus\mathrm{Skew}$ is an <strong>orthogonal</strong> decomposition for the Hilbert–Schmidt form; the Hilbert-Schmidt form is positive definite exactly when the module form and the trace form are, that is, in the compact definite case.</p>
+<h2 id="the-regular-representation">The Regular Representation</h2>
+<h3 id="left-and-right-multiplication">Left and Right Multiplication</h3>
+<p><strong>Proposition (self-adjointness of the regular representations).</strong> For $a\in A$ with the Hermitian–Schmidt form $\langle x,y\rangle = \mathrm{Sc}(x^{\dagger}y)$ of <em>The Blade Form and the Hilbert Structure with Hermitian Adjoint</em>, let $L_a$ and $R_a$ be the left and the right multiplications. Then</p>
+<p>$$
+L_a^{\ast} = L_{a^{\dagger}}, \qquad R_a^{\ast} = R_{a^{\dagger}} ,
+$$</p>
+<p>so $L_a$ and $R_a$ are self-adjoint iff $a^{\dagger} = a$, and skew-adjoint iff $a^{\dagger} = -a$. These identities were checked on the regular module of $\mathrm{Cl}_{1,3}(\mathbb{R})$ in the indefinite form, where $L_a^{\ast} = L_{a^{\dagger}}$ and $R_a^{\ast} = R_{a^{\dagger}}$ for general $a$, and on $\mathrm{Cl}_{0,3}(\mathbb{R})$ in the definite form: the operator $L_a$ is self-adjoint exactly for self-adjoint $a$.</p>
+<p><strong>Corollary (the inner derivations).</strong> The inner derivation $\mathrm{ad}_a = L_a - R_a$, $\mathrm{ad}_a(x) = ax-xa$, has adjoint $\mathrm{ad}_a^{\ast} = \mathrm{ad}_{a^{\dagger}}$; hence $\mathrm{ad}_a$ is self-adjoint iff $a$ is self-adjoint and skew-adjoint iff $a$ is skew-adjoint. The inner derivations by the skew-adjoint elements are the skew-adjoint operators that exponentiate to inner automorphisms, and they are the image in the operator algebra of the Lie algebra of the algebra's own unitary group.</p>
+<h3 id="the-hermitian-and-the-skew-part-of-the-algebra">The Hermitian and the Skew Part of the Algebra</h3>
+<p><strong>Definition.</strong> The <strong>Hermitian part</strong> of the algebra is $A^{+} = \{a : a^{\dagger} = a\}$ and the <strong>skew part</strong> is $A^{-} = \{a : a^{\dagger} = -a\}$, so that $A = A^{+}\oplus A^{-}$ for $2$ invertible.</p>
+<p><strong>Proposition (the blade description).</strong> In the orthonormal blade basis the dagger acts on a blade $e_{i_1}\cdots e_{i_k}$ of degree $k$ by the sign $(-1)^{T_k}$, $T_k = k(k+1)/2$, so</p>
+<p>$$
+A^{+} = \mathrm{span}\{e_{A} : |A|\equiv 0 \text{ or } 3 \pmod 4\}, \qquad A^{-} = \mathrm{span}\{e_{A} : |A|\equiv 1 \text{ or } 2 \pmod 4\},
+$$</p>
+<p>independently of the signature of $q$; on the fixed degrees $0,1,2,3$ this gives $\dagger = +,-,-,+$. The self-adjoint blades are thus degrees $0$ and $3$ mod $4$, and the grading of the splitting is the mod-$4$ residue of the degree, which is the operator form of the Fierz grade signs of <em>Bilinear Operators on a Clifford Module with Hermitian Adjoint</em>.</p>
+<p><strong>Proof.</strong> $e_A^{\dagger} = (-1)^{T_{|A|}}e_A$ because the dagger is $\alpha\circ\mathrm{rev}$ composed with conjugation, $\mathrm{rev}$ contributes $(-1)^{|A|(|A|-1)/2}$ and $\alpha$ contributes $(-1)^{|A|}$, whose sum is $(-1)^{|A|(|A|+1)/2} = (-1)^{T_{|A|}}$; the residues $T_k \bmod 2$ are $0,1,1,0,\dots$ for $k = 0,1,2,3,\dots$.</p>
+<h2 id="worked-cases">Worked Cases</h2>
+<h3 id="the-definite-case-math112">The Definite Case $\mathrm{Cl}_{0,3}(\mathbb{R})$</h3>
+<p>With the dagger positive, the Gram form of the regular module is the identity in the blade basis and the operator adjoint is the transpose. The Hermitian part of the algebra is $A^{+} = \mathrm{span}\{1,\omega\}$ with $\omega = e_1e_2e_3$ the volume element, so the only central Hermitian elements are here; the self-adjoint operators are the transversals of $L_{a^{+}}+R_{b^{+}}$ with $a^{+},b^{+}\in A^{+}$. The skew-adjoint operators contain the inner derivations $\mathrm{ad}_a$ for skew $a$, which are the rotations of the module, and their exponentials are the even unitary elements of the slice of <em>The Unitary Slice and the Compact Real Form with Hermitian Adjoint</em>.</p>
+<h3 id="the-indefinite-case-math119">The Indefinite Case $\mathrm{Cl}_{1,3}(\mathbb{R})$</h3>
+<p>With the Minkowski form the Gram matrix is diagonal with entries $+1,-1$ in the blade basis, and the operator adjoint $T^{\ast} = G^{-1}T^{H}G$ is a <strong>twisted</strong> transpose; this is the operator-level reason an indefinite Clifford algebra has self-adjoint operators that the positive-definite picture does not see. The Hermitian part is $A^{+} = \mathrm{span}\{e_A : |A|\equiv0,3\pmod4\}$, of degrees $0,3,4$, which is non-central, so the self-adjoint operators do not commute and the Jordan algebra is non-abelian. The three Cartan inclusions and the Jordan closure were all verified here on generic self-adjoint and skew-adjoint operators of the regular module, and the Hilbert–Schmidt orthogonality held as well.</p>
+<h2 id="summary">Summary</h2>
+<p>The adjoint $T\mapsto T^{\ast}$, defined by $\langle Ts,t\rangle = \langle s,T^{\ast}t\rangle$, makes $\mathrm{End}_A(S)$ a $\ast$-algebra, contravariant for the product and of order two. The <strong>self-adjoint</strong> operators $T^{\ast} = T$ and the <strong>skew-adjoint</strong> operators $T^{\ast} = -T$ split the operator algebra, $\mathrm{End} = \mathrm{Herm}\oplus\mathrm{Skew}$, with the parts unique and orthogonal for the Hilbert–Schmidt form. The <strong>skew-adjoint</strong> operators form a <strong>Lie algebra</strong> under the commutator, the <strong>self-adjoint</strong> ones a <strong>Jordan algebra</strong> under the circle product, and the commutator couples them by the graded rules $[\mathrm{Herm},\mathrm{Herm}]\subseteq\mathrm{Skew}$, $[\mathrm{Herm},\mathrm{Skew}]\subseteq\mathrm{Herm}$, $[\mathrm{Skew},\mathrm{Skew}]\subseteq\mathrm{Skew}$; all of these were verified on the regular module of $\mathrm{Cl}_{1,3}(\mathbb{R})$.</p>
+<p>The regular representations realize the structure on the algebra itself: $L_a^{\ast} = L_{a^{\dagger}}$ and $R_a^{\ast} = R_{a^{\dagger}}$, so $L_a$ is self-adjoint exactly for $a$ self-adjoint, and the inner derivations $\mathrm{ad}_a$ are self-adjoint or skew-adjoint according to the element $a$. The Hermitian part of the algebra is $\mathrm{span}\{e_A : |A|\equiv0,3\pmod4\}$, the dagger acting on a blade by the Fierz sign $(-1)^{T_{|A|}}$, so the splitting of the operators restricts to the mod-four gradation of the blades; the skew-adjoint operators are the Lie algebra of the unitary group, the self-adjoint ones the symmetric space, and the positive self-adjoint elements the Hermitian cone. The spectral theory of the self-adjoint part is the subject of <em>The Spectra of Self-Adjoint Operators with Hermitian Adjoint</em>.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\langle Ts,t\rangle=\langle s,T^{\ast}t\rangle$</td>
+<td>Defining property of the adjoint</td>
+</tr>
+<tr>
+<td>$(ST)^{\ast}=T^{\ast}S^{\ast}$, $(T^{\ast})^{\ast}=T$</td>
+<td>The involution (anti-automorphism of order two)</td>
+</tr>
+<tr>
+<td>$H(T)=\tfrac12(T+T^{\ast})$, $K(T)=\tfrac12(T-T^{\ast})$</td>
+<td>Self-adjoint and skew-adjoint parts</td>
+</tr>
+<tr>
+<td>$\mathrm{End}=\mathrm{Herm}\oplus\mathrm{Skew}$</td>
+<td>The decomposition</td>
+</tr>
+<tr>
+<td>$[\mathrm{Herm},\mathrm{Herm}]\subseteq\mathrm{Skew}$, $[\mathrm{Herm},\mathrm{Skew}]\subseteq\mathrm{Herm}$, $[\mathrm{Skew},\mathrm{Skew}]\subseteq\mathrm{Skew}$</td>
+<td>Graded Lie structure</td>
+</tr>
+<tr>
+<td>$H\circ H'=\tfrac12(HH'+H'H)$ self-adjoint</td>
+<td>Jordan structure</td>
+</tr>
+<tr>
+<td>$L_a^{\ast}=L_{a^{\dagger}}$, $R_a^{\ast}=R_{a^{\dagger}}$</td>
+<td>Regular representations</td>
+</tr>
+<tr>
+<td>$\mathrm{ad}_a^{\ast}=\mathrm{ad}_{a^{\dagger}}$</td>
+<td>Inner derivations</td>
+</tr>
+<tr>
+<td>$A^{\pm}=\mathrm{span}\{e_A : |A|\equiv0,3\,/\,1,2\pmod4\}$</td>
+<td>Hermitian and skew part of the algebra</td>
+</tr>
+<tr>
+<td>$\mathrm{Re}\langle H,K\rangle_{HS}=0$</td>
+<td>Orthogonality of the two parts</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Richard V. Kadison and John R. Ringrose, <em>Fundamentals of the Theory of Operator Algebras</em>, Vol. I (Academic Press, 1983), for the involution on the algebra of operators, the self-adjoint and skew-adjoint elements and the decomposition.</li>
+<li>Jacques Faraut and Adam Korányi, <em>Analysis on Symmetric Cones</em>, Oxford Mathematical Monographs (Clarendon Press, 1994), for the Jordan-algebra structure of the self-adjoint part, the circle product and the symmetric cone.</li>
+<li>Sigurdur Helgason, <em>Differential Geometry, Lie Groups and Symmetric Spaces</em>, Graduate Studies in Mathematics 34 (American Mathematical Society, 2001), for the Cartan decomposition, the symmetric space and the graded Lie algebra of a $\ast$-algebra.</li>
+<li>Ian R. Porteous, <em>Clifford Algebras and the Classical Groups</em>, Cambridge Studies in Advanced Mathematics 50 (Cambridge University Press, 1995), for the grade signs, the Hermitian part of a Clifford algebra and the Lie algebras of the classical groups.</li>
+<li>Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, <em>The Book of Involutions</em>, Colloquium Publications 44 (American Mathematical Society, 1998), for the involution, the symmetric and the alternating elements and the associated Lie and Jordan structures.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
