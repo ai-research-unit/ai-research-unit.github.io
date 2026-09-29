@@ -40,10 +40,10 @@ The coefficient space is **not** the simple module of the algebra. The simple mo
 Each complex component splits into a real part and $i$ times a real part,
 
 $$
-Q^\mu = q^\mu + i q'^\mu, \qquad q^\mu, q'^\mu \in \mathbb{R},
+Q^\mu = q^\mu + i {q'}^\mu, \qquad q^\mu, {q'}^\mu \in \mathbb{R},
 $$
 
-and the eight real numbers so obtained identify the coefficient space with $\mathbb{R}^8$. The split is the coefficient split of the algebra: the quadruple with $q'^\mu = 0$ is an element of the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, the quadruple with $q^\mu = 0$ is an element of its multiple $i\mathbb{H}_{\mathbb{B}}$, and
+and the eight real numbers so obtained identify the coefficient space with $\mathbb{R}^8$. The split is the coefficient split of the algebra: the quadruple with ${q'}^\mu = 0$ is an element of the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, the quadruple with $q^\mu = 0$ is an element of its multiple $i\mathbb{H}_{\mathbb{B}}$, and
 
 $$
 \mathbb{B} = \mathbb{H}_{\mathbb{B}} \oplus i\mathbb{H}_{\mathbb{B}}
@@ -51,7 +51,7 @@ $$
 
 is the real-and-imaginary split of the coefficients read coordinate by coordinate. The other four distinguished subspaces mix the real and imaginary parts, because the involutions that define them combine with the scalar imaginary in different ways; they are tabulated below.
 
-The biquaternion norm does not decompose over these eight real coordinates. Its real part is $\sum_\mu \big( (q^\mu)^2 - (q'^\mu)^2 \big)$ and its imaginary part is $2\sum_\mu q^\mu q'^\mu$, both real quadratic forms in eight variables, and the positive-definite form $\sum_\mu \big( (q^\mu)^2 + (q'^\mu)^2 \big)$ is the squared Euclidean length of the quadruple. That last form is the Hermitian form $\sum_\mu |Q^\mu|^2$ of the algebra, and it is a different object from the biquaternion norm: the biquaternion norm is complex bilinear and can vanish on a nonzero element, while the Hermitian form is positive definite.
+The biquaternion norm does not decompose over these eight real coordinates. Its real part is $\sum_\mu \big( (q^\mu)^2 - ({q'}^\mu)^2 \big)$ and its imaginary part is $2\sum_\mu q^\mu {q'}^\mu$, both real quadratic forms in eight variables, and the positive-definite form $\sum_\mu \big( (q^\mu)^2 + ({q'}^\mu)^2 \big)$ is the squared Euclidean length of the quadruple. That last form is the Hermitian form $\sum_\mu |Q^\mu|^2$ of the algebra, and it is a different object from the biquaternion norm: the biquaternion norm is complex bilinear and can vanish on a nonzero element, while the Hermitian form is positive definite.
 
 ### The Physical Dictionary
 
@@ -61,7 +61,7 @@ $$
 Q^0 = c t' + i c t, \qquad Q^1 = x + i x', \qquad Q^2 = y + i y', \qquad Q^3 = z + i z'.
 $$
 
-Every complex coefficient therefore carries **one material coordinate and one informational coordinate**: the scalar coefficient carries the two times, and each vector coefficient carries one spatial coordinate of each sector. Read by real and imaginary part, the quadruple $(q^0, q^1, q^2, q^3) = (ct', x, y, z)$ is the informational time together with the material space, and the quadruple $(q'^0, q'^1, q'^2, q'^3) = (ct, x', y', z')$ is the material time together with the informational space. This is the same mixed ownership that the prime convention records, and it is why the scalar component of a physical four-vector is the one that carries the time.
+Every complex coefficient therefore carries **one material coordinate and one informational coordinate**: the scalar coefficient carries the two times, and each vector coefficient carries one spatial coordinate of each sector. Read by real and imaginary part, the quadruple $(q^0, q^1, q^2, q^3) = (ct', x, y, z)$ is the informational time together with the material space, and the quadruple $({q'}^0, {q'}^1, {q'}^2, {q'}^3) = (ct, x', y', z')$ is the material time together with the informational space. This is the same mixed ownership that the prime convention records, and it is why the scalar component of a physical four-vector is the one that carries the time.
 
 **The material four-vector.** An element of the material sector has a purely imaginary scalar coefficient and real vector coefficients. Writing its real time parameter as $q'_0$ and its real spatial parameters as $q_1, q_2, q_3$, the element and its four-vector are
 
@@ -247,7 +247,7 @@ $$
 \tilde{Q} = Q_0e_0 \longleftrightarrow (Q^0, Q^1, Q^2, Q^3) = (Q_0,\ 0,\ 0,\ 0) = (q_0 + iq'_0,\ 0,\ 0,\ 0) = (ct' + ict,\ 0,\ 0,\ 0),
 $$
 
-with $Q_0 = q_0 + iq'_0$, $q_0 = ct'$ and $q'_0 = ct$, and the biquaternion norm $N = Q_0^2 = c^2t'^2 - c^2t^2 + 2i\,c^2t't$. It is the fixed space of quaternion conjugation, so quaternion conjugation acts on it as the identity — the axis of $\mathbb{B}$.
+with $Q_0 = q_0 + iq'_0$, $q_0 = ct'$ and $q'_0 = ct$, and the biquaternion norm $N = Q_0^2 = c^2(t')^2 - c^2t^2 + 2i\,c^2t't$. It is the fixed space of quaternion conjugation, so quaternion conjugation acts on it as the identity — the axis of $\mathbb{B}$.
 
 ### The Vector Subspace $\mathrm{Vect}(\mathbb{B})$
 
@@ -267,7 +267,7 @@ $$
 \tilde{Q} = \sum_{\mu=0}^{3} Q_\mu e_\mu \longleftrightarrow (Q^0, Q^1, Q^2, Q^3) = (Q_0,\ Q_1,\ Q_2,\ Q_3) = (q_0,\ q_1,\ q_2,\ q_3) = (ct',\ x,\ y,\ z),
 $$
 
-with $Q_\mu = q_\mu$ real, $q_0 = ct'$ and $q_k = x_k$, and the biquaternion norm $N = c^2t'^2 + \mathbf{x}^2$. The biquaternion norm is a sum of four squares with no minus sign, so it is positive definite and vanishes only at the zero element; the unit elements of this subspace are the rotation rotors.
+with $Q_\mu = q_\mu$ real, $q_0 = ct'$ and $q_k = x_k$, and the biquaternion norm $N = c^2(t')^2 + \mathbf{x}^2$. The biquaternion norm is a sum of four squares with no minus sign, so it is positive definite and vanishes only at the zero element; the unit elements of this subspace are the rotation rotors.
 
 ### The Antiquaternion Subspace $i\mathbb{H}_{\mathbb{B}}$
 
@@ -277,7 +277,7 @@ $$
 \tilde{Q} = \sum_{\mu=0}^{3} Q_\mu e_\mu \longleftrightarrow (Q^0, Q^1, Q^2, Q^3) = (Q_0,\ Q_1,\ Q_2,\ Q_3) = (iq'_0,\ iq'_1,\ iq'_2,\ iq'_3) = (ict,\ ix',\ iy',\ iz'),
 $$
 
-with $Q_\mu = iq'_\mu$, $q'_0 = ct$ and $q'_k = x'_k$, and the biquaternion norm $N = -\big( c^2t^2 + \mathbf{x}'^2 \big)$. It is $i$ times the quaternion subspace, and the biquaternion norm is the negative of a sum of four squares, so it too vanishes only at the zero element.
+with $Q_\mu = iq'_\mu$, $q'_0 = ct$ and $q'_k = x'_k$, and the biquaternion norm $N = -\big( c^2t^2 + (\mathbf{x}')^2 \big)$. It is $i$ times the quaternion subspace, and the biquaternion norm is the negative of a sum of four squares, so it too vanishes only at the zero element.
 
 ### The Material Subspace $\mathbb{M}_-$
 
@@ -297,7 +297,7 @@ $$
 \tilde{Q} = \sum_{\mu=0}^{3} Q_\mu e_\mu \longleftrightarrow (Q^0, Q^1, Q^2, Q^3) = (Q_0,\ Q_1,\ Q_2,\ Q_3) = (q_0,\ iq'_1,\ iq'_2,\ iq'_3) = (ct',\ ix',\ iy',\ iz'),
 $$
 
-with $Q_0 = q_0$, $Q_k = iq'_k$, $q_0 = ct'$ and $q'_k = x'_k$, and the biquaternion norm $N = c^2t'^2 - \mathbf{x}'^2$, the transpose of the material condition, of signature $(1,3)$. The two sectors are exchanged by multiplication by $i$: $i\mathbb{M}_- = \mathbb{M}_+$, since $i\,(ict, x, y, z) = (-ct, ix, iy, iz)$ has the informational shape.
+with $Q_0 = q_0$, $Q_k = iq'_k$, $q_0 = ct'$ and $q'_k = x'_k$, and the biquaternion norm $N = c^2(t')^2 - (\mathbf{x}')^2$, the transpose of the material condition, of signature $(1,3)$. The two sectors are exchanged by multiplication by $i$: $i\mathbb{M}_- = \mathbb{M}_+$, since $i\,(ict, x, y, z) = (-ct, ix, iy, iz)$ has the informational shape.
 
 ## The Biquaternion Norm
 
@@ -331,7 +331,7 @@ $$
 N(\tilde{Q}) = (a^0)^2 - (a^1)^2 - (a^2)^2 - (a^3)^2,
 $$
 
-a real quadratic form of signature $(1,3)$; with $a^0 = ct'$ and $a^k = x'_k$ it is $c^2t'^2 - \mathbf{x}'^2$.
+a real quadratic form of signature $(1,3)$; with $a^0 = ct'$ and $a^k = x'_k$ it is $c^2(t')^2 - (\mathbf{x}')^2$.
 
 **Proof.** Substitute the coordinate conditions of the table above into $\sum_\mu (Q^\mu)^2$. On $\mathbb{M}_-$ the scalar term is $(ia^0)^2 = -(a^0)^2$ and the three vector terms are $(a^k)^2$; on $\mathbb{M}_+$ the scalar term is $(a^0)^2$ and the three vector terms are $(ia^k)^2 = -(a^k)^2$.
 
@@ -440,7 +440,7 @@ The four-vectors of relativistic physics are the material elements: the four-pos
 | $i$ | Central scalar imaginary, $i^2 = -1$ |
 | $\tilde{Q} = \sum_{\mu=0}^{3} Q_\mu e_\mu$ | Developed form, $Q_\mu \in \mathbb{C}$ |
 | $Q^\mu = (Q^0, Q^1, Q^2, Q^3)$ | The four-vector; $Q^0 = Q_0$ the scalar component, $(Q^1,Q^2,Q^3) = (Q_1,Q_2,Q_3)$ the vector components |
-| $Q^\mu = q^\mu + iq'^\mu$ | Real and imaginary parts of each component |
+| $Q^\mu = q^\mu + i{q'}^\mu$ | Real and imaginary parts of each component |
 | $Q$, $Q^{\mathsf{T}}$ | The column and the dual row of the four-vector |
 | $\rho_L(\tilde{Q})$, $\rho_R(\tilde{Q})$ | Matrices of left and right multiplication, constructed in *The 4×4 Regular Matrix Element Representation of Biquaternions*; $\rho_L(\tilde{Q})^{\mathsf{T}} = \rho_L(\bar{\tilde{Q}})$ |
 | $\epsilon^{ijk}$ | Levi-Civita symbol on the indices $1, 2, 3$ |

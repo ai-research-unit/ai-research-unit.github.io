@@ -143,7 +143,7 @@ $$
 
 so the symmetric part of the product in degree two is fixed by $b$ and only the alternating part is free; the two families are equivalent over any $R$ in which $2$ is invertible. Its theory belongs to category 14.
 
-The quadratic form $q$ and the Clifford algebra it defines are objects of **Part II**, treated in *The Clifford Algebra*; the construction is named here only because it is the third quotient of $T(V)$, and nothing in this part is proved with it.
+The quadratic form $q$ and the Clifford algebra it defines are objects of **Part II**, treated in *Clifford Algebras*; the construction is named here only because it is the third quotient of $T(V)$, and nothing in this part is proved with it.
 
 **The universal enveloping algebra.** For a Lie algebra $\mathrm{G}$ with bracket $[\cdot,\cdot]$, the **universal enveloping algebra** is
 

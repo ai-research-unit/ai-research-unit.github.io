@@ -99,7 +99,7 @@ $$
 **Quadratic form.** The biquaternion **biquaternion norm** restricts to a real quadratic form on $\mathbb{M}_+$:
 
 $$
-N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = q_0^2 + (iq'_1)^2 + (iq'_2)^2 + (iq'_3)^2 = q_0^2 - q'^2_1 - q'^2_2 - q'^2_3 = c^2t'^2 - x'^2 - y'^2 - z'^2.
+N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = q_0^2 + (iq'_1)^2 + (iq'_2)^2 + (iq'_3)^2 = q_0^2 - (q'_1)^2 - (q'_2)^2 - (q'_3)^2 = c^2(t')^2 - (x')^2 - (y')^2 - (z')^2.
 $$
 
 This is a real quadratic form of **signature** $(1,3)$: one positive direction (the temporal one, whose coordinate is $ct'$) and three negative directions (the vector components $q'_1, q'_2, q'_3$). The single positive direction is the temporal one, so the form is Lorentzian with a distinguished timelike axis in the sector's own coordinates.
@@ -107,10 +107,10 @@ This is a real quadratic form of **signature** $(1,3)$: one positive direction (
 **Zero divisors.** The biquaternion norm vanishes on the cone
 
 $$
-q_0^2 = q'^2_1 + q'^2_2 + q'^2_3, \qquad \text{that is} \qquad c^2t'^2 = x'^2 + y'^2 + z'^2,
+q_0^2 = (q'_1)^2 + (q'_2)^2 + (q'_3)^2, \qquad \text{that is} \qquad c^2(t')^2 = (x')^2 + (y')^2 + (z')^2,
 $$
 
-which is a double cone with apex at the origin. The complement of the cone has three connected components: the region $N < 0$ ($q_0^2 < q'^2_1 + q'^2_2 + q'^2_3$, connected) and the two components of the region $N > 0$ ($q_0 > |\mathbf{q}'|$ and $q_0 < -|\mathbf{q}'|$).
+which is a double cone with apex at the origin. The complement of the cone has three connected components: the region $N < 0$ ($q_0^2 < (q'_1)^2 + (q'_2)^2 + (q'_3)^2$, connected) and the two components of the region $N > 0$ ($q_0 > |\mathbf{q}'|$ and $q_0 < -|\mathbf{q}'|$).
 
 **Not a division algebra.** The presence of the zero divisor cone means that $\mathbb{M}_+$ is not a division algebra: there are nonzero elements of $\mathbb{M}_+$ with no inverse in $\mathbb{B}$.
 

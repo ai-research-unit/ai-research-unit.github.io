@@ -43,7 +43,7 @@ $$
 and on the informational coordinate it is the same form with the opposite signature,
 
 $$
-N\!\left(ct'\,e_0 + i\mathbf{x}'\right) = c^2t'^2 - \mathbf{x}'^2 .
+N\!\left(ct'\,e_0 + i\mathbf{x}'\right) = c^2(t')^2 - (\mathbf{x}')^2 .
 $$
 
 The remaining sections of this article are, in physical terms, the study of this one object: its multiplicativity is the invariance of the interval under the transformations of the theory, its vanishing is the light cone, and its real absolute value is the scale of the polar representation.
@@ -158,7 +158,7 @@ The **Hermitian form** of a biquaternion is the biquaternion $\tilde{Q}\tilde{Q}
 - Its **scalar part** is
 
 $$
-\mathrm{Sc}\!\left(\tilde{Q}\tilde{Q}^\dagger\right) = \sum_{\mu=0}^{3} |Q_\mu|^2 = \sum_{\mu=0}^{3}\left(q_\mu^2 + q'^2_\mu\right),
+\mathrm{Sc}\!\left(\tilde{Q}\tilde{Q}^\dagger\right) = \sum_{\mu=0}^{3} |Q_\mu|^2 = \sum_{\mu=0}^{3}\left(q_\mu^2 + (q'_\mu)^2\right),
 $$
 
 non-negative, vanishing only for $\tilde{Q} = 0$. Its vector part does not vanish in general: for $\tilde{Q} = e_0 + ie_1$, $\tilde{Q}^\dagger = \tilde{Q}$ and $\tilde{Q}\tilde{Q}^\dagger = (e_0+ie_1)^2 = 2e_0 + 2ie_1$. Note that this same element has $N(\tilde{Q}) = 1 + i^2 = 0$: the two forms are distinct, and an element can be a zero divisor for the biquaternion norm and perfectly regular for the Hermitian one.
@@ -170,7 +170,7 @@ non-negative, vanishing only for $\tilde{Q} = 0$. Its vector part does not vanis
 ### The Euclidean Norm
 
 $$
-\|\tilde{Q}\|_E = \sqrt{\mathrm{Sc}\!\left(\tilde{Q}\tilde{Q}^\dagger\right)} = \sqrt{\sum_{\mu=0}^{3}|Q_\mu|^2} = \sqrt{\sum_{\mu=0}^{3}\left(q_\mu^2 + q'^2_\mu\right)} .
+\|\tilde{Q}\|_E = \sqrt{\mathrm{Sc}\!\left(\tilde{Q}\tilde{Q}^\dagger\right)} = \sqrt{\sum_{\mu=0}^{3}|Q_\mu|^2} = \sqrt{\sum_{\mu=0}^{3}\left(q_\mu^2 + (q'_\mu)^2\right)} .
 $$
 
 It is a genuine norm on the real vector space $\mathbb{B}\cong\mathbb{R}^8$: positive-definite, subadditive and homogeneous of degree one. It is **not** multiplicative.
@@ -190,7 +190,7 @@ the Frobenius norm squared of the representing matrix under $\mathbb{B}\cong M_2
 - The **biquaternion norm** $N(\tilde{Q}) = \sum_\mu Q_\mu^2$ is a complex scalar, multiplicative, capable of vanishing for nonzero $\tilde{Q}$.
 - The **Hermitian form** $\tilde{Q}\tilde{Q}^\dagger$ is a Hermitian element whose scalar part is $\sum_\mu|Q_\mu|^2$, non-negative and vanishing only at $\tilde{Q} = 0$, with vector part generally nonzero. Not multiplicative.
 
-They coincide as biquaternions exactly when $\tilde{Q}$ lies in the real sector $\mathbb{H}_{\mathbb{B}}$, that is, when all coefficients are real. On the imaginary sector $i\mathbb{H}_{\mathbb{B}}$ the Hermitian form is $+\sum_\mu q'^2_\mu\,e_0$, which is the **negative** of the biquaternion norm. So the two forms agree on the real sector, differ by a sign on the imaginary sector, and differ in kind elsewhere.
+They coincide as biquaternions exactly when $\tilde{Q}$ lies in the real sector $\mathbb{H}_{\mathbb{B}}$, that is, when all coefficients are real. On the imaginary sector $i\mathbb{H}_{\mathbb{B}}$ the Hermitian form is $+\sum_\mu (q'_\mu)^2\,e_0$, which is the **negative** of the biquaternion norm. So the two forms agree on the real sector, differ by a sign on the imaginary sector, and differ in kind elsewhere.
 
 The two roles are complementary and both are used: the **biquaternion norm** controls the multiplicative structure — invertibility, zero divisors, the metric and the rotors — while the **scalar part of the Hermitian form** controls the topological structure: the Euclidean norm, the topology of $\mathbb{B}$, the completeness of the underlying real space.
 
@@ -341,7 +341,7 @@ $$
 q_0^2 = (q'_1)^2+(q'_2)^2+(q'_3)^2 .
 $$
 
-In the informational coordinate $ct'\,e_0+i\mathbf{x}'$ this is $c^2t'^2 = \mathbf{x}'^2$: the informational cone. The invertible elements are the complement, with three connected components — the **future** $q_0>0$, $q_0^2>\mathbf{q}'^2$ with $N>0$; the **past** $q_0<0$, $q_0^2>\mathbf{q}'^2$ with $N>0$; and the **inside** $q_0^2<\mathbf{q}'^2$ with $N<0$.
+In the informational coordinate $ct'\,e_0+i\mathbf{x}'$ this is $c^2(t')^2 = (\mathbf{x}')^2$: the informational cone. The invertible elements are the complement, with three connected components — the **future** $q_0>0$, $q_0^2>(\mathbf{q}')^2$ with $N>0$; the **past** $q_0<0$, $q_0^2>(\mathbf{q}')^2$ with $N>0$; and the **inside** $q_0^2<(\mathbf{q}')^2$ with $N<0$.
 
 ### The Material Sector $\mathbb{M}_-$
 
@@ -377,7 +377,7 @@ The two cones in the sectors have the same structure, each being the vanishing s
 
 Over $\mathbb{C}$ a non-degenerate quadratic form has no signature; signature appears only after a real form is chosen. With $Q_\mu=q_\mu+iq'_\mu$, $q_\mu,q'_\mu\in\mathbb{R}$,
 $$
-\operatorname{Re}N=\sum_{\mu=0}^{3}\bigl(q_\mu^2-q'_\mu{}^2\bigr),\qquad \operatorname{Im}N=2\sum_{\mu=0}^{3} q_\mu q'_\mu .
+\operatorname{Re}N=\sum_{\mu=0}^{3}\bigl(q_\mu^2-(q'_\mu)^2\bigr),\qquad \operatorname{Im}N=2\sum_{\mu=0}^{3} q_\mu q'_\mu .
 $$
 Hence the realification $\operatorname{Re}N$ on $\mathbb{R}^8$ is non-degenerate of signature $(4,4)$, a **split** (neutral) signature; in the real basis $e_\mu,ie_\mu$ its matrix is $\operatorname{diag}(1,1,1,1,-1,-1,-1,-1)$. The six distinguished real subspaces give six real forms, whose signatures are the ones read off sector by sector in *Distribution of the Invertible Elements*:
 

@@ -91,13 +91,13 @@ The standard idempotents $\tilde\Pi_1 = \tfrac{1}{2}(e_0 + ie_3)$ and $\tilde\Pi
 
 ## Explicit Zero Divisors
 
-**Example (an explicit pair).** With the standard idempotents $\tilde\Pi_1, \tilde\Pi_2$ of *Biquaternion Idempotents and Projections*, $\tilde\Pi_1\tilde\Pi_2 = 0$ and both factors are nonzero: this is a zero-divisor pair. In unnormalised form, set $a = e_0 + ie_3$ and $b = e_0 - ie_3$. Then
+**Example (an explicit pair).** With the standard idempotents $\tilde\Pi_1, \tilde\Pi_2$ of *Biquaternion Idempotents and Projections*, $\tilde\Pi_1\tilde\Pi_2 = 0$ and both factors are nonzero: this is a zero-divisor pair. In unnormalised form, set $\tilde A = e_0 + ie_3$ and $\tilde B = e_0 - ie_3$. Then
 
 $$
-ab = e_0 - (ie_3)^2 = e_0 - 1 = 0, \qquad a \neq 0, \qquad b \neq 0,
+\tilde A\tilde B = e_0 - (ie_3)^2 = e_0 - 1 = 0, \qquad \tilde A \neq 0, \qquad \tilde B \neq 0,
 $$
 
-Both $a$ and $b$ have two nonzero complex coefficients, $a = e_0 + ie_3$ and $b = e_0 - ie_3$.
+Both $\tilde A$ and $\tilde B$ have two nonzero complex coefficients, $\tilde A = e_0 + ie_3$ and $\tilde B = e_0 - ie_3$.
 
 The computations show all the structural features asserted in *Biquaternion Algebra ($\mathbb{B}$)* on a single element and on the standard idempotents: the six subspaces split the element into its centre, vector, quaternion, anti-quaternion, Hermitian and anti-Hermitian parts; the four conjugations act as listed; and the two primitive idempotents produce the decomposition $\mathbb{B} = \mathbb{B}\tilde\Pi_1 \oplus \mathbb{B}\tilde\Pi_2$ into minimal left ideals.
 
@@ -105,7 +105,7 @@ The computations show all the structural features asserted in *Biquaternion Alge
 
 The multiplication of $\mathbb{B}$ is the quaternion table with complex coefficients and central $i$, $i^2 = -1$. On the element $\tilde{Q} = (2+i)e_0 + (1-i)e_1 + 3e_2 + ie_3$ the six subspaces are exhibited by the scalar-vector, quaternion-anti-quaternion and Hermitian-anti-Hermitian decompositions of $\tilde{Q}$, and the four conjugations $\bar{\cdot}$, ${}^{*}$, ${}^{\dagger}$ and ${}^{\flat} = -\dagger$ act on it as listed.
 
-The idempotents $\tilde\Pi_1, \tilde\Pi_2$ of *Biquaternion Idempotents and Projections* satisfy $\tilde\Pi_1\tilde\Pi_2 = 0$ and give $\mathbb{B} = \mathbb{B}\tilde\Pi_1 \oplus \mathbb{B}\tilde\Pi_2$ with each summand minimal; the pair $a = e_0+ie_3$, $b = e_0-ie_3$ is an explicit zero-divisor pair. As a left module over itself, $\mathbb{B}$ has the decomposition $\mathbb{B} = \mathbb{B}\tilde\Pi_1 \oplus \mathbb{B}\tilde\Pi_2$ into minimal left ideals.
+The idempotents $\tilde\Pi_1, \tilde\Pi_2$ of *Biquaternion Idempotents and Projections* satisfy $\tilde\Pi_1\tilde\Pi_2 = 0$ and give $\mathbb{B} = \mathbb{B}\tilde\Pi_1 \oplus \mathbb{B}\tilde\Pi_2$ with each summand minimal; the pair $\tilde A = e_0+ie_3$, $\tilde B = e_0-ie_3$ is an explicit zero-divisor pair. As a left module over itself, $\mathbb{B}$ has the decomposition $\mathbb{B} = \mathbb{B}\tilde\Pi_1 \oplus \mathbb{B}\tilde\Pi_2$ into minimal left ideals.
 
 ## Summary of Notation
 

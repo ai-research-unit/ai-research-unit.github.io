@@ -5,7 +5,7 @@
 
 A quadratic form can fail to be non-degenerate, and when it does the Clifford algebra acquires a nilpotent factor that is invisible in the non-degenerate theory. The failure is concentrated in the **radical** of the form, the submodule of vectors orthogonal to everything; the radical is totally isotropic, its Clifford generators square to zero and anticommute, and the algebra they generate is the exterior algebra on the radical. The Clifford algebra of a degenerate form is therefore the graded tensor product of the Clifford algebra of the reduced non-degenerate form and an exterior algebra, and the radical generates a nilpotent ideal that is the ring-theoretic radical of the algebra.
 
-This article proves the reduction, identifies the nilpotent factor, computes the rank, and gives the criterion for semisimplicity. The base is a commutative ring $R$ in which $2$ is invertible, the module is free of finite rank, and the form may be degenerate. The construction of the Clifford algebra, the fundamental relation and the graded tensor product are from *The Clifford Algebra*; the radical and non-degeneracy of a form are from *Bilinear Forms*; the exterior algebra is from *The Exterior Algebra*. The non-degenerate case is developed, whose basis, filtration and centre are cited rather than repeated.
+This article proves the reduction, identifies the nilpotent factor, computes the rank, and gives the criterion for semisimplicity. The base is a commutative ring $R$ in which $2$ is invertible, the module is free of finite rank, and the form may be degenerate. The construction of the Clifford algebra, the fundamental relation and the graded tensor product are from *Clifford Algebras*; the radical and non-degeneracy of a form are from *Bilinear Forms*; the exterior algebra is from *The Exterior Algebra*. The non-degenerate case is developed, whose basis, filtration and centre are cited rather than repeated.
 
 ## The Radical of a Quadratic Form
 
@@ -65,9 +65,9 @@ $$
 \mathrm{Cl}(V, q) \cong \mathrm{Cl}(W, \bar{q}) \,\hat{\otimes}\, \Lambda(\operatorname{rad}(q)),
 $$
 
-where $\Lambda(\operatorname{rad}(q))$ is the exterior algebra on the radical and $\hat\otimes$ is the graded tensor product of *The Clifford Algebra*.
+where $\Lambda(\operatorname{rad}(q))$ is the exterior algebra on the radical and $\hat\otimes$ is the graded tensor product of *Clifford Algebras*.
 
-**Proof.** The orthogonal decomposition above and the splitting theorem of *The Clifford Algebra* give
+**Proof.** The orthogonal decomposition above and the splitting theorem of *Clifford Algebras* give
 
 $$
 \mathrm{Cl}(V, q) \cong \mathrm{Cl}(W, \bar{q}) \,\hat{\otimes}\, \mathrm{Cl}(\operatorname{rad}(q), 0),

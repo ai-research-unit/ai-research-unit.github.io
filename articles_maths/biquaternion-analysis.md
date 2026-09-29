@@ -23,7 +23,7 @@ $$
 Writing each complex coefficient as $Q_\mu = q_\mu + i q'_\mu$ with $q_\mu, q'_\mu \in \mathbb{R}$, the **Euclidean norm** is
 
 $$
-\|\tilde{Q}\|_E = \sqrt{q_0^2 + q'^2_0 + q_1^2 + q'^2_1 + q_2^2 + q'^2_2 + q_3^2 + q'^2_3} = \sqrt{\sum_{\mu=0}^{3} |Q_\mu|^2}.
+\|\tilde{Q}\|_E = \sqrt{q_0^2 + (q'_0)^2 + q_1^2 + (q'_1)^2 + q_2^2 + (q'_2)^2 + q_3^2 + (q'_3)^2} = \sqrt{\sum_{\mu=0}^{3} |Q_\mu|^2}.
 $$
 
 Equivalently, this is the square root of the scalar part of the Hermitian form, $\|\tilde{Q}\|_E = \sqrt{\mathrm{Sc}(\tilde{Q}\tilde{Q}^\dagger)}$, as defined in the article on biquaternion norm and invertibility.

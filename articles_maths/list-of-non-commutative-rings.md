@@ -52,7 +52,7 @@ A group ring is commutative exactly when the group is abelian, so the non-commut
 | $T(V)$, the tensor algebra | $\bigoplus_{n \geq 0} V^{\otimes n}$ | the free associative algebra on the vector space $V$ | *Tensor Powers and the Free Algebra* |
 | $\Lambda(V)$, the exterior algebra | $T(V)/(v \otimes v)$ | the free graded-commutative algebra; $v^2 = 0$ | *The Exterior Algebra* |
 | $A_1(k) = k\langle x, y\rangle/(yx - xy - 1)$, the Weyl algebra | the quantised polynomial ring in two variables | the algebra of differential operators on $k[x]$ | *Quotients of the Tensor Algebra* |
-| $\mathbb{C}\ell(V, q)$, a Clifford algebra | $T(V)/(v \otimes v - q(v))$ | the quantised exterior algebra | *The Clifford Algebra* |
+| $\mathbb{C}\ell(V, q)$, a Clifford algebra | $T(V)/(v \otimes v - q(v))$ | the quantised exterior algebra | *Clifford Algebras* |
 
 The free algebra and the tensor algebra are the non-commutative analogues of the polynomial ring, and they lose the commutative universal property: a homomorphism from $R\langle x_1, \dots, x_n\rangle$ may send the $x_i$ to arbitrary elements, but the images need not commute, so the commutative polynomial ring is a quotient of the free algebra by the commutator ideal. The Weyl algebra and the Clifford algebras are the quotients of the tensor algebra in which the commutator and the square are fixed by a relation, and they are the standard quantisations.
 

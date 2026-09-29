@@ -101,7 +101,7 @@ $$
 (i\mathbf{q}')^2 = (\mathbf{q}', \mathbf{q}')\, e_0 = -N(i\mathbf{q}')\, e_0 .
 $$
 
-**Proof.** Expanding $(q_0e_0+i\mathbf{q}')^2$ with $\mathbf{q}'^2 = -(\mathbf{q}',\mathbf{q}')e_0$ and using the centrality of $i$ gives the stated scalar and vector parts; the pure case is $q_0 = 0$, and the biquaternion norm of an imaginary vector is $-(\mathbf{q}',\mathbf{q}')$.
+**Proof.** Expanding $(q_0e_0+i\mathbf{q}')^2$ with $(\mathbf{q}')^2 = -(\mathbf{q}',\mathbf{q}')e_0$ and using the centrality of $i$ gives the stated scalar and vector parts; the pure case is $q_0 = 0$, and the biquaternion norm of an imaginary vector is $-(\mathbf{q}',\mathbf{q}')$.
 
 ### Modules
 
@@ -194,7 +194,7 @@ of §*The Idempotents*, together with $0$ and $e_0$. They are exactly the **Herm
 
 Each idempotent $\tilde\Pi$ of the subspace is primitive, and the pair $\{\tilde\Pi, e_0 - \tilde\Pi\}$ gives the Peirce decomposition of *Biquaternion Ideals and Peirce Decomposition*,
 $$
-\mathbb{B} = \mathbb{C}\tilde\Pi \oplus \mathbb{C}x \oplus \mathbb{C}y \oplus \mathbb{C}(e_0 - \tilde\Pi),
+\mathbb{B} = \mathbb{C}\tilde\Pi \oplus \mathbb{C}\tilde T \oplus \mathbb{C}\tilde U \oplus \mathbb{C}(e_0 - \tilde\Pi),
 $$
 in which the two diagonal corners $\mathbb{C}\tilde\Pi$ and $\mathbb{C}(e_0-\tilde\Pi)$ lie in $\mathbb{M}_+$, while the two off-diagonal corners are spanned by nilpotents of the vector subspace. The two minimal left ideals $\mathbb{B}\tilde\Pi$ and $\mathbb{B}(e_0-\tilde\Pi)$ are the two simple modules of the algebra; they are parametrised by $\mathbb{P}^1(\mathbb{C})$, and, no minimal left ideal being stable under complex conjugation, none is marked out by the real structure. The subspace is not an ideal of $\mathbb{B}$: an ideal is closed under products of its own elements, and the product of two Hermitian elements has a vector part in general and is not Hermitian.
 
@@ -282,8 +282,8 @@ The Hermitian subspace $\mathbb{M}_+$ is the fixed space of Hermitian conjugatio
 | $\hat{\mathbf{u}}$ | a unit real vector, used to parametrize the idempotents |
 | $\tilde\Pi = \tfrac12(e_0+i\hat{\mathbf{u}})$ | the idempotents of $\mathbb{M}_+$, forming the pair $\tilde\Pi_\pm$ |
 | $\mu$, $\eta = \mu i$ | a root of $-1$ in $\mathbb{H}_{\mathbb{B}}$ and the associated root of $+1$ in $\mathbb{M}_+$ |
-| $\mathbb{S}^2$ | the two-sphere of roots of $+1$ that the subspace carries |
-| $x, y$ | the nilpotent off-diagonal Peirce elements, in the vector subspace |
+| $S^2$ | the two-sphere of roots of $+1$ that the subspace carries |
+| $\tilde T, \tilde U$ | the nilpotent off-diagonal Peirce elements, in the vector subspace |
 | $H_2(\mathbb{C})$ | the Jordan algebra of degree two isomorphic to $\mathbb{M}_+$ |
 | $\bar{\cdot}, {}^{*}, {}^{\dagger}, \flat$ | the four involutions |
 

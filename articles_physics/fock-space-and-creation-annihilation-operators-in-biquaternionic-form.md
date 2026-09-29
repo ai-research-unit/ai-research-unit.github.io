@@ -138,7 +138,7 @@ $$
 
 The operators split into an even part commuting with $(-1)^F$ and an odd part anticommuting with it, and "fermionic operators anticommute" is precisely the statement that the algebra is graded-commutative. The Dirac quantization article supplies this grading on the mode algebra and records that embedding it in $\mathbb{B}$ is not done. The next section does the one case where it can be done.
 
-The three structures are distinct in every case. The parity grading is an algebra grading; the sector splitting is not, though it grades the symmetrized product; the number grading is a grading of the state space by a non-negative integer.
+The three structures are distinct in every case. The parity grading is an algebra grading; the sector splitting is not, though it grades the symmetrized product; the number grading is a grading of the state space by a non-negative integer. The grading of the ambient Clifford algebra that carries the parity, with the twist as the conjugation by the volume element and the composition of two odd steps, is *The Graded Algebra, Fermion Parity and the Two Sectors with Signed Inner Conjugation in Biquaternionic Form*; the graded bracket and the odd extension of the algebra are *The Superalgebra Reading and the Odd Extension with Signed Inner Conjugation in Biquaternionic Form*.
 
 ## What the Algebra Itself Hosts: One Fermionic Mode
 

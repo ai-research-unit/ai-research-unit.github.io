@@ -187,7 +187,7 @@ by $\sigma(\tilde\Pi_1) = \tilde\Pi_2$; no minimal left ideal is stable, and the
 $$
 \xi = \pm\mu, \qquad \mu \in \operatorname{span}_{\mathbb{R}}\{e_1,e_2,e_3\}, \quad |\mu| = 1 ;
 $$
-they form the unit sphere $\mathbb{S}^2$ of that three-dimensional real space.
+they form the unit sphere $S^2$ of that three-dimensional real space.
 
 **Proof.** A real-coefficient element $\xi = q_0e_0 + \mathbf{q}$ squares to $\xi^2 = (q_0^2 - |\mathbf{q}|^2)e_0 + 2q_0\mathbf{q}$; equating to $-e_0$ forces $q_0 = 0$ and $|\mathbf{q}| = 1$.
 
@@ -247,7 +247,7 @@ a pure imaginary element. Its inverse is $(e_0 - e_1)/2$, and the computation sh
 
 ## Summary
 
-The quaternion subspace $\mathbb{H}_{\mathbb{B}}$ is the fixed space of complex conjugation, the set of elements with real coefficients, a real vector space of dimension $4$ with basis $e_0, e_1, e_2, e_3$, and the real form of the algebra, $\mathbb{B} = \mathbb{H}_{\mathbb{B}} \otimes_{\mathbb{R}} \mathbb{C}$. It is a subalgebra, isomorphic to the real quaternions, non-commutative, central simple, and a division algebra: the biquaternion norm restricts to the positive definite sum of four squares, every non-zero element is a unit, there are no zero divisors, and the only idempotents are $0$ and $e_0$. Its group of units is $\mathbb{R}^4 \setminus \{0\}$, and the roots of minus one in it fill a two-sphere. Of the four involutions, complex conjugation fixes the subspace pointwise, quaternion and Hermitian conjugation coincide on it and act as quaternion conjugation, and reversal acts as its negative; the subspace is invariant under all four. It is complementary to the anti-quaternion subspace, its intersection with the vector subspace is the pure imaginary triple, and its decompositions along the coordinate blocks are $\mathbb{H}_{\mathbb{B}} = \mathbb{R}e_0 \oplus \operatorname{span}\{e_1,e_2,e_3\}$. In the algebra of particular cases the subspace contributes the two trivial idempotents and no non-trivial one, it is a division algebra and therefore no ideal of $\mathbb{B}$ but the free rank-two module of the quaternion decomposition, its roots of minus one are the unit sphere $\mathbb{S}^2$ of $\operatorname{span}_\mathbb{R}\{e_1,e_2,e_3\}$ and parametrise the Hermitian idempotents, it contains no zero divisor, and as a real Lie algebra it is $\mathbb{R} \oplus \mathfrak{su}(2)$ with derived subalgebra $\mathrm{K}$.
+The quaternion subspace $\mathbb{H}_{\mathbb{B}}$ is the fixed space of complex conjugation, the set of elements with real coefficients, a real vector space of dimension $4$ with basis $e_0, e_1, e_2, e_3$, and the real form of the algebra, $\mathbb{B} = \mathbb{H}_{\mathbb{B}} \otimes_{\mathbb{R}} \mathbb{C}$. It is a subalgebra, isomorphic to the real quaternions, non-commutative, central simple, and a division algebra: the biquaternion norm restricts to the positive definite sum of four squares, every non-zero element is a unit, there are no zero divisors, and the only idempotents are $0$ and $e_0$. Its group of units is $\mathbb{R}^4 \setminus \{0\}$, and the roots of minus one in it fill a two-sphere. Of the four involutions, complex conjugation fixes the subspace pointwise, quaternion and Hermitian conjugation coincide on it and act as quaternion conjugation, and reversal acts as its negative; the subspace is invariant under all four. It is complementary to the anti-quaternion subspace, its intersection with the vector subspace is the pure imaginary triple, and its decompositions along the coordinate blocks are $\mathbb{H}_{\mathbb{B}} = \mathbb{R}e_0 \oplus \operatorname{span}\{e_1,e_2,e_3\}$. In the algebra of particular cases the subspace contributes the two trivial idempotents and no non-trivial one, it is a division algebra and therefore no ideal of $\mathbb{B}$ but the free rank-two module of the quaternion decomposition, its roots of minus one are the unit sphere $S^2$ of $\operatorname{span}_\mathbb{R}\{e_1,e_2,e_3\}$ and parametrise the Hermitian idempotents, it contains no zero divisor, and as a real Lie algebra it is $\mathbb{R} \oplus \mathfrak{su}(2)$ with derived subalgebra $\mathrm{K}$.
 
 ## Summary of Notation
 
@@ -261,7 +261,7 @@ The quaternion subspace $\mathbb{H}_{\mathbb{B}}$ is the fixed space of complex 
 | $q_0, q_1, q_2, q_3$ | the four real coefficients of an element of the subspace |
 | $N(\tilde{Q})$ | the biquaternion norm, $q_0^2+q_1^2+q_2^2+q_3^2$ on the subspace |
 | $\xi = \pm\mu$ | a root of $-1$ in the subspace, a unit element of the pure imaginary triple |
-| $\mathbb{S}^2$ | the two-sphere of roots of $-1$ in the subspace, $|\mu| = 1$ |
+| $S^2$ | the two-sphere of roots of $-1$ in the subspace, $|\mu| = 1$ |
 | $\tilde\Pi = \tfrac12(e_0 + \mu i)$ | a Hermitian idempotent, the image of a root of the subspace |
 | $\mathrm{K} = \operatorname{span}_{\mathbb{R}}\{e_1,e_2,e_3\}$ | the rotation subalgebra, the derived Lie algebra of the subspace |
 | $\bar{\cdot}, {}^{*}, {}^{\dagger}, \flat$ | the four involutions |

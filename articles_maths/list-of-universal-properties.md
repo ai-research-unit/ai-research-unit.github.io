@@ -72,7 +72,7 @@ The **tensor product** is the universal object representing the bilinear maps; o
 | Symmetric algebra $\operatorname{Sym}(M)$ | the quotient of the tensor algebra by $x \otimes y - y \otimes x$ | *The Symmetric Algebra* |
 | Exterior power $\Lambda^n M$ | the universal object for the alternating $n$-multilinear maps | *Exterior Powers* |
 | Exterior algebra $\Lambda(M)$ | the quotient of the tensor algebra by $x \otimes x$ | *The Exterior Algebra* |
-| Clifford algebra $\mathrm{Cl}(V,Q)$ | the quotient of $T(V)$ by $x \otimes x - Q(x)$ | *The Clifford Algebra* |
+| Clifford algebra $\mathrm{Cl}(V,Q)$ | the quotient of $T(V)$ by $x \otimes x - Q(x)$ | *Clifford Algebras* |
 | Non-example: the tensor product over a non-commutative ring without a bimodule structure | the candidate fails: $M \otimes_R N$ requires one side left and one right | *The Balanced Product over an Algebra* |
 
 ## Localizations and Fraction Objects

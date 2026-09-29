@@ -1,0 +1,254 @@
+# __Involutive Topological Rings and Fields__
+
+## Introduction
+
+An **involutive topological ring** is a topological ring together with an involution that is continuous; an **involutive topological field** is a topological field with a continuous involution. The two structures are those of *Involutive Rings* and of *Topological Rings and Fields*, and the combination is not the sum of the two: continuity is a hypothesis with content, and when it holds the topology closes the fixed and the skew sets, turns the additive decomposition into a topological direct sum, keeps the ideal operations inside the closed ideals, and lets the involution pass to the $I$-adic completion.
+
+Four additions are the substance of the article. The **fixed set and the skew set are closed**, being equalizers of continuous maps into a Hausdorff ring, so the fixed subring of a continuous involution of a commutative ring is a closed subring; when $2$ is invertible the averaging map is continuous and $R$ is the topological direct sum $R^\sigma \oplus \mathrm{Skew}$, so the fixed set is a retract of the additive topological group of $R$. An involution is **continuous for the $I$-adic topology exactly when $\sigma(I)^m \subseteq I$ for some $m$**, which is automatic as soon as $\sigma(I) = I$, and then the $I$-adic and the $\sigma(I)$-adic topologies coincide; and when this holds the involution **extends to a continuous involution of the $I$-adic completion**, whose fixed set is the closure of that of $R$ when $2$ is invertible. On a **topological field** the fixed field of a continuous involution is a closed subfield of index two and a topological field in its own right. And the **quotient carries the involution but not the fixed set**: the image of the fixed set in $R/I$ can be strictly smaller than the fixed set of the quotient, so an element of a quotient can be fixed while no representative is fixed, exactly as in the abstract theory.
+
+Continuity is not automatic. It is free in the vacuous cases, the identity involution and the discrete and indiscrete topologies, where every map is continuous, and it is free whenever the involution preserves the ideal that defines a linear topology, since then $\sigma(I) = I$; for the identity involution of $\mathbb{Q}$ or of $\mathbb{R}$ with the usual topology there is nothing to prove. It fails in general, and the failure is detectable: on $\mathbb{R}[x]$ with the $(x)$-adic topology the order-two automorphisms of the ring are the identity and the maps $f(x) \mapsto f(b - x)$, and exactly those with $b = 0$ are continuous; the others have a fixed subring that is dense and not closed. On the field $\mathbb{Q}(\sqrt{2})$ with the topology inherited from $\mathbb{R}$ the conjugation $a + b\sqrt{2} \mapsto a - b\sqrt{2}$ is a discontinuous involution whose fixed field $\mathbb{Q}$ is dense and not closed. So the topology is what decides, on a given ring, which of its involutions are visible, and the closedness of the fixed set is the mark of the ones that are.
+
+**Layout and boundaries.** The article has five thematic sections and a closing comparison: the definition and first properties, with the descent to the Hausdorff quotient; the $I$-adic criterion and the extension of the involution to the completion; the fixed and the skew sets, their closedness and the topological splitting; the ideals, quotients and products; and the topological fields, where the fixed field, the order topology and the two examples above live. The abstract theory is *Involutive Rings*, whose fixed set, symmetric and skew elements, $\sigma$-ideals, quotients, products and commutative results are used without repetition; the topological background is *Topological Rings and Fields*, whose symbols $R^\times$, $\overline{\{0\}}$, the $I$-adic topology, $\widehat{R} = \varprojlim_n R/I^n$, $\mathbb{Z}_p$ and $k[[t]]$ are used with its meanings. Three boundaries are marked rather than crossed. The absolute values, the valuations and the completions they define, and with them the $p$-adic fields $\mathbb{Q}_p$, are *Absolute Values, Valuations and Completions*, the article after this one, and are named only; the metric and valued completions are not used, and no norm and no absolute value is written below. The topology of a module over a topological ring, and with it the topological vector spaces, are *Topological Modules and Vector Spaces*, later in this part, and are not used. The Haar measure and the invariant integration are Part III, and the forms and the adjoint involutions are *Involutive Clifford Algebras*, later in this part. Throughout, $R$ is a topological ring, Hausdorff when a separation hypothesis is needed, $F$ is a Hausdorff topological field, $\sigma$ is an involution of the underlying ring, that is an anti-automorphism of order two, $\alpha$ is an automorphism of order two, called an **involutive automorphism**, $R^\sigma$ is the fixed set, $\mathrm{Skew}(R,\sigma)$ is the set of skew elements, $R^\times$ is the group of units, and $\widehat{R}$ is the $I$-adic completion.
+
+## Continuous Involutions
+
+### Definition and First Properties
+
+**Definition.** A **topological involution** of a topological ring $R$ is an involution of the ring $R$ that is continuous for the topology. An **involutive topological ring** is a pair $(R,\sigma)$ with $\sigma$ a topological involution. A **topological involution** of a topological field $F$ is an involution of the field that is continuous, and an **involutive topological field** is a pair $(F,\sigma)$. An **involutive automorphism** of $R$ is an automorphism $\alpha$ with $\alpha^2 = \mathrm{id}$, and it is a **continuous involutive automorphism** when it is continuous.
+
+**Proposition (continuity at the origin).** Let $\sigma$ be an involution of the topological ring $R$. Then $\sigma$ is continuous if and only if it is continuous at $0$; equivalently, if and only if for every neighbourhood $V$ of $0$ the preimage $\sigma^{-1}(V)$ is a neighbourhood of $0$. Consequently a topological involution is a homeomorphism with $\sigma^{-1} = \sigma$, and it restricts to a continuous involutive automorphism of the topological group of units $R^\times$ when $R^\times$ is open.
+
+**Proof.** $\sigma$ is additive and $\sigma(0) = 0$, so $\sigma(x) - \sigma(x_0) = \sigma(x - x_0)$ and continuity at every point is continuity at $0$; the equivalence with the condition on preimages is the definition of continuity at a point, and continuity of $\sigma$ together with $\sigma^2 = \mathrm{id}$ makes $\sigma$ a homeomorphism. A unit goes to a unit and $\sigma(uv) = \sigma(v)\sigma(u) = 1$ for $uv = 1$, so $\sigma$ restricts to an automorphism of the group $R^\times$ of order two, continuous on the subspace $R^\times$ when it is open in $R$.
+
+**Remark (the two kinds of order-two map).** The ring case inherits the distinction of *Involutive Rings*, and the topology does not remove it. An **involution** is anti-multiplicative, so its fixed set is a subring only when its elements commute pairwise, and in a genuinely noncommutative ring it need not be a subring at all: the reversal of the free algebra in the examples below has a fixed set that is not closed under multiplication. An **involutive automorphism** is multiplicative, so its fixed set is always a subring; in a commutative ring every involution is an involutive automorphism. Every closedness and continuity statement below holds for both kinds, because both are additive and both square to the identity; what distinguishes them is only whether the fixed set is a subring.
+
+**Proposition (the Hausdorff quotient).** Let $\sigma$ be an involution of the topological ring $R$. Then $\sigma$ carries the closure $\overline{\{0\}}$ of zero onto itself, $\sigma$ induces an involution $\bar\sigma$ of the quotient $R/\overline{\{0\}}$, and $\sigma$ is continuous if and only if $\bar\sigma$ is. The quotient is Hausdorff and $\rho(R^\sigma) \subseteq (R/\overline{\{0\}})^{\bar\sigma}$, where $\rho$ is the quotient map.
+
+**Proof.** $\sigma$ is a homeomorphism fixing $0$, so it carries $\overline{\{0\}}$ onto $\overline{\{\sigma(0)\}} = \overline{\{0\}}$; hence it descends to the quotient, which is Hausdorff because the closure of its zero element is $\{0\}$, by the proposition on topological rings. If $\sigma$ is continuous then so is $\bar\sigma$, being the map induced on a quotient. Conversely suppose $\bar\sigma$ continuous and let $U$ be a neighbourhood of $0$ in $R$; choose a neighbourhood $V$ of $0$ with $V + V \subseteq U$, which is possible by continuity of the addition, and let $x$ be such that $\bar\sigma(\rho(x)) \in \rho(V)$. Then $\sigma(x) - v \in \overline{\{0\}}$ for some $v \in V$, and $\overline{\{0\}} \subseteq V$ because the closure of zero is the intersection of all the neighbourhoods of zero; so $\sigma(x) \in V + V \subseteq U$. Hence $\rho^{-1}\bar\sigma^{-1}\rho(V) \subseteq \sigma^{-1}(U)$, and the left-hand side is a neighbourhood of $0$ because $\rho$ and $\bar\sigma$ are continuous and $\rho(V)$ is a neighbourhood of $0$ in the quotient, the quotient map being open; therefore $\sigma^{-1}(U)$ is a neighbourhood of $0$ for every neighbourhood $U$ of $0$, so $\sigma$ is continuous. An element of $\rho(R^\sigma)$ has a fixed representative, hence is fixed.
+
+**Definition (morphisms).** A **homomorphism** $(R,\sigma) \to (S,\tau)$ of involutive topological rings is a continuous ring homomorphism $\varphi$ with $\varphi \circ \sigma = \tau \circ \varphi$. It is an **isomorphism** when it is a homeomorphism and a ring isomorphism. The kernel of such a homomorphism is a $\sigma$-stable ideal, and its image is $\tau$-stable.
+
+**Remark (automatic continuity).** Continuity is sometimes free for reasons of regularity. If $R$ is a compact Hausdorff topological ring and the graph of $\sigma$ is closed in $R \times R$, then $\sigma$ is continuous: for a map $X \to Y$ with closed graph, $X$ compact and $Y$ Hausdorff, the preimage of a closed set is closed, so the map is continuous, which is the argument of *Foundations of Topology* used again in *Involutive Topological Groups*. If moreover $R$ is Polish and $\sigma$ is Baire measurable, then $\sigma$ is continuous, by the automatic continuity of Baire-measurable homomorphisms, which is *Baire Spaces and Category*. Both statements are named and not used.
+
+### Examples
+
+**Example (the identity, verdict: a continuous automorphism).** The identity of any topological ring is a topological involution with $R^\sigma = R$ and $\mathrm{Skew}(R,\sigma) = 0$. It is the only involution of $\mathbb{Q}$ with the usual topology, because $\mathbb{Q}$ has no nontrivial field automorphism, and the only involution of $\mathbb{R}$ with the usual topology, because every positive real is a square, so every automorphism of $\mathbb{R}$ preserves the order, and an order-preserving involution is the identity. More generally the identity is the only involution of a real-closed field, for the same reason.
+
+**Example (discrete and indiscrete topologies, verdict: the topology selects nothing).** For the discrete topology, and equally for the indiscrete topology, every self-map of $R$ is continuous, so the involutive topological rings on a given ring with either of these two topologies are exactly the abstract involutive rings of *Involutive Rings*. The theory has content for the topologies that are Hausdorff and not discrete, which the indiscrete topology on a ring with more than one element is not.
+
+**Example ($\mathbb{C}$ with conjugation, verdict: a continuous involutive automorphism of a topological field).** The conjugation $z \mapsto \bar z$ of $\mathbb{C}$ with the usual topology is continuous, being an isometry, and it is a field automorphism of order two, hence an involutive automorphism; the fixed field is $\mathbb{R}$, a closed subfield because it is the fixed set of a continuous map into the Hausdorff field $\mathbb{C}$. On $\mathbb{C}$ with the discrete topology the same map is continuous and the fixed field is again $\mathbb{R}$. The two topologies give the same involution and the same fixed field; the usual one is the Hausdorff and non-discrete topology in which the example has content, and the discrete one is recorded only to fix that the involution and the fixed field are data independent of the topology.
+
+**Example (the free algebra, verdict: a continuous anti-automorphism that is not an automorphism).** Let $A = K\langle x_1, x_2\rangle$ be the free algebra over a field $K$, let $I = (x_1, x_2)$ be the ideal of elements with zero constant term, and let $\sigma$ be the reversal of words. Then $\sigma$ is an anti-automorphism of order two and is not an automorphism, since it interchanges $x_1x_2$ and $x_2x_1$; the $I$-adic topology has the powers $I^n$, the span of the words of length at least $n$, as a fundamental system of neighbourhoods of $0$, and $\sigma(I^n) = I^n$ because reversal preserves length. So $\sigma$ is continuous, by the corollary of the next section, and $A$ is an involutive topological ring whose involution is a genuine anti-automorphism; the fixed set consists of the constants and the palindromic elements, it is closed because $\sigma$ is continuous and $A$ is Hausdorff, and it is not a subring: $x_1$ and $x_2$ are fixed and $x_1x_2$ is not.
+
+**Example (products, verdict: continuous involution, of which the componentwise map and the swap are automorphisms and the graph map is an anti-automorphism).** For involutive topological rings $(R,\sigma)$ and $(S,\tau)$ the componentwise map $(\sigma,\tau)$ is a topological involution of $R \times S$ with fixed set $R^\sigma \times S^\tau$ and skew set $\mathrm{Skew}(R,\sigma) \times \mathrm{Skew}(S,\tau)$. On $R \times R$ the swap $(x,y) \mapsto (y,x)$ is a continuous involutive automorphism of order two with the diagonal as fixed subring, and for an anti-isomorphism $\theta : R \to S$ the map $(x,y) \mapsto (\theta^{-1}(y), \theta(x))$ is an involution of $R \times S$ with fixed set the graph of $\theta$; it is a topological involution exactly when $\theta$ is a homeomorphism, because its two components are $\theta^{-1}$ and $\theta$.
+
+## The Involution and the $I$-adic Topology
+
+### The Criterion
+
+**Theorem ($I$-adic criterion).** Let $R$ be a ring, $I$ an ideal and $\sigma$ an involution of $R$, and give $R$ the $I$-adic topology. Then $\sigma$ is continuous if and only if $\sigma(I)^m \subseteq I$ for some $m \geq 1$. When this holds, the $I$-adic and the $\sigma(I)$-adic topologies coincide, and $\sigma$ is a homeomorphism for them.
+
+**Proof.** The $I$-adic topology has the powers $I^n$ as a fundamental system of neighbourhoods of $0$, and a preimage $\sigma^{-1}(I^n)$ is a neighbourhood of $0$ exactly when it contains some $I^m$, that is exactly when $\sigma(I^m) \subseteq I^n$; taking $n = 1$ gives $\sigma(I)^m \subseteq I$ as a necessary condition, since $\sigma(I^m) = \sigma(I)^m$ for an anti-automorphism. Conversely if $\sigma(I)^m \subseteq I$ then $\sigma(I)^{mn} = (\sigma(I)^m)^n \subseteq I^n$, so $\sigma(I^{mn}) \subseteq I^n$ for every $n$ and $\sigma$ is continuous at $0$; the coincidence of the two topologies is the corollary below.
+
+**Corollary (three equivalent forms).** Let $I$ be an ideal of $R$ and $\sigma$ an involution. The following are equivalent: (i) $\sigma$ is continuous for the $I$-adic topology; (ii) $\sigma(I)^m \subseteq I$ for some $m \geq 1$; (iii) the $I$-adic and the $\sigma(I)$-adic topologies coincide. In particular $\sigma$ is continuous whenever $\sigma(I) = I$, and whenever $\sigma(I)$ and $I$ are cofinal in both directions.
+
+**Proof.** (i) $\Rightarrow$ (ii) is the criterion with $n = 1$. (ii) $\Rightarrow$ (iii): from $\sigma(I)^m \subseteq I$ one gets $\sigma(I)^{mn} \subseteq I^n$ for every $n$, and applying $\sigma$ to the inclusion gives $I^m \subseteq \sigma(I)$, so each of the two ideals is contained in a power of the other and the change-of-ideal proposition of *Topological Rings and Fields* makes the topologies coincide. (iii) $\Rightarrow$ (i): for each $n$ the ideal $I^n$ contains some $\sigma(I)^m = \sigma(I^m)$, since the topologies coincide, so $\sigma$ is continuous at $0$. The case $\sigma(I) = I$ is (ii) with $m = 1$.
+
+**Corollary (the involutions of one ring, and which of them the topology keeps).** Let $R = \mathbb{R}[x]$ with the $(x)$-adic topology. Every ring automorphism of $\mathbb{R}[x]$ is an $\mathbb{R}$-algebra automorphism: it carries the units $\mathbb{R}\setminus\{0\}$ onto themselves, hence carries the subring $\mathbb{R}$ of constants onto itself, and it is determined by the image of $x$, which must generate $\mathbb{R}[x]$ and so is $ax + b$ with $a \neq 0$. The order-two condition $a^2 = 1$ and $ab + b = 0$ gives $a = 1$, $b = 0$ or $a = -1$ with $b$ arbitrary, so the involutions of the ring $\mathbb{R}[x]$, the ring being commutative, are the identity and the maps $\sigma_b(f)(x) = f(b - x)$ for $b \in \mathbb{R}$. Of these exactly two are continuous for the $(x)$-adic topology, the identity and $\sigma_0$, with $\sigma_0(f)(x) = f(-x)$: for $b \neq 0$ the ideal $\sigma_b(I) = (b - x)$ contains $b - x$, whose powers have nonzero constant term $b^m$, so $(b - x)^m \not\subseteq (x)$ for every $m$ and the criterion fails, while $\sigma_0(I) = I$ and the criterion applies.
+
+**Example (the fixed subring of a continuous and of a discontinuous involution, verdict: closed in one case, dense in the other).** On $\mathbb{R}[x]$ with the $(x)$-adic topology the fixed subring of the continuous involution $\sigma_0(f)(x) = f(-x)$ is $\mathbb{R}[x^2]$, a closed subring, being the fixed set of a continuous map into a Hausdorff ring. The fixed subring of the discontinuous involution $\sigma_1(f)(x) = f(1 - x)$ is the set of $p$ with $p(x) = p(1 - x)$, which is $\mathbb{R}[x - x^2]$, the polynomials in $u = x - x^2$; it is proper, since $x$ is not fixed, and it is dense: the recursion $f_0 = 0$ and $f_{n+1} = u + f_n^2$ keeps $f_n$ inside $\mathbb{R}[u]$ and gives $f_n \equiv x$ modulo $x^{n+1}$, because $f_{n+1} - x = (f_n - x)(f_n + x)$, so $f_n$ converges to $x$ in the $(x)$-adic topology. Hence $x$ and with it all of $\mathbb{R}[x]$ lies in the closure of $\mathbb{R}[x - x^2]$, and the fixed subring of a discontinuous involution is dense and not closed.
+
+**Remark.** The two involutions of the example have the same kind, are automorphisms of the same ring, and differ only in the value at $x$; the topology separates them. This is the ring analogue of the fact that a topological group can carry discontinuous involutions, and it shows that the passage from an involutive ring to an involutive topological ring removes genuinely many involutions.
+
+### The Completion
+
+**Theorem (extension to the $I$-adic completion).** Let $R$ be a ring, $I$ an ideal with $\sigma(I) = I$, and let $\widehat{R} = \varprojlim_n R/I^n$ be the $I$-adic completion. Then $\sigma$ induces an involution $\bar\sigma_n$ of each quotient $R/I^n$, the family $(\bar\sigma_n)$ is compatible with the projections, and it defines a continuous involution $\widehat{\sigma}$ of $\widehat{R}$ with
+
+$$
+\widehat{\sigma} \circ \iota = \iota \circ \sigma,
+$$
+
+where $\iota : R \to \widehat{R}$ is the natural map. The pair $(\widehat{R}, \widehat{\sigma})$ is an involutive topological ring, $\widehat{\sigma}$ is a homeomorphism for the $\widehat{I}$-adic topology of $\widehat{R}$, and if $2$ is invertible in $R$ then
+
+$$
+(\widehat{R})^{\widehat{\sigma}} = \overline{\iota(R^\sigma)},
+$$
+
+the closure being taken in $\widehat{R}$; when the $I$-adic topology on $R$ is Hausdorff the map $\iota$ restricts to an injection $R^\sigma \to (\widehat{R})^{\widehat{\sigma}}$, and the completion of the fixed subring is the closure of its image in the fixed subring of the completion, so the injection is an isomorphism exactly when the fixed subring of $R$ is complete in the induced topology.
+
+**Proof.** Since $\sigma(I^n) = \sigma(I)^n = I^n$, the involution descends to each quotient $R/I^n$ and commutes with the projections, so the family defines a map $\widehat{\sigma}$ of the inverse limit with $\widehat{\sigma}^2 = \mathrm{id}$; it is a ring homomorphism of $\widehat{R}$ into its opposite ring, because the limit of the anti-multiplicative maps $\bar\sigma_n$ is anti-multiplicative. It is continuous because $\widehat{\sigma}(\widehat{I}^{\,n}) = \widehat{I}^{\,n}$, the ideal $\widehat{I}^{\,n}$ being the kernel of the projection $\widehat{R} \to R/I^n$. For the fixed set, let $a \in \widehat{R}$ be fixed. The image of $\iota$ is dense, so $a$ is the limit of a net $(\iota(r_k))$ with values in $\iota(R)$; applying $\widehat{\sigma}$ and using $\widehat{\sigma}\iota = \iota\sigma$ gives $a = \lim \iota(\sigma(r_k))$ as well, hence $\iota(r_k - \sigma(r_k)) \to 0$ and, multiplying by $\tfrac12 \in R$ which exists by hypothesis,
+
+$$
+\iota\!\left(\tfrac12(r_k + \sigma(r_k))\right) = \tfrac12\bigl(\iota(r_k) + \iota(\sigma(r_k))\bigr) \longrightarrow \tfrac12(a + a) = a,
+$$
+
+with $\tfrac12(r_k + \sigma(r_k)) \in R^\sigma$ for every $k$; so $a$ lies in the closure of $\iota(R^\sigma)$. The reverse inclusion holds because $\widehat{\sigma}$ is continuous and $\widehat{R}$ is Hausdorff, so its fixed set is closed. When the $I$-adic topology on $R$ is Hausdorff the map $\iota$ is injective and restricts to an isomorphism $R^\sigma \to \iota(R^\sigma)$.
+
+**Corollary (the completion of an involutive topological ring).** Let $(R,\sigma)$ be an involutive topological ring whose topology is $I$-adic, with $\sigma$ continuous. Then the ideal $J = I \cap \sigma(I)$ is $\sigma$-stable and cofinal with $I$, the $J$-adic and the $I$-adic topologies coincide, and $\sigma(J) = J$; hence the completion $\widehat{R}$ is an involutive topological ring, the involution is the unique continuous extension of $\sigma$ because $\iota(R)$ is dense and $\widehat{R}$ is Hausdorff, and the completion of the fixed subring is the fixed subring of the completion when $2$ is invertible.
+
+**Example ($\mathbb{Z}[i]$ and the $p$-adic completion, verdict: a continuous involution with a closed fixed subring).** Let $R = \mathbb{Z}[i]$ with the conjugation $\sigma(a + bi) = a - bi$ and the $I$-adic topology for $I = (p)$, $p$ a prime. Then $\sigma(I) = I$ because $\sigma(p) = p$, so $\sigma$ is continuous, and $\mathbb{Z}[i]$ is an involutive topological ring whose fixed subring is $\mathbb{Z}$, closed. The completion is the ring $\mathbb{Z}_p[i] = \varprojlim_n \mathbb{Z}[i]/p^n\mathbb{Z}[i] \cong \mathbb{Z}_p[X]/(X^2+1)$, which is $\mathbb{Z}_p \oplus \mathbb{Z}_p X$ as a $\mathbb{Z}_p$-module, and the extended involution sends $X$ to $-X$; an element $a + bX$ is fixed exactly when $2bX = 0$, that is exactly when $b = 0$ because $\mathbb{Z}_p$ is a domain. So the fixed ring of the completed involution is $\mathbb{Z}_p$, which is the closure of $\mathbb{Z}$ in $\mathbb{Z}_p[i]$, in agreement with the theorem. For $p \equiv 3 \pmod 4$ the polynomial $X^2+1$ is irreducible over $\mathbb{F}_p$ and hence over $\mathbb{Z}_p$, so $\mathbb{Z}_p[i]$ is a domain and $\mathbb{Q}_p[i]$ is the quadratic extension of $\mathbb{Q}_p$ fixed by the involution; the fields $\mathbb{Q}_p$ themselves are *Absolute Values, Valuations and Completions*.
+
+**Example (formal power series, verdict: the involution extends and the fixed ring gains exactly the limits).** On $R = \mathbb{R}[x]$ with the $(x)$-adic topology and $\sigma_0(f)(x) = f(-x)$ the completion is $\widehat{R} = \mathbb{R}[[x]]$ and the extended involution is the substitution $x \mapsto -x$, well defined because it preserves every $x^n\mathbb{R}[[x]]$. Its fixed ring is the ring $\mathbb{R}[[x^2]]$ of even power series, which is exactly the closure of $\mathbb{R}[x^2]$ in $\mathbb{R}[[x]]$. So the completion adds to the fixed ring nothing but the limits of its elements: the series $\sum_{n\ge0} x^{2n}$ is fixed and is the limit of its partial sums, which are the even polynomials of $\mathbb{R}[x^2]$, in the $x$-adic topology.
+
+## The Fixed and the Skew Sets
+
+### Closedness
+
+**Theorem (closedness of the fixed and the skew sets).** Let $\sigma$ be a topological involution of a Hausdorff topological ring $R$. Then the fixed set $R^\sigma$ and the skew set $\mathrm{Skew}(R,\sigma) = \{x : \sigma(x) = -x\}$ are closed in $R$; the fixed set is a closed subring when $\sigma$ is an automorphism, and in particular whenever $R$ is commutative; and if $R$ is compact then both sets are compact.
+
+**Proof.** The fixed set is the equalizer of the continuous maps $\sigma$ and $\mathrm{id}_R$, and the skew set is the equalizer of $\sigma$ and $-\mathrm{id}_R$; the equalizer of two continuous maps into a Hausdorff space is closed, being the preimage of the diagonal. If $\sigma$ is multiplicative its fixed set is a subring, by *Involutive Rings*, and a closed subset of a compact space is compact.
+
+**Corollary (a dense fixed set forces the trivial involution).** If $\sigma$ is a topological involution of a Hausdorff ring $R$ and the fixed set $R^\sigma$ is dense in $R$, then $\sigma = \mathrm{id}_R$. In particular a continuous involution of a Hausdorff ring is determined by its behaviour on any dense subset.
+
+**Proof.** A dense closed subset is the whole space; $R^\sigma = R$ says $\sigma = \mathrm{id}$.
+
+### The Topological Splitting
+
+**Theorem (the averaging map).** Let $\sigma$ be a topological involution of the topological ring $R$ and suppose $2$ is invertible in $R$. Then the **averaging map**
+
+$$
+\pi : R \to R, \qquad \pi(x) = \tfrac12\bigl(x + \sigma(x)\bigr),
+$$
+
+is a continuous idempotent endomorphism of the additive topological group of $R$ with image $R^\sigma$ and kernel $\mathrm{Skew}(R,\sigma)$. Consequently
+
+$$
+(R,+) \cong R^\sigma \oplus \mathrm{Skew}(R,\sigma)
+$$
+
+as topological groups, with the summands closed, and $R^\sigma$ is a retract of $R$. The map $\pi$ is multiplicative, that is a ring homomorphism, exactly when $\sigma$ is also multiplicative, which holds for the trivial involution of every ring and for every involution of a commutative ring.
+
+**Proof.** The map $\pi$ is a composite of the continuous operations of the ring and the fixed scalar $1/2$, hence continuous; it is additive, idempotent and fixes exactly the fixed elements, so its image is $R^\sigma$, and $\pi(x) = 0$ says $x + \sigma(x) = 0$, that is $x$ skew. Additivity and idempotence make $R$ the algebraic direct sum of the image and the kernel; the isomorphism $x \mapsto (\pi(x), x - \pi(x))$ has continuous components because $\pi$ and $\mathrm{id} - \pi$ are continuous, and its inverse, the sum, is continuous, so the direct sum is topological. Both summands are closed by the theorem above. For multiplicativity of $\pi$ one needs $\sigma(xy) = \sigma(x)\sigma(y)$, that is $\sigma$ multiplicative; the two named cases are immediate from *Involutive Rings*.
+
+**Example (the splitting read on a ring, verdict: closed summands).** For $R = \mathbb{R}[x]$ with the $(x)$-adic topology and $\sigma_0(f)(x) = f(-x)$, the fixed part is the even polynomials $\mathbb{R}[x^2]$ and the skew part is the odd polynomials $x\mathbb{R}[x^2]$; both are closed, the direct sum $\mathbb{R}[x^2] \oplus x\mathbb{R}[x^2]$ is all of $\mathbb{R}[x]$, and the splitting projection $\pi$ is continuous. The projection is not multiplicative, since the product of the two skew elements $x$ and $x$ is the fixed element $x^2$ while $\pi(x)\pi(x) = 0$.
+
+**Remark (closedness is the only gain).** The theorem gives closedness and the topological splitting, and it gives nothing about multiplicativity: the fixed set of a topological involution that is a genuine anti-automorphism is closed but need not be a subring, as the reversal of the free algebra shows, and the fixed set of a discontinuous involution need not be closed, as $f(x) \mapsto f(1-x)$ on $\mathbb{R}[x]$ shows. Continuity is therefore exactly the hypothesis under which the fixed set joins the closed sets, and no hypothesis short of it repairs the algebraic failures of *Involutive Rings*.
+
+## Ideals, Quotients and Products
+
+**Definition.** An ideal $I$ of $R$ is **$\sigma$-stable** if $\sigma(I) = I$. It is then a $\sigma$-ideal in the sense of *Involutive Rings*, the involution restricts to $I$, and when $I$ is closed and $\sigma$ is continuous the quotient $R/I$ is a Hausdorff topological ring carrying the induced involution $\bar\sigma$.
+
+**Theorem.** Let $\sigma$ be a topological involution of the Hausdorff ring $R$ and let $I$ be a $\sigma$-stable ideal.
+
+**(a)** The closure $\overline{I}$ is a $\sigma$-stable closed ideal, and $\overline{I}$ is the smallest closed $\sigma$-stable ideal containing $I$.
+
+**(b)** The quotient $R/I$ with the quotient topology carries the involution $\bar\sigma$, which is continuous; when $I$ is closed, $R/I$ is Hausdorff and $(R/I)^{\bar\sigma}$ is closed.
+
+**(c)** The image of the fixed set satisfies $\rho(R^\sigma) \subseteq (R/I)^{\bar\sigma}$ for the quotient map $\rho$, and the inclusion can be strict.
+
+**Proof.** (a) $\sigma$ is continuous and $\sigma(I) = I$, so $\sigma(\overline{I}) \subseteq \overline{\sigma(I)} = \overline{I}$ and, applying $\sigma$ again, equality; a closed ideal is a closed set, and any closed $\sigma$-stable ideal containing $I$ contains the closure. (b) The induced map is continuous because $\sigma$ and the quotient map are, and it is additive with square the identity; the fixed set of a continuous map into the Hausdorff quotient is closed. (c) An element of $\rho(R^\sigma)$ has a fixed representative and is fixed; strictness is the example below.
+
+**Example (the image of the fixed set can be strict, verdict: a topological instance of the abstract failure).** Let $R = \mathbb{Z}[i]$ with the conjugation and the $(2)$-adic topology, and let $I = (2)$, a $\sigma$-stable closed ideal since it is a basic neighbourhood of $0$. The quotient $R/I$ has four elements and the induced involution is the identity there, because $i \equiv -i \pmod 2$; hence $(R/I)^{\bar\sigma}$ has four elements, while $\rho(R^\sigma) = \rho(\mathbb{Z})$ has two. So the strictness of $\rho(R^\sigma) \subseteq (R/I)^{\bar\sigma}$ is not an artefact of the abstract theory: it occurs in a Hausdorff quotient of a Hausdorff topological ring carrying a continuous involution.
+
+**Remark (the completion repairs nothing of that kind, and for a reason).** For the quotient an element can be fixed modulo $I$ without any representative being fixed, because the quotient identifies a coset with its conjugate; for the completion the fixed elements are the limits of fixed elements, by the theorem of the previous section, so no new fixed element appears. The two constructions therefore behave differently in front of the same involution, and the difference is exactly the difference between a quotient and an inverse limit of quotients.
+
+**Proposition (products, conjugacy and the graph).** Let $(R,\sigma)$ and $(S,\tau)$ be involutive topological rings. The three involutions below are given with their kind: the first two are automorphisms, the third is an anti-automorphism, multiplicative only when the rings force it.
+
+**(a)** The componentwise involution is a topological involution of $R \times S$ for the product topology, with fixed set $R^\sigma \times S^\tau$.
+
+**(b)** The swap is a topological involutive automorphism of $R \times R$ with the diagonal as fixed subring, and the $\sigma$-ideals of $R\times R$ for the swap are the $I \times I$.
+
+**(c)** For an anti-isomorphism $\theta : R \to S$ the map $(x,y) \mapsto (\theta^{-1}(y), \theta(x))$ is an involution of the ring $R \times S$ with the graph of $\theta$ as fixed set, and it is a topological involution exactly when $\theta$ is a homeomorphism.
+
+**Proof.** (a) The product topology makes the operations continuous and the components continuous. (b) The swap is a homeomorphism of $R \times R$ and a ring automorphism of order two with the diagonal as fixed subring, and the description of the ideals and of the $\sigma$-ideals is that of *Involutive Rings*. (c) The map has order two and is anti-multiplicative, by the computation of *Involutive Rings*; its components are $\theta^{-1}$ and $\theta$, so it is continuous exactly when both are.
+
+**Example (the transpose on a matrix ring, verdict: a continuous anti-automorphism whose fixed set is not a subring).** For $R = M_2(\mathbb{Q})$ with the discrete topology the transpose is a topological involution, because every map is continuous there, and it is an anti-automorphism of order two and not an automorphism. Its fixed set is the three-dimensional space of symmetric matrices, which is not a subring: the symmetric matrices $\begin{pmatrix}1&1\\1&0\end{pmatrix}$ and $\begin{pmatrix}0&1\\1&1\end{pmatrix}$ have product $\begin{pmatrix}1&2\\0&1\end{pmatrix}$, which is not symmetric. The example is recorded to fix the kind of the map in the topological setting: the transpose is a continuous anti-automorphism, its fixed set is closed because it is the fixed set of a continuous map into a Hausdorff ring, and it is not a subring, so closedness and the topological splitting neither require nor restore multiplicativity.
+
+## Topological Fields with Involution
+
+### The Fixed Field
+
+**Theorem.** Let $\sigma$ be a topological involution of a Hausdorff topological field $F$. Then the fixed set $F^\sigma$ is a closed subfield, it is a topological field for the subspace topology, the unit group $(F^\sigma)^\times$ is open in $F^\sigma$, and if $\sigma \neq \mathrm{id}$ then $[F : F^\sigma] = 2$ and $F$ is a Galois extension of $F^\sigma$ with group $\{\mathrm{id}, \sigma\}$.
+
+**Proof.** The fixed set is closed by the equalizer argument and is a subfield by *Involutive Rings*; the operations of $F^\sigma$ are the restrictions of those of $F$ and the restrictions are continuous, and the unit group of $F^\sigma$ is $F^\sigma \cap F^\times$, the intersection of an open set with the subspace. That $F^\sigma$ is proper, of index two and Galois, is the theorem of *Involutive Rings* on fields with involution.
+
+**Remark (no $I$-adic field topology).** A field has no proper nonzero ideal, so the only $I$-adic topologies on a field are the discrete one, from $I = 0$, and the indiscrete one, from $I = F$, by *Topological Rings and Fields*. The $I$-adic machinery above therefore gives no interesting example of an involutive topological field: such an example must come from an ordering, used below, or from an absolute value or a valuation, which is *Absolute Values, Valuations and Completions*, the next article.
+
+**Theorem (the order topology).** Let $(F,P)$ be an ordered field with the order topology, which makes it a topological field by the example table of *Topological Rings and Fields*, and let $\sigma$ be an automorphism of $F$.
+
+**(a)** If $\sigma(P) = P$ then $\sigma$ is order-preserving and continuous, and if moreover $\sigma$ is an involution then $\sigma = \mathrm{id}$.
+
+**(b)** No automorphism of $F$ satisfies $\sigma(P) = -P$, so no automorphism is order-reversing.
+
+**(c)** Consequently a monotone automorphism of $F$ is order-preserving, a monotone involution of $F$ is the identity, and every nontrivial involution of $F$ is non-monotone. If $F$ is real closed, or $F = \mathbb{Q}$, then the identity is the only involution of $F$.
+
+**Proof.** (a) If $\sigma(P) = P$ and $x < y$ then $y - x \in P$, so $\sigma(y) - \sigma(x) \in P$ and $\sigma(x) < \sigma(y)$; an order-preserving bijection is continuous for the order topology, because the preimage of an interval is an interval; and an order-preserving involution is the identity by the theorem of *Involutive Rings*, whose one-line proof applies here unchanged. (b) An order-reversing bijection satisfies $\sigma(P) = -P$, since $\sigma(x) < \sigma(0) = 0$ for every $x > 0$; but then for $y \neq 0$ the element $y^2$ lies in $P$, so $\sigma(y^2)$ lies in $-P$, while $\sigma(y^2) = \sigma(y)^2$ is a nonzero square and so lies in $P$, a contradiction. (c) The first two assertions are (a) and (b), and an involution is either monotone or not; if $F$ is real closed every positive element is a square, so every automorphism satisfies $\sigma(P) = P$ and (a) applies, and the only automorphism of $\mathbb{Q}$ is the identity.
+
+**Remark.** Part (c) says that on an ordered field continuity is not automatic: apart from the identity the involutions are all non-monotone, and the sufficient criterion of monotonicity therefore does not apply to them. The next example is such an involution, non-monotone and discontinuous, and it is the same field that exhibits the failure of closedness of the fixed field.
+
+### Examples
+
+**Example ($\mathbb{C}$ over $\mathbb{R}$, verdict: a continuous involutive automorphism, and a closed fixed field).** The conjugation of $\mathbb{C}$ with the usual topology is a continuous involutive automorphism and its fixed field $\mathbb{R}$ is closed; the unit group $\mathbb{R}^\times$ is open in $\mathbb{R}$, and the degree is two, so the pair is the model case of the theorem above, with continuity, closedness and an open unit group all holding. The elements of conjugate product one, that is $z\bar z = 1$, are the unit circle; the geometry of that group is *Geometry on Groups* and is not used here.
+
+**Example ($\mathbb{Q}(\sqrt{2})$ inside $\mathbb{R}$, verdict: a discontinuous involutive automorphism whose fixed field is dense and not closed).** Let $F = \mathbb{Q}(\sqrt{2})$ with the topology inherited from $\mathbb{R}$, which is the order topology of the ordering $F$ inherits from $\mathbb{R}$, and let $\sigma(a + b\sqrt{2}) = a - b\sqrt{2}$. Then $\sigma$ is a field automorphism of order two, hence an involutive automorphism of the topological field $F$, and it is non-monotone: $\sqrt{2} > 1$ while $\sigma(\sqrt{2}) = -\sqrt{2} < 1 = \sigma(1)$, and $1 - \sqrt{2} < 3 - 2\sqrt{2}$ while $\sigma(1-\sqrt{2}) = 1+\sqrt{2} > 3+2\sqrt{2} = \sigma(3-2\sqrt{2})$, so $\sigma$ is neither increasing nor decreasing, in agreement with the theorem above. Its fixed field is $\mathbb{Q}$, the elements with $b = 0$. Let $b_k \in \mathbb{Q}$ approximate $1/\sqrt{2}$, so that $b_k \to 1/\sqrt{2}$ in $\mathbb{R}$; then the elements $x_k = b_k\sqrt{2} - 1$ lie in $F$ and converge to $0$ in $F$, while $\sigma(x_k) = -b_k\sqrt{2} - 1$ converges to $-2$, which is not $\sigma(0) = 0$. Hence $\sigma$ is discontinuous at $0$ and is not a topological involution. Its fixed field $\mathbb{Q}$ is dense in $\mathbb{Q}(\sqrt{2})$, because each of the two coordinates can be approximated by rationals, and it is a proper subset, so it is not closed: this is the announced failure of closedness for a discontinuous involution, and it shows that the converse of the closedness theorem is false already for fields.
+
+**Remark (the boundary to the $p$-adic fields).** The fields $\mathbb{Q}_p$ and their finite extensions are the standard topological fields with continuous involutions, and they are *Absolute Values, Valuations and Completions* and *Local Fields*; the involution $a + bi \mapsto a - bi$ on $\mathbb{Z}[i]$ completed above is the integral shadow of that theory, and nothing of it is used here.
+
+## What the Topology Adds
+
+The comparison is between the abstract involutive ring of *Involutive Rings* and its topological form. The new datum is continuity, and its consequences are the following.
+
+- **Continuity is a hypothesis.** It is automatic when the involution preserves the ideal defining the topology, when the topology is discrete or indiscrete, and for the identity; it fails for $f(x) \mapsto f(b - x)$ on $\mathbb{R}[x]$ with the $(x)$-adic topology for $b \neq 0$, and for the conjugation of $\mathbb{Q}(\sqrt{2})$ with the topology inherited from $\mathbb{R}$. So a topological ring carries fewer involutions than its underlying ring, and the criterion that decides which are continuous is the $I$-adic criterion $\sigma(I)^m \subseteq I$.
+- **The fixed set and the skew set are closed**, being equalizers, and the fixed subring of a continuous involution of a commutative ring is a closed subring; abstractly the fixed set is only a subring. Since the fixed set of a continuous involution is closed, a dense fixed set forces the involution to be trivial, and a discontinuous involution may have a fixed set that is dense and not closed, as $\mathbb{R}[x - x^2]$ and $\mathbb{Q}$ above.
+- **The additive decomposition is topological**: with $2$ invertible, $R$ is the topological direct sum $R^\sigma \oplus \mathrm{Skew}(R,\sigma)$ and the fixed set is a retract of the additive group, the retraction being the averaging map. The decomposition is additive and not multiplicative, and the retraction is a ring map only when the involution is.
+- **The involution descends to the Hausdorff quotient** and, when $I$ is $\sigma$-stable and closed, to the Hausdorff quotient ring $R/I$, where the image of the fixed set can be strictly smaller than the fixed set of the quotient: an element can be fixed modulo $I$ with no fixed representative, as $\mathbb{Z}[i]/(2)$ shows.
+- **The involution extends to the $I$-adic completion**, and the completion of an involutive topological ring is again one; the fixed set of the extension is the closure of the fixed set of $R$ when $2$ is invertible, so the completion adds limits of fixed elements and no other fixed element, in contrast with the quotient.
+- **On a topological field the fixed field is a closed subfield** of index two and a topological field for the subspace topology, with open unit group; on an ordered field the only monotone involution is the identity and a nontrivial one is non-monotone, and the usual topology of $\mathbb{C}$ gives the model case $\mathbb{C}/\mathbb{R}$.
+- **Compactness gives closedness and nothing more.** A compact Hausdorff ring with a closed-graph involution has a continuous involution, whose fixed set is then compact, and the closed-graph argument is the same one the group case uses. The Haar measure, the invariant integral and the harmonic analysis built on them are Part III and are not used: nothing here integrates.
+
+## Summary
+
+An involutive topological ring is a topological ring with a continuous involution, and an involutive topological field is a topological field with a continuous involution. The involution is continuous exactly when it is continuous at $0$, the topology being determined by the neighbourhoods of zero, and continuity makes it a homeomorphism; it always descends to the Hausdorff quotient by the closure of zero, which is a $\sigma$-stable ideal. Continuity is a genuine hypothesis, free only in the vacuous cases, the identity involution and the discrete and indiscrete topologies, and free for an involution that preserves the ideal defining a linear topology, and failing on $\mathbb{R}[x]$ with the $(x)$-adic topology for the involutions $f(x)\mapsto f(b-x)$ with $b\neq0$ and on $\mathbb{Q}(\sqrt{2})$ with the topology from $\mathbb{R}$ for the conjugation, whose fixed field $\mathbb{Q}$ is dense and not closed.
+
+For an $I$-adic topology the criterion is $\sigma(I)^m \subseteq I$ for some $m$, which holds for every $\sigma$-stable ideal and makes the $I$-adic and $\sigma(I)$-adic topologies coincide; the involution then induces one on each $R/I^n$ and extends to a continuous involutive automorphism of the completion $\widehat{R} = \varprojlim_n R/I^n$, the fixed set of the extension being the closure of the fixed set of $R$ when $2$ is invertible. The completion of $\mathbb{Z}[i]$ for the $(p)$-adic topology is $\mathbb{Z}_p[i] = \mathbb{Z}_p[X]/(X^2+1)$ with $X\mapsto -X$, whose fixed ring is the closed subring $\mathbb{Z}_p$, the closure of $\mathbb{Z}$; the completion of $\mathbb{R}[x]$ for the $(x)$-adic topology is $\mathbb{R}[[x]]$ with $f(x)\mapsto f(-x)$, whose fixed ring is the ring of even power series, the closure of $\mathbb{R}[x^2]$.
+
+The fixed set and the skew set of a continuous involution of a Hausdorff ring are closed, being equalizers, so a dense fixed set forces the trivial involution; with $2$ invertible the averaging map is a continuous idempotent additive endomorphism with image the fixed set and kernel the skew set, and the additive group splits topologically, the fixed set being a retract. The splitting is additive and not multiplicative, and closedness is the whole gain: the fixed set of a continuous anti-automorphism need not be a subring (the reversal of the free algebra) and the fixed set of a discontinuous involution need not be closed ($\mathbb{R}[x-x^2]$). A $\sigma$-stable closed ideal gives a Hausdorff quotient carrying a continuous involution, and the image of the fixed set in it can be strictly smaller than the fixed set of the quotient, as $\mathbb{Z}[i]/(2)$ shows, while the completion introduces no such new fixed element. On a topological field the fixed field of a continuous involution is a closed subfield of index two and a topological field in the subspace topology with open unit group; on an ordered field the only monotone involution is the identity and every other involution is non-monotone, so continuity is not automatic there either, and the nondegenerate field examples are $\mathbb{C}$ with the usual topology and the conjugation, continuous, and $\mathbb{Q}(\sqrt{2})$ with the topology from $\mathbb{R}$, discontinuous with fixed field $\mathbb{Q}$ dense and not closed.
+
+| Ring or field | Involution | Topology | Continuous | Fixed set |
+|---|---|---|---|---|
+| any $R$ | identity | any | yes | $R$ |
+| $R$ | any involution | discrete | yes | as in *Involutive Rings* |
+| $\mathbb{R}[x]$ | $f(x)\mapsto f(-x)$ | $(x)$-adic | yes | $\mathbb{R}[x^2]$, closed |
+| $\mathbb{R}[x]$ | $f(x)\mapsto f(b-x)$, $b\neq0$ | $(x)$-adic | no | $\mathbb{R}[x-x^2]$, dense |
+| $K\langle x_1,x_2\rangle$ | word reversal | $(x_1,x_2)$-adic | yes | palindromes, closed, not a subring |
+| $\mathbb{Z}[i]$ | conjugation | $(p)$-adic | yes | $\mathbb{Z}$, closed |
+| $\mathbb{Z}_p[i]$ | $X\mapsto -X$ | $p$-adic | yes | $\mathbb{Z}_p$, closed |
+| $\mathbb{R}[[x]]$ | $f(x)\mapsto f(-x)$ | $x$-adic | yes | $\mathbb{R}[[x^2]]$, closed |
+| $R\times R$ | swap | product | yes | the diagonal |
+| $\mathbb{C}$ | conjugation | usual | yes | $\mathbb{R}$, closed |
+| $\mathbb{Q}(\sqrt{2})$ | $a+b\sqrt{2}\mapsto a-b\sqrt{2}$ | from $\mathbb{R}$ | no | $\mathbb{Q}$, dense, not closed |
+| ordered field | identity, and any nontrivial involution is non-monotone | order | the identity is the only monotone one | the field, for the identity |
+| $\mathbb{Q}$, $\mathbb{R}$, real-closed fields | identity only | usual or order | yes | the field |
+
+## Summary of Notation
+
+| Symbol | Meaning |
+|---|---|
+| $R$, $R^\times$ | Topological ring, Hausdorff when needed; its group of units |
+| $F$, $F^\times$ | Hausdorff topological field; its multiplicative group |
+| $\sigma$ | An involution of the underlying ring: an anti-automorphism of order two |
+| $\alpha$ | An involutive automorphism: an automorphism with $\alpha^2 = \mathrm{id}$ |
+| $R^\sigma$, $F^\sigma$ | Fixed set of the involution; a closed subring, or closed subfield, when $\sigma$ is continuous |
+| $\mathrm{Skew}(R,\sigma)$ | The skew elements $\{x : \sigma(x) = -x\}$, closed when $\sigma$ is continuous |
+| $\rho$ | The quotient map, onto a quotient or onto the Hausdorff quotient |
+| $\pi$ | The averaging map $x\mapsto \tfrac12(x+\sigma(x))$, continuous and additive when $2$ is invertible |
+| $\sigma$-stable ideal | An ideal $I$ with $\sigma(I) = I$ |
+| $\bar\sigma$ | The involution induced on a quotient by a $\sigma$-stable ideal |
+| $\overline{\{0\}}$ | The closure of zero, a $\sigma$-stable closed ideal; the quotient by it is Hausdorff |
+| $I^n$ | Powers of an ideal, giving the $I$-adic topology |
+| $\widehat{R} = \varprojlim_n R/I^n$ | The $I$-adic completion |
+| $\widehat{\sigma}$ | The continuous involution of $\widehat{R}$ extending $\sigma$ when $\sigma(I) = I$ |
+| $\iota$ | The natural map $R \to \widehat{R}$ into the $I$-adic completion |
+| $\widehat{I}$ | The ideal of $\widehat{R}$ generated by $\iota(I)$, defining its topology |
+| $\mathbb{Z}_p[i] = \mathbb{Z}_p[X]/(X^2+1)$ | The $(p)$-adic completion of $\mathbb{Z}[i]$ |
+| $\mathbb{R}[[x]]$, $\mathbb{R}[[x^2]]$ | The $x$-adic completion of $\mathbb{R}[x]$ and its fixed ring for $x\mapsto -x$ |
+| $\mathbb{Q}(\sqrt{2})\subset\mathbb{R}$ | The topological field of the discontinuous example |
+
+## Further Reading
+
+- Nicolas Bourbaki, *General Topology, Chapters 1–4* (Springer, 1995), for topological rings, linear topologies and the completion of a filtered ring.
+- Michael Atiyah and Ian Macdonald, *Introduction to Commutative Algebra* (Addison-Wesley, 1969), for the $I$-adic topology, the Krull intersection theorem and the completion of a local ring, and for the localization and quotient constructions used with the involution.
+- Hideyuki Matsumura, *Commutative Ring Theory* (Cambridge University Press, 1989), for the $I$-adic completion, its exactness and the behaviour of ideals under it.
+- Seth Warner, *Topological Fields* (North-Holland, 1989), for the theory of topological fields, the continuity of an order-two automorphism, and the field case of the closedness and index-two statements.
+- Edwin Hewitt and Kenneth A. Ross, *Abstract Harmonic Analysis I* (Springer, second edition, 1979), for the topological algebra background and for the involutions of topological algebras, which are *Topological Algebras and Banach Algebras* and *Operator Algebras*, later in this part.
+- B. J. Pettis, "On continuity and openness of homomorphisms in topological groups", *Annals of Mathematics* **52** (1950), 293–308, for the automatic continuity named in the remark on regularity.

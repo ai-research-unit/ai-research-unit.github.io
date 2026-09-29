@@ -95,15 +95,15 @@ $$
 \operatorname{Aut}_{\mathbb{R}}(\mathbb{D}') \cong \mathbb{R}^\times, \qquad \varepsilon \mapsto d\varepsilon.
 $$
 
-This automorphism rescales the infinitesimal direction and does not preserve the Euclidean length on $\mathbb{R}^2$; it is the first indication that automorphisms carry no metric information.
+This automorphism fixes $1$ and rescales the infinitesimal direction; it changes a structure that happens to be present on the underlying module, which is the first indication that an automorphism carries no information beyond the product.
 
 **The quaternions.** Over $\mathbb{R}$ one has
 
 $$
-\operatorname{Aut}_{\mathbb{R}}(\mathbb{H}) = \operatorname{Inn}_{\mathbb{R}}(\mathbb{H}) \cong \mathbb{H}^\times/\mathbb{R}^\times \cong SO(3).
+\operatorname{Aut}_{\mathbb{R}}(\mathbb{H}) = \operatorname{Inn}_{\mathbb{R}}(\mathbb{H}) \cong \mathbb{H}^\times/\mathbb{R}^\times .
 $$
 
-The inner automorphism $\iota_u$ with $u$ a pure imaginary element of unit length acts on the three-dimensional space of pure imaginary quaternions as the rotation about $u$ through twice the angle of $u$; the map $S^3 \to SO(3)$ so obtained is the standard double cover, and its kernel is $\{\pm 1\} \subset \mathbb{R}^\times$.
+The quotient is read on the pure imaginary part, which an inner automorphism preserves: the kernel of $\mathbb{H}^\times \to \operatorname{Inn}_{\mathbb{R}}(\mathbb{H})$ is $\mathbb{R}^\times$, so the unit quaternions form a subgroup mapping onto the quotient with kernel $\{\pm 1\}$. The identification of this group with the group of rotations of $\mathbb{R}^3$, and the double cover by the unit quaternions, are made in *Quaternion Rotations and Reflections*, where a form and a length are available.
 
 **The quaternion and biquaternion algebras over other rings.** Over $\mathbb{C}$, the biquaternion algebra $\mathbb{B}$ is isomorphic to $M_2(\mathbb{C})$, and every automorphism is inner, so
 
@@ -155,7 +155,7 @@ $$
 
 a free $R[x]$-module of rank one, with $\partial_x = d/dx$ the usual formal derivative.
 
-**Example.** For the quaternion algebra, $\operatorname{Der}_{\mathbb{R}}(\mathbb{H})$ is the space of inner derivations below; it is three-dimensional and its bracket is twice the cross product on the space of pure imaginary quaternions.
+**Example.** For the quaternion algebra, $\operatorname{Der}_{\mathbb{R}}(\mathbb{H})$ is the space of inner derivations below; it is three-dimensional and its bracket is twice the commutator product on the space of pure imaginary quaternions.
 
 **Example.** For the dual numbers, $\delta(1) = 0$ and Leibniz applied to $\varepsilon^2 = 0$ gives $0 = \delta(\varepsilon^2) = 2\varepsilon\,\delta(\varepsilon)$, so $\delta(\varepsilon)$ lies in the annihilator of $\varepsilon$, which is $\mathbb{R}\varepsilon$. Thus $\delta(\varepsilon) = c\varepsilon$ and $\delta(x + y\varepsilon) = cy\varepsilon$; consequently
 
@@ -235,25 +235,25 @@ $$
 
 Writing $E_{ij}$ for the matrix units, the derivations $\mathrm{ad}_{E_{ij}}$ for $(i,j) \neq (n,n)$ span the space, and the bracket is the matrix commutator.
 
-**Example ($\mathbb{H}$ and the cross product).** By the theorem, $\operatorname{Der}_{\mathbb{R}}(\mathbb{H}) = \operatorname{InnDer}_{\mathbb{R}}(\mathbb{H}) \cong \mathbb{H}/\mathbb{R}$, the three-dimensional space of pure imaginary quaternions. For pure imaginary $p$ and $q$ the quaternion product obeys $pq = -(p,q) + p \times q$, so
+**Example ($\mathbb{H}$).** By the theorem, $\operatorname{Der}_{\mathbb{R}}(\mathbb{H}) = \operatorname{InnDer}_{\mathbb{R}}(\mathbb{H}) \cong \mathbb{H}/\mathbb{R}$, the three-dimensional space of pure imaginary quaternions. For pure imaginary $p$ and $q$ the quaternion product splits as $pq = \mathrm{Sc}(pq) + \mathrm{Vec}(pq)$ into its scalar and its pure imaginary part, and
 
 $$
-[p, q] = pq - qp = 2\,p \times q.
+[p, q] = pq - qp = 2\,\mathrm{Vec}(pq),
 $$
 
-The bracket on $\operatorname{Der}_{\mathbb{R}}(\mathbb{H})$ is therefore twice the cross product under the identification with $\mathbb{R}^3$; rescaling the basis to $D_k = \tfrac{1}{2}\mathrm{ad}_{e_k}$ gives
+so the bracket on $\operatorname{Der}_{\mathbb{R}}(\mathbb{H})$ is twice the commutator product of the pure imaginary parts. Rescaling the basis to $D_k = \tfrac{1}{2}\mathrm{ad}_{e_k}$ gives the structure constants
 
 $$
-[D_1, D_2] = D_3, \qquad [D_2, D_3] = D_1, \qquad [D_3, D_1] = D_2,
+[D_1, D_2] = D_3, \qquad [D_2, D_3] = D_1, \qquad [D_3, D_1] = D_2 .
 $$
 
-the standard relations of $\mathrm{SO}(3)$. Hence
+Hence
 
 $$
-\operatorname{Der}_{\mathbb{R}}(\mathbb{H}) \cong \mathbb{R}^3 \text{ with the cross product} \cong \mathrm{SO}(3),
+\operatorname{Der}_{\mathbb{R}}(\mathbb{H}) \cong \mathbb{H}/\mathbb{R} \text{ with the bracket } [p,q] = 2\,\mathrm{Vec}(pq),
 $$
 
-the Lie algebra of the automorphism group $\operatorname{Aut}_{\mathbb{R}}(\mathbb{H}) \cong SO(3)$ computed above.
+the commutator Lie algebra of the automorphism group $\operatorname{Aut}_{\mathbb{R}}(\mathbb{H}) \cong \mathbb{H}^\times/\mathbb{R}^\times$ computed above. The identification of this three-dimensional Lie algebra with the Lie algebra of the rotations of $\mathbb{R}^3$ is made in *Quaternion Rotations and Reflections*, where a form is available; the structure constants alone are what this article computes.
 
 **Example ($\mathbb{B}$).** The biquaternion algebra is $M_2(\mathbb{C})$ over $\mathbb{C}$, so every $\mathbb{C}$-linear derivation is inner and $\operatorname{Der}_{\mathbb{C}}(\mathbb{B}) \cong \mathrm{SL}_2(\mathbb{C})$, of complex dimension $3$. Over $\mathbb{R}$ the same space results, because $\mathbb{R}$-linear derivations of $\mathbb{B}$ are automatically $\mathbb{C}$-linear: the centre $\mathbb{C}_{\mathbb{B}}$ is a finite separable field extension of $\mathbb{R}$ and admits no nonzero derivation. The details, including the identification with the traceless part, are.
 
@@ -281,9 +281,11 @@ $$
 
 The same identity applied to $\exp(-\delta)$, together with the commutativity of $\delta$ with its powers in the product $\exp(\delta)\exp(-\delta) = \exp(0) = 1$, gives the inverse.
 
-**Proposition (derivative of a family of automorphisms).** Let $t \mapsto \varphi_t$ be a family of algebra automorphisms of $A$, defined for $t$ in a neighbourhood of $0$ in $R$ and differentiable, with $\varphi_0 = \mathrm{id}$. Then $\delta = \frac{d}{dt}\big|_{t=0}\varphi_t$ is a derivation.
+**Proposition (the automorphisms of the dual-number algebra).** Let $\varepsilon^2 = 0$ and let $\varphi = \mathrm{id} + \varepsilon\delta$ be an $R[\varepsilon]$-algebra automorphism of $A[\varepsilon]$. Then $\delta$ is a derivation of $A$.
 
-*Proof.* Differentiate $\varphi_t(xy) = \varphi_t(x)\varphi_t(y)$ at $t = 0$ and use $\varphi_0 = \mathrm{id}$.
+*Proof.* Write $\varphi(x) = x + \varepsilon\delta(x)$ and expand $\varphi(xy) = \varphi(x)\varphi(y)$; the terms containing $\varepsilon^2$ vanish, and the coefficient of $\varepsilon$ is $\delta(xy) = \delta(x)y + x\delta(y)$.
+
+The proposition is the algebraic form of the statement that the infinitesimal automorphisms of $A$ are its derivations. The analytic form, in which a differentiable family $\varphi_t$ of automorphisms with $\varphi_0 = \mathrm{id}$ is differentiated at $t = 0$, is the same computation read with the derivative of Part III, where the limit is available.
 
 **Theorem (inner derivations exponentiate to inner automorphisms).** Let $a \in A$ and suppose $\exp(a)$ is a unit of $A$. Then
 
@@ -291,25 +293,25 @@ $$
 \exp(\mathrm{ad}_a) = \iota_{\exp(a)}, \qquad \text{that is, } \exp(\mathrm{ad}_a)(x) = e^{a}\,x\,e^{-a}.
 $$
 
-This is the identity $\mathrm{Ad}_{e^a} = e^{\mathrm{ad}_a}$ of the adjoint representation, valid whenever both sides converge or whenever $a$ is nilpotent.
+This is the identity $\mathrm{Ad}_{e^a} = e^{\mathrm{ad}_a}$ of the adjoint representation. The identity is algebraic when $a$ is nilpotent, the series then terminating; in general it is read with the limit of Part II, where the series may be given a value.
 
-**Failure over a general ring.** The exponential is not available over an arbitrary commutative ring. If $\delta$ is not nilpotent the series $\sum \delta^k/k!$ need not terminate and need not converge, and the coefficients $1/k!$ need not make sense: over a field of characteristic $p > 0$ the integer $k!$ vanishes for $k \geq p$. There is then no map from derivations to automorphisms in general, and the passage from the Lie algebra to the group requires the topological completeness of a Banach algebra, treated. Nilpotent derivations are the case in which the exponential survives over any $\mathbb{Q}$-algebra, and that is the case used in practice.
+**Failure over a general ring.** The exponential is not available over an arbitrary commutative ring. If $\delta$ is not nilpotent the sum $\sum \delta^k/k!$ is a formal series that need not terminate, the coefficients $1/k!$ need not make sense — over a field of characteristic $p > 0$ the integer $k!$ vanishes for $k \geq p$ — and giving the series a value requires a limit, hence the norms of Part II. There is then no map from derivations to automorphisms in general, and the passage from the Lie algebra to the group is treated in *Topological Algebras and Banach Algebras*. Nilpotent derivations are the case in which the exponential survives over any $\mathbb{Q}$-algebra, and that is the case used in practice.
 
 ## What an Algebra Automorphism Does Not Preserve
 
 The data of an $R$-algebra $A$ are the module structure and the product. An automorphism is required to preserve exactly these, so any further structure that happens to be present on the underlying module — a length, an angle, a volume — is not automatically preserved.
 
-**Example.** The automorphism $\varphi(\varepsilon) = d\varepsilon$ of $\mathbb{D}'$, $d \neq 1$, has matrix $\begin{pmatrix} 1 & 0 \\ 0 & d \end{pmatrix}$ in the basis $\{1, \varepsilon\}$. It preserves the product because it fixes $1$ and scales $\varepsilon$, but it changes the Euclidean length, scaling a unit vector by $|d|$.
+**Example.** The automorphism $\varphi(\varepsilon) = d\varepsilon$ of $\mathbb{D}'$, $d \neq 1$, has matrix $\begin{pmatrix} 1 & 0 \\ 0 & d \end{pmatrix}$ in the basis $\{1, \varepsilon\}$. It preserves the product because it fixes $1$ and scales $\varepsilon$, but it is not the identity map of the underlying module, and an extra structure on that module is not automatically preserved by it.
 
-**Example.** Complex conjugation $\kappa$ on $\mathbb{C}$ is an $\mathbb{R}$-algebra automorphism and preserves the quantity $a^2 + b^2$, but this is a coincidence of the two-dimensional case, not a general property. On $\mathbb{B} \cong M_2(\mathbb{C})$ the determinantal invariant $\sum_\mu Q_\mu^2$ is carried along by **every** inner automorphism, conjugation by a matrix leaving the determinant unchanged; the complex conjugation $\sigma(\tilde{Q}) = \tilde{Q}^{*}$ of the coefficients moves it and is not inner.
+**Example.** On $\mathbb{B} \cong M_2(\mathbb{C})$ the invariant $\sum_\mu Q_\mu^2$ of the coefficients — the determinant of the corresponding matrix, an algebraic function of the coordinates — is carried along by **every** inner automorphism, conjugation by a matrix leaving the determinant unchanged; the complex conjugation $\sigma(\tilde{Q}) = \tilde{Q}^{*}$ of the coefficients moves it and is not inner. Whether one of these quantities survives is a property of the quantity and not of the automorphism.
 
-The group of transformations preserving a length or an angle is therefore a different object, generally not contained in $\operatorname{Aut}_R(A)$. Such structure-preserving maps belong to the theory of forms and Clifford algebras, and are treated in the category *Forms, Clifford Algebras and Spinors*; the algebra automorphism group is the layer below them.
+The group of transformations preserving a length or an angle is therefore a different object, generally not contained in $\operatorname{Aut}_R(A)$. Such structure-preserving maps belong to the theory of forms and Clifford algebras, and are treated in the category *Clifford Algebras and Operators*; the algebra automorphism group is the layer below them.
 
 ## Summary
 
-The **automorphisms** of an $R$-algebra $A$ form the group $\operatorname{Aut}_R(A)$; they preserve the centre, idempotents, units, zero divisors and the lattice of two-sided ideals. Inner automorphisms $\iota_u(x) = uxu^{-1}$ by units form the normal subgroup $\operatorname{Inn}_R(A) \cong A^\times/Z(A)^\times$, the outer automorphism group is $\operatorname{Out}_R(A) = \operatorname{Aut}_R(A)/\operatorname{Inn}_R(A)$, and for a commutative algebra all automorphisms are outer. The worked cases are $\operatorname{Aut}_{\mathbb{R}}(\mathbb{C}) \cong \mathbb{Z}/2$, $\operatorname{Aut}_{\mathbb{R}}(\mathbb{D}) \cong \mathbb{Z}/2$, $\operatorname{Aut}_{\mathbb{R}}(\mathbb{D}') \cong \mathbb{R}^\times$, $\operatorname{Aut}_{\mathbb{R}}(\mathbb{H}) \cong SO(3)$, and $\operatorname{Aut}_k(M_n(k)) \cong PGL_n(k)$ for a field $k$; over $\mathbb{C}$ the biquaternion group is $PGL(2,\mathbb{C})$, over $\mathbb{R}$ it is $PGL(2,\mathbb{C}) \rtimes \mathbb{Z}/2$.
+The **automorphisms** of an $R$-algebra $A$ form the group $\operatorname{Aut}_R(A)$; they preserve the centre, idempotents, units, zero divisors and the lattice of two-sided ideals. Inner automorphisms $\iota_u(x) = uxu^{-1}$ by units form the normal subgroup $\operatorname{Inn}_R(A) \cong A^\times/Z(A)^\times$, the outer automorphism group is $\operatorname{Out}_R(A) = \operatorname{Aut}_R(A)/\operatorname{Inn}_R(A)$, and for a commutative algebra all automorphisms are outer. The worked cases are $\operatorname{Aut}_{\mathbb{R}}(\mathbb{C}) \cong \mathbb{Z}/2$, $\operatorname{Aut}_{\mathbb{R}}(\mathbb{D}) \cong \mathbb{Z}/2$, $\operatorname{Aut}_{\mathbb{R}}(\mathbb{D}') \cong \mathbb{R}^\times$, $\operatorname{Aut}_{\mathbb{R}}(\mathbb{H}) \cong \mathbb{H}^\times/\mathbb{R}^\times$, and $\operatorname{Aut}_k(M_n(k)) \cong PGL_n(k)$ for a field $k$; over $\mathbb{C}$ the biquaternion group is $PGL(2,\mathbb{C})$, over $\mathbb{R}$ it is $PGL(2,\mathbb{C}) \rtimes \mathbb{Z}/2$.
 
-The **derivations** $\operatorname{Der}_R(A)$ are the $R$-linear maps satisfying the Leibniz rule; they form a Lie algebra under the commutator, and a module over the centre. The inner derivations $\mathrm{ad}_a = [a,\cdot]$ form the Lie algebra $A/Z(A)$, and for a central simple algebra every derivation is inner, so $\operatorname{Der}_k(M_n(k)) \cong \mathrm{SL}_n(k)$ and $\operatorname{Der}_{\mathbb{R}}(\mathbb{H}) \cong \mathrm{SO}(3)$, the bracket on $\mathbb{H}/\mathbb{R} \cong \mathbb{R}^3$ being twice the cross product. The exponential $\exp(\delta)$ of a nilpotent derivation is an automorphism over any $\mathbb{Q}$-algebra, inner derivations exponentiate to inner automorphisms, and over a general ring the exponential may not exist.
+The **derivations** $\operatorname{Der}_R(A)$ are the $R$-linear maps satisfying the Leibniz rule; they form a Lie algebra under the commutator, and a module over the centre. The inner derivations $\mathrm{ad}_a = [a,\cdot]$ form the Lie algebra $A/Z(A)$, and for a central simple algebra every derivation is inner, so $\operatorname{Der}_k(M_n(k)) \cong \mathrm{SL}_n(k)$ and $\operatorname{Der}_{\mathbb{R}}(\mathbb{H}) \cong \mathbb{H}/\mathbb{R}$, the bracket being twice the commutator product of the pure imaginary parts. The exponential $\exp(\delta)$ of a nilpotent derivation is an automorphism over any $\mathbb{Q}$-algebra, inner derivations exponentiate to inner automorphisms, and over a general ring the exponential may not exist.
 
 An algebra automorphism preserves the product and nothing more; a length or an angle is extra structure that need not be preserved.
 
@@ -330,10 +332,10 @@ An algebra automorphism preserves the product and nothing more; a length or an a
 | $\operatorname{InnDer}_R(A) \cong A/Z(A)$ | Inner derivations |
 | $[\delta,\varepsilon]$ | Commutator bracket on derivations |
 | $\delta = f\partial_x$ | The derivations of $R[x]$ |
-| $D_k = \tfrac{1}{2}\mathrm{ad}_{e_k}$ | Basis of $\operatorname{Der}_{\mathbb{R}}(\mathbb{H}) \cong \mathrm{SO}(3)$ |
+| $D_k = \tfrac{1}{2}\mathrm{ad}_{e_k}$ | Basis of $\operatorname{Der}_{\mathbb{R}}(\mathbb{H}) \cong \mathbb{H}/\mathbb{R}$ |
 | $PGL_n(k) = GL_n(k)/k^\times$ | Automorphism group of $M_n(k)$ |
 | $\exp(\delta)$ | Exponential of a derivation |
-| $\mathrm{SO}(3)$, $\mathrm{SL}_n(k)$ | Lie algebras of rotations and traceless matrices |
+| $\mathbb{H}/\mathbb{R}$, $\mathrm{SL}_n(k)$ | Commutator Lie algebra of the imaginary quaternions and traceless matrices |
 | $\mathbb{C}$, $\mathbb{D}$, $\mathbb{D}'$ | Complex, split complex and dual numbers |
 | $\mathbb{H}$, $\mathbb{B}$ | Quaternions and biquaternions |
 | $\mathbb{H}_{\mathbb{B}}$ | Real quaternion subspace of $\mathbb{B}$ |

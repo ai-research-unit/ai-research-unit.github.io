@@ -340,7 +340,7 @@ two copies of the defining representation. This is the module structure behind t
 $$
 \operatorname{Spin}(1,3)\cong SL(2,\mathbb{C})\subset\mathbb{B}\subset \mathrm{Cl}_{1,3}.
 $$
-The spinor representation is the restriction of the Clifford module to the even subalgebra, which is why its action is one-sided; the four-vector representation is the twisted adjoint action on the odd part, which is why it is two-sided. This correspondence is the algebraic origin of the whole structure and is treated in the companion article on the spinor module.
+The spinor representation is the restriction of the Clifford module to the even subalgebra, which is why its action is one-sided; the four-vector representation is the signed inner conjugation action on the odd part, which is why it is two-sided. This correspondence is the algebraic origin of the whole structure and is treated in the companion article on the spinor module.
 
 ## The Two-to-One Cover
 

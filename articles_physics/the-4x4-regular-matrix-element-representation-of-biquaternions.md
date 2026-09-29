@@ -347,10 +347,10 @@ $$
 
 in agreement with the two blocks $A_+(\tilde{Q}) = \begin{pmatrix} 3+i & -1+4i \\ 1+2i & 1+i \end{pmatrix}$ and $A_-(\tilde{Q}) = \begin{pmatrix} 1+i & -1-2i \\ 1-4i & 3+i \end{pmatrix}$ on this element, each of trace $4+2i$ and determinant $11+2i$.
 
-**For a material four-vector.** With $\tilde{Q} = iq'_0e_0 + \mathbf{q} \in \mathbb{M}_-$ the biquaternion norm is real, $N(\tilde{Q}) = -q'^2_0 + \mathbf{q}^2$, so
+**For a material four-vector.** With $\tilde{Q} = iq'_0e_0 + \mathbf{q} \in \mathbb{M}_-$ the biquaternion norm is real, $N(\tilde{Q}) = -(q'_0)^2 + \mathbf{q}^2$, so
 
 $$
-\det\rho_L(\tilde{Q}) = \bigl( -q'^2_0 + \mathbf{q}^2 \bigr)^2, \qquad \operatorname{Tr}\rho_L(\tilde{Q}) = 4iq'_0 .
+\det\rho_L(\tilde{Q}) = \bigl( -(q'_0)^2 + \mathbf{q}^2 \bigr)^2, \qquad \operatorname{Tr}\rho_L(\tilde{Q}) = 4iq'_0 .
 $$
 
 For the four-position, with $q'_0 = ct$ and $\mathbf{q} = \mathbf{x}$, the determinant of the regular matrix is the **square of the interval**: for $ct = 2$ and $\mathbf{x} = (1, \tfrac12, \tfrac12)$ the interval is the rational number $-4 + 1 + \tfrac14 + \tfrac14 = -\tfrac52$, and the regular matrix has determinant $\tfrac{25}{4}$, real and positive. For the four-momentum the on-shell biquaternion norm is $-m^2c^2$, so the regular matrix has determinant $m^4c^4$.
@@ -366,7 +366,7 @@ The general results above, read on the material sector, give the four-vector a $
 **Proposition.** For $\tilde{Q} = iq'_0e_0 + q_1e_1 + q_2e_2 + q_3e_3 \in \mathbb{M}_-$ with real components, the left regular matrix is the matrix displayed at the end of the first section, with
 
 $$
-\operatorname{Tr}\rho_L(\tilde{Q}) = 4iq'_0, \qquad \det\rho_L(\tilde{Q}) = \bigl( -q'^2_0 + (q_1)^2 + (q_2)^2 + (q_3)^2 \bigr)^2 .
+\operatorname{Tr}\rho_L(\tilde{Q}) = 4iq'_0, \qquad \det\rho_L(\tilde{Q}) = \bigl( -(q'_0)^2 + (q_1)^2 + (q_2)^2 + (q_3)^2 \bigr)^2 .
 $$
 
 **Proof.** Substitute $Q_0 = iq'_0$ and $Q_k = q_k$ into the corollary of the preceding section.
@@ -461,7 +461,7 @@ $$
 = \begin{pmatrix} ct' & -x & -y & -z \\ x & ct' & -z & y \\ y & z & ct' & -x \\ z & -y & x & ct' \end{pmatrix},
 $$
 
-the real Cayley matrix, with $\operatorname{Tr}\rho_L = 4ct'$ and $\det\rho_L = \big( c^2t'^2 + \mathbf{x}^2 \big)^2$.
+the real Cayley matrix, with $\operatorname{Tr}\rho_L = 4ct'$ and $\det\rho_L = \big( c^2(t')^2 + \mathbf{x}^2 \big)^2$.
 
 Its entries are real and its determinant is the square of a sum of four squares, so it is invertible for every nonzero element: this is the real $4 \times 4$ left regular representation of the quaternions, and the absence of zero divisors in $\mathbb{H}$ is the invertibility of this matrix.
 
@@ -473,7 +473,7 @@ $$
 = i\begin{pmatrix} ct & -x' & -y' & -z' \\ x' & ct & -z' & y' \\ y' & z' & ct & -x' \\ z' & -y' & x' & ct \end{pmatrix},
 $$
 
-with $q'_0 = ct$ and $q'_k = x'_k$ real, $\operatorname{Tr}\rho_L = 4ict$ and $\det\rho_L = \big( c^2t^2 + \mathbf{x}'^2 \big)^2$. The assignment of the two times and the two spaces is the one the real sector does not take. The determinant is again the square of a sum of four squares, so this subspace too is a division algebra, a copy of $\mathbb{H}$.
+with $q'_0 = ct$ and $q'_k = x'_k$ real, $\operatorname{Tr}\rho_L = 4ict$ and $\det\rho_L = \big( c^2t^2 + (\mathbf{x}')^2 \big)^2$. The assignment of the two times and the two spaces is the one the real sector does not take. The determinant is again the square of a sum of four squares, so this subspace too is a division algebra, a copy of $\mathbb{H}$.
 
 **The informational subspace $\mathbb{M}_+$.** The scalar coefficient is real and the three spatial ones are purely imaginary, $Q_0 = q_0$ and $Q_k = iq'_k$: a real diagonal and a purely imaginary spatial block, reached by the same three-step chain,
 
@@ -483,7 +483,7 @@ $$
 = \begin{pmatrix} ct' & -ix' & -iy' & -iz' \\ ix' & ct' & -iz' & iy' \\ iy' & iz' & ct' & -ix' \\ iz' & -iy' & ix' & ct' \end{pmatrix},
 $$
 
-with $q_0 = ct'$ and $q'_k = x'_k$ real, $\operatorname{Tr}\rho_L = 4ct'$ and $\det\rho_L = \big( c^2t'^2 - \mathbf{x}'^2 \big)^2$. It is the mirror of the material case, of signature $(1,3)$. It is **Hermitian**, and its determinant is the square of the informational interval, so it is singular exactly on the informational null cone $ct' = \pm|\mathbf{x}'|$.
+with $q_0 = ct'$ and $q'_k = x'_k$ real, $\operatorname{Tr}\rho_L = 4ct'$ and $\det\rho_L = \big( c^2(t')^2 - (\mathbf{x}')^2 \big)^2$. It is the mirror of the material case, of signature $(1,3)$. It is **Hermitian**, and its determinant is the square of the informational interval, so it is singular exactly on the informational null cone $ct' = \pm|\mathbf{x}'|$.
 
 **The material subspace $\mathbb{M}_-$.** The scalar coefficient is purely imaginary and the three spatial ones are real, $Q_0 = iq'_0$ and $Q_k = q_k$: a purely imaginary diagonal and a real spatial block, and the chain carries the material four-vector from the complex coefficients through their real parameters to the physical coordinates $ict, x, y, z$,
 
@@ -536,7 +536,7 @@ $$
 **For a material four-vector.** With $\tilde{Q} \in \mathbb{M}_-$ the scalar part is $Q_0 = iq'_0$, whose real part vanishes, so
 
 $$
-\operatorname{Tr}\rho_L^{\mathbb{R}}(\tilde{Q}) = 0, \qquad \det\rho_L^{\mathbb{R}}(\tilde{Q}) = \bigl( -q'^2_0 + \mathbf{q}^2 \bigr)^4 ,
+\operatorname{Tr}\rho_L^{\mathbb{R}}(\tilde{Q}) = 0, \qquad \det\rho_L^{\mathbb{R}}(\tilde{Q}) = \bigl( -(q'_0)^2 + \mathbf{q}^2 \bigr)^4 ,
 $$
 
 the biquaternion norm being real on the material sector. The real regular matrix of a material four-vector is therefore **traceless**, and this is the sense in which the trace of a four-vector is zero: not over $\mathbb{C}$, where it is $4iq'_0$, but over the real eight-dimensional space, where the trace is twice the real part of the complex trace. The tracelessness is a property of the material sector alone, whose scalar part is purely imaginary; on the informational sector the scalar part is real and the real trace is $8q_0 = 8ct'$, generally nonzero. On the quaternion subalgebra $\mathbb{H}_{\mathbb{B}}$ and read on $\mathbb{H}_{\mathbb{B}}$ itself the construction is the $4 \times 4$ real regular representation of the quaternions.
@@ -665,7 +665,7 @@ Read on the material sector, the regular matrix of a four-vector is the matrix d
 | $\Phi(\tilde{Q})$ | The $2 \times 2$ matrix realization of *The 2×2 Matrix Element Representation of Biquaternions* |
 | $\operatorname{End}_{\mathbb{B}}(\mathbb{B}) = \rho_R(\mathbb{B})$ | Endomorphism algebra of the regular module, the double centralizer statement |
 | $\rho_L^{\mathbb{R}}(\tilde{Q})$ | Real $8 \times 8$ regular matrix; $\det = |N|^4$, $\operatorname{Tr} = 8\operatorname{Re}(Q_0)$ |
-| $q'_0, q_1, q_2, q_3$ | Real parameters of a material four-vector, $\tilde{Q} = iq'_0e_0 + q_1e_1 + q_2e_2 + q_3e_3$, $\mathbf{q} = q_1e_1+q_2e_2+q_3e_3$; $q'_0 = ct$, $(q_1,q_2,q_3) = (x,y,z)$; $\operatorname{Tr}\rho_L = 4iq'_0$, $\det\rho_L = (-q'^2_0 + \mathbf{q}^2)^2$ |
+| $q'_0, q_1, q_2, q_3$ | Real parameters of a material four-vector, $\tilde{Q} = iq'_0e_0 + q_1e_1 + q_2e_2 + q_3e_3$, $\mathbf{q} = q_1e_1+q_2e_2+q_3e_3$; $q'_0 = ct$, $(q_1,q_2,q_3) = (x,y,z)$; $\operatorname{Tr}\rho_L = 4iq'_0$, $\det\rho_L = (-(q'_0)^2 + \mathbf{q}^2)^2$ |
 | $\rho_L^{\mathbb{R}}(\tilde{Q})$ for $\tilde{Q} \in \mathbb{M}_-$ | Traceless real $8 \times 8$ matrix; determinant the fourth power of the interval |
 | $\tilde{\nabla} = e_0\partial_{ict} + e_1\partial_x + e_2\partial_y + e_3\partial_z$ | Biquaternionic gradient; $\det A_+(\tilde{\nabla}) = \Box$, $\det\rho_L(\tilde{\nabla}) = \Box^2$ |
 | $\Box = \tilde{\nabla}\bar{\tilde{\nabla}} = \partial_{ict}^2 + \Delta$ | d'Alembertian, series convention |

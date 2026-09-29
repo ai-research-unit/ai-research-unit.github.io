@@ -345,7 +345,7 @@ The isomorphism $Cl^+(M, Q) \cong Cl(M', Q')$ is the basis of the inductive comp
 The **reversion** anti-involution is the map
 
 $$
-x \mapsto x^\dagger
+x \mapsto x^{r}
 $$
 
 that reverses the order of the factors in a multivector. On a product of generators, it acts as
@@ -354,7 +354,7 @@ $$
 e_{i_1} e_{i_2} \cdots e_{i_k} \mapsto e_{i_k} \cdots e_{i_2} e_{i_1}.
 $$
 
-Reversion is an anti-involution: it satisfies $(xy)^\dagger = y^\dagger x^\dagger$ and $(x^\dagger)^\dagger = x$.
+Reversion is an anti-involution: it satisfies $(xy)^{r} = y^{r}x^{r}$ and $(x^{r})^{r} = x$.
 
 ## 21. Clifford Conjugation
 
@@ -377,7 +377,7 @@ Clifford conjugation is also an anti-involution: it satisfies $\overline{xy} = \
 By composing reversion and Clifford conjugation, we get the **grade involution**:
 
 $$
-x \mapsto x^* = \bar{x}^\dagger.
+x \mapsto \alpha(x) = \overline{x^{r}}.
 $$
 
 On a product of generators, it acts as
@@ -388,7 +388,7 @@ $$
 
 So the grade involution multiplies an element of grade $k$ by $(-1)^k$. It fixes elements of even grade and changes the sign of elements of odd grade.
 
-The grade involution is an involution, not an anti-involution: it satisfies $(xy)^* = x^* y^*$ and $(x^*)^* = x$.
+The grade involution is an involution, not an anti-involution: it satisfies $\alpha(xy) = \alpha(x)\alpha(y)$ and $\alpha(\alpha(x)) = x$.
 
 ## 23. The Behavior on Each Grade
 

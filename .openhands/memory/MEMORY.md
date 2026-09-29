@@ -61,6 +61,37 @@ The corpus used `$\square$` as the QED end-of-proof mark — 6214 of them, at th
 - Verification that actually proves the edit: `new` must equal `old` with (mark + the one spacing command before
   it) deleted, compared whitespace-insensitively. Result: 0 files differ. Also no new blank runs, no new
   trailing whitespace, `$` parity intact, menu entries intact.
+- **Never put it back.** Articles written after the removal must not carry it: the real-spinors twins did
+  (6 marks) and were the only files in the corpus that had, until the 2026-09-27 boundary check removed them.
+  After any writing pass run `grep -rl "\\square" articles_maths articles_physics` and expect **0**.
+
+## Maths-corpus boundary rules (`introduction-and-mathematical-conventions`)
+- **No physics.** The maths corpus bans *spacetime*, *the speed of light*, *an observer*, *a clock*,
+  *a measurement*; it prefers *hyperbolic rotation* to *boost* and *null cone* to *light cone*. Where a
+  physical reading exists the maths article “says so with a forward reference and stops” — it must not recount
+  the physical result (a charge-conjugation matrix, $KK^{*}=I_4$, the exchange of the chiral halves belong to
+  `articles_physics`). Standard vocabulary for the other corpus is **“the physics corpus”** or “the physics
+  articles”—*not* “the physics layer” (that phrase existed only in the twins).
+- **Article skeleton.** Title as H1, *Introduction* (what it does and what it assumes), thematic sections, then
+  *Summary*, *Summary of Notation*, *Further Reading*. Some families insert *Honest Limits* before the Summary.
+- **Plumbing.** `articles_maths/<slug>.md` and `articles_physics/<slug>.md`, slug = title lower-cased with
+  hyphens. Identical titles across the two menus are the norm (43 pairs); only 3 physics labels carry `†`.
+- **An article's layer follows its tools, not its family (user, 2026-09-27).** The *Sylvester equation* pair was
+  filed under `### - Topology`; the user rejected that: it belongs to **Analysis**. The intro settles it —
+  "the derivative, the smooth structure, a measure or an integral | Part III : Analysis", and Part III owns
+  "analytic functions; spectral theory". The article *differentiates* (`d/dt e^{-ta} c e^{-tb}` in its proof) and
+  its theorem *integrates* (`int_0^inf e^{-ta} c e^{-tb} dt`), with solvability read off `spec(L_a+R_b)` — so
+  Analysis, even though every sibling in its `with hermitian adjoint` family (dagger, Hermitian form, cone,
+  adjoint operator) needs only a form and is Topology. The layer wins over the family: do not leave an article in
+  a family group when its own content uses a lower-layer tool. Moved 2026-09-27 (biquaternion maths + physics
+  entries) to `### - Analysis`, just below *Biquaternion Spectral Theory*.
+- **A wrong place is a worse error than a wrong word.** Same session: my *wording* fixes to that article
+  (removing "relaxation", "perturbative", "systems theory", "time-ordered") were reverted by the user as
+  "total garbage"; the real defect was the layer placement, which I never questioned because the article sat
+  where its family sits. Check a twin's *menu group*, not only its prose.
+- **Every category name the intro quotes exists in `maths.md`** (checked); its Symbols table writes Lie
+  algebras and ideals as `\mathrm{G}, \mathrm{H}, \mathrm{SL}_n` / `\mathrm{M}, \mathrm{P}` (65 corpus uses
+  of `\mathrm{G}`), so the old gloss “in Fraktur” was wrong and was dropped 2026-09-27.
 
 ## Terminology: "norm", never "norm form" (user-mandated)
 The quadratic form `N(Q) = Q Q̄` is called the **norm**. The phrase "norm form" is banned. The user asked
@@ -184,3 +215,10 @@ form a cone" is the English verb (see trap 3 below). Guarded by a boundary-safe 
   `vector-spaces`, `algebras`, `lie-algebras`; the physics menu appends a `†`. Not faults.
 - Verify by script, not by eye: menu entry count, H1 == menu label, even `$` count, no new blank runs.
   Back up every touched file (`/tmp/fracbackup*` during a session).
+- Reality types (biquaternion corpus): for `Cl_{3,0}` (`c(gamma_k)=sigma_k`) the conjugate module `S-bar` is
+  **inequivalent to `S` as a complex module** and isomorphic only as a real representation — that inequivalence
+  *is* the complex type (`real-spinors-and-reality-conditions-with-inner-conjugation` §Dimension Three says so;
+  do not "correct" it). `eps = i sigma_2 = Phi(-e_2)` is not an `S -> S-bar` intertwiner; it realises
+  `eps c-bar(v) eps^{-1} = c(*(v))`, so it is a C-intertwiner only for the `e_k` (`Cl_{0,3}`) reading. Never
+  write "`S-bar ≅ S` because `B` is simple": simplicity gives uniqueness, not self-conjugacy. Details in the
+  2026-09-27 daily log.

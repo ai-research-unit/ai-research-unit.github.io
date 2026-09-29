@@ -95,7 +95,7 @@ because $i^2 = -e_0$ is central and $\mathbb{H}_{\mathbb{B}}$ is a subalgebra. T
 **Negative definite biquaternion norm.** The biquaternion norm restricted to the subspace is
 
 $$
-N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = (iq'_0)^2 + (iq'_1)^2 + (iq'_2)^2 + (iq'_3)^2 = -(q'^2_0 + q'^2_1 + q'^2_2 + q'^2_3),
+N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = (iq'_0)^2 + (iq'_1)^2 + (iq'_2)^2 + (iq'_3)^2 = -((q'_0)^2 + (q'_1)^2 + (q'_2)^2 + (q'_3)^2),
 $$
 
 a **negative definite** quadratic form of signature $(0,4)$. Every direction is negative, and the form vanishes only at the origin.
@@ -180,7 +180,7 @@ Physically it is the home of the **boost generators** $ie_1, ie_2, ie_3$ and of 
 | $ict\,e_0 + ix'\,e_1 + iy'\,e_2 + iz'\,e_3$ | The same element in physical coordinates; $q'_0 = ct$ and $(q'_1, q'_2, q'_3) = (x', y', z')$ |
 | $(ie_k)^2 = +e_0$, $(ie_1)(ie_2) = -e_3$ | Products leave the subspace: $i\mathbb{H}_{\mathbb{B}} \cdot i\mathbb{H}_{\mathbb{B}} \subseteq \mathbb{H}_{\mathbb{B}}$ |
 | $[ie_1, ie_2] = -2e_3$ | Commutators also leave the subspace |
-| $N(\tilde{Q}) = -(q'^2_0 + q'^2_1 + q'^2_2 + q'^2_3)$ | Biquaternion norm; negative definite, signature $(0,4)$ |
+| $N(\tilde{Q}) = -((q'_0)^2 + (q'_1)^2 + (q'_2)^2 + (q'_3)^2)$ | Biquaternion norm; negative definite, signature $(0,4)$ |
 | $\tilde{Q}^{-1} = \bar{\tilde{Q}}/N(\tilde{Q})$ | Inverse; exists for every nonzero element |
 | $ie_1, ie_2, ie_3$ | Boost generators of the Lorentz algebra |
 | $ie_0$ | Complex-time axis of the $ict$ convention |

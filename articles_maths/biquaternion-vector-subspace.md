@@ -184,10 +184,10 @@ The section places the subspace among the particular cases that the Algebra arti
 What the subspace does contribute to the idempotent theory is the *off-diagonal* half of the Peirce decomposition: the elements
 
 $$
-x = \tfrac12(ie_1 - e_2), \qquad y = \tfrac12(ie_1 + e_2)
+\tilde T = \tfrac12(ie_1 - e_2), \qquad \tilde S = \tfrac12(ie_1 + e_2)
 $$
 
-of *Biquaternion Ideals and Peirce Decomposition* are pure vectors with $x^2 = y^2 = 0$, and they span the two off-diagonal Peirce corners. The diagonal corners, and with them the idempotents themselves, lie elsewhere: the vector subspace carries the nilpotent corners and none of the projections.
+of *Biquaternion Ideals and Peirce Decomposition* are pure vectors with $\tilde T^2 = \tilde S^2 = 0$, and they span the two off-diagonal Peirce corners. The diagonal corners, and with them the idempotents themselves, lie elsewhere: the vector subspace carries the nilpotent corners and none of the projections.
 
 ### Ideals and the Peirce Decomposition
 
@@ -279,7 +279,7 @@ with vanishing dot product of the triples $(1, 0, 0)$ and $(0, i, 0)$. The brack
 
 ## Summary
 
-The vector subspace $\mathrm{Vect}(\mathbb{B})$ is the anti-fixed space of quaternion conjugation, the set of elements of vanishing scalar part, a real vector space of dimension $6$ with basis $e_1, e_2, e_3, ie_1, ie_2, ie_3$, splitting into the real and imaginary vectors. It is simultaneously the kernel of the scalar-part functional, the derived subspace $[\mathbb{B}, \mathbb{B}]$, and the Lie algebra of the unit-norm group. It is not a subalgebra and not a module over the quaternion or anti-quaternion subspaces, but it is closed under the commutator, where the bracket is twice the cross product of the coefficient triples. The square of a vector element is central, $\tilde{Q}^2 = -N(\tilde{Q})e_0$, so null elements are nilpotent and units have their inverses in the subspace. The biquaternion norm restricts to $Q_1^2+Q_2^2+Q_3^2$, complex-valued, of real signature $(3,3)$; the zero divisors are exactly the null elements. Quaternion conjugation acts as minus the identity, complex conjugation fixes the coordinate block $\operatorname{span}\{e_k\}$ and negates $\operatorname{span}\{ie_k\}$, and all four involutions preserve the subspace. It is complementary to the centre, and its intersections with the other four subspaces are three-dimensional. In the algebra of particular cases the vector subspace carries no idempotent but the origin but does carry the two nilpotent Peirce corners $x, y$, it is no ideal of any kind, it contains every root of $-1$ except the two trivial points, it carries the pure (nilpotent) family of zero divisors, and it is the derived subalgebra $[\mathrm{G},\mathrm{G}]$ of the Lie algebra.
+The vector subspace $\mathrm{Vect}(\mathbb{B})$ is the anti-fixed space of quaternion conjugation, the set of elements of vanishing scalar part, a real vector space of dimension $6$ with basis $e_1, e_2, e_3, ie_1, ie_2, ie_3$, splitting into the real and imaginary vectors. It is simultaneously the kernel of the scalar-part functional, the derived subspace $[\mathbb{B}, \mathbb{B}]$, and the Lie algebra of the unit-norm group. It is not a subalgebra and not a module over the quaternion or anti-quaternion subspaces, but it is closed under the commutator, where the bracket is twice the cross product of the coefficient triples. The square of a vector element is central, $\tilde{Q}^2 = -N(\tilde{Q})e_0$, so null elements are nilpotent and units have their inverses in the subspace. The biquaternion norm restricts to $Q_1^2+Q_2^2+Q_3^2$, complex-valued, of real signature $(3,3)$; the zero divisors are exactly the null elements. Quaternion conjugation acts as minus the identity, complex conjugation fixes the coordinate block $\operatorname{span}\{e_k\}$ and negates $\operatorname{span}\{ie_k\}$, and all four involutions preserve the subspace. It is complementary to the centre, and its intersections with the other four subspaces are three-dimensional. In the algebra of particular cases the vector subspace carries no idempotent but the origin but does carry the two nilpotent Peirce corners $\tilde T, \tilde S$, it is no ideal of any kind, it contains every root of $-1$ except the two trivial points, it carries the pure (nilpotent) family of zero divisors, and it is the derived subalgebra $[\mathrm{G},\mathrm{G}]$ of the Lie algebra.
 
 ## Summary of Notation
 
@@ -294,7 +294,7 @@ The vector subspace $\mathrm{Vect}(\mathbb{B})$ is the anti-fixed space of quate
 | $\operatorname{span}\{ie_1,ie_2,ie_3\}$ | the imaginary vectors |
 | $[\mathbb{B},\mathbb{B}]$ | the derived subspace, equal to $\mathrm{Vect}(\mathbb{B})$ |
 | $N(\tilde{Q}) = Q_1^2+Q_2^2+Q_3^2$ | the biquaternion norm on the subspace |
-| $x, y$ | the off-diagonal Peirce elements $\tfrac12(ie_1 \mp e_2)$, nilpotents of the subspace |
+| $\tilde T, \tilde S$ | the off-diagonal Peirce elements $\tfrac12(ie_1 \mp e_2)$, nilpotents of the subspace |
 | $\xi$, $\tilde\Pi$ | a root of $-1$ and an idempotent of $\mathbb{B}$ |
 | $\mathrm{K}$ | the rotation subalgebra $\operatorname{span}_{\mathbb{R}}\{e_1,e_2,e_3\}$ |
 | $\bar{\cdot}, {}^{*}, {}^{\dagger}, \flat$ | the four involutions |
@@ -304,7 +304,7 @@ The vector subspace $\mathrm{Vect}(\mathbb{B})$ is the anti-fixed space of quate
 - *Biquaternion Algebra* (`articles_maths/biquaternion-algebra.md`), for the multiplication of $\mathbb{B}$ and the scalar–vector decomposition
 - *Biquaternion Centre Subspace* (`articles_maths/biquaternion-centre-subspace.md`), the fixed companion of the present subspace
 - *Biquaternion Idempotents and Projections* (`articles_maths/biquaternion-idempotents-and-projections.md`), for the classification whose non-trivial idempotents all lie outside the subspace
-- *Biquaternion Ideals and Peirce Decomposition* (`articles_maths/biquaternion-ideals-and-peirce-decomposition.md`), for the off-diagonal Peirce corners $x, y$ that the subspace carries
+- *Biquaternion Ideals and Peirce Decomposition* (`articles_maths/biquaternion-ideals-and-peirce-decomposition.md`), for the off-diagonal Peirce corners $\tilde T, \tilde S$ that the subspace carries
 - *Biquaternion Roots of Minus One* (`articles_maths/biquaternion-roots-of-minus-one.md`), for the roots, all of them but $\pm i$ lying in the subspace
 - *Biquaternion Zero Divisors* (`articles_maths/biquaternion-zero-divisors.md`), for the pure and non-pure zero divisors and the two families of the algebra
 - *Biquaternion Relations Between Subspaces* (`articles_maths/biquaternion-relations-between-subspaces.md`), for the intersections, the sums and the coordinate blocks of the six

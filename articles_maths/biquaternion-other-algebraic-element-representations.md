@@ -6,7 +6,7 @@ The algebra article defined the biquaternion algebra $\mathbb{B}$, its conjugati
 
 1. **Spinor representation.** A biquaternion written on two-component spinors, its $2\times2$ image acting by matrix multiplication on a column.
 2. **Clifford algebra representation.** A biquaternion as an element of the even Clifford algebra $\mathrm{Cl}_{1,3}^+$.
-3. **Conjugation action.** A biquaternion as an inner automorphism $x \mapsto \tilde{Q}x\tilde{Q}^{-1}$ of the algebra.
+3. **Conjugation action.** A biquaternion as an inner automorphism $\tilde T \mapsto \tilde{Q}\tilde T\tilde{Q}^{-1}$ of the algebra.
 
 The remaining realizations of the same algebra are the subjects of their own articles:
 
@@ -141,7 +141,7 @@ The Clifford algebra representation is useful because:
 The third two-sided action of a unit on the algebra replaces the Hermitian conjugate of the sandwich by the inverse:
 
 $$
-\operatorname{Ad}_{\tilde{Q}}(x) = \tilde{Q}\,x\,\tilde{Q}^{-1}, \qquad N(\tilde{Q}) \neq 0 .
+\operatorname{Ad}_{\tilde{Q}}(\tilde T) = \tilde{Q}\,\tilde T\,\tilde{Q}^{-1}, \qquad N(\tilde{Q}) \neq 0 .
 $$
 
 The two differ in what they require of the algebra. The inverse uses the product and the biquaternion norm alone, so $\operatorname{Ad}_{\tilde{Q}}$ is built from the algebra operations; the dagger needs the coefficient conjugation as well, and this is why $\operatorname{Ad}_{\lambda\tilde{Q}} = \operatorname{Ad}_{\tilde{Q}}$ for every nonzero central $\lambda$ while the sandwich is not invariant under that rescaling. The name is the standard one: $\operatorname{Ad}_{\tilde{Q}}$ is the **adjoint action** of the group of units on the algebra.
@@ -150,10 +150,10 @@ This is the realization that satisfies the technical definition of a representat
 
 ### It Is an Algebra Automorphism
 
-For a unit $\tilde{Q}$ and any $x, y$,
+For a unit $\tilde{Q}$ and any $\tilde T, \tilde S$,
 
 $$
-\operatorname{Ad}_{\tilde{Q}}(xy) = \tilde{Q}\,xy\,\tilde{Q}^{-1} = \bigl(\tilde{Q}x\tilde{Q}^{-1}\bigr)\bigl(\tilde{Q}y\tilde{Q}^{-1}\bigr) = \operatorname{Ad}_{\tilde{Q}}(x)\,\operatorname{Ad}_{\tilde{Q}}(y),
+\operatorname{Ad}_{\tilde{Q}}(\tilde T\tilde S) = \tilde{Q}\,\tilde T\tilde S\,\tilde{Q}^{-1} = \bigl(\tilde{Q}\tilde T\tilde{Q}^{-1}\bigr)\bigl(\tilde{Q}\tilde S\tilde{Q}^{-1}\bigr) = \operatorname{Ad}_{\tilde{Q}}(\tilde T)\,\operatorname{Ad}_{\tilde{Q}}(\tilde S),
 $$
 
 since the inserted $\tilde{Q}^{-1}\tilde{Q}$ is the unit. The map fixes $e_0$ and is inverted by $\operatorname{Ad}_{\tilde{Q}^{-1}}$, so it is an algebra automorphism of $\mathbb{B}$. Multiplicativity here is unconditional, in contrast with the sandwich, which is multiplicative exactly on the unitary elements; the criterion is taken up below.
@@ -163,7 +163,7 @@ since the inserted $\tilde{Q}^{-1}\tilde{Q}$ is the unit. The map fixes $e_0$ an
 The automorphism is the identity exactly when $\tilde{Q}$ commutes with every element of the algebra:
 
 $$
-\operatorname{Ad}_{\tilde{Q}} = \mathrm{id} \iff \tilde{Q}x = x\tilde{Q}\ \text{ for all } x \iff \tilde{Q} \in \mathbb{C}_{\mathbb{B}} .
+\operatorname{Ad}_{\tilde{Q}} = \mathrm{id} \iff \tilde{Q}\tilde T = \tilde T\tilde{Q}\ \text{ for all } \tilde T \iff \tilde{Q} \in \mathbb{C}_{\mathbb{B}} .
 $$
 
 The action therefore depends on $\tilde{Q}$ only through its class in the quotient $\mathbb{B}^{\times} / \mathbb{C}_{\mathbb{B}}^{\times}$ of the group of units by the scalar subgroup. Under the matrix isomorphism that quotient is $GL_2(\mathbb{C})/\mathbb{C}^{\times} = PGL_2(\mathbb{C}) \cong PSL_2(\mathbb{C})$, and every automorphism of $\mathbb{B} \cong M_2(\mathbb{C})$ is inner, so the image of the action is the whole automorphism group and not a proper subgroup of it. That group, its real forms, and the derivations of the algebra are the subject of *Biquaternion Automorphisms and Derivations*; the property used here is quoted rather than proved.
@@ -179,7 +179,7 @@ $$
 On the unitary elements the sandwich **is** the conjugation action, and it is this automorphism that its multiplicativity criterion detects. For a general unit, written $\tilde{Q} = \lambda\tilde{U}$ with $\lambda$ central and $\tilde{U}$ unitary,
 
 $$
-\operatorname{H}_{\lambda\tilde{U}}(x) = \lambda\tilde{U}\,x\,\lambda^{*}\tilde{U}^{\dagger} = |\lambda|^2\operatorname{Ad}_{\tilde{U}}(x),
+\operatorname{H}_{\lambda\tilde{U}}(\tilde T) = \lambda\tilde{U}\,\tilde T\,\lambda^{*}\tilde{U}^{\dagger} = |\lambda|^2\operatorname{Ad}_{\tilde{U}}(\tilde T),
 $$
 
 a central dilation of an inner automorphism by the square of the modulus. Off the unitary slice the sandwich is therefore not a second automorphism but one automorphism, scaled; what it loses there is multiplicativity, not its connection with conjugation.
@@ -215,17 +215,17 @@ $$
 
 and for a generic unit the image is a third idempotent, neither $\tilde\Pi_1$ nor $1-\tilde\Pi_1$: the exchange of the two halves is the special case, not the rule. The units that leave the halving untouched are exactly those commuting with $\tilde\Pi_1$, that is, the elements of $\mathrm{span}_{\mathbb{C}}\{e_0, e_3\}$; being unitary is not sufficient for that, since $e_1$ is unitary and does not commute with $\tilde\Pi_1$.
 
-The dagger sandwich exchanges them as well, $\operatorname{H}_{ie_1}(\tilde\Pi_1) = 1 - \tilde\Pi_1$. Neither action is a map of left modules over the algebra — $\operatorname{H}_{\tilde{Q}}(bx) \neq b\operatorname{H}_{\tilde{Q}}(x)$ in general, and the same is true of $\operatorname{Ad}_{\tilde{Q}}$ — but only the automorphism is multiplicative, and it is multiplicativity that makes the exchange of the halves a statement about the algebra rather than about one element. Since the spinor module of this article is one of the two halves, the two-sided actions either preserve the spinor module or exchange it with its opposite; this is the algebraic origin of the conjugate spinor, the second of the two chiral components.
+The dagger sandwich exchanges them as well, $\operatorname{H}_{ie_1}(\tilde\Pi_1) = 1 - \tilde\Pi_1$. Neither action is a map of left modules over the algebra — $\operatorname{H}_{\tilde{Q}}(\tilde B\tilde T) \neq \tilde B\operatorname{H}_{\tilde{Q}}(\tilde T)$ in general, and the same is true of $\operatorname{Ad}_{\tilde{Q}}$ — but only the automorphism is multiplicative, and it is multiplicativity that makes the exchange of the halves a statement about the algebra rather than about one element. Since the spinor module of this article is one of the two halves, the two-sided actions either preserve the spinor module or exchange it with its opposite; this is the algebraic origin of the conjugate spinor, the second of the two chiral components.
 
 ## Relations Between the Representations
 
 **Spinor and Clifford.** The two realizations of this article meet at the matrix algebra. The even subalgebra $\mathrm{Cl}_{1,3}^+$ is isomorphic to $M_2(\mathbb{C})$ as a real algebra, and the matrix algebra is exactly the algebra of complex-linear operators on the spinor space $\mathbb{C}^2$. Under the dictionary of the Clifford section the six bivectors are the matrices of the quaternion units and of the imaginary quaternion units, so the spinor realization is the module of the Clifford realization: the bivectors act on a spinor, and the action is the matrix multiplication. The algebra and its module belong together in the Clifford description, which is the reason that description is the one in which the spinor module is usually met.
 
-**Spinor and the regular realization.** The left regular representation of *Biquaternion 4×4 Regular Matrix Element Representation* is not a third action but the spinor action taken twice. Since $\Phi(\tilde{Q}x) = \Phi(\tilde{Q})\Phi(x)$, reading the four entries of $\Phi(x)$ column by column exhibits an isomorphism of left $\mathbb{B}$-modules
+**Spinor and the regular realization.** The left regular representation of *Biquaternion 4×4 Regular Matrix Element Representation* is not a third action but the spinor action taken twice. Since $\Phi(\tilde{Q}\tilde T) = \Phi(\tilde{Q})\Phi(\tilde T)$, reading the four entries of $\Phi(\tilde T)$ column by column exhibits an isomorphism of left $\mathbb{B}$-modules
 
 $$
 \mathbb{B} \longrightarrow \mathbb{C}^2 \oplus \mathbb{C}^2, \qquad
-x \longmapsto \bigl(\text{first column of } \Phi(x),\ \text{second column of } \Phi(x)\bigr),
+\tilde T \longmapsto \bigl(\text{first column of } \Phi(\tilde T),\ \text{second column of } \Phi(\tilde T)\bigr),
 $$
 
 on which $\tilde{Q}$ acts on each copy as $\Phi(\tilde{Q})$. The two copies are the two minimal left ideals of the section above, $\mathbb{B}\tilde\Pi_1$ and $\mathbb{B}(1-\tilde\Pi_1)$, each of real dimension $4$, and in the $\Phi$ picture they are the two column spaces. In a basis of $\mathbb{B}$ made of a basis of $\mathbb{B}\tilde\Pi_1$ followed by a basis of $\mathbb{B}(1-\tilde\Pi_1)$, the left-regular $4\times4$ matrix of $\tilde{Q}$ is therefore block diagonal with $\Phi(\tilde{Q})$ in both diagonal blocks. This is why the $2\times2$ and $4\times4$ accounts of the same algebra cannot disagree about the isomorphism $\Phi$: the second contains the first twice.
@@ -262,7 +262,7 @@ The biquaternion algebra admits three algebraic realizations that are not treate
 |---|---|---|---|
 | Spinor | the $2\times2$ matrix $\Phi(\tilde{Q})$ | object, and operator on a column $\begin{pmatrix} \psi_1 \\ \psi_2 \end{pmatrix}$ | Module structure, the group of unit-norm elements, the Clifford multiplication |
 | Clifford algebra | an element of $\mathrm{Cl}_{1,3}^+$ | object | Geometry, generalization in dimension and signature |
-| Conjugation action | the map $x \mapsto \tilde{Q}x\tilde{Q}^{-1}$ | operator on the algebra | The automorphism group, the chiral halves, the reference for the dagger sandwich |
+| Conjugation action | the map $\tilde T \mapsto \tilde{Q}\tilde T\tilde{Q}^{-1}$ | operator on the algebra | The automorphism group, the chiral halves, the reference for the dagger sandwich |
 
 The first two columns are independent: the writing fixes an array, the reading fixes what is done with it, and the same matrix appears as an object and as an operator at once. The realization is a choice neither of size nor of role, which is why a four-vector, a $2\times2$ array and a $4\times4$ array can all carry the same object, and any of them can carry an action on it.
 
@@ -285,8 +285,8 @@ The matrix, four-vector and regular realizations, the biquaternion norm read in 
 | $\mathrm{Cl}_{1,3}$ | Clifford algebra of signature $(1,3)$; $\mathbb{B} \cong \mathrm{Cl}_{1,3}^+$ |
 | $\gamma^\mu$ | Clifford generators, $(\gamma^0)^2 = +1$, $(\gamma^j)^2 = -1$ |
 | $\omega = \gamma^0\gamma^1\gamma^2\gamma^3$ | Pseudoscalar, $\omega^2 = -1$, central in $\mathrm{Cl}_{1,3}^+$ |
-| $\operatorname{Ad}_{\tilde{Q}}(x) = \tilde{Q}x\tilde{Q}^{-1}$ | Conjugation action of a unit, the inner automorphism |
-| $\operatorname{H}_{\tilde{Q}}(x) = \tilde{Q}x\tilde{Q}^{\dagger}$ | The dagger sandwich of *Biquaternion Rotations and Lorentz Transformations* |
+| $\operatorname{Ad}_{\tilde{Q}}(\tilde T) = \tilde{Q}\tilde T\tilde{Q}^{-1}$ | Conjugation action of a unit, the inner automorphism |
+| $\operatorname{H}_{\tilde{Q}}(\tilde T) = \tilde{Q}\tilde T\tilde{Q}^{\dagger}$ | The dagger sandwich of *Biquaternion Rotations and Lorentz Transformations* |
 | $\tilde\Pi_1 = \tfrac12(e_0 + ie_3)$ | Idempotent, $\mathbb{B}\tilde\Pi_1$ a minimal left ideal of real dimension $4$ |
 
 ## Further Reading

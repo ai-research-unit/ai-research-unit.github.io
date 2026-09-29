@@ -6,7 +6,7 @@ This article analyses the Jordan algebras that come from associative algebras an
 
 A Jordan algebra is **special** if it embeds into the symmetrisation $A^+$ of an associative algebra $A$ and **exceptional** if it does not. The classification of the finite-dimensional formally real algebras, quoted in *Jordan Algebras*, lists three families: the matrix algebras $H_n(D)$ over the associative composition algebras $\mathbb{R}$, $\mathbb{C}$, $\mathbb{H}$ with $n \geq 3$, the degree-two spin factors, together with the one-dimensional algebra $\mathbb{R}$, all of which are special; and the single algebra $H_3(\mathbb{O})$ of Hermitian $3 \times 3$ matrices over the octonions, the **Albert algebra**, which is exceptional. That one exception is the whole reason the subject is a theory of its own rather than a chapter of associative algebra.
 
-The article constructs the special algebras $H_n(D)$ and verifies that they are Jordan algebras, constructs the octonions by Cayley–Dickson doubling, assembles the Albert algebra and records its basic invariants, and states the exceptionality theorem with the finite identity — Glennie's — that witnesses it. The spin factors and their Clifford envelopes are in *The Clifford, Pin and Spin Groups*.
+The article constructs the special algebras $H_n(D)$ and verifies that they are Jordan algebras, constructs the octonions by Cayley–Dickson doubling, assembles the Albert algebra and records its basic invariants, and states the exceptionality theorem with the finite identity — Glennie's — that witnesses it. The spin factors and their Clifford envelopes are in *The Clifford, Pin and Spin Groups with Signed Inner Conjugation*.
 
 ## Special and Exceptional
 

@@ -162,7 +162,7 @@ the pair $(u,v)$ being determined up to $(u,v)\mapsto(\lambda u,\lambda^{-1}v)$.
 $$
 u=\binom{M_{1q}}{M_{2q}},\qquad v^{T}=\frac{1}{M_{pq}}\begin{pmatrix}M_{p1}&M_{p2}\end{pmatrix},
 $$
-one has $(uv^{T})_{ij}=M_{iq}M_{pj}/M_{pq}=M_{ij}$, so $M=uv^{T}$, and $u\neq0$ because its $p$-th entry is $M_{pq}\neq0$. A different pivot gives a pair differing by precisely the rescaling: the $j$-th columns of $uv^{T}=u'v'^{T}$ give $u'=\lambda u$ for $\lambda=v_{j}/v'_{j}\neq0$, and the remaining entries give $v'=\lambda^{-1}v$. $\square$
+one has $(uv^{T})_{ij}=M_{iq}M_{pj}/M_{pq}=M_{ij}$, so $M=uv^{T}$, and $u\neq0$ because its $p$-th entry is $M_{pq}\neq0$. A different pivot gives a pair differing by precisely the rescaling: the $j$-th columns of $uv^{T}=u'(v')^{T}$ give $u'=\lambda u$ for $\lambda=v_{j}/v'_{j}\neq0$, and the remaining entries give $v'=\lambda^{-1}v$.
 
 **Worked example.** For $\tilde{Q}=e_2+ie_3$ the image is $\Phi(\tilde{Q})=\begin{pmatrix}1&-1\\1&-1\end{pmatrix}$, of rank one; the pivot $M_{11}=1$ gives $u=(1,1)^{T}$, $v=(1,-1)^{T}$, and the pivot $M_{12}=-1$ gives $u=(-1,-1)^{T}$, $v=(-1,1)^{T}$, the same pair rescaled by $\lambda=-1$.
 
@@ -287,7 +287,7 @@ $$
 
 with the same double duty of the letter $z'$, resolved there too by the combination $q'_0 - iq'_3$.
 
-The determinant changes sign with the factor, $\det = -(q'^2_0 + q'^2_1 + q'^2_2 + q'^2_3)$, **negative definite** — the exact mirror of the definite form on $\mathbb{H}_{\mathbb{B}}$. Together the two images exhaust $M_2(\mathbb{C})$, so the real-and-imaginary split of the algebra is, in matrix language, the split of $M_2(\mathbb{C})$ into the quaternion matrices and $i$ times them.
+The determinant changes sign with the factor, $\det = -((q'_0)^2 + (q'_1)^2 + (q'_2)^2 + (q'_3)^2)$, **negative definite** — the exact mirror of the definite form on $\mathbb{H}_{\mathbb{B}}$. Together the two images exhaust $M_2(\mathbb{C})$, so the real-and-imaginary split of the algebra is, in matrix language, the split of $M_2(\mathbb{C})$ into the quaternion matrices and $i$ times them.
 
 ### The Informational Subspace $\mathbb{M}_+$
 
@@ -315,7 +315,7 @@ $$
 the general Hermitian $2 \times 2$ matrix — the general observable of a two-state system — with scalar part half the trace, $\mathrm{Tr}\,\Phi(\tilde{Q}) = 2q_0$, real, against the purely imaginary $2iq'_0$ of the material subspace. Its determinant is
 
 $$
-\det\Phi(\tilde{Q}) = q_0^2 - q'^2_1 - q'^2_2 - q'^2_3 ,
+\det\Phi(\tilde{Q}) = q_0^2 - (q'_1)^2 - (q'_2)^2 - (q'_3)^2 ,
 $$
 
 the mirror interval of signature $(1,3)$, read on the informational coordinate $(ct')\,e_0 + i\,x'\,e_1 + i\,y'\,e_2 + i\,z'\,e_3$, that is $q_0 = ct'$, $q'_1 = x'$, $q'_2 = y'$, $q'_3 = z'$.
@@ -345,7 +345,7 @@ $$
 which is $i$ times a Hermitian matrix: the scalar part is carried by $i$, and the vector signs are reversed. Its trace is $2iq'_0$, purely imaginary, and its determinant is
 
 $$
-\det\Phi(\tilde{Q}) = N(\tilde{Q}) = -q'^2_0 + q_1^2 + q_2^2 + q_3^2 ,
+\det\Phi(\tilde{Q}) = N(\tilde{Q}) = -(q'_0)^2 + q_1^2 + q_2^2 + q_3^2 ,
 $$
 
 the Minkowski interval of signature $(3,1)$: the $ict$ metric of the corpus, read on the material four-position of the companion article, $\tilde{Q} = ict\,e_0 + x\,e_1 + y\,e_2 + z\,e_3$, that is $q'_0 = ct$, $q_1 = x$, $q_2 = y$, $q_3 = z$, giving $-(ct)^2 + \mathbf{x}^2$. This is the most economical place to see why the material subspace is the **anti**-Hermitian one: the anti-Hermitian matrices are exactly those on which the determinant comes out with one minus sign.
@@ -498,7 +498,7 @@ The matrix representation of the biquaternion algebra is the isomorphism $\Phi :
 
 - The signs are forced: $e_k^2 = -e_0$ requires the factor $i$, and $e_1e_2 = +e_3$ requires the minus sign. Both are checked by multiplying the four basis matrices. The equivalent statement, that the images of the Hermitian elements are Hermitian, is why the Hermitian elements of the algebra are its observables.
 - The trace is twice the scalar part, $\mathrm{Tr}(\tilde{Q}) = 2Q_0$, and the determinant **is** the biquaternion norm, $\det(\tilde{Q}) = N(\tilde{Q}) = Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2$. Invertibility, multiplicativity of the norm, and the zero divisors as rank-one (singular) matrices $\Phi(\tilde{Q}) = uv^{T}$ all follow.
-- The subspaces of the algebra are the center subspace $\mathbb{C}_{\mathbb{B}}$, $Q_0e_0 \mapsto Q_0\Phi(e_0)$, the only one of the six of real dimension two; the vector subspace $\mathrm{Vect}(\mathbb{B})$, the traceless part, $Q_1e_1 + Q_2e_2 + Q_3e_3 \mapsto \mathrm{SL}(2,\mathbb{C})$, the anti-fixed space of quaternion conjugation; the real-quaternion subspace $\mathbb{H}_{\mathbb{B}}$ (the matrices $\begin{pmatrix} z & w \\ -\bar{w} & \bar{z}\end{pmatrix}$ with $z = q_0 - iq_3$, $w = -iq_1 - q_2$, determinant $q_0^2 + q_1^2 + q_2^2 + q_3^2$ definite); the antiquaternion subspace $i\mathbb{H}_{\mathbb{B}}$ ($i$ times the quaternion matrices, determinant $-q'^2_0 - q'^2_1 - q'^2_2 - q'^2_3$, negative definite); the Hermitian subspace $\mathbb{M}_+$ (the informational subspace, $q_0e_0 + iq'_ke_k$ mapped to a Hermitian matrix, $\det = q_0^2 - q'^2_1 - q'^2_2 - q'^2_3 = c^2t'^2 - \mathbf{x}'^2$); and the anti-Hermitian subspace $\mathbb{M}_-$ (the material subspace, $iq'_0e_0 + q_ke_k$ mapped to $i$ times a Hermitian matrix, $\det = -q'^2_0 + q_1^2 + q_2^2 + q_3^2 = -c^2t^2 + \mathbf{x}^2$, the $ict$ interval). Every element splits into a Hermitian plus an anti-Hermitian part, $\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-$, with $\mathbb{M}_- = i\mathbb{M}_+$.
+- The subspaces of the algebra are the center subspace $\mathbb{C}_{\mathbb{B}}$, $Q_0e_0 \mapsto Q_0\Phi(e_0)$, the only one of the six of real dimension two; the vector subspace $\mathrm{Vect}(\mathbb{B})$, the traceless part, $Q_1e_1 + Q_2e_2 + Q_3e_3 \mapsto \mathrm{SL}(2,\mathbb{C})$, the anti-fixed space of quaternion conjugation; the real-quaternion subspace $\mathbb{H}_{\mathbb{B}}$ (the matrices $\begin{pmatrix} z & w \\ -\bar{w} & \bar{z}\end{pmatrix}$ with $z = q_0 - iq_3$, $w = -iq_1 - q_2$, determinant $q_0^2 + q_1^2 + q_2^2 + q_3^2$ definite); the antiquaternion subspace $i\mathbb{H}_{\mathbb{B}}$ ($i$ times the quaternion matrices, determinant $-(q'_0)^2 - (q'_1)^2 - (q'_2)^2 - (q'_3)^2$, negative definite); the Hermitian subspace $\mathbb{M}_+$ (the informational subspace, $q_0e_0 + iq'_ke_k$ mapped to a Hermitian matrix, $\det = q_0^2 - (q'_1)^2 - (q'_2)^2 - (q'_3)^2 = c^2(t')^2 - (\mathbf{x}')^2$); and the anti-Hermitian subspace $\mathbb{M}_-$ (the material subspace, $iq'_0e_0 + q_ke_k$ mapped to $i$ times a Hermitian matrix, $\det = -(q'_0)^2 + q_1^2 + q_2^2 + q_3^2 = -c^2t^2 + \mathbf{x}^2$, the $ict$ interval). Every element splits into a Hermitian plus an anti-Hermitian part, $\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-$, with $\mathbb{M}_- = i\mathbb{M}_+$.
 - The minimal left ideals are the matrix **columns**: $\tilde\Pi_{1,2} = \tfrac12(e_0 \pm ie_3)$ map to $E_{11}$ and $E_{22}$, and $\mathbb{B} = \mathbb{B}\tilde\Pi_1 \oplus \mathbb{B}\tilde\Pi_2$ is the split into the two chiralities. Left multiplication preserves each column, while right multiplication by $\tilde{a}_{\mathrm{tr}} = \tfrac12(ie_1 - e_2) \mapsto E_{12}$ carries the first column onto the second — it annihilates the second — and that is why the mass term of the Dirac equation is a right multiplication. The algebra is simple, so these ideals are one-sided, not two-sided.
 - Quaternion conjugation is the adjugate $\epsilon M^{\mathsf T}\epsilon^{-1}$ and complex conjugation is $\epsilon\overline{M}\epsilon^{-1}$; both are dressed by the antisymmetric form $\epsilon = \Phi(-e_2)$. Hermitian conjugation is the conjugate transpose and $\flat = -\dagger$ is its negative, neither of them dressed. Entrywise conjugation of $M$ on its own is not the image of any involution of the algebra.
 - The physics is read off the matrices: $\tilde{S}_k = \tfrac{\hbar}{2}ie_k \mapsto \tfrac{\hbar}{2}\Phi(ie_k)$; the pure states are the rank-one projectors $\tilde\Pi_\pm(\hat{\boldsymbol\mu})$ and are the null elements $N(\tilde{P}) = 0$; the density matrix $\rho = \tfrac12\big(\Phi(e_0) + r_k\Phi(ie_k)\big)$ has $r_k = \mathrm{Tr}\big(\rho\,\Phi(ie_k)\big)$ on the Bloch ball.
@@ -526,11 +526,11 @@ The matrix representation of the biquaternion algebra is the isomorphism $\Phi :
 | $\mathrm{Vect}(\mathbb{B})$ | The vector subspace, the complement of the center subspace: $Q_1e_1 + Q_2e_2 + Q_3e_3 \mapsto \begin{pmatrix} -iQ_3 & -iQ_1-Q_2 \\ -iQ_1+Q_2 & iQ_3\end{pmatrix}$, the traceless matrices $\mathrm{SL}(2,\mathbb{C})$; the anti-fixed space of quaternion conjugation, closed under the commutator and equal to the derived subspace $[\mathbb{B},\mathbb{B}]$ |
 | $\mathbb{H}_{\mathbb{B}}$ | The real-quaternion subspace: $q_0e_0 + \cdots + q_3e_3 \mapsto \begin{pmatrix} z & w \\ -\bar{w} & \bar{z}\end{pmatrix}$, $z = q_0 - iq_3$, $w = -iq_1 - q_2$, determinant $q_0^2 + q_1^2 + q_2^2 + q_3^2$ |
 | $i\mathbb{H}_{\mathbb{B}}$ | The antiquaternion subspace, the anti-fixed space of complex conjugation: $i$ times the real-quaternion image, $\begin{pmatrix} iz & iw \\ -i\bar{w} & i\bar{z}\end{pmatrix}$, determinant **negative** definite. With $\mathbb{H}_{\mathbb{B}}$ it gives $\mathbb{B} = \mathbb{H}_{\mathbb{B}} \oplus i\mathbb{H}_{\mathbb{B}}$, a split crossing the $\mathbb{M}_\pm$ split |
-| $\mathbb{M}_+$ | The informational subspace, the Hermitian one: $q_0e_0 + iq'_ke_k = (ct')\,e_0 + i\mathbf{x}'$, mapped to a Hermitian matrix, $\det = q_0^2 - q'^2_1 - q'^2_2 - q'^2_3 = c^2t'^2 - \mathbf{x}'^2$; parameters $q_0, q'_1, q'_2, q'_3$, with $q_0 = ct'$ |
-| $\mathbb{M}_-$ | The material subspace, the anti-Hermitian one: $iq'_0e_0 + q_ke_k = ict\,e_0 + \mathbf{x}$, mapped to $i$ times a Hermitian matrix, $\det = -q'^2_0 + q_1^2 + q_2^2 + q_3^2 = -c^2t^2 + \mathbf{x}^2$; parameters $q'_0, q_1, q_2, q_3$, with $q'_0 = ct$ |
+| $\mathbb{M}_+$ | The informational subspace, the Hermitian one: $q_0e_0 + iq'_ke_k = (ct')\,e_0 + i\mathbf{x}'$, mapped to a Hermitian matrix, $\det = q_0^2 - (q'_1)^2 - (q'_2)^2 - (q'_3)^2 = c^2(t')^2 - (\mathbf{x}')^2$; parameters $q_0, q'_1, q'_2, q'_3$, with $q_0 = ct'$ |
+| $\mathbb{M}_-$ | The material subspace, the anti-Hermitian one: $iq'_0e_0 + q_ke_k = ict\,e_0 + \mathbf{x}$, mapped to $i$ times a Hermitian matrix, $\det = -(q'_0)^2 + q_1^2 + q_2^2 + q_3^2 = -c^2t^2 + \mathbf{x}^2$; parameters $q'_0, q_1, q_2, q_3$, with $q'_0 = ct$ |
 | $\mathbb{B} = \mathbb{C}_{\mathbb{B}} \oplus \mathrm{Vect}(\mathbb{B})$ | The trace decomposition $M_2(\mathbb{C}) = \mathbb{C}\Phi(e_0) \oplus \mathrm{SL}(2,\mathbb{C})$: scalar part against traceless part |
 | $\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-$ | Every element is a Hermitian part plus an anti-Hermitian part; $\mathbb{M}_- = i\mathbb{M}_+$ |
-| $\tilde\Pi_{1,2} = \tfrac12(e_0 \pm ie_3) = \tilde\Pi_\pm(\hat{\mathbf{e}}_3)$ | Idempotents generating the two minimal left ideals; $\Phi(\tilde\Pi_{1,2}) = E_{11}, E_{22}$; the spinor-module articles write them $p$, $q$ |
+| $\tilde\Pi_{1,2} = \tfrac12(e_0 \pm ie_3) = \tilde\Pi_\pm(\hat{\mathbf{e}}_3)$ | Idempotents generating the two minimal left ideals; $\Phi(\tilde\Pi_{1,2}) = E_{11}, E_{22}$ |
 | $\tilde\Pi_\pm(\hat{\boldsymbol\mu}) = \tfrac12(e_0 \pm i\hat{\boldsymbol\mu})$ | The rank-one idempotents of $\mathbb{M}_+$, i.e. the pure-state projectors: the idempotents with $N(\tilde{P}) = 0$ |
 | $\mathbb{B}\tilde\Pi_1$, $\mathbb{B}\tilde\Pi_2$ | The two matrix **columns**, i.e. the two chiralities; $\mathbb{B} = \mathbb{B}\tilde\Pi_1 \oplus \mathbb{B}\tilde\Pi_2$ |
 | $\tilde{a}_{\mathrm{tr}} = \tfrac12(ie_1 - e_2) \mapsto E_{12}$ | Right multiplication carries $\mathbb{B}\tilde\Pi_1$ onto $\mathbb{B}\tilde\Pi_2$; the chirality coupling. The corpus's truncated lowering operator; the spinor-module articles write it $x$, its conjugate $y$ |

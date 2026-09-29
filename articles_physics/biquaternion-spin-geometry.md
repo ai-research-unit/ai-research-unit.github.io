@@ -14,7 +14,7 @@ Physically the spinor module is the state space of the fermion. The two chiral h
 
 ## The Spinor Module and Its Two Chiral Halves
 
-As a module over the complexified Lorentz algebra, the complexification of the Minkowski slice is the tensor product of the two Weyl spinor spaces of *Spin Representations and Clifford Modules*,
+As a module over the complexified Lorentz algebra, the complexification of the Minkowski slice is the tensor product of the two Weyl spinor spaces of *Spin Representations and Clifford Modules with Inner Conjugation*,
 $$
 \mathbb{B}\cong\Delta^+\otimes\Delta^-,\qquad \dim_{\mathbb{C}}\Delta^\pm=2 .
 $$
@@ -28,9 +28,9 @@ Matching the matrix form $\Phi(\tilde{Q})=uv^{T}$ of *The 2×2 Matrix Element Re
 
 ## Spinors as the Minimal Left Ideals
 
-The minimal left ideals of $\mathbb{B}\cong M_2(\mathbb{C})$ are the two lines $\mathbb{B}p$ and $\mathbb{B}q$, where $p=\tfrac12(e_0+i\hat{\mathbf{u}})$ and $q=e_0-p$ are a complete pair of orthogonal idempotents (*Biquaternion Idempotents and Projections*, *Biquaternion Ideals and Peirce Decomposition*). Each is a copy of $\mathbb{C}^2$ as a left $\mathbb{B}$-module, and the algebra is their direct sum,
+The minimal left ideals of $\mathbb{B}\cong M_2(\mathbb{C})$ are the two lines $\mathbb{B}\tilde\Pi_+$ and $\mathbb{B}\tilde\Pi_-$, where $\tilde\Pi_\pm=\tfrac12(e_0\pm i\hat{\mathbf{u}})$ are a complete pair of orthogonal idempotents (*Biquaternion Idempotents and Projections*, *Biquaternion Ideals and Peirce Decomposition*). Each is a copy of $\mathbb{C}^2$ as a left $\mathbb{B}$-module, and the algebra is their direct sum,
 $$
-\mathbb{B}=\mathbb{B}p\oplus\mathbb{B}q,
+\mathbb{B}=\mathbb{B}\tilde\Pi_+\oplus\mathbb{B}\tilde\Pi_-,
 $$
 so that the module of the spin representation is realised inside the algebra as a minimal left ideal. The two ideals themselves are not the chiral halves: each of them complexifies to the sum $S_+\oplus S_-$ of the two chiral spaces. The chirality belongs to the algebra, $\mathbb{B}\cong\Delta^+\otimes\Delta^-$, and the two families of null planes of the quadric are the projectivisations of the two chiral spaces $\Delta^\pm$. The construction of the module is *The 2×2 Matrix Element Representation of Biquaternions*, §*The Ideals as Columns and the Spinor Module*, and *Biquaternion Ideals and Peirce Decomposition*; only the identification with the ideals is used here.
 
@@ -56,7 +56,7 @@ Chirality appears on complexification. On the complexified module $S\otimes_{\ma
 $$
 S_+=\Delta^+,\qquad S_-=\Delta^-,\qquad S\otimes_{\mathbb{R}}\mathbb{C}=S_+\oplus S_-,
 $$
-the two Weyl spinor spaces: as representations of $SL(2,\mathbb{C})$ they are conjugate to one another and inequivalent. The real module $S$, of real dimension four, carries no splitting, because the eigenvalue $i$ is not real and the division into halves requires the complex scalars. This is the module-theoretic form of the statement that $\mathrm{Cl}_{3,0}$ has complex type: the chirality operator exists, but its eigenvalues are not real, so it does not cut the real module. The reality type of the module is therefore **complex**, its commutant is $\mathbb{C}$ by Schur's lemma, and there is **no Majorana spinor**: a Majorana spinor would be the fixed space of a real structure on $S$, and the complex type means no such structure exists (*Real Spinors and Reality Conditions*).
+the two Weyl spinor spaces: as representations of $SL(2,\mathbb{C})$ they are conjugate to one another and inequivalent. The real module $S$, of real dimension four, carries no splitting, because the eigenvalue $i$ is not real and the division into halves requires the complex scalars. This is the module-theoretic form of the statement that $\mathrm{Cl}_{3,0}$ has complex type: the chirality operator exists, but its eigenvalues are not real, so it does not cut the real module. The reality type of the module is therefore **complex**, its commutant is $\mathbb{C}$ by Schur's lemma, and there is **no Majorana spinor**: a Majorana spinor would be the fixed space of a real structure on $S$, and the complex type means no such structure exists (*Real Spinors and Reality Conditions with Inner Conjugation*).
 
 **Remark (the two faces of chirality).** The same two Weyl spaces appear twice, and the two appearances must not be confused. As the tensor factors of the even Clifford algebra, $\mathbb{B}\cong\Delta^+\otimes\Delta^-$, they describe a biquaternion as a mixed spinor (§*The Spinor Module and Its Two Chiral Halves*); as the summands of the complexified module, $S\otimes_{\mathbb{R}}\mathbb{C}=\Delta^+\oplus\Delta^-$, they describe the Dirac spinor of complex dimension four. The tensor splitting is a statement about the algebra, the direct splitting a statement about its module, and both express the same chirality.
 
@@ -79,7 +79,7 @@ The two Clifford structures of the algebra give two different spinor modules, an
 
 The spin geometry of the biquaternion algebra rests on the identification of the algebra with an even Clifford algebra. The spinor module is the natural module of $M_2(\mathbb{C})$, of complex dimension $2$; it carries the Clifford multiplication $c(\gamma_k)=\sigma_k$, $c(\omega)=iI$, so the volume element acts as a scalar and does not grade the module; the chiral halves appear only on complexification, where they are the $\pm i$ eigenspaces of $c(\omega)$, and the reality type is complex, so there is no Majorana spinor. Its two chiral halves $\Delta^\pm$ are the two simple summands of the even part, and a biquaternion is the mixed spinor $A_\alpha{}^{\dot\beta}\in\Delta^+\otimes\Delta^-$. The null condition on a mixed spinor is factorisability, $A_\alpha{}^{\dot\beta}=\phi_\alpha\pi^{\dot\beta}$, and the two rulings of the null quadric — the primed and unprimed spinor lines — are the families traced by fixing one factor.
 
-The module is realised inside the algebra as a minimal left ideal, the algebra being the direct sum $\mathbb{B}p\oplus\mathbb{B}q$ of the two ideals cut out by a complete pair of orthogonal idempotents; the two ideals are isomorphic, and each of them complexifies to $S_+\oplus S_-$, so neither is itself a chiral half. The Dirac operator is the constant-coefficient operator $D=\sum_\mu e_\mu\partial_\mu$ with $D^2=$, defined by the Clifford multiplication alone and invariant under the motions of the form. Its analytic theory is in Analysis and the general theory in Part IV, both cited.
+The module is realised inside the algebra as a minimal left ideal, the algebra being the direct sum $\mathbb{B}\tilde\Pi_+\oplus\mathbb{B}\tilde\Pi_-$ of the two ideals cut out by a complete pair of orthogonal idempotents; the two ideals are isomorphic, and each of them complexifies to $S_+\oplus S_-$, so neither is itself a chiral half. The Dirac operator is the constant-coefficient operator $D=\sum_\mu e_\mu\partial_\mu$ with $D^2=$, defined by the Clifford multiplication alone and invariant under the motions of the form. Its analytic theory is in Analysis and the general theory in Part IV, both cited.
 
 The algebra carries two Clifford structures, and with them two spinor modules: the module of Minkowski space, from $\mathbb{B}\cong\mathrm{Cl}^+_{1,3}$, and the module of the algebra as a quadratic space, from $\mathrm{Cl}(\mathbb{B},N)$. Both are two-dimensional over $\mathbb{C}$; the algebra is the even Clifford algebra of the one quadratic space and a quadratic space in its own right, and it is the bridge between the two. Physically the two chiral halves are the left- and right-handed Weyl spinors, the Clifford multiplication is the Dirac action, and the complex reality type, with no Majorana spinor, is why the framework carries a complex spinor rather than a real one.
 
@@ -96,8 +96,8 @@ The algebra carries two Clifford structures, and with them two spinor modules: t
 | $\mathbb{B}\cong\Delta^+\otimes\Delta^-$ | Biquaternion as a mixed spinor |
 | $A_\alpha{}^{\dot\beta}=\phi_\alpha\pi^{\dot\beta}$ | Factorisation of a null biquaternion |
 | $\ell_{[\phi]}\cong\mathbb{P}(\Delta^-)$, $m_{[\pi]}\cong\mathbb{P}(\Delta^+)$ | The two rulings, as the primed and unprimed spinor lines |
-| $p,q$ | Complete pair of orthogonal idempotents; $\mathbb{B}=\mathbb{B}p\oplus\mathbb{B}q$ |
-| $\mathbb{B}p\cong\mathbb{C}^2$ | Minimal left ideal; the module of the spin representation |
+| $\tilde\Pi_\pm$ | Complete pair of orthogonal idempotents; $\mathbb{B}=\mathbb{B}\tilde\Pi_+\oplus\mathbb{B}\tilde\Pi_-$ |
+| $\mathbb{B}\tilde\Pi_+\cong\mathbb{C}^2$ | Minimal left ideal; the module of the spin representation |
 | $D=\sum_\mu e_\mu\partial_\mu$ | Dirac operator; $D^2=$ |
 | $\mathrm{Cl}(\mathbb{B},N)\cong\mathrm{Cl}_4(\mathbb{C})$ | Clifford algebra of the biquaternion norm; even part holds the two chiralities |
 | $\mathbb{B}\cong\mathrm{Cl}^+_{1,3}$ | The algebra as the even Clifford algebra of Minkowski space |

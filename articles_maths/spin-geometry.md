@@ -15,11 +15,11 @@ The article develops the spin structures, the spinor bundle and the Cauchy–Rie
 $$
 \mathrm{Cl}(TM) = \coprod_{x \in M} \mathrm{Cl}(T_xM, g_x) ,
 $$
-whose fibre over $x$ is the Clifford algebra of the tangent space with the quadratic form $v \mapsto g_x(v,v)$; it is a bundle of finite-dimensional real algebras of rank $2^n$, and the Clifford relations $v \cdot v = -g(v,v) \cdot 1$ hold in each fibre, the sign being the one of the convention of *The Clifford Algebra*.
+whose fibre over $x$ is the Clifford algebra of the tangent space with the quadratic form $v \mapsto g_x(v,v)$; it is a bundle of finite-dimensional real algebras of rank $2^n$, and the Clifford relations $v \cdot v = -g(v,v) \cdot 1$ hold in each fibre, the sign being the one of the convention of *Clifford Algebras*.
 
 **Proposition.** The Clifford bundle is a smooth vector bundle of rank $2^n$ with the multiplication of the fibres smooth in the sense that the multiplication map $\mathrm{Cl}(TM) \otimes \mathrm{Cl}(TM) \to \mathrm{Cl}(TM)$ is a bundle map; the Levi-Civita connection of $(M,g)$ induces a connection on $\mathrm{Cl}(TM)$ which is compatible with the multiplication and the grading, and which acts as a derivation over the algebra.
 
-**Proof.** The Clifford algebra of a vector space with a quadratic form is the quotient of the tensor algebra, and the construction is natural in the pair $(T_xM, g_x)$, so the bundle is associated to the orthonormal frame bundle by the representation $SO(n) \to \operatorname{Aut}(\mathrm{Cl}_{n})$ of the structure group on the Clifford algebra; the connection is the associated connection of the frame bundle, and the compatibility with the multiplication is the $SO(n)$-equivariance of the Clifford product, as in the functoriality of *The Clifford Algebra* and the associated-bundle construction of *Fibre Bundles, Connections and Curvature*.
+**Proof.** The Clifford algebra of a vector space with a quadratic form is the quotient of the tensor algebra, and the construction is natural in the pair $(T_xM, g_x)$, so the bundle is associated to the orthonormal frame bundle by the representation $SO(n) \to \operatorname{Aut}(\mathrm{Cl}_{n})$ of the structure group on the Clifford algebra; the connection is the associated connection of the frame bundle, and the compatibility with the multiplication is the $SO(n)$-equivariance of the Clifford product, as in the functoriality of *Clifford Algebras* and the associated-bundle construction of *Fibre Bundles, Connections and Curvature*.
 
 **Definition.** A **Clifford module bundle** on $(M,g)$ is a complex vector bundle $\mathcal{S} \to M$ with a bundle map
 $$
@@ -37,7 +37,7 @@ such that $c(v)^2 = -g(v,v)\operatorname{id}$ in each fibre; equivalently, a bun
 $$
 \xi : P_{\operatorname{Spin}}(M) \longrightarrow P_{SO}(M)
 $$
-that is $\operatorname{Spin}(n)$-equivariant over the double covering $\operatorname{Spin}(n) \to SO(n)$ of *The Clifford, Pin and Spin Groups*: the map $\xi$ intertwines the right actions, $\xi(p \cdot \tilde{g}) = \xi(p) \cdot \rho(\tilde{g})$ for the covering homomorphism $\rho$. An oriented Riemannian manifold is a **spin manifold** if it admits a spin structure.
+that is $\operatorname{Spin}(n)$-equivariant over the double covering $\operatorname{Spin}(n) \to SO(n)$ of *The Clifford, Pin and Spin Groups with Signed Inner Conjugation*: the map $\xi$ intertwines the right actions, $\xi(p \cdot \tilde{g}) = \xi(p) \cdot \rho(\tilde{g})$ for the covering homomorphism $\rho$. An oriented Riemannian manifold is a **spin manifold** if it admits a spin structure.
 
 **Proposition.** A spin structure exists if and only if the second Stiefel–Whitney class vanishes,
 $$
@@ -51,7 +51,7 @@ and when it exists the set of spin structures is a torsor over $H^1(M; \mathbb{Z
 
 ### The Spinor Bundle and Clifford Multiplication
 
-**Definition.** Let $(M,g)$ be a spin manifold of dimension $n$ with spin structure $P_{\operatorname{Spin}}(M)$, and let $\Delta_n$ be the complex spin representation of $\operatorname{Spin}(n)$ of *Spin Representations and Clifford Modules*. The **spinor bundle** is the associated bundle
+**Definition.** Let $(M,g)$ be a spin manifold of dimension $n$ with spin structure $P_{\operatorname{Spin}}(M)$, and let $\Delta_n$ be the complex spin representation of $\operatorname{Spin}(n)$ of *Spin Representations and Clifford Modules with Inner Conjugation*. The **spinor bundle** is the associated bundle
 $$
 \mathcal{S} = P_{\operatorname{Spin}}(M) \times_{\operatorname{Spin}(n)} \Delta_n ,
 $$
@@ -63,7 +63,7 @@ is defined by the Clifford action of $v$ on the spin module, and it is a bundle 
 
 **Proposition.** For $n$ even the Clifford multiplication exchanges the two halves, $c(v) : \mathcal{S}^\pm \to \mathcal{S}^\mp$, and for $n$ odd there is no such splitting over the algebra; the spinor bundle is a Clifford module bundle and, when the complex dimension permits, its endomorphism bundle is the Clifford bundle, $\operatorname{End}(\mathcal{S}) \cong \mathrm{Cl}(TM)\otimes\mathbb{C}$ for $n$ even, resulting in the irreducibility of the spin module.
 
-**Proof.** The statements are the module theory of the spin representations of *Spin Representations and Clifford Modules*: the half-spin modules are the two simple modules of the even Clifford algebra, the odd elements exchange them, and for $n$ even the complex Clifford algebra is a full matrix algebra over $\Delta_n$, so the endomorphisms of the spin module are the Clifford algebra itself.
+**Proof.** The statements are the module theory of the spin representations of *Spin Representations and Clifford Modules with Inner Conjugation*: the half-spin modules are the two simple modules of the even Clifford algebra, the odd elements exchange them, and for $n$ even the complex Clifford algebra is a full matrix algebra over $\Delta_n$, so the endomorphisms of the spin module are the Clifford algebra itself.
 
 **Example (the low-dimensional cases).** For $n = 3$ the spinor bundle has rank $2$ and $\operatorname{Spin}(3) = SU(2)$; the Clifford multiplication is by the Pauli-type matrices. For $n = 4$ the spinor bundle splits into two rank-$2$ bundles; the self-dual and anti-self-dual Weyl curvature act on the two halves. For $n = 2$ the spin module is two-dimensional and $\operatorname{Spin}(2) = U(1)$, so both chiral halves of the spinor bundle are complex line bundles; the spin structures on a Riemann surface are the square roots $L$ of the canonical bundle, $L^{\otimes 2} = K$, and the Cauchy–Riemann operator on a spin surface is the $\bar\partial$-type operator twisted by $L$.
 

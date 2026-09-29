@@ -123,7 +123,7 @@ the pair $(u,v)$ being determined up to $(u,v)\mapsto(\lambda u,\lambda^{-1}v)$.
 $$
 u=\binom{M_{1q}}{M_{2q}},\qquad v^{T}=\frac{1}{M_{pq}}\begin{pmatrix}M_{p1}&M_{p2}\end{pmatrix},
 $$
-one has $(uv^{T})_{ij}=M_{iq}M_{pj}/M_{pq}=M_{ij}$, so $M=uv^{T}$, and $u\neq0$ because its $p$-th entry is $M_{pq}\neq0$. A different pivot gives a pair differing by precisely the rescaling: the $j$-th columns of $uv^{T}=u'v'^{T}$ give $u'=\lambda u$ for $\lambda=v_{j}/v'_{j}\neq0$, and the remaining entries give $v'=\lambda^{-1}v$. $\square$
+one has $(uv^{T})_{ij}=M_{iq}M_{pj}/M_{pq}=M_{ij}$, so $M=uv^{T}$, and $u\neq0$ because its $p$-th entry is $M_{pq}\neq0$. A different pivot gives a pair differing by precisely the rescaling: the $j$-th columns of $uv^{T}=u'(v')^{T}$ give $u'=\lambda u$ for $\lambda=v_{j}/v'_{j}\neq0$, and the remaining entries give $v'=\lambda^{-1}v$.
 
 **Worked example.** For $\tilde{Q}=e_2+ie_3$ the image is $\Phi(\tilde{Q})=\begin{pmatrix}1&-1\\1&-1\end{pmatrix}$, of rank one; the pivot $M_{11}=1$ gives $u=(1,1)^{T}$, $v=(1,-1)^{T}$, and the pivot $M_{12}=-1$ gives $u=(-1,-1)^{T}$, $v=(-1,1)^{T}$, the same pair rescaled by $\lambda=-1$.
 
@@ -287,11 +287,11 @@ $$
 
 where the inner transposition passes through the two factors because $\epsilon^{-1} = \epsilon^{\mathsf{T}}$ and hence $(\epsilon M \epsilon^{-1})^{\mathsf{T}} = \epsilon M^{\mathsf{T}} \epsilon^{-1}$ for every $M$. Since $\epsilon^{2} = -I$ and $(-I)^{-1} = -I$, the two outer factors multiply to $I$, so $\Phi(\tilde{Q}^\dagger) = \overline{\Phi(\tilde{Q})}^{\mathsf{T}} = \Phi(\tilde{Q})^\dagger$. The statement for $\flat$ is the definition $\flat = -\dagger$.
 
-**Proposition (the congruence of a unit).** For every unit $\tilde{Q}$ and every $x$,
+**Proposition (the congruence of a unit).** For every unit $\tilde{Q}$ and every $\tilde U$,
 $$
-\Phi\bigl(\tilde{Q}x\tilde{Q}^{\dagger}\bigr)=\Phi(\tilde{Q})\,\Phi(x)\,\Phi(\tilde{Q})^{\dagger},
+\Phi\bigl(\tilde{Q}\tilde U\tilde{Q}^{\dagger}\bigr)=\Phi(\tilde{Q})\,\Phi(\tilde U)\,\Phi(\tilde{Q})^{\dagger},
 $$
-read off from the multiplicativity of $\Phi$ and from $\Phi(\tilde{Q}^{\dagger})=\Phi(\tilde{Q})^{\dagger}$. On the unit-norm slice $\Phi(\tilde{Q})$ lies in $SL(2,\mathbb{C})$, and the identity is the action of that group on the matrix algebra by $*$-congruence: it preserves the Hermitian matrices as a set, it multiplies the determinant by $\lvert N(\tilde{Q})\rvert^{2}$, and it moves the null cone transitively. The rank of $\Phi(x)$, the modulus of the determinant $\lvert N(x)\rvert$ and the Hermitian signature of the image are its invariants. A congruence preserves the Hermitian matrices exactly when its matrix is unitary up to a scalar, so those congruences form the projective unitary group $PU(2)=PSU(2)\cong SO(3)$.
+read off from the multiplicativity of $\Phi$ and from $\Phi(\tilde{Q}^{\dagger})=\Phi(\tilde{Q})^{\dagger}$. On the unit-norm slice $\Phi(\tilde{Q})$ lies in $SL(2,\mathbb{C})$, and the identity is the action of that group on the matrix algebra by $*$-congruence: it preserves the Hermitian matrices as a set, it multiplies the determinant by $\lvert N(\tilde{Q})\rvert^{2}$, and it moves the null cone transitively. The rank of $\Phi(\tilde U)$, the modulus of the determinant $\lvert N(\tilde U)\rvert$ and the Hermitian signature of the image are its invariants. A congruence preserves the Hermitian matrices exactly when its matrix is unitary up to a scalar, so those congruences form the projective unitary group $PU(2)=PSU(2)\cong SO(3)$.
 
 ## The Six Subspaces in Matrix Form
 
@@ -384,28 +384,28 @@ E_{11} = \Phi(\tilde\Pi_1) = \begin{pmatrix} 1 & 0 \\ 0 & 0 \end{pmatrix}, \qqua
 E_{22} = \Phi(\tilde\Pi_2) = \begin{pmatrix} 0 & 0 \\ 0 & 1 \end{pmatrix},
 $$
 $$
-E_{12} = \Phi(x), \qquad E_{21} = \Phi(y), \qquad
-x = \frac{i e_1 - e_2}{2}, \qquad y = \frac{i e_1 + e_2}{2},
+E_{12} = \Phi(\tilde U), \qquad E_{21} = \Phi(\tilde Y), \qquad
+\tilde U = \frac{i e_1 - e_2}{2}, \qquad \tilde Y = \frac{i e_1 + e_2}{2},
 $$
 
-so that $\{\tilde\Pi_1, x, y, \tilde\Pi_2\}$ is a $\mathbb{C}$-basis of $\mathbb{B}$ and the multiplication is the table of the matrix units,
+so that $\{\tilde\Pi_1, \tilde U, \tilde Y, \tilde\Pi_2\}$ is a $\mathbb{C}$-basis of $\mathbb{B}$ and the multiplication is the table of the matrix units,
 
 $$
-\tilde\Pi_1x = x = x\tilde\Pi_2, \qquad \tilde\Pi_2y = y = y\tilde\Pi_1, \qquad xy = \tilde\Pi_1, \qquad yx = \tilde\Pi_2,
+\tilde\Pi_1\tilde U = \tilde U = \tilde U\tilde\Pi_2, \qquad \tilde\Pi_2\tilde Y = \tilde Y = \tilde Y\tilde\Pi_1, \qquad \tilde U\tilde Y = \tilde\Pi_1, \qquad \tilde Y\tilde U = \tilde\Pi_2,
 $$
 
-together with $x\tilde\Pi_1 = \tilde\Pi_2x = \tilde\Pi_1y = 0$, $y\tilde\Pi_2 = 0$, and $x^2 = y^2 = 0$.
+together with $\tilde U\tilde\Pi_1 = \tilde\Pi_2\tilde U = \tilde\Pi_1\tilde Y = 0$, $\tilde Y\tilde\Pi_2 = 0$, and $\tilde U^2 = \tilde Y^2 = 0$.
 
 The matrix units group the basis into one-sided ideals. The two **left ideals** $\mathbb{B}\tilde\Pi_1, \mathbb{B}\tilde\Pi_2$ are the column spaces and the two **right ideals** $\tilde\Pi_1\mathbb{B}, \tilde\Pi_2\mathbb{B}$ are the row spaces, and
 
 $$
-\mathbb{B} = \mathbb{B}\tilde\Pi_1 \oplus \mathbb{B}\tilde\Pi_2 = (\mathbb{C}\tilde\Pi_1 \oplus \mathbb{C}y) \oplus (\mathbb{C}x \oplus \mathbb{C}\tilde\Pi_2),
+\mathbb{B} = \mathbb{B}\tilde\Pi_1 \oplus \mathbb{B}\tilde\Pi_2 = (\mathbb{C}\tilde\Pi_1 \oplus \mathbb{C}\tilde Y) \oplus (\mathbb{C}\tilde U \oplus \mathbb{C}\tilde\Pi_2),
 $$
 $$
-\mathbb{B} = \tilde\Pi_1\mathbb{B} \oplus \tilde\Pi_2\mathbb{B} = (\mathbb{C}\tilde\Pi_1 \oplus \mathbb{C}x) \oplus (\mathbb{C}y \oplus \mathbb{C}\tilde\Pi_2).
+\mathbb{B} = \tilde\Pi_1\mathbb{B} \oplus \tilde\Pi_2\mathbb{B} = (\mathbb{C}\tilde\Pi_1 \oplus \mathbb{C}\tilde U) \oplus (\mathbb{C}\tilde Y \oplus \mathbb{C}\tilde\Pi_2).
 $$
 
-The two groupings of the same four basis elements differ: the Peirce decomposition groups $\tilde\Pi_1$ with $x$ and $\tilde\Pi_2$ with $y$, whereas the left-ideal decomposition groups $\tilde\Pi_1$ with $y$ and $\tilde\Pi_2$ with $x$. Each left ideal is two-dimensional over $\mathbb{C}$ and isomorphic to the simple module $V$; each right ideal is isomorphic to the dual $V^{*}$.
+The two groupings of the same four basis elements differ: the Peirce decomposition groups $\tilde\Pi_1$ with $\tilde U$ and $\tilde\Pi_2$ with $\tilde Y$, whereas the left-ideal decomposition groups $\tilde\Pi_1$ with $\tilde Y$ and $\tilde\Pi_2$ with $\tilde U$. Each left ideal is two-dimensional over $\mathbb{C}$ and isomorphic to the simple module $V$; each right ideal is isomorphic to the dual $V^{*}$.
 
 The minimal left ideals are parametrized by the projective line. For a $\mathbb{C}$-subspace $W \subseteq V = \mathbb{C}^2$ put
 

@@ -22,7 +22,7 @@ An **algebra over a field** $F$ is an $F$-module with a bilinear product; it is 
 | Lie algebra | an anticommutative product satisfying the Jacobi identity; not associative | *Lie Algebras* |
 | Jordan algebra | a commutative product satisfying the Jordan identity; not associative | *Jordan Algebras* |
 | Non-example: a non-associative algebra | fails associativity: the octonions and the Lie algebras are the examples | *Octonion Algebra* |
-| Non-example: a non-unital algebra | fails to have an identity: the even part of a Clifford algebra with a nontrivial radical | *The Clifford Algebra* |
+| Non-example: a non-unital algebra | fails to have an identity: the even part of a Clifford algebra with a nontrivial radical | *Clifford Algebras* |
 
 ## Associative Algebras and Their Invariants
 
@@ -67,7 +67,7 @@ The tensor algebra $T(V)$ is the free associative algebra on a vector space, and
 | Free algebra | infinite-dimensional for $\dim V \geq 1$; the non-commutative polynomial algebra | *Tensor Powers and the Free Algebra* |
 | Symmetric algebra $\operatorname{Sym}(V)$ | the polynomial algebra on $\dim V$ generators; centre the whole algebra | *The Symmetric Algebra* |
 | Exterior algebra $\Lambda(V)$ | dimension $2^{\dim V}$; graded-commutative; not commutative for $\dim V \geq 2$ | *The Exterior Algebra* |
-| Clifford algebra $\mathrm{Cl}(V,q)$ | dimension $2^{\dim V}$; centre computed from the volume element; a $\mathbb{Z}/2$-grading | *The Clifford Algebra* |
+| Clifford algebra $\mathrm{Cl}(V,q)$ | dimension $2^{\dim V}$; centre computed from the volume element; a $\mathbb{Z}/2$-grading | *Clifford Algebras* |
 | Universal enveloping algebra $U(\mathrm{G})$ | infinite-dimensional; centre the Casimir-type elements; by PBW a filtered deformation of $\operatorname{Sym}(\mathrm{G})$ | *Representations of Lie Algebras* |
 | Weyl algebra $A_1$ | infinite-dimensional; centre $k$; the algebra of polynomial differential operators, with $yx - xy = 1$ | *Quotients of the Tensor Algebra* |
 | Quotients giving the number systems | $\mathbb{R}$, $\mathbb{C}$, $\mathbb{D}$ and $\mathbb{H}$ as quotients of $T(V)$ | *Quotients of the Tensor Algebra* |

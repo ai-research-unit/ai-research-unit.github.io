@@ -421,8 +421,7 @@ pourtant operateurs ?
 
 qu'est ce que C2
 
--1 vs dagger : quoi -1, theory ? 
-dagger C ? H ?
+
 
 
 
@@ -435,6 +434,38 @@ Chirality
 
 
 Antilinearity
+
+
+
+
+
+
+
+Three things I did not expect, all verified, all now written as theorems:
+
+A two-sided operator is never skew-adjoint unless it is zero. An anti-Hermitian parameter gives a self-adjoint operator, because T_{-x}=T_x. So the two-sided family gives no generators; the generators are one-sided. This contradicts the obvious guess.
+
+
+Both sectors give one family of observables. T_{ix}=T_x, so the informational and material parameters produce the same operators. The maths statement is that the sector label is invisible; the physics statement is that a sandwich acts on states, not amplitudes.
+
+
+The dagger negates the vector coefficients: x† = x₀*e₀ − x₁*e₁ − x₂*e₂ − x₃*e₃. Therefore ie₃ is Hermitian and e₃ anti-Hermitian. I got this wrong mid-way and caught it; the corrected form is in both articles and in the context files.
+
+The self-adjointness criterion carries a central phase (x† = ωx, |ω|=1) and the automorphism criterion is x†x = e₀, not "x†x central" — a scaled unitary has central x†x and is not an automorphism.
+
+Verification was numeric, in a scratch matrix model and a coefficient model, to machine precision. It is not a proof assistant, and I did not run a site build.
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -490,9 +521,7 @@ One subtlety. Over an indefinite form the norm is itself isotropic, so
 N(x) = ±1 alone is not enough and Ad~_x(V) ⊆ V must stay in the definition.
 The corpus records the counterexample in Cl(1,1) ≅ M_2(R).
 
-Owners in the corpus — nothing new needs writing: The Clifford, Pin and
-Spin Groups owns Pin, Γ, the twisted adjoint and the norm; Versors, Rotors
-and the Sandwich Action owns the sandwich; Biquaternion Rotations and
+Owners in the corpus — nothing new needs writing: The Clifford, Pin and Spin Groups with Signed Inner Conjugation owns Pin, Γ, the twisted adjoint and the norm; Versors, Rotors and the Sandwich Action with Signed Inner Conjugation owns the sandwich; Biquaternion Rotations and
 Lorentz Transformations owns the biquaternion sandwich and
 B_1^× ≅ Spin(1,3). The "why the dagger and not the inverse" argument in
 the operator theory article is the same fact in biquaternion dress.
@@ -502,7 +531,6 @@ the operator theory article is the same fact in biquaternion dress.
 
 
 
-So the 2 parts Topology on Clifford Algebras over commutative rings , and Topology on Clifford Algebras over commutative involutive rings ? 
 
 
 
@@ -511,9 +539,9 @@ So the 2 parts Topology on Clifford Algebras over commutative rings , and Topolo
 
 
 
-INTRODUCE SANDWICH VERY GENERALLY
-usually use -1
-but better if involutive
+
+
+
 
 
 
@@ -643,6 +671,978 @@ not an involution. It is a group involution on the units.
 
 
 
+
+in case there is no involution, we can still define the sandwich, but only with the inverse, only on a part of the algebra where elements are invertible ?  if there is involution, we can define the sand wich with the dagger, and we get extended properties ?
+text
+Yes. Your intuition is exactly right. Let me make it precise.
+
+---
+
+## Part 1: No Involution — Sandwich with the Inverse
+
+    SETTING
+        Commutative ring R (no involution).
+        Clifford algebra Cl(V,q).
+        No dagger available.
+
+    SANDWICH
+        v ↦ α(x) v x^{-1}     (twisted adjoint)
+        v ↦ x v x^{-1}        (untwisted, for even x)
+
+    DOMAIN
+        Only defined when x is invertible.
+        More precisely, for the twisted adjoint to preserve V,
+        x must lie in the Clifford group Γ(V,q).
+        For the untwisted sandwich on even elements, x must be a
+        unit (or at least an even unit preserving V).
+
+    PROPERTIES
+        - Purely algebraic: no coefficient conjugation.
+        - Works over any commutative ring.
+        - Gives reflections (odd x) and rotations (even x).
+        - The map Γ → O(V,q) is a group homomorphism.
+        - Kernel: the scalars in Γ.
+        - Pin/Spin: the norm-one slice of Γ.
+
+    SO
+        Inverse-sandwich: defined only on the invertible part.
+        Gives orthogonal geometry: O(V,q), SO(V,q).
+        No Hermitian structure. No unitary slice. No positivity.
+
+---
+
+## Part 2: With Involution — Sandwich with the Dagger
+
+    SETTING
+        Commutative *-ring (R, σ).
+        Clifford algebra Cl(V,q).
+        Dagger available: x† = σ(α(x^r)).
+
+    SANDWICH
+        v ↦ α(x) v x†      (twisted dagger sandwich)
+        v ↦ x v x†         (untwisted, for even x)
+
+    DOMAIN
+        Defined for EVERY x ∈ Cl(V,q), invertible or not.
+        But for the sandwich to preserve V and the quadratic form,
+        x must satisfy the unitary condition:
+            x† x = 1     (unitary slice)
+        or, more generally, x† x ∈ Z(R) (central).
+
+    PROPERTIES
+        - Hermitian: conjugates coefficients via σ.
+        - Defined on the whole algebra.
+        - On the unitary slice, x† = x^{-1}, so the dagger sandwich
+          reduces to the inverse sandwich.
+        - Gives unitary geometry: U(V,q), SU(V,q).
+        - Connects to C*-algebras, positivity, spectral theory.
+        - Over C, the unitary slice is compact (e.g., SU(2) inside
+          SL(2,C)).
+        - The corpus sandwich H_Q̃(x) = Q̃ x Q̃† is exactly this.
+
+    SO
+        Dagger-sandwich: defined everywhere.
+        On the unitary slice, it IS the inverse sandwich.
+        Gives Hermitian geometry: unitary groups, positivity.
+        Extended properties: spectral theory, GNS, C*-structure.
+
+---
+
+## The Two Sandwiches Side by Side
+
+    ASPECT               INVERSE SANDWICH           DAGGER SANDWICH
+    Formula              α(x) v x^{-1}              α(x) v x†
+    Domain               invertible x only          all x
+    Preserves V when     x ∈ Γ                     x†x = 1 (unitary)
+    Gives                O(V,q), SO(V,q)            U(V,q), SU(V,q)
+    Coefficients         untouched                  conjugated by σ
+    Geometry             orthogonal                 Hermitian
+    Algebra              any commutative ring        commutative *-ring
+    Analytic             no                         C*-algebra, spectra
+
+---
+
+## The Relationship Between Them
+
+    On the unitary slice:
+        x† x = 1   ⟹   x† = x^{-1}.
+    So the dagger sandwich becomes the inverse sandwich:
+
+        x v x† = x v x^{-1}.
+
+    This is the intersection of the two theories.
+    The dagger sandwich extends the inverse sandwich from the
+    invertible part to the whole algebra, and from orthogonal
+    geometry to Hermitian geometry.
+
+    Over R with σ = id:
+        x† = x̄ (Clifford conjugation).
+        Unitary slice: x† x = 1 becomes N(x) = 1.
+        Dagger sandwich = inverse sandwich on the norm-one slice.
+
+    Over C with σ = complex conjugation:
+        x† = complex conjugate of x̄.
+        Unitary slice: x† x = 1 defines SU(n).
+        Dagger sandwich = inverse sandwich on SU(n), but defined
+        everywhere.
+
+---
+
+## Summary
+
+    NO INVOLUTION
+        Sandwich uses the inverse.
+        Only on invertible elements (Clifford group).
+        Gives orthogonal geometry: O(V,q), SO(V,q).
+        Pin/Spin are the norm-one slice.
+
+    WITH INVOLUTION
+        Sandwich uses the dagger.
+        Defined on the whole algebra.
+        On the unitary slice, dagger = inverse.
+        Gives Hermitian geometry: U(V,q), SU(V,q).
+        Extended properties: positivity, spectra, C*-structure.
+
+    The dagger sandwich is the general case.
+    The inverse sandwich is the special case on the unitary slice.
+    Without an involution, you only have the inverse sandwich.
+
+
+
+
+
+
+
+
+
+
+
+
+You have spotted a real tension. Let me resolve it precisely.
+
+The resolution is that a biquaternion plays TWO DIFFERENT ROLES,
+and the polar decomposition belongs to only one of them.
+
+---
+
+## Role 1: OPERATOR (invertible biquaternion)
+
+    An invertible biquaternion Q ∈ GL(2,C) has N(Q) ≠ 0.
+    It can be written uniquely as
+
+        Q = R · ρ,
+
+    where R ∈ Spin(1,3) (or SL(2,C)) is a rotor and ρ > 0 is a
+    positive real scalar (the magnitude). This is the polar
+    decomposition.
+
+    It exists exactly because Q is invertible.
+    If Q is on the cone N(Q) = 0, it is a zero divisor, not
+    invertible, and no such decomposition exists.
+
+    This is what you know: polar decomposition ⟺ N ≠ 0.
+
+---
+
+## Role 2: STATE (spinor)
+
+    A spinor ψ is an element of a minimal left ideal I_r ⊆ B.
+    Every element of I_r has N = 0.
+    So every spinor is a zero divisor.
+    So every spinor lies on the cone.
+
+    A spinor is NOT an operator. It does not act on anything.
+    It is the OBJECT that operators act on.
+    It is a state in the spin representation.
+
+    Therefore:
+
+        - A spinor has N = 0.
+        - A spinor is on the cone.
+        - A spinor has NO polar decomposition.
+        - This is not a contradiction. It is a category difference.
+
+---
+
+## Why the confusion arises
+
+    Biquaternions are used for two things:
+
+        (a) as GROUP ELEMENTS (rotors, Lorentz transformations),
+            which are invertible and have polar decompositions;
+
+        (b) as SPINORS (states, elements of minimal left ideals),
+            which are zero divisors and have no polar decomposition.
+
+    The polar decomposition is a property of the GROUP.
+    It is not a property of the MODULE.
+
+    In physics language:
+
+        - Operators (transformations) have polar decompositions.
+        - States (vectors in Hilbert space) do not.
+        - Spinors are states, not operators.
+
+---
+
+## The analogy with quantum mechanics
+
+    In quantum mechanics:
+
+        - Operators (Hamiltonian, momentum, etc.) are invertible
+          or not, and can have spectral decompositions.
+
+        - States (vectors |ψ⟩ in Hilbert space) are just vectors.
+          They do not have polar decompositions. They are the
+          objects that operators act on.
+
+    In the biquaternion algebra:
+
+        - Invertible biquaternions (N ≠ 0) are like operators.
+          They have polar decompositions.
+
+        - Spinors (N = 0) are like states.
+          They do not have polar decompositions.
+
+---
+
+## The Hermitian norm is different
+
+    There is a second norm on the biquaternion algebra: the
+    Hermitian norm
+
+        ||Q||² = Q† Q,
+
+    which is positive definite for Q ≠ 0. With respect to this
+    norm, a spinor ψ satisfies
+
+        ψ† ψ ≠ 0
+
+    even though N(ψ) = ψ ψ̄ = 0.
+
+    So a spinor can be normalized in the Hermitian sense:
+
+        ψ / ||ψ||,
+
+    but it still has N = 0 and still lies on the cone.
+
+    The polar decomposition Q = R ρ uses the Clifford norm N,
+    not the Hermitian norm. It requires N(Q) ≠ 0. A spinor fails
+    this, so it has no such decomposition.
+
+---
+
+## Summary
+
+    QUESTION:  A biquaternion has a polar decomposition only if it
+               is NOT on the cone N = 0. So the corresponding spinor
+               IS on the cone?
+
+    ANSWER:    Yes. A spinor is on the cone. It has N = 0. It is a
+               zero divisor. It has NO polar decomposition.
+
+               But this is not a contradiction, because a spinor
+               is NOT an operator. It is a STATE.
+
+               - Operators (invertible biquaternions, N ≠ 0) have
+                 polar decompositions.
+
+               - States (spinors, N = 0) do not. They are the
+                 objects that operators act on.
+
+               The polar decomposition is a property of the group
+               GL(2,C) (or SL(2,C)), not of the module of spinors.
+
+               A spinor is a zero divisor because it is a state,
+               not because something is wrong. It lies on the cone
+               because the spinor module is a minimal left ideal,
+               and every minimal left ideal is contained in the cone.
+
+
+
+
+
+
+
+
+You are right to push on this. A spinor DOES look like a one-sided
+operator, because every element of the algebra can act on the left.
+The resolution is that being a one-sided operator is a secondary
+role, and the operator is degenerate.
+
+---
+
+## Every element is both a state and an operator
+
+    In an algebra A, every element a ∈ A can be viewed in two ways:
+
+        STATE:      a is an element of A (a "vector" in the algebra)
+        OPERATOR:   a acts by left multiplication,  L_a(x) = a x.
+
+    This is true for every element of A, not just spinors.
+    It is the same in quantum mechanics:
+
+        |ψ⟩           a state (a vector in Hilbert space)
+        |ψ⟩⟨ψ|        a rank-one operator (a density matrix)
+
+    Both are built from the same object. The roles are different.
+
+---
+
+## A spinor as a one-sided operator
+
+    Let ψ ∈ I_r ⊆ B ≅ M₂(C).
+    As an element of the algebra, ψ defines a left multiplication
+    operator
+
+        L_ψ : B → B,    L_ψ(x) = ψ x.
+
+    Since ψ has rank ≤ 1 (it lies in a minimal left ideal, so its
+    matrix has rank 1 or 0), the operator L_ψ has rank 2 on the
+    4-dimensional algebra B. So:
+
+        L_ψ is a DEGENERATE operator. It is not invertible.
+        L_ψ has no polar decomposition in the usual sense.
+        L_ψ is a zero divisor as an operator.
+
+    So yes: a spinor IS a one-sided operator, but a degenerate one.
+    It is not the kind of operator that has a polar decomposition.
+
+---
+
+## The spin representation uses a DIFFERENT operator
+
+    The spin representation is
+
+        ρ : Spin(V,q) → GL(S),    ρ(R)ψ = Rψ.
+
+    Here the OPERATOR is R ∈ Spin(V,q), which is INVERTIBLE:
+        N(R) = 1, so R has a polar decomposition (in fact R is
+        already unitary in the appropriate sense).
+
+    The STATE is ψ ∈ S, which is a zero divisor.
+
+    So in the spin representation:
+
+        - The operator is R (invertible, has polar decomposition).
+        - The state is ψ (zero divisor, on the cone).
+
+    The spinor ψ is NOT the operator in this picture. It is the
+    object the operator acts on.
+
+    Of course, ψ can ALSO be viewed as an operator L_ψ acting on
+    the algebra. But that is a different action, and L_ψ is
+    degenerate. It is not the spin representation.
+
+---
+
+## The two roles, separated
+
+    ROLE 1: STATE
+        ψ ∈ I_r ⊆ B.
+        Acts on: nothing (it is the object).
+        Norm: N(ψ) = 0 (on the cone).
+        Polar decomposition: none.
+        This is the primary role of a spinor.
+
+    ROLE 2: OPERATOR
+        L_ψ : B → B,  L_ψ(x) = ψ x.
+        Acts on: the algebra B (or on other ideals).
+        Rank: 2 (degenerate on 4-dimensional B).
+        Polar decomposition: none (not invertible).
+        This is a secondary role.
+
+    The spin representation uses:
+
+        OPERATOR: R ∈ Spin(V,q)  (invertible, N(R) = 1).
+        STATE:    ψ ∈ I_r          (zero divisor, N(ψ) = 0).
+
+---
+
+## Why the confusion is natural
+
+    In the algebra B, every element is simultaneously a state and
+    an operator. There is no intrinsic label "this is a state" or
+    "this is an operator." The label comes from the ROLE you assign
+    in a given construction.
+
+    In the spin representation:
+
+        - Rotors R are used as OPERATORS.
+        - Spinors ψ are used as STATES.
+
+    But ψ can also be used as an operator L_ψ. That does not make
+    it a rotor. It makes it a degenerate left multiplication
+    operator, which is a different thing.
+
+    The polar decomposition belongs to the OPERATOR role of
+    invertible elements (rotors, Lorentz transformations). It does
+    not apply to the STATE role of spinors.
+
+---
+
+## Summary
+
+    QUESTION:  A spinor looks like a one-sided operator. Is it?
+
+    ANSWER:    Yes, in the sense that every element of the algebra
+               defines a left multiplication operator L_ψ.
+               But this operator is DEGENERATE: ψ is on the cone,
+               so L_ψ is not invertible, and it has no polar
+               decomposition.
+
+               In the spin representation, the operator is the
+               rotor R (invertible, N(R) = 1), and the spinor ψ
+               is the state (zero divisor, N(ψ) = 0).
+
+               So a spinor can be VIEWED as a one-sided operator,
+               but a degenerate one. Its primary role is as a
+               state. The polar decomposition belongs to the
+               invertible operators (rotors), not to the states
+               (spinors).
+
+
+
+               
+
+               Correct. Spinors are NOT the operators. They are the objects acted upon.
+
+---
+
+## What spinors are
+
+    A spinor ψ is an element of a minimal left ideal S ⊆ Cl(V,q).
+    It has N(ψ) = 0, so it is a zero divisor.
+    It is not invertible.
+    It has no polar decomposition.
+    It is a DEGENERATE object in the algebra.
+
+    Its role: STATE. It is what the operators act on.
+
+---
+
+## What the operators are
+
+    SANDWICH OPERATOR
+        Built from x ∈ Pin/Spin (invertible).
+        Φ_x(y) = θ(x) y c(x)
+               = L_{θ(x)} ∘ R_{c(x)}(y).
+
+    ONE-SIDED OPERATORS
+        L_{θ(x)}(y) = θ(x) y,      built from x ∈ Pin/Spin.
+        R_{c(x)}(y) = y c(x),      built from x ∈ Pin/Spin.
+
+    Both factors are built from x, which is a versor (invertible).
+    They are NOT built from spinors.
+
+---
+
+## What spinors do
+
+    SPINOR AS STATE
+        ψ ∈ S.
+        The rotor R acts on it by left multiplication:
+            ψ ↦ R ψ = L_R(ψ).
+        Here R is the operator, ψ is the state.
+
+    SPINOR AS DEGENERATE OPERATOR (secondary role)
+        ψ can also be viewed as a left multiplication operator:
+            L_ψ : x ↦ ψ x.
+        But N(ψ) = 0, so L_ψ is not invertible.
+        It has no polar decomposition.
+        It is degenerate.
+        This is NOT the role it plays in the sandwich construction.
+
+---
+
+## The separation
+
+    ROLE          OBJECT        PROPERTIES
+    Operator      x ∈ Pin/Spin  invertible, N(x) = ±1
+    Sandwich      Φ_x           two-sided, built from x
+    One-sided     L_{θ(x)}, R_{c(x)}  built from x, invertible
+    State         ψ ∈ S         N(ψ) = 0, zero divisor, degenerate
+
+    Operators: invertible, built from Pin/Spin/rotors.
+    States: degenerate, built from minimal left ideals.
+
+    Spinors are states.
+    They are NOT the operators in the sandwich.
+    They are NOT the one-sided operators.
+    They are the objects those operators act on.
+
+---
+
+## Summary
+
+    QUESTION:  Spinors are not the ones in the sandwich or the
+               one-sided operator. They are degenerate objects?
+
+    ANSWER:    Correct.
+
+               - The sandwich and the one-sided operators are built
+                 from Pin/Spin/rotor elements, which are invertible.
+
+               - Spinors are elements of a minimal left ideal.
+                 They have N(ψ) = 0, so they are zero divisors and
+                 are not invertible.
+
+               - Spinors are the STATES that the operators act on.
+
+               - A spinor can be viewed as a degenerate left
+                 multiplication operator L_ψ, but that is a secondary
+                 role. It is not the operator in the sandwich.
+
+               So yes: spinors are degenerate objects (N = 0,
+               non-invertible), and they are the states, not the
+               operators.
+
+
+
+
+               Yes — spinors are absolutely essential in physics. The fact that they are
+degenerate as elements of the Clifford algebra (Clifford norm N(ψ)=0,
+zero divisors, non-invertible) is an algebraic artifact of embedding them
+inside the algebra as a minimal left ideal. It does NOT make them useless.
+In physics, spinors are used as STATES, not as invertible operators, and
+their physical norm is not the Clifford norm.
+
+---
+
+## 1. The algebraic degeneracy is not the physical norm
+
+    In the Clifford algebra, a spinor ψ lives in a minimal left ideal S.
+    As an element of the algebra, it satisfies
+
+        N(ψ) = ψ ψ̄ = 0.
+
+    So it is a zero divisor.
+
+    But in physics, a spinor is a vector in a REPRESENTATION SPACE
+    (e.g. C^4 for a Dirac spinor). The physical inner product is the
+    Hermitian one:
+
+        ||ψ||² = ψ† ψ > 0.
+
+    The Clifford norm N is not the physical norm. It is an algebraic
+    invariant of the algebra. The physical spinor has a positive-definite
+    (or indefinite, depending on the representation) Hermitian norm.
+    So it is NOT degenerate in the physical sense.
+
+    The degeneracy N(ψ)=0 just means: "as an element of the algebra,
+    ψ is not invertible." But we never need a spinor to be invertible.
+    We need it to be a state that operators act on.
+
+---
+
+## 2. What spinors do in physics
+
+    Spinors are the STATES of fermions:
+
+        - Electrons, quarks, neutrinos are described by spinor fields.
+        - The Dirac equation is a differential equation for a spinor
+          field ψ(x):
+
+              (iγ^μ ∂_μ − m) ψ = 0.
+
+        - Weyl spinors describe chiral fermions (left- and right-handed).
+        - Majorana spinors describe particles that are their own
+          antiparticles.
+        - Supersymmetry pairs bosons with fermions using spinors.
+        - Twistors and spin networks use spinors in geometry.
+
+    In every case, the spinor is a STATE, not an operator. The operators
+    are things like γ^μ, the Dirac operator, creation/annihilation
+    operators, etc. The spinor is what they act on.
+
+---
+
+## 3. Why the algebraic construction uses left ideals
+
+    The algebraic realization of spinors as elements of a minimal left
+    ideal is a mathematical trick to get an irreducible representation
+    of the Clifford algebra. It works beautifully:
+
+        - The Clifford algebra acts on the ideal by left multiplication.
+        - This gives the spin representation.
+        - The spin group sits inside the algebra and acts on the ideal.
+
+    But the physical spinor is not "the element of the algebra." It is
+    the VECTOR IN THE MODULE. The module is the ideal, but the physical
+    interpretation is that the spinor is a state in that module. The fact
+    that the ideal sits inside the algebra and its elements are zero
+    divisors is irrelevant for the physics.
+
+---
+
+## 4. Analogy: vectors in R^3
+
+    A vector v ∈ R^3 can be viewed as a 3×1 column matrix. As a matrix,
+    it is not invertible (it's not square). Does that make vectors useless
+    in physics? No. They are states, positions, velocities. The same with
+    spinors: they are states, not operators.
+
+---
+
+## 5. Summary
+
+    Aspect        Algebra                         Physics
+    Spinor        element of a minimal left ideal state of a fermion
+    Norm          Clifford norm N(ψ)=0            Hermitian norm ||ψ||²>0
+    Invertible?   No (zero divisor)               Not required
+    Role          state in a module                state in a Hilbert space
+    Use           representation theory            fermions, Dirac, Weyl, SUSY
+
+    So: Yes, spinors are of immense use in physics. Their algebraic
+    degeneracy is not a defect; it is simply a feature of the algebraic
+    model. In physics they are the states of fermionic matter, and they
+    are indispensable.
+
+
+
+    contrary to them, the spin are the inversible objects wh can have a polar representation and can be used in one sided operators ?
+
+
+Yes. That is exactly the contrast.
+
+---
+
+## The two classes of objects
+
+    INVERTIBLE OBJECTS                     DEGENERATE OBJECTS
+    (versors, Pin, Spin, rotors)           (spinors)
+    N(x) ≠ 0                                N(ψ) = 0
+    have inverses                           no inverse
+    have polar decomposition                no polar decomposition
+    build one-sided operators               are states acted upon
+    build the sandwich                      are the objects of the sandwich
+
+---
+
+## 1. Invertible objects: versors, Pin, Spin, rotors
+
+    A versor x = v₁ ⋯ v_k has N(x) ≠ 0, so x^{-1} exists.
+    A Pin element has N(x) = ±1.
+    A Spin element / rotor R has N(R) = 1, R even.
+
+    All of them are invertible. All of them have a polar decomposition
+    (over R or C, for the appropriate group). All of them can be used
+    to build one-sided operators:
+
+        L_{θ(x)} : y ↦ θ(x) y
+        R_{c(x)} : y ↦ y c(x)
+
+    and the sandwich
+
+        Φ_x(y) = θ(x) y c(x) = L_{θ(x)} ∘ R_{c(x)}(y).
+
+    For a rotor R:
+
+        L_R : y ↦ R y
+        R_{R^{-1}} : y ↦ y R^{-1}
+        Φ_R(y) = R y R^{-1}.
+
+    The polar decomposition of R (or of any invertible biquaternion)
+    is what makes the sandwich well behaved analytically.
+
+---
+
+## 2. Degenerate objects: spinors
+
+    A spinor ψ ∈ S (minimal left ideal) has N(ψ) = 0.
+    It is a zero divisor. It has no inverse.
+    It has no polar decomposition.
+
+    It is NOT used to build the sandwich or the one-sided operators.
+    It is the STATE that the operators act on:
+
+        ψ ↦ R ψ = L_R(ψ).
+
+    Here R is the operator (invertible), ψ is the state (degenerate).
+
+---
+
+## 3. The polar decomposition
+
+    An invertible biquaternion Q ∈ GL(2,C) has a unique polar
+    decomposition
+
+        Q = R · ρ,
+
+    with R ∈ Spin(1,3) (a rotor) and ρ > 0 a positive scalar.
+    This is exactly the decomposition into a rotation/boost and
+    a magnitude.
+
+    A spinor ψ has N(ψ) = 0, so it has no such decomposition.
+    It is not an operator; it is a state.
+
+---
+
+## 4. Why this matters
+
+    The operators of the theory — the ones that act on vectors,
+    on spinors, on the algebra — are the INVERTIBLE elements:
+
+        - versors (general),
+        - Pin elements (norm ±1),
+        - Spin elements / rotors (even, norm ±1).
+
+    They have inverses, polar decompositions, and they build the
+    one-sided operators and the sandwich.
+
+    The STATES of the theory — the things that are acted upon —
+    are the DEGENERATE elements:
+
+        - spinors (elements of minimal left ideals).
+
+    They have no inverse, no polar decomposition, and they do not
+    build operators. They are the objects of the action.
+
+---
+
+## 5. Summary table
+
+    ASPECT                INVERTIBLE (Spin/rotor)    DEGENERATE (spinor)
+    Clifford norm         N = ±1 or N ≠ 0            N = 0
+    Inverse               exists                     does not exist
+    Polar decomposition   exists                     does not exist
+    One-sided operator    L_R, R_{R^{-1}}            L_ψ (degenerate)
+    Sandwich              Φ_R = L_R ∘ R_{R^{-1}}     not applicable
+    Role                  operator                   state
+    Acts on               vectors, spinors, algebra  nothing (is acted upon)
+    Physics               transformations            fermion states
+
+    So: yes. The Spin group elements (rotors, versors) are the
+    invertible objects. They have polar decompositions. They build
+    the one-sided operators and the sandwich. Spinors are the
+    degenerate states, acted upon by those operators.
+
+
+
+
+    No. The dichotomy is not "spin vs. spinor." It is:
+
+    INVERTIBLE (unit)   vs.   NON-INVERTIBLE (zero divisor)
+
+And within each class, there are many objects. "Spin" and "spinor"
+are only special cases.
+
+---
+
+## The correct classification
+
+    For Cl(V,q) (finite-dimensional, non-degenerate, over R or C):
+
+        Cl(V,q) = UNITS  ⊔  NON-UNITS.
+
+        UNITS:        x with x^{-1} existing.
+        NON-UNITS:    x with no inverse (zero divisors, including 0).
+
+    The Spin group is a SMALL subgroup of the units.
+    A spinor is a special kind of non-unit (element of a minimal left ideal).
+
+---
+
+## What lives among the units
+
+    UNITS include:
+        - nonzero scalars λ ∈ F*
+        - versors x = v₁⋯v_k with N(x) ≠ 0
+        - Clifford group Γ(V,q)
+        - Pin(V,q)         (N = ±1)
+        - Spin(V,q)        (even, N = ±1)
+        - rotors           (even, N = 1)
+
+    "Spin" usually means an element of Spin(V,q).
+    That is a very special unit. Most units are NOT in Spin.
+
+    Example: in B ≅ M₂(C):
+        - Units = GL(2,C) = {det ≠ 0}.
+        - Spin(1,3) ≅ SL(2,C) = {det = 1}.
+        - So most units (det ≠ 0, det ≠ 1) are NOT in Spin.
+        - The scalar 2I is a unit but not in Spin (N = 4 ≠ 1).
+
+---
+
+## What lives among the non-units
+
+    NON-UNITS include:
+        - 0
+        - isotropic vectors v with q(v) = 0
+        - elements of minimal left ideals (spinors)
+        - elements of larger ideals
+        - general zero divisors
+
+    A spinor is an element of a MINIMAL LEFT IDEAL.
+    That is a special kind of non-unit.
+
+    In B ≅ M₂(C):
+        - Non-units = {det = 0} = {0} ∪ {rank 1 matrices}.
+        - Every nonzero rank-1 matrix lies in exactly one minimal
+          left ideal.
+        - So in this case, every nonzero non-unit IS a spinor
+          (element of some minimal left ideal).
+
+    But this is special to M₂(C) (and to simple matrix algebras).
+    In general, there are non-units that are not in any minimal
+    left ideal.
+
+---
+
+## The correct dichotomy
+
+    IN B ≅ M₂(C):
+
+        Every nonzero element is either:
+            (a) invertible (a unit), or
+            (b) rank 1 (a zero divisor, hence a spinor).
+
+        So the dichotomy "unit vs. spinor" holds for NONZERO elements,
+        but "unit" does NOT mean "spin."
+
+    IN GENERAL Cl(V,q):
+
+        Every element is either a unit or a non-unit.
+        A spinor is a special non-unit (element of a minimal left ideal).
+        A spin is a special unit (element of Spin(V,q)).
+
+        But there are units that are not spins, and non-units that
+        are not spinors.
+
+---
+
+## Summary table
+
+    CLASS              EXAMPLES                        IN SPIN?   SPINOR?
+    nonzero scalar     λ ∈ F*, λ² ≠ 1                  no         no
+    versor, N ≠ 1      v w with N(vw) ≠ 1              no         no
+    Pin element        N = ±1                          possibly   no
+    Spin element       even, N = ±1                    YES        no
+    rotor              even, N = 1                     YES        no
+    isotropic vector   q(v) = 0                        no         no
+    spinor             element of minimal left ideal   no         YES
+    zero               0                               no         no
+
+    So:
+        - "Invertible" ≠ "spin."
+        - "Non-invertible" ≠ "spinor."
+        - The correct split is unit vs. non-unit.
+        - Spin and spinor are special cases within each class.
+
+
+
+
+
+        Two different chains, two different additional conditions.
+
+---
+
+## 1. From invertible element to Spin element
+
+    Start with:   x ∈ Cl(V,q) invertible (a unit).
+
+    Step 1:  x ∈ Γ(V,q)   (the Clifford group)
+        Condition:  Ad~_x(V) ⊆ V,
+                    Ad~_x(v) = α(x) v x^{-1}.
+        Meaning:    x acts on V by an isometry.
+
+    Step 2:  x ∈ Pin(V,q)
+        Condition:  N(x) = ±1.
+        Meaning:    the Clifford norm is normalized.
+
+    Step 3:  x ∈ Spin(V,q)
+        Condition:  x ∈ Cl⁰(V,q)   (x is even).
+        Meaning:    x acts on V by a rotation (det = +1).
+
+    So the chain is:
+
+        unit  ⊃  Γ  ⊃  Pin  ⊃  Spin.
+
+    Additional conditions, in order:
+        1. Ad~_x(V) ⊆ V         (Clifford group)
+        2. N(x) = ±1            (Pin)
+        3. x even               (Spin)
+
+    A rotor is a Spin element with the stronger normalization
+    N(R) = 1 (instead of ±1), which is automatic over R when
+    the form is definite.
+
+---
+
+## 2. From degenerate element to spinor
+
+    Start with:   ψ ∈ Cl(V,q) non-invertible (a zero divisor).
+
+    Additional condition:
+        ψ lies in a MINIMAL LEFT IDEAL S ⊆ Cl(V,q).
+
+    Equivalently:
+        ψ = a · p
+        for some a ∈ Cl(V,q) and some primitive idempotent
+        p ∈ Cl(V,q) (p² = p, p ≠ 0, p not a sum of orthogonal
+        idempotents).
+
+    So the chain is:
+
+        non-unit  ⊃  element of a left ideal
+                  ⊃  element of a minimal left ideal = spinor.
+
+    Additional conditions, in order:
+        1. ψ lies in some left ideal of Cl(V,q).
+        2. That left ideal is minimal.
+
+    Equivalently:
+        ψ is a left multiple of a primitive idempotent.
+
+    A spinor is therefore a very special kind of degenerate element:
+        - not every zero divisor lies in a minimal left ideal,
+        - but every element of a minimal left ideal is a spinor.
+
+---
+
+## 3. The two conditions side by side
+
+    INVERTIBLE SIDE                    DEGENERATE SIDE
+    x is a unit                        ψ is a non-unit
+        ↓                                  ↓
+    Ad~_x(V) ⊆ V                       ψ ∈ some left ideal
+        ↓                                  ↓
+    N(x) = ±1                          ψ ∈ a MINIMAL left ideal
+        ↓                                  ↓
+    x even                             ψ is a spinor
+        ↓
+    x ∈ Spin
+
+    The condition on the invertible side is:
+        a normalization of the norm and a parity restriction.
+
+    The condition on the degenerate side is:
+        membership in a MINIMAL left ideal.
+
+---
+
+## 4. Summary
+
+    QUESTION:  What is the additional condition for an invertible
+               element to be a Spin element? What is the additional
+               condition for a degenerate element to be a spinor?
+
+    ANSWER:
+
+        INVERTIBLE → SPIN:
+            x must satisfy
+                (1) Ad~_x(V) ⊆ V        (Clifford group),
+                (2) N(x) = ±1           (Pin),
+                (3) x even              (Spin).
+            Equivalently: x ∈ Spin(V,q).
+
+        DEGENERATE → SPINOR:
+            ψ must lie in a MINIMAL LEFT IDEAL S ⊆ Cl(V,q).
+            Equivalently: ψ = a · p for a primitive idempotent p.
+
+        So:
+            Spin = units ∩ (norm ±1) ∩ even ∩ (preserve V).
+            Spinor = non-units ∩ (minimal left ideal).
 
 
 

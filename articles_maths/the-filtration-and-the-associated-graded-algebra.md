@@ -7,7 +7,7 @@ The Clifford algebra is not graded by the number of its generators, but it is fi
 
 This article develops the filtration, proves the theorem, and separates two statements that are often run together: the filtration of the Clifford algebra exists for every quadratic form, degenerate ones included, and its associated graded algebra is always the exterior algebra; whereas its identification with the cumulative sum of the graded pieces of *The Geometric Product and the Grade Decomposition* requires the form to be non-degenerate. The parallel with the universal enveloping algebra, where the symmetric algebra plays the role that the exterior algebra plays here, closes the article.
 
-The Clifford algebra, its universal property and the defining relation $v^2=q(v)$ are from *The Clifford Algebra*; the basis of products of distinct generators, the $k$-vectors, the multivectors and the volume element are from *Clifford Algebras in Finite Dimensions*; the reduction of a degenerate form to its non-degenerate part and its radical is from *Degenerate Clifford Algebras and the Radical*; the wedge product, the graded-commutativity and the exterior powers are from *The Exterior Algebra* and *Exterior Powers*; the grade decomposition, the grade projection and the symbol map are from *The Geometric Product and the Grade Decomposition*. Nothing owned by those entries is re-derived. The base is a field $F$, the space $V$ is finite-dimensional of dimension $n$, and $q$ is a quadratic form on $V$ with polar form $B$, not assumed non-degenerate until it is stated.
+The Clifford algebra, its universal property and the defining relation $v^2=q(v)$ are from *Clifford Algebras*; the basis of products of distinct generators, the $k$-vectors, the multivectors and the volume element are from *Clifford Algebras in Finite Dimensions*; the reduction of a degenerate form to its non-degenerate part and its radical is from *Degenerate Clifford Algebras and the Radical*; the wedge product, the graded-commutativity and the exterior powers are from *The Exterior Algebra* and *Exterior Powers*; the grade decomposition, the grade projection and the symbol map are from *The Geometric Product and the Grade Decomposition*. Nothing owned by those entries is re-derived. The base is a field $F$, the space $V$ is finite-dimensional of dimension $n$, and $q$ is a quadratic form on $V$ with polar form $B$, not assumed non-degenerate until it is stated.
 
 ## The Length Filtration
 
@@ -97,9 +97,9 @@ So for a non-degenerate form the filtration adds nothing to the grading: the gra
 
 ### The Symbol Map Revisited
 
-**Theorem.** Let $\sigma:\Lambda(V)\to\mathrm{Cl}(V,q)$ be the linear isomorphism of *The Geometric Product and the Grade Decomposition* sending a wedge of vectors to their antisymmetrised product. Then the composition of $\sigma$ with the quotient map $F_k\to\operatorname{gr}_k$ is the Poincaré–Birkhoff–Witt isomorphism, and the two isomorphisms $\Lambda(V)\to\operatorname{gr}\mathrm{Cl}(V,q)$ agree.
+**Theorem.** Let $\mathrm{Alt}:\Lambda(V)\to\mathrm{Cl}(V,q)$ be the linear isomorphism of *The Geometric Product and the Grade Decomposition* sending a wedge of vectors to their antisymmetrised product. Then the composition of $\mathrm{Alt}$ with the quotient map $F_k\to\operatorname{gr}_k$ is the Poincaré–Birkhoff–Witt isomorphism, and the two isomorphisms $\Lambda(V)\to\operatorname{gr}\mathrm{Cl}(V,q)$ agree.
 
-**Proof.** For a wedge of vectors $v_1\wedge\cdots\wedge v_k$ the antisymmetrisation $\sigma$ is $\frac1{k!}\sum_{\pi}\operatorname{sgn}(\pi)v_{\pi(1)}\cdots v_{\pi(k)}$, each term of which is $v_1\cdots v_k$ plus an element of $F_{k-1}$; so $\sigma$ and the monomial map have the same class in $\operatorname{gr}_k$.
+**Proof.** For a wedge of vectors $v_1\wedge\cdots\wedge v_k$ the antisymmetrisation $\mathrm{Alt}$ is $\frac1{k!}\sum_{\pi}\operatorname{sgn}(\pi)v_{\pi(1)}\cdots v_{\pi(k)}$, each term of which is $v_1\cdots v_k$ plus an element of $F_{k-1}$; so $\mathrm{Alt}$ and the monomial map have the same class in $\operatorname{gr}_k$.
 
 **Corollary.** The Clifford algebra and the exterior algebra of the same space have the same dimension, $\sum_{k}\binom nk=2^n$, and the symbol map is a linear isomorphism realising the equality.
 
@@ -136,7 +136,7 @@ For $\dim V=2$ with orthogonal $e_1,e_2$, the filtration steps are $F_0=F$, $F_1
 
 ### The Situation When the Form Is Trivial
 
-**Theorem.** If $q=0$ then the filtration is the grading of the exterior algebra in disguise: the canonical map $\Lambda(V)\to\mathrm{Cl}(V,q)$ of *The Clifford Algebra* is an isomorphism of graded algebras, and the filtration steps are $F_k=\bigoplus_{j\le k}\Lambda^jV$.
+**Theorem.** If $q=0$ then the filtration is the grading of the exterior algebra in disguise: the canonical map $\Lambda(V)\to\mathrm{Cl}(V,q)$ of *Clifford Algebras* is an isomorphism of graded algebras, and the filtration steps are $F_k=\bigoplus_{j\le k}\Lambda^jV$.
 
 **Proof.** With $q=0$ the relation becomes $uv=-vu$, so $\mathrm{Cl}(V,0)=\Lambda(V)$ by the cited universal property, and a product of $k$ vectors is a $k$-vector.
 
@@ -160,7 +160,7 @@ When $q$ is non-degenerate the filtration is the cumulative filtration of the gr
 | $\operatorname{gr}\mathrm{Cl}(V,q)$ | Associated graded algebra |
 | $\Lambda^kV\to\operatorname{gr}_k$ | Poincaré–Birkhoff–Witt isomorphism |
 | $F_k=\bigoplus_{j\le k}\mathrm{Cl}_j$ | Cumulative filtration, $q$ non-degenerate |
-| $\sigma$ | Symbol map, the antisymmetrisation |
+| $\mathrm{Alt}$ | Symbol map, the antisymmetrisation |
 | $U(\mathrm{G})$, $S(\mathrm{G})$ | Enveloping algebra and symmetric algebra, the parallel case |
 
 ## Further Reading

@@ -1,5 +1,7 @@
 # __Biquaternion Topology__
 
+## Introduction
+
 This article collects the topology of the biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ as a space: its contractibility, the Euclidean unit sphere, the null cone, and the link of the null cone. It uses the algebra and fixed-point subspaces of *Biquaternion Algebra*, the biquaternion norm $N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}$ and invertibility criterion of *Biquaternion Norm and Invertibility*, the zero divisor set of *Biquaternion Zero Divisors*, the null cone and its rulings of *Biquaternion Null Quadric and Projective Geometry*, and *Lie Groups*. No physics is invoked and no new result is claimed.
 
 **Scope.** The topology of the **group of units** $\mathbb{B}^\times$ — the polar decomposition, the retractions onto its compact subgroups, the homotopy groups and the universal cover — belongs to the Lie theory of the algebra and is treated in *The Biquaternion Unit Group as a Topological Group*. This article owns the ambient space and its distinguished subsets, and takes from that article only the homotopy type of $\mathbb{B}^\times$ when a comparison is needed.
@@ -132,7 +134,7 @@ $$
 
 compact, connected and simply connected, with $\pi_2(S^2)\cong\mathbb{Z}$, and not a group, since only $S^0,S^1,S^3$ are groups. It is a homogeneous space of the unit quaternions and the base of the Hopf fibration $S^3\to S^2$; the sphere of roots of $+1$ is its image under multiplication by $i$, homeomorphic to it.
 
-Finally, on either pure reality slice the restricted norm is definite, being $q_1^2+q_2^2+q_3^2$ on $P\cap\mathbb{H}_{\mathbb{B}}$ and $-(q'^2_1+q'^2_2+q'^2_3)$ on $P\cap i\mathbb{H}_{\mathbb{B}}$. Hence $N(\tilde{Q})=0$ forces $\tilde{Q}=0$: the only null element of either pure reality slice is the origin, so the light cone meets these three-dimensional spaces only at its apex, unlike the Minkowski slices $\mathbb{M}_\pm$, whose null set is the three-dimensional light cone (*Biquaternion Lorentzian and Conformal Geometry*, §*The Lorentzian Slice and Its Light Cone*).
+Finally, on either pure reality slice the restricted norm is definite, being $q_1^2+q_2^2+q_3^2$ on $P\cap\mathbb{H}_{\mathbb{B}}$ and $-((q'_1)^2+(q'_2)^2+(q'_3)^2)$ on $P\cap i\mathbb{H}_{\mathbb{B}}$. Hence $N(\tilde{Q})=0$ forces $\tilde{Q}=0$: the only null element of either pure reality slice is the origin, so the light cone meets these three-dimensional spaces only at its apex, unlike the Minkowski slices $\mathbb{M}_\pm$, whose null set is the three-dimensional light cone (*Biquaternion Lorentzian and Conformal Geometry*, §*The Lorentzian Slice and Its Light Cone*).
 
 ## Summary
 

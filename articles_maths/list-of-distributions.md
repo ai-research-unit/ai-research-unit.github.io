@@ -52,7 +52,7 @@ This article lists the distributions and the generalised functions the corpus in
 | a fundamental solution $E$ of $P$ | $P E = \delta$; it solves $Pu = f$ by $u = E * f$ when the convolution is defined | *Distributions and Fundamental Solutions* |
 | the fundamental solution of the Laplacian | the Newtonian potential, $E = \lvert x\rvert^{2-n}/((2-n)\omega_n)$, for $n \geq 3$ | *Distributions and Fundamental Solutions*; *Potential Theory* |
 | the fundamental solution of the heat operator | the Gaussian kernel, giving the heat semigroup and the solution of the initial-value problem | *Distributions and Fundamental Solutions*; *Semigroups and Evolution Equations* |
-| the fundamental solution of the Cauchy–Riemann and Dirac operators | the Cauchy kernel $1/(\pi z)$ and the Clifford kernel $\bar x/\lvert x\rvert^{n+1}$ | *Regularity and the Cauchy–Riemann Operator*; *Dirac Operators* |
+| the fundamental solution of the Cauchy–Riemann and Dirac operators | the Cauchy kernel $1/(\pi z)$ and the Clifford kernel $\bar x/\lvert x\rvert^{n+1}$ | *Regularity and the Cauchy–Riemann Operator*; *Dirac Differential Operators* |
 | a parametrix of an elliptic operator | a distribution $E$ with $PE = \delta + R$ for a smoothing remainder $R$; it gives elliptic regularity | *Distributions and Fundamental Solutions*; *Pseudodifferential Operators* |
 | the Green function | the fundamental solution of a boundary-value problem, carrying the boundary conditions | *Partial Differential Equations*; *Potential Theory* |
 | the smooth kernel | a kernel $K \in C^\infty(Y\times X)$; it defines a smoothing operator, and this is the converse direction of elliptic regularity | *The Schwartz Kernel Theorem* |

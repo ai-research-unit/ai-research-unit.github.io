@@ -5,7 +5,7 @@
 
 The forms considered so far have taken values in the base field. When the space is the underlying vector space of an algebra, the natural quadratic forms are the **norms** $N(x) = x\bar x$, whose values lie in the centre of the algebra, and the vanishing of $N$ controls the multiplicative structure: the non-invertible elements are exactly the zeros of the norm. Closely related are the **composition laws**, identities $N(xy) = N(x)N(y)$ that turn a quadratic form into a multiplicative invariant, and the classical classification of the algebras carrying such a form.
 
-This article develops quadratic forms with values in an algebra, the projective quadrics they define, the norms of the algebra of complex numbers, the quaternions and the biquaternions, the Cayley–Dickson doubling that produces the octonions from the quaternions, and the theorem of Hurwitz that a composition law exists only in dimensions one, two, four and eight. The base is a field $F$ of characteristic not $2$. The involution $\bar{\cdot}$ and the reduced norm are from *Hermitian Forms and Involutions*; the biquaternion conventions are, and the split complex and dual numbers are from *Dual Numbers Algebra*. The quadratic-form vocabulary and the notion of isometry are from *Bilinear Forms* and *Quadratic Forms and Polarisation*; the Clifford algebra of a norm is not used here but is developed in *The Clifford Algebra*.
+This article develops quadratic forms with values in an algebra, the projective quadrics they define, the norms of the algebra of complex numbers, the quaternions and the biquaternions, the Cayley–Dickson doubling that produces the octonions from the quaternions, and the theorem of Hurwitz that a composition law exists only in dimensions one, two, four and eight. The base is a field $F$ of characteristic not $2$. The involution $\bar{\cdot}$ and the reduced norm are from *Involutive Clifford Algebras*; the biquaternion conventions are, and the split complex and dual numbers are from *Dual Numbers Algebra*. The quadratic-form vocabulary and the notion of isometry are from *Bilinear Forms* and *Quadratic Forms and Polarisation*; the Clifford algebra of a norm is not used here but is developed in *Clifford Algebras*.
 
 ## Forms with Values in an Algebra
 
@@ -27,7 +27,7 @@ is $A$-valued and bilinear. This is the definition of *Quadratic Forms and Polar
 
 **Definition.** The $A$-valued form $Q$ is **non-degenerate** if the induced map $V \to \operatorname{Hom}_F(V, A)$, $x \mapsto B_Q(x, -)$, is injective, and **strongly non-degenerate** if it is an isomorphism.
 
-Strong non-degeneracy is unavailable for $\dim_F A > 1$: the target $\operatorname{Hom}_F(V, A)$ has $F$-dimension $(\dim_F V)(\dim_F A)$, so no map $V \to \operatorname{Hom}_F(V, A)$ with $\dim_F A > 1$ is an isomorphism, and the two conditions agree only for $\dim_F A = 1$. The notion the applications require is non-degeneracy after extension of scalars: $Q$ is **non-degenerate over $A$** when $x \mapsto B_Q(x, -)$ has trivial kernel and the $A$-bilinear form $B_Q \otimes_F A$ on $V \otimes_F A$ is non-degenerate in the sense of *Bilinear Forms*. For the norms of *Hermitian Forms and Involutions* the polar form is $B_N(x, y) = \tfrac{1}{2}\operatorname{Trd}(x\bar y)$, so the condition is the non-degeneracy of the reduced trace pairing. The zeros of a norm carry the multiplicative structure: $N(x) = 0$ for some $x \neq 0$ exactly when $x$ is a zero divisor, so that for a composition algebra the norm is isotropic exactly when the algebra is not a division algebra.
+Strong non-degeneracy is unavailable for $\dim_F A > 1$: the target $\operatorname{Hom}_F(V, A)$ has $F$-dimension $(\dim_F V)(\dim_F A)$, so no map $V \to \operatorname{Hom}_F(V, A)$ with $\dim_F A > 1$ is an isomorphism, and the two conditions agree only for $\dim_F A = 1$. The notion the applications require is non-degeneracy after extension of scalars: $Q$ is **non-degenerate over $A$** when $x \mapsto B_Q(x, -)$ has trivial kernel and the $A$-bilinear form $B_Q \otimes_F A$ on $V \otimes_F A$ is non-degenerate in the sense of *Bilinear Forms*. For the norms of *Involutive Clifford Algebras* the polar form is $B_N(x, y) = \tfrac{1}{2}\operatorname{Trd}(x\bar y)$, so the condition is the non-degeneracy of the reduced trace pairing. The zeros of a norm carry the multiplicative structure: $N(x) = 0$ for some $x \neq 0$ exactly when $x$ is a zero divisor, so that for a composition algebra the norm is isotropic exactly when the algebra is not a division algebra.
 
 ### The Quadric
 
@@ -63,7 +63,7 @@ $$
 
 **Proposition.** For a separable extension $K/F$ of degree $n > 2$, the norm $N_{K/F}$ is a homogeneous form of degree $n$ and is not a quadratic form.
 
-**Proof.** The norm is the determinant of the $F$-linear map of multiplication by $x$ on the $n$-dimensional space $K$, so it is homogeneous of degree $n$, as in *Hermitian Forms and Involutions*; a homogeneous form of degree $n > 2$ is not quadratic.
+**Proof.** The norm is the determinant of the $F$-linear map of multiplication by $x$ on the $n$-dimensional space $K$, so it is homogeneous of degree $n$, as in *Involutive Clifford Algebras*; a homogeneous form of degree $n > 2$ is not quadratic.
 
 ## The Norm of the Complex Numbers
 
@@ -123,7 +123,7 @@ a $\mathbb{C}$-valued form that is multiplicative, $N(\tilde Q \tilde R) = N(\ti
 
 **Proposition.** In $\mathbb{B}$ the set of non-invertible elements is exactly the zero set of $N$; the nonzero zeros are the zero divisors, and they correspond to the rank-one matrices of $M_2(\mathbb{C})$.
 
-**Proof.** An element of a finite-dimensional algebra over a field is invertible if and only if its reduced norm is nonzero, as in *Hermitian Forms and Involutions*; the reduced norm here is the determinant, which vanishes exactly on the singular matrices. A nonzero singular $2 \times 2$ matrix has rank one.
+**Proof.** An element of a finite-dimensional algebra over a field is invertible if and only if its reduced norm is nonzero, as in *Involutive Clifford Algebras*; the reduced norm here is the determinant, which vanishes exactly on the singular matrices. A nonzero singular $2 \times 2$ matrix has rank one.
 
 **Remark.** The split nature of $\mathbb{B}$ is visible in the norm: writing $\tilde Q = P + iQ$ with $P, Q$ in the real quaternion subspace, one has $N(\tilde Q) = N(P) - N(Q) + 2i\,B_N(P, Q)$ with $B_N$ the polar form of the real quaternion norm, and a positive and a negative contribution both occur, so the form is indefinite. The split biquaternions $\mathbb{H}_{\mathbb{D}} = \mathbb{D} \otimes_{\mathbb{R}} \mathbb{H}$, in which the central unit has square $+1$, behave differently: their norm $\sum_\mu Q_\mu^2$ with $Q_\mu \in \mathbb{D}$ has positive definite real part and is anisotropic, so it does not detect the zero divisors; those are detected instead by the vanishing of an idempotent component.
 

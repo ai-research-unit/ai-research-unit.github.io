@@ -16,7 +16,7 @@ Because the biquaternions carry both a complex and a real structure, every state
 
 Let $A$ be an associative unital algebra over a field $k$. An additive subgroup $I\subseteq A$ is a **left ideal** if $AI\subseteq I$, a **right ideal** if $IA\subseteq I$, and a **two-sided ideal** if it is both. The distinction matters only when $A$ is noncommutative; for $\mathbb{B}$ the three notions genuinely differ. The ideals $0$ and $A$ are trivial.
 
-A base-field remark used repeatedly: if $AI\subseteq I$ then $I$ is automatically a $k$-subspace, since $\lambda x = (\lambda e_0)x\in I$. So the left ideals do not depend on which field of scalars inside the centre is used to view the algebra; in particular the ideal lattice of $\mathbb{B}$ is the same in the $\mathbb{C}$-view and the $\mathbb{R}$-view (Section 11).
+A base-field remark used repeatedly: if $AI\subseteq I$ then $I$ is automatically a $k$-subspace, since $\lambda \tilde R = (\lambda e_0)\tilde R\in I$. So the left ideals do not depend on which field of scalars inside the centre is used to view the algebra; in particular the ideal lattice of $\mathbb{B}$ is the same in the $\mathbb{C}$-view and the $\mathbb{R}$-view (Section 11).
 
 For a two-sided ideal $I$, the quotient algebra $A/I$ is defined and carries the induced operations; kernels of algebra homomorphisms are two-sided ideals, and $A/\ker\varphi\cong\operatorname{im}\varphi$. For a left ideal only, $A/I$ is a left $A$-module but not in general an algebra. Thus left ideals govern module theory and two-sided ideals govern quotient algebras.
 
@@ -24,7 +24,7 @@ For a two-sided ideal $I$, the quotient algebra $A/I$ is defined and carries the
 
 **Theorem.** Over $\mathbb{C}$, the only two-sided ideals of $\mathbb{B}$ are $0$ and $\mathbb{B}$: the algebra is **simple**.
 
-**Proof.** Let $I\neq0$ be a two-sided ideal. It is a $\mathbb{C}$-subspace, because multiplication by the central element $i$ is left multiplication by an element of $\mathbb{B}$. Fix $0\neq\tilde{Q} = \sum_\mu Q_\mu e_\mu\in I$. For every unit $u\in\mathbb{B}$ the conjugate $u\tilde{Q}u^{-1}$ lies in $I$, since $I$ is two-sided.
+**Proof.** Let $I\neq0$ be a two-sided ideal. It is a $\mathbb{C}$-subspace, because multiplication by the central element $i$ is left multiplication by an element of $\mathbb{B}$. Fix $0\neq\tilde{Q} = \sum_\mu Q_\mu e_\mu\in I$. For every unit $\tilde B\in\mathbb{B}$ the conjugate $\tilde B\tilde{Q}\tilde B^{-1}$ lies in $I$, since $I$ is two-sided.
 
 Average the conjugates over the finite group $\{\pm e_0,\pm e_1,\pm e_2,\pm e_3\}$. Conjugation by $e_\mu$ fixes $e_0$ and $e_\mu$ and reverses $e_\nu$ for $\nu\neq\mu$, so the group elements of quaternion part $\pm e_\mu$ all give the same conjugate, and the average is twice
 
@@ -84,18 +84,18 @@ The classification of the idempotents — the trivial ones, the bijection with t
 The two off-diagonal corners are spanned by the elements
 
 $$
-x = \frac{ie_1-e_2}{2}, \qquad y = \frac{ie_1+e_2}{2} .
+\tilde R = \frac{ie_1-e_2}{2}, \qquad \tilde T = \frac{ie_1+e_2}{2} .
 $$
 
-Then $\{\tilde\Pi_1,x,y,\tilde\Pi_2\}$ is a $\mathbb{C}$-basis of $\mathbb{B}$, and the multiplication is
+Then $\{\tilde\Pi_1,\tilde R,\tilde T,\tilde\Pi_2\}$ is a $\mathbb{C}$-basis of $\mathbb{B}$, and the multiplication is
 
 $$
-\tilde\Pi_1x = x = x\tilde\Pi_2, \qquad \tilde\Pi_2y = y = y\tilde\Pi_1, \qquad xy = \tilde\Pi_1, \qquad yx = \tilde\Pi_2,
+\tilde\Pi_1\tilde R = \tilde R = \tilde R\tilde\Pi_2, \qquad \tilde\Pi_2\tilde T = \tilde T = \tilde T\tilde\Pi_1, \qquad \tilde R\tilde T = \tilde\Pi_1, \qquad \tilde T\tilde R = \tilde\Pi_2,
 $$
 
-together with $x\tilde\Pi_1 = \tilde\Pi_2x = \tilde\Pi_1y = y\tilde\Pi_2 = 0$ and $x^2 = y^2 = 0$. This is the multiplication table of the algebra in the idempotent basis.
+together with $\tilde R\tilde\Pi_1 = \tilde\Pi_2\tilde R = \tilde\Pi_1\tilde T = \tilde T\tilde\Pi_2 = 0$ and $\tilde R^2 = \tilde T^2 = 0$. This is the multiplication table of the algebra in the idempotent basis.
 
-**Physical reading: the transition elements.** The off-diagonal elements $x$ and $y$ are the **ladder operators** of the algebra. They are not states and cannot be: each has vanishing biquaternion norm, $N(x) = N(y) = 0$, so each is a zero divisor and not invertible; neither is Hermitian; and each is nilpotent, $x^2 = y^2 = 0$, so neither is an idempotent and neither can be a projector. What they do is move between the two diagonal corners: $xy = \tilde\Pi_1$ and $yx = \tilde\Pi_2$, so the products of a raising and a lowering element are the two state projectors. A transition in the framework is therefore a **product of two off-diagonal Peirce elements**, which is the algebraic form of the statement that an observable's off-diagonal part is what makes two states interfere.
+**Physical reading: the transition elements.** The off-diagonal elements $\tilde R$ and $\tilde T$ are the **ladder operators** of the algebra. They are not states and cannot be: each has vanishing biquaternion norm, $N(\tilde R) = N(\tilde T) = 0$, so each is a zero divisor and not invertible; neither is Hermitian; and each is nilpotent, $\tilde R^2 = \tilde T^2 = 0$, so neither is an idempotent and neither can be a projector. What they do is move between the two diagonal corners: $\tilde R\tilde T = \tilde\Pi_1$ and $\tilde T\tilde R = \tilde\Pi_2$, so the products of a raising and a lowering element are the two state projectors. A transition in the framework is therefore a **product of two off-diagonal Peirce elements**, which is the algebraic form of the statement that an observable's off-diagonal part is what makes two states interfere.
 
 ## 6. The Peirce Decomposition
 
@@ -124,13 +124,13 @@ $$
 and by the table of Section 5 each summand is one-dimensional over $\mathbb{C}$:
 
 $$
-\tilde\Pi_1\mathbb{B}\tilde\Pi_1 = \mathbb{C}\tilde\Pi_1, \qquad \tilde\Pi_1\mathbb{B}\tilde\Pi_2 = \mathbb{C}x, \qquad \tilde\Pi_2\mathbb{B}\tilde\Pi_1 = \mathbb{C}y, \qquad \tilde\Pi_2\mathbb{B}\tilde\Pi_2 = \mathbb{C}\tilde\Pi_2 .
+\tilde\Pi_1\mathbb{B}\tilde\Pi_1 = \mathbb{C}\tilde\Pi_1, \qquad \tilde\Pi_1\mathbb{B}\tilde\Pi_2 = \mathbb{C}\tilde R, \qquad \tilde\Pi_2\mathbb{B}\tilde\Pi_1 = \mathbb{C}\tilde T, \qquad \tilde\Pi_2\mathbb{B}\tilde\Pi_2 = \mathbb{C}\tilde\Pi_2 .
 $$
 
 So the Peirce decomposition of $\mathbb{B}$ is
 
 $$
-\mathbb{B} = \mathbb{C}\tilde\Pi_1\oplus\mathbb{C}x\oplus\mathbb{C}y\oplus\mathbb{C}\tilde\Pi_2 .
+\mathbb{B} = \mathbb{C}\tilde\Pi_1\oplus\mathbb{C}\tilde R\oplus\mathbb{C}\tilde T\oplus\mathbb{C}\tilde\Pi_2 .
 $$
 
 The diagonal part $\mathbb{C}\tilde\Pi_1\oplus\mathbb{C}\tilde\Pi_2$ is a two-dimensional commutative subalgebra isomorphic to $\mathbb{C}\times\mathbb{C}$, the diagonal subalgebra of the decomposition. Each diagonal corner is a division ring, namely $\mathbb{C}$, which is the primitivity criterion of Section 4.
@@ -142,14 +142,14 @@ The diagonal part $\mathbb{C}\tilde\Pi_1\oplus\mathbb{C}\tilde\Pi_2$ is a two-di
 The two idempotents group the basis into one-sided ideals in a second way. The two **columns** $\mathbb{B}\tilde\Pi_1,\mathbb{B}\tilde\Pi_2$ and the two **rows** $\tilde\Pi_1\mathbb{B},\tilde\Pi_2\mathbb{B}$ are one-sided ideals, and
 
 $$
-\mathbb{B} = \mathbb{B}\tilde\Pi_1\oplus\mathbb{B}\tilde\Pi_2 = (\mathbb{C}\tilde\Pi_1\oplus\mathbb{C}y)\oplus(\mathbb{C}x\oplus\mathbb{C}\tilde\Pi_2),
+\mathbb{B} = \mathbb{B}\tilde\Pi_1\oplus\mathbb{B}\tilde\Pi_2 = (\mathbb{C}\tilde\Pi_1\oplus\mathbb{C}\tilde T)\oplus(\mathbb{C}\tilde R\oplus\mathbb{C}\tilde\Pi_2),
 $$
 
 $$
-\mathbb{B} = \tilde\Pi_1\mathbb{B}\oplus\tilde\Pi_2\mathbb{B} = (\mathbb{C}\tilde\Pi_1\oplus\mathbb{C}x)\oplus(\mathbb{C}y\oplus\mathbb{C}\tilde\Pi_2).
+\mathbb{B} = \tilde\Pi_1\mathbb{B}\oplus\tilde\Pi_2\mathbb{B} = (\mathbb{C}\tilde\Pi_1\oplus\mathbb{C}\tilde R)\oplus(\mathbb{C}\tilde T\oplus\mathbb{C}\tilde\Pi_2).
 $$
 
-The first exhibits $\mathbb{B}$ as a direct sum of the two minimal left ideals (the columns); the second as a direct sum of the two minimal right ideals (the rows). The two groupings of the same four basis elements differ: the Peirce decomposition groups $\tilde\Pi_1$ with $x$ and $\tilde\Pi_2$ with $y$, whereas the column decomposition groups $\tilde\Pi_1$ with $y$ and $\tilde\Pi_2$ with $x$. Each column is two-dimensional over $\mathbb{C}$ and isomorphic as a left $\mathbb{B}$-module to $S$; each row is isomorphic to the dual $S^{*}$. Since $\mathbb{B}$ is simple, a column or a row is never two-sided; for instance $\mathbb{B}\tilde\Pi_1$ is not stable under right multiplication by $x$.
+The first exhibits $\mathbb{B}$ as a direct sum of the two minimal left ideals (the columns); the second as a direct sum of the two minimal right ideals (the rows). The two groupings of the same four basis elements differ: the Peirce decomposition groups $\tilde\Pi_1$ with $\tilde R$ and $\tilde\Pi_2$ with $\tilde T$, whereas the column decomposition groups $\tilde\Pi_1$ with $\tilde T$ and $\tilde\Pi_2$ with $\tilde R$. Each column is two-dimensional over $\mathbb{C}$ and isomorphic as a left $\mathbb{B}$-module to $S$; each row is isomorphic to the dual $S^{*}$. Since $\mathbb{B}$ is simple, a column or a row is never two-sided; for instance $\mathbb{B}\tilde\Pi_1$ is not stable under right multiplication by $\tilde R$.
 
 **Physical reading: modules and dual modules.** The columns are the **one-particle modules**: each is a copy of $S$, and a state is an element of one. The rows are their duals, the spaces of linear functionals, which is where the conjugate (antiparticle) side is reached — not by transposing but through the real structure of Section 11. The two groupings are the reason a statement about the algebra can be read either by states or by functionals, and the reason a reader must say which grouping is meant: the Peirce blocks are not the columns, even though both are built from the same four elements.
 
@@ -195,7 +195,7 @@ Over $\mathbb{C}$, the radical of $\mathbb{B}$ vanishes: $J(\mathbb{B}) = 0$, si
 
 - $\mathbb{B}$ has no nonzero nilpotent two-sided ideals: the nilradical is zero;
 - it has no nonzero nilpotent left or right ideals either, since such an ideal generates a nonzero nilpotent two-sided ideal;
-- the absence of a radical is not the absence of nilpotent **elements**: $x^2 = y^2 = 0$, yet the left ideal generated by $x$ is not nilpotent;
+- the absence of a radical is not the absence of nilpotent **elements**: $\tilde R^2 = \tilde T^2 = 0$, yet the left ideal generated by $\tilde R$ is not nilpotent;
 - every left $\mathbb{B}$-module is semisimple, i.e. a direct sum of copies of $S$.
 
 **Physical reading.** Complete reducibility is what lets the framework build its many-particle spaces by taking direct sums and tensor powers of the defining module without any obstruction from the algebra: a module over $\mathbb{B}$ never has a non-split extension, so Fock space and the multi-qubit algebras are assembled from copies of $S$ and nothing else. The nilpotent elements are not an obstruction either: they are not in any nilpotent ideal, which is why an off-diagonal transition element can appear in a well-defined expression without generating a degenerate subspace.
@@ -253,7 +253,7 @@ Physically: the two-sided triviality of the ideal lattice is the statement that 
 | $e_0,e_1,e_2,e_3$ | Algebra basis, $e_0 = 1$, $e_k^2 = -e_0$ |
 | $i$ | Central scalar imaginary; $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_0,ie_0\}$ is the centre |
 | $\tilde\Pi_1,\tilde\Pi_2$ | Orthogonal idempotents, $\tilde\Pi_1+\tilde\Pi_2 = e_0$, $\tilde\Pi_1\tilde\Pi_2 = 0$; the state projectors |
-| $x,y$ | Nilpotent off-diagonal elements, $x = \tfrac{ie_1-e_2}{2}$, $y = \tfrac{ie_1+e_2}{2}$, $x^2 = y^2 = 0$; the transition elements |
+| $\tilde R,\tilde T$ | Nilpotent off-diagonal elements, $\tilde R = \tfrac{ie_1-e_2}{2}$, $\tilde T = \tfrac{ie_1+e_2}{2}$, $\tilde R^2 = \tilde T^2 = 0$; the transition elements |
 | $S$ | The defining module, of complex dimension two; all simple left modules are isomorphic to it |
 | $\mathbb{B}\tilde\Pi_1$ | The minimal left ideal, a simple left $\mathbb{B}$-module, $i$ acting as the scalar $i$ |
 | $\mathbb{P}^1(\mathbb{C})$ | The projective line parametrising the minimal left ideals; a two-sphere |

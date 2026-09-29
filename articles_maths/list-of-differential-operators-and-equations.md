@@ -15,7 +15,7 @@ This article lists the differential operators and the differential equations the
 | the Laplacian $\Delta$ | order $2$; symbol $-\lvert\xi\rvert^2$; the elliptic operator of the corpus, with $\Delta = \operatorname{div}\nabla$ | *Partial Differential Equations*; *Harmonic Maps* |
 | the d'Alembertian $\Box = \partial_t^2 - \Delta$ | order $2$; symbol $-\xi_0^2 + \lvert\xi\rvert^2$; the hyperbolic operator of the wave equation | *Partial Differential Equations*; *Biquaternion Analysis* |
 | the Cauchy–Riemann operator $\bar\partial$ and its conjugate | order $1$; symbol $i(\xi_1 + i\xi_2)/2$; the operator of the complex and hypercomplex analysis | *Regularity and the Cauchy–Riemann Operator*; *Complex Analysis* |
-| the Dirac operator $D$ and the twisted Cauchy–Riemann operator | order $1$; symbol the Clifford multiplication by $\xi$; the square is the Laplacian with a curvature term | *Dirac Operators*; *Clifford Modules and the Twisted Cauchy–Riemann Operator* |
+| the Dirac operator $D$ and the twisted Cauchy–Riemann operator | order $1$; symbol the Clifford multiplication by $\xi$; the square is the Laplacian with a curvature term | *Dirac Differential Operators*; *Clifford Modules and the Twisted Cauchy–Riemann Operator* |
 | a Fourier multiplier | order and symbol free; defined by $\widehat{m(D)f} = m(\xi)\hat f$, and the general constant-coefficient operator | *Fourier Analysis on Euclidean Spaces*; *Pseudodifferential Operators* |
 | a pseudodifferential operator | order $m$; a symbol $a(x,\xi)$ with an asymptotic expansion; the calculus that closes under composition and adjoints | *Pseudodifferential Operators*; *Microlocal Analysis* |
 

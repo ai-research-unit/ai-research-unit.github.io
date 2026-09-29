@@ -95,7 +95,7 @@ An object that a reader may expect among the Erlangen program geometries, and do
 | Object | Why it is not listed as an Erlangen geometry | Introduced in |
 |---|---|---|
 | the Riemannian geometry of a general manifold | its isometry group need not act transitively, so no transformation group describes it | *Riemannian Geometry*; *Homogeneous Spaces* |
-| spin geometry and the group $\operatorname{Spin}(n)$ | a structure group of a bundle, not the transformation group of a space | *Spin Geometry*; *The Clifford, Pin and Spin Groups* |
+| spin geometry and the group $\operatorname{Spin}(n)$ | a structure group of a bundle, not the transformation group of a space | *Spin Geometry*; *The Clifford, Pin and Spin Groups with Signed Inner Conjugation* |
 | the orthogonal group $O(n)$ as a geometry | a group defined by a form; the geometry it belongs to is the orthogonal geometry of the form | *Isometries and Orthogonal Transformations* |
 | the symplectomorphism group | the automorphisms of a symplectic manifold, generally larger than the finite-dimensional $Sp(2n,\mathbb{R})$ | *Diffeomorphism Groups*; *Symplectic Geometry* |
 | the conformal group in dimension two | infinite-dimensional, so the invariant theory is not the finite-dimensional one | *Complex Analysis*; *Conformal Geometry* |

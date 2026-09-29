@@ -97,17 +97,17 @@ The element is neither purely material nor purely informational: its norm is com
 
 ## Explicit Zero Divisors
 
-**Example (an explicit pair).** With the standard idempotents, $\tilde\Pi_1\tilde\Pi_2=0$ with both factors nonzero. In unnormalised form, set $a=e_0+ie_3$ and $b=e_0-ie_3$. Then
+**Example (an explicit pair).** With the standard idempotents, $\tilde\Pi_1\tilde\Pi_2=0$ with both factors nonzero. In unnormalised form, set $\tilde A=e_0+ie_3$ and $\tilde B=e_0-ie_3$. Then
 $$
-ab=e_0-(ie_3)^2=e_0-1=0,\qquad a\neq0,\qquad b\neq0 .
+\tilde A\tilde B=e_0-(ie_3)^2=e_0-1=0,\qquad \tilde A\neq0,\qquad \tilde B\neq0 .
 $$
-Both $a$ and $b$ have two nonzero complex coefficients. Moreover $N(a)=1+i^2=0$, so $a$ is **null** as well as a zero divisor; it is not nilpotent, since $a^2=(e_0+ie_3)^2=e_0+2ie_3-(e_3)^2=2e_0+2ie_3=2a\neq0$.
+Both $\tilde A$ and $\tilde B$ have two nonzero complex coefficients. Moreover $N(\tilde A)=1+i^2=0$, so $\tilde A$ is **null** as well as a zero divisor; it is not nilpotent, since $\tilde A^2=(e_0+ie_3)^2=e_0+2ie_3-(e_3)^2=2e_0+2ie_3=2\tilde A\neq0$.
 
-**Physical reading.** The pair $a=e_0+ie_3$, $b=e_0-ie_3$ is a **lightlike pair**: each is null, $N=0$, so each is a light-cone element, and their product vanishes. This is the algebraic content of the light cone: two null elements whose product is zero are the two null directions of a lightlike plane. The element $a$ being null but not nilpotent is the statement that a lightlike direction squares to a multiple of itself and not to zero; the genuinely nilpotent directions are the pure null vectors, such as $e_1+ie_2$, whose square vanishes (*Biquaternion Zero Divisors*).
+**Physical reading.** The pair $\tilde A=e_0+ie_3$, $\tilde B=e_0-ie_3$ is a **lightlike pair**: each is null, $N=0$, so each is a light-cone element, and their product vanishes. This is the algebraic content of the light cone: two null elements whose product is zero are the two null directions of a lightlike plane. The element $\tilde A$ being null but not nilpotent is the statement that a lightlike direction squares to a multiple of itself and not to zero; the genuinely nilpotent directions are the pure null vectors, such as $e_1+ie_2$, whose square vanishes (*Biquaternion Zero Divisors*).
 
 ## Summary
 
-The multiplication of $\mathbb{B}$ is the quaternion table with complex coefficients and central $i$, $i^2=-1$. On the element $\tilde{Q}=(2+i)e_0+(1-i)e_1+3e_2+ie_3$ the six subspaces are exhibited by the scalar-vector, quaternion-anti-quaternion and Hermitian-anti-Hermitian decompositions of $\tilde{Q}$, and the four conjugations $\bar{\cdot}$, ${}^{*}$, ${}^{\dagger}$ and ${}^{\flat}=-\dagger$ act on it as listed. The element has norm $N(\tilde{Q})=11+2i$, so it is a unit with $\tilde{Q}^{-1}=\bar{\tilde{Q}}/(11+2i)$; its material part has norm $9$ and its informational part norm $2$. The idempotents $\tilde\Pi_1,\tilde\Pi_2$ satisfy $\tilde\Pi_1\tilde\Pi_2=0$ and give $\mathbb{B}=\mathbb{B}\tilde\Pi_1\oplus\mathbb{B}\tilde\Pi_2$ with each summand minimal; the pair $a=e_0+ie_3$, $b=e_0-ie_3$ is an explicit zero-divisor pair, both factors null.
+The multiplication of $\mathbb{B}$ is the quaternion table with complex coefficients and central $i$, $i^2=-1$. On the element $\tilde{Q}=(2+i)e_0+(1-i)e_1+3e_2+ie_3$ the six subspaces are exhibited by the scalar-vector, quaternion-anti-quaternion and Hermitian-anti-Hermitian decompositions of $\tilde{Q}$, and the four conjugations $\bar{\cdot}$, ${}^{*}$, ${}^{\dagger}$ and ${}^{\flat}=-\dagger$ act on it as listed. The element has norm $N(\tilde{Q})=11+2i$, so it is a unit with $\tilde{Q}^{-1}=\bar{\tilde{Q}}/(11+2i)$; its material part has norm $9$ and its informational part norm $2$. The idempotents $\tilde\Pi_1,\tilde\Pi_2$ satisfy $\tilde\Pi_1\tilde\Pi_2=0$ and give $\mathbb{B}=\mathbb{B}\tilde\Pi_1\oplus\mathbb{B}\tilde\Pi_2$ with each summand minimal; the pair $\tilde A=e_0+ie_3$, $\tilde B=e_0-ie_3$ is an explicit zero-divisor pair, both factors null.
 
 ## Summary of Notation
 
@@ -122,7 +122,7 @@ The multiplication of $\mathbb{B}$ is the quaternion table with complex coeffici
 | $\tilde\Pi_1=\tfrac12(e_0+ie_3),\ \tilde\Pi_2=\tfrac12(e_0-ie_3)$ | Orthogonal primitive idempotents; chiral projectors |
 | $N(\tilde{Q})=11+2i$ | Norm of the fixed element; nonzero, so a unit |
 | $\tilde{Q}^{-1}=\bar{\tilde{Q}}/N(\tilde{Q})$ | Inverse of the fixed element |
-| $a=e_0+ie_3,\ b=e_0-ie_3$ | Null zero-divisor pair, $ab=0$ |
+| $\tilde A=e_0+ie_3,\ \tilde B=e_0-ie_3$ | Null zero-divisor pair, $\tilde A\tilde B=0$ |
 
 ## Further Reading
 

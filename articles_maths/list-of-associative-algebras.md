@@ -46,7 +46,7 @@ The symmetric, exterior and Clifford algebras are quotients of $T(V)$ by homogen
 | $R[x_1,\dots,x_n]$, the polynomial algebra | commutative and associative | *Polynomial Algebras* |
 | $\operatorname{Sym}(V)$, the symmetric algebra | the commutative associative quotient of $T(V)$ by the commutators | *The Symmetric Algebra* |
 | $\Lambda(V)$, the exterior algebra | the graded-commutative associative quotient by $v \otimes v$ | *The Exterior Algebra* |
-| $\mathrm{Cl}(V,q)$, the Clifford algebra | the associative quotient by $v \otimes v - q(v)$ | *The Clifford Algebra* |
+| $\mathrm{Cl}(V,q)$, the Clifford algebra | the associative quotient by $v \otimes v - q(v)$ | *Clifford Algebras* |
 | $A_1(k) = k\langle x,y\rangle/(xy - yx - 1)$, the Weyl algebra | associative, a domain, and not a quotient by homogeneous relations | *Non-Commutative Domains*, §The Weyl Algebra |
 | $k[G]$, the group algebra | associative; the group law extended bilinearly | *Group Algebras* |
 | $\mathbb{C}, \mathbb{D}, \mathbb{D}'$ as quotients of $T(V)$ | the number systems presented by generators and relations; associative | *Quotients of the Tensor Algebra* |

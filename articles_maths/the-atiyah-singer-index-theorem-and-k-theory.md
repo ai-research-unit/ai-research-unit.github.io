@@ -5,7 +5,7 @@
 
 The index of an elliptic operator is an analytic integer: the difference of the dimensions of the kernel and the cokernel. The index theorem of Atiyah and Singer identifies it with a topological integer built from the symbol of the operator, and the language in which the identification is cleanest is topological $K$-theory, the Grothendieck group of vector bundles. The theorem is the meeting point of the two halves of this category: the Clifford modules and the twisted Cauchy–Riemann operator of the preceding article supply the operators, and the characteristic classes of the differential-geometric layer supply the topological invariants, with $K$-theory the ring in which the two are compared.
 
-This article develops the $K$-theory, states the theorem and its local form, sketches the heat-kernel proof, and computes the spin and de Rham cases. The twisted operator whose index was computed in *Clifford Modules and the Twisted Cauchy–Riemann Operator* is the principal example; the characteristic classes, connections and curvature are; and the Clifford modules are from *Spin Representations and Clifford Modules*. The index theorem itself is standard mathematics and is stated as such.
+This article develops the $K$-theory, states the theorem and its local form, sketches the heat-kernel proof, and computes the spin and de Rham cases. The twisted operator whose index was computed in *Clifford Modules and the Twisted Cauchy–Riemann Operator* is the principal example; the characteristic classes, connections and curvature are; and the Clifford modules are from *Spin Representations and Clifford Modules with Inner Conjugation*. The index theorem itself is standard mathematics and is stated as such.
 
 ## Vector Bundles and Topological K-Theory
 

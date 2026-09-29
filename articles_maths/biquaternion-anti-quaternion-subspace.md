@@ -289,7 +289,7 @@ The anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$ is the anti-fixed space 
 | $i$ | the central imaginary unit, $i^2 = -1$, commuting with $\mathbb{B}$ |
 | $N(\tilde{Q})$ | the biquaternion norm, $-\sum_\mu (q'_\mu)^2$ on the subspace |
 | $\eta = i\mu$ | a root of $+1$ in the subspace, $|\mu| = 1$, filling a two-sphere |
-| $\mathbb{S}^2$ | the two-sphere of roots of $+1$ in the subspace |
+| $S^2$ | the two-sphere of roots of $+1$ in the subspace |
 | $\mathrm{K} = \operatorname{span}_{\mathbb{R}}\{e_1,e_2,e_3\}$ | the rotation subalgebra, the image of the bracket of the subspace |
 | $\bar{\cdot}, {}^{*}, {}^{\dagger}, \flat$ | the four involutions |
 

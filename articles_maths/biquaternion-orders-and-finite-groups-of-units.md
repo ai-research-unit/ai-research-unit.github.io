@@ -5,7 +5,7 @@
 
 The biquaternion algebra carries integral structures, and the groups of units of those structures are the finite groups attached to the algebra. The real slice $\mathbb{H}_{\mathbb{B}}\cong\mathbb{H}$ contains the classical quaternion orders — the Lipschitz order and the Hurwitz order — whose groups of units are the quaternion group of order eight and the binary tetrahedral group of order twenty-four. The unit sphere of the real slice has for finite subgroups the cyclic groups, the binary dihedral groups and the three binary polyhedral groups of orders $24$, $48$ and $120$. The complex order, the integral biquaternions, behaves differently: its group of units is infinite, generated along a nilpotent direction, so the finite unit groups are the real ones.
 
-This article is the integral and finite-group entry of the Topology group. The lattice-theoretic treatment of the quaternion orders — rank, index, covolume, duality, base change — is *Lattices and the Quaternion Lattice*; the order theory of the quaternion algebra over $\mathbb{Q}$, with maximality and the arithmetic of the norm, is *Division Algebras*; the Clifford lift of the finite reflection groups and the McKay correspondence are *Reflection Groups and Clifford Algebras* and *Root Systems and Classification*. Those results are cited, not re-derived, and the present article owns their biquaternion statement: the orders inside $\mathbb{B}$, their finite unit groups as abstract groups, and the infinite unit group of the complex order.
+This article is the integral and finite-group entry of the Topology group. The lattice-theoretic treatment of the quaternion orders — rank, index, covolume, duality, base change — is *Lattices and the Quaternion Lattice*; the order theory of the quaternion algebra over $\mathbb{Q}$, with maximality and the arithmetic of the norm, is *Division Algebras*; the Clifford lift of the finite reflection groups and the McKay correspondence are *Reflection Groups and Clifford Algebras with Signed Inner Conjugation* and *Root Systems and Classification*. Those results are cited, not re-derived, and the present article owns their biquaternion statement: the orders inside $\mathbb{B}$, their finite unit groups as abstract groups, and the infinite unit group of the complex order.
 
 **Conventions.** The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_0=1,e_1,e_2,e_3$, central scalar imaginary $i$, products $e_1e_2=e_3$, $e_2e_3=e_1$, $e_3e_1=e_2$ and $e_k^2=-e_0$, so that $e_1e_2e_3=-e_0$. The quaternion subspace $\mathbb{H}_{\mathbb{B}}=\mathbb{R}\{e_0,e_1,e_2,e_3\}$ is the real slice (*Biquaternion Quaternion Subspace*). The norm is $N(\tilde{Q})=\sum_\mu Q_\mu^2$, and on the real slice it is the positive definite form $\sum_\mu q_\mu^2$.
 
@@ -26,7 +26,7 @@ $$
 
 **Theorem.** The Hurwitz order contains the Lipschitz order with index two, and it is a maximal order of $\mathbb{H}$; the Lipschitz order is an order but is not maximal.
 
-**Proof.** The change of basis from $(e_0,e_1,e_2,e_3)$ to $(\omega,e_1,e_2,e_3)$ has determinant $\tfrac12$, so the index is $|\det|^{-1}=2$; equivalently $\mathcal{L}'/\mathcal{L}\cong\mathbb{Z}/2$, of prime order. Maximality of $\mathcal{L}'$ is the classical statement that the Hurwitz order is a maximal order in the rational quaternion algebra, and the half-integral element of $\mathcal{L}'\setminus\mathcal{L}$ witnesses that $\mathcal{L}$ is not maximal (*Division Algebras*); the module-level computations of index and covolume are in *Lattices and the Quaternion Lattice*. $\square$
+**Proof.** The change of basis from $(e_0,e_1,e_2,e_3)$ to $(\omega,e_1,e_2,e_3)$ has determinant $\tfrac12$, so the index is $|\det|^{-1}=2$; equivalently $\mathcal{L}'/\mathcal{L}\cong\mathbb{Z}/2$, of prime order. Maximality of $\mathcal{L}'$ is the classical statement that the Hurwitz order is a maximal order in the rational quaternion algebra, and the half-integral element of $\mathcal{L}'\setminus\mathcal{L}$ witnesses that $\mathcal{L}$ is not maximal (*Division Algebras*); the module-level computations of index and covolume are in *Lattices and the Quaternion Lattice*.
 
 **Remark.** The orders are orders in the *real* quaternion algebra, inside the quaternion subspace of $\mathbb{B}$. The biquaternion algebra contains them and their complexification, and it is the complexification that changes the nature of the unit group, below.
 
@@ -41,7 +41,7 @@ $$
 (\mathcal{L}')^{\times}=\mathcal{L}^{\times}\cup\{\tfrac12(\pm e_0\pm e_1\pm e_2\pm e_3)\}\cong 2T .
 $$
 
-**Proof.** On real quaternion coordinates the norm is $N(x)=\sum_\mu q_\mu^2\geq0$, an integer for $x$ in either order; the inverse is $x^{-1}=x^*/N(x)$ with $x^*$ the quaternion conjugate, and $x^*$ lies in the order whenever $x$ does, so $x$ is a unit exactly when $N(x)=1$. The norm-one elements with integer coordinates are the eight signed units $\pm e_\mu$, and with half-integer coordinates they are those together with the sixteen elements $\tfrac12(\pm e_0\pm e_1\pm e_2\pm e_3)$, of norm one. The resulting groups are closed under multiplication, have the stated orders, and are the quaternion group and the binary tetrahedral group respectively. $\square$
+**Proof.** On real quaternion coordinates the norm is $N(\tilde q)=\sum_\mu q_\mu^2\geq0$, an integer for $\tilde q$ in either order; the inverse is $\tilde q^{-1}=\tilde q^*/N(\tilde q)$ with $\tilde q^*$ the quaternion conjugate, and $\tilde q^*$ lies in the order whenever $\tilde q$ does, so $\tilde q$ is a unit exactly when $N(\tilde q)=1$. The norm-one elements with integer coordinates are the eight signed units $\pm e_\mu$, and with half-integer coordinates they are those together with the sixteen elements $\tfrac12(\pm e_0\pm e_1\pm e_2\pm e_3)$, of norm one. The resulting groups are closed under multiplication, have the stated orders, and are the quaternion group and the binary tetrahedral group respectively.
 
 **Remark (the two indices).** The lattices have index $2$, but the unit groups have index $24/8=3$: the Lipschitz units are a proper subgroup of index three in the Hurwitz units, so the two notions of index do not agree.
 
@@ -53,7 +53,7 @@ $$
 $$
 the binary tetrahedral, octahedral and icosahedral groups.
 
-The Clifford realisation of these groups as the even parts of the lifts of the finite reflection groups, and the McKay correspondence, are *Reflection Groups and Clifford Algebras*; the classification of the reflection groups is *Root Systems and Classification*. The binary dihedral groups are the twofold preimages of the dihedral groups, of order four times the dihedral order, and the Hurwitz order realises $2T$ integrally, as above.
+The Clifford realisation of these groups as the even parts of the lifts of the finite reflection groups, and the McKay correspondence, are *Reflection Groups and Clifford Algebras with Signed Inner Conjugation*; the classification of the reflection groups is *Root Systems and Classification*. The binary dihedral groups are the twofold preimages of the dihedral groups, of order four times the dihedral order, and the Hurwitz order realises $2T$ integrally, as above.
 
 ## The Integral Biquaternions
 
@@ -70,7 +70,7 @@ They form an order in $\mathbb{B}$ over $\mathbb{Z}[i]$, and the larger $\Lambda
 $$
 (e_0+n)^k=e_0+kn .
 $$
-Each of these elements has norm $N(e_0+kn)=1+k^2+(ik)^2=1$, since the coefficients of $e_0+kn$ are $Q_0=1$, $Q_1=k$, $Q_2=ik$, $Q_3=0$; a norm-one element has inverse its conjugate and so is a unit. Hence $\Lambda^{\times}$ contains the infinite family $\{e_0+kn:k\in\mathbb{Z}\}$. $\square$
+Each of these elements has norm $N(e_0+kn)=1+k^2+(ik)^2=1$, since the coefficients of $e_0+kn$ are $Q_0=1$, $Q_1=k$, $Q_2=ik$, $Q_3=0$; a norm-one element has inverse its conjugate and so is a unit. Hence $\Lambda^{\times}$ contains the infinite family $\{e_0+kn:k\in\mathbb{Z}\}$.
 
 **Remark.** The finite unit groups are therefore those of the *real* order, not of the complex one. The presence of nilpotent directions in the complex order is the same phenomenon as the presence of zero divisors in the algebra at large: $\mathbb{B}\cong M_2(\mathbb{C})$ is not a division algebra, and its integral order inherits unipotent units.
 

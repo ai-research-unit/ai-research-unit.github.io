@@ -34,7 +34,7 @@ The geometry of the algebra is read in six articles, one per face of it, and eac
 - **The geometries.** *Biquaternion Lorentzian and Conformal Geometry* reads the two real slices: Minkowski space with its light cone, the Lorentz group as the conformal group of the celestial sphere, the conformal group $SU(2,2)\cong Spin(4,2)$, the conformal model of Euclidean space, and the split slice.
 - **The spin geometry.** *Biquaternion Spin Geometry* reads the geometry the Clifford structure defines: the spinor module and its two chiral halves, the spinors as the minimal left ideals, the spin representation, and the Dirac operator.
 
-Behind them stand the general articles of Part IV — *Pseudo-Riemannian and Lorentzian Geometry*, *The Conformal Model of Euclidean Space*, *Spin Geometry* and *The Dirac Operator* — and the construction of the rotation and reflection groups in *Biquaternion Rotations and Lorentz Transformations* and *Versors, Rotors and the Sandwich Action* of Part II. Those are cited, not restated.
+Behind them stand the general articles of Part IV — *Pseudo-Riemannian and Lorentzian Geometry*, *The Conformal Model of Euclidean Space*, *Spin Geometry* and *The Dirac Operator* — and the construction of the rotation and reflection groups in *Biquaternion Rotations and Lorentz Transformations* and *Versors, Rotors and the Sandwich Action with Signed Inner Conjugation* of Part II. Those are cited, not restated.
 
 ## Summary
 

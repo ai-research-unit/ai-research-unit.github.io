@@ -23,7 +23,7 @@ $$
 
 **Theorem.** The Hurwitz order contains the Lipschitz order with index two, and it is a maximal order of $\mathbb{H}$; the Lipschitz order is an order but is not maximal.
 
-*Proof.* The change of basis from $(e_0,e_1,e_2,e_3)$ to $(\omega,e_1,e_2,e_3)$ has determinant $\tfrac12$, so the index is $|\det|^{-1}=2$; equivalently $\mathcal{L}'/\mathcal{L}\cong\mathbb{Z}/2$, of prime order. Maximality of $\mathcal{L}'$ is the classical statement that the Hurwitz order is a maximal order in the rational quaternion algebra, and the half-integral element of $\mathcal{L}'\setminus\mathcal{L}$ witnesses that $\mathcal{L}$ is not maximal. $\square$
+*Proof.* The change of basis from $(e_0,e_1,e_2,e_3)$ to $(\omega,e_1,e_2,e_3)$ has determinant $\tfrac12$, so the index is $|\det|^{-1}=2$; equivalently $\mathcal{L}'/\mathcal{L}\cong\mathbb{Z}/2$, of prime order. Maximality of $\mathcal{L}'$ is the classical statement that the Hurwitz order is a maximal order in the rational quaternion algebra, and the half-integral element of $\mathcal{L}'\setminus\mathcal{L}$ witnesses that $\mathcal{L}$ is not maximal.
 
 **Remark.** The orders are orders in the *real* quaternion algebra, inside the quaternion subspace of $\mathbb{B}$. The biquaternion algebra contains them and their complexification, and it is the complexification that changes the nature of the unit group, below.
 
@@ -40,7 +40,7 @@ $$
 (\mathcal{L}')^{\times}\cong 2T=\{\pm e_0,\pm e_1,\pm e_2,\pm e_3,\tfrac12(\pm e_0\pm e_1\pm e_2\pm e_3)\}.
 $$
 
-**Proof.** On real quaternion coordinates the norm is $N(x)=\sum_\mu q_\mu^2\geq0$, an integer for $x$ in either order; the inverse is $x^{-1}=\bar{x}/N(x)$ with $\bar{x}$ the quaternion conjugate, and $\bar{x}$ lies in the order whenever $x$ does, so $x$ is a unit exactly when $N(x)=1$. The norm-one elements with integer coordinates are the eight signed units $\pm e_\mu$, and with half-integer coordinates they are those together with the sixteen elements $\tfrac12(\pm e_0\pm e_1\pm e_2\pm e_3)$, of norm one. The resulting groups are closed under multiplication, have the stated orders, and are the quaternion group and the binary tetrahedral group respectively. $\square$
+**Proof.** On real quaternion coordinates the norm is $N(\tilde q)=\sum_\mu q_\mu^2\geq0$, an integer for $\tilde q$ in either order; the inverse is $\tilde q^{-1}=\bar{\tilde q}/N(\tilde q)$ with $\bar{\tilde q}$ the quaternion conjugate, and $\bar{\tilde q}$ lies in the order whenever $\tilde q$ does, so $\tilde q$ is a unit exactly when $N(\tilde q)=1$. The norm-one elements with integer coordinates are the eight signed units $\pm e_\mu$, and with half-integer coordinates they are those together with the sixteen elements $\tfrac12(\pm e_0\pm e_1\pm e_2\pm e_3)$, of norm one. The resulting groups are closed under multiplication, have the stated orders, and are the quaternion group and the binary tetrahedral group respectively.
 
 **Remark (the two indices).** The lattices have index $2$, but the unit groups have index $24/8=3$: the Lipschitz units are a proper subgroup of index three in the Hurwitz units, so the two notions of index do not agree.
 

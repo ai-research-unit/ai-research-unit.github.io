@@ -5,7 +5,7 @@
 
 This article treats the analysis of functions of a split-quaternion variable. It records the metric and topological structure, defines limits and continuity, explains why the naive derivative fails, presents the differential operators of the system and identifies their type, treats power series, and describes the singularities caused by the zero divisors.
 
-The split-quaternion algebra, its split-quaternion norm and its idempotents are assumed from *Split-Quaternion Algebra*; the units and the zero divisors from *Split-Quaternion Norm and Invertibility* and *Split-Quaternion Zero Divisors*; the metric and the geometry of the forms from *Split-Quaternion Geometry*. The analytic theory of the division-algebra case is that of *Quaternion Analysis*, and of the two-dimensional hyperbolic case that of *Split-Complex Integration*; the differential operators of the definite (Clifford) case are those of *Clifford Analysis*, *Dirac Operators* and *Regularity and the Cauchy–Riemann Operator*. Nothing physical is invoked.
+The split-quaternion algebra, its split-quaternion norm and its idempotents are assumed from *Split-Quaternion Algebra*; the units and the zero divisors from *Split-Quaternion Norm and Invertibility* and *Split-Quaternion Zero Divisors*; the metric and the geometry of the forms from *Split-Quaternion Geometry*. The analytic theory of the division-algebra case is that of *Quaternion Analysis*, and of the two-dimensional hyperbolic case that of *Split-Complex Integration*; the differential operators of the definite (Clifford) case are those of *Clifford Analysis*, *Dirac Differential Operators* and *Regularity and the Cauchy–Riemann Operator*. Nothing physical is invoked.
 
 ## The Metric Structure
 

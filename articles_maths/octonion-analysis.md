@@ -173,7 +173,7 @@ the integral being over the sphere of radius $r$, whose volume is $\omega_7r^7$;
 
 ## Comparison with the Associative Clifford Case
 
-The octonionic Cauchy–Riemann operator is a first-order elliptic operator whose square is the Laplacian, and in this it is an operator of the family that the companion article *Dirac Operators*, written in parallel, treats as mathematics under the classical name. The comparison with the associative Clifford case isolates exactly what the failure of associativity costs, and what it does not.
+The octonionic Cauchy–Riemann operator is a first-order elliptic operator whose square is the Laplacian, and in this it is an operator of the family that the companion article *Dirac Differential Operators*, written in parallel, treats as mathematics under the classical name. The comparison with the associative Clifford case isolates exactly what the failure of associativity costs, and what it does not.
 
 **Theorem.** Let $A$ be a real associative algebra with a positive definite inner product and an orthonormal basis $f_1,\dots,f_m$ satisfying the Clifford relations, and let $\mathcal{D} = \sum_kf_k\partial_k$ on $A$-valued functions of $m$ variables. Then the left-monogenic functions form a left $A$-module, and for constant $a$ one has $\mathcal{D}(af) = a(\mathcal{D}f)$; the product of two monogenic functions need not be monogenic in this case either.
 

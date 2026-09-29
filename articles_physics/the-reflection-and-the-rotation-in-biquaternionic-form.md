@@ -35,7 +35,7 @@ $$
 \rho(u): x \mapsto -\,u\,x\,u^{-1}, \qquad u\ \text{odd},\ u^2 = \pm I_4 ,
 $$
 
-which is the twisted adjoint. The sign in front is the only difference from the even formula, and it is what makes the odd elements reflections rather than rotations.
+which is the signed inner conjugation. The sign in front is the only difference from the even formula, and it is what makes the odd elements reflections rather than rotations.
 
 ## The Grading by Reflection Count
 

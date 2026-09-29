@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This article is an application of the Jordan theory to convex geometry. The base structure is a **commutative ring** $R$ with identity $1 \neq 0$, but the results are specific to the formally real algebras over $\mathbb{R}$, where a cone can be defined. The Jordan conventions are those of *Jordan Algebras*: the commutative product $\circ$, the square $x^2 = x\circ x$, the identity $[L_x, L_{x^2}] = 0$, the trace form $T(x,y) = \operatorname{tr}(L_{x\circ y})$ and the Peirce decomposition; the examples are those of *Special and Exceptional Jordan Algebras* and *Spin Factors and the Clifford Envelope*.
+This article is an application of the Jordan theory to convex geometry. The base structure is a **commutative ring** $R$ with identity $1 \neq 0$, but the results are specific to the formally real algebras over $\mathbb{R}$, where a cone can be defined. The Jordan conventions are those of *Jordan Algebras*: the commutative product $\circ$, the square $x^2 = x\circ x$, the identity $[L_x, L_{x^2}] = 0$, the trace form $T(x,y) = \operatorname{tr}(L_{x\circ y})$ and the Peirce decomposition; the examples are those of *Special and Exceptional Jordan Algebras* and *Spin Factors and the Clifford Envelope with Inner Conjugation*.
 
 To a formally real Jordan algebra one attaches its **positive cone**
 
@@ -110,7 +110,7 @@ The existence of the resolution rests on power associativity and the Peirce deco
 
 ### The Second-Order Cone
 
-Let $J = JSpin(V)$ for a positive definite form $q$ on a finite-dimensional real vector space $V$, as in *Spin Factors and the Clifford Envelope*: elements $(\alpha, v)$ with $(\alpha, v)^2 = (\alpha^2 + q(v),\, 2\alpha v)$.
+Let $J = JSpin(V)$ for a positive definite form $q$ on a finite-dimensional real vector space $V$, as in *Spin Factors and the Clifford Envelope with Inner Conjugation*: elements $(\alpha, v)$ with $(\alpha, v)^2 = (\alpha^2 + q(v),\, 2\alpha v)$.
 
 **Proposition.** $J_+ = \{(\alpha, v) : \alpha \geq 0,\ \alpha^2 \geq q(v)\}$, the second-order cone of the form $q$.
 
@@ -213,7 +213,7 @@ The interior $\Omega = \operatorname{int} J_+$ of the positive cone of a finite-
 1. **homogeneous**: the group of linear automorphisms of $\Omega$ acts transitively on it;
 2. **self-dual**: the dual cone $\{y : T(x,y) \geq 0 \text{ for all } x \in \overline{\Omega}\}$ equals $\overline{\Omega}$, with respect to the trace form $T$ of *Jordan Algebras*.
 
-For $H_n(\mathbb{R})$ the cone of positive definite matrices is homogeneous under $x \mapsto sxs^{\mathsf T}$ for $s$ invertible, and self-dual for the trace pairing $\langle x, y\rangle = \operatorname{tr}(xy)$; for the spin factor the cone is homogeneous under the conformal orthogonal group of the norm $N(\alpha, v) = \alpha^2 - q(v)$ on $\mathbb{R} \oplus V$, by the last section of *Spin Factors and the Clifford Envelope*.
+For $H_n(\mathbb{R})$ the cone of positive definite matrices is homogeneous under $x \mapsto sxs^{\mathsf T}$ for $s$ invertible, and self-dual for the trace pairing $\langle x, y\rangle = \operatorname{tr}(xy)$; for the spin factor the cone is homogeneous under the conformal orthogonal group of the norm $N(\alpha, v) = \alpha^2 - q(v)$ on $\mathbb{R} \oplus V$, by the last section of *Spin Factors and the Clifford Envelope with Inner Conjugation*.
 
 **Theorem (Koecher–Vinberg).** The symmetric cones are exactly the interiors of the positive cones of finite-dimensional formally real Jordan algebras; the correspondence between the cone and the algebra is bijective up to isomorphism.
 
@@ -221,7 +221,7 @@ This is the precise sense in which the positive cone and the algebra are the sam
 
 ### Structure Group and Cone Automorphisms
 
-Two groups act on a formally real Jordan algebra, and they must not be confused. The **algebra automorphism group** $\operatorname{Aut}(J)$ preserves the product and hence the cone, since it carries squares to squares: for a simple formally real algebra it is compact and acts transitively on the primitive idempotents, that is on the extreme rays of $J_+$. The **structure group** $\operatorname{Str}(J)$ of *Spin Factors and the Clifford Envelope*, the linear maps $s$ with $N(sx) = \nu(s)N(x)$ for a scalar $\nu(s)$, is larger and noncompact; it is the group that acts transitively on the open cone $\Omega$, and this transitivity is the homogeneity of the symmetric cone. The tabulation of algebra automorphism groups of the simple formally real algebras is
+Two groups act on a formally real Jordan algebra, and they must not be confused. The **algebra automorphism group** $\operatorname{Aut}(J)$ preserves the product and hence the cone, since it carries squares to squares: for a simple formally real algebra it is compact and acts transitively on the primitive idempotents, that is on the extreme rays of $J_+$. The **structure group** $\operatorname{Str}(J)$ of *Spin Factors and the Clifford Envelope with Inner Conjugation*, the linear maps $s$ with $N(sx) = \nu(s)N(x)$ for a scalar $\nu(s)$, is larger and noncompact; it is the group that acts transitively on the open cone $\Omega$, and this transitivity is the homogeneity of the symmetric cone. The tabulation of algebra automorphism groups of the simple formally real algebras is
 
 | $J$ | $\dim J$ | $\operatorname{Aut}(J)$ | $\operatorname{Str}(J)$ |
 |---|---|---|---|

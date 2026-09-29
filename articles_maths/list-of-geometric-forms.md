@@ -20,11 +20,11 @@ The bilinear form is the basic datum: a rule linear in each argument, represente
 | the rank $\operatorname{rank}(B)$ | the rank of the Gram matrix; the discriminant $\Delta(B) = \det G \in F^\times/(F^\times)^2$ | *Bilinear Forms* |
 | the orthogonal direct sum $B_1 \perp B_2$ | the form on $M_1 \oplus M_2$ with $B(M_1,M_2) = 0$; the operation of the classification | *Bilinear Forms* |
 | the isometry group $\operatorname{Isom}(M,B)$ | the linear maps preserving $B$; $\operatorname{O}(M,B)$ in the symmetric case, $\operatorname{Sp}(M,B)$ in the alternating case | *Bilinear Forms*; *List of Classical Geometric Groups* |
-| a $\sigma$-sesquilinear form | linear in one argument and $\sigma$-linear in the other for an involution $\sigma$ of the ring | *Hermitian Forms and Involutions* |
-| a Hermitian form $s(x,y)$ | $s(x,y) = \sigma(s(y,x))$; the diagonal $q(x) = s(x,x)$ is a quadratic form over the fixed ring | *Hermitian Forms and Involutions* |
-| the Hermitian Gram matrix $H$ | $H^\dagger = \sigma(H)^T = H$; the unitary group is its isometry group | *Hermitian Forms and Involutions*; *The Unitary and Symplectic Groups* |
-| the trace form $T(x,y) = \operatorname{Tr}(m_{xy})$ | the regular trace of a finite-dimensional algebra; the reduced trace form in the central simple case | *Hermitian Forms and Involutions* |
-| the reduced norm $\operatorname{Nrd}$ | the norm of a central simple algebra of degree $d$; a form of dimension $d^2$ | *Hermitian Forms and Involutions* |
+| a $\sigma$-sesquilinear form | linear in one argument and $\sigma$-linear in the other for an involution $\sigma$ of the ring | *Involutive Clifford Algebras* |
+| a Hermitian form $s(x,y)$ | $s(x,y) = \sigma(s(y,x))$; the diagonal $q(x) = s(x,x)$ is a quadratic form over the fixed ring | *Involutive Clifford Algebras* |
+| the Hermitian Gram matrix $H$ | $H^\dagger = \sigma(H)^T = H$; the unitary group is its isometry group | *Involutive Clifford Algebras*; *The Unitary and Symplectic Groups* |
+| the trace form $T(x,y) = \operatorname{Tr}(m_{xy})$ | the regular trace of a finite-dimensional algebra; the reduced trace form in the central simple case | *Involutive Clifford Algebras* |
+| the reduced norm $\operatorname{Nrd}$ | the norm of a central simple algebra of degree $d$; a form of dimension $d^2$ | *Involutive Clifford Algebras* |
 
 ## The Quadratic Forms
 
@@ -95,7 +95,7 @@ The norms of the number systems are the examples through which the general theor
 | an alternating form in characteristic $2$ | it is not the same as a skew-symmetric form; skew-symmetry with $\omega(u,u) = 0$ is the condition available over every ring | *The Determinant and Alternating Forms*; *Symplectic Forms and Poisson Brackets* |
 | the split octonions | their norm is isotropic, unlike the norm of the division algebra $\mathbb{O}$; the two are different forms of the same dimension | *Quadratic Forms over Algebras and Norms* |
 | the classification over $\mathbb{Q}$ | it is not read from the signature alone; the Hasse–Minkowski principle needs the local invariants at the completions | *Witt's Theorems* |
-| the Hermitian form over a non-commutative ring | the diagonal $q(x) = s(x,x)$ is a quadratic form over the fixed ring and not over the base; the transfer is part of the theory | *Hermitian Forms and Involutions* |
+| the Hermitian form over a non-commutative ring | the diagonal $q(x) = s(x,x)$ is a quadratic form over the fixed ring and not over the base; the transfer is part of the theory | *Involutive Clifford Algebras* |
 | a degenerate form, $\langle 0\rangle$ | its matrix is not invertible and there is no discriminant in $F^\times/(F^\times)^2$; the radical is the whole space | *Bilinear Forms* |
 | a form of odd dimension over a finite field | the discriminant alone does not classify it in characteristic $2$; the classification stated above needs $q$ odd | *Witt's Theorems* |
 

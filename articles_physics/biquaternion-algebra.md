@@ -449,7 +449,7 @@ $$
 This is why the time coordinate is written $ict$: the single algebraic operation $N$ then reproduces the metric of relativistic physics with no $i$ inserted by hand and no sign chosen by hand. On the informational coordinate the same form gives the opposite signature:
 
 $$
-N\!\left(ct'\,e_0 + i\mathbf{x}'\right) = c^2t'^2 - \mathbf{x}'^2 .
+N\!\left(ct'\,e_0 + i\mathbf{x}'\right) = c^2(t')^2 - (\mathbf{x}')^2 .
 $$
 
 The vanishing of the biquaternion norm is the light cone: $N(ict\,e_0 + x e_1) = 0$ exactly when $x = \pm ct$, and the null material coordinates are the zero divisors of the algebra. The two signatures are worked out in **The Two Real Restrictions** below, and the physics of the zero divisors in *The Light Cone as the Biquaternion Zero Divisor Cone* and *Zero Divisors as a Physical Locus in Biquaternionic Form*.
@@ -479,7 +479,7 @@ using $[\mathbf{Q},\mathbf{Q}^{*}] = -2i[\mathbf{q},\mathbf{q}']$ and $Q_0^{*}\m
 So the vector terms are not free: they are the vector part of the product, built from $\mathbf{Q}$, $\mathbf{Q}^{*}$ and $Q_0$. The result is generally a **biquaternion**, not a scalar, and it is Hermitian: $\tilde{Q}\tilde{Q}^\dagger$ is fixed by $\dagger$, hence lies in the informational sector $\mathbb{M}_+$. Its scalar part is
 
 $$
-\mathrm{Sc}\!\left(\tilde{Q} \tilde{Q}^\dagger\right) = \sum_{\mu=0}^{3} |Q_\mu|^2 = \sum_{\mu=0}^{3} \left(q_\mu^2 + q'^2_\mu\right),
+\mathrm{Sc}\!\left(\tilde{Q} \tilde{Q}^\dagger\right) = \sum_{\mu=0}^{3} |Q_\mu|^2 = \sum_{\mu=0}^{3} \left(q_\mu^2 + (q'_\mu)^2\right),
 $$
 
 non-negative, vanishing only for $\tilde{Q} = 0$. Its vector part vanishes exactly when the four coefficients are real multiples of one complex number, $Q_\mu = \lambda r_\mu$ with $\lambda \in \mathbb{C}$ and $r_\mu \in \mathbb{R}$; equivalently, when every ratio $Q_\mu/Q_\nu$ of nonzero coefficients is real. For example, $\tilde{Q} = e_0 + ie_1$ has coefficients $Q_0 = 1$ and $Q_1 = i$, not real multiples of one another, so
@@ -557,9 +557,9 @@ The two **sectors** are where the form becomes indefinite, and they are the two 
 | subspace | basis | biquaternion norm | signature |
 |---|---|---|---|
 | $\mathbb{H}_{\mathbb{B}}$ (real) | $e_0, e_1, e_2, e_3$ | $q_0^2 + \mathbf{q}^2$ | $(+,+,+,+)$ |
-| $i\mathbb{H}_{\mathbb{B}}$ (imaginary) | $ie_0, ie_1, ie_2, ie_3$ | $-(q'^2_0 + \mathbf{q}'^2)$ | $(-,-,-,-)$ |
+| $i\mathbb{H}_{\mathbb{B}}$ (imaginary) | $ie_0, ie_1, ie_2, ie_3$ | $-((q'_0)^2 + (\mathbf{q}')^2)$ | $(-,-,-,-)$ |
 | $\mathbb{M}_-$ (material) | $ie_0, e_1, e_2, e_3$ | $-c^2t^2 + \mathbf{x}^2$ | $(-,+,+,+)$ |
-| $\mathbb{M}_+$ (informational) | $e_0, ie_1, ie_2, ie_3$ | $c^2t'^2 - \mathbf{x}'^2$ | $(+,-,-,-)$ |
+| $\mathbb{M}_+$ (informational) | $e_0, ie_1, ie_2, ie_3$ | $c^2(t')^2 - (\mathbf{x}')^2$ | $(+,-,-,-)$ |
 
 The material signature is the $ict$ metric of the series, $-c^2t^2 + \mathbf{x}^2$, and it is the signature of spacetime. The informational signature is its negative, which is not a second spacetime but the same form read on the other end of the dictionary. The two are exchanged by multiplication by $i$, exactly as the two sectors are. Only the two indefinite subspaces carry null elements, $N(\tilde{Q}) = 0$ with $\tilde{Q} \neq 0$; the light cone is the null cone of the material restriction.
 
