@@ -119,7 +119,7 @@ $$</p>
 <p><strong>Theorem (existence of localisations).</strong> Let $\mathcal{C}$ be a left proper, combinatorial model category and $S$ a set of morphisms. Then the left Bousfield localisation $L_S\mathcal{C}$ exists and is again combinatorial and left proper, and it is the universal model category under $\mathcal{C}$ in which the morphisms of $S$ become weak equivalences. This is Smith's theorem, and it is the technical device by which the stable homotopy category of spectra, constructed as a localisation of the category of spectra with the levelwise structure, is obtained from a simpler model structure; the construction and the resulting stable homotopy category are not covered here.</p>
 <p><strong>Example (localisations at a set of primes and at the rationals).</strong> Localising the model category of spaces at the maps $S^{n+1}\to S^{n+1}$ of degree $p$ for a prime $p$ makes the $p$-local spheres into the local objects, and the resulting homotopy category is that of $p$-local spaces; localising at the maps of degree $m$ for all $m\neq0$ gives the rational homotopy category, in which the homotopy groups are rational vector spaces and the algebraic models of Quillen and Sullivan apply. In each case the localisation exists by the theorem, and the localised category is where the corresponding invariant lives.</p>
 <h3 id="monoidal-and-enriched-structure">Monoidal and Enriched Structure</h3>
-<p><strong>Definition.</strong> A <strong>monoidal model category</strong> is a model category with a symmetric monoidal structure, a unit, and the <strong>pushout-product axiom</strong>: for a cofibration $i$ and a cofibration $j$ the induced map $i j$ on the pushout-product is a cofibration, acyclic if either $i$ or $j$ is. A <strong>simplicial model category</strong> is a model category enriched over simplicial sets with a compatible action, so that the mapping objects $\operatorname{Map}(X,Y)$ are simplicial sets and the axioms of Quillen's homotopical algebra hold.</p>
+<p><strong>Definition.</strong> A <strong>monoidal model category</strong> is a model category with a symmetric monoidal structure, a unit, and the <strong>pushout-product axiom</strong>: for a cofibration $i$ and a cofibration $j$ the induced map $i\Box j$ on the pushout-product is a cofibration, acyclic if either $i$ or $j$ is. A <strong>simplicial model category</strong> is a model category enriched over simplicial sets with a compatible action, so that the mapping objects $\operatorname{Map}(X,Y)$ are simplicial sets and the axioms of Quillen's homotopical algebra hold.</p>
 <p><strong>Theorem.</strong> Let $\mathcal{C}$ be a monoidal model category.</p>
 <ol>
 <li>The homotopy category $\operatorname{Ho}(\mathcal{C})$ inherits a symmetric monoidal structure, and the monoids and the modules over a monoid may be defined homotopically: a <strong>monoid</strong> is a monoid object in $\operatorname{Ho}(\mathcal{C})$ together with a multiplication that is associative up to coherent homotopy, and the resulting homotopy theory of monoids and their modules is the homotopical algebra of the structures of Part I's <em>Algebras</em> and <em>Differential Graded Algebras</em>, carried out at the level of homotopy.</li>
@@ -197,7 +197,7 @@ $$</p>
 <td>Function complex in a simplicial model category; $\pi_0\operatorname{Map}(X,Y) = \operatorname{Ho}(\mathcal{C})(X,Y)$</td>
 </tr>
 <tr>
-<td>Pushout-product $i j$</td>
+<td>Pushout-product $i\Box j$</td>
 <td>Axiom making the monoidal structure homotopy invariant</td>
 </tr>
 <tr>
