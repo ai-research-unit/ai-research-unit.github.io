@@ -4,7 +4,7 @@
 
 The biquaternion algebra $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ is the four-dimensional complex algebra with basis $e_0 = 1, e_1, e_2, e_3$, where $e_k^2 = -e_0$ and $e_1e_2 = e_3$, with central scalar imaginary $i$, and with general element $\tilde{Q} = \sum_{\mu=0}^{3} Q_\mu e_\mu$. The matrix realization $\Phi : \mathbb{B} \to M_2(\mathbb{C})$, with $\Phi(e_k) = -i\sigma_k$, $\det\Phi(\tilde{Q}) = N(\tilde{Q})$ and $\operatorname{Tr}\Phi(\tilde{Q}) = 2Q_0$, is that of *The 2×2 Matrix Element Representation of Biquaternions*, together with the simple module $V = \mathbb{C}^2$ on which the matrices act and which carries the two chiralities of the framework.
 
-The element article answers *what is* $\tilde{Q}$ by displaying its matrix. This article answers *what does* $\tilde{Q}$ *do*, and it answers it in the smallest space that carries an action at all: the algebra is $M_2(\mathbb{C})$, and the Hermitian sandwich of *Biquaternion Operator Representation Theory* acts on it by the **congruence**
+The element article answers *what is* $\tilde{Q}$ by displaying its matrix. This article answers *what does* $\tilde{Q}$ *do*, and it answers it in the smallest space that carries an action at all: the algebra is $M_2(\mathbb{C})$, and the Hermitian sandwich of *Biquaternion Rotations and Lorentz Transformations* acts on it by the **congruence**
 
 $$
 X \longmapsto M X M^{\dagger}, \qquad M = \Phi(\tilde{Q}) .
@@ -110,7 +110,7 @@ $$
 
 The element corresponding to the Hermitian matrix $uu^{\dagger}$, normalised, is a minimal idempotent of $\mathbb{B}$; the operator is nilpotent when $Q_0 = 0$ and a scaled projection when $Q_0 \neq 0$.
 
-**Proof.** $MXM^{\dagger} = uv^{\dagger}X(vu^{\dagger}) = u(v^{\dagger}Xv)u^{\dagger}$, the parenthesis being a scalar; so every image is a multiple of $uu^{\dagger}$, which is nonzero and Hermitian, and the image has complex dimension one. The rank statement and the square are *Biquaternion Operator Representation Theory*, and the identification of $uu^{\dagger}$ with a minimal idempotent is the statement that an idempotent of $M_2(\mathbb{C})$ is a rank-one projection. $\square$
+**Proof.** $MXM^{\dagger} = uv^{\dagger}X(vu^{\dagger}) = u(v^{\dagger}Xv)u^{\dagger}$, the parenthesis being a scalar; so every image is a multiple of $uu^{\dagger}$, which is nonzero and Hermitian, and the image has complex dimension one. The rank statement and the square are *The 4×4 Regular Matrix Operator Representation of Biquaternions*, and the identification of $uu^{\dagger}$ with a minimal idempotent is the statement that an idempotent of $M_2(\mathbb{C})$ is a rank-one projection. $\square$
 
 **Example (nilpotent).** For $\tilde{Q} = e_1 + ie_2$, a zero divisor with $Q_0 = 0$,
 

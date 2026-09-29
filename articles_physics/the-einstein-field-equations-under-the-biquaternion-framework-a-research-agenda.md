@@ -251,7 +251,7 @@ The honest position of the framework's gravity programme is therefore this. It c
 - *Gravitational Waves in Biquaternionic Form* — the harmonic gauge, the count $10 \to 6 \to 2$, the polarisations, and the quadrupole formula.
 - *The Gauge Principle in Biquaternionic Form* and *The Covariant Derivative and Gauge Connection in Biquaternionic Form* — the abelian gauge pattern the linearised diffeomorphism imitates, and the connection formalism.
 - *Exercise: The Electromagnetic Energy–Momentum Tensor* and *The Field-Strength Biquaternion and Its Invariants* — the bilinear construction of a rank-two tensor, relevant to the traceless-carrier item.
-- *Biquaternion Element Representation Theory* — the representation theory behind the $(1,1)\oplus(0,0)$ and $(\tfrac12,\tfrac12)$ bookkeeping and the little-group item.
+- *The Lorentz Group in Biquaternionic Form — Structure and Representations* — the representation theory behind the $(1,1)\oplus(0,0)$ and $(\tfrac12,\tfrac12)$ bookkeeping and the little-group item.
 - *Why Complexify Spacetime?* and *Electromagnetism in Media — The Local Complex Structure at Work* — the local complex structure and its physical readings.
 - *The Spinor Module in Biquaternionic Form and Its Lorentz Action* and *The Lorentz Group in Biquaternionic Form — Structure and Representations* — the spinor and Lorentz structures the agenda's carrier and helicity items rest on.
 - *Twistor Theory and Biquaternions* — the bivector and self-duality dictionary relevant to the Weyl-curvature item.

@@ -87,7 +87,7 @@ Hence every power $\tilde{Q}^n$ with $n \geq 2$ is a $\mathbb{C}$-linear combina
 
 Because $\mathbb{C}[\tilde{Q}]$ is commutative, the standard identities of complex analysis — the Pythagorean identity, the hyperbolic identity, the double-angle formulas, the relation between the exponential and the trigonometric functions — hold within it, and every elementary function $F(\tilde{Q})$ defined by a power series with coefficients in $\mathbb{C}$ lies in $\mathbb{C}[\tilde{Q}]$. This is the precise sense in which the non-commutativity of $\mathbb{B}$ does not obstruct the standard identities for a single biquaternion variable. The structure of $\mathbb{C}[\tilde{Q}]$ — its minimal polynomial, its two isomorphism types and the convergence of power series in it — is developed in *Biquaternion Spectral Theory*.
 
-**Physical reading.** The commutativity of $\mathbb{C}[\tilde{Q}]$ is why a *one-component* amplitude is as simple as a complex number: its exponential, its phase and its logarithm are single-valued functions of one element. The physically interesting content sits in the other direction — the failure of the identities for two independent biquaternions — which is the algebraic face of the fact that two fields do not simply superpose, and is what makes the module and representation theory of *Modules over the Biquaternion Algebra* and *Biquaternion Element Representation Theory* necessary.
+**Physical reading.** The commutativity of $\mathbb{C}[\tilde{Q}]$ is why a *one-component* amplitude is as simple as a complex number: its exponential, its phase and its logarithm are single-valued functions of one element. The physically interesting content sits in the other direction — the failure of the identities for two independent biquaternions — which is the algebraic face of the fact that two fields do not simply superpose, and is what makes the module and representation theory of *Modules over the Biquaternion Algebra* and *The Lorentz Group in Biquaternionic Form — Structure and Representations* necessary.
 
 ## The Exponential
 
@@ -237,7 +237,7 @@ $$
 
 a convergent series of iterated brackets. Thus $\exp(a)\exp(b)$ differs from $\exp(a+b)$ by the term $\tfrac{1}{2}[a,b]$ and higher brackets; the difference vanishes whenever $[a,b] = 0$, though the converse can fail, since a non-commuting pair may still satisfy $\exp(a)\exp(b) = \exp(a+b)$ when the BCH remainder exponentiates to $e_0$. For instance, with $a = e_1$ and $b = e_2$ the product $\exp(e_1)\exp(e_2)$ carries a term $\sin^2 1\, e_3$ that is absent from $\exp(e_1+e_2)$.
 
-**Physical reading.** The commutator term is the composition defect of two motions, and its physical name is the Wigner rotation: the composition of two non-collinear boosts is a boost followed by a rotation, not a boost. The framework's Lie-theoretic statement of this is *Biquaternion Rotations and Lorentz Transformations*; the representation-theoretic reading of the same bracket is *Biquaternion Element Representation Theory*.
+**Physical reading.** The commutator term is the composition defect of two motions, and its physical name is the Wigner rotation: the composition of two non-collinear boosts is a boost followed by a rotation, not a boost. The framework's Lie-theoretic statement of this is *Biquaternion Rotations and Lorentz Transformations*; the representation-theoretic reading of the same bracket is *The Lorentz Group in Biquaternionic Form — Structure and Representations*.
 
 ### The Kernel of the Exponential
 

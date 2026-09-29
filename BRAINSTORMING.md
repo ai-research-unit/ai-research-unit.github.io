@@ -7,8 +7,6 @@ biquaternion-topology
 
 biquaternion-null-quadric-and-projective-geometry
 
-biquaternion-element-representation-theory
-
 
 
 
@@ -423,13 +421,339 @@ pourtant operateurs ?
 
 qu'est ce que C2
 
+-1 vs dagger : quoi -1, theory ? 
+dagger C ? H ?
 
-telation M+ M- ? quid Lorentz
+
+
+relation M+ M- ? quid Lorentz
 
 Peut être que pas de boost donne M+ ???
 
 
 Chirality
+
+
+Antilinearity
+
+
+
+
+
+What the Pin group is
+
+Take a vector space V with a quadratic form q, and its Clifford algebra Cl(V,q).
+A versor is a product of non-isotropic vectors x = v_1 ... v_k.
+The Clifford group Γ is the set of units x with Ad~_x(V) ⊆ V, and
+
+    Pin(V,q) = { x ∈ Γ : N(x) = ±1 },
+    Spin     = Pin ∩ Cl^0,
+
+with N(x) = x x̄ the Clifford norm. So Pin is a norm-one slice of the
+Clifford group, Spin is its even part.
+
+Yes, it is a sandwich
+
+The action is the twisted adjoint
+
+    Ad~_x(v) = α(x) v x^{-1},   v ∈ V,
+
+with α the grade involution. One vector gives a reflection; an even versor
+gives a rotation. Cartan–Dieudonné says reflections generate O(V), so the
+sandwich reaches the whole orthogonal group. The result is the two-to-one
+covers
+
+    Pin  → O(V),
+    Spin → SO(V),
+
+with kernel ±1.
+
+The twist is the whole point. I checked numerically on Cl(3): the untwisted
+conjugation u v u^{-1} gives minus the reflection, which is a rotation of
+determinant +1, not a reflection. Only the twist α makes an odd element
+realise a reflection.
+
+How it compares with our H_Q̃(x) = Q̃ x Q̃†
+
+    Pin sandwich        Corpus sandwich
+    right factor        x^{-1}              Q̃†
+    left factor         α(x)                Q̃
+    acts on             V                   the whole algebra
+
+Same shape: element on the left, conjugate on the right. The two agree on
+the unitary slice, where Q̃† = Q̃^{-1}. Here † is complex conjugation
+composed with the Clifford conjugation α ∘ ( )^r, so the corpus sandwich
+is exactly the twisted-adjoint shape, with the extra complex conjugation
+coming from the complexified ground field.
+
+One subtlety. Over an indefinite form the norm is itself isotropic, so
+N(x) = ±1 alone is not enough and Ad~_x(V) ⊆ V must stay in the definition.
+The corpus records the counterexample in Cl(1,1) ≅ M_2(R).
+
+Owners in the corpus — nothing new needs writing: The Clifford, Pin and
+Spin Groups owns Pin, Γ, the twisted adjoint and the norm; Versors, Rotors
+and the Sandwich Action owns the sandwich; Biquaternion Rotations and
+Lorentz Transformations owns the biquaternion sandwich and
+B_1^× ≅ Spin(1,3). The "why the dagger and not the inverse" argument in
+the operator theory article is the same fact in biquaternion dress.
+
+
+
+
+
+
+So the 2 parts Topology on Clifford Algebras over commutative rings , and Topology on Clifford Algebras over commutative involutive rings ? 
+
+
+
+
+
+
+
+
+INTRODUCE SANDWICH VERY GENERALLY
+usually use -1
+but better if involutive
+
+
+
+
+YES — THIS IS THE CLEAN WAY TO ORGANIZE IT.
+
+GENERAL SETTING
+    Field F with an involution σ (trivial or not).
+    Clifford algebra Cl(V,q) over F.
+    Dagger:  x† = σ( α(x^r) ),  defined for EVERY x ∈ Cl(V,q).
+
+THE DAGGER IS THE GENERAL OPERATION
+    - Defined on the whole algebra, invertible or not.
+    - Anti-automorphism: (xy)† = y† x†.
+    - Involutive: x†† = x  (uses σ² = id).
+    - Works over any (F, σ), including σ = id.
+
+THE INVERSE IS DERIVED FROM IT
+    The inverse x^{-1} exists only on the unit group Cl(V,q)^×.
+    It is recovered from the dagger in two stages:
+
+    Stage 1 — Unitary slice
+        U = { x : x† x = 1 }.
+        On U:   x^{-1} = x†.
+        So the inverse is literally the dagger restricted to U.
+
+    Stage 2 — Clifford group
+        For x ∈ Γ(V,q), the norm N(x) = x x̄ = x α(x^r) is a scalar.
+        Since x̄ = σ(x†), we get
+
+            x^{-1} = x̄ / N(x) = σ(x†) / N(x).
+
+        So on Γ, the inverse is expressed using the dagger, the
+        involution σ, and the norm N.
+
+    Outside Γ, the inverse may still exist, but N(x) is not a scalar,
+    so the clean formula x^{-1} = σ(x†)/N(x) does not hold.
+
+WHAT THIS MEANS
+    - Dagger: general, primitive, defined everywhere.
+    - Inverse: special, derived, defined only on units.
+    - On the unitary slice, the inverse IS the dagger.
+    - On the Clifford group, the inverse is the dagger twisted by σ
+      and divided by the norm.
+    - Over ℝ with σ = id, the unitary slice becomes N(x) = 1, and
+      x^{-1} = x† there.
+    - Over ℂ with σ = complex conjugation, the unitary slice is
+      x† x = 1 (i.e. SU(2)), and x^{-1} = x† there.
+
+SUMMARY TABLE
+    Operation    Domain                Relation to dagger
+    Dagger       whole algebra         x† = σ(α(x^r))
+    Inverse      unit group            x^{-1} = σ(x†)/N(x) on Γ
+    Inverse      unitary slice         x^{-1} = x†
+
+    So: dagger is general. Inverse is special.
+    The inverse is recovered from the dagger on the unitary slice,
+    and from the dagger plus the norm on the Clifford group.
+
+
+
+
+
+
+
+
+No — not in the algebra/module sense.
+
+In the context of modules and algebras over a ring, an **involution**
+means an algebra anti-automorphism of order 2:
+
+    * : A → A
+
+such that for all a,b ∈ A and r ∈ R:
+
+    (a + b)* = a* + b*
+    (ab)*    = b* a*
+    (a*)*    = a
+    (r a)*   = σ(r) a*     (if R has an involution σ)
+
+It is defined on the **whole algebra**, is **additive**, and is
+**anti-multiplicative**.
+
+The inverse map
+
+    x ↦ x^{-1}
+
+is not an algebra involution. Here is why:
+
+| Requirement for algebra involution | Inverse map |
+|---|---|
+| Defined on all of A | Only on units A^× |
+| Additive: (x+y)^{-1} = x^{-1}+y^{-1} | False |
+| Anti-multiplicative: (xy)^{-1} = y^{-1}x^{-1} | True on units |
+| Involutive: (x^{-1})^{-1} = x | True on units |
+| Compatible with scalars | Not generally |
+
+So the inverse map is:
+
+- **not** defined on the whole algebra,
+- **not** additive,
+- only an anti-automorphism of the **group of units** A^×,
+- and only there is it an involution in the group-theoretic sense:
+  \[
+  (x^{-1})^{-1} = x.
+  \]
+
+In other words:
+
+    inversion is an involution on the unit group A^×,
+    but it is NOT an involution on the algebra A.
+
+The algebra involution is the dagger:
+
+    x† = σ(α(x^r)).
+
+It is defined on all of Cl(V,q), is additive, anti-multiplicative,
+and involutive. It is the algebra-level involution.
+
+On the unitary slice x†x = 1, the two coincide:
+
+    x† = x^{-1}.
+
+But off that slice, they are different operations on different domains.
+So: in the context of modules and algebras over a ring, the inverse is
+not an involution. It is a group involution on the units.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Relation Between Q† and Q^{-1} for a Biquaternion
+
+Setup
+    A biquaternion is
+        Q = a + bi + cj + dk,   a,b,c,d ∈ ℂ,
+    with i² = j² = k² = ijk = -1.
+
+    The dagger is complex conjugation composed with Clifford conjugation:
+        Q† = conj( Q̄ ) = conj( α(Q^r) ).
+
+Step 1: Clifford conjugation Q̄
+    Q̄ = a - bi - cj - dk.
+    (This is the usual quaternion conjugation.)
+
+Step 2: Complex conjugation
+    conj(Q) = ā + b̄ i + c̄ j + d̄ k,
+    where ā, b̄, c̄, d̄ are the complex conjugates of a,b,c,d ∈ ℂ.
+
+Step 3: The dagger
+    Q† = conj(Q̄) = ā - b̄ i - c̄ j - d̄ k.
+    In coordinates:
+        Q† = ā - b̄ i - c̄ j - d̄ k.
+
+Step 4: The inverse
+    Q^{-1} = Q̄ / N(Q),
+    where
+        N(Q) = Q Q̄ = a² + b² + c² + d² ∈ ℂ
+    is the Clifford norm. Explicitly:
+        Q^{-1} = (a - bi - cj - dk) / (a² + b² + c² + d²).
+
+The relation
+    Comparing:
+        Q†      = ā - b̄ i - c̄ j - d̄ k,
+        Q^{-1} = (a - bi - cj - dk) / N(Q).
+
+    These are NOT equal in general. The dagger conjugates the
+    coefficients; the inverse divides by the norm.
+
+    The key identity is
+        Q† = conj(N(Q)) · conj(Q^{-1}),
+    or equivalently
+        Q† = conj(N(Q)) · conj(Q^{-1}).
+
+    Derivation: Q^{-1} = Q̄ / N(Q), so
+        conj(Q^{-1}) = conj(Q̄) / conj(N(Q)) = Q† / conj(N(Q)),
+    hence
+        Q† = conj(N(Q)) · conj(Q^{-1}).
+
+    If N(Q) ∈ ℝ (e.g. real quaternions), then conj(N(Q)) = N(Q)
+    and
+        Q† = N(Q) · conj(Q^{-1}).
+
+When do Q† and Q^{-1} agree?
+    They agree precisely when
+        Q† = Q^{-1},
+    which happens on the unitary slice:
+        1. N(Q) = 1, and
+        2. ā = a, b̄ = b, c̄ = c, d̄ = d  (real coefficients).
+    In other words, when Q is a real unit quaternion
+    (an element of SU(2) ≅ Spin(3)).
+
+    More generally, Q† = Q^{-1} defines a unitary group inside
+    the biquaternions.
+
+Summary table
+    Q              a + bi + cj + dk
+    Q̄              a - bi - cj - dk          (Clifford conj.)
+    Q†             ā - b̄ i - c̄ j - d̄ k      (dagger)
+    N(Q)           a² + b² + c² + d²         (Clifford norm)
+    Q^{-1}         (a - bi - cj - dk)/N(Q)
+    Relation       Q† = conj(N(Q)) · conj(Q^{-1})
+    Agreement      Q† = Q^{-1}  iff  Q is unitary (norm 1, real coeffs)
+
+Connection to the corpus sandwich
+    In the corpus sandwich
+        H_Q̃(x) = Q̃ x Q̃†,
+    the dagger plays the role of the inverse in the Pin sandwich:
+        Ad~_x(v) = α(x) v x^{-1}.
+    The two agree on the unitary slice, where Q̃† = Q̃^{-1}.
+    This is why the biquaternion sandwich reproduces the Pin/Lorentz
+    action precisely on the unitary group B_1^× ≅ Spin(1,3).
+
+    Off the unitary slice, the dagger and the inverse differ, and the
+    sandwich Q x Q† is not the same as Q x Q^{-1}. The dagger version
+    is the one that matches the twisted adjoint with complex conjugation
+    built in — exactly what is needed for the complexified / Lorentzian
+    setting.
+
+
+
+
+
+
+
+
+
 
 
 biquaternion-other-algebraic-element

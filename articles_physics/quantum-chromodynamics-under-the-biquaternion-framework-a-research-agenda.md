@@ -267,7 +267,7 @@ The two upstream items are a derivation (or a justified fixing) of the internal 
 - *The Dirac Equation in Biquaternionic Form* and *The Spinor Module in Biquaternionic Form and Its Lorentz Action* — the spinor module, the linear chiral mass term, and the real-structure origin of chirality.
 
 - *Canonical Quantization of the Biquaternion Maxwell Field* — the framework's inability to fix the gauge, a prerequisite the confinement item needs.
-- *Biquaternion Element Representation Theory* and *Lie Algebras: A General Introduction* — the module structure and the compact-subalgebra facts behind the ceiling on the colour group.
+- *Modules over the Biquaternion Algebra* and *Lie Algebras: A General Introduction* — the module structure and the compact-subalgebra facts behind the ceiling on the colour group.
 - *Biquaternion Zero Divisors* and *Biquaternion Topology* — the null cone and the bivector structure, the objects closest to the confinement and topological-charge items.
 - *The Lorentz Group in Biquaternionic Form — Structure and Representations* — the representation theory on which the adjoint and fundamental bookkeeping rests.
 - *The Spinor-Helicity Formalism and Biquaternions* — the corpus's explicit statement that the framework "does not contain a colored gauge theory"; the transcription boundary this agenda makes systematic.

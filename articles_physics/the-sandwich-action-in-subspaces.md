@@ -305,6 +305,14 @@ The two articles restrict the same six subspaces, and the comparison is a dictio
 
 The comparison also explains an asymmetry of this article. The polar representation loses factors when the element is restricted, and the loss is one-sided: a subspace is unable to carry a factor. The operator reading loses **operators** when the acting element is restricted, and the loss goes the other way: the six subspaces produce only four operator classes, and inside a class they produce the same operator element by element. The two directions of restriction are the two halves of the same statement about the algebra, and the central circle, which is the kernel of the operator, is what makes them differ.
 
+**The operator factorises through the boost and the rotor, and doubles their parameters.** With the polar word $\tilde{Q} = re^{i\alpha}B\hat{q}$ and $\tilde{\Lambda} = B\hat{q}$ of unit norm,
+
+$$
+\operatorname{H}_{\tilde{Q}} = r^{2}\,\operatorname{H}_{\tilde{\Lambda}},
+$$
+
+because the Hermitian conjugates of the four factors are $\hat{q}^{\dagger} = \hat{q}^{-1}$, $B^{\dagger} = B$, $r^{\dagger} = r$ and $(e^{i\alpha})^{\dagger} = e^{-i\alpha}$, so the two central factors cancel against their inverses. A non-central factor occurs once on each side, so its parameter is deposited twice: the rotor of angle $\theta$ acts by the doubled angle, and the boost of rapidity $\psi$ acts by the doubled rapidity, as the diagonal case $\Phi(B) = \operatorname{diag}(e^{\psi/2},e^{-\psi/2})$ shows explicitly, the operator storing the half-rapidity and producing the rapidity. The four factors and their range are *The Polar Element Representation of Biquaternions* and *The Polar Element Representation in Subspaces*.
+
 ## Worked Examples
 
 ### A Central Element

@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The companion articles have developed the biquaternion description of a single Lorentz transformation and of the spinor module on which the Lorentz group acts. The present article treats the Lorentz group as an algebraic object in its own right. Its subject is the **group structure**, the **Lie algebra**, and the **finite-dimensional representation theory** of the group of unit-norm biquaternions. The parametrisation of one transformation, and the construction of the spinor module with its one-sided action, are used here but not re-derived; they belong to the companions cited below.
+The companion articles have developed the biquaternion description of a single Lorentz transformation and of the spinor module on which the Lorentz group acts. The present article treats the Lorentz group as an algebraic object in its own right. Its subject is the **group structure**, the **Lie algebra**, and the **representation theory** of the group of unit-norm biquaternions and of the group of units that contains it, finite-dimensional and unitary. The parametrisation of one transformation, and the construction of the spinor module with its one-sided action, are used here but not re-derived; they belong to the companions cited below.
 
 Three questions organize the discussion.
 
@@ -10,7 +10,7 @@ Three questions organize the discussion.
 
 **Infinitesimal structure.** The Lie algebra of the group of unit-norm biquaternions is the real Lie algebra $\mathrm{SL}(2,\mathbb{C})$ of traceless $2\times2$ complex matrices. Its complexification splits into two commuting copies of $\mathrm{SU}(2)$. The rotation generators and the boost generators sit in the real algebra in a definite way, and the failure of the boosts to close is visible in the bracket of two boost generators.
 
-**Representations.** The finite-dimensional irreducible representations are labelled by a pair $(m,n)$ of half-integers, of dimension $(2m+1)(2n+1)$. The biquaternion algebra itself carries the four-dimensional vector representation $(\tfrac12,\tfrac12)$; the two Weyl spinors are $(\tfrac12,0)$ and $(0,\tfrac12)$. The two-to-one cover of the Lorentz group by $SL(2,\mathbb{C})$ determines which of these representations descend to the Lorentz group and which are genuine spin representations.
+**Representations.** The group of units is $GL_2(\mathbb{C})$, the group of invertible biquaternions, with the unit-norm group $SL(2,\mathbb{C})$ as its kernel of the norm. The finite-dimensional irreducible representations are labelled by a pair $(m,n)$ of half-integers, of dimension $(2m+1)(2n+1)$. The biquaternion algebra itself carries the four-dimensional vector representation $(\tfrac12,\tfrac12)$; the two Weyl spinors are $(\tfrac12,0)$ and $(0,\tfrac12)$. The two-to-one cover of the Lorentz group by $SL(2,\mathbb{C})$ determines which of these representations descend to the Lorentz group and which are genuine spin representations. Unitarity is preserved by complexification only for the compact subgroup, so the unitary representations of the non-compact group are the infinite-dimensional principal and complementary series.
 
 The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, the quaternion basis is $e_0=1,e_1,e_2,e_3$ with $e_k^2=-e_0$ and $e_1e_2=e_3$, and the scalar imaginary is $i$, which commutes with the quaternion units. The anti-Hermitian and Hermitian subspaces are
 $$
@@ -100,6 +100,18 @@ $$
 \qquad \tilde{B}\in\mathcal{B},\quad \tilde{R}\in SU(2),
 $$
 unique if $\tilde{B}$ is required to have positive-definite matrix image; equivalently, $\mathcal{B}\cong SL(2,\mathbb{C})/SU(2)$. This is the **Cartan (polar) decomposition**, and it parametrises a general transformation by three boost parameters (the rapidity vector) and three rotation parameters (the axis and angle), matching the six real dimensions of the group.
+
+## The Group of Units and Its Representations
+
+The unit-norm group is the kernel of the norm inside the full group of units. The **group of units** is
+$$
+\mathbb{B}^{\times}=\{\tilde{Q}:N(\tilde{Q})\neq0\}\cong GL_2(\mathbb{C}),
+$$
+the group of invertible matrices under $\Phi$, of real dimension $8$, with centre $\mathbb{C}^{\times}$; the unit-norm subgroup $SL(2,\mathbb{C})=\mathbb{B}^{\times}_1$ is the kernel of the norm, and the unitary biquaternions $\tilde{Q}^\dagger\tilde{Q}=e_0$ form the maximal compact subgroup $U(2)$.
+
+Physically the unit group is the whole linear group of the framework: $GL_2(\mathbb{C})$ is the group of invertible biquaternions, its centre $\mathbb{C}^{\times}$ is the complex phase that every conjugation ignores and the norm only sees through its modulus, and the unit-norm subgroup is the Lorentz group of the preceding sections.
+
+**Representations of the unit group.** As a reductive group, $GL_2(\mathbb{C})$ has finite-dimensional algebraic (rational) representations parameterised by highest weights $(\lambda_1,\lambda_2)\in\mathbb{Z}^2$ with $\lambda_1\geq\lambda_2$; the irreducible one is $\operatorname{Sym}^{\lambda_1-\lambda_2}(\mathbb{C}^2)\otimes(\det)^{\lambda_2}$, of dimension $\lambda_1-\lambda_2+1$, with central character $z\mapsto z^{\lambda_1+\lambda_2}$. Restriction to $SL(2,\mathbb{C})$ forgets the determinant twist, leaving the highest weight $2j=\lambda_1-\lambda_2\geq0$, that is, the irreducible $V_j$ below with spin $j\in\tfrac12\mathbb{Z}_{\geq0}$.
 
 ## Boosts Do Not Close: The Composition Law
 
@@ -285,6 +297,24 @@ $$
 $$
 of dimension $1+3+3+9=16=4\times4$.
 
+**Polynomial representations and the unitary trick.** The finite-dimensional irreducibles of the complex group are exactly the **polynomial** (equivalently holomorphic, equivalently algebraic) ones: the matrix entries are polynomial in the entries of the group element, and such representations are the symmetric powers $V_j=\operatorname{Sym}^{2j}(\mathbb{C}^2)$ of the defining module, of highest weight $2j$ and spin $j$. Restriction to the maximal compact subgroup $SU(2)$ is an equivalence of categories, the **unitary trick**,
+$$
+\left\{\text{f.d. polynomial representations of }SL(2,\mathbb{C})\right\}\simeq\left\{\text{f.d. unitary representations of }SU(2)\right\},
+$$
+complexifying the Lie algebra and exponentiating; the two sides are parameterised by the same highest weights. What the unitary trick does not carry across is unitarity for the non-compact group itself, a point taken up in §*Unitary Representations*.
+
+**Tensor powers of the spinor.** Iterating the Clebsch–Gordan rule decomposes the $N$-fold tensor power of the defining module,
+$$
+V_{1/2}^{\otimes N}\cong\bigoplus_{k=0}^{\lfloor N/2\rfloor}\left[\binom Nk-\binom N{k-1}\right]V_{N/2-k},
+$$
+the multiplicity of $V_{N/2-k}$ being the ballot (Catalan-triangle) number $\binom Nk-\binom N{k-1}$.
+
+**Physical reading: addition of angular momenta.** The Clebsch–Gordan rule is the quantum rule for combining two angular momenta: $V_j\otimes V_k$ is the state space of a composite system whose parts carry spins $j$ and $k$, and the decomposition lists its total-spin sectors. The case $V_{1/2}\otimes V_{1/2}\cong V_1\oplus V_0$ is the addition of two spin-$\tfrac12$ particles into a triplet and a singlet, and $V_{1/2}^{\otimes3}\cong V_{3/2}\oplus2V_{1/2}$ is the quartet and the two doublets of three; the ballot numbers are the multiplicities with which each total spin occurs. The invariant $\varepsilon$ that produces the scalar $V_0$ is the antisymmetric two-particle state, the singlet of the framework.
+
+**The defining representation and its two dualities.** The defining module $V_{1/2}=\mathbb{C}^2$ is **self-dual** for $SL(2,\mathbb{C})$: since the determinant is one, the alternating form $\varepsilon(u,v)=u_1v_2-u_2v_1$ is invariant and identifies $V_{1/2}^{*}$ with $V_{1/2}$. Its **conjugate** $\overline{V_{1/2}}=(0,\tfrac12)$ is a different, inequivalent representation — the other chirality — and parity exchanges the two; the direct sum is the Dirac spinor $\Delta=(\tfrac12,0)\oplus(0,\tfrac12)$ of the dictionary, and the tensor product is the four-vector representation $V_{1/2}\otimes\overline{V_{1/2}}\cong(\tfrac12,\tfrac12)$.
+
+**Physical reading: the one-particle module and the chiral fields.** The defining module is the **one-particle module**: a state of a biquaternion field is a section of it or of its conjugate, which is why the framework carries a Dirac pair rather than a single Weyl spinor, and why the mass term, which couples the two chiralities, is a parity-respecting bilinear. The two inequivalent representations are the two chiralities of a massless spin-$\tfrac12$ field, and the non-descent of the half-integral representations to $SO^+(1,3)$ is the spinor double cover.
+
 ## Where the Biquaternion Algebra Sits
 
 The biquaternion algebra is not merely the home of the rotors; it is itself a representation of the group it defines. Three distinct structures should be distinguished.
@@ -335,6 +365,25 @@ Consequently:
 
 The defining spinor $(\tfrac12,0)$ is the simplest example: $\Phi(-e_0)=-I_2$, so $\pm\tilde{\Lambda}$ act differently on every spinor, whereas they act identically on every four-vector. In particular a rotation by $2\pi$, which is $e_0$ in the four-vector representation, is $-e_0$ on the spinor module; a rotation by $4\pi$ is the identity on both. The spinor therefore carries a genuine two-valued representation, and the sign of a spinor is a degree of freedom invisible to any four-vector. The companion article on the spinor module develops the spinor action and the bilinear pairings in detail; the point recorded here is its representation-theoretic classification.
 
+## Unitary Representations
+
+A representation is **unitary** if it carries an invariant positive-definite Hermitian form. On the defining module $V_{1/2}=\mathbb{C}^2$ the standard Hermitian form is invariant under $SU(2)$, so $V_{1/2}$ is unitary for the compact form; it is **not** unitary for $SL(2,\mathbb{C})$, because the non-compact hyperbolic one-parameter subgroups — the boosts of the preceding sections — do not preserve any positive-definite form. More generally a non-compact simple group has no nontrivial finite-dimensional unitary representation, since the image would lie in a compact group. Hence the only finite-dimensional unitary representation of the Lorentz group is the trivial one, and no finite-dimensional representation carries a boost on a positive-definite state space.
+
+**Physical reading: why the Lorentz action is not unitary.** Unitarity is what selects the representations that carry a positive-definite probability, so the statement that the finite-dimensional representations of $SL(2,\mathbb{C})$ are not unitary is the statement that a boost cannot be implemented by a finite-dimensional unitary operator: a boost is unbounded, and a finite-dimensional unitary representation of a non-compact group would have compact image. The parameter that makes a boost unbounded is the rapidity, and it is exactly the parameter that a finite multiplet cannot carry.
+
+**The principal series.** Physics recovers unitarity by passing to infinite-dimensional representations. Let $P=MAN$ be the Borel subgroup of upper triangular matrices, with
+$$
+M=\{\operatorname{diag}(u,u^{-1}):|u|=1\}\cong U(1),\qquad
+A=\{\operatorname{diag}(e^{t/2},e^{-t/2}):t\in\mathbb{R}\},
+$$
+and $N$ unipotent. For $m\in\mathbb{Z}$ and $\nu\in\mathbb{R}$ the unitary character $\chi_{m,\nu}(man)=u^me^{i\nu t}$ induces a unitary representation
+$$
+\pi_{m,\nu}=\operatorname{Ind}_P^G(\chi_{m,\nu}),
+$$
+the **principal series**: unitary by construction, irreducible for generic parameters and tempered for $\nu\in\mathbb{R}$, with $m$ a discrete parameter and $\nu$ a continuous one. Together with the **complementary series**, whose continuous parameter is purely imaginary and bounded, and the trivial representation, this is the unitary dual of $SL(2,\mathbb{C})$; the finite-dimensional polynomial representations are not in it, except for the trivial one. The compact subgroup $SU(2)$ supplies the finite-dimensional multiplets, and the passage from its discrete highest weights to the continuous parameter of the principal series is the complexification of the unitary dual.
+
+Physically the principal series is the mode content of a field on the mass shell: the discrete parameter $m$ is the spin about the boost axis and the continuous parameter $\nu$ the rapidity of the boost, and the non-compact symmetry is realised on an infinite-dimensional space rather than on the finite multiplet of a compact group.
+
 ## Summary
 
 The group of unit-norm biquaternions is $SL(2,\mathbb{C})$, the double cover of the restricted Lorentz group $SO^+(1,3)$; rotor conjugation $\tilde{Q}\mapsto\tilde\Lambda\tilde{Q}\tilde\Lambda^\dagger$ is the covering homomorphism, with kernel $\{\pm e_0\}$.
@@ -348,6 +397,8 @@ $$
 about the axis $\hat{\mathbf u}_1\times\hat{\mathbf u}_2$; the boost factor has the composite rapidity $\cosh\psi_{\mathrm c}=\cosh\psi_1\cosh\psi_2+\sinh\psi_1\sinh\psi_2\cos\theta$. Every unit-norm biquaternion has a unique polar decomposition $\tilde\Lambda=\tilde B\tilde R$ into a boost and a rotation.
 
 The real Lie algebra is $\mathrm{SL}(2,\mathbb{C})_{\mathbb{R}}$, spanned by rotations $J_k=e_k$ and boosts $K_k=ie_k$, with $[K_j,K_k]=-2\varepsilon_{jkl}J_l$; its complexification splits into two commuting $\mathrm{SU}(2)$'s, the self-dual and anti-self-dual halves. The finite-dimensional irreducibles are the $(m,n)$, $m,n\in\tfrac12\mathbb{Z}_{\geq0}$, of dimension $(2m+1)(2n+1)$; the biquaternion algebra carries $(\tfrac12,\tfrac12)$ under conjugation. Representations with $m+n\in\mathbb{Z}$ descend to $SO^+(1,3)$; those with $m+n\in\tfrac12+\mathbb{Z}$ are genuine spin representations of the double cover.
+
+The group that carries the transformations is represented as follows. The group of units is $\mathbb{B}^{\times}\cong GL_2(\mathbb{C})$, of real dimension $8$, with the unit-norm subgroup $SL(2,\mathbb{C})$, the maximal compact subgroups $U(2)$ and $SU(2)$, and the finite-dimensional algebraic representations of $GL_2(\mathbb{C})$ parameterised by the highest weight $(\lambda_1,\lambda_2)$. The defining module $V_{1/2}=\mathbb{C}^2$ is self-dual, and its conjugate is the other chirality: the two are the Weyl spinors, their sum is the Dirac spinor and their tensor product the four-vector representation $(\tfrac12,\tfrac12)$; the adjoint representation is $(1,0)\oplus(0,1)$. Tensor products obey the Clebsch–Gordan rule, with the ballot numbers counting the total-spin sectors of the tensor powers of the spinor. Unitarity is preserved by complexification only for the compact subgroup $SU(2)$; the only finite-dimensional unitary representation of $SL(2,\mathbb{C})$ is the trivial one, and the unitary representations are the infinite-dimensional principal and complementary series, the mode content of a field on the mass shell.
 
 ## Summary of Notation
 
@@ -375,6 +426,12 @@ The real Lie algebra is $\mathrm{SL}(2,\mathbb{C})_{\mathbb{R}}$, spanned by rot
 | $(\tfrac12,0)$, $(0,\tfrac12)$ | Left- and right-handed Weyl spinors |
 | $(\tfrac12,\tfrac12)$ | Four-vector (biquaternion algebra as module) |
 | $m+n\in\mathbb{Z}$ vs $\tfrac12+\mathbb{Z}$ | Descends to $SO^+(1,3)$ vs genuine spin representation |
+| $\mathbb{B}^{\times}\cong GL_2(\mathbb{C})$ | Group of units; real dimension $8$ |
+| $U(2)$ | Unitary biquaternions; maximal compact subgroup of $\mathbb{B}^{\times}$ |
+| $(\lambda_1,\lambda_2)$ | Highest weight of an algebraic representation of $GL_2(\mathbb{C})$ |
+| $V_j$ | Irreducible representation of spin $j$, highest weight $2j$, dimension $2j+1$ |
+| $V_{1/2}^{\otimes N}$ | Ballot-number decomposition of the tensor powers of the spinor |
+| $\operatorname{Ind}_P^G(\chi_{m,\nu})$ | Principal series of $SL(2,\mathbb{C})$; $P=MAN$ the Borel subgroup |
 
 ## Further Reading
 
@@ -382,6 +439,7 @@ The real Lie algebra is $\mathrm{SL}(2,\mathbb{C})_{\mathbb{R}}$, spanned by rot
 - Wu-Ki Tung, *Group Theory in Physics* (World Scientific, 1985), for the finite-dimensional representation theory of the Lorentz group and the $(m,n)$ labelling.
 - I. M. Gel'fand, R. A. Minlos, and Z. Ya. Shapiro, *Representations of the Rotation and Lorentz Groups and Their Applications* (Pergamon, 1963), for the classical treatment of the Lorentz group representations and the two $\mathrm{SU}(2)$ decomposition.
 - William Fulton and Joe Harris, *Representation Theory: A First Course* (Springer, 1991), for $\mathrm{SL}(2,\mathbb{C})$ representations, the Clebsch–Gordan rule, and the highest-weight classification.
+- Anthony W. Knapp, *Representation Theory of Semisimple Groups: An Overview Based on Examples* (Princeton University Press, 1986), for the principal and complementary series and the unitary dual of $SL(2,\mathbb{C})$.
 - Brian C. Hall, *Lie Groups, Lie Algebras, and Representations* (Springer, 2015), for the Lie-algebra structure, the Killing form, and the complexification.
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the Clifford-algebra origin of the spin group and the double cover of the Lorentz group.
 - Roger Penrose and Wolfgang Rindler, *Spinors and Space-Time*, Vol. 1 (Cambridge, 1984), for the two-component spinor calculus and the self-dual/anti-self-dual decomposition.

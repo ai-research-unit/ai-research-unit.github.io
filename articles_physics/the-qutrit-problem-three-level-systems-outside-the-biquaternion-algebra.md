@@ -14,7 +14,7 @@ The article is organised as follows. The defining module and its classification 
 
 ## The Defining Module: Two Levels
 
-The classification is stated in the companion article *Biquaternion Element Representation Theory* and is used here as given.
+The classification is stated in the companion article *Modules over the Biquaternion Algebra* and is used here as given.
 
 **Theorem.** *Let $V=\mathbb{C}^2$ be the space of column vectors with the natural action of $\mathbb{B}\cong M_2(\mathbb{C})$. Every finite-dimensional $\mathbb{B}$-module is isomorphic to a direct sum of copies of $V$,*
 
@@ -127,7 +127,7 @@ $$
 
 So $\mathrm{ad}_{ie_1}^2\neq\mathrm{ad}_{(ie_1)^2}$, and the map $x\mapsto\mathrm{ad}_x$ is not an algebra homomorphism. It is a **Lie-algebra** homomorphism: the linear span of the $ie_k$ with the commutator is $\mathrm{SU}(2)$, and the adjoint action makes $W$ a module over $\mathrm{SU}(2)$, equivalently over its universal enveloping algebra $\mathcal{U}(\mathrm{SU}(2))$ and over the group $SU(2)$.
 
-That is the precise location of the three-level structure. The qutrit is a module of $\mathrm{SU}(2)$ — or of $SU(2)$, whose three-dimensional irreducible representation is the adjoint — and not a module of the associative algebra $\mathbb{B}$. The companion article *Biquaternion Element Representation Theory* records the same fact from the other side: all derivations of $\mathbb{B}$ are inner and $\mathrm{Der}(\mathbb{B})\cong\mathrm{SL}(2,\mathbb{C})$, so the adjoint action sees only the six-real-dimensional Lie algebra, not the eight-real-dimensional associative algebra. For the qubit the distinction is invisible, because the defining module is a module of both.
+That is the precise location of the three-level structure. The qutrit is a module of $\mathrm{SU}(2)$ — or of $SU(2)$, whose three-dimensional irreducible representation is the adjoint — and not a module of the associative algebra $\mathbb{B}$. The companion article *Biquaternion Automorphisms and Derivations* records the same fact from the other side: all derivations of $\mathbb{B}$ are inner and $\mathrm{Der}(\mathbb{B})\cong\mathrm{SL}(2,\mathbb{C})$, so the adjoint action sees only the six-real-dimensional Lie algebra, not the eight-real-dimensional associative algebra. For the qubit the distinction is invisible, because the defining module is a module of both.
 
 The three-dimensional representation is therefore available in the framework's *kinematics*: angular momenta, rotations, Clebsch–Gordan coefficients, tensor operators, and the state-space geometry of a spin-one system all make sense. What is not available is a qutrit *algebra of observables* sitting inside $\mathbb{B}$ itself, because that would be a three-dimensional module of $M_2(\mathbb{C})$.
 
@@ -222,7 +222,7 @@ $$
 \mathrm{Sym}^nV,\qquad \dim_{\mathbb{C}}\mathrm{Sym}^nV=n+1 ,
 $$
 
-that is, the spin-$j$ multiplet $V_j$ with $j=n/2$, as recorded in the companion article *Biquaternion Element Representation Theory*, and it appears as a summand of the $n$-fold tensor power, with multiplicities given by the ballot numbers. Since a single factor of the algebra carries only two levels, the counting is:
+that is, the spin-$j$ multiplet $V_j$ with $j=n/2$, as recorded in the companion article *The Lorentz Group in Biquaternionic Form — Structure and Representations*, and it appears as a summand of the $n$-fold tensor power, with multiplicities given by the ballot numbers. Since a single factor of the algebra carries only two levels, the counting is:
 
 | Spin | Multiplet $\dim=2s+1$ | Sector of | Factors needed |
 |---|---|---|---|

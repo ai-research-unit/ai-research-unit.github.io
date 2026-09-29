@@ -402,7 +402,7 @@ What the algebra supplies is the kinematic fibre of linearized gravity and the f
 
 ## Further Reading
 
-- Companion articles: *Curved Spacetime and the Biquaternion Framework*; *The Gauge Principle in Biquaternionic Form*; *Maxwell's Equations in the Biquaternionic Formulation*; *The Field-Strength Biquaternion and Its Invariants*; *Exercise: The Electromagnetic Energy–Momentum Tensor*; *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*; *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*; *Biquaternion Element Representation Theory*.
+- Companion articles: *Curved Spacetime and the Biquaternion Framework*; *The Gauge Principle in Biquaternionic Form*; *Maxwell's Equations in the Biquaternionic Formulation*; *The Field-Strength Biquaternion and Its Invariants*; *Exercise: The Electromagnetic Energy–Momentum Tensor*; *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*; *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*; *The Lorentz Group in Biquaternionic Form — Structure and Representations*.
 - Charles W. Misner, Kip S. Thorne, and John A. Wheeler, *Gravitation* (Freeman, 1973), for the linearized theory, the transverse-traceless gauge, and the two polarizations of a gravitational wave.
 - Robert M. Wald, *General Relativity* (Chicago, 1984), for the linearized Einstein equation, the trace-reversal, and the harmonic gauge.
 - Sean M. Carroll, *Spacetime and Geometry: An Introduction to General Relativity* (Cambridge, 2019), for a compact treatment of linearized gravity and its gauge structure.

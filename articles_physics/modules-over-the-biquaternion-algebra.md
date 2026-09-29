@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This article classifies the modules over the biquaternion algebra and describes the one module that the framework uses, the defining module on which the algebra acts as $M_2(\mathbb{C})$. It uses the idempotents and the Peirce decomposition of *Biquaternion Ideals and Peirce Decomposition*, the matrix model of *The 2×2 Matrix Element Representation of Biquaternions*, and the invertibility criterion of *Biquaternion Norm and Invertibility*. The group-theoretic representations of the algebra and of its group of units are *Biquaternion Element Representation Theory*, and the spinor reading of the module is *Biquaternion Spin Geometry*.
+This article classifies the modules over the biquaternion algebra and describes the one module that the framework uses, the defining module on which the algebra acts as $M_2(\mathbb{C})$. It uses the idempotents and the Peirce decomposition of *Biquaternion Ideals and Peirce Decomposition*, the matrix model of *The 2×2 Matrix Element Representation of Biquaternions*, and the invertibility criterion of *Biquaternion Norm and Invertibility*. The group-theoretic representations of the algebra and of its group of units are *The Lorentz Group in Biquaternionic Form — Structure and Representations*, and the spinor reading of the module is *Biquaternion Spin Geometry*.
 
 **Scope.** This is the module-theoretic article of the Algebra slot. It classifies modules and computes their endomorphisms; it does not treat the representations of the unit group, the norm, or the Clifford structure. The physical reading is attached at the point of each algebraic statement, and it is a reading.
 
@@ -57,6 +57,8 @@ with $k$ an integer when $M$ is finitely generated. Every $\mathbb{B}$-module is
 For a finite-dimensional module the invariant $k$ is recovered from $\dim_\mathbb{C}S^{\oplus k}=2k$, so a finite-dimensional module is $\mathbb{C}^{2k}$ on which $\mathbb{B}$ acts block-diagonally as $k$ copies of the defining action.
 
 **Physical reading.** The regular module decomposing as $S\oplus S$ is the statement that **one biquaternion carries two spinors**: the algebra acting on itself splits into the two chiralities. A general module $S^{\oplus k}$ is $k$ one-particle states with the same chirality, and the classification says that a biquaternion module is nothing but a complex vector space with a fixed labelling by the algebra — no further structure is added.
+
+**A caution on tensor products.** For a non-commutative algebra the tensor product of two left $\mathbb{B}$-modules is not naturally a left $\mathbb{B}$-module: the two actions compete on the shared algebra, and only a diagonal action survives. The tensor-product ring structure therefore belongs to the group-theoretic side, treated in *The Lorentz Group in Biquaternionic Form — Structure and Representations*; the module classification above uses direct sums only.
 
 ## Projectivity and the Parity of Freeness
 

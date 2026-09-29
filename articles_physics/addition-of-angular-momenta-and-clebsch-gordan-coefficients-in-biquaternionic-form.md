@@ -134,11 +134,11 @@ $$
 
 which is Hermitian of trace one; the four product idempotents of the spin-$\tfrac12$ basis are $\tilde\Pi(\pm\hat z)\otimes \tilde\Pi(\pm\hat z)$.
 
-One caution belongs here, because it is the reason the tensor product is an assumption rather than a theorem. For a non-commutative algebra, the tensor product of two left $\mathbb{B}$-modules is not naturally a left $\mathbb{B}$-module; the companion article *Biquaternion Element Representation Theory* records the point. What does act on $\mathbb{B}\otimes\mathbb{B}$ is the algebra $\mathbb{B}\otimes\mathbb{B}$ itself, together with its diagonal subgroup. The angular momenta $\tilde J_k^{(1)},\tilde J_k^{(2)}$ generate the diagonal copy of the rotation algebra, and the coupled states are multiplets of that diagonal algebra. They are not elements of a $\mathbb{B}$-module. This is the structural reason that higher spins enter the framework through the group rather than through the algebra, and it is taken up again in the closing sections.
+One caution belongs here, because it is the reason the tensor product is an assumption rather than a theorem. For a non-commutative algebra, the tensor product of two left $\mathbb{B}$-modules is not naturally a left $\mathbb{B}$-module; the companion article *Modules over the Biquaternion Algebra* records the point. What does act on $\mathbb{B}\otimes\mathbb{B}$ is the algebra $\mathbb{B}\otimes\mathbb{B}$ itself, together with its diagonal subgroup. The angular momenta $\tilde J_k^{(1)},\tilde J_k^{(2)}$ generate the diagonal copy of the rotation algebra, and the coupled states are multiplets of that diagonal algebra. They are not elements of a $\mathbb{B}$-module. This is the structural reason that higher spins enter the framework through the group rather than through the algebra, and it is taken up again in the closing sections.
 
 ## The Clebsch–Gordan Series
 
-Let $V_j$ denote the rotation multiplet of spin $j$, $j\in\tfrac12\mathbb{Z}_{\geq0}$, of complex dimension $2j+1$: the representation carried by $|j,m\rangle$ with $m=-j,\dots,j$, and the irreducible module of highest weight $2j$ in the labelling of the companion article *Biquaternion Element Representation Theory*. For the polynomial representations of the rotation group the decomposition of a tensor product — the **Clebsch–Gordan series** — is
+Let $V_j$ denote the rotation multiplet of spin $j$, $j\in\tfrac12\mathbb{Z}_{\geq0}$, of complex dimension $2j+1$: the representation carried by $|j,m\rangle$ with $m=-j,\dots,j$, and the irreducible module of highest weight $2j$ in the labelling of the companion article *The Lorentz Group in Biquaternionic Form — Structure and Representations*. For the polynomial representations of the rotation group the decomposition of a tensor product — the **Clebsch–Gordan series** — is
 
 $$
 V_{j_1}\otimes V_{j_2}\;\cong\;\bigoplus_{j=|j_1-j_2|}^{j_1+j_2}V_j ,
@@ -160,7 +160,7 @@ $$
 1\otimes1=2\oplus1\oplus0,\qquad 9=5+3+1 .
 $$
 
-This is the Clebsch–Gordan rule of the companion article *Biquaternion Element Representation Theory*, whose representations of the rotation algebra are the same $V_j$; in its polynomial form the rule is the statement that $V_{1/2}^{\otimes2}\cong V_1\oplus V_0$ and $V_{1/2}^{\otimes3}\cong V_{3/2}\oplus2V_{1/2}$.
+This is the Clebsch–Gordan rule of the companion article *The Lorentz Group in Biquaternionic Form — Structure and Representations*, whose representations of the rotation algebra are the same $V_j$; in its polynomial form the rule is the statement that $V_{1/2}^{\otimes2}\cong V_1\oplus V_0$ and $V_{1/2}^{\otimes3}\cong V_{3/2}\oplus2V_{1/2}$.
 
 The coupled states are the linear combinations
 

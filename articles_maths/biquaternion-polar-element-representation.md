@@ -490,6 +490,31 @@ The rotor is a unit real quaternion: compact, three-dimensional, an element of t
 
 The four factors are what an operator on the algebra detects, and the dagger sandwich $\mathrm{H}_{\tilde{Q}}(x)=\tilde{Q}x\tilde{Q}^{\dagger}$ reads them as follows. The scale enters through the single dilation $\lvert N(\tilde{Q})\rvert^{2}=r^{4}$ of the interval; the central phase enters through nothing at all, since the relation $\mathrm{H}_{z\tilde{Q}}=\lvert z\rvert^{2}\mathrm{H}_{\tilde{Q}}$ makes two elements differing by a unit-modulus central phase have the same operator; and the remaining two factors are the boost part and the rotation part of the action, in the order of composition $B\hat{q}$. The kernel of the operator is the phase circle, so the phase is exactly the factor the action discards, while the scale survives only through its fourth power. The operator itself is in *Biquaternion Rotations and Lorentz Transformations*.
 
+**The operator factorises through the boost and the rotor, and doubles their parameters.** With the polar word $\tilde{Q}=re^{i\alpha}B\hat{q}$ and $\tilde{\Lambda}=B\hat{q}$ of unit norm,
+
+$$
+\mathrm{H}_{\tilde{Q}}=r^{2}\,\mathrm{H}_{\tilde{\Lambda}},
+$$
+
+because the Hermitian conjugates of the factors are $\hat{q}^{\dagger}=\hat{q}^{-1}$, $B^{\dagger}=B$, $r^{\dagger}=r$ and $(e^{i\alpha})^{\dagger}=e^{-i\alpha}$, so the two central factors cancel against their inverses. The pattern of the four factors as operators is then forced by the bilinearity:
+
+| polar factor | range | as an operator on the algebra |
+|---|---|---|
+| scale $r$ | $(0,\infty)$ | dilatation by $r^{2}$, the factor counted twice |
+| phase $e^{i\alpha}$ | $U(1)$ | none; it cancels and lies in the kernel |
+| boost $B$ | rapidity $\psi$, axis $\hat{\mathbf{n}}$ | boost of the **doubled** rapidity |
+| rotor $\hat{q}$ | angle $\theta$ | rotation by the **doubled** angle |
+
+A non-central factor occurs once on each side, so its parameter is deposited twice; a central factor occurs on both sides and cancels. The exact diagonal case is
+
+$$
+\Phi(B)=\operatorname{diag}\bigl(e^{\psi/2},e^{-\psi/2}\bigr)
+\quad\Longrightarrow\quad
+\Phi(B)\,\Phi(x)\,\Phi(B)=\operatorname{diag}\bigl(e^{\psi},e^{-\psi}\bigr)\Phi(x),
+$$
+
+in which the operator stores the half-rapidity and produces the rapidity. The same doubling holds for the rotation angle, and it is the geometric origin of the double cover $SL(2,\mathbb{C})\to SO^{+}(1,3)$ read in *Biquaternion Rotations and Lorentz Transformations* as the two-to-one rotor map.
+
 ## Degenerate Cases
 
 ### The Unit-Norm Elements

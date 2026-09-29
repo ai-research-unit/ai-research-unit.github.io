@@ -4,13 +4,13 @@
 
 The biquaternion algebra $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ is the four-dimensional complex algebra with basis $e_0 = 1, e_1, e_2, e_3$, where $e_k^2 = -e_0$ and $e_j e_k = -e_k e_j$ for $j \neq k$, and with a central scalar imaginary $i$. A general element is $\tilde{Q} = \sum_{\mu=0}^{3} Q_\mu e_\mu$, written in the four-vector realization as the quadruple $Q^\mu = (Q^0, Q^1, Q^2, Q^3)$ of *Biquaternion Four-Vector Element Representation*.
 
-That article answers the question *what is* $\tilde{Q}$: it is a quadruple of complex coefficients, with a product rule, four conjugations, six distinguished subspaces and a biquaternion norm. This article answers the question *what does* $\tilde{Q}$ *do*: the element is used as an operator through the Hermitian sandwich of *Biquaternion Operator Representation Theory*,
+That article answers the question *what is* $\tilde{Q}$: it is a quadruple of complex coefficients, with a product rule, four conjugations, six distinguished subspaces and a biquaternion norm. This article answers the question *what does* $\tilde{Q}$ *do*: the element is used as an operator through the Hermitian sandwich
 
 $$
 \mathrm{H}_{\tilde{Q}}(x) = \tilde{Q}\,x\,\tilde{Q}^{\dagger},
 $$
 
-and the whole article is the coefficient reading of that one formula. Everything is computed from the product rule of the four-vector realization and from the coordinate form of the dagger; the operator's matrix, its determinant and its trace belong to other coordinate systems and are not repeated here, and neither is its reading on the matrix algebra.
+whose laws are *Biquaternion Rotations and Lorentz Transformations*, and the whole article is the coefficient reading of that one formula. Everything is computed from the product rule of the four-vector realization and from the coordinate form of the dagger; the operator's matrix, its determinant and its trace belong to other coordinate systems and are not repeated here, and neither is its reading on the matrix algebra.
 
 The article owns the two-step component rule, the image of the basis elements, the reading of the operator on the scalar and the vector part, the coordinate form of the two regimes, and the worked collapse of a null operator on the basis. The purpose of that material is the one the component realization always serves in this corpus: it turns a structural statement into arithmetic that can be checked on a chosen element.
 
@@ -54,7 +54,7 @@ Two features of the rule carry the meaning of the operator.
 
 The first factor is **not** conjugated and the second **is**: the pair of signs $\overline{Q^0}$ and $-\overline{Q^k}$ is what makes the operator Hermitian rather than an inner automorphism, and it is the coordinate trace of the dagger.
 
-The rule is **linear in $x$ and quadratic in $\tilde{Q}$**. It is linear in $x$ because both steps of the product are bilinear and only one factor carries $x$; linearity over $\mathbb{C}$ follows because the central scalar $\lambda$ in $x \mapsto \lambda x$ passes through both factors. It is quadratic in $\tilde{Q}$ because $\tilde{Q}$ occurs once on each side and once conjugated. This is the component form of the two laws of *Biquaternion Operator Representation Theory*, that $\mathrm{H}_{\tilde{Q}\tilde{R}} = \mathrm{H}_{\tilde{Q}}\circ\mathrm{H}_{\tilde{R}}$ and that $\mathrm{H}_{z\tilde{Q}} = \lvert z\rvert^{2}\mathrm{H}_{\tilde{Q}}$ for a central $z$: doubling the operand quadruples the operator.
+The rule is **linear in $x$ and quadratic in $\tilde{Q}$**. It is linear in $x$ because both steps of the product are bilinear and only one factor carries $x$; linearity over $\mathbb{C}$ follows because the central scalar $\lambda$ in $x \mapsto \lambda x$ passes through both factors. It is quadratic in $\tilde{Q}$ because $\tilde{Q}$ occurs once on each side and once conjugated. This is the component form of the two laws of *Biquaternion Rotations and Lorentz Transformations*, that $\mathrm{H}_{\tilde{Q}\tilde{R}} = \mathrm{H}_{\tilde{Q}}\circ\mathrm{H}_{\tilde{R}}$ and that $\mathrm{H}_{z\tilde{Q}} = \lvert z\rvert^{2}\mathrm{H}_{\tilde{Q}}$ for a central $z$: doubling the operand quadruples the operator.
 
 **Corollary (the operator of a scalar multiple).** In particular $\mathrm{H}_{\tilde{Q}} = 0$ if and only if $\tilde{Q} = 0$, since the scalar component of the rule contains the nonzero factor $\overline{Q^0}$ composed with $Q^0$ as soon as any component of $\tilde{Q}$ is nonzero; and $\mathrm{H}_{i\tilde{Q}} = \mathrm{H}_{\tilde{Q}}$, since $\lvert i\rvert^{2} = 1$.
 
@@ -132,7 +132,13 @@ $$
 
 for a unit vector $\mathbf{n}$ determined by $\mathbf{Q}$. Moreover $\mathrm{H}_{\tilde{Q}}\circ\mathrm{H}_{\tilde{Q}} = 4\lvert Q^0\rvert^{2}\mathrm{H}_{\tilde{Q}}$ on the cone.
 
-**Proof.** The rank statement and the scalar $4\lvert Q^0\rvert^{2}$ are proved in *Biquaternion Operator Representation Theory*; the coordinate form of the image is the statement that every column $\mathrm{H}_{\tilde{Q}}(e_k)$ is a multiple of the single element $\tilde{Q}\tilde{Q}^{\dagger}$, which is immediate from the rank-one form $\Phi(\tilde{Q}) = uv^{\dagger}$ and is displayed in the worked case below. $\square$
+**Proof.** Off the cone, $N(\tilde{Q}) \neq 0$, the element and its Hermitian conjugate are invertible, so $\mathrm{H}_{\tilde{Q}} = L_{\tilde{Q}} \circ R_{\tilde{Q}^{\dagger}}$ is a composite of two bijections and has rank $4$. On the cone, with $\tilde{Q} \neq 0$, the matrix of the element has rank one (*Biquaternion 2×2 Matrix Element Representation*), so $\tilde{Q}$ is a nonzero zero divisor, the left ideal $\mathbb{B}\tilde{Q}^{\dagger}$ is minimal of complex dimension $2$ (*Biquaternion Ideals and Peirce Decomposition*), and
+
+$$
+\operatorname{im}\mathrm{H}_{\tilde{Q}} = L_{\tilde{Q}}\bigl(\mathbb{B}\tilde{Q}^{\dagger}\bigr) = \mathbb{B}\,\tilde{Q}\tilde{Q}^{\dagger} = \mathbb{C}\cdot\tilde{Q}\tilde{Q}^{\dagger},
+$$
+
+a single complex line, because the Hermitian element $\tilde{Q}\tilde{Q}^{\dagger}$ has norm zero and is a nonzero multiple of a minimal idempotent (*Biquaternion Idempotents and Projections*); hence the rank is $1$. The scalar $4\lvert Q^0\rvert^{2}$ is the trace of the operator: in the matrix realization the congruence $X \mapsto MXM^{\dagger}$ has trace $\lvert\operatorname{Tr}M\rvert^{2} = \lvert 2Q^0\rvert^{2} = 4\lvert Q^0\rvert^{2}$, and a rank-one endomorphism $T$ satisfies $T^{2} = (\operatorname{Tr}T)\,T$, so $\mathrm{H}_{\tilde{Q}} \circ \mathrm{H}_{\tilde{Q}} = 4\lvert Q^0\rvert^{2}\mathrm{H}_{\tilde{Q}}$. The coordinate form of the image is the statement that every column $\mathrm{H}_{\tilde{Q}}(e_k)$ is a multiple of the single element $\tilde{Q}\tilde{Q}^{\dagger}$, which is displayed in the worked case below. $\square$
 
 Two numbers therefore decide everything in coordinates: whether $N(\tilde{Q}) = \sum_\mu (Q^\mu)^2$ vanishes, and whether $Q^0$ vanishes.
 

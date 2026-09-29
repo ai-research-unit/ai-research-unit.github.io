@@ -1,0 +1,189 @@
+# __Biquaternion Versors and the Orthogonal Group__
+
+## Introduction
+
+The biquaternion algebra is the even part of the Clifford algebra of Minkowski space, and that one fact decides which isometries of the norm the framework can carry. Every operator the algebra supplies is built from one element on each side, so it is an even element of the envelope, and an even element composes an even number of reflections; the isometries it realises are the proper orthochronous Lorentz transformations and no others. The reflections are odd. They lie in the odd slot of the Clifford algebra, a second copy of the algebra sitting beside it, which the algebra does not contain. The orthogonal group is an object of the biquaternion vocabulary, read on the Minkowski sector; the Pin group is not, because its elements include the odd ones, and it belongs to the Clifford envelope rather than to the algebra. Physically this is the statement that the continuous group of rotors, which is connected, cannot reach a discrete symmetry: parity and time reversal are not rotor conjugations, and are obtained from the algebra only by the two discrete operations or from the odd slot of the envelope.
+
+This article works the biquaternion case of the Clifford group. It fixes the two slots of the envelope and identifies the odd slot as a copy of the algebra containing the Minkowski space; it reads the grading of the versors by the parity of their length, which is the reflection count; it tabulates the four components of $O(1,3)$ against the operations that reach them; it identifies the volume element with the central scalar imaginary up to sign and shows that it acts on Minkowski space as minus the identity through the inner automorphism while acting as the identity through the sandwich; and it separates the two involutions in play, the Hermitian dagger of the algebra and the Clifford conjugation of the envelope, which agree on the real-quaternion slice and nowhere else.
+
+The general theory is cited and not restated. The Clifford group, its norm, the groups Pin and Spin, the twisted adjoint $\widetilde{\mathrm{Ad}}_x(v)=\alpha(x)vx^{-1}$, the reflection $\rho_u(v)=-uvu^{-1}$ and the Cartan–Dieudonné theorem are the general Clifford articles. The even-part identification $\mathbb{B}\cong\mathrm{Cl}^{+}_{1,3}$, the dictionary of the generators and the volume element are *The Clifford Structure of the Biquaternion Algebra* and *The Dirac Algebra and Biquaternions — A Dictionary*. The parity grading of the Dirac algebra by reflection count, the frame $\gamma^{0}$, the exchange of chirality by the odd part and the statement that a reflection has no biquaternion representative are *The Reflection and the Rotation in Biquaternionic Form*; what is added here is where the odd versors live and which components of the orthogonal group the operations of the algebra reach. The sandwich, its kernel and the contrast with the inner automorphism are *The Sandwich Action in Subspaces* and *Biquaternion Rotations and Lorentz Transformations*. The rotor, the double covers and the Lorentz action are *Biquaternion Rotations and Lorentz Transformations* and *The Spinor Module in Biquaternionic Form and Its Lorentz Action*. The four foundational articles are *Introduction to the Biquaternion Universe*, *Conventions in the Biquaternion Universe*, *The Hermitian Subspace M+ as the Informational Sector* and *The Anti-Hermitian Subspace M- as the Material Sector*.
+
+**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_0=1,e_1,e_2,e_3$ and central scalar imaginary $i$; a general element is $\tilde{Q}=\sum_{\mu}Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$. The products are $e_1e_2=e_3$, $e_2e_3=e_1$, $e_3e_1=e_2$ and $e_k^2=-e_0$. The norm and its polar form are $N(\tilde{Q})=\sum_\mu Q_\mu^2=\tilde{Q}\bar{\tilde{Q}}$ and $B(\tilde{P},\tilde{Q})=\sum_\mu P_\mu Q_\mu$. The quaternion conjugation is $\bar{\tilde{Q}}=Q_0e_0-Q_1e_1-Q_2e_2-Q_3e_3$, the complex conjugation $\tilde{Q}^{*}$ conjugates the four coefficients, and the Hermitian conjugation is their composite, $\tilde{Q}^{\dagger}=\bar{\tilde{Q}}^{*}$; the fixed space of ${}^{\dagger}$ is the Hermitian sector $\mathbb{M}_+$ and its anti-fixed space the anti-Hermitian sector $\mathbb{M}_-$. The Clifford generators are the Dirac matrices of the series' mostly-minus metric, $g=\mathrm{diag}(+1,-1,-1,-1)$, so that $(\gamma^{0})^2=+I$ and $(\gamma^{k})^2=-I$; the dictionary is $e_1\mapsto\gamma^{2}\gamma^{3}$, $e_2\mapsto\gamma^{3}\gamma^{1}$, $e_3\mapsto\gamma^{1}\gamma^{2}$, $i\mapsto-\gamma^{0}\gamma^{1}\gamma^{2}\gamma^{3}$. The real-quaternion slice $\mathbb{H}_{\mathbb{B}}$ is the set of elements with four real coefficients.
+
+## The Form and its Isometries
+
+**Definition.** The two sectors of the algebra carry the two quadratic forms of the framework. The Hermitian sector is
+$$
+\mathbb{M}_+=\{\tilde{Q}:\tilde{Q}^{\dagger}=\tilde{Q}\}=\mathrm{span}_{\mathbb{R}}\{e_0,ie_1,ie_2,ie_3\},
+$$
+of real dimension four, and the biquaternion norm restricts to it with signature $(1,3)$: for $\tilde{Q}=te_0+i\mathbf{u}$ with $t\in\mathbb{R}$ and $\mathbf{u}\in\mathbb{R}^3$ one has $N(\tilde{Q})=t^2-\lvert\mathbf{u}\rvert^2$. The anti-Hermitian sector is the mirror,
+$$
+\mathbb{M}_-=\{\tilde{Q}:\tilde{Q}^{\dagger}=-\tilde{Q}\}=\mathrm{span}_{\mathbb{R}}\{ie_0,e_1,e_2,e_3\},
+$$
+and the norm restricts to it with signature $(3,1)$.
+
+**Physical reading.** $\mathbb{M}_-$ is the material sector, the space-time of the framework, whose coordinate is the $ict$ one; $\mathbb{M}_+$ is the informational sector. The Lorentz group acts on both, and its action on the material sector is the change of inertial frame. The two sectors carry the two overall signs of the same form, and the statement below is the same for both with the roles of the timelike and spacelike directions exchanged.
+
+**Definition.** Let $V$ be a real four-dimensional space with a quadratic form $q$ of signature $(1,3)$ — the abstract Minkowski space, realised inside the algebra by the material sector of the definition above — and let $O(q)=O(1,3)$ be its group of linear isometries. An isometry is **proper** when its determinant is $+1$ and **orthochronous** when it does not reverse the time orientation, that is when its $(0,0)$ entry is positive in a basis with the timelike coordinate first. The four combinations of the two signs are the four components of $O(1,3)$, and the identity component is the proper orthochronous group $SO^{+}(1,3)$.
+
+**Physical reading.** The four components are the Lorentz transformations up to the discrete symmetries: the identity component is the connected group generated by the exponentials of the boosts and the rotations, and the other three components are obtained from it by parity, by time reversal, and by both. The physical question this article answers is which of the four the framework's own rotors reach.
+
+## The Two Slots of the Envelope
+
+**Theorem (the envelope is two copies of the algebra).** Let $V$ be a real four-dimensional space with a form of signature $(1,3)$, let $\mathrm{Cl}(V)$ be its Clifford algebra, of real dimension $16$, and let $\mathrm{Cl}^{+},\mathrm{Cl}^{-}$ be its even and odd parts. Then
+$$
+\mathrm{Cl}^{+}\cong\mathbb{B},\qquad \mathrm{Cl}(V)=\mathbb{B}\oplus\mathbb{B}u,
+$$
+for every non-isotropic $u\in V$, and the odd slot $\mathbb{B}u$ is a second copy of the algebra, of real dimension eight, containing the space $V$ itself.
+
+**Proof.** The even part of the Clifford algebra of a four-dimensional space is eight-dimensional, and the identification $\mathrm{Cl}^{+}\cong\mathbb{B}$ is the Clifford structure of the algebra. For the splitting, fix $u\in V$ with $q(u)\neq0$. The element $u$ is odd, so $\mathbb{B}u\subseteq\mathrm{Cl}^{-}$; the map $x\mapsto xu$ is injective, so $\mathbb{B}u$ is eight-dimensional, and $\mathrm{Cl}^{-}$ is eight-dimensional as well, so $\mathbb{B}u=\mathrm{Cl}^{-}$. The inverse of the map is $y\mapsto yu^{-1}$, with $u^{-1}=u/q(u)$. The subspace $V$ is contained in the odd part, and $\mathbb{B}u$ is the odd part, so $V\subseteq\mathbb{B}u$. $\square$
+
+**Remark (verified).** The dimensions were recomputed on the matrix model of $\mathrm{Cl}_{1,3}$, with the generators as the Dirac matrices of the mostly-minus metric: the even part has real dimension $8$ and is closed under multiplication, $\mathbb{B}u$ has real dimension $8$ for a unit $u$, the four generators lie in $\mathbb{B}u$, and the two together span the $16$-dimensional envelope.
+
+**Physical reading.** The envelope is the Dirac algebra; its even part, the biquaternion algebra, is the algebra of the rotors, and its odd part is the span of the generators $\gamma^{\mu}$ themselves. The odd slot is therefore not an abstract construction: it is where the four gamma matrices live, a second copy of the biquaternion algebra, and the generators are not biquaternions. The odd part is what exchanges the two chiralities, and the even part preserves them, which is the grading of *The Reflection and the Rotation in Biquaternionic Form*.
+
+**Remark (the Minkowski space is odd, and its copy is inside the algebra).** The space on which the orthogonal group acts is $V$, and $V$ is odd: no element of the algebra is a Minkowski vector, which is the statement that the material sector and the odd slot are different carriers of the same coordinates. The algebra nevertheless contains a second copy of the same quadratic space, namely the material sector itself, whose form has signature $(3,1)$, and its mirror $\mathbb{M}_+$, of signature $(1,3)$. The two copies are identified through the dictionary, and the identification is the reason a statement about a coordinate of the material sector and a statement about a vector of $V$ can be read off one another. The identification is not the identity and is not available inside the algebra alone.
+
+**Remark (the labelling).** The two labellings of the signature, $\mathrm{Cl}_{1,3}$ and $\mathrm{Cl}_{3,1}$, give the same even part and different ambient algebras, $\mathrm{Cl}_{1,3}\cong M_2(\mathbb{H})$ and $\mathrm{Cl}_{3,1}\cong M_4(\mathbb{R})$, as *The Clifford Structure of the Biquaternion Algebra* records. The series fixes the mostly-minus labelling, which is the one used here: it is the labelling in which the material sector carries a form of signature $(3,1)$ and the generators are the Dirac matrices of the physical metric. Under the other labelling the two families of bivectors are exchanged, the quaternion units becoming products of two generators of square $+1$ instead of two of square $-1$, and nothing else in the article changes.
+
+## The Grading of the Versors
+
+**Definition.** A **versor** is a product $x=v_1\cdots v_k$ of non-isotropic vectors of $V$. The **Clifford group** $\Gamma$ is the set of invertible elements $x$ with $\widetilde{\mathrm{Ad}}_x(V)\subseteq V$, and the **Clifford norm** is $N_{\mathrm{Cl}}(x)=x\bar{x}$, the bar being the Clifford conjugation of the Dirac algebra and not the quaternion conjugation of the biquaternion algebra. The groups are
+$$
+\mathrm{Pin}=\{x\in\Gamma : N_{\mathrm{Cl}}(x)=\pm1\},\qquad
+\mathrm{Spin}=\mathrm{Pin}\cap\mathrm{Cl}^{+},
+$$
+and the **twisted adjoint** is $\widetilde{\mathrm{Ad}}_x(v)=\alpha(x)vx^{-1}$, with $\alpha$ the grade involution. On vectors the reflection in the hyperplane orthogonal to a non-isotropic $u$ is
+$$
+\rho_u(v)=-uvu^{-1}=v-2B(u,v)q(u)^{-1}u .
+$$
+
+**Theorem (the odd versors and the even versors).** A product of an odd number of vectors acts by the twisted adjoint as an isometry of determinant $-1$, and a product of an even number acts as an isometry of determinant $+1$; the reflection count is the parity of the length, which *The Reflection and the Rotation in Biquaternionic Form* owns. What is read here is the slot: the products of even length are the elements of the algebra $\mathbb{B}$, and the products of odd length lie in the odd slot $\mathbb{B}u$ of the theorem above, which is a copy of the algebra and not a part of it.
+
+**Proof.** The reflection $\rho_u$ has determinant $-1$ on a four-dimensional space, and a product of $k$ reflections has determinant $(-1)^k$; Cartan–Dieudonné writes every isometry as such a product, and the twisted adjoint of the versor $v_1\cdots v_k$ is the composite $\rho_{v_1}\circ\cdots\circ\rho_{v_k}$. The products of even length are products of an even number of odd elements, hence even, hence in the algebra; the products of odd length are odd, and the odd part is $\mathbb{B}u$ by the theorem above. $\square$
+
+**Remark (verified).** The twisted adjoint was computed on the matrix model for versors of length one, two, three and four: the odd lengths gave isometries of determinant $-1$ and involutions at length one, and the even lengths gave isometries of determinant $+1$, with both time orientations occurring among them. The sandwich of a unit of the algebra, in contrast, gave determinant $+1$ in every one of the tested cases, and no element of the algebra produced a negative value in four hundred random units.
+
+**Physical reading.** The reflection count of a Lorentz transformation is its parity word: an even number of reflections is a rotation, an odd number is a reflection, and the physical mirror operations are the odd ones. The rotors of the framework are even by construction, so they are the transformations of the identity component, and the framework's own algebra cannot produce a mirror operation at all; a mirror operation requires the odd slot, where the Dirac generators live. This is why the algebra's treatment of parity is structural rather than dynamical.
+
+**Corollary (Pin is not contained in the algebra).** Every non-isotropic vector can be rescaled to a vector of square $\pm1$, and such a vector lies in $\mathrm{Pin}$ and is odd, hence is not an element of $\mathbb{B}$; that a reflection has no biquaternion representative is the statement of *The Reflection and the Rotation in Biquaternionic Form*, and it is what the slot decomposition explains. Therefore
+$$
+\mathrm{Pin}(1,3)\not\subseteq\mathbb{B},\qquad
+\mathrm{Pin}(1,3)\cap\mathrm{Cl}^{+}=\mathrm{Spin}(1,3)\cong\mathbb{B}^{\times}_1 .
+$$
+The only part of the Pin group that is an object of the biquaternion algebra is the spin group, which is its even part.
+
+**Remark (which reflections).** The reflections of this article are the Lorentz reflections, that is the mirrors of the Minkowski sector. The reflections of *Biquaternion Rotations and Lorentz Transformations* are the maps $\rho_v(x)=-vxv^{-1}$ for $N(v)=1$ acting on the three-dimensional subspace $\mathrm{Vect}(\mathbb{B})$ of the algebra, where orthogonality and anticommutation coincide; those maps are realised by elements of the algebra, whereas the Lorentz mirrors are not.
+
+## What the Algebra Reaches on the Minkowski Sector
+
+**Theorem (the sandwich of a unit is proper orthochronous).** Let $\tilde{Q}\in\mathbb{B}$ with $\lvert N(\tilde{Q})\rvert=1$, and let
+$$
+\mathrm{H}_{\tilde{Q}}(x)=\tilde{Q}x\tilde{Q}^{\dagger}
+$$
+be the rotor conjugation of *Biquaternion Rotations and Lorentz Transformations*. Then the restriction of $\mathrm{H}_{\tilde{Q}}$ to the Minkowski sector is a linear isometry of signature $(1,3)$ of determinant $+1$ and of positive time orientation. Conversely every proper orthochronous Lorentz transformation is the restriction of a conjugation of this kind, and the map from the norm-one group $\mathbb{B}^{\times}_1$ to $SO^{+}(1,3)$ is two-to-one with kernel $\{\pm e_0\}$.
+
+**Proof.** Under the matrix realisation the conjugation is $X\mapsto M X M^{\dagger}$ with $M=\Phi(\tilde{Q})$, which is the standard action of $SL(2,\mathbb{C})$ on the Hermitian matrices and is a linear isometry of signature $(1,3)$. The condition $\lvert N(\tilde{Q})\rvert=1$ is $\lvert\det M\rvert=1$, and an invertible $M$ with $\lvert\det M\rvert=1$ differs from an element of $SL(2,\mathbb{C})$ by a phase, $M=e^{i\theta}M_0$ with $\det M_0=1$; the phase cancels because $MM^{\dagger}=M_0M_0^{\dagger}$, so the map is that of $M_0$ and is proper orthochronous. The converse and the kernel are the double cover $SL(2,\mathbb{C})\to SO^{+}(1,3)$ of *Biquaternion Rotations and Lorentz Transformations*. $\square$
+
+**Remark (the isometry condition is exactly the unit norm).** The conjugation multiplies the norm by $\lvert N(\tilde{Q})\rvert^{2}$, since $\tilde{Q}^{\dagger}$ has norm $\overline{N(\tilde{Q})}$ and the norm is multiplicative; so $\lvert N(\tilde{Q})\rvert=1$ is what makes it an isometry of the form, and a zero divisor generates nothing, having no inverse. The series works on the norm-one slice $N=1$, which parametrises the same operators because $N(i\tilde{Q})=-N(\tilde{Q})$ and the operator is blind to the scalar imaginary.
+
+**Theorem (the four components, and the two discrete operations).** On the Minkowski sector the following operations are isometries, and they fall in the four components of $O(1,3)$:
+
+| operation on the Minkowski sector | determinant | time orientation | component |
+|---|---|---|---|
+| $x\mapsto \tilde{Q}x\tilde{Q}^{\dagger}$, with $\lvert N(\tilde{Q})\rvert=1$ | $+1$ | $+$ | the identity component $SO^{+}(1,3)$ |
+| $x\mapsto \tilde{Q}\bar{x}\tilde{Q}^{\dagger}$, the argument quaternion-conjugated | $-1$ | $+$ | the improper orthochronous coset |
+| $x\mapsto -\tilde{Q}x\tilde{Q}^{\dagger}$, the result negated | $+1$ | $-$ | the proper anti-orthochronous coset |
+| $x\mapsto -\tilde{Q}\bar{x}\tilde{Q}^{\dagger}$, both at once | $-1$ | $-$ | the improper anti-orthochronous coset |
+
+The two operations beyond the rotor conjugation are the quaternion conjugation of the argument and the negation; they are the parity of the coordinates and the product of the parity with the time reversal, and with the rotor conjugation they generate the whole of $O(1,3)$. The names are those of the operations on the space; the corresponding operations on the spinor fields are built from the same conjugations and are the subject of *The CPT Theorem in Biquaternionic Form*, which keeps them separate from the conjugations of the algebra.
+
+**Proof.** The first row is the theorem above. Quaternion conjugation fixes $e_0$ and negates $e_1,e_2,e_3$, so on the Minkowski sector it sends $te_0+i\mathbf{u}$ to $te_0-i\mathbf{u}$, which is the parity $\mathrm{diag}(1,-1,-1,-1)$, of determinant $-1$ and orthochronous; a determinant $-1$ isometry composed with a proper orthochronous one is improper orthochronous, and the determinant multiplies. The negation sends $te_0+i\mathbf{u}$ to $-te_0-i\mathbf{u}$, of determinant $+1$ and anti-orthochronous. The four sign pairs are distinct, and the table is complete because $O(1,3)$ has exactly four components. $\square$
+
+**Remark (verified).** Each row was recomputed on the matrix model on sixty random units of $\lvert N\rvert=1$ each: the conjugation always gave determinant $+1$ with a positive time entry, the quaternion-conjugated argument always determinant $-1$ with a positive entry, the negated result always determinant $+1$ with a negative entry, and the two together determinant $-1$ with a negative entry; and the four pairs of signs were the four pairs of the group.
+
+**Physical reading: parity and time reversal are not rotors.** The physical content of the table is that the continuous group of the framework, which is connected, reaches one component only: the rotor conjugation is the change of frame, and it is always proper and orthochronous. The parity of the coordinates and the time reversal are not rotor conjugations, since every rotor conjugation with unit norm is proper orthochronous; they are the two discrete operations on the sector, the quaternion conjugation of the argument and the negation, and their composition. A framework that writes every transformation as a rotor conjugation writes only the connected group, and the discrete symmetries of the space have to be added by hand or taken from the odd slot of the envelope; the discrete operations on the fields are a further step, and they are the subject of *The CPT Theorem in Biquaternionic Form*.
+
+## The Volume Element
+
+**Definition.** Let $\gamma^{0},\gamma^{1},\gamma^{2},\gamma^{3}$ be the generators in the mostly-minus metric, with $(\gamma^{0})^2=+1$ and $(\gamma^{k})^2=-1$, and let
+$$
+\Omega=\gamma^{0}\gamma^{1}\gamma^{2}\gamma^{3}
+$$
+be the volume element of $\mathrm{Cl}_{1,3}$, written $\Omega$ in the Clifford articles and $\omega$ in *The Dirac Algebra and Biquaternions — A Dictionary*. Then $\Omega^2=-1$, and $\Omega$ commutes with the even slot and anticommutes with every generator. The dictionary sends the quaternion units to the spatial bivectors, $e_1\mapsto\gamma^{2}\gamma^{3}$, $e_2\mapsto\gamma^{3}\gamma^{1}$, $e_3\mapsto\gamma^{1}\gamma^{2}$, and the central scalar imaginary to $i\mapsto-\Omega$.
+
+**Theorem (the volume element is minus the identity on Minkowski space).** On the odd slot the twisted adjoint of the volume element negates every vector,
+$$
+\widetilde{\mathrm{Ad}}_{\Omega}(v)=\Omega v\Omega^{-1}=-v ,
+$$
+so that $\Omega$ acts on the Minkowski space as $-\mathrm{id}$, the product of parity with time reversal, of determinant $+1$ and anti-orthochronous. On the Minkowski sector, the copy of the same space inside the algebra, the conjugation by the corresponding element, the central scalar imaginary, is the identity, since $i$ is central and $i^{\dagger}=-i$.
+
+**Proof.** The volume element of an even-dimensional Clifford algebra anticommutes with every generator: moving $\gamma^{j}$ past the monomial $\Omega$, in which it occurs, costs the sign $(-1)^{3}$, so $\gamma^{j}\Omega=-\Omega\gamma^{j}$, and the same for every generator. Hence $\Omega v\Omega^{-1}=-\Omega\Omega^{-1}v=-v$. For the second statement, $i$ commutes with everything, so $\mathrm{H}_{i}(x)=ixi^{\dagger}=ix(-i)=-i^2x=x$. $\square$
+
+**Remark (verified).** Both statements were recomputed on the matrix model: the twisted adjoint of $\Omega$ gave $-v$ on all four generators, and the conjugation by $\pm iI$ gave the identity on the Minkowski sector.
+
+**Physical reading: the volume element and chirality.** The volume element is central in the even part, hence invisible to the rotor conjugation, which is why the rotor conjugation alone carries no chirality: multiplication by $\Omega$ on an even element is multiplication by $-i$ on the biquaternion, so the central scalar imaginary is the pseudoscalar read on the algebra. The chirality operator proper is $\gamma^5=i\Omega$, the volume element up to the factor that makes it an involution rather than a complex structure, as *The Clifford Structure of the Biquaternion Algebra* records. On the physical space the volume element is not invisible: it anticommutes with the generators and acts on the coordinates as $-\mathrm{id}$, the combined parity and time reversal $PT$, so the same element is the $PT$ of the space and the pseudoscalar of the spinor module.
+
+**Remark (what this says about the determinant-one components).** The volume element is an element of the algebra, and it is even, so the anti-orthochronous part of $SO(1,3)$ is reached by an element of the algebra after all; but it is reached by the inner automorphism and not by the conjugation, and the conjugation by the same element is the identity because the scalar imaginary is central. The algebra's elements therefore supply more of the orthogonal group than the algebra's operator does, and the difference is exactly the replacement of the dagger by the inverse.
+
+## The Two Involutions
+
+**Theorem (the dagger is not the Clifford conjugation).** Let $\mathrm{rev}$ be the reversion of $\mathrm{Cl}_{1,3}$, the anti-automorphism fixing every vector; on the even slot it is the Clifford conjugation. Restricted to $\mathbb{B}$ the two involutions ${}^{\dagger}$ and $\mathrm{rev}$ are different: $\mathrm{rev}$ fixes $e_0$, negates $e_1,e_2,e_3$, fixes $i$ and $\Omega$, and negates the boosts $ie_k$, while ${}^{\dagger}$ fixes $e_0$, negates $e_1,e_2,e_3$, negates $i$, and fixes the boosts $ie_k$. Their composite is the real-structure automorphism $\sigma$ of the algebra, the map $z\otimes h\mapsto\bar{z}\otimes h$ that conjugates the coefficients and fixes the quaternion units,
+$$
+\mathrm{rev}={}^{\dagger}\circ\sigma .
+$$
+
+**Proof.** The dictionary sends $e_k$ to a spatial bivector and $i$ to $-\Omega$. Reversion negates every bivector, so it negates $e_k$ and $ie_k$, and it fixes the identity and the degree-four volume element. The Hermitian dagger negates the coefficients of $e_1,e_2,e_3$ and of $i$, and fixes $i$ times a quaternion unit. The two agree on $e_0$ and on $e_k$, and differ on $i$ and on $ie_k$; the composite therefore fixes the quaternion units and negates $i$, which is the automorphism $z\otimes h\mapsto\bar{z}\otimes h$. $\square$
+
+**Remark (verified).** The composite was recomputed: the reversion of the volume element is the volume element, the reversion of $ie_1$ is $-ie_1$, the dagger of $i$ is $-i$, and the identity $\mathrm{rev}={}^{\dagger}\circ\sigma$ held on random elements of the algebra to machine precision. The equality $\mathrm{rev}(\tilde{Q})=\tilde{Q}^{\dagger}$ holds exactly on the real-quaternion slice, since it is equivalent to $\sigma$ fixing the element and $\sigma$ conjugates the four coefficients.
+
+**Corollary (they agree on the real-quaternion slice).** On $\mathbb{H}_{\mathbb{B}}$, the elements with four real coefficients, the coefficient conjugation is the identity and the two involutions coincide. Consequently on that slice the rotor conjugation is the inner automorphism scaled by the norm,
+$$
+\mathrm{H}_{\tilde{Q}}=N(\tilde{Q})\cdot\mathrm{Ad}_{\tilde{Q}},\qquad
+\mathrm{Ad}_{\tilde{Q}}(x)=\tilde{Q}x\tilde{Q}^{-1},
+$$
+and off the slice the two differ, the difference being the coefficient conjugation of the right factor.
+
+**Proof.** The inverse is $\tilde{Q}^{-1}=\bar{\tilde{Q}}/N(\tilde{Q})$, so $N(\tilde{Q})\mathrm{Ad}_{\tilde{Q}}(x)=\tilde{Q}x\bar{\tilde{Q}}$, which is the rotor conjugation for every $\tilde{Q}$ with $\bar{\tilde{Q}}=\tilde{Q}^{\dagger}$, that is on the real-quaternion slice and only there. $\square$
+
+**Remark.** The rotor conjugation is the dagger-paired operator and the inner automorphism the inverse-paired one, and the difference is physical: the dagger is the adjoint of the spinor form of the framework, and it is not the Clifford conjugation of the Dirac algebra. The two agree where the four coefficients are real, that is on the real-quaternion slice $\mathbb{H}_{\mathbb{B}}$ which carries the rotation rotors, and differ on the boosts, whose coefficients carry the imaginary unit.
+
+**Remark (the dagger is the Euclidean reversion).** The involution ${}^{\dagger}$ is the reversion of a different Clifford structure on the same algebra: the positive definite one, $\mathbb{B}\cong\mathrm{Cl}_{3,0}$, in which the vectors are the imaginary quaternions $ie_k$, and which is the structure of *The Clifford Structure of the Biquaternion Algebra*. Reversion fixes vectors, so it fixes the $ie_k$, and it negates the products of three of them, which is why it negates $i$; that is exactly the action of the dagger. The Minkowski reversion is the other one, and the two disagree by the coefficient conjugation and not by a change of basis.
+
+## What the Algebra Does Not Cover
+
+**The orthogonal group is an object of the algebra; the Pin group is not.** $O(1,3)$ is read on the Minkowski sector, its elements are linear maps of a subspace of the algebra, and the table above exhibits each component as an operation on that subspace. The Pin group is not an object of the algebra: it contains the odd versors, which are the mirrors, and the odd slot of the envelope is a second copy of the algebra rather than a part of it. A row for $\mathrm{Pin}$ in a table of the objects of $\mathbb{B}$ would place an object of $\mathrm{Cl}_{1,3}$ inside $\mathbb{B}$, which is false, and it would give that object two owners, the Clifford articles already owning it.
+
+**What the last cover is.** The double cover the algebra records is the even one, $\mathrm{Spin}(1,3)\to SO^{+}(1,3)$, with kernel $\{\pm e_0\}$; the odd slot records the covers of the improper components, whose mirrors are the odd versors of $\mathrm{Pin}$. The two-to-one cover of the whole orthogonal group by $\mathrm{Pin}$ is a statement about the envelope, and the corresponding statement about the algebra is only about its identity component.
+
+**Where the determinant minus one lives.** No element of the algebra gives a mirror of the Minkowski sector, and no conjugation of the algebra leaves the proper orthochronous component: the determinant of a conjugation is $+1$ because the conjugation is even in both factors. The determinant minus one transformations of the space are reached either by the odd slot of the envelope or, inside the algebra, by conjugating the argument, which is parity, and which is a discrete operation and not a rotor.
+
+## Summary
+
+The biquaternion algebra is the even part of the Dirac algebra, and the envelope is two copies of it, $\mathrm{Cl}_{1,3}=\mathbb{B}\oplus\mathbb{B}u$, the odd copy containing the generators and the space on which the orthogonal group acts. The parity of the length of a versor is its reflection count, so the odd versors are the mirrors and lie outside the algebra, and the only part of $\mathrm{Pin}(1,3)$ that is an object of the algebra is $\mathrm{Spin}(1,3)=\mathbb{B}^{\times}_1$. The rotor conjugation of a unit of norm one is an isometry of the Minkowski sector of determinant $+1$ and orthochronous, and with the quaternion conjugation of the argument and the negation it generates the whole orthogonal group: the four operations give the four components, of determinants $\pm1$ and of the two time orientations, so that parity and time reversal of the space are not rotors but two discrete operations of the algebra. The volume element, which is the central scalar imaginary up to sign, anticommutes with every generator, so it acts on the physical space as $-\mathrm{id}$, the combined parity and time reversal, through the inner automorphism, while its conjugation is the identity on the Minkowski sector because the scalar imaginary is central and Hermitian-conjugates to its negative; the pseudoscalar of the spinor module and the $PT$ of the space are the same element seen on the two carriers, the chirality operator being that element up to the factor $i$. The dagger of the algebra is the adjoint of the spinor form and the reversion of the Euclidean Clifford structure, not the Clifford conjugation of the Dirac algebra; the two differ by the automorphism that conjugates the coefficients, they agree exactly on the real-quaternion slice, and there the rotor conjugation is the inner automorphism scaled by the norm.
+
+## Summary of Notation
+
+| Symbol | Meaning |
+|---|---|
+| $\mathbb{M}_+,\mathbb{M}_-$ | The informational and the material sector, of signatures $(1,3)$ and $(3,1)$; the material one is the space-time and the copy of Minkowski space inside the algebra |
+| $V$ | The four-dimensional space of signature $(1,3)$ whose Clifford algebra is the envelope; it is odd, and it lies in the odd slot |
+| $\mathrm{Cl}_{1,3},\mathrm{Cl}^{+},\mathrm{Cl}^{-}$ | The Dirac algebra, of real dimension $16$; its even part, the biquaternion algebra, of real dimension $8$; its odd part, $\mathbb{B}u$, a second copy of the algebra |
+| $u$ | A non-isotropic vector of $V$; the odd slot is $\mathbb{B}u$ and the inverse of $x\mapsto xu$ is $y\mapsto yu^{-1}$ |
+| $\gamma^{\mu},\Omega=\gamma^{0}\gamma^{1}\gamma^{2}\gamma^{3}$ | The Dirac generators of the mostly-minus metric and the volume element, $\Omega^2=-1$, central in the even part and anticommuting with every generator; the central scalar imaginary is $-\Omega$ |
+| $\tilde{Q}$ | An element of $\mathbb{B}$; the rotor conjugation $\mathrm{H}_{\tilde{Q}}(x)=\tilde{Q}x\tilde{Q}^{\dagger}$ |
+| $\rho_u(v)=-uvu^{-1}$ | The mirror in the hyperplane orthogonal to $u$; a Lorentz transformation, realised by the odd versor $u$ |
+| $\widetilde{\mathrm{Ad}}_x(v)=\alpha(x)vx^{-1}$ | The twisted adjoint; $\mathrm{Ad}_{\tilde{Q}}(x)=\tilde{Q}x\tilde{Q}^{-1}$ is the inner automorphism |
+| $\Gamma$, $N_{\mathrm{Cl}}(x)=x\bar{x}$ | The Clifford group and the Clifford norm; $\mathrm{Pin}=\{N_{\mathrm{Cl}}=\pm1\}$ and $\mathrm{Spin}=\mathrm{Pin}\cap\mathrm{Cl}^{+}\cong\mathbb{B}^{\times}_1$ |
+| $\mathrm{rev},\sigma$ | The reversion of $\mathrm{Cl}_{1,3}$ fixing every vector; the automorphism conjugating the coefficients, $z\otimes h\mapsto\bar{z}\otimes h$; $\mathrm{rev}={}^{\dagger}\circ\sigma$ |
+| $\mathbb{H}_{\mathbb{B}}$ | The real-quaternion slice, four real coefficients; the slice on which ${}^{\dagger}$ and $\mathrm{rev}$ coincide and $\mathrm{H}_{\tilde{Q}}=N(\tilde{Q})\mathrm{Ad}_{\tilde{Q}}$ |
+| $P,PT$ | The parity of the space, the quaternion conjugation of the argument; the combined parity and time reversal of the space, the negation; neither is a rotor conjugation, and the discrete operations on the fields are *The CPT Theorem in Biquaternionic Form* |
+| $O(1,3),SO^{+}(1,3)$ | The orthogonal group of the form and its identity component; their components are indexed by the determinant and the time orientation |
+
+## Further Reading
+
+- Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge University Press, 2nd ed. 2001), for the Clifford group, its norm, the twisted adjoint and the double cover of the orthogonal group.
+- Chris Doran and Anthony Lasenby, *Geometric Algebra for Physicists* (Cambridge University Press, 2003), for the versor product, the reflection and the Cartan–Dieudonné theorem in the form the physical literature uses.
+- H. Blaine Lawson and Marie-Louise Michelsohn, *Spin Geometry* (Princeton University Press, 1989), for the Clifford algebra as the ambient object, the volume element and the parity grading.
+- Ian R. Porteous, *Clifford Algebras and the Classical Groups* (Cambridge University Press, 1995), for the identification of the biquaternion algebra with the even part of $\mathrm{Cl}_{1,3}$ and for the matrix models of the two slots.
+- Within the corpus, the companion articles *The Dirac Algebra and Biquaternions — A Dictionary*, *The Reflection and the Rotation in Biquaternionic Form*, *The Sandwich Action in Subspaces*, *Biquaternion Rotations and Lorentz Transformations* and *The Clifford Structure of the Biquaternion Algebra*.

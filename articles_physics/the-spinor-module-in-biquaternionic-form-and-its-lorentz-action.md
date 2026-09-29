@@ -150,7 +150,7 @@ This ideal model is the precise sense in which "the spinor module lies inside $\
 
 ## The Two Chiral Halves
 
-The spinor module of the preceding sections carries the **defining representation** of $SL(2,\mathbb{C})$. In the classification of the companion article *Biquaternion Element Representation Theory*, this is the representation
+The spinor module of the preceding sections carries the **defining representation** of $SL(2,\mathbb{C})$. In the classification of the companion article *The Lorentz Group in Biquaternionic Form — Structure and Representations*, this is the representation
 
 $$
 V_1 = \left(\tfrac{1}{2}, 0\right), \qquad \dim_{\mathbb{C}} V_1 = 2,

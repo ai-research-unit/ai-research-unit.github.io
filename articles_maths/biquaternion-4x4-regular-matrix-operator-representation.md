@@ -4,7 +4,7 @@
 
 The biquaternion algebra $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ is the four-dimensional complex algebra with basis $e_0 = 1, e_1, e_2, e_3$, where $e_k^2 = -e_0$ and $e_j e_k = -e_k e_j$ for $j \neq k$, with central scalar imaginary $i$, and with general element $\tilde{Q} = \sum_{\mu=0}^{3} Q_\mu e_\mu$. The left and right regular representations $\rho_L, \rho_R$ of $\mathbb{B}$ on itself, in the coefficient basis $e_0, e_1, e_2, e_3$, are those of *Biquaternion 4×4 Regular Matrix Element Representation*.
 
-That article writes an element as an operator by *one* of its two multiplications, and finds the matrix of left multiplication, $\rho_L(\tilde{Q})(\tilde{R}) = \tilde{Q}\tilde{R}$, with $\det\rho_L(\tilde{Q}) = N(\tilde{Q})^{2}$ and $\operatorname{Tr}\rho_L(\tilde{Q}) = 4Q_0$. This article writes the Hermitian sandwich of *Biquaternion Operator Representation Theory* in the same basis,
+That article writes an element as an operator by *one* of its two multiplications, and finds the matrix of left multiplication, $\rho_L(\tilde{Q})(\tilde{R}) = \tilde{Q}\tilde{R}$, with $\det\rho_L(\tilde{Q}) = N(\tilde{Q})^{2}$ and $\operatorname{Tr}\rho_L(\tilde{Q}) = 4Q_0$. This article writes the Hermitian sandwich of *Biquaternion Rotations and Lorentz Transformations* in the same basis,
 
 $$
 \mathrm{H}_{\tilde{Q}}(x) = \tilde{Q}\,x\,\tilde{Q}^{\dagger},
@@ -42,7 +42,7 @@ the product of the left regular matrix of the operand and the right regular matr
 
 Two readings of the identity follow, and they explain the whole structure of the operator.
 
-**The operator is a congruence, not a similarity.** If the two factors were $\tilde{Q}$ and $\tilde{Q}^{-1}$ the product would be the conjugation of the regular representation, of determinant $1$ and spectrum invariant under conjugation. With $\tilde{Q}^{\dagger}$ in place of the inverse the product is a congruence: it preserves rank and it scales the determinant, and it preserves the spectrum only on the unitary slice. This is the matrix-level reason for the failure of multiplicativity recorded in *Biquaternion Operator Representation Theory*.
+**The operator is a congruence, not a similarity.** If the two factors were $\tilde{Q}$ and $\tilde{Q}^{-1}$ the product would be the conjugation of the regular representation, of determinant $1$ and spectrum invariant under conjugation. With $\tilde{Q}^{\dagger}$ in place of the inverse the product is a congruence: it preserves rank and it scales the determinant, and it preserves the spectrum only on the unitary slice. This is the matrix-level reason for the failure of multiplicativity recorded in *Biquaternion Rotations and Lorentz Transformations*.
 
 **The two multiplications commute, and the dagger is not the inverse.** Left and right multiplications by fixed elements commute, so the order of the two factors is immaterial and the operator is also the product $\rho_R(\tilde{Q}^{\dagger})\rho_L(\tilde{Q})$. What matters is the pairing. The one-sided products $\rho_L(\tilde{Q})\rho_L(\tilde{Q}^{\dagger})$, the operator $x \mapsto \tilde{Q}\tilde{Q}^{\dagger}x$, and $\rho_R(\tilde{Q})\rho_R(\tilde{Q}^{\dagger})$, the operator $x \mapsto x\tilde{Q}\tilde{Q}^{\dagger}$, are different from the sandwich unless $\tilde{Q}\tilde{Q}^{\dagger}$ is central, that is, unless the operand is a central multiple of a real quaternion. And with $\tilde{Q}^{-1}$ in place of $\tilde{Q}^{\dagger}$ the product is the inner automorphism $x \mapsto \tilde{Q}x\tilde{Q}^{-1}$, of determinant one. The sandwich is the congruence-shaped pairing of a left multiplication with the right multiplication by the dagger, and that is what makes its invariants real.
 
@@ -81,13 +81,23 @@ $$
 
 **Proof.** Let $\Phi(\tilde{Q}) = P\,\mathrm{diag}(\lambda_1,\lambda_2)\,P^{-1}$. On the matrix side the operator is $X \mapsto \Phi(\tilde{Q})X\Phi(\tilde{Q})^{\dagger}$, and in the transformed variable $Y = P^{-1}X(P^{-1})^{\dagger}$ it acts as $Y \mapsto \mathrm{diag}(\lambda_1,\lambda_2)\,Y\,\mathrm{diag}(\bar{\lambda}_1,\bar{\lambda}_2)$, which multiplies the matrix unit $E_{ij}$ by $\lambda_i\bar{\lambda}_j$. The four matrix units are therefore eigenvectors. For the trace, $\sum_{ij}\lambda_i\bar{\lambda}_j = \bigl(\textstyle\sum_i\lambda_i\bigr)\bigl(\textstyle\sum_j\bar{\lambda}_j\bigr) = \lvert\lambda_1+\lambda_2\rvert^{2} = \lvert\operatorname{Tr}\Phi(\tilde{Q})\rvert^{2} = \lvert 2Q_0\rvert^{2}$, and $\operatorname{Tr}\Phi(\tilde{Q}) = 2Q_0$ is the trace statement of *Biquaternion 2×2 Matrix Element Representation*. For the determinant, the four eigenvalues multiply to $\lvert\lambda_1\rvert^{2}\lvert\lambda_2\rvert^{2}\lvert\lambda_1\bar{\lambda}_2\rvert^{2}$, which simplifies to $\lvert\lambda_1\lambda_2\rvert^{4} = \lvert N(\tilde{Q})\rvert^{4}$; the identification $\lambda_1\lambda_2 = \det\Phi(\tilde{Q}) = N(\tilde{Q})$ is the determinant statement of the same article. $\square$
 
-The two invariants are **real and non-negative for every operand**, and they are not the invariants of the element matrix: the element $\rho_L(\tilde{Q})$ has determinant $N(\tilde{Q})^{2}$, which is complex, and trace $4Q_0$, which is complex. The operator has thrown away the phase, exactly as the kernel of *Biquaternion Operator Representation Theory* requires, and what remains is a modulus.
+The two invariants are **real and non-negative for every operand**, and they are not the invariants of the element matrix: the element $\rho_L(\tilde{Q})$ has determinant $N(\tilde{Q})^{2}$, which is complex, and trace $4Q_0$, which is complex. The operator has thrown away the phase, exactly as the blindness to the phase of *Biquaternion Rotations and Lorentz Transformations* requires, and what remains is a modulus.
 
 **Corollary (the operator is invertible exactly off the cone).** $\mathrm{H}_{\tilde{Q}}$ is invertible if and only if $N(\tilde{Q}) \neq 0$, and $\lvert\det\mathrm{H}_{\tilde{Q}}\rvert^{1/4} = \lvert N(\tilde{Q})\rvert$.
 
+**Theorem (the rank of the operator).** For every $\tilde{Q}$,
+
+$$
+\operatorname{rank}\mathrm{H}_{\tilde{Q}} = \bigl(\operatorname{rank}\Phi(\tilde{Q})\bigr)^{2},
+$$
+
+so that $\operatorname{rank}\mathrm{H}_{\tilde{Q}} = 4$ off the cone, $1$ on it for $\tilde{Q} \neq 0$, and $0$ only at $\tilde{Q} = 0$.
+
+**Proof.** Write the singular value decomposition $\Phi(\tilde{Q}) = P\Sigma V^{\dagger}$ with $P, V$ unitary and $\Sigma = \operatorname{diag}(\sigma_1,\sigma_2)$, $\sigma_j \geq 0$. In the matrix realization the operator is $X \mapsto \Phi(\tilde{Q})X\Phi(\tilde{Q})^{\dagger} = P\Sigma(V^{\dagger}XV)\Sigma P^{\dagger}$. As $X$ runs over $M_2(\mathbb{C})$ so does $V^{\dagger}XV$, and $\Sigma Y\Sigma$ has entries $\sigma_i\sigma_j Y_{ij}$, so the image is exactly the coordinate subspace spanned by the matrix units $E_{ij}$ with $\sigma_i\sigma_j \neq 0$, of complex dimension $(\#\{j : \sigma_j \neq 0\})^{2}$; conjugation by the fixed invertible $P$ does not change that dimension. The number of nonzero singular values is $\operatorname{rank}\Phi(\tilde{Q})$, which is $2$ off the cone, $1$ for a nonzero zero divisor, and $0$ only at $\tilde{Q} = 0$. $\square$
+
 ## The Case $N(\tilde{Q}) \neq 0$
 
-Off the null cone the two theorems above give a complete picture.
+Off the null cone the results above give a complete picture.
 
 **Theorem (the invertible case).** Let $N(\tilde{Q}) \neq 0$. Then $\operatorname{rank}\mathrm{H}_{\tilde{Q}} = 4$, the operator lies in $GL(4,\mathbb{C})$, it preserves the rank of every argument, and in the coefficient basis it is a congruence by the invertible matrix $\rho_L(\tilde{Q})$. In the notation of the two regular maps,
 
@@ -97,7 +107,7 @@ $$
 
 a product of one left and one right multiplication, both invertible.
 
-**Proof.** The rank statement is *Biquaternion Operator Representation Theory*; the invertibility is $\det\mathrm{H}_{\tilde{Q}} = \lvert N(\tilde{Q})\rvert^{4} \neq 0$; the preservation of rank is the elementary fact that a congruence by an invertible matrix has the same rank as its argument, and the invertibility of each factor follows from $\det\rho_L(\tilde{Q}) = N(\tilde{Q})^{2} \neq 0$ and $\det\rho_R(\tilde{Q}^{\dagger}) = N(\tilde{Q}^{\dagger})^{2} = \overline{N(\tilde{Q})}^{2} \neq 0$. $\square$
+**Proof.** The rank statement is the rank theorem above; the invertibility is $\det\mathrm{H}_{\tilde{Q}} = \lvert N(\tilde{Q})\rvert^{4} \neq 0$; the preservation of rank is the elementary fact that a congruence by an invertible matrix has the same rank as its argument, and the invertibility of each factor follows from $\det\rho_L(\tilde{Q}) = N(\tilde{Q})^{2} \neq 0$ and $\det\rho_R(\tilde{Q}^{\dagger}) = N(\tilde{Q}^{\dagger})^{2} = \overline{N(\tilde{Q})}^{2} \neq 0$. $\square$
 
 **Example.** For $\tilde{Q} = e_0 + e_1$ one has $N = 2$ and
 
@@ -127,7 +137,7 @@ $$
 
 The image is the single complex line spanned by the Hermitian element $\tilde{Q}\tilde{Q}^{\dagger}$, and its generator, normalised, is a minimal idempotent of $\mathbb{B}$. If $Q_0 = 0$ the operator is nilpotent, $\mathrm{H}_{\tilde{Q}}\circ\mathrm{H}_{\tilde{Q}} = 0$, so all four eigenvalues vanish; if $Q_0 \neq 0$ the operator has the single nonzero eigenvalue $4\lvert Q_0\rvert^{2}$ and is a scaled projection.
 
-**Proof.** The rank and the square are *Biquaternion Operator Representation Theory*. For the eigenvalues: with $\operatorname{rank}\mathrm{H}_{\tilde{Q}} = 1$ the operator is, after a change of basis, a single nonzero entry, hence its eigenvalues are $4\lvert Q_0\rvert^{2}$ once and $0$ three times, the trace being additive. When $Q_0 = 0$ the trace vanishes and one eigenvalue of a rank-one operator is zero, so the operator is nilpotent. $\square$
+**Proof.** The rank is the rank theorem above; for the square, a rank-one endomorphism satisfies $T^{2} = (\operatorname{Tr}T)\,T$ and $\operatorname{Tr}\mathrm{H}_{\tilde{Q}} = 4\lvert Q_0\rvert^{2}$, so $\mathrm{H}_{\tilde{Q}}\circ\mathrm{H}_{\tilde{Q}} = 4\lvert Q_0\rvert^{2}\mathrm{H}_{\tilde{Q}}$. For the eigenvalues: with $\operatorname{rank}\mathrm{H}_{\tilde{Q}} = 1$ the operator is, after a change of basis, a single nonzero entry, hence its eigenvalues are $4\lvert Q_0\rvert^{2}$ once and $0$ three times, the trace being additive. When $Q_0 = 0$ the trace vanishes and one eigenvalue of a rank-one operator is zero, so the operator is nilpotent. $\square$
 
 **Example (nilpotent).** For $\tilde{Q} = e_1 + ie_2$, a null operand with $Q_0 = 0$,
 
