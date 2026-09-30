@@ -59,6 +59,77 @@ $$
 
 **Remark.** The norm-one group $\mathbb{B}^{\times}_1\cong SL(2,\mathbb{C})$ is strictly larger: it acts on the defining module too, but it does not preserve the Hermitian form, and unlike $U(2)$ it is non-compact.
 
+## The Enlarged Carrier and the Closed Forms for SU(3) and SU(4)
+
+The groups the algebra reaches directly are $SU(2)=S^3$ and the compact $U(2)$ above, and the ceiling recorded in the physics article *The Gauge Group Ceiling: Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)* is the statement that no octet of generators with an $\mathfrak{su}(3)$ bracket sits **inside** $\mathbb{B}$. Classical closed forms for $SU(3)$ and $SU(4)$ in terms of biquaternions nevertheless exist, and they cost exactly one enlargement of the carrier: not the algebra but the matrices over the algebra.
+
+**Definition (matrices over the algebra).** Let $M_n(\mathbb{B})$ be the $\mathbb{C}$-algebra of $n\times n$ matrices with entries in $\mathbb{B}$, acting on $\mathbb{B}^n$. The identification $\mathbb{B}\cong M_2(\mathbb{C})$ extends entrywise, so
+
+$$
+M_n(\mathbb{B})\cong M_n(M_2(\mathbb{C}))\cong M_{2n}(\mathbb{C}),\qquad
+\dim_{\mathbb{C}}M_n(\mathbb{B})=4n^2 .
+$$
+
+In particular $M_3(\mathbb{B})\cong M_6(\mathbb{C})$ contains $\mathfrak{u}(3)$ and hence $\mathfrak{su}(3)$, with its eight generators written as $3\times3$ matrices of biquaternions. This realises the ceiling's answer: the octet is not in $\mathbb{B}$, and it *is* in $M_3(\mathbb{B})$, for the price of enlarging the carrier by the factor $2$ in each matrix direction. Since $\mathbb{B}\hookrightarrow M_3(\mathbb{B})$ by the scalar matrices, the chain is $\mathfrak{su}(2)=\mathfrak{k}\subset\mathfrak{su}(3)\subset\mathfrak{u}(3)\subset M_3(\mathbb{B})$.
+
+The closed forms use the Conway operator calculus of *The Enveloping Algebra of the Biquaternion Algebra and the Bi-module Structure*, §*The Conway Operator Basis*: $a[\,]b$ is the linear function $z\mapsto azb$, $\odot$ is composition, $D\{d_1,d_2,d_3\}=\frac12\sum_kd_ke_k[\,]e_k$, and for a unit vector $\mathbf b$ each of the generators $b[\,]b$ and $e_k[\,]e_k$ has square the identity, $(b[\,]b)^2=(e_k[\,]e_k)^2=[\,]$, so their exponentials are trigonometric.
+
+**Proposition (the three exponentials).** $\mathrm{EXP}$ denoting the exponential series of a linear function, for real $\alpha$, $\beta$ and $\delta_k$,
+
+$$
+\mathrm{EXP}\Bigl(\tfrac{\alpha}{2}\bigl(a[\,]-[\,]a\bigr)\Bigr)=\exp\bigl(\tfrac{\alpha}{2}a\bigr)[\,]\exp\bigl(-\tfrac{\alpha}{2}a\bigr),
+$$
+
+$$
+\mathrm{EXP}\bigl(iD\{\delta_1,\delta_2,\delta_3\}\bigr)
+=\underset{k=1}{\overset{3}{\odot}}\exp\Bigl(\delta_k\tfrac{i}{2}e_k[\,]e_k\Bigr),
+\qquad
+\mathrm{EXP}\Bigl(\tfrac{i\beta}{2}\,b[\,]b\Bigr)=\cos\tfrac{\beta}{2}\,[\,]+i\sin\tfrac{\beta}{2}\,b[\,]b .
+$$
+
+*Proof.* The first is the Olinde–Rodrigues formula, verified residual $5.8\times10^{-16}$; for the second and third the squares of the generators are the identity, $(b[\,]b)^2=[\,]$ and $(e_k[\,]e_k)^2=[\,]$, so the series collapses to cosine and sine, verified residuals $1.7\times10^{-15}$ and $1.0\times10^{-15}$. The signs of the imaginary units are the ones that make the results compact for real parameters: $D$ carries $i$ and $b[\,]b$ carries $i$, while the antisymmetric function carries none.
+
+**Theorem (Lie-type forms for $\mathrm{SU}(3)$, $\mathrm{SL}(3,\mathbb{R})$ and $\mathrm{SL}(3,\mathbb{C})$).** For real $\alpha,\beta,\delta_1,\delta_2$, with $\mathbf a$ and $\mathbf b$ unit vectors and $\delta_1+\delta_2+\delta_3=0$, every element of $\mathrm{SU}(3)$ is
+
+$$
+G=\exp\Bigl(\tfrac{\beta}{2}i\,b[\,]b\Bigr)\odot\exp\Bigl(\tfrac{\alpha}{2}\bigl(a[\,]-[\,]a\bigr)\Bigr)
+\odot\exp\Bigl(iD\{\delta_1-\beta b_1^2,\ \delta_2-\beta b_2^2,\ \delta_3-\beta b_3^2\}\Bigr),
+$$
+
+with the eight independent parameters $\alpha,\beta,\delta_1,\delta_2$ and the four angles in the two unit vectors. Suppressing the imaginary units gives the same formula for $\mathrm{SL}(3,\mathbb{R})$ when all parameters are real, and for $\mathrm{SL}(3,\mathbb{C})$ when they are complex. Verified: for $100$ random parameter sets the $4\times4$ matrix of $G$ is unitary with $|\det G-1|<4\times10^{-15}$.
+
+**Theorem (Euler-angles forms).** With unit vectors $\mathbf a,\mathbf b,\mathbf c,\mathbf d,\mathbf u,\mathbf v,\mathbf w$ and real angles,
+
+$$
+U_{\mathrm{SU}(3)}=\exp\bigl(\tfrac{\alpha}{2}a\bigr)[\,]\exp\bigl(-\tfrac{\alpha}{2}a\bigr)
+\odot\exp\bigl(iD\{\beta,\gamma,-\beta-\gamma\}\bigr)
+\odot\exp\bigl(\tfrac{\delta}{2}b\bigr)[\,]\exp\bigl(-\tfrac{\delta}{2}b\bigr),
+$$
+
+$$
+U_{\mathrm{SU}(4)}=\exp\bigl(\tfrac{\alpha}{2}a\bigr)[\,]\exp\bigl(-\tfrac{\beta}{2}b\bigr)
+\odot\exp\bigl(iD\{\gamma,\delta,\epsilon\}\bigr)
+\odot\exp\bigl(\tfrac{\psi}{2}c\bigr)[\,]\exp\bigl(-\tfrac{\eta}{2}d\bigr),
+$$
+
+and, in the degenerate case in which the outer unit vectors coincide, an $\mathrm{SU}(2)$ element,
+
+$$
+U_{\mathrm{SU}(2)}=\exp\bigl(\tfrac{\alpha}{2}w\bigr)[\,]\exp\bigl(-\tfrac{\alpha}{2}w\bigr)
+\odot\exp\Bigl(\tfrac{i\beta}{2}\bigl(u[\,]u-v[\,]v\bigr)\Bigr)
+\odot\exp\bigl(\tfrac{\gamma}{2}w\bigr)[\,]\exp\bigl(-\tfrac{\gamma}{2}w\bigr).
+$$
+
+Each **outer** factor is a conjugation of the argument by a single unit vector, $e^{\theta}[\,]e^{-\theta}$; the $\mathrm{SU}(3)$ form has two of them, with unit vectors $\mathbf a$ and $\mathbf b$ and the four angles they carry, and its middle factor is a traceless diagonal $D\{\beta,\gamma,-\beta-\gamma\}$. The $\mathrm{SU}(4)$ form pairs **different** vectors in each outer factor, $\exp(\tfrac\alpha2a)[\,]\exp(-\tfrac\beta2b)$ and $\exp(\tfrac\psi2c)[\,]\exp(-\tfrac\eta2d)$, and its middle factor carries three diagonal parameters $\gamma,\delta,\epsilon$ with no trace condition: that is $7$ scalar parameters and $8$ angles, the fifteen parameters of $\mathrm{SU}(4)$. Verified: unitary with unit determinant in all three cases, residuals below $4\times10^{-15}$ over $100$ random parameter sets.
+
+**Remark (the inverse).** The inverse of any of these elements is obtained by reversing the order of the factors and changing the signs of the exponents, and it equals the biconjugate of the function,
+$$G^{-1}=G^{+\approx}=G^{\dagger},$$
+the source's rule, which is the statement of *The Enveloping Algebra of the Biquaternion Algebra and the Bi-module Structure*, §*Function Association and the Adjoint*: for an operator that fixes $e_0$ and preserves the span of $e_1,e_2,e_3$ — as every element here does — the conjugation by the Gram matrix $D=\operatorname{diag}(1,-1,-1,-1)$ of the scalar form is invisible, and association followed by conjugation of the coefficients is the Hermitian adjoint. For a general linear function the two involutions differ, and the corpus keeps them apart.
+
+**Remark (the elements are block-diagonal).** Every element above fixes $e_0$ and preserves the span of $e_1,e_2,e_3$: in the coordinate order $(e_1,e_2,e_3,e_0)$ its matrix is $\operatorname{diag}(U_3,1)$ with $U_3\in\mathrm{SU}(3)$ the $3\times3$ block. Verified: the entries mixing the scalar slot with the vector slots vanish exactly, and the $3\times3$ block has determinant one on the nose. This is the structural reason the enlargement is needed and the ceiling is honest: the octet acts on a three-dimensional **complex** space, whereas the algebra's own action on $\mathbb{B}$ is four-dimensional over $\mathbb{C}$ with the scalar direction inert, so the eight generators have no home in $\mathbb{B}$ itself.
+
+**Remark (where the method ends).** The construction does not generalise directly to $n>4$: the diagonal and antisymmetric functions have bounded room, and the source records that the quaternion expression of the general diagonal-less symmetric matrix of the required size becomes cumbersome and loses its use, which is the same observation as the *Limit of the Method* remark of the enveloping-algebra article. The endpoint is the pair $3,4$, which is also the endpoint of the physics programme's need.
+
 ## Surjectivity and Its Failure for the Subgroups
 
 The exponential of the full unit group is surjective (*Biquaternion Elementary Functions*, §*The Logarithm*), but the two distinguished subgroups behave differently.
@@ -91,6 +162,8 @@ The subgroups are $\mathbb{B}^\times$, $\mathbb{B}^\times_1$, the unit quaternio
 
 Surjectivity is not uniform. The exponential is surjective onto $S^3$, a connected compact group, and not surjective onto $\mathbb{B}^\times_1$: the norm-one group is not exponential, the obstruction a non-semi-simple element with the repeated eigenvalue $-1$, and the same obstruction occurs in $SL(2,\mathbb{R})$. The image still contains a neighbourhood of the identity and generates the connected group, so failure of surjectivity is not failure of generation.
 
+The larger unitary groups are reached by enlarging the carrier and not the algebra. The matrices over the algebra satisfy $M_n(\mathbb{B})\cong M_{2n}(\mathbb{C})$, so $M_3(\mathbb{B})\cong M_6(\mathbb{C})$ contains $\mathfrak{su}(3)$ with its eight generators, and the closed forms for $\mathrm{SU}(3)$ and $\mathrm{SU}(4)$ — a Lie-type form and Euler-angles forms, built from the antisymmetric, diagonal and diagonal-less symmetric linear functions of the enveloping-algebra article — are the explicit elements of those groups written with $3\times3$ matrices of biquaternions. They do not put an octet inside $\mathbb{B}$: each element fixes $e_0$ and acts on the vector part, so the matrix is $\operatorname{diag}(U_3,1)$ and the group is an $\mathrm{SU}(3)$ block on a three-dimensional complex space, while the algebra's own action on $\mathbb{B}$ is four-dimensional over $\mathbb{C}$ with the scalar direction inert. The ceiling is thus untouched and the price of the embedding is the factor $2$ in each matrix direction.
+
 ## Summary of Notation
 
 | Symbol | Meaning |
@@ -103,9 +176,15 @@ Surjectivity is not uniform. The exponential is surjective onto $S^3$, a connect
 | $\mathrm{B}_0$ | Lie algebra of $\mathbb{B}^\times_1$; trace-free part |
 | $\mathrm{K}=\mathrm{span}_{\mathbb{R}}\{e_1,e_2,e_3\}$ | Lie algebra of $S^3$; compact subalgebra |
 | $\mathbb{C}^\times e_0$ | Centre of $\mathbb{B}^\times$; Lie algebra $\mathbb{C}e_0$ |
+| $M_n(\mathbb{B})\cong M_{2n}(\mathbb{C})$ | Matrices over the algebra; the enlarged carrier |
+| $a[\,]b$, $\odot$, $D\{\delta\}$ | Conway operator $z\mapsto azb$, its composition, and the diagonal function |
+| $G^{-1}=G^{+\approx}=G^{\dagger}$ | The inverse of a group element; association with conjugation |
 
 ## Further Reading
 
+- A. Gsponer, "Explicit closed-form parametrization of SU(3) and SU(4) in terms of complex quaternions and elementary functions," arXiv:math-ph/0211056v2, 2002, for the closed forms of *The Enlarged Carrier*, the non-canonical SU(3) representation (25) with its inverse (27)–(28), the three elementary exponentials (18), (19) and (21) that make its factorisation work, the Euler-angles forms (31)–(33), and the parametrisations (34)–(38) in the Gell-Mann-type basis; the paper's Table 1, which offers a dictionary between its functions and the Gell-Mann parameters, is inconsistent as printed and is not transcribed here or in the companion $\mathrm{SU}(3)$ article.
+- A. W. Conway, "Quaternions and matrices," *Proceedings of the Royal Irish Academy* **A 50** (1945) 98–130, and J. L. Synge, "Quaternions, Lorentz transformations, and the Conway–Dirac–Eddington matrices," *Communications of the Dublin Institute for Advanced Studies* **A 21** (1972), for the Conway operator calculus used by the closed forms.
 - Brian C. Hall, *Lie Groups, Lie Algebras, and Representations: An Elementary Introduction* (Springer, 2nd ed. 2015).
 - John Stillwell, *Naive Lie Theory* (Springer, 2008).
 - J. P. Ward, *Quaternions and Cayley Numbers: Algebra and Applications* (Kluwer, Dordrecht, 1997).
+- Companion articles: *The Enveloping Algebra of the Biquaternion Algebra and the Bi-module Structure* (the Conway operator basis and function association); *The Gauge Group Ceiling: Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)* (the ceiling the enlarged carrier answers); *The Gluon: An Octet Outside the Biquaternion Algebra*.

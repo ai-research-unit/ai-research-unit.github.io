@@ -106,6 +106,133 @@ so that $\mathbb B^{\mathrm e}\cong M_4(\mathbb C)$ and the left action of $\mat
 
 **Corollary (the two-sided operators are the elementary tensors).** The two-sided operator $\Theta_{\tilde Q}=L_{\tilde Q}R_{\tilde Q^{\dagger}}$ is the image of the elementary tensor $\tilde Q\otimes(\tilde Q^{\dagger})^{\mathrm{op}}$, and the mixed operators $L_aR_b$ are the images of $a\otimes b^{\mathrm{op}}$. The corpus's two-sided family is therefore the set of **rank-one** (elementary) elements of the enveloping algebra, a small subset of it.
 
+## The Conway Operator Basis
+
+The isomorphism $\mathbb B^{\mathrm e}\cong\operatorname{End}_{\mathbb C}(\mathbb B)$ is abstract: it manufactures operators from tensors without exhibiting a basis of the operator space. The basis is classical, and it is what makes the isomorphism usable in coordinates. Following Hamilton, write $e_n[\,]e_m$ for the elementary operator that puts the argument between the two units,
+
+$$
+(e_n[\,]e_m)(z)=e_n\,z\,e_m ,
+$$
+
+the empty brackets marking the slot; Conway and Synge named the calculus that uses it. In the sandwich picture $e_n[\,]e_m$ is the image of the elementary tensor $e_n\otimes e_m^{\mathrm{op}}$, so the sixteen operators are the images of a tensor basis and the main theorem gives at once:
+
+**Proposition (the Conway operators are a basis).** The sixteen operators $e_n[\,]e_m$, $n,m\in\{0,1,2,3\}$, are a $\mathbb C$-basis of $\operatorname{End}_{\mathbb C}(\mathbb B)$: every $\mathbb C$-linear function is uniquely
+
+$$
+F( )=\sum_{n,m=0}^{3}z_{nm}\,e_n[\,]e_m ,
+\qquad z_{nm}\in\mathbb C .
+$$
+
+*Proof.* The elementary tensors $e_n\otimes e_m^{\mathrm{op}}$ are a basis of $\mathbb B\otimes_{\mathbb C}\mathbb B^{\mathrm{op}}$ and the sandwich map is an isomorphism, so their images are a basis. Verified numerically: the $16\times16$ matrix of the sixteen operators in the coordinate basis of $\mathbb B$ has rank $16$.
+
+In this notation the two regular representations are the two **edge rows** of the basis, the ones that carry the unit in the unused slot,
+
+$$
+L_a=\sum_{n=0}^{3}a_n\,e_n[\,]e_0,\qquad R_b=\sum_{m=0}^{3}b_m\,e_0[\,]e_m ,
+$$
+
+which is the coordinate form of $L_a=a\otimes\mathbb 1^{\mathrm{op}}$ and $R_b=\mathbb 1\otimes b^{\mathrm{op}}$.
+
+**Proposition (the composition rule).** For all $a,b,c,d\in\mathbb B$,
+
+$$
+(a[\,]b)\circ(c[\,]d)=(ac)[\,](db) .
+$$
+
+*Proof.* $\bigl(a[\,]b\bigr)\bigl((c[\,]d)(z)\bigr)=a\,c\,z\,d\,b=(ac)z(db)$. Verified on random operators to $10^{-13}$. In the unit basis the rule expands as $e_n[\,]e_m\circ e_p[\,]e_q=(e_ne_p)[\,](e_qe_m)$, whose right-hand side is a linear combination of basis operators through the multiplication table of the imaginary units.
+
+**Remark (the regular matrices).** In the coordinate basis of $\mathbb B$ the operator $e_n[\,]e_m$ is the matrix product $\rho_L(e_n)\rho_R(e_m)$ of the left and right regular matrices of *Biquaternion 4×4 Regular Matrix Element Representation*, and those sixteen products are an orthogonal basis of $M_4(\mathbb C)$ there. The Conway basis and that matrix basis are the same sixteen operators; the one is written as a linear function, the other as a matrix.
+
+### The Three Classical Functions and Their Matrices
+
+Three linear functions carry the classical matrix types. In the coordinate order $(e_1,e_2,e_3,e_0)$ — vector part first, scalar last — they are, with $t_1=s_2s_3$, $t_2=s_1s_3$ and $t_3=s_1s_2$,
+
+$$
+A\{a\}=\tfrac12\bigl(a[\,]-[\,]a\bigr)\ \longleftrightarrow\
+\begin{pmatrix}0&-a_3&a_2&0\\a_3&0&-a_1&0\\-a_2&a_1&0&0\\0&0&0&0\end{pmatrix},
+$$
+
+$$
+D\{d\}=\tfrac12\bigl(d_1e_1[\,]e_1+d_2e_2[\,]e_2+d_3e_3[\,]e_3\bigr)
+\ \longleftrightarrow\
+\tfrac12\begin{pmatrix}-d_1+d_2+d_3&0&0&0\\0&d_1-d_2+d_3&0&0\\0&0&d_1+d_2-d_3&0\\0&0&0&-(d_1+d_2+d_3)\end{pmatrix},
+$$
+
+$$
+S\{s\}=D\{s_1^2,s_2^2,s_3^2\}-\tfrac12\,s[\,]s
+\ \longleftrightarrow\
+\begin{pmatrix}0&t_3&t_2&0\\t_3&0&t_1&0\\t_2&t_1&0&0\\0&0&0&0\end{pmatrix}.
+$$
+
+**Proposition (the matrix dictionary).** In the order $(e_1,e_2,e_3,e_0)$ the function $A\{a\}$ is the antisymmetric $3\times3$ block, $D\{d\}$ the traceless diagonal and $S\{s\}$ the diagonal-less symmetric $3\times3$ block, each with a vanishing fourth row and column, and the three families together span the traceless part of $M_3(\mathbb C)$.
+
+*Proof.* Direct computation of the sixteen operator matrices and comparison with the displays. The coordinate order is a genuine trap: the corpus's basis order is $(e_0,e_1,e_2,e_3)$, whereas the matrix displays put the scalar last, and in the corpus's order the same matrices appear shifted by one. Verified numerically: exact in the order $(e_1,e_2,e_3,e_0)$, and not in the order $(e_0,e_1,e_2,e_3)$.
+
+**Remark (the source's sign).** The source writes the symmetric function with the two terms in the opposite order, $S\{s\}=\tfrac12 s[\,]s-D\{s_1^2,s_2^2,s_3^2\}$; its two displays of $S$ then differ by an overall sign. The corpus fixes the sign by the printed matrix, the one written here. $A\{a\}$ and $D\{d\}$ reproduce the source's displays exactly, with zero residual.
+
+### Function Association and the Adjoint
+
+The operator picture has a second involution besides the dagger, and it is the one that makes a linear function transposable.
+
+**Definition (function association).** Let $\mathrm{Sc}$ be the scalar part and $B(X,Y)=\mathrm{Sc}(XY)$ the scalar bilinear form. The **associate** $F^{\approx}$ of a linear function $F$ is defined by
+
+$$
+\mathrm{Sc}\bigl(F(X)\,Y\bigr)=\mathrm{Sc}\bigl(X\,F^{\approx}(Y)\bigr)
+\qquad\text{for all }X,Y\in\mathbb B ,
+$$
+
+equivalently $B(FX,Y)=B(X,F^{\approx}Y)$.
+
+**Proposition (association reverses the factors).** On the Conway basis
+
+$$
+\bigl(e_n[\,]e_m\bigr)^{\approx}=e_m[\,]e_n ,
+\qquad\text{so}\qquad
+\Bigl(\sum_{n,m}z_{nm}\,e_n[\,]e_m\Bigr)^{\approx}=\sum_{n,m}z_{nm}\,e_m[\,]e_n ,
+$$
+
+and in particular $\bigl(a[\,]b\bigr)^{\approx}=b[\,]a$, so that $L_a^{\approx}=R_a$ and $R_b^{\approx}=L_b$. Association is the transpose with respect to $B$.
+
+*Proof.* $B\bigl((a[\,]b)(X),Y\bigr)=\mathrm{Sc}(aXbY)=\mathrm{Sc}(XbYa)=B\bigl(X,(b[\,]a)(Y)\bigr)$ by the invariance of the scalar part under cyclic permutation, and $B$ is non-degenerate. Verified for all sixteen basis operators, residual $2\cdot10^{-15}$.
+
+**Proposition (the form and its Gram matrix).** The scalar bilinear form is
+
+$$
+B(X,Y)=X_0Y_0-X_1Y_1-X_2Y_2-X_3Y_3 :
+$$
+
+symmetric, non-degenerate and **indefinite**, of signature $(1,3)$, with Gram matrix $D=\operatorname{diag}(1,-1,-1,-1)$ in the basis $e_0,e_1,e_2,e_3$. The transpose with respect to $B$ is therefore
+
+$$
+F^{\approx}=D\,F^{\mathsf T}D ,
+$$
+
+for $F^{\mathsf T}$ the plain matrix transpose, and the two agree exactly when $D$ acts trivially, in particular for the operators that fix $e_0$ and preserve the vector part. Verified on random operators, to machine precision.
+
+**Proposition (coefficient conjugation and the Hermitian adjoint).** Let $\bar F( )=\sum\bar z_{nm}e_n[\,]e_m$ be the function obtained by conjugating the coefficients, and let $F^{*}$ be the adjoint of $F$ with respect to the Hermitian form $(\tilde X,\tilde Y)=\mathrm{Sc}(\tilde X^{\dagger}\tilde Y)=\sum_\mu\tilde X_\mu^{*}\tilde Y_\mu$ of *Two-Sided Operators on the Biquaternion Algebra with Hermitian Adjoint*, $(\tilde F(X),Y)=(X,F^{*}(Y))$. Then
+
+$$
+\bar F^{\approx}=D\,F^{*}D .
+$$
+
+On the operators that fix $e_0$ and preserve the vector part — among them every $\mathrm{SU}(3)$ and $\mathrm{SU}(4)$ element of *Biquaternion Lie Group and Exponential Structure* — the matrix has no entries mixing the scalar slot with the vector slots, the conjugation by $D$ is invisible, and the identity collapses to
+
+$$
+\bar F^{\approx}=F^{*}=F^{-1}\qquad\text{for unitary }F ,
+$$
+
+which is the source's $G^{-1}=G^{+\approx}=G^{\dagger}$.
+
+*Proof.* The Gram matrix of $(\cdot,\cdot)$ is the identity while that of $B$ is $D$, so the two transposes differ by a conjugation by $D$ on both sides, and conjugating the coefficients turns the transpose with respect to $B$ into the adjoint with respect to $(\cdot,\cdot)$, again up to $D$. For a unitary $F$ the adjoint is the inverse. Verified numerically: $F^{\approx}=DF^{\mathsf T}D$ on random operators, and $\bar F^{\approx}=F^{*}$ on the $\mathrm{SU}(3)$ elements, both to machine precision.
+
+**Remark (why the source's rule is safe there).** The source's group elements all fix the scalar unit and map the vector part to itself, so $D$ has no visible effect on their block form; this is why the source may use the plain transpose and the Hermitian adjoint interchangeably. For a general linear function the two involutions differ, and the corpus keeps them apart: association is the transpose for the **indefinite** scalar form, the dagger is the adjoint for the **positive Hermitian** form.
+
+### The Limit of the Method
+
+The quaternion formulation of the classical matrix types is complete in dimension three and incomplete in dimension four, and the reason is visible in the displays above.
+
+**Remark (the method degrades from three to four dimensions).** The antisymmetric, diagonal and diagonal-less symmetric functions exhaust the traceless part of $M_3(\mathbb C)$ in the order $(e_1,e_2,e_3,e_0)$, since each acts on the vector part and fixes the scalar. For a general traceless $\mathbb C^4\to\mathbb C^4$ map the same three families no longer suffice: the symmetric part needs a function that mixes the scalar and vector parts, and the source records that the expression for it is cumbersome and not useful. The four-dimensional unitary groups are therefore assembled from two $SO(4)$ factors rather than from a single quaternion closed form — the same asymmetry that the Lie-group article reads as the clean three-dimensional and less clean four-dimensional parametrizations.
+
 ## The Base Field and the Real Dimension Count
 
 The isomorphism of the theorem is over $\mathbb C$, and the choice matters.
@@ -164,7 +291,7 @@ The two structural statements were checked numerically on the biquaternion algeb
 
 ## Summary
 
-The biquaternion algebra acts on itself from the left and from the right, and the algebra in which the pair of actions lives is the **enveloping algebra** $\mathbb B^{\mathrm e}=\mathbb B\otimes_{\mathbb C}\mathbb B^{\mathrm{op}}$, with the sandwich action $(x\otimes y^{\mathrm{op}})\cdot z=xzy$. The enveloping algebra is isomorphic to the full endomorphism algebra, $\mathbb B^{\mathrm e}\cong\operatorname{End}_{\mathbb C}(\mathbb B)\cong M_4(\mathbb C)$, so the action is faithful and exhausts the $\mathbb C$-linear operators; the two-sided operators of the corpus are the elementary tensors of the enveloping algebra. The left multiplications $L_a=a\otimes\mathbb 1^{\mathrm{op}}$ and the right multiplications $R_b=\mathbb 1\otimes b^{\mathrm{op}}$ are two commuting copies, in the enveloping algebra, of $\mathbb B$ and of $\mathbb B^{\mathrm{op}}$; they are of the **same** algebraic type, and the biquaternion algebra is a **bi-module** over the pair, equivalently a left module of the enveloping algebra. The corpus's left-versus-right matter-representation question is thereby split into an algebraic half, which the enveloping algebra closes — both actions are present, of the same type, and commuting — and a physical half, which is the assignment of spin and internal quantum numbers to the two tensor factors and which the algebra does not decide. The result is over $\mathbb C$; over $\mathbb R$ the sandwich map has a $32$-dimensional kernel, exactly the redundancy of the central $i$, and this confirms that the complex base field is the natural one. The construction is the abstract form of Fauser's reading of the Daviau equation, whose unknown is multiplied from both sides at once.
+The biquaternion algebra acts on itself from the left and from the right, and the algebra in which the pair of actions lives is the **enveloping algebra** $\mathbb B^{\mathrm e}=\mathbb B\otimes_{\mathbb C}\mathbb B^{\mathrm{op}}$, with the sandwich action $(x\otimes y^{\mathrm{op}})\cdot z=xzy$. The enveloping algebra is isomorphic to the full endomorphism algebra, $\mathbb B^{\mathrm e}\cong\operatorname{End}_{\mathbb C}(\mathbb B)\cong M_4(\mathbb C)$, so the action is faithful and exhausts the $\mathbb C$-linear operators; the two-sided operators of the corpus are the elementary tensors of the enveloping algebra. The isomorphism has an explicit basis, the sixteen **Conway operators** $e_n[\,]e_m$, with $(e_n[\,]e_m)(z)=e_nze_m$ and the composition rule $(a[\,]b)\circ(c[\,]d)=(ac)[\,](db)$; the classical antisymmetric, diagonal and diagonal-less symmetric functions $A\{a\}$, $D\{d\}$ and $S\{s\}$ are the basis elements of the three matrix types, and a linear function carries a second involution, **association**, which is the transpose for the indefinite scalar form $\mathrm{Sc}(XY)$ of signature $(1,3)$ and which combines with the conjugation of the coefficients to give the Hermitian adjoint on the group elements. The left multiplications $L_a=a\otimes\mathbb 1^{\mathrm{op}}$ and the right multiplications $R_b=\mathbb 1\otimes b^{\mathrm{op}}$ are two commuting copies, in the enveloping algebra, of $\mathbb B$ and of $\mathbb B^{\mathrm{op}}$; they are of the **same** algebraic type, and the biquaternion algebra is a **bi-module** over the pair, equivalently a left module of the enveloping algebra. The corpus's left-versus-right matter-representation question is thereby split into an algebraic half, which the enveloping algebra closes — both actions are present, of the same type, and commuting — and a physical half, which is the assignment of spin and internal quantum numbers to the two tensor factors and which the algebra does not decide. The result is over $\mathbb C$; over $\mathbb R$ the sandwich map has a $32$-dimensional kernel, exactly the redundancy of the central $i$, and this confirms that the complex base field is the natural one. The construction is the abstract form of Fauser's reading of the Daviau equation, whose unknown is multiplied from both sides at once.
 
 ## Summary of Notation
 
@@ -172,6 +299,12 @@ The biquaternion algebra acts on itself from the left and from the right, and th
 |---|---|
 | $\mathbb B=\mathbb C\otimes_\mathbb R\mathbb H$ | Biquaternion algebra, $\cong M_2(\mathbb C)$, complex dimension $4$ |
 | $L_a(z)=az$, $R_b(z)=zb$ | Left and right multiplication |
+| $e_n[\,]e_m$, $(e_n[\,]e_m)(z)=e_nze_m$ | Conway operator; a basis of $\operatorname{End}_{\mathbb C}(\mathbb B)$ |
+| $(a[\,]b)\circ(c[\,]d)=(ac)[\,](db)$ | The composition rule |
+| $A\{a\}$, $D\{d\}$, $S\{s\}$ | The antisymmetric, diagonal and diagonal-less symmetric linear functions |
+| $B(X,Y)=\mathrm{Sc}(XY)$, $D=\operatorname{diag}(1,-1,-1,-1)$ | The scalar bilinear form, indefinite of signature $(1,3)$, and its Gram matrix |
+| $F^{\approx}$ | The associate of $F$; the transpose for $B$, $F^{\approx}=DF^{\mathsf T}D$ |
+| $\bar F^{\approx}=DF^{*}D$; $=F^{\dagger}$ on the group elements | Association combined with conjugation, against the Hermitian adjoint |
 | $L_aL_b=L_{ab}$, $R_aR_b=R_{ba}$, $L_aR_b=R_bL_a$ | The composition laws |
 | $\{L_a\}'=\{R_b\}$, $\{R_b\}'=\{L_a\}$ | The double centraliser |
 | $\mathbb B^{\mathrm{op}}$ | The opposite algebra |
@@ -183,6 +316,8 @@ The biquaternion algebra acts on itself from the left and from the right, and th
 
 ## Further Reading
 
+- A. Gsponer, "Explicit closed-form parametrization of SU(3) and SU(4) in terms of complex quaternions and elementary functions," arXiv:math-ph/0211056v2, 2002, §2–4, for the Conway operators $e_n[\,]e_m$, the composition and association rules, the functions $A\{a\}$, $D\{d\}$, $S\{s\}$ and their $4\times4$ matrix displays (10′)–(13′), the rule $G^{-1}=G^{+\approx}=G^{\dagger}$ for the group elements, and the remark that the quaternion method loses power from three to four dimensions.
+- A. W. Conway, "Quaternions and matrices," *Proceedings of the Royal Irish Academy* **A 50** (1945) 98–130, and J. L. Synge, "Quaternions, Lorentz transformations, and the Conway–Dirac–Eddington matrices," *Communications of the Dublin Institute for Advanced Studies* **A 21** (1972), for the Conway operator calculus in its original form.
 - B. Fauser, "On the equivalence of Daviau's space Clifford algebraic, Hestenes' and Parra's formulations of (real) Dirac theory," arXiv:hep-th/9908200, 1999, §1–2, for the enveloping algebra $P^{\mathrm e}\cong P\otimes P^{\mathrm T}$, the sandwich action, the statement that the left and right actions are of the same type, and the caution on the iso-spin reading.
-- The companion articles of this series: *The Operators on an Algebra*, *Modules over the Biquaternion Algebra*, *One-Sided Operators on the Biquaternion Algebra with Hermitian Adjoint*, *Two-Sided Operators on the Biquaternion Algebra with Hermitian Adjoint*, *The Spectra of the Operators on the Biquaternion Algebra with Hermitian Adjoint*, and *Universal Enveloping Algebras* (the Lie-theoretic construction, distinct from this one).
+- The companion articles of this series: *The Operators on an Algebra*, *Modules over the Biquaternion Algebra*, *Biquaternion 4×4 Regular Matrix Element Representation*, *One-Sided Operators on the Biquaternion Algebra with Hermitian Adjoint*, *Two-Sided Operators on the Biquaternion Algebra with Hermitian Adjoint*, *The Spectra of the Operators on the Biquaternion Algebra with Hermitian Adjoint*, and *Universal Enveloping Algebras* (the Lie-theoretic construction, distinct from this one).
 - The physics articles that use the reading: *The Daviau Map and the Space Clifford Formulation of the Dirac Equation*, *Parra's Four Options of the Dirac Equation and the Discrete Symmetries*, and *The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism*.

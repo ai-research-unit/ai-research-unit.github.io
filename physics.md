@@ -1165,7 +1165,7 @@
 <!-- the theta term and its density; periodicity and the theta vacuum; strong CP and the value of theta; the chiral rotation and the invariance of the physical parameter; the Witten effect. -->
 
 ### <a href="articles_physics/the-gauge-group-ceiling-why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html">The Gauge Group Ceiling: Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)</a>
-<!-- the algebra's own compact structure; why $SU(3)$ cannot fit; the Cartan decomposition and the maximal compact subalgebra; what would be needed to pass the ceiling; the ceiling and the Standard Model. -->
+<!-- the algebra's own compact structure; why $SU(3)$ cannot fit; the Cartan decomposition and the maximal compact subalgebra; what would be needed to pass the ceiling, the matrix enlargement $M_n(\mathbb{B})\cong M_{2n}(\mathbb{C})$-where the embedded $\mathrm{SU}(3)$ elements have explicit closed forms in biquaternion parameters; the ceiling and the Standard Model. -->
 
 ### <a href="articles_physics/grand-unification-and-the-biquaternion-algebra-ceiling.html">Grand Unification and the Biquaternion Algebra Ceiling</a>
 <!-- the threshold a unified group must clear; the framework's own unification, electroweak and abelian; what a biquaternionic grand unification would require; the representation content and the even-dimension obstruction. -->
@@ -1283,7 +1283,7 @@
 <!-- the Proca obstruction; the shift field and the invariant mass term; gauge fixing and the degree-of-freedom count; the relation to the abelian Higgs; the algebra's reading. -->
 
 ### <a href="articles_physics/the-gluon-an-octet-outside-the-biquaternion-algebra.html">The Gluon: An Octet Outside the Biquaternion Algebra</a>
-<!-- the gluon in standard quantum chromodynamics; what the framework reaches, the free constituent; the obstructions to the octet; the enlarged carrier and the price of embedding; the boundary of the category. -->
+<!-- the gluon in standard quantum chromodynamics; what the framework reaches, the free constituent; the obstructions to the octet; the enlarged carrier and the price of embedding, the gauge potential $\mathcal{A}_\mu=g_sG^a_\mu\lambda_a/2$ as a $3\times3$ traceless anti-Hermitian block of $M_2(\mathbb{B})\cong M_4(\mathbb{C})$, and the explicit biquaternion closed forms of the embedded $\mathrm{SU}(3)$ elements; the boundary of the category. -->
 
 ### - Focus on informational aspects
 
