@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Functional Integration and the Rigorous Path Integral — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="functional-integration-and-the-rigorous-path-integral"><strong>Functional Integration and the Rigorous Path Integral</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>Functional integration is the integration of a functional over an infinite-dimensional space, and its first and most important instance is the integration of a functional of a path against the law of a stochastic process. The object that makes the definition possible is the <strong>cylinder measure</strong>: a finitely additive set function on the cylinder sets of a vector space, specified by a consistent family of finite-dimensional distributions. The first question of the theory is whether such an object is a measure at all — whether it is countably additive — and for a Gaussian cylinder measure the answer is decided by the covariance: on a Hilbert space the measure exists if and only if the covariance is trace class. The Wiener measure is the case in which this construction produces the law of Brownian motion, and the <strong>Cameron–Martin theorem</strong> identifies the translations under which that measure is quasi-invariant and those under which it is singular.</p>
+<p>The second half of the article is the reading of the path integral in this language. The <strong>Euclidean path integral</strong>, the integral of $e^{-S_E}$ for the Euclidean action $S_E$, is a genuine integral against the Wiener measure, and the identity that makes it so is the <strong>Feynman–Kac formula</strong>, which represents the solution of the heat equation with a potential as an expectation. The <strong>oscillatory path integral</strong>, the integral of the factor $e^{iS}$, is not a measure: its would-be density has modulus one, no countably additive set function on the path space can carry such a density, and the object exists only as a limit of regularised or truncated oscillatory integrals, as the analytic continuation of the Euclidean integral, or as a distribution. That obstruction is a theorem of Cameron, and the article states it, supplies the finite-dimensional evidence for it, and describes the three constructions that replace the measure.</p>
+<p>The place of the article is fixed by boundaries.</p>
+<ul>
+<li>The <strong>measure theory</strong> — the algebra of sets, the construction of measures, the product measures, the Radon–Nikodym theorem and the Fourier transform of a measure — is <em>Measure Theory and Integration</em> and <em>Measure-Theoretic Probability</em>; the Kolmogorov extension theorem used here is the one of the probability article. The <strong>Hilbert space and the spectral theorem for self-adjoint operators</strong> are <em>Banach and Hilbert Spaces</em> and <em>Unbounded Operators and Spectral Measures</em>.</li>
+<li>The <strong>Brownian motion, the construction of its path measure, the Itô integral, the Girsanov theorem, the Feynman–Kac formula and the potential theory of the Laplacian</strong> are <em>Brownian Motion and Stochastic Calculus</em>, where they are proved; this article re-uses them and develops the one object they leave largely unnamed, the integration over the path space itself. The <strong>Gaussian measures that arise from stochastic equations and the cylindrical Wiener process</strong> are <em>Stochastic Partial Differential Equations</em>. The <strong>operator form of the time slicing</strong> — the Lie–Trotter product formula and the convergence of the factorised semigroups — is <em>Semigroups and Evolution Equations</em>.</li>
+<li>The <strong>oscillatory integrals and the stationary phase</strong> are <em>Semiclassical Analysis</em> and <em>Microlocal Analysis</em>; the <strong>Schwartz kernel and the Fourier transform of a distribution</strong> are <em>Distributions and Fundamental Solutions</em>; the <strong>Sobolev spaces and the embedding $H^1\subset C^{1/2}$</strong> in one dimension are <em>Sobolev Spaces and Weak Solutions</em>. These are cited, not developed.</li>
+<li>The <strong>physical formulation of the path integral</strong> and the question of the measure in the biquaternionic framework belong to the physics corpus, in particular <em>The Path Integral in Biquaternionic Form</em> and <em>The Schrödinger Path Integral in Biquaternionic Form</em>. The mathematical object alone is treated here.</li>
+</ul>
+<p>Throughout, $X$ is a real vector space with algebraic dual $X'$, $\mathcal{Z}(X)$ is its algebra of cylinder sets, and a cylinder measure is written $\mu$. The space $H$ is a real separable Hilbert space with inner product $\langle\cdot,\cdot\rangle$ linear in the second argument, orthonormal basis $(e_k)_{k\geq1}$, and $Q$ is a positive self-adjoint operator on $H$ with eigenvalues $(q_k)$. The path space is $C[0,1]$ with the supremum norm, the Wiener measure on it is $\mathbb{W}$, the canonical process is $x$, and the Brownian covariance kernel is $R(s,t)=\min(s,t)$. The Euclidean action is $S_E$, the potential is $V(t,x)$, and the sliced propagator is $K_n$ with the limit $K$.</p>
+<h2 id="cylinder-measures-and-the-extension-problem">Cylinder Measures and the Extension Problem</h2>
+<h3 id="cylinder-sets-and-cylinder-measures">Cylinder Sets and Cylinder Measures</h3>
+<p><strong>Definition (cylinder set).</strong> Let $X$ be a real vector space and $X'$ its algebraic dual. For $\varphi_1,\dots,\varphi_n\in X'$ and a Borel set $B\in\mathcal{B}(\mathbb{R}^n)$, the <strong>cylinder set</strong> is</p>
+<p>$$
+Z(\varphi_1,\dots,\varphi_n;B)=\{x\in X:(\varphi_1(x),\dots,\varphi_n(x))\in B\}.
+$$</p>
+<p>The cylinder sets form an algebra $\mathcal{Z}(X)$ — closed under finite unions, intersections and complements — and the <strong>cylinder $\sigma$-algebra</strong> is the $\sigma$-algebra that they generate. A set of the form $Z(\varphi;B)$ with a single functional is the simplest cylinder, the preimage of a Borel set of the line.</p>
+<p><strong>Definition (cylinder measure).</strong> A <strong>cylinder measure</strong> on $X$ is a finitely additive map $\mu:\mathcal{Z}(X)\to[0,1]$ with $\mu(X)=1$. The measure is <strong>consistent</strong> if it is compatible with the coordinate projections, that is,</p>
+<p>$$
+\mu\bigl(Z(\varphi_1,\dots,\varphi_n;\pi^{-1}B')\bigr)=\mu\bigl(Z(\varphi_1,\dots,\varphi_{n-1};B')\bigr)
+$$</p>
+<p>for every projection $\pi:\mathbb{R}^n\to\mathbb{R}^{n-1}$ onto the first $n-1$ coordinates. The measure is <strong>$\sigma$-additive</strong> if it is countably additive on the algebra $\mathcal{Z}(X)$.</p>
+<p>A consistent family of finite-dimensional distributions always defines a cylinder measure, by the prescription $\mu(Z(\varphi_1,\dots,\varphi_n;B))=\mu_{\varphi_1,\dots,\varphi_n}(B)$; the consistency is exactly what makes the prescription well defined on a set that has several representations. Finite additivity is then automatic, because a finite union of cylinder sets can be refined to a disjoint union over a common finite set of functionals. What is <em>not</em> automatic is countable additivity, and the whole difficulty of the subject is concentrated there.</p>
+<p><strong>Example (the Gaussian cylinder measure).</strong> Let $Q$ be a positive self-adjoint operator on $H$ and let $\varphi_i=\langle u_i,\cdot\rangle$. The matrix $(Q_\varphi)_{ij}=\langle Qu_i,u_j\rangle$ is positive definite when the $u_i$ are linearly independent, and the prescription</p>
+<p>$$
+\mu\bigl(Z(\varphi_1,\dots,\varphi_n;B)\bigr)=\frac{1}{(2\pi)^{n/2}\sqrt{\det Q_\varphi}}\int_Be^{-\frac12\langle Q_\varphi^{-1}y,y\rangle}\,dy
+$$</p>
+<p>is a cylinder measure on $H$, the <strong>Gaussian cylinder measure with covariance $Q$</strong>. Its characteristic functional is $\widehat\mu(\xi)=\exp\bigl(-\tfrac12\langle Q\xi,\xi\rangle\bigr)$ for $\xi\in H'=H$, and this functional determines the cylinder measure uniquely.</p>
+<h3 id="kolmogorov-extension-and-its-limit">Kolmogorov Extension and Its Limit</h3>
+<p><strong>Theorem (Kolmogorov extension).</strong> Let $T$ be an arbitrary index set and let $X=\mathbb{R}^T$ carry the cylinder $\sigma$-algebra, generated by the coordinate functionals. Every consistent family of inner-regular Borel probability measures on the finite products extends to a unique probability measure on $X$.</p>
+<p>The theorem is stated for the product space and it is complete there; the passage from the cylinder algebra to the generated $\sigma$-algebra is what the inner regularity supplies, and the measure obtained assigns to a general cylinder set the value prescribed by the family. There is no restriction on the cardinality of $T$. The theorem is therefore not a licence to extend a cylinder measure on a <em>subspace</em> of $\mathbb{R}^T$: it produces a measure on $\mathbb{R}^T$, and the question whether that measure is carried by a smaller space — a Hilbert space, a space of continuous functions, a space of distributions — is a separate question, and it is the one on which the path integral turns. A cylinder measure can be finite on every cylinder set and still fail to be $\sigma$-additive, because the countable operations that a $\sigma$-algebra permits are not visible in the finitely additive prescription.</p>
+<h3 id="the-trace-class-obstruction">The Trace-Class Obstruction</h3>
+<p><strong>Theorem (existence of a Gaussian measure on a Hilbert space).</strong> Let $Q$ be a positive self-adjoint operator on the separable Hilbert space $H$ with eigenvalues $(q_k)$. The Gaussian cylinder measure with covariance $Q$ extends to a Borel probability measure on $H$ if and only if</p>
+<p>$$
+\operatorname{Tr}Q=\sum_{k\geq1}q_k<\infty .
+$$</p>
+<p><em>Proof.</em> Suppose first that $\mu$ is a Borel probability on $H$ with covariance $Q$. Then $\int_H\langle x,e_k\rangle^2\,d\mu(x)=q_k$ and $\|x\|^2=\sum_k\langle x,e_k\rangle^2$ for every $x$, so by the monotone convergence theorem</p>
+<p>$$
+\sum_kq_k=\sum_k\int_H\langle x,e_k\rangle^2\,d\mu(x)=\int_H\|x\|^2\,d\mu(x)<\infty,
+$$</p>
+<p>the last inequality because $\|x\|<\infty$ for $\mu$-almost every $x$. Conversely, suppose that $\sum_kq_k<\infty$, and let $(g_k)$ be independent real Gaussian variables with $g_k\sim N(0,q_k)$ on a common probability space. Then</p>
+<p>$$
+\mathbb{E}\Bigl\|\sum_{k=1}^{N}g_ke_k\Bigr\|^2=\sum_{k=1}^{N}q_k\le\operatorname{Tr}Q
+$$</p>
+<p>for every $N$, so the partial sums form a Cauchy sequence in $L^2$ and converge in $L^2(H)$ and almost surely to a random variable $X$ with values in $H$; the law of $X$ is a Borel probability on $H$ whose cylinder measure is the given one. $\square$</p>
+<p><strong>Corollary (the identity covariance fails).</strong> On an infinite-dimensional Hilbert space there is no Gaussian measure with covariance $Q=I$, because $\sum_k1$ diverges. The cylinder measure exists and is the only object available; the associated random element is <strong>white noise</strong>, whose realisations lie in a space of distributions and not in $H$.</p>
+<p>The divergence in the corollary has a direct reading. In $n$ dimensions the Gaussian measure with covariance $I$ has density $(2\pi)^{-n/2}e^{-\|x\|^2/2}$, whose normalising constant tends to zero; the measure concentrates on the sphere of radius $\sqrt n$, which recedes to infinity, and no weak limit exists. The general criterion for a cylinder measure on a locally convex space to be $\sigma$-additive is <strong>Sazonov's theorem</strong>, which asks for the continuity of the characteristic functional in the Hilbert–Schmidt topology, and its nuclear-space form is <strong>Minlos's theorem</strong>; both are quoted. The Hilbert-space case used here is the elementary one above.</p>
+<h2 id="gaussian-measures-on-a-hilbert-space">Gaussian Measures on a Hilbert Space</h2>
+<h3 id="the-characteristic-functional">The Characteristic Functional</h3>
+<p><strong>Definition.</strong> A Borel probability $\mu$ on $H$ is <strong>Gaussian</strong> with mean $m\in H$ and covariance operator $Q$ if</p>
+<p>$$
+\widehat\mu(\xi)=\int_He^{i\langle\xi,x\rangle}\,d\mu(x)=\exp\Bigl(i\langle m,\xi\rangle-\frac12\langle Q\xi,\xi\rangle\Bigr)
+$$</p>
+<p>for every $\xi\in H$. The operator $Q$ is then positive, self-adjoint and trace class; conversely, a positive self-adjoint trace-class operator $Q$ and a mean $m\in H$ determine exactly one Gaussian measure.</p>
+<p>For a Gaussian <em>cylinder</em> measure the defining formula is the same on the finite-dimensional projections, and the integral in the definition is then a finite-dimensional Gaussian integral rather than an integral over $H$.</p>
+<p><strong>Proposition (the covariance as a quadratic form).</strong> For a Gaussian measure with covariance $Q$, $\int_H\langle x,u\rangle\langle x,v\rangle\,d\mu(x)=\langle Qu,v\rangle$ and $\int_H\|x-m\|^2\,d\mu(x)=\operatorname{Tr}Q$. The second identity is the reason the trace-class condition is a condition on the <em>second</em> moment and not on higher ones: all moments of a Gaussian measure are determined by $m$ and $Q$, and the only one that can diverge is the second.</p>
+<h3 id="support-and-the-cameronmartin-space">Support and the Cameron–Martin Space</h3>
+<p><strong>Proposition (support).</strong> A Gaussian measure $\mu$ on $H$ with covariance $Q$ is concentrated on the closure in $H$ of the range of $Q^{1/2}$; when $Q$ has trivial kernel, as in the cases below, that support is all of $H$.</p>
+<p><strong>Definition (Cameron–Martin space).</strong> The <strong>Cameron–Martin space</strong> of $\mu$ is the range $H_\mu=Q^{1/2}(H)$ equipped with the inner product $\langle u,v\rangle_{H_\mu}=\langle Q^{-1/2}u,Q^{-1/2}v\rangle$, the unique inner product for which $Q^{1/2}$ is an isometry from $H$ onto $H_\mu$. The Cameron–Martin norm is the inverse of the covariance quadratic form: $\|u\|_{H_\mu}^2=\langle Q^{-1}u,u\rangle$, whereas the covariance assigns to $u$ the value $\langle Qu,u\rangle$.</p>
+<p><strong>Proposition (the Cameron–Martin space is null).</strong> If $\dim H=\infty$ and $Q$ is injective, then $\mu(H_\mu)=0$.</p>
+<p><em>Proof.</em> Write $H_\mu=Q^{1/2}(H)$ and let $X$ be the $H$-valued Gaussian with law $\mu$, so that $X=\sum_kg_ke_k$ with independent $g_k\sim N(0,q_k)$. Membership of $H_\mu$ is equivalent to the finiteness of $\|Q^{-1/2}X\|^2=\sum_kg_k^2/q_k$. The $g_k^2/q_k$ are independent with mean one, so the sum diverges almost surely; hence $X\notin H_\mu$ almost surely. $\square$</p>
+<p>The Cameron–Martin space is therefore a set of measure zero, and it is nevertheless the space that governs the theory: it is the tangent space at every point, the space of admissible translations, and the natural domain on which the quadratic form of $Q$ is finite.</p>
+<h3 id="the-cylindrical-wiener-process">The Cylindrical Wiener Process</h3>
+<p>The Gaussian cylinder measure with $Q=I$ is the one that arises when a stochastic equation is driven by noise in a Hilbert space of infinite dimension, and its formal time integral is the <strong>cylindrical Wiener process</strong>: the series $W_t=\sum_k\beta_k(t)e_k$ with $(\beta_k)$ independent standard Brownian motions. The series does not converge in $H$, and the process is made sense of through the integrals $\int\Phi\,dW$ defined by the Hilbert–Schmidt isometry. This is the subject of <em>Stochastic Partial Differential Equations</em>, and it is the same failure of the trace-class condition, now in the noise index, that the corollary above records; the trace-class condition reappears there as the requirement that the noise covariance and the noise coefficient be Hilbert–Schmidt.</p>
+<h2 id="the-wiener-measure">The Wiener Measure</h2>
+<h3 id="the-covariance-kernel-math147">The Covariance Kernel $\min(s,t)$</h3>
+<p>The path measure of Brownian motion is the case of the construction in which the cylinder measure does extend. Let $H=L^2(0,1)$ and let $Q$ be the positive self-adjoint operator with <strong>integral kernel</strong> $R(s,t)=\min(s,t)$:</p>
+<p>$$
+Q\psi(t)=\int_0^1\min(s,t)\psi(s)\,ds .
+$$</p>
+<p><strong>Theorem (the Wiener measure).</strong> The operator $Q$ above has the following properties.</p>
+<p>(i) $R$ is a positive-definite kernel, so $Q$ is positive and self-adjoint.</p>
+<p>(ii) The eigenfunctions are $v_k(t)=\sqrt2\sin\bigl((k-\tfrac12)\pi t\bigr)$, $k\geq1$, with eigenvalues $\lambda_k=\left((k-\tfrac12)^2\pi^2\right)^{-1}$.</p>
+<p>(iii) $\operatorname{Tr}Q=\sum_k\lambda_k=\tfrac12<\infty$, so the Gaussian cylinder measure with covariance $Q$ is a Borel probability measure on $L^2(0,1)$.</p>
+<p>(iv) The measure admits a version with continuous paths, and the induced measure on $C[0,1]$ is the <strong>Wiener measure</strong> $\mathbb{W}$, the law of standard Brownian motion.</p>
+<p><em>Proof.</em> For (ii), the identity</p>
+<p>$$
+\int_0^1\min(s,t)\sin\bigl((k-\tfrac12)\pi s\bigr)\,ds=\frac{1}{(k-\frac12)^2\pi^2}\sin\bigl((k-\tfrac12)\pi t\bigr)
+$$</p>
+<p>is checked by splitting the integral at $s=t$ and using the boundary conditions $v(0)=0$, $v'(1)=0$ that the kernel imposes. For (iii), $\sum_{k\geq1}(k-\tfrac12)^{-2}=\pi^2/2$, so $\operatorname{Tr}Q=\frac12$, which is also $\int_0^1R(t,t)\,dt=\int_0^1t\,dt$. For (iv), the finite-dimensional distributions are those of Brownian motion and the moments $\mathbb{E}|x(t)-x(s)|^{2m}=C_m|t-s|^m$ satisfy Kolmogorov's continuity criterion, whose statement and proof are in <em>Brownian Motion and Stochastic Calculus</em>; the continuous version is unique up to indistinguishability. $\square$</p>
+<p>The verification of (ii) by quadrature gives $(Qv_k)(t)/v_k(t)=0.4052847346,\,0.0450316372,\,0.0162113894$ for $k=1,2,3$, reproducing $\lambda_k$ to ten decimal places, and the partial sums of $\sum_k\lambda_k$ approach $0.49999\ldots$ as $k$ increases. The number $\tfrac12$ is the variance of $x(1)$, as it must be.</p>
+<p><strong>Remark (the kernel is forced).</strong> The evaluation functionals $\delta_t:x\mapsto x(t)$ are not in $H=L^2(0,1)$ — they are distributions — so the cylinder measure cannot be described by a covariance matrix with entries $Q_{st}$ inside the Hilbert space; the kernel $R(s,t)$ is the distributional form of the covariance, and the scalar product it defines is the one on the Cameron–Martin space $H^1$ and not on $H$. The gain is that the measure is then supported on functions rather than on distributions.</p>
+<h3 id="path-regularity-and-the-support">Path Regularity and the Support</h3>
+<p><strong>Proposition (regularity).</strong> $\mathbb{W}$-almost every path is Hölder continuous of every exponent $\alpha<\tfrac12$ and of no exponent $\alpha>\tfrac12$; in particular the paths are not absolutely continuous with square-integrable derivative, and</p>
+<p>$$
+\mathbb{E}_{\mathbb{W}}\|x\|_{H^1}^2=\infty .
+$$</p>
+<p><em>Proof.</em> The Hölder statement is Kolmogorov's criterion together with the law of the iterated logarithm, and it is in <em>Brownian Motion and Stochastic Calculus</em>. For the energy, discretise $[0,1]$ at the points $t_i=i/n$ with spacing $h=1/n$. The quadratic variation over the grid is $\sum_{i=0}^{n-1}\bigl(x(t_{i+1})-x(t_i)\bigr)^2$, whose expectation is $n\cdot h=1$; the discrete $H^1$ energy divides by the spacing, so it is $\frac1h\sum_{i=0}^{n-1}\bigl(x(t_{i+1})-x(t_i)\bigr)^2$ and its expectation is $\frac1h\cdot n\cdot h=n$. On a grid of $n$ points the expectation $\mathbb{E}\|x\|_{H^1}^2$ is therefore $n$, and its values $4,8,10$ for $n=4,8,10$ grow without bound; equivalently $H^1\subset C^{1/2}$ by the Sobolev embedding in dimension one, and the paths fail the exponent $\tfrac12$. $\square$</p>
+<p>The proposition is the exact content of the statement that Brownian paths are rough: the measure is supported on a space of functions strictly larger than the Cameron–Martin space, and the Cameron–Martin space is the smallest space on which the paths can be compared.</p>
+<h2 id="the-cameronmartin-theorem">The Cameron–Martin Theorem</h2>
+<h3 id="quasi-invariance">Quasi-Invariance</h3>
+<p><strong>Theorem (Cameron–Martin).</strong> Let $\mathbb{W}$ be the Wiener measure and let $h\in H^1_0(0,1)$, the space of absolutely continuous functions with $h(0)=0$ and $h'\in L^2(0,1)$, equipped with the norm $\|h\|_{H^1}^2=\int_0^1h'(t)^2\,dt$. Then the translated measure</p>
+<p>$$
+\mathbb{W}_h(A)=\mathbb{W}(A-h),\qquad A\in\mathcal{B}\bigl(C[0,1]\bigr),
+$$</p>
+<p>is absolutely continuous with respect to $\mathbb{W}$, and</p>
+<p>$$
+\frac{d\mathbb{W}_h}{d\mathbb{W}}(x)=\exp\Bigl(\int_0^1h'(t)\,dx(t)-\frac12\int_0^1h'(t)^2\,dt\Bigr),
+$$</p>
+<p>where the integral is the Itô integral of $h'$ against the canonical Brownian path. The space $H^1_0$ is the Cameron–Martin space of $\mathbb{W}$.</p>
+<p><em>Sketch.</em> In finite dimensions the statement is exact. If $\mu=N(0,C)$ on $\mathbb{R}^n$ with $C$ invertible and $\mu_v(A)=\mu(A-v)$, then</p>
+<p>$$
+\frac{d\mu_v}{d\mu}(y)=\exp\bigl(\langle v,C^{-1}y\rangle-\tfrac12\langle v,C^{-1}v\rangle\bigr),
+$$</p>
+<p>an identity verified by completing the square: the exponent is $-\tfrac12(y-v)^\top C^{-1}(y-v)+\tfrac12y^\top C^{-1}y$, and the density integrates to one, as the one-dimensional computation
+$\mathbb{E}\bigl[e^{vX-v^2/2}\bigr]=1$ for $X\sim N(0,1)$ confirms; the numerical quadrature of the same identity for $v=0.3$ and $v=1.5$ returns $1.000000000000$. In infinite dimensions $C$ is a compact operator, so $C^{-1}$ is unbounded and $\langle v,C^{-1}v\rangle$ is finite exactly when $v$ lies in the range of $C^{1/2}$, which for the kernel $\min(s,t)$ is $H^1_0$; the quadratic form is then the Cameron–Martin norm and the linear form is the Itô integral. The translation $x\mapsto x+h$ is the shift of Brownian motion by the deterministic path $h$, and the identity is the Girsanov formula of <em>Brownian Motion and Stochastic Calculus</em> with $\theta=h'$ up to the sign of the direction of the shift. $\square$</p>
+<p><strong>Example.</strong> For $h(t)=t$ one has $\|h\|_{H^1}^2=\int_0^1dt=1$, and the discretised Cameron–Martin quadratic form of the Brownian covariance gives exactly $1.00000000$. For the rough vector $h(t_i)=(-1)^i\sqrt{1/n}$ on the grid of $n$ points the same form is $29.00$ at $n=8$ and $37.00$ at $n=10$, growing with the resolution: the rough vector is outside the Cameron–Martin space and the quadratic form diverges.</p>
+<h3 id="singularity-outside-the-cameronmartin-space">Singularity Outside the Cameron–Martin Space</h3>
+<p><strong>Theorem (mutual singularity).</strong> If $h\notin H^1_0(0,1)$, then $\mathbb{W}_h$ and $\mathbb{W}$ are mutually singular.</p>
+<p><em>Proof.</em> The finite-dimensional reductions of the two measures along a refining sequence of grids are Gaussian with means differing by the projection of $h$ and the same covariance. When the projection lies outside the range of $C^{1/2}$ the quadratic form of the difference diverges and the Hellinger affinity of the two finite-dimensional marginals tends to zero; by the martingale convergence of the affinities, the two measures are carried by disjoint sets. $\square$</p>
+<p>The dichotomy is the sharp form of the statement that the Brownian measure does not live on a space of smooth paths: it is quasi-invariant under exactly the $H^1$ shifts, and it is carried to a singular measure by every other translation. The Cameron–Martin space is thus the largest space of directions in which the measure may be differentiated.</p>
+<h2 id="the-feynmankac-formula-and-the-euclidean-path-integral">The Feynman–Kac Formula and the Euclidean Path Integral</h2>
+<h3 id="the-formula">The Formula</h3>
+<p><strong>Theorem (Feynman–Kac).</strong> Let $V:\mathbb{R}^d\to\mathbb{R}$ be continuous and bounded below, let $f$ be bounded and continuous, and let $\mathbb{E}^x$ denote the expectation for Brownian motion started at $x$. Then</p>
+<p>$$
+u(t,x)=\mathbb{E}^x\Bigl[\exp\Bigl(-\int_0^tV(x_s)\,ds\Bigr)f(x_t)\Bigr]
+$$</p>
+<p>is the unique bounded solution of the initial-value problem</p>
+<p>$$
+\partial_tu=\tfrac12\Delta u-Vu,\qquad u(0,\cdot)=f .
+$$</p>
+<p>The proof is the Itô formula applied to the process $e^{-\int_0^sV(x_r)dr}u(t-s,x_s)$ together with the martingale property; it is given in <em>Brownian Motion and Stochastic Calculus</em>, and the result is quoted here as the identity that identifies the Euclidean path integral.</p>
+<p><strong>Verification of the closed forms.</strong> For a constant potential $V$ the solution is $u(t,x)=e^{-Vt}(P_tf)(x)$, and the finite-difference residual of this expression for the backward equation is $8\cdot10^{-9}$ at $(t,x)=(0.3,0.2)$, with the grid spacing $h=10^{-4}$. For the quadratic potential $V(x)=\tfrac12x^2$ the solution with $f\equiv1$ is</p>
+<p>$$
+u(t,x)=(\cosh t)^{-1/2}\exp\Bigl(-\tfrac12x^2\tanh t\Bigr),
+$$</p>
+<p>whose residual for $\partial_tu=\tfrac12u_{xx}-\tfrac12x^2u$ is at most $10^{-8}$ at $(t,x)=(0.3,0.0),(0.5,0.4),(0.2,1.1)$, and which satisfies the initial condition $u(0,x)=1$ to twelve decimal places; by the Feynman–Kac theorem the identity of the closed form and the path expectation follows.</p>
+<h3 id="the-euclidean-action-as-a-measure">The Euclidean Action as a Measure</h3>
+<p>Write the Euclidean action of a path $x$ over $[0,t]$ with a potential $V$ as</p>
+<p>$$
+S_E[x]=\int_0^t\Bigl(\tfrac12|\dot x_s|^2+V(x_s)\Bigr)\,ds .
+$$</p>
+<p>The kinetic part is not a weight in the Feynman–Kac formula: it is the <em>measure</em>. Indeed the Wiener measure is the Gaussian measure whose covariance $Q=(-\Delta)^{-1}$ inverts the kinetic form, so that the quadratic functional $\tfrac12\int|\dot x|^2$ appears as the exponent of the Gaussian density, while the potential enters as the multiplicative density $\exp\bigl(-\int_0^tV(x_s)ds\bigr)$. The Feynman–Kac theorem therefore reads, as a correspondence between the formal path integral on the left and the genuine integral on the right,</p>
+<p>$$
+\int e^{-S_E[x]}\,\mathcal{D}x\ \longleftrightarrow\ \int_{C[0,t]}f(x_t)\,d\mu_V,\qquad d\mu_V=\exp\Bigl(-\int_0^tV(x_s)\,ds\Bigr)d\mathbb{W},
+$$</p>
+<p>and the statement is exact as long as the density is integrable. This is the precise sense in which the Euclidean path integral is an integral with respect to a measure: the free weight is a genuine measure and the interaction is a genuine function, and the two are combined by the ordinary operations of integration.</p>
+<h3 id="the-free-euclidean-field">The Free Euclidean Field</h3>
+<p>The construction is not special to the heat equation. Let $M$ be a compact Riemannian manifold, or the torus $\mathbb{T}^d$, and let $C=(-\Delta+m^2)^{-1}$ with $m>0$. The operator $C$ is compact, positive, self-adjoint, and trace class, because its eigenvalues $\bigl(\lambda_k+m^2\bigr)^{-1}$ are summable; the Gaussian measure with covariance $C$ therefore exists on $L^2(M)$, and its formal density against the flat reference is $\exp\bigl(-\tfrac12\int_M(|\nabla\phi|^2+m^2\phi^2)\bigr)$, the <strong>free Euclidean field</strong> of mass $m$. This is the model case of constructive quantum field theory: the free measure is a Gaussian measure in the sense of this article, and the interacting measure, when it exists, is obtained from it by a density $\exp(-S_{\mathrm{int}})$ together with a renormalisation of the density so that the total mass remains one. That construction — the cluster expansion, the $\mathcal P(\varphi)_2$ models, the renormalisation of the products of a distributional field — is beyond the scope of this article and is treated in the references.</p>
+<h2 id="the-oscillatory-path-integral-and-the-fresnel-obstruction">The Oscillatory Path Integral and the Fresnel Obstruction</h2>
+<h3 id="oscillatory-integrals-by-regularisation">Oscillatory Integrals by Regularisation</h3>
+<p><strong>Definition (oscillatory Gaussian integral).</strong> For $a>0$ the integral $\int_{\mathbb{R}}e^{iax^2/2}\,dx$ is defined as the limit, if it exists, of the absolutely convergent integrals in which the integrand is damped:</p>
+<p>$$
+\int_{-\infty}^{\infty}e^{\frac{i}{2}ax^2}\,dx=\lim_{\varepsilon\to0+}\int_{-\infty}^{\infty}e^{-\frac12(\varepsilon-ia)x^2}\,dx=\lim_{\varepsilon\to0+}\sqrt{\frac{2\pi}{\varepsilon-ia}}=\sqrt{\frac{2\pi}{-ia}}=\sqrt{\frac{2\pi}{a}}\,e^{i\pi/4}.
+$$</p>
+<p>The regularisation makes the integrand integrable, the Gaussian integral is elementary, and the limit exists and is independent of the damping. The result has modulus $\sqrt{2\pi/a}$ and argument $\pi/4$; numerically, with $\varepsilon=10^{-8}$ the value is $1.7724538598+1.7724538420\,i$ and $\sqrt{2\pi}e^{i\pi/4}=1.7724538509+1.7724538509\,i$ to eight decimals. The same formula extends to $\mathbb{R}^n$ by</p>
+<p>$$
+\int_{\mathbb{R}^n}e^{\frac{i}{2}|x|^2}\,dx=(2\pi i)^{n/2},
+$$</p>
+<p>in which the regularisation is applied in each coordinate. The truncated integral $\int_{-A}^{A}e^{iax^2/2}\,dx$ also converges to the same value as $A\to\infty$, but the convergence is slow — the tail decays like $A^{-1}$ and the integral is not absolutely convergent — so a cut-off is a legitimate definition only in the limit.</p>
+<h3 id="camerons-theorem-there-is-no-feynman-measure">Cameron's Theorem: There Is No Feynman Measure</h3>
+<p><strong>Proposition (the finite-dimensional obstruction).</strong> On $\mathbb{R}^n$ the modulus of the oscillatory Gaussian is $|(2\pi i)^{n/2}|=(2\pi)^{n/2}$, which grows exponentially in the dimension: it is $6.283185$, $39.478418$ and $248.050213$ for $n=2,4,6$. The would-be density $e^{i|x|^2/2}$ has modulus one and the constant grows, so no normalisation of the finite-dimensional oscillatory integrals can yield a family of marginals of a single countably additive complex measure in the limit.</p>
+<p><strong>Theorem (Cameron).</strong> Let $S$ be the action of a Lagrangian system. The path-integral functional $C[0,t]\ni x\mapsto e^{iS[x]}$ is not the restriction to the cylinder algebra of a countably additive complex measure on the path space. What exists in its place is a finitely additive cylinder functional of infinite total variation; the "integral" is a distribution on a space of test functionals, or the limit of a family of regularised Wiener integrals, and not an integral against a measure.</p>
+<p>The theorem is the sharp statement that the oscillatory integral is not a measure; it is due to Cameron, whose family of integrals connects the Wiener integral to the Feynman integral by continuing the variance from the real to the imaginary axis, and the detailed treatment is in the references. The elementary content of the obstruction is already visible above: the oscillatory functional assigns total variation one to every cylinder and its total variation over a refining family is unbounded, whereas a complex measure has finite total variation.</p>
+<h3 id="what-replaces-the-measure">What Replaces the Measure</h3>
+<p>Three constructions produce the oscillatory integral without a measure.</p>
+<ul>
+<li><strong>Analytic continuation (the imaginary-time construction).</strong> Replace the time $t$ by $-i\tau$, so that the oscillatory factor $e^{iS}$ becomes the real exponential $e^{-S_E}$ of the Euclidean action, and the integral becomes a Wiener integral, which is a measure. The Feynman integral is then recovered by continuing the resulting function of $\tau$ back to $\tau=i t$; for the free particle and the oscillator the continuation is elementary, and it is the content of the explicit kernels of the next section. For an interaction the construction is the Euclidean field-theoretic one, and its success is the existence theorem for the interacting measure.</li>
+<li><strong>Fresnel integrals.</strong> The free oscillatory integral is defined as the Fourier transform of the Gaussian $e^{i\langle\cdot,\cdot\rangle/2}$ in the distributional sense; the result is the Fresnel integral on the Hilbert space, an object defined by the regularised limit of the previous paragraph and its finite-dimensional products. The integral is then an element of a space of distributions, paired with test functionals.</li>
+<li><strong>Time slicing.</strong> The integral is defined as the limit of the finite-dimensional oscillatory integrals obtained by discretising the time interval. The next section computes the sliced integrals for a quadratic action; they converge to the explicit kernel in the free and oscillatory cases, and their Euclidean version converges to the Wiener integral. The convergence is the Lie–Trotter product formula at the operator level.</li>
+</ul>
+<h2 id="time-slicing-and-the-limit-of-the-sliced-kernels">Time Slicing and the Limit of the Sliced Kernels</h2>
+<h3 id="the-sliced-kernel">The Sliced Kernel</h3>
+<p>Discretise the time interval $[0,t]$ into $n$ steps of length $\varepsilon=t/n$ and write $x_j$ for the position at time $j\varepsilon$. For a particle of mass $m$ in a potential $V$ the <strong>$n$-th sliced kernel</strong> between $x_a$ at time $0$ and $x_b$ at time $t$ is the finite-dimensional oscillatory integral</p>
+<p>$$
+K_n(x_a,x_b;t)=\Bigl(\frac{m}{2\pi i\varepsilon}\Bigr)^{n/2}\int_{\mathbb{R}^{n-1}}\exp\bigl(iS_n(x_0,\dots,x_n)\bigr)\,dx_1\cdots dx_{n-1},
+$$</p>
+<p>with $x_0=x_a$, $x_n=x_b$ and</p>
+<p>$$
+S_n=\sum_{j=0}^{n-1}\frac{m}{2\varepsilon}(x_{j+1}-x_j)^2-\frac{m\omega^2\varepsilon}{2}\Bigl[\frac{x_0^2+x_n^2}{2}+\sum_{j=1}^{n-1}x_j^2\Bigr]
+$$</p>
+<p>for the harmonic potential $V(x)=\tfrac12m\omega^2x^2$, the potential being integrated over the slices by the trapezoidal rule; the second term is absent for the free particle.</p>
+<h3 id="exactness-for-a-quadratic-action">Exactness for a Quadratic Action</h3>
+<p><strong>Proposition (quadratic actions are exact).</strong> If $S_n$ is quadratic in the intermediate positions, write it as $S_n=\tfrac12\xi^\top B\xi-c^\top\xi+d$ in the variables $\xi=(x_1,\dots,x_{n-1})$, with $B$ symmetric and invertible. Then the integral defining $K_n$ is a Gaussian integral and evaluates to</p>
+<p>$$
+K_n=\Bigl(\frac{m}{2\pi i\varepsilon}\Bigr)^{n/2}(2\pi)^{(n-1)/2}\frac{e^{i\pi\,\mathrm{sgn}(B)/4}}{\sqrt{|\det B|}}\exp\Bigl(i\bigl(d-\tfrac12c^\top B^{-1}c\bigr)\Bigr),
+$$</p>
+<p>where $\mathrm{sgn}(B)$ is the signature of $B$ and the phase $e^{i\pi\,\mathrm{sgn}(B)/4}$ is the Fresnel normalisation of the finite-dimensional oscillatory Gaussian. For the free particle the kernel is independent of $n$ and equals the exact propagator</p>
+<p>$$
+K(x_a,x_b;t)=\Bigl(\frac{m}{2\pi it}\Bigr)^{1/2}\exp\Bigl(\frac{im(x_b-x_a)^2}{2t}\Bigr).
+$$</p>
+<p><em>Proof of the last claim.</em> The free action is quadratic in all the $x_j$, so the Gaussian integral is exact for every $n$, and the explicit computation by completing the square gives the same value for every $n$; alternatively the semigroup property of the free kernel gives the same recursion in $n$. $\square$</p>
+<p><strong>Verification.</strong> With $m=1$, $t=1$, $x_a=0$, $x_b=0.3$, the exact kernel is $0.29449920074-0.26911923724\,i$, and the sliced kernels for $n=2,4,6$ are $0.29449920074-0.26911923724\,i$ to fifteen decimal places; the determinant formula above reproduces the exact kernel and the agreement is not an approximation.</p>
+<h3 id="convergence-to-the-wiener-measure-and-to-the-oscillator-kernel">Convergence to the Wiener Measure and to the Oscillator Kernel</h3>
+<p><strong>Theorem (the harmonic oscillator).</strong> For the harmonic potential the sliced kernels converge as $n\to\infty$ to the <strong>Mehler kernel</strong></p>
+<p>$$
+K(x_a,x_b;t)=\Bigl(\frac{\omega}{2\pi i\sin\omega t}\Bigr)^{1/2}\exp\Bigl(\frac{i\omega}{2\sin\omega t}\bigl((x_a^2+x_b^2)\cos\omega t-2x_ax_b\bigr)\Bigr).
+$$</p>
+<p><strong>Verification.</strong> With $m=1$, $\omega=t=1$, $x_a=0$, $x_b=0.3$, the Mehler value is $0.31627748765-0.29850880428\,i$ and the errors of the sliced kernels are $8.44\cdot10^{-3}$, $2.08\cdot10^{-3}$, $5.18\cdot10^{-4}$ at $n=2,4,8$, decreasing by a factor four when $n$ is doubled: the convergence is of second order in the time step.</p>
+<p><strong>Remark (the operator form, and the two limits).</strong> The same computation at the level of operators is the Lie–Trotter product formula $e^{-iHt}=\lim_{n}\bigl(e^{-iH_0t/n}e^{-iVt/n}\bigr)^n$ of <em>Semigroups and Evolution Equations</em>: the resolution of the identity inserted between consecutive factors is the integral over $x_j$. In imaginary time the same product formula is a strongly convergent approximation of the semigroup $e^{t(\Delta/2-V)}$, and the sliced integrals converge to the Wiener integral of the Feynman–Kac formula, which is a measure; in real time the products converge only in a weak or distributional sense, which is the operator shadow of the absence of the measure. The two limits of this section are thus the two halves of the article: the Euclidean slicing converges to a measure, and the oscillatory slicing converges to a kernel or a distribution.</p>
+<h2 id="summary">Summary</h2>
+<p>A cylinder measure on a vector space is a finitely additive set function on the algebra generated by the finite-dimensional projections; it is specified by a consistent family of finite-dimensional distributions, and its countable additivity is not automatic. For a Gaussian cylinder measure on a separable Hilbert space with covariance operator $Q$, the measure is a genuine Borel probability if and only if $\operatorname{Tr}Q=\sum_kq_k<\infty$: if the measure exists then the second moment $\int\|x\|^2d\mu=\operatorname{Tr}Q$ is finite, and if the trace is finite the series $\sum_kg_ke_k$ with independent $g_k\sim N(0,q_k)$ converges almost surely, and its law is the measure. The identity covariance is the boundary case in which the trace diverges: there is no Gaussian measure with covariance $I$, white noise is the associated distribution-valued object, and the general criteria for the extension are the theorems of Sazonov and Minlos. The Gaussian measure is determined by its mean and its covariance through the characteristic functional $\exp(i\langle m,\xi\rangle-\tfrac12\langle Q\xi,\xi\rangle)$; it is concentrated on the closure of the range of $Q^{1/2}$, and its Cameron–Martin space $H_\mu=Q^{1/2}(H)$ is the range with the inverse covariance as inner product, a null set in infinite dimension and nevertheless the space of admissible translations.</p>
+<p>The Wiener measure is the Gaussian measure on $L^2(0,1)$ with the covariance kernel $R(s,t)=\min(s,t)$; its eigenfunctions are $\sqrt2\sin((k-\tfrac12)\pi t)$, its eigenvalues are $((k-\tfrac12)^2\pi^2)^{-1}$, its trace is $\tfrac12$, and the Kolmogorov continuity criterion upgrades it to a measure on $C[0,1]$, the law of Brownian motion. Its paths are Hölder of every exponent below $\tfrac12$ and not of exponent $\tfrac12$; the Cameron–Martin space is $H^1_0(0,1)$ with norm $\int(h')^2$, and the measure is quasi-invariant under exactly these translations, with the Radon–Nikodym derivative $\exp(\int h'\,dx-\tfrac12\|h\|^2_{H^1})$, and mutually singular under every other translation. The finite-dimensional model of the theorem is the translated Gaussian $\mu_v\ll\mu$ with density $\exp(\langle v,C^{-1}y\rangle-\tfrac12\langle v,C^{-1}v\rangle)$, finite exactly when $v$ lies in the range of $C^{1/2}$.</p>
+<p>The Feynman–Kac formula identifies the Euclidean path integral with an integral against the Wiener measure: $u(t,x)=\mathbb{E}^x[\exp(-\int_0^tV(x_s)ds)f(x_t)]$ solves $\partial_tu=\tfrac12\Delta u-Vu$, the free kinetic weight being the measure and the potential being the density $\exp(-\int V)$, and the same construction on a compact manifold with covariance $(-\Delta+m^2)^{-1}$ gives the free Euclidean field, a genuine Gaussian measure and the starting point of constructive field theory. The oscillatory path integral has no such reading: the factor $e^{iS}$ has modulus one and the finite-dimensional normalisation $(2\pi i)^{n/2}$ grows like $(2\pi)^{n/2}$, so no countably additive complex measure can carry the density, and Cameron's theorem states the obstruction for a general action. What replaces the measure is analytic continuation to imaginary time, which turns the integral into the Euclidean one; the Fresnel integral, which defines the free oscillatory integral distributionally by the regularised limit $\int e^{iax^2/2}dx=\sqrt{2\pi/a}e^{i\pi/4}$; and the time slicing, in which the finite-dimensional oscillatory integrals over the slices converge. The slices are exact for a quadratic action — the free kernel is reproduced for every $n$ — and for the oscillator they converge to the Mehler kernel at second order in the time step, while their Euclidean version converges to the Wiener integral. The Euclidean slicing therefore converges to a measure and the oscillatory slicing to a kernel or a distribution, and the trace-class condition of the first section is the reason for the difference.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$X$, $X'$</td>
+<td>real vector space and its algebraic dual</td>
+</tr>
+<tr>
+<td>$\mathcal{Z}(X)$</td>
+<td>algebra of cylinder sets</td>
+</tr>
+<tr>
+<td>$Z(\varphi_1,\dots,\varphi_n;B)$</td>
+<td>cylinder set of a finite list of functionals</td>
+</tr>
+<tr>
+<td>$\mu$, $\widehat\mu$</td>
+<td>cylinder measure and its characteristic functional</td>
+</tr>
+<tr>
+<td>$H$, $\langle\cdot,\cdot\rangle$, $(e_k)$</td>
+<td>separable Hilbert space, inner product, orthonormal basis</td>
+</tr>
+<tr>
+<td>$Q$, $q_k$, $\operatorname{Tr}Q$</td>
+<td>covariance operator, its eigenvalues, its trace</td>
+</tr>
+<tr>
+<td>$H_\mu=Q^{1/2}(H)$</td>
+<td>Cameron–Martin space with inverse-covariance inner product</td>
+</tr>
+<tr>
+<td>$W_t=\sum_k\beta_ke_k$</td>
+<td>cylindrical Wiener process (does not converge in $H$)</td>
+</tr>
+<tr>
+<td>$\mathbb{W}$, $x$</td>
+<td>Wiener measure on $C[0,1]$ and the canonical path</td>
+</tr>
+<tr>
+<td>$R(s,t)=\min(s,t)$</td>
+<td>Brownian covariance kernel</td>
+</tr>
+<tr>
+<td>$\lambda_k=((k-\tfrac12)^2\pi^2)^{-1}$</td>
+<td>eigenvalues of the Wiener covariance</td>
+</tr>
+<tr>
+<td>$H^1_0(0,1)$</td>
+<td>Cameron–Martin space of the Wiener measure</td>
+</tr>
+<tr>
+<td>$d\mathbb{W}_h/d\mathbb{W}$</td>
+<td>Cameron–Martin density, $\exp(\int h'dx-\tfrac12\|h\|^2)$</td>
+</tr>
+<tr>
+<td>$V$, $S_E$, $\mathcal{D}x$</td>
+<td>potential, Euclidean action, formal path measure</td>
+</tr>
+<tr>
+<td>$u(t,x)$</td>
+<td>Feynman–Kac solution of the backward equation</td>
+</tr>
+<tr>
+<td>$C=(-\Delta+m^2)^{-1}$</td>
+<td>covariance of the free Euclidean field</td>
+</tr>
+<tr>
+<td>$K_n$, $K$</td>
+<td>sliced kernel and its limit (free and Mehler)</td>
+</tr>
+<tr>
+<td>$(2\pi i)^{n/2}$, $\sqrt{2\pi/a}e^{i\pi/4}$</td>
+<td>oscillatory Gaussian normalisations</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Norbert Wiener, "Differential space", <em>Journal of Mathematics and Physics</em> <strong>2</strong> (1923), 131–174, for the construction of the path measure.</li>
+<li>R. H. Cameron and W. T. Martin, "Transformations of Wiener integrals under translations", <em>Annals of Mathematics</em> <strong>45</strong> (1944), 386–396, for the quasi-invariance, the admissible shifts and the Radon–Nikodym derivative.</li>
+<li>R. H. Cameron, "A family of integrals serving to connect the Wiener and Feynman integrals", <em>Journal of Mathematics and Physics</em> <strong>39</strong> (1960), 126–140, for the regularised definition and the absence of a Feynman measure.</li>
+<li>I. M. Gel'fand and A. M. Yaglom, "Integration in function spaces and its application to quantum physics", <em>Journal of Mathematical Physics</em> <strong>1</strong> (1960), 48–69, for the cylinder-measure viewpoint and the formal path measure.</li>
+<li>Leonard Gross, "Abstract Wiener spaces", <em>Proceedings of the Fifth Berkeley Symposium on Mathematical Statistics and Probability</em> <strong>2</strong> (1965), 31–42, for the abstract Wiener space and the Cameron–Martin space of a Gaussian measure.</li>
+<li>Hui-Hsiung Kuo, <em>Gaussian Measures in Banach Spaces</em> (Springer, 1975), for the Gaussian measures, the Sazonov and Minlos theorems and the structure of the Cameron–Martin space.</li>
+<li>Barry Simon, <em>Functional Integration and Quantum Physics</em> (Academic Press, 1979), for the Feynman–Kac formula, the Euclidean path integral and the free field as a Gaussian measure.</li>
+<li>James Glimm and Arthur Jaffe, <em>Quantum Physics: A Functional Integral Point of View</em> (Springer, 2nd edition, 1987), for the construction of the interacting measures and the renormalisation of the density.</li>
+<li>Sergio Albeverio, Raphael Høegh-Krohn and Sonia Mazzucchi, <em>Mathematical Theory of Feynman Path Integrals</em> (Springer, 2nd edition, 2008), for the Fresnel integrals, the oscillatory integrals and the analytic continuation.</li>
+<li>Gerald W. Johnson and Michel L. Lapidus, <em>The Feynman Integral and Feynman's Operational Calculus</em> (Oxford University Press, 2000), for the time slicing, the product formula and the operator-theoretic treatment.</li>
+<li><em>Measure Theory and Integration</em> (<code>articles_maths/measure-theory-and-integration.md</code>), companion article, for the construction of measures, the product measures and the Radon–Nikodym theorem.</li>
+<li><em>Brownian Motion and Stochastic Calculus</em> (<code>articles_maths/brownian-motion-and-stochastic-calculus.md</code>), companion article, for the Wiener measure, the Itô integral, the Girsanov theorem and the Feynman–Kac formula.</li>
+<li><em>Stochastic Partial Differential Equations</em> (<code>articles_maths/stochastic-partial-differential-equations.md</code>), companion article, for the Gaussian measures in infinite dimension and the cylindrical Wiener process.</li>
+<li><em>Semigroups and Evolution Equations</em> (<code>articles_maths/semigroups-and-evolution-equations.md</code>), companion article, for the Lie–Trotter product formula and the operator form of the time slicing.</li>
+<li><em>Hypercomplex Integration</em> (<code>articles_maths/hypercomplex-integration.md</code>), companion article, for the integration of algebra-valued functions, which is the measure-theoretic integral of this article with values in an algebra.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

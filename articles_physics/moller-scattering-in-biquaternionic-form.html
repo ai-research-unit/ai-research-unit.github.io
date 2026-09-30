@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Møller Scattering in Biquaternionic Form — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="mller-scattering-in-biquaternionic-form"><strong>Møller Scattering in Biquaternionic Form</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>Møller scattering</strong> is electron–electron scattering, $e^-e^-\to e^-e^-$, in quantum electrodynamics. Christian Møller derived it in 1932, in the same paper that treated the passage of fast electrons through matter. It is the paradigmatic two-electron process: the electron repulsion inside the helium atom is its non-relativistic face, and electron–electron colliders were built around it. At the tree level it receives two contributions, the <strong>$t$-channel</strong> and <strong>$u$-channel</strong> diagrams in which the two electrons exchange a photon, and the two interfere with a relative <strong>minus sign</strong> because the two final electrons are identical fermions. By <strong>crossing symmetry</strong> the Møller amplitude and the Bhabha amplitude, $e^+e^-\to e^+e^-$, are the same amplitude read with different particle labels; the companion article <em>Bhabha Scattering in Biquaternionic Form</em> uses that correspondence.</p>
+<p>This article treats Møller scattering in the biquaternion framework. The framework's contribution is structural. Its minimal-coupling and quantization articles supply the ingredients — a $U(1)$ coupling localised in the centre, a quantized Maxwell field, a Fock space with creation and annihilation operators, and a propagator — and the Møller amplitude is then a product of <strong>two material-sector currents</strong> contracted by the photon propagator. The <strong>relative minus sign</strong> between the two diagrams is the antisymmetry of fermion exchange, which the framework's canonical quantization already carries as the identity $(\hat a^\dagger)^2=0$ on the mode algebra. And <strong>crossing symmetry</strong> is the framework's charge conjugation on the doubled module, read backwards. What the framework does not do is evaluate loops: the corpus's scattering content is tree-level, and the present article stays there.</p>
+<p>The article is organised as follows. The next section sets up the two diagrams, the kinematics and the minus sign. The third computes the spin-summed matrix element. The fourth gives the cross section and its two limits. The fifth treats the weak correction and the parity-violating asymmetry. The sixth is the biquaternion reading. The closing sections are the open questions, the summary, the notation table and the literature.</p>
+<h2 id="the-process-and-its-two-diagrams">The Process and Its Two Diagrams</h2>
+<h3 id="kinematics">Kinematics</h3>
+<p>Let the incoming electrons carry four-momenta $p_1, p_2$ and the outgoing electrons $p_3, p_4$, with the mass shell $p_i^2 = m^2$ and $\not p_i = m$ on shell, $m = m_e$. The <strong>Mandelstam variables</strong> are</p>
+<p>$$
+s = (p_1+p_2)^2 = (p_3+p_4)^2,
+\qquad
+t = (p_1-p_3)^2 = (p_4-p_2)^2,
+\qquad
+u = (p_1-p_4)^2 = (p_3-p_2)^2,
+$$</p>
+<p>and for equal masses they satisfy the identity</p>
+<p>$$
+s + t + u = 4m^2 .
+$$</p>
+<p>The centre-of-momentum configuration used below is</p>
+<p>$$
+p_1 = (E,0,0,p),\quad p_2 = (E,0,0,-p),\quad
+p_3 = (E,p\sin\theta,0,p\cos\theta),\quad p_4 = (E,-p\sin\theta,0,-p\cos\theta),
+$$</p>
+<p>with $E^2 = m^2+p^2$ and $E_{\mathrm{CM}} = 2E$, so that</p>
+<p>$$
+s = 4E^2 = E_{\mathrm{CM}}^2,
+\qquad
+t = 2p^2(\cos\theta-1),
+\qquad
+u = -2p^2(\cos\theta+1).
+$$</p>
+<h3 id="the-two-amplitudes-and-the-minus-sign">The two amplitudes and the minus sign</h3>
+<p>The $t$-channel diagram contributes</p>
+<p>$$
+i\mathcal M_t = (-ie)^2\,\bar u(p_3)\gamma^\mu u(p_1)\,\frac{-i}{t}\,\bar u(p_4)\gamma_\mu u(p_2),
+$$</p>
+<p>and the $u$-channel diagram, obtained by exchanging the two final electrons, contributes</p>
+<p>$$
+i\mathcal M_u = (-ie)^2\,\bar u(p_3)\gamma^\mu u(p_2)\,\frac{-i}{u}\,\bar u(p_4)\gamma_\mu u(p_1).
+$$</p>
+<p>Because the two final states differ only by the exchange of identical fermions, the amplitudes are combined with a relative minus sign,</p>
+<p>$$
+i\mathcal M = i(\mathcal M_t - \mathcal M_u),
+$$</p>
+<p>the <strong>Pauli exchange sign</strong>. This single sign is the whole of the interference structure: it removes the forward-collinear enhancement in channels where the two electrons would be identical, and it is why the $u$-channel is a subtraction rather than an addition.</p>
+<h2 id="the-spin-summed-matrix-element">The Spin-Summed Matrix Element</h2>
+<p>Squaring and averaging over the two initial spins and summing over the two final spins — a factor $\tfrac14$ — gives</p>
+<p>$$
+\frac14\sum_{\mathrm{spins}}|\mathcal M|^2
+= \frac{e^4}{4}\Big\{ \frac{1}{t^2}\operatorname{Tr}[\gamma^\mu(\not p_1+m)\gamma^\nu(\not p_3+m)]\operatorname{Tr}[\gamma_\mu(\not p_2+m)\gamma_\nu(\not p_4+m)]
+$$
+$$
+\qquad\qquad + \frac{1}{u^2}\operatorname{Tr}[\gamma^\mu(\not p_2+m)\gamma^\nu(\not p_3+m)]\operatorname{Tr}[\gamma_\mu(\not p_1+m)\gamma_\nu(\not p_4+m)]
+$$
+$$
+\qquad\qquad - \frac{2}{tu}\operatorname{Tr}[(\not p_3+m)\gamma^\mu(\not p_1+m)\gamma^\nu(\not p_4+m)\gamma_\mu(\not p_2+m)\gamma_\nu] \Big\},
+$$</p>
+<p>using the spin sum $\sum_s u^s(p)\bar u^s(p) = \not p+m$ and the trace identity $\operatorname{Tr}[\gamma^\mu\gamma^\nu\gamma^\rho\gamma^\sigma] = 4(\eta^{\mu\nu}\eta^{\rho\sigma}-\eta^{\mu\rho}\eta^{\nu\sigma}+\eta^{\mu\sigma}\eta^{\nu\rho})$, with odd traces vanishing. Evaluating the three traces gives</p>
+<p>$$
+\overline{|\mathcal M|^2} = 2e^4\Big\{ \frac{1}{t^2}\left(s^2+u^2-8m^2(s+u)+24m^4\right) + \frac{1}{u^2}\left(s^2+t^2-8m^2(s+t)+24m^4\right) + \frac{2}{tu}\left(s^2-8m^2s+12m^4\right) \Big\}.
+$$</p>
+<p>Each of the three terms has the same anatomy: the two trace factors are the two electron <strong>currents</strong> contracted with each other through the photon propagator's $1/t$ or $1/u$, and the cross term is the interference, with the minus sign of exchange explicit in the coefficient $-\tfrac{2}{tu}$.</p>
+<h2 id="the-cross-section-and-its-limits">The Cross Section and Its Limits</h2>
+<p>The unpolarized differential cross section follows from the standard two-body flux factor,</p>
+<p>$$
+\frac{d\sigma}{d\Omega} = \frac{1}{64\pi^2 E_{\mathrm{CM}}^2}\,\overline{|\mathcal M|^2},
+$$</p>
+<p>inserting the centre-of-momentum Mandelstam variables. In the two limits it takes instructive forms.</p>
+<p><strong>Non-relativistic limit</strong> ($m\gg p$, so $E_{\mathrm{CM}} = 2m$):</p>
+<p>$$
+\frac{d\sigma}{d\Omega} = \frac{m^4\alpha^2}{E_{\mathrm{CM}}^2\,p^4\sin^4\theta}\,(1+3\cos^2\theta),
+$$</p>
+<p>a Rutherford-like $1/\sin^4\theta$ law modulated by the $(1+3\cos^2\theta)$ factor that is the signature of identical-fermion exchange. It is the relativistic generalisation of the electron–electron repulsion behind the helium atom.</p>
+<p><strong>Ultrarelativistic limit</strong> ($m\ll p$):</p>
+<p>$$
+\frac{d\sigma}{d\Omega} = \frac{\alpha^2}{E_{\mathrm{CM}}^2\,\sin^4\theta}\,(3+\cos^2\theta)^2 .
+$$</p>
+<p>The forward and backward singularities are $1/\sin^4\theta$, softened by the exchange factor; the total cross section falls with $s$ like $1/s$, as it must by dimensional analysis for a massless two-body amplitude.</p>
+<h2 id="the-weak-correction-and-parity-violation">The Weak Correction and Parity Violation</h2>
+<p>At energies below the $Z$ mass the process is described by QED, but the full electroweak theory adds two further tree-level diagrams with $Z$-boson exchange. Because the weak interaction is <strong>left-handed</strong> while the electromagnetic one is parity-symmetric, the $Z$ contribution makes the cross section different for left- and right-handed incoming electrons. For a polarized electron beam on an unpolarized target this produces a small parity-violating asymmetry,</p>
+<p>$$
+A_{\mathrm{PV}} = -\,m_eE\,\frac{G_{\mathrm F}}{\sqrt2\,\pi\alpha}\,\frac{16\sin^2\Theta_{\mathrm{cm}}}{\left(3+\cos^2\Theta_{\mathrm{cm}}\right)^2}\left(\frac14-\sin^2\theta_{\mathrm W}\right),
+$$</p>
+<p>of a few hundred parts per billion. The asymmetry was measured at SLAC (E158) and provides a determination of the weak mixing angle $\sin^2\theta_{\mathrm W}$; the first discussion is due to Zel'dovich (1959). It is the cleanest experimental reason Møller scattering is still studied, and it is the physical content of the framework's statement that the photon coupling is parity-symmetric while a left-handed coupling is not.</p>
+<h2 id="the-biquaternion-reading">The Biquaternion Reading</h2>
+<h3 id="the-amplitude-as-a-product-of-two-material-sector-currents">The amplitude as a product of two material-sector currents</h3>
+<p>The framework's minimal-coupling article writes the electromagnetic coupling of the biquaternion Dirac field through the four-potential and identifies the conserved current as the material-sector object $\tilde J\in\mathbb M_-$, with the Clifford-odd element that a pure biquaternion product does not supply. The Møller amplitude is the second-quantized version of that same structure: the two factors $\bar u(p)\gamma^\mu u(p')$ are the two electron currents $\tilde J_1^\mu$ and $\tilde J_2^\mu$ in the framework's variables, both material-sector objects, contracted by the photon propagator $1/t$ or $1/u$. The framework's Maxwell field supplies the propagator — its canonical-quantization article constructs the quantized Maxwell field and its two-point function — so the amplitude is the framework's current, twice, joined by the framework's photon. Nothing in this is a new prediction; it is the identification of the components.</p>
+<h3 id="the-relative-minus-sign-is-the-mode-algebras-antisymmetry">The relative minus sign is the mode algebra's antisymmetry</h3>
+<p>The single structural feature the framework owns here is the exchange sign. The corpus's canonical-quantization article of the Dirac field obtains <strong>Pauli exclusion as the algebraic identity</strong> $(\hat a_r^\dagger)^2=0$, together with the $\mathbb Z/2$ grading of the mode algebra by fermion parity. That identity is exactly the statement that two fermionic mode operators anticommute, and the relative minus sign between the $t$- and $u$-channel amplitudes is its momentum-space consequence: exchanging two identical external fermions costs a sign. The framework therefore does not merely transcribe the minus sign; the sign is the shadow of the graded structure the corpus establishes on the operator algebra. This is the same $\mathbb Z/2$ grading that the corpus's KMS and fermion-parity articles treat.</p>
+<h3 id="crossing-symmetry-is-charge-conjugation">Crossing symmetry is charge conjugation</h3>
+<p>The Møller and Bhabha amplitudes are related by <strong>crossing symmetry</strong>: moving an incoming electron to an outgoing positron (with reversed four-momentum) changes one process into the other. In the framework this operation is the <strong>charge conjugation</strong> real structure $\mathcal C$ on the doubled module $\Delta = S\oplus\bar S$ of the companion article <em>The Clifford Structure of the Biquaternion Algebra</em>; a particle line is replaced by an antiparticle line, and the amplitude's analytic continuation in the Mandelstam variables is the momentum-space face of the same relabelling. The crossing check reported in this article's context file — the Bhabha function minus the Møller function cancelling to numerical accuracy, and the angular identity between the two — is therefore a check of the framework's particle–antiparticle relabelling as much as of the algebra of gamma matrices. The companion Bhabha article states the correspondence from the other side.</p>
+<h3 id="what-the-framework-supplies-and-what-it-does-not">What the framework supplies and what it does not</h3>
+<p>The framework supplies the two vertex currents, the photon propagator, the Fock space in which the external states live, and the exchange sign as the antisymmetry of its mode algebra. It does <strong>not</strong> supply the numerical evaluation of the traces as a derivation from its own structure — the trace algebra is the Dirac-matrix dictionary of the parent article — nor does it supply the $Z$-exchange diagrams, which belong to the framework's electroweak research agenda rather than to its established content. The parity-violating asymmetry above is quoted as the experimental fact that motivates the left-handed coupling; the corpus's chiral-fermion article discusses the framework's treatment of handedness, and the electroweak article collects the open questions. No framework-specific prediction is claimed.</p>
+<h2 id="open-questions">Open Questions</h2>
+<ol>
+<li>
+<p><strong>The traces as algebra.</strong> Can the four Clifford traces of the spin sum be written directly as biquaternion contractions, without passing through gamma matrices — and does the $\mathbb M_-$ restriction of the currents reproduce the standard results identically?</p>
+</li>
+<li>
+<p><strong>The exchange sign from first principles.</strong> The corpus obtains Pauli exclusion on the mode algebra. Is there a corresponding statement on the <strong>classical</strong> biquaternion field (a graded-commutativity of the field's components) from which the momentum-space minus sign follows without quantizing?</p>
+</li>
+<li>
+<p><strong>Crossing and $\mathcal C$.</strong> Is the Mandelstam analytic continuation of the framework's amplitude literally the action of $\mathcal C$ on the external states, or only the same relabelling at the level of the on-shell spinors?</p>
+</li>
+<li>
+<p><strong>The weak asymmetry.</strong> The corpus's electroweak agenda lists the framework's internal $SU(2)\times U(1)$ questions; the Møller $A_{\mathrm{PV}}$ is a concrete target. Does the framework's left-handed coupling reproduce the $(1/4-\sin^2\theta_{\mathrm W})$ coefficient, or only the general form?</p>
+</li>
+<li>
+<p><strong>Loops.</strong> The corpus's Ward–Takahashi and Schwinger–Dyson articles treat the identities a loop computation must satisfy, but no loop amplitude is evaluated. Whether Møller scattering at one loop can be organised in the framework without new structure is open.</p>
+</li>
+<li>
+<p><strong>Empirical contact.</strong> The tree-level result is standard electrodynamics in the framework's variables; the parity-violating asymmetry is the one place the framework meets a measured number, and it is not a framework-specific prediction.</p>
+</li>
+</ol>
+<h2 id="summary">Summary</h2>
+<p>Møller scattering, $e^-e^-\to e^-e^-$, is the tree-level exchange of a photon between two electrons, contributing through $t$-channel and $u$-channel diagrams that combine with the relative minus sign of identical-fermion exchange. The Mandelstam variables satisfy $s+t+u=4m^2$; the spin-summed matrix element is three terms, two of them products of traces over the photon propagators and one the interference; the unpolarized cross section reduces to the Rutherford-like $(1+3\cos^2\theta)/\sin^4\theta$ law at low energy and to $(3+\cos^2\theta)^2/\sin^4\theta$ at high energy. The electroweak $Z$-exchange adds a parity-violating asymmetry of a few hundred parts per billion, measured at SLAC and used to extract the weak mixing angle.</p>
+<p>In the biquaternion framework the amplitude is the contraction of two material-sector currents — the same current the minimal-coupling article identifies — by the framework's quantized photon propagator. The two structures the framework genuinely owns are the exchange sign, which is the antisymmetry of the mode algebra established by the canonical-quantization article as $(\hat a^\dagger)^2=0$ and the $\mathbb Z/2$ grading, and crossing symmetry, which is the charge-conjugation real structure $\mathcal C$ on the doubled module. The framework does not evaluate loops, does not supply $Z$ exchange, and makes no framework-specific prediction; the parity-violating asymmetry is quoted as the experimental target that the framework's left-handed coupling must ultimately meet.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$e^-e^-\to e^-e^-$</td>
+<td>Møller scattering</td>
+</tr>
+<tr>
+<td>$p_1,p_2,p_3,p_4$</td>
+<td>Incoming and outgoing electron four-momenta</td>
+</tr>
+<tr>
+<td>$s,t,u$</td>
+<td>Mandelstam variables; $s+t+u=4m^2$</td>
+</tr>
+<tr>
+<td>$E_{\mathrm{CM}}=2E$</td>
+<td>Centre-of-momentum energy</td>
+</tr>
+<tr>
+<td>$\mathcal M_t,\mathcal M_u$</td>
+<td>$t$- and $u$-channel amplitudes</td>
+</tr>
+<tr>
+<td>$\mathcal M = \mathcal M_t-\mathcal M_u$</td>
+<td>Total amplitude with the exchange sign</td>
+</tr>
+<tr>
+<td>$\overline{|\mathcal M|^2}$</td>
+<td>Spin-averaged squared matrix element</td>
+</tr>
+<tr>
+<td>$\alpha = e^2/4\pi$</td>
+<td>Fine-structure constant</td>
+</tr>
+<tr>
+<td>$A_{\mathrm{PV}}$</td>
+<td>Parity-violating asymmetry; $\theta_{\mathrm W}$ the weak mixing angle</td>
+</tr>
+<tr>
+<td>$G_{\mathrm F}$</td>
+<td>Fermi constant</td>
+</tr>
+<tr>
+<td>$\tilde J\in\mathbb M_-$</td>
+<td>Framework's conserved material-sector current</td>
+</tr>
+<tr>
+<td>$\mathcal C$</td>
+<td>Charge-conjugation real structure on $\Delta=S\oplus\bar S$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>C. Møller, "Zur Theorie des Durchgangs schneller Elektronen durch Materie," <em>Annalen der Physik</em> <strong>406</strong> (1932) 531–585, for the original derivation.</li>
+<li>J. D. Bjorken and S. D. Drell, <em>Relativistic Quantum Mechanics</em> (McGraw-Hill, 1964), for the trace technology and the electron–electron cross section.</li>
+<li>M. E. Peskin and D. V. Schroeder, <em>An Introduction to Quantum Field Theory</em> (Addison-Wesley, 1995), for the tree-level amplitude, the Mandelstam variables and the cross section.</li>
+<li>C. Itzykson and J.-B. Zuber, <em>Quantum Field Theory</em> (McGraw-Hill, 1980), for the trace identities and the identical-fermion exchange sign.</li>
+<li>P. L. Anthony <em>et al.</em>, "Precision measurement of the weak mixing angle in Møller scattering," <em>Physical Review Letters</em> <strong>95</strong> (2005) 081601, for the SLAC E158 measurement of the parity-violating asymmetry.</li>
+<li>Ya. B. Zel'dovich, "Electron and positron scattering and the weak interaction" (1959), for the first discussion of the parity-violating asymmetry in Møller scattering.</li>
+<li>The companion articles of this series: <em>Bhabha Scattering in Biquaternionic Form</em>, <em>The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism</em>, <em>Canonical Quantization of the Biquaternion Dirac Field</em>, <em>The Feynman Propagator in Biquaternionic Form</em>, <em>Canonical Quantization of the Biquaternion Maxwell Field</em>, <em>Fock Space and Creation/Annihilation Operators in Biquaternionic Form</em>, and <em>Chiral Fermions in the Biquaternion Framework</em>.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

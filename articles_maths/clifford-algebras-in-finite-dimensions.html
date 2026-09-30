@@ -360,6 +360,135 @@ $$</p>
 </ul>
 <p>The classification of the rank-one cases, and the structure of the Clifford algebras over specific rings, is not covered here.</p>
 <hr />
+<h1 id="part-vii-the-square-root-of-a-multivector-in-the-euclidean-algebra-cl_30">Part VII: The Square Root of a Multivector in the Euclidean Algebra (Cl_{3,0})</h1>
+<h2 id="28-the-problem-and-the-central-reduction">28. The Problem and the Central Reduction</h2>
+<p>Fix the Euclidean Clifford algebra (Cl_{3,0}), with generators (e_1,e_2,e_3), (e_k^2=+1) for (k=1,2,3), and volume element (\omega=e_1e_2e_3). The volume element is central because (n=3) is odd (§15), and its square is (\omega^2=-1) (§15); it therefore supplies a central imaginary unit inside the algebra, and ({1,\omega}) spans a copy of the complex numbers in the centre (§16).</p>
+<p>The algebra is eight-dimensional over (R=\mathbb{R}), so every element has a unique expression</p>
+<p>$$
+A = a + b\,\omega,
+$$</p>
+<p>where (a) and (b) are <strong>paravectors</strong> of the underlying three-dimensional space, that is, sums of a scalar and a vector (§14). Because (\omega) is central with (\omega^2=-1), the product rule is</p>
+<p>$$
+(a+b\omega)(c+d\omega) = (ac-bd) + (ad+bc)\,\omega,
+$$</p>
+<p>and therefore the square of (A) is</p>
+<p>$$
+A^2 = \left(a^2-b^2\right) + (ab+ba)\,\omega.
+$$</p>
+<p>The <strong>square-root problem</strong> is: given (B\in Cl_{3,0}), find every (A) with (A^2=B). The reduction to the paravector decomposition is what makes the problem two-dimensional in appearance while remaining eight-dimensional in content, and it is the route by which the square roots of a quaternion or a complex quaternion are obtained once that algebra is identified with (Cl_{3,0}).</p>
+<h2 id="29-the-coupling-equations">29. The Coupling Equations</h2>
+<p>Write the two paravectors in scalar–vector form,</p>
+<p>$$
+a = s + v, \qquad b = S + V, \qquad s,S\in\mathbb{R}, \qquad v = v_1e_1+v_2e_2+v_3e_3,\quad V = V_1e_1+V_2e_2+V_3e_3 .
+$$</p>
+<p>A paravector squares as (a^2 = s^2 + 2sv + Q(v)), where (Q(v) = v_1^2+v_2^2+v_3^2) is the quadratic form, and a product of two paravectors is</p>
+<p>$$
+ab+ba = 2\left(sS + B(v,V)\right) + 2\left(sV+Sv\right),
+$$</p>
+<p>where (B(v,V) = v_1V_1+v_2V_2+v_3V_3) is the polar form of (Q). Equating (A^2=(a^2-b^2)+(ab+ba)\omega) to a general element</p>
+<p>$$
+B = b_0 + b_1e_1+b_2e_2+b_3e_3 + b_{12}e_{12}+b_{13}e_{13}+b_{23}e_{23} + b_{123}\,\omega
+$$</p>
+<p>gives four equations, one for each grade. The vector and bivector parts are linear in the unknowns and couple (v) to (V); the scalar and trivector parts are the scalar equations. To write them compactly, read the bivector coefficients through the duality (§<em>Duality and the Hodge Star</em>, §<em>The Volume Element</em>): put</p>
+<p>$$
+c_1 = b_{23}, \qquad c_2 = -b_{13}, \qquad c_3 = b_{12},
+$$</p>
+<p>so that the bivector part of (B) is (\omega\,c) with (c=c_1e_1+c_2e_2+c_3e_3). Then the graded equations are</p>
+<p>$$
+s\,v_k - S\,V_k = \tfrac12 b_k, \qquad S\,v_k + s\,V_k = \tfrac12 c_k \qquad (k=1,2,3),
+$$</p>
+<p>together with</p>
+<p>$$
+s^2 + Q(v) - S^2 - Q(V) = b_0, \qquad 2sS + 2B(v,V) = b_{123}.
+$$</p>
+<p>The first pair is a (2\times2) linear system for ((v_k,V_k)) whose determinant is (s^2+S^2); writing</p>
+<p>$$
+\sigma = s^2+S^2
+$$</p>
+<p>and solving gives the vectors explicitly in terms of the scalars and the data:</p>
+<p>$$
+v_k = \frac{s\,b_k + S\,c_k}{2\sigma}, \qquad V_k = \frac{s\,c_k - S\,b_k}{2\sigma}, \qquad (k=1,2,3),
+$$</p>
+<p>valid whenever (\sigma\neq0). Substituting these into the two scalar equations and using the two combinations</p>
+<p>$$
+P = \sum_{k=1}^{3} b_kc_k = b_1b_{23}-b_2b_{13}+b_3b_{12}, \qquad Q = \sum_{k=1}^{3}\left(b_k^2-c_k^2\right) = b_1^2+b_2^2+b_3^2-b_{12}^2-b_{13}^2-b_{23}^2
+$$</p>
+<p>turns them into two equations for the pair ((\delta,\tau)) with</p>
+<p>$$
+\delta = s^2-S^2, \qquad \tau = 2sS, \qquad \sigma^2 = \delta^2+\tau^2 .
+$$</p>
+<p>They are the two components of one complex equation.</p>
+<p><strong>Lemma.</strong> Let (\beta = b_0 - i\,b_{123}) and (\gamma = Q - 2iP), and let (z = \delta - i\tau). Then the two scalar equations are equivalent to</p>
+<p>$$
+4z^2 - 4\beta z + \gamma = 0 .
+$$</p>
+<p><strong>Proof.</strong> With (\sigma = s^2+S^2) one has (s^2=( \sigma+\delta)/2) and (S^2=(\sigma-\delta)/2), and the identities</p>
+<p>$$
+Q(v)-Q(V) = \frac{\delta Q + 2\tau P}{4\sigma^2}, \qquad 2B(v,V) = \frac{2\delta P - \tau Q}{4\sigma^2}
+$$</p>
+<p>follow from the solved (v_k,V_k) by expanding ((s b_k+S c_k)^2-(s c_k-S b_k)^2) and ((s b_k+S c_k)(s c_k-S b_k)). The two scalar equations therefore read</p>
+<p>$$
+\delta + \frac{\delta Q + 2\tau P}{4\sigma^2} = b_0, \qquad \tau + \frac{2\delta P - \tau Q}{4\sigma^2} = b_{123}.
+$$</p>
+<p>Multiplying the first by (\delta) and the second by (\tau) and adding gives the real part, and multiplying the first by (\tau) and the second by (\delta) and subtracting gives the imaginary part, of the single equation in (\bar z = \delta+i\tau),</p>
+<p>$$
+4|\bar z|^4 + \left(Q-2iP\right)\bar z^2 = 4\left(b_0-i b_{123}\right)|\bar z|^2 \bar z ,
+$$</p>
+<p>after using (\delta^2-\tau^2 = \mathrm{Re}\,\bar z^2), (2\delta\tau = \mathrm{Im}\,\bar z^2) and (|\bar z|^2=\sigma^2). Dividing by (\bar z^2|\bar z|^2) — legitimate because (\bar z\neq0) when (\sigma\neq0) — and putting (\gamma=Q-2iP), (\beta=b_0-ib_{123}), yields (4\bar z^2 - 4\beta\bar z + \gamma = 0). Taking the conjugate, and renaming, gives the stated quadratic in (z). (\square)</p>
+<p>The discriminant of (4z^2-4\beta z+\gamma=0) is (16(\beta^2-\gamma)), and</p>
+<p>$$
+\beta^2 - \gamma = \left(b_0^2-b_{123}^2-Q\right) + 2i\left(P - b_0b_{123}\right) =: b_S + i\,b_I .
+$$</p>
+<p>The real and imaginary parts (b_S), (b_I) are the two scalars that carry the existence of a root, and the modulus of (\beta^2-\gamma) is</p>
+<p>$$
+|\beta^2-\gamma|^2 = b_S^2 + b_I^2 =: \Delta .
+$$</p>
+<h2 id="30-the-isolated-roots">30. The Isolated Roots</h2>
+<p><strong>Theorem.</strong> A multivector (B) with (b_1,b_2,b_3,b_{12},b_{13},b_{23}) not all zero has an isolated square root in (Cl_{3,0}) for each complex number (z) satisfying (4z^2-4\beta z+\gamma=0) with (z\neq0), namely</p>
+<p>$$
+z = \frac{\beta \pm \sqrt{b_S + i\,b_I}}{2},
+$$</p>
+<p>(\sqrt{b_S+ib_I}) any square root of the complex number (b_S+ib_I). For each such (z), with (\delta=\mathrm{Re}\,z), (\tau=-\mathrm{Im}\,z), (\sigma=|z|), the two scalars are</p>
+<p>$$
+s = \pm\sqrt{\frac{\sigma+\delta}{2}}, \qquad S = \text{the choice of } \pm\sqrt{\frac{\sigma-\delta}{2}} \text{ with } 2sS=\tau,
+$$</p>
+<p>and the vectors are (v_k=(s b_k+S c_k)/(2\sigma)), (V_k=(s c_k-S b_k)/(2\sigma)). The two signs of (s) give the two roots (\pm A), so that a nonzero (z) contributes a pair.</p>
+<p><strong>Proof.</strong> (\sigma=|z|=s^2+S^2&gt;0) for (z\neq0), so the linear system is solvable and (v,V) are given by the formulas of §29. The scalars are recovered from (z) by (s^2=(\sigma+\delta)/2) and (S^2=(\sigma-\delta)/2), and the relative sign of (s) and (S) is fixed by (2sS=\tau); changing both signs gives (-A). The lemma of §29 shows that the quadratic is exactly the remaining pair of graded equations, so every solution of the quadratic yields a root and only those. (\square)</p>
+<p>Because the quadratic is of degree two, the count of isolated roots is read off its discriminant:</p>
+<ul>
+<li>if (b_S+ib_I\neq0), the two values (z=(\beta\pm\rho)/2), (\rho^2=b_S+ib_I), are distinct; a value with (|z|\neq0) contributes two roots, a value with (z=0) contributes none. The generic count is <strong>four</strong> roots, dropping to <strong>two</strong> when one of the two values of (z) vanishes;</li>
+<li>if (b_S+ib_I=0), the two values coincide and there are <strong>two</strong> roots (or none, when the common value (\beta/2) also vanishes), so the count drops.</li>
+</ul>
+<p>The vanishing of one value of (z) is exactly the case (b_S\ge0) and (b_I=0), which is the degeneracy that opens the continuous family of §31.</p>
+<h2 id="31-the-continuum-of-roots">31. The Continuum of Roots</h2>
+<p>The reduction of §29 assumed (\sigma=s^2+S^2\neq0). The complementary case is genuine and produces a family rather than isolated points.</p>
+<p><strong>Theorem.</strong> If and only if (b_1=b_2=b_3=b_{12}=b_{13}=b_{23}=0), that is, if and only if (B=b_0+b_{123}\omega) is a complex scalar in the subalgebra spanned by (1) and (\omega), the roots of (B) include the whole four-parameter family</p>
+<p>$$
+A = v + V\omega, \qquad Q(v)-Q(V) = b_0, \qquad 2B(v,V) = b_{123},
+$$</p>
+<p>with (v) and (V) real vectors subject only to those two equations.</p>
+<p><strong>Proof.</strong> A root with (s=S=0) has the form (A=v+V\omega), and (A^2=(Q(v)-Q(V))+2B(v,V)\omega) by the product rule of §28. Conversely the graded equations with (s=S=0) force (b_k=c_k=0) for every (k). The two displayed equations are two affine equations in the six components of ((v,V)), so their solution set has real dimension four; it is nonempty over (\mathbb{R}) because the pair ((Q(v),B(v,V))) takes all prescribed values. (\square)</p>
+<p>The family sits in the four cases where the data are a complex scalar. When (b_0b_{123}\neq0) the two values of (z) are distinct and nonzero, so the four isolated roots of §30 coexist with the family; when one value of (z) vanishes the family is present and two isolated roots remain; when both vanish the family is the whole root set. The root of (0) is the extreme instance: (b_0=b_{123}=0), and the roots of (0) are the nonzero elements of the family, the null elements (v+V\omega) with (Q(v)=Q(V)) and (B(v,V)=0) — the isotropic cone of the form.</p>
+<h2 id="32-the-classification">32. The Classification</h2>
+<p>Collecting §30 and §31, every (B\in Cl_{3,0}) falls into exactly one of the following cases.</p>
+<ul>
+<li><strong>No root.</strong> (b_S+ib_I=0), (\beta=0), and (B) not a complex scalar: for instance (B=e_3+e_{23}). Then the quadratic has only the value (z=0), which the linear system cannot support. A necessary condition is (b_0=b_{123}=0) and (b_S=b_I=0).</li>
+<li><strong>Two roots.</strong> (b_S+ib_I=0) and (\beta\neq0), or one value of (z) vanishes: the quadratic supplies a single nonzero complex number (z), hence the pair (\pm A).</li>
+<li><strong>Four roots.</strong> (b_S+ib_I\neq0) and both values of (z) nonzero: two pairs (\pm A). This is the generic case.</li>
+<li><strong>A continuum, alone or alongside isolated roots.</strong> (B=b_0+b_{123}\omega): the four-parameter family of §31, together with the isolated roots supplied by the values of (z).</li>
+</ul>
+<p>The three central values of the algebra illustrate the trichotomy: (B=e_0) has the two roots (\pm e_0) and a family; (B=-e_0) has the two roots (\pm\omega) and a family; (B=0) has the family alone, its nonzero members the null elements.</p>
+<h2 id="33-the-reading-of-the-data">33. The Reading of the Data</h2>
+<p>The two data (b_0) and (b_{123}) have a direct reading in terms of the unknown root (A=v+V\omega) when it is a complex scalar, that is, on the continuum of §31: (b_0 = Q(v)-Q(V)) is the difference of the squared lengths of the two vectors, and (b_{123}=2B(v,V)) controls their mutual angle. So the scalar coefficient fixes a pair of concentric spheres on which (v) and (V) must lie, and the pseudoscalar coefficient fixes the angle between them; this is the geometric reading of the square-root problem given by Acus and Dargys, whose Clifford-layer algorithm is the closed form of §30–§31 written in the variables (b_S,b_I,\Delta).</p>
+<p>For a general element the same two numbers are the real and imaginary parts of the complex number (\beta^2-\gamma) of §29, and the existence of roots is decided by its vanishing: (b_S+ib_I=0) is the boundary between the four roots and the two, and (\beta=0) on that boundary is the frontier with the rootless case.</p>
+<h2 id="summary_1">Summary</h2>
+<p><strong>The square-root problem in (Cl_{3,0})</strong> reduces by the central volume element (\omega=e_1e_2e_3) ((\omega^2=-1)) to the paravector decomposition (A=a+b\omega=s+v+(S+V)\omega), with (A^2=(a^2-b^2)+(ab+ba)\omega).</p>
+<p><strong>The graded equations</strong> are the linear pair (s v_k-S V_k=b_k/2), (S v_k+s V_k=c_k/2) with (c=(b_{23},-b_{13},b_{12})), which solve for the vectors in terms of the scalars, and the two scalar equations, which combine into the single complex quadratic (4z^2-4\beta z+\gamma=0) for (z=\delta-i\tau), (\delta=s^2-S^2), (\tau=2sS), with (\beta=b_0-ib_{123}), (\gamma=Q-2iP) and (P=\sum b_kc_k), (Q=\sum(b_k^2-c_k^2)).</p>
+<p><strong>The existence scalars</strong> are the real and imaginary parts of (\beta^2-\gamma=b_S+ib_I), with (b_S=b_0^2-b_{123}^2-Q) and (b_I=2(P-b_0b_{123})); their squared modulus is (\Delta=b_S^2+b_I^2).</p>
+<p><strong>The isolated roots</strong> come from the two values (z=(\beta\pm\sqrt{b_S+ib_I})/2). A nonzero value gives a pair (\pm A) through (s=\pm\sqrt{(\sigma+\delta)/2}), (S) signed by (2sS=\tau), (\sigma=|z|), and the vector formulas. The generic count is four roots, falling to two when one value of (z) vanishes or when the two values coincide, and to none when both vanish at (\beta=0).</p>
+<p><strong>The continuum</strong> occurs exactly when (B=b_0+b_{123}\omega) is a complex scalar: the roots then include the four-parameter family (v+V\omega) with (Q(v)-Q(V)=b_0), (2B(v,V)=b_{123}), alongside the isolated roots. The roots of (0) are the null elements of this family.</p>
+<p><strong>The reading</strong> of the two data is (b_0=Q(v)-Q(V)) and (b_{123}=2B(v,V)) on the continuum: a difference of squared lengths and an angle. The closed form is due to Acus and Dargys; the quadratic of §29 is the form in which this article states and proves it.</p>
+<hr />
 <h2 id="further-reading">Further Reading</h2>
 <ul>
 <li>I. R. Porteous, <em>Clifford Algebras and the Classical Groups</em> (Cambridge University Press, 1995).</li>
@@ -367,6 +496,7 @@ $$</p>
 <li>H. Blaine Lawson and Marie-Louise Michelsohn, <em>Spin Geometry</em> (Princeton University Press, 1989).</li>
 <li>Max-Albert Knus, <em>Quadratic and Hermitian Forms over Rings</em> (Springer, 1991).</li>
 <li>T. Y. Lam, <em>Introduction to Quadratic Forms over Fields</em> (AMS, 2005).</li>
+<li>A. Acus and A. Dargys, <em>Square roots of complexified quaternions</em>, arXiv:2601.08391 (2026).</li>
 </ul>
       </div>
     </main>

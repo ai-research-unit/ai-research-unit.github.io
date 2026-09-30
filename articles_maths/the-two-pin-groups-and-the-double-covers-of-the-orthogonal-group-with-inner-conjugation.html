@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Two Pin Groups and the Double Covers of the Orthogonal Group with Inner Conjugation — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-two-pin-groups-and-the-double-covers-of-the-orthogonal-group-with-inner-conjugation"><strong>The Two Pin Groups and the Double Covers of the Orthogonal Group with Inner Conjugation</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>Inside the units of the Clifford algebra of a non-degenerate quadratic space sit two groups that act on the space by isometries: the <strong>Pin group</strong>, which double covers the orthogonal group $O(V,q)$, and the <strong>Spin group</strong>, its even part, which double covers the special orthogonal group $SO(V,q)$. The covering is two-to-one, and the two elements over a given isometry are $x$ and $-x$. The non-trivial element of the kernel is written $-1$, and it must not be confused with the reflection through the origin of the orthogonal group, written $-I$; the first is an element of the Clifford algebra with $(-1)^2=1$, the second is the isometry $v\mapsto -v$, and they live in different groups.</p>
+<p>The construction of the Pin group hides a choice, and this article isolates it. The Spin group is determined: it is the connected group of determinant one, the covering $\mathrm{Spin}(V,q)\to SO(V,q)$ is the non-trivial one, and its two realisations for a definite form of either sign are isomorphic. The Pin group is not determined. It has two components, the identity component is Spin, the remaining component lies over the reflections, and the group structure on that component is fixed only up to the centre, which leaves exactly one sign. The two groups obtained are the <strong>two Pin groups</strong> of the space, written $\mathrm{Pin}_+$ and $\mathrm{Pin}_-$, and they are already different in dimension one: $\mathrm{Pin}_+(1)\cong C_2\times C_2$ and $\mathrm{Pin}_-(1)\cong C_4$.</p>
+<p>The article then treats the choice as a pair of central extensions, with the conjugacy of the reflections that makes the sign consistent; the realisation of the two groups in the two Clifford algebras $\mathrm{Cl}(V,q)$ and $\mathrm{Cl}(V,-q)$; the centre, computed from the volume element; the indefinite case, where the reflections split into two classes and the double covers proliferate; the low-dimensional groups, where the two are dihedral and dicyclic; the projective orthogonal square that mirrors the covering; and the name itself.</p>
+<p>The Clifford group, its norm $N(x)=x\bar x$, the exact sequences, Cartan–Dieudonné, the reflection length, the low-dimensional Spin groups and the indefinite and degenerate cases are <em>The Clifford, Pin and Spin Groups with Signed Inner Conjugation</em>, and nothing owned there is reproved. The operator that carries the reflection is the signed inner conjugation $\mathrm{Ad}^{\alpha}_x$ of <em>Two-Sided Operators on a Clifford Algebra</em>. The Hermitian formulation, in which a dagger replaces the inverse and the unitary slice reconstructs one of the two Pin groups, is <em>The Clifford, Pin and Spin Groups with Signed Hermitian Adjoint</em>. The failure of the covering over a general field and the spinor norm are <em>The Spinor Norm and the Structure of the Orthogonal Group with Inner Conjugation</em>; the reflexive dictionary with the projective quotients is <em>List of Projective Geometric Groups</em>; the catalogued entries are <em>List of Clifford Algebras and Spin Groups</em>.</p>
+<p><strong>Conventions.</strong> The space $V$ is real of dimension $n$, $q$ is non-degenerate, and $\mathrm{Cl}(V,q)$ is its Clifford algebra with $v^2=q(v)\cdot1$. The signature form is $q=\operatorname{diag}(+1^p,-1^q)$ and its Clifford algebra is $\mathrm{Cl}_{p,q}$, of $p$ generators of square $+1$ and $q$ of square $-1$; the group denoted $\mathrm{Pin}(p,q)$ is the Pin group of the algebra $\mathrm{Cl}_{p,q}$. A <strong>unit vector</strong> is a vector $u$ with $q(u)=\pm1$. The reflection is $\rho_u(v)=v-2g(v,u)q(u)^{-1}u$, the volume element is $\omega=e_1\cdots e_n$, and $C_m$ is the cyclic group of order $m$. The definite quadratic spaces of the corpus's dictionary are the algebras $\mathrm{Cl}_{0,n}$, so the definite groups met there are the family $\mathrm{Pin}_-(n)=\mathrm{Pin}(0,n)$.</p>
+<h2 id="the-two-central-extensions">The Two Central Extensions</h2>
+<p>The Pin group is defined by generation rather than by a norm condition, and this is what makes the choice visible.</p>
+<p><strong>Definition.</strong> The <strong>Pin group</strong> $\mathrm{Pin}(V,q)$ is the subgroup of the units of $\mathrm{Cl}(V,q)$ generated by the vectors of norm $\pm1$,
+$$
+\mathrm{Pin}(V,q)=\bigl\langle\, u\in V : q(u)=\pm1 \,\bigr\rangle ,
+$$
+and the <strong>Spin group</strong> is its even part, $\mathrm{Spin}(V,q)=\mathrm{Pin}(V,q)\cap\mathrm{Cl}^0(V,q)$. Every element of $\mathrm{Pin}(V,q)$ is a product $u_1\cdots u_k$ of unit vectors, and by multiplicativity of the Clifford norm it satisfies $N(x)=\prod_i(-q(u_i))=\pm1$.</p>
+<p>Both groups map onto the orthogonal group by the signed inner conjugation $\mathrm{Ad}^{\alpha}_x(v)=\alpha(x)vx^{-1}$, and over $\mathbb{R}$ this map is surjective in every signature: a reflection depends only on the line $\mathbb{R}u$, and a generator of that line can always be rescaled to have $q=\pm1$, since the choice $\lambda^2=\pm1/q(u)$ has a positive solution for the sign of $q(u)$. The kernel on $\mathrm{Pin}$ is $\{\pm1\}$, and the two-to-one identification is $x\sim-x$.</p>
+<p><strong>Proposition (one sign fixes the group law).</strong> Let $G$ be a group with a surjective homomorphism $G\to O(V,q)$ and kernel $\{\pm1\}$, whose restriction to the identity component is the spin covering $\mathrm{Spin}(V,q)\to SO(V,q)$. Choose a reflection $r\in O(V,q)$ and a preimage $\tilde r\in G$, and put $z=\tilde r^{2}$. Then $z\in\{\pm1\}$, the non-identity component of $G$ is the coset $\mathrm{Spin}(V,q)\cdot\tilde r$, and for $s,t\in\mathrm{Spin}(V,q)$ the product in that coset is
+$$
+(s\tilde r)(t\tilde r)=s\,(\tilde r\,t\,\tilde r^{-1})\,z .
+$$
+The automorphism $t\mapsto\tilde r\,t\,\tilde r^{-1}$ of $\mathrm{Spin}(V,q)$ is the unique lift of conjugation by $r$ and is independent of the choice of $\tilde r$, since the other lift is $-\tilde r$ and $-\tilde r\,t\,(-\tilde r)^{-1}=\tilde r\,t\,\tilde r^{-1}$. Hence the group law of $G$ is determined by the element $z\in\{\pm1\}$, and there are at most two such groups.</p>
+<p><em>Proof.</em> The element $\tilde r$ maps to $r$, so $\tilde r^{2}$ maps to $r^{2}=1$, hence lies in the kernel $\{\pm1\}$. The preimage of the component $SO(V,q)\cdot r$ is the coset $\mathrm{Spin}(V,q)\cdot\tilde r$, because the preimage of $SO(V,q)$ is $\mathrm{Spin}(V,q)$ itself. The product formula is associativity read in the coset: $s\tilde r\,t\tilde r=s(\tilde r t\tilde r^{-1})\tilde r^{2}=s(\tilde r t\tilde r^{-1})z$, and $\tilde rt\tilde r^{-1}$ lies in $\mathrm{Spin}(V,q)$ since it maps to $rtr^{-1}\in SO(V,q)$. The two lifts of a given element of the identity component differing by the central element $-1$, the conjugation automorphism is the same for both. ∎</p>
+<p>The proposition says that once the Spin group and the reflection action are fixed, the only freedom is the single sign $z$. The obstruction to choosing $z$ uniformly is that different reflections might force different values, and the next statement identifies when this happens.</p>
+<p><strong>Proposition (conjugate reflections carry the same sign).</strong> If $r'=\rho\,r\,\rho^{-1}$ with $\rho\in SO(V,q)$, and $\tilde\rho\in\mathrm{Spin}(V,q)$ is a lift of $\rho$, then $\tilde\rho\,\tilde r\,\tilde\rho^{-1}$ is a preimage of $r'$ and
+$$
+(\tilde\rho\,\tilde r\,\tilde\rho^{-1})^{2}=\tilde\rho\,\tilde r^{2}\,\tilde\rho^{-1}=z .
+$$
+Hence the sign is constant on the SO-conjugacy classes of reflections.</p>
+<p><em>Proof.</em> The element $\tilde\rho\tilde r\tilde\rho^{-1}$ maps to $\rho r\rho^{-1}=r'$. The square computed is $\tilde\rho\tilde r\tilde\rho^{-1}\tilde\rho\tilde r\tilde\rho^{-1}=\tilde\rho\tilde r^{2}\tilde\rho^{-1}$, equal to $\tilde\rho z\tilde\rho^{-1}=z$ because $z$ is central. ∎</p>
+<p><strong>Proposition (the reflections of a definite form are one class).</strong> If $q$ is definite then $O(V,q)$ acts transitively on the set of reflections, and consequently so does $SO(V,q)$.</p>
+<p><em>Proof.</em> A reflection has a normal vector, which for a definite form can be normalised to a unit vector by Gram–Schmidt; the compact group $O(V,q)$ acts transitively on the unit sphere, and transporting a reflection by $g\in O(V,q)$ gives $\rho_{gu}$. So the reflections form one $O$-class. If $r'=g\,r\,g^{-1}$, then also $r'=(g r)\,r\,(g r)^{-1}$, because $r^{2}=1$ and $r^{-1}=r$, and $g r$ has determinant $-\det g$. So a conjugator of either determinant exists whenever one does, and the single $O$-class is a single $SO$-class. ∎</p>
+<p>The two propositions together give the exact count in the definite case: one class of reflections, one sign, at most two groups. The Clifford algebras show that both signs occur.</p>
+<p><strong>Theorem (the two Pin groups).</strong> Let $q$ be definite and let $\mathrm{Pin}_+(V,q)=\mathrm{Pin}(V,q)\subset\mathrm{Cl}(V,q)$ and $\mathrm{Pin}_-(V,q)=\mathrm{Pin}(V,-q)\subset\mathrm{Cl}(V,-q)$ be the Pin groups of the form and of its negative. Then both map onto $O(V,q)$ with kernel $\{\pm1\}$, they realise the two group laws of the proposition, and the preimage of a reflection squares to $+1$ in $\mathrm{Pin}_+$ and to $-1$ in $\mathrm{Pin}_-$.</p>
+<p><em>Proof.</em> The orthogonal group is unchanged, $O(V,q)=O(V,-q)$, because an operator preserves a form exactly when it preserves its negative. The generating sets agree: a vector with $q(u)=\pm1$ has $(-q)(u)=\mp1$, so the vectors of norm $\pm1$ are the same set for $q$ and for $-q$; but the square differs, $u^{2}=q(u)\cdot1$ in $\mathrm{Cl}(V,q)$ and $u^{2}=(-q)(u)\cdot1$ in $\mathrm{Cl}(V,-q)$. Choose the reflection $\rho_u$ and its preimage $u$ with $q(u)=1$. Then $\tilde r^{2}=u^{2}=1$ in $\mathrm{Pin}_+$ and $u^{2}=-1$ in $\mathrm{Pin}_-$, so the two groups carry the two values of $z$. The sequences are exact by the theorem of <em>The Clifford, Pin and Spin Groups with Signed Inner Conjugation</em>, transported to the two algebras. ∎</p>
+<p><strong>Corollary (the two do not agree).</strong> $\mathrm{Pin}_+(n)$ and $\mathrm{Pin}_-(n)$ are not isomorphic in general, and the smallest witnesses are
+$$
+\mathrm{Pin}_+(1)\cong C_2\times C_2,\qquad \mathrm{Pin}_-(1)\cong C_4 ,
+$$
+of which the first has three elements of order two and the second a unique one.</p>
+<p>The concrete meaning of the two signs is a statement about the subgroup generated by a single reflection. If $r$ is a reflection and $\tilde r$ its preimage, then $(\tilde r)^{2}=z$: in $\mathrm{Pin}_+$ the element $\tilde r$ has order two and the preimage of $\{1,r\}$ is $C_2\times C_2$, so applying the reflection twice returns the identity; in $\mathrm{Pin}_-$ the element $\tilde r$ has order four and the preimage of $\{1,r\}$ is $C_4$, so applying the reflection twice gives the non-trivial element of the spin kernel, the "rotation by $2\pi$".</p>
+<h2 id="the-clifford-realisation-in-the-two-signatures">The Clifford Realisation in the Two Signatures</h2>
+<p>For the standard signatures the two groups take the names used throughout the corpus.</p>
+<p><strong>Theorem (the standard forms).</strong> With the form of $p$ positive and $q$ negative squares,
+$$
+\mathrm{Pin}_+(n)=\mathrm{Pin}(n,0),\qquad \mathrm{Pin}_-(n)=\mathrm{Pin}(0,n),
+$$
+and both map onto $O(n)=O(n,0)=O(0,n)$. By contrast,
+$$
+\mathrm{Spin}(n,0)\cong\mathrm{Spin}(0,n),
+$$
+and this common group is the unique non-trivial double cover of $SO(n)$, which is the universal cover for $n\ge3$.</p>
+<p><em>Proof.</em> The notations are those of the definitions: $\mathrm{Pin}(n,0)$ is the Pin group of $\mathrm{Cl}_{n,0}$, whose generators have square $+1$, so its reflection preimages square to $+1$; $\mathrm{Pin}(0,n)$ is that of $\mathrm{Cl}_{0,n}$, whose generators have square $-1$. The orthogonal groups agree because $\operatorname{diag}(+1^p,-1^q)$ and $\operatorname{diag}(+1^q,-1^p)$ are exchanged by a permutation of coordinates, and $O(V,q)=O(V,-q)$ as subgroups of $\mathrm{GL}(V)$. For the Spin groups: the even parts satisfy $\mathrm{Cl}^0_{n,0}\cong\mathrm{Cl}_{0,n-1}\cong\mathrm{Cl}^0_{0,n}$, and the norm-one part of either is the connected double cover of $SO(n)$; a connected double cover of $SO(n)$ is unique for $n\ge3$, where $\pi_1(SO(n))=C_2$, and coincides with the universal cover. ∎</p>
+<p>The contrast is the whole content of the section: the covering group $\mathrm{Spin}$ does not see the sign of the form, while the covering group $\mathrm{Pin}$ does. The reason is that the even part of the Clifford algebra is the same algebra for the two signatures, whereas the generating vectors have squares of opposite signs.</p>
+<p><strong>Warning (the finite binary polyhedral groups are not Pin or Spin).</strong> The binary tetrahedral, octahedral and icosahedral groups of orders $24$, $48$ and $120$ are finite subgroups of $\mathrm{Spin}(3)\cong Sp(1)$; they are not $\mathrm{Spin}(3)$ and not $\mathrm{Pin}(3)$, which are positive-dimensional groups. The finite groups arise as the lifts of the finite rotation groups of the Platonic solids, and are recorded in <em>Reflection Groups and Clifford Algebras with Signed Inner Conjugation</em> and <em>Biquaternion Orders and Finite Groups of Units</em>.</p>
+<h2 id="the-centre">The Centre</h2>
+<p>The centre of a Pin group is the centre of the Clifford algebra intersected with it, and in odd dimension the volume element supplies the extra central elements.</p>
+<p><strong>Lemma (the centre meets the algebra).</strong> $\mathrm{Z}(\mathrm{Pin}(V,q))=\mathrm{Z}(\mathrm{Cl}(V,q))\cap\mathrm{Pin}(V,q)$.</p>
+<p><em>Proof.</em> The Pin group contains, for every non-isotropic vector $v$, the unit vector obtained by rescaling it, since $\lambda v$ with $\lambda^{2}q(v)=\pm1$ is a unit vector; these span $V$, which generates the algebra. An element central in the Pin group therefore commutes with every vector and so with the whole algebra, and the reverse inclusion is immediate. ∎</p>
+<p>For $n$ even the centre of the Clifford algebra is $F$, so the centre of either Pin group is $F\cap\mathrm{Pin}=\{\pm1\}=C_2$: the non-zero scalars in the Pin group are the $\lambda$ with $\lambda^{2}=\pm1$, that is $\lambda=\pm1$.</p>
+<p>For $n$ odd the centre of the Clifford algebra is $F\oplus F\omega$, and the volume element is the interesting element. Its square and its norm are
+$$
+\omega^{2}=(-1)^{n(n-1)/2}\prod_i q(e_i),\qquad N(\omega)=\omega\bar\omega=(-1)^{n}\prod_i q(e_i),
+$$
+so $N(\omega)=\pm1$ and $\omega\in\mathrm{Pin}(V,q)$; it is central, and $\omega^{2}=\pm1$ makes its order two or four. The centre of $\mathrm{Pin}(V,q)$ is then $\{\pm1,\pm\omega\}$, of order four, and its isomorphism type is read from $\omega^{2}$: it is $C_2\times C_2$ when $\omega^{2}=+1$ and $C_4$ when $\omega^{2}=-1$. Since $\prod_iq(e_i)=(-1)^q$ in $\mathrm{Cl}_{p,q}$, the two definite families and the indefinite family run as follows.</p>
+<p>For the compact definite groups the centre depends on $n$ modulo four.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$n$</th>
+<th>$\mathrm{Z}(\mathrm{Pin}_+(n))$</th>
+<th>$\mathrm{Z}(\mathrm{Pin}_-(n))$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$2k$</td>
+<td>$C_2$</td>
+<td>$C_2$</td>
+</tr>
+<tr>
+<td>$4k+1$</td>
+<td>$C_2\times C_2$</td>
+<td>$C_4$</td>
+</tr>
+<tr>
+<td>$4k+3$</td>
+<td>$C_4$</td>
+<td>$C_2\times C_2$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The verifications in low dimension are the elementary ones. In $n=1$, $\mathrm{Cl}_{1,0}$ has $\omega=e_1$ with $e_1^{2}=+1$, so $\mathrm{Pin}_+(1)=\{\pm1,\pm e_1\}$ is $C_2\times C_2$; $\mathrm{Cl}_{0,1}$ has $e_1^{2}=-1$, so $\mathrm{Pin}_-(1)=\{\pm1,\pm e_1\}$ is $C_4$. In $n=3$ the exponent $n(n-1)/2$ equals $3$, so $\mathrm{Cl}_{3,0}$, where $\prod_iq(e_i)=1$, has $\omega^{2}=(-1)^{3}\cdot1=-1$ and $\mathrm{Z}(\mathrm{Pin}_+(3))=\{\pm1,\pm\omega\}\cong C_4$, while $\mathrm{Cl}_{0,3}$, where $\prod_iq(e_i)=(-1)^{3}=-1$, has $\omega^{2}=(-1)^{3}\cdot(-1)^{3}=+1$ and $\mathrm{Z}(\mathrm{Pin}_-(3))=\{\pm1,\pm\omega\}\cong C_2\times C_2$. This is the invariant that separates the two groups in dimension three.</p>
+<p>In the indefinite case the same computation, with $n=p+q$ odd at the interesting parity, gives the centre in terms of the signature difference: it is $C_2$ when $p-q$ is even, and for $p-q$ odd it is $C_2\times C_2$ when $p-q\equiv1 \pmod 4$ and $C_4$ when $p-q\equiv3 \pmod 4$, that is, by the residue modulo eight, $C_2\times C_2$ for $p-q\equiv1,5$ and $C_4$ for $p-q\equiv3,7$. Swapping $p$ and $q$ exchanges the two groups of order four, since $\omega^{2}$ depends on $q$ modulo two.</p>
+<p>It may seem that the centre should always have order four, the orthogonal group having centre of order two. It does not, because a Pin group is only a projective representation of the orthogonal group: the preimages of the centre of $O(V,q)$ need commute with the rest only up to sign. When $n$ is even the volume element anticommutes with the vectors, so it is not central but only central up to sign, and it is excluded from the centre.</p>
+<h2 id="the-indefinite-case">The Indefinite Case</h2>
+<p>When the form is indefinite the reflections no longer form a single class, and the freedom in the sign grows accordingly.</p>
+<p><strong>Proposition (two classes of reflections).</strong> Let $q$ be indefinite. The reflections $\rho_u$ with $q(u)>0$ and those with $q(u)<0$ form two distinct $SO(V,q)$-classes.</p>
+<p><em>Proof.</em> Conjugation by an isometry $g$ sends $\rho_u$ to $\rho_{gu}$, and $q(gu)=q(u)$, so the sign of the norm of the normal is invariant; both kinds occur for an indefinite form. Moreover, if $q(u)>0$ then $u^{\perp}$ has signature $(p-1,q)$, while if $q(u)<0$ then $u^{\perp}$ has signature $(p,q-1)$, so the restriction of $q$ to the fixed hyperplane separates the two kinds, and a reflection in one kind can never be carried to the other by an isometry. ∎</p>
+<p>In $\mathrm{Cl}_{p,q}$ with $p,q\ge1$ both kinds occur, and the standard Clifford algebra attaches a definite value to each class: the preimage of a reflection with $q(u)=1$ is $u$ with $u^{2}=+1$, and the preimage of one with $q(u)=-1$ is $u$ with $u^{2}=-1$. Since the two reflections are not conjugate, these two values are not contradictory, and the consistency proposition places no constraint across the classes. Varying the sign introduced on each class, subject to the relations among the reflections, produces the several double covers of $O(p,q)$; the two that come from the standard Clifford algebra constructions are the Pin group of $\mathrm{Cl}_{p,q}$ and that of $\mathrm{Cl}_{q,p}$, which are the groups called $\mathrm{Pin}(p,q)$ and $\mathrm{Pin}(q,p)$.</p>
+<p>The classification is the following, and it is quoted. Depending on how one counts, there may be as many as thirty-two inequivalent double covers of $O(p,q)$ when $p,q\ne0$; only two of them are the standard Pin groups, namely $\mathrm{Pin}(p,q)$ and $\mathrm{Pin}(q,p)$. Not all of the covers are spinorial: one of them is the trivial extension, which topologically is two disjoint copies of $O(q,p)$. The set of all thirty-two covers of the maximal compact subgroup $O(p)\times O(q)$, and a construction of eight double covers of $O(p,q)$ itself, are due to Trautman.</p>
+<p>The Spin group behaves better but not perfectly. While $\mathrm{Spin}(p,q)$ is by definition a double cover of $SO(p,q)$, this cover is unique only in the compact case $SO(n)$ and the Lorentzian case $SO(1,q)$ with $q>2$. For $SO(p,q)$ with $p,q>2$ there are three connected double covers, only one of which is the spin group; the universal cover is none of them, being a non-trivial extension of $SO(p,q)$ by the Klein four-group and hence a four-fold cover. The case in which $p$ or $q$ equals two is complicated, though well understood, by the infinite fundamental group of $SO(2)$; that group is the circle, whose universal cover is the line.</p>
+<p>Topologically, then, the definite Pin groups are the good case: for a definite form in dimension at least three each component of the Pin group is simply connected, so the Pin group is the universal cover of each component, and the double cover of the orthogonal group is the universal one. In the indefinite case the Pin group is still a covering of the orthogonal group but it is not the universal cover, the four-fold universal cover of the previous paragraph being finer. The one-dimensional space is exceptional: there the algebra is commutative, the inner conjugation is trivial, and the whole discussion degenerates, which is why the low-dimensional statements are stated for dimension at least two.</p>
+<h2 id="low-dimensions">Low Dimensions</h2>
+<p>The small cases make the two groups concrete, and in dimension two the difference is the classical difference between the dihedral and the dicyclic groups.</p>
+<p><strong>Dimension one.</strong> The algebra $\mathrm{Cl}_{1,0}$ has $e_1^{2}=1$, and the unit vectors are $\pm e_1$; the Pin group is $\{\pm1,\pm e_1\}\cong C_2\times C_2$, in which every non-identity element has order two. The algebra $\mathrm{Cl}_{0,1}$ has $e_1^{2}=-1$, and the Pin group is $\{\pm1,\pm e_1\}$ with $e_1$ of order four, that is $C_4=\operatorname{Dic}_1$. The first is the dihedral group of order four, the second the dicyclic group of order four; in both cases the Spin group is $\{\pm1\}$, the double cover of the trivial group $SO(1)$.</p>
+<p><strong>Dimension two.</strong> The two Pin groups are $\mathrm{Pin}_+(2)$ and $\mathrm{Pin}_-(2)$, both double covers of the circle group $O(2)$, and the difference appears on the finite subgroups. Let $\operatorname{Dih}_n<O(2)$ be the symmetry group of a regular $n$-gon and $C_n<SO(2)$ its rotation subgroup. Then in $\mathrm{Pin}_+(2)$ the preimage of $\operatorname{Dih}_n$ is the dihedral group $\operatorname{Dih}_{2n}$ of the $2n$-gon, while in $\mathrm{Pin}_-(2)$ the preimage is the dicyclic group $\operatorname{Dic}_n$. In the same way the preimage of $C_n<SO(2)$ in $\mathrm{Spin}(2)$ is $C_{2n}$. The resulting commutative square of subgroups, with $\mathrm{Spin}(2)$, $\mathrm{Pin}_+(2)$ on the lower and upper rows over $SO(2)$, $O(2)$,
+$$
+C_{2n}\subset \operatorname{Dih}_{2n},\qquad C_n\subset \operatorname{Dih}_n ,
+$$
+is the same square that the projective orthogonal group produces, going down from $O$ by a two-fold quotient instead of up by a two-fold cover. Geometrically, the projectivisation of a regular $2n$-gon inscribed in the circle is a regular $n$-gon inscribed in the projective line.</p>
+<p><strong>Dimension three.</strong> Here the two groups are visibly different. The Clifford algebra of three anticommuting generators of square $+1$ is the algebra of $2\times2$ complex matrices, $\mathrm{Cl}_{3,0}\cong M_2(\mathbb{C})$, and
+$$
+\mathrm{Pin}_+(3)\cong\{\,A\in U(2) : \det A=\pm1\,\},
+$$
+a compact group with two components and centre $\{\lambda I:\lambda^{4}=1\}\cong C_4$. The Clifford algebra of three anticommuting generators of square $-1$ is $\mathrm{Cl}_{0,3}\cong\mathbb{H}\oplus\mathbb{H}$, and
+$$
+\mathrm{Pin}_-(3)\cong SU(2)\times C_2 ,
+$$
+with centre $C_2\times C_2$. The two groups are not isomorphic, and the invariant that separates them is exactly the centre computed in the previous section: $\mathrm{Pin}_+(3)$ has an element of order four in its centre while $\mathrm{Pin}_-(3)$ does not.</p>
+<p><strong>The dictionary with the corpus.</strong> The definite algebras of the corpus's number-system dictionary are $\mathrm{Cl}_{0,n}$, with $\mathrm{Cl}_{0,1}\cong\mathbb{C}$, $\mathrm{Cl}_{0,2}\cong\mathbb{H}$ and $\mathrm{Cl}_{0,3}\cong\mathbb{H}\oplus\mathbb{H}$. Their Pin groups are the family $\mathrm{Pin}_-(n)=\mathrm{Pin}(0,n)$, while their Spin groups are the common groups $\mathrm{Spin}(n)$, so the low-dimensional Spin identifications of <em>The Clifford, Pin and Spin Groups with Signed Inner Conjugation</em> and <em>The Low-Dimensional Spin Groups and the Exceptional Isomorphisms with Inner Conjugation</em> are unchanged by the choice, and only the Pin groups carry it.</p>
+<h2 id="the-projective-orthogonal-square">The Projective Orthogonal Square</h2>
+<p>The pair of two-fold relations, the cover from the Pin group and the quotient to the projective orthogonal group, fit into one square of groups and one square of subgroups.</p>
+<p><strong>Remark (cover and quotient).</strong> For the circle the two relations sit over one another. The Pin cover is the pair of surjections
+$$
+\mathrm{Spin}(2)\twoheadrightarrow SO(2),\qquad \mathrm{Pin}_+(2)\twoheadrightarrow O(2),
+$$
+both two-to-one, the first restricting the second over the identity component; the projective quotient is the pair
+$$
+O(2)\twoheadrightarrow PO(2),\qquad SO(2)\twoheadrightarrow PSO(2),
+$$
+again two-to-one, the second restricting the first. The two constructions are the upward and the downward reading of the same subgroup square, whose four corners are</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>cover (up)</th>
+<th>quotient (down)</th>
+<th>group</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathrm{Spin}(2)$</td>
+<td>$SO(2)$</td>
+<td>rotation group of the circle</td>
+</tr>
+<tr>
+<td>$\mathrm{Pin}_+(2)$</td>
+<td>$O(2)$</td>
+<td>full orthogonal group of the plane</td>
+</tr>
+</tbody>
+</table></div>
+<p>and on the finite subgroups the correspondence is exact: the preimage of $C_n<SO(2)$ in $\mathrm{Spin}(2)$ is $C_{2n}$, the preimage of $\operatorname{Dih}_n<O(2)$ in $\mathrm{Pin}_+(2)$ is $\operatorname{Dih}_{2n}$, and the two entries descend to $PSO(2)$ and $PO(2)$ respectively. Geometrically, the projectivisation of a regular $2n$-gon inscribed in the circle is a regular $n$-gon inscribed in the projective line. The Pin group is thus the upward companion of the projective quotient, and the two are the two ways to relate the orthogonal group to its centre.</p>
+<h2 id="the-name">The Name</h2>
+<p>The name is a back-formation from Spin. The Pin group is to the orthogonal group $O(n)$ as the Spin group is to the special orthogonal group $SO(n)$, and dropping the "S" from "Spin" yields "Pin". It was introduced in Atiyah, Bott and Shapiro's <em>Clifford Modules</em> of 1964, where the authors record that the joke is due to J-P. Serre; the same paper carries the periodicity of the Clifford algebras used throughout the Clifford layer of the corpus.</p>
+<h2 id="summary">Summary</h2>
+<p>The Clifford algebra of a non-degenerate quadratic space produces a Pin group that double covers the orthogonal group, with kernel $\{\pm1\}$ and the identification $x\sim-x$, and the Spin group that double covers the special orthogonal group. The Pin group is not determined by the Spin group and the reflection action: it has two components, the identity one is Spin, and the group law on the other component is fixed by the single sign $z=\tilde r^{2}\in\{\pm1\}$ for the preimage of a reflection. Two reflections that are conjugate under the special orthogonal group carry the same sign, so for a definite form, where all reflections are conjugate, there are exactly two Pin groups, $\mathrm{Pin}_+$ and $\mathrm{Pin}_-$, realised as the Pin groups of $\mathrm{Cl}(V,q)$ and $\mathrm{Cl}(V,-q)$, that is as $\mathrm{Pin}(n,0)$ and $\mathrm{Pin}(0,n)$. They both cover the same orthogonal group and are not isomorphic in general, while the Spin groups of the two signatures coincide as the unique non-trivial double cover of $SO(n)$, universal for $n\ge3$. The centre is computable from the volume element: it is $C_2$ in even dimension, and in odd dimension it is $\{\pm1,\pm\omega\}$, of type $C_2\times C_2$ or $C_4$ according to the square of $\omega$, which for the compact definite groups means $n\bmod4$ and for the indefinite ones the residue of $p-q$ mod $8$. When the form is indefinite the reflections split into the two classes with positive and negative normal, the sign may be chosen on each class separately, and the double covers of $O(p,q)$ proliferate, with up to thirty-two of them and only $\mathrm{Pin}(p,q)$ and $\mathrm{Pin}(q,p)$ standard; the Spin cover of $SO(p,q)$ is unique only in the compact and Lorentzian cases, and in general the universal cover is four-fold. The low dimensions show the difference plainly: $\mathrm{Pin}_+(1)\cong C_2\times C_2$ against $\mathrm{Pin}_-(1)\cong C_4$, the dihedral and dicyclic preimages of the polygonal groups in dimension two, and $\mathrm{Pin}_+(3)\cong\{A\in U(2):\det A=\pm1\}$ against $\mathrm{Pin}_-(3)\cong SU(2)\times C_2$, separated by their centres. The projective orthogonal group supplies the mirror image of the cover, going down by the quotient where the Pin group goes up by the cover, and the name itself is the back-formation from Spin that Atiyah, Bott and Shapiro attributed to Serre.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathrm{Pin}(V,q)$</td>
+<td>subgroup of the units generated by the vectors of norm $\pm1$</td>
+</tr>
+<tr>
+<td>$\mathrm{Spin}(V,q)$</td>
+<td>even part of the Pin group; double cover of $SO(V,q)$</td>
+</tr>
+<tr>
+<td>$\mathrm{Pin}_\pm(V,q)$</td>
+<td>the two Pin groups, of $\mathrm{Cl}(V,q)$ and $\mathrm{Cl}(V,-q)$</td>
+</tr>
+<tr>
+<td>$\mathrm{Pin}(p,q)$, $\mathrm{Cl}_{p,q}$</td>
+<td>Pin group and Clifford algebra of $p$ positive and $q$ negative squares</td>
+</tr>
+<tr>
+<td>$\tilde r^{2}=z\in\{\pm1\}$</td>
+<td>the sign fixing the group law on the non-identity component</td>
+</tr>
+<tr>
+<td>$\rho_u(v)=v-2g(v,u)q(u)^{-1}u$</td>
+<td>reflection in the hyperplane orthogonal to $u$</td>
+</tr>
+<tr>
+<td>$\mathrm{Ad}^{\alpha}_x(v)=\alpha(x)vx^{-1}$</td>
+<td>signed inner conjugation; reflection and rotation action</td>
+</tr>
+<tr>
+<td>$N(x)=x\bar x$</td>
+<td>Clifford norm; $N(x)=\pm1$ on the Pin group</td>
+</tr>
+<tr>
+<td>$\omega=e_1\cdots e_n$</td>
+<td>volume element; $\omega^{2}=(-1)^{n(n-1)/2}\prod_iq(e_i)$</td>
+</tr>
+<tr>
+<td>$\mathrm{Z}(\mathrm{Pin})=C_2$ ($n$ even), $\{\pm1,\pm\omega\}$ ($n$ odd)</td>
+<td>centre</td>
+</tr>
+<tr>
+<td>$C_2\times C_2$, $C_4$</td>
+<td>the two possible odd-dimensional centres; $n\bmod4$ or $p-q\bmod8$</td>
+</tr>
+<tr>
+<td>$O(n,0)=O(0,n)$, $\mathrm{Spin}(n,0)\cong\mathrm{Spin}(0,n)$</td>
+<td>equal orthogonal and spin groups</td>
+</tr>
+<tr>
+<td>$\mathrm{Pin}(n,0)\not\cong\mathrm{Pin}(0,n)$</td>
+<td>the Pin groups differ; witnesses in dimension $1$ and $3$</td>
+</tr>
+<tr>
+<td>$PSO$, $PO$</td>
+<td>projective quotients, the mirror of the cover</td>
+</tr>
+<tr>
+<td>$C_{2n},\operatorname{Dih}_{2n},C_n,\operatorname{Dih}_n$</td>
+<td>the projective square in dimension two</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>H. Blaine Lawson and Marie-Louise Michelsohn, <em>Spin Geometry</em> (Princeton University Press, 1989), for the Clifford group, the twisted adjoint and the Pin and Spin groups with their covering maps.</li>
+<li>Ian R. Porteous, <em>Clifford Algebras and the Classical Groups</em> (Cambridge University Press, 1995), for the two Pin groups, the reflections and their conjugacy, and the classical groups.</li>
+<li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em> (Cambridge University Press, 2nd ed. 2001), for the low-dimensional Pin and Spin groups and the dihedral and dicyclic cases.</li>
+<li>Andrzej Trautman, "Double Covers of Pseudo-orthogonal Groups", in <em>Clifford Analysis and Its Applications</em>, NATO Science Series 25 (Kluwer, 2001), 377–388, for the classification of the double covers of $O(p,q)$ and of the maximal compact subgroup $O(p)\times O(q)$.</li>
+<li>Michael F. Atiyah, Raoul Bott and Arnold Shapiro, <em>Clifford Modules</em>, Topology 3, Suppl. 1 (1964), 3–38, for the periodicity and for the name of the Pin group.</li>
+<li>F. Reese Harvey, <em>Spinors and Calibrations</em> (Academic Press, 1990), for the identification of $\mathrm{Pin}_+(3)$ with the determinant-$\pm1$ subgroup of $U(2)$.</li>
+<li>Stanley Carlip and Cécile DeWitt-Morette, "Where the sign of the metric makes a difference", <em>Phys. Rev. Lett.</em> 60 (1988), 1599–1601, for the physical role of the two Pin groups.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -52,7 +52,7 @@
       <div class="article-body">
         <h1 id="list-of-distributions"><strong>List of Distributions</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>This article lists the distributions and the generalised functions the corpus introduces. A distribution is a continuous linear functional on a space of test functions, so that the objects of the calculus — differentiation, multiplication, convolution, Fourier transformation — are defined by duality, and a row below names one distribution, records the operations it supports and the sense in which it is a generalised function, and points to the article that introduces it. Every row points to an article; this article introduces nothing and proves nothing. The objects are grouped by the layer that introduces them: the distribution spaces and their duality, the distinguished distributions — the delta, the Heaviside function, the principal value and the finite part — the operations and their limits, the fundamental solutions and kernels, and the distributions of the $p$-adic, complex and hypercomplex grounds. The rows that record an operation which is not defined — the product of two distributions, the restriction without a transversality hypothesis, the Fourier transform of an untempered distribution — stand beside the distributions as non-examples.</p>
+<p>This article lists the distributions and the generalised functions the corpus introduces. A distribution is a continuous linear functional on a space of test functions, so that the objects of the calculus — differentiation, multiplication, convolution, Fourier transformation — are defined by duality, and a row below names one distribution, records the operations it supports and the sense in which it is a generalised function, and points to the article that introduces it. Every row points to an article; this article introduces nothing and proves nothing. The objects are grouped by the layer that introduces them: the distribution spaces and their duality, the distinguished distributions — the delta, the Heaviside function, the principal value and the finite part — the operations and their limits, the fundamental solutions and kernels, the distributions supported on a surface, and the distributions of the $p$-adic, complex and hypercomplex grounds. The rows that record an operation which is not defined — the product of two distributions, the restriction without a transversality hypothesis, the Fourier transform of an untempered distribution — stand beside the distributions as non-examples.</p>
 <h2 id="the-distribution-spaces">The Distribution Spaces</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -157,6 +157,53 @@
 </tr>
 </tbody>
 </table></div>
+<h2 id="distributions-supported-on-a-surface">Distributions Supported on a Surface</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>Its definition, and the operations it supports</th>
+<th>Introduced in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the surface delta $\delta_S$ (the single layer of unit density)</td>
+<td>$\langle\delta_S,\psi\rangle = \int_S\psi\,dS$; equals $\lvert\nabla\varphi\rvert\,\delta\circ\varphi$ for a defining function $\varphi$ of $S$</td>
+<td><em>Distributions on Surfaces, Layers, and Jump Conditions</em></td>
+</tr>
+<tr>
+<td>the normal layer $n\,\delta_S$</td>
+<td>the gradient of the Heaviside function of a defining function, $\nabla H(\varphi)$</td>
+<td><em>Distributions on Surfaces, Layers, and Jump Conditions</em></td>
+</tr>
+<tr>
+<td>the double layer $\partial_n\delta_S$</td>
+<td>the normal derivative of the surface delta; a layer of order $1$, the density of a normal dipole sheet</td>
+<td><em>Distributions on Surfaces, Layers, and Jump Conditions</em></td>
+</tr>
+<tr>
+<td>the layer of order $k$, $\partial_n^{\,k}(g\delta_S)$</td>
+<td>a distribution supported on $S$; every distribution supported on a hypersurface is locally a finite sum of layers</td>
+<td><em>Distributions on Surfaces, Layers, and Jump Conditions</em></td>
+</tr>
+<tr>
+<td>the singular part of the divergence, $(n\cdot[A])\,\delta_S$</td>
+<td>the single layer produced by a discontinuous vector field; the surface charge density</td>
+<td><em>Distributions on Surfaces, Layers, and Jump Conditions</em></td>
+</tr>
+<tr>
+<td>the singular part of the rotor, $n\times[A]\,\delta_S$</td>
+<td>the tangential single layer produced by a discontinuous vector field; the surface current</td>
+<td><em>Distributions on Surfaces, Layers, and Jump Conditions</em></td>
+</tr>
+<tr>
+<td>the jump formula, $\partial_j u = \{\partial_j u\} + [u]n_j\delta_S$</td>
+<td>separates the classical derivative of a piecewise smooth function from the layer its jump creates</td>
+<td><em>Distributions on Surfaces, Layers, and Jump Conditions</em></td>
+</tr>
+</tbody>
+</table></div>
 <h2 id="operations-and-their-limits">Operations and Their Limits</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -200,7 +247,7 @@
 <tr>
 <td>restriction and pullback</td>
 <td>defined under a transversality condition on the wave front set; the trace on a boundary needs it</td>
-<td><em>Distributions and Fundamental Solutions</em>; <em>Microlocal Analysis</em></td>
+<td><em>Distributions and Fundamental Solutions</em>; <em>Microlocal Analysis</em>; <em>Distributions on Surfaces, Layers, and Jump Conditions</em></td>
 </tr>
 <tr>
 <td>the wave front set $\operatorname{WF}(u)$</td>

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biquaternion Square Roots of a General Element — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="biquaternion-square-roots-of-a-general-element"><strong>Biquaternion Square Roots of a General Element</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article solves the square-root problem in the biquaternion algebra $\mathbb{B}$: given $Q\in\mathbb{B}$, find every $\xi\in\mathbb{B}$ with
+$$
+\xi^2 = Q .
+$$
+It is the general case of the three central values $-1,0,+1$ treated in <em>Biquaternion Square Roots of Minus One, Zero and Plus One</em>. Physically, the square-root problem is the problem of <strong>halving a transformation</strong>: a biquaternion $\xi$ generates the one-parameter subgroup $\exp(\theta\xi)$, and a square root of $Q$ is an element whose <strong>doubled</strong> exponential is the transformation $\exp$ of $Q$ — the bosonic case of the spinor double cover, where a rotation through $\theta$ is the square of one through $\theta/2$. The problem also governs the boundary of the polar representation, since its answer depends on the same data as the norm and the null cone.</p>
+<p>The method is the one of Acus and Dargys: the algebra is identified with the Euclidean Clifford algebra $Cl_{3,0}$, in which the square-root problem reduces to a complex quadratic. The identification and its dictionary are <em>Biquaternion Clifford Structure</em>; the square-root algorithm in $Cl_{3,0}$ is proved in the mathematics article <em>Clifford Algebras in Finite Dimensions</em> and is restated here in full so that the article stands alone. The three central values and the idempotents they produce are <em>Biquaternion Square Roots of Minus One, Zero and Plus One</em>; the zero-divisor set, of which the nonzero roots of $0$ are a part, is <em>Biquaternion Zero Divisors</em>, and is named here only where the classification touches it. The norm, the null cone and the group of units are <em>Biquaternion Norm and Invertibility</em>, and the polar decomposition is <em>The Polar Element Representation of Biquaternions</em>.</p>
+<p><strong>Conventions.</strong> The quaternion basis is $e_0=1,e_1,e_2,e_3$, the scalar imaginary is $i$, and a general element is $\tilde Q=\sum_{\mu=0}^3 Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$. The norm is $N(\tilde Q)=\sum_\mu Q_\mu^2$ and the polar form is $B(\tilde P,\tilde Q)=\sum_\mu P_\mu Q_\mu$. The material coordinate is $ict\,e_0+\mathbf{x}$ and the informational coordinate is $ct'\,e_0+i\mathbf{x}'$.</p>
+<h2 id="the-identification-with-the-euclidean-clifford-algebra">The Identification with the Euclidean Clifford Algebra</h2>
+<p><strong>Theorem (the working identification).</strong> The biquaternion algebra is the Euclidean Clifford algebra $Cl_{3,0}$ as a real algebra, $\mathbb{B}\cong Cl_{3,0}$.</p>
+<p>This is proved in <em>Biquaternion Clifford Structure</em>, together with the dictionary that matches the four biquaternion components to the four Clifford grades under $\gamma_k\mapsto ie_k$ on the generators and $\omega=\gamma_1\gamma_2\gamma_3\mapsto i$ on the volume element. Writing $Q_\mu=q_\mu+iq'_\mu$ with real parts $q_\mu,q'_\mu$, the multivector $B=\Phi(\tilde Q)$ has the eight Clifford coefficients</p>
+<p>$$
+B = q_0 + \sum_{k=1}^{3} q'_k\gamma_k - q_3\gamma_1\gamma_2 - q_2\gamma_3\gamma_1 - q_1\gamma_2\gamma_3 + q'_0\,\omega,
+$$</p>
+<p>that is $b_0=q_0$, $b_{123}=q'_0$, $b_k=q'_k$, and $(b_{12},b_{13},b_{23})=(-q_3,-q_2,-q_1)$.</p>
+<p><strong>Corollary.</strong> $\xi^2=Q$ in $\mathbb{B}$ holds if and only if $\Phi(\xi)^2=\Phi(Q)$ in $Cl_{3,0}$; the root set of $Q$ is the $\Phi$-image of the root set of the multivector $\Phi(Q)$.</p>
+<h2 id="the-algorithm">The Algorithm</h2>
+<p>Let $B\in Cl_{3,0}$ be written</p>
+<p>$$
+B = b_0 + b_1\gamma_1+b_2\gamma_2+b_3\gamma_3 + b_{12}\gamma_1\gamma_2+b_{13}\gamma_1\gamma_3+b_{23}\gamma_2\gamma_3 + b_{123}\omega,
+$$</p>
+<p>and put</p>
+<p>$$
+c_1=b_{23},\quad c_2=-b_{13},\quad c_3=b_{12},\qquad
+P=\sum_{k=1}^3 b_kc_k,\qquad R=\sum_{k=1}^3\bigl(b_k^2-c_k^2\bigr),
+$$
+$$
+b_S = b_0^2-b_{123}^2-R,\qquad b_I = 2\bigl(P-b_0b_{123}\bigr),\qquad \Delta = b_S^2+b_I^2 .
+$$</p>
+<p><strong>Theorem (isolated roots).</strong> Write $\beta=b_0-ib_{123}$ and $\gamma=R-2iP$. For each of the two complex numbers</p>
+<p>$$
+z = \frac{\beta\pm\sqrt{b_S+ib_I}}{2}
+$$</p>
+<p>with $z\neq0$, let $\delta=\mathrm{Re}\,z$, $\tau=-\mathrm{Im}\,z$, $\sigma=|z|$, set</p>
+<p>$$
+s=\pm\sqrt{\frac{\sigma+\delta}{2}},\qquad S=\text{the choice of }\pm\sqrt{\frac{\sigma-\delta}{2}}\text{ with }2sS=\tau,
+$$
+$$
+v_k=\frac{s\,b_k+S\,c_k}{2\sigma},\qquad V_k=\frac{s\,c_k-S\,b_k}{2\sigma}\qquad(k=1,2,3),
+$$</p>
+<p>and form $\Xi=s+\sum_k v_k\gamma_k+\bigl(S+\sum_k V_k\gamma_k\bigr)\omega$. Then $\Xi^2=B$, and the two signs of $s$ give the pair $\pm\Xi$. Each nonzero value of $z$ contributes a pair, so the isolated roots number two or four according as one or both values of $z$ are nonzero.</p>
+<p><strong>Proof.</strong> The reduction $\Xi=a+b\omega=s+v+(S+V)\omega$ by the central volume element, the graded equations, and the derivation of the complex quadratic $4z^2-4\beta z+\gamma=0$ with $\beta^2-\gamma=b_S+ib_I$ are proved in <em>Clifford Algebras in Finite Dimensions</em> §§28–30, where $R$ carries the name $Q$. The present article only transports the statement. $\square$</p>
+<p><strong>Corollary (the biquaternion algorithm).</strong> To compute the square roots of $Q\in\mathbb{B}$: transport $Q$ to $B=\Phi(Q)$, apply the theorem to $B$, and transport each root $\Xi$ back with $\Phi^{-1}$,</p>
+<p>$$
+\xi = (b_0+b_{123}i) + (-b_{23}+b_1i)e_1 + (-b_{13}+b_2i)e_2 + (-b_{12}+b_3i)e_3 .
+$$</p>
+<h2 id="the-continuum-and-the-classification">The Continuum and the Classification</h2>
+<p><strong>Theorem (the continuum).</strong> If and only if $B$ has vanishing vector and bivector parts — that is, $Q$ is a <strong>complex scalar</strong> $Q=q_0+q'_0i$ — the roots of $B$ include the four-parameter family $\Xi=\sum_k v_k\gamma_k+\bigl(\sum_k V_k\gamma_k\bigr)\omega$ whose real coefficients satisfy</p>
+<p>$$
+\sum_{k=1}^3 v_k^2-\sum_{k=1}^3 V_k^2=b_0,\qquad 2\sum_{k=1}^3 v_kV_k=b_{123},
+$$</p>
+<p>alongside the isolated roots supplied by the two values of $z$. The case $B=0$, the roots of $0$, is the extreme instance, whose nonzero members are the nilpotents $\sum_k v_k\gamma_k+\bigl(\sum_k V_k\gamma_k\bigr)\omega$ with $\sum_k v_k^2=\sum_k V_k^2$ and $\sum_k v_kV_k=0$.</p>
+<p>The statement and proof are in <em>Clifford Algebras in Finite Dimensions</em> §31, transported by $\Phi$. In biquaternion terms a complex scalar is an element of the centre $\mathbb{C}_{\mathbb{B}}$, so the continuum is the centre's contribution to the root set.</p>
+<p>Collecting the two theorems, every $Q$ falls into exactly one of the following cases:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>case</th>
+<th>condition on the data of $B=\Phi(Q)$</th>
+<th>roots of $Q$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>none</td>
+<td>$b_S=b_I=0$ and $b_0=b_{123}=0$, $Q$ not a complex scalar</td>
+<td>$\varnothing$</td>
+</tr>
+<tr>
+<td>two</td>
+<td>$b_S+ib_I=0$ and $\beta\neq0$, or one value of $z$ vanishes</td>
+<td>a single pair $\pm\xi$</td>
+</tr>
+<tr>
+<td>four</td>
+<td>$b_S+ib_I\neq0$ and both values of $z$ nonzero</td>
+<td>two pairs</td>
+</tr>
+<tr>
+<td>continuum</td>
+<td>$b_1=\dots=b_{23}=0$ ($Q$ a complex scalar)</td>
+<td>the four-parameter family, plus any isolated pairs</td>
+</tr>
+</tbody>
+</table></div>
+<p>The generic case is four roots. The scalar $\beta^2-\gamma=b_S+ib_I$ is the existence scalar: its vanishing separates four roots from two, and the further vanishing of $\beta$ is the frontier with the rootless case.</p>
+<p><strong>Physical reading.</strong> The four roots are generically two pairs of opposite <strong>generators</strong>, $\pm\xi$: the pair is the $\mathbb{Z}_2$ ambiguity of the square-root map, the same double cover that appears in the spinor representations. A complex scalar $Q$ is a central element, and its four-parameter family of roots is the freedom of writing a central transformation as a square of a non-central one; the family degenerates to the null elements when $Q=0$, which is the light cone.</p>
+<h2 id="the-three-central-data">The Three Central Data</h2>
+<p>The classification specialises to the three central values of <em>Biquaternion Square Roots of Minus One, Zero and Plus One</em> and reproduces them, which is the check that the transport and the algorithm agree with the direct computation.</p>
+<p>For $Q=-1$ the pair $z$ is $(0,-1)$: the zero value opens the family, the value $-1$ gives the pair $\pm i$. For $Q=+1$ the pair is $(1,0)$: the value $1$ gives $\pm1$, the zero value opens the family. Both are complex scalars, so both lie in the continuum row. For $Q=0$ the data give $b_S=b_I=0$ and the scalar row, but $Q=0$ is a complex scalar, so it too lies in the continuum row, and its nonzero roots are the nilpotents. In physical terms the three root families are the elliptic, hyperbolic and parabolic generators, which is the trichotomy of the square of a generator recorded in the companion article.</p>
+<h2 id="worked-examples">Worked Examples</h2>
+<p>The examples are computed with the algorithm and verified by squaring.</p>
+<p><strong>An imaginary quaternion.</strong> For $Q=-ie_3$ the transport gives the multivector $-e_3$, with $b_S=-1$, $b_I=0$ and $\beta=0$, so $b_S+ib_I\neq0$; there are four roots,</p>
+<p>$$
+\xi = \pm\tfrac12\bigl(1-i+e_3-ie_3\bigr),\qquad \xi=\pm\tfrac12\bigl(1+i-e_3-ie_3\bigr).
+$$</p>
+<p><strong>A central element.</strong> For $Q=-1+i$ the two values of $z$ are $0$ and $-1-i$; there are two isolated roots,</p>
+<p>$$
+\xi = \pm\Bigl(\sqrt{\tfrac{\sqrt2-1}{2}}+i\sqrt{\tfrac{\sqrt2+1}{2}}\Bigr),
+$$</p>
+<p>and a four-parameter continuum, the central case of the reading above.</p>
+<p><strong>A rootless element.</strong> For $Q=e_1-ie_3$ the transport gives $b_3=b_{23}=-1$ with $b_S=b_I=0$ and $\beta=0$: the rootless row, and $Q$ has no square root.</p>
+<p><strong>A general four-root case.</strong> For $Q=-(2+i)e_3$ the transport gives $b_{12}=2$, $b_3=-1$ and four roots, for instance</p>
+<p>$$
+\xi = \pm\bigl(0.2429+0.2429\,e_3-1.0291\,i-1.0291\,ie_3\bigr).
+$$</p>
+<p><strong>A parabolic root.</strong> For $Q=0$ the roots are the nilpotent cone; $\xi=e_1+ie_2$ is a member, with $\xi^2=0$.</p>
+<h2 id="summary">Summary</h2>
+<p>The square roots of $Q\in\mathbb{B}$ are computed by transporting $Q$ to $Cl_{3,0}$ through the identification of <em>Biquaternion Clifford Structure</em>, applying the closed-form algorithm of <em>Clifford Algebras in Finite Dimensions</em>, and transporting back.</p>
+<p>The algorithm solves $4z^2-4\beta z+\gamma=0$ with $\beta=b_0-ib_{123}$, $\gamma=R-2iP$ and discriminant $16(b_S+ib_I)$; each nonzero value $z=(\beta\pm\sqrt{b_S+ib_I})/2$ yields a pair $\pm\xi$ through $s=\pm\sqrt{(\sigma+\delta)/2}$, $S$ signed by $2sS=\tau$, $\sigma=|z|$, and the vector formulas. The existence scalars are $b_S=b_0^2-b_{123}^2-R$ and $b_I=2(P-b_0b_{123})$.</p>
+<p>The classification is: <strong>no root</strong> when $b_S=b_I=0$, $\beta=0$ and $Q$ is not central; <strong>two roots</strong> when one value of $z$ vanishes or when $b_S+ib_I=0$ with $\beta\neq0$; <strong>four roots</strong> generically; and the <strong>four-parameter continuum</strong> when and only when $Q$ is a complex scalar, alongside any isolated pairs. Physically the roots are the generators of the doubled one-parameter subgroups, in opposite pairs; the central data carry the continuum; and the rootless elements are the ones whose square would have to be produced by no generator at all.</p>
+<p>The three central data $-1,0,+1$ are treated in <em>Biquaternion Square Roots of Minus One, Zero and Plus One</em>, and the nilpotent cone of the roots of $0$ is <em>Biquaternion Zero Divisors</em>. This article owns the classification of $\xi^2=Q$ for a general $Q$.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B}$</td>
+<td>Biquaternion algebra</td>
+</tr>
+<tr>
+<td>$Q$</td>
+<td>The element whose square roots are sought</td>
+</tr>
+<tr>
+<td>$\xi$</td>
+<td>A square root of $Q$</td>
+</tr>
+<tr>
+<td>$\Phi$</td>
+<td>The identification $\mathbb{B}\to Cl_{3,0}$</td>
+</tr>
+<tr>
+<td>$B=\Phi(Q)$</td>
+<td>The multivector of $Q$</td>
+</tr>
+<tr>
+<td>$c_k$</td>
+<td>$c_1=b_{23}$, $c_2=-b_{13}$, $c_3=b_{12}$</td>
+</tr>
+<tr>
+<td>$P,R$</td>
+<td>$P=\sum b_kc_k$, $R=\sum(b_k^2-c_k^2)$</td>
+</tr>
+<tr>
+<td>$b_S,b_I$</td>
+<td>$b_S=b_0^2-b_{123}^2-R$, $b_I=2(P-b_0b_{123})$</td>
+</tr>
+<tr>
+<td>$\beta,\gamma$</td>
+<td>$\beta=b_0-ib_{123}$, $\gamma=R-2iP$; $\beta^2-\gamma=b_S+ib_I$</td>
+</tr>
+<tr>
+<td>$z$</td>
+<td>$\frac{\beta\pm\sqrt{b_S+ib_I}}{2}$</td>
+</tr>
+<tr>
+<td>$s,S,v,V$</td>
+<td>Paravector data of a root, $\xi=s+v+(S+V)i$ in Clifford form</td>
+</tr>
+<tr>
+<td>$ict\,e_0+\mathbf{x}$, $ct'\,e_0+i\mathbf{x}'$</td>
+<td>Material and informational coordinates</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>A. Acus and A. Dargys, <em>Square roots of complexified quaternions</em>, arXiv:2601.08391 (2026), for the square-root algorithm and the worked examples of complexified quaternions.</li>
+<li>S. J. Sangwine, "Biquaternion (complexified quaternion) roots of $-1$", <em>Advances in Applied Clifford Algebras</em> <strong>16</strong> (2006) 63–68, for the central case.</li>
+<li>S. J. Sangwine and D. Alfsmann, "Determination of the biquaternion divisors of zero, including the idempotents and nilpotents", <em>Advances in Applied Clifford Algebras</em> <strong>20</strong> (2010) 401–416, for the nilpotent cone.</li>
+<li>J. P. Ward, <em>Quaternions and Cayley Numbers: Algebra and Applications</em> (Kluwer, Dordrecht, 1997), for the algebraic properties of the biquaternions.</li>
+<li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em> (Cambridge, 2001), for the Clifford background.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

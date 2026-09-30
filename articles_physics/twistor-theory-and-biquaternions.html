@@ -130,17 +130,127 @@ $$</p>
 <p><strong>Complexification.</strong> In the framework the observable sector $\mathbb{M}_-$ is <strong>real</strong> — imaginary scalar part $ict$, real spatial part $x,y,z$ — and the complex structure is a physical object: it is the $ict$ convention, and in a medium the scale $c=1/\sqrt{\epsilon\mu}$ makes it <strong>local</strong>, varying from point to point. The complexification is in the time direction and is physical. In twistor theory spacetime is complexified globally to $\mathbb{C}^4$; real Minkowski space is a reality condition (a real slice) on that complex manifold, and the work is done by holomorphic and projective methods — sheaves, cohomology, deformations of complex structure. The two complexes are different in kind: one is a physical, local, metric-level structure; the other is a global complex structure used as a computational and conceptual engine.</p>
 <p><strong>Field equations.</strong> The framework writes wave equations in the algebra: the biquaternion Maxwell and Dirac equations, with mass terms, at a point of $\mathbb{M}_-$ or of the full $\mathbb{B}$. Twistor theory's native transform is the <strong>massless</strong> one: the Penrose transform represents helicity-$h$ massless fields by sheaf cohomology on twistor space, and the conformal invariance is essential to it. Massive fields require additional twistor machinery and are not the natural home of the method.</p>
 <p><strong>Self-duality and operators.</strong> Twistor theory's deepest result is the nonlinear graviton, which reduces half-flat Ricci-flat complex spacetimes to deformed twistor spaces; the framework's representation theory contains the decomposition of the field strength into self-dual $(1,0)$ and anti-self-dual $(0,1)$ parts, but the framework has no analogous curved-space construction. Conversely, the framework carries the <strong>informational sector</strong> $\mathbb{M}_+$ with its operator algebra and the trace formula $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$, the biquaternion form of the Born rule. Twistor theory has no counterpart of this Hermitian operator algebra: its Hermitian form $h$ is a fixed conformal structure, not a space of states and observables. The two programmes are asymmetric in what they provide: twistors give conformal and null geometry and a transform; the framework gives a real material sector and an operator sector on the same algebra.</p>
+<h2 id="a-second-sense-of-the-word-algebraic-twistors">A Second Sense of the Word: Algebraic Twistors</h2>
+<p>The word "twistor" also occurs in the framework's literature with a meaning unrelated to the one above. In a four-part series on the <strong>differential algebra of biquaternions</strong>, L. A. Alexeyeva studies the biquaternionic wave equation</p>
+<p>$$
+\nabla^\pm B + F \circ B = G(\tau, \mathbf{x}),
+\qquad
+\nabla^\pm = \partial_\tau \pm i\,\nabla ,
+$$</p>
+<p>where $\tau$ is time measured in units of length, $\nabla$ the spatial gradient, $\circ$ the biquaternion product, $G$ a given source, and $F = f + \mathbf{F}$ a <strong>constant</strong> biquaternion — the <strong>structural coefficient</strong>, with scalar part $f$ and vector part $\mathbf{F}$ [Alexeyeva 2014]. She calls it a <strong>biwave</strong> equation, because it is of hyperbolic type and each component of its solution solves a wave equation. The naming is justified by two specialisations the corpus already knows: $F = 0$ reproduces the biquaternionic Maxwell system and $F = f$, a complex scalar, the biquaternionic Dirac system. The fourth paper takes the coefficient <strong>vector-valued</strong>, and its remark is that the equation, written in matrix (tensor) form, then belongs to the class of Yang–Mills equations. That comparison belongs to <em>The Yang–Mills Equation in Biquaternionic Form</em>; what matters here is the object the paper builds.</p>
+<p><strong>Twistors, in this second sense, are the solutions of the homogeneous biwave equation.</strong> Split the coefficient into real vectors,</p>
+<p>$$
+\mathbf{F} = -E - iH, \qquad E, H \in \mathbb{R}^3 ,
+$$</p>
+<p>and take the upper sign of the equation, $\nabla^+ B + \mathbf{F}\circ B = 0$. Its elementary solutions are labelled by a wave vector $\boldsymbol{\xi}$ and built from the plane harmonic wave</p>
+<p>$$
+\psi^{\pm}_{\boldsymbol{\xi}}(\tau, \mathbf{x}) = \exp\!\left(\pm i\tau\varpi - i(\mathbf{x}, \boldsymbol{\xi})\right),
+\qquad
+\varpi = \sqrt{|\boldsymbol{\xi} - E|^2 - |H|^2},
+$$</p>
+<p>which is a solution of the same homogeneous scalar equation whenever $|\boldsymbol{\xi} - E| > |H|$. Applying the complementary operator to it gives the <strong>elementary $\boldsymbol{\xi}$-twistor</strong></p>
+<p>$$
+\Psi^{\pm}_{\boldsymbol{\xi}} = \frac{1}{\sqrt{2}\,|\boldsymbol{\xi} - E|}\left(\pm i\varpi - (\boldsymbol{\xi} - E) + iH\right)\psi^{\pm}_{\boldsymbol{\xi}},
+\qquad \boldsymbol{\xi} \neq E ,
+$$</p>
+<p>a complex-vector-valued field on Minkowski space. Writing $\|\tilde{Q}\|^2 = \sum_\mu |Q_\mu|^2$ for the Euclidean norm of a biquaternion, so that its <strong>Euclidean difference</strong> is $|Q_0|^2 - \sum_k |Q_k|^2$, the elementary twistor is characterised by the two invariants</p>
+<p>$$
+\|\Psi^{\pm}_{\boldsymbol{\xi}}\| = 1 ,
+\qquad
+\langle \Psi^{\pm}_{\boldsymbol{\xi}}\rangle = i\,\frac{|H|}{|\boldsymbol{\xi} - E|} ,
+$$</p>
+<p>in which the second is the source's <strong>pseudonorm</strong> and not the Euclidean difference: with the amplitude above, that difference is $-|H|^2/|\boldsymbol{\xi} - E|^2$, and the printed value is $i$ times the square root of its negative. The two agree only at $H = 0$. This is stated once here and used in the table below: its pseudonorm column carries the source's values in that convention, except the static entry, which is the Euclidean difference itself.</p>
+<p>Its energy–momentum biquaternion $\Xi = \Psi \circ \Psi^\dagger = W + iP$ has scalar part $1$ — unit energy density — and a purely imaginary vector part carrying the flux:</p>
+<p>$$
+\Xi = 1 + i\,\frac{\varpi\,\mathbf{e} - \mathbf{e} \times H}{|\boldsymbol{\xi} - E|},
+\qquad
+\mathbf{e} = \frac{\boldsymbol{\xi} - E}{|\boldsymbol{\xi} - E|} .
+$$</p>
+<p>With $\gamma$ the angle between $\mathbf{e}$ and $H$, its norm is $\sqrt{1 + c}$ and its pseudonorm $\sqrt{1 - c}$, where $c = (|\boldsymbol{\xi} - E|^2 - |H|^2\cos^2\gamma)/|\boldsymbol{\xi} - E|^2$; so at $\gamma = \pm\pi/2$ the energy–momentum biquaternion is null in the pseudonorm, $\langle \Xi \rangle = 0$, with $\|\Xi\| = \sqrt{2}$. This is the printed form of $\Xi$: the paper's bracket $[\mathbf{e}, H]$ is the vector product with $H$ on the right, $[\mathbf{e}, H] = H \times \mathbf{e} = -\mathbf{e}\times H$. Norm, pseudonorm and both invariants agree with a hundred random coefficients and wave vectors to better than $8\times 10^{-15}$. <strong>The symbol $\Xi$ is overloaded in the source</strong>: it denotes the biquaternion and, in the same formulas, its two invariants, so the source's "$\Xi = 1 + c$" and "$\Xi = 1 - c$" are the <em>squared</em> norm and the Euclidean difference of the biquaternion $\Xi = 1 + i(\varpi\mathbf{e} - \mathbf{e}\times H)/|\boldsymbol{\xi} - E|$ displayed just above; the corpus keeps the biquaternion for $\Xi$ and names the two invariants in words. The overload matters in exactly one place, the $H$-twistor below, where "$\Xi = 2$" is the squared norm and $\Xi$ itself is $1 - i\mathbf{e}_H$. (In this article $\Delta$ continues to denote the Dirac module $S\oplus\bar{S}$.)</p>
+<p><strong>The cases of the same family.</strong> The label $\boldsymbol{\xi}$ is unrestricted, and the character of the solution changes with $|\boldsymbol{\xi} - E|$:</p>
+<ul>
+<li><strong>$|\boldsymbol{\xi} - E| > |H|$:</strong> $\varpi$ is real; the potentials are travelling plane waves of wave vector $\boldsymbol{\xi}$, wavelength $2\pi/|\boldsymbol{\xi}|$ and phase velocity $\varpi/|\boldsymbol{\xi}|$, and the twistors above are the elementary ones.</li>
+<li><strong>$|\boldsymbol{\xi} - E| < |H|$:</strong> $\varpi$ is imaginary and the potential becomes $\alpha^{\pm}_{\boldsymbol{\xi}} = \exp(\pm\tau\sqrt{|H|^2 - |\boldsymbol{\xi} - E|^2} - i(\mathbf{x},\boldsymbol{\xi}))$ — a standing harmonic wave with exponentially growing or decaying amplitude. A field built from such potentials is a driven or dissipative field rather than a travelling one.</li>
+<li><strong>$|\boldsymbol{\xi} - E| = |H|$:</strong> $\varpi = 0$; the two signs of the potential coincide and the amplitude is time-independent.</li>
+<li><strong>$\boldsymbol{\xi} = E$:</strong> the potential degenerates to a phase and the twistor is the separate <strong>$H$-twistor</strong> $\Psi^{\pm}_{H} = \frac{\mp 1 + i\mathbf{e}_H}{\sqrt{2}}\exp(\mp\tau |H| - i(E,\mathbf{x}))$, of unit norm and vanishing pseudonorm. Its amplitude is $\mp\sqrt{2}$ times a rank-one projector: writing $\tilde{\Pi}_\pm(\hat{\mu}) = \tfrac12(e_0 \pm i\hat{\mu})$ for the corpus's Hermitian idempotents, the upper sign gives the amplitude $-\sqrt{2}\,\tilde{\Pi}_-(\mathbf{e}_H)$ and the lower $+\sqrt{2}\,\tilde{\Pi}_+(\mathbf{e}_H)$, the two projectors being complex conjugates of one another. This is the one member of the family whose amplitude is an <strong>idempotent</strong> — Hermitian, hence in the informational sector $\mathbb{M}_+$ — and it is null under the algebra's bilinear norm, $N(\Psi_H) = 0$. Its energy–momentum biquaternion follows: $\Xi = 1 - i\mathbf{e}_H = 2\tilde{\Pi}_-(\mathbf{e}_H)$, the same projector again, with squared norm $2$ — the source's printed "$\Xi = 2$", read as the squared norm — and vanishing Euclidean difference. The general twistor is not of this form: $N(\Psi_{\boldsymbol{\xi}}) = -\varpi^2/|\boldsymbol{\xi} - E|^2$ for the travelling family, so $\boldsymbol{\xi} = E$ is the only member that is a zero divisor and the only one whose amplitude is a pure state of the algebra. This is the counterpart, on the informational side, of the finding recorded in <em>Bispinor Fields and the Fundamental Solution of the Generalized Maxwell–Dirac Equation</em>, where the harmonic bispinor's amplitude is $i\tilde{\Pi}_-(\hat{\boldsymbol{\xi}})$ and lies in the material sector instead.</li>
+</ul>
+<p><strong>Twistor fields.</strong> The homogeneous solution is not exhausted by one $\boldsymbol{\xi}$. Convolution with arbitrary biquaternionic fields $C_j$ — regular or singular, provided the convolution exists — gives the polarised twistor field $B_{\boldsymbol{\xi}} = \Psi^{+}_{\boldsymbol{\xi}} * C_1 + \Psi^{-}_{\boldsymbol{\xi}} * C_2$, and integrating over the admissible $\boldsymbol{\xi}$ with an arbitrary integrable weight $\varphi$ gives the unpolarised field $B^0 = \sum \Psi_{\varphi} * C^0$ with $\Psi_{\varphi}(\tau,\mathbf{x}) = \int_{S_{\cap}} \varphi(\boldsymbol{\xi})\,\Psi_{\boldsymbol{\xi}}(\tau,\mathbf{x})\,dS_{\cap}(\boldsymbol{\xi})$. The twistor is thus a kernel, not a state.</p>
+<p><strong>The space the solutions live in.</strong> The source's solutions are <em>generalized</em> ones, and it names the space: they are constructed in the space of <strong>tempered generalized functions</strong>, the weights required to be integrable on the admissible surface, $\varphi \in L^1(S_{\cap})$, and the arbitrary fields $C_j$ required only to admit the convolution. The general theorem behind the construction is not the source's, and the corpus states it in <em>Distributions and Fundamental Solutions</em>: a constant-coefficient operator with a fundamental solution $E$ solves $Pu = f$ by $u = E * f$ for $f$ of compact support, and that solution is the unique one in $\mathcal{S}'$ <strong>provided the homogeneous equation has no non-zero tempered solution</strong>. It is the proviso that carries the physics here. The travelling twistors are bounded, hence tempered, so the homogeneous equation <em>does</em> have non-zero tempered solutions, the proviso fails, and no uniqueness follows: the source's solution $B = (\nabla^- - \mathbf{F})(\psi * G) + B^0$ is a family, free by exactly the twistor space built above. The arbitrary $B^0$ and the arbitrary weight $\varphi$ are the same freedom seen twice.</p>
+<p><strong>The names the source uses.</strong> The series states the same construction in a journal-published English paper, where the vector-coefficient equation is called the <strong>generalized Dirac equation</strong> — the generalization being from a complex-scalar coefficient to a vector one — and the family is introduced as <strong>biwave equations of general type</strong>. The corpus uses the second name, because it is the descriptive one, and records the first here so that a reader who arrives looking for a "generalized Dirac equation" finds this object rather than concluding the corpus lacks it. Nothing in the object changes with either name.</p>
+<p><strong>The biwave equation in its own right.</strong> The equation $\nabla^\pm B + F \circ B = G$ with a constant coefficient $F = f + \mathbf{F}$ is one equation whose specialisations are the biquaternionic Maxwell ($F = 0$) and Dirac ($F = f$) systems and whose vector-coefficient case the author places in the Yang–Mills class by its matrix form. Its solution theory — the operator composition, the fundamental solution, the characteristic surface by case, and the matrix-form claim with what it does and does not say — is in <em>The Yang–Mills Equation in Biquaternionic Form</em>, and the second-order operator it produces is in <em>The Klein–Gordon Equation in Biquaternionic Form</em>. This article owns the solutions.</p>
+<p><strong>Stationary and static twistors.</strong> Separating a harmonic time dependence, $B = B(\mathbf{x})e^{-i\omega\tau}$, replaces the mutual bigradients by $\nabla^{\pm}_{\omega} = \omega \pm \nabla$ and turns the biwave equation into an elliptic one for the complex amplitude. Its elementary solutions are the <strong>$\omega$-twistors</strong>, built on the potential $\psi^{\omega}(\mathbf{x}) = \exp(-i(\mathbf{x}, H + \mathbf{e}_E\sqrt{\omega^2 + |E|^2}))$ with $\mathbf{e}_E \perp E$ and unit modulus: a plane wave of wave vector $K_F = H + \mathbf{e}_E\sqrt{\omega^2 + |E|^2}$, wavelength $2\pi/|K_F|$ and phase velocity $\omega/|K_F|$, of unit norm and pseudonorm $i|E|/\sqrt{\omega^2 + |E|^2}$. Letting $\omega \to 0$ gives the <strong>static twistors</strong>. The source prints their elementary potential as the sinusoid $\psi^0(\mathbf{x}) = \exp(-i(\mathbf{x},E+H))$ of period $2\pi/|E+H|$, with elementary twistor $\Psi^{0+} = \frac{-1+i}{\sqrt{2}}\psi^0\,\mathbf{e}_E$ of unit norm and pseudonorm $-1$. That printed wave vector does not satisfy the source's own generating equation, and it is corrected below; it is the one entry of the table not carried as printed. The families are collected below, and every other entry was recomputed to machine precision.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Family</th>
+<th>Generating potential</th>
+<th>Wave vector</th>
+<th>Norm</th>
+<th>Pseudonorm</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>non-stationary, $\|\boldsymbol{\xi}-E\| > \|H\|$</td>
+<td>$\exp(\pm i\tau\varpi - i(\mathbf{x},\boldsymbol{\xi}))$</td>
+<td>$\boldsymbol{\xi}$</td>
+<td>$1$</td>
+<td>$i\,\|H\|/\|\boldsymbol{\xi}-E\|$</td>
+</tr>
+<tr>
+<td>non-stationary, $\|\boldsymbol{\xi}-E\| < \|H\|$</td>
+<td>$\exp(\pm\tau\sqrt{\|H\|^2-\|\boldsymbol{\xi}-E\|^2} - i(\mathbf{x},\boldsymbol{\xi}))$</td>
+<td>$\boldsymbol{\xi}$</td>
+<td>$\|H\|/\|\boldsymbol{\xi}-E\|$</td>
+<td>$i$</td>
+</tr>
+<tr>
+<td>$H$-twistor, $\boldsymbol{\xi} = E$</td>
+<td>$\exp(\mp\tau\|H\| - i(E,\mathbf{x}))$</td>
+<td>$E$</td>
+<td>$1$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>stationary, $\omega \neq 0$</td>
+<td>$\exp(-i(\mathbf{x},K_F))$</td>
+<td>$K_F = H + \mathbf{e}_E\sqrt{\omega^2+\|E\|^2}$</td>
+<td>$1$</td>
+<td>$i\,\|E\|/\sqrt{\omega^2+\|E\|^2}$</td>
+</tr>
+<tr>
+<td>static, $\omega = 0$</td>
+<td>$\exp(-i(\mathbf{x},\,H+\|E\|\,\mathbf{e})),\ \ \mathbf{e}\perp E,\ \|\mathbf{e}\|=1$</td>
+<td>$H+\|E\|\,\mathbf{e}$</td>
+<td>$1$</td>
+<td>$-1$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>A slip in the printed static entry.</strong> At $\omega = 0$ the surface is $S^0 = \{\boldsymbol{\xi} : \|\boldsymbol{\xi}-H\| = \|E\|,\ (\boldsymbol{\xi}-H,E) = 0\}$ — a circle of radius $\|E\|$ centred at $H$ in the plane perpendicular to $E$ — so the elementary static potentials are $\exp(-i(\mathbf{x},\,H + \|E\|\,\mathbf{e}))$ with $\mathbf{e}$ a <strong>unit vector perpendicular to $E$</strong>, and each of them solves the generating equation exactly (recomputed to $3\times10^{-15}$ over random $E$, $H$ and $\omega$). The source's printed $\exp(-i(\mathbf{x},E+H))$ takes the direction along $E$ instead of perpendicular to it. It satisfies the sphere half of the condition — since $\boldsymbol{\xi}-H = E$ gives $\|\boldsymbol{\xi}-H\| = \|E\|$ — but it fails the plane half $(\boldsymbol{\xi}-H,E) = 0$, which for this $\boldsymbol{\xi}$ reads $\|E\|^2 = 0$. Substituted into the generating equation it leaves the residual $-2i\|E\|^2$ (verified to $10^{-15}$), so it is an elementary static potential only in the limit $E = 0$. That limit is not arbitrary: it is the purely imaginary coefficient $\mathbf{F} = iH$ that the source treats two paragraphs earlier, where it correctly gives $\psi^0 = a\exp(-i(\mathbf{x},H))$, and the two printed forms agree there. The family is the same circle in both readings; only the representative the source prints is wrong. The stationary entry above is unaffected and was verified as printed.</p>
+<p><strong>Generating scalar potentials.</strong> The structural finding of the paper is that the twistors are not constructed by trial: they possess <strong>generating scalar potentials</strong>. The elementary potentials above solve a single scalar equation — in the non-stationary case $(\Box_A + (\mathbf{F},\mathbf{F}) + 2i(\mathbf{F},\nabla))\psi = 0$ and in the stationary case</p>
+<p>$$
+\left(\Delta \pm 2(\mathbf{F},\nabla) + \omega^2 + (\mathbf{F},\mathbf{F})\right)\psi = 0 ,
+$$</p>
+<p>with $\Box_A = \partial^2_\tau - \Delta$, the operator that <em>The Klein–Gordon Equation in Biquaternionic Form</em> treats and relates to this series' $\Box$ — and the twistor is recovered from its potential by one first-order operator. The solutions of that equation are represented as <strong>surface integrals</strong> $\psi^0(\mathbf{x}) = \int_{S^{\omega}} \varphi(\boldsymbol{\xi})\exp(-i(\mathbf{x},\boldsymbol{\xi}))\,dS^{\omega}(\boldsymbol{\xi})$ over the surface</p>
+<p>$$
+S^{\omega} = \left\{\boldsymbol{\xi} : (\boldsymbol{\xi} + i\mathbf{F}, \boldsymbol{\xi} + i\mathbf{F}) = \omega^2\right\},
+$$</p>
+<p>with $\varphi$ an arbitrary locally integrable weight. Writing $\mathbf{F} = A + iB$ for its real and imaginary parts, the surface is the circle of radius $\sqrt{\omega^2 + \|A\|^2}$ centred at $B$ in the plane through $B$ perpendicular to $A$; when $A = 0$ it is the sphere of radius $|\omega|$ centred at $B$, and when $B = 0$ the centre is the origin. Because the weight $\varphi$ is free, the solution space is a large family rather than a finite-dimensional module, and choosing $\varphi$ to match the integral representations of the Bessel functions and the spherical harmonics reduces it to a <strong>countable</strong> family of still more elementary twistors — the algebraic analogue of a partial-wave expansion, carried out with the special functions of <em>Biquaternion Higher Special Functions</em>.</p>
+<p><strong>The distinction that must be kept.</strong> Nothing in this section is a Penrose twistor. Alexeyeva's twistor is a solution of a wave equation on Minkowski space, with values in the biquaternion algebra or its complex-vector part; it is not a point of $T = S\oplus\bar{S}$, it carries no incidence relation, no conformal action and no transform, and its characteristic structure is the light cone of a partial differential operator, not the twistor quadric. The paper's own description of the series confirms this: it treats biquaternionic wave equations equivalent to Maxwell, Dirac and Yang–Mills-type systems, all of them field equations on spacetime. The shared word is a coincidence of vocabulary, and the corpus records it as such.</p>
 <h2 id="what-is-not-claimed">What Is Not Claimed</h2>
 <p>It is worth stating the negative claims as plainly as the positive ones.</p>
 <ol>
 <li><strong>Twistor theory is not biquaternions.</strong> Twistor space and the biquaternion algebra are both four-complex-dimensional, and their projectivisations are both $\mathbb{CP}^3$, but as $SL(2,\mathbb{C})$-modules they are distinct ($\Delta$ versus $(\tfrac12,\tfrac12)$), and their complex structures play different roles. No equivariant identification is claimed or available.</li>
 <li><strong>This framework does not reproduce twistor results.</strong> Nothing here derives the Penrose transform, the nonlinear graviton, or the Ward correspondence, and no attempt is made to.</li>
 <li><strong>The agreement is not a coincidence to be explained.</strong> The Weyl spinor and $SL(2,\mathbb{C})$ are common to all four-dimensional relativistic formalisms; that two of them use the same module is not evidence for either.</li>
+<li><strong>The name "twistor" is used in two unrelated senses.</strong> Penrose's twistor is a point of the conformal-module $T = S\oplus\bar{S}$; Alexeyeva's twistor is a solution of a biquaternionic wave equation on spacetime, recorded in the preceding section. Neither sense is a special case of the other, and the existence of the second is not evidence for the existence of a dictionary between the first and the algebra. The corpus keeps the two words apart by context.</li>
 <li><strong>Neither programme is a limit of the other.</strong> The framework is not the real slice of twistor theory, and twistor theory is not the conformal completion of the framework.</li>
 </ol>
 <h2 id="summary">Summary</h2>
 <p>Twistor theory and the biquaternion framework share a precise foundation: the two-component Weyl spinor module $S=\mathbb{C}^2$ and the covering $SL(2,\mathbb{C})\to SO^+(1,3)$. Twistor space is $T = S\oplus\bar{S}$, which is exactly the Dirac spinor module $\Delta$ of the spinor-module article, equipped with a Hermitian form $h$ of signature $(2,2)$ whose isometry group $SU(2,2)$ is the double cover of the conformal group $SO(2,4)$. A point of complexified Minkowski space corresponds to a line in $\mathbb{PT}$ by the incidence relation $\omega = ix\pi$, and null separation becomes the intersection of lines — the Klein correspondence. Twistor theory uses this to organise conformal invariance, null geometry, massless fields (the Penrose transform), and half-flat solutions (the nonlinear graviton).</p>
 <p>The biquaternion algebra $\mathbb{B}\cong M_2(\mathbb{C})$ carries three distinct four-complex-dimensional module structures — $S\oplus S$ under left multiplication, $S\otimes\bar{S}=(\tfrac12,\tfrac12)$ under conjugation, and (for $T$) $S\oplus\bar{S}$ — and it is the same spinor module, not the same space, that the two programmes share. The material sector $\mathbb{M}_-$ and the informational sector $\mathbb{M}_+$, with the trace formula $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$, have no twistor counterparts, while the conformal group and the twistor transform have no counterpart here. The two programmes agree on the spinor and the null cone and diverge on what they build from them; neither contains the other.</p>
+<p>The word "twistor" carries a second, independent sense in the framework's literature: the algebraic twistors of Alexeyeva, which are solutions of the homogeneous biquaternionic biwave equation $\nabla^+B+\mathbf{F}\circ B=0$ with a constant complex vector structural coefficient $\mathbf{F}=-E-iH$. They come in non-stationary, $H$-, stationary and static families, are unit-norm elements of the algebra with pseudonorm $i|H|/|\boldsymbol{\xi}-E|$ in the generic non-stationary case (the source's convention, defined where the families are described), and possess generating scalar potentials from which they are recovered by one first-order operator. One member is distinguished algebraically: the $H$-twistor's amplitude is a rank-one Hermitian idempotent of the algebra, $-\sqrt{2}\,\tilde{\Pi}_-(\mathbf{e}_H)$, making it the only one of the four families whose amplitude is a pure state — the informational-sector counterpart of the harmonic bispinor's amplitude $i\tilde{\Pi}_-(\hat{\boldsymbol{\xi}})$ in <em>Bispinor Fields and the Fundamental Solution of the Generalized Maxwell–Dirac Equation</em>. They are field configurations on spacetime, not points of a conformal module, and the two senses of the word must not be conflated.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -238,6 +348,30 @@ $$</p>
 <td>$\mathrm{Gr}(2,4)$</td>
 <td>Grassmannian of lines in $\mathbb{CP}^3$ (Klein correspondence)</td>
 </tr>
+<tr>
+<td>$\mathbf{F}=-E-iH$</td>
+<td>Constant complex-vector structural coefficient of the biwave equation (Alexeyeva); $E,H$ real vectors</td>
+</tr>
+<tr>
+<td>$\nabla^{\pm}=\partial_\tau\pm i\nabla$</td>
+<td>Mutual bigradients of the biwave equation; $\Box_A=\partial_\tau^2-\Delta$ is minus this series' $\Box$</td>
+</tr>
+<tr>
+<td>$\psi^{\pm}_{\boldsymbol{\xi}},\ \Psi^{\pm}_{\boldsymbol{\xi}}$</td>
+<td>Elementary $\boldsymbol{\xi}$-twistor's generating scalar potential and the twistor itself</td>
+</tr>
+<tr>
+<td>$\Xi=\Psi\circ\Psi^\dagger=W+iP$</td>
+<td>Energy–momentum biquaternion of a twistor</td>
+</tr>
+<tr>
+<td>$\lVert\tilde{Q}\rVert^2$</td>
+<td>Euclidean norm $\sum_\mu \lvert Q_\mu\rvert^2$; the Euclidean difference $\lvert Q_0\rvert^2 - \sum_k \lvert Q_k\rvert^2$; the source's pseudonorm is $i\sqrt{\sum_k \lvert Q_k\rvert^2 - \lvert Q_0\rvert^2}$</td>
+</tr>
+<tr>
+<td>$\tilde{\Pi}_\pm(\hat{\mu})=\tfrac12(e_0\pm i\hat{\mu})$</td>
+<td>Rank-one Hermitian idempotents; the $H$-twistor's amplitude is a real multiple of one</td>
+</tr>
 </tbody>
 </table></div>
 <h2 id="further-reading">Further Reading</h2>
@@ -251,6 +385,8 @@ $$</p>
 <li>S. A. Huggett and K. P. Tod, <em>An Introduction to Twistor Theory</em> (Cambridge, 1985), for a textbook treatment of the Penrose transform and the sheaf-cohomological formulation.</li>
 <li>R. S. Ward, "On self-dual gauge fields," <em>Physics Letters A</em> <strong>61</strong> (1977) 81–82, for the Ward correspondence.</li>
 <li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em> (Cambridge, 2001), for the spinor modules and the double cover of the Lorentz group.</li>
+<li>L. A. Alexeyeva, "Differential algebra of biquaternions. 4. Twistors and twistor fields," arXiv:1406.5347 [math-ph] (2014), for the algebraic twistors of a biquaternionic biwave equation, their invariants, and their generating scalar potentials.</li>
+<li>L. A. Alexeyeva, "Generalized Dirac equation with vector structural coefficient and its generalized solutions in biquaternions algebra," <em>Journal of Mathematics and System Science</em> <strong>5</strong> (2015) 309–314 (doi:10.17265/2159-5291/2015.08.001), for the journal-published English statement of the same construction: the space of tempered generalized functions in which its solutions are built, the case analysis of the structural coefficient, the standing twistors, and the source's own names for the equation and for the family.</li>
 </ul>
       </div>
     </main>

@@ -71,6 +71,31 @@ $$</p>
 E = \sum_{i=1}^n\dot q^i\frac{\partial L}{\partial\dot q^i} - L ,
 $$</p>
 <p>and it is constant along every solution, by the Beltrami identity.</p>
+<h3 id="mechanical-similarity">Mechanical Similarity</h3>
+<p><strong>Proposition (mechanical similarity).</strong> Take $Q=\mathbb{R}^n$ with the Euclidean kinetic energy, $L=\tfrac12m\dot q^i\dot q_i-V(q)$, and suppose the potential is time-independent and <strong>homogeneous of degree $k$</strong>,</p>
+<p>$$
+V(\alpha q)=\alpha^kV(q) \qquad\text{for every } \alpha>0 .
+$$</p>
+<p>Rescale a solution by $q(t)\mapsto\alpha q(\beta t)$. The kinetic energy acquires the factor $(\alpha/\beta)^2$ and the potential the factor $\alpha^k$, so the rescaled Lagrangian is a constant multiple of the original, $L'=\alpha^kL$, exactly when</p>
+<p>$$
+\beta=\alpha^{1-k/2} .
+$$</p>
+<p>The Euler–Lagrange operator is linear in $L$, so multiplying $L$ by a nonzero constant multiplies its equation by the same constant and does not change its solutions. The rescaled curve is therefore again a solution, and the trajectories are <strong>geometrically similar</strong>: lengths scale as $\alpha$, times as $\alpha^{1-k/2}$, and the combination $t\,l^{k/2-1}$ is invariant along the family.</p>
+<p>Two values of $k$ recover the classical landmarks.</p>
+<ul>
+<li>$k=-1$ (the Kepler and Coulomb potentials, $V\propto1/r$): $\beta=\alpha^{3/2}$, so the period scales as the $3/2$ power of the size. For the family of similar orbits this is <strong>Kepler's third law</strong>, $T^2\propto a^3$.</li>
+<li>$k=2$ (the isotropic harmonic oscillator, $V\propto r^2$): $\beta=1$, so the time scale is independent of the amplitude — the isochronism that makes the oscillator's period independent of its energy.</li>
+</ul>
+<p>The homogeneity of the potential is what lets the kinetic and potential terms scale together; a potential that is a sum of two homogeneous parts of different degrees admits no such scaling.</p>
+<h3 id="cyclic-coordinates-and-conserved-momenta">Cyclic Coordinates and Conserved Momenta</h3>
+<p><strong>Definition.</strong> A coordinate $q^k$ of a Lagrangian system is <strong>cyclic</strong>, or <strong>ignorable</strong>, if the Lagrangian does not depend on it, $\partial L/\partial q^k=0$. The conjugate momentum $p_k=\partial L/\partial\dot q^k$ is then the <strong>momentum conjugate to</strong> $q^k$.</p>
+<p><strong>Theorem (conservation of a cyclic momentum).</strong> If $q^k$ is cyclic, then $p_k$ is constant along every solution of the Euler–Lagrange equations.</p>
+<p><em>Proof.</em> The Euler–Lagrange equation with index $k$ reads $\frac{d}{dt}p_k=\frac{\partial L}{\partial q^k}$, and the right-hand side vanishes by cyclicity, so $p_k$ is a constant of the motion. The conserved quantity is the Noether charge of the one-parameter family of translations of $q^k$, which leaves the Lagrangian invariant exactly when $q^k$ is cyclic. ∎</p>
+<p><strong>Example (angular momentum).</strong> A particle of mass $m$ in a plane, in a central potential $V(r)$, has the Lagrangian in polar coordinates $(t,r,\theta)$
+$$
+L = \frac12m\bigl(\dot r^2+r^2\dot\theta^2\bigr)-V(r) .
+$$
+The coordinate $\theta$ is cyclic, so $p_\theta=mr^2\dot\theta$ is conserved along every solution; this is the angular momentum about the origin, and its conservation is the statement that a central force exerts no torque. Each cyclic coordinate reduces the order of the system by one.</p>
 <h3 id="the-legendre-transform-and-the-hamiltonian">The Legendre Transform and the Hamiltonian</h3>
 <p><strong>Definition.</strong> The <strong>Legendre transform</strong> or <strong>fibre derivative</strong> of $L$ is the map $\mathbb{F}L : TQ\to T^*Q$ given in coordinates by</p>
 <p>$$
@@ -96,6 +121,49 @@ H(q,p) = \frac12g^{ij}(q)p_ip_j + V(q) ,
 $$</p>
 <p>the sum of the kinetic and potential energies. The Euler–Lagrange equation of the pure kinetic Lagrangian, $V=0$, is the geodesic equation of $g$, so a free particle on a Riemannian manifold moves along a geodesic; the metric, the Christoffel symbols and the geodesic equation are those of Part II. The corresponding Hamiltonian flow on $T^*Q$ is the geodesic flow, whose dynamical properties are treated in the article of this Part on the geodesic flow, written in parallel.</p>
 <p><strong>Example (the oscillator and the pendulum).</strong> For $Q=\mathbb{R}$ and $L=\frac12\dot q^2-\frac12\omega^2q^2$ the Hamiltonian is $H=\frac12(p^2+\omega^2q^2)$ and the flow is the linear oscillator, with the level sets $H=\text{const}$ being ellipses. For the pendulum, $L = \frac12\dot q^2+\cos q$, the Hamiltonian is $H=\frac12p^2-\cos q$; the level sets with $H<1$ are closed orbits (librations), the separatrix $H=1$ joins the unstable equilibrium at $q=\pi$, and the level sets with $H>1$ are open (rotations). The example is the first place where the topological classification of the level sets of $H$ governs the qualitative dynamics.</p>
+<h3 id="the-canonical-momentum-one-form">The Canonical Momentum One-Form</h3>
+<p>The Legendre transform pairs velocities with momenta, and with that pairing the equation of the system can be written without coordinates, as the vanishing of a Lie derivative.</p>
+<p><strong>Definition.</strong> The <strong>canonical momentum one-form</strong> of $L$ is the $1$-form on the tangent bundle
+$$
+\theta_L = p_i\,dq^i = \frac{\partial L}{\partial\dot q^i}\,dq^i ,
+$$
+the pullback of the tautological form $p_i\,dq^i$ of the cotangent bundle by the Legendre transform. A vector field $X$ on $TQ$ is a <strong>second-order field</strong> if $X(q^i)=\dot q^i$ for each $i$, that is, if its integral curves are the velocity lifts of their projections to $Q$.</p>
+<p><strong>Theorem (coordinate-free Euler–Lagrange equation).</strong> Let $L$ be a regular Lagrangian, so that the Hessian $\bigl(\partial^2L/\partial\dot q^i\partial\dot q^j\bigr)$ is everywhere invertible. Then there is a unique second-order vector field $X$ on $TQ$ with
+$$
+\mathcal{L}_X\theta_L = dL ,
+$$
+and the integral curves of $X$ are exactly the velocity lifts of the solutions of the Euler–Lagrange equations. The field $X$ is the field of the system, and the identity is the Euler–Lagrange equation in coordinate-free form.</p>
+<p><em>Proof.</em> Write $X$ with $X(q^i)=\dot q^i$ and unknown accelerations $X(\dot q^j)$, and put $\alpha_i=X(p_i)$. Cartan's formula gives
+$$
+\mathcal{L}_X\theta_L = d(\iota_X\theta_L)+\iota_X d\theta_L = d(p_i\dot q^i)+\alpha_i\,dq^i-\dot q^i\,dp_i = p_i\,d\dot q^i+\alpha_i\,dq^i ,
+$$
+the last step using $d(p_i\dot q^i)=\dot q^i\,dp_i+p_i\,d\dot q^i$. Equating coefficients with those of $dL = L_{q^i}dq^i+L_{\dot q^i}d\dot q^i$ gives $p_i=L_{\dot q^i}$, which is the definition of $\theta_L$, and $\alpha_i=L_{q^i}$, that is
+$$
+\frac{d}{dt}\Bigl(\frac{\partial L}{\partial\dot q^i}\Bigr)=\frac{\partial L}{\partial q^i}
+$$
+along an integral curve of $X$, the Euler–Lagrange equation. Conversely, $\alpha_i=L_{q^i}$ is the linear system
+$$
+\sum_j L_{\dot q^i\dot q^j}\,X(\dot q^j) = L_{q^i}-\dot q^jL_{\dot q^i q^j}
+$$
+for the accelerations, with the Hessian as coefficient matrix; regularity makes the matrix invertible, so the accelerations, and with them $X$, are unique. ∎</p>
+<p><strong>Remark (the Cartan form and the field case).</strong> For a time-dependent Lagrangian the one-form is replaced on $TQ\times\mathbb{R}$ by the Poincaré–Cartan form $L\,dt+p_i(dq^i-\dot q^i\,dt)$, whose Lie derivative along the field of the system carries the same content together with the conservation of the energy. In a field theory the momentum is an $(m-1)$-form rather than a one-form, the Lie derivative is replaced by a divergence, and the local coordinate form is the multi-index equation of <em>The Calculus of Variations</em>. The Hamiltonian side of the field case is the subject of the article of this Part <em>Multisymplectic and Covariant Hamiltonian Field Theory</em>: there the single momentum is replaced by a polymomentum indexed by the directions of the independent variables, the momentum being correspondingly a family of $(m-1)$-forms, the symplectic form by a closed form of higher degree, and the two-form's invertibility by a degree count that leaves no covariant Poisson bracket. The case $m=1$ of that article is the present theory, so the remark is a forward reference and not an analogy.</p>
+<h3 id="higher-derivative-lagrangians-and-the-ostrogradsky-instability">Higher-Derivative Lagrangians and the Ostrogradsky Instability</h3>
+<p>Nothing above required $L$ to depend on the coordinates and their first derivatives only, and the calculus of variations extends to an integrand $L(q,\dot q,\ddot q,\dots,q^{(N)})$. The first variation now gives the <strong>higher-order Euler–Lagrange equation</strong></p>
+<p>$$
+\sum_{j=0}^{N}(-1)^j\frac{d^j}{dt^j}\frac{\partial L}{\partial q^{(j)}}=0 ,
+$$</p>
+<p>each integration by parts transferring one derivative off the variation and onto $\partial L/\partial q^{(j)}$ and contributing the sign $(-1)^j$. The canonical formalism extends with it, and for $N\ge2$ it does so at a price.</p>
+<p><strong>Ostrogradsky's theorem.</strong> For $N=2$ set $Q^1=q$, $Q^2=\dot q$ and the two momenta</p>
+<p>$$
+p_1=\frac{\partial L}{\partial\dot q}-\frac{d}{dt}\frac{\partial L}{\partial\ddot q}, \qquad p_2=\frac{\partial L}{\partial\ddot q} .
+$$</p>
+<p>When the Hessian $\partial^2L/\partial\ddot q^i\partial\ddot q^j$ is nonsingular, $\ddot q$ is solved from $p_2$, and the Hamiltonian is $H=p_1\dot q+p_2\ddot q-L$. This $H$ is <strong>linear in $p_1$</strong>, with coefficient $\dot q$: neither $L$ nor the eliminated $\ddot q$ depends on $p_1$, so $\partial H/\partial p_1=\dot q$. On every configuration with $\dot q\neq0$ the Hamiltonian is therefore unbounded below, $H\to-\infty$ along $p_1\to-\infty$ at fixed $\dot q>0$, and a non-degenerate higher-derivative Lagrangian has no stable ground state — the <strong>Ostrogradsky instability</strong>.</p>
+<p>For example $L=\tfrac12\ddot q^2$ has $p_2=\ddot q$, $H=p_1\dot q+\tfrac12p_2^2$ and Euler–Lagrange equation $q^{(4)}=0$; the Pais–Uhlenbeck oscillator</p>
+<p>$$
+L=\tfrac12\ddot q^2-\tfrac12(\omega_1^2+\omega_2^2)\dot q^2+\tfrac12\omega_1^2\omega_2^2q^2
+$$</p>
+<p>has the same linear term, with the equation $q^{(4)}+(\omega_1^2+\omega_2^2)\ddot q+\omega_1^2\omega_2^2q=0$.</p>
+<p>The instability is a statement about the order of the <strong>time</strong> derivatives, not about the number of derivatives as such: an integrand whose additional derivatives are spatial only leaves the time-derivative structure of the ordinary kinetic term intact and does not produce the linear term above.</p>
 <h2 id="hamiltonian-systems-and-the-symplectic-structure">Hamiltonian Systems and the Symplectic Structure</h2>
 <h3 id="the-symplectic-form">The Symplectic Form</h3>
 <p><strong>Definition.</strong> A <strong>symplectic manifold</strong> $(M,\omega)$ is a smooth manifold with a closed nondegenerate $2$-form $\omega$. For a function $H : M\to\mathbb{R}$, the <strong>Hamiltonian vector field</strong> $X_H$ is defined by</p>
@@ -146,10 +214,10 @@ $$</p>
 <p><strong>Remark (the relation to the integrable equations).</strong> The Liouville–Arnold theorem is the finite-dimensional half of the theory of integrable systems. The travelling-wave reductions of the KdV, nonlinear Schrödinger and sine-Gordon equations — obtained by substituting a travelling-wave ansatz into the partial differential equation — are finite-dimensional Hamiltonian systems, and their integrability, where it holds, is the integrability of this theorem; the infinite-dimensional Lax pairs of the two preceding articles reduce to finite-dimensional ones on these invariant submanifolds. The theorem also delimits integrability: a generic perturbation of an integrable system destroys the invariant tori, and the Kolmogorov–Arnold–Moser theorem describes the tori of a small perturbation that survive, those whose frequency vectors are sufficiently nonresonant; the whole subject is a chapter of dynamical systems, and the articles on that subject in this Part, written in parallel, treat the stability and the destruction of the tori.</p>
 <h2 id="examples">Examples</h2>
 <p><strong>Example (the Kepler problem).</strong> For a particle of unit mass in a central potential $-k/r$ in the plane, the configuration space is $\mathbb{R}^2\setminus\{0\}$ with polar coordinates, $H = \frac12(p_r^2+p_\theta^2/r^2)-k/r$, and the system is completely integrable with the commuting pair $F_1=H$ and $F_2=p_\theta$, the angular momentum. The level sets of $(H,p_\theta)$ are tori except for the separatrix of the parabolic orbit, the actions are the classical Delaunay variables, and the additional conserved vector (the Runge–Lenz vector) accounts for the further degeneracy of the frequency vector: the two frequencies of the bounded motion coincide, so the bounded orbits close and are ellipses rather than dense on a torus. The example shows that a system may have more integrals than the Liouville theorem requires, and that the extra integral is detected by a resonance of the frequency vector.</p>
-<p><strong>Example (the Euler top).</strong> The rigid body with a fixed point and no external torque has phase space the dual of the Lie algebra $\mathrm{SO}(3)$, with the Lie–Poisson structure and the Hamiltonian $H = \frac12\bigl(M_1^2/I_1+M_2^2/I_2+M_3^2/I_3\bigr)$; equivalently, in the body frame, the Euler equations $\dot M = M\times(I^{-1}M)$. The Casimir function of the Lie–Poisson structure, $\tfrac12(M_1^2+M_2^2+M_3^2)$, is conserved, and together with the energy and the component of the angular momentum along a fixed axis of space it gives three commuting integrals in the six-dimensional phase space $T^*SO(3)$, so the system is completely integrable, and the reduced level sets are the classical ellipsoids cut by the energy spheres; the free symmetric top has a further degeneracy and the motion is a regular precession. The example is the standard instance of a system whose integrability is read off a Poisson structure that is not symplectic, and whose reduction is the setting of the symplectic geometry of Part II.</p>
+<p><strong>Example (the Euler top).</strong> The rigid body with a fixed point and no external torque has phase space the dual of the Lie algebra $\mathrm{SO}(3)$, with the Lie–Poisson structure and the Hamiltonian $H = \frac12\bigl(M_1^2/I_1+M_2^2/I_2+M_3^2/I_3\bigr)$; equivalently, in the body frame, the Euler equations $\dot M = M\times(I^{-1}M)$. The Casimir function of the Lie–Poisson structure, $\tfrac12(M_1^2+M_2^2+M_3^2)$, is conserved, and together with the energy and the component of the angular momentum along a fixed axis of space it gives three commuting integrals in the six-dimensional phase space $T^*SO(3)$, so the system is completely integrable, and the reduced level sets are the classical ellipsoids cut by the energy spheres; the free symmetric top has a further degeneracy and the motion is a regular precession. The example is the standard instance of a system whose integrability is read off a Poisson structure that is not symplectic, and whose reduction is the setting of the symplectic geometry of Part II. The reduction itself — from the cotangent bundle $T^*SO(3)$ to the dual of the Lie algebra, the Lie–Poisson equation it carries, and the variational Euler–Poincaré equation that yields the same system — is treated in the companion article <em>Lie–Poisson Reduction and the Euler–Poincaré Equation</em>, which also derives the bracket of <em>Poisson Geometry</em> and carries the construction to the volume-preserving diffeomorphism group, where the equation of the top becomes the Euler equation of an ideal incompressible flow.</p>
 <p><strong>Example (the geodesic flow).</strong> For the mechanical Lagrangian with zero potential, the Hamiltonian flow on $T^*Q$ is the geodesic flow of the metric $g$. It is the model of a Hamiltonian system whose dynamics is chaotic for a negatively curved metric — the flow on a compact quotient of the hyperbolic plane is Anosov and ergodic, as the articles of this Part on the geodesic flow and on hyperbolic dynamics record — and completely integrable for a metric with sufficiently many Killing fields. The comparison of the two cases is the classical instance of the dichotomy between integrable and chaotic Hamiltonian dynamics.</p>
 <h2 id="summary">Summary</h2>
-<p>A Lagrangian system is given by a function $L$ on the tangent bundle of a configuration space $Q$, and its motions are the critical points of the action $S[q]=\int L(q,\dot q,t)dt$, equivalently the solutions of the Euler–Lagrange equations; the momentum $p_i=\partial L/\partial\dot q^i$ defines the Legendre transform, and when the transform is invertible the system is equivalently a Hamiltonian system on the cotangent bundle with $H=\sum p_i\dot q^i-L$ and Hamilton's equations $\dot q=\partial H/\partial p$, $\dot p=-\partial H/\partial q$. The Hamiltonian formulation is the symplectic one: a symplectic manifold $(M,\omega)$, the Hamiltonian vector field defined by $\iota_{X_H}\omega=dH$, the Poisson bracket $\{f,g\}=\omega(X_f,X_g)$ with its Jacobi identity and Leibniz rule, and the local model of Darboux $\omega=\sum dq^i\wedge dp_i$; the flow preserves $\omega$ and the volume $\omega^n/n!$, which gives Liouville's theorem and Poincaré recurrence, and a symmetry of the Hamiltonian gives a conserved momentum map by Noether's theorem. A Hamiltonian system on a $2n$-dimensional manifold is completely integrable when it possesses $n$ independent integrals in involution; then, on a compact connected regular level set, the Liouville–Arnold theorem exhibits an invariant torus with linear (conditionally periodic) flow and action-angle coordinates in which $H$ depends only on the actions, so the system is solved by quadrature. The Euler top, the Kepler problem and the geodesic flow are the standard examples, and the theory is the finite-dimensional companion of the integrable systems of the preceding articles, whose travelling-wave reductions are systems of this kind.</p>
+<p>A Lagrangian system is given by a function $L$ on the tangent bundle of a configuration space $Q$, and its motions are the critical points of the action $S[q]=\int L(q,\dot q,t)dt$, equivalently the solutions of the Euler–Lagrange equations; the momentum $p_i=\partial L/\partial\dot q^i$ defines the Legendre transform, and when the transform is invertible the system is equivalently a Hamiltonian system on the cotangent bundle with $H=\sum p_i\dot q^i-L$ and Hamilton's equations $\dot q=\partial H/\partial p$, $\dot p=-\partial H/\partial q$. The Hamiltonian formulation is the symplectic one: a symplectic manifold $(M,\omega)$, the Hamiltonian vector field defined by $\iota_{X_H}\omega=dH$, the Poisson bracket $\{f,g\}=\omega(X_f,X_g)$ with its Jacobi identity and Leibniz rule, and the local model of Darboux $\omega=\sum dq^i\wedge dp_i$; the flow preserves $\omega$ and the volume $\omega^n/n!$, which gives Liouville's theorem and Poincaré recurrence, and a symmetry of the Hamiltonian gives a conserved momentum map by Noether's theorem. A Hamiltonian system on a $2n$-dimensional manifold is completely integrable when it possesses $n$ independent integrals in involution; then, on a compact connected regular level set, the Liouville–Arnold theorem exhibits an invariant torus with linear (conditionally periodic) flow and action-angle coordinates in which $H$ depends only on the actions, so the system is solved by quadrature. The Euler top, the Kepler problem and the geodesic flow are the standard examples, and the theory is the finite-dimensional companion of the integrable systems of the preceding articles, whose travelling-wave reductions are systems of this kind. A coordinate on which the Lagrangian does not depend is cyclic, and its conjugate momentum is then conserved. The equation of a regular system can also be written without coordinates: the canonical momentum one-form $\theta_L=p_i\,dq^i$ is the pullback of the tautological form by the Legendre transform, the field of the system is the unique second-order vector field $X$ with $\mathcal{L}_X\theta_L=dL$, and the integral curves of $X$ are the velocity lifts of the solutions.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -174,6 +242,18 @@ $$</p>
 <tr>
 <td>$p_i$, $\mathbb{F}L$</td>
 <td>Momentum and Legendre transform</td>
+</tr>
+<tr>
+<td>cyclic $q^k$</td>
+<td>$\partial L/\partial q^k=0$; $p_k$ conserved</td>
+</tr>
+<tr>
+<td>$\theta_L=p_i\,dq^i$</td>
+<td>Canonical momentum one-form of $L$</td>
+</tr>
+<tr>
+<td>$\mathcal{L}_X\theta_L=dL$</td>
+<td>Coordinate-free Euler–Lagrange equation</td>
 </tr>
 <tr>
 <td>$H(q,p)$</td>
@@ -225,6 +305,7 @@ $$</p>
 <ul>
 <li>Vladimir I. Arnold, <em>Mathematical Methods of Classical Mechanics</em> (Springer, 2nd ed. 1989), for the Lagrangian and Hamiltonian formalism, the Liouville–Arnold theorem and the examples.</li>
 <li>Ralph Abraham and Jerrold E. Marsden, <em>Foundations of Mechanics</em> (Benjamin/Cummings, 2nd ed. 1978), for the global symplectic formulation and the momentum map.</li>
+<li>Jorge V. José and Eugene J. Saletan, <em>Classical Dynamics: A Contemporary Approach</em> (Cambridge University Press, 1998), for the coordinate-free form of the Euler–Lagrange equation, the canonical momentum one-form and the Cartan form.</li>
 <li>Jerrold E. Marsden and Tudor S. Ratiu, <em>Introduction to Mechanics and Symmetry</em> (Springer, 2nd ed. 1999), for Poisson structures, reduction and the Lie–Poisson examples.</li>
 <li>Carl Gustav Jacob Jacobi, <em>Vorlesungen über Dynamik</em> (Reimer, 1866), for the Hamilton–Jacobi theory and the classical integration of Hamiltonian systems.</li>
 <li>Vladimir I. Arnold, Valery V. Kozlov and Anatoly I. Neishtadt, <em>Mathematical Aspects of Classical and Celestial Mechanics</em> (Springer, 3rd ed. 2006), for integrability, the KAM theorem and its consequences.</li>

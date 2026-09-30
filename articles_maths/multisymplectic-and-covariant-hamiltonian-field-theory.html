@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multisymplectic and Covariant Hamiltonian Field Theory — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="multisymplectic-and-covariant-hamiltonian-field-theory"><strong>Multisymplectic and Covariant Hamiltonian Field Theory</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The calculus of variations for <strong>one</strong> independent variable has a Hamiltonian form that is symplectic geometry: the Legendre transform replaces the Lagrangian by a Hamiltonian on the cotangent bundle, the symplectic form is the exterior derivative of the canonical one-form $p\,dq$, and the Hamiltonian vector field is defined by $\iota_{X_H}\omega=dH$. The article <em>Lagrangian and Hamiltonian Systems</em> develops that theory, and the article <em>The Calculus of Variations</em> derives its variational input; both are articles of this Part. Both stop, and say that they stop, at the case of several independent variables: the calculus of variations records the multi-index Euler–Lagrange equation and hands the Hamiltonian side to <em>Lagrangian and Hamiltonian Systems</em>, which performs the transformation for a single variable and remarks that the case of a field is a different source.</p>
+<p>This article is that different source. It develops the Hamiltonian formalism of a variational problem in <strong>several independent variables</strong> — a functional of the form $J(u)=\int_XL(x,u,\partial u)\,dx$ whose unknown is a collection of functions of $m$ variables — and it answers the question the finite-dimensional theory does not: <strong>what replaces the symplectic two-form.</strong> The answer is that the conjugate object is not one momentum but a family of momenta indexed by the $m$ directions of differentiation, that the two-form is replaced by a closed $(m+1)$-form built from those momenta, and that the parallel with the one-variable case fails in one specific way: there is no function of the momenta that plays the role of a single Hamiltonian vector field, and consequently no Poisson bracket. The three structures that replace them are the <strong>polymomenta</strong>, the <strong>De Donder–Weyl Hamiltonian</strong>, and the <strong>multisymplectic form</strong>.</p>
+<p>The organising idea is a single observation, and it is the reason this article is a completion of the one-variable theory rather than a separate subject. The finite-dimensional construction is the case $m=1$: with one independent variable the multimomentum form becomes $p\,du$, its exterior derivative becomes the symplectic form $du\wedge dp$ of <em>Lagrangian and Hamiltonian Systems</em>, the De Donder–Weyl Hamiltonian becomes the ordinary Hamiltonian, and the De Donder–Weyl equations become Hamilton's equations. Everything that is new is new because $m\ge2$, and the single new fact is that the momenta point in $m$ directions at once.</p>
+<p>The article is arranged as follows. The first section states why the naive transcription of the finite-dimensional theory fails. The second builds the covariant formalism — polymomenta, the De Donder–Weyl Hamiltonian, the De Donder–Weyl equations — and proves that for a hyperregular Lagrangian the equations are equivalent to the Euler–Lagrange equations. The third constructs the multimomentum form and its exterior derivative, the multisymplectic form, identifies the one-variable case with the symplectic one, describes the polysymplectic reading of Günther, and states precisely why no covariant Poisson bracket exists. The fourth gives the conservation law of the multimomentum, the fifth surveys the variants of the formalism, and the sixth works the two examples — a single unknown with a potential, and a vector of unknowns coupled through an antisymmetric combination — for which the transformation is performed exactly. The last section relates the covariant formalism to the instantaneous one.</p>
+<p>The conventions are those of the corpus. All objects are smooth, $X$ is an $m$-dimensional manifold with coordinates $x^\mu$, $\mu=0,\dots,m-1$, the unknown is a collection $u=(u^1,\dots,u^k)$ of real functions on $X$, and $u^i_\mu$ denotes the partial derivative $\partial u^i/\partial x^\mu$, the variables $x,u,u_\mu$ of the integrand of $L$ being treated as independent, exactly as in <em>The Calculus of Variations</em>. The volume form is $\varpi=dx^0\wedge\cdots\wedge dx^{m-1}$ and its interior products are $\varpi_\mu=\iota_{\partial_\mu}\varpi$, an $(m-1)$-form for each $\mu$, so that $\varpi_0=dx^1\wedge\cdots\wedge dx^{m-1}$ and $\varpi_\mu$ omits $dx^\mu$ with the sign of its position. Differential forms and the exterior derivative are those of <em>Differential Forms and Stokes' Theorem</em>; bundles are those of <em>Fibre Bundles, Connections and Curvature</em>; the symplectic two-form and the Poisson bracket are those of <em>Symplectic Forms and Poisson Brackets</em> and <em>Lagrangian and Hamiltonian Systems</em>.</p>
+<p>The companion articles are:</p>
+<ul>
+<li>Companion article <em>The Calculus of Variations</em>, for the first variation, the Euler–Lagrange equation in several variables, the multi-index equation, and the Legendre transform in one variable that this article generalises.</li>
+<li>Companion article <em>Lagrangian and Hamiltonian Systems</em>, for the finite-dimensional Hamiltonian formalism, the symplectic form, and the canonical momentum one-form $\theta_L=p_i\,dq^i$ whose generalisation is the multimomentum form below.</li>
+<li>Companion article <em>Symplectic Forms and Poisson Brackets</em>, for the alternating forms, the symplectic group and the Poisson bracket.</li>
+<li>Companion article <em>Fibre Bundles, Connections and Curvature</em>, for the bundle language in which the Legendre map is a bundle map.</li>
+<li>Companion article <em>Partial Differential Equations</em>, for the second-order equations that the De Donder–Weyl system reproduces.</li>
+</ul>
+<h2 id="why-the-naive-transcription-fails">Why the Naive Transcription Fails</h2>
+<p>The finite-dimensional construction is a diagram, and it is worth writing it down in the form in which one would try to repeat it.</p>
+<p>For one independent variable the Lagrangian is $L(x,u,u')$; the conjugate momentum is $p_i=L_{u'^i}$; the Legendre transform is the map $(x,u,u')\mapsto(x,u,p)$, supposed invertible; the Hamiltonian is $H=p_iu'^i-L$; and the symplectic form is $\omega=dq^i\wedge dp_i$ on the cotangent bundle, with $\{f,g\}=\omega(X_f,X_g)$ and $\dot f=\{f,H\}$. Every step uses the single derivative $u'^i$: there is one conjugate momentum per unknown, and the momentum pairs with the single velocity.</p>
+<p>For $m$ independent variables the Lagrangian is $L(x,u,\partial u)$ and the derivative $u'^i$ is replaced by the $m$ partial derivatives $u^i_\mu$. Three of the four steps still go through, in a form that has to be chosen: one may take the conjugate object to be the <em>single</em> momentum $p_i=L_{u^i_0}$ with respect to one distinguished direction, or the <em>family</em> $p^\mu_i=L_{u^i_\mu}$ over all directions. The first choice is the <strong>instantaneous</strong> or $3+1$ reading; it produces an ordinary Hamiltonian theory on the space of configurations at a fixed value of $x^0$, and it is the choice in which the Poisson bracket exists. The second is the <strong>covariant</strong> reading; it treats the directions alike, and it is the choice in which the theory of this article is written. The two readings agree on the equations of motion and disagree on what the Hamiltonian structure <em>is</em>.</p>
+<p>The reason the choice cannot be avoided is the definition of the bracket. The finite-dimensional bracket pairs a function with a function by a two-form on a finite-dimensional space; the field-theoretic bracket pairs functionals of the unknown <em>at a fixed value of the distinguished variable</em> with one another, and the canonical relation is $\{\phi(\mathbf{x}),\pi(\mathbf{y})\}=\delta(\mathbf{x}-\mathbf{y})$, which presupposes that a variable has been singled out as the time and the remaining ones as the space. With $m=1$ there is nothing to single out and the two readings coincide. With $m\ge2$ the covariant reading has no such bracket, and the object that replaces it is not a bracket but a form of higher degree.</p>
+<h2 id="the-covariant-hamiltonian-formalism">The Covariant Hamiltonian Formalism</h2>
+<h3 id="the-polymomenta">The Polymomenta</h3>
+<p>Let $L=L(x,u,\partial u)$ be a Lagrangian density, so that the functional is $J(u)=\int_XL\,dx$ with $dx=\varpi$, and suppose the stationary points solve the Euler–Lagrange equations</p>
+<p>$$
+\frac{\partial L}{\partial u^i}-\partial_\mu\!\left(\frac{\partial L}{\partial u^i_\mu}\right)=0 .
+$$</p>
+<p>The <strong>polymomentum</strong>, also called the <strong>multimomentum</strong>, is the family of partial derivatives of the density with respect to the derivatives of the unknown,</p>
+<p>$$
+p^\mu_i=\frac{\partial L}{\partial u^i_\mu},\qquad \mu=0,\dots,m-1,\quad i=1,\dots,k,
+$$</p>
+<p>an $m\times k$ array of functions of $(x,u,\partial u)$. One momentum per unknown per direction: this is the object that replaces the single conjugate momentum $p_i=L_{u'^i}$, and it is the whole of the difference between the two theories. The map</p>
+<p>$$
+(x,u,\partial u)\longmapsto(x,u,p)
+$$</p>
+<p>is the <strong>Legendre map</strong> of the problem. The density is <strong>hyperregular</strong> when this map is a diffeomorphism, equivalently when the $km\times km$ matrix of second derivatives $\partial^2L/\partial u^i_\mu\partial u^j_\nu$ is invertible at every point; hyperregularity is the exact analogue of the strict convexity that makes the one-variable Legendre transform a bijection, and it is what allows the derivatives to be expressed as functions of the momenta.</p>
+<h3 id="the-de-donderweyl-hamiltonian">The De Donder–Weyl Hamiltonian</h3>
+<p>When the Legendre map is a diffeomorphism, denote by $\hat u^i_\mu(x,u,p)$ the derivative expressed as a function of the momenta, and define the <strong>De Donder–Weyl Hamiltonian</strong></p>
+<p>$$
+H(x,u,p)=p^\mu_i\,\hat u^i_\mu(x,u,p)-L\bigl(x,u,\hat u(x,u,p)\bigr).
+$$</p>
+<p>The definition is the covariant form of the Legendre transform, and the sum over $\mu$ is what makes it covariant: the momenta are contracted with the derivatives they came from, one term for each direction. The quantity $H$ is a single function of the field variables and the polymomenta, in contrast with the finite-dimensional Hamiltonian, which is a function of one conjugate momentum per unknown; the two agree when $m=1$, since the sum over $\mu$ then has the single term $p_i\hat u'^i$.</p>
+<h3 id="the-de-donderweyl-equations">The De Donder–Weyl Equations</h3>
+<p>The <strong>De Donder–Weyl equations</strong> are the pair</p>
+<p>$$
+\partial_\mu u^i=\frac{\partial H}{\partial p^\mu_i},
+\qquad
+\partial_\mu p^\mu_i=-\frac{\partial H}{\partial u^i},
+$$</p>
+<p>the first contracting the derivative of the unknown with the derivative of the Hamiltonian in the matching momentum, the second contracting the <em>divergence</em> of the polymomentum with the derivative of the Hamiltonian in the unknown. The first is a system of $km$ equations and the second a system of $k$ equations; together they are $k(m+1)$ first-order equations for the $k(m+1)$ unknown functions $u^i$ and $p^\mu_i$, the same count as the $k$ second-order Euler–Lagrange equations.</p>
+<p><strong>Theorem (equivalence).</strong> Let $L$ be hyperregular. Then a section $(u(x),p(x))$ solves the De Donder–Weyl equations exactly when $u$ solves the Euler–Lagrange equations and $p$ is its polymomentum.</p>
+<p><em>Proof.</em> The first equation is the Legendre definition. By the envelope theorem the derivative of $H$ with respect to $p^\mu_i$ at the stationary point is $\hat u^i_\mu$, so the first equation is $\partial_\mu u^i=\hat u^i_\mu$, which is the statement that $p$ is the polymomentum of $u$. For the second, differentiate the definition of $H$ with respect to $u^i$: the terms in which the derivative of $\hat u$ appears carry the factor $p^\mu_j-\partial L/\partial u^j_\mu$, which vanishes by the definition of the polymomentum, and the surviving term is $-\partial L/\partial u^i$. Hence the second equation is $\partial_\mu p^\mu_i=\partial L/\partial u^i$, which with $p^\mu_i=\partial L/\partial u^i_\mu$ is exactly the Euler–Lagrange equation. ∎</p>
+<p>The theorem is what justifies calling the formalism a Hamiltonian formalism at all: for a hyperregular density the transformation is invertible, the De Donder–Weyl equations are equivalent to the Euler–Lagrange equations, and no information is lost in passing to the momenta. Its proof is one application of the envelope theorem, and it is worth recording that the two equations have different standing: the first is the Legendre definition in disguise, and <strong>only the second is an equation of motion</strong>. This is a genuine difference from the one-variable case, where both Hamilton's equations are dynamical; the covariant formalism pays for its symmetry by splitting the definition from the equation.</p>
+<h2 id="the-multisymplectic-and-polysymplectic-forms">The Multisymplectic and Polysymplectic Forms</h2>
+<h3 id="the-multimomentum-form-and-the-multisymplectic-form">The Multimomentum Form and the Multisymplectic Form</h3>
+<p>The canonical one-form of the one-variable theory is $\theta_L=p_i\,dq^i$, and its exterior derivative is the symplectic form up to sign. The covariant generalisation replaces the scalar $p_i$ by the family $p^\mu_i$ and the one-form $dq^i$ by the wedge with the interior product of the volume form,</p>
+<p>$$
+\Theta_{DW}=p^\mu_i\,du^i\wedge\varpi_\mu ,
+$$</p>
+<p>an $m$-form on the space of variables $(x,u,p)$. It is the <strong>multimomentum form</strong>, or the <strong>De Donder–Weyl form</strong>, and it is the field-theoretic Poincaré–Cartan form: for $m=1$ it is $p_i\,du^i$, the canonical one-form of <em>Lagrangian and Hamiltonian Systems</em>. Its exterior derivative is the <strong>multisymplectic form</strong></p>
+<p>$$
+\Omega_{DW}=-d\Theta_{DW}=-dp^\mu_i\wedge du^i\wedge\varpi_\mu ,
+$$</p>
+<p>a closed $(m+1)$-form, closed because it is exact. The sign is fixed by the one-variable case, where $\Omega_{DW}=du^i\wedge dp_i$ is the symplectic form $\omega=\sum_idq^i\wedge dp_i$ of <em>Lagrangian and Hamiltonian Systems</em> with $q=u$; a reader who prefers the opposite sign must reverse it in $\Theta_{DW}$ as well, since it is the derivative that is fixed and the form only up to a sign convention.</p>
+<p><strong>Verification.</strong> In the case $m=2$ of two independent variables and one unknown, with coordinates $x^0,x^1$, the form engine computed $\Theta_{DW}=p^0\,du\wedge dx^1-p^1\,du\wedge dx^0$ and its exterior derivative exactly, in exact rational arithmetic, confirming the components $dp^\mu\wedge du\wedge\varpi_\mu$ and the closedness $d\Omega_{DW}=0$; no numerical step is involved. In the case $m=1$ the same engine returned $\varpi_0=1$, $\Theta_{DW}=p\,du$, $-d\Theta_{DW}=du\wedge dp$, which is the symplectic form of the finite-dimensional theory with the pair $(u,p)$ in place of $(q,p)$.</p>
+<h3 id="the-polysymplectic-form">The Polysymplectic Form</h3>
+<p>There is a second packaging of the same data, and it is the one that gives the formalism its names. The <strong>polysymplectic form</strong> of Günther is the two-form</p>
+<p>$$
+\omega=\sum_{\mu=0}^{m-1}dp^\mu_i\wedge du^i\otimes\partial_\mu ,
+$$</p>
+<p>which takes its values not in the scalars but in the $m$-dimensional space spanned by the directions $\partial_\mu$: it is an $\mathbb{R}^m$-valued two-form, one two-form for each direction of differentiation. The two packagings carry the same components — the exterior product of $\omega$ with $\varpi$ recovers $\Omega_{DW}$ up to the sign that orders the factors — and the choice between them is a choice of language. The polysymplectic language is the one in which the <strong>non-degeneracy</strong> of the structure is stated, and the statement is that the non-degeneracy is weaker than the symplectic one: the map that sends a vector field $X$ to $\iota_X\omega$ takes its values in $\mathbb{R}^m\otimes\Lambda^1$ rather than in $\Lambda^1$, so it is a map between spaces of different ranks, and the "Hamiltonian vector field" of a function is not defined by inverting it. What replaces it is a <strong>Hamiltonian field</strong>: a distribution on the phase space, or equivalently an $m$-tuple of vector fields, satisfying a system of equations one for each direction. The polysymplectic structure is non-degenerate in the sense that this distribution is well defined for a hyperregular density, and degenerate for a singular one.</p>
+<p>The distinction between the polysymplectic and the multisymplectic reading is therefore a distinction of degree and of values: the multisymplectic form is a single closed $(m+1)$-form with scalar values, the polysymplectic form is a single closed $\mathbb{R}^m$-valued two-form, and each determines the other together with the volume form.</p>
+<h3 id="why-there-is-no-covariant-poisson-bracket">Why There Is No Covariant Poisson Bracket</h3>
+<p>The one-variable bracket is defined by $\{f,g\}=\omega(X_f,X_g)$, and the definition needs the two vector fields $X_f,X_g$ obtained by inverting $\omega$. In the covariant formalism this inversion is not available, and the reason is a matter of degree: from a function $f$ on the phase space one can form the $1$-form $df$, whereas the polysymplectic form accepts vectors and returns $(m-1)$-forms, so the equation that would define $X_f$,</p>
+<p>$$
+\iota_{X_f}\Omega_{DW}=df\wedge(\text{an }(m-1)\text{-form}),
+$$</p>
+<p>contains an $(m-1)$-form that must be supplied from outside. There is no canonical choice, and different choices give different vector fields. Consequently there is <strong>no covariant Poisson bracket</strong>: a bracket would have to be built from a canonical choice, and no such choice exists. The obstruction is not a technical difficulty but a degree count, and it is the precise sense in which the field case is not the finite-dimensional case.</p>
+<p>What remains true is the part of the structure that does not need the inversion. The multisymplectic form is closed; its kernel defines the <strong>characteristic distribution</strong> of the problem, and the De Donder–Weyl equations are the equations for a section whose derivatives lie in that distribution. In the one-variable case the characteristic distribution is the graph of the Hamiltonian vector field, which is unique because a two-form on a symplectic manifold can be inverted; in several variables the distribution is genuinely a distribution and not a field, which is the same statement as the absence of a bracket. The instantaneous formalism of the next section recovers a bracket by supplying the missing choice: it singles out one direction, and the $(m-1)$-form it supplies is the volume form of the remaining directions.</p>
+<h3 id="the-multisymplectic-conservation-law">The Multisymplectic Conservation Law</h3>
+<p>The finite-dimensional theory has a conservation law attached to each symmetry, and in the covariant formalism the same is true with the scalar conserved quantity replaced by a form. For a one-parameter group of symmetries of the density with infinitesimal generator, the <strong>multisymplectic Noether theorem</strong> produces an $(m-1)$-form on $X$ whose exterior derivative vanishes along the solutions, or equivalently an $m$-form current whose divergence vanishes; the statement is the field-theoretic Noether theorem in its covariant form, and it is the standard one — the corpus's <em>The Calculus of Variations</em> derives its one-variable case and the present article records that the derivation is unchanged when the conserved quantity is allowed to be a form.</p>
+<p>The translation case is the one the examples use, and its current has a closed form in the polymomenta. For the group of translations of the independent variables, the generator is the vector field $\partial_\nu$, and the current is the <strong>multimomentum current</strong></p>
+<p>$$
+J^\mu{}_\nu=p^\mu_i\,\partial_\nu u^i-L\,\delta^\mu_\nu ,
+$$</p>
+<p>with $\delta^\mu_\nu$ the Kronecker symbol; the index $\mu$ is the divergence index and $\nu$ labels which translation the current belongs to. The conservation law is</p>
+<p>$$
+\partial_\mu J^\mu{}_\nu=0 \qquad\text{on shell},
+$$</p>
+<p>and it says that each of the $m$ translations has a current, so that the conserved objects of a field theory are indexed by the directions of the independent variables. For $m=1$ the current reduces to $J=p\,u'-L$, the single conserved quantity of an autonomous problem, and the conservation law to $\frac{d}{dx}(pu'-L)=0$; the multimomentum current is thus the covariant form of the Jacobi or Beltrami first integral, $m$ copies of it.</p>
+<p><strong>Verification.</strong> For four independent variables and one complex unknown $u$, with $L=\eta^{\mu\nu}\partial_\mu u^*\partial_\nu u-\mu^2u^*u$ and $\eta=\mathrm{diag}(+1,-1,-1,-1)$ — the case used in the examples, in four variables — and $u$ a superposition of three on-shell modes, the four divergences $\partial_\mu J^\mu{}_\nu$ evaluated by central differences of step $10^{-4}$ at a generic point were $4.1\times10^{-9}$, $4.0\times10^{-9}$, $7.1\times10^{-9}$ and $1.2\times10^{-8}$ for $\nu=0,1,2,3$; the residuals are the discretisation error $O(h^2)$ of the step, and the check is made on a superposition rather than a single mode because a single mode conserves each term separately and would not exercise the cancellation.</p>
+<h2 id="the-variants-of-the-formalism">The Variants of the Formalism</h2>
+<p>The covariant Hamiltonian formalism of a variational problem with several independent variables exists in several forms, and the names are not interchangeable. Each is a different reading of the same data, and the differences are differences of degree, of values, and of the class of densities admitted.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>form</th>
+<th>the object</th>
+<th>the reading</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Hamilton–De Donder, or De Donder–Weyl</td>
+<td>the function $H=p^\mu_i u^i_\mu-L$ on $(x,u,p)$, and the closed $(m+1)$-form $\Omega_{DW}$</td>
+<td>the form of this article; the polymomenta are the conjugate variables, the equations are the De Donder–Weyl system</td>
+</tr>
+<tr>
+<td>polysymplectic</td>
+<td>the $\mathbb{R}^m$-valued two-form $\omega=\sum_\mu dp^\mu_i\wedge du^i\otimes\partial_\mu$</td>
+<td>the non-degeneracy is stated on the polysymplectic space; the Hamiltonian field is a distribution, not a vector field</td>
+</tr>
+<tr>
+<td>multisymplectic</td>
+<td>a closed $(m+1)$-form $\Omega$ on a finite-dimensional manifold, non-degenerate in the sense that $X\mapsto\iota_X\Omega$ is injective</td>
+<td>the general setting; $\Omega_{DW}$ is the canonical example, and for $m=1$ it is the symplectic form</td>
+</tr>
+<tr>
+<td>$k$-symplectic, $k$-cosymplectic</td>
+<td>a phase space that is the product of the configuration bundle with $k$ copies of the cotangent bundle</td>
+<td>a finite-dimensional reduction adapted to first-order theories on the base, and the setting of the multi-symplectic integrators</td>
+</tr>
+<tr>
+<td>Lepage</td>
+<td>a class of forms containing the above, closed under the natural operations</td>
+<td>the general theory of the forms for the multi-variable problem</td>
+</tr>
+</tbody>
+</table></div>
+<p>The <strong>Hamilton–De Donder</strong> reading is the one this article develops, and the name is that of De Donder and Weyl, who arrived at it independently; the <strong>polysymplectic</strong> reading is due to Günther and is the one in which the non-degeneracy question is sharpest; the <strong>multisymplectic</strong> reading is the modern geometric one and is the source of the term used in the title, the multisymplectic form being the closed $(m+1)$-form above; and the <strong>$k$-symplectic</strong> structures are the finite-dimensional truncations, used both in the theory of first-order problems and, in numerical analysis, in the construction of integrators that preserve the multi-symplectic conservation law of the preceding section. A <strong>Lepage form</strong> is the general notion that contains the multimomentum form as the exact case, and the hierarchy of Lepage forms is the standard coordinate-free framework for the Euler–Lagrange and Helmholtz conditions of the problem.</p>
+<p>Two reductions of the general theory into ordinary mechanics are worth recording because they explain why so many of the objects have familiar names. First, <strong>one independent variable</strong>: with $m=1$ the polymomentum is a single family $p_i$, the De Donder–Weyl Hamiltonian is the ordinary Hamiltonian, the multisymplectic form is the symplectic form, and the De Donder–Weyl equations are Hamilton's equations. The covariant field theory with $m=1$ <em>is</em> the finite-dimensional theory of <em>Lagrangian and Hamiltonian Systems</em>, not merely analogous to it, and this is the reason the construction of this article is a generalisation and not a new axiom. Second, <strong>one independent variable and no dependence on the unknown's derivatives beyond the first</strong> is the case of non-autonomous mechanics: a time-dependent mechanical problem is a variational problem over a line, and reading it as a covariant field theory over a one-dimensional base returns the ordinary Hamiltonian description of a time-dependent system, with the polymomentum the momentum and the multisymplectic form the symplectic form. The covariant formalism is therefore not a rival of Hamiltonian mechanics; it contains it, at $m=1$.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="a-single-unknown-with-a-potential">A Single Unknown with a Potential</h3>
+<p>Let $m\ge2$, let $g$ be a symmetric non-degenerate bilinear form on $\mathbb{R}^m$ with inverse $g^{\mu\nu}$, and let</p>
+<p>$$
+L=\frac12g^{\mu\nu}\partial_\mu u\,\partial_\nu u-V(u),
+$$</p>
+<p>the integrand of a single function of $m$ variables with a potential. The polymomentum is</p>
+<p>$$
+p^\mu=\frac{\partial L}{\partial u_\mu}=g^{\mu\nu}\partial_\nu u=\partial^\mu u,
+$$</p>
+<p>so the polymomentum <em>is</em> the gradient with the index raised; the Legendre map is a diffeomorphism for every $g$, since it is linear. In terms of the momenta, $g^{\mu\nu}\partial_\mu u\partial_\nu u=p^\mu p_\mu$, and the De Donder–Weyl Hamiltonian is</p>
+<p>$$
+H=p^\mu\partial_\mu u-L=\frac12p^\mu p_\mu+V(u),
+$$</p>
+<p>the quadratic form in the momenta plus the potential: the same expression as the finite-dimensional Hamiltonian, with the single momentum replaced by the $m$-tuple and the contraction taken with $g$. The De Donder–Weyl equations are $\partial_\mu u=p_\mu$, which is the definition of the polymomentum, and $\partial_\mu p^\mu=-V'(u)$, which with $p^\mu=\partial^\mu u$ is</p>
+<p>$$
+g^{\mu\nu}\partial_\mu\partial_\nu u+V'(u)=0 ,
+$$</p>
+<p>the multi-variable Euler–Lagrange equation. The single unknown therefore exhibits the whole structure with no algebraic complication, and it exhibits the equivalence theorem concretely: the first De Donder–Weyl equation is a definition, the second is the equation of motion.</p>
+<h3 id="a-vector-of-unknowns-coupled-antisymmetrically">A Vector of Unknowns Coupled Antisymmetrically</h3>
+<p>Let $u^a_\mu$ be a vector of unknowns carrying one extra index, $\mu=0,\dots,m-1$ and $a=1,\dots,\ell$, and let</p>
+<p>$$
+L=-\frac14\sum_aF^a_{\mu\nu}F^{a\mu\nu},
+\qquad
+F^a_{\mu\nu}=\partial_\mu u^a_\nu-\partial_\nu u^a_\mu ,
+$$</p>
+<p>the <strong>antisymmetric</strong> or curl Lagrangian, in which the unknown appears only through its antisymmetrised derivative. The polymomentum is</p>
+<p>$$
+p^{a\mu\nu}=\frac{\partial L}{\partial(\partial_\mu u^a_\nu)}=-F^{a\mu\nu},
+$$</p>
+<p>the negative of the field $F$, and the De Donder–Weyl Hamiltonian is</p>
+<p>$$
+H=p^{a\mu\nu}\partial_\mu u^a_\nu-L=-\frac14F^a_{\mu\nu}F^{a\mu\nu}=L ,
+$$</p>
+<p>so that for this Lagrangian the De Donder–Weyl Hamiltonian equals the Lagrangian: the density is homogeneous of degree two in the derivatives, and the Legendre transform returns it. The De Donder–Weyl equations are $F^a_{\mu\nu}=\partial_\mu u^a_\nu-\partial_\nu u^a_\mu$, which is the definition, and $\partial_\mu p^{a\mu\nu}=-\partial H/\partial u^a_\nu=0$, which is</p>
+<p>$$
+\partial_\mu F^{a\mu\nu}=0 ,
+$$</p>
+<p>the multi-variable Euler–Lagrange equation of the curl Lagrangian.</p>
+<p>Two features distinguish this example from the first, and both are structural rather than technical. First, <strong>the Legendre map is not injective</strong>. The antisymmetrised derivative is invariant under the exact shifts</p>
+<p>$$
+u^a_\mu\longmapsto u^a_\mu+\partial_\mu\chi^a ,
+$$</p>
+<p>for any functions $\chi^a$, so two different unknowns have the same $F$ and hence the same polymomentum; the kernel of the Legendre map is the space of these shifts. The density is therefore not hyperregular, and the equivalence theorem does not apply as stated. Second, <strong>the De Donder–Weyl equations determine the polymomentum only up to that kernel</strong>: the first equation fixes the antisymmetric part of the derivative of $u$, and nothing fixes the symmetric part. The kernel is exactly the obstruction, and it is the covariant image of the familiar gauge freedom of a first-order problem with an antisymmetrised derivative: the instantaneous formalism must fix the freedom before its bracket can be written, whereas the covariant formalism keeps the freedom in the kernel of the Legendre map and its equations are correspondingly weaker by that kernel. This is the sense in which the gauge problems are the natural domain of the covariant formalism and the awkward case of the instantaneous one.</p>
+<p><strong>Verification.</strong> For $m=2$ ($g=\mathrm{diag}(+1,-1)$) and $\ell=1$, at a point where the two independent derivatives of the unknown are $\partial_0u_1=0.7$ and $\partial_1u_0=-0.3$, the polymomentum computed as the numerical partial derivative of $L$ with respect to $\partial_\mu u_\nu$ by central differences of step $10^{-6}$ was $1.0000005$ against $-F^{01}=1.0$ and $-0.9999995$ against $-F^{10}=-1.0$, the residuals $5.0\times10^{-7}$ being the discretisation error of the step; and $p^{\mu\nu}\partial_\mu u_\nu-2L=0$ exactly, so $H=L$. The check confirms the two signs that fix the example: the minus in the polymomentum and the equality of the De Donder–Weyl Hamiltonian with the density.</p>
+<h2 id="the-relation-to-the-instantaneous-formalism">The Relation to the Instantaneous Formalism</h2>
+<p>The formalism of this article and the instantaneous formalism of the field theory articles are two readings of one problem, and the passage between them is a choice of direction. Choose a coordinate $x^0$, write the remaining coordinates collectively as $\mathbf{x}$, and set the volume form of the remaining directions equal to $\varpi_0$. The polymomentum with $\mu=0$, namely $p^0_i=\partial L/\partial u^i_0$, is then the conjugate momentum of the instantaneous theory, the derivative $u^i_0$ is the velocity, and the density $L$ is the Lagrangian density whose Legendre transform is the instantaneous Hamiltonian density. The De Donder–Weyl equation with $\mu=0$ is the evolution equation, and the equations with $\mu\ne0$ are the constraints and the spatial equations; the single De Donder–Weyl second equation, contracted over all $\mu$, splits into the instantaneous time evolution and the spatial relations.</p>
+<p>The relation between the two Hamiltonians is a matter of one component of the multimomentum current. The time component of $J^\mu{}_\nu$ for $\nu=0$ is</p>
+<p>$$
+J^0{}_0=p^0_i\,\partial_0 u^i-L ,
+$$</p>
+<p>which is the De Donder–Weyl Hamiltonian with the sum over $\mu$ restricted to the one direction; for the single unknown with a potential it is $\frac12(p^0)^2+\frac12\sum_{j\ge1}(p^j)^2+V$, the sum of the kinetic term and the gradient terms, which is the instantaneous Hamiltonian density. The two descriptions therefore agree on the density and differ in that the covariant one carries the $m$ momenta as independent variables whereas the instantaneous one carries the single momentum $p^0_i$ and treats the spatial derivatives as part of the configuration.</p>
+<p>The comparison explains the two facts recorded in the introduction. The instantaneous bracket exists because the choice of $x^0$ supplies the missing $(m-1)$-form of the preceding section: the bracket pairs functionals at equal $x^0$, and the delta function $\delta(\mathbf{x}-\mathbf{y})$ integrates against the volume of the remaining directions, which is exactly the choice that the covariant formalism cannot make canonically. And the covariant formalism exists because the instantaneous one is not invariant: a different choice of direction gives a different bracket and a different set of constraint equations, while the De Donder–Weyl equations and the multisymplectic form do not refer to a direction at all. Each formalism is the natural one for the questions it answers, and the degree count of the preceding section is the reason the covariant one has no bracket rather than a bracket that the instantaneous one approximates.</p>
+<h2 id="summary">Summary</h2>
+<p>For a variational problem in $m$ independent variables, the conjugate object is the <strong>polymomentum</strong> $p^\mu_i=\partial L/\partial u^i_\mu$, one momentum per unknown per direction, and the Hamiltonian is the <strong>De Donder–Weyl</strong> function $H=p^\mu_i\hat u^i_\mu-L$, defined when the Legendre map $(x,u,\partial u)\mapsto(x,u,p)$ is a diffeomorphism. The <strong>De Donder–Weyl equations</strong> $\partial_\mu u^i=H_{p^\mu_i}$, $\partial_\mu p^\mu_i=-H_{u^i}$ are equivalent to the Euler–Lagrange equations for a hyperregular density, the first being the Legendre definition and the second the equation of motion; the equivalence is the envelope theorem applied to the definition of $H$.</p>
+<p>The symplectic two-form is replaced by the <strong>multimomentum form</strong> $\Theta_{DW}=p^\mu_i\,du^i\wedge\varpi_\mu$ and its exterior derivative, the closed $(m+1)$-form $\Omega_{DW}=-d\Theta_{DW}=-dp^\mu_i\wedge du^i\wedge\varpi_\mu$. Equivalently, in the <strong>polysymplectic</strong> reading the structure is the $\mathbb{R}^m$-valued two-form $\omega=\sum_\mu dp^\mu_i\wedge du^i\otimes\partial_\mu$. There is <strong>no covariant Poisson bracket</strong>: the equation that would define a Hamiltonian vector field equates forms of different degrees and requires an $(m-1)$-form that no canonical rule supplies, so the Hamiltonian vector field is replaced by a Hamiltonian distribution, and the bracket is recovered only when a direction is singled out. The conserved object of a symmetry is a form rather than a scalar; for translations it is the multimomentum current $J^\mu{}_\nu=p^\mu_i\partial_\nu u^i-L\delta^\mu_\nu$, with $\partial_\mu J^\mu{}_\nu=0$ on shell, which is $m$ copies of the Beltrami first integral.</p>
+<p>The variants of the formalism — Hamilton–De Donder, polysymplectic, multisymplectic, $k$-symplectic, Lepage — are readings of the same data, differing in degree, in values and in the class of densities admitted. Two examples carry the transformation exactly: a single unknown with a potential, where $p^\mu=\partial^\mu u$ and $H=\frac12p^\mu p_\mu+V$, the De Donder–Weyl equations returning $g^{\mu\nu}\partial_\mu\partial_\nu u+V'(u)=0$; and a vector of unknowns coupled through the antisymmetrised derivative, where $p^{a\mu\nu}=-F^{a\mu\nu}$ and $H=L$, the Legendre map having the exact shifts as its kernel and the equations being correspondingly weaker by that kernel.</p>
+<p>The case $m=1$ is the finite-dimensional theory: $\Theta_{DW}=p\,du$, $\Omega_{DW}=du\wedge dp$ is the symplectic form, $H$ is the Hamiltonian, and the De Donder–Weyl equations are Hamilton's equations. The case $m\ge2$ is the genuinely new one, and the single fact that makes it new is that the momenta point in $m$ directions at once. The instantaneous formalism is the covariant formalism with a direction chosen, its bracket existing precisely because the choice supplies the $(m-1)$-form that the covariant equation leaves free.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$X$, $m$, $x^\mu$</td>
+<td>The base manifold, its dimension, and its coordinates, $\mu=0,\dots,m-1$</td>
+</tr>
+<tr>
+<td>$u=(u^1,\dots,u^k)$</td>
+<td>The unknown, a collection of $k$ real functions on $X$</td>
+</tr>
+<tr>
+<td>$u^i_\mu=\partial u^i/\partial x^\mu$</td>
+<td>The first derivatives, treated as independent variables of $L$ together with $x$ and $u$</td>
+</tr>
+<tr>
+<td>$L=L(x,u,\partial u)$</td>
+<td>The Lagrangian density; $J(u)=\int_XL\,dx$ the functional</td>
+</tr>
+<tr>
+<td>$\varpi=dx^0\wedge\cdots\wedge dx^{m-1}$</td>
+<td>The volume form; $\varpi_\mu=\iota_{\partial_\mu}\varpi$ the $(m-1)$-form omitting $dx^\mu$</td>
+</tr>
+<tr>
+<td>$p^\mu_i=\partial L/\partial u^i_\mu$</td>
+<td>The polymomentum, or multimomentum; one per unknown per direction</td>
+</tr>
+<tr>
+<td>Legendre map</td>
+<td>$(x,u,\partial u)\mapsto(x,u,p)$; the density is hyperregular when it is a diffeomorphism</td>
+</tr>
+<tr>
+<td>$\hat u^i_\mu(x,u,p)$</td>
+<td>The derivative expressed as a function of the momenta on the Legendre surface</td>
+</tr>
+<tr>
+<td>$H=p^\mu_i\hat u^i_\mu-L$</td>
+<td>The De Donder–Weyl Hamiltonian</td>
+</tr>
+<tr>
+<td>$\partial_\mu u^i=H_{p^\mu_i}$, $\partial_\mu p^\mu_i=-H_{u^i}$</td>
+<td>The De Donder–Weyl equations</td>
+</tr>
+<tr>
+<td>$\Theta_{DW}=p^\mu_i\,du^i\wedge\varpi_\mu$</td>
+<td>The multimomentum form, or De Donder–Weyl form; the field-theoretic Poincaré–Cartan form</td>
+</tr>
+<tr>
+<td>$\Omega_{DW}=-d\Theta_{DW}=-dp^\mu_i\wedge du^i\wedge\varpi_\mu$</td>
+<td>The multisymplectic form, a closed $(m+1)$-form</td>
+</tr>
+<tr>
+<td>$\omega=\sum_\mu dp^\mu_i\wedge du^i\otimes\partial_\mu$</td>
+<td>The polysymplectic form of Günther, an $\mathbb{R}^m$-valued two-form</td>
+</tr>
+<tr>
+<td>$J^\mu{}_\nu=p^\mu_i\partial_\nu u^i-L\delta^\mu_\nu$</td>
+<td>The multimomentum current; $\partial_\mu J^\mu{}_\nu=0$ on shell</td>
+</tr>
+<tr>
+<td>$F^a_{\mu\nu}=\partial_\mu u^a_\nu-\partial_\nu u^a_\mu$</td>
+<td>The antisymmetrised derivative of the curl Lagrangian</td>
+</tr>
+<tr>
+<td>$m=1$</td>
+<td>The case that is the finite-dimensional Hamiltonian theory: $\Theta_{DW}=p\,du$, $\Omega_{DW}=du\wedge dp$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Théophile De Donder, <em>Théorie invariantive du calcul des variations</em> (Gauthier-Villars, 1935), and Hermann Weyl, "Geodesic fields in the calculus of variations", <em>Annals of Mathematics</em> <strong>36</strong> (1935), for the independent arrival at the covariant Hamiltonian of the multi-variable problem.</li>
+<li>Jerzy Kijowski, "A finite-dimensional canonical formalism in the classical field theory", <em>Communications in Mathematical Physics</em> <strong>30</strong> (1973), for the multisymplectic form and its conservation law.</li>
+<li>Pedro L. García Pérez, "The Poincaré–Cartan invariant in the calculus of variations", <em>Symposia Mathematica</em> <strong>14</strong> (1974), for the $m$-form $\Theta_{DW}$ and the Lepage theory it generates.</li>
+<li>Christian Günther, "The polysymplectic Hamiltonian formalism in field theory and the calculus of variations", <em>Journal of Differential Geometry</em> <strong>25</strong> (1987), for the $\mathbb{R}^m$-valued two-form and the polysymplectic non-degeneracy.</li>
+<li>Olga Krupková, <em>The Geometry of Ordinary Variational Equations</em> (Springer, 1997), and "Hamiltonian field theory", <em>Journal of Geometry and Physics</em> <strong>43</strong> (2002), for the Hamilton–De Donder equations, the hyperregularity condition and the equivalence theorem.</li>
+<li>Mark J. Gotay, James Isenberg, Jerrold E. Marsden and Richard Montgomery, "Momentum maps and classical relativistic fields" (1997/2004), for the multisymplectic Noether theorem and the multimomentum current.</li>
+<li>Thomas J. Bridges, "Multi-symplectic structures and wave propagation", <em>Mathematical Proceedings of the Cambridge Philosophical Society</em> <strong>121</strong> (1997), and Bridges and Sebastian Reich, "Multi-symplectic integrators", <em>Physics Letters A</em> <strong>284</strong> (2001), for the $1+1$-dimensional reading and the numerical use of the conservation law.</li>
+<li>Manuel de León, David Martín de Diego and A. Santamaría-Merino, "Symmetries in classical field theory" and the papers on $k$-symplectic structures, for the $k$-symplectic truncations.</li>
+<li>A. Echeverría-Enríquez, M. C. Muñoz-Lecanda and N. Román-Roy, "Geometry of Lagrangian first-order classical field theories", <em>Fortschritte der Physik</em> <strong>44</strong> (1996), for the coordinate-free treatment of the Legendre map and the multimomentum phase space.</li>
+<li><em>The Calculus of Variations</em> (<code>articles_maths/the-calculus-of-variations.md</code>), companion article, for the first variation, the Euler–Lagrange equation in several variables and the one-variable Legendre transform.</li>
+<li><em>Lagrangian and Hamiltonian Systems</em> (<code>articles_maths/lagrangian-and-hamiltonian-systems.md</code>), companion article, for the finite-dimensional Hamiltonian theory that is the case $m=1$, and for the canonical momentum one-form $\theta_L=p_i\,dq^i$.</li>
+<li><em>Symplectic Forms and Poisson Brackets</em> (<code>articles_maths/symplectic-forms-and-poisson-brackets.md</code>), companion article, for the alternating forms, the symplectic basis and the Poisson bracket.</li>
+<li><em>Fibre Bundles, Connections and Curvature</em> (<code>articles_maths/fibre-bundles-connections-and-curvature.md</code>), companion article, for the bundle language of the Legendre map.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Biquaternion Roots of Minus One — Biquaternion Universe</title>
+  <title>Biquaternion Square Roots of Minus One, Zero and Plus One — Biquaternion Universe</title>
   <link rel="stylesheet" href="../assets/css/base.css">
   <link rel="stylesheet" href="../assets/css/layout.css">
   <link rel="stylesheet" href="../assets/css/article.css">
@@ -50,9 +50,9 @@
   <div class="page-wrap">
     <main class="article">
       <div class="article-body">
-        <h1 id="biquaternion-roots-of-minus-one"><strong>Biquaternion Roots of Minus One</strong></h1>
+        <h1 id="biquaternion-square-roots-of-minus-one-zero-and-plus-one"><strong>Biquaternion Square Roots of Minus One, Zero and Plus One</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>This article determines the roots of $-1$ in the biquaternion algebra $\mathbb{B}$, that is, the elements $\xi\in\mathbb{B}$ satisfying $\xi^2 = -1$; it also records the roots of $+1$ and the relation between the two. It relates to <em>Biquaternion Idempotents and Projections</em> through the bijection between the roots and the idempotents.</p>
+<p>This article determines the square roots of the three central values $-1$, $0$ and $+1$ in the biquaternion algebra $\mathbb{B}$ — the elements $\xi\in\mathbb{B}$ satisfying $\xi^2 = -1$, $\xi^2 = 0$ and $\xi^2 = +1$ — and the relations among the three sets. It relates to <em>Biquaternion Idempotents and Projections</em> through the bijection between the roots of $-1$ and the idempotents. The square roots of an arbitrary element $Q$, and the Clifford-algebra algorithm that computes them, are <em>Biquaternion Square Roots of a General Element</em>; the three sets found here are the degenerate data of that classification, and the algorithm is deliberately not reproduced.</p>
 <p>Physically, a root of $-1$ is an <strong>imaginary unit</strong> of the algebra, and the imaginary units are what the framework's transformations are generated from. Each root generates a one-parameter subgroup, $\exp(\theta\xi) = \cos\theta\,e_0+\sin\theta\,\xi$, and the three families of roots are three physically distinct kinds of generator:</p>
 <ul>
 <li>the <strong>trivial roots</strong> $\pm i$ generate the central phase, the abelian gauge group the framework supplies canonically;</li>
@@ -62,10 +62,7 @@
 <p>The roots of $+1$ are the <strong>involutions</strong>: the reflections and the parity-type operators, of which the fermion parity $(-1)^F = ie_3$ is an example, and each of which splits the algebra into a complementary pair of projectors. Generators whose square is neither $-1$ nor $+1$ but $0$ — the <strong>parabolic</strong> generators — are exactly the null elements.</p>
 <p><strong>Conventions.</strong> The quaternion basis is $e_0 = 1,e_1,e_2,e_3$ and the scalar imaginary is $i$, so that it does not collide with the quaternion units; a general element is $\tilde{Q} = \sum_{\mu=0}^{3}Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$. The conjugations are $\bar{\tilde{Q}}$, $\tilde{Q}^*$ and $\tilde{Q}^\dagger = \bar{\tilde{Q}}^*$. The material coordinate is $ict\,e_0+\mathbf{x}$ and the informational coordinate is $ct'\,e_0+i\mathbf{x}'$. Throughout, $\mu$ and $\nu$ denote pure real quaternions with $\mu^2 = \nu^2 = -1$, and such a pair <strong>anticommutes</strong> when $\mu\nu + \nu\mu = 0$.</p>
 <h2 id="the-problem-and-its-reduction">The Problem and Its Reduction</h2>
-<h3 id="statement">Statement</h3>
-<p>A <strong>root of $-1$</strong> in $\mathbb{B}$ is an element $\xi$ with $\xi^2 = -1$.</p>
-<h3 id="vector-part-decomposition">Vector-Part Decomposition</h3>
-<p>Write $\xi$ in scalar-vector form,</p>
+<p>The three problems of this article — the equations $\xi^2 = -1$, $\xi^2 = 0$ and $\xi^2 = +1$ — share one reduction, carried out once here and applied three times. Write $\xi$ in scalar-vector form,</p>
 <p>$$
 \xi = Q_0+\mathbf{Q}, \qquad Q_0\in\mathbb{C}, \qquad \mathbf{Q} = Q_1e_1+Q_2e_2+Q_3e_3 ,
 $$</p>
@@ -73,7 +70,10 @@ $$</p>
 <p>$$
 \xi^2 = \left(Q_0^2-(\mathbf{Q},\mathbf{Q})\right)e_0+2Q_0\mathbf{Q}, \qquad (\mathbf{Q},\mathbf{Q}) = Q_1^2+Q_2^2+Q_3^2 ,
 $$</p>
-<p>so the scalar part of $\xi^2$ is $(Q_0^2-(\mathbf{Q},\mathbf{Q}))e_0$ and the vector part is $2Q_0\mathbf{Q}$.</p>
+<p>so the scalar part of $\xi^2$ is $(Q_0^2-(\mathbf{Q},\mathbf{Q}))e_0$ and the vector part is $2Q_0\mathbf{Q}$, so that equating $\xi^2$ to a central value splits the equation into a vector part and a scalar part.</p>
+<h2 id="the-roots-of-minus-one">The Roots of Minus One</h2>
+<h3 id="statement">Statement</h3>
+<p>A <strong>root of $-1$</strong> in $\mathbb{B}$ is an element $\xi$ with $\xi^2 = -1$.</p>
 <h3 id="reduction-to-two-cases">Reduction to Two Cases</h3>
 <p>Equating $\xi^2$ to $-e_0$ requires</p>
 <p>$$
@@ -103,14 +103,6 @@ $$</p>
 \mathbf{Q} = \mathbf{q}+i\mathbf{q}' = b\mu+d\nu i .
 $$</p>
 <p>These are the <strong>non-trivial roots</strong>.</p>
-<h3 id="summary-of-the-reduction">Summary of the Reduction</h3>
-<p>Every root of $-1$ falls into one of three families:</p>
-<ol>
-<li>$\xi = \pm i$ (trivial roots);</li>
-<li>$\xi = \pm\mu$ with $\mu$ a pure real quaternion with $\mu^2 = -1$ (real roots);</li>
-<li>$\xi = b\mu+d\nu i$ with $\mu,\nu$ pure real quaternions with $\mu^2 = \nu^2 = -1$ and $\mu\nu+\nu\mu = 0$, and $b,d>0$ satisfying $b^2-d^2 = 1$ (non-trivial roots).</li>
-</ol>
-<h2 id="the-classification">The Classification</h2>
 <h3 id="statement-of-the-theorem">Statement of the Theorem</h3>
 <p><strong>Theorem.</strong> The roots of $-1$ in $\mathbb{B}$ are exactly the elements</p>
 <p>$$
@@ -159,8 +151,41 @@ $$</p>
 <h3 id="status-of-the-roots">Status of the Roots</h3>
 <p>The <strong>trivial</strong> roots are the two elements $\pm i$. The <strong>real</strong> roots are the elements $\pm\mu$ with $\mu$ a pure real quaternion of square $-1$; the single constraint $\sum_k\mu_k^2 = 1$ on the three real coefficients leaves two free real parameters. The <strong>non-trivial</strong> roots are parametrised by the pair $(\mu,\nu)$ with $\mu^2 = \nu^2 = -1$ and $\mu\nu+\nu\mu = 0$ — two free real parameters for $\mu$, and one for $\nu$, its two constraints $\sum_k\nu_k^2 = 1$ and $\sum_k\mu_k\nu_k = 0$ acting on three real coefficients — together with the pair $(b,d)$ with $b^2-d^2 = 1$ and $b,d>0$, one further parameter: four free real parameters in all.</p>
 <p>All roots except the trivial ones are <strong>pure</strong>, hence lie in the six-real-dimensional vector subspace of pure biquaternions. The roots are neither idempotents ($\xi^2 = -1\neq\xi$) nor zero divisors (§<em>The Roots as Invertible Elements</em>): they lie in the group of units $\mathbb{B}^\times$. <strong>Physically: an imaginary unit is a group element, never a state and never a null direction.</strong></p>
+<h2 id="the-roots-of-zero">The Roots of Zero</h2>
+<h3 id="reduction-to-two-cases_1">Reduction to Two Cases</h3>
+<p>A root of $0$ is an element with $\xi^2 = 0$. With $\xi = Q_0+\mathbf{Q}$ the square is $(Q_0^2-(\mathbf{Q},\mathbf{Q}))e_0+2Q_0\mathbf{Q}$, and equating it to $0$ forces the same choice $Q_0 = 0$ or $\mathbf{Q} = 0$ as for the roots of $-1$.</p>
+<ul>
+<li><strong>Case $\mathbf{Q} = 0$.</strong> Then $\xi = Q_0e_0$ and $Q_0^2 = 0$; since $\mathbb{C}$ is a field, $Q_0 = 0$. This gives the single element $\xi = 0$.</li>
+<li><strong>Case $Q_0 = 0$.</strong> Then $\xi = \mathbf{Q}$ is pure with $(\mathbf{Q},\mathbf{Q}) = 0$, that is $Q_1^2+Q_2^2+Q_3^2 = 0$.</li>
+</ul>
+<h3 id="statement-of-the-theorem_1">Statement of the Theorem</h3>
+<p><strong>Theorem.</strong> The roots of $0$ in $\mathbb{B}$ are $\xi = 0$ together with the pure elements $\xi = Q_1e_1+Q_2e_2+Q_3e_3$ with $Q_1^2+Q_2^2+Q_3^2 = 0$.</p>
+<h3 id="verification_1">Verification</h3>
+<p>For such a pure element both the scalar part $-(\mathbf{Q},\mathbf{Q})$ and the vector part $2Q_0\mathbf{Q}$ of the square vanish. ✓</p>
+<p>The nonzero roots of $0$ are the <strong>nilpotents</strong> of the algebra, and they form the <strong>nilpotent cone</strong> of the pure subspace; the instance $\xi = e_1+ie_2$ gives $\xi^2 = e_1^2+i^2e_2^2+i(e_1e_2+e_2e_1) = -1+1+0 = 0$. The set is the zero-divisor set of the algebra, whose structure, its two families and the criterion in terms of the scalar part, is <em>Biquaternion Zero Divisors</em>; it is named here only to complete the list of the three central values and not developed.</p>
+<p><strong>Physical reading: the parabolic generators and the null momenta.</strong> A root of $0$ is a <strong>parabolic</strong> generator: its exponential is the polynomial subgroup $\exp(\theta\xi) = e_0+\theta\xi$, and the element itself is a zero divisor rather than a unit. The three central values are therefore the three kinds of one-parameter generator the framework uses: $-1$ the elliptic generators (the central phase and the rotations), $+1$ the hyperbolic ones (the boosts and the parities), and $0$ the parabolic ones (the null translations). The physical instance is the <strong>photon</strong>: a null momentum $p$ with $p^2 = 0$ is a parabolic generator, and the pure null elements such as $e_1+ie_2$ are the two sectors' null directions. The parabolic generators sit at the boundary of the group of units, which is the light cone of the material and informational sectors; the null readings are developed in <em>Biquaternion Zero Divisors</em>.</p>
+<h2 id="the-roots-of-plus-one">The Roots of Plus One</h2>
+<h3 id="statement-of-the-theorem_2">Statement of the Theorem</h3>
+<p>The analogous problem for $+1$, an element $\eta$ with $\eta^2 = 1$, is also recorded. The roots of $+1$ are related to those of $-1$ by</p>
+<p>$$
+\eta = \xi i ,
+$$</p>
+<p>where $\xi$ is a root of $-1$. Applying the classification:</p>
+<ul>
+<li><strong>Non-trivial roots of $+1$:</strong> $\eta = b\mu i+d\nu i^2 = b\mu i-d\nu$ with $b^2-d^2 = 1$ and $\mu\nu+\nu\mu = 0$;</li>
+<li><strong>Trivial roots of $+1$:</strong> $\eta = \pm1$ (from $\xi = \pm i$), the only roots of $+1$ lying in the centre $\mathbb{C}$;</li>
+<li><strong>Real roots of $+1$:</strong> $\eta = \pm\mu i$ with $\mu$ a pure real quaternion with $\mu^2 = -1$.</li>
+</ul>
+<h3 id="verification_2">Verification</h3>
+<p>That $\eta = \xi i$ satisfies $\eta^2 = 1$ follows since $\xi^2i^2 = (-1)(-1) = 1$. The map $\xi\mapsto\xi i$ is a bijection: it is injective since $i$ is invertible, and if $\eta^2 = 1$ then $\xi = -\eta i$ satisfies $\xi^2 = -1$ and $\xi i = \eta$. ✓</p>
+<p>A root of $+1$ is an <strong>involution</strong>, and every involution splits the algebra: if $\eta^2 = 1$ then $\eta\neq1$ gives the idempotents $\tfrac12(e_0\pm\eta)$ with $\tfrac12(e_0+\eta)+\tfrac12(e_0-\eta) = e_0$ and $\tfrac12(e_0+\eta)\cdot\tfrac12(e_0-\eta) = 0$, which is the bijection above read in the other direction.</p>
+<p><strong>Physical reading: the reflections and the parities.</strong> The roots of $+1$ are the algebra's reflections. The real roots $\pm\mu i$ are the Hermitian ones — $(\mu i)^\dagger = \mu i$ — so they are exactly the involutions that split the algebra into <strong>orthogonal</strong> projectors, and they are the parity-type operators of the framework. The fermion parity of the field-theory articles is an instance: $(-1)^F = ie_3$ is a real root of $+1$ (with $\mu = e_3$), Hermitian, and its associated projectors are $\tfrac12(e_0\pm ie_3)$, the vacuum projector $\tilde\Pi_1$ and its complement. The trivial roots $\pm1$ are the two central involutions (the identity and the total sign), and the non-trivial roots are the non-Hermitian involutions, which split the algebra into complementary projectors that are not orthogonal. Beyond the framework, the roots of $+1$ generate the hyperbolic one-parameter subgroups that carry the boosts.</p>
+<h2 id="the-three-sets-compared">The Three Sets Compared</h2>
+<p>The three root sets are related by their invertibility. The roots of $-1$ and of $+1$ are <strong>units</strong>: a root $\xi$ of $\pm1$ satisfies $\xi^{-1} = \pm\xi$, in $\mathbb{B}^\times$. The nonzero roots of $0$ are the exception: they are nilpotents, hence zero divisors and not units. So of the three central values only $0$ has non-unit roots.</p>
+<p>The three sets also differ in kind. The roots of $-1$ are two isolated elements together with a two-parameter family and a four-parameter family; the roots of $+1$ are the bijective image of that set under $\xi\mapsto\xi i$; and the roots of $0$ are the single element $0$ together with one four-parameter family, the nilpotent cone. In particular the roots of $0$ contain no unit, and the only non-pure roots of the three values are the trivial ones, $\pm i$ for $-1$ and $\pm1$ for $+1$.</p>
+<p><strong>Physical reading.</strong> The three sets are the three kinds of one-parameter generator: the elliptic ones from $-1$, the hyperbolic ones from $+1$, and the parabolic ones from $0$. Only the first two lie in the group of units, and only the third lies on the light cone of the two sectors; a generator is therefore classified by the sign of its square.</p>
 <h2 id="the-relation-to-the-idempotents">The Relation to the Idempotents</h2>
-<p>The classification of the roots gives the classification of the idempotents: the map</p>
+<p>The classification of the roots of $-1$ gives the classification of the idempotents: the map</p>
 <p>$$
 \xi\longmapsto \tilde\Pi(\xi) = \tfrac{1}{2}(e_0+\xi i)
 $$</p>
@@ -177,20 +202,8 @@ $$</p>
 <p>so $\xi$ is invertible, with inverse $\xi^{-1} = -\xi$; in particular <strong>a pure imaginary unit is its own negative inverse</strong>. A unit is not a zero divisor: if $\xi R = 0$ then $R = (-\xi)(\xi R) = 0$, and likewise $R\xi = 0$ forces $R = 0$. The roots therefore lie in the group of units $\mathbb{B}^\times$. The central scalar $\xi\bar{\xi}$ is $-1$ for the trivial roots and $+1$ for a pure root.</p>
 <h3 id="the-remaining-pure-elements">The Remaining Pure Elements</h3>
 <p>The non-trivial roots lie in the six-real-dimensional vector subspace of pure biquaternions; the trivial roots $\pm i$ do not. The remaining pure elements, those with $(\xi,\xi) = 0$, are the parabolic (null) elements.</p>
-<h2 id="the-roots-of-plus-one">The Roots of Plus One</h2>
-<p>The analogous problem for $+1$, an element $\eta$ with $\eta^2 = 1$, is also recorded. The roots of $+1$ are related to those of $-1$ by</p>
-<p>$$
-\eta = \xi i ,
-$$</p>
-<p>which squares to $1$ since $\xi^2i^2 = (-1)(-1) = 1$. The map $\xi\mapsto\xi i$ is a bijection: it is injective since $i$ is invertible, and if $\eta^2 = 1$ then $\xi = -\eta i$ satisfies $\xi^2 = -1$ and $\xi i = \eta$. Applying the classification:</p>
-<ul>
-<li><strong>Non-trivial roots of $+1$:</strong> $\eta = b\mu i+d\nu i^2 = b\mu i-d\nu$ with $b^2-d^2 = 1$ and $\mu\nu+\nu\mu = 0$;</li>
-<li><strong>Trivial roots of $+1$:</strong> $\eta = \pm1$ (from $\xi = \pm i$), the only roots of $+1$ lying in the centre $\mathbb{C}$;</li>
-<li><strong>Real roots of $+1$:</strong> $\eta = \pm\mu i$ with $\mu$ a pure real quaternion with $\mu^2 = -1$.</li>
-</ul>
-<p>A root of $+1$ is an <strong>involution</strong>, and every involution splits the algebra: if $\eta^2 = 1$ then $\eta\neq1$ gives the idempotents $\tfrac12(e_0\pm\eta)$ with $\tfrac12(e_0+\eta)+\tfrac12(e_0-\eta) = e_0$ and $\tfrac12(e_0+\eta)\cdot\tfrac12(e_0-\eta) = 0$, which is the bijection above read in the other direction.</p>
-<p><strong>Physical reading: the reflections and the parities.</strong> The roots of $+1$ are the algebra's reflections. The real roots $\pm\mu i$ are the Hermitian ones — $(\mu i)^\dagger = \mu i$ — so they are exactly the involutions that split the algebra into <strong>orthogonal</strong> projectors, and they are the parity-type operators of the framework. The fermion parity of the field-theory articles is an instance: $(-1)^F = ie_3$ is a real root of $+1$ (with $\mu = e_3$), Hermitian, and its associated projectors are $\tfrac12(e_0\pm ie_3)$, the vacuum projector $\tilde\Pi_1$ and its complement. The trivial roots $\pm1$ are the two central involutions (the identity and the total sign), and the non-trivial roots are the non-Hermitian involutions, which split the algebra into complementary projectors that are not orthogonal. Beyond the framework, the roots of $+1$ generate the hyperbolic one-parameter subgroups that carry the boosts.</p>
 <h2 id="summary">Summary</h2>
+<p>This article determines the square roots of the three central values $-1$, $0$ and $+1$ in the biquaternion algebra, by one reduction applied three times, and compares the three sets in §<em>The Three Sets Compared</em>.</p>
 <p>The roots of $-1$ in the biquaternion algebra are exactly:</p>
 <ol>
 <li><strong>Non-trivial roots:</strong> $\xi = b\mu+d\nu i$, with $\mu,\nu$ pure real quaternions with $\mu^2 = \nu^2 = -1$ and $\mu\nu+\nu\mu = 0$, and $b,d>0$ satisfying $b^2-d^2 = 1$;</li>
@@ -199,6 +212,7 @@ $$</p>
 </ol>
 <p>The proof writes $\xi = Q_0+\mathbf{Q}$, squares using the biquaternion product formula and equates to $-1$: the vector part $2Q_0\mathbf{Q}$ forces $Q_0 = 0$ or $\mathbf{Q} = 0$; the scalar part $Q_0^2-(\mathbf{Q},\mathbf{Q})$ then gives the trivial root in the scalar case and, in the pure case, reduces to $(\mathbf{Q},\mathbf{Q}) = 1$, which splits into the real and non-trivial families according to whether the imaginary part of the pure element vanishes.</p>
 <p>The trivial roots are the two elements $\pm i$; the real roots are the family $\pm\mu$ cut out by $\sum_k\mu_k^2 = 1$; the non-trivial roots carry the pairs $(\mu,\nu)$ and $(b,d)$ as above, four free real parameters in all. All roots except the trivial ones are pure, hence lie in the six-real-dimensional vector subspace of pure biquaternions. Physically, the roots are the imaginary units of the algebra and generate its one-parameter subgroups: $\pm i$ the central phase, the real roots the rotations about the spatial axes, the non-trivial roots the mixed rotation–boost generators with rapidity $t$ in $b = \cosh t$, $d = \sinh t$. The three families of roots classify the idempotents through $\xi\mapsto\tfrac12(e_0+\xi i)$; the associated projectors are the pure states for the real roots and non-orthogonal projectors for the non-trivial ones. The parabolic generators, whose square is $0$ rather than $\pm1$, are the null elements and belong to the zero-divisor theory.</p>
+<p>The roots of $0$ are $\xi = 0$ together with the pure elements $Q_1e_1+Q_2e_2+Q_3e_3$ with $Q_1^2+Q_2^2+Q_3^2 = 0$; the nonzero ones are the nilpotents, instance $e_1+ie_2$. Physically they are the parabolic generators, whose exponential is the polynomial subgroup $e_0+\theta\xi$ and whose physical instance is the photon's null momentum; they lie at the boundary of the group of units, unlike the roots of $\pm1$, which are units. The classification of $\xi^2 = Q$ for a general $Q$ is <em>Biquaternion Square Roots of a General Element</em>, and the structure of the zero-divisor set they belong to is <em>Biquaternion Zero Divisors</em>.</p>
 <p>The roots of $+1$ are the involutions, obtained from the roots of $-1$ by multiplication by $i$; the real ones are the Hermitian reflections, of which the fermion parity $ie_3$ is an instance, and each splits the algebra into a complementary pair of projectors.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -223,7 +237,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\xi$</td>
-<td>Root of $-1$: an imaginary unit, an elliptic generator</td>
+<td>Root of $-1$ (an elliptic generator) or of $0$ (a parabolic generator)</td>
 </tr>
 <tr>
 <td>$\eta$</td>
@@ -254,6 +268,10 @@ $$</p>
 <td>The one-parameter subgroup generated by a root</td>
 </tr>
 <tr>
+<td>$\exp(\theta\xi) = e_0+\theta\xi$</td>
+<td>The polynomial subgroup generated by a root of $0$</td>
+</tr>
+<tr>
 <td>$\tilde\Pi = \tfrac12e_0\pm\tfrac12\xi i$</td>
 <td>The idempotent of the root</td>
 </tr>
@@ -275,6 +293,7 @@ $$</p>
 <li>S. J. Sangwine, T. A. Ell and N. Le Bihan, "Fundamental representations and algebraic properties of biquaternions or complexified quaternions", <em>Advances in Applied Clifford Algebras</em> <strong>21</strong> (2011) 607–636, for the representation theory and the constraint verification.</li>
 <li>J. P. Ward, <em>Quaternions and Cayley Numbers: Algebra and Applications</em> (Kluwer, Dordrecht, 1997), for the semi-norm and the algebraic properties of the biquaternions.</li>
 <li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em> (Cambridge, 2001), for the connection to Clifford algebras.</li>
+<li>A. Acus and A. Dargys, <em>Square roots of complexified quaternions</em>, arXiv:2601.08391 (2026), for the square roots of an arbitrary complexified quaternion and the Clifford-algebra algorithm treated in <em>Biquaternion Square Roots of a General Element</em>.</li>
 </ul>
       </div>
     </main>
