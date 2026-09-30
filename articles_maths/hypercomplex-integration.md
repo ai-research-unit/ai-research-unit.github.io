@@ -247,7 +247,7 @@ pointwise on $\partial\Omega$, up to the normalisation of the kernel.
 
 **Corollary (the Cauchy transform as a projection).** On the space of boundary values of regular functions, the inside transform $\mathcal{C}^+$ acts as the identity and the outside transform $\mathcal{C}^-$ acts as zero.
 
-The Cauchy transform and the jump formula are the abstract content of the integral representation theory; the explicit Hardy-space and singular-integral theory of a particular system is developed from these formulas with its own kernel.
+The Cauchy transform and the jump formula are the abstract content of the integral representation theory; the explicit Hardy-space and singular-integral theory of a particular system is developed from these formulas with its own kernel. That development — the linear boundary value problem with a jump and the singular integral equation of Cauchy type, on the boundary of a domain in the algebra — is *Riemann Boundary Value Problems and Singular Integral Equations*.
 
 ## Summary
 
@@ -290,3 +290,6 @@ When $A$ has a complete set of orthogonal central idempotents the integral **spl
 - Walter Rudin, *Real and Complex Analysis* (McGraw–Hill, 3rd ed. 1987), for the classical Cauchy theory that the commutative case specialises to.
 - Lars Hörmander, *The Analysis of Linear Partial Differential Operators I* (Springer, 2nd ed. 1990), for the general theory of fundamental solutions.
 - John Ryan (ed.), *Clifford Algebras in Analysis and Related Topics* (CRC Press, 1996), for integral representations and their applications.
+- F. D. Gakhov, *Boundary Value Problems* (Dover, 1990), and N. I. Muskhelishvili, *Singular Integral Equations* (Dover, 2002), for the Riemann boundary value problem, the canonical function, the index and the singular integral equation of Cauchy type that *Riemann Boundary Value Problems and Singular Integral Equations* develops in the hypercomplex setting.
+- J. K. Lu, *Boundary Value Problems for Analytic Functions* (World Scientific, 1993), for the classical theory in the form carried over to Clifford algebras.
+- P. Li and L. Cao, "Linear BVPs and SIEs for Generalized Regular Functions in Clifford Analysis", *Journal of Function Spaces* **2018**, Article ID 6967149, for the Clifford case of the constant-coefficient problem and of the singular integral equation.

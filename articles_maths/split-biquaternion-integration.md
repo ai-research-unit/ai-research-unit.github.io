@@ -119,15 +119,29 @@ where $n_\mu$ is the $\mu$-th component of the outward unit normal on $\partial 
 
 ### The Vector Case
 
-**Theorem (integration by parts for the gradient).** Let $\tilde{F}$ and $\tilde{G}$ be continuously differentiable split-biquaternion-valued functions on $\Omega$ with piecewise smooth boundary $\partial \Omega$. Then
+**Theorem (integration by parts for the gradient).** Let $\tilde{F}$ and $\tilde{G}$ be continuously differentiable split-biquaternion-valued functions on $\Omega$ with piecewise smooth boundary $\partial \Omega$, and write
 
 $$
-\int_\Omega (\tilde{\nabla}\tilde{F}) \tilde{G} \, dV = \int_{\partial \Omega} \tilde{n} \tilde{F} \tilde{G} \, dS - \int_\Omega \tilde{F} (\tilde{\nabla}\tilde{G}) \, dV,
+\tilde{F}\overleftarrow{\nabla} = \sum_{\mu=0}^{3} (\partial_\mu \tilde{F}) e_\mu
+$$
+
+for the **right gradient** of $\tilde{F}$. Then
+
+$$
+\int_\Omega \tilde{F} (\tilde{\nabla}\tilde{G}) \, dV = \int_{\partial \Omega} \tilde{F} \tilde{n} \tilde{G} \, dS - \int_\Omega (\tilde{F}\overleftarrow{\nabla}) \tilde{G} \, dV,
+$$
+
+and equivalently
+
+$$
+\int_\Omega (\tilde{\nabla}\tilde{F}) \tilde{G} \, dV = \int_{\partial \Omega} \tilde{n} \tilde{F} \tilde{G} \, dS - \int_\Omega \sum_{\mu=0}^{3} e_\mu \tilde{F} (\partial_\mu \tilde{G}) \, dV,
 $$
 
 where $\tilde{n} = \sum_\mu n_\mu e_\mu$ is the split-biquaternion-valued outward unit normal.
 
-**Proof.** This follows from the scalar integration by parts applied to each component of $\tilde{\nabla}\tilde{F}$ and the product rule for the gradient.
+**Proof.** The Leibniz rule for the gradient gives $\tilde{\nabla}(\tilde{F}\tilde{G}) = (\tilde{\nabla}\tilde{F})\tilde{G} + \sum_\mu e_\mu \tilde{F}\,\partial_\mu \tilde{G}$, and the divergence theorem applied to the product $\tilde{F}\tilde{G}$ gives the second display. For the first display, apply the ordinary divergence theorem in $\mathbb{R}^4$ to the field with components $\tilde{F} e_\mu \tilde{G}$ and sum over $\mu$.
+
+**Remark (the non-commutative correction).** The transposition that moves the derivative off $\tilde{G}$ while leaving $\tilde{F}(\tilde{\nabla}\tilde{G})$ in the volume term is **false for a non-central** $\tilde{F}$: the Leibniz term $\sum_\mu e_\mu \tilde{F}\,\partial_\mu \tilde{G}$ equals $\tilde{F}(\tilde{\nabla}\tilde{G})$ only when $\tilde{F}$ commutes with every unit $e_\mu$. The right gradient $\overleftarrow{\nabla}$ is the transposition that removes the restriction.
 
 ## The Divergence Theorem
 
@@ -167,35 +181,47 @@ where $\bar{\tilde{n}} = n_0 e_0 - \sum_{k=1}^{3} n_k e_k$ is the quaternion con
 
 ### First Green's Formula
 
-**Theorem (first Green's formula).** Let $\tilde{F}$ and $\tilde{G}$ be twice continuously differentiable split-biquaternion-valued functions on $\Omega$ with piecewise smooth boundary $\partial \Omega$. Then
+**Theorem (first Green's formula).** Let $\tilde{F}$ and $\tilde{G}$ be twice continuously differentiable split-biquaternion-valued functions on $\Omega$ with piecewise smooth boundary $\partial \Omega$, and let $\partial_{\tilde{n}} = \sum_\mu n_\mu \partial_{q_\mu}$ be the scalar normal derivative. Then
 
 $$
-\int_\Omega \left[ (\tilde{\nabla}\tilde{F}) \bar{\tilde{G}} + \tilde{F} (\bar{\tilde{\nabla}}\bar{\tilde{G}}) \right] dV = \int_{\partial \Omega} \tilde{F} \tilde{n} \bar{\tilde{G}} \, dS.
+\int_\Omega \left[ \sum_{\mu=0}^{3} (\partial_\mu \tilde{F})\, \overline{(\partial_\mu \tilde{G})} + \tilde{F}\, \overline{\Box \tilde{G}} \right] dV = \int_{\partial \Omega} \tilde{F}\, \overline{\partial_{\tilde{n}} \tilde{G}} \, dS.
 $$
 
-**Proof.** Apply the divergence theorem to the product $\tilde{F} \bar{\tilde{G}}$ and use the product rule for the gradient.
+**Proof.** Apply the ordinary divergence theorem in $\mathbb{R}^4$ to the split-biquaternion-valued field with components $\tilde{F}\,\overline{\partial_\mu \tilde{G}}$: it gives $\int_\Omega \partial_\mu(\tilde{F}\,\overline{\partial_\mu \tilde{G}})\,dV = \int_{\partial\Omega} n_\mu \tilde{F}\,\overline{\partial_\mu \tilde{G}}\,dS$. The product rule expands the volume integrand as $(\partial_\mu\tilde{F})\,\overline{\partial_\mu \tilde{G}} + \tilde{F}\,\overline{\partial_\mu^2 \tilde{G}}$, the second term because $\partial_\mu$ is real and therefore commutes with the conjugation. Summing over $\mu$ replaces $\sum_\mu \partial_\mu^2$ by $\Box$ and $\sum_\mu n_\mu \partial_\mu$ by $\partial_{\tilde{n}}$.
 
 ### Second Green's Formula
 
 **Theorem (second Green's formula).** Under the same hypotheses,
 
 $$
-\int_\Omega \left[ (\tilde{\nabla}\tilde{F}) \bar{\tilde{G}} - \tilde{F} (\bar{\tilde{\nabla}}\bar{\tilde{G}}) \right] dV = \int_{\partial \Omega} \left[ \tilde{F} \tilde{n} \bar{\tilde{G}} - \tilde{G} \tilde{n} \bar{\tilde{F}} \right] dS.
+\int_\Omega \left[ \tilde{F}\, \overline{\Box \tilde{G}} - (\Box \tilde{F})\, \bar{\tilde{G}} \right] dV = \int_{\partial \Omega} \left[ \tilde{F}\, \overline{\partial_{\tilde{n}} \tilde{G}} - (\partial_{\tilde{n}} \tilde{F})\, \bar{\tilde{G}} \right] dS.
 $$
 
-The precise form of the second Green's formula depends on the choice of the differential operators and the boundary terms; the version above is the one that follows from the first formula by exchanging $\tilde{F}$ and $\tilde{G}$ and subtracting.
+**Proof.** For each $\mu$ the product rule gives
+
+$$
+\partial_\mu \left[ \tilde{F}\, \overline{\partial_\mu \tilde{G}} - (\partial_\mu \tilde{F})\, \bar{\tilde{G}} \right] = \tilde{F}\, \overline{\partial_\mu^2 \tilde{G}} - (\partial_\mu^2 \tilde{F})\, \bar{\tilde{G}},
+$$
+
+the two mixed terms being the same product and cancelling. Summing over $\mu$ makes the left side the divergence of a split-biquaternion-valued field, whose volume integral is the stated volume integrand and whose boundary integral, by the ordinary divergence theorem and $\sum_\mu n_\mu \partial_\mu = \partial_{\tilde{n}}$, is the stated surface term. The conjugation is inert throughout because $\partial_\mu$ is real.
 
 ### Green's Formula for the d'Alembertian
 
-**Theorem (Green's formula for $\Box$).** Let $\tilde{F}$ and $\tilde{G}$ be twice continuously differentiable split-biquaternion-valued functions on $\Omega$ with piecewise smooth boundary $\partial \Omega$. Then
+**Theorem (Green's formula for $\Box$).** Let $\tilde{F}$ and $\tilde{G}$ be twice continuously differentiable split-biquaternion-valued functions on $\Omega$ with piecewise smooth boundary $\partial \Omega$, and let $\partial_{\tilde{n}} = \sum_\mu n_\mu \partial_{q_\mu}$. Then
 
 $$
-\int_\Omega \left[ (\Box \tilde{F}) \tilde{G} - \tilde{F} (\Box \tilde{G}) \right] dV = \int_{\partial \Omega} \left[ (\tilde{n} \tilde{F}) \tilde{G} - \tilde{F} (\tilde{n} \tilde{G}) \right] dS,
+\int_\Omega \left[ (\Box \tilde{F}) \tilde{G} - \tilde{F} (\Box \tilde{G}) \right] dV = \int_{\partial \Omega} \left[ (\partial_{\tilde{n}} \tilde{F}) \tilde{G} - \tilde{F} (\partial_{\tilde{n}} \tilde{G}) \right] dS,
 $$
 
 where $\Box = \partial_0^2 + \Delta$ is the four-dimensional Laplacian.
 
-**Proof.** Apply the second Green's formula with $\tilde{F}$ replaced by $\tilde{\nabla}\tilde{F}$ and $\bar{\tilde{G}}$ replaced by $\bar{\tilde{G}}$, and use the definition of $\Box$.
+**Proof.** For each $\mu$ the product rule gives
+
+$$
+\partial_\mu \left[ (\partial_\mu \tilde{F}) \tilde{G} - \tilde{F} (\partial_\mu \tilde{G}) \right] = (\partial_\mu^2 \tilde{F}) \tilde{G} - \tilde{F} (\partial_\mu^2 \tilde{G}),
+$$
+
+the two mixed terms cancelling. Summing over $\mu$ makes the left side a divergence whose volume integral is the stated volume integrand, and whose boundary integral, by the ordinary divergence theorem and $\sum_\mu n_\mu \partial_\mu = \partial_{\tilde{n}}$, is the stated surface term. This is the conjugate pairing of the second Green formula above, i.e. the second Green formula with $\tilde{G}$ replaced by $\bar{\tilde{G}}$ up to the sign of both sides.
 
 ## The Fundamental Solution
 
@@ -481,7 +507,7 @@ The following questions are not answered in this article and are left for later 
 
 ## Summary
 
-The integral of a split-biquaternion-valued function on a four-dimensional subspace $V \subset \mathbb{H}_{\mathbb{D}}$ is defined component-wise with respect to the Lebesgue measure. It is linear, additive, and satisfies the fundamental estimate. The standard theorems of integration carry over: integration by parts, the divergence theorem, and Green's formulas.
+The integral of a split-biquaternion-valued function on a four-dimensional subspace $V \subset \mathbb{H}_{\mathbb{D}}$ is defined component-wise with respect to the Lebesgue measure. It is linear, additive, and satisfies the fundamental estimate. The standard theorems of integration carry over: integration by parts, the divergence theorem, and Green's formulas. Because the algebra is not commutative, transposing the gradient off a product requires the right gradient $\overleftarrow{\nabla}$, and the identities are stated in the forms that hold for general split-biquaternion-valued fields.
 
 The **fundamental solution** of the gradient operator is $\tilde{G}(\tilde{Q}) = \bar{\tilde{Q}}/\|\tilde{Q}\|_E^4$, which satisfies $\tilde{\nabla}\tilde{G} = 2\pi^2 \delta_0 e_0$, the distributional identity established above.
 

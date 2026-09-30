@@ -10,7 +10,7 @@ This article develops the biquaternionic formulation of the Lorentz transformati
 2. The **four-velocity biquaternion** $\tilde{U}$, which describes the state of motion.
 3. The **rotor conjugation** $\tilde{Q}' = \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^\dagger$, which implements the transformation on four-vectors.
 
-The article is organized as follows. First the $ict$ convention and the Euclidean form of the metric are recalled, because this is what makes the Lorentz transformation a rotation. Then the boost biquaternion is defined and its properties established. The rotor conjugation is stated and verified against the standard component formulas. The relation between the boost biquaternion and the four-velocity is derived. Finally, the subtleties introduced by the complex nature of the rotation and by the local complex structure are discussed.
+The article is organized as follows. First the $ict$ convention and the Euclidean form of the metric are recalled, because this is what makes the Lorentz transformation a rotation. Then the boost biquaternion is defined and its properties established. The rotor conjugation is stated and verified against the standard component formulas. The relation between the boost biquaternion and the four-velocity is derived. The group structure is identified, and the optical experiments that select this group rather than the Galilean one are recorded, with their ownership marked. Finally, the subtleties introduced by the complex nature of the rotation and by the local complex structure are discussed.
 
 The conventions are those of the companion articles: the biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$, the scalar imaginary is $i$, and the biquaternionic gradient is $\tilde{\nabla} = e_0\partial_{ict} + e_1\partial_x + e_2\partial_y + e_3\partial_z$. Throughout, the symbol $c$ denotes the **speed of light in the medium**, $c = 1/\sqrt{\epsilon\mu}$, and $c_0$ denotes the **vacuum speed of light**, $c_0 = 1/\sqrt{\epsilon_0\mu_0}$. In vacuum, $c = c_0$. The symbol $\mathbf{u}$ (or $\mathbf{v}$) is reserved for particle and frame velocities.
 
@@ -161,6 +161,39 @@ $$
 
 so the product of two rotors generates the composition of the two Lorentz transformations.
 
+### The Action on Any Biquaternion
+
+The rotor conjugation is written above for four-vectors, and it is worth stating that it is defined on **every** biquaternion, because that is what the field-theory articles need. Put
+
+$$
+\Phi_{\tilde{\Lambda}}(\tilde{B}) := \tilde{\Lambda}\,\tilde{B}\,\tilde{\Lambda}^{\dagger}
+\qquad\text{for any } \tilde{B} \in \mathbb{B}.
+$$
+
+Three properties follow from the fact that $\dagger$ is an involution and reverses products, and each was checked by direct expansion.
+
+**It preserves both sectors.** If $\tilde{B}^{\dagger} = \pm\tilde{B}$ then
+
+$$
+\bigl(\tilde{\Lambda}\tilde{B}\tilde{\Lambda}^{\dagger}\bigr)^{\dagger}
+= \tilde{\Lambda}\,\tilde{B}^{\dagger}\,\tilde{\Lambda}^{\dagger}
+= \pm\,\tilde{\Lambda}\tilde{B}\tilde{\Lambda}^{\dagger},
+$$
+
+so $\Phi_{\tilde{\Lambda}}$ maps $\mathbb{M}_-$ to itself, as the article already states for four-vectors, and equally maps $\mathbb{M}_+$ to itself. The A-field biquaternions of the electro-gravimagnetic programme therefore all transform by the same formula: the potential and the charge–current lie in $\mathbb{M}_-$, and the field strength and the power–force lie in $\mathbb{M}_+$, so each is carried to an element of its own sector by the conjugation whose component form that programme works out boost by boost. No second transformation law is needed, which is the reason the programme's transformation lemma agrees with the corpus's rotor action term for term.
+
+**It is not an algebra automorphism.** For a product,
+
+$$
+\Phi_{\tilde{\Lambda}}(\tilde{B}\tilde{C}) = \tilde{\Lambda}\tilde{B}\tilde{C}\tilde{\Lambda}^{\dagger},
+\qquad
+\Phi_{\tilde{\Lambda}}(\tilde{B})\,\Phi_{\tilde{\Lambda}}(\tilde{C}) = \tilde{\Lambda}\tilde{B}\,\tilde{\Lambda}^{\dagger}\tilde{\Lambda}\,\tilde{C}\tilde{\Lambda}^{\dagger},
+$$
+
+and these differ by the insertion of $\tilde{\Lambda}^{\dagger}\tilde{\Lambda}$. They agree exactly when $\tilde{\Lambda}^{\dagger} = \tilde{\Lambda}^{-1}$, that is, when $\tilde{\Lambda}$ is a **real** quaternion, which is the case of a pure spatial rotation. For a boost the rotor is Hermitian, $\tilde{\Lambda}^{\dagger} = \tilde{\Lambda}$, so $\tilde{\Lambda}^{\dagger}\tilde{\Lambda} = \tilde{\Lambda}^{2} \neq 1$ and the map is not multiplicative. The conjugation is a $\dagger$-conjugation, not the inner automorphism $\tilde{B}\mapsto\tilde{\Lambda}\tilde{B}\tilde{\Lambda}^{-1}$.
+
+**It does not fix the center.** The same fact shows where the formula must not be used. On a central scalar, $\Phi_{\tilde{\Lambda}}(b\,e_0) = b\,\tilde{\Lambda}\tilde{\Lambda}^{\dagger} = b\,\tilde{\Lambda}^2$, which is not central — for a boost it has a vector part proportional to $\hat{\mathbf{u}}$. Central elements are therefore not carried to central elements, and the conjugation is meaningful on the sectors, whose elements are the physical quantities that transform, rather than on the algebra as a whole. This is consistent with the four-vector reading: the invariant object of the conjugation is the biquaternion norm, and the norm is quadratic in a sector element, not linear in an arbitrary one.
+
 ### Verification Against Component Formulas
 
 The rotor conjugation can be verified against the standard component formulas for a Lorentz boost. Take a four-potential $\tilde{A} = i\phi/c\,e_0 + \mathbf{A}$, and apply the rotor conjugation with $\tilde{\Lambda} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\hat{\mathbf{u}}$.
@@ -242,6 +275,36 @@ The formula $\tilde{\Lambda} = \sqrt{-i\bar{\tilde{U}}/c}$ says:
 
 The square root is **multivalued by sign**: both $\tilde{\Lambda}$ and $-\tilde{\Lambda}$ square to the same biquaternion. The two branches implement the **same** Lorentz transformation, since $\tilde{\Lambda}$ and $-\tilde{\Lambda}$ differ by the kernel element $-1$ of the two-to-one map $SL(2,\mathbb{C}) \to SO^+(1,3)$; the boost by $-\psi$ is a different element, the quaternion conjugate $\bar{\tilde{\Lambda}}$. The conventional branch is selected by requiring the real scalar part of $\tilde{\Lambda}$ to be positive, i.e., $\cosh(\psi/2) > 0$.
 
+
+### The Closed-Form Rotor and the Bisector Property
+
+For a **simple** Lorentz rotation — a boost, or a rotation, or in general a transformation in a single non-null plane — the rotor can be recovered from the transformation of one vector in the plane, and the recovery has a clean closed form worth recording because it is used in the paravector computation of the boost of a wave (*Paravectors and the Geometry of Spacetime*, *The Boost of a Plane Wave as a Rotation and a Dilation*).
+
+Let $p$ be a non-null Hermitian element lying in the plane of the rotation, so that it commutes with the rotor, and let
+
+$$
+r \;=\; \tilde{\Lambda}\,p\,\tilde{\Lambda}^\dagger \;=\; \tilde{\Lambda}^2\,p
+$$
+
+be its image, the second form using the commutation. Then
+
+$$
+\tilde{\Lambda} \;=\; \left(r\,p^{-1}\right)^{1/2},
+$$
+
+the square root being the biquaternion square root, multivalued by sign, and the two branches differing by the kernel element $-1$ of the double cover. Equivalently, since $\tilde{\Lambda}\,p$ lies along the **bisector** of $p$ and $r$,
+
+$$
+\tilde{\Lambda}\,p \;=\; \frac{p + r}{\sqrt{2\,\bigl\langle (p+r)\,p^{-1}\bigr\rangle_S}},
+\qquad\text{so that}\qquad
+\tilde{\Lambda} \;=\; \frac{(p+r)\,p^{-1}}{\sqrt{2\,\bigl\langle (p+r)\,p^{-1}\bigr\rangle_S}},
+$$
+
+where $\langle\,\cdot\,\rangle_S$ is the scalar part. The denominator is a positive real number because $p$ is non-null, and it normalizes the bisector to unit norm; the factor $p^{-1}$ on the right places the result in the plane.
+
+The **bisector property** is the statement that the image $r=\tilde\Lambda^2p$ and the original $p$ are symmetrically placed about the direction of $\tilde\Lambda p$, which is the direction of $p+r$; it is why the rotor can be reconstructed from one element of the plane and its image. The closed form is the second printed form of the source (Baylis, §V.B), whose PDF extraction is ambiguous about the placement of the square-root exponent; the recomputation above selects the form displayed here, with no leading factor $p$ and the exponent $1/2$ on the whole denominator. The first form, $\tilde{\Lambda}=(rp^{-1})^{1/2}$, is unambiguous and agrees with it.
+
+
 ## The Group Structure
 
 The **unit-norm biquaternions** form a group under multiplication. The general element is
@@ -257,6 +320,79 @@ which under the isomorphism $\mathbb{B} \cong M_2(\mathbb{C})$ is the group $SL(
 **Pure spatial rotations** are the elements with **real vector part** (i.e., lying in $\mathbb{H}_{\mathbb{B}}$, the real quaternion subalgebra), satisfying $\tilde{R} = \cos\frac{\theta}{2} + \sin\frac{\theta}{2}\hat{\mathbf{n}}$ with $\hat{\mathbf{n}}^2 = -e_0$. These form the subgroup $SU(2) \subset SL(2,\mathbb{C})$.
 
 The general Lorentz transformation is the product of a boost and a rotation, and corresponds to a general element of $SL(2,\mathbb{C})$.
+
+## Active, Passive and Relative Transformations; the Reciprocal Basis
+
+The word "transformation" hides three different operations, and the algebra states all three with the same rotor. It is worth fixing the three readings, because the source of the paravector literature distinguishes them and the distinction is not visible in the component formulas.
+
+**Active.** The object is transformed and the frame is held fixed: a four-vector $\tilde{Q}$ is carried to $\tilde{Q}' = \tilde{L}\tilde{Q}\tilde{L}^{\dagger}$, with $\tilde{L}$ the rotor of the operation. **Passive.** The frame is changed and the object is fixed: the components of the same object in the new frame are those of $\tilde{L}^{-1}\tilde{Q}\tilde{L}^{-\dagger}$, the inverse conjugation. **Relative.** Two frames are related by a rotor that is the ratio of their eigenspinors: if two worldlines carry eigenspinors $\tilde{\Lambda}_1$ and $\tilde{\Lambda}_2$ (in the sense of *The Eigenspinor: The Lorentz Rotor as a Function of Proper Time*), then the rotor
+
+$$
+\tilde{R}_{2\leftarrow1} = \tilde{\Lambda}_2\tilde{\Lambda}_1^{-1}
+$$
+
+carries the four-momentum of the first to the four-momentum of the second, $\tilde{P}_1\mapsto\tilde{P}_2$, and is the frame-to-frame transformation. The three readings differ by which factor of the rotor is inverted, and the physics of "which frame moves relative to which" is the choice among them. The series writes the abstract group element as $\tilde{L}$ without committing to a reading, and says which reading is meant only where a physical frame is named.
+
+**The reciprocal basis.** The component transformation is most cleanly stated with a dual basis. On the four-dimensional space spanned by $\{e_0, e_1, e_2, e_3\}$, define the dual basis by the trace pairing $\mathrm{Sc}(\mathcal{E}^{\mu}\mathcal{E}_{\nu}) = \delta^{\mu}_{\ \nu}$. The basis and its dual are
+
+$$
+\mathcal{E}_0 = e_0,\quad \mathcal{E}_k = e_k,
+\qquad
+\mathcal{E}^{0} = e_0,\quad \mathcal{E}^{k} = -e_k,
+$$
+
+the minus signs coming from $e_k^2 = -e_0$: the metric is carried by the dual, not by any index-raising. Because the coefficient of $e_0$ is the imaginary $ict$, the pair $(q^0, q^k) = (ict, x_k)$ is the coordinate quadruple. Given a rotor $\tilde{L}$, the components transform as
+
+$$
+q'^{\mu} = \sum_{\nu} L^{\mu}{}_{\nu}\, q^{\nu},
+\qquad
+L^{\mu}{}_{\nu} = \mathrm{Sc}\!\left(\mathcal{E}^{\mu}\,\tilde{L}\,\mathcal{E}_{\nu}\,\tilde{L}^{\dagger}\right),
+$$
+
+and the matrix $L^{\mu}{}_{\nu}$ is the ordinary Lorentz transformation matrix in the basis. The identity is algebraic and was checked numerically: for a hundred random boosts, $\mathrm{Sc}(\mathcal{E}^{\mu}\mathcal{E}_{\nu}) = \delta^{\mu}_{\ \nu}$ exactly and the component formula agrees with the direct computation of $\tilde{L}\tilde{Q}\tilde{L}^{\dagger}$ to machine precision.
+
+This is the sense in which the framework "raises and lowers no indices": the metric sits in the coefficients and in the dual basis, and the transformation law is a matrix multiplication without a metric tensor in sight. The reciprocal basis is the device that makes the component formula look ordinary while the geometry stays in the algebra.
+
+## What Fixes the Transformation: The Experimental Route
+
+Everything so far derives the transformation; nothing so far says what *selects* it. The algebra of $\mathbb{B}$ contains real and imaginary rotation angles alike, so it expresses a boost rotor with a real angle as readily as one with an imaginary angle, and the choice between them is not a choice the algebra makes. It was made by experiment. This section records the experiments and states their ownership, because a derivation that never says what fixes it invites the reader to mistake the derivation for the evidence.
+
+**Boundary.** Nothing in this section is biquaternionic and nothing in it is a result of this corpus. The optical experiments, the contraction hypothesis and the two postulates are standard special relativity, recorded here from a single source, the *Relativité restreinte* chapter of J. Surdej, and recomputed arithmetically where a number appears. The biquaternionic formulation is a **reformulation** of the same group, so these experiments can neither confirm nor refute it: they select the group $SO^+(1,3)$, and every faithful representation of that group reproduces them. The bounds by which the reformulation could be told apart from the group belong to *The Empirical Status of the Biquaternion Framework*, not here.
+
+### The Three Optical Experiments and Their Orders in $\beta$
+
+Three nineteenth-century optical experiments bear on the kinematics, at different orders in the velocity ratio $\beta = v/c$.
+
+| Experiment | Order in $\beta$ | What it measures | Result |
+|---|---|---|---|
+| Aberration of starlight, Bradley, 1725 | first | the apparent direction of a star as the Earth's velocity turns through the year | $20.50$ arcsec of annual shift, equal to the classical $\tan\alpha = \beta$ |
+| Light drag in moving water, Fizeau, 1851 | first | the speed of light in water of velocity $u$ | the Fresnel fraction $1-1/n^2$ of $u$, which is $0.435$ at $n = 1.33$ |
+| Ether drift, Michelson 1881, Michelson and Morley 1887 | second | the round-trip light time in two perpendicular arms | null, where about $0.37$ fringe was expected at $30$ km/s |
+
+**Aberration settles nothing by itself.** The classical value $\tan\alpha = \beta$ follows from a ballistic picture of light as well as from a wave in a stationary ether. At the Earth's orbital speed $v = 29.79$ km/s one has $v/c = 9.94\times10^{-5}$, which is $20.50$ arcsec in angle, the observed annual shift; the experiment shows a relative velocity between the Earth and the incoming light, but not which kinematics governs it.
+
+**Fizeau's drag is first order, and it is a partial drag.** An ether neither dragged nor displaced predicts no dependence on the water's motion, and a fully dragged ether predicts the whole $u$; what is measured is the fraction $1-1/n^2$ of Fresnel's formula, that is $0.435$ for $n = 1.33$. Historically this was accommodated by postulating a partial drag of the ether by the medium — an inserted property, of the same kind as the contraction below — so the experiment does not by itself refute the Galilean kinematics. Its place in the record is different: the relativistic velocity-addition formula reproduces Fresnel's fraction exactly at first order, so the experiment that motivated a drag hypothesis became a confirmation of the Lorentz kinematics.
+
+**Michelson–Morley is second order, and it is the decisive one.** The ether wind enters as $(u/c)^2$, which is $1.0\times10^{-8}$ at $u = 30$ km/s; the expected fringe shift is this factor times the effective optical path divided by the wavelength, which for the standard effective arm of about $11$ m and $\lambda = 590$ nm is $0.37$ fringe, within the interferometer's reach. The measured shift was consistent with zero. The source's summary of the difficulty is that the result made the ether "immobile with respect to the Earth", which is geocentric and contradicts both aberration and Fizeau; what had to be abandoned was the classical interpretation itself.
+
+### The Classical Rescue and Its Price
+
+The first repair, proposed independently by G. FitzGerald and H. A. Lorentz in 1893, was a longitudinal contraction of moving bodies by the factor $1/\gamma$. The contraction is of order $\beta^2/2$, which at the orbital speed is $5.0\times10^{-9}$. It hides the ether wind, and its price is the corpus's recurring one: it is a **deformation inserted against the kinematics**, not derived from anything. That price is why the FitzGerald–Lorentz contraction is not the ancestor of the biquaternionic rotor.
+
+Lorentz then arrived at the transformation that bears his name, and H. Poincaré — whom the source credits as the first to see it distinctly — stated that there is a deep antipathy between Maxwell's equations and the Galilean transformation. What was missing was Einstein's step of 1905, and it is worth recording how he described it himself, in the retrospective the source quotes:
+
+> "The new feature of it was the realization of the fact that the bearing of the Lorentz-transformations transcended their connection with Maxwell's equations and was concerned with the nature of space and time in general. A further new result was that the 'Lorentz invariance' is a general condition for any physical theory."
+
+That sentence is the one that matters for the corpus. The two postulates of 1905 — the speed of light in vacuum has the same value in every inertial frame whatever the motion of the source, and the laws of physics take the same form in every inertial frame — replace the inserted contraction by a kinematics, and they promote Lorentz invariance from a property of Maxwell's theory to a requirement on any theory. The biquaternionic rotor is a reformulation of the second postulate, not a competitor to it, and the corpus follows Einstein's retrospective when it treats Lorentz invariance as the general condition a candidate framework must meet.
+
+### What the Derivation in This Article Does and Does Not Settle
+
+The formal derivation above decides neither of the two things the experiments decide:
+
+1. **The angle.** Nothing in the algebra forces the boost's rotation angle to be imaginary; that is what the constancy of $c$ forces, at second order, and the first-order experiments place the same constraint on the velocity-addition law.
+2. **The parameterisation.** The rapidity $\psi$, with $\tanh\psi = u/c$ and the $\cosh(\psi/2)$ and $\sinh(\psi/2)$ of the boost biquaternion, is a reading of the experiments and not of the algebra.
+
+Conversely, the experiments do not decide between the biquaternion formulation and the matrix one. They are experiments on the group, and a faithful representation cannot fail them; a reformulation must be judged by what it predicts beyond the group. That is the same point the empirical-status article makes from the other direction.
 
 ## The Complex Nature of the Rotation
 
@@ -330,6 +466,8 @@ The rotation is **complex** in the sense that the rotation angle (the rapidity) 
 
 The **same rotor conjugation applies to all four-vectors** in the anti-Hermitian subspace $\mathbb{M}_-$: the four-position, four-velocity, four-momentum, four-force, four-potential, and four-current. The unit-norm biquaternions form the group $SL(2,\mathbb{C})$, which is the double cover of the proper orthochronous Lorentz group $SO^+(1,3)$.
 
+The transformation itself is fixed by experiment, not by the algebra: aberration, the Fizeau drag and the Michelson–Morley null result select the group $SO^+(1,3)$, and the biquaternion form is a faithful reformulation of that group, so it reproduces those experiments by construction rather than by prediction.
+
 ## Summary of Notation
 
 | Symbol | Meaning |
@@ -340,6 +478,8 @@ The **same rotor conjugation applies to all four-vectors** in the anti-Hermitian
 | $\mathbb{H}_{\mathbb{B}}$ | Quaternion subspace (home of the spatial rotation rotors) |
 | $c = 1/\sqrt{\epsilon\mu}$ | Speed of light in the medium |
 | $c_0 = 1/\sqrt{\epsilon_0\mu_0}$ | Speed of light in vacuum |
+| $\beta = v/c$ | Velocity ratio of a frame or particle |
+| $\gamma = 1/\sqrt{1-\beta^2}$ | Lorentz factor |
 | $\tilde{U} = \gamma(ic\,e_0 + \mathbf{v})$ | Four-velocity biquaternion |
 | $\tilde{\Lambda} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\hat{\mathbf{u}}$ | Boost biquaternion (Hermitian for pure boosts) |
 | $\psi$ | Rapidity, $\tanh\psi = u/c$ |
@@ -356,4 +496,7 @@ The **same rotor conjugation applies to all four-vectors** in the anti-Hermitian
 - Chris Doran and Anthony Lasenby, *Geometric Algebra for Physicists* (Cambridge, 2003), for the modern geometric algebra treatment of Lorentz rotors.
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the connection between Clifford algebras and the Lorentz group.
 - V. V. Kassandrov, "Relativistic Algebra of Space-Time and Algebrodynamics" (2006), for a biquaternionic approach to the Lorentz group.
+- L. A. Alexeyeva, "Lorentz Transformations for One Biquaternionic Model of the Electro-Gravimagnetic Field. Conservation Laws" (2009), for the induced action of the Lorentz transformation on the A-field biquaternions — potential, strength, charge–current and power–force — worked out component by component, and for the finding that the model's charge–mass conservation law is not invariant. The English text of the same work is arXiv:1104.1483v1; arXiv:0904.3446v1 is the Russian preprint.
+- Jean Surdej, *La relativité restreinte*, chapter 3 of the lecture notes (2015–2016), for the experimental route recorded in *What Fixes the Transformation: The Experimental Route*: aberration of starlight, the Fizeau drag, the Michelson–Morley null result and the source's own reading of it, the FitzGerald–Lorentz contraction, Poincaré on the antipathy between Maxwell's equations and the Galilean transformation, the two postulates of 1905, and Einstein's 1955 retrospective on the bearing of the transformation.
+- William E. Baylis, *Relativity in Introductory Physics*, *Canadian Journal of Physics* **82** (2004) 853–873 (arXiv:physics/0406158), §V.B, for the closed-form rotor and the bisector property recorded here, and for the paravector reading of the same transformation.
 

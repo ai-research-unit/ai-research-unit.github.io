@@ -59,6 +59,20 @@ the series converging absolutely. Consequently $Sp(1)$ is the image of the expon
 
 The exponential satisfies $\exp(u(\theta+2\pi)) = -\exp(u\theta)$ because $\exp(2\pi u) = -1$, and $\exp(u(\theta+4\pi)) = \exp(u\theta)$; this doubling is the algebraic root of the periodicity discussed below.
 
+### The Versor, and the Arc Picture
+
+Hamilton's word for a unit quaternion is a **versor**, from the Latin *versari*, to turn. He wrote $U\tilde q = \tilde q/|\tilde q|$ for the versor of a general quaternion and $T\tilde q = |\tilde q|$ for its norm, which he called the tensor, so that the polar decomposition of *Quaternion Norm and Invertibility* reads $\tilde q = T\tilde q\,U\tilde q$. In this vocabulary $Sp(1)$ is the group of versors.
+
+**Proposition.** A versor is the quotient of two unit vectors: for unit vectors $a, b$ the element $\tilde q = b\bar a = ba^{-1}$ is a unit quaternion, and every versor arises in this way.
+
+**Proof.** The norm is multiplicative and $|\bar a| = 1$, so $|\tilde q| = 1$. Conversely let $\tilde q = \cos\theta + u\sin\theta$ with $u$ a unit vector; choose a unit vector $a\perp u$ and set $b = a\cos\theta + (u\times a)\sin\theta$. Then $b$ is a unit vector, $\langle a, b\rangle = \cos\theta$ and $a\times b = u\sin\theta$, and since $b\bar a = \langle a, b\rangle + a\times b$ for unit vectors $a, b$, the quotient is $\tilde q$.
+
+**Remark (the arc picture).** For a fixed plane $\Pi$ through the origin the quotient of two unit vectors of $\Pi$ depends only on the directed angle between them, so a versor with axis $u$ is the quotient of any two unit vectors of the plane with normal $u$ separated by the directed angle $\theta$. Hamilton pictured the versor as the directed arc of the great circle $\Pi\cap S^2$ joining the first vector to the second, arcs of equal direction and length defining the same versor, and he called the multiplication of versors the **sum of arcs**. The arc is the versor and not the path of the rotated point: the rotation the versor represents has twice the subtended angle, by the half-angle formula of §*The Half-Angle Formula*.
+
+**Definition.** A **right versor** is a versor of angle $\pi/2$, that is a unit vector of $\operatorname{Im}\mathbb{H}$; the right versors are exactly the unit square roots of $-1$, and they form the sphere $S^2\subset\operatorname{Im}\mathbb{H}$ of *Quaternion Roots of Minus One*.
+
+**Remark (two senses of the word).** This is Hamilton's sense of *versor*. In the Clifford vocabulary of Part II (*Versors, Rotors and the Sandwich Action with Signed Inner Conjugation*) a versor is any product of non-isotropic vectors, of either parity; in the three-dimensional Euclidean case $\mathrm{Cl}_{3,0}$ Hamilton's versors are exactly the even versors of Clifford norm one, which that vocabulary calls rotors, while the odd versors are the unit vectors acting as reflections. The corpus keeps *versor* for the Clifford sense and *rotor* for the even norm-one one, so the word is used here in the historical sense only.
+
 ### The Group $\mathrm{SU}(2)$
 
 **Theorem.** The group $Sp(1)$ of unit quaternions is the special unitary group $\mathrm{SU}(2)$, the group of $2\times2$ complex unitary matrices of determinant one.
@@ -102,6 +116,85 @@ R_q = \begin{pmatrix}
 $$
 
 whose trace is $\operatorname{tr}R_q = 4q_0^2 - 1$. The formula is the coordinate expression of $\operatorname{Ad}_q$ and is the standard quaternion parametrisation of the rotation group.
+
+**Remark (reading the quaternion off the matrix, and the largest entry).** The parametrisation is two-to-one, $R_q = R_{-q}$, so the matrix determines the pair $\{\pm\tilde q\}$ and no more. The four quantities
+
+$$
+1+\operatorname{tr}R_q = 4q_0^2,
+\qquad
+1+R_{11}-R_{22}-R_{33} = 4q_1^2,
+\qquad
+1+R_{22}-R_{33}-R_{11} = 4q_2^2,
+\qquad
+1+R_{33}-R_{11}-R_{22} = 4q_3^2
+$$
+
+are the squares of the four coefficients, and they sum to $4$ because $|\tilde q| = 1$; hence the largest of them is at least $1$, and it is the one to take the square root of. The remaining three coefficients then follow from the off-diagonal entries: the antisymmetric combinations carry the products with the scalar part,
+
+$$
+4q_0q_1 = R_{21}-R_{12},
+\qquad
+4q_0q_2 = R_{02}-R_{20},
+\qquad
+4q_0q_3 = R_{10}-R_{01},
+$$
+
+and the symmetric combinations the products of the imaginary coefficients,
+
+$$
+4q_1q_2 = R_{01}+R_{10},
+\qquad
+4q_1q_3 = R_{02}+R_{20},
+\qquad
+4q_2q_3 = R_{12}+R_{21}.
+$$
+
+Choosing the largest of the four is not a convenience but the point: recovering $q_0$ from the trace and dividing by it is exact for a generic rotation and fails precisely when $q_0 = 0$, that is at a rotation through $\pi$, where the trace is $-1$ and the quotient is $0/0$. Since the largest of the four quantities is at least $1$ for every rotation, the branch that uses it never divides by a small number. The trace also reads off the angle, $\operatorname{tr}R_q = 1+2\cos\theta$, which is the same statement as $q_0 = \cos(\theta/2)$: at $\theta = \pi$ the scalar part vanishes and the matrix alone cannot distinguish the two senses of the axis, which is the degeneracy just described. Finally, replacing the parametrising quaternion by its inverse — that is, reversing the orientation of the rotation — transposes the matrix, $R_{\tilde q^{-1}} = R_q^{T}$, since the adjoint action of $\tilde q^{-1}$ inverts the automorphism $\operatorname{Ad}_q$ on $\operatorname{Im}\mathbb{H}$.
+
+### The Closest Rotation and the Largest Eigenvalue
+
+The parametrisation above recovers $\{\pm\tilde q\}$ from a rotation matrix, and it uses the largest of the four diagonal quantities to avoid the division by a small number. The inverse problem is not always posed with a rotation: measured data give a matrix that is a rotation only up to error, and the question is which rotation is closest to it. The same four numbers, read as a vector, and one symmetric matrix answer that question, and the passage between the two problems is the reason the quaternion is preferred to the three angles in the applied literature.
+
+**Definition (the fitting matrix).** For a real $3\times3$ matrix $Q$ with entries $Q_{ij}$, the **fitting matrix** is the symmetric $4\times4$ matrix
+
+$$
+K(Q) = \begin{pmatrix}
+\operatorname{tr}Q & Q_{32}-Q_{23} & Q_{13}-Q_{31} & Q_{21}-Q_{12} \\
+Q_{32}-Q_{23} & 2Q_{11}-\operatorname{tr}Q & Q_{12}+Q_{21} & Q_{13}+Q_{31} \\
+Q_{13}-Q_{31} & Q_{12}+Q_{21} & 2Q_{22}-\operatorname{tr}Q & Q_{23}+Q_{32} \\
+Q_{21}-Q_{12} & Q_{13}+Q_{31} & Q_{23}+Q_{32} & 2Q_{33}-\operatorname{tr}Q
+\end{pmatrix},
+$$
+
+whose rows and columns are indexed by $(e_0, e_1, e_2, e_3)$.
+
+**Theorem (the fitting matrix is the correlation matrix of the rotation).** For every unit quaternion $\tilde q$ with coefficient vector $q = (q_0, q_1, q_2, q_3)$ and every real $3\times3$ matrix $Q$,
+
+$$
+q^{T}K(Q)\,q = \operatorname{tr}\bigl(R_q^{T}Q\bigr) = \sum_{i,j=1}^{3}(R_q)_{ij}Q_{ij},
+$$
+
+the sum being the **correlation** of the rotation $R_q$ with $Q$.
+
+*Proof.* Both sides are quadratic forms in $q$, and $K(Q)$ is linear in $Q$, so it suffices to expand and collect the coefficient of each $Q_{ij}$. The diagonal entries of $K(Q)$ give $q_0^2+q_i^2-q_j^2-q_k^2$ for the coefficient of $Q_{ii}$ with $\{i,j,k\} = \{1,2,3\}$, which is $1-2(q_j^2+q_k^2) = (R_q)_{ii}$ because $|\tilde q| = 1$; the off-diagonal entries give $2q_0q_k+2q_iq_j$ for the coefficient of $Q_{ij}$ with the cyclic order $(i,j,k)$, which is $(R_q)_{ij}$ by the displayed matrix. Hence the two quadratic forms agree on every matrix unit $Q = E_{ij}$ and therefore everywhere. $\square$
+
+**Theorem (the closest rotation).** Let $Q$ be a real $3\times3$ matrix and let $q_\ast$ be a unit eigenvector of $K(Q)$ for its **largest** eigenvalue $\lambda_\ast$. Then
+
+$$
+\lambda_\ast = \max_{|\tilde q| = 1}\operatorname{tr}\bigl(R_q^{T}Q\bigr) = \operatorname{tr}\bigl(R_{q_\ast}^{T}Q\bigr),
+$$
+
+so $R_{q_\ast}$ is the rotation that **best fits** $Q$: among all matrices of $SO(3)$ it minimises the sum of squares $\sum_{i,j}(R_{ij}-Q_{ij})^2$, because $\sum_{ij}(R_{ij}-Q_{ij})^2 = 3+\sum_{ij}Q_{ij}^2-2\operatorname{tr}(R^{T}Q)$ and only the last term depends on $R$.
+
+*Proof.* By the identity of the previous theorem, $\operatorname{tr}(R_q^{T}Q) = q^{T}K(Q)q$ for unit $\tilde q$. The spectral theorem for a real symmetric matrix exhibits $K(Q) = \sum_k\lambda_kv_kv_k^{T}$ with orthonormal $v_k$, so $q^{T}K(Q)q = \sum_k\lambda_k\langle v_k, q\rangle^2$, a convex combination of the eigenvalues; its maximum over the unit sphere is $\lambda_\ast$, attained exactly at the eigenvectors for $\lambda_\ast$. The expansion of the sum of squares is immediate. $\square$
+
+**Corollary (the exact case, and the eigenvalue as a test of fit).** If $Q$ is itself a rotation, $Q = R_{q_0}$, then $\lambda_\ast = 3$, the eigenvectors for $\lambda_\ast$ are $\pm q_0$, and the best fit is exact. Equivalently, the largest eigenvalue of $\frac{1}{3}K(Q)$ is $1$ for a rotation matrix, and its eigenvector is the quaternion of the rotation; the value $\lambda_\ast$ is the achieved correlation, and the gap $3-\lambda_\ast$ measures how far $Q$ is from a rotation.
+
+*Proof.* For $Q = R_{q_0}$ one has $\operatorname{tr}(R_q^{T}Q) = \operatorname{tr}(R_q^{T}R_{q_0}) = \operatorname{tr}(R_{\bar q q_0})$, and the trace is $4(q_0')^2-1\le3$ with the scalar part $q_0' = \langle \tilde q,\tilde q_0\rangle$ of the product, so the maximum is $3$, attained exactly at $\tilde q = \pm\tilde q_0$. The factor $\frac{1}{3}$ is the normalisation of the definition. $\square$
+
+**Remark (why the eigenvector, and not the four square roots).** The four quantities of the preceding remark are the diagonal entries of the eigenvector problem in disguise: $1+\operatorname{tr}R_q = 4q_0^2$ and the three others are $\frac{1}{3}K(Q)$'s diagonal deviations, and when $Q$ is a rotation the eigenvector for $\lambda_\ast = 3$ has components proportional to $(\sqrt{1+\operatorname{tr}Q}, \pm\sqrt{1+R_{11}-R_{22}-R_{33}}, \dots)$. The largest-eigenvalue route is the numerically stable version of the largest-square-root route: it never divides by a component that may vanish, and it extends off the rotation matrices, where the four-branch formulas have no meaning. The problem of finding the rotation that carries one set of measured vectors to another in the least-squares sense is the same computation with $Q$ the correlation matrix of the two sets, and it is posed in that form in the attitude-determination literature cited below.
+
+**Remark (the arithmetic cost, and what the four numbers buy).** Representing a rotation by a quaternion costs four real numbers subject to one constraint, against nine for the matrix; composing two rotations is one quaternion product, sixteen multiplications and twelve additions, against twenty-seven multiplications for the matrix product; and renormalising a drifting quaternion is a four-term operation against the re-orthogonalisation of a matrix. The single respect in which the matrix is cheaper is the action on a vector: nine multiplications against the two quaternion products, thirty-two multiplications, of the sandwich. The eigenvector computation above is the fourth operation for which the four numbers are used, and the double cover is its only price: the eigenvector is determined up to sign, which is exactly the two-to-one redundancy of the parametrisation.
 
 ### The Differential and the Lie Algebra
 
@@ -388,7 +481,7 @@ This is the failure of the period $2\pi$: the rotation through $2\pi$ about $u$ 
 
 ## Summary
 
-The unit quaternions $Sp(1) = \{\tilde q : |\tilde q| = 1\} = S^3$ form a compact connected simply connected Lie group, non-abelian with centre $\{\pm1\}$, isomorphic to $SU(2)$, and every unit quaternion is $\cos\theta + u\sin\theta = \exp(u\theta)$ for an angle $\theta$ and a unit axis $u$.
+The unit quaternions $Sp(1) = \{\tilde q : |\tilde q| = 1\} = S^3$ form a compact connected simply connected Lie group, non-abelian with centre $\{\pm1\}$, isomorphic to $SU(2)$, and every unit quaternion is $\cos\theta + u\sin\theta = \exp(u\theta)$ for an angle $\theta$ and a unit axis $u$. Hamilton's word for a unit quaternion is a versor, the unit part $U\tilde q$ of the polar decomposition $\tilde q = T\tilde q\,U\tilde q$; a versor is the quotient of two unit vectors, pictured as a directed arc of the great circle it turns about, and the right versors are the unit square roots of $-1$.
 
 Conjugation by a unit, $\operatorname{Ad}_q(x) = qxq^{-1}$, is an algebra automorphism that preserves the quaternion norm and stabilises the imaginary subspace $\operatorname{Im}\mathbb{H}\cong\mathbb{R}^3$, where it acts as an isometry of determinant $+1$. The assignment $\tilde q\mapsto\operatorname{Ad}_q$ is a surjective homomorphism $Sp(1)\to SO(3)$ with kernel $\{\pm1\}$, so $SO(3)\cong Sp(1)/\{\pm1\}$ and the map is a two-sheeted covering, indeed the universal cover, giving $\pi_1(SO(3))\cong\mathbb{Z}/2\mathbb{Z}$.
 
@@ -409,6 +502,7 @@ The sandwich $S_q(x) = qx\bar{\tilde q}$ is the adjoint action rescaled, $S_q = 
 | $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3 = \sum_\mu q_\mu e_\mu$ | General quaternion, scalar part $q_0$, vector part $\mathbf{q}$ |
 | $\bar{\tilde q} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$ | Quaternion conjugate |
 | $N(\tilde q) = \tilde q\bar{\tilde q} = \lvert \tilde q\rvert^2$ | Quaternion norm and modulus |
+| $U\tilde q = \tilde q/\lvert\tilde q\rvert$, $T\tilde q = \lvert\tilde q\rvert$ | Versor and tensor of $\tilde q$ (Hamilton); a versor is a unit quaternion, so $Sp(1)$ is the group of versors |
 | $\operatorname{Im}\mathbb{H}\cong\mathbb{R}^3$ | Imaginary quaternions, the space of vectors |
 | $\langle x, y\rangle = \mathrm{Sc}(x\bar{y})$ | Real inner product on $\operatorname{Im}\mathbb{H}$ |
 | $Sp(1) = \{\tilde q : \lvert \tilde q\rvert = 1\} = S^3$ | Group of unit quaternions |
@@ -419,6 +513,7 @@ The sandwich $S_q(x) = qx\bar{\tilde q}$ is the adjoint action rescaled, $S_q = 
 | $S_q(x) = qx\bar{\tilde q} = N(\tilde q)\operatorname{Ad}_q$ | Sandwich; equals the adjoint action on the unit slice |
 | $L_q(x) = qx$, $\rho_q(x) = xq$ | Left and right multiplication operators of the regular representation |
 | $R_q$ | Matrix of $\operatorname{Ad}_q$ on $\operatorname{Im}\mathbb{H}$ |
+| $K(Q)$ | Fitting matrix of a real $3\times3$ matrix $Q$, with $q^{T}K(Q)q = \operatorname{tr}(R_q^{T}Q)$; its largest eigenvector is the quaternion of the rotation closest to $Q$ |
 | $\operatorname{ad}_x(y) = [x,y] = 2(x\times y)$ | Adjoint map of the Lie algebra $\operatorname{Im}\mathbb{H}$ |
 | $\operatorname{Im}\mathbb{H}\cong\mathrm{SO}(3)\cong\mathrm{SU}(2)$ | Lie algebra of $Sp(1)\cong SU(2)$ and of $SO(3)$ |
 | $SO(3)$ | Rotation group of $\mathbb{R}^3$, $\cong Sp(1)/\{\pm1\}$ |
@@ -432,7 +527,8 @@ The sandwich $S_q(x) = qx\bar{\tilde q}$ is the adjoint action rescaled, $S_q = 
 
 ## Further Reading
 
-- William Rowan Hamilton, *Lectures on Quaternions* (Hodges and Smith, 1853), for the origin of the quaternion representation of rotations and of the conjugation action.
+- William Rowan Hamilton, *Lectures on Quaternions* (Hodges and Smith, 1853), for the origin of the quaternion representation of rotations, of the conjugation action, and of the versor and tensor notation.
+- William Rowan Hamilton, *Elements of Quaternions*, 2nd edition, edited by Charles Jasper Joly (Longmans, Green & Company, 1899), for the versor and tensor notation, the quotient of two vectors and the composition of versors as the sum of arcs.
 - Peter Guthrie Tait, *An Elementary Treatise on Quaternions* (Cambridge University Press, 3rd ed. 1890), for the operator form of quaternion multiplication and rotation.
 - Olinde Rodrigues, "Des lois géométriques qui régissent les déplacements d'un système solide", *Journal de Mathématiques Pures et Appliquées* **5** (1840) 380–440, for the Euler–Rodrigues rotation formula.
 - Felix Klein, *Vorlesungen über das Ikosaeder und die Auflösung der Gleichungen vom fünften Grade* (Teubner, 1884), for the rotation-group viewpoint on the unit quaternions.
@@ -442,3 +538,7 @@ The sandwich $S_q(x) = qx\bar{\tilde q}$ is the adjoint action rescaled, $S_q = 
 - Alexander Kirillov Jr., *An Introduction to Lie Groups and Lie Algebras* (Cambridge University Press, 2008), for the exponential map, the adjoint representation and the structure of $SO(3)$ and $SO(4)$.
 - Emil Artin, *Geometric Algebra* (Interscience, 1957), for the Cartan–Dieudonné theorem and the structure of the orthogonal group.
 - John H. Conway and Derek A. Smith, *On Quaternions and Octonions* (A K Peters, 2003), for the conjugation action and the rotation groups.
+- Grace Wahba, "A least squares estimate of satellite attitude", *SIAM Review* **7** (1965) 409, for the least-squares attitude problem whose solution is the eigenvector problem of the fitting matrix.
+- Berthold K. P. Horn, "Closed-form solution of absolute orientation using unit quaternions", *Journal of the Optical Society of America A* **4** (1987) 629–642, for the closed-form solution by the largest eigenvector of the symmetric $4\times4$ matrix, the version of the computation given here.
+- Samuel W. Shepperd, "Quaternion from rotation matrix", *Journal of Guidance and Control* **1** (1978) 223–224, for the branch that takes the square root of the largest of the four diagonal quantities, the numerically stable form of the reconstruction.
+- Malcolm D. Shuster, "A survey of attitude representations", *Journal of the Astronautical Sciences* **41** (1993) 439–517, for the taxonomy of the attitude representations and for the conventions — active against passive, frame against vector — that the matrix and quaternion formulas of this article fix by the adjoint action $\operatorname{Ad}_q(x) = qxq^{-1}$.

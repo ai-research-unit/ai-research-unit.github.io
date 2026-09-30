@@ -109,6 +109,30 @@ $$
 
 The scalar subspace $\mathbb{C}_{\mathbb{B}}$ receives no contribution, which is again $\mathrm{Sc}(\tilde{F}) = 0$; the decomposition used is $\mathbb{B} = \mathbb{H}_{\mathbb{B}} \oplus i\mathbb{H}_{\mathbb{B}}$. Thus the field strength uses the vector parts of $\mathbb{H}_{\mathbb{B}}$ and $i\mathbb{H}_{\mathbb{B}}$ and the electric and magnetic halves of $\mathbb{M}_+$ and $\mathbb{M}_-$ respectively, and it touches $\mathbb{C}_{\mathbb{B}}$ not at all.
 
+**The biparavector reading: the field as a sum of two spacetime planes.** The two halves just separated are not merely subspaces; each is a **family of planes**, and the separation of the field into an electric and a magnetic part is the separation of a biparavector into a timelike and a spacelike plane. In the paravector presentation of the algebra (*Paravectors and the Geometry of Spacetime*), a **biparavector** is the product of two orthogonal paravectors and represents a plane in spacetime; with $\gamma_k = ie_k$ there are six independent planes,
+
+$$
+\left\{e_0\gamma_k,\ \gamma_j\gamma_k\right\} = \left\{ie_1,\ ie_2,\ ie_3\right\} \cup \left\{e_3,\ e_1,\ e_2\right\},
+$$
+
+using $\gamma_2\gamma_1 = -e_2e_1 = e_3$ and its cyclic companions. The first three, the planes containing the time direction, have the form $e_0\gamma_k$ and are the pure **imaginary** vectors, that is the real span of $\{ie_k\} = \mathrm{Vect}(\mathbb{B})\cap\mathbb{M}_+$. The last three, the purely spatial planes, have the form $\gamma_j\gamma_k$ and are the pure **real** vectors, that is the real span of $\{e_k\} = \mathrm{Vect}(\mathbb{B})\cap\mathbb{M}_-$.
+
+Comparing with the decomposition above, the electric and magnetic halves of the field are exactly the two families of planes:
+
+$$
+\tilde{F} \;=\; \underbrace{i\sqrt{\epsilon}\,\mathbf{E}}_{\text{timelike planes}\;\in\,\mathbb{M}_+} \;-\; \underbrace{\sqrt{\mu}\,\mathbf{H}}_{\text{spacelike planes}\;\in\,\mathbb{M}_-}.
+$$
+
+The electric part is a combination of the three planes that contain the time direction, and the magnetic part a combination of the three that do not. This is the plane-geometric form of the algebra asymmetry: the electric field is a *boost-type* object and the magnetic field a *rotation-type* object, in the sense that the timelike planes generate the Lorentz boosts and the spacelike planes the rotations (*Biquaternion Lie Algebra*). The six components of the field are the six planes, and the field is a sum of one plane of each type.
+
+Two familiar facts are read off from the plane type and are recorded here because the corpus states them separately elsewhere. The **quaternion conjugate** of the field reverses the electric planes and fixes the magnetic ones,
+
+$$
+\bar{\tilde{F}} = -i\sqrt{\epsilon}\,\mathbf{E} + \sqrt{\mu}\,\mathbf{H},
+$$
+
+because the conjugate negates the vector part of each coefficient and the electric part is the imaginary vector while the magnetic part is the real vector; read on the fields this is $\mathbf{E}\to-\mathbf{E}$, $\mathbf{H}\to\mathbf{H}$, the polar-vector and axial-vector behaviour of the electric and magnetic fields. The **duality rotation** of the later section, $\tilde{F}\mapsto e^{i\varphi}\tilde{F}$, rotates one family of planes into the other: at $\varphi = \pi/2$ the factor is the central $i$, which carries $\mathbb{M}_+$ to $\mathbb{M}_-$ and exchanges the two families exactly, while for general $\varphi$ it rotates the electric planes into the magnetic ones and back. This is why the duality rotation is a symmetry of the source-free vacuum equations and not of the equations with electric sources: it moves the field along the cylinder of constant $I_1+iI_2$ without preserving the planes separately.
+
 ## The Biquaternion Norm and the Two Invariants
 
 The biquaternion norm on $\mathbb{B}$ is
@@ -403,6 +427,20 @@ $$
 
 The scalar part of $\tilde{F}\tilde{F}^\dagger$ is $2W$, twice the (non-negative) energy density, and its vector part is $\frac{2i}{c}\mathbf{S}$, $\frac{2}{c}$ times the imaginary unit times the Poynting vector; the result is an element of $\mathbb{M}_+$, as every Hermitian form must be. The contrast is instructive: the biquaternion norm is a Lorentz-invariant complex scalar that can vanish, while the Hermitian form is an $\mathbb{M}_+$-valued object whose scalar part is strictly positive and whose transformation law is not that of a scalar. The first classifies the field; the second measures it. This is the biquaternion expression of the familiar fact that the electromagnetic energy density is positive-definite, whereas the invariant $I_1$ is indefinite.
 
+**The energy–momentum biquaternion, and the second route to the invariants.** Half the Hermitian form is itself an element of the algebra, and it is the object the electro-gravimagnetic programme calls the **energy–momentum biquaternion**:
+
+$$
+\tilde{\Xi} = \tfrac{1}{2}\,\tilde{F}\tilde{F}^\dagger = W\,e_0 + \frac{i}{c}\,\mathbf{S} .
+$$
+
+It is Hermitian, $\tilde{\Xi}^\dagger = \tilde{\Xi}$, with real scalar part $W$ and imaginary vector part $(i/c)\mathbf{S}$. For an element of that shape the biquaternion norm is real — and indefinite — and
+
+$$
+N(\tilde{\Xi}) = \tilde{\Xi}\circ\bar{\tilde{\Xi}} = W^2 - \frac{\|\mathbf{S}\|^2}{c^2} = \frac{\epsilon^2}{4}\,I_1^2 + \frac{\epsilon}{\mu}\,I_2^2 ,
+$$
+
+checked on 100 random fields to machine precision. The last equality is the point of the paragraph: the Hermitian form is not a scalar under Lorentz transformations, but its contraction **is**, and the contraction returns the two invariants. The energy density and the Poynting vector are therefore tied to the same pair $(I_1, I_2)$ that classifies the field. The programme states the same relation as $\langle\langle\tilde{\Xi}\rangle\rangle^2 = \tilde{\Xi}\circ\tilde{\Xi}^-$; on a Hermitian element the corpus's norm $N$ and the source's pseudonorm agree, so the two forms are one statement, and in vacuum ($\epsilon = \mu = 1$) it reads $N(\tilde{\Xi}) = \tfrac14 I_1^2 + I_2^2$.
+
 ## Summary
 
 The field-strength biquaternion $\tilde{F} = i\sqrt{\epsilon}\,\mathbf{E} - \sqrt{\mu}\,\mathbf{H}$ is a pure-vector biquaternion with vanishing scalar part. It lies in the six-dimensional real vector part of $\mathbb{B}$, decomposed into an imaginary electric piece in the Hermitian subspace $\mathbb{M}_+$ and a real magnetic piece in the anti-Hermitian subspace $\mathbb{M}_-$. This is why the field strength is neither a four-vector nor an element of $\mathbb{M}_-$: it is an antisymmetric rank-two tensor, whose two halves occupy the two complementary sectors of the algebra.
@@ -448,6 +486,7 @@ Duality is the rotation $\mathbf{V}\mapsto e^{-i\theta}\mathbf{V}$; at $\theta =
 | $\star$ | Hodge dual, $\star(\mathbf{E},\mathbf{B}) = (c\mathbf{B}, -\mathbf{E}/c)$, $\star^2 = -1$ |
 | $W = \tfrac{1}{2}(\epsilon\mathbf{E}^2 + \mu\mathbf{H}^2)$ | Electromagnetic energy density |
 | $\mathbf{S} = \mathbf{E}\times\mathbf{H}$ | Poynting vector |
+| $\tilde{\Xi} = \tfrac{1}{2}\tilde{F}\tilde{F}^\dagger = W e_0 + \tfrac{i}{c}\mathbf{S}$ | Energy–momentum biquaternion (Hermitian); $N(\tilde{\Xi}) = W^2 - \|\mathbf{S}\|^2/c^2$ |
 | $\mathbf{v}$ | Boost (frame) velocity |
 
 ## Further Reading
@@ -461,4 +500,5 @@ Duality is the rotation $\mathbf{V}\mapsto e^{-i\theta}\mathbf{V}$; at $\theta =
 - Roger Penrose and Wolfgang Rindler, *Spinors and Space-Time* (Cambridge, 1984), for the self-dual and anti-self-dual decomposition of the field tensor.
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the representation theory of the Lorentz group and its two three-dimensional complex representations.
 - L. A. Alexeyeva, "Maxwell Equations, Their Hamiltonian and Biquaternionic Forms and Properties of Their Solutions" (2016), for the biquaternionic formulation of the field equations.
+- L. A. Alexeyeva, "Biquaternions algebra and its applications by solving of some theoretical physics equations", *Clifford Analysis, Clifford Algebras and Their Applications* **7**(1) (2012) 19–39 (arXiv:1302.0523), for the energy–momentum biquaternion $\tilde{\Xi}$, its pseudonorm and its identification with the two field invariants.
 - A. Waser, "Application of Bi-Quaternions in Physics" (2000, updated 2007), for the biquaternionic treatment of the field and its energy–momentum.

@@ -5,7 +5,7 @@
 
 The tensor product of two $R$-algebras $A$ and $B$ is the module $A \otimes_R B$ equipped with the product $(a \otimes b)(a' \otimes b') = aa' \otimes bb'$. It is the construction that combines two algebras without forcing their elements to commute, and it is the operation that produces the biquaternions from the complex numbers and the quaternions, matrix algebras from smaller ones, and the scalar extension of every algebra by a ring homomorphism.
 
-This article develops the algebra tensor product: the product and its well-definedness, the universal property that characterises it, the functorial and exactness properties, base change, tensor powers of an algebra, and the behaviour of central simple algebras. The underlying tensor product of modules is assumed from *Modules*, §13, and the tensor algebra of a module from *Tensor Powers and the Free Algebra*; the two tensor constructions are different and the article keeps them apart. A subtler construction, the **free product**, is the coproduct of not-necessarily-commutative algebras and appears only as a comparison; the detailed study of the quotients that specialise $T(V)$ — the symmetric and alternating quotients in particular — belongs to categories 06 and 07.
+This article develops the algebra tensor product: the product and its well-definedness, the universal property that characterises it, the functorial and exactness properties, base change, tensor powers of an algebra, and the behaviour of central simple algebras under the tensor product. The underlying tensor product of modules is assumed from *Modules*, §13, and the tensor algebra of a module from *Tensor Powers and the Free Algebra*; the two tensor constructions are different and the article keeps them apart. A subtler construction, the **free product**, is the coproduct of not-necessarily-commutative algebras and appears only as a comparison; the detailed study of the quotients that specialise $T(V)$ — the symmetric and alternating quotients in particular — belongs to categories 06 and 07.
 
 Throughout, $R$ is a commutative ring with identity $1 \neq 0$, and $A$, $B$, $C$ are $R$-algebras. Unitality and associativity are stated where they are used.
 
@@ -123,7 +123,7 @@ $$
 \mathbb{H}_{\mathbb{D}} = \mathbb{D} \otimes_{\mathbb{R}} \mathbb{H},
 $$
 
-the split biquaternion algebra, of real dimension $2 \cdot 4 = 8$. The central unit $j \in \mathbb{D}$ has $j^2 = +1$ and commutes with the quaternion units, so the element $1 + j$ is a zero divisor: $(1 + j)(1 - j) = 1 - j^2 = 0$. The two split-complex idempotents $\pi_\pm = \tfrac{1}{2}(1 \pm j)$ act as central idempotents, so the algebra decomposes as a direct sum of two ideals; the details are below.
+the split biquaternion algebra, of real dimension $2 \cdot 4 = 8$. The central unit $j \in \mathbb{D}$ has $j^2 = +1$ and commutes with the quaternion units, so the element $1 + j$ is a zero divisor: $(1 + j)(1 - j) = 1 - j^2 = 0$. The two split-complex idempotents $\pi_\pm = \tfrac{1}{2}(1 \pm j)$ are central, so the algebra decomposes as a direct sum of two ideals; the algebra and its decomposition are the subject of *Split-Biquaternion Algebra*, and the ideals and the Peirce decomposition of *Split-Biquaternion Ideals and Peirce Decomposition*.
 
 **Example (matrix algebras).** For a commutative ring $R$ and positive integers $m, n$, there is an isomorphism of $R$-algebras
 
@@ -167,7 +167,7 @@ $$
 (a,b)_F = F\langle i,j\rangle\big/\bigl(i^2 - a,\; j^2 - b,\; ij + ji\bigr),
 $$
 
-so that $k = ij$ satisfies $k^2 = -ab$ and $i,j,k$ anticommute pairwise. The division algebra $\mathbb{H}$ is $(-1,-1)_{\mathbb{R}}$, and the split biquaternions of the example above are the tensor product $\mathbb{D} \otimes_\mathbb{R} \mathbb{H}$, in which $1 \otimes e_k$ play the role of $i, j, k$ over the split complex base. Tensoring two quaternion algebras over $F$ gives a central simple algebra of dimension $16$ over $F$, and its class in the Brauer group is the sum of the two classes, as the closing section of the article explains.
+so that $k = ij$ satisfies $k^2 = -ab$ and $i,j,k$ anticommute pairwise. The division algebra $\mathbb{H}$ is $(-1,-1)_{\mathbb{R}}$, and the split biquaternions of the example above are the tensor product $\mathbb{D} \otimes_\mathbb{R} \mathbb{H}$, in which $1 \otimes e_k$ play the role of $i, j, k$ over the split complex base. Tensoring two quaternion algebras over $F$ gives a central simple algebra of dimension $16$ over $F$, and its class in the Brauer group is the sum of the two classes; the Brauer group, Wedderburn's theorem and the examples are in *Central Simple Algebras and the Brauer Group*.
 
 ## Functoriality and Base Change
 
@@ -221,31 +221,15 @@ recovering the computation of the example above.
 
 ## Central Simple Algebras
 
+The tensor product has one structural property, the reason for the name of this section: it preserves centrality and simplicity.
+
 **Definition.** Let $F$ be a field. A finite-dimensional $F$-algebra $A$ is **central simple** if $Z(A) = F \cdot 1_A$ and $A$ has no two-sided ideal other than $0$ and $A$ (with $A^2 \neq 0$).
 
 **Theorem (tensor product of central simple algebras).** Let $A$ and $B$ be finite-dimensional central simple $F$-algebras. Then $A \otimes_F B$ is central simple, with $\dim_F (A \otimes_F B) = (\dim_F A)(\dim_F B)$.
 
 *Proof (sketch).* The centre is computed by the proposition on centres: extending scalars to an algebraic closure, where $A$ and $B$ become matrix algebras, the tensor product becomes a matrix algebra and is central simple. Descent along the finite Galois extension then gives the result in general.
 
-**Wedderburn's structure theorem.** Every finite-dimensional central simple $F$-algebra is isomorphic to $M_n(D)$ for a unique positive integer $n$ and a unique central $F$-division algebra $D$.
-
-**Definition (Brauer group).** Two central simple $F$-algebras $A$ and $B$ are **equivalent**, written $A \sim B$, if
-
-$$
-A \otimes_F M_m(F) \;\cong\; B \otimes_F M_n(F) \qquad \text{for some } m, n \geq 1;
-$$
-
-by Wedderburn's theorem this is the same as requiring that the division algebras underlying $A$ and $B$ be isomorphic. The tensor product respects equivalence and gives the set of equivalence classes the structure of an abelian group, the **Brauer group** $\mathrm{Br}(F)$, with identity the class of $F$ and inverse the opposite algebra $A^{\mathrm{op}}$, because $A \otimes_F A^{\mathrm{op}} \cong M_{n^2}(F)$ when $\dim_F A = n^2$.
-
-**Example.** Over $F = \mathbb{R}$ the division algebras are $\mathbb{R}$, $\mathbb{C}$ and $\mathbb{H}$ (Frobenius), so the Brauer group is generated by the class of $\mathbb{H}$, which has order $2$: $\mathrm{Br}(\mathbb{R}) \cong \mathbb{Z}/2\mathbb{Z}$. Consequently $\mathbb{H} \otimes_\mathbb{R} \mathbb{H}$ has trivial class, so it is a full matrix algebra over $\mathbb{R}$, and the dimension count $16$ forces
-
-$$
-\mathbb{H} \otimes_\mathbb{R} \mathbb{H} \;\cong\; M_4(\mathbb{R}).
-$$
-
-Similarly $\mathbb{B} = \mathbb{C} \otimes_\mathbb{R} \mathbb{H}$ is not central over $\mathbb{R}$ — its centre is $\mathbb{C}$ — but over $\mathbb{C}$ it is $M_2(\mathbb{C})$, and $\mathbb{B} \otimes_\mathbb{C} \mathbb{B} \cong M_4(\mathbb{C})$.
-
-**Example.** For a field $F$ of characteristic not $2$, $(a,b)_F \otimes_F (a,b)_F$ is split for every $a,b \in F^\times$, since the class of $(a,b)_F$ has order dividing $2$ in $\mathrm{Br}(F)$. Thus $\mathbb{H} \otimes_\mathbb{R}\mathbb{H} \cong M_4(\mathbb{R})$ is an instance of a general phenomenon.
+So the tensor product makes the similarity classes of central simple algebras into an abelian group, the **Brauer group** $\mathrm{Br}(F)$, with identity the class of $F$ and inverse the class of the opposite algebra. For a quaternion algebra the opposite algebra is isomorphic to it, by the map that fixes $i$ and negates $j$: it sends the defining relations $i^2 = a$, $j^2 = b$, $ji = -ij$ to $i^2 = a$, $(-j)^2 = b$, $(-j)i = -ji = ij$, so the class of $(a,b)_F$ has order dividing $2$ and $(a,b)_F \otimes_F (a,b)_F \cong (a,b)_F \otimes_F (a,b)_F^{\mathrm{op}} \cong M_4(F)$. Wedderburn's structure theorem, the index and the exponent, and the Clifford invariant that identifies the $2$-torsion of the Brauer group with the quadratic forms, are the subject of *Central Simple Algebras and the Brauer Group*, and are not developed further here.
 
 ## Tensor Powers of an Algebra
 
@@ -283,7 +267,7 @@ Each $\sigma$ acts by an algebra automorphism, because the product is componentw
 
 The **tensor product of algebras** $A \otimes_R B$ is the module tensor product with the componentwise product $(a\otimes b)(a'\otimes b') = aa' \otimes bb'$. It is associative and unital when its factors are, commutative when its factors are, and its centre contains $Z(A) \otimes_R Z(B)$, with equality when $R$ is a field. Its universal property is that algebra homomorphisms $A \otimes_R B \to C$ correspond to pairs of homomorphisms $A \to C$, $B \to C$ with commuting images; for commutative algebras this makes $\otimes_R$ the coproduct, not the product, and in general $A \otimes B$ is the quotient of the free product $A \sqcup B$ by the relations $ab = ba$. Over a common algebra $A$ the tensor product of two quotients is the pushout of the diagram $A/I \leftarrow A \rightarrow A/J$ in commutative $A$-algebras, with $(A/I) \otimes_A (A/J) \cong A/(I+J)$.
 
-The principal computations are $\mathbb{B} = \mathbb{C} \otimes_\mathbb{R} \mathbb{H}$ and $\mathbb{H}_{\mathbb{D}} = \mathbb{D} \otimes_\mathbb{R} \mathbb{H}$, both of real dimension $8$; $M_m(R) \otimes_R M_n(R) \cong M_{mn}(R)$; $R[x] \otimes_R R[y] \cong R[x,y]$; $(A/I) \otimes_A (A/J) \cong A/(I+J)$ and $\mathbb{Z}/m \otimes_\mathbb{Z} \mathbb{Z}/n \cong \mathbb{Z}/\gcd(m,n)$; and $\mathbb{C} \otimes_\mathbb{R} \mathbb{C} \cong \mathbb{C} \times \mathbb{C}$, showing that a tensor product of fields need not be a field. Base change $A \mapsto A \otimes_R S$ is a functor commuting with quotients, and the tensor product of central simple algebras is central simple; the classes of central simple algebras form the Brauer group, whose only nontrivial real element is the class of $\mathbb{H}$, giving $\mathbb{H} \otimes_\mathbb{R} \mathbb{H} \cong M_4(\mathbb{R})$.
+The principal computations are $\mathbb{B} = \mathbb{C} \otimes_\mathbb{R} \mathbb{H}$ and $\mathbb{H}_{\mathbb{D}} = \mathbb{D} \otimes_\mathbb{R} \mathbb{H}$, both of real dimension $8$; $M_m(R) \otimes_R M_n(R) \cong M_{mn}(R)$; $R[x] \otimes_R R[y] \cong R[x,y]$; $(A/I) \otimes_A (A/J) \cong A/(I+J)$ and $\mathbb{Z}/m \otimes_\mathbb{Z} \mathbb{Z}/n \cong \mathbb{Z}/\gcd(m,n)$; and $\mathbb{C} \otimes_\mathbb{R} \mathbb{C} \cong \mathbb{C} \times \mathbb{C}$, showing that a tensor product of fields need not be a field. Base change $A \mapsto A \otimes_R S$ is a functor commuting with quotients, and the tensor product of central simple algebras is central simple; their similarity classes form the Brauer group $\mathrm{Br}(F)$, and the class of a quaternion algebra has order dividing $2$, so $(a,b)_F \otimes_F (a,b)_F \cong M_4(F)$.
 
 ## Summary of Notation
 

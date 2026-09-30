@@ -203,6 +203,14 @@ $$
 
 The two are of the diagonal form $\tfrac14\sum_\mu\epsilon_\mu e_\mu\otimes e_\mu$ with $\epsilon_0=1$ and $\epsilon_1\epsilon_2\epsilon_3=+1$: they are two of the four Bell idempotents of the companion article *The Bell Basis as the Idempotent Basis of $\mathbb{B}\otimes\mathbb{B}$*, namely those with $\epsilon=(-1,-1,+1)$ and $\epsilon=(+1,+1,+1)$. The states $E_{1,\pm1}$ are single product idempotents and are not of diagonal form. The coupled basis and the Bell basis are two idempotent bases of the same algebra and are related by a Hadamard change of basis, discussed below.
 
+**Remark.** The sign pattern $\epsilon=(-1,-1,+1)$ of $E_{1,0}$ is also the pattern of a unit of the underlying quaternion order. The one-particle element
+
+$$
+Q=\tfrac12(e_0-e_1-e_2+e_3)
+$$
+
+is a unit of the Hurwitz order and has order six, with $Q^2=-Q^*$ and $Q^3=-e_0$; the four patterns with $\epsilon_0=+1$ and $\epsilon_1\epsilon_2\epsilon_3=+1$ are four of the eight elements of order six in the binary tetrahedral unit group. The unit groups of the quaternion orders, their element orders and their cyclic subgroups are the subject of *Biquaternion Orders and Finite Groups of Units*, §*The Elements of Order Six*; the idempotent basis above uses none of that beyond the sign pattern.
+
 The action of the total spin operators is the expected one. On the projectors the diagonal operators act by multiplication,
 
 $$
@@ -340,6 +348,16 @@ Everything above rests on one assumption that the framework does not derive: tha
 
 Two consequences of the assumption are worth naming because they are structural rather than dynamical. First, the composition rule doubles the module dimension: two fundamental modules give a four-dimensional space, and $n$ of them give $2^n$. The framework therefore composes into powers of two and into nothing else; a three-level system cannot be built from fundamental modules, which is the algebraic ceiling examined in the companion problem of the third level. Second, the local operations — the elements $\tilde U_1\otimes\tilde U_2$ — form a proper subgroup of the unitaries of the composite algebra, so the composite carries a notion of locality that the algebra alone does not supply. Both facts are consequences of the tensor-product assumption as much as of the algebra.
 
+## The Singlet Is Not a Single Quaternion
+
+Because the framework composes into $\mathbb{B}\otimes\mathbb{B}$ and not into $\mathbb{B}$, a single element of $\mathbb{B}$ can never be an entangled pair. It is worth stating this explicitly, because a source in the literature (Obojska, *Journal of Physics Communications* **2** (2018) 085021) presents the unit quaternion
+
+$$
+Q=\tfrac{1}{2}(1-e_1-e_2+e_3)
+$$
+
+as one particle of a singlet, reading the pair $\{Q,Q^*\}$ as one singlet and $\{-Q,-Q^*\}$ as another, and saying that each generator "contains complete information about the whole system". The quaternion itself is exactly what the source says it is. Its powers are $Q^2=-Q^*$, $Q^3=-e_0$, $Q^4=-Q$, $Q^5=Q^*$, $Q^6=e_0$, so $Q$ generates a cyclic group of order six in $Sp(1)$ — the preimage of the order-three rotation group — and the rotation angle is $2\pi/3$ for both $Q$ and $Q^*$, with a common axis line and opposite senses. That group-theoretic content belongs to *Biquaternion Orders and Finite Groups of Units*. What fails is the identification with a state. Read as a two-qubit vector in the basis order $|00\rangle,|01\rangle,|10\rangle,|11\rangle$, the quaternion has components $(c_1,c_2,c_3,c_4)=\tfrac12(1,-1,-1,1)$, and the product-state test $c_1c_4=c_2c_3$ holds: $\tfrac12\cdot\tfrac12=\tfrac14=\tfrac12\cdot\tfrac12$. Its concurrence is zero, and it represents the product state $\tfrac12(|\!\uparrow\rangle-|\!\downarrow\rangle)\otimes(|\!\uparrow\rangle-|\!\downarrow\rangle)$, not the antisymmetric singlet $E_{0,0}$ of this article. The $4\times4$ matrix argument of the source is the left regular representation of the quaternion — its action on $\mathbb{H}\cong\mathbb{R}^4$ — and its non-factorisation is a property of the multiplication operator, not of the Schmidt rank of the vector. The contrast between a state vector in $\mathbb{C}^4\cong\mathbb{B}$ and a state operator in $\mathbb{B}\otimes\mathbb{B}$ is set out in *The Bell Basis as the Idempotent Basis of $\mathbb{B}\otimes\mathbb{B}$*.
+
 ## Summary
 
 Two spin-$\tfrac12$ particles in the biquaternion framework are described by the tensor-product algebra $\mathbb{B}\otimes_\mathbb{C}\mathbb{B}\cong M_4(\mathbb{C})$, with total spin operators $\tilde S_k=\tilde S_k^{(1)}+\tilde S_k^{(2)}$ and partial traces $\mathrm{Tr}_1,\mathrm{Tr}_2$.
@@ -387,3 +405,4 @@ All of this is a statement about $\mathbb{B}\otimes\mathbb{B}$; it presupposes t
 - Daniel C. Mattis, *The Theory of Magnetism Made Simple* (World Scientific, 2006), for the Heisenberg exchange Hamiltonian, its spectrum, and the ferromagnetic–antiferromagnetic dichotomy.
 - Michael A. Nielsen and Isaac L. Chuang, *Quantum Computation and Quantum Information* (Cambridge University Press, 2000), for the two-qubit algebra, the swap operator, and the standard idempotent bases of the two-qubit space.
 - R. P. Feynman, R. B. Leighton, and M. Sands, *The Feynman Lectures on Physics*, Vol. III (Addison-Wesley, 1965), for the two-spin system, the exchange splitting, and the algebraic treatment of the singlet and triplet.
+- Lidia Obojska, "Bi-particle entanglement and its quaternion representation," *Journal of Physics Communications* **2** (2018) 085021, for the unit quaternion whose product-state defect is recorded in *The Singlet Is Not a Single Quaternion*.

@@ -24,6 +24,30 @@ This is the same object viewed in a different language, but the language matters
 
 The same is true in Hilbert-space language, since $|\Psi^-\rangle$ is also a single vector. But the biquaternion formulation makes the point more vivid, because the idempotents are the canonical objects of the algebra and the tensor product is the natural algebraic operation, not an additional postulate. In the biquaternion reading, the entanglement is a fact about the *pairing structure* of the algebra, not about a dynamical influence passing between two systems.
 
+### The singlet as one whole
+
+The language of the preceding paragraph is not only a figure of speech, and it has a precise counterpart in a collective set theory. In classical mereology the whole is primitive and the parts are what a division of the whole produces; a whole has many divisions, and two different divisions do not give two different objects. The singlet is exactly of this kind. It is one algebraic object, the idempotent $P_{\mathrm{singlet}}$, and the two subsystems appear only when the object is divided, whether by the partial trace, by a local projector, or by a change of tensor basis. The divisions differ in their factors and agree in their whole, which is what the mereological language asserts of the parts of an object.
+
+Two features of the framework acquire, in this language, the status of definitions rather than of facts. The first is that the entanglement belongs to the whole and not to either division: the reduced state $\tfrac12 e_0$ is the same for the two subsystems, and the correlations are carried by the tensor-product terms of the whole. The second is that the singlet is not a pair of systems that happen to be correlated. The pairing is the tensor product, and the tensor product is the division; the state and its divisibility are the same datum. The mathematics of this reading is *Mereology and Collective Set Theory*, where the whole-first construction, the division relation and the passage between a division and its factors are developed for their own sake; the reading itself is a physical interpretation and is not developed further here.
+
+**Remark.** The mereological reading is a description of the tensor-product structure, in which the whole is the tensor product and the parts are its factors, and it changes nothing in the predictions. It is recorded because it makes the first entry of the list in *What the Reformulation Makes Visible* precise, and because it is the language in which a nontrivial question becomes stateable: which divisions of a given element are admissible, and what the algebra of its divisions is.
+
+### The division rule and the admissible divisions
+
+The question left open by the remark above is which divisions of a whole are admissible, and one reading of the bipartite state answers it by turning the mereology from a description of entanglement into a **generator** of it. In this reading the state is created by the splitting of one particle, the split is a division in the sense of *Mereology and Collective Set Theory*, and the division is further required to have integer quotients — "in nature there are no fractions during decays of particles". The quotient of the two amplitudes of the split is then restricted to the units and square roots of minus one, $\{-i,i,-1\}$, and this restriction is what selects a discrete catalogue of maximally entangled states out of the continuum. The twelve patterns of *Patterns of maximally entangled states within the algebra of biquaternions* (Obojska, *Journal of Physics Communications* **4** (2020) 055018) are obtained in exactly this way, with the Bell states among them.
+
+Two things must be kept apart in this proposal, and the corpus keeps them apart.
+
+First, the integer-quotient rule is an **assumption**, not a consequence of the division relation. The postulates (EPT1)–(EPT3) of the companion maths article require the relation to be reflexive, transitive and non-antisymmetric; they constrain the relation and say nothing about the quotient, and in particular nothing that restricts it to the units $\pm1$ or to any finite set. The rule is a hypothesis about the physical splitting process, and it is the point at which the mereological reading acquires empirical content — and the point at which it can be tested.
+
+Second, the exhaustiveness claim that comes with the rule does not survive the test. If the rule were complete, the maximally entangled states would be the twelve patterns; but the family
+
+$$
+\lvert\psi_\phi\rangle=\tfrac{1}{\sqrt2}\left(\lvert00\rangle+e^{i\phi}\lvert11\rangle\right)
+$$
+
+is maximally entangled for every $\phi$, whereas the twelve patterns fix the relative phase to the discrete set $\{0,\pm\pi/2,\pi\}$. The rule therefore selects a proper subset, not the whole. The computation and the reason are in *The Bell Basis as the Idempotent Basis of B⊗B*, in the section *A Claimed Enumeration of the Maximally Entangled States*; the point for the present article is that the mereological reading of the singlet is a language, and that turning it into a selection rule requires a hypothesis that the division relation itself does not supply and that the continuum of maximally entangled states does not confirm.
+
 ### The reduced state as a partial trace
 
 The state of one subsystem is obtained by tracing out the other:
@@ -207,6 +231,7 @@ The biquaternion framework is a reformulation of quantum mechanics, not a new th
 It reformulates:
 
 - The singlet as one element of the tensor-product algebra, with correlations built into the tensor-product structure.
+- The division rule that a mereological reading of the split may impose, and the reason it selects a proper subset rather than the whole of the continuum of maximally entangled states.
 - The correlation function as a bilinear pairing, the same trace pairing that gives the Born rule.
 - The reduced state's mixedness as the algebraic residue of the entanglement of the joint state.
 - Steering as a factorization of the joint idempotent under a local projector.
@@ -255,5 +280,7 @@ The honest position is this. The framework makes certain structural features of 
 - Michael A. Nielsen and Isaac L. Chuang, *Quantum Computation and Quantum Information* (Cambridge, 2000), for the standard treatment of entanglement, Bell states, and the no-communication theorem.
 - Wojciech H. Zurek, "Decoherence, einselection, and the quantum origins of the classical," *Reviews of Modern Physics* **75** (2003) 715–775, for the modern understanding of the quantum/classical transition.
 - Robert F. Spekkens, "Evidence for the epistemic view of quantum states: A toy theory," *Physical Review A* **75** (2007) 032110, and subsequent work, for a careful treatment of the quantum/classical divide.
+- Lidia Obojska, "Bi-particle entanglement and its quaternion representation," *Journal of Physics Communications* **2** (2018) 085021, and "Patterns of maximally entangled states within the algebra of biquaternions," *Journal of Physics Communications* **4** (2020) 055018, for the division-relation reading of the bipartite state and the integer-quotient rule discussed in *The division rule and the admissible divisions*.
 - The companion articles of this series: *Introduction to the Biquaternion Universe*, *Why Complexify Spacetime?*, *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*, *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*, *Quantum Mechanics in Biquaternionic Form*, *The Exercise Articles of This Series*, and *The Quantum–Classical Divide in the Biquaternion Framework: An Operational Criterion*.
+- *Mereology and Collective Set Theory* (`articles_maths/mereology-and-collective-set-theory.md`), for the whole-first construction, the division relation as a pre-order, and the language used in *The singlet as one whole*.
 

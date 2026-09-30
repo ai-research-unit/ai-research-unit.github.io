@@ -45,6 +45,37 @@ $$
 
 **Remark (the two indices).** The lattices have index $2$, but the unit groups have index $24/8=3$: the Lipschitz units are a proper subgroup of index three in the Hurwitz units, so the two notions of index do not agree.
 
+### The Elements of Order Six
+
+The Lipschitz unit group is a $2$-group and the Hurwitz unit group is not, and one element exhibits the difference. The **order** of a unit $Q$ is the least $n\geq1$ with $Q^n=e_0$.
+
+**Example.** Let
+$$
+Q=\tfrac12(e_0-e_1-e_2+e_3).
+$$
+This is a Hurwitz unit, being one of the sixteen half-integral norm-one elements of $(\mathcal{L}')^{\times}\setminus\mathcal{L}^{\times}$ listed above. Its square is the negative of its conjugate,
+$$
+Q^2=-Q^*,
+$$
+and therefore
+$$
+Q^3=Q\,Q^2=-QQ^*=-N(Q)e_0=-e_0,\qquad Q^6=e_0 ,
+$$
+so $Q$ has order six and generates a cyclic subgroup $\langle Q\rangle\cong C_6$ of the unit group.
+
+**Remark.** The identity $Q^2=-Q^*$ is a property of the half-integral units and not of this example alone, and the sign of the real part decides the order. For a half-integral unit
+$$
+Q=\tfrac12(s_0e_0+s_1e_1+s_2e_2+s_3e_3),\qquad s_\mu=\pm1,
+$$
+the real part is $\tfrac12s_0$ and the vector part has norm $\tfrac34$, so $Q^2=-Q^*$ when $s_0=+1$, which gives $Q^3=-e_0$ and order six, while $Q^2=+Q^*$ when $s_0=-1$, which gives $Q^3=e_0$ and order three. There are eight units of each kind, and the element orders of the two orders of units are as follows.
+
+| Unit group | Order $1$ | Order $2$ | Order $3$ | Order $4$ | Order $6$ |
+|---|---|---|---|---|---|
+| Lipschitz, $\mathcal{L}^{\times}\cong Q_8$ | $1$ | $1$ | $0$ | $6$ | $0$ |
+| Hurwitz, $(\mathcal{L}')^{\times}\cong 2T$ | $1$ | $1$ | $8$ | $6$ | $8$ |
+
+The eight elements of order six form four cyclic subgroups of order six, and their squares are the eight elements of order three, so the unit group has four subgroups of order three and four of order six, each subgroup of order three lying in exactly one of order six. None of these subgroups lies in the Lipschitz units, whose element orders are $1$, $2$ and $4$.
+
 ## The Finite Subgroups of the Unit Sphere
 
 The unit quaternions $Sp(1)=S^3$ form a group with centre $\{\pm e_0\}$, and the quotient
@@ -112,7 +143,7 @@ Each of these elements has norm $N(e_0+kn)=1+k^2+(ik)^2=1$, since the coefficien
 
 ## Summary
 
-The quaternion orders inside the biquaternion algebra are the Lipschitz order $\mathcal{L}$ and the Hurwitz order $\mathcal{L}'$, the second containing the first with index two and maximal. Their groups of units are the quaternion group of order eight and the binary tetrahedral group of order twenty-four; the unit-group index is three, though the lattice index is two.
+The quaternion orders inside the biquaternion algebra are the Lipschitz order $\mathcal{L}$ and the Hurwitz order $\mathcal{L}'$, the second containing the first with index two and maximal. Their groups of units are the quaternion group of order eight and the binary tetrahedral group of order twenty-four; the unit-group index is three, though the lattice index is two. The element orders of the two groups differ: the Lipschitz units have orders $1$, $2$ and $4$, while the Hurwitz units have orders $1$, $2$, $3$, $4$ and $6$, the half-integral units of real part $+\tfrac12$ satisfying $Q^2=-Q^*$ and generating the four cyclic subgroups of order six.
 
 The unit sphere $Sp(1)=S^3$ has for finite subgroups the twofold preimages of the finite rotation groups of the plane and the three Platonic figures: the cyclic groups, the binary dihedral groups and the binary polyhedral groups $2T$, $2O$, $2I$ of orders twenty-four, forty-eight and one hundred twenty. The twenty-four Hurwitz units are the vertices of the regular $24$-cell in $\mathbb{H}_{\mathbb{B}}\cong\mathbb{R}^4$, whose symmetry group is the Weyl group $F_4$ of order $1152$, containing the hyperoctahedral $B_4$ of order $384$; both are strictly larger than the unit group $2T$. The units act on the real slice by the rotations $\rho_v(\tilde R)=-v\tilde Rv^{-1}$, of determinant $+1$, and the twenty-four units give twelve distinct rotations generating a group of order $24$ with $2T/\{\pm e_0\}\cong A_4$. The five families of finite subgroups are the five families of simply laced Dynkin diagrams, the McKay correspondence.
 
@@ -126,7 +157,8 @@ The integral biquaternions, with coefficients in the Gaussian integers, form an 
 | $\mathcal{L}'=\mathcal{L}\oplus\mathbb{Z}\omega$ | Hurwitz order; maximal order of $\mathbb{H}$ |
 | $\omega=\tfrac12(e_0+e_1+e_2+e_3)$ | Half-integral generator of $\mathcal{L}'$ |
 | $\mathcal{L}^{\times}\cong Q_8$ | Lipschitz units, order $8$ |
-| $(\mathcal{L}')^{\times}\cong 2T$ | Hurwitz units, order $24$ |
+| $(\mathcal{L}')^{\times}\cong 2T$ | Hurwitz units, order $24$; element orders $1,2,3,4,6$ |
+| $Q=\tfrac12(e_0-e_1-e_2+e_3)$ | Hurwitz unit with $Q^2=-Q^*$; $\langle Q\rangle\cong C_6$ |
 | $2T,2O,2I$ | Binary tetrahedral, octahedral, icosahedral groups; orders $24,48,120$ |
 | $Sp(1)=S^3$ | Unit quaternions; the unit sphere; finite subgroups cyclic, binary dihedral, binary polyhedral |
 | $Sp(1)/\{\pm e_0\}\cong SO(3)$ | Rotation quotient; the rotation group of Euclidean three-space |

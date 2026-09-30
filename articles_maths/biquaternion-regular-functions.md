@@ -126,6 +126,105 @@ $$
 
 Three hypotheses must be emphasized: the formula holds on the **quaternion subspace** $\mathbb{H}_{\mathbb{B}}$, where all four coefficients of $\tilde{Q}$ are real, and is **not** asserted on $\mathbb{M}_+$ or $\mathbb{M}_-$ or on the full algebra $\mathbb{B}$ (§*Where the Complex Analogy Fails: Zero Divisors and the Null Cone*); regularity is required on all of $\Omega$, not merely on the boundary; and the operator inverted is the first-order operator $\tilde{\nabla}$, normalized by $\tilde{\nabla}\tilde{G} = -2\pi^2\delta_0 e_0$. The mean value property, the maximum principle, Liouville's theorem, the identity theorem, the Cauchy estimates, and the residue theory for isolated singularities then follow, as in the integration article, on $\mathbb{H}_{\mathbb{B}}$ only.
 
+## The Shifted Operator
+
+The theory above is the theory of $\tilde{\nabla}$. Its **shift** is a larger theory, and it is the one that boundary-value problems use. With $D = i\sum_{k=1}^{3}e_k\partial_k$, so that $D^2 = \Delta$, and $M_\alpha$ right multiplication by $\alpha\in\mathbb{B}$,
+
+$$
+D_\alpha = D + M_\alpha ,
+$$
+
+the equation $D_\alpha f = 0$ defines the **$\alpha$-hyperholomorphic** functions. The parameter is an arbitrary element of the algebra: it may be a zero divisor, its square need not be scalar, and it need not commute with the units. The class therefore contains the Helmholtz-type shifts ($\alpha$ scalar) and, for a non-scalar $\alpha$, cases the Helmholtz theory does not have. The integral operators of the shifted theory are the Teodorescu transform $T_\alpha$, the Cauchy-type operator $K_\alpha$ and the operator of singular integration $S_\alpha$, built from the fundamental solution of $D_\alpha$; their formulas branch in three cases — $\alpha$ not a zero divisor; $\alpha$ a zero divisor with $\alpha_0\neq0$; $\alpha$ a zero divisor with $\alpha_0 = 0$ — because the kernel is built by inverting the symbol.
+
+**Theorem.** With $T_\alpha$, $K_\alpha$ and $S_\alpha$ so defined, the Borel–Pompeiu formula, the Cauchy integral formula, the Plemelj–Sokhotski formulas, the involution $S_\alpha^2 = I$, the Cauchy integral theorem and the Morera theorem hold for $D_\alpha$ in the same shape as for $D$, on a domain with Liapunov boundary and Hölder data.
+
+**Theorem (boundary-value criterion).** A Hölder function $f$ on $\Gamma = \partial\Omega$ is the boundary value of a solution of $D_\alpha g = 0$ in $\Omega$ if and only if
+
+$$
+P_\alpha f = f \ \text{ on } \Gamma, \qquad P_\alpha = \tfrac12(I + S_\alpha),
+$$
+
+and then $g = K_\alpha f$.
+
+The criterion answers the question the Cauchy formula of the previous section leaves open. The formula reconstructs a regular function from boundary values already known to be admissible; the criterion decides which Hölder data are admissible at all, which is what a boundary condition alone supplies. It is the case $B=1$ of the Riemann boundary value problem $f^+ = f^-B+h$ of *Riemann Boundary Value Problems and Singular Integral Equations*: the criterion says that the datum lies in the $+1$ eigenspace of $S_\alpha$, and the general problem replaces the coefficient $1$ by an invertible $B$ and the single condition by the reduction of that article. The parameter itself can therefore be singular, not only the variable: for the pure element $\alpha = -(i\omega e_1+me_2)$ the norm is $N(\alpha) = m^2-\omega^2$, so $\alpha$ is a zero divisor — and, being pure, a nilpotent with $\alpha^2 = 0$ — exactly when $\omega^2 = m^2$. That is the third branch above, $\alpha$ a zero divisor with $\alpha_0 = 0$, and it is the criterion of *Biquaternion Zero Divisors* applied to the parameter rather than to the variable. The physical reading of the same identity, and the boundary-value problem that uses the criterion, are in the physics register of this article.
+
+### The Helmholtz Null-Set Splits
+
+For a **scalar** parameter the shifted theory has one further algebraic fact, and it is the fact on which the numerical theory of the operator rests. Let $\alpha\in\mathbb{C}$, $\alpha\neq0$, and let $D_\alpha = D+\alpha$ be regarded on the null-set of the shifted Laplacian, $(\Delta-\alpha^2)u=0$, which is the same as $D_\alpha D_{-\alpha}u=0$ because $D_\alpha D_{-\alpha}=D^2-\alpha^2=\Delta-\alpha^2$ for scalar $\alpha$. Define the two **shifted projectors**
+
+$$
+\Pi_{\pm\alpha}=\mp\frac{1}{2\alpha}D_{\mp\alpha}.
+$$
+
+**Proposition.** On $\ker(\Delta-\alpha^2)$ the operators $\Pi_{\pm\alpha}$ are complementary idempotents with ranges $\ker D_{\pm\alpha}$:
+
+$$
+\Pi_{\pm\alpha}^2=\Pi_{\pm\alpha},\qquad
+\Pi_\alpha\Pi_{-\alpha}=\Pi_{-\alpha}\Pi_\alpha=0,\qquad
+\Pi_\alpha+\Pi_{-\alpha}=I,\qquad
+\operatorname{im}\Pi_{\pm\alpha}=\ker D_{\pm\alpha},
+$$
+
+and consequently
+
+$$
+\ker(\Delta-\alpha^2)=\ker D_\alpha\oplus\ker D_{-\alpha}.
+$$
+
+*Proof.* The shifts commute, both being $D$ plus a scalar. The sum is $\Pi_\alpha+\Pi_{-\alpha}=-\frac{1}{2\alpha}D_{-\alpha}+\frac{1}{2\alpha}D_{\alpha}=\frac{1}{2\alpha}\bigl((D+\alpha)-(D-\alpha)\bigr)=I$; the products are $\Pi_\alpha\Pi_{-\alpha}=-\frac{1}{4\alpha^2}D_{-\alpha}D_\alpha=-\frac{1}{4\alpha^2}(\Delta-\alpha^2)=0$ on the null-set, and likewise in the other order; and the idempotence is $\Pi_\alpha^2=\frac{1}{4\alpha^2}\bigl(\Delta-2\alpha D+\alpha^2\bigr)=\frac{1}{4\alpha^2}\bigl(2\alpha^2-2\alpha D\bigr)=-\frac{1}{2\alpha}(D-\alpha)=\Pi_\alpha$, the third equality using $\Delta=\alpha^2$ on the null-set. For the range, $D_\alpha f=0$ gives $Df=-\alpha f$, whence $(D-\alpha)f=-2\alpha f$ and $\Pi_\alpha f=f$: so $\Pi_\alpha$ fixes $\ker D_\alpha$ pointwise, and conversely $\Pi_\alpha f=f$ gives $D_{-\alpha}f=-2\alpha f$, hence $D_\alpha f=-\frac{1}{2\alpha}D_\alpha D_{-\alpha}f=0$ on the null-set. The same with $\alpha$ replaced by $-\alpha$. $\square$
+
+The idempotence is a statement on the null-set only, and this is not a technicality: off it the two operators fail to be projections, the computation using $\Delta=\alpha^2$. The shift carries the opposite sign in the physics register, where the argument is written with $D_3=\sum_k e_k\partial_k$ so that $\Delta+\alpha^2=-(D_3+\alpha)(D_3-\alpha)$; the algebra is the same, only the naming of $\alpha$ differs, and the statement there is that the ambient space of the boundary-value problems is assembled from the two shifted kernels. The decomposition is also the single-quaternion form of the statement in *The Time-Harmonic Maxwell Operator and the Quaternionic Cauchy Integral* that the Helmholtz null-set is the direct sum of the two rotated copies of $\ker N$: the rotated copies are the matrix version of $\Pi_{\pm\alpha}$.
+
+**Remark (the shifted projectors are not the boundary projectors).** The pair $\Pi_{\pm\alpha}$ is not the pair $P_\alpha,Q_\alpha=\tfrac12(I\mp S_\alpha)$ of the boundary-value theory. Both pairs are complementary idempotents cutting the same ambient space into the same two pieces, but $\Pi_{\pm\alpha}$ are **differential** operators acting inside the domain, while $P_\alpha,Q_\alpha$ are **singular-integral** operators acting on boundary data. The passage from the interior splitting to the boundary splitting is the composition $Q_\alpha\gamma\Pi_\alpha\Lambda$, with $\Lambda$ the extension operator of the Dirichlet problem and $\gamma$ the trace; that composition is what carries the completeness of the systems of fundamental solutions on $\Gamma$ from the completeness of the scalar Helmholtz system in the domain.
+
+### The Split of the Parameter
+
+A parameter that is not a zero divisor can be reduced to two that are. The reduction is a statement about the algebra, and it is the reason the degenerate branch of the three is not a side case.
+
+**Theorem (the split of the parameter).** Let $\alpha\in\mathbb{B}$ be **pure** and let $\gamma\in\mathbb{C}$ satisfy $\gamma^2 = \alpha^2$, the square being the algebra's own, so that $\alpha = \gamma u$ with
+
+$$
+u = \frac{\alpha}{\gamma}, \qquad u^2 = 1, \qquad \bar u = -u .
+$$
+
+Then $u$ is a **non-Hermitian root of $+1$**, in the classification of *Biquaternion Square Roots of Minus One, Zero and Plus One*, and the elements
+
+$$
+\beta_\pm = \tfrac12(1\pm u), \qquad \alpha_\pm = \tfrac12(\alpha\pm\gamma) = \pm\gamma\beta_\pm
+$$
+
+satisfy
+
+$$
+\beta_\pm^2 = \beta_\pm, \quad \beta_++\beta_- = 1, \quad \beta_+\beta_- = 0, \quad N(\beta_\pm) = 0,
+$$
+
+$$
+\alpha_++\alpha_- = \alpha, \qquad \alpha_+\alpha_- = 0, \qquad N(\alpha_\pm) = 0 .
+$$
+
+Both halves of the parameter therefore lie on the zero-divisor cone, and the two projectors — right multiplication by $\beta_\pm$, which is the source's form $P_\pm = (2\gamma)^{-1}M(\gamma\pm\alpha)$ — are complementary, null and **not orthogonal**. With those $P_\pm$ the shifted operators satisfy
+
+$$
+D_{\alpha_+}P_+ + D_{\alpha_-}P_- = D_\alpha .
+$$
+
+*Proof.* Since $\alpha$ is pure, $\bar u = -u$, and $\gamma$ is central and scalar, so $u^2 = \alpha^2/\gamma^2 = 1$ and $N(u) = -\alpha^2/\gamma^2 = -1$: over $\mathbb{C}$ the element $u$ is a unit vector, so it is a root of $+1$ that is not Hermitian, and the projectors it defines are not orthogonal. Idempotence is $\beta_\pm^2 = \tfrac14(1\pm 2u+u^2) = \tfrac12(1\pm u)$; complementarity is $1$; orthogonality is $\beta_+\beta_- = \tfrac14(1-u^2) = 0$; and nullity is $N(\beta_\pm) = \tfrac14(1\pm u)(1\mp u) = \tfrac14(1-u^2) = 0$, the second factor being $\overline{1\pm u}$ because $\bar u = -u$. The parameter statements follow from $\alpha_\pm = \pm\gamma\beta_\pm$ and $\beta_\pm^2 = \beta_\pm$: $\alpha_++\alpha_- = \gamma(\beta_+-\beta_-) = \gamma u = \alpha$, and $\alpha_+\alpha_- = -\gamma^2\beta_+\beta_- = 0$ with $N(\alpha_\pm) = \gamma^2N(\beta_\pm) = 0$. For the operator identity, $D_{\alpha_\pm}P_\pm = D M_{\beta_\pm} + M_{\alpha_\pm\beta_\pm}$ and $\alpha_\pm\beta_\pm = \pm\gamma\beta_\pm^2 = \pm\gamma\beta_\pm$, so the two terms sum to $D(M_{\beta_+}+M_{\beta_-}) + M_{\gamma(\beta_+-\beta_-)} = D + M_\alpha$. $\square$
+
+**Remark (the factor of two, and the source's writing).** The source prints the halves as $\alpha\pm\gamma$ rather than as $\tfrac12(\alpha\pm\gamma)$, and with those it is the same computation one step further: $\alpha_+\beta_+ + \alpha_-\beta_- = \gamma(\beta_++\beta_-) = \gamma$, so the two projected operators sum to $D + M_\gamma$ and, since $\gamma = \alpha - (\alpha-\gamma)$, the identity reads $D_{\alpha+\gamma}P_+ + D_{\alpha-\gamma}P_- = 2D_\alpha - D$. The two writings differ only by the overall factor two on the shift, and both agree on what matters: the halves are zero divisors, $(\alpha+\gamma)(\alpha-\gamma) = \alpha^2-\gamma^2 = 0$, whatever the factor. The factor is worth a line because the source's Cauchy-operator identity $K_\alpha = P_+K_{\alpha_+}+P_-K_{\alpha_-}$ is stated with its own halves, and only one of the two readings can be the one the kernel satisfies.
+
+**Remark (why the reduction matters).** The equation with a unit parameter is thus assembled from two equations whose parameters are on the zero-divisor cone, and the boundary-value theory of those two is the degenerate branch above. The reduction is the algebraic fact behind a pattern that recurs wherever the corpus splits a field into two circular or two chiral components: two first-order equations whose shifts are the halves of one parameter, the two kernels carrying the two signs of the exponential, and the whole assembled by the complementary projectors. It is the same construction as the pair of idempotents of *The Biquaternion Vacuum as a Minimal Idempotent* read with the parameter's direction in place of the vacuum's, and it is why the *helicity* components of a time-harmonic field are a pair of projected shifted equations rather than a single one. The reading of the pair as helicity is in the physics register, with the field.
+
+**The variable coefficient, and the Vekua equation.** The parameter above is constant, and the shifted theory is the theory of one constant shift. A variable coefficient of the special form $\vec{\alpha}=\mathrm{grad}\,\phi/\phi$ is removable, and this is worth recording here because it is the exact point at which the theory of regular functions meets the theory of generalized analytic functions. For a scalar carrier function $\phi\neq0$ and biquaternion-valued $g$,
+
+$$
+\left(D+\frac{\mathrm{grad}\,\phi}{\phi}\right)g=\frac{1}{\phi}\,D(\phi g),
+\qquad
+\left(D-\frac{\mathrm{grad}\,\phi}{\phi}\right)f=\phi\,D\!\left(\frac{f}{\phi}\right),
+$$
+
+the **carrier identity**, which follows from $D[\phi g]=(D\phi)g+\phi Dg$ because a scalar commutes with the units, and which holds for $D=i\sum_k e_k\partial_k$ as much as for its un-multiplied form. It says that $D$ shifted by a gradient coefficient is $D$ conjugated by multiplication by $\phi$: a gradient coefficient is not a new operator but a conjugate presentation of the same one. Equivalently, write $L_{\vec{\alpha}}:g\mapsto Dg-\vec{\alpha}g$ and $R^{\vec{\alpha}}:g\mapsto Dg+g\vec{\alpha}$ for the two ways of shifting by a coefficient on the left and on the right. The carrier identity disposes of $L_{\vec{\alpha}}$ at once, since $L_{\vec{\alpha}}$ is conjugate to $D$ and therefore exactly as hard as the un-shifted operator of the section above; it says nothing about $R^{\vec{\alpha}}$, which is genuinely new. What $R^{\vec{\alpha}}$ is, is a Schrödinger operator in disguise: in the normalisation of $D$ used by the sibling article *Electromagnetism in Media — The Local Complex Structure at Work* — there $D=e_1\partial_x+e_2\partial_y+e_3\partial_z$, so that $D^2=-\Delta$ rather than $+\Delta$ — the mixed product $R^{\vec{\alpha}}L_{\vec{\alpha}}u$ is $(-\Delta+v)u$ for scalar $u$, with $v=\Delta\phi/\phi$, and the quadratic relation $D\vec{\alpha}+\vec{\alpha}^2=-v$ that makes it so is the quaternionic Riccati equation and is satisfied identically by $\vec{\alpha}=\mathrm{grad}\,\phi/\phi$. That relation is what makes $R^{\vec{\alpha}}$ solvable by reduction to a scalar problem: every solution $\psi$ of $-\Delta\psi+v\psi=0$ yields a solution $(D-\vec{\alpha})\psi$ of $R^{\vec{\alpha}}F=0$, and a fundamental solution of $-\Delta+v$ yields a fundamental solution of $R^{\vec{\alpha}}$. The whole reduction is normalisation-dependent — adjoining the factor $i$ to $D$ changes the sign of the linear term in the relation $D\vec{\alpha}+\vec{\alpha}^2=-v$ and hence which potential pairs with which operator — so the factorisation stated here is tied to the convention just named, and it is re-derived for the electromagnetic problem in the sibling article. A first-order equation whose coefficients act on both $f$ and its conjugate $f^{*}$ is a **Vekua equation**, the governing equation of the pseudoanalytic functions, and the electromagnetic instance — the Maxwell system of an arbitrary inhomogeneous medium reduced to exactly such an equation, with $\sqrt{\epsilon}$ and $\sqrt{\mu}$ as carriers — is developed there. The constant-shift section above is the constant-carrier case of that development, and the asymmetry between $L_{\vec\alpha}$ and $R^{\vec\alpha}$ is the same asymmetry that decides which of the two carries the Schrödinger connection.
+
 ## Where the Complex Analogy Fails: Zero Divisors and the Null Cone
 
 The complex theory rests on $\mathbb{C}$ being a field. In the biquaternion algebra this fails, and every consequence below is traceable to the zero divisors.
@@ -162,6 +261,8 @@ Two notions of regularity must be kept apart. **Single-plane holomorphy** takes 
 
 The integral theory is complete on the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, where the algebra is a division ring: the Cauchy integral formula holds there with fundamental solution $\tilde{\nabla}\tilde{G} = -2\pi^2\delta_0 e_0$, and the mean value property, maximum principle, Liouville theorem, identity theorem, Cauchy estimates and residue theory follow. Everything that fails elsewhere fails through the zero divisors: on $\mathbb{M}_\pm$ and on the full algebra the identity $\bar{\tilde{Q}}\tilde{Q} = \|\tilde{Q}\|_E^2 e_0$ fails, the principal symbol degenerates on the null cone, the system is hyperbolic rather than elliptic, and no Cauchy formula may be asserted. The naive inverse $\tilde{Q}^{-1} = \bar{\tilde{Q}}/N(\tilde{Q})$ fails in two ways: on the full algebra it is undefined on the positive-dimensional null cone, and even on $\mathbb{H}_{\mathbb{B}}$, where it exists, it is not regular, the correct kernel in four variables being fixed by the homogeneity $1 - 4 = -3$ rather than the two-dimensional exponent.
 
+The **shifted operator** $D_\alpha = D + M_\alpha$, with $D = i\sum_k e_k\partial_k$ ($D^2 = \Delta$) and $M_\alpha$ right multiplication by an arbitrary $\alpha\in\mathbb{B}$, is the theory that boundary-value problems use. Its integral operators $T_\alpha$, $K_\alpha$ and $S_\alpha$ obey the same four theorems as the unshifted theory — Borel–Pompeiu, Cauchy, Plemelj–Sokhotski, involutiveness — with formulas that branch according to whether $\alpha$ is a unit, a zero divisor with nonzero scalar part, or a zero divisor with vanishing scalar part, since the kernel inverts the symbol. Its sharpest statement is the boundary-value criterion: $f$ is the trace on $\Gamma$ of a solution of $D_\alpha g = 0$ if and only if $P_\alpha f = f$ on $\Gamma$, with $P_\alpha = \tfrac12(I+S_\alpha)$, and then $g = K_\alpha f$. The parameter may itself be singular, not only the variable: $\alpha = -(i\omega e_1+me_2)$ has $N(\alpha) = m^2-\omega^2$ and hence lies in the zero divisor set — as a nilpotent, $\alpha^2 = 0$ — exactly when $\omega^2 = m^2$. A **pure** parameter that is not a zero divisor splits into two that are: with $\gamma\in\mathbb{C}$ satisfying $\gamma^2 = \alpha^2$, the non-Hermitian root $u = \alpha/\gamma$ of $+1$ gives the complementary null idempotents $\beta_\pm = \tfrac12(1\pm u)$, and the halves $\alpha_\pm = \tfrac12(\alpha\pm\gamma) = \pm\gamma\beta_\pm$ satisfy $\alpha_++\alpha_- = \alpha$, $\alpha_+\alpha_- = 0$ and $N(\alpha_\pm) = 0$; the split is assembled by the identity $D_{\alpha_+}P_+ + D_{\alpha_-}P_- = D_\alpha$, with $P_\pm$ right multiplication by $\beta_\pm$, and it is the reason the degenerate branch of the three carries the applications.
+
 Restricting to real quaternion-valued functions recovers Fueter's quaternionic analysis, where the analogous theory is complete because $\mathbb{H}$ is a division algebra, and the general framework is Clifford analysis on $\mathrm{Cl}_{1,3}^{+}$; the Fueter–Sce construction converts slice-regular data of one complex variable into monogenic functions of four real variables.
 
 ## Summary of Notation
@@ -180,6 +281,14 @@ Restricting to real quaternion-valued functions recovers Fueter's quaternionic a
 | $\|\tilde{Q}\|_E$ | Euclidean norm on $\mathbb{B} \cong \mathbb{R}^8$ |
 | $\mathcal{Z}$ | Zero divisor set, a complex cone of real dimension $6$ |
 | $\mathbb{H}_{\mathbb{B}}$ | Real-quaternion subspace, a division ring; the domain of the integral theory |
+| $D = i\sum_k e_k\partial_k$ | Spatial Moisil–Teodoresco operator; $D^2 = \Delta$ |
+| $M_\alpha$ | Right multiplication by $\alpha\in\mathbb{B}$ |
+| $D_\alpha = D + M_\alpha$ | Shifted operator; its solutions are the $\alpha$-hyperholomorphic functions |
+| $T_\alpha$, $K_\alpha$, $S_\alpha$ | Teodorescu transform, Cauchy-type operator and operator of singular integration for $D_\alpha$ |
+| $P_\alpha = \tfrac12(I + S_\alpha)$ | Boundary projector; the boundary-value criterion is $P_\alpha f = f$ on $\Gamma$ |
+| $\gamma$, $u = \alpha/\gamma$ | Scalar with $\gamma^2 = \alpha^2$ for a pure $\alpha$, and the non-Hermitian root $u^2 = 1$, $\bar u = -u$ |
+| $\beta_\pm = \tfrac12(1\pm u)$ | Complementary null idempotents; $P_\pm = M_{\beta_\pm}$ are the projectors of the split |
+| $\alpha_\pm = \tfrac12(\alpha\pm\gamma) = \pm\gamma\beta_\pm$ | The two zero-divisor halves of the parameter; $\alpha_++\alpha_- = \alpha$, $\alpha_+\alpha_- = 0$ |
 
 ## Further Reading
 
@@ -190,3 +299,7 @@ Restricting to real quaternion-valued functions recovers Fueter's quaternionic a
 - F. Brackx, R. Delanghe, and F. Sommen, *Clifford Analysis* (Pitman, London, 1982).
 - R. Delanghe, F. Sommen, and V. Souček, *Clifford Algebra and Spinor-Valued Functions* (Kluwer, Dordrecht, 1992).
 - G. Gentili, C. Stoppato, and D. C. Struppa, *Regular Functions of a Quaternionic Variable* (Springer, 2013).
+- V. V. Kravchenko and M. V. Shapiro, *Integral Representations for Spatial Models of Mathematical Physics*, Pitman Research Notes in Mathematics 351 (Addison-Wesley Longman, 1996), for the Teodorescu transform, the Cauchy-type operator and the singular integral operator with a biquaternionic parameter, for the Borel–Pompeiu and Plemelj–Sokhotski formulas there, and for the boundary-value criterion $P_\alpha f = f$.
+- V. V. Kravchenko, "Quaternion-Valued Integral Representations of the Harmonic Electromagnetic and Spinor Fields", *Doklady Mathematics* **51** (1995), no. 2, 287–289 (translated from *Doklady Akademii Nauk* **341** (1995), no. 5, 603–605), for the parametric class $D_\alpha = D + M_\alpha$ and its Cauchy-type theory, and for the split of a pure parameter into the two zero-divisor halves $\alpha_\pm = \tfrac12(\alpha\pm\gamma)$ assembled by the projectors $P_\pm$ — the algebra of the section *The Split of the Parameter*. The paper's own application, the harmonic electromagnetic and spinor fields, is in the physics register.
+- V. V. Kravchenko and M. V. Shapiro, *Doklady Akademii Nauk* **329** (1993), no. 5, 547–549, the origin of the general parametric system and of its Borel–Pompeiu, Cauchy and Sokhotski theorems; the 1995 note of the preceding entry cites it as its reference $[1]$ and restates that system, and the shifted-operator theory above is its development.
+- V. V. Kravchenko, "On a Biquaternionic Bag Model", *Zeitschrift für Analysis und ihre Anwendungen* **14** (1995), no. 1, 3–14, DOI 10.4171/ZAA/658, for an application of the shifted operator: the linear bag model reduced to the boundary equation $P_\alpha\tilde{p} = S^+\tilde{p}$, whose parameter $\alpha = -(i\omega e_1+me_2)$ is a pure zero divisor exactly on the mass shell.

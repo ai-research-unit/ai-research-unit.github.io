@@ -7,7 +7,7 @@ An ordinary differential equation relates a function of one real variable to its
 
 The scalar field is $\mathbb{K} = \mathbb{R}$ or $\mathbb{C}$, and the ambient space is a Banach space $X$ over $\mathbb{K}$ in the sense of *Banach and Hilbert Spaces*; in the linear theory $X$ is finite-dimensional and the operator is a matrix. The calculus used is the differential calculus on normed spaces and its completeness-based cornerstones. Where a result needs completeness of $X$ rather than merely a norm, this is said. Nothing below needs the ground ring to be a field other than through the scalar field $\mathbb{K}$; the analysis of an ordinary differential equation is a real or complex construction.
 
-The article proceeds from the local to the global and from the nonlinear to the linear. It establishes the Picard–Lindelöf theorem and the maximal interval of existence, the Gronwall inequality and continuous dependence on the data, the reduction of a higher-order equation to a first-order system, the matrix exponential with the variation of constants formula, linear equations with constant coefficients and the characteristic equation, boundary-value problems with their Green's functions, the Sturm–Liouville eigenvalue problem and its eigenfunction expansion, and finally the phase portrait of an autonomous planar system with the classification of equilibria by the eigenvalues of the linearisation. The special equations of mathematical physics — Bessel's equation and Legendre's equation among them — are introduced here as linear equations with regular singular points, and their solutions are the special functions treated per system in Part V.
+The article proceeds from the local to the global and from the nonlinear to the linear. It establishes the Picard–Lindelöf theorem and the maximal interval of existence, the Gronwall inequality and continuous dependence on the data, the reduction of a higher-order equation to a first-order system, the matrix exponential with the variation of constants formula, linear equations with constant coefficients and the characteristic equation, boundary-value problems with their Green's functions, the Sturm–Liouville eigenvalue problem with its eigenfunction expansion and the spectral-parameter power series solution of the same equation, and finally the phase portrait of an autonomous planar system with the classification of equilibria by the eigenvalues of the linearisation. The special equations of mathematical physics — Bessel's equation and Legendre's equation among them — are introduced here as linear equations with regular singular points, and their solutions are the special functions treated per system in Part V.
 
 ## The First-Order Equation
 
@@ -327,6 +327,73 @@ The expansion is the one-dimensional case of the spectral theorem for self-adjoi
 
 **Remark.** The eigenfunction expansion is the reason a boundary-value problem for a partial differential equation can be solved by separation of variables: one coordinate is expanded in the eigenfunctions of the corresponding Sturm–Liouville problem, and the remaining equation is an ordinary differential equation for the coefficients.
 
+### The Solution as a Power Series in the Spectral Parameter
+
+The two theorems above describe the spectrum through the eigenfunctions; there is a parallel description in which the solution itself is expanded in the spectral parameter, and it is the basis of the numerical method known as the **spectral parameter power series method**.
+
+**Theorem (spectral parameter power series).** Let $p,q$ be complex-valued on the finite interval $[0,a]$, with $p\in C^1(0,a)$ bounded and nonvanishing, and suppose that the auxiliary equation
+
+$$
+(pg_0')' + qg_0 = 0
+$$
+
+has a particular solution $g_0 \in C^2(0,a)$ such that $g_0$ **and** $1/g_0$ are bounded on $[0,a]$. Put $g = \sqrt{p\,g_0}$. Then the general solution of
+
+$$
+(pu')' + qu = \omega^2 u ,
+$$
+
+with $\omega$ an arbitrary complex number, is $u = c_1u_1 + c_2u_2$, where
+
+$$
+u_1 = g_0\!\!\sum_{\substack{n=0\\ n\ \text{even}}}^{\infty}\!\!\frac{\omega^n\tilde X^{(n)}}{n!},
+\qquad
+u_2 = g_0\!\!\sum_{\substack{n=1\\ n\ \text{odd}}}^{\infty}\!\!\frac{\omega^nX^{(n)}}{n!},
+$$
+
+and the coefficients are generated from $\tilde X^{(0)} = X^{(0)} \equiv 1$ by the recursions
+
+$$
+\tilde X^{(n)}(x)=
+\begin{cases}
+n\displaystyle\int_0^x\tilde X^{(n-1)}(\xi)\,g^{2}(\xi)\,d\xi, & n\ \text{odd},\\[6pt]
+n\displaystyle\int_0^x\tilde X^{(n-1)}(\xi)\,g^{-2}(\xi)\,d\xi, & n\ \text{even},
+\end{cases}
+\qquad
+X^{(n)}(x)=
+\begin{cases}
+n\displaystyle\int_0^xX^{(n-1)}(\xi)\,g^{-2}(\xi)\,d\xi, & n\ \text{odd},\\[6pt]
+n\displaystyle\int_0^xX^{(n-1)}(\xi)\,g^{2}(\xi)\,d\xi, & n\ \text{even}.
+\end{cases}
+$$
+
+The coefficient of $\omega^0$ in $u_1$ is $g_0$ itself, so $g_0$ is the particular solution of the equation at $\omega = 0$, and the two series are the even and the odd parts in $\omega$.
+
+*Proof.* For the case $p \equiv 1$, which is $-u'' + qu = 0$, the recursions lose $g$ and acquire $q$, and the estimate is transparent: for even $n$,
+
+$$
+\bigl|\tilde X^{(n)}(x)\bigr| \le \Bigl(\max_{[0,a]}|q|\Bigr)^{n/2}|x|^n \le c^n,
+\qquad c = \Bigl(\max_{[0,a]}|q|\Bigr)^{1/2}a ,
+$$
+
+so the terms of the two series are bounded by $c^n/n!$ and the series, together with the series of their derivatives, converge uniformly on $[0,a]$ by the Weierstrass test. The recursion is arranged so that
+
+$$
+\frac{d^2}{dx^2}\tilde X^{(n)} = n(n-1)\,q\,\tilde X^{(n-2)} ,
+$$
+
+which telescopes the second derivative of the series into $q$ times the series itself, so $u_1'' = qu_1$ and $u_2'' = qu_2$. At the base point every $\tilde X^{(n)}$ and $X^{(n)}$ with $n > 0$ vanishes, so $u_1(0) = 1$, $u_1'(0) = 0$, $u_2(0) = 0$ and $u_2'(0) = 1$; the Wronskian $u_1u_2' - u_1'u_2$ therefore equals $1$ at $0$ and the two series are a fundamental system. The general case follows by the same computation with $g$ in place of $q$, the estimates being in terms of $\max|g^{\pm2}|$. $\square$
+
+**Consequences.** The coefficients $\tilde X^{(n)}$ and $X^{(n)}$ do not depend on $\omega$. Truncating the series at order $N$ therefore gives a **polynomial** in $\omega$ that solves the initial-value problem for all values of the spectral parameter at once, with $c_1 = u(0)$ and $c_2 = u'(0)$ as the only input; an eigenvalue problem in $\omega$ becomes the root-finding problem for that polynomial. This is what distinguishes the representation from a numerical integrator, which returns one solution for one value of $\omega$. In the form $-u'' + \omega^2q(x)u = 0$ the two series read
+
+$$
+u = c_1\!\!\sum_{\substack{n\ \text{even}}}\frac{\omega^n\tilde X^{(n)}}{n!} + c_2\!\!\sum_{\substack{n\ \text{odd}}}\frac{\omega^{n-1}X^{(n)}}{n!},
+$$
+
+with the same $\tilde X^{(n)}, X^{(n)}$ built from $q$ alone — the powers of $\omega$ count the occurrences of $q$ in each coefficient — so one run of the recursion serves every wave number.
+
+**Standing of the result.** The representation itself is not new: the series solution of a second-order linear equation in this form goes back to Weyl's 1910 paper, and the same representation is used in inverse spectral theory. What the hypothesis $g_0, 1/g_0 \in L^\infty$ adds is that the particular solution is nonvanishing and nondegenerate at both endpoints, which is what makes the coefficients computable and of controlled size across the whole interval rather than only locally; a singular endpoint, at which $1/g_0$ need not be bounded, is outside the statement. The method has been developed for complex-valued coefficients, which is the case that matters when $q$ is a complex potential or a frequency-dependent medium parameter; the electromagnetic instance, where the equation is $-(pu')' + qu = \omega^2u$ in a stratified medium, is recorded in *Electromagnetism in Media — The Local Complex Structure at Work*, where the same function $g$ appears as the carrier of a factorisation of the operator. The author reports that the truncated series is more accurate than Matlab's adaptive solver `ode45` on test problems by several orders of magnitude, up to an absolute error of $0.28$ for the solver against $10^{-9}$ for the series at the stiffest test case; the comparison is the author's own and with a single solver, and it is recorded as reported.
+
 ## Autonomous Systems and the Phase Plane
 
 ### Equilibria and Linearisation
@@ -372,7 +439,7 @@ An ordinary differential equation $y' = f(t,y)$ is equivalent to the integral eq
 
 A higher-order equation reduces to a first-order system, so the same theorems apply. For a linear system $y' = A(t)y$ the fundamental matrix exists on all of the interval and is invertible, the inhomogeneous equation is solved by the variation-of-constants formula $y = \Phi y_0 + \int \Phi(t)\Phi(s)^{-1}b(s)\,ds$, and for constant coefficients the exponential $e^{tA}$ is computed from the Jordan form: every entry is a sum of terms $t^ke^{\lambda t}$ over the eigenvalues $\lambda$, so the characteristic polynomial determines the solution completely and controls its stability. With periodic coefficients Floquet's theorem writes the fundamental matrix as a periodic factor times an exponential.
 
-A linear boundary-value problem with only the trivial solution of its homogeneous part has a Green's function and is solved by $y(x) = \int G(x,s)f(s)\,ds$. A regular Sturm–Liouville problem is a self-adjoint operator with compact resolvent: its eigenvalues are real and simple, tend to infinity, and its eigenfunctions form a complete orthonormal basis of the weighted $L^2$ space, the one-dimensional instance of the spectral theorem. The eigenfunction expansion is the bridge to boundary-value problems for partial differential equations.
+A linear boundary-value problem with only the trivial solution of its homogeneous part has a Green's function and is solved by $y(x) = \int G(x,s)f(s)\,ds$. A regular Sturm–Liouville problem is a self-adjoint operator with compact resolvent: its eigenvalues are real and simple, tend to infinity, and its eigenfunctions form a complete orthonormal basis of the weighted $L^2$ space, the one-dimensional instance of the spectral theorem. The eigenfunction expansion is the bridge to boundary-value problems for partial differential equations. Independent of the spectrum, the general solution of $(pu')' + qu = \omega^2u$ can be written as a power series in the spectral parameter $\omega$ generated from one bounded particular solution $g_0$ of the auxiliary equation $(pg_0')' + qg_0 = 0$ together with its reciprocal; the coefficients satisfy two interleaved integral recursions and do not depend on $\omega$, so a truncation is a polynomial in $\omega$ that serves every value of the parameter and turns a spectral problem into root-finding. The representation is classical, and the boundedness of $1/g_0$ is what makes it uniform up to the endpoints; it is the one-dimensional case of the reduction of $(\mathrm{div}\,p\,\mathrm{grad}+q)$ to the biquaternionic operator $D+M^{\vec\alpha}$ recorded in *Electromagnetism in Media — The Local Complex Structure at Work*.
 
 For an autonomous system the equilibria are classified by the derivative at the point: eigenvalues with strictly negative real part give asymptotic stability, eigenvalues with strictly positive real part give instability, and a purely imaginary spectrum leaves the question open, as the planar centre examples show. In the plane the trace and determinant of the linearisation tabulate the node, saddle, spiral and centre cases. The reduction of the qualitative theory of these systems to their invariant sets, and the study of the flow when the linearisation is degenerate, is the subject of the dynamical-systems articles of this Part, which are written in parallel and continue the phase-plane analysis begun here.
 
@@ -396,6 +463,9 @@ For an autonomous system the equilibria are classified by the derivative at the 
 | $G(x,s)$ | Green's function of a linear boundary-value problem |
 | $p$, $q$, $w$ | Sturm–Liouville coefficient, potential and weight |
 | $\lambda_n$, $y_n$ | Sturm–Liouville eigenvalues and eigenfunctions |
+| $g_0$, $g = \sqrt{p\,g_0}$ | Bounded particular solution of the auxiliary equation $(pg_0')'+qg_0=0$ and the carrier of the series; $1/g_0$ bounded |
+| $\omega$ | Spectral parameter of $(pu')'+qu=\omega^2u$ |
+| $\tilde X^{(n)}$, $X^{(n)}$ | Coefficients of the two series, $\tilde X^{(0)}=X^{(0)}=1$ |
 | $R(y)$ | Rayleigh quotient |
 | $y_*$ | Equilibrium of an autonomous system |
 | $A = Df(y_*)$, $\tau$, $\delta$ | Linearisation matrix, its trace and determinant |
@@ -409,5 +479,8 @@ For an autonomous system the equilibria are classified by the derivative at the 
 - Morris W. Hirsch, Stephen Smale and Robert L. Devaney, *Differential Equations, Dynamical Systems, and an Introduction to Chaos* (Academic Press, 3rd ed. 2013), for the planar classification and stability.
 - Einar Hille, *Lectures on Ordinary Differential Equations* (Addison-Wesley, 1969), for the exponential of operators and periodic systems.
 - Witold Hurewicz, *Lectures on Ordinary Differential Equations* (MIT Press, 1958; reprinted Dover, 1990), for a concise treatment of the maximal interval and continuous dependence.
+- V. V. Kravchenko, "On a general solution of the one-dimensional stationary Schrödinger equation", arXiv:0708.2491v2 [math-ph] (2007), for the spectral-parameter power series solution: the hypothesis that the auxiliary equation has a particular solution bounded together with its reciprocal, the two interleaved recursions, the unit Wronskian at the base point, and the reported numerical comparison with Matlab's `ode45`. This is the source of the subsection *The Solution as a Power Series in the Spectral Parameter*.
+- J. Pöschel and E. Trubowitz, *Inverse Spectral Theory* (Academic Press, 1987), for the same power-series representation of the general solution in its classical form, used there for qualitative analysis.
+- H. Weyl, "Über gewöhnliche Differentialgleichungen mit Singularitäten und die zugehörigen Entwicklungen willkürlicher Funktionen", *Mathematische Annalen* **68** (1910) 220–269, the origin of the power-series representation of the general solution of a second-order linear equation.
 - Serge Lang, *Differential and Riemannian Manifolds* (Springer, 3rd ed. 1995), for the flow of a vector field and its relation to differential geometry.
 - Vladimir I. Arnold, *Ordinary Differential Equations* (Springer, 3rd ed. 1992), for the geometric reading of the phase portrait.

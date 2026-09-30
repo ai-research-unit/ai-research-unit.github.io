@@ -342,6 +342,36 @@ independent of $\Theta$. The specific family $\Theta(\theta) = \theta + s\sin\th
 
 **Relation to the spacetime monopole, and its limit.** The algebraic shape here — a $U(1)$ curvature whose flux over a closed surface is quantised, with the integral counting a singularity — is the same shape that *The Magnetic Monopole in Biquaternionic Form* exhibits for the Dirac quantisation condition. The two are not the same statement, and the difference is the base space. There the monopole is a magnetic charge in space, its flux is an electromagnetic flux, and the quantisation condition $eg = 2\pi n\hbar c$ constrains the product of electric and magnetic charges. Here the "monopole" is a degeneracy point in the space of Hamiltonians, its flux is a Berry flux, and the integer is the degree of a map from the parameter sphere to itself. The two invocations of the same $U(1)$ curvature structure carry no established relation; the resemblance is recorded, and nothing is claimed to follow from it.
 
+## When the Eigenbundle Exists: Three Obstructions
+
+Everything above has assumed that the eigenvectors of the parameterised Hamiltonian form a bundle over the parameter space, and that a continuous branch of the eigenvector can be followed from one end of a loop to the other. That assumption is a topological statement, and it has a price: it is exactly the statement that the fibre is everywhere non-empty and can be chosen continuously. The mathematics literature asks the existence question in its own right — over an arbitrary parameterised family of matrices, *when do the eigenvectors form a bundle?* — and answers it by a classification in terms of cross-sections. The answer is recorded here because the word *eigenbundle* is otherwise used in this article at no cost, and the cost is what makes the word more than a synonym for "eigenvector".
+
+**The setting and the classification.** Let $\Phi : B \to \operatorname{End}(V)$ be a continuous field of operators over a base space $B$, with $V$ of dimension $n$, and let $k \le n$. The object whose existence is in question is the **$k$-spectral bundle**: the bundle over $B$ whose fibre at $b$ is the $k$-dimensional eigenspace of $\Phi(b)$ for a chosen eigenvalue. Consider the intermediate spaces
+
+$$
+L_3 = \bigl\{(b,\lambda,W,v) \;:\; \lambda \text{ an eigenvalue of } \Phi(b),\; W \text{ a $k$-plane eigenspace of } \lambda,\; v \in W \bigr\},
+$$
+
+with $L_2$ and $L_1$ the images of $L_3$ under the projections that forget $v$ and then $W$. The projections
+
+$$
+L_3 \xrightarrow{\;\pi_3\;} L_2 \xrightarrow{\;\pi_2\;} L_1 \xrightarrow{\;\pi_1\;} B
+$$
+
+make $\pi_3$ a $k$-plane bundle wherever it is defined, and the existence question becomes a lifting problem.
+
+**Theorem (classification, Gottlieb 2003).** The $k$-spectral bundles of the field $\Phi$ over $B$ are in one-to-one correspondence with the cross-sections of the composite map $\pi_1 \circ \pi_2 : L_2 \to B$.
+
+**The three cross-sections.** The composite splits into two, and a further one is needed for an eigenvector field, so the existence question splits into three.
+
+1. **$s_1 : B \to L_1$, a continuous eigenvalue branch.** A cross-section $s_1(b) = (b, \lambda(b))$ exists exactly when there is a continuous function $\lambda : B \to K$ whose every value is an eigenvalue of $\Phi(b)$ whose eigenspace has dimension $\ge k$. It fails when the eigenvalue branch cannot be continued — the elementary example is a field of real rotation matrices, which has no real eigenvalue at all over part of the base, or an eigenvalue crossing at which two branches exchange.
+2. **$s_2 : s_1(B) \to L_2$, a continuous choice of eigenspace.** Given the branch, $s_2(b) = (b,\lambda(b),W_b)$ is a continuous map $B \to G_k(V)$ into the Grassmannian of $k$-planes in $V$. It fails when the eigenvalue exists at every point but its eigenspace cannot be selected continuously — the level crossing again, seen one floor up.
+3. **$s_3$, a nowhere-zero eigenvector field.** Given the first two, the spectral bundle $\pi_3$ restricts to a $k$-plane bundle over $B$, and a nowhere-zero cross-section of it is a nowhere-zero eigenvector field. Its existence is the vanishing question for that bundle, and the Chern number computed above is its invariant.
+
+So the eigenbundle of a two-band Hamiltonian over the Bloch sphere exists because all three cross-sections exist: the eigenvalues $\lambda_\pm = h_0 \pm \lvert\mathbf{h}\rvert$ are continuous and exchange only where $|\mathbf{h}| = 0$, the eigenline can be chosen continuously on any chart, and the Chern number $C_\pm = \mp 1$ is the invariant of the last step, not of the first two. The adiabatic theorem of this article is stated under precisely the hypothesis that the three exist.
+
+**Boundary.** The classification is a statement of homotopy theory, and this article records it and does not use it. What the corpus takes from it is the sharp form of the assumption it has been making: the "gap does not close along the surface" condition, used above only to make an integral well defined, is the condition that the first two cross-sections extend over the whole surface, and an obstruction at any of the three steps is a topological reason for a phase that cannot be computed. The theory's machinery — the diagram, the lifting spaces, the obstruction classes — is not imported into the algebra, and no biquaternionic statement is claimed to follow from it.
+
 ## Degenerate Levels and the Abelian Case
 
 Every phase computed so far is a single real number modulo $2\pi$. That is the **abelian** case, and it holds because the traversed level is non-degenerate: the two eigenvalues $\lambda_\pm = h_0 \pm |\mathbf{h}|$ of the Hamiltonian are distinct, the eigenprojectors $\tilde\Pi_\pm(\hat{\mathbf{h}})$ are rank one, and the adiabatic evolution acquires one phase, not a matrix of phases. The general adiabatic theorem for a degenerate level replaces the connection by a matrix-valued one-form and the phase by a unitary matrix on the degenerate subspace; that is the non-abelian, or Wilczek–Zee, case, and it is a genuinely different object.
@@ -373,6 +403,16 @@ What the framework does supply, beyond the rewriting, is a set of structural pla
 - **The same scalar imaginary.** The $i$ in $\mathcal{A} = i\langle\psi|d\psi\rangle$ is the central scalar imaginary that also appears in $ict$, in the gauge phase $e^{iq\Gamma/\hbar}$, and as the complex structure of the state module. The gauge-principle article flagged the shared generator as possibly vacuous because the phase is central; the Berry connection adds a third appearance without resolving the question. It is recorded as an observation, not a result.
 
 **What is only transcribed.** The adiabatic theorem, the Berry phase formula, the Stokes relation, and the Chern-number quantisation are standard results carried into the algebra. The framework supplies the $\hbar$ from outside, as the monopole article notes: until the single-valuedness of a phase is imposed, the algebra is a classical complexified structure. The integer $C = \pm 1$ is a fact about the degree of a map of $S^2$, not a fact about $\mathbb{B}$. For a single qubit this article reports a reformulation and no new physics.
+
+**A second, independent occurrence of the same factor, kept apart.** The mathematics literature on fields of Lorentz transformations contains a factor of the same algebraic form. There the eigenvector of the transformation field at a point is followed from one observer to another, and in the null case the eigenvector is multiplied by $\sqrt{(1-\beta)/(1+\beta)}$ — the expression that *Exercise: The Relativistic Doppler Effect* derives as the longitudinal receding factor, and nothing else. The source presents the eigenvector factor as analogous to Berry's phase. The corpus records the coincidence of the expression and does not merge the two objects: the transport factor there is real, is a function of the two observers and the field alone, and carries no loop and no holonomy, while the Berry factor is complex and depends on the history of a path in parameter space. The analogy is the source's, and the equation is the only thing the two share.
+
+**A neighbouring sense of "geometric phase", to be kept apart.** The phases above are holonomies of a $U(1)$ connection on a parameter space, and they are quantum-mechanical. The biquaternionic literature uses the phrase for a second, unrelated object. In the complex-quaternionic constructions treated in the companion article *The Lorentz Group as Biquaternion Norm Automorphisms*, the invariant $\sigma = z_1^2+z_2^2+z_3^2$ of the algebra automorphisms is complex, and its argument,
+
+$$
+\alpha = \arg\sigma , \qquad \tan\alpha = \frac{2\,\mathbf{p}\cdot\mathbf{q}}{|\mathbf{p}|^2-|\mathbf{q}|^2} , \qquad z_a = p_a+iq_a ,
+$$
+
+is a **Lorentz invariant** — the argument of an invariant is invariant — and the source calls it a "geometric phase" accompanying a displacement in spacetime. It is geometric in the plain sense that it is a function of the complexified metric rather than of the dynamics, and the source proposes it as the origin of quantum interference. It is *not* a Berry phase, and it shares with one nothing but the name: there is no adiabatic loop, no connection, no $U(1)$ holonomy, no parameter space of Hamiltonians, and no $\hbar$. It is the phase that labels the fibre of the bilinear map from $\mathbb{C}^3$ to the induced real coordinates, so it is a function of the point and carries no path dependence at all — the opposite of the defining property of the Berry phase. The corpus records it as a distinct sense of the words and does not identify the two.
 
 ## Open Questions
 
@@ -435,6 +475,9 @@ The level is non-degenerate throughout, so the phase is abelian; the non-abelian
 | $\Omega = 2\pi(1-\cos\theta_0)$ | Solid angle of the cap bounded by the loop |
 | $\Delta = R$ | Spectral gap; closes at $\mathbf{R} = 0$ |
 | $C_\pm = \mp 1$ | First Chern numbers of the two bands over $S^2$ |
+| $B$, $\Phi : B \to \operatorname{End}(V)$, $V$ | Base (parameter) space, matrix field, fibre $V$ of dimension $n$ |
+| $L_1 \subset B\times K$, $L_2 \subset B\times K\times G_k(V)$, $L_3$ | Eigenvalue, eigenspace and eigenvector incidence spaces of the field |
+| $s_1, s_2, s_3$ | The three cross-sections: continuous eigenvalue branch, continuous $k$-plane selection, nowhere-zero eigenvector field |
 | $\tilde{A}' = \tilde{A} - \tilde{\nabla}\Gamma$ | Gauge-principle connection and its transformation (for contrast) |
 
 ## Further Reading
@@ -443,6 +486,7 @@ The level is non-degenerate throughout, so the phase is abelian; the non-abelian
 - B. Simon, "Holonomy, the quantum adiabatic theorem, and Berry's phase," *Physical Review Letters* **51** (1983) 2167–2170, for the fibre-bundle formulation and the connection.
 - F. Wilczek and A. Zee, "Appearance of gauge structure in simple dynamical systems," *Physical Review Letters* **52** (1984) 2111–2114, for the non-abelian phase of a degenerate level.
 - Y. Aharonov and J. Anandan, "Phase change during a cyclic quantum evolution," *Physical Review Letters* **58** (1987) 1593–1596, for the non-adiabatic generalisation.
+- D. H. Gottlieb, "Eigenbundles, Quaternions, and Berry's Phase," arXiv:math/0304281 [math.AT] (2003), for the existence question treated as a homotopy-theoretic classification: the three cross-sections $s_1, s_2, s_3$ of the spectral bundle, recorded in the section above, and a 4 by 4 complex-quaternion realization used only as an example.
 - A. Shapere and F. Wilczek, *Geometric Phases in Physics* (World Scientific, 1989), for the collected theory and its applications.
 - M. Nakahara, *Geometry, Topology and Physics* (Institute of Physics, 2003), for connections, curvature, Chern numbers, and the monopole analogy.
 - The companion articles of this series: *Introduction to the Biquaternion Universe*, *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*, *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*, *Quantum Mechanics in Biquaternionic Form*, *The Schrödinger Equation in Biquaternionic Form*, *Spin-1/2 Quantum Mechanics in Biquaternionic Form*, *Exercise: Spin Precession in a Magnetic Field*, *The Gauge Principle in Biquaternionic Form*, *The Covariant Derivative and Gauge Connection in Biquaternionic Form*, *The Magnetic Monopole in Biquaternionic Form*, and *Quantum Gates and Circuits in Biquaternionic Form*.

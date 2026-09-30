@@ -235,6 +235,18 @@ $$
 $$
 which is the local statement of the invariance. The Proca field, by contrast, has a mass term $-\mu^2 A_\mu A^\mu$ that breaks the symmetry exactly as the scalar mass does; the massive spin-one theory treats that breaking. The pair — Maxwell conformally invariant, Proca not — is the vector-field version of the scalar pair, and the mass term is again the whole of the difference.
 
+### A second classical route to a non-zero trace: a non-invariant arena
+
+The argument that the Maxwell trace vanishes used not only the absence of a dimensional parameter in $S_{\mathrm{Maxwell}}$ but also the invariance of the **arena**. The trace is the response of the action to a local rescaling of the metric, so if the action is not a scalar under that rescaling, tracelessness does not follow however scale-free the Lagrangian looks. This gives a second route to a broken classical conformal invariance, and it is the one this article's opening claim — that the mass is the unique scale — does not cover.
+
+Kruglov's non-commutative electrodynamics makes the route concrete. *Maxwell's Theory on Non-Commutative Spaces and Quaternions* keeps the Maxwell Lagrangian expressed through the field strength, with no mass and with no dimensional parameter beyond the fixed background $\theta^{\mu\nu}$, and the stress tensor still has a non-zero trace at tree level. In the source's conventions,
+$$
+T^\mu{}_\mu = (\boldsymbol\theta\cdot\mathbf B)\left(\mathbf E^2-\mathbf B^2\right) - 2(\boldsymbol\theta\cdot\mathbf E)(\mathbf E\cdot\mathbf B),
+$$
+because $\theta^{\mu\nu}$ is fixed and does not transform with the metric, so the action is not a scalar and the variation does not yield a conserved, traceless tensor. The source states the connection explicitly: the violation of conformal invariance "relates to the violation of the Lorentz invariance in NC space."
+
+The two routes are distinguished by their fields, and the distinction is checkable. The **mass** route breaks the trace for every field configuration, and its restoration is the massless limit. The **arena** route is proportional to the two invariants contracted with the background, so it vanishes identically for every **null** field: all plane electromagnetic waves remain traceless, and only non-null configurations are anomalous, including at $\boldsymbol\theta\to0$ where the route closes. So the corpus's statement that the classical trace vanishes with the mass stands, and the addition is that mass is the unique *internal* scale: a scale can also be imported from the arena, and when it is, the trace reappears without any mass being present. That is the classical counterpart of the quantum anomaly below — the quantum anomaly introduces a scale by regularisation, the non-invariant arena introduces one by fiat — and it is why the corpus's conformal-invariance claims are claims about a Lorentz-invariant arena.
+
 ## The Massless Dirac Field
 
 The spin-half field completes the pattern, and its conformal weight is the other standard value. In four dimensions the massless Dirac equation is conformally invariant with weight $\Delta = 3/2$,

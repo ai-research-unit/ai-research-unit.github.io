@@ -3,7 +3,7 @@
 
 ## Introduction
 
-The isometry classes of non-degenerate quadratic forms over a field carry two operations: the orthogonal sum, which adds dimensions, and the tensor product, which multiplies them. Witt cancellation makes the first operation invertible, and the second distributes over it, so the isometry classes form a ring. Quotienting by the forms that are sums of hyperbolic planes removes the part of a form that carries no anisotropic information and produces the **Witt ring** $W(F)$, the home of the classical invariants of a quadratic form. This article constructs the ring, the **Grothendieck–Witt ring** $GW(F)$ from which it descends, the invariants — dimension, discriminant, signature, Hasse invariant — and the ideal filtration whose successive quotients are the Milnor K-theory groups.
+The isometry classes of non-degenerate quadratic forms over a field carry two operations: the orthogonal sum, which adds dimensions, and the tensor product, which multiplies them. Witt cancellation makes the first operation invertible, and the second distributes over it, so the isometry classes form a ring. Quotienting by the forms that are sums of hyperbolic planes removes the part of a form that carries no anisotropic information and produces the **Witt ring** $W(F)$, the home of the classical invariants of a quadratic form. This article constructs the ring, the **Grothendieck–Witt ring** $GW(F)$ from which it descends, the invariants — dimension, discriminant, signature, Hasse invariant — the ideal filtration whose successive quotients are the Milnor K-theory groups, and the **Albert form** of a biquaternion algebra, whose anisotropy is the division criterion for that algebra.
 
 The base is a field $F$ of characteristic not $2$ throughout, since every construction uses the cancellation theorem of *Witt's Theorems*. The isometry class, the discriminant and the signed discriminant are from *Bilinear Forms* and *The Rotation Group and Orientation*; the Witt index and the decomposition $V \cong V_0 \perp m\,H$ are from *Witt's Theorems*; the tensor product of quadratic forms uses the tensor product of vector spaces from category 04. The characteristic classes are stated as standard results and the final identification with Milnor K-theory is cited.
 
@@ -169,6 +169,40 @@ The general case is the classical theorem of Pfister and is cited as standard; i
 
 **Corollary.** The two-fold Pfister form $\langle\!\langle a, b\rangle\!\rangle$ is the norm of the quaternion algebra $(a, b)_F$; Pfister's theorem in that case states that the norm of a quaternion algebra is anisotropic exactly when the algebra is a division algebra, and hyperbolic exactly when the algebra splits.
 
+### The Albert Form
+
+The norm of a quaternion algebra is a twofold Pfister form, of dimension $4$, and it decides the division question for that algebra. One level up, for the tensor product of two quaternion algebras, the corresponding object is a form of dimension $6$; it is not a Pfister form, and it decides the same question for the product.
+
+**Definition.** Let $B = (a, b)_F \otimes_F (c, d)_F$ be a **biquaternion algebra** over $F$, the tensor product of two quaternion algebras, of dimension $16$ over $F$. This is the algebraists' sense of the word, and it is not the complex algebra $\mathbb{B}$ of the corpus; the collision of the two names is recorded in *Division Algebras*. The **Albert form** of $B$ is the form
+
+$$
+\phi_B = \langle a, b, -ab, -c, -d, cd\rangle ,
+$$
+
+of dimension $6$ over $F$.
+
+**Proposition.** The Albert form has trivial signed discriminant:
+
+$$
+\Delta(\phi_B) = a\,b\,(-ab)\,(-c)\,(-d)\,(cd) = -(abcd)^2 \equiv -1, \qquad d(\phi_B) = (-1)^{15}\Delta(\phi_B) = 1 .
+$$
+
+*Proof.* The product of the six entries is $(-1)^3 (abcd)^2$, so the discriminant is the square class of $-1$ whatever the parameters; the signed discriminant is $d(q) = (-1)^{n(n-1)/2}\Delta(q)$ of the section above, with $n = 6$, so $d(\phi_B) = (-1)^{15}\cdot(-1) = 1$.
+
+**Theorem (Albert).** The biquaternion algebra $B = (a, b)_F \otimes_F (c, d)_F$ is a division algebra if and only if its Albert form $\phi_B$ is anisotropic over $F$.
+
+The statement is the dimension-$6$ companion of the corollary above, and its proof matches a zero divisor of $B$ with a nontrivial zero of $\phi_B$; it is cited as standard (Lam, *Introduction to Quadratic Forms over Fields*, III, Theorem 4.8). The criterion by which the anisotropy is decided over a local field is Springer's theorem, in *Local Fields*.
+
+**Remark (the index, read from the form).** When $\phi_B$ is isotropic, the index of $B$ is read from the type of isotropy, and the three cases exhaust the values the index can take:
+
+1. $B \cong M_4(F)$, of index $1$, exactly when $\phi_B$ is hyperbolic, that is $\phi_B \cong \langle 1, -1, 1, -1, 1, -1\rangle$;
+2. $B \cong M_2(D)$ for a quaternion division algebra $D$, of index $2$, exactly when $\phi_B$ is isotropic but not hyperbolic, equivalently $\phi_B \cong \langle 1, -1, e, f, g, h\rangle$ with the four-dimensional form $\langle e, f, g, h\rangle$ anisotropic;
+3. $B$ is a division algebra, of index $4$, exactly when $\phi_B$ is anisotropic.
+
+**Remark (isomorphism).** Two biquaternion algebras over $F$ are isomorphic as $F$-algebras if and only if their Albert forms are **similar**, that is, isometric up to multiplication by a scalar from $F^\times$. This is the dimension-$6$ companion of the statement that two quaternion algebras are isomorphic exactly when their norm forms are isometric.
+
+**Example (over $\mathbb{R}$).** Over $\mathbb{R}$ the quaternion algebra $(a, b)_\mathbb{R}$ is split, that is $M_2(\mathbb{R})$, exactly when $a > 0$ or $b > 0$, and it is $\mathbb{H}$ otherwise; so the Brauer group $\operatorname{Br}(\mathbb{R}) \cong \mathbb{Z}/2$ has two elements, and the two factors of $B$ represent the same element exactly when both are split or both are $\mathbb{H}$. The Albert form over $\mathbb{R}$ is hyperbolic, of signature $(3, 3)$, exactly in that case, and it has signature $(5, 1)$ or $(1, 5)$ otherwise. It is therefore isotropic for every choice of $a, b, c, d$, and no real biquaternion algebra is a division algebra, in agreement with the computation $\operatorname{Br}(\mathbb{R}) \cong \mathbb{Z}/2$ of *Central Simple Algebras and the Brauer Group* and with the real case of *Division Algebras*.
+
 ### The Higher Ideal Quotients
 
 **Theorem (standard).** There is an injective homomorphism, the **Hasse invariant**,
@@ -275,7 +309,7 @@ The **tensor product** of quadratic forms is characterised by $(q\otimes q')(v \
 
 Every class in $W(F)$ has a unique anisotropic representative, and a form is zero in $W(F)$ exactly when it is hyperbolic. The dimension modulo $2$ is the augmentation $W(F) \to \mathbb{Z}/2$, whose kernel is the **fundamental ideal** $I$. The **signed discriminant** $d(q) = (-1)^{n(n-1)/2}\Delta(q)$ descends to $W(F)$ and induces an isomorphism $I/I^2 \cong F^\times/(F^\times)^2$, vanishing on $I^2$. The **Hasse invariant** $e_2$ embeds $I^2/I^3$ into the two-torsion of the Brauer group, and **Milnor's conjecture**, proved by Voevodsky, identifies $I^n/I^{n+1} \cong k_n^M(F)/2$ with Milnor K-theory modulo $2$. The basic computations are $W(\mathbb{C}) \cong \mathbb{Z}/2$, $W(\mathbb{R}) \cong \mathbb{Z}$ via the signature, and $W(\mathbb{F}_q) \cong \mathbb{Z}/4$ for $q \equiv 3 \pmod 4$ and $\mathbb{Z}/2 \times \mathbb{Z}/2$ for $q \equiv 1 \pmod 4$.
 
-The **Pfister forms** $\langle\!\langle a_1, \ldots, a_n\rangle\!\rangle = \bigotimes_i \langle 1, -a_i\rangle$ have dimension $2^n$, have discriminant $1$ for $n \geq 2$, and lie in $I^n$; the group $I^n$ is generated by the $n$-fold Pfister forms, and **Pfister's theorem** states that an $n$-fold Pfister form is either anisotropic or hyperbolic, in the second case being the sum of $2^{n-1}$ hyperbolic planes. The twofold case is the norm of the quaternion algebra $(a, b)_F$, so the theorem there says that the norm is anisotropic exactly when the algebra is a division algebra. A Pfister form satisfies $\pi \otimes \pi \cong 2^n\pi$ and is round: it satisfies $\pi \otimes \langle 1, -x\rangle \cong \pi$ for every nonzero value $x$ that it represents.
+The **Pfister forms** $\langle\!\langle a_1, \ldots, a_n\rangle\!\rangle = \bigotimes_i \langle 1, -a_i\rangle$ have dimension $2^n$, have discriminant $1$ for $n \geq 2$, and lie in $I^n$; the group $I^n$ is generated by the $n$-fold Pfister forms, and **Pfister's theorem** states that an $n$-fold Pfister form is either anisotropic or hyperbolic, in the second case being the sum of $2^{n-1}$ hyperbolic planes. The twofold case is the norm of the quaternion algebra $(a, b)_F$, so the theorem there says that the norm is anisotropic exactly when the algebra is a division algebra. The **Albert form** $\langle a, b, -ab, -c, -d, cd\rangle$ of the biquaternion algebra $(a,b)_F \otimes_F (c,d)_F$ is the analogous object one level up: of dimension $6$, of trivial signed discriminant, not a Pfister form, and anisotropic exactly when the biquaternion algebra is a division algebra, with the type of isotropy reading off the index $1$, $2$ or $4$. A Pfister form satisfies $\pi \otimes \pi \cong 2^n\pi$ and is round: it satisfies $\pi \otimes \langle 1, -x\rangle \cong \pi$ for every nonzero value $x$ that it represents.
 
 For a formally real field and an ordering $P$, extension to the real closure gives the **signature** ring homomorphism $\operatorname{sign}_P : W(F) \to \mathbb{Z}$, and the total signature is a ring homomorphism of $W(F)$ into a product of copies of $\mathbb{Z}$, so its kernel contains the nilradical of $W(F)$. Over $\mathbb{R}$ the signature is an isomorphism onto $\mathbb{Z}$ and detects hyperbolicity; over $\mathbb{Q}$ it does not, since $\langle 1, -2\rangle$ has signature $0$ and is anisotropic, and $W(\mathbb{Q})$ even has $2$-torsion, $2[\langle 1, -2\rangle] = 0$, because the isotropic twofold Pfister form $\langle 1, 1, -2, -2\rangle$ is hyperbolic.
 
@@ -302,6 +336,8 @@ For a formally real field and an ordering $P$, extension to the real closure giv
 | $k_n^M(F)$ | Milnor K-theory groups |
 | $\langle\!\langle a_1, \ldots, a_n\rangle\!\rangle$ | $n$-fold Pfister form $\bigotimes_i \langle 1, -a_i\rangle$ |
 | $\pi$ | A Pfister form |
+| $B = (a,b)_F \otimes_F (c,d)_F$ | Biquaternion algebra, the tensor product of two quaternion algebras |
+| $\phi_B$ | Albert form $\langle a, b, -ab, -c, -d, cd\rangle$ of $B$, of dimension $6$ and trivial signed discriminant |
 | $P$, $\operatorname{sign}_P$ | Ordering of a formally real field; the signature at $P$ |
 | $F_P$ | Real closure of $F$ at the ordering $P$ |
 | $\operatorname{sign}$ | Total signature, $W(F) \to \prod_P \mathbb{Z}$ |
@@ -313,7 +349,7 @@ For a formally real field and an ordering $P$, extension to the real closure giv
 ## Further Reading
 
 - Winfried Scharlau, *Quadratic and Hermitian Forms*, Grundlehren der mathematischen Wissenschaften 270 (Springer, 1985), for the Witt ring, its invariants and the filtration by the fundamental ideal.
-- T. Y. Lam, *Introduction to Quadratic Forms over Fields*, Graduate Studies in Mathematics 67 (American Mathematical Society, 2005), for the Grothendieck–Witt ring, cancellation and the classical invariants.
+- T. Y. Lam, *Introduction to Quadratic Forms over Fields*, Graduate Studies in Mathematics 67 (American Mathematical Society, 2005), for the Grothendieck–Witt ring, cancellation, the classical invariants, and the Albert form and its division criterion for a biquaternion algebra.
 - Manfred Knebusch, *Grothendieck- und Wittringe von nichtausgearteten symmetrischen Bilinearformen* (Springer, 1970), for the foundational construction of the Grothendieck–Witt ring.
 - John Milnor, "Algebraic $K$-theory and quadratic forms", *Inventiones Mathematicae* 9 (1970), 318–344, for the conjecture relating the fundamental ideal filtration to Milnor K-theory.
 - Vladimir Voevodsky, "Motivic cohomology with $\mathbb{Z}/2$-coefficients", *Publications Mathématiques de l'IHÉS* 98 (2003), 59–104, for the proof of Milnor's conjecture.

@@ -11,7 +11,7 @@ This article develops the three constructions side by side, the standard matrix 
 
 ### The Common Pattern
 
-The three families are instances of one construction. Let $V$ be a vector space over a field, let $\sigma$ be an involution of the field — the identity for the orthogonal and symplectic cases, complex conjugation for the unitary case — and let $h: V \times V \to F$ be a form that is $\sigma$-sesquilinear and Hermitian in the sense. The **isometry group** of $h$ is
+The three families are instances of one construction. Let $V$ be a vector space over a field, let $\sigma$ be an involution of the field — the identity for the orthogonal and symplectic cases, complex conjugation for the unitary case — and let $h: V \times V \to F$ be a form that is $\sigma$-sesquilinear and Hermitian in the sense of the table below. The **isometry group** of $h$ is
 
 $$
 \operatorname{Isom}(V, h) = \{T \in GL(V) : h(Tu, Tv) = h(u, v) \text{ for all } u, v \in V\}.
@@ -109,7 +109,7 @@ This is the precise sense in which the unitary group lies between the orthogonal
 
 ### The Gram Matrix of a Hermitian Form
 
-Let $h$ be a Hermitian form on a finite-dimensional $\mathbb{C}$-space $V$, in the sense. In a basis $e_1, \ldots, e_n$ the Gram matrix $H$ with $H_{ij} = h(e_i, e_j)$ satisfies $H^{\dagger} = H$, and
+Let $h$ be a Hermitian form on a finite-dimensional $\mathbb{C}$-space $V$, as in the section above. In a basis $e_1, \ldots, e_n$ the Gram matrix $H$ with $H_{ij} = h(e_i, e_j)$ satisfies $H^{\dagger} = H$, and
 
 $$
 h(u, v) = u^{\dagger} H v .
@@ -139,13 +139,24 @@ $$
 
 **Example.** The matrices $\begin{pmatrix} \cosh t & \sinh t \\ \sinh t & \cosh t\end{pmatrix}$ for $t \in \mathbb{R}$ and $\begin{pmatrix} e^{i\theta} & 0 \\ 0 & e^{-i\theta}\end{pmatrix}$ for $\theta \in \mathbb{R}$ both lie in $SU(1,1)$: for the first the three equations reduce to $\cosh^2 t - \sinh^2 t = 1$, and for the second $|e^{i\theta}|^2 = 1$. The first family is a hyperbolic one-parameter subgroup, the second a compact circle, and the two generate a subgroup of $SU(1,1)$ through which the two types of one-parameter subgroup of a non-compact real form are visible.
 
-**Remark.** The group $SU(1,1)$ is isomorphic to $SL(2, \mathbb{R})$ and to $Sp(2, \mathbb{R})$, the three real forms of $\mathrm{SL}(2, \mathbb{C})$ of rank one; the compact form $SU(2)$ is not isomorphic to them. The isomorphism $SU(1,1) \cong Sp(2, \mathbb{R})$ is the first case of the general statement that the quaternionic and the symplectic descriptions agree over $\mathbb{C}$.
+**Remark.** The group $SU(1,1)$ is isomorphic to $SL(2, \mathbb{R})$ and to $Sp(2, \mathbb{R})$: the three symbols name one and the same group, the **split** (normal) real form of $\mathrm{SL}(2,\mathbb{C})$, not three different forms. That complex group has exactly two real forms of rank one, the compact $SU(2)$ and this split one, and all three names denote the split form. The coincidence $SU(1,1)\cong Sp(2,\mathbb{R})$ is the case $2m=2$ of the proposition below that $Sp(2,F)=SL(2,F)$, one of the low-dimensional coincidences of rank one.
+
+### The Unitary Dual of $SU(1,1)$
+
+The group is non-compact, so, exactly as for $SL(2,\mathbb{C})$, its nontrivial unitary representations are infinite-dimensional. Being of rank one, its dual is completely explicit: with $K=U(1)\subset SU(1,1)$ the maximal compact subgroup — the stabiliser of a vector of positive norm in the defining representation — the unitary irreducibles are
+
+- the **trivial representation**;
+- the **discrete series** $D_n$, $n\geq1$, square-integrable with respect to Haar measure, the parameter $j=-\tfrac{n}{2}$ in the notation of the source cited below;
+- the **continuous series** $j=-\tfrac12+is$, $s\in\mathbb{R}$, the tempered part, the same family the companion article *Noncommutative Harmonic Analysis* calls the **principal series**;
+- the **complementary series**, a bounded interval of parameters on which the representation is unitary but not tempered.
+
+The two series have geometric carriers, and it is the kind of vector stabiliser that decides which appears. The group acts transitively on the two hyperboloids of three-dimensional Minkowski space, and its compact counterpart $SU(2)$ on the sphere, so the sphere and the two hyperboloids of *The Spinor Module in Biquaternionic Form and Its Lorentz Action* are one family of homogeneous spaces under two groups. The **two-sheeted time-like hyperboloid** $H^\pm=SU(1,1)/U(1)$ has the compact $U(1)$ as its vector stabiliser and carries the discrete series, while the **one-sheeted space-like hyperboloid** $H^{sl}$ has the non-compact one-parameter subgroup of boosts as its stabiliser and carries the continuous series. The compact member is the sphere $S^2=SU(2)/U(1)$, whose multiplets are finite-dimensional because $SU(2)$ is compact, and the passage from the compact to the non-compact case is exactly the passage from a finite multiplet to a series. The spinor models of the three spaces, and the realisation of the Lie algebra $\mathrm{SU}(1,1)$ on the spinor bilinears, are external material recorded in that article.
 
 ## The Symplectic Group
 
 ### Alternating Forms
 
-Let $V$ be a finite-dimensional space over a field $F$ of characteristic not $2$, with a non-degenerate alternating form $\omega$. By *Bilinear Forms*, $\dim V = 2m$ is even and there is a symplectic basis $e_1, \ldots, e_m, f_1, \ldots, f_m$ with $\omega(e_i, f_j) = \delta_{ij}$. The **symplectic group** of $\omega$ is
+Let $V$ be a finite-dimensional space over a field $F$, with a non-degenerate alternating form $\omega$. Unlike the Hermitian and unitary sections below, nothing here divides by $2$, so this section is valid in every characteristic, a point used in *Witt's Theorems*. By *Bilinear Forms*, $\dim V = 2m$ is even and there is a symplectic basis $e_1, \ldots, e_m, f_1, \ldots, f_m$ with $\omega(e_i, f_j) = \delta_{ij}$. The **symplectic group** of $\omega$ is
 
 $$
 \operatorname{Sp}(V, \omega) = \{T \in GL(V) : \omega(Tu, Tv) = \omega(u, v) \text{ for all } u, v\}.
@@ -186,6 +197,19 @@ $$
 so $M^{T}\Omega M = \Omega$ if and only if $\det M = 1$, since $\Omega \neq 0$.
 
 So the symplectic family begins with the special linear group in dimension two, and $Sp(2, F) \cong SL(2, F)$: the alternating form on a plane is unique up to scale, and every determinant-one $2 \times 2$ matrix preserves it.
+
+### Generation by Elementary Matrices
+
+The group is generated by matrices that are the identity except in a bounded block, and the list is the one that acts on a symplectic basis.
+
+**Theorem (standard; Chevalley, Dieudonné).** Let $V$ be a symplectic space of dimension $2m$ over a field $F$ of any characteristic, with symplectic basis $e_1, \ldots, e_m, f_1, \ldots, f_m$. The group $\operatorname{Sp}(V, \omega)$ is generated by the following automorphisms of the basis, each fixing every basis vector not displayed:
+
+- $e_k \mapsto e_k + f_{k+1}$ and $e_{k+1} \mapsto e_{k+1} + f_k$, for $1 \leq k \leq m - 1$;
+- $e_k \mapsto \beta e_k$ and $f_k \mapsto \beta^{-1} f_k$, for $1 \leq k \leq m$ and $\beta \in F^\times$;
+- $e_k \mapsto e_k + \beta f_k$, for $1 \leq k \leq m$ and $\beta \in F$;
+- $f_k \mapsto f_k + \beta e_k$, for $1 \leq k \leq m$ and $\beta \in F$.
+
+**Remark.** The transvections $\tau_u(v) = v + \omega(v, u)u$, one for each $u \in V$, are also a generating set, and they are the direct analogue of the reflections of the orthogonal case, since $\tau_u$ fixes the hyperplane orthogonal to $u$ and moves $u$ along itself. The set above is the one that acts on a *presentation* of a form rather than on a single vector, and it is this set that produces the chain equivalence for quadratic forms in characteristic $2$ of *Witt's Theorems*: there the first family, read on a symplectic basis, becomes the first of Revoy's moves on the standard presentation $[a_1, b_1] \perp \cdots \perp [a_n, b_n]$, and the last three families account for the remaining moves.
 
 ### The Compact Form inside the Split Form
 
@@ -258,11 +282,11 @@ The **classical groups** are the isometry groups of the three types of form. A n
 
 Over $\mathbb{C}$ the standard unitary groups are $U(n) = \{U : U^{\dagger}U = I\}$ and $SU(n)$, of real dimensions $n^2$ and $n^2 - 1$; $U(n)$ is compact and $U(n)/SU(n) \cong S^1$. A Hermitian form $h = s + ia$ has unitary group $\operatorname{O}(V_{\mathbb{R}}, s) \cap \operatorname{Sp}(V_{\mathbb{R}}, a)$, the intersection of an orthogonal and a symplectic group on the realification.
 
-The standard symplectic group $Sp(2m, F) = \{M : M^T\Omega M = \Omega\}$ has dimension $2m^2 + m$, is contained in $SL(2m, F)$ (every symplectic matrix has determinant $1$, by the Pfaffian), is connected and non-compact, and in dimension two coincides with $SL(2, F)$. The **quaternionic unitary group** $Sp(n)$, of dimension $n(2n+1)$, is compact and is the compact real form of $Sp(2n, \mathbb{C})$; the notation $Sp$ therefore carries two distinct meanings, which the context separates.
+The standard symplectic group $Sp(2m, F) = \{M : M^T\Omega M = \Omega\}$ has dimension $2m^2 + m$, is contained in $SL(2m, F)$ (every symplectic matrix has determinant $1$, by the Pfaffian), is connected and non-compact, and in dimension two coincides with $SL(2, F)$. The **quaternionic unitary group** $Sp(n)$, of dimension $n(2n+1)$, is compact and is the compact real form of $Sp(2n, \mathbb{C})$; the notation $Sp$ therefore carries two distinct meanings, which the context separates. The symplectic group is generated by elementary matrices acting on a symplectic basis, in every characteristic: the two-pair move $e_k \mapsto e_k + f_{k+1}$, $e_{k+1} \mapsto e_{k+1} + f_k$, the diagonal scaling $e_k \mapsto \beta e_k$, $f_k \mapsto \beta^{-1}f_k$, and the two unipotent moves $e_k \mapsto e_k + \beta f_k$ and $f_k \mapsto f_k + \beta e_k$; the transvections $v \mapsto v + \omega(v, u)u$ are another generating set. This is the set that, read on the standard presentation of a quadratic form, becomes the chain equivalence for quadratic forms in characteristic $2$.
 
 Over an algebraically closed field the simple Lie algebras coming from these groups are the four families $A_n = \mathrm{SL}(n+1)$, $B_n = \mathrm{SO}(2n+1)$, $C_n = \mathrm{Sp}(2n)$ and $D_n = \mathrm{SO}(2n)$, of ranks $n$ and dimensions $n(n+2)$, $n(2n+1)$, $n(2n+1)$ and $n(2n-1)$. $B$ and $C$ are dual families of equal dimension; $D_2$ is not simple, splitting as $A_1 \times A_1$. The compact real forms are $SU(n)$, $SO(2n+1)$, $Sp(n)$, $SO(2n)$, and the split real forms are $SL(n+1, \mathbb{R})$, $SO(n, n+1)$, $Sp(2n, \mathbb{R})$, $SO(n, n)$.
 
-A **Hermitian form** has a Hermitian Gram matrix $H = H^{\dagger}$ and a real-valued diagonal $v \mapsto h(v, v)$. By the **inertia theorem for Hermitian forms** it has a unique signature $(p, r, z)$ with normal form $\operatorname{diag}(I_p, -I_r, 0_z)$, and its isometry group is $U(p, r)$, of real dimension $n^2$, with special subgroup $SU(p, r)$ of dimension $n^2 - 1$. The case $U(1, 1)$ is non-compact and contains both a hyperbolic and a compact one-parameter subgroup; $SU(1, 1) \cong SL(2, \mathbb{R}) \cong Sp(2, \mathbb{R})$.
+A **Hermitian form** has a Hermitian Gram matrix $H = H^{\dagger}$ and a real-valued diagonal $v \mapsto h(v, v)$. By the **inertia theorem for Hermitian forms** it has a unique signature $(p, r, z)$ with normal form $\operatorname{diag}(I_p, -I_r, 0_z)$, and its isometry group is $U(p, r)$, of real dimension $n^2$, with special subgroup $SU(p, r)$ of dimension $n^2 - 1$. The case $U(1, 1)$ is non-compact and contains both a hyperbolic and a compact one-parameter subgroup; the three symbols $SU(1, 1)$, $SL(2, \mathbb{R})$ and $Sp(2, \mathbb{R})$ name one group, the split real form of $SL(2, \mathbb{C})$, whose unitary dual is the trivial representation together with the discrete, continuous and complementary series. The series are carried by the homogeneous spaces according to the vector stabiliser: the compact $U(1)$ for the discrete series on the time-like hyperboloid $SU(1,1)/U(1)$, the non-compact boost subgroup for the continuous series on the space-like one, and the compact group $SU(2)$ for the finite multiplets of the sphere $SU(2)/U(1)$.
 
 The compact and split forms of the symplectic family meet in the unitary group: on $\mathbb{R}^{2m}$ with the standard alternating and Euclidean forms, $Sp(2m, \mathbb{R}) \cap O(2m) = U(m)$, because a real matrix that is both symplectic and orthogonal commutes with $\Omega$ and is therefore complex-linear. Hence $U(m)$ is a maximal compact subgroup of $Sp(2m, \mathbb{R})$, of dimension $m^2$ inside the ambient dimension $2m^2 + m$.
 
@@ -281,6 +305,10 @@ The compact and split forms of the symplectic family meet in the unitary group: 
 | $U(n)$ | Standard unitary group, $U^{\dagger}U = I$ |
 | $H$ | Hermitian Gram matrix, $H^{\dagger} = H$, $h(u,v) = u^{\dagger}Hv$ |
 | $U(p, r)$, $SU(p, r)$ | Unitary group of a Hermitian form of signature $(p, r)$, and its determinant-one subgroup |
+| $SU(1,1)\cong SL(2,\mathbb{R})\cong Sp(2,\mathbb{R})$ | Split (normal) real form of $\mathrm{SL}(2,\mathbb{C})$, of rank one, under three names |
+| $D_n$, $j=-\tfrac12+is$ | Discrete and continuous series of $SU(1,1)$ |
+| $S^2=SU(2)/U(1)$, $H^\pm=SU(1,1)/U(1)$ | Sphere and time-like hyperboloid as homogeneous spaces |
+| $H^{sl}$ | One-sheeted space-like hyperboloid; non-compact vector stabiliser |
 | $p, r, z$ | Signature of a Hermitian form, $p + r + z = n$ |
 | $I_p$ | Identity matrix of size $p$ |
 | $\operatorname{diag}$ | Diagonal matrix with the displayed entries |
@@ -289,6 +317,8 @@ The compact and split forms of the symplectic family meet in the unitary group: 
 | $Sp(n)$ | Compact quaternionic unitary group (a clash of notation with the previous line, separated by context) |
 | $\Omega$ | Standard alternating matrix $\begin{pmatrix} 0 & I \\ -I & 0\end{pmatrix}$ |
 | $\omega$ | Alternating form, $\omega(x, y) = x^T\Omega y$ |
+| $\tau_u$ | Symplectic transvection $v \mapsto v + \omega(v, u)u$ |
+| Elementary symplectic matrices | The four families of generators acting on a symplectic basis |
 | $\operatorname{Pf}$ | Pfaffian |
 | $\delta_{ij}$ | Kronecker delta |
 | $GL(V)$, $SL(V)$ | General and special linear groups |
@@ -303,8 +333,12 @@ The compact and split forms of the symplectic family meet in the unitary group: 
 
 ## Further Reading
 
-- Jean Dieudonné, *La géométrie des groupes classiques* (Springer, 1971), for the classical groups over general rings and their isometry-theoretic definition.
+- Jean Dieudonné, *La géométrie des groupes classiques* (Springer, 1971), for the classical groups over general rings, their isometry-theoretic definition, the transvections and the generation of the symplectic group.
 - Larry C. Grove, *Classical Groups and Geometric Algebra*, Graduate Studies in Mathematics 39 (American Mathematical Society, 2002), for the unitary, symplectic and orthogonal groups and their interrelations.
 - Roger Howe, "Remarks on classical invariant theory", *Transactions of the American Mathematical Society* 313 (1989), 539–570, for the form-first viewpoint on the classical groups.
 - Nicolas Bourbaki, *Lie Groups and Lie Algebras, Chapters 4–6* (Springer, 2002), for the root systems and the classification of the classical families.
 - James E. Humphreys, *Introduction to Lie Algebras and Representation Theory*, Graduate Texts in Mathematics 9 (Springer, 1972), for the four families and their real forms.
+- V. Bargmann, "Irreducible unitary representations of the Lorentz group," *Annals of Mathematics* **48** (1947) 568–640, for the discrete and continuous series of the rank-one groups $SU(1,1)\cong SL(2,\mathbb{R})$ and the homogeneous spaces on which they are realised.
+- Anthony W. Knapp, *Representation Theory of Semisimple Groups: An Overview Based on Examples* (Princeton University Press, 1986), for the unitary dual of a rank-one reductive group and the role of the vector stabiliser in selecting the series.
+- J. D. Simão, "Biquaternions, Majorana spinors and time-like spin-foams," arXiv:2401.10324 [gr-qc] (2024), for the spinor models of $S^2$, $H^\pm$ and $H^{sl}$ on which the two series are carried, for the parametrisation $j=-\tfrac{n}{2}$ of the discrete series and $j=-\tfrac12+is$ of the continuous one, and for the realisation of the Lie algebra $\mathrm{SU}(1,1)$ on the spinor bilinears. External; cited for the geometric carriers only.
+- Adam Chapman, *Chain Equivalences for Symplectic Bases, Quadratic Forms and Tensor Products of Quaternion Algebras* (arXiv:1312.1676, 2015), for the elementary generating set of the symplectic group written on a symplectic basis and for its use in the chain equivalence for quadratic forms.

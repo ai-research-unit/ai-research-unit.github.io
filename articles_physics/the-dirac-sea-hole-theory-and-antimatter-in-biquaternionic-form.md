@@ -105,6 +105,20 @@ which the canonical-quantization article removes by the standard prescription an
 
 The relabelling that turns a negative-energy electron into a positive-energy positron is the framework's **charge conjugation**. The companion article on the Clifford structure of the biquaternion algebra places the charge-conjugation real structure $\mathcal C$ on the doubled module $\Delta = S\oplus\bar S$, tying the module $S$ to its conjugate $\bar S$; the same article records that the internal spinor has a charge conjugate but no Majorana partner, and that the doubling from $\mathbb B\cong S\oplus S$ to $\Delta$ is the structure that carries $\mathcal C$. The hole-theory relabelling and the framework's $\mathcal C$ are the same operation read in the two pictures: the sea's holes and the second-quantized antiparticles are the $\mathcal C$-conjugates of the particles. This is the cleanest framework-level content of the article.
 
+**The conjugation written out.** The dictionary of the companion *The Dirac Equation in Biquaternionic Form* gives the same operation an explicit form, and there the conjugation is not a structure on a doubled module but a map on the field itself. Rewriting the Dirac equation as one biquaternionic equation with an electric coupling, that source treats the positron by reversing the sign of the charge in the coupling — and the sign reversal is exactly the complex conjugation of the operator, so that the positron's equation is the conjugate of the electron's,
+
+$$
+R_{\mathrm{pos}}\bigl[F_{\mathrm{pos}}\bigr] = Z_c\bigl(R_{\mathrm{el}}[F_{\mathrm{el}}]\bigr) ,
+$$
+
+$Z_c$ being componentwise complex conjugation. The outcome is an identity of fields: the positron field is the complex conjugate of the electron field,
+
+$$
+F_{\mathrm{pos}} = \overline{F_{\mathrm{el}}} .
+$$
+
+This is the anti-linear, involutive conjugation that the *Antilinear Structure and the Two Kinds of Mass* article keeps apart from the algebra's real structure $\flat$, here acting on the biquaternion field rather than on the spinor module. The corpus records it as a corroboration rather than as a new construction: both sides are anti-linear and both square to the identity, and the dictionary identifies them.
+
 ### The framework-consistent reading
 
 Putting the pieces together, the framework supports the following reading and no more:
@@ -146,6 +160,7 @@ The biquaternion framework is naturally on this second side. Its mass shell has 
 | $E_0=-2V\int\frac{d^3p}{(2\pi)^3}E_{\mathbf p}$ | Normal-ordering constant (vacuum energy) |
 | $e$ | Positive unit of charge; the electron carries $-e$ |
 | $\mathcal C$ | Framework's charge-conjugation real structure on $\Delta=S\oplus\bar S$ |
+| $Z_c$ | Componentwise complex conjugation of the biquaternion field; carries the electron equation to the positron equation, $F_{\mathrm{pos}}=\overline{F_{\mathrm{el}}}$ |
 | $\Delta=S\oplus\bar S$ | Doubled spinor module carrying $\mathcal C$ |
 | Fermi sea | Filled valence band; the sea's condensed-matter realization |
 
@@ -162,3 +177,4 @@ The biquaternion framework is naturally on this second side. Its mass shell has 
 - J. Schwinger, "On gauge invariance and vacuum polarization," *Physical Review* **82** (1951) 664–679, for the renormalized treatment.
 - J. D. Bjorken and S. D. Drell, *Relativistic Quantum Fields* (McGraw-Hill, 1965), for the second-quantized Dirac field and normal ordering.
 - The companion articles of this series: *Canonical Quantization of the Biquaternion Dirac Field*, *The Klein Paradox in Biquaternionic Form*, *The Biquaternion Vacuum as a Minimal Idempotent*, *The Vacuum State and the Casimir Effect in Biquaternionic Form*, *Dirac Matter: Graphene, Dirac Cones and Topological Insulators in Biquaternionic Form*, and *The Clifford Structure of the Biquaternion Algebra*.
+- V. V. Kravchenko and M. P. Ramirez Tachiquin, "On a quaternionic reformulation of the Dirac equation and its relationship with Maxwell's system," *Bulletin de la Société des Sciences et des Lettres de Łódź* **53** (2003) 101–114, §3.3, for the hole-theory application in which the positron's equation is the complex conjugate of the electron's — the sign reversal of the charge being the conjugation of the operator — so that $F_{\mathrm{pos}}=\overline{F_{\mathrm{el}}}$; the conjugation operator is the one the companion *The Dirac Equation in Biquaternionic Form* records as the timelike generator of Kravchenko's dictionary.

@@ -118,6 +118,32 @@ where $n$ is the spatial part of the normal to the moving surface. This is the c
 
 The wave-front condition implies that the jump $[\tilde{F}]_S$ has a specific structure: it is a complex combination of the electric and magnetic jumps, transverse to the propagation direction. Explicitly, in the basis aligned with the propagation direction, the jump is characterized by a single complex amplitude (corresponding to the two transverse polarizations of the wave).
 
+### A Constant Zeroth-Order Term Does Not Change the Jump Condition
+
+The derivation above uses the homogeneous biquaternionic Maxwell equation: a first-order operator and no zeroth-order term. The biquaternionic wave equations of the electro-gravimagnetic programme carry one, and it is worth recording that a **constant** zeroth-order term leaves the jump condition untouched. Write the biwave equation as $D^+_F\hat{B} = \hat{G}$ with $D^+_F = \nabla^+ + f + F$, $\nabla^+ = \partial_\tau + i\nabla$, $f$ a scalar and $F$ a constant vector, and $\hat{B} = B H$ the field extended across the front by a step. Only the derivative produces a layer, because the zeroth-order term contains the field and not its derivative:
+
+$$
+\nabla^+\hat{B} = \{\nabla^+B\} + \{n_0 + i\mathbf{n}\}\circ[B]_F\,\delta_F ,
+\qquad
+(f+F)\circ\hat{B} = \{(f+F)\circ B\} ,
+$$
+
+so separating the surface terms gives the same condition as before,
+
+$$
+\{n_0 + i\mathbf{n}\}\circ[B]_F = 0 .
+$$
+
+The $i$ on the spatial part of the normal is the bigradient's, and the condition is the article's $\tilde{n}[\tilde{F}]_S = 0$: the two normals differ only by the position of the $i$, since $-i(n_0 + i\mathbf{n}) = \mathbf{n} - i n_0$ puts the imaginary unit in the time slot, which is the $ict$ convention's $\tilde{n} = i\nu_t e_0 + \mathbf{n}$, and an overall factor in a vanishing condition is empty. Normalising the wave vector gives $n_0 = -1$, and separating the scalar and vector parts of $[B]_F = [b] + [\mathbf{B}]$,
+
+$$
+[b] + i(\mathbf{n},[\mathbf{B}]) = 0 ,
+\qquad
+[\mathbf{B}] = i\,\bigl([b]\,\mathbf{n} + [\mathbf{n},[\mathbf{B}]]\bigr) .
+$$
+
+The scalar equation carries the whole transversality statement: if the scalar jump vanishes — as it does for a pure-vector biquaternion, which is the electromagnetic case — then $(\mathbf{n},[\mathbf{B}]) = 0$ and the front is transverse, exactly as in the light-cone condition above. Both equations and the corollary were checked on random biquaternions to $10^{-16}$. The constant coefficient appears in neither, which is the same statement as the companion article's composition lemma read in the other direction: a constant zeroth-order coefficient enters the equation as a mass-like term and the jump condition not at all, because a discontinuity is a property of the derivative.
+
 ## The Joint Jump Conditions and Transversality
 
 The wave-front condition is compact in the biquaternionic variable, but its content on the electric and magnetic fields is a **joint jump system**. Write the A-field of the Maxwell article,
@@ -251,6 +277,38 @@ Shock electromagnetic waves in plasma take several forms:
 
 Each of these is an established phenomenon, with a substantial literature. The biquaternion framework can be used to describe the **electromagnetic** aspects of these shocks, but the **plasma dynamics** must be added separately.
 
+## Magnetohydrodynamics and the Fluid Correspondence
+
+Magnetohydrodynamics is the setting in which the fluid and electromagnetic descriptions genuinely coincide rather than merely resemble each other, and it is the plainest checkable instance of the fluid–electromagnetism correspondence. Its centre is the **induction equation**.
+
+For a conducting fluid of velocity $\mathbf{u}$ and magnetic diffusivity $\eta$, the magnetic field obeys
+
+$$
+\partial_t\mathbf{B} = \nabla\times(\mathbf{u}\times\mathbf{B}) + \eta\,\nabla^2\mathbf{B},
+$$
+
+while the vorticity of the same flow, $\boldsymbol{\omega} = \nabla\times\mathbf{u}$, obeys the Helmholtz equation
+
+$$
+\partial_t\boldsymbol{\omega} = \nabla\times(\mathbf{u}\times\boldsymbol{\omega}) + \nu\,\nabla^2\boldsymbol{\omega}
+$$
+
+with the kinematic viscosity $\nu$. The two equations have the same form, in the same velocity field, with the magnetic field in the place of the vorticity and the magnetic diffusivity in the place of the kinematic viscosity. The vector identity behind both, valid for divergence-free fields, is
+
+$$
+-\nabla\times(\mathbf{u}\times\mathbf{B}) = (\mathbf{B}\cdot\nabla)\mathbf{u} - (\mathbf{u}\cdot\nabla)\mathbf{B},
+$$
+
+so that each is of the advection–diffusion type
+
+$$
+\partial_t\mathbf{Q} + (\mathbf{u}\cdot\nabla)\mathbf{Q} = (\mathbf{Q}\cdot\nabla)\mathbf{u} + \kappa\,\nabla^2\mathbf{Q},
+$$
+
+with the diffusivity $\kappa = \eta$ for the field and $\kappa = \nu$ for the vorticity. One consequence is that the magnetic field is frozen into a perfectly conducting fluid ($\eta = 0$) exactly as the vorticity is frozen into an inviscid one ($\nu = 0$): Alfvén's frozen-flux theorem is the magnetic image of Kelvin's circulation theorem. The identity has been verified by exact numerical differentiation over random divergence-free fields; the residuals are at machine precision.
+
+**Where the correspondence stops.** It is a statement about two equations for one three-dimensional vector field, and it does not extend to either theory as a whole. There is no magnetic monopole, so there is no magnetic counterpart of the electric charge density, which is what empties the analogy's magnetic-Gauss sector; a fluid has no displacement current, so the constitutive relations are not the same objects; the dissipative terms have different microscopic origins; and the fluid equations are Galilean invariant while Maxwell's equations are Lorentz invariant. The correspondence is between the incompressible fluid limit and the *magnetic* Galilean limit of the electromagnetic equations (the regime of the quasi-stationary approximation), both of which are Galilean; *Maxwell's Equations in the Biquaternionic Formulation* states these limits from the electromagnetic side, and the source paper discusses changes of reference frame within the analogy. The source also offers an interpretation of electric charge in hydrodynamic terms, which is presented as part of the analogy rather than as an established identification, and the corpus records it as such.
+
 ## The Biquaternionic Formulation of Shock Fronts
 
 The biquaternion framework can be applied to shock fronts in nonlinear media and plasmas, in the following way.
@@ -367,8 +425,10 @@ The treatment of shock electromagnetic waves in the biquaternion framework is th
 - L. A. Alexeyeva, "Hamiltonian Form of the Maxwell Equations and Its Generalized Solutions" (2001), for the distributional treatment of discontinuous solutions.
 - L. A. Alexeyeva, "One Biquaternion Model of the Electro-Gravimagnetic Field. Field Analogues of Newton's Laws" (2007), for the charge–current field, its first-order system and the non-transverse character of its shocks; see *The Electro-Gravimagnetic Field and the Magnetic-Charge–Mass Hypothesis*.
 - L. A. Alexeyeva, "Maxwell Equations, Their Hamiltonian and Biquaternionic Forms and Properties of Their Solutions" (2016), for the biquaternionic formulation.
+- L. A. Alexeyeva, "Biquaternionic wave equations and the properties of their generalized solutions", *Differential Equations* **57** (5) (2021) 594–604, for the front condition $\{n_0 + i\mathbf{n}\}\circ[B]_F = 0$ of the biwave equation with a general constant structural coefficient and the transversality it implies; the composition lemma, the weighted kernel and the paper's sign discrepancy are recorded in *The Biquaternion D'Alembertian and Its Green's Functions*.
 - R. Z. Sagdeev, "Cooperative phenomena and shock waves in collisionless plasmas," *Reviews of Plasma Physics* **4** (1966) 23–91.
 - J. E. Allen, "Shock waves in plasmas," in *Encyclopedia of Physical Science and Technology* (Academic Press, 2001).
 - A. Jeffrey and T. Taniuti, *Non-Linear Wave Propagation* (Academic Press, 1964), for the general theory of nonlinear hyperbolic equations and shock formation.
 - G. B. Whitham, *Linear and Nonlinear Waves* (Wiley, 1974), for the general theory of shock waves and conservation laws.
+- G. Rousseaux and É. Guyon, "À propos d'une analogie entre la mécanique des fluides et l'électromagnétisme", *Bulletin de l'Union des Physiciens* **96** (2002), no. 841 (2), 125–134, for the induction equation, its identification with the Helmholtz vorticity equation, and the limits of the fluid–electromagnetism correspondence recorded in *Magnetohydrodynamics and the Fluid Correspondence*. An expository article in a teachers' journal, in French.
 

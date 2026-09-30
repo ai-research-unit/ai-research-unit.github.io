@@ -3,7 +3,7 @@
 
 ## Introduction
 
-A partial order records when one object is below another, and much of algebra is order in disguise: a subgroup is below another when it is contained in it, and a quotient is often the greatest object of a given kind. This article develops the theory of orders for its own sake: it defines partial, total and well-orders, isolates the two binary operations that an order may support — the least upper bound and the greatest lower bound — and studies the structures, the **lattices**, in which those operations are always defined. It then treats the two results that the corpus uses in its analysis: the **Galois connection**, the order-theoretic form of a closure, and the fixed-point theorem of **Knaster and Tarski**.
+A partial order records when one object is below another, and much of algebra is order in disguise: a subgroup is below another when it is contained in it, and a quotient is often the greatest object of a given kind. This article develops the theory of orders for its own sake: it defines pre-orders and the quotient that passes from a pre-order to a partial order, then partial, total and well-orders, isolates the two binary operations that an order may support — the least upper bound and the greatest lower bound — and studies the structures, the **lattices**, in which those operations are always defined. It then treats the two results that the corpus uses in its analysis: the **Galois connection**, the order-theoretic form of a closure, and the fixed-point theorem of **Knaster and Tarski**.
 
 The article presupposes the language of *Sets, Functions and Relations* — subsets, ordered pairs, relations, equivalence relations and functions — and the propositional logic of *Logic and Proof*, and it uses the natural numbers as basic. Two boundaries are observed. The **axiom of choice** and Zorn's lemma are not proved or used here; they belong to the foundations, and the article distinguishes the results constructive in the order alone from those that require a choice principle. **Boolean algebra** is developed as a subject in Part V; the power-set lattice is introduced here as the standard example, and the general theory is deferred.
 
@@ -21,7 +21,25 @@ The standard order on $\mathbb{N}$ and the inclusion on the subsets of a set are
 
 **Example.** Let $X$ be a set and let $P$ be the set of **partitions** of $X$, ordered by refinement: $\pi \leq \sigma$ when every block of $\pi$ is contained in a block of $\sigma$. This is a partial order, and it is the order that the equivalence relations of *Sets, Functions and Relations* inherit from set inclusion of relations.
 
-**Example.** Any set $P$ carries the **discrete order**, in which $x \leq y$ only when $x = y$, and the **indiscrete order**, in which $x \leq y$ for all $x, y$. These are the extreme cases and are used in the theory of Galois connections below.
+**Example.** Any set $P$ carries the **discrete order**, in which $x \leq y$ only when $x = y$, and the **indiscrete relation**, in which $x \leq y$ for all $x, y$. The first is a partial order; the second is a partial order only when $P$ has at most one element, and in general it is a pre-order, in the sense of the next subsection. The two are the extreme cases and are used in the theory of Galois connections below.
+
+### The Quotient of a Pre-Order
+
+The examples above include a relation that is reflexive and transitive but not antisymmetric, and the theory of the rest of this article applies to such a relation after one construction.
+
+**Definition.** A **pre-order** on a set $P$ is a relation $\leq$ that is reflexive and transitive. The relation $\sim$ given by $x \sim y$ iff $x \leq y$ and $y \leq x$ is an equivalence relation, the **equivalence of the pre-order**, and the **quotient** of the pre-order is the set $P/{\sim}$ of its classes with the relation
+
+$$
+[x] \preceq [y] \quad\iff\quad x \leq y .
+$$
+
+**Theorem.** The relation $\preceq$ is well defined and is a partial order on $P/{\sim}$.
+
+**Proof.** If $[x]=[x']$ and $[y]=[y']$ then $x' \leq x \leq y \leq y'$, so $x' \leq y'$ and $\preceq$ does not depend on the representatives. It is reflexive and transitive because $\leq$ is. If $[x] \preceq [y]$ and $[y] \preceq [x]$ then $x \sim y$, so $[x]=[y]$, which is antisymmetry.
+
+Every pre-order therefore has a partial order as its quotient. The two extreme examples are instances: the discrete relation is already antisymmetric and is its own quotient, while the indiscrete relation on a set with two or more elements has a single class, so its quotient is a one-point poset. The construction is also what relates the divisibility of the integers to the divisibility of the natural numbers: on $\mathbb{Z}$ divisibility is reflexive and transitive, and $n$ and $m$ divide each other exactly when $m = \pm n$, so the quotient is the divisibility poset of $\mathbb{N}$. The pre-order quotient is put to use in *Mereology and Collective Set Theory*, where the pre-order is the division relation of a whole and antisymmetry is not assumed.
+
+Two cautions belong here, and each is an instance of antisymmetry being used silently. A least element of a pre-order is least only up to the equivalence of the pre-order, so the uniqueness statement of *Total Orders, Chains and Well-Orders* is a statement about partial orders and must be read in the quotient. A supremum of a pre-order is unique only up to the same equivalence, for the same reason, so the corresponding sentence of *Suprema and Infima* is likewise about partial orders. In both cases the passage to the quotient restores the uniqueness, and the objects that it identifies are exactly the ones the original relation could not tell apart.
 
 ### Total Orders, Chains and Well-Orders
 
@@ -279,6 +297,7 @@ A Galois connection between posets is a pair of monotone adjoint maps $f \dashv 
 |---|---|
 | $\leq$, $<$ | Partial order and its strict part |
 | $(P, \leq)$ | Partially ordered set (poset) |
+| $P/{\sim}$ | Quotient of a pre-order, a partially ordered set |
 | $\bigvee S = \sup S$, $\bigwedge S = \inf S$ | Supremum and infimum of a subset |
 | $x \vee y$, $x \wedge y$ | Join (least upper bound) and meet (greatest lower bound) of a pair |
 | $L$, $M$ | Lattices |

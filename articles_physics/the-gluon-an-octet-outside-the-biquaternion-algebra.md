@@ -256,6 +256,16 @@ so the compact part of the algebra is four-dimensional and cannot contain the ei
 
 The one structure that carries the octet is the octonion algebra: $\dim_\mathbb{R}\mathbb{O}=8$, $\mathrm{Aut}(\mathbb{O})=G_2\supset SU(3)$, and $\mathbf{1}\oplus\mathbf{3}\oplus\bar{\mathbf{3}}$ under $SU(3)$. It is non-associative, so the commutator is not a Lie bracket, the Jacobi identity fails, and the curvature, Bianchi identity and BRST structure the framework uses all lapse. The octet is therefore not merely absent from the biquaternion algebra; it is present only in an algebra that lacks associativity, which is the property the framework's gauge construction cannot do without. The enlarged carrier $M_2(\mathbb{B})\cong M_4(\mathbb{C})\supset U(3)\supset SU(3)$ can host the group, at the price of making the colour index external. The gluon thus closes the subcategory as its ceiling: the framework's gauge sector is $U(1)\times SU(2)$, the electroweak factor, and the colour factor is outside.
 
+### The Chain Algebra: An Associative Octonionic Route
+
+The argument just given is an argument about the octonions **used as the non-associative algebra of fields**, and on that reading it is decisive: the commutator of two octonions is not a Lie bracket, the Jacobiator measures the associator, and no gauge theory of the usual kind can be built on the octonions themselves. It is not the whole story, because an octonionic route to $SU(3)$ need not use the octonions as the algebra of fields. The **left multiplications** of the complex octonions form an associative algebra, the complex octonionic chain algebra,
+$$
+\overleftarrow{\mathbb{C}\otimes\mathbb{O}}\cong\mathrm{Cl}(6)\cong M_8(\mathbb{C}),
+$$
+of complex dimension $64$; in this algebra the commutator is a Lie bracket, the Jacobi identity holds, and the curvature, the Bianchi identity and the BRST structure are available exactly as in the framework's own construction. The chain algebra contains an intrinsic $SU(3)$ — the stabiliser of a maximal totally isotropic subspace, equivalently of the unit $e_7$ inside $\mathrm{Aut}(\mathbb{O})=G_2$ — and its minimal left ideal carries colour multiplets with the charge spectrum $0,1/3,2/3,1$.
+
+This does not contradict the ceiling, because it does not take place in $\mathbb{B}$: it enlarges the carrier to an associative Clifford algebra. What it corrects is the impression that the octonionic road to colour necessarily costs associativity. The non-associativity of the octonions is exactly what makes the chain algebra **larger** than the algebra itself, and the chain algebra is associative; the octonionic route therefore pays the price of a carrier outside $\mathbb{B}$, the same price the enlarged carrier of the previous paragraph pays, and not the price of a failed Jacobi identity. The construction is worked out in the companion article *Complex Octonions and the Clifford Algebra Cl(6)*, where the chain algebra, its intrinsic $\mathrm{SU}(3)$ and the minimal left ideal are computed.
+
 ## Summary of Notation
 
 | Symbol | Meaning |

@@ -7,9 +7,9 @@ Hyperbolic geometry is the geometry of constant negative curvature. It is the th
 
 Hyperbolic geometry is the richest of the three model geometries and the one with the deepest connection to the rest of mathematics. Its isometry group in dimension two is the projective linear group $PSL(2, \mathbb{R})$, so its geometry is the geometry of Möbius transformations and of the Riemann sphere with a real boundary; its discrete subgroups are the Fuchsian and Kleinian groups, whose quotient surfaces carry the moduli spaces of complex structures. It is for this reason that the hyperbolic structure on a surface is the geometric realisation of its complex structure, and the deformation theory of the one is the deformation theory of the other.
 
-This article develops hyperbolic geometry from its models. It gives the upper half-plane, the Poincaré disk, the hyperboloid and the Beltrami–Klein models, with the isometries between them; computes the geodesics and the distance in each; proves the trigonometric laws, which differ from the spherical and Euclidean ones only in the signs and the hyperbolic functions; relates the angle sum to the area through the hyperbolic Gauss–Bonnet theorem; treats the angle of parallelism and the ideal points at infinity; identifies the isometry group with a projective linear group and classifies its elements; and introduces the discrete groups and the space forms, with the Mostow rigidity theorem and the boundary to the Teichmüller theory of the sibling articles.
+This article develops hyperbolic geometry from its models. It gives the upper half-plane, the Poincaré disk, the hyperboloid in its Weierstrass coordinates and the Beltrami–Klein ball with its Cayley–Klein metric, with the isometries between them; computes the geodesics and the distance in each; proves the trigonometric laws, which differ from the spherical and Euclidean ones only in the signs and the hyperbolic functions; relates the angle sum to the area through the hyperbolic Gauss–Bonnet theorem; treats the angle of parallelism and the ideal points at infinity; identifies the isometry group with a projective linear group and classifies its elements; and introduces the discrete groups and the space forms, with the Mostow rigidity theorem and the boundary to the Teichmüller theory of the sibling articles.
 
-The article assumes *Smooth Manifolds and Differential Geometry* for manifolds and metrics; *Curvature and Geodesics* and *Riemannian Geometry* for geodesics, curvature, the exponential map, the Gauss–Bonnet theorem and the classification of the space forms; *Pseudo-Riemannian and Lorentzian Geometry* for the hyperboloid model, which is the quadric $H^{1,n}$ of the pseudo-Euclidean space; *Euclidean Geometry* for the comparison; *The Three Two-Dimensional Algebras and the Three Kinds of Rotation* for the split-complex case; and *Matrix Groups and Classical Groups* for $SL(2, \mathbb{R})$, $PSL(2, \mathbb{R})$ and the Möbius transformations. The analytic theory of the boundary, the limit set and the ergodic theory of the geodesic flow belongs to Part III, and it is cited rather than developed. No physics is invoked.
+The article assumes *Smooth Manifolds and Differential Geometry* for manifolds and metrics; *Curvature and Geodesics* and *Riemannian Geometry* for geodesics, curvature, the exponential map, the Gauss–Bonnet theorem and the classification of the space forms; *Pseudo-Riemannian and Lorentzian Geometry* for the quadric space forms, of which the hyperboloid model is the Riemannian member and the Lorentzian hyperboloid $H^{1,n-1}$ the indefinite one; *Euclidean Geometry* for the comparison; *The Three Two-Dimensional Algebras and the Three Kinds of Rotation* for the split-complex case; and *Matrix Groups and Classical Groups* for $SL(2, \mathbb{R})$, $PSL(2, \mathbb{R})$ and the Möbius transformations. The analytic theory of the boundary, the limit set and the ergodic theory of the geodesic flow belongs to Part III, and it is cited rather than developed. No physics is invoked.
 
 ## The Models of Hyperbolic Space
 
@@ -100,18 +100,80 @@ $$
 **Definition.** The **hyperboloid model** of $\mathbb{H}^n$ is the quadric
 
 $$
-\mathcal{H}^n = \{x \in \mathbb{R}^{n+1} : \langle x, x\rangle_{1,n} = -1,\ x_0 > 0\}
+\mathcal{H}^n = \{x \in \mathbb{R}^{n+1} : \langle x, x\rangle_{1,n} = 1,\ x_0 > 0\}
 $$
 
-in the pseudo-Euclidean space $\mathbb{R}^{1,n}$ with $\langle x, x\rangle_{1,n} = x_0^2 - x_1^2 - \cdots - x_n^2$, carrying the induced pseudo-Riemannian metric; the restriction is Riemannian and of constant curvature $-1$. It is the Lorentzian hyperboloid $H^{1,n}$ of *Pseudo-Riemannian and Lorentzian Geometry*.
+in the pseudo-Euclidean space $\mathbb{R}^{1,n}$ with $\langle x, x\rangle_{1,n} = x_0^2 - x_1^2 - \cdots - x_n^2$, for the radius of curvature $1$; for general $R$ the quadric is $\langle x, x\rangle_{1,n} = R^2$. Its points are spacelike, and the positive direction of the form is the normal rather than a tangent direction, so the ambient form is negative definite on $x^\perp$ and its negative restricts to $\mathcal{H}^n$ as a Riemannian metric, complete of constant curvature $-1/R^2$. The companion quadric of the same pencil, $\langle x, x\rangle_{1,n} = -R^2$, is the one-sheeted hyperboloid, whose points are timelike and whose induced metric is indefinite of signature $(1, n-1)$; that member of the family is the Lorentzian hyperboloid $H^{1,n-1}$ of *Pseudo-Riemannian and Lorentzian Geometry*, of which $\mathcal{H}^n$ is the Riemannian counterpart.
 
 **Proposition.** The hyperboloid model is complete with constant curvature $-1$, its isometry group is the group $O(1, n)^+$ of pseudo-orthogonal transformations preserving the upper sheet, and the orthogonal projection to the plane $x_0 = 1$ along the origin gives the **Beltrami–Klein model**, in which geodesics are the chords of the unit ball.
 
-**Proof sketch.** The tangent space at $x \in \mathcal{H}^n$ is $x^\perp$, on which the ambient form is positive definite because $x$ is timelike and the form has signature $(1, n)$; the Gauss equation for the quadric gives $K = -1$. The group $O(1,n)$ acts transitively by isometries and the stabiliser of a point is $O(n)$.
+**Proof sketch.** The tangent space at $x \in \mathcal{H}^n$ is $x^\perp$, on which the ambient form is negative definite because the only positive direction of the form, the $x_0$ axis, is represented at $x$ by the normal $x$ itself and not by a tangent vector; the negative of the restriction is the Riemannian metric, and the Gauss equation for the quadric gives $K = -1$. The group $O(1,n)$ acts transitively by isometries and the stabiliser of a point is $O(n)$.
 
 **Theorem.** The four models are isometric: the upper half-plane, the Poincaré disk, the hyperboloid and the Beltrami–Klein model describe the same connected, complete, simply connected Riemannian manifold of constant sectional curvature $-1$, denoted $\mathbb{H}^n$.
 
 **Proof.** Each is complete, simply connected and of constant curvature $-1$, so each is isometric to the classification model of *Riemannian Geometry*; the explicit maps are the Cayley transform, the stereographic projection to the disk, and the projection from the hyperboloid.
+
+**Weierstrass coordinates.** The quadric may be parametrised by the geodesic polar coordinates of the model itself. Let the hyperboloid have radius of curvature $R$, let $\rho$ be the geodesic distance of a point from the vertex $v = (R, 0, \ldots 0)$, and let $l = (l_1, \ldots, l_n)$ be the unit vector of $\mathbb{R}^n$ that is the direction of the point. The **Weierstrass coordinates** of the point are
+
+$$
+X_0 = R\cosh\frac{\rho}{R},\qquad X_i = R\sinh\frac{\rho}{R}\,l_i,\qquad \sum_{i=1}^n l_i^2 = 1 ,
+$$
+
+and they satisfy $\langle X, X\rangle_{1,n} = R^2$ identically, so they parametrise the hyperboloid by the pair $(\rho, l)$. They are the coordinates in which the quadric is written without the embedding; the point $X$ is the ambient vector and not a chart, and the two are related by the normalisation that fixes the value of the form.
+
+**Proposition.** In Weierstrass coordinates the induced metric of the hyperboloid is
+
+$$
+ds^2 = d\rho^2 + R^2\sinh^2\frac{\rho}{R}\;d\Omega_{n-1}^2 ,
+$$
+
+where $d\Omega_{n-1}^2$ is the round metric of the unit sphere on the direction $l$.
+
+**Proof.** Since $\sum_i l_i^2 = 1$ the direction satisfies $l\cdot dl = 0$ and $|dl|^2 = d\Omega_{n-1}^2$. Differentiating, $dX_0 = \sinh(\rho/R)\,d\rho$ and $dX_i = \cosh(\rho/R)\,l_i\,d\rho + R\sinh(\rho/R)\,dl_i$, whence
+
+$$
+-\langle dX, dX\rangle_{1,n} = \sum_i dX_i^2 - dX_0^2 = \Bigl(\cosh^2\frac{\rho}{R} - \sinh^2\frac{\rho}{R}\Bigr) d\rho^2 + R^2\sinh^2\frac{\rho}{R}\,|dl|^2 ,
+$$
+
+which is the displayed metric.
+
+**Remark (the interchange $R \mapsto iR$).** The same construction on the sphere of radius $R$ has $X_0 = R\cos(\rho/R)$, $X_i = R\sin(\rho/R)\,l_i$ and metric $d\rho^2 + R^2\sin^2(\rho/R)\,d\Omega_{n-1}^2$. The two parametrisations and the two metrics are interchanged by $\rho/R \mapsto i\rho/R$, that is by $R \mapsto iR$ at fixed $\rho$, the hyperbolic functions becoming circular ones; the interchange is the algebraic expression of the change of sign of the ambient form. Both metrics expand as $d\rho^2 + \rho^2\,d\Omega_{n-1}^2$ to leading order, with the first correction of opposite sign,
+
+$$
+R^2\sinh^2\frac{\rho}{R} = \rho^2 + \frac{\rho^4}{3R^2} + \cdots , \qquad R^2\sin^2\frac{\rho}{R} = \rho^2 - \frac{\rho^4}{3R^2} + \cdots ,
+$$
+
+so small geodesic balls recover the Euclidean metric in both geometries and the deviation is measured by $\rho^2/R^2$, with the curvature $-1/R^2$ and $+1/R^2$ as its coefficient.
+
+**The Cayley–Klein metric.** The projection of the upper sheet to the plane $x_0 = R$ along the rays through the origin is the **Beltrami–Klein model**, carried by the open ball $B^n_R$ of radius $R$, in the coordinates $u_i = R\,x_i/x_0$. A geodesic of the hyperboloid is the intersection with a two-plane through the origin, and the projection carries that plane to a line, so the image of the geodesic is a chord of the ball and the geodesics of the model are the chords. The metric that makes the chords geodesics is the **Cayley–Klein metric**, defined projectively by the boundary.
+
+**Definition.** Let $p, q$ be distinct points of the ball $B^n_R$, and let the line through them meet the boundary sphere in the two points $a, b$, ordered so that $a, p, q, b$ occur in this order. The **Cayley–Klein distance** is
+
+$$
+d(p, q) = \frac{R}{2}\left|\log\frac{|pa|\,|qb|}{|pb|\,|qa|}\right| .
+$$
+
+Equivalently, in the coordinates of the ball,
+
+$$
+\cosh\frac{d(p,q)}{R} = \frac{R^2 - p\cdot q}{\sqrt{(R^2 - |p|^2)(R^2 - |q|^2)}} .
+$$
+
+**Proposition.** The Cayley–Klein distance is the distance of the hyperboloid: for the points $x, y$ of the sheet of radius $R$ projecting to $p, q$,
+
+$$
+\cosh\frac{d(p,q)}{R} = \frac{\langle x, y\rangle_{1,n}}{R^2} .
+$$
+
+**Proof.** Write $u_i = R\,x_i/x_0$. Then $|u|^2 = R^2(x_0^2 - R^2)/x_0^2$ because $\langle x,x\rangle_{1,n} = R^2$, so
+
+$$
+R^2 - |u|^2 = \frac{R^4}{x_0^2}, \qquad R^2 - u\cdot v = \frac{R^2\,\langle x, y\rangle_{1,n}}{x_0y_0} ,
+$$
+
+and substituting the two into the right-hand side of the disc formula gives $\langle x, y\rangle_{1,n}/R^2$. The right-hand side is $\ge 1$ by the reversed Cauchy inequality, with equality only for $p = q$, so it is a distance.
+
+**Remark.** The cross-ratio and the disc formula are the two faces of the same quantity, and the identification of the cross-ratio form with the metric is the classical **Cayley–Klein construction**: the boundary sphere is the absolute, and a metric is obtained from the cross-ratio of the points with the absolute. The form is the projective model of hyperbolic geometry, since the geodesics are the straight chords and the isometries are the projective transformations that preserve the absolute; it is the model in which hyperbolic geometry is closest to the Euclidean in appearance and the model in which the geodesics are the easiest to draw, the price being that the metric is not the Euclidean metric of the ball and that the angles are not the Euclidean angles.
 
 ## Geodesics, Ideal Points and Trigonometry
 
@@ -237,7 +299,9 @@ $$
 
 ## Summary
 
-Hyperbolic $n$-space is the complete simply connected Riemannian manifold of constant sectional curvature $-1$. It is realised by four isometric models: the upper half-plane or half-space with the metric $y^{-2}\sum dx_i^2$, the Poincaré disk with the metric $4|dz|^2/(1-|z|^2)^2$, the hyperboloid $\{x : \langle x,x\rangle_{1,n} = -1,\ x_0>0\}$ in pseudo-Euclidean space, and its Beltrami–Klein projective image. The geodesics are the lines and semicircles orthogonal to the boundary in the half-plane model, the diameters and orthogonal arcs in the disk, and the chords in the Beltrami–Klein model; the distance is given by the cross-ratio and by the formula $\cosh d(z,w) = 1 + |z-w|^2/(2\operatorname{Im}z\operatorname{Im}w)$.
+Hyperbolic $n$-space is the complete simply connected Riemannian manifold of constant sectional curvature $-1$. It is realised by four isometric models: the upper half-plane or half-space with the metric $y^{-2}\sum dx_i^2$, the Poincaré disk with the metric $4|dz|^2/(1-|z|^2)^2$, the hyperboloid $\{x : \langle x,x\rangle_{1,n} = 1,\ x_0>0\}$ in pseudo-Euclidean space, and its Beltrami–Klein projective image. The geodesics are the lines and semicircles orthogonal to the boundary in the half-plane model, the diameters and orthogonal arcs in the disk, and the chords in the Beltrami–Klein model; the distance is given by the cross-ratio and by the formula $\cosh d(z,w) = 1 + |z-w|^2/(2\operatorname{Im}z\operatorname{Im}w)$.
+
+The hyperboloid of radius $R$ is parametrised by its **Weierstrass coordinates** $X_0 = R\cosh(\rho/R)$, $X_i = R\sinh(\rho/R)l_i$, in which the metric reads $d\rho^2 + R^2\sinh^2(\rho/R)\,d\Omega_{n-1}^2$ and the curvature appears as the sign of the $\rho^4/3R^2$ correction to the Euclidean metric of a small geodesic ball; the spherical counterpart follows by $R \mapsto iR$, the hyperbolic functions becoming circular. The Beltrami–Klein ball carries the **Cayley–Klein metric**, whose distance is the cross-ratio of the two points with the two boundary points of their chord, equivalently $\cosh(d/R) = (R^2 - p\cdot q)/\sqrt{(R^2-|p|^2)(R^2-|q|^2)}$, and this is the hyperbolic distance because it equals $\langle x,y\rangle_{1,n}/R^2$ for the two points of the hyperboloid that project to $p$ and $q$.
 
 The angles of a hyperbolic triangle sum to $\pi$ minus its area, the area is the defect, and the trigonometric laws are the spherical laws with the circular functions replaced by the hyperbolic ones: $\cosh c = \cosh a\cosh b - \sinh a\sinh b\cos C$, and $\sinh a/\sin A$ is constant. Small triangles recover Euclidean trigonometry, the deviation being measured by the area. The angle of parallelism satisfies $\tan(\Pi(d)/2) = e^{-d}$, decaying exponentially, so through a point outside a line there are infinitely many parallels, two asymptotic rays and an open set of directions between them.
 
@@ -264,7 +328,14 @@ The orientation-preserving isometry group is $PSL(2, \mathbb{R})$ in dimension t
 | Fuchsian, Kleinian group | Discrete subgroup of $PSL(2,\mathbb{R})$, of $PSL(2,\mathbb{C})$ |
 | $\mathbb{H}^n/\Gamma$ | Complete hyperbolic manifold; $\Gamma \cong \pi_1$ |
 | Mostow rigidity | $\dim \geq 3$, finite volume: homotopy equivalent implies isometric |
-| $\mathcal{H}^n = H^{1,n}$ | Hyperboloid model in $\mathbb{R}^{1,n}$ |
+| $\mathcal{H}^n$ | Hyperboloid model: the quadric $\langle x,x\rangle_{1,n}=1$, $x_0>0$, in $\mathbb{R}^{1,n}$ |
+| $X_0 = R\cosh(\rho/R)$, $X_i = R\sinh(\rho/R)l_i$ | Weierstrass coordinates on the hyperboloid of radius $R$ |
+| $ds^2 = d\rho^2 + R^2\sinh^2(\rho/R)\,d\Omega_{n-1}^2$ | Hyperboloid metric in Weierstrass coordinates |
+| $R \mapsto iR$ | Interchange of the hyperbolic and the spherical parametrisation and metric |
+| $B^n_R$ | Beltrami–Klein ball of radius $R$, the projective model |
+| $d(p,q) = \frac{R}{2}\left\lvert\log\frac{\lvert pa\rvert\,\lvert qb\rvert}{\lvert pb\rvert\,\lvert qa\rvert}\right\rvert$ | Cayley–Klein distance, as a cross-ratio with the boundary points $a,b$ |
+| $\cosh\frac{d(p,q)}{R} = \frac{R^2 - p\cdot q}{\sqrt{(R^2-\lvert p\rvert^2)(R^2-\lvert q\rvert^2)}}$ | Cayley–Klein distance in the coordinates of the ball |
+| $\cosh\frac{d}{R} = \frac{\langle x,y\rangle_{1,n}}{R^2}$ | The same distance on the hyperboloid |
 
 
 
@@ -273,6 +344,9 @@ The orientation-preserving isometry group is $PSL(2, \mathbb{R})$ in dimension t
 ## Further Reading
 
 - John G. Ratcliffe, *Foundations of Hyperbolic Manifolds*, 2nd ed. (Springer, 2006), for the models, the isometry groups and the space forms.
+- John Stillwell, *Sources of Hyperbolic Geometry* (American Mathematical Society and London Mathematical Society, 1996), for the original papers of Beltrami and Klein with commentary, and for the Cayley–Klein construction.
+- William F. Reynolds, "Hyperbolic geometry on a hyperboloid", *American Mathematical Monthly* **100** (1993), 442–455, for the Weierstrass coordinates and the hyperboloid model.
+- D. M. Y. Sommerville, *The Elements of Non-Euclidean Geometry* (Bell, 1914; Dover, 2005), for the Cayley–Klein metric and the Weierstrass coordinates in the classical notation.
 - James W. Anderson, *Hyperbolic Geometry*, 2nd ed. (Springer, 2005), for an elementary development of the models and trigonometry.
 - Alan F. Beardon, *The Geometry of Discrete Groups* (Springer, 1983), for Möbius transformations, Fuchsian groups and their classification.
 - D. B. A. Epstein and A. Marden, "Convex hulls in hyperbolic space, a theorem of Sullivan, and measured pleated surfaces", in *Analytical and Geometric Aspects of Hyperbolic Space* (Cambridge University Press, 1987), for the boundary theory.

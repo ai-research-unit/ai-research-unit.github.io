@@ -276,6 +276,21 @@ The reason the neutrino appears in this article at all is that it is the fermion
 | The material/informational split as the Majorana reality condition | **Not supplied**; it obstructs, as shown above |
 | Whether the neutrino is Dirac or Majorana | **Not decided** by the framework |
 | The neutrino mass value, the see-saw, mixing, and the Majorana phases | **Outside** |
+| Majorana spinors as boundary states of a time-like surface in three-dimensional quantum gravity | **Not supplied**; external, cited below |
+
+## Majorana Spinors in a Geometric Setting Outside the Framework
+
+The Majorana spinor is treated in this article as the carrier of a fermion. It also has a modern **geometric** use, external to the framework, in which a pair of Majorana spinors models a surface in three-dimensional Minkowski space; the use is worth recording because it shows the pair — not a single Weyl spinor — in a role where its real structure is what makes the geometry work.
+
+The setting is the spinfoam boundary of three-dimensional Lorentzian quantum gravity. A boundary triangle is labelled by a holonomy whose group depends on causal character: $SU(2)$ when the triangle and its tetrahedron are space-like, and $SU(1,1)\cong SL(2,\mathbb{R})\cong Sp(2,\mathbb{R})$ — the double cover of $SO(1,2)$, and the oscillator's dynamical group — in the two time-like cases. The external paper cited below models the three homogeneous spaces of these groups on spinors of the defining module with the indefinite pairing $[u|v]=u^{\dagger}\sigma_3v$:
+
+- the sphere $S^2$, from one Weyl spinor, $v^i=\langle z|\sigma^i|z\rangle$;
+- the two-sheeted time-like hyperboloid $H^\pm$, from one Weyl spinor with the indefinite pairing, $v^i=\tfrac12\langle z|\sigma_3\varsigma^i|z\rangle$;
+- the one-sheeted hyperboloid $H^{sl}$, from a **pair** of Majorana spinors, $v^i=\langle z_2|\sigma_3\varsigma^i|z_1\rangle$, with a real structure that commutes with $SU(1,1)$ taking the place of the complex conjugation of the other two cases.
+
+Two points connect this to the present article. First, the operation that appears here is the *same kind* of object as the module real structure $\mathcal{C}$ of the preceding sections — a conjugate-linear involution used to select a real form of a complex module — although it acts on the indefinite form rather than on the Dirac module, and it is required to commute with $SU(1,1)$ rather than with the full Clifford action. Second, the reason the one-sheeted case needs a *pair* is stated in the paper as a sign statement: a single Weyl spinor with either pairing forces one sign of the area spectrum, and only the pair carries the sign that a time-like surface requires. That is the same style of argument as the one used above for the Majorana mass, where it is the reality of the mass term, not the geometry, that selects the conjugate-linear structure.
+
+None of this is derived by the framework. The hyperboloid models are a standard-theory result, the group $SU(1,1)$ appears here only as a subgroup of the rotor group and as the oscillator's dynamical group, and nothing in the preceding sections is changed by the citation. It is recorded because it is the one place outside the particle-physics literature where the Majorana pair is put to a geometric use, and because the surface it models — the time-like boundary — is exactly the case the framework's own two-sided rotor action is built for.
 
 ## Open Questions
 
@@ -298,6 +313,8 @@ A Dirac fermion is an arbitrary element of $\Delta=S\oplus\bar{S}$, with indepen
 The charge conjugation of the Dirac module was constructed explicitly in the block (chiral) basis with $g=\mathrm{diag}(+,-,-,-)$: the matrix $C=i\gamma^2\gamma^0$ satisfies $C\gamma^{\mu T}C^{-1}=-\gamma^\mu$ and defines an antilinear involution $\psi^{c}=K\psi^{*}$, $K=C\gamma^{0T}$, with $KK^{*}=I_4$ and $K\gamma^{\mu*}K^{-1}=-\gamma^\mu$. The last identity is what makes the Majorana constraint $\psi^{c}=\psi$ consistent with the massive equation $i\gamma^\mu\partial_\mu\psi=m\psi^{c}$, rather than merely imposed on it: the constraint is propagated, and a massive plane wave exists for every $m>0$. The vector current vanishes for a self-conjugate Grassmann field and the scalar and axial bilinears survive; those statements are properties of the anticommuting field, and a commuting c-number computation gives the opposite pattern.
 
 In the biquaternion framework the charge conjugation is the real structure carried by the **coefficient complex conjugation** ${}^{*}$, the only one of the algebra's conjugations that is a conjugate-linear automorphism, with fixed points $\mathbb{H}_{\mathbb{B}}$; the Hermitian conjugate and the real structure $\flat$ are order-reversing and cannot serve as module real structures. The material/informational split is the algebra's decomposition by $\dagger$, and although $\mathbb{M}_-$ is the four-real-dimensional fixed space of the real structure $\flat$ and superficially matches the Majorana count, the Dirac operator does not preserve it ($e_1\in\mathbb{M}_-$ but $e_1e_1=-e_0\in\mathbb{M}_+$). The sector split therefore obstructs the reality condition and cannot be used as it stands; the Majorana real form lives on the spinor module, not on a subspace of the algebra. Finally, the left-handedness of the neutrino under the weak interaction is empirical input, the real structure $\flat$ carries a genuinely antilinear Majorana-type pairing that is compatible with but does not derive a Majorana neutrino, while the parent's own mass term is linear and conserves fermion number; the mass value and its consequences are outside the algebra.
+
+Separately from this particle reading, the Majorana pair has a **geometric** use external to the framework: a pair of Majorana spinors with a real structure commuting with $SU(1,1)$ models a time-like surface of three-dimensional quantum gravity, and a sign of the area spectrum is what forces the pair rather than a single Weyl spinor. That construction is a standard-theory result; the framework does not derive it, and the citation changes nothing above it.
 
 ## Summary of Notation
 
@@ -330,6 +347,8 @@ In the biquaternion framework the charge conjugation is the real structure carri
 | $\dim_{\mathbb{R}}\{\psi:\psi^{c}=\psi\}=4$ | Majorana component count |
 | $c=1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |
 | $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ | Trace pairing of the informational sector |
+| $[u|v]=u^{\dagger}\sigma_3v$ | Indefinite $SU(1,1)$-invariant pairing (external geometric usage) |
+| $v^i=\langle z_2|\sigma_3\varsigma^i|z_1\rangle$ | Majorana-pair bilinear modelling the one-sheeted hyperboloid $H^{sl}$ |
 
 ## Further Reading
 
@@ -339,4 +358,5 @@ In the biquaternion framework the charge conjugation is the real structure carri
 - Rabindra N. Mohapatra and Palash B. Pal, *Massive Neutrinos in Physics and Astrophysics* (World Scientific, 2004), for the Dirac/Majorana distinction, the see-saw mechanism, and neutrinoless double beta decay.
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the classification of real structures on spinor modules by signature.
 - Chris Doran and Anthony Lasenby, *Geometric Algebra for Physicists* (Cambridge, 2003), for the relation between spinors, the charge-conjugation operation, and the Lorentz group in a real Clifford algebra.
+- J. D. Simão, "Biquaternions, Majorana spinors and time-like spin-foams," arXiv:2401.10324 [gr-qc] (2024), for the geometric use of a *pair* of Majorana spinors modelling a time-like surface in three-dimensional quantum gravity, with a real structure commuting with $SU(1,1)$ and the area-spectrum sign argument that distinguishes the pair from a single Weyl spinor. External; cited for the geometric use only.
 - Companion articles: *The Spinor Module in Biquaternionic Form and Its Lorentz Action*; *The Dirac Equation in Biquaternionic Form*; *Chiral Fermions in the Biquaternion Framework*; *Exercise: Chirality and the Weyl Spinors*; *The Electron in Biquaternionic Form*; *Canonical Quantization of the Biquaternion Dirac Field*; *The Gauge Principle in Biquaternionic Form*; *The Spin–Statistics Theorem in Biquaternionic Form*; *Spinors*; *Spinors categorization*; *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*; *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*; *Introduction to the Biquaternion Universe*.

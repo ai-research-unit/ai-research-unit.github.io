@@ -134,6 +134,62 @@ Three hypotheses must be emphasised: the formula holds on the **quaternion subsp
 
 **Physical reading: a field from its boundary values.** The Cauchy formula says that a regular field inside a region is fixed by its values on the boundary. That is the field-theoretic statement that the free field has no independent bulk degrees of freedom: the initial or boundary data determine the interior, which is why a massless field can be quantised from boundary modes. The formula holds on $\mathbb{H}_{\mathbb{B}}$ and not on the material slice, and the reason is physical as much as analytic: on the material slice the operator is hyperbolic, and a hyperbolic equation is fixed by **initial** data on a spacelike surface rather than by data on an enclosing boundary of arbitrary shape.
 
+## The Shifted Operator and a Biquaternionic Parameter
+
+The theory above is the theory of $\tilde{\nabla}$, the operator obtained by letting the units differentiate. It has a **shift**, and the shift is the theory that problems with a boundary condition need. The definition is
+
+$$
+D_\alpha = D + M_\alpha ,
+$$
+
+where $D$ is the spatial Moisil–Teodoresco operator in the normalisation in which it is a square root of the Laplacian,
+
+$$
+D = i\sum_{k=1}^{3} e_k\partial_k, \qquad D^2 = \Delta ,
+$$
+
+and $M_\alpha$ is **right multiplication** by $\alpha\in\mathbb{B}$. A function $f$ with $D_\alpha f = 0$ is **$\alpha$-hyperholomorphic**. The essential difference from the central shift $\tilde{\nabla}_\kappa = \tilde{\nabla} + \kappa$ is that $\alpha$ is an arbitrary element of the algebra: it may be a zero divisor, its square need not be a scalar, and it need not commute with the units. The shifted theory is therefore a genuinely larger object than a Helmholtz shift, and it is the general case the source develops.
+
+**The scalar case is the Helmholtz shift.** For $\alpha$ a scalar the operator is the shift already used in *Electromagnetism in Media: The Local Complex Structure at Work*, whose $D_{3\alpha} = D_3 + \alpha$ with $D_3 = \sum_k e_k\partial_k$ has $\Delta+\alpha^2$ as its scalar second-order companion and the kernel $\Theta_\alpha = -e^{i\alpha|x|}/(4\pi|x|)$. The two normalisations differ by the factor $i$, $D = iD_3$, so $D_\alpha = i(D_3 - i\alpha)$; the identification of the two parameters is a matter of convention and should be checked against the source before it is used numerically. The scalar case is the classical Helmholtz operator; the non-scalar case is what the algebra adds.
+
+**The vector case: a non-scalar parameter with a scalar companion.** A parameter need not be scalar to give a *scalar* second-order companion. For a pure vector $\mathbf k = k_1e_1+k_2e_2+k_3e_3$ one has $\mathbf k^2 = -\mathbf k\cdot\mathbf k\, e_0$, central, so $M_{\mathbf k}^2 = -\lvert\mathbf k\rvert^2 I$ and $M_{i\mathbf k}^2 = +\lvert\mathbf k\rvert^2 I$; and because $\mathbf k$ is **constant**, right multiplication by it commutes with $D_3$. Hence
+
+$$
+(D_3+M_{\mathbf k})(D_3-M_{\mathbf k})=(D_3-M_{\mathbf k})(D_3+M_{\mathbf k})=-\Delta+\lvert\mathbf k\rvert^2,
+$$
+
+$$
+(D_3+M_{i\mathbf k})(D_3-M_{i\mathbf k})=(D_3-M_{i\mathbf k})(D_3+M_{i\mathbf k})=-\Delta-\lvert\mathbf k\rvert^2,
+$$
+
+the second being the first with $\mathbf k\mapsto i\mathbf k$. So a shift by a **real** vector has the Klein–Gordon-type companion $-\Delta+\lvert\mathbf k\rvert^2$ — the sign inside opposite to the scalar branch's $\Delta+\alpha^2$ — whereas a shift by an **imaginary** vector reproduces that branch's Helmholtz companion $\Delta+\lvert\mathbf k\rvert^2$ with $\alpha=\lvert\mathbf k\rvert$. In both lines the two orderings agree, but not because the parameter is a vector: they agree because it is *constant*, so that $D_3M_\alpha = M_\alpha D_3$ for any constant $\alpha$. The asymmetry of the two one-sided multiplications appears instead under the **plane-wave substitution** $u = e^{i\mathbf k\cdot x}v$, where, with $M_{\mathbf k}$ right multiplication and $M^{\mathbf k}$ left multiplication,
+
+$$
+(D_3+M_{i\mathbf k})\bigl(e^{i\mathbf k\cdot x}v\bigr)=e^{i\mathbf k\cdot x}\bigl(D_3v+i(\mathbf k v+v\mathbf k)\bigr),
+$$
+
+and $\mathbf k v+v\mathbf k$ collapses to the pure scalar $-2\,\mathbf k\cdot v$ only when $v$ is a **vector**; for a general quaternion-valued $v$ the two products do not combine, so the substitution is not the plain transport $D_3v$ of the vector case. This is why a scattering problem is posed on the vector shift and why the quaternionic and the vector readings of one operator differ; the scattering problem itself is *Scattering for the Quaternionic Dirac Operator*. **Dictionary.** In the source (S. Bernstein, *Seeing the Invisible and Maxwell's Equations*) the operator is written $D = \sum_k e_k\partial_k$, which is this article's $D_3$ and **not** the corpus's $D = iD_3$; its $M_k$ is the right multiplication $M_{\mathbf k}$, its $M^k$ the left one, and its $k$ a vector biquaternion, a zero divisor exactly when $\mathbf k$ is isotropic. The factor $i$ must be restored before the source's companions are compared with the ones above, as in the scalar branch.
+
+**Three branches, and why.** The integral operators of the theory — the Teodorescu transform $T_\alpha$, the Cauchy-type operator $K_\alpha$ and the operator of singular integration $S_\alpha$ — are defined for every $\alpha\in\mathbb{B}$, but their formulas differ in three cases: $\alpha$ not a zero divisor; $\alpha$ a zero divisor with $\alpha_0\neq0$; and $\alpha$ a zero divisor with $\alpha_0 = 0$. The reason is the degeneracy of the previous section: the kernel is built by inverting the symbol, and on the zero-divisor set the symbol has no inverse. The parameter of a shifted theory is thus itself an object on which the algebra's degeneracy acts — the *parameter* can be singular, not only the variable.
+
+**The four theorems for $D_\alpha$.** With $T_\alpha$, $K_\alpha$ and $S_\alpha$ so defined, the Borel–Pompeiu formula, the Cauchy integral formula, the Plemelj–Sokhotski formulas, the involutiveness $S_\alpha^2 = I$, the Cauchy integral theorem and the Morera theorem hold in the same shapes as in the unshifted theory, with the parameter-dependent kernels in the statements; the domain of validity is a domain with Liapunov boundary and Hölder data rather than the quaternion subspace $\mathbb{H}_{\mathbb{B}}$.
+
+**Boundary-value criterion.** The sharpest of the statements characterises the boundary values themselves: a Hölder function $f$ on the boundary $\Gamma$ of a domain is the boundary value of a solution of $D_\alpha g = 0$ in that domain **if and only if**
+
+$$
+P_\alpha f = f \ \text{ on } \Gamma, \qquad P_\alpha = \tfrac12 (I + S_\alpha),
+$$
+
+and in that case the solution is $g = K_\alpha f$. This is the homogeneous companion of the inhomogeneous solvability criterion $Q_\alpha v = T_\alpha g$ for $D_\alpha f = g$, $f|_\Gamma = v$ quoted in *Electromagnetism in Media: The Local Complex Structure at Work*. Where the inhomogeneous criterion decides whether prescribed data can be matched by some solution with a source, this one decides whether prescribed data are the trace of a solution of the homogeneous equation — which is exactly what a boundary condition alone gives. The criterion is therefore what turns an operator boundary condition into a solvability condition, and the instance worked out in the corpus is the bag model (*Confinement and the Loss of Partonic Information in Biquaternionic Form*), whose driver, the time-harmonic massive Dirac field, is the subject of *The Dirac Equation in Biquaternionic Form*.
+
+**Physical reading: the mass shell as a nilpotent parameter.** The parameter of a shifted equation can be *pure*, $\alpha_0 = 0$, and then the criterion of *Biquaternion Zero Divisors* applies verbatim: a pure element is a zero divisor if and only if its norm vanishes, and then its square is zero. The instance is the bag. There the parameter is $\alpha = -(i\omega e_1 + m e_2)$, whose norm is
+
+$$
+N(\alpha) = m^2 - \omega^2 ,
+$$
+
+so $\alpha$ is a zero divisor, indeed a **nilpotent** with $\alpha^2 = 0$, exactly on the mass shell $\omega^2 = m^2$. The physical on-shell condition and the algebraic degeneration of the parameter are one equation, not two: a massive field's frequency lies on the mass shell exactly when the shift that carries its mass is a nilpotent of the algebra. This is the parameter-space counterpart of the field statements of *Zero Divisors as a Physical Locus in Biquaternionic Form* — there the field's momentum is null on the light cone, here the operator's parameter is nilpotent on the mass shell — and it also explains why the bag's reduction lands in the third branch above, $\alpha$ a zero divisor with $\alpha_0 = 0$.
+
 ## Where the Complex Analogy Fails: Zero Divisors and the Null Cone
 
 The complex theory rests on $\mathbb{C}$ being a field. In the biquaternion algebra this fails, and every consequence below is traceable to the zero divisors.
@@ -176,6 +232,8 @@ Two notions of regularity must be kept apart. **Single-plane holomorphy** takes 
 
 The integral theory is complete on the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, where the algebra is a division ring: the Cauchy integral formula holds there with fundamental solution $\tilde{\nabla}\tilde{G} = -2\pi^2\delta_0 e_0$, and the mean value property, maximum principle, Liouville theorem, identity theorem, Cauchy estimates and residue theory follow. Everything that fails elsewhere fails through the zero divisors: on $\mathbb{M}_\pm$ and on the full algebra the identity $\bar{\tilde{Q}}\tilde{Q} = \|\tilde{Q}\|_E^2 e_0$ fails, the principal symbol degenerates on the null cone — the light cone — the system is hyperbolic rather than elliptic, and no Cauchy formula may be asserted. The naive inverse $\tilde{Q}^{-1} = \bar{\tilde{Q}}/N(\tilde{Q})$ fails in two ways: on the full algebra it is undefined on the positive-dimensional null cone, and even on $\mathbb{H}_{\mathbb{B}}$, where it exists, it is not regular, the correct kernel in four variables being fixed by the homogeneity $1 - 4 = -3$ rather than the two-dimensional exponent.
 
+The shifted operator $D_\alpha = D + M_\alpha$, with $D = i\sum_k e_k\partial_k$ and $M_\alpha$ right multiplication by an arbitrary $\alpha\in\mathbb{B}$, extends the theory to the equations that carry a mass or a wave number. For a scalar parameter it is the Helmholtz shift $D_{3\alpha} = D_3+\alpha$ with $D_3 = \sum_k e_k\partial_k$ and the kernel $\Theta_\alpha = -e^{i\alpha|x|}/(4\pi|x|)$, already used in the chiral-media article. A vector parameter is the intermediate case: being constant it commutes with $D_3$, so both orderings agree and the shift by a real vector has the scalar companion $-\Delta+\lvert\mathbf k\rvert^2$ while the shift by an imaginary vector has the Helmholtz companion $-\Delta-\lvert\mathbf k\rvert^2$; the asymmetry of the two one-sided multiplications appears instead in the plane-wave substitution, where $\mathbf k v+v\mathbf k$ collapses only for vector-valued $v$. For a general parameter the shift is genuinely non-scalar and the theory is the source's. Its integral operators $T_\alpha$, $K_\alpha$ and $S_\alpha$ obey the same four theorems as the unshifted theory — Borel–Pompeiu, Cauchy, Plemelj–Sokhotski, involutiveness — but their formulas branch according to whether $\alpha$ is a unit, a zero divisor with nonzero scalar part, or a zero divisor with vanishing scalar part, because the kernel is built by inverting the symbol. The sharpest statement is the boundary-value criterion: a Hölder function $f$ on $\Gamma$ is the trace of a solution of $D_\alpha g = 0$ in the domain if and only if $P_\alpha f = f$ on $\Gamma$, with $P_\alpha = \tfrac12(I+S_\alpha)$, and then the solution is $K_\alpha f$. Because the bag model's parameter $\alpha = -(i\omega e_1+me_2)$ is pure with $N(\alpha) = m^2-\omega^2$, the parameter of that shifted equation is a nilpotent, $\alpha^2 = 0$, exactly on the mass shell.
+
 Restricting to real quaternion-valued functions recovers Fueter's quaternionic analysis, where the analogous theory is complete because $\mathbb{H}$ is a division algebra, and the general framework is Clifford analysis on $\mathrm{Cl}_{1,3}^{+}$; the Fueter–Sce construction converts slice-regular data of one complex variable into monogenic functions of four real variables.
 
 ## Summary of Notation
@@ -194,6 +252,13 @@ Restricting to real quaternion-valued functions recovers Fueter's quaternionic a
 | $\|\tilde{Q}\|_E$ | Euclidean norm on $\mathbb{B} \cong \mathbb{R}^8$ |
 | $\mathcal{Z}$ | Zero divisor set, a complex cone of real dimension $6$; the light cone on the material slice |
 | $\mathbb{H}_{\mathbb{B}}$ | Real-quaternion subspace, a division ring; the domain of the integral theory |
+| $D = i\sum_k e_k\partial_k$ | Spatial Moisil–Teodoresco operator; $D^2 = \Delta$ |
+| $D_3 = \sum_k e_k\partial_k$ | The other square root of the Laplacian, $D_3 = -iD$, $D_3^2 = -\Delta$; the normalisation of the scalar and vector branches |
+| $M_\alpha$ | Right multiplication by $\alpha\in\mathbb{B}$ |
+| $M_{\mathbf k}$, $M^{\mathbf k}$ | Right and left multiplication by the vector $\mathbf k$; a constant vector parameter is a zero divisor exactly when $\mathbf k$ is isotropic |
+| $D_\alpha = D + M_\alpha$ | Shifted operator; its solutions are the $\alpha$-hyperholomorphic functions |
+| $T_\alpha$, $K_\alpha$, $S_\alpha$ | Teodorescu transform, Cauchy-type operator and operator of singular integration for $D_\alpha$ |
+| $P_\alpha = \tfrac12(I + S_\alpha)$ | Boundary projector; the boundary-value criterion is $P_\alpha f = f$ on $\Gamma$ |
 
 ## Further Reading
 
@@ -202,3 +267,6 @@ Restricting to real quaternion-valued functions recovers Fueter's quaternionic a
 - F. Brackx, R. Delanghe and F. Sommen, *Clifford Analysis*, Research Notes in Mathematics 76 (Pitman, 1982), for monogenic functions and the Cauchy kernel.
 - R. Delanghe, F. Sommen and V. Souček, *Clifford Algebra and Spinor-Valued Functions* (Kluwer, 1992), for monogenic functions and harmonicity.
 - G. Gentili, C. Stoppato and D. C. Struppa, *Regular Functions of a Quaternionic Variable* (Springer, 2013), for slice regularity and the Fueter–Sce construction.
+- V. V. Kravchenko and M. V. Shapiro, *Integral Representations for Spatial Models of Mathematical Physics*, Pitman Research Notes in Mathematics 351 (Addison-Wesley Longman, 1996), for the Teodorescu transform, the Cauchy-type operator and the singular integral operator with a biquaternionic parameter, for the Borel–Pompeiu and Plemelj–Sokhotski formulas in that setting, and for the boundary-value criterion $P_\alpha f = f$.
+- V. V. Kravchenko, "On a Biquaternionic Bag Model," *Zeitschrift für Analysis und ihre Anwendungen* **14** (1995), no. 1, 3–14, DOI 10.4171/ZAA/658, for an application of the shifted operator: the linear bag model reduced to the boundary equation $P_\alpha\tilde{p} = S^+\tilde{p}$, with the parameter $\alpha = -(i\omega e_1+me_2)$ that becomes a nilpotent on the mass shell.
+- Swanhild Bernstein, "Seeing the Invisible and Maxwell's Equations", chapter, DOI 10.1007/978-3-0348-0603-9_13 (2013), for the two one-sided multiplications $M_k$ (right) and $M^k$ (left) by a vector parameter, the two factorisations with a vector and an imaginary vector parameter and their scalar companions $-\Delta+\lvert\mathbf k\rvert^2$ and $-\Delta-\lvert\mathbf k\rvert^2$, and the plane-wave substitution $u=e^{i\mathbf k\cdot x}v$, whose behaviour distinguishes vector-valued from general quaternion-valued $v$. This is a *scattering* paper; it is **not** the "Bernstein (1996)" or the "Bernstein–Gürlebeck (1999)" of the electric-media article, which are separate papers by the same author on the Riccati form of the factorisation. Its scattering theory is the subject of *Scattering for the Quaternionic Dirac Operator*.

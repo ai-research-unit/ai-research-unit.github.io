@@ -138,6 +138,30 @@ Three further distinctions belong here, because the framework has several conser
 - **Electric charge versus the $\mathrm{SU}(2)$ generators.** As above, these are real-spectrum (after multiplication by $i$) but half-integer-valued; they are isospin-like, not electric.
 - **Electric charge versus baryon number.** The framework supplies no baryon-number current, no conserved fermion number beyond the central phase, and no composite quantum number at all. The framework's own mass term is the linear chiral pair, through which the continuous central phase passes, so the proton's electric charge is conserved by the massive free equation; what remains open is a separate conjugate pairing built on the algebra's real structure $\flat$, the real-form question of the chiral-fermion article. The framework still does not supply baryon number, and that gap is inherited, not resolved here.
 
+## The Isospin Partner, and Why It Is Not in This Equation
+
+The equation of this article carries one field, and the proton–neutron near-degeneracy is nowhere in it. There is a second way to place a spin-$\tfrac12$ fermion in the algebra, however, and there the pair *is* structural. In Lanczos's doubled system
+
+$$
+\tilde{\nabla}\tilde{A}=m\tilde{B}, \qquad \tilde{\nabla}\tilde{B}=m\tilde{A},
+$$
+
+one takes the two idempotent superpositions of the companion articles, with $\sigma$ the idempotent along a unit vector $\vec{\nu}$, $\bar{\sigma}$ its conjugate, and $\vec{\tau}$ any unit vector orthogonal to it:
+
+$$
+D=\tilde{A}\sigma+\tilde{B}^{*}\bar{\sigma}, \qquad N=\left(\tilde{A}\bar{\sigma}-\tilde{B}^{*}\sigma\right)i\vec{\tau}.
+$$
+
+These are Gürsey's proton and neutron. Both descend from the one system with the one mass parameter $m$, so they have **equal mass by construction**; the relative sign and the factor $i\vec{\tau}$ place them in orthogonal isospin directions, so they carry different charge. The transformations that preserve both superpositions form a two-parameter group, found by Nishijima in a different context,
+
+$$
+G_N=\sigma\,e^{i\alpha}+\bar{\sigma}\,e^{i\beta}, \qquad \bar{\sigma}=e_0-\sigma,
+$$
+
+under which $D\mapsto e^{-\vec{\nu}\alpha}D$ and $N\mapsto e^{-\vec{\nu}\beta}N$: two independent phases, hence two particles of equal mass and different electric charge. The source's reading is that Lanczos's "doubling" of the spin-$\tfrac12$ field was isospin in 1929, three decades early.
+
+The corpus's own position is not overturned by this, and it becomes sharper. The isospin of the doubled system is **not** the material sector's $\mathrm{SU}(2)$: it acts by *right* multiplication on the two biquaternions $\tilde{A}$, $\tilde{B}$ of the doubled field, whereas the rotation and gauge $\mathrm{SU}(2)$ of the previous section acts on the algebra's own module by left multiplication and commutator. The corpus's refusal to identify flavour isospin with that $\mathrm{SU}(2)$ therefore stands unchanged. What the doubled route shows is that the near-degeneracy need not be imported *if* the two particles are taken as the two superpositions of one Lanczos pair — at the price of doubling the field and of a mass parameter the algebra still does not fix. In the single-field equation used here, the pair must be inserted; that is the choice this article makes, and the doubling is the alternative.
+
 ## What the Framework Does Not Supply: Compositeness and Colour
 
 The proton is not an elementary field in nature; it is a bound state. Nothing in the biquaternion framework represents that, and the omission is not a gap with a known route.
@@ -192,7 +216,7 @@ The table sorts the proton's properties by the status they have in the framework
 
 5. **Does the framework's own mass violate the charge it relies on?** No: the framework's mass term is the linear chiral pair, through which the continuous central phase passes, so the massive free equation conserves the proton's charge. The reading the chiral-fermion article leaves open concerns a separate conjugate pairing on the algebra's real structure $\flat$, a neutral-fermion coupling that does not enter the charged proton's mass. The live question is therefore whether that separate pairing exists physically, not whether the proton's charge survives its own mass.
 
-6. **Baryon number.** Nothing in the framework distinguishes the proton's conserved fermion number from the electron's. Is there any framework object that could carry baryon number, given that the algebra's abelian charge is the electromagnetic-type $U(1)$ and no composite quantum number is constructed?
+6. **Baryon number.** Nothing in the framework distinguishes the proton's conserved fermion number from the electron's. Is there any framework object that could carry baryon number, given that the algebra's abelian charge is the electromagnetic-type $U(1)$ and no composite quantum number is constructed? **One external claim bears on this**, and it is recorded here because it is the only one the corpus knows: Gsponer and Hurni (*Lanczos's Equation to Replace Dirac's Equation?*, Lanczos centenary, 1994; arXiv:hep-ph/0112317) report that the Einstein–Mayer generalized-mass system classifies its solutions into two families — quarks and leptons — carrying the correct fractional and integral electric charges **and baryonic charge**, with the neutrino and the u-quark masses zero by eigenvalue equations. Three things should be said about it. It is a four-page conference abstract with no derivation exhibited, so it is a claim and not a result, and the present article's "not constructed" status stands. It **does** give baryon number an abelian current of its own, which is more than a place in the classification of solutions: the Einstein–Mayer Lagrangian carries the **barycharge current** $S = AEA^{+} + BEB^{+}$, conserved and invariant exactly under those abelian gauge transformations that commute with the generalized mass $E$ — the abelian part of the Nishijima group, "which contains the electric and baryonic gauge groups" — alongside the probability current $C = AA^{+} + BB^{+}$, which is invariant under any non-abelian unitary gauge of $A$ or $B$. And it does not settle whether the assignment is forced: the *Note added in 1996* attached to the arXiv version states that the Nishigima-group restriction used to fix the charges is "not sufficient to set the correct fractional or integral electric and baryonic charges of the quarks and leptons". The source is therefore a pointer with its own retraction attached, and the corpus records the current, the claim, and the retraction together.
 
 7. **Empirical contact.** As everywhere in the framework, the unresolved question is whether any of this yields a prediction distinguishing it from standard physics. The construction above is a reformulation, and a reformulation that must import the proton's mass, charge and compositeness has no prospect of doing so.
 
@@ -260,3 +284,7 @@ What the framework does not supply is everything that makes the proton a proton.
 
 - *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector* and *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector* — the two sectors, their bases and the trace formula inherited unchanged.
 - *Introduction to the Biquaternion Universe* — the algebra, the conjugations and the sector split in which the whole construction is set.
+- C. Lanczos, "Die tensoranalytischen Beziehungen der Diracschen Gleichung," *Zeitschrift für Physik* **57** (1929) 447–473, 474–483, 484–493 (arXiv:physics/0508002, physics/0508012, physics/0508013), for the coupled biquaternion system whose doubling is the isospin of the section *The Isospin Partner, and Why It Is Not in This Equation*.
+- F. Gürsey, "Applications of Quaternions to Field Equations," PhD thesis, University of London, 1950, and "Relation of charge independence and baryon conservation to Pauli's transformation," *Nuovo Cimento* **7** (1958) 411–415, for the proton and neutron as the two idempotent superpositions of Lanczos's doubled system.
+- K. Nishijima, "On the theory of leptons," *Nuovo Cimento* **5** (1957) 1349–1354, for the two-parameter group $G_N=\sigma e^{i\alpha}+\bar{\sigma}e^{i\beta}$ that leaves the proton and neutron superpositions intact.
+- A. Gsponer and J.-P. Hurni, "The physical heritage of Sir W. R. Hamilton," arXiv:math-ph/0201058, §8, for the reading of Lanczos's doubling as isospin and for the explicit neutron construction $N=(\tilde{A}\bar{\sigma}-\tilde{B}^{*}\sigma)i\vec{\tau}$.

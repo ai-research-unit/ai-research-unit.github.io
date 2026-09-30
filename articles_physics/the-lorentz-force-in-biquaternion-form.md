@@ -143,6 +143,8 @@ $$
 
 The combination that extracts $\mathbf{E}$ is $\tilde{F} + \tilde{F}^\dagger = 2i\sqrt{\epsilon}\,\mathbf{E}$; the combination that extracts $\mathbf{B}$ is $\tilde{F}^\dagger - \tilde{F} = 2\sqrt{\mu}\,\mathbf{H} = 2\mathbf{B}/\sqrt{\mu}$. So the correct product formula must involve both $\tilde{F}$ and $\tilde{F}^\dagger$. This is the technical reason the earlier article anticipated "the representation theory of $\mathbb{B}$ in the even subalgebra of $\mathrm{Cl}_{1,3}$": the two objects $\tilde{F}$ and $\tilde{F}^\dagger$ are the self-dual and anti-self-dual halves of the field tensor, and the Lorentz force pairs the four-velocity with both.
 
+**A different route.** The obstruction above is real but it is not the only way to the force. If one lets the boost rotor of the particle depend on proper time — the **eigenspinor** $\tilde\Lambda(\tau)$ of *The Eigenspinor: The Lorentz Rotor as a Function of Proper Time* — then the force arises from a **linear** source rather than a product: $\dot{\tilde\Lambda} = \tfrac12\tilde\Omega\tilde\Lambda$ with $\tilde\Omega = -(q/m)\tilde{F}^\dagger$, and the equation of motion is $\dot{\tilde{P}} = P_{\mathbb{M}_-}(\tilde\Omega\tilde{P})$. The force is still not a single product of $\tilde{F}$ with $\tilde{U}$, so the finding of this section stands; what the eigenspinor shows is that the product formula of the next section is a *derived* corollary of a linear evolution, not the primitive statement of the law. The two routes agree on every configuration, and the agreement was checked in the eigenspinor article.
+
 ## The Biquaternion Product Formula
 
 We now derive the formula. The derivation is elementary: invert the product identities above to obtain the electric and magnetic fields in terms of the symmetrized and antisymmetrized products of $\tilde{F}$ and $\tilde{U}$, substitute into the component form, and collect terms.
@@ -593,6 +595,24 @@ The density $\tilde{\mathcal F}$ is not the per-particle $\tilde{K}$ and the two
 **Status.** The object, the split and the coefficients above are algebra, and all were verified numerically: the scalar part against its component form, and both halves of the force against the direct expansion, with residuals at machine precision. The coefficients were previously withheld here because the source's own expansions of the two halves did not close against the vector part as it stands; the reconciliation is the factor of $i$ displayed above, which the source suppresses. Reading $\mathbf F_H$ as the real part of the vector part rather than as $-\mathrm{Im}$ of it produces the apparent mismatch; with the factor placed correctly the source's two expansions close term by term. One exception remains: the source prints $-\rho_H\mathbf D'$ where the derivation gives $-c\,\rho_H\mathbf D'$, a factor of the dimensionless speed of light in that single term, and the derived form is the one carried above. The coefficient-level expansion is hypothesis-dependent through the magnetic-charge–mass identification, so the individual terms remain the programme's rather than the corpus's; what the corpus certifies is that they are what the programme's own product yields. The programme's third-law relation, $\tilde{\Theta}\circ\tilde{\mathcal A}' = -\tilde{\Theta}'\circ\tilde{\mathcal A}$, is the statement that the two power densities are equal, and the author compares it to Betti's reciprocity identity; that comparison, and the hypothesis, are the programme's, not the corpus's. See *The Electro-Gravimagnetic Field and the Magnetic-Charge–Mass Hypothesis* for the provenance.
 
 
+## The Lamb-Vector Reading of the Force Law
+
+The force law of this article is a relativistic fact: $\mathbf{f} = q(\mathbf{E}+\mathbf{v}\times\mathbf{B})$ is what the field does to a charge, and the derivation above takes that law as given. A second reading of its *form* comes from fluid mechanics, and it belongs next to the first, because the corpus's magnetic-field material explains magnetism as a relativistic effect of the electric field, while the hydrodynamic correspondence offers an independent reading in which magnetism is vorticity.
+
+The bridge is the **Lamb vector** $\boldsymbol{\ell} = \boldsymbol{\omega}\times\mathbf{u}$ of a fluid of velocity $\mathbf{u}$ and vorticity $\boldsymbol{\omega} = \nabla\times\mathbf{u}$, introduced in *Maxwell's Equations in the Biquaternionic Formulation*. It is bilinear in a velocity and a curl, and it is the pairing of a flow with its own rotation. The magnetic term of the Lorentz force density, $\mathbf{j}\times\mathbf{B}$, is bilinear in a current and a curl, and the electric term $\rho_E\mathbf{E}$ pairs a charge density with the irrotational part of the field. Under the dictionary
+
+$$
+\mathbf{u}\;\leftrightarrow\;\mathbf{A},
+\qquad
+\boldsymbol{\omega}\;\leftrightarrow\;\mathbf{B},
+\qquad
+\boldsymbol{\ell}\;\leftrightarrow\;\mathbf{E}
+$$
+
+the Lorentz force density has the same form as the Lamb force density $\rho\,\boldsymbol{\ell}$: in each case a source is paired with a quantity that is bilinear in a velocity-like field and its curl. The correspondence is attributed to H. Marmanis.
+
+Two things must be kept apart in using it. First, it is a *formal* correspondence between the equations of two theories, with the limits stated in the Maxwell article; it is not a derivation of the force law, and the relativistic account of magnetism remains the standard one. Second, it lives in three-vector language and is not a biquaternion formula. It is recorded here because it supplies a second *why* for the shape of the force law, alongside the relativistic one, and not because it competes with the product formula of this article, which remains the biquaternionic statement.
+
 ## Summary
 
 The Lorentz four-force has the component form
@@ -664,3 +684,4 @@ At the level of densities the companion programme replaces the per-particle forc
 - L. A. Alexeyeva, "Maxwell Equations, Their Hamiltonian and Biquaternionic Forms and Properties of Their Solutions" (2016), for the biquaternionic formulation of the field equations.
 - L. A. Alexeyeva, "One Biquaternion Model of the Electro-Gravimagnetic Field. Field Analogues of Newton's Laws" (2007), for the density-level power–force biquaternion, the four-term force split and the electromass force; see *The Electro-Gravimagnetic Field and the Magnetic-Charge–Mass Hypothesis* for the hypothesis and its status.
 - L. A. Alexeyeva, "Newton's Laws for a Biquaternionic Model of the Electro-Gravimagnetic Field, Charges, Currents, and Their Interactions" (2009), for the revision of the programme, in which the charge–current conservation law is not Lorentz invariant under interaction and a scalar resistance field is added.
+- G. Rousseaux and É. Guyon, "À propos d'une analogie entre la mécanique des fluides et l'électromagnétisme", *Bulletin de l'Union des Physiciens* **96** (2002), no. 841 (2), 125–134, for the Lamb-vector reading of the force law in *The Lamb-Vector Reading of the Force Law* — the hydrodynamic form of the Lorentz force density, attributed by the source to H. Marmanis. An expository article in a teachers' journal, in French; the dictionary and its limits are stated in *Maxwell's Equations in the Biquaternionic Formulation*.

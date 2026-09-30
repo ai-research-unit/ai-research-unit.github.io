@@ -181,7 +181,7 @@ $$
 
 Composition of relations is associative, $(T \circ S) \circ R = T \circ (S \circ R)$, by the associativity of the existential quantifier, and the identity relation $\Delta_X = \{(x,x) : x \in X\}$ is a two-sided identity.
 
-A relation $R$ on $X$ is **reflexive** if $x \mathrel{R} x$ for all $x \in X$; **irreflexive** if $x \mathrel{R} x$ for no $x$; **symmetric** if $x \mathrel{R} y$ implies $y \mathrel{R} x$; **antisymmetric** if $x \mathrel{R} y$ and $y \mathrel{R} x$ imply $x = y$; and **transitive** if $x \mathrel{R} y$ and $y \mathrel{R} z$ imply $x \mathrel{R} z$. A relation that is reflexive and transitive is a **preorder**, and the preorders on $X$ correspond to the *quotients* of $X$ by equivalence relations equipped with an order, a fact used below.
+A relation $R$ on $X$ is **reflexive** if $x \mathrel{R} x$ for all $x \in X$; **irreflexive** if $x \mathrel{R} x$ for no $x$; **symmetric** if $x \mathrel{R} y$ implies $y \mathrel{R} x$; **antisymmetric** if $x \mathrel{R} y$ and $y \mathrel{R} x$ imply $x = y$; and **transitive** if $x \mathrel{R} y$ and $y \mathrel{R} z$ imply $x \mathrel{R} z$. A relation that is reflexive and transitive is a **preorder**. A preorder need not be antisymmetric, and the construction that passes from it to a partial order, by identifying the elements that are mutually below one another, is *The Quotient of a Pre-Order* in *Order Theory and Lattices*.
 
 ### Equivalence Relations
 
@@ -315,7 +315,7 @@ A set is determined by its elements (extensionality). Subsets are ordered by inc
 
 Ordered pairs are coded as $\{\{a\},\{a,b\}\}$, which makes $(a,b) = (c,d)$ exactly when $a = c$ and $b = d$; the Cartesian product $X \times Y$ is the set of ordered pairs, the product of a family is the set of choice functions, and the axiom of choice is the assertion that this set is nonempty when every factor is.
 
-A relation on $X$ is a subset of $X \times X$; an equivalence relation is reflexive, symmetric and transitive, its classes partition $X$, and the map from equivalence relations to partitions is a bijection. A partial order is reflexive, antisymmetric and transitive; a total order has every pair comparable; the general theory is *Order Theory and Lattices*. A function is a relation with exactly one value at each point of the doma; composition is associative; injective, surjective and bijective functions are characterised by the existence of left, right and two-sided inverses; and preimages preserve all the set operations while images preserve only unions in general.
+A relation on $X$ is a subset of $X \times X$; an equivalence relation is reflexive, symmetric and transitive, its classes partition $X$, and the map from equivalence relations to partitions is a bijection. A partial order is reflexive, antisymmetric and transitive; a preorder drops antisymmetry and becomes a partial order on the classes of its mutual relation; a total order has every pair comparable; the general theory is *Order Theory and Lattices*. A function is a relation with exactly one value at each point of the doma; composition is associative; injective, surjective and bijective functions are characterised by the existence of left, right and two-sided inverses; and preimages preserve all the set operations while images preserve only unions in general.
 
 ## Summary of Notation
 

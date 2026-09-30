@@ -34,6 +34,8 @@ The operator $\tilde{\nabla}$ is exactly the biquaternionic gradient of the arti
 
 The factorization makes $\tilde{\nabla}$ a square root of the Laplacian, hence the **Cauchy–Riemann operator** of $\mathbb{R}^4$ up to normalization: since $\mathbf{D}^2 = -\Delta_3 e_0$, the product $(\partial_0 + \mathbf{D})(\partial_0 - \mathbf{D})$ equals $\partial_0^2 + \Delta_3 = \Delta_4$. On a slice $\mathbb{C}_I$ (below), the part of $\tilde{\nabla}$ differentiating along the slice is the complex Cauchy–Riemann operator $\partial_{q_0} + I\partial_\rho$, so $\tilde{\nabla}\tilde{F} = 0$ is the quaternionic Cauchy–Riemann equation. In Clifford-algebra language, $\mathbb{H}$ is the even subalgebra of $\mathrm{Cl}_{0,3}$ and $\mathbb{B}$ its complexification, the even subalgebra of $\mathrm{Cl}_{1,3}$; hence the term **monogenic** for Fueter-regular functions.
 
+**The names and the priority.** The operator is named for Rudolf Fueter, whose 1932 paper established the construction developed below. The quaternionic Cauchy–Riemann conditions and the Cauchy integral formula were obtained earlier, however, by Cornelius Lanczos in the fourth chapter of his 1919 doctoral dissertation on the functional-theoretic relations of Maxwell's aether equations, where the quaternionic generalisation of the Cauchy–Riemann equations is formulated and applied to the homogeneous Maxwell equation, and the integral formula now called the **Cauchy–Lanczos–Fueter formula** is given. The earlier work was not continued, and the theory was rediscovered by Moisil and Fueter in 1931–1932. The corpus records the priority as the claim of Lanczos's commentators Gsponer and Hurni, resting on the dissertation itself (*A Brief History of Biquaternions in Physics*); nothing below depends on the attribution.
+
 ## Fueter-Regular Functions
 
 ### Left and Right Regularity
@@ -75,6 +77,62 @@ $$
 $$
 
 with the ordinary measures on $\mathbb{R}^4$; the property follows equally from the Cauchy formula, the proof above showing that it is already a consequence of the factorization.
+
+## The Variational Origin of the Cauchy–Riemann Conditions
+
+The Fueter operator was defined above as a square root of the Laplacian. The regularity condition can also be reached from a variational principle, and this is how Lanczos introduced it in 1919; the principle is the Dirichlet principle of the operator, and it completes the function-theoretic content of the dissertation.
+
+### The Dirichlet Principle and the Conjugate Boundary Data
+
+On a domain $\Omega \subseteq \mathbb{R}^2$ the **Dirichlet principle** states that the harmonic functions are the minimisers of the Dirichlet energy
+
+$$
+\mathcal{E}[F] = \int_\Omega |\nabla F|^2\,dA
+$$
+
+among functions with prescribed boundary values, the Euler–Lagrange equation being $\Delta F = 0$. In the plane a function is harmonic if and only if it is locally the sum of a holomorphic and an antiholomorphic term, and the Cauchy–Riemann condition is the restriction to one of the two terms. The variational principle reaches that restriction through the boundary data: prescribing the **conjugate** data on $\partial\Omega$, the values of the conjugate function, determines the harmonic representative, and the representative is the regular function. In two dimensions the conjugate datum is the normal derivative, and the pair (minimise the Dirichlet energy, prescribe the conjugate data) is the standard Neumann problem for $\Delta$; the Cauchy–Riemann equation is its compatibility statement. This is the accurate content of the statement that the Cauchy–Riemann equations follow from a variational principle: the principle produces harmonicity, and the conjugate boundary data selects the regular representative among the harmonic functions.
+
+### The Null-Lagrangian Identity
+
+The same statement can be written without boundary data, as an identity between two densities. Write $F = X + iY$ with $X, Y$ real, and let $\partial = \partial_x - i\partial_y$ and $\bar{\partial} = \partial_x + i\partial_y$ be the planar Cauchy–Riemann operators, so that $\partial F = 0$ is the Cauchy–Riemann equation and $\bar{\partial}F = (X_x - Y_y) + i\,(X_y + Y_x)$. The squared modulus of $\bar{\partial}F$ and the Dirichlet density are related by an exact divergence,
+
+$$
+(X_x - Y_y)^2 + (X_y + Y_x)^2 = X_x^2 + X_y^2 + Y_x^2 + Y_y^2 + 2\,(X_yY_x - X_xY_y),
+$$
+
+and the last term, twice the Jacobian $X_yY_x - X_xY_y$, is a **null Lagrangian**. It is exactly a divergence,
+
+$$
+X_yY_x - X_xY_y = \partial_x(YX_y) - \partial_y(YX_x),
+$$
+
+so it contributes only a boundary integral to $\int_\Omega$, and the identity itself has been checked numerically to the finite-difference level on a hundred-point grid. The consequence is that the two functionals
+
+$$
+\mathcal{E}_{\mathrm{CR}}[F] = \int_\Omega |\bar{\partial}F|^2\,dA, \qquad \mathcal{E}[F] = \int_\Omega |\nabla F|^2\,dA
+$$
+
+differ by a boundary term and therefore have the **same Euler–Lagrange equation**, $\Delta X = \Delta Y = 0$. The regularity condition $\partial F = 0$ is then picked out by the conjugate boundary data of the preceding paragraph, exactly as in the Dirichlet principle. The two routes are one principle, read before and after the integration by parts.
+
+### Lanczos's Statement and Its Four-Dimensional Form
+
+Lanczos states the principle in the source's notation. With $F = X + iY$, $\nabla = \partial_x + i\partial_y$ and $R^2 = (x-\xi)^2 + (y-\eta)^2$, he derives the Cauchy–Riemann equations from the variational principle
+
+$$
+\delta\int (X^2 + Y^2)\,dx\,dy = 0
+$$
+
+subject to a given regular integration domain and to the prescribed values of $\int F\,\nabla\log(R^{-2})\,dx\,dy$ for every point $(\xi,\eta)$ of the boundary. He then states the four-dimensional form of the same principle,
+
+$$
+\delta\int (X^2 + Y^2 + Z^2 + T^2)\,dx\,dy\,dz\,dt = 0,
+$$
+
+with prescribed boundary values of $\int F\nabla R^{-2}\,dx\,dy\,dz\,dt$, and notes that this same principle — with complex components for $F$ and imaginary $t$ — is the "Hamiltonian principle" he applies to the world as a whole, "the universal basis of the whole theory, both as regards the field equations and as regards the dynamics", the boundary conditions for the world being left to be found. The functional is written in the source with the components $X, Y, \ldots$ of the function $F$; if those are read as the components of $F$ itself, the integrand is $|F|^2$ and the unconstrained Euler–Lagrange equation is $F = 0$, so the content is carried by the prescribed conjugate integral. What the corpus records is the principle and the boundary datum, together with the identity above, which is the mechanism by which the Dirichlet energy and the Cauchy–Riemann energy share their Euler–Lagrange system. The four-dimensional case is the same identity with the quaternionic $\tilde{\nabla}$ in place of the planar operators, and the boundary term is the surface term of the dissertation's action.
+
+### What the Principle Does and Does Not Say
+
+The principle is the Dirichlet principle, and it is standard; it is recorded here because Lanczos made it the foundation of the whole theory and because it is the one member of the corpus's variational apparatus that applies to the regularity equation itself rather than to a field action. It does not produce the Cauchy–Riemann equations from an unconstrained minimisation: the Euler–Lagrange equation of $\int|\partial F|^2$ is the harmonicity $\Delta F = 0$, which is weaker than $\partial F = 0$, and it is the conjugate boundary data that restricts the harmonic minimiser to the regular representative. In two dimensions this is the Neumann problem, and the same structure recurs in the four-dimensional case with the Fueter operator. The corpus's field-theoretic use of the same identity is the Dirichlet energy of harmonic maps and, in two dimensions, its conformal invariance; the regularity equation is the elliptic member of that family.
 
 ## The Fueter Construction
 
@@ -154,7 +212,7 @@ On the full algebra $\mathbb{B}$ the biquaternion norm $N(\tilde{Q}) = \sum_\mu 
 
 ## Summary
 
-The Fueter operator $\tilde{\nabla} = \sum_\mu e_\mu \partial_\mu$ and its conjugate factor the four-dimensional Laplacian on the quaternion subspace, $\tilde{\nabla}\bar{\tilde{\nabla}} = \bar{\tilde{\nabla}}\tilde{\nabla} = \Delta_4 e_0$. On the anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$ the gradient differs from this one by the constant central factor $-i$, so the regular functions and the Cauchy kernel are those of $\mathbb{H}_{\mathbb{B}}$, up to $i$, and only the sign of the second-order operator changes. Left-regularity $\tilde{\nabla}\tilde{F} = 0$ and right-regularity $\tilde{F}\tilde{\nabla} = 0$ differ only in the sign of the curl term of the componentwise Cauchy–Riemann–Fueter system and coincide for axially symmetric functions; every regular function is harmonic, hence real-analytic, and satisfies the mean value property.
+The Fueter operator $\tilde{\nabla} = \sum_\mu e_\mu \partial_\mu$ and its conjugate factor the four-dimensional Laplacian on the quaternion subspace, $\tilde{\nabla}\bar{\tilde{\nabla}} = \bar{\tilde{\nabla}}\tilde{\nabla} = \Delta_4 e_0$. On the anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$ the gradient differs from this one by the constant central factor $-i$, so the regular functions and the Cauchy kernel are those of $\mathbb{H}_{\mathbb{B}}$, up to $i$, and only the sign of the second-order operator changes. Left-regularity $\tilde{\nabla}\tilde{F} = 0$ and right-regularity $\tilde{F}\tilde{\nabla} = 0$ differ only in the sign of the curl term of the componentwise Cauchy–Riemann–Fueter system and coincide for axially symmetric functions; every regular function is harmonic, hence real-analytic, and satisfies the mean value property. The regularity condition has a variational origin as the Dirichlet principle of the Cauchy–Riemann operator: the Cauchy–Riemann energy and the Dirichlet energy differ by a null Lagrangian and share their Euler–Lagrange system, and the conjugate boundary data of Lanczos's 1919 statement selects the regular representative among the harmonic functions.
 
 The Fueter construction sends a holomorphic $f_0$ to the induced function $\tilde{F} = \Delta_4 \tilde{f}_0 = 2u_\rho/\rho + \hat{\mathbf{q}}(2v_\rho/\rho - 2v/\rho^2)$, which is both left- and right-regular; it is $\mathbb{C}$-linear with the affine functions as kernel, hence injective exactly for holomorphic functions whose Taylor coefficients vanish to order two. The Fueter–Sce theorem extends it to odd-dimensional Clifford algebras with the power $(n-1)/2$, under the hypotheses of holomorphic convergence, order-two vanishing and odd dimension. Regular functions have the induced series and the monogenic Taylor expansion, while slice-regular series form the distinct class that the construction converts into regular functions. On $\mathbb{H}_{\mathbb{B}}$ the origin is the only singularity, but on the full algebra the six-dimensional null quadric obstructs inversion, the Fueter operator is not elliptic over $\mathbb{C}$, and the imaginary units are no longer the sphere $S^2$; the full-algebra case remains open.
 
@@ -170,6 +228,7 @@ The Fueter construction sends a holomorphic $f_0$ to the induced function $\tild
 | $\tilde{\nabla} = \partial_0 + \mathbf{D}$, $\mathbf{D} = \sum_k e_k \partial_k$ | Fueter (Cauchy–Riemann–Fueter) operator, acting on the left |
 | $\bar{\tilde{\nabla}} = \partial_0 - \mathbf{D}$ | Conjugate Fueter operator |
 | $\Delta_4 = \sum_\mu \partial_\mu^2$ | Four-dimensional Laplacian; $\tilde{\nabla}\bar{\tilde{\nabla}} = \bar{\tilde{\nabla}}\tilde{\nabla} = \Delta_4 e_0$ |
+| $\partial, \bar{\partial}$ | Planar Cauchy–Riemann operators, $\partial = \partial_x - i\partial_y$, $\bar{\partial} = \partial_x + i\partial_y$ (variational section) |
 | $\tilde{F}$ left-regular | $\tilde{\nabla}\tilde{F} = 0$; monogenic in Clifford language |
 | $\tilde{F}$ right-regular | $\tilde{F}\tilde{\nabla} = 0$ |
 | $I$, $S^2$ | Imaginary unit, $I^2 = -1$; on $\mathbb{H}_{\mathbb{B}}$ these form the two-sphere |

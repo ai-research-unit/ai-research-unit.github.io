@@ -119,6 +119,8 @@ $$
 
 The diagonal part $\tilde\Pi_1\mathbb{B}\tilde\Pi_1 \oplus \tilde\Pi_2\mathbb{B}\tilde\Pi_2 = \mathbb{C}\tilde\Pi_1 \oplus \mathbb{C}\tilde\Pi_2$ is a two-dimensional commutative subalgebra isomorphic to $\mathbb{C} \times \mathbb{C}$. Each diagonal corner is a division ring, namely $\mathbb{C}$, which is the primitivity criterion of §*Idempotents and Orthogonal Idempotents*.
 
+A **null (light-cone) variant** of the same split is used in *The Chiral Algebra of Biquaternions and the Cyclic Representation of the Dirac Equation*. The idempotents there are the uniform nullquaternions $N = \tfrac12(1, \mathbf n)$ and $\bar N = \tfrac12(1, -\mathbf n)$, and the two Peirce components of a biquaternion are its **signed parts**, whose sign the source reads as the chirality of the Weyl spinor. The pair is orthogonal and complete in the article's own product — the **outer** product, for which $N \odot N = N$, $\bar N \odot \bar N = \bar N$, $N \odot \bar N = 0$ and $N + \bar N = e_0$ — and the article's matrix isomorphism carries the outer product to the ordinary matrix product and $N, \bar N$ to the two standard diagonal idempotents. It is the same orthogonal pair as above, transported to the light-cone coordinates with the product changed; these same elements are **not** idempotent under the Hamilton product of this article, so the chiral split is naturally stated in that paper's algebra rather than in this one.
+
 ## The Decomposition into Minimal Left and Right Ideals
 
 The two idempotents group the basis into one-sided ideals in a second way. The two **left ideals** $\mathbb{B}\tilde\Pi_1, \mathbb{B}\tilde\Pi_2$ and the two **right ideals** $\tilde\Pi_1\mathbb{B}, \tilde\Pi_2\mathbb{B}$ are one-sided, and

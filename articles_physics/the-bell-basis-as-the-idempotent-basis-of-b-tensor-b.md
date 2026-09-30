@@ -14,7 +14,7 @@ This article develops the structure that those two articles use but do not make 
 
 The mathematics is standard finite-dimensional algebra, recomputed here in the language of $\mathbb{B}\otimes\mathbb{B}$. The article claims no physics beyond the companion articles. What it makes visible is a structural fact: the two-qubit algebra carries a canonical, discrete idempotent basis whose members are the four Bell states; and the Bell states are singled out from the continuum of maximally entangled states by a particular **tensor structure** — by being diagonal in the tensor-product basis.
 
-The article is organised as follows. The next section recalls the conventions and states precisely what an idempotent basis is. The section after that introduces the four Bell idempotents and identifies them with the standard Bell states. Then orthogonality and completeness are proved, first from the stabiliser operators and then from the Hadamard structure of the sign patterns. The following section shows that the Bell basis is the joint eigenbasis of the stabiliser operators. Then maximal entanglement and the diagonal tensor structure are characterised, and the partial traces are computed. A closing remark discusses the status of the tensor product in the framework, which is an open question inherited from the companion articles.
+The article is organised as follows. The next section recalls the conventions and states precisely what an idempotent basis is. A short section then separates the two-qubit **state vector** from the two-qubit **state operator**, records the identification $\mathbb{C}^4\cong\mathbb{B}$ that the vector makes available, and notes the two cautions it carries: the vector is not the state, and a single quaternion is not an entangled state. Then the four Bell idempotents are introduced and identified with the standard Bell states. Orthogonality and completeness are proved, first from the stabiliser operators and then from the Hadamard structure of the sign patterns. The following section shows that the Bell basis is the joint eigenbasis of the stabiliser operators. Then maximal entanglement and the diagonal tensor structure are characterised, and a further section examines a claimed finite enumeration of the maximally entangled states and shows why the exhaustiveness claim fails. The partial traces are computed next. A closing remark discusses the status of the tensor product in the framework, which is an open question inherited from the companion articles.
 
 One caveat is stated at the outset and revisited in the closing remark. Everything below is a construction **inside** the algebra $\mathbb{B}\otimes\mathbb{B}$. The companion article *Quantum Mechanics in Biquaternionic Form* lists among its open questions whether the tensor product is natural in the biquaternion framework or whether it requires additional structure, while the entangled-subsystems article simply uses $\mathbb{B}\otimes\mathbb{B}\cong M_4(\mathbb{C})$. We follow the latter and do not resolve the tension: the Bell basis is canonical relative to the tensor-product structure that is assumed, and whether that structure is itself canonical for the framework is exactly what remains open.
 
@@ -66,6 +66,42 @@ First, an idempotent basis is **not** a linear basis of $\mathbb{B}\otimes\mathb
 Second, an idempotent basis is the diagonal part of a matrix-unit basis of the algebra. If the $E_a$ are minimal, the **Peirce components** $E_a(\mathbb{B}\otimes\mathbb{B})E_b$ are one-dimensional, and choosing a nonzero element in each gives a family of matrix units $E_{ab}$ with $E_{ab}E_{cd}=\delta_{bc}E_{ad}$ and $E_{aa}=E_a$. The linear span of the $E_a$ is then a maximal commutative subalgebra — a Cartan subalgebra — of $\mathbb{B}\otimes\mathbb{B}\cong M_4(\mathbb{C})$. Thus "idempotent basis" means the diagonal of a matrix-unit basis, equivalently a maximal orthogonal family of minimal idempotents resolving the identity.
 
 The companion entangled-subsystems article already exhibited one member of such a family for the two-qubit algebra: the singlet idempotent $P_{\mathrm{singlet}}$. The rest of this article exhibits the full family and its structure.
+
+## The State Vector and the State Operator: $\mathbb{C}^4\cong\mathbb{B}$
+
+Two objects of the two-qubit arena are both four-dimensional in appearance and are easily conflated, so it is worth separating them once, before the Bell states are written down.
+
+- The **state vector** of two qubits lies in the Hilbert space $\mathbb{C}^2\otimes\mathbb{C}^2\cong\mathbb{C}^4$, of complex dimension four.
+- The **state operator** — the density matrix — lies in $\mathbb{C}^4\otimes(\mathbb{C}^4)^*\cong M_4(\mathbb{C})$, of complex dimension sixteen, realised in the framework as the tensor product $\mathbb{B}\otimes\mathbb{B}$.
+
+The underlying complex vector space of the biquaternion algebra is $\mathbb{C}^4$, so a state vector can also be written as an element of $\mathbb{B}$. Fix the linear isomorphism by the basis order
+
+$$
+\lvert00\rangle\mapsto e_0,\qquad \lvert01\rangle\mapsto e_1,\qquad \lvert10\rangle\mapsto e_2,\qquad \lvert11\rangle\mapsto e_3 .
+$$
+
+This is a **vector-space** identification only: the algebra product on $\mathbb{B}$ does not act as the two-qubit operator product on the state. Under it the four Bell vectors are combinations of two basis units.
+
+| Bell state | vector | element of $\mathbb{B}$ |
+|---|---|---|
+| $\lvert\Phi^+\rangle$ | $\tfrac{1}{\sqrt2}(\lvert00\rangle+\lvert11\rangle)$ | $\tfrac{1}{\sqrt2}(e_0+e_3)$ |
+| $\lvert\Phi^-\rangle$ | $\tfrac{1}{\sqrt2}(\lvert00\rangle-\lvert11\rangle)$ | $\tfrac{1}{\sqrt2}(e_0-e_3)$ |
+| $\lvert\Psi^+\rangle$ | $\tfrac{1}{\sqrt2}(\lvert01\rangle+\lvert10\rangle)$ | $\tfrac{1}{\sqrt2}(e_1+e_2)$ |
+| $\lvert\Psi^-\rangle$ | $\tfrac{1}{\sqrt2}(\lvert01\rangle-\lvert10\rangle)$ | $\tfrac{1}{\sqrt2}(e_1-e_2)$ |
+
+At the level of state vectors the four Bell states are therefore the four combinations $\tfrac{1}{\sqrt2}(e_\mu\pm e_\nu)$ for the index pairs $\{0,3\}$ and $\{1,2\}$. This is the form in which they arise from the division of one particle in the mereological reading of the companion article *Entangled Subsystems in the Biquaternion Framework*, where the state is created by a split and the split is a division in the sense of *Mereology and Collective Set Theory*.
+
+Two cautions follow from the identification, and both are used by the literature that motivates this section.
+
+**The vector is not the state.** The combinations $\tfrac{1}{\sqrt2}(e_\mu\pm e_\nu)$ are elements of $\mathbb{B}$ and are in general neither Hermitian nor idempotent; they are not elements of $\mathbb{M}_+$ and they are not states in the framework's sense. The state *object* is the idempotent $P_\epsilon$ of $\mathbb{B}\otimes\mathbb{B}$ whose module-theoretic image is the line spanned by the corresponding vector. The passage is from a state vector in the four-dimensional module to a rank-one idempotent in the sixteen-dimensional algebra, and the two must not be identified. The framework's convention, fixed by the companion articles, is that a pure state **is** the idempotent; the vector is the module element on which it acts. The two descriptions agree on every prediction, because both are readings of the same tensor-product state, but only the second is a state in the algebra.
+
+**A single quaternion is not an entangled state.** The temptation created by the identification $\mathbb{C}^4\cong\mathbb{B}$ is to take one element of $\mathbb{B}$ and read it as an entangled two-qubit state. This fails on the standard test. Write an element of $\mathbb{B}$ as $Q=Q_0+\sum_k Q_k e_k$ and let $\mathbf{c}=(c_1,c_2,c_3,c_4)$ be its components in the basis order above. The corresponding two-qubit vector is a product state exactly when
+
+$$
+c_1c_4-c_2c_3=0 ,
+$$
+
+and, when it is normalised, its concurrence is $2\lvert c_1c_4-c_2c_3\rvert$. The real unit quaternion $Q=\tfrac{1}{2}(e_0-e_1-e_2+e_3)$, that is $\mathbf{c}=\tfrac12(1,-1,-1,1)$, satisfies $c_1c_4=c_2c_3=\tfrac14$; its concurrence is zero, and it represents the product state $\tfrac12(\lvert0\rangle-\lvert1\rangle)\otimes(\lvert0\rangle-\lvert1\rangle)$. A single quaternion, however it is normalised, can never carry entanglement, because the entanglement of a two-qubit state is a property of the operator in $\mathbb{B}\otimes\mathbb{B}$ and not of a vector in $\mathbb{B}$. An algebraic indecomposability of an element of $\mathbb{B}$ — for instance the non-factorisation of its left-regular-representation matrix — is a statement about the multiplication operator, not about the Schmidt rank of the state, and the two must not be confused.
 
 ## The Four Bell Idempotents
 
@@ -317,6 +353,44 @@ The local action of the quaternion group therefore organises the Bell basis into
 
 A final observation is that the four Bell idempotents are **locally indistinguishable**. Since every one of them has the same partial trace $\tfrac{1}{2}e_0$ on each factor, no measurement on a single qubit can reveal which Bell state was prepared. The entire distinction between them resides in the correlated, tensor-product terms $e_k\otimes e_k$ — that is, in the signs $\epsilon$, which are precisely the stabiliser eigenvalues and the diagonal correlation entries. The local data are constant across the basis; the correlation data are what vary.
 
+## A Claimed Enumeration of the Maximally Entangled States
+
+The preceding section showed that the maximally entangled pure states form a continuum and that the Bell idempotents are a discrete family inside it. A source in the literature reaches the opposite conclusion, and it is worth recording why that conclusion fails, both because the corpus possesses the tools to state the failure exactly and because the disagreement is a good illustration of the continuum.
+
+For a normalised pure two-qubit state
+
+$$
+\lvert\psi\rangle=c_1\lvert00\rangle+c_2\lvert01\rangle+c_3\lvert10\rangle+c_4\lvert11\rangle ,
+$$
+
+the **concurrence** is $C=2\lvert c_1c_4-c_2c_3\rvert$, and $C=1$ exactly when the state is maximally entangled in the partial-trace sense of this article. Thus maximal entanglement is the single equation
+
+$$
+\lvert c_1c_4-c_2c_3\rvert=\tfrac{1}{2}.
+$$
+
+Obojska (*Journal of Physics Communications* **4** (2020) 055018), working in the algebra $\mathbb{B}$ with the basis written $1,i,j,k$ and using the division relation of *Mereology and Collective Set Theory*, reads a two-qubit state as an element of $\mathbb{C}^4\cong\mathbb{B}$ and restricts the quotients of its amplitudes to the set $\{-i,i,-1\}$. Under this restriction she obtains twelve **patterns** of pure maximally entangled states — eight of a simple form, four of a general form — and states as **Corollary 1** that "in the algebra of biquaternions there are no other maximally entangled states than those described by [the twelve patterns]".
+
+**The premise already implies a continuum.** The proof of the corollary begins from the concurrence equation above, whose solution set is the entire continuum of maximally entangled states. The clearest family of solutions is
+
+$$
+\lvert\psi_\phi\rangle=\tfrac{1}{\sqrt2}\left(\lvert00\rangle+e^{i\phi}\lvert11\rangle\right),\qquad \phi\in[0,2\pi),
+$$
+
+for which $c_1=\tfrac{1}{\sqrt2}$, $c_4=\tfrac{1}{\sqrt2}e^{i\phi}$, $c_2=c_3=0$, so $c_1c_4=\tfrac12 e^{i\phi}$, $\lvert c_1c_4-c_2c_3\rvert=\tfrac12$, and $C=1$ for every $\phi$. Every member of the family is maximally entangled. The source's own first case — $\lvert c_1\rvert=\lvert c_4\rvert$, $c_2=c_3=0$ — is exactly this family, so the free relative phase $\phi$ is already present in the source's case analysis.
+
+**What the patterns select.** The twelve written patterns do not enumerate this family. They are obtained from the additional assumption — not part of the concurrence equation — that the quotient of the two amplitudes of the division lies in $\{-i,i,-1\}$. In every one of the twelve forms the relative phase of the two nonzero amplitudes is thereby fixed to one of the four values $0,\pm\pi/2,\pi$. A member of the family with $\phi=\pi/4$, say
+
+$$
+\lvert\psi_{\pi/4}\rangle=\tfrac{1}{\sqrt2}\left(\lvert00\rangle+e^{i\pi/4}\lvert11\rangle\right),
+$$
+
+has $C=1$ and is of none of the twelve forms: its relative phase lies outside the discrete set. **Corollary 1 is therefore false as stated.** The twelve patterns are a proper subset of the maximally entangled states, namely the part admitted by the extra quotient assumption. (The source itself remarks that there are "uncountably many" such states, so the corollary can only be read as an exhaustiveness claim; that reading is what fails.)
+
+**Why no finite list can work.** The point is dimensional and independent of the source's conventions. The pure states of two qubits are the rays of $\mathbb{C}P^3$, a real manifold of dimension six; the condition that a pure state be maximally entangled, $\mathrm{Tr}_2(P)=\tfrac12 e_0$, places three independent real conditions on those rays, so the maximally entangled rays form a set of real dimension three. No finite union of one-parameter families — and the twelve patterns amount to that, with the overall complex phase free — can cover a three-dimensional set.
+
+**What remains.** None of this touches the patterns as constructions: each is a maximally entangled state, and their totality is a legitimate partial catalogue, with the Bell states among them. What fails is the exhaustiveness claim, and with it the use of the concurrence criterion as a complete classification. The corpus's own statement is the correct one: the maximally entangled pure states are a continuum, singled out by the partial-trace condition, and any discrete family among them — the Bell basis included — must be selected by additional structure. For the Bell basis that structure is the diagonal tensor form; for the source's patterns it is the quotient rule.
+
 ## Partial Traces and Maximal Mixedness
 
 We now compute the partial trace of each Bell idempotent and confirm the maximal-entanglement condition used above.
@@ -378,6 +452,8 @@ The article established the following structure.
 - **Stabiliser eigenbasis.** The commuting Hermitian involutions $S_1=-e_1\otimes e_1$ and $S_3=-e_3\otimes e_3$ (corresponding to $\sigma_1\otimes\sigma_1$ and $\sigma_3\otimes\sigma_3$) form a complete set of commuting observables whose joint spectrum is non-degenerate; the $P_\epsilon$ are its joint eigen-idempotents, with eigenvalues $(-\epsilon_1,-\epsilon_3)$. Each $P_\epsilon$ is conjugation-invariant under $S_1$ and $S_3$, and its stabiliser group is the Klein four-group generated by the sign-corrected $S_1$ and $S_3$.
 - **Diagonal tensor structure.** The Bell idempotents are exactly the idempotents of diagonal tensor form $\tfrac14\sum_\mu\epsilon_\mu\,e_\mu\otimes e_\mu$. There are exactly four of them, and the sign matrix whose rows are $(1,\epsilon_1,\epsilon_2,\epsilon_3)$ is Hadamard. A generic maximally entangled state is a continuum and is not diagonal; the Bell basis is the discrete, canonical family selected by the diagonal structure.
 - **Maximal mixedness.** The partial trace of every Bell idempotent is the maximally mixed state, $\mathrm{Tr}_1(P_\epsilon)=\mathrm{Tr}_2(P_\epsilon)=\tfrac12 e_0$, of purity $\tfrac12$ and entropy $\log 2$. The four states are locally indistinguishable; their distinction resides entirely in the correlated tensor terms, i.e. in the signs $\epsilon$.
+- **State vector versus state operator.** The Bell states also have a vector form in $\mathbb{C}^4\cong\mathbb{B}$, where they are the combinations $\tfrac{1}{\sqrt2}(e_\mu\pm e_\nu)$ for the index pairs $\{0,3\}$ and $\{1,2\}$. The vector is not the state: it is an element of the four-dimensional module, while the state object is the rank-one idempotent of the sixteen-dimensional algebra. In particular a single quaternion, read as a two-qubit vector, is a product state — $Q=\tfrac12(e_0-e_1-e_2+e_3)$ has concurrence zero — and never carries entanglement.
+- **Maximal entanglement is a continuum, not a finite list.** A claimed enumeration of twelve patterns of maximally entangled states, obtained under an extra quotient rule, fails its exhaustiveness corollary: the family $\lvert\psi_\phi\rangle=\tfrac{1}{\sqrt2}(\lvert00\rangle+e^{i\phi}\lvert11\rangle)$ is maximally entangled for every $\phi$, while the twelve forms fix the relative phase to $\{0,\pm\pi/2,\pi\}$. The maximally entangled rays have real dimension three, so no finite union of one-parameter families covers them; any discrete family among them is selected by additional structure.
 
 All of this is standard finite-dimensional algebra, expressed in the conventions of the companion articles. The construction presupposes the tensor-product algebra $\mathbb{B}\otimes\mathbb{B}$; whether that algebra is canonical for the framework is an open question inherited from the companion articles and is left unresolved.
 
@@ -387,6 +463,10 @@ All of this is standard finite-dimensional algebra, expressed in the conventions
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
 | $\mathbb{B}\otimes\mathbb{B}\cong M_4(\mathbb{C})$ | Two-qubit tensor-product algebra |
+| $\mathbb{C}^2\otimes\mathbb{C}^2\cong\mathbb{C}^4\cong\mathbb{B}$ | Two-qubit state space (state vectors) |
+| $\tfrac{1}{\sqrt2}(e_0\pm e_3),\ \tfrac{1}{\sqrt2}(e_1\pm e_2)$ | Bell vectors written in the algebra basis |
+| $C=2\lvert c_1c_4-c_2c_3\rvert$ | Concurrence of a two-qubit pure state |
+| $\lvert\psi_\phi\rangle=\tfrac{1}{\sqrt2}(\lvert00\rangle+e^{i\phi}\lvert11\rangle)$ | Maximally entangled family, $C=1$ for every $\phi$ |
 | $e_0=1,e_1,e_2,e_3$ | Quaternion basis, $e_k^2=-e_0$, cyclic products |
 | $i$ | Scalar imaginary, $i^2=-1$ |
 | $\mathbb{M}_+$ | Hermitian subspace: real scalar, imaginary vector |
@@ -411,4 +491,5 @@ All of this is standard finite-dimensional algebra, expressed in the conventions
 - C. H. Bennett, G. Brassard, C. Crépeau, R. Jozsa, A. Peres, and W. K. Wootters, "Teleporting an unknown quantum state via dual classical and Einstein–Podolsky–Rosen channels," *Physical Review Letters* **70** (1993) 1895–1899, for the Bell-basis measurement and its role in quantum information.
 - R. F. Werner, "All teleportation and dense coding schemes," *Journal of Physics A: Mathematical and General* **34** (2001) 7081–7094, for the classification of maximally entangled states and the role of the Bell basis.
 - S. L. Braunstein, A. Mann, and M. Revzen, "Maximal violation of Bell inequalities for mixed states," *Physical Review Letters* **68** (1992) 3259–3261, for the correlation structure of the Bell states.
+- Lidia Obojska, "Bi-particle entanglement and its quaternion representation," *Journal of Physics Communications* **2** (2018) 085021, for the reading of a bipartite state as the division of one particle, and "Patterns of maximally entangled states within the algebra of biquaternions," *Journal of Physics Communications* **4** (2020) 055018, for the twelve-pattern catalogue and the exhaustiveness claim examined in *A Claimed Enumeration of the Maximally Entangled States*.
 - The companion articles of this series: *Introduction to the Biquaternion Universe*, *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*, *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*, *Quantum Mechanics in Biquaternionic Form*, *Entangled Subsystems in the Biquaternion Framework*, *Exercise: Two Spins in the Singlet State*, and *Exercise: The Correlation Function of the Bell States*.

@@ -17,7 +17,7 @@ Making that distinction exact — saying precisely where the projection metaphor
 
 The article applies the dephasing channel derived in the companion article *Quantum Channels and the Reversible/Irreversible Dichotomy*. It does not re-derive that channel: the Kraus form, the Bloch-vector formula, and the limiting cases are taken from that article and used. The treatment is operational throughout: the states and channels are elements of and maps on $\mathbb{M}_+$, in the sense of *Quantum Mechanics in Biquaternionic Form*, and the interpretive hypothesis that $\mathbb{M}_+$ is a distinct physical sector is not required for anything below. The relation to *The Quantum–Classical Divide in the Biquaternion Framework* is taken up in a dedicated section.
 
-The article proceeds as follows: the idempotent characterization of pure states and the mixedness scalar; the dephasing channel and its effect on idempotency; the trajectory from the Bloch sphere into the ball; the two-sided answer to the title's question; the pointer basis and einselection; the relation to the quantum–classical divide; and an explicit account of what the framework does and does not explain.
+The article proceeds as follows: the idempotent characterization of pure states and the mixedness scalar; the dephasing channel and its effect on idempotency; the trajectory from the Bloch sphere into the ball; the two-sided answer to the title's question; the pointer basis and einselection; the relation to the quantum–classical divide; the decoherence-free singlet under collective noise, and the correction of a common overstatement of that immunity; and an explicit account of what the framework does and does not explain.
 
 ## The Idempotent and the State
 
@@ -250,6 +250,40 @@ Second, partial dephasing explains how a partition gets there. For $0<p<1$, the 
 
 Two qualifications keep this honest. First, decoherence does not remove the idempotents from the algebra; it removes the *coherences between them* from the state. The non-commuting idempotents still exist mathematically; what fails is that a decohered state can still be used to violate the kind of joint-measurement structure the quantum case needs. Second, the divide article's structural refinement — that quantum non-separability lives in a *fundamental* element of $\mathbb{M}_+^{\otimes n}$ while classical non-separability lives in a *derived* coherence matrix — is echoed here but with a caveat. Decoherence makes the reduced/system state a classical probability distribution over pointer idempotents, which has the profile of a derived element. But by Stinespring dilation the full system-plus-environment state remains a fundamental state of a larger algebra; the classicality is a feature of the discarded description, not of the world. The framework can express that, but it does not supply the environment that would make it a physical statement rather than a formal one.
 
+## Collective Dephasing and the Decoherence-Free Singlet
+
+A source in the literature closes with the claim that a maximally entangled system "remains immune to decoherence" (Obojska, *Journal of Physics Communications* **4** (2020) 055018). The claim is half right. The half that is right is a standard fact that the channel picture of this article states exactly, and the distinction that makes it half right is the distinction between **collective** and **local** noise.
+
+The singlet $\lvert\Psi^-\rangle$ is the standard example of a **decoherence-free subspace**. Take the dephasing of the preceding sections, but couple it to the *total* spin rather than to one qubit: the noise generator is
+
+$$
+\alpha\otimes e_0+e_0\otimes\alpha,\qquad \alpha=i\hat{\mathbf n},
+$$
+
+the same pointer observable applied to both qubits. Then the generator annihilates the singlet,
+
+$$
+\bigl(\alpha\otimes e_0+e_0\otimes\alpha\bigr)\lvert\Psi^-\rangle=0 ,
+$$
+
+so the singlet commutes with the collective generator and is invariant under the collective dephasing for every strength. In the language of the pointer basis, the singlet lies entirely in the fixed set of the collective channel: it is a pointer state. This is the sense in which the source's claim is correct.
+
+Independent local noise is different. Coupling the dephasing to one qubit only, with generator $\alpha\otimes e_0$, does not annihilate the singlet:
+
+$$
+(\alpha\otimes e_0)\lvert\Psi^-\rangle=\lvert\Psi^+\rangle ,
+$$
+
+up to the sign carried by $\alpha$. At full strength the local channel replaces the singlet by the separable mixture
+
+$$
+\tfrac{1}{2}\lvert01\rangle\langle01\rvert+\tfrac{1}{2}\lvert10\rangle\langle10\rvert ,
+$$
+
+the classical mixture of the two anti-aligned product states, of vanishing concurrence. So the singlet is not immune to local dephasing; no state is. The correct statement of the source's claim is: **a maximally entangled state can be immune to the part of the noise that acts collectively on the two subsystems, and the singlet is the canonical case; it is not immune to independent local noise.**
+
+Two remarks keep this in the framework's register. First, the two channels are the same dephasing map of the preceding sections, applied to the two-qubit algebra $\mathbb{B}\otimes\mathbb{B}$; what differs is the observable that is dephased — the total spin versus a single spin — and not the form of the map. Second, the immunity is a property of the *state*, not of the algebra: the collective fixed set is what it is whether or not the singlet occupies it. This is the many-qubit question that the single-qubit treatment of this article does not develop. The tensor-product structure is inherited, as the closing section notes, and the decoherence-free subspace is the first place where that inherited structure does physical work.
+
 ## What the Framework Does and Does Not Explain
 
 **What it does explain, or make exact.**
@@ -282,6 +316,8 @@ The title's phrase "idempotent projection" must therefore be read with care, and
 
 The pointer basis is the commutative $\dagger$-subalgebra of $\mathbb{B}$ generated by the two idempotents along $\hat{\mathbf{n}}$ (its Hermitian part lies in $\mathbb{M}_+$); its idempotents are the only pure states fixed by the channel, and the subalgebra is invariant under the $U(1)$ phase rotation they generate. The framework supplies this structure once $\hat{\mathbf{n}}$ is given, but it does not derive $\hat{\mathbf{n}}$, the environment, the rate, or the selection of an outcome. In the language of the quantum–classical divide, decoherence is the process by which a partition loses its incompatible idempotents — becoming, operationally, a classical simplex over the pointer states — while the underlying system-plus-environment state remains fundamental. That is what the algebra explains; what lies beyond it is the dynamics that the algebra does not contain.
 
+One many-qubit case belongs here because a source overstates it. The singlet $\lvert\Psi^-\rangle$ is a **decoherence-free** state for the part of the noise that acts collectively on the two qubits: the collective generator $\alpha\otimes e_0+e_0\otimes\alpha$ annihilates it, and it is fixed by the collective channel at every strength. It is not, however, immune to independent local dephasing, which drives it to the separable mixture $\tfrac12\lvert01\rangle\langle01\rvert+\tfrac12\lvert10\rangle\langle10\rvert$. The immunity is a property of one state under one channel, not of entanglement as such.
+
 ## Summary of Notation
 
 | Symbol | Meaning |
@@ -304,6 +340,8 @@ The pointer basis is the commutative $\dagger$-subalgebra of $\mathbb{B}$ genera
 | $\mathbf{r} \mapsto (1-p)\mathbf{r} + p(\hat{\mathbf{n}}\cdot\mathbf{r})\hat{\mathbf{n}}$ | Dephasing action on the Bloch vector |
 | $\Phi^{\mathrm{deph}}_p \circ \Phi^{\mathrm{deph}}_q = \Phi^{\mathrm{deph}}_{p+q-pq}$ | Composition law |
 | $\alpha = i\hat{\mathbf{n}}$, $\alpha^2 = e_0$ | Pointer observable |
+| $\alpha\otimes e_0+e_0\otimes\alpha$ | Collective dephasing generator (total spin) |
+| $\lvert\Psi^-\rangle = \tfrac{1}{\sqrt2}(\lvert01\rangle-\lvert10\rangle)$ | Singlet; decoherence-free for collective dephasing |
 | $A = \mathbb{C}\tilde\Pi_+ \oplus \mathbb{C}\tilde\Pi_-$ | Pointer (commutative) subalgebra |
 | $S(\tilde{\rho}) = -\lambda_+\log\lambda_+ - \lambda_-\log\lambda_-$ | Von Neumann entropy, $\lambda_\pm = \tfrac12(1\pm|\mathbf{r}|)$ |
 | $\Phi(\tilde{\rho}) = \sum_l \tilde{K}_l\tilde{\rho}\tilde{K}_l^\dagger$ | Kraus representation of a channel |
@@ -318,4 +356,5 @@ The pointer basis is the commutative $\dagger$-subalgebra of $\mathbb{B}$ genera
 - G. Lindblad, "On the generators of quantum dynamical semigroups," *Communications in Mathematical Physics* **48** (1976) 119–130, for the semigroup form of continuous decoherence.
 - D. Petz, *Quantum Information Theory and Quantum Statistics* (Springer, 2008), for trace-preserving conditional expectations and the fixed-point theory of completely positive maps.
 - N. Korolkova, L. Sánchez-Soto, and G. Leuchs, "An operational distinction between quantum entanglement and classical non-separability," arXiv:2405.15692 (2024), for the operational criterion discussed in the companion article on the quantum–classical divide.
+- Lidia Obojska, "Patterns of maximally entangled states within the algebra of biquaternions," *Journal of Physics Communications* **4** (2020) 055018, for the claim that a maximally entangled state is immune to decoherence, corrected in *Collective Dephasing and the Decoherence-Free Singlet*.
 - The companion articles of this series: *Quantum Mechanics in Biquaternionic Form*, *Quantum Channels and the Reversible/Irreversible Dichotomy*, *The Quantum–Classical Divide in the Biquaternion Framework*, and *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*.

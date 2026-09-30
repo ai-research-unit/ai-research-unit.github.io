@@ -196,6 +196,12 @@ $$
 $$
 There is no transverse term here: the longitudinal result is exact at every $\beta$ and involves only the line-of-sight component of the relative velocity.
 
+> **Remark (the same factor as an eigenvector transport factor).** The factor $\sqrt{(1-\beta)/(1+\beta)}$ of part (a) occurs a second time, in a different problem, in the mathematics literature on fields of Lorentz transformations. There an eigenvector of the transformation field at a point is followed from one observer to another, and the eigenvector seen by the observer of four-velocity $\tilde{U}$ is multiplied by a factor built from the two observers and the field. In the case where the field is null and the relative velocity $\mathbf{w}$ points along the propagation direction, the factor reduces to
+> $$
+> s_{u'} = \sqrt{\frac{1-w_r}{1+w_r}}\,s_u , \qquad w_r = \mathbf{w}\cdot\hat{\mathbf{r}} ,
+> $$
+> which is the receding longitudinal factor of part (a) with $w_r$ in place of $\beta$, obtained with no wave packet and no frequency. The source in question reads this factor as analogous to Berry's phase; the analogy is recorded and bounded in *The Berry Phase and Geometric Phases in Biquaternionic Form*, where the transport factor — real, and a function of the two observers and the field alone — is kept apart from the Berry phase, which is complex and history-dependent. Nothing in parts (a)–(c) above depends on this: they are the boost of the four-wavevector, and no eigenvector enters.
+
 ## Problem 4: Transverse Doppler — Two Distinct Effects
 
 **Statement.** (a) Case A: the observer's velocity is perpendicular to the ray *in the source frame*, $\theta = \pi/2$. Show that $\omega' = \gamma\omega_0$. (b) Case B: the source's velocity is perpendicular to the line of sight *in the observer frame*, $\theta' = \pi/2$. Show that this corresponds to $\cos\theta = \beta$ in the source frame, and that $\omega' = \omega_0/\gamma$. (c) Show that the two results differ by $\gamma^2$ and explain why there is no contradiction.
@@ -355,5 +361,6 @@ and find the angle that maximises it. (For $\beta = 0.99$ and $\Theta = 0.1$ rad
 - Lev Landau and Evgeny Lifshitz, *The Classical Theory of Fields* (Pergamon, 1975), for the four-vector derivation of the Doppler effect and the beaming of radiation.
 - J. D. Jackson, *Classical Electrodynamics* (Wiley, 1999), for the Doppler effect, aberration, and relativistic beaming in electromagnetic problems.
 - Hermann Bondi, *Relativity and Common Sense* (Doubleday, 1964), for the $k$-calculus derivation of the longitudinal Doppler factor.
+- D. H. Gottlieb, "Eigenbundles, Quaternions, and Berry's Phase," arXiv:math/0304281 [math.AT] (2003), for the eigenvector transport factor of a field of Lorentz transformations, which in the null case is the same expression as the longitudinal factor of Problem 3.
 - David Hestenes, *Space-Time Algebra* (Gordon and Breach, 1966), and Chris Doran and Anthony Lasenby, *Geometric Algebra for Physicists* (Cambridge, 2003), for the spacetime-algebra treatment of the wave four-vector and the Lorentz rotor.
 - The companion articles of this series: *Relativistic Mechanics in Biquaternionic Form*, *The Lorentz Transformation as a Biquaternionic Rotation*, and *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*.

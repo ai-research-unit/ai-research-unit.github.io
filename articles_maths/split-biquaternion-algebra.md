@@ -111,6 +111,58 @@ is an algebra isomorphism, where the multiplication on $\mathbb{H} \oplus \mathb
 
 The isomorphism is the reason the algebra is semisimple. It is not simple, because the two summands $\mathbb{H} \tilde\Pi_+$ and $\mathbb{H} \tilde\Pi_-$ are nontrivial two-sided ideals.
 
+### The Clifford Structure
+
+The algebra is also a Clifford algebra, of three generators of square $-1$ — the sign opposite to the generators of the biquaternion algebra's Clifford reading, where the three generators square to $+1$.
+
+**Proposition (the generators).** The three elements
+
+$$
+E_1 = je_1, \qquad E_2 = je_2, \qquad E_3 = je_3
+$$
+
+satisfy
+
+$$
+E_k^2 = -1, \qquad E_iE_j = -E_jE_i \quad (i \neq j),
+$$
+
+so that $\{E_i, E_j\} = -2\delta_{ij}$. They therefore generate a copy of the real Clifford algebra $\mathrm{Cl}(0,3)$.
+
+*Proof.* Because $j$ is central with $j^2=+1$ and the quaternion units satisfy $e_k^2=-1$ and $e_ie_j=-e_je_i$ for $i\neq j$,
+$$
+E_k^2 = j^2e_k^2 = -1, \qquad E_iE_j = j^2e_ie_j = -e_je_i = -E_jE_i .
+$$
+$\square$
+
+**Proposition (identification and volume element).** The eight monomials in $E_1,E_2,E_3$ are linearly independent and span $\mathbb{H}_{\mathbb{D}}$, so
+
+$$
+\mathbb{H}_{\mathbb{D}} \cong \mathrm{Cl}(0,3) \cong \mathrm{Cl}_{0,3},
+$$
+
+the Clifford algebra of a three-dimensional negative definite space. The volume element is
+
+$$
+E_1E_2E_3 = j^3(e_1e_2)e_3 = j\,e_3e_3 = -j,
+$$
+
+which is central with square $+1$; the Clifford idempotents $\tfrac12(1 \pm E_1E_2E_3) = \tfrac12(1 \mp j)$ are the idempotents $\tilde\Pi_\mp$ of the idempotent decomposition, with the index reversed.
+
+*Proof.* The monomials are the eight elements $\tilde\Pi_\pm$ times the quaternion basis and are independent; the product is immediate from $j^2=1$, $e_1e_2=e_3$ and $e_3^2=-1$. $\square$
+
+**Proposition (the complexification).** The complexification $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}_{\mathbb{D}}$ is the complex Clifford algebra
+
+$$
+\mathrm{Cl}(3) \cong \mathrm{Cl}_3(\mathbb{C}) \cong M_2(\mathbb{C}) \oplus M_2(\mathbb{C}) \cong \mathbb{B} \oplus \mathbb{B},
+$$
+
+whose two simple summands are the complexified quaternion halves; its volume element is the element $-j$, central and an involution, and it is the algebra studied in *Complex Split Biquaternions and the Clifford Algebra Cl(3)*.
+
+*Proof.* Complexification extends scalars, so the relations of the $E_i$ are unchanged and the complexified monomials are a basis; the classification of the odd complex Clifford algebras gives $\mathrm{Cl}_3(\mathbb{C})\cong M_2(\mathbb{C})\oplus M_2(\mathbb{C})$, and the complexified idempotent decomposition gives the two summands $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}\cong\mathbb{B}$. $\square$
+
+The Clifford reading is the reason the split biquaternion algebra is the natural lower rung of a doubling: its volume element is a central involution rather than a complex structure, so its complexification splits into two copies of the biquaternion algebra where the biquaternion algebra itself is simple.
+
 ### Multiplication
 
 The product of two split biquaternions is defined by extending the quaternion product split-complex-linearly. In developed form,
@@ -420,3 +472,4 @@ The quadratic form, the inner product, the norm and the Euclidean norm are a for
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the connection to Clifford algebras.
 - John H. Conway and Derek A. Smith, *On Quaternions and Octonions* (A K Peters, 2003), for the classification of real algebras.
 - F. Brackx, R. Delanghe, and F. Sommen, *Clifford Analysis* (Pitman, 1982), for the general Clifford analysis.
+- Companion article *Complex Split Biquaternions and the Clifford Algebra Cl(3)*, for the complexification of this algebra and its splitting into two biquaternion summands.

@@ -61,6 +61,8 @@ so it commutes with $\gamma_5$ and with each $P_{L,R}$. Chirality is therefore a
 
 **Why the halves are not the ideals.** The projectors above are not the Peirce projectors $p,q$. The minimal left ideals $\mathbb{B}p$ and $\mathbb{B}q$ are both isomorphic to $S$, and left multiplication by $\tilde{\Lambda}$ acts on each by the *same* defining representation; the chiral projectors instead act on the four-dimensional Dirac module and distinguish $\psi\mapsto g\psi$ from $\chi\mapsto\Phi(\tilde{\Lambda}^{*})\chi$. This distinction is invisible to the simple algebra $\mathbb{B}$ and appears only through the conjugate module — as the parent article stresses.
 
+**A second route to the same two halves.** The source recorded in *The Chiral Algebra of Biquaternions and the Cyclic Representation of the Dirac Equation* splits the biquaternion wave function itself, in the light-cone basis, into its **positive and negative signed parts** with respect to the null idempotents $N = \tfrac12(1,\mathbf n)$ and $\bar N$, and identifies the sign of the signed part with the chirality, $F^+\sim\psi_R$, $F^-\sim\psi_L$. That split is a Peirce split of the wave function, not the projector $\tfrac12(I_4\pm\gamma_5)$ on the Dirac module used in this problem. The two labellings agree only after the correspondence between that chiral algebra and the Weyl system, which that article verifies row by row; the projectors here act on $\Delta = S\oplus\bar S$, whereas the signed parts live in $\mathbb{B}$.
+
 ## Problem 2: The Two Weyl Halves and the Mass Term
 
 Take the mostly-minus counterpart of the parent's block gamma matrices,

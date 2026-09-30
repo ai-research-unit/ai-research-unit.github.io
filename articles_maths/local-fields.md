@@ -5,7 +5,7 @@
 
 A local field is a field carrying a nontrivial absolute value with respect to which it is complete and locally compact. The two Archimedean examples are $\mathbb{R}$ and $\mathbb{C}$; the non-Archimedean ones are the finite extensions of the $p$-adic fields $\mathbb{Q}_p$ and the finite extensions of the formal Laurent series fields $\mathbb{F}_p((t))$. The definition is topological: it asks that the distance on the field produce enough compactness for the field to behave like a field with a finite residue field and a discrete valuation. That combination of hypotheses is what makes the additive and multiplicative groups tractable — the additive group is locally compact, and the multiplicative group is abelian, locally compact, and built from a discrete copy of $\mathbb{Z}$ and a compact unit group — and it is why the local fields are the local objects of algebraic number theory.
 
-This article develops the definition, the classification theorem, the topology of a non-Archimedean local field, its residue field and ramification invariants, and the structure of its multiplicative group. It assumes *Absolute Values, Valuations and Completions*, from which the absolute values, valuation rings, residue fields and completions are taken, and *Topological Rings and Fields*, from which the $I$-adic topologies and completions are taken. The arithmetic of local fields — class field theory, the local reciprocity law, and the use of local data to describe global fields — belongs to Part I and is cited rather than developed. The analysis over a local field — power series, integration, differential equations, and analytic functions in the non-Archimedean sense — belongs to Part III, where the limit and the measure are available. The application articledevelops the standard example concretely, and the geometry of a valued field — rigid analytic, Berkovich, adic and perfectoid spaces — occupies the other articles of this Part.
+This article develops the definition, the classification theorem, the topology of a non-Archimedean local field, its residue field and ramification invariants, the structure of its multiplicative group, and the anisotropy of its quadratic forms. It assumes *Absolute Values, Valuations and Completions*, from which the absolute values, valuation rings, residue fields and completions are taken, and *Topological Rings and Fields*, from which the $I$-adic topologies and completions are taken. The arithmetic of local fields — class field theory, the local reciprocity law, and the use of local data to describe global fields — belongs to Part I and is cited rather than developed. The analysis over a local field — power series, integration, differential equations, and analytic functions in the non-Archimedean sense — belongs to Part III, where the limit and the measure are available. The application articledevelops the standard example concretely, and the geometry of a valued field — rigid analytic, Berkovich, adic and perfectoid spaces — occupies the other articles of this Part.
 
 Throughout, $F$ is a local field, $\lvert \cdot \rvert$ its absolute value, $\mathcal{O}$ its valuation ring, $\mathrm{M}$ its maximal ideal, $k = \mathcal{O}/\mathrm{M}$ its residue field and $\Gamma = \lvert F^\times \rvert$ its value group, in the notation of *Absolute Values, Valuations and Completions*. A uniformiser is written $\pi$, and $q = \lvert k \rvert$ denotes the cardinality of the residue field.
 
@@ -171,6 +171,32 @@ for $n \geq 1$.
 
 ---
 
+## Quadratic Forms over a Local Field
+
+### The Residue Forms
+
+The residue field decides not only the topology of a non-Archimedean local field but also the anisotropy of its quadratic forms, by a criterion of Springer. The criterion is stated for a complete discretely valued field, of which a local field is the case of finite residue field, and it is the tool that reduces a question over such a field to two questions over the residue field. Throughout this section $F$ is complete for a discrete valuation, with $\mathcal{O}$, $\mathrm{M} = (\pi)$, $k = \mathcal{O}/\mathrm{M}$ and $\mathcal{O}^\times$ as above, and $\operatorname{char} F \neq 2$, so that every form is diagonalisable.
+
+Every element of $F^\times$ is a unit times a power of the uniformiser, $x = \pi^{v(x)}u$; the factor $\pi^{2m}$ is a square, and multiplying a diagonal entry by a square does not change the isometry class of the one-dimensional form it spans, so every form may be written, after a change of each diagonal entry by a square, as
+
+$$
+\phi = \phi_1 \perp \langle \pi \rangle \phi_2, \qquad \phi_1 = \langle u_1, \ldots, u_r\rangle, \qquad \phi_2 = \langle u_{r+1}, \ldots, u_n\rangle,
+$$
+
+with all the $u_i$ in $\mathcal{O}^\times$. Reduction modulo $\mathrm{M}$ gives two forms over the residue field: the **first residue form** $\overline{\phi_1} = \langle \overline{u_1}, \ldots, \overline{u_r}\rangle$, of dimension $r$, and the **second residue form** $\overline{\phi_2} = \langle \overline{u_{r+1}}, \ldots, \overline{u_n}\rangle$, of dimension $n - r$.
+
+**Theorem (Springer's theorem on CDV fields).** Let $F$ be complete for a discrete valuation with residue field $k$, uniformiser $\pi$ and unit group $\mathcal{O}^\times$, and assume $\operatorname{char} F \neq 2$. Let $\phi = \phi_1 \perp \langle \pi \rangle \phi_2$ be a quadratic form over $F$ written with all coefficients of $\phi_1$ and of $\phi_2$ in $\mathcal{O}^\times$. Then $\phi$ is anisotropic over $F$ if and only if both residue forms $\overline{\phi_1}$ and $\overline{\phi_2}$ are anisotropic over $k$.
+
+*Proof sketch.* The direction used in the applications below, that anisotropy of both residue forms forces $\phi$ anisotropic, is elementary. Suppose $\phi(x) = 0$ with $x \neq 0$, and scale $x$ so that $\min_i v(x_i) = 0$. The terms $u_ix_i^2$ of $\phi_1$ have even valuation $2v(x_i)$, and the terms $\pi u_{r+i}x_{r+i}^2$ of $\langle \pi \rangle \phi_2$ have odd valuation $1 + 2v(x_{r+i})$; since some coordinate is a unit, the least valuation of a term is $0$ or $1$, and the terms attaining it must sum to zero. Reducing modulo $\mathrm{M}$ gives a nontrivial zero of $\overline{\phi_1}$ in the first case and of $\overline{\phi_2}$ in the second, so an isotropic $\phi$ has an isotropic residue form. The converse direction lifts a zero of a residue form to a zero of $\phi$ over $F$ and uses that $F$ is complete, hence Henselian, with residue characteristic different from $2$; it is quoted as standard (Lam, *Introduction to Quadratic Forms over Fields*, Chapter VI, §1).
+
+**Corollary (anisotropy descends from a completion).** Let $F$ be a field with a discrete valuation and let $\widehat{F}$ be its completion. If $\phi \otimes_F \widehat{F}$ is anisotropic over $\widehat{F}$, then $\phi$ is anisotropic over $F$; and by the theorem the hypothesis is decided by the two residue forms of $\phi \otimes_F \widehat{F}$ over the residue field of $\widehat{F}$. This is the passage by which a norm form or an Albert form is proved anisotropic over a number field or a rational function field: the form is extended to a $p$-adic field or to an iterated Laurent series field, where the criterion applies and the residue forms are small.
+
+**Corollary (the dimensions of the anisotropic forms).** Let $F$ be a non-Archimedean local field of odd residue characteristic. Then every quadratic form over $F$ of dimension at least $5$ is isotropic, and there is an anisotropic form of dimension $4$, the norm form of the quaternion division algebra over $F$.
+
+*Proof.* If $\phi$ is anisotropic of dimension $n$, its two residue forms are anisotropic over the finite residue field, of dimensions $r$ and $n - r$ that sum to $n$; over a finite field of odd characteristic no form of dimension at least $3$ is anisotropic, by *Witt's Theorems*, so $r \leq 2$ and $n - r \leq 2$, giving $n \leq 4$. The bound is attained because the Brauer group of a local field has nontrivial two-torsion, so that a quaternion division algebra over $F$ exists (*Class Field Theory*), and its norm form is an anisotropic form of dimension $4$ (*Quadratic Forms over Algebras and Norms*).
+
+---
+
 ## Ramification and the Galois Theory
 
 ### The Invariants
@@ -227,7 +253,7 @@ A **local field** is a field complete with respect to a nontrivial absolute valu
 
 Topologically, $\mathcal{O}$ and each $\mathrm{M}^n$ are compact and open, $\mathcal{O}$ splits into $q = \lvert k \rvert$ residue classes each of diameter $\lvert \pi \rvert$, the field $F$ is $\sigma$-compact but not compact, and it is totally disconnected, metrisable, Hausdorff, complete and second countable. Every finite extension of a non-Archimedean local field is a local field for the unique extension of the absolute value, with $[F : K] = ef$ for the ramification index $e$ and the residue degree $f$; the extension is unramified when $e = 1$, totally ramified when $f = 1$, and for each $n$ there is a unique unramified extension of degree $n$, obtained by adjoining a primitive $(q^n - 1)$-th root of unity, with cyclic Galois group generated by the Frobenius.
 
-The multiplicative group decomposes topologically as $F^\times \cong \mathbb{Z} \times \mathcal{O}^\times$ with $\mathcal{O}^\times$ compact and open; the filtration $U^n = 1 + \mathrm{M}^n$ of the principal units has $U^n/U^{n+1} \cong k^+$ and exhibits $\mathcal{O}^\times$ as a profinite group, with the Teichmüller splitting $\mathcal{O}^\times \cong \mu_{q-1}(F) \times U^1$. Hensel's lemma lifts simple roots modulo $\mathrm{M}$ and is the tool that makes the unramified theory explicit. The Galois group of a finite Galois extension of a non-Archimedean local field is solvable, with the ramification filtration as its abelian layers. Every global field has local fields as its completions at places, and this passage is the beginning of the adelic theory.
+The multiplicative group decomposes topologically as $F^\times \cong \mathbb{Z} \times \mathcal{O}^\times$ with $\mathcal{O}^\times$ compact and open; the filtration $U^n = 1 + \mathrm{M}^n$ of the principal units has $U^n/U^{n+1} \cong k^+$ and exhibits $\mathcal{O}^\times$ as a profinite group, with the Teichmüller splitting $\mathcal{O}^\times \cong \mu_{q-1}(F) \times U^1$. Hensel's lemma lifts simple roots modulo $\mathrm{M}$ and is the tool that makes the unramified theory explicit. The same completeness decides the quadratic forms: by Springer's theorem a form over $F$ is anisotropic exactly when both of its residue forms over the finite residue field are anisotropic, so no form of dimension at least $5$ is anisotropic over a non-Archimedean local field of odd residue characteristic. The Galois group of a finite Galois extension of a non-Archimedean local field is solvable, with the ramification filtration as its abelian layers. Every global field has local fields as its completions at places, and this passage is the beginning of the adelic theory.
 
 ## Summary of Notation
 
@@ -253,6 +279,8 @@ The multiplicative group decomposes topologically as $F^\times \cong \mathbb{Z} 
 | $K$, $K_w$ | A global field and its completion at a place $w$ |
 | $\mathbb{Q}_p$, $\mathbb{Z}_p$, $\mathbb{F}_p((t))$, $\mathbb{F}_p[[t]]$ | The prime examples |
 | $\mathbb{C}_p$ | Completion of $\overline{\mathbb{Q}_p}$, complete but not locally compact |
+| $\phi = \phi_1 \perp \langle \pi \rangle \phi_2$ | A quadratic form over $F$, split into the unit part $\phi_1$ and the part $\langle \pi \rangle \phi_2$ |
+| $\overline{\phi_1}$, $\overline{\phi_2}$ | First and second residue forms over $k$ |
 
 
 
@@ -269,3 +297,4 @@ The multiplicative group decomposes topologically as $F^\times \cong \mathbb{Z} 
 - Neal Koblitz, *p-adic Numbers, p-adic Analysis, and Zeta-Functions* (Springer, 2nd ed. 1984), for the elementary structure of $\mathbb{Q}_p$ and its extensions.
 - Fernando Q. Gouvêa, *p-adic Numbers: An Introduction* (Springer, 2nd ed. 1997), for accessible proofs of Hensel's lemma and of the structure of $\mathbb{Z}_p^\times$.
 - John W. Milnor, *Introduction to Algebraic K-Theory* (Princeton, 1971), for the local-field computations that recur in K-theory and class field theory.
+- T. Y. Lam, *Introduction to Quadratic Forms over Fields* (American Mathematical Society, 2005), Chapter VI, for the residue forms and Springer's theorem on quadratic forms over a complete discretely valued field.

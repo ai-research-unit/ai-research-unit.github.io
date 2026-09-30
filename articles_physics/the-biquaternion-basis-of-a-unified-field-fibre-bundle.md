@@ -1,0 +1,239 @@
+# __The Biquaternion Basis of a Unified-Field Fibre Bundle__
+
+## Introduction
+
+The corpus meets the biquaternion algebra from inside its own programme: the algebra is chosen, the physical readings are then made, and every claim is a claim about what follows from the choice. This article records a source that arrives from the opposite direction. Its author is not working in the biquaternion programme and does not use the corpus's conventions; he asks what fermionic representations a unified field theory can carry, and reports that the **basis of the principal fibre bundle** underlying that theory is naturally biquaternionic rather than complex. The paper is D. J. Cirilo-Lombardo, "Algebraic structures, physics and geometry from a Unified Field Theoretical framework", arXiv:1411.5493v3 [hep-th] (JINR Dubna, 2015).
+
+The article has one job and it is deliberately narrow. It takes the algebra the source displays, rewrites it in the corpus's dictionary, and checks the identities that can be checked by recomputation. Where the source's claim is a framework claim — the G-structure, the reduced tangent bundle, the incompleteness of Rothstein's theorem, the supermanifold construction — the article records the claim and says that it is a claim. Nothing here endorses the source's programme, and nothing here uses it as evidence for the corpus's: one paper that finds the algebra natural shows that the algebra *can* be found, not that it must be.
+
+Two of the source's displays turn out to be exactly the corpus's own objects, and finding them is the substance of the article. The structural group $G$ of the source's bundle is assembled blockwise from the two halves of the single $2\times2$ matrix $Q = A - iB$, which is itself $\Phi(\tilde Q)$ for one biquaternion $\tilde Q$ built from a four-momentum; and the source's demand that $G$ be inverted by its own "conjugate transpose" is the corpus's statement that $\tilde Q$ has unit norm. One of the source's claims, by contrast, does not reproduce: the Lorentzian metric that the source says is invariant under $G$ "due to its general form" is not invariant under $G$ in any of the standard signatures, and the article records that as a discrepancy rather than repairing it.
+
+The conventions are the corpus's and none is redefined. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis $e_0 = 1, e_1, e_2, e_3$ satisfying $e_k^2 = -e_0$ and $e_1e_2 = e_3$, and central scalar imaginary $i$. The matrix representation is the corpus's $\Phi$, with
+
+$$
+\Phi(e_0) = I_2, \qquad \Phi(e_k) = -i\sigma_k, \qquad \Phi(i) = iI_2 ,
+$$
+
+and the biquaternion norm is $N(\tilde Q) = \tilde Q\bar{\tilde Q}$, a complex number equal to the determinant of $\Phi(\tilde Q)$. The Hermitian and anti-Hermitian subspaces are $\mathbb{M}_+ = \{\tilde Q : \tilde Q^\dagger = \tilde Q\}$ and $\mathbb{M}_-$; the real form of the source's algebra is the corpus's $\mathrm{Cl}_{1,3}(\mathbb{R}) \cong M_2(\mathbb{H})$, whose complexification is $M_4(\mathbb{C})$. The conventions and the subspaces are the subjects of *Conventions in the Biquaternion Universe*, *The Hermitian Subspace M+ as the Informational Sector* and *The Anti-Hermitian Subspace M- as the Material Sector*, and the matrix dictionary is *The Dirac Algebra and Biquaternions: A Dictionary*.
+
+## The Source, Its Bundle, and Its Structural Group
+
+The source works from a unified field theory it had proposed earlier, and its first structural object is a principal fibre bundle $P(G, M)$ over the real spacetime manifold $M$, whose structural group $G$ is meant to reflect the symmetries of the different fields. The paper's opening claim is that this bundle is the *single* geometrical structure of the theory — all matter and energy content comes from the same manifold — and its first technical claim, its Eq. (2), is that $G$ has the general form
+
+$$
+G = \begin{pmatrix} A & B \\ -B & A \end{pmatrix}, \qquad A, B \ \ 2\times2 \ \ \text{matrices} .
+$$
+
+$G$ is next written as $G = A\,I_4 + B\,J$ with $J$ the almost complex structure of the source's Eq. (3), $J = \begin{pmatrix} 0 & \sigma_0 \\ -\sigma_0 & 0\end{pmatrix}$; the source calls the structure manifestly symplectic, and it exhibits three fundamental tensors built from $G$: $J$, a Lorentzian metric $g$ of signature $(+,-,-,-)$, and a third fundamental tensor $\sigma_{\lambda\mu}$, with the relations between the three in its Eq. (5). It then imposes $G^+G = I_4$ — the condition whose meaning the next sections fix — and states the three compatibility conditions $\nabla_\lambda g_{\mu\nu} = 0$, $\nabla_\nu\sigma_{\lambda\mu} = 0$ and $\nabla_\lambda J^{\nu\lambda} = 0$ in its Eqs. (14)–(16), with the remark that only two are independent. Two verifiable details belong here as well, and both are slips against the source's own printed matrices: the printed square relation $J_\mu{}^\lambda J_\lambda{}^\nu = \delta_\mu{}^\nu$ needs a minus, since $J^2 = -I_4$ exactly; and the printed $\gamma_0$ of Eq. (28) is not a Clifford generator, as the Majorana section below shows.
+
+Three of the later sections then draw the physical conclusions. The real Dirac structure of the manifold and the fermionic representations built on it are read algebraically (Sections II and IV); the Majorana representation and the non-compact structure behind the second signature follow (Sections V–VI); the relation between the signatures and the dynamics, with the non-Hermitian CP operators, is drawn in Section VII; and the geometry is re-read as a G-structure on the tangent bundle $T(M)$, with the claim that the framework alters the spacetime structure rather than living on a fixed curved background (Sections VIII–IX, and the concluding list).
+
+The corpus's interest is in that algebraic route and in the fact that the source takes it without the corpus's vocabulary. The source's own reason for expecting a biquaternion is stated in its Section I: the only generalized quaternion algebra over $\mathbb{C}$ is the ring of $2\times2$ matrices over $\mathbb{C}$. That is the corpus's own isomorphism $\mathbb{B} \cong M_2(\mathbb{C})$, and it is the one identification that the two programmes share verbatim.
+
+## The Dictionary: the Biquaternion Behind the Structural Group
+
+The source writes its spinorial content in a $2\times2$ matrix $Q = a_0\sigma_0 - i\boldsymbol\sigma\!\cdot\!\mathbf a$, with $a_0$ and the three $a_k$ the coefficients of the theory, and it determines them physically in its Eqs. (19)–(21):
+
+$$
+a_0 = \frac{p_0}{m}, \qquad a_k = i\,\frac{p_k}{m}, \qquad
+\text{and} \qquad a_0^2 + a_1^2 + a_2^2 + a_3^2 = 1 .
+$$
+
+The printed sum is only consistent with the printed coefficients because the $a_k$ are **imaginary**: with $a_k = i p_k/m$ the three squared terms are negative, and the condition reads $p_0^2 - \mathbf p^2 = m^2$, which is the source's own Eq. (21). In the corpus's dictionary this is immediate. Writing $\mathbf a = i\,\mathbf p/m$ and $\tilde Q = a_0 + \mathbf a\!\cdot\!\mathbf e$,
+
+$$
+\Phi(\tilde Q) = a_0 I_2 + \frac{\mathbf p}{m}\!\cdot\!\boldsymbol\sigma = Q ,
+$$
+
+a **Hermitian** $2\times2$ matrix with real diagonal, and
+
+$$
+N(\tilde Q) = a_0^2 + a_1^2 + a_2^2 + a_3^2 = 1
+$$
+
+with the same imaginary squares, i.e. the source's unit-norm condition and the source's mass shell are the two faces of one identity. Both were verified: $\Phi(\tilde Q)$ reproduces the printed $Q$ exactly, and over forty random four-momenta
+
+$$
+\tilde Q\bar{\tilde Q} = N(\tilde Q)\,I_2 , \qquad N(\tilde Q) = \frac{p_0^2-\mathbf p^2}{m^2},
+$$
+
+with a worst deviation of $1.4\times10^{-14}$ off the mass shell and $1.1\times10^{-14}$ on it. The source's Eq. (19) is the normalised form of $N(\tilde Q) = 1$.
+
+The placement of $\tilde Q$ in the corpus's subspaces is the part the source does not say and the corpus can. With $a_0$ real and the $a_k$ imaginary, $\tilde Q = a_0 + i\boldsymbol\beta\!\cdot\!\mathbf e$ with all four coefficients real; that is a Hermitian biquaternion,
+
+$$
+\tilde Q^\dagger = \tilde Q ,
+$$
+
+so the source's structural object is an element of the **informational sector** $\mathbb{M}_+$. The verification gives a residual of $0$ for $\tilde Q^\dagger - \tilde Q$ and a vector part with vanishing real components. Its norm is the $\mathbb{M}_+$ norm, of signature $(1,3)$ in the basis $(e_0, ie_1, ie_2, ie_3)$ because $(ie_k)^2 = +e_0$, and the mass shell is the level set $N = 1$. The corpus's own material four-momentum $\tilde P = ip_0 + \mathbf p\!\cdot\!\mathbf e$ is in the other sector, $\mathbb{M}_-$, and carries the same physical content in the opposite normalisation, $N(\tilde P) = -m^2$. The two descriptions are the corpus's two-sided structure, and the source's $Q$ and $A - iB$ are the first of them.
+
+**A reading the corpus declines.** Because the printed $a_k$ are imaginary, the source's $Q$ is Hermitian, with a real diagonal and two conjugate off-diagonal entries. A reader who takes the printed sum $a_0^2+a_1^2+a_2^2+a_3^2=1$ with **real** $a_k$ obtains a different object, whose shell would be Euclidean, $p_0^2 + \mathbf p^2 = m^2$, and which the corpus's four-momentum reading excludes. The imaginary coefficients are not a typographical accident: they are what makes the printed relation match the printed relativistic relation. The point is recorded because the two readings coexist in the printed page and only one of them is the source's.
+
+## The Block Matrix, the Meaning of Its Conjugate Transpose, and the Invariant Form That Was Not Reproduced
+
+The source's $G$ is then assembled from the same pair of blocks. With $A = a_0\sigma_0$ and $B = \boldsymbol\sigma\!\cdot\!\mathbf a$ — the two halves of its own display $Q = A - iB$ — the source's Eqs. (3) and (4) give
+
+$$
+J = \begin{pmatrix} 0 & \sigma_0 \\ -\sigma_0 & 0 \end{pmatrix}, \qquad G = A\,I_4 + B\,J ,
+$$
+
+which is the Kronecker form $G = I_2\otimes A + J_2\otimes B$. Both parts of the display were verified: $J^2 = -I_4$ exactly, so $J$ is an almost complex structure, and $I_2\otimes A + J_2\otimes B - G = 0$ exactly. The matrix $G$ commutes with $J$, so the block construction is complex-linear in the auxiliary unit, and at the physical point $G$ is Hermitian, $G^\dagger = G$, with residual $0$.
+
+**The block form is not the realification of $Q$.** The shape of $G$ invites the reading that $G$ is the real $4\times4$ form of the complex matrix $Q$, in the way that $\begin{pmatrix} A & -B \\ B & A\end{pmatrix}$ is the real form of $A + iB$. The corpus checked that reading and it fails: with the physical coefficients the two differ by $0.65$ at the tested point. The reason is algebraic and worth stating, because it is what makes the meaning of the source's conjugate transpose non-obvious. The pair $(A,B)$ is not a real matrix split into real and imaginary parts. The blocks are Hermitian and anti-Hermitian respectively — $A^\dagger = A$ and $B^\dagger = -B$, both with residual $0$ — so the source's $Q = A - iB$ is Hermitian, as it must be, while the block assembly treats $A$ and $B$ as two independent blocks in the auxiliary unit $J$. The assembly is the regular representation of the *pair*, not the real form of the numeric matrix.
+
+The source's unitarity condition is the next identity, and it is here that the corpus's dictionary fixes what the source's symbol means. The source writes $(a_0\sigma_0)^2 + (\boldsymbol\sigma\!\cdot\!\mathbf a)^2 = 1$ for the diagonal of $G^+G$. Verified with the physical $a$ and with
+
+$$
+G^+ = \begin{pmatrix} A & -B \\ B & A \end{pmatrix},
+$$
+
+that is, with the transpose taken together with the **quaternionic conjugation** $B \mapsto -B$ of the block, the identity $G^+G = N(\mathbf a)\,I_4$ holds with a worst deviation of $1.1\times10^{-16}$, and on the mass shell it is $G^+G = I_4$. The same identity with the **matrix** adjoint fails: $G^\dagger G - I_4$ is $2.5$ at the tested point. This is the corpus's distinction between the algebra's dagger and the quaternionic conjugation, and the source's $+$ is the second. The reading is confirmed rather than assumed, and it had to be, because the two are indistinguishable while the coefficients are real.
+
+**A claim that did not reproduce, and the computation that decides it.** The source asserts, after its Eq. (2), that there exists a Lorentzian metric $g_{\lambda\mu}$ of signature $(+,-,-,-)$ invariant under $G$ "due to its general form (2)". The paper's own equations defeat the sentence. With $A = a_0\sigma_0$ and $B = \boldsymbol\sigma\!\cdot\!\mathbf a$, direct multiplication gives
+
+$$
+G^{\mathsf T} G = \begin{pmatrix} A^2 + B^{\mathsf T}B & AB - B^{\mathsf T}A \\ B^{\mathsf T}A - AB & A^2 + B^{\mathsf T}B \end{pmatrix},
+$$
+
+whose off-diagonal block is $a_0(B - B^{\mathsf T})$ and so vanishes exactly when the coefficient of $\sigma_2$ vanishes, $\sigma_2$ being the one antisymmetric Pauli matrix. On that slice $G^{\mathsf T}G = N(\mathbf a)I_4$ exactly — the source's own unit-norm condition — and the source's $G^+ = \begin{pmatrix} A & -B \\ B & A\end{pmatrix}$ **is** the ordinary transpose, so Eq. (2)'s $G^+G = I_4$ reads literally as $G^{\mathsf T}\delta\,G = \delta$. The symmetric form Eq. (2) fixes is therefore the **Euclidean** $\delta$, of signature $(4,0)$, and not a Lorentzian one. $G$ also commutes with $J$ and preserves it, $G^{\mathsf T}JG = J$. Both identities were verified exactly, residual $0$, at six rational points on the sphere and at the physical point $p = (5,3,0,0)$, $m = 4$; off that slice neither holds, and the two residuals are equal.
+
+The whole space of invariant symmetric forms can then be computed, and it contains no Lorentzian element. On the slice, $G = a_0I_4 + B\,J$ with $B$ symmetric, hence $G = a_0 I_4 + |\mathbf b|\,\mathcal L$ for the almost complex structure $\mathcal L = BJ/|\mathbf b|$, $\mathcal L^2 = -I_4$; a symmetric form invariant under $G$ must commute with $\mathcal L$, and such a form has its eigenvalues in $\pm$ pairs, so its signature is $(4,0)$, $(0,4)$ or $(2,2)$ — never $(1,3)$, never $(3,1)$. Solved exactly in rational arithmetic, the space is four-dimensional at each of six rational points on the sphere; over a hundred integer combinations of its basis elements the signatures realised were $(2,2)$, $(4,0)$, $(0,4)$, $(2,0)$ and $(0,2)$; and for the group generated by three of those $G$ the invariant symmetric form is one-dimensional and Euclidean. Where the $\sigma_2$-coefficient does not vanish the space changes — four-dimensional with signatures $(2,2)$ and the degenerate $(1,1)$ at the physical point $p=(5,0,3,0)$, $m=4$ and at a real point with $a_2 = 4/5$, and empty at the physical point $p=(0,5,3,0)$, $m=4$ — and no Lorentzian form appears in any of them either. The sentence therefore cannot be repaired by choosing another metric, and Eq. (7)'s $G \subset L(4)$ is where the discrepancy enters: the displayed $G$ is compact — unitary, hence Euclidean-orthogonal — and not Lorentz-orthogonal. The citation the sentence carries, the source's [31] (Bishop and Goldberg, *Tensor Analysis on Manifolds*, ch. 5 p. 208), is given "about the meaning of Lorentz metric" — a definition, not a derivation from Eqs. (2)–(4).
+
+The earlier, weaker check is subsumed by this one. Over sixty random $G$ built from real unit $a$ on the sphere, and at the physical point built from the imaginary $a$, none of $\mathrm{diag}(+1,-1,-1,-1)$, $\mathrm{diag}(-1,+1,+1,+1)$, $\mathrm{diag}(+1,+1,-1,-1)$ and its negative, the split form $\begin{pmatrix}0&I_2\\ I_2&0\end{pmatrix}$ or the Euclidean form satisfied $G^{\mathsf T}g\,G = g$, the residuals being of order $2$; the Euclidean form is the one candidate that does, on the slice the computation above isolates, which is why a search over candidates could not settle the sentence.
+
+## The Majorana Transform: the Verified Effect and Two Printed Slips
+
+The source's Section V performs Majorana's 1937 transformation on the same $G$, with the aim stated in its own words: to obtain a unitary transformation for which the Dirac equation becomes "with real coefficients and symmetric for both: fermions and antifermions". The transformation is the Weyl-basis charge conjugation,
+
+$$
+U = U^{-1} = \frac{1}{\sqrt2}\begin{pmatrix} \sigma_0 & \sigma_2 \\ \sigma_2 & -\sigma_0 \end{pmatrix} ,
+$$
+
+attributed by the source to Majorana. It was verified to be unitary and involutive, $U^\dagger U = U^2 = I_4$, with a worst deviation of $2.2\times10^{-16}$.
+
+The source's own generators are printed in its Eq. (28) as $\gamma_0 = \sigma_0\oplus\sigma_0$ with $\gamma_k = \begin{pmatrix} 0 & -\sigma_k \\ \sigma_k & 0\end{pmatrix}$. As printed they are **not** a Clifford set: $\{\gamma_0,\gamma_k\} = 2\gamma_k$, which does not vanish, so the displayed $\gamma_0$ has lost a sign and must be $\sigma_0\oplus(-\sigma_0)$. With that single correction the four generators satisfy the whole algebra for the metric $\mathrm{diag}(+1,-1,-1,-1)$ — every square and every anticommutator verified exactly. The correction does not touch $G$ itself, because the source writes $G = a_0I_4 + \boldsymbol\gamma\!\cdot\!\mathbf a$ with the identity, not $\gamma_0$, in the timelike slot.
+
+**The verified effect.** The source's Eq. (34) is the transformation the corpus needs, and with it the source's stated purpose is achieved. Recomputing $G' = UGU^{-1}$ term by term and recomposing it gives
+
+$$
+G' = a_0 I_4 + \gamma'_1 a_1 + \gamma'_2 a_2 + \gamma'_3 a_3
+$$
+
+with a residual of $4.4\times10^{-16}$, so the printed transforms are consistent with the printed $U$. The recomputed $\gamma'_1$ and $\gamma'_3$ are $i\,\mathrm{diag}(\sigma_3,\sigma_3)$ and $-i\,\mathrm{diag}(\sigma_1,\sigma_1)$, the same matrices as the printed $i\sigma_3\otimes\sigma_0$ and $-i\sigma_1\otimes\sigma_0$ with the Kronecker factors exchanged, and $\gamma'_2$ is the printed $\begin{pmatrix} 0 & -\sigma_2 \\ \sigma_2 & 0\end{pmatrix}$. Each $\gamma'$ is purely imaginary, and because the source's own $a_k$ are purely imaginary the product $\boldsymbol\gamma'\!\cdot\!\mathbf a$ is real. The recomputed $G'$ is therefore **real and symmetric** — the imaginary part vanishes identically and $|G' - G'^{\mathsf T}| = 0$. That is the source's stated purpose, and it is confirmed.
+
+**Two printed slips.** The diagonal block of the printed $G'$ in the source's Eq. (38) is $a_0\sigma_0 + i(\sigma_3a_1 + \sigma_1a_3)$; the recomputation gives $a_0\sigma_0 + i(\sigma_3a_1 - \sigma_1a_3)$, the two differing by $2i\sigma_1a_3$, which is $1.05$ in the units of the tested point. And the printed sentence that $G'$ and its transpose satisfy $G'G'^{\mathsf T} = G'^{\mathsf T}G' = I_4$ does not reproduce: because the recomputed $G'$ is real symmetric, both products are $G'^2$, and $G'^2 - I_4$ is $4.4$ at the same on-shell point. The identity the corpus verified is the quaternionic one *before* the transformation, $G^+G = N(\mathbf a)I_4 = I_4$ on the mass shell; the corpus records the post-transformation sentence as not reproduced and does not repair it.
+
+## The Non-Compact Triple, the (2+2) Signature, and the Two Real Forms
+
+The source's Section VI introduces a second triple of $2\times2$ matrices, and this one the corpus can check completely:
+
+$$
+\sigma_\alpha = \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix}, \qquad
+\sigma_\beta = \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}, \qquad
+\sigma_\gamma = \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix} ,
+$$
+
+with the products $\sigma_\alpha\wedge\sigma_\beta = \sigma_\gamma$, $\sigma_\beta\wedge\sigma_\gamma = \sigma_\alpha$ and $\sigma_\gamma\wedge\sigma_\alpha = -\sigma_\beta$, the wedge being the antisymmetrised product. All three relations hold exactly: the matrices are real and traceless, the products are $\sigma_\alpha\sigma_\beta = \sigma_\gamma$, $\sigma_\beta\sigma_\gamma = \sigma_\alpha$ and $\sigma_\gamma\sigma_\alpha = -\sigma_\beta$, and the antisymmetrisation reproduces the three printed relations with residuals $0$. These are the generators of $\mathfrak{sl}(2,\mathbb{R})$, the **split real form** of the triple the corpus meets as $\mathfrak{su}(2)$ through the Pauli matrices; the compact analogue satisfies $[\sigma_1,\sigma_2] = 2i\sigma_3$ against the source's $[\sigma_\alpha,\sigma_\beta] = 2\sigma_\gamma$, and the difference of the two is one factor of $i$. The middle matrix carries the source's non-compactness and the paper says so: $\sigma_\beta = -i\sigma_2$, hence $\sigma_\beta^2 = -I_2$ while $\sigma_\gamma^2 = +I_2$, both verified.
+
+The triple is the algebraic content of the source's other signature, and the source shows the mechanism rather than asserting it. Its Eq. (43) repeats the unit-norm condition of Eq. (19) with the sign of the second coefficient reversed,
+
+$$
+a_0^2 + a_1^2 - a_2^2 + a_3^2 = 1 ,
+$$
+
+and the paper attributes the change to $\sigma_\beta^2 = (-i\sigma_2)^2 = -1$ in the non-compact substructure. With the same coefficients $a_0 = p_0/m$ and $a_k = ip_k/m$ this is the $(2{+}2)$ mass relation $p_0^2 - p_1^2 + p_2^2 - p_3^2 = m^2$, verified exactly, against the $(1,3)$ relation of Eq. (21). The source itself then says that "the physical role of the coefficients $a$ cannot be easily identified as before" and lists two possibilities; the corpus records both the mechanism and the admission. The paper's wider claim is that the non-compact $\mathrm{SL}(2,\mathbb{R})$ symmetry of what it calls a hidden (bi)quaternionic structure becomes visible in $(2{+}2)$ — two timelike and two spacelike directions — and it lists convergence with work on $(2{+}2)$ physics, two-dimensional black holes and $N=2$ strings. The corpus's reading is that this is a genuine second real form of the same algebra and not a relabelling of the first: the split real form has its own unit group and its own polar decomposition, which the corpus treats in the split-quaternion articles, and $(2{+}2)$ is the signature of that form just as $(1,3)$ is the signature of the material sector's norm.
+
+## Reality, the Non-Hermitian Operator, and the Corpus's Signature Classification
+
+Two of the source's Section VII claims bear directly on articles the corpus already owns.
+
+The first is that the availability of a Majorana representation is linked to the spacetime signature. The corpus agrees, and has said it in more detail: in *Real Spinors and Reality Conditions on the Biquaternion Algebra with Hermitian Adjoint* the reality type of the spinor module is a function of the signature of the quadratic form modulo eight, and in that classification the corpus's ambient module admits a real structure in signature $(1,3)$ while the internal space is of complex type and admits none. The source states the dependence and gives no table; the corpus's contribution is the table, and the source's Section V is a worked instance of it in the Weyl basis.
+
+The second is the claim that the framework produces **non-Hermitian (CP) dynamic operators**, and that this is structural rather than exotic. Here the corpus's translation separates two things the source's prose runs together. The structural object $Q$ is *Hermitian*: with the source's own coefficients, $\Phi(\tilde Q)$ is Hermitian and $\tilde Q \in \mathbb{M}_+$, checked with residual $0$. The non-Hermiticity the source flags belongs to the *generalized momentum* built in its Eqs. (54)–(56) with the $(2{+}2)$ signature, where the paper itself notes that $E^2 + H^2$ can be negative "due to the non-hermitian character of the generalized momentum operators". So the corpus's reading is that the non-Hermiticity lives in the kinetic operator of the second signature and not in the biquaternion the bundle's basis carries. The distinction matters because the corpus's framework is Hermitian throughout — its Born rule is a trace pairing of a Hermitian projector — and a genuinely non-Hermitian dynamical generator would be a structural departure of a different size from a change of signature. The source asserts it as a consequence of the G-structure; the paper contains no worked dynamics in which it is exhibited, and the corpus records it as an assertion.
+
+## The Bundle Claim: Which Naturality Is Meant?
+
+The paper's central algebraic claim is that the **basis** of $P(G,M)$ carries a biquaternionic structure rather than a complex one. The corpus's existing bundle-theoretic material reaches the same algebra from the other end, and the difference is worth stating.
+
+*The Hopf Fibration and the Biquaternion Gauge Bundle* constructs a principal bundle whose structure group is a subgroup of the algebra's unit group, with the Hopf map as the projection and the defining module as the associated vector bundle. That construction is pointwise: the algebra acts on the fibre, and the bundle's local data are the transition functions of the frame. The source's claim is about the **fibre algebra itself** — that the basis in which the fibres are expressed is biquaternionic — and it is a stronger statement, because a basis is the thing the corpus's *Curved Spacetime and the Biquaternion Framework* showed cannot carry curvature.
+
+The corpus declines to accept the word *naturally* without specifying which naturality is meant, and the article states the two candidates. A **preferred basis** claim would say that the bundle admits a reduction of its structure group to a subgroup of the biquaternion unit group; that is a statement about $G$ and can be tested, and the source's own test is the unitarity condition $G^+G = I_4$ — which, as the previous sections show, holds in the quaternionic-conjugation reading and not in the ordinary one. An **algebra-on-the-fibres** claim would say that each fibre is a module over $\mathbb{B}$; that is what the corpus's Hopf article already constructs, and it is a statement about the fibres rather than about the basis. The two are not the same, and the paper's wording covers both. The corpus's position is that the second is true and unremarkable, that the first is the substantive claim, and that the verification of $G^+G = I_4$ in the quaternionic reading is what makes the first operative.
+
+## The G-Structure, the Reduced Tangent Bundle, and Rothstein
+
+The source's concluding list makes four claims about geometry, and the corpus records them as claims, with the two articles that would have to carry them named.
+
+A consistent unified theory, the source says, must rest on a **G-structure for the tangent bundle** $T(M)$ reflecting the symmetries of the fields considered. The corpus's *Curved Spacetime and the Biquaternion Framework* reached a related conclusion from the other side: the algebra supplies the local Lorentz group at every point and can even supply the connection and its curvature as elements of its own Lie subspace, but it supplies nothing that determines them, so the content of a biquaternion theory of gravitation must lie in the field that attaches the algebra to the manifold. A G-structure is precisely such a field, and the corpus's *The Einstein Field Equations under the Biquaternion Framework — A Research Agenda* is where a structure-group mechanism would be recorded. The source does state the three compatibility conditions its own tensors must satisfy, Eqs. (14)–(16); what it does not give is the reduction itself, nor a curvature computed from it. It states the requirement, and the requirement is one the corpus has already identified independently.
+
+The second claim is the sharpest, and the corpus notes it as the source's most distinctive sentence: whereas standard quantum field theory in curved spacetime leaves the spacetime structure alone — its structure group remains Lorentzian — this framework *alters* the structure, because the structure group of the reduced tangent bundle becomes that of the induced field theory, with the same curvature of the tangent space. That is a mechanism by which field content changes the geometry rather than riding on it, and it is different in kind from the corpus's tetrad route, in which the frame carries a background metric. The corpus records the claim as unverified: the paper gives no reduction and no curvature computation for it.
+
+The third and fourth claims are that spacetime signature and non-Hermitian dynamic operators are both induced by the same G-structure, and that torsion, through its dual four-vector, plays a key role in both the signature and the CP character of the dynamics. The corpus has torsion material in *Curved Spacetime and the Biquaternion Framework*, where metric compatibility and vanishing torsion are conditions to be imposed and not consequences of the algebra; the source's claim is that a specific torsion field, the dual of a totally antisymmetric torsion, appears as a consequence of the third fundamental tensor of the tangent space. The two statements are compatible and neither implies the other: the source's third tensor is a further structure the corpus does not have.
+
+Finally, the source claims that **Rothstein's theorem is incomplete** for its description of the spacetime manifold, and that the Darboux–Kostant theorem is satisfied so that $M$ fits a general supermanifold. The corpus has no Rothstein material and no supermanifold material, so it neither confirms nor disputes the claim; it is recorded because the source presents it as a result of the same construction, and because the corpus's own Clifford-parity article is the nearest thing it has to a boson–fermion grading of the manifold.
+
+## Clifford Algebras as the Source's Language
+
+The source's Section III is a short interlude arguing that Clifford algebras, and not matrices, are the natural language of the description. The argument has two parts and the second is the interesting one. Orthogonal Clifford algebras, the source says, have the symmetric product of basis vectors as their inner product and the antisymmetric product as a bivector; symplectic Clifford algebras have the roles exchanged, the antisymmetric product giving the metric and the symmetric product a bivector. The generators of the orthogonal kind can be brought to a Witt basis in which they act as fermionic creation and annihilation operators, and the generators of the symplectic kind act as bosonic ones, so the two kinds can be united into a single structure whose basis spans what the source calls a superspace.
+
+The corpus has the fermionic half of this and not the bosonic half. *The Clifford Structure of the Biquaternion Algebra* and the parity article identify $\mathrm{Cl}_{1,3} = \mathrm{Cl}^0\oplus\mathrm{Cl}^1$ with the biquaternion algebra as the even part and the odd part as the fermionic slot, so that two fermionic steps compose to a bosonic one. That is a $\mathbb{Z}/2$ grading of one algebra. The source's construction is a doubling — two Clifford algebras of different type placed side by side — and the corpus's articles do not contain it. It is recorded as the source's proposal, and the note that the source draws from it, that the manifold's own structure supports a consistent quantum theory with a clear geometrical meaning, is recorded with it and not endorsed.
+
+## A Constructed Biquaternionic Basis, from an Independent Source
+
+The bundle-basis idea recorded above is a **claim** about a basis, and it is worth setting beside it an independent source in which a biquaternionic basis is actually built and used. J. Fredsted, *Spinor fields without Lorentz frames in curved spacetime using complexified quaternions* (arXiv:0811.1357v4 [math-ph], 2009), abandons the manifold frame — "thus leaving the arena of Riemannian manifolds" — and takes as primitive a basis $s_\mu \in (\mathbb{C}\otimes\mathbb{H})_-$ of the biquaternion algebra itself, with the metric given by the algebra's bilinear form,
+
+$$
+g_{\mu\nu} = \langle s_\mu, s_\nu\rangle ,
+$$
+
+whose nondegeneracy follows from the linear independence of the four basis elements. Local Lorentz freedom is the rotor conjugation $s_\mu \mapsto \Lambda s_\mu \bar{\Lambda}$, with $\Lambda$ a unit-norm biquaternion, and a **single** algebra-valued connection $\omega_\mu \in \mathbb{C}\otimes\mathbb{H}$, subject only to $\mathrm{Sc}(\omega_\mu + \bar{\omega}_\mu^*) = 0$, serves both the tensor and the spinor fields; its imaginary-scalar part is a local $U(1)$ freedom and its vector part is the Lorentz connection. The corpus's *Curved Spacetime and the Biquaternion Framework* records the same construction from its own side, and the two are the same structure in different notation: the basis is this article's $\mathbb{M}_-$ frame field, the metric is the polar form the corpus already computes, and the connection is the two-sided gravitational connection of the corpus's material sector.
+
+The two external instances sit in **opposite sectors**, and that is the point of recording both. The source of this article builds its structural group from a matrix $Q = \Phi(\tilde Q)$ whose biquaternion $\tilde Q$ is Hermitian of unit norm — an element of $\mathbb{M}_+$, the informational sector — and its claimed invariant Lorentzian metric does not reproduce. Fredsted's basis is anti-Hermitian, $s_\mu \in \mathbb{M}_-$, the material sector, and his metric is real and Lorentzian by construction, its invariance under rotor conjugation being the identity the corpus's frame route already verified. So the biquaternionic-basis proposal has, in the material sector, a working instance in which the metric comes out of the algebra rather than being asserted of it.
+
+The instance does not build $P(G,M)$, and it does not supply dynamics. Fredsted's basis is a basis of the algebra over the manifold, not the basis of a principal bundle with a structural group; and there is no action for $s_\mu$ or for $\omega_\mu$, no field equation, and no curvature computed from the connection. The construction therefore raises the floor of the bundle-basis idea without touching the ceiling this article's source leaves in place: a biquaternionic basis, whether claimed or constructed, is a pointwise structure until a field equation attaches it to the manifold.
+
+## What the Source Shows, and What It Does Not
+
+The value of the paper to the corpus is a single fact, and the article states it plainly. A mainstream high-energy paper, published without any connection to the biquaternion programme, asks what algebraic structure the basis of its bundle should carry and answers with the biquaternion algebra — the algebra that the corpus's *A Brief History of Biquaternions in Physics* records as a nineteenth-century construction and that the corpus's *The Empirical Status of the Biquaternion Framework* treats as a framework with a proposal attached. That is external evidence that the algebra can appear unsought, and it is the kind of evidence the corpus's empirical-status article is organised to weigh. It is not evidence that the algebra must appear, and the source's own programme is not thereby supported: the paper's framework claims are exactly as unverified here as they would be if written in any other notation.
+
+Two caveats belong with the record. The first is the word *QFT*: in the source's conclusion it denotes the author's own unified construction, not quantum field theory as the expression is normally used, and the corpus disambiguates before quoting. The second is the extraction itself: the automated summary of the paper carries fragments such as $\sigma_0$, $\sigma_2$, $-\sigma$ and $i$ whose layout is lost, and the transformed generators of Eqs. (35)–(37) come through as fragments of Kronecker products. The corpus quotes those three only after the recomputation has fixed them — the two scalars agree with the recomputed $i\,\mathrm{diag}(\sigma_3,\sigma_3)$ and $-i\,\mathrm{diag}(\sigma_1,\sigma_1)$ up to the order of the factors — and quotes no other matrix entry of the paper.
+
+## Summary
+
+The source is a mainstream high-energy paper whose central algebraic claim is that the basis of the principal fibre bundle of a unified field theory carries a biquaternionic structure rather than a complex one. The article translates the algebra it displays into the corpus's dictionary and checks what can be checked, and the translation is exact in two places.
+
+The structural group $G$ of the source's bundle is assembled blockwise from the two halves of the $2\times2$ matrix $Q = A - iB$, which is $\Phi(\tilde Q)$ for a biquaternion built from a four-momentum by $a_0 = p_0/m$ and $a_k = ip_k/m$. The source's unit-norm condition $a_0^2+a_1^2+a_2^2+a_3^2 = 1$ and the source's relativistic relation $p_0^2-\mathbf p^2 = m^2$ are one identity, $N(\tilde Q) = 1$, verified to $10^{-14}$; and with the imaginary coefficients the printed sum carries its signs, so the source's object is the corpus's Hermitian biquaternion of unit norm — an element of the informational sector $\mathbb{M}_+$, in the corpus's normalisation the opposite of the material four-momentum's $N = -m^2$. The source's $G^+G = I_4$ holds with the quaternionic conjugation and fails with the matrix adjoint, which fixes the meaning of its symbol; the block assembly is the regular representation of the pair $(A,B)$ and not the realification of $Q$, which the corpus checked and which fails. The Majorana transformation the source uses is unitary and involutive, and it achieves its stated purpose: the transformed block matrix $G' = UGU^{-1}$ is real and symmetric, because the transformed generators are purely imaginary while the source's own coefficients $a_k$ are purely imaginary. Two printed slips are recorded: the printed generators of Eq. (28) are not a Clifford set until a sign is restored in $\gamma_0$, and the diagonal block of the printed $G'$ carries the wrong sign in its $(\sigma_3a_1 \pm \sigma_1a_3)$ combination. The non-compact triple is the source's $\mathfrak{sl}(2,\mathbb{R})$ and reproduces its three printed products exactly; its middle generator is $-i\sigma_2$, and the source's own coefficient sum in that sector then reads the $(2{+}2)$ mass relation $p_0^2-p_1^2+p_2^2-p_3^2=m^2$.
+
+One claim does not reproduce, and the paper's own equations are what defeat it: the Lorentzian metric the source says is invariant under $G$ is not invariant under it, because Eq. (2)'s condition $G^+G = I_4$ is the Euclidean orthogonality condition whenever the coefficient of $\sigma_2$ vanishes, and the whole space of symmetric forms invariant under $G$ contains no form of signature $(1,3)$. $G$ is compact — unitary — rather than Lorentz-orthogonal, and Eq. (7)'s $G \subset L(4)$ is where the discrepancy enters. The framework claims — the G-structure, the reduced tangent bundle with the induced field theory's structure group, the torsion-induced signature and CP character, the incompleteness of Rothstein's theorem — are recorded as claims, with the corpus's own curved-spacetime and gravity-agenda articles named as the places where the geometry would be built. The source's contribution to the corpus is the external instance, not the programme: the biquaternion algebra appears here unsought, in a paper that shares none of the corpus's readings, and that is worth recording without being mistaken for confirmation.
+
+## Summary of Notation
+
+| Symbol | Meaning |
+|---|---|
+| $P(G,M)$, $G$ | The source's principal fibre bundle and its structural group, the "single geometrical structure" of the unified theory |
+| $G = \begin{pmatrix} A & B \\ -B & A \end{pmatrix}$, $A = a_0\sigma_0$, $B = \boldsymbol\sigma\!\cdot\!\mathbf a$ | The source's structural group; the regular representation of the pair $(A,B)$, not the real form of $Q$ |
+| $Q = a_0\sigma_0 - i\boldsymbol\sigma\!\cdot\!\mathbf a = A - iB$ | The source's $2\times2$ spinorial matrix; equals $\Phi(\tilde Q)$ |
+| $\tilde Q = a_0 + \mathbf a\!\cdot\!\mathbf e$, $a_0 = p_0/m$, $\mathbf a = i\mathbf p/m$ | The biquaternion behind $Q$; Hermitian, of unit norm on the mass shell |
+| $a_0^2+a_1^2+a_2^2+a_3^2 = 1$ | The source's Eq. (19); with imaginary $a_k$ it is $N(\tilde Q) = 1$ and the mass shell |
+| $N(\tilde Q) = \tilde Q\bar{\tilde Q} = \det\Phi(\tilde Q)$ | The biquaternion norm; the source's $N = 1$, the corpus's $N(\tilde P) = -m^2$ in $\mathbb{M}_-$ |
+| $G^+ = \begin{pmatrix} A & -B \\ B & A \end{pmatrix}$ | The source's conjugate transpose: ordinary transpose with quaternionic conjugation, not the matrix adjoint; identical to the ordinary transpose whenever $B$ is symmetric, i.e. whenever the coefficient of $\sigma_2$ vanishes, which is the slice on which $G^+G = I_4$ is the Euclidean orthogonality condition |
+| $G = A\,I_4 + B\,J$, $J^2 = -I_4$ | The source's Eq. (4); equivalently $G = I_2\otimes A + J_2\otimes B$ |
+| $G' = UGU^{-1}$ | The Majorana-transformed structural group; real and symmetric |
+| $\gamma_\mu$ | The source's generators, Eq. (28); the printed $\gamma_0 = \sigma_0\oplus\sigma_0$ has lost a sign and must be $\sigma_0\oplus(-\sigma_0)$ |
+| $J$, $g$, $\sigma_{\lambda\mu}$ | The source's three $G$-invariant tensors: almost complex structure, Lorentzian metric, third fundamental tensor |
+| $U = \frac{1}{\sqrt2}\begin{pmatrix}\sigma_0 & \sigma_2 \\ \sigma_2 & -\sigma_0\end{pmatrix}$ | The source's Majorana transformation; unitary and involutive; the transformed generators are purely imaginary and $G' = UGU^{-1}$ is real symmetric |
+| $\sigma_\alpha, \sigma_\beta, \sigma_\gamma$ | The source's $\mathrm{SL}(2,\mathbb{R})$ triple, the split real form of the Pauli triple |
+| $(2{+}2)$ signature | The source's second signature: $\sigma_\beta^2 = -1$ flips one sign in the coefficient sum, $a_0^2+a_1^2-a_2^2+a_3^2 = 1$, i.e. $p_0^2-p_1^2+p_2^2-p_3^2 = m^2$ |
+| $\mathrm{Cl}_{1,3}\cong M_2(\mathbb{H})$, $M_2(\mathbb{H})\otimes_\mathbb{R}\mathbb{C}\cong M_4(\mathbb{C})$ | The corpus's reading of the source's "$\mathbb{H}_2$, whose complexification is the Dirac algebra" |
+
+## Further Reading
+
+- D. J. Cirilo-Lombardo, "Algebraic structures, physics and geometry from a Unified Field Theoretical framework", arXiv:1411.5493v3 [hep-th] (2015), for the source recorded here: the principal fibre bundle $P(G,M)$ and its structural group, the biquaternionic basis of the bundle, the Majorana and Dirac representations and their relation to signature, the non-Hermitian CP operators, the $\mathrm{SL}(2,\mathbb{R})$ triple and the $(2{+}2)$ signature, and the concluding geometry claims.
+- J. Fredsted, "Spinor fields without Lorentz frames in curved spacetime using complexified quaternions," arXiv:0811.1357v4 [math-ph] (2009), for the constructed biquaternionic basis recorded in *A Constructed Biquaternionic Basis, from an Independent Source*: the material-sector basis $s_\mu \in (\mathbb{C}\otimes\mathbb{H})_-$ with the metric as the polar form, the rotor-conjugation local Lorentz freedom, and the single algebra-valued connection whose imaginary-scalar and vector parts are a local $U(1)$ and the Lorentz connection. Cited as an independent construction in the sector opposite to the source recorded here; the corpus does not adopt it, and it builds no principal bundle and no dynamics.
+- *Conventions in the Biquaternion Universe*, for the algebra, the conjugations, the matrix representation $\Phi$ and the norm $N$ used throughout.
+- *The Dirac Algebra and Biquaternions — A Dictionary*, for the identification $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and its complexification $M_4(\mathbb{C})$, which is the source's own justification for expecting a biquaternion.
+- *The Hermitian Subspace M+ as the Informational Sector* and *The Anti-Hermitian Subspace M- as the Material Sector*, for the placement of the source's $\tilde Q$ in $\mathbb{M}_+$ and of the corpus's four-momentum in $\mathbb{M}_-$.
+- *Real Spinors and Reality Conditions on the Biquaternion Algebra with Hermitian Adjoint* and *The Neutrino and Majorana Fermions in Biquaternionic Form*, for the corpus's signature-dependent classification of reality conditions and the Majorana condition on the doubled module.
+- *Curved Spacetime and the Biquaternion Framework*, for the reasons the algebra cannot carry curvature, the field-of-frames route, and the conditions on the connection; and *The Einstein Field Equations under the Biquaternion Framework — A Research Agenda* for where a structure-group mechanism would be recorded.
+- *The Hopf Fibration and the Biquaternion Gauge Bundle*, for the corpus's own principal bundle and the defining module as an associated bundle.
+- *The Clifford Structure of the Biquaternion Algebra* and the article on Clifford parity, for the corpus's $\mathbb{Z}/2$ grading, the fermionic half of the source's Clifford interlude.
+- *A Brief History of Biquaternions in Physics* and *The Empirical Status of the Biquaternion Framework*, for the corpus's standing on the algebra as a construction and on what could count as evidence that it is more than a choice.

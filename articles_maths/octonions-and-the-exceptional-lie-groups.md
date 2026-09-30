@@ -151,6 +151,78 @@ of real dimension $16$, the space of idempotents of trace one in $\mathrm{H}_3(\
 
 The Cayley plane cannot be coordinatised by a field, and its lines meet in a single point rather than forming a projective geometry in the sense of the associative cases; the obstruction is the non-associativity of $\mathbb{O}$, and the plane is the exact geometric object that survives. The higher exceptional analogues are the **Rosenfeld planes**, the projective planes over $\mathbb{C}\otimes\mathbb{O}$, $\mathbb{H}\otimes\mathbb{O}$ and $\mathbb{O}\otimes\mathbb{O}$, whose automorphism groups are $E_6$, $E_7$ and $E_8$; they are taken up with the exceptional geometry.
 
+## The Branching of $\mathrm{E}_8$ and Trinification
+
+The magic square places $\mathrm{E}_8$ at the pair $(\mathbb{O},\mathbb{O})$, and it has so far entered this article only through its dimension, $248$, and its rank, eight. The representation theory of the exceptional algebras is as much a part of the octonionic system as their construction, and it is the part through which the algebras are read: this section records the maximal subgroup $\mathrm{SU}(3)\times\mathrm{E}_6$ of $\mathrm{E}_8$ and the trinification of $\mathrm{E}_6$ into three copies of $\mathrm{SU}(3)$.
+
+### The Branching of the Adjoint Under $\mathrm{SU}(3)\times\mathrm{E}_6$
+
+**Proposition.** The adjoint representation of $\mathrm{E}_8$ branches under the maximal subgroup $\mathrm{SU}(3)\times\mathrm{E}_6$ as
+
+$$
+\mathbf{248} = (\mathbf 8,\mathbf 1)\oplus(\mathbf 1,\mathbf{78})\oplus(\mathbf 3,\mathbf{27})\oplus(\bar{\mathbf 3},\overline{\mathbf{27}}),
+$$
+
+of dimensions $8+78+81+81 = 248$.
+
+The first two summands form the adjoint of the subgroup, of dimension $8+78 = 86$. The third and the fourth have dimension $3\cdot27 = 81$ each and are exchanged by the conjugation of $\mathrm{E}_8$, which is why they carry conjugate labels. The $\mathbf{27}$ is the representation already met above: $\mathbf{27} = \mathrm{H}_3(\mathbb{O})$ over the reals, whose complexification is $J_3(\mathbb{O}_{\mathbb C})$.
+
+*Proof.* The subgroup is maximal, and the branching is the standard rule for $\mathrm{E}_8\supset\mathrm{SU}(3)\times\mathrm{E}_6$, tabulated with the other maximal subgroups of the exceptional algebras in the sources cited. The $\mathbf{27}$ is that of the preceding section, $\mathrm{H}_3(\mathbb{O})$, complexified to the exceptional Jordan algebra over $\mathbb{C}$. The count $8+78+81+81 = 248$ is a check on the rule, not a derivation of it.
+
+**Proposition (the magic-star form).** Complexified, the same decomposition reads
+
+$$
+\mathfrak{e}_8^{\mathbb C} = \mathfrak{sl}_3(\mathbb C)\oplus\mathfrak{e}_6^{\mathbb C}\oplus(\mathbb C^3\otimes J)\oplus((\mathbb C^3)^{*}\otimes J^{*}),
+$$
+
+where $J$ is the complex exceptional Jordan algebra, of dimension $27$, and $J^{*}$ its dual.
+
+*Proof.* The decomposition is graded by the $\mathrm{A}_2$ of the branching: the level space at zero is $\mathfrak{sl}_3(\mathbb C)\oplus\mathfrak{e}_6^{\mathbb C}$, and the two remaining summands are the off-diagonal level spaces, of dimension $81$ each, on which the two factors act by the defining representation $\mathbb C^3$ and its dual and by the exceptional Jordan algebra and its dual. The identification of the off-diagonal spaces with those tensor products is the magic-star description of $\mathfrak{e}_8$, in which the exceptional Jordan algebra is the module that the off-diagonal levels carry. Dimensions: $8+78+81+81 = 248$.
+
+### Trinification
+
+**Proposition.** Under the maximal-rank subgroup $\mathrm{SU}(3)\times\mathrm{SU}(3)\times\mathrm{SU}(3)$ of $\mathrm{E}_6$ the representations branch as
+
+$$
+\mathbf{27} = (\bar{\mathbf 3},\mathbf 3,\mathbf 1)\oplus(\mathbf 3,\mathbf 1,\mathbf 3)\oplus(\mathbf 1,\bar{\mathbf 3},\bar{\mathbf 3}),
+$$
+
+$$
+\overline{\mathbf{27}} = (\mathbf 3,\bar{\mathbf 3},\mathbf 1)\oplus(\bar{\mathbf 3},\mathbf 1,\bar{\mathbf 3})\oplus(\mathbf 1,\mathbf 3,\mathbf 3),
+$$
+
+$$
+\mathbf{78} = (\mathbf 8,\mathbf 1,\mathbf 1)\oplus(\mathbf 1,\mathbf 8,\mathbf 1)\oplus(\mathbf 1,\mathbf 1,\mathbf 8)\oplus(\mathbf 3,\mathbf 3,\bar{\mathbf 3})\oplus(\bar{\mathbf 3},\bar{\mathbf 3},\mathbf 3),
+$$
+
+of dimensions $9+9+9 = 27$ for each of the two twenty-sevens and $8+8+8+27+27 = 78$ for the adjoint.
+
+*Proof.* The subgroup has the full rank six of $\mathrm{E}_6$ and is the standard trinification subgroup; the branching rules are the tabulated ones for the maximal-rank subgroups of $\mathrm{E}_6$, and the dimension counts are the check. The three factors are the three $\mathrm{A}_2$ subdiagrams available in the $\mathrm{E}_6$ diagram.
+
+**Remark (the labelling is not canonical).** The three factors are isomorphic and the decompositions above are canonical, but their labelling is not: the only outer automorphism of $\mathrm{E}_6$ is the complex conjugation, of order two, which exchanges the first and the third factor and preserves the second, so no automorphism of $\mathrm{E}_6$ permutes the three cyclically. Which factor is called the first, which the second and which the third is therefore a choice, not a consequence of the algebra, and the decomposition of the $\mathbf{27}$ is what fixes the pairing of a $\bar{\mathbf 3}$ in one factor with a $\mathbf 3$ in another.
+
+**Remark (the abelian refinement).** Under the further breaking $\mathrm{SU}(3)\supset\mathrm{SU}(2)\times\mathrm{U}(1)$ the low representations split as
+
+$$
+\mathbf 3 = \mathbf 2(1)\oplus\mathbf 1(-2), \qquad \bar{\mathbf 3} = \mathbf 2(-1)\oplus\mathbf 1(2),
+$$
+
+$$
+\mathbf 8 = \mathbf 1(0)\oplus\mathbf 2(-3)\oplus\mathbf 2(3)\oplus\mathbf 3(0),
+$$
+
+in which the integer in parentheses is the $\mathrm{U}(1)$ weight in a fixed integral normalisation. The dimensions $2+1 = 3$ and $1+2+2+3 = 8$ are the check. Applied to the second factor of the trinification, these are the decomposition of a weak doublet and a singlet and the decomposition of an adjoint into a neutral singlet, a charged doublet pair, and a neutral triplet.
+
+**Remark (the chain, and the ledger).** Composing the two steps, the adjoint of $\mathrm{E}_8$ decomposes into $21$ sectors under the chain $\mathrm{SU}(3)\times\mathrm{SU}(3)\times\mathrm{SU}(3)\times\mathrm{SU}(2)\times\mathrm{U}(1)$, and the multiplicities of the sectors sum to $248$: the three octets contribute $24$, the singlet and the $\mathrm{SU}(2)\otimes\mathrm{U}(1)$ block contributes $8$, the two $(\mathbf 3,\bar{\mathbf 3},\mathbf 3,\mathbf 1)$-type sectors contribute $54$, and the three conjugate-paired families of mixed sectors contribute $3\cdot54 = 162$. This is arithmetic on the branching rules and nothing more; it is the whole content of the "$\mathbf{248}$ ledger" of the model-building articles that use this chain, and it should not be read as a particle count.
+
+**Remark (what the octonions supply, and what is quoted).** The branching rules are quoted from the classification of the maximal subgroups of the exceptional algebras; what the octonionic construction supplies is the algebra $\mathrm{E}_8$ itself, as the $(\mathbb{O},\mathbb{O})$ entry, and the module $\mathbf{27} = \mathrm{H}_3(\mathbb{O})$. The octonionic content of the $\mathrm{SU}(3)$ of the first branching is a separate statement about the octonions alone: under the subgroup $\mathrm{SU}(3)\subset G_2 = \operatorname{Aut}(\mathbb{O})$ that fixes a unit imaginary octonion, whose coset space is $S^6 = G_2/\mathrm{SU}(3)$, the complexified octonions split as
+
+$$
+\mathbb{O}\otimes\mathbb C = \mathbf 1\oplus\mathbf 1\oplus\mathbf 3\oplus\bar{\mathbf 3}, \qquad \operatorname{Im}\mathbb{O}\otimes\mathbb C = \mathbf 1\oplus\mathbf 3\oplus\bar{\mathbf 3},
+$$
+
+of complex dimensions $1+1+3+3 = 8$ and $1+3+3 = 7$. That statement is recorded with the octonionic geometry and is not a consequence of the branching rules.
+
 ## Summary
 
 The exceptional Lie groups are constructed from the octonion algebra as follows. The derivation algebra $\operatorname{Der}(\mathbb{O})$ is spanned by the operators $D_{x,y} = [L_x,L_y] + [L_x,R_y] + [R_x,R_y]$ with $x,y$ imaginary, it has dimension fourteen, and it is the exceptional simple Lie algebra $\mathrm{G}_2$; its group is $G_2 = \operatorname{Aut}(\mathbb{O})$, compact connected simply connected of dimension fourteen, acting on $\operatorname{Im}\mathbb{O}$ with $S^6 = G_2/SU(3)$ and characterised as the stabiliser in $SO(7)$ of the associative three-form $\varphi(u,v,w) = \langle u\times v,w\rangle$.
@@ -158,6 +230,8 @@ The exceptional Lie groups are constructed from the octonion algebra as follows.
 The exceptional Jordan algebra $\mathrm{H}_3(\mathbb{O})$ of Hermitian $3\times3$ matrices over $\mathbb{O}$, of dimension $27$, with the symmetrised product and the cubic determinant, is exceptional (not special); its automorphism group is $F_4$, of dimension $52$ and rank four, and the group preserving the determinant up to scale is $E_6$, of dimension $78$; the automorphism group of the associated Freudenthal triple system is $E_7$, of dimension $133$, and the Freudenthal–Tits magic square, whose rows and columns are the composition algebras, produces $E_8$, of dimension $248$, from the pair $(\mathbb{O},\mathbb{O})$. The exceptional algebras occur in the last row and column of the square, which is the precise sense in which the octonions are responsible for them.
 
 Geometrically, the octonions produce the Cayley plane $\mathbb{OP}^2 = F_4/\operatorname{Spin}(9)$, of dimension sixteen, a Moufang plane with cells in dimensions $0$, $8$ and $16$, together with the Rosenfeld planes of $E_6$, $E_7$ and $E_8$. The classification of the simple Lie algebras and groups is presupposed, in *Root Systems and Classification* and *Finite Simple Groups of Lie Type*.
+
+The representation theory of $\mathrm{E}_8$ carries the same octonionic data. Its adjoint branches under the maximal subgroup $\mathrm{SU}(3)\times\mathrm{E}_6$ as $\mathbf{248} = (\mathbf 8,\mathbf 1)\oplus(\mathbf 1,\mathbf{78})\oplus(\mathbf 3,\mathbf{27})\oplus(\bar{\mathbf 3},\overline{\mathbf{27}})$, and the magic-star form of the complexified algebra is $\mathfrak{e}_8^{\mathbb C} = \mathfrak{sl}_3(\mathbb C)\oplus\mathfrak{e}_6^{\mathbb C}\oplus(\mathbb C^3\otimes J)\oplus((\mathbb C^3)^{*}\otimes J^{*})$, with $J$ the complex exceptional Jordan algebra and $\mathbf{27}$ its real form. The $\mathrm{E}_6$ branches in turn under $\mathrm{SU}(3)\times\mathrm{SU}(3)\times\mathrm{SU}(3)$ as $\mathbf{27} = (\bar{\mathbf 3},\mathbf 3,\mathbf 1)\oplus(\mathbf 3,\mathbf 1,\mathbf 3)\oplus(\mathbf 1,\bar{\mathbf 3},\bar{\mathbf 3})$ and $\mathbf{78} = (\mathbf 8,\mathbf 1,\mathbf 1)\oplus(\mathbf 1,\mathbf 8,\mathbf 1)\oplus(\mathbf 1,\mathbf 1,\mathbf 8)\oplus(\mathbf 3,\mathbf 3,\bar{\mathbf 3})\oplus(\bar{\mathbf 3},\bar{\mathbf 3},\mathbf 3)$, with three isomorphic factors whose labelling is not fixed by the algebra: the outer automorphism of $\mathrm{E}_6$ is the complex conjugation, of order two, and it exchanges two of the three. The branching rules themselves are quoted from the classification of the maximal subgroups, and the octonionic input is the algebra $\mathrm{E}_8$ and the module $\mathbf{27} = \mathrm{H}_3(\mathbb{O})$.
 
 ## Summary of Notation
 
@@ -174,6 +248,11 @@ Geometrically, the octonions produce the Cayley plane $\mathbb{OP}^2 = F_4/\oper
 | $F_4 = \operatorname{Aut}(\mathrm{H}_3(\mathbb{O}))$ | Compact simple group, $\dim 52$, rank $4$ |
 | $E_6$, $E_7$, $E_8$ | Structure group of the determinant ($78$), Freudenthal triple system ($133$), magic square ($248$) |
 | $\mathbb{OP}^2 = F_4/\operatorname{Spin}(9)$ | Cayley plane, $\dim 16$, Moufang plane |
+| $\mathbf{248} = (\mathbf 8,\mathbf 1)\oplus(\mathbf 1,\mathbf{78})\oplus(\mathbf 3,\mathbf{27})\oplus(\bar{\mathbf 3},\overline{\mathbf{27}})$ | Branching of the $\mathrm{E}_8$ adjoint under $\mathrm{SU}(3)\times\mathrm{E}_6$ |
+| $J = \mathrm{H}_3(\mathbb{O})_{\mathbb C}$ | Complex exceptional Jordan algebra, the module $\mathbf{27}$ of $\mathrm{E}_6$ |
+| $\mathfrak{e}_8^{\mathbb C} = \mathfrak{sl}_3(\mathbb C)\oplus\mathfrak{e}_6^{\mathbb C}\oplus(\mathbb C^3\otimes J)\oplus((\mathbb C^3)^{*}\otimes J^{*})$ | Magic-star form of the complexified $\mathrm{E}_8$ |
+| $\mathbf{27} = (\bar{\mathbf 3},\mathbf 3,\mathbf 1)\oplus(\mathbf 3,\mathbf 1,\mathbf 3)\oplus(\mathbf 1,\bar{\mathbf 3},\bar{\mathbf 3})$ | Trinification of the $\mathbf{27}$ under $\mathrm{SU}(3)\times\mathrm{SU}(3)\times\mathrm{SU}(3)$ |
+| $\mathbf 3 = \mathbf 2(1)\oplus\mathbf 1(-2)$, $\mathbf 8 = \mathbf 1(0)\oplus\mathbf 2(-3)\oplus\mathbf 2(3)\oplus\mathbf 3(0)$ | Restriction of $\mathrm{SU}(3)$ representations to $\mathrm{SU}(2)\times\mathrm{U}(1)$ |
 | $\mathrm{L}(A,B)$ | Freudenthal–Tits algebra of a pair of composition algebras |
 
 
@@ -188,3 +267,7 @@ Geometrically, the octonions produce the Cayley plane $\mathbb{OP}^2 = F_4/\oper
 - John C. Baez, "The octonions", *Bulletin of the American Mathematical Society* **39** (2002), 145–205, for the magic square, the Cayley plane and the survey of the constructions.
 - Ichiro Yokota, *Exceptional Lie Groups* (Springer, 2009), for the explicit realisations of $G_2$, $F_4$, $E_6$, $E_7$ and $E_8$ from the octonions.
 - Jacques Tits, "Algèbres alternatives, algèbres de Jordan et algèbres de Lie exceptionnelles", *Indagationes Mathematicae* **28** (1966), 223–237, for the original construction of the magic square.
+- Robert Slansky, "Group theory for unified model building", *Physics Reports* **79** (1981) 1–128, for the maximal subgroups of the exceptional algebras and the branching rules $\mathrm{E}_8\supset\mathrm{SU}(3)\times\mathrm{E}_6$ and $\mathrm{E}_6\supset\mathrm{SU}(3)^3$ used in the present section.
+- Ernest B. Vinberg, "The Weyl group of a graded Lie algebra", *Mathematics of the USSR–Izvestiya* **10** (1976) 463–495, for the magic-star description of $\mathfrak{e}_8$ and the module carried by the off-diagonal levels.
+- Feza Gürsey, Pierre Ramond and P. Sikivie, "A universal gauge theory model based on $\mathrm{E}_6$", *Physics Letters B* **60** (1976) 177–180, for the trinification chain $\mathrm{E}_6\to\mathrm{SU}(3)^3$.
+- Priyank Kaushik, Vatsalya Vaibhav and Tejinder P. Singh, "A proposed $\mathrm{E}_8\times\mathrm{E}_8$ kinematic scaffolding for the standard model with pre-gravitation", arXiv:2206.06911, for the model-building use of the chain and for the sector multiplicities quoted in the ledger remark.

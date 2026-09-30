@@ -18,11 +18,12 @@ $$
 
 for all biquaternions $\tilde{Q},\tilde{R}$. A multiplicative quadratic form on a four-dimensional algebra is a rare object, and the group that preserves it is thereby tied to the algebra's multiplication rather than imposed from outside. The automorphism group of the form on the complex algebra is $O(4,\mathbb{C})$; the automorphisms that also preserve the algebra's **real structure** — the anti-Hermitian material slice — form the Lorentz group.
 
-Three statements organize the article, and they are the three levels at which the identification can be read.
+Four statements organize the article. The first three are the levels at which the identification by the **form** can be read; the fourth is the level supplied by the **product**.
 
 - **At the complex level**, $N$ is a nondegenerate symmetric form on $\mathbb{B}\cong\mathbb{C}^4$, and the automorphism group is the complex orthogonal group $O(4,\mathbb{C})$. Via the determinant realization $N=\det$, the connected component is $SO(4,\mathbb{C})\cong(SL(2,\mathbb{C})\times SL(2,\mathbb{C}))/\{\pm(e_0,e_0)\}$, acting by $\tilde{Q}\mapsto\tilde{A}\tilde{Q}\tilde{B}^{-1}$.
 - **At the real level**, the restricted form on the anti-Hermitian slice is the Minkowski form $\eta = \mathrm{diag}(-1,+1,+1,+1)$, and the automorphisms preserving the slice are the real orthogonal maps of signature $(3,1)$, with identity component the restricted Lorentz group $SO^+(1,3)$.
 - **At the rotor level**, the identity component is exactly the group of conjugations $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^\dagger$ by unit-norm biquaternions, and the correspondence is two-to-one.
+- **At the algebra level**, the automorphisms that preserve the **product** and not only the form are the inner ones, and they are the diagonal $SO(3,\mathbb{C})\cong PGL(2,\mathbb{C})$ inside $SO(4,\mathbb{C})$. As a real group this is again the restricted Lorentz group, and it acts as the Lorentz group on a real coordinate system that is *bilinear* in the coordinates of a complex 3-space, with the causal structure following from an identity rather than from a postulate. That route is the source's, and the section *The Algebra Automorphisms: the Diagonal, and an Induced Causality* treats it as the middle case between the norm and the slice.
 
 **Boundaries.** This is a group-theoretic and geometric article. The spinor module, its one-sided action, and the representation theory of the group belong to the sibling category on relativistic quantum theory and to the companion article *The Spinor Module in Biquaternionic Form and Its Lorentz Action*; they are not developed here. The topology of the cover, and the composition law of boosts in detail, belong to the companion article *The Two-Sheeted Cover and the Topology of Boosts in Biquaternionic Form*. The structure and the finite-dimensional representations of the group as such are treated in *The Lorentz Group in Biquaternionic Form — Structure and Representations*; this article's subject is the characterization of the group by the form.
 
@@ -282,6 +283,114 @@ $$
 
 A word on the relation between the complex and the real descriptions is in order, because the two groups have the same complexification. The complex group $SO(4,\mathbb{C})$ has complex dimension six; the real Lorentz group $SO(1,3)$ also has real dimension six, and is a real form of it. The rotor group $SL(2,\mathbb{C})$ is a six-real-dimensional group that doubly covers the identity component. The real structure is what reduces the first to the second; the map $\pi$ is what realizes the second by conjugation with unit-norm elements.
 
+## The Algebra Automorphisms: the Diagonal, and an Induced Causality
+
+The automorphisms used so far preserve the **form**. The algebra has a smaller automorphism group, the maps that also preserve the **product**, and the difference between the two is the subject of open question 1 below. That difference has a sharp algebraic description, and a neighbouring research programme — Kassandrov's biquaternionic *algebrodynamics*, in Further Reading — builds on it a derivation of Minkowski geometry and of its causal structure rather than treating it as a curiosity. The group-theoretic content of this section is standard; the construction and its consequences are the source's, and the checks are this article's.
+
+**The algebra automorphisms are the diagonal of the form automorphisms.** By Skolem–Noether (companion article *Biquaternion Automorphisms and Derivations*) every $\mathbb{C}$-algebra automorphism of $\mathbb{B}\cong M_2(\mathbb{C})$ is inner, $\tilde{Q}\mapsto\tilde{M}\tilde{Q}\tilde{M}^{-1}$, and the group is
+
+$$
+\mathrm{Aut}_{\mathbb{C}}(\mathbb{B}) \;\cong\; PGL(2,\mathbb{C}) \;\cong\; PSL(2,\mathbb{C}) \;\cong\; SO(3,\mathbb{C}),
+$$
+
+of complex dimension three. In the parametrization $\tilde{Q}\mapsto\tilde{A}\tilde{Q}\tilde{B}^{-1}$ of the norm automorphisms above — where preservation of $N$ required only $\det\tilde{A}=\det\tilde{B}$ — this is the **diagonal** $\tilde{A}=\tilde{B}=\tilde{M}$, and the determinant condition then holds automatically. Since the full complex group is $SO(4,\mathbb{C})\cong(SL(2,\mathbb{C})\times SL(2,\mathbb{C}))/\{\pm(e_0,e_0)\}$,
+
+$$
+SO(3,\mathbb{C}) \;\cong\; \frac{SL(2,\mathbb{C})}{\{\pm e_0\}} \;\subset\; SO(4,\mathbb{C}),
+\qquad
+\text{the diagonal}.
+$$
+
+Two consequences are worth separating. The algebra automorphisms are exactly the norm automorphisms with the **two chiral factors locked together** — the ones that preserve the multiplication and not merely the quadratic form. And it is the diagonal, not an arbitrary pair, that is real-isomorphic to the Lorentz group: $SO(3,\mathbb{C})$ and $SO^+(1,3)$ are both $PSL(2,\mathbb{C})$, connected of real dimension six, hence the same real group. The group recovered from the **algebra** is thus the restricted Lorentz group, whereas the group recovered from the **form** alone is the larger $SO(4,\mathbb{C})$; the source reads this as evidence that the algebra, not the form, is the primitive object.
+
+**What it acts on, and what it preserves.** The inner automorphism fixes $\mathrm{tr}\,\tilde{Q}$ and therefore the scalar coordinate $z_0$, and it acts on the traceless part $\tilde{V}=\tilde{Q}-\tfrac12(\mathrm{tr}\tilde{Q})e_0$ by $\tilde{V}\mapsto\tilde{M}\tilde{V}\tilde{M}^{-1}$, preserving $\det\tilde{V}$. The traceless part is three-dimensional over $\mathbb{C}$, and on it the action is the **complex-orthogonal** one: with $x=(z_1,z_2,z_3)$,
+
+$$
+x \longmapsto Rx , \qquad R^TR = I_3 , \qquad \det R = 1 ,
+$$
+
+preserving the complex quadratic form $\sigma = z_1^2+z_2^2+z_3^2 = -\det\tilde{V}$. This $\sigma$ is the source's "3D complex metric". Stronger invariants come from the trace: $\det\tilde{Q}$ is preserved by the inner action, so $z_0$ and $\sigma = z_0^2-\det\tilde{Q}$ are invariants of the algebra automorphisms, which is why the whole construction is built from $z_0$ and $\sigma$.
+
+The source's matrix realization differs from the $\Phi$ of the conventions above. It is the assignment
+
+$$
+\tilde{Q}\ \longmapsto\
+\begin{pmatrix}
+z_0+z_3 & z_1-iz_2\\
+z_1+iz_2 & z_0-z_3
+\end{pmatrix},
+\qquad
+\det = z_0^2-z_1^2-z_2^2-z_3^2 ,
+$$
+
+whose determinant is the source's form rather than $N=\sum_\mu Q_\mu^2$. The two forms are $\mathbb{C}$-equivalent — over $\mathbb{C}$ the substitution $z_a\mapsto iz_a$ carries one to the other, and all nondegenerate complex forms of a given dimension are equivalent — so the group, the invariant $\sigma$ and the action are the same objects as those above. Only $(\mathbb{C}^3,\sigma)$ enters what follows.
+
+**Bilinear real coordinates.** Write $z_a=p_a+iq_a$ with $\mathbf{p},\mathbf{q}$ real 3-vectors, and set
+
+$$
+T = |\mathbf{p}|^2+|\mathbf{q}|^2 , \qquad \mathbf{X} = 2\,\mathbf{p}\times\mathbf{q} .
+$$
+
+Then $\operatorname{Re}\sigma = |\mathbf{p}|^2-|\mathbf{q}|^2$ and $\operatorname{Im}\sigma = 2\,\mathbf{p}\cdot\mathbf{q}$, so
+
+$$
+S^2 := \sigma\sigma^{*} = \bigl(|\mathbf{p}|^2-|\mathbf{q}|^2\bigr)^2 + \bigl(2\,\mathbf{p}\cdot\mathbf{q}\bigr)^2
+= \bigl(|\mathbf{p}|^2+|\mathbf{q}|^2\bigr)^2 - \bigl|2\,\mathbf{p}\times\mathbf{q}\bigr|^2 = T^2-|\mathbf{X}|^2 ,
+$$
+
+the middle equality being the **Lagrange identity** $(\mathbf{p}\cdot\mathbf{q})^2+|\mathbf{p}\times\mathbf{q}|^2=|\mathbf{p}|^2|\mathbf{q}|^2$. This is the source's central formula, and it identifies $S^2=\sigma\sigma^*$ — an invariant of the algebra automorphisms, computed from the complex 3-vector — with a Minkowski interval in the coordinates $(T,\mathbf{X})$, which are **bilinear** in the complex coordinates of the primary space. The reality and the Lorentzian signature of the interval are not assumed anywhere: they are consequences of the bilinearity and of the identity.
+
+**The rotation and boost pieces.** Under a **real** rotation of $x$ — the real subgroup of $SO(3,\mathbb{C})$ — the coordinates transform as
+
+$$
+T \longmapsto T , \qquad \mathbf{X} \longmapsto R\,\mathbf{X} ,
+$$
+
+a scalar and a 3-vector, which is the source's remark that $T$ is invariant under real 3-rotations. Under an **imaginary** rotation by $i\psi$ in the plane of a pair of components — the complementary, non-compact part of $SO(3,\mathbb{C})$ — with $z_3=0$ so that $\mathbf{X}$ lies along the third axis, one gets
+
+$$
+T \longmapsto \cosh 2\psi\,T + \sinh 2\psi\,X_3 , \qquad
+X_3 \longmapsto \sinh 2\psi\,T + \cosh 2\psi\,X_3 ,
+$$
+
+a **Lorentz boost of rapidity $2\psi$**. The doubling is the source's point: the Lorentz boost angle is twice the rotation angle that generates it, so the Lorentz action on the bilinear coordinates is not the same as the complex rotation that produces it. The two families together — real rotations and imaginary rotations — are the six real parameters of $SO(3,\mathbb{C})$, and their images are the rotations and the boosts of $SO^+(1,3)$, which is the isomorphism of the previous paragraph made explicit at the level of one-parameter subgroups.
+
+**Causality as a theorem.** Two inequalities, both elementary, make the construction more than a rewriting. By AM–GM, $2|\mathbf{p}|\,|\mathbf{q}|\le|\mathbf{p}|^2+|\mathbf{q}|^2=T$; and $|\mathbf{X}|=2|\mathbf{p}\times\mathbf{q}|\le2|\mathbf{p}|\,|\mathbf{q}|$. Hence
+
+$$
+|\mathbf{X}| \;\le\; T , \qquad\text{that is,}\qquad S^2 = T^2-|\mathbf{X}|^2 \;\ge\; 0 .
+$$
+
+The induced interval is **timelike or null, never spacelike**. The source draws the consequence: the real $(1+3)$ pseudo-Euclidean geometry *and its causal structure* — which special relativity has to postulate — are here consequences of the primary complex space. In this article's terms, the structural hypothesis that the Lorentzian metric is a consequence of the complex structure is not an interpretation laid on the algebra; on this route it is an identity, the Lagrange identity plus AM–GM. Equality $S=0$ holds exactly when the two inequalities are both saturated, that is when $|\mathbf{p}|=|\mathbf{q}|$ and $\mathbf{p}\cdot\mathbf{q}=0$: the complex null cone $\sigma=0$ maps to the real light cone, which is the source's infinitesimal statement of the same fact.
+
+**The geometric phase.** The argument of the invariant $\sigma$ is itself invariant, being the argument of something the group fixes:
+
+$$
+\alpha = \arg\sigma , \qquad \tan\alpha = \frac{2\,\mathbf{p}\cdot\mathbf{q}}{|\mathbf{p}|^2-|\mathbf{q}|^2} ,
+$$
+
+the second form being the source's. So beside the Minkowski interval the construction yields a **second Lorentz invariant**, a phase. It is not a holonomy — there is no connection and no loop — but the coordinate that labels the fibre of the bilinear map: given $(T,\mathbf{X})$ the pair $(\mathbf{p},\mathbf{q})$ is determined up to a common rotation in the plane orthogonal to $\mathbf{X}$, and $\alpha$ is the remaining datum. The source calls it the *geometric phase* and proposes it as the origin of the quantum properties of particles, which its programme identifies with field singularities. That proposal is speculative and is recorded here as the source's, not as a result; what is a result is that $\alpha$ is Lorentz-invariant and computable from the complex 3-vector.
+
+The source relates $\alpha$ to the motion by
+
+$$
+\cos^2\theta = \frac{1-v^2}{1+v^2\cot^2\alpha} ,
+$$
+
+where $\theta$ is the angle between $\mathbf{p}$ and $\mathbf{q}$ and $v=|\delta\mathbf{X}|/\delta T$ is the speed in units of $c$; at $v=0$ it forces $\cos^2\theta=1$, the pair parallel or antiparallel, which the source reads as a possible origin of spin. Both the invariance of $\alpha$ and this relation were checked on random data (below).
+
+**Two slips of the source, recorded rather than repaired.** First, the power of $|z_0|$. The local complex null cone of the source's dynamics is $\sigma=z_0^2$ — its equation for the relative coordinate, equivalent to the vanishing of the determinant — so taking moduli gives $|\sigma|=|z_0|^2$, hence $S=|\sigma|=|z_0|^2$ and
+
+$$
+T^2-|\mathbf{X}|^2 = S^2 = |z_0|^4 .
+$$
+
+The source prints $T^2-|\mathbf{X}|^2=S^2\equiv|z_0|^2$; the two differ by $|z_0|^2$, and the consistent reading is the first, since $\sigma=z_0^2$ is the nullness condition and is displayed correctly. Relatedly, $\alpha=\arg\sigma=2\arg z_0$, so the phase of the complex proper time is $\alpha/2$; the source's "the phase invariant corresponds to the phase of the complex proper time" is loose by that factor of two. Second, the letter $T$. The source defines $T=|\mathbf{p}|^2+|\mathbf{q}|^2$ as a **coordinate** and writes the interval element of a displacement as $\delta T=|\delta\mathbf{p}|^2+|\delta\mathbf{q}|^2$. The second is not the differential of the first: $dT=2(\mathbf{p}\cdot d\mathbf{p}+\mathbf{q}\cdot d\mathbf{q})$ is linear in the increments and integrates to zero around a closed loop, whereas $|\delta\mathbf{p}|^2+|\delta\mathbf{q}|^2$ is quadratic in them and positive. The source's claims that the induced time is irreversible and "non-holonomic" are therefore statements about the quadratic form — a metric, that is a Finsler-type arc element, not a differential — and a reader must not read the interval element as $dT$. Both points are checked below.
+
+**What the route does not give, and the boundary.** The construction realizes the **closed forward light cone only**. There is no spacelike region, since $|\mathbf{X}|\le T$ identically, and no past cone, since $T\ge0$ identically; a spacelike separation or a past-directed causal relation cannot be represented at all. The map $(\mathbf{p},\mathbf{q})\mapsto(T,\mathbf{X})$ is onto that cone but is not a diffeomorphism — six real dimensions onto four — with fibre the phase and the common rotation, so the primary complex space is not Minkowski space in disguise. And the programme's own vocabulary for what the extra dimensions do — the "observable" space-time, the ensemble of correlated particle-singularities it calls *duplicons*, and the complex null cone whose defining equation has several roots — is the source's; the twistor-side content of it belongs to the companion article *Twistor Theory and Biquaternions*, and the vocabulary is not adopted here.
+
+**Verification.** Every claim of this section was recomputed on 100 random instances. On random biquaternions and random $\tilde{M}\in SL(2,\mathbb{C})$: $z_0$, $\det\tilde{Q}$ and $\sigma$ were invariant under $\tilde{Q}\mapsto\tilde{M}\tilde{Q}\tilde{M}^{-1}$ to $1.6\times10^{-15}$, $1.1\times10^{-13}$ and $1.9\times10^{-13}$; the induced $3\times3$ matrix satisfied $R^TR=I$ to $6.0\times10^{-15}$ with $\det R=1$ to $8.4\times10^{-15}$. The Lagrange identity held to $2.3\times10^{-14}$, $|\mathbf{X}|\le T$ showed no violation, with equality to $8.9\times10^{-16}$ exactly when $|\mathbf{p}|=|\mathbf{q}|$ and $\mathbf{p}\cdot\mathbf{q}=0$. The imaginary rotation reproduced the boost of rapidity $2\psi$ to $1.6\times10^{-15}$ with $T^2-X_3^2$ invariant to $6.1\times10^{-14}$, and the real rotation rotated $\mathbf{X}$ and fixed $T$ to $3.3\times10^{-16}$. $T^2-|\mathbf{X}|^2$ and $\arg\sigma$ were invariant under random automorphisms to $7.1\times10^{-12}$ and $3.6\times10^{-14}$. The phase relation held to $4.4\times10^{-16}$. Every forward-cone datum $T\ge|\mathbf{X}|\ge0$ was attained ($100$ of $100$), and the common rotation about $\mathbf{X}$ fixed $T$, $|\mathbf{X}|$ and $\sigma$ to $8.0\times10^{-16}$. On closed polygonal loops in $(\mathbf{p},\mathbf{q})$, $T$ returned to its starting value to $1.3\times10^{-15}$ while the integral of the interval element was $1.8\times10^{-3}$ to $5.7\times10^{-3}$, positive as the second slip above predicts; and the source's nullness condition gave $T^2-|\mathbf{X}|^2=|z_0|^4$ to $5.8\times10^{-15}$.
+
 ## The Infinitesimal Automorphisms: the Lie Algebra
 
 Differentiating the unit-norm condition gives the Lie algebra of infinitesimal biquaternion-norm automorphisms. Let
@@ -359,9 +468,11 @@ This is what makes each combination close on itself with the same structure cons
 
 **Interpretation.** The reading of the material slice as physical spacetime, and of its biquaternion-norm automorphisms as the Lorentz group, is the framework's structural hypothesis. The group-theoretic content is exact; the physical assignment is the hypothesis, and it is the same hypothesis that the foundational articles *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector* and *Introduction to the Biquaternion Universe* state.
 
+**Attributed to a neighbouring programme.** The diagonal reading of the algebra automorphisms, the bilinear real coordinates $T=|\mathbf{p}|^2+|\mathbf{q}|^2$, $\mathbf{X}=2\,\mathbf{p}\times\mathbf{q}$, the induced interval $T^2-|\mathbf{X}|^2=S^2=\sigma\sigma^*$ with its guaranteed sign, the boost of rapidity $2\psi$, and the invariant phase $\alpha=\arg\sigma$ are the construction of Kassandrov's algebrodynamics and not of this article. What is this article's is the placement of that construction as the middle case between the norm and the slice, the identification of its group with the diagonal $SO(3,\mathbb{C})\subset SO(4,\mathbb{C})$, and the checks. The source's reading of the phase as the origin of quantum properties, and its vocabulary of *duplicons* and "observable" space-time, are not adopted. The programme as a whole — its nonlinear primary equation, its twistor field, its multivalued principal field, its induced geometry with phase and its particle picture — is recorded, once, in *The Algebrodynamical Programme: Nonlinear Cauchy–Riemann and Self-Quantized Charge*, which owns it; this article's contribution is the group-theoretic identification of the automorphism group with the diagonal of the norm-automorphism group and the numerical checks.
+
 ## Open Questions
 
-1. **Automorphisms of the full algebra.** The maps considered here preserve the biquaternion norm and, at the real level, the material slice. The $\mathbb{C}$-algebra automorphisms of $\mathbb{B}\cong M_2(\mathbb{C})$ are the inner automorphisms, $\tilde{Q}\mapsto\tilde{A}\tilde{Q}\tilde{A}^{-1}$, a subgroup of the form automorphisms. Does the framework assign a physical role to the difference between algebra automorphisms and form automorphisms?
+1. **Automorphisms of the full algebra.** The maps considered here preserve the biquaternion norm and, at the real level, the material slice. The $\mathbb{C}$-algebra automorphisms of $\mathbb{B}\cong M_2(\mathbb{C})$ are the inner automorphisms, $\tilde{Q}\mapsto\tilde{A}\tilde{Q}\tilde{A}^{-1}$, a subgroup of the form automorphisms. The group-theoretic half of the question has a sharp answer, given in the section above: the subgroup is the **diagonal** $SO(3,\mathbb{C})\cong PGL(2,\mathbb{C})$ inside $SO(4,\mathbb{C})$, and as a real group it is the restricted Lorentz group itself — which is why a construction can take the algebra automorphisms, rather than the slice automorphisms, as the physical Lorentz group. What remains open is whether the framework adopts that reading, in which Minkowski space is a bilinear image of $\mathbb{C}^3$ and the causal structure follows from the Lagrange identity, or keeps the slice reading of the summary. The corpus records the construction and its checks, and leaves the choice to the foundational articles.
 
 2. **The discrete components.** $O(1,3)$ has four components; the rotor group covers only $SO^+(1,3)$. Parity and time reversal are form automorphisms outside the rotor group. Whether the framework can represent them by an operation on biquaternion fields — rather than on four-vectors — without leaving the algebra is not settled here.
 
@@ -426,6 +537,24 @@ $$
 
 whose complexification splits into two commuting rotation algebras. The Lorentz group, in this reading, is what the biquaternion norm's automorphisms become when they are required to respect the algebra's real structure.
 
+A second reading is available, and the two must not be conflated. The automorphisms that preserve the **product** and not only the form are the inner, or diagonal, ones,
+
+$$
+\mathrm{Aut}_{\mathbb{C}}(\mathbb{B}) \cong PGL(2,\mathbb{C}) \cong PSL(2,\mathbb{C}) \cong SO(3,\mathbb{C}),
+\qquad
+SO(3,\mathbb{C}) \subset SO(4,\mathbb{C}) \ \text{the diagonal},
+$$
+
+and as a real group this is again the restricted Lorentz group. Acting on the complex 3-vector $z_a=p_a+iq_a$ it induces, through the bilinear real coordinates
+
+$$
+T=|\mathbf{p}|^2+|\mathbf{q}|^2 , \qquad \mathbf{X}=2\,\mathbf{p}\times\mathbf{q} ,
+\qquad
+\sigma\sigma^* = \bigl(|\mathbf{p}|^2-|\mathbf{q}|^2\bigr)^2+\bigl(2\,\mathbf{p}\cdot\mathbf{q}\bigr)^2 = T^2-|\mathbf{X}|^2 ,
+$$
+
+where $\sigma=z_1^2+z_2^2+z_3^2$. On that route the Minkowski form is induced from the complex structure rather than read off a real slice, real rotations give the spatial rotations and imaginary rotations give boosts of twice the angle, and $T^2-|\mathbf{X}|^2\ge0$ is the Lagrange identity together with AM–GM, so the causal structure is a theorem rather than a postulate. The price is that only the closed forward cone is realized, that the primary space is complex 3-space with a Lorentz-invariant phase $\alpha=\arg\sigma$ rather than a real slice, and that the two routes therefore answer different questions and are recorded separately.
+
 ## Summary of Notation
 
 | Symbol | Meaning |
@@ -438,6 +567,11 @@ whose complexification splits into two commuting rotation algebras. The Lorentz 
 | $\Phi:\mathbb{B}\to M_2(\mathbb{C})$, $\Phi(e_k)=-i\sigma_k$, $N=\det\Phi$ | Matrix realization; biquaternion norm is the determinant |
 | $T_{\tilde{A},\tilde{B}}:\tilde{Q}\mapsto\tilde{A}\tilde{Q}\tilde{B}^{-1}$ | General norm-preserving complex map |
 | $SO(4,\mathbb{C})\cong(SL(2,\mathbb{C})\times SL(2,\mathbb{C}))/\{\pm(e_0,e_0)\}$ | Complex group |
+| $SO(3,\mathbb{C})\cong PGL(2,\mathbb{C})$ | Algebra automorphism group; the diagonal of $SO(4,\mathbb{C})$; as a real group $SO^+(1,3)$ |
+| $\sigma=z_1^2+z_2^2+z_3^2$ | Complex 3-metric on the vector part; invariant of the algebra automorphisms |
+| $T=\lvert\mathbf{p}\rvert^2+\lvert\mathbf{q}\rvert^2$, $\mathbf{X}=2\,\mathbf{p}\times\mathbf{q}$, $z_a=p_a+iq_a$ | Bilinear real coordinates of the diagonal route |
+| $\sigma\sigma^*=T^2-\lvert\mathbf{X}\rvert^2$ | Induced Minkowski interval; $\ge0$ by the Lagrange identity and AM–GM |
+| $\alpha=\arg\sigma$ | Lorentz-invariant geometric phase of the diagonal route |
 | $\mathbb{M}_-$, $\mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) slices |
 | $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{C}_{\mathbb{B}}$ | Real-quaternion, imaginary-quaternion, complex scalar subalgebras |
 | $\eta=\mathrm{diag}(-1,+1,+1,+1)$ | Level-2 Minkowski form, restriction of $N$ to $\mathbb{M}_-$ |
@@ -459,3 +593,4 @@ whose complexification splits into two commuting rotation algebras. The Lorentz 
 - Chris Doran and Anthony Lasenby, *Geometric Algebra for Physicists* (Cambridge, 2003), for the rotor representation of the Lorentz group and the boost–rotation decomposition.
 - David Hestenes, *Space-Time Algebra* (Gordon and Breach, 1966), for the even-subalgebra and bivector formulation of the Lorentz group.
 - Steven Weinberg, *The Quantum Theory of Fields*, Vol. 1 (Cambridge, 1995), for the Lorentz group, its complexification and its finite-dimensional representations.
+- V. V. Kassandrov, "Algebrodynamics in Complex Space-Time and the Complex-Quaternionic Origin of Minkowski Geometry", arXiv:gr-qc/0602088 (2006), for the identification of the algebra automorphism group $SO(3,\mathbb{C})=PGL(2,\mathbb{C})$ as the proper Lorentz group acting on the bilinear real coordinates $T=|\mathbf{p}|^2+|\mathbf{q}|^2$, $\mathbf{X}=2\,\mathbf{p}\times\mathbf{q}$; for the identity $T^2-|\mathbf{X}|^2=\sigma\sigma^*\ge0$ that makes the causal structure a theorem; for the boost of rapidity $2\psi$ generated by an imaginary rotation; and for the Lorentz-invariant phase $\alpha=\arg\sigma$ and its relation to the speed. The same paper is cited, under its other title "On a quaternionic induced geometry with phase", in *The Algebrodynamical Programme: Nonlinear Cauchy–Riemann and Self-Quantized Charge*, which owns the programme and its particle picture. Two slips of the source are recorded in the section above: the power of $|z_0|$ in its (22), and the use of the letter $T$ for both the coordinate and the interval element of a displacement.

@@ -495,6 +495,8 @@ Quaternion analysis is the case $n = 4$ of **Clifford analysis**, which generali
 - The theory of boundary value problems for elliptic systems.
 - The theory of Hardy spaces and singular integrals.
 
+The last two are the subject of *Riemann Boundary Value Problems and Singular Integral Equations*, which develops the linear boundary value problem with a jump and the singular integral equation of Cauchy type for the quaternion case among the other systems.
+
 ### The Radon Transform
 
 The quaternion Radon transform is the analogue of the Radon transform in complex analysis. It is defined by integrating a function over spheres in $\mathbb{R}^4$, and it is inverted by a formula involving the Cauchy–Riemann operator. It is used in:

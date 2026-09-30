@@ -4,7 +4,7 @@
 
 This article introduces harmonic analysis for biquaternion-valued sequences. It follows the elementary functions article, which defined the biquaternion exponential, and it uses the division theory article, which characterized the zero divisors and the roots of $-1$.
 
-The treatment is purely mathematical. The goal is to define the discrete biquaternion Fourier transform, establish its basic properties, show how it decomposes into ordinary complex Fourier transforms, and identify the points where the biquaternion structure creates genuinely new phenomena. The continuous analogue is the subject of the companion article on biquaternion continuous harmonic analysis.
+The treatment is purely mathematical. The goal is to define the discrete biquaternion Fourier transform, establish its basic properties, show how it decomposes into ordinary complex Fourier transforms, and identify the points where the biquaternion structure creates genuinely new phenomena. The transform of an infinite sequence, the **biquaternion Z transform**, is treated at the end of the article; it is the discrete analogue of the Laplace transform and the tool for linear recurrences with constant biquaternion coefficients. The continuous analogue is the subject of the companion article on biquaternion continuous harmonic analysis.
 
 The key structural fact is that the Fourier kernel is a biquaternion exponential, and the exponential is defined by a **root of $-1$**. The roots of $-1$ in $\mathbb{B}$ come in two families: the **degenerate roots** (the scalar imaginary $i$, and the unit pure real quaternions), and the **non-trivial roots** (the elements of the form $b\mu + d\nu i$ with $\mu \perp \nu$ and $b^2 - d^2 = 1$). The choice of root determines the nature of the transform. The degenerate roots give the ordinary complex or quaternion Fourier transform; the non-trivial roots give a genuinely biquaternionic transform.
 
@@ -401,6 +401,158 @@ The generalization to higher dimensions is straightforward. The transform of a b
 
 The higher-dimensional transform is separable, and it can be computed by applying one-dimensional transforms along each dimension in turn.
 
+## The Z Transform
+
+### Definition
+
+The transform pair above analyses a finite sequence; the transform of this section analyses an infinite one, and it is the discrete analogue of the Laplace transform rather than of the Fourier transform. Let $f = \{f_n\}_{n \ge 0}$ be a biquaternion-valued sequence. Its **Z transform** is
+
+$$
+X[f](x) = \sum_{n=0}^{\infty} f_n x^{-n}, \qquad x \in \mathbb{B}^{\times},
+$$
+
+the generating function of the sequence, and the variable ranges over the units of $\mathbb{B}$ because its negative powers occur in the definition. Substituting $x = e^{s}$ turns the sum into $\sum_n f_n e^{-ns}$, the discrete Laplace transform of the sequence, and the region of convergence discussed below is the analogue of the half-plane of the continuous theory. Evaluating the transform at the $N$-th roots of unity instead, $x = e^{2\pi i u/N}$, returns the ordinary complex discrete Fourier transform of the periodisation of the sequence, which is the degenerate case $\rho = i$ of the transform pair above.
+
+The sample $f_n$ is written on the **left** of the variable, so the variable plays the role that the kernel played above. This is the mirror image of the convention of the transform pair, and it is not neutral: the rules below move powers of $x$ through the sequence, and with the variable placed on the left the $q$-scaling rule would require every sample to commute with $q$. The two conventions are interconverted by the quaternion conjugate. Writing
+
+$$
+Y[f](x) = \sum_{n=0}^{\infty} x^{-n} f_n
+$$
+
+for the transform with the variable on the left,
+
+$$
+\overline{X[f](x)} = Y[\bar f](\bar x),
+$$
+
+because quaternion conjugation reverses products and $\overline{x^{-1}} = \bar x^{-1}$.
+
+### The Region of Convergence
+
+Two norms describe the size of a biquaternion, and the choice between them is the whole difficulty of the convergence question. The **Euclidean norm** $\lVert\tilde{Q}\rVert = \left(\sum_\mu \lvert Q_\mu\rvert^2\right)^{1/2}$ is the norm of the metric structure of *Biquaternion Analysis*; the **multiplicative real norm** $r(\tilde{Q}) = \sqrt{\lvert N(\tilde{Q})\rvert}$ is the unique real norm that is multiplicative and normalised on the real scalars, by *Biquaternion Norm and Invertibility*. Only the second reduces the question to scalars, because only the second is multiplicative:
+
+$$
+r(f_n x^{-n}) = r(f_n)\,r(x)^{-n}.
+$$
+
+So a sequence that grows at most geometrically, $r(f_n) \le \sigma_f^{\,n}$, has terms of seminorm tending to zero as soon as $r(x) > \sigma_f$, and the Z-transform literature takes the **region of convergence** to be this set, with $\sigma_f$ the **radius of convergence**. Two corrections come from the vanishing of $r$ on the zero divisors.
+
+**Vanishing of the seminorm is not convergence.** The first standard idempotent of *Biquaternion Idempotents and Projections* is
+
+$$
+\tilde\Pi_1 = \tfrac12(e_0 + ie_3), \qquad \tilde\Pi_1^2 = \tilde\Pi_1, \qquad N(\tilde\Pi_1) = 0, \qquad r(\tilde\Pi_1) = 0,
+$$
+
+and its powers are $\tilde\Pi_1^{\,k} = \tilde\Pi_1$ for $k \ge 1$. Multiplicativity of $r$ then gives
+
+$$
+r(\tilde\Pi_1^{\,k}) = r(\tilde\Pi_1)^k = 0 \qquad\text{for every } k,
+$$
+
+so every term of the geometric series $\sum_k \tilde\Pi_1^{\,k}$ has seminorm zero, while the partial sums
+
+$$
+S_K = \sum_{k=0}^{K-1} \tilde\Pi_1^{\,k} = e_0 + (K-1)\tilde\Pi_1, \qquad r(S_K) = \sqrt{K},
+$$
+
+are unbounded in both norms. The point lies inside the claimed region $r(x) < 1$, and the geometric identity
+
+$$
+\sum_{k=0}^{\infty} y^{k} = (e_0 - y)^{-1}
+$$
+
+fails there, because $e_0 - \tilde\Pi_1 = \tilde\Pi_2$ is the complementary idempotent and is again a zero divisor. The series converges exactly when the powers $y^k$ tend to zero, equivalently, the algebra being finite-dimensional, when every eigenvalue of $y$, read in the $2\times2$ complex matrix representation of *Biquaternion 2×2 Matrix Element Representation*, has modulus less than one; the sum is then $(e_0 - y)^{-1}$, as the identity $(e_0 - y)S_K = e_0 - y^K$ shows. The obstruction is the summation and not the multiplication: a finite sum of products is always defined, and only the passage to the limit fails.
+
+**The seminorm radius is the geometric mean of the eigenvalues.** By the same representation the eigenvalues $\lambda_1, \lambda_2$ of $\tilde{Q}$ satisfy $\lambda_1\lambda_2 = N(\tilde{Q})$, so $r(\tilde{Q}) = \sqrt{\lvert\lambda_1\lambda_2\rvert}$ is the geometric mean of their moduli. The region in which the series in $x^{-1}$ actually converges is governed by the smaller of the two: for a positive real $c$ the series $\sum_k (cx^{-1})^k$ converges exactly when $c < \min(\lvert\lambda_1\rvert, \lvert\lambda_2\rvert)$. The geometric mean never falls below the minimum, so the region $r(x) > \sigma_f$ always **contains** the true region and may contain divergent points. For
+
+$$
+x = 3e_0 + ie_1, \qquad N(x) = 8, \qquad r(x) = 2\sqrt2 \approx 2.83,
+$$
+
+the eigenvalues are $4$ and $2$. With $\sigma_f = 2.5$ the point lies in the region, although $\sum_k (2.5\,x^{-1})^k$ diverges, its partial sums reaching Euclidean norm $6.8 \times 10^{19}$ at $k = 200$. For an element with real quaternion coordinates the two eigenvalues are conjugate, $r$ is their common modulus, and the two regions coincide, so the correction concerns the biquaternions proper and not the quaternion subspace. In the applications the variable is a complex scalar, where $x^{-n}$ has norm $\lvert x\rvert^{-n}$ and the classical theory of the complex Z transform carries over to the coefficients unchanged.
+
+### The Calculation Rules
+
+Each row below is an identity of series, valid wherever the series concerned converge; the rows built from the central calculus carry the commutation hypothesis displayed with them. The sequences are $f$ and $g$, the constants are $c_1, c_2 \in \mathbb{B}$ and $p, q \in \mathbb{B}$, and $k$ is a non-negative integer.
+
+| Property | Sequence | Transform |
+|---|---|---|
+| Left linearity | $c_1f + c_2g$ | $c_1X[f](x) + c_2X[g](x)$, for any constants |
+| Right linearity | $fc_1 + gc_2$ | $X[f](x)c_1 + X[g](x)c_2$, for $c_1x = xc_1$ and $c_2x = xc_2$ |
+| Two-sided linearity | $c_1f + gc_2$ | $c_1X[f](x) + X[g](x)c_2$, for $c_2x = xc_2$ |
+| $q$-scaling | $f_nq^n$ | $X[f](q^{-1}x)$, for $qx = xq$ |
+| $n$-scaling | $nf_n$ | $-x\,\dfrac{d}{dx}X[f](x)$, for $x$ central |
+| Shifting | $f_{n+k}$ | $X[f](x)x^{k} - \sum_{n=0}^{k-1} f_nx^{k-n}$ |
+| Inverse shifting | $f_{n-k}$ ($0$ for $n<k$) | $X[f](x)x^{-k}$ |
+| Convolution | $\sum_{j=0}^{n} f_{n-j}g_j$ | $X[f](x)X[g](x)$, for $x$ central |
+
+The shifting rows need no hypothesis, because $x^{-(n+k)} = x^{-n}x^{-k}$ for the powers of a single element. The $q$-scaling row compares $(qx^{-1})^n$ with $q^nx^{-n}$ and therefore needs $qx = xq$, and the convolution row needs each $g_j$ to commute with $x$, which the centrality of $x$ supplies. The linearity rows show where the non-commutativity bites: a constant written on the right of a sequence may be moved outside the transform only if it commutes with the variable.
+
+### The Elementary Sequences
+
+In the table below the entry $n$ abbreviates the sequence $ne_0$, and the variable is a complex scalar, the case used in the applications. The rows whose base is a biquaternion carry the commutation hypotheses displayed, and the two scalar rows use the $n$-scaling rule, which a complex scalar satisfies.
+
+| $f_n$ | $X[f](x)$ |
+|---|---|
+| $e_0$ | $(e_0 - x^{-1})^{-1}$ |
+| $n$ | $x(x - e_0)^{-2}$ |
+| $n^2$ | $(x + x^2)(x - e_0)^{-3}$ |
+| $p^n$, for $px = xp$ | $(e_0 - px^{-1})^{-1}$ |
+| $np^n$, for $px = xp$ | $px^{-1}(e_0 - px^{-1})^{-2}$ |
+| $\dfrac{q^n}{n!}$, for $qx = xq$ | $e^{qx^{-1}}$ |
+
+### Recurrence Relations
+
+The purpose of the transform is the solution of linear recurrences with constant biquaternion coefficients,
+
+$$
+\sum_{m=0}^{M} f_{n+m}p_m = g_n, \qquad n \ge 0,
+$$
+
+where the coefficients $p_m$ are biquaternions and the right-hand side $g$ is a known sequence. Transforming both sides with the shifting and linearity rules converts the recurrence into an algebraic equation for $X[f]$, which is solved in the algebra; the sequence is then read off the table of elementary sequences. It is the discrete analogue of the Laplace-transform solution of a linear differential equation with constant coefficients.
+
+**Example.** Let $u = e_1 + e_2$, so that $u^2 = -2e_0$, and let
+
+$$
+f_{n+2} = f_{n+1}(u - e_0) + f_nu, \qquad f_0 = e_0, \qquad f_1 = u .
+$$
+
+Transforming both sides and using the shifting rule, with $x$ central,
+
+$$
+x^2\bigl(X[f] - e_0 - ux^{-1}\bigr) = x\bigl(X[f] - e_0\bigr)(u - e_0) + X[f]u,
+$$
+
+which, after $e_0u = u$ and $e_0^2 = e_0$, is the linear equation
+
+$$
+X[f](x)\,(x^2 + x - xu - u) = x^2 + x .
+$$
+
+The left factor is the product $(x + e_0)(x - u)$ of two commuting factors, and $x^2 + x = x(x + e_0)$, so
+
+$$
+X[f](x) = x(x - u)^{-1} = (e_0 - ux^{-1})^{-1}.
+$$
+
+By the table this is the transform of the sequence $f_n = u^n$, which satisfies the recurrence because $u^{n+1}(u - e_0) + u^{n+1} = u^{n+2}$, and satisfies the initial values. The solution is
+
+$$
+f_n = (e_1 + e_2)^n, \qquad n \ge 0 .
+$$
+
+An inhomogeneous recurrence is treated in the same way: the transform of the known right-hand side is inserted, the resulting equation for $X[f]$ is decomposed in powers of $x^{-1}$, and each term is read off the table.
+
+## The Commutative Alternative: The Reduced Biquaternion Transform
+
+Everything in this article is the transform of $\mathbb{B}$, whose product is non-commutative and whose convolution theorem therefore fixes the kernel to one side. A commutative four-dimensional algebra has a discrete transform of its own, due to Pei, Chang and Ding, and it is the corpus's only worked instance of a discrete hypercomplex transform over a commutative algebra; it is recorded here because it is the case in which the phenomena of the previous sections disappear.
+
+The algebra is $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}\cong\mathbb{C}\oplus\mathbb{C}$, the reduced biquaternion algebra of *List of Algebras by Dimension*, and the transform is the **discrete reduced biquaternion Fourier transform** (DRBFT). The paper distinguishes two kernel conventions: **type 1**, with two imaginary units, whose advantage is that the even-even, even-odd, odd-even and odd-odd components of a real signal separate in the frequency domain, and **type 2**, with one imaginary unit, chosen for its similarity to the ordinary complex transform. Both are implemented by the reduction of *Harmonic Analysis over Hypercomplex Systems*: the signal is split by the idempotents into two complex signals, and the transform is then a pair of complex two-dimensional transforms, so a DRBFT of either type costs two complex DFTs, the same count the quaternion Fourier transform costs. The convolution is implemented with six complex two-dimensional transforms, and one convolution in this algebra equals two conventional ones.
+
+The convolution theorem is the sharpest contrast with the theorem of this article. The convolution here is commutative, the kernel needs no side convention, and the product in the frequency domain is the transform of the convolution whichever DRBFT type is used; the paper reports that for the quaternion transform the corresponding identity holds only in a restricted one-side form, which is consistent with the one-sided theorem proved above for $\mathbb{B}$ and with its loss of commutativity. Two consequences of the commutative product are the ones the paper emphasises: a cascade of linear time-invariant filters multiplies in the frequency domain exactly as in the complex case, whereas the paper reports the cascade of quaternion filters to be difficult to analyse; and the **correlation** is a special case of the convolution, so the convolution algorithms serve it, with the **phase-only correlation** obtained by normalising the phase in the frequency domain, the paper's discrete definition of which uses the binary exclusive-or operation.
+
+The price is the vanishing-norm phenomenon of the previous section, which the commutative algebra has as well: the norm is the determinant, it vanishes on two ideals, and so the transform has no single magnitude to be stationary in. The applications are to colour. A colour image is represented in the brightness–hue–saturation space, and the correlation and phase-only correlation are used for colour template matching and colour-sensitive edge detection. The colour space is three-dimensional and the algebra four-dimensional, so the representation is not unique; the paper removes the redundancy with a **simplified polar form**, treated with the other polar forms of the family in *Biquaternion Polar Element Representation*.
+
 ## Open Questions
 
 1. **Wavelets.** Can a biquaternion wavelet transform be defined, and what are its properties? The wavelet kernel is more general than the Fourier kernel, and the biquaternion structure may introduce new phenomena.
@@ -427,6 +579,8 @@ The vanishing-norm issue is a genuinely biquaternionic feature: signals containi
 
 The discrete transform is the discrete analogue of the continuous transform of the companion article, and it is the basis for the biquaternion signal processing applications.
 
+The infinite-sequence analogue is the **biquaternion Z transform**, $X[f](x) = \sum_{n \ge 0} f_nx^{-n}$, the discrete Laplace transform of a sequence. Its calculation rules are those of the complex Z transform, with the commutation hypotheses that the non-commutative product imposes, and its convergence is the place where the zero divisors enter a transform: the multiplicative real norm $r = \sqrt{\lvert N\rvert}$ vanishes on them, so the region $r(x) > \sigma_f$ of the transform literature contains the true region of convergence and may contain divergent points, the standard idempotent $\tilde\Pi_1$ and its complement being the sharpest example. The transform solves linear recurrences with constant biquaternion coefficients by turning them into algebraic equations.
+
 ## Summary of Notation
 
 | Symbol | Meaning |
@@ -440,6 +594,11 @@ The discrete transform is the discrete analogue of the continuous transform of t
 | $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$ | Biquaternion norm; not to be confused with the sample count $N$ |
 | $\mathbf{Q} = Q_1 e_1 + Q_2 e_2 + Q_3 e_3$ | Vector part of a biquaternion |
 | $e^{\rho\theta} = \cos\theta\,e_0 + \sin\theta\,\rho$ | de Moivre formula, valid for every root $\rho$ of $-1$ |
+| $X[f](x) = \sum_{n \ge 0} f_nx^{-n}$ | Biquaternion Z transform of a sequence, the variable on the right of the sample |
+| $Y[f](x) = \sum_{n \ge 0} x^{-n}f_n$ | The Z transform with the variable on the left; $\overline{X[f](x)} = Y[\bar f](\bar x)$ |
+| $x \in \mathbb{B}^{\times}$ | The variable of the Z transform, a unit of the algebra |
+| $r(\tilde{Q}) = \sqrt{\lvert N(\tilde{Q})\rvert}$ | The multiplicative real norm; a seminorm on $\mathbb{B}$, vanishing on the zero divisors |
+| $\sigma_f$ | Radius of convergence of the Z transform, the geometric growth rate of $r(f_n)$ |
 
 ## Further Reading
 
@@ -449,4 +608,6 @@ The discrete transform is the discrete analogue of the continuous transform of t
 - N. Le Bihan and J. Mars, "Singular value decomposition of quaternion matrices: a new tool for vector-sensor signal processing", *Signal Processing* **84** (2004) 1177–1199, for the quaternion signal processing background.
 - T. A. Ell and S. J. Sangwine, "Hypercomplex Fourier transforms of color images", *IEEE Transactions on Image Processing* **16** (2007) 22–35, for the quaternion Fourier transform and its applications.
 - W. R. Hamilton, *Lectures on Quaternions* (Hodges and Smith, Dublin, 1853), for the original formulation of quaternions and biquaternions.
+- W. Bi, Z.-F. Cai, and K. I. Kou, "Biquaternion Z transform", arXiv:2108.02975 (2021), for the biquaternion Z transform, its calculation rules and its table of elementary transforms, and the solution of biquaternion recurrence relations.
 
+- Soo-Chang Pei, Ja-Han Chang and Jian-Jiun Ding, "Commutative reduced biquaternions and their Fourier transform for signal and image processing applications", *IEEE Transactions on Signal Processing* **52** (2004) 2012–2022, for the reduced biquaternion algebra — the commutative four-dimensional algebra $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}\cong\mathbb{C}\oplus\mathbb{C}$, equivalently the double-complex, tessarine or commutative hypercomplex algebra — and for the discrete reduced biquaternion Fourier transform, its convolution and correlation theorems, its phase-only correlation and its colour-image applications.

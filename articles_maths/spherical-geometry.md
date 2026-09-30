@@ -149,6 +149,8 @@ so that the diameter of elliptic space is $\pi/2$, half that of the sphere.
 
 **Remark (the two conventions of the elliptic plane).** The sphere itself is sometimes called the **double elliptic plane**, because each pair of antipodal points is a single point of the elliptic plane doubled; this is why the sphere is simply connected while the elliptic plane has fundamental group $\mathbb{Z}/2\mathbb{Z}$. Both are models of positive curvature: the sphere is the simply connected one, and the elliptic plane is the quotient by the antipodal involution, the simplest spherical space form.
 
+**Remark (the versor model of the three-dimensional elliptic space).** In dimension three the identification $S^3 = Sp(1)$ of §*The Unit Quaternions* exhibits elliptic space as the quotient of the group of unit quaternions by $\{\pm1\}$, that is the quotient of the group of versors of *Quaternion Rotations and Reflections*; the left and right multiplications by unit quaternions generate its orientation-preserving isometries, and right multiplication by a fixed versor is a **Clifford translation**, a motion that displaces every point of $\mathbb{E}^3$ by the same distance. This is the quaternion form of elliptic geometry.
+
 ### The Finite Rotation Groups
 
 **Definition.** A **finite rotation group** of the sphere $S^2$ is a finite subgroup $\Gamma \leq SO(3)$; its **orbit** of a point $x$ is $\Gamma x$, and the quotient $S^2/\Gamma$ is a spherical orbifold.

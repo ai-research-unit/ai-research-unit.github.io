@@ -254,13 +254,30 @@ so the field strength is not harmonic, and the potential — a material-sector f
 
 The two helicities of the massless field are the labels of the two self-dual halves. For the massive field the two transverse polarizations survive as helicity $\pm1$ in the rest frame, but helicity is no longer a Lorentz-invariant label, because a boost can rotate a transverse polarization into the longitudinal one. The algebra does not decide this: it represents both the massless and the massive case on the same footing, and the presence or absence of the third polarization is an input, the value of $m$. This is the same structural situation that the companion article on the photon records for the massless case, read in the opposite direction.
 
+## The Conserved Current and the Energy–Momentum Tensor
+
+The massive field carries a conserved current and an energy–momentum tensor, and the review writes both in the same closed form in terms of the field strength and the potential:
+
+$$
+2\tilde{J} = \tilde{A}^{+}\tilde{F} + \tilde{F}^{+}\tilde{A} + (\cdots)^{\sim},
+\qquad
+8\pi\,\tilde{T}(\;) = \tilde{F}^{+}[\;]\tilde{F} + \mu^2\,\tilde{A}^{+}[\;]\tilde{A} + (\cdots)^{\sim},
+$$
+
+where the slot in $\tilde{T}$ takes an arbitrary biquaternion argument — marked by $[\;]$ inside the operator, as in the companion article on Maxwell's equations — the source's $+$ is the Hermitian conjugation, and $(\cdots)^{\sim}$ means that the expression is completed by adding the **reverse** of the part on the left. The completion is not decoration: it is what gives each object a definite order parity, since any part added to its own reversal is reversal-even by construction, and the source's conclusion is that the current and the energy–momentum are then "bireal and ordinal invariant four-vectors, as it should be". This is the same reversal-evenness that selects the Proca combination from the Lanczos parent below, and it is the object catalogued in *The Biquaternion Involution Lattice*.
+
+Two points of notation, so that the display is not misread. The mass coefficient is the source's $m^2$ in natural units, that is $\mu^2 = m^2c^2/\hbar^2$ in the units of this article. And the same authors' 2001 comment prints the same current undoubled and with $\vec{b}$ — its name for the field strength — in place of $\tilde{F}$; the two formulas are one object in two notations.
+
+The source adds one further statement, which the corpus records without re-deriving it: if the electromagnetic field is introduced — by either route, local gauge invariance or the minimum-coupling substitution — the divergence of the current still vanishes, while the divergence of $\tilde{T}$ gives the **Lorentz force** acting on the particle. What is checked here is only the structure, that the completion rule makes the two objects reversal-even; that follows from the definition and needs no computation, whereas the two divergence statements are the source's.
+
 ## The Lanczos Parent and the Two Reversal Combinations
 
-The Proca equation is one of three relativistic field equations that descend from a **single** first-order system. Lanczos's coupled system $\tilde{\nabla}\tilde{A}=m\tilde{B}$, $\tilde{\nabla}\tilde{B}=m\tilde{A}$ sits beneath the classical layer, and its descendants are reached by three different algebraic operations:
+The Proca equation is one of four relativistic field equations that descend from a **single** first-order system. Lanczos's coupled system $\tilde{\nabla}\tilde{A}=m\tilde{B}$, $\tilde{\nabla}\tilde{B}=m\tilde{A}$ sits beneath the classical layer, and its descendants are reached by four different algebraic operations:
 
 - the **Dirac** equation, by the idempotent superposition $D=\tilde{A}\sigma+\tilde{B}^{*}\bar{\sigma}$ of the standard-model agenda article, whose combined form is strictly equivalent to Dirac's equation;
 - the **Proca** equation, by combining the second Lanczos equation with its **order reverse** (its ordinal conjugate), the potential being ordinal-invariant, $\tilde{A}=\tilde{A}^{\sim}$;
-- the **Maxwell** equation, as the massless limit of Proca.
+- the **Maxwell** equation, as the massless limit of Proca;
+- the **Klein–Gordon** equation, as the spin-0 member, by restricting the pair to scalar fields (see *The Klein–Gordon Equation in Biquaternionic Form*: one-dimensional in its first-order form, the four-dimensional free scalar equation after the elimination).
 
 The observation is due to Gsponer and Hurni, and it is sharper than the list suggests. Combining the equation with its own order reverse gives not two independent equations but the two **reversal parities** of one. In the source's notation, with $\nabla$ the biquaternionic gradient, $\tilde{F}^{\sim}$ the order reverse of the field strength and the second gradient acting to the right,
 
@@ -294,7 +311,7 @@ What the parent does **not** do is fix the mass. The Lanczos parameter $m$ and t
 
 The separation is worth stating explicitly, because the Proca equation is standard physics and the framework's contribution is a rewriting.
 
-**The standard part.** The Proca Lagrangian, the equation of motion, the derivation of the Lorenz condition by contraction, the reduction to the Klein–Gordon equation, the dispersion relation, and the count of three polarizations are textbook field theory, transcribed here into the notation of the series. Nothing in the transcription changes them.
+**The standard part.** The Proca Lagrangian, the equation of motion, the derivation of the Lorenz condition by contraction, the reduction to the Klein–Gordon equation, the dispersion relation, the count of three polarizations, and the conserved current and energy–momentum tensor are textbook field theory, transcribed here into the notation of the series. Nothing in the transcription changes them.
 
 **The algebra's part.** The framework gives three compact statements that the index notation only implies. First, the field strength is the vector part of the conjugate gradient of the potential, and the Lorenz condition is the statement that the scalar part of that product vanishes; the constraint is thus the vanishing of the scalar part of a single biquaternion. Second, the divergence argument that derives the constraint is the observation that the d'Alembertian is central and scalar and that the field strength is a pure vector, so the scalar part of $\Box\tilde{F}$ vanishes identically. Third, the Hodge dual is minus left multiplication by the scalar imaginary, so the self-dual split of the field strength is a statement about the algebra's complex structure and survives the addition of a mass.
 
@@ -350,6 +367,7 @@ The plane-wave solutions carry a real spatial amplitude and a time component fix
 - Lev Landau and Evgeny Lifshitz, *The Classical Theory of Fields* (Pergamon, 1975), for the massive vector field in the classical theory and the physical third polarization.
 - J. D. Jackson, *Classical Electrodynamics* (Wiley, 1999), for the massless limit, the gauge freedom, and the transverse polarizations.
 - Walter Greiner and Joachim Reinhardt, *Field Quantization* (Springer, 1996), for the canonical treatment of the Proca field and its three polarization states.
-- A. Gsponer and J.-P. Hurni, "The physical heritage of Sir W. R. Hamilton," arXiv:math-ph/0201058, §9, for the derivation of Proca's equation from Lanczos's coupled system by the reversal-even combination, and for the identification of the reversal-odd combination with the absence of magnetic monopoles.
+- A. Gsponer and J.-P. Hurni, "The physical heritage of Sir W. R. Hamilton," arXiv:math-ph/0201058, §9, for the derivation of Proca's equation from Lanczos's coupled system by the reversal-even combination, for the identification of the reversal-odd combination with the absence of magnetic monopoles, and for the conserved current and the energy–momentum tensor in closed quaternion form (46)–(47).
+- A. Gsponer and J.-P. Hurni, "Comment on formulating and generalizing Dirac's, Proca's, and Maxwell's equations with biquaternions or Clifford numbers," arXiv:math-ph/0201049, *Foundations of Physics Letters* **14** (2001) 77–85, for the spin-0 and spin-1 members of the Lanczos family, the Einstein–Mayer hypercomplex mass, and the same current and energy–momentum tensor printed undoubled in the $\vec{b}$ notation.
 - C. Lanczos, "Die tensoranalytischen Beziehungen der Diracschen Gleichung," *Zeitschrift für Physik* **57** (1929) 447–473, 474–483, 484–493 (arXiv:physics/0508002, physics/0508012, physics/0508013), for the coupled biquaternion system from which the Dirac and Proca equations both descend.
 - F. Gürsey, "Applications of quaternions to field equations," PhD thesis, University of London, 1950, for the classification of the scalar, vector, pseudoscalar and pseudovector equations as degenerate cases of Lanczos's fundamental equation.

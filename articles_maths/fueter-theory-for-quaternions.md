@@ -77,6 +77,42 @@ one quaternion equation, equivalently four real equations for the four coefficie
 
 **Corollary.** The system is elliptic, with principal symbol $s(\xi) = \sum_\mu\xi_\mu e_\mu$ invertible for every real $\xi\neq0$, since $s(\xi)\bar s(\xi) = |\xi|^2e_0$; hence Fueter-regular functions are real-analytic.
 
+### The Debye-Type Reformulation of the System
+
+The system can also be written, away from the origin, as identities that trade each first-order equation for a radial derivative of one component and angular derivatives of the others. The rewriting is classical in one complex variable, and it is the source of the name.
+
+**The complex case.** Let $f_0(z) = u(x,y)+iv(x,y)$ be holomorphic on a disc, put $\mathbf{x} = (x,y)$ with $\rho = |\mathbf{x}|>0$, and write $[\mathbf{x}\times\nabla g]_3 = x\,\partial_y g-y\,\partial_x g$ for the out-of-plane component of the two-dimensional cross product. The Cauchy–Riemann relations are equivalent to the two identities
+
+$$
+u = (\hat{\mathbf{x}}\cdot\nabla)(\rho u) - [\mathbf{x}\times\nabla v]_3 ,
+\qquad
+v = (\hat{\mathbf{x}}\cdot\nabla)(\rho v) + [\mathbf{x}\times\nabla u]_3 .
+$$
+
+Since $(\hat{\mathbf{x}}\cdot\nabla)(\rho g) = g+x\partial_xg+y\partial_yg$, the first identity states $0 = x\partial_xu+y\partial_yu-[\mathbf{x}\times\nabla v]_3$ and the second states $0 = x\partial_xv+y\partial_yv+[\mathbf{x}\times\nabla u]_3$; the Cauchy–Riemann relations imply both, and conversely the two rows $(x,y,y,-x)$ and $(-y,x,x,y)$ in the partials $(\partial_xu,\partial_yu,\partial_xv,\partial_yv)$ are orthogonal and their span contains $(1,0,0,-1)$ and $(0,1,1,0)$, so away from $\rho = 0$ the pair is equivalent to $\partial_xu = \partial_yv$, $\partial_yu = -\partial_xv$. The rewriting is called **Debye** because the two real scalars $\psi_E,\psi_M$ that generate the source-free Maxwell solutions and satisfy the wave equation are the **Debye potentials**: the identity is the sense in which an analytic function serves as its own Debye potential, the cross term playing the role of the companion component.
+
+**The quaternion case.** The same contraction applies to the quaternion system. For $F = F_0+\mathbf{F}$ regular with $\mathbf{F} = F_1e_1+F_2e_2+F_3e_3$, and $\mathbf{x} = x_1e_1+x_2e_2+x_3e_3$, $\rho = |\mathbf{x}|>0$, the component $F_0$ satisfies
+
+$$
+F_0 = (\hat{\mathbf{x}}\cdot\nabla)(\rho F_0) + \partial_0(\mathbf{x}\cdot\mathbf{F}) + (\mathbf{x}\times\nabla F_1)_1+(\mathbf{x}\times\nabla F_2)_2+(\mathbf{x}\times\nabla F_3)_3 ,
+$$
+
+and the three companions are obtained by applying the same statement to $-Fe_1$, $-Fe_2$, $-Fe_3$, each again regular, since $D(Fc) = (DF)c$ for a constant $c$ and the scalar component of $-Fe_j$ is $F_j$. The companion for $F_1$ reads
+
+$$
+F_1 = (\hat{\mathbf{x}}\cdot\nabla)(\rho F_1) + \partial_0(-x_1F_0-x_2F_3+x_3F_2) - (\mathbf{x}\times\nabla F_0)_1-(\mathbf{x}\times\nabla F_3)_2+(\mathbf{x}\times\nabla F_2)_3 ,
+$$
+
+and the remaining two follow the same pattern; in each case one component is expressed through its own radial derivative, the $x_0$-derivative of the inner product of the radius with the other three, and the components of $\mathbf{x}\times\nabla$ of those three.
+
+**Structural content.** The identity for $F_0$ collapses. Because $(\hat{\mathbf{x}}\cdot\nabla)(\rho F_0) = F_0+\mathbf{x}\cdot\nabla F_0$ and $\sum_k(\mathbf{x}\times\nabla F_k)_k = \mathbf{x}\cdot\mathrm{rot}\,\mathbf{F}$, the term $F_0$ cancels on the two sides and the relation states
+
+$$
+0 = \mathbf{x}\cdot\bigl(\partial_0\mathbf{F}+\mathrm{grad}\,F_0+\mathrm{rot}\,\mathbf{F}\bigr) ,
+$$
+
+which is the vector part of $DF$ contracted with the radius. Each of the four relations is therefore the radius contraction of one component equation of the system, and every regular $F$ satisfies it; the vector part vanishes in each radial direction precisely because it vanishes outright. The four relations together are a **reformulation** of the system in the source's sense — each component is recovered from radial and angular derivatives of the four — and the source notes that they are not explicitly found in the literature; they are an identity satisfied by regular functions rather than a construction of them, the construction remaining Fueter's.
+
 ## Harmonicity and the Mean Value Property
 
 **Theorem.** Every left- or right-regular function is harmonic,
@@ -216,7 +252,7 @@ The relation to Clifford analysis is the identification $\mathbb{H}\cong\mathrm{
 
 ## Summary
 
-The Fueter operator $D = \sum_\mu e_\mu\partial_\mu$ and its conjugate $\bar D = \partial_0-\mathbf{D}$ factor the four-dimensional Laplacian, $D\bar D = \bar DD = \Delta_4$, and on a slice $\mathbb{C}_I$ reduce to the classical operator $\partial_{x_0}+I\partial_\rho$. Fueter-regular functions, the solutions of $DF = 0$, satisfy the quaternionic Cauchy–Riemann system $\partial_0F_0 = \mathrm{div}\,\mathbf{F}$, $\partial_0\mathbf{F} = -\mathrm{grad}\,F_0-\mathrm{rot}\,\mathbf{F}$; left- and right-regularity differ only in the sign of the curl and coincide for axially symmetric functions. The system is elliptic, and every regular function is harmonic, hence real-analytic and subject to the mean value property, the maximum principle, Liouville's theorem and the Cauchy estimates, with no exceptional set.
+The Fueter operator $D = \sum_\mu e_\mu\partial_\mu$ and its conjugate $\bar D = \partial_0-\mathbf{D}$ factor the four-dimensional Laplacian, $D\bar D = \bar DD = \Delta_4$, and on a slice $\mathbb{C}_I$ reduce to the classical operator $\partial_{x_0}+I\partial_\rho$. Fueter-regular functions, the solutions of $DF = 0$, satisfy the quaternionic Cauchy–Riemann system $\partial_0F_0 = \mathrm{div}\,\mathbf{F}$, $\partial_0\mathbf{F} = -\mathrm{grad}\,F_0-\mathrm{rot}\,\mathbf{F}$; left- and right-regularity differ only in the sign of the curl and coincide for axially symmetric functions. The system is elliptic, and every regular function is harmonic, hence real-analytic and subject to the mean value property, the maximum principle, Liouville's theorem and the Cauchy estimates, with no exceptional set. The system also admits a **Debye-type reformulation**, in which each component is expressed through its own radial derivative, the $x_0$-derivative of the radius contracted with the others, and the components of $\mathbf{x}\times\nabla$ of the others; the four relations are the radius contractions of the four component equations, so they hold identically for a regular function, and in one complex variable the same pair of identities is equivalent to the Cauchy–Riemann relations.
 
 The Fueter construction sends a holomorphic $f_0$ to $F = \Delta_4\tilde f_0 = 2u_\rho/\rho+\hat{\mathbf{x}}(2v_\rho/\rho-2v/\rho^2)$, which is both left- and right-regular; it is injective exactly on holomorphic functions whose Taylor coefficients vanish to order two, with the affine functions as kernel. The imaginary units of $\mathbb{H}$ form the two-sphere $S^2$, so that every non-real quaternion has a unique slice representation $x = x_0+I\rho$, and the axial representation $F = A(x_0,\rho)+\hat{\mathbf{x}}B(x_0,\rho)$ reduces regularity to $\partial_0A = \partial_\rho B+2B/\rho$, $\partial_0B = -\partial_\rho A$, with $\Delta_4A = 0$ and $\Delta_4B = 2B/\rho^2$. The Fueter–Sce theorem extends the construction to odd $n$ with the power $(n-1)/2$ under the hypotheses of holomorphic convergence, order-two vanishing and odd dimension.
 
@@ -235,6 +271,8 @@ Regular functions have the induced series and the monogenic Taylor expansion of 
 | $FD = 0$ | Right-regularity |
 | $\mathrm{div}, \mathrm{grad}, \mathrm{rot}$ | Vector operators in the componentwise system |
 | $\partial_0F_0 = \mathrm{div}\,\mathbf{F}$, $\partial_0\mathbf{F} = -\mathrm{grad}\,F_0-\mathrm{rot}\,\mathbf{F}$ | Quaternionic Cauchy–Riemann system |
+| $(\mathbf{x}\times\nabla g)_k$ | Components of the radius–gradient cross product in the Debye-type identities |
+| $\psi_E$, $\psi_M$ | Debye potentials, the two real scalar generators of source-free Maxwell solutions |
 | $I$, $S^2$ | Imaginary unit, $I^2 = -1$; the imaginary units of $\mathbb{H}$ form the two-sphere |
 | $\mathbb{C}_I = \mathbb{R}+I\mathbb{R}$ | Slice through $I$, a copy of the complex plane |
 | $A, B$ | Axial coefficients, $F = A(x_0,\rho)+\hat{\mathbf{x}}B(x_0,\rho)$ |
@@ -251,3 +289,4 @@ Regular functions have the induced series and the monogenic Taylor expansion of 
 - Graziano Gentili, Caterina Stoppato and Daniele C. Struppa, *Regular Functions of a Quaternionic Variable* (Springer, 2013), for slice-regular functions and their power series.
 - F. Colombo, I. Sabadini and D. C. Struppa, *Noncommutative Functional Calculus* (Birkhäuser, 2011), for the slice approach and the Fueter mapping theorem.
 - Klaus Gürlebeck and Wolfgang Sprößig, *Quaternionic and Clifford Calculus for Physicists and Engineers* (Wiley, 1997), for the quaternion Cauchy theory and the mean value property.
+- M. Acevedo M., J. López-Bonilla and M. Sánchez-Meraz, "Quaternions, Maxwell equations and Lorentz transformations", *Apeiron* **12** (2005) 371–384, for the Debye-type rewriting of the Cauchy–Riemann relations and its quaternionic extension to the Fueter system.

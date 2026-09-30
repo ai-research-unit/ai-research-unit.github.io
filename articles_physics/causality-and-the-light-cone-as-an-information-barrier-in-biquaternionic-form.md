@@ -295,6 +295,10 @@ A finite composition of boosts has a finite total rapidity $\psi_1+\cdots+\psi_n
 
 The same bound appears in the contraction of a null wavevector with an observer, treated in the companion article *Exercise: The Relativistic Doppler Effect*: the measured frequency $-\mathrm{Sc}(\tilde{K}\bar{\tilde{U}})$ is strictly positive for every future timelike $\tilde{U}$ and every future null $\tilde{K}$, so a light signal cannot be brought to zero frequency by a change of observer. The impossibility of bringing that contraction to zero, the impossibility of closing the relative-velocity deficit, and the vanishing of $N(\tilde{K})$ are three faces of the same cone.
 
+### The Boundary of the Theorem: a Constant Rapidity
+
+Every bound in this section composes **fixed** rapidities, that is, changes between inertial frames. A rotor whose rapidity varies along the trajectory is not covered: its coordinate velocity is the same tangent-addition form with the acceleration rate $\tau\chi'$ in place of a second rapidity, and the worldline ceases to be timelike when $|\tau\chi'| = 1$, so past that point it is not the worldline of a material corpuscle and no signal leaves the cone. The construction is worked as *Problem 5: A Varying Rapidity* of the companion article *Exercise: Boosting a Four-Velocity and Rapidity Composition*, where the formulas and their source are given. Nothing constructed in this article depends on it; the paragraph marks the theorem's domain as the inertial case.
+
 ## The Cone as the Characteristic Cone of the Wave Operator
 
 The barrier has an analytic form, and it is the form in which the algebra itself enforces it. The biquaternionic gradient and its conjugate are
@@ -439,3 +443,4 @@ The information-theoretic reading is that $J^+(p)$ is the set of events that $p$
 - Richard Courant and David Hilbert, *Methods of Mathematical Physics*, Vol. II (Interscience, 1962), for the characteristic cone of the wave operator.
 - F. G. Friedlander, *The Wave Equation on a Curved Space-Time* (Cambridge, 1975), for the finite speed of propagation and the support of retarded solutions.
 - Stefano Liberati, Sebastiano Sonego and Matt Visser, "Faster-than-c signals, special relativity, and causality," *Annals of Physics* **298** (2002) 167–185, for the relation between superluminal signalling and the failure of the causal order.
+- *Exercise: Boosting a Four-Velocity and Rapidity Composition*, companion article, for *Problem 5: A Varying Rapidity*, the construction behind *The Boundary of the Theorem: a Constant Rapidity*.

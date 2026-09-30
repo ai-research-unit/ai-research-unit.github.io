@@ -124,7 +124,7 @@ $$
 \qquad R = |\mathbf{x}| ,
 $$
 
-which is $e^{-m\tau}$ times the massless retarded kernel $G_{\mathrm{ret}} = \frac{1}{4\pi R}\delta(\tau - R)$ that the d'Alembertian article derives and normalises. With the exponential-substitution identity this is not a numerical coincidence but a proof: the KGFSh Green's function is the wave Green's function multiplied by the weight, and the weight does not move the support.
+which is $e^{-m\tau}$ times the massless retarded kernel $G_{\mathrm{ret}} = \frac{1}{4\pi R}\delta(\tau - R)$ that the d'Alembertian article derives and normalises. With the exponential-substitution identity this is not a numerical coincidence but a proof: the KGFSh Green's function is the wave Green's function multiplied by the weight, and the weight does not move the support. The weight here is central — one scalar $m$ — and the companion article *The Biquaternion D'Alembertian and Its Green's Functions* carries the generalisation to a full constant biquaternion coefficient $f + F$, where the scalar part continues to weight the kernel by $e^{-f\tau}$ and the vector part multiplies it by a pure phase and so also moves no support; the non-central part does not add to the price paid here, because the first-order operator it contributes is self-adjoint for real $F$.
 
 ### The sharp kernel, and the contrast that makes it interesting
 

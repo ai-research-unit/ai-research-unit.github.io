@@ -49,6 +49,8 @@ the rotation group of the three-dimensional space $\operatorname{Im}\mathbb{H}$.
 
 **Example.** For $u = e_1$ the inner automorphism $\iota_{e_1}$ fixes $e_1$ and the centre and reverses the signs of $e_2$ and $e_3$: indeed $e_1e_2e_1^{-1} = -(e_1e_2)e_1 = -e_3e_1 = -e_2$, using $e_1e_2 = e_3$ and $e_3e_1 = e_2$. It is the half-turn about the axis $e_1$.
 
+**Remark.** The automorphisms of order two are exactly the halfturns about the axes. An inner automorphism $\iota_u$ satisfies $\iota_u^2 = \iota_{u^2} = \mathrm{id}$ exactly when $u^2$ is real, that is when $u$ is real or pure imaginary; a real $u$ gives the identity, and a pure $u$ is $u = t\nu$ with $t\neq0$ real and $\nu$ a unit vector, giving $\iota_u = \iota_\nu$, which fixes the plane $\operatorname{span}(e_0,\nu)$ and is the half-turn about the axis line $\mathbb{R}\nu$. There is thus one non-trivial automorphism of order two for each axis line of $\operatorname{Im}\mathbb{H}$, and they are the involutions of *Quaternion Involutions and Projections*.
+
 ## Derivations of the Quaternion Algebra
 
 **Definition.** A **derivation** of $\mathbb{H}$ is an $\mathbb{R}$-linear map $D : \mathbb{H}\to\mathbb{H}$ satisfying the Leibniz rule $D(xy) = D(x)y+xD(y)$ for all $x,y$. The derivations form a real vector space $\operatorname{Der}_{\mathbb{R}}(\mathbb{H})$, a Lie algebra under the commutator bracket $[D_1,D_2] = D_1D_2-D_2D_1$.

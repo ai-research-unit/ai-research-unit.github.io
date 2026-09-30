@@ -7,6 +7,8 @@ The algebra article defined the biquaternion algebra $\mathbb{B}$, its conjugati
 1. **Clifford algebra representation.** A biquaternion as an element of the even Clifford algebra $\mathrm{Cl}_{1,3}^+$.
 2. **Conjugation action.** A biquaternion as an inner automorphism $\tilde T \mapsto \tilde{Q}\tilde T\tilde{Q}^{-1}$ of the algebra.
 
+A structure of a different kind is treated here as well. A **rectangular array of several biquaternions** is not a realization of $\mathbb{B}$ — its entries are biquaternions, and the array is an object of the larger ring $M_n(\mathbb{B})$ when it is square — but its image under $\Phi$, taken entry by entry, is a complex matrix of twice the size, and it is the array that the applied articles put on a machine. It is treated in the section *Matrix Representations of Several Biquaternions*, after the two realizations.
+
 The remaining realizations of the same algebra are the subjects of their own articles:
 
 | realization | article |
@@ -178,6 +180,74 @@ and for a generic unit the image is a third idempotent, neither $\tilde\Pi_1$ no
 
 The dagger sandwich exchanges them as well, $\operatorname{H}_{ie_1}(\tilde\Pi_1) = 1 - \tilde\Pi_1$. Neither action is a map of left modules over the algebra — $\operatorname{H}_{\tilde{Q}}(\tilde B\tilde T) \neq \tilde B\operatorname{H}_{\tilde{Q}}(\tilde T)$ in general, and the same is true of $\operatorname{Ad}_{\tilde{Q}}$ — but only the automorphism is multiplicative, and it is multiplicativity that makes the exchange of the halves a statement about the algebra rather than about one element.
 
+## Matrix Representations of Several Biquaternions
+
+### Definition
+
+Every realization met so far writes **one** element. The corpus also uses the case of **several** elements at once, arranged in a rectangular array, which the applied articles call a matrix-valued biquaternion. An array of size $n\times m$ with entries in $\mathbb{B}$ is written
+
+$$
+\tilde{\mathcal{Q}} = \bigl(\tilde Q_{ij}\bigr) \in \mathbb{B}^{n\times m}, \qquad \tilde Q_{ij} \in \mathbb{B}.
+$$
+
+This is not a realization of the algebra $\mathbb{B}$: the entries are biquaternions, and the array is an object of the larger structure — the ring $M_n(\mathbb{B})$ when it is square. It is recorded here because it is assembled from the realization $\Phi$ of *Biquaternion 2×2 Matrix Element Representation*, and because the corpus uses it — it is the form in which the algebra is put on a machine, and the arithmetic of that form is the subject of the companion physics article *The Computational Cost of Biquaternion Arithmetic*.
+
+Two writings of the same array are used. In the **entrywise writing** it is a collection of $nm$ biquaternions. In the **component writing** it is a collection of four complex matrices, one per quaternion unit,
+
+$$
+\tilde{\mathcal{Q}} = e_0Q_0 + e_1Q_1 + e_2Q_2 + e_3Q_3, \qquad Q_\mu \in \mathbb{C}^{n\times m},
+$$
+
+where $Q_\mu$ gathers the $\mu$-th coefficients of all the entries and the product by $e_\mu$ is entrywise. The two writings carry the same information: an $n\times m$ array holds $4nm$ complex numbers, that is $8nm$ real numbers, in either reading.
+
+### The Array Ring
+
+For $n = m$, entrywise addition and entrywise multiplication make $\mathbb{B}^{n\times n}$ a unital associative ring: the full matrix ring $M_n(\mathbb{B})$. Multiplication is noncommutative for two independent reasons — the entries are multiplied in the algebra $\mathbb{B}$, which is itself noncommutative, and the array product is the matrix product, which is noncommutative for $n \ge 2$ even over a commutative coefficient ring. Since $\mathbb{B}$ is not a division algebra, the array ring is not one either; it has zero divisors already at $n = 1$, from the zero divisors of the algebra itself.
+
+The structure of the ring is fixed by the isomorphism $\mathbb{B} \cong M_2(\mathbb{C})$:
+
+$$
+M_n(\mathbb{B}) \;\cong\; M_n\bigl(M_2(\mathbb{C})\bigr) \;\cong\; M_{2n}(\mathbb{C}).
+$$
+
+So an $n\times n$ array of biquaternions **is** the full complex matrix algebra of twice the size. That is the precise sense in which several biquaternions have a matrix representation, and it is the array-level form of the element-level isomorphism of the 2×2 article. Every statement about $M_n(\mathbb{B})$ that is invariant under isomorphism is therefore a statement about complex matrices of size $2n$, and the array writing is a way of holding the same algebra in $n^2$ biquaternion slots rather than $4n^2$ complex ones.
+
+### The Image of an Array
+
+The realization of the 2×2 article extends to arrays entry by entry: replace every entry by its $2\times2$ matrix, and read the result as a complex matrix of size $2n\times2m$,
+
+$$
+\Phi(\tilde{\mathcal{Q}}) = \sum_{\mu=0}^{3} \Phi(e_\mu)\otimes Q_\mu,
+$$
+
+where $\otimes$ is the Kronecker product, $\Phi(e_0) = I_2$, and $\Phi(e_k) = -i\sigma_k$. The order of the two factors fixes which index of the image runs where, and the two orders are exchanged by a permutation of indices; we keep $\Phi(e_\mu)$ first, so that the **indices of $\Phi$ are the block indices** of the image — the quadrants of the image, of size $n\times m$ — and the array indices run inside each block. The other order assembles the same data with the array indices outside instead, $\sum_\mu Q_\mu\otimes\Phi(e_\mu) = \bigl(\Phi(\tilde Q_{ij})\bigr)$; in it the block in position $(i,j)$ is $\Phi(\tilde Q_{ij})$, so that the image is the array of the images. The properties below hold in both orders, and only the block reading differs.
+
+Three properties carry the whole correspondence, and each is exact:
+
+1. **Products.** The map is a ring isomorphism: the image of the array product is the product of the images, $\Phi(\tilde{\mathcal{P}}\tilde{\mathcal{Q}}) = \Phi(\tilde{\mathcal{P}})\Phi(\tilde{\mathcal{Q}})$, when the sizes match. This is the explicit form of $M_n(\mathbb{B}) \cong M_{2n}(\mathbb{C})$;
+2. **Trace.** For a square array the trace of the image is twice the trace of the scalar component matrix, $\mathrm{tr}\,\Phi(\tilde{\mathcal{Q}}) = 2\,\mathrm{tr}\,Q_0$, which is the algebra trace $2\,\mathrm{Sc}$ summed over the diagonal. It is a complex number, and it vanishes for a traceless scalar component;
+3. **Dagger.** Transposing the array and applying the Hermitian conjugation to each entry, $(\tilde{\mathcal{Q}}^{\dagger})_{ij} = (\tilde Q_{ji})^{\dagger}$, carries the image to the conjugate transpose, $\Phi(\tilde{\mathcal{Q}}^{\dagger}) = \Phi(\tilde{\mathcal{Q}})^{\dagger}$.
+
+All three were checked on 100 random arrays of sizes up to $3\times3$ in exact arithmetic, with zero mismatches. The first also holds for non-square arrays whenever the sizes are conformable, and the second requires a square array.
+
+### Examples
+
+The smallest cases are the ones a reader meets, and each shows a different face of the correspondence. In the order we keep, the quadrants of the image are the blocks of $\Phi(e_\mu)$ and the array indices run inside them:
+
+| Several biquaternions | Image | What it shows |
+|---|---|---|
+| the one-entry array $[\tilde Q]$ | $\Phi(\tilde Q)$, of size $2\times2$ | the 2×2 realization is the one-entry case of the array |
+| the array unit, $e_0$ in position $(i,j)$ and zero elsewhere | $I_2\otimes E_{ij}$ | the array units carry the algebra identity |
+| a single non-zero entry, $\tilde Q$ in position $(i,j)$ | $\Phi(\tilde Q)\otimes E_{ij}$ | the image of the entry sits in the block position of the entry |
+| the constant diagonal array, every diagonal entry equal to $\tilde Q$ | $\Phi(\tilde Q)\otimes I_n$ | the algebra index and the array index assemble independently |
+| a general $2\times2$ array of biquaternions | a general $4\times4$ complex matrix | the array already fills a full complex matrix of twice the size |
+
+The one-entry case is worth stating separately: the 2×2 realization is not a different construction from the array, it is the array of size $1\times1$. The $4\times4$ array image is the first case in which the two index levels are visible at once, one level being the array and the other the matrix realization of the algebra; and the last row is the dimension count, a $2\times2$ array of biquaternions holding sixteen complex numbers, exactly as a general $4\times4$ complex matrix does. In the other order the table reads differently but the algebra is the same: the image is the array of the images, and the last four rows become statements about the blocks rather than about the quadrants.
+
+### Which Realization the Array Is Not
+
+The image $\Phi(\tilde{\mathcal{Q}})$ is **not** the left regular matrix of *Biquaternion 4×4 Regular Matrix Element Representation*. That matrix is the image of the operator of left multiplication by one element on the algebra, which is a $4\times4$ array of complex numbers for that element; the array image here is the image of the array's own entries. The two coincide in size only when the array is $2\times2$, and even then they are different objects: the regular matrix is block diagonal in a suitable basis, with $\Phi(\tilde Q)$ in both diagonal blocks, while the image of a general $2\times2$ array of biquaternions is a general $4\times4$ complex matrix. What the two share is the underlying isomorphism: both are the algebra $\mathbb{B} \cong M_2(\mathbb{C})$ or its array-level extension $M_n(\mathbb{B}) \cong M_{2n}(\mathbb{C})$ written out.
+
 ## Relations Between the Representations
 
 **The minimal left ideals and the regular realization.** The left regular representation of *Biquaternion 4×4 Regular Matrix Element Representation* is not a third action but the left action on the two minimal left ideals taken twice. Since $\Phi(\tilde{Q}\tilde T) = \Phi(\tilde{Q})\Phi(\tilde T)$, reading the four entries of $\Phi(\tilde T)$ column by column exhibits an isomorphism of left $\mathbb{B}$-modules
@@ -225,7 +295,9 @@ The first two columns are independent: the writing fixes an array, the reading f
 
 In the Clifford realization the isomorphism is fixed by $e_1 \mapsto \gamma^2\gamma^3$, $e_2 \mapsto \gamma^3\gamma^1$, $e_3 \mapsto \gamma^1\gamma^2$ and $i \mapsto -\gamma^0\gamma^1\gamma^2\gamma^3$ under the mostly-minus form $g = \mathrm{diag}(+1,-1,-1,-1)$, so that all six bivectors correspond to the quaternion units with positive signs, and it carries the Clifford product to the biquaternion product and the Clifford norm to the biquaternion norm on the even part; the $1,3$ form is the one carried by the Hermitian subspace $\mathbb{M}_+$.
 
-The matrix, four-vector and regular realizations, the biquaternion norm read in each of them, and the explicit isomorphisms between them, are the subject of their own articles. Here only the two realizations above are derived, and the relations recorded are the ones they have with each other and with the realizations treated elsewhere.
+One structure recorded here is not a realization of a single element. An **array of several biquaternions** is the ring $M_n(\mathbb{B}) \cong M_{2n}(\mathbb{C})$ for a square array, its entrywise image $\Phi(\tilde{\mathcal{Q}}) = \sum_\mu \Phi(e_\mu)\otimes Q_\mu$ is a complex matrix of twice the size, and that image preserves products, traces and daggers; the one-entry array is the $2\times2$ realization itself. The array is the form the applied articles compute with, and its arithmetic is developed in *The Computational Cost of Biquaternion Arithmetic*.
+
+The matrix, four-vector and regular realizations, the biquaternion norm read in each of them, and the explicit isomorphisms between them, are the subject of their own articles. Here the two realizations above are derived, together with the array-level structure, which is not a realization of a single element; the relations recorded are the ones they have with each other and with the realizations treated elsewhere.
 
 ## Summary of Notation
 
@@ -243,6 +315,10 @@ The matrix, four-vector and regular realizations, the biquaternion norm read in 
 | $\operatorname{Ad}_{\tilde{Q}}(\tilde T) = \tilde{Q}\tilde T\tilde{Q}^{-1}$ | Conjugation action of a unit, the inner automorphism |
 | $\operatorname{H}_{\tilde{Q}}(\tilde T) = \tilde{Q}\tilde T\tilde{Q}^{\dagger}$ | The dagger sandwich of *Biquaternion Rotations and Lorentz Transformations* |
 | $\tilde\Pi_1 = \tfrac12(e_0 + ie_3)$ | Idempotent, $\mathbb{B}\tilde\Pi_1$ a minimal left ideal of real dimension $4$ |
+| $\Phi$ | The isomorphism $\mathbb{B} \to M_2(\mathbb{C})$ of *Biquaternion 2×2 Matrix Element Representation*, $\Phi(e_0) = I_2$, $\Phi(e_k) = -i\sigma_k$ |
+| $\mathbb{B}^{n\times m}$ | Array of several biquaternions; for $n = m$ the ring $M_n(\mathbb{B}) \cong M_{2n}(\mathbb{C})$ |
+| $\tilde{\mathcal{Q}} = e_0Q_0 + e_1Q_1 + e_2Q_2 + e_3Q_3$ | The array in component writing, $Q_\mu \in \mathbb{C}^{n\times m}$ the $\mu$-th coefficient matrix |
+| $\Phi(\tilde{\mathcal{Q}}) = \sum_\mu \Phi(e_\mu)\otimes Q_\mu$ | Entrywise image, a $2n\times2m$ complex matrix; the array indices are the block indices |
 
 ## Further Reading
 

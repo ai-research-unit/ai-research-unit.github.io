@@ -104,6 +104,8 @@ The symbols $(\mathbf{Q}, \mathbf{R})$ and $[\mathbf{Q}, \mathbf{R}]$ denote the
 
 This formula has the same structure as the quaternion product: scalar part, vector part, dot product, cross product. The only difference is that the coefficients are now complex.
 
+**Remark (other products in the literature).** The word *product* on $\mathbb{B}$ does not always mean the Hamilton product above. In particular, the *chiral algebra* of *The Chiral Algebra of Biquaternions and the Cyclic Representation of the Dirac Equation* uses, alongside the Hamilton product, a **Pauli-type** product on the vector parts, $\mathbf u_1\cdot\mathbf u_2 + i\,\mathbf u_1\times\mathbf u_2$, whose dot and cross terms both differ in sign from the product of this article; when that product is used, its conventions must be read from the article that introduces it, not from here. Note also the clash of names: the *outer product* $\odot$ of that chiral algebra is this full product, whereas the *outer product* of §*The Outer Product and the Grades* below is only its antisymmetric part, $p\wedge q = V(p)\times V(q)$.
+
 ### The Outer Product and the Grades
 
 The antisymmetric part of the product is the **outer product**,
@@ -111,6 +113,14 @@ $$
 p\wedge q:=\tfrac12\bigl(pq-qp\bigr)=V(p)\times V(q),
 $$
 the cross product of the vector parts: the scalar parts cancel in the commutator, and the identity holds for **all** pairs of biquaternions, not only for vector-like ones. In the notation of the multiplication formula, $pq-qp=2[\mathbf{P},\mathbf{Q}]$, whose right-hand side depends on the vector parts alone; the formula is the biquaternion shadow of the Clifford product and is developed as such in *The Clifford Structure of the Biquaternion Algebra*, where the four components are read as the four grades and the outer product records the grade of a product.
+
+The vanishing of the commutator is therefore a **commutativity criterion**: because the right-hand side depends only on the vector parts,
+
+$$
+p\circ q = q\circ p \quad\Longleftrightarrow\quad [\mathbf{P},\mathbf{Q}] = 0 ,
+$$
+
+that is, if and only if the vector parts are **linearly dependent**. In particular a central element (a scalar) commutes with everything, since its vector part vanishes, and more generally two biquaternions commute exactly when their vector parts are parallel.
 
 **The four grades.** Read geometrically, the four components of a biquaternion carry four distinct grades: the grade-zero part is the real scalar $S(p)e_0$; the grade-one part is the imaginary pure quaternion $iV(p)$; the grade-two part is the real pure quaternion $V(p)$; and the grade-three part is the imaginary scalar $iS(p)e_0$, the pseudoscalar. The product of two vectors is a bivector and the product of a vector with a bivector is a vector, so the algebra fixes the grades of the product from those of the factors, and the outer product isolates the part contributed by the vector parts.
 

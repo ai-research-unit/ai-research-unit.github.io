@@ -178,6 +178,8 @@ by cyclicity, whereas $\mathrm{Tr}(\lambda e_0)=2\lambda\neq0$. The same argumen
 
 **Remedy.** Work in the space of $\mathbb{B}$-valued functions of the appropriate configuration variables, on which the algebra acts pointwise; the commutator then involves a derivative and the trace argument does not apply. This is the standard route taken by the free-particle and mode-function articles of the corpus.
 
+**A worked import.** The non-commutative arena of *Maxwell's Theory on Non-Commutative Spaces and Quaternions* is an explicit case of that route carried out on the coordinates. It imports $[\hat x^\mu,\hat x^\nu]=i\theta^{\mu\nu}$ on an infinite-dimensional algebra of functions, and there the trace argument above genuinely does not apply — the commutator is not an element of a finite-dimensional algebra and no trace obstruction is met. What the case shows is the **price**: the imported relation fixes a background tensor $\theta^{\mu\nu}$ that is not derived from $\mathbb{B}$, is not a Lorentz scalar, and does real work (it deforms the product, breaks duality, and non-linearises the vacuum). So the obstruction should be read as it is stated — no commutation relation *inside* the algebra — and not as a prohibition: the relation is available on an extension, and what must be recorded is that the extension brings an external object with it.
+
 ### O13. The algebra has no internal composite structure
 
 **Statement.** The tensor product of two copies of the algebra is not the algebra: $\mathbb{B}\otimes_\mathbb{C}\mathbb{B}\cong M_4(\mathbb{C})\neq\mathbb{B}$. There is no tensor factorization of a single copy into two subsystems.
@@ -282,6 +284,8 @@ Since the two subspaces intersect only at zero, no non-zero Hermitian element is
 **Consequence.** The framework cannot explain the origin of mass or of any dimensionful parameter; masses enter through central coefficients such as $m e_0$.
 
 **Remedy.** Import the scales as data, or obtain them from a structure external to the algebra — a dynamical mechanism, a boundary condition, or a symmetry-breaking sector. The catalogue records that they are not algebraic consequences of $\mathbb{B}$.
+
+**What an imported scale does.** The non-commutative arena of *Maxwell's Theory on Non-Commutative Spaces and Quaternions* shows that an imported scale does not stay passive. The scale enters as the coordinate commutator, $[\hat x^\mu,\hat x^\nu]=i\theta^{\mu\nu}$ with $\theta$ of dimension $(\text{length})^2$, and it immediately does work: it deforms the product of functions, makes the vacuum of the theory non-linear, breaks the dual symmetry, and produces a non-zero trace in the stress tensor at tree level. This is the closest thing the corpus holds to a **worked example of O20's remedy**, and it illustrates why the remedy is stated as an import rather than as a construction: the algebra supplies no scale, and the object that supplies one also changes the theory it is imported into. Note also that this single import answers **O12** at the same time — the same deformation supplies both the scale and the commutation relation — so the two obstructions are met together and at one price.
 
 ### O21. No stable classical sector under a generic dynamics
 

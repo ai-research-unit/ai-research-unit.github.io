@@ -274,6 +274,59 @@ The sign is therefore fixed entirely by whether one uses $\bar{\tilde{U}}$ (as t
 
 **(d)** What relation (14) determines is the **Hermitian** (pure-boost) rotor. Given $\tilde{U}$, equation (14) has exactly the two solutions $\pm\tilde{\Lambda}$, and the branch $\mathrm{Sc}>0$ selects one; both generate the same Lorentz transformation. The quaternion conjugate $\bar{\tilde{\Lambda}}$ is not a solution (it is the inverse transformation). More generally, if $P$ is any unit-norm rotor with $P\tilde{U}P^\dagger = ic\,e_0$, then $QP$ is another for every spatial rotation $Q\in SU(2)$, since $Q(ic\,e_0)Q^\dagger = ic\,QQ^\dagger = ic\,e_0$. The four-velocity therefore determines the rotor only up to left multiplication by a rotation — equivalently, it determines the boost and leaves the orientation of the rest frame free. Among this family, (14) picks the unique Hermitian representative with positive scalar part (the other Hermitian member, $-\tilde{\Lambda}$, generates the same transformation). This is why the Thomas–Wigner rotation of Problem 3 is invisible in a single four-velocity but reappears in the composition of two of them: the four-velocity carries a boost, not a rotation.
 
+## Problem 5: A Varying Rapidity, and the Boundary of Problem 2
+
+**Statement.** Let the boost parameter vary along a scalar parameter $\tau$ instead of being fixed, and let the material coordinate of the moving frame's origin be
+$$
+\tilde{Q}(\tau) = ic\,\tau\cosh\chi(\tau)\,e_0 + c\,\tau\sinh\chi(\tau)\,\hat{\mathbf{n}},
+\qquad \chi = \chi(\tau),
+$$
+so that $t = \tau\cosh\chi$ and the displacement along $\hat{\mathbf{n}}$ is $x_1 = c\tau\sinh\chi$. Define the coordinate velocity by $\beta = (1/c)\,dx_1/dt$.
+
+**(a)** Show that
+$$
+\beta(\tau) = \frac{\tanh\chi + \tau\chi'}{1 + \tau\chi'\tanh\chi},
+\qquad \chi' = \frac{d\chi}{d\tau}.
+$$
+
+**(b)** Show that while $|\tau\chi'| < 1$ this is a rapidity addition, $\beta = \tanh(\chi+\psi)$ with $\tanh\psi = \tau\chi'$, and that for $|\tau\chi'| > 1$ no real $\psi$ exists, so $|\beta|$ need not stay below $1$.
+
+**(c)** Show the interval identity
+$$
+c^2dt^2 - dx_1^2 = c^2d\tau^2\left(1 - (\tau\chi')^2\right),
+$$
+and read off when the worldline is timelike.
+
+**(d)** For the linear profile $\chi(\tau) = \alpha\tau$, evaluate $\beta$ and find its maximum.
+
+**Solution. (a)** Differentiate the two coordinate functions with respect to $\tau$:
+$$
+\frac{dx_1}{d\tau} = c\left(\sinh\chi + \tau\chi'\cosh\chi\right),
+\qquad
+\frac{dt}{d\tau} = \cosh\chi + \tau\chi'\sinh\chi .
+$$
+Both carry the same factor $\tau\chi'$ that a fixed rapidity would not have; their ratio is the stated expression. This is not the composition law (4), because the rotor here is a *different* rotor at every $\tau$: the second term is the rate at which the frame turns, not the rapidity of a second frame.
+
+**(b)** Dividing numerator and denominator of (a) by $\cosh\chi$ gives
+$$
+\beta(\tau) = \frac{\tanh\chi + \tau\chi'}{1 + \tau\chi'\tanh\chi},
+$$
+which is the same rational form as the addition law of Problem 2(b), with $\tau\chi'$ in the place of $\tanh\psi_2$. Whenever $|\tau\chi'| < 1$ it is exactly $\tanh(\chi + \operatorname{atanh}(\tau\chi'))$, so the acceleration acts as an added rapidity and the bound $\beta < 1$ holds. For $|\tau\chi'| > 1$ no real rapidity has that tangent, and the bound is no longer forced: $\beta$ can pass through $1$.
+
+**(c)** With $A = \cosh\chi$, $B = \sinh\chi$, $p = \tau\chi'$, the two derivatives are $c(B + pA)$ and $A + pB$, so
+$$
+\left(A+pB\right)^2 - \left(B+pA\right)^2 = \left(A^2-B^2\right)\left(1-p^2\right) = 1 - p^2 ,
+$$
+using $\cosh^2\chi - \sinh^2\chi = 1$. The worldline is timelike exactly while $|\tau\chi'| < 1$ and spacelike beyond, so the value $|\tau\chi'| = 1$ is precisely where it crosses the cone. The identity was checked on both sides for several profiles and values of $\tau$, agreeing to round-off.
+
+**(d)** With $\chi = \alpha\tau$, so $\tau\chi' = \alpha\tau$,
+$$
+\beta = \frac{\tanh\alpha\tau + \alpha\tau}{1 + \alpha\tau\tanh\alpha\tau}.
+$$
+At $\alpha\tau = 1$ this is exactly $1$. For $\alpha\tau > 1$ it exceeds $1$, reaching its maximum $\beta = 1.02049$ at $\alpha\tau = \sqrt{2}$, and then decaying back towards $1$ from above as $\alpha\tau \to \infty$. The recomputed values $\beta(1.4) = 1.0204776$, $\beta(1.5) = 1.0201151$, $\beta(2) = 1.0122854$ reproduce the source's printed table to seven decimals; the table samples at $1.4$, while the exact maximum sits at $\sqrt{2}$.
+
+**What this does and does not show.** It does not contradict Problem 2, and it does not open the light cone of *Causality and the Light Cone as an Information Barrier*. Problem 2 composes *fixed* rapidities, that is, inertial frames, and its bound is about that composition; the rotor here is a different rotor at every $\tau$, which is not a coordinate change to another inertial frame. What (c) identifies is that the worldline itself leaves the timelike region at $|\tau\chi'| = 1$, so past that point it is not the worldline of a material corpuscle. The construction and the profile are the source's, recorded and not adopted (I. Guzmán de Rojas, *Trajectories in space-time M4: Reinstating the Newtonian Time*, 2013); the four results above were recomputed from the source's printed formulas for this problem.
+
 ## Further Problems
 
 The following are left to the reader; they extend the same tools and use the same notation.
@@ -301,6 +354,8 @@ We have applied the boost biquaternion and the rotor conjugation to four-velocit
 3. **Non-collinear composition.** The product $P = \tilde{\Lambda}_2\tilde{\Lambda}_1$ is Hermitian only for parallel or antiparallel directions; otherwise it is a boost times a rotation, with total rapidity (8) and Thomas–Wigner angle (9)–(10), $\tan\frac{\theta_W}{2} = \frac{\sinh\frac{\psi_1}{2}\sinh\frac{\psi_2}{2}\sin\phi}{\cosh\frac{\psi_1}{2}\cosh\frac{\psi_2}{2}+\sinh\frac{\psi_1}{2}\sinh\frac{\psi_2}{2}\cos\phi}$, about the axis $\widehat{\mathbf{n}_1\times\mathbf{n}_2}$ (11). For equal orthogonal rapidities $\tan\frac{\theta_W}{2} = \tanh^2\frac{\psi}{2}$ exactly. The numerical instance $\psi_1=\psi_2=\operatorname{atanh}0.6$, orthogonal, has composed speed $0.7683749c$ and Wigner angle $12.68038^{\circ}$.
 
 4. **The parent's square-root relation.** $\tilde{\Lambda} = \sqrt{-\tfrac{i}{c}\bar{\tilde{U}}} = \cosh\frac{\psi}{2}+i\sinh\frac{\psi}{2}\hat{\mathbf{v}}$ is correct, with the branch $\mathrm{Sc}>0$; it is the **lab-to-rest** rotor, since $\tilde{\Lambda}\tilde{U}\tilde{\Lambda}^\dagger = ic\,e_0$ and $\tilde{\Lambda}(ic\,e_0)\tilde{\Lambda}^\dagger$ has velocity $-\mathbf{v}$. The rest-to-lab rotor is the conjugate $\bar{\tilde{\Lambda}}$. The four-velocity determines the rotor only up to a rotation of the rest frame; (14) selects the Hermitian representative.
+
+5. **A varying rapidity.** When the boost parameter is a function $\chi(\tau)$ of a scalar trajectory parameter, the coordinate velocity (Problem 5) is $\beta = (\tanh\chi + \tau\chi')/(1 + \tau\chi'\tanh\chi)$, the same rational form as the addition law with $\tau\chi'$ replacing a second rapidity, and the worldline is timelike exactly while $|\tau\chi'| < 1$. For $\chi = \alpha\tau$ the velocity reaches $1$ at $\alpha\tau = 1$ and peaks at $\beta = 1.02049$ at $\alpha\tau = \sqrt{2}$. This is not a counterexample to Problem 2: it composes a *varying* rotor, not two fixed rapidities, and past $|\tau\chi'| = 1$ the worldline is no longer timelike.
 
 The exercise has also tested the parent. The parent's formula (14) is correct on every case computed here, including non-collinear directions; but the parent does not state the direction of the transformation it generates, and the conjugate $\bar{\tilde{U}}$ inside the formula is what fixes that direction to lab-to-rest. (A companion exercise in this series, *The Relativistic Kinematics of a Two-Body Decay*, discusses the same direction convention in a different application.) Here the parent's own displayed application is consistent, and the gap is only in the statement; every equation of the parent used here was verified on cases chosen independently of the ones that motivated it.
 
@@ -342,3 +397,4 @@ The exercise has also tested the parent. The parent's formula (14) is correct on
 - David Hestenes, *Space-Time Algebra* (Gordon and Breach, 1966), and Chris Doran and Anthony Lasenby, *Geometric Algebra for Physicists* (Cambridge, 2003), for the rotor formulation of boosts and the composition of Lorentz transformations.
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the double cover $SL(2,\mathbb{C})\to SO^+(1,3)$ and the branch of the square root.
 - The companion articles of this series: *Relativistic Mechanics in Biquaternionic Form*, *The Lorentz Transformation as a Biquaternionic Rotation*, and *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*.
+- I. Guzmán de Rojas, *Trajectories in space-time M4: Reinstating the Newtonian Time*, Communication to the National Academy of Sciences of Bolivia (2013), for the time-dependent rapidity of Problem 5: the coordinate velocity of an accelerated parametrisation, the interval identity that fixes where the worldline ceases to be timelike, and the maximum $\beta = 1.02049$ at $\alpha\tau = \sqrt{2}$. Cited as an external construction, not adopted; the source's printed table was recomputed here and reproduces to seven decimals.

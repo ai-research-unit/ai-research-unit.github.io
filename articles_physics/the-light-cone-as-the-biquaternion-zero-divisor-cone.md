@@ -109,6 +109,24 @@ $$
 
 The two families are disjoint, because the vanishing of the scalar part is what separates them, and they exhaust the zero divisors. The set $\mathcal{Z}$ is the union of the nilpotent cone and the cone of idempotent multiples — a single complex cone of complex dimension three, stratified by the vanishing of $Q_0$.
 
+**The pacwoman property.** A null element of the non-pure family carries a one-line multiplication rule that is used whenever a transformation is applied to a lightlike object. With $\hat{\boldsymbol{\mu}}$ a real unit vector, the element $e_0 + i\hat{\boldsymbol{\mu}}$ is **gobbled** by its own vector part:
+
+$$
+\left(i\hat{\boldsymbol{\mu}}\right)\left(e_0 + i\hat{\boldsymbol{\mu}}\right)
+\;=\;
+\left(e_0 + i\hat{\boldsymbol{\mu}}\right)\left(i\hat{\boldsymbol{\mu}}\right)
+\;=\;
+e_0 + i\hat{\boldsymbol{\mu}} ,
+$$
+
+since $(i\hat{\boldsymbol{\mu}})^2 = +\hat{\boldsymbol{\mu}}\cdot\hat{\boldsymbol{\mu}} = +e_0$. In the material sector the same statement reads, for the null four-wavevector direction $\hat{\mathbf k}$ of a real unit vector,
+
+$$
+\hat{\mathbf k}\left(i + \hat{\mathbf k}\right) \;=\; i\left(i + \hat{\mathbf k}\right) \;=\; \left(i + \hat{\mathbf k}\right)\hat{\mathbf k},
+$$
+
+which is the form in which it appears in the boost of a plane wave. The name, due to Baylis, records that a null element can absorb a factor matched to its own direction without changing. It is a property of the null cone alone: for a general element $e_0+\mathbf q$ the product with $i\mathbf q$ is $i\mathbf q+\mathbf q\cdot\mathbf q$, which equals $e_0+\mathbf q$ only when $\mathbf q\cdot\mathbf q=1$, that is, only when $e_0+\mathbf q$ is itself null.
+
 ## The Cone in the Distinguished Subspaces
 
 Which real subspaces meet $\mathcal{Z}$ is the question that gives the cone its physical reading.

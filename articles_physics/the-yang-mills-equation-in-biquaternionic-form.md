@@ -243,6 +243,14 @@ Two consequences follow, and both are stated as findings rather than repairs.
 - **The source biquaternion $\mathcal{J} = \sum_\nu J_\nu e_\nu$ is a valid packaging.** Its components transform in the adjoint, and the equation $\sum_\nu \bigl(D_\mu F_{\mu\nu}\bigr) e_\nu = \mathcal{J}$ is exact and covariant. This is the biquaternionic form of the Yang–Mills equation used here.
 - **A single adjoint-covariant product of the curvature is not that equation.** As shown in the previous section, $\sum_\mu D_\mu(\sum_\nu F^{\mu\nu}e_\nu)$ differs from $\sum_{\mu,\nu} \bigl(D_\mu F^{\mu\nu}\bigr) e_\nu$ by the index-mixing term $i\kappa\sum_{\mu\nu}F_{\mu\nu}[\mathcal{A}_\mu,e_\nu]$, which is nonzero for a generic connection. Whether some other representative of the non-abelian curvature makes the field equation a one-line product, in the way the pure-vector Riemann–Silberstein representative does in the abelian case, is not settled here.
 
+**A neighbouring claim: the triplet from the electromagnetic potential.** One external programme makes a stronger statement than anything above, and it is worth separating because it reverses the direction of dependence between the abelian and non-abelian fields. In Kassandrov's algebrodynamics (recorded in *The Algebrodynamical Programme*) the biquaternion connection is split into a trace part and a trace-free part, $\Gamma_\nu=\tfrac12A_\nu I+N_\nu$, and the trace-free part is prescribed **linearly** by the same complex four-vector that serves as the electromagnetic potential,
+
+$$
+N^a_{\ 0}=A_a, \qquad N^a_{\ b}=\delta_{ab}A_0-i\varepsilon_{abc}A_c .
+$$
+
+Its strength $L_{\mu\nu}=\partial_{[\mu}N_{\nu]}-[N_\mu,N_\nu]$ is self-dual on the solutions of the programme's primary equation, and the Bianchi identity then gives the Yang–Mills equation $\partial_\nu L^{\mu\nu}=[N_\nu,L^{\mu\nu}]$. The abelian–non-abelian link is a determinant: the curvature splits into a trace part proportional to the electromagnetic field strength $F^{\mathrm{em}}_{\mu\nu}=\partial_\mu A_\nu-\partial_\nu A_\mu$ and the trace-free $L_{\mu\nu}$, and $\det R_{\mu\nu}=0$ — which holds because the non-trivial spinor lies in its kernel — makes the electromagnetic field strength the **modulus of the triplet**, $\sum_a(L^a_{\ \mu\nu})^2\propto(F^{\mathrm{em}}_{\mu\nu})^2$ (the constant is convention-dependent and is not reconciled; the superscript marks the abelian quantity, to be read apart from this article's $F_{\mu\nu}$). Here the Yang–Mills field has **no independent existence**, being a function of the electromagnetic potential, which is a different relation between the two fields from any construction in this article. It is a claim of that programme, conditional on its nonlinear primary equation, recorded there and not adopted here.
+
 ## A Biwave Equation with a Vector Structural Coefficient
 
 There is a second biquaternion equation in the literature whose matrix form has been called Yang–Mills-like, and it is worth separating from the construction above. In a four-part series on the differential algebra of biquaternions, L. A. Alexeyeva studies the wave equation
@@ -296,6 +304,22 @@ S^{\omega} = \left\{\boldsymbol{\xi} : (\boldsymbol{\xi} + i\mathbf{F}, \boldsym
 $$
 
 with the same complex-bilinear pairing: the circle of radius $\sqrt{\omega^2 + \|A\|^2}$ centred at $B$ in the plane through $B$ perpendicular to $A$, where $\mathbf{F} = A + iB$ — a sphere of radius $|\omega|$ centred at $B$ when $A = 0$. Both characteristic surfaces are written here in the coefficient $\mathbf{F}$ itself, so they hold whatever identification it is given with the physical vectors. Letting $\omega \to 0$ gives the static solutions, and the elementary stationary potential is the plane wave of wave vector $K_F = H + \mathbf{e}_E\sqrt{\omega^2 + \|E\|^2}$ with $\mathbf{e}_E \perp E$, whose invariants are recorded in the twistor article.
+
+**The stationary kernel and its Helmholtz provenance.** The stationary problem has a fundamental solution of its own, and its kernel is Helmholtz rather than d'Alembert, because a weight strips the directional term. For constant $\mathbf{F}$ the compensated operator satisfies the exact identity
+
+$$
+\left(\Delta + 2(\mathbf{F},\nabla) + \omega^2 + (\mathbf{F},\mathbf{F})\right)\left(e^{-(\mathbf{F},\mathbf{x})}\varphi\right)
+= e^{-(\mathbf{F},\mathbf{x})}\left(\Delta + \omega^2\right)\varphi ,
+$$
+
+and it holds for the **upper** sign alone: checked on random complex coefficients and random smooth amplitudes, the residual is $1.6\times10^{-6}$ at a finite-difference step of $3\times10^{-4}$ for the upper sign and $O(50)$ for the lower. The directional term is therefore not obstinate — it is removed by the weight — and the complex amplitude of the stationary solution solves the ordinary Helmholtz equation. The kernel is the Helmholtz Green function times that weight,
+
+$$
+\psi_\omega(\mathbf{x}) = -\,\frac{e^{-(\mathbf{F},\mathbf{x})}}{4\pi\|\mathbf{x}\|}\left(a\,e^{i\omega\|\mathbf{x}\|} + (1-a)\,e^{-i\omega\|\mathbf{x}\|}\right),
+\qquad a \in \mathbb{C},
+$$
+
+the outgoing and incoming spherical waves dressed by the exponential weight, and the theorem's form is $B = (\nabla^{\mp}_{\omega} - \mathbf{F})(\psi_\omega * G) + T_\omega$ with $T_\omega$ a solution of the homogeneous stationary equation. Two caveats go with the kernel before it is copied. The source prints $\psi_\omega$ with the sign its own Helmholtz formula $\chi = -\frac{1}{4\pi\|\mathbf{x}\|}(ae^{i\omega\|\mathbf{x}\|} + (1-a)e^{-i\omega\|\mathbf{x}\|})$ does **not** carry, so the printed kernel is the negative of the one its own $(\Delta + \omega^2)\chi = \delta$ gives; and the source fixes $\mathbf{F} = -E - iH$ in section 4.2 and $\mathbf{F} = E + iH$ in section 4.3, so the letters $E$ and $H$ swap roles between the two, one carrying the phase and the other the exponential. Both the kernel and the surfaces above are written in $\mathbf{F}$ itself for that reason, and the mirror between the printed exponent and the printed Fourier denominator is the same one *The Biquaternion D'Alembertian and Its Green's Functions* records for the series' later paper.
 
 ## Open Questions
 
@@ -379,6 +403,9 @@ A second, independent route to a biquaternion equation with a Yang–Mills-type 
 | $\mathbf{F} = -E - iH$ | Constant complex-vector structural coefficient of the biwave equation (Alexeyeva); $E, H$ real vectors |
 | $\nabla^\pm = \partial_\tau \pm i\nabla$, $\Box_A = \partial_\tau^2 - \Delta$ | Mutual bigradients and wave operator of the biwave equation; $\Box_A$ is minus this article's $\Box$ |
 | $\psi$, $K_F$ | Fundamental solution of the biwave equation; wave vector of its elementary stationary solution |
+| $\nabla^\pm_\omega = \omega \pm \nabla$ | Mutual bigradients of the time-harmonic reduction |
+| $\psi_\omega$, $\chi$ | Stationary fundamental solution (Helmholtz kernel times the weight $e^{-(\mathbf{F},\mathbf{x})}$); the source's Helmholtz Green function |
+| $T_\omega$ | Solution of the homogeneous stationary equation |
 
 ## Further Reading
 
@@ -396,4 +423,5 @@ A second, independent route to a biquaternion equation with a Yang–Mills-type 
 - *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector* — the sector basis and the imaginary-scalar/real-vector structure on which the $\mathrm{SU}(2)$ gauge factor rests.
 - *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector* — the Hermitian sector and the trace formula distinguished here from the matrix trace.
 - *Curved Spacetime and the Biquaternion Framework* — the two-sided gravitational connection, distinct from the one-sided gauge connection of this article.
-- L. A. Alexeyeva, "Differential algebra of biquaternions. 4. Twistors and twistor fields," arXiv:1406.5347 [math-ph] (2014), for the vector-coefficient biwave equation whose matrix form is identified with the Yang–Mills class, and for its fundamental solution and characteristic surfaces.
+- L. A. Alexeyeva, "Differential algebra of biquaternions. 4. Twistors and twistor fields," arXiv:1406.5347 [math-ph] (2014), *Mathematical Journal* **13** (2013), for the vector-coefficient biwave equation whose matrix form is identified with the Yang–Mills class, for its non-stationary and stationary fundamental solutions and characteristic surfaces, and for the reading of the homogeneous equation as a transformation of charges and currents in an external field — the last recorded in *The Electro-Gravimagnetic Field and the Magnetic-Charge–Mass Hypothesis*.
+- V. V. Kassandrov, "Biquaternion Electrodynamics and the Weyl–Cartan Geometry of Space-Time", *Gravitation & Cosmology* **1** (1995) 216, arXiv:gr-qc/0007027, for the external claim recorded in *A neighbouring claim: the triplet from the electromagnetic potential*: the trace-free part $N^a_{\ 0}=A_a$, $N^a_{\ b}=\delta_{ab}A_0-i\varepsilon_{abc}A_c$ of the biquaternion connection fixed linearly by the electromagnetic potential, its self-dual strength obeying the Yang–Mills equation as a Bianchi consequence, and the determinant relation by which the electromagnetic field strength is the modulus of the triplet. Cited as the programme's claim, not adopted.

@@ -3,7 +3,7 @@
 
 ## Introduction
 
-This article introduces harmonic analysis on the quaternion space as the study of the Fourier transform, convolution, and the function spaces on which they act, with the non-commutative structure playing an essential role. The goal is to define the core objects precisely, establish their basic properties, and describe the theorems that give the subject its shape.
+This article introduces harmonic analysis on the quaternion space as the study of the Fourier transform, convolution, and the function spaces on which they act, with the non-commutative structure playing an essential role. The goal is to define the core objects precisely, establish their basic properties, and describe the theorems that give the subject its shape. Two quaternion Fourier transforms are treated: the transform on $\mathbb{H} \cong \mathbb{R}^4$ with a single unit in the kernel, and the two-dimensional transform of signal and image processing, which assigns one unit to each variable.
 
 The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. No examples are given. The quaternion algebra is assumed from the article on quaternion algebra, and the scalar-vector decomposition is used throughout. The article is stated for the quaternion algebra over the real numbers, and the complexification is mentioned only where it clarifies the structure.
 
@@ -132,6 +132,123 @@ $$
 for almost every $\tilde q$.
 
 The inversion formula holds because the kernel is bounded and the transform is essentially the ordinary Fourier transform on $\mathbb{R}^4$.
+
+### The Two-Dimensional Transform with One Unit per Variable
+
+The transform above acts on $\mathbb{H}\cong\mathbb{R}^4$ and uses a single unit $\omega$. Signal and image processing uses a different quaternion Fourier transform: the variable is $\mathbb{R}^2$, one unit is assigned to each variable, and the product is written in a fixed order,
+
+$$
+\mathcal{F}(f)(\omega_1,\omega_2) = \int_a^b\int_a^b f(x_1,x_2)\, e^{-2\pi e_1 \omega_1 x_1} e^{-2\pi e_2 \omega_2 x_2}\, dx_1 dx_2,
+$$
+
+for $f : [a,b]\times[a,b] \to \mathbb{H}$. The order is part of the definition: the two exponential factors rotate in different planes, and $e_1e_2 = e_3 = -e_2e_1$, so they do not commute. The factor $2\pi$ sits in the kernel, as everywhere in this article; the signal-processing literature writes the same kernel without it, which is the substitution $\omega_i \mapsto 2\pi\omega_i$.
+
+The transform above has the kernel on the **right** of $f$; call it $\mathcal{F}_{\mathrm{r}}$. The mirror form $\mathcal{F}_{\mathrm{l}}$ has the kernel on the **left**, and it is a genuinely different transform, not a relabelling of the same one. The literature's names are the reverse of this article's: Ell and Sangwine call the transform whose exponential stands on the left of the signal the *left-sided* one, while the list of the three transforms above names the kernel-right transform left-sided. The words **kernel-right** and **kernel-left** are used below.
+
+**The Closed Form.** With $c_i = 2\pi\omega_ix_i$, the kernel splits into four real-coefficient terms,
+
+$$
+e^{-2\pi e_1 \omega_1 x_1}e^{-2\pi e_2 \omega_2 x_2} = \cos c_1\cos c_2 - e_1\sin c_1\cos c_2 - e_2\cos c_1\sin c_2 + e_3\sin c_1\sin c_2,
+$$
+
+and the transform is the sum $\mathcal{F}(f) = \Phi_0 + \Phi_1 + \Phi_2 + \Phi_3$ of the four integrals over $[a,b]^2$
+
+$$
+\Phi_0 = \int f\cos c_1\cos c_2, \qquad \Phi_1 = -\int f e_1\sin c_1\cos c_2,
+$$
+$$
+\Phi_2 = -\int f e_2\cos c_1\sin c_2, \qquad \Phi_3 = \int f e_3\sin c_1\sin c_2 .
+$$
+
+Each term multiplies the whole of the $\mathbb{H}$-valued $f$ on the right by $1$, $e_1$, $e_2$ or $e_3$: the four terms are the four components of one $\mathbb{H}$-valued transform, not four real transforms.
+
+**The sign of the $e_3$ term is the whole difference between the two orders.** The kernel-left form is the same object with the opposite sign on $e_3$,
+
+$$
+e^{-2\pi e_2 \omega_2 x_2}e^{-2\pi e_1 \omega_1 x_1} = \cos c_1\cos c_2 - e_1\sin c_1\cos c_2 - e_2\cos c_1\sin c_2 - e_3\sin c_1\sin c_2,
+$$
+
+and the two kernels are conjugates,
+
+$$
+\overline{e^{-2\pi e_1 \omega_1 x_1}e^{-2\pi e_2 \omega_2 x_2}} = e^{2\pi e_2 \omega_2 x_2}e^{2\pi e_1 \omega_1 x_1},
+$$
+
+where the right-hand side is the kernel-left form at $(-\omega_1,-\omega_2)$. Both identities are exact and were verified on independent samples.
+
+**The Ten Reversal Identities.** Reversing one or both frequencies and adding or subtracting the two transforms isolates the individual terms. With the argument $(\omega_1,\omega_2)$ suppressed,
+
+| Combination | Equals |
+|---|---|
+| $\mathcal{F}(\omega_1,\omega_2)+\mathcal{F}(\omega_1,-\omega_2)$ | $2(\Phi_0+\Phi_1)$ |
+| $\mathcal{F}(\omega_1,\omega_2)-\mathcal{F}(\omega_1,-\omega_2)$ | $2(\Phi_2+\Phi_3)$ |
+| $\mathcal{F}(\omega_1,\omega_2)+\mathcal{F}(-\omega_1,\omega_2)$ | $2(\Phi_0+\Phi_2)$ |
+| $\mathcal{F}(\omega_1,\omega_2)-\mathcal{F}(-\omega_1,\omega_2)$ | $2(\Phi_1+\Phi_3)$ |
+| $\mathcal{F}(\omega_1,\omega_2)+\mathcal{F}(-\omega_1,-\omega_2)$ | $2(\Phi_0+\Phi_3)$ |
+| $\mathcal{F}(\omega_1,\omega_2)-\mathcal{F}(-\omega_1,-\omega_2)$ | $2(\Phi_1+\Phi_2)$ |
+| $\mathcal{F}(\omega_1,-\omega_2)+\mathcal{F}(-\omega_1,-\omega_2)$ | $2(\Phi_0-\Phi_2)$ |
+| $\mathcal{F}(\omega_1,-\omega_2)-\mathcal{F}(-\omega_1,-\omega_2)$ | $2(\Phi_1-\Phi_3)$ |
+| $\mathcal{F}(-\omega_1,\omega_2)+\mathcal{F}(-\omega_1,-\omega_2)$ | $2(\Phi_0-\Phi_1)$ |
+| $\mathcal{F}(-\omega_1,\omega_2)-\mathcal{F}(-\omega_1,-\omega_2)$ | $2(\Phi_2-\Phi_3)$ |
+
+All ten hold to round-off. They are the parity bookkeeping of the kernel: reversal of $\omega_2$ flips the terms built on $\sin c_2$, that is $\Phi_2$ and $\Phi_3$; reversal of $\omega_1$ flips $\Phi_1$ and $\Phi_3$; the two reversals together flip $\Phi_1$ and $\Phi_2$; and adding and subtracting the resulting pairs separates the four terms.
+
+**The Side of the Kernel Is Not Optional.** The reversal relation $\mathcal{F}(f)(-\omega_1,-\omega_2) = \mathcal{F}_{\mathrm{l}}(f)(\omega_1,\omega_2)$ is often printed, and it is derived by replacing $e^{2\pi e_1\omega_1x_1}e^{2\pi e_2\omega_2x_2}$ with $e^{-2\pi e_2\omega_2x_2}e^{-2\pi e_1\omega_1x_1}$. That replacement is invalid: the two are conjugates, as the identity above shows. Numerically, on a $10\times10$ grid at $(\omega_1,\omega_2) = (0.09,0.13)$ the two sides differ by about $10$ for $f \equiv 1$ and by about $12$ for a general quaternionic $f$.
+
+What is true is weaker. For $f$ whose values commute with the kernel — in particular for any scalar-valued $f$ — the two sides are conjugates of one another,
+
+$$
+\mathcal{F}_{\mathrm{r}}(f)(-\omega_1,-\omega_2) = \overline{\mathcal{F}_{\mathrm{l}}(f)(\omega_1,\omega_2)},
+$$
+
+which was checked exactly for $f \equiv 1$ and for a scalar-valued $f$. For a general $\mathbb{H}$-valued $f$ the two orderings differ by the commutator of the values with the kernel as well: for $f = e_1$ at one point and one frequency the two orderings differ by about $0.8$, so the two sides are not related by conjugation at all. The same slip recurs in the reversal property of the measure transform below, and again in the step that interchanges an integral against a measure with an integral over frequency.
+
+**The Riemann–Lebesgue Lemma with a Rate.** The lemma above is qualitative. In the two-dimensional case the decay rate is explicit, and the kernel standing on the right of $f$ makes the integration by parts unambiguous. If $f$ vanishes at the boundary of the square and $\omega_1 \ne 0$, then
+
+$$
+\mathcal{F}(f)(\omega_1,\omega_2) = -\frac{1}{2\pi e_1\omega_1}\int_a^b\int_a^b \partial_{x_1}f(x_1,x_2)\, e^{-2\pi e_1\omega_1x_1}e^{-2\pi e_2\omega_2x_2}\, dx_1 dx_2,
+$$
+
+because the boundary terms vanish, so
+
+$$
+\lvert \mathcal{F}(f)(\omega_1,\omega_2)\rvert \le \lVert f\rVert_{L^1}, \qquad \lvert \mathcal{F}(f)(\omega_1,\omega_2)\rvert \le \frac{\lVert \partial_{x_1}f\rVert_{L^1}}{2\pi\lvert\omega_1\rvert},
+$$
+
+and the same with $x_2$ and $\omega_2$. Hence $\mathcal{F}(f)$ is bounded and uniformly continuous, and it tends to zero as either frequency tends to infinity, uniformly in the other frequency. The first bound holds for every frequency; the second only for $\omega_i \ne 0$. Both were checked for $f = (1-x_1^2)^2(1-x_2^2)^2$ on $[-1,1]^2$, where $\lVert f\rVert_{L^1} = (16/15)^2 = 1.1378$ and $\lVert \partial_{x_1}f\rVert_{L^1} = 32/15 = 2.1333$, at six frequencies including the cases $\omega_1 = 0$ and $\omega_2 = 0$.
+
+### The Transform of a Measure
+
+**Definition.** Let $\mu$ be a finite positive Borel measure on $\mathbb{R}^2$. Its two transforms are
+
+$$
+\mathcal{F}_{\mathrm{r}}(\mu)(\omega_1,\omega_2) = \int_{\mathbb{R}^2} e^{-2\pi e_1\omega_1x_1}e^{-2\pi e_2\omega_2x_2}\, d\mu(x_1,x_2),
+$$
+$$
+\mathcal{F}_{\mathrm{l}}(\mu)(\omega_1,\omega_2) = \int_{\mathbb{R}^2} e^{-2\pi e_2\omega_2x_2}e^{-2\pi e_1\omega_1x_1}\, d\mu(x_1,x_2).
+$$
+
+For a measure with density $f$ these are the transforms of the previous subsection. Written against $d\mu$ they are defined for measures with no density, which is what the Fourier analysis of probability measures needs. The kernel has modulus one, so both integrals converge absolutely.
+
+**Normalisation and boundedness.** $\mathcal{F}_{\mathrm{r}}(\mu)(0,0) = \mathcal{F}_{\mathrm{l}}(\mu)(0,0) = \mu(\mathbb{R}^2)$, so both are $1$ for a probability measure; and $\lvert \mathcal{F}_{\mathrm{r}}(\mu)(\omega_1,\omega_2)\rvert \le \mu(\mathbb{R}^2)$, likewise on the left.
+
+**Reversal.** $\mathcal{F}_{\mathrm{r}}(\mu)(-\omega_1,-\omega_2) = \overline{\mathcal{F}_{\mathrm{l}}(\mu)(\omega_1,\omega_2)}$, and likewise with the two orders exchanged: reversal of the frequency conjugates and exchanges the orders. The relation is often printed without the conjugation, which is the same slip as above; with the conjugation it is exact on a seven-point probability measure.
+
+**Cosine and $e_3$ parts.** $\mathcal{F}_{\mathrm{r}}(\mu)(\omega_1,\omega_2)+\mathcal{F}_{\mathrm{r}}(\mu)(-\omega_1,-\omega_2)$ equals $2\int(\cos c_1\cos c_2 + e_3\sin c_1\sin c_2)\,d\mu$, and $\mathcal{F}_{\mathrm{r}}(\mu)(\omega_1,\omega_2)+\mathcal{F}_{\mathrm{l}}(\mu)(-\omega_1,-\omega_2)$ equals $2\int\cos c_1\cos c_2\,d\mu$. Both are exact, and they are the measure form of the first and fifth reversal identities above.
+
+**Positive definiteness.** A bounded continuous $\mathbb{H}$-valued function $g$ on $\mathbb{R}^2$ is **positive definite** when
+
+$$
+\sum_{k<l} z_k \bar z_l\, g(\lambda_k-\lambda_l) + \sum_{k>l} g(\lambda_k-\lambda_l)\, z_k \bar z_l + \sum_k \lvert z_k\rvert^2 g(0,0) \ge 0
+$$
+
+for every finite set $\lambda_1,\dots,\lambda_N \in \mathbb{R}^2$ and every $z_1,\dots,z_N \in \mathbb{H}$. Three features separate this from the commutative statement: the coefficients are quaternions rather than complex numbers; the two sums are kept apart because $z_k\bar z_l g$ and $g\,z_l\bar z_k$ are different products, so the quadratic form is not the square of a single sum; and the diagonal term carries $g(0,0)$, which for the transform of a measure is $\mu(\mathbb{R}^2)$. Written with $\mu(\mathbb{R}^2)$ in the diagonal from the outset, the property is tied to the measure it is meant to produce; with $g(0,0)$ it is a property of $g$ alone, which is what an existence theorem needs.
+
+**Theorem.** $\mathcal{F}_{\mathrm{r}}(\mu)$ and $\mathcal{F}_{\mathrm{l}}(\mu)$ are positive definite and bounded.
+
+**Why two points are enough to see it, and why the printed proof for more points does not go through.** For $N=2$ the sum is $X+\overline{X}+\lvert z_1\rvert^2g(0,0)+\lvert z_2\rvert^2g(0,0)$ with $X = z_1\bar z_2\,g(\lambda_1-\lambda_2)$, and $\lvert g\rvert \le g(0,0)$, so the sum is at least $(\lvert z_1\rvert-\lvert z_2\rvert)^2 g(0,0) \ge 0$. For general $N$ the source bounds the sum below by $\sum_k\lvert z_k\rvert^2 - 2\sum_{k<l}\lvert z_k\rvert\lvert z_l\rvert$ and then asserts an induction; that lower bound is negative, being $3-6 = -3$ for $N = 3$ with all $\lvert z_k\rvert = 1$. Random draws at $N = 3$ gave a positive minimum in every trial, so the statement is consistent with the numerical evidence, but the induction as printed is not established.
+
+**What a Bochner–Minlos theorem is, and what is proved here.** The classical theorem says that a functional on a nuclear space that is continuous, normalised and positive definite **is** the Fourier transform of a unique probability measure; the substance is the existence direction, in which positivity of the quadratic form produces the measure. A quaternion form of the theorem is stated in the literature for functionals on the dual of the sequence space $s$ of quaternion sequences with $\lVert p\rVert_m^2 = \sum_n (1+n^2)^m\lvert p_n\rvert^2$ and $s = \bigcap_m s_m$, and what is proved there is the converse direction: a probability measure on the dual is given, and its functional is shown to be normalised, continuous in the Fréchet topology and positive definite. With the measure written into the definition of positive definiteness, the theorem cannot be run in the existence direction, and that direction, which needs the nuclear structure of the test space, is not proved. Nothing in this article depends on the claim.
 
 ## The Convolution Theorem
 
@@ -465,6 +582,8 @@ Harmonic analysis on the quaternion space is the study of the Fourier transform,
 
 The quaternion Fourier transform is defined with a kernel built from the quaternion exponential, and it is developed together with convolution, the Schwartz space and its tempered distributions, the Hilbert transform, the Hardy–Littlewood maximal function, and the Calderón–Zygmund theory of singular integrals. The transform is then extended to the Mellin transform on the multiplicative half-line, the Radon transform along hyperplanes, and the continuous wavelet transform.
 
+Inside the transform section a second quaternion Fourier transform is recorded: the two-dimensional transform of signal and image processing, which assigns one unit to each variable and whose product kernel must be written in a fixed order. Its closed form, its ten reversal identities and its explicit Riemann–Lebesgue decay rate are given, together with the transform of a finite positive measure and the positive definiteness that belongs to it. That positive definiteness is the half of a Bochner–Minlos statement that a measure can supply; the existence direction, which would produce the measure from positivity, is not available here.
+
 The section on the structure principle states what organises the subject: whenever the analysis depends only on the additive group structure and the Euclidean norm, the quaternion case agrees with the real case on $\mathbb{R}^4$, and the non-commutativity enters only through the kernel of the transform.
 
 ## Summary of Notation
@@ -477,6 +596,9 @@ The section on the structure principle states what organises the subject: whenev
 | $\omega$ | Unit pure quaternion |
 | $\chi_\xi(\tilde q) = e^{2\pi \omega \operatorname{Re}(\bar{\xi} \tilde q)}$ | Quaternion character |
 | $\hat{f}$ | Quaternion Fourier transform |
+| $\mathcal{F}(f)(\omega_1,\omega_2)$ | Two-dimensional quaternion Fourier transform, one unit per variable |
+| $\Phi_0,\dots,\Phi_3$ | The four terms of the two-dimensional kernel |
+| $\mathcal{F}_{\mathrm{r}}(\mu), \mathcal{F}_{\mathrm{l}}(\mu)$ | Transform of a finite positive measure $\mu$, kernel right and kernel left |
 | $f * g$ | Convolution |
 | $\delta$ | delta distribution |
 | $E(\tilde q) = \bar{\tilde q}/\lvert \tilde q\rvert^4$ | Cauchy kernel |
@@ -496,4 +618,7 @@ The section on the structure principle states what organises the subject: whenev
 - H. Blaine Lawson and Marie-Louise Michelsohn, *Spin Geometry* (Princeton, 1989), for the role of the spinor-valued first-order operator in geometry.
 - Elias M. Stein and Guido Weiss, *Introduction to Fourier Analysis on Euclidean Spaces* (Princeton, 1971), for the classical treatment of the Fourier transform on $\mathbb{R}^n$.
 - Todd A. Ell and Stephen J. Sangwine, *Quaternion Fourier Transforms for Signal and Image Processing* (Wiley, 2014), for the engineering applications.
+- Todd A. Ell, "Quaternion-Fourier transforms for analysis of two-dimensional linear time-invariant partial differential systems", in *Proceedings of the 32nd IEEE Conference on Decision and Control* (1993), 1830–1841, for the two-dimensional transform with one unit per variable.
+- S. Georgiev, J. Morais, K. I. Kou, and W. Sprößig, "Bochner–Minlos theorem and quaternion Fourier transform", in *Quaternion and Clifford–Fourier Transforms and Wavelets*, Trends in Mathematics (Springer, 2013), 105–120, for the closed form and the reversal identities of that transform, for its decay estimate, and for the measure-theoretic direction recorded above.
+- Salomon Bochner, "Monotone Funktionen, Stieltjessche Integrale und harmonische Analyse", *Mathematische Annalen* **108** (1933), 378–410, and R. A. Minlos, *Trudy Moskovskogo Matematicheskogo Obshchestva* **8** (1959), 497–518, for the classical Bochner–Minlos theorem.
 

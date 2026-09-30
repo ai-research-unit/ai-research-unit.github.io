@@ -201,6 +201,8 @@ $$
 
 All three identities were recomputed directly from the quaternion product. The first two are exact identities among elements of $\mathbb{B}$; the third carries a sign, and since $-e_0$ is central, $\tilde{H}\tilde{Y}\tilde{H} = -\tilde{Y}$ and $\tilde{Y}$ define the **same gate**. This is a small but representative point: an algebraic identity of representatives need not be an identity of gates, and the discrepancy is always a central phase.
 
+**A different complex Hadamard matrix.** A second object shares the name but not the setting. In *The Chiral Algebra of Biquaternions and the Cyclic Representation of the Dirac Equation*, the cyclic conjugation of the biquaternion wave function, read on the Cartesian components $(f_x, f_y, f_z, f_t)$, is a $4\times4$ matrix with entries in $\{\pm1, \pm i\}$ and $H_4H_4^\dagger = 4I$. Its entries have modulus one, so $H_4/2$ is unitary on a four-dimensional complex space; it is a transvection on that space, not an element of the two-dimensional gate group treated here. The two Hadamards therefore share the modulus-one property and the name, and nothing else: $\tilde{H}$ above is a qubit gate, the printed $H_4$ is a change of coordinates of the Dirac equation.
+
 ### The Phase and $T$ Gates
 
 The phase gate is the rotation by $\pi/2$ about $e_3$:

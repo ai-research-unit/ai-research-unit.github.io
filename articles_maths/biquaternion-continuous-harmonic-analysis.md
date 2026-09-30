@@ -4,7 +4,7 @@
 
 This article introduces harmonic analysis for biquaternion-valued functions of a real variable. It follows the article on biquaternion discrete harmonic analysis, which defined the discrete biquaternion Fourier transform, and it uses the analysis article, which defined the biquaternion gradient, the d'Alembertian, and the convective derivative on the four-dimensional subspaces of $\mathbb{B}$.
 
-The treatment is purely mathematical. The goal is to define the continuous biquaternion Fourier transform, establish its basic properties, show how it decomposes into ordinary complex Fourier transforms, and identify the points where the biquaternion structure creates genuinely new phenomena. The relation to the differential operators of the analysis article is the main structural content of this article.
+The treatment is purely mathematical. The goal is to define the continuous biquaternion Fourier transform, establish its basic properties, show how it decomposes into ordinary complex Fourier transforms, and identify the points where the biquaternion structure creates genuinely new phenomena. The relation to the differential operators of the analysis article is the main structural content of this article. Two kernels are treated: the one-unit kernel, and the two-unit kernel that assigns one unit to each of two variables. The transform of a finite measure is examined beside them, and the positivity it lacks is the same indefiniteness that governs the vanishing-norm issue.
 
 The key structural fact is the same as in the discrete case: the Fourier kernel is a biquaternion exponential, and the exponential is defined by a **root of $-1$**. The choice of root determines the nature of the transform, and the transform decomposes into a finite number of ordinary complex Fourier transforms. The genuinely biquaternionic content is the choice of root, the decomposition, and the vanishing-norm issue.
 
@@ -46,21 +46,27 @@ $$
 W(t, \omega) = \cos(2\pi \omega t) \, e_0 - \sin(2\pi \omega t) \, \rho,
 $$
 
-where the cosine and sine are the ordinary real trigonometric functions applied to the real argument $2\pi \omega t$. The kernel is therefore a unit biquaternion:
+where the cosine and sine are the ordinary real trigonometric functions applied to the real argument $2\pi \omega t$.
+
+**The inverse.** The kernel is invertible at every point, with
 
 $$
-N(W(t, \omega)) = \cos^2(2\pi \omega t) + \sin^2(2\pi \omega t) = 1, \qquad N(W(t, \omega)) = e_0.
+W(t, \omega)^{-1} = \cos(2\pi \omega t) \, e_0 + \sin(2\pi \omega t) \, \rho ,
 $$
 
-In particular, the kernel is always invertible, and its inverse is its quaternion conjugate:
+which follows from $\rho^2 = -e_0$ alone: the two factors multiply to $\cos^2 + \sin^2 = e_0$. This is a closed form that holds for **every** root, and it is the form the inverse transform uses.
+
+**The conjugate and the norm, for a pure root.** When the root is pure, that is, when its scalar part vanishes, the quaternion conjugate of the kernel is this inverse and the norm is the identity:
 
 $$
-W(t, \omega)^{-1} = \overline{W(t, \omega)} = \cos(2\pi \omega t) \, e_0 + \sin(2\pi \omega t) \, \rho.
+\overline{W(t, \omega)} = W(t, \omega)^{-1}, \qquad N(W(t, \omega)) = \cos^2(2\pi \omega t) + \sin^2(2\pi \omega t) = e_0 ,
 $$
+
+because $\bar\rho = -\rho$ for a pure element. The first family $\rho = \pm i$ is the exception: it is not pure, the quaternion conjugate leaves the kernel unchanged, and the inverse is the complex conjugate $\exp(2\pi\omega t\, i)$. In that family the kernel is a complex scalar and the transform is the ordinary complex Fourier transform of each component simultaneously. The distinction affects only that family, and the statements below that use the conjugate of the kernel are stated for a pure root.
 
 ### The Condition on the Root
 
-A biquaternion $\rho$ satisfies $\rho^2 = -e_0$ if and only if it is a pure biquaternion (i.e., its scalar part vanishes) and
+A biquaternion $\rho$ satisfies $\rho^2 = -e_0$ if and only if either $\rho = \pm i$, or $\rho$ is a pure biquaternion (i.e., its scalar part $\rho_0$ vanishes) and
 
 $$
 \Re(\rho) \perp \Im(\rho), \qquad \|\Re(\rho)\|^2 - \|\Im(\rho)\|^2 = 1,
@@ -391,6 +397,106 @@ The issue can be avoided by restricting to functions whose values lie in a subsp
 
 The precise condition under which the transform is invertible on a function that takes zero-divisor values on a set of positive measure is not known. It depends on the cancellations in the integral $\int W(t, \omega) f(t) \, dt$, and it is not determined by the biquaternion norms of the values alone. This is one of the open questions listed below.
 
+## The Two-Dimensional Kernel with One Unit per Variable
+
+The transform above carries one real variable and one root. The transform of the signal-processing literature carries two variables and assigns one unit to each, and in the biquaternion algebra that assignment is a genuine choice, because the roots of $-1$ fall into the three families classified above.
+
+**Definition.** Let $\rho_1$ and $\rho_2$ be roots of $-1$ in $\mathbb{B}$, not necessarily distinct and not necessarily commuting. For a function $f : \mathbb{R}^2 \to \mathbb{B}$, the **two-unit transform** is
+
+$$
+F(\omega_1, \omega_2) = \int_{\mathbb{R}^2} W_1(x_1, \omega_1) \, W_2(x_2, \omega_2) \, f(x_1, x_2) \, dx_1 dx_2,
+\qquad
+W_k(x_k, \omega_k) = \exp(-2\pi \rho_k \omega_k x_k),
+$$
+
+the order of the two kernel factors being part of the definition, because they need not commute. The discrete case places one kernel on each side of $f$; the placement is a convention here as it is for the one-unit transform, and the left-left placement is the one used below. The **two-unit kernel** is their product $K = W_1 W_2$.
+
+**Closed form.** With $\theta_k = 2\pi \omega_k x_k$,
+
+$$
+K = \cos\theta_1 \cos\theta_2 \, e_0 - \cos\theta_1 \sin\theta_2 \, \rho_2 - \sin\theta_1 \cos\theta_2 \, \rho_1 + \sin\theta_1 \sin\theta_2 \, \rho_1 \rho_2 .
+$$
+
+The four coefficients are real. The first three terms are the one-unit kernel read on the two variables, and the fourth carries the product $\rho_1 \rho_2$, which is $\pm e_3$ when the two units are two of $e_1, e_2, e_3$ and is a general biquaternion for other pairs.
+
+**Reduction to the one-unit kernel.** If the two units coincide, $\rho_1 = \rho_2 = \rho$, the exponents add and
+
+$$
+K = \cos(\theta_1 + \theta_2) \, e_0 - \sin(\theta_1 + \theta_2) \, \rho ,
+$$
+
+which is the kernel $W$ of this article read on the linear form $\omega_1 x_1 + \omega_2 x_2$, and it is the kernel of the two-dimensional transform of the discrete case. The one-unit theory is therefore the case in which the two units are equal, and the two-unit transform is its refinement.
+
+**The kernel is invertible for every pair of roots.** The norm is multiplicative, $N(K) = N(W_1) N(W_2)$, and the inverse is the kernel with both frequencies negated and the two factors exchanged:
+
+$$
+K(x, \omega)^{-1} = W_2(x_2, -\omega_2) \, W_1(x_1, -\omega_1).
+$$
+
+For two pure roots the kernel is unitary in the sense of the previous section,
+
+$$
+N(K) = e_0, \qquad \overline{K(x, \omega)} = K(x, \omega)^{-1},
+$$
+
+and this holds for every pair of pure roots, commuting or not. The unit-norm property is thus a property of each factor and is inherited by the product.
+
+**Frequency reversal.** Reversing the sign of the frequencies conjugates the kernel **and exchanges the two factors**:
+
+$$
+\overline{K(x, \omega)} = K^{\mathrm{ex}}(x, -\omega),
+$$
+
+where $K^{\mathrm{ex}}$ is the kernel with the two units interchanged. For two pure roots the identity is exact, and it reduces to the one-unit statement $\overline{W(t,\omega)} = W(t,-\omega)$ when there is only one unit to exchange. The form without the exchange, $\overline{K(x,\omega)} = K(x,-\omega)$, needs in addition that the two factors commute: it holds for two pure roots that are equal or opposite, and it fails for two pure roots that are neither, because those do not commute. Both identities are stated for pure roots; the first family $\rho = \pm i$ is excluded from them, as it is in the one-unit case.
+
+**On the factorisation into complex transforms.** The factorisation of the next section diagonalises one root. Two elements that are simultaneously diagonalisable commute, so two roots that do not commute admit no common eigenbasis, and there is no basis in which both units of the two-unit kernel act diagonally at once. The pairs that do commute — equal roots, opposite roots, and any pair containing the central imaginary $i$ — keep a common eigenbasis, and there the one-unit factorisation applies to both variables. Whether the two-unit transform with a non-commuting pair still reduces to a fixed finite family of complex transforms is not settled here, and it is listed among the open questions.
+
+## The Transform of a Measure, and the Failure of Positivity
+
+**Definition.** Let $\mu$ be a finite positive measure on $\mathbb{R}^n$ and let $\rho$ be a pure root of $-1$. The **transform of the measure** is
+
+$$
+G(\omega) = \int_{\mathbb{R}^n} \chi_\omega(x) \, d\mu(x), \qquad \chi_\omega(x) = \exp\big(-2\pi \rho \langle \omega, x \rangle\big).
+$$
+
+Because $\chi_0 = e_0$ at every point, $G(0) = \mu(\mathbb{R}^n) \, e_0$: the value at zero frequency is the total mass, a positive real multiple of the identity.
+
+**The quadratic form.** For coefficients $z_1, \dots, z_N$ in the centre $\mathbb{C}_{\mathbb{B}}$ (the complex scalars $z_k = \zeta_k e_0$, $\zeta_k \in \mathbb{C}$) and frequencies $\omega_1, \dots, \omega_N$,
+
+$$
+\sum_{k,l=1}^{N} \bar z_k z_l \, G(\omega_k - \omega_l) \;=\; \int_{\mathbb{R}^n} N\big(Z(x)\big) \, d\mu(x),
+\qquad
+Z(x) = \sum_{k=1}^{N} z_k \chi_{\omega_k}(x) ,
+$$
+
+the right-hand side being the integral of the **biquaternion norm** of the trigonometric sum. The identity is one line, because $\bar\chi_\omega \chi_\eta = \chi_{\eta - \omega}$ for a pure root, so each term of the sum reassembles a product inside the modulus. It is the exact content of the classical statement that the Fourier transform of a measure is a positive-definite function.
+
+**The real-quaternion case.** If the root is a real quaternion and the coefficients are real, then $Z = A - B\rho$ with $A$ and $B$ real and the integrand is $A^2 + B^2 \ge 0$. The form is non-negative and the transform of the measure is positive definite, which is the hypothesis the classical theorem of Bochner runs on; the quaternion form of that statement, in one and in two variables, is the subject of *Quaternion Harmonic Analysis*.
+
+**The biquaternion case: the form is the norm, and the norm is indefinite.** For $\mathbb{B}$ the integrand is the norm itself, and the norm is complex-valued:
+
+$$
+N(Q) = Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2, \qquad \Re N(Q) = \sum_{\mu=0}^{3} (\Re Q_\mu)^2 - \sum_{\mu=0}^{3} (\Im Q_\mu)^2
+$$
+
+in the eight real components of $Q$. The failure needs no zero divisor and no exceptional value. At $N = 1$, with the central imaginary unit for coefficient,
+
+$$
+z_1 = i: \qquad \bar z_1 z_1 \, G(0) = i^2 \, \mu(\mathbb{R}^n) = -\mu(\mathbb{R}^n) \, e_0 ,
+$$
+
+which is negative for every non-zero measure, because $N(i) = -1$. The scalar imaginary is a unit of the algebra — the element whose presence makes the algebra biquaternionic — and the norm is negative on it. Hence **the transform of a measure is not a positive-definite function for $\mathbb{B}$**, and the positivity a Bochner-type hypothesis would need is not available. The absence is the same indefiniteness the vanishing-norm section records, read at a different value: the norm vanishes on the null cone and it is negative on the centre.
+
+**The repair, and what it costs.** Positivity returns when the norm is replaced by a definite pairing. The integrand of the Euclidean form is a sum of squares of moduli,
+
+$$
+\|Z(x)\|_E^2 = \sum_{\mu=0}^{3} \lvert Z_\mu(x) \rvert^2 \ge 0 ,
+$$
+
+so the Euclidean quadratic form is non-negative, and $\|\cdot\|_E$ is the pairing this article already uses for convergence. What the exchange costs is the algebra: the Euclidean form is not the norm of the transform, and it does not factor through the product of $\mathbb{B}$.
+
+**Two hypotheses, and the same obstruction as before.** The identity requires central coefficients. For quaternion-valued coefficients the products $z_k \chi_{\omega_k}$ do not reassemble, and the two sides differ by terms of order one on random data: the coefficient has to commute with the kernel, which is a genuine restriction and not a technicality of the proof. It also requires a single root for the transform: with two units, one per variable, the collapse $\bar\chi_\omega \chi_\eta = \chi_{\eta - \omega}$ fails as soon as the two units differ, and the identity is false there. The Bochner-type positivity is therefore a one-root, central-coefficient statement even for $\mathbb{H}$, and for $\mathbb{B}$ it fails under those hypotheses as well.
+
 ## The Relation to the Discrete Transform
 
 ### Sampling
@@ -431,6 +537,10 @@ where the sinc function is the ordinary real sinc, and the convergence is in the
 
 6. **The Clifford algebra framework.** How does the biquaternion continuous Fourier transform fit into the general theory of Clifford algebra Fourier transforms?
 
+7. **The factorisation of the two-unit transform.** The factorisation of the one-unit transform diagonalises one root. Two roots that do not commute admit no common eigenbasis, so a two-unit kernel with such a pair has no basis in which both units act diagonally, and it is not known whether its transform still reduces to a fixed finite family of complex transforms.
+
+8. **Positivity for the transform of a measure.** The quadratic form of the transform of a measure is the integral of the norm, and the norm is indefinite, so the biquaternionic form of the Bochner-type hypothesis has no apparent source. Whether some pairing internal to the algebra supplies one is not known.
+
 ## Summary
 
 The continuous biquaternion Fourier transform is defined by the kernel $W(t, \omega) = \exp(-2\pi \rho \omega t)$, where $\rho$ is a root of $-1$ in $\mathbb{B}$. The choice of root determines the nature of the transform: the scalar imaginary gives the ordinary complex transform, the unit pure real quaternions give the quaternion transform, and the non-trivial roots give genuinely biquaternionic transforms.
@@ -440,6 +550,8 @@ The transform is invertible on functions of non-vanishing norm, and it satisfies
 The convolution theorem holds, with the non-commutativity requiring careful placement of the kernel. The transform diagonalizes the constant-coefficient differential operators of the analysis article: the gradient becomes a biquaternion-valued multiplier, the d'Alembertian becomes a scalar multiplier vanishing on the light cone, and the convective derivative becomes a biquaternion-valued multiplier depending on the velocity.
 
 The vanishing-norm issue is a genuinely biquaternionic feature: functions that take zero-divisor values on a set of positive measure are not necessarily recoverable from their transform, and the precise invertibility condition is not known.
+
+A two-unit kernel is recorded beside the one-unit kernel, one unit per variable. Its closed form carries the product of the two roots in its fourth term, it reduces to the one-unit kernel when the two roots coincide, it is invertible for every pair of roots, and its conjugate is the kernel with the two units exchanged. The transform of a finite positive measure has a quadratic form which is the integral of the biquaternion norm of a trigonometric sum: non-negative for real coefficients and a real root, which is the classical positive definiteness of a measure transform, and false for $\mathbb{B}$ at a single term with $z = i$, because $N(i) = -1$. The Euclidean pairing restores positivity and is not the norm of the algebra.
 
 The continuous transform is the limit of the discrete transform as the sampling interval tends to zero, and it is related to the discrete transform by the Poisson summation formula and the sampling theorem.
 
@@ -453,6 +565,9 @@ The continuous transform is the limit of the discrete transform as the sampling 
 | $W(t,\omega) = \exp(-2\pi\rho\omega t)$ | Fourier kernel, placed on the left of $f$; the conjugate kernel $\overline{W}$ gives the inverse transform |
 | $\rho$ | Root of $-1$ in $\mathbb{B}$ fixing the transform; a local notation, not the scalar imaginary $i$ |
 | $\omega$ | Frequency variable, $\omega \in \mathbb{R}$ |
+| $\rho_1, \rho_2$ | Roots of $-1$ attached to the two variables of the two-unit kernel; they need not be equal, and need not commute |
+| $K = W_1W_2$ | Two-unit kernel, one unit per variable; the order of the factors is part of the definition, and $K(x,\omega)^{-1} = W_2(x_2,-\omega_2)W_1(x_1,-\omega_1)$ |
+| $\mu$, $G(\omega) = \int \chi_\omega \, d\mu$ | Finite positive measure and its transform; $G(0) = \mu(\mathbb{R}^n)e_0$, and $\sum_{k,l}\bar z_kz_l G(\omega_k-\omega_l) = \int N(Z) \, d\mu$ for central coefficients |
 | $\mathbf{Q} = Q_1 e_1 + Q_2 e_2 + Q_3 e_3$ | Vector part of a biquaternion |
 | $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$ | Biquaternion norm; it vanishes on the zero divisors |
 | $\tilde{\nabla}$ | Biquaternionic gradient on a four-dimensional subspace |
@@ -466,6 +581,8 @@ The continuous transform is the limit of the discrete transform as the sampling 
 - S. J. Sangwine and D. Alfsmann, "Determination of the biquaternion divisors of zero, including the idempotents and nilpotents", arXiv:0812.1102 (2008), for the classification of the zero divisors.
 - N. Le Bihan and J. Mars, "Singular value decomposition of quaternion matrices: a new tool for vector-sensor signal processing", *Signal Processing* **84** (2004) 1177–1199, for the quaternion signal processing background.
 - T. A. Ell and S. J. Sangwine, "Hypercomplex Fourier transforms of color images", *IEEE Transactions on Image Processing* **16** (2007) 22–35, for the quaternion Fourier transform and its applications.
+- S. Georgiev, J. Morais, K. I. Kou, and W. Sprößig, "Bochner–Minlos theorem and quaternion Fourier transform", in *Quaternion and Clifford–Fourier Transforms and Wavelets*, Trends in Mathematics (Springer, 2013), 105–120, for the quaternion theorem whose biquaternionic counterpart is examined in the section on the transform of a measure above: the two-dimensional transform with one unit per variable, the difference between its two orderings, and the positive definiteness of the transform of a measure, which holds there and fails here.
+- S. Bochner, "Monotone Funktionen, Stieltjessche Integrale und harmonische Analyse", *Mathematische Annalen* **108** (1933) 378–410, for the classical theorem that a normalised positive-definite function is the Fourier transform of a measure, which is the statement the biquaternion algebra does not reproduce.
 - R. Fueter, "Die Funktionentheorie der Differentialgleichungen $\Delta u = 0$ und $\Delta\Delta u = 0$ mit vier reellen Variablen", *Commentarii Mathematici Helvetici* **7** (1934–35) 307–330, for the analysis of quaternion-valued functions of four real variables.
 - F. Brackx, R. Delanghe, and F. Sommen, *Clifford Analysis* (Pitman, 1982), for the general Clifford analysis.
 - W. R. Hamilton, *Lectures on Quaternions* (Hodges and Smith, Dublin, 1853), for the original formulation of quaternions and biquaternions.

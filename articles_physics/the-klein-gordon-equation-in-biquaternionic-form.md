@@ -44,6 +44,32 @@ $$
 
 which is a genuine algebraic statement: the d'Alembertian is the **biquaternion norm** of the gradient biquaternion, exactly as $\tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$ is the biquaternion norm of a biquaternion. The wave operator is the square of an element of the algebra, and the mass-shell condition below is the same biquaternion norm evaluated on the four-wavevector. That is the structural content the biquaternion writing makes visible.
 
+## The Lanczos Family and the Spin-0 Member
+
+The free Klein–Gordon equation is the spin-0 member of a first-order family the corpus already writes. Lanczos's coupled biquaternion system
+
+$$
+\tilde{\nabla}\tilde{A} = m\tilde{B}, \qquad \tilde{\nabla}\tilde{B} = m\tilde{A}
+$$
+
+is the parent of the Dirac equation (the idempotent superposition of the two fields), of the Proca equation and of the Maxwell equation, as set out in *The Dirac Equation in Biquaternionic Form*, *The Proca Equation: Massive Spin 1 in Biquaternionic Form* and *The Standard Model under the Biquaternion Framework — A Research Agenda*; the second-order equation of the family, obtained by eliminating the auxiliary field, is the Klein–Gordon equation of this article. What the family adds here is the placement: the equation below is not an isolated second-order equation but a member of the one classical family, its spin-0 label being the restriction of the pair to scalar fields.
+
+**The scalar restriction.** Take $\tilde{A}=A_0e_0$ and $\tilde{B}=be_0$ with $A_0$ and $b$ complex scalars. The first equation forces $\tilde{\nabla}A_0$ to have no vector part, hence $A_0$, and with it $b$, to depend on $ict$ alone; the pair then collapses to
+
+$$
+\partial_{ict}A_0 = b, \qquad \partial_{ict}b = m^2A_0, \qquad\text{hence}\qquad \left(\partial_{ict}^2 - m^2\right)A_0 = 0 .
+$$
+
+This is the degenerate form that Gsponer and Hurni record for the spin-zero case, and "degenerate" is literal: a scalar field whose gradient must be scalar cannot vary in space, so this member of the family is one-dimensional. The corpus's spin-0 field does vary in space, and it satisfies the four-dimensional Klein–Gordon equation of the preceding sections,
+
+$$
+\left(\Box - \frac{m^2c^2}{\hbar^2}\right)A_0 = 0,
+$$
+
+which is the same elimination applied to the pair that carries one gradient of each kind: the conjugate gradient squares to $\Box$, and eliminating the auxiliary field leaves $\Box\tilde{A}=(m^2c^2/\hbar^2)\tilde{A}$, whose scalar restriction is the equation above.
+
+<!-- CONVENTION — the two gradients are the two square roots of □: ∇̃∇̄̃ = ∇̄̃∇̃ = □, established at the top of this article and in the companion Maxwell article. The family must therefore carry one of each for its square to be □. The companion articles write Lanczos's system with ∇̃ on both equations, as the source does; the square there is ∇̃∇̃ = ∂_{ict}² − Δ, which differs from □ = ∂_{ict}² + Δ in the sign of the spatial part. The two coincide for a spatially constant field (ΔA_0 = 0), which is exactly the degenerate case above, and are related by the Wick rotation of the time coordinate. Do not transplant the family's square between the two writings without fixing the signature. -->
+
 ## Second Order in Time and the Conjugate Pair
 
 An equation second order in $t$ does not determine the field from its value alone: two data, $\tilde{\Phi}$ and $\partial_t\tilde{\Phi}$, are required. Equivalently, the operator $\Box - m^2c^2/\hbar^2$ has no first-order scalar square root inside the algebra, and the obstruction is elementary. Attempt the factorisation

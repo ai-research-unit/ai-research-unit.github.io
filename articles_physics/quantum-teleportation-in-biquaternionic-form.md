@@ -323,6 +323,8 @@ The three readings are not in conflict; they are the instrument, its branches, a
 
 **6. Empirical content.** As everywhere in the framework, a rewriting of teleportation is not empirical content. What, if anything, distinguishes this formulation from standard quantum information is the central open question.
 
+A source in the literature (Obojska, *Journal of Physics Communications* **4** (2020) 055018) proposes the same two directions as future work: a special unitary operation acting on biquaternions that reproduces teleportation, and an understanding of how rotations in $\mathbb{C}^4$ influence entanglement. The second is the subject of the companion articles on frame-dependent entanglement and on the Bell basis; the first is what this article carries out, for the Bell resource.
+
 ## Summary
 
 Quantum teleportation in the biquaternion framework is the following chain of algebraic statements.
@@ -372,4 +374,5 @@ The unconditioned average of the branches is the Pauli twirl $\tfrac14\sum_\epsi
 - C. H. Bennett and S. J. Wiesner, "Communication via one- and two-particle operators on Einstein–Podolsky–Rosen states," *Physical Review Letters* **69** (1992) 2881–2884, for dense coding, the dual protocol not developed here.
 - K. Kraus, *States, Effects, and Operations* (Springer, 1983), for the instrument and Kraus-rank language used in the channel reading.
 - Chris Doran and Anthony Lasenby, *Geometric Algebra for Physicists* (Cambridge, 2003), and Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the rotor formulation of the corrections.
+- Lidia Obojska, "Patterns of maximally entangled states within the algebra of biquaternions," *Journal of Physics Communications* **4** (2020) 055018, for the proposal of a biquaternion unitary reproducing teleportation, noted in *Open Questions*.
 - The companion articles of this series: *Introduction to the Biquaternion Universe*, *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*, *Quantum Mechanics in Biquaternionic Form*, *Spin-1/2 Quantum Mechanics in Biquaternionic Form*, *Entangled Subsystems in the Biquaternion Framework*, *The Bell Basis as the Idempotent Basis of $\mathbb{B}\otimes\mathbb{B}$*, *Exercise: The Correlation Function of the Bell States*, *Exercise: The Reduced State of an Entangled Subsystem*, *Quantum Gates and Circuits in Biquaternionic Form*, *Quantum Channels and the Reversible/Irreversible Dichotomy*, *The Measurement Problem in Algebraic Form*, and *Decoherence as Idempotent Projection*.

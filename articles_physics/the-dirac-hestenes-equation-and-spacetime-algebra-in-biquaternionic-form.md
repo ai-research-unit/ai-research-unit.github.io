@@ -150,6 +150,35 @@ Second, the mass term uses the **Clifford-odd** vector $\gamma_0$; the framework
 
 The Dirac–Hestenes equation is an **equivalent rewriting** of the Dirac equation. It is real, matrix-free and geometric, and those are real advantages of exposition and interpretation; they are not new physics. In particular it neither resolves the framework's left-versus-right representation question nor supplies an empirical prediction. It does, however, tell the framework what the answer to that question looks like in the standard formulation, and it identifies the pseudoscalar with the central imaginary unit, which is a clarifying rather than a predictive result.
 
+### The Algebra of Physical Space and the Spacetime Algebra, Compared
+
+The biquaternion framework is one of two readings of the same even algebra, and the other reading — the **algebra of physical space** of Baylis (*Relativity in Introductory Physics*, §VI; *Paravectors and the Geometry of Spacetime*) — is worth setting beside the spacetime algebra here, because the comparison is the reason the series prefers the smaller algebra.
+
+Both are $\mathrm{Cl}_{3,0}$, the even subalgebra of $\mathrm{Cl}_{1,3}$, and both therefore have **eight** real independent elements against the **sixteen** of the full spacetime algebra. The generator identifications are
+
+$$
+\sigma_k \;\longleftrightarrow\; \gamma_{k}\gamma_{0} \;(\text{bivectors of STA}), \qquad
+i = \sigma_1\sigma_2\sigma_3 \;\longleftrightarrow\; \pm I = \pm\gamma_0\gamma_1\gamma_2\gamma_3 ,
+$$
+
+the sign in the second identification being the convention of the $\gamma$-ordering; it is fixed once and for all by the first. Thus the three **vectors** of the algebra of physical space are the three timelike–spacelike planes of the spacetime algebra, and the pseudoscalar is the same element up to that sign. This is the algebraic content of the corpus's statement that the biquaternion algebra is the even subalgebra of $\mathrm{Cl}_{1,3}$.
+
+**Two structural differences follow.** First, the volume element. In the algebra of physical space $i$ is the **pseudoscalar**, and because the underlying dimension is odd it is **central**: it commutes with the vectors $\sigma_k$ as well as with the bivectors, so it can be treated as the scalar imaginary of a complexification and the algebra is literally $\mathbb C\otimes_\mathbb R\mathbb H$. In the spacetime algebra the pseudoscalar $I$ commutes with the even elements but **anticommutes with the four vectors** $\gamma_\mu$; on the spinor (even) subalgebra it too is a central imaginary unit, but on the full algebra it is an oriented volume element rather than a scalar imaginary, and this is why the spacetime algebra is normally presented as a real algebra where the complex structure appears only on restriction. Second, the presentation. The spacetime algebra is usually developed through the outer product and the grade decomposition of its sixteen dimensions; the algebra of physical space works with the geometric product alone, the outer product being the bivector part of a product and the duality being multiplication by $i$, so that no separate exterior calculus has to be carried.
+
+**The compensating cost and gain.** The algebra of physical space needs the extra **Clifford conjugate** $p\mapsto \bar p$ to express the Minkowski form of a paravector, which the spacetime algebra gets from its indefinite signature directly. In exchange it gives the paravector identity $p\bar p = p_0^2-\mathbf p^2$ *inside* a definite algebra, and with it a metric relation that the spacetime algebra cannot state in the same way: the **measured** (Euclidean) length of a displacement on a spacetime diagram is the modulus of the paravector, while the **Minkowski** length is the same modulus combined with a hyperbolic angle read off from the diagram — the source's §III.C result. The series uses the biquaternion algebra, which is the algebra of physical space with the generators squared to $-1$; the comparison above is the whole of the difference between them.
+
+
+
+### The space Clifford formulation and the equivalence of the three
+
+The STA formulation is one of three equivalent real rewritings of Dirac theory that the series now records. The third is the **space Clifford formulation** of Daviau, which writes the equation for a general element $\varphi$ of the Pauli algebra $\mathcal P\cong M_2(\mathbb C)$ as
+
+$$
+\nabla\varphi\,i\sigma_1 = m\varphi^{*}+qA\varphi ,
+$$
+
+with a cyclically permuted gradient, the star conjugation $\varphi^{*}=\sigma_2\bar\varphi\sigma_2$, and the algebra acting on the spinor from both sides. The three formulations are related by the sign of the mass, a cyclic relabelling of the space directions, and the star; and the star is the corpus's **complex conjugation** ${}^{*}$ under the identification of the Pauli algebra with $\mathbb B$. In particular the Dirac–Hestenes equation is Parra's option $\{2\}$ and the Daviau equation is Parra's option $\{1\}$, two of the four inequivalent sign conventions of one equation, permuted by the discrete group $\Gamma_{1,3}/\Gamma^+_{1,3}$. The details, the dictionary and the equivalence are in the two companion articles.
+
 ## Open Questions
 
 1. **Which ideal?** The framework's two minimal left ideals are its left and right Weyl spinors. In STA a minimal ideal is selected by an idempotent built from a fixed null or timelike vector, and the Dirac–Hestenes equation uses $\gamma_0$ explicitly. Does the framework's choice of ideal correspond to the standard choice of $\gamma_0$, or to a different fixed vector?
@@ -195,4 +224,5 @@ The correspondence with the biquaternion framework is the closest in this series
 - S. Gull, A. Lasenby and C. Doran, "Imaginary numbers are not real — the geometric algebra of spacetime," *Foundations of Physics* **23** (1993) 1175–1201, for the pedagogic account of the pseudoscalar and the imaginary unit.
 - D. Hestenes, "Zitterbewegung in quantum mechanics," *Foundations of Physics* **40** (2010) 1–54, for the rotor interpretation of the oscillatory motion.
 - W. E. Baylis (ed.), *Clifford (Geometric) Algebras with Applications in Physics, Mathematics and Engineering* (Birkhäuser, 1996), for the broader context.
-- The companion articles of this series: *The Dirac Equation in Biquaternionic Form*, *Zitterbewegung in Biquaternionic Form*, *The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism*, *The CPT Theorem in Biquaternionic Form*, and *The Dirac–Kähler Equation*.
+- B. Fauser, "On the equivalence of Daviau's space Clifford algebraic, Hestenes' and Parra's formulations of (real) Dirac theory," arXiv:hep-th/9908200, 1999, for the equivalence of this formulation with the space Clifford and Parra formulations used in the new subsection above.
+- The companion articles of this series: *The Dirac Equation in Biquaternionic Form*, *The Daviau Map and the Space Clifford Formulation of the Dirac Equation*, *Parra's Four Options of the Dirac Equation and the Discrete Symmetries*, *Zitterbewegung in Biquaternionic Form*, *The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism*, *The CPT Theorem in Biquaternionic Form*, and *The Dirac–Kähler Equation*.

@@ -144,6 +144,40 @@ A pure zero divisor $\tilde{Q}$ has the following properties.
 - **Non-invertibility.** By the criterion for invertibility, $\tilde{Q}$ has no inverse.
 - **Purity preserved.** The scalar part of $\tilde{Q}$ is zero by hypothesis, and the square $\tilde{Q}^2 = 0$ also has zero scalar part. So the property of being pure is preserved under squaring.
 
+### The Bivector Form
+
+A pure biquaternion has three complex coefficients, and each one splits into a real and an imaginary part. Writing $Q_k = \rho_k + i\rho'_k$ with $\rho_k, \rho'_k \in \mathbb{R}$, and reading each triple as a vector of $\mathbb{R}^3$, a pure biquaternion is the sum of two real vectors carrying the central imaginary on the second,
+
+$$
+\tilde{Q} = \boldsymbol{\rho} + i\,\boldsymbol{\rho}', \qquad \boldsymbol{\rho}, \boldsymbol{\rho}' \in \mathbb{R}^3 .
+$$
+
+An element of this form is a **bivector** in the older vocabulary; the term and its setting are recorded in *A Brief History of Biquaternions in Physics*.
+
+Squaring and separating real and imaginary parts, using the product rule $\boldsymbol{\rho}\,\boldsymbol{\sigma} = -\boldsymbol{\rho}\cdot\boldsymbol{\sigma} + \boldsymbol{\rho}\times\boldsymbol{\sigma}$ for two real vectors, the square of a pure biquaternion is
+
+$$
+\tilde{Q}^2 = \bigl(|\boldsymbol{\rho}'|^2 - |\boldsymbol{\rho}|^2\bigr)\, e_0 - 2i\,(\boldsymbol{\rho}\cdot\boldsymbol{\rho}')\, e_0 .
+$$
+
+The square is therefore a complex scalar, and it vanishes exactly when the two conditions
+
+$$
+\boldsymbol{\rho}\cdot\boldsymbol{\rho}' = 0, \qquad |\boldsymbol{\rho}| = |\boldsymbol{\rho}'|,
+$$
+
+hold. This restates the criterion proved above in real coordinates.
+
+**Corollary (the pure zero divisors as bivectors).** A nonzero pure biquaternion $\tilde{Q} = \boldsymbol{\rho} + i\boldsymbol{\rho}'$ is a zero divisor if and only if its two real parts are orthogonal and of equal length. Equivalently, writing $\boldsymbol{\rho} = r\hat{u}$ and $\boldsymbol{\rho}' = r\hat{v}$ with $r = |\boldsymbol{\rho}| = |\boldsymbol{\rho}'|$, the pure zero divisors are exactly the elements
+
+$$
+r\,(\hat{u} + i\hat{v}), \qquad \hat{u}\cdot\hat{v} = 0, \qquad |\hat{u}| = |\hat{v}| = 1, \qquad r > 0 .
+$$
+
+The parameters are a positive radius, a direction on the unit sphere, and a perpendicular direction on its unit circle — one, two and one real parameters. The pure zero divisors therefore form a real cone of dimension $4$, agreeing with the dimension recorded for the pure family below.
+
+**Remark (the sign of the square).** The same formula shows that when the two parts are perpendicular the square is the real scalar $|\boldsymbol{\rho}'|^2 - |\boldsymbol{\rho}|^2$: positive, zero, or negative according as $|\boldsymbol{\rho}'|$ is greater than, equal to, or less than $|\boldsymbol{\rho}|$. A real vector has $v^2 = -|v|^2 < 0$ without exception, so it is only a bivector that allows a nonzero square of positive sign; this is what the geometric reading of the theory at its origin turns on (*A Brief History of Biquaternions in Physics*).
+
 ## Non-Pure Zero Divisors
 
 ### The Square of a Non-Pure Biquaternion
@@ -317,6 +351,7 @@ The zero divisor set is a complex cone of complex dimension $3$ (real dimension 
 ## Further Reading
 
 - William Rowan Hamilton, *Lectures on Quaternions* (Hodges and Smith, Dublin, 1853), for the original discovery of the zero divisors and the nilpotents.
+- William Rowan Hamilton, "On the Geometrical Interpretation of some Results obtained by calculation with Biquaternions," *Proceedings of the Royal Irish Academy* **5** (1853) 388–390, for the bivectors, the null-square bivectors $i + hj$ and $j + hk$, and the simplification $(1 + j + hk)^x = 1 + x(j + hk)$.
 - S. J. Sangwine and D. Alfsmann, "Determination of the biquaternion divisors of zero, including the idempotents and nilpotents", *Advances in Applied Clifford Algebras* **20** (2010) 401–416, for the classification of the zero divisors.
 - S. J. Sangwine, "Biquaternion (complexified quaternion) roots of $-1$", *Advances in Applied Clifford Algebras* **16** (2006) 63–68, for the classification of the roots of $-1$.
 - J. P. Ward, *Quaternions and Cayley Numbers: Algebra and Applications* (Kluwer, Dordrecht, 1997), for the algebraic properties of the biquaternions.
