@@ -195,6 +195,24 @@ The remaining question is whether the translation can be made multiplicative aft
 
 The honest summary is that the biquaternion frame answers the homogeneous question exactly and the translation question not at all: the biquaternions supply the first factor of the semidirect product and the action on the second, and whether the second can be absorbed into a biquaternion-like algebra, and which one, is open. No choice among the candidates is made here.
 
+## Covariance of the Biwave Equation
+
+The frame's action on the algebra extends to the operators built from it, and it yields one theorem worth isolating, because it is what makes the differential equations of the series equations of *spacetime* rather than equations in a preferred frame. The equation to state it for is the first-order **biwave equation** $\tilde{\nabla}\tilde{K} = \tilde{G}$, the corpus gradient acting on a biquaternion field; the second-order $\Box$ and the $\kappa$-shifted operators of the companion d'Alembertian article inherit the statement, being built from the same gradient.
+
+**The conjugated gradient is the gradient in the rotated basis.** The gradient is a material four-vector of operators, $\tilde{\nabla} = \sum_\mu e_\mu\partial_\mu$. Under the rotor action $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^\dagger$ of the section *The Frame Reading*, the derivative is untouched and the basis is transported, so the conjugated operator is the gradient written in the rotated basis,
+$$
+\tilde{\nabla}' := \sum_\mu \left(\tilde{\Lambda}\,e_\mu\,\tilde{\Lambda}^{-1}\right)\partial_\mu .
+$$
+Conjugation by a constant rotor is an algebra automorphism and it commutes with the constant-coefficient derivatives, so for the field transformed with the basis,
+$$
+\tilde{\nabla}'\left(\tilde{\Lambda}\tilde{K}\tilde{\Lambda}^\dagger\right) = \tilde{\Lambda}\left(\tilde{\nabla}\tilde{K}\right)\tilde{\Lambda}^\dagger ,
+$$
+which was checked on random rotors and random $\tilde{K}$. The equation $\tilde{\nabla}\tilde{K} = \tilde{G}$ therefore maps to $\tilde{\nabla}'\tilde{K}' = \tilde{G}'$ with $\tilde{K}' = \tilde{\Lambda}\tilde{K}\tilde{\Lambda}^\dagger$ and $\tilde{G}' = \tilde{\Lambda}\tilde{G}\tilde{\Lambda}^\dagger$: the equation is **form-invariant**, its form unchanged although its basis has moved.
+
+**Why it is a theorem and not a tautology.** Three facts carry the statement. The rotated elements $\tilde{\Lambda}e_\mu\tilde{\Lambda}^{-1}$ are again a basis with the same multiplication table, so the rotated equation is an equation of the same kind and not a different one; the map $\tilde{\Lambda}\mapsto\mathrm{Ad}$ is the two-to-one cover onto $SO^+(1,3)$ of the section *The Homogeneous Part, Recalled*, so the basis rotation is a Lorentz transformation of the frame; and a central shift or a central second-order factor is carried along unchanged, so the shift of the companion d'Alembertian article adds nothing to the argument. The translation completes it rather than complicating it: translations act additively on the argument, and an operator with constant coefficients is unchanged by a shift of its argument, so the full Poincaré statement is the semidirect extension of the homogeneous one — which is the source's Theorem 4.1 read in the corpus frame.
+
+**The two restrictions.** The statement is about the **free** operator, and it needs the coefficients constant. It does not extend to the *coupled, nonlinear* systems of the electro-gravimagnetic programme, and that is exactly why the negative result of the companion article on that programme is compatible with it: there the charge–current conservation law of the coupled system fails to be invariant, while the free biwave operator here is invariant, and the two statements are about different operators. And it is a covariance, not a construction: it says that a solution transforms to a solution of the equation written in the new basis, which is what makes the equation well posed on Minkowski space, and it says nothing about which solutions exist.
+
 ## Summary
 
 The Poincaré group is the ten-parameter group of affine isometries of Minkowski space, and its restricted connected form is the semidirect product $SO^+(1,3)\ltimes\mathbb{R}^4$; its double cover is $SL(2,\mathbb{C})\ltimes\mathbb{R}^4$. The biquaternion algebra $\mathbb{B}$ contains the homogeneous factor exactly: the unit-norm biquaternions are $SL(2,\mathbb{C})$, rotor conjugation $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^\dagger$ is the action on the material sector $\mathbb{M}_-$, and $\mathrm{Ad}$ is the two-to-one covering map onto $SO^+(1,3)$.
@@ -232,6 +250,9 @@ What the frame captures is the connected homogeneous group and its action; what 
 | $(\tilde{\Lambda}_2,\tilde{a}_2)\circ(\tilde{\Lambda}_1,\tilde{a}_1)=(\tilde{\Lambda}_2\tilde{\Lambda}_1,\tilde{\Lambda}_2\tilde{a}_1\tilde{\Lambda}_2^\dagger+\tilde{a}_2)$ | Poincaré group law |
 | $SL(2,\mathbb{C})\ltimes_{\mathrm{Ad}}\mathbb{R}^4$ | Semidirect structure of the (covering) restricted Poincaré group |
 | $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ | Trace formula (informational sector) |
+| $\tilde{\nabla} = \sum_\mu e_\mu\partial_\mu$ | Biquaternionic gradient (material four-vector of operators) |
+| $\tilde{\nabla}' = \sum_\mu(\tilde{\Lambda}e_\mu\tilde{\Lambda}^{-1})\partial_\mu$ | Conjugated gradient, the gradient in the rotated basis |
+| $\tilde{\nabla}\tilde{K} = \tilde{G}$ | Biwave equation; form-invariant under the rotor action |
 | $c=1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |
 
 ## Further Reading
@@ -245,3 +266,4 @@ What the frame captures is the connected homogeneous group and its action; what 
 - David Hestenes, *Space-Time Algebra* (Gordon and Breach, 1966), for the geometric algebra formulation of the Lorentz group and spacetime transformations.
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the Clifford-algebraic framework and the double cover of the Lorentz group.
 - Ben Kenwright, "A Beginner's Guide to Dual-Quaternions" (2012), for the Euclidean analogue in which translations become multiplicative.
+- L. A. Alexeyeva, "Biquaternions algebra and its applications by solving of some theoretical physics equations", *Clifford Analysis, Clifford Algebras and Their Applications* **7** (2012), 19–39 (arXiv:1302.0523), for the invariance of the biwave equation under the Lorentz–Poincaré group (Theorem 4.1).

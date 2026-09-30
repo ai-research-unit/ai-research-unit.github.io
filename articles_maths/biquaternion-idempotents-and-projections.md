@@ -13,7 +13,7 @@ Idempotents are the algebraic form of a projection, and in $\mathbb{B}$ they do 
 
 The material here was previously distributed over the article on ideals, the article on zero divisors, the article on the roots of minus one and the worked examples. It is collected here because the four statements above are one subject: the idempotent.
 
-**Placement.** The article is second in the Algebra group, after the algebra and before the ideals, the roots of $-1$ and the zero divisors, because all of those use the idempotents. Its own proofs use only the algebra article: the roots of $-1$ enter as a parameter set whose classification is quoted from *Biquaternion Roots of Minus One*, and the relations to the zero divisors and to the ideals are forward pointers.
+**Placement.** The article is second in the Algebra group, after the algebra and before the ideals, the roots of $-1$ and the zero divisors, because all of those use the idempotents. Its own proofs use only the algebra article: the roots of $-1$ enter as a parameter set whose classification is quoted from *Biquaternion Square Roots of Minus One, Zero and Plus One*, and the relations to the zero divisors and to the ideals are forward pointers.
 
 **Conventions.** The algebra is $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$, with basis $e_0 = 1, e_1, e_2, e_3$ and $e_1 e_2 = e_3$, and central scalar imaginary $i$. A general element is $\tilde{Q} = \sum_{\mu=0}^{3} Q_\mu e_\mu$ with $Q_\mu \in \mathbb{C}$; the scalar part is $Q_0$ and $\mathbf{B}$ denotes a pure biquaternion, $\mathbf{B} = B_1 e_1 + B_2 e_2 + B_3 e_3$. On pure elements the product is $\mathbf{A}\mathbf{B} = -\sum_{k} A_k B_k\, e_0 + \mathbf{A}\times\mathbf{B}$, so that a pure element satisfies $\mathbf{B}^2 = -(\sum_k B_k^2) e_0$. That the product $\tilde{Q}\bar{\tilde{Q}}$ decides invertibility, and the forms it defines, belong to Topology (*Biquaternion Norm and Invertibility*). The six subspaces are the centre $\mathbb{C}_{\mathbb{B}}$, the vector subspace $\mathrm{Vect}(\mathbb{B})$, the quaternion and anti-quaternion subspaces $\mathbb{H}_{\mathbb{B}}$ and $i\mathbb{H}_{\mathbb{B}}$, and the Hermitian and anti-Hermitian sectors $\mathbb{M}_+$ and $\mathbb{M}_-$.
 
@@ -97,7 +97,7 @@ The sign choice arises from replacing $\xi$ by $-\xi$, which is also a root of $
 
 The trivial idempotents correspond to the degenerate roots $\xi = \pm i$: the two signs in $\tfrac{1}{2}(e_0 \pm \xi i)$ give $\tfrac{1}{2}(e_0 + i \cdot i) = 0$ and $\tfrac{1}{2}(e_0 - i \cdot i) = e_0$.
 
-The classification is a classification of the idempotents only because the roots of $-1$ are classified, and that classification is the subject of *Biquaternion Roots of Minus One*, which follows this article. The three families it produces — the trivial roots $\pm i$, the real quaternion roots $\pm\mu$ over unit pure real quaternions, and the non-trivial roots $b\mu + d\nu i$ — give the three families of idempotents in §*The Bijection With the Roots of Minus One*.
+The classification is a classification of the idempotents only because the roots of $-1$ are classified, and that classification is the subject of *Biquaternion Square Roots of Minus One, Zero and Plus One*, which follows this article. The three families it produces — the trivial roots $\pm i$, the real quaternion roots $\pm\mu$ over unit pure real quaternions, and the non-trivial roots $b\mu + d\nu i$ — give the three families of idempotents in §*The Bijection With the Roots of Minus One*.
 
 ## The Bijection With the Roots of Minus One
 
@@ -125,7 +125,7 @@ $$
 
 Thus $\tilde\Pi_+(\xi)$ and $\tilde\Pi_+(-\xi)$ are the two members of a complementary pair, and the pair corresponds to the class $\{\xi, -\xi\}$.
 
-Substituting the classification of $\xi$ of *Biquaternion Roots of Minus One* gives the three families of idempotents:
+Substituting the classification of $\xi$ of *Biquaternion Square Roots of Minus One, Zero and Plus One* gives the three families of idempotents:
 
 - For the trivial root $\xi = \pm i$: $\tilde\Pi = \tfrac{1}{2} e_0 \pm \tfrac{1}{2} i \cdot i = \tfrac{1}{2} e_0 \mp \tfrac{1}{2} e_0$, giving $\tilde\Pi = 0$ or $\tilde\Pi = e_0$. These are the **trivial idempotents**.
 - For the real root $\xi = \pm \mu$: $\tilde\Pi = \tfrac{1}{2} e_0 \pm \tfrac{1}{2} \mu i$. Since $\mu i$ is Hermitian when $\mu$ is a unit pure real quaternion, $(\mu i)^\dagger = \mu i$, these are the **Hermitian idempotents**, and they lie in the Hermitian subspace $\mathbb{M}_+$; they are the projections that occur in the biquaternion spectral theorem, treated in *Biquaternion Spectral Theory*.
@@ -169,7 +169,7 @@ The derivation, from the square relation $\tilde{Q}^2 = 2 Q_0 \tilde{Q}$ that th
 
 The idempotents correspond bijectively to the roots of $-1$, so they inherit the size of that set. The roots have a non-trivial family of real dimension $4$, a real family of real dimension $2$, and two isolated points (the trivial roots, $\pm i$); the topological description of the set is in *Biquaternion Topology*.
 
-The trivial roots $\pm i$ map to the trivial idempotents $0$ and $e_0$, which are excluded from the non-trivial idempotents, so there are no isolated points among the non-trivial idempotents: they form a set of real dimension $4$. The non-trivial idempotents sit inside the six-real-dimensional zero divisor set of $\mathbb{B}$, the trivial ones outside it. The dimension statements for the roots themselves are in *Biquaternion Roots of Minus One*.
+The trivial roots $\pm i$ map to the trivial idempotents $0$ and $e_0$, which are excluded from the non-trivial idempotents, so there are no isolated points among the non-trivial idempotents: they form a set of real dimension $4$. The non-trivial idempotents sit inside the six-real-dimensional zero divisor set of $\mathbb{B}$, the trivial ones outside it. The dimension statements for the roots themselves are in *Biquaternion Square Roots of Minus One, Zero and Plus One*.
 
 ## Summary
 

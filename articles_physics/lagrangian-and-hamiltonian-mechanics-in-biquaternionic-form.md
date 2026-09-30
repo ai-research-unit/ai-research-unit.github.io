@@ -81,6 +81,24 @@ $$
 
 and the dynamics is $\dot f=\{f,H\}$. The bracket is bilinear, antisymmetric, and satisfies the Jacobi identity; it is a derivation of the commutative algebra of observables under pointwise multiplication.
 
+### The Rayleigh Dissipation Function
+
+Friction has no place in the mechanical Lagrangian. A force proportional to the velocity, such as a Stokes drag, is not the gradient of a potential $V(q,t)$, so it cannot be absorbed into $L=T-V$. The classical device that keeps the equations in Lagrangian form adds it instead as a **generalized force** on the right-hand side,
+
+$$
+\frac{d}{dt}\frac{\partial L}{\partial\dot q_i}-\frac{\partial L}{\partial q_i}=-\frac{\partial F}{\partial\dot q_i},
+$$
+
+with **Rayleigh's dissipation function** $F=\tfrac12b_{ij}\dot q^i\dot q^j$, the quadratic form whose gradient is the viscous force. For a single coordinate and the mechanical Lagrangian this is the damped oscillator $m\ddot q+b\dot q+V'(q)=0$. The energy $E=\sum_i\dot q^i\partial L/\partial\dot q^i-L$ is no longer conserved; it decreases at the rate
+
+$$
+\frac{dE}{dt}=-\sum_i\dot q^i\frac{\partial F}{\partial\dot q^i}=-2F,
+$$
+
+the last equality because $F$ is homogeneous of degree two in the velocities. The dissipation function is therefore half the rate at which the energy falls, and it vanishes only at rest.
+
+What the device does not do is restore the symmetry of the formalism: the force is inserted by hand rather than derived from a Lagrangian, and the energy, the conserved quantity of the autonomous case, becomes a decreasing function. It is the classical face of the dichotomy drawn in the article *Quantum Channels and the Reversible/Irreversible Dichotomy*, where the evolution generated inside the algebra is reversible and the dissipative evolution is not.
+
 ## The Biquaternionic Configuration
 
 ### Coordinates and the Gradient
@@ -390,6 +408,8 @@ The transcription is exact within its domain, and the domain is worth stating pl
 
 **What it does not give.** The algebra is finite dimensional; it cannot carry the configuration space of a system with more than a few degrees of freedom, nor an infinite-dimensional field configuration except through its coefficients. The Poisson bracket is a scalar projection of a quaternion product, and the vector part it discards is not a second bracket. And the canonical Heisenberg sector is absent: there is no pair $\tilde q,\tilde p$ inside $\mathbb{B}$ whose bracket is a central constant, as the companion articles *Similitudes Between the Poisson Bracket and the Quantum Commutator* and *The Harmonic Oscillator in Biquaternionic Form* prove. None of these limitations is a defect of the transcription; they are properties of the algebra, and they mark where the biquaternion language is a convenience and where it is a constraint.
 
+**The field case.** The one direction in which the finite-dimensional transcription is extended rather than limited is the field, and it is the subject of the companion article *Hamiltonian Field Theory in Biquaternionic Form*. There the single conjugate momentum becomes a conjugate momentum field, the Legendre transform acts on a density, the bracket becomes a bracket on functionals with $\{\phi(\mathbf{x}),\pi(\mathbf{y})\}=\delta^3(\mathbf{x}-\mathbf{y})$, the Hamiltonian becomes the integral of a density whose Hermitian-form expression is the energy density, and the conservation law becomes the continuity equation for the energy flux, whose density and flux are the scalar and vector parts of one Hermitian biquaternion. The central scalar field is the case in which the algebra's contribution is the packaging and the sector reading rather than a change of the bracket, and it is the case that the article on canonical quantization takes over unchanged.
+
 ## Summary
 
 The Lagrangian and Hamiltonian formulations of classical mechanics take the following form in the biquaternion algebra.
@@ -447,3 +467,4 @@ The formulation is a transcription, exact for configurations that fit in a real 
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for quaternions, rotors, and their relation to the Lorentz group.
 - Chris Doran and Anthony Lasenby, *Geometric Algebra for Physicists* (Cambridge, 2003), for the geometric-algebra treatment of rotors, rigid bodies, and mechanics.
 - David Hestenes, *New Foundations for Classical Mechanics* (Reidel, 1986), for a treatment of classical mechanics in a real Clifford algebra closely related to the quaternion one.
+- *Hamiltonian Field Theory in Biquaternionic Form* (`articles_physics/hamiltonian-field-theory-in-biquaternionic-form.md`), companion article, for the extension of the Legendre transform, the bracket and the conservation law to a field, where the conjugate momentum is a field and the density and flux are one Hermitian biquaternion.

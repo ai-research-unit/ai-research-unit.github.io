@@ -169,6 +169,18 @@ Each candidate below is examined under the three questions of the Introduction a
 
 **Verdict.** Not a signature, and a second warning: an item whose "signature" traces to an unverified claim is not a signature until the claim is verified, and here verification would still leave the standard result in place.
 
+### Empirical Claims of an External Programme
+
+**The candidate.** A programme outside the framework — the electro-gravimagnetic model of L. A. Alexeyeva, recorded in *The Electro-Gravimagnetic Field and the Magnetic-Charge–Mass Hypothesis* — adopts the framework's A-field and adds a hypothesis: magnetic charge density is gravitational mass density. It then claims three consequences: a solenoidal electric field from rotating mass (the Earth's electric axis), an orbital shift from an "electromass" force, and a comparison with the cogravity term used by Matos and Tajmar for the perihelion of Mercury.
+
+**The framework-specific quantity.** None of the framework's. The claims do not use $\mathbb{M}_+$, the rotor action, or any structure of $\mathbb{B}$ beyond the A-field, which the framework itself reads as the dual field strength and not as an independent object. The distinctive input is the magnetic-charge–mass identification, which the algebra does not force.
+
+**Derived or posited.** Posited, and by an external author, not by the framework. The identification is a hypothesis; the corpus's monopole article admits magnetic charge algebraically and derives the Dirac condition but draws no mass identification from it.
+
+**The existing bound.** A field identified with gravity would be constrained by equivalence-principle and torsion-balance tests. The programme states no coupling strength or range, so nothing is yet bounded, and the later revision of the programme (the conservation law of a single open source is not Lorentz invariant under interaction, repaired by a scalar resistance field) shows that its internal consistency was provisional on the conservation side. The author's 2017 paper proves the charges–currents interaction equations invariant under the Poincaré–Lorentz group and derives the transformation formulae for charge, current, power and force. That result is about the *equations*, not about the closedness condition the 2009 paper found non-invariant, so it does not restore the earlier conservation claim; the corpus records both and states the reconciliation in *The Electro-Gravimagnetic Field and the Magnetic-Charge–Mass Hypothesis*. The paper offers the invariance proof itself as "mathematical justifiability" of the model and its "adequacy" to existing physical ideas about matter, space and time. The corpus's criterion is the reverse — covariance and elegance are not evidence (see *Why Agreement Is Not Confirmation*) — so the argument is recorded as the author's and carries no weight here.
+
+**Verdict.** Not a signature of the framework, and not the framework's claim. It is recorded because it is the most developed physical reading of the dual field strength that the corpus knows of, and because a reader meeting the A-field should see both readings named and separated. The corpus's own verdict on the framework is untouched by it: the claims are qualitative, attributed, and testable in principle but unpredicted in practice.
+
 ### Reproductions That Are Not Signatures
 
 Several results are sometimes presented as if they were successes of the framework, and they are worth separating from signatures explicitly, because each is a reproduction of a standard result.
@@ -239,6 +251,7 @@ The main result is therefore negative, and meant to be: the framework currently 
 - *Gravitational Waves in Biquaternionic Form*, for the explicit statement that no deviation is predicted.
 - *Canonical Quantization of the Biquaternion Maxwell Field*, for what the algebra does and does not supply in quantization.
 - *Chiral Fermions in the Biquaternion Framework*, for the framework's vector-like abelian sector and its absent prediction.
+- *The Electro-Gravimagnetic Field and the Magnetic-Charge–Mass Hypothesis*, for the external programme that reads the A-field as an electro-gravimagnetic field and claims solenoidal-electric, electromass and cogravity effects; recorded there, attributed, and not endorsed here.
 - *Electromagnetism in Media — The Local Complex Structure at Work*, for the local complex structure as a reading of the standard medium parameter $c$.
 - *The Renormalization Group in Biquaternionic Form*, for the explicit statement that the scale and the couplings are inputs the algebra does not fix.
 - *The CPT Theorem in Biquaternionic Form*, for a standard theorem transcribed rather than established.

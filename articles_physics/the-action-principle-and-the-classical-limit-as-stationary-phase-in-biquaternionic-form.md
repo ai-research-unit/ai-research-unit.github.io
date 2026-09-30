@@ -39,7 +39,7 @@ $$
 S=\tfrac12\iint\left(\rho\,u_t^2-\mathcal{T}u_x^2\right)dx\,dt,\qquad c^2=\mathcal{T}/\rho ,
 $$
 
-the first variation is $2\times10^{-10}$ at a solution of the wave equation $u_{tt}=c^2u_{xx}$ and $-1.67$ at a neighbouring non-solution: stationarity selects exactly the field equation.
+the first variation is $2\times10^{-10}$ at a solution of the wave equation $u_{tt}=c^2u_{xx}$ and $-1.67$ at a neighbouring non-solution: stationarity selects exactly the field equation. The Hamiltonian side of the same field action — the conjugate momentum field, the Hamiltonian density as the energy density, the bracket on functionals and the continuity equation for the energy flux — is developed in the companion article *Hamiltonian Field Theory in Biquaternionic Form*, which extends the Legendre transform, the bracket and the conservation law of the preceding article from a finite list of coordinates to a density.
 
 The statement is also independent of the coordinates in which it is written, which is what allows the coordinates to be generalized away altogether. Checked on the free particle in polar coordinates, whose Lagrangian $L=\tfrac12m(\dot r^2+r^2\dot\varphi^2)$ gives $\ddot r=r\dot\varphi^2$ and $r^2\dot\varphi$ constant: the solutions are straight lines, the residual against $x=x_0+vt$ being $3.5\times10^{-14}$ with $r^2\dot\varphi$ conserved to $1.0\times10^{-13}$. Newton's law is recovered from a variational statement, in coordinates in which it is not obvious; the form of the statement, not the coordinates, is what carries the physics.
 

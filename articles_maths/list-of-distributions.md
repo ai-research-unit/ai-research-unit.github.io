@@ -3,7 +3,7 @@
 
 ## Introduction
 
-This article lists the distributions and the generalised functions the corpus introduces. A distribution is a continuous linear functional on a space of test functions, so that the objects of the calculus — differentiation, multiplication, convolution, Fourier transformation — are defined by duality, and a row below names one distribution, records the operations it supports and the sense in which it is a generalised function, and points to the article that introduces it. Every row points to an article; this article introduces nothing and proves nothing. The objects are grouped by the layer that introduces them: the distribution spaces and their duality, the distinguished distributions — the delta, the Heaviside function, the principal value and the finite part — the operations and their limits, the fundamental solutions and kernels, and the distributions of the $p$-adic, complex and hypercomplex grounds. The rows that record an operation which is not defined — the product of two distributions, the restriction without a transversality hypothesis, the Fourier transform of an untempered distribution — stand beside the distributions as non-examples.
+This article lists the distributions and the generalised functions the corpus introduces. A distribution is a continuous linear functional on a space of test functions, so that the objects of the calculus — differentiation, multiplication, convolution, Fourier transformation — are defined by duality, and a row below names one distribution, records the operations it supports and the sense in which it is a generalised function, and points to the article that introduces it. Every row points to an article; this article introduces nothing and proves nothing. The objects are grouped by the layer that introduces them: the distribution spaces and their duality, the distinguished distributions — the delta, the Heaviside function, the principal value and the finite part — the operations and their limits, the fundamental solutions and kernels, the distributions supported on a surface, and the distributions of the $p$-adic, complex and hypercomplex grounds. The rows that record an operation which is not defined — the product of two distributions, the restriction without a transversality hypothesis, the Fourier transform of an untempered distribution — stand beside the distributions as non-examples.
 
 ## The Distribution Spaces
 
@@ -31,6 +31,18 @@ This article lists the distributions and the generalised functions the corpus in
 | the delta distribution of a hypercomplex system | the identity of the convolution algebra of the split-complex, dual-number, quaternion or biquaternion plane | *Split-Complex Harmonic Analysis*; *Dual-Numbers Harmonic Analysis*; *Quaternion Harmonic Analysis*; *Biquaternion Integration* |
 | the delta distribution on a locally compact group | the identity $\delta_e$ of the convolution algebra of measures, together with the Haar measure | *Harmonic Analysis on Groups* |
 
+## Distributions Supported on a Surface
+
+| Object | Its definition, and the operations it supports | Introduced in |
+|---|---|---|
+| the surface delta $\delta_S$ (the single layer of unit density) | $\langle\delta_S,\psi\rangle = \int_S\psi\,dS$; equals $\lvert\nabla\varphi\rvert\,\delta\circ\varphi$ for a defining function $\varphi$ of $S$ | *Distributions on Surfaces, Layers, and Jump Conditions* |
+| the normal layer $n\,\delta_S$ | the gradient of the Heaviside function of a defining function, $\nabla H(\varphi)$ | *Distributions on Surfaces, Layers, and Jump Conditions* |
+| the double layer $\partial_n\delta_S$ | the normal derivative of the surface delta; a layer of order $1$, the density of a normal dipole sheet | *Distributions on Surfaces, Layers, and Jump Conditions* |
+| the layer of order $k$, $\partial_n^{\,k}(g\delta_S)$ | a distribution supported on $S$; every distribution supported on a hypersurface is locally a finite sum of layers | *Distributions on Surfaces, Layers, and Jump Conditions* |
+| the singular part of the divergence, $(n\cdot[A])\,\delta_S$ | the single layer produced by a discontinuous vector field; the surface charge density | *Distributions on Surfaces, Layers, and Jump Conditions* |
+| the singular part of the rotor, $n\times[A]\,\delta_S$ | the tangential single layer produced by a discontinuous vector field; the surface current | *Distributions on Surfaces, Layers, and Jump Conditions* |
+| the jump formula, $\partial_j u = \{\partial_j u\} + [u]n_j\delta_S$ | separates the classical derivative of a piecewise smooth function from the layer its jump creates | *Distributions on Surfaces, Layers, and Jump Conditions* |
+
 ## Operations and Their Limits
 
 | Object | The operation it supports, and the limit of that operation | Introduced in |
@@ -41,7 +53,7 @@ This article lists the distributions and the generalised functions the corpus in
 | convolution with a test function | $u * \varphi$ is a smooth function, a mollification and approximation of $u$ | *Distributions and Fundamental Solutions* |
 | convolution of two distributions | defined when one has compact support; it is commutative only under that hypothesis | *Distributions and Fundamental Solutions* |
 | the Fourier transform of a tempered distribution | $\langle\hat u,\varphi\rangle = \langle u,\hat\varphi\rangle$; exchanges differentiation and multiplication | *Distributions and Fundamental Solutions*; *Fourier Analysis on Euclidean Spaces* |
-| restriction and pullback | defined under a transversality condition on the wave front set; the trace on a boundary needs it | *Distributions and Fundamental Solutions*; *Microlocal Analysis* |
+| restriction and pullback | defined under a transversality condition on the wave front set; the trace on a boundary needs it | *Distributions and Fundamental Solutions*; *Microlocal Analysis*; *Distributions on Surfaces, Layers, and Jump Conditions* |
 | the wave front set $\operatorname{WF}(u)$ | the refined singular support: the directions in which $u$ fails to be smooth; the product and the pullback are governed by it | *Microlocal Analysis* |
 | the order and the singular support | the structure theorem: a distribution of finite order is a sum of derivatives of measures | *Distributions and Fundamental Solutions* |
 

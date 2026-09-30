@@ -204,7 +204,7 @@ in which the two diagonal corners $\mathbb{C}\tilde\Pi$ and $\mathbb{C}(e_0-\til
 
 **Proof.** For $\tilde{Q} = a e_0 + i\mathbf{u}$ with $a \in \mathbb{R}$ and $\mathbf{u}$ real one has $\tilde{Q}^2 = (a^2 + |\mathbf{u}|^2)e_0 + 2ai\mathbf{u}$, whose scalar part $a^2 + |\mathbf{u}|^2$ is non-negative; the equation $\tilde{Q}^2 = -e_0$ has therefore no solution in the subspace.
 
-What the subspace carries is the other equation: the elements $i\hat{\mathbf{u}}$ with $\hat{\mathbf{u}}$ a unit element of $\operatorname{span}_{\mathbb{R}}\{e_1,e_2,e_3\}$ satisfy $(i\hat{\mathbf{u}})^2 = +e_0$ and fill a two-sphere of roots of $+1$. The Hermitian idempotents are built from roots that lie in the quaternion subspace rather than in $\mathbb{M}_+$: a root $\mu \in \mathbb{H}_{\mathbb{B}}$ gives the idempotent $\tfrac12(e_0 + \mu i)$, and the element $2\tilde\Pi - e_0 = \mu i$ is the root of $+1$ of the subspace associated with it. So each Hermitian idempotent is $\tfrac12(e_0 + \eta)$ with $\eta$ a root of $+1$ lying in $\mathbb{M}_+ \cap i\mathbb{H}_{\mathbb{B}}$. The classification is in *Biquaternion Roots of Minus One* and the bijection in *Biquaternion Idempotents and Projections*.
+What the subspace carries is the other equation: the elements $i\hat{\mathbf{u}}$ with $\hat{\mathbf{u}}$ a unit element of $\operatorname{span}_{\mathbb{R}}\{e_1,e_2,e_3\}$ satisfy $(i\hat{\mathbf{u}})^2 = +e_0$ and fill a two-sphere of roots of $+1$. The Hermitian idempotents are built from roots that lie in the quaternion subspace rather than in $\mathbb{M}_+$: a root $\mu \in \mathbb{H}_{\mathbb{B}}$ gives the idempotent $\tfrac12(e_0 + \mu i)$, and the element $2\tilde\Pi - e_0 = \mu i$ is the root of $+1$ of the subspace associated with it. So each Hermitian idempotent is $\tfrac12(e_0 + \eta)$ with $\eta$ a root of $+1$ lying in $\mathbb{M}_+ \cap i\mathbb{H}_{\mathbb{B}}$. The classification is in *Biquaternion Square Roots of Minus One, Zero and Plus One* and the bijection in *Biquaternion Idempotents and Projections*.
 
 ### Zero Divisors
 
@@ -297,7 +297,7 @@ The Hermitian subspace $\mathbb{M}_+$ is the fixed space of Hermitian conjugatio
 - *Biquaternion Ideals and Peirce Decomposition* (`articles_maths/biquaternion-ideals-and-peirce-decomposition.md`), for the primitive idempotents and the minimal left ideals
 - *Biquaternion Relations Between Subspaces* (`articles_maths/biquaternion-relations-between-subspaces.md`), for the intersections, the sums and the coordinate blocks of the six
 - *Biquaternion Involution Lattice* (`articles_maths/biquaternion-involution-lattice.md`), for the four involutions and their fixed spaces
-- *Biquaternion Roots of Minus One* (`articles_maths/biquaternion-roots-of-minus-one.md`), for the classification that leaves the subspace without a root of $-1$
+- *Biquaternion Square Roots of Minus One, Zero and Plus One* (`articles_maths/biquaternion-square-roots-of-minus-one-zero-and-plus-one.md`), for the classification that leaves the subspace without a root of $-1$
 - *Biquaternion Zero Divisors* (`articles_maths/biquaternion-zero-divisors.md`), for the non-pure family, of which the cone of the subspace is the part in $\mathbb{M}_+$
 - *Biquaternion Lie Algebra* (`articles_maths/biquaternion-lie-algebra.md`), for the sectors and the bracket $\mathbb{M}_+ \to \mathbb{M}_-$ in the Lie algebra $\mathrm{G}$
 - *Biquaternion Norm and Invertibility* (`articles_maths/biquaternion-norm-and-invertibility.md`), for the biquaternion norm, its multiplicativity and the invertibility criterion

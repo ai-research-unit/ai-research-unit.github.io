@@ -213,7 +213,7 @@ $$
 
 ## The Roots of Minus One
 
-The non-pure zero divisors are complex multiples of idempotents, and the idempotents are classified by the roots of $-1$. Those roots are classified in *Biquaternion Roots of Minus One*, and the resulting classification of the idempotents is the subject of *Biquaternion Idempotents and Projections*; neither is restated here.
+The non-pure zero divisors are complex multiples of idempotents, and the idempotents are classified by the roots of $-1$. Those roots are classified in *Biquaternion Square Roots of Minus One, Zero and Plus One*, and the resulting classification of the idempotents is the subject of *Biquaternion Idempotents and Projections*; neither is restated here.
 
 ## Distribution of the Zero Divisors
 
@@ -296,7 +296,7 @@ The idempotents that appear here — trivial, Hermitian and general, with their 
 
 Of the six distinguished subspaces of $\mathbb{B}$, $\mathbb{C}_{\mathbb{B}}$, $\mathbb{H}_{\mathbb{B}}$ and $i\mathbb{H}_{\mathbb{B}}$ contain no zero divisors, while $\mathbb{M}_+$ and $\mathbb{M}_-$ contain a three-dimensional double cone of zero divisors and $\mathrm{Vect}(\mathbb{B})$ contains the nilpotent cone, of real dimension $4$. A generic zero divisor lies in none of the six.
 
-The zero divisor set is a complex cone of complex dimension $3$ (real dimension $6$) in $\mathbb{B} \cong \mathbb{C}^4$, with the origin removed. The classification of the roots of $-1$ that underlies the idempotent classification is studied in *Biquaternion Roots of Minus One*, and the idempotent classification in *Biquaternion Idempotents and Projections*.
+The zero divisor set is a complex cone of complex dimension $3$ (real dimension $6$) in $\mathbb{B} \cong \mathbb{C}^4$, with the origin removed. The classification of the roots of $-1$ that underlies the idempotent classification is studied in *Biquaternion Square Roots of Minus One, Zero and Plus One*, and the idempotent classification in *Biquaternion Idempotents and Projections*.
 
 ## Summary of Notation
 

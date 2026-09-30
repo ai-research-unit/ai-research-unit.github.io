@@ -13,7 +13,7 @@ for a suitable third-order operator $A$. The operator $L$ is the Schrödinger op
 
 The consequence is a solution method. Because the spectrum of $L$ is constant, the **scattering data** of $L$ evolve in time by a simple linear law — in the reflectionless case by a pure exponential — and the solution $u$ is recovered from the evolved data by solving a linear integral equation, the Gelfand–Levitan–Marchenko equation. This is the **inverse scattering transform**, and it is for these equations what the Fourier transform is for a linear constant-coefficient equation: a change of variables that linearises the flow. Its most conspicuous output is the soliton, a localised travelling wave that survives collision with other solitons unchanged in shape and speed, not covered here.
 
-The article treats the theory in the following order: Lax pairs and isospectral deformation, with the KdV computation carried out and the zero-curvature form stated; the conservation laws of KdV and the recursion that generates them, together with the bi-Hamiltonian structure that organises them; the inverse scattering transform, in its direct and inverse halves and with the evolution of the scattering data; the soliton solutions obtained from reflectionless data; the finite-gap or algebro-geometric solutions, which are the periodic analogue and are built from Riemann surfaces and theta functions; and the integrability tests, the Painlevé test and the Hirota bilinear method. The boundary with the theory of dynamical systems is fixed as follows: the finite-dimensional reading of integrability — the Liouville–Arnold theorem, invariant tori, action-angle variables and the stability of the flow — belongs to the articles of this Part on smooth dynamical systems and on the geodesic flow, which are written in parallel, and the Hamiltonian and symplectic formulation in finite dimensions belongs to the article of this Part on Lagrangian and Hamiltonian systems. What is treated here is the partial-differential side: the operator pairs, the conservation laws and the transform.
+The article treats the theory in the following order: Lax pairs and isospectral deformation, with the KdV computation carried out and the zero-curvature form stated; the Riccati equation and the logarithmic derivative, which are the classical prototype of the linearisation, together with the lift of the Riccati equation to three dimensions and the generalisation of Euler's theorems; the conservation laws of KdV and the recursion that generates them, together with the bi-Hamiltonian structure that organises them; the inverse scattering transform, in its direct and inverse halves and with the evolution of the scattering data; the soliton solutions obtained from reflectionless data; the finite-gap or algebro-geometric solutions, which are the periodic analogue and are built from Riemann surfaces and theta functions; and the integrability tests, the Painlevé test and the Hirota bilinear method. The boundary with the theory of dynamical systems is fixed as follows: the finite-dimensional reading of integrability — the Liouville–Arnold theorem, invariant tori, action-angle variables and the stability of the flow — belongs to the articles of this Part on smooth dynamical systems and on the geodesic flow, which are written in parallel, and the Hamiltonian and symplectic formulation in finite dimensions belongs to the article of this Part on Lagrangian and Hamiltonian systems. What is treated here is the partial-differential side: the operator pairs, the conservation laws and the transform.
 
 ## Lax Pairs and Isospectral Deformation
 
@@ -77,6 +77,100 @@ V = \begin{pmatrix} C & D\\ E & -C\end{pmatrix},
 $$
 
 the entries of $V$ being polynomials in $k$ determined by the requirement that the zero-curvature equation hold identically in $k$, one obtains, for different choices of the polynomial degree and the reduction of $(q,r)$, the nonlinear Schrödinger equation $iq_t+q_{xx}\pm2|q|^2q=0$, the modified KdV equation, the sine-Gordon equation $u_{xt}=\sin u$ and KdV itself. This is the **AKNS scheme**, and it exhibits the integrable equations as the reductions of a single linear problem rather than as a list.
+
+## The Riccati Equation and the Quaternionic Lift
+
+The linearisation performed by a Lax pair has a classical prototype, older than the theory and independent of it. The **Riccati equation** in canonical form is
+
+$$
+y' + y^2 = -v(x),
+$$
+
+the equation whose special case Count Riccati studied in 1724, and it is tied to the Schrödinger operator of the Lax pair by a single substitution. With $y = \phi'/\phi$ the first-order nonlinear equation becomes the second-order linear equation $-\phi'' - v\phi = 0$, and conversely; the operator factorises as
+
+$$
+-\partial_x^2 - v = -(\partial_x + y)(\partial_x - y)
+$$
+
+exactly when $y$ solves the Riccati equation. The substitution is the **logarithmic derivative**, and it is the ancestor of the transformations — Miura's, Bäcklund's, the reductions of the AKNS scheme — by which a nonlinear equation of this subject is brought to a linear one. Its most conspicuous application outside the subject is the reduction of Burgers' equation to the heat equation.
+
+### Euler's Theorems and the Count of Particular Solutions
+
+Two theorems of Euler, dating from 1760, give the conditions under which the Riccati equation can be integrated in closed form.
+
+**Theorem (Euler's first theorem).** Given one particular solution $y_0$, the substitution $y = y_0 + z$ reduces the equation to a Bernoulli equation, and the further substitution $z = 1/u$ reduces that to a first-order linear equation; the general solution therefore follows in two quadratures.
+
+**Theorem (Euler's second theorem).** Given two particular solutions $y_0, y_1$, the general solution is
+
+$$
+y = \frac{k\,y_0\exp\int(y_0-y_1)\,dx - y_1}{k\exp\int(y_0-y_1)\,dx - 1},
+$$
+
+with $k$ a constant, so that the general solution follows in one quadrature.
+
+*Proof.* Both are quoted as standard. The first is the two-step reduction to a linear equation. For the second, substituting the displayed expression into the equation and using that $y_0$ and $y_1$ are solutions leaves the single condition $w'/w = y_0 - y_1$ on the scalar $w = k\exp\int(y_0-y_1)\,dx$, which is the quadrature.
+
+**Remark (Picard and Weyr).** Two further classical properties sharpen the count. Given a third particular solution, the general solution is an explicit algebraic combination of the three, with no quadrature at all; given a fourth, the cross-ratio $(y_1-y_2)(y_3-y_4)/(y_1-y_4)(y_3-y_2)$ is constant. The classical theory is in this sense a **count of known solutions** — two for quadratures, three for algebra, four for a constant — and the count, rather than the equation, is what the modern criterion measures when it counts conservation laws.
+
+### The Lift to Three Dimensions
+
+The Riccati equation lifts from the line to three dimensions, and the lift is a partial differential equation rather than a formal substitution with quaternionic coefficients. The construction is that of V. Kravchenko, V. V. Kravchenko and B. Williams (2001). Let $\Omega\subseteq\mathbb{R}^3$ and let
+
+$$
+D_3 = e_1\partial_1 + e_2\partial_2 + e_3\partial_3
+$$
+
+be the three-dimensional Cauchy–Riemann operator, or **Moisil–Theodoresco operator**, of *Quaternion Regular Functions*, where its relation to the four-dimensional operator of that article is stated. On a quaternion-valued $g$ it acts as $D_3g = -\operatorname{div}\mathbf{g}+\operatorname{grad}g_0+\operatorname{rot}\mathbf{g}$; on a scalar it is the gradient, $D_3\phi = \operatorname{grad}\phi$; and its square is the negative Laplacian, $D_3^2 = -\Delta$, the cross terms cancelling because $\partial_j\partial_k$ is symmetric while $e_je_k$ is antisymmetric for $j\neq k$. The **logarithmic derivative** of Marchenko is the vector-valued function
+
+$$
+\check\partial\phi = \phi^{-1}D_3\phi,
+$$
+
+and it is logarithmic in the sense that $\check\partial(\phi_1\phi_2) = \check\partial\phi_1+\check\partial\phi_2$ for non-vanishing scalars, which is the Leibniz rule $D_3(\phi g) = D_3(\phi)g+\phi D_3g$ applied to a scalar left factor.
+
+**Proposition (the Riccati PDE).** A scalar $\phi$ that does not vanish on $\Omega$ solves the three-dimensional Schrödinger equation $\Delta\phi+v\phi = 0$ if and only if $\mathbf{f} = \check\partial\phi$ solves
+
+$$
+D_3\mathbf{f} + \mathbf{f}^2 = v .
+$$
+
+*Proof.* Write $\mathbf{f} = \phi^{-1}\nabla\phi$. Its curl vanishes, $\operatorname{rot}\mathbf{f} = \nabla(\phi^{-1})\times\nabla\phi = 0$, so $D_3\mathbf{f} = -\operatorname{div}\mathbf{f} = -\phi^{-1}\Delta\phi+\phi^{-2}\langle\nabla\phi,\nabla\phi\rangle$, while $\mathbf{f}^2 = -|\mathbf{f}|^2 = -\phi^{-2}\langle\nabla\phi,\nabla\phi\rangle$. The last terms cancel and $D_3\mathbf{f}+\mathbf{f}^2 = -\phi^{-1}\Delta\phi$, which equals $v$ exactly when $\Delta\phi+v\phi = 0$.
+
+**Remark (component form and the one-dimensional case).** Since the vector part of $D_3\mathbf{f}$ is the curl, the Riccati PDE is the pair $\operatorname{rot}\mathbf{f} = 0$ and $-\operatorname{div}\mathbf{f}+\mathbf{f}^2 = v$. On a simply connected domain the first gives $\mathbf{f} = \operatorname{grad}\phi$, and the second becomes the scalar equation
+
+$$
+\Delta\phi + \langle\nabla\phi,\nabla\phi\rangle = -v .
+$$
+
+For $\mathbf{f} = f_k(x_k)e_k$ the equation reduces to $\partial_kf_k+f_k^2 = -v$, which is the classical Riccati equation: the equation of the line is a solution class of the equation of $\mathbb{R}^3$, not merely a limiting case of it.
+
+**Remark (the factorisation, and its hypothesis).** The Schrödinger operator factorises as the logarithmic derivative linearises it. With $M_{\mathbf{f}}$ the operator of right multiplication by $\mathbf{f}$, one has $-\Delta-vI = (D_3+M_{\mathbf{f}})(D_3-M_{\mathbf{f}})$ if and only if $\mathbf{f}$ solves the Riccati PDE. The identity holds on a scalar right factor, and the restriction is not cosmetic: it is exactly the hypothesis of the Leibniz rule above. On a general quaternion-valued argument the product differs from $-\Delta-v$ by $\sum_ke_k[\psi,\partial_k\mathbf{f}]$, which vanishes for scalar $\psi$ and for constant $\mathbf{f}$ and not otherwise.
+
+### Euler's Theorems in Three Dimensions
+
+Both classical theorems lift, with the quadrature replaced by the transport equation.
+
+**Proposition (the first theorem, lifted).** Let $\mathbf{h} = \operatorname{grad}\xi$ be a particular solution of the Riccati PDE. Then $\mathbf{f} = \mathbf{g}+\mathbf{h}$ is also a solution, where $\mathbf{g} = \check\partial\Psi$ and the scalar $\Psi$ solves
+
+$$
+\Delta\Psi + 2\langle\nabla\xi,\nabla\Psi\rangle = 0,
+$$
+
+equivalently $\operatorname{div}(e^{2\xi}\nabla\Psi) = 0$. The first form is the **transport equation** of the ray method, which appears paired with the eikonal equation in the short-wavelength approximation of the wave equation; the second is the equation of electrostatics with $e^{2\xi}$ as the dielectric permeability, and the continuity equation of a steady flow with $e^{2\xi}$ as the density. The classical first theorem is the case $\mathbf{h} = 0$.
+
+**Proposition (the second theorem, lifted).** Let $\mathbf{h}_1 = \operatorname{grad}\xi_1$ and $\mathbf{h}_2 = \operatorname{grad}\xi_2$ be two particular solutions. Then
+
+$$
+\mathbf{f} = \nabla\phi = \frac{\mathbf{h}_1w-\mathbf{h}_2}{w-1}, \qquad w = Ae^{\xi_1-\xi_2},
+$$
+
+with $A$ a complex constant, solves the Riccati PDE.
+
+**Example (the lifted theorems give a class, not the general solution).** For $v = -1$ the constants $\mathbf{h}_1 = e_1 = \operatorname{grad}x_1$ and $\mathbf{h}_2 = e_2 = \operatorname{grad}x_2$ are particular solutions, and the second theorem gives the one-parameter family $\mathbf{f} = (Ae^{x_1-x_2}e_1-e_2)/(Ae^{x_1-x_2}-1)$. The third solution $\mathbf{h}_3 = e_3$ belongs to no member of that family. The classical count of particular solutions therefore does not survive the lift unchanged: two particular solutions give a larger class and not the general solution.
+
+### What the Lift Is Not
+
+**Remark (not an integrable system in the sense above).** The Riccati PDE is not integrable in the Lax sense of the first sections of this article. It has no Lax pair, no isospectral deformation and no infinite hierarchy of conservation laws; its linearisation is the single substitution of the logarithmic derivative, and the general solution is not reached from finitely many particular solutions. What the lift supplies is the **case analysis** — which particular solutions determine which class — and that is the classical counterpart of the integrability tests of the last section.
 
 ## Conservation Laws and the Hamiltonian Hierarchy
 
@@ -238,6 +332,8 @@ An integrable system is a nonlinear evolution equation that is equivalent to the
 
 KdV has infinitely many conservation laws, generated by the Lenard recursion with recursion operator $R=-\partial_x^2+4u+2u_x\partial_x^{-1}$, whose first members are $u$, $u^2$ and $u^3+\frac12u_x^2$; the density $u^3+\frac12u_x^2$ is the energy, and the equation is bi-Hamiltonian with respect to the compatible structures $\partial_x$ and $-\partial_x^3+4u\partial_x+2u_x$, which is what produces the infinite family by the Magri theorem. The inverse scattering transform computes the scattering data of $L$ — reflection and transmission coefficients, bound states and norming constants — of which the transmission coefficient and the eigenvalues are time-independent while the reflection data evolve by $e^{8ik^3t}$; the potential is recovered by the Gelfand–Levitan–Marchenko equation and the formula $u=-2\partial_xK(x,x)$. Reflectionless data give the reflectionless potentials, among them the one-soliton $u=-2\kappa^2\operatorname{sech}^2(\kappa(x-4\kappa^2t-x_0))$ and the $N$-soliton determinant formula; the collision of solitons is elastic with a phase shift. The periodic analogue is the finite-gap solution, built from a hyperelliptic Riemann surface and a Riemann theta function by the Its–Matveev formula, and the integrability tests are the Painlevé test and the Hirota bilinear form, in which KdV becomes $D_x(D_t+D_x^3)\tau\cdot\tau=0$.
 
+The classical prototype of this linearisation is the Riccati equation $y'+y^2=-v$, whose logarithmic derivative $y=\phi'/\phi$ carries it into the Schrödinger equation $-\phi''-v\phi=0$ and factorises the operator, $-\partial_x^2-v=-(\partial_x+y)(\partial_x-y)$. Euler's two theorems of 1760 make the equation's solvability a count of known particular solutions: one solution gives the general solution in two quadratures, two solutions in one, three algebraically, and four give a constant cross-ratio. The equation lifts to three dimensions as the Riccati PDE $D_3\mathbf{f}+\mathbf{f}^2=v$, with $D_3=e_1\partial_1+e_2\partial_2+e_3\partial_3$ and $\mathbf{f}=\check\partial\phi=\phi^{-1}D_3\phi$; it is equivalent to the Schrödinger equation $\Delta\phi+v\phi=0$ and, in components, to the curl-free condition $\operatorname{rot}\mathbf{f}=0$ together with $\Delta\phi+\langle\nabla\phi,\nabla\phi\rangle=-v$. Both lifted Euler theorems hold, with the transport equation $\operatorname{div}(e^{2\xi}\nabla\Psi)=0$ in place of the quadrature, and they produce a larger class of solutions rather than the general solution. The lift is not an integrable system in the Lax sense of this article: it has no isospectral deformation and no conservation hierarchy.
+
 ## Summary of Notation
 
 | Symbol | Meaning |
@@ -258,6 +354,10 @@ KdV has infinitely many conservation laws, generated by the Lenard recursion wit
 | $\Theta$, $\lambda_j$ | Riemann theta function and band edges; $g$ the genus |
 | $D_x,D_t$, $\tau$ | Hirota bilinear derivatives and the tau function |
 | AKNS | The matrix scheme generating the integrable hierarchy |
+| $v$, $y$ | Potential and field of the Riccati equation $y'+y^2=-v$ |
+| $y_0,y_1$ | Particular solutions of the Riccati equation; $k$ the Euler constant |
+| $D_3$, $\check\partial\phi$ | Three-dimensional Cauchy–Riemann operator and the logarithmic derivative |
+| $\mathbf{f}$, $\xi$, $\Psi$ | Riccati-PDE field, the particular solution $\operatorname{grad}\xi$, the transport function |
 
 
 
@@ -273,3 +373,5 @@ KdV has infinitely many conservation laws, generated by the Lenard recursion wit
 - Alexander R. Its and Victor B. Matveev, "Schrödinger Operators with Finite-Gap Spectrum and N-Soliton Solutions of the Korteweg–de Vries Equation", *Theoretical and Mathematical Physics* 23 (1975), for the Its–Matveev formula.
 - John Weiss, Morris Tabor and George Carnevale, "The Painlevé Property for Partial Differential Equations", *Journal of Mathematical Physics* 24 (1983), for the Painlevé test.
 - Ryogo Hirota, *The Direct Method in Soliton Theory* (Cambridge University Press, 2004), for the bilinear method and the tau function.
+- William T. Reid, *Riccati Differential Equations* (Academic Press, 1972), for the classical theory, Euler's theorems and the Picard–Weyr properties.
+- Viktor Kravchenko, Vladislav V. Kravchenko and Benjamin Williams, "A quaternionic generalisation of the Riccati differential equation" (arXiv:math-ph/0101010, 2001), for the Riccati PDE, the lifted Euler theorems and the factorisation of the three-dimensional Schrödinger operator.

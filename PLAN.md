@@ -1,6 +1,6 @@
 
 ################################
-### A) GENERAL RULES FOR THE PLANNER
+### GENERAL RULES FOR THE PLANNER
 ################################
 
 **CHECK THE PERSISTENT MEMORY FILE BEFORE EACH MESSAGE** /home/hp/.openhands/memory/MEMORY.md
@@ -21,7 +21,7 @@ Do not create AGENTS.md, the articles should be sable to defend themselves witho
 The author can instruct you to bypass some plan rules occasionally. His instructions are a priority compared to the plan rules.
 
 
-Verify by recomputation. Every claim is recomputed before it is edited or asserted.
+Verify by recomputation ON A MAXIMUM ON 100 elements. Every claim is recomputed on a maximum of 100 elements before it is edited or asserted.
 
 Never sleep, never time out, never wait, never poll. No agent runs `sleep`, `watch`, `tail -f`, `timeout`, a background job it then waits on, a retry loop, or any command whose purpose is to let time pass or to bound how long it is allowed to take.
 
@@ -34,7 +34,7 @@ The menus of the articles are maths.md for maths articles and physics.md for phy
 The folders containing the articles are articles_maths for maths articles and articles_physics for physics articles.
 
 ################################
-### B) RULES DURING THE CHATTING PHASE
+### RULES DURING THE CHATTING PHASE
 ################################
 
 
@@ -56,34 +56,7 @@ Avoid verbiage, jargon, over-engineering, complacency.
 
 
 ################################
-### C) RULES DURING THE READING PHASE
-################################
-
-The agent reads the paper, usually located in a folder called "material".
-
-The agent summarizes it and creates a companion file .summary for each of them. For example, Alexeyeva - 0703034v1.pdf would have a companion file named Alexeyeva - 0703034v1.summary .
-
-Then the agent reads the articles from the folder articles that are likely to cover the same subjects as the summary.
-
-The agent checks the summary for ideas that are missing in the already written articles, and which are interesting and would deserve to be included.
-
-He writes a new companion file : .analyse and writes the interesting missing ideas in the file.
-
-When there are no missing ideas, don't leave the .analyse blank, write one line saying why.
-
-The agent then dispatches the interesting missing ideas of the .analyse file in the companion file .suggestions of each article for the articles folder, with the reference of the original paper.
-
-For example, the article witt-theory.md would have a companion article witt-theory.suggestions in case some interesting ideas have been found in one of the papers.
-
-The agent does it by hand : the missing ideas as written in the analyse, then a Source: line with the paper reference and the .analyse filename. He ensures homogeneity with the already written suggestions based on other articles.
-
-During this phase, the agent does not modify any other file than the companion files of each paper : .summary and .analyse, and than the companion file of the articles .suggestions .
-
-This task requires judgment, rigor, intuition.
-
-
-################################
-### D) RULES DURING THE WRITING PHASE
+### RULES DURING THE WRITING PHASE
 ################################
 
 The agent reads the subject of the article to write.
@@ -113,36 +86,8 @@ During this phase, the agent does not modify any other file than the article, it
 This requires judgment and organization.
 
 
-
 ################################
-### E) RULES DURING THE ENRICHMENT PHASE
-################################
-
-
-The agent reads the article and the companion .suggestions file.
-
-He searches in the menus (maths.md for maths articles and physics.md for physics articles), the interesting related articles to provide him some context and notational conventions.
-
-For example, for a physics article, among the articles to read, they are always 3 foundational articles, Introduction to the Biquaternion Universe, The Anti-Hermitian Subspace M- as the Material Sector, The Hermitian Subspace M+ as the Informational Sector.
-
-The agent suggests some modifications about the article, based on the suggestions contained in the .suggestions file.
-
-If modifications are approved by the author, he writes a part in the article.
-
-The agent respects the format of the article.
-
-He appends his ideas, suggestions, interesting observations, decisions and reasons, speculations, verified facts, ownership/boundary rules, standing weaknesses to the companion file .context, created next to the article .md file.
-
-Once the changes are implemented in the article, he removes the implemented suggestions from the .suggestions file.
-
-During this phase, the agent does not modify any other file than the article and the companion files .context and .suggestions of the article.
-
-This requires judgement and organization.
-
-
-
-################################
-### F) RULES DURING THE REVIEWING PHASE
+### RULES DURING THE REVIEWING PHASE
 ################################
 
 
@@ -168,7 +113,7 @@ This requires rigor, carefulness, and suspicion to check assertions.
 
 
 ################################
-### G) RULES DURING THE RESEARCH PHASE
+### RULES DURING THE RESEARCH PHASE
 ################################
 
 
@@ -192,7 +137,7 @@ This requires judgment and creativity.
 
 
 ################################
-### H) RULES DURING THE INNOVATION PHASE
+### RULES DURING THE INNOVATION PHASE
 ################################
 
 
@@ -219,7 +164,7 @@ This requires judgement and organization.
 
 
 ################################
-### I) RULES DURING THE CLEANING PHASE
+### RULES DURING THE CLEANING PHASE
 ################################
 
 
@@ -233,7 +178,7 @@ This requires judgment and focus.
 
 
 ################################
-### J) RULES WHEN MANAGING SUB AGENTS 
+### RULES WHEN MANAGING SUB AGENTS 
 ################################
 
 **DO NOT LAUNCH SUB AGENTS WITHOUT APPROVAL**

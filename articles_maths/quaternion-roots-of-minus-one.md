@@ -131,7 +131,7 @@ The derivation is in *Split-Quaternion Roots of Minus One*, where the split quat
 | $\mathbb{H}_{\mathrm{s}}$ | the level set $x_1^2-x_2^2-x_3^2 = 1$ (in $x_0 = 0$) | the level set $x_2^2+x_3^2-x_1^2 = 1$ (in $x_0 = 0$), together with $\pm1$ |
 | $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | a two-dimensional family together with further complex sheets | the roots $\xi i$ obtained from those of $-1$, including $\pm\mu i$ for a pure unit $\mu$ |
 
-The biquaternion root set is computed in *Biquaternion Roots of Minus One*; it contains the pure roots but also roots with complex coordinates, from which the non-trivial idempotents $\tfrac{1}{2}(1+\xi i)$ are built. The presence of those extra roots is the failure of division: in a division algebra the factorisation argument of the roots-of-$+1$ theorem is available and the root set is small, while in $\mathbb{H}_{\mathrm{s}}$ and in $\mathbb{B}$ the same factorisation fails.
+The biquaternion root set is computed in *Biquaternion Square Roots of Minus One, Zero and Plus One*; it contains the pure roots but also roots with complex coordinates, from which the non-trivial idempotents $\tfrac{1}{2}(1+\xi i)$ are built. The presence of those extra roots is the failure of division: in a division algebra the factorisation argument of the roots-of-$+1$ theorem is available and the root set is small, while in $\mathbb{H}_{\mathrm{s}}$ and in $\mathbb{B}$ the same factorisation fails.
 
 ## Summary
 

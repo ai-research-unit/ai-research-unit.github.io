@@ -437,13 +437,39 @@ $$
 
 the light daughter carrying the larger share. The conservation law $\tilde{P}_A = \tilde{P}_1+\tilde{P}_2$ likewise reduces to the separate Galilean conservation of mass plus kinetic energy, and of three-momentum. Every Newtonian two-body result is recovered.
 
+## The Breit Equation: The First Relativistic Two-Body Dynamics
+
+Everything above is kinematic. The first systematic dynamics of two interacting relativistic spin-$\tfrac12$ particles is the **Breit equation** (Breit 1929), also called the **Dirac–Coulomb–Breit equation**. For $N$ particles it reads
+
+$$
+i\hbar\frac{\partial\Psi}{\partial t} = \left(\sum_i \hat H_{\mathrm D}(i) + \sum_{i>j}\frac{q_iq_j}{r_{ij}} + \sum_{i>j}\hat B_{ij}\right)\Psi ,
+$$
+
+where $\hat H_{\mathrm D}(i)$ is the one-particle Dirac Hamiltonian of particle $i$, the Coulomb term is instantaneous, and the **Breit operator**
+
+$$
+\hat B_{ij} = -\frac{1}{2r_{ij}}\left[\boldsymbol\alpha(i)\cdot\boldsymbol\alpha(j) + \frac{\left(\boldsymbol\alpha(i)\cdot\mathbf r_{ij}\right)\left(\boldsymbol\alpha(j)\cdot\mathbf r_{ij}\right)}{r_{ij}^2}\right]
+$$
+
+adds the magnetic and retardation corrections of order $1/c^2$. The wave function $\Psi$ is a $4^N$-component spinor, the tensor product of $N$ Dirac spinors.
+
+The one-particle Dirac Hamiltonians together with the instantaneous Coulomb term form the **Dirac–Coulomb** operator; adding $\hat B$ gives the **Dirac–Coulomb–Breit** Hamiltonian $H_{\mathrm{DCB}}$. In the non-relativistic reduction it becomes the **Breit–Pauli** Hamiltonian, a sum of terms with distinct physical meanings: the non-relativistic kinetic term and potential $H_0$; the relativistic kinetic correction $H_1=-\frac{1}{8c^2}\sum_i\hat p_i^4/m_i^3$; the orbit–orbit magnetic-dipole term $H_2$; the spin–orbit term $H_3$; the Darwin term $H_4$; the spin–spin term $H_5$, with a contact part proportional to $\delta(\mathbf r_{ij})$ (the Fermi contact interaction) and a dipole–dipole part; and the external-field coupling $H_6$. These are the terms by which the Breit Hamiltonian reproduces fine structure, the Darwin term and the spin–spin splitting of positronium.
+
+Three properties matter for the framework.
+
+- **It is the dynamical counterpart of the kinematics above.** The Breit equation is exactly the "relativistic dynamical reduction" left open in the previous section: it comes from an *instantaneous* (equal-time) synchronisation of the two worldlines, the Darwin-Lagrangian picture, and for that reason it is not fully Lorentz invariant. The kinematic reduction of this article is independent of any synchronisation; the Breit equation is the standard choice of one.
+- **Its interaction is a pair coupling between material-sector objects.** The Coulomb term is the static limit of the electromagnetic coupling, and the Breit operator is the magnetic and retardation part of the same coupling; both enter through the four-potential coupling of each particle's material-sector four-momentum, the construction of the companion article *The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism*.
+- **Its correction terms involve spin, which is the framework's Hermitian sector.** The Breit–Pauli terms $H_3$ and $H_5$ are cross terms between spin and orbital magnetic moments; expressing such cross terms between $\mathbb M_+$ and $\mathbb M_-$ is a task the framework has not yet performed, and the previous section's open question about the role of the Hermitian sector is its natural home.
+
+The Breit equation is an approximation in both senses at once: quantum-mechanically it is first order in perturbation theory and excludes pair creation, and relativistically it is not fully Lorentz invariant. It is superseded in principle by the covariant **Bethe–Salpeter equation**, which resums the interaction. In the language of this article the Breit equation sits between the free kinematics above and a future covariant interacting two-body dynamics.
+
 ## Open Questions
 
 1. **Many-body systems.** The total four-momentum of $n$ bodies is again in $\mathbb{M}_-$, and the biquaternion-norm construction defines an $n$-body invariant mass. Whether the COM reduction extends usefully beyond $n=2$ is not developed here.
 
 2. **Massless constituents and null totals.** If the total four-momentum is null — massless constituents, or collinear momenta — no COM frame exists in the sense used here and $\tilde{\Lambda}_{\rm CM}$ is undefined; such degenerate pairs (for instance two collinear photons) need separate treatment.
 
-3. **The relativistic dynamical reduction.** The reduction of two interacting relativistic bodies to a single one-body equation depends on the synchronisation convention and quasipotential, and different choices are inequivalent. This article deliberately does not select a convention.
+3. **The relativistic dynamical reduction.** The reduction of two interacting relativistic bodies to a single one-body equation depends on the synchronisation convention and quasipotential, and different choices are inequivalent. The Breit equation of the preceding section is the standard choice, with instantaneous synchronisation; this article deliberately does not select a convention, and the framework-level version of the Breit coupling is not worked out.
 
 4. **The role of the informational sector.** The account above uses only $\mathbb{M}_-$ and the rotor conjugation. What role the Hermitian sector $\mathbb{M}_+$ plays for a two-body system — for instance through constituent spin — is open.
 
@@ -458,6 +484,8 @@ The relativistic two-body problem in the biquaternion framework is expressed ent
 The centre-of-momentum frame is reached by the boost biquaternion $\tilde{\Lambda}_{\rm CM} = \sqrt{-i\bar{\tilde{P}}/(Mc)}$, which rotates the total four-momentum to $iMc\,e_0$; in that frame the pair has back-to-back momenta and energies $E_1^*$ and $E_2^*$ fixed by the masses. The relative motion is characterised by the relative rapidity $\psi_{\rm rel}$, defined by $\cosh\psi_{\rm rel} = -\langle\tilde{u}_1,\tilde{u}_2\rangle$; the invariant mass satisfies $M^2c^4 = m_1^2c^4+m_2^2c^4+2m_1m_2c^4\cosh\psi_{\rm rel}$. The kinematic reduction to an effective one-body problem is the exact dispersion relation $Mc^2 = \sqrt{m_1^2c^4+p^{*2}c^2}+\sqrt{m_2^2c^4+p^{*2}c^2}$, whose non-relativistic limit is the reduced-mass kinetic energy.
 
 A two-body decay is the special case in which the total four-momentum is $\tilde{P}_A = iMc\,e_0$; the general results then give the daughter energies, the common momentum magnitude $p^*$, the threshold condition $M \ge m_1+m_2$, and the boost to the laboratory frame. The non-relativistic limit reproduces the Newtonian centre-of-mass motion, the reduced mass, and the partition of the released energy, confirming that the framework reduces correctly to the established theory.
+
+The dynamics of two *interacting* spin-$\tfrac12$ particles begins with the Breit equation, whose Dirac–Coulomb–Breit Hamiltonian adds to the two one-particle Dirac Hamiltonians and the instantaneous Coulomb term a magnetic and retardation operator $\hat B_{ij}$ of order $1/c^2$. Its non-relativistic reduction is the Breit–Pauli Hamiltonian of relativistic kinetic, orbit–orbit, spin–orbit, Darwin and spin–spin terms, and its instantaneous synchronisation of the two worldlines is the standard choice of the convention this article leaves open.
 
 ## Summary of Notation
 
@@ -481,6 +509,10 @@ A two-body decay is the special case in which the total four-momentum is $\tilde
 | $p^*$ | Common momentum magnitude, $\mathbf{p}_1^* = -\mathbf{p}_2^* = \mathbf{p}^*$ |
 | $\mu = m_1m_2/(m_1+m_2)$ | Non-relativistic reduced mass |
 | $Q = (M-m_1-m_2)c^2$ | Released energy of a two-body decay |
+| $\hat H_{\mathrm D}(i)$ | One-particle Dirac Hamiltonian of particle $i$ |
+| $\hat B_{ij}$ | Breit operator: magnetic and retardation corrections, order $1/c^2$ |
+| $H_{\mathrm{DCB}}$ | Dirac–Coulomb–Breit Hamiltonian |
+| $H_0,\dots,H_6$ | Breit–Pauli terms: kinetic, relativistic, orbit–orbit, spin–orbit, Darwin, spin–spin, external |
 
 ## Further Reading
 
@@ -491,3 +523,7 @@ A two-body decay is the special case in which the total four-momentum is $\tilde
 - Chris Doran and Anthony Lasenby, *Geometric Algebra for Physicists* (Cambridge, 2003), for the geometric algebra treatment of relativistic rotors and multiparticle kinematics.
 - David Hestenes, *Space-Time Algebra* (Gordon and Breach, 1966), for the original spacetime-algebra formulation of relativistic mechanics.
 - P. A. M. Dirac, "Forms of relativistic dynamics," *Reviews of Modern Physics* **21** (1949) 392–399, for the problem of defining a relativistic dynamics of several interacting bodies.
+- G. Breit, "The effect of retardation on the interaction of two electrons," *Physical Review* **34** (1929) 553–573, and "Dirac's equation and the spin-spin interactions of two electrons," *Physical Review* **39** (1932) 616–624, for the Breit equation and the Breit operator.
+- H. A. Bethe and E. E. Salpeter, *Quantum Mechanics of One- and Two-Electron Atoms* (Plenum, 1977), for the Breit–Pauli Hamiltonian and its term-by-term decomposition.
+- E. E. Salpeter and H. A. Bethe, "A relativistic equation for bound-state problems," *Physical Review* **84** (1951) 1232–1242, for the covariant two-body equation that supersedes the Breit equation.
+- J. Mourad and H. Sazdjian, "How to obtain a covariant Breit-type equation from relativistic constraint theory," *Journal of Physics G* **21** (1995) 267–279, for the synchronisation-convention reading of the Breit equation.

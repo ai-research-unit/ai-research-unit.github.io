@@ -11,7 +11,9 @@ $$
 
 and its central result is that a minimiser of $J$, if it is smooth enough to be differentiated, satisfies the **Euler–Lagrange equation** $\frac{d}{dx}L_{u'} = L_u$, a differential equation of the second order. The subject is therefore a bridge: it converts a problem of minimising an integral into a problem of solving a differential equation, and conversely it explains the differential equations of mechanics and geometry as the stationarity conditions of an energy. Its three classical problems — the brachistochrone, the geodesic and the isoperimetric problem — are the historical source of the theory, and its modern form is the **direct method**, in which the existence of a minimiser is proved without solving the Euler–Lagrange equation, by a compactness argument in a Sobolev space.
 
-The article develops the theory in the following order. After fixing the notion of the first variation, it derives the Euler–Lagrange equation together with the natural boundary conditions, records the two classical reductions of the equation to a first integral, and works the geodesic and brachistochrone examples. It then states the second variation and the Legendre condition, which distinguish a minimum from a general stationary point, and proves the direct method of the calculus of variations: a coercive, sequentially weakly lower semicontinuous functional on a reflexive Sobolev space attains its minimum, and convexity of the integrand in the gradient supplies the lower semicontinuity. The Euler–Lagrange equation of a minimiser is then a weak solution of an elliptic equation, and the regularity theory of the preceding article applies to it. Variational problems with constraints are treated by the Lagrange multiplier rule, with the isoperimetric problem as the example, and the article closes with the Hamiltonian reformulation, the connection with conservation laws, and the second variation in its geometric form, where the minimising property of a geodesic is decided by the index of a Jacobi field.
+The equation was found in the 1750s, in the study of the tautochrone problem — the curve along which a weighted particle falls to a fixed point in a fixed time, independently of the starting point. Lagrange solved the problem in 1755 and sent the solution to Euler, the two developed the method and applied it to mechanics, and Euler coined the name *calculus of variations* in 1766.
+
+The article develops the theory in the following order. After fixing the notion of the first variation, it derives the Euler–Lagrange equation together with the natural boundary conditions, records the two classical reductions of the equation to a first integral, and works the geodesic and brachistochrone examples. It then collects the forms the equation takes beyond the scalar case of a single variable: the functional derivative, of which the bracket of the derivation is the density; the higher-derivative equation of Euler and Poisson; the system of equations for several unknown functions; the partial-differential equation for several variables, which turns the functional into a field theory; and the multi-index equation for several functions of several variables with higher derivatives. It then states the second variation and the Legendre condition, which distinguish a minimum from a general stationary point, and proves the direct method of the calculus of variations: a coercive, sequentially weakly lower semicontinuous functional on a reflexive Sobolev space attains its minimum, and convexity of the integrand in the gradient supplies the lower semicontinuity. The Euler–Lagrange equation of a minimiser is then a weak solution of an elliptic equation, and the regularity theory of the preceding article applies to it. Variational problems with constraints are treated by the Lagrange multiplier rule, with the isoperimetric problem as the example, and the article closes with the Hamiltonian reformulation, the connection with conservation laws, and the second variation in its geometric form, where the minimising property of a geodesic is decided by the index of a Jacobi field.
 
 The setting is that of the Sobolev spaces $W^{1,p}$ and of the weak solutions of the preceding article, whose embedding, compactness and regularity theorems are used throughout. The classical differential equations of the first articles of this Part appear as the Euler–Lagrange equations of the models. The connection between a holonomic constraint and a differential-algebraic equation is the one established in the article of this category on differential-algebraic equations, and the Hamiltonian reformulation developed in full belongs to the article of this Part on Lagrangian and Hamiltonian systems.
 
@@ -47,6 +49,12 @@ where $L_u$ and $L_p$ denote the partial derivatives of $L$ with respect to its 
 
 ### Derivation of the Equation
 
+**Theorem (the fundamental lemma of the calculus of variations).** Let $g$ be continuous on the bounded domain $\Omega$ and suppose that $\int_\Omega g\,v\,dx = 0$ for every $v\in C_c^\infty(\Omega)$. Then $g\equiv0$ on $\Omega$.
+
+*Proof.* Suppose $g(x_0)\ne0$ at some point. By continuity $g$ has a fixed sign on a ball $B\subset\Omega$ about $x_0$. Choose $v\in C_c^\infty(\Omega)$ with $v\ge0$, supported in $B$ and positive at $x_0$, for instance a smooth bump; then $gv$ has a fixed sign on $B$ and is not identically zero there, so $\int_\Omega gv\,dx\ne0$, a contradiction. Hence $g=0$. ∎
+
+The lemma is the step that converts the vanishing of an integral against every variation into the vanishing of its density, and the derivation of the Euler–Lagrange equation rests on it.
+
 **Theorem (Euler–Lagrange equation).** Let $\Omega$ be bounded, let $L$ be of class $C^1$ and let $u$ be a stationary point of $J$ of class $C^2$ with respect to variations $v \in C_c^\infty(\Omega)$, that is, with $v$ vanishing near $\partial\Omega$. Then
 
 $$
@@ -61,9 +69,17 @@ $$
 0 = \delta J(u;v) = \int_\Omega\Bigl(L_u - \sum_i\partial_iL_{p_i}\Bigr)v\,dx .
 $$
 
-Since $v$ is arbitrary and the bracket is continuous, it vanishes identically.
+Since $v$ is arbitrary and the bracket is continuous, the fundamental lemma gives that it vanishes identically.
 
 **Remark (the du Bois-Reymond argument).** The proof above assumes that $u$ is of class $C^2$, so that the bracket $L_u-\partial_iL_{p_i}$ is continuous and may be read off from the vanishing of the integral. When $u$ is only Lipschitz, or merely of class $W^{1,1}$, the same conclusion is reached by the argument of du Bois-Reymond: the vanishing of the first variation against all compactly supported smooth $v$ forces the bracket, interpreted as a distribution, to be the derivative of a constant, and the equation is recovered after a further integration by parts; the regularity of a minimiser, beyond the weak differentiability assumed, is then a separate theorem, quoted as standard and depending on the strict convexity of $L$ in $p$.
+
+**Remark (higher-order integrands).** Nothing above requires the integrand to depend on $u$ and its first derivatives only. For $L(x,u,u',\dots,u^{(N)})$, the same variation with $v$ and its derivatives up to order $N-1$ compactly supported gives the **higher-order Euler–Lagrange equation**, sometimes called the **Euler–Poisson equation**
+
+$$
+L_u-\frac{d}{dx}L_{u'}+\frac{d^2}{dx^2}L_{u''}-\dots+(-1)^N\frac{d^N}{dx^N}L_{u^{(N)}}=0 ,
+$$
+
+each integration by parts moving one derivative off $v$ and onto the corresponding $L_{u^{(j)}}$ with the sign $(-1)^j$. If the variations do not vanish on $\partial\Omega$, the natural boundary conditions involve $v,v',\dots,v^{(N-1)}$ there. The canonical formulation of such integrands, and the reason they are avoided in the time variable beyond first order, is the Ostrogradsky construction treated in the article of this Part on Lagrangian and Hamiltonian systems.
 
 **Theorem (natural boundary conditions).** If the admissible variations do not vanish on $\partial\Omega$, then stationarity additionally requires
 
@@ -120,6 +136,64 @@ x = R(\theta-\sin\theta), \qquad y = R(1-\cos\theta),
 $$
 
 the two constants $R$ and the phase being fixed by the endpoints; the computation is a standard illustration of the Beltrami reduction, and it shows that the minimiser exists for a suitable pair of endpoints even though the integrand is singular at $y=0$.
+
+## Generalizations of the Equation
+
+### The Functional Derivative
+
+**Definition.** Let $J(u)=\int_\Omega L(x,u,\nabla u)\,dx$ and let $\delta J(u;v)$ be its first variation. The **functional derivative** of $J$ at $u$ is the density $\delta J/\delta u$ defined by the requirement that
+$$
+\delta J(u;v) = \int_\Omega \frac{\delta J}{\delta u}(x)\,v(x)\,dx
+$$
+for every admissible variation $v$. For the integral functional above it is the Euler–Lagrange expression
+$$
+\frac{\delta J}{\delta u} = L_u(x,u,\nabla u) - \sum_{i=1}^n\frac{\partial}{\partial x_i}\Bigl(L_{p_i}(x,u,\nabla u)\Bigr),
+$$
+and in the scalar one-variable case it is $L_u - \frac{d}{dx}L_{u'}$.
+
+*Proof.* The first variation is $\int(L_uv + L_p\cdot\nabla v)$; integrating the second term by parts, the boundary contribution vanishing for compactly supported $v$, gives $\int(L_u-\nabla\cdot L_p)v$. The identification of the density is then unique by the fundamental lemma. ∎
+
+The functional derivative is the object whose vanishing is the stationarity condition: a differentiable functional has an extremum only where $\delta J/\delta u=0$, and the Euler–Lagrange equation is that condition written out. It is the object that the physics articles of the corpus write when they vary an action with respect to a field.
+
+**Remark (the discrete approximation).** The equation may also be obtained by discretising the functional rather than by differentiating it. Divide $[a,b]$ into $N$ segments of length $h$ with nodes $x_m$, interpolate $u$ at the nodes by the values $y_m=u(x_m)$ with $y_0,y_N$ fixed, and replace the functional by
+$$
+J_h = h\sum_{m=0}^{N-1}L\Bigl(x_m,y_m,\frac{y_{m+1}-y_m}{h}\Bigr),
+$$
+a function of the interior values $y_1,\dots,y_{N-1}$. A variation of $y_m$ changes $L$ at the node $m$ and at the node $m-1$, through the difference quotient, and stationarity in $y_m$ gives
+$$
+\frac{L_p(x_m,y_m,\cdot)-L_p(x_{m-1},y_{m-1},\cdot)}{h}=L_u(x_m,y_m,\cdot),
+$$
+which is the finite-difference form of the equation; letting $h\to0$ along a smooth extremal recovers $L_u=\frac{d}{dx}L_{u'}$.
+
+### Several Functions and Several Variables
+
+**Theorem (several functions of one variable).** Let $L(x,u_1,\dots,u_p,u_1',\dots,u_p')$ be of class $C^1$ and let $J(u)=\int_a^bL\,dx$ be stationary with each $u_i$ fixed at both endpoints. Then, for each $i$,
+$$
+\frac{\partial L}{\partial u_i}-\frac{d}{dx}\Bigl(\frac{\partial L}{\partial u_i'}\Bigr)=0 .
+$$
+
+*Proof.* Vary one component at a time. The chosen component plays the role of the scalar $u$ and the remaining components are fixed parameters, so the scalar derivation applies to each index in turn. ∎
+
+**Theorem (one function of several variables).** Let $\Omega\subseteq\mathbb{R}^m$ be a bounded domain, let $L(x,u,\nabla u)$ be of class $C^1$ and let $J(u)=\int_\Omega L\,dx$ be stationary with $u$ fixed on $\partial\Omega$. Then, in the weak sense on $\Omega$,
+$$
+\frac{\partial L}{\partial u}-\sum_{j=1}^m\frac{\partial}{\partial x_j}\Bigl(\frac{\partial L}{\partial u_{x_j}}\Bigr)=0 .
+$$
+
+*Proof.* The divergence theorem replaces the integration by parts of the scalar case. The boundary term carries the normal component of $L_p$ and vanishes because the variation vanishes on $\partial\Omega$; the interior variation is arbitrary and the fundamental lemma applies over $\Omega$. ∎
+
+**Example (the minimal-surface equation).** For $m=2$ and $L=\sqrt{1+u_{x_1}^2+u_{x_2}^2}$, the area integrand of a graph, the equation is $\nabla\cdot(\nabla u/\sqrt{1+|\nabla u|^2})=0$, the equation of a soap film spanning a wire; the functional, its first variation and its solutions are treated in *Minimal Surfaces*. With a potential and a target metric entering $L$, the same equation defines a harmonic map, the subject of *Harmonic Maps*.
+
+### Several Functions of Several Variables with Higher Derivatives
+
+**Theorem (the multi-index form).** Let $\Omega\subseteq\mathbb{R}^m$ and let $L$ depend on the functions $u_1,\dots,u_p$ and on their partial derivatives $\partial^\alpha u_i$ up to order $|\alpha|\le n$, each distinct partial derivative entering $L$ once. If $J(u)=\int_\Omega L\,dx$ is stationary with $u_i$ and its derivatives of order below $n$ fixed on $\partial\Omega$, then, for each $i$,
+$$
+\sum_{\alpha}(-1)^{|\alpha|}\partial^\alpha\Bigl(\frac{\partial L}{\partial(\partial^\alpha u_i)}\Bigr)=0,
+$$
+the sum being over the multi-indices $\alpha=(\alpha_1,\dots,\alpha_m)$ with $|\alpha|\le n$, where $\partial^\alpha=\partial^{|\alpha|}/\partial x_1^{\alpha_1}\cdots\partial x_m^{\alpha_m}$, and where each multi-index is counted once, so that a mixed derivative such as $\partial^2u/\partial x_1\partial x_2$ contributes a single term.
+
+*Proof.* Integrate by parts once for each multi-index, in the form $\int_\Omega L_{\partial^\alpha u_i}\,\delta(\partial^\alpha u_i)\,dx = (-1)^{|\alpha|}\int_\Omega\partial^\alpha\bigl(L_{\partial^\alpha u_i}\bigr)\,\delta u_i\,dx$ together with boundary terms carrying the derivatives of $u_i$ of order below $n$, which vanish by the boundary hypothesis. The remaining variation $\delta u_i$ is arbitrary and the fundamental lemma gives the equation. The sum runs over multi-indices rather than ordinary indices because the distinct partial derivatives are treated as independent variables of $L$, one per multi-index. ∎
+
+**Remark (the specialisations).** The cases of the theorem recover the equations already written: $m=1$, $n=1$, $p=1$ is the original Euler–Lagrange equation, $p>1$ is the system of the several-functions theorem, $m>1$ with $n=1$ is the partial-differential equation, and $m=1$ with $n>1$ is the higher-order equation of the remark above. A variational equation whose integrand carries a derivative of fractional order is a fractional boundary-value problem with boundary terms at both ends, as noted in *Fractional Differential Equations*.
 
 ## The Second Variation
 
@@ -248,7 +322,7 @@ is constant along every solution of the Euler–Lagrange equation.
 
 The calculus of variations seeks the extrema of an integral functional $J(u)=\int_\Omega L(x,u,\nabla u)dx$. Its first variation is $\delta J(u;v) = \int(L_uv + L_p\cdot\nabla v)$, and on a stationary point with vanishing boundary variations it vanishes for every smooth $v$ exactly when the Euler–Lagrange equation $L_u - \nabla\cdot L_p = 0$ holds; when the variations do not vanish on the boundary, the natural boundary condition $L_p\cdot\nu=0$ is added. The geodesic equation of a Riemannian metric and the cycloid of the brachistochrone are the two classical examples, the first reduced by the homogeneity of the length and the second by the Beltrami identity $L - u'\cdot L_{u'} = $ constant, which is the first integral produced by the absence of an explicit dependence on the independent variable.
 
-The second variation decides the nature of a stationary point: it is nonnegative at a local minimum, and the strengthened Legendre condition $L_{pp}>0$ together with the absence of a conjugate point in the interval makes the stationary point a local minimum, by the Jacobi condition. The direct method proves existence without solving the equation: a coercive, sequentially weakly lower semicontinuous functional on a reflexive space attains its minimum, and Tonelli's theorem supplies the lower semicontinuity from the convexity of $L$ in the gradient together with a growth condition. A minimiser of a uniformly convex Lagrangian is a weak solution of a quasilinear elliptic equation and is smooth by the regularity theory of the preceding article. Constrained problems are handled by the Lagrange multiplier rule; the isoperimetric problem yields the circle, and a holonomic constraint yields a multiplier and a differential-algebraic system. Finally the Legendre transform converts the Euler–Lagrange equation into a Hamiltonian system, the form in which the theory of this Part on Lagrangian and Hamiltonian systems proceeds.
+The second variation decides the nature of a stationary point: it is nonnegative at a local minimum, and the strengthened Legendre condition $L_{pp}>0$ together with the absence of a conjugate point in the interval makes the stationary point a local minimum, by the Jacobi condition. The direct method proves existence without solving the equation: a coercive, sequentially weakly lower semicontinuous functional on a reflexive space attains its minimum, and Tonelli's theorem supplies the lower semicontinuity from the convexity of $L$ in the gradient together with a growth condition. A minimiser of a uniformly convex Lagrangian is a weak solution of a quasilinear elliptic equation and is smooth by the regularity theory of the preceding article. Constrained problems are handled by the Lagrange multiplier rule; the isoperimetric problem yields the circle, and a holonomic constraint yields a multiplier and a differential-algebraic system. Beyond the scalar case the same derivation gives the functional derivative $\delta J/\delta u = L_u - \nabla\cdot L_p$, whose vanishing is the stationarity condition; the system of one equation for each of several unknown functions; the partial-differential equation for one function of several variables, whose area case is the minimal-surface equation; and the multi-index equation for several functions of several variables with higher derivatives. Finally the Legendre transform converts the Euler–Lagrange equation into a Hamiltonian system, the form in which the theory of this Part on Lagrangian and Hamiltonian systems proceeds.
 
 ## Summary of Notation
 
@@ -259,6 +333,10 @@ The second variation decides the nature of a stationary point: it is nonnegative
 | $\delta J(u;v)$, $\delta^2J(u;v)$ | First and second variations |
 | $\mathcal{A}$ | Admissible class of functions |
 | Euler–Lagrange equation | $L_u - \nabla\cdot L_p = 0$ |
+| Fundamental lemma | $\int_\Omega gv = 0$ for all $v\in C_c^\infty$ implies $g=0$ |
+| Functional derivative | $\delta J/\delta u = L_u - \nabla\cdot L_p$ |
+| Higher-order equation | $\sum_{k=0}^{N}(-1)^k\frac{d^k}{dx^k}L_{u^{(k)}}=0$ |
+| Multi-index form | $\sum_\alpha(-1)^{|\alpha|}\partial^\alpha L_{\partial^\alpha u}=0$ |
 | Natural boundary condition | $L_p\cdot\nu = 0$ on $\partial\Omega$ |
 | Beltrami identity | $L - \sum_iu_i'L_{p_i} = $ constant for autonomous $L$ |
 | $g_{ij}$, $\Gamma^k_{ij}$ | Metric and Christoffel symbols of Part II |
@@ -272,10 +350,12 @@ The second variation decides the nature of a stationary point: it is nonnegative
 ## Further Reading
 
 - Oskar Bolza, *Lectures on the Calculus of Variations* (University of Chicago Press, 1904), for the classical theory of the first and second variation.
-- I. M. Gelfand and Sergei V. Fomin, *Calculus of Variations* (Prentice-Hall, 1963), for the Euler–Lagrange equation and the natural boundary conditions.
+- I. M. Gelfand and Sergei V. Fomin, *Calculus of Variations* (Prentice-Hall, 1963), for the Euler–Lagrange equation, the natural boundary conditions, the functional derivative and the several-variable forms.
 - Mariano Giaquinta and Stefan Hildebrandt, *Calculus of Variations I: The Lagrangian Formalism* (Springer, 1996), for the second variation and the Jacobi condition.
 - Enrico Giusti, *Direct Methods in the Calculus of Variations* (World Scientific, 2003), for the direct method and Tonelli's theorem.
 - Bernard Dacorogna, *Direct Methods in the Calculus of Variations* (Springer, 2nd ed. 2008), for lower semicontinuity and relaxation.
 - Leonida Tonelli, *Fondamenti di calcolo delle variazioni* (Zanichelli, 1921), for the original existence theory.
 - Ennio De Giorgi, "Sulla differenziabilità e l'analiticità degli integrali multipli regolari", *Memorie della Accademia delle Scienze di Torino* 3 (1957), for the regularity of minimisers.
 - Jurgen Jost and Xinwei Li-Jost, *Calculus of Variations* (Cambridge University Press, 1998), for a modern treatment including the Hamiltonian formulation.
+- Richard Courant and David Hilbert, *Methods of Mathematical Physics*, Vol. I (Interscience, 1953), for the functional derivative, the higher-order and multi-index generalisations and the polygonal approximation.
+- Richard Courant, *Differential and Integral Calculus*, Vol. II (Blackie, 1936), for the tautochrone and the historical calculus of variations.

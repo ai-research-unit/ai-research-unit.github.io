@@ -112,6 +112,50 @@ and every right-regular function is harmonic as well; the harmonic functions for
 
 *Proof.* The Laplacian acts componentwise, and the factorization shows the coefficients are harmonic; strictness is the coordinate example. The mean value property and real-analyticity of harmonic functions are standard.
 
+## The Three-Dimensional Operator and the Logarithmic Derivative
+
+The operator $D$ of this article is four-dimensional, and its square is not the Laplacian: with $D_3 = e_1\partial_1+e_2\partial_2+e_3\partial_3$ the spatial part and $D = \partial_0+D_3$, one has $D^2 = \partial_0^2+2\partial_0D_3-\Delta_3$, which is not scalar because of the mixed term $2\partial_0D_3$. It is the *conjugate* that removes that term, $D\bar D = \Delta$. The spatial part alone is a classical operator with a function theory of its own, and it is the operator on which the three-dimensional Riccati theory is built.
+
+**Definition.** The **Moisil–Theodoresco operator**, or three-dimensional Cauchy–Riemann operator, is
+
+$$
+D_3 = e_1\partial_1+e_2\partial_2+e_3\partial_3 .
+$$
+
+It agrees with $D$ on functions independent of $x_0$, but its kernel is larger: $D_3f = 0$ does not imply $Df = 0$, since $D = \partial_0+D_3$.
+
+**Proposition (the split and the square).** For a differentiable $g$ on a domain of $\mathbb{R}^3$,
+
+$$
+D_3g = -\mathrm{div}\mathbf{g}+\mathrm{grad}g_0+\mathrm{rot}\mathbf{g},
+$$
+
+so that $D_3\phi = \mathrm{grad}\phi$ on a scalar; and $D_3^2 = -\Delta_3$, the cross terms cancelling because $\partial_j\partial_k$ is symmetric while $e_je_k$ is antisymmetric for $j\neq k$.
+
+*Proof.* The split is the three-dimensional case of the computation of the section above, with the $\partial_0$ terms removed. For the square, the $j=k$ terms give $\sum_ke_k^2\partial_k^2 = -\Delta_3$ and the $j\neq k$ terms pair as $(e_je_k+e_ke_j)\partial_j\partial_k = 0$.
+
+**Remark (why the dimension matters).** The four-dimensional operator needs its conjugate to factor the Laplacian, and the square shows why: the mixed terms $2\partial_0D_3$ that the conjugate cancels are exactly those the fourth coordinate contributes. In three dimensions there is no such term, $D_3$ factorises the Laplacian alone, and the operator is elliptic with symbol $s(\xi) = \xi_1e_1+\xi_2e_2+\xi_3e_3$, whose square is $-|\xi|^2$.
+
+**Definition (the logarithmic derivative).** For a scalar $\phi$ that does not vanish, the **logarithmic derivative** of Marchenko is
+
+$$
+\check\partial\phi = \phi^{-1}D_3\phi,
+$$
+
+a vector-valued function, and it is logarithmic: $\check\partial(\phi_1\phi_2) = \check\partial\phi_1+\check\partial\phi_2$. That identity is the Leibniz rule $D_3(\phi g) = D_3(\phi)g+\phi D_3g$ for a scalar left factor, and the same scalar hypothesis governs the factorisation below.
+
+**Proposition (the Riccati PDE).** A non-vanishing scalar $\phi$ solves the three-dimensional Schrödinger equation $\Delta_3\phi+v\phi = 0$ if and only if $\mathbf{f} = \check\partial\phi$ solves
+
+$$
+D_3\mathbf{f}+\mathbf{f}^2 = v .
+$$
+
+*Proof.* With $\mathbf{f} = \phi^{-1}\nabla\phi$, the curl vanishes, $\mathrm{rot}\mathbf{f} = \nabla(\phi^{-1})\times\nabla\phi = 0$, so $D_3\mathbf{f} = -\mathrm{div}\mathbf{f}$, and the quadratic term $\mathbf{f}^2 = -\lvert\mathbf{f}\rvert^2$ cancels the second term of the divergence, leaving $D_3\mathbf{f}+\mathbf{f}^2 = -\phi^{-1}\Delta\phi$.
+
+**Remark (the factorisation).** The Schrödinger operator factorises through $D_3$: with $M_{\mathbf{f}}$ the operator of right multiplication by $\mathbf{f}$, one has $-\Delta_3-vI = (D_3+M_{\mathbf{f}})(D_3-M_{\mathbf{f}})$ if and only if $\mathbf{f}$ solves the Riccati PDE, and the identity holds on a scalar right factor. On a general quaternion-valued argument the product differs from $-\Delta_3-v$ by $\sum_ke_k[\psi,\partial_k\mathbf{f}]$: the non-commutativity that separates this theory from the classical one appears here as an explicit defect term.
+
+**Remark.** The equation itself, its one-dimensional reduction and the generalised Euler theorems belong to *Integrable Systems*; the operator, its square and the logarithmic derivative that make the lift possible belong here.
+
 ## The Cauchy Integral Formula
 
 **Theorem (fundamental solution).** The Cauchy kernel $G(x) = \bar x/|x|^4$ satisfies $DG = 0$ for $x\neq0$ and, in the sense of distributions,
@@ -160,6 +204,8 @@ The Cauchy–Riemann operator $D = \sum_\mu e_\mu\partial_\mu$ and its conjugate
 
 Regular functions are closed under addition, right multiplication by constants, and real scaling, but not under left multiplication by general quaternions, so they form a right module; constants and classical holomorphic functions of a single-plane variable are regular, the coordinate function is not, and the genuine radial regular function is the Cauchy kernel $G = \bar x/|x|^4$, of homogeneity $-3$ in four variables. Every regular function is harmonic, but not conversely. The Cauchy integral formula holds on every domain in $\mathbb{H}$, with the kernel $G$ and the constant $1/(2\pi^2)$, and it yields the mean value property, the maximum principle, Liouville's theorem and the residue theory without exception.
 
+The spatial part $D_3 = e_1\partial_1+e_2\partial_2+e_3\partial_3$ is the **Moisil–Theodoresco operator** of the three-dimensional theory: it splits as $-\mathrm{div}+\mathrm{grad}+\mathrm{rot}$, it squares alone to the negative Laplacian, $D_3^2 = -\Delta_3$, and it carries the logarithmic derivative $\check\partial\phi = \phi^{-1}D_3\phi$ and the Riccati PDE $D_3\mathbf{f}+\mathbf{f}^2 = v$, which is equivalent to the three-dimensional Schrödinger equation $\Delta_3\phi+v\phi = 0$ and factorises its operator, $-\Delta_3-vI = (D_3+M_{\mathbf{f}})(D_3-M_{\mathbf{f}})$, on a scalar right factor. The four-dimensional operator needs its conjugate for the same factorisation because only the conjugate removes the mixed term $2\partial_0D_3$ of its square.
+
 The comparison with the biquaternions isolates the role of the quaternion norm: on $\mathbb{H}$ the definiteness of $N$ makes the operator elliptic everywhere and the Cauchy theory global, while on $\mathbb{B}$ the indefinite form produces the null cone, on which the symbol degenerates and the Cauchy kernel ceases to be fundamental, so the analogy is available only on the quaternion subspace. The Fueter construction and the slice description of regular functions are in *Fueter Theory for Quaternions*.
 
 ## Summary of Notation
@@ -180,6 +226,8 @@ The comparison with the biquaternions isolates the role of the quaternion norm: 
 | $z = x_0+e_1x_1$ | Single-plane complex variable, $\partial_{\bar z} = \tfrac12(\partial_0+e_1\partial_1)$ |
 | $G(x) = \bar x/\lvert x\rvert^4$ | Cauchy kernel; $DG = 2\pi^2\delta_0e_0$ |
 | $\mathbb{B}, \mathbb{H}_{\mathbb{B}}$ | Biquaternion algebra and its quaternion subspace |
+| $D_3 = e_1\partial_1+e_2\partial_2+e_3\partial_3$ | Moisil–Theodoresco operator; $D_3^2 = -\Delta_3$ |
+| $\check\partial\phi = \phi^{-1}D_3\phi$ | Logarithmic derivative; $\mathbf{f} = \check\partial\phi$ solves the Riccati PDE |
 
 ## Further Reading
 
@@ -189,3 +237,4 @@ The comparison with the biquaternions isolates the role of the quaternion norm: 
 - John E. Gilbert and Margaret A. M. Murray, *Clifford Algebras and Dirac Operators in Harmonic Analysis* (Cambridge University Press, 1991), for the analytic properties of the operator and its consequences.
 - Klaus Gürlebeck and Wolfgang Sprößig, *Quaternionic and Clifford Calculus for Physicists and Engineers* (Wiley, 1997), for the quaternion Cauchy formula and its applications.
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge University Press, 2nd ed. 2001), for the algebraic identities underlying the factorization of the Laplacian.
+- Viktor Kravchenko, Vladislav V. Kravchenko and Benjamin Williams, "A quaternionic generalisation of the Riccati differential equation" (arXiv:math-ph/0101010, 2001), for the Moisil–Theodoresco operator, the logarithmic derivative and the Riccati PDE.

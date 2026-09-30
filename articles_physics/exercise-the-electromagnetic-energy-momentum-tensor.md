@@ -250,6 +250,8 @@ reproduces the component table of Problem 2 up to the medium factors, and identi
 
 **6. The complexified field.** Repeat the construction for a fully complexified $\tilde F$, with coefficients unrestricted in $\mathbb{C}$ rather than confined to the physical combination $i\sqrt{\epsilon}\mathbf{E} - \sqrt{\mu}\mathbf{H}$. Which of the statements — tracelessness, symmetry, conservation — survive, and what is the trace in the complexified case? (The parent notes that the projection onto $\mathbb{M}_-$ reproduces the electromagnetic field; the question is what the extra components do to $T$.)
 
+**7. The radiated flux and the self-interaction force.** For a field with sources, apply Gauss's theorem to $\partial_\mu T^{\mu\nu} = -f^\nu$ to show that the flux of energy–momentum through a closed 3-surface, $\dot P(\Sigma) = \int_{{}^{3}\Sigma} T(d{}^{3}\Sigma)$, equals minus the four-volume integral of the force density, $\dot P(\Sigma) = -\mathcal{Q}(\Omega)$. The step is formal for point charges, because $T$ is quadratic in the field and the product of the singular field with itself is undefined for distributions. Gsponer carries the calculation out in a Colombeau algebra of nonlinear generalized functions, obtains $\dot P(\Sigma) = -\mathcal{Q}$ rigorously for an arbitrarily moving relativistic point charge, and derives the Lorentz–Dirac equation from it; the statement and its consequences are recorded in *Radiation from Accelerated Charges in Biquaternionic Form*.
+
 ## Summary
 
 The electromagnetic energy–momentum tensor is constructed from the field-strength biquaternion as the bilinear

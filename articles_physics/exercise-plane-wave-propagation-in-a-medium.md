@@ -282,6 +282,44 @@ an envelope $\cos(\Delta k\,z-\Delta\omega\,t)$ modulating the carrier. The enve
 
 **Solution (c).** In vacuum $\epsilon = \epsilon_0$, $\mu = \mu_0$, so $c = c_0$, $Z = Z_0$, $n = 1$, and $dn/d\omega = 0$. Then the dispersion relation becomes $k^2 = \omega^2/c_0^2$, the impedance relation becomes $\mathbf{H}_0 = Z_0^{-1}\hat{\mathbf{k}}\times\mathbf{E}_0$, the amplitude relation becomes $|\mathbf{E}_0| = Z_0|\mathbf{H}_0| = c_0|\mathbf{B}_0|$, the nullness $N(\tilde{F}_0) = 0$ is unchanged, $v_p = v_g = c_0$, and the gradient's temporal eigenvalue becomes $-\omega/c_0$. Every relation reduces to the vacuum statement of the parent articles by the substitution $c\to c_0$, $Z\to Z_0$, as it must.
 
+## Problem 5: The Monochromatic and Stationary A-Fields
+
+**Statement.** (a) With the harmonic time dependence $\mathcal{A} = \mathcal{A}(\mathbf{x})\,e^{-i\omega t}$ and wave number $k = \omega/c$, derive the equation satisfied by the complex amplitude and its radiating solution. (b) Take the time-independent limit, recover the Poisson equation and the Newton-potential solution, and exhibit the scalar and vector potentials of the stationary field.
+
+**Solution (a).** The A-field of the Maxwell article is the complex three-vector $\mathcal{A} = \sqrt{\epsilon}\,\mathbf{E} + i\sqrt{\mu}\,\mathbf{H} = -i\tilde{F}$ — written $\mathcal{A}$ here because the plain $\mathbf{A}$ is the vector potential, and **not** the potential biquaternion $\tilde{A}$ of Problems 1–3 — and it satisfies $-c^{-1}\partial_t\mathcal{A} - i\,\mathrm{rot}\,\mathcal{A} = \mathbf{j}$, with $\mathbf{j} = \sqrt{\mu}\,\mathbf{J}_{\mathrm{e}} - i\sqrt{\epsilon}\,\mathbf{J}_{\mathrm{m}}$. Substituting the harmonic dependence gives
+
+$$
+i\frac{\omega}{c}\,\mathcal{A} - i\,\mathrm{rot}\,\mathcal{A} = \mathbf{j},
+\qquad\text{equivalently}\qquad
+\mathrm{rot}\,\mathcal{A} - k\,\mathcal{A} = i\,\mathbf{j},
+\qquad k = \frac{\omega}{c}.
+$$
+
+Applying the rotor and using $\mathrm{rot}\,\mathrm{rot} = \mathrm{grad}\,\mathrm{div} - \Delta$ turns this into the Helmholtz equation for the amplitude,
+
+$$
+\Delta\mathcal{A} + k^2\mathcal{A} = -ik\,\mathbf{J} - i\,\mathrm{rot}\,\mathbf{J} + c\,\mathrm{grad}\,\rho,
+\qquad
+\rho = -i\omega^{-1}\,\mathrm{div}\,\mathbf{J},
+$$
+
+whose radiating solution is
+
+$$
+4\pi\mathcal{A}(\mathbf{x}) = ik\!\!\int \frac{e^{ikR}}{R}\,\mathbf{J}\,d^3 y \;+\; i\,\mathrm{rot}\!\!\int \frac{e^{ikR}}{R}\,\mathbf{J}\,d^3 y \;-\; c\,\mathrm{grad}\!\!\int \frac{e^{ikR}}{R}\,\rho\,d^3 y,
+\qquad R = \|\mathbf{x}-\mathbf{y}\|,
+$$
+
+unique in the class of solutions satisfying the Sommerfeld radiation condition. The medium enters only through $k = \omega/c$: the single constant $c$ replaces the pair $(\epsilon,\mu)$, exactly as in the parent's plane-wave dispersion.
+
+**Solution (b).** For a time-independent field the equation becomes the Poisson equation
+
+$$
+\Delta\mathcal{A} = -i\,\mathrm{rot}\,\mathbf{J} + c\,\mathrm{grad}\,\rho,
+$$
+
+whose solution decaying at infinity is $\mathcal{A} = -c\,\mathrm{grad}\big((4\pi R)^{-1} * \rho\big) + i\,\mathrm{rot}\big((4\pi R)^{-1} * \mathbf{J}\big)$. Writing $c^{-1}\mathcal{A} = \mathrm{grad}\,\Phi + i\,\mathrm{rot}\,\Psi$ with $\mathrm{div}\,\Psi = 0$ splits it into $\Delta\Phi = \rho$ and $\Delta\Psi = -c^{-1}\mathbf{J}$, solved by the Newton potentials $\Phi = -(4\pi R)^{-1} * \rho$ and $\Psi = (4\pi c R)^{-1} * \mathbf{J}$. The energy density of either field is $\tfrac{1}{2}\|\mathcal{A}\|^2 = \tfrac{1}{2}(\epsilon\mathbf{E}^2 + \mu\mathbf{H}^2)$, and the Poynting vector is $\tfrac{1}{2} i c\,\mathcal{A}\times\mathcal{A}^*$. This is the frequency-domain and static counterpart of Problems 1–3: the same complex vector carries the electric and magnetic halves, and the two limits make the "single constant $c$" reading of the medium concrete.
+
 ## Where the Parent Leaves a Gap
 
 An exercise that only confirms its parent has not tested it. The computations above confirm the parent's plane-wave *results* — the four conditions, the dispersion relation, the impedance and amplitude relations, the nullness, and the time-averaged energy relation all survived recomputation on oblique, elliptical, and $\epsilon\neq\mu$ cases. What the exercise does *not* find is equally worth recording: the parent's plane-wave section is correct where it is defined, and the gaps are gaps of coverage and of labelling, not false statements. They are stated here rather than smoothed over.
@@ -320,7 +358,7 @@ $$
 $$
 from which the transversality conditions $\mathbf{k}\cdot\mathbf{E}_0 = \mathbf{k}\cdot\mathbf{H}_0 = 0$ and the dispersion relation $k = \omega/c$ follow. The impedance relation $\mathbf{H}_0 = Z^{-1}\hat{\mathbf{k}}\times\mathbf{E}_0$ gives $|\mathbf{E}_0| = Z|\mathbf{H}_0| = c|\mathbf{B}_0|$, the two normalised halves $i\sqrt{\epsilon}\mathbf{E}_0$ and $-\sqrt{\mu}\mathbf{H}_0$ have equal magnitude, and the amplitude is the null combination $\tilde{F}_0 = i\sqrt{\epsilon}(\mathbf{E}_0 + i\hat{\mathbf{k}}\times\mathbf{E}_0)$.
 
-The amplitude is a zero divisor: $N(\tilde{F}_0) = -\epsilon\,\mathbf{V}_0\cdot\mathbf{V}_0 = 0$ and $\tilde{F}_0^2 = 0$, and the null four-wavevector annihilates it, $\tilde{K}\tilde{F}_0 = 0$, with $N(\tilde{K}) = 0$. A standing wave in the same medium is not null, so the nullness is specific to the single running plane wave. The energy density and flux satisfy $\mathbf{S} = cW\hat{\mathbf{k}}$ and, on time average, $|\langle\mathbf{S}\rangle| = c\langle W\rangle$; the energy–momentum biquaternion is $\tilde{W} = W(e_0 + i\hat{\mathbf{k}})$, it is conserved, $\tilde{\nabla}\tilde{W} = 0$, and it is itself null, $N(\tilde{W}) = 0$. In a dispersive medium the temporal eigenvalue of the gradient is $-\omega/c(\omega)$, the phase velocity is $c(\omega)$, the group velocity is $c_0/(n + \omega\,dn/d\omega)$, and the vacuum limit $c\to c_0$, $Z\to Z_0$, $n\to1$ recovers every statement.
+The amplitude is a zero divisor: $N(\tilde{F}_0) = -\epsilon\,\mathbf{V}_0\cdot\mathbf{V}_0 = 0$ and $\tilde{F}_0^2 = 0$, and the null four-wavevector annihilates it, $\tilde{K}\tilde{F}_0 = 0$, with $N(\tilde{K}) = 0$. A standing wave in the same medium is not null, so the nullness is specific to the single running plane wave. The energy density and flux satisfy $\mathbf{S} = cW\hat{\mathbf{k}}$ and, on time average, $|\langle\mathbf{S}\rangle| = c\langle W\rangle$; the energy–momentum biquaternion is $\tilde{W} = W(e_0 + i\hat{\mathbf{k}})$, it is conserved, $\tilde{\nabla}\tilde{W} = 0$, and it is itself null, $N(\tilde{W}) = 0$. In a dispersive medium the temporal eigenvalue of the gradient is $-\omega/c(\omega)$, the phase velocity is $c(\omega)$, the group velocity is $c_0/(n + \omega\,dn/d\omega)$, and the vacuum limit $c\to c_0$, $Z\to Z_0$, $n\to1$ recovers every statement. Problem 5 extends the same complex vector to harmonic and static fields: the complex amplitude obeys a Helmholtz equation with the radiating kernel $e^{ikR}/R$, its static limit is the Poisson equation solved by Newton potentials, and throughout the medium enters only through $k = \omega/c$ — the "single constant $c$" reading made concrete.
 
 The exercise confirms the parent's plane-wave results on cases the parent did not use, and it reports the parent's gaps rather than closing them: the conditions are derived here but asserted there; the absorbing case lies outside the real normalisation; the energy density used is non-dispersive; and the "Lorentz invariant" label of the notation table is inherited from the vacuum setting and is not established for a medium.
 
@@ -345,6 +383,10 @@ The exercise confirms the parent's plane-wave results on cases the parent did no
 | $\mathbf{k}, \omega, \hat{\mathbf{k}} = \mathbf{k}/|\mathbf{k}|$ | Wavevector, angular frequency, unit wavevector |
 | $\tilde{K} = \frac{i\omega}{c}e_0 + \mathbf{k}$ | Four-wavevector biquaternion, in $\mathbb{M}_-$ |
 | $\tilde{A} = \frac{i\phi}{c}e_0 + \mathbf{A}$ | Potential biquaternion |
+| $\mathcal{A} = \sqrt{\epsilon}\,\mathbf{E} + i\sqrt{\mu}\,\mathbf{H} = -i\tilde{F}$ | A-field (complex three-vector; not the vector potential) |
+| $\mathbf{j} = \sqrt{\mu}\,\mathbf{J}_{\mathrm{e}} - i\sqrt{\epsilon}\,\mathbf{J}_{\mathrm{m}}$ | Complex current of the A-field equation |
+| $k = \omega/c$ | Wave number |
+| $\Phi, \Psi$ | Scalar and vector potentials, $c^{-1}\mathcal{A} = \mathrm{grad}\,\Phi + i\,\mathrm{rot}\,\Psi$ |
 | $\tilde{R} = \frac{i\rho}{\sqrt{\epsilon}}e_0 + \sqrt{\mu}\,\mathbf{J}$ | Source biquaternion |
 | $\mathbf{V} = \mathbf{E} + ic\mathbf{B}$, $\tilde{F} = i\sqrt{\epsilon}\,\mathbf{V}$ | Riemann–Silberstein vector and the field strength |
 | $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$ | Biquaternion norm (complex scalar) |

@@ -184,7 +184,7 @@ $$
 \xi=xe_1+ye_2+ze_3,\qquad x^2+y^2+z^2=1 ,
 $$
 
-which is the sphere $S^2$ of imaginary units of $\mathbb{H}$. The full set of roots of $-1$ in $\mathbb{B}$ is a complex cone over it and is classified in *Biquaternion Roots of Minus One*.
+which is the sphere $S^2$ of imaginary units of $\mathbb{H}$. The full set of roots of $-1$ in $\mathbb{B}$ is a complex cone over it and is classified in *Biquaternion Square Roots of Minus One, Zero and Plus One*.
 
 **Physical reading.** The sphere $S^2$ of real roots of $-1$ is the sphere of the spatial rotation axes, and a general root of $-1$ generates a one-parameter subgroup that is a rotation when the generator is real and a mixture of rotation and boost when it is not. The null pure elements are the parabolic directions, the nilpotents, whose one-parameter group is a translation rather than a rotation.
 

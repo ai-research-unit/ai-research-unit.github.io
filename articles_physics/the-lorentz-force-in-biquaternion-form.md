@@ -529,6 +529,70 @@ $$
 
 This was checked numerically at random boosts, random fields, and random velocities, with agreement at the $10^{-15}$ level. In this sense the product formula is not merely a frame-dependent identity but a covariant statement: transforming the ingredients and transforming the result give the same answer.
 
+## The Power–Force Density Biquaternion and Its Four-Term Split
+
+The four-force $\tilde{K}$ of this article acts on a single charged particle. The companion programme of *The Electro-Gravimagnetic Field and the Magnetic-Charge–Mass Hypothesis* works instead at the level of **densities**, and its force object is a different biquaternion — worth recording here because it is the density counterpart of the same product $\tilde{U}\tilde{F}$, and because its structure is what the programme's Newton-law analogues are built on.
+
+Let a field's **charge–current biquaternion** be
+
+$$
+\tilde{\Theta} = i\rho + \mathbf J,
+\qquad
+\rho = \frac{\rho_E}{\sqrt{\epsilon}} - i\,\frac{\rho_H}{\sqrt{\mu}},
+\qquad
+\mathbf J = \sqrt{\mu}\,\mathbf{j}_E - i\sqrt{\epsilon}\,\mathbf{j}_H,
+$$
+
+where $\rho_E = \mathrm{div}\,\mathbf{D}$ and $\rho_H = -\mathrm{div}\,\mathbf{B}$ are the electric and magnetic charge densities, $\mathbf{j}_E$ and $\mathbf{j}_H$ the corresponding currents, $\mathbf{D} = \epsilon\mathbf{E}$, and $\mathbf{B} = \mu\mathbf{H}$. Let a second field have A-field
+
+$$
+\boldsymbol{\mathcal A}' = \sqrt{\epsilon}\,\mathbf{E}' + i\sqrt{\mu}\,\mathbf{H}' = -i\tilde{F}',
+$$
+
+the dual field strength of *The Magnetic-Charge–Mass Hypothesis* (the Maxwell article's A-field in its own sign convention). The programme's **power–force biquaternion** is the product
+
+$$
+\tilde{\mathcal F} = -\,\tilde{\Theta}\circ\tilde{\mathcal A}' .
+$$
+
+Its scalar and vector parts were recomputed here and are
+
+$$
+\mathrm{Sc}\big(\tilde{\mathcal F}\big) = \big(\boldsymbol{\mathcal A}',\mathbf{J}\big)
+= \frac{1}{c}\left(\mathbf{E}'\cdot\mathbf{j}_E + \mathbf{H}'\cdot\mathbf{j}_H\right)
++ i\left(\mathbf{B}'\cdot\mathbf{j}_E - \mathbf{D}'\cdot\mathbf{j}_H\right),
+\qquad
+\mathrm{Vect}\big(\tilde{\mathcal F}\big) = -\,i\rho\,\boldsymbol{\mathcal A}' + \big[\boldsymbol{\mathcal A}',\mathbf{J}\big],
+$$
+
+where $(\cdot,\cdot)$ is the complex bilinear form $\sum_k F_kG_k$. The scalar part is a **power density**: its real part is the rate at which the electric and gravimagnetic fields do work on their currents, and its imaginary part is the corresponding magnetic-charge quantity.
+
+The vector part is the **force density**, and its relation to the two halves named below carries a factor of $i$:
+
+$$
+\mathrm{Vect}\big(\tilde{\mathcal F}\big) = -\,i\left(\mathbf F_H + i\,\mathbf F_E\right),
+\qquad
+\mathbf F_H + i\,\mathbf F_E = i\,\mathrm{Vect}\big(\tilde{\mathcal F}\big)
+= \rho\,\boldsymbol{\mathcal A}' - i\,\mathbf J\times\boldsymbol{\mathcal A}' ,
+$$
+
+so that $\mathbf F_E = \mathrm{Re}\,\mathrm{Vect}(\tilde{\mathcal F})$ and $\mathbf F_H = -\mathrm{Im}\,\mathrm{Vect}(\tilde{\mathcal F})$. Expanding with the definitions above gives the four terms of the first half with their coefficients,
+
+$$
+\mathbf F_H = \rho_E\,\mathbf E' + \rho_H\,\mathbf H' + \mathbf j_E\times\mathbf B' - \mathbf j_H\times\mathbf D' .
+$$
+
+The four terms are a **Coulomb** term from the electric charge density, a **gravitational** term from the mass (magnetic-charge) density, a **Lorentz** term from the electric current crossed with the magnetic induction, and a fourth term built from the electric displacement and the mass current, which the author names the **electromass force**. The second half, the force that changes the electric currents, is
+
+$$
+\mathbf F_E = c\,\rho_E\,\mathbf B' - c\,\rho_H\,\mathbf D' + \frac{1}{c}\,\mathbf E'\times\mathbf j_E + \frac{1}{c}\,\mathbf H'\times\mathbf j_H .
+$$
+
+The density $\tilde{\mathcal F}$ is not the per-particle $\tilde{K}$ and the two must not be identified: $\tilde{K}$ is the four-force on one charge, $\tilde{\mathcal F}$ is a force per unit volume on a continuous distribution, and only the latter carries the power–force pairing in one element.
+
+**Status.** The object, the split and the coefficients above are algebra, and all were verified numerically: the scalar part against its component form, and both halves of the force against the direct expansion, with residuals at machine precision. The coefficients were previously withheld here because the source's own expansions of the two halves did not close against the vector part as it stands; the reconciliation is the factor of $i$ displayed above, which the source suppresses. Reading $\mathbf F_H$ as the real part of the vector part rather than as $-\mathrm{Im}$ of it produces the apparent mismatch; with the factor placed correctly the source's two expansions close term by term. One exception remains: the source prints $-\rho_H\mathbf D'$ where the derivation gives $-c\,\rho_H\mathbf D'$, a factor of the dimensionless speed of light in that single term, and the derived form is the one carried above. The coefficient-level expansion is hypothesis-dependent through the magnetic-charge–mass identification, so the individual terms remain the programme's rather than the corpus's; what the corpus certifies is that they are what the programme's own product yields. The programme's third-law relation, $\tilde{\Theta}\circ\tilde{\mathcal A}' = -\tilde{\Theta}'\circ\tilde{\mathcal A}$, is the statement that the two power densities are equal, and the author compares it to Betti's reciprocity identity; that comparison, and the hypothesis, are the programme's, not the corpus's. See *The Electro-Gravimagnetic Field and the Magnetic-Charge–Mass Hypothesis* for the provenance.
+
+
 ## Summary
 
 The Lorentz four-force has the component form
@@ -547,6 +611,8 @@ $$
 Equivalently, $\tilde{K} = -\frac{q}{2c\sqrt{\epsilon}}(\tilde{U}\tilde{F} + \tilde{F}^\dagger\tilde{U})$, since $\sqrt{\mu} = 1/(c\sqrt{\epsilon})$; and since $\tilde{F}^\dagger = -\tilde{F}^*$, the formula may be written $-\frac{q\sqrt{\mu}}{2}(\tilde{U}\tilde{F} - \tilde{F}^*\tilde{U})$. The conjugate field is essential: it carries the anti-self-dual half of the field tensor, and the electric and magnetic contributions can be separated only by combining the two halves. This resolves the open question recorded in the relativistic-mechanics article, and fixes the force notation: the four-force is written $\tilde{K}$, while $\tilde{F}$ is reserved for the field strength.
 
 The structural consequences are these. The four-force is orthogonal to the four-momentum, $\tilde{K}\bar{\tilde{P}} + \tilde{P}\bar{\tilde{K}} = 0$, so the mass shell $\tilde{P}\bar{\tilde{P}} = -m^2c^2$ is preserved and the rest mass is unchanged by the Lorentz force. The force's biquaternion norm $N(\tilde{K})$ is a Lorentz scalar equal to $q^2\mathbf{E}_{\text{rest}}^2$, the squared electric field in the particle's rest frame. The field invariants $I_1 = \mathbf{E}^2 - c^2\mathbf{B}^2$ and $I_2 = \mathbf{E}\cdot\mathbf{B}$ classify the field as null, electric, magnetic, or generic, and thereby fix the simplest possible shape of the force and, for a uniform field, the characteristic rates of the motion: the eigenvalues of the field matrix solve $\lambda^4 - (I_1/c^2)\lambda^2 - I_2^2/c^2 = 0$. In the null case a null eigenvector $k$ of the field matrix gives one further invariant of the motion, $k\cdot P$. Finally, under boosts the four-force transforms in the vector representation, $\tilde{K}' = \tilde{\Lambda}\tilde{K}\tilde{\Lambda}^\dagger$, while the field transforms in the bivector representation, $\tilde{F}' = \bar{\tilde{\Lambda}}\tilde{F}\tilde{\Lambda}$, and the product formula is covariant under the pair.
+
+At the level of densities the companion programme replaces the per-particle force by the power–force biquaternion $\tilde{\mathcal F} = -\tilde{\Theta}\circ\boldsymbol{\mathcal A}'$, whose scalar part is a power density and whose vector part splits into a Coulomb, a gravitational, a Lorentz and an electromass term; it is the density counterpart of the same product, with the per-particle $\tilde{K}$ and the per-volume $\tilde{\mathcal F}$ kept strictly apart.
 
 ## Summary of Notation
 
@@ -574,6 +640,11 @@ The structural consequences are these. The four-force is orthogonal to the four-
 | $\tilde{U} = \gamma(ic\,e_0 + \mathbf{v})$ | Four-velocity biquaternion |
 | $\tilde{P} = m\tilde{U}$ | Four-momentum biquaternion |
 | $\tilde{K} = d\tilde{P}/d\tau$ | Four-force (Minkowski force) biquaternion |
+| $\boldsymbol{\mathcal A} = \sqrt{\epsilon}\,\mathbf{E} + i\sqrt{\mu}\,\mathbf{H} = -i\tilde{F}$ | A-field (dual field strength, complex three-vector) |
+| $\tilde{\Theta} = i\rho + \mathbf{J}$ | Charge–current biquaternion of a field |
+| $\tilde{\mathcal F} = -\tilde{\Theta}\circ\boldsymbol{\mathcal A}'$ | Power–force density biquaternion (per unit volume; not $\tilde{K}$) |
+| $\rho_E, \rho_H$, $\mathbf{j}_E, \mathbf{j}_H$ | Electric and magnetic charge and current densities |
+| $\mathbf{D} = \epsilon\mathbf{E}$, $\mathbf{B} = \mu\mathbf{H}$ | Electric displacement and magnetic induction |
 | $\mathbf{f} = q(\mathbf{E} + \mathbf{v}\times\mathbf{B})$ | Relativistic three-force |
 | $P_{\text{mech}} = q\,\mathbf{E}\cdot\mathbf{v}$ | Mechanical power |
 | $I_1 = \mathbf{E}^2 - c^2\mathbf{B}^2$ | First field invariant |
@@ -591,3 +662,5 @@ The structural consequences are these. The four-force is orthogonal to the four-
 - Iwo Białynicki-Birula and Zofia Białynicka-Birula, "The role of the Riemann–Silberstein vector in classical and quantum theories of electromagnetism", *Journal of Physics A* 46 (2013) 053001, for the complex-vector and duality structure of electromagnetism.
 - A. Waser, "Application of Bi-Quaternions in Physics" (2000, updated 2007), for a biquaternionic treatment of the electromagnetic field and the Lorentz force.
 - L. A. Alexeyeva, "Maxwell Equations, Their Hamiltonian and Biquaternionic Forms and Properties of Their Solutions" (2016), for the biquaternionic formulation of the field equations.
+- L. A. Alexeyeva, "One Biquaternion Model of the Electro-Gravimagnetic Field. Field Analogues of Newton's Laws" (2007), for the density-level power–force biquaternion, the four-term force split and the electromass force; see *The Electro-Gravimagnetic Field and the Magnetic-Charge–Mass Hypothesis* for the hypothesis and its status.
+- L. A. Alexeyeva, "Newton's Laws for a Biquaternionic Model of the Electro-Gravimagnetic Field, Charges, Currents, and Their Interactions" (2009), for the revision of the programme, in which the charge–current conservation law is not Lorentz invariant under interaction and a scalar resistance field is added.

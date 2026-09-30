@@ -26,6 +26,7 @@ The article is organised as follows. The gradient and the d'Alembertian are esta
 - Companion article *Exercise: The Retarded Potentials and the Green's Function*, for the retarded kernel and boundary condition specialised to the electromagnetic potential.
 - Companion article *The Klein–Gordon Equation in Biquaternionic Form*, for the second-order equation the operator carries.
 - Companion article *The Dirac Equation in Biquaternionic Form*, for the first-order equation built from the gradient and the spinor on which it acts.
+- Companion article *Bispinor Fields and the Fundamental Solution of the Generalized Maxwell–Dirac Equation*, for the solution theory of the shifted operator: its fundamental solution on the light cone, the general solution of the inhomogeneous equation, the harmonic bispinors, and the class in which the homogeneous equation has only the trivial solution.
 - Companion article *The Dirac Algebra and Biquaternions — A Dictionary*, for the reversal and the trace formula used in the kernel identities.
 - Companion article *The Wick Rotation in the Biquaternion Universe*, for the rotation relating the causal and invariant kernels.
 
@@ -292,6 +293,48 @@ in contrast with $G_\Box$. The scalar kernel may be moved through any algebraic 
 
 **The massless first-order equation is the conjugation-invariant one.** The homogeneous first-order equation $\tilde{\nabla}\tilde{\Phi} = 0$ is the massless Dirac equation on the spinor module and the source-free Maxwell equation on the field strength, and its kernel theory is the theory of the functions annihilated by $\bar{\tilde{\nabla}}$. The massive first-order operator requires the chirality-off-diagonal mass term of the companion *Conventions in the Biquaternion Universe* and is treated in the spin-$1/2$ articles; the massless kernel above is the common structure those articles specialise.
 
+## The Shifted Gradient and the Generalized Maxwell–Dirac Equation
+
+The first-order kernel inverts $\tilde{\nabla}$. The author's programme on generalised solutions writes its first-order equations with the mass carried by that same operator rather than by a separate additive term, and the object that carries it is the **shifted gradient**,
+$$
+\tilde{\nabla}_\kappa = \tilde{\nabla} + \kappa , \qquad \kappa \in \mathbb{C} ,
+$$
+with $\kappa$ a central scalar; because $\kappa$ commutes with the whole algebra the shift changes no order of factors, and its conjugate is the same shift, $\bar{\tilde{\nabla}}_\kappa = \bar{\tilde{\nabla}} + \kappa$.
+
+**The square.** The two shifted gradients compose to a central scalar operator. Since $\tilde{\nabla} + \bar{\tilde{\nabla}} = 2\partial_{ict}$, the cross term is $2\kappa\,\partial_{ict}$ and
+$$
+\tilde{\nabla}_\kappa \bar{\tilde{\nabla}}_\kappa = \bar{\tilde{\nabla}}_\kappa \tilde{\nabla}_\kappa
+= \Box + 2\kappa\,\partial_{ict} + \kappa^2
+= \left(\partial_{ict} + \kappa\right)^2 + \Delta ,
+$$
+which is central. On the plane wave $e^{i(\mathbf{k}\cdot\mathbf{x}-\omega t)}$ its symbol is
+$$
+\left(\frac{\omega}{c} - \kappa\right)^2 - \|\mathbf{k}\|^2 ,
+$$
+so the shift acts on the symbol as a **translation of the frequency** and nothing else: $\omega$ and $\kappa$ enter only through the combination $\omega/c - \kappa$. Both the identity and the symbol were checked on random $(\omega, \mathbf{k}, \kappa)$ to machine precision.
+
+**The generalized Maxwell–Dirac equation.** The single first-order equation
+$$
+\left(\tilde{\nabla} + \kappa\right) B = F
+$$
+is the corpus form of the source's **generalized Maxwell–Dirac equation**. At $\kappa = 0$ it is the massless equation $\tilde{\nabla}B = 0$ that the companion Dirac and Maxwell articles both use, and the source's point is that one operator, shifted by a single central number, is written for the Maxwell and the Dirac operators at once. The corpus records the algebraic content — a central shift of the single gradient is available, and the mass it can carry is one complex number — and separates it from the physical identification of the two fields, which is a claim about the interpretation of $B$ and not about the operator.
+
+**A convention crossing.** The source's gradient is $\partial_\tau \pm i\nabla = i\tilde{\nabla}$ (the dictionary is recorded in the companion article on the electro-gravimagnetic programme), so its mass $m$ and the corpus shift are related by $\kappa = -im$. The case the source studies is an **imaginary** $m$, which is a **real** $\kappa$ here, and the dichotomy runs in opposite directions on the two sides. On the corpus side the symbol vanishes for real $(\omega, \mathbf{k})$ — non-trivial homogeneous plane waves exist — exactly when $\kappa$ is real, the vanishing set being the shifted cone $\omega/c = \kappa \pm \|\mathbf{k}\|$. For non-real $\kappa$ the symbol never vanishes on real $(\omega, \mathbf{k})$, so there is no non-trivial **plane-wave** solution; the stronger statement, that there is no non-trivial solution at all, holds only in the tempered class, because the substitution $u = e^{-\kappa x_4}v$ with $x_4 = ict$ turns the operator into $e^{-\kappa x_4}\Box e^{+\kappa x_4}$, so that *every* wave $v$ with $\Box v = 0$ gives a homogeneous solution $u$ and that solution is not tempered. The companion article *Bispinor Fields and the Fundamental Solution of the Generalized Maxwell–Dirac Equation* states that class, the general homogeneous solution, and the fundamental solution of the shifted operator. Both branches were checked numerically, and the source's own statement (non-trivial solutions for imaginary $m$ alone) is the mirror image under $\kappa = -im$. An article that copies the source's "imaginary mass" into the corpus convention without the factor $i$ will place the interesting case on the wrong side of this dichotomy.
+
+**The scalar-potential equation.** Applying $\bar{\tilde{\nabla}}_\kappa$ to $\tilde{\nabla}_\kappa B = F$ gives
+$$
+\left(\Box + 2\kappa\,\partial_{ict} + \kappa^2\right) B = \bar{\tilde{\nabla}}_\kappa F ,
+$$
+so each component of $B$ obeys the shifted scalar equation; and conversely a solution of the homogeneous scalar equation generates a solution of the homogeneous first-order equation,
+$$
+\left(\Box + 2\kappa\,\partial_{ict} + \kappa^2\right) u = 0
+\quad\Longrightarrow\quad
+\tilde{\nabla}_\kappa\left(\bar{\tilde{\nabla}}_\kappa u\right) = 0 .
+$$
+The converse is the shifted form of the **monogenic completion** the companion Dirac article uses at $\kappa = 0$, where a harmonic scalar $u$ is completed to the kernel element $\bar{\tilde{\nabla}}u$; the source generates its spinors this way, from a scalar "C-field" by convolution, and the companion Dirac article takes that up. The source names the scalar operator the **Klein–Gordon–Fock–Schrödinger equation**: its symbol carries a second-order term of Klein–Gordon–Fock type, $\Box + \kappa^2$, and a first-order-in-time term $\kappa\,\partial_{ict}$ of Schrödinger type, and the name records that one operator contains one term of each kind. The corpus keeps the name only with that content attached. What the name does not supply is a derivation: one operator carrying a term of each type is not the same statement as the Klein–Gordon and Schrödinger equations following from it, and the corpus does not claim the latter.
+
+**The Cauchy problem.** The second-order operator to which the shifted square reduces at $\kappa = 0$ is $\Box$, the four-dimensional Laplacian in the $ict$ variables, so the wave operator is $-\Box$. The Cauchy problem $-\Box K = G$ with data $K(0,\mathbf{x}) = K^0(\mathbf{x})$ and $\partial_\tau K(0,\mathbf{x}) = K^1(\mathbf{x})$ is solved componentwise by the Kirchhoff formula of the companion *Partial Differential Equations*, with the retarded kernel $G_{\mathrm{ret}} = \frac{1}{4\pi R}\delta(t - R/c)$ of the section above; the biquaternion content is that the data and the solution are read off component by component and the four scalar solutions are reassembled. The source writes the first-order version of the same representation, in which the solution carries an extra $\bar{\tilde{\nabla}}_\kappa$ applied to the scalar potential, so that the scalar formula is recovered at $\kappa = 0$; the corpus records the second-order Kirchhoff form as the one it can state and verify, and the source's first-order integral form is now recorded and checked in the companion article *Bispinor Fields and the Fundamental Solution of the Generalized Maxwell–Dirac Equation*, together with the fundamental solution of the shifted operator itself.
+
 ## The Kernels and the Involutions
 
 The four conjugations of the algebra act on the kernels in a way that is worth recording, because it is the bridge to the companion article on the involution lattice. The real scalar kernels — the invariant, the retarded and the advanced ones — are real multiples of $e_0$: the three involutions $\bar{\cdot}$, ${}^*$ and $\dagger$ fix them, while $\flat = -\dagger$ negates them,
@@ -359,6 +402,8 @@ which is material-sector-valued, transforms as a four-vector, and does not commu
 | $G_F = \frac{1}{4\pi^2}\frac{1}{\rho^2 - i\epsilon}$ | Causal (Feynman) kernel; Wick-rotates to $G_{\mathrm{inv}}$ |
 | $G^{(\mu)}_{\mathrm{inv}} = \frac{\mu}{4\pi^2\rho}K_1(\mu\rho)$ | Massive invariant kernel; $\mu = mc/\hbar$ |
 | $\tilde{G}_1 = \bar{\tilde{\nabla}}G_\Box \in \mathbb{M}_-$ | First-order kernel; $\tilde{\nabla}\tilde{G}_1 = -\delta$ |
+| $\tilde{\nabla}_\kappa = \tilde{\nabla} + \kappa$, $\kappa \in \mathbb{C}$ | Shifted gradient (central shift) |
+| $\tilde{\nabla}_\kappa\bar{\tilde{\nabla}}_\kappa = \Box + 2\kappa\partial_{ict} + \kappa^2$ | Square of the shifted gradient; symbol $(\omega/c - \kappa)^2 - \|\mathbf{k}\|^2$ |
 | $\Theta(t)$ | Step function selecting the future cone |
 | $\eta = \mathrm{diag}(-1,+1,+1,+1)$ | Level-2 $ict$ metric (not used in $\Box$) |
 
@@ -371,3 +416,5 @@ which is material-sector-valued, transforms as a four-vector, and does not commu
 - Michael E. Peskin and Daniel V. Schroeder, *An Introduction to Quantum Field Theory* (Addison–Wesley, 1995), for the $i\epsilon$ prescription and the relation between the Feynman propagator and the Euclidean Green's function.
 - I. M. Gel'fand and G. E. Shilov, *Generalized Functions*, Vol. 1 (Academic Press, 1964), for the distributional calculus of the light-cone delta and the wave-front set of the causal kernels.
 - Fritz John, *Plane Waves and Spherical Means Applied to Partial Differential Equations* (Interscience, 1955), for the Hadamard elementary solution and the propagation of the wave operator's singularities on the characteristic cone.
+- L. A. Alexeyeva, "Biquaternions algebra and its applications by solving of some theoretical physics equations", *Clifford Analysis, Clifford Algebras and Their Applications* **7** (2012), 19–39 (arXiv:1302.0523), for the shifted gradient, the generalized Maxwell–Dirac equation, the Klein–Gordon–Fock–Schrödinger scalar equation, and the source's generalized Kirchhoff representation.
+- L. A. Alexeyeva, "Biquaternion representation of the Dirac equations and bispinor fields", *Journal of Open Systems Evolution Problems* **25** (1–2) (2023), 15–24 (doi:10.26577/JPEOS.2023.v25.i1-2.i2), for the fundamental solution of the shifted operator and its light-cone support, the general solution of the inhomogeneous equation, the harmonic bispinors and their nullity, and the linear dispersion of the plane-wave family.

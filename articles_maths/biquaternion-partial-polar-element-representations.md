@@ -481,7 +481,7 @@ The three named representations are also distinguished by their behaviour under 
 
 - *Biquaternion Polar Element Representation* (`articles_maths/biquaternion-polar-element-representation.md`), for the four factors, the modulus $\rho = \sqrt{N(\tilde{Q})}$, the algorithm and the domain.
 - *Biquaternion Elementary Functions* (`articles_maths/biquaternion-elementary-functions.md`), for the exponential, the logarithm and the power functions, which fix the parameters of the Hamilton representation and carry its multivaluedness.
-- *Biquaternion Roots of Minus One* (`articles_maths/biquaternion-roots-of-minus-one.md`), for the classification of the roots of $-1$ and the constraints on the Hamilton axis.
+- *Biquaternion Square Roots of Minus One, Zero and Plus One* (`articles_maths/biquaternion-square-roots-of-minus-one-zero-and-plus-one.md`), for the classification of the roots of $-1$ and the constraints on the Hamilton axis.
 - *Biquaternion Zero Divisors* (`articles_maths/biquaternion-zero-divisors.md`), for the null cone on which all four representations fail.
 - *Quaternion Polar Element Representation* (`articles_maths/quaternion-polar-element-representation.md`), for the quaternion polar representation that the Hamilton representation generalises, and which the complex representation reduces to on the real quaternions.
 - *The 2×2 Matrix Element Representation of Biquaternions* (`articles_physics/the-2x2-matrix-element-representation-of-biquaternions.md`), for the identification of the Cartan representation with the matrix polar decomposition.

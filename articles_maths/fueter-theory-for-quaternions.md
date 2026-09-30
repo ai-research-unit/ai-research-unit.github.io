@@ -206,7 +206,7 @@ The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$
 | Feature | Quaternion case $\mathbb{H}$ | Biquaternion case $\mathbb{B}$ |
 |---|---|---|
 | Norm | definite | indefinite |
-| Imaginary units | the sphere $S^2$ of pure unit quaternions | the larger family of *Biquaternion Roots of Minus One*, not a sphere |
+| Imaginary units | the sphere $S^2$ of pure unit quaternions | the larger family of *Biquaternion Square Roots of Minus One, Zero and Plus One*, not a sphere |
 | Slice structure | a single sphere of slices | one slice selected at a time from a non-spherical root set |
 | Singularity of the Cauchy theory | the origin only | the null quadric, real dimension $6$ |
 | Ellipticity of the Fueter operator | everywhere for real covectors | fails over $\mathbb{C}$ |

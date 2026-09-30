@@ -191,7 +191,7 @@ they form the unit sphere $S^2$ of that three-dimensional real space.
 
 **Proof.** A real-coefficient element $\xi = q_0e_0 + \mathbf{q}$ squares to $\xi^2 = (q_0^2 - |\mathbf{q}|^2)e_0 + 2q_0\mathbf{q}$; equating to $-e_0$ forces $q_0 = 0$ and $|\mathbf{q}| = 1$.
 
-These are the **real roots** of *Biquaternion Roots of Minus One*, of real dimension two; the trivial roots $\pm i$ and the four-real-dimensional family of non-trivial roots lie outside the subspace. Under the bijection $\xi \mapsto \tfrac12(e_0 + \xi i)$ of *Biquaternion Idempotents and Projections* they give exactly the **Hermitian idempotents** $\tfrac12(e_0 + \mu i)$ of the Hermitian subspace, the orthogonal projections of the algebra; the complementary pair $\{\tilde\Pi, e_0-\tilde\Pi\}$ corresponds to the pair $\{\mu, -\mu\}$. The roots of the quaternion subspace therefore parametrise the Hermitian idempotents, two opposite roots corresponding to a complementary pair, and the trivial and non-trivial roots, which generate the other two families of idempotents, lie outside it.
+These are the **real roots** of *Biquaternion Square Roots of Minus One, Zero and Plus One*, of real dimension two; the trivial roots $\pm i$ and the four-real-dimensional family of non-trivial roots lie outside the subspace. Under the bijection $\xi \mapsto \tfrac12(e_0 + \xi i)$ of *Biquaternion Idempotents and Projections* they give exactly the **Hermitian idempotents** $\tfrac12(e_0 + \mu i)$ of the Hermitian subspace, the orthogonal projections of the algebra; the complementary pair $\{\tilde\Pi, e_0-\tilde\Pi\}$ corresponds to the pair $\{\mu, -\mu\}$. The roots of the quaternion subspace therefore parametrise the Hermitian idempotents, two opposite roots corresponding to a complementary pair, and the trivial and non-trivial roots, which generate the other two families of idempotents, lie outside it.
 
 ### Zero Divisors
 
@@ -275,7 +275,7 @@ The quaternion subspace $\mathbb{H}_{\mathbb{B}}$ is the fixed space of complex 
 - *Biquaternion Involution Lattice* (`articles_maths/biquaternion-involution-lattice.md`), for the four involutions, their composition law and their fixed spaces
 - *Biquaternion Idempotents and Projections* (`articles_maths/biquaternion-idempotents-and-projections.md`), for the classification whose Hermitian branch is built from the roots of the subspace
 - *Biquaternion Ideals and Peirce Decomposition* (`articles_maths/biquaternion-ideals-and-peirce-decomposition.md`), for the module structure over the subspace and the action of complex conjugation on the minimal left ideals
-- *Biquaternion Roots of Minus One* (`articles_maths/biquaternion-roots-of-minus-one.md`), for the classification of the solutions of $\xi^2 = -1$ in the whole algebra
+- *Biquaternion Square Roots of Minus One, Zero and Plus One* (`articles_maths/biquaternion-square-roots-of-minus-one-zero-and-plus-one.md`), for the classification of the solutions of $\xi^2 = -1$ in the whole algebra
 - *Biquaternion Zero Divisors* (`articles_maths/biquaternion-zero-divisors.md`), for the two families of zero divisors, of which the subspace carries none
 - *Biquaternion Lie Algebra* (`articles_maths/biquaternion-lie-algebra.md`), for the rotation subalgebra $\mathrm{K}$ and the real form of the trace-free part
 - *Biquaternion Norm and Invertibility* (`articles_maths/biquaternion-norm-and-invertibility.md`), for multiplicativity, the invertibility criterion and the group of units

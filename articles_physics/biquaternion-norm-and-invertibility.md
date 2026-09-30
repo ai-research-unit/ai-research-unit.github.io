@@ -418,7 +418,7 @@ The invertibility criterion is $N(\tilde{Q})\neq0$, with inverse $\tilde{Q}^{-1}
 
 The group of units $\mathbb{B}^\times$ is open, connected and isomorphic to $\mathrm{GL}(2,\mathbb{C})$, a real Lie group of dimension 8 with Lie algebra $\mathbb{B}$ and center $\mathbb{C}^\times$. The algebra is partitioned into the zero element, the invertible elements and the zero divisors, and this is the partition of four-vectors into the null ones and the rest. Of the six subspaces, $\mathbb{C}_{\mathbb{B}}$, $\mathbb{H}_{\mathbb{B}}$ and $i\mathbb{H}_{\mathbb{B}}$ contain no zero divisors; $\mathbb{M}_+$ and $\mathbb{M}_-$ contain a cone each, with three-component complements; and $\mathrm{Vect}(\mathbb{B})$ contains the complex nilpotent cone of codimension 2, whose complement is connected.
 
-The zero divisors are studied in *Biquaternion Zero Divisors*, and the classification of the roots of $-1$ that underlies the idempotent classification in *Biquaternion Roots of Minus One*.
+The zero divisors are studied in *Biquaternion Zero Divisors*, and the classification of the roots of $-1$ that underlies the idempotent classification in *Biquaternion Square Roots of Minus One, Zero and Plus One*.
 
 ## Summary of Notation
 

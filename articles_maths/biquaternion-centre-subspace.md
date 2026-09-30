@@ -172,7 +172,7 @@ Being the centre, $\mathbb{C}_{\mathbb{B}}$ enters the ideal theory of $\mathbb{
 
 **Proof.** One has $(Q_0 e_0)^2 = Q_0^2 e_0$, which equals $-e_0$ if and only if $Q_0^2 = -1$, that is $Q_0 = \pm i$.
 
-In the classification of *Biquaternion Roots of Minus One* the trivial roots $\pm i$ are the two isolated points of the root set, while the two-real-dimensional family of real roots and the four-real-dimensional family of non-trivial roots lie elsewhere; the centre contains none of the roots that generate non-central idempotents. Under the bijection $\xi \mapsto \tfrac12(e_0 + \xi i)$ of *Biquaternion Idempotents and Projections* the two trivial roots give exactly the two trivial idempotents $0$ and $e_0$, and nothing else of the idempotent set.
+In the classification of *Biquaternion Square Roots of Minus One, Zero and Plus One* the trivial roots $\pm i$ are the two isolated points of the root set, while the two-real-dimensional family of real roots and the four-real-dimensional family of non-trivial roots lie elsewhere; the centre contains none of the roots that generate non-central idempotents. Under the bijection $\xi \mapsto \tfrac12(e_0 + \xi i)$ of *Biquaternion Idempotents and Projections* the two trivial roots give exactly the two trivial idempotents $0$ and $e_0$, and nothing else of the idempotent set.
 
 ### Zero Divisors
 
@@ -243,7 +243,7 @@ The centre subspace $\mathbb{C}_{\mathbb{B}}$ is the fixed space of quaternion c
 - *Biquaternion Involution Lattice* (`articles_maths/biquaternion-involution-lattice.md`), for the four involutions, their composition law and the two spaces each of them defines
 - *Biquaternion Idempotents and Projections* (`articles_maths/biquaternion-idempotents-and-projections.md`), for the classification of the idempotents, of which the centre carries only the trivial two
 - *Biquaternion Ideals and Peirce Decomposition* (`articles_maths/biquaternion-ideals-and-peirce-decomposition.md`), for the simplicity of $\mathbb{B}$ and the Peirce corners, none of which is central
-- *Biquaternion Roots of Minus One* (`articles_maths/biquaternion-roots-of-minus-one.md`), for the classification whose two trivial points are the roots of the centre
+- *Biquaternion Square Roots of Minus One, Zero and Plus One* (`articles_maths/biquaternion-square-roots-of-minus-one-zero-and-plus-one.md`), for the classification whose two trivial points are the roots of the centre
 - *Biquaternion Zero Divisors* (`articles_maths/biquaternion-zero-divisors.md`), for the two families of zero divisors, the centre contributing only the origin
 - *Biquaternion Lie Algebra* (`articles_maths/biquaternion-lie-algebra.md`), for the centre of the Lie algebra $\mathrm{G}$ and its abelianisation
 - *Biquaternion Norm and Invertibility* (`articles_maths/biquaternion-norm-and-invertibility.md`), for the biquaternion norm on the whole algebra and the invertibility criterion

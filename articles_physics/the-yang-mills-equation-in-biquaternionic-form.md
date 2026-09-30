@@ -243,6 +243,60 @@ Two consequences follow, and both are stated as findings rather than repairs.
 - **The source biquaternion $\mathcal{J} = \sum_\nu J_\nu e_\nu$ is a valid packaging.** Its components transform in the adjoint, and the equation $\sum_\nu \bigl(D_\mu F_{\mu\nu}\bigr) e_\nu = \mathcal{J}$ is exact and covariant. This is the biquaternionic form of the Yang–Mills equation used here.
 - **A single adjoint-covariant product of the curvature is not that equation.** As shown in the previous section, $\sum_\mu D_\mu(\sum_\nu F^{\mu\nu}e_\nu)$ differs from $\sum_{\mu,\nu} \bigl(D_\mu F^{\mu\nu}\bigr) e_\nu$ by the index-mixing term $i\kappa\sum_{\mu\nu}F_{\mu\nu}[\mathcal{A}_\mu,e_\nu]$, which is nonzero for a generic connection. Whether some other representative of the non-abelian curvature makes the field equation a one-line product, in the way the pure-vector Riemann–Silberstein representative does in the abelian case, is not settled here.
 
+## A Biwave Equation with a Vector Structural Coefficient
+
+There is a second biquaternion equation in the literature whose matrix form has been called Yang–Mills-like, and it is worth separating from the construction above. In a four-part series on the differential algebra of biquaternions, L. A. Alexeyeva studies the wave equation
+
+$$
+\nabla^\pm B + F \circ B = G(\tau, \mathbf{x}),
+\qquad
+\nabla^\pm = \partial_\tau \pm i\,\nabla ,
+$$
+
+where $\tau$ is time in units of length, $\circ$ the biquaternion product, $G$ a given biquaternionic source, and $F = f + \mathbf{F}$ a **constant** biquaternion — the *structural coefficient* — with scalar part $f$ and vector part $\mathbf{F}$ [Alexeyeva 2014]. The four papers are a sequence of specialisations of this one equation: the earlier ones treat the members equivalent to the biquaternionic Maxwell system ($F = 0$) and to the biquaternionic Dirac system ($F = f$, a complex scalar), with their generalisations, and the fourth takes the **vector-valued** coefficient $\mathbf{F} \neq 0$. The author's remark for that case is that the equation, written in matrix (tensor) form, belongs to the class of Yang–Mills equations. Recording the series here gives the corpus a single source for the Maxwell–Dirac–Yang–Mills web that the framework's own articles reach by separate routes.
+
+**What the identification is, and what it is not.** The coefficient is constant, so the equation carries no non-constant connection, no commutator curvature and no covariant derivative of the kind $D_\mu$ above. "Belongs to the class of Yang–Mills equations" is a statement about the **matrix form of a linear first-order system with matrix coefficients** — the shape of the equation, not its gauge structure. The two constructions are therefore not competing derivations of one object: this article's equation is non-linear in a field-valued connection and its current is only covariantly conserved, while the biwave equation is linear with a fixed coefficient. That one route reaches a Yang–Mills-type matrix form from a constant coefficient, and the other from a connection, is a genuine difference of route, and the corpus records it as such rather than as an agreement.
+
+**Second-order form and solution.** Composing the two mutual operators for constant $\mathbf{F}$ gives the single second-order operator
+
+$$
+\left(\nabla^- - \mathbf{F}\right)\circ\left(\nabla^+ + \mathbf{F}\right)
+= \Box_A + (\mathbf{F},\mathbf{F}) + 2i(\mathbf{F},\nabla),
+\qquad
+\Box_A = \partial_\tau^2 - \Delta ,
+$$
+
+so each component of $B$ solves a Klein–Gordon–Fock-type equation whose mass is the norm $(\mathbf{F},\mathbf{F})$ of the coefficient, plus one first-order directional term. *The Klein–Gordon Equation in Biquaternionic Form* treats that operator and the sense in which the vector coefficient makes it factor into first-order operators, which is the point of contrast with its scalar-coefficient case. The inhomogeneous equation is solved by convolution with the fundamental solution
+
+$$
+\psi(\tau,\mathbf{x}) = \frac{e^{i(\mathbf{F},\mathbf{x})}}{4\pi|\mathbf{x}|}\left((1-a)\,\delta(\tau-|\mathbf{x}|) + a\,\delta(\tau+|\mathbf{x}|)\right) + \psi^0(\tau,\mathbf{x}),
+\qquad a \in \mathbb{C},
+$$
+
+with $\psi^0$ an arbitrary solution of the homogeneous scalar equation: a superposition of the retarded and advanced $\delta$-layers on the light cone carrying the exponential weight $e^{i(\mathbf{F},\mathbf{x})}$, the constant $a$ choosing the branch. The published form of the solution is $B = (\nabla^- - \mathbf{F})(\psi * G) + B^0$, the homogeneous part $B^0$ being built from the same kernel and arbitrary biquaternionic fields. The weight is not decoration: the Fourier denominator is $(\boldsymbol{\xi} + \mathbf{F}, \boldsymbol{\xi} + \mathbf{F}) - \omega^2$, which is *linear* in the wave vector, and that is why the kernel is a $\delta$-layer on the cone rather than the Bessel-type kernel of the ordinary massive case.
+
+**The characteristic surface, by case.** The homogeneous equation $\nabla^+ B + \mathbf{F}\circ B = 0$ has plane-wave solutions supported on
+
+$$
+S = \left\{(\omega,\boldsymbol{\xi}) : (\boldsymbol{\xi} + \mathbf{F}, \boldsymbol{\xi} + \mathbf{F}) = \omega^2\right\},
+$$
+
+with $(\cdot,\cdot)$ the complex-bilinear pairing. Writing $\mathbf{F} = -E - iH$ with $E, H$ real vectors, the surface degenerates according to which part of the coefficient is present:
+
+| Coefficient | Surface $S$ | Reading |
+|---|---|---|
+| real, $\mathbf{F} = -E$ | cone in $\mathbb{R}^4$ with vertex $(\omega,\boldsymbol{\xi}) = (0,E)$ | the coefficient shifts the vertex of the light cone; the kernel carries the phase weight $e^{-i(E,\mathbf{x})}$, a drift of the wave vector, not a curvature |
+| imaginary, $\mathbf{F} = -iH$ | the plane $(\boldsymbol{\xi},H) = 0$ with the disc $\|\boldsymbol{\xi}\| < \|H\|$ removed | real frequencies exist only off the disc; the weight is $e^{-(H,\mathbf{x})}$, an exponential growth or decay along $H$ |
+| complex, $\mathbf{F} = -E - iH$ | the plane through $\boldsymbol{\xi}^* = E$ perpendicular to $H$, with the disc $\|\boldsymbol{\xi} - E\| < \|H\|$ removed | both effects at once, on a cone translated by $E$ |
+
+The separation of the two parts of the coefficient is the point of the exercise: its **real part** shifts the wave vector and appears as the phase of the fundamental solution, while its **imaginary part** makes the amplitude grow or decay off the surface, so a complex coefficient describes a driven or dissipative medium. When $\|\boldsymbol{\xi} - E\| \leq \|H\|$ the potentials become standing waves with exponentially growing or decaying amplitude, and the elementary solutions of that regime are the ones catalogued in *Twistor Theory and Biquaternions*. Separating a harmonic time dependence, $B = B(\mathbf{x})e^{-i\omega\tau}$, replaces the mutual bigradients by $\nabla^{\pm}_{\omega} = \omega \pm \nabla$ and gives the stationary surface
+
+$$
+S^{\omega} = \left\{\boldsymbol{\xi} : (\boldsymbol{\xi} + i\mathbf{F}, \boldsymbol{\xi} + i\mathbf{F}) = \omega^2\right\},
+$$
+
+with the same complex-bilinear pairing: the circle of radius $\sqrt{\omega^2 + \|A\|^2}$ centred at $B$ in the plane through $B$ perpendicular to $A$, where $\mathbf{F} = A + iB$ — a sphere of radius $|\omega|$ centred at $B$ when $A = 0$. Both characteristic surfaces are written here in the coefficient $\mathbf{F}$ itself, so they hold whatever identification it is given with the physical vectors. Letting $\omega \to 0$ gives the static solutions, and the elementary stationary potential is the plane wave of wave vector $K_F = H + \mathbf{e}_E\sqrt{\omega^2 + \|E\|^2}$ with $\mathbf{e}_E \perp E$, whose invariants are recorded in the twistor article.
+
 ## Open Questions
 
 1. **A one-line biquaternion form.** The abelian parent compresses its four equations into $\tilde{\nabla}\tilde{F} = -\tilde{R}$. Is there a representative of the non-abelian curvature, or a modified product, for which the Yang–Mills equation is a single adjoint-covariant biquaternion identity, or is the index-mixing obstruction of this article fatal to that program? The obstruction found here is sharp enough to state and not resolved.
@@ -258,6 +312,8 @@ Two consequences follow, and both are stated as findings rather than repairs.
 6. **Topological terms.** The Bianchi identity and the invariant density are the ingredients of $\int\mathrm{Tr}(F\wedge F)$ and of instanton solutions. The self-dual truncation of the field equation is treated elsewhere; its relation to the biquaternion packaging is open.
 
 7. **Empirical contact.** As everywhere in the framework, whether any of this yields a prediction distinguishing it from standard non-abelian gauge theory is untouched. The construction is a reformulation.
+
+8. **The matrix form called Yang–Mills-like.** Alexeyeva's vector-coefficient biwave equation is reported to belong to the class of Yang–Mills equations once written in matrix (tensor) form. Whether that form carries any of the structure this article's $D_\mu$ carries — a connection, a covariant conservation law, gauge covariance — or only the shape of a linear first-order system with a constant coefficient, is not settled by the source and is left open here. It is the one question on which the two routes might be made to meet.
 
 ## Summary
 
@@ -279,6 +335,8 @@ with $D_\mu = \partial_\mu + i\kappa\mathcal{A}_\mu$ and $F_{\mu\nu} = \partial_
 In the abelian limit — a commuting generator set, whether the center $\mathbb{C}_{\mathbb{B}}$ of the parent or a single fixed generator — every commutator vanishes: $[\mathcal{A}_\mu,\mathcal{A}_\nu] = 0$ removes the curvature's commutator term, $[\mathcal{A}_\mu,F^{\mu\nu}] = 0$ removes the field equation's, and $[\mathcal{A}_\nu,J^\nu] = 0$ removes the one separating covariant from ordinary conservation. The equation reduces to Maxwell's, $\partial_\mu F^{\mu\nu} = J^\nu$, with an ordinarily conserved current that is invariant under the abelian gauge transformations preserving the generator set. Nothing cancels; the abelian connection commutes with everything it meets.
 
 The biquaternionic packaging is exact for the current, $\mathcal{J} = \sum_\nu J_\nu e_\nu$ with $\sum_\nu \bigl(D_\mu F_{\mu\nu}\bigr) e_\nu = \mathcal{J}$ and $J'_\nu = UJ_\nu U^{-1}$, and limited for the curvature: the representative $\mathcal{F} = \tfrac12\sum_{\mu\nu}F_{\mu\nu}\bar{e}_\mu e_\nu$ inherits the componentwise adjoint law, not a single conjugation, and the naive one-line product picks up an index-mixing term of order unity. That limitation is stated, not papered over.
+
+A second, independent route to a biquaternion equation with a Yang–Mills-type matrix form is recorded from the literature: the biwave equation $\nabla^\pm B + F\circ B = G$ with a constant vector structural coefficient, whose homogeneous solutions are the algebraic twistors and whose second-order operator carries a mass $(\mathbf{F},\mathbf{F})$ and a directional term. It is linear, with a fixed coefficient, and therefore carries no connection and no covariant conservation law. The corpus keeps the two routes apart by name and records the matrix-form claim as a class statement, not an equivalence.
 
 ## Summary of Notation
 
@@ -318,6 +376,9 @@ The biquaternionic packaging is exact for the current, $\mathcal{J} = \sum_\nu J
 | $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ | Inherited informational trace formula (distinct from the matrix trace) |
 | $\tilde{R} = R_0+\mathbf{R}$ | Parent's abelian source biquaternion; plays the role of $-\mathcal{J}$ up to the parent's normalisation |
 | $c = 1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |
+| $\mathbf{F} = -E - iH$ | Constant complex-vector structural coefficient of the biwave equation (Alexeyeva); $E, H$ real vectors |
+| $\nabla^\pm = \partial_\tau \pm i\nabla$, $\Box_A = \partial_\tau^2 - \Delta$ | Mutual bigradients and wave operator of the biwave equation; $\Box_A$ is minus this article's $\Box$ |
+| $\psi$, $K_F$ | Fundamental solution of the biwave equation; wave vector of its elementary stationary solution |
 
 ## Further Reading
 
@@ -335,3 +396,4 @@ The biquaternionic packaging is exact for the current, $\mathcal{J} = \sum_\nu J
 - *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector* — the sector basis and the imaginary-scalar/real-vector structure on which the $\mathrm{SU}(2)$ gauge factor rests.
 - *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector* — the Hermitian sector and the trace formula distinguished here from the matrix trace.
 - *Curved Spacetime and the Biquaternion Framework* — the two-sided gravitational connection, distinct from the one-sided gauge connection of this article.
+- L. A. Alexeyeva, "Differential algebra of biquaternions. 4. Twistors and twistor fields," arXiv:1406.5347 [math-ph] (2014), for the vector-coefficient biwave equation whose matrix form is identified with the Yang–Mills class, and for its fundamental solution and characteristic surfaces.

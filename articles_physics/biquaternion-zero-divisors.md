@@ -85,7 +85,7 @@ $$
 
 and the vanishing condition allows the scalar and vector contributions to cancel; the resulting solutions are the complex multiples of the idempotents.
 
-**Physical reading.** The two families are the two ways an element can be null. The pure family is null by having no scalar component at all: its two parts cannot cancel, and it is the parabolic case of the generator trichotomy of *Biquaternion Roots of Minus One* — $\xi^2 = 0$, a nilpotent. The non-pure family is null by cancellation between a timelike and a spacelike contribution: that is the familiar light-cone condition, and this is the family to which a photon's momentum belongs.
+**Physical reading.** The two families are the two ways an element can be null. The pure family is null by having no scalar component at all: its two parts cannot cancel, and it is the parabolic case of the generator trichotomy of *Biquaternion Square Roots of Minus One, Zero and Plus One* — $\xi^2 = 0$, a nilpotent. The non-pure family is null by cancellation between a timelike and a spacelike contribution: that is the familiar light-cone condition, and this is the family to which a photon's momentum belongs.
 
 ## Pure Zero Divisors
 
@@ -176,7 +176,7 @@ The normalised momentum of a photon is a Hermitian idempotent — a **pure state
 
 ## The Roots of Minus One
 
-The non-pure zero divisors are complex multiples of idempotents, and the idempotents are classified by the roots of $-1$; those roots are classified in *Biquaternion Roots of Minus One*, and the resulting classification of the idempotents is in *Biquaternion Idempotents and Projections*. In the physical reading of those articles the roots are the algebra's imaginary units and generators, and the idempotents are the pure states; a non-pure zero divisor is therefore a scaled state direction.
+The non-pure zero divisors are complex multiples of idempotents, and the idempotents are classified by the roots of $-1$; those roots are classified in *Biquaternion Square Roots of Minus One, Zero and Plus One*, and the resulting classification of the idempotents is in *Biquaternion Idempotents and Projections*. In the physical reading of those articles the roots are the algebra's imaginary units and generators, and the idempotents are the pure states; a non-pure zero divisor is therefore a scaled state direction.
 
 ## Distribution of the Zero Divisors
 
@@ -204,7 +204,7 @@ An element has real coefficients and its biquaternion norm is a sum of squares o
 
 For $i\tilde{P}$ with $\tilde{P}\in\mathbb{H}_{\mathbb{B}}$, $N(i\tilde{P}) = -(p_0^2+p_1^2+p_2^2+p_3^2)$, which is negative-definite and vanishes only at the origin: $i\mathbb{H}_{\mathbb{B}}$ contains **no** zero divisors, even though it is not a subalgebra.
 
-**Physical reading.** Pure boosts are never null either: $i\mathbb{H}_{\mathbb{B}}$ is the hyperbolic-generator subspace of *Biquaternion Roots of Minus One*, and its biquaternion norm is negative-definite, so every nonzero boost is a unit.
+**Physical reading.** Pure boosts are never null either: $i\mathbb{H}_{\mathbb{B}}$ is the hyperbolic-generator subspace of *Biquaternion Square Roots of Minus One, Zero and Plus One*, and its biquaternion norm is negative-definite, so every nonzero boost is a unit.
 
 ### The Hermitian Subspace $\mathbb{M}_+$
 

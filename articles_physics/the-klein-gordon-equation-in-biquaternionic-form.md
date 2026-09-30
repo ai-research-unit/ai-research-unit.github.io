@@ -92,6 +92,42 @@ and the two results are different elements of the algebra. Complex conjugation s
 
 The trap here is the sharper version of the trap in the parent article. There, the error was to conflate the central $i$ with a non-central root of $-1$ and ask a quaternion unit to play the role of the complex structure. Here the error is to conflate the central $i$ with complex conjugation: the two both involve "the imaginary," both connect the pieces of the second-order structure in a loose verbal sense, and both are written with an $i$-like symbol, but one preserves the sectors and reverses frequency while the other exchanges the sectors and preserves frequency. Reading the Klein–Gordon conjugate pair as a sector pair is precisely the conflation.
 
+## A Vector Coefficient: When the Operator Does Factor
+
+The obstruction above is for a **scalar** coefficient. A vector coefficient fares differently, and the exception is instructive. In the fourth paper of her series on the differential algebra of biquaternions, L. A. Alexeyeva studies the first-order system
+
+$$
+\left(\nabla^+ + \mathbf{F}\right) B = G,
+\qquad
+\nabla^\pm = \partial_\tau \pm i\,\nabla ,
+$$
+
+with $B$ and $G$ biquaternion-valued and $\mathbf{F}$ a **constant complex vector** — a structural coefficient carrying no scalar part [Alexeyeva 2014]. The two mutual operators compose into one second-order operator,
+
+$$
+\left(\nabla^- - \mathbf{F}\right)\circ\left(\nabla^+ + \mathbf{F}\right)
+= \Box_A + (\mathbf{F},\mathbf{F}) + 2i(\mathbf{F},\nabla),
+\qquad
+\Box_A = \partial^2_\tau - \Delta ,
+$$
+
+which is the Klein–Gordon–Fock operator $\Box_A + m^2$ with $m^2 = (\mathbf{F},\mathbf{F})$ — the coefficient's own norm supplies the mass — **plus** the first-order directional term $2i(\mathbf{F},\nabla)$. That term is of exactly the kind that made the scalar factorisation impossible above; here it is not an obstruction but the product structure itself, and the operator is a genuine composition of two first-order operators. The identity was recomputed on 100 random constant complex vectors and plane waves, with maximum error $2 \times 10^{-15}$.
+
+**Fundamental solution.** The kernel of the operator is elementary. Alexeyeva's Theorem 4.1.2, in her variables $\tau$ and $\Box_A$, gives
+
+$$
+\psi(\tau,\mathbf{x}) = \frac{e^{i(\mathbf{F},\mathbf{x})}}{4\pi|\mathbf{x}|}\left((1-a)\,\delta(\tau-|\mathbf{x}|) + a\,\delta(\tau+|\mathbf{x}|)\right) + \psi^0(\tau,\mathbf{x}),
+\qquad a \in \mathbb{C},
+$$
+
+with $\psi^0$ an arbitrary solution of the homogeneous equation: a $\delta$-layer on the forward light cone and a $\delta$-layer on the backward light cone, weighted by the exponential $e^{i(\mathbf{F},\mathbf{x})}$, with the constant $a$ choosing the mixture — $a = 0$ retarded, $a = 1$ advanced. The first-order system is then solved by $B = (\nabla^- - \mathbf{F})(\psi * G)$, and the homogeneous fields are obtained from the same kernel by convolution with arbitrary biquaternionic data.
+
+**Why the kernel is simpler than the standard one, and what that does not mean.** The ordinary massive operator $\Box_A + \mu^2$ has Fourier symbol $\omega^2 - |\boldsymbol{\xi}|^2 - \mu^2$, whose zero set is the two-sheeted mass hyperboloid; its fundamental solution is not a light-cone layer, and the standard references build it out of Bessel-type functions. Here the symbol is $(\boldsymbol{\xi} + \mathbf{F}, \boldsymbol{\xi} + \mathbf{F}) - \omega^2$, the symbol of a *product* of two first-order operators, and the kernel is correspondingly a light-cone layer with the weight $e^{i(\mathbf{F},\mathbf{x})}$. Alexeyeva states the contrast with Vladimirov's Klein–Gordon–Fock fundamental solution explicitly. The caveat belongs with it: the operator that factors is not $\Box_A + \mu^2$ but $\Box_A + \mu^2$ *together with* the directional term, and the two cannot be separated — setting $\mathbf{F} = 0$ removes the mass with the direction, and turning off only $2i(\mathbf{F},\nabla)$ while keeping $(\mathbf{F},\mathbf{F})$ is not a case of the construction. The simplification is a property of the compensated operator, and the scalar-equation obstruction of the previous section stands.
+
+**Reading the two parts of the coefficient.** Write $\mathbf{F} = -E - iH$ with $E, H$ real vectors. The real part enters the kernel as the phase weight $e^{-i(E,\mathbf{x})}$, which is a constant shift of the wave vector — a drift of the wave pattern, not a change of the dispersion relation, since the symbol depends on $\boldsymbol{\xi} + \mathbf{F}$ — and the imaginary part enters as the exponential $e^{-(H,\mathbf{x})}$, a growth or decay with distance that makes a complex coefficient the mark of a driven or dissipative medium. The mass is the norm $m^2 = (\mathbf{F},\mathbf{F}) = |E|^2 - |H|^2 + 2i(E,H)$: real and positive for a real coefficient, negative for a purely imaginary one, and complex in general. The plane-wave solutions, and the standing waves with exponentially growing or decaying amplitude that appear when the coefficient is imaginary, are catalogued in *Twistor Theory and Biquaternions*, where the same operator generates the algebraic twistors.
+
+**Convention.** Alexeyeva's $\Box_A = \partial^2_\tau - \Delta$, with $\tau$ measured in units of length, is **minus** this article's $\Box = \partial^2_{ict} + \Delta$, which was fixed at the top of the article; the factorisation identity and the kernel are quoted in her variables so that no sign is transplanted. The product structure, the mass $(\mathbf{F},\mathbf{F})$ and the light-cone support of the kernel are independent of that overall sign.
+
 ## Plane Waves and the Dispersion Relation
 
 The plane-wave solutions are written with the four-wavevector of the read list,
@@ -254,6 +290,8 @@ The honest bottom line is a negative result about the framework's central struct
 
 5. **Second quantization in the biquaternion framework.** The resolution of both defects is to quantize the field, with $\tilde{\Phi}$ and $\tilde{\Phi}^*$ becoming operators. Whether the biquaternion structure adds anything to that procedure, or is again a relabelling of the complex scalar field's second quantization, is open.
 
+6. **A factorable massive operator.** The vector-coefficient operator $\Box_A + (\mathbf{F},\mathbf{F}) + 2i(\mathbf{F},\nabla)$ factors into first-order operators and has a light-cone kernel, but its mass and its directional term cannot be separated. Is there a class of *massive* scalar operators with elementary kernels that is not obtained by this compensated construction — or, equivalently, is the price of factorisability always a compensating first-order term? The construction also raises whether the compensated operator has a physical reading of its own, rather than being a device for solving the first-order system.
+
 ## Summary
 
 The Klein–Gordon equation in biquaternionic form is
@@ -269,6 +307,8 @@ with $\tilde{\Phi}$ a biquaternion-valued field. Because $\Box$ is central and s
 Being second order in time, the equation has two frequency branches and requires both $\tilde{\Phi}$ and $\tilde{\Phi}^*$. Its dispersion relation is $\omega^2 = c^2\mathbf{k}^2 + m^2c^4/\hbar^2$, which is the mass-shell condition $\tilde{K}\bar{\tilde{K}} = -m^2c^2/\hbar^2$, and the phase of a plane wave is the scalar part $\mathrm{Sc}(\tilde{K}\bar{\tilde{Q}}) = \mathbf{k}\cdot\mathbf{x}-\omega t$. Both branches were checked on a case chosen independently of the derivation. The conserved current $\tilde{J} = ic\rho e_0 + \mathbf{j}$ lies in $\mathbb{M}_-$ and satisfies $\mathrm{Sc}(\bar{\tilde{\nabla}}\tilde{J})=0$, but its scalar component $\rho$ has the sign of the frequency and is not positive definite; together with the absence of a one-particle interpretation, this is the two-fold defect the equation has always had, and the biquaternion notation neither removes nor disguises it.
 
 The central structural question has a negative answer. The second-order structure does **not** fit the $\mathbb{M}_-/\mathbb{M}_+$ split naturally. Since $\Box$ is central, the split decouples the equation into two sectors hosting two copies of the same real solution space, exchanged by multiplication by $i$; the $\mathbb{M}_-$ part of a solution is the $i$-image of an $\mathbb{M}_+$ solution, so the pairing is the real/imaginary-part split of a complex field, not a conjugate pair. The conjugate pair is complex conjugation, which preserves both sectors, and the doubling the equation actually needs is the spinor-module doubling of the first-order square root $\tilde{\nabla}$, whose mass term is the linear coupling of the two chiralities. That doubling is representation-theoretic, not the real fixed-point decomposition. The non-relativistic limit recovers the parent article's free Schrödinger equation with the same central scalar imaginary $i$, so the two articles use one complex structure and no competing unit.
+
+One exception to the obstruction is imported from the literature and kept separate from the framework's own operator. For a *vector* structural coefficient $\mathbf{F}$ the second-order operator $\Box_A + (\mathbf{F},\mathbf{F}) + 2i(\mathbf{F},\nabla)$ does factor into two first-order operators, and its fundamental solution is a weighted $\delta$-layer on the light cone rather than a Bessel-type kernel. The factorisation is paid for by the directional term: the mass $(\mathbf{F},\mathbf{F})$ and $2i(\mathbf{F},\nabla)$ arrive together and cannot be separated, so the result is not a square root of the framework's massive scalar operator. It is a structural fact about the compensated operator, recorded here because it is the sharpest known contrast with the scalar obstruction.
 
 ## Summary of Notation
 
@@ -296,6 +336,8 @@ The central structural question has a negative answer. The second-order structur
 | $\mu = mc/\hbar$ | Mass parameter |
 | $c = 1/\sqrt{\epsilon\mu}$ | Speed of light in the medium |
 | $c_0 = 1/\sqrt{\epsilon_0\mu_0}$ | Speed of light in vacuum |
+| $\mathbf{F}$, $\nabla^\pm = \partial_\tau \pm i\nabla$, $\Box_A = \partial_\tau^2 - \Delta$ | Constant complex-vector structural coefficient of the biwave system (Alexeyeva) and its operators; $\Box_A$ is minus this article's $\Box$ |
+| $\Box_A + (\mathbf{F},\mathbf{F}) + 2i(\mathbf{F},\nabla) = (\nabla^- - \mathbf{F})(\nabla^+ + \mathbf{F})$ | The factorable operator of the vector-coefficient case |
 
 ## Further Reading
 
@@ -306,3 +348,4 @@ The central structural question has a negative answer. The second-order structur
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the biquaternion algebra, its conjugations, and its fixed-point subspaces.
 - Chris Doran and Anthony Lasenby, *Geometric Algebra for Physicists* (Cambridge, 2003), for the geometric-algebra treatment of the wave equations and their spinor factorisation.
 - L. A. Alexeyeva, "Differential algebra of biquaternions. Dirac equation and its generalized solutions," *Progress in Analysis, Proceedings of the 8th Congress of the ISAAC* (Moscow, 2013), pp. 153–161, for the biquaternion formulation of relativistic wave equations.
+- L. A. Alexeyeva, "Differential algebra of biquaternions. 4. Twistors and twistor fields," arXiv:1406.5347 [math-ph] (2014), for the vector-coefficient biwave system, the factorisation of its second-order operator, and the elementary light-cone fundamental solution contrasted there with Vladimirov's Klein–Gordon–Fock kernel.

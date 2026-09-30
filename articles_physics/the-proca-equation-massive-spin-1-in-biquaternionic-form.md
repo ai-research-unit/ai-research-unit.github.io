@@ -254,6 +254,42 @@ so the field strength is not harmonic, and the potential — a material-sector f
 
 The two helicities of the massless field are the labels of the two self-dual halves. For the massive field the two transverse polarizations survive as helicity $\pm1$ in the rest frame, but helicity is no longer a Lorentz-invariant label, because a boost can rotate a transverse polarization into the longitudinal one. The algebra does not decide this: it represents both the massless and the massive case on the same footing, and the presence or absence of the third polarization is an input, the value of $m$. This is the same structural situation that the companion article on the photon records for the massless case, read in the opposite direction.
 
+## The Lanczos Parent and the Two Reversal Combinations
+
+The Proca equation is one of three relativistic field equations that descend from a **single** first-order system. Lanczos's coupled system $\tilde{\nabla}\tilde{A}=m\tilde{B}$, $\tilde{\nabla}\tilde{B}=m\tilde{A}$ sits beneath the classical layer, and its descendants are reached by three different algebraic operations:
+
+- the **Dirac** equation, by the idempotent superposition $D=\tilde{A}\sigma+\tilde{B}^{*}\bar{\sigma}$ of the standard-model agenda article, whose combined form is strictly equivalent to Dirac's equation;
+- the **Proca** equation, by combining the second Lanczos equation with its **order reverse** (its ordinal conjugate), the potential being ordinal-invariant, $\tilde{A}=\tilde{A}^{\sim}$;
+- the **Maxwell** equation, as the massless limit of Proca.
+
+The observation is due to Gsponer and Hurni, and it is sharper than the list suggests. Combining the equation with its own order reverse gives not two independent equations but the two **reversal parities** of one. In the source's notation, with $\nabla$ the biquaternionic gradient, $\tilde{F}^{\sim}$ the order reverse of the field strength and the second gradient acting to the right,
+
+$$
+\tfrac12\left(\nabla\tilde{F} + \tilde{F}^{\sim}\nabla\right) = m^2 A ,
+\qquad
+\tfrac12\left(\nabla\tilde{F} - \tilde{F}^{\sim}\nabla\right) = 0 .
+$$
+
+The **reversal-even** combination is Proca's equation; the **reversal-odd** combination is the statement that there are no magnetic monopoles. The mass term is reversal-even and the monopole-free constraint is reversal-odd, so the two are halves of one equation, and the Maxwell equation of the companion article is what remains when the even half is massless. The splitting requires the potential to be ordinal-invariant — this is the assumption the source notes is made silently when Maxwell's equation is first written — and it is the same assumption under which the field strength is the vector part of the conjugate gradient of the potential.
+
+<!-- CONVENTION — one reversal, not two. The source's order reversal $\sim$ is the Clifford reversal, which the corpus identifies with quaternion conjugation $\bar{\cdot}$ in *The Dirac Algebra and Biquaternions — A Dictionary* (signs $+$ on $e_0,ie_0$ and $-$ on $e_k,ie_k$ on the even basis). The source writes the reversed field bivector as $\tilde F^\sim=[0;\vec E-i\vec B]$, in its own sign and imaginary-conjugation conventions for the field components; that is the source's writing of the reversed field strength, not a second involution. Do not introduce a new "order reversal" map: the corpus has one reversal, and the involution lattice is already $\bar{\cdot}$, ${}^{*}$, $\dagger$, $\flat$. -->
+
+### The two parities and the two massive particles
+
+The reversal split also classifies the massive particles, and it does so in the same breath as the classification of the massless ones. The source's assumption for Proca is that the potential is reversal-**even**, $\tilde{A}=+\tilde{A}^{\sim}$, which is the corpus's statement that $\tilde{A}$ is a genuine four-vector. Taking instead $\tilde{A}=-\tilde{A}^{\sim}$ — a reversal-odd potential, the pseudovector case — gives another fully covariant equation differing from Proca's only in the **sign of the mass term**. The massive vector and the massive pseudovector are the two reversal parities of one descendant, exactly as their massless counterparts are.
+
+This is Gürsey's theorem, restated: the wave equations of **all** scalar and vector particles, and of all pseudo-scalar and pseudo-vector particles, are degenerate cases of Lanczos's fundamental equation. The framework does not need a separate first-order system for each spin-and-parity assignment; the one system contains them, distinguished by the reversal parity of the potential and by which superposition of the two fields is taken.
+
+### What the parent explains
+
+Three things that look like separate axioms become one.
+
+- **Why the Proca equation and the corpus's Maxwell equation share their left-hand side.** They are the same descendant in massive and massless form; the mass touches only the right-hand side, which is why the two equations differ there and nowhere else.
+- **Why the monopole-free statement is not an independent law.** It is the reversal-odd part of the same equation, not a second equation imposed on the field from outside.
+- **Why the classical layer has so few first-order systems.** Dirac, Proca, Maxwell and the massive pseudovector all reduce to Lanczos's pair; the algebra's classical equations are one family and not an unrelated list.
+
+What the parent does **not** do is fix the mass. The Lanczos parameter $m$ and the Einstein–Mayer mass biquaternion of the companion article on the Petiau system are inputs of the parent system, and the algebra supplies no value for either.
+
 ## What Is Standard and What the Algebra Adds
 
 The separation is worth stating explicitly, because the Proca equation is standard physics and the framework's contribution is a rewriting.
@@ -314,3 +350,6 @@ The plane-wave solutions carry a real spatial amplitude and a time component fix
 - Lev Landau and Evgeny Lifshitz, *The Classical Theory of Fields* (Pergamon, 1975), for the massive vector field in the classical theory and the physical third polarization.
 - J. D. Jackson, *Classical Electrodynamics* (Wiley, 1999), for the massless limit, the gauge freedom, and the transverse polarizations.
 - Walter Greiner and Joachim Reinhardt, *Field Quantization* (Springer, 1996), for the canonical treatment of the Proca field and its three polarization states.
+- A. Gsponer and J.-P. Hurni, "The physical heritage of Sir W. R. Hamilton," arXiv:math-ph/0201058, §9, for the derivation of Proca's equation from Lanczos's coupled system by the reversal-even combination, and for the identification of the reversal-odd combination with the absence of magnetic monopoles.
+- C. Lanczos, "Die tensoranalytischen Beziehungen der Diracschen Gleichung," *Zeitschrift für Physik* **57** (1929) 447–473, 474–483, 484–493 (arXiv:physics/0508002, physics/0508012, physics/0508013), for the coupled biquaternion system from which the Dirac and Proca equations both descend.
+- F. Gürsey, "Applications of quaternions to field equations," PhD thesis, University of London, 1950, for the classification of the scalar, vector, pseudoscalar and pseudovector equations as degenerate cases of Lanczos's fundamental equation.

@@ -217,7 +217,7 @@ $$
 P\cap\mathbb{H}_{\mathbb{B}}=\operatorname{span}_{\mathbb{R}}\{e_1,e_2,e_3\}\cong\mathbb{R}^3,
 $$
 
-whose unit sphere consists of the unit imaginary quaternions $\mu$ with $\mu^2=-e_0$, the family of **real roots of $-1$** classified in *Biquaternion Roots of Minus One*. The imaginary condition $\tilde{Q}^*=-\tilde{Q}$ gives
+whose unit sphere consists of the unit imaginary quaternions $\mu$ with $\mu^2=-e_0$, the family of **real roots of $-1$** classified in *Biquaternion Square Roots of Minus One, Zero and Plus One*. The imaginary condition $\tilde{Q}^*=-\tilde{Q}$ gives
 
 $$
 P\cap i\mathbb{H}_{\mathbb{B}}=\operatorname{span}_{\mathbb{R}}\{ie_1,ie_2,ie_3\}\cong\mathbb{R}^3,

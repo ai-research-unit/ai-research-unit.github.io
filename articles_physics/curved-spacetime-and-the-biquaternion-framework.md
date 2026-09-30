@@ -205,6 +205,79 @@ One object in this neighbourhood is automatic and one is not. The automatic one 
 
 What is not automatic is everything one would want. Metric compatibility and the vanishing of torsion are conditions, not consequences; nothing in the algebra selects the Levi-Civita lift. And the whole dynamics is absent: there is no action, no field equation for $\tilde{E}_\mu$ or $\tilde{\Gamma}_\mu$, and therefore no Einstein equation. The algebra can hold the objects of the spin-connection formalism in the same notation in which it holds the rotors and the four-vectors. It does not generate a single equation for them.
 
+## The Biquaternion Dirac Equation on a Curved Background
+
+The connection of the previous section was built for the material sector, where the field is a four-vector and the group acts by the two-sided rotor conjugation. The Dirac field is a different kind of object — a section of the spinor module, a minimal left ideal $\mathbb{B}\tilde\Pi$ — and the difference in the kind of field, together with the difference in the kind of action, is exactly what the curved Dirac equation turns on. This section writes that equation in the framework's own notation. It is the item the agenda below records as the curved-space form of the biquaternion Dirac equation.
+
+### The one-sided spinor derivative
+
+The Lorentz group acts on the spinor module by **left multiplication**, $\psi \mapsto \tilde\Lambda\psi$, not by rotor conjugation; the companion article *The Spinor Module in Biquaternionic Form and Its Lorentz Action* establishes this, and it is the algebraic difference between a four-vector and a spinor. The covariant derivative compatible with that action is therefore **one-sided**,
+
+$$
+D_\mu\psi = \partial_\mu\psi + \tilde\Gamma_\mu\psi,
+\qquad
+\tilde\Gamma_\mu \in \mathrm{SL}(2,\mathbb{C})_{\mathbb{R}} \subset \mathbb{B},
+$$
+
+which is not the two-sided prescription of the material sector, $D_\mu\tilde{Q} = \partial_\mu\tilde{Q} + \tilde\Gamma_\mu\tilde{Q} + \tilde{Q}\tilde\Gamma_\mu^\dagger$. The two must not be conflated. The vector carries the transformation twice, once on each side, $\tilde{Q} \mapsto \tilde\Lambda\tilde{Q}\tilde\Lambda^\dagger$, and so receives two connection terms; the spinor carries it once, $\psi \mapsto \tilde\Lambda\psi$, and so receives one. Both connection terms live in the same six-dimensional Lie subspace, and each is the standard inhomogeneous connection of the module it belongs to.
+
+Covariance fixes the transformation law. If $\psi \mapsto \tilde\Lambda\psi$, then $D_\mu\psi \mapsto \tilde\Lambda D_\mu\psi$ precisely when the connection transforms as
+
+$$
+\tilde\Gamma_\mu \longmapsto \tilde\Lambda\tilde\Gamma_\mu\tilde\Lambda^{-1}
+- \left(\partial_\mu\tilde\Lambda\right)\tilde\Lambda^{-1},
+$$
+
+which is the inhomogeneous transformation expected of a connection on a module. A rotor field supplies an example at once: $\tilde\Gamma_\mu = -\left(\partial_\mu\tilde\Lambda\right)\tilde\Lambda^{-1}$ is pure gauge, and its curvature vanishes, exactly as the rotor-carried frame of the previous sections is pure gauge and flat.
+
+### The curved Dirac operator and the equation
+
+The biquaternion gradient of the flat articles is $\tilde\nabla = e_\mu\partial_\mu$ with the rigid basis $e_\mu = (e_0, e_1, e_2, e_3)$ and $\partial_\mu = (\partial_{ict}, \partial_x, \partial_y, \partial_z)$. Its curved replacement substitutes the frame field for the rigid basis and the one-sided derivative for the partial derivative:
+
+$$
+\tilde{\not D} = \tilde E^\mu D_\mu,
+\qquad
+\tilde E^\mu = g^{\mu\nu}\tilde E_\nu,
+\qquad
+\langle \tilde E^\mu, \tilde E_\nu\rangle = \delta^\mu{}_\nu,
+$$
+
+where $\tilde E^\mu$ is the **dual frame**, the inverse tetrad of the frame field $\tilde E_\mu$ of Route Two. The operator is biquaternion-valued and first order, and it is the object the whole tetrad machinery was assembled to define. The **massless** equation is
+
+$$
+\tilde{\not D}\psi = 0,
+$$
+
+identical in form to the flat massless equation. The **massive** equation is the chiral pair
+
+$$
+\tilde{\not D}\tilde\Psi_R = m\tilde\Psi_L,
+\qquad
+\bar{\tilde{\not D}}\tilde\Psi_L = m\tilde\Psi_R,
+$$
+
+where $\bar{\tilde{\not D}}$ is the quaternion-conjugate operator, built from the conjugate frame and the conjugate connection and reducing to $\bar{\tilde\nabla}$ when the frame is rigid and the connection vanishes. The mass term is unchanged: it is the field-independent, chirality-off-diagonal pairing of the parent, and the curvature enters only through the derivative. That is the structural point of the pair, and it is worth stating in the framework's language: the mass is a constant right multiplication acting between the two minimal left ideals, and no amount of frame or connection is needed to write it.
+
+### Flat limit and the square
+
+Two consistency statements locate the construction.
+
+The **flat limit** is exact. If the frame is the rigid basis, $\tilde E_\mu = e_\mu$, so that $\tilde E^\mu = e^\mu$ and $g_{\mu\nu} = \eta_{\mu\nu}$, and if the connection vanishes, $\tilde\Gamma_\mu = 0$, then $\tilde{\not D} = \tilde\nabla$ and the pair reduces to the flat pair of the parent article. The curved operator is a strict generalisation: nothing is added at flatness, and nothing of the flat structure is lost.
+
+The **square** is the Lichnerowicz formula. Squaring the Dirac operator gives
+
+$$
+\tilde{\not D}^2 = \Box_g - \tfrac14 R,
+$$
+
+where $\Box_g = \frac{1}{\sqrt{-\det g}}\,D_\mu\!\left(\sqrt{-\det g}\,g^{\mu\nu}D_\nu\right)$ is the Laplace–Beltrami operator acting on spinors and $R$ is the Ricci scalar (the statement is the standard one, in the sign convention of the cited literature). The curvature term is not optional: a Dirac field on a curved background obeys a Klein–Gordon-type equation with the $-R/4$ coupling even in the absence of any source, which is the curved-space face of the statement that the square of a first-order operator is second order. With minimal coupling to an electromagnetic potential of the companion articles, the square acquires in addition a field-strength–spin term of the form $F_{\mu\nu}\Sigma^{\mu\nu}$, the curved-space relative of the Pauli term of the Gordon decomposition; its coefficient is stated in the curved-Dirac literature and is not rederived here. For comparison, the alternative first-order equation whose square is exactly the Laplacian, without the $-R/4$ term, is the **Dirac–Kähler equation**; the companion maths article records the price of that alternative, which is the loss of the Lorentz-covariant fourfold split in curved spacetime.
+
+### What this does and does not settle
+
+It settles the agenda item that asked for the curved-space form of the biquaternion Dirac equation written in the framework's own notation. The operator $\tilde{\not D} = \tilde E^\mu D_\mu$, the one-sided derivative, the connection transformation, the massless equation and the massive chiral pair, the flat limit, and the Lichnerowicz square are now written, and every object in them — the frame, the dual frame, the connection, the one-sided derivative — is an object the algebra already carries. Two features separate the curved Dirac equation from the curved metric: the field's derivative is one-sided and its connection transformation inhomogeneous, while the frame's derivative is two-sided and its metric is bilinear in the frame; and the curvature couples to the field through $-R/4$ even without a source, so the curved Dirac square is not the naive curved Klein–Gordon operator.
+
+What it does not settle is everything the frame and the connection already failed to settle, and the Dirac equation is the most inviting place to overclaim, so the limits bear repeating. The equation contains the frame and the connection; it determines neither. Nothing in the algebra or in this equation fixes $\tilde E_\mu$ or $\tilde\Gamma_\mu$, selects the Levi-Civita lift rather than a torsionful one, or supplies an action for either; the Einstein equation is as absent here as it was in Route Three. The equation is the correct curved-space transcription of the matter equation **on a background** whose geometry is inserted by hand, and that is exactly what it is. On the matter side, the source of the equation — the conserved current — remains the spinor-module object of the minimal-coupling and Gordon-decomposition articles, carrying the Clifford-odd $\gamma^0$ that a product in $\mathbb{B}$ cannot supply; the closed sourced system, in which the Dirac current feeds the curved biquaternion Maxwell equation, is still unwritten. And the global question survives untouched: whether spinor fields exist on the manifold at all is the topological condition of Route Two's agenda, and no local operator can answer it.
+
 ## The Informational Sector on a Curved Background
 
 The second half of the framework — $\mathbb{M}_+$, its idempotents, its observables and the trace formula $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ — has no curved-space treatment, and it is worth saying why the absence is structural rather than a matter of effort.
@@ -217,9 +290,9 @@ The two-sector decomposition $\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-$ is 
 
 The boundary can be drawn as a list, and drawing it is this article's main result.
 
-**Constructed** (algebraic facts, each recomputed for this article). The pointwise metric of $\mathbb{M}_-$ as the polar form of the biquaternion norm, with signature $(3,1)$. Its invariance under rotor conjugation. The representation of an arbitrary Lorentzian metric by a frame field $\tilde{E}_\mu \in \mathbb{M}_-$ with $g_{\mu\nu} = \langle \tilde{E}_\mu, \tilde{E}_\nu\rangle$, and the local $SL(2,\mathbb{C})$ gauge invariance of that representation. The identification of the rotor group's Lie algebra with the six-dimensional traceless subspace of $\mathbb{B}$. The two-sided infinitesimal action of a connection, and the tracelessness of a rotor field's logarithmic derivative. The induced metrics of the local-scale route in both readings, with the flatness of Reading A and the closed-form curvature of Reading B, and the result that within Reading B's metric class Ricci-flatness implies flatness.
+**Constructed** (algebraic facts, each recomputed for this article). The pointwise metric of $\mathbb{M}_-$ as the polar form of the biquaternion norm, with signature $(3,1)$. Its invariance under rotor conjugation. The representation of an arbitrary Lorentzian metric by a frame field $\tilde{E}_\mu \in \mathbb{M}_-$ with $g_{\mu\nu} = \langle \tilde{E}_\mu, \tilde{E}_\nu\rangle$, and the local $SL(2,\mathbb{C})$ gauge invariance of that representation. The identification of the rotor group's Lie algebra with the six-dimensional traceless subspace of $\mathbb{B}$. The two-sided infinitesimal action of a connection, and the tracelessness of a rotor field's logarithmic derivative. The curved biquaternion Dirac operator $\tilde{\not D} = \tilde E^\mu D_\mu$, built from the dual frame and the one-sided spinor derivative $D_\mu\psi = \partial_\mu\psi + \tilde\Gamma_\mu\psi$, with its covariant connection transformation, its exact flat limit, and its Lichnerowicz square $\tilde{\not D}^2 = \Box_g - \tfrac14 R$. The induced metrics of the local-scale route in both readings, with the flatness of Reading A and the closed-form curvature of Reading B, and the result that within Reading B's metric class Ricci-flatness implies flatness.
 
-**Agenda** (nothing constructed). An action principle or field equation for the frame or the connection, and hence any Einstein equation. Coupling to sources, with the bookkeeping problem that the gravitating objects are symmetric rank-2 tensors, $\left(1,1\right)\oplus\left(0,0\right)$, while the framework's own fields are four-vectors in $\mathbb{M}_-$. Curved-space forms of the biquaternion Maxwell and Dirac equations written in the framework's own notation, for which the background-dependence of $\tilde{\nabla}$ is precisely the obstacle. Global and topological structure of every kind: the algebra is a point, so causal structure, horizons, singularities, and topology are outside it, and even the existence of spinor fields on a manifold is a topological condition — the vanishing of the second Stiefel–Whitney class — that the algebra cannot see; the globalisation of the spinor module to a bundle over a curved background is recorded as a separate open item in *The Spinor Module in Biquaternionic Form and Its Lorentz Action*. The discrete symmetries, which are not in the connected rotor group. The informational sector, as above. And empirical contact, which remains the framework's central open question and is not advanced by anything here.
+**Agenda** (nothing constructed). An action principle or field equation for the frame or the connection, and hence any Einstein equation. Coupling to sources, with the bookkeeping problem that the gravitating objects are symmetric rank-2 tensors, $\left(1,1\right)\oplus\left(0,0\right)$, while the framework's own fields are four-vectors in $\mathbb{M}_-$. The curved-space form of the biquaternion **Maxwell** equation written in the framework's own notation, for which the background-dependence of $\tilde{\nabla}$ is precisely the obstacle; the corresponding **Dirac** form is constructed in the section *The Biquaternion Dirac Equation on a Curved Background* above, on a background whose frame and connection are still inserted by hand and whose current source remains the spinor-module object of the companion articles. Global and topological structure of every kind: the algebra is a point, so causal structure, horizons, singularities, and topology are outside it, and even the existence of spinor fields on a manifold is a topological condition — the vanishing of the second Stiefel–Whitney class — that the algebra cannot see; the globalisation of the spinor module to a bundle over a curved background is recorded as a separate open item in *The Spinor Module in Biquaternionic Form and Its Lorentz Action*. The discrete symmetries, which are not in the connected rotor group. The informational sector, as above. And empirical contact, which remains the framework's central open question and is not advanced by anything here.
 
 The honest summary of the boundary is this. The biquaternion framework contains the kinematical fibre of tetrad gravity: a pointwise Lorentzian vector space, its Lorentz group, the vector representation, and the Lie-algebra-valued connection. It contains nothing of tetrad gravity's dynamics, and nothing that selects a metric. It is therefore not correct to say that the framework contains general relativity, and it is not correct to say that it conflicts with it. What the framework contains is the algebra in which the local part of general relativity is normally written, plus a proposal — the local scale factor of the imaginary time axis — that is too rigid to carry the non-flat vacuum solutions.
 
@@ -232,6 +305,8 @@ The framework's own local device is the local scale $c = 1/\sqrt{\epsilon\mu}$ o
 Within the second reading's class — one function, no shift, flat spatial slices — Ricci-flatness forces $u$ to be affine in the spatial coordinates, and every such metric is flat. The class therefore contains no non-flat vacuum geometry: no Weyl curvature, no gravitational waves, no black-hole exteriors. The local scale factor is not the route to general relativity. Nor is it the same object as the metric: $c$ is the Maxwell speed of a medium, and the standard effective metric of a dielectric is a metric for light, not for free fall.
 
 A general curved metric can be carried, by a frame field $\tilde{E}_\mu(x) \in \mathbb{M}_-$ with $g_{\mu\nu} = \langle \tilde{E}_\mu, \tilde{E}_\nu\rangle$, since any Lorentzian metric has a local orthonormal frame. The algebra then supplies the pointwise $SL(2,\mathbb{C})$, its vector representation, and its Lie algebra; the sixteen frame functions modulo six local rotor parameters reproduce the ten components of the metric; and a frame that is pure rotor gauge is flat, so curvature is exactly the non-gauge part of the frame. The algebra can even carry the connection and its curvature, since the Lie algebra is the six-dimensional traceless subspace of $\mathbb{B}$ — with the caveat that the infinitesimal action is the two-sided $G\tilde{Q} + \tilde{Q}G^\dagger$, not the commutator, the two differing precisely for the boosts.
+
+The Dirac field lives on a different module from the four-vector, and its curved equation has a different derivative. The spinor module carries the **left** action $\psi \mapsto \tilde\Lambda\psi$, not the two-sided rotor conjugation, so its covariant derivative is the **one-sided** $D_\mu\psi = \partial_\mu\psi + \tilde\Gamma_\mu\psi$, with $\tilde\Gamma_\mu$ in the Lie subspace; covariance fixes the inhomogeneous transformation $\tilde\Gamma_\mu \mapsto \tilde\Lambda\tilde\Gamma_\mu\tilde\Lambda^{-1} - (\partial_\mu\tilde\Lambda)\tilde\Lambda^{-1}$. With the dual frame $\tilde E^\mu = g^{\mu\nu}\tilde E_\nu$ this gives the curved biquaternion Dirac operator $\tilde{\not D} = \tilde E^\mu D_\mu$, whose massless equation is $\tilde{\not D}\psi = 0$ and whose massive form is the same chiral pair as in the flat case, $\tilde{\not D}\tilde\Psi_R = m\tilde\Psi_L$, $\bar{\tilde{\not D}}\tilde\Psi_L = m\tilde\Psi_R$, the mass being untouched by the curvature. The operator reduces exactly to $\tilde\nabla$ in a rigid frame with vanishing connection, and its square is the Lichnerowicz formula $\tilde{\not D}^2 = \Box_g - \tfrac14 R$, so the curvature couples to the field through the Ricci scalar even without a source. That much of the curved matter equation is now constructed in the framework's own notation. What remains is unchanged and unyielding: the frame and the connection are inserted by hand and satisfy no equation, the metric is not selected, the current that would source the coupled system is the spinor-module object carrying $\gamma^0$ outside $\mathbb{B}$, and the global existence of spinor fields is a topological condition no local operator can see.
 
 What is missing is not a technical detail but the theory. Nothing determines the frame, the connection, or the metric; there is no action, no field equation, and no Einstein equation; the gravitating rank-2 tensors are not the framework's four-vectors; diffeomorphism invariance has no algebraic counterpart; global and topological structure is outside a pointwise algebra; and the informational sector's trace formula is a fibre trace with no measure and no integral, so its curved-space extension is not merely unwritten but unlocated. The framework contains the kinematical fibre of tetrad gravity and none of its dynamics; the title names a framework, and that is exactly what it is.
 
@@ -257,6 +332,10 @@ What is missing is not a technical detail but the theory. Nothing determines the
 | $J_k = e_k$, $K_k = ie_k$ | Rotation and boost generators, spanning $\mathrm{SL}(2,\mathbb{C})_{\mathbb{R}} \subset \mathbb{B}$ |
 | $\tilde{\Gamma}_\mu$ | Connection 1-form, valued in the Lie subspace |
 | $D_\mu\tilde{Q} = \partial_\mu\tilde{Q} + \tilde{\Gamma}_\mu\tilde{Q} + \tilde{Q}\tilde{\Gamma}_\mu^\dagger$ | Covariant derivative on $\mathbb{M}_-$ (two-sided) |
+| $\tilde E^\mu = g^{\mu\nu}\tilde E_\nu$, $\langle \tilde E^\mu, \tilde E_\nu\rangle = \delta^\mu{}_\nu$ | Dual frame (inverse tetrad) |
+| $D_\mu\psi = \partial_\mu\psi + \tilde\Gamma_\mu\psi$ | Covariant derivative on the spinor module (one-sided, left action) |
+| $\tilde{\not D} = \tilde E^\mu D_\mu$ | Curved biquaternion Dirac operator |
+| $\tilde{\not D}^2 = \Box_g - \tfrac14 R$ | Lichnerowicz square; $\Box_g$ Laplace–Beltrami on spinors, $R$ Ricci scalar |
 | $u = c$, $f = c^2$ | Local scale factor and its square, in the local-scale route |
 | $R_{00}=-u\Delta u$, $R_{0i}=0$, $R_{ij}=\partial_i\partial_j u/u$ | Ricci tensor of $g=\mathrm{diag}(-c^2,1,1,1)$ |
 | $(m,n)$, $\left(\tfrac12,\tfrac12\right)$, $\left(1,1\right)\oplus\left(0,0\right)$ | Lorentz representations: four-vectors; symmetric rank-2 tensors |
@@ -266,6 +345,8 @@ What is missing is not a technical detail but the theory. Nothing determines the
 
 - Charles W. Misner, Kip S. Thorne, and John A. Wheeler, *Gravitation* (Freeman, 1973), for the tetrad formalism and the distinction between coordinate and orthonormal frames in general relativity.
 - Robert M. Wald, *General Relativity* (Chicago, 1984), for the metric, the curvature tensors, and the spinor formulation of curved spacetime.
+- A. Lichnerowicz, "Spineurs harmoniques," *Comptes Rendus de l'Académie des Sciences* **257** (1963) 7–9, for the square of the Dirac operator and the $\tfrac14 R$ curvature term.
+- L. Parker and D. Toms, *Quantum Field Theory in Curved Spacetime: Quantized Fields and Gravity* (Cambridge, 2009), for the spinor covariant derivative, the Dirac equation on a curved background and its squared Klein–Gordon form.
 - Roger Penrose and Wolfgang Rindler, *Spinors and Space-Time*, Vol. 1 (Cambridge, 1984) and Vol. 2 (Cambridge, 1986), for the two-spinor calculus and the tetrad and spin-connection formalism in Lorentzian signature.
 - H. Blaine Lawson and Marie-Louise Michelsohn, *Spin Geometry* (Princeton, 1989), for spin structures on manifolds and the topological obstruction to spinor fields.
 - W. Gordon, "Zur Lichtfortpflanzung nach der Relativitätstheorie," *Annalen der Physik* **72** (1923) 421–456, for the effective metric of a dielectric medium.

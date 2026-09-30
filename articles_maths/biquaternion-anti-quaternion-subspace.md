@@ -192,7 +192,7 @@ The Peirce decomposition is not adapted to the subspace: its primitive idempoten
 
 **Proof.** For $\tilde{Q} = i\tilde{P}$ one has $\tilde{Q}^2 = -\tilde{P}^2$, so $\tilde{Q}^2 = -e_0$ if and only if $\tilde{P}^2 = e_0$; in the division algebra $\mathbb{H}_{\mathbb{B}}$ the roots of $+1$ are $\pm e_0$.
 
-These are the two **trivial roots** $\pm i$ of *Biquaternion Roots of Minus One*, which the subspace shares with the centre; the two-sphere of real roots and the four-real-dimensional family of non-trivial roots lie outside it. The subspace carries instead the mirror family: the elements
+These are the two **trivial roots** $\pm i$ of *Biquaternion Square Roots of Minus One, Zero and Plus One*, which the subspace shares with the centre; the two-sphere of real roots and the four-real-dimensional family of non-trivial roots lie outside it. The subspace carries instead the mirror family: the elements
 
 $$
 \eta = i\mu, \qquad \mu \in \operatorname{span}_{\mathbb{R}}\{e_1,e_2,e_3\}, \quad |\mu| = 1 ,
@@ -302,7 +302,7 @@ The anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$ is the anti-fixed space 
 - *Biquaternion Involution Lattice* (`articles_maths/biquaternion-involution-lattice.md`), for the four involutions and their fixed spaces
 - *Biquaternion Idempotents and Projections* (`articles_maths/biquaternion-idempotents-and-projections.md`), for the idempotents, of which the subspace carries only the origin
 - *Biquaternion Ideals and Peirce Decomposition* (`articles_maths/biquaternion-ideals-and-peirce-decomposition.md`), for the module structure over the quaternion subspace and the action of complex conjugation on the minimal left ideals
-- *Biquaternion Roots of Minus One* (`articles_maths/biquaternion-roots-of-minus-one.md`), for the classification of the roots of $\pm 1$ in the whole algebra
+- *Biquaternion Square Roots of Minus One, Zero and Plus One* (`articles_maths/biquaternion-square-roots-of-minus-one-zero-and-plus-one.md`), for the classification of the roots of $\pm 1$ in the whole algebra
 - *Biquaternion Zero Divisors* (`articles_maths/biquaternion-zero-divisors.md`), for the two families of zero divisors, of which the subspace carries none
 - *Biquaternion Lie Algebra* (`articles_maths/biquaternion-lie-algebra.md`), for the central imaginary line and the hyperbolic directions that span the subspace
 - *Biquaternion Norm and Invertibility* (`articles_maths/biquaternion-norm-and-invertibility.md`), for the biquaternion norm, the inverse formula and the group of units

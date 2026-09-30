@@ -201,7 +201,7 @@ So the vector subspace is a piece of the algebra that the ideal lattice does not
 
 **Proposition.** Every root of $-1$ other than the two trivial roots lies in $\mathrm{Vect}(\mathbb{B})$; the trivial roots $\pm i$ are the only roots outside it.
 
-**Proof.** By the reduction of *Biquaternion Roots of Minus One*, a root is either trivial, $\xi = \pm i$, or pure; and $\mathrm{Vect}(\mathbb{B})$ is exactly the set of elements of vanishing scalar part.
+**Proof.** By the reduction of *Biquaternion Square Roots of Minus One, Zero and Plus One*, a root is either trivial, $\xi = \pm i$, or pure; and $\mathrm{Vect}(\mathbb{B})$ is exactly the set of elements of vanishing scalar part.
 
 The vector subspace therefore contains the whole two-real-dimensional family of real roots $\pm\mu$, with $\mu$ a unit element of $\operatorname{span}_\mathbb{R}\{e_1,e_2,e_3\}$, and the whole four-real-dimensional family of non-trivial roots $b\mu + d\nu i$. The real roots lie in the real vector triple, while a non-trivial root mixes a real and an imaginary vector direction and lies in none of the two vector triples alone. These are exactly the roots that generate the non-central idempotents — the Hermitian family from the real roots and the third family from the non-trivial ones — so the vector subspace is where the roots of the algebra live.
 
@@ -305,7 +305,7 @@ The vector subspace $\mathrm{Vect}(\mathbb{B})$ is the anti-fixed space of quate
 - *Biquaternion Centre Subspace* (`articles_maths/biquaternion-centre-subspace.md`), the fixed companion of the present subspace
 - *Biquaternion Idempotents and Projections* (`articles_maths/biquaternion-idempotents-and-projections.md`), for the classification whose non-trivial idempotents all lie outside the subspace
 - *Biquaternion Ideals and Peirce Decomposition* (`articles_maths/biquaternion-ideals-and-peirce-decomposition.md`), for the off-diagonal Peirce corners $\tilde T, \tilde S$ that the subspace carries
-- *Biquaternion Roots of Minus One* (`articles_maths/biquaternion-roots-of-minus-one.md`), for the roots, all of them but $\pm i$ lying in the subspace
+- *Biquaternion Square Roots of Minus One, Zero and Plus One* (`articles_maths/biquaternion-square-roots-of-minus-one-zero-and-plus-one.md`), for the roots, all of them but $\pm i$ lying in the subspace
 - *Biquaternion Zero Divisors* (`articles_maths/biquaternion-zero-divisors.md`), for the pure and non-pure zero divisors and the two families of the algebra
 - *Biquaternion Relations Between Subspaces* (`articles_maths/biquaternion-relations-between-subspaces.md`), for the intersections, the sums and the coordinate blocks of the six
 - *Biquaternion Involution Lattice* (`articles_maths/biquaternion-involution-lattice.md`), for the four involutions and the two spaces each defines
