@@ -80,6 +80,23 @@ $$</p>
 \tilde{\nabla}\bar{\tilde{\nabla}} = \bar{\tilde{\nabla}}\tilde{\nabla} = \Box ,
 $$</p>
 <p>which is a genuine algebraic statement: the d'Alembertian is the <strong>biquaternion norm</strong> of the gradient biquaternion, exactly as $\tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$ is the biquaternion norm of a biquaternion. The wave operator is the square of an element of the algebra, and the mass-shell condition below is the same biquaternion norm evaluated on the four-wavevector. That is the structural content the biquaternion writing makes visible.</p>
+<h2 id="the-lanczos-family-and-the-spin-0-member">The Lanczos Family and the Spin-0 Member</h2>
+<p>The free Klein–Gordon equation is the spin-0 member of a first-order family the corpus already writes. Lanczos's coupled biquaternion system</p>
+<p>$$
+\tilde{\nabla}\tilde{A} = m\tilde{B}, \qquad \tilde{\nabla}\tilde{B} = m\tilde{A}
+$$</p>
+<p>is the parent of the Dirac equation (the idempotent superposition of the two fields), of the Proca equation and of the Maxwell equation, as set out in <em>The Dirac Equation in Biquaternionic Form</em>, <em>The Proca Equation: Massive Spin 1 in Biquaternionic Form</em> and <em>The Standard Model under the Biquaternion Framework — A Research Agenda</em>; the second-order equation of the family, obtained by eliminating the auxiliary field, is the Klein–Gordon equation of this article. What the family adds here is the placement: the equation below is not an isolated second-order equation but a member of the one classical family, its spin-0 label being the restriction of the pair to scalar fields.</p>
+<p><strong>The scalar restriction.</strong> Take $\tilde{A}=A_0e_0$ and $\tilde{B}=be_0$ with $A_0$ and $b$ complex scalars. The first equation forces $\tilde{\nabla}A_0$ to have no vector part, hence $A_0$, and with it $b$, to depend on $ict$ alone; the pair then collapses to</p>
+<p>$$
+\partial_{ict}A_0 = b, \qquad \partial_{ict}b = m^2A_0, \qquad\text{hence}\qquad \left(\partial_{ict}^2 - m^2\right)A_0 = 0 .
+$$</p>
+<p>This is the degenerate form that Gsponer and Hurni record for the spin-zero case, and "degenerate" is literal: a scalar field whose gradient must be scalar cannot vary in space, so this member of the family is one-dimensional. The corpus's spin-0 field does vary in space, and it satisfies the four-dimensional Klein–Gordon equation of the preceding sections,</p>
+<p>$$
+\left(\Box - \frac{m^2c^2}{\hbar^2}\right)A_0 = 0,
+$$</p>
+<p>which is the same elimination applied to the pair that carries one gradient of each kind: the conjugate gradient squares to $\Box$, and eliminating the auxiliary field leaves $\Box\tilde{A}=(m^2c^2/\hbar^2)\tilde{A}$, whose scalar restriction is the equation above.</p>
+<!-- CONVENTION — the two gradients are the two square roots of □: ∇̃∇̄̃ = ∇̄̃∇̃ = □, established at the top of this article and in the companion Maxwell article. The family must therefore carry one of each for its square to be □. The companion articles write Lanczos's system with ∇̃ on both equations, as the source does; the square there is ∇̃∇̃ = ∂_{ict}² − Δ, which differs from □ = ∂_{ict}² + Δ in the sign of the spatial part. The two coincide for a spatially constant field (ΔA_0 = 0), which is exactly the degenerate case above, and are related by the Wick rotation of the time coordinate. Do not transplant the family's square between the two writings without fixing the signature. -->
+
 <h2 id="second-order-in-time-and-the-conjugate-pair">Second Order in Time and the Conjugate Pair</h2>
 <p>An equation second order in $t$ does not determine the field from its value alone: two data, $\tilde{\Phi}$ and $\partial_t\tilde{\Phi}$, are required. Equivalently, the operator $\Box - m^2c^2/\hbar^2$ has no first-order scalar square root inside the algebra, and the obstruction is elementary. Attempt the factorisation</p>
 <p>$$
@@ -195,7 +212,7 @@ $$</p>
 $$</p>
 <p>while for the negative-frequency branch, that is the same expression with $\omega<0$, the same computation gives $\rho<0$ with the same magnitude. The two branches therefore carry charges of opposite sign, and $\rho$ cannot be read as a probability density. This is the negative-probability problem, and it is a property of the conserved current itself, not of the notation: every step above was made from the equation and the definitions.</p>
 <p>The second defect is that the equation is not a single-particle equation. The reason is the same one, stated more broadly: a one-particle interpretation requires a positive conserved probability and a stable notion of "the particle at a place." The Klein–Gordon field provides neither. The resolution in standard physics is to stop reading $\phi$ as a wave function and read it as a <strong>field operator</strong>, with $\phi$ and $\phi^*$ becoming the operators that annihilate and create the particle and the antiparticle; the conserved charge becomes the difference of particle number and antiparticle number, which may have either sign, and the negative-frequency branch is reinterpreted as the antiparticle. The biquaternion form of the equation does not change this. In particular, the current sits in $\mathbb{M}_-$ and is conserved, but the sign of its scalar component is not fixed by membership in $\mathbb{M}_-$.</p>
-<h2 id="does-the-second-order-structure-fit-math201">Does the Second-Order Structure Fit $\mathbb{M}_-/\mathbb{M}_+$?</h2>
+<h2 id="does-the-second-order-structure-fit-math214">Does the Second-Order Structure Fit $\mathbb{M}_-/\mathbb{M}_+$?</h2>
 <p>Now the central question. The framework offers the decomposition $\mathbb{B} = \mathbb{M}_+\oplus\mathbb{M}_-$, and the parent article used it to organize the first-order Schrödinger equation. Do the second-order structure and its conjugate pair fit the same decomposition?</p>
 <p>Write a solution as $\tilde{\Phi} = \tilde{\Phi}_+ + \tilde{\Phi}_-$ with $\tilde{\Phi}_\pm\in\mathbb{M}_\pm$. Since $\Box$ is central, real, and scalar, it preserves each sector:</p>
 <p>$$

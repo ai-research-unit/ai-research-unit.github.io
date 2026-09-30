@@ -104,12 +104,21 @@ $$</p>
 <p>where $n_\mu$ is the $\mu$-th component of the outward unit normal on $\partial \Omega$ and $dS$ is the surface measure.</p>
 <p><strong>Proof.</strong> This is the standard integration by parts formula in $\mathbb{R}^4$, applied to the scalar function $\phi$ and the scalar function $F_\nu$ for each component. Summing over $\nu$ gives the result.</p>
 <h3 id="the-vector-case">The Vector Case</h3>
-<p><strong>Theorem (integration by parts for the gradient).</strong> Let $\tilde{F}$ and $\tilde{G}$ be continuously differentiable biquaternion-valued functions on $\Omega$ with piecewise smooth boundary $\partial \Omega$. Then</p>
+<p><strong>Theorem (integration by parts for the gradient).</strong> Let $\tilde{F}$ and $\tilde{G}$ be continuously differentiable biquaternion-valued functions on $\Omega$ with piecewise smooth boundary $\partial \Omega$, and write</p>
 <p>$$
-\int_\Omega (\tilde{\nabla}\tilde{F}) \tilde{G} \, dV = \int_{\partial \Omega} \tilde{n} \tilde{F} \tilde{G} \, dS - \int_\Omega \tilde{F} (\tilde{\nabla}\tilde{G}) \, dV,
+\tilde{F}\overleftarrow{\nabla} = \sum_{\mu=0}^{3} \left(\frac{\partial \tilde{F}}{\partial q_\mu}\right) e_\mu
+$$</p>
+<p>for the <strong>right gradient</strong> of $\tilde{F}$. Then</p>
+<p>$$
+\int_\Omega \tilde{F} (\tilde{\nabla}\tilde{G}) \, dV = \int_{\partial \Omega} \tilde{F} \tilde{n} \tilde{G} \, dS - \int_\Omega (\tilde{F}\overleftarrow{\nabla}) \tilde{G} \, dV,
+$$</p>
+<p>and equivalently</p>
+<p>$$
+\int_\Omega (\tilde{\nabla}\tilde{F}) \tilde{G} \, dV = \int_{\partial \Omega} \tilde{n} \tilde{F} \tilde{G} \, dS - \int_\Omega \sum_{\mu=0}^{3} e_\mu \tilde{F} \left(\frac{\partial \tilde{G}}{\partial q_\mu}\right) dV,
 $$</p>
 <p>where $\tilde{n} = \sum_\mu n_\mu e_\mu$ is the biquaternion-valued outward unit normal.</p>
-<p><strong>Proof.</strong> This follows from the scalar integration by parts applied to each component of $\tilde{\nabla}\tilde{F}$ and the product rule for the gradient.</p>
+<p><strong>Proof.</strong> The Leibniz rule for the gradient gives $\tilde{\nabla}(\tilde{F}\tilde{G}) = (\tilde{\nabla}\tilde{F})\tilde{G} + \sum_\mu e_\mu \tilde{F}\,\partial_\mu \tilde{G}$, and the divergence theorem applied to the product $\tilde{F}\tilde{G}$ gives the second display. For the first display, apply the ordinary divergence theorem in $\mathbb{R}^4$ to the field with components $\tilde{F} e_\mu \tilde{G}$ and sum over $\mu$.</p>
+<p><strong>Remark (the non-commutative correction).</strong> The transposition that moves the derivative off $\tilde{G}$ while leaving $\tilde{F}(\tilde{\nabla}\tilde{G})$ in the volume term is <strong>false for a non-central</strong> $\tilde{F}$: the Leibniz term $\sum_\mu e_\mu \tilde{F}\,\partial_\mu \tilde{G}$ equals $\tilde{F}(\tilde{\nabla}\tilde{G})$ only when $\tilde{F}$ commutes with every unit $e_\mu$. The right gradient $\overleftarrow{\nabla}$ is the transposition that removes the restriction.</p>
 <h2 id="the-divergence-theorem">The Divergence Theorem</h2>
 <p><strong>Theorem (divergence theorem).</strong> Let $\tilde{F}$ be a continuously differentiable biquaternion-valued function on a domain $\Omega$ with piecewise smooth boundary $\partial \Omega$. Then</p>
 <p>$$
@@ -134,24 +143,33 @@ $$</p>
 <p><strong>Physical reading: conservation of a four-current.</strong> With the material coordinates $ict\,e_0 + \mathbf{x}$, the divergence theorem is the statement that the flux of a four-current through the boundary of a region equals the integral of its divergence inside. Setting the divergence to zero — which is what a field equation does — makes a quantity conserved, and this is the mechanism behind the continuity equation and the conservation of electric charge in <em>Biquaternion Electromagnetism</em> and of the energy–momentum four-vector in <em>Biquaternion Relativity</em>. The biquaternion-valued normal is what makes the statement hold for a field whose components mix under the algebra's multiplication.</p>
 <h2 id="greens-formulas">Green's Formulas</h2>
 <h3 id="first-greens-formula">First Green's Formula</h3>
-<p><strong>Theorem (first Green's formula).</strong> Let $\tilde{F}$ and $\tilde{G}$ be twice continuously differentiable biquaternion-valued functions on $\Omega$ with piecewise smooth boundary $\partial \Omega$. Then</p>
+<p><strong>Theorem (first Green's formula).</strong> Let $\tilde{F}$ and $\tilde{G}$ be twice continuously differentiable biquaternion-valued functions on $\Omega$ with piecewise smooth boundary $\partial \Omega$, and let $\partial_{\tilde{n}} = \sum_\mu n_\mu \partial_{q_\mu}$ be the scalar normal derivative. Then</p>
 <p>$$
-\int_\Omega \left[ (\tilde{\nabla}\tilde{F}) \bar{\tilde{G}} + \tilde{F} (\bar{\tilde{\nabla}}\bar{\tilde{G}}) \right] dV = \int_{\partial \Omega} \tilde{F} \tilde{n} \bar{\tilde{G}} \, dS.
+\int_\Omega \left[ \sum_{\mu=0}^{3} \left(\frac{\partial \tilde{F}}{\partial q_\mu}\right) \overline{\left(\frac{\partial \tilde{G}}{\partial q_\mu}\right)} + \tilde{F}\, \overline{\Box \tilde{G}} \right] dV = \int_{\partial \Omega} \tilde{F}\, \overline{\partial_{\tilde{n}} \tilde{G}} \, dS.
 $$</p>
-<p><strong>Proof.</strong> Apply the divergence theorem to the product $\tilde{F} \bar{\tilde{G}}$ and use the product rule for the gradient.</p>
+<p><strong>Proof.</strong> Apply the ordinary divergence theorem in $\mathbb{R}^4$ to the biquaternion-valued field with components $\tilde{F}\,\overline{\partial_\mu \tilde{G}}$: it gives $\int_\Omega \partial_\mu(\tilde{F}\,\overline{\partial_\mu \tilde{G}})\,dV = \int_{\partial\Omega} n_\mu \tilde{F}\,\overline{\partial_\mu \tilde{G}}\,dS$. The product rule expands the volume integrand as $(\partial_\mu\tilde{F})\,\overline{\partial_\mu \tilde{G}} + \tilde{F}\,\overline{\partial_\mu^2 \tilde{G}}$, the second term because $\partial_\mu$ is real and therefore commutes with the conjugation. Summing over $\mu$ replaces $\sum_\mu \partial_\mu^2$ by $\Box$ and $\sum_\mu n_\mu \partial_\mu$ by $\partial_{\tilde{n}}$.</p>
 <h3 id="second-greens-formula">Second Green's Formula</h3>
 <p><strong>Theorem (second Green's formula).</strong> Under the same hypotheses,</p>
 <p>$$
-\int_\Omega \left[ (\tilde{\nabla}\tilde{F}) \bar{\tilde{G}} - \tilde{F} (\bar{\tilde{\nabla}}\bar{\tilde{G}}) \right] dV = \int_{\partial \Omega} \left[ \tilde{F} \tilde{n} \bar{\tilde{G}} - \tilde{G} \tilde{n} \bar{\tilde{F}} \right] dS.
+\int_\Omega \left[ \tilde{F}\, \overline{\Box \tilde{G}} - (\Box \tilde{F})\, \bar{\tilde{G}} \right] dV = \int_{\partial \Omega} \left[ \tilde{F}\, \overline{\partial_{\tilde{n}} \tilde{G}} - (\partial_{\tilde{n}} \tilde{F})\, \bar{\tilde{G}} \right] dS.
 $$</p>
-<p><strong>Proof.</strong> This follows from the first Green's formula by exchanging $\tilde{F}$ and $\tilde{G}$ and subtracting.</p>
-<h3 id="greens-formula-for-the-dalembertian">Green's Formula for the d'Alembertian</h3>
-<p><strong>Theorem (Green's formula for $\Box$).</strong> Let $\tilde{F}$ and $\tilde{G}$ be twice continuously differentiable biquaternion-valued functions on $\Omega$ with piecewise smooth boundary $\partial \Omega$. Then</p>
+<p><strong>Proof.</strong> For each $\mu$ the product rule gives</p>
 <p>$$
-\int_\Omega \left[ (\Box \tilde{F}) \tilde{G} - \tilde{F} (\Box \tilde{G}) \right] dV = \int_{\partial \Omega} \left[ (\tilde{n} \tilde{F}) \tilde{G} - \tilde{F} (\tilde{n} \tilde{G}) \right] dS,
+\partial_{q_\mu} \left[ \tilde{F}\, \overline{\partial_{q_\mu} \tilde{G}} - (\partial_{q_\mu} \tilde{F})\, \bar{\tilde{G}} \right] = \tilde{F}\, \overline{\partial_{q_\mu}^2 \tilde{G}} - (\partial_{q_\mu}^2 \tilde{F})\, \bar{\tilde{G}},
+$$</p>
+<p>the two mixed terms being the same product and cancelling. Summing over $\mu$ makes the left side the divergence of a biquaternion-valued field, whose volume integral is the stated volume integrand and whose boundary integral, by the ordinary divergence theorem and $\sum_\mu n_\mu \partial_{q_\mu} = \partial_{\tilde{n}}$, is the stated surface term. The conjugation is inert throughout because $\partial_{q_\mu}$ is real.</p>
+<h3 id="greens-formula-for-the-dalembertian">Green's Formula for the d'Alembertian</h3>
+<p><strong>Theorem (Green's formula for $\Box$).</strong> Let $\tilde{F}$ and $\tilde{G}$ be twice continuously differentiable biquaternion-valued functions on $\Omega$ with piecewise smooth boundary $\partial \Omega$, and let $\partial_{\tilde{n}} = \sum_{\mu=0}^{3} n_\mu \partial_{q_\mu}$ be the scalar normal derivative in the outward direction, $\tilde{n} = \sum_\mu n_\mu e_\mu$ being the normal fixed by the divergence theorem. Then</p>
+<p>$$
+\int_\Omega \left[ (\Box \tilde{F}) \tilde{G} - \tilde{F} (\Box \tilde{G}) \right] dV = \int_{\partial \Omega} \left[ (\partial_{\tilde{n}} \tilde{F}) \tilde{G} - \tilde{F} (\partial_{\tilde{n}} \tilde{G}) \right] dS,
 $$</p>
 <p>where $\Box = \partial^2/\partial q_0^2 + \Delta_q$ is the four-dimensional Laplacian in the coordinates $q_0, q_1, q_2, q_3$.</p>
-<p><strong>Proof.</strong> Apply the second Green's formula with $\tilde{F}$ replaced by $\tilde{\nabla}\tilde{F}$, and use the definition of $\Box$.</p>
+<p><strong>Proof.</strong> For each $\mu$ the product rule gives</p>
+<p>$$
+\partial_{q_\mu} \left[ (\partial_{q_\mu} \tilde{F}) \tilde{G} - \tilde{F} (\partial_{q_\mu} \tilde{G}) \right] = (\partial_{q_\mu}^2 \tilde{F}) \tilde{G} - \tilde{F} (\partial_{q_\mu}^2 \tilde{G}),
+$$</p>
+<p>the two mixed terms being the same product and cancelling. Summing over $\mu$ makes the left side a divergence whose volume integral is the stated volume integrand, $(\Box\tilde{F})\tilde{G} - \tilde{F}(\Box\tilde{G})$; the divergence theorem turns it into the boundary integral, which by $\sum_\mu n_\mu \partial_{q_\mu} = \partial_{\tilde{n}}$ is the stated surface term. The derivative in the surface term is essential and cannot be dropped: for scalar $u,v$ the classical identity the formula must reproduce, $\int_\Omega (v\Delta u - u\Delta v)\,dV = \int_{\partial\Omega} (v\partial_n u - u\partial_n v)\,dS$, has a non-zero right side.</p>
+<p><strong>Remark (the two pairings).</strong> This formula is the second Green formula with $\tilde{G}$ replaced by $\bar{\tilde{G}}$, up to the sign of both sides; the second Green formula carries the conjugation in the pairing, this one in the plain product, and the two have the same content.</p>
 <p><strong>Physical reading: reciprocity.</strong> Green's formulas are the reciprocity relations between two fields: exchanging the two solutions of the wave equation and subtracting gives a boundary identity, which is the statement that the second-order operator is self-adjoint in the appropriate sense. In the field-theoretic reading they are the algebraic origin of the reciprocity theorems used to compute potentials from boundary data, and they are what makes a Green's function method possible at all.</p>
 <h2 id="the-fundamental-solution">The Fundamental Solution</h2>
 <h3 id="definition_1">Definition</h3>
@@ -313,7 +331,7 @@ $$</p>
 </ol>
 <p><strong>Physical form of the open problems.</strong> The first question is the physical one of a propagator on a curved or indefinite background: on the material slice the Green's function of the wave operator is the light-cone-supported object of <em>Biquaternion Analysis on Subspaces</em> and <em>The Wave Equation on $\mathbb{M}_-$</em>, not the Euclidean kernel, and its existence is what the freedom of choosing a modified kernel encodes. The second and third are the questions of how much of the complex-analytic technology survives in the non-commutative and non-elliptic settings.</p>
 <h2 id="summary">Summary</h2>
-<p>The integral of a biquaternion-valued function on the quaternion subspace $\mathbb{H}_{\mathbb{B}}$ is defined component-wise with respect to the Lebesgue measure. It is linear, additive and satisfies the fundamental estimate. The standard theorems of integration carry over: integration by parts, the divergence theorem, and Green's formulas.</p>
+<p>The integral of a biquaternion-valued function on the quaternion subspace $\mathbb{H}_{\mathbb{B}}$ is defined component-wise with respect to the Lebesgue measure. It is linear, additive and satisfies the fundamental estimate. The standard theorems of integration carry over: integration by parts, the divergence theorem, and Green's formulas. Because the algebra is not commutative, transposing the gradient off a product requires the right gradient $\overleftarrow{\nabla}$, and the identities are stated in the forms that hold for general biquaternion-valued fields.</p>
 <p>The <strong>fundamental solution</strong> of the gradient operator on $\mathbb{H}_{\mathbb{B}}$ is $\tilde{G}(\tilde{Q}) = \bar{\tilde{Q}}/\|\tilde{Q}\|_E^4$, which satisfies $\tilde{\nabla} \tilde{G} = 0$ away from the origin and $\tilde{\nabla} \tilde{G} = -2\pi^2 \delta_0 e_0$ in the sense of distributions.</p>
 <p>The <strong>Cauchy integral formula</strong> expresses the value of a continuously differentiable function at an interior point in terms of its boundary values and the volume integral of its gradient. For functions satisfying $\tilde{\nabla}\tilde{F} = 0$ (the biquaternion analogue of the Cauchy–Riemann equations), the volume integral vanishes and the value at the interior point is given entirely by the boundary values.</p>
 <p>The Cauchy integral formula implies the <strong>mean value property</strong>, the <strong>maximum principle</strong>, <strong>Liouville's theorem</strong>, the <strong>identity theorem</strong> and the <strong>Cauchy estimates</strong>. These are the biquaternion analogues of the standard consequences of the Cauchy integral formula in complex analysis.</p>
@@ -349,6 +367,10 @@ $$</p>
 <td>Biquaternionic gradient (Cauchy–Riemann operator)</td>
 </tr>
 <tr>
+<td>$\tilde{F}\overleftarrow{\nabla} = \sum_\mu (\partial \tilde{F}/\partial q_\mu) e_\mu$</td>
+<td>Right gradient of $\tilde{F}$</td>
+</tr>
+<tr>
 <td>$\bar{\tilde{\nabla}}$</td>
 <td>Quaternion conjugate of the gradient</td>
 </tr>
@@ -359,6 +381,10 @@ $$</p>
 <tr>
 <td>$\tilde{n}$</td>
 <td>Biquaternion-valued outward unit normal</td>
+</tr>
+<tr>
+<td>$\partial_{\tilde{n}} = \sum_\mu n_\mu \partial_{q_\mu}$</td>
+<td>Scalar normal derivative in the outward direction</td>
 </tr>
 <tr>
 <td>$\tilde{G}(\tilde{Q}) = \bar{\tilde{Q}}/\|\tilde{Q}\|_E^4$</td>

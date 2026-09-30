@@ -300,6 +300,14 @@ $$</p>
 $$</p>
 <p>fixes the scalar part, hence preserves the trace-one hyperplane, and preserves the Hermitian property; because conjugation by a unitary is an algebra automorphism, it preserves the biquaternion norm $N(\tilde{U}\tilde{\rho}\tilde{U}^\dagger) = N(\tilde{\rho})$, hence preserves the future cone and its boundary. It therefore maps the Bloch ball to itself.</p>
 <p>On the Bloch vector the action is a rotation. The unit quaternions — the elements of $\mathbb{H}_{\mathbb{B}}$ of unit quaternion norm, forming $SU(2)$ — act by rotating the imaginary vector part and fixing the scalar part, so they act on the ball by the rotation group $SO(3)$. The general unitary group $U(2)$ acts through the same rotations, with a central phase that fixes every state. The maximally mixed state is the unique fixed point; the boundary sphere is homogeneous, and the purity radius is a complete invariant of the orbit. The slice is thus not merely a ball but a ball with its rotation group, and the geometry that makes the trace-one slice of the cone into a state space is exactly the geometry that the algebra's unitary group preserves.</p>
+<h3 id="the-boundary-sphere-as-the-compact-member-of-a-family">The Boundary Sphere as the Compact Member of a Family</h3>
+<p>The sphere $S^2$ of the boundary is the compact member of a family of homogeneous spaces that the same two-dimensional module models, and naming the family places the ball in the wider picture the corpus uses. As a homogeneous space the boundary sphere is $S^2=SU(2)/U(1)$, the quotient of the compact group $SU(2)$ by the $U(1)$ that fixes the Bloch vector. The two companion spaces come from the rank-one non-compact group $SU(1,1)\cong SL(2,\mathbb{R})\cong Sp(2,\mathbb{R})$, the double cover of the three-dimensional Lorentz group $SO(1,2)$ and the dynamical group of the oscillator's squeezings: they are the two-sheeted time-like hyperboloid $H^\pm=SU(1,1)/U(1)$ and the one-sheeted hyperboloid $H^{sl}$, whose vector stabiliser is the non-compact boost subgroup, the first being the case of $S^2$ with the compact direction replaced by a time-like one. All three are modelled on spinors of the same module in the same way the boundary sphere is:</p>
+<ul>
+<li>the sphere $S^2$, by one Weyl spinor with the definite pairing $\langle z|\sigma^i|z\rangle$ and $\langle z|z\rangle=1$ — the pure-state correspondence of the preceding sections, since the boundary of the ball is exactly the spin-$1/2$ pure states;</li>
+<li>the hyperboloid $H^\pm$, by one Weyl spinor with the indefinite pairing $[u|v]=u^{\dagger}\sigma_3v$;</li>
+<li>the hyperboloid $H^{sl}$, by a <strong>pair</strong> of Majorana spinors.</li>
+</ul>
+<p>The three spaces are graded by causal character, and the grading shows in the representation label: $S^2$ carries a discrete spin label from the finite-dimensional $SU(2)$ multiplets, while the two hyperboloids carry a label from the discrete or the continuous series of $SU(1,1)$. The sphere of this article is therefore the space-like, compact case of a classification into causal types, and the non-compact cases are the ones on which a continuous rather than a discrete label appears. The construction is external to the framework and is cited in <em>Quantum Gravity under the Biquaternion Framework — A Research Agenda</em>.</p>
 <h2 id="what-the-slice-picture-shows">What the Slice Picture Shows</h2>
 <p>The main structural points are these. The state space of a qubit is not postulated as a ball of vectors; it is the trace-one slice of a cone. The cone is the positive cone of the Hermitian subspace, and the positive cone is, in turn, exactly the future light cone of the algebra's biquaternion norm. The three conditions that define a state — Hermitian, positive, trace one — become membership in $\mathbb{M}_+$, a trace normalization, and a single quadratic inequality supplied by the biquaternion norm; positivity is not an extra axiom but the statement that the state lies in the cone. Purity is a boundary condition rather than a separate axiom: the pure states are the idempotents, the rank-one projections, and the zero divisors of trace one, all at once, and they are the extreme rays of the cone. Mixedness is the interior, and the biquaternion norm restricted to the slice is, up to a factor, the linear entropy. Entropy and fidelity are then functions of the radius and of the Bloch vectors in the Euclidean geometry of the slice.</p>
 <p>Several points are left open in this picture. The base of the logarithm in the entropy is a convention, natural logarithms giving nats and base-two logarithms giving bits; the geometry does not prefer one. The normalization of the transition probability is likewise a convention, since some authors take the unsquared expression as the fidelity and others its square; the closed form above is stated for the squared normalization, which is the one that reduces to the pure-state transition probability. The extension of the slice picture to $n$ qubits requires the tensor product and the corresponding higher-dimensional cones, and the identification of the correct positivity domain there is a separate problem. Finally, this article has used only the future cone; the past cone, and the negative-trace elements of $\mathbb{M}_+$, have no state interpretation here, and whether they acquire one in a wider reading of the algebra is an open question.</p>
@@ -388,6 +396,18 @@ $$</p>
 <td>$T(\tilde{\rho},\tilde{\sigma}) = (\mathrm{Tr}\sqrt{\sqrt{\tilde{\rho}}\,\tilde{\sigma}\sqrt{\tilde{\rho}}})^2$</td>
 <td>Uhlmann transition probability</td>
 </tr>
+<tr>
+<td>$S^2 = SU(2)/U(1)$</td>
+<td>Boundary (Bloch) sphere as a homogeneous space</td>
+</tr>
+<tr>
+<td>$H^\pm = SU(1,1)/U(1)$, $H^{sl}$</td>
+<td>Time-like two-sheeted and space-like one-sheeted hyperboloids of $\mathbb{R}^{1,2}$</td>
+</tr>
+<tr>
+<td>$[u|v] = u^{\dagger}\sigma_3 v$</td>
+<td>Indefinite $SU(1,1)$-invariant pairing on the spinor module</td>
+</tr>
 </tbody>
 </table></div>
 <h2 id="further-reading">Further Reading</h2>
@@ -400,6 +420,7 @@ $$</p>
 <li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em> (Cambridge, 2001), for the algebraic structure of $\mathrm{Cl}_{1,3}$ and its idempotents.</li>
 <li>Chris Doran and Anthony Lasenby, <em>Geometric Algebra for Physicists</em> (Cambridge, 2003), for the geometric algebra treatment of spinors, projectors, and the light cone.</li>
 <li>Jacques Faraut and Adam Korányi, <em>Analysis on Symmetric Cones</em> (Oxford, 1994), for the cone-of-squares description of the positive cone of a Euclidean Jordan algebra.</li>
+<li>J. D. Simão, "Biquaternions, Majorana spinors and time-like spin-foams," arXiv:2401.10324 [gr-qc] (2024), for the spinor models of $S^2$, $H^\pm$ and $H^{sl}$ with the definite and the indefinite pairing, and for the causal grading that makes the Bloch sphere the compact member of the family. External; cited for the family only.</li>
 </ul>
       </div>
     </main>

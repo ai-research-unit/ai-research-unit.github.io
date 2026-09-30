@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Split Bioctonions and the Clifford Algebra Cl(7) — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="split-bioctonions-and-the-clifford-algebra-cl7"><strong>Split Bioctonions and the Clifford Algebra Cl(7)</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The complex octonions $\mathbb{C}\otimes\mathbb{O}$ are non-associative, but their left multiplications form an associative algebra, the complex octonionic chain algebra, which is the Clifford algebra $\mathrm{Cl}(6)$; the companion article <em>Complex Octonions and the Clifford Algebra Cl(6)</em> builds it in full, together with a maximal totally isotropic subspace of ladder operators, an intrinsic $\mathrm{su}(3)\oplus\mathrm{u}(1)$, a primitive idempotent and an eight-dimensional minimal left ideal whose basis carries the charges $0,\tfrac13,\tfrac13,\tfrac13,\tfrac23,\tfrac23,\tfrac23,1$. This article adjoins to that construction a single central <strong>split</strong> unit. The result is the <strong>complex split bioctonionic chain algebra</strong>,
+$$
+\mathrm{Cl}(7) \cong \mathrm{Cl}(6)\oplus\mathrm{Cl}(6) \cong M_8(\mathbb{C})\oplus M_8(\mathbb{C}),
+$$
+the complex Clifford algebra of the <strong>split bioctonions</strong> $\mathbb{D}\otimes_{\mathbb{R}}\mathbb{O}$. Its structure is fixed by the same mechanism as the one-rung-lower case of <em>Complex Split Biquaternions and the Clifford Algebra Cl(3)</em>: the volume element of an odd-dimensional Clifford algebra is central, and here it is an involution, so it splits the algebra into the direct sum of two copies of the complex octonionic chain algebra,
+$$
+\mathrm{Cl}(7) = \mathrm{Cl}(7)\Pi_+ \oplus \mathrm{Cl}(7)\Pi_-, \qquad \Pi_\pm = \tfrac12(1\pm J), \qquad J = e_1e_2e_3e_4e_5e_6e_7 .
+$$
+Each copy is a full $\mathrm{Cl}(6)$ and therefore carries its own Fano chain algebra, its own ladder operators, its own $\mathrm{su}(3)\oplus\mathrm{u}(1)$ and its own eight-dimensional minimal left ideal with the same charge spectrum; the two copies are the two <strong>pinor representations</strong> of $\mathrm{Cl}(7)$, are inequivalent, and are interchanged by the parity automorphism $e_i\mapsto -e_i$. This is the algebraic content of a generation of fermions carrying both chiralities, developed in <em>Left-Right Symmetric Fermions from Complex Split Biquaternions and Bioctonions</em>.</p>
+<p>The article is the octonionic member of the doubling pair whose lower member is <em>Complex Split Biquaternions and the Clifford Algebra Cl(3)</em>. The octonions, their norm, their conjugation and their relation to the division algebras are <em>Octonion Algebra</em> and <em>Octonion Norm and Invertibility</em>; the complex octonions, Furey's Fano convention, the chain algebra $\mathrm{Cl}(6)\cong M_8(\mathbb{C})$, its ladder operators, its $\mathrm{su}(3)$, its primitive idempotent and its charges are <em>Complex Octonions and the Clifford Algebra Cl(6)</em>; the general ladder and number-operator construction is <em>Maximal Totally Isotropic Subspaces and Their Unitary Symmetries</em>; and the split bioctonions' lower-dimensional relative is <em>Split-Biquaternion Algebra</em>.</p>
+<p><strong>Conventions.</strong> The seven generators $e_1,\dots,e_7$ satisfy
+$$
+e_i^2=-1, \qquad e_ie_j=-e_je_i \quad (i\neq j),
+$$
+so that $\{e_i,e_j\}=-2\delta_{ij}$, and the $2^7=128$ monomials are a $\mathbb{C}$-basis of $\mathrm{Cl}(7)\cong\mathrm{Cl}_7(\mathbb{C})$. The first six are the six units of the companion article, and their product is the <strong>$\mathrm{Cl}(6)$ volume element</strong>
+$$
+\Gamma := e_1e_2e_3e_4e_5e_6, \qquad \Gamma^2=-1,
+$$
+which <em>Complex Octonions and the Clifford Algebra Cl(6)</em> writes as $e_7$. In the present article the label $e_7$ denotes the <strong>seventh generator</strong>, not that volume element; the two labels must not be read index by index across the two articles. The Hermitian adjoint is fixed by $e_i^{\dagger}=-e_i$ and $i^{\dagger}=-i$, so that $\gamma_i=ie_i$ are Hermitian, as in the companion articles; the scalar imaginary is $i$. The split complex algebra is $\mathbb{D}$, with unit $j$, $j^2=+1$, as in <em>Split-Biquaternion Algebra</em>; the octonion multiplication is that of <em>Octonion Algebra</em>, and the warning of the companion article applies — the chain algebra result is stated in terms of the Clifford algebra, not in terms of the corpus octonion basis index by index.</p>
+<h2 id="the-bioctonions-and-the-split-bioctonions">The Bioctonions and the Split Bioctonions</h2>
+<p><strong>Definition.</strong> The <strong>bioctonions</strong> are the complexification $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{O}$ of the octonions; the <strong>split bioctonions</strong> are the tensor product $\mathbb{D}\otimes_{\mathbb{R}}\mathbb{O}$ of the split complex algebra with the octonions; and the <strong>complex split bioctonions</strong> are the complexification
+$$
+\mathbb{C}\otimes_{\mathbb{R}}\mathbb{D}\otimes_{\mathbb{R}}\mathbb{O}.
+$$</p>
+<p><strong>Proposition (splitting of the complex split bioctonions).</strong> The split complex algebra decomposes as $\mathbb{D}\cong\mathbb{C}\oplus\mathbb{C}$ through the idempotents $\tfrac12(1\pm j)$, and consequently
+$$
+\mathbb{C}\otimes_{\mathbb{R}}\mathbb{D}\otimes_{\mathbb{R}}\mathbb{O} \cong (\mathbb{C}\otimes_{\mathbb{R}}\mathbb{O}) \oplus (\mathbb{C}\otimes_{\mathbb{R}}\mathbb{O}).
+$$</p>
+<p><em>Proof.</em> Since $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{D}\cong\mathbb{C}\oplus\mathbb{C}$ (<em>Split-Complex Algebra</em>), tensoring with $\mathbb{O}$ over $\mathbb{R}$ distributes: $\mathbb{C}\otimes\mathbb{D}\otimes\mathbb{O}\cong(\mathbb{C}\oplus\mathbb{C})\otimes\mathbb{O}\cong(\mathbb{C}\otimes\mathbb{O})\oplus(\mathbb{C}\otimes\mathbb{O})$. $\square$</p>
+<p>Thus the complex split bioctonions are not new non-associative material: they are a pair of copies of the complex octonions. What is new is the algebra generated by their left multiplications.</p>
+<p><strong>Proposition (chain algebra of a direct sum).</strong> If $A$ is a real algebra and $L_A$ is the algebra generated by the left multiplications $L_x:y\mapsto xy$, then the chain algebra of $A\oplus A$ is $L_A\oplus L_A$.</p>
+<p><em>Proof.</em> Left multiplication by $(x,y)\in A\oplus A$ is $L_{(x,y)}=L_x\oplus L_y$, since the product in a direct sum is componentwise; as $x$ and $y$ range over $A$ the pairs $(L_x,L_y)$ range over $L_A\oplus L_A$, and the generated algebra is the direct sum. $\square$</p>
+<p><strong>Theorem (the chain algebra of the complex split bioctonions).</strong> The chain algebra of the complex split bioctonions is the complex Clifford algebra
+$$
+\mathrm{Cl}(7) \cong \mathrm{Cl}(6)\oplus\mathrm{Cl}(6) \cong M_8(\mathbb{C})\oplus M_8(\mathbb{C}),
+$$
+of complex dimension $128$, and its two direct summands are the two copies of the complex octonionic chain algebra of <em>Complex Octonions and the Clifford Algebra Cl(6)</em>.</p>
+<p><em>Proof.</em> By the two propositions, the chain algebra is $L_{\mathbb{C}\otimes\mathbb{O}}\oplus L_{\mathbb{C}\otimes\mathbb{O}}\cong\mathrm{Cl}(6)\oplus\mathrm{Cl}(6)$. The low-dimensional classification gives $\mathrm{Cl}_6(\mathbb{C})\cong M_8(\mathbb{C})$ and $\mathrm{Cl}_7(\mathbb{C})\cong M_8(\mathbb{C})\oplus M_8(\mathbb{C})$, and the two are isomorphic as algebras; both statements were confirmed by the dimension count $2\cdot 64=128=2^7$. $\square$</p>
+<h2 id="the-volume-element-and-the-doubling">The Volume Element and the Doubling</h2>
+<p><strong>Proposition (the volume element).</strong> The element
+$$
+J := e_1e_2e_3e_4e_5e_6e_7 = \Gamma e_7
+$$
+satisfies
+$$
+J^2=1, \qquad J e_i = e_i J \quad (i=1,\dots,7), \qquad J^{\dagger}=J .
+$$
+That is, $J$ is central, it is an involution, and it is self-adjoint.</p>
+<p><em>Proof.</em> Each generator crosses the other six once, at the cost of six signs, which cancel, so $J$ commutes with every generator and hence with the algebra. The square is $(-1)^{n(n-1)/2}c^n$ at $n=7$, $c=-1$, that is, $(-1)^{21}(-1)^7=+1$. The adjoint reverses seven anti-Hermitian factors, at the cost of $(-1)^7$ from anti-Hermiticity and one more sign from the reversal of seven anticommuting factors, and $(-1)^7\cdot(-1)=+1$, so $J^{\dagger}=J$. All three identities were checked on the generators with zero residual. $\square$</p>
+<p>The centrality of $J$ is the statement that the algebra is odd-dimensional; the reality $J^2=+1$ is the statement that it is <em>split</em> rather than complex, and it is the one place where the octonionic case differs from $\mathrm{Cl}(6)$, whose volume element $\Gamma$ has square $-1$ and generates a $\mathrm{u}(1)$ rather than a splitting.</p>
+<p><strong>Proposition (the seventh generator is the $\mathrm{Cl}(6)$ volume element).</strong> Because $J=\Gamma e_7$ and $\Gamma$ anticommutes with $e_7$,
+$$
+e_7 = -\Gamma J .
+$$
+On each central summand, where $J$ acts as the scalar $\pm1$, the seventh generator acts as $\mp\Gamma$, the $\mathrm{Cl}(6)$ volume element, with opposite signs on the two summands.</p>
+<p><em>Proof.</em> From $\Gamma^2=-1$ and $e_7\Gamma=-\Gamma e_7$: $\Gamma J=\Gamma^2e_7=-e_7$, so $e_7=-\Gamma J$, and $J$ is $\pm1$ on the summands. $\square$</p>
+<p><strong>Theorem (the central splitting).</strong> With $\Pi_\pm=\tfrac12(1\pm J)$, the elements $\Pi_+,\Pi_-$ are a complete family of orthogonal central idempotents,
+$$
+\Pi_+^2=\Pi_+, \qquad \Pi_-^2=\Pi_-, \qquad \Pi_+\Pi_-=0, \qquad \Pi_++\Pi_-=1,
+$$
+and
+$$
+\mathrm{Cl}(7) = \mathrm{Cl}(7)\Pi_+ \oplus \mathrm{Cl}(7)\Pi_- ,
+$$
+a direct sum of two two-sided ideals, each of complex dimension $64$ and each isomorphic to the complex octonionic chain algebra,
+$$
+\mathrm{Cl}(7)\Pi_\pm \cong \mathrm{Cl}(6) \cong M_8(\mathbb{C}).
+$$</p>
+<p><em>Proof.</em> Idempotency, orthogonality and completeness come from $J^2=1$ as in the companion Cl(3) article; centrality from centrality of $J$. The two-sided ideals are the two simple summands of $\mathrm{Cl}(7)\cong M_8(\mathbb{C})\oplus M_8(\mathbb{C})$, each of complex dimension $64$; left multiplication by $\Pi_\pm$ was checked to be a rank-$64$ projector of the $128$-dimensional space. $\square$</p>
+<p><strong>Theorem (the parity automorphism and the two pinor representations).</strong> The map
+$$
+\sigma : \mathrm{Cl}(7)\to\mathrm{Cl}(7), \qquad \sigma(e_i)=-e_i ,
+$$
+is an algebra automorphism which fixes the even monomials and negates the odd ones, satisfies $\sigma(J)=-J$, and interchanges the two summands, $\sigma(\Pi_+)=\Pi_-$, $\sigma(\Pi_-)=\Pi_+$. The two summands are the two pinor representations of $\mathrm{Cl}(7)$, inequivalent and distinguished by the eigenvalue $\pm1$ of the central volume element $J$; equivalently, by the proposition above, by the sign of the $\mathrm{Cl}(6)$ volume element $\Gamma$ that each induces.</p>
+<p><em>Proof.</em> As in the companion Cl(3) article: sending every generator to its negative preserves the quadratic relations and is invertible; on the volume element the seven sign flips give $\sigma(J)=(-1)^7J=-J$; and the two projections are the two nonequivalent simple modules of $M_8(\mathbb{C})\oplus M_8(\mathbb{C})$. $\square$</p>
+<h2 id="the-furey-structure-in-each-summand">The Furey Structure in Each Summand</h2>
+<p>Each summand is a $\mathrm{Cl}(6)$ and inherits the whole octonionic chain structure of the companion article verbatim. It is collected here in the form used in the companion physics article.</p>
+<p><strong>Proposition (the ladder operators).</strong> Define, as in <em>Complex Octonions and the Clifford Algebra Cl(6)</em>,
+$$
+\alpha_1=\tfrac12(-e_5+ie_4), \qquad \alpha_2=\tfrac12(-e_3+ie_1), \qquad \alpha_3=\tfrac12(-e_6+ie_2),
+$$
+with Hermitian conjugates $\alpha_i^{\dagger}$. Then
+$$
+\{\alpha_i,\alpha_j\}=0, \qquad \{\alpha_i^{\dagger},\alpha_j^{\dagger}\}=0, \qquad \{\alpha_i,\alpha_j^{\dagger}\}=\delta_{ij}I ,
+$$
+so that $\operatorname{span}\{\alpha_1,\alpha_2,\alpha_3\}$ is a three-dimensional maximal totally isotropic subspace of the complexified six-space, its conjugate span is the conjugate MTIS, and the six together span the six-space.</p>
+<p><em>Proof.</em> Direct expansion in the Clifford relations $e_i^2=-1$, $e_ie_j=-e_je_i$; all nine relations in each family were recomputed inside $\mathrm{Cl}(7)$ with zero residual, confirming that adjoining the seventh generator does not disturb them (the $\alpha_i$ do not involve $e_7$). $\square$</p>
+<p><strong>Theorem (the ideal and its charges in each summand).</strong> Let
+$$
+\omega := \alpha_1\alpha_2\alpha_3, \qquad P := \omega\,\omega^{\dagger}=\alpha_1\alpha_2\alpha_3\,\alpha_3^{\dagger}\alpha_2^{\dagger}\alpha_1^{\dagger},
+\qquad N := \sum_{i=1}^{3}\alpha_i^{\dagger}\alpha_i .
+$$
+Then $P$ is a primitive idempotent, $\alpha_iP=0$, and
+$$
+S := \mathrm{Cl}(7)\,P = \operatorname{span}_{\mathbb{C}}\bigl\{\,P,\ \alpha_1^{\dagger}P,\ \alpha_2^{\dagger}P,\ \alpha_3^{\dagger}P,\
+\alpha_3^{\dagger}\alpha_2^{\dagger}P,\ \alpha_1^{\dagger}\alpha_3^{\dagger}P,\ \alpha_2^{\dagger}\alpha_1^{\dagger}P,\
+\alpha_3^{\dagger}\alpha_2^{\dagger}\alpha_1^{\dagger}P\,\bigr\}
+$$
+is an eight-dimensional minimal left ideal on which $N$ takes the values $0,1,1,1,2,2,2,3$, so that the charge operator
+$$
+Q=\tfrac13 N
+$$
+takes the values
+$$
+0,\ \tfrac13,\ \tfrac13,\ \tfrac13,\ \tfrac23,\ \tfrac23,\ \tfrac23,\ 1 .
+$$
+The intrinsic symmetry algebra on $S$ is $\mathrm{su}(3)\oplus\mathrm{u}(1)$; the $\mathrm{su}(3)$ is generated by the eight chains $\Lambda_1,\dots,\Lambda_8$ of the companion article, and the $\mathrm{u}(1)$ by $N$.</p>
+<p><em>Proof.</em> The construction is that of <em>Complex Octonions and the Clifford Algebra Cl(6)</em> carried out on the generators $e_1,\dots,e_6$ inside $\mathrm{Cl}(7)$, which satisfy the same relations. The rank of $P$, the independence of the eight elements, the eigenvalues of $N$ on them and the commutation of $\Lambda_1$ with $N$ were recomputed inside $\mathrm{Cl}(7)$ with zero residual; the $\mathrm{su}(3)$ structure constants and the weight and Casimir computations are the companion article's and are not repeated. $\square$</p>
+<p>Because the $\alpha_i$, $P$, $N$ and $\Lambda_a$ involve only $e_1,\dots,e_6$, they commute with the seventh generator and hence with $J$; the ideal $S$ therefore lies inside a single summand, and its image under the parity automorphism is the corresponding ideal of the other summand. Explicitly,
+$$
+[\Lambda_a,J]=0, \qquad [N,J]=0, \qquad [\Lambda_a,N]=0
+$$
+(all residuals zero), so the two summands carry <strong>the same</strong> $\mathrm{su}(3)\oplus\mathrm{u}(1)$ and the same charge spectrum, and differ only in chirality: the eigenvalue of $J$, equivalently the sign of $\Gamma$.</p>
+<h2 id="summary">Summary</h2>
+<p>The split bioctonions are $\mathbb{D}\otimes_{\mathbb{R}}\mathbb{O}$, and the complex split bioctonions are $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{D}\otimes_{\mathbb{R}}\mathbb{O}\cong(\mathbb{C}\otimes_{\mathbb{R}}\mathbb{O})\oplus(\mathbb{C}\otimes_{\mathbb{R}}\mathbb{O})$. Their chain algebra, the algebra generated by the left multiplications, is the complex Clifford algebra
+$$
+\mathrm{Cl}(7) \cong \mathrm{Cl}(6)\oplus\mathrm{Cl}(6) \cong M_8(\mathbb{C})\oplus M_8(\mathbb{C}),
+$$
+of complex dimension $128$. Its volume element $J=e_1e_2e_3e_4e_5e_6e_7$ is central, self-adjoint and an involution, $J^2=1$, and through the idempotents $\Pi_\pm=\tfrac12(1\pm J)$ it splits the algebra into two copies of the complex octonionic chain algebra $\mathrm{Cl}(6)\cong M_8(\mathbb{C})$, each of complex dimension $64$. The seventh generator acts on the two copies as the $\mathrm{Cl}(6)$ volume element $\Gamma=e_1\cdots e_6$ with opposite signs, $e_7=-\Gamma J$. The parity automorphism $e_i\mapsto-e_i$ negates $J$ and interchanges the two copies, which are the two inequivalent pinor representations of $\mathrm{Cl}(7)$, distinguished by the eigenvalue of $J$; this is the doubling of the octonionic chain algebra into the two chiralities of a generation. Each copy carries the Furey ladder operators with $\{\alpha_i,\alpha_j^{\dagger}\}=\delta_{ij}$, an eight-dimensional minimal left ideal with charges $0,\tfrac13,\tfrac13,\tfrac13,\tfrac23,\tfrac23,\tfrac23,1$ under $Q=\tfrac13N$, and the same intrinsic $\mathrm{su}(3)\oplus\mathrm{u}(1)$, which commutes with $J$: the two copies differ only in chirality. The construction is the six-dimensional case of the general statement that the chain algebra of a split normed algebra is $\mathrm{Cl}(2n)\oplus\mathrm{Cl}(2n)\cong\mathrm{Cl}(2n+1)$, of which the quaternionic case is <em>Complex Split Biquaternions and the Clifford Algebra Cl(3)</em>.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{O}$, $\mathbb{C}\otimes\mathbb{O}$</td>
+<td>Octonions and complex octonions (bioctonions)</td>
+</tr>
+<tr>
+<td>$\mathbb{D}\otimes\mathbb{O}$</td>
+<td>Split bioctonions</td>
+</tr>
+<tr>
+<td>$\mathbb{C}\otimes\mathbb{D}\otimes\mathbb{O}\cong(\mathbb{C}\otimes\mathbb{O})\oplus(\mathbb{C}\otimes\mathbb{O})$</td>
+<td>Complex split bioctonions</td>
+</tr>
+<tr>
+<td>$e_1,\dots,e_7$</td>
+<td>Clifford generators, $e_i^2=-1$, $e_ie_j=-e_je_i$</td>
+</tr>
+<tr>
+<td>$\Gamma=e_1\cdots e_6$</td>
+<td>$\mathrm{Cl}(6)$ volume element, $\Gamma^2=-1$; the companion's $e_7$</td>
+</tr>
+<tr>
+<td>$J=e_1\cdots e_7=\Gamma e_7$</td>
+<td>$\mathrm{Cl}(7)$ volume element, central, self-adjoint, $J^2=1$</td>
+</tr>
+<tr>
+<td>$e_7=-\Gamma J$</td>
+<td>Seventh generator as the $\mathrm{Cl}(6)$ volume element on each summand</td>
+</tr>
+<tr>
+<td>$\Pi_\pm=\tfrac12(1\pm J)$</td>
+<td>Complete orthogonal central idempotents</td>
+</tr>
+<tr>
+<td>$\mathrm{Cl}(7)\Pi_\pm\cong\mathrm{Cl}(6)\cong M_8(\mathbb{C})$</td>
+<td>The two summands, each of complex dimension $64$</td>
+</tr>
+<tr>
+<td>$\sigma:e_i\mapsto-e_i$</td>
+<td>Parity automorphism, interchanges the summands</td>
+</tr>
+<tr>
+<td>$\alpha_i,\alpha_i^{\dagger}$</td>
+<td>Furey ladder operators of a summand</td>
+</tr>
+<tr>
+<td>$N=\sum_i\alpha_i^{\dagger}\alpha_i$</td>
+<td>Number operator</td>
+</tr>
+<tr>
+<td>$P=\alpha_1\alpha_2\alpha_3\alpha_3^{\dagger}\alpha_2^{\dagger}\alpha_1^{\dagger}$</td>
+<td>Primitive idempotent of a summand</td>
+</tr>
+<tr>
+<td>$S=\mathrm{Cl}(7)P$</td>
+<td>Eight-dimensional minimal left ideal</td>
+</tr>
+<tr>
+<td>$Q=\tfrac13N$</td>
+<td>Charge operator, values $0,\tfrac13,\tfrac23,1$</td>
+</tr>
+<tr>
+<td>$\Lambda_1,\dots,\Lambda_8$</td>
+<td>$\mathrm{su}(3)$ generators, commuting with $N$ and $J$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>V. Vaibhav and T. P. Singh, "Left-Right Symmetric Fermions and Sterile Neutrinos from Complex Split Biquaternions and Bioctonions," arXiv:2108.01858, for the construction of this article's algebra and its physics reading.</li>
+<li>C. Furey, "Standard model physics from an algebra?" (2016), arXiv:1611.09182, for the octonionic chain algebra, its ladder operators, its $\mathrm{su}(3)$ and its minimal left ideal, which the two summands reproduce.</li>
+<li>P. Lounesto, <em>Clifford Algebras and Spinors</em> (Cambridge, 2001), for the classification $\mathrm{Cl}_7(\mathbb{C})\cong M_8(\mathbb{C})\oplus M_8(\mathbb{C})$, the centrality of the volume element of an odd complex Clifford algebra, and the two pinor representations.</li>
+<li>H. B. Lawson and M.-L. Michelsohn, <em>Spin Geometry</em> (Princeton, 1989), for the volume element, the chirality grading and the passage $\mathrm{Cl}(2n)\to\mathrm{Cl}(2n+1)$.</li>
+<li>J. C. Baez, "The octonions," <em>Bulletin of the American Mathematical Society</em> <strong>39</strong> (2002) 145–205, for the octonions, the complex octonions and the split octonions.</li>
+<li>Companion article <em>Complex Octonions and the Clifford Algebra Cl(6)</em>, for the chain algebra, the ladder operators, the $\mathrm{su}(3)$, the idempotent and the charges of each summand, and the warning about the two bases.</li>
+<li>Companion article <em>Complex Split Biquaternions and the Clifford Algebra Cl(3)</em>, for the same doubling in the quaternionic case.</li>
+<li>Companion article <em>Maximal Totally Isotropic Subspaces and Their Unitary Symmetries</em>, for the general ladder, number-operator and charge construction.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

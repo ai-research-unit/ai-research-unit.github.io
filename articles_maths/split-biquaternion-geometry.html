@@ -154,6 +154,52 @@ $$</p>
 \tilde Q = \lvert\tilde Q\rvert\,\frac{\tilde Q}{\lvert\tilde Q\rvert},
 $$</p>
 <p>with the second factor a point of the Euclidean unit sphere of $\mathbb{H}_{\mathbb{D}}$, not of the unit sphere $S(\mathbb{H}_{\mathbb{D}})$; the two spheres are different, and the geometric content of the difference is exactly that the Euclidean sphere meets both the zero divisor cone and the algebraic unit sphere in lower-dimensional sets. The polar representation of the units of the algebra, established in <em>Split-Biquaternion Polar Element Representation</em>, describes which units occur; the geometric statement kept here is that the set of units is not the Euclidean unit sphere and not the algebraic unit sphere, but the complement of the zero divisor cone.</p>
+<h2 id="the-imaginary-span-and-the-split-form-of-signature-math213">The Imaginary Span and the Split Form of Signature $(3,3)$</h2>
+<p>The two quadratic forms of the preceding sections are the Euclidean form of signature $(8,0)$ and the Hermitian form $g$ of signature $(4,4)$, whose eigenspaces $\mathbb{M}_+$ and $\mathbb{M}_-$ carry the Lorentzian restrictions $(1,3)$ and $(3,1)$. There is a third form in the system, obtained by restricting $g$ to the subspace left when the two scalar directions are removed, and its signature is neither definite nor Lorentzian but split. This section describes that restriction and the transformations of it that the multiplication of the algebra realises.</p>
+<h3 id="the-scalar-plane-and-the-imaginary-span">The Scalar Plane and the Imaginary Span</h3>
+<p><strong>Definition.</strong> The <strong>scalar plane</strong> of $\mathbb{H}_{\mathbb{D}}$ is the two-dimensional space</p>
+<p>$$
+S = \mathbb{R}e_0\oplus\mathbb{R}je_0 = \operatorname{span}\{e_0, je_0\},
+$$</p>
+<p>and the <strong>imaginary span</strong> is its orthogonal complement</p>
+<p>$$
+V = S^{\perp} = \operatorname{Im}\mathbb{H}\oplus j\operatorname{Im}\mathbb{H} = \operatorname{span}\{e_1,e_2,e_3,je_1,je_2,je_3\}.
+$$</p>
+<p><strong>Proposition.</strong> The scalar plane is non-degenerate of signature $(1,1)$, the imaginary span is six-dimensional and non-degenerate, the two are orthogonal, and the restriction satisfies</p>
+<p>$$
+g(e_r,e_s) = \delta_{rs}, \qquad g(je_r,je_s) = -\delta_{rs}, \qquad g(e_r,je_s) = 0 ,
+$$</p>
+<p>so that $g$ restricted to $V$ has signature $(3,3)$ in the orthogonal basis $(e_1,e_2,e_3,je_1,je_2,je_3)$, positive on the first three vectors and negative on the last three.</p>
+<p><em>Proof.</em> Direct computation from $g(\tilde P,\tilde Q) = \mathrm{Sc}(\tilde P\tilde Q^{\dagger})$, with ${}^{\dagger}$ fixing $e_0$, negating each $e_r$, negating $j$ and fixing each $je_r$. On the first triple, $g(e_r,e_s) = \mathrm{Sc}(e_re_s^{\dagger}) = -\mathrm{Sc}(e_re_s) = \delta_{rs}$, since $e_re_s = -\delta_{rs}e_0 + \sum_t\varepsilon_{rst}e_t$ has scalar part $-\delta_{rs}$. On the second, $g(je_r,je_s) = \mathrm{Sc}(je_r(je_s)^{\dagger}) = \mathrm{Sc}(je_rje_s) = \mathrm{Sc}(e_re_s) = -\delta_{rs}$. Across the two, $g(e_r,je_s) = \mathrm{Sc}(e_rje_s) = \mathrm{Sc}(je_re_s) = 0$, because the scalar part of $j$ times a quaternion vanishes. The statement for the scalar plane, and the two signatures together, follow by complementation: $\mathbb{H}_{\mathbb{D}} = S\oplus V$ is an orthogonal direct sum, the signature $(1,1)$ of $S$ is read from $g(e_0,e_0) = +1$ and $g(je_0,je_0) = -1$, and $8 - 2 = 6$ with signature $(4,4) - (1,1) = (3,3)$.</p>
+<p><strong>Remark (the same statement in the Clifford description).</strong> Under the identification of the algebra with $\mathrm{Cl}_{0,3}$ recorded in <em>The Number Systems as Clifford Algebras</em>, the three elements $e_1,e_2,e_3$ are the bivectors of the Clifford algebra and the three elements $je_1,je_2,je_3$ are its vectors, while $e_0$ is the scalar and $je_0$ the trivector. In that description the proposition says that $g$ is positive definite on the bivectors, negative definite on the vectors, and orthogonal across the two, so the split form of signature $(3,3)$ is the form of the Clifford algebra on the direct sum of its one- and two-vector parts. This is the same mechanism by which $\mathbb{M}_-$ and $\mathbb{M}_+$ acquire opposite Lorentzian signatures, applied one degree away: the sign of $g$ is carried by the conjugation ${}^{\dagger}$, which fixes the vectors of the Clifford algebra and negates its bivectors.</p>
+<p><strong>Remark (relation to the eigenspaces).</strong> The imaginary span meets each eigenspace of ${}^{\dagger}$ in a three-dimensional space,</p>
+<p>$$
+V\cap\mathbb{M}_+ = \operatorname{span}\{je_1,je_2,je_3\}, \qquad V\cap\mathbb{M}_- = \operatorname{span}\{e_1,e_2,e_3\},
+$$</p>
+<p>so that $V$ is the direct sum of a spacelike triple of $\mathbb{M}_-$ and a negative definite triple of $\mathbb{M}_+$. On a single eigenspace the scalar direction has the sign opposite to the remaining three, as recorded above; removing the two scalar directions leaves the two triples with those opposite signs, and the split signature $(3,3)$ is the result.</p>
+<h3 id="the-two-splittings-of-the-imaginary-span">The Two Splittings of the Imaginary Span</h3>
+<p><strong>Proposition.</strong> The idempotents of the algebra split the imaginary span into two maximal totally isotropic three-planes,</p>
+<p>$$
+V = V\tilde\Pi_+\oplus V\tilde\Pi_-, \qquad V\tilde\Pi_{\pm} = \operatorname{span}\{e_1\tilde\Pi_{\pm}, e_2\tilde\Pi_{\pm}, e_3\tilde\Pi_{\pm}\},
+$$</p>
+<p>and the form pairs the two summands dually: $g$ vanishes on each of them separately, and $g(e_r\tilde\Pi_+, e_s\tilde\Pi_-) = \tfrac12\delta_{rs}$.</p>
+<p><em>Proof.</em> The idempotents are orthogonal, $\tilde\Pi_+\tilde\Pi_- = 0$, and they are exchanged by the conjugation, $\tilde\Pi_+^{\dagger} = \tilde\Pi_-$, because ${}^{\dagger}$ negates $j$. Hence $\dagger(e_s\tilde\Pi_-) = \dagger(\tilde\Pi_-)\dagger(e_s) = \tilde\Pi_+\cdot(-e_s) = -e_s\tilde\Pi_+$, and</p>
+<p>$$
+g(e_r\tilde\Pi_+, e_s\tilde\Pi_-) = -\mathrm{Sc}(e_re_s\tilde\Pi_+^2) = -\mathrm{Sc}(e_re_s\tilde\Pi_+) = \tfrac12\delta_{rs},
+$$</p>
+<p>the last step because $\mathrm{Sc}(e_re_s) = -\delta_{rs}$ and because the scalar part of $j$ times a quaternion vanishes, so that $\mathrm{Sc}(e_re_s\tilde\Pi_+) = \tfrac12\mathrm{Sc}(e_re_s)$. On one summand alone the same computation with $\tilde\Pi_+^2 = \tilde\Pi_+$ and $\tilde\Pi_+\tilde\Pi_- = 0$ gives $g(e_r\tilde\Pi_+, e_s\tilde\Pi_+) = -\mathrm{Sc}(e_re_s\tilde\Pi_+\tilde\Pi_-) = 0$, so each summand is totally isotropic. Both are three-dimensional, and a totally isotropic subspace of a non-degenerate form of signature $(3,3)$ has dimension at most three, so both are maximal.</p>
+<p><strong>Remark (two splittings, and which one the algebra prefers).</strong> The imaginary span therefore carries two natural decompositions into two three-planes, which do not coincide: the orthogonal one, $V = \operatorname{span}\{e_k\}\oplus\operatorname{span}\{je_k\}$, whose summands are respectively positive and negative definite, and the isotropic one, $V = V\tilde\Pi_+\oplus V\tilde\Pi_-$, whose summands are isotropic and dually paired. The first displays the signature and the second is the one the multiplication selects; the two are related by the change of basis $e_k\mapsto e_k\tilde\Pi_\pm$, and neither is finer than the other.</p>
+<h3 id="the-transformations-the-algebra-realises">The Transformations the Algebra Realises</h3>
+<p><strong>Proposition.</strong> Let $\sigma$ be an automorphism of $\mathbb{H}_{\mathbb{D}}$. Then $\sigma$ maps the imaginary span to itself, it either preserves each of the two ideals $\mathbb{H}\tilde\Pi_{\pm}$ or interchanges them, and on $V$ it acts on the two isotropic three-planes by two rotations $\sigma_+,\sigma_-\in SO(3)$. It preserves the Hermitian form $g$ if and only if $\sigma_+ = \sigma_-$; in that case it acts on the two definite triples $\operatorname{span}\{e_r\}$ and $\operatorname{span}\{je_r\}$ by $\operatorname{diag}(R,R)$ when it preserves the ideals and by $\operatorname{diag}(R,-R)$ when it interchanges them, with $R = \sigma_+ = \sigma_-$.</p>
+<p><em>Proof.</em> An automorphism of $\mathbb{H}_{\mathbb{D}}\cong\mathbb{H}\oplus\mathbb{H}$ permutes the two simple summands, so it acts on the ideals by automorphisms $\sigma_\pm$ of $\mathbb{H}$, either with the labels preserved or with them exchanged; every automorphism of $\mathbb{H}$ is inner, hence a rotation of $\operatorname{Im}\mathbb{H}$, and this gives the first statement once $V\tilde\Pi_{\pm}$ is identified with $\operatorname{Im}\mathbb{H}$ through $e_r\tilde\Pi_{\pm}\leftrightarrow e_r$. On the imaginary span, the isotropic coordinates $c_{\pm}$ of an element are related to its two quaternion components by $a = c_++c_-$ and $b = c_+-c_-$, so that the form there is $g = 2\sum_r c_r^+c_r^-$. An automorphism sends $c_{\pm}\mapsto\sigma_{\pm}c_{\pm}$, or $c_{\pm}\mapsto\sigma_{\mp}c_{\pm}$ in the interchanged case, and the pairing $2\sum_rc^+_rc^-_r$ becomes $2\langle \sigma_+c^+,\sigma_-c^-\rangle = 2\langle c^+,\sigma_+^{-1}\sigma_-c^-\rangle$ in the first case and $2\langle \sigma_-c^-,\sigma_+c^+\rangle = 2\langle c^-,\sigma_-^{-1}\sigma_+c^+\rangle$ in the second. Either expression equals the pairing identically exactly when $\sigma_+ = \sigma_-$; then the automorphism is a conjugation by a unit quaternion in the first case and the interchange of the two ideals followed by such a conjugation in the second, and the change of coordinates $a = c_++c_-$, $b = c_+-c_-$ turns those two actions into $\operatorname{diag}(R,R)$ and $\operatorname{diag}(R,-R)$.</p>
+<p><strong>Corollary.</strong> The automorphisms of the algebra that preserve the Hermitian form form a group isomorphic to $O(3)$, of dimension three: the identity component is the diagonal $SO(3)$ of the maps $\operatorname{diag}(R,R)$, which are the conjugations by unit quaternions, and the other component consists of the maps $\operatorname{diag}(R,-R)$, among them the interchange of the two ideals.</p>
+<p><strong>Remark (three of the fifteen dimensions).</strong> The isometry group of $(V,g)$ is $O(3,3)$, of dimension $\tfrac{1}{2}\cdot6\cdot5 = 15$, with identity component $SO^{+}(3,3)$ and maximal compact subgroup $SO(3)\times SO(3)$ of dimension six. The automorphisms of the algebra supply only the three-dimensional group of the corollary, so an isometry of the form $\operatorname{diag}(R,S)$ of the two definite triples in which $S$ is neither $R$ nor $-R$ is one that no automorphism of $\mathbb{H}_{\mathbb{D}}$ realises; these are three dimensions of the compact part, and every one of the nine dimensions of boosts is of the same kind.</p>
+<p><strong>Remark (the boosts come from the split complex scalars).</strong> A family of the missing non-compact directions is nevertheless available, and it comes from the split complex factor rather than from the automorphisms. Let $\sigma = \alpha+j\beta$ be a split complex unit, $\alpha^2-\beta^2 = 1$. Left multiplication by $\sigma$ satisfies $\dagger(\sigma)\sigma = e_0$, hence preserves $g$ on the whole algebra; it maps the imaginary span to itself, mixing the two definite triples, and in the isotropic coordinates it is the boost</p>
+<p>$$
+c_+\longmapsto\lambda c_+, \qquad c_-\longmapsto\lambda^{-1}c_-, \qquad \lambda = \alpha+\beta .
+$$</p>
+<p>It is not an automorphism of the algebra, because it does not fix $e_0$. The automorphisms and these scalar multiplications together generate a four-dimensional group of isometries of the imaginary span, out of the fifteen dimensions of $O(3,3)$.</p>
+<p><strong>Remark (the Klein quadric).</strong> The split form $D_3$ is also $A_3$, so $\mathfrak{so}(3,3)\cong\mathfrak{sl}(4,\mathbb{R})$ and $SO^{+}(3,3)\cong SL(4,\mathbb{R})/\{\pm I\}$. In this identification the imaginary span is $\Lambda^2\mathbb{R}^4$ with the form induced by the wedge product against a volume element, whose isotropic cone is the Klein quadric $Q(3,3)\subset\mathbb{P}^5$, the quadric whose points are the lines of $\mathbb{P}^3$; the two isotropic three-planes $V\tilde\Pi_{\pm}$ are then the self-dual and the anti-self-dual two-forms. The split quadric of the imaginary span is thus the five-dimensional relative of the Kleinian quadric $Q(g)$ of the projective section, and the diagonal $SO(3)$ of the corollary is the subgroup of $SO(4)$ that fixes a vector of $\mathbb{R}^4$, acting on the self-dual and the anti-self-dual two-forms by the same rotation.</p>
 <h2 id="comparison-with-the-neighbouring-systems">Comparison with the Neighbouring Systems</h2>
 <p>The geometry of the split biquaternions is best read against the two geometries it generalises and against the quaternion geometry it doubles.</p>
 <div class="table-scroll"><table>
@@ -229,6 +275,7 @@ $$</p>
 <h2 id="summary">Summary</h2>
 <p>The split biquaternion algebra carries two quadratic forms. The Euclidean form $\lvert\tilde Q\rvert^2 = \sum_\mu(q_\mu^2 + (q'_\mu)^2)$ is positive definite of signature $(8,0)$ and gives the metric of the underlying real vector space. The split-biquaternion norm $N(\tilde Q) = \tilde Q\bar{\tilde Q}$ is split complex valued, equal to $R + jI$ with $R = \lvert\tilde Q\rvert^2$ and $I = 2\sum_\mu q_\mu q'_\mu$, and multiplicative. Its zero set is the union of the two ideals $\mathbb{H}\tilde\Pi_+$ and $\mathbb{H}\tilde\Pi_-$, each a real four-dimensional subspace, meeting only at the origin; the zero divisors are therefore a union of two ruling subspaces rather than a hypersurface.</p>
 <p>The unit sphere $\{\tilde Q : N(\tilde Q) = e_0\}$ is the product $S^3\times S^3$, a compact six-dimensional group with the product of the round metrics, of volume $4\pi^4$, bi-invariant, with geodesics the products of great circles. Its quotients by the diagonal and by either factor are three-spheres. The Hermitian scalar form $g(\tilde P,\tilde Q) = \mathrm{Sc}(\tilde P\tilde Q^{\dagger})$ is non-degenerate of signature $(4,4)$; its projectivised null cone is a Kleinian quadric of dimension six, on which the two zero divisor ideals project to two maximal totally isotropic subspaces; the $\mathbb{D}$-span of two quaternion coordinates is a neutral plane of signature $(2,2)$ with isometry group $O(2,2)$. The isometry group of $g$ is $O(4,4)$, of dimension twenty-eight, with maximal compact subgroup $O(4)\times O(4)$, and the quadric is the compact dual of the Hermitian symmetric space $SO^{+}(4,4)/(SO(4)\times SO(4))$.</p>
+<p>The imaginary span $V = \operatorname{Im}\mathbb{H}\oplus j\operatorname{Im}\mathbb{H}$, the orthogonal complement of the scalar plane $\mathbb{R}e_0\oplus\mathbb{R}je_0$, is the split six-space of the system: $g$ restricts to it with signature $(3,3)$, positive on the triple $(e_1,e_2,e_3)$ of bivectors and negative on the triple $(je_1,je_2,je_3)$ of vectors of the Clifford algebra $\mathrm{Cl}_{0,3}$, so the isometry group of the restriction is $O(3,3)$, of dimension fifteen, with identity component $SO^{+}(3,3)\cong SL(4,\mathbb{R})/\{\pm I\}$ and maximal compact subgroup $SO(3)\times SO(3)$. The idempotents give a second splitting, $V = V\tilde\Pi_+\oplus V\tilde\Pi_-$, into two maximal totally isotropic three-planes that are $g$-dual to one another, on which the restriction is the pairing $2\sum_rc_r^+c_r^-$ of the isotropic coordinates. The automorphisms of the algebra map $V$ to itself and rotate the two isotropic planes independently, with or without exchanging them, and they preserve $g$ exactly when the two rotations agree, so the realised group is $O(3)$, of dimension three, acting by $\operatorname{diag}(R,R)$ and $\operatorname{diag}(R,-R)$ on the two definite triples. None of the nine dimensions of boosts is an automorphism, though one family of them is reached by multiplication by the split complex units, acting as $c_+\mapsto\lambda c_+$, $c_-\mapsto\lambda^{-1}c_-$.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -311,6 +358,26 @@ $$</p>
 <td>Isometry groups of $g$ and of the neutral planes</td>
 </tr>
 <tr>
+<td>$S = \mathbb{R}e_0\oplus\mathbb{R}je_0$</td>
+<td>Scalar plane, signature $(1,1)$</td>
+</tr>
+<tr>
+<td>$V = S^{\perp} = \operatorname{Im}\mathbb{H}\oplus j\operatorname{Im}\mathbb{H}$</td>
+<td>Imaginary span, six-dimensional, split form $(3,3)$; bivectors positive, vectors negative</td>
+</tr>
+<tr>
+<td>$V = V\tilde\Pi_+\oplus V\tilde\Pi_-\cong\Lambda^2\mathbb{R}^4$</td>
+<td>Isotropic splitting of $V$; on it $g = 2\sum_rc_r^+c_r^-$</td>
+</tr>
+<tr>
+<td>$O(3,3)$, $SO^{+}(3,3)\cong SL(4,\mathbb{R})/\{\pm I\}$</td>
+<td>Isometry group of the split form on $V$; Klein quadric $Q(3,3)$</td>
+</tr>
+<tr>
+<td>$\operatorname{diag}(R,R)$, $\operatorname{diag}(R,-R)$</td>
+<td>The isometries of $V$ realised by the automorphisms of the algebra</td>
+</tr>
+<tr>
 <td>$e^{\theta j} = \cosh\theta + j\sinh\theta$</td>
 <td>Split complex unit, hyperbolic one-parameter group</td>
 </tr>
@@ -324,6 +391,8 @@ $$</p>
 <li>Walter Benz, <em>Classical Geometries in Modern Contexts</em> (Birkhäuser, 2005), for the incidence geometry of quadrics of arbitrary signature.</li>
 <li>Barrett O'Neill, <em>Semi-Riemannian Geometry with Applications to Relativity</em> (Academic Press, 1983), for the null cone, the totally isotropic subspaces and the classification of forms of signature $(p,q)$.</li>
 <li>John Stillwell, <em>Naive Lie Theory</em> (Springer, 2008), for the product of compact Lie groups and the quotient geometry of $S^3\times S^3$.</li>
+<li>William Fulton and Joe Harris, <em>Representation Theory: A First Course</em> (Springer, 1991), for the split orthogonal Lie algebras, their maximal compact subgroups, and the decomposition of the second exterior power of a four-dimensional space into self-dual and anti-self-dual parts.</li>
+<li>J. G. Semple and G. T. Kneebone, <em>Algebraic Projective Geometry</em> (Oxford University Press, 1952), for the Klein quadric and the correspondence between its points and the lines of three-dimensional projective space.</li>
 </ul>
       </div>
     </main>

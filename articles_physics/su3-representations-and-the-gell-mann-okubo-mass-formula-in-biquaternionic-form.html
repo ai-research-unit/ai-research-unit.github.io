@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SU(3) Representations and the Gell-Mann–Okubo Mass Formula in Biquaternionic Form — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="su3-representations-and-the-gell-mannokubo-mass-formula-in-biquaternionic-form"><strong>SU(3) Representations and the Gell-Mann–Okubo Mass Formula in Biquaternionic Form</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article records the $\mathrm{SU}(3)$ representation theory and the mass splitting that the spinor-structure programme uses to organise the hadron spectrum: the irreducible representations as traceless bisymmetric tensors of degree $N(p,q)$, the Okubo basis of $\mathfrak{su}(3)$ with its three $\mathfrak{su}(2)$ subalgebras, the condition that selects the "admissible" hadron supermultiplets, the reduction of the octet into isospin multiplets, and the Gell-Mann–Okubo mass formula with its Zeeman-effect reading.</p>
+<p>It is recorded with an explicit standing, stated at the outset so that it is not misread as a framework result. The companion <em>The Gauge Group Ceiling</em> shows that the biquaternion algebra's compact structure reaches $\mathrm{SU}(2)$ and stops, and <em>The Gluon: An Octet Outside the Biquaternion Algebra</em> states the boundary. The $\mathrm{SU}(3)$ structure below is therefore <strong>not an algebra of $\mathbb{B}$</strong>. It is the external machinery by which the hadron spectrum is classified, and it appears in the corpus because the spinor-structure programme attaches it to the spinor structure through the spin–charge Hilbert space — the spin factor of that space is the framework's own, the charge factor is this external $\mathrm{SU}(3)$.</p>
+<p>The article is organised as follows. A section gives the representations as traceless bisymmetric tensors and the degree formula. A section fixes the Okubo basis and the three $\mathfrak{su}(2)$ subalgebras. A section states the admissibility condition and lists the allowed degrees. A section reduces the octet into isospin multiplets. A section derives and then checks the Gell-Mann–Okubo mass formula. A closing section states the biquaternion reading.</p>
+<p><strong>Conventions.</strong> The Okubo basis and the degree formula are transcribed from the spinor-structure programme (V. V. Varlamov, arXiv:1409.1400, §§4–6) and from Okubo's <em>Lecture Notes in Physics</em> <strong>94</strong>; the mass relations are the standard Gell-Mann–Okubo relations and are checked against the Particle Data Group values. The companion <em>The Spin–Charge Hilbert Space and the SU(3) Supermultiplets in Biquaternionic Form</em> supplies the space on which these representations act, and <em>The Spin–Mass Formula and the Spectrum of Elementary Particles in Biquaternionic Form</em> supplies the mass $m_0$ of a supermultiplet.</p>
+<ul>
+<li>Companion article <em>The Spin–Charge Hilbert Space and the SU(3) Supermultiplets in Biquaternionic Form</em>, for the space $\mathcal{H}_S\otimes\mathcal{H}_Q\otimes\mathcal{H}_\infty$ on which these representations act.</li>
+<li>Companion article <em>The Spin–Mass Formula and the Spectrum of Elementary Particles in Biquaternionic Form</em>, for the mass $m_0$ of the supermultiplet and the representation degrees on the spin lines.</li>
+<li>Companion articles <em>The Gauge Group Ceiling: Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)</em> and <em>The Gluon: An Octet Outside the Biquaternion Algebra</em>, for why $\mathrm{SU}(3)$ is external.</li>
+<li>Corpus article <em>The Pion and the Chiral Lagrangian in Biquaternionic Form</em>, for the octet's scalar sector and the Gell-Mann–Oakes–Renner relation, a different mass formula.</li>
+<li>Corpus article <em>The CKM Matrix and CP Violation in Biquaternionic Form</em>, for the flavour-factor reading of the mixing that $\mathrm{SU}(3)$ does not carry.</li>
+</ul>
+<h2 id="representations-of-su3">Representations of SU(3)</h2>
+<p>An irreducible representation of $\mathrm{SU}(3)$ is carried by a <strong>traceless bisymmetric tensor</strong> $T^{a_1\dots a_p}_{b_1\dots b_q}$, symmetric in the upper and in the lower indices and traceless on any contraction. The pair $(p,q)$ of non-negative integers labels the representation, and its <strong>degree</strong> is</p>
+<p>$$
+N(p,q) = \tfrac12\,(p+1)(q+1)(p+q+2).
+$$</p>
+<h3 id="the-degree-table">The Degree Table</h3>
+<p>The degree counts the particles in the supermultiplet the representation carries. The lower-left corner of the table is</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$N(p,q)$</th>
+<th>$q=0$</th>
+<th>$q=1$</th>
+<th>$q=2$</th>
+<th>$q=3$</th>
+<th>$q=4$</th>
+<th>$q=5$</th>
+<th>$q=6$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$p=0$</td>
+<td>$1$</td>
+<td>$3$</td>
+<td>$6$</td>
+<td>$10$</td>
+<td>$15$</td>
+<td>$21$</td>
+<td>$28$</td>
+</tr>
+<tr>
+<td>$p=1$</td>
+<td>$3$</td>
+<td>$8$</td>
+<td>$15$</td>
+<td>$24$</td>
+<td>$35$</td>
+<td>$48$</td>
+<td>$63$</td>
+</tr>
+<tr>
+<td>$p=2$</td>
+<td>$6$</td>
+<td>$15$</td>
+<td>$27$</td>
+<td>$42$</td>
+<td>$60$</td>
+<td>$81$</td>
+<td>$105$</td>
+</tr>
+<tr>
+<td>$p=3$</td>
+<td>$10$</td>
+<td>$24$</td>
+<td>$42$</td>
+<td>$64$</td>
+<td>$90$</td>
+<td>$120$</td>
+<td>$154$</td>
+</tr>
+<tr>
+<td>$p=4$</td>
+<td>$15$</td>
+<td>$35$</td>
+<td>$60$</td>
+<td>$90$</td>
+<td>$125$</td>
+<td>$165$</td>
+<td>$210$</td>
+</tr>
+<tr>
+<td>$p=5$</td>
+<td>$21$</td>
+<td>$48$</td>
+<td>$81$</td>
+<td>$120$</td>
+<td>$165$</td>
+<td>$216$</td>
+<td>$273$</td>
+</tr>
+<tr>
+<td>$p=6$</td>
+<td>$28$</td>
+<td>$63$</td>
+<td>$105$</td>
+<td>$154$</td>
+<td>$210$</td>
+<td>$273$</td>
+<td>$343$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The singlet is $(0,0)$, degree $1$; the fundamental triplet is $(1,0)$, degree $3$, and its conjugate $(0,1)$, also $3$; the adjoint (the <strong>octet</strong>) is $(1,1)$, degree $8$; the decuplet is $(3,0)$, degree $10$; the $(2,2)$ is the $27$. These are the degrees the programme's particle assignments use.</p>
+<h2 id="the-okubo-basis-and-the-three-su2-subalgebras">The Okubo Basis and the Three SU(2) Subalgebras</h2>
+<p>To fix a subalgebra $\mathfrak{su}(2)\subset\mathfrak{su}(3)$ it is convenient to use Okubo's basis $A^{i}_{\ k}$ ($i,k=1,2,3$) of $\mathfrak{su}(3)$, with</p>
+<p>$$
+A^{1}_{\ 1}=\mathrm{diag}\bigl(\tfrac23,-\tfrac13,-\tfrac13\bigr),\quad
+A^{2}_{\ 2}=\mathrm{diag}\bigl(-\tfrac13,\tfrac23,-\tfrac13\bigr),\quad
+A^{3}_{\ 3}=\mathrm{diag}\bigl(-\tfrac13,-\tfrac13,\tfrac23\bigr),
+$$</p>
+<p>the off-diagonal units $A^{i}_{\ k}$ ($i\ne k$) carrying one unit entry, and $A^{1}_{\ 1}+A^{2}_{\ 2}+A^{3}_{\ 3}=0$. The commutation relations are</p>
+<p>$$
+\bigl[A^{i}_{\ k},A^{l}_{\ m}\bigr] = \delta^{i}_{\ m}A^{l}_{\ k}-\delta^{l}_{\ k}A^{i}_{\ m}.
+$$</p>
+<p>This basis makes the three $\mathfrak{su}(2)$ subalgebras transparent. Projecting with a fixed index gives</p>
+<p>$$
+a^{i}_{\ j} = A^{i}_{\ j}-\tfrac12\delta^{i}_{\ j}A^{k}_{\ k},
+$$</p>
+<p>whose units satisfy the $\mathfrak{su}(2)$ relations, so <strong>I-spin</strong> is $\mathfrak{su}(2)$ in the $(1,2)$ plane. The rank of $\mathfrak{su}(3)$ is two, so any Cartan operator is a combination of $A^{1}_{\ 1}$ and $A^{3}_{\ 3}$, and the three choices of which $\mathfrak{su}(2)$ to single out give the three spins</p>
+<p>$$
+I_3 = A^{1}_{\ 1}+\tfrac12 A^{3}_{\ 3},
+\qquad
+U_3 = A^{3}_{\ 3}+\tfrac12 A^{1}_{\ 1},
+\qquad
+V_3 = A^{1}_{\ 1}+\tfrac12 A^{2}_{\ 2},
+$$</p>
+<p>the <strong>I-spin</strong>, <strong>U-spin</strong> and <strong>V-spin</strong> of the eightfold way. A charge operator on a representation of degree $N$ then has the form</p>
+<p>$$
+Q^{(N)} = \alpha\,A^{1}_{\ 1}(N)+\beta\,A^{3}_{\ 3}(N)+\gamma\,\mathbf{1}_N,
+$$</p>
+<p>with the constant $\gamma$ a shift. The three subalgebras matter because different mass relations are statements in different ones: the Gell-Mann–Okubo relation is a U-spin statement, and the equal-spacing relation of the decuplet is an I-spin statement.</p>
+<h2 id="admissible-supermultiplets">Admissible Supermultiplets</h2>
+<p>Hadrons are classified into supermultiplets of equal baryon number, spin and parity, one supermultiplet per irreducible representation. A representation can carry hadrons only if the eigenvalues of the charge and hypercharge operators on it are integers. That selects the <strong>admissible</strong> representations</p>
+<p>$$
+p-q\equiv 0 \pmod 3,
+$$</p>
+<p>that is, $p-q\in\{0,\pm3,\pm6,\dots\}$. Reading the table above, the admissible degrees are</p>
+<p>$$
+1,\,8,\,10,\,27,\,28,\,35,\,55,\,64,\,80,\,81,\,91,\,125,\,136,\,143,\,154,\dots
+$$</p>
+<p>For example $N(0,0)=1$, $N(1,1)=8$, $N(3,0)=N(0,3)=10$, $N(2,2)=27$, $N(0,6)=N(6,0)=28$, $N(4,1)=N(1,4)=35$, $N(0,9)=55$, $N(1,7)=80$, $N(5,2)=81$, $N(3,3)=64$, $N(4,4)=125$, $N(3,6)=N(6,3)=154$; all satisfy $p-q\equiv0\pmod3$. The non-admissible degrees — $3$, $6$, $15$, $24$, $42$, $48$, $60$, $\dots$ — correspond to representations whose charge eigenvalues would be fractional, as the triplet $(1,0)$ and sextet $(2,0)$ illustrate: the quark and antiquark are the degrees of freedom, and their fractional charges are why the triplet is not an admissible hadron supermultiplet while the octet built from three of them is.</p>
+<h2 id="reduction-of-the-octet-into-isospin-multiplets">Reduction of the Octet into Isospin Multiplets</h2>
+<h3 id="the-octet-reduction">The Octet Reduction</h3>
+<p>The eightfold way's octets sit on the adjoint representation $(1,1)$. On the subgroup $\mathrm{SU}(2)\subset\mathrm{SU}(3)$ the adjoint representation is reducible, and its reduction is</p>
+<p>$$
+\mathrm{Sym}_0^{(1,1)} = \Phi_3\oplus\Phi_2\oplus\Phi_2^*\oplus\Phi_0,
+$$</p>
+<p>where $\Phi_3$ is an isospin <strong>triplet</strong>, $\Phi_2$ and $\Phi_2^*$ are a <strong>doublet</strong> and its conjugate, and $\Phi_0$ is a <strong>singlet</strong>: dimensions $3+2+2+1=8$. The baryon octet $F_{1/2}$ therefore reduces to</p>
+<p>$$
+\Phi_3=\{\Sigma^+,\Sigma^0,\Sigma^-\},\qquad
+\Phi_2=\{p,n\},\qquad
+\Phi_2^*=\{\Xi^-,\Xi^0\},\qquad
+\Phi_0=\{\Lambda\},
+$$</p>
+<p>and the meson octets $B_0$ (spin $0$, negative parity) and $B_1$ (spin $1$, negative parity) reduce in the same pattern:</p>
+<p>$$
+\Phi_3=\{\pi^+,\pi^0,\pi^-\},\qquad
+\Phi_2=\{K^-,K^0\},\qquad
+\Phi_2^*=\{K^+,K^0\}\ \text{(conjugate)},\qquad
+\Phi_0=\{\eta\},
+$$</p>
+<p>for $B_0$. The reduction is the representation-theoretic content behind "the eightfold way": the eight states of the octet fall into one triplet, two doublets and one singlet, and the two doublets are conjugate because they carry opposite hypercharge. The charge multiplet structure of the companion spin–charge article is this reduction, with each isospin multiplet carrying the charge values of its members.</p>
+<h2 id="the-gell-mannokubo-mass-formula">The Gell-Mann–Okubo Mass Formula</h2>
+<p>Within a supermultiplet the particles have different masses; the difference is the mass splitting, and $\mathrm{SU}(3)$ symmetry alone predicts its form. The programme's account follows the <strong>Zeeman analogy</strong>. In the atomic Zeeman effect the energy operator splits as $H=H_0+H_1$ with $H_1=d_{\alpha\beta}H^{\alpha\beta}$, a magnetic moment contracted with the field; the mass operator of a supermultiplet splits in the same way,</p>
+<p>$$
+m^2 = m_0^2+\delta m^2,
+$$</p>
+<p>where $m_0^2$ is $\mathrm{SU}(3)$-symmetric — proportional to the identity on the representation — and $\delta m^2 = D^{a}_{\ b}Z^{b}_{\ a}$ is a unitary moment $D$ contracted with a unitary field $Z$,</p>
+<p>$$
+D^{a}_{\ b} = \lambda\delta^{a}_{\ b}\mathbf{1}+\mu A^{a}_{\ b}+\nu A^{a}_{\ c}A^{c}_{\ b}+\dots,
+$$</p>
+<p>$$
+Z = C\begin{pmatrix}\tfrac13&0&0\\0&\tfrac13&0\\0&0&-\tfrac23\end{pmatrix}
++C'\begin{pmatrix}\tfrac23&0&0\\0&-\tfrac13&0\\0&0&-\tfrac13\end{pmatrix},
+\qquad |C'|\ll|C| .
+$$</p>
+<p>The first term of $Z$ splits the supermultiplet into I-multiplets of <strong>different hypercharge</strong> $Y$; the second, much smaller, splits the members <strong>within</strong> an I-multiplet by charge $Q$. Writing the two contributions as $\delta m^2=\xi A^{3}_{\ 3}+\eta A^{3}_{\ c}A^{c}_{\ 3}$ and $\delta m^{2\prime}=\xi'A^{1}_{\ 1}+\eta'A^{1}_{\ c}A^{c}_{\ 1}$ with $\xi'=\theta\xi$, $\eta'=\theta\eta$, $|\theta|\ll1$, and expressing them through the Casimir operators of $\mathrm{SU}(3)$ and $\mathrm{SU}(2)$, gives the <strong>Gell-Mann–Okubo mass formula</strong></p>
+<p>$$
+m^2 = m_0^2+\alpha+\beta Y+\gamma\Bigl(I(I+1)-\tfrac14Y^2\Bigr)
++\alpha'+\beta'Y+\gamma'\Bigl(U(U+1)-\tfrac14Q^2\Bigr),
+\qquad
+\frac{\alpha'}{\alpha}=\frac{\beta'}{\beta}=\frac{\gamma'}{\gamma}=\theta .
+$$</p>
+<p>The prime terms are the charge splitting and the unprimed terms the hypercharge splitting; the ratio $\theta$ is the small parameter.</p>
+<h3 id="the-linear-form">The Linear Form</h3>
+<p>Since the charge splitting is small, the leading hypercharge splitting is</p>
+<p>$$
+m = m_0+\alpha+\beta Y+\gamma\Bigl(I(I+1)-\tfrac14 Y^2\Bigr),
+$$</p>
+<p>the <strong>linear</strong> Gell-Mann–Okubo formula, valid when $\delta m^2/m_0^2\ll1$.</p>
+<h3 id="the-baryon-octet">The Baryon Octet</h3>
+<p>For the baryon octet $F_{1/2}$ the hypercharge splitting gives the four masses</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>multiplet</th>
+<th>$I$</th>
+<th>$Y$</th>
+<th>$m_{\text{exp}}$ (MeV)</th>
+<th>$m_{\text{th}}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\Xi$</td>
+<td>$\tfrac12$</td>
+<td>$-1$</td>
+<td>$1318$</td>
+<td>$m_0+\alpha-\beta+\tfrac12\gamma$</td>
+</tr>
+<tr>
+<td>$\Sigma$</td>
+<td>$1$</td>
+<td>$0$</td>
+<td>$1192$</td>
+<td>$m_0+\alpha+2\gamma$</td>
+</tr>
+<tr>
+<td>$\Lambda$</td>
+<td>$0$</td>
+<td>$0$</td>
+<td>$1115$</td>
+<td>$m_0+\alpha$</td>
+</tr>
+<tr>
+<td>$N$</td>
+<td>$\tfrac12$</td>
+<td>$1$</td>
+<td>$939$</td>
+<td>$m_0+\alpha+\beta+\tfrac12\gamma$</td>
+</tr>
+</tbody>
+</table></div>
+<p>Eliminating the four parameters $m_0,\alpha,\beta,\gamma$ gives the relations</p>
+<p>$$
+m_\Xi+m_N = \tfrac12\bigl(3m_\Lambda+m_\Sigma\bigr),
+\qquad
+m_\Xi+m_N = 2m_0+2\alpha+\gamma .
+$$</p>
+<p>The first is the Gell-Mann–Okubo relation for the baryon octet. The second identifies the combination $2m_0+2\alpha+\gamma$ with the sum, so that with $m_0=\frac14(m_N+m_\Lambda+m_\Sigma+m_\Xi)$ the relation becomes a statement about the octet average.</p>
+<p><strong>Check.</strong> With the Particle Data Group values $m_N=938.918$, $m_\Lambda=1115.683$, $m_\Sigma=1193.154$, $m_\Xi=1318.0$ MeV:</p>
+<p>$$
+m_N+m_\Xi = 2256.9\ \text{MeV},
+\qquad
+\tfrac12(3m_\Lambda+m_\Sigma) = 2270.1\ \text{MeV},
+$$</p>
+<p>a discrepancy of $0.58\%$. The relation is satisfied to better than one percent by the physical masses, which is the standard statement of $\mathrm{SU}(3)$ flavour symmetry's accuracy, and it is a genuine test because the four masses are independent inputs.</p>
+<h2 id="the-supermultiplet-mass-math219">The Supermultiplet Mass $m_0$</h2>
+<p>The parameter $m_0$ is $\mathrm{SU}(3)$-invariant and therefore <strong>not determined by $\mathrm{SU}(3)$</strong>; it is an external parameter, one value per supermultiplet, and it is the average of the masses of the charge multiplets in the supermultiplet. For the baryon octet,</p>
+<p>$$
+m_0 = \tfrac14\bigl(m_N+m_\Lambda+m_\Sigma+m_\Xi\bigr).
+$$</p>
+<p>The programme closes the system by identifying $m_0$ with the mass of the spin representation that carries the supermultiplet. That is the companion mass formula's $m^{(s)}=\frac{\mu_0}{4}\deg\tau^{l\dot l}$, with $l,\dot l$ the representation of the octet's spin line. The two chapters therefore connect: the representation degree fixes the <strong>centre</strong> of the supermultiplet's mass multiplet, and the Gell-Mann–Okubo formula fixes the <strong>splitting</strong> about that centre. The companion article's numbers — $1770\,m_e$, $2278\,m_e$, $264.5\,m_e$ for the nucleon, $\Sigma$ and $\pi$ — are these centres, and the splittings about them are the $\pm\beta\mp\tfrac12\gamma$ and $2\gamma$ of the table above.</p>
+<h2 id="the-biquaternion-reading">The Biquaternion Reading</h2>
+<p>The reading is short because the framework's own limit is known. The $\mathrm{SU}(3)$ representations, the Okubo operators $A^{i}_{\ k}$, the unitary field $Z$ and the mass splitting are <strong>not elements of the biquaternion algebra</strong>. The companion <em>Gauge Group Ceiling</em> shows the algebra's compact structure stops at $\mathrm{SU}(2)$, so no $\mathfrak{su}(3)$ with an octet of generators can be built from $\mathbb{B}$; the Okubo matrices are $3\times3$, and the algebra of three-by-three matrices is not the biquaternion algebra. The $\mathrm{SU}(3)$ machinery is external, and the article's purpose is to record it accurately beside the framework's own statements, not to claim it.</p>
+<p>What the framework can host is the <strong>structure of the splitting</strong>. The Gell-Mann–Okubo formula separates a symmetric part $m_0$ from a symmetry-breaking part $\delta m$ built from the Cartan directions of the algebra; the framework knows the analogous separation — a central, $\mathrm{SU}(2)$-invariant part and a breaking part along a distinguished direction — in its own sector structure and in the hypercharge direction of the charge factor. Whether the hypercharge splitting has a biquaternion image is not established here; the honest statement is that the algebra hosts the singlet/triplet/doublet isospin reduction (since those are $\mathrm{SU}(2)$ representations) and not the octet of $\mathrm{SU}(3)$.</p>
+<p>One further point is worth recording because the programme itself flags it. The <strong>unitary field</strong> $Z$ — the analogue of the external magnetic field in the Zeeman effect — has, the programme says, no known physical sense; it differs between supermultiplets only by two real parameters, and it is suggested that it be read as a non-local substrate in the sense of decoherence, a field whose coupling localises particles into the energy levels of a supermultiplet. The corpus's companion articles on information in the gauge orbit and on the Higgs mechanism as erasure are the natural place to compare such a reading; here it is recorded as the programme's speculation, not as a framework claim.</p>
+<h2 id="what-the-framework-establishes-transcribes-and-does-not">What the Framework Establishes, Transcribes, and Does Not</h2>
+<p><strong>Established, and recomputed.</strong></p>
+<ul>
+<li>The degree formula $N(p,q)=\frac12(p+1)(q+1)(p+q+2)$ and the table: $N(0,0)=1$, $N(1,1)=8$, $N(3,0)=10$, $N(2,2)=27$, $N(0,6)=28$, $N(4,1)=35$, $N(1,7)=80$, $N(5,2)=81$, $N(3,3)=64$, $N(4,4)=125$, $N(3,6)=154$. Recomputed (see the <code>.context</code> for the transcript).</li>
+<li>The admissibility condition $p-q\equiv0\pmod3$ and the resulting degree list $1,8,10,27,28,35,\dots$; consistent with the table.</li>
+<li>The octet reduction $\mathrm{Sym}_0^{(1,1)}=\Phi_3\oplus\Phi_2\oplus\Phi_2^*\oplus\Phi_0$, dimensions $3+2+2+1=8$.</li>
+<li>The Gell-Mann–Okubo relation $m_\Xi+m_N=\frac12(3m_\Lambda+m_\Sigma)$ against the PDG baryon masses: $2256.9$ versus $2270.1$ MeV, a $0.58\%$ discrepancy. Recomputed.</li>
+</ul>
+<p><strong>Transcribed, not derived.</strong></p>
+<ul>
+<li>The Okubo basis, the commutators, the three $\mathfrak{su}(2)$ subalgebras and the charge operator.</li>
+<li>The Zeeman analogy, the unitary moment and field, and the derivation of the formula through the Casimirs.</li>
+<li>The particle content of the octets and the identification of $m_0$ with the spin–mass formula's value.</li>
+</ul>
+<p><strong>Gap, left visible.</strong></p>
+<ul>
+<li>$\mathrm{SU}(3)$ is not an algebra of $\mathbb{B}$; the whole structure is external to the framework, and the article says so in its opening and its closing sections.</li>
+<li>The physical sense of the unitary field $Z$ is unknown, by the programme's own statement.</li>
+<li>The charge-splitting parameter $\theta$ and the constants $\alpha,\beta,\gamma$ are fitted to the measured masses; $\mathrm{SU}(3)$ symmetry predicts the <em>form</em> of the splitting, not its size.</li>
+</ul>
+<h2 id="open-questions">Open Questions</h2>
+<ol>
+<li>
+<p><strong>Does the hypercharge direction have a biquaternion image?</strong> The corpus has a preferred direction, the $ict$ axis of the material sector, and a central phase. Is the hypercharge splitting's distinguished direction one of these, or is the correspondence spurious? The gauge-ceiling article implies the latter unless a larger algebra is used.</p>
+</li>
+<li>
+<p><strong>$m_0$ and the mass formula.</strong> The identification of $m_0$ with the spin–mass formula's $m^{(s)}$ is a choice. Does the equality hold for the meson octets as well as the baryon octet, and does the companion mass formula's error (a few percent) propagate into the average?</p>
+</li>
+<li>
+<p><strong>The decuplet's equal spacing.</strong> The decuplet $(3,0)$ obeys equal spacing, $m_\Omega-m_{\Xi^*}=m_{\Xi^*}-m_{\Sigma^*}=m_{\Sigma^*}-m_\Delta$, a different relation from the octet's. Is it a statement in I-spin or U-spin, and is the corpus's representation ring able to derive the two relations at once?</p>
+</li>
+<li>
+<p><strong>The unitary field and decoherence.</strong> The programme's speculation that $Z$ describes a non-local substrate that localises particles overlaps the corpus's information-theoretic articles. Is there a biquaternion reading of $Z$ that is not a fitting parameter?</p>
+</li>
+<li>
+<p><strong>Charm and the fourth flavour.</strong> The programme records that adding the charm quark extends $\mathrm{SU}(3)$ to $\mathrm{SU}(4)$. Does the admissibility condition generalise, and does the degree formula have an $\mathrm{SU}(N)$ form the corpus can state?</p>
+</li>
+</ol>
+<h2 id="summary">Summary</h2>
+<p>An irreducible representation of $\mathrm{SU}(3)$ is a traceless bisymmetric tensor labelled by $(p,q)$ with degree $N(p,q)=\frac12(p+1)(q+1)(p+q+2)$; the singlet is $(0,0)$, the triplets $(1,0)$ and $(0,1)$, the octet $(1,1)$ of degree $8$, the decuplet $(3,0)$ of degree $10$. Hadron supermultiplets are the admissible representations with $p-q\equiv0\pmod3$, degrees $1,8,10,27,28,35,\dots$. The octet reduces on $\mathrm{SU}(2)$ as $\Phi_3\oplus\Phi_2\oplus\Phi_2^*\oplus\Phi_0$, the triplet, the nucleon doublet, its conjugate and the $\Lambda$. Within a supermultiplet the mass splits as $m=m_0+\alpha+\beta Y+\gamma(I(I+1)-\frac14Y^2)$ in the hypercharge direction, giving the Gell-Mann–Okubo relation $m_\Xi+m_N=\frac12(3m_\Lambda+m_\Sigma)$, which the physical masses satisfy to $0.58\%$. The centre $m_0$ is $\mathrm{SU}(3)$-invariant and is the companion spin–mass formula's value.</p>
+<p>The framework's relation to all this is negative and clean: $\mathrm{SU}(3)$ is not an algebra of the biquaternion algebra, the gauge-group ceiling stops at $\mathrm{SU}(2)$, and the Okubo matrices are three-by-three. The article records the structure accurately, checks its numerical content, and states that the splitting pattern — not the group — is what borders the framework's own sector structure.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$(p,q)$, $p,q\in\mathbb{Z}_{\ge0}$</td>
+<td>Labels of an irreducible representation of $\mathrm{SU}(3)$</td>
+</tr>
+<tr>
+<td>$T^{a_1\dots a_p}_{b_1\dots b_q}$</td>
+<td>Traceless bisymmetric tensor carrying the representation</td>
+</tr>
+<tr>
+<td>$N(p,q)=\tfrac12(p+1)(q+1)(p+q+2)$</td>
+<td>Degree of the representation</td>
+</tr>
+<tr>
+<td>$A^{i}_{\ k}$</td>
+<td>Okubo basis of $\mathfrak{su}(3)$, traceless and Hermitian</td>
+</tr>
+<tr>
+<td>$I_3,U_3,V_3$</td>
+<td>I-spin, U-spin, V-spin of the three $\mathfrak{su}(2)$ subalgebras</td>
+</tr>
+<tr>
+<td>$Y,Q,I,U$</td>
+<td>Hypercharge, charge, and the I-spin and U-spin quantum numbers</td>
+</tr>
+<tr>
+<td>$m^2=m_0^2+\delta m^2+\delta m^{2\prime}$</td>
+<td>Mass operator split into symmetric and breaking parts</td>
+</tr>
+<tr>
+<td>$Z$, $D^{a}_{\ b}$</td>
+<td>Unitary field and unitary moment of the Zeeman analogy</td>
+</tr>
+<tr>
+<td>$\theta$</td>
+<td>Ratio of charge to hypercharge splitting, $\lvert\theta\rvert\ll1$</td>
+</tr>
+<tr>
+<td>$m_\Xi+m_N=\tfrac12(3m_\Lambda+m_\Sigma)$</td>
+<td>Gell-Mann–Okubo relation, baryon octet</td>
+</tr>
+<tr>
+<td>$p-q\equiv0\pmod3$</td>
+<td>Admissibility condition for a hadron supermultiplet</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>M. Gell-Mann, "Symmetries of baryons and mesons," <em>Physical Review</em> <strong>125</strong> (1962) 1067–1084, for the eightfold way and the mass formula.</li>
+<li>Y. Ne'eman, "Derivation of strong interactions from a gauge invariance," <em>Nuclear Physics</em> <strong>26</strong> (1961) 222–229, for the independent proposal of the $\mathrm{SU}(3)$ classification.</li>
+<li>S. Okubo, "Note on unitary symmetry in strong interactions," <em>Progress of Theoretical Physics</em> <strong>27</strong> (1962) 949–966, for the mass formula and the Okubo basis.</li>
+<li>S. Okubo, <em>Introduction to Octonion and Other Non-Associative Algebras in Physics</em>, and <em>Lecture Notes in Physics</em> <strong>94</strong>, for the Okubo operators and the Zeeman analogy.</li>
+<li>M. Gell-Mann and Y. Ne'eman, <em>The Eightfold Way</em> (Benjamin, 1964), for the octets, the decuplet and the mass relations.</li>
+<li>Particle Data Group, <em>Review of Particle Physics</em>, for the hadron masses used in the checks.</li>
+<li>V. V. Varlamov, "Spinor Structure and Internal Symmetries," <em>International Journal of Theoretical Physics</em> <strong>54</strong> (2015) 3533–3576 (arXiv:1409.1400), for the representation theory, the Zeeman analogy and the identification of $m_0$ recorded here.</li>
+<li>Companion articles: <em>The Spin–Charge Hilbert Space and the SU(3) Supermultiplets in Biquaternionic Form</em>; <em>The Spin–Mass Formula and the Spectrum of Elementary Particles in Biquaternionic Form</em>; <em>The Gauge Group Ceiling: Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)</em>; <em>The Gluon: An Octet Outside the Biquaternion Algebra</em>; <em>The Pion and the Chiral Lagrangian in Biquaternionic Form</em>.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -162,6 +162,27 @@ $$</p>
 <li><strong>Non-invertibility.</strong> By the criterion for invertibility, $\tilde{Q}$ has no inverse.</li>
 <li><strong>Purity preserved.</strong> The scalar part of $\tilde{Q}$ is zero by hypothesis, and the square $\tilde{Q}^2 = 0$ also has zero scalar part. So the property of being pure is preserved under squaring.</li>
 </ul>
+<h3 id="the-bivector-form">The Bivector Form</h3>
+<p>A pure biquaternion has three complex coefficients, and each one splits into a real and an imaginary part. Writing $Q_k = \rho_k + i\rho'_k$ with $\rho_k, \rho'_k \in \mathbb{R}$, and reading each triple as a vector of $\mathbb{R}^3$, a pure biquaternion is the sum of two real vectors carrying the central imaginary on the second,</p>
+<p>$$
+\tilde{Q} = \boldsymbol{\rho} + i\,\boldsymbol{\rho}', \qquad \boldsymbol{\rho}, \boldsymbol{\rho}' \in \mathbb{R}^3 .
+$$</p>
+<p>An element of this form is a <strong>bivector</strong> in the older vocabulary; the term and its setting are recorded in <em>A Brief History of Biquaternions in Physics</em>.</p>
+<p>Squaring and separating real and imaginary parts, using the product rule $\boldsymbol{\rho}\,\boldsymbol{\sigma} = -\boldsymbol{\rho}\cdot\boldsymbol{\sigma} + \boldsymbol{\rho}\times\boldsymbol{\sigma}$ for two real vectors, the square of a pure biquaternion is</p>
+<p>$$
+\tilde{Q}^2 = \bigl(|\boldsymbol{\rho}'|^2 - |\boldsymbol{\rho}|^2\bigr)\, e_0 - 2i\,(\boldsymbol{\rho}\cdot\boldsymbol{\rho}')\, e_0 .
+$$</p>
+<p>The square is therefore a complex scalar, and it vanishes exactly when the two conditions</p>
+<p>$$
+\boldsymbol{\rho}\cdot\boldsymbol{\rho}' = 0, \qquad |\boldsymbol{\rho}| = |\boldsymbol{\rho}'|,
+$$</p>
+<p>hold. This restates the criterion proved above in real coordinates.</p>
+<p><strong>Corollary (the pure zero divisors as bivectors).</strong> A nonzero pure biquaternion $\tilde{Q} = \boldsymbol{\rho} + i\boldsymbol{\rho}'$ is a zero divisor if and only if its two real parts are orthogonal and of equal length. Equivalently, writing $\boldsymbol{\rho} = r\hat{u}$ and $\boldsymbol{\rho}' = r\hat{v}$ with $r = |\boldsymbol{\rho}| = |\boldsymbol{\rho}'|$, the pure zero divisors are exactly the elements</p>
+<p>$$
+r\,(\hat{u} + i\hat{v}), \qquad \hat{u}\cdot\hat{v} = 0, \qquad |\hat{u}| = |\hat{v}| = 1, \qquad r > 0 .
+$$</p>
+<p>The parameters are a positive radius, a direction on the unit sphere, and a perpendicular direction on its unit circle — one, two and one real parameters. The pure zero divisors therefore form a real cone of dimension $4$, agreeing with the dimension recorded for the pure family below.</p>
+<p><strong>Remark (the sign of the square).</strong> The same formula shows that when the two parts are perpendicular the square is the real scalar $|\boldsymbol{\rho}'|^2 - |\boldsymbol{\rho}|^2$: positive, zero, or negative according as $|\boldsymbol{\rho}'|$ is greater than, equal to, or less than $|\boldsymbol{\rho}|$. A real vector has $v^2 = -|v|^2 < 0$ without exception, so it is only a bivector that allows a nonzero square of positive sign; this is what the geometric reading of the theory at its origin turns on (<em>A Brief History of Biquaternions in Physics</em>).</p>
 <h2 id="non-pure-zero-divisors">Non-Pure Zero Divisors</h2>
 <h3 id="the-square-of-a-non-pure-biquaternion">The Square of a Non-Pure Biquaternion</h3>
 <p>Let $\tilde{Q} = Q_0 e_0 + \mathbf{Q}$ with $Q_0 \in \mathbb{C}$, $Q_0 \neq 0$, and $\mathbf{Q} = Q_1 e_1 + Q_2 e_2 + Q_3 e_3$. Using the product formula,</p>
@@ -356,6 +377,7 @@ $$</p>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
 <li>William Rowan Hamilton, <em>Lectures on Quaternions</em> (Hodges and Smith, Dublin, 1853), for the original discovery of the zero divisors and the nilpotents.</li>
+<li>William Rowan Hamilton, "On the Geometrical Interpretation of some Results obtained by calculation with Biquaternions," <em>Proceedings of the Royal Irish Academy</em> <strong>5</strong> (1853) 388–390, for the bivectors, the null-square bivectors $i + hj$ and $j + hk$, and the simplification $(1 + j + hk)^x = 1 + x(j + hk)$.</li>
 <li>S. J. Sangwine and D. Alfsmann, "Determination of the biquaternion divisors of zero, including the idempotents and nilpotents", <em>Advances in Applied Clifford Algebras</em> <strong>20</strong> (2010) 401–416, for the classification of the zero divisors.</li>
 <li>S. J. Sangwine, "Biquaternion (complexified quaternion) roots of $-1$", <em>Advances in Applied Clifford Algebras</em> <strong>16</strong> (2006) 63–68, for the classification of the roots of $-1$.</li>
 <li>J. P. Ward, <em>Quaternions and Cayley Numbers: Algebra and Applications</em> (Kluwer, Dordrecht, 1997), for the algebraic properties of the biquaternions.</li>

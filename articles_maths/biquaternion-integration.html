@@ -105,12 +105,21 @@ $$</p>
 <p>where $n_\mu$ is the $\mu$-th component of the outward unit normal on $\partial \Omega$ and $dS$ is the surface measure.</p>
 <p><strong>Proof.</strong> This is the standard integration by parts formula in $\mathbb{R}^4$, applied to the scalar function $\phi$ and the scalar function $F_\nu$ for each component. Summing over $\nu$ gives the result.</p>
 <h3 id="the-vector-case">The Vector Case</h3>
-<p><strong>Theorem (integration by parts for the gradient).</strong> Let $\tilde{F}$ and $\tilde{G}$ be continuously differentiable biquaternion-valued functions on $\Omega$ with piecewise smooth boundary $\partial \Omega$. Then</p>
+<p><strong>Theorem (integration by parts for the gradient).</strong> Let $\tilde{F}$ and $\tilde{G}$ be continuously differentiable biquaternion-valued functions on $\Omega$ with piecewise smooth boundary $\partial \Omega$, and write</p>
 <p>$$
-\int_\Omega (\tilde{\nabla}\tilde{F}) \tilde{G} \, dV = \int_{\partial \Omega} \tilde{n} \tilde{F} \tilde{G} \, dS - \int_\Omega \tilde{F} (\tilde{\nabla}\tilde{G}) \, dV,
+\tilde{F}\overleftarrow{\nabla} = \sum_{\mu=0}^{3} \left(\frac{\partial \tilde{F}}{\partial q_\mu}\right) e_\mu
+$$</p>
+<p>for the <strong>right gradient</strong> of $\tilde{F}$. Then</p>
+<p>$$
+\int_\Omega \tilde{F} (\tilde{\nabla}\tilde{G}) \, dV = \int_{\partial \Omega} \tilde{F} \tilde{n} \tilde{G} \, dS - \int_\Omega (\tilde{F}\overleftarrow{\nabla}) \tilde{G} \, dV,
+$$</p>
+<p>and equivalently</p>
+<p>$$
+\int_\Omega (\tilde{\nabla}\tilde{F}) \tilde{G} \, dV = \int_{\partial \Omega} \tilde{n} \tilde{F} \tilde{G} \, dS - \int_\Omega \sum_{\mu=0}^{3} e_\mu \tilde{F} \left(\frac{\partial \tilde{G}}{\partial q_\mu}\right) dV,
 $$</p>
 <p>where $\tilde{n} = \sum_\mu n_\mu e_\mu$ is the biquaternion-valued outward unit normal.</p>
-<p><strong>Proof.</strong> This follows from the scalar integration by parts applied to each component of $\tilde{\nabla}\tilde{F}$ and the product rule for the gradient.</p>
+<p><strong>Proof.</strong> The Leibniz rule for the gradient gives $\tilde{\nabla}(\tilde{F}\tilde{G}) = (\tilde{\nabla}\tilde{F})\tilde{G} + \sum_\mu e_\mu \tilde{F}\,\partial_\mu \tilde{G}$, and the divergence theorem applied to the product $\tilde{F}\tilde{G}$ gives the second display. For the first display, apply the ordinary divergence theorem in $\mathbb{R}^4$ to the field with components $\tilde{F} e_\mu \tilde{G}$ and sum over $\mu$: the volume integrand is $\sum_\mu \partial_\mu(\tilde{F} e_\mu \tilde{G}) = (\tilde{F}\overleftarrow{\nabla})\tilde{G} + \tilde{F}(\tilde{\nabla}\tilde{G})$, and the boundary integrand is $\sum_\mu n_\mu \tilde{F} e_\mu \tilde{G} = \tilde{F}\tilde{n}\tilde{G}$.</p>
+<p><strong>Remark (the non-commutative correction).</strong> The transposition that moves the derivative off $\tilde{G}$ while leaving $\tilde{F}(\tilde{\nabla}\tilde{G})$ in the volume term is <strong>false for a non-central</strong> $\tilde{F}$: the Leibniz term $\sum_\mu e_\mu \tilde{F}\,\partial_\mu \tilde{G}$ equals $\tilde{F}(\tilde{\nabla}\tilde{G})$ only when $\tilde{F}$ commutes with every unit $e_\mu$. The right gradient $\overleftarrow{\nabla}$ is the transposition that removes the restriction, and all the forms coincide when $\tilde{F}$ is a real scalar multiple of $e_0$, which is the scalar case above and the case of the classical formula in <em>Quaternion Integration</em>.</p>
 <h2 id="the-divergence-theorem">The Divergence Theorem</h2>
 <p><strong>Theorem (divergence theorem).</strong> Let $\tilde{F}$ be a continuously differentiable biquaternion-valued function on a domain $\Omega$ with piecewise smooth boundary $\partial \Omega$. Then</p>
 <p>$$
@@ -134,24 +143,53 @@ $$</p>
 <p><strong>Proof.</strong> This is the same computation as above, with the signs of the vector components reversed.</p>
 <h2 id="greens-formulas">Green's Formulas</h2>
 <h3 id="first-greens-formula">First Green's Formula</h3>
-<p><strong>Theorem (first Green's formula).</strong> Let $\tilde{F}$ and $\tilde{G}$ be twice continuously differentiable biquaternion-valued functions on $\Omega$ with piecewise smooth boundary $\partial \Omega$. Then</p>
+<p><strong>Theorem (first Green's formula).</strong> Let $\tilde{F}$ and $\tilde{G}$ be twice continuously differentiable biquaternion-valued functions on $\Omega$ with piecewise smooth boundary $\partial \Omega$, and let $\partial_{\tilde{n}} = \sum_\mu n_\mu \partial_{q_\mu}$ be the scalar normal derivative. Then</p>
 <p>$$
-\int_\Omega \left[ (\tilde{\nabla}\tilde{F}) \bar{\tilde{G}} + \tilde{F} (\bar{\tilde{\nabla}}\bar{\tilde{G}}) \right] dV = \int_{\partial \Omega} \tilde{F} \tilde{n} \bar{\tilde{G}} \, dS.
+\int_\Omega \left[ \sum_{\mu=0}^{3} \left(\frac{\partial \tilde{F}}{\partial q_\mu}\right) \overline{\left(\frac{\partial \tilde{G}}{\partial q_\mu}\right)} + \tilde{F}\, \overline{\Box \tilde{G}} \right] dV = \int_{\partial \Omega} \tilde{F}\, \overline{\partial_{\tilde{n}} \tilde{G}} \, dS.
 $$</p>
-<p><strong>Proof.</strong> Apply the divergence theorem to the product $\tilde{F} \bar{\tilde{G}}$ and use the product rule for the gradient.</p>
+<p><strong>Proof.</strong> Apply the ordinary divergence theorem in $\mathbb{R}^4$ to the biquaternion-valued field with components $\tilde{F}\,\overline{\partial_\mu \tilde{G}}$: it gives $\int_\Omega \partial_\mu(\tilde{F}\,\overline{\partial_\mu \tilde{G}})\,dV = \int_{\partial\Omega} n_\mu \tilde{F}\,\overline{\partial_\mu \tilde{G}}\,dS$. The product rule expands the volume integrand as $(\partial_\mu\tilde{F})\,\overline{\partial_\mu \tilde{G}} + \tilde{F}\,\overline{\partial_\mu^2 \tilde{G}}$, the second term because $\partial_\mu$ is real and therefore commutes with the conjugation. Summing over $\mu$ replaces $\sum_\mu \partial_\mu^2$ by $\Box$ and $\sum_\mu n_\mu \partial_\mu$ by $\partial_{\tilde{n}}$.</p>
+<p><strong>Remark (the classical case).</strong> For real-valued $u$ and $v$ the conjugate is the identity, the first sum is the Euclidean inner product $\nabla u \cdot \nabla v$, and the identity is the classical first Green formula $\int_\Omega (\nabla u\cdot\nabla v + u\,\Delta v)\,dV = \int_{\partial\Omega} u\,\partial_n v\,dS$ of the companion <em>Partial Differential Equations</em>.</p>
 <h3 id="second-greens-formula">Second Green's Formula</h3>
 <p><strong>Theorem (second Green's formula).</strong> Under the same hypotheses,</p>
 <p>$$
-\int_\Omega \left[ (\tilde{\nabla}\tilde{F}) \bar{\tilde{G}} - \tilde{F} (\bar{\tilde{\nabla}}\bar{\tilde{G}}) \right] dV = \int_{\partial \Omega} \left[ \tilde{F} \tilde{n} \bar{\tilde{G}} - \tilde{G} \tilde{n} \bar{\tilde{F}} \right] dS.
+\int_\Omega \left[ \tilde{F}\, \overline{\Box \tilde{G}} - (\Box \tilde{F})\, \bar{\tilde{G}} \right] dV = \int_{\partial \Omega} \left[ \tilde{F}\, \overline{\partial_{\tilde{n}} \tilde{G}} - (\partial_{\tilde{n}} \tilde{F})\, \bar{\tilde{G}} \right] dS.
 $$</p>
-<p><strong>Proof.</strong> This follows from the first Green's formula by exchanging $\tilde{F}$ and $\tilde{G}$ and subtracting.</p>
-<h3 id="greens-formula-for-the-dalembertian">Green's Formula for the d'Alembertian</h3>
-<p><strong>Theorem (Green's formula for $\Box$).</strong> Let $\tilde{F}$ and $\tilde{G}$ be twice continuously differentiable biquaternion-valued functions on $\Omega$ with piecewise smooth boundary $\partial \Omega$. Then</p>
+<p><strong>Proof.</strong> For each $\mu$ the product rule gives</p>
 <p>$$
-\int_\Omega \left[ (\Box \tilde{F}) \tilde{G} - \tilde{F} (\Box \tilde{G}) \right] dV = \int_{\partial \Omega} \left[ (\tilde{n} \tilde{F}) \tilde{G} - \tilde{F} (\tilde{n} \tilde{G}) \right] dS,
+\partial_{q_\mu} \left[ \tilde{F}\, \overline{\partial_{q_\mu} \tilde{G}} - (\partial_{q_\mu} \tilde{F})\, \bar{\tilde{G}} \right] = \tilde{F}\, \overline{\partial_{q_\mu}^2 \tilde{G}} - (\partial_{q_\mu}^2 \tilde{F})\, \bar{\tilde{G}},
+$$</p>
+<p>the two mixed terms being the same product and cancelling. Summing over $\mu$ makes the left side the divergence of a biquaternion-valued field, whose volume integral is the stated volume integrand and whose boundary integral, by the ordinary divergence theorem and $\sum_\mu n_\mu \partial_{q_\mu} = \partial_{\tilde{n}}$, is the stated surface term. The conjugation is inert throughout because $\partial_{q_\mu}$ is real.</p>
+<h3 id="greens-formula-for-the-dalembertian">Green's Formula for the d'Alembertian</h3>
+<p><strong>Theorem (Green's formula for $\Box$).</strong> Let $\tilde{F}$ and $\tilde{G}$ be twice continuously differentiable biquaternion-valued functions on $\Omega$ with piecewise smooth boundary $\partial \Omega$, and let $\partial_{\tilde{n}} = \sum_{\mu=0}^{3} n_\mu \partial_{q_\mu}$ be the scalar normal derivative in the outward direction, $\tilde{n} = \sum_\mu n_\mu e_\mu$ being the normal fixed by the divergence theorem. Then</p>
+<p>$$
+\int_\Omega \left[ (\Box \tilde{F}) \tilde{G} - \tilde{F} (\Box \tilde{G}) \right] dV = \int_{\partial \Omega} \left[ (\partial_{\tilde{n}} \tilde{F}) \tilde{G} - \tilde{F} (\partial_{\tilde{n}} \tilde{G}) \right] dS,
 $$</p>
 <p>where $\Box = \partial^2/\partial q_0^2 + \Delta_q$ is the four-dimensional Laplacian in the coordinates $q_0, q_1, q_2, q_3$.</p>
-<p><strong>Proof.</strong> Apply the second Green's formula with $\tilde{F}$ replaced by $\tilde{\nabla}\tilde{F}$, and use the definition of $\Box$.</p>
+<p><strong>Proof.</strong> For each $\mu$ the product rule gives</p>
+<p>$$
+\partial_{q_\mu} \left[ (\partial_{q_\mu} \tilde{F}) \tilde{G} - \tilde{F} (\partial_{q_\mu} \tilde{G}) \right] = (\partial_{q_\mu}^2 \tilde{F}) \tilde{G} - \tilde{F} (\partial_{q_\mu}^2 \tilde{G}),
+$$</p>
+<p>the two mixed terms being the same product and cancelling. Summing over $\mu$ makes the left side a divergence whose volume integral is the stated volume integrand, $(\Box\tilde{F})\tilde{G} - \tilde{F}(\Box\tilde{G})$; the divergence theorem turns it into the boundary integral, which by $\sum_\mu n_\mu \partial_{q_\mu} = \partial_{\tilde{n}}$ is the stated surface term.</p>
+<p>The derivative in the surface term is essential and cannot be dropped. The products $\tilde{n}\tilde{F}$ and $\tilde{n}\tilde{G}$ alone, with no derivative, would give a boundary term that vanishes identically for central $\tilde{F}$ and $\tilde{G}$; for scalar $u,v$ the classical identity it would have to reproduce is $\int_\Omega (v\Delta u - u\Delta v)\,dV = \int_{\partial\Omega} (v\partial_n u - u\partial_n v)\,dS$, whose right side is not zero.</p>
+<p><strong>Remark (the two pairings).</strong> This formula is the second Green formula with $\tilde{G}$ replaced by $\bar{\tilde{G}}$, up to the sign of both sides: the second Green formula carries the conjugation in the pairing, this one in the plain product, and the two have the same content. The plain form is the one used in the representation formula below.</p>
+<h3 id="the-representation-formula">The Representation Formula</h3>
+<p><strong>The fundamental solution of $\Box$.</strong> Since $\Delta(\|\tilde{Q}\|_E^{-2}) = -4\pi^2 \delta_0$ in four dimensions, the operator $\Box$ has the central fundamental solution</p>
+<p>$$
+G_\Box(\tilde{Q}) = -\frac{e_0}{4\pi^2 \|\tilde{Q}\|_E^2}, \qquad \Box G_\Box = \delta_0 ,
+$$</p>
+<p>homogeneous of degree $-2$. It is a different object from the gradient kernel $\bar{\tilde{Q}}/\|\tilde{Q}\|_E^4$ of the preceding sections, which is homogeneous of degree $-3$ and inverts the first-order operator $\tilde{\nabla}$ rather than the second-order $\Box$. The companion physics article <em>The Biquaternion D'Alembertian and Its Green's Functions</em> writes the corresponding kernel, with the opposite overall sign because its fourth coordinate is $ict$, as $G_{\mathrm{inv}} = \frac{1}{4\pi^2\rho^2}$ with $-\Box G_{\mathrm{inv}} = \delta^{(4)}$.</p>
+<p><strong>Theorem (representation formula).</strong> Let $\Omega \subset \mathbb{H}_{\mathbb{B}}$ be a bounded domain with piecewise smooth boundary, let $u$ be a twice continuously differentiable biquaternion-valued function on $\bar\Omega$, and let $G_\Box$ be as above; write $G_\Box(\tilde{Q}_0 - \tilde{Q})$ for the kernel translated to an interior point $\tilde{Q}_0 \in \Omega$, and let $\partial_{\tilde{n}}$ act on $\tilde{Q}$. Then</p>
+<p>$$
+u(\tilde{Q}_0) = \int_\Omega G_\Box(\tilde{Q}_0 - \tilde{Q})\,(\Box u)(\tilde{Q})\,dV + \int_{\partial \Omega} \left[ u(\tilde{Q})\,\partial_{\tilde{n}} G_\Box(\tilde{Q}_0 - \tilde{Q}) - G_\Box(\tilde{Q}_0 - \tilde{Q})\,\partial_{\tilde{n}} u(\tilde{Q}) \right] dS .
+$$</p>
+<p><strong>Proof.</strong> Apply the Green formula for $\Box$ to $u$ and to $G_\Box(\tilde{Q}_0 - \cdot)$ on the domain $\Omega \setminus B(\tilde{Q}_0,\varepsilon)$, whose boundary is $\partial\Omega$ together with the small sphere. The term $G_\Box(\tilde{Q}_0 - \cdot)$ is annihilated by $\Box$ away from $\tilde{Q}_0$, while its image under $\Box$ is $\delta_0$, so the volume integrand carries $-u(\tilde{Q}_0)$ from the excised ball and $G_\Box(\tilde{Q}_0-\tilde{Q})(\Box u)(\tilde{Q})$ from $\Omega$; the outer and inner boundary pieces assemble into the stated surface integral. Letting $\varepsilon \to 0$ gives the identity. The volume integral converges at $\tilde{Q}_0$ because the kernel is of order $\|\tilde{Q}-\tilde{Q}_0\|_E^{-2}$, which is integrable in four dimensions. $\square$</p>
+<p><strong>Corollary ($\Box$-harmonic case).</strong> If $\Box u = 0$ in $\Omega$ the volume term drops out and</p>
+<p>$$
+u(\tilde{Q}_0) = \int_{\partial \Omega} \left[ u\,\partial_{\tilde{n}} G_\Box(\tilde{Q}_0 - \cdot) - G_\Box(\tilde{Q}_0 - \cdot)\,\partial_{\tilde{n}} u \right] dS ,
+$$</p>
+<p>so a function annihilated by the four-dimensional Laplacian is determined at every interior point by its boundary values and its normal derivative. This is the second-order companion of the Cauchy integral formula above, which represents a function annihilated by the first-order operator $\tilde{\nabla}$ by its boundary values alone; here it is the vanishing of $\Box u$, not the size of the kernel's singularity, that removes the volume term.</p>
+<p><strong>The Kirchhoff–Green reading.</strong> For the wave operator the same identity is the <strong>Kirchhoff–Green representation</strong>: on a domain whose boundary is split into an initial surface and a lateral surface, the volume integral is the source term and the surface integral carries the initial data and the boundary data, and the low-dimensional cases are the classical d'Alembert, Poisson and Kirchhoff formulas of the companion <em>Partial Differential Equations</em>. The operator $\Box$ of this article is the four-dimensional Laplacian in the real coordinates of $\mathbb{H}_{\mathbb{B}}$; its wave reading, in which the fourth coordinate is $ict$, is the one used by the companion physics articles, and the biquaternionic analogue of the Kirchhoff and Green formulas for that wave ("biwave") operator is constructed by L. A. Alexeyeva in the 2021 paper cited in Further Reading, whose biwave family also unifies the Maxwell- and Dirac-equivalent second-order equations in one operator.</p>
+<p><strong>Verification.</strong> The Green identity and the representation formula were checked numerically on the quaternion subspace, where the four coordinates are real. On the ball $B(0,1.7) \subset \mathbb{R}^4$ the two sides of the representation formula agreed below $10^{-12}$ for the harmonic test functions $q_1$ and $q_1^2 - q_2^2$ and for $u$ with non-vanishing Laplacian ($\|Q\|_E^2$, for which $\Box u = 8$, and $e^{q_0}$), and to the same bound at off-centre test points on balls of radius $1.7$ and $0.9$. The integration-by-parts identity, the Stokes form $\int_{\partial\Omega}\tilde{F}\tilde{n}\tilde{G}\,dS = \int_\Omega[(\tilde{F}\overleftarrow{\nabla})\tilde{G} + \tilde{F}(\tilde{\nabla}\tilde{G})]\,dV$, the first and second Green formulas, and the Green formula for $\Box$ were checked on the same ball and agreed to $10^{-11}$ or better for biquaternion-valued $\tilde{F}$ and $\tilde{G}$. The commutative-looking variants fail on the same data: the discarded boundary form $(\tilde{n}\tilde{F})\tilde{G} - \tilde{F}(\tilde{n}\tilde{G})$ by order one, and the earlier forms of the first and second Green formulas by order one on the same quadrature.</p>
 <h2 id="the-fundamental-solution">The Fundamental Solution</h2>
 <h3 id="definition_1">Definition</h3>
 <p>The <strong>fundamental solution</strong> of the gradient operator $\tilde{\nabla}$ on $\mathbb{H}_{\mathbb{B}}$ is the biquaternion-valued function</p>
@@ -319,8 +357,9 @@ $$</p>
 </li>
 </ol>
 <h2 id="summary">Summary</h2>
-<p>The integral of a biquaternion-valued function on the quaternion subspace $\mathbb{H}_{\mathbb{B}}$ is defined component-wise with respect to the Lebesgue measure. It is linear, additive, and satisfies the fundamental estimate. The standard theorems of integration carry over: integration by parts, the divergence theorem, and Green's formulas.</p>
-<p>The <strong>fundamental solution</strong> of the gradient operator on $\mathbb{H}_{\mathbb{B}}$ is $\tilde{G}(\tilde{Q}) = \bar{\tilde{Q}}/\|\tilde{Q}\|_E^4$, which satisfies $\tilde{\nabla} \tilde{G} = 0$ away from the origin and $\tilde{\nabla} \tilde{G} = -2\pi^2 \delta_0 e_0$ in the sense of distributions.</p>
+<p>The integral of a biquaternion-valued function on the quaternion subspace $\mathbb{H}_{\mathbb{B}}$ is defined component-wise with respect to the Lebesgue measure. It is linear, additive, and satisfies the fundamental estimate. The standard theorems of integration carry over: integration by parts, the divergence theorem, and Green's formulas. Because the algebra is not commutative, transposing the gradient off a product requires the right gradient $\overleftarrow{\nabla}$, and the commutative-looking forms hold only for central fields; the identities are stated in the forms that hold for general biquaternion-valued fields.</p>
+<p>The <strong>fundamental solution</strong> of the gradient operator on $\mathbb{H}_{\mathbb{B}}$ is $\tilde{G}(\tilde{Q}) = \bar{\tilde{Q}}/\|\tilde{Q}\|_E^4$, which satisfies $\tilde{\nabla} \tilde{G} = 0$ away from the origin and $\tilde{\nabla} \tilde{G} = -2\pi^2 \delta_0 e_0$ in the sense of distributions. The fundamental solution of the second-order operator $\Box$ is the central function $G_\Box = -e_0/(4\pi^2\|\tilde{Q}\|_E^2)$.</p>
+<p>The <strong>Green formula for $\Box$</strong> and its <strong>representation formula</strong> express a biquaternion-valued function at an interior point by the volume integral of its $\Box$ against $G_\Box$ together with a surface integral of its boundary values and normal derivative; when $\Box u = 0$ the volume term drops out and the interior value is carried by the boundary alone. For the wave operator this is the biquaternionic <strong>Kirchhoff–Green representation</strong>, the analogue of the classical Kirchhoff and Green formulas.</p>
 <p>The <strong>Cauchy integral formula</strong> expresses the value of a continuously differentiable function at an interior point in terms of its boundary values and the volume integral of its gradient. For functions satisfying $\tilde{\nabla}\tilde{F} = 0$ (the biquaternion analogue of the Cauchy–Riemann equations), the volume integral vanishes and the value at the interior point is given entirely by the boundary values.</p>
 <p>The Cauchy integral formula implies the <strong>mean value property</strong>, the <strong>maximum principle</strong>, <strong>Liouville's theorem</strong>, the <strong>identity theorem</strong>, and the <strong>Cauchy estimates</strong>. These are the biquaternion analogues of the standard consequences of the Cauchy integral formula in complex analysis.</p>
 <p>The <strong>residue theory</strong> for biquaternion-valued functions is more delicate than in the complex case, because of the non-commutativity of the algebra. The residue at an isolated singularity is defined as a boundary integral, and the residue theorem expresses the integral over the boundary of a domain in terms of the residues at the singularities inside.</p>
@@ -355,6 +394,10 @@ $$</p>
 <td>Biquaternionic gradient (Cauchy–Riemann operator)</td>
 </tr>
 <tr>
+<td>$\tilde{F}\overleftarrow{\nabla} = \sum_\mu (\partial \tilde{F}/\partial q_\mu) e_\mu$</td>
+<td>Right gradient of $\tilde{F}$</td>
+</tr>
+<tr>
 <td>$\bar{\tilde{\nabla}}$</td>
 <td>Quaternion conjugate of the gradient</td>
 </tr>
@@ -367,8 +410,16 @@ $$</p>
 <td>Biquaternion-valued outward unit normal</td>
 </tr>
 <tr>
+<td>$\partial_{\tilde{n}} = \sum_\mu n_\mu \partial_{q_\mu}$</td>
+<td>Scalar normal derivative in the outward direction</td>
+</tr>
+<tr>
 <td>$\tilde{G}(\tilde{Q}) = \bar{\tilde{Q}}/\|\tilde{Q}\|_E^4$</td>
 <td>Fundamental solution of the gradient</td>
+</tr>
+<tr>
+<td>$G_\Box(\tilde{Q}) = -e_0/(4\pi^2\|\tilde{Q}\|_E^2)$</td>
+<td>Fundamental solution of $\Box$</td>
 </tr>
 <tr>
 <td>$dV$</td>
@@ -385,6 +436,7 @@ $$</p>
 <li>F. Brackx, R. Delanghe, and F. Sommen, <em>Clifford Analysis</em> (Pitman, 1982), for the general Clifford analysis.</li>
 <li>John Ryan, <em>Clifford Algebras in Analysis and Related Topics</em> (CRC Press, 1996), for the analytic theory of Clifford algebras.</li>
 <li>A. Sudbery, "Quaternionic analysis", <em>Mathematical Proceedings of the Cambridge Philosophical Society</em> <strong>85</strong> (1979) 199–225, for the quaternionic analogue of the Cauchy integral formula.</li>
+<li>L. A. Alexeyeva, "Biquaternionic wave equations and the properties of their generalized solutions", <em>Differential Equations</em> <strong>57</strong> (5) (2021) 594–604 (DOI 10.1134/S0012266121050049), for the fundamental and generalized solutions of the biquaternionic wave ("biwave") operator, the conditions on its shock fronts, the Cauchy problem, and the analogues of the Kirchhoff and Green representation formulas.</li>
 </ul>
       </div>
     </main>

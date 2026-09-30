@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Lie–Jordan Decomposition of a Bilinear Product and the Jordan Triple System — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-liejordan-decomposition-of-a-bilinear-product-and-the-jordan-triple-system"><strong>The Lie–Jordan Decomposition of a Bilinear Product and the Jordan Triple System</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A single bilinear product on a vector space carries two structures at once. Its symmetrisation $x \circ y = \tfrac12(xy + yx)$ is commutative, and its antisymmetrisation $[x,y] = \tfrac12(xy - yx)$ is anticommutative. The corpus treats the two separately: the symmetric product is the subject of <em>Jordan Algebras</em> and of the <em>Symmetric Linear Algebras</em> of this part, and the antisymmetric bracket is the subject of <em>Lie Algebras</em> and of the <em>Anti-symmetric Linear Algebras</em>. This article records the observation — Liu Yu-Fen's, in the source of the biquaternion dirac construction — that for the specific product built from the Dirac matrices the two structures are <em>both</em> present and <em>compatible</em>, and that the ternary product they generate is a Jordan triple system.</p>
+<p>The setting is the biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H} \cong M_2(\mathbb{C})$, read as a complex four-dimensional vector space $V = \mathbb{C}^4$ with a bilinear composition whose structure constants are the source's</p>
+<p>$$
+c^{\mu\nu\lambda} = \bigl(t^{\mu\nu\lambda\rho} - i\varepsilon^{\mu\nu\lambda\rho}\bigr)k_\rho,
+$$</p>
+<p>where $t^{\mu\nu\lambda\rho} = \tfrac14\mathrm{tr}(\gamma^\mu\gamma^\nu\gamma^\lambda\gamma^\rho)$ and $\varepsilon^{\mu\nu\lambda\rho} = \tfrac{i}{4}\mathrm{tr}(\gamma_5\gamma^\mu\gamma^\nu\gamma^\lambda\gamma^\rho)$ are the gamma traces and $k^\mu$ is a neutral vector. The composition</p>
+<p>$$
+(G \star H)^\lambda = G_\mu\, c^{\mu\lambda\nu} H_\nu
+$$</p>
+<p>is associative and has $k$ as its unit; it is the biquaternion product in a particular basis. The point of this article is what that product <em>is</em>, algebraically: one bilinear map, three structures.</p>
+<h2 id="the-two-halves-of-one-product">The Two Halves of One Product</h2>
+<h3 id="definitions">Definitions</h3>
+<p>For $G, H \in V$ put</p>
+<p>$$
+G \circ H = \tfrac12\bigl(G \star H + H \star G\bigr),
+\qquad
+[G, H] = \tfrac12\bigl(G \star H - H \star G\bigr).
+$$</p>
+<p>Then $G \circ H = H \circ G$ and $[G,H] = -[H,G]$: the symmetrisation is commutative, the antisymmetrisation anticommutative. Both are bilinear, and either, together with the other, reconstructs the product: $G \star H = G \circ H + [G, H]$. The two are therefore not two structures on $V$ but the two halves of one structure.</p>
+<h3 id="the-lie-half">The Lie Half</h3>
+<p>The antisymmetrisation satisfies the <strong>Jacobi identity</strong></p>
+<p>$$
+[G,[H,K]] + [H,[K,G]] + [K,[G,H]] = 0,
+$$</p>
+<p>so $(V,[\cdot,\cdot])$ is a Lie algebra. Because the product that defines it is associative, this is the <em>commutator algebra</em> of an associative algebra: the Lie algebra associated to $M_2(\mathbb{C})$, namely $\mathfrak{gl}(2,\mathbb{C}) \cong \mathfrak{sl}(2,\mathbb{C}) \oplus \mathbb{C}$. The corpus's <em>Lie Algebras</em> and the biquaternion Lie algebra article record the general construction; here it is the first half of the source's decomposition, and it is the half that the neutral element $j$ (the spacelike unit) leans on, since the antisymmetric symbol $\varepsilon$ is what survives the antisymmetrisation.</p>
+<h3 id="the-jordan-half">The Jordan Half</h3>
+<p>The symmetrisation satisfies the <strong>Jordan identity</strong></p>
+<p>$$
+G \circ (H \circ (G \circ G)) = (G \circ H) \circ (G \circ G),
+$$</p>
+<p>so $(V, \circ)$ is a Jordan algebra. Because the product is associative, this is the <em>special</em> Jordan algebra $M_2(\mathbb{C})^+$ — the symmetrisation of an associative algebra, which is the general source of special Jordan algebras, and which here is the corpus's $H_2(\mathbb{C})$ with the Hermitian part singled out. The corpus's <em>Jordan Algebras</em> and <em>Special and Exceptional Jordan Algebras</em> record the theory; the second half of the source's decomposition lands exactly there.</p>
+<h3 id="the-compatibility">The Compatibility</h3>
+<p>The two halves are not independent: the bracket is a <em>derivation</em> of the Jordan product,</p>
+<p>$$
+[G, H \circ K] = [G,H] \circ K + H \circ [G,K],
+$$</p>
+<p>and the sum</p>
+<p>$$
+[G, H \circ K] + [H, K \circ G] + [K, G \circ H] = 0
+$$</p>
+<p>vanishes identically. The first identity says the Lie algebra acts on the Jordan algebra by derivations; the second is the <strong>fundamental identity</strong> that the source names, the compatibility condition that makes the pair a <em>Lie–Jordan algebra</em> in the sense of the literature on the Kantor–Koecher construction. The three identities — Jacobi, Jordan, and this compatibility — are what the source's "revised and corrected" account of its algebra asserts; the correction it makes to its earlier formulation is exactly a sign, the sign of the $\varepsilon$ term in $c^{\mu\nu\lambda}$, without which the antisymmetric half fails Jacobi and the symmetric half fails Jordan.</p>
+<h2 id="the-jordan-triple-system">The Jordan Triple System</h2>
+<h3 id="the-ternary-product">The Ternary Product</h3>
+<p>The symmetrised product generates a <em>ternary</em> operation,</p>
+<p>$$
+\{G, H, K\} = (G \circ H) \circ K + (K \circ H) \circ G - (G \circ K) \circ H,
+$$</p>
+<p>which is the linearisation of the <strong>quadratic representation</strong> $U_G H = G \circ (H \circ G)$ of the Jordan algebra. Equivalently, and this is the form the source's construction makes natural, the ternary product of an associative algebra with an involution is</p>
+<p>$$
+\{G, H, K\} = (G \star H) \star K + (K \star H) \star G .
+$$</p>
+<p>Both forms are ternary operations on $V$, and both are symmetric in the outer two arguments, $\{G,H,K\} = \{K,H,G\}$.</p>
+<h3 id="the-triple-identities">The Triple Identities</h3>
+<p>A <strong>Jordan triple system</strong> is a vector space with a ternary product that is linear in each argument, symmetric in the outer two, and satisfies the five-linear <strong>Jordan triple identity</strong></p>
+<p>$$
+\{x, y, \{u, v, w\}\}
+= \{\{x,y,u\}, v, w\} - \{u, \{y,x,v\}, w\} + \{u, v, \{x,y,w\}\}.
+$$</p>
+<p>Both ternary products above satisfy this identity. A Jordan triple system need not come from a Jordan algebra — the triple identity is weaker than the Jordan identity — so the ternary structure is the more general object, and the source's construction lands on it: the cubic form of the triality construction ($A_\mu\bar\Psi\gamma^\mu\Psi$, in the companion physics articles) is the ternary product read with the vector space as the third factor. This is why the source presents its algebra as an order-$\ell$ <em>ding</em>, of which the order-three part is the Jordan triple system.</p>
+<h3 id="the-block-structure">The Block Structure</h3>
+<p>The four-dimensional carrier has one more piece of visible structure. In the trinomial basis the units $e_\mu = i\hat e_\mu$ are $2\times2$ <em>block</em> matrices: each unit is a $2\times2$ matrix of $2\times2$ blocks, and the blocks of the three spatial units close under multiplication into the quaternion group $Q_8$ modulo its centre. The source groups these blocks under the name <strong>periodic matrices</strong> $J_i$; the block form itself is what the algebra supplies, and it exhibits $\mathbb{B} \cong M_2(\mathbb{C})$ directly — the algebra is a $2\times2$ matrix algebra, its symmetric part is the special Jordan algebra, and its skew part is the Lie algebra. The verified content of the block structure is exactly the quaternion relations $\hat e_k^2 = -I$ and $\hat e_1\hat e_2 = \hat e_3$; the identification of the individual blocks with the source's $J_i$ is the source's, and the corpus records it as such.</p>
+<h2 id="what-is-verified-and-what-is-the-sources">What Is Verified and What Is the Source's</h2>
+<p><strong>Verified</strong> on the corpus's convention, each identity on random arguments, $\le 100$ per identity, throwaway script outside the repository:</p>
+<ul>
+<li>Jacobi for the antisymmetric half;</li>
+<li>the Jordan identity for the symmetric half;</li>
+<li>the derivation identity $[G, H\circ K] = [G,H]\circ K + H\circ[G,K]$;</li>
+<li>the fundamental identity $[G,H\circ K] + [H,K\circ G] + [K,G\circ H] = 0$;</li>
+<li>the symmetry $\{G,H,K\} = \{K,H,G\}$ and the five-linear Jordan triple identity, for both ternary forms;</li>
+<li>that the composition is associative with unit $k$, and that the blocks of $e_1, e_2, e_3$ reproduce the quaternion relations.</li>
+</ul>
+<p><strong>The source's</strong>, transcribed and not independently derivable from the identities above: the naming of the block matrices $J_i$ and the claim that the "revised" account corrects an earlier formulation by a sign; the identification of the ternary product with the source's order-three ding; and the general definition of an order-$\ell$ ding. The identities themselves are the definitional ones for Lie, Jordan and Jordan-triple structures; what the source adds is the observation that the <em>same</em> product carries all three, and the explicit construction that shows it.</p>
+<p><strong>A caution.</strong> That Jacobi and Jordan hold is, for an associative algebra, automatic: the commutator of an associative algebra is always a Lie bracket and its symmetrisation always a Jordan algebra. The content of the article is therefore not the <em>holding</em> of the identities but the <em>identification</em> of the algebra: the structure constants $c^{\mu\nu\lambda}$ with the normed condition are those of $M_2(\mathbb{C})$, so the Lie half is $\mathfrak{gl}(2,\mathbb{C})$, the Jordan half is $M_2(\mathbb{C})^+$, and the triple system is the Jordan triple system of the same matrix algebra. The source's correction matters because a wrong sign in the $\varepsilon$ term produces a <em>different</em> product — one that is neither associative nor normed — and then none of the three structures is the standard one.</p>
+<h2 id="open-questions">Open Questions</h2>
+<ol>
+<li>
+<p><strong>The Kantor–Koecher construction.</strong> A Lie–Jordan algebra with a compatibility condition is the input to the Kantor–Koecher construction, which builds a Lie algebra (and hence a graded Lie algebra) from a Jordan algebra. Is the source's algebra a Kantor pair, and is the resulting Lie algebra $\mathfrak{sl}(2,\mathbb{C})$ itself, or a larger one?</p>
+</li>
+<li>
+<p><strong>The order-three structure.</strong> The algebra carries an order-three automorphism (the triality of the companion physics articles). Does that automorphism act on the Lie half, the Jordan half and the triple system in the way the $S_3$ outer automorphism acts on the three representations of $\mathrm{Spin}(8)$? The triple structure — one Lie algebra, one Jordan algebra, one Jordan triple — is suggestive, and the question is whether the suggestion is a theorem.</p>
+</li>
+<li>
+<p><strong>The exceptional case.</strong> The biquaternion algebra is 4-dimensional, and its Jordan half is special. The first exceptional Jordan algebra, the Albert algebra, needs 27 dimensions and the octonions. Does the order-$\ell$ ding construction have an octonionic lifting, and does the lifting land on the exceptional structures of <em>Special and Exceptional Jordan Algebras</em>?</p>
+</li>
+<li>
+<p><strong>The grading.</strong> The compatibility identity is the germ of a $\mathbb{Z}/2$-graded Lie algebra structure, with the bracket as the odd part acting on the even part. The corpus's <em>Superalgebras and Graded Structures</em> treats the $\mathbb{Z}/2$ grading directly; whether the source's Lie–Jordan pair is best read as a graded Lie algebra is open.</p>
+</li>
+</ol>
+<p>These questions are open.</p>
+<h2 id="summary">Summary</h2>
+<p>A bilinear product on a vector space has two halves: its symmetrisation $G\circ H = \tfrac12(G\star H + H\star G)$ and its antisymmetrisation $[G,H] = \tfrac12(G\star H - H\star G)$. For the product built from the Dirac matrices, $c^{\mu\nu\lambda} = (t^{\mu\nu\lambda\rho} - i\varepsilon^{\mu\nu\lambda\rho})k_\rho$, the antisymmetric half satisfies the Jacobi identity and is the Lie algebra $\mathfrak{gl}(2,\mathbb{C})$, and the symmetric half satisfies the Jordan identity and is the special Jordan algebra $M_2(\mathbb{C})^+$. The two halves are compatible: the bracket is a derivation of the Jordan product, $[G,H\circ K] = [G,H]\circ K + H\circ[G,K]$, and the fundamental identity $[G,H\circ K] + [H,K\circ G] + [K,G\circ H] = 0$ holds. The symmetrised product generates a ternary operation $\{G,H,K\} = (G\circ H)\circ K + (K\circ H)\circ G - (G\circ K)\circ H$, symmetric in its outer arguments and satisfying the five-linear Jordan triple identity; the source's order-three ding is this triple system. The block structure of the units $e_\mu$ exhibits the matrix algebra directly, with the four blocks of each unit being the source's periodic matrices $J_i$.</p>
+<p>The identities Jacobi, Jordan, the derivation identity, the fundamental identity and the Jordan triple identity are all verified. The content of the construction is the identification: one product, the structure constants of $M_2(\mathbb{C})$, carries three compatible algebraic structures at once.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$V = \mathbb{C}^4$</td>
+<td>Carrier of the algebra, $\mathbb{B} \cong M_2(\mathbb{C})$</td>
+</tr>
+<tr>
+<td>$G, H, K$</td>
+<td>Elements of $V$</td>
+</tr>
+<tr>
+<td>$G \star H$</td>
+<td>The composition, $(G\star H)^\lambda = G_\mu c^{\mu\lambda\nu}H_\nu$</td>
+</tr>
+<tr>
+<td>$c^{\mu\nu\lambda} = (t^{\mu\nu\lambda\rho} - i\varepsilon^{\mu\nu\lambda\rho})k_\rho$</td>
+<td>Structure constants</td>
+</tr>
+<tr>
+<td>$t^{\mu\nu\lambda\rho} = \tfrac14\mathrm{tr}(\gamma^\mu\gamma^\nu\gamma^\lambda\gamma^\rho)$</td>
+<td>Symmetric gamma trace</td>
+</tr>
+<tr>
+<td>$\varepsilon^{\mu\nu\lambda\rho} = \tfrac{i}{4}\mathrm{tr}(\gamma_5\gamma^\mu\gamma^\nu\gamma^\lambda\gamma^\rho)$</td>
+<td>Totally antisymmetric symbol</td>
+</tr>
+<tr>
+<td>$k^\mu$</td>
+<td>Neutral vector, the unit of the composition</td>
+</tr>
+<tr>
+<td>$G \circ H = \tfrac12(G\star H + H\star G)$</td>
+<td>Jordan (symmetric) product</td>
+</tr>
+<tr>
+<td>$[G,H] = \tfrac12(G\star H - H\star G)$</td>
+<td>Lie (antisymmetric) bracket</td>
+</tr>
+<tr>
+<td>$\{G,H,K\}$</td>
+<td>Ternary (Jordan triple) product</td>
+</tr>
+<tr>
+<td>$e_\mu = i\hat e_\mu$</td>
+<td>Units of the trinomial basis, $\hat e_k^2 = -I$</td>
+</tr>
+<tr>
+<td>$J_i$</td>
+<td>The source's name for the four $2\times2$ blocks of the units</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Liu Yu-Fen, "Triality, Biquaternion and Vector Representation of the Dirac Equation," arXiv:math-ph/0109008 (2001), §1 and §2, for the structure constants $c^{\mu\nu\lambda}$, the normed condition, the Lie and Jordan halves, the fundamental identity, the Jordan triple system, and the four $2\times2$ periodic matrices.</li>
+<li>Liu Yu-Fen, "Triality and Dual Equivalence Between Dirac Field and Topologically Massive Gauge Field," arXiv:hep-th/0602275 (2006), for the order-$\ell$ ding and the ternary structure.</li>
+<li>N. Jacobson, <em>Structure and Representations of Jordan Algebras</em> (American Mathematical Society Colloquium Publications 39, Providence, 1968), for Jordan algebras, their triple systems, and the quadratic representation.</li>
+<li>K. McCrimmon, <em>A Taste of Jordan Algebras</em> (Universitext, Springer, New York, 2004), for the Jordan triple identities and the classification of special and exceptional Jordan algebras.</li>
+<li>O. Loos, <em>Jordan Pairs</em> (Lecture Notes in Mathematics 460, Springer, Berlin, 1975), for Jordan triples, Jordan pairs and the Kantor–Koecher construction.</li>
+<li>M. Koecher, "Imbedding of Jordan algebras into Lie algebras I, II," <em>American Journal of Mathematics</em> <strong>89</strong> (1967) 787–816 and <strong>90</strong> (1968) 476–510, for the Kantor–Koecher construction.</li>
+<li>The companion corpus articles: <em>Jordan Algebras</em>, <em>Special and Exceptional Jordan Algebras</em>, <em>Lie Algebras</em>, <em>Automorphisms and Derivations of Algebras</em>, <em>Superalgebras and Graded Structures</em>, and <em>Biquaternion Lie Algebra</em>.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

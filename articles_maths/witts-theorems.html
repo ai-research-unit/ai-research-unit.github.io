@@ -53,7 +53,7 @@
         <h1 id="witts-theorems"><strong>Witt's Theorems</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>The rigidity of quadratic spaces begins with a single theorem: every isometry between subspaces of a non-degenerate quadratic space extends to an isometry of the whole space. From it follow the existence of orthogonal complements, the invariance of the dimension of a maximal totally isotropic subspace — the <strong>Witt index</strong> — and the <strong>cancellation</strong> theorem that allows a common summand to be removed from an isometry of orthogonal sums. Together these convert the isometry problem for quadratic forms into a finite invariant list.</p>
-<p>This article develops the extension theorem, hyperbolic planes, the index and the decomposition theorem, cancellation, and the failure of the whole circle of results in characteristic $2$. The base is a field $F$ of characteristic not $2$ and the forms are non-degenerate; the polar form, the radical and non-degeneracy are from <em>Bilinear Forms</em>, the polarisation identity and the invariants of a form from <em>Quadratic Forms and Polarisation</em>, and the reflection and the equal-norm lemma from <em>Isometries and Orthogonal Transformations</em>. The use of the invariants to classify forms over $\mathbb{R}$, $\mathbb{C}$ and other fields is the subject, and the norms of the number systems are in <em>Quadratic Forms over Algebras and Norms</em>.</p>
+<p>This article develops the extension theorem, hyperbolic planes, the index and the decomposition theorem, cancellation, and the <strong>chain equivalence</strong> that connects the presentations of a form. The base is a field $F$ of characteristic not $2$ and the forms are non-degenerate; the theory is then tested in characteristic $2$, where the extension theorem and cancellation fail but the chain equivalence survives. The polar form, the radical and non-degeneracy are from <em>Bilinear Forms</em>, the polarisation identity and the invariants of a form from <em>Quadratic Forms and Polarisation</em>, and the reflection and the equal-norm lemma from <em>Isometries and Orthogonal Transformations</em>. The use of the invariants to classify forms over $\mathbb{R}$, $\mathbb{C}$ and other fields is the subject, the norms of the number systems are in <em>Quadratic Forms over Algebras and Norms</em>, and the invariants themselves, the discriminant, the signature and the Hasse invariant, are constructed from this theorem in <em>The Witt Group and the Grothendieck–Witt Ring</em>.</p>
 <h2 id="hyperbolic-planes">Hyperbolic Planes</h2>
 <h3 id="definition">Definition</h3>
 <p><strong>Definition.</strong> A <strong>hyperbolic plane</strong> is a two-dimensional quadratic space $H$ with a basis $e, f$ such that</p>
@@ -168,7 +168,16 @@ V = W \perp W^\perp, \qquad V = \sigma(W) \perp \sigma(W)^\perp,
 $$</p>
 <p>with $W$ and $\sigma(W)$ isometric; applying cancellation to these two orthogonal sums of the same form $V$ yields $W^\perp \cong \sigma(W)^\perp$. Choosing any isometry $\tau : W^\perp \to \sigma(W)^\perp$, the map that is $\sigma$ on $W$ and $\tau$ on $W^\perp$ is an isometry of $V$ extending $\sigma$, because the decompositions are orthogonal.</p>
 <p>So the two theorems are two faces of one statement: cancellation is what allows an isometry of a summand to be recognised as an isometry of the whole space.</p>
-<h2 id="the-failure-in-characteristic-math460">The Failure in Characteristic $2$</h2>
+<h2 id="chain-equivalence">Chain Equivalence</h2>
+<p>The theorems above decide whether two forms are isometric. A different question is how the diagonal presentation of a form may be changed, and its answer is a finite list of moves, the <strong>chain equivalence</strong>.</p>
+<p><strong>Theorem (chain equivalence, <em>Kettensatz</em>; standard).</strong> Let $F$ be a field of characteristic not $2$, and let $\langle a_1, \ldots, a_n\rangle$ and $\langle b_1, \ldots, b_n\rangle$ be isometric non-degenerate diagonal forms of the same dimension. Then there is a finite chain of diagonal forms, beginning at $\langle a_1, \ldots, a_n\rangle$ and ending at $\langle b_1, \ldots, b_n\rangle$, in which every step is one of two moves:</p>
+<ul>
+<li>for some $k$ and some $\beta \in F^\times$, replace the single entry $a_k$ by $\beta^2 a_k$;</li>
+<li>for some $k < n$ with $1 + a_k a_{k+1} \neq 0$, replace the pair $a_k, a_{k+1}$ by the pair $(1 + a_k a_{k+1})a_k$ and $(1 + a_k a_{k+1})a_{k+1}$.</li>
+</ul>
+<p>Both moves are isometries written on the coefficients: the first is the scaling of one coordinate by $\beta$, and the second an isometry of the binary form $\langle a_k, a_{k+1}\rangle$, under which the discriminant $a_k a_{k+1}$ is multiplied by the square $(1 + a_k a_{k+1})^2$. The theorem states that these two moves connect every two presentations of one form, and this is what makes an invariant computable.</p>
+<p><strong>Remark.</strong> This is the mechanism behind the invariants of <em>The Witt Group and the Grothendieck–Witt Ring</em>. An invariant given by a formula in the coefficients, such as the Hasse invariant $\prod_{i<j}(a_i, a_j)$ attached to a diagonal form, depends on the presentation until it is known to be unchanged by the two moves; the chain equivalence reduces the proof that it is well defined to that finite check, in place of an argument about an arbitrary isometry.</p>
+<h2 id="the-failure-in-characteristic-math480">The Failure in Characteristic $2$</h2>
 <p>Everything above uses $2 \neq 0$: the polar form is defined with a factor $\tfrac{1}{2}$, a non-isotropic vector has $q(v) \neq 0$ and its reflection is defined with a factor $2/q(v)$, and the hyperbolic basis is normalised using $\tfrac{1}{2}$.</p>
 <h3 id="quadratic-forms-are-not-determined-by-their-associated-forms">Quadratic Forms Are Not Determined by Their Associated Forms</h3>
 <p><strong>Proposition.</strong> Let $F$ be a field of characteristic $2$. Then the associated bilinear form $b(v, w) = q(v + w) - q(v) - q(w)$ of <em>Quadratic Forms and Polarisation</em> is alternating, $b(v, v) = 0$ for every $v$; and two quadratic forms with the same associated form need not be isometric.</p>
@@ -183,7 +192,27 @@ $$</p>
 q_1 \perp r \cong q_2 \perp r, \qquad \text{but} \qquad q_1 \not\cong q_2.
 $$</p>
 <p><strong>Proof.</strong> The form $q_1 \perp r$ is $(x, y) \mapsto y^2$ and the form $q_2 \perp r$ is $(x, y) \mapsto x^2 + y^2 = (x + y)^2$. The invertible linear map $T(x, y) = (x, x + y)$ of $\mathbb{F}_2^2$ has $T(x, y)_1 + T(x, y)_2 = x + (x + y) = y$, so $(q_2 \perp r)(T(x, y)) = y^2 = (q_1 \perp r)(x, y)$; thus $T$ is an isometry $q_1 \perp r \to q_2 \perp r$. On the other hand $q_1(1) = 0 \neq 1 = q_2(1)$, so $q_1$ and $q_2$ are not isometric.</p>
-<p>The forms in this example are degenerate: the associated form of $x \mapsto x^2$ over $\mathbb{F}_2$ vanishes identically, because $q(1) - q(1) - q(0) = 0$. For non-singular forms — those whose associated bilinear form $b$ is non-degenerate — cancellation can be recovered by restating the theorem in terms of the pair consisting of $b$ and the restriction of $q$ to a suitable supplement. The correct general theory in characteristic $2$ distinguishes <strong>non-degenerate</strong> from <strong>non-singular</strong> forms and uses the <strong>defect</strong> of a form; the reader is referred to the standard literature, where Witt's extension theorem and cancellation appear in the appropriately modified form.</p>
+<p>The forms in this example are degenerate: the associated form of $x \mapsto x^2$ over $\mathbb{F}_2$ vanishes identically, because $q(1) - q(1) - q(0) = 0$, so the example does not test the theorem on the forms the theory is built on. Two independent changes repair the theory: the invariant that replaces the discriminant takes its values in a different group, and the chain equivalence survives although the extension theorem and cancellation do not.</p>
+<h3 id="the-invariant-in-characteristic-two">The Invariant in Characteristic Two</h3>
+<p>Over a field of characteristic not $2$ the discriminant of $q = \langle a_1, \ldots, a_{2n}\rangle$ is the class of $(-1)^n a_1 \cdots a_{2n}$ in $F^\times/(F^\times)^2$. In characteristic $2$ the corresponding invariant is the <strong>Arf invariant</strong>, whose value group is the additive quotient $F/\wp(F)$ of <em>Quadratic Forms and Polarisation</em>, where</p>
+<p>$$
+\wp(F) = \{\alpha^2 + \alpha : \alpha \in F\}.
+$$</p>
+<p>A form of even dimension in characteristic $2$ is written in a suitable basis as an orthogonal sum of binary forms</p>
+<p>$$
+[a, b] : (x, y) \mapsto ax^2 + xy + by^2, \qquad q = [a_1, b_1] \perp \cdots \perp [a_n, b_n],
+$$</p>
+<p>which is the presentation the sources call <strong>standard</strong>. The <strong>Arf invariant</strong> of $q$ is the class of the sum $a_1b_1 + \cdots + a_nb_n$ in $F/\wp(F)$. It is an isometry invariant, and it sees exactly what the associated form cannot: the hyperbolic plane $[0, 1]$, that is $xy$, and the anisotropic form $[1, 1]$, that is $x^2 + xy + y^2$, have the same associated form, and their Arf invariants are $0$ and the class of $1$. Over a finite field the dimension and the Arf invariant together are a complete invariant of the isometry class.</p>
+<h3 id="the-chain-equivalence-survives">The Chain Equivalence Survives</h3>
+<p>The extension theorem and cancellation fail as stated, but the chain equivalence does not, and this is what keeps the invariants meaningful in characteristic $2$.</p>
+<p><strong>Theorem (chain equivalence in characteristic $2$; Revoy, standard).</strong> Let $F$ be a field of characteristic $2$, and let two isometric standard quadratic forms be given. Then they are connected by a finite chain of standard presentations, each step of which is one of the following for some index $k$ and some $\beta \in F^\times$:</p>
+<ul>
+<li>the pair $[a_k, b_k] \perp [a_{k+1}, b_{k+1}]$ is replaced by $[a_k + b_{k+1}, b_k] \perp [a_{k+1} + b_k, b_{k+1}]$;</li>
+<li>$[a_k, b_k]$ is replaced by $[\beta^2 a_k, \beta^{-2} b_k]$;</li>
+<li>$[a_k, b_k]$ is replaced by $[a_k + \beta^2 b_k + \beta, b_k]$;</li>
+<li>$[a_k, b_k]$ is replaced by $[a_k, b_k + \beta^2 a_k + \beta]$.</li>
+</ul>
+<p>There is no hypothesis on the field, in contrast with the classification theorems above. The first move is a change of basis: it is the symplectic generator $x_k \mapsto x_k + y_{k+1}$, $x_{k+1} \mapsto x_{k+1} + y_k$ of <em>The Unitary and Symplectic Groups</em> read in a symplectic basis, so it does not move the form at all, while the other three are isometries of one binary summand. The Arf invariant is constant on the chain, and the reason is visible on these moves: the first and the second leave the sum $\sum_i a_ib_i$ unchanged, and the third and the fourth change it by $\wp(\beta b_k)$ and $\wp(\beta a_k)$, which are elements of $\wp(F)$. So the invariant that replaced the discriminant is unchanged by every presentation change, even though cancellation, its companion in characteristic not $2$, has failed.</p>
 <h2 id="witts-theorem-over-commutative-rings">Witt's Theorem over Commutative Rings</h2>
 <p>Over a field every submodule is a direct summand, and the proofs above use this at several points, through the decomposition $V = W \perp W^\perp$ of a non-degenerate subspace. Over a general commutative ring the corresponding statement requires an additional hypothesis on the form, and the classical theorems take the following shape.</p>
 <p><strong>Definition.</strong> A quadratic form $q$ on a free $R$-module $V$ is <strong>Witt</strong> if every submodule $U \subseteq V$ on which $q$ is non-degenerate, in the sense that the induced map $U \to U^*$ is an isomorphism, is a direct summand of $V$ with $V = U \perp U^\perp$.</p>
@@ -196,8 +225,9 @@ $$</p>
 <p><strong>Witt's extension theorem</strong> states that for a non-degenerate quadratic space over a field of characteristic not $2$, every isometry $\sigma : W \to V$ from a subspace into the space extends to an isometry of $V$. The proof reduces to a non-degenerate $W$, where $V = W \perp W^\perp$ and the extension is assembled from the isometry on $W$ and one on the complements; the general case uses the equal-norm lemma and an enlargement of a totally isotropic subspace. Consequences: isometric subspaces have isometric orthogonal complements, and isometries of subspaces are always completable.</p>
 <p>The <strong>Witt index</strong> is the maximum dimension of a totally isotropic subspace; all maximal totally isotropic subspaces have the same dimension, so the index is an invariant, and over a finite field the hyperbolic space $mH$ has exactly $\prod_{i=0}^{m-1}(q^i+1)$ of them, the orthogonal group acting transitively on the set. The <strong>decomposition theorem</strong> states $V \cong V_0 \perp m\,H$ with $V_0$ anisotropic and $m$ the index; $V_0$ is unique up to isometry and $\dim V = \dim V_0 + 2m$. Over $\mathbb{R}$ with signature $(p, r)$, the index is $\min(p, r)$ and $V_0$ is definite of dimension $|p - r|$.</p>
 <p><strong>Witt cancellation</strong> states that $q \perp q_1 \cong q \perp q_2$ implies $q_1 \cong q_2$ for non-degenerate forms over a field of characteristic not $2$; it is proved by extending the identity between the two copies of $q$ and comparing orthogonal complements. It is the statement that orthogonal sum is cancellative, and it is what makes the Witt monoid embeddable in a group. Over a field of characteristic not $2$ cancellation and the extension theorem for isometries of non-degenerate subspaces are equivalent: cancellation is proved from extension, and conversely the isometry of the complements of two isometric summands of a common space, supplied by cancellation, extends the given isometry.</p>
+<p>The <strong>chain equivalence</strong>, Witt's <em>Kettensatz</em>, is the statement that two isometric non-degenerate diagonal presentations of a form are connected by a finite chain of elementary moves: a scaling of one entry by a square, and a move replacing two consecutive entries $a_k, a_{k+1}$ by $(1 + a_ka_{k+1})a_k$ and $(1 + a_ka_{k+1})a_{k+1}$. Each move is an isometry, and the theorem reduces the proof that an invariant given by a formula in the coefficients is well defined to the check that the formula is unchanged by the two moves; the Hasse invariant is the standard example.</p>
 <p>The decomposition theorem carries the classification of forms over the classical fields. Over $\mathbb{R}$ a non-degenerate form is determined by its signature, with index $\min(p, r)$ and anisotropic part of dimension $|p - r|$. Over an algebraically closed field the index is $\lfloor n/2\rfloor$ and the anisotropic part has dimension $0$ or $1$. Over a finite field $\mathbb{F}_q$ of odd characteristic every non-degenerate binary form represents every element, by a counting argument, so every non-degenerate form of dimension at least $3$ is isotropic; a non-degenerate form is then determined by its dimension and its <strong>discriminant</strong> $\det G \bmod (\mathbb{F}_q^*)^2$, giving exactly two isometry classes in each dimension, of indices $\lfloor n/2\rfloor$ and, in even dimension, $\lfloor n/2\rfloor - 1$, the two odd-dimensional classes sharing the index $\lfloor n/2\rfloor$ and differing in discriminant. Over $\mathbb{Q}$ the dimension and discriminant no longer suffice, and the classification requires the invariants at all completions. The decomposition is nevertheless explicit form by form: $\langle 1,1,-2\rangle = H \perp \langle 2\rangle$ with hyperbolic pair $(1,1,1)$, $\tfrac{1}{2}(1,-1,-1)$ and complement spanned by $(0,2,1)$, and $\langle 1,1,-d\rangle$ is isotropic exactly when $d$ is a sum of two squares, so that $\langle 1,1,-2\rangle$ has index $1$ while the form $\langle 1,3,-6\rangle$, of the same dimension and determinant class, is anisotropic.</p>
-<p>In characteristic $2$ the associated bilinear form $b(v, w) = q(v + w) - q(v) - q(w)$ is alternating, $b(v, v) = 0$ for all $v$; quadratic forms are not determined by their associated forms, as the forms $xy$ and $x^2 + xy + y^2$ over $\mathbb{F}_2$ show, and cancellation fails as stated, as the forms $0$ and $x^2$ with the common summand $x^2$ show. The theory in characteristic $2$ replaces non-degeneracy by non-singularity and admits a defect, with the extension theorem and cancellation valid in modified form, as in the standard sources.</p>
+<p>In characteristic $2$ the associated bilinear form $b(v, w) = q(v + w) - q(v) - q(w)$ is alternating, $b(v, v) = 0$ for all $v$; quadratic forms are not determined by their associated forms, as the forms $xy$ and $x^2 + xy + y^2$ over $\mathbb{F}_2$ show, and cancellation fails as stated, as the forms $0$ and $x^2$ with the common summand $x^2$ show. The discriminant, a square class in $F^\times/(F^\times)^2$ in characteristic not $2$, is replaced by the <strong>Arf invariant</strong>, a class in the additive quotient $F/\wp(F)$ with $\wp(F) = \{\alpha^2 + \alpha : \alpha \in F\}$, which for the binary form $[a, b] : (x, y) \mapsto ax^2 + xy + by^2$ is the class of $ab$; over a finite field the dimension and the Arf invariant together classify. The extension theorem and cancellation fail as stated, but the chain equivalence does not: two isometric standard forms are connected by the four moves of Revoy, with no hypothesis on the field, and each of the four moves preserves the Arf invariant.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -308,6 +338,22 @@ $$</p>
 <td>Field with two elements</td>
 </tr>
 <tr>
+<td>$\wp(F) = \{\alpha^2 + \alpha\}$</td>
+<td>Additive subgroup giving the value group of the Arf invariant</td>
+</tr>
+<tr>
+<td>$[a, b]$</td>
+<td>Binary form $ax^2 + xy + by^2$ over a field of characteristic $2$</td>
+</tr>
+<tr>
+<td>Arf invariant</td>
+<td>Class of $\sum_i a_ib_i$ in $F/\wp(F)$, the discriminant in characteristic $2$</td>
+</tr>
+<tr>
+<td>Chain equivalence</td>
+<td>Finite chain of elementary moves connecting the presentations of a form</td>
+</tr>
+<tr>
 <td>$\mathbb{R}$, $\mathbb{C}$</td>
 <td>Real and complex numbers</td>
 </tr>
@@ -316,10 +362,12 @@ $$</p>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
 <li>Winfried Scharlau, <em>Quadratic and Hermitian Forms</em>, Grundlehren der mathematischen Wissenschaften 270 (Springer, 1985), for Witt's theorems over fields and rings, hyperbolic planes and the index.</li>
-<li>T. Y. Lam, <em>Introduction to Quadratic Forms over Fields</em>, Graduate Studies in Mathematics 67 (American Mathematical Society, 2005), for the extension theorem, cancellation and the characteristic-two theory with the defect.</li>
+<li>T. Y. Lam, <em>Introduction to Quadratic Forms over Fields</em>, Graduate Studies in Mathematics 67 (American Mathematical Society, 2005), for the extension theorem, cancellation and the characteristic-two theory.</li>
 <li>Max-Albert Knus, <em>Quadratic and Hermitian Forms over Rings</em>, Grundlehren der mathematischen Wissenschaften 294 (Springer, 1991), for the Witt extension and cancellation theorems over rings.</li>
 <li>Jean Dieudonné, <em>La géométrie des groupes classiques</em> (Springer, 1971), for the extension theorem and its consequences for the classical groups.</li>
 <li>Manfred Knebusch, <em>Grothendieck- und Wittringe von nichtausgearteten symmetrischen Bilinearformen</em> (Springer, 1970), for the descent from the cancellation theorem to the Witt group.</li>
+<li>Richard Elman, Nikita Karpenko and Alexander Merkurjev, <em>The Algebraic and Geometric Theory of Quadratic Forms</em>, American Mathematical Society Colloquium Publications 56 (2008), for the chain equivalence, the Arf invariant and the characteristic-two theory.</li>
+<li>Adam Chapman, <em>Chain Equivalences for Symplectic Bases, Quadratic Forms and Tensor Products of Quaternion Algebras</em> (arXiv:1312.1676, 2015), for the chain equivalences in characteristic $2$ and not $2$ used in this article.</li>
 </ul>
       </div>
     </main>

@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bhabha Multi-Mass Wave Equations and the Bivector Space in Biquaternionic Form — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="bhabha-multi-mass-wave-equations-and-the-bivector-space-in-biquaternionic-form"><strong>Bhabha Multi-Mass Wave Equations and the Bivector Space in Biquaternionic Form</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The mass formula of the companion <em>The Spin–Mass Formula and the Spectrum of Elementary Particles in Biquaternionic Form</em> comes from a family of wave equations, not from a single one. These are the <strong>relativistic wave equations of Bhabha, Gel'fand and Yaglom</strong>: finite-dimensional equations for a field in an arbitrary Lorentz representation $\tau^{l\dot l}$, whose mass operator is a matrix and whose determinant is a polynomial in $p^2$ with several roots — one field, several masses. When the representation is an interlocking chain $(l,\dot l)\oplus(\dot l,l)$, the equation describes a particle of the generalised spin $s=|l-\dot l|$ and of mass $m$, and the chain that carries the proton is a case in point: the proton's equation is a $3540$-component equation, and its mass is the leading root.</p>
+<p>This article records the equations, the spin chains they live on, and the third ingredient the programme attaches to them: the reduction of the equations from Minkowski space to the <strong>bivector space</strong> $\mathbb{R}^6$. The reduction is not decorative. The Lorentz group is six-dimensional, its parameter space is six-dimensional, and the space of antisymmetric two-tensors — the bivectors, the field strengths — is six-dimensional; the programme maps the wave equations into that space and writes them there. The corpus knows this space under another name: the field-strength biquaternion $\mathbf{E}+i\mathbf{B}$, the subject of <em>The Field-Strength Biquaternion and Its Invariants</em>, which has six real components and is exactly a point of the bivector space. The article notes the identification and states where it stops.</p>
+<p>It is worth separating this article from the companion that shares the name Bhabha. <em>Bhabha Scattering in Biquaternionic Form</em> is about the elastic scattering of an electron and a positron; the present article is about Bhabha's <em>wave equations</em>, a different piece of work by the same author. The two are cross-referenced and not merged.</p>
+<p>The article is organised as follows. A first section fixes the spintensors and the spin chains. A second states the wave equations and the determinant argument. A third gives the bivector-space reduction. A fourth works the proton chain and its Dirac limit. A closing section states the biquaternion reading.</p>
+<p><strong>Conventions.</strong> The Lorentz conventions are the corpus's: $\mathrm{Spin}^{+}(1,3)\cong\mathrm{SL}(2,\mathbb{C})$, representations $\tau^{l\dot l}$ with $l=k/2$, $\dot l=r/2$, spin $s=|l-\dot l|$. The equations, the chains and the bivector-space material are transcribed from the spinor-structure programme (V. V. Varlamov, arXiv:1409.1400, §2.2) and from the Bhabha and Gel'fand–Yaglom papers. One convention differs and is flagged forward: the source's Minkowski metric is $\mathrm{diag}(-1,-1,-1,+1)$, whereas the corpus uses the $ict$ metric with three positive spacelike directions; the bivector-space signs below are the source's, and a discrepancy in their printed metric is recorded as a convention issue rather than smoothed over.</p>
+<ul>
+<li>Companion article <em>The Spin–Mass Formula and the Spectrum of Elementary Particles in Biquaternionic Form</em>, for the mass spectrum these equations produce.</li>
+<li>Companion article <em>The Spin–Charge Hilbert Space and the SU(3) Supermultiplets in Biquaternionic Form</em>, for the space in which the multi-mass fields are placed.</li>
+<li>Corpus article <em>The Field-Strength Biquaternion and Its Invariants</em>, for the biquaternion form of the bivector space.</li>
+<li>Corpus article <em>The Dirac–Hestenes Equation and Spacetime Algebra in Biquaternionic Form</em>, for the spinor form of the Dirac and Maxwell equations used in the Dirac limit.</li>
+<li>Corpus article <em>Bispinor Fields and the Fundamental Solution of the Generalized Maxwell–Dirac Equation</em>, for the Maxwell–Dirac package in the corpus's own form.</li>
+<li>Corpus article <em>Clifford Structure of the Biquaternion Algebra</em>, for the algebra the first member of the chain is.</li>
+<li>Corpus article <em>Bhabha Scattering in Biquaternionic Form</em>, for the other work bearing Bhabha's name.</li>
+</ul>
+<h2 id="spintensors-and-the-spin-chains">Spintensors and the Spin Chains</h2>
+<h3 id="the-spintensor">The Spintensor</h3>
+<p>A representation of $\mathrm{SL}(2,\mathbb{C})$ is carried by a <strong>spintensor</strong> with $k$ undotted and $r$ dotted indices,</p>
+<p>$$
+S = s_{\alpha_1\alpha_2\dots\alpha_k\dot\alpha_1\dot\alpha_2\dots\dot\alpha_r},
+$$</p>
+<p>a polynomial in the products of the undotted and dotted spinors $s_\alpha$ and $s_{\dot\alpha}$; the representation is $\tau^{l\dot l}$ with</p>
+<p>$$
+l = \tfrac{k}{2}, \qquad \dot l = \tfrac{r}{2},
+$$</p>
+<p>and the spintensor is the image of the tensor product with $k$ fundamental factors and $r$ conjugate factors,</p>
+<p>$$
+\underbrace{\mathbb{C}^2\otimes\cdots\otimes\mathbb{C}^2}_{k}\otimes
+\underbrace{\bar{\mathbb{C}}^2\otimes\cdots\otimes\bar{\mathbb{C}}^2}_{r},
+$$</p>
+<p>whose spin space is</p>
+<p>$$
+\underbrace{S_2\otimes\cdots\otimes S_2}_{k}\otimes
+\underbrace{\dot S_2\otimes\cdots\otimes\dot S_2}_{r}
+$$</p>
+<p>with $2^{k+r}$ components. Using the symmetry under permutations of the indices within each group, a spintensor can be taken <strong>symmetric</strong>, and the space $\mathrm{Sym}^{(k,r)}$ of symmetric spintensors has dimension</p>
+<p>$$
+\dim\mathrm{Sym}^{(k,r)} = (k+1)(r+1),
+$$</p>
+<p>the <strong>degree</strong> of the representation $\tau^{l\dot l}$. This is the number that the mass formula uses: because $l=k/2$ and $\dot l=r/2$, the degree is $(2l+1)(2\dot l+1)$, and $\mathrm{SL}(2,\mathbb{C})$ has representations of every degree.</p>
+<h3 id="the-two-schemes">The Two Schemes</h3>
+<p>The representations do not stand alone. $\tau^{l\dot l}$ and $\tau^{l'\dot l'}$ are <strong>interlocking</strong> when $l'=l\pm\frac12$, $\dot l'=\dot l\pm\frac12$, and the interlocking relations arrange all representations into three schemes: the <strong>Bose scheme</strong> of integer spin (the spin-0, spin-1, ... lines) and the <strong>Fermi scheme</strong> of half-integer spin (the spin-$\frac12$, spin-$\frac32$, ... lines), each an infinite grid of representations joined diagonally. A <strong>field of type $(l,\dot l)\oplus(\dot l,l)$</strong> is a field transforming in a representation and its conjugate; the wave equations of the next section are written for such fields and describe a particle of generalised spin</p>
+<p>$$
+s = |l-\dot l| .
+$$</p>
+<p>The usual spin is recovered only on the restriction $\tau^{l\dot l}\to\tau^{l,0}$ (or $\to\tau^{0,\dot l}$), that is, at $\mathrm{SU}(2)\subset\mathrm{SL}(2,\mathbb{C})$, where the spin values run over $-l,-l+1,\dots,l$.</p>
+<h2 id="the-wave-equations-and-the-determinant-argument">The Wave Equations and the Determinant Argument</h2>
+<p>The equations are written with a set of generators $\Lambda^{l\dot l}_j$ of the representation, one for each spatial direction, and read, for the field $\psi$ of the representation $\tau^{l\dot l}$,</p>
+<p>$$
+\Bigl(\Gamma^{0}p_0-\Gamma^{1}p_1-\Gamma^{2}p_2-\Gamma^{3}p_3\Bigr)\psi + m\psi = 0,
+\qquad\text{or}\qquad \Gamma(p)\psi = -m\psi,
+$$</p>
+<p>with $\Gamma(p)$ the momentum-contracted generator matrix. A nonzero solution requires</p>
+<p>$$
+D(p) = \det\bigl(\Gamma(p)+mE\bigr) = 0 .
+$$</p>
+<p>The determinant is a polynomial in $p_0,p_1,p_2,p_3$ and is constant on the transitivity surfaces of the Lorentz group, the hyperboloids $s^2(p)=p_0^2-p_1^2-p_2^2-p_3^2=\text{const}$, so it depends on $s^2$ alone and factors as</p>
+<p>$$
+\tilde D\bigl(s^2\bigr) = c\bigl(s^2-m_1^2\bigr)\bigl(s^2-m_2^2\bigr)\cdots\bigl(s^2-m_k^2\bigr).
+$$</p>
+<p>The equation has a solution exactly when $s^2=m_i^2$, so the roots $m_i$ are the masses the field can carry: a multi-mass field. Putting $\mathbf{p}=0$ makes $\Gamma(p)=p_0\Gamma^0$ and</p>
+<p>$$
+\det\bigl(p_0\Gamma^0+mE\bigr) = \tilde c\,\bigl(p_0-\mu_0\lambda_1\bigr)\bigl(p_0-\mu_0\lambda_2\bigr)\cdots,
+$$</p>
+<p>with $\lambda_i$ the eigenvalues of $\Gamma^0$ and $\mu_0$ a single mass scale. Comparing the two factorisations gives</p>
+<p>$$
+m_1 = \mu_0\lambda_1,\quad -m_1=\mu_0\lambda_2,\quad m_2=\mu_0\lambda_3=-\mu_0\lambda_4,\ \dots
+$$</p>
+<p>for the representations of type $\tau^{0,\dot l}$, and in the general case of $\tau^{l\dot l}$</p>
+<p>$$
+m_1 = \mu_0\lambda_1\dot\lambda_1,\qquad -m_1=\mu_0\lambda_2\dot\lambda_2,\qquad m_2=\mu_0\lambda_3\dot\lambda_3=-\mu_0\lambda_4\dot\lambda_4,\ \dots
+$$</p>
+<p>Each non-null eigenvalue $\lambda$ occurs with $-\lambda$ of the same multiplicity, so the masses come in $\pm$ pairs, and the physical masses are the positive $|\lambda_i\dot\lambda_i|$ times $\mu_0$. In the infinite-dimensional limit $l,\dot l\to\infty$ the formula degenerates to</p>
+<p>$$
+m^{(s)} = \mu_0\bigl(l+\tfrac12\bigr)\bigl(\dot l+\tfrac12\bigr),
+\qquad s=|l-\dot l| ,
+$$</p>
+<p>which is the companion mass formula; in degree form it is $m^{(s)}=\frac{\mu_0}{4}\deg\tau^{l\dot l}$. The present article's contribution is the equations and the chains; the companion's is the spectrum and the assignments, and the two are not repeated against each other.</p>
+<h2 id="the-bivector-space-r6">The Bivector Space R6</h2>
+<h3 id="the-metric-mapping">The Metric Mapping</h3>
+<p>Minkowski space and the space of bivectors are related by the algebraic mapping</p>
+<p>$$
+g_{ab} \longrightarrow g_{\alpha\beta\gamma\delta} \equiv g_{\alpha\gamma}g_{\beta\delta}-g_{\alpha\delta}g_{\beta\gamma},
+$$</p>
+<p>which sends the metric of $\mathbb{R}^{1,3}$ to a metric on the six-dimensional space of antisymmetric two-tensors. The programme's Minkowski metric is $\mathrm{diag}(-1,-1,-1,+1)$, and the printed bivector metric is</p>
+<p>$$
+g_{ab} = \mathrm{diag}(-1,-1,-1,+1,+1,+1),
+$$</p>
+<p>with the collective-index order</p>
+<p>$$
+23\to0,\qquad 10\to1,\qquad 20\to2,\qquad 30\to3,\qquad 31\to4,\qquad 12\to5 .
+$$</p>
+<p>The signature $(3,3)$ is the signature of the Lorentz group's parameter space: three directions belong to the boosts and three to the rotations, and the split is the split between the non-compact and the compact generators. The space is also isometric to $\mathbb{C}^3$, the three-dimensional complex space, which is why the programme calls it "a parameter space of the Lorentz group".</p>
+<p><strong>A convention issue, recorded.</strong> Evaluating the mapping componentwise for the printed index order under the corpus's conventions does not reproduce the printed diagonal. With $g=\mathrm{diag}(-1,-1,-1,+1)$ and the pairs $23,10,20,30,31,12$, the componentwise values are</p>
+<p>$$
+23\mapsto-1,\quad 10\mapsto+1,\quad 20\mapsto+1,\quad 30\mapsto-1,\quad 31\mapsto-1,\quad 12\mapsto+1,
+$$</p>
+<p>i.e. a diagonal $(-1,+1,+1,-1,-1,+1)$, while the printed metric is $(-1,-1,-1,+1,+1,+1)$: the two agree on the pairs $23$ and $12$ and differ on the four pairs that mix the timelike direction with a spacelike one. Either the printed metric uses a different index ordering or sign convention, or one of the two printed forms carries a slip. The $(3,3)$ signature is common to both; the component-by-component signs are not settled here and the article records the metric as <strong>transcribed, with this discrepancy flagged</strong> rather than silently reconciling it.</p>
+<h3 id="the-equations-in-r6">The equations in R6</h3>
+<p>Mapping the wave equations into $\mathbb{R}^6$ turns the four spacetime derivatives into the six bivector derivatives. With $\Lambda^{l\dot l}_j$ the generators, $a_j$ the three complex coordinates ($a_1,a_2,a_3$), $g_4=ia_1$, $g_5=ia_2$, $g_6=ia_3$ and $\tilde a_j$ the dual coordinates, the equations for the field and its conjugate become</p>
+<p>$$
+\sum_{j=1}^{3}\Bigl(\Lambda^{l}_j\otimes\mathbf{1}_{2\dot l+1}-\mathbf{1}_{2l+1}\otimes\Lambda^{\dot l}_j\Bigr)\frac{\partial\psi}{\partial a_j}
++i\sum_{j=1}^{3}\Bigl(\Lambda^{l}_j\otimes\mathbf{1}_{2\dot l+1}-\mathbf{1}_{2l+1}\otimes\Lambda^{\dot l}_j\Bigr)^{*}\frac{\partial\psi}{\partial a_j^{*}}+m\psi = 0,
+$$</p>
+<p>together with the conjugate equation for $\dot\psi$. The equations are defined in the three-dimensional complex space $\mathbb{C}^3$, which is isometric to $\mathbb{R}^6$; the generalised spin is $s=|l-\dot l|$ and the mass is $m$, exactly as in Minkowski space. The passage to $\mathbb{C}^3\cong\mathbb{R}^6$ is the programme's way of writing the spinor structure's own wave equations, and the structure of the equations — a difference of two tensor-product generators contracted with a derivative — is the structure that will become the Dirac equation's gamma matrices at the first chain member.</p>
+<h2 id="the-proton-chain-and-the-dirac-limit">The Proton Chain and the Dirac Limit</h2>
+<p>The chain that carries the nucleon is the spin-$\frac12$ line's Fermi-scheme chain</p>
+<p>$$
+\Bigl(\tfrac12,0\Bigr)\longleftrightarrow\Bigl(0,\tfrac12\Bigr)
+\ \longrightarrow\
+\Bigl(1,\tfrac12\Bigr)\longleftrightarrow\Bigl(\tfrac12,1\Bigr)
+\ \longrightarrow\ \cdots\ \longrightarrow\
+\Bigl(\tfrac{59}{2},29\Bigr)\longleftrightarrow\Bigl(29,\tfrac{59}{2}\Bigr)\ \longrightarrow\ \cdots
+$$</p>
+<p>The first member is the <strong>fundamental doublet</strong>: the representation $\tau^{\frac12,0}\oplus\tau^{0,\frac12}$, a linear superposition of the two spin states $\pm\frac12$, which is the <strong>electron</strong> and satisfies the Dirac equation</p>
+<p>$$
+\gamma^{\mu}\frac{\partial\psi}{\partial x^{\mu}}+m_e\psi = 0 .
+$$</p>
+<p>Mapping the Dirac equation into $\mathbb{R}^6$ gives generators $\Lambda^{1/2,0}_j$ and $\Lambda^{*\,0,1/2}_j$ whose explicit matrices — built from $\mathbf{1}$ and the companion $2\times2$ block — coincide with the <strong>Pauli matrices</strong> $\sigma_j$ when their normalisation constant takes the value $c_{\frac12,\frac12}=2$. This is the concrete way in which the algebra's first member is the Dirac equation's carrier, and it is the same statement the corpus makes in its Dirac–Hestenes and bispinor articles.</p>
+<p>The nucleon sits on the same chain, but far up it: the programme takes the chain member</p>
+<p>$$
+\tau^{\frac{59}{2},29}\oplus\tau^{29,\frac{59}{2}},
+\qquad\text{degree } 60\times59 = 3540,
+$$</p>
+<p>as the proton, because the mass ratio fixes it. The rule is the mass formula: normalising so that the electron's fundamental representation gives $m_e=\mu_0/2$, the ratio is</p>
+<p>$$
+\frac{m_p}{m_e} = \frac{(2l+1)(2\dot l+1)}{2},
+$$</p>
+<p>and $(59/2,29)$ gives $60\times59/2=1770$. The programme's own text states the condition as $(l+\frac12)(\dot l+\frac12)\approx1800$, which is loose by a factor two — $(l+\frac12)(\dot l+\frac12)=30\times29.5=885$ — and corresponds to the normalisation $m_e=\mu_0$ rather than the $m_e=\mu_0/2$ that its own ratios require (the same factor-two slip recorded in the companion article's context). In the correct normalisation $m_p/m_e=1770$, $3.6\%$ below the measured $1836$. The proton's wave equation in $\mathbb{R}^6$ is then the $3540$-component version of the equations above, with $\Lambda^{59/2,29}_j$ replacing $\Lambda^{1/2,0}_j$. The programme's reason for not keeping the electron's chain — that the chain $(\frac12,0)\leftrightarrow(0,\frac12)$ is algebraically too simple to describe the proton's internal structure — is recorded, and the replacement of the simple chain by the high member is recorded as a <strong>choice</strong>, not a derivation.</p>
+<h2 id="the-biquaternion-reading">The Biquaternion Reading</h2>
+<p>Three points connect this material to the framework, and only the first is an identification.</p>
+<p>First, the <strong>fundamental doublet's factor</strong> is the biquaternion algebra. The tensor product with $k$ factors of $\mathbb{C}^2$ and $r$ of $\bar{\mathbb{C}}^2$ begins at $k=r=1$, and $\mathbb{C}^2$ is the defining module of $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}\cong\mathbb{C l}_2\cong M_2(\mathbb{C})$. The chain of algebras the programme writes for the spin-0 line,</p>
+<p>$$
+\mathbb{C}_0\longrightarrow \mathbb{C}_2\otimes\bar{\mathbb{C}}_2\longrightarrow \mathbb{C}_2\otimes\bar{\mathbb{C}}_2\otimes\mathbb{C}_2\otimes\bar{\mathbb{C}}_2\longrightarrow\cdots,
+$$</p>
+<p>is thus a chain whose second member is the biquaternion algebra, and the first member is the centre. The corpus's <em>Higher Spin from Tensor Products</em> and <em>Clifford Structure of the Biquaternion Algebra</em> are the framework's statements of the same nesting; the present chain is the spinor-structure programme's version. One caution: the programme writes "$\mathbb{C}^2$ and complex conjugate $\bar{\mathbb{C}}^2$ are biquaternion algebras", which conflates the algebra with its module. $\mathbb{C}^2$ is the two-dimensional complex vector space on which $\mathbb{B}\cong M_2(\mathbb{C})$ acts; the algebra is the matrix algebra, and the tensor products of the chain are tensor products of <strong>modules</strong> until an algebra structure is imposed. The article keeps the distinction.</p>
+<p>Second, the <strong>bivector space</strong> is the corpus's field-strength space. The six-dimensional space of antisymmetric two-tensors is, under the Hodge decomposition, the pair of a vector and an axial vector, and in the corpus's notation it is the field-strength biquaternion $\mathbf{E}+i\mathbf{B}$ with six real components. The mapping $g_{ab}\to g_{\alpha\beta\gamma\delta}$ is the metric structure the corpus's <em>Field-Strength Biquaternion and Its Invariants</em> meets when it classifies a field by its two invariants; and the programme's $\mathbb{C}^3\cong\mathbb{R}^6$ is the complex form in which the corpus's $\mathbf{B}$ and $\mathbf{E}$ are two vectors of one complex space. This is a genuine agreement of objects, and the article records it as one.</p>
+<p>Third, the <strong>equations</strong> themselves are the corpus's Dirac-Maxwell package in the programme's form. The Dirac limit's generators reduce to the Pauli matrices; the massless limit of the equations is the Maxwell field in spinor form, which is the content of the corpus's <em>Bispinor Fields</em> and <em>Dirac–Hestenes</em> articles. The higher chain members are the multi-mass generalisations, and they lie outside $\mathbb{B}$ exactly as the companion articles say.</p>
+<h2 id="what-the-framework-establishes-transcribes-and-does-not">What the Framework Establishes, Transcribes, and Does Not</h2>
+<p><strong>Established, and recomputed.</strong></p>
+<ul>
+<li>The spintensor degree $\dim\mathrm{Sym}^{(k,r)}=(k+1)(r+1)$ equals the representation degree $(2l+1)(2\dot l+1)$ at $l=k/2$, $\dot l=r/2$; for the proton's chain member $60\times59=3540$. Confirmed in the companion verification.</li>
+<li>The determinant factorisation $D(p)=\tilde D(s^2)$, the relation $m_i=\mu_0\lambda_i$ (and $m_i=\mu_0\lambda_i\dot\lambda_i$ for $\tau^{l\dot l}$), and the $\pm$ pairing of the eigenvalues of $\Gamma^0$; reproduced in outline.</li>
+<li>The bivector metric's $(3,3)$ signature, matching the six-dimensional Lorentz parameter space's boost/rotation split.</li>
+<li>The Dirac-limit generators reducing to the Pauli matrices at $c_{\frac12,\frac12}=2$; reproduced from the printed matrices.</li>
+</ul>
+<p><strong>Transcribed, not derived.</strong></p>
+<ul>
+<li>The wave equations in Minkowski space and their images in $\mathbb{R}^6\cong\mathbb{C}^3$.</li>
+<li>The interlocking schemes and the assignment of the proton to the chain member $(59/2,29)$.</li>
+<li>The printed bivector metric and its index order.</li>
+</ul>
+<p><strong>Gap, left visible.</strong></p>
+<ul>
+<li>The printed bivector metric is not reproduced componentwise by the stated mapping; recorded as a discrepancy, not resolved.</li>
+<li>The passage from the abstract chain to a physical particle remains a choice fixed by the mass ratio.</li>
+<li>The infinite-dimensional limit is used to state the mass formula, while the chains used are finite-dimensional; the same weakness as the companion mass article.</li>
+<li>The Dirac–Maxwell relation is cited as known and not re-derived here; the corpus has its own versions.</li>
+</ul>
+<h2 id="open-questions">Open Questions</h2>
+<ol>
+<li>
+<p><strong>The bivector metric.</strong> Is the printed $\mathrm{diag}(-1,-1,-1,+1,+1,+1)$ the componentwise image of the Minkowski metric under some other index order or sign convention, or is it a slip? The question is small but it decides whether the bivector-space equations can be written in the corpus's own conventions without a patch.</p>
+</li>
+<li>
+<p><strong>$\mathbb{C}^3$ versus $\mathbb{R}^6$ in the corpus's hands.</strong> The corpus's field-strength biquaternion is a $\mathbb{C}^3$-valued object; the programme's bivector space is $\mathbb{R}^6$. Are the two complex structures the same — the central imaginary unit $i$ of the corpus and the $i$ of $\mathbb{C}^3$?</p>
+</li>
+<li>
+<p><strong>Does the chain of algebras carry the mass spectrum?</strong> The companion mass article orders a spin line by degree; the present chain orders the same line by algebra. Is the chain's algebra sequence ($\mathbb{C}_2, \mathbb{C}_2\otimes\bar{\mathbb{C}}_2,\dots$) the object that fixes which chain members are physical?</p>
+</li>
+<li>
+<p><strong>The multi-mass sector.</strong> The equations have several roots, only the leading one of which is used. Are the subleading masses physical — further particles on the same chain — and does the corpus have a reading for them?</p>
+</li>
+<li>
+<p><strong>The Maxwell–Dirac package.</strong> The corpus's <em>Bispinor Fields</em> article derives the Maxwell–Dirac solution in the corpus's form. Does the programme's massless limit coincide with it exactly, including the conventions of the axial current?</p>
+</li>
+</ol>
+<h2 id="summary">Summary</h2>
+<p>The Bhabha–Gel'fand–Yaglom wave equations place a field in an arbitrary Lorentz representation $\tau^{l\dot l}$, carried by coefficients of symmetric spintensors of degree $(k+1)(r+1)=(2l+1)(2\dot l+1)$, and give it a matrix mass whose determinant factors in $s^2=p^2$ with roots $m_i=\mu_0\lambda_i\dot\lambda_i$. The representations are organised into interlocking chains — the Bose and Fermi schemes — and the fields of type $(l,\dot l)\oplus(\dot l,l)$ carry generalised spin $s=|l-\dot l|$. The equations can be mapped into the six-dimensional bivector space $\mathbb{R}^6\cong\mathbb{C}^3$, whose metric and index order are transcribed and whose printed form is not fully reproduced by the stated mapping. The first chain member is the electron's Dirac doublet, whose $\mathbb{R}^6$ generators reduce to the Pauli matrices at normalisation $c=2$; the nucleon is taken at the chain member $(59/2,29)$ of degree $3540$.</p>
+<p>The framework's relation to this is the fundamental doublet's factor: $\mathbb{C}^2$ is the defining module of the biquaternion algebra, the bivector space is the corpus's field-strength space, and the equations' massless limit is the corpus's spinor Maxwell field. The higher chain members lie outside $\mathbb{B}$, and the physical assignments are choices fixed by the mass ratio.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$s_{\alpha_1\dots\alpha_k\dot\alpha_1\dots\dot\alpha_r}$</td>
+<td>Spintensor of the representation $\tau^{l\dot l}$</td>
+</tr>
+<tr>
+<td>$l=k/2$, $\dot l=r/2$</td>
+<td>Lorentz labels from the numbers of undotted/dotted indices</td>
+</tr>
+<tr>
+<td>$\dim\mathrm{Sym}^{(k,r)}=(k+1)(r+1)$</td>
+<td>Degree of the representation</td>
+</tr>
+<tr>
+<td>$s=\lvert l-\dot l\rvert$</td>
+<td>Generalised spin of the field type $(l,\dot l)\oplus(\dot l,l)$</td>
+</tr>
+<tr>
+<td>$\Gamma(p)$, $\Gamma^{0}$</td>
+<td>Momentum-contracted generator matrix and its time part</td>
+</tr>
+<tr>
+<td>$D(p)=\det(\Gamma(p)+mE)$</td>
+<td>Determinant whose roots are the masses</td>
+</tr>
+<tr>
+<td>$m_i=\mu_0\lambda_i\dot\lambda_i$</td>
+<td>Masses from the eigenvalues of $\Gamma^0$</td>
+</tr>
+<tr>
+<td>$g_{ab}$, collective order $23,10,20,30,31,12$</td>
+<td>Bivector-space metric and index order</td>
+</tr>
+<tr>
+<td>$\mathbb{C}^3\cong\mathbb{R}^6$</td>
+<td>Complex form of the bivector space, Lorentz parameter space</td>
+</tr>
+<tr>
+<td>$(59/2,29)$, degree $3540$</td>
+<td>The proton's chain member</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>H. J. Bhabha, "Relativistic wave equations for the elementary particles," <em>Reviews of Modern Physics</em> <strong>17</strong> (1945) 200–216, for the finite-dimensional relativistic wave equations and their multi-mass spectra.</li>
+<li>I. M. Gel'fand and A. M. Yaglom, "General relativistic-invariant equations with a mass spectrum," <em>Zhurnal Eksperimentalnoi i Teoreticheskoi Fiziki</em> <strong>18</strong> (1948) 703–733, for the general theory of the equations with a mass spectrum.</li>
+<li>E. Majorana, "Teoria relativistica di particelle con momento intrinseco arbitrario," <em>Nuovo Cimento</em> <strong>9</strong> (1932) 335–344, for the infinite-component equation.</li>
+<li>I. M. Gel'fand, R. A. Minlos and Z. Ya. Shapiro, <em>Representations of the Rotation and Lorentz Groups and Their Applications</em> (Pergamon, 1963), for the representations, the spintensors and the interlocking schemes.</li>
+<li>R. Penrose and W. Rindler, <em>Spinors and Space-Time</em>, vol. 1 (Cambridge, 1984), for the van der Waerden two-spinor formalism by which a Minkowski vector is a pair of conjugate spinors.</li>
+<li>A. Z. Petrov, <em>Einstein Spaces</em> (Pergamon, 1969), for the mapping of the curvature tensor into $\mathbb{R}^6$ and the classification of Einstein spaces.</li>
+<li>V. V. Varlamov, "Spinor Structure and Internal Symmetries," <em>International Journal of Theoretical Physics</em> <strong>54</strong> (2015) 3533–3576 (arXiv:1409.1400), for the wave equations, the chains and the bivector-space reduction recorded here.</li>
+<li>Companion articles: <em>The Spin–Mass Formula and the Spectrum of Elementary Particles in Biquaternionic Form</em>; <em>The Spin–Charge Hilbert Space and the SU(3) Supermultiplets in Biquaternionic Form</em>; <em>Bhabha Scattering in Biquaternionic Form</em>; <em>The Field-Strength Biquaternion and Its Invariants</em>; <em>The Dirac–Hestenes Equation and Spacetime Algebra in Biquaternionic Form</em>; <em>Bispinor Fields and the Fundamental Solution of the Generalized Maxwell–Dirac Equation</em>.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

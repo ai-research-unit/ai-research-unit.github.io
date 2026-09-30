@@ -309,6 +309,9 @@ the Biot–Savart law (the sign is the standard one, with $\hat{\mathbf{R}}$ poi
 <li>
 <p><strong>The far-zone fall-off.</strong> For a localized source, show from the retarded potential alone that the radiated part of the field falls as $1/R$ while the bound part falls as $1/R^2$, without introducing a moving charge. This isolates the light-cone structure of the kernel from the worldline kinematics.</p>
 </li>
+<li>
+<p><strong>The chiral kernel, which is not this kernel.</strong> For the Drude–Born–Fedorov chiral medium the reduction of the medium article <em>A Chiral Medium: One Quaternionic Equation</em> gives the quaternionic operator $M=\beta\sqrt{\epsilon\mu}\,\partial_tD+\sqrt{\epsilon\mu}\,\partial_t-iD$, whose fundamental solution is causal but is <strong>not</strong> obtained from $G_\Box$ by substitution. $M$ is of <em>second</em> order in the derivatives — the term $\partial_tD$ is what raises it above the first-order non-chiral reduction — and $MM^{*}$ is fourth order, so its kernel is neither the delta-on-the-cone $G_\Box$ of this exercise nor the parent's unverified first-order $\tilde G_{\mathrm{ret}}$: it is a third kind of object, and one the corpus can actually construct, since Kravchenko's $K_\alpha$ is the worked example of a first-order quaternionic kernel with a radiation condition. At each fixed frequency the symbol factors as $i(\beta\sqrt{\epsilon\mu}\,\omega-1)(D+\alpha(\omega))$, so the kernel is built from $K_{\alpha(\omega)}$; but the prefactor degenerates at $\omega=c/\beta$, where the transform carries a <strong>double</strong> pole together with an essential singularity through $\exp(ic(\mathbf{x})/(\omega-a))$, and the causal kernel is a Heaviside function times a series rather than a delta on the cone. Determine how far the light-cone support of this exercise survives when $\beta\neq0$, and whether it is restored in the limit $\beta\to0$ together with the one-parameter family. This separates the part of the retarded structure that belongs to the quaternionic first-order operator from the part that belongs to the second-order wave operator.</p>
+</li>
 </ol>
 <h2 id="summary">Summary</h2>
 <p>The wave operator of the biquaternionic formulation, $\Box = \partial_{ict}^2 + \Delta = \Delta - c^{-2}\partial_t^2$, has the retarded Green's function
@@ -445,7 +448,7 @@ with all sources at the retarded time $t - R/c$; the retarded solution is automa
 <li><em>The Lorentz Transformation as a Biquaternionic Rotation</em> — the covariance of the four-potential, inherited here unchanged.</li>
 <li><em>Radiation from Accelerated Charges in Biquaternionic Form</em> — the companion that states (but does not derive) the retarded kernel and convolution and specializes them to a point charge, with the worldline Jacobian of Problem 4(b).</li>
 <li><em>The Feynman Propagator in Biquaternionic Form</em> — the causal contour prescription and the relation among the Feynman, retarded, and advanced kernels (Problems 2(c) and 3).</li>
-<li><em>Electromagnetism in Media — The Local Complex Structure at Work</em> — the medium speed $c = 1/\sqrt{\epsilon\mu}$ and the non-dispersive setting assumed throughout.</li>
+<li><em>Electromagnetism in Media — The Local Complex Structure at Work</em> — the medium speed $c = 1/\sqrt{\epsilon\mu}$ and the non-dispersive setting assumed throughout; its section <em>A Chiral Medium: One Quaternionic Equation</em> is the source of Further Problem 6.</li>
 <li><em>Biquaternion Integration</em> and <em>Biquaternion Analysis on Subspaces</em> — the elliptic Cauchy kernel and the Euclidean counterpart of the retarded kernel, related by the Wick rotation.</li>
 </ul>
       </div>

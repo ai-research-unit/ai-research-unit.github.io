@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Matter Makes Space — An External Construction from Quaternionic Spinors — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="matter-makes-space-an-external-construction-from-quaternionic-spinors"><strong>Matter Makes Space — An External Construction from Quaternionic Spinors</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The corpus meets the quaternion algebra from inside its own programme: the algebra is chosen, the physical readings are made afterwards, and every claim is a claim about what follows from the choice. This article records a source that arrives from the opposite direction. Its author is not working in the biquaternion programme and does not use the corpus's conventions; he takes a <strong>bi-quaternionic spinor</strong> as the primary object and reports that the tetrad, the torsion and the contorsion are all bilinear composites of it, so that the spacetime metric is <em>precipitated by the spinor</em> rather than assumed. The paper is Julian G. B. Northey, "Matter Makes Space: Unifying Dirac and Einstein–Cartan through Quaternionic Spinors", <em>International Journal of Quantum Foundations</em> <strong>11</strong> (2025) 444–469.</p>
+<p>The source is ambitious and its ambitions overlap the corpus's gaps: a single action from which the Dirac, Einstein–Cartan and spin–torsion equations are said to follow; an intrinsic arrow of time from the spinor's phase; a torsion-induced quantum potential; and a conserved torsion entropy current. It also reaches into material the corpus has no equivalent of at all — Kozyrev's causal time, a torsion Bohm potential, torsion waves, and three proposed experiments with numerical sensitivities.</p>
+<p>The article has one job, and it is deliberately narrow and unsympathetic. It records the construction, and it tests every display that can be tested by recomputation. The result is a mixed one. Several of the source's displays <strong>do not reproduce</strong>, and two failures are structural rather than typographical: the composite tetrad vanishes identically on every plane-wave spinor, which is to say on the free Dirac solutions it is meant to describe, and the torsion defined by the source's own Eq. (5) is identically zero whenever either of its antisymmetric indices is the time index, while the Einstein–Cartan matching object the same section equates it to is not. A third structural failure is arithmetic: the source's Fierz identity is off by the factor $i$ and holds only after antisymmetrisation, which its derivation does not perform.</p>
+<p>Nothing here endorses the source's programme, and nothing here uses it as evidence for the corpus's. One paper that finds the algebra natural shows that the algebra <em>can</em> be found, not that it must be. The corpus's own position is stated in <em>Curved Spacetime and the Biquaternion Framework</em> and in <em>Torsion, Contorsion and the Spin Connection in Biquaternionic Form</em>: the algebra can <strong>carry</strong> the frame and the connection, and it <strong>generates</strong> neither. The source's programme is exactly the step the corpus declines to take — geometry generated by matter — and this article's job is to say precisely how far the step can be taken before it fails.</p>
+<p><strong>Conventions.</strong> The source's conventions are its own and are quoted as printed; where the corpus's conventions are needed they are stated explicitly. The corpus's biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_0 = 1, e_1, e_2, e_3$, $e_k^2 = -e_0$, $e_1e_2 = e_3$, and central scalar imaginary $i$. The source writes its quaternion units as $q^\mu$ and its quaternion-embedded gammas as a $4\times4$ block matrix; its spinor $\Psi$ is a "bi-quaternion" and its $\bar\Psi$ is the Dirac adjoint, as its Appendix B confirms. Where a check is done in the corpus's gamma conventions, these are $\gamma^0$ the timelike generator, $\gamma_5 = i\gamma^0\gamma^1\gamma^2\gamma^3$, signature $(+,-,-,-)$, and $\sigma^{\mu\nu} = \tfrac{i}{2}[\gamma^\mu,\gamma^\nu]$. The source's own $\gamma^{\mu\nu}$ is $\tfrac12[\gamma^\mu,\gamma^\nu]$ without the $i$, and that difference matters below.</p>
+<hr />
+<h2 id="the-sources-aims">The Source's Aims</h2>
+<p>The paper's plan is stated in its Section I: Dirac spinors are taken as bi-quaternionic fields, spacetime geometry is taken as emergent from them, and both are to follow from a single variational principle. Its announced results are a composite tetrad and contorsion built from spinor bilinears, a torsion that is the "spin-squared of quaternionic commutators", a constrained action with Lagrange multipliers, an intrinsic time from the spinor phase, torsion-wave solutions carrying an entropy current, and three experimental predictions.</p>
+<p>The corpus is not the intended audience, and the source does not engage with it. The overlap is structural: the source's "$q^\mu$" are the corpus's algebra generators, its bi-quaternionic spinor is the corpus's complex spinor, and its programme is the corpus's agenda question — whether the algebra or the matter field can generate geometry — answered in the affirmative. Whether the answer survives recomputation is what this article establishes, and in the two places that matter most it does not.</p>
+<h2 id="the-sources-algebra-and-four-displays-that-do-not-reproduce">The Source's Algebra, and Four Displays That Do Not Reproduce</h2>
+<p>The source builds a gamma representation out of quaternions in its Section 2. With the quaternion units $q^0 = 1$, $q^k = -i\sigma^k$ it prints $\gamma^0$ as the off-diagonal unit block and $\gamma^k$ as the off-diagonal blocks built from $q^k$,</p>
+<p>$$
+\gamma^0 = \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix} ,
+\qquad
+\gamma^k = \begin{pmatrix} 0 & q^k \\ -q^k & 0 \end{pmatrix} ,
+$$</p>
+<p>where the entries of the first display stand for $2\times2$ blocks, and asserts that the Clifford algebra $\{\gamma^\mu,\gamma^\nu\} = 2\eta^{\mu\nu}$ follows. Four displays in that section and the next do not reproduce under recomputation.</p>
+<p><strong>The gamma map is off by the factor $i$.</strong> With $q^k = -i\sigma^k$ and the printed signs, squaring the printed $\gamma^k$ gives $+I_4$, that is $\{\gamma^i,\gamma^j\} = +2\delta^{ij}$, which is the <em>negative</em> of the convention the source itself displays one page later. Putting $+q^k$ in the lower block instead gives $-I_4$. The block map is therefore not a Clifford map for the $q^k$ the source defines; the consistent choice for that $q^k$ is the sign the source does not print.</p>
+<p><strong>The trace normalisation contradicts the embedding.</strong> The source's Appendix A.5 fixes the normalisation by $\mathrm{Tr}_{\mathbb H}(q^\mu q^\nu) = 2\delta^{\mu\nu}$. With $q^k = -i\sigma^k$ the computed values are $+2$ for the time–time entry and $-2$ for the three spatial ones, so $\mathrm{Tr}_{\mathbb H}(q^\mu q^\nu) = 2\eta^{\mu\nu}$, not $2\delta^{\mu\nu}$. The printed $2\delta^{\mu\nu}$ is the normalisation of $q^k = +\sigma^k$, not of the $q^k$ the same section defines. This is the seed of a second inconsistency, in the Fierz identity below.</p>
+<p><strong>The completeness relation is over a four-element basis, not sixteen.</strong> The source's Eq. (2) expands $\sum_A q^A\otimes q_A = 1\otimes 1 + \tfrac12\sum_\mu q^\mu\otimes q_\mu + \tfrac{1}{2!}\sum_{\mu<\nu} q^{\mu\nu}\otimes q_{\mu\nu} + \cdots$, with the comment that the coefficient $\tfrac12$ ensures $\mathrm{Tr}_{\mathbb H}(q^\mu q^\nu) = 2\delta^{\mu\nu}$. The listed elements, however, are the four quaternion units and their products: for the units, $[q^0,q^i] = 0$ for all three spatial $i$, and $[q^i,q^j]$ is parallel to $q^k$. So $q^{0i} = 0$ and the $q^{ij}$ add no new directions; the list spans <strong>four</strong> independent elements of $\mathbb H_{\mathbb C}$, not the sixteen of the Clifford basis $\{1,\gamma_5,\gamma^\mu,\gamma_5\gamma^\mu,\gamma^{\mu\nu}\}$ that its own Appendix B.1 uses. The ellipsis is doing the work of an unstated doubling.</p>
+<p><strong>The Fierz identity has the wrong coefficient and the wrong argument structure.</strong> The source's Eq. (3),</p>
+<p>$$
+(\bar\Psi\Phi)(\bar\Phi\Psi) = \tfrac14 \sum_A \mathrm{Re}\bigl(\bar\Psi q^A\Psi\bigr)\, \mathrm{Re}\bigl(\bar\Phi q_A\Phi\bigr) , \qquad q_A \in \{1, q^\mu, q^{\mu\nu}, \dots\} ,
+$$</p>
+<p>with "the coefficient $\tfrac14$ derives from $\mathrm{Tr}_{\mathbb H}(q^Aq_A) = 2$", was checked here on 100 random real-quaternion pairs. With the four units $\{1,i,j,k\}$ and the same-argument bilinears the source uses, the coefficient that reproduces the left-hand side is <strong>one</strong>, not $\tfrac14$; the printed coefficient leaves a residual of order 3, and the identity is exact only with coefficient 1:</p>
+<p>$$
+(\bar\Psi\Phi)(\bar\Phi\Psi) = \sum_{A\in\{1,i,j,k\}} \mathrm{Re}\bigl(\bar\Psi q_A\Psi\bigr)\, \mathrm{Re}\bigl(\bar\Phi q_A\Phi\bigr) .
+$$</p>
+<p>In the alternative complex $2\times2$ reading with the basis $\{1,\sigma_k\}$ the coefficient is $\tfrac12$. Neither is $\tfrac14$. The $\tfrac14$ is the correct coefficient for the sixteen-element Clifford basis, which is exactly how it appears again in the source's Appendix B, Eq. (25) — so the paper uses the same $\tfrac14$ with two different bases, and the stated reason $\mathrm{Tr}_{\mathbb H}(q^Aq_A) = 2$ delivers $\tfrac12$, not $\tfrac14$. This is a normalisation inconsistency rather than a physics claim, but it means the source's Eqs. (2) and (3) cannot be used together with its Appendix A.5, and any computation in the paper that routes through them inherits the mismatch.</p>
+<h2 id="the-composite-geometry-and-the-constrained-action">The Composite Geometry and the Constrained Action</h2>
+<p>The heart of the construction is the source's Section 4. With $\kappa \equiv 8\pi G$ the source defines three bilinear composites,</p>
+<p>$$
+e^a{}_\mu = \kappa^{-1}\,\mathrm{ReTr}_{\text{spinor}}\bigl(\bar\Psi\gamma^a\partial_\mu\Psi\bigr) ,
+$$</p>
+<p>$$
+T^\rho{}_{\mu\nu} = \kappa\,\mathrm{ReTr}_{\text{spinor}}\bigl(\bar\Psi\,\tfrac12[q_\mu,q_\nu]\,q^\rho\,\Psi\bigr) ,
+$$</p>
+<p>$$
+K^{ab}{}_\mu = \kappa\,\mathrm{ReTr}_{\text{spinor}}\bigl(\bar\Psi\,\gamma^{[a}\gamma^{b]}\,\partial_\mu\Psi\bigr) ,
+$$</p>
+<p>and identifies them with the tetrad, the torsion tensor and the contorsion. It then matches them to the standard Einstein–Cartan–Sciama–Kibble objects by $T^\rho{}_{\mu\nu} = \kappa\sigma^\rho{}_{\mu\nu}$ with $\sigma^\rho{}_{\mu\nu} \equiv \bar\Psi\gamma^{[\rho}\gamma_\mu\gamma_{\nu]}\Psi$, and states that the contorsion–torsion relation is "automatically satisfied via Fierz identities".</p>
+<p><strong>The consistency checks are tautologies or false.</strong> The three checks offered for Eqs. (4)–(6) do not test the construction. Check 1, that $T^\rho{}_{\mu\nu}$ is antisymmetric in $\mu,\nu$, follows from the antisymmetry of the commutator and uses neither the spinor nor the trace. Check 2 writes $\mathrm{ReTr}_{\text{spinor}}(\bar\Psi\tfrac12(q_\mu q_\nu + q_\nu q_\mu)q^\rho\Psi) = 0$ and concludes $T^\rho{}_{(\mu\nu)} = 0$; but for $\mu \ne \nu$ the anticommutator vanishes identically and the equation is empty, while for $\mu = \nu$ the anticommutator is $-2$, so the displayed expression is $-2\,\mathrm{ReTr}_{\text{spinor}}(\bar\Psi q^\rho\Psi)$, the vector current, which is generally nonzero. The identity as printed is false, and in any case $T^\rho{}_{(\mu\nu)}$ is not defined, since $T$ is built from the commutator alone. Check 3 is a single component with a proportionality sign.</p>
+<p><strong>The printed contorsion–torsion relation has the wrong index order.</strong> The source prints $K^{ab}{}_\mu = \tfrac12 T_{\mu ab} - T_{ab\mu} + T_{ba\mu}$ (the grouping is the source's). The relation that is exact for a totally antisymmetric torsion is $K_{\mu ab} = \tfrac12(T_{\mu ab} - T_{ab\mu} + T_{b\mu a})$, the third term with the order $b\mu a$. With total antisymmetry, $T_{ba\mu} = -T_{b\mu a}$, so the printed relation has the sign of its third term reversed; the error was checked and is nonzero even in the totally antisymmetric case the source uses.</p>
+<p><strong>The composite tetrad vanishes on the free Dirac solutions.</strong> This is the decisive failure of the section. For a plane wave $\Psi = u\,e^{ik\cdot x}$ with constant $u$, the derivative gives $\partial_\mu\Psi = ik_\mu\Psi$, so</p>
+<p>$$
+e^a{}_\mu = \kappa^{-1}\mathrm{ReTr}_{\text{spinor}}\bigl(\bar u\,\gamma^a u\bigr)\,i k_\mu = \kappa^{-1}k_\mu\,\mathrm{Re}\bigl(i\,\bar u\gamma^a u\bigr) .
+$$</p>
+<p>The vector current $\bar u\gamma^a u$ is real for any Dirac spinor, so its real part times $i$ vanishes identically. The composite tetrad is therefore <strong>zero</strong> for every plane-wave spinor, verified here to $8\times 10^{-17}$ on four independent spinors, and the induced metric $g_{\mu\nu} = \eta_{ab}e^a{}_\mu e^b{}_\nu$ is the zero metric. The construction does not merely fail to be a tetrad — it assigns no geometry at all to the free Dirac field, which is the only field the paper's action contains before the constraints are imposed. No check in the paper detects this, and Section 4.2's "Example verification" does not evaluate Eq. (4).</p>
+<p><strong>The defined torsion has no time–space components.</strong> The source's $T^\rho{}_{\mu\nu}$ is built from $\tfrac12[q_\mu,q_\nu]$, and $[q_0,q_i] = 0$ for the units, so $T^\rho{}_{0i} = 0$ for every spinor, verified here at residual exactly zero on 100 random spinors. A third of the torsion components are identically zero. The object the same section matches it to, $\sigma^\rho{}_{\mu\nu} = \bar\Psi\gamma^{[\rho}\gamma_\mu\gamma_{\nu]}\Psi$, is <em>totally antisymmetric</em> and has exactly those components nonzero. So Eq. (5) and the Einstein–Cartan matching of Section 4.4 contradict each other, and it is the matching that carries the claim that the source reproduces Einstein–Cartan.</p>
+<p><strong>The couplings do not close dimensionally.</strong> The source gives the tetrad a factor $\kappa^{-1}$ and the contorsion a factor $\kappa$ while setting both couplings to the same $\kappa = 8\pi G$. With the canonical dimension $[\Psi] = M^{3/2}$ and $[G] = M^{-2}$, the tetrad composite has dimension $M^6$ where a tetrad must be dimensionless, and the contorsion composite has dimension $M^2$ where a contorsion must have dimension $M$. Equivalently, only one assignment of powers can be right and the source uses two.</p>
+<p><strong>The constrained action does not constrain.</strong> The master action of Section 5,</p>
+<p>$$
+S = \int d^4x\, e\left[\frac{1}{2\kappa}e^a{}_\mu e^b{}_\nu R^{\mu\nu}{}_{ab}(e,K) + \bar\Psi\bigl(i\gamma^a e^a{}_\mu D_\mu(e,K)\Psi - m\bar\Psi\Psi\bigr) + L_{\text{constr}}\right] ,
+$$</p>
+<p>adds the constraint Lagrangian</p>
+<p>$$
+L_{\text{constr}} = \lambda^a{}_\mu\bigl(e^a{}_\mu - e^a{}_\mu[\Psi]\bigr) + \Lambda^{ab}{}_\mu\bigl(K_\mu{}^{ab} - K_\mu{}^{ab}[\Psi]\bigr) ,
+$$</p>
+<p>with the composite expressions of Section 4 on the right. Variation with respect to the multipliers returns $e = e[\Psi]$ and $K = K[\Psi]$, which the source describes as enforcing "our composite ansätze once and for all". But those equations are the <em>definitions</em> of $e[\Psi]$ and $K[\Psi]$; a "constraint" that repeats a definition removes no degree of freedom, and substituting it back into the action replaces the tetrad by a first derivative of the spinor, making the gravitational term higher-derivative in $\Psi$ rather than giving the Palatini system the source claims. The multipliers are then not eliminated: the metric variation carries</p>
+<p>$$
+G_{\mu a} = 2\kappa\bigl(T_{\mu a} - \lambda_{a\mu}\bigr)
+$$</p>
+<p>in the source's own notation, which is a factor $2\kappa = 16\pi G$ rather than $8\pi G$ unless $\lambda$ vanishes. The source says that "when constraints hold, $\lambda^a{}_\mu$ becomes auxiliary and we recover $G_{\mu\nu} = 8\pi G T_{\mu\nu}$", but the constraint on $e$ does not force $\lambda = 0$; the vanishing of the multiplier is asserted and not derived. Einstein's equation therefore does not follow from the claimed action in the form printed.</p>
+<h2 id="the-teleparallel-sector">The Teleparallel Sector</h2>
+<p>Section 9.1 adds a Lagrange multiplier $\Theta^{ab}{}_{\mu\nu}$ enforcing $R^{ab}{}_{\mu\nu}(\omega) = 0$, so that the geometry is teleparallel, and identifies the Weitzenböck gauge $\omega^{ab}{}_\mu = 0$ with the contorsion given by minus the Levi-Civita spin connection of the tetrad, $K^{ab}{}_\mu = -\omega^{ab}{}_\mu(e)$. Both statements of geometry are correct and standard: the Weitzenböck connection $\Gamma^\lambda{}_{\mu\nu} = e_a{}^\lambda\partial_\mu e^a{}_\nu$ is curvature-free by construction, and the teleparallel gauge is the one in which the whole connection is contorsion. Both were verified independently for this corpus in <em>Torsion, Contorsion and the Spin Connection in Biquaternionic Form</em>, where the vanishing of the curvature and the non-vanishing of the torsion were checked exactly.</p>
+<p>What is <em>not</em> correct is what the source puts into that identity. The contrapositive of the teleparallel gauge condition is that the contorsion — hence, through Eq. (6), the spinor bilinear $\kappa\,\mathrm{ReTr}_{\text{spinor}}(\bar\Psi\gamma^{[a}\gamma^{b]}\partial_\mu\Psi)$ — must equal $-\omega^{ab}{}_\mu(e)$ of the <em>composite</em> tetrad. That is an over-determined differential equation on $\Psi$, not a consequence of anything, since the composite tetrad of Eq. (4) vanishes on the free solutions and takes no values at all in the case where the constraint is to be imposed. The teleparallel section therefore rests on the same composite that fails above.</p>
+<h2 id="kozyrevs-causal-time">Kozyrev's Causal Time</h2>
+<p>Section 9.2 embeds Kozyrev's "time current" as the quaternionic phase of the spinor, defining $\tau(x) = \mathrm{Arg}_{\mathbb H}\Psi(x)$ and giving its gradient as</p>
+<p>$$
+\partial_\mu\tau = \frac{1}{\mathrm{Re}\bigl(\bar\Psi\Psi\bigr)}\,\mathrm{Re}\bigl(\bar\Psi\,q^5 q_\mu\Psi\bigr) ,
+$$</p>
+<p>with $q^5$ described as "the 'imaginary' unit in $\mathbb{H}$ that anticommutes with $q^\mu$". That description cannot be right, and the failure is complete rather than partial. In the quaternion units the product $q^5 = ijk$ is the real scalar $-1$, verified here directly; it is <strong>central</strong>, commuting with every $q^\mu$ and with everything else, and it is not a unit imaginary at all. There is no element of $\mathbb{H}$ that anticommutes with all four $q^\mu$, because every quaternion commutes with $q^0 = 1$. Substituting $q^5 = -1$ into the displayed gradient gives</p>
+<p>$$
+\partial_\mu\tau = -\,\frac{\mathrm{Re}\bigl(\bar\Psi q_\mu\Psi\bigr)}{\mathrm{Re}\bigl(\bar\Psi\Psi\bigr)} ,
+$$</p>
+<p>whose time component is $\partial_0\tau = -1$ <strong>identically</strong>, for every spinor: the first component of the "time gradient" is a constant and carries no information about the field. The spatial components are the vector current divided by the scalar density, a genuine vector but not the gradient of any phase. The Madelung-type relation the source needs — the gradient of a phase given by an axial-vector-to-density ratio — is not what its formula produces, so the intrinsic time field $\tau = \mathrm{Arg}_{\mathbb H}\Psi$ is not recovered, and the claim that causal asymmetry is realised "intrinsically, without new fields" has no support.</p>
+<p>The rest of that section is the retarded kernel $K(x-y) = \ell_c^{-2}\Theta(x^0-y^0)\Delta_m(x-y)$ and the bilocal action $\Delta S_K = \tfrac12\int d^4x\,d^4y\,\partial_\mu\tau(x)K(x-y)\partial^\mu\tau(y)$. The kernel is the standard retarded Green's function combination; the source itself notes that its Lorentz invariance holds "modulo frame choice for $\Theta$", which is the standard qualification, and since $\tau$ is not the field claimed, the construction adds nothing testable. The source's own "Caveat" names Kozyrev's claims as "controversial and largely unreplicated", and records the obstacles; the article here records that the corpus's route to causal asymmetry (<em>Causality and the Light Cone as an Information Barrier in Biquaternionic Form</em> and <em>Thermal Time and the Modular Flow in the Biquaternion Framework</em>) does not use Kozyrev and does not depend on this section.</p>
+<h2 id="the-torsion-bohm-potential">The Torsion Bohm Potential</h2>
+<p>Section 10 proposes a torsion contribution to the quantum potential. It first re-reads the quaternion commutator as a torsion, $\tfrac12[q_\mu q_\nu - q_\nu q_\mu] = 2T_{\mu\nu}{}^\rho q_\rho$, and then, from a Madelung decomposition, writes</p>
+<p>$$
+Q_T = \beta\,T_{\mu\nu\rho}T^{\mu\nu\rho} , \qquad \beta = \frac{\hbar^2}{8m} ,
+$$</p>
+<p>while the comparison box in the same section and the Pauli limit of Section 13.2 both write the torsion term with a <strong>negative</strong> sign, $-\tfrac{\hbar^2}{8m}T_{\mu\nu\rho}T^{\mu\nu\rho}$. The sign of the effect flips twice within the paper, so nothing in the source fixes it; the corpus's own Bohm potential, in <em>The WKB Approximation and the Hamilton–Jacobi Equation in Biquaternionic Form</em>, has the definite negative sign of the standard term, and a torsion correction of the opposite sign in one place and the same sign in another cannot both be right.</p>
+<p>Two further objections are independent of the sign. The equation $\tfrac12[q_\mu,q_\nu] = 2T_{\mu\nu}{}^\rho q_\rho$ is the same conflation as elsewhere in the paper: the left side is a <em>constant</em> of the quaternion algebra, the right side pretends to a field, and no field content is introduced. And the claim that $Q_T$ is "the unique scalar–torsion correction at $O(\hbar^2)$" is asserted, not shown; uniqueness over scalar invariants built from torsion is a claim about a classification that the source does not perform.</p>
+<h2 id="torsion-waves-and-the-entropy-current">Torsion Waves and the Entropy Current</h2>
+<p>Section 11 derives a wave equation for the torsion, $\Box T_{\lambda\mu\nu} = 0$, by acting twice with the covariant derivative on the Dirac equation and imposing the teleparallel condition $R^{ab}{}_{\mu\nu} = 0$. It then introduces the pseudo-vector</p>
+<p>$$
+J_S^\mu = \alpha\,\epsilon^{\mu\nu\rho\sigma} T_{\nu\rho\sigma} , \qquad \alpha = \frac{1}{3\cdot 8\pi G} ,
+$$</p>
+<p>and states that "the wave equation for $T$ together with antisymmetry of $\epsilon^{\mu\nu\rho\sigma}$ implies $\partial_\mu J_S^\mu = 0$", reading the conservation as "the field-theoretic avatar of the second law of thermodynamics".</p>
+<p>The implication does not hold. Since $T_{\nu\rho\sigma}$ is totally antisymmetric, $\partial_\mu J_S^\mu = \alpha\,\epsilon^{\mu\nu\rho\sigma}\partial_\mu T_{\nu\rho\sigma}$ is a multiple of the totally antisymmetric part of $\partial_\mu T_{\nu\rho\sigma}$, which is not implied to vanish by $\Box T = 0$. An explicit counterexample settles it: the field $T_{123}(x) = x^0$, all other components zero, satisfies $\Box T_{\lambda\mu\nu} = 0$ identically, while $J_S^0 = \alpha T_{123} = \alpha x^0$ gives $\partial_\mu J_S^\mu = \partial_0 J_S^0 = \alpha \ne 0$, verified here directly. Conservation would hold if $T_{\nu\rho\sigma}$ were the dual of the gradient of a <em>harmonic</em> potential, $T_{\nu\rho\sigma} = \epsilon_{\nu\rho\sigma\lambda}\partial^\lambda\theta$ with $\Box\theta = 0$; the source neither assumes that form nor derives it. The claimed second-law avatar therefore rests on an identity that fails.</p>
+<p>A separate objection: since the torsion is <em>defined</em> from the spinor by Eq. (5) and carries no independent dynamics, $\Box T = 0$ is not an independent wave equation but a constraint on $\Psi$; and Eq. (5)'s $T$ has no time–space components at all. The "massless emergent degrees of freedom" are therefore not degrees of freedom, and the torsion-wave sector does not enlarge — as the source claims it does not enlarge — the field content, because it adds nothing to it.</p>
+<h2 id="the-fierz-chain-of-appendix-b">The Fierz Chain of Appendix B</h2>
+<p>The Appendix B chain is the source of the factor-2 relation used in Section 11, and it is where an exact error lives. The appendix needs</p>
+<p>$$
+\mathrm{Tr}\bigl[\gamma_5\gamma_\rho\gamma_\lambda\gamma^{\mu\nu}\bigr] = 4\,\epsilon_{\rho\lambda}{}^{\mu\nu} ,
+$$</p>
+<p>as printed (with loose index heights). Checked here in the corpus's conventions with all indices lowered and $\gamma_{\mu\nu} = \tfrac12[\gamma_\mu,\gamma_\nu]$ the source's own definition, the trace is</p>
+<p>$$
+\mathrm{Tr}\bigl[\gamma_5\gamma_\rho\gamma_\lambda\gamma_{\mu\nu}\bigr] = 4i\,\epsilon_{\rho\lambda\mu\nu} ,
+$$</p>
+<p>verified at residual exactly zero over all index quadruples. The printed identity is missing the factor $i$, and the chain built on it inherits the omission.</p>
+<p>The second error is structural. The appendix evaluates $B_{\lambda\mu\nu} = \bar\Psi\gamma_\lambda\gamma_{\mu\nu}\Psi$, finds that "the only nonzero contribution comes from the axial-vector channel", and concludes $B_{\lambda\mu\nu} = \bar\Psi\gamma_5\gamma_\rho\Psi\,\epsilon^\rho{}_{\lambda\mu\nu}$. But this object is <strong>not totally antisymmetric</strong>: verified on 100 random spinors, the antisymmetry relation $\bar\Psi\gamma_{\lambda}\gamma_{\mu\nu}\Psi = -\bar\Psi\gamma_{\mu}\gamma_{\lambda\nu}\Psi$ fails with residual of order 7. It cannot therefore equal the axial channel times a totally antisymmetric epsilon. What does hold, exactly, is the statement for the antisymmetrised projection,</p>
+<p>$$
+\bar\Psi\gamma_{[\lambda}\gamma_\mu\gamma_{\nu]}\Psi = i\,\epsilon_{\lambda\mu\nu\rho}\,\bar\Psi\gamma_5\gamma^\rho\Psi ,
+$$</p>
+<p>with the constant verified to be $+i$ at every index triple. The source's factor-2 relation $\bar\Psi\gamma_\lambda\gamma^{\mu\nu}\Psi = 2\cdot 8\pi G\,T_\lambda{}^{\mu\nu}$ is therefore obtained only after antisymmetrising, and the antisymmetrisation is what the derivation omits; the same identity, with the same constant, is the geometric fact recorded for the corpus in <em>Torsion, Contorsion and the Spin Connection in Biquaternionic Form</em>. Two further signs are worth naming: the source's $T_{\lambda\mu\nu} = \tfrac{1}{8\pi G}\epsilon^\rho{}_{\lambda\mu\nu}\bar\Psi\gamma_5\gamma_\rho\Psi$ inverts the antisymmetrised relation, and the appendix's own chain has a stray factor "2" whose status is the subject of a leftover editorial note — the text reads "verifying the factor 2 matches your normalization in (App. B)", an address to a reader that no proof-reading pass removed.</p>
+<h2 id="the-empirical-claims-and-the-limits-of-the-paper">The Empirical Claims, and the Limits of the Paper</h2>
+<p>Section 13.3 and its appendices reach furthest. The source lists magnetar X-ray polarimetry, entangled atom interferometry and a cryogenic high-frequency torsion-wave search, with required torsion amplitudes around $7\times 10^{-28}\,\mathrm{m}^{-1}$ and current 3$\sigma$ limits within a factor of a few, and adds a Stern–Gerlach phase bifurcation and an electro-torsional Aharonov–Bohm phase in its appendices. These are quantitative and, in form, falsifiable, which is a virtue the corpus's gravity articles do not exhibit.</p>
+<p>Their evidentiary problem is upstream of them. Each number is computed from a coupling that failed the checks above: the torsion amplitude from Eq. (5), which is identically zero in a third of its components; the Stern–Gerlach phase from the torsion potential built on the same $T$; the Aharonov–Bohm phase from a quaternionic connection $Q_\mu$ whose torsion part is the same object. A sensitivity calculation built on a wave function such as $\Box T = 0$ or on a counterexample to its own conservation law cannot constrain the theory it is meant to test. The tables are recorded here as the source's claims, with the observation that none of them survives the recomputations above, and therefore that their numerical agreement with current sensitivities should not be read as evidence for the framework.</p>
+<p>Two smaller items belong in the record. Section 13.2's torsion-free limit displays $\sqrt{-g}\,\tfrac{1}{28\pi G}R$, a typesetting artefact for $\tfrac{1}{16\pi G}R$ or $(\tfrac{1}{2}\kappa)^{-1}R$, not a physical statement; and Section 13.2's claim that "setting $T_{\mu\nu}{}^\rho = 0$ forces $[q_\mu,q_\nu] = 0$" is false, since the commutator of the quaternion units never vanishes for distinct units — only the spinor bilinear can vanish. Section 12 duplicates a paragraph verbatim, and Sections 5.6 and 11 contain editorial remnants ("your normalization", "Palatini variation sign convention consistency verification"), which together indicate a manuscript that did not pass a proof-reading stage.</p>
+<p>Finally, Section 13.1's Table 1 asserts $w_2(TM) = 0$ for the spin structure and $w_4(TM) = 0$ for "quaternionic triviality" and global $\mathbb{H}$-sections. The first is the standard spin condition; the second is asserted without derivation, and it is a global topological statement that no pointwise algebra can supply. The corpus's position on exactly this point is stated in <em>Curved Spacetime and the Biquaternion Framework</em> and is not softened by the source: whether spinor fields exist on the manifold at all is a topological question, and a bilinear construction at each point cannot answer it.</p>
+<h2 id="what-would-make-it-a-framework-claim">What Would Make It a Framework Claim</h2>
+<p>It is worth stating what the source would have to show for the corpus to record its programme as a candidate rather than as a claim with errors. The corpus's standard for a constructive claim is that the object be built, the identities checked, and the boundary stated.</p>
+<ul>
+<li><strong>A nonzero composite tetrad on the free solutions.</strong> The predicate fails at the first step: Eq. (4) is zero for every plane wave. A construction whose frame vanishes on the field it is built from needs a different bilinear, and the correction is not cosmetic, since the index structure and the derivative count both change.</li>
+<li><strong>A torsion that matches its own Einstein–Cartan object.</strong> Eq. (5) must agree with $\bar\Psi\gamma^{[\rho}\gamma_\mu\gamma_{\nu]}\Psi$, and it cannot while it is built from the four-element commutator whose time–space components vanish.</li>
+<li><strong>An identity chain with the right constants.</strong> The Fierz coefficient must match the basis actually used, the trace identity must carry its factor $i$, and the bilinear must be antisymmetrised where the axial channel is claimed.</li>
+<li><strong>A constraint that constrains, or an action that is what it says.</strong> If the Lagrange multipliers only restate definitions and their own equation of motion is not solved, the action does not rise to a theory of the frame.</li>
+<li><strong>A conservation law that follows.</strong> The entropy current requires the torsion to be the dual of a harmonic potential; that assumption must be made or the conservation dropped.</li>
+</ul>
+<p>None of these is a philosophical objection, and none requires the corpus's conventions. They are the arithmetic and index checks that any construction of this kind has to pass, and on this pass it does not.</p>
+<h2 id="summary">Summary</h2>
+<p>The paper records a bi-quaternionic spinor as the primary object, builds a tetrad, a torsion and a contorsion as bilinear composites of it, and claims to derive the Dirac, Einstein–Cartan and spin–torsion equations from a single constrained action, together with an intrinsic arrow of time, a torsion quantum potential and a torsion entropy current.</p>
+<p>Recomputation shows that the algebraic displays do not reproduce. The printed gamma map is off by the factor $i$, so it is not a Clifford map for the quaternion units the same section defines; the trace normalisation $\mathrm{Tr}_{\mathbb H}(q^\mu q^\nu) = 2\delta^{\mu\nu}$ contradicts that embedding, for which the computed values are $2\eta^{\mu\nu}$; the completeness relation's listed elements span four independent quaternion directions rather than the sixteen of the Clifford basis it later uses; and the Fierz identity of Eq. (3) needs coefficient 1 (real-quaternion reading) or $\tfrac12$ ($\{1,\sigma\}$ reading) over the four-element basis, not the printed $\tfrac14$, which belongs to the sixteen-element basis of Appendix B.</p>
+<p>The composite geometry fails at its first display: the composite tetrad vanishes identically on every plane-wave spinor, verified to $8\times 10^{-17}$, so the construction assigns no metric to the free Dirac field; the defined torsion has zero time–space components while the Einstein–Cartan object it matches has those components nonzero; the contorsion–torsion relation has the sign of its third term reversed; the couplings in Eqs. (4) and (6) do not close dimensionally; and the constrained action's multipliers restate definitions, leaving a factor $2\kappa$ in the Einstein equation unless an unexplained multiplier vanishes.</p>
+<p>The teleparallel section is standard geometry carrying a composite that does not exist. The Kozyrev time gradient is the constant $(-1,0,0,0)$ when computed with the paper's own $q^5 = ijk = -1$, so the intrinsic time is not recovered. The torsion Bohm potential changes sign twice within the paper and rests on the same constant-as-torsion conflation. The entropy current is not conserved: $\Box T = 0$ does not imply $\partial_\mu J_S^\mu = 0$, with the counterexample $T_{123} = x^0$. The Appendix B trace identity is missing a factor $i$, and its bilinear is not totally antisymmetric, so the axial channel is reached only after antisymmetrisation. The empirical tables inherit all of this, and the topological table asserts a global condition that no pointwise algebra can establish.</p>
+<p>What the source does supply is a reminder, in a form the corpus's own articles state more carefully: the algebra can hold the frame and the connection, and the step from holding to generating is where the programme is decided. This article records the step taken, the displays that support it, and the displays that fail.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\Psi$, $\bar\Psi$</td>
+<td>the source's bi-quaternionic spinor and its Dirac adjoint</td>
+</tr>
+<tr>
+<td>$q^\mu$</td>
+<td>the quaternion units, $q^0 = 1$, $q^k = -i\sigma^k$</td>
+</tr>
+<tr>
+<td>$\kappa = 8\pi G$</td>
+<td>the source's single coupling, used with both signs of power</td>
+</tr>
+<tr>
+<td>$e^a{}_\mu$</td>
+<td>the source's composite tetrad, Eq. (4)</td>
+</tr>
+<tr>
+<td>$T^\rho{}_{\mu\nu}$</td>
+<td>the source's composite torsion, Eq. (5)</td>
+</tr>
+<tr>
+<td>$K^{ab}{}_\mu$</td>
+<td>the source's composite contorsion, Eq. (6)</td>
+</tr>
+<tr>
+<td>$\sigma^\rho{}_{\mu\nu} = \bar\Psi\gamma^{[\rho}\gamma_\mu\gamma_{\nu]}\Psi$</td>
+<td>the standard Einstein–Cartan spin density</td>
+</tr>
+<tr>
+<td>$\lambda^a{}_\mu$, $\Lambda^{ab}{}_\mu$</td>
+<td>the source's Lagrange multipliers</td>
+</tr>
+<tr>
+<td>$q^5 = ijk$</td>
+<td>in the source, "the imaginary unit"; in fact the central scalar $-1$</td>
+</tr>
+<tr>
+<td>$\tau = \mathrm{Arg}_{\mathbb H}\Psi$</td>
+<td>the source's Kozyrev time field</td>
+</tr>
+<tr>
+<td>$J_S^\mu$</td>
+<td>the source's torsion entropy pseudo-vector</td>
+</tr>
+<tr>
+<td>$\gamma^{\mu\nu}$</td>
+<td>the source's $\tfrac12[\gamma^\mu,\gamma^\nu]$, without the corpus's factor $i$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>J. G. B. Northey, "Matter Makes Space: Unifying Dirac and Einstein–Cartan through Quaternionic Spinors", <em>International Journal of Quantum Foundations</em> <strong>11</strong> (2025) 444–469 — the paper this article records and reviews; all quotations are from it.</li>
+<li>F. W. Hehl, P. von der Heyde, G. D. Kerlick and J. M. Nester, "General relativity with spin and torsion: foundations and prospects," <em>Reviews of Modern Physics</em> <strong>48</strong> (1976) 393–416, for the standard Einstein–Cartan–Sciama–Kibble objects the source claims to reproduce.</li>
+<li>R. Aldrovandi and J. G. Pereira, <em>Teleparallel Gravity: An Introduction</em> (Springer, 2013), for the Weitzenböck connection and the teleparallel gauge used in the source's Section 9.1.</li>
+<li><em>Torsion, Contorsion and the Spin Connection in Biquaternionic Form</em>, for the independently verified torsion, contorsion, spin-density and Weitzenböck identities against which the source's Eqs. (4)–(6) and Appendix B were checked.</li>
+<li><em>Curved Spacetime and the Biquaternion Framework</em>, for the corpus's boundary statement that the algebra carries the frame and the connection without generating either.</li>
+<li><em>The WKB Approximation and the Hamilton–Jacobi Equation in Biquaternionic Form</em>, for the corpus's quantum potential, against which the source's torsion Bohm term was compared.</li>
+<li><em>The Biquaternion Basis of a Unified-Field Fibre Bundle</em>, for the corpus's earlier record of an external construction of the same algebra, and for the editorial treatment this article follows of an external source that is recorded and not endorsed.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

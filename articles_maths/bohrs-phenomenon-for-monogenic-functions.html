@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bohr's Phenomenon for Monogenic Functions — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="bohrs-phenomenon-for-monogenic-functions"><strong>Bohr's Phenomenon for Monogenic Functions</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>Bohr's theorem states that the Taylor series of a holomorphic function of the unit disk bounded by one is majorised by its value at the origin on a disk of radius $1/3$, and that $1/3$ cannot be enlarged. It is one of the few one-variable statements whose several-variable analogues are still an active subject, and it has an analogue in the three-dimensional quaternionic theory of the reduced quaternions, in which the Taylor series is replaced by the expansion of a monogenic function in the orthonormal system of the Riesz system.</p>
+<p>This article records the monogenic Bohr phenomenon as it stands after the paper of Gürlebeck and Morais that improved the earlier radii and proved an estimate for the hypercomplex derivative by the supremum norm. The classical theorem and the arithmetic behind its radius are the first section; the monogenic setting is quoted from <em>Quaternion Regular Functions</em>, which owns the reduced-quaternion operator, the Riesz system, the basis polynomials and their properties; then the coefficient estimate, the two Bohr inequalities, with the radii $0.125$ for $f(0)=0$ and $0.026$ in the general case, and the estimate for the hypercomplex derivative. The sibling article is <em>Bloch's Theorem and the Bloch Constant for Monogenic Functions</em>, which treats the other half of the geometric theory on the same class of functions: the Bloch radius is the size of the largest schlicht ball, while the Bohr radius is the largest ball on which the coefficient series is majorised.</p>
+<h2 id="the-classical-theorem-and-its-radius">The Classical Theorem and Its Radius</h2>
+<p><strong>Theorem (Bohr, 1914).</strong> Let $f(z) = \sum_{n\ge 0} a_n z^n$ be holomorphic in the unit disk with $\lvert f(z)\rvert \le 1$ there. Then</p>
+<p>$$
+\sum_{n\ge 0} \lvert a_n\rvert r^n \le 1 \qquad \text{for } 0 \le r \le \frac13,
+$$</p>
+<p>and the radius $1/3$ is optimal.</p>
+<p><strong>Why the threshold is $1/3$.</strong> The one-variable proof bounds every coefficient by the first, through the Schwarz–Pick estimate $\lvert a_n\rvert \le 1 - \lvert a_0\rvert^2$ for $n \ge 1$. Writing $t = r/(1-r)$, the sum of the moduli is then at most $\lvert a_0\rvert + (1-\lvert a_0\rvert^2)t$, whose derivative in $a_0$ vanishes at $a_0 = 1/(2t)$; that critical point is admissible, $\lvert a_0\rvert \le 1$, exactly when $t \ge 1/2$, and the maximum is then $t + 1/(4t) > 1$. For $t \le 1/2$ the maximum over the admissible interval is at $a_0 = 1$ and equals $1$. The threshold is therefore exactly $t = 1/2$, that is $r = 1/3$.</p>
+<p>Two remarks belong here. The estimate shows that $1/3$ is the threshold of the coefficient bound, while the harder half of Bohr's theorem is that no larger radius works; both facts are classical and are quoted, not reproved. And the value $1/3$ is a one-variable accident in the sense that the several-variable theory depends on the domain, on the norm chosen for the coefficients and on whether the constant term is included; the results below show the same sensitivity in the three-dimensional non-commutative case, where the two natural readings of the theorem give radii that differ by a factor of about five.</p>
+<h2 id="the-monogenic-setting">The Monogenic Setting</h2>
+<p>The algebra is the reduced quaternions $\mathcal{A} = \operatorname{span}_\mathbb{R}\{e_0,e_1,e_2\} \cong \mathbb{R}^3$, a real subspace of $\mathbb{H}$ closed under conjugation but not under multiplication, since $e_1e_2 = e_3$ leaves it. The reduced Cauchy–Riemann operator $D = \partial_0 + e_1\partial_1 + e_2\partial_2$ and its conjugate $\bar D = \partial_0 - e_1\partial_1 - e_2\partial_2$ satisfy $D\bar D = \bar D D = \Delta_3$; a function $f : B \to \mathcal{A}$ with $Df = 0$ is <strong>monogenic</strong>, and $Df = 0$ is equivalent to the <strong>Riesz system</strong> $\operatorname{div}F = \operatorname{curl}F = 0$ for $F = (f_0,-f_1,-f_2)$. The <strong>hypercomplex derivative</strong> of a monogenic $f$ is $\tfrac12\bar Df$, and a <strong>hyperholomorphic constant</strong> is a monogenic function that the hypercomplex derivative annihilates; the non-trivial ones take values in $\operatorname{span}_\mathbb{R}\{e_1,e_2\}$. The space of monogenic functions on the unit ball $B$ is written $\mathcal{R}^+(B;\mathcal{A})$, and the homogeneous monogenic polynomials of degree $n$ form a space $\mathcal{R}^+(B;\mathcal{A};n)$ of dimension $2n+3$. All of this, with its proofs, is owned by <em>Quaternion Regular Functions</em>.</p>
+<p><strong>The basis, quoted.</strong> The explicit homogeneous monogenic polynomials $X_n^{l,\dagger}$, $l = 0,\dots,n+1$, and $Y_n^{m,\dagger}$, $m = 1,\dots,n+1$, built from the associated Legendre functions $P_n^{l}$ and the Chebyshev polynomials $T_l$, $U_l$, form an orthogonal system in $L^2(B;\mathcal{A};\mathbb{R})$, and their normalisations $X_n^{0,\dagger,*}$, $X_n^{m,\dagger,*}$, $Y_n^{m,\dagger,*}$ an orthonormal basis of $\mathcal{R}^+(B;\mathcal{A};n)$. Every $f \in \mathcal{R}^+(B;\mathcal{A})$ has the Fourier expansion</p>
+<p>$$
+f = \sum_{n\ge 0}\Big[ X_n^{0,\dagger,*}\,a_n^0 + \sum_{m=1}^{n+1} \big( X_n^{m,\dagger,*}\,a_n^m + Y_n^{m,\dagger,*}\,b_n^m \big) \Big],
+$$</p>
+<p>with real coefficients, and it splits orthogonally as $f = f(0) + g + h$, where the <strong>main part</strong> $g$ is the series with $m$ running only to $n$ and $h$ is a hyperholomorphic constant expanded in $X_n^{n+1,\dagger,*}$ and $Y_n^{n+1,\dagger,*}$. Two properties of the basis are the analytic input of everything below, and both are stated in <em>Quaternion Regular Functions</em>:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Input</th>
+<th>Statement</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ladder</td>
+<td>$\tfrac12\bar D X_n^{l,\dagger} = (n+l+1)X_{n-1}^{l,\dagger}$ for $0 \le l \le n$, and $\tfrac12\bar D Y_n^{m,\dagger} = (n+m+1)Y_{n-1}^{m,\dagger}$ for $1 \le m \le n$</td>
+</tr>
+<tr>
+<td>Pointwise bound</td>
+<td>$\lvert X_n^{l,\dagger}(x)\rvert \le \tfrac12(n+1)\sqrt{\frac{(n+1+l)!}{(n+1-l)!}}\,\lvert x\rvert^n$, and the same with $Y_n^{m,\dagger}$ and $m$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-coefficient-estimate">The Coefficient Estimate</h2>
+<p>The classical proof needs to bound every coefficient by the first. In the monogenic case there is no Schwarz–Pick estimate, and the bound is obtained instead by integrating the function against the scalar parts of the basis, which are themselves orthogonal.</p>
+<p><strong>Lemma (coefficient estimate).</strong> Let $f$ be a monogenic function with $\lvert f(x)\rvert < 1$ in $B$ such that $f(x)-f(0)$ is orthogonal to the hyperholomorphic constants in $L^2(B;\mathcal{A};\mathbb{R})$. Then each coefficient satisfies</p>
+<p>$$
+\lvert a_n^{l}\rvert \le \max_{B}\lvert \operatorname{Sc}(X_n^{l,\dagger})\rvert \, \frac{\lVert X_n^{l,\dagger}\rVert_{L^2(B;\mathcal{A};\mathbb{R})}}{\lVert \operatorname{Sc}(X_n^{l,\dagger})\rVert^2_{L^2(B)}} \, \frac{4\pi}{3}\big( \mathcal{M}_f(1) - \operatorname{Sc}f(0) \big),
+$$</p>
+<p>and the same inequality holds with $Y_n^{m,\dagger}$ and $b_n^m$; here $\mathcal{M}_f(1) = \sup_{\lvert x\rvert<1}\lvert f(x)\rvert$. In the normalised form of the source, in which $\mathcal{M}_f(1) = 1$, the last factor is written as $2\sqrt{\pi/3}\,(2\sqrt{\pi/3} - a_0^0)$.</p>
+<p><strong>The two constants in the estimate.</strong> The factor $4\pi/3$ is the volume of the unit ball and enters through the norm of the normalised constant. Its equivalent normalised form is arithmetic: $X_0^{0,\dagger} = \tfrac12$ and therefore $\lVert X_0^{0,\dagger}\rVert^2_{L^2(B)} = \tfrac14\cdot\tfrac{4\pi}{3} = \pi/3$; since the scalar part of $f$ at the origin is carried by that single basis element, $\operatorname{Sc}f(0) = \tfrac12\sqrt{3/\pi}\,a_0^0$, that is $a_0^0 = 2\sqrt{\pi/3}\,\operatorname{Sc}f(0)$. With $\mathcal{M}_f(1) = 1$ this gives</p>
+<p>$$
+2\sqrt{\frac{\pi}{3}}\Big(2\sqrt{\frac{\pi}{3}} - a_0^0\Big) = \frac{4\pi}{3}\big(1 - \operatorname{Sc}f(0)\big),
+$$</p>
+<p>so the two printed forms are the same factor. Both normalisations were recomputed here.</p>
+<p><strong>The role of the orthogonality.</strong> The hypothesis that $f - f(0)$ be orthogonal to the hyperholomorphic constants is not a technical convenience: the constants form a subspace of dimension $2$ in every degree rather than the single function $1$ of the complex case, and the estimate of a coefficient by the value at the origin fails if the constant part is not removed. This is the same obstruction that the decomposition theorem removes, and it is the reason the general statement below is made for functions orthogonal to the constants.</p>
+<h2 id="the-two-monogenic-bohr-inequalities">The Two Monogenic Bohr Inequalities</h2>
+<p>The monogenic analogue of Bohr's theorem has two readings, which differ in where the modulus is taken. The source proves both, and the resulting radii differ by a factor of about five.</p>
+<p><strong>Corollary (the case $f(0) = 0$).</strong> Let $f$ be a square-integrable monogenic function with $f(0) = 0$ and $\lvert f(x)\rvert < 1$ in $B$. Then</p>
+<p>$$
+\sum_{n\ge 1}\Big\lvert X_n^{0,\dagger,*}\,a_n^0 + \sum_{m=1}^{n+1} \big( X_n^{m,\dagger,*}\,a_n^m + Y_n^{m,\dagger,*}\,b_n^m \big) \Big\rvert < 1
+$$</p>
+<p>in the ball $\lvert x\rvert = r < 0.125$.</p>
+<p>The modulus is taken of the whole cluster of summands of one degree, which is the form the theorem has in the complex case and the reason the corollary is a genuine generalisation. The result improves the first quaternionic version of the theorem, in which the same inequality was asserted only for $r < 0.047$; the improvement comes from the pointwise bound of the table above.</p>
+<p><strong>Theorem (the general case, summand by summand).</strong> Let $f$ be a monogenic function such that $f(x)-f(0)$ is orthogonal to the hyperholomorphic constants, with $\lvert f(x)\rvert < 1$ in $B$. Then</p>
+<p>$$
+\sum_{n\ge 0}\Big[ \lvert X_n^{0,\dagger,*}\rvert\,\lvert a_n^0\rvert + \sum_{m=1}^{n} \big( \lvert X_n^{m,\dagger,*}\rvert\,\lvert a_n^m\rvert + \lvert Y_n^{m,\dagger,*}\rvert\,\lvert b_n^m\rvert \big) \Big] < 1
+$$</p>
+<p>in the ball of radius $r$ with $0 \le r < 0.026$.</p>
+<p>Here the modulus is taken of every single summand, and the sum runs over the main part only, the constants being excluded by the orthogonality hypothesis and by the fact that $m$ stops at $n$. This statement refines the earlier monogenic Bohr-type theorem of the source's companion paper.</p>
+<p><strong>The comparison.</strong> In the complex case the two readings coincide, because there is one coefficient of each degree. In the reduced quaternions they do not: the first takes the modulus after summing the $2n+3$ terms of degree $n$ and gives $0.125$, the second takes the modulus before summing and gives $0.026$, about a fifth as large. Both are far below the classical $1/3$, and the loss is structural rather than the fault of the estimates. The Schwarz–Pick estimate, on which the classical threshold rests, bounds every coefficient of a bounded holomorphic function by its value at the origin; in the monogenic case the constants form a two-dimensional subspace in each degree, a non-trivial hyperholomorphic constant is $\operatorname{span}_\mathbb{R}\{e_1,e_2\}$-valued, and the coefficients to be controlled multiply as $2n+3$ per degree. The Bohr sum is therefore controlled one index at a time by the pointwise bound of the basis, and the two positions of the modulus require different estimates of the same coefficients.</p>
+<p>The radii $0.125$, $0.026$ and the earlier $0.047$ are the results of the source. What was verified here are the inputs: the basis polynomials and their properties in all four quaternion components, and the pointwise bound, whose sharpness was checked by maximising the ratio over the directions of the sphere. The passage from the coefficient estimate to the two radii rests on the quoted estimates of the norms of the scalar parts in the companion paper and was not rebuilt.</p>
+<p>One further observation of the source belongs with the comparison. The value obtained for the radius depends on which Fourier expansion is chosen in the proof, and therefore on which pointwise estimates of the homogeneous monogenic polynomials are available: the improvement from $0.047$ to $0.125$ came from replacing the estimates used in the earlier paper by the pointwise bound of the table above, with the same expansion. In one variable there is only one expansion to choose, and this freedom does not exist; it is a further respect in which the monogenic theory is less rigid than the classical one.</p>
+<h2 id="the-estimate-for-the-hypercomplex-derivative">The Estimate for the Hypercomplex Derivative</h2>
+<p>The engine of the coefficient estimate is an inequality for the hypercomplex derivative, the monogenic counterpart of the classical bounds connecting a function to its derivative. It uses the maximum modulus function, which by the maximum principle can be taken either on the sphere or in the closed ball.</p>
+<p><strong>Theorem.</strong> Let $f$ be a square-integrable monogenic function in $B$. Then for $0 \le r < 1$,</p>
+<p>$$
+\mathcal{M}\Big( \tfrac12\bar Df, r \Big) \le \frac{8(3r+1)}{(1-r)^5}\Big( \mathcal{M}_f(1) - \lvert \operatorname{Sc}f(0)\rvert \Big).
+$$</p>
+<p><strong>Corollary.</strong> Let $\tilde f$ be a square-integrable monogenic function in $B$ orthogonal to the non-trivial hyperholomorphic constants. Then for $0 \le r < 1$,</p>
+<p>$$
+\mathcal{M}\Big( \tfrac12\bar D\tilde f, r \Big) \le \frac{8(3r+1)}{(1-r)^5}\Big( \mathcal{M}_{\tilde f}(1) - \lvert \tilde f(0)\rvert \Big),
+$$</p>
+<p>and $\tilde f(0)$ is real, because the orthogonality removes the $e_1$- and $e_2$-valued parts of the constant term.</p>
+<p><strong>The decisive step, and its arithmetic.</strong> The proof replaces $f$ by its main part $g$, applies the ladder to the Fourier series, estimates each term by the pointwise bound and sums, which gives</p>
+<p>$$
+\Big\lvert \tfrac12\bar Dg(x)\Big\rvert \le \frac43\big( \mathcal{M}_f(1) - \operatorname{Sc}f(0) \big) \sum_{n\ge 1} n^2(n+1)(n+2)\lvert x\rvert^{n-1}.
+$$</p>
+<p>The series is elementary. With $\lvert x\rvert = r$,</p>
+<p>$$
+\sum_{n\ge 1} n^2(n+1)(n+2)r^{n-1} = \frac{6(1+3r)}{(1-r)^5},
+$$</p>
+<p>since $n^2(n+1)(n+2) = n^4+3n^3+2n^2$ and the four Euler sums combine to $6(1+3r)/(1-r)^5$; the factor $\tfrac43$ then turns it into $8(3r+1)/(1-r)^5$ exactly. This closed form was recomputed here symbolically, term by term, so no numerical constant of the theorem is left undetermined.</p>
+<p><strong>What the estimate says.</strong> It bounds the hypercomplex derivative of a monogenic function by the supremum of the function on the ball and by the scalar part of the function at the origin, and it is the inequality that makes the Bohr sums converge to a value below one on a fixed ball. It differs in kind from the estimate of the companion Bloch article, which bounds the oscillation of the hypercomplex derivative, $\lvert \tfrac12\bar Df(x) - \tfrac12\bar Df(0)\rvert$, by the maximum modulus of the derivative itself; the present inequality bounds the derivative of $f$ by the modulus of $f$, and it is its growth factor $(1-r)^{-5}$ that the Bohr radius must absorb.</p>
+<h2 id="summary">Summary</h2>
+<p><strong>Bohr's theorem</strong> says that a holomorphic function of the unit disk bounded by one satisfies $\sum_n\lvert a_n\rvert r^n \le 1$ for $r \le 1/3$, and that $1/3$ is optimal. The radius is the threshold of the Schwarz–Pick coefficient bound $\lvert a_n\rvert \le 1-\lvert a_0\rvert^2$: the maximum of $\lvert a_0\rvert + (1-\lvert a_0\rvert^2)t$ over the admissible $a_0$, with $t = r/(1-r)$, equals $1$ up to $t = 1/2$ and exceeds it afterwards, which is $r = 1/3$.</p>
+<p>In the <strong>reduced quaternions</strong> the class is the monogenic functions of the Riesz system; the series is the expansion in the orthonormal system $X_n^{l,\dagger}$, $Y_n^{m,\dagger}$ of the graded pieces of dimension $2n+3$, whose ladder and pointwise bound are the analytic input, and every monogenic function splits as $f = f(0) + g + h$ into a main part and a hyperholomorphic constant. The <strong>coefficient estimate</strong> bounds each Fourier coefficient by the basis element carrying the scalar part at the origin, with the factor $\frac{4\pi}{3}(\mathcal{M}_f(1)-\operatorname{Sc}f(0))$, equivalently $2\sqrt{\pi/3}(2\sqrt{\pi/3}-a_0^0)$ when $\mathcal{M}_f(1)=1$.</p>
+<p>The <strong>two monogenic Bohr inequalities</strong> take the modulus of a whole degree cluster and give the radius $0.125$ for $f(0)=0$, improving the earlier $0.047$, or take the modulus of every summand of the main part and give $0.026$; both are far below the classical $1/3$ because the Schwarz–Pick estimate has no analogue here, the constants being a two-dimensional subspace per degree with values in $\operatorname{span}_\mathbb{R}\{e_1,e_2\}$. The <strong>engine</strong> is the estimate $\mathcal{M}(\tfrac12\bar Df,r) \le \frac{8(3r+1)}{(1-r)^5}(\mathcal{M}_f(1)-\lvert\operatorname{Sc}f(0)\rvert)$, whose series $\sum_{n\ge1}n^2(n+1)(n+2)r^{n-1} = 6(1+3r)/(1-r)^5$ was verified exactly here. The basis and its properties, the pointwise bound, the two normalisation constants and the arithmetic of the derivative estimate were recomputed; the radii $0.125$, $0.026$ and $0.047$ are quoted from the source.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathcal{A} = \operatorname{span}_\mathbb{R}\{e_0,e_1,e_2\}$</td>
+<td>Reduced quaternions, $\cong\mathbb{R}^3$; closed under conjugation, not a subalgebra of $\mathbb{H}$</td>
+</tr>
+<tr>
+<td>$D = \partial_0+e_1\partial_1+e_2\partial_2$, $\bar D$</td>
+<td>Reduced Cauchy–Riemann operator and its conjugate, $D\bar D = \bar D D = \Delta_3$</td>
+</tr>
+<tr>
+<td>$Df = 0$</td>
+<td>Monogenicity; equivalently the Riesz system $\operatorname{div}F = \operatorname{curl}F = 0$</td>
+</tr>
+<tr>
+<td>$\tfrac12\bar Df$</td>
+<td>Hypercomplex derivative of the monogenic function $f$</td>
+</tr>
+<tr>
+<td>hyperholomorphic constant</td>
+<td>Monogenic function annihilated by $\tfrac12\bar D$; non-trivial ones are $\operatorname{span}_\mathbb{R}\{e_1,e_2\}$-valued</td>
+</tr>
+<tr>
+<td>$\mathcal{R}^+(B;\mathcal{A})$, $\mathcal{R}^+(B;\mathcal{A};n)$</td>
+<td>Monogenic functions on the unit ball, and their homogeneous part of degree $n$, $\dim = 2n+3$</td>
+</tr>
+<tr>
+<td>$X_n^{l,\dagger}$, $Y_n^{m,\dagger}$</td>
+<td>Explicit homogeneous monogenic polynomials, $l = 0,\dots,n+1$, $m = 1,\dots,n+1$</td>
+</tr>
+<tr>
+<td>$X_n^{0,\dagger,*}$, $X_n^{m,\dagger,*}$, $Y_n^{m,\dagger,*}$</td>
+<td>Their normalisations, an orthonormal basis of $\mathcal{R}^+(B;\mathcal{A};n)$</td>
+</tr>
+<tr>
+<td>$a_n^0$, $a_n^m$, $b_n^m$</td>
+<td>Real Fourier coefficients of $f$ in that basis</td>
+</tr>
+<tr>
+<td>$f = f(0)+g+h$</td>
+<td>Orthogonal decomposition into main part $g$ and hyperholomorphic constant $h$</td>
+</tr>
+<tr>
+<td>$\mathcal{M}(f,r) = \max_{\lvert x\rvert=r}\lvert f(x)\rvert$</td>
+<td>Maximum modulus function</td>
+</tr>
+<tr>
+<td>$\mathcal{M}_f(r) = \sup_{\lvert\xi\rvert<r}\lvert f(\xi)\rvert$</td>
+<td>Supremum over the ball; equal to $\mathcal{M}(f,r)$ by the maximum principle</td>
+</tr>
+<tr>
+<td>$P_n^{l}$, $T_l$, $U_l$</td>
+<td>Associated Legendre function with $P_n^{l} = 0$ for $l \ge n+1$; Chebyshev polynomials of the first and second kinds</td>
+</tr>
+<tr>
+<td>$1/3$</td>
+<td>The classical Bohr radius, optimal</td>
+</tr>
+<tr>
+<td>$0.125$</td>
+<td>Monogenic radius, case $f(0) = 0$, modulus of each degree cluster</td>
+</tr>
+<tr>
+<td>$0.026$</td>
+<td>Monogenic radius, general case, modulus of each summand of the main part</td>
+</tr>
+<tr>
+<td>$0.047$</td>
+<td>The earlier monogenic radius, improved to $0.125$</td>
+</tr>
+<tr>
+<td>$\frac{4\pi}{3}\big(\mathcal{M}_f(1)-\operatorname{Sc}f(0)\big)$</td>
+<td>Coefficient-estimate factor, equivalently $2\sqrt{\pi/3}(2\sqrt{\pi/3}-a_0^0)$</td>
+</tr>
+<tr>
+<td>$\frac{8(3r+1)}{(1-r)^5}$</td>
+<td>Constant of the hypercomplex-derivative estimate, from $\frac43\sum_{n\ge1}n^2(n+1)(n+2)r^{n-1}$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>K. Gürlebeck and J. Morais, "On the development of Bohr's phenomenon in the context of Quaternionic analysis and related problems", in <em>Proceedings of the 17th International Conference on Finite or Infinite Dimensional Complex Analysis and Applications</em>, Ho Chi Minh City (2009), arXiv:1004.1188 [math.CV], the source of this article: the basis and its properties, the pointwise bound, the coefficient estimate, the two Bohr inequalities with the radii $0.125$ and $0.026$, and the estimate for the hypercomplex derivative. The basis, its properties, the pointwise bound and the arithmetic of the derivative estimate were recomputed here; the radii are quoted.</li>
+<li>K. Gürlebeck and J. Morais, "Bohr type theorems for monogenic power series", <em>Computational Methods and Function Theory</em> <strong>9</strong> (2011) 633–651, for the general-case Bohr type theorem that the Theorem above refines, for the decomposition of a monogenic function, and for the estimates of the norms of the scalar parts that the passage from coefficients to radii uses.</li>
+<li>K. Gürlebeck and J. Morais, "Bohr's theorem for monogenic functions", <em>AIP Conference Proceedings</em> <strong>936</strong> (2007) 750–753, for the first quaternionic Bohr result, with the radius $0.047$ that the Corollary improves.</li>
+<li>J. Morais, <em>Approximation by Homogeneous Polynomial Solutions of the Riesz System in $\mathbb{R}^3$</em>, Ph.D. dissertation, Bauhaus-Universität Weimar (2009), for the construction of the orthonormal system of monogenic polynomials and the complete list of its properties.</li>
+<li>K. Gürlebeck and H. Malonek, "A hypercomplex derivative of monogenic functions in $\mathbb{R}^{n+1}$ and its applications", <em>Complex Variables and Elliptic Equations</em> <strong>39</strong> (1999) 199–228, for the hypercomplex derivative, the primitive and the role of the hyperholomorphic constants.</li>
+<li>H. Leutwiler, "Quaternionic analysis in $\mathbb{R}^3$ versus its hyperbolic modification", in <em>Clifford Analysis and Its Applications</em>, NATO Science Series II <strong>25</strong> (Kluwer, 2001) 193–211, for the Riesz system and the dimension $2n+3$ of the polynomial solutions of fixed degree.</li>
+<li>M. Riesz, <em>Clifford Numbers and Spinors</em>, Lecture Series 38, Institute for Physical Science and Technology, University of Maryland (1958), for the system that carries his name.</li>
+<li>H. Bohr, "A theorem concerning power series", <em>Proceedings of the London Mathematical Society</em> <strong>13</strong> (1914) 1–5, for the classical theorem and the optimal radius $1/3$.</li>
+<li>H. S. Boas and D. Khavinson, "Bohr's power series theorem in several variables", <em>Proceedings of the American Mathematical Society</em> <strong>125</strong> (1997) 2975–2979; L. Aizenberg, "Multidimensional analogues of Bohr's theorem on power series", <em>Proceedings of the American Mathematical Society</em> <strong>128</strong> (2000) 1147–1155; S. Dineen and R. Timoney, "On a problem of H. Bohr", <em>Bulletin de la Société Royale des Sciences de Liège</em> <strong>60</strong> (1991) 401–404; V. I. Paulsen, G. Popescu and D. Singh, "On Bohr's inequality", <em>Proceedings of the London Mathematical Society</em> <strong>85</strong> (2002) 493–512, for the several-variable developments in which the quaternionic results sit.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

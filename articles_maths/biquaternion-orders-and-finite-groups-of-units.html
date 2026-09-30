@@ -80,6 +80,57 @@ $$
 $$</p>
 <p><strong>Proof.</strong> On real quaternion coordinates the norm is $N(\tilde q)=\sum_\mu q_\mu^2\geq0$, an integer for $\tilde q$ in either order; the inverse is $\tilde q^{-1}=\tilde q^*/N(\tilde q)$ with $\tilde q^*$ the quaternion conjugate, and $\tilde q^*$ lies in the order whenever $\tilde q$ does, so $\tilde q$ is a unit exactly when $N(\tilde q)=1$. The norm-one elements with integer coordinates are the eight signed units $\pm e_\mu$, and with half-integer coordinates they are those together with the sixteen elements $\tfrac12(\pm e_0\pm e_1\pm e_2\pm e_3)$, of norm one. The resulting groups are closed under multiplication, have the stated orders, and are the quaternion group and the binary tetrahedral group respectively.</p>
 <p><strong>Remark (the two indices).</strong> The lattices have index $2$, but the unit groups have index $24/8=3$: the Lipschitz units are a proper subgroup of index three in the Hurwitz units, so the two notions of index do not agree.</p>
+<h3 id="the-elements-of-order-six">The Elements of Order Six</h3>
+<p>The Lipschitz unit group is a $2$-group and the Hurwitz unit group is not, and one element exhibits the difference. The <strong>order</strong> of a unit $Q$ is the least $n\geq1$ with $Q^n=e_0$.</p>
+<p><strong>Example.</strong> Let
+$$
+Q=\tfrac12(e_0-e_1-e_2+e_3).
+$$
+This is a Hurwitz unit, being one of the sixteen half-integral norm-one elements of $(\mathcal{L}')^{\times}\setminus\mathcal{L}^{\times}$ listed above. Its square is the negative of its conjugate,
+$$
+Q^2=-Q^*,
+$$
+and therefore
+$$
+Q^3=Q\,Q^2=-QQ^*=-N(Q)e_0=-e_0,\qquad Q^6=e_0 ,
+$$
+so $Q$ has order six and generates a cyclic subgroup $\langle Q\rangle\cong C_6$ of the unit group.</p>
+<p><strong>Remark.</strong> The identity $Q^2=-Q^*$ is a property of the half-integral units and not of this example alone, and the sign of the real part decides the order. For a half-integral unit
+$$
+Q=\tfrac12(s_0e_0+s_1e_1+s_2e_2+s_3e_3),\qquad s_\mu=\pm1,
+$$
+the real part is $\tfrac12s_0$ and the vector part has norm $\tfrac34$, so $Q^2=-Q^*$ when $s_0=+1$, which gives $Q^3=-e_0$ and order six, while $Q^2=+Q^*$ when $s_0=-1$, which gives $Q^3=e_0$ and order three. There are eight units of each kind, and the element orders of the two orders of units are as follows.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Unit group</th>
+<th>Order $1$</th>
+<th>Order $2$</th>
+<th>Order $3$</th>
+<th>Order $4$</th>
+<th>Order $6$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Lipschitz, $\mathcal{L}^{\times}\cong Q_8$</td>
+<td>$1$</td>
+<td>$1$</td>
+<td>$0$</td>
+<td>$6$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>Hurwitz, $(\mathcal{L}')^{\times}\cong 2T$</td>
+<td>$1$</td>
+<td>$1$</td>
+<td>$8$</td>
+<td>$6$</td>
+<td>$8$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The eight elements of order six form four cyclic subgroups of order six, and their squares are the eight elements of order three, so the unit group has four subgroups of order three and four of order six, each subgroup of order three lying in exactly one of order six. None of these subgroups lies in the Lipschitz units, whose element orders are $1$, $2$ and $4$.</p>
 <h2 id="the-finite-subgroups-of-the-unit-sphere">The Finite Subgroups of the Unit Sphere</h2>
 <p>The unit quaternions $Sp(1)=S^3$ form a group with centre $\{\pm e_0\}$, and the quotient
 $$
@@ -128,7 +179,7 @@ $$
 Each of these elements has norm $N(e_0+kn)=1+k^2+(ik)^2=1$, since the coefficients of $e_0+kn$ are $Q_0=1$, $Q_1=k$, $Q_2=ik$, $Q_3=0$; a norm-one element has inverse its conjugate and so is a unit. Hence $\Lambda^{\times}$ contains the infinite family $\{e_0+kn:k\in\mathbb{Z}\}$.</p>
 <p><strong>Remark.</strong> The finite unit groups are therefore those of the <em>real</em> order, not of the complex one. The presence of nilpotent directions in the complex order is the same phenomenon as the presence of zero divisors in the algebra at large: $\mathbb{B}\cong M_2(\mathbb{C})$ is not a division algebra, and its integral order inherits unipotent units.</p>
 <h2 id="summary">Summary</h2>
-<p>The quaternion orders inside the biquaternion algebra are the Lipschitz order $\mathcal{L}$ and the Hurwitz order $\mathcal{L}'$, the second containing the first with index two and maximal. Their groups of units are the quaternion group of order eight and the binary tetrahedral group of order twenty-four; the unit-group index is three, though the lattice index is two.</p>
+<p>The quaternion orders inside the biquaternion algebra are the Lipschitz order $\mathcal{L}$ and the Hurwitz order $\mathcal{L}'$, the second containing the first with index two and maximal. Their groups of units are the quaternion group of order eight and the binary tetrahedral group of order twenty-four; the unit-group index is three, though the lattice index is two. The element orders of the two groups differ: the Lipschitz units have orders $1$, $2$ and $4$, while the Hurwitz units have orders $1$, $2$, $3$, $4$ and $6$, the half-integral units of real part $+\tfrac12$ satisfying $Q^2=-Q^*$ and generating the four cyclic subgroups of order six.</p>
 <p>The unit sphere $Sp(1)=S^3$ has for finite subgroups the twofold preimages of the finite rotation groups of the plane and the three Platonic figures: the cyclic groups, the binary dihedral groups and the binary polyhedral groups $2T$, $2O$, $2I$ of orders twenty-four, forty-eight and one hundred twenty. The twenty-four Hurwitz units are the vertices of the regular $24$-cell in $\mathbb{H}_{\mathbb{B}}\cong\mathbb{R}^4$, whose symmetry group is the Weyl group $F_4$ of order $1152$, containing the hyperoctahedral $B_4$ of order $384$; both are strictly larger than the unit group $2T$. The units act on the real slice by the rotations $\rho_v(\tilde R)=-v\tilde Rv^{-1}$, of determinant $+1$, and the twenty-four units give twelve distinct rotations generating a group of order $24$ with $2T/\{\pm e_0\}\cong A_4$. The five families of finite subgroups are the five families of simply laced Dynkin diagrams, the McKay correspondence.</p>
 <p>The integral biquaternions, with coefficients in the Gaussian integers, form an order in $\mathbb{B}$ whose group of units is infinite: the nilpotent element $e_1+ie_2$ generates the unipotent family $e_0+k(e_1+ie_2)$ of norm one. The finite unit groups of the theory are thus the groups of the real quaternion orders.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
@@ -158,7 +209,11 @@ Each of these elements has norm $N(e_0+kn)=1+k^2+(ik)^2=1$, since the coefficien
 </tr>
 <tr>
 <td>$(\mathcal{L}')^{\times}\cong 2T$</td>
-<td>Hurwitz units, order $24$</td>
+<td>Hurwitz units, order $24$; element orders $1,2,3,4,6$</td>
+</tr>
+<tr>
+<td>$Q=\tfrac12(e_0-e_1-e_2+e_3)$</td>
+<td>Hurwitz unit with $Q^2=-Q^*$; $\langle Q\rangle\cong C_6$</td>
 </tr>
 <tr>
 <td>$2T,2O,2I$</td>

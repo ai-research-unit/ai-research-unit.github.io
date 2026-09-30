@@ -168,7 +168,12 @@ $$</p>
 <p>$$
 b(u, u) = \sum_{i < j} a_{ij}(u_i u_j + u_j u_i) = 0
 $$</p>
-<p>in characteristic two; hence by the even-rank theorem of <em>Bilinear Forms</em> a non-degenerate quadratic form over $\mathbb{F}_2$ has even dimension, and the same rank of $b$ is shared by all quadratic forms of that dimension. The finer invariant that separates them is the <strong>Arf invariant</strong>, and the classification in characteristic two, together with the failure of Witt cancellation there, is carried out.</p>
+<p>in characteristic two; hence by the even-rank theorem of <em>Bilinear Forms</em> a non-degenerate quadratic form over $\mathbb{F}_2$ has even dimension, and the same rank of $b$ is shared by all quadratic forms of that dimension. The finer invariant that separates them is the <strong>Arf invariant</strong>, defined as follows.</p>
+<p><strong>Definition.</strong> Let $F$ be a field of characteristic $2$ and write a binary form as $[a, b] : (x, y) \mapsto ax^2 + xy + by^2$, with $b \neq 0$ and $a \in F$. The <strong>Arf invariant</strong> of an orthogonal sum $q = [a_1, b_1] \perp \cdots \perp [a_n, b_n]$ is the class of the sum $a_1b_1 + \cdots + a_nb_n$ in the additive quotient $F/\wp(F)$, where</p>
+<p>$$
+\wp(F) = \{\alpha^2 + \alpha : \alpha \in F\}.
+$$</p>
+<p>It is an isometry invariant, and it is exactly what the associated form cannot see: over $\mathbb{F}_2$ the forms $xy = [0, 1]$ and $x^2 + xy + y^2 = [1, 1]$ have the same associated form and Arf invariants $0$ and the class of $1$, and over a finite field the dimension together with the Arf invariant is a complete invariant of the isometry class. The value group has changed character: the discriminant, a class in the multiplicative group $F^\times/(F^\times)^2$, is replaced by a class in the additive quotient $F/\wp(F)$, and the sum $a_1b_1 + \cdots + a_nb_n$ has no meaning as a determinant. The classification in characteristic two, and the chain equivalence that replaces Witt cancellation there, are carried out in <em>Witt's Theorems</em>.</p>
 <h2 id="diagonalisation">Diagonalisation</h2>
 <h3 id="orthogonal-bases">Orthogonal Bases</h3>
 <p>Let $q$ be a quadratic form on a free module $M$ of finite rank, with polar form $B$. A basis $e_1, \ldots, e_n$ is <strong>orthogonal</strong> for $q$ (or for $B$) if $B(e_i, e_j) = 0$ for $i \neq j$, that is, if the Gram matrix is diagonal.</p>
@@ -237,7 +242,7 @@ $$</p>
 $$</p>
 <p>Orthogonal direct sums add signatures, positive indices, negative indices and nullities; these facts are used.</p>
 <p><strong>Example.</strong> On $\mathbb{R}^3$ the form $q(x, y, z) = x^2 + y^2 - z^2$ has signature $1$, indices $p = 2$, $r = 1$, and nullity $0$. It is non-degenerate and indefinite. The form $x^2 + y^2$ on $\mathbb{R}^3$ has $p = 2$, $r = 0$, $z = 1$, signature $2$, and is degenerate.</p>
-<h3 id="the-classification-over-math380-and-math381">The Classification over $\mathbb{R}$ and $\mathbb{C}$</h3>
+<h3 id="the-classification-over-math397-and-math398">The Classification over $\mathbb{R}$ and $\mathbb{C}$</h3>
 <p><strong>Theorem (classification over $\mathbb{R}$).</strong> Two real quadratic forms of the same dimension are isometric if and only if they have the same signature and the same rank, equivalently the same triple $(p, r, z)$.</p>
 <p><strong>Proof.</strong> If they are isometric their indices agree by the characterisation of $p$ and $r$ in the proof of Sylvester's law as extremal dimensions, which is an isometry invariant. Conversely, two forms with the same $(p, r, z)$ are each isometric to the normal form determined by that triple.</p>
 <p><strong>Theorem (classification over $\mathbb{C}$).</strong> Every non-degenerate complex quadratic form of dimension $n$ is isometric to $n\langle 1\rangle$. Hence two non-degenerate complex forms are isometric if and only if they have the same dimension, and in general two complex forms are isometric if and only if they have the same rank.</p>
@@ -255,16 +260,23 @@ $$</p>
 <p><strong>Definition.</strong> A nonzero vector $v$ with $q(v) = 0$ is <strong>isotropic</strong>, and $q$ is <strong>isotropic</strong> if such a vector exists. A form with no isotropic vector is <strong>anisotropic</strong>. The set of isotropic vectors, projectivised, is the <strong>quadric</strong> of $q$, treated.</p>
 <p><strong>Proposition.</strong> A non-degenerate real form with $p, r > 0$ is isotropic, and a non-degenerate real form with $r = 0$ or $p = 0$ is anisotropic. A non-degenerate complex form of dimension at least $2$ is isotropic.</p>
 <p><strong>Proof.</strong> If $p, r > 0$ choose $u$ with $q(u) = 1$ in the positive part and $w$ with $q(w) = -1$ in the negative part; then $q(u + w) = 1 - 1 = 0$ and $u + w \neq 0$. If $r = 0$ then $q$ is positive definite and vanishes only at $0$. For a complex form of dimension at least $2$, in a diagonal basis $a_1 x_1^2 + a_2 x_2^2$ with all $a_i \neq 0$, the vector with $x_1^2 = -a_2/a_1$, $x_2 = 1$ is isotropic.</p>
-<p>The hyperbolic plane $q(x, y) = x^2 - y^2$ is the smallest isotropic non-degenerate real form. Its role as the elementary building block of Witt theory is not covered here.</p>
+<p>The hyperbolic plane $q(x, y) = x^2 - y^2$ is the smallest isotropic non-degenerate real form. Its role as the elementary building block of Witt theory — the hyperbolic planes that split off, the index and cancellation — is in <em>Witt's Theorems</em>.</p>
+<h2 id="the-bezoutian-form">The Bezoutian Form</h2>
+<p>A pair of polynomials determines a quadratic form over the base field, and this is the construction through which the theory of forms enters the arithmetic of a rational function field. Let $g \in F[t]$ be monic and square-free and let $f \in F[t]$ be coprime to $g$. The <strong>Bezoutian form</strong> of $f$ modulo $g$ is the quadratic form</p>
+<p>$$
+q_{f,g} : F[t]/(g) \longrightarrow F, \qquad q_{f,g}(x) = s_g\big(f(\theta)x^2\big),
+$$</p>
+<p>where $\theta$ is the class of $t$ and $s_g$ is the coefficient functional of $\theta^{\deg g-1}$; it is non-degenerate exactly when $f$ is coprime to $g$, and its class $B(f/g)$ is an element of the Witt group of <em>The Witt Group and the Grothendieck–Witt Ring</em> computed from the pair by two rules, one decomposing the modulus into coprime factors and one exchanging the numerator with the modulus. The construction, the rules and the criterion by which a non-trivial Bezoutian obstructs the representability of a ramification sequence by a single symbol are the subject of <em>Ramification Sequences and Bezoutian Forms</em>. It is there that the worked example over $\mathbb{Q}$ computes the sequence of degree four of the class $\{g_1,2\}+\{g_2,6\}$ and its Bezoutian, a scalar multiple of the anisotropic Pfister form $\langle\!\langle 2,3\rangle\!\rangle$ — the form-theoretic face of the biquaternion division algebras of <em>Division Algebras</em>.</p>
 <h2 id="summary">Summary</h2>
 <p>A <strong>quadratic form</strong> on an $R$-module $M$ is a function $q$ with $q(rv) = r^2 q(v)$ whose <strong>polar form</strong> $B(u, v) = \tfrac{1}{2}(q(u + v) - q(u) - q(v))$ is bilinear. When $2$ is invertible in $R$ the assignments $q \leftrightarrow B$ with $q(v) = B(v, v)$ are mutually inverse bijections between quadratic forms and symmetric bilinear forms, and the <strong>polarisation identities</strong> recover $B$ from $q$:</p>
 <p>$$
 q(u + v) + q(u - v) = 2q(u) + 2q(v), \qquad q(u + v) - q(u - v) = 4B(u, v).
 $$</p>
 <p>In a basis the form is $q(x) = x^{T} G x$ with $G$ the Gram matrix of $B$, its diagonal entries are $q(e_i)$, and a change of basis with matrix $P$ replaces $G$ by the congruent matrix $P^{T} G P$. An <strong>isometry</strong> $T : (M, q) \to (M', q')$ is a linear isomorphism with $q' \circ T = q$; isometric forms have the same rank and discriminant, and over $\mathbb{R}$ the same signature. The <strong>orthogonal direct sum</strong> $q \perp q'$ on $M \oplus M'$ adds ranks and signatures and multiplies discriminants.</p>
-<p>When $2$ is not invertible the correspondence fails. The associated bilinear form $b = 2B$ is always defined, and two quadratic forms with the same $b$ differ by an additive function homogeneous of degree two; the kernel of $q \mapsto b$ is zero whenever $2$ is not a zero divisor, in particular when $2$ is invertible. Over $\mathbb{F}_2$ the kernel consists of the $2^n$ linear functionals on $\mathbb{F}_2^n$, so a quadratic form there has the shape $\sum_{i<j} a_{ij}x_ix_j + \sum_i l_i x_i$, of which $b$ records only the quadratic part, and the classification needs the finer Arf invariant. Over $\mathbb{Z}/4\mathbb{Z}$ the same failure occurs for $q(x) = x^2$, whose kernel has two elements. A quadratic form is <strong>non-degenerate</strong> when its polar form is, and its radical is $\operatorname{rad}(q) = \{v : B(v, w) = 0$ for all $w\}$.</p>
+<p>When $2$ is not invertible the correspondence fails. The associated bilinear form $b = 2B$ is always defined, and two quadratic forms with the same $b$ differ by an additive function homogeneous of degree two; the kernel of $q \mapsto b$ is zero whenever $2$ is not a zero divisor, in particular when $2$ is invertible. Over $\mathbb{F}_2$ the kernel consists of the $2^n$ linear functionals on $\mathbb{F}_2^n$, so a quadratic form there has the shape $\sum_{i<j} a_{ij}x_ix_j + \sum_i l_i x_i$, of which $b$ records only the quadratic part, and the classification needs the finer <strong>Arf invariant</strong>, the class of $a_1b_1 + \cdots + a_nb_n$ in the additive quotient $F/\wp(F)$ with $\wp(F) = \{\alpha^2 + \alpha\}$ for the standard presentation $[a_1, b_1] \perp \cdots \perp [a_n, b_n]$. Over $\mathbb{Z}/4\mathbb{Z}$ the same failure occurs for $q(x) = x^2$, whose kernel has two elements. A quadratic form is <strong>non-degenerate</strong> when its polar form is, and its radical is $\operatorname{rad}(q) = \{v : B(v, w) = 0$ for all $w\}$.</p>
 <p>Over a field of characteristic not $2$, every finite-dimensional quadratic form <strong>diagonalises</strong>: $q \cong \langle a_1, \ldots, a_n\rangle$, with $q(x) = \sum_i a_i x_i^2$. The entries are determined up to permutation and up to multiplication by squares, and the product $a_1 \cdots a_n$ modulo squares is the <strong>discriminant</strong>.</p>
 <p>Over $\mathbb{R}$ every form has a unique normal form $p\langle 1\rangle \perp r\langle -1\rangle \perp z\langle 0\rangle$. The integers $p, r$ are the positive and negative indices, $z$ is the nullity, and $\sigma(q) = p - r$ is the <strong>signature</strong>; by <strong>Sylvester's law of inertia</strong> they are isometry invariants, and they classify real quadratic forms completely. A non-degenerate real form is positive definite when $r = 0$, negative definite when $p = 0$, indefinite when $p, r > 0$, and it is isotropic exactly in the indefinite case. Over $\mathbb{C}$ every nonzero coefficient is a square, so a form is determined by its rank, and every non-degenerate complex form of dimension $n$ is isometric to $n\langle 1\rangle$. A nonzero vector with $q(v) = 0$ is <strong>isotropic</strong>, and the isotropic vectors form the <strong>quadric</strong> of $q$.</p>
+<p>The <strong>Bezoutian form</strong> of a pair of polynomials, with $g$ monic and square-free and $f$ coprime to $g$, is a quadratic form on the space $F[t]/(g)$, non-degenerate exactly when $f$ is a unit of $F[t]/(g)$ and computed from the pair by two rules; it is the object through which the representability of a ramification sequence by a symbol is expressed as a statement about the Witt group, and it is the subject of <em>Ramification Sequences and Bezoutian Forms</em>.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -347,6 +359,22 @@ $$</p>
 <td>Discriminant $a_1 \cdots a_n \in F^\times/(F^\times)^2$</td>
 </tr>
 <tr>
+<td>$\wp(F) = \{\alpha^2 + \alpha\}$</td>
+<td>Additive subgroup giving the value group of the Arf invariant</td>
+</tr>
+<tr>
+<td>$[a, b]$</td>
+<td>Binary form $ax^2 + xy + by^2$ over a field of characteristic $2$</td>
+</tr>
+<tr>
+<td>Arf invariant</td>
+<td>Class of $\sum_i a_ib_i$ in $F/\wp(F)$, the discriminant in characteristic $2$</td>
+</tr>
+<tr>
+<td>$B(f/g)$</td>
+<td>Bezoutian form of the pair, in <em>Ramification Sequences and Bezoutian Forms</em></td>
+</tr>
+<tr>
 <td>$p, r, z$</td>
 <td>Positive index, negative index, nullity of a real form</td>
 </tr>
@@ -375,6 +403,7 @@ $$</p>
 <li>T. Y. Lam, <em>Introduction to Quadratic Forms over Fields</em>, Graduate Studies in Mathematics 67 (American Mathematical Society, 2005), for the arithmetic theory and the role of the discriminant.</li>
 <li>O. Timothy O'Meara, <em>Introduction to Quadratic Forms</em>, Grundlehren der mathematischen Wissenschaften 117 (Springer, 1973), for Sylvester's law and the classical classification.</li>
 <li>Winfried Scharlau, <em>Quadratic and Hermitian Forms</em>, Grundlehren der mathematischen Wissenschaften 270 (Springer, 1985), for the structure theory over fields.</li>
+<li>Richard Elman, Nikita Karpenko and Alexander Merkurjev, <em>The Algebraic and Geometric Theory of Quadratic Forms</em>, American Mathematical Society Colloquium Publications 56 (2008), for the Arf invariant, the associated bilinear form in characteristic $2$ and the classification there.</li>
 </ul>
       </div>
     </main>

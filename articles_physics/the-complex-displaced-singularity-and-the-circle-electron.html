@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Complex-Displaced Singularity and the Circle Electron — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-complex-displaced-singularity-and-the-circle-electron"><strong>The Complex-Displaced Singularity and the Circle Electron</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>In the biquaternion reading of electrodynamics, the vacuum Maxwell equation $\tilde{\nabla}\tilde{F}=0$ is the four-dimensional Cauchy–Riemann condition, and a charged particle is a <strong>singularity</strong> of the field rather than a source (<em>Maxwell's Equations in the Biquaternionic Formulation</em>, <em>Radiation from Accelerated Charges in Biquaternionic Form</em>). Lanczos, in the doctoral dissertation of 1919, took that reading one step further and asked a question that the source-free equation makes natural: if the field is a function of the biquaternionic position, what fixes the <strong>position of the singularity</strong>? Nothing in the vacuum equation does. The second half of his chapter on the electron as a singularity therefore perturbs the singularity's position off the material slice, into what he calls complexified space, and shows that the perturbation does not destroy the field theory — it replaces the point charge by a <strong>ring</strong>.</p>
+<p>This article develops that construction in the corpus conventions. It is the one place in the corpus where a singularity is deliberately displaced off the material subspace $\mathbb{M}_-$, and it is the classical, linear counterpart of the <strong>algebrodynamical ring</strong>, which the corpus records on a nonlinear primary equation (<em>The Algebrodynamical Programme: Nonlinear Cauchy–Riemann Conditions, Self-Quantized Charge, and Induced Causal Geometry</em>). The two rings are different objects on different equations, and the contrast is drawn below.</p>
+<p>The article is in three steps. It fixes the singular set of the displaced potential, which is a circle rather than a point. It reads the field of the ring, which acquires an intrinsic magnetic-type component that Gsponer and Hurni call <strong>mesomagnetic</strong>. And it records Lanczos's self-energy result, the finite difference of two separately divergent energies, which is the reason he believed the circle electron escaped the divergence of the point model. The result is a source claim of 1919, recorded here with the formula by which Lanczos reached it and with the numerical check of that formula.</p>
+<h2 id="the-displaced-potential-and-its-singular-set">The Displaced Potential and Its Singular Set</h2>
+<h3 id="the-coulomb-kernel-and-the-position-of-the-singularity">The Coulomb Kernel and the Position of the Singularity</h3>
+<p>In the stationary sector the field is carried by the scalar potential alone, and the four-potential is a material element with a purely imaginary scalar part,</p>
+<p>$$
+\tilde{A} = \frac{i\phi}{c}\,e_0 \in \mathbb{M}_-, \qquad \phi(\mathbf{x}) = \frac{q}{4\pi\epsilon}\,\frac{1}{\|\mathbf{x}-\mathbf{r}_0\|},
+$$</p>
+<p>where $\mathbf{r}_0$ is the position of the point charge, $\epsilon$ is the permittivity of the medium, and $\|\mathbf{x}\|$ is the ordinary Euclidean length of the vector part. The potential is singular on the set $\mathbf{x}=\mathbf{r}_0$, a single point, and it is the kernel $1/\|\mathbf{x}-\mathbf{r}_0\|$ whose geometry the construction uses; the charge and the permittivity enter only as the overall factor $q/4\pi\epsilon$ and are set aside below.</p>
+<p>Lanczos introduces potential and field strength as <strong>complex</strong> quantities. If the potential is complex-valued, then in his reading there is no reason for the constants $(\xi,\eta,\zeta)$ that locate the singularity to be real, and the natural generalisation is to let them range over the complex numbers. A rotation and a translation of the coordinates bring the singularity to</p>
+<p>$$
+\xi = 0, \qquad \eta = 0, \qquad \zeta = -i\varrho, \qquad \varrho \in \mathbb{R}_{>0},
+$$</p>
+<p>so that the whole displacement of the singularity from the origin is</p>
+<p>$$
+\Delta\tilde{Q} = \zeta\,e_3 = -i\varrho\,e_3 .
+$$</p>
+<p><strong>The displacement is informational.</strong> The element $-i\varrho e_3$ has a purely imaginary vector coefficient, so it is an element of the informational sector $\mathbb{M}_+$, and in that sector's own coordinates it is the displacement $z' = -\varrho$ along the third informational axis. Lanczos's phrase "displacing the electron into complexified space" is, in the corpus's terms, displacing the singularity along an <strong>imaginary direction of the vector coefficient</strong> — that is, along $\mathbb{M}_+$. The field points themselves remain material: they are the real elements $x\,e_1+y\,e_2+z\,e_3$, and the potential is evaluated on them. The construction therefore places the singularity in one sector and reads its field in the other.</p>
+<h3 id="the-square-of-the-distance-and-the-ring">The Square of the Distance and the Ring</h3>
+<p>With $\mathbf{r}_0 = -i\varrho e_3$ the squared Euclidean separation is</p>
+<p>$$
+\|\mathbf{x}-\mathbf{r}_0\|^2 = x^2 + y^2 + (z+i\varrho)^2 = \bigl(x^2+y^2+z^2-\varrho^2\bigr) + 2i\,z\varrho ,
+$$</p>
+<p>a <strong>complex</strong> number, and the potential is the reciprocal square root of it,</p>
+<p>$$
+\phi(\mathbf{x}) = \frac{1}{\sqrt{\,x^2 + y^2 + (z+i\varrho)^2\,}} .
+$$</p>
+<p>The singular set is the zero set of the radicand. Writing the radicand as $A+iB$ with $A=x^2+y^2+z^2-\varrho^2$ and $B=2z\varrho$, the zero set is $A=0$ together with $B=0$. The second condition gives $z=0$, and with $z=0$ the first gives $x^2+y^2=\varrho^2$. Hence the singular set of the real coordinates is the <strong>circle</strong></p>
+<p>$$
+\Gamma : \qquad z = 0, \qquad x^2 + y^2 = \varrho^2 ,
+$$</p>
+<p>a ring of radius $\varrho$ in the plane $z=0$, centred on the third axis. This is Lanczos's <strong>circle electron</strong>, <em>Kreiselektron</em>. A point singularity of the real potential has been opened into a ring by displacing its position into the informational sector. The radius of the ring is the magnitude of the imaginary part of the displacement, $\varrho=|\zeta|$, and the point electron is recovered in the limit $\varrho\to0$.</p>
+<h2 id="the-branch-disk-and-the-two-sheets">The Branch Disk and the Two Sheets</h2>
+<p>The circle is not the only distinguished set. Because $\phi$ is built from a square root, the circle bounds a <strong>branch disk</strong> on which the two determinations of the root meet and the function fails to be single-valued:</p>
+<p>$$
+D : \qquad z=0, \qquad x^2+y^2 < \varrho^2 .
+$$</p>
+<p>Across the disk the square root reverses sign, so $\phi$ changes sign. On the disk itself the radicand is real and negative, $x^2+y^2-\varrho^2<0$, so the root is purely imaginary and $\phi$ is purely imaginary there; outside the ring, on the same plane, the radicand is real and positive and $\phi$ is real. The potential therefore interpolates, as the plane $z=0$ is crossed, between the real and the purely imaginary determinations, and the whole of the disk, and not only its boundary, is a locus of the multi-valuedness.</p>
+<p>This is the point at which the two readings of the displacement differ. <strong>In Lanczos's own reading</strong> the sign change of $\phi$ is harmless for the field theory: the field strength $\tilde{F}$ is built from the potential by differentiation and changes sign in the same way, so the <strong>product</strong> of the potential and the field strength is continuous across the disk, and Lanczos integrates over the disk "above and below" and finds the contribution regular. The disk is thus a defect of the potential's single-valuedness and not of the field's regularity in his sense. <strong>In the corpus's reading</strong> the potential is a function on the biquaternion algebra, the displacement $\Delta\tilde{Q}$ is an element of $\mathbb{M}_+$, and the disk is the locus where the branch of the kernel must be chosen; the single-valued object is the field strength, not the potential, and the choice of branch is what a Cauchy-theoretic treatment would have to fix. In both readings the disk carries the branch structure and the circle carries the singularity.</p>
+<p>The single-valued physical statement that survives is this: <strong>the singular locus of the circle electron is the ring $\Gamma$, and the ring is thin — a line in space, not a surface.</strong> The disk is a multi-valuedness of the potential, visible in the sign of the field strength but not a set on which the field strength itself diverges.</p>
+<h2 id="the-field-of-the-ring-the-mesomagnetic-component">The Field of the Ring: the Mesomagnetic Component</h2>
+<h3 id="the-field-strength-is-complex">The Field Strength Is Complex</h3>
+<p>Because the potential is complex, its gradient is complex, and the field of the configuration</p>
+<p>$$
+\mathbf{E}_\phi(\mathbf{x}) = -\mathrm{grad}\,\phi(\mathbf{x}) = -\bigl(\partial_x\phi\,e_1 + \partial_y\phi\,e_2 + \partial_z\phi\,e_3\bigr)
+$$</p>
+<p>has both a real and an imaginary part at every point off the ring and off the disk. Writing $\phi=\phi_R+i\phi_I$, the real part $-\mathrm{grad}\,\phi_R$ is the electric field of the configuration and the imaginary part $-\mathrm{grad}\,\phi_I$ is a second field that survives from the displacement into $\mathbb{M}_+$. The imaginary part is not an artefact of the bookkeeping: it is nonzero at generic points, as it must be whenever $\varrho\neq0$, and it vanishes identically at $\varrho=0$, where the point electron is recovered and the field is purely electric.</p>
+<p>Away from the singular set the potential remains harmonic, since it is the analytic continuation of the harmonic Coulomb kernel in the parameter $\zeta$; each of the two parts $\phi_R,\phi_I$ therefore satisfies the three-dimensional Laplace equation separately, and the two fields are divergence- and curl-free where they are defined. The ring is the only singularity of the field. The check is direct: the Laplacian of $\phi$ computed by central differences at a hundred points off the ring is below $10^{-7}$, the level of the finite-difference error.</p>
+<h3 id="why-the-second-field-is-mesomagnetic-not-magnetic">Why the Second Field Is Mesomagnetic, Not Magnetic</h3>
+<p>An electric field that acquires an imaginary component under a displacement of the source looks at first like an electric field accompanied by a magnetic field, and Lanczos's calculation treats it that way: the second field of the displaced configuration is what supplies the compensating energy of the next section. Gsponer and Hurni record a correction that the corpus keeps with the claim. The second component is <strong>not</strong> an ordinary magnetic field. The magnetic field of electromagnetism is an axial vector, the field of a circulation, and it reverses under a space reflection while the electric field — a polar vector — does not. The imaginary component of the displaced field transforms as a <strong>polar</strong> vector, exactly as the electric field does, so it cannot be the magnetic field. Gsponer and Hurni name it a <strong>mesomagnetic</strong> field, and they note that the transformation properties of improper Lorentz transformations such as space reflection were not understood in 1919 and cannot be charged to Lanczos.</p>
+<p>The corpus records both statements and keeps them apart. What is certain is the algebra: the displacement into $\mathbb{M}_+$ produces a second field whose transformation character differs from that of the ordinary magnetic field. Whether it is called magnetic, mesomagnetic, or a mere imaginary part of a complexified electric field is a question of physical interpretation that the algebra does not decide.</p>
+<p><strong>The far field is the point field.</strong> The mesomagnetic forces are appreciable only near the ring. At distances large compared with $\varrho$ the displacement is a small perturbation of the position, and the field of the circle electron differs from that of the point electron by a quantity that vanishes with $\varrho/\|\mathbf{x}\|$. The ring is invisible from far away.</p>
+<h2 id="the-self-energy-the-difference-that-vanishes">The Self-Energy: the Difference That Vanishes</h2>
+<h3 id="the-hamilton-function-in-the-stationary-field">The Hamilton Function in the Stationary Field</h3>
+<p>Lanczos's reason for the construction is the self-energy. In the stationary field the density of the action integrand — his <strong>Hamiltonian function</strong> — is the difference of the electric and the magnetic energy densities. For a point electron the field is purely electric, and the self-energy integral of the Coulomb field diverges at the position of the charge: the energy of a point charge is infinite in the classical theory. For the circle electron the field is complex and carries the second, mesomagnetic component, and Lanczos finds that <strong>the electric energy still diverges, but the mesomagnetic energy diverges in the opposite direction and cancels it</strong>, so that the difference of the two tends to zero. The Hamiltonian function of the circle electron is therefore not necessarily infinite. This is the statement that the divergence of the point-charge self-energy is not forced by the field theory, but is a property of the point idealisation; moving the singularity into $\mathbb{M}_+$ removes it.</p>
+<p>The electric and the mesomagnetic energies are each divergent at the ring, and the claim is about their difference. Lanczos computes the difference by a limiting procedure. Because of the symmetry about the third axis he works in the plane $y=0$ and multiplies by $2\pi\varrho$; he integrates over the disk "above and below" from the radius $\varrho-\varepsilon$ inward — that part contributes nothing, the product of the potential and the field strength being regular there — and then over a small torus of radius $\varepsilon$ threaded on the ring,</p>
+<p>$$
+\rho = \varrho + \varepsilon\cos\varphi, \qquad z = \varepsilon\sin\varphi ,
+$$</p>
+<p>where $\rho=\sqrt{x^2+y^2}$ and $\varphi$ is the azimuth, and lets $\varepsilon\to0$. The Hamiltonian function of the ring is then</p>
+<p>$$
+H = \frac{2\pi\varrho}{\varepsilon}\int_0^{2\pi} \frac{\varepsilon+\varrho\,(\cos\varphi+i\sin\varphi)}{\bigl[\varepsilon+2\varrho\,(\cos\varphi+i\sin\varphi)\bigr]^2}\,d\varphi .
+$$</p>
+<h3 id="the-vanishing-of-the-integral">The Vanishing of the Integral</h3>
+<p>The integral vanishes, and it vanishes for every $\varepsilon$ in the range $0<\varepsilon<2\varrho$ in which it is taken. The reason is elementary and is worth recording because it is the whole content of the self-energy claim. Setting $u=e^{i\varphi}$ turns the integral into a contour integral over the unit circle,</p>
+<p>$$
+\int_0^{2\pi}\frac{\varepsilon+\varrho e^{i\varphi}}{\bigl[\varepsilon+2\varrho e^{i\varphi}\bigr]^2}\,d\varphi
+= \frac{1}{i}\oint \frac{\varepsilon+\varrho u}{u\,(\varepsilon+2\varrho u)^2}\,du ,
+$$</p>
+<p>whose integrand has a simple pole at $u=0$ and a double pole at $u=-\varepsilon/2\varrho$. For $\varepsilon<2\varrho$ both lie inside the contour. The residues are $+1/\varepsilon$ at $u=0$ and $-1/\varepsilon$ at $u=-\varepsilon/2\varrho$, and they cancel exactly, so the contour integral, and with it $H$, is zero. The cancellation of the two residues is the exact echo, at the level of the integral, of the cancellation of the electric and mesomagnetic energies at the level of the field: one divergent term and one oppositely divergent term, in the ratio that makes their difference finite, and in fact zero. The result has been recomputed here directly from the formula, by summing the integrand over a hundred equally spaced values of $\varphi$ for several $\varepsilon$ and $\varrho$: the integral is zero to machine precision, at the $10^{-16}$ level, in every case tried.</p>
+<p>Two qualifications belong with the result. The vanishing is the statement of Lanczos's model at the level of the stationary field; it is not a derivation that the physical electron has zero electromagnetic mass. And the cancellation is exact only because the electric and mesomagnetic contributions are computed from the same complex potential, so that their divergences are tied together; a deformation of the model that breaks the complex structure — for instance a real deformation of the ring — would spoil it. The corpus records the result as the source's, with the formula, and does not promote it into a framework result.</p>
+<h3 id="relation-to-the-finite-mass-programme">Relation to the Finite-Mass Programme</h3>
+<p>The circle electron is the static, singularity-side member of the family of constructions by which the Lanczos line confronts the self-energy divergence. The later programme of Gsponer and Hurni works on the <strong>retarded</strong> singularity and derives the standard action of electrodynamics from Lanczos's, finding a finite electromagnetic mass for a boundary tube of finite retarded radius; that result is recorded in <em>Radiation from Accelerated Charges in Biquaternionic Form</em>, together with its own limits. The two share the same structural move — the divergence is not assumed but traced to the idealisation — and differ in what is deformed: the retarded radius there, the position of the singularity here. Neither is the Abraham–Lorentz extended electron, and neither is a result of the corpus's own framework.</p>
+<h2 id="relation-to-the-algebrodynamical-ring">Relation to the Algebrodynamical Ring</h2>
+<p>The corpus records a second ring-shaped electron, and the two must be kept apart.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th></th>
+<th>Circle electron (Lanczos, 1919)</th>
+<th>Algebrodynamical ring</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Equation</td>
+<td>linear vacuum Maxwell, $\tilde{\nabla}\tilde{F}=0$</td>
+<td>nonlinear primary Cauchy–Riemann system</td>
+</tr>
+<tr>
+<td>Ring arises from</td>
+<td>complex displacement of a point singularity into $\mathbb{M}_+$</td>
+<td>self-dual solution of the nonlinear system</td>
+</tr>
+<tr>
+<td>Radius</td>
+<td>free, equal to the imaginary displacement $\varrho$</td>
+<td>fixed by the equation, the admissible family $R_n$</td>
+</tr>
+<tr>
+<td>Charge</td>
+<td>arbitrary</td>
+<td>self-quantised, minimal value $|q|=\tfrac14$</td>
+</tr>
+<tr>
+<td>Gravity</td>
+<td>none</td>
+<td>Kerr–Newman metric, $g=2$</td>
+</tr>
+</tbody>
+</table></div>
+<p>Both are classical models in which the electron is a ring rather than a point, and both are recorded in the corpus as external programmes rather than as results. The difference is the equation. Lanczos's ring lives on the <strong>linear</strong> Cauchy–Riemann equation, where the complex displacement is a symmetry of the equation and the ring is its image; the algebrodynamical ring lives on a <strong>nonlinear, over-determined</strong> primary equation, where the ring, the quantised charge and the induced metric are consequences of the nonlinearity. The linear ring has a free radius and no quantisation; the nonlinear ring has a fixed radius, a quantised charge and a metric. The corpus's linear framework reaches the first and is silent on the second, which is the boundary the algebrodynamical article states.</p>
+<h2 id="summary">Summary</h2>
+<p>Lanczos's circle electron is the displacement of a point singularity of the vacuum field off the material subspace $\mathbb{M}_-$ and into the informational sector $\mathbb{M}_+$. With the displacement $\Delta\tilde{Q}=-i\varrho e_3$, the singular set of the displaced Coulomb potential $\phi=1/\sqrt{x^2+y^2+(z+i\varrho)^2}$ is the ring $\Gamma: z=0$, $x^2+y^2=\varrho^2$, of radius equal to the magnitude of the imaginary displacement; the disk it bounds is a branch locus, not a second singularity, and the point electron is the limit $\varrho\to0$. The field of the ring is complex, carrying a second component that is polar under space reflection and that Gsponer and Hurni call mesomagnetic; it is appreciable only near the ring, and the far field is the point field.</p>
+<p>The construction's purpose is the self-energy. In the stationary field the Hamiltonian function is the difference of the electric and the mesomagnetic energies; each diverges at the ring, and their difference does not. Lanczos's limiting integral over a small torus threaded on the ring vanishes, and the vanishing is the exact cancellation of the two residues of an elementary contour integral, $+1/\varepsilon$ at $u=0$ and $-1/\varepsilon$ at $u=-\varepsilon/2\varrho$. The result is a claim of the source's, checked here by direct quadrature to machine precision and recorded with the later retarded-radii programme of Gsponer and Hurni as the two sides of the same structural move. The corpus's own linear framework reaches the construction and does not endorse its physical reading; the ring on the nonlinear algebrodynamical equation is a different object, on a different equation, with different consequences.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\phi$</td>
+<td>Scalar potential; the displaced Coulomb potential $1/\sqrt{x^2+y^2+(z+i\varrho)^2}$, up to the charge factor</td>
+</tr>
+<tr>
+<td>$\mathbf{r}_0 = -i\varrho e_3$</td>
+<td>Position of the singularity, displaced into the informational sector</td>
+</tr>
+<tr>
+<td>$\Delta\tilde{Q} = -i\varrho e_3$</td>
+<td>The displacement itself; an element of $\mathbb{M}_+$ with $z'=-\varrho$</td>
+</tr>
+<tr>
+<td>$\varrho$</td>
+<td>Magnitude of the imaginary displacement; radius of the circle electron</td>
+</tr>
+<tr>
+<td>$\Gamma$</td>
+<td>Singular set: the ring $z=0$, $x^2+y^2=\varrho^2$</td>
+</tr>
+<tr>
+<td>$D$</td>
+<td>Branch disk $z=0$, $x^2+y^2<\varrho^2$, where the square root changes sign</td>
+</tr>
+<tr>
+<td>$\rho=\sqrt{x^2+y^2}$</td>
+<td>Cylindrical radius, used in the torus parametrisation</td>
+</tr>
+<tr>
+<td>$\varphi$</td>
+<td>Azimuth on the torus threaded on the ring</td>
+</tr>
+<tr>
+<td>$\rho=\varrho+\varepsilon\cos\varphi,\ z=\varepsilon\sin\varphi$</td>
+<td>Small torus threaded on the ring; the integration surface</td>
+</tr>
+<tr>
+<td>$\varepsilon$</td>
+<td>Radius of the torus threaded on the ring (Lanczos's $\epsilon$, renamed to avoid the permittivity)</td>
+</tr>
+<tr>
+<td>$H$</td>
+<td>Hamiltonian function (action density) of the ring; the difference of electric and mesomagnetic energy</td>
+</tr>
+<tr>
+<td>$\mathbf{E}_\phi = -\mathrm{grad}\,\phi$</td>
+<td>Complexified electric field of the displaced configuration; real part electric, imaginary part mesomagnetic</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_-$, $\mathbb{M}_+$</td>
+<td>Material and informational sectors</td>
+</tr>
+<tr>
+<td>$\epsilon$</td>
+<td>Permittivity of the medium (Coulomb factor only)</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Cornelius Lanczos, <em>The Functional Theoretical Relationships of the Maxwell Aether Equations</em> (doctoral dissertation, Budapest, handwritten 1919; English typescript arXiv:physics/0408079), Chapter 7, <em>Das Kreiselektron</em>, for the displaced potential, the ring, the branch disk, and the vanishing Hamiltonian function of the ring.</li>
+<li>A. Gsponer and J.-P. Hurni, "Lanczos's Functional Theory of Electrodynamics: A Commentary on Lanczos's PhD Dissertation" (1998; arXiv:math-ph/0402012v2), for the reading of the complex displacement as a translation into complexified space, the finiteness of the self-energy for an imaginary translation, the mesomagnetic character of the imaginary field component, and the particle-spectrum remark.</li>
+<li><em>Radiation from Accelerated Charges in Biquaternionic Form</em>, and the sources there, for the retarded-radii programme in which the standard action is derived from Lanczos's and the electromagnetic mass is finite for a boundary tube of finite retarded radius.</li>
+<li><em>The Algebrodynamical Programme: Nonlinear Cauchy–Riemann Conditions, Self-Quantized Charge, and Induced Causal Geometry</em>, for the second ring, on a nonlinear primary equation, with its self-quantised charge and its Kerr–Newman metric.</li>
+<li><em>Maxwell's Equations in the Biquaternionic Formulation</em>, for the reading of the vacuum equation as a four-dimensional Cauchy–Riemann condition and for the stationary limit whose Coulomb kernel is the starting point here.</li>
+<li>E. T. Newman, "Maxwell's equations and ideal null coordinates" and the complex-Minkowski-space literature, for the modern use of a complex shift of a real singularity; the construction above is the same displacement read as a map from a point to a ring rather than as a coordinate change.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

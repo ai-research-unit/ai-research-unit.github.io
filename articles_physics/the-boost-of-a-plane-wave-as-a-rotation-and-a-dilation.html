@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Boost of an Electromagnetic Plane Wave as a Rotation and a Dilation — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-boost-of-an-electromagnetic-plane-wave-as-a-rotation-and-a-dilation"><strong>The Boost of an Electromagnetic Plane Wave as a Rotation and a Dilation</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A Lorentz boost acts on a plane wave in three apparently different ways: it shifts the frequency by the Doppler factor, it alters the propagation direction by aberration, and it rotates the polarisation. In the biquaternion algebra these are a single operation. The wave element and the field amplitude of a null wave are carried by a <strong>spatial rotation composed with a dilation</strong>, and the rotation and the dilation are the same for both.</p>
+<p>The result is due to William E. Baylis (<em>Relativity in Introductory Physics</em>, Can. J. Phys. <strong>82</strong> (2004) 853–873, arXiv:physics/0406158), who derived it in the algebra of physical space and flagged it as the paper's new result on the boost of a wave. The present article states it in the conventions of this series and verifies it. Two objects enter: the <strong>wave biquaternion</strong> $\tilde{K}$, which is a null element of the material sector and whose coefficient of $i$ is the frequency, and the <strong>field-strength biquaternion</strong> $\tilde{F}$ of <em>The Field-Strength Biquaternion and Its Invariants</em>, which is a null pure vector. Written for a wave of direction $\hat{\mathbf k}$, wave speed $c$ and angular frequency $\omega$,</p>
+<p>$$
+\tilde{K} = \frac{\omega}{c}\left(i + \hat{\mathbf k}\right),
+\qquad
+N(\tilde{K}) = 0 ,
+$$</p>
+<p>which is the four-wavevector $\tilde{K} = \frac{i\omega}{c}e_0 + \mathbf k$ of the plane-wave exercise written with $\mathbf k = \frac{\omega}{c}\hat{\mathbf k}$. The claim is that for a boost with rotor $\tilde\Lambda = \cosh\frac{w}{2} + i\sinh\frac{w}{2}\hat{\mathbf u}$ (Hermitian, of unit norm, $w$ the rapidity and $\hat{\mathbf u}$ the boost direction) there is a <strong>unit real quaternion</strong> $\tilde{R}$ and a positive scalar $e^{d}$ for which</p>
+<p>$$
+\boxed{\;
+\tilde{K}' \;=\; \tilde\Lambda\,\tilde{K}\,\tilde\Lambda^\dagger \;=\; e^{d}\,\tilde{R}\,\tilde{K}\,\bar{\tilde{R}},
+\qquad
+\tilde{F}' \;=\; \bar{\tilde\Lambda}\,\tilde{F}\,\tilde\Lambda \;=\; e^{d}\,\tilde{R}\,\tilde{F}\,\bar{\tilde{R}} .
+\;}
+$$</p>
+<p>Since $\tilde{R}$ is a real quaternion, $\bar{\tilde{R}} = \tilde{R}^{-1}$ and the action $\tilde{R}\,\cdot\,\bar{\tilde{R}}$ is a <strong>rotation of physical space</strong>; the scalar $e^{d}$ is a dilation. A boost of a wave, then, is not a mixture of three effects but a similarity of Euclidean three-space, the same one acting on the wave element and on the field.</p>
+<p>The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with $e_0 = 1, e_1, e_2, e_3$, $e_k^2 = -e_0$, and the scalar imaginary $i$ central with $i^2 = -1$. A <strong>real vector</strong> is $\mathbf v = v_1e_1 + v_2e_2 + v_3e_3$ with the $v_k$ real; a hat denotes a unit vector, $\hat{\mathbf k}\hat{\mathbf k} = -e_0$. The scalar imaginary multiplies likewise, so $i\hat{\mathbf k}$ is imaginary-vector. The material sector $\mathbb{M}_-$ carries the four-vectors, the Hermitian sector $\mathbb{M}_+$ carries the boost rotors, and $i\mathbb{M}_+ = \mathbb{M}_-$. The field is taken in vacuum, $c = c_0$, where the source-free Maxwell system is Lorentz covariant and the field strength transforms in the bivector representation $\tilde{F}\mapsto\bar{\tilde\Lambda}\tilde{F}\tilde\Lambda$ (<em>Exercise: Duality Rotation and the Riemann–Silberstein Vector</em>, Problem 5); the field-strength normalization cancels from the statement, which is homogeneous in $\tilde{F}$. Throughout, $\mathbf v$ is reserved for particle and frame velocities.</p>
+<h2 id="the-null-wave-element-and-the-pacwoman-property">The Null Wave Element and the Pacwoman Property</h2>
+<p>The one algebraic fact behind the result is a property of null elements that has come to be called the <strong>pacwoman property</strong>: a null element of the form $i+\hat{\mathbf k}$ "gobbles" factors of $\hat{\mathbf k}$.</p>
+<p><strong>Lemma (pacwoman).</strong> Let $\hat{\mathbf k}$ be a unit real vector. Then</p>
+<p>$$
+\hat{\mathbf k}\left(i + \hat{\mathbf k}\right) \;=\; \left(i + \hat{\mathbf k}\right)\hat{\mathbf k} \;=\; i\left(i + \hat{\mathbf k}\right).
+$$</p>
+<p><strong>Proof.</strong> Expanding, $\hat{\mathbf k}(i + \hat{\mathbf k}) = i\hat{\mathbf k} + \hat{\mathbf k}\hat{\mathbf k} = i\hat{\mathbf k} - e_0$ using $\hat{\mathbf k}\hat{\mathbf k} = -e_0$ and the centrality of $i$; and $(i + \hat{\mathbf k})\hat{\mathbf k} = i\hat{\mathbf k} + \hat{\mathbf k}\hat{\mathbf k} = i\hat{\mathbf k} - e_0$. On the other hand $i(i + \hat{\mathbf k}) = i^2 + i\hat{\mathbf k} = i\hat{\mathbf k} - e_0$. The three expressions agree.</p>
+<p>The lemma says that right-multiplication by $\hat{\mathbf k}$ acts on the null element $i+\hat{\mathbf k}$ exactly as multiplication by the scalar $i$ does. The name records the same statement in the form $k(1+k) = 1+k$ of the source, where $k$ is the null paravector $1+\hat{\mathbf k}$ of the algebra of physical space; in the series basis the null paravector is the Hermitian element $e_0 + i\hat{\mathbf k}$ and its gobbling factor is $i\hat{\mathbf k}$:</p>
+<p>$$
+\left(i\hat{\mathbf k}\right)\left(e_0 + i\hat{\mathbf k}\right) \;=\; \left(e_0 + i\hat{\mathbf k}\right)\left(i\hat{\mathbf k}\right) \;=\; e_0 + i\hat{\mathbf k}.
+$$</p>
+<p><strong>The nullity of the wave element.</strong> The lemma is why $\tilde{K} = \frac{\omega}{c}(i+\hat{\mathbf k})$ has vanishing norm. Indeed $\bar{\tilde{K}} = \frac{\omega}{c}(i-\hat{\mathbf k})$ and</p>
+<p>$$
+N(\tilde{K}) = \tilde{K}\bar{\tilde{K}} = \frac{\omega^2}{c^2}\left(i+\hat{\mathbf k}\right)\left(i-\hat{\mathbf k}\right)
+= \frac{\omega^2}{c^2}\left(i^2 - \hat{\mathbf k}\hat{\mathbf k}\right) = \frac{\omega^2}{c^2}\left(-1 + 1\right) = 0,
+$$</p>
+<p>because $\hat{\mathbf k}\hat{\mathbf k} = -e_0$. The null element is a zero divisor of $\mathbb{B}$ (<em>Biquaternion Zero Divisors</em>, <em>The Light Cone as the Biquaternion Zero-Divisor Cone</em>), and this is the algebraic form of the statement that light has no rest frame.</p>
+<h2 id="the-null-flag-and-the-flagpole">The Null Flag and the Flagpole</h2>
+<p>The null element $e_0+i\hat{\mathbf k}$ has a geometric reading, due to Penrose, that the pacwoman lemma makes precise. A <strong>null flag</strong> in Minkowski space is a lightlike direction together with a plane containing it: the direction is the <strong>flagpole</strong>, and the plane is the <strong>flag</strong>. For the wave element the flagpole is the lightlike paravector $e_0+i\hat{\mathbf k}$ itself, and the flag is the two-plane transverse to $\hat{\mathbf k}$; the electric field of a plane wave lies in the flag, and the magnetic field is the flag swept along the flagpole as the wave propagates. Transversality of the electromagnetic field is the statement that the amplitude has no component along the flagpole; the pacwoman identity $i\hat{\mathbf k}(e_0+i\hat{\mathbf k}) = e_0+i\hat{\mathbf k}$ is the statement that the flagpole absorbs its own direction without leaving the null cone.</p>
+<p>The flagpole is also a <strong>pure state</strong>. The element</p>
+<p>$$
+\tilde\Pi = \tfrac12\left(e_0 + i\hat{\mathbf k}\right)
+$$</p>
+<p>is idempotent, $\tilde\Pi^2 = \tilde\Pi$, and Hermitian, $\tilde\Pi^\dagger = \tilde\Pi$, so it is a projector; and it is exactly the rank-one projector $\tilde\Pi_+(\hat{\mathbf k}) = \tfrac12(e_0+i\hat{\mathbf k})$ of the idempotent convention of <em>Conventions in the Biquaternion Universe</em>. The square of the un-normalised flagpole is $2\tilde\Pi$ rather than $\tilde\Pi$, which is the sense in which the flagpole is twice a state: the natural normalisation of the null direction carries the factor two that the projector removes. The set of null elements is the light cone, and the light cone is the zero-divisor cone (<em>The Light Cone as the Biquaternion Zero-Divisor Cone</em>); the flagpole is therefore a null direction that is simultaneously a projector of the informational sector, and the two readings — a lightlike vector and a pure state — are the two faces of the same eight parameters.</p>
+<p><strong>Verification.</strong> For a hundred random unit $\hat{\mathbf k}$: $N(e_0+i\hat{\mathbf k}) = 0$, the pacwoman identity holds in both orders, and $\tilde\Pi$ is idempotent and Hermitian, all to machine precision.</p>
+<h2 id="the-boost-of-the-null-wave-element">The Boost of the Null Wave Element</h2>
+<p>Let $\tilde\Lambda = \cosh\frac{w}{2} + i\sinh\frac{w}{2}\hat{\mathbf u}$ be the boost rotor, so that $\tilde\Lambda$ is Hermitian ($\tilde\Lambda^\dagger = \tilde\Lambda$), $\bar{\tilde\Lambda} = \tilde\Lambda^{-1} = \cosh\frac{w}{2} - i\sinh\frac{w}{2}\hat{\mathbf u}$, and $N(\tilde\Lambda) = e_0$ (<em>The Lorentz Transformation as a Biquaternionic Rotation</em>). The pacwoman lemma turns the product of the rotor with the null element into a product of a <em>dilation–rotation factor</em> with the same null element.</p>
+<p><strong>Proposition (the factorisation).</strong> For every unit real $\hat{\mathbf u}$ and $\hat{\mathbf k}$,</p>
+<p>$$
+\tilde\Lambda\left(i + \hat{\mathbf k}\right) \;=\; \left(\cosh\frac{w}{2} + \sinh\frac{w}{2}\,\hat{\mathbf u}\hat{\mathbf k}\right)\left(i + \hat{\mathbf k}\right).
+$$</p>
+<p><strong>Proof.</strong> Expand the left side,</p>
+<p>$$
+\tilde\Lambda\left(i + \hat{\mathbf k}\right)
+= \cosh\frac{w}{2}\left(i + \hat{\mathbf k}\right) + i\sinh\frac{w}{2}\,\hat{\mathbf u}\left(i + \hat{\mathbf k}\right).
+$$</p>
+<p>In the second term the centrality of $i$ and the lemma in the form $i(i+\hat{\mathbf k}) = \hat{\mathbf k}(i+\hat{\mathbf k})$ give</p>
+<p>$$
+i\,\hat{\mathbf u}\left(i + \hat{\mathbf k}\right)
+= \hat{\mathbf u}\, i\left(i + \hat{\mathbf k}\right)
+= \hat{\mathbf u}\,\hat{\mathbf k}\left(i + \hat{\mathbf k}\right),
+$$</p>
+<p>so that the two terms carry a common factor $i+\hat{\mathbf k}$:</p>
+<p>$$
+\tilde\Lambda\left(i + \hat{\mathbf k}\right)
+= \left(\cosh\frac{w}{2} + \sinh\frac{w}{2}\,\hat{\mathbf u}\hat{\mathbf k}\right)\left(i + \hat{\mathbf k}\right). 
+$$</p>
+<p>The point of the proposition is that the factor</p>
+<p>$$
+\tilde{D} \;=\; \cosh\frac{w}{2} + \sinh\frac{w}{2}\,\hat{\mathbf u}\hat{\mathbf k}
+$$</p>
+<p>contains the null element no longer: it is a real quaternion, that is an element of $\mathbb H_{\mathbb B}$, and it is the product of the dilation and the rotation. The product $\hat{\mathbf u}\hat{\mathbf k}$ of two unit real vectors is a unit real quaternion, and with the quaternion product rule $\mathbf u\mathbf k = -\mathbf u\cdot\mathbf k + \mathbf u\times\mathbf k$ it separates into its scalar and vector parts,</p>
+<p>$$
+\hat{\mathbf u}\hat{\mathbf k} \;=\; -\cos\alpha\,e_0 + \hat{\mathbf u}\times\hat{\mathbf k},
+\qquad
+\cos\alpha = \hat{\mathbf u}\cdot\hat{\mathbf k},
+$$</p>
+<p>so that $\tilde{D} = \left(\cosh\frac{w}{2} - \sinh\frac{w}{2}\cos\alpha\right)e_0 + \sinh\frac{w}{2}\,\hat{\mathbf u}\times\hat{\mathbf k}$ is a scalar plus a real vector, with</p>
+<p>$$
+\tilde{D}\bar{\tilde{D}} = \left(\cosh\frac{w}{2} - \sinh\frac{w}{2}\cos\alpha\right)^2e_0 + \left|\sinh\frac{w}{2}\,\hat{\mathbf u}\times\hat{\mathbf k}\right|^2 e_0
+= \left(\cosh w - \sinh w\cos\alpha\right)e_0 ,
+$$</p>
+<p>using $|\hat{\mathbf u}\times\hat{\mathbf k}|^2 = \sin^2\alpha$. Every real quaternion of positive norm is a positive scalar times a unit real quaternion, and $\tilde{D} = e^{d/2}\tilde{R}$ with</p>
+<p>$$
+\boxed{\; e^{d} \;=\; \cosh w - \cos\alpha\,\sinh w \;},
+$$</p>
+<p>the relativistic Doppler factor of a wave propagating at angle $\alpha$ to the boost, and $\tilde{R}$ a unit real quaternion — a rotation rotor of physical space (<em>Biquaternion Rotations and Lorentz Transformations</em>).</p>
+<h2 id="the-rotation-and-the-dilation-explicitly">The Rotation and the Dilation, Explicitly</h2>
+<p>Writing $\hat{\mathbf b}$ for the unit real vector along $\hat{\mathbf u}\times\hat{\mathbf k}$ (when the cross product does not vanish), the rotation rotor is a rotation about the axis perpendicular to the plane of $\hat{\mathbf u}$ and $\hat{\mathbf k}$,</p>
+<p>$$
+\tilde{R} \;=\; \cos\frac{\theta}{2} + \sin\frac{\theta}{2}\,\hat{\mathbf b},
+\qquad
+\tan\frac{\theta}{2} \;=\; \frac{\sinh\frac{w}{2}\,\sin\alpha}{\cosh\frac{w}{2} - \sinh\frac{w}{2}\cos\alpha},
+$$</p>
+<p>with $\sin\alpha = |\hat{\mathbf u}\times\hat{\mathbf k}|$ and $\theta$ the rotation angle, taken with the sense of $\hat{\mathbf b}$. The formulas are read off from $\tilde{D} = e^{d/2}\tilde{R}$ by comparing the scalar parts and the magnitudes of the vector parts.</p>
+<p>The rotation acts on the propagation direction by rotating it <strong>in the plane of $\hat{\mathbf u}$ and $\hat{\mathbf k}$</strong>, which is the algebraic form of aberration:</p>
+<p>$$
+\tilde{R}\,\hat{\mathbf k}\,\bar{\tilde{R}} \;=\; \cos\theta\,\hat{\mathbf k} - \sin\theta\,\hat{\mathbf e},
+\qquad
+\hat{\mathbf e} \;=\; \frac{\hat{\mathbf u} - \cos\alpha\,\hat{\mathbf k}}{\sin\alpha},
+$$</p>
+<p>where $\hat{\mathbf e}$ is the unit vector in the plane of $\hat{\mathbf u}$ and $\hat{\mathbf k}$, perpendicular to $\hat{\mathbf k}$ and pointing from $\hat{\mathbf k}$ toward $\hat{\mathbf u}$ — the component of $\hat{\mathbf u}$ transverse to $\hat{\mathbf k}$, normalized; in particular $\hat{\mathbf u} = \cos\alpha\,\hat{\mathbf k} + \sin\alpha\,\hat{\mathbf e}$. In the transverse case $\hat{\mathbf u}\cdot\hat{\mathbf k} = 0$ this reduces to the source's $\tilde{R}\hat{\mathbf k}\bar{\tilde{R}} = \hat{\mathbf k}\cos\theta - \hat{\mathbf u}\sin\theta$, and it is the general form above, not the transverse special case, that the rotation of a non-transverse ray requires.</p>
+<p>The sign is the one fixed by the series' boost rotor; it records that the parameter $\hat{\mathbf u}$ of $\tilde\Lambda$ points opposite to the velocity, so that $\hat{\mathbf k}$ moves <em>away</em> from $\hat{\mathbf u}$ and hence <em>toward</em> the velocity as $\theta$ grows. Because $\tilde{R}$ commutes with $i$, it acts on the null element $\tilde{K}$ and on the field $\tilde{F}$ through the same sandwich, and since $\bar{\tilde{R}} = \tilde{R}^{-1}$ the factor $e^{d}$ is the sole change of scale. The frequency and the field amplitude therefore scale by the same number $e^{d}$, so the intensity, quadratic in the field, scales by $e^{2d}$ — the classical content of the statement that a boost stretches the wave train while rescaling it.</p>
+<p><strong>The transverse case.</strong> When the wave propagates perpendicular to the boost, $\hat{\mathbf u}\cdot\hat{\mathbf k} = 0$, so $\cos\alpha = 0$ and the formulas simplify to the ones the source exhibits:</p>
+<p>$$
+e^{d} = \cosh w = \gamma,
+\qquad
+\tan\frac{\theta}{2} = \tanh\frac{w}{2},
+\qquad
+e^{d/2} = \frac{\cosh\frac{w}{2}}{\cos\frac{\theta}{2}} .
+$$</p>
+<p>The first is the <strong>transverse Doppler</strong> factor: a wave crossing the boost perpendicular to it is blueshifted by $\gamma$, with no first-order term. The second says the aberration drag of a transversely crossing ray by a boost of rapidity $w$ is the angle whose half-tangent is $\tanh\frac{w}{2}$, that is $\cos\theta = \operatorname{sech}w$, so the ray is dragged forward and its angle to the boost tends to $\pi/2$ as $w\to\infty$. In this case $\hat{\mathbf b} = \hat{\mathbf u}\times\hat{\mathbf k}$ is exactly the unit rotation axis and $\tilde{R} = \cos\frac{\theta}{2} + \sin\frac{\theta}{2}\hat{\mathbf u}\hat{\mathbf k}$.</p>
+<p><strong>Parallel propagation.</strong> When $\hat{\mathbf u}\times\hat{\mathbf k} = 0$, the axis is undefined, $\theta = 0$ and the boost is a pure dilation: $e^{d} = \cosh w \mp \sinh w = e^{\mp w}$ for $\hat{\mathbf k} = \pm\hat{\mathbf u}$. There is no rotation, and the wave element and field are simply rescaled.</p>
+<h2 id="the-field-transforms-the-same-way">The Field Transforms the Same Way</h2>
+<p>The field strength of a source-free plane wave is a null pure vector, and it is tied to the wave element by the annihilation condition $\tilde{K}\tilde{F} = 0$ of the plane-wave exercise. Under the boost it transforms in the bivector representation, $\tilde{F}\mapsto\bar{\tilde\Lambda}\tilde{F}\tilde\Lambda$, not in the four-vector representation (<em>Exercise: Duality Rotation and the Riemann–Silberstein Vector</em>, Problem 5, where the four-vector candidate is shown to fail on a boost). The theorem of the section above applies to it with the same rotation and the same dilation.</p>
+<p><strong>Proposition.</strong> With $\tilde{R}$ and $e^{d}$ as above, the null field strength of the same wave satisfies</p>
+<p>$$
+\bar{\tilde\Lambda}\,\tilde{F}\,\tilde\Lambda \;=\; e^{d}\,\tilde{R}\,\tilde{F}\,\bar{\tilde{R}} .
+$$</p>
+<p>The verification is direct: writing the wave amplitude as $\tilde{F}_0 = i\sqrt{\epsilon_0}\,\mathbf E_0 - \sqrt{\mu_0}\,\mathbf H_0$ with $\mathbf E_0\perp\hat{\mathbf k}$ and $\mathbf H_0 = Z_0^{-1}\hat{\mathbf k}\times\mathbf E_0$, the identity holds for both polarisations of the wave and hence, the map being linear in $\tilde{F}$, for every null field of that wave. The same computation gives the field of the boosted wave in the frame in which the wave element is the one computed above.</p>
+<p>Two consequences deserve recording. First, the electric and magnetic fields are rotated and rescaled by the same $\tilde{R}$ and $e^{d}$, so the polarisation direction, the propagation direction and the polarisation ellipse are carried by a single Euclidean similarity; this is why the boost of a plane wave can be drawn as a rotation of the wave's triad rather than as a mixing of field components. Second, because the field stays null, the boosted wave is still a radiation field and no Lorentz frame can make either field vanish — the null type of the invariant classification is preserved, as the field-strength article requires.</p>
+<h2 id="physical-reading">Physical Reading</h2>
+<p>The identity turns the kinematics of a boosted wave into three readings of one formula:</p>
+<ul>
+<li><strong>Frequency.</strong> The coefficient of $i$ in $\tilde{K}'$ is $e^{d}\omega = \left(\cosh w - \cos\alpha\sinh w\right)\omega$. This is the relativistic Doppler factor of <em>Exercise: The Relativistic Doppler Effect</em>, recovered here as the scalar factor of the dilation.</li>
+<li><strong>Direction.</strong> The rotation $\tilde{R}$ carries $\hat{\mathbf k}$ to $\cos\theta\,\hat{\mathbf k} - \sin\theta\,\hat{\mathbf e}$ with $\hat{\mathbf e} = (\hat{\mathbf u}-\cos\alpha\,\hat{\mathbf k})/\sin\alpha$ the transverse direction of $\hat{\mathbf u}$, so that $\hat{\mathbf k}$ is dragged toward the velocity by the angle $\theta$; in the transverse case this is the elementary form $\hat{\mathbf k}\cos\theta - \hat{\mathbf u}\sin\theta$. This is aberration, recovered as the angle of the rotation.</li>
+<li><strong>Amplitude and polarisation.</strong> The field is rotated by $\tilde{R}$ and scaled by $e^{d}$, so the Poynting vector and the energy density inherit the same similarity.</li>
+</ul>
+<p>What the identity does <strong>not</strong> say is equally worth stating. The rotation $\tilde{R}$ is a rotation of physical space, not a Lorentz transformation of spacetime; the Lorentz character of the boost has been entirely absorbed into the dilation $e^{d}$ and the rotation $\tilde{R}$, and this is possible only because the wave is null. For a massive particle the same boost cannot be so reduced: the boost of a timelike four-velocity mixes the temporal and spatial components irreducibly, and there is no dilation and rotation of three-space that reproduces it. The reduction is thus a property of light, not of the Lorentz group.</p>
+<p>A second caution is the medium. The identity is an identity of the vacuum algebra, where the source-free system is Lorentz covariant and the field strength transforms in the bivector representation. In a material medium the Lorentz action on the field needs the constitutive relations, and the plane-wave exercise records that the medium setting does not by itself establish the Lorentz covariance of the invariants; the wave element $\tilde{K}$ and the boost rotor are unaffected, since they are kinematic, but the field statement is a vacuum statement unless the medium is at rest in a frame in which the constitutive laws are prescribed.</p>
+<h2 id="summary">Summary</h2>
+<p>A boost of an electromagnetic plane wave is a rotation of physical space composed with a dilation, and the rotation and the dilation are the same for the wave element and for the field. The whole result rests on the <strong>pacwoman property</strong> of the null element, $\hat{\mathbf k}(i+\hat{\mathbf k}) = i(i+\hat{\mathbf k}) = (i+\hat{\mathbf k})\hat{\mathbf k}$, which factors the boost rotor against the null element,</p>
+<p>$$
+\tilde\Lambda\left(i+\hat{\mathbf k}\right) = \left(\cosh\frac{w}{2} + \sinh\frac{w}{2}\hat{\mathbf u}\hat{\mathbf k}\right)\left(i+\hat{\mathbf k}\right),
+$$</p>
+<p>leaving a real quaternion $\tilde{D} = \cosh\frac{w}{2} + \sinh\frac{w}{2}\hat{\mathbf u}\hat{\mathbf k}$, a scalar plus a real vector, which is $e^{d/2}\tilde{R}$ with</p>
+<p>$$
+e^{d} = \cosh w - \cos\alpha\,\sinh w,
+\qquad
+\tilde{R} = \cos\frac{\theta}{2} + \sin\frac{\theta}{2}\hat{\mathbf b},
+\qquad
+\tan\frac{\theta}{2} = \frac{\sinh\frac{w}{2}\sin\alpha}{\cosh\frac{w}{2} - \sinh\frac{w}{2}\cos\alpha},
+$$</p>
+<p>where $\alpha$ is the angle between $\hat{\mathbf u}$ and $\hat{\mathbf k}$ and $\hat{\mathbf b}$ the unit vector along $\hat{\mathbf u}\times\hat{\mathbf k}$. Then</p>
+<p>$$
+\tilde{K}' = \tilde\Lambda\tilde{K}\tilde\Lambda^\dagger = e^{d}\tilde{R}\tilde{K}\bar{\tilde{R}},
+\qquad
+\tilde{F}' = \bar{\tilde\Lambda}\tilde{F}\tilde\Lambda = e^{d}\tilde{R}\tilde{F}\bar{\tilde{R}} .
+$$</p>
+<p>Transversely the dilation is $\gamma$ — the transverse Doppler factor — and $\tan\frac{\theta}{2} = \tanh\frac{w}{2}$; parallel to the boost there is no rotation and the dilation is $e^{\mp w}$. The reduction is possible only because the wave is null, and the field statement is a vacuum statement.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B}$, $e_0 = 1, e_k$</td>
+<td>Biquaternion algebra, quaternion basis with $e_k^2 = -e_0$</td>
+</tr>
+<tr>
+<td>$i$</td>
+<td>Scalar imaginary, $i^2 = -1$, central</td>
+</tr>
+<tr>
+<td>$\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_\pm$</td>
+<td>Real-quaternion, Hermitian and anti-Hermitian subspaces</td>
+</tr>
+<tr>
+<td>$\mathbf k = k\hat{\mathbf k} = \frac{\omega}{c}\hat{\mathbf k}$</td>
+<td>Wavevector, $k = \omega/c$, $\hat{\mathbf k}$ its unit direction</td>
+</tr>
+<tr>
+<td>$\tilde{K} = \frac{\omega}{c}(i+\hat{\mathbf k})$</td>
+<td>Wave biquaternion (four-wavevector), null, $N(\tilde{K}) = 0$</td>
+</tr>
+<tr>
+<td>$\tilde{F}$</td>
+<td>Field-strength biquaternion, pure vector, null for a plane wave, $\tilde{K}\tilde{F}=0$</td>
+</tr>
+<tr>
+<td>$\tilde\Lambda = \cosh\frac{w}{2} + i\sinh\frac{w}{2}\hat{\mathbf u}$</td>
+<td>Boost rotor, Hermitian, unit norm; $w$ rapidity, $\hat{\mathbf u}$ boost direction</td>
+</tr>
+<tr>
+<td>$\tilde{R} = \cos\frac{\theta}{2} + \sin\frac{\theta}{2}\hat{\mathbf b}$</td>
+<td>Spatial rotation rotor, unit real quaternion</td>
+</tr>
+<tr>
+<td>$\hat{\mathbf b}$</td>
+<td>Unit real vector along $\hat{\mathbf u}\times\hat{\mathbf k}$</td>
+</tr>
+<tr>
+<td>$e^{d}$</td>
+<td>Dilation factor, $= \cosh w - \cos\alpha\sinh w$ (Doppler factor)</td>
+</tr>
+<tr>
+<td>$\alpha$</td>
+<td>Angle between $\hat{\mathbf u}$ and $\hat{\mathbf k}$, $\cos\alpha = \hat{\mathbf u}\cdot\hat{\mathbf k}$</td>
+</tr>
+<tr>
+<td>$\hat{\mathbf e} = (\hat{\mathbf u}-\cos\alpha\,\hat{\mathbf k})/\sin\alpha$</td>
+<td>Unit in-plane vector transverse to $\hat{\mathbf k}$, pointing toward $\hat{\mathbf u}$</td>
+</tr>
+<tr>
+<td>$\theta$</td>
+<td>Rotation angle, $\tan\frac{\theta}{2} = \frac{\sinh\frac{w}{2}\sin\alpha}{\cosh\frac{w}{2}-\sinh\frac{w}{2}\cos\alpha}$</td>
+</tr>
+<tr>
+<td>$c = c_0$</td>
+<td>Vacuum speed of light (the field statement is a vacuum statement)</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>William E. Baylis, "Relativity in Introductory Physics", <em>Canadian Journal of Physics</em> <strong>82</strong> (2004) 853–873 (arXiv:physics/0406158), for the algebra of physical space, the pacwoman property, and the boost of a plane wave as a rotation and a dilation.</li>
+<li>William E. Baylis, <em>Electrodynamics: A Modern Geometric Approach</em> (Birkhäuser, 1999), for the paravector formalism in which the result is stated.</li>
+<li>Chris Doran and Anthony Lasenby, <em>Geometric Algebra for Physicists</em> (Cambridge, 2003), for the null-element factorisation and the rotor treatment of the Lorentz group.</li>
+<li>Iwo Białynicki-Birula and Zofia Białynicka-Birula, "The role of the Riemann–Silberstein vector in classical and quantum theories of electromagnetism", <em>Journal of Physics A</em> <strong>46</strong> (2013) 053001, for the complex-vector description of the free field.</li>
+<li>J. D. Jackson, <em>Classical Electrodynamics</em> (Wiley, 1999), for the Doppler effect, aberration and the transformation of the field of a plane wave.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

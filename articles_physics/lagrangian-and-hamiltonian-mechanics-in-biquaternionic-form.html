@@ -250,6 +250,29 @@ $$</p>
 \tilde Z_{-}=\tfrac{1}{2}\!\left(\tilde Z-\tilde Z^\dagger\right)=i\,p_0\,e_0+\mathbf q ,
 $$</p>
 <p>so that the two vector parts separate as configuration and momentum while the two scalar components pair the other way: the configuration scalar $q_0$ is Hermitian and the momentum scalar $i\,p_0$ is anti-Hermitian. The clean statement — material part the configuration, informational part $i$ times the momentum — is the three-degree-of-freedom case $q_0=p_0=0$, which is also the one that carries the spatial reading.</p>
+<h2 id="the-four-hamiltonian-and-the-exactness-of-the-action-form">The Four-Hamiltonian and the Exactness of the Action Form</h2>
+<p>The phase-space biquaternion $\tilde Z=\tilde q+i\tilde p$ packages the <strong>configuration</strong> with the <strong>momentum</strong>. There is a second packaging, and it is the covariant one: the Hamiltonian with the canonical momentum in the same biquaternion. Gsponer and Hurni call it the <strong>four-Hamiltonian</strong></p>
+<p>$$
+\Pi = \left[H(t,\mathbf x,\vec\pi)\,;\,-i\vec\pi(t,\mathbf x)\right],
+$$</p>
+<p>a bireal — that is, Hermitian — biquaternion whose scalar part is the Hamiltonian and whose vector part carries the canonical momentum. For $n$ point particles in a time-independent external field it is assembled from the four-momenta and the potential,</p>
+<p>$$
+\Pi = \sum_n P_n + q_n A(X_n), \qquad P_n = [E_n\,;\,-ic\vec p_n], \qquad A = [\phi\,;\,-i\vec A],
+$$</p>
+<p>in the source's notation, so the scalar part is the Hamiltonian $H=E+q\phi$ and the vector part the canonical momentum $\vec\pi=\vec p+q\vec A$. Up to the central factor $-i$ — the corpus's placement of the time component in the scalar slot — the four-momenta here are the corpus's four-momentum $\tilde P$, and the source's mass-shell statement $|P|^2=m^2$ (units with $c=1$) is the corpus's $N(\tilde P)=-m^2c^2$.</p>
+<p>The reason to introduce the object is the action. The source's <strong>action postulate</strong> is</p>
+<p>$$
+\tilde\nabla S = i\Pi ,
+$$</p>
+<p>that is, the four-Hamiltonian derives from a single invariant scalar $S$, the action. In the corpus's vocabulary the content of the postulate is that $\Pi$ is, up to the central factor $-i$, a gradient: the components satisfy $\partial_\mu\Pi_\nu=\partial_\nu\Pi_\mu$, which is the statement that the one-form $\Pi$ is <strong>closed</strong> and therefore locally exact. The source writes the same condition as $\tilde\nabla\wedge\Pi=0$, and reads it as $d\Pi$ being a total differential, equivalently</p>
+<p>$$
+\oint dX\circ\Pi = 0 ,
+$$</p>
+<p>which for two fixed endpoints is Hamilton's principle, $\delta\int_{X_1}^{X_2} dX\circ\Pi = 0$. Hamilton's principle is thus, in this formulation, the <strong>exactness of the four-Hamiltonian one-form</strong>; and for a Hamiltonian with no explicit time dependence the same condition is equivalent to Hamilton's equations $\dot{\mathbf x}=d H/d\vec\pi$, $\dot{\vec\pi}=-d H/d\mathbf x$.</p>
+<!-- CONVENTION — read the source's $\tilde\nabla\wedge\Pi=0$ as *closedness of the one-form*, not as the vanishing of the vector part of the quaternion product $\tilde\nabla\tilde\Pi$. The two are not the same here: for a central scalar $S$ the vector part of $\tilde\nabla(\tilde\nabla S)$ is $2\partial_{ict}\vec\nabla S$, which does not vanish. The verified statement is the component one, $\partial_\mu\Pi_\nu=\partial_\nu\Pi_\mu$ for $\Pi=-i\tilde\nabla S$ (the partial derivatives commute), and that is the exactness the source is invoking. Do not "correct" the source's display into a quaternion-product identity; the article states the component content. -->
+
+<p><strong>Two packagings, two sectors.</strong> The contrast with the previous section is exact. The phase-space biquaternion $\tilde Z$ pairs a material part with an informational part; the four-Hamiltonian $\Pi$ lies <strong>entirely</strong> in the Hermitian (informational) sector, its two halves being the Hamiltonian and the momentum rather than a position and a momentum. The corpus has both objects: $\tilde Z$ for the configuration–momentum split and $\Pi$ for the covariant energy–momentum-plus-potential object whose potential is the action.</p>
+<p><strong>The Hamilton–Jacobi rewriting.</strong> With the four-Hamiltonian in hand the relativistic mass-shell identity converts the action postulate into the <strong>relativistic Hamilton–Jacobi equation</strong> for a charged particle in an electromagnetic field: the source's form sets the quaternion square of $i\tilde\nabla S+e\tilde A$ equal to $m^2$, the sign of the $e\tilde A$ term following the charge-sign convention. The non-relativistic Hamilton–Jacobi equation and its biquaternion-norm reading are the subject of the companion article <em>The WKB Approximation and the Hamilton–Jacobi Equation in Biquaternionic Form</em>; the four-Hamiltonian is the covariant object beneath that equation, and the corpus records it here.</p>
 <h2 id="the-poisson-bracket">The Poisson Bracket</h2>
 <h3 id="the-biquaternion-form">The Biquaternion Form</h3>
 <p>For central-valued observables $f(\tilde q,\tilde p)$, $g(\tilde q,\tilde p)$, the Poisson bracket is the scalar part of a quaternion expression. Define the gradients</p>
@@ -445,6 +468,8 @@ $$</p>
 <li>Chris Doran and Anthony Lasenby, <em>Geometric Algebra for Physicists</em> (Cambridge, 2003), for the geometric-algebra treatment of rotors, rigid bodies, and mechanics.</li>
 <li>David Hestenes, <em>New Foundations for Classical Mechanics</em> (Reidel, 1986), for a treatment of classical mechanics in a real Clifford algebra closely related to the quaternion one.</li>
 <li><em>Hamiltonian Field Theory in Biquaternionic Form</em> (<code>articles_physics/hamiltonian-field-theory-in-biquaternionic-form.md</code>), companion article, for the extension of the Legendre transform, the bracket and the conservation law to a field, where the conjugate momentum is a field and the density and flux are one Hermitian biquaternion.</li>
+<li>A. Gsponer and J.-P. Hurni, "The physical heritage of Sir W. R. Hamilton," arXiv:math-ph/0201058, §5, for the four-Hamiltonian $\Pi=[H;-i\vec\pi]$, the action postulate $\tilde\nabla S=i\Pi$, and the reading of Hamilton's principle as the exactness of the one-form $dX\circ\Pi$.</li>
+<li>W. R. Hamilton, <em>Elements of Quaternions</em>, Vol. II, art. 419 (2nd ed., enlarged by C. J. Joly, 1899–1901), for the quaternion resolution of the Kepler problem and the conservation of the angular-momentum and Runge–Lenz vectors.</li>
 </ul>
       </div>
     </main>

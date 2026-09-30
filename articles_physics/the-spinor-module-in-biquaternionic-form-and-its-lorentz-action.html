@@ -365,6 +365,33 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
+<h3 id="the-indefinite-pairing-and-the-hyperboloids">The Indefinite Pairing and the Hyperboloids</h3>
+<p>The pairings above are invariant under the full $SL(2,\mathbb{C})$ or under its maximal compact subgroup. A third pairing, indefinite rather than definite, is invariant exactly under the rank-one subgroup $SU(1,1)\cong SL(2,\mathbb{R})\cong Sp(2,\mathbb{R})$ — the double cover of $SO(1,2)$ and the dynamical group of the oscillator's squeezings — and it is the one that models the hyperboloids of three-dimensional Minkowski space on the same module.</p>
+<p><strong>The indefinite pairing.</strong> With the Pauli matrices of the matrix realisation $\Phi(e_k)=-i\sigma_k$ established above, put
+$$
+[u|v]=u^{\dagger}\sigma_3v=\bar u_1v_1-\bar u_2v_2 .
+$$
+This form is Hermitian of signature $(1,1)$; it is <strong>not</strong> invariant under all of $SL(2,\mathbb{C})$, and its isometry group inside $SL(2,\mathbb{C})$ is exactly $SU(1,1)$. Unlike the definite form $h$ it selects the non-compact subgroup, and unlike $\varepsilon$ it is Hermitian rather than alternating. The pair $(h,[\,\cdot\,|\,\cdot\,])$ is the pair (definite, indefinite) whose invariance groups are the two real forms $SU(2)$ and $SU(1,1)$ of the same complex group.</p>
+<p><strong>The vector maps.</strong> Let
+$$
+\varsigma=(\sigma_3,\,i\sigma_2,\,-i\sigma_1)=\sigma_3(1,\sigma_1,\sigma_2),
+$$
+a Hermitian triple satisfying $\varsigma^i\varsigma^j=\eta^{ij}-i\varepsilon^{ijk}\eta_{kl}\varsigma^l$ with $\eta=\mathrm{diag}(1,-1,-1)$ — the analogue for $SU(1,1)$ of the quaternion relations for $SU(2)$; both this identity and the Hermiticity of $\sigma_3\varsigma^i$ were verified here. The three homogeneous spaces are then modelled on spinors of the module:
+$$
+v^i=\langle z|\sigma^i|z\rangle\ \ (S^2),\qquad
+v^i=\tfrac12\,\langle z|\sigma_3\varsigma^i|z\rangle\ \ (H^\pm),\qquad
+v^i=\langle z_2|\sigma_3\varsigma^i|z_1\rangle\ \ (H^{sl}),
+$$
+where $\langle z|(\,\cdot\,)|z\rangle$ abbreviates $z^{\dagger}(\,\cdot\,)z$. The first is the pure-state correspondence of the Bloch-ball article — one Weyl spinor with the definite pairing gives the sphere, with $|v|^2=1$ — and the second uses one Weyl spinor with the indefinite pairing and gives the two-sheeted time-like hyperboloid $H^\pm\subset\mathbb{R}^{1,2}$. The third uses a <strong>pair</strong> of spinors and gives the one-sheeted hyperboloid $H^{sl}$, and it is here that the Majorana condition enters: a real structure commuting with $SU(1,1)$ takes the place of the complex conjugation of the other two cases. The reason the one-sheeted case takes a pair, in the external reading cited below, is that a single Weyl spinor with either pairing forces one sign of the area spectrum, and only the pair carries the sign a time-like surface needs.</p>
+<p><strong>The closure.</strong> Under the symplectic form
+$$
+\omega=i\,\sigma_3^{ij}\,dz_i\wedge dz_j
+$$
+on the doubled spinor space $\mathbb{C}^2\oplus\bar{\mathbb{C}}^2$ — the pairing that makes the coordinates of the two factors conjugate to one another, and a different form from the invariant $\varepsilon$ above — the bilinears close into the Poisson algebra of $\mathfrak{so}(1,2)\cong\mathfrak{su}(1,1)$, displayed in the source as
+$$
+\{v^i,v^j\}=-\varepsilon^{ijk}\eta_{kl}v^l ,
+$$
+where the overall sign is the conventional one for $\omega$. This was recomputed here on generic elements: the brackets of the three bilinears reproduce the structure constants, so the map $z\mapsto v(z)$ is a moment-map-like realisation of the Lie algebra on the spinor space, not merely an equivariant map to the vectors. Its use in the spinfoam programme — the area-constrained symplectomorphism to $T^*SU(1,1)$ — is recorded in <em>Quantum Gravity under the Biquaternion Framework — A Research Agenda</em>.</p>
 <h2 id="spinor-action-versus-rotor-conjugation">Spinor Action Versus Rotor Conjugation</h2>
 <p>It is worth stating the contrast in one place, since it is the conceptual centre of the article.</p>
 <div class="table-scroll"><table>
@@ -450,7 +477,8 @@ with the two summands the two chiral halves.</li>
 <p>A natural candidate is the module action defined here; its compatibility with the mass term requires the relationship between the one-sided action and the conjugate module to be fixed by a convention.
 3. <strong>The biquaternion form of the symplectic pairing.</strong> The invariant form $\varepsilon$ is presented here in matrix coordinates. Its expression as a biquaternion bilinear on the ideal $\mathbb{B}p$ follows from the coordinate map, but the cleanest biquaternion formula is a matter of convention.
 4. <strong>Majorana and reality conditions.</strong> In Lorentzian signature the Dirac module is self-conjugate but the two Weyl halves are a conjugate pair, so Majorana spinors exist while Majorana–Weyl spinors do not. How these reality conditions read as conditions on biquaternion-valued fields is a natural continuation.
-5. <strong>Curved spacetime.</strong> The module and its action are pointwise algebraic. Whether the spinor module globalizes to a bundle over a curved biquaternionic background is open, in parallel with the open questions of the companion articles.</p>
+5. <strong>Curved spacetime.</strong> The module and its action are pointwise algebraic. Whether the spinor module globalizes to a bundle over a curved biquaternionic background is open, in parallel with the open questions of the companion articles.
+6. <strong>The indefinite pairing and the framework's own reading.</strong> The pairing $[u|v]=u^{\dagger}\sigma_3v$, the triple $\varsigma$ and the hyperboloid models come from the external reading cited in <em>Quantum Gravity under the Biquaternion Framework — A Research Agenda</em>. Whether the framework gives them an independent meaning — in particular whether the Majorana pair of the one-sheeted case is the module real structure of <em>The Neutrino and Majorana Fermions in Biquaternionic Form</em> — is not settled here, and the two articles are consistent but not yet joined.</p>
 <h2 id="summary">Summary</h2>
 <p>The biquaternion algebra $\mathbb{B}\cong M_2(\mathbb{C})$ has a unique simple module, the two-dimensional complex <strong>spinor module</strong> $S=\mathbb{C}^2$, on which $\mathbb{B}$ acts by matrix multiplication. Inside the algebra, $S$ is realized as the minimal left ideal $\mathbb{B}p$, $p = \tfrac{1}{2}(e_0+ie_3)$, whose elements are the spinors; the algebra acts by left multiplication, and the action is one-sided.</p>
 <p>The <strong>left-handed Weyl spinor</strong> is the defining module $(\tfrac12,0)$; the <strong>right-handed Weyl spinor</strong> is its complex conjugate $(0,\tfrac12)$. These are the two <strong>chiral halves</strong>; their direct sum is the four-component Dirac spinor module. The two halves are not isomorphic as complex representations of $SL(2,\mathbb{C})$ (they are conjugate to one another), and the chirality distinction is a real-structure distinction that appears on complexification, $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{B}\cong M_2(\mathbb{C})\oplus M_2(\mathbb{C})$.</p>
@@ -460,7 +488,8 @@ with the two summands the two chiral halves.</li>
 \qquad \tilde{\Lambda}\in SL(2,\mathbb{C}),\quad \psi\in S,
 $$</p>
 <p>with $\pm\tilde{\Lambda}$ acting differently ($-e_0$ acts as $-\mathrm{id}$). The four-vector action of the companion articles, $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{\dagger}$ on $\mathbb{M}_-$, is recovered from the Hermitian part of the spinor bilinear, $H = \tfrac{1}{2}(uv^{\dagger}+vu^{\dagger})$, which transforms as $gHg^{\dagger}$ and whose four-vector image is $iH$. The spinor action is faithful and does not descend to the Lorentz group; the four-vector action has kernel $\{\pm e_0\}$ and does. This is the double cover, seen from the module side.</p>
-<p>The spinor module carries three bilinear structures and one equivariant bilinear map: the symplectic form $\varepsilon$ (invariant, and the source of self-duality $S^{*}\cong S$), the Hermitian form $h$ (invariant only on the compact subgroup $SU(2)$), the mixed pairing $b:S\times\bar{S}\to\mathbb{C}$ (invariant, the Dirac scalar bilinear), and the outer product $S\times\bar{S}\to\mathbb{B}$, whose Hermitian part $H$ carries the vector representation. The algebraic origin of the one-sided spinor action and the two-sided four-vector action is the identification $\mathbb{B}\cong\mathrm{Cl}_{1,3}^{+}$: the spin group lies in the even subalgebra and acts on a Clifford module by left multiplication, while it acts on the odd part by signed inner conjugation.</p>
+<p>The spinor module carries three bilinear structures and one equivariant bilinear map: the symplectic form $\varepsilon$ (invariant, and the source of self-duality $S^{*}\cong S$), the Hermitian form $h$ (invariant only on the compact subgroup $SU(2)$), the mixed pairing $b:S\times\bar{S}\to\mathbb{C}$ (invariant, the Dirac scalar bilinear), and the outer product $S\times\bar{S}\to\mathbb{B}$, whose Hermitian part $H$ carries the vector representation. A fourth pairing, the indefinite $[u|v]=u^{\dagger}\sigma_3v$ of signature $(1,1)$, is invariant exactly under the subgroup $SU(1,1)\cong SL(2,\mathbb{R})\cong Sp(2,\mathbb{R})$ that fixes a space-like direction, and its bilinears model the sphere $S^2$ and the two hyperboloids $H^\pm$, $H^{sl}$ of three-dimensional Minkowski space on the module; under the symplectic form $\omega$ they close into $\mathfrak{so}(1,2)\cong\mathfrak{su}(1,1)$.</p>
+<p>The algebraic origin of the one-sided spinor action and the two-sided four-vector action is the identification $\mathbb{B}\cong\mathrm{Cl}_{1,3}^{+}$: the spin group lies in the even subalgebra and acts on a Clifford module by left multiplication, while it acts on the odd part by signed inner conjugation.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -550,6 +579,26 @@ $$</p>
 <td>$\mathbb{B}\cong\mathrm{Cl}_{1,3}^{+}$</td>
 <td>Even Clifford subalgebra correspondence</td>
 </tr>
+<tr>
+<td>$[u|v]=u^{\dagger}\sigma_3v$</td>
+<td>Indefinite $SU(1,1)$-invariant pairing, signature $(1,1)$</td>
+</tr>
+<tr>
+<td>$SU(1,1)\cong SL(2,\mathbb{R})\cong Sp(2,\mathbb{R})$</td>
+<td>Isometry group of the indefinite pairing; double cover of $SO(1,2)$</td>
+</tr>
+<tr>
+<td>$\varsigma=(\sigma_3,i\sigma_2,-i\sigma_1)$</td>
+<td>Hermitian triple; $\varsigma^i\varsigma^j=\eta^{ij}-i\varepsilon^{ijk}\eta_{kl}\varsigma^l$</td>
+</tr>
+<tr>
+<td>$S^2$, $H^\pm$, $H^{sl}$</td>
+<td>Sphere and the two hyperboloids modelled on the module</td>
+</tr>
+<tr>
+<td>$\omega=i\sigma_3^{ij}dz_i\wedge dz_j$</td>
+<td>Symplectic form on the doubled spinor space; $\{v^i,v^j\}=-\varepsilon^{ijk}\eta_{kl}v^l$</td>
+</tr>
 </tbody>
 </table></div>
 <h2 id="further-reading">Further Reading</h2>
@@ -563,6 +612,7 @@ $$</p>
 <li>Julius Wess and Jonathan Bagger, <em>Supersymmetry and Supergravity</em> (Princeton, 1992), for the two-component (dotted and undotted) spinor conventions.</li>
 <li>William Fulton and Joe Harris, <em>Representation Theory: A First Course</em> (Springer, 1991), for the modules of $M_2(\mathbb{C})$, the highest-weight classification, and the Clebsch–Gordan rule.</li>
 <li>T. Y. Lam, <em>A First Course in Noncommutative Rings</em> (Springer, 2001), for simple modules, Schur's lemma, and the structure of matrix algebras.</li>
+<li>J. D. Simão, "Biquaternions, Majorana spinors and time-like spin-foams," arXiv:2401.10324 [gr-qc] (2024), for the indefinite pairing $[u|v]$, the $\varsigma$ triple, the Weyl- and Majorana-spinor models of $S^2$, $H^\pm$ and $H^{sl}$, the symplectic form $\omega$ and the $\mathfrak{su}(1,1)$ closure of the bilinears. External; cited for the pairing and the bilinears only.</li>
 </ul>
       </div>
     </main>

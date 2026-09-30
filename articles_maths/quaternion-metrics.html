@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quaternion Metrics — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="quaternion-metrics"><strong>Quaternion Metrics</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>Every nonzero quaternion $g$ determines a real quadratic form on the quaternion algebra through the product and the scalar part,</p>
+<p>$$
+Q_g(\tilde x) = \mathrm{Sc}(g\tilde xg\tilde x) = \mathrm{Sc}\bigl((g\tilde x)^2\bigr).
+$$</p>
+<p>This article studies that form, which is called here a <strong>quaternion metric</strong>. It is an indefinite form on $\mathbb{H}$, non-degenerate, of signature $(1,3)$ for every nonzero $g$, and it is the interval form that the source of the construction proposes as a generalisation of the Minkowski interval that keeps Hamilton's multiplication rules intact, in place of the Riemannian strategy of varying them. It is not the quaternion norm $N(\tilde x) = \tilde x\bar{\tilde x}$ and it is not a distance; the word <em>metric</em> is used in its differential-geometric sense of a quadratic form on a space of displacements, and the name records that the form is built from a quaternion.</p>
+<p>The article turns on one identity: $Q_g = \omega\circ L_g$, where $\omega$ is the Minkowski form of the algebra and $L_g$ is left multiplication by $g$. Everything follows from it. The form is non-degenerate of signature $(1,3)$ for every nonzero $g$; all the forms of the family are isometric to one another; the family is the image of the single form $\omega$ under precomposition with the left multiplications; and the isometry group of $Q_g$ is the conjugate of the Lorentz group by $L_g$. The Gram matrix of $Q_g$ is computed in closed form and its determinant is $-N(g)^4$, so the non-degeneracy is visible a second time, quantitatively.</p>
+<p>The treatment is mathematical throughout. No physical object is introduced, no state of a physical system is named, and no physical interpretation is invoked. The Lorentz group of the form $\omega$ is named and its corpus home is cited; nothing of it is re-derived here.</p>
+<p>The bilinear and quadratic-form vocabulary, the polarisation and the notion of isometry are from <em>Bilinear Forms</em> and <em>Quadratic Forms and Polarisation</em>; the algebra, the conjugate and the scalar–vector decomposition are from <em>Quaternion Algebra</em>; the norm, the inner product and the group of units are from <em>Quaternion Norm and Invertibility</em>; the forms with values in an algebra that are the norms are from <em>Quadratic Forms over Algebras and Norms</em>; the determinant of the left regular representation is pointed to in <em>Quaternion 4x4 Regular Matrix Element Representation</em>; the split-quaternion form of signature $(2,2)$ used for contrast is from <em>Split-Quaternion Norm and Invertibility</em>.</p>
+<p>Throughout, $\mathbb{H}$ is the quaternion algebra over $\mathbb{R}$ with basis $e_0 = 1, e_1, e_2, e_3$ and $e_k^2 = -e_0$. A quaternion is $\tilde x = x_0e_0 + x_1e_1 + x_2e_2 + x_3e_3$, with <strong>scalar part</strong> $\mathrm{Sc}\,\tilde x = x_0$ and <strong>vector part</strong> $\mathbf x = \mathrm{Vect}\,\tilde x = x_1e_1+x_2e_2+x_3e_3$; the conjugate is $\bar{\tilde x} = x_0e_0 - \mathbf x$, the quaternion norm is $N(\tilde x) = \tilde x\bar{\tilde x} = x_0^2+x_1^2+x_2^2+x_3^2$, and the modulus is $|\tilde x| = \sqrt{N(\tilde x)}$. The four real numbers $x_0,x_1,x_2,x_3$ form the coordinate vector of $\tilde x$, also written $x = (x_0,x_1,x_2,x_3)$; the meaning is clear from the context. The multiplication is written without a dot, and the scalar part is written $\mathrm{Sc}$ and the vector part $\mathrm{Vect}$.</p>
+<h2 id="the-minkowski-form-of-the-algebra">The Minkowski Form of the Algebra</h2>
+<h3 id="definition-and-polar-form">Definition and Polar Form</h3>
+<p><strong>Definition.</strong> The <strong>Minkowski form</strong> of $\mathbb{H}$ is</p>
+<p>$$
+\omega(\tilde x) = \mathrm{Sc}(\tilde x^2) = x_0^2 - x_1^2 - x_2^2 - x_3^2 .
+$$</p>
+<p>The equality is the computation of a square: writing $\tilde x = x_0e_0+\mathbf x$, one has $\tilde x^2 = x_0^2e_0 + 2x_0\mathbf x + \mathbf x^2$, and $\mathbf x^2 = -\langle\mathbf x,\mathbf x\rangle e_0$ is a scalar, so the scalar part is $x_0^2 - |\mathbf x|^2$.</p>
+<p>The form $\omega$ is a quadratic form on the underlying real vector space $\mathbb{H}\cong\mathbb{R}^4$. Its <strong>polar form</strong> is the symmetric bilinear form</p>
+<p>$$
+\beta_\omega(\tilde u,\tilde v) = \tfrac12\bigl(\omega(\tilde u+\tilde v)-\omega(\tilde u)-\omega(\tilde v)\bigr) = \tfrac12\,\mathrm{Sc}(\tilde u\tilde v + \tilde v\tilde u).
+$$</p>
+<p>It is real-valued and symmetric by construction, and it is alternating on the vector subspace: for pure $\mathbf u,\mathbf v$ one has $\mathbf u\mathbf v+\mathbf v\mathbf u = -2\langle\mathbf u,\mathbf v\rangle e_0$.</p>
+<h3 id="signature-and-isometry-group">Signature and Isometry Group</h3>
+<p><strong>Proposition.</strong> The Minkowski form is non-degenerate of signature $(1,3)$. In the basis $e_0,e_1,e_2,e_3$ its Gram matrix is</p>
+<p>$$
+\eta = \begin{pmatrix} 1 & 0 & 0 & 0 \\ 0 & -1 & 0 & 0 \\ 0 & 0 & -1 & 0 \\ 0 & 0 & 0 & -1 \end{pmatrix},
+$$</p>
+<p>and $\det\eta = -1$.</p>
+<p><em>Proof.</em> The coefficients of $\omega$ in the coordinates are $1,-1,-1,-1$, so the Gram matrix of the polar form is the diagonal matrix displayed; it is invertible, with the determinant $-1$. One positive and three negative diagonal entries give the signature $(1,3)$.</p>
+<p><strong>Definition.</strong> The <strong>isometry group</strong> of $\omega$ is</p>
+<p>$$
+O(\omega) = \{T \in GL_4(\mathbb{R}) : \omega(T\tilde x) = \omega(\tilde x)\ \text{for every }\tilde x\} = O(1,3),
+$$</p>
+<p>the orthogonal group of a form of signature $(1,3)$. Its identity component is the proper orthochronous Lorentz group $SO^+(1,3)$, treated in the biquaternion family in <em>Biquaternion Rotations and Lorentz Transformations</em>; nothing of its theory is used here beyond the name.</p>
+<h3 id="the-left-and-right-multiplication-operators">The Left and Right Multiplication Operators</h3>
+<p><strong>Definition.</strong> For $g\in\mathbb{H}$ the <strong>left multiplication</strong> and the <strong>right multiplication</strong> by $g$ are the real-linear endomorphisms</p>
+<p>$$
+L_g(\tilde x) = g\tilde x, \qquad R_g(\tilde x) = \tilde x g .
+$$</p>
+<p><strong>Proposition.</strong> $L_g$ and $R_g$ are bijective for $g\neq0$, with $L_g^{-1} = L_{g^{-1}}$ and $R_g^{-1} = R_{g^{-1}}$, and $L_{pq} = L_pL_q$, $R_{pq} = R_qR_p$.</p>
+<p><em>Proof.</em> Multiplication is associative and every nonzero quaternion is invertible by <em>Quaternion Norm and Invertibility</em>, with $g^{-1} = \bar g/N(g)$; this gives the inverses and the composition rules directly from the definitions.</p>
+<h2 id="the-form-of-a-quaternion">The Form of a Quaternion</h2>
+<h3 id="definition-and-the-isometry-identity">Definition and the Isometry Identity</h3>
+<p><strong>Definition.</strong> The <strong>quaternion metric</strong> of a nonzero quaternion $g$ is the function</p>
+<p>$$
+Q_g : \mathbb{H}\to\mathbb{R}, \qquad Q_g(\tilde x) = \mathrm{Sc}(g\tilde xg\tilde x).
+$$</p>
+<p><strong>Lemma (the identity of the construction).</strong> For every $g$ and every $\tilde x$,</p>
+<p>$$
+Q_g(\tilde x) = \omega(g\tilde x) = \omega(L_g\tilde x).
+$$</p>
+<p><em>Proof.</em> Both expressions are $\mathrm{Sc}\bigl((g\tilde x)^2\bigr)$: the product $g\tilde xg\tilde x$ is $(g\tilde x)(g\tilde x)$, and the Minkowski form of a quaternion is the scalar part of its square.</p>
+<p>The identity is the reason the construction is a generalisation of the interval rather than a replacement of it: the form of $g$ is the Minkowski form read at the left translate $g\tilde x$.</p>
+<h3 id="elementary-properties">Elementary Properties</h3>
+<p><strong>Proposition.</strong> For all $g$, all real $\lambda$, and all $\tilde x$,</p>
+<p>$$
+Q_{-g} = Q_g, \qquad Q_{\lambda g} = \lambda^2 Q_g .
+$$</p>
+<p>In particular $Q_g$ depends on $g$ and on the line $\mathbb{R} g$, and it is homogeneous of degree two in $g$. The family is parametrised, up to the sign of $g$ and up to scale, by the lines through the origin of $\mathbb{H}$, that is by the real projective space $\mathbb{R}P^3$; each line carries the one-parameter family of proportional forms.</p>
+<p><em>Proof.</em> The two identities are the substitution of $-g$ and of $\lambda g$ in the defining product and the real-linearity of the product and of the scalar part.</p>
+<p><strong>Proposition.</strong> For $g\neq0$ the form $Q_g$ is a quadratic form on $\mathbb{H}$, it is not the zero form, and it is isotropic: it vanishes on a nonzero vector, and therefore on the whole line that the vector spans.</p>
+<p><em>Proof.</em> It is $\omega\circ L_g$ by the lemma, and the composition of a quadratic form with a linear map is a quadratic form. It is not zero because $\omega$ is not zero and $L_g$ is onto for $g\neq0$. For the isotropy, $Q_g(L_g^{-1}(e_0+e_1)) = \omega(e_0+e_1) = 0$, and $e_0+e_1\neq0$; the vanishing propagates along the line by homogeneity, since $Q_g(\lambda\tilde x) = \lambda^2Q_g(\tilde x)$. A nonzero vector on which the form vanishes is a <strong>null vector</strong>, and the line it spans is a <strong>null line</strong>.</p>
+<p><strong>Remark (the source's reading).</strong> The source proposes exactly this form, $Q_g(\tilde x)=\mathrm{Sc}(g\tilde xg\tilde x)$, as the way to generalise the interval $\mathrm{Sc}(\tilde x^2) = x_0^2-\mathbf x\cdot\mathbf x$ of the algebra while leaving Hamilton's rules $e_1^2=e_2^2=e_3^2=-e_0$ and $e_1e_2e_3=-e_0$ untouched; changing the multiplication rules is the Riemannian strategy, which the source sets aside. The reading is recorded as the source's; the mathematics of the form does not depend on it.</p>
+<h2 id="the-gram-matrix">The Gram Matrix</h2>
+<h3 id="definition-of-the-gram-matrix">Definition of the Gram Matrix</h3>
+<p><strong>Definition.</strong> The <strong>Gram matrix</strong> of $Q_g$ is the $4\times4$ real matrix</p>
+<p>$$
+M(g)_{\mu\nu} = \beta_g(e_\mu,e_\nu), \qquad \beta_g(\tilde x,\tilde y) = \tfrac12\bigl(Q_g(\tilde x+\tilde y)-Q_g(\tilde x)-Q_g(\tilde y)\bigr),
+$$</p>
+<p>where $\beta_g$ is the polar form of $Q_g$. The indices run over $\mu,\nu = 0,1,2,3$.</p>
+<p>Because $Q_g = \omega\circ L_g$, the polar form of $Q_g$ is the polar form of $\omega$ at the images: $\beta_g(\tilde x,\tilde y) = \beta_\omega(g\tilde x,g\tilde y)$, that is</p>
+<p>$$
+\beta_g(\tilde x,\tilde y) = \tfrac12\,\mathrm{Sc}(g\tilde xg\tilde y + g\tilde yg\tilde x).
+$$</p>
+<h3 id="closed-form">Closed Form</h3>
+<p><strong>Proposition.</strong> Write $g = g_0e_0 + g_1e_1+g_2e_2+g_3e_3$. The Gram matrix of $Q_g$ is</p>
+<p>$$
+M(g) = \begin{pmatrix}
+g_0^2-g_1^2-g_2^2-g_3^2 & -2g_0g_1 & -2g_0g_2 & -2g_0g_3 \\
+-2g_0g_1 & -g_0^2+g_1^2-g_2^2-g_3^2 & 2g_1g_2 & 2g_1g_3 \\
+-2g_0g_2 & 2g_1g_2 & -g_0^2-g_1^2+g_2^2-g_3^2 & 2g_2g_3 \\
+-2g_0g_3 & 2g_1g_3 & 2g_2g_3 & -g_0^2-g_1^2-g_2^2+g_3^2
+\end{pmatrix}.
+$$</p>
+<p>Its diagonal entries are $g_0^2-|\mathbf g|^2$ and $-g_0^2-|\mathbf g|^2+2g_k^2$; its off-diagonal entries are $-2g_0g_k$ against the time coordinate and $2g_jg_k$ against two space coordinates.</p>
+<p><em>Proof.</em> One evaluates the polar form on the sixteen pairs of basis elements. For the diagonal, $Q_g(e_\mu) = \mathrm{Sc}((ge_\mu)^2)$, which is $\mathrm{Sc}(g^2) = g_0^2-|\mathbf g|^2$ at $\mu=0$ and $-\mathrm{Sc}(ge_kg e_k)$ at $\mu=k$; expanding $g = g_0+\mathbf g$ in the second and using that the scalar part of a product of two pure quaternions is minus their inner product gives $-g_0^2-|\mathbf g|^2+2g_k^2$. For the pair $(0,k)$ the two products $ge_0ge_k$ and $ge_kg e_0$ are $g^2e_k$ and $ge_kg$, whose scalar parts are both $-2g_0g_k$ by the same expansion, so the polar form is $-2g_0g_k$. For a pair $(j,k)$ of distinct space indices the antisymmetry $e_je_k+e_ke_j = 0$ makes the two products equal, and the scalar part of $ge_jge_k$ is $2g_jg_k$; the polar form carries the factor $\tfrac12$ and is $2g_jg_k$. The relations used are $e_k^2=-e_0$, $e_1e_2=e_3$ and its cyclic permutations, and the vanishing of the scalar part of $e_je_k$ for $j\neq k$.</p>
+<p><strong>Verification.</strong> The closed form has been checked against the polar form on $100$ random quaternions with integer coordinates, entry by entry, and the quadratic identity $\sum_{\mu\nu}x_\mu M(g)_{\mu\nu}x_\nu = Q_g(\tilde x)$ has been checked on $100$ random pairs $(g,x)$; both checks are exact and both hold.</p>
+<p><strong>Remark (the two block forms).</strong> With $s = g_0^2-|\mathbf g|^2$ and $c = g_0^2+|\mathbf g|^2 = N(g)$, the matrix is</p>
+<p>$$
+M(g) = \begin{pmatrix} s & -2g_0\,\mathbf g^{\mathsf T} \\ -2g_0\,\mathbf g & 2\,\mathbf g\mathbf g^{\mathsf T} - c\,I_3 \end{pmatrix},
+$$</p>
+<p>with $I_3$ the $3\times3$ identity and $\mathbf g$ the column of the three vector coordinates. This is the shape used for the determinant below.</p>
+<h3 id="examples">Examples</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$g$</th>
+<th>$M(g)$</th>
+<th>signature</th>
+<th>reading</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$e_0$</td>
+<td>$\mathrm{diag}(1,-1,-1,-1)$</td>
+<td>$(1,3)$</td>
+<td>the Minkowski form of the basis</td>
+</tr>
+<tr>
+<td>$e_k$</td>
+<td>$\mathrm{diag}(-1,-1,\dots,+1,\dots,-1)$ with the $+1$ in the $k$-th place</td>
+<td>$(1,3)$</td>
+<td>the coordinate $x_k$ plays the role of time</td>
+</tr>
+<tr>
+<td>$e_0+e_k$</td>
+<td>the form with $s=0$</td>
+<td>$(1,3)$</td>
+<td>the two axes $e_0$ and $e_k$ are null</td>
+</tr>
+<tr>
+<td>$2e_0$</td>
+<td>$4\,\mathrm{diag}(1,-1,-1,-1)$</td>
+<td>$(1,3)$</td>
+<td>the scale of $g$ rescales the form</td>
+</tr>
+</tbody>
+</table></div>
+<p>For $g = e_0$ the form is $\omega$ itself, $Q_{e_0}(\tilde x) = x_0^2-x_1^2-x_2^2-x_3^2$, and the Gram matrix is $\eta$. For $g = e_k$ the form is $\omega$ with the time coordinate exchanged with $x_k$: for $g=e_1$ one has $Q_{e_1}(\tilde x) = -x_0^2+x_1^2-x_2^2-x_3^2$. For $g = e_0+e_1$ the matrix has $s=0$, and the vectors $e_0$ and $e_1$ are null for the form: $Q_{e_0+e_1}(e_0) = Q_{e_0+e_1}(e_1) = 0$.</p>
+<h2 id="non-degeneracy-signature-and-determinant">Non-Degeneracy, Signature and Determinant</h2>
+<h3 id="the-isometry-theorem">The Isometry Theorem</h3>
+<p><strong>Theorem.</strong> For every nonzero $g$ the map $L_g$ is a linear isometry from $(\mathbb{H},Q_g)$ onto $(\mathbb{H},\omega)$. Consequently:</p>
+<ol>
+<li>$Q_g$ is non-degenerate and of signature $(1,3)$ for every nonzero $g$;</li>
+<li>any two forms of the family are isometric, one to the other, through $L_p^{-1}L_q$;</li>
+<li>the isometry group of $Q_g$ is $O(Q_g) = L_g^{-1}O(\omega)L_g$, a conjugate of the Lorentz group.</li>
+</ol>
+<p><em>Proof.</em> By the identity of the construction, $Q_g(\tilde x) = \omega(L_g\tilde x)$ for every $\tilde x$, so $L_g$ pulls $Q_g$ back to $\omega$; it is bijective for $g\neq0$ by the invertibility of the left multiplication, so it is an isometry onto. An isometry of quadratic forms preserves non-degeneracy and signature, and the signature of $\omega$ is $(1,3)$; this is (1). For (2), let $p,q\neq0$ and put $T = L_q^{-1}L_p$, a linear bijection; then for every $\tilde x$ one has $Q_q(T\tilde x) = \omega(L_qT\tilde x) = \omega(L_p\tilde x) = Q_p(\tilde x)$, so $T$ is an isometry from $(\mathbb{H},Q_p)$ onto $(\mathbb{H},Q_q)$. For (3), an isometry of $Q_g$ corresponds under $L_g$ to an isometry of $\omega$, so $O(Q_g) = L_g^{-1}O(\omega)L_g$.</p>
+<h3 id="the-determinant-of-the-gram-matrix">The Determinant of the Gram Matrix</h3>
+<p><strong>Proposition.</strong> For every quaternion $g$,</p>
+<p>$$
+\det M(g) = -N(g)^4 .
+$$</p>
+<p>In particular the form $Q_g$ is non-degenerate for every nonzero $g$, and its Gram determinant is a positive multiple of the fourth power of the quaternion norm.</p>
+<p><em>Proof.</em> Write $s = g_0^2-|\mathbf g|^2$, $c = N(g) = g_0^2+|\mathbf g|^2$, and $B = 2\mathbf g\mathbf g^{\mathsf T}-cI_3$, so that</p>
+<p>$$
+M(g) = \begin{pmatrix} s & -2g_0\mathbf g^{\mathsf T} \\ -2g_0\mathbf g & B \end{pmatrix}.
+$$</p>
+<p>Suppose first that $s\neq0$, so that $B$ is invertible, and take the Schur complement of $B$:</p>
+<p>$$
+\det M(g) = \det B \cdot \Bigl(s - 4g_0^2\,\mathbf g^{\mathsf T}B^{-1}\mathbf g\Bigr).
+$$</p>
+<p>The eigenvalues of the rank-one matrix $\mathbf g\mathbf g^{\mathsf T}$ are $|\mathbf g|^2,0,0$, so those of $B$ are $2|\mathbf g|^2-c = -s$ and $-c$ twice; hence $\det B = (-s)(-c)^2 = -sc^2$. Moreover $B\mathbf g = 2\mathbf g|\mathbf g|^2 - c\mathbf g = (2|\mathbf g|^2-c)\mathbf g = -s\mathbf g$, so $B^{-1}\mathbf g = -\mathbf g/s$ and $\mathbf g^{\mathsf T}B^{-1}\mathbf g = -|\mathbf g|^2/s$. Therefore</p>
+<p>$$
+\det M(g) = -sc^2\cdot\Bigl(s + \frac{4g_0^2|\mathbf g|^2}{s}\Bigr) = -c^2\bigl(s^2+4g_0^2|\mathbf g|^2\bigr) = -c^2\,c^2 = -N(g)^4,
+$$</p>
+<p>because $s^2+4g_0^2|\mathbf g|^2 = (g_0^2-|\mathbf g|^2)^2+4g_0^2|\mathbf g|^2 = (g_0^2+|\mathbf g|^2)^2 = c^2$.</p>
+<p>The entries of $M(g)$ are polynomials in $g_0,g_1,g_2,g_3$, so $\det M(g)$ is a polynomial, and $-N(g)^4$ is a polynomial; the two agree on the nonempty open set $s\neq0$, so they agree identically. The determinant is therefore $-N(g)^4$ for every $g$, and it vanishes exactly at $g=0$.</p>
+<p><strong>Verification.</strong> The determinant identity has been checked, exactly, on $100$ random quaternions with integer coordinates; it holds without exception.</p>
+<p><strong>Remark (the same determinant, read through the regular representation).</strong> The identity is equivalent to $\det M(g) = -\det(L_g)^2$, and the statement $\det L_g = N(g)^2$ is the determinant statement of <em>Quaternion 4x4 Regular Matrix Element Representation</em>. The proof above is nevertheless self-contained: it uses only the closed form of $M(g)$, the structure of a rank-one update of the identity and the polynomial identity argument, and it does not appeal to the regular representation.</p>
+<h2 id="the-null-cone">The Null Cone</h2>
+<h3 id="the-quadric">The Quadric</h3>
+<p><strong>Definition.</strong> The <strong>null cone</strong> of $Q_g$ is the quadric</p>
+<p>$$
+\mathcal{C}_g = \{\tilde x\in\mathbb{H} : Q_g(\tilde x) = 0\} = L_g^{-1}(\mathcal C),
+$$</p>
+<p>where $\mathcal{C} = \{\tilde x : x_0^2 = |\mathbf x|^2\}$ is the null cone of $\omega$, the double cone over the unit sphere of the vector subspace.</p>
+<p><strong>Proposition.</strong> $\mathcal{C}_g$ is a non-degenerate quadratic cone in $\mathbb{R}^4$ with apex $0$, carried by the isometry $L_g$ to the standard cone; it is not the zero-divisor set of the algebra, because $\mathbb{H}$ has none.</p>
+<p><em>Proof.</em> The cone is the inverse image under the linear isomorphism $L_g$ of the cone of a non-degenerate form, so it is a cone and it is non-degenerate in the sense that its defining form is. The only zero divisor of $\mathbb{H}$ is $0$, by the invertibility of the nonzero elements in <em>Quaternion Norm and Invertibility</em>, whereas $\mathcal{C}_g$ contains a three-dimensional family of nonzero elements; the two sets are therefore different, and the null cone is a purely form-theoretic object.</p>
+<p>The cone of $\omega$ is the set on which the interval $t^2-\mathbf x\cdot\mathbf x$ vanishes, that is the set the source calls the light cone; the subfamilies on which $Q_g$ is respectively positive, zero and negative are the timelike, null and spacelike classes of the form, and they are transported by $L_g$ from those of $\omega$.</p>
+<h2 id="comparison-with-the-norm-and-with-the-sibling-forms">Comparison with the Norm and with the Sibling Forms</h2>
+<h3 id="the-definite-norm-is-not-in-the-family">The Definite Norm Is Not in the Family</h3>
+<p>The quaternion norm $N(\tilde x) = x_0^2+x_1^2+x_2^2+x_3^2$ of <em>Quaternion Norm and Invertibility</em> is positive definite, and every form of the present family is of signature $(1,3)$ by the isometry theorem; hence the norm is not a quaternion metric of this family, for any $g$. The two objects are of different kinds: the norm is the multiplicative form of the division algebra, while a quaternion metric is the pullback of the interval form by a left multiplication and is not multiplicative. The Gram matrix of the norm in the basis is the identity, and the family $Q_g$ contains only forms isometric to $\omega$.</p>
+<h3 id="the-forms-with-values-in-an-algebra">The Forms with Values in an Algebra</h3>
+<p><em>Quadratic Forms over Algebras and Norms</em> studies forms whose values lie in the algebra, of which the quaternion norm $N(\tilde x) = \tilde x\bar{\tilde x}$ is the quaternion case, together with the composition laws $N(\tilde x\tilde y) = N(\tilde x)N(\tilde y)$ and the Cayley–Dickson doubling that they support. A quaternion metric takes its values in the base field and carries no composition law; the two theories intersect in the single form $\omega = Q_{e_0}$, which is the Minkowski form of the algebra and is not the norm.</p>
+<h3 id="the-other-four-dimensional-forms-of-the-corpus">The Other Four-Dimensional Forms of the Corpus</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>algebra</th>
+<th>form</th>
+<th>values</th>
+<th>signature</th>
+<th>in the family $Q_g$?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{H}$</td>
+<td>quaternion norm $N(\tilde x)=\tilde x\bar{\tilde x}$</td>
+<td>$\mathbb{R}$</td>
+<td>$(4,0)$</td>
+<td>no, definite</td>
+</tr>
+<tr>
+<td>$\mathbb{H}$</td>
+<td>quaternion metric $Q_g$, $g\neq0$</td>
+<td>$\mathbb{R}$</td>
+<td>$(1,3)$</td>
+<td>yes, the family itself</td>
+</tr>
+<tr>
+<td>$\mathbb{H}_{\mathrm{s}}$</td>
+<td>determinant form</td>
+<td>$\mathbb{R}$</td>
+<td>$(2,2)$</td>
+<td>no, wrong algebra and signature</td>
+</tr>
+<tr>
+<td>$\mathbb{B}$</td>
+<td>biquaternion norm</td>
+<td>$\mathbb{C}$</td>
+<td>complex</td>
+<td>no, complex-valued</td>
+</tr>
+</tbody>
+</table></div>
+<p>The split-quaternion determinant form of signature $(2,2)$ is <em>Split-Quaternion Norm and Invertibility</em>, and the complex-valued biquaternion norm is <em>Biquaternion Norm and Invertibility</em>; both are cited for contrast only. The family of quaternion metrics is a four-parameter family inside the ten-dimensional space of symmetric real forms on $\mathbb{R}^4$, and it is a single isometry class inside it.</p>
+<h2 id="summary">Summary</h2>
+<p>A quaternion metric is the real quadratic form $Q_g(\tilde x) = \mathrm{Sc}(g\tilde xg\tilde x) = \mathrm{Sc}((g\tilde x)^2)$ determined by a nonzero quaternion $g$. The identity $Q_g = \omega\circ L_g$, where $\omega(\tilde x) = \mathrm{Sc}(\tilde x^2) = x_0^2-x_1^2-x_2^2-x_3^2$ is the Minkowski form of the algebra and $L_g$ is left multiplication by $g$, is the core of the construction: it exhibits $Q_g$ as the interval form read at the left translate $g\tilde x$, and it makes $L_g$ an isometry from $(\mathbb{H},Q_g)$ onto $(\mathbb{H},\omega)$.</p>
+<p>It follows that every quaternion metric is non-degenerate of signature $(1,3)$; that any two of them are isometric, so that the family is a single isometry class; and that the isometry group of $Q_g$ is the conjugate $L_g^{-1}O(1,3)L_g$ of the Lorentz group. The form depends on $g$ only through the line $\mathbb{R}g$ up to the sign of $g$ and only up to a positive scale, so that the family is a cone over the forms of the unit sphere modulo sign, that is over $\mathbb{R}P^3$.</p>
+<p>The Gram matrix of $Q_g$ is computed in closed form: its diagonal entries are $g_0^2-|\mathbf g|^2$ and $-g_0^2-|\mathbf g|^2+2g_k^2$, its off-diagonal entries are $-2g_0g_k$ against the time direction and $2g_jg_k$ against two space directions, and its determinant is $-N(g)^4$, nowhere zero off the origin. The null cone of $Q_g$ is the inverse image of the standard cone under $L_g$; it is a non-degenerate quadratic cone through the origin and it is not the zero-divisor set of the algebra, which consists of the origin alone.</p>
+<p>The form is neither the quaternion norm of the algebra, which is positive definite and multiplicative, nor one of the algebra-valued forms, and the family contains only the forms isometric to the Minkowski form; the split-quaternion form of signature $(2,2)$ and the complex-valued biquaternion norm are the sibling four-dimensional forms of the other algebras, and they are not of this type.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{H}$</td>
+<td>Quaternion algebra over $\mathbb{R}$</td>
+</tr>
+<tr>
+<td>$e_0=1,e_1,e_2,e_3$</td>
+<td>Basis, $e_k^2=-e_0$, $e_1e_2=e_3$</td>
+</tr>
+<tr>
+<td>$\tilde x = x_0e_0+\mathbf x$</td>
+<td>Quaternion, scalar part $x_0$, vector part $\mathbf x$</td>
+</tr>
+<tr>
+<td>$\mathrm{Sc},\mathrm{Vect}$</td>
+<td>Scalar and vector part functionals</td>
+</tr>
+<tr>
+<td>$\bar{\tilde x}$</td>
+<td>Quaternion conjugate</td>
+</tr>
+<tr>
+<td>$N(\tilde x)=\tilde x\bar{\tilde x}$</td>
+<td>Quaternion norm (from <em>Quaternion Norm and Invertibility</em>)</td>
+</tr>
+<tr>
+<td>$L_g(\tilde x)=g\tilde x$, $R_g(\tilde x)=\tilde x g$</td>
+<td>Left and right multiplication</td>
+</tr>
+<tr>
+<td>$\omega(\tilde x)=\mathrm{Sc}(\tilde x^2)=x_0^2-x_1^2-x_2^2-x_3^2$</td>
+<td>Minkowski form of the algebra</td>
+</tr>
+<tr>
+<td>$\beta_\omega$</td>
+<td>Its polar form</td>
+</tr>
+<tr>
+<td>$\eta=\mathrm{diag}(1,-1,-1,-1)$</td>
+<td>Gram matrix of $\omega$, $\det\eta=-1$</td>
+</tr>
+<tr>
+<td>$O(\omega)=O(1,3)$</td>
+<td>Isometry group of the Minkowski form</td>
+</tr>
+<tr>
+<td>$Q_g(\tilde x)=\mathrm{Sc}(g\tilde xg\tilde x)$</td>
+<td>Quaternion metric</td>
+</tr>
+<tr>
+<td>$\beta_g$</td>
+<td>Polar form of $Q_g$</td>
+</tr>
+<tr>
+<td>$M(g)$</td>
+<td>Gram matrix of $Q_g$</td>
+</tr>
+<tr>
+<td>$s=g_0^2-\lvert\mathbf g\rvert^2$, $c=N(g)$</td>
+<td>The two invariants of the determinant computation</td>
+</tr>
+<tr>
+<td>$\mathcal{C}_g$</td>
+<td>Null cone of $Q_g$</td>
+</tr>
+<tr>
+<td>$\mathbb{R}P^3$</td>
+<td>Parameter space of the family up to sign and scale</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>William Rowan Hamilton, <em>Lectures on Quaternions</em> (Hodges and Smith, Dublin, 1853), for the product, the conjugate and the interpretation of the scalar part of a square as $x_0^2-|\mathbf x|^2$.</li>
+<li>Douglas B. Sweetser, <em>Doing Physics with Quaternions</em> (2005), section "A New Idea for Metrics", for the construction $Q_g(\tilde x)=\mathrm{Sc}(g\tilde xg\tilde x)$ and the proposal to generalise the interval by it rather than by a change of the multiplication rules.</li>
+<li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em> (Cambridge University Press, 2nd edition, 2001), for the Minkowski form, its orthogonal group and the Clifford reading of the Lorentz transformations.</li>
+<li>Serge Lang, <em>Algebra</em> (Springer, revised third edition, 2002), for the theory of quadratic forms, polarisation, non-degeneracy and the Witt decomposition used implicitly in the comparison of the signatures.</li>
+<li>T. Y. Lam, <em>Introduction to Quadratic Forms over Fields</em> (American Mathematical Society, 2005), for the classification of forms by their signature over the real numbers.</li>
+<li>Chris Doran and Anthony Lasenby, <em>Geometric Algebra for Physicists</em> (Cambridge University Press, 2003), for the identification of the Lorentz group of a form of signature $(1,3)$ with the unit quaternions of the complexified algebra.</li>
+<li>John H. Conway and Derek A. Smith, <em>On Quaternions and Octonions</em> (A K Peters, 2003), for the four-dimensional algebras, their norms and the comparison of their forms.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

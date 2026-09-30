@@ -123,6 +123,38 @@ $$</p>
 \boxed{\;\text{fully polarized states}=\text{the biquaternion-norm cone of }\mathbb{M}_+=\text{the Poincaré sphere}\;}
 $$</p>
 <p>for the beam, and the same cone is the idempotent manifold of the sector. The unpolarized state $S_0\neq0$, $\mathbf S=0$ is the centre of the ball; the partially polarized states are the interior points $0<P<1$; and the closure of the interior is the ball of radius $S_0$, with the cone as its boundary. Depolarization moves the coherence biquaternion inward along a radius, and the cone is the extremal boundary where the coherence is complete.</p>
+<h2 id="polarizers-and-phase-shifters-as-algebra-elements">Polarizers and Phase Shifters as Algebra Elements</h2>
+<p>The two elementary optical elements, the polarizer and the phase shifter, are in the algebra a <strong>projector</strong> and a <strong>rotor</strong>, and the contrast between the two is the content of this section.</p>
+<p><strong>The polarizer.</strong> A polarizer that transmits the polarization $\hat{\mathbf n}$ is the rank-one projector of $\mathbb{M}_+$</p>
+<p>$$
+\tilde\Pi_{\hat{\mathbf n}} = \tfrac12\left(e_0 + i\hat{\mathbf n}\right),
+\qquad
+\tilde\Pi_{\hat{\mathbf n}}^2 = \tilde\Pi_{\hat{\mathbf n}},
+\qquad
+\tilde\Pi_{\hat{\mathbf n}}^{\dagger} = \tilde\Pi_{\hat{\mathbf n}},
+$$</p>
+<p>the same element that the wave article identifies as the flagpole of a circular polarization. Its action on the coherence biquaternion is the rank-one projection</p>
+<p>$$
+\tilde\rho \;\longmapsto\; \tilde\Pi_{\hat{\mathbf n}}\,\tilde\rho\,\tilde\Pi_{\hat{\mathbf n}} = \mathrm{Tr}\!\left(\tilde\rho\,\tilde\Pi_{\hat{\mathbf n}}\right)\tilde\Pi_{\hat{\mathbf n}},
+$$</p>
+<p>which holds because a rank-one projector satisfies $\tilde\Pi\tilde\rho\tilde\Pi = \mathrm{Tr}(\tilde\rho\tilde\Pi)\tilde\Pi$. The trace is Malus' law,</p>
+<p>$$
+\mathrm{Tr}\!\left(\tilde\rho\,\tilde\Pi_{\hat{\mathbf n}}\right) = \tfrac12\left(S_0 + \hat{\mathbf n}\cdot\mathbf S\right),
+$$</p>
+<p>so the transmitted intensity follows the cosine of the angle between the polarizer axis and the Stokes vector. The two opposite axes give complementary projectors,</p>
+<p>$$
+\tilde\Pi_{\hat{\mathbf n}} + \tilde\Pi_{-\hat{\mathbf n}} = e_0,
+\qquad
+\tilde\Pi_{-\hat{\mathbf n}}\,\tilde\Pi_{\hat{\mathbf n}} = 0 ,
+$$</p>
+<p>which is the algebraic statement that two orthogonal polarizations are mutually exclusive: the projector onto one annihilates the other. This orthogonality is what makes the Stokes sphere a sphere of states rather than of directions.</p>
+<p><strong>The phase shifter.</strong> A phase shifter that retards one circular component relative to the other is the rotor</p>
+<p>$$
+\tilde U_{\hat{\mathbf n}}(\alpha) = e^{\alpha\hat{\mathbf n}/2} = \cos\tfrac{\alpha}{2}\,e_0 + \sin\tfrac{\alpha}{2}\,\hat{\mathbf n} \in \mathbb{H}_{\mathbb{B}},
+$$</p>
+<p>acting by $\tilde\rho \mapsto \tilde U\tilde\rho\,\tilde U^{\dagger}$ with $\tilde U^{\dagger} = \tilde U_{\hat{\mathbf n}}(-\alpha) = \tilde U_{\hat{\mathbf n}}^{-1}$. It fixes $S_0$ and the component $\hat{\mathbf n}\cdot\mathbf S$, and rotates the transverse part of $\mathbf S$ about $\hat{\mathbf n}$ by the angle $\alpha$: the phase shifter is a <strong>rotation of the Poincaré sphere</strong>. This is the Faraday effect, with $\hat{\mathbf n}$ the propagation direction and $\alpha$ proportional to the Verdet constant and the path; in a birefringent medium the same rotor has $\hat{\mathbf n}$ the optic axis and $\alpha$ the retardation.</p>
+<p><strong>Two kinds of operation.</strong> The polarizer is an idempotent: it projects, lowers the degree of polarization and is not invertible, and applying it twice changes nothing further. The phase shifter is a rotor: it is unitary, preserves the degree of polarization, and is reversible. A general lossless optical element is a product of the two — a rotor for the retardation and a projector for the absorption — and the Jones calculus is this statement in matrix form, while the algebra states it as the two elementary operations of $\mathbb{M}_+$.</p>
+<p><strong>Verification.</strong> For a hundred random axes and states: $\tilde\Pi_{\hat{\mathbf n}}$ idempotent and Hermitian, the complementary pair summing to $e_0$ with vanishing product, the rank-one identity $\tilde\Pi\tilde\rho\tilde\Pi = \mathrm{Tr}(\tilde\rho\tilde\Pi)\tilde\Pi$, the rotor unitary with $\tilde U\tilde U^{\dagger} = e_0$, and the invariance of $S_0$ and $\hat{\mathbf n}\cdot\mathbf S$ under the rotor with the transverse part rotated by $\alpha$ — all to machine precision.</p>
 <h2 id="pancharatnams-in-phase-criterion">Pancharatnam's In-Phase Criterion</h2>
 <p>Two beams with Jones vectors $\mathbf J_A$ and $\mathbf J_B$ can interfere. The intensity of the sum is</p>
 <p>$$
@@ -299,6 +331,7 @@ $$</p>
 <li>M. Born and E. Wolf, <em>Principles of Optics</em> (Cambridge, 1999), for the Stokes parameters, the Poincaré sphere, and the coherence matrix.</li>
 <li>G. B. Airy, "On the composition and resolution of streams of polarized light from different sources," <em>Transactions of the Cambridge Philosophical Society</em> <strong>9</strong> (1852) 399, for the early interference of polarized beams.</li>
 <li>J. H. Hannay, "Angle variable holonomy in adiabatic excursion of an integrable Hamiltonian," <em>Journal of Physics A</em> <strong>18</strong> (1985) 221–230, for the dynamical counterpart of the same geometry.</li>
+<li>William E. Baylis, <em>Geometry of Paravector Space, with Applications to Relativistic Physics</em> (University of Windsor lecture, 2003), for the polarizer as the idempotent projector $\tfrac12(1+\hat n)$ and the phase shifter as the Stokes-space rotation $e^{i\hat n\alpha/2}$ — the two operations transcribed into the series' conventions in <em>Polarizers and Phase Shifters as Algebra Elements</em> above.</li>
 </ul>
       </div>
     </main>
