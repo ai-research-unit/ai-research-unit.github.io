@@ -17,6 +17,13 @@ INDEX_TEMPLATE = (SRC / "index_template.html").read_text()
 COLLECTIONS = [
     {"name": "maths",   "src": SRC / "articles_maths",   "deploy": DEPLOY / "articles_maths"},
     {"name": "physics", "src": SRC / "articles_physics", "deploy": DEPLOY / "articles_physics"},
+    # Private working area. Drafts here build like the two public collections —
+    # each md gets its own page, so a single draft can be opened by its URL — but
+    # they are deliberately absent from maths.md and physics.md, which are the
+    # only route into the corpus. The pages are therefore reachable by direct URL
+    # and by nothing else. Marked optional so an empty folder is not a warning.
+    {"name": "reserve", "src": SRC / "articles_reserve", "deploy": DEPLOY / "articles_reserve",
+     "optional": True},
 ]
 
 
@@ -219,13 +226,14 @@ build_root_page(SRC / "contact.md",    "contact.html",    nav_articles)
 
 # Physics before maths. BUILD_ORDER only controls build sequence; COLLECTIONS
 # keeps its own order because the nav links are derived from it.
-BUILD_ORDER = ["physics", "maths"]
+BUILD_ORDER = ["physics", "maths", "reserve"]
 ordered_collections = sorted(COLLECTIONS,
                             key=lambda c: BUILD_ORDER.index(c["name"]))
 
 for coll in ordered_collections:
     if not coll["articles"]:
-        print(f"Warning: no md files in {coll['src'].name}/")
+        if not coll.get("optional"):
+            print(f"Warning: no md files in {coll['src'].name}/")
         continue
     for f in coll["articles"]:
         raw = f.read_text()

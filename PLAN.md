@@ -81,7 +81,9 @@ Then the agent writes the article .md file. Here are editorial preferences :
 
 He appends his ideas, suggestions, interesting observations, decisions and reasons, speculations, verified facts, ownership/boundary rules, standing weaknesses to the companion file .context, created next to the article .md file.
 
-During this phase, the agent does not modify any other file than the article, its companion file .context, and the menu if necessary.
+During this phase, the agent modifies the article, its companion file .context, and the menu if necessary.
+
+In case the agent spots an obious mistake in another related article, he can also patch it, patch its .context file if necessary, and he reports about the change implemented.
 
 This requires judgment and organization.
 
@@ -106,7 +108,9 @@ The agent respects the format of the article.
 He appends his ideas, suggestions, interesting observations, decisions and reasons, speculations, verified facts, ownership/boundary rules, standing weaknesses to the companion file .context, created next to the article .md file.
 
 
-During this phase, the agent does not modify any other file than the article and the companion file .context of the article.
+During this phase, the agent modifies the article, its companion file .context, and the menu if necessary.
+
+In case the agent spots an obious mistake in another related article, he can also patch it, patch its .context file if necessary, and he reports about the change implemented.
 
 This requires rigor, carefulness, and suspicion to check assertions.
 
@@ -126,7 +130,9 @@ For example, for a physics article, among the articles to read, they are always 
 
 The agent creates or modifies the companion file .ideas and writes inside it the open questions, the suggestions, the speculations contained or suggested in the article and its companion .context file that have not been implemented so far (nothing is excluded for being unproven).
 
-During this phase, the agent does not modify any other file than the companion file .ideas of the article.
+During this phase, the agent can modify the companion file .ideas of the article.
+
+In case the agent spots an obious mistake in an article, he can also patch it, patch its .context file if necessary, and he reports about the change implemented.
 
 For example, the article fields.md would be along fields.ideas.
 
@@ -157,7 +163,9 @@ He appends his ideas, suggestions, interesting observations, decisions and reaso
 
 Once the changes are implemented in the article, he removes the implemented ideas from the .ideas file.
 
-During this phase, the agent does not modify any other file than the article and the companion files .context and .ideas of the article.
+During this phase, the agent modifies the article and the companion files .context and .ideas of the article.
+
+In case the agent spots an obious mistake in an article, he can also patch it, patch its .context file if necessary, and he reports about the change implemented.
 
 This requires judgement and organization.
 
@@ -168,9 +176,9 @@ This requires judgement and organization.
 ################################
 
 
-The agent reads the companion .thinking file, and he removes the verbiage, the uninteresting things, the past checks, ... he only keep the interesting points and lets a lean file.
+The agent reads the companion .context file, and he removes the verbiage, the uninteresting things, the past checks, ... he only keep the interesting points and lets a lean file.
 
-During this phase, the agent does not touch any other file than the  companion file .thinking of the article.
+During this phase, the agent does not touch any other file than the  companion file .context of the article.
 
 
 This requires judgment and focus.

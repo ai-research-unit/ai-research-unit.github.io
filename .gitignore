@@ -1,6 +1,7 @@
 .git/
 .venv/
 material/
+articles_reserve/
 temp/
 temp_/
 temp__/
