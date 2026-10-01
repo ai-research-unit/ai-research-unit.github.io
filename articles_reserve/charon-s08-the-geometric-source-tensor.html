@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Charon: The Geometric Source Tensor — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="charon-the-geometric-source-tensor"><strong>Charon: The Geometric Source Tensor</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>Complex relativity keeps the left-hand side of the Einstein field equations untouched and replaces the source on the right, and the replacement is its most distinctive move. There is no matter field, no perfect fluid, and no material stress–energy tensor. The source is</p>
+<p>$$T_{\alpha\beta} = \xi^{2}\rho^{2}u_{\alpha}u_{\beta},$$</p>
+<p>built from a proper density $\rho$, a unit four-velocity $u_\alpha$, and a constant $\xi$ that is defined rather than chosen. That form raises two questions. Is the block $\rho^{2}u_{\alpha}u_{\beta}$ primitive — a density and a velocity, as in ordinary general relativity — or derived? And if the field equation with this source is solved for a homogeneous and isotropic space, does the result agree with the Friedmann pair?</p>
+<p>The two answers are of different kinds, and the asymmetry is the article. On the first question the corpus is unusually clear, and its answer is stronger than the programme needed: the source is <strong>not</strong> primitive. Equation (47) of <em>L'Esprit et la Relativité complexe</em> defines $\rho^{2}u_{\alpha}u_{\beta}$ as the ratio of a second derivative of the action-density amplitude $U$ to the amplitude itself — the exact shape of the de Broglie–Bohm quantum potential. The "matter" that curves Charon's complex space is a quantum potential. That is a statement about structure, not about numbers, and it is the strongest internal evidence in the corpus that the leptonic formalism was not assembled ad hoc.</p>
+<p>On the second question the corpus does not close, and this is where the programme is under its greatest internal strain. The source is quadratic in the densities where the Friedmann pair is linear; the pressure term that appears in the cosmological form of the source has the opposite sign and the wrong power from a physical fluid's; and the microscopic form of the tensor is not the object that is actually inserted into the cosmological equations. The geometry side is sound, the algebra is dimensionally closed at every step, and the confrontation still fails — not by a factor, but by kind.</p>
+<p>The article is organised in four parts. Part 1 recovers the source tensor, the chain that follows it, and the argument that identifies it as a quantum potential. Part 2 states the position of established physics on each ingredient. Part 3 makes the confrontation with the Friedmann pair explicit, term by term and through the fate of the density-squared term. Part 4 places the result against the biquaternion framework, whose gravity programme has the kinematics of general relativity and none of its dynamics, and whose own open question about the quantum potential Charon here answers from outside.</p>
+<p><strong>A note on sources.</strong> Charon's books exist in this repository as page-by-page improved transcriptions, assembled into <code>_Esp_im_merged.md</code> and <code>_RC_im_merged.md</code>. Every equation and page reference below is checked against that transcription and, where it exists, against the page scan. Two items in this article were not legible in the transcription and were read by the author of this programme from the printed book: the defining form of eq. (47) and the missing eq. (58). Both are marked where they occur. Everything else is from the scans.</p>
+<p><strong>Conventions.</strong> Charon's symbols are his own and are defined where they first appear; they are not framework structure and are not reused later. The complex space carries a metric $G_{\alpha\beta}$ with determinant $G$, and its tangent Lorentz space carries $\eta_{\alpha\beta}$. Units are Gaussian cgs unless stated. The biquaternion conventions are those of the companion articles.</p>
+<h2 id="part-1-what-the-source-tensor-is">Part 1 — What the source tensor is</h2>
+<h3 id="11-the-first-axiom-the-structural-hypothesis-and-the-field-equation">1.1 The first axiom, the structural hypothesis, and the field equation</h3>
+<p>The programme's first axiom is the conservation of the physical tensor (eq. 24),</p>
+<p>$$\nabla_{\alpha}T^{\alpha\beta} = 0,$$</p>
+<p>and its structural hypothesis is that this tensor is identical to a geometric tensor of rank two (eq. 19),</p>
+<p>$$S_{\alpha\beta} = T_{\alpha\beta},$$</p>
+<p>where $S_{\alpha\beta}$ depends on the complex metric $G_{\alpha\beta}$, is linear in its second derivatives, and is conserved — the conditions that single out the Einstein tensor. Eq. (25) writes the only candidate,</p>
+<p>$$S_{\alpha\beta} = a\left[R_{\alpha\beta} - \tfrac{1}{2}G_{\alpha\beta}(R + b)\right],$$</p>
+<p>with $a$ and $b$ real constants; $a = -1$ is a normalisation, and eq. (26),</p>
+<p>$$b = -2\Lambda,$$</p>
+<p>names the second constant. The result (eq. 27) is the Einstein equation with a cosmological term, in the complex metric:</p>
+<p>$$R_{\alpha\beta} - \tfrac{1}{2}RG_{\alpha\beta} + \Lambda G_{\alpha\beta} = -T_{\alpha\beta}.$$</p>
+<p>The same equation is written a second time on the left-hand page of scan 017 as eq. (42), in the Lorentzian limit, which is an independent confirmation that the transcription of (25)–(27) is faithful. Two features of §1.1 matter later. The left-hand side is <em>not</em> modified — the programme's freedom is entirely on the right. And $\Lambda$ enters as a free constant, with nothing in the axioms fixing or explaining it.</p>
+<h3 id="12-the-source-is-not-primitive-equation-47">1.2 The source is not primitive: equation (47)</h3>
+<p>Having fixed the geometry, the programme must say what $T_{\alpha\beta}$ is. The answer is not a posit. It is derived from the requirement that the formalism recover the relativistic mass shell (eq. 46),</p>
+<p>$$\frac{W^{2}}{c^{2}} - \sum_{j=1}^{3}p_j^{2} = m_0^{2}c^{2}.$$</p>
+<p>Charon imposes three conditions on the proper density $\rho$: it is an invariant under change of frame; it is a real holomorphic function of the point; and its definition must recover (46). The definition he reaches is eq. (47), whose form was lost by the transcription — it jumped from (46) to the words "ou encore" — and was read from the printed page:</p>
+<p>$$\Omega_0^{2}c^{2}\rho^{2}u_\alpha u_\beta = -\,\hbar^{2}\,\frac{\nabla_\alpha\partial_\beta\left(U/\sqrt{-G}\right)}{U/\sqrt{-G}},$$</p>
+<p>where $\nabla_\alpha$ is the covariant derivative with respect to the complex coordinates $y^\alpha$ and $U$ is the action-density amplitude. In the tangent Lorentz space, where the metric is flat, the same relation reads (§6 of scan 017)</p>
+<p>$$\Omega_0^{2}c^{2}\rho^{2}u_\alpha^{2} = -\,\hbar^{2}\,\frac{\partial^{2}_\alpha U}{U}.$$</p>
+<p><strong>This is the load-bearing equation of the programme.</strong> The left side is kinematic — a density squared times a velocity product. The right side is a <em>ratio of a second derivative of an amplitude to the amplitude</em>. The source is therefore defined by the amplitude, not postulated as matter. And $\Omega_0$ — which Charon names the <em>volume quantique</em> — is present for a stated reason: the printed sentence, also recovered from the scan, says it is "nécessaire pour assurer l'homogénéité dimensionnelle des relations de définition (47) pour $\rho$". That is, the ratio of derivatives cannot carry the dimensions of $\rho^{2}u_\alpha u_\beta$ without a volume.</p>
+<p>The dimensional account confirms the sentence exactly. With $\Omega_0$ a volume, $\rho$ a mass density, and $u$ dimensionless, both sides of (47) carry $[\mathrm{g}^{2}\,\mathrm{cm}^{2}\,\mathrm{s}^{-2}]$:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>side</th>
+<th>expression</th>
+<th>dimension</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>left</td>
+<td>$\Omega_0^{2}c^{2}\rho^{2}u_\alpha u_\beta$</td>
+<td>$\mathrm{cm}^{6}\cdot\mathrm{cm}^{2}\mathrm{s}^{-2}\cdot\mathrm{g}^{2}\mathrm{cm}^{-6}$</td>
+</tr>
+<tr>
+<td>right</td>
+<td>$\hbar^{2}\,\nabla_\alpha\partial_\beta(U/\sqrt{-G})/(U/\sqrt{-G})$</td>
+<td>$\mathrm{g}^{2}\mathrm{cm}^{4}\mathrm{s}^{-2}\cdot\mathrm{cm}^{-2}$</td>
+</tr>
+</tbody>
+</table></div>
+<p>Both reduce to $\mathrm{g}^{2}\mathrm{cm}^{2}\mathrm{s}^{-2}$, so the equation is dimensionally closed and the volume is forced. This matters because the same volume is what makes the mass shell come out right (§1.6), and because the volume is not an unknown: it is the same object as $\xi$ and as $l_0$ (§1.5).</p>
+<h3 id="13-where-math43-comes-from-and-the-one-step-that-is-not-written">1.3 Where $\rho$ comes from, and the one step that is not written</h3>
+<p>Equation (47) is not derived from nothing. The scan gives its immediate ancestor, an identification taken from quantum mechanics:</p>
+<p>$$I_x\cdot\psi = \rho\,\Omega_0 c\,u_x\cdot\psi = (-\hbar\,\partial_x)\,\psi,$$</p>
+<p>that is, the momentum operator applied to a state equals $\rho\,\Omega_0 c\,u_x$ times the state. Rearranged, this is a <strong>guidance relation</strong>: the quantity $\rho\,\Omega_0 c\,u_x$ is to the state what de Broglie's $mv$ is to the phase,</p>
+<p>$$\rho\,\Omega_0 c\,u_x = -\,\hbar\,\frac{\partial_x\psi}{\psi}.$$</p>
+<p>Equation (47) is what this becomes when it is made covariant and its square is traded for a second derivative. That trade is an identity for a class of states and not in general, and the distinction is worth being exact about, because it is the one step in the chain that is not spelled out.</p>
+<p>Write $\psi = A\,e^{iS/\hbar}$. Then</p>
+<p>$$\left(\frac{\partial_x\psi}{\psi}\right)^{2} - \frac{\partial^{2}_x\psi}{\psi} = \left(\frac{A'}{A}\right)^{2} - \frac{A''}{A},$$</p>
+<p>which vanishes exactly when the amplitude is exponential, $A \propto e^{ax}$; for a state of constant amplitude it vanishes trivially, and for a general amplitude it does not. Numerically, on a grid with $k = 1.7$:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>state</th>
+<th>$\left\lvert(\psi'/\psi)^{2} - \psi''/\psi\right\rvert$</th>
+<th>verdict</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\psi = e^{ikx}$</td>
+<td>$3\times10^{-7}$ (finite-difference error)</td>
+<td>identical</td>
+</tr>
+<tr>
+<td>$\psi = e^{ikx}e^{2x}$, exponential amplitude</td>
+<td>$2\times10^{-7}$ (finite-difference error)</td>
+<td>identical</td>
+</tr>
+<tr>
+<td>$\psi = e^{ikx}/(1+x^{2})$, general amplitude</td>
+<td>$3.4\times10^{-1}$</td>
+<td>differs, by $34\%$</td>
+</tr>
+</tbody>
+</table></div>
+<p>So the identification holds for every state the model actually uses — plane waves and exponentials — and fails for a general amplitude. This is a real qualification on the derivation of (47), and it is not a fatal one: an eikonal-class identification is exactly what a WKB programme would be entitled to. But it means (47) is established for the eikonal class, and the corpus does not say so.</p>
+<h3 id="14-the-source-is-a-quantum-potential">1.4 The source is a quantum potential</h3>
+<p>Put the two halves of §1.2 together and the interpretation is forced. The right side of (47) is</p>
+<p>$$\frac{\partial^{2}_\alpha U}{U},$$</p>
+<p>a second derivative of an amplitude divided by the amplitude. The de Broglie–Bohm quantum potential is</p>
+<p>$$Q = -\,\frac{\hbar^{2}}{2m}\,\frac{\nabla^{2}A}{A},$$</p>
+<p>the same object with a coefficient. The shape is not a resemblance; it is the same functional form, and the framework's own companion article <em>The WKB Approximation and the Hamilton–Jacobi Equation in Biquaternionic Form</em> records exactly this object, $Q = -\frac{\hbar^{2}}{2m}\nabla^{2}A/A$, as "exact for any state written in the form $A e^{iS/\hbar}$" and as the "entire difference between the classical and the quantum descriptions". Against that the four-step argument of the programme is:</p>
+<ol>
+<li>The geometry's source is $T_{\alpha\beta} = \xi^{2}\rho^{2}u_\alpha u_\beta$, eq. (19) with (51).</li>
+<li>But $\rho^{2}u_\alpha u_\beta$ is not a dust density: eq. (47) makes it the quotient of an amplitude's second derivative by the amplitude.</li>
+<li>Therefore the source that curves the complex space <strong>is a quantum potential</strong>, and the "matter" driving the geometry is the quantity that drives Bohmian motion — reached not by analogy but by the definition of $\rho$.</li>
+<li>This also explains why the formalism had to contain a volume at all: a ratio of derivatives cannot be equated to $\rho^{2}u_\alpha u_\beta$ without one (§1.2), and that volume is not an unknown (§1.5).</li>
+</ol>
+<p>Two things should be said against overreading this. First, Charon's $U$ is the <em>action density</em> $dA/dV_4$, whereas Bohm's $A$ is the modulus of the wavefunction; the identification of the two is the programme's own move and is not forced. Second, what the quantum potential <em>does</em> in (47) is unlike what it does in Bohmian mechanics: in the pilot-wave theory $Q$ shifts the potential in a single-particle Hamilton–Jacobi equation, whereas in (47) it is equated to a source density that curves a metric. The shape is shared; the role is inverted. Both remarks belong in the article because the shared shape is the strongest structural evidence the corpus offers, and it is worth having only if its limits are stated.</p>
+<h3 id="15-why-math73-is-not-optional-and-is-not-a-free-parameter">1.5 Why $\Omega_0$ is not optional, and is not a free parameter</h3>
+<p>The constant $\Omega_0$ enters (47) and therefore enters the head of the whole leptonic chain, so its status is decisive for the programme's parameter count. Three places in the corpus give it, and they agree:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>source</th>
+<th>statement</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>eq. (49), scan 018</td>
+<td>$\xi = \Omega_0 c/\hbar$ — the definition of $\xi$</td>
+</tr>
+<tr>
+<td>053 §13, scan 053</td>
+<td>$\Omega_0 = \tfrac{4}{3}\pi l_0^{3}$ — "le volume quantique, qui est lui-même une sphère de rayon $l_0$"</td>
+</tr>
+<tr>
+<td>057 and 058</td>
+<td>$\xi = 6{,}467\times10^{-4}$ cgs, whence $l_0 = 1{,}76\times10^{-14}$ cm</td>
+</tr>
+</tbody>
+</table></div>
+<p>So $\Omega_0$, $\xi$ and $l_0$ are <strong>one</strong> degree of freedom, not three, and (49) says the coupling $\xi$ is not free: it is fixed by the quantum volume. What the corpus then does with $l_0$ is honest and is recorded in scan 057 itself: the numerical value was taken from the nucleon mass $M_0$ "comme une « suggestion »", while the Système $L$ "doit directement calculer $\xi$". In other words the programme states that this one input is not yet computed by the model. Two further facts about the pair, from recomputation:</p>
+<ul>
+<li>$\xi$ and $l_0$ as printed are not exactly mutually consistent. $\xi = \tfrac{4}{3}\pi l_0^{3}c/\hbar$ with $l_0 = 1{,}76\times10^{-14}$ cm gives $\xi = 6{,}49\times10^{-4}$, not the printed $6{,}467\times10^{-4}$. The self-consistent pair is $\xi = 6{,}467\times10^{-4}$ with $l_0 = 1{,}76\times10^{-14}$ cm to three figures.</li>
+<li>$\Omega_0 = \tfrac{4}{3}\pi l_0^{3} = 2{,}28\times10^{-41}\ \mathrm{cm}^{3}$.</li>
+</ul>
+<p>The reason the volume must exist at all is given in Charon's own words in 053 §13 and is a genuine argument: $\rho$ is defined at a mathematical point, which has zero volume, while energy and momentum "ne peuvent concerner qu'un volume fini et non nul d'espace". The quantum volume is the bridge between a point density and an extended energy — which is precisely what eq. (59) then does.</p>
+<h3 id="16-the-chain-from-the-definition-to-the-mass-shell">1.6 The chain from the definition to the mass shell</h3>
+<p>With (47) in hand the formalism closes in eight steps, all of them on the intact scan 018, and none of them speculative. Writing $\xi = \Omega_0 c/\hbar$ gives the same law rewritten (eq. 48),</p>
+<p>$$\xi^{2}\rho^{2}u_\alpha^{2} = -\,\frac{1}{U}\,\partial^{2}_\alpha U,$$</p>
+<p>with the definition (eq. 49), $\xi = \Omega_0 c/\hbar$. The components of the physical tensor then follow (eq. 50),</p>
+<p>$$\mathbf{T}_{\alpha\alpha} = \xi^{2}\rho^{2}u_\alpha^{2},$$</p>
+<p>and because $\rho$ is an invariant and the four quadratic components $u_\alpha^{2}$ transform as a rank-two tensor, the microscopic form is (eq. 51)</p>
+<p>$$T_{\alpha\beta} = \xi^{2}\rho^{2}u_\alpha u_\beta .$$</p>
+<p><strong>Charon states in the text that this is not a momentum–energy tensor</strong> — " $T_{\alpha\beta}$ n'est pas un tenseur impulsion-énergie : nous continuerons de le nommer tenseur physique" — and the dimension confirms him: $\xi^{2}\rho^{2}$ is $[\mathrm{cm}^{-2}]$, a curvature, not an energy density. The field equation is then (eq. 52)</p>
+<p>$$R_{\alpha\beta} - \tfrac{1}{2}RG_{\alpha\beta} + \Lambda G_{\alpha\beta} = -\xi^{2}\rho^{2}u_\alpha u_\beta,$$</p>
+<p>and its contraction gives (eq. 53)</p>
+<p>$$R - 4\Lambda = G^{\alpha\beta}T_{\alpha\beta} = \xi^{2}\rho^{2} = C_1 .$$</p>
+<p>That contraction is exact and worth doing explicitly, because it fixes the normalisation: multiplying (52) by $G^{\alpha\beta}$ and summing, $G^{\alpha\beta}R_{\alpha\beta} = R$, $G^{\alpha\beta}G_{\alpha\beta} = 4$, and $G^{\alpha\beta}u_\alpha u_\beta = u_\beta u^{\beta} = 1$ by the unit-velocity condition (eq. 44, $G_{ab}u^{a}u^{b} = 1$). Therefore $R - \tfrac{1}{2}R\cdot 4 + 4\Lambda = -\xi^{2}\rho^{2}$, i.e. $R - 4\Lambda = \xi^{2}\rho^{2}$, which is (53). The oscillator form and the curvature form follow immediately:</p>
+<p>$$\Box^{2}U + \xi^{2}\rho^{2}U = 0, \qquad R = \xi^{2}\rho^{2} + 4\Lambda, \qquad R \in \mathbb{R}.$$</p>
+<p>The last three steps carry the physics. In the tangent Lorentz space the trace reads (eq. 57)</p>
+<p>$$\eta^{\alpha\beta}\mathbf{T}_{\alpha\beta} = \xi^{2}\rho^{2}u_4^{2} - \sum_{j=1}^{3}\xi^{2}\rho^{2}u_j^{2} = \xi^{2}\rho^{2},$$</p>
+<p>whose right-hand equality is the equation the transcription had dropped as eq. (58) and which was read from the printed page:</p>
+<p>$$\Omega_0^{2}c^{2}\rho^{2}u_4^{2} - \sum_{j=1}^{3}\Omega_0^{2}c^{2}\rho^{2}u_j^{2} = \Omega_0^{2}c^{2}\rho^{2}.$$</p>
+<p>(One textual note. The transcription of (57) ends the equation with the group $T_1^{2} + T_2^{2} + T_3^{2} + T_4^{4}$, in which subscripts and superscripts are evidently interchanged — the object that can be summed to $\xi^{2}\rho^{2}$ is the trace $T_1^{1}+T_2^{2}+T_3^{3}+T_4^{4}$, not a sum of squares. The identification is safe because (53), which is independent of (57), fixes the value.)</p>
+<p><strong>Equation (58) is not an extra assumption; it is forced twice over.</strong> It is forced by consistency: (57) gives $\xi^{2}\rho^{2}(u_4^{2} - \sum_j u_j^{2})$, and (53) requires this to equal $\xi^{2}\rho^{2}$, so $u_4^{2} - \sum_j u_j^{2} = 1$ must hold — which is (58) with the common factor removed. And it is forced by physics: $u_4^{2} - \sum_j u_j^{2} = 1$ is exactly the unit-velocity condition (44) written in the flat tangent space. Verified on arbitrary four-vectors, $u_4^{2} - \sum_j u_j^{2} = 1$ holds identically once $u_4 = \sqrt{1 + \sum_j u_j^{2}}$. A recovered equation that nothing else could have supplied is thus confirmed by two independent requirements.</p>
+<p>Mass, energy and momentum are then <em>defined</em> from $\Omega_0$ and $\rho$ (eq. 59),</p>
+<p>$$M_0 = \Omega_0\rho,\qquad E = \Omega_0 c^{2}\rho u_4,\qquad P_j = \Omega_0 c\rho u_j,$$</p>
+<p>and the mass shell (eq. 60) follows:</p>
+<p>$$\frac{E^{2}}{c^{2}} - \sum_{j=1}^{3}P_j^{2} = M_0^{2}c^{2}.$$</p>
+<p>That is (46) — the target the whole construction was built to recover. The chain is therefore</p>
+<p>$$(47) \;\to\; (48) \text{ with } (49) \;\to\; (58) \;\to\; (59) \;\to\; (60) = (46),$$</p>
+<p>and it closes exactly. If it did not, the programme would have no reason to exist; it does, and the recovery of (46) from a microscopic definition is a real result. The same identity appears again in the cosmological work as eq. (170), $\Omega_0^{2}c^{2}\rho^{2} = \xi^{2}\hbar^{2}\rho^{2}$.</p>
+<h3 id="17-the-oscillator-is-the-kleingordon-equation-for-math136">1.7 The oscillator is the Klein–Gordon equation for $M_0$</h3>
+<p>One consequence of the chain deserves separate statement because it ties the source to the framework's own material. The oscillator equation above is</p>
+<p>$$\Box^{2}U + \xi^{2}\rho^{2}U = 0 .$$</p>
+<p>Substituting $\xi = \Omega_0 c/\hbar$ and $M_0 = \Omega_0\rho$,</p>
+<p>$$\xi^{2}\rho^{2} = \frac{\Omega_0^{2}c^{2}\rho^{2}}{\hbar^{2}} = \frac{M_0^{2}c^{2}}{\hbar^{2}},$$</p>
+<p>so the oscillator equation <strong>is</strong> the Klein–Gordon equation for a scalar of mass $M_0$:</p>
+<p>$$\Box^{2}U + \frac{M_0^{2}c^{2}}{\hbar^{2}}U = 0 .$$</p>
+<p>Numerically the two expressions are not merely close but one and the same: with $\Omega_0 = 2{,}28\times10^{-41}\ \mathrm{cm}^{3}$, $c = 2{,}99792458\times10^{10}\ \mathrm{cm\,s^{-1}}$ and $\hbar = 1{,}0546\times10^{-27}\ \mathrm{erg\,s}$, both equal $4{,}05\times10^{28}$ at $\rho = 3{,}1\times10^{17}$, and the equality holds for every $\rho$ because $\Omega_0$, $c$ and $\hbar$ are constants and $\rho$ cancels between the two sides. This is why the corpus's entry 2.5 records the oscillator as the Klein–Gordon equation, tagged [MATH] rather than [SPEC]: the mathematics is standard and Charon uses it correctly. The physics he attaches to it is separate, and the identification $M_0 = \Omega_0\rho$ is where the mass enters. It also gives the first equation of the cosmological section, (170), with $\Omega_0^{2}c^{2}\rho^{2} = \xi^{2}\hbar^{2}\rho^{2}$, and it means the source of the geometry and the mass in the wave equation are <strong>the same quantity</strong> — the load-bearing joint of the whole formalism, as the next parts show.</p>
+<h2 id="part-2-the-position-of-established-physics-2026">Part 2 — The position of established physics, 2026</h2>
+<h3 id="21-the-geometry-side-is-not-free">2.1 The geometry side is not free</h3>
+<p>The programme's own entry 2.8 records that the conditions imposed on $S_{\alpha\beta}$ — second order, linear in the second derivatives of the metric, and conserved — single out the Einstein tensor up to $\Lambda$. That is the Cartan–Lovelock uniqueness theorem (Lovelock 1971), and Charon states it correctly. Its consequence for this article is that the left-hand side of (52) has no adjustable content: the only freedom is the cosmological constant, and the only freedom in the equation is on the right. Everything in the confrontation below is therefore a statement about the source, and none of it can be deflected onto the geometry.</p>
+<h3 id="22-a-source-that-is-not-a-stressenergy-tensor-and-a-coupling-fixed-to-one">2.2 A source that is not a stress–energy tensor, and a coupling fixed to one</h3>
+<p>Two formal points follow from §1.6 and should be stated before the confrontation, because both are structural rather than empirical.</p>
+<p>First, $\xi^{2}\rho^{2}u_\alpha u_\beta$ is $[\mathrm{cm}^{-2}]$, exactly the dimension of $R_{\alpha\beta}$. A stress–energy tensor carries energy density, $[\mathrm{g\,cm^{-1}s^{-2}}]$, and general relativity multiplies it by $8\pi G/c^{4}$, which is $[\mathrm{s^{2}\,g^{-1}cm^{-1}}]$, to reach a curvature. In (52) there is no such factor, and none is needed: the source already <em>is</em> a curvature. Charon's text says so — he refuses the name stress–energy tensor. The consequence is that <strong>(52) contains no coupling constant</strong>, and in particular it does not contain $G$. The curvature is fixed directly by $\xi^{2}\rho^{2}$ through (53). Whatever value the programme later attaches to $G$ (its result $G = (5{,}4\pm2{,}7)\times10^{-8}$ cgs is a separate chain) does not come from the field equation.</p>
+<p>Second, the field equation's right-hand side has no pressure term. The most general source compatible with isotropy in general relativity is the perfect fluid</p>
+<p>$$T_{\mu\nu} = \left(\rho + \frac{p}{c^{2}}\right)u_\mu u_\nu - p\,g_{\mu\nu},$$</p>
+<p>whose second term vanishes only for dust, $p = 0$. Charon's (51) has no $p\,g_{\mu\nu}$ term: it is a dust source, or more precisely a single-product source, by construction. Since (52) is the Einstein equation with the coupling absorbed, a pressureless source is a definite claim about the contents of the space — and it is not the claim the cosmology actually uses, as §3.1 shows.</p>
+<h3 id="23-the-dust-problem-and-the-pressure-that-is-in-fact-there">2.3 The dust problem, and the pressure that is in fact there</h3>
+<p>If the source of a homogeneous, isotropic space is dust, the Friedmann pair follows with $p=0$ and one has the standard matter era. The corpus's own note, recorded as entry 2.2, is that a $\rho^{2}$-dust of this form cannot source a Friedmann expansion in the usual way. That note is correct as far as it goes, but the fuller statement is more interesting, because Charon's cosmological source is <strong>not</strong> (51). In the cosmological section he writes, as eq. (172),</p>
+<p>$$T^{4}_{4} = \xi^{2}\rho^{2} - \frac{\xi^{2}}{c^{4}}D_E^{2} + \frac{P_\rho^{2}}{\hbar^{2}}, \qquad T^{j}_{j} = \frac{1}{3}\frac{\xi^{2}}{c^{4}}D_E^{2} - \frac{1}{3}\frac{P_\rho^{2}}{\hbar^{2}},$$</p>
+<p>where $D_E$ is the energy density of a blackbody radiation field and $P_\rho$ a momentum density. So a pressure-like component <em>is</em> present, and it has the right shape for radiation: $T^{j}_{j}$ is one third of the $D_E$ term, which is the equation of state $p = \rho_{\text{rad}}c^{2}/3$ that blackbody radiation satisfies. Charon is not smuggling a fluid past the reader; he computes the radiation pressure of the field he put in.</p>
+<p>Three points remain, and they are the substance of the confrontation. The pressure is <strong>quadratic</strong> in $D_E$, where a physical radiation pressure is linear in the energy density. It carries the <strong>opposite sign</strong> to a positive fluid pressure entering the Friedmann equation in Charon's own arrangement of it (§3.2). And the microscopic form (51) and the cosmological form (172) are <strong>different objects</strong>: (51) has $T^{j}_{j} = \xi^{2}\rho^{2}u_j^{2}$, which for a comoving fluid is a velocity-squared term and vanishes in the rest frame, while (172) has a pressure that survives in the rest frame. The averaging that would take one to the other is not written anywhere in the corpus.</p>
+<h3 id="24-the-density-squared-law">2.4 The density-squared law</h3>
+<p>The most consequential single feature of the source is that the field equation's energy content is $\xi^{2}\rho^{2}$ — the <strong>square</strong> of the density. The Friedmann pair, by contrast, is linear in the density. Charon's own model fixes the density law by requiring conservation of the total proper mass of the "empty" space, eq. (187),</p>
+<p>$$\rho = \frac{\alpha}{R^{3}} \quad (\forall\tau),$$</p>
+<p>and takes the radiation to cool adiabatically with $\theta R = \text{cte}$, eq. (190), $D_E/c^{2} = \beta/R^{4}$. So the terms in the Friedmann-like equation (174b, below) scale as</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>term</th>
+<th>$R$-dependence</th>
+<th>effective equation of state</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\xi^{2}\rho^{2}$ with $\rho \propto R^{-3}$</td>
+<td>$R^{-6}$</td>
+<td>$w = 1$ — <strong>stiff matter</strong>, exactly $R^{-6}$</td>
+</tr>
+<tr>
+<td>$\xi^{2}D_E^{2}/c^{4}$ with $D_E \propto R^{-4}$</td>
+<td>$R^{-8}$</td>
+<td>none standard; stiffer than stiff</td>
+</tr>
+<tr>
+<td>standard matter, for comparison</td>
+<td>$R^{-3}$</td>
+<td>$w = 0$</td>
+</tr>
+<tr>
+<td>standard radiation, for comparison</td>
+<td>$R^{-4}$</td>
+<td>$w = 1/3$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The $\rho^{2}$ term with $\rho \propto R^{-3}$ therefore behaves exactly like <strong>stiff matter</strong>, an equation of state $p = \rho c^{2}$ that is a recognised but exotic possibility, and the $D_E^{2}$ term is stiffer still. This is the density-squared law that article S10 analyses directly, seen here from the expansion side; its observational consequences are the absence of any matter era and a forced bounce, which §3.3 gives.</p>
+<h3 id="25-energy-conditions-and-negative-proper-mass">2.5 Energy conditions, and negative proper mass</h3>
+<p>Entry 2.10 records that $W$, $M_0$ and $\rho$ are each allowed positive, negative, or zero. In the source (51) this is not a formal flourish: a negative $\rho$ flips the sign of the source term and, through (59), the sign of $M_0$, so the geometry can be curved either way and the cosmology is built to use both signs in different cycles. The standard energy conditions are violated: the strong energy condition $\rho c^{2} + 3p \ge 0$ is not guaranteed by anything in the formalism, and the dominant energy condition has no counterpart at all when the density may switch sign at will. That is not by itself a refutation — every exotic cosmology violates some condition — but it removes the constraint that would otherwise rule out half of the model's solutions, and it should be stated whenever a result of the model is quoted as a success.</p>
+<h3 id="26-the-quantum-potential-is-an-interpretation-not-a-mechanism">2.6 The quantum potential is an interpretation, not a mechanism</h3>
+<p>Finally, the identification of §1.4 rests on the de Broglie–Bohm programme, which is a legitimate interpretation of quantum mechanics and <strong>not</strong> the mainstream reading. The mathematics that makes the quantum potential well defined — the amplitude–phase decomposition, the exact rewriting of the Schrödinger equation as a Hamilton–Jacobi equation plus a transport equation — is standard and correct, as the companion WKB article sets out. What is an interpretive choice is that the quantum potential is <em>physical</em>, in the sense of being the thing that pushes a particle. Charon's (47) makes a much stronger claim than the interpretation does: it makes the quantum potential the <strong>source of spacetime curvature</strong>. Nothing in established physics licenses that step, and it is the programme's central speculative commitment. It is also, as Part 4 argues, the reason the programme is interesting to this corpus.</p>
+<h2 id="part-3-the-confrontation-with-the-friedmann-pair">Part 3 — The confrontation with the Friedmann pair</h2>
+<h3 id="31-the-two-objects">3.1 The two objects</h3>
+<p>The confrontation must be made against the right object, and there are two candidates. Equation (51),</p>
+<p>$$T_{\alpha\beta} = \xi^{2}\rho^{2}u_\alpha u_\beta,$$</p>
+<p>is the <em>microscopic</em> form, valid at a point $M$ of the complex space. Equations (172) are the <em>macroscopic</em> form, valid for a homogeneous and isotropic space after the radiation field is included. They are not the same, and the difference is not a rewriting: in the rest frame of a comoving fluid, (51) gives $T^{j}_{j} = 0$, while (172) gives $T^{j}_{j} = \tfrac{1}{3}\xi^{2}D_E^{2}/c^{4} - \tfrac{1}{3}P_\rho^{2}/\hbar^{2}$, which is not zero when a radiation field is present. That the two forms should differ is expected — a microscopic source and its macroscopic average need not coincide — but the average is an integral over the micro-structure of the complex space, it is not performed in the corpus, and without it the two forms cannot be checked against each other. That is a gap in the derivation, not an error in it, and it is the first thing a reader should note.</p>
+<p>One consistency check <em>does</em> pass, and it is worth recording because it is a genuine constraint on (172). The trace of the cosmological source is</p>
+<p>$$T^{4}_{4} + 3T^{j}_{j} = \xi^{2}\rho^{2},$$</p>
+<p>all the $D_E$ and $P_\rho$ terms cancelling, which is exactly (53), $G^{\alpha\beta}T_{\alpha\beta} = \xi^{2}\rho^{2}$. So the cosmological form preserves the trace identity that the microscopic form satisfies; whatever else (172) is, it is not a different trace class. The cancellation is an identity rather than a numerical coincidence: writing the three independent coefficients $\xi^{2}\rho^{2}$, $\xi^{2}D_E^{2}/c^{4}$ and $P_\rho^{2}/\hbar^{2}$ as $A$, $B$, $C$, the sum is $A - B + C + 3(\tfrac{1}{3}B - \tfrac{1}{3}C) = A$, verified for random triples including negative values.</p>
+<h3 id="32-term-by-term-against-the-friedmann-pair">3.2 Term by term against the Friedmann pair</h3>
+<p>Charon's expansion equations are (174), with $R(\tau)$ the radius and the primes derivatives with respect to the duration:</p>
+<p>$$2\frac{R''}{R} + \left(\frac{R'}{R}\right)^{2} + \frac{Kc^{2}}{R^{2}} - \Lambda c^{2} = c^{2}T^{j}_{j} = \frac{1}{3}\xi^{2}\frac{D_E^{2}}{c^{2}} - \frac{1}{3}\frac{c^{2}}{\hbar^{2}}P_\rho^{2},$$</p>
+<p>$$3\left(\frac{R'}{R}\right)^{2} + 3\frac{Kc^{2}}{R^{2}} - \Lambda c^{2} = c^{2}T^{4}_{4} = \xi^{2}c^{2}\left(\rho^{2} - \frac{D_E^{2}}{c^{4}}\right) + \frac{c^{2}}{\hbar^{2}}P_\rho^{2}.$$</p>
+<p>The standard pair, for a perfect fluid with mass density $\rho_m$ and pressure $p$ in the same metric, is</p>
+<p>$$2\frac{R''}{R} + \left(\frac{R'}{R}\right)^{2} + \frac{Kc^{2}}{R^{2}} = \Lambda c^{2} - \frac{8\pi G}{c^{2}}p,$$</p>
+<p>$$\left(\frac{R'}{R}\right)^{2} + \frac{Kc^{2}}{R^{2}} = \frac{8\pi G}{3}\rho_m + \frac{\Lambda c^{2}}{3}.$$</p>
+<p>The correspondence is exact for the kinematic terms and partial elsewhere. The comparison, term by term on the right:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>standard term</th>
+<th>Charon's term</th>
+<th>agreement</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\Lambda c^{2}$</td>
+<td>$\Lambda c^{2}$</td>
+<td><strong>agrees</strong>; $\Lambda$ is free in both</td>
+</tr>
+<tr>
+<td>$\dfrac{8\pi G}{3}\rho_m$</td>
+<td>$\dfrac{\xi^{2}c^{2}}{3}\left(\rho^{2} - \dfrac{D_E^{2}}{c^{4}}\right) + \dfrac{c^{2}}{3\hbar^{2}}P_\rho^{2}$</td>
+<td><strong>fails</strong>: quadratic in $\rho$, not linear; no $G$; the two densities enter with opposite signs</td>
+</tr>
+<tr>
+<td>$-\dfrac{8\pi G}{c^{2}}p$</td>
+<td>$+\dfrac{1}{3}\dfrac{\xi^{2}}{c^{2}}D_E^{2} - \dfrac{1}{3}\dfrac{c^{2}}{\hbar^{2}}P_\rho^{2}$</td>
+<td><strong>fails</strong>: sign opposite to a positive $p$, and $p$ is quadratic in the energy density where radiation pressure is linear</td>
+</tr>
+<tr>
+<td>$Kc^{2}/R^{2}$</td>
+<td>$Kc^{2}/R^{2}$</td>
+<td><strong>agrees</strong>; $K = +1$ for the closed model</td>
+</tr>
+</tbody>
+</table></div>
+<p>Three things follow, and they are the article's verdict.</p>
+<p>The curvature side is right, and it is right for a reason given in Part 2.1: the left-hand sides are the Einstein tensor's components for the metric (173), reproduced correctly. The programme did not make an algebra error in passing from (52) to (174); the passage is faithful.</p>
+<p>The energy term is the wrong <em>kind</em>. Because the source is $\xi^{2}\rho^{2}$ and not $\rho$, it cannot be written as $\tfrac{8\pi G}{3}\rho_m$ for any $\rho_m$ unless $G$ and the normalisation are made density-dependent, which the field equation does not permit. Charon's Friedmann-like equation is not the Friedmann equation with an unusual equation of state; it is a different equation, whose "energy density" is quadratic in the density.</p>
+<p>The pressure term has the wrong sign as well as the wrong power, but this is the least robust of the three statements, because sign conventions for the source in (27) and (52) are not fully pinned by the transcription. It is stated here as interesting and not as decisive; the fate of the density-squared term in §3.3 below is decisive and sign-independent.</p>
+<h3 id="33-the-power-law-and-its-correction-by-the-next-article">3.3 The power law, and its correction by the next article</h3>
+<p>Take the second of (174), drop $K$, $\Lambda$ and $P_\rho$, and keep the dominant $\rho^{2}$ term with $\rho = \alpha/R^{3}$ from eq. (187):</p>
+<p>$$\left(\frac{R'}{R}\right)^{2} = \frac{\xi^{2}c^{2}}{3}\rho^{2} = \frac{\xi^{2}c^{2}\alpha^{2}}{3}\,R^{-6} \quad\Longrightarrow\quad R' \propto R^{-2} \quad\Longrightarrow\quad R \propto \tau^{1/3}.$$</p>
+<p>That algebra is correct, and so is the comparison it implies:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>content</th>
+<th>$\rho \propto$</th>
+<th>expansion law</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the $\rho^{2}$ term alone ($\rho\propto R^{-3}$)</td>
+<td>$R^{-6}$</td>
+<td>$R \propto \tau^{1/3}$</td>
+</tr>
+<tr>
+<td>stiff matter, $w = 1$</td>
+<td>$R^{-6}$</td>
+<td>$R \propto \tau^{1/3}$</td>
+</tr>
+<tr>
+<td>standard matter, $w = 0$</td>
+<td>$R^{-3}$</td>
+<td>$R \propto \tau^{2/3}$</td>
+</tr>
+<tr>
+<td>standard radiation, $w = 1/3$</td>
+<td>$R^{-4}$</td>
+<td>$R \propto \tau^{1/2}$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>But the conclusion it was used for is wrong, and the correction belongs here rather than in a later article.</strong> This is a term-balance on an <em>unintegrated</em> equation, and it answers the question <em>what if the $\rho^{2}$ term dominated</em> — a question the model does not in fact satisfy. Integrating the chapter's system (this article's open item 1, taken up in S9, <em>Charon: Can a Density-Squared Dust Expand?</em>) shows that the blackbody term and the momentum-density term <strong>cancel exactly at order $R^{-8}$</strong>, and that the net coefficient of $R^{-6}$ <em>in the integrated equation</em> is not $+\xi^{2}c^{2}\alpha^{2}$ but $-\tfrac{1}{6}\xi^{2}c^{2}\alpha^{2}$. The $R^{-6}$ term is therefore <strong>negative</strong>, and a negative $R^{-6}$ term does not drive a $\tau^{1/3}$ expansion at all: it makes $R'^{2}$ negative below a minimum radius, so the model <strong>bounces</strong> instead. S9 gives the corrected equation, the corrected power-law-free early history, and the derivation of $K = +1$ that rests on it. The transcriptions of the equations affected by that defect — Esp (184), (195) and the two restatements on Esp 068, and RC (5-17), (5-22), the $R''''$ of (5-24), (5-25) and the second field equation (3-24) — have since been corrected in place, in both the <code>.tex</code> and the <code>.md</code> of the improved layer. The printed books were never wrong; the doubled prime entered in transcription, and S9 §1.3 records the cross-book check that proves it.</p>
+<p>The lesson is worth recording as method. <strong>A power law read off an unintegrated equation is a statement about a term, not about a solution; when two terms can cancel, they usually do.</strong> Two further cautions on reading the table above as a refutation stand unchanged: the model was never a monotonic $\Lambda$CDM history — it is a closed pulsating model with a turning point — and it was put forward to describe the interior of a lepton, not the observed universe. The narrow and firm statement that survives is about the <strong>absence of dust</strong>, not about a power law: with a density-squared source there is no $R^{-3}$ term in the expansion equation for any values of the model's constants, and therefore no matter-dominated epoch.</p>
+<h3 id="34-what-the-source-tensor-is-and-is-not">3.4 What the source tensor is, and is not</h3>
+<p>It is worth stating the verdict once, without the algebra. Charon's source tensor is</p>
+<ul>
+<li>dimensionally closed, verified at every step: (47), (48), (52), (53), (54), (57), (58), (59), (60), (170), (172), (174) all balance in Gaussian cgs;</li>
+<li>consistent with the curvature identity (53) both microscopically and macroscopically, verified;</li>
+<li>the correct recovery of the relativistic mass shell (46), verified exactly;</li>
+<li>and yet <strong>not a stress–energy tensor</strong>, by Charon's own statement and by its dimension (curvature, $[\mathrm{cm}^{-2}]$), and therefore not an object to which the Friedmann equations apply without a translation the corpus never performs.</li>
+</ul>
+<p>That is the sharpest internal tension in the programme, and it is now precisely located. It is not that the geometry is wrong, or that the algebra fails, or that the numbers do not close. It is that the <em>source</em> the programme uses for its cosmology is not the source the field equation is derived with, and the missing link between them is a micro-to-macro average over the internal space.</p>
+<h3 id="35-what-would-close-it">3.5 What would close it</h3>
+<p>Four computations, in order of value.</p>
+<ol>
+<li><strong>Perform the average.</strong> Write the macroscopic source as the volume integral of (51) over the internal structure of the complex space and see whether the $D_E^{2}$ and $P_\rho^{2}$ terms of (172) come out, and with which signs. This is the one computation that would convert the confrontation from a gap into a result, and it is the programme's missing load-bearing step.</li>
+<li><strong>State the coupling's status.</strong> Since (52) fixes the curvature to $\xi^{2}\rho^{2}$ and contains no $G$, the separate chain that produces $G = (5{,}4\pm2{,}7)\times10^{-8}$ cgs — scan 095, $G = c^{2}L/\mu$, from the hadron model — should be re-read with (52)'s missing coupling made explicit. Either $G$ is an independent output of the hadron sector, so that the curvature identity (53) and Newton's constant are two facts about the same universe that nothing connects, or the coupling is unity in (52) only because it has been absorbed into the definition of $\rho$, which the programme should say.</li>
+<li><strong>Check the pressure sign against the printed page.</strong> The sign conventions of (27) and (52) are the one place the present reading could be wrong; the printed text would settle it in an afternoon.</li>
+<li><strong>Integrate what S8 could only term-balance.</strong> This item has since been discharged by S9, which integrated the chapter's system, found the $\tau^{1/3}$ term-balance superseded by a bounce (§3.3 above), and derived $K = +1$ from it. What remains for a later article is the comparison of the resulting history against observation, which now means comparing a bouncing, dust-free model rather than a power law.</li>
+</ol>
+<h2 id="part-4-the-position-of-the-biquaternion-framework">Part 4 — The position of the biquaternion framework</h2>
+<h3 id="41-charon-supplies-what-the-frameworks-gravity-programme-lacks">4.1 Charon supplies what the framework's gravity programme lacks</h3>
+<p>The companion article <em>The Einstein Field Equations Under the Biquaternion Framework: A Research Agenda</em> states its central question plainly: whether the framework reproduces the full non-linear Einstein equation or only the linearised sector, and it records that the question is open "more strongly than a missing proof — even the linearised equation has been transcribed rather than derived". The framework has the kinematics of general relativity — the Lorentzian metric, the local $SL(2,\mathbb{C})$, the six-dimensional Lie algebra, a Lie-algebra-valued connection — and "none of general relativity's dynamics". It needs an object that attaches the algebra to the manifold, and the ranking of that article's open items puts the coupling constant and the source among the things an action must supply.</p>
+<p>Charon's programme is a worked example of the other choice. It takes the Einstein tensor as fixed by the uniqueness theorem, imports no action for the geometric side, and <strong>supplies the source by definition</strong>: a density, a unit velocity, and eq. (47). In the framework's terms, Charon's (47) is a proposal for exactly the missing object — a field, built from the algebra's own amplitude, that tells the geometry what to curve around. It is not written in the framework's language, and it is not derived from a framework action, but its role is the role the agenda says is unfilled.</p>
+<p>If Charon's proposal were right, the framework's central question would have a different shape: the source would not need to be derived from a biquaternion action, because it would be derived from the amplitude's own quantum potential, and the action would only be needed for the geometric side. Whether that reshuffling helps the agenda is not obvious — the source would still have to be shown to be the correct one — but it is a genuine alternative to the action-first route, and it comes from a neighbouring programme three decades earlier.</p>
+<h3 id="42-but-the-source-is-imported-not-derived-and-that-is-the-frameworks-own-discipline">4.2 But the source is imported, not derived, and that is the framework's own discipline</h3>
+<p>The framework's stress–energy article derives its conserved tensors from an action by Noether's theorem, and the discipline it follows is that nothing is postulated that the algebra does not supply. Charon's source is on the other side of that line: eq. (34), $T_{\alpha\alpha} = -\frac{1}{U}\partial^{2}_\alpha U$, is an <em>identification</em> chosen because it makes (33) and (32 bis) agree, and (47) is a definition, not a consequence. The programme then imposes conservation as Axiom 1, $\nabla_\alpha T^{\alpha\beta} = 0$, rather than obtaining it from a symmetry. The corpus's own entry 2.9 records the tension: the variational formulation on $U = dA/dV_4$ is standard mathematics, but the claim that it <em>replaces</em> the stress–energy tensor as the physical content is the programme's own.</p>
+<p>So the honest comparison is symmetrical rather than favourable. The framework has the action and lacks the source; Charon has the source and lacks the action. Neither has both, and the article should not be read as an argument that Charon's route is the better one. What it shows is that the two programmes fail in complementary ways, and that a source which is a quantum potential is a candidate the framework has not tried.</p>
+<h3 id="43-the-frameworks-own-open-question-answered-from-outside">4.3 The framework's own open question, answered from outside</h3>
+<p>The reciprocal cross-reference is the WKB article's third open question: "What is the biquaternion status of the quantum potential? It is a central real scalar and is the first correction to the Hamilton–Jacobi equation. Whether the framework gives it a sector reading, or a relation to the biquaternion norm at the next order, is not known." That article establishes that $Q = -\frac{\hbar^{2}}{2m}\nabla^{2}A/A$ is exact for any state $Ae^{iS/\hbar}$, and that the whole semiclassical expansion lives in the algebra's center.</p>
+<p>Charon's (47) is an answer of a kind to that question, and it is worth recording precisely because it is the <em>wrong</em> kind for the framework. Charon does not give $Q$ a sector reading or a norm reading. He promotes it from a term in a single-particle equation to the <strong>source of curvature</strong>, which is a much larger claim and one the framework's structure does not obviously support: the framework's $Q$ is central and real, while a curvature source in the framework would have to be an element of the material sector $\mathbb{M}_-$. So Charon's answer does not fit the framework's question. It does, however, sharpen it, because it exhibits a programme in which the quantum potential is made the interface between quantum mechanics and geometry — the interface the framework would need for its $\mathbb{M}_+$ sector to mean anything on a curved background, which is that agenda's item 4.</p>
+<h3 id="44-what-is-worth-taking">4.4 What is worth taking</h3>
+<p>Four things, in order of how likely they are to be useful.</p>
+<p><strong>The shape of the source.</strong> Whatever becomes of complex relativity, the observation that $-\frac{1}{U}\partial^{2}_\alpha U$ is a quantum potential and that a source built from it is dimensionally closed with a single volume is a clean structural idea. It is the kind of object the framework's gravity agenda should consider as a candidate source: one that comes from the algebra's amplitude rather than from a fitted fluid.</p>
+<p><strong>The volume as the single bridge.</strong> Charon's argument in 053 §13 — that $\rho$ is a point density while energy is not, so a quantum volume is required to convert one into the other — is a real argument and it is structurally satisfying. In the framework's language it is a statement that a dimensionless density cannot become a dimensionful energy, which is precisely the observation that the framework's outputs are pure numbers and its inputs dimensionful. The two programmes are pointing at the same obstruction from opposite sides.</p>
+<p><strong>Eq. (58) as a lesson in verification.</strong> The equation the transcription dropped turns out to be forced by two independent requirements. Any reconstruction of a damaged text should be tested this way: a recovered equation that nothing else supplies is a guess, and one that consistency demands is a result. This article's own programme used the test.</p>
+<p><strong>The density-squared law, as a caution.</strong> A single change — squaring the density — removes the $R^{-3}$ term from the expansion equation altogether, so that the model has no matter-dominated epoch, and it makes the $R^{-6}$ coefficient negative, so that the model bounces rather than beginning in a singularity. It is a compact demonstration of how a small formal choice propagates into a large structural difference, which is the kind of sensitivity the framework's own agenda warns about when it says a result should be recomputed on a case chosen independently of the one that suggested it.</p>
+<h3 id="45-article-level-and-programme-level-suggestions-for-discussion-only">4.5 Article-level and programme-level suggestions, for discussion only</h3>
+<p>These are tentative and they wait on the author.</p>
+<ol>
+<li><strong>S9, the algebra of the expansion, carries the derivation</strong> — and it reached a different conclusion, as anticipated in the sentence this replaces. Its finding, that the $\tau^{1/3}$ term-balance is superseded by a bounce and that $K = +1$ is derived from it, has been written back into §3.3 above, and the earlier claim is withdrawn there rather than left standing.</li>
+<li><strong>S10, on $R = \xi^{2}\rho^{2} + 4\Lambda$, should cross-reference §3.3</strong>, because the stiff-matter identification is a consequence of that law and it is the sharpest empirical face of it.</li>
+<li><strong>The framework's gravity agenda could record Charon's (47) as an external source proposal</strong>, in the same way it records Cirilo-Lombardo, with the same discipline: what it supplies, what it does not, and what would be needed for it to enter the framework's own action. That is an author's decision and not this article's.</li>
+<li><strong>CHARON_IDEAS_AND_CLAIMS.md, entry 2.2, could be extended with the finding of §3.1</strong>: that the microscopic (51) and the macroscopic (172) are different objects and the averaging between them is unwritten. Entry 2.2 currently states the tension but does not locate it.</li>
+</ol>
+<h2 id="summary">Summary</h2>
+<p>Charon replaces the right-hand side of the Einstein field equations with a geometric source, $T_{\alpha\beta} = \xi^{2}\rho^{2}u_\alpha u_\beta$, and that source is not primitive. Eq. (47) of <em>L'Esprit et la Relativité complexe</em>, recovered from the page scan and confirmed on the printed book, defines $\rho^{2}u_\alpha u_\beta$ as the ratio of a second derivative of the action-density amplitude $U$ to the amplitude itself. That is the exact functional shape of the de Broglie–Bohm quantum potential $Q = -\frac{\hbar^{2}}{2m}\nabla^{2}A/A$, and it comes out of a guidance relation, $\rho\Omega_0 c u_x = -\hbar\,\partial_x\psi/\psi$, that Charon takes from quantum mechanics. The "matter" that curves his complex space is a quantum potential; that is the strongest internal evidence in the corpus that the leptonic formalism was not assembled ad hoc. The chain from the definition to the relativistic mass shell — (47), (48), (49), (58), (59), (60) = (46) — closes exactly; the dropped eq. (58) is forced twice over, by the contraction (53) and by the unit-velocity condition (44); and the oscillator equation proves to be the Klein–Gordon equation for the mass $M_0 = \Omega_0\rho$, verified to all digits. The constant $\Omega_0$ is one degree of freedom with $\xi$ and $l_0$, fixed by (49) rather than free, and the one input the programme admits it has not computed.</p>
+<p>The failure is on the other side, and it is precise. The source is dimensionally closed, consistent with the curvature identity, and the recovery of (46) is exact — but it is <strong>not a stress–energy tensor</strong>: its dimension is curvature, $[\mathrm{cm}^{-2}]$, and Charon says as much in the text. Consequently eq. (52) contains no coupling constant, and the Friedmann pair applies to it only after a translation the corpus never performs. Confronted with the Friedmann pair, the geometry side matches exactly and the source side does not: the energy term is quadratic in $\rho$ where Friedmann is linear, so that with $\rho \propto R^{-3}$ the model has no $R^{-3}$ term at all and therefore no matter era, the expansion being driven by a negative stiff term that forces a bounce (as corrected in §3.3 from the integration carried out in S9), and the pressure term has the opposite sign and the wrong power from radiation's. And the microscopic form (51) and the macroscopic form (172) are different objects, the pressure surviving in the rest frame in one and not the other; the average that would connect them is the programme's missing load-bearing step.</p>
+<p>Against the biquaternion framework the comparison is complementary rather than favourable. The framework's gravity programme has the kinematics of general relativity and no dynamics, and its central question is whether an action can supply the source; Charon has the source and no action, and postulates the source as an identification where the framework's own discipline derives it from Noether. His (47) is a candidate for exactly the object the framework's agenda says is unfilled, and it is a source of a kind the framework has not tried: one built from the algebra's own amplitude rather than from a fitted fluid. It does not fit the framework's open question about the quantum potential — Charon promotes $Q$ to a curvature source, where the framework's $Q$ is a central real scalar — but it sharpens that question, because it exhibits the quantum potential as the interface between quantum mechanics and geometry, which is the interface the framework would need for its informational sector to mean anything on a curved background.</p>
+<p>The verdict on the source tensor is therefore that it is coherent, dimensionally sound, and structurally motivated, and that the formalism it heads is under genuine strain at exactly the joint that carries the cosmology. A coherent foundation does not rescue a falsified extrapolation, and this article's own programme records separately — in the lepton-tower post-mortem and in the parameter count of the Système $L$ — that the same formalism fails there too.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$G_{\alpha\beta}$, $\eta_{\alpha\beta}$</td>
+<td>Complex-space metric and tangent Lorentz metric; $G = \det G_{\alpha\beta}$</td>
+</tr>
+<tr>
+<td>$T_{\alpha\beta}$, $\mathbf{T}_{\alpha\beta}$</td>
+<td>The physical tensor; boldface its normal (diagonal) form in the tangent Lorentz space</td>
+</tr>
+<tr>
+<td>$S_{\alpha\beta}$</td>
+<td>Geometric rank-two tensor; $S_{\alpha\beta} = T_{\alpha\beta}$ is Axiom 2 (eq. 19)</td>
+</tr>
+<tr>
+<td>$\rho$</td>
+<td>Proper density; complex-space invariant, real holomorphic (eq. 45)</td>
+</tr>
+<tr>
+<td>$u_\alpha$</td>
+<td>Unit four-velocity of the complex space, $G_{ab}u^{a}u^{b} = 1$ (eq. 44)</td>
+</tr>
+<tr>
+<td>$U$</td>
+<td>Action-density amplitude, $U = dA/dV_4$; the object that is not a density of matter</td>
+</tr>
+<tr>
+<td>$\Omega_0$</td>
+<td><em>Volume quantique</em>; $\Omega_0 = \frac{4}{3}\pi l_0^{3}$ (053 §13)</td>
+</tr>
+<tr>
+<td>$\xi$</td>
+<td>Coupling constant of the source; $\xi = \Omega_0 c/\hbar$ (eq. 49)</td>
+</tr>
+<tr>
+<td>$l_0$</td>
+<td>Elementary length, $l_0 = 1{,}76\times10^{-14}$ cm at $\xi = 6{,}467\times10^{-4}$ cgs</td>
+</tr>
+<tr>
+<td>$C_1$</td>
+<td>$R - 4\Lambda = \xi^{2}\rho^{2}$; the scalar curvature content of the source (eq. 53)</td>
+</tr>
+<tr>
+<td>$\Lambda$</td>
+<td>Cosmological constant; free, and not fixed by the axioms (eq. 26, $b = -2\Lambda$)</td>
+</tr>
+<tr>
+<td>$M_0$, $E$, $P_j$</td>
+<td>Proper mass, energy and momentum of a cell of the quantum volume (eq. 59)</td>
+</tr>
+<tr>
+<td>$R(\tau)$, $K$</td>
+<td>Scale factor (called radius) and curvature sign of the homogeneous model (eq. 173)</td>
+</tr>
+<tr>
+<td>$D_E$</td>
+<td>Energy density of the blackbody radiation field, $D_E = a\theta^{4}$ (eq. 188)</td>
+</tr>
+<tr>
+<td>$P_\rho$</td>
+<td>Momentum density of the source; the term $P_\rho^{2}/\hbar^{2}$ in (172)</td>
+</tr>
+<tr>
+<td>$\delta,\gamma,\alpha,\beta$</td>
+<td>Amplitude and radiation constants of the density laws $\rho = \delta/R^{n}$, $D_E/c^{2} = \gamma/R^{m}$ (eq. 176), $\rho = \alpha/R^{3}$ (187), $D_E/c^{2} = \beta/R^{4}$ (190)</td>
+</tr>
+<tr>
+<td>$Q$</td>
+<td>Quantum potential, $Q = -\frac{\hbar^{2}}{2m}\nabla^{2}A/A$; the shape of the right side of (47)</td>
+</tr>
+<tr>
+<td>$m_0$</td>
+<td>Rest mass of established relativity, the object (46) defines and (60) recovers</td>
+</tr>
+<tr>
+<td>$w$</td>
+<td>Equation-of-state parameter of a perfect fluid, $p = w\rho c^{2}$; used only for comparison</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>J. E. Charon, <em>L'Esprit et la Relativité complexe</em> (Albin Michel, Paris, 1983): §II for the two axioms and eqs (19)–(27); §5–6 of the field-variable chapter (scan 017) for the definition (47) and the volume quantique; §7 of the same chapter (scan 018) for eqs (48)–(60); the cosmological chapter (scans 046–047) for eqs (170)–(190); §13 of scan 053 for the volume as a sphere of radius $l_0$; scans 056–058 for the Système $L$ and the numerical value of $\xi$; and <em>La Relativité complexe</em> (1987), ch. II and IV, for the same source tensor.</li>
+<li>The repository's improved transcription, <code>_Esp_im_merged.md</code>, scans 014–018 and 046–047, and <code>CHARON_IDEAS_AND_CLAIMS.md</code>, entries 2.1–2.12, for the inventory this article is drawn from.</li>
+<li>Companion article <em>The Einstein Field Equations Under the Biquaternion Framework: A Research Agenda</em>, for the framework's central open question, the kinematics-without-dynamics statement, and the open items on the coupling constant and the source.</li>
+<li>Companion article <em>Stress-Energy Conservation Laws and the Field Action in Biquaternionic Form</em>, for the Noether derivation of the framework's stress–energy tensors and the contrast with a postulated source.</li>
+<li>Companion article <em>The WKB Approximation and the Hamilton–Jacobi Equation in Biquaternionic Form</em>, for the quantum potential $Q = -\frac{\hbar^{2}}{2m}\nabla^{2}A/A$, the statement that it is exact for states of the form $Ae^{iS/\hbar}$, and the framework's own open question about its status.</li>
+<li>Companion article <em>Gauge Curvature and the Bianchi Identity in Biquaternionic Form</em>, for the contracted Bianchi identity and the reason conservation of the source is a geometric consequence in the framework and an axiom in Charon's.</li>
+<li>Companion article <em>Action, Units, and the Constants of the Biquaternion Universe</em>, for the statement that the framework's outputs are pure numbers and its inputs dimensionful, which is the same obstruction the quantum volume is introduced to solve.</li>
+<li>Companion article <em>Introduction to the Biquaternion Universe</em>, for the two-sector construction $\mathbb{B} = \mathbb{M}_-\oplus\mathbb{M}_+$ and the sector a curvature source would have to live in.</li>
+<li>D. Bohm, "A Suggested Interpretation of the Quantum Theory in Terms of 'Hidden' Variables," <em>Physical Review</em> <strong>85</strong> (1952) 166–193, for the quantum potential and the trajectory formulation; and <em>Physical Review</em> <strong>85</strong> (1952) 180–193 for the second paper.</li>
+<li>L. de Broglie, <em>La mécanique ondulatoire du photon et l'optique ondulatoire</em> (1949) and his later fusion programme, for the pilot-wave reading and the oscillator that the corpus's entry 2.5 records.</li>
+<li>D. Lovelock, "The Einstein Tensor and Its Generalizations," <em>Journal of Mathematical Physics</em> <strong>12</strong> (1971) 498–501, for the uniqueness that fixes the left-hand side of (52) and leaves only the source free.</li>
+<li>CODATA and the Particle Data Group's review of Newton's constant, for the measured $G = 6{,}67430(15)\times10^{-8}$ cgs against which the programme's derived $5{,}4\pm2{,}7$ is to be read.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

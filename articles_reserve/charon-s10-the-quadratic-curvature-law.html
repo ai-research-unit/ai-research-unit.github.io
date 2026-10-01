@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Charon: The Quadratic Curvature Law — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="charon-the-quadratic-curvature-law"><strong>Charon: The Quadratic Curvature Law</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>Two articles back, this series had to say what Charon's source tensor is, and it turned out to be a ratio of derivatives of an amplitude to the amplitude itself — a quantum potential wearing geometric clothes. Last article solved the expansion equation that source produces. Both articles took one equation on trust, because it is the hinge on which the whole construction turns. It is this one, Esp (55) of <em>L'Esprit et la Relativité complexe</em>, restated as (3-45) of <em>La Relativité complexe</em>:</p>
+<p>$$R = \xi^{2}\rho^{2} + 4\Lambda .$$</p>
+<p>The scalar curvature of Charon's complex space is <strong>quadratic</strong> in the proper density. Einstein's is not: it is linear in a density, because the matter tensor is linear in one. That single change of degree is the programme's claim to originality, and the inventory of ideas tags it "the single most original structural feature in the whole program" (entry 1.6). This article examines it: where it comes from, whether it is right, what follows from it, and what it costs.</p>
+<p>The verdict, stated at the outset because it is mixed. The derivation is <strong>exact</strong> — the law is a two-line consequence of the field equation Charon writes, and the coefficient $4$ is forced by the number of dimensions rather than chosen. The three consequences the corpus draws from it are <strong>all correct as algebra</strong>, and the third of them turns out to be a real physical commitment rather than a bookkeeping remark. And the law is <strong>not required</strong> by anything known: nothing in established physics demands that curvature be quadratic in density. So this is the shape of result the programme keeps producing — a structure that is internally clean, externally unforced, and falsifiable in principle. That is worth writing down carefully, and it is worth writing down without either enthusiasm or dismissal.</p>
+<p>Two results here are new to the series and are worth flagging. The first is that the law's lower bound, $R \ge 4\Lambda$, has a sharp meaning: <strong>zero density does not mean zero curvature</strong>, it means curvature exactly $4\Lambda$, so that the model's vacuum is an Einstein space with $R_{\alpha\beta} = \Lambda g_{\alpha\beta}$, not flat space. The second is that the 1987 book's closed forms, taken together, imply an exact relation between the integration constant of the expansion equation and the cosmological constant, $A = -\Lambda R_0^{4}$, which fixes the <em>sign</em> of $A$ and ties the previous article's numerical content to this one. Both are derived below.</p>
+<p><strong>A note on sources.</strong> Everything below is checked against the improved transcriptions of both books and against <code>UPDATED_CHARON_THEORY_2026_ARTICLE_LIST.md</code>. The book citations are Esp (52)–(55) with Esp (44), (34) and (49); Esp (119 bis); RC (2-24), (2-28), (2-37-d), (2-42), (2-44), (2-45), (2-49) to (2-54), (3-45); RC (5-27), (5-30), (5-31), (5-50), (5-51), (5-53-a), (5-54); and RC §2 of chapter 070. No claim here rests on a corrected equation; the corrections of the previous articles concern the cosmological system, not this law.</p>
+<p><strong>Conventions.</strong> Gaussian cgs. $R_{\alpha\beta}$ is the Ricci tensor of the complex space, $R$ its scalar, $G_{\alpha\beta}$ the metric, $\rho$ the proper density, $\alpha$ and $\beta$ its matter and radiation constants, $\xi$ the leptonic constant, $\Omega_0$ the quantum volume, $l_0$ the elementary length, $\Lambda$ the cosmological constant in $\mathrm{cm^{-2}}$. Primes are $d/d\tau$. The tabulated values are used as printed: $\xi = 6{,}467\times10^{-4}$, $\alpha = -1{,}472\times10^{-25}$, $\beta = -1{,}7\times10^{-39}$, $l_0 = 1{,}7577\times10^{-14}$, $R_0 = 7{,}79\times10^{-15}$ from 1983, and $R_0 = 1{,}3336\times10^{-14}$, $R_i = 8{,}01\times10^{-15}$ from 1987.</p>
+<h2 id="part-1-the-law-and-where-the-math26-comes-from">Part 1 — The law, and where the $4$ comes from</h2>
+<h3 id="11-the-two-principles-and-the-field-equation">1.1 The two principles, and the field equation</h3>
+<p>Charon's objection to the standard reading of general relativity is stated on page 012 in a sentence worth quoting, because everything downstream follows from it: treating $T_{\alpha\beta}$ as an energy–momentum tensor is, in his words, "l'hypothèse, à notre avis illégitime". The complaint is not that the tensor is wrong but that it is <em>assumed</em> — that general relativity never derived a microscopic form for it, and so had to do its three classic verifications in the approximation $T_{\alpha\beta} = 0$.</p>
+<p>His replacement rests on <strong>two</strong> independent principles rather than one — conservation of the geometric tensor, and a stationary action — where Einstein has one principle used twice. The stationary action is what supplies the microscopic form, and the conservation is what supplies the motion. The result, after the section II derivation, is the field equation Esp (52):</p>
+<p>$$R_{\alpha\beta} - \frac{1}{2} R G_{\alpha\beta} + \Lambda G_{\alpha\beta} = -\xi^{2}\rho^{2}u_{\alpha}u_{\beta} . \tag{52}$$</p>
+<p>Left-hand side untouched, exactly as the previous article on the left-hand side promised: Charon does not modify Einstein's tensor. The whole departure is on the right, and there are two of them. The source is <strong>quadratic</strong> in $\rho$, and it carries a <strong>minus sign</strong>.</p>
+<p>That minus is not decoration. The 1987 book states its consequence as plainly as it can, in RC (2-37-d), for a space filled with blackbody radiation:</p>
+<p>$$\mathbb{T}^{4}_{4} = -3\,\mathbb{T}^{i}_{j} = -\xi^{2}D_{E}^{2}/c^{4} . \tag{2-37-d}$$</p>
+<p>The time–time component is <strong>negative</strong>, the spatial ones positive. RC then makes the strongest claim in its cosmological chapter: that general relativity has this sign the wrong way round, and that the wrong sign "entraîne que le modèle s'écroule littéralement sur lui-même", producing the big-bang singularity that the corrected sign avoids. Set that next to the previous article's finding. That article reached the expansion equation from the 1983 book, found the radiation-like $R^{-4}$ coefficient <strong>negative</strong>, and derived a bounce rather than a singularity from it. Two different books, two different routes — a sign of a trace, and a coefficient of an integrated equation — and they agree. This is the single most useful thing the 1987 book does for the 1983 one, and it is why §3.3 below returns to it.</p>
+<h3 id="12-the-contraction-and-the-coefficient-math33">1.2 The contraction, and the coefficient $4$</h3>
+<p>Take $G^{\alpha\beta}$ on both sides of (52) and sum. Nothing here is Charon's; it is the standard trace, and it is worth doing slowly because the $4$ in the law is often read as a hypothesis.</p>
+<p>On the left, $G^{\alpha\beta}G_{\alpha\beta} = \delta^{\alpha}_{\alpha} = 4$ in four dimensions, so the three terms give</p>
+<p>$$G^{\alpha\beta}\left(R_{\alpha\beta} - \tfrac{1}{2}RG_{\alpha\beta} + \Lambda G_{\alpha\beta}\right) = R - 2R + 4\Lambda = -R + 4\Lambda .$$</p>
+<p>On the right, the same factor of $4$ appears through the normalisation of the velocity field, which is unit timelike by (2-15), $u^{\alpha}u_{\alpha} = 1$:</p>
+<p>$$G^{\alpha\beta}\left(-\xi^{2}\rho^{2}u_{\alpha}u_{\beta}\right) = -\xi^{2}\rho^{2}u^{\beta}u_{\beta} = -\xi^{2}\rho^{2} .$$</p>
+<p>Equate the two: $-R + 4\Lambda = -\xi^{2}\rho^{2}$, that is, $R - 4\Lambda = \xi^{2}\rho^{2}$. That is Esp (53), and it is the whole derivation of the law. Charon then names the constant, $C_{1} = \xi^{2}\rho^{2}$, and inverts the relation:</p>
+<p>$$R - 4\Lambda = G^{\alpha\beta}T_{\alpha\beta} = \xi^{2}\rho^{2} = C_{1} , \tag{53}$$</p>
+<p>$$R = \xi^{2}\rho^{2} + 4\Lambda . \tag{55}$$</p>
+<p>The point to keep is that <strong>$4$ is the trace of the four-dimensional identity</strong>. In $d$ dimensions the coefficient would be $d$, not $4$: in three dimensions the law would read $R = \xi^{2}\rho^{2} + 3\Lambda$, in five, $+\ 5\Lambda$. So the $4$ is not a fitted number, not an ansatz, and not evidence of a hidden choice; it is the dimension of the space showing through. Anyone who wants to test the law can therefore test only the <em>quadratic</em> part, since the coefficient is not a free parameter.</p>
+<h3 id="13-the-three-faces-of-the-same-constant">1.3 The three faces of the same constant</h3>
+<p>Three equations of the same chapter are the law seen three ways, and they belong together because the programme uses all three.</p>
+<p>The first is the trace form (53) just derived. The second is the source's normalisation, Esp (54):</p>
+<p>$$\Box^{2}U + \xi^{2}\rho^{2}U = 0 . \tag{54}$$</p>
+<p>Substituting (53) into (54) turns the oscillator's frequency into geometry: the mass term of the amplitude equation <em>is</em> the excess of scalar curvature over $4\Lambda$. This is the bridge to the two articles that flank this one. The previous series article showed that the source tensor is a ratio of derivatives of this same amplitude $U$ to the amplitude itself, which is the form of a quantum potential; the article on the oscillator equation takes up how $U$ propagates. Equation (54) is where the two meet: $U$ obeys a wave equation whose mass term is read off the curvature, and the curvature is read off the density, which is read off $U$. The loop is closed, and it is worth saying that closing a loop is not the same as justifying it — §5 says what is and is not gained by it.</p>
+<p>The third face is the geometric one, (55) itself. Written in the 1987 book's inverse form, RC (2-28), it reads</p>
+<p>$$\rho^{2} = \frac{1}{\xi^{2}}\left(R - 4\Lambda\right) , \tag{2-28}$$</p>
+<p>which is the version the model actually integrates: given a curvature field, it <em>defines</em> the density. Two remarks follow, and both matter. Because $\xi^{2} > 0$, the equation requires $R - 4\Lambda \ge 0$ for any real density — curvature cannot be too far below $4\Lambda$ — and because the dependence is on $\rho^{2}$ and not on $\rho$, the map from density to curvature is not injective: $+\rho$ and $-\rho$ give the same curvature. Those two remarks are §1.5 and §3.1.</p>
+<h3 id="14-the-1987-books-version-and-one-normalisation-caution">1.4 The 1987 book's version, and one normalisation caution</h3>
+<p>The second book states the same law twice, and one of the statements needs care. Its direct restatement is RC (3-45),</p>
+<p>$$R = \xi^{2}\rho^{2} + 4\Lambda , \tag{3-45}$$</p>
+<p>identical to (55) — which is itself worth recording, because it shows that between 1983 and 1987 the law did not change, was not repaired, and did not acquire an extra term. The second statement, RC (2-52-b), is the one to read carefully:</p>
+<p>$$\hbar^{2}\sum_{\alpha=1}^{4}\mathbb{T}^{\alpha}_{\alpha} = \Omega_0^{2}c^{2} = \left(R - 4\Lambda\right)\hbar^{2} . \tag{2-52-b}$$</p>
+<p>The middle and right-hand members together give $R - 4\Lambda = \Omega_0^{2}c^{2}/\hbar^{2}$, and since the constant $\xi$ is <em>defined</em> by Esp (49) as $\xi = \Omega_0c/\hbar$, the right-hand member is $\xi^{2}$. Comparing with (2-28), which gives $R - 4\Lambda = \xi^{2}\rho^{2}$, the two agree only if $\rho^{2} = 1$.</p>
+<p>That is not a contradiction and it is not an error; it is a normalisation. Equation (2-52-a) of the same display sets $M_0^{2}c^{2} = \Omega_0^{2}c^{2}$, which is the statement $M_0 = \Omega_0$, and with $M_0 = \Omega_0\rho$ that is again $\rho = 1$. So the pair (2-52) is written at the <strong>unit-density normalisation</strong>, in which the proper mass equals the quantum volume, and (2-52-b) is the unit-density form of (55), not a rival to it. A reader who takes $\sum\mathbb{T}^{\alpha}_{\alpha} = 1$ literally at every point will conclude that the density is everywhere unity, which is false and is not what the book says. This is the kind of trap that a single-symbol reading produces in this corpus, and it is why this article states the general form, (55), whenever it uses the law.</p>
+<p>One further remark on (2-52) is worth making, because it is a genuine oddity rather than a trap. The identity $\hbar^{2}\sum\mathbb{T}^{\alpha}_{\alpha} = \Omega_0^{2}c^{2}$ says that the trace of the geometric tensor is <em>fixed</em> — a constant, independent of position — and RC's own commentary draws the consequence, citing Schur's theorem, that $\mathbb{T}^{\alpha}_{\alpha}$ may be positive, negative, or zero. So the 1987 book reads its own trace relation as one that constrains the sum and leaves the terms free.</p>
+<h3 id="15-what-the-law-says-at-zero-density">1.5 What the law says at zero density</h3>
+<p>The law is more restrictive than it looks, and the restriction is easiest to see at $\rho = 0$. From (55),</p>
+<p>$$R = \xi^{2}\rho^{2} + 4\Lambda \ge 4\Lambda ,$$</p>
+<p>with equality <strong>if and only if</strong> $\rho = 0$. The scalar curvature of the complex space is therefore bounded below, and the bound is attained precisely on the set of zero density — the photon–neutrino sector, which by the inventory's entry 1.7 is one of the only two stable real forms the model admits.</p>
+<p>Now put $\rho = 0$ into the field equation (52). The source vanishes term by term, and the equation becomes</p>
+<p>$$R_{\alpha\beta} - \frac{1}{2}RG_{\alpha\beta} + \Lambda G_{\alpha\beta} = 0 , \qquad \text{with } R = 4\Lambda ,$$</p>
+<p>which contracts back to $R_{\alpha\beta} = 2\Lambda G_{\alpha\beta} - \Lambda G_{\alpha\beta}$, that is</p>
+<p>$$R_{\alpha\beta} = \Lambda G_{\alpha\beta} .$$</p>
+<p>So the model's <strong>vacuum is an Einstein space with Ricci tensor $\Lambda$ times the metric, and scalar curvature $4\Lambda$ — not zero, and not flat.</strong> The check is immediate: contracting $R_{\alpha\beta} = \Lambda G_{\alpha\beta}$ gives $R = 4\Lambda$, consistent with the law at $\rho = 0$.</p>
+<p>This is the cleanest statement of the law's content, and it is worth putting beside the way the law is usually paraphrased. It is often said that the quadratic law means "curvature and density are proportional to each other"; they are not, they are offset, and the offset is $4\Lambda$. Empty space in this model is not curvature-free. It is curvature-<em>saturated at the floor</em>, carrying exactly the cosmological term and nothing else. With the 1987 value of $\Lambda$ derived in §4.2 the floor is negative, $R = 4\Lambda = -1{,}61\times10^{27}\ \mathrm{cm^{-2}}$, so the model's vacuum has a large negative scalar curvature. Whether that is palatable is a question for §5; the point here is that it is not optional, it is what the two books' own equations say.</p>
+<h2 id="part-2-the-source-is-not-an-energymomentum-tensor">Part 2 — The source is not an energy–momentum tensor</h2>
+<h3 id="21-what-math97-is-in-this-programme">2.1 What $T_{\alpha\beta}$ is in this programme</h3>
+<p>The symbol $T_{\alpha\beta}$ in Charon is not the stress–energy tensor of anything, and the 1987 book says so in as many words: $T_{\alpha\beta}$ "n'est pas en Relativité complexe un tenseur impulsion-énergie" (RC chapter 028, §5). What it is instead is the object recovered on page 017 of the 1983 book, equation (47), which the earlier article of this series examined at length:</p>
+<p>$$\Omega_0^{2}c^{2}\rho^{2}u_{\alpha}u_{\beta} = -\hbar^{2}\frac{\nabla_{\alpha}\partial_{\beta}\left(U/\sqrt{-G}\right)}{U/\sqrt{-G}} . \tag{47}$$</p>
+<p>In the simplified form of §6 the right-hand side becomes $-\hbar^{2}\partial^{2}_{\alpha}U/U$, which is the Laplacian of an amplitude over the amplitude. That is the exact shape of the Bohm–de Broglie quantum potential, and the <em>divisor</em> — the amplitude in the denominator — is what makes it so. It is also what forces the quantum volume $\Omega_0$ into the definition, because a ratio of second derivatives over a dimensionless potential needs a volume to carry the dimensions of $\rho^{2}u_{\alpha}u_{\beta}$.</p>
+<p>So the source is a quantum-potential ratio, and its being <em>squared</em> in $\rho$ is not a separate hypothesis laid on top of that: it is the same statement, read on the other side. Squaring is what a ratio of derivatives to the thing itself looks like when you solve the ratio for its own amplitude. This is the connection the two flanking articles were written to make, and it is the reason the law of this article is not an isolated postulate but the geometric face of the quantum-potential identification.</p>
+<h3 id="22-the-corpuss-own-statement-of-the-contrast">2.2 The corpus's own statement of the contrast</h3>
+<p>Both books draw the contrast with general relativity explicitly, and it is worth citing rather than paraphrasing, because the claim is narrow and precise. From RC chapter 070, on why the gravitational potential of a single particle "a pu passer inaperçu de la Relativité générale":</p>
+<blockquote>
+<p>Et, surtout, en Relativité générale on utilise un tenseur (dit « matériel ») $T_{\alpha\beta}$ qui est proportionnel à la densité propre $\rho$, et non pas au carré de cette densité propre, comme en Relativité complexe.</p>
+</blockquote>
+<p>The 1983 book makes the same point from the microscopic side, in Esp (012), where the source is announced as a form that "s'exprimera en fonction du carré d'une densité propre $\rho$". And chapter 028 of the 1987 book adds the third member of the comparison, the source's continuity equation RC (2-50), $\nabla_{\alpha}Ru^{\alpha} = 0$, which it notes "n'assimile pas (2-50) à la continuité de la matière" — that is, in general relativity the corresponding relation is read as the continuity of matter, and in the complex theory it is read as the continuity of curvature.</p>
+<p>This gives a clean table of what changes and what does not:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>object</th>
+<th>general relativity</th>
+<th>complex relativity</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>field equation, left side</td>
+<td>$R_{\alpha\beta} - \tfrac{1}{2}RG_{\alpha\beta} + \Lambda G_{\alpha\beta}$</td>
+<td>identical</td>
+</tr>
+<tr>
+<td>material tensor</td>
+<td>$\chi\,\rho\,u_{\alpha}u_{\beta}$, linear in $\rho$</td>
+<td>$\xi^{2}\rho^{2}u_{\alpha}u_{\beta}$, quadratic in $\rho$</td>
+</tr>
+<tr>
+<td>continuity obtained</td>
+<td>$\nabla_{\alpha}\rho u^{\alpha} = 0$</td>
+<td>$\nabla_{\alpha}\rho^{2}u^{\alpha} = 0$</td>
+</tr>
+<tr>
+<td>scalar curvature</td>
+<td>$R = -\chi\rho + 4\Lambda$</td>
+<td>$R = \xi^{2}\rho^{2} + 4\Lambda$</td>
+</tr>
+<tr>
+<td>geodesic motion</td>
+<td>gravitation only</td>
+<td>all four interactions</td>
+</tr>
+</tbody>
+</table></div>
+<p>The last row is the programme's actual motivation, and it is not a consequence of the quadratic law; it is a consequence of splitting conservation and stationary action into two principles, which is §2.3.</p>
+<h3 id="23-why-the-programme-wanted-this">2.3 Why the programme wanted this</h3>
+<p>The reason the quadratic form was adopted is given in the 1987 book as a requirement, not a preference. Because general relativity needs a <em>quadratic</em> source to keep the energy–momentum tensor meaningful and its conservation automatic, and because it never obtained one, its geodesic principle stayed confined to gravitation: the theorem that conservation implies geodesic motion could only be applied where the source could be set to zero. RC's summary of the gain is that the extension of the motion to the electromagnetic, weak and strong interactions "a été rendue possible par (2-42)", the continuity of $\rho^{2}$.</p>
+<p>So the quadratic law is the price of a geodesic principle for all four forces. That is a real trade, and it is the honest way to describe it: Charon buys a unified geodesic principle, and he pays with the physical interpretation of $T_{\alpha\beta}$ as an energy density. Nothing in the corpus hides this. What the corpus does not do — and §5.2 is about this — is show that the price is acceptable, or that any observation requires the purchase.</p>
+<h2 id="part-3-the-three-consequences">Part 3 — The three consequences</h2>
+<p>The inventory records three consequences the programme draws from the law. All three are stated in the books, all three are correct as algebra, and the third is more consequential than its one-line statement suggests.</p>
+<h3 id="31-no-cancellation-of-math120-and-math121">3.1 No cancellation of $+\rho$ and $-\rho$</h3>
+<p>The first consequence is the one that follows from the law being quadratic. Since $R = 4\Lambda + \xi^{2}\rho^{2}$ and the right-hand term depends on the <em>square</em>, a region of density $-\rho$ and a region of density $+\rho$ of the same magnitude contribute <strong>identically</strong> to the curvature, and neither cancels the other. A superposition of the two gives</p>
+<p>$$4\Lambda + \xi^{2}\rho_+^{2} + \xi^{2}\rho_-^{2} = 4\Lambda + \xi^{2}\left(\rho_+^{2} + \rho_-^{2}\right) > 4\Lambda ,$$</p>
+<p>whereas a linear source of the same two regions would give $4\Lambda - \chi(\rho_+ + \rho_-)$, which vanishes when $\rho_- = -\rho_+$. The 1987 book states this in exactly these terms, at RC (2-54) and its commentary: the "addition" of $\rho_+^{2}$ and $\rho_-^{2}$ "est ici toujours positive". Combined with §1.5, the geometric statement is that <strong>matter and antimatter both raise the scalar curvature above the floor $4\Lambda$, and never return it to the floor together.</strong></p>
+<p>It is worth noticing that the previous article already used this, without naming it. The cosmological system of the 1983 book is a superposition of a matter term and a radiation term, and its integrated expansion equation has <em>two</em> negative power-law coefficients, $|C|/R^{4}$ and $B/R^{6}$, both of which act as repulsive. A linear source with one positive and one negative density would have produced a partial cancellation and no bounce. The bounce is the $+\rho$/$-\rho$ non-cancellation, seen one level down, in the cosmology rather than in the field equation.</p>
+<h3 id="32-no-creation-from-nothing-and-no-annihilation-without-remainder">3.2 No creation from nothing, and no annihilation without remainder</h3>
+<p>The second consequence is the one the corpus argues for at most length, in three places, and it is worth stating as a logical chain rather than as a claim.</p>
+<p>In general relativity, the continuity equation for the material tensor is RC (2-53),</p>
+<p>$$\text{RG}: \qquad \nabla_{\alpha}\rho u^{\alpha} = 0 . \tag{2-53}$$</p>
+<p>The 1987 book reads this as authorising the following: since $\rho$ enters linearly, a positive density $\rho_+$ and a negative density $\rho_-$ with equal magnitudes may be created from $W = 0$, or may annihilate back into it. It notes that experience contradicts this — matter and antimatter produce an energy equal to the sum of the absolute values of $W_+$ and $W_-$, and a particle–antiparticle pair cannot appear from nothing without an energy at least that large — and that general relativity escapes the difficulty only by asserting that $\rho$, unlike $W$, is always positive, which it observes makes the distinction between $W_+$ and $W_-$ "vide de signification énergétique".</p>
+<p>In complex relativity the corresponding relation is RC (2-42), obtained by contracting the conservation of the geometric tensor with the unit velocity, and it is <strong>not</strong> linear:</p>
+<p>$$\nabla_{\alpha}\left(\rho^{2}u^{\alpha}\right) = 0 , \tag{2-42}$$</p>
+<p>$$\nabla_{\alpha}\left(Ru^{\alpha}\right) = \nabla_{\alpha}\left(\rho^{2}u^{\alpha}\right) = 0 . \tag{2-54}$$</p>
+<p>Two things follow, and the corpus draws both. First, because the conserved quantity is $\rho^{2}$ and its "addition" over opposite signs is always positive, the creation of a pair from nothing and the disappearance of a pair into nothing are both forbidden by the same inequality: $\rho_+^{2} + \rho_-^{2} > 0$ whenever either density is non-zero. Second, the <strong>annihilation products are forced to exist</strong>. An electron and a positron are equal and opposite in their proper energies; a linear continuity equation would let the two densities meet and leave nothing; a continuity equation for the square cannot, so something must carry the square away, and the 1983 book names what it must be — two photons, or neutrinos — in Esp (119 bis) and its commentary on page 031.</p>
+<p>That argument is worth taking seriously, because it is a case where the model is <em>more</em> constrained than general relativity and the extra constraint points the right way. Annihilation does produce two photons. The model does not merely permit that; it requires it. The honest qualification is that the requirement is not a prediction of anything general relativity forbids — general relativity also has two–photon annihilation, it simply does not derive it from the continuity of a density. So the correct description is that the complex theory makes a virtue of a necessity: it gets the observed outcome from its own algebra where the standard theory needs quantum electrodynamics, and it gets it without QED, which is a different and much larger claim than the corpus makes.</p>
+<p>The 1983 book states a further caveat that the 1987 book repeats, and it should be carried forward here because it is easy to lose: the conservation of the square is "complémentaire (et ne remplace pas) la conservation algébrique de l'impulsion-énergie", which the formalism also requires, since it is built on the stationary-action principle. So the model conserves <em>both</em> $\rho^{2}$ and the algebraic momentum–energy. That is a stronger requirement than either alone, and §5.3 notes what it would take to falsify it.</p>
+<h3 id="33-mass-proportional-to-math151">3.3 Mass proportional to $\rho$</h3>
+<p>The third consequence is the one line in the inventory, and it is easy to read past it. The 1987 book gives it as an aside inside the continuity discussion: the relation $\nabla_{\alpha}Ru^{\alpha} = 0$ is "équivalente à une relation de continuité du carré de la densité $\rho$ (ou du carré de la masse propre $M_0 = \Omega_0\rho$)".</p>
+<p>The parenthetical is the content. In this programme the proper mass at a point is the proper density times the same quantum volume that appears in the source's definition:</p>
+<p>$$M_0 = \Omega_0\rho .$$</p>
+<p>So mass is proportional to $\rho$ with a <strong>constant</strong> of proportionality that is the quantum volume $\Omega_0$ — that is, a fixed cell of space. Three things then hold at once. The conserved quantity is $M_0^{2}$, since $\nabla_{\alpha}\rho^{2}u^{\alpha} = 0$ and $\Omega_0$ is a constant. The non-cancellation of §3.1 applies to mass: $M_0 = \Omega_0\rho$ inherits the sign of $\rho$, so a region of negative proper mass and one of positive proper mass both raise the curvature. And the mass scale of the whole programme is set by $\Omega_0$ and nothing else, which is precisely what makes the elementary length $l_0$ load-bearing, since $\Omega_0 = \tfrac{4}{3}\pi l_0^{3}$ by Esp (053 §13) and $\xi = \Omega_0 c/\hbar$ by Esp (49).</p>
+<p>That last chain is checkable, and checking it is worth doing because it tells us how tight the programme's own numerics are. From $l_0 = 1{,}7577\times10^{-14}$, $\Omega_0 = 2{,}2747\times10^{-41}\ \mathrm{cm^{3}}$ and $\xi = \Omega_0c/\hbar = 6{,}4665\times10^{-4}$, against the printed $6{,}467\times10^{-4}$ — one part in $10^{4}$, which is a rounding of the printed figure rather than a discrepancy. <strong>But the inventory's own entry gives a different triple.</strong> Entry 3.6 lists $l_0 = 1{,}8\times10^{-14}$, $\Omega_0 = 2{,}44\times10^{-41}$, $\xi = 6{,}8\times10^{-4}$. The first two are mutually consistent — $(4/3)\pi(1{,}8\times10^{-14})^{3} = 2{,}443\times10^{-41}$ — but they are a <em>different length</em> from the one the book tabulates, and the third is inconsistent with both: $(4/3)\pi(1{,}8\times10^{-14})^{3}c/\hbar = 6{,}94\times10^{-4}$, not $6{,}8\times10^{-4}$. So the inventory entry mixes the book's rounded $l_0$ with a $\xi$ that is neither the book's nor the one its own $l_0$ implies. Nothing in the law changes, but the entry should be re-derived from $l_0 = 1{,}7577\times10^{-14}$ before anyone uses it.</p>
+<h3 id="34-what-the-three-consequences-cost">3.4 What the three consequences cost</h3>
+<p>It is worth stating in one place what has been committed.</p>
+<p>The first consequence, non-cancellation, is a <strong>mathematical</strong> consequence of the square and cannot be given up while the law stands. It is not a physical assumption; it is what squaring means.</p>
+<p>The second, the ban on creation and annihilation without remainder, is a <strong>physical</strong> commitment, because it forbids a process that general relativity permits. It is also the one the corpus argues hardest for, and it is the one with observable contact — pair creation and annihilation are measured, and the model's requirement that products exist matches them.</p>
+<p>The third, $M_0 = \Omega_0\rho$, is a <strong>notational</strong> choice with a large consequence: it converts a constant of the theory into the mass scale of everything.</p>
+<p>None of the three is a prediction in the sense of a number that could have come out otherwise. Each is an entailment of a structure already chosen. That is the distinction §5.2 develops.</p>
+<h2 id="part-4-the-math183-in-the-law">Part 4 — The $\Lambda$ in the law</h2>
+<h3 id="41-why-math184-is-this-articles-business">4.1 Why $\Lambda$ is this article's business</h3>
+<p>$\Lambda$ appears in the law's name, and it is the only symbol in $R = \xi^{2}\rho^{2} + 4\Lambda$ that the programme does not otherwise fix: $\xi$ is set by $l_0$, $\rho$ is the dynamical variable, and $4$ is the dimension count of §1.2. So the law's <em>content</em> is one equation plus one unsourced constant, and the preceding article found that the constant is doing real numerical work — the cosmology's turning points require a specific negative value of $\Lambda R_0^{2}/3$.</p>
+<p>The 1983 book does not supply one. The 1987 book does, and this section extracts it and confirms it two ways, and then records one open reading rather than pretending to settle it.</p>
+<h3 id="42-the-1987-closed-form-and-the-radius-it-forces">4.2 The 1987 closed form, and the radius it forces</h3>
+<p>RC (5-31) is a closed form for $\Lambda$ in terms of the leptonic constants, valid at $\tau = T/2$ where $R' = 0$:</p>
+<p>$$\Lambda = -\frac{1}{4}\frac{\xi^{2}\alpha^{2}}{R_0^{6}} = -\frac{1}{3}\frac{\xi^{2}\beta^{2}}{R_0^{8}} . \tag{5-31}$$</p>
+<p>The two forms are equal <strong>exactly</strong> provided $\alpha^{2} = \tfrac{4}{3}\beta^{2}/R_0^{2}$, which is RC (5-30), and they are equal for no other reason — so the display is internally consistent, and it is a check on (5-30) as much as on (5-31).</p>
+<p>Equation (5-30) has an independent second form in the same chapter, and this is the check that makes the chain solid. RC (5-53-a) defines $R_m = -\beta/\alpha$ (with $\alpha < 0$), the radius at which the model has shed all matter particles, and RC (5-54) gives $\rho$ ratio</p>
+<p>$$R_0/R_m = \sqrt{4/3} . \tag{5-54}$$</p>
+<p>Combining the two gives $R_0 = \sqrt{4/3}\,(-\beta/\alpha)$, which rearranges to $\alpha^{2} = \tfrac{4}{3}\beta^{2}/R_0^{2}$ — that is, to (5-30) again, reached from a different pair of equations. With the book's own $\alpha$ and $\beta$ both routes give the same radius:</p>
+<p>$$R_0 = 1{,}333554\times10^{-14}\ \mathrm{cm} ,$$</p>
+<p>which is a valuable agreement because (5-30) and (5-54) come from different arguments in the same chapter. Substituting that radius into (5-31), both forms give the same constant:</p>
+<p>$$\Lambda = -4{,}0274\times10^{26}\ \mathrm{cm^{-2}} , \qquad \frac{\Lambda R_0^{2}}{3} = -0{,}023874 .$$</p>
+<p>That value falls <strong>inside</strong> the interval $[-0{,}0260,\,-0{,}0176]$ that the two tabulated turning radii of the 1983 model imply, as the previous article established. So the 1987 closed form is not merely a formula; it lands where the 1983 numbers want it, and it lands there with the sign — negative — that (5-27) asserts independently. The reader of the previous article can take the sign and the magnitude of $\Lambda$ as now doubly sourced.</p>
+<p>A caution about $R_0$ between the books is worth repeating whenever these numbers are used, because it is a trap. In 1983, $R_0$ is the <strong>bounce</strong> radius, the minimum. In 1987, $R_0$ is the radius at which the expansion speed reaches $c$, and the minimum is called $R_i$, tabulated as $8{,}01\times10^{-15}\ \mathrm{cm}$. The two books' $7{,}79\times10^{-15}$ and $1{,}3336\times10^{-14}$ are therefore <em>different radii of the same model in different roles</em>, not a disagreement between the books. Any comparison that forgets this will report a 70% discrepancy that does not exist.</p>
+<h3 id="43-the-identity-math217">4.3 The identity $A = -\Lambda R_0^{4}$</h3>
+<p>Here is a relation neither book writes down, and it is worth having because it links the law's constant to the previous article's algebra exactly.</p>
+<p>The integrated expansion equation of the 1983 book carries an integration constant $A$, fixed by Esp (194) in terms of the leptonic constants:</p>
+<p>$$A = \frac{1}{2}\xi^{2}\frac{\alpha^{2}}{R_0^{2}} - \frac{1}{3}\xi^{2}\frac{\beta^{2}}{R_0^{4}} . \tag{194}$$</p>
+<p>Now impose RC (5-30), $\alpha^{2} = \tfrac{4}{3}\beta^{2}/R_0^{2}$, on that expression. The first term becomes $\tfrac{1}{2}\xi^{2}\cdot\tfrac{4}{3}\beta^{2}/R_0^{4} = \tfrac{2}{3}\xi^{2}\beta^{2}/R_0^{4}$, the second is $\tfrac{1}{3}\xi^{2}\beta^{2}/R_0^{4}$, and their difference is</p>
+<p>$$A = \frac{1}{3}\xi^{2}\frac{\beta^{2}}{R_0^{4}} \quad \text{under (5-30)} .$$</p>
+<p>So the matter half of $A$ cancels the radiation half exactly, and what survives is the radiation term alone. Compare this with the closed form (5-31), $\Lambda = -\tfrac{1}{3}\xi^{2}\beta^{2}/R_0^{8}$, and multiply by $R_0^{4}$:</p>
+<p>$$\Lambda R_0^{4} = -\frac{1}{3}\xi^{2}\frac{\beta^{2}}{R_0^{4}} = -A , \qquad \text{that is} \qquad A = -\Lambda R_0^{4} .$$</p>
+<p>Three things follow, and they are checkable numerically in each case. The relation is <strong>exact</strong>, not approximate: with the constants above, $A = +1{,}2737\times10^{-29}$ and $\Lambda R_0^{4} = -1{,}2737\times10^{-29}$. It <strong>fixes the sign of $A$</strong>: since $\Lambda < 0$, $A$ must be positive, whereas with the 1983 book's own unstructured constants $A = -3{,}47\times10^{-29}$ and negative. And it reduces to a dimensionless statement about the shape of the expansion, $A/R_0^{2} = -3\lambda$ where $\lambda = \Lambda R_0^{2}/3$, so</p>
+<p>$$\frac{A}{R_0^{2}} = -3\lambda = +0{,}0716\ \text{with the 1987 constants} .$$</p>
+<p>The last form is the one to remember. The previous article parametrised the model's expansion by a single dimensionless number $\lambda$, the rescaled cosmological constant, and found that the model's whole history — bounce, braking, and whether it recollapses — turns on it. The identity says that the same number is the coefficient of the $R^{-2}$ term of the integrated equation, up to the factor $-3$. The cosmological constant and the integration constant are not two knobs; under (5-30) they are one knob, and turning it moves the $R^{-2}$ term and the constant term together.</p>
+<p>It should be said plainly that this identity is <em>ours</em>, not the corpus's — it is an algebraic combination of Esp (194) with RC (5-30) and (5-31), and neither book states it. It is stated here as a derived consequence, and it is flagged in the companion file as such.</p>
+<h3 id="44-the-corpuss-three-math241-relations-and-a-mis-citation-corrected">4.4 The corpus's three $\Lambda$ relations, and a mis-citation corrected</h3>
+<p>The 1987 book carries three $\Lambda$ statements. An earlier draft of this section read them as inconsistent with one another. They are not: the inconsistency was ours, in the citation of one of them, and it is corrected here because a reader is owed the correction as much as the result.</p>
+<p><strong>RC (5-27) is a statement, not a formula.</strong> On scan 075 it is the one-line display</p>
+<p>$$\Lambda < 0 , \tag{5-27}$$</p>
+<p>attributed in the text to (5-24) and (5-26) — the derivative of the expansion equation, and $K = +1$. It fixes the sign and nothing else, and being an inequality it cannot conflict with any equality.</p>
+<p><strong>The formula that carries $-3/R_0^{2}$ is a different equation in a different chapter.</strong> The relation</p>
+<p>$$\Lambda = \frac{\xi^{2}}{R_0^{6}}\left(\frac{\beta^{2}}{R_0^{2}} - \alpha^{2}\right) - \frac{3}{R_0^{2}} \le 0 \tag{3-69-2}$$</p>
+<p>is <strong>RC (3-69-2)</strong>, on scan 051 of chapter III. It belongs to the Système $E$ of the <em>eon</em> — the electrically charged micro-universe of the Imaginaire — and not to the cosmological model of chapter V, from which (5-31) comes. The earlier draft printed it under the number (5-27) and compared it with (5-31) at a single value of $R_0$, which is a comparison across two chapters, two systems, and two different meanings of $R_0$ (in chapter III it is the eon's minimum, $8{,}01\times10^{-15}$ cm by (3-72); in chapter V it is the $R' = c$ radius of §4.2). The comparison was invalid, and the factor of $43$ it produced was an artefact of it.</p>
+<p><strong>Nor is the $-3/R_0^{2}$ a transcription slip.</strong> It is forced by the existence condition printed immediately above it, RC (3-69-1-b):</p>
+<p>$$0 \le \xi \le \frac{R_0^{2}\sqrt{3}}{\sqrt{\beta^{2}/R_0^{2} - \alpha^{2}}} . \tag{3-69-1-b}$$</p>
+<p>Squaring and rearranging gives $\xi^{2}(\beta^{2}/R_0^{2} - \alpha^{2}) \le 3R_0^{4}$, that is $(\xi^{2}/R_0^{6})(\beta^{2}/R_0^{2} - \alpha^{2}) \le 3/R_0^{2}$ — which is (3-69-2) with the left-hand side carried across. <strong>The $\sqrt{3}$ of the bound is the $3$ of the numerator.</strong> So (3-69-2) is not a second determination of $\Lambda$ at all; it is the statement that the eon's existence condition is <em>equivalent</em> to $\Lambda \le 0$. It is satisfied by the book's own chapter-III numbers: $\xi = 6{,}8\times10^{-4}$ against a bound of $\xi_{\max} = 6{,}9089\times10^{-4}$, with (3-69-2) then giving $\Lambda = -1{,}4624\times10^{27}\ \mathrm{cm^{-2}}$. And its $\beta^{2}/R_0^{2}$ is right, for the dimensional reason the previous article recorded: $\xi^{2}/R_0^{6}$ has the dimensions $\mathrm{cm^{-4}\,g^{-2}}$, the bracket $\beta^{2}/R_0^{2} - \alpha^{2}$ has the dimensions $\mathrm{g^{2}}$, and their product has the dimensions $\mathrm{cm^{-2}}$ that $\Lambda$ requires — where $\beta^{2}/R_0^{4}$ would give $\mathrm{cm^{-4}}$.</p>
+<p>So the score is: (5-27) fixes the sign, (5-31) fixes the value, and (3-69-2) restates the existence condition of a different system. Only one of the three determines $\Lambda$, and the earlier draft's open item is closed — not by a further reading of the book, but by dropping a comparison that should never have been made.</p>
+<p>The sign has one further independent witness, which the previous article already cites: RC (5-51), the value of $\Lambda$ at a general turning point, reduces in the large-radius limit (5-51-b) to $\Lambda \simeq -3/R^{2}$, negative for every radius. Three relations, one sign, no conflict.</p>
+<h3 id="45-what-this-contributes-to-the-previous-article">4.5 What this contributes to the previous article</h3>
+<p>Three things, and they are worth listing because they close part of that article's largest open item.</p>
+<p>The sign $\Lambda < 0$ is confirmed by a second, independent relation, (5-27), which is an inequality and therefore cannot be an artefact of one formula. The magnitude is confirmed by a closed form whose own internal consistency check — the equality of the two expressions in (5-31) — passes exactly. And the value now has a second structural meaning: by §4.3 it is the $R^{-2}$ coefficient of the integrated equation, so $\Lambda$ is not merely a term that the model happens to need, it is the knob the model's shape turns on.</p>
+<p>What remains open is the older question of whether the 1987 §VI closed forms and the page-052 charged-lepton table describe the same solution. That is not a contradiction either; it is a reading that needs the printed pages.</p>
+<h2 id="part-5-what-the-law-is-worth">Part 5 — What the law is worth</h2>
+<h3 id="51-exact-and-not">5.1 Exact, and not</h3>
+<p>Separation is the fairest treatment, so here it is.</p>
+<p><strong>Exact and unforced, within the formalism.</strong> The derivation of §1.2. Given (52) and unit velocity, the law follows in two lines, and the $4$ is the dimension. Nothing here can be adjusted; if the field equation stands, the law stands.</p>
+<p><strong>Exact and independent.</strong> The identity $A = -\Lambda R_0^{4}$ of §4.3, and the internal consistency of (5-31). These are arithmetic consequences that hold or fail regardless of whether anyone believes the physics.</p>
+<p><strong>Interpretative.</strong> The identification of the source with a quantum potential, §2.1. The corpus supports it strongly — (47) has the divisor, which is the diagnostic — but the identification is a reading of an equation, not a derivation of one, and it is the subject of the two flanking articles.</p>
+<p><strong>Committed.</strong> The three consequences of §3, and the sign of the radiation trace (2-37-d). Each of these forbids or requires something that standard theory leaves open, and each is therefore a place where the model can be wrong.</p>
+<h3 id="52-is-the-law-required-no">5.2 Is the law required? No</h3>
+<p>This is the article's central negative result and it should be stated without softening. <strong>Nothing in established physics requires curvature to be quadratic in a density.</strong> The inventory's tag, [MIX], is right, and the reason is structural rather than empirical: general relativity's linear source is not an accident of convenience either — it follows from coupling to a conserved current and from the tensor character of the source, and the quadratic form is not merely a different choice of degree but a different kind of object, one whose continuity equation conserves the square of the density.</p>
+<p>So the law is best described as a <strong>genuinely distinct, self-consistent alternative</strong> rather than as a correction or a completion. This is the same verdict the previous articles reached about the source tensor and about the expansion, and three verdicts in the same direction is itself information: the programme keeps producing structures that are internally coherent and externally unforced. Whether that is a virtue or a symptom is a judgement about the whole programme, and it belongs to the final assessment, not here.</p>
+<p>What can be said here is what kind of thing the law is. It is not a numerology; there are no fitted numbers in it, and the one constant it does not fix is fixed elsewhere. It is not a reformulation of known physics in new notation, because its continuity equation is of a different degree. And it is not obviously wrong, because its consequences — no pair creation from nothing, forced annihilation products, a mass scale set by a fundamental volume — are all consistent with observation, and one of them is a requirement that observation meets.</p>
+<h3 id="53-what-would-break-it">5.3 What would break it</h3>
+<p>Three tests, in increasing order of cost, and the first is the cheapest.</p>
+<p><strong>A direct probe of the $\rho \leftrightarrow R$ relation.</strong> The law asserts that curvature goes as the square of a proper density and is offset by $4\Lambda$. Any setting in which both can be varied independently — the inventory suggests this reading, and it is the only clean test — settles the quadratic part at once. The coefficient $4$ needs no test, since it is the dimension.</p>
+<p><strong>A violation of the square's conservation.</strong> The model requires $\nabla_{\alpha}\rho^{2}u^{\alpha} = 0$ <em>and</em> the algebraic conservation of momentum–energy. A process that conserves one and not the other would refute the model as written. Pair creation and annihilation are the natural arena, and the corpus's own examples there agree with observation, so this test is a consistency check rather than a live risk.</p>
+<p><strong>A cosmological constant that must change sign.</strong> By §4.3, the sign of $\Lambda$ is the sign of $-A$, and $A$ is the coefficient of the $R^{-2}$ term of the expansion equation. Since a positive $R^{-2}$ term is what makes a closed model close, and the model is closed — $K = +1$, derived in the previous article and stated in the 1987 book — the requirement $\Lambda < 0$ and the requirement of closure are the same requirement. A universe that demanded $\Lambda > 0$ would break the model's internal consistency rather than merely fit it badly.</p>
+<p>None of these is a precision experiment, and that is itself the honest verdict. The law is falsifiable in principle, as the inventory says, but its predictions are structural — degrees, signs, requirements — and not numerical. A theory whose only distinctive content is structural is hard to kill and hard to confirm, and that is a fair summary of the quadratic law.</p>
+<h3 id="54-what-the-framework-can-take">5.4 What the framework can take</h3>
+<p>Two things, and one that must not be taken.</p>
+<p><strong>Take the derivation, as a template.</strong> Section 1.2 is a two-line computation that turns one equation into another and locates a coefficient in the dimension of the space. Any framework that wants a quadratic source — and there is an argument for wanting one, since the source in this series is a quantum-potential ratio that is naturally quadratic in the amplitude — should perform the same contraction and see what $\Lambda$-coefficient it gets. It will always be the dimension, and knowing that saves a fitting exercise.</p>
+<p><strong>Take the zero-density result.</strong> The statement of §1.5, that $\rho = 0$ means an Einstein space with $R = 4\Lambda$ rather than flat space, is a clean structural consequence that a biquaternion gravity programme can check against its own vacuum. It is also a place where the two programmes should disagree, since a programme built on the Einstein tensor alone will put zero curvature at zero source unless it introduces a cosmological term. That is a <em>testable</em> structural difference, not a taste.</p>
+<p><strong>Do not take the source as an energy–momentum tensor.</strong> Section 2 is emphatic that it is not one, and importing the quadratic law while keeping the standard reading of $T_{\alpha\beta}$ produces a model with a negative-energy fluid and no interpretation. Either the whole re-reading is taken — two principles, a quantum-potential source, geodesic motion for four forces — or the law should be left where it is. Half of it is not a theory.</p>
+<h2 id="summary">Summary</h2>
+<p>Charon's scalar curvature is quadratic in the proper density, and both books state it identically — Esp (55) and RC (3-45): $R = \xi^{2}\rho^{2} + 4\Lambda$. It is <strong>derived</strong>, not postulated: contracting the field equation (52) through the metric gives $R - 4\Lambda = \xi^{2}\rho^{2}$ in two lines, and the coefficient $4$ is the trace of the four-dimensional identity, which would be $d$ in $d$ dimensions. So the only adjustable part of the law is its quadratic degree, not its coefficient.</p>
+<p>The law has a sharp zero-density meaning that the corpus states only obliquely: $R \ge 4\Lambda$ always, with equality if and only if $\rho = 0$, so the model's vacuum is not flat — it is the Einstein space $R_{\alpha\beta} = \Lambda g_{\alpha\beta}$ with $R = 4\Lambda$. Empty space carries the cosmological term and nothing else.</p>
+<p>The corpus's three consequences follow as algebra. $+\rho$ and $-\rho$ never cancel, because both enter squared; creation from nothing and annihilation into nothing are forbidden, because the conserved quantity is $\rho^{2}$ and its sum over opposite signs is always positive, which is why the 1983 book is able to <em>require</em> annihilation products rather than merely permit them; and the proper mass is $M_0 = \Omega_0\rho$, so the conserved quantity is the square of the mass and the programme's mass scale is the quantum volume. Each carries a price, and §3.4 lists them.</p>
+<p>The $\Lambda$ in the law is fixed by the 1987 book, and doubly so. RC (5-31), $\Lambda = -\tfrac{1}{4}\xi^{2}\alpha^{2}/R_0^{6} = -\tfrac{1}{3}\xi^{2}\beta^{2}/R_0^{8}$, is internally consistent exactly when (5-30) holds, and (5-30) is obtained a second way from (5-53-a) and (5-54); the two routes give $R_0 = 1{,}333554\times10^{-14}$ cm and $\Lambda = -4{,}0274\times10^{26}\ \mathrm{cm^{-2}}$, that is $\Lambda R_0^{2}/3 = -0{,}0239$, inside the band the 1983 turning radii force. Combining these with Esp (194) yields an identity neither book writes, $A = -\Lambda R_0^{4}$, which is exact, which fixes the sign of the integration constant, and which reduces to $A/R_0^{2} = -3\lambda$ — so that the cosmological constant and the expansion's $R^{-2}$ term are one knob and not two.</p>
+<p>The verdict is mixed and should be left mixed. The law is <strong>exact, distinct, self-consistent, and unforced</strong>: nothing in established physics requires curvature to be quadratic in a density, and the quadratic form is not a different degree of the same object but a different kind of object, with a continuity equation for the square. It is falsifiable in principle by a direct probe of the $\rho \leftrightarrow R$ relation, and its other predictions are structural — degrees, signs, requirements — rather than numerical, which makes it hard to confirm and hard to refute. That is what the programme's most original structural idea turns out to be worth: a clean, unforced alternative, whose constant turns out to be the knob the whole cosmology turns on.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$R_{\alpha\beta}$, $R$</td>
+<td>Ricci tensor of the complex space, and its scalar</td>
+</tr>
+<tr>
+<td>$G_{\alpha\beta}$</td>
+<td>the metric of the complex space</td>
+</tr>
+<tr>
+<td>$\Lambda$</td>
+<td>cosmological constant, units $\mathrm{cm^{-2}}$</td>
+</tr>
+<tr>
+<td>$\rho$</td>
+<td>proper density; may be positive, negative or zero</td>
+</tr>
+<tr>
+<td>$\alpha$</td>
+<td>the matter constant, $\rho = \alpha/R^{3}$; negative</td>
+</tr>
+<tr>
+<td>$\beta$</td>
+<td>the radiation constant, $D_E/c^{2} = \beta/R^{4}$; negative</td>
+</tr>
+<tr>
+<td>$\xi$</td>
+<td>the leptonic constant, $\xi = \Omega_0c/\hbar$</td>
+</tr>
+<tr>
+<td>$\Omega_0$</td>
+<td>the quantum volume, $\Omega_0 = \tfrac{4}{3}\pi l_0^{3}$</td>
+</tr>
+<tr>
+<td>$l_0$</td>
+<td>the elementary length, $1{,}7577\times10^{-14}$ cm</td>
+</tr>
+<tr>
+<td>$M_0$</td>
+<td>the proper mass at a point, $M_0 = \Omega_0\rho$</td>
+</tr>
+<tr>
+<td>$U$</td>
+<td>the amplitude whose quantum-potential ratio is the source</td>
+</tr>
+<tr>
+<td>$T_{\alpha\beta}$, $\mathbb{T}^{\alpha}_{\beta}$</td>
+<td>the geometric tensor, <strong>not</strong> an energy–momentum tensor</td>
+</tr>
+<tr>
+<td>$C_{1}$</td>
+<td>the constant $G^{\alpha\beta}T_{\alpha\beta} = \xi^{2}\rho^{2}$</td>
+</tr>
+<tr>
+<td>$A$</td>
+<td>integration constant of the integrated expansion equation</td>
+</tr>
+<tr>
+<td>$R_0$, $R_i$, $R_m$</td>
+<td>1987: the $R' = c$ radius, the minimum, and $-\beta/\alpha$</td>
+</tr>
+<tr>
+<td>$\lambda$</td>
+<td>$\Lambda R_0^{2}/3$, the dimensionless cosmological constant</td>
+</tr>
+<tr>
+<td>(52)–(55)</td>
+<td>the 1983 field equation, trace, oscillator and law</td>
+</tr>
+<tr>
+<td>(2-28), (2-42), (2-53), (2-54)</td>
+<td>the 1987 density law and the three continuity relations</td>
+</tr>
+<tr>
+<td>(5-27), (5-30), (5-31), (5-54)</td>
+<td>the 1987 $\Lambda$ and $R_0$ relations</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>C. W. Misner, K. S. Thorne and J. A. Wheeler, <em>Gravitation</em> (Freeman, 1973), §8.3 for the trace of the field equation — the contraction that produces the $4$ — and §20.1 for the Friedmann pair in the sign conventions used round here.</li>
+<li>S. Weinberg, <em>Cosmology</em> (Oxford, 2008), §1.5 for the term-by-term reading of a Friedmann equation as a sum of fluids, and §1.12 for negative-energy components.</li>
+<li>J. D. Barrow, "Universes with negative energy densities," <em>Physical Review D</em> <strong>48</strong> (1993) 1585, for what a negative-density fluid does to a Friedmann model, which is the cosmological face of the non-cancellation of §3.1.</li>
+<li>R. Tryon, "Is the Universe a vacuum fluctuation?", <em>Nature</em> <strong>246</strong> (1973) 396, for the creation-from-nothing argument that Charon's continuity equation for $\rho^{2}$ is designed to block.</li>
+<li>P. A. M. Dirac, "A theory of electrons and protons," <em>Proceedings of the Royal Society</em> <strong>A126</strong> (1930) 360, for the negative-energy solutions that made the sign of a density a physical question in the first place.</li>
+<li>E. Schrödinger, <em>Space-Time Structure</em> (Cambridge, 1950), for the Einstein-space condition $R_{\alpha\beta} = \Lambda g_{\alpha\beta}$ that §1.5 derives as the model's vacuum.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

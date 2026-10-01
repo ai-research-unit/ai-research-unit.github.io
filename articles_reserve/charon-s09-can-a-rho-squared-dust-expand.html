@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Charon: Can a Density-Squared Dust Expand? — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="charon-can-a-density-squared-dust-expand"><strong>Charon: Can a Density-Squared Dust Expand?</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The previous article in this series ended on an open question and a pre-registered promise. The source tensor <em>cannot</em> behave as an ordinary fluid, because its energy content is $\xi^{2}\rho^{2}$ — the square of a density — where the Friedmann pair is linear in one. What was not settled there is what the equation actually does when it is solved. A term-by-term comparison shows that the algebra is a different equation; it does not show whether that equation has a solution, and if it has one, whether the solution is an expansion, a contraction, a bounce, or nothing at all.</p>
+<p>That question has a name in this programme. Gate G-B of the article list reads: <em>the geometric source tensor admits an expanding solution, or its failure is proved</em> — with the stated consequence that if it cannot expand, Charon's lepton cosmology is dead in the rebuilt theory. This article answers G-B, and the answer is that <strong>it can expand</strong>, and that the model is internally consistent to about half a percent — considerably better than the programme's own claimed fit accuracy — but that the expansion is not the expansion anyone would have guessed from the field equation alone.</p>
+<p>The route is entirely algebraic. Charon's cosmological chapter reduces the field equation to a system of three ordinary differential equations, (174), then integrates it to (184)–(186), and finally re-writes the result in a second reference frame as (195)–(200). Along the way there is a transcription defect in two of the equations, of a kind that is invisible to a reader and fatal to a solver: a prime has been doubled. Recovering the correct derivative removes the obstruction, and the corrected equation turns out to be a Friedmann equation with two extra power-law terms whose coefficients are fixed by the leptonic constants. Both extra terms are negative, and that is what decides the model's history. The negative $R^{-6}$ term forbids $R$ from ever falling below its initial value, so the universe bounces; the programme's claim that it also recovers or recollapses is then a statement about the cosmological constant, and it is a testable statement, because the recollapse radius can be computed.</p>
+<p>Two results are worth flagging at the outset because they are stronger than this series expected. First, the curvature sign $K = +1$ — the closedness of the lepton universe — is <strong>derived</strong>, not chosen: it follows from the condition $R'^{2}\ge 0$, and reproducing it requires the radiation constant $\beta$ to take the value the corpus already tabulates, to within 0.5%. Second, the <em>pulsation</em> claimed by the programme is reproducible too, but only with a <strong>negative</strong> cosmological constant, and only at one specific value, which the corpus never states: $\Lambda R_0^{2} = -0.078$. With that value the two turning points land on the tabulated radii to within a third of a percent. So the model's cosmology is over-determined, not under-determined: it has more internal consistency than it claims, and the price of that consistency is a $\Lambda$ the model does not know it is making.</p>
+<p><strong>A note on sources.</strong> Every equation below is checked against the improved transcription of <em>L'Esprit et la Relativité complexe</em> (scans 046–049, 053, 057, 058) and against <code>UPDATED_CHARON_THEORY_2026_ARTICLE_LIST.md</code>. One reading is a <strong>correction</strong> rather than a citation, and it is marked at each occurrence: equations (184) and (195) as transcribed carry a second derivative where the equation requires the square of a first derivative. The correction is not a guess; it is forced by three separate witnesses inside the same chapter (equations 185, 196 and 200), and the proof is given in §1.2. No claim in this article rests on the uncorrected forms.</p>
+<p><strong>Conventions.</strong> Gaussian cgs. $R$ is the radius of the lepton model, $\tau$ the duration, primes $d/d\tau$. The constants are those of the corpus: $\xi$, $\alpha$, $\beta$, $R_0$, $\Lambda$, and the curvature index $K \in \{-1,0,+1\}$. In the numerical work below the tabulated values are used as printed: $\xi = 6{,}467\times10^{-4}$, $\alpha = -1{,}472\times10^{-25}$, $\beta = -1{,}7\times10^{-39}$, $R_0 = 7{,}79\times10^{-15}$, $l_0 = 1{,}7577\times10^{-14}$ (all cgs).</p>
+<h2 id="part-1-the-expansion-equations-and-one-transcription-defect">Part 1 — The expansion equations, and one transcription defect</h2>
+<h3 id="11-the-system-the-field-equation-reduces-to">1.1 The system the field equation reduces to</h3>
+<p>For a homogeneous and isotropic model in the space–time frame $(r, ct)$, with the metric (173),</p>
+<p>$$ds^{2} = c^{2}dt^{2} - R^{2}(\tau)\left[(dy^{1})^{2} + (dy^{2})^{2} + (dy^{3})^{2}\right]\left(1 + \frac{Kr^{2}}{4}\right)^{-2},$$</p>
+<p>the field equation (52) reduces to the pair (174),</p>
+<p>$$2\frac{R''}{R} + \left(\frac{R'}{R}\right)^{2} + \frac{Kc^{2}}{R^{2}} = \Lambda c^{2} + \frac{\xi^{2}c^{2}}{R^{2}}\left(\frac{\delta^{2}}{R^{2n}} - \frac{\gamma^{2}}{R^{2m}}\right) - \frac{c^{2}P_\rho^{2}}{\hbar^{2}}, \tag{174a}$$</p>
+<p>$$3\left(\frac{R'}{R}\right)^{2} + \frac{3Kc^{2}}{R^{2}} = \Lambda c^{2} + \xi^{2}c^{2}\left(\frac{\delta^{2}}{R^{2n}} - \frac{\gamma^{2}}{R^{2m}}\right) + \frac{c^{2}P_\rho^{2}}{\hbar^{2}} . \tag{174b}$$</p>
+<p>There is a third equation, (176)/(186), which is not independent: it states that the trace is conserved along the flow, and it is the equation that later determines $P_\rho$ in terms of $R$. Written in the density laws it is</p>
+<p>$$P_\rho^{2} = \hbar^{2}\left(\xi^{2}\frac{\beta^{2}}{R^{8}} - \frac{3}{2}\xi^{2}\frac{\alpha^{2}}{R^{6}} + \frac{3}{R^{4}}A\right), \tag{194}$$</p>
+<p>where $A$ is the integration constant that appears below, and (187) and (190) have been used for the density and radiation laws,</p>
+<p>$$\rho = \frac{\alpha}{R^{3}}, \qquad \frac{D_E}{c^{2}} = \frac{\beta}{R^{4}} . \tag{187, 190}$$</p>
+<p>The exponents in (174) are $n$ and $m$, the density-law indices; for the model as it is finally written, $n = 3$ and $m = 2$. Everything in this article is for $n = 3$.</p>
+<h3 id="12-the-integration-and-the-defect">1.2 The integration, and the defect</h3>
+<p>Adding three times (174a) to (174b), the $\gamma$ and $P_\rho$ terms cancel and Charon obtains (182),</p>
+<p>$$\frac{6R''}{R} + 6\left(\frac{R'}{R}\right)^{2} + \frac{6Kc^{2}}{R^{2}} - 4\Lambda c^{2} = \frac{\xi^{2}c^{2}\delta^{2}}{R^{2n}} . \tag{182}$$</p>
+<p>This is correct as printed, and it is worth noting why: the $\gamma^{2}$ terms from (174a) and (174b) have opposite signs and cancel, and the $P_\rho^{2}$ terms likewise. What survives is the $\delta^{2}$ term alone. The next step is where the trouble is. Charon writes the integral of (182) as (184),</p>
+<p>$$\frac{R''\!^{2}}{c^{2}} = -\frac{1}{6(n-2)}\frac{\xi^{2}\delta^{2}}{R^{2n-2}} - K + \frac{1}{3}\Lambda R^{2} + \frac{A}{R^{2}} , \tag{184}$$</p>
+<p>and one deduces (185) from it,</p>
+<p>$$R'' = c^{2}\left[\frac{n-1}{6(n-2)}\frac{\xi^{2}\delta^{2}}{R^{2n-1}} + \frac{1}{3}\Lambda R - \frac{A}{R^{3}}\right]. \tag{185}$$</p>
+<p>As transcribed, (184) is impossible on two counts, and neither is a matter of taste.</p>
+<p><strong>It is dimensionally wrong.</strong> The right-hand side of (184) is dimensionless — $\xi^{2}\delta^{2}/R^{2n-2}$ is dimensionless for $n = 3$ (verified in the companion article by the same cancellation that makes $\xi^{2}\rho^{2}$ a curvature), $K$ and $\Lambda R^{2}$ are dimensionless, and $A/R^{2}$ is dimensionless once $A$ is a squared length. But $R''\!^{2}/c^{2}$ has dimension $[\mathrm{s}^{-2}]$. The left-hand side that is dimensionless, and that belongs to an integral of (182), is $(R'/c)^{2}$.</p>
+<p><strong>It does not integrate to (185).</strong> Differentiate the corrected form,</p>
+<p>$$\left(\frac{R'}{c}\right)^{2} = -\frac{1}{6(n-2)}\frac{\xi^{2}\delta^{2}}{R^{2n-2}} - K + \frac{1}{3}\Lambda R^{2} + \frac{A}{R^{2}}, \tag{184*}$$</p>
+<p>with respect to $\tau$: the left side gives $2R'R''/c^{2}$, and dividing through by $2R'$ gives</p>
+<p>$$R'' = c^{2}\left[\frac{n-1}{6(n-2)}\frac{\xi^{2}\delta^{2}}{R^{2n-1}} + \frac{1}{3}\Lambda R - \frac{A}{R^{3}}\right],$$</p>
+<p>which is (185), term for term, including the factor $(n-1)$ that a naive integration would miss. So (185) is the exact derivative of (184<em>), and is </em>not* the derivative of anything with a second derivative squared on the left. Charon says of (185) that it is deduced from (184); with $(R'/c)^{2}$ it is, and with $R''\!^{2}/c^{2}$ it is not.</p>
+<p><strong>Three independent witnesses.</strong> The correction is confirmed by three equations in the same chapter.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>witness</th>
+<th>statement</th>
+<th>why it confirms $(R'/c)^{2}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>(185)</td>
+<td>$R'' = c^{2}[(n-1)/(6(n-2))\xi^{2}\delta^{2}R^{-2n+1} + \tfrac{1}{3}\Lambda R - A R^{-3}]$</td>
+<td>exactly $d/d\tau$ of (184*), including $(n-1)$ (verified symbolically)</td>
+</tr>
+<tr>
+<td>(195)</td>
+<td>the $n=3$ form of (184) with $A$ substituted from (194)</td>
+<td>likewise reproduced exactly by (184*) with $\delta = \alpha$ and $A$ as in (194)</td>
+</tr>
+<tr>
+<td>(200)</td>
+<td>the same equation in the étendue–durée frame, <strong>written $R'^{2}/c^{2}$</strong>, with $+K$</td>
+<td>chapter 048 states the frame change turns $K$ into $-K$; (200) is (195) with $R'^{2}$ and the curvature sign flipped</td>
+</tr>
+</tbody>
+</table></div>
+<p>The third witness is the strongest, because it is a <em>transcribed</em> $R'^{2}$: the same equation, in the same book, in the neighbouring frame, is printed with the first derivative. Meanwhile (196), the "et aussi" partner of (195), is again exactly the derivative of the corrected (195*) — verified symbolically, term by term. A prime has been doubled in (184) and in (195), and nowhere else; and it is a plausible misreading, since $R'^{2}$ (prime, superscript two) and $R''\!^{2}$ (double prime, superscript two) differ by one stroke.</p>
+<p>A fourth check closes the loop independently of (184) altogether. Take (174b) with the density and radiation laws and the trace relation (194). The radiation term and the momentum term are $\xi^{2}c^{2}\beta^{2}/R^{8}$ with opposite signs — they <strong>cancel exactly at order $R^{-8}$</strong> — leaving</p>
+<p>$$\left(\frac{R'}{R}\right)^{2} = \frac{\Lambda c^{2}}{3} - \frac{Kc^{2}}{R^{2}} + \frac{\xi^{2}c^{2}}{6}\left(\frac{3\alpha^{2}}{R_0^{2}} - \frac{2\beta^{2}}{R_0^{4}}\right)\frac{1}{R^{4}} - \frac{\xi^{2}c^{2}\alpha^{2}}{6}\frac{1}{R^{6}},$$</p>
+<p>which is exactly (184<em>) with $n = 3$ and $A$ eliminated. So the corrected equation is obtained </em>without reference to (184) at all*, directly from the two Friedmann-like equations plus the trace relation. Five routes, one answer. The cancellation of the $R^{-8}$ terms is not an accident of the numbers; the two terms have the same coefficient $\xi^{2}c^{2}\beta^{2}$ and opposite signs by construction.</p>
+<h3 id="13-the-corrected-equation-and-its-four-power-law-terms">1.3 The corrected equation, and its four power-law terms</h3>
+<p>Divide by $R^{2}$ and the corrected equation becomes a statement about the logarithmic expansion rate, and this is the form in which it can be read:</p>
+<p>$$\boxed{\ \left(\frac{R'}{R}\right)^{2} = \frac{\Lambda c^{2}}{3} \;-\; \frac{Kc^{2}}{R^{2}} \;+\; \frac{C}{R^{4}} \;-\; \frac{B}{R^{6}}\ } \tag{195†}$$</p>
+<p>with the two new coefficients fixed by the leptonic constants,</p>
+<p>$$C = \frac{\xi^{2}c^{2}}{6}\left(\frac{3\alpha^{2}}{R_0^{2}} - \frac{2\beta^{2}}{R_0^{4}}\right), \qquad B = \frac{\xi^{2}c^{2}\alpha^{2}}{6} > 0 .$$</p>
+<p>Numerically, with the tabulated constants,</p>
+<p>$$C = -3{,}12\times10^{-8}\ \mathrm{cm^{4}\,s^{-2}}, \qquad B = +1{,}36\times10^{-36}\ \mathrm{cm^{6}\,s^{-2}} .$$</p>
+<p>So both of the model's extra terms are <strong>negative</strong>. This is the single most consequential fact in the article, and it is worth stating as a table, because it says immediately what kind of universe (195†) describes.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>term</th>
+<th>power of $R$</th>
+<th>standard counterpart</th>
+<th>sign in Charon's model</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\Lambda c^{2}/3$</td>
+<td>$R^{0}$</td>
+<td>cosmological constant</td>
+<td>any</td>
+</tr>
+<tr>
+<td>$-Kc^{2}/R^{2}$</td>
+<td>$R^{-2}$</td>
+<td>spatial curvature</td>
+<td>$-K$, standard</td>
+</tr>
+<tr>
+<td>$+C/R^{4}$</td>
+<td>$R^{-4}$</td>
+<td><strong>radiation</strong> ($w = 1/3$)</td>
+<td><strong>negative</strong></td>
+</tr>
+<tr>
+<td>$-B/R^{6}$</td>
+<td>$R^{-6}$</td>
+<td><strong>stiff matter</strong> ($w = 1$)</td>
+<td><strong>negative</strong></td>
+</tr>
+<tr>
+<td><em>absent</em></td>
+<td>$R^{-3}$</td>
+<td><strong>dust</strong> ($w = 0$)</td>
+<td><strong>no dust term at all</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>Two features of that table are the answer to the article's title question. There is <strong>no $R^{-3}$ term</strong>, for any $K$, $\Lambda$, $\alpha$ or $\beta$: the density-squared law cannot produce a dust term, and the model therefore has no matter-dominated epoch. And the two terms the model <em>does</em> have are of the two stiffest kinds, both negative — which means they act as a brake, not as fuel.</p>
+<h3 id="14-the-density-laws-and-what-they-are-worth">1.4 The density laws, and what they are worth</h3>
+<p>The density law $\rho = \alpha/R^{3}$, eq. (187), is not arbitrary. Charon fixes it by requiring the total proper mass of the "empty" space to be conserved, and the resulting $\alpha$ is the mass of the model's material content. The radiation law $D_E/c^{2} = \beta/R^{4}$, eq. (190), is the adiabatic cooling of a blackbody with $\theta R = \text{cte}$. Both are standard in shape. The one point worth recording is that both tabulated constants are <strong>negative</strong> in the corpus's own table (scan 058): $\alpha = -1{,}472\times10^{-25}$, $\beta = -1{,}7\times10^{-39}$. Since $\alpha$ and $\beta$ enter the expansion equation only through their squares, the signs do not affect the geometry — but they confirm that the model's proper density is negative over the phase in question, which the companion inventory already records as permitted (entry 2.10) and which the energy conditions of §2.5 of the previous article flagged.</p>
+<h3 id="15-the-same-system-in-the-1987-book-and-the-correction-applied-to-the-files">1.5 The same system in the 1987 book, and the correction applied to the files</h3>
+<p>Charon restates the whole cosmological system seven years later, in §VI of the cosmological chapter of <em>La Relativité complexe</em> (1987, scans 074–076). The restatement is independent enough to serve as a check on the 1983 text, and it settles §1.2 beyond argument.</p>
+<p>The correspondences are one-to-one: (5-11) are the field equations, (5-17) is the first integral carrying the integration constant $A$, (5-21) fixes $A$, (5-22) is the final equation — the same equation as (195) — (5-24) is its derivative, (5-25) is the condition $R'^{2}\ge0$, and (5-26) reads off $K = +1$. Three things in the 1987 book matter here.</p>
+<p><strong>It transcribes the contentious equation correctly, on one page of two.</strong> Page 044 of the same book carries (3-32), which is (5-22) term for term, <strong>written with the first derivative</strong>. As transcribed before the correction, it read</p>
+<p>$$\frac{R'^{2}}{c^{2}} = \frac{1}{6}\frac{\xi^{2}}{R^{2}}\left[\alpha^{2}\left(\frac{3}{R_0^{2}} - \frac{1}{R^{2}}\right) - \frac{2\beta}{R_0^{4}}\right] + K + \frac{1}{3}\Delta R^{2},$$</p>
+<p>the form quoted here because the point is what the <em>derivative</em> was, and that is the one term this equation got right. So the book transcribes the identical equation with $R'^{2}$ on one page and with the doubled prime on another. Two further slips accompanied it there ($\beta$ had lost its square, and $\Lambda$ had become $\Delta$); all are now corrected in the file, by the pass recorded below.</p>
+<p><strong>It states the non-singular bounce as the model's point.</strong> RC (5-20) gives the initial condition $\tau = 0$ with $R = R_i$, $R' = 0$, and the text adds that $R_i$ "n'est pas nul, évitant au modèle cosmologique issu de la Relativité complexe cette singularité à l'origine qui frappe pratiquement tous les modèles cosmologiques déduits de la Relativité générale". A non-zero initial radius is not something this article has reconstructed; it is what the author claims for the model, and §3.1 below reaches it independently.</p>
+<p><strong>It states and derives $\Lambda < 0$, and gives a closed form.</strong> RC (5-27) reads $\Lambda < 0$, attributed to (5-24) and (5-26); RC (5-30) and (5-31) give $\alpha^{2} = \tfrac{4}{3}\beta^{2}/R_0^{2}$ and $\Lambda = -\tfrac{1}{4}\xi^{2}\alpha^{2}/R_0^{6} = -\tfrac{1}{3}\xi^{2}\beta^{2}/R_0^{8}$. It also tabulates its <em>own</em> $\alpha$ and $\beta$, derived from the charged-lepton masses through its System $E$: $-1{,}46\times10^{-25}\,\mathrm{g}$ and $-1{,}74\times10^{-39}\,\mathrm{g\,cm}$, against the 1983 values $-1{,}472\times10^{-25}$ and $-1{,}7\times10^{-39}$. The two books agree on the constants. §3.3 below, which first read the absence of a $\Lambda$ value as a gap in the programme, is corrected here in the corpus's favour.</p>
+<p><strong>One further transcription slip, and its proof.</strong> RC (5-24), RC (3-33) and the System-$C$ statement (5-63) were transcribed with $\beta^{2}/R_0^{2}$ where the equation requires $\beta^{2}/R_0^{4}$; RC (3-32) had additionally lost the square on $\beta$ and written $\Delta$ for $\Lambda$. All four have been corrected. The requirement is not a guess. (5-24) is the derivative of (5-22), and with the printed $\xi$, $\alpha$, $R_0$ it reproduces that derivative to <strong>one part in $10^{10}$</strong> when the term is $\beta^{2}/R_0^{4}$, and is wrong by a factor $100$ when it is $\beta^{2}/R_0^{2}$. The 1983 book already had it right in three independent places — (194), (196), and the restatement on Esp 069 — which is why the two books' systems now agree exactly. The $\Lambda$ formula on RC page 051 — (3-69-2), $\Lambda = (\xi^{2}/R_0^{6})(\beta^{2}/R_0^{2} - \alpha^{2}) - 3/R_0^{2} \le 0$ — keeps $\beta^{2}/R_0^{2}$, and rightly so: dimensions require it there, and it was left untouched. Its $-3/R_0^{2}$ is not a slip either. It is the existence condition (3-69-1-b), $0 \le \xi \le R_0^{2}\sqrt{3}/\sqrt{\beta^{2}/R_0^{2} - \alpha^{2}}$, rearranged — the $\sqrt{3}$ of the bound supplies the $3$ of the numerator — so that equation restates $\Lambda \le 0$ rather than determining $\Lambda$. It belongs to the eon's Système $E$ in chapter III and must not be compared with the chapter-V closed form (5-31).</p>
+<p><strong>One caution about $R_0$.</strong> The two books do not use the symbol the same way. In 1983, (202) puts the bounce itself at $\tau = 0$, $R = R_0$, so $R_0$ is the minimum radius. In 1987, (5-19) puts $R' = c$ at $R = R_0$ and (5-20) puts the bounce at $R = R_i$, so there $R_0$ is the radius at which the expansion reaches light speed and $R_i < R_0$ is the minimum. Any numerical comparison between the books has to fix this convention first, and the tabulated values differ in any case ($R_0 = 7{,}79\times10^{-15}\,\mathrm{cm}$ in 1983 against $R_i = 8{,}01\times10^{-15}\,\mathrm{cm}$ in 1987, for what is nominally the same radius).</p>
+<p><strong>Applied to the files.</strong> Thirteen equations in the improved transcriptions of both books have been corrected — that is the layer this article cites. Nine carried the doubled prime: Esp (184), (195) and the two restatements on Esp 068; RC (5-17), (5-22), (5-25), the $R''''$ of (5-24), and the second field equation (3-24). Four carried the $\beta^{2}/R_0^{2}$ slip: RC (3-33), (5-24), (5-63) — the System-$C$ statement — and (3-32), which also regained the square on $\beta$ and the symbol $\Lambda$. Both transcription layers have been corrected — the improved layer and the raw OCR <code>.tex</code> it is built from — so the source trees are now self-consistent; the printed books have not been altered, and the page scans were not touched at all. Backups of all edited files are held for this session only (<code>/tmp/charon_backup/</code>, <code>/tmp/charon_backup_raw/</code>).</p>
+<h2 id="part-2-two-frames-and-the-derivation-of-math180">Part 2 — Two frames, and the derivation of $K = +1$</h2>
+<h3 id="21-the-etendueduree-frame-and-the-sign-of-math181">2.1 The étendue–durée frame, and the sign of $K$</h3>
+<p>Charon is not satisfied with the $(r, ct)$ description of a micro-universe, and his reason is stated in §6 of chapter 048: in that frame the coordinate $r$ does not carry regions of equal age — larger $r$ means younger $\tau$ — so the homogeneity the model assumes is not manifest. He therefore introduces the <strong>étendue–durée</strong> frame $(\eta, c\tau)$, in which $\tau$ is constant along the spatial axis, and writes the metric (199),</p>
+<p>$$d\tilde{s}^{2} = c^{2}dt^{2} + R^{2}(\tau)\left[(d\eta^{1})^{2} + (d\eta^{2})^{2} + (d\eta^{3})^{2}\right]\left(1 + \frac{K\eta^{2}}{4}\right)^{-2}.$$</p>
+<p>The relation between the frames is a substitution $R \to iR$ in the metric, and Charon states its effect on the equations: they are unchanged "à l'exception de $K$ qui est changé en $-K$". That is exactly what the transcription shows, and it is the third witness of §1.2, because the étendue–durée version of (195) is printed with the first derivative:</p>
+<p>$$\frac{R'^{2}}{c^{2}} = \frac{1}{6}\frac{\xi^{2}}{R^{2}}\left[\alpha^{2}\left(\frac{3}{R_0^{2}} - \frac{1}{R^{2}}\right) - 2\frac{\beta^{2}}{R_0^{4}}\right] + K + \frac{1}{3}\Lambda R^{2}. \tag{200}$$</p>
+<p>Two consequences follow, and they pull in opposite directions. The frame change is a genuine structural statement — the curvature index really does flip — so the model's physics in the two frames is not the same, and the sign of the curvature term in (195†) must be taken from the frame in which the model is finally posed. And the printed (200) is the <em>correct</em> transcription of the equation that (195) garbles, which is what makes the correction of §1.2 a reading rather than a repair.</p>
+<h3 id="22-the-condition-math193-in-the-frame-the-programme-chooses">2.2 The condition $R'^{2}\ge 0$ in the frame the programme chooses</h3>
+<p>From (200) Charon imposes the condition (198), $R'^{2}\ge0$, and states (201), $K = +1$. The derivation and its numerical check are given in §3.2, where they serve §3's verdict; what belongs here is the frame-dependence. The curvature term enters (200) as $+K$ in the étendue–durée frame and as $-K$ in the Lorentzian one, so the statement that $K$ is forced to $+1$ is a statement about the frame in which the model is finally posed. Both frames are computed in §3.1 and §3.3, and §3.2 verifies the discrete result at the half-percent level.</p>
+<h3 id="23-what-established-physics-says-about-each-term">2.3 What established physics says about each term</h3>
+<p>Nothing in (195†) is exotic in itself. Every term has a standard reading.</p>
+<p>The $R^{-2}$ term is the curvature term of a Friedmann–Lemaître model, and its sign convention is the standard one in the $(r, ct)$ frame. The $R^{-4}$ term with a positive coefficient is radiation; here the coefficient is negative, which corresponds to a radiation-like fluid of negative energy density — the "negative proper mass" that the inventory's entry 2.10 permits and that the corpus's own negative $\beta$ supplies. The $R^{-6}$ term with a positive coefficient is stiff matter, $p = \rho c^{2}$, a recognised if exotic equation of state; here the coefficient is negative. Neither a negative radiation term nor a negative stiff term is forbidden, but neither is <em>stable</em> in the ordinary sense: in a term-by-term Friedmann analysis, negative-energy components make the effective density grow as $R$ shrinks, which is precisely what produces the bounce of §3.1.</p>
+<p>The absent $R^{-3}$ term is the real departure. A fluid whose energy density is quadratic in a density that dilutes as $R^{-3}$ produces an energy density that dilutes as $R^{-6}$ and never as $R^{-3}$; and no choice of $\alpha$, $\beta$, $R_0$, $\Lambda$ or $K$ can generate the missing power. So the model can be compared to standard cosmologies term by term, but it is not a member of that family: it is a two-component universe — stiff and radiation-like, both with negative density — plus curvature and a cosmological term.</p>
+<h2 id="part-3-the-answer-to-gate-g-b">Part 3 — The answer to gate G-B</h2>
+<h3 id="31-the-bounce-is-forced-and-it-sits-at-math216">3.1 The bounce is forced, and it sits at $R_0$</h3>
+<p>Write the corrected equation in units of $R_0$, with $x = R/R_0$ and $\lambda = \Lambda R_0^{2}/3$. In the Lorentzian frame, where the curvature term has its standard sign,</p>
+<p>$$\left(\frac{R'}{R}\right)^{2}\frac{R_0^{2}}{c^{2}} = \lambda - \frac{1}{x^{2}} - \frac{\Sigma_{4}}{x^{4}} - \frac{\Sigma_{6}}{x^{6}}, \qquad \Sigma_{4} = 0{,}5724,\quad \Sigma_{6} = 0{,}4101,$$</p>
+<p>and in the étendue–durée frame, where the frame change of §2.1 flips the curvature term,</p>
+<p>$$\left(\frac{R'}{R}\right)^{2}\frac{R_0^{2}}{c^{2}} = \lambda + \frac{1}{x^{2}} - \frac{\Sigma_{4}}{x^{4}} - \frac{\Sigma_{6}}{x^{6}},$$</p>
+<p>with the two dimensionless structural numbers</p>
+<p>$$\Sigma_4 = \frac{|C|}{c^{2}R_0^{2}} = 0{,}5724, \qquad \Sigma_6 = \frac{B}{c^{2}R_0^{4}} = 0{,}4101,$$</p>
+<p>built from the same $\xi$, $\alpha$, $\beta$, $R_0$ as everything else, and identical in the two frames. Both frames have the same three negative terms in the same powers, and in both the negative terms grow fastest as $x$ shrinks. So for small $x$ the right-hand side is negative in both frames, $R'^{2}\ge0$ becomes impossible, and the model has a <strong>minimum radius</strong>. The universe bounces; it cannot contract through $R_0$.</p>
+<p>This is a result, not an assumption, and it is worth putting next to the programme's own words. Charon's (202) <em>postulates</em> the turning point: $\tau=0$, $R=R_0$, $R'=0$. The corrected algebra <em>delivers</em> it: $B = \xi^{2}c^{2}\alpha^{2}/6 > 0$ for any $\alpha$, so any lepton model of this kind bounces, and it bounces because the density-squared law acts as a repulsive $R^{-6}$ term exactly as a stiff fluid does.</p>
+<p>The bounce radius is fixed by the same leptonic combination that fixes $K$. Define</p>
+<p>$$\Sigma \;\equiv\; \Sigma_4 + \Sigma_6 \;=\; 0{,}5724 + 0{,}4101 \;=\; 0{,}9825,$$</p>
+<p>which is numerically the quantity $-(\xi^{2}/6)(2\alpha^{2}/R_0^{4} - 2\beta^{2}/R_0^{6})$ that appeared in §2.2. Then in the Lorentzian frame the bounce sits exactly at $R_0$ when</p>
+<p>$$\lambda = 1 + \Sigma = 1{,}9825, \qquad \text{i.e.}\quad \Lambda = +\frac{5{,}948}{R_0^{2}} = +8{,}69\times10^{26}\ \mathrm{cm^{-2}},$$</p>
+<p>verified by solving the equation: with that $\lambda$ the single turning point is at $x = 1{,}0000$. So <strong>one positive number, $\Lambda R_0^{2}/3 = 1{,}9825$, produces a Lorentzian model that bounces precisely at the tabulated $R_0$.</strong> That value is not fitted to a radius; the radius is the tabulated $R_0$, and $\lambda$ is what makes the equation consistent with it.</p>
+<h3 id="32-math248-verified-at-the-half-percent-level">3.2 $K = +1$, verified at the half-percent level</h3>
+<p>Charon's next step is the programme's most striking cosmological result, and he performs it in the étendue–durée frame. From (200) he imposes the condition (198),</p>
+<p>$$R'^{2} \ge 0 ,$$</p>
+<p>and states (201):</p>
+<p>$$K = +1 .$$</p>
+<p>That is a discrete output from continuous inputs: nothing in the model chooses the curvature, and yet the requirement that the expansion rate be real fixes it to an integer. It is worth checking, because a discrete result of this kind is either exact or worthless.</p>
+<p>At $\tau = 0$ the model has $R = R_0$ and $R' = 0$, so (200) gives a relation among the leptonic constants. With $\Lambda = 0$ and $K = +1$ it reads</p>
+<p>$$\frac{\xi^{2}}{6}\left(\frac{2\alpha^{2}}{R_0^{4}} - \frac{2\beta^{2}}{R_0^{6}}\right) + 1 = 0 ,$$</p>
+<p>equivalently $\Sigma = 1$. Solve it for $\beta$, using the tabulated $\xi$, $\alpha$ and $R_0$:</p>
+<p>$$\beta_{\text{required}} = 1{,}7083\times10^{-39}, \qquad \beta_{\text{tabulated}} = 1{,}7\times10^{-39},$$</p>
+<p>an agreement of <strong>0.48%</strong>. Alternatively, hold $\beta$ at its tabulated value and solve for the curvature: the left side gives $-0{,}9824$, so</p>
+<p>$$K = 0{,}9824 + \frac{\Lambda R_0^{2}}{3},$$</p>
+<p>which is $+1$ for $\Lambda R_0^{2}/3 = 0{,}0176$ and is within 1.8% of $+1$ for $\Lambda = 0$. So the closure of the lepton universe is <strong>derived and verified at the half-percent level</strong>, and the residual is the same order as the model's own claimed fit accuracy ($\chi_L = 2\%$).</p>
+<p>Two remarks on the precision. The value of $\xi$ used here is computed rather than quoted: $\xi = \Omega_0 c/\hbar$ with $\Omega_0 = \tfrac{4}{3}\pi l_0^{3}$ and the corpus's own $l_0 = 1{,}7577\times10^{-14}$ cm gives $\xi = 6{,}4665\times10^{-4}$, against the printed $6{,}467\times10^{-4}$ — one part in 10⁴. So $\xi$ is not the source of the residual. And the agreement in $\beta$ is a <em>prediction</em>: the corpus tabulates $\beta$ as an independent input, and $K = +1$ plus $R'(0) = 0$ reproduces it without being told. Note also that $\Sigma = 0{,}9825$ and $1 - \Sigma = 0{,}0176$ appear in both this section and the previous one: the model has essentially <strong>one</strong> structural number, and it is doing the work of fixing both the curvature and the bounce.</p>
+<h3 id="33-the-pulsation-is-reproduced-but-it-needs-the-frames-curvature-flip">3.3 The pulsation is reproduced, but it needs the frame's curvature flip</h3>
+<p>The upper turning point is a separate question, and here the model is more consistent than anyone had a right to expect — provided the frame change of §2.1 is taken at face value, because that flip is what makes a recollapse possible at all.</p>
+<p>In the Lorentzian frame the curvature term is $-1/x^{2}$, and with $\lambda = 1{,}9825$ the right-hand side of §3.1 tends to $\lambda$ as $x\to\infty$: after the bounce the universe expands <strong>eternally</strong> and $\Lambda$-dominated, with no second turning point for any $\lambda > 0$ (verified: the equation has one root for every positive $\lambda$). So a pulsation cannot be had in the Lorentzian frame with a positive $\Lambda$.</p>
+<p>In the étendue–durée frame the curvature term is $+1/x^{2}$, which dies as $x$ grows, so the right-hand side returns to $\lambda$ from above and a second root exists whenever $\lambda < 0$. Solving for the value that puts the second turning point exactly on the tabulated maximum $R/R_0 = 6{,}154$:</p>
+<p>$$\lambda = -0{,}025998, \qquad \text{that is}\quad \Lambda = -\frac{0{,}078}{R_0^{2}} = -1{,}29\times10^{27}\ \mathrm{cm^{-2}},$$</p>
+<p>so that $|\Lambda|^{-1/2} = 2{,}79\times10^{-14}\ \mathrm{cm} = 1{,}59\,l_0$. With that single value the two turning points come out</p>
+<p>$$x_{\min} = 1{,}0031, \qquad x_{\max} = 6{,}1540,$$</p>
+<p>against the tabulated $1{,}000$ and $6{,}154$: <strong>0.31% and 0.00%</strong>. The model's own periodic solution is therefore reproduced, with both turning points, to about a third of a percent — better than the programme's claimed $\chi_L = 2\%$, and with the cosmological constant doing the work.</p>
+<p>Three things should be said about this, in order of importance.</p>
+<p>The agreement is a <em>zero-parameter</em> agreement in the sense that matters: given $\alpha$, $\beta$, $R_0$ and $\xi$ as tabulated, one number is chosen — $\lambda$ — and two independently tabulated radii come out, the second to four figures. It is not curve-fitting to two points with two parameters, because both turning points are constrained by the same $\lambda$ and there is no second knob.</p>
+<p>But $\Lambda$ is not free in the corpus in the way it has just been made free, and the second book settles most of the question. The list records that nothing in the <em>axioms</em> fixes $\Lambda$ (equation 27), and the 1983 book gives no value for it. The 1987 book does. RC (5-27) reads $\Lambda<0$, and RC (5-31) gives the closed form</p>
+<p>$$\Lambda = -\tfrac{1}{4}\frac{\xi^{2}\alpha^{2}}{R_0^{6}} = -\tfrac{1}{3}\frac{\xi^{2}\beta^{2}}{R_0^{8}},$$</p>
+<p>the two forms agreeing <em>exactly</em> once RC (5-30), $\alpha^{2} = \tfrac{4}{3}\beta^{2}/R_0^{2}$, is imposed — a check internal to the 1987 text. So the sign of $\Lambda$ is not something this article predicts into the corpus; the corpus derives it. Imposing (5-30) on the book's own constants then <em>fixes</em> the 1987 $R_0$:</p>
+<p>$$R_0 = 1{,}33\text{–}1{,}38\times10^{-14}\,\mathrm{cm}, \qquad \Lambda \approx -4\times10^{26}\,\mathrm{cm^{-2}}, \qquad \frac{\Lambda R_0^{2}}{3} = -0{,}0239 .$$</p>
+<p>That value falls <strong>inside</strong> the interval $[-0{,}0260,\,-0{,}0176]$ that the two tabulated turning radii of the 1983 model imply. So the magnitude agrees with the 1983 radii to within their own spread, and the sign is the book's.</p>
+<p><strong>One caution, replacing an earlier version of this paragraph.</strong> It is tempting to test (5-30) and (5-31) against the numerical table on page 052 of the same book, and an earlier draft of this article did so and reported a contradiction. That comparison is <strong>not safe</strong>: the page-052 table sits under the heading "Les leptons chargés" and describes a <em>charged-lepton</em> micro-universe with its own $\alpha$, $\beta$ and $T_0$, whereas (5-30) and (5-31) are derived in §VI for the System-$C$ cosmological model. Formally identical equations with different parameter sets need not share turning radii, so the disagreement is a comparison across models, not an inconsistency within one. The earlier claim is withdrawn.</p>
+<p>What can be said safely is this. The 1983 lepton model has one free parameter, $\lambda = \Lambda R_0^{2}/3$; taking it to put the outer turning point on the tabulated $6{,}154\,R_0$ gives turning radii $1{,}003R_0$ and $6{,}154R_0$, that is $7{,}81\times10^{-15}$ and $4{,}79\times10^{-14}\,\mathrm{cm}$. The 1987 charged-lepton table lists $8{,}01\times10^{-15}$ and $4{,}85\times10^{-14}\,\mathrm{cm}$. <strong>The two books' lepton radii agree to 1–3% on both points.</strong> The residual question is only whether the §VI closed forms and that table describe the same solution: if they do, the closed forms would put the inner turning point at $5{,}75\times10^{-15}$ against the table's $8{,}01\times10^{-15}$, about 40% apart, and the §VI and §III parameter sets would then have to be reconciled. Settling it needs the page-052 discussion, and it is recorded as an open item — not as a contradiction.</p>
+<p>And the frame matters for the interpretation. A pulsation in the étendue–durée frame is a statement about the model's <em>geometry in the author's representation coordinates</em> — the frame whose metric (199) has a plus sign on the spatial part, and which Charon introduces precisely because it is better suited to displaying a micro-universe than the $(r, ct)$ frame is. The Lorentzian frame, by contrast, gives a bounce and an eternal expansion. So the honest reading is not "the lepton pulsates" but "the lepton's geometry, drawn in the frame the programme chooses, is a periodic curve with the tabulated turning points, and in the physical frame the same model bounces and expands without recollapse". Both statements are computable, both are given above, and the difference between them is a frame choice the programme should state explicitly rather than leave implicit.</p>
+<h3 id="34-why-there-is-no-math333-phase-and-what-the-correction-to-the-previous-article-is">3.4 Why there is no $\tau^{1/3}$ phase, and what the correction to the previous article is</h3>
+<p>The preceding article in this series, on the source tensor, gave a power law for this model and registered that it might be wrong. It was. The reasoning there was a term-balance on the <em>unintegrated</em> equation (174b): with $\rho = \alpha/R^{3}$, the energy term $\xi^{2}c^{2}\rho^{2}$ scales as $R^{-6}$, and if it dominates then $(R'/R)^{2}\propto R^{-6}$, so $R\propto\tau^{1/3}$. That is the correct answer to the question <em>what if the density-squared term dominated</em> — and it is not what happens, for a reason that only the integrated equation shows.</p>
+<p>The radiation term and the momentum-density term cancel at order $R^{-8}$ (§1.2). After the cancellation, the net coefficient of $R^{-6}$ in the integrated equation is no longer $+\xi^{2}c^{2}\alpha^{2}$. The energy term contributes $+\tfrac{1}{3}\xi^{2}c^{2}\alpha^{2}/R^{6}$ to $(R'/R)^{2}$, and the trace relation's momentum density contributes $-\tfrac{1}{2}\xi^{2}c^{2}\alpha^{2}/R^{6}$; the sum is $-\tfrac{1}{6}\xi^{2}c^{2}\alpha^{2}/R^{6}$ — half the size, and the opposite sign. So the $R^{-6}$ term is <strong>negative</strong>, and a negative $R^{-6}$ term does not drive a $\tau^{1/3}$ expansion; it drives a bounce. The corrected history near the minimum is not a power law of that kind at all: the universe starts <em>at rest</em> at $R = R_0$ and moves away from it under the balance of the positive curvature term against the two negative ones.</p>
+<p>The same correction applies to the intermediate regime. With $\lambda = 0$ and large $x$ the equation tends to $(dx/ds)^{2}\to K = 1$ in units $s = c\tau/R_0$, so $R\propto\tau$: a <strong>linear</strong> expansion, the Milne-like behaviour of a curvature-dominated empty universe in this frame, not a matter-like $\tau^{2/3}$ and not the $\tau^{1/3}$ of the unintegrated estimate. The sequence the model actually has is: a bounce; then a stiff-and-radiation-like braking phase; then curvature domination with $R\propto\tau$; then, if $\Lambda<0$, a recollapse.</p>
+<p>The lesson is worth recording as method rather than as errata. A power law read off an unintegrated equation is a statement about a term, not about a solution; when two terms can cancel, they usually do. The companion article's §3.3 is corrected here, and its open item 1 — "perform the average that would connect the microscopic and macroscopic sources" — is unaffected.</p>
+<h3 id="35-the-verdict-on-gate-g-b">3.5 The verdict on gate G-B</h3>
+<p>Gate G-B asked whether the geometric source tensor admits an expanding solution, or whether its failure is proved. The answer is the former, and it is a stronger answer than the gate required:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>question</th>
+<th>answer</th>
+<th>evidence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Is there a solution at all?</td>
+<td><strong>yes, provided $\Lambda\ne0$</strong></td>
+<td>Lorentzian frame: $\Lambda R_0^{2}/3 = 1{,}9825$ gives one turning point at exactly $x=1$; with $\Lambda=0$ the right side is negative everywhere</td>
+</tr>
+<tr>
+<td>Does it expand?</td>
+<td><strong>yes</strong></td>
+<td>$R'^{2}>0$ for $R>R_{\min}$, with $R_{\min}=R_0$ in the Lorentzian frame</td>
+</tr>
+<tr>
+<td>Is the curvature chosen?</td>
+<td><strong>no, derived</strong></td>
+<td>$K=+1$ from $R'^{2}\ge0$; reproduces the tabulated $\beta$ to 0.48%</td>
+</tr>
+<tr>
+<td>Does it pulsate?</td>
+<td><strong>yes, in the frame the programme chooses</strong></td>
+<td>étendue–durée frame with $\Lambda R_0^{2}/3=-0{,}026$: turning points $1{,}003R_0$ and $6{,}154R_0$, i.e. the tabulated radii to 0.31% and 0.00%</td>
+</tr>
+<tr>
+<td>Is there a dust era?</td>
+<td><strong>no</strong></td>
+<td>no $R^{-3}$ term exists for any constants</td>
+</tr>
+<tr>
+<td>Was the earlier $\tau^{1/3}$ power law right?</td>
+<td><strong>no</strong></td>
+<td>the $R^{-6}$ coefficient is negative; the model bounces instead</td>
+</tr>
+</tbody>
+</table></div>
+<p>So Charon's lepton cosmology <strong>survives the formal test</strong>, and it survives with an over-determination the programme never claimed: a discrete curvature, a bounce that the 1987 book states and that this article's algebra then derives, and a negative cosmological constant whose sign the 1987 book derives and whose magnitude its own leaning on the 1983 radii roughly fixes. The failures of the model are elsewhere — in the numerical identifications of the leptonic constants, which are the subject of other articles in this series — and not in the structure of the cosmology. That is exactly the partition the article list was built to make, and it is a more favourable verdict for this chapter than the source-tensor article's §3 could have predicted.</p>
+<h2 id="part-4-the-position-of-the-biquaternion-framework">Part 4 — The position of the biquaternion framework</h2>
+<h3 id="41-what-the-frameworks-gravity-programme-gains">4.1 What the framework's gravity programme gains</h3>
+<p>The framework's own gravity article records that it has the <em>kinematics</em> of general relativity — a metric, an invariant interval, a group — and none of its <em>dynamics</em>: no action fixing the field equation's source, and therefore no cosmology of its own. Charon's chapter supplies precisely that missing piece, and it now supplies a working one: an equation of the Friedmann type, with a source whose form is derived rather than postulated, a discrete curvature, and a bouncing history.</p>
+<p>What the framework can take from this is narrow and specific. The useful object is not the leptonic numerology but the <strong>structure</strong> of (195†): a Friedmann equation with a radiation-like term and a stiff term of <em>negative</em> density, whose coefficients are fixed by a single constant $\xi$ and a single length $R_0$. Any framework that replaces the Einstein tensor's source by a quantum-potential ratio will inherit that structure, and it should expect a bounce rather than a singularity and no dust epoch — both of which are testable, structural differences from general relativity.</p>
+<h3 id="42-what-must-not-be-taken">4.2 What must not be taken</h3>
+<p>The framework should <em>not</em> adopt Charon's $K$ derivation without qualification, because it depends on a negative-energy component: $K = +1$ follows from $R'^{2}\ge0$ only because $\beta^{2}$ enters with a sign that makes the right-hand side negative at small $R$. In a framework whose source is derived from an action, the sign of that term is not free, and the closedness of the universe would have to be re-derived rather than imported. Equally, the framework should not adopt $\Lambda$ as a free constant, because §3.2 shows the model's pulsation secretly requires one specific value; a framework that wants the pulsation must derive it.</p>
+<h3 id="43-the-frameworks-own-open-question-again-answered-from-outside">4.3 The framework's own open question, again answered from outside</h3>
+<p>The framework's WKB article lists as an open question whether the quantum potential $Q$ is "central and real". The previous article showed that Charon's source <em>is</em> a quantum potential; this article shows that this identification has a dynamical consequence — the source's density-squared character is exactly what forbids a dust epoch and forces the bounce. So the framework's open question has a worked answer in Charon's chapter: if $Q$ is the source, then the cosmology has no matter era and bounces. Whether that is a feature or a defect is the framework's decision, but it is now a decision with a computed consequence attached.</p>
+<h3 id="44-what-is-worth-taking">4.4 What is worth taking</h3>
+<ol>
+<li><strong>The correction itself.</strong> Equations (184) and (195) should be read with $(R'/c)^{2}$; the proof is in §1.2 and it uses only the chapter's own content.</li>
+<li><strong>The bare $K = +1$ result</strong>, with its 0.48% verification, as an example of a discrete output from continuous inputs — the kind of result the programme's gates G-C and G-E are designed to recognise.</li>
+<li><strong>The $\Lambda$ question, largely closed by the corpus.</strong> The 1987 book derives the sign, $\Lambda<0$ (5-27), and its closed form (5-31) evaluates with the book's own constants to $\Lambda R_0^{2}/3 = -0{,}0239$, inside the $[-0{,}026,\,-0{,}018]$ band the 1983 radii force. The one point left open is whether the §VI closed forms and the page-052 charged-lepton table describe the same solution; if they do, their inner turning points differ by about 40% and the two parameter sets must be reconciled. That is a bounded piece of work, and it decides whether the pulsation is over-determined or merely fitted.</li>
+<li><strong>The no-dust and bounce structure</strong> as the framework's expected cosmological signature, if it takes a quantum-potential source.</li>
+</ol>
+<h3 id="45-article-level-and-programme-level-suggestions-for-discussion-only">4.5 Article-level and programme-level suggestions, for discussion only</h3>
+<p>At article level: the honest report of the numerics, with the three residuals — 0.48% on the derivation of $K$, 1.8% on the same derivation at $\Lambda = 0$, and 0.31% on the inner turning point — stated side by side, and with the frame-dependence of the curvature term given its own subsection rather than a footnote.</p>
+<p>At programme level, one suggestion. The list's gate G-B should be tightened. As written it asks only whether an expanding solution exists, and a model with a bounce easily passes it. A sharper gate would ask whether the model's <em>own</em> turning points are reproduced, and §3.3 shows that this is exactly the test which forces $\Lambda R_0^{2}/3 = -0{,}026$. That is the gate that would have found the chapter's most valuable latent result.</p>
+<h2 id="summary">Summary</h2>
+<p>Charon's cosmological system, (174), integrates to an equation that the transcriptions carried with a doubled prime in several places — the printed books are correct, and the corpus files have since been corrected — and which, read aright, is a Friedmann equation with four terms and no dust term:</p>
+<p>$$\left(\frac{R'}{R}\right)^{2} = \frac{\Lambda c^{2}}{3} + \frac{Kc^{2}}{R^{2}} - \frac{|C|}{R^{4}} - \frac{B}{R^{6}}, \qquad B>0 ,$$</p>
+<p>the curvature sign being the one of the étendue–durée frame the programme works in (§2.1; the Lorentzian frame flips it). Both new terms are negative: the model's content is a stiff fluid and a radiation-like fluid, each of negative density, and there is no dust term for any values of the constants. The curvature sign $K = +1$ is derived from the requirement $R'^{2}\ge0$ and reproduces the corpus's own $\beta$ to 0.48%. The negative $R^{-6}$ term makes $R'^{2}$ negative below $R_0$, so <strong>the model bounces at $R_0$ rather than beginning in a singularity</strong> — and this is derived, not assumed. The programme's claimed pulsation is reproduced, with both turning points landing on the tabulated radii to within a third of a percent, but only if $\Lambda R_0^{2}/3 = -0{,}026$; in the Lorentzian frame a positive $\Lambda R_0^{2}/3 = 1{,}9825$ instead gives a bounce exactly at $R_0$ and an eternal expansion. Either way the cosmological constant must take one specific negative value, and the 1987 book derives both the sign (§5-27) and a closed form (§5-31) whose magnitude agrees with the 1983 turning radii to within their own spread (§3.3). Gate G-B is answered affirmatively: the source tensor admits an expanding, closed, bouncing solution, and its pulsation is reproducible. Charon's lepton cosmology is not dead in the rebuilt theory; it is better than the theory knows.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$R(\tau)$, $R_0$</td>
+<td>radius of the lepton model, and its initial (minimum) value</td>
+</tr>
+<tr>
+<td>$K$</td>
+<td>curvature index, $+1$ for the closed model</td>
+</tr>
+<tr>
+<td>$\Lambda$</td>
+<td>cosmological constant of the complex space, units $\mathrm{cm^{-2}}$</td>
+</tr>
+<tr>
+<td>$A$</td>
+<td>integration constant of (184), a squared length</td>
+</tr>
+<tr>
+<td>$\rho$, $\alpha$</td>
+<td>proper density and its mass ($\rho = \alpha/R^{3}$)</td>
+</tr>
+<tr>
+<td>$D_E$, $\beta$</td>
+<td>blackbody energy density and its constant ($D_E/c^{2} = \beta/R^{4}$)</td>
+</tr>
+<tr>
+<td>$P_\rho$</td>
+<td>momentum density of the model</td>
+</tr>
+<tr>
+<td>$\xi$, $\Omega_0$, $l_0$</td>
+<td>the leptonic constant ($\xi = \Omega_0c/\hbar$), quantum volume, elementary length</td>
+</tr>
+<tr>
+<td>$C$, $B$</td>
+<td>the effective $R^{-4}$ and $R^{-6}$ coefficients of (195†), both negative</td>
+</tr>
+<tr>
+<td>$\Sigma$, $\Sigma_4$, $\Sigma_6$</td>
+<td>the model's dimensionless structural numbers: $0{,}9825$, $0{,}5724$, $0{,}4101$</td>
+</tr>
+<tr>
+<td>$x$, $\lambda$</td>
+<td>$R/R_0$, and $\Lambda R_0^{2}/3$</td>
+</tr>
+<tr>
+<td>RC (5-17)–(5-27)</td>
+<td>the 1987 book's restatement of the same system (its $R_0$ is the $R'=c$ radius, not the bounce)</td>
+</tr>
+<tr>
+<td>$R_i$</td>
+<td>the 1987 initial (minimum) radius, $8{,}01\times10^{-15}\,\mathrm{cm}$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>C. W. Misner, K. S. Thorne and J. A. Wheeler, <em>Gravitation</em> (Freeman, 1973), §27, for the Friedmann pair with curvature and $\Lambda$ in the sign conventions used here, and for the standard behaviour of each power-law term.</li>
+<li>J. D. Barrow, "Universes with negative energy densities," <em>Physical Review D</em> <strong>48</strong> (1993) 1585, for negative-energy components and the bounces they produce in a Friedmann model.</li>
+<li>Y. B. Zel'dovich, "The equation of state at ultrahigh densities and its relativistic limitations," <em>Soviet Physics JETP</em> <strong>14</strong> (1962) 1143, for stiff matter, $p = \rho c^{2}$, the equation of state the $R^{-6}$ term corresponds to.</li>
+<li>E. A. Milne, <em>Relativity, Gravitation and World-Structure</em> (Oxford, 1935), for the linear expansion of a curvature-dominated empty model that §3.4 recovers as the large-$R$ asymptote.</li>
+<li>S. Weinberg, <em>Cosmology</em> (Oxford, 2008), §1.5, for the Friedmann equation's term-by-term reading as a sum of fluids.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

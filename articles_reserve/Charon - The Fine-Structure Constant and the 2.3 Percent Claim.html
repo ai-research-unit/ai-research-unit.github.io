@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Charon: The Fine-Structure Constant and the 2.3 Percent Claim — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="charon-the-fine-structure-constant-and-the-23-percent-claim"><strong>Charon: The Fine-Structure Constant and the 2.3 Percent Claim</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>Jean E. Charon's complex-relativity programme makes exactly one claim of the numerical kind this corpus is short of: that the elementary charge follows from his lepton model to within $2.3\%$ (Esp §18.2, eqs (251)–(268)). The quantity computed is $e^2/\hbar c$, which is the fine-structure constant $\alpha$ in Gaussian units, and the comparison value is $1/137$.</p>
+<p>The claim is worth an article for a reason internal to this corpus rather than to Charon's. <em>The Empirical Status of the Biquaternion Framework</em> states the standing position that the framework makes no distinguishing prediction, gives the structural reason — a signature requires an input that is not algebra — and names the one class of candidate that would need no new scale and would be testable at once: "a systematic search for dimensionless consistency relations: any relation among standard parameters that the algebra implies and the standard formalism does not." The framework has none. Charon proposed one, in 1983, in a neighbouring complex-spacetime programme, and it lands about four percent high. That is close enough to be instructive and far enough to be decisive, and it is the reason this article exists: it is the nearest thing the corpus has to a worked example of the project its own <em>Empirical Status</em> article calls for.</p>
+<p>The three sections below take the claim in turn — what Charon derives and from what inputs, what established physics says in 2026 about the quantity in question, and where the claim stands relative to the biquaternion framework. The last of the three has the substance: the two programmes share their kinematic skeleton and are inverted on exactly the point that carries the derivation, and a cross-check against a lepton-mass formula the corpus already holds shows that Charon's number and Barut's cannot both be right.</p>
+<p><strong>A note on sources.</strong> Charon's two books exist in this repository as page-by-page improved transcriptions, assembled into <code>_RC_im_merged.md</code> and <code>_Esp_im_merged.md</code>. Every equation, figure and page reference below is checked against that transcription, not against the printed scans. Where the transcription is doubtful this is said so. Nothing in this article depends on a passage whose transcription I could not follow: the derivation of §1 is complete and its arithmetic is reproducible, and all of it is recomputed here.</p>
+<p><strong>Conventions.</strong> The biquaternion conventions are those of the companion articles and are not repeated. Only two things about them are needed here. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the material sector is $\mathbb{M}_-$, the informational sector is $\mathbb{M}_+$, and $\mathbb{B}=\mathbb{M}_-\oplus\mathbb{M}_+$. Standard physics is written in its own notation: $\alpha=e^2/(\hbar c)$ in Gaussian units, $\hbar=h/(2\pi)$, and $m_e$, $m_\mu$, $m_\tau$ for the charged-lepton masses. Charon's own symbols — $\beta$, $\gamma$, $\theta$, $R(t)$, $T$ — are his and are defined where they first appear; they are not framework structure and are not reused later.</p>
+<h2 id="part-1-the-claim-of-charon">Part 1 — The Claim of Charon</h2>
+<h3 id="11-what-is-computed-and-where">1.1 What is computed, and where</h3>
+<p>The computation occupies Esp §18.1–18.2, transcribed from scans 061 and 062. Its object is the electrostatic interaction between two charged leptons, treated as two "lepton universes" — pulsating spherical structures of radius $R(t)$ containing a blackbody radiation field at a local temperature $\theta(t)$. Photons inside one structure exchange linear momentum with photons inside the other; the momentum transfer rate is identified with the Coulomb force, and the identification fixes $e$.</p>
+<p>The result is eq. (266):</p>
+<p>$$
+\frac{e^2}{\hbar c} \;=\; \frac{8\pi^3}{3}\left(\frac{15\gamma}{8\pi^5}\right)^{5/4}\times 23.6 \;=\; 7.65\times 10^{-3},
+$$</p>
+<p>compared in eq. (267) with</p>
+<p>$$
+\left(\frac{e^2}{\hbar c}\right)_{\text{exp}} = \frac{1}{137} = 7.30\times 10^{-3},
+$$</p>
+<p>and the two are stated in eq. (268) as $e_{\text{calc}} = 4.91\times10^{-10}$ cgs against $e_{\text{obs}} = 4.80\times10^{-10}$ cgs. The text draws the conclusion: "le Système $L$, joint au modèle électromagnétique que nous venons d'analyser, calcule la valeur de la charge électrique élémentaire $e$ à moins de $2.3\,\%$ près."</p>
+<h3 id="12-the-full-chain-of-inputs">1.2 The full chain of inputs</h3>
+<p>The claim's content is not the formula, it is the chain that supplies the numbers in it. That chain is short enough to write out completely, and writing it out is the only way to see what is being asserted.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Value used</th>
+<th>Where it comes from</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$h$, $c$</td>
+<td>measured</td>
+<td>imported, as everywhere in the model</td>
+</tr>
+<tr>
+<td>Stefan–Boltzmann inversion (259)</td>
+<td>exact</td>
+<td>standard statistical mechanics; Charon uses it correctly</td>
+</tr>
+<tr>
+<td>$\beta$</td>
+<td>$-1.7\times10^{-39}$ cgs</td>
+<td>the numerical solution of the lepton system ("Système $L$")</td>
+</tr>
+<tr>
+<td>$\gamma = -c\beta/h$</td>
+<td>$7.716\times10^{-3}$ cgs</td>
+<td>a definition, eq. (263)</td>
+</tr>
+<tr>
+<td>$x_1 = (-\pi h/30c\beta)^{1/4}$</td>
+<td>$1.92$</td>
+<td>eq. (261); the lower limit of the spectral integral</td>
+</tr>
+<tr>
+<td>$\int_{x_1}^{\infty}x^4(e^x-1)^{-1}\,dx$</td>
+<td>$23.6$</td>
+<td>eq. (265), claimed numerical evaluation</td>
+</tr>
+<tr>
+<td>$m_e$, $m_\mu$, $m_\tau$</td>
+<td>measured</td>
+<td>the three charged-lepton masses, the lepton model's data</td>
+</tr>
+</tbody>
+</table></div>
+<p>Two of these entries deserve comment before the arithmetic.</p>
+<p><strong>The blackbody step is textbook and correct.</strong> Equation (259) inverts the Stefan–Boltzmann relation to give the Boltzmann constant in terms of the radiation constant, $K=(15ac^3h^3/8\pi^5)^{1/4}$. That is exactly the standard identity $a = 8\pi^5K^4/(15h^3c^3)$, merely rearranged, and it is the one place in the chain where the source does not have to be taken on trust.</p>
+<p><strong>$\beta$ is not an independent constant.</strong> It is produced by the "Système $L$" — a closed set of $3n+14 = 20$ equations for $n=1,2$, built on the pulsating-sphere model of the electron, muon and tau. Two of those equations carry the lepton masses explicitly on their right-hand sides: $L7$ ends in $mc^2T$ and $L8$ in $\tau_nc^2T$. The lepton masses are therefore inputs to the system that produces $\beta$, and $\beta$ is in turn the only input to the charge formula apart from $h$ and $c$. The chain is: measured lepton masses and $h$, $c$ $\rightarrow$ $\beta$ $\rightarrow$ $\gamma$ $\rightarrow$ $x_1$ $\rightarrow$ the integral $\rightarrow$ $\alpha$.</p>
+<h3 id="13-why-this-is-a-fit-and-not-a-derivation">1.3 Why this is a fit and not a derivation</h3>
+<p>Charon states plainly that the system is parameter-free: "le Système $L$ est qu'il ne dépend en fait d'aucun paramètre, puisque tous ceux qui figurent dans les équations sont finalement calculés par la solution du système d'équations," and that its solution should yield $c$, $h$, $m$, $\mu$ and $\tau_2$ directly. The numerical method he then describes is not the method of a parameter-free system, and the difference matters for how the $2.3\%$ should be read.</p>
+<p>As he sets it out in the "solution numérique" section, the six free parameters are seeded at their measured values ("choisissons un ensemble $P_0$ numériquement identique aux valeurs numériques expérimentales que l'on obtient pour ces six paramètres"), then varied over a range running from half to double the natural value in five steps per parameter, giving $11^6 = 1\,771\,561$ parameter sets. A system $L'$ obtained by deleting six of the equations is solved for each set, and a relative residual $\chi^2$ is computed from those six equations; the solution of $L$ is taken to be the minimum of $\chi^2$. The calculation is then iterated with narrower ranges to convergence, and the well depth is reported as $\min\chi_i/\chi_L = 50$.</p>
+<p>Three consequences follow, and none of them is a criticism of the mathematics.</p>
+<ol>
+<li><strong>The seed is the measured answer.</strong> $P_0$ is the set of experimental values. The search asks whether a nearby set reduces a residual; it does not ask whether the system selects those values.</li>
+<li><strong>The lepton masses are given, not derived.</strong> Since $L7$ and $L8$ contain $m$ and $\tau_n$, the numerical solution is conditioned on the lepton spectrum. The statement that the system computes $m$ and $\tau_2$ is not consistent with the method, which starts from them.</li>
+<li><strong>A well depth of $50$ in a six-dimensional search is shallow.</strong> The reported solution is a factor $50$ better than the nearest competitor in the scanned grid, over a grid whose parameter ranges and discretisation the author chooses.</li>
+</ol>
+<p>This is a consistency fit with a good residual, and a good residual from a fit seeded at the measured values is not evidence for the mechanism that produced the fit. The distinction is not one this corpus is entitled to make casually, since its own <em>Empirical Status</em> article applies exactly this test to the framework's own reproductions: the question to ask of a number is which structure produced it, and here the structures that produced $\alpha$ are the measured lepton masses and the measured $h$ and $c$.</p>
+<h3 id="14-the-arithmetic-recomputed">1.4 The arithmetic, recomputed</h3>
+<p>The claim is checkable, and I have checked it. The integral of eq. (265) is the first thing to look at.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Quantity</th>
+<th>Charon</th>
+<th>Recomputed</th>
+<th>Deviation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\int_{1.92}^{\infty}x^4(e^x-1)^{-1}\,dx$</td>
+<td>$23.6$</td>
+<td>$23.4323$</td>
+<td>$+0.7\%$</td>
+</tr>
+<tr>
+<td>$x_1=(-\pi h/30c\lvert\beta\rvert)^{1/4}$, $\beta=-1.7\times10^{-39}$</td>
+<td>$1.92$</td>
+<td>$1.9209$</td>
+<td>—</td>
+</tr>
+<tr>
+<td>$\gamma=c\lvert\beta\rvert/h$, $\beta=-1.7\times10^{-39}$</td>
+<td>$7.716\times10^{-3}$</td>
+<td>$7.6915\times10^{-3}$</td>
+<td>$+0.3\%$</td>
+</tr>
+<tr>
+<td>eq. (266) with his $\gamma$ and his $23.6$</td>
+<td>$7.65\times10^{-3}$</td>
+<td>$7.6495\times10^{-3}$</td>
+<td>reproduces</td>
+</tr>
+<tr>
+<td>eq. (266) with his $\gamma$ and the exact integral</td>
+<td>—</td>
+<td>$7.5952\times10^{-3}$</td>
+<td>$4.05\%$ above $1/137$</td>
+</tr>
+<tr>
+<td>eq. (266) with $\gamma$ from his own $\beta$</td>
+<td>—</td>
+<td>$7.5651\times10^{-3}$</td>
+<td>$3.64\%$ above $1/137$</td>
+</tr>
+</tbody>
+</table></div>
+<p>So the printed equation is internally consistent — the value quoted follows from the printed $\gamma$ and the printed integral — and the printed integral is $0.7\%$ high, which is worth about $0.7\%$ of the answer and happens to move it toward the measured value. The lower limit $1.92$ is not a free choice either: it follows from $\beta$, and recomputing it gives $1.9209$.</p>
+<p>The larger point is the one the headline figure conceals. Two different percentages are in play in the same paragraph.</p>
+<ul>
+<li>In $e$: $(4.91-4.80)/4.80 = +2.29\%$. This is the $2.3\%$ of the text.</li>
+<li>In $\alpha = e^2/(\hbar c)$: the same pair gives $+4.64\%$, and the printed values $7.65\times10^{-3}$ against $1/137 = 7.2993\times10^{-3}$ give $+4.81\%$.</li>
+</ul>
+<p>Since the equation computes $e^2/\hbar c$, the second figure is the one the equation supports. The $2.3\%$ is a statement about $e$ alone, and because $\alpha$ goes as $e^2$ it understates the discrepancy in the computed quantity by nearly a factor of two. Against the modern value the printed result is $4.83\%$ high.</p>
+<h3 id="15-how-many-numbers-does-the-chain-actually-fix">1.5 How many numbers does the chain actually fix?</h3>
+<p>One more question belongs to the claim itself, before any comparison with established physics: how much does the chain over-determine? If the lepton masses go in and $\alpha$ comes out, then the model is a map from three measured numbers to a fourth. That map can be tested against the four numbers, and a one-knob map that reproduces its output to $4\%$ is not yet a relation. The test is in §3 below, where it is run against a lepton-mass formula this corpus already holds.</p>
+<h2 id="part-2-the-position-of-established-physics-2026">Part 2 — The Position of Established Physics, 2026</h2>
+<h3 id="21-math141-is-a-parameter-not-a-derived-number">2.1 $\alpha$ is a parameter, not a derived number</h3>
+<p>The Standard Model does not predict the fine-structure constant. It is the $\mathrm{U}(1)$ gauge coupling, one of the theory's free parameters, fixed by a renormalisation condition. Quantum electrodynamics computes in terms of $\alpha$ with extraordinary accuracy; it does not compute $\alpha$. The distinction is not philosophical. If a coupling were fixed by the algebra of the theory, it would be a prediction; because it is fixed by experiment, it is a measurement, and quantum field theory's own structure — the running — says something further about what kind of object it is.</p>
+<h3 id="22-the-number-and-its-precision">2.2 The number, and its precision</h3>
+<p>The current reference value is CODATA 2022:</p>
+<p>$$
+\alpha^{-1} = 137.035\,999\,177(21), \qquad \alpha = 7.297\,352\,5693(11)\times10^{-3},
+$$</p>
+<p>a relative standard uncertainty of $1.6\times10^{-10}$. Charon's comparison value, $1/137 = 7.299\,270\times10^{-3}$, is $0.026\%$ above it — a fair statement of the constant as it was known in 1983.</p>
+<p>Three things about that number matter for the assessment.</p>
+<p><strong>It is known to ten digits.</strong> The uncertainty is not the limitation on testing an algebraic relation; it is the reason that any relation among standard parameters must be exact. A candidate relation that is four percent wrong is not a relation with a precision problem, it is a different relation.</p>
+<p><strong>It is not a constant.</strong> The coupling runs. At the $Z$ pole, $\alpha^{-1}(m_Z)\approx 128$. The value $1/137$ is the low-energy, Thomson-limit value. A derivation of $1/137$ would have to be a derivation of the low-energy endpoint of a running coupling, which is a different and much harder object than a derivation of a pure number — and any mechanism that produces $1/137$ algebraically must also explain why the same algebra produces $1/128$ at $91\ \mathrm{GeV}$.</p>
+<p><strong>It is measured independently of the processes that use it.</strong> The most precise single determination comes from the electron's magnetic moment in a Penning trap, $\alpha^{-1}=137.035\,999\,206(11)$, which agrees with the CODATA adjustment. The electron's anomalous moment is measured as $a_e = 1.159\,652\,18059(13)\times10^{-3}$ and agrees with the QED series in $\alpha$ to about ten significant figures. That is the sense in which the standard theory's use of $\alpha$ is tested: the theory is a series in a measured number, and the series is verified to a precision that a four-percent error in the number would destroy entirely.</p>
+<h3 id="23-what-the-measured-precision-does-to-the-claim">2.3 What the measured precision does to the claim</h3>
+<p>The comparison can be made quantitative, and it should be, because the phrase "to within $2.3\%$" invites a reading of the claim as a near miss.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Reading of the claim</th>
+<th>Residual</th>
+<th>Times the uncertainty on $\alpha$ (today)</th>
+<th>In 1983</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>printed, in $e$</td>
+<td>$+2.3\%$</td>
+<td>$\approx1.5\times10^{8}$</td>
+<td>$\approx2\times10^{5}$</td>
+</tr>
+<tr>
+<td>printed, in $\alpha$</td>
+<td>$+4.8\%$</td>
+<td>$\approx3.2\times10^{8}$</td>
+<td>$\approx5\times10^{5}$</td>
+</tr>
+<tr>
+<td>recomputed with the exact integral</td>
+<td>$+4.1\%$</td>
+<td>$\approx2.7\times10^{8}$</td>
+<td>$\approx4\times10^{5}$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The last column is the relevant one for a historical judgement, and it is the column usually left out. In 1983 $\alpha$ was already known to a few parts in $10^7$, so a residual of four percent was between four and five orders of magnitude larger than the measurement uncertainty of the quantity being predicted. <strong>The claim was already excluded in 1983</strong>, by its own arithmetic and by the constants of its own time; it was not a near miss that later precision turned into a miss. This matters for the corpus because it removes the excuse the model's structure would otherwise invite — that the lepton masses, or the lepton model's fitted parameters, were not yet known well enough to do better. They were.</p>
+<p>The one genuine hedge available to the model is that $\beta$ is a fitted parameter, so the relation has a knob. Setting the residual to zero requires $\beta$ to move by $-2.8\%$, from $-1.70\times10^{-39}$ to $-1.65\times10^{-39}$ cgs, which is well inside the range the search covered. A one-knob, one-number fit is therefore not excluded by the residual alone — but a knob that is tuned to produce the answer is the definition of a fit, and a one-knob, one-number relation is unfalsifiable in exactly the way the corpus's <em>Empirical Status</em> article warns about. What would make it a relation is a second number fixed by the same knob. Charon's model does have one, and §3 runs it.</p>
+<h3 id="24-the-context-the-claim-was-competing-in">2.4 The context the claim was competing in</h3>
+<p>It is worth recording what the standard position already was in 1983, since the claim is often read as a period piece that modern precision overtook. The Standard Model was established; QED's precision tests were at the level of a few parts in $10^9$ in the electron moment; $\alpha$'s value was known to a few parts in $10^7$; and the position that the couplings are parameters was standard. Historical proposals to derive $\alpha$ — Eddington's $1/137$, Wyler's arithmetic combinations, Feynman's speculative remark that a derivation would be desirable — were already regarded as numerology, and the reason is the one stated above: they produce a pure number for an object that is not pure, namely the low-energy value of a running coupling, and they do not produce the running. Charon's derivation is of the same species as those. It differs from them in being attached to a full dynamical model, which is why it deserves a section rather than a line; it does not differ from them in kind.</p>
+<h2 id="part-3-the-position-of-the-biquaternion-framework">Part 3 — The Position of the Biquaternion Framework</h2>
+<h3 id="31-the-two-programmes-share-their-skeleton">3.1 The two programmes share their skeleton</h3>
+<p>The structural correspondence is real and worth stating before the disagreements. Charon's universe is a real spacetime and an imaginary one, with the imaginary sector primary; the corpus's is the material sector $\mathbb{M}_-$ and the informational sector $\mathbb{M}_+$, both of real dimension four, mirror images, exchanged by multiplication by $i$. Charon's two sectors carry the same two signatures, mirrored, and so do the corpus's: $(-,+,+,+)$ on $\mathbb{M}_-$ and $(+,-,-,-)$ on $\mathbb{M}_+$. Charon puts the time coordinate in the imaginary slot and the space coordinates in the real one, as the corpus does in $\mathbb{M}_-$ with its $ict$; he puts the energy in the imaginary sector, as the corpus puts the energy–momentum four-vector in $\mathbb{M}_-$, which is the imaginary-scalar sector. The kinematic skeleton — two real four-dimensional sectors of opposite signature, one carrying the physical four-vectors and one carrying the rest of the structure — is the same construction. A reader of Charon's <em>Relativité complexe</em> arriving at this corpus will recognise the shape immediately, and the recognition is justified.</p>
+<p>The correspondence is also where it stops, and the corpus's own foundational articles are the reason. The Introduction states, of the name "informational sector", that it "is not a claim about entropy or any other thermodynamic property of the sector." Charon's imaginary sector is exactly that claim: it is negentropic, it is what carries the deformation and the pulsation, and it is what makes the lepton a localised departure from equilibrium. Three inversions follow from the one, and they are the substance of this section.</p>
+<h3 id="32-three-inversions-and-why-they-are-load-bearing">3.2 Three inversions, and why they are load-bearing</h3>
+<p><strong>(i) Where the energy sits.</strong> Charon's imaginary sector is the seat of energy and of matter; the real sector carries only form. The corpus inverts this deliberately: $\mathbb{M}_-$ is the material sector, it carries the four-vectors, and the energy–momentum four-vector is an element of it. So the sector that Charon loads with energy is the one the corpus loads with four-vectors, and the sector the corpus calls informational is the one Charon calls formal. The words line up; the physics does not.</p>
+<p><strong>(ii) The entropic reading of the imaginary sector.</strong> This is the deepest divergence, because it is what the α calculation needs. The mechanism of Esp §18.1 is a blackbody spectrum at the structure's own temperature, exchanging momentum between two structures; that is, the coupling is set by a <em>thermal</em> property of the imaginary sector. The corpus forbids itself this: the informational sector is an operator algebra with no thermodynamic content, and the corpus's thermal articles — the KMS condition, the Unruh effect — place temperature in the modular structure of the state, not in the sector. Charon's derivation is therefore not portable into the framework as written. It is portable in the opposite direction: it is a worked demonstration of what a sector with thermal content would buy, and the corpus's explicit disclaimer of that content is what stands between the framework and this class of derivation.</p>
+<p><strong>(iii) The algebra's role.</strong> The corpus's version of the barrier is that the algebra is dimensionless and that a signature requires an input that is not algebra — a scale, a coupling, or a selection principle. Charon supplies exactly such an input: a pulsation profile $R(t)$, a temperature field $\theta(t)$, a virtual-photon momentum-transfer model, and a blackbody spectrum. Nothing in that list follows from complexifying spacetime; all of it is dynamics inserted on top. The result is that Charon has what this corpus says it lacks — a non-algebraic input that produces a number — and the number is four percent wrong. That is a useful negative result, and it is the sort of evidence the corpus's own agenda cannot generate from inside.</p>
+<h3 id="33-the-cross-check-charons-math198-and-baruts-formula-cannot-both-hold">3.3 The cross-check: Charon's $\alpha$ and Barut's formula cannot both hold</h3>
+<p>This corpus already holds a lepton-mass formula that uses $\alpha$ as an input: Barut's, recorded in <em>The Petiau System and the Quantisation of Mass in Biquaternionic Form</em>,</p>
+<p>$$
+M(N)=m_e\left(1+\tfrac{3}{2}\alpha^{-1}\sum_{n=0}^{N}n^4\right),
+$$</p>
+<p>whose $N=1$ entry reproduces the muon to better than a tenth of a percent: the corpus's own table gives $105.55\ \mathrm{MeV}/c^2$ against the measured $105.66$. Charon's relation runs the same link in the opposite direction: masses in, $\alpha$ out. The two can be put side by side, and the result is a test neither author ran.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$\alpha$ used in Barut's formula</th>
+<th>Source of the value</th>
+<th>$m_\mu/m_e$ from Barut</th>
+<th>Deviation from the measured $206.768$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$1/137$</td>
+<td>Charon's reference</td>
+<td>$206.50$</td>
+<td>$-0.13\%$</td>
+</tr>
+<tr>
+<td>$7.297\times10^{-3}$</td>
+<td>CODATA 2022</td>
+<td>$206.55$</td>
+<td>$-0.10\%$</td>
+</tr>
+<tr>
+<td>$7.65\times10^{-3}$</td>
+<td>Charon's printed result</td>
+<td>$197.08$</td>
+<td>$-4.69\%$</td>
+</tr>
+<tr>
+<td>$7.595\times10^{-3}$</td>
+<td>Charon's formula, exact integral</td>
+<td>$198.49$</td>
+<td>$-4.00\%$</td>
+</tr>
+</tbody>
+</table></div>
+<p>Read down the last column: the value of $\alpha$ that makes Barut's formula reproduce the muon mass is $\alpha$'s measured value. If instead Charon's computed $\alpha$ were the true coupling, Barut's formula — which the corpus records as a fit good to a tenth of a percent — would miss the muon by four percent. The two proposals are not independent near-misses that could both point at a deeper relation; they are mutually exclusive, and the measurement decides between them.</p>
+<p>This is the check that §1.5 asked for, and it is why the $2.3\%$ figure matters more than it looks. A residual of four percent in $\alpha$ is a residual of two percent in $e$, and two percent in $e$ is four percent in every charged-particle mass formula that takes $\alpha$ as an input. The corpus cannot record Charon's relation as a near miss without also recording that it would destroy Barut's; and between the two, the corpus should note that Barut's is the one that fits, and that Barut's is still not a derivation.</p>
+<h3 id="34-what-is-worth-taking-from-charon">3.4 What is worth taking from Charon</h3>
+<p>Four things, in descending order of usefulness. None is a proposal to change an article; the article-level suggestions are collected in §3.5 and need the author's approval.</p>
+<p><strong>(a) The inversion is the interesting idea, not the number.</strong> All the mass-generation proposals this corpus holds — Barut's, Varlamov's degree formula, the Petiau eigenvalue construction, the Rodrigues–Vaz monopole formula — take the coupling or the scale as given and ask what masses follow. Charon asks the reverse: can the coupling be an output of the lepton sector? The corpus's <em>Empirical Status</em> article says the framework needs a dimensionless relation and has none; the question Charon asks is the right shape of question, independent of whether his answer is right. That question is, as far as I can see, not asked anywhere in the corpus.</p>
+<p><strong>(b) One knob, two numbers is the falsifiable form.</strong> The methodological content of Charon's construction, shorn of its physics, is that a single non-perturbative parameter $\beta$ is required to produce both the lepton mass spacing and the coupling. A one-knob, two-number relation is falsifiable; a one-knob, one-number relation is a fit. If the corpus ever formulates a candidate dimensionless relation, this is the shape it should aim for, and it is a shape the corpus does not currently discuss. Recorded as a criterion, not as a result.</p>
+<p><strong>(c) A thermal coupling between the sectors is the framework's own named gap.</strong> <em>The Empirical Status</em> article identifies the material–informational coupling as the framework's largest gap: "no field, no action, no constant." Charon supplies a specific candidate for what such a coupling looks like — a spectrum, not a label, with a temperature and a momentum transfer. It is not admissible in the framework, because the framework disclaims thermodynamic content in $\mathbb{M}_+$. But a <em>disclaimed</em> coupling is more informative than an absent one, and if the corpus ever revisits that disclaimer, Charon's construction is the concrete case to argue against rather than a blank.</p>
+<p><strong>(d) A warning about the algebra ceiling.</strong> Charon's lepton is a pulsating structure with quantised spin and pulse, each at $\pm nh/2$, with arbitrary integer $n$. The corpus's <em>Higher Spin from Tensor Products</em> article establishes that the biquaternion algebra admits only spin $0$ and spin $\tfrac12$; the pulsation ladder is outside that ceiling. So Charon's mechanism cannot be transported into the framework even with the entropy disclaimer lifted: the objects it needs do not exist in $\mathbb{B}$. This is worth stating because it is the kind of thing that is discovered late, after an attempt to port a construction, and the ceiling is already recorded.</p>
+<h3 id="35-article-level-suggestions-for-discussion-only">3.5 Article-level suggestions, for discussion only</h3>
+<p>Nothing below has been implemented, and no article has been modified. Each is a change that would need approval, and each is recorded here rather than in the inventory because it is an editorial decision, not a fact about Charon.</p>
+<ol>
+<li><strong>One paragraph in <em>The Empirical Status of the Biquaternion Framework</em>.</strong> The article names the search for a dimensionless relation as its lower-risk project and states that the framework has none. A historical instance — an external complex-spacetime programme that did propose one, and missed by a factor that the measurement of the time already excluded — would give the project a shape and a difficulty level. The natural place is beside the existing discussion of external programmes that supply a scale, with the same treatment: attributed, not endorsed.</li>
+<li><strong>A cross-reference in <em>The Petiau System and the Quantisation of Mass in Biquaternionic Form</em>.</strong> That article holds Barut's formula and records that it is an external empirical fit that does not extrapolate. The exclusivity computation of §3.3 — Barut's $\alpha$-in/masses-out against Charon's masses-in/$\alpha$-out — belongs with it, as an instance of what the formula is sensitive to.</li>
+<li><strong>Consistency across the lepton-spectrum articles.</strong> The corpus holds three mass proposals and now four. A single note recording that they are mutually constraining rather than independent would be worth more than any one addition, but it is a corpus-wide edit and is not proposed here.</li>
+<li><strong>A correction to my own inventory file.</strong> <code>CHARON_IDEAS_AND_CLAIMS.md</code> records, at entry 7.1, that Charon attributes part of the residual to "second-order terms evaluated at $+0.2\%$". I could not find that passage in the improved transcription when writing this article. The entry should be checked against the scans and corrected or removed. This is the one item in this section that is a defect rather than a suggestion.</li>
+</ol>
+<h2 id="summary">Summary</h2>
+<p>Charon's 1983 claim that the lepton model computes the elementary charge to within $2.3\%$ is the nearest thing this corpus has to the dimensionless relation its own <em>Empirical Status</em> article says the framework lacks, and it does not survive contact with its own arithmetic. The computed object is $e^2/\hbar c$, so the headline percentage, which is a deviation in $e$, understates the deviation in $\alpha$ by nearly a factor of two. Recomputed from the printed equations, the result is $4.05\%$ above $1/137$ with the source's own $\gamma$ and the exact integral, $4.81\%$ if the printed integral $23.6$ is retained, and $4.83\%$ above the modern value; the printed integral is $0.7\%$ high, and the lower limit $1.92$ is confirmed to be $1.9209$, so the derivation is reproducible and its arithmetic is internally consistent apart from that one evaluation.</p>
+<p>The verdict on the claim depends on what kind of object it is, and it is a fit, not a derivation. The parameter $\beta$ that carries the whole result is produced by a twenty-equation lepton system whose numerical solution is seeded at the measured values of the six parameters, including the lepton masses, which appear explicitly in two of the equations. The model's assertion that the system depends on no parameter is not consistent with the method its author describes.</p>
+<p>Established physics in 2026 fixes $\alpha$ to a relative uncertainty of $1.6\times10^{-10}$, measures it independently from the electron moment in a Penning trap, uses it as a free parameter, and knows that it runs — $1/137$ at low energy, about $1/128$ at the $Z$ pole. Against that, the residual of four percent is $3\times10^8$ times the uncertainty of the quantity predicted. It was already excluded in 1983, when $\alpha$ was known to a few parts in $10^7$: the model's own internal test failed at the time it was proposed, before any modern measurement. That is the most important single fact in this article.</p>
+<p>Against the biquaternion framework the claim is neither foreign nor admissible. The kinematic skeleton is shared: two real four-dimensional sectors of mirrored signature, exchanged by $i$, with the four-vectors in the imaginary-scalar sector and the time coordinate in the imaginary slot. The two programmes are inverted on three load-bearing points — where the energy sits, whether the imaginary sector has thermodynamic content, and whether the algebra or an inserted dynamics supplies the number — and the second inversion is exactly what the $\alpha$ derivation needs, since the corpus states of $\mathbb{M}_+$ that it is "not a claim about entropy or any other thermodynamic property of the sector". In the opposite direction, Charon is a worked demonstration of the one thing the corpus's <em>Empirical Status</em> article says would break its empirical equivalence: an inserted non-algebraic dynamics that produces a number. The number is wrong, and the demonstration is therefore a useful negative result.</p>
+<p>The cross-check is the article's own result. Charon's relation takes the lepton masses and produces $\alpha$; Barut's formula, which the corpus already holds and which fits the muon to a tenth of a percent, takes $\alpha$ and produces the masses. Using Charon's $\alpha$ in Barut's formula misses the muon by four percent. The two proposals cannot both hold, and the measurement decides in favour of the one the corpus already records. The remaining value of the claim is the shape of the question it asks — can the coupling be an output rather than an input of the lepton sector — and the falsifiable form it implies, a single parameter constrained by two measured numbers rather than one.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\alpha=e^2/(\hbar c)$</td>
+<td>Fine-structure constant, Gaussian units; the object Charon computes</td>
+</tr>
+<tr>
+<td>$e$</td>
+<td>Elementary charge; eq. (268) compares $4.91$ against $4.80$ in units of $10^{-10}$ cgs</td>
+</tr>
+<tr>
+<td>$\hbar=h/(2\pi)$</td>
+<td>Reduced Planck constant</td>
+</tr>
+<tr>
+<td>$\beta$</td>
+<td>Charon's lepton-system parameter, $-1.7\times10^{-39}$ cgs; the single knob of the derivation</td>
+</tr>
+<tr>
+<td>$\gamma=-c\beta/h$</td>
+<td>Charon's derived quantity, $7.716\times10^{-3}$ cgs</td>
+</tr>
+<tr>
+<td>$x_1$</td>
+<td>Lower limit of Charon's spectral integral, $1.92$; fixed by $\beta$</td>
+</tr>
+<tr>
+<td>$R(t)$, $T$, $\theta(t)$</td>
+<td>Pulsation radius, period and local temperature of Charon's lepton structure; not framework structure</td>
+</tr>
+<tr>
+<td>$\chi^2$, $\min\chi_i/\chi_L$</td>
+<td>Charon's relative residual and his reported well depth, $50$</td>
+</tr>
+<tr>
+<td>Lepton system</td>
+<td>Charon's closed system of $3n+14$ equations, for the electron, muon and tau</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_-,\ \mathbb{M}_+$</td>
+<td>Anti-Hermitian (material) and Hermitian (informational) subspaces of $\mathbb{B}$</td>
+</tr>
+<tr>
+<td>$SO^+(1,3)$</td>
+<td>Proper orthochronous Lorentz group, realised in $\mathbb{B}$ through $SL(2,\mathbb{C})$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>J. E. Charon, <em>L'Esprit et la Relativité complexe</em> (Albin Michel, Paris, 1983), §18.1–18.2 and §15–16, for the electromagnetic model of the charge and the lepton system; and <em>La Relativité complexe</em> (1987), eq. (3-107), for the same comparison value.</li>
+<li>The repository's improved transcription, <code>_Esp_im_merged.md</code>, scans 056–063, and <code>_RC_im_merged.md</code>, for the passages quoted; and <code>CHARON_IDEAS_AND_CLAIMS.md</code>, entries 3, 7 and 12, for the wider inventory this article is drawn from.</li>
+<li>Companion article <em>The Empirical Status of the Biquaternion Framework</em>, for the standing position that the framework makes no distinguishing prediction, the barrier that a signature requires a non-algebraic input, and the lower-risk project of dimensionless consistency relations.</li>
+<li>Companion article <em>Action, Units, and the Constants of the Biquaternion Universe</em>, for the statement that the framework's outputs are pure numbers and its inputs dimensionful, and for the reason the algebra has nowhere to put a unit.</li>
+<li>Companion article <em>The Anomalous Magnetic Moment in Biquaternionic Form</em>, for the framework's position that the value of $\alpha$ is empirical and not a consequence of the algebra.</li>
+<li>Companion article <em>The Hydrogen Atom in Biquaternionic Form — The Relativistic Case</em>, whose input table lists the coupling and $\alpha$ among the inserted quantities.</li>
+<li>Companion article <em>The Petiau System and the Quantisation of Mass in Biquaternionic Form</em>, for Barut's leptonic formula, its table, its fit quality, and its non-extrapolation to a fourth lepton.</li>
+<li>Companion article <em>Subluminal and Superluminal Electromagnetic Waves and the Lepton Mass Spectrum</em>, for the Rodrigues–Vaz monopole formula, the other lepton-mass proposal in the corpus that uses $\alpha$ as an input, and its predicted fourth lepton near $10.3\ \mathrm{GeV}/c^2$.</li>
+<li>Companion article <em>The Spin-Mass Formula and the Particle Spectrum in Biquaternionic Form</em>, and <em>The Number of Generations and the Biquaternion Algebra</em>, for the mass-ratio programmes that supply ratios and no scale.</li>
+<li>Companion article <em>Introduction to the Biquaternion Universe</em>, for the two-sector construction and the explicit disclaimer of thermodynamic content in $\mathbb{M}_+$.</li>
+<li>Companion article <em>Higher Spin from Tensor Products: Why the Biquaternion Algebra Admits Only Spin 0 and One-Half</em>, for the algebra ceiling that excludes Charon's pulsation ladder.</li>
+<li>CODATA 2022 (NIST), for $\alpha$, $\alpha^{-1}$ and their uncertainties.</li>
+<li>X. Fan, T. G. Myers, B. A. D. Sukra and G. Gabrielse, "Measurement of the Electron Magnetic Moment", <em>Phys. Rev. Lett.</em> <strong>130</strong>, 071801 (2023), for $a_e$; and the Penning-trap determination of $\alpha$ from the same group.</li>
+<li>A. O. Barut, "Lepton mass formula", <em>Phys. Rev. Lett.</em> <strong>42</strong>, 1251 (1979), for the formula recorded in the Petiau article.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
